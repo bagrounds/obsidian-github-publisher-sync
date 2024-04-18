@@ -72,4 +72,4 @@ Habits bind
   
   
 ## Referenced books  
-- [the-art-of-fear](the-art-of-fear.md)  
+- [the-art-of-fear](./the-art-of-fear.md)  

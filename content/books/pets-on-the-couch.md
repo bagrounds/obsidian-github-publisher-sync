@@ -2,7 +2,7 @@
 aliases:  
   - Pets On The Couch  
 Author:   
-share: "true"  
+share: true  
 ---  
 [ home](/index.md) > [ books](/books/index.md) > Pets On The Couch  
 # Pets On The Couch  

@@ -3,7 +3,7 @@ aliases:
   - A Thousand Brains  
 Author: "[[jeff-hawkins]]"  
 Medium: "#Audiobook"  
-share: "true"  
+share: true  
 ---  
 [ home](/index.md) > [ books](/books/index.md) > A Thousand Brains  
 # A Thousand Brains  

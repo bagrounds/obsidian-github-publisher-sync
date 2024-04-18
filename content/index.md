@@ -1,5 +1,5 @@
 ---  
-share: "true"  
+share: true  
 ---  
 # Home  
 Welcome to the published subset of my Obsidian notes.  

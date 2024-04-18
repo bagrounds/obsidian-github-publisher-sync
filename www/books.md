@@ -1,7 +1,7 @@
 ---
 share: "true"
 ---
-[home](www/home) > Books
+Books
 # Books
 
 ## Index

@@ -1,7 +1,7 @@
 ---
 share: "true"
 ---
-[[/index | home]] > Books
+[ home](/index.md) > Books
 # Books
 
 ## Index

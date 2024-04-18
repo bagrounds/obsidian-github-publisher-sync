@@ -7,7 +7,7 @@ export const sharedPageComponents: SharedLayout = {
   header: [],
   footer: Component.Footer({
     links: {
-      GitHub: "https://github.com/bagrounds"
+      GitHub: "https://github.com/bagrounds/obsidian-github-publisher-sync"
     },
   }),
 }

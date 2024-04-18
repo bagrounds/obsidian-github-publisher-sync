@@ -5,7 +5,7 @@ Author: "[[jeff-hawkins]]"
 Medium: "#Audiobook"
 share: "true"
 ---
-[home](www/index) > [[books|books]] > A Thousand Brains
+[[books|books]] > A Thousand Brains
 # A Thousand Brains
 _A New Theory of Intelligence_
 

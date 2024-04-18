@@ -8,7 +8,6 @@ share: "true"
 [ home](/index.md) > [ books](/books/index.md) > A Thousand Brains  
 # A Thousand Brains  
 _A New Theory of Intelligence_  
-  
 ## References  
 1. The mindful brain  
 ## Content  

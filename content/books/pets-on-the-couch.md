@@ -7,7 +7,6 @@ share: "true"
 [ home](/index.md) > [ books](/books/index.md) > Pets On The Couch  
 # Pets On The Couch  
 _Neurotic Dogs, Compulsive Cats, Anxious Birds, and the New Science of Animal Psychiatry_  
-  
 ## Content  
 ### 1. The Dog Who Ate Wine Glasses: When the Brain Short Circuits  
   

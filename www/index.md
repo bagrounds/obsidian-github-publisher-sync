@@ -1,7 +1,6 @@
 ---
 share: "true"
 ---
-Hello, Obsidian Publish!
+Hello, ~~Obsidian Publish~~ Obsidian + GitHub Publisher + Quartz!
 
-- [books](www/books/books)
-- 
+- [books](books/books.md)

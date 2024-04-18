@@ -2,7 +2,7 @@
 share: "true"  
 ---  
 # Home  
-Welcome to the published subset of my Obsidian notes!  
+Welcome to the published subset of my Obsidian notes.  
 Powered by [Obsidian](https://obsidian.md) + [GitHub Publisher](https://github.com/ObsidianPublisher/obsidian-github-publisher) + [Quartz](https://quartz.jzhao.xyz)!  
   
 ## Notes  

@@ -2,7 +2,7 @@
 aliases:  
   - Tiny Habits  
 Author: "[[BJ Fog]]"  
-share: "true"  
+share: true  
 ---  
 [ home](/index.md) > [ books](/books/index.md) > Tiny Habits  
 # Tiny Habits  

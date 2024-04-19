@@ -1,7 +1,9 @@
 ---  
 aliases:  
   - Pets On The Couch  
-Author:   
+Author: "[[nicholas-dodman]]"  
+goodreads: https://www.goodreads.com/book/show/27274445-pets-on-the-couch  
+URL: https://www.simonandschuster.com/books/Pets-on-the-Couch/Nicholas-Dodman/9781476749037  
 share: true  
 ---  
 [ home](/index.md) > [ books](/books/index.md) > Pets On The Couch  
@@ -19,7 +21,10 @@ _Neurotic Dogs, Compulsive Cats, Anxious Birds, and the New Science of Animal Ps
 ### 5.   
   
 ### 6.   
-### 7.   
+- Dr Theoharides  
+  - expert at Tufts  
+  - autism  
+### 7. The Horse Who Went Harrumph: Equine Torrets Syndrome  
 ### 8.   
 ### 9.   
 ### 10.   

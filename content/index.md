@@ -7,6 +7,7 @@ Powered by [Obsidian](https://obsidian.md) + [GitHub Publisher](https://github.c
   
 ## Notes  
 - [ books](/books/index.md)  
+- [ people](/people/index.md)  
   
 ## Profiles  
 - <a href="http://github.com/bagrounds"><img style="width:1em; margin:0;" src="https://simpleicons.org/icons/github.svg"/> Github</a>  

@@ -5,7 +5,7 @@ Author: "[[Peter Morville]]"
 Medium: "#Audiobook"  
 share: true  
 ---  
-[ home](/index.md) > [ books](/books/index.md) > Planning For Everything  
+[ home](/index.md) > [books](books.md) > Planning For Everything  
 # Planning For Everything  
 _The Design of Paths and Goals_  
   

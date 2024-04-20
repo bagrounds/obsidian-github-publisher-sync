@@ -6,6 +6,7 @@ Welcome to the published subset of my Obsidian notes.
 Powered by [Obsidian](https://obsidian.md) + [GitHub Publisher](https://github.com/ObsidianPublisher/obsidian-github-publisher) + [Quartz](https://quartz.jzhao.xyz)!  
   
 ## Notes  
+- [Articles](./articles/index.md)  
 - [ books](/books/index.md)  
 - [ people](/people/index.md)  
 - [ reflections](/reflections/index.md)  

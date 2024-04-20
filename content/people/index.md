@@ -1,5 +1,8 @@
 ---  
+title: People  
 share: true  
+aliases:  
+  - People  
 ---  
 [ home](/index.md) > People  
 # People  

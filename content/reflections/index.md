@@ -1,5 +1,7 @@
 ---  
 share: true  
+aliases:  
+  - Reflections  
 ---  
 [ home](/index.md) > Reflections  
 # Reflections  

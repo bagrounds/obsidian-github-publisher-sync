@@ -18,15 +18,15 @@ _Neurotic Dogs, Compulsive Cats, Anxious Birds, and the New Science of Animal Ps
   
 ### 4. The Emotional Wounds of Rescued Animals  
   
-### 5.   
+### 5. The Dog Who Couldn't Stop Licking: Compulsive Disorders  
   
-### 6.   
+### 6. The Dog Who Was Afraid of Puddles: Autism, Epilepsy, and Rage  
 - Dr Theoharides  
   - expert at Tufts  
   - autism  
 ### 7. The Horse Who Went Harrumph: Equine Torrets Syndrome  
-### 8.   
-### 9.   
+### 8. The Dog Who Hates Surprises  
+### 9. Male and Inter-male Aggression  
 ### 10.   
 ### 11.   
 ### 12.   

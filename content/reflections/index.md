@@ -2,6 +2,7 @@
 share: true  
 aliases:  
   - Reflections  
+title: Reflections  
 ---  
 [ home](/index.md) > Reflections  
 # Reflections  

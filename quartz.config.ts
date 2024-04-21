@@ -1,6 +1,25 @@
 import { QuartzConfig } from "./quartz/cfg"
 import * as Plugin from "./quartz/plugins"
 
+const SOLARIZED = {
+  base03: '#002b36',
+  base02: '#073642',
+  base01: '#586e75',
+  base00: '#657b83',
+  base0: '#839496',
+  base1: '#93a1a1',
+  base2: '#eee8d5',
+  base3: '#fdf6e3',
+  yellow: '#b58900',
+  orange: '#cb4b16',
+  red: '#dc322f',
+  magenta: '#d33682',
+  violet: '#6c71c4',
+  blue: '#268bd2',
+  cyan: '#2aa198',
+  green: '#859900'
+}
+
 /**
  * Quartz 4.0 Configuration
  *
@@ -26,24 +45,25 @@ const config: QuartzConfig = {
       },
       colors: {
         lightMode: {
-          light: "#faf8f8",
-          lightgray: "#e5e5e5",
-          gray: "#b8b8b8",
-          darkgray: "#4e4e4e",
-          dark: "#2b2b2b",
-          secondary: "#284b63",
-          tertiary: "#84a59d",
-          highlight: "rgba(143, 159, 169, 0.15)",
+          light: SOLARIZED.base3,
+          lightgray: SOLARIZED.base1,
+          gray: SOLARIZED.orange,
+          darkgray: SOLARIZED.base01,
+          dark: SOLARIZED.cyan,
+          secondary: SOLARIZED.blue,
+          tertiary: SOLARIZED.base00,
+          highlight: SOLARIZED.base2,
         },
         darkMode: {
-          light: "#161618",
-          lightgray: "#393639",
-          gray: "#646464",
-          darkgray: "#d4d4d4",
-          dark: "#ebebec",
-          secondary: "#7b97aa",
-          tertiary: "#84a59d",
-          highlight: "rgba(143, 159, 169, 0.15)",
+          light: SOLARIZED.base03,
+          lightgray: SOLARIZED.base01,
+          gray: SOLARIZED.orange,
+          darkgray: SOLARIZED.base1,
+          dark: SOLARIZED.cyan,
+          secondary: SOLARIZED.blue,
+          tertiary: SOLARIZED.base0,
+          highlight: SOLARIZED.base02,
+
         },
       },
     },

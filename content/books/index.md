@@ -1,5 +1,7 @@
 ---  
 title: Books  
+aliases:  
+  - Books  
 share: true  
 ---  
 [ home](/index.md) > Books  

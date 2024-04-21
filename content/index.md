@@ -1,5 +1,8 @@
 ---  
 share: true  
+aliases:  
+  - Home  
+URL: https://bagrounds.org  
 ---  
 # Home  
 Welcome to the published subset of my Obsidian notes.  

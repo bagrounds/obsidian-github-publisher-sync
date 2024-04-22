@@ -1,12 +1,13 @@
 ---  
 aliases:  
-  - Planning For Everything  
+  - Planning for Everything  
+title: Planning for Everything  
 Author: "[[Peter Morville]]"  
 Medium: "#Audiobook"  
 share: true  
 ---  
-[ home](/index.md) > [books](books.md) > Planning For Everything  
-# Planning For Everything  
+[Home](../index.md) > [Books](./index.md)  
+# Planning for Everything  
 _The Design of Paths and Goals_  
   
 Systems & Contexts  

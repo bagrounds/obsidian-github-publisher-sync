@@ -3,10 +3,12 @@ aliases:
   - Tiny Habits  
 Author: "[[BJ Fog]]"  
 share: true  
+title: Tiny Habits  
 ---  
-[ home](/index.md) > [ books](/books/index.md) > Tiny Habits  
+[Home](../index.md) > [Books](./index.md)  
 # Tiny Habits  
 _The Small Changes That Change Everything_  
+  
 ## Behavior model  
 ### Model  
 - Prompt  

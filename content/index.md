@@ -8,11 +8,13 @@ URL: https://bagrounds.org
 Welcome to the published subset of my Obsidian notes.  
 Powered by [Obsidian](https://obsidian.md) + [GitHub Publisher](https://github.com/ObsidianPublisher/obsidian-github-publisher) + [Quartz](https://quartz.jzhao.xyz)!  
   
-## Notes  
+## Original Content  
+- [Reflections](./reflections/index.md)  
+  
+## References  
 - [Articles](./articles/index.md)  
 - [Books](./books/index.md)  
 - [People](./people/index.md)  
-- [Reflections](./reflections/index.md)  
 - [Videos](./videos/index.md)  
   
 ## Profiles  

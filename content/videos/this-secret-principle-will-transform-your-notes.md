@@ -9,6 +9,6 @@ Platform: "#YouTube"
 Channel: Linking Your Thinking  
 tags:   
 ---  
-[ home](/index.md) > [videos](videos.md) > This Secret Principle Will Transform Your Notes  
+[Home](../index.md) > [Videos](./index.md)  
 # This Secret Principle Will Transform Your Notes  
 Gardener vs Architect  

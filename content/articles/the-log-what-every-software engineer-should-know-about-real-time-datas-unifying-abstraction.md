@@ -4,7 +4,8 @@ aliases:
   - "The Log: What every software engineer should know about real-time data's unifying abstraction"  
 Author: "[[jay-kreps]]"  
 share: true  
+title: "The Log: What every software engineer should know about real-time data's unifying abstraction"  
 ---  
-[home](/index.md) > [articles](articles.md) > The Log: What every software engineer should know about real-time data's unifying abstraction  
+[Home](../index.md) > [Articles](./index.md)  
 # The Log: What every software engineer should know about real-time data's unifying abstraction  
   

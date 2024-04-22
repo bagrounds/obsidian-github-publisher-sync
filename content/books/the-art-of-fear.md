@@ -1,12 +1,13 @@
 ---  
 aliases:  
   - The Art of Fear  
+title: The Art of Fear  
 Author: "[[Kristen Ulmer]]"  
 share: true  
 ---  
 [ home](/index.md) > [ books](/books/index.md) > The Art of Fear  
 # The Art of Fear  
-_Why Considering Fear Won't Work and What to Do Instead_  
+_Why Conquering Fear Won't Work and What to Do Instead_  
 ## Content  
 ### Part I  
 #### 1.   
@@ -50,7 +51,6 @@ I feel afraid
   
 #### 3. Run But You Can't Get Away  
 Trying to control the uncontrollable is exhausting.  
-  
   
 ### Part II  
 #### 4.   

@@ -1,6 +1,7 @@
 ---  
 aliases:  
   - A Thousand Brains  
+title: A Thousand Brains  
 Author: "[[jeff-hawkins]]"  
 Medium: "#Audiobook"  
 share: true  

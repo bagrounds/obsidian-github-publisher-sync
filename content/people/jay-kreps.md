@@ -3,5 +3,5 @@ share: true
 aliases:  
   - Jay Kreps  
 ---  
-[ home](/index.md) > [people](people.md) > Jay Kreps  
+[Home](../index.md) > [People](./index.md)  
 # Jay Kreps  

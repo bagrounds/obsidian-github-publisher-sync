@@ -4,7 +4,7 @@ aliases:
   - Books  
 share: true  
 ---  
-[ home](/index.md) > Books  
+[Home](../index.md)  
 # Books  
 - TODO: hack support for dataview queries  
   - https://joschua.io/posts/2023/09/01/obsidian-publish-dataview/  

@@ -5,7 +5,7 @@ title: The Art of Fear
 Author: "[[Kristen Ulmer]]"  
 share: true  
 ---  
-[ home](/index.md) > [ books](/books/index.md) > The Art of Fear  
+[Home](../index.md) > [Books](./index.md)  
 # The Art of Fear  
 _Why Conquering Fear Won't Work and What to Do Instead_  
 ## Content  

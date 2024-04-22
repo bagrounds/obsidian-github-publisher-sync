@@ -4,6 +4,6 @@ aliases:
   - Articles  
 title: Articles  
 ---  
-[ home](/index.md) > Articles  
+[Home](../index.md)  
 # Articles  
 <div><ul class="dataview list-view-ul"><li><span></span></li><li><span></span></li></ul></div>  

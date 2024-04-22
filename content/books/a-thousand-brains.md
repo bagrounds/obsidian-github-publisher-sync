@@ -6,9 +6,10 @@ Author: "[[jeff-hawkins]]"
 Medium: "#Audiobook"  
 share: true  
 ---  
-[ home](/index.md) > [ books](/books/index.md) > A Thousand Brains  
+[Home](../index.md) > [Books](./index.md)  
 # A Thousand Brains  
 _A New Theory of Intelligence_  
+  
 ## References  
 1. The mindful brain  
 ## Content  

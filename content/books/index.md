@@ -6,6 +6,9 @@ share: true
 ---  
 [Home](../index.md)  
 # Books  
-- TODO: hack support for dataview queries  
-  - https://joschua.io/posts/2023/09/01/obsidian-publish-dataview/  
-<div><ul class="dataview list-view-ul"><li><span></span></li><li><span></span></li><li><span></span></li><li><span></span></li><li><span></span></li></ul></div>  
+- [a-thousand-brains](./a-thousand-brains.md)  
+- [pets-on-the-couch](./pets-on-the-couch.md)  
+- [planning-for-everything](./planning-for-everything.md)  
+- [the-art-of-fear](./the-art-of-fear.md)  
+- [tiny-habits](./tiny-habits.md)  
+  

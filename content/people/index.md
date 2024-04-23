@@ -6,4 +6,6 @@ aliases:
 ---  
 [Home](../index.md)  
 # People  
-<div><ul class="dataview list-view-ul"><li><span></span></li><li><span></span></li></ul></div>  
+- [jay-kreps](./jay-kreps.md)  
+- [nicholas-dodman](./nicholas-dodman.md)  
+  

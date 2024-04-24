@@ -11,4 +11,5 @@ share: true
 - [planning-for-everything](./planning-for-everything.md)  
 - [the-art-of-fear](./the-art-of-fear.md)  
 - [tiny-habits](./tiny-habits.md)  
+- [idealized-design](./idealized-design.md)  
   

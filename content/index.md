@@ -10,7 +10,7 @@ Powered by [Obsidian](https://obsidian.md) + [GitHub Publisher](https://github.c
   
 ## Original Content  
 - [Reflections](./reflections/index.md)  
-- [Resume](https://bagrounds.gitlab.io/resume)  
+- [My resume](./resume.md)  
   
 ## References  
 - [Articles](./articles/index.md)  

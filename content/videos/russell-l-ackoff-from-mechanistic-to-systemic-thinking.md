@@ -11,6 +11,8 @@ tags:
 ---  
 [Home](../index.md) > [Videos](./index.md)  
 # Russell L Ackoff From Mechanistic to Systemic Thinking  
+## Notes  
+- **Dilemma** - a problem which cannot be solved within the prevailing view of the world  
 - Analysis yields knowledge  
 - Synthesis yields understanding  
 - machines apply energy to matter to transform it  
@@ -18,3 +20,6 @@ tags:
 - communication is symbol transmission  
 - thinking is symbol manipulation  
 - Susanne Langer  
+  
+## References  
+- [cybernetics](../books/cybernetics.md)  

@@ -5,7 +5,8 @@ aliases:
 title: Reflections  
 ---  
 [Home](../index.md)  
-# Reflections  
+# 🪞 Reflections  
+- [2024-05-02](./2024-05-02.md)  
 - [2024-05-01](./2024-05-01.md)  
 - [2024-04-29](./2024-04-29.md)  
 - [2024-04-28](./2024-04-28.md)  

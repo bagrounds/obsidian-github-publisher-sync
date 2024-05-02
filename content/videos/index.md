@@ -10,4 +10,5 @@ title: Videos
 - [russell-l-ackoff-from-mechanistic-to-systemic-thinking](./russell-l-ackoff-from-mechanistic-to-systemic-thinking.md)  
 - [it-is-actually-pretty-easy-to-get-ahead-of-99-percent-of people](./it-is-actually-pretty-easy-to-get-ahead-of-99-percent-of%20people.md)  
 - [the-concept-that-changes-how-you-learn-forever](./the-concept-that-changes-how-you-learn-forever.md)  
+- [dr-adam-grant-how-to-unlock-your-potential-motivation-and-unique-abilities](./dr-adam-grant-how-to-unlock-your-potential-motivation-and-unique-abilities.md)  
   

@@ -10,12 +10,13 @@ Powered by [Obsidian](https://obsidian.md) + [GitHub Publisher](https://github.c
   
 ## Original Content  
 - [Reflections](./reflections/index.md)  
-- [My resume](./resume.md)  
+- [My resume](./topics/my-resume.md)  
   
 ## References  
 - [Articles](./articles/index.md)  
 - [Books](./books/index.md)  
 - [People](./people/index.md)  
+- [Topics](./topics/index.md)  
 - [Videos](./videos/index.md)  
   
 ## Profiles  

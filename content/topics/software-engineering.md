@@ -2,8 +2,9 @@
 share: true  
 aliases:  
   - Software Engineering  
+title: Software Engineering  
 ---  
-[Home](./index.md)  
+[Home](../index.md) > [Topics](./index.md)  
 # Software Engineering  
 ## Topics  
 - Programming  
@@ -49,7 +50,5 @@ How can we efficiently & effectively troubleshoot our code?
 In the worst case, we have no ability to execute our code, much less instrument it with logging statements.  
 We might revert to building a table of variables and manually executing the code with example inputs in order to find the problems.  
   
-  
 ## References  
 - https://en.wikipedia.org/wiki/Outline_of_software_engineering  
-  

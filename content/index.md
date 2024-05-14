@@ -20,6 +20,7 @@ Powered by [Obsidian](https://obsidian.md) + [GitHub Publisher](https://github.c
 - [Videos](./videos/index.md)  
   
 ## Profiles  
+- <a href="https://www.codingame.com/profile/0d172b10ecb72b81c2bb2646e8be9d8a8930706"><img style="width:1em; margin:0;" src="https://simpleicons.org/icons/codingame.svg"/> CodinGame</a>  
 - <a href="http://github.com/bagrounds"><img style="width:1em; margin:0;" src="https://simpleicons.org/icons/github.svg"/> Github</a>  
 - <a href="http://gitlab.com/bagrounds"><img style="width:1em; margin:0;" src="https://simpleicons.org/icons/gitlab.svg"/> Gitlab</a>  
 - <a href="http://www.npmjs.com/~bagrounds"><img style="width:1em; margin:0;" src="https://raw.githubusercontent.com/bagrounds/icons/master/npm.svg"/> npm</a>  

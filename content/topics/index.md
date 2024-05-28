@@ -6,7 +6,8 @@ title: Topics
 ---  
 [Home](../index.md)  
 # Topics  
-- [my-resume](./my-resume.md)  
-- [feline-gi-lymphoma](./feline-gi-lymphoma.md)  
-- [software-engineering](./software-engineering.md)  
+- [Software Engineering](./software-engineering.md)  
+- [My Resume](./my-resume.md)  
+- [Feline GI Lymphoma](./feline-gi-lymphoma.md)  
+- [Programming Problems](./programming-problems/index.md)  
   

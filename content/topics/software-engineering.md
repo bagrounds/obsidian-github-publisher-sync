@@ -11,6 +11,7 @@ title: Software Engineering
   - Languages  
   - Paradigms  
   - Tools  
+  - [Problems](programming-problems-1.md)  
 - Logic  
   - Boolean Logic  
 - Algorithms  

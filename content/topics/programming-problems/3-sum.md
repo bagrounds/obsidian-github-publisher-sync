@@ -1,6 +1,8 @@
 ---  
 share: true  
 title: 3 Sum  
+aliases:  
+  - 3 Sum  
 ---  
 [Home](../../index.md) > [Topics](../index.md) > [Programming Problems](./index.md)  
 # 3 Sum  

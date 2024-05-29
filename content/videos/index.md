@@ -15,4 +15,5 @@ title: Videos
 - [Dr. Matt Walker: How to Structure Your Sleep, Use Naps & Time Caffeine | Huberman Lab Guest Series](./dr-matt-walker-how-to-structure-your-sleep-use-naps-and-time-caffeine-huberman-lab-guest-series.md)  
 - [Dr. Matt Walker: Using Sleep to Improve Learning, Creativity & Memory | Huberman Lab Guest Series](./dr-matt-walker-using-sleep-to-improve-learning-creativity-and-memory-huberman-lab-guest-series.md)  
 - [What I Learned after 5000 Hours of Mind Mapping](./what-i-learned-after-5000-hours-of-mind-mapping.md)  
+- [Eat your food in the RIGHT ORDER: 75% healthier with this small trick | Episode 6 of 18](./Eat%20your%20food%20in%20the%20RIGHT%20ORDER%2075%25%20healthier%20with%20this%20small%20trick%20Episode%206%20of%2018.md)  
   

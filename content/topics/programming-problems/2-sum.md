@@ -12,3 +12,6 @@ Given an array of integers, return 2 integers that sum to zero if possible.
 ## Clarifications  
 1. If multiple solutions exist, return any of them  
 2. Each element can only be used once  
+  
+## Variations  
+1. Return the indices, not the values  

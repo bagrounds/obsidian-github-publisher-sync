@@ -11,4 +11,6 @@ title: Topics
 - [Feline GI Lymphoma](./feline-gi-lymphoma.md)  
 - [Programming Problems](./programming-problems/index.md)  
 - [Memory](./memory.md)  
+- [Learning](./learning.md)  
+- [Focus](./focus.md)  
   

@@ -6,11 +6,12 @@ title: Topics
 ---  
 [Home](../index.md)  
 # Topics  
-- [Software Engineering](./software-engineering.md)  
-- [My Resume](./my-resume.md)  
 - [Feline GI Lymphoma](./feline-gi-lymphoma.md)  
-- [Programming Problems](./programming-problems/index.md)  
-- [Memory](./memory.md)  
-- [Learning](./learning.md)  
 - [Focus](./focus.md)  
+- [Learning](./learning.md)  
+- [Memory](./memory.md)  
+- [My Resume](./my-resume.md)  
+- [Programming Problems](./programming-problems/index.md)  
+- [Software Engineering](./software-engineering.md)  
+- [Tree Traversal](./tree-traversal.md)  
   

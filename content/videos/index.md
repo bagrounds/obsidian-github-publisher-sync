@@ -25,6 +25,7 @@ title: Videos
 - [SHIN SPLINTS for Runners: Challenges, Causes, and Rehab](./shin-splints-for-runners-challenges-causes-and-rehab.md)  
 - [How to Reduce Bone Injury Risks | Running Science](./how-to-reduce-bone-injury-risks-running-science.md)  
 - [How to hack your brain to crave doing hard things.](./how-to-hack-your-brain-to-crave-doing-hard-things.md)  
-- [Answering Behavioral Interview Questions Using the STAR Method](./answering-behavioral-interview-questions-using-the-star-method.md)  
 - [Tools to Enhance Working Memory & Attention](./tools-to-enhance-working-memory-and-attention.md)  
+- [Answering Behavioral Interview Questions Using the STAR Method](./answering-behavioral-interview-questions-using-the-star-method.md)  
+- [3 High Leverage Career Skills (From a Principal At Amazon)](./3-high-leverage-career-skills-from-a-principal-at-amazon.md)  
   

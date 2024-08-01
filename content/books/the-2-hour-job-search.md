@@ -4,7 +4,7 @@ aliases:
   - The 2-Hour Job Search  
 title: The 2-Hour Job Search  
 URL:   
-Author:   
+Author: "[[Steve Dalton]]"  
 tags:   
 ---  
 [Home](../index.md) > [Books](./index.md)  
@@ -51,4 +51,41 @@ Scenarios:
         1. Within their availability if they supplied it.  
         2. Or respond with your availability if they didn't provide any. Provide a few example times to reduce their decision fatigue.  
     2. Cancel follow up reminders.  
-2. 
+2. First contact has not responded before our 3 business day reminder. We most likely do not have a booster.  
+    1. Initiate contact with a second person at the same employer.   
+    2. Use the same process as before.  
+  
+## Informational Interviews  
+### 🎯 Goals  
+1. Build rapport  
+2. Gain useful information  
+  
+### Principles  
+1. Focus on the interviewee - not yourself  
+2. The interviewee is the ultimate source of information  
+3. Avoid negative news & topics  
+  
+### Agenda  
+1. Small talk  
+2. Q & A  
+3. Next steps  
+  
+### 🔍 Research | 15 minutes  
+External preparation - 15 minutes  
+1. Investor relations pages  
+  1. Annual reports & 10K forms  
+  2. Quarterly results conference calls (SWOT analysis)  
+  3. Press releases of major initiatives  
+  4. Recent news headlines  
+2. Headlines  
+3. Google results for recent employer headlines & interviewees  
+  
+Internal preparation  
+  
+### TIARA - A Framework for Small Talk  
+1. Trends - what trends are most impacting your business right now?  
+2. Insights - what surprises you most about your job?  
+3. Advice - what can I do right now to best prepare for a career in this field?  
+4. Resources - what resources should I be sure to look into next?  
+5. Assignments - which projects are most common or important in your work?  
+  

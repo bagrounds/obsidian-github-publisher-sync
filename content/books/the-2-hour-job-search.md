@@ -3,7 +3,7 @@ share: true
 aliases:  
   - The 2-Hour Job Search  
 title: The 2-Hour Job Search  
-URL:   
+URL: https://bagrounds.org/books/the-2-hour-job-search  
 Author: "[[Steve Dalton]]"  
 tags:   
 ---  

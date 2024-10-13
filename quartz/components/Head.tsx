@@ -33,8 +33,8 @@ export default (() => {
         <meta property="og:title" content={title} />
         <meta property="og:description" content={description} />
         {cfg.baseUrl && <meta property="og:image" content={ogImagePath} />}
-        <meta property="og:width" content="1200" />
-        <meta property="og:height" content="675" />
+        <meta property="og:width" content="724" />
+        <meta property="og:height" content="1440" />
         <link rel="icon" href={iconPath} />
         <meta name="description" content={description} />
         <meta name="generator" content="Quartz" />

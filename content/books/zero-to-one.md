@@ -3,7 +3,7 @@ share: true
 aliases:  
   - Zero to One  
 title: Zero to One  
-URL: https://bagrounds.org/books/Zero to One  
+URL: https://bagrounds.org/books/zero-to-one  
 Author: "[[Peter Thiel]]"  
 tags:   
 ---  

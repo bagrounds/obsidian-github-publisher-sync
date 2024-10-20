@@ -17,33 +17,33 @@ tags:
 - People are the best experts on their own problems.  
   - Ask them about their situation and goals and help them identify their own solutions.  
   
-H.E.A.R  
+## 👂 HEAR Principles  
 - Honesty  
 - Empathy  
 - Autonomy  
 - Reflection  
   
-S.O.N.A.R.  
+## 🔉 SONAR Reflection Techniques  
 - Simple reflection  
 - On the one hand  
 - No arguing  
 - Affirmations  
 - Reframing  
   
-Animal archetypes  
-- 🦁 Lion  
+## 🐾 Animal Archetypes  
+### 🦁 Lion  
   - leads with strength and certainty  
   - evokes mouse behavior in others  
   - bad lion is overly rigid  
-- 🐭 Mouse  
+### 🐭 Mouse  
   - capitulates; follows  
   - evokes lion behavior in others  
   - bad mouse is sneaky and deceitful  
-- 🦖 T-Rex  
+### 🦖 T-Rex  
   - maintains boundaries  
   - evokes T-Rex behavior in others  
   - bad T-Rex attacks  
-- 🐒 Monkey  
+### 🐒 Monkey  
   - warm, playful, and collaborative  
   - evokes monkey behavior in others  
   - bad monkey is too familiar and lacks boundaries  

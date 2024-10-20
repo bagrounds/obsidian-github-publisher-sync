@@ -33,6 +33,11 @@ tags:
   - Don't tell people how to solve their problems or offer advice.  
 - People are the best experts on their own problems.  
   - Ask them about their situation and goals and help them identify their own solutions.  
+- All things in moderation: aim for fluidity in conversation.   
+- Learning starts with self awareness.  
+  - Identify your own animal archetypical behaviors.  
+- Consider power relations.  
+  - Sometimes it's better to approach a lion as a mouse, rather than another lion. Which role aligns most naturally?  
   
 ## 👂 HEAR Principles  
 - Honesty  
@@ -41,7 +46,7 @@ tags:
 - Reflection  
   
 ## 🔉 SONAR Reflection Techniques  
-- Simple reflection  
+- Simple reflections  
 - On the one hand  
 - No arguing  
 - Affirmations  

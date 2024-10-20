@@ -38,6 +38,11 @@ tags:
   - Identify your own animal archetypical behaviors.  
 - Consider power relations.  
   - Sometimes it's better to approach a lion as a mouse, rather than another lion. Which role aligns most naturally?  
+- Always apologize for bad behavior.  
+- Learn the art of conversation.  
+  - Listen more and talk less.  
+  - Share. Look for shared experiences.  
+  - Seek. Get more from them than they get from you.  
   
 ## 👂 HEAR Principles  
 - Honesty  
@@ -47,25 +52,58 @@ tags:
   
 ## 🔉 SONAR Reflection Techniques  
 - Simple reflections  
-- On the one hand  
+- On-the-one-hand reflections  
 - No arguing  
 - Affirmations  
 - Reframing  
   
 ## 🐾 Animal Archetypes  
-### 🦁 Lion  
-  - leads with strength and certainty  
-  - evokes mouse behavior in others  
-  - bad lion is overly rigid  
-### 🐭 Mouse  
-  - capitulates; follows  
-  - evokes lion behavior in others  
-  - bad mouse is sneaky and deceitful  
-### 🦖 T-Rex  
+### 🦖 T-Rex (Conflict)  
   - maintains boundaries  
   - evokes T-Rex behavior in others  
   - bad T-Rex attacks  
-### 🐒 Monkey  
+  - guidance  
+    - avoid conflict whenever possible  
+    - clarify your goals and boundaries  
+    - avoid anger, aggression, attacking, sarcasm, and argument, and emotion  
+    - you cannot control others' behavior; only yourself  
+    - keep it simple  
+    - CALM  
+      - stay cool  
+      - avoid anger  
+      - use careful language  
+      - be measured  
+  
+### 🐭 Mouse (Capitulation)  
+  - capitulates; follows  
+  - evokes lion behavior in others  
+  - bad mouse is sneaky and deceitful  
+  - guidance  
+    - EASE  
+      - Explore what the other person has said before making assumptions about it.  
+      - Advice from other's: seek it out and consider it, even if you don't ultimately follow it.  
+      - Slow down and give space. Speak less than 20% of the time, yielding the other 80% to the other person.  
+      - Examine what is in your mind before you speak. Listen, think, and then speak. In that order.  
+  
+### 🦁 Lion (Control)  
+  - leads with strength and certainty  
+  - evokes mouse behavior in others  
+  - bad lion is overly rigid  
+  - guidance  
+    - ROAR  
+      - Rigid? or Reciprocal?  
+      - Only me? or Others?  
+      - Anxiety? or Achievement?  
+      - Resentment? or Resilience?  
+  
+### 🐒 Monkey (Cooperation)  
   - warm, playful, and collaborative  
   - evokes monkey behavior in others  
   - bad monkey is too familiar and lacks boundaries  
+  - guidance  
+    - TEAM  
+      - Think it. Say it.  
+      - Easy and relaxed.  
+      - Animated.  
+      - Mirroring.  
+  

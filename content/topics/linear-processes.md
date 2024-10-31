@@ -9,11 +9,11 @@ title: Linear Processes
 Some processes have very nice properties.  
   
 1. The whole is roughly equal to the sum of the parts.  
-2. There's little overhead in completing a step in the process.  
-3. The process can be paused and resumed without negative consequences.  
+2. There's little overhead in completing a step.  
+3. It can be paused and resumed without penalty.  
 4. Any worker can complete any step at any time without conflict.  
-5. There may be finite buffers between steps that dictate priorities.  
 6. Collaboration can be asynchronous and uncoordinated.  
+5. There may be buffers between steps that may inform priorities.  
 7. Little bits of work aggregate over time to produce a result that is not worse off due to pauses, delays, or handoffs between workers.  
   
 ## 🍽️ Dishes  

@@ -5,7 +5,7 @@ aliases:
 title: Linear Processes  
 ---  
 [Home](../index.md) > [Topics](./index.md)  
-# Linear Processes  
+# ➕ Linear Processes  
 Some processes have very nice properties.  
   
 1. The whole is roughly equal to the sum of the parts.  
@@ -16,13 +16,13 @@ Some processes have very nice properties.
 6. Collaboration can be asynchronous and uncoordinated.  
 7. Little bits of work aggregate over time to produce a result that is not worse off due to pauses, delays, or handoffs between workers.  
   
-## Dishes  
+## 🍽️ Dishes  
 1. Empty the dishwasher, dish by dish  
 2. Fill the dishwasher with rinsed dishes one at a time, which are stacked on the right side of the sink  
 3. Rinse dishes from the left side of the sink and move the to the right side of the sink  
 4. Collect dirty dishes and put them on the left side of the sink  
   
-## Laundry  
+## 🧺 Laundry  
 1. Carry the empty clean laundry basket downstairs  
 2. Fold and hang clean laundry, one article at a time  
 3. Remove clean laundry from the basket, one article at a time  
@@ -34,7 +34,7 @@ Some processes have very nice properties.
 9. Put dirty laundry in basket, one article at a time  
 10. Carry empty dirty laundry basket from laundry room to bedroom  
   
-## Planning  
+## 🔮 Kanban Planning  
 1. People discuss reflections and think of ideas for improvement.  
 2. Someone writes an observation on a completed work item, moving it from done to reflected.  
 3. A task is completed and its work item is moved from in progress to done  

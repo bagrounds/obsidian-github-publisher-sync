@@ -31,7 +31,7 @@ xychart-beta
 ## 🕳️ Nonlinearity  
 Nonlinearities occur when effort does not correspond to progress.  
   
-### Progress without effort  
+### 🎁 Progress Without Effort  
 - automation  
 - serendipity  
 - reuse  
@@ -43,7 +43,7 @@ xychart-beta horizontal
     line [0, 0, 1]  
 ```  
   
-### Effort without progress:  
+### 🗑️ Effort Without Progress  
 - overhead  
 - rework  
 - misdirection  
@@ -56,6 +56,7 @@ xychart-beta
     y-axis Progress  
     line [0, 0, 1]  
 ```  
+  
 ## 🐕🐈🐁 Examples  
 ### 🍽️ Dishes  
 1. Empty the dishwasher, dish by dish  

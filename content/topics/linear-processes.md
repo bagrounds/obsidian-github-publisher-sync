@@ -28,7 +28,7 @@ xychart-beta
     line [0, 1]  
 ```  
   
-## 🕳️ Nonlinearities  
+## 🕳️ Nonlinearity  
 Nonlinearities occur when effort does not correspond to progress.  
   
 Progress without effort: automation.  

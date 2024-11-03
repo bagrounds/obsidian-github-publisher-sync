@@ -3,6 +3,7 @@ share: true
 aliases:  
   - Linear Processes  
 title: Linear Processes  
+URL: https://bagrounds.org/topics/linear-processes  
 ---  
 [Home](../index.md) > [Topics](./index.md)  
 # ➕ Linear Processes  
@@ -17,20 +18,36 @@ Some processes have very nice properties.
 7. Little bits of work aggregate over time to produce a result that is not worse off due to pauses, delays, or handoffs between workers.  
   
 ## 📈 Linearity  
-The linear relationship is between effort and progress.  
-When each unit of effort results in a corresponding unit of progress, the process is linear.  
-Nonlinearities occur when effort does not correspond to progress.  
-Progress without effort: automation.  
-Effort without progress: overhead.  
+When each unit of effort yields a corresponding unit of progress, the relationship is linear.  
   
 ```mermaid  
 xychart-beta  
-    title "Effort vs Progress"  
+    title "Linear Work"  
     x-axis Effort  
     y-axis Progress  
     line [0, 1]  
 ```  
   
+## 🕳️ Nonlinearities  
+Nonlinearities occur when effort does not correspond to progress.  
+  
+Progress without effort: automation.  
+```mermaid  
+xychart-beta horizontal  
+    title "Progress Without Effort"  
+    x-axis Progress  
+    y-axis Effort  
+    line [0, 0, 1]  
+```  
+  
+Effort without progress: overhead.  
+```mermaid  
+xychart-beta  
+    title "Effort Without Progress"  
+    x-axis Effort  
+    y-axis Progress  
+    line [0, 0, 1]  
+```  
 ## 🐕🐈🐁 Examples  
 ### 🍽️ Dishes  
 1. Empty the dishwasher, dish by dish  

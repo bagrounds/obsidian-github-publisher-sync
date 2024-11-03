@@ -31,7 +31,10 @@ xychart-beta
 ## 🕳️ Nonlinearity  
 Nonlinearities occur when effort does not correspond to progress.  
   
-Progress without effort: automation.  
+### Progress without effort  
+- automation  
+- serendipity  
+- reuse  
 ```mermaid  
 xychart-beta horizontal  
     title "Progress Without Effort"  
@@ -40,7 +43,12 @@ xychart-beta horizontal
     line [0, 0, 1]  
 ```  
   
-Effort without progress: overhead.  
+### Effort without progress:  
+- overhead  
+- rework  
+- misdirection  
+- ineffectiveness  
+- redundancy  
 ```mermaid  
 xychart-beta  
     title "Effort Without Progress"  

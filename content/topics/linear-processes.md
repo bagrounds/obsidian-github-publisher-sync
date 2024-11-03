@@ -17,12 +17,11 @@ Some processes have very nice properties.
 7. Little bits of work aggregate over time to produce a result that is not worse off due to pauses, delays, or handoffs between workers.  
   
 ## 📈 Linearity  
-In what sense are these processes linear?  
-Plot effort vs progress.  
+The linear relationship is between effort and progress.  
 When each unit of effort results in a corresponding unit of progress, the process is linear.  
 Nonlinearities occur when effort does not correspond to progress.  
-If zero effort results in task progress, we have a productive nonlinearity. These make tasks more efficient.  
-If effort does not result in task progress, we have overhead. These make tasks less efficient.  
+Progress without effort: automation.  
+Effort without progress: overhead.  
   
 ```mermaid  
 xychart-beta  
@@ -38,7 +37,6 @@ xychart-beta
 2. Fill the dishwasher with rinsed dishes one at a time, which are stacked on the right side of the sink  
 3. Rinse dishes from the left side of the sink and move the to the right side of the sink  
 4. Collect dirty dishes and put them on the left side of the sink  
-  
   
 #### Nonlinearities  
 1. Hand washing. After scrubbing dishes, I wash my hands. Hand washing requires time and effort but does not progress the dish washing process. Switching in and out of the scrubbing task requires hand washing overhead. Scrubbing more dishes in a single session results in a more efficient process due to less hand washing overhead per dish scrubbed.  
@@ -57,7 +55,8 @@ xychart-beta
 10. Carry empty dirty laundry basket from laundry room to bedroom  
   
 #### Nonlinearities  
-1.   
+1. Washer. Zero effort progress.  
+2. Dryer. Zero effort progress.  
   
 ### 🔮 Kanban Planning  
 1. People discuss reflections and think of ideas for improvement.  

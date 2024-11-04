@@ -57,12 +57,105 @@ xychart-beta
     line [0, 0, 1]  
 ```  
   
+## 🦾 Leverage  
+Leverage multiplies effort's progress.  
+  
+```mermaid  
+xychart-beta  
+    title "Leverage"  
+    x-axis Effort [0, 0.5, 1]  
+    y-axis Progress 0 --> 10  
+    line [0, 5, 10]  
+    line [0, 10]  
+    line [0, 2.5, 5]  
+```  
+  
+## 🔖 Managing Progress  
+## 💨 Losing Progress  
+Sometimes pausing a task loses progress.  
+```mermaid  
+xychart-beta  
+    title "Losing Progress"  
+    x-axis Effort [0, 1, 2, 3]  
+    y-axis Progress  
+    line [0, 0.5]  
+    line [0, 0, 0.5, 1]  
+```  
+_🤔 how to make a vertical line segment with mermaidjs..._  
+  
+## 💾 Saving Progress  
+Expensive, ephemeral progress benefits from cheap, durable storage.  
+  
+```mermaid  
+xychart-beta  
+    title "Saving Progress"  
+    x-axis Effort [0, 1, 2, 3]  
+    y-axis Progress  
+    line [0, .5, 1]  
+```  
+_🤔 how to highlight a point on a line with mermaidjs..._  
+  
+## ✍️🦾 Writing  
+When progress is the accumulation of detail, ideas, context, and plans, writing has high leverage.  
+  
+## 👥 Cooperation  
+There is vast potential for non-linear progress in cooperation.  
+Discovery and invention are expensive.  
+Sharing is cheap.  
+Humans make incredible progress over generations by recording and sharing progress.  
+Unlike material things, information can be duplicated, broadcast, and shared without limitation.  
+This sharing benefits  
+- individuals across time when we write for our selves  
+- groups close in time when we write for each other  
+- groups across time when we write for future generations  
+  
+## ✍️🎁🦾 Sharing Understanding Has Infinite Leverage  
+📜📚🌐 Some ideas are born from centuries of human effort.  
+🎁 Sharing ideas is relatively effortless.  
+  
+♾️ Individually unattainable progress freely shared with an unbounded population.  
+  
+```mermaid  
+xychart-beta  
+    title "🤯 Aggregate Human Understanding"  
+    x-axis "⌛ History" -5000 --> 2050  
+    y-axis "🧠 Understanding"  
+    line [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 10000]  
+```  
+_It took all of human history to produce Wikipedia_  
+  
+## 🦾🏦💸 High Leverage Investments  
+- Learn  
+- Discover  
+- Teach  
+- Reduce the cost of  
+  - recording  
+  - sharing  
+  - discovering  
+  - synthesizing  
+  - understanding  
+  
+## 🤔 Reconsidering Linearity  
+- Linear systems do have some nice properties...  
+  - When the effort-results curve points up.  
+  - But I'd rather not have a linear process with a negative slope...  
+    - for every unit of effort expended, we lose another unit of progress  
+  - I've also just finished writing about the Holy Grail of high leverage activities and it is extremely non-linear...  
+- So I guess the really nice properties are an upward trajectory and as much leverage as we can manage  
+- Maybe a more fitting name for this topic would be something like: Monotonically Increasing High Leverage Processes  
+  - Perhaps not as catchy, though...  
+  
 ## 🐕🐈🐁 Examples  
 ### 🍽️ Dishes  
 1. Empty the dishwasher, dish by dish  
 2. Fill the dishwasher with rinsed dishes one at a time, which are stacked on the right side of the sink  
 3. Rinse dishes from the left side of the sink and move the to the right side of the sink  
 4. Collect dirty dishes and put them on the left side of the sink  
+  
+```mermaid  
+flowchart TD  
+Table -- Collect --> Left_Sink -- Rinse --> Right_Sink -- Load --> Dirty_Dishwasher -- Run --> Clean_Dishwasher -- Store --> Cabinets  
+```  
   
 #### Nonlinearities  
 1. Hand washing. After scrubbing dishes, I wash my hands. Hand washing requires time and effort but does not progress the dish washing process. Switching in and out of the scrubbing task requires hand washing overhead. Scrubbing more dishes in a single session results in a more efficient process due to less hand washing overhead per dish scrubbed.  

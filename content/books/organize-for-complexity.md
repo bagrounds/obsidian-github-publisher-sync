@@ -11,3 +11,7 @@ tags:
 # Organize for Complexity  
 _How to Get Life Back Into Work to Build the High-Performance Organization_  
   
+> If you want to truly understand something, try to change it.  
+  
+Kurt Lewin  
+  

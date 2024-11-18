@@ -3,6 +3,7 @@ share: true
 aliases:  
   - Videos  
 title: Videos  
+URL: https://bagrounds.org/videos  
 ---  
 [Home](../index.md)  
 # Videos  

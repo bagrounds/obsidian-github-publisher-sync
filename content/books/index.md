@@ -15,8 +15,6 @@ share: true
 - [Cybernetics](./cybernetics.md)  
 - [Just Listen](./just-listen.md)  
 - [Complexity](./complexity.md)  
-- [Taking Charge Of ADHD](taking-charge-of-adhd.md)  
-- [the-new-economics](the-new-economics.md)  
 - [The Mountain is You](./the-mountain-is-you.md)  
 - [The Job Closer](./the-job-closer.md)  
 - [The Staff Engineer's Path](./the-staff-engineers-path.md)  
@@ -30,4 +28,6 @@ share: true
 - [Rapport](./rapport.md)  
 - [Atomic Habits](./atomic-habits.md)  
 - [Zero to One](./zero-to-one.md)  
+- [Organize for Complexity](./organize-for-complexity.md)  
+- [Expecting Better](./expecting-better.md)  
   

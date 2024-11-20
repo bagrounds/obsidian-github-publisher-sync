@@ -18,4 +18,9 @@ _Why the Conventional Pregnancy Wisdom Is Wrong - and What You Really Need to Kn
     - look at the data  
     - consider pros & cons relevant to you  
     - make a decision  
-- 
+- During pregnancy  
+  - women are given lists of behavioral rules  
+    - that often differ by provider  
+    - and are rarely explained or supported with evidence  
+  - and there are many norms, myths, and misunderstandings in popular culture that tend to steer the behavior of pregnant women, whether justified or not  
+- The author dives into the scientific research backing many of these rules in order to provide a more nuanced understanding of risk  

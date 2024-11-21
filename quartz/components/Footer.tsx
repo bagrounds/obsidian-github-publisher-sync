@@ -13,6 +13,14 @@ export default ((opts?: Options) => {
     const links = opts?.links ?? []
     return (
       <footer class={`${displayClass ?? ""}`}>
+        <script src="https://utteranc.es/client.js"
+          repo="bagrounds/obsidian-github-publisher-sync"
+          issue-term="pathname"
+          label="utterances"
+          theme="preferred-color-scheme"
+          crossorigin="anonymous"
+          async>
+        </script>
         <hr />
         <p>
           {i18n(cfg.locale).components.footer.createdWith}{" "}

@@ -11,6 +11,7 @@ tags:
 ---  
 [Home](../index.md) > [Videos](./index.md)  
 # What makes something memorable?  
+![What makes something memorable?](https://youtu.be/UW4EMIucmHs)  
 ## Notes  
 - 2 kinds of encoding: automatic & deliberate  
 - lots of science on word lists  

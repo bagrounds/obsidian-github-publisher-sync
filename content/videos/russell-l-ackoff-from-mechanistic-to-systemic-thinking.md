@@ -11,6 +11,7 @@ tags:
 ---  
 [Home](../index.md) > [Videos](./index.md)  
 # Russell L Ackoff From Mechanistic to Systemic Thinking  
+![Russell L Ackoff From Mechanistic to Systemic Thinking](https://youtu.be/yGN5DBpW93g)  
 ## Notes  
 - **Dilemma** - a problem which cannot be solved within the prevailing view of the world  
 - Analysis yields knowledge  

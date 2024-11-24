@@ -18,7 +18,7 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     container:
-      image: node:20-alpine
+      image: node:20-bullseye-slim
     steps:
       - uses: actions/checkout@v4
 

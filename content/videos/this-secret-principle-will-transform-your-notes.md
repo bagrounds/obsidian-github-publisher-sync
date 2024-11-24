@@ -11,4 +11,6 @@ tags:
 ---  
 [Home](../index.md) > [Videos](./index.md)  
 # This Secret Principle Will Transform Your Notes  
-Gardener vs Architect  
+![This Secret Principle Will Transform Your Notes](https://youtu.be/q0pQh69iPWA)  
+  
+- Gardener vs Architect  

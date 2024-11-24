@@ -11,6 +11,7 @@ tags:
 ---  
 [Home](../index.md) > [Videos](./index.md)  
 # Most Tech Interview Prep is GARBAGE. (From a Principal Engineer at Amazon)  
+![Most Tech Interview Prep is GARBAGE. (From a Principal Engineer at Amazon)](https://youtu.be/0Z9RW_hhUT4)  
 ## What's Wrong with Most Advice?  
 It's aimed at entry & junior level positions.  
 Don't spend all of your time on LeetCode.  

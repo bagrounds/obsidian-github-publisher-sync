@@ -48,4 +48,5 @@ jobs:
         uses: actions/deploy-pages@v4
         with:
           artifact_name: github-pages
-          reporting_interval: 1000
+          reporting_interval: 300
+          error_count: 180

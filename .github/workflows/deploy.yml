@@ -33,6 +33,7 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-node-
       - name: Install Dependencies
+        if: ${{ steps.cache.outputs.cache-hit != 'true' }}
         run: npm ci
       - name: Build Quartz
         run: npx quartz build

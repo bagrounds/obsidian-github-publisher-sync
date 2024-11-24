@@ -1,30 +1,31 @@
-# https://quartz.jzhao.xyz/hosting#github-pages
 name: Deploy Quartz site to GitHub Pages
- 
+
 on:
   push:
     branches:
       - main
- 
+
 permissions:
   contents: read
   pages: write
   id-token: write
- 
+
 concurrency:
   group: "pages"
   cancel-in-progress: false
- 
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
         with:
-          fetch-depth: 1 # only fetch last commit
+          fetch-depth: 1
+
       - uses: actions/setup-node@v3
         with:
           node-version: 18.14
+
       - name: Cache Node Modules
         id: cache
         uses: actions/cache@v3
@@ -33,14 +34,19 @@ jobs:
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
           restore-keys: |
             ${{ runner.os }}-node-
-      - name: Install Dependencies
+
+      - name: Install Dependencies (if cache is not hit)
         if: ${{ steps.cache.outputs.cache-hit != 'true' }}
         run: npm ci
+
       - name: Build Quartz
         run: npx quartz build
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v2
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v2
         with:
           path: public
-      - name: Deploy to GitHub Pages
-        uses: actions/deploy-pages@v2
+        environment:
+          name: github-pages
+          url: ${{ steps.deployment.outputs.page_url }}

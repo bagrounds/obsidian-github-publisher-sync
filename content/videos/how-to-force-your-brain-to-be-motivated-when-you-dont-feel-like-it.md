@@ -11,7 +11,7 @@ tags:
 ---  
 [Home](../index.md) > [Videos](./index.md)  
 # How to Force Your Brain To Be Motivated (when you don’t feel like it)  
-  
+![How to Force Your Brain To Be Motivated (when you don’t feel like it)](https://youtu.be/RMB3NsQotvM)  
 - Motivation is fickle  
 - Anything that depends on motivation will also be fickle  
 - How can we avoid motivation-dependent productivity?  

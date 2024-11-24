@@ -11,9 +11,10 @@ tags:
 ---  
 [Home](../index.md) > [Videos](./index.md)  
 # 3 High Leverage Career Skills (From a Principal At Amazon)  
-High leverage = more output for less input  
+![3 High Leverage Career Skills (From a Principal At Amazon)](https://youtu.be/wc9gBBybgLw)  
   
-Themes: leverage & career capital  
+- High leverage = more output for less input  
+- Themes: leverage & career capital  
   
 ## 3 High Leverage Career Skills  
 ### 1. Start a Brag Document  

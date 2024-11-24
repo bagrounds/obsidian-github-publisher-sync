@@ -11,6 +11,7 @@ tags:
 ---  
 [Home](../index.md) > [Videos](./index.md)  
 # Tools to Enhance Working Memory & Attention  
+![Tools to Enhance Working Memory & Attention](https://youtu.be/CQlTmOFM4Qs)  
 ## Notes  
 - Working memory follows an upside down U shaped function with respect to dopamine levels in the prefrontal cortex.  
 - If dopamine levels are too low or too high, working memory suffers.  

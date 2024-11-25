@@ -15,4 +15,5 @@ title: Topics
 - [Focus](./focus.md)  
 - [Tree Traversal](./tree-traversal.md)  
 - [Linear Processes](./linear-processes.md)  
+- [Rules](./rules.md)  
   

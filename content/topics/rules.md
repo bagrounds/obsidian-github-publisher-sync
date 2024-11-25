@@ -30,4 +30,5 @@ title: Rules
 - We might realize that the rules aren't helping us achieve our goals in the way we expected when we made them in the first place.  
   
 ## How do we make rules with a group?  
-- If an individual   
+- If an individual makes rules in order to more easily achieve their goals according to their understanding of reality, then maybe a group can do the same.  
+- A group can make rules together in order to make it easier to achieve their collective goals according to their collective understanding of reality.  

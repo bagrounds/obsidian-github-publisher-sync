@@ -11,6 +11,8 @@ tags:
 ---  
 [Home](../index.md) > [Videos](./index.md)  
 # How to hack your brain to crave doing hard things.  
+![How to hack your brain to crave doing hard things.](https://youtu.be/BbhKTFXu7dc)  
+  
 ⛽ Dopamine is fuel for motivation.  
 🔥 We have 2 furnaces for burning motivation.  
 ☯️ The furnace of waste and the furnace of purpose.  

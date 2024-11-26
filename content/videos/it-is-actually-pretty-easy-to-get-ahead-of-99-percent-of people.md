@@ -11,6 +11,8 @@ tags:
 ---  
 [Home](../index.md) > [Videos](./index.md)  
 # It’s actually pretty easy to get ahead of 99% of people.  
+![It’s actually pretty easy to get ahead of 99% of people.](https://youtu.be/lzEl6_GXPuw)  
+  
 ## Content  
 Make a daily habit of seeking discomfort.  
 You know what you _should_ do.  

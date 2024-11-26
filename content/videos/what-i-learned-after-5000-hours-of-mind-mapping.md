@@ -11,6 +11,7 @@ tags:
 ---  
 [Home](../index.md) > [Videos](./index.md)  
 # What I Learned after 5000 Hours of Mind Mapping  
+![What I Learned after 5000 Hours of Mind Mapping](https://youtu.be/NqxUExCZJ5Y)  
   
 ```mermaid  
 flowchart  

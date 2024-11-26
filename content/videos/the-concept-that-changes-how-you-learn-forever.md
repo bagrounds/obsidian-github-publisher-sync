@@ -11,6 +11,8 @@ tags:
 ---  
 [Home](../index.md) > [Videos](./index.md)  
 # The concept that changes how you learn forever.  
+![The concept that changes how you learn forever.](https://youtu.be/FITESP_nZhc)  
+  
 ## 📜 Summary  
 1. 💪🏻 Learning is physical.  
 2. 🌌 Brains have trillions of connections.  

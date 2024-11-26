@@ -3,7 +3,7 @@ share: true
 aliases:  
   - "Dr. Casey Means: Transform Your Health by Improving Metabolism, Hormone & Blood Sugar Regulation"  
 title: "Dr. Casey Means: Transform Your Health by Improving Metabolism, Hormone & Blood Sugar Regulation"  
-URL:   
+URL: https://youtu.be/8qaBpM73NSk  
 Author:   
 Platform: "#YouTube"  
 Channel: "[[Huberman Lab]]"  
@@ -11,6 +11,8 @@ tags:
 ---  
 [Home](../index.md) > [Videos](./index.md)  
 # Dr. Casey Means: Transform Your Health by Improving Metabolism, Hormone & Blood Sugar Regulation  
+![Dr. Casey Means: Transform Your Health by Improving Metabolism, Hormone & Blood Sugar Regulation](https://youtu.be/8qaBpM73NSk)  
+  
 ## Notes  
 1. Metabolic health is a critical factor in many chronic illnesses  
 2. We can improve metabolic health by  

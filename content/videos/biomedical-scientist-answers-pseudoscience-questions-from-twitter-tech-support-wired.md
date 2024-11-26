@@ -11,6 +11,8 @@ tags:
 ---  
 [Home](../index.md) > [Videos](./index.md)  
 # Biomedical Scientist Answers Pseudoscience Questions From Twitter | Tech Support | WIRED  
+![Biomedical Scientist Answers Pseudoscience Questions From Twitter | Tech Support | WIRED](https://youtu.be/vj71yGp-8WM)  
+  
 🎩 [Pseudoscience](https://wikipedia.org/wiki/Pseudoscience) is fake science.  
 💩 Flat tummy tea = laxatives; not a healthy way to lose weight; causes dehydration, which is dangerous  
 🦴 Chiropractors are **not** real doctors.  

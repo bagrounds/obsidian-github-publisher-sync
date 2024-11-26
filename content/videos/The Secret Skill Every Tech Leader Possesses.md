@@ -11,6 +11,8 @@ tags:
 ---  
 [Home](../index.md) > [Videos](./index.md)  
 # The Secret Skill Every Tech Leader Possesses  
+![The Secret Skill Every Tech Leader Possesses](https://youtu.be/uUKAVfIahCY)  
+  
 Once you see it, you can't unsee it.  
 To help others grow, focus less on new knowledge and more on new awareness.  
 Engineers are smart and learn fast.  

@@ -11,3 +11,4 @@ tags:
 ---  
 [Home](../index.md) > [Videos](./index.md)  
 # How to Reduce Bone Injury Risks | Running Science  
+![How to Reduce Bone Injury Risks | Running Science](https://youtu.be/dQfTkmef_s4)  

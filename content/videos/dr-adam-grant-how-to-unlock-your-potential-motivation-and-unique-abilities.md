@@ -11,3 +11,4 @@ tags:
 ---  
 [Home](../index.md) > [Videos](./index.md)  
 # Dr. Adam Grant: How to Unlock Your Potential, Motivation & Unique Abilities  
+![Dr. Adam Grant: How to Unlock Your Potential, Motivation & Unique Abilities](https://youtu.be/3gtvNYa3Nd8)  

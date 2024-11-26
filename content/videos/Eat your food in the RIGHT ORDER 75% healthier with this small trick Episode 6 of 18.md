@@ -11,6 +11,8 @@ tags:
 ---  
 [Home](../index.md) > [Videos](./index.md)  
 # Eat your food in the RIGHT ORDER: 75% healthier with this small trick | Episode 6 of 18  
+![Eat your food in the RIGHT ORDER: 75% healthier with this small trick | Episode 6 of 18](https://youtu.be/HEEUrIQ_3O4)  
+  
 The order we eat food in makes a difference for health and energy levels.  
 Eat veggies first, then proteins and fats, and carbs last.  
 Fiber in the veggies acts like a filter to helps slow the delivery of glucose (sugar) into our blood stream and reduces the spike in blood sugar.  

@@ -3,7 +3,7 @@ share: true
 aliases:  
   - "Dr. Matt Walker: How to Structure Your Sleep, Use Naps & Time Caffeine | Huberman Lab Guest Series"  
 title: "Dr. Matt Walker: How to Structure Your Sleep, Use Naps & Time Caffeine | Huberman Lab Guest Series"  
-URL:   
+URL: https://youtu.be/4F_RBc1akC8  
 Author:   
 Platform:   
 Channel:   
@@ -11,6 +11,8 @@ tags:
 ---  
 [Home](../index.md) > [Videos](./index.md)  
 # Dr. Matt Walker: How to Structure Your Sleep, Use Naps & Time Caffeine | Huberman Lab Guest Series  
+![Dr. Matt Walker: How to Structure Your Sleep, Use Naps & Time Caffeine | Huberman Lab Guest Series](https://youtu.be/4F_RBc1akC8)  
+  
 1. Naps  
   1. For improved alertness, concentration, motivation, and energy, aim for a 20 minute nap  
   2. On off on experiment  

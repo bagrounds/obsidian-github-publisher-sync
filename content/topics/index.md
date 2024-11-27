@@ -16,4 +16,5 @@ title: Topics
 - [Tree Traversal](./tree-traversal.md)  
 - [Linear Processes](./linear-processes.md)  
 - [Rules](./rules.md)  
+- [A Method For Estimating Work](./a-method-for-estimating-work.md)  
   

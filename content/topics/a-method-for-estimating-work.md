@@ -61,4 +61,3 @@ Observing how our completed task durations differ from our estimates informs how
     2. invites collaborative planning. Improving a plan is often faster, easier, cheaper, and feasible compared to improving a completed task.  
     3. produces a reference plan that someone else may use for a similar task in the future.  
     4. highlights processes that may be learned from or improved upon  
-  

@@ -30,4 +30,5 @@ share: true
 - [Zero to One](./zero-to-one.md)  
 - [Organize for Complexity](./organize-for-complexity.md)  
 - [Expecting Better](./expecting-better.md)  
+- [The Innovator's Dilemma](./the%20innovators-dilemma.md)  
   

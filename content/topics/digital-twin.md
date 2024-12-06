@@ -102,6 +102,7 @@ M -->|📷 Capture\n➡️ Convert\n📡 Transmit| X
         4. Scalable algorithms for updating, prediction, and control  
         5. Optional sensing strategies  
         6. Data sharing and decomposition across organizations & stakeholders  
+        7. Interacting with human decision makers  
 7. ![](https://youtu.be/ScmK-bKJ4MI)  
 8. ![](https://youtu.be/cfbKR48nSyQ)  
 9. ![](https://youtu.be/l5M4sqaRd6w)  

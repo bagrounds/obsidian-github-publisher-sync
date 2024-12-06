@@ -107,3 +107,22 @@ M -->|📷 Capture\n➡️ Convert\n📡 Transmit| X
 8. ![](https://youtu.be/cfbKR48nSyQ)  
 9. ![](https://youtu.be/l5M4sqaRd6w)  
 10. ![](https://youtu.be/60eCpw0Toy4)  
+11. ![Digital twins: A personalized future of computing for complex systems | Karen Willcox | TEDxUTAustin](https://youtu.be/AzfMLYw_-Ps)  
+    1. Karen Willcox, Computational Science, Oden Institute @ UT Austin  
+    2. Digital Twin - a personalized, dynamically evolving model of a physical system  
+        1. Data + models  
+        2. Data assimilation  
+        3. Prediction  
+12. ![Reinventing Retail: Lowe's Builds Digital Twins of Stores to Deliver Enhanced Shopping Experiences](https://youtu.be/6uUC63qD9vE)  
+    1. Lowe's retail digital twins  
+    2. Tech  
+        1. Nvidia Omniverse  
+        2. Universal Scene Description (USD)  
+    3. Benefits  
+        1. Understanding sales performance & anomalies  
+        2. Real-time collaboration between store associates and planners  
+        3. Simulation, prediction, and testing of proposed store layout & inventory changes  
+        4. Augmented Reality tools  
+13.   
+  
+  

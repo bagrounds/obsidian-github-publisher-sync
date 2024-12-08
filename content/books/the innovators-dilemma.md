@@ -11,7 +11,7 @@ tags:
 # The Innovator's Dilemma  
 ## Content  
 ### Part One: Why Great Companies Can Fail  
-#### 1. How Can Get Firms Fail? Insights from the Hard Disk Drive Industry  
+#### 1. How Can Great Firms Fail? Insights from the Hard Disk Drive Industry  
 ```mermaid  
 graph TD  
   A[Sustaining Innovation] -->|⬆️Increases| B[Existing Market Share]  
@@ -56,8 +56,10 @@ P -->|💰| S
 P -->|💰| M  
   ```  
   
-#### 3. X  
-#### 4. X  
+#### 3. Disruptive Technological Change in the Mechanical Excavator Industry  
+  
+#### 4. What Goes Up Can't Go Down   
+  
 ### Part Two: Managing Disruptive Technological Change  
 #### 5. X  
 #### 6. X  

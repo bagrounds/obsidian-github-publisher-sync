@@ -33,3 +33,4 @@ If you don't know what that means... Welcome to my personal website!
 - <a href="http://goodreads.com/bagrounds"><img style="width:1em; margin:0;" src="https://simpleicons.org/icons/goodreads.svg"/> GoodReads</a>  
 - <a href="https://twitter.com/bagrounds"><img style="width:1em; margin:0;" src="https://simpleicons.org/icons/x.svg"/> X (Formerly Twitter)</a>  
 - <a href="https://linkedin.com/in/bagrounds"><img style="width:1em; margin:0;" src="https://simpleicons.org/icons/linkedin.svg"/> LinkedIn</a>  
+- <a href="https://www.inaturalist.org/people/8822063"><img style="width:1em; margin:0;" src="https://static.inaturalist.org/wiki_page_attachments/3154-original.png"/> iNaturalist</a>  

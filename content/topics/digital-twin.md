@@ -123,6 +123,15 @@ M -->|📷 Capture\n➡️ Convert\n📡 Transmit| X
         2. Real-time collaboration between store associates and planners  
         3. Simulation, prediction, and testing of proposed store layout & inventory changes  
         4. Augmented Reality tools  
-13.   
+13. ![Leveraging System Dynamics for Digital Twins and Dynamic Business Architecture](https://youtu.be/rADl9qnrH44)  
+    1. System Dynamics  
+    2. System oriented design  
+    3. Design thinking  
+    4. System thinking  
+    5. Architecture / Engineering thinking  
+    6. Breathing life into static models  
+    7. Tools  
+        1. Adonis  
+        2. Stella  
   
   

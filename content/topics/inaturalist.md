@@ -7,7 +7,9 @@ title: iNaturalist
 [Home](../index.md) > [Topics](./index.md)  
 # Inaturalist  
 ## 🔗 Links  
+- https://www.inaturalist.org  
 - https://github.com/inaturalist/inaturalist  
+- https://x.com/inaturalist  
   
 ## My Observations Widget  
 <a href="https://www.inaturalist.org"><img alt="iNaturalist" src="https://www.inaturalist.org/assets/logo.gif" /></a>  

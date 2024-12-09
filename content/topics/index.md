@@ -7,6 +7,7 @@ title: Topics
 [Home](../index.md)  
 # Topics  
 - [Software Engineering](./software-engineering.md)  
+- [Rules](./rules.md)  
 - [My Resume](./my-resume.md)  
 - [Feline GI Lymphoma](./feline-gi-lymphoma.md)  
 - [Memory](./memory.md)  
@@ -15,6 +16,7 @@ title: Topics
 - [Focus](./focus.md)  
 - [Tree Traversal](./tree-traversal.md)  
 - [Linear Processes](./linear-processes.md)  
-- [Rules](./rules.md)  
+- [Digital Twin](./digital-twin.md)  
 - [A Method For Estimating Work](./a-method-for-estimating-work.md)  
+- [iNaturalist](./inaturalist.md)  
   

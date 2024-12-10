@@ -37,35 +37,58 @@ _Thinking in Systems_ introduces the concept of systems thinking, which focuses 
     This science fiction novel explores societal systems, their flaws, and how feedback loops affect social structures. It provides a fictional narrative that thoughtfully incorporates ideas of systems thinking, focusing on the relationship between two contrasting worlds—one built on capitalism and the other on anarchism.  
   
 ### 💬 ChatGPT Prompt  
-> Generate a concise mermaidjs mindmap for the most important concepts from the book Thinking in Systems. Illustrate each element with appropriate emojis. Use semicolons and quotes liberally to avoid syntax errors.  
+> Generate robust code for a concise, obsidian markdown embeddable mermaidjs (v11.4.0) mindmap for the most important concepts from the book Thinking in Systems. Be very concise with words. Illustrate each element with appropriate emojis. Use semicolons at the end of each appropriate line and quote liberally to avoid syntax errors. Check your code to ensure it works and fix the bugs before showing it to me!  
   
 ### 🪄 Result  
 ```mermaid  
 mindmap  
-  root((Thinking in Systems))  
-    System((System 🔄))  
-      Feedback((Feedback 🔁))  
-        Positive((Positive Feedback ➕))  
-        Negative((Negative Feedback ➖))  
-    Stocks((Stocks 💼))  
-      Accumulation((Accumulation 🧮))  
-      Flow((Flow 🚰))  
-    Leverage((Leverage 🏋️‍♂️))  
-      SmallChanges((Small Changes 🌱))  
-      BigImpact((Big Impact 🌍))  
-    Resilience((Resilience 💪))  
-      Stability((Stability ⚖️))  
-      Adaptation((Adaptation 🔄))  
-    MentalModels((Mental Models 🧠))  
-      Assumptions((Assumptions 🤔))  
-      Beliefs((Beliefs 💭))  
-    SystemsThinking((Systems Thinking 🌐))  
-      Interconnections((Interconnections 🔗))  
-      Causality((Causality 🔍))  
-    Boundaries((Boundaries 🚧))  
-      Limitations((Limitations ⛔))  
-      Focus((Focus 🎯))  
-    Delays((Delays ⏳))  
-      ShortTerm((Short Term ⏰))  
-      LongTerm((Long Term 📅))  
+  root((Thinking in Systems 📚))  
+    Concepts 🧠  
+      Systems 🌐  
+        Interconnectedness 🔗;  
+        Feedback loops 🔄;  
+          Reinforcing + 🟢;  
+          Balancing - 🔴;  
+        Stock & Flow 💧;  
+          Stock 🏞;  
+          Flow 🌊;  
+      Leverage points 🏋️‍♀️;  
+        Small changes, big impact ⚡;  
+        High leverage 🌟;  
+      System Boundaries 🔲;  
+        What’s included ➡️;  
+        What’s excluded ❌;  
+      Delays ⏳;  
+        Cause and effect gap ⚖️;  
+        Time lags ⏰;  
+      Mental Models 🧩;  
+        Simplifications 🧐;  
+        Changing perceptions 🧠;  
+      Stocks & Flows 📉📈;  
+        Quantitative aspects 🔢;  
+        Influence of behavior 👥;  
+    Systems Thinking 🌀  
+      Holistic view 🌍;  
+      Focus on relationships ↔️;  
+      Patterns, not snapshots 🔍;  
+      Nonlinearity ⚠️;  
+    Feedback Loops 🔄  
+      Positive feedback ➕;  
+        Growth 📈;  
+        Explosive change 💥;  
+      Negative feedback ➖;  
+        Stabilization ⚖️;  
+        Regulation 🌱;  
+    Emergence ✨  
+      New properties 🌱;  
+      Whole is greater than parts ⚖️;  
+    Resilience 🌳  
+      Adaptability 🔄;  
+      Stability 🏛;  
+      Sustainability 🌍;  
+    Systems Traps ⚠️  
+      Policy resistance 🚫;  
+      Shifting the burden 🏋️‍♂️;  
+      Escalation 🔼;  
+      Tragedy of the commons ⚖️;  
 ```  

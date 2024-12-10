@@ -21,7 +21,7 @@ _Thinking in Systems_ introduces the concept of systems thinking, which focuses 
 **Book Recommendations**:  
   
 1. **Best Alternate Book on the Same Topic**:   
-    **"[The Fifth Discipline](./The%20Fifth%20Discipline.md): The Art & Practice of The Learning Organization" by Peter Senge**    
+    **"[The Fifth Discipline](./the-fifth-discipline.md): The Art & Practice of The Learning Organization" by Peter Senge**    
     A foundational book on systems thinking in the context of organizational learning, emphasizing how understanding and applying systems thinking can foster growth and adaptation in businesses and institutions.  
       
 2. **Best Tangentially Related Book**:    

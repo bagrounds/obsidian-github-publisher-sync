@@ -37,45 +37,37 @@ _Thinking in Systems_ introduces the concept of systems thinking, which focuses 
     This science fiction novel explores societal systems, their flaws, and how feedback loops affect social structures. It provides a fictional narrative that thoughtfully incorporates ideas of systems thinking, focusing on the relationship between two contrasting worlds—one built on capitalism and the other on anarchism.  
   
 ### 💬 ChatGPT Prompt  
-> Generate a concise, emoji-illustrated mermaidjs mindmap for the most important concepts from the book Thinking in Systems.  
+> Generate a concise mermaidjs mindmap for the most important concepts from the book Thinking in Systems. Illustrate each element with appropriate emojis. Use semicolons and quotes liberally to avoid syntax errors.  
   
 ### 🪄 Result  
 ```mermaid  
 mindmap  
-  root((Thinking in Systems 📚))  
-    Systems  
-      Defn(SYSTEMS 🌀)  
-      Types  
-        Closed Systems ♻️  
-        Open Systems 🌍  
-      Feedback  
-        Positive Feedback 🔼  
-        Negative Feedback 🔽  
-    Stocks  
-      Accumulations 💼  
-      Growth 📈  
-    Flows  
-      Movement 🔄  
-      Input/Output ⬆️⬇️  
-    Leverage Points  
-      High Leverage ⚡  
-      Low Leverage 🐢  
-    System Boundaries  
-      Limits 🌐  
-      Boundaries 🛑  
-    System Behavior  
-      Delays ⏳  
-      Nonlinearity ↔️  
-      Emergence 🌱  
-    Mental Models  
-      Assumptions 🧠  
-      Simplifications 🔍  
-    Intervention  
-      Systemic Change 🔧  
-      Tools 🛠️  
-    Resilience  
-      Adaptive Systems 🌳  
-      Robustness 💪  
-    Sustainability  
-      Long-Term Thinking 🕰️  
+  root((Thinking in Systems))  
+    "Systems"   
+      "Definition"   
+        "Interconnected elements" 🧩  
+      "Structure"   
+        "Patterns of behavior" 📊  
+      "Feedback loops"   
+        "Reinforcing" 🔄   
+        "Balancing" ⚖️  
+    "Leverage Points"   
+      "Small changes" ⚡  
+      "Maximize impact" 🌐  
+    "Boundaries"   
+      "Delimiting the system" 🚧  
+    "Stocks and Flows"   
+      "Stock: Accumulation" 📦  
+      "Flow: Movement" 🌊  
+    "Time delays"   
+      "Lag in responses" ⏳  
+    "Resilience"   
+      "Adaptability" 🌱  
+    "Nonlinear Behavior"   
+      "Unpredictable outcomes" 🔮  
+    "Mental Models"   
+      "How we perceive the system" 🧠  
+    "System Traps"   
+      "Short-term fixes" ⏳  
+      "Misleading assumptions" 💭  
 ```  

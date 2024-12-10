@@ -42,7 +42,7 @@ _Thinking in Systems_ introduces the concept of systems thinking, which focuses 
 ### 🪄 Result  
 ```mermaid  
 mindmap;  
-  root((Thinking in Systems 📚))  
+  root[Thinking in Systems 📚)  
     Concepts 🧠;  
       Systems 🌐;  
         Interconnectedness 🔗;  

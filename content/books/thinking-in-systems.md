@@ -43,8 +43,8 @@ _Thinking in Systems_ introduces the concept of systems thinking, which focuses 
 ```mermaid  
 mindmap  
   root((Thinking in Systems 📚))  
-    Concepts 🧠  
-      Systems 🌐  
+    Concepts 🧠;  
+      Systems 🌐;  
         Interconnectedness 🔗;  
         Feedback loops 🔄;  
           Reinforcing + 🟢;  
@@ -67,7 +67,7 @@ mindmap
       Stocks & Flows 📉📈;  
         Quantitative aspects 🔢;  
         Influence of behavior 👥;  
-    Systems Thinking 🌀  
+    Systems Thinking 🌀;  
       Holistic view 🌍;  
       Focus on relationships ↔️;  
       Patterns, not snapshots 🔍;  
@@ -79,16 +79,23 @@ mindmap
       Negative feedback ➖;  
         Stabilization ⚖️;  
         Regulation 🌱;  
-    Emergence ✨  
+    Emergence ✨;  
       New properties 🌱;  
       Whole is greater than parts ⚖️;  
-    Resilience 🌳  
+    Resilience 🌳;  
       Adaptability 🔄;  
       Stability 🏛;  
       Sustainability 🌍;  
-    Systems Traps ⚠️  
+    Systems Traps ⚠️;  
       Policy resistance 🚫;  
       Shifting the burden 🏋️‍♂️;  
       Escalation 🔼;  
       Tragedy of the commons ⚖️;  
 ```  
+  
+## 🪄🖼️ AI Imagery  
+### 💬 Meta.ai Prompt  
+> Imagine a complex system of feedback loops.  
+  
+### 🚃 Trolling?  
+![Pasted image 20241210001850](../Pasted%20image%2020241210001850.jpg)

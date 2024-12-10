@@ -31,4 +31,5 @@ share: true
 - [Organize for Complexity](./organize-for-complexity.md)  
 - [Expecting Better](./expecting-better.md)  
 - [The Innovator's Dilemma](./the%20innovators-dilemma.md)  
+- [Thinking in Systems](./thinking-in-systems.md)  
   

@@ -25,7 +25,7 @@ _Thinking in Systems_ introduces the concept of systems thinking, which focuses 
     A foundational book on systems thinking in the context of organizational learning, emphasizing how understanding and applying systems thinking can foster growth and adaptation in businesses and institutions.  
       
 2. **Best Tangentially Related Book**:    
-    **"The Innovator’s Dilemma: When New Technologies Cause Great Firms to Fail" by Clayton Christensen**    
+    **"[The Innovator's Dilemma](./the%20innovators-dilemma.md): When New Technologies Cause Great Firms to Fail" by Clayton Christensen**    
     This book focuses on how disruptive innovations affect businesses, providing a perspective on how systems and processes within companies can be disrupted, indirectly applying system dynamics concepts.  
       
 3. **Best Diametrically Opposed Book**:    
@@ -41,7 +41,7 @@ _Thinking in Systems_ introduces the concept of systems thinking, which focuses 
   
 ### 🪄 Result  
 ```mermaid  
-mindmap  
+mindmap;  
   root((Thinking in Systems 📚))  
     Concepts 🧠;  
       Systems 🌐;  

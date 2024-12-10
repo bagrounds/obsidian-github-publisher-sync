@@ -43,31 +43,29 @@ _Thinking in Systems_ introduces the concept of systems thinking, which focuses 
 ```mermaid  
 mindmap  
   root((Thinking in Systems))  
-    "Systems"   
-      "Definition"   
-        "Interconnected elements" 🧩  
-      "Structure"   
-        "Patterns of behavior" 📊  
-      "Feedback loops"   
-        "Reinforcing" 🔄   
-        "Balancing" ⚖️  
-    "Leverage Points"   
-      "Small changes" ⚡  
-      "Maximize impact" 🌐  
-    "Boundaries"   
-      "Delimiting the system" 🚧  
-    "Stocks and Flows"   
-      "Stock: Accumulation" 📦  
-      "Flow: Movement" 🌊  
-    "Time delays"   
-      "Lag in responses" ⏳  
-    "Resilience"   
-      "Adaptability" 🌱  
-    "Nonlinear Behavior"   
-      "Unpredictable outcomes" 🔮  
-    "Mental Models"   
-      "How we perceive the system" 🧠  
-    "System Traps"   
-      "Short-term fixes" ⏳  
-      "Misleading assumptions" 💭  
+    System((System 🔄))  
+      Feedback((Feedback 🔁))  
+        Positive((Positive Feedback ➕))  
+        Negative((Negative Feedback ➖))  
+    Stocks((Stocks 💼))  
+      Accumulation((Accumulation 🧮))  
+      Flow((Flow 🚰))  
+    Leverage((Leverage 🏋️‍♂️))  
+      SmallChanges((Small Changes 🌱))  
+      BigImpact((Big Impact 🌍))  
+    Resilience((Resilience 💪))  
+      Stability((Stability ⚖️))  
+      Adaptation((Adaptation 🔄))  
+    MentalModels((Mental Models 🧠))  
+      Assumptions((Assumptions 🤔))  
+      Beliefs((Beliefs 💭))  
+    SystemsThinking((Systems Thinking 🌐))  
+      Interconnections((Interconnections 🔗))  
+      Causality((Causality 🔍))  
+    Boundaries((Boundaries 🚧))  
+      Limitations((Limitations ⛔))  
+      Focus((Focus 🎯))  
+    Delays((Delays ⏳))  
+      ShortTerm((Short Term ⏰))  
+      LongTerm((Long Term 📅))  
 ```  

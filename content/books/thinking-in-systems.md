@@ -42,55 +42,55 @@ _Thinking in Systems_ introduces the concept of systems thinking, which focuses 
 ### 🪄 Result  
 ```mermaid  
 mindmap;  
-  root[Thinking in Systems 📚)  
-    Concepts 🧠;  
-      Systems 🌐;  
-        Interconnectedness 🔗;  
-        Feedback loops 🔄;  
-          "Reinforcing + 🟢";  
-          "Balancing - 🔴";  
-        Stock & Flow 💧;  
-          Stock 🏞;  
-          Flow 🌊;  
-      Leverage points 🏋️‍♀️;  
-        "Small changes, big impact ⚡";  
-        High leverage 🌟;  
-      System Boundaries 🔲;  
-        "What’s included ➡️";  
-        "What’s excluded ❌";  
-      Delays ⏳;  
-        Cause and effect gap ⚖️;  
-        Time lags ⏰;  
-      Mental Models 🧩;  
-        Simplifications 🧐;  
-        Changing perceptions 🧠;  
-      "Stocks & Flows 📉📈";  
-        Quantitative aspects 🔢;  
-        Influence of behavior 👥;  
-    Systems Thinking 🌀;  
-      Holistic view 🌍;  
-      Focus on relationships ↔️;  
-      "Patterns, not snapshots 🔍";  
-      Nonlinearity ⚠️;  
-    Feedback Loops 🔄;  
-      Positive feedback ➕;  
-        Growth 📈;  
-        Explosive change 💥;  
-      Negative feedback ➖;  
-        Stabilization ⚖️;  
-        Regulation 🌱;  
-    Emergence ✨;  
-      New properties 🌱;  
-      Whole is greater than parts ⚖️;  
-    Resilience 🌳;  
-      Adaptability 🔄;  
-      Stability 🏛;  
-      Sustainability 🌍;  
-    Systems Traps ⚠️;  
-      Policy resistance 🚫;  
-      Shifting the burden 🏋️‍♂️;  
-      Escalation 🔼;  
-      Tragedy of the commons ⚖️;  
+  root[Thinking in Systems 📚]  
+    [Concepts 🧠]  
+      [Systems 🌐]  
+        [Interconnectedness 🔗]  
+        [Feedback loops 🔄]  
+          [Reinforcing + 🟢]  
+          [Balancing - 🔴]  
+        [Stock & Flow 💧]  
+          [Stock 🏞]  
+          [Flow 🌊]  
+      [Leverage points 🏋️‍♀️]  
+        [Small changes, big impact ⚡]  
+        [High leverage 🌟]  
+      [System Boundaries 🔲]  
+        [What’s included ➡️]  
+        [What’s excluded ❌]  
+      [Delays ⏳]  
+        [Cause and effect gap ⚖️]  
+        [Time lags ⏰]  
+      [Mental Models 🧩]  
+        [Simplifications 🧐]  
+        [Changing perceptions 🧠]  
+      [Stocks & Flows 📉📈]  
+        [Quantitative aspects 🔢]  
+        [Influence of behavior 👥]  
+    [Systems Thinking 🌀]  
+      [Holistic view 🌍]  
+      [Focus on relationships ↔️]  
+      [Patterns, not snapshots 🔍]  
+      [Nonlinearity ⚠️]  
+    [Feedback Loops 🔄]  
+      [Positive feedback ➕]  
+        [Growth 📈]  
+        [Explosive change 💥]  
+      [Negative feedback ➖]  
+        [Stabilization ⚖️]  
+        [Regulation 🌱]  
+    [Emergence ✨]  
+      [New properties 🌱]  
+      [Whole is greater than parts ⚖️]  
+    [Resilience 🌳]  
+      [Adaptability 🔄]  
+      [Stability 🏛]  
+      [Sustainability 🌍]  
+    [Systems Traps ⚠️]  
+      [Policy resistance 🚫]  
+      [Shifting the burden 🏋️‍♂️]  
+      [Escalation 🔼]  
+      [Tragedy of the commons ⚖️]  
 ```  
   
 ## 🪄🖼️ AI Imagery  

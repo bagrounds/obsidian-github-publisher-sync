@@ -10,7 +10,7 @@ tags:
 [Home](../index.md) > [Books](./index.md)  
 # Thinking in Systems  
 ## 🤖 AI Summary  
-### 💬 ChatGPT Prompt  
+### 💬 [ChatGPT](https://chatgpt.com) Prompt  
 > Very briefly summarize the book: Thinking in Systems and make the following additional book recommendations: 1 for the best alternate book on the same topic, 1 for the best book that is tangentially related, 1 for the best book that is diametrically opposed, and 1 for the best fiction book that incorporated related ideas.  
   
 ### 🤖💬 **Summary of _Thinking in Systems: A Primer_ by Donella H. Meadows**:    
@@ -72,7 +72,7 @@ mindmap
       Focus on relationships ↔️;  
       "Patterns, not snapshots 🔍";  
       Nonlinearity ⚠️;  
-    Feedback Loops 🔄  
+    Feedback Loops 🔄;  
       Positive feedback ➕;  
         Growth 📈;  
         Explosive change 💥;  
@@ -94,7 +94,7 @@ mindmap
 ```  
   
 ## 🪄🖼️ AI Imagery  
-### 💬 Meta.ai Prompt  
+### 💬 [Meta.ai](https://meta.ai) Prompt  
 > Imagine a complex system of feedback loops.  
   
 ### 🚃 Trolling?  

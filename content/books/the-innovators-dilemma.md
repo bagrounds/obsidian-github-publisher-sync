@@ -3,7 +3,7 @@ share: true
 aliases:  
   - The Innovator's Dilemma  
 title: The Innovator's Dilemma  
-URL: https://bagrounds.org/books/The Innovator's Dilemma  
+URL: https://bagrounds.org/books/the-innovators-dilemma  
 Author:   
 tags:   
 ---  

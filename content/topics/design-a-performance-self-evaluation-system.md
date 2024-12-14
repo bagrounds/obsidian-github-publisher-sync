@@ -8,6 +8,7 @@ URL: https://bagrounds.org/topics/design-a-performance-self-evaluation-system
 [Home](../index.md) > [Topics](./index.md)  
 # Design a Performance Self-Evaluation System  
 ![design-a-performance-self-evaluation-system](../design-a-performance-self-evaluation-system.svg)  
+%%[🖋 Edit in Excalidraw](../excalidraw/design-a-performance-self-evaluation-system.md)%%  
   
 ---  
 _If you're here for the performance self-evaluation system, you can ignore everything below_  

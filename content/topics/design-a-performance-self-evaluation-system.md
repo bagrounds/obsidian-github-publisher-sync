@@ -21,6 +21,13 @@ This page contains the following errors:
 error on line 1 at column 1: Start tag expected, '<' not found  
 Below is a rendering of the page up to the first error.  
 ```  
+- I sometimes see the following error in an obsidian popup after publishing this note:  
+```  
+❌ Errors  
+📤 Cannot be published  
+🗒️Drawing 2024-12-12 17.20.04.excalidraw.md  
+```  
+  
   
 ### 🧑‍🔬 Attempts  
 - I've updated my GitHub publisher (now [Enveloppe](https://enveloppe.github.io)) Obsidian plugin to the latest version  

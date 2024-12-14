@@ -149,8 +149,10 @@ FATAL    Enveloppe
 - I've looked through Enveloppe's GitHub issue tracker for similar problems  
   - This [issue](https://github.com/Enveloppe/obsidian-enveloppe/issues/331#issuecomment-2049061420) looks close, but not quite the same  
   
-###  🤔 Hypothesis  
-The Excalidraw is being sent over as markdown instead of directly being converted to svg  
+###  🤔 Hypotheses  
+- The Excalidraw file is being sent over as markdown instead of directly being converted to svg  
+- Maybe that Buffer not defined error comes up while trying to convert the file to svg  
+  - If so, the JavaScript runtime used by my mobile obsidian app may differ from the developer's test environment. But I'm already on the latest version of Obsidian.  
   
 ### 📎 Workaround  
 In the meantime, I've exported the excalidraw to svg and embedded that directly.  

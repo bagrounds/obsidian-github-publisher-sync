@@ -19,7 +19,7 @@ URL: https://bagrounds.org/topics
 - [iNaturalist](./inaturalist.md)  
 - [Linear Processes](./linear-processes.md)  
 - [Digital Twin](./digital-twin.md)  
+- [Static Apis](./static-apis.md)  
 - [A Method For Estimating Work](./a-method-for-estimating-work.md)  
 - [Design a Performance Self-Evaluation System](./design-a-performance-self-evaluation-system.md)  
-- [Static Apis](./static-apis.md)  
   

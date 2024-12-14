@@ -1,11 +1,12 @@
----  
-share: true  
-aliases:  
-  - Reflections  
-title: Reflections  
----  
+---
+share: true
+aliases:
+  - Reflections
+title: Reflections
+---
 [Home](../index.md)  
 # 🪞 Reflections  
+- [2024-12-12](./2024-12-12.md)  
 - [2024-12-10](./2024-12-10.md)  
 - [2024-12-09](./2024-12-09.md)  
 - [2024-12-08](./2024-12-08.md)  

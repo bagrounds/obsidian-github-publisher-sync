@@ -3,6 +3,7 @@ share: true
 aliases:  
   - Static Apis  
 title: Static Apis  
+URL: https://bagrounds.org/topics/static-apis  
 ---  
 [Home](../index.md) > [Topics](./index.md)  
 # Static Apis  

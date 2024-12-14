@@ -155,8 +155,9 @@ FATAL    Enveloppe
   - If so, the JavaScript runtime used by my mobile obsidian app may differ from the developer's test environment. But I'm already on the latest version of Obsidian.  
   
 ### 📎 Workaround  
-In the meantime, I've exported the excalidraw to svg and embedded that directly.  
-This gives the same end result, but requires a suboptimal workflow: re-export the file on every change, delete the old one, and rename the new export.  
+- In the meantime, I've exported the excalidraw to svg and embedded that directly.  
+- This gives the same end result, but requires a suboptimal workflow: re-export the file on every change, delete the old one, and rename the new export.  
+- ooh, looks like a [better workaround](https://forum.obsidian.md/t/has-anyone-succeeded-in-publishing-excalidraw-drawings/55587/9) may exist  
   
 ### 🦟 The Bug  
-![Drawing 2024-12-12 17.20.04.excalidraw](../Drawing%202024-12-12%2017.20.04.svg)  
+![design-a-performance-self-evaluation-system](../excalidraw/design-a-performance-self-evaluation-system.md)  

@@ -1,10 +1,10 @@
----  
-share: true  
-aliases:  
-  - Topics  
-title: Topics  
-URL: https://bagrounds.org/topics  
----  
+---
+share: true
+aliases:
+  - Topics
+title: Topics
+URL: https://bagrounds.org/topics
+---
 [Home](../index.md)  
 # Topics  
 - [Software Engineering](./software-engineering.md)  
@@ -20,4 +20,6 @@ URL: https://bagrounds.org/topics
 - [Linear Processes](./linear-processes.md)  
 - [Digital Twin](./digital-twin.md)  
 - [A Method For Estimating Work](./a-method-for-estimating-work.md)  
+- [Design a Performance Self-Evaluation System](./design-a-performance-self-evaluation-system.md)  
+- [Static Apis](./static-apis.md)  
   

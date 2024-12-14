@@ -1,9 +1,9 @@
----  
-share: true  
-aliases:  
-  - Articles  
-title: Articles  
----  
+---
+share: true
+aliases:
+  - Articles
+title: Articles
+---
 [Home](../index.md)  
 # Articles  
 - [The Log: What every software engineer should know about real-time data's unifying abstraction](./the-log-what-every-software%20engineer-should-know-about-real-time-datas-unifying-abstraction.md)  

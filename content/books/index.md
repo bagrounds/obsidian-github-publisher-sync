@@ -1,9 +1,9 @@
----  
-title: Books  
-aliases:  
-  - Books  
-share: true  
----  
+---
+title: Books
+aliases:
+  - Books
+share: true
+---
 [Home](../index.md)  
 # Books  
 - [A Thousand Brains](./a-thousand-brains.md)  
@@ -28,9 +28,9 @@ share: true
 - [Rapport](./rapport.md)  
 - [Atomic Habits](./atomic-habits.md)  
 - [Zero to One](./zero-to-one.md)  
+- [The Innovator's Dilemma](./the-innovators-dilemma.md)  
 - [Organize for Complexity](./organize-for-complexity.md)  
 - [Expecting Better](./expecting-better.md)  
-- [The Innovator's Dilemma](./the%20innovators-dilemma.md)  
 - [Thinking in Systems](./thinking-in-systems.md)  
 - [The Fifth Discipline](./the-fifth-discipline.md)  
   

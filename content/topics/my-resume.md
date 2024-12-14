@@ -1,9 +1,9 @@
----  
-share: true  
-title: My Resume  
-aliases:  
-  - My Resume  
----  
+---
+share: true
+title: My Resume
+aliases:
+  - My Resume
+---
 [Home](../index.md) > [Topics](./index.md)  
 # My Resume  
 📄 [My resume as a PDF](https://bagrounds.org/resume.pdf)  

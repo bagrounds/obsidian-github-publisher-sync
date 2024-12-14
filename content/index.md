@@ -1,9 +1,9 @@
----  
-share: true  
-aliases:  
-  - Home  
-URL: https://bagrounds.org  
----  
+---
+share: true
+aliases:
+  - Home
+URL: https://bagrounds.org
+---
 # Home  
 Welcome to the published subset of my Obsidian notes.  
 Powered by [Obsidian](https://obsidian.md) + [GitHub Publisher](https://github.com/ObsidianPublisher/obsidian-github-publisher) + [Quartz](https://quartz.jzhao.xyz)!  

@@ -23,7 +23,7 @@ Below is a rendering of the page up to the first error.
 ```  
   
 ### 🧑‍🔬 Attempts  
-- I've updated my GitHub publisher (now envelope) obsidian plugin to the latest version  
+- I've updated my GitHub publisher (now [Enveloppe](https://enveloppe.github.io)) Obsidian plugin to the latest version  
 - I've updated my Excalidraw Obsidian plugin to the latest version  
 - I've tried toggling a bunch of settings in my Envelope plugin related to links and conversions  
 - I've looked through Envelope's GitHub issue tracker for similar problems  

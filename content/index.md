@@ -15,6 +15,7 @@ If you don't know what that means... Welcome to my personal website!
 ## References  
 - [Articles](./articles/index.md)  
 - [Books](./books/index.md)  
+- [Bot Chats](./bot-chats/index.md)  
 - [People](./people/index.md)  
 - [Topics](./topics/index.md)  
 - [Videos](./videos/index.md)  

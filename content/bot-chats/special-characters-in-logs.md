@@ -4,7 +4,7 @@ aliases:
   - Special Characters In Logs
 title: Special Characters In Logs
 ---
-[Home](../index.md) > [BotChats](bot-chats/index.md)  
+[Home](../index.md) > [Bot Chats](./index.md)  
 # Special Characters In Logs  
 ## ChatGPT Prompt  
 > What's with all the special characters in this log message?  

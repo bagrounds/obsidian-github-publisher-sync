@@ -1,12 +1,12 @@
----  
-share: true  
-aliases:  
-  - The Job Closer  
-title: The Job Closer  
-URL:   
-Author: "[[Steve Dalton]]"  
-tags:   
----  
+---
+share: true
+aliases:
+  - The Job Closer
+title: The Job Closer
+URL: 
+Author: "[[Steve Dalton]]"
+tags: 
+---
 [Home](../index.md) > [Books](./index.md)  
 # The Job Closer  
 _Time Saving Techniques for Acing Resumes, Interviews, Negotiations, and More_  

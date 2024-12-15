@@ -1,14 +1,14 @@
----  
-share: true  
-aliases:  
-  - Most Tech Interview Prep is GARBAGE. (From a Principal Engineer at Amazon)  
-title: Most Tech Interview Prep is GARBAGE. (From a Principal Engineer at Amazon)  
-URL: https://youtu.be/0Z9RW_hhUT4  
-Author:   
-Platform: "#YouTube"  
-Channel: "[[A Life Engineered]]"  
-tags:   
----  
+---
+share: true
+aliases:
+  - Most Tech Interview Prep is GARBAGE. (From a Principal Engineer at Amazon)
+title: Most Tech Interview Prep is GARBAGE. (From a Principal Engineer at Amazon)
+URL: https://youtu.be/0Z9RW_hhUT4
+Author: 
+Platform: "#YouTube"
+Channel: "[[A Life Engineered]]"
+tags: 
+---
 [Home](../index.md) > [Videos](./index.md)  
 # Most Tech Interview Prep is GARBAGE. (From a Principal Engineer at Amazon)  
 ![Most Tech Interview Prep is GARBAGE. (From a Principal Engineer at Amazon)](https://youtu.be/0Z9RW_hhUT4)  

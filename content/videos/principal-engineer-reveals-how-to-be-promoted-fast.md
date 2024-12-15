@@ -1,14 +1,14 @@
----  
-share: true  
-aliases:  
-  - Principal Engineer Reveals How To Be Promoted FAST  
-title: Principal Engineer Reveals How To Be Promoted FAST  
-URL: https://youtu.be/kpK1YHq2iUg  
-Author:   
-Platform: "#YouTube"  
-Channel: "[[A Life Engineered]]"  
-tags:   
----  
+---
+share: true
+aliases:
+  - Principal Engineer Reveals How To Be Promoted FAST
+title: Principal Engineer Reveals How To Be Promoted FAST
+URL: https://youtu.be/kpK1YHq2iUg
+Author: 
+Platform: "#YouTube"
+Channel: "[[A Life Engineered]]"
+tags: 
+---
 [Home](../index.md) > [Videos](./index.md)  
 # Principal Engineer Reveals How To Be Promoted FAST  
 ![Principal Engineer Reveals How To Be Promoted FAST](https://youtu.be/kpK1YHq2iUg)  

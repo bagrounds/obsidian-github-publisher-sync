@@ -1,12 +1,12 @@
----  
-share: true  
-aliases:  
-  - Complexity  
-title: Complexity  
-URL: https://bagrounds.org/books/Complexity  
-Author: "[[Melanie Mitchell]]"  
-tags:   
----  
+---
+share: true
+aliases:
+  - Complexity
+title: Complexity
+URL: https://bagrounds.org/books/Complexity
+Author: "[[Melanie Mitchell]]"
+tags: 
+---
 [Home](../index.md) > [Books](./index.md)  
 # Complexity  
 _A Guided Tour_  

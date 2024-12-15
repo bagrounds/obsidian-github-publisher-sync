@@ -1,12 +1,12 @@
----  
-share: true  
-aliases:  
-  - The Staff Engineer's Path  
-title: The Staff Engineer's Path  
-URL: https://bagrounds.org/books/The Staff Engineers Path  
-Author: "[[Tanya Reilly]]"  
-tags:   
----  
+---
+share: true
+aliases:
+  - The Staff Engineer's Path
+title: The Staff Engineer's Path
+URL: https://bagrounds.org/books/The Staff Engineers Path
+Author: "[[Tanya Reilly]]"
+tags: 
+---
 [Home](../index.md) > [Books](./index.md)  
 # The Staff Engineer's Path  
 _A Guide for Individual Contributors Navigating Growth and Change_  

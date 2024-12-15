@@ -1,10 +1,10 @@
----  
-aliases:  
-  - The Art of Fear  
-title: The Art of Fear  
-Author: "[[Kristen Ulmer]]"  
-share: true  
----  
+---
+aliases:
+  - The Art of Fear
+title: The Art of Fear
+Author: "[[Kristen Ulmer]]"
+share: true
+---
 [Home](../index.md) > [Books](./index.md)  
 # The Art of Fear  
 _Why Conquering Fear Won't Work and What to Do Instead_  

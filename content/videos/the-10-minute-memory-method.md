@@ -1,14 +1,14 @@
----  
-share: true  
-aliases:  
-  - The 10 Minute memory method  
-title: The 10 Minute memory method  
-URL: https://youtu.be/YCqqkGUsNxo  
-Author:   
-Platform: "#YouTube"  
-Channel: "[[Justin Sung]]"  
-tags:   
----  
+---
+share: true
+aliases:
+  - The 10 Minute memory method
+title: The 10 Minute memory method
+URL: https://youtu.be/YCqqkGUsNxo
+Author: 
+Platform: "#YouTube"
+Channel: "[[Justin Sung]]"
+tags: 
+---
 [Home](../index.md) > [Videos](./index.md)  
 # The 10 Minute memory method  
 ![The 10 Minute memory method](https://youtu.be/YCqqkGUsNxo)  

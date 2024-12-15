@@ -1,11 +1,11 @@
----  
-aliases:  
-  - Planning for Everything  
-title: Planning for Everything  
-Author: "[[Peter Morville]]"  
-Medium: "#Audiobook"  
-share: true  
----  
+---
+aliases:
+  - Planning for Everything
+title: Planning for Everything
+Author: "[[Peter Morville]]"
+Medium: "#Audiobook"
+share: true
+---
 [Home](../index.md) > [Books](./index.md)  
 # Planning for Everything  
 _The Design of Paths and Goals_  
@@ -26,7 +26,7 @@ Systems & Contexts
     4. formulating a plan  
     5. executing and monitoring the plan  
     6. and learning from the plan  
-  2. [Tower of Hanoi](tower-of-hanoi.md)  
+  2. [Tower of Hanoi](../../tower-of-hanoi.md)  
     1. Used to measure planning ability  
   3. STAR FINDER  
     1. Principles  

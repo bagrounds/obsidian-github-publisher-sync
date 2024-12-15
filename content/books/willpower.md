@@ -1,12 +1,12 @@
----  
-share: true  
-aliases:  
-  - Willpower  
-title: Willpower  
-URL: https://bagrounds.org/books/Willpower  
-Author: "[[Roy Baumeister]]"  
-tags:   
----  
+---
+share: true
+aliases:
+  - Willpower
+title: Willpower
+URL: https://bagrounds.org/books/Willpower
+Author: "[[Roy Baumeister]]"
+tags: 
+---
 [Home](../index.md) > [Books](./index.md)  
 # Willpower  
 _Rediscovering the Greatest Human Strength_  

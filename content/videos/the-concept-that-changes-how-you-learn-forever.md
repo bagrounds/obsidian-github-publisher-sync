@@ -1,14 +1,14 @@
----  
-share: true  
-aliases:  
-  - The concept that changes how you learn forever.  
-title: The concept that changes how you learn forever.  
-URL: https://youtu.be/FITESP_nZhc  
-Author:   
-Platform: "#YouTube"  
-Channel: "[[Spoon Fed Study]]"  
-tags:   
----  
+---
+share: true
+aliases:
+  - The concept that changes how you learn forever.
+title: The concept that changes how you learn forever.
+URL: https://youtu.be/FITESP_nZhc
+Author: 
+Platform: "#YouTube"
+Channel: "[[Spoon Fed Study]]"
+tags: 
+---
 [Home](../index.md) > [Videos](./index.md)  
 # The concept that changes how you learn forever.  
 ![The concept that changes how you learn forever.](https://youtu.be/FITESP_nZhc)  

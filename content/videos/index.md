@@ -37,6 +37,7 @@ URL: https://bagrounds.org/videos
 - [How to Force Your Brain To Be Motivated (when you don’t feel like it)](./how-to-force-your-brain-to-be-motivated-when-you-dont-feel-like-it.md)  
 - [The Real Reason Why Music Is Getting Worse](./The%20Real%20Reason%20Why%20Music%20Is%20Getting%20Worse.md)  
 - [This Single Rule Underpins All Of Physics](./this-single-rule-underpins-all-of-physics.md)  
+- [Systems Thinking Course - Lesson 03 - Pillar 2: Communication](./systems-thinking-course-lesson-03-pillar-2-communication.md)  
 - [How AI Cracked the Protein Folding Code and Won a Nobel Prize](./how-ai-cracked-the-protein-folding-code-and-won-a-nobel-prize.md)  
 - [The Excalidraw Obsidian Showcase 57 key features in just 17 minutes](./The%20Excalidraw-Obsidian%20Showcase%2057%20key%20features%20in%20just%2017%20minutes.md)  
 - [Optimizing Webservers for High Throughput and Low Latency | Dropbox](./optimizing-webservers-for-high-throughput-and-low-latency-dropbox.md)  

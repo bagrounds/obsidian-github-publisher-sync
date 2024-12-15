@@ -33,4 +33,5 @@ share: true
 - [Expecting Better](./expecting-better.md)  
 - [Thinking in Systems](./thinking-in-systems.md)  
 - [The Fifth Discipline](./the-fifth-discipline.md)  
+- [Consensus through Conversation](./consensus-through-conversation.md)  
   

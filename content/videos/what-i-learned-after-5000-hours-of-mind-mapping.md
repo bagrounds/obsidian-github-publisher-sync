@@ -1,14 +1,14 @@
----  
-share: true  
-aliases:  
-  - What I Learned after 5000 Hours of Mind Mapping  
-title: What I Learned after 5000 Hours of Mind Mapping  
-URL: https://youtu.be/NqxUExCZJ5Y  
-Author:   
-Platform: "#YouTube"  
-Channel: "[[Justin Sung]]"  
-tags:   
----  
+---
+share: true
+aliases:
+  - What I Learned after 5000 Hours of Mind Mapping
+title: What I Learned after 5000 Hours of Mind Mapping
+URL: https://youtu.be/NqxUExCZJ5Y
+Author: 
+Platform: "#YouTube"
+Channel: "[[Justin Sung]]"
+tags: 
+---
 [Home](../index.md) > [Videos](./index.md)  
 # What I Learned after 5000 Hours of Mind Mapping  
 ![What I Learned after 5000 Hours of Mind Mapping](https://youtu.be/NqxUExCZJ5Y)  

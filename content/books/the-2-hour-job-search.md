@@ -1,12 +1,12 @@
----  
-share: true  
-aliases:  
-  - The 2-Hour Job Search  
-title: The 2-Hour Job Search  
-URL: https://bagrounds.org/books/the-2-hour-job-search  
-Author: "[[Steve Dalton]]"  
-tags:   
----  
+---
+share: true
+aliases:
+  - The 2-Hour Job Search
+title: The 2-Hour Job Search
+URL: https://bagrounds.org/books/the-2-hour-job-search
+Author: "[[Steve Dalton]]"
+tags: 
+---
 [Home](../index.md) > [Books](./index.md)  
 # The 2-Hour Job Search  
 _Using Technology to Get the Right Job Faster_  

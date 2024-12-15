@@ -1,14 +1,14 @@
----  
-share: true  
-aliases:  
-  - "Eat your food in the RIGHT ORDER: 75% healthier with this small trick | Episode 6 of 18"  
-title: "Eat your food in the RIGHT ORDER: 75% healthier with this small trick | Episode 6 of 18"  
-URL: https://youtu.be/HEEUrIQ_3O4  
-Author:   
-Platform: "#YouTube"  
-Channel: "[[Glucose Revolution]]"  
-tags:   
----  
+---
+share: true
+aliases:
+  - "Eat your food in the RIGHT ORDER: 75% healthier with this small trick | Episode 6 of 18"
+title: "Eat your food in the RIGHT ORDER: 75% healthier with this small trick | Episode 6 of 18"
+URL: https://youtu.be/HEEUrIQ_3O4
+Author: 
+Platform: "#YouTube"
+Channel: "[[Glucose Revolution]]"
+tags: 
+---
 [Home](../index.md) > [Videos](./index.md)  
 # Eat your food in the RIGHT ORDER: 75% healthier with this small trick | Episode 6 of 18  
 ![Eat your food in the RIGHT ORDER: 75% healthier with this small trick | Episode 6 of 18](https://youtu.be/HEEUrIQ_3O4)  

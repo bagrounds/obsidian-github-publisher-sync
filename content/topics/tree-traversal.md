@@ -1,9 +1,9 @@
----  
-share: true  
-aliases:  
-  - Tree Traversal  
-title: Tree Traversal  
----  
+---
+share: true
+aliases:
+  - Tree Traversal
+title: Tree Traversal
+---
 [Home](../index.md) > [Topics](./index.md)  
 # Tree Traversal  
 From Wikipedia: [Tree traversal](https://wikipedia.org/wiki/Tree_traversal)  

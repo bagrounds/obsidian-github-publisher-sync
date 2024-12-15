@@ -1,12 +1,12 @@
----  
-share: true  
-aliases:  
-  - Influence  
-title: Influence  
-URL: https://bagrounds.org/books/Influence  
-Author: "[[Robert Cialdini]]"  
-tags:   
----  
+---
+share: true
+aliases:
+  - Influence
+title: Influence
+URL: https://bagrounds.org/books/Influence
+Author: "[[Robert Cialdini]]"
+tags: 
+---
 [Home](../index.md) > [Books](./index.md)  
 # Influence  
 - contrast  

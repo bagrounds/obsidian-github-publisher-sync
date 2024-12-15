@@ -1,14 +1,14 @@
----  
-share: true  
-aliases:  
-  - Answering Behavioral Interview Questions Using the STAR Method  
-title: Answering Behavioral Interview Questions Using the STAR Method  
-URL: https://youtu.be/ZSSID5mp93o  
-Author:   
-Platform: "#YouTube"  
-Channel: "[[Self Made Millennial]]"  
-tags:   
----  
+---
+share: true
+aliases:
+  - Answering Behavioral Interview Questions Using the STAR Method
+title: Answering Behavioral Interview Questions Using the STAR Method
+URL: https://youtu.be/ZSSID5mp93o
+Author: 
+Platform: "#YouTube"
+Channel: "[[Self Made Millennial]]"
+tags: 
+---
 [Home](../index.md) > [Videos](./index.md)  
 # Answering Behavioral Interview Questions Using the STAR Method  
 ![Answering Behavioral Interview Questions Using the STAR Method](https://youtu.be/ZSSID5mp93o)  

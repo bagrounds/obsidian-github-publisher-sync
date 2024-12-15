@@ -1,9 +1,9 @@
----  
-share: true  
-aliases:  
-  - Software Engineering  
-title: Software Engineering  
----  
+---
+share: true
+aliases:
+  - Software Engineering
+title: Software Engineering
+---
 [Home](../index.md) > [Topics](./index.md)  
 # Software Engineering  
 ## Topics  

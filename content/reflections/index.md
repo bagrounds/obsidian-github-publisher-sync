@@ -3,9 +3,11 @@ share: true
 aliases:
   - Reflections
 title: Reflections
+URL: https://bagrounds.org/reflections
 ---
 [Home](../index.md)  
 # 🪞 Reflections  
+- [2024-12-14](./2024-12-14.md)  
 - [2024-12-12](./2024-12-12.md)  
 - [2024-12-10](./2024-12-10.md)  
 - [2024-12-09](./2024-12-09.md)  

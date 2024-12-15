@@ -1,14 +1,14 @@
----  
-share: true  
-aliases:  
-  - Tools to Enhance Working Memory & Attention  
-title: Tools to Enhance Working Memory & Attention  
-URL: https://youtu.be/CQlTmOFM4Qs  
-Author:   
-Platform: "#YouTube"  
-Channel: "[[Huberman Lab]]"  
-tags:   
----  
+---
+share: true
+aliases:
+  - Tools to Enhance Working Memory & Attention
+title: Tools to Enhance Working Memory & Attention
+URL: https://youtu.be/CQlTmOFM4Qs
+Author: 
+Platform: "#YouTube"
+Channel: "[[Huberman Lab]]"
+tags: 
+---
 [Home](../index.md) > [Videos](./index.md)  
 # Tools to Enhance Working Memory & Attention  
 ![Tools to Enhance Working Memory & Attention](https://youtu.be/CQlTmOFM4Qs)  

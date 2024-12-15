@@ -1,14 +1,14 @@
----  
-share: true  
-aliases:  
-  - How to hack your brain to crave doing hard things.  
-title: How to hack your brain to crave doing hard things.  
-URL: https://youtu.be/BbhKTFXu7dc  
-Author:   
-Platform: "#YouTube"  
-Channel: "[[Spoon Fed Study]]"  
-tags:   
----  
+---
+share: true
+aliases:
+  - How to hack your brain to crave doing hard things.
+title: How to hack your brain to crave doing hard things.
+URL: https://youtu.be/BbhKTFXu7dc
+Author: 
+Platform: "#YouTube"
+Channel: "[[Spoon Fed Study]]"
+tags: 
+---
 [Home](../index.md) > [Videos](./index.md)  
 # How to hack your brain to crave doing hard things.  
 ![How to hack your brain to crave doing hard things.](https://youtu.be/BbhKTFXu7dc)  

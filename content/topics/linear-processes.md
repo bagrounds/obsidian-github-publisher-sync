@@ -1,10 +1,10 @@
----  
-share: true  
-aliases:  
-  - Linear Processes  
-title: Linear Processes  
-URL: https://bagrounds.org/topics/linear-processes  
----  
+---
+share: true
+aliases:
+  - Linear Processes
+title: Linear Processes
+URL: https://bagrounds.org/topics/linear-processes
+---
 [Home](../index.md) > [Topics](./index.md)  
 # ➕ Linear Processes  
 Some processes have very nice properties.  

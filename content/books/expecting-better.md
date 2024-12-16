@@ -1,12 +1,12 @@
----  
-share: true  
-aliases:  
-  - Expecting Better  
-title: Expecting Better  
-URL: https://bagrounds.org/books/expecting-better  
-Author: "[[Emily Oster]]"  
-tags:   
----  
+---
+share: true
+aliases:
+  - Expecting Better
+title: Expecting Better
+URL: https://bagrounds.org/books/expecting-better
+Author: "[[Emily Oster]]"
+tags: 
+---
 [Home](../index.md) > [Books](./index.md)  
 # Expecting Better  
 _Why the Conventional Pregnancy Wisdom Is Wrong - and What You Really Need to Know_  

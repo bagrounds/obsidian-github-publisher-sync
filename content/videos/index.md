@@ -41,4 +41,6 @@ URL: https://bagrounds.org/videos
 - [How AI Cracked the Protein Folding Code and Won a Nobel Prize](./how-ai-cracked-the-protein-folding-code-and-won-a-nobel-prize.md)  
 - [The Excalidraw Obsidian Showcase 57 key features in just 17 minutes](./The%20Excalidraw-Obsidian%20Showcase%2057%20key%20features%20in%20just%2017%20minutes.md)  
 - [Optimizing Webservers for High Throughput and Low Latency | Dropbox](./optimizing-webservers-for-high-throughput-and-low-latency-dropbox.md)  
+- [Your Theme](./your-theme.md)  
+- [This Journal Keeps Me Productive (& Maybe You Too)](./this-journal-keeps-me-productive-and-maybe-you-too.md)  
   

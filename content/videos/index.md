@@ -43,4 +43,5 @@ URL: https://bagrounds.org/videos
 - [Optimizing Webservers for High Throughput and Low Latency | Dropbox](./optimizing-webservers-for-high-throughput-and-low-latency-dropbox.md)  
 - [Your Theme](./your-theme.md)  
 - [This Journal Keeps Me Productive (& Maybe You Too)](./this-journal-keeps-me-productive-and-maybe-you-too.md)  
+- [2025 Yearly Themes](./2025%20Yearly%20Themes.md)  
   

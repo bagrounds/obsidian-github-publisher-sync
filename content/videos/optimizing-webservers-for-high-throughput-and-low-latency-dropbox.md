@@ -1,14 +1,14 @@
----  
-share: true  
-aliases:  
-  - Optimizing Webservers for High Throughput and Low Latency | Dropbox  
-title: Optimizing Webservers for High Throughput and Low Latency | Dropbox  
-URL: https://youtu.be/aGL8a3Agj-c  
-Author:   
-Platform:   
-Channel:   
-tags:   
----  
+---
+share: true
+aliases:
+  - Optimizing Webservers for High Throughput and Low Latency | Dropbox
+title: Optimizing Webservers for High Throughput and Low Latency | Dropbox
+URL: https://youtu.be/aGL8a3Agj-c
+Author: 
+Platform: 
+Channel: 
+tags: 
+---
 [Home](../index.md) > [Videos](./index.md)  
 # Optimizing Webservers for High Throughput and Low Latency | Dropbox  
 ![Optimizing Webservers for High Throughput and Low Latency | Dropbox](https://youtu.be/aGL8a3Agj-c)  

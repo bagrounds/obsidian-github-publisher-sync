@@ -1,10 +1,10 @@
----  
-share: true  
-aliases:  
-  - Digital Twin  
-title: Digital Twin  
-URL: https://bagrounds.org/topics/digital-twin  
----  
+---
+share: true
+aliases:
+  - Digital Twin
+title: Digital Twin
+URL: https://bagrounds.org/topics/digital-twin
+---
 [Home](../index.md) > [Topics](./index.md)  
 # Digital Twin  
 ## An Operational Definition  

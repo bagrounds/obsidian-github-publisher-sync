@@ -1,12 +1,12 @@
----  
-share: true  
-aliases:  
-  - Zero to One  
-title: Zero to One  
-URL: https://bagrounds.org/books/zero-to-one  
-Author: "[[Peter Thiel]]"  
-tags:   
----  
+---
+share: true
+aliases:
+  - Zero to One
+title: Zero to One
+URL: https://bagrounds.org/books/zero-to-one
+Author: "[[Peter Thiel]]"
+tags: 
+---
 [Home](../index.md) > [Books](./index.md)  
 # Zero to One  
 - The dot com bubble scared investors  

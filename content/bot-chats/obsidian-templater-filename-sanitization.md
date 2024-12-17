@@ -12,7 +12,7 @@ URL: https://bagrounds.org/bot-chats/obsidian-templater-filename-sanitization
   
 ## Response  
 Here's a simple Obsidian Templater script that uses regular expressions to sanitize a filename:  
-```JavaScript  
+```js  
 <%*  
   const filename = tp.file.title;  
   const sanitizedFilename = filename  

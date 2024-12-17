@@ -1,10 +1,10 @@
----  
-aliases:  
-  - Tiny Habits  
-Author: "[[BJ Fog]]"  
-share: true  
-title: Tiny Habits  
----  
+---
+aliases:
+  - Tiny Habits
+Author: "[[BJ Fog]]"
+share: true
+title: Tiny Habits
+---
 [Home](../index.md) > [Books](./index.md)  
 # Tiny Habits  
 _The Small Changes That Change Everything_  

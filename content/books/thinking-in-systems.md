@@ -1,12 +1,12 @@
----  
-share: true  
-aliases:  
-  - Thinking in Systems  
-title: Thinking in Systems  
-URL: https://bagrounds.org/books/thinking-in-systems  
-Author:   
-tags:   
----  
+---
+share: true
+aliases:
+  - Thinking in Systems
+title: Thinking in Systems
+URL: https://bagrounds.org/books/thinking-in-systems
+Author: 
+tags: 
+---
 [Home](../index.md) > [Books](./index.md)  
 # Thinking in Systems  
 ## 🤖 AI Summary  

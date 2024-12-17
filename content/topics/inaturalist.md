@@ -1,9 +1,9 @@
----  
-share: true  
-aliases:  
-  - iNaturalist  
-title: iNaturalist  
----  
+---
+share: true
+aliases:
+  - iNaturalist
+title: iNaturalist
+---
 [Home](../index.md) > [Topics](./index.md)  
 # Inaturalist  
 ## 🔗 Links  

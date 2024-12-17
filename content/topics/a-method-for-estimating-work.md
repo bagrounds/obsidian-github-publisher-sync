@@ -1,9 +1,9 @@
----  
-share: true  
-aliases:  
-  - A Method For Estimating Work  
-title: A Method For Estimating Work  
----  
+---
+share: true
+aliases:
+  - A Method For Estimating Work
+title: A Method For Estimating Work
+---
 [Home](../index.md) > [Topics](./index.md)  
 # A Method For Estimating Work  
 ## Method  

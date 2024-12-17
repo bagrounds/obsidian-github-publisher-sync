@@ -1,10 +1,10 @@
----  
-share: true  
-aliases:  
-  - Static Apis  
-title: Static Apis  
-URL: https://bagrounds.org/topics/static-apis  
----  
+---
+share: true
+aliases:
+  - Static Apis
+title: Static Apis
+URL: https://bagrounds.org/topics/static-apis
+---
 [Home](../index.md) > [Topics](./index.md)  
 # Static Apis  
 Under certain circumstances, it can be beneficial to replace servers hosting a web API with a pre-generated set of data hosted as static files.  

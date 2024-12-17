@@ -1,12 +1,12 @@
----  
-share: true  
-aliases:  
-  - Rapport  
-title: Rapport  
-URL: https://bagrounds.org/books/Rapport  
-Author:   
-tags:   
----  
+---
+share: true
+aliases:
+  - Rapport
+title: Rapport
+URL: https://bagrounds.org/books/Rapport
+Author: 
+tags: 
+---
 [Home](../index.md) > [Books](./index.md)  
 # Rapport  
 - Rapport can be learned. Practice.  

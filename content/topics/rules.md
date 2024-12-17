@@ -1,9 +1,9 @@
----  
-share: true  
-aliases:  
-  - Rules  
-title: Rules  
----  
+---
+share: true
+aliases:
+  - Rules
+title: Rules
+---
 [Home](../index.md) > [Topics](./index.md)  
 # Rules  
 ## Why do we make rules?  

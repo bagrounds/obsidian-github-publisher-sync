@@ -1,12 +1,12 @@
----  
-share: true  
-aliases:  
-  - Atomic Habits  
-title: Atomic Habits  
-URL: https://bagrounds.org/books/atomic-habits  
-Author:   
-tags:   
----  
+---
+share: true
+aliases:
+  - Atomic Habits
+title: Atomic Habits
+URL: https://bagrounds.org/books/atomic-habits
+Author: 
+tags: 
+---
 [Home](../index.md) > [Books](./index.md)  
 # Atomic Habits  
 - small changes compound over time  

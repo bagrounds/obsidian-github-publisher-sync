@@ -10,7 +10,8 @@ Channel: "[[Glucose Revolution]]"
 tags: 
 ---
 [Home](../index.md) > [Videos](./index.md)  
-# Eat your food in the RIGHT ORDER: 75% healthier with this small trick | Episode 6 of 18  
+# Eat your food in the   
+RIGHT ORDER: 75% healthier with this small trick | Episode 6 of 18  
 ![Eat your food in the RIGHT ORDER: 75% healthier with this small trick | Episode 6 of 18](https://youtu.be/HEEUrIQ_3O4)  
   
 The order we eat food in makes a difference for health and energy levels.  

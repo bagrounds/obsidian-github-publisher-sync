@@ -1,12 +1,12 @@
----  
-share: true  
-aliases:  
-  - The Fifth Discipline  
-title: The Fifth Discipline  
-URL: https://bagrounds.org/books/the-fifth-discipline  
-Author:   
-tags:   
----  
+---
+share: true
+aliases:
+  - The Fifth Discipline
+title: The Fifth Discipline
+URL: https://bagrounds.org/books/the-fifth-discipline
+Author: 
+tags: 
+---
 [Home](../index.md) > [Books](./index.md)  
 # The Fifth Discipline  
 ## 🤖💬 AI Summary  

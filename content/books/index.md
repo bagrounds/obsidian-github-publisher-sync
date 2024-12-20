@@ -15,6 +15,7 @@ share: true
 - [Cybernetics](./cybernetics.md)  
 - [Just Listen](./just-listen.md)  
 - [Complexity](./complexity.md)  
+- [The New Economics](./the-new-economics.md)  
 - [The Mountain is You](./the-mountain-is-you.md)  
 - [The Job Closer](./the-job-closer.md)  
 - [The Staff Engineer's Path](./the-staff-engineers-path.md)  

@@ -1,15 +1,26 @@
----  
-aliases:  
-  - Pets on the Couch  
-title: Pets on the Couch  
-Author: "[[nicholas-dodman]]"  
-goodreads: https://www.goodreads.com/book/show/27274445-pets-on-the-couch  
-URL: https://www.simonandschuster.com/books/Pets-on-the-Couch/Nicholas-Dodman/9781476749037  
-share: true  
----  
+---
+aliases:
+  - Pets on the Couch
+title: Pets on the Couch
+Author: "[[nicholas-dodman]]"
+goodreads: https://www.goodreads.com/book/show/27274445-pets-on-the-couch
+URL: https://www.simonandschuster.com/books/Pets-on-the-Couch/Nicholas-Dodman/9781476749037
+share: true
+---
 [Home](../index.md) > [Books](./index.md)  
 # Pets on the Couch  
 _Neurotic Dogs, Compulsive Cats, Anxious Birds, and the New Science of Animal Psychiatry_  
+  
+## 🤖 AI Summary  
+**Summary of *Pets on the Couch***    
+Written by Nicholas Dodman, this book explores the emerging field of veterinary psychiatry, examining the emotional and mental health issues of pets and how their behavior mirrors human psychological challenges.  
+  
+### Book Recommendations    
+1. **Best Alternate on the Same Topic**: *The Other End of the Leash* by Patricia B. McConnell – Focuses on the psychology of dogs and their interactions with humans from a behaviorist perspective.    
+2. **Best Tangentially Related Book**: *Animal Wise: How We Know Animals Think and Feel* by Virginia Morell – Explores the cognitive and emotional lives of various animal species.    
+3. **Best Diametrically Opposed Book**: *Animals in Translation* by Temple Grandin and Catherine Johnson – While empathetic to animals, it emphasizes biological and neurological explanations over psychiatry.    
+4. **Best Fiction Book Incorporating Related Ideas**: *The Art of Racing in the Rain* by Garth Stein – A novel told from the perspective of a dog, reflecting on human and animal emotional bonds.  
+  
 ## Content  
 ### 1. The Dog Who Ate Wine Glasses: When the Brain Short Circuits  
   

@@ -10,8 +10,10 @@ share: true
 # Planning for Everything  
 _The Design of Paths and Goals_  
   
-Systems & Contexts  
+## AI  
   
+## Random Notes  
+Systems & Contexts  
 - invite people to help solve an impossible problem  
 - "we learn too late when we fail to fit practice and play into planning"  
 - plan and search belong together  
@@ -71,6 +73,5 @@ Point of no return
 Flipping a coin may help  
 Habits bind  
   
-  
 ## Referenced books  
-- [the-art-of-fear](./the-art-of-fear.md)  
+- [The Art of Fear](./the-art-of-fear.md)  

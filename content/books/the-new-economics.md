@@ -8,7 +8,17 @@ share: true
 [Home](../index.md) > [Books](./index.md)  
 # The New Economics  
   
+## 🤖 AI Summary  
+**Summary of *The New Economics***    
+Written by W. Edwards Deming, this book outlines his philosophy of management, emphasizing systems thinking, continuous improvement, and the importance of understanding variation to achieve organizational success and economic stability.  
   
+### Book Recommendations    
+1. **Best Alternate on the Same Topic**: *Out of the Crisis* by W. Edwards Deming – Deming’s foundational work on his management principles and quality improvement practices.    
+2. **Best Tangentially Related Book**: *[The Fifth Discipline](./the-fifth-discipline.md)* by Peter Senge – Explores systems thinking and learning organizations in a similar vein to Deming’s ideas.  
+3. **Best Diametrically Opposed Book**: *The Wealth of Nations* by Adam Smith – Advocates for free-market mechanisms and individual decision-making, contrasting Deming’s focus on structured systems.  
+4. **Best Fiction Book Incorporating Related Ideas**: *Atlas Shrugged* by Ayn Rand – While ideologically opposite, it explores economic systems and the role of innovation and leadership, themes tangentially related to Deming’s work.  
+  
+## Random Notes  
 * How modern American management sucks  
 * How to do better  
 * System of Profound Knowledge  

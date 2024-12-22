@@ -36,4 +36,5 @@ URL: https://bagrounds.org/books
 - [Thinking in Systems](./thinking-in-systems.md)  
 - [The Fifth Discipline](./the-fifth-discipline.md)  
 - [Consensus through Conversation](./consensus-through-conversation.md)  
+- [The Blade Itself](./the-blade-itself.md)  
   

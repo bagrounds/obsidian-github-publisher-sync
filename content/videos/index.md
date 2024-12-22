@@ -51,4 +51,8 @@ URL: https://bagrounds.org/videos
 - [This Journal Keeps Me Productive (& Maybe You Too)](./this-journal-keeps-me-productive-and-maybe-you-too.md)  
 - [Eat your food in the RIGHT ORDER: 75% healthier with this small trick | Episode 6 of 18](./eat-your-food-in-the-right-order-75-healthier-with-this-small-trick-episode-6-of-18.md)  
 - [The OLDEST websites EVER 👩‍💻](./the-oldest-websites-ever.md)  
+- [Three decades after inventing the web, Tim Berners-Lee has some ideas on how to fix it](./three-decades-after-inventing-the-web-tim-berners-lee-has-some-ideas-on-how-to-fix-it.md)  
+- [Three decades after inventing the web, Tim Berners-Lee has some ideas on how to fix it](../../Three%20decades%20after%20inventing%20the%20web,%20Tim%20Berners-Lee%20has%20some%20ideas%20on%20how%20to%20fix%20it.md)  
+- [The Future of the Web • Sir Tim Berners-Lee • GOTO 2018](./the-future-of-the-web-sir-tim-berners-lee-goto-2018.md)  
+- [The Future of the Web • Sir Tim Berners-Lee • GOTO 2018](../../The%20Future%20of%20the%20Web%20%E2%80%A2%20Sir%20Tim%20Berners-Lee%20%E2%80%A2%20GOTO%202018.md)  
   

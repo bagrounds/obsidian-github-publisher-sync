@@ -3,6 +3,7 @@ title: Books
 aliases:
   - Books
 share: true
+URL: https://bagrounds.org/books
 ---
 [Home](../index.md)  
 # Books  

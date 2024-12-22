@@ -8,4 +8,3 @@ aliases:
 # W Edwards Deming  
 ## Books  
 * [The New Economics](../books/the-new-economics.md)  
-*   

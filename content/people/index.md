@@ -10,4 +10,5 @@ aliases:
 - [Jay Kreps](./jay-kreps.md)  
 - [Russell Ackoff](./russell-ackoff.md)  
 - [W Edwards Deming](./w-edwards-deming.md)  
+- [Tim Berners-Lee](./tim-berners-lee.md)  
   

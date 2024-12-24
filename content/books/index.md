@@ -33,8 +33,8 @@ URL: https://bagrounds.org/books
 - [The Innovator's Dilemma](./the-innovators-dilemma.md)  
 - [Organize for Complexity](./organize-for-complexity.md)  
 - [Expecting Better](./expecting-better.md)  
+- [The Blade Itself](./the-blade-itself.md)  
 - [Thinking in Systems](./thinking-in-systems.md)  
 - [The Fifth Discipline](./the-fifth-discipline.md)  
 - [Consensus through Conversation](./consensus-through-conversation.md)  
-- [The Blade Itself](./the-blade-itself.md)  
   

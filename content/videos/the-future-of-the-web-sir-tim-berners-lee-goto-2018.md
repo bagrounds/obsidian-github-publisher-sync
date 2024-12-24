@@ -12,3 +12,10 @@ tags:
 [Home](../index.md) > [Videos](./index.md)  
 # The Future of the Web • Sir [Tim Berners-Lee](../people/tim-berners-lee.md) • GOTO 2018  
 ![The Future of the Web • Sir Tim Berners-Lee • GOTO 2018](https://youtu.be/Rxqko96C5ZI)  
+  
+## References  
+- https://contractfortheweb.org  
+- https://solidproject.org  
+- https://www.inrupt.com  
+- https://schema.org  
+- https://www.inrupt.com  

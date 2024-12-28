@@ -55,6 +55,6 @@ URL: https://bagrounds.org/videos
 - [Three decades after inventing the web, Tim Berners-Lee has some ideas on how to fix it](./three-decades-after-inventing-the-web-tim-berners-lee-has-some-ideas-on-how-to-fix-it.md)  
 - [The Future of the Web • Sir Tim Berners-Lee • GOTO 2018](../../The%20Future%20of%20the%20Web%20%E2%80%A2%20Sir%20Tim%20Berners-Lee%20%E2%80%A2%20GOTO%202018.md)  
 - [The Future of the Web • Sir Tim Berners-Lee • GOTO 2018](./the-future-of-the-web-sir-tim-berners-lee-goto-2018.md)  
-- [I Built an AI That Does My Work For Me](./i-built-an-ai-that-does-my-work-for-me.md)  
 - [I Built an AI That Does My Work For Me](../../I%20Built%20an%20AI%20That%20Does%20My%20Work%20For%20Me.md)  
+- [I Built an AI That Does My Work For Me](./i-built-an-ai-that-does-my-work-for-me.md)  
   

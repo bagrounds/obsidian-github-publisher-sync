@@ -7,10 +7,11 @@ URL: https://bagrounds.org/bot-chats/ai-engineering-assistant-technology-recomme
 ---
 [Home](../index.md) > [Bot Chats](./index.md)  
 # AI Engineering Assistant Technology Recommendations  
-## Gemini Prompt  
+## Gemini  
+### Prompt  
 > Based on the following notes, can you recommend some technologies I should consider starting with?  
   
-## Response  
+### Response  
 Based on your notes, here are some technologies you could consider starting with for your AI Engineering Assistant project:  
   
 **1. Local LLM Infrastructure:**  
@@ -47,3 +48,67 @@ Based on your notes, here are some technologies you could consider starting with
 3. **Prioritize Privacy and Security:** Implement security measures to protect your data. Consider using encryption and secure storage mechanisms.  
   
 Remember to break down the project into smaller, manageable tasks. This will make it easier to track progress and stay motivated. Good luck with your AI Engineering Assistant project!  
+  
+## llama3.2 (Obsidian Local GPT Plugin -> ollama)  
+### Prompt  
+> Based on the above notes, can you recommend some technologies I should consider starting with?  
+  
+### Recommended Technologies for Building an AI Engineering Assistant  
+#### 1. **Natural Language Processing (NLP) Libraries**  
+* Consider using popular NLP libraries such as:  
+	+ NLTK (Natural Language Toolkit)  
+	+ spaCy  
+	+ Stanford CoreNLP  
+* These libraries can help with tasks like text processing, entity recognition, and sentiment analysis.  
+  
+#### 2. **Machine Learning Frameworks**  
+* Popular machine learning frameworks include:  
+	+ TensorFlow  
+	+ PyTorch  
+	+ Scikit-learn  
+* These frameworks can be used to build and train AI models that power your assistant's capabilities.  
+  
+#### 3. **AI Agent Platforms**  
+* Consider using platforms like:  
+	+ Ollama (as you've already set up)  
+	+ Rasa  
+	+ Dialogflow  
+* These platforms provide pre-built components and tools for building conversational AI agents.  
+  
+#### 4. **Integration with Engineering Tools**  
+* Look into integrating your assistant with popular engineering tools such as:  
+	+ GitHub API  
+	+ GitLab API  
+	+ Visual Studio Code API  
+	+ Jupyter Notebook API  
+* This will enable your assistant to interact with these tools and provide features like code completion, suggestion, and review.  
+  
+#### 5. **Data Storage and Management**  
+* Consider using data storage solutions like:  
+	+ SQLite  
+	+ MongoDB  
+	+ PostgreSQL  
+* These databases can help manage and store user data, configuration settings, and other relevant information.  
+  
+#### 6. **Web APIs and Frontend Frameworks**  
+* Use web frameworks like:  
+	+ Flask (Python)  
+	+ Django (Python)  
+	+ Express.js (JavaScript)  
+* These frameworks will enable you to build a RESTful API for your assistant's frontend components.  
+  
+#### 7. **Voice Assistant Libraries**  
+* Consider using libraries like:  
+	+ Google Cloud Speech-to-Text  
+	+ Mozilla DeepSpeech  
+	+ PyAudio  
+* These libraries can help with voice recognition and processing tasks.  
+  
+### Next Steps  
+1. Research each technology thoroughly to determine which ones best fit your project's requirements.  
+2. Start by building a minimal viable product (MVP) using the recommended technologies.  
+3. Iterate on your MVP, adding features and improving performance as you go.  
+4. Consider collaborating with other developers or joining online communities for support and guidance.  
+  
+By following these steps, you can build a powerful AI engineering assistant that leverages the latest technologies to improve your productivity and efficiency.  
+  

@@ -22,4 +22,5 @@ URL: https://bagrounds.org/topics
 - [Static Apis](./static-apis.md)  
 - [A Method For Estimating Work](./a-method-for-estimating-work.md)  
 - [Design a Performance Self-Evaluation System](./design-a-performance-self-evaluation-system.md)  
+- [Maximizing AI Leverage](./maximizing-ai-leverage.md)  
   

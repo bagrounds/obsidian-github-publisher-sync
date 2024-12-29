@@ -11,4 +11,6 @@ URL: https://bagrounds.org/bot-chats
 - [Obsidian Templater Filename Sanitization](./obsidian-templater-filename-sanitization.md)  
 - [Obsidian Templater Filename Sanitization](./obsidian-templater-filename-sanitization%201.md)  
 - [Android Local LLMs](./android-local-llms.md)  
+- [AI Engineering Assistant Technology Recommendations](./ai-engineering-assistant-technology-recommendations.md)  
+- [How Much Wood](./how-much-wood.md)  
   

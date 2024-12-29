@@ -14,6 +14,7 @@ tags:
 ![The Secret Skill Every Tech Leader Possesses](https://youtu.be/uUKAVfIahCY)  
   
 Once you see it, you can't unsee it.  
-To help others grow, focus less on new knowledge and more on new awareness.  
+To help others grow, focus less on new knowledge and more on ne  
+w awareness.  
 Engineers are smart and learn fast.  
 Often, what's holding them back is the lack of recognition of a key concept at a critical moment.   

@@ -70,6 +70,7 @@ title: Maximizing AI Leverage
     5. References  
       1. [Ollama Course – Build AI Apps Locally](../videos/ollama-course-build-ai-apps-locally.md)  
       2. [I Built an AI That Does My Work For Me](../videos/i-built-an-ai-that-does-my-work-for-me.md)  
-      3. https://ollama.com  
-      4. [AI Engineering Assistant Technology Recommendations](../bot-chats/ai-engineering-assistant-technology-recommendations.md)  
-  
+      3. [Anthropic MCP + Ollama. No Claude Needed? Check it out!](../videos/anthropic-mcp-ollama-no-claude-needed-check-it-out.md)  
+      4. https://ollama.com  
+      5. https://modelcontextprotocol.io  
+      6. [AI Engineering Assistant Technology Recommendations](../bot-chats/ai-engineering-assistant-technology-recommendations.md)  

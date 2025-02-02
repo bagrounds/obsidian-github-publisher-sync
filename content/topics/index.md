@@ -23,4 +23,5 @@ URL: https://bagrounds.org/topics
 - [Design a Performance Self-Evaluation System](./design-a-performance-self-evaluation-system.md)  
 - [Memory](./memory.md)  
 - [Maximizing AI Leverage](./maximizing-ai-leverage.md)  
+- [Barbecue Ribs Recipe](../../barbecue-ribs-recipe.md)  
   

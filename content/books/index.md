@@ -37,4 +37,5 @@ URL: https://bagrounds.org/books
 - [Willpower](./willpower.md)  
 - [The Staff Engineer's Path](./the-staff-engineers-path.md)  
 - [The Blade Itself](./the-blade-itself.md)  
+- [The Happiest Baby On The Block](./the-happiest-baby-on-the-block.md)  
   

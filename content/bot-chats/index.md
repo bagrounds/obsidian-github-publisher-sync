@@ -13,4 +13,5 @@ URL: https://bagrounds.org/bot-chats
 - [Obsidian Templater Filename Sanitization](./obsidian-templater-filename-sanitization.md)  
 - [AI Engineering Assistant Technology Recommendations](./ai-engineering-assistant-technology-recommendations.md)  
 - [How Much Wood](./how-much-wood.md)  
+- [Summarize The Happiest Baby On The Block](./summarize-the-happiest-baby-on-the-block.md)  
   

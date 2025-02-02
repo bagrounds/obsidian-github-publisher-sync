@@ -1,11 +1,11 @@
----  
-share: true  
-goodreads: https://www.goodreads.com/author/list/32817.Russell_L_Ackoff  
-Wikipedia: https://en.wikipedia.org/wiki/Russell_L._Ackoff  
-aliases:  
-  - Russell Ackoff  
-title: Russell Ackoff  
----  
+---
+share: true
+goodreads: https://www.goodreads.com/author/list/32817.Russell_L_Ackoff
+Wikipedia: https://en.wikipedia.org/wiki/Russell_L._Ackoff
+aliases:
+  - Russell Ackoff
+title: Russell Ackoff
+---
 [Home](../index.md) > [People](./index.md)  
 # Russell Ackoff  
 ## Books  

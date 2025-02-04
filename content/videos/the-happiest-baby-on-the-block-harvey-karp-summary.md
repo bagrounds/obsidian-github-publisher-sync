@@ -14,7 +14,7 @@ tags:
 ![The Happiest Baby on the Block - Harvey Karp (Summary)](https://youtu.be/crdQy8zliZw)  
   
 ## AI Summary  
-### **Summary of "The Happiest Baby on the Block" by Harvey Karp**  
+### **Summary of [The Happiest Baby On The Block](../books/the-happiest-baby-on-the-block.md) by Harvey Karp**  
 - **Start Time:** 00:00:10  
 - **End Time:** 00:08:40  
   

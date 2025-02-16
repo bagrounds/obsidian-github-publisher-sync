@@ -56,4 +56,5 @@ URL: https://bagrounds.org/videos
 - [You Don’t Understand How Language Works](./you-dont-understand-how-language-works.md)  
 - [Anthropic MCP + Ollama. No Claude Needed? Check it out!](./anthropic-mcp-ollama-no-claude-needed-check-it-out.md)  
 - [The Happiest Baby on the Block - Harvey Karp (Summary)](./the-happiest-baby-on-the-block-harvey-karp-summary.md)  
+- [Pediatrician's Top Tips For Newborn Sleep](./Pediatrician's%20Top%20Tips%20For%20Newborn%20Sleep.md)  
   

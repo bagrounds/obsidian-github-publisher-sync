@@ -55,6 +55,6 @@ URL: https://bagrounds.org/videos
 - [Experts are STUNNED! Meta's NEW LLM Architecture is a GAME-CHANGER!](./experts-are-stunned-metas-new-llm-architecture-is-a-game-changer.md)  
 - [You Don’t Understand How Language Works](./you-dont-understand-how-language-works.md)  
 - [Anthropic MCP + Ollama. No Claude Needed? Check it out!](./anthropic-mcp-ollama-no-claude-needed-check-it-out.md)  
-- [The Happiest Baby on the Block - Harvey Karp (Summary)](./the-happiest-baby-on-the-block-harvey-karp-summary.md)  
 - [Pediatrician's Top Tips For Newborn Sleep](./pediatricians-top-tips-for-newborn-sleep.md)  
+- [The Happiest Baby on the Block - Harvey Karp (Summary)](./the-happiest-baby-on-the-block-harvey-karp-summary.md)  
   

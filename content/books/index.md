@@ -38,4 +38,5 @@ URL: https://bagrounds.org/books
 - [The Staff Engineer's Path](./the-staff-engineers-path.md)  
 - [The Blade Itself](./the-blade-itself.md)  
 - [The Happiest Baby On The Block](./the-happiest-baby-on-the-block.md)  
+- [How To Keep House While Drowning](./how-to-keep-house-while-drowning.md)  
   

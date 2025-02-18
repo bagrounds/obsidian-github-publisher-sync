@@ -72,7 +72,7 @@ tags:
   
 **Additional Book Recommendations**  
 1. **Best Alternate Book on the Same Topic:**    
-   *The Informed Parent: A Science-Based Resource for Your Child’s First Four Years* by Tara Haelle    
+   *[The Informed Parent: A Science-Based Resource for Your Child’s First Four Years](./the-informed-parent.md)* by Tara Haelle    
    – This book similarly uses a scientific approach to guide early parenting decisions and provides another evidence-based perspective on child development.  
   
 2. **Best Book Tangentially Related to the Topic:**    

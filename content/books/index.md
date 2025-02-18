@@ -41,4 +41,5 @@ URL: https://bagrounds.org/books
 - [How To Keep House While Drowning](./how-to-keep-house-while-drowning.md)  
 - [How To Measure Anything](./how-to-measure-anything.md)  
 - [Software Estimation](./software-estimation.md)  
+- [Cribsheet](./cribsheet.md)  
   

@@ -10,7 +10,7 @@ tags:
 [Home](../index.md) > [Books](./index.md)  
 # How To Measure Anything  
 ## 🤖 AI Summary  
-###💬 [Chat GPT](https://chat.com) Prompt (o3-mini + Search + Reason)  
+### 💬 [Chat GPT](https://chat.com) Prompt (o3-mini + Search + Reason)  
 > Summarize the book: How to Measure Anything by Doug Hubbard. Catalogue the topics, methods, and research discussed. Emphasize practical takeaways and make the following additional book recommendations: 1 for the best alternate book on the same topic, 1 for the best book that is tangentially related, 1 for the best book that is diametrically opposed, and 1 for the best fiction book that incorporated related ideas.  
   
 ### Response  

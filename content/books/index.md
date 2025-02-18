@@ -42,4 +42,5 @@ URL: https://bagrounds.org/books
 - [How To Measure Anything](./how-to-measure-anything.md)  
 - [Software Estimation](./software-estimation.md)  
 - [Cribsheet](./cribsheet.md)  
+- [The Informed Parent](./the-informed-parent.md)  
   

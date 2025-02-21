@@ -1,8 +1,8 @@
 ---
 share: true
 aliases:
-  - Static Apis
-title: Static Apis
+  - Static APIs
+title: Static APIs
 URL: https://bagrounds.org/topics/static-apis
 ---
 [Home](../index.md) > [Topics](./index.md)  

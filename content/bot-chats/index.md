@@ -14,4 +14,5 @@ URL: https://bagrounds.org/bot-chats
 - [AI Engineering Assistant Technology Recommendations](./ai-engineering-assistant-technology-recommendations.md)  
 - [How Much Wood](./how-much-wood.md)  
 - [Summarize The Happiest Baby On The Block](./summarize-the-happiest-baby-on-the-block.md)  
+- [Parenting Resources Recommendations](./parenting-resources-recommendations.md)  
   

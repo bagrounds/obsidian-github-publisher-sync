@@ -7,7 +7,7 @@ URL: https://bagrounds.org/articles/safe-sleep-for-breastfeeding-babies
 Author: 
 tags: 
 ---
-[Home](./index.md) > [Articles](./articles/index.md)  
+[Home](../index.md) > [Articles](./index.md)  
 # Safe Sleep for Breastfeeding Babies  
 ## 🤖 AI Summary  
 ### 💬 [ChatGPT](https://chat.com) Prompt  

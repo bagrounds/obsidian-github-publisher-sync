@@ -27,6 +27,7 @@ URL: https://bagrounds.org/videos
 - [How to hack your brain to crave doing hard things.](./how-to-hack-your-brain-to-crave-doing-hard-things.md)  
 - [How to Reduce Bone Injury Risks | Running Science](./how-to-reduce-bone-injury-risks-running-science.md)  
 - [I Built an AI That Does My Work For Me](./i-built-an-ai-that-does-my-work-for-me.md)  
+- [Infant Cosleeping with James McKenna, PhD](./infant-cosleeping-with-james-mckenna-phd.md)  
 - [It’s actually pretty easy to get ahead of 99% of people.](./it-is-actually-pretty-easy-to-get-ahead-of-99-percent-of%20people.md)  
 - [Most Tech Interview Prep is GARBAGE. (From a Principal Engineer at Amazon)](./most-tech-interview-prep-is-garbage-from-a-principal-engineer-at-amazon.md)  
 - [Ollama Course – Build AI Apps Locally](./ollama-course-build-ai-apps-locally.md)  

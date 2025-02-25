@@ -26,6 +26,7 @@ URL: https://bagrounds.org/books
 - [Pets on the Couch](./pets-on-the-couch.md)  
 - [Planning for Everything](./planning-for-everything.md)  
 - [Rapport](./rapport.md)  
+- [Sapiens: A Brief History of Humankind](./sapiens-a-brief-history-of-humankind.md)  
 - [Software Estimation](./software-estimation.md)  
 - [The $100 Startup](./the-100-dollar-startup.md)  
 - [The 2-Hour Job Search](./the-2-hour-job-search.md)  

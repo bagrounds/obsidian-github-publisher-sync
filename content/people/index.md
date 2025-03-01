@@ -11,4 +11,5 @@ aliases:
 - [Russell Ackoff](./russell-ackoff.md)  
 - [W Edwards Deming](./w-edwards-deming.md)  
 - [Tim Berners-Lee](./tim-berners-lee.md)  
+- [andrej-karpathy](../../andrej-karpathy.md)  
   

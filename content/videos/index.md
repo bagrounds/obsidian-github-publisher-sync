@@ -23,6 +23,7 @@ URL: https://bagrounds.org/videos
 - [Eat your food in the RIGHT ORDER: 75% healthier with this small trick | Episode 6 of 18](./eat-your-food-in-the-right-order-75-healthier-with-this-small-trick-episode-6-of-18.md)  
 - [Experts are STUNNED! Meta's NEW LLM Architecture is a GAME-CHANGER!](./experts-are-stunned-metas-new-llm-architecture-is-a-game-changer.md)  
 - [How AI Cracked the Protein Folding Code and Won a Nobel Prize](./how-ai-cracked-the-protein-folding-code-and-won-a-nobel-prize.md)  
+- [How I use LLMs](./how-i-use-llms.md)  
 - [How the Elite rigged Society (and why it’s falling apart) | David Brooks](./how-the-elite-rigged-society-and-why-it-s-falling-apart-david-brooks.md)  
 - [How to Force Your Brain To Be Motivated (when you don’t feel like it)](./how-to-force-your-brain-to-be-motivated-when-you-dont-feel-like-it.md)  
 - [How to hack your brain to crave doing hard things.](./how-to-hack-your-brain-to-crave-doing-hard-things.md)  

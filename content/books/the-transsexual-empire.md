@@ -119,7 +119,7 @@ This book offers a similarly radical feminist critique of transsexualism, challe
 Butler’s seminal work revolutionized gender theory by arguing that gender is performative and socially constructed. While not a direct critique of transsexualism, it offers foundational ideas about gender that are essential for understanding and challenging traditional binaries.  
   
 ##### 3. Best Book Diametrically Opposed to the Topic  
-**[Transgender History](https://en.wikipedia.org/wiki/Transgender_History)** by Susan Stryker    
+**[Transgender History](./transgender-history.md)** by Susan Stryker    
 In contrast to Raymond’s critique, Stryker’s work is an expansive, affirming history of transgender people and their rights. It presents a narrative that celebrates transgender identities and critiques the medical and social models that Raymond attacks.  
   
 ##### 4. Best Fiction Book that Incorporates Related Ideas  

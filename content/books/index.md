@@ -41,8 +41,10 @@ URL: https://bagrounds.org/books
 - [The New Economics](./the-new-economics.md)  
 - [The Science of Storytelling](./the-science-of-storytelling.md)  
 - [The Staff Engineer's Path](./the-staff-engineers-path.md)  
+- [The Transsexual Empire](./the-transsexual-empire.md)  
 - [Thinking in Systems](./thinking-in-systems.md)  
 - [Tiny Habits](./tiny-habits.md)  
+- [Transgender History](./transgender-history.md)  
 - [Willpower](./willpower.md)  
 - [Zero to One](./zero-to-one.md)  
   

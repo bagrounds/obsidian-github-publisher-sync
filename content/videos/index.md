@@ -32,6 +32,7 @@ URL: https://bagrounds.org/videos
 - [Infant Cosleeping with James McKenna, PhD](./infant-cosleeping-with-james-mckenna-phd.md)  
 - [Is Every Civilization Doomed to Fail? - Gregory Aldrete](./is-every-civilization-doomed-to-fail-gregory-aldrete.md)  
 - [It’s actually pretty easy to get ahead of 99% of people.](./it-is-actually-pretty-easy-to-get-ahead-of-99-percent-of%20people.md)  
+- [Learn how to boost your baby's brain from a Harvard Professor | UNICEF](./learn-how-to-boost-your-baby-s-brain-from-a-harvard-professor-unicef.md)  
 - [Most Tech Interview Prep is GARBAGE. (From a Principal Engineer at Amazon)](./most-tech-interview-prep-is-garbage-from-a-principal-engineer-at-amazon.md)  
 - [Ollama Course – Build AI Apps Locally](./ollama-course-build-ai-apps-locally.md)  
 - [Optimizing Webservers for High Throughput and Low Latency | Dropbox](./optimizing-webservers-for-high-throughput-and-low-latency-dropbox.md)  

@@ -3,6 +3,7 @@ aliases:
   - Andrej Karpathy
 share: true
 ---
+[Home](../index.md) > [People](./index.md)  
 # Andrej Karpathy  
 ## 🤖 AI Summary  
 Andrej Karpathy is a prominent figure in artificial intelligence, known for his significant contributions to deep learning and neural networks. He began his career as a founding member of OpenAI in 2015, where he played a pivotal role in advancing AI research. In 2017, he was recruited by Elon Musk to lead Tesla's computer vision projects, focusing on developing autonomous driving technologies. After returning to OpenAI in 2023, Karpathy contributed to enhancing GPT-4, one of the most advanced language models to date.  

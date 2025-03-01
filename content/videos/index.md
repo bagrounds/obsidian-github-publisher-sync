@@ -38,6 +38,7 @@ URL: https://bagrounds.org/videos
 - [Parables on the Power of Planning in AI: From Poker to Diplomacy: Noam Brown (OpenAI)](./parables-on-the-power-of-planning-in-ai-from-poker-to-diplomacy-noam-brown-openai.md)  
 - [Pediatrician's Top Tips For Newborn Sleep](./pediatricians-top-tips-for-newborn-sleep.md)  
 - [Principal Engineer Reveals How To Be Promoted FAST](./principal-engineer-reveals-how-to-be-promoted-fast.md)  
+- [Rep. Aime Wichtendahl testifies as Iowa removes civil rights for trans people (Feb 27, 2025)](./rep-aime-wichtendahl-testifies-as-iowa-removes-civil-rights-for-trans-people-feb-27-2025.md)  
 - [Russell L Ackoff From Mechanistic to Systemic Thinking](./russell-l-ackoff-from-mechanistic-to-systemic-thinking.md)  
 - [SHIN SPLINTS for Runners: Challenges, Causes, and Rehab](./shin-splints-for-runners-challenges-causes-and-rehab.md)  
 - [Spaceship You](./spaceship-you.md)  

@@ -16,4 +16,5 @@ URL: https://bagrounds.org/bot-chats
 - [Summarize The Happiest Baby On The Block](./summarize-the-happiest-baby-on-the-block.md)  
 - [Parenting Resources Recommendations](./parenting-resources-recommendations.md)  
 - [Reliable News](./reliable-news.md)  
+- [Parenting and Infant Development Guide](./parenting-and-infant-development-guide.md)  
   

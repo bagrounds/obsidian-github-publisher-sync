@@ -170,19 +170,19 @@ Below is a list of high-quality books, resources, and thought leaders for furthe
 ---  
   
 #### Recommended Books  
-- **[Transgender History](https://www.amazon.com/Transgender-History-Susan-Stryker/dp/1580919597)** by Susan Stryker    
+- **Transgender History** by Susan Stryker    
   An accessible yet comprehensive account of transgender movements in the United States, widely cited in academic and activist circles.  
   
-- **[Whipping Girl: A Transsexual Woman on Sexism and the Scapegoating of Femininity](https://www.amazon.com/Whipping-Girl-Transsexual-Sexism-Scapegoating/dp/1555835686)** by Julia Serano  
+- **Whipping Girl: A Transsexual Woman on Sexism and the Scapegoating of Femininity** by Julia Serano  
   A seminal work that examines the intersections of sexism and trans oppression, offering both personal narrative and broader cultural analysis.  
   
-- **[The Transgender Issue: An Argument for Justice](https://www.amazon.com/Transgender-Issue-Argument-Shon-Faye/dp/0241423141)** by Shon Faye  
+- **The Transgender Issue: An Argument for Justice** by Shon Faye  
   A contemporary, left-wing perspective that critically examines the legal, social, and economic challenges facing transgender people.  
   
 - **[Who's Afraid of Gender?](https://us.macmillan.com/books/9780374608224/whosafraidofgender)** by Judith Butler  
   An accessible entry point into current gender debates, where Butler unpacks the politics surrounding gender and its implications for transgender liberation.  
   
-- **[Material Girls: Why Reality Matters for Feminism](https://www.amazon.com/Material-Girls-Why-Reality-Matters/dp/0349726595)** by Kathleen Stock  
+- **Material Girls: Why Reality Matters for Feminism** by Kathleen Stock  
   A provocative work that critiques current theories of gender identity from a biological and feminist standpoint. (Reading this alongside other perspectives is recommended.)  
   
 ---  
@@ -197,7 +197,7 @@ Below is a list of high-quality books, resources, and thought leaders for furthe
 - **[ACLU – Transgender Rights](https://www.aclu.org/issues/lgbt-rights/transgender-rights)**  
   Features legal analysis and updates on ongoing policy battles affecting transgender communities.  
   
-- **[Movement Advancement Project (MAP)](https://www.mapinc.org)**  
+- **[Movement Advancement Project (MAP)](https://www.lgbtmap.org)**  
   Tracks state and federal legislation impacting LGBTQ+ rights, with interactive maps and research reports.  
   
 - **[PEN America](https://pen.org/freedom-to-read/)**  

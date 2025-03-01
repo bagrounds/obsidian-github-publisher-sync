@@ -11,8 +11,9 @@ tags:
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # How I use LLMs  
-  
 ![How I use LLMs](https://youtu.be/EWvNQjAaOHw)  
+  
+By [Andrej Karpathy](../../andrej-karpathy.md)  
   
 ## 🤖 AI Summary - Exploring Large Language Models (LLMs) and AI Tools  
 ### **Introduction to Large Language Models (LLMs)**  
@@ -31,8 +32,8 @@ tags:
   
 ### **Where to Track AI Model Performance**  
 - **Leaderboard Websites:**    
-  - **Chatbot Arena** (for ranking AI models).    
-  - **Scale AI’s Eval Leaderboard** (comparison of model performances on different tasks).    
+  - **[Chatbot Arena](https://openlm.ai/chatbot-arena)** (for ranking AI models).    
+  - **[Scale AI’s Eval Leaderboard](https://scale.com/leaderboard)** (comparison of model performances on different tasks).    
   
 ### **How LLMs Work**  
 - Inputs and outputs are broken into **tokens**.  
@@ -87,22 +88,22 @@ tags:
 - **[00:05:30 - AI Ecosystem in 2025](https://youtu.be/EWvNQjAaOHw&t=330)** – Google Gemini, Meta AI, Claude, Grok, etc.    
 - **[00:12:45 - How LLMs Work](https://youtu.be/EWvNQjAaOHw&t=765)** – Tokenization, prediction, and training phases.    
   
-### **AI-Powered Search and Research**    
+### **AI-Powered Search and Research**  
 - **[00:32:10 - AI for Web Search](https://youtu.be/EWvNQjAaOHw&t=1930)** – How AI fetches real-time information.    
 - **[00:40:00 - Deep Research Tools](https://youtu.be/EWvNQjAaOHw&t=2400)** – AI performing in-depth searches and summarization.    
 - **[00:50:20 - File Analysis](https://youtu.be/EWvNQjAaOHw&t=3020)** – Uploading PDFs for AI-powered summarization.    
   
-### **AI for Data Science & Coding**    
+### **AI for Data Science & Coding**  
 - **[01:06:00 - AI-Assisted Coding](https://youtu.be/EWvNQjAaOHw&t=3960)** – Using AI for software development.    
 - **[01:14:45 - Claude’s Artifacts Feature](https://youtu.be/EWvNQjAaOHw&t=4485)** – Generating code and flashcards.    
 - **[01:23:30 - Vibe Coding in VS Code](https://youtu.be/EWvNQjAaOHw&t=5010)** – AI-assisted programming and auto-coding.    
   
-### **AI for Multimodal Understanding**    
+### **AI for Multimodal Understanding**  
 - **[01:41:30 - AI Image Processing](https://youtu.be/EWvNQjAaOHw&t=6090)** – Uploading images for AI analysis.    
 - **[01:45:00 - AI for Blood Test Interpretation](https://youtu.be/EWvNQjAaOHw&t=6300)** – Uploading medical results for AI insights.    
 - **[01:50:00 - AI for Meme Explanation](https://youtu.be/EWvNQjAaOHw&t=6600)** – Decoding humor and social media memes.    
   
-### **AI-Generated Content and Personalization**    
+### **AI-Generated Content and Personalization**  
 - **[02:00:00 - AI Image Generation](https://youtu.be/EWvNQjAaOHw&t=7200)** – Creating visuals using DALL·E.    
 - **[02:05:30 - ChatGPT Memory Feature](https://youtu.be/EWvNQjAaOHw&t=7530)** – How AI remembers user preferences.    
 - **[02:09:30 - Custom GPTs for Language Learning](https://youtu.be/EWvNQjAaOHw&t=7770)** – Creating AI-powered language tools.    

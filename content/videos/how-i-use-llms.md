@@ -13,7 +13,7 @@ tags:
 # How I use LLMs  
 ![How I use LLMs](https://youtu.be/EWvNQjAaOHw)  
   
-By [Andrej Karpathy](../../andrej-karpathy.md)  
+By [Andrej Karpathy](../people/andrej-karpathy.md)  
   
 ## 🤖 AI Summary - Exploring Large Language Models (LLMs) and AI Tools  
 ### **Introduction to Large Language Models (LLMs)**  

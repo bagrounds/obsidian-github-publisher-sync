@@ -17,4 +17,5 @@ URL: https://bagrounds.org/bot-chats
 - [Parenting Resources Recommendations](./parenting-resources-recommendations.md)  
 - [Reliable News](./reliable-news.md)  
 - [Parenting and Infant Development Guide](./parenting-and-infant-development-guide.md)  
+- [Effective Thought-Action Defusion Techniques](./effective-thought-action-defusion-techniques.md)  
   

@@ -51,7 +51,7 @@ F("🫀Feelings") -- ❌ --> T("🧠Thoughts") -- ❌ --> A("🏃Actions")
 #### **1. D – Distinguish (Separate Feelings, Thoughts, and Actions)**    
 - Recognize that **feeling tired or lazy is just a sensation**, not a command to stop working.    
 - Example: Feeling anxious before a public speech can be **reframed as excitement**, changing our response to stress.    
-- This technique, known as **Thought-Action Defusion**, is widely used in clinical psychology.    
+- This technique, known as **[Thought-Action Defusion](../bot-chats/effective-thought-action-defusion-techniques.md)**, is widely used in clinical psychology.    
   
 #### **2. F – Fake (Act as If You’re Motivated)**    
 - Instead of waiting to feel motivated, **pretend to be productive**, just like an actor in a movie.    

@@ -11,7 +11,7 @@ tags:
 ---
   
 [Home](../index.md) > [Videos](./index.md)  
-# Learn how to boost your baby's brain from a Harvard Professor | UNICEF  
+# Learn how to bo uhost your baby's brain from a Harvard Professor | UNICEF  
 ![Learn how to boost your baby's brain from a Harvard Professor | UNICEF](https://youtu.be/fpiYNkkNmEo)  
   
 ## 🤖 AI Summary  

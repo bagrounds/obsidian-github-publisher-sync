@@ -31,6 +31,7 @@ URL: https://bagrounds.org/books
 - [Nonviolent Communication](./nonviolent-communication.md)  
 - [Nudge](./nudge.md)  
 - [Organize for Complexity](./organize-for-complexity.md)  
+- [Outlive](./outlive.md)  
 - [Pets on the Couch](./pets-on-the-couch.md)  
 - [Planning for Everything](./planning-for-everything.md)  
 - [Predictably Irrational](./predictably-irrational.md)  

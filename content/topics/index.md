@@ -20,6 +20,7 @@ URL: https://bagrounds.org/topics
 - [Memory](./memory.md)  
 - [My Resume](./my-resume.md)  
 - [Programming Problems](./programming-problems/index.md)  
+- [Property Based Testing](./property-based-testing.md)  
 - [Rules](./rules.md)  
 - [Software Engineering](./software-engineering.md)  
 - [Static APIs](./static-apis.md)  

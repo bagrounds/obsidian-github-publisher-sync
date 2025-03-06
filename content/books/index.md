@@ -44,6 +44,7 @@ URL: https://bagrounds.org/books
 - [The 2-Hour Job Search](./the-2-hour-job-search.md)  
 - [The 48 Laws of Power](./the-48-laws-of-power.md)  
 - [The Art of Fear](./the-art-of-fear.md)  
+- [The Art Of Learning](./the-art-of-learning.md)  
 - [The Blade Itself](./the-blade-itself.md)  
 - [The Extended Mind](./the-extended-mind.md)  
 - [The Fifth Discipline](./the-fifth-discipline.md)  

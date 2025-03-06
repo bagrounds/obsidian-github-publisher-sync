@@ -9,6 +9,7 @@ URL: https://bagrounds.org/books
 # Books  
 - [A Thousand Brains](./a-thousand-brains.md)  
 - [Atomic Habits](./atomic-habits.md)  
+- [Business Dynamics](./business-dynamics.md)  
 - [Complexity](./complexity.md)  
 - [Consensus through Conversation](./consensus-through-conversation.md)  
 - [Cribsheet](./cribsheet.md)  
@@ -27,6 +28,7 @@ URL: https://bagrounds.org/books
 - [Influence](./influence.md)  
 - [Just Listen](./just-listen.md)  
 - [Mindset](./mindset.md)  
+- [Modeling Dynamic Systems](./modeling-dynamic-systems.md)  
 - [Never Split The Difference](./never-split-the-difference.md)  
 - [Noise](./noise.md)  
 - [Nonviolent Communication](./nonviolent-communication.md)  

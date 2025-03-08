@@ -71,7 +71,7 @@ Melanie Mitchell is a highly respected computer scientist and complexity researc
   
 #### **Book Recommendations 📚**  
 * **Best Alternate Books on the Same Topic:*  
-    * "Sync: The Emerging Science of Spontaneous Order" by Steven Strogatz. 🤝🔄  
+    * "[Sync](./sync.md): The Emerging Science of Spontaneous Order" by Steven Strogatz. 🤝🔄  
     * Complex Adaptive Systems: An Introduction to Computational Models of Social Life by John H. Miller and Scott E. Page – A rigorous yet accessible introduction to modeling complex systems.  
 * **Best Tangentially Related Book:** "[Thinking in Systems](./thinking-in-systems.md): A Primer" by Donella H. Meadows. ⚙️  
 * **Best Diametrically Opposed Books:**  

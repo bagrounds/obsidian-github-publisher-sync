@@ -61,7 +61,7 @@ Caroline Webb, an economist and leadership advisor, draws upon a solid foundatio
   
 #### **Book Recommendations** 📚  
 * **Best Alternate Book on the Same Topic:** "[Thinking, Fast and Slow](./thinking-fast-and-slow.md)" by Daniel Kahneman. This book offers a deeper dive into the cognitive biases and heuristics that influence our decision-making.  
-* **Best Book Tangentially Related:** "Drive: The Surprising Truth About What Motivates Us" by Daniel H. Pink. This book explores the science of motivation and how to foster intrinsic drive.  
+* **Best Book Tangentially Related:** "[Drive: The Surprising Truth About What Motivates Us](./drive-the-surprising-truth-about-what-motivates-us.md)" by Daniel H. Pink. This book explores the science of motivation and how to foster intrinsic drive.  
 * **Best Book Diametrically Opposed:** "The Subtle Art of Not Giving a F\*ck: A Counterintuitive Approach to Living a Good Life" by Mark Manson. While Webb focuses on optimizing daily life, Manson encourages embracing discomfort and accepting limitations.  
 * **Best Fiction Book That Incorporates Related Ideas:** "Flowers for Algernon" by Daniel Keyes. This novel explores the ethical implications of cognitive enhancement and the nature of intelligence.  
 * **A Book That Is More Rigorous:** "[Predictably Irrational](./predictably-irrational.md): The Hidden Forces That Shape Our Decisions" by Dan Ariely. This book is a more in-depth exploration of behavioral economics, with a focus on experimental research.  

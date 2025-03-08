@@ -17,7 +17,7 @@ tags:
    *The Innovator's Solution* by Clayton Christensen and Michael Raynor – A direct follow-up, offering strategies for companies to create disruptive innovations.  
   
 2. **Best Tangentially Related Book**:    
-   *The Lean Startup* by Eric Ries – Focuses on how startups can innovate quickly and efficiently, using lean principles to test ideas and disrupt markets.  
+   *[The Lean Startup](./the-lean-startup.md)* by Eric Ries – Focuses on how startups can innovate quickly and efficiently, using lean principles to test ideas and disrupt markets.  
   
 3. **Best Diametrically Opposed Book**:    
    *Good to Great* by Jim Collins – This book emphasizes how established companies can achieve long-term success by focusing on discipline, consistency, and improving existing practices, in contrast to Christensen's emphasis on disruption.  

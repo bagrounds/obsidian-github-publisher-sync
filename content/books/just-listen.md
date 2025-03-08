@@ -108,11 +108,11 @@ Active, empathetic listening transforms every interaction—by truly hearing and
     - Explores techniques for engaging in high-stakes dialogue with clarity and composure.  
   
 - **Best Book Tangentially Related:**    
-  - *Nonviolent Communication* by Marshall Rosenberg    
+  - *[Nonviolent Communication](./nonviolent-communication.md)* by Marshall Rosenberg    
     - Offers a broader perspective on empathy and compassionate communication that complements the listening strategies in "Just Listen."  
   
 - **Best Book Diametrically Opposed:**    
-  - *The 48 Laws of Power* by Robert Greene    
+  - *[The 48 Laws of Power](./the-48-laws-of-power.md)* by Robert Greene    
     - Presents a contrasting view on interpersonal dynamics, emphasizing strategic power moves over empathetic engagement.  
   
 - **Best Fiction Book Incorporating Related Ideas:**    

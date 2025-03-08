@@ -8,7 +8,7 @@ URL: https://bagrounds.org/topics/design-a-performance-self-evaluation-system
 [Home](../index.md) > [Topics](./index.md)  
 # Design a Performance Self-Evaluation System  
 ![design-a-performance-self-evaluation-system](../design-a-performance-self-evaluation-system.svg)  
-%%[🖋 Edit in Excalidraw](../excalidraw/design-a-performance-self-evaluation-system.md)%%  
+%%[🖋 Edit in Excalidraw](../../design-a-performance-self-evaluation-system.md)%%  
   
 ---  
 _If you're here for the performance self-evaluation system, you can ignore everything below_  
@@ -161,4 +161,4 @@ FATAL    Enveloppe
 - ooh, looks like a [better workaround](https://forum.obsidian.md/t/has-anyone-succeeded-in-publishing-excalidraw-drawings/55587/9) may exist  
   
 ### 🦟 The Bug  
-![design-a-performance-self-evaluation-system](../excalidraw/design-a-performance-self-evaluation-system.md)  
+![design-a-performance-self-evaluation-system](../../design-a-performance-self-evaluation-system.md)  

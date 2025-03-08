@@ -93,7 +93,7 @@ tags:
 * **Best Fiction Book That Incorporates Related Ideas:** "The Phoenix Project" by Gene Kim, Kevin Behr, and George Spafford. Uses a fictional story to illustrate the principles of Lean and DevOps, which share similarities with Deming's approach. 💻  
 * **Best More General Book:** "[Thinking in Systems](./thinking-in-systems.md)" by Donella H. Meadows. This book offers a comprehensive introduction to systems thinking, which is a key component of Deming's philosophy. 🌐  
 * **Best More Specific Book:** "Understanding Variation: The Key to Managing Chaos" by Donald J. Wheeler. This book focuses specifically on the statistical aspects of variation and how to control it. 📊  
-* **Best More Rigorous Book:** "Statistical Quality Control" by Eugene L. Grant and Richard S. Leavenworth. This classic textbook provides a detailed explanation of statistical quality control methods. 📈  
+* **Best More Rigorous Book:** "[Statistical Quality Control](./statistical-quality-control.md)" by Eugene L. Grant and Richard S. Leavenworth. This classic textbook provides a detailed explanation of statistical quality control methods. 📈  
 * **Best More Accessible Book:** "The Toyota Way" by Jeffrey K. Liker. Explains the principles of the Toyota Production System, which is heavily influenced by Deming's work, in a clear and engaging manner. 🚗  
   
 ## 💬 [Gemini](https://gemini.google.com) Prompt  

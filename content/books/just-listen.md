@@ -10,10 +10,6 @@ tags:
 [Home](../index.md) > [Books](./index.md)  
 # Just Listen  
 ## 🤖 AI Summary  
-### 💬 [ChatGPT](https://chat.com) Prompt  
-> Summarize the book: Just Listen. Start the summary with a TLDR - a single statement that conveys a maximum of the useful information provided in the book. Follow this with a deep dive. Catalogue the topics, methods, and research discussed. Be sure to highlight any significant theories, theses, or mental models proposed. Provide a critical analysis of the quality of the information presented, using scientific backing, author credentials, authoritative reviews, and other markers of high quality information as justification. Emphasize practical takeaways. Make the following additional book recommendations: the best alternate book on the same topic, the best book that is tangentially related, the best book that is diametrically opposed, and the best fiction book that incorporates related ideas. Format your response as markdown, starting at heading level H4, with inline links, for easy copy paste. Use meaningful emojis liberally to enhance readability, especially in headings and as bullets for lists.  
-  
-### Response  
 #### TL;DR 🚀  
 Active, empathetic listening transforms every interaction—by truly hearing and validating emotions, you can defuse conflict, build trust, and foster deeper, more effective communication.  
   
@@ -118,3 +114,6 @@ Active, empathetic listening transforms every interaction—by truly hearing and
 - **Best Fiction Book Incorporating Related Ideas:**    
   - *To Kill a Mockingbird* by Harper Lee    
     - Through its narrative, it explores themes of empathy, moral listening, and understanding diverse perspectives in a compelling fictional setting.  
+  
+## 💬 [ChatGPT](https://chat.com) Prompt  
+> Summarize the book: Just Listen. Start the summary with a TLDR - a single statement that conveys a maximum of the useful information provided in the book. Follow this with a deep dive. Catalogue the topics, methods, and research discussed. Be sure to highlight any significant theories, theses, or mental models proposed. Provide a critical analysis of the quality of the information presented, using scientific backing, author credentials, authoritative reviews, and other markers of high quality information as justification. Emphasize practical takeaways. Make the following additional book recommendations: the best alternate book on the same topic, the best book that is tangentially related, the best book that is diametrically opposed, and the best fiction book that incorporates related ideas. Format your response as markdown, starting at heading level H4, with inline links, for easy copy paste. Use meaningful emojis liberally to enhance readability, especially in headings and as bullets for lists.  

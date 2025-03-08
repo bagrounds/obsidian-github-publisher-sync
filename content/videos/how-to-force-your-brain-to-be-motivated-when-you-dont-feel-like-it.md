@@ -78,7 +78,7 @@ F("🫀Feelings") -- ❌ --> T("🧠Thoughts") -- ❌ --> A("🏃Actions")
 ### **Further Learning Resources**    
 - **Books on Productivity:**    
   - *[Atomic Habits](../books/atomic-habits.md)* by James Clear (habit formation)    
-  - *The War of Art* by Steven Pressfield (overcoming resistance)    
+  - *[The War of Art](../books/the-war-of-art.md)* by Steven Pressfield (overcoming resistance)    
   - *[Deep Work](../books/deep-work.md)* by Cal Newport (focused productivity)    
 - **Scientific Research:**    
   - Willpower depletion studies: [Baumeister’s research on ego depletion](https://en.wikipedia.org/wiki/Ego_depletion)  

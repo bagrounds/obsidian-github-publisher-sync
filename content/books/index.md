@@ -56,6 +56,7 @@ URL: https://bagrounds.org/books
 - [Rapport](./rapport.md)  
 - [Sapiens: A Brief History of Humankind](./sapiens-a-brief-history-of-humankind.md)  
 - [Software Estimation](./software-estimation.md)  
+- [Statistical Quality Control](./statistical-quality-control.md)  
 - [Sync](./sync.md)  
 - [The $100 Startup](./the-100-dollar-startup.md)  
 - [The 2-Hour Job Search](./the-2-hour-job-search.md)  

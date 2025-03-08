@@ -71,8 +71,8 @@ While goal setting is a common practice, the book's emphasis on **radical transp
   
 ### **Book Recommendations** 📚  
 * **Best Alternate Book on the Same Topic:** "Radical Focus" by Christina Wodtke. This book provides a fictional narrative to explain the OKR process, making it very accessable. 📖  
-* **Best Tangentially Related Book:** "Drive: The Surprising Truth About What Motivates Us" by Daniel H. Pink. This book explores the intrinsic motivators that drive performance, which aligns with the principles of OKRs. 🧠  
-* **Best Diametrically Opposed Book:** "The Tyranny of Metrics" by Jerry Z. Muller. This book critiques the overreliance on metrics and quantitative performance measurement, offering a contrasting perspective. ⚖️  
+* **Best Tangentially Related Book:** "[Drive: The Surprising Truth About What Motivates Us](./drive-the-surprising-truth-about-what-motivates-us.md)" by Daniel H. Pink. This book explores the intrinsic motivators that drive performance, which aligns with the principles of OKRs. 🧠  
+* **Best Diametrically Opposed Book:** "[The Tyranny of Metrics](./the-tyranny-of-metrics.md)" by Jerry Z. Muller. This book critiques the overreliance on metrics and quantitative performance measurement, offering a contrasting perspective. ⚖️  
 * **Best Fiction Book That Incorporates Related Ideas:** "The Goal" by Eliyahu M. Goldratt. This novel uses a fictional story to illustrate the principles of constraints management and continuous improvement, which are relevant to goal setting and performance optimization. 🏭  
 * **Best Book That Is More General:** "[Good To Great](./good-to-great.md)" by Jim Collins. This book explores the factors that contribute to long-term organizational success, providing a broader perspective on achieving ambitious goals. 🚀  
 * **Best Book That Is More Specific:** "OKR Workbook: A Step-by-Step Guide to Implementing Objectives and Key Results" by Ben Lamorte. This book is a workbook that goes very deep into the actual process of creating and using OKRs. 📝  

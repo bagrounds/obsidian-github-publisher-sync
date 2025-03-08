@@ -88,7 +88,7 @@ tags:
   
 #### Book Recommendations 📚  
 * **Best Alternate Book on the Same Topic:** "Out of the Crisis" by W. Edwards Deming. This book provides a more in-depth explanation of Deming's 14 Points and his philosophy. 📖  
-* **Best Tangentially Related Book:** "The Lean Startup" by Eric Ries. Focuses on rapid iteration and customer feedback, which aligns with Deming's emphasis on continuous improvement. 🚀  
+* **Best Tangentially Related Book:** "[The Lean Startup](./the-lean-startup.md)" by Eric Ries. Focuses on rapid iteration and customer feedback, which aligns with Deming's emphasis on continuous improvement. 🚀  
 * **Best Diametrically Opposed Book:** "The Goal" by Eliyahu M. Goldratt. While it advocates for improvement, it focuses on constraints and throughput, which differs from Deming's emphasis on variation and quality. 🎯  
 * **Best Fiction Book That Incorporates Related Ideas:** "The Phoenix Project" by Gene Kim, Kevin Behr, and George Spafford. Uses a fictional story to illustrate the principles of Lean and DevOps, which share similarities with Deming's approach. 💻  
 * **Best More General Book:** "[Thinking in Systems](./thinking-in-systems.md)" by Donella H. Meadows. This book offers a comprehensive introduction to systems thinking, which is a key component of Deming's philosophy. 🌐  

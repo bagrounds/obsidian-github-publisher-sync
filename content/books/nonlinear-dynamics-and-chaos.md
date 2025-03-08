@@ -1,8 +1,8 @@
 ---
 share: true
 aliases:
-  - Nonlinear Dynamics And Chaos
-title: Nonlinear Dynamics And Chaos
+  - Nonlinear Dynamics and Chaos
+title: Nonlinear Dynamics and Chaos
 URL: https://bagrounds.org/books/nonlinear-dynamics-and-chaos
 Author: 
 tags: 

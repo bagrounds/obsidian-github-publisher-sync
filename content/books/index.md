@@ -46,6 +46,7 @@ URL: https://bagrounds.org/books
 - [Just Listen](./just-listen.md)  
 - [Learning To See](./learning-to-see.md)  
 - [Make It Stick](./make-it-stick.md)  
+- [Man's Search for Meaning](./mans-search-for-meaning.md)  
 - [Measure What Matters](./measure-what-matters.md)  
 - [Mindset](./mindset.md)  
 - [Modeling Dynamic Systems](./modeling-dynamic-systems.md)  

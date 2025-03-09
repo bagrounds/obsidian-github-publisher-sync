@@ -33,6 +33,7 @@ URL: https://bagrounds.org/videos
 - [Is Every Civilization Doomed to Fail? - Gregory Aldrete](./is-every-civilization-doomed-to-fail-gregory-aldrete.md)  
 - [It’s actually pretty easy to get ahead of 99% of people.](./it-is-actually-pretty-easy-to-get-ahead-of-99-percent-of%20people.md)  
 - [Judea Pearl, 2011 ACM Turing Award Recipient](./judea-pearl-2011-acm-turing-award-recipient.md)  
+- [Judea Pearl, 2012 ACM A.M. Turing Award Lecture «The Mechanization of Causal Inference»](./judea-pearl-2012-acm-a-m-turing-award-lecture-the-mechanization-of-causal-inference.md)  
 - [Learn how to boost your baby's brain from a Harvard Professor | UNICEF](./learn-how-to-boost-your-baby-s-brain-from-a-harvard-professor-unicef.md)  
 - [Most Tech Interview Prep is GARBAGE. (From a Principal Engineer at Amazon)](./most-tech-interview-prep-is-garbage-from-a-principal-engineer-at-amazon.md)  
 - [Ollama Course – Build AI Apps Locally](./ollama-course-build-ai-apps-locally.md)  

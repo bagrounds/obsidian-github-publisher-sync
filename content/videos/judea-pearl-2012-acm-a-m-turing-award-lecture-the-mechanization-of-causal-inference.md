@@ -7,7 +7,7 @@ URL: https://youtu.be/iNm4nFBFmvo
 Author: 
 Platform: 
 Channel: Association for Computing Machinery (ACM)
-tags: 
+tags: []
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # Judea Pearl, 2012 ACM A.M. Turing Award Lecture «The Mechanization of Causal Inference»  

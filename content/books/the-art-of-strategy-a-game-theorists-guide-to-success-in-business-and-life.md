@@ -3,7 +3,7 @@ share: true
 aliases:
   - "The Art of Strategy: A Game Theorist's Guide to Success in Business and Life"
 title: "The Art of Strategy: A Game Theorist's Guide to Success in Business and Life"
-URL: https://bagrounds.org/books/The Art of Strategy A Game Theorist's Guide to Success in Business and Life
+URL: https://bagrounds.org/books/the-art-of-strategy-a-game-theorists-guide-to-success-in-business-and-life
 Author: 
 tags: 
 ---

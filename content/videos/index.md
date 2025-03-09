@@ -36,6 +36,7 @@ URL: https://bagrounds.org/videos
 - [Judea Pearl, 2012 ACM A.M. Turing Award Lecture «The Mechanization of Causal Inference»](./judea-pearl-2012-acm-a-m-turing-award-lecture-the-mechanization-of-causal-inference.md)  
 - [Learn how to boost your baby's brain from a Harvard Professor | UNICEF](./learn-how-to-boost-your-baby-s-brain-from-a-harvard-professor-unicef.md)  
 - [Most Tech Interview Prep is GARBAGE. (From a Principal Engineer at Amazon)](./most-tech-interview-prep-is-garbage-from-a-principal-engineer-at-amazon.md)  
+- [Murphy: Six Weeks In, This White House Is On Its Way To Being The Most Corrupt In U.S. History](./murphy-six-weeks-in-this-white-house-is-on-its-way-to-being-the-most-corrupt-in-u-s-history.md)  
 - [Ollama Course – Build AI Apps Locally](./ollama-course-build-ai-apps-locally.md)  
 - [Optimizing Webservers for High Throughput and Low Latency | Dropbox](./optimizing-webservers-for-high-throughput-and-low-latency-dropbox.md)  
 - [Parables on the Power of Planning in AI: From Poker to Diplomacy: Noam Brown (OpenAI)](./parables-on-the-power-of-planning-in-ai-from-poker-to-diplomacy-noam-brown-openai.md)  

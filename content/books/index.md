@@ -72,6 +72,7 @@ URL: https://bagrounds.org/books
 - [The 48 Laws of Power](./the-48-laws-of-power.md)  
 - [The Art of Fear](./the-art-of-fear.md)  
 - [The Art Of Learning](./the-art-of-learning.md)  
+- [The Art of Strategy: A Game Theorist's Guide to Success in Business and Life](./the-art-of-strategy-a-game-theorists-guide-to-success-in-business-and-life.md)  
 - [The Artist's Way](./the-artists-way.md)  
 - [The Blade Itself](./the-blade-itself.md)  
 - [The Book of Why](./the-book-of-why.md)  

@@ -85,7 +85,7 @@ _The Design of Paths and Goals_
   - [Thinking, Fast and Slow](./thinking-fast-and-slow.md) by Daniel Kahneman provides a broader exploration of human decision-making processes that underpin planning, offering context to why we plan the way we do. 🧠  
   
 - **More Rigorous or More Accessible:**  
-  - The Art of Strategy: A Game Theorist's Guide to Success in Business and Life by Avinash K. Dixit and Barry J. Nalebuff delves into strategic decision-making with academic rigor, ideal for readers seeking a more systematic, analytical approach to planning. 📐  
+  - [The Art of Strategy: A Game Theorist's Guide to Success in Business and Life](./the-art-of-strategy-a-game-theorists-guide-to-success-in-business-and-life.md) by Avinash K. Dixit and Barry J. Nalebuff delves into strategic decision-making with academic rigor, ideal for readers seeking a more systematic, analytical approach to planning. 📐  
   
 ---  
   

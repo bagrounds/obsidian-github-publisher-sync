@@ -76,7 +76,7 @@ _The Design of Paths and Goals_
   - [The Art of Possibility](https://en.wikipedia.org/wiki/The_Art_of_Possibility) by Rosamund Stone Zander and Benjamin Zander, which inspires creative thinking and reimagining possibilities, aligning well with the book’s emphasis on flexible planning. 🎨  
   
 - **Diametrically Opposed:**  
-  - [Antifragile](https://en.wikipedia.org/wiki/Antifragile) by Nassim Nicholas Taleb challenges the very idea of over-planning by advocating for systems that benefit from disorder and uncertainty, offering a counterpoint to traditional planning methods. ⚡  
+  - [Antifragile: Things That Gain from Disorder](./antifragile-things-that-gain-from-disorder.md) by Nassim Nicholas Taleb challenges the very idea of over-planning by advocating for systems that benefit from disorder and uncertainty, offering a counterpoint to traditional planning methods. ⚡  
   
 - **Fiction Incorporating Related Ideas:**  
   - [Dune](https://en.wikipedia.org/wiki/Dune_(novel)) by Frank Herbert is a science fiction epic that weaves intricate themes of strategy, foresight, and adaptive planning into its narrative, resonating with the core ideas of designing futures. 🌌  

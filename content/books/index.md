@@ -8,6 +8,7 @@ URL: https://bagrounds.org/books
 [Home](../index.md)  
 # Books  
 - [A Thousand Brains](./a-thousand-brains.md)  
+- [Antifragile: Things That Gain from Disorder](./antifragile-things-that-gain-from-disorder.md)  
 - [Atomic Habits](./atomic-habits.md)  
 - [Attention](./attention.md)  
 - [Brain Rules for Baby](./brain-rules-for-baby.md)  
@@ -63,6 +64,7 @@ URL: https://bagrounds.org/books
 - [Pets on the Couch](./pets-on-the-couch.md)  
 - [Planning for Everything](./planning-for-everything.md)  
 - [Predictably Irrational](./predictably-irrational.md)  
+- [Probability Theory](./probability-theory.md)  
 - [Range](./range.md)  
 - [Rapport](./rapport.md)  
 - [Sapiens: A Brief History of Humankind](./sapiens-a-brief-history-of-humankind.md)  

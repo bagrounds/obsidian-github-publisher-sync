@@ -83,7 +83,7 @@ This book flips the script by taking an abstract, mathematical subject—categor
   - Conceptual Mathematics: A First Introduction to Categories 😊  
     *Offers a gentle introduction to category theory, making it accessible to beginners and those interested in the broader implications of mathematical structures.*  
 - **More Rigorous/Accessible Book:**  
-  - [Seven Sketches in Compositionality: An Invitation to Applied Category Theory](https://arxiv.org/abs/1803.05316) 😍    
+  - [Seven Sketches in Compositionality](./seven-sketches-in-compositionality.md): An Invitation to Applied Category Theory 😍  
     *An accessible yet mathematically solid introduction to applied category theory, perfect for those who want to explore the subject in greater depth after reading Milewski’s work.*  
   
 ---  

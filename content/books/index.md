@@ -82,6 +82,7 @@ URL: https://bagrounds.org/books
 - [Range](./range.md)  
 - [Rapport](./rapport.md)  
 - [Sapiens: A Brief History of Humankind](./sapiens-a-brief-history-of-humankind.md)  
+- [Seven Sketches in Compositionality](./seven-sketches-in-compositionality.md)  
 - [Site Reliability Engineering](./site-reliability-engineering.md)  
 - [Software Estimation](./software-estimation.md)  
 - [Statistical Quality Control](./statistical-quality-control.md)  

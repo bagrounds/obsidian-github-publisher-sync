@@ -41,6 +41,7 @@ URL: https://bagrounds.org/books
 - [Flow: The Psychology of Optimal Experience](./flow-the-psychology-of-optimal-experience.md)  
 - [Full Catastrophe Living](./full-catastrophe-living.md)  
 - [Give and Take](./give-and-take.md)  
+- [Gödel, Escher, Bach: An Eternal Golden Braid](./godel-escher-bach.md)  
 - [Good To Great](./good-to-great.md)  
 - [Hardwiring Happiness: The Brain Science That Changes Everything](./hardwiring-happiness-the-brain-science-that-changes-everything.md)  
 - [Head First Statistics](./head-first-statistics.md)  

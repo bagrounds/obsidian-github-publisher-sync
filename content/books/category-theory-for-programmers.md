@@ -77,7 +77,7 @@ This book flips the script by taking an abstract, mathematical subject—categor
   - [Design Patterns: Elements of Reusable Object-Oriented Software](https://en.wikipedia.org/wiki/Design_Patterns) 😅  
     *While it focuses on object-oriented design rather than functional abstraction, it provides a contrasting perspective on how software can be structured.*  
 - **Fiction Incorporating Related Ideas:**  
-  - [Gödel, Escher, Bach: An Eternal Golden Braid](https://en.wikipedia.org/wiki/G%C3%B6del,_Escher,_Bach) 🤓  
+  - [Gödel, Escher, Bach: An Eternal Golden Braid](./godel-escher-bach.md) 🤓  
     *This Pulitzer Prize-winning work weaves together themes of logic, mathematics, and art in a narrative that echoes the structural insights of category theory.*  
 - **More General/Specific Book:**  
   - Conceptual Mathematics: A First Introduction to Categories 😊  

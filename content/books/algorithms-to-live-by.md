@@ -1,8 +1,8 @@
 ---
 share: true
 aliases:
-  - Algorithms to Live By
-title: Algorithms to Live By
+  - "Algorithms to Live By: The Computer Science of Human Decisions"
+title: "Algorithms to Live By: The Computer Science of Human Decisions"
 URL: https://bagrounds.org/books/algorithms-to-live-by
 Author: 
 tags: 
@@ -68,7 +68,7 @@ tags:
 * **Best More General Book:** "[Sapiens: A Brief History of Humankind](./sapiens-a-brief-history-of-humankind.md)" by Yuval Noah Harari. This book provides a broad overview of human history and decision-making, offering a larger context for the book's concepts. 🌍  
 * **Best More Specific Book:** "Algorithms" by Robert Sedgewick and Kevin Wayne. This textbook provides a rigorous and comprehensive treatment of algorithms, suitable for readers with a strong technical background. 💻  
 * **Best More Rigorous Book:** "Pattern Recognition and Machine Learning" by Christopher M. Bishop. This book is a very rigorous text on machine learning and pattern recognition, which is the base of many algorithms. 🤖  
-* **Best More Accessible Book:** "How Not to Be Wrong: The Power of Mathematical Thinking" by Jordan Ellenberg. This book explains mathematical concepts in a fun and accessible way, making complex ideas understandable to a general audience. ➕  
+* **Best More Accessible Book:** "[How Not to Be Wrong: The Power of Mathematical Thinking](./how-not-to-be-wrong.md)" by Jordan Ellenberg. This book explains mathematical concepts in a fun and accessible way, making complex ideas understandable to a general audience. ➕  
   
 ## 💬 [Gemini](https://gemini.google.com) Prompt  
 > Summarize the book: Algorithms to Live By: The Computer Science of Human Decisions. Start with a TL;DR - a single statement that conveys a maximum of the useful information provided in the book. Next, explain how this book may offer a new or surprising perspective. Follow this with a deep dive. Catalogue the topics, methods, and research discussed. Be sure to highlight any significant theories, theses, or mental models proposed. Summarize prominent examples discussed. Emphasize practical takeaways, including detailed, specific, concrete, step-by-step advice, guidance, or techniques discussed. Provide a critical analysis of the quality of the information presented, using scientific backing, author credentials, authoritative reviews, and other markers of high quality information as justification. Make the following additional book recommendations: the best alternate book on the same topic; the best book that is tangentially related; the best book that is diametrically opposed; the best fiction book that incorporates related ideas; the best book that is more general or more specific; and the best book that is more rigorous or more accessible than this book. Format your response as markdown, starting at heading level H3, with inline links, for easy copy paste. Use meaningful emojis generously (at least one per heading, bullet point, and paragraph) to enhance readability. Do not include broken links or links to commercial sites.

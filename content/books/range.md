@@ -69,5 +69,5 @@ Absolutely! Let's dive into "Range: Why Generalists Triumph in a Specialized Wor
 * **Books with varying complexity:**  
     * **More General:** "The Art of Learning: An Inner Journey to Optimal Performance" by Josh Waitzkin. Waitzkin, a chess prodigy and martial arts champion, discusses the principles of effective learning, which can be applied to any field.  
     * **More Specific:** "[Deep Work](./deep-work.md): Rules for Focused Success in a Distracted World" by Cal Newport. This book focuses on the importance of focused, uninterrupted work, which is a valuable skill for any specialist or generalist.  
-    * **More Rigorous:** "Algorithms to Live By: The Computer Science of Human Decisions" by Brian Christian and Tom Griffiths. This book applies computer science concepts to everyday decision-making, providing a more technical and rigorous approach to problem-solving.  
+    * **More Rigorous:** "[Algorithms to Live By: The Computer Science of Human Decisions](./algorithms-to-live-by.md)" by Brian Christian and Tom Griffiths. This book applies computer science concepts to everyday decision-making, providing a more technical and rigorous approach to problem-solving.  
     

@@ -9,6 +9,7 @@ URL: https://bagrounds.org/books
 # Books  
 - [A Thousand Brains](./a-thousand-brains.md)  
 - [Accelerate](./accelerate.md)  
+- [Algorithms to Live By](./algorithms-to-live-by.md)  
 - [An Introduction to Causal Inference](./an-introduction-to-causal-inference.md)  
 - [Antifragile: Things That Gain from Disorder](./antifragile-things-that-gain-from-disorder.md)  
 - [Atomic Habits](./atomic-habits.md)  

@@ -71,8 +71,8 @@ tags:
 * **Best Alternate Book on the Same Topic:** "Naked Statistics: Stripping the Dread from the Data" by Charles Wheelan. This book is also highly readable and focuses on practical applications. 📖  
 * **Best Tangentially Related Book:** "[Thinking, Fast and Slow](./thinking-fast-and-slow.md)" by Daniel Kahneman. This book delves into the cognitive biases that can affect statistical reasoning and decision-making. 🧠  
 * **Best Diametrically Opposed Book:** "Mathematical Statistics with Applications" by Dennis Wackerly, William Mendenhall, and Richard L. Scheaffer. This textbook is far more mathematically rigorous and suitable for advanced students. 📚  
-* **Best Fiction Book That Incorporates Related Ideas:** "The Signal and the Noise: Why So Many Predictions Fail—but Some Don't" by Nate Silver (non-fiction, with many real world examples). While non-fiction, it reads like a thriller, and deals heavily with statistical prediction. 🔮  
-* **Best Book That Is More General or More Specific:** More general: "How Not to Be Wrong: The Power of Mathematical Thinking" by Jordan Ellenberg. More specific: "Practical Statistics for Data Scientists" by Peter Bruce and Andrew Bruce. 🎯  
+* **Best Fiction Book That Incorporates Related Ideas:** "[The Signal and the Noise: Why So Many Predictions Fail - but Some Don't](./the-signal-and-the-noise.md)" by Nate Silver (non-fiction, with many real world examples). While non-fiction, it reads like a thriller, and deals heavily with statistical prediction. 🔮  
+* **Best Book That Is More General or More Specific:** More general: "[How Not to Be Wrong: The Power of Mathematical Thinking](./how-not-to-be-wrong.md)" by Jordan Ellenberg. More specific: "Practical Statistics for Data Scientists" by Peter Bruce and Andrew Bruce. 🎯  
 * **Best Book That Is More Rigorous or More Accessible:** More rigorous: "All of Statistics: A Concise Course in Statistical Inference" by Larry Wasserman. More accessible: "Statistics for Dummies" by Deborah Rumsey. 🤓  
   
 ## 💬 [Gemini](https://gemini.google.com) Prompt  

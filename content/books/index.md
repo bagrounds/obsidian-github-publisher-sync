@@ -31,6 +31,7 @@ URL: https://bagrounds.org/books
 - [Designing Data-Intensive Applications](./designing-data-intensive-applications.md)  
 - [Designing Your Life](./designing-your-life.md)  
 - [Developmental Cognitive Neuroscience](./developmental-cognitive-neuroscience.md)  
+- [Developmental Science: An Advanced Textbook](./developmental-science.md)  
 - [Distributed Algorithms](./distributed-algorithms.md)  
 - [Distributed Systems](./Distributed%20Systems.md)  
 - [Drive: The Surprising Truth About What Motivates Us](./drive-the-surprising-truth-about-what-motivates-us.md)  
@@ -115,6 +116,7 @@ URL: https://bagrounds.org/books
 - [The Digital Twin](./the-digital-twin.md)  
 - [The Extended Mind](./the-extended-mind.md)  
 - [The Fifth Discipline](./the-fifth-discipline.md)  
+- [The Goal](./the-goal.md)  
 - [The Happiest Baby On The Block](./the-happiest-baby-on-the-block.md)  
 - [The How of Happiness: A Scientific Approach to Getting the Life You Want](./the-how-of-happiness-a-scientific-approach-to-getting-the-life-you-want.md)  
 - [The Informed Parent](./the-informed-parent.md)  
@@ -140,6 +142,7 @@ URL: https://bagrounds.org/books
 - [Thinking, Fast and Slow](./thinking-fast-and-slow.md)  
 - [Tiny Habits](./tiny-habits.md)  
 - [Transgender History](./transgender-history.md)  
+- [What's Going On in There?: How the Brain and Mind Develop in the First Five Years of Life](./whats-going-on-in-there.md)  
 - [Willpower](./willpower.md)  
 - [Zero To One](./zero-to-one.md)  
   

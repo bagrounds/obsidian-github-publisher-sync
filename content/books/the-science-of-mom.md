@@ -75,7 +75,7 @@ This book offers a refreshing perspective by treating parenting as an experiment
 * **Best Fiction Book (Related Ideas):** "Room" by Emma Donoghue. This novel explores a mother's ingenuity and resourcefulness in creating a nurturing environment for her child in extreme circumstances, touching on themes of development and resilience. 🏠  
 * **Best More General Book:** "Parenting From The Inside Out" by Daniel J. Siegel and Mary Hartzell. This book covers a wider range of parenting topics, focusing on the parent's own emotional awareness. 🧘‍♀️  
 * **Best More Specific Book:** "Solve Your Child's Sleep Problems" by Richard Ferber. This book provides a very specific, detailed method for addressing infant and child sleep issues. 😴  
-* **Best More Rigorous Book:** "Developmental Science: An Advanced Textbook" by Marc H. Bornstein and Martha E. Arterberry. This is a university level textbook covering developmental psychology. 🎓  
+* **Best More Rigorous Book:** "[Developmental Science: An Advanced Textbook](./developmental-science.md)" by Marc H. Bornstein and Martha E. Arterberry. This is a university level textbook covering developmental psychology. 🎓  
 * **Best More Accessible Book:** "What to Expect the First Year" by Heidi Murkoff. This book is a very common and easy to read guide that many new parents use. 👶  
   
 ## 💬 [Gemini](https://gemini.google.com) Prompt  

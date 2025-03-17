@@ -7,6 +7,7 @@ URL: https://bagrounds.org/books
 ---
 [Home](../index.md)  
 # Books  
+- [23 Things They Don't Tell You About Capitalism](./23-things-they-dont-tell-you-about-capitalism.md)  
 - [A Thousand Brains](./a-thousand-brains.md)  
 - [Accelerate](./accelerate.md)  
 - [Algorithms to Live By: The Computer Science of Human Decisions](./algorithms-to-live-by.md)  
@@ -92,6 +93,7 @@ URL: https://bagrounds.org/books
 - [Probability Theory](./probability-theory.md)  
 - [Range](./range.md)  
 - [Rapport](./rapport.md)  
+- [Reclaiming the State](./reclaiming-the-state.md)  
 - [River of the Gods: Genius, Belief, and Betrayal in the Search for the Source of the Nile](./river-of-the-gods.md)  
 - [Sapiens: A Brief History of Humankind](./sapiens-a-brief-history-of-humankind.md)  
 - [Seven Sketches in Compositionality](./seven-sketches-in-compositionality.md)  

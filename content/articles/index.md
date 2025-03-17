@@ -13,7 +13,7 @@ title: Articles
 - [Musical intervention enhances infants’ neural processing of temporal structure in music and speech](./musical-intervention-enhances-infants-neural-processing-of-temporal-structure-in-music-and-speech.md)  
 - [Project 2025 and education: A lot of bad ideas, some more actionable than others](./project-2025-and-education-a-lot-of-bad-ideas-some-more-actionable-than-others.md)  
 - [Safe Sleep for Breastfeeding Babies](./safe-sleep-for-breastfeeding-babies.md)  
-- [Snohomish County schools react to education department firings](./Snohomish%20County%20schools%20react%20to%20education%20department%20firings.md)  
+- [Snohomish County schools react to education department firings](./snohomish-county-schools-react-to-education-department-firings.md)  
 - [The Log: What every software engineer should know about real-time data's unifying abstraction](./the-log-what-every-software%20engineer-should-know-about-real-time-datas-unifying-abstraction.md)  
 - [Treatment of Feline Gastrointestinal Small-Cell Lymphoma With Chlorambucil and Glucocorticoids](./treatment-of-feline-gastrointestinal-small-cell-lymphoma-with-chlorambucil-and-glucocorticoids.md)  
   

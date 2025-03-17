@@ -3,7 +3,7 @@ share: true
 aliases:
   - Snohomish County schools react to education department firings
 title: Snohomish County schools react to education department firings
-URL: https://bagrounds.org/articles/Snohomish County schools react to education department firings
+URL: https://bagrounds.org/articles/snohomish-county-schools-react-to-education-department-firings
 Author: 
 tags: 
 ---

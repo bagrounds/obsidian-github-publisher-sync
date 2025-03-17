@@ -38,6 +38,7 @@ URL: https://bagrounds.org/videos
 - [It’s actually pretty easy to get ahead of 99% of people.](./it-is-actually-pretty-easy-to-get-ahead-of-99-percent-of%20people.md)  
 - [Judea Pearl, 2011 ACM Turing Award Recipient](./judea-pearl-2011-acm-turing-award-recipient.md)  
 - [Judea Pearl, 2012 ACM A.M. Turing Award Lecture «The Mechanization of Causal Inference»](./judea-pearl-2012-acm-a-m-turing-award-lecture-the-mechanization-of-causal-inference.md)  
+- [Just the Facts About the US Federal Budget: Steve Ballmer Talks Through the Numbers](./just-the-facts-about-the-us-federal-budget-steve-ballmer-talks-through-the-numbers.md)  
 - [Learn how to boost your baby's brain from a Harvard Professor | UNICEF](./learn-how-to-boost-your-baby-s-brain-from-a-harvard-professor-unicef.md)  
 - [Most Tech Interview Prep is GARBAGE. (From a Principal Engineer at Amazon)](./most-tech-interview-prep-is-garbage-from-a-principal-engineer-at-amazon.md)  
 - [Murphy: Six Weeks In, This White House Is On Its Way To Being The Most Corrupt In U.S. History](./murphy-six-weeks-in-this-white-house-is-on-its-way-to-being-the-most-corrupt-in-u-s-history.md)  

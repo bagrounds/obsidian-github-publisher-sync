@@ -5,20 +5,20 @@ aliases:
 title: Humanities
 URL: https://bagrounds.org/topics/humanities
 ---
-[Home](../index.md) > [Topics](./index.md)  
+[Home](../index.md) > [Topics](./index.md) > [Knowledge](./a-hierarchical-view-of-human-knowledge.md)  
 # Humanities  
 ## 🤖 AI Summary  
 **High-Level Summary:**  
 The Humanities are the study of what makes us human. 🧠 They explore the human experience through analysis of human values, abilities, and unique expressions. 🎭 They delve into the past, present, and future of human culture, seeking to understand and interpret the world through critical thinking, creativity, and empathy. 🌍 The Humanities aim to foster a deeper understanding of ourselves and our place in the world, promoting critical thinking, ethical reasoning, and a broader perspective on life. ✨  
   
 **Subcategories:**  
-* **Philosophy:** (🤔) The study of fundamental questions about existence, knowledge, values, reason, mind, and language. It seeks to understand the nature of reality and human thought.  
+* **[Philosophy](./philosophy.md):** (🤔) The study of fundamental questions about existence, knowledge, values, reason, mind, and language. It seeks to understand the nature of reality and human thought.  
 * **History:** (📜) The study of the past, focusing on analyzing and interpreting past events, societies, and cultures. It helps us understand how the past shapes the present.  
 * **Literature:** (📚) The study of written works, including poetry, novels, plays, and essays. It explores human experiences, emotions, and ideas through language and storytelling.  
 * **Religious Studies:** (🙏) The study of religious beliefs, practices, and institutions. It examines the role of religion in human societies and cultures.  
 * **Art History & Visual Arts:** (🎨) The study of the history and development of visual arts, including painting, sculpture, architecture, and photography. It explores how art reflects and shapes culture.  
 * **Performing Arts:** (🎭) The study of disciplines such as theater, dance, and music. It examines how these forms of expression communicate meaning and evoke emotion.  
-* **Linguistics:** (🗣️) The scientific study of language, including its structure, evolution, and use. It explores how language shapes human thought and communication.  
+* **[Linguistics](./linguistics.md):** (🗣️) The scientific study of language, including its structure, evolution, and use. It explores how language shapes human thought and communication.  
 * **Anthropology:** (🧍) The study of human societies and cultures, both past and present. It examines the diversity of human experience and the factors that shape it.  
 * **Archaeology:** (⛏️) The study of past human societies through the analysis of material remains, such as artifacts and structures. It provides insights into the lives of past peoples.  
   

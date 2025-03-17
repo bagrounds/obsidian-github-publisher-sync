@@ -5,7 +5,7 @@ aliases:
 title: Science
 URL: https://bagrounds.org/topics/science
 ---
-[Home](../index.md) > [Topics](./index.md)  
+[Home](../index.md) > [Topics](./index.md) > [Knowledge](./a-hierarchical-view-of-human-knowledge.md)  
 # Science  
 ## 🤖 AI Summary  
 **Science** 🧪🔬🔭  

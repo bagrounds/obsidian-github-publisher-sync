@@ -5,7 +5,7 @@ aliases:
 title: Social Sciences
 URL: https://bagrounds.org/topics/social-sciences
 ---
-[Home](../index.md) > [Topics](./index.md)  
+[Home](../index.md) > [Topics](./index.md) > [Knowledge](./a-hierarchical-view-of-human-knowledge.md)  
 # Social Sciences  
 ## 🤖 AI Summary  
 **High-Level Summary:**  

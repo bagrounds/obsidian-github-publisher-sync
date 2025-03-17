@@ -5,7 +5,7 @@ aliases:
 title: Economics
 URL: https://bagrounds.org/topics/economics
 ---
-[Home](../index.md) > [Topics](./index.md)  
+[Home](../index.md) > [Topics](./index.md) > [Knowledge](./a-hierarchical-view-of-human-knowledge.md) > [Social Sciences](./social-sciences.md)  
 # Economics  
 ## 🤖 AI Summary  
 **High-Level Summary:**  

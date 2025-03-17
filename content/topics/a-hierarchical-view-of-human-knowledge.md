@@ -14,13 +14,14 @@ Human knowledge can be conceptually organized into a hierarchical structure, whe
   
 **Top-Level Categories of Human Knowledge:**  
 * [Science](./science.md) 🔬  
-* Mathematics 🔢  
-* Technology 💻  
+* [Mathematics](./math.md) 🔢  
+* [Engineering](./engineering.md) 🚂  
+* [Technology](./technology.md) 💻  
 * [Humanities](./humanities.md) 📜  
 * [Social Sciences](./social-sciences.md) 👥  
 * Arts 🎨  
 * Religion 🙏  
-* Philosophy 🤔  
+* [Philosophy](./philosophy.md) 🤔  
   
 **Justification for This Set of Categories:**  
 These categories are chosen as the top level because they represent:  

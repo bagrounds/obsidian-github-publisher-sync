@@ -5,7 +5,7 @@ aliases:
 title: Modern Monetary Theory
 URL: https://bagrounds.org/topics/modern-monetary-theory
 ---
-[Home](../index.md) > [Topics](./index.md)  
+[Home](../index.md) > [Topics](./index.md) > [Knowledge](./a-hierarchical-view-of-human-knowledge.md) > [Social Sciences](./social-sciences.md) > [Economics](./economics.md) > [Heterodox Economics](./heterodox-economics.md)  
 # Modern Monetary Theory  
 ## 🤖 AI Summary  
 **High-Level Summary:**  

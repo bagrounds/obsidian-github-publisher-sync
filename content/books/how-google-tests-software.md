@@ -61,7 +61,7 @@ tags:
 * **Best Fiction Book That Incorporates Related Ideas:** "Daemon" by Daniel Suarez. This thriller explores the potential consequences of complex software systems and their interactions with the real world, touching on themes of software reliability and security. 🤖  
 * **Best Book That Is More General:** "Clean Code: A Handbook of Agile Software Craftsmanship" by Robert C. Martin. This book provides general advice on writing clean, maintainable code, which is essential for effective testing. 🧹  
 * **Best Book That Is More Specific:** "Effective Software Testing: 50 Specific Ways to Improve Your Testing" by Elfriede Dustin. This book offers practical tips and techniques for improving software testing practices. 🎯  
-* **Best Book That Is More Rigorous:** "Foundations of Software Testing" by Aditya P. Mathur. This book provides a more theoretical and mathematical approach to software testing. 🎓  
+* **Best Book That Is More Rigorous:** "[Foundations of Software Testing](./foundations-of-software-testing.md)" by Aditya P. Mathur. This book provides a more theoretical and mathematical approach to software testing. 🎓  
 * **Best Book That Is More Accessible:** "Explore It!: Reduce Risk and Increase Confidence with Exploratory Testing" by Elisabeth Hendrickson. This book offers a practical and accessible introduction to exploratory testing. 🗺️  
   
 ## 💬 [Gemini](https://gemini.google.com) Prompt  

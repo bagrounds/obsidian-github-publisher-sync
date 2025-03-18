@@ -79,6 +79,6 @@ URL: https://bagrounds.org/videos
 - [What makes something memorable?](./what-makes-something-memorable.md)  
 - [You Are Two](./you-are-two.md)  
 - [You Don’t Understand How Language Works](./you-dont-understand-how-language-works.md)  
-- [You're Not Stupid: How To Never Lose Focus Again](./You're%20Not%20Stupid%20How%20To%20Never%20Lose%20Focus%20Again.md)  
+- [You're Not Stupid: How To Never Lose Focus Again](./youre-not-stupid-how-to-never-lose-focus-again.md)  
 - [Your Theme](./your-theme.md)  
   

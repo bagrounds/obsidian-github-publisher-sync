@@ -2,6 +2,7 @@
 aliases:
   - Andrej Karpathy
 share: true
+title: Andrej Karpathy
 ---
 [Home](../index.md) > [People](./index.md)  
 # Andrej Karpathy  

@@ -6,10 +6,10 @@ aliases:
 ---
 [Home](../index.md)  
 # People  
+- [Andrej Karpathy](./andrej-karpathy.md)  
 - [Jay Kreps](./jay-kreps.md)  
 - [Nicholas Dodman](./nicholas-dodman.md)  
 - [Russell Ackoff](./russell-ackoff.md)  
-- [W Edwards Deming](./w-edwards-deming.md)  
 - [Tim Berners-Lee](./tim-berners-lee.md)  
-- [andrej-karpathy](./andrej-karpathy.md)  
+- [W Edwards Deming](./w-edwards-deming.md)  
   

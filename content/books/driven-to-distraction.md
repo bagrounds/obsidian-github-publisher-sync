@@ -50,7 +50,7 @@ tags:
   
 ### Additional Book Recommendations 📚  
 * **Best alternate book on the same topic:** "Scattered Minds: The Origins and Healing of Attention Deficit Disorder" by Gabor Maté. This book focuses on the emotional and developmental roots of ADHD. 🧠  
-* **Best book that is tangentially related:** "The Power of Habit: Why We Do What We Do in Life and Business" by Charles Duhigg. This book explores how habits are formed and how to change them, which is highly relevant for managing ADHD. 🔄  
+* **Best book that is tangentially related:** "[The Power of Habit](./the-power-of-habit.md): Why We Do What We Do in Life and Business" by Charles Duhigg. This book explores how habits are formed and how to change them, which is highly relevant for managing ADHD. 🔄  
 * **Best book that is diametrically opposed:** "The Organized Mind: Thinking Straight in the Age of Information Overload" by Daniel J. Levitin. This book focuses on the importance of organization and focus in a world of distractions, a stark contrast to the ADHD experience. 🗂️  
 * **Best fiction book that incorporates related ideas:** "Percy Jackson & the Olympians" series by Rick Riordan. The main character, Percy, has ADHD and dyslexia, which are framed as signs of being a demigod. ⚡  
 * **Best book that is more general:** "[Thinking, Fast and Slow](./thinking-fast-and-slow.md)" by Daniel Kahneman. This book explores the two systems of thinking and decision-making, providing a broader understanding of cognitive processes. 🤔  

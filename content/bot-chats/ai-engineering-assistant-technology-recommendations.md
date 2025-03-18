@@ -15,7 +15,7 @@ URL: https://bagrounds.org/bot-chats/ai-engineering-assistant-technology-recomme
 Based on your notes, here are some technologies you could consider starting with for your AI Engineering Assistant project:  
   
 **1. Local LLM Infrastructure:**  
-- **Ollama:** You've already started with this, which is a great foundation. Explore its capabilities further. Experiment with different model sizes and configurations to understand its strengths and limitations.  
+- **[Ollama](../software/ollama.md):** You've already started with this, which is a great foundation. Explore its capabilities further. Experiment with different model sizes and configurations to understand its strengths and limitations.  
 - **vLLM:** Known for its high performance and efficiency, especially on GPUs. Consider it if performance is a critical factor.  
 - **Explore other local LLM options:** Research alternatives like **aprhodite** or **TGI** to see if they better suit your specific needs.  
   

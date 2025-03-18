@@ -10,7 +10,7 @@ Channel: What The Func? w/ Ed Zynda
 tags: 
 ---
 [Home](../index.md) > [Videos](./index.md)  
-# Anthropic MCP + Ollama. No Claude Needed? Check it out!  
+# Anthropic MCP + [Ollama](../software/ollama.md). No Claude Needed? Check it out!  
 ![Anthropic MCP + Ollama. No Claude Needed? Check it out!](https://youtu.be/2zAUXs1Z9vA)  
   
 ## AI Summary  

@@ -72,7 +72,7 @@ tags:
   
 ### Additional Book Recommendations 📚  
 * **Best Alternate Book on the Same Topic:** "Built to Last" by Jim Collins and Jerry I. Porras. This book examines what makes truly enduring companies. 🏢  
-* **Best Tangentially Related Book:** "The 7 Habits of Highly Effective People" by Stephen R. Covey. It focuses on personal effectiveness and character development, which are essential for Level 5 leadership. 👤  
+* **Best Tangentially Related Book:** "[The 7 Habits of Highly Effective People](./the-7-habits-of-highly-effective-people.md)" by Stephen R. Covey. It focuses on personal effectiveness and character development, which are essential for Level 5 leadership. 👤  
 * **Best Diametrically Opposed Book:** "[The Lean Startup](./the-lean-startup.md)" by Eric Ries. It emphasizes rapid experimentation and pivoting, contrasting with the disciplined, long-term approach of "Good to Great". 🧪  
 * **Best Fiction Book That Incorporates Related Ideas:** "The Goal" by Eliyahu M. Goldratt. It teaches about the theory of constraints and the importance of focusing on key bottlenecks, which aligns with the Hedgehog Concept. 🏭  
 * **Best Book That Is More General:** "[Thinking, Fast and Slow](./thinking-fast-and-slow.md)" by Daniel Kahneman. Provides an excellent understanding of how humans think, which is useful for all aspects of leadership. 🧠  

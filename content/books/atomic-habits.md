@@ -45,7 +45,7 @@ tags:
 - Track your habits to maintain consistency. 📊  
   
 ### Book Recommendations 📚  
-- **Best Alternate Book on the Same Topic:** "The Power of Habit" by Charles Duhigg. This book provides a broader perspective on the science of habit formation and its impact on individuals, organizations, and societies. 🔄  
+- **Best Alternate Book on the Same Topic:** "[The Power of Habit](./the-power-of-habit.md)" by Charles Duhigg. This book provides a broader perspective on the science of habit formation and its impact on individuals, organizations, and societies. 🔄  
 - **Best Book Tangentially Related:** "[Thinking, Fast and Slow](./thinking-fast-and-slow.md)" by Daniel Kahneman. This book delves into the cognitive biases and mental shortcuts that influence our decision-making, providing valuable insights into how our minds work. 🧠  
 - **Best Book Diametrically Opposed:** "The 5 Second Rule" by Mel Robbins. This book advocates for immediate action and pushing through resistance, which contrasts with Clear's emphasis on gradual change. ⚡  
 - **Best Fiction Book That Incorporates Related Ideas:** "The Compound Effect" by Darren Hardy. Although technically non-fiction, it reads like a narrative, and beautifully illustrates the power of small, consistent actions over time. 📖  

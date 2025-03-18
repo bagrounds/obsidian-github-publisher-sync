@@ -72,7 +72,7 @@ _How to Get Life Back Into Work to Build the High-Performance Organization_
 * **Best Book Tangentially Related:**  
     * *[Thinking in Systems](./thinking-in-systems.md): A Primer* by Donella H. Meadows. This book provides a foundational understanding of systems thinking, which is essential for comprehending complexity. 🔄  
 * **Best Books Diametrically Opposed:**  
-    * *The 7 Habits of Highly Effective People* by Stephen R. Covey. While a classic, this book largely focuses on individual effectiveness within existing systems, rather than challenging those systems themselves. 👤  
+    * *[The 7 Habits of Highly Effective People](./the-7-habits-of-highly-effective-people.md)* by Stephen R. Covey. While a classic, this book largely focuses on individual effectiveness within existing systems, rather than challenging those systems themselves. 👤  
     * *Principles* by Ray Dalio – Advocates for strong, centralized decision-making frameworks and clearly defined rules within organizations.  
 * **Best Fiction Books That Incorporates Related Ideas:**  
     * *The Dispossessed* by Ursula K. Le Guin. This science fiction novel explores a society organized around anarchist principles, offering a thought-provoking perspective on alternative social structures. 👽  

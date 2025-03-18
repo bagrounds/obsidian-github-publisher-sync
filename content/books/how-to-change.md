@@ -62,7 +62,7 @@ tags:
 **Additional Book Recommendations:** 📚  
 * **Best Alternate Book on the Same Topic:** "[Atomic Habits](./atomic-habits.md)" by James Clear. This book also focuses on habit formation but with a different set of frameworks. ⚛️  
 * **Best Book Tangentially Related:** "[Thinking, Fast and Slow](./thinking-fast-and-slow.md)" by Daniel Kahneman. This book provides a deeper understanding of the cognitive biases that influence behavior. 🧠  
-* **Best Book Diametrically Opposed:** "The Power of Habit" by Charles Duhigg. While valuable, Duhigg's approach leans more on identifying and changing existing habits, while Milkman focuses on overcoming specific barriers. 🔄  
+* **Best Book Diametrically Opposed:** "[The Power of Habit](./the-power-of-habit.md)" by Charles Duhigg. While valuable, Duhigg's approach leans more on identifying and changing existing habits, while Milkman focuses on overcoming specific barriers. 🔄  
 * **Best Fiction Book Incorporating Related Ideas:** "The Martian" by Andy Weir. The protagonist's success relies heavily on problem-solving, adaptability, and creating new habits in extreme circumstances. 🚀  
 * **Best Book More General:** "[Drive: The Surprising Truth About What Motivates Us](./drive-the-surprising-truth-about-what-motivates-us.md)" by Daniel H. Pink. This book explores the broader spectrum of motivation. 🚗  
 * **Best Book More Specific:** "[Tiny Habits](./tiny-habits.md): The Small Changes That Change Everything" by BJ Fogg. This book provides a very specific and detailed approach to habit formation. 🤏  

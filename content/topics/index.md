@@ -9,8 +9,10 @@ URL: https://bagrounds.org/topics
 # Topics  
 - [A Hierarchical View of Human Knowledge](./a-hierarchical-view-of-human-knowledge.md)  
 - [A Method For Estimating Work](./a-method-for-estimating-work.md)  
+- [Adaptive Control](./adaptive-control.md)  
 - [Barbecue Ribs Recipe](../../barbecue-ribs-recipe.md)  
 - [Computer Science](./computer-science.md)  
+- [Control Systems](./control-systems.md)  
 - [Design a Performance Self-Evaluation System](./design-a-performance-self-evaluation-system.md)  
 - [Digital Twin](./digital-twin.md)  
 - [Economics](./economics.md)  
@@ -36,6 +38,7 @@ URL: https://bagrounds.org/topics
 - [Programming Languages](./programming-languages.md)  
 - [Programming Problems](./programming-problems/index.md)  
 - [Property Based Testing](./property-based-testing.md)  
+- [Reinforcement Learning based Adaptive Control](./reinforcement-learning-based-adaptive-control.md)  
 - [Rules](./rules.md)  
 - [Science](./science.md)  
 - [Social Sciences](./social-sciences.md)  

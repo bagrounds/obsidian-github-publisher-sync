@@ -51,6 +51,7 @@ Subcategories: A list of the major subcategories or branches within this categor
 Book Recommendations: A selection of 3-5 influential or accessible books that provide a good introduction to this category or its key subcategories.  
 Use lots of emojis.  
   
+## [Software](../software/index.md)  
 ## Topics  
 - Programming  
   - Languages  

@@ -29,6 +29,7 @@ URL: https://bagrounds.org/videos
 - [How AI Cracked the Protein Folding Code and Won a Nobel Prize](./how-ai-cracked-the-protein-folding-code-and-won-a-nobel-prize.md)  
 - [How I use LLMs](./how-i-use-llms.md)  
 - [How the Elite rigged Society (and why it’s falling apart) | David Brooks](./how-the-elite-rigged-society-and-why-it-s-falling-apart-david-brooks.md)  
+- [How to Become an Expert in ANYTHING - The Dunning Kruger Effect](./how-to-become-an-expert-in-anything-the-dunning-kruger-effect.md)  
 - [How to Force Your Brain To Be Motivated (when you don’t feel like it)](./how-to-force-your-brain-to-be-motivated-when-you-dont-feel-like-it.md)  
 - [How to hack your brain to crave doing hard things.](./how-to-hack-your-brain-to-crave-doing-hard-things.md)  
 - [How to Reduce Bone Injury Risks | Running Science](./how-to-reduce-bone-injury-risks-running-science.md)  
@@ -78,5 +79,6 @@ URL: https://bagrounds.org/videos
 - [What makes something memorable?](./what-makes-something-memorable.md)  
 - [You Are Two](./you-are-two.md)  
 - [You Don’t Understand How Language Works](./you-dont-understand-how-language-works.md)  
+- [You're Not Stupid: How To Never Lose Focus Again](./You're%20Not%20Stupid%20How%20To%20Never%20Lose%20Focus%20Again.md)  
 - [Your Theme](./your-theme.md)  
   

@@ -11,4 +11,6 @@ title: Software
 - [redis](./redis.md)  
 - [ollama](./ollama.md)  
 - [open-webui](./open-webui.md)  
+- [obsidian](./obsidian.md)  
+- [vensim](./vensim.md)  
   

@@ -62,8 +62,8 @@ tags:
 * **Best Diametrically Opposed Book:** "The Subtle Art of Not Giving a F\*ck" by Mark Manson 🤷. While not directly opposed, it offers a contrasting perspective on taking responsibility and accepting limitations 🧘, which can be relevant to changing habits 🛠️.  
 * **Best Fiction Book That Incorporates Related Ideas:** "1984" by George Orwell 👁️. This novel explores how societal habits and propaganda 📢 can be used to control individuals and shape behavior 👤.  
 * **Best More General Book:** "[Drive: The Surprising Truth About What Motivates Us](./drive-the-surprising-truth-about-what-motivates-us.md)" by Daniel H. Pink 🚗. This book explores general motivations 🌟, which habits can greatly influence 🔁.  
-* **Best More Specific Book:** "Better Than Before: What I Learned About Making and Breaking Habits—to Sleep More, Quit Sugar, Procrastinate Less, and Generally Build a Happier Life" by Gretchen Rubin 🏠. This book is very specific to individual habit changes 🛠️.  
-* **Best More Rigorous Book:** "Incognito: The Secret Lives of the Brain" by David Eagleman 🧠. This book goes into much more detail about the brain 🧠, and the brains ability to automate tasks 🤖.  
+* **Best More Specific Book:** "[Better Than Before: What I Learned About Making and Breaking Habits - to Sleep More, Quit Sugar, Procrastinate Less, and Generally Build a Happier Life](./better-than-before.md)" by Gretchen Rubin 🏠. This book is very specific to individual habit changes 🛠️.  
+* **Best More Rigorous Book:** "[Incognito: The Secret Lives of the Brain](./incognito.md)" by David Eagleman 🧠. This book goes into much more detail about the brain 🧠, and the brains ability to automate tasks 🤖.  
 * **Best More Accessible Book:** "[Tiny Habits](./tiny-habits.md): The Small Changes That Change Everything" by BJ Fogg 👶. This book breaks down habit formation into very small and easy to achieve steps 👣.  
   
 ## 💬 [Gemini](https://gemini.google.com) Prompt  

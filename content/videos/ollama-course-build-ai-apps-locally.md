@@ -11,5 +11,5 @@ tags:
 ---
   
 [Home](../index.md) > [Videos](./index.md)  
-# Ollama Course – Build AI Apps Locally  
+# [Ollama](../software/ollama.md) Course – Build AI Apps Locally  
 ![Ollama Course – Build AI Apps Locally](https://youtu.be/GWB9ApTPTv4)  

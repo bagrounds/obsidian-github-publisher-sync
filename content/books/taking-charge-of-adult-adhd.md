@@ -68,7 +68,7 @@ Barkley's book offers a perspective that emphasizes ADHD as a disorder of execut
   
 #### Additional Book Recommendations 📚  
 * **Best Alternate Book on the Same Topic:** "[Driven to Distraction](./driven-to-distraction.md) (Revised): Recognizing and Coping with Attention Deficit Disorder from Childhood Through Adulthood" by Edward M. Hallowell and John J. Ratey. This is another classic book on ADHD, offering a more narrative and personal approach. 📖  
-* **Best Tangentially Related Book:** "The Power of Habit: Why We Do What We Do in Life and Business" by Charles Duhigg. This book explores the science of habit formation, which is crucial for managing ADHD. 🔄  
+* **Best Tangentially Related Book:** "[The Power of Habit](./the-power-of-habit.md): Why We Do What We Do in Life and Business" by Charles Duhigg. This book explores the science of habit formation, which is crucial for managing ADHD. 🔄  
 * **Best Diametrically Opposed Book:** "The Myth of ADHD and Other Learning Disabilities" by Richard Saul. This book challenges the diagnosis of ADHD and offers alternative explanations for attention and learning difficulties. 🤨  
 * **Best Fiction Book That Incorporates Related Ideas:** "Percy Jackson & the Olympians" series by Rick Riordan. The main character, Percy, exhibits many traits of ADHD and dyslexia, which are framed as strengths in the context of the story. ⚡  
 * **Best More General Book:** "Scattered Minds: The Origins and Healing of Attention Deficit Disorder" by Gabor Maté. This book explores the emotional and developmental roots of ADHD. 🧠  

@@ -57,7 +57,7 @@ Eyal's work is grounded in behavioral psychology and draws from established rese
 * **Best Fiction Book That Incorporates Related Ideas:** "The Circle" by Dave Eggers. ⭕ (Explores the dangers of constant connectivity and the erosion of privacy.)  
 * **Best More General Book:** "[Thinking, Fast and Slow](./thinking-fast-and-slow.md)" by Daniel Kahneman. 🧠 (Explores the two systems of thinking and their impact on decision-making.)  
 * **Best More Specific Book:** "Hooked: How to Build Habit-Forming Products" by Nir Eyal. 🎣 (Focuses on the psychology of habit formation in product design.)  
-* **Best More Rigorous Book:** "Willpower: Rediscovering the Greatest Human Strength" by Roy F. Baumeister and John Tierney. 💪 (Provides a more in-depth, research-based exploration of willpower and self-control.)  
+* **Best More Rigorous Book:** "[Willpower](./willpower.md): Rediscovering the Greatest Human Strength" by Roy F. Baumeister and John Tierney. 💪 (Provides a more in-depth, research-based exploration of willpower and self-control.)  
 * **Best More Accessible Book:** "The Power of Habit: Why We Do What We Do in Life and Business" by Charles Duhigg. 💡 (Explains the science of habit formation in a clear and engaging way.)  
   
 ## 💬 [Gemini](https://gemini.google.com) Prompt  

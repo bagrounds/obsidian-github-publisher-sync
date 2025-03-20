@@ -3,7 +3,7 @@ share: true
 aliases:
   - Express.js
 title: Express.js
-URL: https://bagrounds.org/software/express-js
+URL: https://bagrounds.org/software/express
 ---
 [Home](../index.md) > [Software](./index.md)  
 # Express.js  

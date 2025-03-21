@@ -19,7 +19,7 @@ Here are the major subcategories, including Computer Science as a foundational e
     * Focuses on defining, documenting, and managing the needs of users and stakeholders. It's about understanding what the software should do. 📝🔍  
 * **Software Design:**  
     * Involves creating the blueprint of the software, including its architecture, components, and interfaces. It's about planning how the software will be built. 🏗️📐  
-* **Software Development/Coding:**  
+* **[Software Development and Coding](./software-development-and-coding.md):**  
     * The actual process of writing the code that implements the design. This involves choosing programming languages, tools, and frameworks. 💻⌨️  
 * **[Software Testing and Quality Assurance](./software-testing-and-quality-assurance.md) (QA):**  
     * Ensuring that the software meets its requirements and is free of defects. This includes various testing techniques, like unit testing, integration testing, and system testing. 🐞✔️  

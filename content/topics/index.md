@@ -50,6 +50,7 @@ URL: https://bagrounds.org/topics
 - [Rules](./rules.md)  
 - [Science](./science.md)  
 - [Social Sciences](./social-sciences.md)  
+- [Software Development and Coding](./software-development-and-coding.md)  
 - [Software Engineering](./software-engineering.md)  
 - [Software Testing and Quality Assurance](./software-testing-and-quality-assurance.md)  
 - [Static APIs](./static-apis.md)  

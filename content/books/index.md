@@ -36,6 +36,7 @@ URL: https://bagrounds.org/books
 - [Corruption and Illiberal Politics in the Trump Era](./corruption-and-illiberal-politics-in-the-trump-era.md)  
 - [Cribsheet](./cribsheet.md)  
 - [Cybernetics](./cybernetics.md)  
+- [Debugging: The 9 Indispensable Rules for Finding Even the Most Elusive Software and Hardware Problems](./debugging.md)  
 - [Deep Learning](./deep-learning.md)  
 - [Deep Work](./deep-work.md)  
 - [Designing Data-Intensive Applications](./designing-data-intensive-applications.md)  

@@ -21,7 +21,7 @@ Here's a breakdown of major subcategories:
 * **[Economics](./economics.md):** 💰 The study of the production, distribution, and consumption of goods and services. It analyzes how individuals, businesses, and governments make choices.  
 * **Geography:** 🗺️ The study of the Earth's surface, its physical features, inhabitants, and phenomena. It explores the relationships between people and their environments.  
 * **History:** 📜 The study of past events, particularly in human affairs. It analyzes and interprets records of human activities.  
-* **Communication Studies:** 🗣️ The study of human communication, including verbal, nonverbal, and mediated forms. It examines how messages are created, transmitted, and interpreted.  
+* **[Communication Studies](./communication-studies.md):** 🗣️ The study of human communication, including verbal, nonverbal, and mediated forms. It examines how messages are created, transmitted, and interpreted.  
 * **Criminology:** 🕵️ The study of crime and criminal behavior. It examines the causes, consequences, and prevention of crime.  
   
 **Book Recommendations:**  

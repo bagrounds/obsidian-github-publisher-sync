@@ -31,8 +31,6 @@ REST, or Representational State Transfer, is an architectural style for designin
   
 🚀 **Notable Capabilities**  
   
-  
-  
 * Resource manipulation: Create, read, update, and delete resources. 🛠️  
 * Stateless communication: Each request is independent. ⚡  
 * Uniform interface: Consistent use of HTTP methods. 🔗  
@@ -127,7 +125,7 @@ REST was introduced by Roy Fielding in his 2000 doctoral dissertation, "Architec
 * More general: "Clean Architecture" by Robert C. Martin. 📚📖  
 * More specific: "Building Microservices" by Sam Newman. 📚📖  
 * Fictional: "Ready Player One" by Ernest Cline (for its depiction of interconnected virtual worlds). 📚📖🎮  
-* Rigorous: "Architectural Styles and the Design of Network-based Software Architectures" by Roy Fielding. 📚📖🎓  
+* Rigorous: "[Architectural Styles and the Design of Network Based Software Architectures](../books/architectural-styles-and-the-design-of-network-based-software-architectures.md)" by Roy Fielding. 📚📖🎓  
 * Accessible: "REST API Design Best Practices Handbook" by Mohamed Taman. 📚📖👍  
   
 📺 **Links To Relevant YouTube Channels Or Videos**  

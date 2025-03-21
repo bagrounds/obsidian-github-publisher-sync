@@ -2,6 +2,7 @@
 share: true
 aliases:
   - A Hierarchical View of Human Knowledge
+  - Knowledge
 title: A Hierarchical View of Human Knowledge
 URL: https://bagrounds.org/topics/a-hierarchical-view-of-human-knowledge
 ---
@@ -19,8 +20,8 @@ Human knowledge can be conceptually organized into a hierarchical structure, whe
 * [Technology](./technology.md) 💻  
 * [Humanities](./humanities.md) 📜  
 * [Social Sciences](./social-sciences.md) 👥  
-* Arts 🎨  
-* Religion 🙏  
+* [Arts](./arts.md) 🎨  
+* [Religion](./religion.md) 🙏  
 * [Philosophy](./philosophy.md) 🤔  
   
 **Justification for This Set of Categories:**  

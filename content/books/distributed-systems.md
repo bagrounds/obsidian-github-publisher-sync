@@ -1,9 +1,9 @@
 ---
 share: true
 aliases:
-  - Distributed Systems
-title: Distributed Systems
-URL: https://bagrounds.org/books/Distributed Systems
+  - "Distributed Systems: Principles and Paradigms"
+title: "Distributed Systems: Principles and Paradigms"
+URL: https://bagrounds.org/books/distributed-systems
 Author: 
 tags: 
 ---

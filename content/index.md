@@ -19,6 +19,7 @@ If you don't know what that means... Welcome to my personal website!
 - [Books](./books/index.md)  
 - [Bot Chats](./bot-chats/index.md)  
 - [People](./people/index.md)  
+- [Software](./software/index.md)  
 - [Topics](./topics/index.md)  
 - [Videos](./videos/index.md)  
   

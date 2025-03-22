@@ -18,7 +18,7 @@ URL: https://bagrounds.org/topics/software-development-and-coding
     * Translating designs and logical concepts into executable code, bringing software to life! 🌟  
 2.  **Code Reading and Comprehension:** 📖🔍  
     * Deciphering and understanding existing code, like reading a digital story 📚. Essential for collaboration and maintenance! 🤝  
-3.  **Code Testing and Validation:** ✅🧪  
+3.  **[Code Testing and Validation](./code-testing-and-validation.md):** ✅🧪  
     * Ensuring code functionality and quality through rigorous testing, catching those pesky bugs! 🐞  
 4.  **Code Debugging and Troubleshooting:** 🐞🔧  
     * Identifying, isolating, and resolving errors in code, like a detective solving a digital mystery! 🕵️‍♂️  

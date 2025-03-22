@@ -9,16 +9,13 @@ title: Tiny Habits
 # Tiny Habits  
 _The Small Changes That Change Everything_  
 ## 🤖 AI Summary  
-### 💬 [Gemini](https://gemini.google.com) Prompt  
-> Summarize the book: Tiny Habits. Start the summary with a TLDR - a single statement that conveys a maximum of the useful information provided in the book. Next, explain how this book may offer a new or surprising perspective. Follow this with a deep dive. Catalogue the topics, methods, and research discussed. Be sure to highlight any significant theories, theses, or mental models proposed. Provide a critical analysis of the quality of the information presented, using scientific backing, author credentials, authoritative reviews, and other markers of high quality information as justification. Emphasize practical takeaways. Make the following additional book recommendations: the best alternate book on the same topic; the best book that is tangentially related; the best book that is diametrically opposed; the best fiction book that incorporates related ideas; and a book that is more general, more specific, or more rigorous than this book. Format your response as markdown, starting at heading level H4, with inline links, for easy copy paste. Use meaningful emojis liberally to enhance readability, especially in headings and as bullets for lists. Do not include broken links or links to commercial sites (e.g. Amazon).  
-  
-#### TLDR  
+### TLDR  
 Tiny Habits: Achieve big changes by starting with incredibly small, easy-to-do habits and anchoring them to existing routines, focusing on positive emotions as a reward rather than willpower.  
   
-#### New or Surprising Perspective 🤯  
+### New or Surprising Perspective 🤯  
 "Tiny Habits" challenges the conventional wisdom of relying on motivation or willpower for behavior change. Instead, it proposes a system where success is practically guaranteed by making habits so small that they are almost effortless. This approach shifts the focus from grand, sweeping changes to incremental, sustainable progress driven by positive emotional reinforcement, revealing that lasting change is less about pushing oneself and more about gentle integration into existing life.  
   
-#### Deep Dive 🔬  
+### Deep Dive 🔬  
 * **Topics and Methods:**  
     * Behavior design: The Fogg Behavior Model (B=MAP)  
     * Tiny habits: Making behaviors incredibly small and easy.  
@@ -55,7 +52,7 @@ Tiny Habits: Achieve big changes by starting with incredibly small, easy-to-do h
     * Focus on ability, not motivation.  
     * Iterate and adjust your tiny habits as needed.  
   
-#### Book Recommendations 📚  
+### Book Recommendations 📚  
 * **Best Alternate Book (Same Topic):** "[Atomic Habits](./atomic-habits.md)" by James Clear: While both books focus on habit formation, "Atomic Habits" offers a more comprehensive framework with a greater emphasis on identity-based habits and systems. 🔄  
 * **Best Tangentially Related Book:** "[Thinking, Fast and Slow](./thinking-fast-and-slow.md)" by Daniel Kahneman: This book explores the cognitive biases that influence decision-making, providing a deeper understanding of the mental processes underlying behavior change. 🧠  
 * **Best Diametrically Opposed Book:** "The Willpower Instinct" by Kelly McGonigal: While "Tiny Habits" minimizes the role of willpower, McGonigal's book emphasizes its importance and provides strategies for strengthening it. ⚔️  
@@ -63,6 +60,9 @@ Tiny Habits: Achieve big changes by starting with incredibly small, easy-to-do h
 * **More General Book:** "[The Power of Habit](./the-power-of-habit.md)" by Charles Duhigg: An exploration of how habits work at the individual, organizational, and societal levels, providing a broader perspective on habit formation. 🌐  
 * **More Specific Book:** "[Indistractable](./indistractable.md): How to Control Your Attention and Choose Your Life" by Nir Eyal: This book focuses on a specific area of habit formation: managing distractions and regaining control of your attention. 🎯  
 * **More Rigorous Book:** "[Nudge](./nudge.md): Improving Decisions About Health, Wealth, and Happiness" by Richard H. Thaler and Cass R. Sunstein: This book delves into the science of choice architecture and how subtle nudges can influence behavior, providing a more academic approach to behavior change. 🤓  
+  
+## 💬 [Gemini](https://gemini.google.com) Prompt  
+> Summarize the book: Tiny Habits. Start the summary with a TLDR - a single statement that conveys a maximum of the useful information provided in the book. Next, explain how this book may offer a new or surprising perspective. Follow this with a deep dive. Catalogue the topics, methods, and research discussed. Be sure to highlight any significant theories, theses, or mental models proposed. Provide a critical analysis of the quality of the information presented, using scientific backing, author credentials, authoritative reviews, and other markers of high quality information as justification. Emphasize practical takeaways. Make the following additional book recommendations: the best alternate book on the same topic; the best book that is tangentially related; the best book that is diametrically opposed; the best fiction book that incorporates related ideas; and a book that is more general, more specific, or more rigorous than this book. Format your response as markdown, starting at heading level H4, with inline links, for easy copy paste. Use meaningful emojis liberally to enhance readability, especially in headings and as bullets for lists. Do not include broken links or links to commercial sites (e.g. Amazon).  
   
 ---  
 **Human Notes**  

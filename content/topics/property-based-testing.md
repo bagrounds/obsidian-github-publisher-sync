@@ -46,12 +46,12 @@ To understand PBT, grasp these core concepts:
 ## ⏳ History of Property Based Testing  
 Property Based Testing was popularized by **QuickCheck**, developed in **Haskell** by Koen Claessen and John Hughes around 2000.  
   
-  * **Early 2000s:** [QuickCheck](https://hackage.haskell.org/package/QuickCheck) emerged, effective in functional languages like Haskell. It tested high-level properties with generated inputs.  
+  * **Early 2000s:** [QuickCheck](../software/quickcheck.md) emerged, effective in functional languages like Haskell. It tested high-level properties with generated inputs.  
   * **Influence and Adoption:** QuickCheck inspired similar frameworks, adopting properties, generators, and shrinking.  
   * **Spread to Other Languages:** PBT libraries appeared in other languages:  
       * [ScalaCheck](https://www.scalacheck.org) for Scala.  
       * [FsCheck](https://github.com/fscheck/FsCheck) for F\#.  
-      * [Hypothesis](https://hypothesis.works/) for Python.  
+      * [Hypothesis](../software/hypothesis.md) for Python.  
       * [jqwik](https://github.com/jqwik-team/jqwik) for Java.  
       * [fast-check](https://github.com/dubzzz/fast-check) for JavaScript.  
   * **Continued Evolution:** PBT evolves with research in:  

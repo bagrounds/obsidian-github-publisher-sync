@@ -13,6 +13,7 @@ URL: https://bagrounds.org/topics
 - [Applied Arts](./applied-arts.md)  
 - [Arts](./arts.md)  
 - [Barbecue Ribs Recipe](../../barbecue-ribs-recipe.md)  
+- [Code Testing and Validation](./code-testing-and-validation.md)  
 - [Communication Studies](./communication-studies.md)  
 - [Computer Science](./computer-science.md)  
 - [Control Systems](./control-systems.md)  

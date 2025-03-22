@@ -11,7 +11,7 @@ URL: https://bagrounds.org/software/quickcheck
 ## 🤖 AI Summary  
 ### QuickCheck  
   
-👉 **What Is It?** QuickCheck is a property-based testing framework. It's a tool that automatically generates test cases based on properties you define, rather than relying on manually written examples. It belongs to the broader class of automated testing tools, specifically within the category of property-based testing.  
+👉 **What Is It?** QuickCheck is a [Property Based Testing](../topics/property-based-testing.md) framework. It's a tool that automatically generates test cases based on properties you define, rather than relying on manually written examples. It belongs to the broader class of automated testing tools, specifically within the category of property-based testing.  
   
 ☁️ **A High Level, Conceptual Overview:**  
   

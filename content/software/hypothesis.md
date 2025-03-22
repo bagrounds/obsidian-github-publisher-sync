@@ -11,7 +11,7 @@ URL: https://bagrounds.org/software/hypothesis
 ## 🤖 AI Summary  
 ### 👉 What Is It?  
   
-Hypothesis is a powerful, property-based testing library for Python. 🐍 It's designed to help you find bugs in your code by generating a wide range of test cases that satisfy the properties you define. 📝 Rather than manually writing individual test cases, you specify the general behavior your code should exhibit, and Hypothesis takes care of the rest! 🤯  
+Hypothesis is a powerful, [Property Based Testing](../topics/property-based-testing.md) library for Python. 🐍 It's designed to help you find bugs in your code by generating a wide range of test cases that satisfy the properties you define. 📝 Rather than manually writing individual test cases, you specify the general behavior your code should exhibit, and Hypothesis takes care of the rest! 🤯  
   
 ### ☁️ A High Level, Conceptual Overview  
   

@@ -11,6 +11,7 @@ title: Software
 - [Cursor](./cursor.md)  
 - [Elastic Search](./elastic-search.md)  
 - [Express.js](./express.md)  
+- [Gemini](./gemini.md)  
 - [Git](./git.md)  
 - [GitHub Copilot for VS Code](./github-copilot-for-vs-code.md)  
 - [Haskell](./haskell.md)  

@@ -6,6 +6,7 @@ title: Articles
 ---
 [Home](../index.md)  
 # Articles  
+- [5 tips on getting started with Gems, your custom AI experts](./5-tips-on-getting-started-with-gems-your-custom-ai-experts.md)  
 - [Cannabis for Pets With Cancer](./cannabis-for-pets-with-cancer.md)  
 - [How Project 2025 Would Devastate Public Education](./how-project-2025-would-devastate-public-education.md)  
 - [Iowa gives final approval to a bill removing gender identity protections despite protests](./iowa-gives-final-approval-to-a-bill-removing-gender-identity-protections-despite-protests.md)  

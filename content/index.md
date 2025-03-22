@@ -10,7 +10,7 @@ Powered by [Obsidian](https://obsidian.md) + [GitHub Publisher](https://github.c
 If you don't know what that means... Welcome to my personal website!  
 ## Original Content  
 - [Reflections](./reflections/index.md) (~Blog)  
-- [2025-03-21](./reflections/2025-03-21.md)  
+- [2025-03-22](./reflections/2025-03-22.md)  
   
 - [My resume](./topics/my-resume.md)  
   

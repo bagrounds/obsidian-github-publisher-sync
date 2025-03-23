@@ -18,6 +18,7 @@ title: Software
 - [Haskell](./haskell.md)  
 - [Hypothesis](./hypothesis.md)  
 - [K6](./k6.md)  
+- [Model Context Protocol](./model-context-protocol.md)  
 - [Obsidian](./obsidian.md)  
 - [Ollama](./ollama.md)  
 - [Open WebUI](./open-webui.md)  

@@ -8,22 +8,31 @@ URL: https://bagrounds.org
 Welcome to the published subset of my Obsidian notes.  
 Powered by [Obsidian](https://obsidian.md) + [GitHub Publisher](https://github.com/ObsidianPublisher/obsidian-github-publisher) + [Quartz](https://quartz.jzhao.xyz)!  
 If you don't know what that means... Welcome to my personal website!  
-## Original Content  
-- [Reflections](./reflections/index.md) (~Blog)  
-- [2025-03-22](./reflections/2025-03-22.md)  
   
+## 🪞 [Reflections](./reflections/index.md) (~Blog)  
+- [2025-03-22 | 🪞 Reflexploration 🚀](./reflections/2025-03-22.md)  
+- [2025-03-21 | 🎤 Presenting | 💻 Programming | 👶 Parenting](./reflections/2025-03-21.md)  
+- [2025-03-20 | 💻 Code | 🎨 Craft | ⚡ Catalyze](./reflections/2025-03-20.md)  
+- [2025-03-18 | 🛠️ Tooling | 🤖 Automation | 🕹️ Control](./reflections/2025-03-18.md)  
+- [2025-03-17 | 🧠 Brains | 📚 Books | 🏗️ Builds](./reflections/2025-03-17.md)  
+  
+  
+## 📄 [Articles](./articles/index.md)  
+  
+## 📚 [Books](./books/index.md)  
+  
+## 🤖 [Bot Chats](./bot-chats/index.md)  
+  
+## 👥 [People](./people/index.md)  
+  
+## 💾 [Software](./software/index.md)  
+  
+## 🌌 [Topics](./topics/index.md)  
+  
+## 📺 [Videos](./videos/index.md)  
+  
+## 🔗 Profiles  
 - [My resume](./topics/my-resume.md)  
-  
-## References  
-- [Articles](./articles/index.md)  
-- [Books](./books/index.md)  
-- [Bot Chats](./bot-chats/index.md)  
-- [People](./people/index.md)  
-- [Software](./software/index.md)  
-- [Topics](./topics/index.md)  
-- [Videos](./videos/index.md)  
-  
-## Profiles  
 - <a href="http://codepen.io/bagrounds"><img style="height:1em; margin:0;" src="https://simpleicons.org/icons/codepen.svg"/> Codepen</a>  
 - <a href="http://www.codewars.com/users/bagrounds"><img style="height:1em; margin:0;" src="https://raw.githubusercontent.com/bagrounds/icons/master/codewars.svg"/> Codewars</a>  
 - <a href="https://www.codingame.com/profile/0d172b10ecb72b81c2bb2646e8be9d8a8930706"><img style="height:1em; margin:0;" src="https://simpleicons.org/icons/codingame.svg"/> CodinGame</a>  

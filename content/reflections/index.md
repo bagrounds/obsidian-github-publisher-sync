@@ -7,7 +7,7 @@ URL: https://bagrounds.org/reflections
 ---
 [Home](../index.md)  
 # 🪞 Reflections  
-- [2025-03-22 | 🪞 Reflecting | 🚀 Exploring](./2025-03-22.md)  
+- [2025-03-22 | 🪞 Reflexploration 🚀](./2025-03-22.md)  
 - [2025-03-21 | 🎤 Presenting | 💻 Programming | 👶 Parenting](./2025-03-21.md)  
 - [2025-03-20 | 💻 Code | 🎨 Craft | ⚡ Catalyze](./2025-03-20.md)  
 - [2025-03-18 | 🛠️ Tooling | 🤖 Automation | 🕹️ Control](./2025-03-18.md)  

@@ -15,7 +15,7 @@ tags:
   
 ## AI Summary  
 ### **Executive Summary (TL;DR)**    
-Anthropic recently introduced the **Model Context Protocol (MCP)**—an open standard enabling **secure, two-way connections** between AI-powered applications and external data sources. The protocol **standardizes tool access** for LLMs, allowing them to **fetch real-time information** from databases, file systems, and web APIs. MCP is designed to be **model-agnostic**, meaning it works with **Anthropic’s Claude, OpenAI’s GPT, local Llama models, and any LLM supporting the specification**.    
+Anthropic recently introduced the **[Model Context Protocol](../software/model-context-protocol.md) (MCP)**—an open standard enabling **secure, two-way connections** between AI-powered applications and external data sources. The protocol **standardizes tool access** for LLMs, allowing them to **fetch real-time information** from databases, file systems, and web APIs. MCP is designed to be **model-agnostic**, meaning it works with **Anthropic’s Claude, OpenAI’s GPT, local Llama models, and any LLM supporting the specification**.    
   
 The video explains:    
 - **How LLMs work and their limitations** (e.g., they can’t access real-time data).    

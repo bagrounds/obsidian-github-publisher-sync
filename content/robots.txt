@@ -1,6 +1,3 @@
----
-share: true
----
 User-agent: *  
 Disallow: /static/contentIndex.json  
   

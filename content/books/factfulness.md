@@ -65,7 +65,7 @@ Factfulness argues that we have a dramatically skewed, pessimistic view of the w
 * **Best Book That Is Tangentially Related:**  
     * "[Thinking, Fast and Slow](./thinking-fast-and-slow.md)" by Daniel Kahneman. This book explores the cognitive biases that influence our thinking, providing a deeper understanding of the mental mechanisms behind our skewed worldview. 🧠  
 * **Best Book That Is Diametrically Opposed:**  
-    * "The Sixth Extinction: An Unnatural History" by Elizabeth Kolbert. While "Factfulness" emphasizes progress, Kolbert's book highlights the devastating impact of human activity on the planet, offering a starkly different perspective. 🌎  
+    * "[The Sixth Extinction](./the-sixth-extinction.md): An Unnatural History" by Elizabeth Kolbert. While "Factfulness" emphasizes progress, Kolbert's book highlights the devastating impact of human activity on the planet, offering a starkly different perspective. 🌎  
 * **Best Fiction Book That Incorporates Related Ideas:**  
     * "The Ministry for the Future" by Kim Stanley Robinson. This novel explores the complexities of climate change and the challenges of achieving global progress, showcasing the interplay between data, politics, and human behavior. 🌍📖  
 * **Random Book That Everyone Should Read:**  

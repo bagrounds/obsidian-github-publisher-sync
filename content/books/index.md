@@ -8,6 +8,7 @@ URL: https://bagrounds.org/books
 [Home](../index.md)  
 # Books  
 - [23 Things They Don't Tell You About Capitalism](./23-things-they-dont-tell-you-about-capitalism.md)  
+- [A Brief History of Time](./a-brief-history-of-time.md)  
 - [A Thousand Brains](./a-thousand-brains.md)  
 - [Accelerate](./accelerate.md)  
 - [Adaptive Control](./adaptive-control.md)  
@@ -161,6 +162,7 @@ URL: https://bagrounds.org/books
 - [The How of Happiness: A Scientific Approach to Getting the Life You Want](./the-how-of-happiness-a-scientific-approach-to-getting-the-life-you-want.md)  
 - [The Informed Parent](./the-informed-parent.md)  
 - [The Innovator's Dilemma](./the-innovators-dilemma.md)  
+- [The Intelligent Investor](./the-intelligent-investor.md)  
 - [The Job Closer](./the-job-closer.md)  
 - [The Lean Startup](./the-lean-startup.md)  
 - [The Mountain is You](./the-mountain-is-you.md)  
@@ -169,6 +171,7 @@ URL: https://bagrounds.org/books
 - [The Power of Habit](./the-power-of-habit.md)  
 - [The Power of Meaning: Crafting a Life That Matters](./the-power-of-meaning.md)  
 - [The Psychology of Money: Timeless lessons on wealth, greed, and happiness](./the-psychology-of-money.md)  
+- [The Richest Man in Babylon](./the-richest-man-in-babylon.md)  
 - [The Righteous Mind](./the-righteous-mind.md)  
 - [The Science Of Mom](./the-science-of-mom.md)  
 - [The Science of Storytelling](./the-science-of-storytelling.md)  

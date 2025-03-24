@@ -9,6 +9,7 @@ URL: https://bagrounds.org/bot-chats
 # Bot Chats  
 - [AI Engineering Assistant Technology Recommendations](./ai-engineering-assistant-technology-recommendations.md)  
 - [Android Local LLMs](./android-local-llms.md)  
+- [Book Explorer 1](./book-explorer-1.md)  
 - [Effective Thought-Action Defusion Techniques](./effective-thought-action-defusion-techniques.md)  
 - [How Much Wood](./how-much-wood.md)  
 - [Obsidian Templater Filename Sanitization](./obsidian-templater-filename-sanitization.md)  

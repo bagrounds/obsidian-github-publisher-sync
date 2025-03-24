@@ -10,9 +10,6 @@ tags:
 [Home](../index.md) > [Books](./index.md)  
 # Thinking in Systems  
 ## 🤖 AI Summaries  
-### 💬 [Gemini](https://gemini.google.com) Prompt  
-> Summarize the book: Thinking in Systems: A Primer. Start the summary with a TLDR - a single statement that conveys a maximum of the useful information provided in the book. Next, explain how this book may offer a new or surprising perspective. Follow this with a deep dive. Catalogue the topics, methods, and research discussed. Be sure to highlight any significant theories, theses, or mental models proposed. Provide a critical analysis of the quality of the information presented, using scientific backing, author credentials, authoritative reviews, and other markers of high quality information as justification. Emphasize practical takeaways. Make the following additional book recommendations: the best alternate book on the same topic; the best book that is tangentially related; the best book that is diametrically opposed; the best fiction book that incorporates related ideas; and a book that is more general, more specific, or more rigorous than this book. Format your response as markdown, starting at heading level H4, with inline links, for easy copy paste. Use meaningful emojis liberally to enhance readability, especially in headings and as bullets for lists. Do not include broken links or links to commercial sites (e.g. Amazon).  
-  
 #### **TLDR**  
 Systems thinking provides a framework for understanding complex, interconnected problems by focusing on relationships, feedback loops, and emergent behaviors, rather than isolated events.  
   
@@ -33,7 +30,7 @@ Systems thinking provides a framework for understanding complex, interconnected 
     * Oscillation: Fluctuations around a set point. 〰️  
     * Limits to growth: The constraints on exponential growth. 🛑  
     * Resilience: The ability of a system to withstand shocks. 💪  
-    * Self-organization: The emergence of complex patterns from simple interactions. 🧩  
+    * [Self-Organization](../topics/self-organization.md): The emergence of complex patterns from simple interactions. 🧩  
 * **Mental Models and Leverage Points:**  
     * Mental models: Our internal representations of the world. 💭  
     * Leverage points: Places within a system where small changes can lead to significant outcomes. 🔑  
@@ -66,11 +63,11 @@ Donella Meadows was an environmental scientist and systems thinker with a strong
 * **Best Fiction Book That Incorporates Related Ideas:** "Dune" by Frank Herbert. This science fiction classic explores complex ecological and social systems, highlighting the interconnectedness of elements and the consequences of actions within those systems. 🏜️  
 * **More General, More Specific, or More Rigorous:**  
     * **More General:** "A Brief History of Everything" by Ken Wilber. This book takes a broad, integrative approach to understanding the evolution of the universe, life, and consciousness, providing a larger context for systems thinking. 🌌  
-    * **More Specific:** "Business Dynamics: Systems Thinking and Modeling for a Complex World" by John Sterman. This more academic text dives deeper into the technical aspects of systems dynamics modeling, with a focus on business applications. 📊  
+    * **More Specific:** "[Business Dynamics](./business-dynamics.md): Systems Thinking and Modeling for a Complex World" by John Sterman. This more academic text dives deeper into the technical aspects of systems dynamics modeling, with a focus on business applications. 📊  
     * **More Rigorous:** "Introduction to Systems Thinking" by Daniel H. Kim. This text provides a more academic and mathematically rigorous approach to systems thinking. ✍️  
   
-### 💬 [ChatGPT](https://chatgpt.com) Prompt  
-> Very briefly summarize the book: Thinking in Systems and make the following additional book recommendations: 1 for the best alternate book on the same topic, 1 for the best book that is tangentially related, 1 for the best book that is diametrically opposed, and 1 for the best fiction book that incorporated related ideas.  
+#### 💬 [Gemini](https://gemini.google.com) Prompt  
+> Summarize the book: Thinking in Systems: A Primer. Start the summary with a TLDR - a single statement that conveys a maximum of the useful information provided in the book. Next, explain how this book may offer a new or surprising perspective. Follow this with a deep dive. Catalogue the topics, methods, and research discussed. Be sure to highlight any significant theories, theses, or mental models proposed. Provide a critical analysis of the quality of the information presented, using scientific backing, author credentials, authoritative reviews, and other markers of high quality information as justification. Emphasize practical takeaways. Make the following additional book recommendations: the best alternate book on the same topic; the best book that is tangentially related; the best book that is diametrically opposed; the best fiction book that incorporates related ideas; and a book that is more general, more specific, or more rigorous than this book. Format your response as markdown, starting at heading level H4, with inline links, for easy copy paste. Use meaningful emojis liberally to enhance readability, especially in headings and as bullets for lists. Do not include broken links or links to commercial sites (e.g. Amazon).  
   
 ### 🤖💬 **Summary of _Thinking in Systems: A Primer_ by Donella H. Meadows**:    
 _Thinking in Systems_ introduces the concept of systems thinking, which focuses on understanding the behavior of complex systems through their components, feedback loops, and interrelationships. Meadows explains how to analyze and influence these systems to solve problems, using concepts like stocks, flows, and feedback to address real-world challenges in fields such as ecology, economics, and society.  
@@ -94,6 +91,9 @@ _Thinking in Systems_ introduces the concept of systems thinking, which focuses 
 4. **Best Fiction Book that Incorporated Related Ideas**:    
     **"The Dispossessed" by Ursula K. Le Guin**    
     This science fiction novel explores societal systems, their flaws, and how feedback loops affect social structures. It provides a fictional narrative that thoughtfully incorporates ideas of systems thinking, focusing on the relationship between two contrasting worlds—one built on capitalism and the other on anarchism.  
+  
+### 💬 [ChatGPT](https://chatgpt.com) Prompt  
+> Very briefly summarize the book: Thinking in Systems and make the following additional book recommendations: 1 for the best alternate book on the same topic, 1 for the best book that is tangentially related, 1 for the best book that is diametrically opposed, and 1 for the best fiction book that incorporated related ideas.  
   
 ### 💬 ChatGPT Prompt  
 > Generate robust code for a concise, obsidian markdown embeddable mermaidjs (v11.4.0) mindmap for the most important concepts from the book Thinking in Systems. Be very concise with words. Illustrate each element with appropriate emojis. Use semicolons at the end of each appropriate line and quote liberally to avoid syntax errors. Check your code to ensure it works and fix the bugs before showing it to me!  

@@ -38,7 +38,7 @@ Melanie Mitchell's "Complexity: A Guided Tour" offers a surprisingly accessible 
 * **Evolution and Adaptation:**  
     * Discusses evolutionary algorithms and genetic algorithms as examples of adaptive systems. 🧬  
     * Explores how evolution can lead to the emergence of complex structures and behaviors. 🐒➡️🧑‍💻  
-    * Introduces the concept of self-organization in biological systems. 🌿  
+    * Introduces the concept of [Self-Organization](../topics/self-organization.md) in biological systems. 🌿  
 * **Information and Computation:**  
     * Explores the relationship between information, computation, and complexity. 💻  
     * Discusses the role of information in self-organization and adaptation. ℹ️  
@@ -54,7 +54,7 @@ Melanie Mitchell's "Complexity: A Guided Tour" offers a surprisingly accessible 
   
 #### **Significant Theories, Theses, and Mental Models 🧠**  
 * **Emergence:** The idea that complex patterns and behaviors can arise from simple interactions. ✨  
-* **Self-Organization:** The spontaneous emergence of order in complex systems. 🔄  
+* **[Self-Organization](../topics/self-organization.md):** The spontaneous emergence of order in complex systems. 🔄  
 * **Adaptation:** The ability of complex systems to change and evolve in response to their environment. 🌿➡️🌳  
 * **Information Processing:** The role of information in shaping the behavior of complex systems. ℹ️  
 * **Nonlinear Dynamics:** The study of systems where small changes can have large and unpredictable effects. 🌀  

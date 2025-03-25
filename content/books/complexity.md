@@ -82,7 +82,7 @@ Melanie Mitchell is a highly respected computer scientist and complexity researc
     * Snow Crash by Neal Stephenson – A cyberpunk novel where the interplay of technology, culture, and individuals mirrors complex adaptive systems.  
 * **Best More General Book:** "[Sapiens: A Brief History of Humankind](./sapiens-a-brief-history-of-humankind.md)" by Yuval Noah Harari. 🧑‍🤝‍🧑  
 * **Best More Specific Book:** "Networks: An Introduction" by Mark Newman. 🕸️  
-* **Best More Rigorous Book:** "Nonlinear Dynamics and Chaos: With Applications to Physics, Biology, Chemistry, and Engineering" by Steven H. Strogatz. 🌀  
+* **Best More Rigorous Book:** "[Nonlinear Dynamics and Chaos](./nonlinear-dynamics-and-chaos.md): With Applications to Physics, Biology, Chemistry, and Engineering" by Steven H. Strogatz. 🌀  
 * **Best More Accessible Book:** "Tangled Nets: How to Solve Your Organization's Toughest Problems Without Changing Everything" by Anne Loehr. 🕸️  
   
 ## 💬 [Gemini](https://gemini.google.com) Prompt  

@@ -52,7 +52,7 @@ tags:
   
 #### Additional Book Recommendations 📚  
 - **Alternate on the Same Topic:**    
-  - **Predictably Irrational** by Dan Ariely    
+  - **[Predictably Irrational](./predictably-irrational.md)** by Dan Ariely    
     *Explores similar themes of human irrationality with engaging experiments and real-world applications.*  
   
 - **Tangentially Related:**    

@@ -55,7 +55,7 @@ tags:
 * **Best fiction book that incorporates related ideas:** "Percy Jackson & the Olympians" series by Rick Riordan. The main character, Percy, has ADHD and dyslexia, which are framed as signs of being a demigod. ⚡  
 * **Best book that is more general:** "[Thinking, Fast and Slow](./thinking-fast-and-slow.md)" by Daniel Kahneman. This book explores the two systems of thinking and decision-making, providing a broader understanding of cognitive processes. 🤔  
 * **Best book that is more specific:** "Delivered from Distraction: Getting the Most out of Life with Attention Deficit Disorder" by Edward M. Hallowell and John J. Ratey. This book is the follow up to "Driven to Distraction," which provides more updated research, and more specific tools. 🛠️  
-* **Best book that is more rigorous:** "Taking Charge of Adult ADHD" by Russell A. Barkley. This book is more scientific and provides more in-depth research on ADHD. 📊  
+* **Best book that is more rigorous:** "[Taking Charge of Adult ADHD](./taking-charge-of-adult-adhd.md)" by Russell A. Barkley. This book is more scientific and provides more in-depth research on ADHD. 📊  
 * **Best book that is more accessible:** "ADHD 2.0: New Science and Essential Strategies for Thriving with Distraction--from Childhood Through Adulthood" by Edward M. Hallowell and John J. Ratey. This is a very recent book which is written in a very accessible way, and is very up to date. 🆕  
   
 ## 💬 [Gemini](https://gemini.google.com) Prompt  

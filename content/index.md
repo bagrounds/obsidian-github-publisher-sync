@@ -10,7 +10,7 @@ Powered by [Obsidian](https://obsidian.md) + [GitHub Publisher](https://github.c
 If you don't know what that means... Welcome to my personal website!  
   
 ## 🪞 [Reflections](./reflections/index.md) (~Blog)  
-- [2025-03-25](./reflections/2025-03-25.md)  
+- [2025-03-25 | 🧮 Math  🤪 Madness 🧘 Mind](./reflections/2025-03-25.md)  
 - [2025-03-24 | 🧬🐱 Cat Rx | 🌀 Sync ⏰ | 🏛️ Cuts ✂️](./reflections/2025-03-24.md)  
 - [2025-03-23 | 🌐 Sitemaps | 🧭 Exploring 📚 Book 🌌 Space](./reflections/2025-03-23.md)  
 - [2025-03-22 | 🕸🪵 Blog 🪞 Reflections | AI 🤖 Book 📚 Exploration 🗺️](./reflections/2025-03-22.md)  

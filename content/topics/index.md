@@ -10,6 +10,7 @@ URL: https://bagrounds.org/topics
 - [A Hierarchical View of Human Knowledge](./a-hierarchical-view-of-human-knowledge.md)  
 - [A Method For Estimating Work](./a-method-for-estimating-work.md)  
 - [Adaptive Control](./adaptive-control.md)  
+- [ANSI escape codes](./ansi-escape-codes.md)  
 - [Applied Arts](./applied-arts.md)  
 - [Arts](./arts.md)  
 - [Code Testing and Validation](./code-testing-and-validation.md)  

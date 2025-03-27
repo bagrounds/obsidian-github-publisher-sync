@@ -87,6 +87,7 @@ URL: https://bagrounds.org/books
 - [Indistractable](./indistractable.md)  
 - [Influence](./influence.md)  
 - [Just Listen](./just-listen.md)  
+- [Knowledge Representation and Reasoning](./knowledge-representation-and-reasoning.md)  
 - [Learn You a Haskell for Great Good!](./learn-you-a-haskell-for-great-good.md)  
 - [Learning To See](./learning-to-see.md)  
 - [Longitude: The True Story of a Lone Genius Who Solved the Greatest Scientific Problem of His Time](./longitude.md)  

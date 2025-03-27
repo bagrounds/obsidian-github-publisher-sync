@@ -15,6 +15,7 @@ title: Software
 - [Git](./git.md)  
 - [GitHub Copilot for VS Code](./github-copilot-for-vs-code.md)  
 - [Google Search Crawl Budget](./google-search-crawl-budget.md)  
+- [Graphiti](./graphiti.md)  
 - [Haskell](./haskell.md)  
 - [Hypothesis](./hypothesis.md)  
 - [K6](./k6.md)  

@@ -110,6 +110,8 @@ URL: https://bagrounds.org/books
 - [Nonviolent Communication](./nonviolent-communication.md)  
 - [Nudge](./nudge.md)  
 - [On Corruption in America: And What Is at Stake](./on-corruption-in-america-and-what-is-at-stake.md)  
+- [On Writing: A Memoir of the Craft](./on-writing.md)  
+- [Onyx Storm](./onyx-storm.md)  
 - [Order Out of Chaos](./order-out-of-chaos.md)  
 - [Organize for Complexity](./organize-for-complexity.md)  
 - [Out Of The Crisis](./out-of-the-crisis.md)  
@@ -205,5 +207,6 @@ URL: https://bagrounds.org/books
 - [Universal Principles of Design](./universal-principles-of-design.md)  
 - [What's Going On in There?: How the Brain and Mind Develop in the First Five Years of Life](./whats-going-on-in-there.md)  
 - [Willpower](./willpower.md)  
+- [Writing Down the Bones](./writing-down-the-bones.md)  
 - [Zero To One](./zero-to-one.md)  
   

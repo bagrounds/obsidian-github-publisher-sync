@@ -110,6 +110,7 @@ URL: https://bagrounds.org/books
 - [Nonviolent Communication](./nonviolent-communication.md)  
 - [Nudge](./nudge.md)  
 - [On Corruption in America: And What Is at Stake](./on-corruption-in-america-and-what-is-at-stake.md)  
+- [Onyx Storm](./onyx-storm.md)  
 - [Order Out of Chaos](./order-out-of-chaos.md)  
 - [Organize for Complexity](./organize-for-complexity.md)  
 - [Out Of The Crisis](./out-of-the-crisis.md)  

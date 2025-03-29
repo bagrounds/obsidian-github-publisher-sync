@@ -51,6 +51,7 @@ URL: https://bagrounds.org/videos
 - [Migrants in U.S. legally and with no criminal history caught up in Trump crackdown](./migrants-in-us-legally-and-with-no-criminal-history-caught-up-in-trump-crackdown.md)  
 - [Most Tech Interview Prep is GARBAGE. (From a Principal Engineer at Amazon)](./most-tech-interview-prep-is-garbage-from-a-principal-engineer-at-amazon.md)  
 - [Murphy: Six Weeks In, This White House Is On Its Way To Being The Most Corrupt In U.S. History](./murphy-six-weeks-in-this-white-house-is-on-its-way-to-being-the-most-corrupt-in-u-s-history.md)  
+- [Nobel-winning economist Joseph Stiglitz on Trump, tariffs and democracy | Front Burner](./nobel-winning-economist-joseph-stiglitz-on-trump-tariffs-and-democracy-front-burner.md)  
 - [NPR and PBS heads face sharp questioning about federal funding during House hearing](./npr-and-pbs-heads-face-sharp-questioning-about-federal-funding-during-house-hearing.md)  
 - [Ollama Course – Build AI Apps Locally](./ollama-course-build-ai-apps-locally.md)  
 - [Optimizing Webservers for High Throughput and Low Latency | Dropbox](./optimizing-webservers-for-high-throughput-and-low-latency-dropbox.md)  

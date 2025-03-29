@@ -11,10 +11,10 @@ tags:
 # Driven to Distraction  
 ## 🤖 AI Summary  
 ### TL;DR 🤯  
-* "Driven to Distraction" explains that Attention Deficit Hyperactivity Disorder (ADHD) in adults is a real, often misunderstood condition, offering practical strategies for managing its challenges through a strengths-based approach.  
+* 📚 "Driven to Distraction" explains that 🧠 Attention Deficit Hyperactivity Disorder (ADHD) in adults 🧑‍💼 is a 💯 real, 🤔 often misunderstood condition, 💡 offering practical strategies for managing its challenges 💪 through a ➕ strengths-based approach.  
   
 ### New or Surprising Perspective 💡  
-* The book reframes ADHD, not as a deficit, but as a unique neurological wiring that, while presenting challenges, also offers potential strengths like creativity, high energy, and spontaneity. It emphasizes that adults with ADHD can lead fulfilling lives by understanding and managing their symptoms, moving away from a solely negative, deficit-based view. This is surprising to many who view ADHD as a childhood disorder that is outgrown.  
+* 📚 The book reframes ADHD, not as a deficit, but as a unique 🧠 neurological wiring that, while presenting 🚧 challenges, also offers potential ✨ strengths like 🎨 creativity, ⚡ high energy, and 🎉 spontaneity. It emphasizes that 🧑‍💼 adults with ADHD can lead 💖 fulfilling lives by understanding and managing their 🛠️ symptoms, moving away from a solely 😔 negative, deficit-based view. 🤯 This is surprising to many who view ADHD as a 🧸 childhood disorder that is outgrown.  
   
 ### Deep Dive 📚  
 * **Topics Covered:**  

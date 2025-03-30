@@ -60,6 +60,7 @@ URL: https://bagrounds.org/books
 - [Executive Functions: What They Are, How They Work, and Why They Evolved](./executive-functions.md)  
 - [Expecting Better](./expecting-better.md)  
 - [Factfulness](./factfulness.md)  
+- [Fear: Trump in the White House](./fear.md)  
 - [Feedback Control of Dynamic Systems](./feedback-control-of-dynamic-systems.md)  
 - [Flow: The Psychology of Optimal Experience](./flow-the-psychology-of-optimal-experience.md)  
 - [Foundations of Software Testing](./foundations-of-software-testing.md)  

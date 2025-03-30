@@ -7,7 +7,7 @@ URL: https://bagrounds.org/reflections
 ---
 [Home](../index.md)  
 # 🪞 Reflections  
-- [2025-03-29 | ✍️](./2025-03-29.md)  
+- [2025-03-29 | 🚨 Fear 🔥 | 😡 Hate 💣 | 🇺🇸 Tr卐mp 👹](./2025-03-29.md)  
 - [2025-03-28 | 🐍 Fraud Pays 💸](./2025-03-28.md)  
 - [2025-03-27 | 🎓👤 Seize | 📰🤐 Silence](./2025-03-27.md)  
 - [2025-03-26 | 🪵 Record 🦙 Reason 🗡️ Represent 🌐](./2025-03-26.md)  

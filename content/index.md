@@ -10,11 +10,11 @@ Powered by [Obsidian](https://obsidian.md) + [GitHub Publisher](https://github.c
 If you don't know what that means... Welcome to my personal website!  
   
 ## 🪞 [Reflections](./reflections/index.md) (~Blog)  
+- [2025-03-30](./reflections/2025-03-30.md)  
 - [2025-03-29 | 🚨 Fear 🔥 | 😡 Hate 💣 | 🇺🇸 Tr卐mp 👹](./reflections/2025-03-29.md)  
 - [2025-03-28 | 🐍 Fraud Pays 💸](./reflections/2025-03-28.md)  
 - [2025-03-27 | 🎓👤 Seize | 📰🤐 Silence](./reflections/2025-03-27.md)  
 - [2025-03-26 | 🪵 Record 🦙 Reason 🗡️ Represent 🌐](./reflections/2025-03-26.md)  
-- [2025-03-25 | 🧮 Math  🤪 Madness 🧘 Mind](./reflections/2025-03-25.md)  
   
   
 ## 📄 [Articles](./articles/index.md)  

@@ -122,7 +122,7 @@ Robert Cialdini’s *Influence: The Psychology of Persuasion* is a seminal work 
   - *Nudge: Improving Decisions About Health, Wealth, and Happiness* by Richard H. Thaler and Cass R. Sunstein – While *Influence* focuses on persuasion tactics, *Nudge* examines how subtle policy shifts can guide choices, offering a more benign view on behavioral influence. [Learn more on Wikipedia](https://en.wikipedia.org/wiki/Nudge_(book)) 🔄  
   
 - **Fiction Book Incorporating Related Ideas:**    
-  - *1984* by George Orwell – This dystopian classic weaves themes of control, propaganda, and psychological manipulation into its narrative, providing a fictional exploration of influence and authority. 📚  
+  - *[1984](./1984.md)* by George Orwell – This dystopian classic weaves themes of control, propaganda, and psychological manipulation into its narrative, providing a fictional exploration of influence and authority. 📚  
   
 #### Final Thoughts    
 *Influence* remains a cornerstone in understanding persuasion and human behavior. Its blend of empirical research, compelling storytelling, and actionable insights continues to inspire professionals and laypeople alike to harness the power of influence ethically. Whether you're looking to enhance your persuasive skills or shield yourself from manipulation, Cialdini’s work offers timeless lessons and practical tools. 🌟  

@@ -75,7 +75,7 @@ tags:
 * **Best Diametrically Opposed Resource:**  
     * Any documentation or white paper that focuses on the cloud based LLM APIs, such as those provided by OpenAI. This will provide the contrast between local and cloud based systems. ☁️  
 * **Best Fiction Incorporating Related Ideas:**  
-    * "Daemon" by Daniel Suarez. This novel explores the implications of decentralized AI systems, which relates to the local control aspect of Ollama. 🤖📖  
+    * "[Daemon](../books/daemon.md)" by Daniel Suarez. This novel explores the implications of decentralized AI systems, which relates to the local control aspect of Ollama. 🤖📖  
 * **Best More General Resource:**  
     * "[Deep Learning](../books/deep-learning.md)" by Ian Goodfellow, Yoshua Bengio, and Aaron Courville. This book provides a comprehensive overview of deep learning, including the principles behind LLMs. 🧠  
 * **Best More Specific Resource:**  

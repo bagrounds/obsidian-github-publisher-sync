@@ -75,10 +75,10 @@ tags:
 * The research methods are well explained, allowing readers to assess the validity of the findings. 📝  
   
 ### **Book Recommendations 📚**  
-* **Best Alternate Book on the Same Topic:** "The Phoenix Project" by Gene Kim, Kevin Behr, and George Spafford. (Fiction that illustrates DevOps principles). 🏭  
+* **Best Alternate Book on the Same Topic:** "[The Phoenix Project](./the-phoenix-project.md)" by Gene Kim, Kevin Behr, and George Spafford. (Fiction that illustrates DevOps principles). 🏭  
 * **Best Tangentially Related Book:** "Team Topologies" by Matthew Skelton and Manuel Pais. (Focuses on organizing teams for fast flow). 🧑‍🤝‍🧑  
 * **Best Diametrically Opposed Book:** "The Mythical Man-Month" by Fred Brooks. (Classic software engineering book focusing on project management, with some points opposed to the agile and fast flow ideas of accelerate). 🕰️  
-* **Best Fiction Book That Incorporates Related Ideas:** "Daemon" by Daniel Suarez. (Technological and organizational change themes). 🤖  
+* **Best Fiction Book That Incorporates Related Ideas:** "[Daemon](./daemon.md)" by Daniel Suarez. (Technological and organizational change themes). 🤖  
 * **Best Book That Is More General:** "[The Lean Startup](./the-lean-startup.md)" by Eric Ries. (General application of Lean principles). 💡  
 * **Best Book That Is More Specific:** "[Continuous Delivery](./continuous-delivery.md)" by Jez Humble and David Farley. (Focuses deeply on technical implementation of continuous delivery). 💻  
 * **Best Book That Is More Rigorous:** Research papers on organizational psychology and statistical analysis. 📝  

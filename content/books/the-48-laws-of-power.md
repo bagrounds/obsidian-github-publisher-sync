@@ -75,5 +75,5 @@ tags:
     - Presents a counterpoint by highlighting how success often stems from generosity and collaboration rather than ruthless self-interest.    
   
 - **Fiction Book Incorporating Related Ideas:**    
-  - *[1984](https://en.wikipedia.org/wiki/Nineteen_Eighty-Four)* by George Orwell    
+  - *[1984](./1984.md)* by George Orwell    
     - A dystopian narrative that explores themes of surveillance, control, and the dark side of power, offering a fictional yet profound reflection on manipulation and authority.  

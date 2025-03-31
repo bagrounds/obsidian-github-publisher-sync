@@ -11,7 +11,7 @@ URL: https://bagrounds.org/software/open-webui
 ## 🤖 AI Summary  
 ### 💾 Software Report: Open WebUI 🌐  
   
-Open WebUI is a user-friendly, self-hostable web interface designed to interact with Large Language Models (LLMs) like those from OpenAI, Google, or locally run models via APIs like Ollama. It provides a clean, chat-like interface for managing conversations and model interactions.  
+Open WebUI is a user-friendly, self-hostable web interface designed to interact with Large Language Models (LLMs) like those from OpenAI, Google, or locally run models via APIs like [Ollama](./ollama.md). It provides a clean, chat-like interface for managing conversations and model interactions.  
   
 ### High-Level Conceptual Overview 🧠  
   

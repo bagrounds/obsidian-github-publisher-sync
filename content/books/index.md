@@ -7,6 +7,7 @@ URL: https://bagrounds.org/books
 ---
 [Home](../index.md)  
 # Books  
+- [1984](./1984.md)  
 - [23 Things They Don't Tell You About Capitalism](./23-things-they-dont-tell-you-about-capitalism.md)  
 - [A Brief History of Time](./a-brief-history-of-time.md)  
 - [A Thousand Brains](./a-thousand-brains.md)  
@@ -111,6 +112,7 @@ URL: https://bagrounds.org/books
 - [Nonviolent Communication](./nonviolent-communication.md)  
 - [Nudge](./nudge.md)  
 - [On Corruption in America: And What Is at Stake](./on-corruption-in-america-and-what-is-at-stake.md)  
+- [On Tyranny: Twenty Lessons from the Twentieth Century](./on-tyranny.md)  
 - [On Writing: A Memoir of the Craft](./on-writing.md)  
 - [Onyx Storm](./onyx-storm.md)  
 - [Order Out of Chaos](./order-out-of-chaos.md)  

@@ -32,7 +32,7 @@ Here's my reasoning:
   
 In a world where financial literacy is more important than ever, "The Richest Man in Babylon" offers a valuable foundation for building a secure and prosperous future. 🌟🙌🏽  
   
-Of course, other books offer immense value in different ways. For example books like 1984, offer value in understanding society, and the dangers of authoritarism. But for everyday practical value, that effects most peoples lives, financial stability is key.  
+Of course, other books offer immense value in different ways. For example books like [1984](../books/1984.md), offer value in understanding society, and the dangers of authoritarism. But for everyday practical value, that effects most peoples lives, financial stability is key.  
   
 ## 💎 Gemini Gem: 📚 Book Explorer  
 > The following book covers  

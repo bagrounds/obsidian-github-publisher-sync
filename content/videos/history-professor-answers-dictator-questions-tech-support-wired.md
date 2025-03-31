@@ -12,6 +12,9 @@ tags:
 [Home](../index.md) > [Videos](./index.md)  
 # History Professor Answers Dictator Questions | Tech Support | WIRED  
 ![History Professor Answers Dictator Questions | Tech Support | WIRED](https://youtube.com/watch?v=vK6fALsenmw)  
+> Professor and authoritarianism scholar Ruth Ben-Ghiat joins WIRED to answer the internet's burning questions about dictators and fascism.  
+  
+Ruth Ben-Ghiat is the author of [Strongmen: Mussolini to the Present](../books/strongmen.md).  
   
 ## 🤖 AI Summary  
 * 🇮🇩 **Defining Fascism:** 🇮🇩 Fascism is characterized by a ☝️ one-party state with an 👑 all-powerful dictator, ⚖️ no separation of powers, 🏭 state control over various aspects of life, 🗺️ expansionist tendencies, and the 👊 use of violence.  

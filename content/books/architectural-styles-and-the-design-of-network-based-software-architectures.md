@@ -68,7 +68,7 @@ This book is highly regarded for its academic rigor 🎓 and its foundational co
 - **Best Alternate Book on the Same Topic:** "Software Architecture in Practice" by Len Bass, Paul Clements, and Rick Kazman 🏗️.  
 - **Best Tangentially Related Book:** "[Domain-Driven Design: Tackling Complexity in the Heart of Software](./domain-driven-design.md)" by Eric Evans 🧩.  
 - **Best Diametrically Opposed Book:** "The Mythical Man-Month: Essays on Software Engineering" by Frederick P. Brooks Jr. 👤  
-- **Best Fiction Book That Incorporates Related Ideas:** "Daemon" by Daniel Suarez 🤖.  
+- **Best Fiction Book That Incorporates Related Ideas:** "[Daemon](./daemon.md)" by Daniel Suarez 🤖.  
 - **Best Book That Is More General:** "Clean Architecture: A Craftsman's Guide to Software Structure and Design" by Robert C. Martin 🧹.  
 - **Best Book That Is More Specific:** "RESTful Web APIs" by Leonard Richardson and Mike Amundsen 🌐.  
 - **Best Book That Is More Rigorous:** "[Distributed Systems: Principles and Paradigms](./distributed-systems.md)" by Andrew S. Tanenbaum and Maarten Van Steen ⚙️.  

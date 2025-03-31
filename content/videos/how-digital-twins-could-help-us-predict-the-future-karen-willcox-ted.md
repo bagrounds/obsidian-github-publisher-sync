@@ -59,7 +59,7 @@ The information presented is of high quality, supported by several markers:
 - **Best Alternate Resource on Digital Twins:** [Digital Twins and Living Models at NASA](https://ntrs.nasa.gov/citations/20210023699) 🌍 - NASA’s exploration of digital twins in aerospace provides a practical, authoritative alternative with real-world applications.  
 - **Best Tangentially Related Resource:** "The Fourth Industrial Revolution" by Klaus Schwab🔄 - This book explores broader technological trends, including IoT and AI, which underpin digital twins.  
 - **Best Diametrically Opposed Resource:** "Technopoly: The Surrender of Culture to Technology" by Neil Postman⚠️ - Postman’s "Technopoly" critiques over-reliance on technology, offering a counterpoint to the optimism of digital twins.  
-- **Best Fiction Incorporating Related Ideas:** *"Daemon" by Daniel Suarez* 📖 - This techno-thriller explores AI and virtual systems influencing the real world, echoing digital twin concepts in a gripping narrative.  
+- **Best Fiction Incorporating Related Ideas:** *"[Daemon](../books/daemon.md)" by Daniel Suarez* 📖 - This techno-thriller explores AI and virtual systems influencing the real world, echoing digital twin concepts in a gripping narrative.  
 - **Best More General/Specific Resource:** "Digital Twins: Basics and Applications" by Springer 📘 - This academic book offers a more specific, technical dive into digital twin theory and implementation.  
 - **Best More Rigorous/Accessible Resource:** [What Is A Digital Twin? A Simple Explanation in 60 Seconds](https://youtu.be/76wwdorAz38) by Bernard Marr 📙 - A highly accessible introduction to digital twins, ideal for beginners seeking a rigorous yet approachable overview.  
   

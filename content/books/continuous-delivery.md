@@ -67,7 +67,7 @@ Continuous Delivery empowers organizations to reliably release high-quality soft
 * **Best Alternate Book on the Same Topic:** "The Phoenix Project" by Gene Kim, Kevin Behr, and George Spafford. (A novel that illustrates the principles of continuous delivery in a relatable way.) 🏭  
 * **Best Tangentially Related Book:** "[Accelerate](./accelerate.md)" by Nicole Forsgren, Jez Humble, and Gene Kim. (Provides empirical evidence for the impact of continuous delivery practices.) 📊  
 * **Best Diametrically Opposed Book:** "Waterfall vs Agile vs Iterative" (Any document that describes the waterfall method will be diametrically opposed, as it is a sequential, non-iterative model.) 🌊  
-* **Best Fiction Book That Incorporates Related Ideas:** "Daemon" by Daniel Suarez. (Explores the impact of automated systems and continuous improvement in a fictional context.) 🤖  
+* **Best Fiction Book That Incorporates Related Ideas:** "[Daemon](./daemon.md)" by Daniel Suarez. (Explores the impact of automated systems and continuous improvement in a fictional context.) 🤖  
 * **Best Book That Is More General:** "[The Lean Startup](./the-lean-startup.md)" by Eric Ries. (Focuses on lean principles for building and scaling businesses.) 📈  
 * **Best Book That Is More Specific:** "Effective DevOps" by Jennifer Davis and Ryn Daniels. (Provides detailed guidance on implementing DevOps practices.) 💻  
 * **Best Book That Is More Rigorous:** "Site Reliability Engineering" by Betsy Beyer, Chris Jones, Jennifer Petoff, and Niall Richard Murphy. (Offers a more in-depth look at reliability engineering practices.) ⚙️  

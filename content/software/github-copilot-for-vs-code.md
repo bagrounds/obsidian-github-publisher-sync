@@ -132,7 +132,7 @@ GitHub Copilot was developed as a collaboration between GitHub 🐱‍💻 and O
 * Topically opposed: "Code: The Hidden Language of Computer Hardware and Software" by Charles Petzold 💻📚  
 * More general: "Artificial Intelligence: A Modern Approach" by Stuart Russell and Peter Norvig 🤖🧠  
 * More specific: "[Deep Learning](../books/deep-learning.md)" by Ian Goodfellow, Yoshua Bengio, and Aaron Courville 🧠📚  
-* Fictional: "Daemon" by Daniel Suarez 👾💻  
+* Fictional: "[Daemon](../books/daemon.md)" by Daniel Suarez 👾💻  
 * Rigorous: "Speech and Language Processing" by Dan Jurafsky and James H. Martin 🗣️📚  
 * Accessible: "Life 3.0: Being Human in the Age of Artificial Intelligence" by Max Tegmark 🤖🧠  
   

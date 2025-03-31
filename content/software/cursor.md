@@ -52,10 +52,10 @@ URL: https://bagrounds.org/software/cursor
   
 📚 **A List Of Relevant Theoretical Concepts Or Disciplines**  
   
-- Large Language Models (LLMs) 🗣️  
+- [Large Language Models](../topics/large-language-models.md) (LLMs) 🗣️  
 - Natural Language Processing (NLP) 💬  
 - Code generation and synthesis 📝  
-- Software engineering 💻  
+- [Software Engineering](../topics/software-engineering.md) 💻  
 - Machine learning 🤖  
 - Deep learning. 🧠  
   
@@ -125,7 +125,7 @@ Cursor IDE emerged as a response to the advancements in LLMs, aiming to bring th
 - Topically opposed: "Clean Code: A Handbook of Agile Software Craftsmanship" by Robert C. Martin. ✍️  
 - More general: "Superintelligence: Paths, Dangers, Strategies" by Nick Bostrom. 🤯  
 - More specific: "Natural Language Processing with Transformers" by Tunstall, von Werra, Wolf. 🗣️  
-- Fictional: "Daemon" by Daniel Suarez. 🌐  
+- Fictional: "[Daemon](../books/daemon.md)" by Daniel Suarez. 🌐  
 - Rigorous: "Speech and Language Processing" by Dan Jurafsky and James H. Martin. 💬  
 - Accessible: "Life 3.0: Being Human in the Age of Artificial Intelligence" by Max Tegmark. ⚡  
   

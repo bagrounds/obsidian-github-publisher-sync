@@ -94,7 +94,7 @@ While the focus is primarily on software aspects, the importance of considering 
      
 * **Best book that is diametrically opposed**: "The Mythical Man-Month" by Frederick P. Brooks Jr., which focuses on software project management but offers a contrasting perspective on the challenges of software development. 📚🤔💼  
      
-* **Best fiction book that incorporates related ideas**: "Daemon" by Daniel Suarez, a techno-thriller that explores themes of distributed systems and autonomous software. 📚🤖🌐  
+* **Best fiction book that incorporates related ideas**: "[Daemon](./daemon.md)" by Daniel Suarez, a techno-thriller that explores themes of distributed systems and autonomous software. 📚🤖🌐  
      
 * **Best book that is more general**: "Distributed Systems: Concepts and Design" by George Coulouris, Jean Dollimore, and Tim Kindberg, for a broader overview of distributed systems. 📚🌐💡  
      

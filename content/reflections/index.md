@@ -7,6 +7,7 @@ URL: https://bagrounds.org/reflections
 ---
 [Home](../index.md)  
 # 🪞 Reflections  
+- [2025-04-02](./2025-04-02.md)  
 - [2025-04-01](./2025-04-01.md)  
 - [2025-03-31](./2025-03-31.md)  
 - [2025-03-30 | 🇺🇸🏛️ State 📶 Sponsored 👥⛓️](./2025-03-30.md)  

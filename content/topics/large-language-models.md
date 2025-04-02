@@ -12,7 +12,7 @@ URL: https://bagrounds.org/topics/large-language-models
   
 - 👉 Large Language Models (LLMs) 🧠 are artificial intelligence models 🤖 trained on massive datasets of text and code 💻.  
 - 👉 They belong to the broader class of deep learning models 🤯, specifically transformer networks ⚡.  
-- 👉 LLM isn't technically an acronym, but it stands for Large Language Model. 🌟  
+- 👉 LLM stands for Large Language Model. 🌟  
   
 ### ☁️ A High Level, Conceptual Overview  
   

@@ -19,7 +19,7 @@ GitHub Copilot is an AI pair programmer 🤖🤝 developed by GitHub 🐱‍💻
   
 * **🍼 For A Child:** Imagine you have a friend 👦👧 who knows a lot about building things with LEGOs 🧱. When you start building something 🏗️, they suggest the next LEGO brick 🧱 you might need. GitHub Copilot is like that friend, but for computer code 💻.  
 * **🏁 For A Beginner:** GitHub Copilot is a tool 🛠️ within VS Code 💻 that helps you write code 📝 by suggesting lines or even entire functions 🧩 as you type ⌨️. It's like having an experienced programmer 🧑‍💻👩‍💻 looking over your shoulder 👀 and offering assistance 🤝.  
-* **🧙‍♂️ For A World Expert:** GitHub Copilot leverages a large language model 🧠 to provide context-aware code synthesis 📝 and completion ⌨️, effectively acting as a probabilistic code generator 🎲. It distills patterns 🔍 from vast code corpora 📚, offering a novel approach to developer productivity 🚀 and code exploration 🧭.  
+* **🧙‍♂️ For A World Expert:** GitHub Copilot leverages a [Large Language Model](../topics/large-language-models.md) 🧠 to provide context-aware code synthesis 📝 and completion ⌨️, effectively acting as a probabilistic code generator 🎲. It distills patterns 🔍 from vast code corpora 📚, offering a novel approach to developer productivity 🚀 and code exploration 🧭.  
   
 🌟 **High-Level Qualities**  
   

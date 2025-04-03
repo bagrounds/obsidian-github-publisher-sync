@@ -10,6 +10,12 @@ tags:
 [Home](../index.md) > [Books](./index.md)  
 # Strongmen: Mussolini to the Present  
 by Ruth Ben-Ghiat  
+  
+## 🗣️ Quotes  
+> Every strongman targets universities with informers who report on students, faculty, and staff.  
+  
+- Chapter 9: Resistance  
+  
 ## 🤖 AI Summary  
 ### TL;DR 📝  
 Ruth Ben-Ghiat's *Strongmen* argues that 📢 authoritarian leaders, ⏳ past and present, follow a 🎭 consistent playbook of 📣 propaganda, ⚔️ violence, 💰 corruption, and 👑 cult of personality to seize and maintain power, 💥 exploiting societal anxieties and 💡 promising simplistic solutions while 🏛️ dismantling democratic institutions.  

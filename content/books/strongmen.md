@@ -62,7 +62,7 @@ Ruth Ben-Ghiat's *Strongmen* argues that 📢 authoritarian leaders, ⏳ past an
   
 ### Book Recommendations 📚  
   
-* ⭐ **Best Alternate Book on the Same Topic:** *On Tyranny: Twenty Lessons from the Twentieth Century* by Timothy Snyder. 📖 A concise and practical guide to resisting authoritarianism, ✊ drawing on the lessons of the 20th century. 🕰️  
+* ⭐ **Best Alternate Book on the Same Topic:** *[On Tyranny: Twenty Lessons from the Twentieth Century](./on-tyranny.md)* by Timothy Snyder. 📖 A concise and practical guide to resisting authoritarianism, ✊ drawing on the lessons of the 20th century. 🕰️  
 * 🔗 **Best Book That is Tangentially Related:** *How Democracies Die* by Steven Levitsky and Daniel Ziblatt. 💔 Explores how democracies can be undermined by seemingly innocuous actions by political leaders. 🤵  
 * 🔄 **Best Book That is Diametrically Opposed:** *The End of History and the Last Man* by Francis Fukuyama. 📜 While not directly advocating for authoritarianism, 🚫 this book's thesis that liberal democracy is the endpoint 🏁 of ideological evolution presents a stark contrast ↔️ to the cyclical nature of authoritarianism depicted in *Strongmen*. 🔄  
 * 🎭 **Best Fiction Book That Incorporates Related Ideas:** *It Can't Happen Here* by Sinclair Lewis. ✍️ A satirical novel that imagines the rise 🚀 of a populist demagogue in the United States. 🇺🇸  

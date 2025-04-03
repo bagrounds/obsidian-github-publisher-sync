@@ -11,7 +11,7 @@ URL: https://bagrounds.org/software/gemini
 ## 🤖 AI Summary  
 ### 👉 What Is It?  
   
-* 👉 "Gemini" is a multimodal large language model (LLM) developed by Google AI. 🤖 It's a type of artificial intelligence designed to understand and generate text, code, images, and more. 🤯 It belongs to the broader class of generative AI. 🌟  
+* 👉 "Gemini" is a multimodal [Large Language Model](../topics/large-language-models.md) (LLM) developed by Google AI. 🤖 It's a type of artificial intelligence designed to understand and generate text, code, images, and more. 🤯 It belongs to the broader class of generative AI. 🌟  
   
 ### ☁️ A High Level, Conceptual Overview  
   

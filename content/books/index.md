@@ -75,6 +75,7 @@ URL: https://bagrounds.org/books
 - [Hardwiring Happiness: The Brain Science That Changes Everything](./hardwiring-happiness-the-brain-science-that-changes-everything.md)  
 - [Haskell Programming from First Principles](./haskell-programming-from-first-principles.md)  
 - [Head First Statistics](./head-first-statistics.md)  
+- [How Democracies Die](./how-democracies-die.md)  
 - [How Google Tests Software](./how-google-tests-software.md)  
 - [How Learning Works](./how-learning-works.md)  
 - [How Not to Be Wrong: The Power of Mathematical Thinking](./how-not-to-be-wrong.md)  

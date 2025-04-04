@@ -73,6 +73,7 @@ URL: https://bagrounds.org/videos
 - [Russell L Ackoff From Mechanistic to Systemic Thinking](./russell-l-ackoff-from-mechanistic-to-systemic-thinking.md)  
 - [Scientists sound alarm on Trump administration's dismantling of research funding](./scientists-sound-alarm-on-trump-administrations-dismantling-of-research-funding.md)  
 - [Sen. Bernie Sanders: NOBODY Should Have Voted for the Terrible CR](./sen-bernie-sanders-nobody-should-have-voted-for-the-terrible-cr.md)  
+- [Sen. Cantwell Speaks on the Senate Floor on the Trade Review Act of 2025](./sen-cantwell-speaks-on-the-senate-floor-on-the-trade-review-act-of-2025.md)  
 - [SHIN SPLINTS for Runners: Challenges, Causes, and Rehab](./shin-splints-for-runners-challenges-causes-and-rehab.md)  
 - [Spaceship You](./spaceship-you.md)  
 - [Susan Crawford wins Wisconsin Supreme Court seat, cementing liberal majority](./susan-crawford-wins-wisconsin-supreme-court-seat-cementing-liberal-majority.md)  

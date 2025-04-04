@@ -7,6 +7,7 @@ URL: https://bagrounds.org/reflections
 ---
 [Home](../index.md)  
 # 🪞 Reflections  
+- [2025-04-04](./2025-04-04.md)  
 - [2025-04-03 | 🎯 Disrupting 🎓](./2025-04-03.md)  
 - [2025-04-02 | A ✨ Glimmer](./2025-04-02.md)  
 - [2025-04-01 | 🤐 Speech 🗣️](./2025-04-01.md)  

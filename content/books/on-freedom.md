@@ -11,7 +11,7 @@ tags:
 # On Freedom  
 ## 🤖 AI Summary  
 ### TL;DR ⏳  
-📜 Timothy Snyder's *On Freedom* argues that the common understanding of 🚫⛓️ freedom as merely the absence of external constraints ("freedom from") is insufficient and that true freedom is a ✨➕ positive project ("freedom to") requiring 👑 sovereignty, 🔮 unpredictability, ✈️ mobility, 팩트 check factuality, and 🤝 solidarity to enable individuals and societies to thrive.  
+📜 Timothy Snyder's *On Freedom* argues that the common understanding of 🚫⛓️ freedom as merely the absence of external constraints ("freedom from") is insufficient and that true freedom is a ✨➕ positive project ("freedom to") requiring 👑 sovereignty, 🔮 unpredictability, ✈️ mobility, ✅ factuality, and 🤝 solidarity to enable individuals and societies to thrive.  
   
 ### New or Surprising Perspective 🤔  
 🤔 Snyder challenges the prevailing negative conception of freedom, particularly within American conservative thought, by asserting that 💯 genuine freedom necessitates 🤝 collective action, 🏛️ strong institutions, and a 💖 commitment to shared societal well-being. 🔄 This perspective reframes freedom not as a 🧍 solitary defense against 👮 government intrusion, but as an 🚀 ongoing, 🧑‍🤝‍🧑 collaborative effort to 🪴 cultivate the conditions under which individuals can ✨ realize their potential and make ✅ meaningful choices. 📜 He integrates historical analysis with 🧠 philosophical inquiry and 🗣️ personal anecdotes to illustrate how different 🧩 facets of freedom intertwine and support one another, offering a more 🌍 holistic and 🛠️ actionable understanding of this fundamental value.  

@@ -1,10 +1,10 @@
----  
-share: true  
-Author: "[[russell-ackoff]]"  
-aliases:  
-  - Idealized Design  
-title: Idealized Design  
----  
+---
+share: true
+Author: "[[russell-ackoff]]"
+aliases:
+  - Idealized Design
+title: Idealized Design
+---
 [Home](../index.md) > [Books](./index.md)  
 # Idealized Design  
 ## 🤖💬 AI Summary  
@@ -18,7 +18,7 @@ title: Idealized Design
    *"Designing for Growth: A Design Thinking Tool Kit for Managers"* by Jeanne Liedtka and Tim Ogilvie. This book covers design thinking, which focuses on innovation and problem-solving, complementing the concepts of idealized design with practical tools for organizational change.  
   
 3. **Best Diametrically Opposed Book**:    
-   *"The Lean Startup"* by Eric Ries. Unlike Ackoff's idealized approach, this book advocates for continuous, rapid prototyping, learning, and iteration, emphasizing agility over grand, visionary design.  
+   *"[The Lean Startup](./the-lean-startup.md)"* by Eric Ries. Unlike Ackoff's idealized approach, this book advocates for continuous, rapid prototyping, learning, and iteration, emphasizing agility over grand, visionary design.  
   
 4. **Best Fiction Book that Incorporated Related Ideas**:    
    *"The Goal"* by Eliyahu M. Goldratt. While a business novel, it integrates systems thinking and process optimization, which resonates with Ackoff's emphasis on improving complex systems.  

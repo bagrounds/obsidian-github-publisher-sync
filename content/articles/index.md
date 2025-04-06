@@ -17,5 +17,6 @@ title: Articles
 - [Safe Sleep for Breastfeeding Babies](./safe-sleep-for-breastfeeding-babies.md)  
 - [Snohomish County schools react to education department firings](./snohomish-county-schools-react-to-education-department-firings.md)  
 - [The Log: What every software engineer should know about real-time data's unifying abstraction](./the-log-what-every-software%20engineer-should-know-about-real-time-datas-unifying-abstraction.md)  
+- [Thousands gather in Everett to say ‘Hands Off!’ to Trump](./thousands-gather-in-everett-to-say-hands-off-to-trump.md)  
 - [Treatment of Feline Gastrointestinal Small-Cell Lymphoma With Chlorambucil and Glucocorticoids](./treatment-of-feline-gastrointestinal-small-cell-lymphoma-with-chlorambucil-and-glucocorticoids.md)  
   

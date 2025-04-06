@@ -11,11 +11,11 @@ Powered by [Obsidian](https://obsidian.md) + [GitHub Publisher](https://github.c
 If you don't know what that means... Welcome to my personal website!  
   
 ## 🪞 [Reflections](./reflections/index.md) (~Blog)  
+- [2025-04-06 | 👐 Hands 🚫 Off](./reflections/2025-04-06.md)  
 - [2025-04-05 | 🕊️ Freedom 📣](./reflections/2025-04-05.md)  
 - [2025-04-04 | 💸 Tariffs](./reflections/2025-04-04.md)  
 - [2025-04-03 | 🎯 Disrupting 🎓](./reflections/2025-04-03.md)  
 - [2025-04-02 | A ✨ Glimmer](./reflections/2025-04-02.md)  
-- [2025-04-01 | 🤐 Speech 🗣️](./reflections/2025-04-01.md)  
   
   
 ## 📄 [Articles](./articles/index.md)  

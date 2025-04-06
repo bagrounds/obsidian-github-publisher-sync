@@ -29,7 +29,7 @@ const config: QuartzConfig = {
   configuration: {
     pageTitle: "bagrounds.org",
     enableSPA: true,
-    enablePopovers: false,
+    enablePopovers: true,
     analytics: null,
     locale: "en-US",
     baseUrl: "bagrounds.org",

@@ -11,6 +11,7 @@ title: Articles
 - [How Project 2025 Would Devastate Public Education](./how-project-2025-would-devastate-public-education.md)  
 - [How the Ph.D. Project, and 45 colleges, became a target of the Trump administration](./how-the-phd-project-and-45-colleges-became-a-target-of-the-trump-administration.md)  
 - [Iowa gives final approval to a bill removing gender identity protections despite protests](./iowa-gives-final-approval-to-a-bill-removing-gender-identity-protections-despite-protests.md)  
+- [Judge says deportation of Maryland man to an El Salvador prison was ‘wholly lawless’](./judge-says-deportation-of-maryland-man-to-an-el-salvador-prison-was-wholly-lawless.md)  
 - [Mouth And Throat Exercises to Help Stop Snoring and Improve OSA](./mouth-and-throat-exercises-to-help-stop-snoring-and-improve-osa.md)  
 - [Musical intervention enhances infants’ neural processing of temporal structure in music and speech](./musical-intervention-enhances-infants-neural-processing-of-temporal-structure-in-music-and-speech.md)  
 - [Project 2025 and education: A lot of bad ideas, some more actionable than others](./project-2025-and-education-a-lot-of-bad-ideas-some-more-actionable-than-others.md)  

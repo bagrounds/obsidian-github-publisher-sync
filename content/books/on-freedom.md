@@ -72,3 +72,6 @@ tags:
 * 🇷🇺⛓️ **Best Book That Is More Specific:** 📖 *Gulag: A History* by Anne Applebaum. This detailed historical account 🗓️ of the Soviet forced labor camps provides a stark and harrowing illustration of the consequences of the absence of freedom and the nature of totalitarian control, a historical backdrop that informs Snyder's analysis. 😥  
 * ⚖️ **Best Book That Is More Rigorous:** 🤓 *A Theory of Justice* by John Rawls. This seminal work 🏆 in political philosophy offers a more systematic and abstract treatment of justice and liberty, providing a deeper theoretical framework for considering the principles underlying a free society. 🧐🕊️  
 * 🛡️💡 **Best Book That Is More Accessible:** 📚 *[On Tyranny: Twenty Lessons from the Twentieth Century](./on-tyranny.md)* by Timothy Snyder. This shorter and more directly prescriptive work 📝 by the same author offers concrete lessons for resisting authoritarianism, making it a more immediate and accessible entry point to his concerns about freedom. 🔓  
+  
+## 🐦 Tweet  
+![Tweet On Freedom](https://twitter.com/bagrounds/status/1909034607032566137)

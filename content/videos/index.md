@@ -102,6 +102,7 @@ URL: https://bagrounds.org/videos
 - [Tools to Enhance Working Memory & Attention](./tools-to-enhance-working-memory-and-attention.md)  
 - [Top Trump officials accidentally texted U.S. war plans to journalist Jeffrey Goldberg](./top-trump-officials-accidentally-texted-u-s-war-plans-to-journalist-jeffrey-goldberg.md)  
 - [Trump administration targets college and university budgets in DEI crackdown](./trump-administration-targets-college-and-university-budgets-in-dei-crackdown.md)  
+- [Trump Tariff Cold Open - SNL](./trump-tariff-cold-open-snl.md)  
 - [What America is losing as President Trump fires independent government watchdogs | 60 Minutes](./what-america-is-losing-as-president-trump-fires-independent-government-watchdogs-60-minutes.md)  
 - [What Are You?](./what-are-you.md)  
 - [What I Learned after 5000 Hours of Mind Mapping](./what-i-learned-after-5000-hours-of-mind-mapping.md)  

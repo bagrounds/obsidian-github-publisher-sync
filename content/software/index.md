@@ -14,6 +14,7 @@ title: Software
 - [Gemini](./gemini.md)  
 - [Git](./git.md)  
 - [GitHub Copilot for VS Code](./github-copilot-for-vs-code.md)  
+- [Google Search Console](./google-search-console.md)  
 - [Google Search Crawl Budget](./google-search-crawl-budget.md)  
 - [Graphiti](./graphiti.md)  
 - [Haskell](./haskell.md)  

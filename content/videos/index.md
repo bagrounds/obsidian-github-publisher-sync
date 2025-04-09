@@ -86,6 +86,7 @@ URL: https://bagrounds.org/videos
 - [The 10 Minute memory method](./the-10-minute-memory-method.md)  
 - [The 10 tactics of fascism | Jason Stanley | Big Think](./the-10-tactics-of-fascism-jason-stanley-big-think.md)  
 - [The concept that changes how you learn forever.](./the-concept-that-changes-how-you-learn-forever.md)  
+- [The conditions inside the infamous El Salvador prison where deported migrants are held](./the-conditions-inside-the-infamous-el-salvador-prison-where-deported-migrants-are-held.md)  
 - [The Excalidraw Obsidian Showcase 57 key features in just 17 minutes](../the-excalidraw-obsidian-showcase-57-key-features-in-just-17-minutes.md)  
 - [The far-right Proud Boys’ chilling message for the world | 60 Minutes Australia](./the-far-right-proud-boys-chilling-message-for-the-world-60-minutes-australia.md)  
 - [The Future of the Web • Sir Tim Berners-Lee • GOTO 2018](./the-future-of-the-web-sir-tim-berners-lee-goto-2018.md)  

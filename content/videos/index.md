@@ -19,6 +19,7 @@ URL: https://bagrounds.org/videos
 - [Brooks and Capehart on how voters are reacting to federal cuts](./Brooks%20and%20Capehart%20on%20how%20voters%20are%20reacting%20to%20federal%20cuts.md)  
 - [Brooks and Capehart on the Democratic division over the stopgap funding bill](./brooks-and-capehart-on-the-democratic-division-over-the-stopgap-funding-bill.md)  
 - [Brooks and Capehart on the political reaction to Trump's tariffs](./brooks-and-capehart-on-the-political-reaction-to-trumps-tariffs.md)  
+- [Bullet Journal](./bullet-journal.md)  
 - [Co-Sleeping With Infants: Science, Public Policy, and Parents Civil Rights, with James McKenna, PhD](./co-sleeping-with-infants-science-public-policy-and-parents-civil-rights-with-james-mckenna-phd.md)  
 - [Don't Get Down Leveled or How to Tell a Good Story (From a Principal at Amazon)](./dont-get-down-leveled-or-how-to-tell-a-good-story-from-a-principal-at-amazon.md)  
 - [Dr. Adam Grant: How to Unlock Your Potential, Motivation & Unique Abilities](./dr-adam-grant-how-to-unlock-your-potential-motivation-and-unique-abilities.md)  

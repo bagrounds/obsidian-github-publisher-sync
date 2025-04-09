@@ -13,6 +13,7 @@ tags:
 # This Journal Keeps Me Productive (and Maybe You Too)  
 ![This Journal Keeps Me Productive (& Maybe You Too)](https://youtu.be/fSwpe8r50_o)  
   
+## 🤖 AI Summary  
 ### Theme System Journal 📝  
 TL;DR: This video introduces the Theme System Journal, a customizable tool designed to boost productivity and well-being through daily tracking, reflection, and theme-based goal setting.  
   
@@ -42,3 +43,6 @@ The presenter emphasizes the journal's flexibility and encourages viewers to ada
 4.  **"[Mindset](../books/mindset.md): The New Psychology of Success" by Carol S. Dweck:** Discusses the power of mindset in achieving goals.  
 5.  **"Getting Things Done" by David Allen:** A popular method for managing tasks and projects.  
 6.  **"Make Time: How to Focus on What Matters Every Day" by Jake Knapp and John Zeratsky:** Practical strategies for prioritizing and making time for important activities.  
+  
+## 〰️ Similar  
+- [Bullet Journal](./bullet-journal.md)  

@@ -12,7 +12,7 @@ If you don't know what that means... Welcome to my personal website!
   
 ## 🪞 [Reflections](./reflections/index.md) (~Blog)  
 - [2025-04-08](./reflections/2025-04-08.md)  
-- [2025-04-07](./reflections/2025-04-07.md)  
+- [2025-04-07 | 💥 Confront | 🕵️‍♀️ Seek](./reflections/2025-04-07.md)  
 - [2025-04-06 | 👐 Hands 🚫 Off](./reflections/2025-04-06.md)  
 - [2025-04-05 | 🕊️ Freedom 📣](./reflections/2025-04-05.md)  
 - [2025-04-04 | 💸 Tariffs](./reflections/2025-04-04.md)  

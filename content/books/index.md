@@ -168,6 +168,7 @@ URL: https://bagrounds.org/books
 - [The Blade Itself](./the-blade-itself.md)  
 - [The Book of Why](./the-book-of-why.md)  
 - [The Brain That Changes Itself](./the-brain-that-changes-itself.md)  
+- [The Bullet Journal Method](./the-bullet-journal-method.md)  
 - [The Creative Act: A Way of Being](./the-creative-act.md)  
 - [The Creative Habit: Learn It and Use It for Life](./the-creative-habit.md)  
 - [The Dawn of Everything: A New History of Humanity](./the-dawn-of-everything.md)  

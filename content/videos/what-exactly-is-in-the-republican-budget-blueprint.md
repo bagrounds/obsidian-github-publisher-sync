@@ -25,6 +25,6 @@ tags:
 - 📣 Speak up and raise awareness \[[07:36](http://www.youtube.com/watch?v=rg3RUeH3Qlk&t=456)].  
   
 ## 📚 Book Recommendations  
-💰 - **Tax Cuts for the Wealthy:** 📚 Several books explore the impact of tax cuts, such as 📉 "Trickle Down Theory" and 💸 "Tax Cuts for the Rich" by Thomas Sowell, and 💼 "Tax-Free Wealth: How to Build Massive Wealth by Permanently Lowering Your Taxes" by Tom Wheelwright.  
-✂️ - **Medicaid Cuts:** 🏥 "The Silent Dismantling of Medicaid: An Unveiling" by Kelly Landry discusses the potential impact of Medicaid cuts.  
-🍎 - **Nutritional Assistance Programs:** 🍲 "Why SNAP Works" by Christopher Bosso provides a history and evaluation of the Supplemental Nutrition Assistance Program (SNAP).  
+- 💰 **Tax Cuts for the Wealthy:** 📚 Several books explore the impact of tax cuts, such as 📉 "Trickle Down Theory" and 💸 "Tax Cuts for the Rich" by Thomas Sowell, and 💼 "Tax-Free Wealth: How to Build Massive Wealth by Permanently Lowering Your Taxes" by Tom Wheelwright.  
+- ✂️ **Medicaid Cuts:** 🏥 "The Silent Dismantling of Medicaid: An Unveiling" by Kelly Landry discusses the potential impact of Medicaid cuts.  
+- 🍎 **Nutritional Assistance Programs:** 🍲 "Why SNAP Works" by Christopher Bosso provides a history and evaluation of the Supplemental Nutrition Assistance Program (SNAP).  

@@ -9,6 +9,22 @@ tags:
 ---
 [Home](../index.md) > [Books](./index.md)  
 # The Bullet Journal Method  
+## 📝🐒 Human Notes  
+- 🧭 Ikigai: Life Worth, A Reason for Being  
+    - 📚 [Ikigai: The Japanese Secret to a Long and Happy Life](./ikigai.md)  
+- ✨ Kaizen: Good Change, Continuous Improvement  
+- 👣 Small steps  
+    - 📖 [Tiny Habits](./tiny-habits.md)  
+- 📺 [Bullet Journal](../videos/bullet-journal.md)  
+- 🤔 Surprisingly philosophical  
+- ✍️ Bullet journaling is a simple, well defined method. 🤓  
+- ✅ Tasks, 🗓️ events, and 📝 notes.  
+- 🧠 Writing is thinking. 💡  
+- 🏔️ Big questions from 🐜 small questions.  
+    - 🌌 What's the meaning of life?   
+    - 🐒 Why am I doing _this_?  
+- 🧘 Passive reflection (journaling ✍️) as a step toward 💡 active reflection (inquiry 🧐).  
+  
 ## 🤖 AI Summary  
 ### 📖 TL;DR 🚀  
   

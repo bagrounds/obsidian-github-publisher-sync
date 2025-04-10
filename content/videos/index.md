@@ -111,6 +111,7 @@ URL: https://bagrounds.org/videos
 - [WATCH: 'Whose throat do I get to choke’ if tariff approach fails, Tillis asks trade rep](./watch-whose-throat-do-i-get-to-choke-if-tariff-approach-fails-tillis-asks-trade-rep.md)  
 - [What America is losing as President Trump fires independent government watchdogs | 60 Minutes](./what-america-is-losing-as-president-trump-fires-independent-government-watchdogs-60-minutes.md)  
 - [What Are You?](./what-are-you.md)  
+- [What EXACTLY is in the Republican Budget Blueprint?](./what-exactly-is-in-the-republican-budget-blueprint.md)  
 - [What I Learned after 5000 Hours of Mind Mapping](./what-i-learned-after-5000-hours-of-mind-mapping.md)  
 - [What Makes Some Brains More Focused Than Others? | Marvin Chun | TEDxKFAS](./what-makes-some-brains-more-focused-than-others-marvin-chun-tedxkfas.md)  
 - [What makes something memorable?](./what-makes-something-memorable.md)  

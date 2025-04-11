@@ -9,7 +9,7 @@ URL: https://bagrounds.org/software/ollama
 # Ollama  
   
 ## 🤖 AI Summary  
-### Ollama: Run Language Models Locally  
+### Ollama: Run [Language Models](../topics/large-language-models.md) Locally  
 **High-Level Overview:**  
   
 * **For a Child:** Imagine a friendly robot 🤖 living in your computer 💻, ready to chat 💬 and answer questions ❓ without needing the internet 🌐🚫! Ollama brings that robot friend to life! 🧒🌟  

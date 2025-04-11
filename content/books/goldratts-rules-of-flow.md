@@ -56,32 +56,26 @@ tags:
 The book’s strength lies in actionable guidance rooted in TOC. Here’s how to apply all **8 Rules of Flow**:  
   
 1. 🛑 **Avoid Bad Multitasking, Control Your WIP** 🚦  
-   - 🚫 Avoid Bad Multitasking, ⚙️ Control Your WIP  
    - 👨‍💻 Cap concurrent projects (e.g., 3-5, based on team capacity).  
    - 🏁 Finish one before starting another—👨 Marc’s team stopped 🌪️ juggling chaos.  
   
 2. ✅ **Verify Full-Kit Before You Get Going** 📦  
-   - 📦 Verify 💯 Full-Kit Before 🚀 You Get Going  
    - 📝 Before starting, ensure all inputs (specs, resources, approvals) are ready.  
    - 👨 Marc delayed a software 💻 rollout until specs were locked, avoiding 🛑 stalls.  
   
 3. 🏥 **Triage to Ensure Right Priorities** 🩺  
-   - 🩺 Triage to Ensure Right Priorities.  
-   - 📝 List all projects, 💯 score by impact (e.g., 💰 revenue, 🧑‍🤝‍🧑 customer need).  
+   - 📝 List all projects, score by impact (e.g., 💰 revenue, 🧑‍🤝‍🧑 customer need).  
    - ⏸️ Pause low-value ones—👨 Marc axed "nice-to-haves" for must-wins.  
   
-4. 🔗 **Ensure Synchronization** 🔗  
-    - 🤝 Ensure Synchronization.  
+4. 🔗 **Ensure Synchronization** 🤝  
    - 🔍 Identify the bottleneck (e.g., a key engineer, ⚙️ equipment).  
    - ⚙️ Align tasks to it—👨 Marc synced his team to a critical testing phase.  
   
 5. ⬆️ **Increase Dosage on Stalled Projects** 💪  
-   - 💪 Increase Dosage on Stalled Projects.  
    - ⏳ If a project keeps stalling, assign more resources or focus.  
    - 👨 Marc doubled a coder’s time on a stuck module, breaking the logjam.  
   
 6. ♻️ **Avoid Unnecessary Rework** 🔄  
-   - 🔄 Avoid Unnecessary Rework  
    - 🔍 Analyze errors (e.g., unclear specs), then fix root causes.  
    - 👨 Marc’s team tracked rework to vague briefs, tightening requirements.  
   
@@ -90,7 +84,6 @@ The book’s strength lies in actionable guidance rooted in TOC. Here’s how to
    - 👨 Marc standardized debugging, cutting errors by 30%.  
   
 8. 🌎 **Abolish Local Optimum, Focus on Global** 🌍  
-   - 🌍 Abolish Local Optimum, Focus on Global  
    - 📈 Measure system-wide flow (lead time, delivery), not individual busyness.  
    - 👨 Marc shifted from “everyone’s busy” to “projects finish fast.”  
   
@@ -111,8 +104,8 @@ The book’s credibility shines through multiple lenses:
 3. 💥 **Best Diametrically Opposed Book** ⚔️  
    - 🧱 *Project Management Body of Knowledge (PMBOK)* by PMI: 🏛️ Traditional, 🏋️ resource-heavy methods 🆚 clash with TOC’s lean flow focus.  
 4. 🖋️ **Best Fiction Incorporating Related Ideas** ✍️  
-   - 🏭 *The Goal* by Eliyahu M. Goldratt: 📚 A manufacturing tale that birthed TOC, 🧵 weaving flow into a gripping narrative.  
-5. 🔬 **Best More General or Specific Book** 🔍  
+   - 🏭 *[The Goal](./the-goal.md)* by Eliyahu M. Goldratt: 📚 A manufacturing tale that birthed TOC, 🧵 weaving flow into a gripping narrative.  
+1. 🔬 **Best More General or Specific Book** 🔍  
    - 🤓 *Theory of Constraints Handbook* by James F. Cox III: ℹ️ A detailed, specific TOC deep dive for practitioners.  
 6. 🎨 **Best More Rigorous or Accessible Book** 🌈  
    - 😊 *Sooner Safer Happier* by Jonathan Smart: 💡 More accessible, 🌀 blending TOC-like flow with agile in a practical guide.  

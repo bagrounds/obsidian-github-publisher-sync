@@ -155,7 +155,7 @@ I tried to explain Linux to my phone using only emojis. It just kept giving me t
   * **topically opposed:** "Android Studio Development Essentials" by Neil Smyth 🤖 (Focuses on GUI-based Android development, a different paradigm).  
   * **more general:** "Operating System Concepts" by Abraham Silberschatz, Peter Baer Galvin, and Greg Gagne ⚙️ (Provides a deeper understanding of operating system principles).  
   * **more specific:** [Termux Wiki Pages](https://wiki.termux.com/wiki/Main_Page) 📖 (The official documentation).  
-  * **fictional:** "Snow Crash" by Neal Stephenson 👓 (Features a virtual reality "Metaverse" with command-line interfaces in a cyberpunk setting).  
+  * **fictional:** "[Snow Crash](../books/snow-crash.md)" by Neal Stephenson 👓 (Features a virtual reality "Metaverse" with command-line interfaces in a cyberpunk setting).  
   * **rigorous:** "Advanced Programming in the UNIX Environment" by W. Richard Stevens and Stephen A. Rago 👨‍💻 (A classic text on Unix system programming concepts).  
   * **accessible:** "Linux for Dummies" by Richard Blum and Christine Bresnahan 🧑‍🏫 (A beginner-friendly introduction to Linux concepts applicable to Termux).  
   

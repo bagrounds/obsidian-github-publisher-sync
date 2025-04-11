@@ -79,7 +79,7 @@ Melanie Mitchell is a highly respected computer scientist and complexity researc
     * The Black Swan: The Impact of the Highly Improbable by Nassim Nicholas Taleb – Challenges the predictability of systems and emphasizes rare, disruptive events over emergent order.  
 * **Best Fiction Books Incorporating Related Ideas:**  
     * "The Three-Body Problem" by Liu Cixin. 🌌  
-    * Snow Crash by Neal Stephenson – A cyberpunk novel where the interplay of technology, culture, and individuals mirrors complex adaptive systems.  
+    * [Snow Crash](./snow-crash.md) by Neal Stephenson – A cyberpunk novel where the interplay of technology, culture, and individuals mirrors complex adaptive systems.  
 * **Best More General Book:** "[Sapiens: A Brief History of Humankind](./sapiens-a-brief-history-of-humankind.md)" by Yuval Noah Harari. 🧑‍🤝‍🧑  
 * **Best More Specific Book:** "Networks: An Introduction" by Mark Newman. 🕸️  
 * **Best More Rigorous Book:** "[Nonlinear Dynamics and Chaos](./nonlinear-dynamics-and-chaos.md): With Applications to Physics, Biology, Chemistry, and Engineering" by Steven H. Strogatz. 🌀  

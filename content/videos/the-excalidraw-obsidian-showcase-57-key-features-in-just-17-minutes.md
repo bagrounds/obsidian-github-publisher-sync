@@ -16,7 +16,7 @@ tags:
 ## 🤖 AI Summary  
 ### TL;DR 🚀  
   
-🎬 The video provides a 💯 comprehensive, 🚀 rapid-fire demonstration of 5️⃣7️⃣ key ✨ features of the ✏️ Excalidraw plugin within Obsidian, showcasing its 🎨 versatility for 👁️ visual note-taking, 📊 diagramming, and 🧠 knowledge management.  
+🎬 The video provides a 💯 comprehensive, 🚀 rapid-fire demonstration of 5️⃣7️⃣ key ✨ features of the ✏️ Excalidraw plugin within [Obsidian](../software/obsidian.md), showcasing its 🎨 versatility for 👁️ visual note-taking, 📊 diagramming, and 🧠 knowledge management.  
   
 ### New or Surprising Perspective 🤔  
   
@@ -82,7 +82,7 @@ tags:
 * **Best Diametrically Opposed Resource:**  
     * Traditional linear note-taking methods (e.g., standard word processing) which lack the visual and interconnected nature of Excalidraw. 📝  
 * **Best Fiction Incorporating Related Ideas:**  
-    * "Snow Crash" by Neal Stephenson, which explores virtual worlds and interconnected information networks. 💻  
+    * "[Snow Crash](../books/snow-crash.md)" by Neal Stephenson, which explores virtual worlds and interconnected information networks. 💻  
 * **Best Resource (More General):**  
     * "How to Take Smart Notes" by Sönke Ahrens, which covers the Zettelkasten method and knowledge organization principles. 💡  
 * **Best Resource (More Specific):**  

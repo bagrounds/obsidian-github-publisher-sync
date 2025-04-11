@@ -44,7 +44,7 @@ tags:
   
 #### If You Loved This ❤️  
 * "Influx" by Daniel Suarez: Another techno-thriller by the same author, exploring cutting-edge technology and its societal impact. 🧬 (Rationale: Stays with the same author and genre, giving a similar feel.)  
-* "Snow Crash" by Neal Stephenson: Another classic cyberpunk novel with a similar focus on technology and its impact on society. 🕶️ (Rationale: Provides a similar genre and theme, with a cyberpunk twist.)  
+* "[Snow Crash](./snow-crash.md)" by Neal Stephenson: Another classic cyberpunk novel with a similar focus on technology and its impact on society. 🕶️ (Rationale: Provides a similar genre and theme, with a cyberpunk twist.)  
   
 #### Similar But Different 🔄  
 * "The Circle" by Dave Eggers: Explores the dark side of social media and online privacy in a more character-driven narrative. 📱 (Rationale: Shares thematic elements of technological overreach but with a focus on social media and character development.)  

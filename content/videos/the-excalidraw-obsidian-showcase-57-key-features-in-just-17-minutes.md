@@ -82,7 +82,7 @@ tags:
 * **Best Diametrically Opposed Resource:**  
     * Traditional linear note-taking methods (e.g., standard word processing) which lack the visual and interconnected nature of Excalidraw. 📝  
 * **Best Fiction Incorporating Related Ideas:**  
-    * "Snow Crash" by Neal Stephenson, which explores virtual worlds and interconnected information networks. 💻  
+    * "[Snow Crash](../books/snow-crash.md)" by Neal Stephenson, which explores virtual worlds and interconnected information networks. 💻  
 * **Best Resource (More General):**  
     * "How to Take Smart Notes" by Sönke Ahrens, which covers the Zettelkasten method and knowledge organization principles. 💡  
 * **Best Resource (More Specific):**  

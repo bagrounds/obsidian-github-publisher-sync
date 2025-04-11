@@ -122,7 +122,7 @@ Graphiti was created to provide a flexible and Pythonic way to build knowledge g
 * **Topically Opposed:** "Database Systems: The Complete Book" by Hector Garcia-Molina, Jeffrey D. Ullman, and Jennifer Widom. 🗄️  
 * **More General:** "Data Science from Scratch" by Joel Grus. 📊  
 * **More Specific:** NetworkX Documentation. 🐍  
-* **Fictional:** "Snow Crash" by Neal Stephenson. (For the interconnected virtual world). 🌐  
+* **Fictional:** "[Snow Crash](../books/snow-crash.md)" by Neal Stephenson. (For the interconnected virtual world). 🌐  
 * **Rigorous:** "Graph Theory" by Reinhard Diestel. 🕸️  
 * **Accessible:** "Python Crash Course" by Eric Matthes. 🐍  
   

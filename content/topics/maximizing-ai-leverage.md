@@ -7,14 +7,14 @@ title: Maximizing AI Leverage
 [Home](../index.md) > [Topics](./index.md)  
 # Maximizing AI Leverage  
 ## 🖼️ Background  
-- LLMs are all the rage now.  
+- [LLMs](./large-language-models.md) are all the rage now.  
 - I think it's been a year or two since I first used a chatbot to write a release email for me at work.  
 - Nowadays, it's not uncommon for me to use Copilot to draft some code for me.  
 - And I'm regularly asking Chatbots questions for certain problems I'd previously have gone to Google for.  
 - LLMs are still limited in their capabilities, but given what they're good at, they can drastically speed up a variety of writing tasks.  
 - They also seem to be getting better all the time.  
 - As a software engineer, I spent a lot of time in school and early in my career on tooling and practices to improve my efficacy.  
-- Vim, functional programming, linux and terminal skills, etc  
+- Vim, functional programming, [linux](../software/linux.md) and terminal skills, etc  
 - I think it's time to invest in optimizing the benefit I get out of LLMs.  
 - I recently set up ollama on my work machine to play with local LLMs.  
 - What are LLMs really good at and how can I best leverage them?  

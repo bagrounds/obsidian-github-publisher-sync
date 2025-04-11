@@ -16,7 +16,7 @@ tags:
 ## 🤖 AI Summary  
 ### TL;DR 🚀  
   
-🎬 The video provides a 💯 comprehensive, 🚀 rapid-fire demonstration of 5️⃣7️⃣ key ✨ features of the ✏️ Excalidraw plugin within Obsidian, showcasing its 🎨 versatility for 👁️ visual note-taking, 📊 diagramming, and 🧠 knowledge management.  
+🎬 The video provides a 💯 comprehensive, 🚀 rapid-fire demonstration of 5️⃣7️⃣ key ✨ features of the ✏️ Excalidraw plugin within [Obsidian](../software/obsidian.md), showcasing its 🎨 versatility for 👁️ visual note-taking, 📊 diagramming, and 🧠 knowledge management.  
   
 ### New or Surprising Perspective 🤔  
   

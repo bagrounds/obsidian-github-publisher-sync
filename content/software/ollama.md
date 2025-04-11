@@ -25,7 +25,7 @@ URL: https://bagrounds.org/software/ollama
     * Local AI conversations 🗣️🧠.  
     * Model library 📚 management (pulling 📥, listing 📋, running ▶️).  
     * Easy-peasy API integration 🤝.  
-    * Works on all your devices 🖥️🐧🍎! (Mac 🍎, Linux 🐧, Windows 🪟)  
+    * Works on all your devices 🖥️🐧🍎! (Mac 🍎, [Linux](./linux.md) 🐧, Windows 🪟)  
   
 **Examples of Prominent Products or Services/Hypothetical Use Cases:**  
   

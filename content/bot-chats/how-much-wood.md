@@ -8,7 +8,7 @@ URL: https://bagrounds.org/bot-chats/how-much-wood
 [Home](../index.md) > [Bot Chats](./index.md)  
 # How Much Wood  
 ## 🖼️ Background  
-I made this query to test the Obsidian Local GPT plugin pointed at the ollama instance running in the UserLand app on my Android phone. Freeze local LLM on mobile 😎.  
+I made this query to test the [Obsidian](../software/obsidian.md) Local GPT plugin pointed at the [Ollama](../software/ollama.md) instance running in the UserLand app on my Android phone. Freeze local LLM on mobile 😎.  
   
 ## llama3.2:1b Prompt  
 > How much wood could a woodchuck chuck if a woodchuck could chuck wood?  

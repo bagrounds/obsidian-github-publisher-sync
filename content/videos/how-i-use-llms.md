@@ -17,13 +17,13 @@ By [Andrej Karpathy](../people/andrej-karpathy.md)
   
 ## 🤖 AI Summary - Exploring Large Language Models (LLMs) and AI Tools  
 ### **Introduction to Large Language Models (LLMs)**  
-- The video continues a general audience series on **large language models (LLMs)**, particularly **ChatGPT**.  
+- The video continues a general audience series on **[Large Language Models](../topics/large-language-models.md) (LLMs)**, particularly **ChatGPT**.  
 - Previous videos covered **how LLMs work under the hood**; this one focuses on **practical applications**.  
   
 ### **Evolution of LLMs**  
 - **ChatGPT’s Launch (2022):** First major LLM deployment by OpenAI, allowing users to interact with AI through a text-based interface.  
 - **2025 AI Ecosystem:** The space has evolved, with competitors like:  
-  - **Google Gemini**  
+  - **Google [Gemini](../software/gemini.md)**  
   - **Meta’s AI assistant**  
   - **Microsoft Copilot**  
   - **Anthropic’s Claude**  

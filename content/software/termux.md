@@ -11,7 +11,7 @@ URL: https://bagrounds.org/software/termux
 ## 🤖 AI Summary  
 ### Termux 📱💻  
   
-👉 **What Is It?** 🤔 Termux is an **Android terminal emulator** 📲 and **Linux environment app** 🐧. It's like having a command line interface right on your phone or tablet\! 🤯 It belongs to the broader class of **terminal emulators** 💻 and **Unix-like environments** 🛠️. It's not an acronym; it's a portmanteau of "terminal" and "Linux". 🤓  
+👉 **What Is It?** 🤔 Termux is an **Android terminal emulator** 📲 and **[Linux](./linux.md) environment app** 🐧. It's like having a command line interface right on your phone or tablet\! 🤯 It belongs to the broader class of **terminal emulators** 💻 and **Unix-like environments** 🛠️. It's not an acronym; it's a portmanteau of "terminal" and "Linux". 🤓  
   
 ☁️ **A High Level, Conceptual Overview**  
   

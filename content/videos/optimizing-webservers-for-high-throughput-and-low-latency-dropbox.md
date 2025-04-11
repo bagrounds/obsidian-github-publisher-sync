@@ -13,7 +13,7 @@ tags:
 # Optimizing Webservers for High Throughput and Low Latency | Dropbox  
 ![Optimizing Webservers for High Throughput and Low Latency | Dropbox](https://youtu.be/aGL8a3Agj-c)  
   
-- paper: Making Linux TCP Fast  
+- paper: Making [Linux](../software/linux.md) TCP Fast  
   - fair queueing and pacing  
     - decreases retransmit rates  
   - congestion control  

@@ -133,7 +133,7 @@ Haskell was created in the late 1980s as a standardized, purely functional progr
 * Topically opposed: "Clean Code: A Handbook of Agile Software Craftsmanship" by Robert C. Martin! 📖  
 * More general: "Programming Languages: Application and Interpretation" by Shriram Krishnamurthi! 📖  
 * More specific: "Real World Haskell" by Bryan O'Sullivan, Don Stewart, and John Goerzen! 📖  
-* Fictional: "Snow Crash" by Neal Stephenson, for its exploration of virtual reality and programming concepts. 📖  
+* Fictional: "[Snow Crash](../books/snow-crash.md)" by Neal Stephenson, for its exploration of virtual reality and programming concepts. 📖  
 * Rigorous: "Types and Programming Languages" by Benjamin C. Pierce! 📖  
 * Accessible: "Haskell Programming from First Principles" by Christopher Allen and Julie Moronuki! 📖  
   

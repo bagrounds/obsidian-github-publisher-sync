@@ -107,7 +107,7 @@ Git's content-addressable nature means that every version of every file is store
   
 📜 **Some Notes On Its History, How It Came To Be, And What Problems It Was Designed To Solve**  
   
-Git was created by Linus Torvalds in 2005 to manage the Linux kernel source code. It was designed to address the limitations of existing version control systems, such as BitKeeper, which was previously used for Linux kernel development. 📜  
+Git was created by Linus Torvalds in 2005 to manage the [Linux](./linux.md) kernel source code. It was designed to address the limitations of existing version control systems, such as BitKeeper, which was previously used for Linux kernel development. 📜  
   
 📝 **A Dictionary-Like Example Using The Term In Natural Language**  
   

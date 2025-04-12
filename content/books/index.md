@@ -43,6 +43,7 @@ URL: https://bagrounds.org/books
 - [Debugging: The 9 Indispensable Rules for Finding Even the Most Elusive Software and Hardware Problems](./debugging.md)  
 - [Deep Learning](./deep-learning.md)  
 - [Deep Work](./deep-work.md)  
+- [Democracy in America](./democracy-in-america.md)  
 - [Designing Data-Intensive Applications](./designing-data-intensive-applications.md)  
 - [Designing Your Life](./designing-your-life.md)  
 - [Developmental Cognitive Neuroscience](./developmental-cognitive-neuroscience.md)  

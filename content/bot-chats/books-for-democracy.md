@@ -3,7 +3,7 @@ share: true
 aliases:
   - Books for Democracy
 title: Books for Democracy
-URL: https://bagrounds.org/bot-chats/Books for Democracy
+URL: https://bagrounds.org/bot-chats/books-for-democracy
 ---
 [Home](../index.md) > [Bot Chats](./index.md)  
 # Books for Democracy  
@@ -75,3 +75,6 @@ URL: https://bagrounds.org/bot-chats/Books for Democracy
 * 🔄 **Recognize the Recurring Struggle:** 🔁 We understand, with Richardson, that the fight for democracy is a continuous one, a recurring tension between inclusive ideals and the forces of oligarchy. We commit to actively participating in this ongoing struggle.  
   
 🤝 This is our pledge. 📣 This is our call. 🛡️ The defense of democracy is not a passive inheritance, but an active and ongoing responsibility for every citizen. 🌍 Let us learn from the past, understand the present dangers, and act with unwavering resolve to safeguard this precious and vital form of governance for ourselves and for generations to come.  
+  
+## 🐦 Tweet  
+<blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">🗳️ Democracy is not an inheritance, but a responsibility. 📜 Let us learn from the past, ⚠️ understand present dangers, and ✊ act with unwavering resolve to 🛡️ safeguard this precious, vital form of governance for ourselves and for 🌳 generations to come.<a href="https://t.co/X96RPf2iKK">https://t.co/X96RPf2iKK</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/1911099109177794568?ref_src=twsrc%5Etfw">April 12, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>  

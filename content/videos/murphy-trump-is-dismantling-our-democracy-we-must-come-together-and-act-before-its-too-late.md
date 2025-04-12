@@ -31,3 +31,6 @@ tags:
 - **Dark Money: The Hidden History of the Billionaires Behind the Rise of the Radical Right** by Jane Mayer: This book investigates the influence of money on political institutions.  
 - [Strongmen: Mussolini to the Present](../books/strongmen.md)  
 - [1984](../books/1984.md)  
+  
+## 🐦 Tweet  
+<blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">🇺🇸 Democracy is being dismantled by attacks on key institutions: 📰 press, 🎓 universities, ⚖️ legal profession, 🏢 business. 🫏 &amp; 🐘 must unite to defend their independence. ✊ Collective action needed to prevent shift to fake democracy.<a href="https://t.co/vDBayMVqme">https://t.co/vDBayMVqme</a><a href="https://twitter.com/SenWhitehouse?ref_src=twsrc%5Etfw">@SenWhitehouse</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/1910964805344649359?ref_src=twsrc%5Etfw">April 12, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

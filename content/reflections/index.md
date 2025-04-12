@@ -7,6 +7,7 @@ URL: https://bagrounds.org/reflections
 ---
 [Home](../index.md)  
 # 🪞 Reflections  
+- [2025-04-12](./2025-04-12.md)  
 - [2025-04-11 | 🦬 Technicalities 🪒 | 👹 Extortionist in 👑 Chief](./2025-04-11.md)  
 - [2025-04-10 | 📓 Journal | 🍼 Spit Up](./2025-04-10.md)  
 - [2025-04-09 | ✒️ Journal | ⛓️ Unjust](./2025-04-09.md)  

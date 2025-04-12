@@ -11,7 +11,7 @@ tags:
 # Antifragile: Things That Gain from Disorder  
 ## 🤖 AI Summary  
 ### Antifragile: Things That Gain from Disorder 🛠️  
-** 📚 TL;DR:** Systems can be designed to not just withstand 💪 stress, but to improve and 🌱 grow stronger from it, a quality termed "antifragility," by embracing 💥 volatility and avoiding over-optimization.  
+**📚 TL;DR:** Systems can be designed to not just withstand 💪 stress, but to improve and 🌱 grow stronger from it, a quality termed "antifragility," by embracing 💥 volatility and avoiding over-optimization.  
   
 **🤯 New or Surprising Perspective 🤯:** 🧠 Nassim Nicholas Taleb challenges the conventional wisdom that stability 🧘 and predictability are always desirable. He argues that many systems, from biological 🦠 organisms to economic 📈 markets, thrive on randomness 🎲 and stressors. By understanding and leveraging antifragility, we can build 🧱 resilience and capitalize 💰 on uncertainty ❓, rather than fearing 😨 it. This perspective flips the traditional risk ⚠️ management approach on its head 🔄, suggesting that seeking some level of disorder 🤪 is beneficial 👍.  
   

@@ -146,6 +146,7 @@ URL: https://bagrounds.org/books
 - [Site Reliability Engineering](./site-reliability-engineering.md)  
 - [Small Animal Internal Medicine](./small-animal-internal-medicine.md)  
 - [Smart but Scattered](./smart-but-scattered.md)  
+- [Snow Crash](./snow-crash.md)  
 - [Soft Wired: How the New Science of Brain Plasticity Can Change Your Life](./soft-wired-how-the-new-science-of-brain-plasticity-can-change-your-life.md)  
 - [Software Estimation](./software-estimation.md)  
 - [Spark: The Revolutionary New Science of Exercise and the Brain](./spark-the-revolutionary-new-science-of-exercise-and-the-brain.md)  

@@ -60,11 +60,11 @@ This book departs from traditional statistical approaches that primarily focus o
 #### **Book Recommendations 📚:**  
 * **Best Alternate Book on the Same Topic:** "Causal Inference: What If" by Miguel A. Hernán and James M. Robins. This book provides a comprehensive and rigorous treatment of causal inference, with a focus on potential outcomes and counterfactuals. 📖  
 * **Best Tangentially Related Book:** "[The Book of Why](./the-book-of-why.md): The New Science of Cause and Effect" by Judea Pearl and Dana Mackenzie. A more accessible introduction to causal inference, focusing on the history and philosophy of causal reasoning. 💡  
-* **Best Diametrically Opposed Book:** "Naked Statistics: Stripping the Dread from the Data" by Charles Wheelan. This book emphasizes descriptive statistics and correlation, highlighting the power of data analysis without delving into causal inference. 📊  
+* **Best Diametrically Opposed Book:** "[Naked Statistics](./naked-statistics.md): Stripping the Dread from the Data" by Charles Wheelan. This book emphasizes descriptive statistics and correlation, highlighting the power of data analysis without delving into causal inference. 📊  
 * **Best Fiction Book That Incorporates Related Ideas:** "Recursion" by Blake Crouch. This thriller explores the manipulation of memory and reality, touching on counterfactuals and the consequences of altering past events. ⏳  
-* **Best Book That Is More General:** "Probability Theory: The Logic of Science" by E.T. Jaynes. This book provides a comprehensive treatment of probability theory as a foundation for scientific reasoning. 🎲  
+* **Best Book That Is More General:** "[Probability Theory](./probability-theory.md): The Logic of Science" by E.T. Jaynes. This book provides a comprehensive treatment of probability theory as a foundation for scientific reasoning. 🎲  
 * **Best Book That Is More Specific:** "Targeted Learning: Causal Inference for Observational and Experimental Data" by Mark J. van der Laan and Sherri Rose. This book focuses on advanced methods for estimating causal effects in complex data settings. 🎯  
-* **Best Book That Is More Rigorous:** "Causality" by Judea Pearl. This book provides a comprehensive and mathematically rigorous treatment of causal inference. 🤯  
+* **Best Book That Is More Rigorous:** "[Causality](./causality.md)" by Judea Pearl. This book provides a comprehensive and mathematically rigorous treatment of causal inference. 🤯  
 * **Best Book That Is More Accessible:** "[Thinking in Systems](./thinking-in-systems.md): A Primer" by Donella H. Meadows. This book is a very accessible introduction to system thinking, which has a lot of overlap with causal inference, and uses simple language and diagrams. 🌳  
   
 ## 💬 [Gemini](https://gemini.google.com) Prompt  

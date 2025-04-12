@@ -11,9 +11,9 @@ tags:
 # Antifragile: Things That Gain from Disorder  
 ## 🤖 AI Summary  
 ### Antifragile: Things That Gain from Disorder 🛠️  
-**TL;DR:** Systems can be designed to not just withstand stress, but to improve and grow stronger from it, a quality termed "antifragility," by embracing volatility and avoiding over-optimization.  
+** 📚 TL;DR:** Systems can be designed to not just withstand 💪 stress, but to improve and 🌱 grow stronger from it, a quality termed "antifragility," by embracing 💥 volatility and avoiding over-optimization.  
   
-**New or Surprising Perspective 🤯:** Nassim Nicholas Taleb challenges the conventional wisdom that stability and predictability are always desirable. He argues that many systems, from biological organisms to economic markets, thrive on randomness and stressors. By understanding and leveraging antifragility, we can build resilience and capitalize on uncertainty, rather than fearing it. This perspective flips the traditional risk management approach on its head, suggesting that seeking some level of disorder is beneficial.  
+**🤯 New or Surprising Perspective 🤯:** 🧠 Nassim Nicholas Taleb challenges the conventional wisdom that stability 🧘 and predictability are always desirable. He argues that many systems, from biological 🦠 organisms to economic 📈 markets, thrive on randomness 🎲 and stressors. By understanding and leveraging antifragility, we can build 🧱 resilience and capitalize 💰 on uncertainty ❓, rather than fearing 😨 it. This perspective flips the traditional risk ⚠️ management approach on its head 🔄, suggesting that seeking some level of disorder 🤪 is beneficial 👍.  
   
 ### Deep Dive 🔍  
 #### **Topics, Methods, and Research:**  
@@ -61,7 +61,7 @@ tags:
 * **Best Fiction Book That Incorporates Related Ideas:** "Cryptonomicon" by Neal Stephenson. This novel explores themes of cryptography, information theory, and the impact of unpredictable events, reflecting some of Taleb's concerns about systemic risk. 💻  
 * **Best Book That Is More General:** "[Sapiens: A Brief History of Humankind](./sapiens-a-brief-history-of-humankind.md)" by Yuval Noah Harari. This book provides a broad overview of human history and evolution, offering a context for understanding the role of adaptation and change. 🌍  
 * **Best Book That Is More Specific:** "Fooled by Randomness: The Hidden Role of Chance in Life and the Markets" by Nassim Nicholas Taleb. This early work focuses more directly on the role of randomness in financial markets. 📈  
-* **Best Book That Is More Rigorous:** "Probability Theory: The Logic of Science" by E.T. Jaynes. This book offers a deep dive into the mathematical foundations of probability and Bayesian inference. 🧮  
+* **Best Book That Is More Rigorous:** "[Probability Theory](./probability-theory.md): The Logic of Science" by E.T. Jaynes. This book offers a deep dive into the mathematical foundations of probability and Bayesian inference. 🧮  
 * **Best Book That Is More Accessible:** "The Most Important Thing Illuminated: Uncommon Sense for the Thoughtful Investor" by Howard Marks. This book offers valuable insights into risk management and investment strategy in a clear and concise manner. 💰  
   
 ## 💬 [Gemini](https://gemini.google.com) Prompt  

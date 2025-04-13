@@ -11,6 +11,7 @@ tags:
 # An Architect of Democracy: Building a Mosaic of Peace  
 ## 🤖 AI Summary  
 ### An Architect of 🗳️ Democracy: Building a Mosaic of 🕊️ Peace  
+by James Robert Huntley  
   
 ### 🎯 TL;DR  
 This book argues that lasting peace 🕊️ is built piece by piece, like a mosaic 🖼️, through the deliberate strengthening of democratic institutions 🏛️, fostering international cooperation 🤝, and empowering engaged citizens 🧑‍🤝‍🧑, drawing heavily on the author's extensive personal experience in post-WWII transatlantic relations.  

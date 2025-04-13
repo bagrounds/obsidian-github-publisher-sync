@@ -25,6 +25,7 @@ tags:
     - 🐒 Why am I doing _this_?  
 - 🧘 Passive reflection (journaling ✍️) as a step toward 💡 active reflection (inquiry 🧐).  
 - 🍂 Wabi-sabi: beautiful imperfection.  
+- 🤏 Less but better.  
   
 ## 🤖 AI Summary  
 ### 📖 TL;DR 🚀  

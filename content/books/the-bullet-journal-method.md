@@ -7,7 +7,7 @@ URL: https://bagrounds.org/books/the-bullet-journal-method
 Author: 
 tags: 
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](../index.md) > [Books](./index.md) | [Bullet Journal](../videos/bullet-journal.md)  
 # The Bullet Journal Method  
 ## 📝🐒 Human Notes  
 - 🧭 Ikigai: Life Worth, A Reason for Being  

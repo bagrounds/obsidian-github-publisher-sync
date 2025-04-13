@@ -14,6 +14,7 @@ URL: https://bagrounds.org/books
 - [Accelerate](./accelerate.md)  
 - [Adaptive Control](./adaptive-control.md)  
 - [Algorithms to Live By: The Computer Science of Human Decisions](./algorithms-to-live-by.md)  
+- [An Architect of Democracy: Building a Mosaic of Peace](./an-architect-of-democracy.md)  
 - [An Introduction to Causal Inference](./an-introduction-to-causal-inference.md)  
 - [Antifragile: Things That Gain from Disorder](./antifragile-things-that-gain-from-disorder.md)  
 - [Architectural Styles and the Design of Network Based Software Architectures](./architectural-styles-and-the-design-of-network-based-software-architectures.md)  

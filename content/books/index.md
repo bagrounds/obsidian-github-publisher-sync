@@ -123,6 +123,7 @@ URL: https://bagrounds.org/books
 - [Organize for Complexity](./organize-for-complexity.md)  
 - [Out Of The Crisis](./out-of-the-crisis.md)  
 - [Outlive](./outlive.md)  
+- [Pax Democratica: A Strategy for the 21st Century](./pax-democratica.md)  
 - [Peak](./peak.md)  
 - [Peril](./peril.md)  
 - [Pets on the Couch](./pets-on-the-couch.md)  

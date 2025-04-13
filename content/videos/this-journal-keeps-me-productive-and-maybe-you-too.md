@@ -2,7 +2,7 @@
 share: true
 aliases:
   - 📓 Theme System Journal
-title: This Journal Keeps Me Productive (& Maybe You Too)
+title: 📓 This Journal Keeps Me Productive (& Maybe You Too)
 URL: https://youtu.be/fSwpe8r50_o
 Author: 
 Platform: "#YouTube"

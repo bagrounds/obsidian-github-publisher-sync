@@ -115,6 +115,7 @@ URL: https://bagrounds.org/books
 - [Nonviolent Communication](./nonviolent-communication.md)  
 - [Nudge](./nudge.md)  
 - [On Corruption in America: And What Is at Stake](./on-corruption-in-america-and-what-is-at-stake.md)  
+- [On Democracy](./on-democracy.md)  
 - [On Freedom](./on-freedom.md)  
 - [On Tyranny: Twenty Lessons from the Twentieth Century](./on-tyranny.md)  
 - [On Writing: A Memoir of the Craft](./on-writing.md)  

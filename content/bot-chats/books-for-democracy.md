@@ -30,7 +30,7 @@ URL: https://bagrounds.org/bot-chats/books-for-democracy
 ✊ **Taking Action to Defend Democracy:**  
   
 * 🇺🇸 **[🏛️🛡️ Democracy or Else: How to Save America in 10 Easy Steps](../books/democracy-or-else.md) by Jon Favreau, Jon Lovett, and Tommy Vietor (2020):** 🗺️ A practical and engaging guide from the hosts of "Pod Save America" on how to get informed, get involved in politics, and take action to protect democracy.  
-* 📜 **"The Bill of Obligations: The Ten Habits of Good Citizens" by Richard Haass (2023):** 🙏 Argues that the survival of American democracy requires a renewed focus on the duties and responsibilities of citizenship, not just rights.  
+* **[📜🤝 The Bill of Obligations: The Ten Habits of Good Citizens](../books/the-bill-of-obligations.md) by Richard Haass (2023):** 🙏 Argues that the survival of American democracy requires a renewed focus on the duties and responsibilities of citizenship, not just rights.  
 * 🛡️ **"How to Stand Up to a Dictator: The Fight for Our Future" by Maria Ressa (2022):** 📰 A firsthand account from a journalist battling authoritarianism in the Philippines, offering inspiration and strategies for defending democratic values in the face of oppression.  
   
 🕰️ **Historical Perspectives on Democratic Struggles:**  

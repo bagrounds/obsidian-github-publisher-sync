@@ -9,6 +9,13 @@ tags:
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 👨‍🚀 The Self-Driven Child: The 🔬 Science and 🤔 Sense of Giving Your Kids More 🕹️ Control Over Their Lives  
+## 📝🐒 Human Notes  
+- 😫 Stressors: 🥜 NUTS  
+    - 🆕 Novelty  
+    - 😵‍💫 Unpredictability  
+    - 😥 Threat to ego  
+    - 🚫🕹️ Sense of (lack of) control  
+  
 ## 🤖📚 AI Book Report   
 ### 📝 Summary  
   

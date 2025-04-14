@@ -80,7 +80,7 @@ by Timothy Snyder
 * **Best Tangentially Related Book:** "The Road to Unfreedom" by Timothy Snyder. 🛣️ This book explores the rise of Russian authoritarianism and its global implications. 🌐  
 * **Best Diametrically Opposed Book:** "The Authoritarian Personality" by Theodor W. Adorno et al. 🤯 This book explores psychological underpinnings of authoritarianism. While not opposed in topic, it is opposed in the idea that authoritarianism is a personality trait, rather than a political action.  
 * **Best Fiction Book That Incorporates Related Ideas:** "[1984](./1984.md)" by George Orwell. 👁️ This dystopian novel explores the dangers of totalitarianism and government surveillance. 🚨  
-* **Best Book That Is More General:** "The Origins of Totalitarianism" by Hannah Arendt. 📜 This book provides a comprehensive analysis of the historical roots of totalitarian regimes. 🏛️  
+* **Best Book That Is More General:** "[👹 The Origins of Totalitarianism](./the-origins-of-totalitarianism.md)" by Hannah Arendt. 📜 This book provides a comprehensive analysis of the historical roots of totalitarian regimes. 🏛️  
 * **Best Book That Is More Specific:** "Stalin: Paradoxes of Power, 1878-1928" by Stephen Kotkin. 🇷🇺 This book provides a detailed look at the rise of Joseph Stalin and the early years of the Soviet Union. 📖  
 * **Best Book That Is More Rigorous:** "The Anatomy of Fascism" by Robert Paxton. 🧐 This book provides a deep and thorough historical analysis of fascism. 🏛️  
 * **Best Book That Is More Accessible:** "[Strongmen: Mussolini to the Present](./strongmen.md)" by Ruth Ben-Ghiat. 🗣️ This book is a more accessible, and modern look at authoritarian leaders. 👑  

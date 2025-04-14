@@ -117,7 +117,7 @@ URL: https://bagrounds.org/books
 - [Never Split The Difference](./never-split-the-difference.md)  
 - [Noise](./noise.md)  
 - [Nonlinear Dynamics and Chaos](./nonlinear-dynamics-and-chaos.md)  
-- [Nonviolent Communication](./nonviolent-communication.md)  
+- [🕊️🤝 Nonviolent Communication](./nonviolent-communication.md)  
 - [Nudge](./nudge.md)  
 - [On Corruption in America: And What Is at Stake](./on-corruption-in-america-and-what-is-at-stake.md)  
 - [On Democracy](./on-democracy.md)  

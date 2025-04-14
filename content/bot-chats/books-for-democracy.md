@@ -24,7 +24,7 @@ URL: https://bagrounds.org/bot-chats/books-for-democracy
 👺 **Understanding Authoritarianism and Tyranny:**  
   
 * ✍️ **"[On Tyranny: Twenty Lessons from the Twentieth Century](../books/on-tyranny.md)" by Timothy Snyder (2017):** 📚 Drawing on the history of 20th-century totalitarian regimes, this concise book offers practical lessons for resisting modern authoritarian tendencies.  
-* 👹 **"The Origins of Totalitarianism" by Hannah Arendt (1951):** 🧠 A seminal work that dissects the historical and ideological roots of totalitarianism in the 20th century, providing a framework for understanding extreme forms of anti-democratic thought and action.  
+* **[👹 The Origins of Totalitarianism](../books/the-origins-of-totalitarianism.md) by Hannah Arendt (1951):** 🧠 A seminal work that dissects the historical and ideological roots of totalitarianism in the 20th century, providing a framework for understanding extreme forms of anti-democratic thought and action.  
 * 💪 **"[Strongmen: Mussolini to the Present](../books/strongmen.md)" by Ruth Ben-Ghiat (2020):** 📜 This historical analysis examines the characteristics and tactics of authoritarian leaders across different eras, revealing patterns in their rise to power and their methods of control.  
   
 ✊ **Taking Action to Defend Democracy:**  

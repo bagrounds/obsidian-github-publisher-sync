@@ -40,7 +40,7 @@ tags:
 🕰️ **Historical Parallels to Authoritarianism:**  
 - 🇩🇪 _The Rise and Fall of the Third Reich: A History of Nazi Germany_ by William L. Shirer: 📖 A comprehensive historical account of the Nazi regime and its ascent to power. 🚩  
 - 😥 _They Thought They Were Free: The Germans 1933-45_ by Milton Sanford Mayer: 🧠 Explores the mindset of ordinary German citizens during the Nazi era and how they became complicit. 👤  
-- 📜 _The Origins of Totalitarianism_ by Hannah Arendt: 🏛️ A seminal work analyzing the historical and political conditions that led to the rise of totalitarian regimes. 📚  
+- [👹 The Origins of Totalitarianism](../books/the-origins-of-totalitarianism.md) by Hannah Arendt: 🏛️ A seminal work analyzing the historical and political conditions that led to the rise of totalitarian regimes. 📚  
   
 🤫 **Government Corruption and Intimidation:**  
 - 🤐 _The Intimidation Game: How the Left Is Silencing Free Speech_ by Kimberley Strassel: 🚫 Presents a perspective on alleged intimidation tactics used in political discourse. 🗣️  

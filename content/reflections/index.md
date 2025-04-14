@@ -7,6 +7,7 @@ URL: https://bagrounds.org/reflections
 ---
 [Home](../index.md)  
 # 🪞 Reflections  
+- [2025-04-14](./2025-04-14.md)  
 - [2025-04-13 | 💪 Empower 👥 People](./2025-04-13.md)  
 - [2025-04-12 | 🗳️ Democracy](./2025-04-12.md)  
 - [2025-04-11 | 🦬 Technicalities 🪒 | 👹 Extortionist in 👑 Chief](./2025-04-11.md)  

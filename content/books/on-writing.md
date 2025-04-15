@@ -1,14 +1,14 @@
 ---
 share: true
 aliases:
-  - "On Writing: A Memoir of the Craft"
-title: "On Writing: A Memoir of the Craft"
+  - "📜 On Writing: A Memoir of the Craft"
+title: "📜 On Writing: A Memoir of the Craft"
 URL: https://bagrounds.org/books/on-writing
 Author: 
 tags: 
 ---
 [Home](../index.md) > [Books](./index.md)  
-# On Writing: A Memoir of the Craft  
+# 📜 On Writing: A Memoir of the Craft  
 by Stephen King  
   
 ## 🤖 AI Summary  
@@ -53,7 +53,7 @@ by Stephen King
 **⭐ Prominent Examples:**  
   
 * 👑 King uses his own books, such as 🩸 *Carrie*, 🤕 *Misery*, and 🧍 *The Stand*, as examples to illustrate his writing principles. He dissects scenes 🔪 and explains his thought process 🧠 behind them. 📖  
-* ✍️ He also refers to the works of other authors, such as William Strunk Jr. and E.B. White's 📜 *The Elements of Style*, to support 💪 his arguments about grammar 🔤 and style. 🎨  
+* ✍️ He also refers to the works of other authors, such as William Strunk Jr. and E.B. White's 📜 *[The Elements of Style](./the-elements-of-style.md)*, to support 💪 his arguments about grammar 🔤 and style. 🎨  
 * 💍 The anecdote about his wife Tabitha rescuing the discarded manuscript 📄 of 🩸 *Carrie* from the trash highlights the importance of perseverance 🏃 and belief 🙏 in one's own work. 🗑️➡️🏆  
   
 **💡Practical Takeaways:**  

@@ -84,7 +84,7 @@ Goldberg frequently uses anecdotes from her own life and experiences with her st
   
 * **Best Alternate Book on the Same Topic:** *[The Artist's Way](./the-artists-way.md)* by Julia Cameron 🎨 (Similar emphasis on unlocking creativity through a process-oriented approach, but more structured.)  
 * **Best Tangentially Related Book:** *Bird by Bird* by Anne Lamott 🐦 (Provides practical advice on writing and life, focusing on overcoming perfectionism and embracing the writing process.)  
-* **Best Diametrically Opposed Book:** *The Elements of Style* by William Strunk Jr. and E.B. White ✍️ (Focuses on grammar, structure, and clarity, emphasizing precision and conciseness in writing.)  
+* **Best Diametrically Opposed Book:** *[🦢 The Elements of Style](./the-elements-of-style.md)* by William Strunk Jr. and E.B. White ✍️ (Focuses on grammar, structure, and clarity, emphasizing precision and conciseness in writing.)  
 * **Best Fiction Book that Incorporates Related Ideas:** *Big Magic: Creative Living Beyond Fear* by Elizabeth Gilbert 🪄 (Explores the nature of creativity and inspiration through a blend of memoir, philosophy, and practical advice.)  
 * **Best Book That is More General:** *Steering the Craft: A Twenty-First-Century Guide to Sailing the Sea of Story* by Ursula K. Le Guin ⛵(This book is a guide for fiction writers that covers more traditional topics like plot, voice, and character.)  
 * **Best Book That is More Specific:** *Writing the Breakout Novel Workbook* by Donald Maass 💥(This workbook guides the reader through specific exercises that help them craft a novel with the potential to become a breakout hit.)  

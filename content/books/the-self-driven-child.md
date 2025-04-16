@@ -18,6 +18,7 @@ tags:
 - 👨‍👩‍👧‍👦 Parenting styles  
     - ⚖️ Authoritarian vs 🧸 Permissive - ⚠️ false dichotomy  
     - 💖 Authoritative: 🔥 High warmth, 🚦 clear limits, 🗣️ open communication  
+- 🤔 Socially anxious parents 😟 tend to be 🚧 overly controlling 🚷 of their children 👶.  
   
 ## 🤖📚 AI Book Report   
 ### 📝 Summary  

@@ -16,9 +16,11 @@ tags:
     - 😥 Threat to ego  
     - 🚫🕹️ Sense of (lack of) control  
 - 👨‍👩‍👧‍👦 Parenting styles  
-    - ⚖️ Authoritarian vs 🧸 Permissive - ⚠️ false dichotomy  
+    - 👑 Authoritarian vs 🧸 Permissive - ⚠️ false dichotomy  
     - 💖 Authoritative: 🔥 High warmth, 🚦 clear limits, 🗣️ open communication  
 - 🤔 Socially anxious parents 😟 tend to be 🚧 overly controlling 🚷 of their children 👶.  
+- 🧘 Be a non-anxious presence. 😌  
+- 😃 Be a source of joy. 🎉🥳😁  
   
 ## 🤖📚 AI Book Report   
 ### 📝 Summary  

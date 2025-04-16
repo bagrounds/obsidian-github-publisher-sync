@@ -6,6 +6,7 @@ title: Articles
 ---
 [Home](../index.md)  
 # Articles  
+- [📚🔥 Naval Academy removes nearly 400 books from library in new DEI purge ordered by Hegseth’s office](./naval-academy-removes-nearly-400-books-from-library-in-new-dei-purge-ordered-by-hegseths-office.md)  
 - [5 tips on getting started with Gems, your custom AI experts](./5-tips-on-getting-started-with-gems-your-custom-ai-experts.md)  
 - [Cannabis for Pets With Cancer](./cannabis-for-pets-with-cancer.md)  
 - [How Project 2025 Would Devastate Public Education](./how-project-2025-would-devastate-public-education.md)  

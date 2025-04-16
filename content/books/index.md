@@ -238,6 +238,7 @@ URL: https://bagrounds.org/books
 - [Understanding Modern Money](./understanding-modern-money.md)  
 - [Universal Principles of Design](./universal-principles-of-design.md)  
 - [What's Going On in There?: How the Brain and Mind Develop in the First Five Years of Life](./whats-going-on-in-there.md)  
+- [✍🏿🇺🇸💔 Why Didn't We Riot?: A Black Man In Trumpland](./why-didnt-we-riot.md)  
 - [🦓 Why Zebras Don't Get Ulcers: The Acclaimed Guide to Stress, Stress-Related Disease, and Coping](./why-zebras-dont-get-ulcers.md)  
 - [Willpower](./willpower.md)  
 - [Writing Down the Bones](./writing-down-the-bones.md)  

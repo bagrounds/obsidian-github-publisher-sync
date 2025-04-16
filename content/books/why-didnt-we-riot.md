@@ -3,7 +3,7 @@ share: true
 aliases:
   - "✍🏿🇺🇸💔 Why Didn't We Riot?: A Black Man In Trumpland"
 title: "✍🏿🇺🇸💔 Why Didn't We Riot?: A Black Man In Trumpland"
-URL: https://bagrounds.org/books/why-didnt-we-riot-a-black-man-in-trumpland-by-issac-j-bailey
+URL: https://bagrounds.org/books/why-didnt-we-riot
 Author: 
 tags: 
 ---

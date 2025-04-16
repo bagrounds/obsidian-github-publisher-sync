@@ -7,12 +7,14 @@ URL: https://bagrounds.org/topics
 ---
 [Home](../index.md)  
 # Topics  
+- [⚛️ Quantum Computing](./quantum-computing.md)  
 - [A Hierarchical View of Human Knowledge](./a-hierarchical-view-of-human-knowledge.md)  
 - [A Method For Estimating Work](./a-method-for-estimating-work.md)  
 - [Adaptive Control](./adaptive-control.md)  
 - [ANSI escape codes](./ansi-escape-codes.md)  
 - [Applied Arts](./applied-arts.md)  
 - [Arts](./arts.md)  
+- [Books Removed From Naval Academy Library](./books-removed-from-naval-academy-library.md)  
 - [Code Testing and Validation](./code-testing-and-validation.md)  
 - [Communication Studies](./communication-studies.md)  
 - [Computer Science](./computer-science.md)  

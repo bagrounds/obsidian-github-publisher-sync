@@ -105,6 +105,7 @@ URL: https://bagrounds.org/books
 - [Learning To See](./learning-to-see.md)  
 - [Learn You a Haskell for Great Good!](./learn-you-a-haskell-for-great-good.md)  
 - [Longitude: The True Story of a Lone Genius Who Solved the Greatest Scientific Problem of His Time](./longitude.md)  
+- [🧑🏿⚖️🧑🏻 Long Time Coming: Reckoning With Race In America](./long-time-coming-reckoning-with-race-in-america.md)  
 - [Macroeconomics](./macroeconomics.md)  
 - [Made to Stick: Why Some Ideas Survive and Others Die](./made-to-stick.md)  
 - [Mad House: How Donald Trump, MAGA Mean Girls, a Former Used Car Salesman, a Florida Nepo Baby, and a Man with Rats in His Walls Broke Congress](./mad-house.md)  

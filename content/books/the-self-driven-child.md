@@ -15,6 +15,9 @@ tags:
     - 😵‍💫 Unpredictability  
     - 😥 Threat to ego  
     - 🚫🕹️ Sense of (lack of) control  
+- 👨‍👩‍👧‍👦 Parenting styles  
+    - ⚖️ Authoritarian vs 🧸 Permissive - ⚠️ false dichotomy  
+    - 💖 Authoritative: 🔥 High warmth, 🚦 clear limits, 🗣️ open communication  
   
 ## 🤖📚 AI Book Report   
 ### 📝 Summary  

@@ -7,6 +7,7 @@ URL: https://bagrounds.org/bot-chats
 ---
 [Home](../index.md)  
 # Bot Chats  
+- [🧭 Managing 🕸️ Complexity 🧠](./managing-complexity.md)  
 - [AI Engineering Assistant Technology Recommendations](./ai-engineering-assistant-technology-recommendations.md)  
 - [Android Local LLMs](./android-local-llms.md)  
 - [Book Explorer 1](./book-explorer-1.md)  

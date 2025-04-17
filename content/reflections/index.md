@@ -7,6 +7,8 @@ URL: https://bagrounds.org/reflections
 ---
 [Home](../index.md)  
 # 🪞 Reflections  
+- [2025-04-17](./2025-04-17.md)  
+- [2025-04-16 | 🕹️⚛️🛜 Intent 🦊👀](./2025-04-16.md)  
 - [2025-04-15 | ⚓🚫✊🏿 Anti-Anti-Racism 📚🔥](./2025-04-15.md)  
 - [2025-04-14 | 🧭 Autonomy | 🗺️ Society](./2025-04-14.md)  
 - [2025-04-13 | 💪 Empower 👥 People](./2025-04-13.md)  

@@ -6,6 +6,7 @@ title: Articles
 ---
 [Home](../index.md)  
 # Articles  
+- [👀 Attention Is All You Need](./attention-is-all-you-need.md)  
 - [📚🔥 Naval Academy removes nearly 400 books from library in new DEI purge ordered by Hegseth’s office](./naval-academy-removes-nearly-400-books-from-library-in-new-dei-purge-ordered-by-hegseths-office.md)  
 - [🦊😈🐾🕵️💸 5 takeaways about NPR's reporting on the whistleblower report about DOGE at the NLRB](./5-takeaways-about-nprs-reporting-on-the-whistleblower-report-about-doge-at-the-nlrb.md)  
 - [5 tips on getting started with Gems, your custom AI experts](./5-tips-on-getting-started-with-gems-your-custom-ai-experts.md)  

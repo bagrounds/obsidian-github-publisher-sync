@@ -8,7 +8,7 @@ URL: https://bagrounds.org/bot-chats/managing-complexity
 [Home](../index.md) > [Bot Chats](./index.md)  
 # 🧭 Managing 🕸️ Complexity 🧠  
   
-![bot-chats/managing-complexity > tldr](managing-complexity.md#tldr)  
+![tldr](managing-complexity.md##tldr)  
   
 ## 💬 [Gemini](../software/gemini.md) Prompt 1. 📖 Book  
 > Recommend a book about managing complexity.  

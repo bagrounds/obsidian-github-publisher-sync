@@ -17,7 +17,7 @@ URL: https://bagrounds.org/bot-chats/managing-complexity
   
 ⭐ **For a Practical, Rule-Based Approach:**  
   
-* ⚙️ **"Six Simple Rules: How to Manage Complexity without Getting Complicated" by Yves Morieux and Peter Tollman:** This book, 📚 based on social sciences and the authors' extensive consulting experience, 🤝 presents six straightforward rules 📏 to foster autonomy and cooperation, 🤝 enabling organizations to handle complexity effectively. ✅ It emphasizes leveraging people's intelligence 💡 rather than relying on complicated structures or "soft" initiatives. 🚫  
+* ⚙️ **"[🧶✔️ Six Simple Rules: How to Manage Complexity without Getting Complicated](../books/six-simple-rules.md)" by Yves Morieux and Peter Tollman:** This book, 📚 based on social sciences and the authors' extensive consulting experience, 🤝 presents six straightforward rules 📏 to foster autonomy and cooperation, 🤝 enabling organizations to handle complexity effectively. ✅ It emphasizes leveraging people's intelligence 💡 rather than relying on complicated structures or "soft" initiatives. 🚫  
   
 ⭐ **For a Deep Dive into Systems Thinking:**  
   
@@ -35,7 +35,7 @@ URL: https://bagrounds.org/bot-chats/managing-complexity
   
 ⭐ **Other Notable Books:**  
   
-* 🌱 **"Emergent Strategy: Shaping Change, Changing Worlds" by adrienne maree brown:** This book offers a unique perspective, 🌿 drawing on social justice movements ✊ and ecological principles 🌍 to provide insights into navigating complexity and fostering change. 🦋  
+* **[🦋 Emergent Strategy: Shaping Change, Changing Worlds](../books/emergent-strategy.md) by adrienne maree brown:** This book offers a unique perspective, 🌿 drawing on social justice movements ✊ and ecological principles 🌍 to provide insights into navigating complexity and fostering change. 🦋  
 * 💡 **"Cracking Complexity: The Breakthrough Formula for Solving Just About Anything" by David Komlos and David Benjamin:** This book offers a practical, step-by-step approach 🪜 to breaking down and solving complex problems. 🧩  
   
 The best book for you will depend on your specific interests 🎯 and the context in which you are dealing with complexity. 🤔 Consider whether you are looking for practical management tools, 🧰 a deeper understanding of systems thinking principles, 💭 or insights into the fundamental nature of complexity itself. 🔬  

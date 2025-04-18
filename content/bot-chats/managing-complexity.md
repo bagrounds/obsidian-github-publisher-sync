@@ -8,7 +8,7 @@ URL: https://bagrounds.org/bot-chats/managing-complexity
 [Home](../index.md) > [Bot Chats](./index.md)  
 # 🧭 Managing 🕸️ Complexity 🧠  
   
-![bot-chats/managing-complexity > 💬 5 - 😴 TLDR](managing-complexity.md#💬%205%20-%20😴%20TLDR)  
+![bot-chats/managing-complexity > TLDR](managing-complexity.md#TLDR)  
   
 ## 💬 [Gemini](../software/gemini.md) Prompt 1. 📖 Book  
 > Recommend a book about managing complexity.  
@@ -149,7 +149,7 @@ Alright, let's 🚀 delve even deeper and explore some often overlooked or less 
   
 📜 This manifesto is not a rigid set of rules 📏, but a guiding philosophy for navigating the intricate dance 💃 of complexity. It requires ongoing reflection 🧐, adaptation 🤸, and a commitment to continuous learning. 📚 By embracing these principles, we can move beyond being overwhelmed by complexity 🤯 and instead learn to harness its inherent potential for innovation 🚀, resilience 💪, and growth. 🌱  
   
-## 💬 5 - 😴 TLDR  
+## TLDR  
 > Now distill our manifesto into a concise TL;DR  
   
 **📚 TL;DR**: 🤯 Complexity is the norm, not the enemy. 🛑 Stop trying to oversimplify and control. 💡 Instead, understand how systems connect 🔗 and adapt 🔄, learn constantly 🤓, build resilience 💪, empower people 🌟, and lead with humility 🙏. ✅ Focus on enabling positive outcomes ✨, not just predicting them 🔮.

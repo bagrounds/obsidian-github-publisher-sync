@@ -5,7 +5,7 @@ aliases:
   - 👥 People
 ---
 [Home](../index.md)  
-# 👥 People  
+# 👥 People (7)  
 - [Andrej Karpathy](./andrej-karpathy.md)  
 - [Jay Kreps](./jay-kreps.md)  
 - [Nicholas Dodman](./nicholas-dodman.md)  

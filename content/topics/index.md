@@ -6,7 +6,7 @@ title: 🌌 Topics
 URL: https://bagrounds.org/topics
 ---
 [Home](../index.md)  
-# 🌌 Topics  
+# 🌌 Topics (65)  
 - [Adaptive Control](./adaptive-control.md)  
 - [A Hierarchical View of Human Knowledge](./a-hierarchical-view-of-human-knowledge.md)  
 - [A Method For Estimating Work](./a-method-for-estimating-work.md)  

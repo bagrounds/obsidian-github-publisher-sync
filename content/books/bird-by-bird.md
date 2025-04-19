@@ -37,7 +37,7 @@ tags:
 These books share Lamott's blend of practical advice, personal reflection, and encouragement for the writing life:  
 * ✍️ **[📜 On Writing: A Memoir of the Craft](./on-writing.md)** by Stephen King: 📖 Part memoir, part writing guide, King offers pragmatic advice alongside his personal journey. 🤝 Often compared to *Bird by Bird* for its honesty and practical tips.  
 * ✍️ **[Writing Down the Bones](./writing-down-the-bones.md): Freeing the Writer Within** by Natalie Goldberg: 🧘 Focuses on writing practice, mindfulness, and freeing the creative spirit, similar to Lamott's emphasis on process and overcoming internal barriers.  
-* ✨ **Big Magic: Creative Living Beyond Fear** by Elizabeth Gilbert: 🚀 Explores creativity, inspiration, and overcoming fear, resonating with Lamott's themes of faith and perseverance.  
+* ✨ **[🪄 Big Magic: Creative Living Beyond Fear](./big-magic.md)** by Elizabeth Gilbert: 🚀 Explores creativity, inspiration, and overcoming fear, resonating with Lamott's themes of faith and perseverance.  
 * 🎨 **[The Artist's Way](./the-artists-way.md): A Spiritual Path to Higher Creativity** by Julia Cameron: 🧘 A classic guide to unlocking creativity through exercises like "morning pages," sharing a focus on process and overcoming blocks, though often described as more overtly spiritual.  
 * ✍️ **Still Writing: The Perils and Pleasures of a Creative Life** by Dani Shapiro: 🤔 Offers reflections and advice on the writing life, echoing Lamott's honesty about the challenges and rewards.  
 * ✍️ **The Writing Life** by Annie Dillard: 📖 A collection of essays reflecting on the dedication, challenges, and deeper meaning of a writer's existence.  

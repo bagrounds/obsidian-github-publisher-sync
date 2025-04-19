@@ -111,12 +111,12 @@ For a research-informed approach to parenting, it’s vital to ground practices 
 To deepen your knowledge, consider these curated resources:  
   
 - **Books:**    
-  - [*The Whole-Brain Child*](https://www.wholebrainchild.com/) by Daniel J. Siegel and Tina Payne Bryson provides strategies to foster healthy brain development.  
+  - [🕳️🧠👶🏽 The Whole-Brain Child: 12 Revolutionary Strategies to Nurture Your Child's Developing Mind](../books/the-whole-brain-child.md) by Daniel J. Siegel and Tina Payne Bryson provides strategies to foster healthy brain development.  
   - [*What to Expect the First Year*](https://www.whattoexpect.com/first-year/) by Heidi Murkoff offers a month-by-month guide to infant care.  
-  - [*Brain Rules for Baby*](https://www.brainrulesbaby.com/) by John Medina focuses on neuroscience-informed parenting.  
+  - [Brain Rules for Baby](../books/brain-rules-for-baby.md) by John Medina focuses on neuroscience-informed parenting.  
     
 - **Videos & Online Courses:**    
-  - [The Happiest Baby on the Block](https://www.happiestbaby.com/) video series by Dr. Harvey Karp is a practical guide to calming your baby.  
+  - [The Happiest Baby On The Block](../books/the-happiest-baby-on-the-block.md) video series by Dr. Harvey Karp is a practical guide to calming your baby.  
   - Explore parenting courses on platforms like [Coursera](https://www.coursera.org/) and [edX](https://www.edx.org/) for structured learning.  
   - TED Talks on parenting can be found by searching topics on the [TED website](https://www.ted.com/topics/parenting).  
     
@@ -145,7 +145,7 @@ Learning from the pioneers and current leaders in the field is invaluable:
 - **Dr. Harvey Karp:** Innovator behind modern soothing techniques and sleep strategies. ([Learn more](https://en.wikipedia.org/wiki/Harvey_Karp))  
 - **Dr. William Sears:** Advocate of attachment parenting and author of *The Baby Book*. ([Learn more](https://en.wikipedia.org/wiki/William_Sears))  
 - **Dr. Laura Markham:** Offers practical guidance on parenting with empathy via [Aha! Parenting](https://www.ahaparenting.com/about-us).  
-- **Daniel J. Siegel & Tina Payne Bryson:** Their work in *The Whole-Brain Child* bridges neuroscience and practical parenting. ([Siegel on Wikipedia](https://en.wikipedia.org/wiki/Daniel_J._Siegel), [Bryson on Wikipedia](https://en.wikipedia.org/wiki/Tina_Payne_Bryson))  
+- **Daniel J. Siegel & Tina Payne Bryson:** Their work in *[🕳️🧠👶🏽 The Whole-Brain Child: 12 Revolutionary Strategies to Nurture Your Child's Developing Mind](../books/the-whole-brain-child.md)* bridges neuroscience and practical parenting. ([Siegel on Wikipedia](https://en.wikipedia.org/wiki/Daniel_J._Siegel), [Bryson on Wikipedia](https://en.wikipedia.org/wiki/Tina_Payne_Bryson))  
   
 ---  
   

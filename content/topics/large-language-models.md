@@ -142,7 +142,7 @@ URL: https://bagrounds.org/topics/large-language-models
 ### 📖 Book Recommendations  
   
 - 📖 Topical: "[Deep Learning](../books/deep-learning.md)" by Ian Goodfellow, Yoshua Bengio, and Aaron Courville 🤯.  
-- 📖 Tangentially related: "Life 3.0: Being Human in the Age of Artificial Intelligence" by Max Tegmark 🤖.  
+- 📖 Tangentially related: [🧬👥💾 Life 3.0: Being Human in the Age of Artificial Intelligence](../books/life-3-0.md) by Max Tegmark 🤖.  
 - 📖 Topically opposed: "The Alignment Problem: Machine Learning and Human Values" by Brian Christian 🧑‍⚖️.  
 - 📖 More general: "Artificial Intelligence: A Modern Approach" by Stuart Russell and Peter Norvig 🧠.  
 - 📖 More specific: "Natural Language Processing with Transformers" by Tunstall, von Werra, Wolf ⚡  

@@ -83,4 +83,4 @@ Storr's work is well-researched and supported by a combination of scientific stu
 * **Best Book More General:** "On Writing Well" by William Zinsser. ✍️  
 * **Best Book More Specific:** "Save the Cat! Writes a Novel" by Jessica Brody. 🐱📖  
 * **Best Book More Rigorous:** "The Writer's Journey: Mythic Structure for Writers" by Christopher Vogler. 🗺️📜  
-* **Best Book More Accessible:** "Bird by Bird" by Anne Lamott. 🐦✍️  
+* **Best Book More Accessible:** "[🐦🕊️ Bird by Bird: Some Instructions on Writing and Life](./bird-by-bird.md)" by Anne Lamott. 🐦✍️  

@@ -21,20 +21,20 @@ Here are some book recommendations that touch on those themes:
   
 **Celebrating the Journey & Achievements:**  
   
-* **"[🐦🕊️ Bird by Bird: Some Instructions on Writing and Life](../books/bird-by-bird.md)" by Anne Lamott:** This is a classic for a reason. It's a warm, funny, and insightful guide to the writing process, filled with practical advice and encouragement for sticking with it, which perfectly aligns with celebrating a year of dedication.  
-* **"[🪄 Big Magic: Creative Living Beyond Fear](../books/big-magic.md)" by Elizabeth Gilbert:** This book explores the nature of creativity, curiosity, and the courage it takes to pursue your passions. It's inspiring for anyone who puts themselves out there through their blog.  
-* **"[📝🎨🎶 Show Your Work!: 10 Ways to Share Your Creativity and Get Discovered](../books/show-your-work.md)" by Austin Kleon:** This book is all about the power of sharing your creative process and connecting with an audience, which is exactly what blogging is about. It's practical and encouraging for continued growth.  
+* **[🐦🕊️ Bird by Bird: Some Instructions on Writing and Life](../books/bird-by-bird.md) by Anne Lamott:** This is a classic for a reason. It's a warm, funny, and insightful guide to the writing process, filled with practical advice and encouragement for sticking with it, which perfectly aligns with celebrating a year of dedication.  
+* **[🪄 Big Magic: Creative Living Beyond Fear](../books/big-magic.md) by Elizabeth Gilbert:** This book explores the nature of creativity, curiosity, and the courage it takes to pursue your passions. It's inspiring for anyone who puts themselves out there through their blog.  
+* **[📝🎨🎶 Show Your Work!: 10 Ways to Share Your Creativity and Get Discovered](../books/show-your-work.md) by Austin Kleon:** This book is all about the power of sharing your creative process and connecting with an audience, which is exactly what blogging is about. It's practical and encouraging for continued growth.  
   
 **Cultivating Writing Habits:**  
   
-* **"[Atomic Habits](../books/atomic-habits.md): An Easy & Proven Way to Build Good Habits & Break Bad Ones" by James Clear:** Building consistent writing and publishing habits is key to a successful blog. This book offers a fantastic framework for understanding and implementing those habits.  
+* **[Atomic Habits](../books/atomic-habits.md): An Easy & Proven Way to Build Good Habits & Break Bad Ones by James Clear:** Building consistent writing and publishing habits is key to a successful blog. This book offers a fantastic framework for understanding and implementing those habits.  
 * **"[The War of Art](../books/the-war-of-art.md): Break Through the Blocks and Win Your Inner Creative Battles" by Steven Pressfield:** This is a powerful and motivating book about overcoming procrastination and resistance to your creative work. It's a great reminder to keep showing up for your blog.  
 * **"[Deep Work](../books/deep-work.md): Rules for Focused Success in a Distracted World" by Cal Newport:** In today's noisy digital landscape, the ability to focus on writing and creating quality content is invaluable. This book provides strategies for cultivating that deep focus.  
   
 **The World of Publishing (Broadly):**  
   
-* **"[✍🏼👍🏼 On Writing Well: The Classic Guide to Writing Nonfiction](../books/on-writing-well.md)" by William Zinsser:** While not specifically about blogging, this book offers timeless advice on clear, concise, and engaging writing, which is essential for any blogger.  
-* **"Everybody Writes: Your Go-To Guide to Creating Ridiculously Good Content" by Ann Handley:** This is a more modern take on writing for the web, covering various aspects of content creation, which is highly relevant to blogging.  
+* **[✍🏼👍🏼 On Writing Well: The Classic Guide to Writing Nonfiction](../books/on-writing-well.md) by William Zinsser:** While not specifically about blogging, this book offers timeless advice on clear, concise, and engaging writing, which is essential for any blogger.  
+* **[🌍✍🏿 Everybody Writes: Your Go-To Guide to Creating Ridiculously Good Content](../books/everybody-writes.md) by Ann Handley:** This is a more modern take on writing for the web, covering various aspects of content creation, which is highly relevant to blogging.  
   
 Given your blog uses lots of emojis, you might also appreciate books that have a friendly and approachable tone, like "Bird by Bird" or "Everybody Writes."  
   

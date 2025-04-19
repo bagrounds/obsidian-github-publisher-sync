@@ -34,7 +34,7 @@ Here are some excellent books to get you started in Computer Science:
     * This book provides a fascinating and accessible explanation of how computers work, starting from the basics of electricity and logic gates to the creation of software. It's a great way to understand the fundamental concepts of computer science. 💡🔌  
 3.  **"Artificial Intelligence: A Modern Approach" by Stuart Russell and Peter Norvig:**  
     * This is a leading textbook on artificial intelligence, covering a wide range of topics from search and planning to machine learning and robotics. It's a comprehensive and authoritative resource for anyone interested in AI. 🤖🧠  
-4.  **"Clean Code: A Handbook of Agile Software Craftsmanship" by Robert C. Martin:**  
+4.  **[🧼💾 Clean Code: A Handbook of Agile Software Craftsmanship](../books/clean-code.md) by Robert C. Martin:**  
     * This book is a must read for anyone that wants to write better code. It focuses on the practices and principles of writing maintainable code. 🧑‍💻✨  
 5.  **"Database System Concepts" by Abraham Silberschatz, Henry F. Korth, and S. Sudarshan:**  
     * This book provides a solid foundation for database systems. It covers a large amount of information, and is very well organized. 📦📊  

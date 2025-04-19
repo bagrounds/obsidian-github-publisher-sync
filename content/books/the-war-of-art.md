@@ -62,7 +62,7 @@ Pressfield reframes the creative process as a battle against a tangible enemy, "
 * Authoritative reviews generally praise the book for its inspirational message and practical advice.  
   
 ### **Book Recommendations** 📚  
-* **Best Alternate Book on the Same Topic:** "Big Magic: Creative Living Beyond Fear" by Elizabeth Gilbert. 🪄 (More about embracing creativity with a less militaristic approach)  
+* **Best Alternate Book on the Same Topic:** "[🪄 Big Magic: Creative Living Beyond Fear](./big-magic.md)" by Elizabeth Gilbert. 🪄 (More about embracing creativity with a less militaristic approach)  
 * **Best Tangentially Related Book:** "[Deep Work](./deep-work.md): Rules for Focused Success in a Distracted World" by Cal Newport. 🧠 (Focuses on developing the ability to concentrate deeply, a key skill for overcoming Resistance)  
 * **Best Diametrically Opposed Book:** "[The Artist's Way](./the-artists-way.md)" by Julia Cameron. 🌈 (Emphasizes nurturing inner creativity through self-discovery and play, contrasting Pressfield's focus on discipline)  
 * **Best Fiction Book That Incorporates Related Ideas:** "[🐦🕊️ Bird by Bird: Some Instructions on Writing and Life](./bird-by-bird.md)" by Anne Lamott. ✍️ (Though a writing book, it heavily incorporates the idea of doing the work, and dealing with the inner voice.)  

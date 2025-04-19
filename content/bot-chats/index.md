@@ -1,8 +1,8 @@
 ---
 share: true
 aliases:
-  - Bot Chats
-title: Bot Chats
+  - 🤖💬 Bot Chats
+title: 🤖💬 Bot Chats
 URL: https://bagrounds.org/bot-chats
 ---
 [Home](../index.md)  

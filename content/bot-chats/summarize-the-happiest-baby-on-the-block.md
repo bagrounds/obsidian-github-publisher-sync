@@ -34,7 +34,7 @@ Considering "The No-Cry Sleep Solution" and "Cribsheet" as the best alternatives
   
 Finding a tangential book  
   
-I’m thinking through "Raising an Emotionally Intelligent Child," "The Whole-Brain Child," or "Bringing Up Bébé" as tangentially related books, covering toddler discipline, early childhood development, or parenting styles.  
+I’m thinking through "Raising an Emotionally Intelligent Child," "[🕳️🧠👶🏽 The Whole-Brain Child: 12 Revolutionary Strategies to Nurture Your Child's Developing Mind](../books/the-whole-brain-child.md)," or "Bringing Up Bébé" as tangentially related books, covering toddler discipline, early childhood development, or parenting styles.  
   
 Weighing options  
   

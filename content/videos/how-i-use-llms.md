@@ -28,7 +28,7 @@ By [Andrej Karpathy](../people/andrej-karpathy.md)
   - **Microsoft Copilot**  
   - **Anthropic’s Claude**  
   - **Elon Musk’s Grok**  
-  - **Chinese (DeepSeek) and French (Mistral) AI models**.  
+  - **Chinese ([🇨🇳🤖 DeepSeek](../topics/deepseek.md)) and French (Mistral) AI models**.  
   
 ### **Where to Track AI Model Performance**  
 - **Leaderboard Websites:**    

@@ -55,7 +55,7 @@ tags:
    – This book offers a complementary, agile-focused perspective on estimation. It details practical techniques for iterative planning and forecasting in dynamic environments, reinforcing and expanding on many of McConnell’s ideas.  
   
 2. **Best Tangentially Related Book:**    
-   *The Mythical Man-Month* by Frederick P. Brooks    
+   [🦄👤🗓️ The Mythical Man-Month: Essays on Software Engineering](./the-mythical-man-month.md) by Frederick P. Brooks    
    – While not exclusively about estimation, Brooks’s classic provides crucial insights into project scheduling, communication overhead, and the pitfalls (like Brooks’s Law) that often underpin estimation challenges. Its broader project management lessons enrich the context for McConnell’s work.  
   
 3. **Best Diametrically Opposed Book:**    

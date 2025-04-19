@@ -1,11 +1,11 @@
 ---
 share: true
 aliases:
-  - Software
-title: Software
+  - 💾 Software
+title: 💾 Software
 ---
 [Home](../index.md)  
-# Software  
+# 💾 Software  
 - [Babylon.js](./babylon.md)  
 - [CodinGame](./codingame.md)  
 - [Cursor](./cursor.md)  

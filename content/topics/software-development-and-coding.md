@@ -31,7 +31,7 @@ URL: https://bagrounds.org/topics/software-development-and-coding
   
 **Book Recommendations:**  
   
-1.  **"Clean Code: A Handbook of Agile Software Craftsmanship" by Robert C. Martin:** 📖✨  
+1.  **[🧼💾 Clean Code: A Handbook of Agile Software Craftsmanship](../books/clean-code.md) by Robert C. Martin:** 📖✨  
     * Dive into the art of writing readable and maintainable code! This book emphasizes clean code principles, making your code a joy to read and work with. 🤩  
 2.  **"The Pragmatic Programmer: From Journeyman to Master" by Andrew Hunt and David Thomas:** 🛠️🌟  
     * A treasure trove of practical advice for software developers! Learn how to think like a pragmatic programmer and elevate your coding skills. 🚀  

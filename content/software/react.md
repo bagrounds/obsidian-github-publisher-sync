@@ -134,7 +134,7 @@ React was created by Jordan Walke, a software engineer at Facebook, in 2011. It 
     - "Fullstack React" by Anthony Accomazzo, Nate Murray, Ari Lerner, and Clay Allsopp. 📖  
 - Tangentially related:  
     - "Eloquent JavaScript" by Marijn Haverbeke. 📜  
-    - "Clean Code" by Robert C. Martin. 🧹  
+    - "[🧼💾 Clean Code: A Handbook of Agile Software Craftsmanship](../books/clean-code.md)" by Robert C. Martin. 🧹  
 - Topically opposed:  
     - "The Principles of Object-Oriented JavaScript" by Nicholas C. Zakas. 📝  
 - More general:  

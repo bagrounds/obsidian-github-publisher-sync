@@ -25,7 +25,7 @@ tags:
 * 📝 **Different Forms of Nonfiction:** The book provides guidance on applying these principles across various nonfiction genres, including memoir, travel, science, business, arts, and sports writing.  
   
 ### 🎯 Target Audience  
-* 🧑‍🎓 Anyone who needs to write as part of their day, from students and professionals to aspiring and established writers, especially those focused on nonfiction.  
+🧑‍🎓 Anyone who needs to write as part of their day, from students and professionals to aspiring and established writers, especially those focused on nonfiction.  
   
 ### 👍 Strengths  
 * ⏳ **Timeless Advice:** The core principles of clarity, simplicity, and authenticity remain relevant despite changes in technology and language.  
@@ -33,7 +33,7 @@ tags:
 * 🛠️ **Practicality:** Offers concrete advice, real-life examples, and insights applicable to various writing tasks.  
   
 ### 🏁 Conclusion  
-* ⭐ *On Writing Well* endures as a classic guide because it offers sound, practical, and encouraging advice on the craft of nonfiction writing. Its emphasis on simplicity, clarity, and personal voice has made it an invaluable resource for generations of writers seeking to communicate effectively and connect with readers. 📰 It focuses primarily on a journalistic nonfiction style.  
+⭐ *On Writing Well* endures as a classic guide because it offers sound, practical, and encouraging advice on the craft of nonfiction writing. Its emphasis on simplicity, clarity, and personal voice has made it an invaluable resource for generations of writers seeking to communicate effectively and connect with readers. 📰 It focuses primarily on a journalistic nonfiction style.  
   
 ## 📚 Further Reading Recommendations  
   

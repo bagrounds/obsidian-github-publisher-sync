@@ -58,7 +58,7 @@ Martin Kleppmann, a respected researcher and software engineer, provides a well-
 ### Book Recommendations 📚  
 * **Best alternate book on the same topic:** "Designing Distributed Systems: Patterns and Paradigms for Scalable, Reliable Applications" by Brendan Burns. 🏗️  
 * **Best book that is tangentially related:** "[Site Reliability Engineering](./site-reliability-engineering.md): How Google Runs Production Systems" by Betsy Beyer, Chris Jones, Jennifer Petoff, and Niall Richard Murphy. ⚙️  
-* **Best book that is diametrically opposed:** "The Mythical Man-Month: Essays on Software Engineering" by Frederick P. Brooks Jr. (Focuses on software project management, highlighting the challenges of scaling teams, rather than scaling data). 🧑‍💻  
+* **Best book that is diametrically opposed:** [🦄👤🗓️ The Mythical Man-Month: Essays on Software Engineering](./the-mythical-man-month.md) by Frederick P. Brooks Jr. (Focuses on software project management, highlighting the challenges of scaling teams, rather than scaling data). 🧑‍💻  
 * **Best fiction book that incorporates related ideas:** "[Daemon](./daemon.md)" and "Freedom™" by Daniel Suarez (Explores complex distributed systems and their societal impact in a fictional context). 🤖  
 * **Best book that is more general:** "Clean Architecture: A Craftsman's Guide to Software Structure and Design" by Robert C. Martin (Focuses on general software architecture principles). 🏛️  
 * **Best book that is more specific:** "Database Internals: A Deep Dive into How Relational Databases Work" by Alex Petrov (Focuses specifically on the internal workings of relational databases). 🗄️  

@@ -1,11 +1,11 @@
 ---
-title: People
+title: " 👥 People"
 share: true
 aliases:
-  - People
+  - 👥 People
 ---
 [Home](../index.md)  
-# People  
+# 👥 People  
 - [Andrej Karpathy](./andrej-karpathy.md)  
 - [Jay Kreps](./jay-kreps.md)  
 - [Nicholas Dodman](./nicholas-dodman.md)  

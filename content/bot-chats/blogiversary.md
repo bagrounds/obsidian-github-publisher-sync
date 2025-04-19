@@ -23,7 +23,7 @@ Here are some book recommendations that touch on those themes:
   
 * **"[🐦🕊️ Bird by Bird: Some Instructions on Writing and Life](../books/bird-by-bird.md)" by Anne Lamott:** This is a classic for a reason. It's a warm, funny, and insightful guide to the writing process, filled with practical advice and encouragement for sticking with it, which perfectly aligns with celebrating a year of dedication.  
 * **"[🪄 Big Magic: Creative Living Beyond Fear](../books/big-magic.md)" by Elizabeth Gilbert:** This book explores the nature of creativity, curiosity, and the courage it takes to pursue your passions. It's inspiring for anyone who puts themselves out there through their blog.  
-* **"Show Your Work!: 10 Ways to Share Your Creativity and Get Discovered" by Austin Kleon:** This book is all about the power of sharing your creative process and connecting with an audience, which is exactly what blogging is about. It's practical and encouraging for continued growth.  
+* **"[📝🎨🎶 Show Your Work!: 10 Ways to Share Your Creativity and Get Discovered](../books/show-your-work.md)" by Austin Kleon:** This book is all about the power of sharing your creative process and connecting with an audience, which is exactly what blogging is about. It's practical and encouraging for continued growth.  
   
 **Cultivating Writing Habits:**  
   

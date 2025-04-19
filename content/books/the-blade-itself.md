@@ -43,7 +43,7 @@ tags:
   
 * 📚 **Non-Fiction:**  
     * 📖 *[Sapiens: A Brief History of Humankind](./sapiens-a-brief-history-of-humankind.md)* by Yuval Noah Harari: 🤔 If you appreciate the nuanced exploration of human nature 🧠 and societal structures 🏛️, this book offers a fascinating real-world perspective 🌍.  
-    * ✍️ *On Writing: A Memoir of the Craft* by Stephen King: 📝 For those interested in the craft of writing 🖋️ and character development 🎭, King's insights are invaluable 🌟.  
+    * [📜 On Writing: A Memoir of the Craft](./on-writing.md) by Stephen King: 📝 For those interested in the craft of writing 🖋️ and character development 🎭, King's insights are invaluable 🌟.  
 * ❤️ **If you loved this:**  
     * 🗡️ *Prince of Thorns* by Mark Lawrence: 😈 If you enjoyed the morally ambiguous protagonist 🎭 and dark, violent world 🌍, this series offers a similar but even darker experience 🌑.  
     * 💀 *Gideon the Ninth* by Tamsyn Muir: 👯 If you were drawn to the unique character dynamics 🤝 and witty dialogue 😂, this book provides a similarly engaging and darkly humorous fantasy experience ✨ with a necromantic twist ⚰️.  

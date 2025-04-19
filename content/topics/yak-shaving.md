@@ -130,7 +130,7 @@ The term "yak shaving" originated in a 1991 episode of the Ren & Stimpy cartoon 
   
 📖 **Book Recommendations** 📚  
   
-  * **Topical:** *The Mythical Man-Month: Essays on Software Engineering* by Frederick P. Brooks Jr. (discusses complexities in software projects) 💻  
+  * **Topical:** [🦄👤🗓️ The Mythical Man-Month: Essays on Software Engineering](../books/the-mythical-man-month.md) by Frederick P. Brooks Jr. (discusses complexities in software projects) 💻  
   * **Tangentially Related:** *[Gödel, Escher, Bach: An Eternal Golden Braid](../books/godel-escher-bach.md)* by Douglas Hofstadter (explores recursion and interconnected systems) ♾️  
   * **Topically Opposed:** *Getting Things Done* by David Allen (focuses on direct action and minimizing wasted effort) ✅  
   * **More General:** *[Thinking, Fast and Slow](../books/thinking-fast-and-slow.md)* by Daniel Kahneman (explores cognitive biases that can lead to unnecessary complexity) 🤔  

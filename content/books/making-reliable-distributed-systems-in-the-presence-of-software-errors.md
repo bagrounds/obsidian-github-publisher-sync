@@ -92,7 +92,7 @@ While the focus is primarily on software aspects, the importance of considering 
      
 * **Best book that is tangentially related**: "Seven Concurrency Models in Seven Weeks" by Paul Butcher. 📚💻💡  
      
-* **Best book that is diametrically opposed**: "The Mythical Man-Month" by Frederick P. Brooks Jr., which focuses on software project management but offers a contrasting perspective on the challenges of software development. 📚🤔💼  
+* **Best book that is diametrically opposed**: [🦄👤🗓️ The Mythical Man-Month: Essays on Software Engineering](./the-mythical-man-month.md) by Frederick P. Brooks Jr., which focuses on software project management but offers a contrasting perspective on the challenges of software development. 📚🤔💼  
      
 * **Best fiction book that incorporates related ideas**: "[Daemon](./daemon.md)" by Daniel Suarez, a techno-thriller that explores themes of distributed systems and autonomous software. 📚🤖🌐  
      

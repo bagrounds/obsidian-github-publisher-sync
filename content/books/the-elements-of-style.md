@@ -53,7 +53,7 @@ tags:
   
 ### 📖 Similar Guides (Focus on Clarity, Mechanics, Plain English)  
   
-* ✍️ **On Writing Well** by William Zinsser: 🥇 A highly regarded classic focusing on non-fiction, emphasizing clarity, simplicity, and humanity. 🤝 Often recommended alongside *Elements*.  
+* **[✍🏼👍🏼 On Writing Well: The Classic Guide to Writing Nonfiction](./on-writing-well.md)** by William Zinsser: 🥇 A highly regarded classic focusing on non-fiction, emphasizing clarity, simplicity, and humanity. 🤝 Often recommended alongside *Elements*.  
 * 💡 **The Oxford Guide to Plain English** by Martin Cutts: 🔍 Focuses intensely on clear and effective writing, using evidence-based examples of rewriting complex sentences into plain English.  
 * 🤣 **Dreyer's English** by Benjamin Dreyer: 🆕 A modern, witty, and opinionated guide from a professional copy chief, covering common errors and style choices.  
 * 📜 **Garner's Modern English Usage** by Bryan A. Garner: 📚 A comprehensive and authoritative reference on usage, more descriptive and detailed than *Elements*.  

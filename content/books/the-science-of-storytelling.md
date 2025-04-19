@@ -80,7 +80,7 @@ Storr's work is well-researched and supported by a combination of scientific stu
 * **Best Fiction Books That Incorporates Related Ideas:**  
     * "The Curious Incident of the Dog in the Night-Time" by Mark Haddon. 🐕‍🦺  
     * *Life of Pi* by Yann Martel – A novel that explores the power of storytelling to shape perception and convey truth. 🥧  
-* **Best Book More General:** "On Writing Well" by William Zinsser. ✍️  
+* **Best Book More General:** [✍🏼👍🏼 On Writing Well: The Classic Guide to Writing Nonfiction](./on-writing-well.md) by William Zinsser. ✍️  
 * **Best Book More Specific:** "Save the Cat! Writes a Novel" by Jessica Brody. 🐱📖  
 * **Best Book More Rigorous:** "The Writer's Journey: Mythic Structure for Writers" by Christopher Vogler. 🗺️📜  
 * **Best Book More Accessible:** "[🐦🕊️ Bird by Bird: Some Instructions on Writing and Life](./bird-by-bird.md)" by Anne Lamott. 🐦✍️  

@@ -80,7 +80,7 @@ by Stephen King
   
 ### 📚 Book Recommendations 📖  
   
-* **Best Alternate Book on the Same Topic:** *Bird by Bird: Some Instructions on Writing and Life* by Anne Lamott. A similarly insightful and humorous guide to writing, with a focus on overcoming writer's block and embracing imperfection. 🐦  
+* **Best Alternate Book on the Same Topic:** *[🐦🕊️ Bird by Bird: Some Instructions on Writing and Life](./bird-by-bird.md)* by Anne Lamott. A similarly insightful and humorous guide to writing, with a focus on overcoming writer's block and embracing imperfection. 🐦  
 * **Best Book That is Tangentially Related:** *[The War of Art](./the-war-of-art.md)* by Steven Pressfield. Explores the internal resistance that prevents people from pursuing their creative endeavors, and offers strategies for overcoming it. ⚔️  
 * **Best Book That is Diametrically Opposed:** *The Art of Fiction* by David Lodge. A more academic and theoretical approach to fiction writing, focusing on literary techniques and analysis. 👨‍🏫  
 * **Best Fiction Book That Incorporates Related Ideas:** *Misery* by Stephen King. A suspenseful novel about a writer who is held captive by an obsessive fan, exploring themes of creativity, obsession, and the relationship between writers and their audience. 😨  

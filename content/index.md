@@ -10,7 +10,7 @@ Welcome to the published subset of my Obsidian notes.
 Powered by [Obsidian](https://obsidian.md) + [GitHub Publisher](https://github.com/ObsidianPublisher/obsidian-github-publisher) + [Quartz](https://quartz.jzhao.xyz)!  
 If you don't know what that means... Welcome to my personal website!  
   
-## 🪞 [Reflections](./reflections/index.md) (~Blog)  
+## [🪞 Reflections](./reflections/index.md) (~Blog)  
 - [2025-04-19 | 🥳 One 🕯️](./reflections/2025-04-19.md)  
 - [2025-04-18 | 🤥📣 Propaganda 🇷🇺🇺🇸](./reflections/2025-04-18.md)  
 - [2025-04-17 | 🦋 Complexity 🧶](./reflections/2025-04-17.md)  
@@ -18,19 +18,19 @@ If you don't know what that means... Welcome to my personal website!
 - [2025-04-15 | ⚓🚫✊🏿 Anti-Anti-Racism 📚🔥](./reflections/2025-04-15.md)  
   
   
-## 📄 [Articles](./articles/index.md)  
+## [📄  Articles](./articles/index.md)  
   
-## 📚 [Books](./books/index.md)  
+## [📚 Books](./books/index.md)  
   
-## 🤖 [Bot Chats](./bot-chats/index.md)  
+## [🤖💬 Bot Chats](./bot-chats/index.md)  
   
 ## [👥 People](./people/index.md)  
   
-## 💾 [Software](./software/index.md)  
+## [💾 Software](./software/index.md)  
   
-## 🌌 [Topics](./topics/index.md)  
+## [🌌 Topics](./topics/index.md)  
   
-## 📺 [Videos](./videos/index.md)  
+## [📺 Videos](./videos/index.md)  
   
 ## 🔗 Profiles  
 - [My resume](./topics/my-resume.md)  

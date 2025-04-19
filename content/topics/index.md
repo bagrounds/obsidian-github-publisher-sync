@@ -1,16 +1,15 @@
 ---
 share: true
 aliases:
-  - Topics
-title: Topics
+  - 🌌 Topics
+title: 🌌 Topics
 URL: https://bagrounds.org/topics
 ---
 [Home](../index.md)  
-# Topics  
-- [⚛️ Quantum Computing](./quantum-computing.md)  
+# 🌌 Topics  
+- [Adaptive Control](./adaptive-control.md)  
 - [A Hierarchical View of Human Knowledge](./a-hierarchical-view-of-human-knowledge.md)  
 - [A Method For Estimating Work](./a-method-for-estimating-work.md)  
-- [Adaptive Control](./adaptive-control.md)  
 - [ANSI escape codes](./ansi-escape-codes.md)  
 - [Applied Arts](./applied-arts.md)  
 - [Arts](./arts.md)  
@@ -54,6 +53,7 @@ URL: https://bagrounds.org/topics
 - [Property Based Testing](./property-based-testing.md)  
 - [Pseudorange](./pseudorange.md)  
 - [Public Speaking and Rhetoric](./public-speaking-and-rhetoric.md)  
+- [⚛️ Quantum Computing](./quantum-computing.md)  
 - [Reinforcement Learning based Adaptive Control](./reinforcement-learning-based-adaptive-control.md)  
 - [Religion](./religion.md)  
 - [Rules](./rules.md)  

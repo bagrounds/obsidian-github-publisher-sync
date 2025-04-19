@@ -69,7 +69,7 @@ tags:
 ### Book Recommendations 📚  
 * **Best Alternate Book on the Same Topic:** "[Deep Work](./deep-work.md): Rules for Focused Success in a Distracted World" by Cal Newport. 🧘 (Focuses on the value of deep, focused work in a distracted world.)  
 * **Best Tangentially Related Book:** "[Atomic Habits](./atomic-habits.md): An Easy & Proven Way to Build Good Habits & Break Bad Ones" by James Clear. ⚛️ (Provides a comprehensive framework for habit formation and change.)  
-* **Best Diametrically Opposed Book:** "Bored and Brilliant: How Time Spent Doing Nothing Changes Everything" by Manoush Zomorodi. 😴 (Argues for the importance of boredom and unstructured time for creativity and innovation.)  
+* **Best Diametrically Opposed Book:** "[🥱🤓 Bored and Brilliant: How Spacing Out Can Unlock Your Most Productive and Creative Self](./bored-and-brilliant.md)" by Manoush Zomorodi. 😴 (Argues for the importance of boredom and unstructured time for creativity and innovation.)  
 * **Best Fiction Book That Incorporates Related Ideas:** "The Circle" by Dave Eggers. ⭕ (Explores the dangers of constant connectivity and the erosion of privacy.)  
 * **Best More General Book:** "[Thinking, Fast and Slow](./thinking-fast-and-slow.md)" by Daniel Kahneman. 🧠 (Explores the two systems of thinking and their impact on decision-making.)  
 * **Best More Specific Book:** "Hooked: How to Build Habit-Forming Products" by Nir Eyal. 🎣 (Focuses on the psychology of habit formation in product design.)  

@@ -127,7 +127,7 @@ Cursor IDE emerged as a response to the advancements in LLMs, aiming to bring th
 - More specific: "Natural Language Processing with Transformers" by Tunstall, von Werra, Wolf. 🗣️  
 - Fictional: "[Daemon](../books/daemon.md)" by Daniel Suarez. 🌐  
 - Rigorous: "Speech and Language Processing" by Dan Jurafsky and James H. Martin. 💬  
-- Accessible: "Life 3.0: Being Human in the Age of Artificial Intelligence" by Max Tegmark. ⚡  
+- Accessible: [🧬👥💾 Life 3.0: Being Human in the Age of Artificial Intelligence](../books/life-3-0.md) by Max Tegmark. ⚡  
   
 📺 **Links To Relevant YouTube Channels Or Videos**  
   

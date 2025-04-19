@@ -29,10 +29,10 @@ Literary Arts are all about crafting, exploring, and cherishing the magic of the
   
 **📚 Book Recommendations: Your Literary Starter Pack! 🚀📖**  
   
-1.  **🤗🖋️ "Bird by Bird: Some Instructions on Writing and Life" by Anne Lamott:** This book is a warm and witty guide to the writing process, offering practical advice and encouragement. It's like having a wise and supportive friend by your side. 💖✨  
+1.  **🤗🖋️ "[🐦🕊️ Bird by Bird: Some Instructions on Writing and Life](../books/bird-by-bird.md)" by Anne Lamott:** This book is a warm and witty guide to the writing process, offering practical advice and encouragement. It's like having a wise and supportive friend by your side. 💖✨  
 2.  **🌈📖 "The Norton Anthology of Poetry" (Various Editions):** This comprehensive collection is a treasure trove of poetic gems, showcasing the diversity and beauty of poetry from around the world. 🌟🎶 It's a must-have for any poetry lover! 💖📚  
 3.  **🧐💡 "Reading Like a Writer: A Guide for People Who Love Books and for Those Who Want to Write Them" by Francine Prose:** This book teaches you how to read like a writer, analyzing the techniques used by great authors. 🧐✨ It's a fantastic way to deepen your appreciation for literature. 📚🧠  
-4.  **👻✍️ "On Writing: A Memoir of the Craft" by Stephen King:** Part memoir, part writing guide, this book offers a candid and insightful look into Stephen King's writing process. 🌟📝 It's full of practical advice and entertaining anecdotes. 📚👻  
+4.  **[📜 On Writing: A Memoir of the Craft](../books/on-writing.md) by Stephen King:** Part memoir, part writing guide, this book offers a candid and insightful look into Stephen King's writing process. 🌟📝 It's full of practical advice and entertaining anecdotes. 📚👻  
 5.  **👩‍🏫📚 "A Room of One's Own" by Virginia Woolf:** This powerful essay is a feminist classic that explores the challenges faced by women writers. 💖✨ It's a thought-provoking and inspiring read. 📖👩‍🏫  
   
 ## 💬 [Gemini](https://gemini.google.com/app) Prompt  

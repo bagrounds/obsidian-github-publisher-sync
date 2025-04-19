@@ -90,7 +90,7 @@ Okay, I've had a look at your blog. It's a fascinating mix of technical insights
   
 **Parenting (Given the hints):**  
   
-* **"The Whole-Brain Child: 12 Revolutionary Strategies to Nurture Your Child's Developing Mind" by Daniel J. Siegel and Tina Payne Bryson:** A science-based approach to understanding and nurturing children's emotional and cognitive development.  
+* **[🕳️🧠👶🏽 The Whole-Brain Child: 12 Revolutionary Strategies to Nurture Your Child's Developing Mind](../books/the-whole-brain-child.md) by Daniel J. Siegel and Tina Payne Bryson:** A science-based approach to understanding and nurturing children's emotional and cognitive development.  
 * **"Operating Manual for Spaceship Earth" by Buckminster Fuller:** This book is a radical call to action to create a sustainable environment. It is a good book to read to understand the world that babies will inherit.  
   
 Given your use of Obsidian and templates, you might also find books on productivity and workflow optimization helpful, but I've focused on the thematic elements of your blog.  

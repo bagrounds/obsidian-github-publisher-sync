@@ -70,7 +70,7 @@ This book offers a refreshing perspective by treating parenting as an experiment
   
 ### 📚 Book Recommendations  
 * **Best Alternate Book (Same Topic):** "[Brain Rules for Baby](./brain-rules-for-baby.md)" by John Medina. This book provides a similar science-based approach to parenting, focusing on brain development. 🧠  
-* **Best Tangentially Related Book:** "The Whole-Brain Child" by Daniel J. Siegel and Tina Payne Bryson. This book delves into the neurological basis of children's behavior and offers practical strategies for managing emotional outbursts. 🧠🤝  
+* **Best Tangentially Related Book:** [🕳️🧠👶🏽 The Whole-Brain Child: 12 Revolutionary Strategies to Nurture Your Child's Developing Mind](./the-whole-brain-child.md) by Daniel J. Siegel and Tina Payne Bryson. This book delves into the neurological basis of children's behavior and offers practical strategies for managing emotional outbursts. 🧠🤝  
 * **Best Diametrically Opposed Book:** "Bringing Up Bébé" by Pamela Druckerman. This book explores a more traditional and intuitive parenting style, contrasting sharply with the science-driven approach. 🇫🇷  
 * **Best Fiction Book (Related Ideas):** "Room" by Emma Donoghue. This novel explores a mother's ingenuity and resourcefulness in creating a nurturing environment for her child in extreme circumstances, touching on themes of development and resilience. 🏠  
 * **Best More General Book:** "Parenting From The Inside Out" by Daniel J. Siegel and Mary Hartzell. This book covers a wider range of parenting topics, focusing on the parent's own emotional awareness. 🧘‍♀️  

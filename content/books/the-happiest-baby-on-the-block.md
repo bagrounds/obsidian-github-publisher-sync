@@ -31,7 +31,7 @@ Karp emphasizes that these techniques must be performed correctly and often in c
    – This book offers a variety of practical sleep-training methods and strategies for establishing healthy sleep habits in infants. It complements Karp’s techniques by providing alternative approaches for parents who need additional guidance during those challenging early months.  
   
 2. **Best Book That Is Tangentially Related:**    
-   *The Whole-Brain Child* by Daniel J. Siegel and Tina Payne Bryson    
+   [🕳️🧠👶🏽 The Whole-Brain Child: 12 Revolutionary Strategies to Nurture Your Child's Developing Mind](./the-whole-brain-child.md) by Daniel J. Siegel and Tina Payne Bryson    
    – While focusing on older children’s emotional and cognitive development, this book provides insights into nurturing healthy brain development and effective communication. It expands on the theme of understanding and responding to a child’s needs, making it a valuable resource as children grow beyond infancy.  
   
 3. **Best Book That Is Diametrically Opposed:**    

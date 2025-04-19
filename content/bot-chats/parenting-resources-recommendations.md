@@ -23,7 +23,7 @@ Below is a curated, ranked list of high‐quality resources—from books to vide
 – Critically acclaimed for its clear explanations and practical tips that empower parents to make informed decisions.    
 **Ideal For:** Parents looking for a science-based guide to navigate the “first-year” challenges.  
   
-**2. The Whole-Brain Child by Daniel J. Siegel & Tina Payne Bryson**    
+**2. [🕳️🧠👶🏽 The Whole-Brain Child: 12 Revolutionary Strategies to Nurture Your Child's Developing Mind](../books/the-whole-brain-child.md) by Daniel J. Siegel & Tina Payne Bryson**    
 *Why It’s Top-Rated:*    
 – Combines cutting-edge neuroscience with practical parenting strategies that nurture children’s emotional and cognitive development.    
 – Praised by experts and parents alike for its transformative, practical “12 revolutionary strategies.”    

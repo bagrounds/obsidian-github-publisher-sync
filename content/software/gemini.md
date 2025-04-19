@@ -140,7 +140,7 @@ URL: https://bagrounds.org/software/gemini
     - "[Deep Learning](../books/deep-learning.md)" by Ian Goodfellow, Yoshua Bengio, and Aaron Courville. 🧠⚡ - A comprehensive textbook on deep learning, covering the theoretical foundations and practical applications. 📖 It's essential for understanding the underlying principles of models like Gemini.  
     - [Google AI Blog articles on Gemini developments](https://blog.google/technology/ai/). 📰 - Stay up-to-date with the latest research and applications related to Gemini directly from the source. 🌐  
 - **Tangentially related:**  
-    - "Life 3.0: Being Human in the Age of Artificial Intelligence" by Max Tegmark. 🤖🌐 - Explores the long-term implications of AI and its potential impact on society. 🌍 It provides a broader context for understanding the role of advanced AI models like Gemini.  
+    - [🧬👥💾 Life 3.0: Being Human in the Age of Artificial Intelligence](../books/life-3-0.md) by Max Tegmark. 🤖🌐 - Explores the long-term implications of AI and its potential impact on society. 🌍 It provides a broader context for understanding the role of advanced AI models like Gemini.  
     - "Platform Revolution" by Geoffrey G. Parker, Marshall W. Van Alstyne, and Sangeet Paul Choudary. 🌐📈 - Discusses the dynamics of platform-based businesses and how AI is transforming various industries. This provides context to how Google is implementing Gemini across it's platforms.  
 - **Topically opposed:**  
     - "[The Age of Surveillance Capitalism](../books/the-age-of-surveillance-capitalism.md)" by Shoshana Zuboff. 🕵️‍♂️💻 - Critiques the use of data and AI for surveillance and control, offering a counterpoint to the optimistic view of AI's potential. 🛡️  

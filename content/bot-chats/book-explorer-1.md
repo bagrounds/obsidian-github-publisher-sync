@@ -607,7 +607,7 @@ Here's a breakdown:
   
 * **Topic Q (Dissimilar to "The Master and Margarita"):** Computational Neuroscience 🧠  
     * "Principles of Neural Science" by Eric R. Kandel, James H. Schwartz, and Thomas M. Jessell. 🧬  
-    * "Life 3.0: Being Human in the Age of Artificial Intelligence" by Max Tegmark. 🤖  
+    * [🧬👥💾 Life 3.0: Being Human in the Age of Artificial Intelligence](../books/life-3-0.md) by Max Tegmark. 🤖  
 * **Topic R (Dissimilar to Both):** Pre-Columbian Mesoamerican Civilizations 🏛️  
     * "1491: New Revelations of the Americas Before Columbus" by Charles C. Mann. 🌎  
     * "The Ancient Maya" by Robert J. Sharer and Loa P. Traxler. 🔺  

@@ -63,7 +63,7 @@ tags:
 * While not scientifically backed in the sense of peer reviewed studies, the book is backed by the real world experience of a highly accomplished creative professional.  
   
 ### **Book Recommendations:**  
-* **Best Alternate Book on the Same Topic:** "Big Magic: Creative Living Beyond Fear" by Elizabeth Gilbert. ✨ (Focuses on a more spiritual approach to creativity, but still emphasizes action.)  
+* **Best Alternate Book on the Same Topic:** "[🪄 Big Magic: Creative Living Beyond Fear](./big-magic.md)" by Elizabeth Gilbert. ✨ (Focuses on a more spiritual approach to creativity, but still emphasizes action.)  
 * **Best Tangentially Related Book:** "[Atomic Habits](./atomic-habits.md)" by James Clear. ⚛️ (Explores the power of habit formation in general, which is highly relevant to creative practice.)  
 * **Best Diametrically Opposed Book:** "Steal Like an Artist" by Austin Kleon. 🖌️ (While valuable, it emphasizes imitation and remixing, which contrasts with Tharp's focus on personal discipline and originality.)  
 * **Best Fiction Book that Incorporates Related Ideas:** "The Mists of Avalon" by Marion Zimmer Bradley. 🔮 (While fantasy, it illustrates the power of ritual and consistent practice in a mystical context.)  

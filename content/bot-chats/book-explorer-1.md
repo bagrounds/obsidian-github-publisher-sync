@@ -1,8 +1,8 @@
 ---
 share: true
 aliases:
-  - Book Explorer 1
-title: Book Explorer 1
+  - 📖 Book 🧭 Explorer 1
+title: 📖 Book 🧭 Explorer 1
 URL: https://bagrounds.org/bot-chats/book-explorer-1
 ---
 [Home](../index.md) > [Bot Chats](./index.md)  

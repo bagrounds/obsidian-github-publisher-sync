@@ -67,7 +67,7 @@ This book provides a surprisingly unified perspective on a field that intersects
 * **Best Book Tangentially Related:** "Artificial Intelligence: A Modern Approach" by Stuart Russell and Peter Norvig. This book provides a broad overview of AI, including RL as a subfield. 🤖🧠  
 * **Best Book Diametrically Opposed:** "[The Book of Why](./the-book-of-why.md): The New Science of Cause and Effect" by Judea Pearl and Dana Mackenzie. This book focuses on causal inference, contrasting with RL's focus on learning through trial and error. 💡🤔  
 * **Best Fiction Book Incorporating Related Ideas:** "[Daemon](./daemon.md)" by Daniel Suarez. This thriller explores a world where AI and autonomous systems operate through reinforcement learning-like mechanisms. 👾🤖  
-* **Best More General Book:** "Life 3.0: Being Human in the Age of Artificial Intelligence" by Max Tegmark. This book explores the broader implications of AI, including RL, on society. 🌐🌍  
+* **Best More General Book:** [🧬👥💾 Life 3.0: Being Human in the Age of Artificial Intelligence](./life-3-0.md) by Max Tegmark. This book explores the broader implications of AI, including RL, on society. 🌐🌍  
 * **Best More Specific Book:** "Algorithms for Reinforcement Learning" by Csaba Szepesvári. This book is a very rigorous mathematical treatment of RL algorithms. 🧮➕  
 * **Best More Accessible Book:** "Programming Artificial Intelligence with Python: Build real-world AI systems using machine learning and reinforcement learning" by David Poole and Alan Mackworth. This book provides more python code, and less math. 🐍👨‍💻  
   

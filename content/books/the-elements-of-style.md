@@ -65,7 +65,7 @@ tags:
 * 🗣️ **Style: Lessons in Clarity and Grace** by Joseph M. Williams & Joseph Bizup: 🤔 Explores *why* certain sentence structures work, focusing on rhetorical effects and reader perception. ⚖️ Considered more comprehensive and less prescriptive than *Elements*.  
 * 🧠 **The Sense of Style** by Steven Pinker: 🔬 A modern perspective grounded in linguistics and cognitive science, arguing that good style enhances comprehension. 🌊 Recognizes language fluidity and sometimes challenges traditional rules.  
 * **[📜 On Writing: A Memoir of the Craft](./on-writing.md)** by Stephen King: 🎭 Part memoir, part practical advice, focusing heavily on storytelling, voice, and the writer's discipline, rather than strict grammatical rules.  
-* 🐦 **Bird by Bird: Some Instructions on Writing and Life** by Anne Lamott: 🌱 Emphasizes the writing process, overcoming writer's block, finding authenticity, and embracing imperfection.  
+* **[🐦🕊️ Bird by Bird: Some Instructions on Writing and Life](./bird-by-bird.md)** by Anne Lamott: 🌱 Emphasizes the writing process, overcoming writer's block, finding authenticity, and embracing imperfection.  
 * 🧰 **Writing Tools: 55 Essential Strategies for Every Writer** by Roy Peter Clark: 🛠️ Presents a collection of practical techniques and "tools" rather than overarching rules.  
 * 💥 **Spunk & Bite: A Writer's Guide to Punchier, More Engaging Language & Style** by Arthur Plotnik: ⚡ Focuses on making language more lively and engaging.  
   

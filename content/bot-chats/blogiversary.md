@@ -74,7 +74,7 @@ Okay, I've had a look at your blog. It's a fascinating mix of technical insights
   
 **AI & Software Engineering:**  
   
-* **"Life 3.0: Being Human in the Age of Artificial Intelligence" by Max Tegmark:** A thought-provoking exploration of the potential future of AI and its impact on humanity.  
+* **"[🧬👥💾 Life 3.0: Being Human in the Age of Artificial Intelligence](../books/life-3-0.md)" by Max Tegmark:** A thought-provoking exploration of the potential future of AI and its impact on humanity.  
 * **"The Mythical Man-Month: Essays on Software Engineering" by Frederick P. Brooks Jr.:** A classic in the field, offering timeless wisdom on managing complex software projects.  
 * **"Clean Code: A Handbook of Agile Software Craftsmanship" by Robert C. Martin:** For the software engineer in you, this book provides practical advice on writing maintainable and efficient code.  
   

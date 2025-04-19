@@ -44,9 +44,9 @@ tags:
   
 ### 👪 Similar Books (Parenting & Child Development Focus)  
 * ✍️ **By the Same Authors (Siegel & Bryson):**  
-    * 🚫 **No-Drama Discipline**: 💖 Extends the whole-brain approach specifically to discipline, focusing on connection before correction.  
-    * ✅ **The Yes Brain**: 🌟 Focuses on fostering curiosity, resilience, and courage in children.  
-    * 🫂 **The Power of Showing Up**: 👨‍👧‍👦 Explores how parental presence shapes children's development, outlining the "Four S's" (Safe, Seen, Soothed, Secure).  
+    * **[🚫🎭🧠 No-Drama Discipline: The Whole-Brain Way to Calm the Chaos and Nurture Your Child's Developing Mind](./no-drama-discipline.md)**: 💖 Extends the whole-brain approach specifically to discipline, focusing on connection before correction.  
+    * **[👍🧠 The Yes Brain: How to Cultivate Courage, Curiosity, and Resilience in Your Child](./the-yes-brain.md)**: 🌟 Focuses on fostering curiosity, resilience, and courage in children.  
+    * 🫂 **[🔌👋 The Power of Showing Up: How Parental Presence Shapes Who Our Kids Become and How Their Brains Get Wired](./the-power-of-showing-up.md)**: 👨‍👧‍👦 Explores how parental presence shapes children's development, outlining the "Four S's" (Safe, Seen, Soothed, Secure).  
 * 🧠 **Neuroscience & Attachment-Based Parenting:**  
     * 🧠 *Brain-Based Parenting* by Daniel A. Hughes & Jonathan Baylin: 🤝 Delves into the neuroscience of attachment and caregiving.  
     * 🧠 *Brain-Body Parenting* by Mona Delahooke: 👶 Focuses on understanding children's behavior through the lens of their nervous system.  

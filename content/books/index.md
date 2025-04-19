@@ -6,7 +6,7 @@ share: true
 URL: https://bagrounds.org/books
 ---
 [Home](../index.md)  
-# 📚 Books (245)  
+# 📚 Books (246)  
 - [👁️ 1984](./1984.md)  
 - [23 Things They Don't Tell You About Capitalism](./23-things-they-dont-tell-you-about-capitalism.md)  
 - [A Brief History of Time](./a-brief-history-of-time.md)  
@@ -24,6 +24,7 @@ URL: https://bagrounds.org/books
 - [Bayes' Theorem Examples](./bayes-theorem-examples.md)  
 - [Better Than Before: What I Learned About Making and Breaking Habits - to Sleep More, Quit Sugar, Procrastinate Less, and Generally Build a Happier Life](./better-than-before.md)  
 - [Beyond Weird](./beyond-weird.md)  
+- [🐦🕊️ Bird by Bird: Some Instructions on Writing and Life](./bird-by-bird.md)  
 - [🥱🤓 Bored and Brilliant: How Spacing Out Can Unlock Your Most Productive and Creative Self](./bored-and-brilliant.md)  
 - [Bowling Alone](./bowling-alone.md)  
 - [Brain Rules for Baby](./brain-rules-for-baby.md)  

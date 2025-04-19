@@ -6,9 +6,10 @@ title: 🤖💬 Bot Chats
 URL: https://bagrounds.org/bot-chats
 ---
 [Home](../index.md)  
-# 🤖💬 Bot Chats (13)  
+# 🤖💬 Bot Chats (14)  
 - [AI Engineering Assistant Technology Recommendations](./ai-engineering-assistant-technology-recommendations.md)  
 - [Android Local LLMs](./android-local-llms.md)  
+- [✍🏼 Blogiversary 🕯️](./blogiversary.md)  
 - [📖 Book 🧭 Explorer 1](./book-explorer-1.md)  
 - [Books for Democracy](./books-for-democracy.md)  
 - [Effective Thought-Action Defusion Techniques](./effective-thought-action-defusion-techniques.md)  

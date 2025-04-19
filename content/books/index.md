@@ -1,12 +1,12 @@
 ---
-title: Books
+title: 📚 Books
 aliases:
-  - Books
+  - 📚 Books
 share: true
 URL: https://bagrounds.org/books
 ---
 [Home](../index.md)  
-# Books  
+# 📚 Books  
 - [👁️ 1984](./1984.md)  
 - [23 Things They Don't Tell You About Capitalism](./23-things-they-dont-tell-you-about-capitalism.md)  
 - [A Brief History of Time](./a-brief-history-of-time.md)  

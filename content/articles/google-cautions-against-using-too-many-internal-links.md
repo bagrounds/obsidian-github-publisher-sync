@@ -1,14 +1,14 @@
 ---
 share: true
 aliases:
-  - Google Cautions Against Using Too Many Internal Links
-title: Google Cautions Against Using Too Many Internal Links
-URL: https://bagrounds.org/articles/Google Cautions Against Using Too Many Internal Links
+  - ⚠️🖇️ Google Cautions Against Using Too Many Internal Links
+title: ⚠️🖇️ Google Cautions Against Using Too Many Internal Links
+URL: https://bagrounds.org/articles/google-cautions-against-using-too-many-internal-links
 Author: 
 tags: 
 ---
-[Home](./index.md) > [Articles](./articles/index.md)  
-# [Google Cautions Against Using Too Many Internal Links](https://www.searchenginejournal.com/google-cautions-against-using-too-many-internal-links/412553)  
+[Home](../index.md) > [Articles](./index.md)  
+# [⚠️🖇️ Google Cautions Against Using Too Many Internal Links](https://www.searchenginejournal.com/google-cautions-against-using-too-many-internal-links/412553)  
 ## 🤖 AI Summary  
 • 👨‍💻 John Mueller from 🏢 Google advises against using too many 🔗 internal links on a single page, as it can 😕 confuse 🤖 Google's understanding of a 🗺️ website's structure and 💧 dilute the value of individual links.  
   

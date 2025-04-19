@@ -130,7 +130,7 @@ Haskell was created in the late 1980s as a standardized, purely functional progr
   
 * Topical: "[Learn You a Haskell for Great Good!](../books/learn-you-a-haskell-for-great-good.md)" by Miran Lipovača! 📖  
 * Tangentially related: "Structure and Interpretation of Computer Programs" by Harold Abelson and Gerald Jay Sussman! 📖  
-* Topically opposed: "Clean Code: A Handbook of Agile Software Craftsmanship" by Robert C. Martin! 📖  
+* Topically opposed: [🧼💾 Clean Code: A Handbook of Agile Software Craftsmanship](../books/clean-code.md) by Robert C. Martin! 📖  
 * More general: "Programming Languages: Application and Interpretation" by Shriram Krishnamurthi! 📖  
 * More specific: "Real World Haskell" by Bryan O'Sullivan, Don Stewart, and John Goerzen! 📖  
 * Fictional: "[Snow Crash](../books/snow-crash.md)" by Neal Stephenson, for its exploration of virtual reality and programming concepts. 📖  

@@ -93,7 +93,7 @@ URL: https://bagrounds.org/software/model-context-protocol
   
 * Topical: _Natural Language Processing with Transformers_ by Tunstall, von Werra, Wolf 📚  
 * Tangentially related: _[Designing Data-Intensive Applications](../books/designing-data-intensive-applications.md)_ by Kleppmann 📚  
-* Topically opposed: _The Mythical Man-Month_ by Brooks 📚 (focuses on software project management, not AI integration)  
+* Topically opposed: [🦄👤🗓️ The Mythical Man-Month: Essays on Software Engineering](../books/the-mythical-man-month.md) by Brooks 📚 (focuses on software project management, not AI integration)  
 * More general: _Artificial Intelligence: A Modern Approach_ by Russell & Norvig 📚  
 * More specific: (Currently, there aren't many books specifically on MCP, as it's a relatively new protocol. Keep an eye out for future publications!)  
 * Fictional: _[Daemon](../books/daemon.md)_ and _Freedom™_ by Suarez 📚 (explores AI integration in a fictional context)  

@@ -129,7 +129,7 @@ Hypothesis was created by David R. MacIver to bring the power of property-based 
 ### 📖 Book Recommendations  
   
 * Topical: "Effective Python Testing With Pytest" by Brian Okken. 📚  
-* Tangentially related: "Clean Code" by Robert C. Martin. 📖  
+* Tangentially related: "[🧼💾 Clean Code: A Handbook of Agile Software Craftsmanship](../books/clean-code.md)" by Robert C. Martin. 📖  
 * Topically opposed: "Test-Driven Development: By Example" by Kent Beck (for a contrasting approach). 📖  
 * More general: "The Pragmatic Programmer" by Andrew Hunt and David Thomas. 📖  
 * More specific: Python testing documentation. 🐍  

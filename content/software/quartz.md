@@ -144,7 +144,7 @@ URL: https://bagrounds.org/software/quartz
 - **Topical:**  
     - "Building a Second Brain" by Tiago Forte 🧠  
 - **Tangentially Related:**  
-    - "Clean Code" by Robert C. Martin 💻  
+    - [🧼💾 Clean Code: A Handbook of Agile Software Craftsmanship](../books/clean-code.md) by Robert C. Martin 💻  
 - **Topically Opposed:**  
     - "Database Systems: The Complete Book" by Hector Garcia-Molina, Jennifer Widom, Jeffrey D. Ullman 📊  
 - **More General:**  

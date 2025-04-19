@@ -34,7 +34,7 @@ Programming languages are the essential tools that bridge the gap between human 
 **Book Recommendations:**  
 1.  **"Structure and Interpretation of Computer Programs" (SICP) by Harold Abelson and Gerald Jay Sussman:**  
     * This classic text uses Scheme (a dialect of Lisp) to explore fundamental programming concepts and paradigms. It's a challenging but rewarding read that provides a deep understanding of computation. 📖🧠  
-2.  **"Clean Code: A Handbook of Agile Software Craftsmanship" by Robert C. Martin:**  
+2.  **[🧼💾 Clean Code: A Handbook of Agile Software Craftsmanship](../books/clean-code.md) by Robert C. Martin:**  
     * While not specific to a single language, this book focuses on writing maintainable and readable code, which is essential for any programmer. It covers principles and practices applicable to various languages. 🧹✨  
 3.  **"Programming Pearls" by Jon Bentley:**  
     * This book contains a lot of very interesting programming problems and their solutions. It is very useful for improving problem solving skills. 💎💻  

@@ -33,7 +33,7 @@ Here are some book recommendations that touch on those themes:
   
 **The World of Publishing (Broadly):**  
   
-* **"On Writing Well: The Classic Guide to Writing Nonfiction" by William Zinsser:** While not specifically about blogging, this book offers timeless advice on clear, concise, and engaging writing, which is essential for any blogger.  
+* **"[✍🏼👍🏼 On Writing Well: The Classic Guide to Writing Nonfiction](../books/on-writing-well.md)" by William Zinsser:** While not specifically about blogging, this book offers timeless advice on clear, concise, and engaging writing, which is essential for any blogger.  
 * **"Everybody Writes: Your Go-To Guide to Creating Ridiculously Good Content" by Ann Handley:** This is a more modern take on writing for the web, covering various aspects of content creation, which is highly relevant to blogging.  
   
 Given your blog uses lots of emojis, you might also appreciate books that have a friendly and approachable tone, like "Bird by Bird" or "Everybody Writes."  

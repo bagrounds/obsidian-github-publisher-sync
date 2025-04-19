@@ -63,7 +63,7 @@ Unlock your creative potential by addressing and dismantling your "creative bloc
 * Authoritative reviews from publications like the New York Times have praised the book's practical approach. 📰  
   
 #### Book Recommendations 📚  
-* **Best Alternate Book on the Same Topic:** *Big Magic: Creative Living Beyond Fear* by Elizabeth Gilbert. This book offers a similar perspective on creativity, focusing on overcoming fear and embracing inspiration. 🪄  
+* **Best Alternate Book on the Same Topic:** *[🪄 Big Magic: Creative Living Beyond Fear](./big-magic.md)* by Elizabeth Gilbert. This book offers a similar perspective on creativity, focusing on overcoming fear and embracing inspiration. 🪄  
 * **Best Tangentially Related Book:** *Daring Greatly* by Brené Brown. This book explores vulnerability and shame, which are often at the root of creative blocks. 🛡️  
 * **Best Diametrically Opposed Book:** *On Writing Well* by William Zinsser. This book focuses on the craft of writing and emphasizes clarity and conciseness, contrasting with *The Artist's Way*'s emphasis on free-flowing expression. ✍️  
 * **Best Fiction Book That Incorporates Related Ideas:** *The Invention of Hugo Cabret* by Brian Selznick. This book explores themes of creativity, passion, and the power of dreams. 🎬  

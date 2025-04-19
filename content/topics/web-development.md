@@ -130,7 +130,7 @@ URL: https://bagrounds.org/topics/web-development
 📖 **Book Recommendations:**  
   
 - **Topical:** "Eloquent JavaScript" by Marijn Haverbeke 📖  
-- **Tangentially related:** "Clean Code" by Robert C. Martin 🧹  
+- **Tangentially related:** "[🧼💾 Clean Code: A Handbook of Agile Software Craftsmanship](../books/clean-code.md)" by Robert C. Martin 🧹  
 - **Topically opposed:** "Operating System Concepts" by Abraham Silberschatz, Peter Baer Galvin, and Greg Gagne 🖥️  
 - **More general:** "Code: The Hidden Language of Computer Hardware and Software" by Charles Petzold 💻  
 - **More specific:** "CSS Secrets" by Lea Verou 🎨  

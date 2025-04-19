@@ -6,7 +6,7 @@ title: 📺 Videos
 URL: https://bagrounds.org/videos
 ---
 [Home](../index.md)  
-# 📺 Videos  
+# 📺 Videos (123)  
 - [2025 Yearly Themes](./2025-yearly-themes.md)  
 - [3 High Leverage Career Skills (From a Principal At Amazon)](./3-high-leverage-career-skills-from-a-principal-at-amazon.md)  
 - [ACLU attorney on suing Trump administration for using wartime authority for deportations](./aclu-attorney-on-suing-trump-administration-for-using-wartime-authority-for-deportations.md)  

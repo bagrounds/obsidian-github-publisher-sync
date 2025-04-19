@@ -1,12 +1,13 @@
 ---
 share: true
 aliases:
-  - Reflections
-title: Reflections
+  - 🪞 Reflections
+title: 🪞 Reflections
 URL: https://bagrounds.org/reflections
 ---
 [Home](../index.md)  
 # 🪞 Reflections  
+- [2025-04-19 | 🥳 One 🕯️](./2025-04-19.md)  
 - [2025-04-18 | 🤥📣 Propaganda 🇷🇺🇺🇸](./2025-04-18.md)  
 - [2025-04-17 | 🦋 Complexity 🧶](./2025-04-17.md)  
 - [2025-04-16 | 🕹️⚛️🛜 Intent 🦊👀](./2025-04-16.md)  

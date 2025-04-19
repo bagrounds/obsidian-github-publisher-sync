@@ -125,7 +125,7 @@ Created by Guido van Rossum and first released in 1991, Python was designed to b
 📖 **Book Recommendations:**  
   
 * Topical: "Python Crash Course" by Eric Matthes. 🐍  
-* Tangentially Related: "Clean Code" by Robert C. Martin. 🧹  
+* Tangentially Related: [🧼💾 Clean Code: A Handbook of Agile Software Craftsmanship](../books/clean-code.md) by Robert C. Martin. 🧹  
 * Topically Opposed: "C++ Primer" by Stanley B. Lippman, Josée Lajoie, and Barbara E. Moo. ⚡  
 * More General: "Structure and Interpretation of Computer Programs" by Harold Abelson and Gerald Jay Sussman. 💻  
 * More Specific: "Fluent Python" by Luciano Ramalho. 📖  

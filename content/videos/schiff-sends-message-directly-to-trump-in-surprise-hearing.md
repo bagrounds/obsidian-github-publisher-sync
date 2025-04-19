@@ -45,7 +45,7 @@ tags:
 🤫 **Government Corruption and Intimidation:**  
 - 🤐 _The Intimidation Game: How the Left Is Silencing Free Speech_ by Kimberley Strassel: 🚫 Presents a perspective on alleged intimidation tactics used in political discourse. 🗣️  
 - 🇿🇦 _Same Shit, Different Government: Book 1 - The Corruption & The Intimidation_ by Mike Hampton: 📜 An account of alleged corruption and intimidation within a South African political context. 💥  
-- 🇵🇭 _How to Stand Up to a Dictator: The Fight for Our Future_ by Maria Ressa: 🎤 Chronicles the author's experience fighting against government intimidation and censorship in the Philippines. ✊  
+- 🇵🇭 [👥⚔️👑 How to Stand Up to a Dictator: The Fight for Our Future](../books/how-to-stand-up-to-a-dictator.md) by Maria Ressa: 🎤 Chronicles the author's experience fighting against government intimidation and censorship in the Philippines. ✊  
   
 🛡️ **Defending Democracy:**  
 - 🕰️ _[On Tyranny: Twenty Lessons from the Twentieth Century](../books/on-tyranny.md)_ by Timothy Snyder: 📖 Offers historical lessons on resisting authoritarianism. 💪  

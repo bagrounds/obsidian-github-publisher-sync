@@ -72,7 +72,7 @@ The core of the book revolves around understanding the teenage brain and its dev
   
 * **Battle Hymn of the Tiger Mother** by Amy Chua: Presents a more traditional, high-expectations approach to parenting (offers a stark contrast in philosophy). 🐅  
 * **[🕳️🧠👶🏽 The Whole-Brain Child: 12 Revolutionary Strategies to Nurture Your Child's Developing Mind](./the-whole-brain-child.md)** by Daniel J. Siegel and Tina Payne Bryson: Focuses on integrating the left and right brain for emotional regulation and connection (offers a different lens on child development). 🧠🤝  
-* **No-Drama Discipline: The Whole-Brain Way to Calm the Chaos and Nurture Your Child's Developing Mind** by Daniel J. Siegel and Tina Payne Bryson: Focuses on discipline as a teaching opportunity rather than punishment (different angle on guiding behavior). 🚫🎭  
+* **[🚫🎭🧠 No-Drama Discipline: The Whole-Brain Way to Calm the Chaos and Nurture Your Child's Developing Mind](./no-drama-discipline.md)** by Daniel J. Siegel and Tina Payne Bryson: Focuses on discipline as a teaching opportunity rather than punishment (different angle on guiding behavior). 🚫🎭  
   
 #### Creatively Related Books:  
   

@@ -33,7 +33,7 @@ Here are the major subcategories, including Computer Science as a foundational e
 **Book Recommendations:**  
 Here are some influential and accessible books that provide a solid foundation in Software Engineering and related computer science concepts:  
   
-1.  **"Clean Code: A Handbook of Agile Software Craftsmanship" by Robert C. Martin:**  
+1.  **[🧼💾 Clean Code: A Handbook of Agile Software Craftsmanship](../books/clean-code.md) by Robert C. Martin:**  
     * This book focuses on writing readable and maintainable code, emphasizing principles and practices that lead to high-quality software. It's a must-read for any developer. 📚✨  
 2.  **"Design Patterns: Elements of Reusable Object-Oriented Software" by Erich Gamma, Richard Helm, Ralph Johnson, and John Vlissides (The "Gang of Four" or GoF):**  
     * A classic in software design, this book introduces fundamental design patterns that can be applied to solve common software design problems. It’s a very valuable tool. 🧩💡  

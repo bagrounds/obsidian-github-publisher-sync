@@ -5,7 +5,7 @@ aliases:
 title: 💾 Software
 ---
 [Home](../index.md)  
-# 💾 Software  
+# 💾 Software (31)  
 - [Babylon.js](./babylon.md)  
 - [CodinGame](./codingame.md)  
 - [Cursor](./cursor.md)  

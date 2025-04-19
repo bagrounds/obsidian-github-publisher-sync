@@ -5,7 +5,7 @@ aliases:
 title: 📄  Articles
 ---
 [Home](../index.md)  
-# 📄  Articles  
+# 📄  Articles (19)  
 - [🦊😈🐾🕵️💸 5 takeaways about NPR's reporting on the whistleblower report about DOGE at the NLRB](./5-takeaways-about-nprs-reporting-on-the-whistleblower-report-about-doge-at-the-nlrb.md)  
 - [5 tips on getting started with Gems, your custom AI experts](./5-tips-on-getting-started-with-gems-your-custom-ai-experts.md)  
 - [👀 Attention Is All You Need](./attention-is-all-you-need.md)  

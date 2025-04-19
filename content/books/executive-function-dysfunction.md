@@ -63,7 +63,7 @@ Moyes's book is a valuable resource for educators 🧑‍🏫 and parents 👨�
 * **Best Tangentially Related Book:** "[Driven to Distraction](./driven-to-distraction.md) (Revised): Recognizing and Coping with Attention Deficit Disorder" by Edward M. Hallowell and John J. Ratey. 🤯🧠  
 * **Best Diametrically Opposed Book:** Older parenting books that emphasize strict discipline without accommodations. 📏🚫🤝  
 * **Best Fiction Book (Related Ideas):** "Percy Jackson & the Olympians" series by Rick Riordan. ⚡📖  
-* **Best More General Book:** "The Whole-Brain Child: 12 Revolutionary Strategies to Nurture Your Child's Developing Mind" by Daniel J. Siegel and Tina Payne Bryson. 🧠👶  
+* **Best More General Book:** [🕳️🧠👶🏽 The Whole-Brain Child: 12 Revolutionary Strategies to Nurture Your Child's Developing Mind](./the-whole-brain-child.md) by Daniel J. Siegel and Tina Payne Bryson. 🧠👶  
 * **Best More Specific Book:** "Late, Lost, and Unprepared: A Parents' Guide to Helping Children with Executive Functioning" by Joyce Cooper-Kahn and Laurie Dietzel. ⏰📚  
 * **Best More Rigorous Book:** "Executive Functions in Children and Adolescents: A Practical Guide to Assessment and Intervention" by Joseph A. Allen. 🔬🧠  
 * **Best More Accessible Book:** "Executive Function 101" by Lisa Meltzer. 📖💡  

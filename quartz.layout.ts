@@ -5,7 +5,42 @@ import * as Component from "./quartz/components"
 export const sharedPageComponents: SharedLayout = {
   head: Component.Head(),
   header: [],
-  afterBody: [],
+  afterBody: [
+    /* Previous implementation based on giscus docs
+    <script src="https://giscus.app/client.js"
+      data-repo="bagrounds/obsidian-github-publisher-sync"
+      data-repo-id="R_kgDOLuWiLA"
+      data-category="Announcements"
+      data-category-id="DIC_kwDOLuWiLM4Ckd0H"
+      data-mapping="pathname"
+      data-strict="1"
+      data-reactions-enabled="1"
+      data-emit-metadata="0"
+      data-input-position="top"
+      data-theme="preferred_color_scheme"
+      data-lang="en"
+      crossorigin="anonymous"
+      async>
+    </script>
+    */
+    Component.Comments({
+      provider: 'giscus',
+      options: {
+        // from data-repo
+        repo: 'bagrounds/obsidian-github-publisher-sync',
+        // from data-repo-id
+        repoId: 'R_kgDOLuWiLA',
+        // from data-category
+        category: 'Announcements',
+        // from data-category-id
+        categoryId: 'DIC_kwDOLuWiLM4Ckd0H',
+        mapping: 'pathname',
+        strict: true,
+        reactionsEnabled: true,
+        inputPosition: 'top',
+      }
+    }),
+  ],
   footer: Component.Footer({
     links: {
       GitHub: "https://github.com/bagrounds/obsidian-github-publisher-sync"

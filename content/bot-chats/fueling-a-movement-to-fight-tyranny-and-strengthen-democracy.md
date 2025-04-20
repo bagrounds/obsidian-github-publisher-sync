@@ -21,7 +21,7 @@ Okay, here are 📚 book recommendations on the requested topics and a 📝 repo
 * **[👤🧬 The Selfish Gene](../books/the-selfish-gene.md)** **by Richard Dawkins:** 🧠 While primarily about evolutionary biology, this book famously introduced the concept of the "meme" as a unit of cultural transmission, laying the groundwork for memetics.  
 * **[💭🦠 Thought Contagion: How Belief Spreads Through Society](../books/thought-contagion.md)** **by Aaron Lynch:** 💡 One of the first mainstream books focusing explicitly on memetics, exploring how ideas propagate like viruses.  
 * 🗣️ **[Made to Stick: Why Some Ideas Survive and Others Die](../books/made-to-stick.md)** **by Chip Heath & Dan Heath:** 🤔 Examines the characteristics that make ideas memorable and impactful, offering practical insights into crafting messages that spread.  
-* 📈 **The Tipping Point: How Little Things Can Make a Big Difference** **by Malcolm Gladwell:** 💡 Explores how ideas, trends, and social behaviors reach a threshold and spread rapidly through populations, focusing on connectors, mavens, and salesmen.  
+* 📈 **[⚖️👈 The Tipping Point: How Little Things Can Make a Big Difference](../books/the-tipping-point.md)** **by Malcolm Gladwell:** 💡 Explores how ideas, trends, and social behaviors reach a threshold and spread rapidly through populations, focusing on connectors, mavens, and salesmen.  
   
 **2. 💪 Motivation:**  
   

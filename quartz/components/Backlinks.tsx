@@ -23,6 +23,7 @@ export default ((opts?: Partial<BacklinksOptions>) => {
     displayClass,
     cfg,
   }: QuartzComponentProps) => {
+    if (fileData.frontmatter?.backlinks === false) return
     const slug = simplifySlug(fileData.slug!)
     const backlinkFiles = allFiles.filter((file) => file.links?.includes(slug))
     if (options.hideWhenEmpty && backlinkFiles.length == 0) {

@@ -30,7 +30,10 @@ const config: QuartzConfig = {
     pageTitle: "bagrounds.org",
     enableSPA: true,
     enablePopovers: true,
-    analytics: null,
+    analytics: {
+      provider: "google",
+      tagId: "G-8Q69PH85GH",
+    },
     locale: "en-US",
     baseUrl: "bagrounds.org",
     ignorePatterns: ["private", "templates", ".obsidian"],

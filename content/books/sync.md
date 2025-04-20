@@ -57,7 +57,7 @@ tags:
   
 ### Book Recommendations 📚  
 * **Best Alternate Book on the Same Topic:** "[Order Out of Chaos](./order-out-of-chaos.md)" by Ilya Prigogine and Isabelle Stengers. This book explores the broader concept of dissipative structures and self-organization, providing a more theoretical and philosophical perspective. 🌌  
-* **Best Book That Is Tangentially Related:** "The Tipping Point" by Malcolm Gladwell. Gladwell explores how small changes can lead to large-scale social phenomena, which is related to the idea of phase transitions in synchronization. 📈  
+* **Best Book That Is Tangentially Related:** "[⚖️👈 The Tipping Point: How Little Things Can Make a Big Difference](./the-tipping-point.md)" by Malcolm Gladwell. Gladwell explores how small changes can lead to large-scale social phenomena, which is related to the idea of phase transitions in synchronization. 📈  
 * **Best Book That Is Diametrically Opposed:** "The Black Swan" by Nassim Nicholas Taleb. Taleb focuses on the unpredictability of rare events, challenging the idea of predictable patterns and synchronization. 🦢  
 * **Best Fiction Book That Incorporates Related Ideas:** "The Three-Body Problem" by Liu Cixin. This science fiction novel explores complex systems and emergent behavior in a cosmic context. 👽  
 * **Best Book That Is More General:** "[Complexity](./complexity.md): A Guided Tour" by Melanie Mitchell. This book provides a broader overview of complex systems and their properties. 🌐  

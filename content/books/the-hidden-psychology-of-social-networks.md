@@ -66,7 +66,7 @@ Federer's *The Hidden Psychology of Social Networks* provides a compelling lens 
 ### 🎨 Creative Connections (Related Concepts & Fiction)  
   
 * 🌍 **[Sapiens: A Brief History of Humankind](./sapiens-a-brief-history-of-humankind.md)** by Yuval Noah Harari: Provides broad context on human social structures, cooperation, and belief systems (shared fictions), which resonates with how online communities form and function.  
-* 🧬 **The Selfish Gene** by Richard Dawkins: Explains the concept of the "meme" as a unit of cultural transmission, relevant to understanding how ideas and trends spread virally online, a concept Federer touches upon.  
+* **[👤🧬 The Selfish Gene](./the-selfish-gene.md)** by Richard Dawkins: Explains the concept of the "meme" as a unit of cultural transmission, relevant to understanding how ideas and trends spread virally online, a concept Federer touches upon.  
 * 🤖 **[🧬👥💾 Life 3.0: Being Human in the Age of Artificial Intelligence](./life-3-0.md)** by Max Tegmark: Explores the future possibilities and ethical considerations of advanced AI and digital existence, pushing the boundaries of where social networks might lead.  
 * 👓 **[Snow Crash](./snow-crash.md)** by Neal Stephenson: A seminal cyberpunk novel that explores virtual reality, avatars, and online societies (the "Metaverse"), offering a fictional parallel to the identity explorations discussed by Federer.  
 * 😴 **Why We Sleep: Unlocking the Power of Sleep and Dreams** by Matthew Walker: While not directly about social media, it highlights a fundamental aspect of human biology and cognition often negatively impacted by digital technology overuse, offering a different angle on well-being in the modern age.  

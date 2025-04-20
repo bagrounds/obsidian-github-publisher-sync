@@ -53,6 +53,7 @@ const config: QuartzConfig = {
           secondary: SOLARIZED.blue,
           tertiary: SOLARIZED.base00,
           highlight: SOLARIZED.base2,
+          textHighlight: SOLARIZED.base2,
         },
         darkMode: {
           light: SOLARIZED.base03,
@@ -63,7 +64,7 @@ const config: QuartzConfig = {
           secondary: SOLARIZED.blue,
           tertiary: SOLARIZED.base0,
           highlight: SOLARIZED.base02,
-
+          textHighlight: SOLARIZED.base02,
         },
       },
     },

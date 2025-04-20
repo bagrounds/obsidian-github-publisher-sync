@@ -6,15 +6,19 @@ export function getStaticResourcesFromPlugins(ctx: BuildCtx) {
   const staticResources: StaticResources = {
     css: [],
     js: [],
+    additionalHead: [],
   }
 
-  for (const transformer of ctx.cfg.plugins.transformers) {
+  for (const transformer of [...ctx.cfg.plugins.transformers, ...ctx.cfg.plugins.emitters]) {
     const res = transformer.externalResources ? transformer.externalResources(ctx) : {}
     if (res?.js) {
       staticResources.js.push(...res.js)
     }
     if (res?.css) {
       staticResources.css.push(...res.css)
+    }
+    if (res?.additionalHead) {
+      staticResources.additionalHead.push(...res.additionalHead)
     }
   }
 
@@ -28,10 +32,10 @@ export function getStaticResourcesFromPlugins(ctx: BuildCtx) {
       loadTime: "afterDOMReady",
       contentType: "inline",
       script: `
-            const socket = new WebSocket('${wsUrl}')
-            // reload(true) ensures resources like images and scripts are fetched again in firefox
-            socket.addEventListener('message', () => document.location.reload(true))
-          `,
+        const socket = new WebSocket('${wsUrl}')
+        // reload(true) ensures resources like images and scripts are fetched again in firefox
+        socket.addEventListener('message', () => document.location.reload(true))
+      `,
     })
   }
 

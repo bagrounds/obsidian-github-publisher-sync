@@ -13,22 +13,6 @@ export default ((opts?: Options) => {
     const links = opts?.links ?? []
     return (
       <footer class={`${displayClass ?? ""}`}>
-        <script src="https://giscus.app/client.js"
-          data-repo="bagrounds/obsidian-github-publisher-sync"
-          data-repo-id="R_kgDOLuWiLA"
-          data-category="Announcements"
-          data-category-id="DIC_kwDOLuWiLM4Ckd0H"
-          data-mapping="pathname"
-          data-strict="1"
-          data-reactions-enabled="1"
-          data-emit-metadata="0"
-          data-input-position="top"
-          data-theme="preferred_color_scheme"
-          data-lang="en"
-          crossorigin="anonymous"
-          async>
-        </script>
-        <hr />
         <p>
           {i18n(cfg.locale).components.footer.createdWith}{" "}
           <a href="https://quartz.jzhao.xyz/">Quartz v{version}</a> © {year}

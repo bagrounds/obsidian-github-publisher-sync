@@ -328,7 +328,7 @@ Here's a breakdown:
     * "Seven Days in the Art World" by Sarah Thornton. 🖼️  
     * "The Shock of the New" by Robert Hughes. 🤯  
 * **Topic R (Dissimilar to Both):** Evolutionary Biology 🧬  
-    * "The Selfish Gene" by Richard Dawkins. 🐒  
+    * "[👤🧬 The Selfish Gene](../books/the-selfish-gene.md)" by Richard Dawkins. 🐒  
     * "Your Inner Fish: A Journey into the 3.5-Billion-Year History of the Human Body" by Neil Shubin. 🐟  
   
 **Meta Global Exploration:**  

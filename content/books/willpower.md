@@ -71,7 +71,7 @@ The book presents willpower not as an abstract virtue 😇, but as a tangible, p
 * **Best More General Book:** "[Atomic Habits](./atomic-habits.md)" by James Clear ⚛️. This book covers many of the same concepts, but with a more general approach to habit building 🧱.  
 * **Best More Specific Book:** "[Mindset](./mindset.md): The New Psychology of Success" by Carol S. Dweck 🌱. This book focuses on the "growth mindset," a specific aspect of self-improvement that relates to willpower 📈.  
 * **Best More Rigorous Book:** "Self-Control in Action: Strategies for the Everyday Battle" by June Tangney, Roy Baumeister, and Angela Duckworth 🧑‍🎓. This book is more of an academic text, and goes into greater scientific detail 🔬.  
-* **Best More Accessible Book:** "The Willpower Instinct" by Kelly McGonigal 🧘. This book is very easy to read, and applies willpower to everyday life 🌞.  
+* **Best More Accessible Book:** [🧘🏋️ The Willpower Instinct: How Self-Control Works, Why It Matters, and What You Can Do to Get More of It](./the-willpower-instinct.md) by Kelly McGonigal 🧘. This book is very easy to read, and applies willpower to everyday life 🌞.  
   
 ## 📝🐒 Human Notes  
 - Meaningful self regulation requires goals  

@@ -1,12 +1,12 @@
 ---
 share: true
 aliases:
-  - Graphiti
-title: Graphiti
+  - 🎨🧱 Graphiti
+title: 🎨🧱 Graphiti
 URL: https://bagrounds.org/software/graphiti
 ---
 [Home](../index.md) > [Software](./index.md)  
-# Graphiti  
+# 🎨🧱 Graphiti  
   
 ## 🤖 AI Summary  
 ### 👉 What Is It?  
@@ -50,7 +50,7 @@ URL: https://bagrounds.org/software/graphiti
   
 ### 📚 A List Of Relevant Theoretical Concepts Or Disciplines  
   
-* Knowledge graphs 🧠  
+* [🧠🌐 Knowledge Graphs](../topics/knowledge-graphs.md)  
 * Graph theory 🕸️  
 * Semantic web 🌐  
 * Python programming 🐍  

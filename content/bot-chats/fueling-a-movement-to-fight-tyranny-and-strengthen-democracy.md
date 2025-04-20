@@ -28,7 +28,7 @@ Okay, here are 📚 book recommendations on the requested topics and a 📝 repo
 * 🎯 **[Drive: The Surprising Truth About What Motivates Us](../books/drive-the-surprising-truth-about-what-motivates-us.md)** **by Daniel H. Pink:** Argues that autonomy, mastery, and purpose are the key drivers of motivation in the modern world, challenging traditional reward-and-punishment models.  
 * 🧠 **[Thinking, Fast and Slow](../books/thinking-fast-and-slow.md)** **by Daniel Kahneman:** A seminal work in behavioral economics and psychology, explaining the two systems that drive thought and how cognitive biases influence decisions and motivations.  
 * ✨ **[Man's Search for Meaning](../books/mans-search-for-meaning.md)** **by Viktor E. Frankl:** A profound work combining memoir and psychotherapy, arguing that the primary human drive is not pleasure but the discovery and pursuit of what we personally find meaningful, even in extreme suffering.  
-* 🧠 **The Willpower Instinct: How Self-Control Works, Why It Matters, and What You Can Do to Get More of It** **by Kelly McGonigal:** Uses insights from psychology and neuroscience to explain self-control and provide practical strategies for improving willpower and achieving goals.  
+* 🧠 **[🧘🏋️ The Willpower Instinct: How Self-Control Works, Why It Matters, and What You Can Do to Get More of It](../books/the-willpower-instinct.md)** **by Kelly McGonigal:** Uses insights from psychology and neuroscience to explain self-control and provide practical strategies for improving willpower and achieving goals.  
   
 **3. 👥 Social Organization:**  
   

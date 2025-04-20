@@ -1,12 +1,12 @@
 ---
 share: true
 aliases:
-  - Knowledge Graphs
-title: Knowledge Graphs
+  - 🧠🌐 Knowledge Graphs
+title: 🧠🌐 Knowledge Graphs
 URL: https://bagrounds.org/topics/knowledge-graphs
 ---
 [Home](../index.md) > [Topics](./index.md)  
-# Knowledge Graphs  
+# 🧠🌐 Knowledge Graphs  
 ## 🤖 AI Summary  
 ### 👉 What Is It?  
   

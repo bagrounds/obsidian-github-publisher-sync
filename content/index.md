@@ -11,7 +11,7 @@ Powered by [Obsidian](https://obsidian.md) + [GitHub Publisher](https://github.c
 If you don't know what that means... Welcome to my personal website!  
   
 ## [🪞 Reflections](./reflections/index.md) (~Blog)  
-- [2025-04-20 | 💡 Ideate | ⬆️ Update | 🗳️ Resist](./reflections/2025-04-20.md)  
+- [2025-04-20 | 💡 Ideate | ⬆️ Update | ✊ Resist](./reflections/2025-04-20.md)  
 - [2025-04-19 | 🥳 One 🕯️](./reflections/2025-04-19.md)  
 - [2025-04-18 | 🤥📣 Propaganda 🇷🇺🇺🇸](./reflections/2025-04-18.md)  
 - [2025-04-17 | 🦋 Complexity 🧶](./reflections/2025-04-17.md)  

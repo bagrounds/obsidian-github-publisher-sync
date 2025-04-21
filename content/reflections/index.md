@@ -6,7 +6,8 @@ title: 🪞 Reflections
 URL: https://bagrounds.org/reflections
 ---
 [Home](../index.md)  
-# 🪞 Reflections (156)  
+# 🪞 Reflections (157)  
+- [2025-04-20 | 💡 Ideate | ⬆️ Update | 🗳️ Resist](./2025-04-20.md)  
 - [2025-04-19 | 🥳 One 🕯️](./2025-04-19.md)  
 - [2025-04-18 | 🤥📣 Propaganda 🇷🇺🇺🇸](./2025-04-18.md)  
 - [2025-04-17 | 🦋 Complexity 🧶](./2025-04-17.md)  

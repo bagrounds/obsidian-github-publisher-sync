@@ -5,7 +5,7 @@ aliases:
 title: 💾 Software
 ---
 [Home](../index.md)  
-# 💾 Software (31)  
+# 💾 Software (32)  
 - [Babylon.js](./babylon.md)  
 - [CodinGame](./codingame.md)  
 - [Cursor](./cursor.md)  
@@ -14,9 +14,10 @@ title: 💾 Software
 - [Gemini](./gemini.md)  
 - [Git](./git.md)  
 - [GitHub Copilot for VS Code](./github-copilot-for-vs-code.md)  
+- [🕸️📊 Google Analytics](./google-analytics.md)  
 - [Google Search Console](./google-search-console.md)  
 - [Google Search Crawl Budget](./google-search-crawl-budget.md)  
-- [Graphiti](./graphiti.md)  
+- [🎨🧱 Graphiti](./graphiti.md)  
 - [Haskell](./haskell.md)  
 - [Hypothesis](./hypothesis.md)  
 - [K6](./k6.md)  

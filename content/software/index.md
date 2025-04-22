@@ -3,6 +3,7 @@ share: true
 aliases:
   - 💾 Software
 title: 💾 Software
+backlinks: false
 ---
 [Home](../index.md)  
 # 💾 Software (32)  

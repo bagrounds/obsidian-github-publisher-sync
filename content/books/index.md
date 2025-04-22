@@ -6,7 +6,7 @@ share: true
 URL: https://bagrounds.org/books
 ---
 [Home](../index.md)  
-# 📚 Books (263)  
+# 📚 Books (264)  
 - [👁️ 1984](./1984.md)  
 - [23 Things They Don't Tell You About Capitalism](./23-things-they-dont-tell-you-about-capitalism.md)  
 - [A Brief History of Time](./a-brief-history-of-time.md)  
@@ -76,6 +76,7 @@ URL: https://bagrounds.org/books
 - [Factfulness](./factfulness.md)  
 - [Fear: Trump in the White House](./fear.md)  
 - [Feedback Control of Dynamic Systems](./feedback-control-of-dynamic-systems.md)  
+- [🔥⛈️ Fire Weather: A True Story from a Hotter World](./fire-weather.md)  
 - [Flow: The Psychology of Optimal Experience](./flow-the-psychology-of-optimal-experience.md)  
 - [Foundations of Software Testing](./foundations-of-software-testing.md)  
 - [Freakonomics](./freakonomics.md)  

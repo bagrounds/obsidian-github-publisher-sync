@@ -3,6 +3,7 @@ title: " 👥 People"
 share: true
 aliases:
   - 👥 People
+backlinks: false
 ---
 [Home](../index.md)  
 # 👥 People (7)  

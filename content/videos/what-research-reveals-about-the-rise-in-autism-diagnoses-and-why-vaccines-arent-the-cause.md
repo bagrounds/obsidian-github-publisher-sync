@@ -21,13 +21,13 @@ tags:
   
 * 🔬 Numerous studies have since disproven this link ❌ [03:03].  
   
-* 🤔 The video explores potential reasons for the increase in autism rates 🧩, including changes in diagnostic practices 📊, increased awareness 📢, and factors like preterm birth 👶 and older paternal age 👴 [04:22].  
+* 🤔 Potential reasons for the increase in autism rates 🧩, include changes in diagnostic practices 📊, increased awareness 📢, and factors like preterm birth 👶 and older paternal age 👴 [04:22].  
   
 * 🧬 Current research focuses on genetic and environmental factors 🌿, such as air quality 💨, diet 🍎, and infections 🦠, and their potential interactions 🤝 [05:12].  
   
 * 🧠 Additionally, researchers are exploring early detection methods using brainwave analysis 📡 in infants 👶 [06:05].  
   
-* ✅ The video concludes by emphasizing that resources should be directed towards understanding the actual causes of autism 🧩 rather than revisiting the disproven vaccine link 💉❌ [07:04].  
+* ✅ Resources should be directed towards understanding the actual causes of autism 🧩 rather than revisiting the disproven vaccine link 💉❌ [07:04].  
   
 ## 📚 Book Recommendations  
   
@@ -70,7 +70,7 @@ tags:
     - 👨‍💻 **Credentials:** 🎤 Matt Brown is a science writer and presenter known for his engaging and informative style on platforms like YouTube.  
     - 💡 **Relevance:** ❗ It highlights how misinformation, even in seemingly unrelated areas, can persist and underscores the importance of 🧠 critical thinking and accurate scientific information.  
   
-- 🤔 **The Scientific Attitude: Defending Science from Denial, Fraud, and Pseudoscience** by Lee McIntyre.  
+- 🤔 **[🥼🛡️ The Scientific Attitude: Defending Science from Denial, Fraud, and Pseudoscience](../books/the-scientific-attitude.md)** by Lee McIntyre.  
     - ℹ️ **Description:** 👨‍🏫 McIntyre delves into the philosophical foundations of science and examines the various forms of 🙅‍♂️ science denial, including 🌍 climate change denial and 💉 anti-vaccine sentiment. 📣 He argues for the importance of adopting a "scientific attitude" characterized by open-mindedness, intellectual humility, and a commitment to evidence.  
     - 🎓 **Credentials:** 🔬 Lee McIntyre is a Research Fellow at the Center for Philosophy and History of Science at Boston University and a leading voice in the philosophy of science.  
     - 💡 **Relevance:** 🎯 It directly addresses the issue of science denial, providing insights into the psychological and social factors that contribute to the rejection of scientific consensus, such as the debunked vaccine-autism link.  

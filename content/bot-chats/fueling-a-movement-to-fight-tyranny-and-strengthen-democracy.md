@@ -84,3 +84,6 @@ Okay, here are 📚 book recommendations on the requested topics and a 📝 repo
 * 🎯 **Focus on Issues:** 📝 While candidate politics are important, organizing around specific issues can build broader, more durable coalitions (Source 8.2).  
   
 ⛽ Fueling a movement against tyranny is not a short-term project but a long-term commitment to building a resilient, participatory, and just society. 💡 It requires understanding how ideas spread, what motivates people, how societies organize, and the fundamental principles that distinguish democracy from tyranny.  
+  
+## 🐦 Tweet  
+<blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">📢 To build a 🧱 resilient, 🤝 participatory, and ⚖️ just society requires 🤔 understanding how 💡 ideas spread, what 🎯 motivates people, how 🌍 societies organize, and the 📜 principles that distinguish 🗳️ democracy from 👑 tyranny.<a href="https://t.co/uHQCKD9dwm">https://t.co/uHQCKD9dwm</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/1914647900841501085?ref_src=twsrc%5Etfw">April 22, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>  

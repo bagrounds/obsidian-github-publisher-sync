@@ -4,6 +4,7 @@ aliases:
   - 📚 Books
 share: true
 URL: https://bagrounds.org/books
+backlinks: false
 ---
 [Home](../index.md)  
 # 📚 Books (264)  

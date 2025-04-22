@@ -6,7 +6,7 @@ title: 📺 Videos
 URL: https://bagrounds.org/videos
 ---
 [Home](../index.md)  
-# 📺 Videos (123)  
+# 📺 Videos (125)  
 - [2025 Yearly Themes](./2025-yearly-themes.md)  
 - [3 High Leverage Career Skills (From a Principal At Amazon)](./3-high-leverage-career-skills-from-a-principal-at-amazon.md)  
 - [ACLU attorney on suing Trump administration for using wartime authority for deportations](./aclu-attorney-on-suing-trump-administration-for-using-wartime-authority-for-deportations.md)  
@@ -116,9 +116,11 @@ URL: https://bagrounds.org/videos
 - [What America is losing as President Trump fires independent government watchdogs | 60 Minutes](./what-america-is-losing-as-president-trump-fires-independent-government-watchdogs-60-minutes.md)  
 - [What Are You?](./what-are-you.md)  
 - [What EXACTLY is in the Republican Budget Blueprint?](./what-exactly-is-in-the-republican-budget-blueprint.md)  
+- [🥼🦷💧 What happened when Calgary removed fluoride from its water supply](./what-happened-when-calgary-removed-fluoride-from-its-water-supply.md)  
 - [What I Learned after 5000 Hours of Mind Mapping](./what-i-learned-after-5000-hours-of-mind-mapping.md)  
 - [What Makes Some Brains More Focused Than Others? | Marvin Chun | TEDxKFAS](./what-makes-some-brains-more-focused-than-others-marvin-chun-tedxkfas.md)  
 - [What makes something memorable?](./what-makes-something-memorable.md)  
+- [🥼🧠🚫💉 What research reveals about the rise in autism diagnoses and why vaccines aren't the cause](./what-research-reveals-about-the-rise-in-autism-diagnoses-and-why-vaccines-arent-the-cause.md)  
 - [What’s next for America’s Proud Boys after Donald Trump’s pardons | Extra Minutes](./whats-next-for-americas-proud-boys-after-donald-trumps-pardons-extra-minutes.md)  
 - [What we know — and don't know — about the U.S. strikes in Yemen](./what-we-know-and-dont-know-about-the-us-strikes-in-yemen.md)  
 - [Whitehouse and Murphy Dress Down Republican Tax «Thievery» in Colloquy on Senate Floor](./whitehouse-and-murphy-dress-down-republican-tax-thievery-in-colloquy-on-senate-floor.md)  

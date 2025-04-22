@@ -42,7 +42,7 @@ tags:
   
 * 🦊 *Hoax: Donald Trump, Fox News, and the Dangerous Distortion of Truth* by Brian Stelter: 📢 Examines the relationship between Trump and a specific media outlet, highlighting issues of bias and influence.  
 * 🏛️ *The Divider: Trump in the White House, 2017-2021* by Peter Baker and Susan Glasser: 📰 Provides extensive reporting on the Trump presidency, including his administration's interactions and conflicts with the press.  
-* 🌐 *Antisocial: Online Extremists, Techno-Utopians, and the Hijacking of the American Conversation* by Andrew Marantz: 📱 Looks at how media, including social media, has been influenced and manipulated in the modern political era.  
+* [🙅🗣️💻 Antisocial: Online Extremists, Techno-Utopians, and the Hijacking of the American Conversation](../books/antisocial-online-extremists-techno-utopians-and-the-hijacking-of-the-american-conversation.md) by Andrew Marantz: 📱 Looks at how media, including social media, has been influenced and manipulated in the modern political era.  
   
 **🔎 On the History and Practice of Investigative Journalism:**  
   

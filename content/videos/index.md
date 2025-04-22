@@ -6,7 +6,7 @@ title: 📺 Videos
 URL: https://bagrounds.org/videos
 ---
 [Home](../index.md)  
-# 📺 Videos (125)  
+# 📺 Videos (126)  
 - [2025 Yearly Themes](./2025-yearly-themes.md)  
 - [3 High Leverage Career Skills (From a Principal At Amazon)](./3-high-leverage-career-skills-from-a-principal-at-amazon.md)  
 - [ACLU attorney on suing Trump administration for using wartime authority for deportations](./aclu-attorney-on-suing-trump-administration-for-using-wartime-authority-for-deportations.md)  
@@ -41,6 +41,7 @@ URL: https://bagrounds.org/videos
 - [How I use LLMs](./how-i-use-llms.md)  
 - [How new job cuts at the nation’s leading health agency affect Americans](./how-new-job-cuts-at-the-nations-leading-health-agency-affect-americans.md)  
 - [How the Elite rigged Society (and why it’s falling apart) | David Brooks](./how-the-elite-rigged-society-and-why-it-s-falling-apart-david-brooks.md)  
+- [⛽🔥🌪️🌀🌍 How the Trump administration is dismantling climate protections](./how-the-trump-administration-is-dismantling-climate-protections.md)  
 - [How to Become an Expert in ANYTHING - The Dunning Kruger Effect](./how-to-become-an-expert-in-anything-the-dunning-kruger-effect.md)  
 - [How to Force Your Brain To Be Motivated (when you don’t feel like it)](./how-to-force-your-brain-to-be-motivated-when-you-dont-feel-like-it.md)  
 - [How to hack your brain to crave doing hard things.](./how-to-hack-your-brain-to-crave-doing-hard-things.md)  

@@ -4,6 +4,7 @@ aliases:
   - 🤖💬 Bot Chats
 title: 🤖💬 Bot Chats
 URL: https://bagrounds.org/bot-chats
+backlinks: false
 ---
 [Home](../index.md)  
 # 🤖💬 Bot Chats (15)  

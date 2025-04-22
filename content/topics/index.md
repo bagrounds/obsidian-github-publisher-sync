@@ -4,9 +4,10 @@ aliases:
   - 🌌 Topics
 title: 🌌 Topics
 URL: https://bagrounds.org/topics
+backlinks: false
 ---
 [Home](../index.md)  
-# 🌌 Topics (65)  
+# 🌌 Topics (66)  
 - [Adaptive Control](./adaptive-control.md)  
 - [A Hierarchical View of Human Knowledge](./a-hierarchical-view-of-human-knowledge.md)  
 - [A Method For Estimating Work](./a-method-for-estimating-work.md)  
@@ -18,6 +19,7 @@ URL: https://bagrounds.org/topics
 - [Communication Studies](./communication-studies.md)  
 - [Computer Science](./computer-science.md)  
 - [Control Systems](./control-systems.md)  
+- [🇨🇳🤖 DeepSeek](./deepseek.md)  
 - [Design a Performance Self-Evaluation System](./design-a-performance-self-evaluation-system.md)  
 - [Digital Twin](./digital-twin.md)  
 - [Economics](./economics.md)  
@@ -34,7 +36,7 @@ URL: https://bagrounds.org/topics
 - [Informative Speaking](./informative-speaking.md)  
 - [Job Guarantee / Employer of Last Resort](./job-guarantee-employer-of-last-resort.md)  
 - [Kalman Filter](./kalman-filter.md)  
-- [Knowledge Graphs](./knowledge-graphs.md)  
+- [🧠🌐 Knowledge Graphs](./knowledge-graphs.md)  
 - [Kuramoto Model](./kuramoto-model.md)  
 - [Large Language Models](./large-language-models.md)  
 - [Learning](./learning.md)  

@@ -1,14 +1,14 @@
 ---
 share: true
 aliases:
-  - Atomic Habits
-title: Atomic Habits
+  - ⚛️🔄 Atomic Habits
+title: ⚛️🔄 Atomic Habits
 URL: https://bagrounds.org/books/atomic-habits
 Author: 
 tags: 
 ---
 [Home](../index.md) > [Books](./index.md)  
-# Atomic Habits  
+# ⚛️🔄 Atomic Habits  
   
 ## 🤖 AI Summary  
 ### Atomic Habits: Summary and Analysis 📚  

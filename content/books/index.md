@@ -6,7 +6,7 @@ share: true
 URL: https://bagrounds.org/books
 ---
 [Home](../index.md)  
-# 📚 Books (262)  
+# 📚 Books (263)  
 - [👁️ 1984](./1984.md)  
 - [23 Things They Don't Tell You About Capitalism](./23-things-they-dont-tell-you-about-capitalism.md)  
 - [A Brief History of Time](./a-brief-history-of-time.md)  
@@ -236,6 +236,7 @@ URL: https://bagrounds.org/books
 - [The Righteous Mind](./the-righteous-mind.md)  
 - [The Science Of Mom](./the-science-of-mom.md)  
 - [The Science of Storytelling](./the-science-of-storytelling.md)  
+- [🥼🛡️ The Scientific Attitude: Defending Science from Denial, Fraud, and Pseudoscience](./the-scientific-attitude.md)  
 - [👨‍🚀 The Self-Driven Child: The 🔬 Science and 🤔 Sense of Giving Your Kids More 🕹️ Control Over Their Lives](./the-self-driven-child.md)  
 - [👤🧬 The Selfish Gene](./the-selfish-gene.md)  
 - [The Signal and the Noise: Why So Many Predictions Fail - but Some Don't](./the-signal-and-the-noise.md)  

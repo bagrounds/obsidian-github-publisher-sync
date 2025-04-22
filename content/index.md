@@ -1,11 +1,12 @@
 ---
 share: true
 aliases:
-  - Home
+  - 🏡 Home
 URL: https://bagrounds.org
 backlinks: false
+title: 🏡 Home
 ---
-# Home  
+# 🏡 Home  
 Welcome to the published subset of my Obsidian notes.  
 Powered by [Obsidian](https://obsidian.md) + [GitHub Publisher](https://github.com/ObsidianPublisher/obsidian-github-publisher) + [Quartz](https://quartz.jzhao.xyz)!  
 If you don't know what that means... Welcome to my personal website!  

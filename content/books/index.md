@@ -18,7 +18,7 @@ URL: https://bagrounds.org/books
 - [Antifragile: Things That Gain from Disorder](./antifragile-things-that-gain-from-disorder.md)  
 - [Architectural Styles and the Design of Network Based Software Architectures](./architectural-styles-and-the-design-of-network-based-software-architectures.md)  
 - [A Thousand Brains](./a-thousand-brains.md)  
-- [Atomic Habits](./atomic-habits.md)  
+- [⚛️🔄 Atomic Habits](./atomic-habits.md)  
 - [Attention](./attention.md)  
 - [Automatic Control Systems](./automatic-control-systems.md)  
 - [Bayes' Theorem Examples](./bayes-theorem-examples.md)  

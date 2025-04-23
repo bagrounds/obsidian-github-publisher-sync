@@ -43,6 +43,6 @@ tags:
   
 ☀️ **Renewable Energy:**  
   
-* 💨 **Sustainable Energy - Without the Hot Air** by David J.C. MacKay: 🔢 Objectively addresses the energy crisis with numbers and facts.  
+* **[🌞🌬️🌊🌋 Sustainable Energy - Without the Hot Air](../books/sustainable-energy-without-the-hot-air.md)** by David J.C. MacKay: 🔢 Objectively addresses the energy crisis with numbers and facts.  
 * ⚡ **Renewable Energy: A Primer for the Twenty-first Century** by Bruce Usher: 🔋 Discusses the transition from fossil fuels to renewables like wind and solar.  
 * 🌍 **Renewable Energy: Physics, Engineering, Environmental Impacts, Economics and Planning** by Bent Sørensen: 📚 A comprehensive overview of the renewable energy field.  

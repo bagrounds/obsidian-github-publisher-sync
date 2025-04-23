@@ -68,7 +68,7 @@ tags:
     * 📜 **Mein Kampf** by Adolf Hitler: While deeply problematic, it outlines Hitler's understanding and intended use of propaganda, providing historical insight into earlier forms.  
     * 📢 **Propaganda** by Edward Bernays: A foundational text (from 1928) on public relations and propaganda by a pioneer in the field, offering a historical perspective on manipulation techniques.  
 * **Psychology and Society:**  
-    * 🏢 **Manufacturing Consent: The Political Economy of the Mass Media** by Edward S. Herman and Noam Chomsky: A seminal work arguing that mass media functions as a propaganda system for elite interests, even in democratic societies.  
+    * **[🏭🫡 Manufacturing Consent: The Political Economy of the Mass Media](./manufacturing-consent.md)** by Edward S. Herman and Noam Chomsky: A seminal work arguing that mass media functions as a propaganda system for elite interests, even in democratic societies.  
     * 🤯 **The True Believer: Thoughts on the Nature of Mass Movements** by Eric Hoffer: Analyzes the psychology behind fanaticism and mass movements, relevant to understanding susceptibility to propaganda.  
     * 🗣️ **Cultish: The Language of Fanaticism** by Amanda Montell: Explores how language is used to create cohesion and exert control in groups, from cults to corporations, touching on manipulation tactics.  
 * **Specific Case Studies:**  

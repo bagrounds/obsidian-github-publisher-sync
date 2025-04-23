@@ -7,9 +7,8 @@ backlinks: false
 title: 🏡 Home
 ---
 # 🏡 Home  
-❔ What do 🫵 _you_ 🤔 think?  
 📑 Notes, 💭 thoughts, and 🔗 Links.  
-🔌 Powered by [✍️ Obsidian](https://obsidian.md) + [📨 Enveloppe](https://github.com/ObsidianPublisher/obsidian-github-publisher) + [💎 Quartz](https://quartz.jzhao.xyz)  
+❔ What do 🫵 _you_ 🤔 think?  
   
 ## [🪞 Reflections](./reflections/index.md) (~Blog)  
 - [2025-04-23 | 💭 Think ⚡ Power 🌱 Plant](./reflections/2025-04-23.md)  

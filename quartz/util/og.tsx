@@ -238,70 +238,7 @@ export const defaultImage: SocialImageOptions["imageStructure"] = ({
         >
           {cfg.baseUrl}
         </div>
-      </div>
 
-      {/* Title Section */}
-      <div
-        style={{
-          display: "flex",
-          marginTop: "1rem",
-          marginBottom: "1.5rem",
-        }}
-      >
-        <h1
-          style={{
-            margin: 0,
-            fontSize: useSmallerFont ? 64 : 72,
-            fontFamily: headerFont,
-            fontWeight: 700,
-            color: cfg.theme.colors[colorScheme].dark,
-            lineHeight: 1.2,
-            display: "-webkit-box",
-            WebkitBoxOrient: "vertical",
-            WebkitLineClamp: 2,
-            overflow: "hidden",
-            textOverflow: "ellipsis",
-          }}
-        >
-          {title}
-        </h1>
-      </div>
-
-      {/* Description Section */}
-      <div
-        style={{
-          display: "flex",
-          flex: 1,
-          fontSize: 36,
-          color: cfg.theme.colors[colorScheme].darkgray,
-          lineHeight: 1.4,
-        }}
-      >
-        <p
-          style={{
-            margin: 0,
-            display: "-webkit-box",
-            WebkitBoxOrient: "vertical",
-            WebkitLineClamp: 5,
-            overflow: "hidden",
-            textOverflow: "ellipsis",
-          }}
-        >
-          {description}
-        </p>
-      </div>
-
-      {/* Footer with Metadata */}
-      <div
-        style={{
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "space-between",
-          marginTop: "2rem",
-          paddingTop: "2rem",
-          borderTop: `1px solid ${cfg.theme.colors[colorScheme].lightgray}`,
-        }}
-      >
         {/* Left side - Date and Reading Time */}
         <div
           style={{
@@ -371,6 +308,57 @@ export const defaultImage: SocialImageOptions["imageStructure"] = ({
             </div>
           ))}
         </div>
+      </div>
+
+      {/* Title Section */}
+      <div
+        style={{
+          display: "flex",
+          marginTop: "1rem",
+          marginBottom: "1.5rem",
+        }}
+      >
+        <h1
+          style={{
+            margin: 0,
+            fontSize: useSmallerFont ? 64 : 72,
+            fontFamily: headerFont,
+            fontWeight: 700,
+            color: cfg.theme.colors[colorScheme].dark,
+            lineHeight: 1.2,
+            display: "-webkit-box",
+            WebkitBoxOrient: "vertical",
+            WebkitLineClamp: 2,
+            overflow: "hidden",
+            textOverflow: "ellipsis",
+          }}
+        >
+          {title}
+        </h1>
+      </div>
+
+      {/* Description Section */}
+      <div
+        style={{
+          display: "flex",
+          flex: 1,
+          fontSize: 36,
+          color: cfg.theme.colors[colorScheme].darkgray,
+          lineHeight: 1.4,
+        }}
+      >
+        <p
+          style={{
+            margin: 0,
+            display: "-webkit-box",
+            WebkitBoxOrient: "vertical",
+            WebkitLineClamp: 5,
+            overflow: "hidden",
+            textOverflow: "ellipsis",
+          }}
+        >
+          {description}
+        </p>
       </div>
     </div>
   )

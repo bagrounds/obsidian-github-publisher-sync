@@ -20,23 +20,25 @@ const urlRegex = new RegExp(
   "g",
 )
 
-function removeBreadcrumbsAndFirstH1(htmlString) {
-  // Regex to remove the breadcrumb paragraph (assuming it comes before the first h1)
-  const breadcrumbRegex = /<p>.*?<\/p>\s*<h1[^>]*>.*?<\/h1>/is;
+function removeTitle(textContent: string, pageTitle: string): string {
+  const titleIndex = textContent.indexOf(pageTitle);
 
-  // Regex to remove the first h1 heading (if no breadcrumbs are found before it)
-  const firstH1Regex = /^.*?<h1[^>]*>.*?<\/h1>/is;
-
-  const withoutBreadcrumbsAndH1 = htmlString.replace(breadcrumbRegex, '');
-
-  // If the breadcrumb regex didn't match (no breadcrumbs found before h1),
-  // try removing just the first h1.
-  if (withoutBreadcrumbsAndH1 === htmlString) {
-    return htmlString.replace(firstH1Regex, '');
+  if (titleIndex === -1) {
+    // If the title is not found in the text content, return the original text content
+    return textContent;
   }
 
-  return withoutBreadcrumbsAndH1;
+  const newlineIndexAfterTitle = textContent.indexOf('\n', titleIndex + pageTitle.length);
+
+  if (newlineIndexAfterTitle === -1) {
+    // If no newline is found after the title, return an empty string
+    return '';
+  }
+
+  // Return the text content starting after the newline
+  return textContent.substring(newlineIndexAfterTitle + 1);
 }
+
 
 export const Description: QuartzTransformerPlugin<Partial<Options>> = (userOpts) => {
   const opts = { ...defaultOptions, ...userOpts }
@@ -47,7 +49,7 @@ export const Description: QuartzTransformerPlugin<Partial<Options>> = (userOpts)
         () => {
           return async (tree: HTMLRoot, file) => {
             let frontMatterDescription = file.data.frontmatter?.description
-            let text = escapeHTML(toString(removeBreadcrumbsAndFirstH1(tree)))
+            let text = removeTitle(escapeHTML(toString(tree)))
 
             if (opts.replaceExternalLinks) {
               frontMatterDescription = frontMatterDescription?.replace(

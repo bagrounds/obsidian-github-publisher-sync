@@ -56,7 +56,7 @@ tags:
   
 * **[🤥📣 This Is Not Propaganda: Adventures in the War Against Reality](./this-is-not-propaganda.md)** by Peter Pomerantsev: Pomerantsev's earlier work exploring modern propaganda landscapes, troll farms, and the weaponization of information in various global contexts.  
 * 🇷🇺 **Nothing Is True and Everything Is Possible: The Surreal Heart of the New Russia** by Peter Pomerantsev: Delves into the media manipulation and reality distortion techniques perfected in Putin's Russia.  
-* 🏭 **Manufacturing Consent: The Political Economy of the Mass Media** by Edward S. Herman and Noam Chomsky: A classic, foundational text analyzing how media structures, ownership, and advertising shape news and serve elite interests (the "propaganda model").  
+* **[🏭🫡 Manufacturing Consent: The Political Economy of the Mass Media](./manufacturing-consent.md)** by Edward S. Herman and Noam Chomsky: A classic, foundational text analyzing how media structures, ownership, and advertising shape news and serve elite interests (the "propaganda model").  
 * 🗣️ **Propaganda** by Edward Bernays: Written by the "father of public relations," this seminal 1928 work outlines the principles of influencing public opinion, viewing propaganda as a necessary tool for democratic governance.  
 * 🤥 **Trust Me, I'm Lying: Confessions of a Media Manipulator** by Ryan Holiday: A provocative insider's account of how modern online media can be manipulated for profit and attention, revealing unethical tactics.  
 * 🛡️ **The Kill Chain: Defending America in the Future of High-Tech Warfare** by Christian Brose: While focused more broadly on military tech, it addresses the integration of information warfare into modern defense strategy.  

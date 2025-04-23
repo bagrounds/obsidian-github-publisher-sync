@@ -73,9 +73,7 @@ tags:
 2. **[👹 The Origins of Totalitarianism](./the-origins-of-totalitarianism.md)** by Hannah Arendt: A seminal philosophical 🧠 and historical analysis of the elements that coalesce into totalitarian movements.  
 3. 📜 **[The Age of Surveillance Capitalism](./the-age-of-surveillance-capitalism.md): The Fight for a Human Future at the New Frontier of Power** by Shoshana Zuboff: A deep dive 🏊 into the economic model 💸 driving many tech platforms Ressa critiques, focusing on the commodification of personal data 💾.  
 4. 📜 **The Handmaid's Tale** by Margaret Atwood: A fictional exploration of the rapid loss of rights ⚖️ and the establishment of a theocratic dictatorship, touching on themes of resistance 💪 and control.  
-5. 📜 **Manufacturing Consent: The Political Economy of the Mass Media** by Edward S. Herman & Noam Chomsky: A classic critique of how media structures and economic imperatives can shape news coverage 📰, offering a different lens 👁️ on information control.  
-  
+5. **[🏭🫡 Manufacturing Consent: The Political Economy of the Mass Media](./manufacturing-consent.md)** by Edward S. Herman & Noam Chomsky: A classic critique of how media structures and economic imperatives can shape news coverage 📰, offering a different lens 👁️ on information control.  
   
 ## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
-> Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on How to Stand Up to a Dictator The Fight for Our Future. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text..  
-  
+> Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on How to Stand Up to a Dictator The Fight for Our Future. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

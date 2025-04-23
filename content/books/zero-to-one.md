@@ -1,14 +1,14 @@
 ---
 share: true
 aliases:
-  - Zero To One
-title: Zero To One
+  - 0️⃣➡️1️⃣ Zero To One
+title: 0️⃣➡️1️⃣ Zero To One
 URL: https://bagrounds.org/books/zero-to-one
 Author: 
 tags: 
 ---
 [Home](../index.md) > [Books](./index.md)  
-# Zero To One  
+# 0️⃣➡️1️⃣ Zero To One  
 ## 🤖 AI Summary  
 ### Zero To One Summary 🚀  
 **TL;DR:** Instead of competing in existing markets ("going from 1 to n"), create a monopoly by building something entirely new ("going from 0 to 1"). 🥇  

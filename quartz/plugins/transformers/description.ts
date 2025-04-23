@@ -47,7 +47,7 @@ export const Description: QuartzTransformerPlugin<Partial<Options>> = (userOpts)
 
             // otherwise, use the text content
             const desc = text
-            const sentences = desc.replace(/\n+/g,"; ").replace(/\s+/g, " ").split(/\.\s/)
+            const sentences = desc.replace(/(?<![.,?!:;])\n/g,"; ").replace(/\s+/g, " ").split(/\.\s/)
             let finalDesc = ""
             let sentenceIdx = 0
 

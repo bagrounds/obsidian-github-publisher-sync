@@ -59,9 +59,9 @@ export const Description: QuartzTransformerPlugin<Partial<Options>> = (userOpts)
               const currentSentence = sentence.endsWith(".") ? sentence : sentence + "."
               const nextLength = finalDesc.length + currentSentence.length + (finalDesc ? 1 : 0)
 
-              // Add the sentence if we're under the guideline length
+              // Add the sentence if we're under the guideline length + sentence length
               // or if this is the first sentence (always include at least one)
-              if (nextLength <= opts.descriptionLength || sentenceIdx === 0) {
+              if (nextLength < (opts.descriptionLength + sentence.length) || sentenceIdx === 0) {
                 finalDesc += (finalDesc ? " " : "") + currentSentence
                 sentenceIdx++
               } else {

@@ -46,7 +46,7 @@ tags:
 ### 🤝 Similar Perspectives (Media Criticism, Power Structures, Propaganda)  
   
 * **[🏭🫡 Manufacturing Consent: The Political Economy of the Mass Media](./manufacturing-consent.md)** by Edward S. Herman and Noam Chomsky: 🧱 The foundational text detailing the Propaganda Model discussed in *Necessary Illusions*. 📖 Essential companion reading.  
-* 🗣️ **Understanding Power: The Indispensable Chomsky** edited by Peter R. Mitchell and John Schoeffel: 🎤 A collection of Chomsky's talks and interviews, offering accessible insights into his views on media, power, and global politics.  
+* 🗣️ **[🤔🔌 Understanding Power: The Indispensable Chomsky](./understanding-power-the-indispensable-chomsky.md)** edited by Peter R. Mitchell and John Schoeffel: 🎤 A collection of Chomsky's talks and interviews, offering accessible insights into his views on media, power, and global politics.  
 * 📺 **Amusing Ourselves to Death: Public Discourse in the Age of Show Business** by Neil Postman: 🤡 Argues that television (and by extension, modern media) degrades public discourse by prioritizing entertainment over substance, creating a populace easily distracted from important issues.  
 * 📣 **Propaganda** by Edward Bernays: 👨‍🏫 A foundational text on public relations and propaganda by one of its pioneers (and Freud's nephew), offering a candid look at techniques for shaping public opinion.  
 * 📰 **Inventing Reality: The Politics of News Media** by Michael Parenti: 🧐 A critical analysis, similar to Chomsky's, focusing on how media serves corporate and political interests, often ignoring systemic issues.  
@@ -65,7 +65,5 @@ tags:
 * 🧠 **[Thinking, Fast and Slow](./thinking-fast-and-slow.md)** by Daniel Kahneman: 💡 Explores cognitive biases and the two systems of thought (fast/intuitive vs. slow/deliberative), providing psychological context for why populations might be susceptible to manipulation and simplified narratives.  
 * 🌐 **[The Age of Surveillance Capitalism](./the-age-of-surveillance-capitalism.md): The Fight for a Human Future at the New Frontier of Power** by Shoshana Zuboff: 📡 Examines how modern tech companies gather vast amounts of personal data to predict and modify behavior, presenting a new form of powerful, often invisible, control.  
   
-  
 ## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
-> Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Necessary Illusions Thought Control in Democratic Societies. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text..  
-  
+> Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Necessary Illusions Thought Control in Democratic Societies. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

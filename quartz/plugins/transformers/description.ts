@@ -10,8 +10,8 @@ export interface Options {
 }
 
 const defaultOptions: Options = {
-  descriptionLength: 150,
-  maxDescriptionLength: 360,
+  descriptionLength: 300,
+  maxDescriptionLength: 720,
   replaceExternalLinks: true,
 }
 

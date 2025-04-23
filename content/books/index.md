@@ -7,7 +7,8 @@ URL: https://bagrounds.org/books
 backlinks: false
 ---
 [Home](../index.md)  
-# 📚 Books (264)  
+# 📚 Books (267)  
+- [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [👁️ 1984](./1984.md)  
 - [23 Things They Don't Tell You About Capitalism](./23-things-they-dont-tell-you-about-capitalism.md)  
 - [A Brief History of Time](./a-brief-history-of-time.md)  
@@ -17,6 +18,7 @@ backlinks: false
 - [An Architect of Democracy: Building a Mosaic of Peace](./an-architect-of-democracy.md)  
 - [An Introduction to Causal Inference](./an-introduction-to-causal-inference.md)  
 - [Antifragile: Things That Gain from Disorder](./antifragile-things-that-gain-from-disorder.md)  
+- [🙅🗣️💻 Antisocial: Online Extremists, Techno-Utopians, and the Hijacking of the American Conversation](./antisocial-online-extremists-techno-utopians-and-the-hijacking-of-the-american-conversation.md)  
 - [Architectural Styles and the Design of Network Based Software Architectures](./architectural-styles-and-the-design-of-network-based-software-architectures.md)  
 - [A Thousand Brains](./a-thousand-brains.md)  
 - [⚛️🔄 Atomic Habits](./atomic-habits.md)  
@@ -123,6 +125,7 @@ backlinks: false
 - [Make It Stick](./make-it-stick.md)  
 - [Making Reliable Distributed Systems in the Presence of Software Errors](./making-reliable-distributed-systems-in-the-presence-of-software-errors.md)  
 - [Man's Search for Meaning](./mans-search-for-meaning.md)  
+- [🏭🫡 Manufacturing Consent: The Political Economy of the Mass Media](./manufacturing-consent.md)  
 - [Measure What Matters](./measure-what-matters.md)  
 - [🤯 Mindf*ck: Cambridge Analytica and the Plot to Break America](./mindf-ck-cambridge-analytica-and-the-plot-to-break-america.md)  
 - [Mindset](./mindset.md)  
@@ -130,6 +133,7 @@ backlinks: false
 - [Modeling Dynamic Systems](./modeling-dynamic-systems.md)  
 - [Moneyball](./moneyball.md)  
 - [Naked Statistics](./naked-statistics.md)  
+- [🪄💭 Necessary Illusions: Thought Control in Democratic Societies](./necessary-illusions.md)  
 - [🌐💰 Networks, Crowds, and Markets: Reasoning About a Highly Connected World](./networks-crowds-and-markets.md)  
 - [Never Split The Difference](./never-split-the-difference.md)  
 - [🚫🎭🧠 No-Drama Discipline: The Whole-Brain Way to Calm the Chaos and Nurture Your Child's Developing Mind](./no-drama-discipline.md)  
@@ -162,7 +166,7 @@ backlinks: false
 - [Probability Theory](./probability-theory.md)  
 - [Purposeful Performance: The Secret Mix of Connecting, Leading, and Succeeding](./purposeful-performance.md)  
 - [Range](./range.md)  
-- [Rapport](./rapport.md)  
+- [🤝🐾 Rapport: The Four Ways to Read People](./rapport.md)  
 - [Rationality](./rationality.md)  
 - [Reclaiming the State](./reclaiming-the-state.md)  
 - [Reinforcement Learning: An Introduction](./reinforcement-learning-an-introduction.md)  
@@ -270,5 +274,4 @@ backlinks: false
 - [🦓 Why Zebras Don't Get Ulcers: The Acclaimed Guide to Stress, Stress-Related Disease, and Coping](./why-zebras-dont-get-ulcers.md)  
 - [Willpower](./willpower.md)  
 - [Writing Down the Bones](./writing-down-the-bones.md)  
-- [Zero To One](./zero-to-one.md)  
   

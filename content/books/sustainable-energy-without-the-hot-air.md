@@ -59,7 +59,7 @@ tags:
   
 * 🌍 **Energy and Civilization: A History** by Vaclav Smil: Provides a sweeping historical perspective on how energy sources have shaped human societies, rich in quantitative detail and analysis of energy transitions over millennia.  
 * 📉 **How to Avoid a Climate Disaster: The Solutions We Have and the Breakthroughs We Need** by Bill Gates: While less purely technical than MacKay, Gates takes a pragmatic, solutions-focused approach, breaking down the challenge by sector and emphasizing innovation needs with a quantitative lens.  
-* 🌱 **Not the End of the World: How We Can Be the First Generation to Build a Sustainable Planet** by Hannah Ritchie: Uses data to challenge overly pessimistic environmental narratives, arguing that progress is possible across various sustainability metrics, including energy, though acknowledging the scale of the challenge.  
+* **[⛔🌎🔚 Not the End of the World: How We Can Be the First Generation to Build a Sustainable Planet](./not-the-end-of-the-world.md)** by Hannah Ritchie: Uses data to challenge overly pessimistic environmental narratives, arguing that progress is possible across various sustainability metrics, including energy, though acknowledging the scale of the challenge.  
   
 ### ↔️ Contrasting Perspectives (Policy, Economics, Social Focus)  
   

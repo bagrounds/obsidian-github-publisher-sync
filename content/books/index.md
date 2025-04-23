@@ -7,7 +7,7 @@ URL: https://bagrounds.org/books
 backlinks: false
 ---
 [Home](../index.md)  
-# 📚 Books (267)  
+# 📚 Books (270)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [👁️ 1984](./1984.md)  
 - [23 Things They Don't Tell You About Capitalism](./23-things-they-dont-tell-you-about-capitalism.md)  
@@ -140,6 +140,7 @@ backlinks: false
 - [Noise](./noise.md)  
 - [Nonlinear Dynamics and Chaos](./nonlinear-dynamics-and-chaos.md)  
 - [🕊️🤝 Nonviolent Communication](./nonviolent-communication.md)  
+- [⛔🌎🔚 Not the End of the World: How We Can Be the First Generation to Build a Sustainable Planet](./not-the-end-of-the-world.md)  
 - [Nudge](./nudge.md)  
 - [On Corruption in America: And What Is at Stake](./on-corruption-in-america-and-what-is-at-stake.md)  
 - [On Democracy](./on-democracy.md)  
@@ -189,6 +190,7 @@ backlinks: false
 - [Statistics for Dummies](./statistics-for-dummies.md)  
 - [Strongmen: Mussolini to the Present](./strongmen.md)  
 - [Stumbling on Happiness](./stumbling-on-happiness.md)  
+- [🌞🌬️🌊🌋 Sustainable Energy - Without the Hot Air](./sustainable-energy-without-the-hot-air.md)  
 - [Sync: How Order Emerges From Chaos In The Universe, Nature, And Daily Life](./sync.md)  
 - [Taking Charge of Adult ADHD by Russell Barkley](./taking-charge-of-adult-adhd.md)  
 - [The $100 Startup](./the-100-dollar-startup.md)  
@@ -268,6 +270,7 @@ backlinks: false
 - [😬👨🏿 Uncomfortable Conversations With A Black Man](./uncomfortable-conversations-with-a-black-man.md)  
 - [Understanding and Implementing the Kalman Filter](./understanding-and-implementing-the-kalman-filter.md)  
 - [Understanding Modern Money](./understanding-modern-money.md)  
+- [🤔🔌 Understanding Power: The Indispensable Chomsky](./understanding-power-the-indispensable-chomsky.md)  
 - [Universal Principles of Design](./universal-principles-of-design.md)  
 - [What's Going On in There?: How the Brain and Mind Develop in the First Five Years of Life](./whats-going-on-in-there.md)  
 - [✍🏿🇺🇸💔 Why Didn't We Riot?: A Black Man In Trumpland](./why-didnt-we-riot.md)  

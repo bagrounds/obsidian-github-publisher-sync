@@ -1,14 +1,14 @@
 ---
 share: true
 aliases:
-  - The War of Art
-title: The War of Art
+  - 🪖🎨 The War of Art
+title: 🪖🎨 The War of Art
 URL: https://bagrounds.org/books/the-war-of-art
 Author: 
 tags: 
 ---
 [Home](../index.md) > [Books](./index.md)  
-# The War of Art  
+# 🪖🎨 The War of Art  
 ## 🤖 AI Summary  
 ### **TL;DR** 🎯  
 "The War of Art" is a guide to overcoming "Resistance," the internal force that prevents creative individuals from doing their work, by treating creative pursuits as a professional endeavor rather than a hobby.  
@@ -65,8 +65,8 @@ Pressfield reframes the creative process as a battle against a tangible enemy, "
 * **Best Alternate Book on the Same Topic:** "[🪄 Big Magic: Creative Living Beyond Fear](./big-magic.md)" by Elizabeth Gilbert. 🪄 (More about embracing creativity with a less militaristic approach)  
 * **Best Tangentially Related Book:** "[Deep Work](./deep-work.md): Rules for Focused Success in a Distracted World" by Cal Newport. 🧠 (Focuses on developing the ability to concentrate deeply, a key skill for overcoming Resistance)  
 * **Best Diametrically Opposed Book:** "[The Artist's Way](./the-artists-way.md)" by Julia Cameron. 🌈 (Emphasizes nurturing inner creativity through self-discovery and play, contrasting Pressfield's focus on discipline)  
-* **Best Fiction Book That Incorporates Related Ideas:** "[🐦🕊️ Bird by Bird: Some Instructions on Writing and Life](./bird-by-bird.md)" by Anne Lamott. ✍️ (Though a writing book, it heavily incorporates the idea of doing the work, and dealing with the inner voice.)  
-* **Best Book That Is More General:** "[Atomic Habits](./atomic-habits.md)" by James Clear. ⚛️ (Provides a broader framework for building habits, applicable to creative pursuits)  
+* **Best Fiction Book That Incorporates Related Ideas:** [🐦🕊️ Bird by Bird: Some Instructions on Writing and Life](./bird-by-bird.md) by Anne Lamott. ✍️ (Though a writing book, it heavily incorporates the idea of doing the work, and dealing with the inner voice.)  
+* **Best Book That Is More General:** [⚛️🔄 Atomic Habits](./atomic-habits.md) by James Clear. (Provides a broader framework for building habits, applicable to creative pursuits)  
 * **Best Book That Is More Specific:** "Writing Down the Bones" by Natalie Goldberg. 🦴 (Specifically focuses on the craft of writing and developing a writer's practice)  
 * **Best Book That Is More Rigorous:** "Flow: The Psychology of Optimal Experience" by Mihaly Csikszentmihalyi. 🌊 (Provides a scientific framework for understanding the flow state, which Pressfield alludes to as the "Muse")  
 * **Best Book That Is More Accessible:** "Steal Like an Artist" by Austin Kleon. 🎨 (A visually engaging and concise guide to creative inspiration and practice)  

@@ -34,7 +34,7 @@ tags:
   
 **🏦 On Media, Power, and Corporate Influence:**  
   
-* 🏭 *Manufacturing Consent: The Political Economy of the Mass Media* by Edward S. Herman and Noam Chomsky: 🧐 A classic critical analysis of how 🏢 corporate ownership, 📣 advertising, and 📍 sourcing can shape news coverage.  
+* [🏭🫡 Manufacturing Consent: The Political Economy of the Mass Media](../books/manufacturing-consent.md) by Edward S. Herman and Noam Chomsky: 🧐 A classic critical analysis of how 🏢 corporate ownership, 📣 advertising, and 📍 sourcing can shape news coverage.  
 * 🗞️ *The Media Monopoly* by Ben H. Bagdikian: 📉 A seminal work documenting the concentration of media ownership and its potential impact on democracy and the free flow of information.  
 * 💸 *Rich Media, Poor Democracy: Communication Politics in Dubious Times* by Robert W. McChesney: 🗣️ Explores the effects of media deregulation and consolidation on public discourse.  
   

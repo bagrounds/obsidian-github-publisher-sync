@@ -32,8 +32,7 @@ function removeTitle(textContent: string, pageTitle: string): string {
   const newlineIndexAfterTitle = textContent.indexOf('\n', titleIndex + pageTitle.length);
 
   if (newlineIndexAfterTitle === -1) {
-    // If no newline is found after the title, return an empty string
-    return '';
+    return textContent;
   }
 
   // Return the text content starting after the newline
@@ -67,7 +66,7 @@ export const Description: QuartzTransformerPlugin<Partial<Options>> = (userOpts)
             }
 
             // otherwise, use the text content
-            const desc = text
+            const desc = text.trim()
             const sentences = desc.replace(/(?<![.,?!:;])\n+/g,"; ").replace(/\s+/g, " ").split(/\.\s/)
             let finalDesc = ""
             let sentenceIdx = 0

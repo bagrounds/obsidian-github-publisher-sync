@@ -13,8 +13,8 @@ export default ((opts?: Options) => {
     const links = opts?.links ?? []
     return (
       <footer class={`${displayClass ?? ""}`}>
-        <p>🔌 Powered by 
-          <a href="https://quartz.jzhao.xyz/">💎 Quartz</a> + <a href="https://obsidian.md">✍️ Obsidian</a> + <a href="https://github.com/ObsidianPublisher/obsidian-github-publisher">📨 Enveloppe</a>
+        <p>{"🔌 by "}
+          <a href="https://quartz.jzhao.xyz/">💎Quartz</a>, <a href="https://obsidian.md">✍️Obsidian</a>, <a href="https://github.com/ObsidianPublisher/obsidian-github-publisher">📨Enveloppe</a>
         </p>
         <ul>
           {Object.entries(links).map(([text, link]) => (

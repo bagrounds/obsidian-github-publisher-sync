@@ -21,22 +21,28 @@ const urlRegex = new RegExp(
 )
 
 function removeTitle(textContent: string, pageTitle: string): string {
-  if (!pageTitle) return textContent;
-  const titleIndex = textContent.indexOf(pageTitle);
+  const cleanedTitleSegments = pageTitle.split(/[^a-zA-Z0-9\s]/);
+  const longestCleanTitleSegment = cleanedTitleSegments.reduce((longest, current) => {
+    return current.length > longest.length ? current : longest;
+  }, "");
 
-  if (titleIndex === -1) {
-    // If the title is not found in the text content, return the original text content
+  if (!longestCleanTitleSegment) {
     return textContent;
   }
 
-  const newlineIndexAfterTitle = textContent.indexOf('\n', titleIndex + pageTitle.length);
+  const cleanTitleIndex = textContent.indexOf(longestCleanTitleSegment);
 
-  if (newlineIndexAfterTitle === -1) {
+  if (cleanTitleIndex === -1) {
     return textContent;
   }
 
-  // Return the text content starting after the newline
-  return textContent.substring(newlineIndexAfterTitle + 1);
+  const newlineIndexAfterCleanTitle = textContent.indexOf('\n', cleanTitleIndex + longestCleanTitleSegment.length);
+
+  if (newlineIndexAfterCleanTitle === -1) {
+    return textContent;
+  }
+
+  return textContent.substring(newlineIndexAfterCleanTitle + 1);
 }
 
 

@@ -8,7 +8,7 @@ backlinks: false
 ---
 [Home](../index.md)  
 # 🪞 Reflections (160)  
-- [2025-04-23 | 💭 Think ⚡ Power](./2025-04-23.md)  
+- [2025-04-23 | 💭 Think ⚡ Power 🌱 Plant](./2025-04-23.md)  
 - [2025-04-22 | 🔥 Firestorm ⛈️](./2025-04-22.md)  
 - [2025-04-21 | 🚫🥼🫠 Anti-Science](./2025-04-21.md)  
 - [2025-04-20 | 💡 Ideate | ⬆️ Update | ✊ Resist](./2025-04-20.md)  

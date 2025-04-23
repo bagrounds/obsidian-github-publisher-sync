@@ -58,7 +58,7 @@ tags:
 * 🏥 **_Five Days at Memorial_** by Sheri Fink: Examines the harrowing ethical decisions made at a New Orleans hospital during Hurricane Katrina, focusing on human systems under extreme stress.  
 * 💰 **_This Changes Everything: Capitalism vs. The Climate_** by Naomi Klein: Argues that the climate crisis requires a fundamental restructuring of our economic system.  
 * 🤥 **_Merchants of Doubt_** by Naomi Oreskes & Erik M. Conway: Exposes the campaigns designed to obscure the scientific consensus on climate change and other health/environmental issues.  
-* 🌱 **_Not the End of the World: How We Can Be the First Generation to Build a Sustainable Planet_** by Hannah Ritchie: Offers a data-driven, more optimistic perspective on environmental problems and potential solutions.  
+* **[⛔🌎🔚 Not the End of the World: How We Can Be the First Generation to Build a Sustainable Planet](./not-the-end-of-the-world.md)** by Hannah Ritchie: Offers a data-driven, more optimistic perspective on environmental problems and potential solutions.  
   
 ### ✨ Creatively Related (Narrative Non-fiction Style, Human Psychology, Resource History)  
 * 🐅 **_The Tiger: A True Story of Vengeance and Survival_** by John Vaillant: Another gripping narrative non-fiction work by the same author, exploring human-wildlife conflict in Russia's Far East.  

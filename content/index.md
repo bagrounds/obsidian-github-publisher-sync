@@ -7,16 +7,17 @@ backlinks: false
 title: 🏡 Home
 ---
 # 🏡 Home  
-Welcome to the published subset of my Obsidian notes.  
-Powered by [Obsidian](https://obsidian.md) + [GitHub Publisher](https://github.com/ObsidianPublisher/obsidian-github-publisher) + [Quartz](https://quartz.jzhao.xyz)!  
-If you don't know what that means... Welcome to my personal website!  
+❔ What do 🫵 _you_ 🤔 think?  
+📑 Notes, 💭 thoughts, and 🔗 Links.  
+  
+🔌 Powered by [✍️ Obsidian](https://obsidian.md) + [📨 Enveloppe](https://github.com/ObsidianPublisher/obsidian-github-publisher) + [💎 Quartz](https://quartz.jzhao.xyz)  
   
 ## [🪞 Reflections](./reflections/index.md) (~Blog)  
+- [2025-04-23 | 💭 Think ⚡ Power](./reflections/2025-04-23.md)  
 - [2025-04-22 | 🔥 Firestorm ⛈️](./reflections/2025-04-22.md)  
 - [2025-04-21 | 🚫🥼🫠 Anti-Science](./reflections/2025-04-21.md)  
 - [2025-04-20 | 💡 Ideate | ⬆️ Update | ✊ Resist](./reflections/2025-04-20.md)  
 - [2025-04-19 | 🥳 One 🕯️](./reflections/2025-04-19.md)  
-- [2025-04-18 | 🤥📣 Propaganda 🇷🇺🇺🇸](./reflections/2025-04-18.md)  
   
   
 ## [📄  Articles](./articles/index.md)  

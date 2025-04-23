@@ -21,6 +21,7 @@ const urlRegex = new RegExp(
 )
 
 function removeTitle(textContent: string, pageTitle: string): string {
+  if (!pageTitle) return textContent;
   const titleIndex = textContent.indexOf(pageTitle);
 
   if (titleIndex === -1) {

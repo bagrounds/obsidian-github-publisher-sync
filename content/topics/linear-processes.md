@@ -1,8 +1,8 @@
 ---
 share: true
 aliases:
-  - Linear Processes
-title: Linear Processes
+  - ➕ Linear Processes
+title: ➕ Linear Processes
 URL: https://bagrounds.org/topics/linear-processes
 ---
 [Home](../index.md) > [Topics](./index.md)  

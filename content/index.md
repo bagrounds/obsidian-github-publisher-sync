@@ -12,7 +12,7 @@ title: 🏡 Home
 🔌 Powered by [✍️ Obsidian](https://obsidian.md) + [📨 Enveloppe](https://github.com/ObsidianPublisher/obsidian-github-publisher) + [💎 Quartz](https://quartz.jzhao.xyz)  
   
 ## [🪞 Reflections](./reflections/index.md) (~Blog)  
-- [2025-04-23 | 💭 Think ⚡ Power](./reflections/2025-04-23.md)  
+- [2025-04-23 | 💭 Think ⚡ Power 🌱 Plant](./reflections/2025-04-23.md)  
 - [2025-04-22 | 🔥 Firestorm ⛈️](./reflections/2025-04-22.md)  
 - [2025-04-21 | 🚫🥼🫠 Anti-Science](./reflections/2025-04-21.md)  
 - [2025-04-20 | 💡 Ideate | ⬆️ Update | ✊ Resist](./reflections/2025-04-20.md)  

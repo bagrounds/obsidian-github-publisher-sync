@@ -7,7 +7,7 @@ URL: https://bagrounds.org/books
 backlinks: false
 ---
 [Home](../index.md)  
-# 📚 Books (270)  
+# 📚 Books (271)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [👁️ 1984](./1984.md)  
 - [23 Things They Don't Tell You About Capitalism](./23-things-they-dont-tell-you-about-capitalism.md)  
@@ -224,6 +224,7 @@ backlinks: false
 - [The Happiest Baby On The Block](./the-happiest-baby-on-the-block.md)  
 - [🕵️🌐 The Hidden Psychology of Social Networks: How Brands Create Authentic Engagement by Understanding What Motivates Us](./the-hidden-psychology-of-social-networks.md)  
 - [The How of Happiness: A Scientific Approach to Getting the Life You Want](./the-how-of-happiness-a-scientific-approach-to-getting-the-life-you-want.md)  
+- [ℹ️🌱 The Informed Gardener](./the-informed-gardener.md)  
 - [The Informed Parent](./the-informed-parent.md)  
 - [The Innovator's Dilemma](./the-innovators-dilemma.md)  
 - [The Intelligent Investor](./the-intelligent-investor.md)  

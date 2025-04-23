@@ -352,7 +352,7 @@ export const defaultImage: SocialImageOptions["imageStructure"] = ({
             margin: 0,
             display: "-webkit-box",
             WebkitBoxOrient: "vertical",
-            WebkitLineClamp: 5,
+            WebkitLineClamp: 8,
             overflow: "hidden",
             textOverflow: "ellipsis",
           }}

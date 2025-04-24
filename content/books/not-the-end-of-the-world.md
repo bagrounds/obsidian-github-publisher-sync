@@ -67,7 +67,7 @@ tags:
 * 📚 **This Changes Everything: Capitalism vs. The Climate** by Naomi Klein: Argues that the climate crisis demands a fundamental rejection of neoliberal capitalism and a restructuring of our economies and societies.  
 * 📚 **The Uninhabitable Earth: Life After Warming** by David Wallace-Wells: Paints a stark, often terrifying picture of the potential consequences of unchecked climate change, serving as a counterpoint to optimistic takes.  
 * 📚 **Less is More: How Degrowth Will Save the World** by Jason Hickel: Critiques the pursuit of endless economic growth and argues for a "degrowth" strategy focused on reducing consumption and production in wealthy nations.  
-* 📚 **Braiding Sweetgrass: Indigenous Wisdom, Scientific Knowledge and the Teachings of Plants** by Robin Wall Kimmerer: Offers a perspective grounded in Indigenous wisdom, emphasizing reciprocity with nature, relationality, and ways of knowing beyond purely scientific data.  
+* **[🪢🌾 Braiding Sweetgrass: Indigenous Wisdom, Scientific Knowledge, and the Teachings of Plants](./braiding-sweetgrass.md)** by Robin Wall Kimmerer: Offers a perspective grounded in Indigenous wisdom, emphasizing reciprocity with nature, relationality, and ways of knowing beyond purely scientific data.  
   
 ### 🎨 Creatively Related (Broader Context & Inspiration)  
   

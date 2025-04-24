@@ -77,12 +77,12 @@ F("🫀Feelings") -- ❌ --> T("🧠Thoughts") -- ❌ --> A("🏃Actions")
   
 ### **Further Learning Resources**  
 - **Books on Productivity:**  
-  - *[Atomic Habits](../books/atomic-habits.md)* by James Clear (habit formation)  
-  - *[The War of Art](../books/the-war-of-art.md)* by Steven Pressfield (overcoming resistance)  
-  - *[Deep Work](../books/deep-work.md)* by Cal Newport (focused productivity)  
+  - [⚛️🔄 Atomic Habits](../books/atomic-habits.md) by James Clear (habit formation)  
+  - [🪖🎨 The War of Art](../books/the-war-of-art.md) by Steven Pressfield (overcoming resistance)  
+  - [🤿💼 Deep Work](../books/deep-work.md) by Cal Newport (focused productivity)  
 - **Scientific Research:**  
   - Willpower depletion studies: [Baumeister’s research on ego depletion](https://en.wikipedia.org/wiki/Ego_depletion)  
-  - Cognitive behavioral therapy (CBT) techniques for thought-action defusion  
+  - [♻️🫀🧠💪 Cognitive Behavioral Therapy](../topics/cognitive-behavioral-therapy.md) (CBT) techniques for thought-action defusion  
 - **Tools for Focus:**  
   - [Freedom](https://freedom.to/) (blocks distracting websites)  
   - [Pomodone](https://pomodoneapp.com/) (Pomodoro timer for task management)  

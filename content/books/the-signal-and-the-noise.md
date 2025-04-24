@@ -86,7 +86,7 @@ Nate Silver's credentials as a statistician and forecaster lend significant weig
 * **Best Fiction Book that Incorporates Related Ideas:** "Foundation" by Isaac Asimov. 🌌 (Explores the concept of "psychohistory," a fictional science of predicting the future of large populations.)  
 * **Best More General Book:** "[Factfulness](./factfulness.md): Ten Reasons We're Wrong About the World – and Why Things Are Better Than You Think" by Hans Rosling. 🌍 (Deals with common misconceptions and improving our understanding of the world through data.)  
 * **Best More Specific Book:** "Bayesian Methods for Data Analysis" by Bradley P. Carlin and Thomas A. Louis. 📊 (A deep dive into Bayesian statistics.)  
-* **Best More Rigorous Book:** "[Probability Theory](./probability-theory.md): The Logic of Science" by E.T. Jaynes. 🔬 (A very thorough exploration of Bayesian probability.)  
+* **Best More Rigorous Book:** [🎲🧮 Probability Theory: The Logic of Science](./probability-theory.md) by E.T. Jaynes. 🔬 (A very thorough exploration of Bayesian probability.)  
 * **Best More Accessible Book:** "[How Not to Be Wrong: The Power of Mathematical Thinking](./how-not-to-be-wrong.md)" by Jordan Ellenberg. 📐 (Explains mathematical concepts in an engaging and accessible way.)  
   
 ## 💬 [Gemini](https://gemini.google.com) Prompt  

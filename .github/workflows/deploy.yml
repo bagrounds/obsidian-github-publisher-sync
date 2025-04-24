@@ -49,7 +49,7 @@ jobs:
         run: npm ci
 
       - name: Build Quartz
-        run: npx quartz build --concurrency 1
+        run: npx quartz build
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

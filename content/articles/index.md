@@ -25,7 +25,7 @@ backlinks: false
 - [✊🏾✊🏽✊🏿 Protesters unite against Trump in hundreds of rallies across the U.S.](./protesters-unite-against-trump-in-hundreds-of-rallies-across-the-us.md)  
 - [Safe Sleep for Breastfeeding Babies](./safe-sleep-for-breastfeeding-babies.md)  
 - [Snohomish County schools react to education department firings](./snohomish-county-schools-react-to-education-department-firings.md)  
-- [The Log: What every software engineer should know about real-time data's unifying abstraction](./the-log-what-every-software%20engineer-should-know-about-real-time-datas-unifying-abstraction.md)  
+- [🪵 The Log: What every software engineer should know about real-time data's unifying abstraction](./the-log-what-every-software%20engineer-should-know-about-real-time-datas-unifying-abstraction.md)  
 - [Thousands gather in Everett to say ‘Hands Off!’ to Trump](./thousands-gather-in-everett-to-say-hands-off-to-trump.md)  
 - [Treatment of Feline Gastrointestinal Small-Cell Lymphoma With Chlorambucil and Glucocorticoids](./treatment-of-feline-gastrointestinal-small-cell-lymphoma-with-chlorambucil-and-glucocorticoids.md)  
 - [😨 ‘We are all afraid’: Speaking to Alaska nonprofit leaders, Murkowski gets candid on upheaval in federal government](./we-are-all-afraid-speaking-to-alaska-nonprofit-leaders-murkowski-gets-candid-on-upheaval-in-federal-government.md)  

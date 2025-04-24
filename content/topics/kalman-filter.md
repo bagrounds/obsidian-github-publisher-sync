@@ -1,16 +1,16 @@
 ---
 share: true
 aliases:
-  - Kalman Filter
-title: Kalman Filter
+  - 📏🔮〰️ Kalman Filter
+title: 📏🔮〰️ Kalman Filter
 URL: https://bagrounds.org/topics/kalman-filter
 ---
 [Home](../index.md) > [Topics](./index.md)  
-# Kalman Filter  
+# 📏🔮〰️ Kalman Filter  
 ## 🤖 AI Summary  
 ### 👉 What Is It?  
   
-- The Kalman filter is an algorithm 🤖 that uses a series of measurements observed over time, containing statistical noise and other inaccuracies, and produces estimates of unknown variables that tend to be more1 accurate than those based on a single measurement alone.2 🧐 It's a recursive estimator, meaning it only needs the previous estimate and the current measurement. 📝 It belongs to the broader class of Bayesian filters. 🌟  
+- The Kalman filter is an algorithm 🤖 that uses a series of measurements observed over time, containing statistical noise and other inaccuracies, and produces estimates of unknown variables that tend to be more accurate than those based on a single measurement alone. 🧐 It's a recursive estimator, meaning it only needs the previous estimate and the current measurement. 📝 It belongs to the broader class of Bayesian filters. 🌟  
   
 ### ☁️ A High Level, Conceptual Overview  
   
@@ -135,4 +135,4 @@ Rudolf E. Kálmán published his seminal paper describing the filter in 1960. �
 - **More Specific:** "Kalman Filtering Techniques for Radar Tracking" by Yaakov Bar-Shalom 📡  
 - **Fictional:** "The Martian" by Andy Weir (uses navigation concepts) 🚀  
 - **Rigorous:** "Stochastic Processes and Filtering Theory" by Arthur H. Jazwinski 🧐  
-- **Accessible:** "[Understanding and Implementing the Kalman Filter](../books/understanding-and-implementing-the-kalman-filter.md)" by Lionel Garcia 💡  
+- **Accessible:** "[Understanding and Implementing the Kalman Filter](../books/understanding-and-implementing-the-kalman-filter.md)" by Lionel Garcia 💡

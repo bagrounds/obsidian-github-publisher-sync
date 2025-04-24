@@ -159,7 +159,7 @@ Here's a breakdown:
   
 * **Topic Q (Dissimilar to Human History):** Quantum Physics ⚛️  
     * "Seven Brief Lessons on Physics" by Carlo Rovelli. 👨‍🏫  
-    * "Beyond Weird: Why Everything You Thought You Knew About Quantum Physics Is Different" by Philip Ball. 🤯  
+    * [⚛️🌎 Beyond Weird: Why Everything You Thought You Knew about Quantum Physics Is Different](../books/beyond-weird.md) by Philip Ball. 🤯  
 * **Topic R (Dissimilar to Both):** Marine Biology 🌊  
     * "The Soul of an Octopus" by Sy Montgomery. 🐙  
     * "Deep: Freediving, Renegade Science, and What the Ocean Tells Us About Ourselves" by James Nestor. 🤿  

@@ -135,4 +135,4 @@ Rudolf E. Kálmán published his seminal paper describing the filter in 1960. �
 - **More Specific:** "Kalman Filtering Techniques for Radar Tracking" by Yaakov Bar-Shalom 📡  
 - **Fictional:** "The Martian" by Andy Weir (uses navigation concepts) 🚀  
 - **Rigorous:** "Stochastic Processes and Filtering Theory" by Arthur H. Jazwinski 🧐  
-- **Accessible:** "[Understanding and Implementing the Kalman Filter](../books/understanding-and-implementing-the-kalman-filter.md)" by Lionel Garcia 💡
+- **Accessible:** [💡🔧📏🔮〰️ Understanding and Implementing the Kalman Filter](../books/understanding-and-implementing-the-kalman-filter.md) by Lionel Garcia 💡

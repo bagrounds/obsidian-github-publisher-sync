@@ -1,18 +1,18 @@
 ---
 share: true
 aliases:
-  - Understanding and Implementing the Kalman Filter
-title: Understanding and Implementing the Kalman Filter
+  - 💡🔧📏🔮〰️ Understanding and Implementing the Kalman Filter
+title: 💡🔧📏🔮〰️ Understanding and Implementing the Kalman Filter
 URL: https://bagrounds.org/books/understanding-and-implementing-the-kalman-filter
 Author: 
 tags: 
 ---
 [Home](../index.md) > [Books](./index.md)  
-# Understanding and Implementing the Kalman Filter  
+# 💡🔧📏🔮〰️ Understanding and Implementing the Kalman Filter  
 ## 🤖 AI Summary  
 ### 📚 Understanding and Implementing the Kalman Filter  
   
-**📖 TL;DR:** 🚀 This book provides a practical, 🪜 step-by-step guide to 🧠 understanding and ⚙️ implementing Kalman filters, 🎯 focusing on ✨ intuition, 👨‍💻 practical applications, and 💻 code examples, ✅ enabling readers to 📊 estimate system states from 📢 noisy measurements effectively.  
+**📖 TL;DR:** 🚀 This book provides a practical, 🪜 step-by-step guide to 🧠 understanding and ⚙️ implementing [📏🔮〰️ Kalman Filter](../topics/kalman-filter.md)s, 🎯 focusing on ✨ intuition, 👨‍💻 practical applications, and 💻 code examples, ✅ enabling readers to 📊 estimate system states from 📢 noisy measurements effectively.  
   
 #### 💡 New or Surprising Perspectives 🧐  
   

@@ -217,7 +217,7 @@ Here's a breakdown:
     * "Mozart: A Life" by Paul Johnson. 🎹  
 * **Topic R (Dissimilar to Both):** Botany and Plant Biology 🌿  
     * "The Hidden Life of Trees: What They Feel, How They Communicate—Discoveries from a Secret World" by Peter Wohlleben. 🌳  
-    * "Braiding Sweetgrass: Indigenous Wisdom, Scientific Knowledge, and the Teachings of Plants" by Robin Wall Kimmerer. 🌾  
+    * [🪢🌾 Braiding Sweetgrass: Indigenous Wisdom, Scientific Knowledge, and the Teachings of Plants](../books/braiding-sweetgrass.md) by Robin Wall Kimmerer. 🌾  
   
 **Meta Global Exploration:**  
   

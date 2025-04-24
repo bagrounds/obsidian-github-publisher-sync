@@ -7,7 +7,7 @@ URL: https://bagrounds.org/books
 backlinks: false
 ---
 [Home](../index.md)  
-# 📚 Books (277)  
+# 📚 Books (278)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [👁️ 1984](./1984.md)  
 - [23 Things They Don't Tell You About Capitalism](./23-things-they-dont-tell-you-about-capitalism.md)  
@@ -115,6 +115,7 @@ backlinks: false
 - [Incognito: The Secret Lives of the Brain](./incognito.md)  
 - [🧘 Indistractable: How to Control Your Attention and Choose Your Life](./indistractable.md)  
 - [Influence](./influence.md)  
+- [ℹ️ Information: A Very Short Introduction](./information.md)  
 - [📰⚔️🧠 Information Wars: How We Lost the Global Battle Against Disinformation and What We Can Do About It](./information-wars.md)  
 - [Just Listen](./just-listen.md)  
 - [Knowledge Representation and Reasoning](./knowledge-representation-and-reasoning.md)  
@@ -168,7 +169,7 @@ backlinks: false
 - [Principles of Model Checking](./principles-of-model-checking.md)  
 - [Principles of Neuropsychology](./principles-of-neuropsychology.md)  
 - [Probabilistic Reasoning in Intelligent Systems](./probabilistic-reasoning-in-intelligent-systems.md)  
-- [Probability Theory](./probability-theory.md)  
+- [🎲🧮 Probability Theory: The Logic of Science](./probability-theory.md)  
 - [Purposeful Performance: The Secret Mix of Connecting, Leading, and Succeeding](./purposeful-performance.md)  
 - [Range](./range.md)  
 - [🤝🐾 Rapport: The Four Ways to Read People](./rapport.md)  

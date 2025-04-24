@@ -35,3 +35,6 @@ tags:
 * 📖 *Survival in Auschwitz* by Primo Levi: 💀 A stark and reflective account of survival in the 🏕️ Auschwitz concentration camp.  
 * *[🔦💡 Man's Search for Meaning](../books/mans-search-for-meaning.md)* by Viktor Frankl: 🧠 A psychiatrist's experiences in 🏕️ concentration camps and his insights into finding 🌟 meaning in suffering.  
 * 📖 *The Third Reich Trilogy* by Richard J. Evans: 📜 A comprehensive historical account of 🇩🇪 Nazi Germany.  
+  
+## 🐦 Tweet  
+<blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">💀 Holocaust Remembrance<br><br>🏛️ Subverted democracy<br>⚠️ Unchecked power<br>👤 Dehumanization<br>🐐 Scapegoating<br>😶 Indifference<br>🧍 Bystander effect<br>📢 Propaganda<br>📰 Misinformation<br><br>✅ Individual responsibility<br>🛡️ Moral courage<br>📚 Education<br>📜 History<br>⚖️ Human rights<a href="https://t.co/Zd1TT77aaI">https://t.co/Zd1TT77aaI</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/1915483156305813808?ref_src=twsrc%5Etfw">April 24, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

@@ -11,6 +11,7 @@ title: 🏡 Home
 ❔ What do 🫵 _you_ 🤔 think?  
   
 ## [🪞 Reflections](./reflections/index.md) (~Blog)  
+- [2025-04-24 | ⚛️ℹ️ Strange 🧘🏔️](./reflections/2025-04-24.md)  
 - [2025-04-23 | 💭 Think ⚡ Power 🌱 Plant](./reflections/2025-04-23.md)  
 - [2025-04-22 | 🔥 Firestorm ⛈️](./reflections/2025-04-22.md)  
 - [2025-04-21 | 🚫🥼🫠 Anti-Science](./reflections/2025-04-21.md)  
@@ -20,7 +21,6 @@ title: 🏡 Home
 - [2025-04-17 | 🦋 Complexity 🧶](./reflections/2025-04-17.md)  
 - [2025-04-16 | 🕹️⚛️🛜 Intent 🦊👀](./reflections/2025-04-16.md)  
 - [2025-04-15 | ⚓🚫✊🏿 Anti-Anti-Racism 📚🔥](./reflections/2025-04-15.md)  
-- [2025-04-14 | 🧭 Autonomy | 🗺️ Society](./reflections/2025-04-14.md)  
   
   
 ## [📄  Articles](./articles/index.md)  

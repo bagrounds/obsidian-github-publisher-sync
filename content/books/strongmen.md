@@ -1,14 +1,14 @@
 ---
 share: true
 aliases:
-  - "Strongmen: Mussolini to the Present"
-title: "Strongmen: Mussolini to the Present"
+  - "🇮🇹🇩🇪🇱🇾🇷🇺🇺🇸 Strongmen: Mussolini to the Present"
+title: "🇮🇹🇩🇪🇱🇾🇷🇺🇺🇸 Strongmen: Mussolini to the Present"
 URL: https://bagrounds.org/books/strongmen
 Author: 
 tags: 
 ---
 [Home](../index.md) > [Books](./index.md)  
-# Strongmen: Mussolini to the Present  
+# 🇮🇹🇩🇪🇱🇾🇷🇺🇺🇸 Strongmen: Mussolini to the Present  
 by Ruth Ben-Ghiat  
   
 ## 🗣️ Quotes  

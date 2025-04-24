@@ -54,7 +54,7 @@ tags:
 ### 🌟 Creatively Related (Broader Themes, Memoirs, Fiction)  
 * ✍️ **[📜 On Writing: A Memoir of the Craft](./on-writing.md)** by Stephen King: Part memoir, part practical writing guide, offering King's personal story alongside concrete advice on the craft. 📖  
 * 🌊 **[Flow: The Psychology of Optimal Experience](./flow-the-psychology-of-optimal-experience.md)** by Mihaly Csikszentmihalyi: Explores the state of "flow," where one is fully immersed in an activity, offering a psychological perspective on deep engagement that complements creative pursuits. 🧠  
-* 🌿 **Braiding Sweetgrass: Indigenous Wisdom, Scientific Knowledge and the Teachings of Plants** by Robin Wall Kimmerer: While focused on ecology and Indigenous wisdom, its themes of wonder, interconnectedness, and finding meaning resonate with Gilbert's sense of magic and living a life attuned to deeper forces. 🌎  
+* **[🪢🌾 Braiding Sweetgrass: Indigenous Wisdom, Scientific Knowledge, and the Teachings of Plants](./braiding-sweetgrass.md)** by Robin Wall Kimmerer: While focused on ecology and Indigenous wisdom, its themes of wonder, interconnectedness, and finding meaning resonate with Gilbert's sense of magic and living a life attuned to deeper forces. 🌎  
 * 🎨 **Art Matters** by Neil Gaiman, illustrated by Chris Riddell: A short, passionate manifesto on the importance of art and creativity in the world. ❤️  
 * 🎭 **Memoirs by Artists/Creatives:** Biographies or memoirs of individuals known for their creativity can offer diverse perspectives on the process, struggles, and joys (e.g., Patti Smith's *Just Kids*, Twyla Tharp's *[The Creative Habit: Learn It and Use It for Life](./the-creative-habit.md)*). 📚  
   

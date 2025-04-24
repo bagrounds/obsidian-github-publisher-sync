@@ -273,7 +273,7 @@ backlinks: false
 - [Transgender History](./transgender-history.md)  
 - [🥀 Twilight of Democracy: 🐍 The Seductive Lure of Authoritarianism](./twilight-of-democracy.md)  
 - [😬👨🏿 Uncomfortable Conversations With A Black Man](./uncomfortable-conversations-with-a-black-man.md)  
-- [Understanding and Implementing the Kalman Filter](./understanding-and-implementing-the-kalman-filter.md)  
+- [💡🔧📏🔮〰️ Understanding and Implementing the Kalman Filter](./understanding-and-implementing-the-kalman-filter.md)  
 - [Understanding Modern Money](./understanding-modern-money.md)  
 - [🤔🔌 Understanding Power: The Indispensable Chomsky](./understanding-power-the-indispensable-chomsky.md)  
 - [Universal Principles of Design](./universal-principles-of-design.md)  

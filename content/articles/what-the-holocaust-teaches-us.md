@@ -1,8 +1,8 @@
 ---
 share: true
 aliases:
-  - 📜💀⚠️ What the Holocaust Teaches Us
-title: 📜💀⚠️ What the Holocaust Teaches Us
+  - 💀⚠️ What the Holocaust Teaches
+title: 📜💀⚠️ What the Holocaust Teaches
 URL: https://bagrounds.org/articles/what-the-holocaust-teaches-us
 Author: 
 tags: 

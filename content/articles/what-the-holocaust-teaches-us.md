@@ -10,7 +10,7 @@ tags:
 [Home](../index.md) > [Articles](./index.md)  
 # [📜💀⚠️ What the Holocaust Teaches Us](https://time.com/7278818/holocaust-remembrance-lessons)  
   
-## AI Summary  
+## 🤖 AI Summary  
   
 * 🕯️ The Holocaust teaches us about the 🕊️ fragility of democracy.  
 * 🚨 It highlights how quickly 🏛️ democratic norms and institutions can be subverted.  

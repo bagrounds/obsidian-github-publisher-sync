@@ -188,7 +188,7 @@ backlinks: false
 - [Spark: The Revolutionary New Science of Exercise and the Brain](./spark-the-revolutionary-new-science-of-exercise-and-the-brain.md)  
 - [Statistical Quality Control](./statistical-quality-control.md)  
 - [Statistics for Dummies](./statistics-for-dummies.md)  
-- [Strongmen: Mussolini to the Present](./strongmen.md)  
+- [🇮🇹🇩🇪🇱🇾🇷🇺🇺🇸 Strongmen: Mussolini to the Present](./strongmen.md)  
 - [Stumbling on Happiness](./stumbling-on-happiness.md)  
 - [🌞🌬️🌊🌋 Sustainable Energy - Without the Hot Air](./sustainable-energy-without-the-hot-air.md)  
 - [Sync: How Order Emerges From Chaos In The Universe, Nature, And Daily Life](./sync.md)  

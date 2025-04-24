@@ -38,8 +38,8 @@ tags:
 ## 📚 Book Recommendations  
   
 ### 📖 Similar Reads (Evidence-Based & Myth-Busting)  
-* 🌱 **_The Informed Gardener Blooms Again_** by Linda Chalker-Scott: The direct sequel, continuing the myth-busting format with new topics based on scientific literature.  
-* 🌱 **_How Plants Work: The Science Behind the Amazing Things Plants Do_** by Linda Chalker-Scott: Delves deeper into the basic plant science that underpins the advice in her myth-busting books.  
+* **[ℹ️🌻 The Informed Gardener Blooms Again](./the-informed-gardener-blooms-again.md)** by Linda Chalker-Scott: The direct sequel, continuing the myth-busting format with new topics based on scientific literature.  
+* **[🌿🔬 How Plants Work: The Science Behind the Amazing Things Plants Do](./how-plants-work.md)** by Linda Chalker-Scott: Delves deeper into the basic plant science that underpins the advice in her myth-busting books.  
 * 🌱 **_Garden Myths (Book 1 & Book 2)_** by Robert Pavlis: Similar premise, examining and debunking numerous horticultural urban legends with a focus on science-based understanding and simplifying garden tasks.  
 * 🌱 **_Plant Science for Gardeners: Essentials for Growing Better Plants_** by Robert Pavlis: Focuses on explaining the scientific principles gardeners need to know for success.  
 * 🌱 **_The Science of Gardening: Discover How Your Garden Really Grows_** by Stuart Farrimond: Explains the science behind garden practices, explodes myths, and offers research-backed advice.  
@@ -50,7 +50,7 @@ tags:
 * 🌱 **_The Organic Gardener_** by Catharine Osgood Foster: A classic from the 1970s organic movement, packed with information that is still relevant but potentially reflecting older or different perspectives than Chalker-Scott's specific debunked myths.  
 * 🌱 **_Edible Forest Gardens (Vol. 1 & 2)_** by Dave Jacke & Eric Toensmeier: Deeply scientific but focused on the specific design philosophy of permaculture and food forests, offering a different framework for gardening than typical landscape horticulture.  
 * 🌱 **_A Southern Garden_** by Elizabeth Lawrence: A timeless classic focused on observational gardening and plant selection suited to a specific region (US Southeast), representing a more traditional, experiential approach.  
-* 🌱 **_Braiding Sweetgrass: Indigenous Wisdom, Scientific Knowledge and the Teachings of Plants_** by Robin Wall Kimmerer: Blends indigenous wisdom, scientific knowledge (Kimmerer is a botanist), and personal reflection, offering a perspective that contrasts with purely Western scientific approaches by incorporating deeper ecological and spiritual connections.  
+* **[🪢🌾 Braiding Sweetgrass: Indigenous Wisdom, Scientific Knowledge, and the Teachings of Plants](./braiding-sweetgrass.md)** by Robin Wall Kimmerer: Blends indigenous wisdom, scientific knowledge (Kimmerer is a botanist), and personal reflection, offering a perspective that contrasts with purely Western scientific approaches by incorporating deeper ecological and spiritual connections.  
 * 🌱 **_Buffalo Bird Woman's Garden: Agriculture of the Hidatsa Indians_** by Gilbert L. Wilson: An anthropological classic detailing traditional Native American agricultural practices, offering a historical and cultural contrast to modern scientific horticulture.  
   
 ### 💡 Creatively Related (Broader Connections)  

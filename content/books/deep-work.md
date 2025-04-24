@@ -1,14 +1,14 @@
 ---
 share: true
 aliases:
-  - Deep Work
-title: Deep Work
+  - 🤿💼 Deep Work
+title: 🤿💼 Deep Work
 URL: https://bagrounds.org/books/deep-work
 Author: 
 tags: 
 ---
 [Home](../index.md) > [Books](./index.md)  
-# Deep Work  
+# 🤿💼 Deep Work  
 ## 🤖 AI Summary  
 ### Deep Work: Rules for Focused Success in a Distracted World 🧠  
 **TL;DR:** To thrive in a knowledge-based economy, cultivate the ability to perform deep work—focused, distraction-free concentration—through deliberate practice and structured routines.  

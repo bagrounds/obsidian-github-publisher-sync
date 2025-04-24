@@ -73,7 +73,7 @@ While 🤯 *Beyond Weird* is primarily 🧐 philosophical, it offers some 💡 p
   
 * 💡 **Best alternate book on the same topic:** 📚 *Something Deeply Hidden: Quantum Worlds and the Emergence of Spacetime* by Sean Carroll. 🤔 While Carroll promotes the many-worlds interpretation, it provides an ⚖️ equally accessible and 🧠 thought-provoking exploration of the conceptual problems of quantum mechanics. ⚛️  
   
-* ⭐ **Best book that is tangentially related:** 📚 *Information: A Very Short Introduction* by Luciano Floridi. 💡 This book provides a concise overview of information theory, 🧠 which is crucial for understanding QBism. ⚛️  
+* ⭐ **Best book that is tangentially related:** [ℹ️ Information: A Very Short Introduction](./information.md) by Luciano Floridi. 💡 This book provides a concise overview of information theory, 🧠 which is crucial for understanding QBism. ⚛️  
   
 * 🏆 **Best book** that is ↔️ **diametrically opposed:** 📚 *"The Fabric of Reality: The Science of Parallel Universes – and Its Implications"* by David Deutsch. 👨‍🔬 Deutsch is a 💪 strong proponent of 🔬 scientific realism and the 🌌 many-worlds interpretation, offering a 🆚 contrasting perspective to 🤔 QBism.  
   

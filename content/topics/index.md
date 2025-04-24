@@ -36,7 +36,7 @@ backlinks: false
 - [iNaturalist](./inaturalist.md)  
 - [Informative Speaking](./informative-speaking.md)  
 - [Job Guarantee / Employer of Last Resort](./job-guarantee-employer-of-last-resort.md)  
-- [Kalman Filter](./kalman-filter.md)  
+- [📏🔮〰️ Kalman Filter](./kalman-filter.md)  
 - [🧠🌐 Knowledge Graphs](./knowledge-graphs.md)  
 - [Kuramoto Model](./kuramoto-model.md)  
 - [Large Language Models](./large-language-models.md)  

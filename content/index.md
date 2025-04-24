@@ -16,6 +16,11 @@ title: 🏡 Home
 - [2025-04-21 | 🚫🥼🫠 Anti-Science](./reflections/2025-04-21.md)  
 - [2025-04-20 | 💡 Ideate | ⬆️ Update | ✊ Resist](./reflections/2025-04-20.md)  
 - [2025-04-19 | 🥳 One 🕯️](./reflections/2025-04-19.md)  
+- [2025-04-18 | 🤥📣 Propaganda 🇷🇺🇺🇸](./reflections/2025-04-18.md)  
+- [2025-04-17 | 🦋 Complexity 🧶](./reflections/2025-04-17.md)  
+- [2025-04-16 | 🕹️⚛️🛜 Intent 🦊👀](./reflections/2025-04-16.md)  
+- [2025-04-15 | ⚓🚫✊🏿 Anti-Anti-Racism 📚🔥](./reflections/2025-04-15.md)  
+- [2025-04-14 | 🧭 Autonomy | 🗺️ Society](./reflections/2025-04-14.md)  
   
   
 ## [📄  Articles](./articles/index.md)  

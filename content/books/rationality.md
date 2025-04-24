@@ -115,7 +115,7 @@ Pinker provides actionable advice for improving rationality:
 * 🚀 **Best Fiction Book Incorporating Related Ideas:** "The Martian" by Andy Weir. 👨‍🚀 Showcases the power of rational problem-solving and scientific thinking in a life-or-death situation. 🔬  
 * 📣 **Best Book More General:** "[Influence](./influence.md): The Psychology of Persuasion" by Robert Cialdini. 🗣️ Explores the principles of persuasion and social influence, which are closely related to cognitive biases and decision-making. 🤝  
 * 📊 **Best Book More Specific:** "Statistics Without Tears: A Primer for Non-Mathematicians" by Derek Rowntree. 🔢 Provides a more detailed and accessible introduction to statistical concepts for those who want to delve deeper into the quantitative aspects of rationality. 📚  
-* 🔬 **Best Book More Rigorous:** "[Probability Theory](./probability-theory.md): The Logic of Science" by E.T. Jaynes. 🧮 A comprehensive and mathematically rigorous treatment of Bayesian probability and its applications. ✅  
+* 🔬 **Best Book More Rigorous:** [🎲🧮 Probability Theory: The Logic of Science](./probability-theory.md) by E.T. Jaynes. A comprehensive and mathematically rigorous treatment of Bayesian probability and its applications. ✅  
 * 💡 **Best Book More Accessible:** "[Nudge](./nudge.md): Improving Decisions About Health, Wealth, and Happiness" by Richard H. Thaler and Cass R. Sunstein. 👍 A more practical and applied approach to behavioral economics, focusing on how to design environments that encourage better decisions. 🌱  
   
 ## 💬 [Gemini](https://gemini.google.com) Prompt  

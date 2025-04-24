@@ -77,7 +77,7 @@ backlinks: false
 - [Executive Function 'Dysfunction' - Strategies for Educators and Parents](./executive-function-dysfunction.md)  
 - [Executive Functions: Development, Assessment, and Intervention](./executive-functions-development-assessment-and-intervention.md)  
 - [Executive Functions: What They Are, How They Work, and Why They Evolved](./executive-functions.md)  
-- [Expecting Better](./expecting-better.md)  
+- [🫄➕ Expecting Better: Why the Conventional Pregnancy Wisdom Is Wrong - and What You Really Need to Know](./expecting-better.md)  
 - [Factfulness](./factfulness.md)  
 - [Fear: Trump in the White House](./fear.md)  
 - [Feedback Control of Dynamic Systems](./feedback-control-of-dynamic-systems.md)  

@@ -1,14 +1,14 @@
 ---
 share: true
 aliases:
-  - 🕊️🤝 Nonviolent Communication
-title: 🕊️🤝 Nonviolent Communication
+  - "🕊️🤝 Nonviolent Communication: A Language of Life"
+title: "🕊️🤝 Nonviolent Communication: A Language of Life"
 URL: https://bagrounds.org/books/nonviolent-communication
 Author: 
 tags: 
 ---
 [Home](../index.md) > [Books](./index.md)  
-# 🕊️🤝 Nonviolent Communication  
+# 🕊️🤝 Nonviolent Communication: A Language of Life  
 ## 📚 Book Report: Nonviolent Communication: A Language of Life  
   
 ### ✍️ Author  
@@ -81,7 +81,7 @@ tags:
 * 🧘 **Mindfulness** themed books (e.g., by Thich Nhat Hanh, Jon Kabat-Zinn): 🙏 Mindfulness practices enhance the self-awareness and presence needed to apply NVC effectively. *📝 Example: Full Catastrophe Living* by Jon Kabat-Zinn.  
 * 🧠 **The Body Keeps the Score: Brain, Mind, and Body in the Healing of Trauma** by Bessel van der Kolk: 💔 Offers deep insights into how trauma affects individuals, relevant for understanding intense emotional reactions sometimes encountered in conflict.  
 * 🧠 **Emotional Intelligence 2.0** by Travis Bradberry & Jean Greaves: 🧠 Focuses broadly on understanding and managing emotions in oneself and others, a foundation for NVC.  
-* ☮️ **Everything Is Workable: A Zen Approach to Conflict Resolution** by Diane Musho Hamilton: 🧘 Integrates Zen principles like mindfulness and non-judgment into conflict resolution, offering a complementary spiritual and practical perspective.  
+* ☮️ **[🤝🧘 Everything Is Workable: A Zen Approach to Conflict Resolution](./everything-is-workable.md)** by Diane Musho Hamilton: 🧘 Integrates Zen principles like mindfulness and non-judgment into conflict resolution, offering a complementary spiritual and practical perspective.  
 * 🕊️ **The Mindful Guide to Conflict Resolution** by Rosalie Puiman: 🧘 Directly combines mindfulness techniques with conflict resolution strategies.  
   
   

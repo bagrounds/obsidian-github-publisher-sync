@@ -7,7 +7,8 @@ URL: https://bagrounds.org/reflections
 backlinks: false
 ---
 [Home](../index.md)  
-# 🪞 Reflections (161)  
+# 🪞 Reflections (162)  
+- [2025-04-25 | 👿 Deviant 🦊](./2025-04-25.md)  
 - [2025-04-24 | ⚛️ℹ️ Strange 🧘🏔️](./2025-04-24.md)  
 - [2025-04-23 | 💭 Think ⚡ Power 🌱 Plant](./2025-04-23.md)  
 - [2025-04-22 | 🔥 Firestorm ⛈️](./2025-04-22.md)  

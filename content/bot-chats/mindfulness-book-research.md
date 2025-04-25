@@ -72,7 +72,7 @@ The practice of mindfulness, characterized by present moment awareness and non-j
       
     The writing style of _Wherever You Go, There You Are_ is consistently praised for its engaging and accessible nature.11 Kabat-Zinn employs a style that is often described as poetic and reflective, making the concepts easily digestible for a broad audience.11 The author incorporates personal anecdotes, such as the "Cat Food Lessons," which inject humility and humor into the narrative, fostering a connection with the reader.18 Many reviewers note the book's structure, often comprised of brief and manageable chapters, which makes it less daunting for those new to mindfulness.13 This combination of an approachable style and personal touches effectively conveys the principles of mindfulness in an engaging manner, aligning with the user's desire for an enjoyable reading experience.  
       
-- **B. [Full Catastrophe Living](../books/full-catastrophe-living.md) by Jon Kabat-Zinn**  
+- **B. [🌪️🧘‍♂️ Full Catastrophe Living: Using the Wisdom of Your Body and Mind to Face Stress, Pain, and Illness](../books/full-catastrophe-living.md) by Jon Kabat-Zinn**  
       
     _Full Catastrophe Living_ stands out for its robust emphasis on the scientific underpinnings of mindfulness, particularly within the context of the MBSR program.6 Reviews consistently highlight the book's grounding in scientific research, detailing studies that demonstrate the medical and psychological benefits of mindfulness-based interventions.27 It references research utilizing fMRI technology to illustrate positive changes in brain regions associated with learning, memory, emotion regulation, and self-awareness following MBSR training.23 The book also explores the extensive scientific evidence for the intricate connection between mental and physical well-being, examining how attitudes can influence conditions such as cancer and heart disease.27 Furthermore, the section on stress delves into the scientific understanding of its psychological and physiological effects, providing a comprehensive scientific context for the practice of mindfulness.27  
       
@@ -107,14 +107,14 @@ The practice of mindfulness, characterized by present moment awareness and non-j
   
 **III. Comparative Analysis Table**  
   
-|   |   |   |   |  
-|---|---|---|---|  
-|**Book Title**|**Scientific Grounding**|**Practical Application**|**Engaging Storytelling**|  
-|_Wherever You Go, There You Are_|Medium (Indirect, through MBSR)|High (Integration into daily life, various meditation techniques)|Medium (Anecdotes, accessible style, humor)|  
-|_Full Catastrophe Living_|High (Strong emphasis on MBSR research, neuroscience)|High (Managing stress, pain, illness; detailed techniques)|Medium (Patient stories from clinical practice)|  
-|_Mindfulness in Plain English_|Low (Rooted in Buddhist principles)|High (Step-by-step guide to meditation, dealing with obstacles)|Medium (Clear and accessible style, wit)|  
-|_10% Happier_|Medium (Integrates neuroscience)|Medium (Good for beginners, practical tips)|High (Humorous and personal memoir style, engaging anecdotes)|  
-|_The Miracle of Mindfulness_|Low (Rooted in Buddhist principles)|High (Integrating mindfulness into everyday activities through simple exercises)|Medium (Gentle anecdotes, lucid and peaceful style)|  
+|                                                                     |                                                       |                                                                                  |                                                               |  
+| ------------------------------------------------------------------- | ----------------------------------------------------- | -------------------------------------------------------------------------------- | ------------------------------------------------------------- |  
+| **Book Title**                                                      | **Scientific Grounding**                              | **Practical Application**                                                        | **Engaging Storytelling**                                     |  
+| _Wherever You Go, There You Are_                                    | Medium (Indirect, through MBSR)                       | High (Integration into daily life, various meditation techniques)                | Medium (Anecdotes, accessible style, humor)                   |  
+| [🌪️🧘‍♂️ Full Catastrophe Living](../books/full-catastrophe-living.md) | High (Strong emphasis on MBSR research, neuroscience) | High (Managing stress, pain, illness; detailed techniques)                       | Medium (Patient stories from clinical practice)               |  
+| _Mindfulness in Plain English_                                      | Low (Rooted in Buddhist principles)                   | High (Step-by-step guide to meditation, dealing with obstacles)                  | Medium (Clear and accessible style, wit)                      |  
+| _10% Happier_                                                       | Medium (Integrates neuroscience)                      | Medium (Good for beginners, practical tips)                                      | High (Humorous and personal memoir style, engaging anecdotes) |  
+| _The Miracle of Mindfulness_                                        | Low (Rooted in Buddhist principles)                   | High (Integrating mindfulness into everyday activities through simple exercises) | Medium (Gentle anecdotes, lucid and peaceful style)           |  
   
 **IV. Recommendation and Justification**  
   

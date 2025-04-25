@@ -56,6 +56,7 @@ function generateSiteMap(cfg: GlobalConfiguration, idx: ContentIndex): string {
     })
     .map(([slug, content]) => createURLEntry(simplifySlug(slug), content))
     .join("")
+  console.log('sorted sitemap urls: ', JSON.stringify(urls.slice(0, 5))
   return `<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">${urls}</urlset>`
 }
 

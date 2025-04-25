@@ -43,6 +43,17 @@ function generateSiteMap(cfg: GlobalConfiguration, idx: ContentIndex): string {
     ${content.date && `<lastmod>${content.date.toISOString()}</lastmod>`}
   </url>`
   const urls = Array.from(idx)
+    .sort(([_, f1], [__, f2]) => {
+      if (f1.date && f2.date) {
+        return f2.date.getTime() - f1.date.getTime()
+      } else if (f1.date && !f2.date) {
+        return -1
+      } else if (!f1.date && f2.date) {
+        return 1
+      }
+
+      return f1.title.localeCompare(f2.title)
+    })
     .map(([slug, content]) => createURLEntry(simplifySlug(slug), content))
     .join("")
   return `<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">${urls}</urlset>`

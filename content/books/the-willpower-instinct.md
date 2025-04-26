@@ -64,7 +64,7 @@ tags:
 * 🗓️ **_Better Than Before: Mastering the Habits of Our Everyday Lives_ by Gretchen Rubin:** Explores how understanding yourself and your tendencies (e.g., Obliger, Questioner, Upholder, Rebel) can help you build habits effectively.  
 * 🧠 **_Good Habits, Bad Habits: The Science of Making Positive Changes That Stick_ by Wendy Wood:** Draws on neuroscience and psychology to explain how habits form and how to leverage the power of the subconscious mind for change.  
 * 📜 **_Discipline Is Destiny: The Power of Self-Control_ by Ryan Holiday:** Explores the virtue of temperance and self-control through historical and philosophical lenses, particularly Stoicism.  
-* 💡 **_The Science of Self-Discipline_ by Peter Hollins:** A concise guide focusing on the key points of willpower, mental toughness, and resisting temptation, often summarizing research clearly.  
+* **[💪🎯🔬 The Science of Self-Discipline: The Willpower, Mental Toughness, and Self-Control to Resist Temptation and Achieve Your Goals](./the-science-of-self-discipline-the-willpower-mental-toughness-and-self-control-to-resist-temptation-and-achieve-your-goals.md) by Peter Hollins:** A concise guide focusing on the key points of willpower, mental toughness, and resisting temptation, often summarizing research clearly.  
   
 ### 🎭 Contrasting Perspectives (Alternative Approaches to Change)  
   

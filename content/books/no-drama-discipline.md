@@ -68,7 +68,7 @@ tags:
 * 🧠 **[Mindset](./mindset.md): The New Psychology of Success** by Carol S. Dweck: ✅ Discusses the concept of fixed vs. growth mindsets, which is highly relevant to how parents approach challenges and learning with their children.  
 * 📱 **The Anxious Generation: How the Great Rewiring of Childhood Is Causing an Epidemic of Mental Illness** by Jonathan Haidt: 😞 While focusing on the impact of modern childhood (smartphones, decline of free play), it touches on resilience and child development, offering a broader societal context.  
 * 🐸 **Sitting Still Like a Frog: Mindfulness Exercises for Kids (and Their Parents)** by Eline Snel: 🧘 Offers practical mindfulness activities for children, aligning with the goal of teaching emotional regulation.  
-* 🫂 **Books on Attachment Theory** (e.g., by John Bowlby, Gordon Neufeld): 💖 Provide deeper understanding of the parent-child bond, which underpins the connection aspect of "No-Drama Discipline.".  
+* 🫂 **Books on [🫂💖 Attachment Theory](../topics/attachment-theory.md)** (e.g., by John Bowlby, Gordon Neufeld): 💖 Provide deeper understanding of the parent-child bond, which underpins the connection aspect of "No-Drama Discipline.".  
   
 ## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on No-Drama Discipline. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

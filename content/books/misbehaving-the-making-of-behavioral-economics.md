@@ -83,7 +83,7 @@ URL: https://bagrounds.org/books/misbehaving-the-making-of-behavioral-economics
     * 🔗 *Relation:* Argues for the value of broad experience in complex problem-solving and decision-making, offering a different perspective on expertise and cognitive flexibility than purely focusing on specific biases.  
 * 🌍 **[Sapiens: A Brief History of Humankind](./sapiens-a-brief-history-of-humankind.md)** by Yuval Noah Harari:  
     * 🔗 *Relation:* Provides a grand historical context for human cognition, cooperation, and the development of economic systems (like money and markets), touching upon the psychological foundations that behavioral economics explores.  
-* **[🤔💻🧠 Algorithms to Live By: The Computer Science of Human Decisions](./algorithms-to-live-by-the-computer-science-of-human-decisions.md)** by Brian Christian and Tom Griffiths:  
+* **[🤔💻🧠 Algorithms to Live By: The Computer Science of Human Decisions](./algorithms-to-live-by.md)** by Brian Christian and Tom Griffiths:  
     * 🔗 *Relation:* Applies concepts from computer science (like optimal stopping, sorting, caching) to everyday human decision-making problems. 🤖 Offers a different, more computational kind of "rational" framework for tackling problems that behavioral economics shows we often handle poorly.  
 * 📢 **[Noise](./noise.md): A Flaw in Human Judgment** by Daniel Kahneman, Olivier Sibony, and Cass R. Sunstein:  
     * 🔗 *Relation:* Explores unwanted variability in judgments that *should* be identical (e.g., sentencing, medical diagnoses, hiring). 🙉 It's another dimension of flawed human decision-making, co-authored by key figures from behavioral economics and nudging.  

@@ -35,7 +35,7 @@ Okay, here are 📚 book recommendations on the requested topics and a 📝 repo
 * 🏛️ **Economy and Society** **by Max Weber:** A foundational text in sociology, offering comprehensive analyses of social action, political structures, bureaucracy, and the forms of authority that shape social organization.  
 * 🎳 **[Bowling Alone](../books/bowling-alone.md): The Collapse and Revival of American Community** **by Robert D. Putnam:** Examines the decline of social capital (networks, norms, and trust that facilitate cooperation) in the United States and its implications for communities and democracy.  
 * 🤝 **The Logic of Collective Action: Public Goods and the Theory of Groups** **by Mancur Olson:** Explores the challenges of organizing groups to achieve common interests, particularly when benefits are non-excludable (public goods).  
-* 👁️ **Seeing Like a State: How Certain Schemes to Improve the Human Condition Have Failed** **by James C. Scott:** Critiques large-scale state planning projects, arguing they often fail by ignoring essential local knowledge and imposing simplistic order on complex social realities.  
+* **[📖🏛️📉 Seeing Like a State: How Certain Schemes to Improve the Human Condition Have Failed](../books/seeing-like-a-state-how-certain-schemes-to-improve-the-human-condition-have-failed.md)** **by James C. Scott:** Critiques large-scale state planning projects, arguing they often fail by ignoring essential local knowledge and imposing simplistic order on complex social realities.  
   
 **4. 🕊️ Democracy:**  
   

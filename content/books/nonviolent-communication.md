@@ -77,7 +77,7 @@ tags:
 ### 🎨 Creatively Related (Broader Themes: Empathy, Conflict, Mindfulness, Relationships)  
   
 * ❤️‍🩹 **Daring Greatly: How the Courage to Be Vulnerable Transforms the Way We Live, Love, Parent, and Lead** by Brené Brown: 💖 Explores vulnerability, shame, and empathy – concepts highly relevant to the emotional honesty NVC encourages.  
-* 🔗 **Attached: The New Science of Adult Attachment and How It Can Help You Find—and Keep—Love** by Amir Levine & Rachel S.F. Heller: 💔 Understanding attachment styles provides context for relationship dynamics that NVC skills can help navigate.  
+* **[🧑‍❤️‍🧑🔗 Attached: The New Science of Adult Attachment and How It Can Help You Find - and Keep - Love](./attached-the-new-science-of-adult-attachment-and-how-it-can-help-you-find-and-keep-love.md)** by Amir Levine & Rachel S.F. Heller: 💔 Understanding attachment styles provides context for relationship dynamics that NVC skills can help navigate.  
 * 🧘 **Mindfulness** themed books (e.g., by Thich Nhat Hanh, Jon Kabat-Zinn): 🙏 Mindfulness practices enhance the self-awareness and presence needed to apply NVC effectively. *📝 Example: Full Catastrophe Living* by Jon Kabat-Zinn.  
 * 🧠 **The Body Keeps the Score: Brain, Mind, and Body in the Healing of Trauma** by Bessel van der Kolk: 💔 Offers deep insights into how trauma affects individuals, relevant for understanding intense emotional reactions sometimes encountered in conflict.  
 * 🧠 **Emotional Intelligence 2.0** by Travis Bradberry & Jean Greaves: 🧠 Focuses broadly on understanding and managing emotions in oneself and others, a foundation for NVC.  

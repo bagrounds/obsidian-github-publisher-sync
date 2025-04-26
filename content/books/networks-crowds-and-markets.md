@@ -68,7 +68,7 @@ tags:
 * 💥 **[⚖️👈 The Tipping Point: How Little Things Can Make a Big Difference](./the-tipping-point.md) by Malcolm Gladwell:** Explores the social epidemics and how ideas, products, and behaviors spread like viruses. Less focused on formal network models.  
 * 🤔 **[Thinking, Fast and Slow](./thinking-fast-and-slow.md) by Daniel Kahneman:** While not directly about networks, it provides insights into human decision-making biases that influence behavior within crowds and markets.  
 * 💡 **[Nudge](./nudge.md): Improving Decisions About Health, Wealth, and Happiness by Richard H. Thaler and Cass R. Sunstein:** Focuses on behavioral economics and how subtle cues (nudges) can influence choices in markets and social contexts.  
-* 🤖 **[Algorithms to Live By: The Computer Science of Human Decisions](./algorithms-to-live-by.md) by Brian Christian and Tom Griffiths:** Explores how computer science algorithms can provide insights into everyday human decision-making, relevant to strategic interactions in networks and markets.  
+* **[🤔💻🧠 Algorithms to Live By: The Computer Science of Human Decisions](./algorithms-to-live-by.md) by Brian Christian and Tom Griffiths:** Explores how computer science algorithms can provide insights into everyday human decision-making, relevant to strategic interactions in networks and markets.  
   
 ### ✨ Creatively Related Books (Exploring Networked Concepts in Different Contexts)  
   

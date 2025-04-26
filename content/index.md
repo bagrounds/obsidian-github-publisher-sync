@@ -11,7 +11,7 @@ title: 🏡 Home
 ❔ What do 🫵 _you_ 🤔 think?  
   
 ## [🪞 Reflections](./reflections/index.md) (~Blog)  
-- [2025-04-25 | 🤝 Conform 😇 | 🕹️ Control 🧘](./reflections/2025-04-25.md)  
+- [2025-04-25 | 🤝 Conform 😇 | 🕹️ Control 🧘 | ✍️ Create 🕸️](./reflections/2025-04-25.md)  
 - [2025-04-24 | ⚛️ℹ️ Strange 🧘🏔️](./reflections/2025-04-24.md)  
 - [2025-04-23 | 💭 Think ⚡ Power 🌱 Plant](./reflections/2025-04-23.md)  
 - [2025-04-22 | 🔥 Firestorm ⛈️](./reflections/2025-04-22.md)  

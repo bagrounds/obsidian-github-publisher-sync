@@ -40,7 +40,7 @@ This book offers a refreshing perspective by treating parenting as an experiment
     * 🧪 Parenting as a series of experiments.  
     * 📊 Data-driven decision-making in parenting.  
     * 🧠 The importance of understanding developmental stages.  
-    * 🤝 Attachment theory and its practical application.  
+    * [🫂💖 Attachment Theory](../topics/attachment-theory.md) and its practical application.  
     * 😴 The importance of understanding sleep cycles.  
   
 ### 💡 Practical Takeaways: Advice and Techniques  

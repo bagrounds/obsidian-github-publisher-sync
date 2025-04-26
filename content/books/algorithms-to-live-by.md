@@ -3,7 +3,7 @@ title: "🤔💻🧠 Algorithms to Live By: The Computer Science of Human Decisi
 share: true
 aliases:
   - "🤔💻🧠 Algorithms to Live By: The Computer Science of Human Decisions"
-URL: https://bagrounds.org/books/algorithms-to-live-by-the-computer-science-of-human-decisions
+URL: https://bagrounds.org/books/algorithms-to-live-by
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🤔💻🧠 Algorithms to Live By: The Computer Science of Human Decisions  

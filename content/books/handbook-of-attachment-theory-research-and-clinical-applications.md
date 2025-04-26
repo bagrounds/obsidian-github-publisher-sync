@@ -37,7 +37,7 @@ share: true
   
 ### 🫂 Similar Books (Comprehensive Attachment Focus)  
 * 📚 **Attachment and Loss Trilogy by John Bowlby:** 👴 The foundational texts by the father of attachment theory. Includes *Volume 1: Attachment*, *Volume 2: Separation: Anxiety and Anger*, and *Volume 3: Loss: Sadness and Depression*.  
-* 👩‍👧‍👦 **Patterns of Attachment by Mary D. Salter Ainsworth et al.:** 📍 Details the landmark Baltimore study and methods (including the Strange Situation) that established attachment patterns.  
+* 👩‍👧‍👦 **[👶🤔 Patterns of Attachment: A Psychological Study of the Strange Situation](./patterns-of-attachment-a-psychological-study-of-the-strange-situation.md) by Mary D. Salter Ainsworth et al.:** 📍 Details the landmark Baltimore study and methods (including the Strange Situation) that established attachment patterns.  
 * 🏠 **[👨‍👩‍👧‍👦🛡️ A Secure Base: Parent-Child Attachment and Healthy Human Development](./a-secure-base-parent-child-attachment-and-healthy-human-development.md) by John Bowlby:** ❤️ Explores key concepts like the secure base and its role in healthy development.  
 * ⚕️ **Attachment Theory in Practice: Emotionally Focused Therapy (EFT) with Individuals, Couples, and Families by Susan M. Johnson:** 🫂 Applies attachment principles specifically within the EFT framework.  
 * 🌱 **Attachment Theory Applied: Fostering Personal Growth through Healthy Relationships by Mario Mikulincer and Phillip R. Shaver:** 🔬 Reviews attachment-based interventions across various domains, including therapy, education, and health.  

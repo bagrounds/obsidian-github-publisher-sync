@@ -64,7 +64,7 @@ The book is highly accessible and engaging, using compelling stories to illustra
 * **Best Fiction Book That Incorporates Related Ideas:** "The Wolf of Wall Street" by Jordan Belfort. While a cautionary tale, it vividly illustrates the dangers of greed and excessive risk-taking. 🐺  
 * **Best Book That Is More General:** "[Sapiens: A Brief History of Humankind](./sapiens-a-brief-history-of-humankind.md)" by Yuval Noah Harari. It provides a broader perspective on human behavior and how it has evolved over time, offering context for our financial decisions. 🌍  
 * **Best Book That Is More Specific:** "A Random Walk Down Wall Street" by Burton G. Malkiel. This book delves into the technical aspects of investing and market efficiency. 📊  
-* **Best Book That Is More Rigorous:** "Misbehaving: The Making of Behavioral Economics" by Richard H. Thaler. This book presents the academic foundation of behavioral economics, providing a more rigorous analysis of psychological biases. 🔬  
+* **Best Book That Is More Rigorous:** [🤔💸 Misbehaving: The Making of Behavioral Economics](./misbehaving-the-making-of-behavioral-economics.md) by Richard H. Thaler. This book presents the academic foundation of behavioral economics, providing a more rigorous analysis of psychological biases. 🔬  
 * **Best Book That Is More Accessible:** "I Will Teach You to Be Rich" by Ramit Sethi. This book offers a more practical, step-by-step guide to personal finance, with a focus on automation and simple strategies. 💸  
   
 ## 💬 [Gemini](https://gemini.google.com) Prompt  

@@ -144,7 +144,7 @@ Why did the anxiously attached person break up with their mirror? Because they k
   * **More General:** *Developmental Psychology: Childhood and Adolescence* by David R. Shaffer and Katherine Kipp 👶➡️🧑  
   * **More Specific:** *Adult Attachment in Close Relationships* by R. Chris Fraley and Phillip R. Shaver ❤️  
   * **Fictional:** *Room* by Emma Donoghue (explores the intense bond between a mother and child in extreme circumstances) 😥➡️💖  
-  * **Rigorous:** *Handbook of Attachment: Theory, Research, and Clinical Applications* edited by Jude Cassidy and Phillip R. Shaver 🤓  
+  * **Rigorous:** *[📖🫂🥼 Handbook of Attachment: Theory, Research, and Clinical Applications](../books/handbook-of-attachment-theory-research-and-clinical-applications.md)* edited by Jude Cassidy and Phillip R. Shaver 🤓  
   * **Accessible:** *[🧑‍❤️‍🧑🔗 Attached: The New Science of Adult Attachment and How It Can Help You Find - and Keep - Love](../books/attached-the-new-science-of-adult-attachment-and-how-it-can-help-you-find-and-keep-love.md)* by Amir Levine and Rachel S.F. Heller 🥰  
   
 📺 **Links To Relevant YouTube Channels Or Videos** ▶️  

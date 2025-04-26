@@ -82,7 +82,7 @@ The book is a highly valuable contribution to the literature on CPR management.
 #### Book Recommendations 📚  
   
 * **Best Alternate Book on the Same Topic:** *Governing the Commons: The Evolution of Institutions for Collective Action* by Elinor Ostrom (This is the foundational text that *Rules, Games, and Common Pool Resources* builds upon).  
-* **Best Book That Is Tangentially Related:** *Seeing Like a State: How Certain Schemes to Improve the Human Condition Have Failed* by James C. Scott (Explores the dangers of top-down planning and the importance of local knowledge).  
+* **Best Book That Is Tangentially Related:** *[📖🏛️📉 Seeing Like a State: How Certain Schemes to Improve the Human Condition Have Failed](./seeing-like-a-state-how-certain-schemes-to-improve-the-human-condition-have-failed.md)* by James C. Scott (Explores the dangers of top-down planning and the importance of local knowledge).  
 * **Best Book That Is Diametrically Opposed:** *Tragedy of the Commons* by Garrett Hardin (An essay outlining the traditional argument against shared resource management).  
 * **Best Fiction Book That Incorporates Related Ideas:** *The Dispossessed* by Ursula K. Le Guin (Explores anarchist ideals and community-based governance, raising questions about resource allocation and social justice).  
 * **Best Book That Is More General:** *Beyond Growth: The Economics of Sustainable Development* by Herman Daly (Addresses the broader challenge of managing natural resources within the limits of the planet).  

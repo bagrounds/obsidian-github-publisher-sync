@@ -59,7 +59,7 @@ Human history isn't a linear progression from simple, egalitarian hunter-gathere
   
 ### 📚 Book Recommendations  
 * **Best alternate book on the same topic:** "Against the Grain: A Deep History of the Earliest States" by James C. Scott 🌾  
-* **Best book that is tangentially related:** "Debt: The First 5,000 Years" by David Graeber 💰  
+* **Best book that is tangentially related:** [🏛️💰 Debt: The First 5,000 Years](./debt-the-first-5000-years.md) by David Graeber 💰  
 * **Best book that is diametrically opposed:** "[Sapiens: A Brief History of Humankind](./sapiens-a-brief-history-of-humankind.md)" by Yuval Noah Harari 🧬  
 * **Best fiction book that incorporates related ideas:** "The Dispossessed" by Ursula K. Le Guin 🪐  
 * **Best book that is more general:** "Humankind: A Hopeful History" by Rutger Bregman 💖  

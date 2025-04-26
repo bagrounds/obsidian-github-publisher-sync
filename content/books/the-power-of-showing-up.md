@@ -32,7 +32,7 @@ tags:
   
 ### 🎯 Target Audience  
 * 👨‍👩‍👧‍👦 Parents, caregivers, educators, and anyone working with children.  
-* 🧠 Particularly valuable for those interested in attachment theory, mindful parenting, and understanding the neurological basis of child development.  
+* 🧠 Particularly valuable for those interested in [🫂💖 Attachment Theory](../topics/attachment-theory.md), mindful parenting, and understanding the neurological basis of child development.  
 * 🤔 Helpful for parents seeking foundational parenting principles and those reflecting on how their own upbringing influences their parenting.  
   
 ### 📢 Overall Message  

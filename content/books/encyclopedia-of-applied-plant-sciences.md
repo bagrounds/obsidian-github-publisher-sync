@@ -44,7 +44,7 @@ tags:
 * 🧬 **Plant Biotechnology: The genetic manipulation of plants** by Adrian Slater et al.: 📖 Focuses specifically on the techniques and applications of genetic modification in plants, a key area within applied plant science.  
   
 ### ➖ Contrasting Perspectives (Specialized or Theoretical)  
-* 🌻 **Botany for Gardeners** by Brian Capon / 🌼 **A Gardener's Guide to Botany** by Scott Zona: 📖 These books bridge botany and practical horticulture but are aimed at a less academic audience, focusing on information directly applicable to gardening.  
+* 🌻 **[🌿🧑‍🌾 Botany for Gardeners](./botany-for-gardeners.md)** by Brian Capon / 🌼 **[🧑‍🌾🌿 A Gardener's Guide to Botany](./a-gardeners-guide-to-botany.md)** by Scott Zona: 📖 These books bridge botany and practical horticulture but are aimed at a less academic audience, focusing on information directly applicable to gardening.  
 * 🌿 **Plant Systematics: A Phylogenetic Approach** by Walter S. Judd et al.: 📖 Concentrates on plant classification, evolution, and relationships, representing a more theoretical and less directly 'applied' area of botany.  
 * 🌳 **From Plant Traits to Vegetation Structure** (Cambridge University Press): 📖 Explores ecological modeling and theoretical approaches to understanding plant communities based on traits, contrasting with the broader applied scope of the Encyclopedia.  
 * 🔬 **Specialized Monographs (Various Publishers like Caister Academic Press, Frontiers):** 📖 Books focusing deeply on niche topics like *Plant-Microbe Interactions*, *Omics in Seed Development*, or *Genes, Genetics and Transgenics for Virus Resistance in Plants* offer depth in specific areas rather than breadth.  

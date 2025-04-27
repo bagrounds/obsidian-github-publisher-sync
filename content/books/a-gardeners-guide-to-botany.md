@@ -48,7 +48,7 @@ share: true
 * **[🪴 RHS How to Garden When You're New to Gardening: The Basics For Beginners](./rhs-how-to-garden-when-youre-new-to-gardening-the-basics-for-beginners.md)**: 🌱 A foundational guide from the Royal Horticultural Society focused on practical techniques.  
 * 📖 **The Complete Book of Practical Gardening**: 🪴 A step-by-step guide covering planning, planting, and maintenance.  
 * 📖 **RHS Encyclopedia of Practical Gardening series**: 🌿 Older but thorough guides covering various specific gardening areas like propagation, fruit, and vegetables.  
-* 📖 **RHS Gardening Through the Year** by Ian Spence: 📅 A month-by-month guide to garden tasks.  
+* **[🗓️🌷 RHS Gardening Through the Year](./rhs-gardening-through-the-year.md)** by Ian Spence: 📅 A month-by-month guide to garden tasks.  
 * 📖 **Field Guide to Urban Gardening: How to Grow Plants, No Matter Where You Live** by Kevin Espiritu: 🏙️ Focuses on techniques suitable for urban environments like containers, raised beds, and hydroponics.  
 * 📖 **Practical Organic Gardening: The No-Nonsense Guide to Growing Naturally** by Mark Highland: 🌱 A science-based guide focused on organic methods and soil health.  
   

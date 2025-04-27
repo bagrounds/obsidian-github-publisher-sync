@@ -61,7 +61,7 @@ share: true
     * 🌱 **Seed to Seed by Suzanne Ashworth:** 🍅 Focuses specifically on seed saving techniques for vegetable gardeners.  
     * 🌶️ **Veggie Garden Remix by Niki Jabbour:** 🍆 Encourages experimenting with unusual vegetable varieties.  
 * 🌍 **Permaculture & Sustainable Gardening:**  
-    * 🏡 **[🌍🌿 Gaia's Garden: A Guide to Home-Scale Permaculture](../../gaias-garden-a-guide-to-home-scale-permaculture.md) by Toby Hemenway:** 🌿 Highly recommended introduction to permaculture principles for home gardens.  
+    * 🏡 **[🌍🌿 Gaia's Garden: A Guide to Home-Scale Permaculture](./gaias-garden.md) by Toby Hemenway:** 🌿 Highly recommended introduction to permaculture principles for home gardens.  
     * 🌳 **Permaculture: A Designers' Manual by Bill Mollison:** 🌳 The foundational, comprehensive (and dense) text on permaculture design.  
     * 🌱 **Practical Permaculture by Jessi Bloom and Dave Boehnlein:** 🌍 A broader, well-illustrated introduction to permaculture concepts.  
     * 🦋 **The Living Landscape by Rick Darke & Doug Tallamy:** 🐛 Focuses on designing for beauty and biodiversity.  

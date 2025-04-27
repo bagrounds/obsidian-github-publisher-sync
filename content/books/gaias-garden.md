@@ -47,7 +47,7 @@ share: true
 ### 🌿 Similar Reads (Permaculture & Ecological Gardening)  
 * 📖 **Practical Permaculture** by Jessi Bloom and Dave Boehnlein: An excellent, well-illustrated broad introduction, covering basics often taught in introductory courses and outlining a design process for home landscapes.  
 * 🏙️ **The Permaculture City: Regenerative Design for Urban, Suburban, and Town Resilience** by Toby Hemenway: Hemenway's follow-up book, focusing specifically on applying permaculture beyond the garden to broader urban systems.  
-* 🌳 **Edible Forest Gardens (Volumes 1 & 2)** by Dave Jacke and Eric Toensmeier: Considered a comprehensive and foundational work on designing layered, edible ecosystems, particularly in temperate climates. Volume 1 focuses on theory and Volume 2 on practice and species.  
+* **[🍎🌳 Edible Forest Gardens](./edible-forest-gardens.md) (Volumes 1 & 2)** by Dave Jacke and Eric Toensmeier: Considered a comprehensive and foundational work on designing layered, edible ecosystems, particularly in temperate climates. Volume 1 focuses on theory and Volume 2 on practice and species.  
 * 🌲 **Creating a Forest Garden** by Martin Crawford: Another key text focusing on the design and practice of temperate climate forest gardens.  
 * 🌱 **Introduction to Permaculture** by Bill Mollison and Reny Mia Slay: A more accessible introduction to the foundational concepts by one of permaculture's co-founders.  
 * 📐 **Permaculture Design: A Step-by-Step Guide** by Aranya: A practical guide offering a structured approach to the permaculture design process.  

@@ -54,7 +54,7 @@ tags:
 * 🌱 **_Buffalo Bird Woman's Garden: Agriculture of the Hidatsa Indians_** by Gilbert L. Wilson: An anthropological classic detailing traditional Native American agricultural practices, offering a historical and cultural contrast to modern scientific horticulture.  
   
 ### 💡 Creatively Related (Broader Connections)  
-* 🌱 **_Botany for Gardeners_** by Brian Capon: A straightforward guide to plant science specifically tailored for gardeners.  
+* 🌱 **[🌿🧑‍🌾 Botany for Gardeners](./botany-for-gardeners.md)** by Brian Capon: A straightforward guide to plant science specifically tailored for gardeners.  
 * 🌱 **_Practical Botany for Gardeners_** by Geoff Hodge: Explains botanical terms and concepts relevant to gardening.  
 * 🌱 **_Bringing Nature Home_** or **_Nature's Best Hope_** by Doug Tallamy: Focuses on the ecological importance of gardening choices, particularly using native plants to support insects and wildlife – connects gardening to broader ecological functions.  
 * 🌱 **_The Living Landscape_** by Rick Darke & Doug Tallamy: Combines ecological principles with garden design, showing how to create gardens that function like natural ecosystems.  

@@ -75,7 +75,7 @@ share: true
 ### 🎨 Creatively Related Books (Neuroscience, Trauma, Broader Themes)  
   
 1. **🧠 Neuroscience of Relationships & Development:**  
-    * 💡 *The Developing Mind: How Relationships and the Brain Interact to Shape Who We Are* by Daniel J. Siegel: Explores interpersonal neurobiology, showing how relationships shape brain development.  
+    * *[🧠🧑‍🤝‍🧑 The Developing Mind: How Relationships and the Brain Interact to Shape Who We Are](./the-developing-mind-how-relationships-and-the-brain-interact-to-shape-who-we-are.md)* by Daniel J. Siegel: Explores interpersonal neurobiology, showing how relationships shape brain development.  
     * 👨‍👩‍👧‍👦 *Parenting From The Inside Out* by Daniel J. Siegel & Mary Hartzell: Helps parents understand their own childhood experiences (including attachment history) to parent more effectively, drawing on neuroscience.  
     * 👶 *Why Love Matters: How Affection Shapes a Baby's Brain* by Sue Gerhardt: Connects neuroscience and attachment, explaining the impact of early emotional experiences on brain development.  
     * 🤝 *The Neuroscience of Human Relationships: Attachment and the Developing Social Brain* by Louis Cozolino: Details how social interactions and relationships influence brain structure and function.  

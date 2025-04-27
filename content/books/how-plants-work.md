@@ -51,7 +51,7 @@ This book is ideal for:
   
 ### 🪴 Similar Reads (Applied Plant Science for Gardeners/Enthusiasts)  
   
-* 🌿 **Botany for Gardeners** by Brian Capon: A classic and highly recommended text that offers a comprehensive introduction to plant science specifically tailored for gardeners, covering plant structure, growth, reproduction, and environmental interactions.  
+* **[🌿🧑‍🌾 Botany for Gardeners](./botany-for-gardeners.md)** by Brian Capon: A classic and highly recommended text that offers a comprehensive introduction to plant science specifically tailored for gardeners, covering plant structure, growth, reproduction, and environmental interactions.  
 * 🌱 **Plant Science for Gardeners: Essentials for Growing Better Plants** by Robert Pavlis: Focuses on understanding basic plant biology (roots, stems, leaves, flowers, nutrients) to enable gardeners to problem-solve and make better decisions for plant health. 🚫 Also busts gardening myths.  
 * 🦠 **Teeming with Microbes / Teeming with Nutrients / Teeming with Fungi** by Jeff Lowenfels & Wayne Lewis: This series dives deep into the science of soil biology and plant nutrition, explaining the crucial relationships between plants and the microscopic life in the soil.  
 * 📰 **[ℹ️🌱 The Informed Gardener](./the-informed-gardener.md)** & **[ℹ️🌻 The Informed Gardener Blooms Again](./the-informed-gardener-blooms-again.md)** by Linda Chalker-Scott: These books compile Chalker-Scott's myth-busting columns, offering concise, science-based evaluations of common gardening practices, products, and advice.  

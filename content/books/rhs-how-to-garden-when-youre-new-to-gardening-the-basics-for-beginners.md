@@ -43,7 +43,7 @@ share: true
 ## 📚 Further Reading Recommendations  
   
 ### 🌱 Similar Beginner Guides  
-* 📅 **RHS Gardening Through the Year by Ian Spence:** 🗓️ A month-by-month guide, often paired with "How to Garden When You're New," focusing on seasonal tasks.  
+* 📅 **[🗓️🌷 RHS Gardening Through the Year](./rhs-gardening-through-the-year.md) by Ian Spence:** 🗓️ A month-by-month guide, often paired with "How to Garden When You're New," focusing on seasonal tasks.  
 * 🧑‍🌾 **The Old Farmer's Almanac Vegetable Gardener's Handbook:** 🍅 A popular choice focusing specifically on growing vegetables for beginners.  
 * 🌷 **Gardening for Everyone by Julia Watkins:** 📸 Praised for its beautiful photography and simple, practical information and projects.  
 * 📐 **All New Square Foot Gardening (3rd Edition) by Mel Bartholomew:** 📏 Focuses on a specific, space-saving method for vegetable gardening, great for beginners.  
@@ -61,7 +61,7 @@ share: true
     * 🌱 **Seed to Seed by Suzanne Ashworth:** 🍅 Focuses specifically on seed saving techniques for vegetable gardeners.  
     * 🌶️ **Veggie Garden Remix by Niki Jabbour:** 🍆 Encourages experimenting with unusual vegetable varieties.  
 * 🌍 **Permaculture & Sustainable Gardening:**  
-    * 🏡 **Gaia's Garden: A Guide to Home-Scale Permaculture by Toby Hemenway:** 🌿 Highly recommended introduction to permaculture principles for home gardens.  
+    * 🏡 **[🌍🌿 Gaia's Garden: A Guide to Home-Scale Permaculture](../../gaias-garden-a-guide-to-home-scale-permaculture.md) by Toby Hemenway:** 🌿 Highly recommended introduction to permaculture principles for home gardens.  
     * 🌳 **Permaculture: A Designers' Manual by Bill Mollison:** 🌳 The foundational, comprehensive (and dense) text on permaculture design.  
     * 🌱 **Practical Permaculture by Jessi Bloom and Dave Boehnlein:** 🌍 A broader, well-illustrated introduction to permaculture concepts.  
     * 🦋 **The Living Landscape by Rick Darke & Doug Tallamy:** 🐛 Focuses on designing for beauty and biodiversity.  

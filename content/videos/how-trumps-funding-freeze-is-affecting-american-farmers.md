@@ -10,7 +10,8 @@ Channel: PBS NewsHour
 tags: 
 ---
 [Home](../index.md) > [Videos](./index.md)  
-# PBS NewsHour - How Trump's funding freeze is affecting American farmers  
+# PBS NewsHour - How Trump's funding freeze is affecting American   
+farmers  
 ![How Trump's funding freeze is affecting American farmers](https://youtu.be/DWvNyp_yuV4)  
   
 ## 🤖 AI Summary  

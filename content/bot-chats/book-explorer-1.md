@@ -205,7 +205,7 @@ Here's a breakdown:
     * **Books that do cover those topics:**  
         * "Foundation" by Isaac Asimov. (Hard science fiction, political themes) 🤖  
         * "Brave New World" by Aldous Huxley. (Social commentary) 🏛️  
-        * "Meditations" by Marcus Aurelius. (Traditional philosophy) 📜  
+        * [🤔🧘 Meditations](../books/meditations.md) by Marcus Aurelius. (Traditional philosophy) 📜  
 * **Books with a Different Perspective:**  
     * "Slaughterhouse-Five" by Kurt Vonnegut. (Darkly comedic, anti-war, existential) 💣  
     * "Catch-22" by Joseph Heller. (Satirical, dark humor, war commentary) ✈️  

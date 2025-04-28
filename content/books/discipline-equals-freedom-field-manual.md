@@ -57,7 +57,7 @@ share: true
 * **[🕊️🤝 Nonviolent Communication: A Language of Life](./nonviolent-communication.md)** by Marshall Rosenberg: Focuses on compassionate communication and understanding needs (yours and others') as a path to connection and resolving conflict, contrasting with a purely self-focused discipline model.  
   
 ### 🚀 Creatively Related Books (Themes of Stoicism, Routine, Freedom)  
-* 🏛️ **Meditations** by Marcus Aurelius: A foundational text of Stoic philosophy, exploring themes of self-control, reason, accepting what you can't change, and inner freedom – ideas that resonate with Willink's emphasis on internal discipline.  
+* 🏛️ **[🤔🧘 Meditations](./meditations.md)** by Marcus Aurelius: A foundational text of Stoic philosophy, exploring themes of self-control, reason, accepting what you can't change, and inner freedom – ideas that resonate with Willink's emphasis on internal discipline.  
 * 🎨 **Daily Rituals: How Artists Work** by Mason Currey: Examines the routines and work habits of highly successful creative individuals, showing the link between structure/discipline and creative output.  
 * **[🔦💡 Man's Search for Meaning](./mans-search-for-meaning.md)** by Viktor Frankl: Explores finding meaning, purpose, and a sense of inner freedom even in the most horrific circumstances, highlighting the power of mindset.  
 * 🌳 **Walden** by Henry David Thoreau: A classic reflection on seeking freedom through simplicity, self-sufficiency, and deliberate living, albeit through a different lens than military discipline.  

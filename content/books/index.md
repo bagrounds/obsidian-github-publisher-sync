@@ -7,8 +7,9 @@ URL: https://bagrounds.org/books
 backlinks: false
 ---
 [Home](../index.md)  
-# 📚 Books (313)  
+# 📚 Books (315)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
+- [🧑‍🤝‍🧑📈 10 to 25: The Science of Motivating Young People: A Groundbreaking Approach to Leading the Next Generation - And Making Your Own Life Easier](./10-to-25-the-science-of-motivating-young-people-a-groundbreaking-approach-to-leading-the-next-generation-and-making-your-own-life-easier.md)  
 - [👁️ 1984](./1984.md)  
 - [23 Things They Don't Tell You About Capitalism](./23-things-they-dont-tell-you-about-capitalism.md)  
 - [A Brief History of Time](./a-brief-history-of-time.md)  
@@ -239,6 +240,7 @@ backlinks: false
 - [The Book of Why](./the-book-of-why.md)  
 - [The Brain That Changes Itself](./the-brain-that-changes-itself.md)  
 - [The Bullet Journal Method: Track the Past, Order the Present, Design the Future](./the-bullet-journal-method.md)  
+- [📈➕ The Compound Effect](./the-compound-effect.md)  
 - [The Creative Act: A Way of Being](./the-creative-act.md)  
 - [The Creative Habit: Learn It and Use It for Life](./the-creative-habit.md)  
 - [The Dawn of Everything: A New History of Humanity](./the-dawn-of-everything.md)  

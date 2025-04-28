@@ -7,7 +7,7 @@ URL: https://bagrounds.org/books
 backlinks: false
 ---
 [Home](../index.md)  
-# 📚 Books (312)  
+# 📚 Books (313)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [👁️ 1984](./1984.md)  
 - [23 Things They Don't Tell You About Capitalism](./23-things-they-dont-tell-you-about-capitalism.md)  
@@ -146,6 +146,7 @@ backlinks: false
 - [🔦💡 Man's Search for Meaning](./mans-search-for-meaning.md)  
 - [🏭🫡 Manufacturing Consent: The Political Economy of the Mass Media](./manufacturing-consent.md)  
 - [Measure What Matters](./measure-what-matters.md)  
+- [🤔🧘 Meditations](./meditations.md)  
 - [🤯 Mindf*ck: Cambridge Analytica and the Plot to Break America](./mindf-ck-cambridge-analytica-and-the-plot-to-break-america.md)  
 - [Mindset](./mindset.md)  
 - [🤔💸 Misbehaving: The Making of Behavioral Economics](./misbehaving-the-making-of-behavioral-economics.md)  

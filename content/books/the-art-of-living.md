@@ -54,7 +54,7 @@ Cultivate inner tranquility and effectiveness by aligning your judgments and act
 "The Art of Living" is based on the teachings of Epictetus, a Stoic philosopher who lived in the first century AD. While Stoicism is not based on modern scientific research, its principles have been validated by contemporary psychology, particularly [♻️🫀🧠💪 Cognitive Behavioral Therapy](../topics/cognitive-behavioral-therapy.md) (CBT). The book's emphasis on rational thinking, acceptance, and self-control aligns with CBT's core tenets. The author, Sharon Lebell, is a writer and philosopher who has made Stoic philosophy accessible to modern readers. Reviews of the work are overwhelmingly positive, praising its clarity and practicality. The quality of the information is high due to the foundational strength of stoicism, and the clear interpretation of the work. 📚  
   
 ### Book Recommendations 📚  
-* **Best alternate book on the same topic:** "Meditations" by Marcus Aurelius. 👑  
+* **Best alternate book on the same topic:** [🤔🧘 Meditations](./meditations.md) by Marcus Aurelius. 👑  
 * **Best book that is tangentially related:** "[Man's Search for Meaning](./mans-search-for-meaning.md)" by Viktor Frankl. 🧭  
 * **Best book that is diametrically opposed:** "The Subtle Art of Not Giving a F\*ck" by Mark Manson. 💥  
 * **Best fiction book that incorporates related ideas:** "The Stranger" by Albert Camus. 👽  

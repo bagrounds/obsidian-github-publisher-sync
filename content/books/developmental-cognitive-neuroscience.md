@@ -78,7 +78,7 @@ tags:
   
 **Book Recommendations:**  
 * **Best Alternate Book on the Same Topic:** "Principles of Developmental Cognitive Neuroscience" by Mark H. Johnson. 📚  
-* **Best Tangentially Related Book:** "The Developing Mind" by Daniel J. Siegel. 🧠💖  
+* **Best Tangentially Related Book:** "[🧠🧑‍🤝‍🧑 The Developing Mind: How Relationships and the Brain Interact to Shape Who We Are](./the-developing-mind-how-relationships-and-the-brain-interact-to-shape-who-we-are.md)" by Daniel J. Siegel. 🧠💖  
 * **Best Diametrically Opposed Book:** "The Blank Slate" by Steven Pinker. (Argues against the strong influence of environment). 📜  
 * **Best Fiction Book That Incorporates Related Ideas:** "Flowers for Algernon" by Daniel Keyes. (Explores the ethics of cognitive enhancement). 🌸🧠  
 * **Best More General Book:** "[Thinking, Fast and Slow](./thinking-fast-and-slow.md)" by Daniel Kahneman. (General cognitive psychology). 💭  

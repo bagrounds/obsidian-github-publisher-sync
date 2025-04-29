@@ -69,7 +69,7 @@ tags:
     *Explores cognitive biases and the dual systems of thought that underpin our decision-making, providing a foundational context for understanding noise.*  
   
 - **Tangentially Related**:    
-  - *[Nudge: Improving Decisions About Health, Wealth, and Happiness](https://en.wikipedia.org/wiki/Nudge_(book))* by Richard Thaler and Cass Sunstein    
+  - [Nudge](./nudge.md): Improving Decisions About Health, Wealth, and Happiness by Richard Thaler and Cass Sunstein    
     *Focuses on how subtle changes in choice architecture can significantly improve decision outcomes, resonating with the themes of structured decision-making.*  
   
 - **Diametrically Opposed**:    
@@ -77,5 +77,5 @@ tags:
     *Celebrates the strengths of rapid, intuitive decision-making, offering a counterpoint to the emphasis on reducing noise and standardizing judgments.*  
   
 - **Fiction Incorporating Related Ideas**:    
-  - *[Catch-22](https://en.wikipedia.org/wiki/Catch-22)* by Joseph Heller    
+  - [🔁🤪 Catch-22](./catch-22.md) by Joseph Heller    
     *A satirical novel that captures the absurdity and randomness of bureaucratic decision-making, echoing the unpredictable nature of noise.*  

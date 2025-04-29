@@ -208,7 +208,7 @@ Here's a breakdown:
         * [🤔🧘 Meditations](../books/meditations.md) by Marcus Aurelius. (Traditional philosophy) 📜  
 * **Books with a Different Perspective:**  
     * "Slaughterhouse-Five" by Kurt Vonnegut. (Darkly comedic, anti-war, existential) 💣  
-    * "Catch-22" by Joseph Heller. (Satirical, dark humor, war commentary) ✈️  
+    * [🔁🤪 Catch-22](../books/catch-22.md) by Joseph Heller. (Satirical, dark humor, war commentary) ✈️  
   
 **Global Exploration:**  
   

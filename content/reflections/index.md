@@ -7,8 +7,9 @@ URL: https://bagrounds.org/reflections
 backlinks: false
 ---
 [Home](../index.md)  
-# 🪞 Reflections (165)  
-- [2025-04-28](./2025-04-28.md)  
+# 🪞 Reflections (166)  
+- [2025-04-29 | 🏢📋 Bureaucracy 🤪⁉️](./2025-04-29.md)  
+- [2025-04-28 | 🏔️ Discipline 🧘](./2025-04-28.md)  
 - [2025-04-27 | 🍀❤️‍🔥 Intentional 🧘🎯](./2025-04-27.md)  
 - [2025-04-26 | 🌿 Botany of 🫂 Attachment](./2025-04-26.md)  
 - [2025-04-25 | 🤝 Conform 😇 | 🕹️ Control 🧘 | ✍️ Create 🕸️](./2025-04-25.md)  

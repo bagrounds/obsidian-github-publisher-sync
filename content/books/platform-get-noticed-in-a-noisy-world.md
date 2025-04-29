@@ -65,7 +65,7 @@ share: true
 * 🤝 **"[How To Win Friends And Influence People](./how-to-win-friends-and-influence-people.md)" by Dale Carnegie:** 📚 A classic guide to interpersonal skills, emphasizing genuine interest in others and effective communication – essential soft skills for engaging a platform audience.  
 * 💡 **"[Made to Stick: Why Some Ideas Survive and Others Die](./made-to-stick.md)" by Chip Heath and Dan Heath:** 📌 Investigates what makes ideas memorable and shareable, relevant for crafting content that resonates with an audience.  
 * 🎤 **"Talk Like TED: The 9 Public-Speaking Secrets of the World's Top Minds" by Carmine Gallo:** 🗣️ Analyzes effective communication and storytelling techniques used in successful TED Talks, useful for anyone needing to present ideas compellingly.  
-* 🧠 **"[Thinking, Fast and Slow](./thinking-fast-and-slow.md)" by Daniel Kahneman:** 🤔 Explores the two systems driving human thought and decision-making, offering insights into how audiences process information and make judgments.  
+* 🧠 **[Thinking, Fast and Slow](./thinking-fast-and-slow.md) by Daniel Kahneman:** 🤔 Explores the two systems driving human thought and decision-making, offering insights into how audiences process information and make judgments.  
 * 🤝 **"[Never Split The Difference](./never-split-the-difference.md): Negotiating As If Your Life Depended On It" by Chris Voss:** ⚖️ While focused on negotiation, it provides powerful insights into human psychology, empathy, and influence, applicable to audience engagement.  
   
 ## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  

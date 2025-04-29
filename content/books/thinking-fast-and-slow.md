@@ -65,7 +65,7 @@ tags:
     * 🚀 Presents a counter-narrative emphasizing how 🧑‍🤝‍🧑 human progress and 💰 market forces often reflect ✅ rational behavior, 🤔 challenging the focus on bias.  
   
 - 📖 **Fiction Incorporating Related Ideas:**  
-  - 🤪 **Catch-22** by Joseph Heller  
+  - **[🔁🤪 Catch-22](./catch-22.md)** by Joseph Heller  
     * 🎭 A satirical novel that encapsulates the absurdity of human logic and the pervasiveness of irrational decision-making in a bureaucratic setting. 🏢 😵‍💫  
   
 ### Final Thoughts 🤔  

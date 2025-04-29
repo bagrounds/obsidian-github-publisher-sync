@@ -69,9 +69,9 @@ tags:
   
 ### ⚖️ Contrasting Perspectives (Alternative Communication/Relationship Models)  
   
-* 🗣️ **Crucial Conversations: Tools for Talking When Stakes Are High** by Kerry Patterson, Joseph Grenny, Ron McMillan, Al Switzler: 🗣️ Focuses on high-stakes dialogue, offering structured techniques that differ from NVC's core feeling/need focus but share the goal of productive conversation.  
+* **[🧰💬 Crucial Conversations: Tools for Talking When Stakes Are High](./crucial-conversations-tools-for-talking-when-stakes-are-high.md)** by Kerry Patterson, Joseph Grenny, Ron McMillan, Al Switzler: 🗣️ Focuses on high-stakes dialogue, offering structured techniques that differ from NVC's core feeling/need focus but share the goal of productive conversation.  
 * 🗣️ **Difficult Conversations: How to Discuss What Matters Most** by Douglas Stone, Bruce Patton, Sheila Heen: 🏛️ From the Harvard Negotiation Project, this book dissects difficult conversations into three layers (What Happened, Feelings, Identity) offering a different analytical framework.  
-* 🤝 **Getting to Yes: Negotiating Agreement Without Giving In** by Roger Fisher, William Ury, Bruce Patton: 🤝 A classic text on interest-based negotiation, contrasting with NVC's emphasis on needs and empathy, though potentially complementary in finding solutions.  
+* **[👉🤝 Getting to Yes: Negotiating Agreement Without Giving In](./getting-to-yes-negotiating-agreement-without-giving-in.md)** by Roger Fisher, William Ury, Bruce Patton: 🤝 A classic text on interest-based negotiation, contrasting with NVC's emphasis on needs and empathy, though potentially complementary in finding solutions.  
 * 🔥 **Fierce Conversations: Achieving Success at Work and in Life One Conversation at a Time** by Susan Scott: 🗣️ Emphasizes radical honesty and confronting issues directly, which can contrast with NVC's careful framing but shares the goal of authenticity.  
   
 ### 🎨 Creatively Related (Broader Themes: Empathy, Conflict, Mindfulness, Relationships)  

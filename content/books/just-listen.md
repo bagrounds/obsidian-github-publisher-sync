@@ -100,7 +100,7 @@ Active, empathetic listening transforms every interaction—by truly hearing and
   
 #### Additional Book Recommendations 📖  
 - **Best Alternate Book on the Same Topic:**    
-  - *Crucial Conversations* by Kerry Patterson et al.    
+  - [🧰💬 Crucial Conversations: Tools for Talking When Stakes Are High](./crucial-conversations-tools-for-talking-when-stakes-are-high.md) by Kerry Patterson et al.    
     - Explores techniques for engaging in high-stakes dialogue with clarity and composure.  
   
 - **Best Book Tangentially Related:**    

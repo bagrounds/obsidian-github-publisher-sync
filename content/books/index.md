@@ -7,7 +7,7 @@ URL: https://bagrounds.org/books
 backlinks: false
 ---
 [Home](../index.md)  
-# 📚 Books (338)  
+# 📚 Books (340)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [🧑‍🤝‍🧑📈 10 to 25: The Science of Motivating Young People: A Groundbreaking Approach to Leading the Next Generation - And Making Your Own Life Easier](./10-to-25-the-science-of-motivating-young-people-a-groundbreaking-approach-to-leading-the-next-generation-and-making-your-own-life-easier.md)  
 - [👁️ 1984](./1984.md)  
@@ -204,6 +204,7 @@ backlinks: false
 - [Principles of Neuropsychology](./principles-of-neuropsychology.md)  
 - [Probabilistic Reasoning in Intelligent Systems](./probabilistic-reasoning-in-intelligent-systems.md)  
 - [🎲🧮 Probability Theory: The Logic of Science](./probability-theory.md)  
+- [🧐🕹️🔁 Psycho-Cybernetics: A New Way to Get More Living Out of Life](./psycho-cybernetics-a-new-way-to-get-more-living-out-of-life.md)  
 - [Purposeful Performance: The Secret Mix of Connecting, Leading, and Succeeding](./purposeful-performance.md)  
 - [Range](./range.md)  
 - [🤝🐾 Rapport: The Four Ways to Read People](./rapport.md)  
@@ -319,6 +320,7 @@ backlinks: false
 - [The Tyranny of Metrics](./the-tyranny-of-metrics.md)  
 - [⬆️💪 The Upside of Stress: Why Stress Is Good for You, and How to Get Good at It](./the-upside-of-stress-why-stress-is-good-for-you-and-how-to-get-good-at-it.md)  
 - [The Upswing](./the-upswing.md)  
+- [🧠📖 The User's Guide to the Brain: Perception, Attention, and the Four Theaters of the Mind](./the-users-guide-to-the-brain-perception-attention-and-the-four-theaters-of-the-mind.md)  
 - [🪖🎨 The War of Art](./the-war-of-art.md)  
 - [🕳️🧠👶🏽 The Whole-Brain Child: 12 Revolutionary Strategies to Nurture Your Child's Developing Mind](./the-whole-brain-child.md)  
 - [🧘🏋️ The Willpower Instinct: How Self-Control Works, Why It Matters, and What You Can Do to Get More of It](./the-willpower-instinct.md)  

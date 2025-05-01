@@ -39,7 +39,7 @@ share: true
 * **[🌴🧘🏼‍♀️ Do Nothing: How to Break Away from Overworking, Overdoing, and Underliving](./do-nothing-how-to-break-away-from-overworking-overdoing-and-underliving.md)** by Celeste Headlee: Argues against the constant drive for productivity and advocates for reclaiming time for true leisure and connection. 🤝 Similar themes are explored in Jenny Odell's *How to Do Nothing*.  
 * 🎯 **Essentialism: The Disciplined Pursuit of Less** by Greg McKeown: Focuses on identifying what is truly essential and eliminating the rest, allowing for deeper focus and contribution, which aligns with prioritizing focused work and rest.  
 * 🛋️ **The Art of Rest: How to Find Respite in the Modern Age** by Claudia Hammond: Based on a large survey, this book explores various effective methods of resting and their benefits.  
-* 😴 **Why We Sleep: Unlocking the Power of Sleep and Dreams** by Matthew Walker: A deep dive into the science of sleep and its critical importance for physical and mental health, productivity, and creativity, reinforcing Pang's points on sleep and naps.  
+* **[😴💭 Why We Sleep: Unlocking the Power of Sleep and Dreams](./why-we-sleep-unlocking-the-power-of-sleep-and-dreams.md)** by Matthew Walker: A deep dive into the science of sleep and its critical importance for physical and mental health, productivity, and creativity, reinforcing Pang's points on sleep and naps.  
   
 ### ⚔️ Contrasting Books (Focus on Hustle, Grit, Intense Effort)  
   

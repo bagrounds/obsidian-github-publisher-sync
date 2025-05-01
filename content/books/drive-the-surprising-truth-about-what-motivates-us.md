@@ -1,14 +1,14 @@
 ---
 share: true
 aliases:
-  - "Drive: The Surprising Truth About What Motivates Us"
-title: "Drive: The Surprising Truth About What Motivates Us"
+  - "🏎️⛽ Drive: The Surprising Truth About What Motivates Us"
+title: "🏎️⛽ Drive: The Surprising Truth About What Motivates Us"
 URL: https://bagrounds.org/books/drive-the-surprising-truth-about-what-motivates-us
 Author: 
 tags: 
 ---
 [Home](../index.md) > [Books](./index.md)  
-# Drive: The Surprising Truth About What Motivates Us  
+# 🏎️⛽ Drive: The Surprising Truth About What Motivates Us  
 ## 🤖 AI Summary  
 ### Drive: The Surprising Truth About What Motivates Us 🚗  
 **TL;DR:** Intrinsic motivation, driven by autonomy, mastery, and purpose, significantly outperforms extrinsic motivation (rewards and punishments) for complex, creative, and long-term tasks.  

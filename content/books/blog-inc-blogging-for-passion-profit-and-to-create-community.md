@@ -70,7 +70,7 @@ The book explores several core areas of blogging:
 * **🎨 Creative Confidence** by Tom Kelley & David Kelley: 📖 A guide to unlocking creative potential, useful for generating blog ideas and overcoming creative blocks.  
 * **[🌍✍🏿 Everybody Writes: Your Go-To Guide to Creating Ridiculously Good Content](./everybody-writes.md)** by Ann Handley: 📖 A go-to guide for improving writing skills for online content, emphasizing quality and clarity.  
 * **🌟 Superfans** by Pat Flynn: 📖 Focuses on building a loyal audience and dedicated fanbase, essential for long-term blogging success.  
-* **👩‍💼 #GIRLBOSS** by Sophia Amoruso: 📖 An inspirational (though sometimes controversial) story about building an online business from scratch.  
+* 👩‍💼 `#`GIRLBOSS by Sophia Amoruso: 📖 An inspirational (though sometimes controversial) story about building an online business from scratch.  
 * **🤝 Get Together: How to Build a Community With Your People** by Bailey Richardson, Kevin Huynh, Kai Elmer Sotto: 📖 Offers practical steps and case studies for building communities around shared interests.  
   
 ## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  

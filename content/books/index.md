@@ -310,7 +310,7 @@ backlinks: false
 - [🥼🛡️ The Scientific Attitude: Defending Science from Denial, Fraud, and Pseudoscience](./the-scientific-attitude.md)  
 - [👨‍🚀 The Self-Driven Child: The 🔬 Science and 🤔 Sense of Giving Your Kids More 🕹️ Control Over Their Lives](./the-self-driven-child.md)  
 - [👤🧬 The Selfish Gene](./the-selfish-gene.md)  
-- [The Signal and the Noise: Why So Many Predictions Fail - but Some Don't](./the-signal-and-the-noise.md)  
+- [📡🌫️🔮🎲 The Signal and the Noise: Why So Many Predictions Fail - but Some Don't](./the-signal-and-the-noise.md)  
 - [The Sixth Extinction](./the-sixth-extinction.md)  
 - [The Staff Engineer's Path](./the-staff-engineers-path.md)  
 - [The Talent Code](./the-talent-code.md)  

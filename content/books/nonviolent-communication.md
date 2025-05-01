@@ -78,13 +78,11 @@ tags:
   
 * ❤️‍🩹 **Daring Greatly: How the Courage to Be Vulnerable Transforms the Way We Live, Love, Parent, and Lead** by Brené Brown: 💖 Explores vulnerability, shame, and empathy – concepts highly relevant to the emotional honesty NVC encourages.  
 * **[🧑‍❤️‍🧑🔗 Attached: The New Science of Adult Attachment and How It Can Help You Find - and Keep - Love](./attached-the-new-science-of-adult-attachment-and-how-it-can-help-you-find-and-keep-love.md)** by Amir Levine & Rachel S.F. Heller: 💔 Understanding attachment styles provides context for relationship dynamics that NVC skills can help navigate.  
-* 🧘 **Mindfulness** themed books (e.g., by Thich Nhat Hanh, Jon Kabat-Zinn): 🙏 Mindfulness practices enhance the self-awareness and presence needed to apply NVC effectively. *📝 Example: Full Catastrophe Living* by Jon Kabat-Zinn.  
+* 🧘 **Mindfulness** themed books (e.g., by Thich Nhat Hanh, Jon Kabat-Zinn): 🙏 Mindfulness practices enhance the self-awareness and presence needed to apply NVC effectively. 📝 Example: [🌪️🧘‍♂️ Full Catastrophe Living: Using the Wisdom of Your Body and Mind to Face Stress, Pain, and Illness](./full-catastrophe-living.md) by Jon Kabat-Zinn.  
 * 🧠 **The Body Keeps the Score: Brain, Mind, and Body in the Healing of Trauma** by Bessel van der Kolk: 💔 Offers deep insights into how trauma affects individuals, relevant for understanding intense emotional reactions sometimes encountered in conflict.  
 * 🧠 **Emotional Intelligence 2.0** by Travis Bradberry & Jean Greaves: 🧠 Focuses broadly on understanding and managing emotions in oneself and others, a foundation for NVC.  
 * ☮️ **[🤝🧘 Everything Is Workable: A Zen Approach to Conflict Resolution](./everything-is-workable.md)** by Diane Musho Hamilton: 🧘 Integrates Zen principles like mindfulness and non-judgment into conflict resolution, offering a complementary spiritual and practical perspective.  
 * 🕊️ **The Mindful Guide to Conflict Resolution** by Rosalie Puiman: 🧘 Directly combines mindfulness techniques with conflict resolution strategies.  
   
-  
 ## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
-> Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Nonviolent Communication. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text..  
-  
+> Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Nonviolent Communication. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

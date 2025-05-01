@@ -1,16 +1,14 @@
 ---
 share: true
 aliases:
-  - Willpower
-title: Willpower
+  - "💪📈 Willpower: Rediscovering the Greatest Human Strength"
+title: "💪📈 Willpower: Rediscovering the Greatest Human Strength"
 URL: https://bagrounds.org/books/Willpower
 Author: "[[Roy Baumeister]]"
 tags: 
 ---
 [Home](../index.md) > [Books](./index.md)  
-# Willpower  
-_Rediscovering the Greatest Human Strength_  
-  
+# 💪📈 Willpower: Rediscovering the Greatest Human Strength  
 ## 🤖 AI Summary  
 ### 📖 Book Report: Willpower  
   
@@ -68,21 +66,21 @@ The book presents willpower not as an abstract virtue 😇, but as a tangible, p
 * **Best Tangentially Related Book:** "[Thinking, Fast and Slow](./thinking-fast-and-slow.md)" by Daniel Kahneman 🧠. This book explores the cognitive biases and limitations that affect decision-making 💡, including those related to self-control 🚦.  
 * **Best Diametrically Opposed Book:** "The Undisciplined Entrepreneur" by Rasmus Ankersen 💥. While not directly opposed, it promotes the idea that sometimes breaking rules 🚧 and being less structured can lead to success 🚀, which contrasts with the focus on self-discipline 🧘.  
 * **Best Fiction Book That Incorporates Related Ideas:** "The Martian" by Andy Weir 🚀. This book showcases the power of determination and problem-solving under extreme pressure 🌍, emphasizing the importance of mental fortitude 💪.  
-* **Best More General Book:** "[Atomic Habits](./atomic-habits.md)" by James Clear ⚛️. This book covers many of the same concepts, but with a more general approach to habit building 🧱.  
-* **Best More Specific Book:** "[Mindset](./mindset.md): The New Psychology of Success" by Carol S. Dweck 🌱. This book focuses on the "growth mindset," a specific aspect of self-improvement that relates to willpower 📈.  
+* **Best More General Book:** [⚛️🔄 Atomic Habits](./atomic-habits.md) by James Clear. This book covers many of the same concepts, but with a more general approach to habit building 🧱.  
+* **Best More Specific Book:** [🌱🧘🏼‍♀️🏆 Mindset: The New Psychology of Success](./mindset.md) by Carol S. Dweck. This book focuses on the "growth mindset," a specific aspect of self-improvement that relates to willpower 📈.  
 * **Best More Rigorous Book:** "Self-Control in Action: Strategies for the Everyday Battle" by June Tangney, Roy Baumeister, and Angela Duckworth 🧑‍🎓. This book is more of an academic text, and goes into greater scientific detail 🔬.  
 * **Best More Accessible Book:** [🧘🏋️ The Willpower Instinct: How Self-Control Works, Why It Matters, and What You Can Do to Get More of It](./the-willpower-instinct.md) by Kelly McGonigal 🧘. This book is very easy to read, and applies willpower to everyday life 🌞.  
   
 ## 📝🐒 Human Notes  
-- Meaningful self regulation requires goals  
-- Frequent self monitoring of behavior relative to goals is critical for effective self control  
-- Willpower is a generic, finite resource  
-  - the same reserves that we use to avoid junk food or pursue a fitness goal fuel our drive to stay on task at work or stick to a new bedtime routine  
-- Glucose replenishes willpower  
-  - sweet drinks are often used in scientific experiments to demonstrate the replenishment of willpower reserves  
-  - but it may be more practical in life to habitually rely on slower dietary fuels, like protein, than to rely on the fast boost from sugary drinks  
-- Practice can improve our willpower capacity. Some examples include  
-  - Maintaining good posture  
-  - a right-handed person brushing their teeth with their left hand  
-- People with the strongest willpower tend to rely on it less often  
-  - Use willpower to proactively develop good habits and shape our environments such that we don't need much willpower to do the right thing on a regular basis  
+- 🧠 Meaningful self regulation requires goals  
+- 👁️‍🗨️ Frequent self monitoring of behavior relative to goals is critical for effective self control  
+- 💪 Willpower is a generic, finite resource  
+  - ⛽ the same reserves that we use to avoid 🍔 junk food or pursue a 🏋️‍♀️ fitness goal fuel our drive to stay on task at 💼 work or stick to a new 😴 bedtime routine  
+- 🍬 Glucose replenishes willpower  
+  - 🧪 sweet drinks are often used in scientific experiments to demonstrate the replenishment of willpower reserves  
+  - 🍎 but it may be more practical in life to habitually rely on slower dietary fuels, like 🥩 protein, than to rely on the fast boost from 🥤 sugary drinks  
+- 🏋️ Practice can improve our willpower capacity. Some examples include  
+  - 🧍 Maintaining good posture  
+  - 🦷 a right-handed person brushing their teeth with their left hand  
+- 💡 People with the strongest willpower tend to rely on it less often  
+  - ⚙️ Use willpower to proactively develop good habits and shape our environments such that we don't need much willpower to do the right thing on a regular basis.  

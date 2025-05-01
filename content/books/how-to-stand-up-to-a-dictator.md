@@ -65,7 +65,7 @@ tags:
   
 1. 📜 **The Hype Machine: How Social Media Disrupts Our Elections, Our Economy, and Our Health—and How We Must Adapt** by Sinan Aral: While acknowledging the dangers ⚠️, Aral also explores the potential benefits 👍 and complexities of social media, focusing on adaptation rather than solely confrontation.  
 2. 📜 **Frenemies: How Social Media Polarizes America** by Jaime Settle: Focuses empirically on *how* social media mechanics contribute to polarization 💔, perhaps offering a more academic 🧑‍🏫, less activist perspective than Ressa's memoir-driven account.  
-3. 📜 **#Republic: Divided Democracy in the Age of Social Media** by Cass R. Sunstein: Discusses the dangers of echo chambers 🗣️ and filter bubbles 🫧 created by personalization online 💻, focusing on the architectural aspects of division.  
+3. 📜 **\#Republic: Divided Democracy in the Age of Social Media** by Cass R. Sunstein: Discusses the dangers of echo chambers 🗣️ and filter bubbles 🫧 created by personalization online 💻, focusing on the architectural aspects of division.  
   
 ### 💡 Creatively Related Reads (Broader Themes, Fiction, Philosophy)  
   

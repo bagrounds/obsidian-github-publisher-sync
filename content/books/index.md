@@ -7,7 +7,7 @@ URL: https://bagrounds.org/books
 backlinks: false
 ---
 [Home](../index.md)  
-# 📚 Books (341)  
+# 📚 Books (342)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [🧑‍🤝‍🧑📈 10 to 25: The Science of Motivating Young People: A Groundbreaking Approach to Leading the Next Generation - And Making Your Own Life Easier](./10-to-25-the-science-of-motivating-young-people-a-groundbreaking-approach-to-leading-the-next-generation-and-making-your-own-life-easier.md)  
 - [👁️ 1984](./1984.md)  
@@ -83,6 +83,7 @@ backlinks: false
 - [Driven to Distraction](./driven-to-distraction.md)  
 - [🏎️⛽ Drive: The Surprising Truth About What Motivates Us](./drive-the-surprising-truth-about-what-motivates-us.md)  
 - [Dynamical Systems in Neuroscience](./dynamical-systems-in-neuroscience.md)  
+- [🍎⚡ Eat for Energy: How to Beat Fatigue, Supercharge Your Mitochondria, and Unlock All-Day Energy](./eat-for-energy-how-to-beat-fatigue-supercharge-your-mitochondria-and-unlock-all-day-energy.md)  
 - [🍎🌳 Edible Forest Gardens](./edible-forest-gardens.md)  
 - [Elasticsearch: The Definitive Guide](./elasticsearch-the-definitive-guide.md)  
 - [Elements of Causal Inference: Foundations and Learning Algorithms](./elements-of-causal-inference-foundations-and-learning-algorithms.md)  

@@ -1,14 +1,14 @@
 ---
 share: true
 aliases:
-  - Wherever You Go, There You Are
-title: Wherever You Go, There You Are
+  - 👣➡️🌍 Wherever You Go, There You Are
+title: 👣➡️🌍 Wherever You Go, There You Are
 URL: https://bagrounds.org/books/wherever-you-go-there-you-are
 Author: 
 tags: 
 ---
 [Home](../index.md) > [Books](./index.md)  
-# Wherever You Go, There You Are  
+# 👣➡️🌍 Wherever You Go, There You Are  
 ## 📖 Book Report: Wherever You Go, There You Are  
   
 ### ✍️ Author and Publication  
@@ -55,11 +55,9 @@ tags:
   
 ## 📚 Further Reading: Exploring Mindfulness and Beyond  
   
-Here are some book recommendations categorized for further exploration, building upon or contrasting with the themes in "Wherever You Go, There You Are":  
-  
 ### 🧘‍♀️ Similar Mindfulness Guides (Practical & Foundational)  
   
-* 📖 **Full Catastrophe Living (Revised Edition)** by Jon Kabat-Zinn: His earlier, more comprehensive work detailing the MBSR program, focusing on using mindfulness for stress, pain, and illness.  
+* 📖 **[🌪️🧘‍♂️ Full Catastrophe Living: Using the Wisdom of Your Body and Mind to Face Stress, Pain, and Illness](./full-catastrophe-living.md)** by Jon Kabat-Zinn: His earlier, more comprehensive work detailing the MBSR program, focusing on using mindfulness for stress, pain, and illness.  
 * 📖 **Mindfulness for Beginners** by Jon Kabat-Zinn: A concise introduction, often accompanied by guided meditations.  
 * 📖 **The Miracle of Mindfulness** by Thich Nhat Hanh: A classic introduction by the revered Zen master, emphasizing mindful breathing and daily activities.  
 * 📖 **Peace is Every Step** by Thich Nhat Hanh: Short, accessible teachings on finding peace in everyday moments.  
@@ -90,7 +88,7 @@ Here are some book recommendations categorized for further exploration, building
 * 📖 **Presence: Bringing Your Boldest Self to Your Biggest Challenges** by Amy Cuddy: Focuses on embodying confidence and presence in high-stakes situations, drawing on social psychology.  
 * 📖 **The Untethered Soul** by Michael A. Singer: Explores consciousness, identity, and freeing oneself from limiting thoughts and emotions.  
 * 📖 **Forest Bathing** by Dr. Qing Li: Explores the Japanese practice of Shinrin-yoku (mindfully immersing oneself in nature) for health and well-being.  
-* 📖 **The Creative Act: A Way of Being** by Rick Rubin: While focused on creativity, it delves deeply into awareness, presence, and connecting with inner wisdom, themes resonant with mindfulness.  
+* 📖 **[The Creative Act: A Way of Being](./the-creative-act.md)** by Rick Rubin: While focused on creativity, it delves deeply into awareness, presence, and connecting with inner wisdom, themes resonant with mindfulness.  
   
   
 ## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  

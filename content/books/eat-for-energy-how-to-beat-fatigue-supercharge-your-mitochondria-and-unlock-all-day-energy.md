@@ -69,7 +69,7 @@ share: true
   
 ### ✨ Creatively Related Books (Broader Health/Biohacking/Lifestyle)  
   
-* 📅 **The Circadian Code** by Satchin Panda, PhD: Deep dives into the science of circadian rhythms and how aligning daily schedules (eating, sleeping, light exposure) can optimize health, energy, and weight.  
+* **[🌄⏳ The Circadian Code: Lose Weight, Supercharge Your Energy, and Transform Your Health from Morning to Midnight](./the-circadian-code.md)** by Satchin Panda, PhD: Deep dives into the science of circadian rhythms and how aligning daily schedules (eating, sleeping, light exposure) can optimize health, energy, and weight.  
 * 🚀 **Boundless** by Ben Greenfield: A comprehensive biohacking guide covering a vast range of topics including brain optimization, body performance, anti-aging, sleep, nutrition, and more.  
 * 💡 **The Ultimate Guide To Red Light Therapy** by Ari Whitten: Another book by Whitten focusing on a specific biohacking modality (light therapy) relevant to cellular health and energy.  
 * 🛠️ **Biohacking for Life** by Tony Wrighton: An accessible guide to biohacking for optimizing sleep, energy, and overall wellness using science-backed techniques.  

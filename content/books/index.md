@@ -7,7 +7,7 @@ URL: https://bagrounds.org/books
 backlinks: false
 ---
 [Home](../index.md)  
-# 📚 Books (345)  
+# 📚 Books (346)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [🧑‍🤝‍🧑📈 10 to 25: The Science of Motivating Young People: A Groundbreaking Approach to Leading the Next Generation - And Making Your Own Life Easier](./10-to-25-the-science-of-motivating-young-people-a-groundbreaking-approach-to-leading-the-next-generation-and-making-your-own-life-easier.md)  
 - [👁️ 1984](./1984.md)  
@@ -295,6 +295,7 @@ backlinks: false
 - [⛰️➡️🧘 The Mountain is You: Transforming Self-Sabotage into Self-Mastery](./the-mountain-is-you.md)  
 - [🦄👤🗓️ The Mythical Man-Month: Essays on Software Engineering](./the-mythical-man-month.md)  
 - [🏔️ The Myth of Sisyphus](./the-myth-of-sisyphus.md)  
+- [🧠❤️🔄 The Neuroscience of Change: A Compassion-Based Program for Personal Transformation](./the-neuroscience-of-change-a-compassion-based-program-for-personal-transformation.md)  
 - [The New Economics](./the-new-economics.md)  
 - [The Nordic Theory of Everything](./the-nordic-theory-of-everything.md)  
 - [⏱️💡📈 The One Hour Content Plan: The Solopreneur's Guide to a Year's Worth of Blog Post Ideas in 60 Minutes and Creating Content That Hooks and Sells](./the-one-hour-content-plan-the-solopreneurs-guide-to-a-years-worth-of-blog-post-ideas-in-60-minutes-and-creating-content-that-hooks-and-sells.md)  

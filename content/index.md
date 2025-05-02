@@ -16,7 +16,7 @@ title: 🏡 Home
 - [2025-04-30 | 🍀❤️‍🔥 Intentional 2 🧘🎯](./reflections/2025-04-30.md)  
 - [2025-04-29 | 🏢📋 Bureaucracy 🤪⁉️](./reflections/2025-04-29.md)  
 - [2025-04-28 | 🏔️ Discipline 🧘](./reflections/2025-04-28.md)  
-- [2025-04-27 | 🍀❤️‍🔥 Intentional 🧘🎯](./reflections/2025-04-27.md)  
+- [2025-04-27 | 🍀❤️‍🔥 Intentional 1 🧘🎯](./reflections/2025-04-27.md)  
 - [2025-04-26 | 🌿 Botany of 🫂 Attachment](./reflections/2025-04-26.md)  
 - [2025-04-25 | 🤝 Conform 😇 | 🕹️ Control 🧘 | ✍️ Create 🕸️](./reflections/2025-04-25.md)  
 - [2025-04-24 | ⚛️ℹ️ Strange 🧘🏔️](./reflections/2025-04-24.md)  

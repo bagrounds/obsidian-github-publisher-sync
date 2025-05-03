@@ -29,7 +29,7 @@ tags:
   
 ### ⏰ Circadian Rhythms  
 * [🌄⏳ The Circadian Code: Lose Weight, Supercharge Your Energy, and Transform Your Health from Morning to Midnight](../books/the-circadian-code.md) by Satchin Panda  
-* The Inner Clock: Living in Sync with Our Circadian Rhythms by Lynne Peeples  
+* [⏰👤 The Inner Clock: Living in Sync with Our Circadian Rhythms](../books/the-inner-clock-living-in-sync-with-our-circadian-rhythms.md) by Lynne Peeples  
   
 ### 😴 Sleep  
 * [😴💭 Why We Sleep: Unlocking the Power of Sleep and Dreams](../books/why-we-sleep-unlocking-the-power-of-sleep-and-dreams.md) by Matthew Walker  

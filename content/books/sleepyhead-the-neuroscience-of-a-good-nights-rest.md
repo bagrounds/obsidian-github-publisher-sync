@@ -49,7 +49,7 @@ The book delves into the complex science of sleep, 😴 exploring its fundamenta
     * ✨ *Focus:* A comprehensive and influential overview of sleep science, emphasizing the critical importance of sleep for all aspects of health and performance.  
 * **The Nocturnal Brain: Nightmares, Neuroscience, and the Secret World of Sleep** by Guy Leschziner  
     * 👻 *Focus:* Explores the stranger side of sleep through neurological case studies of various sleep disorders, written by a neurologist.  
-* **The Sleep Solution: Why Your Sleep is Broken and How to Fix It** by W. Chris Winter  
+* **[😴🛠️ The Sleep Solution: Why Your Sleep is Broken and How to Fix It](./the-sleep-solution-why-your-sleep-is-broken-and-how-to-fix-it.md)** by W. Chris Winter  
     * 🛠️ *Focus:* Practical advice and insights from a sleep specialist, aimed at helping readers understand and improve their own sleep.  
   
 ### 🧬 Contrasting/Complementary Reads (Different Angles on Health & Biology)  

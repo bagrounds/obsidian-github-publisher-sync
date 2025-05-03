@@ -11,6 +11,7 @@ title: 🏡 Home
 ❔ What do 🫵 _you_ 🤔 think?  
   
 ## [🪞 Reflections](./reflections/index.md) (~Blog)  
+- [2025-05-03 | ⏰ Circadian 🌍](./reflections/2025-05-03.md)  
 - [2025-05-02 | 🥱 2 Tired 😴](./reflections/2025-05-02.md)  
 - [2025-05-01 | 🥱 1 Tired 😴](./reflections/2025-05-01.md)  
 - [2025-04-30 | 🍀❤️‍🔥 Intentional 2 🧘🎯](./reflections/2025-04-30.md)  
@@ -20,7 +21,6 @@ title: 🏡 Home
 - [2025-04-26 | 🌿 Botany of 🫂 Attachment](./reflections/2025-04-26.md)  
 - [2025-04-25 | 🤝 Conform 😇 | 🕹️ Control 🧘 | ✍️ Create 🕸️](./reflections/2025-04-25.md)  
 - [2025-04-24 | ⚛️ℹ️ Strange 🧘🏔️](./reflections/2025-04-24.md)  
-- [2025-04-23 | 💭 Think ⚡ Power 🌱 Plant](./reflections/2025-04-23.md)  
   
   
 ## [📄  Articles](./articles/index.md)  

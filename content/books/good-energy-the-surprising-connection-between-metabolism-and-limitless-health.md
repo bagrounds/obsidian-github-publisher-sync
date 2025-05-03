@@ -74,7 +74,7 @@ share: true
   
 * **[😴💭 Why We Sleep: Unlocking the Power of Sleep and Dreams](./why-we-sleep-unlocking-the-power-of-sleep-and-dreams.md) by Matthew Walker, PhD:** The seminal work on the critical importance of sleep for every aspect of health, including metabolism.  
 * **[🌄⏳ The Circadian Code: Lose Weight, Supercharge Your Energy, and Transform Your Health from Morning to Midnight](./the-circadian-code.md) by Satchin Panda, PhD:** Focuses on aligning lifestyle (especially eating patterns) with natural circadian rhythms for optimal health.  
-* 🛌 **_The Sleep Solution_ by W. Chris Winter, MD:** Practical advice on overcoming sleep problems.  
+* **[😴🛠️ The Sleep Solution: Why Your Sleep is Broken and How to Fix It](./the-sleep-solution-why-your-sleep-is-broken-and-how-to-fix-it.md) by W. Chris Winter, MD:** Practical advice on overcoming sleep problems.  
   
 **🧘 Stress Management:**  
   

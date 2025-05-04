@@ -7,7 +7,7 @@ URL: https://bagrounds.org/books
 backlinks: false
 ---
 [Home](../index.md)  
-# 📚 Books (348)  
+# 📚 Books (349)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [🧑‍🤝‍🧑📈 10 to 25: The Science of Motivating Young People: A Groundbreaking Approach to Leading the Next Generation - And Making Your Own Life Easier](./10-to-25-the-science-of-motivating-young-people-a-groundbreaking-approach-to-leading-the-next-generation-and-making-your-own-life-easier.md)  
 - [👁️ 1984](./1984.md)  
@@ -336,6 +336,7 @@ backlinks: false
 - [Thinking in Systems](./thinking-in-systems.md)  
 - [🤥📣 This Is Not Propaganda: Adventures in the War Against Reality](./this-is-not-propaganda.md)  
 - [💭🦠 Thought Contagion: How Belief Spreads Through Society](./thought-contagion.md)  
+- [⏱️🍎 Time Restricted Eating: A Look into the Lifestyle](./time-restricted-eating-a-look-into-the-lifestyle.md)  
 - [Tiny Habits](./tiny-habits.md)  
 - [Transgender History](./transgender-history.md)  
 - [🤝📜 Trust: A History](./trust-a-history.md)  

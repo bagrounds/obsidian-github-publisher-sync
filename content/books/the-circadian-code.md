@@ -41,7 +41,7 @@ share: true
 * 📅 **Change Your Schedule, Change Your Life** by Dr. Suhas Kshirsagar: Explores harnessing the power of the body's clock, drawing from Ayurvedic principles alongside modern science to optimize health, weight, and sleep.  
 * ⏰ **Life Time: The New Science of the Body Clock, and How It Can Revolutionize Your Sleep and Health** by Russell Foster: Another exploration of circadian biology and its essential role in health and sleep.  
 * **[⏰👤 The Inner Clock: Living in Sync with Our Circadian Rhythms](./the-inner-clock-living-in-sync-with-our-circadian-rhythms.md)** by Lynne Peeples: Discusses the science of internal clocks and how modern life disrupts them, offering ways to reclaim natural rhythms for better health.  
-* ⏱️ **Time Restricted Eating: A Look into the Lifestyle** by Dr. Julie Wei-Shatzel: Focuses specifically on the practical application and benefits of TRE aligned with circadian rhythms.  
+* **[⏱️🍎 Time Restricted Eating: A Look into the Lifestyle](./time-restricted-eating-a-look-into-the-lifestyle.md)** by Dr. Julie Wei-Shatzel: Focuses specifically on the practical application and benefits of TRE aligned with circadian rhythms.  
   
 ### ⚖️ Contrasting Books (Different Approaches to Health/Diet)  
 * 🥗 **Books Promoting Frequent Small Meals:** Many traditional diet plans advocate for eating small meals or snacks every few hours to "keep metabolism high." This contrasts sharply with TRE's emphasis on a consolidated eating window and an extended fasting period.  

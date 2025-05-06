@@ -54,7 +54,7 @@ share: true
   
 ### ➕ Similar Books (Focus on Energy/Mitochondria/Nutrition)  
   
-* 🧬 **Mitochondria and the Future of Medicine** by Lee Know: Explores the crucial role of mitochondria in health, disease, and aging.  
+* **[🔋⚕️⏳ Mitochondria and the Future of Medicine: The Key to Understanding Disease, Chronic Illness, Aging, and Life Itself](./mitochondria-and-the-future-of-medicine-the-key-to-understanding-disease-chronic-illness-aging-and-life-itself.md)** by Lee Know: Explores the crucial role of mitochondria in health, disease, and aging.  
 * 👨‍⚕️ **Mitochondrial Dysfunction: A Functional Medicine Approach** by Michael T. Chang: Focuses on diagnosing and treating mitochondrial issues to alleviate fatigue, fat gain, and brain fog using a functional medicine lens.  
 * 🤕 **Diagnosis and Treatment of Chronic Fatigue Syndrome and Myalgic Encephalitis: It's Mitochondria, Not Hypochondria** by Dr. Sarah Myhill: Argues that mitochondrial malfunction is central to CFS/ME and outlines recovery programs.  
 * 🧠 **Head Strong** by Dave Asprey: Focuses on boosting brain energy by optimizing mitochondrial function, using "Bulletproof" diet principles and biohacking techniques.  
@@ -74,7 +74,7 @@ share: true
 * 💡 **The Ultimate Guide To Red Light Therapy** by Ari Whitten: Another book by Whitten focusing on a specific biohacking modality (light therapy) relevant to cellular health and energy.  
 * 🛠️ **Biohacking for Life** by Tony Wrighton: An accessible guide to biohacking for optimizing sleep, energy, and overall wellness using science-backed techniques.  
 * ⏰ **Change Your Schedule, Change Your Life** by Suhas Kshirsagar: Blends Ayurvedic principles with modern science to align lifestyle with natural body rhythms for better health and energy.  
-* 🕰️ **The Inner Clock** by Lynne Peeples: Explores the science of circadian rhythms and how modern life disrupts them, offering insights into resetting internal clocks for better health.  
+* **[⏰👤 The Inner Clock: Living in Sync with Our Circadian Rhythms](./the-inner-clock-living-in-sync-with-our-circadian-rhythms.md)** by Lynne Peeples: Explores the science of circadian rhythms and how modern life disrupts them, offering insights into resetting internal clocks for better health.  
 * 🧬 **Biohacker's Handbook** by Olli Sovijärvi, et al.: A detailed guide covering various biohacking domains like sleep, nutrition, exercise, work, and mind.  
   
 ## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  

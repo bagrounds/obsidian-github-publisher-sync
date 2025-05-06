@@ -30,7 +30,7 @@ URL: https://bagrounds.org/bot-chats/science-of-dentistry
 ## 💬 Prompt 2  
 > 🌐 A broad overview  
   
-✅ Okay, for a broad overview of the 🧪 science underpinning dentistry, I'd recommend **"Ten Cate's Oral Histology: Development, Structure, and Function"** 📖 by Antonio Nanci and Paul R. Ten Cate.  
+✅ Okay, for a broad overview of the 🧪 science underpinning dentistry, I'd recommend **[🦷👶 Ten Cate's Oral Histology: Development, Structure, and Function](../books/ten-cates-oral-histology-development-structure-and-function.md)** 📖 by Antonio Nanci and Paul R. Ten Cate.  
   
 🔬 While the title might suggest a narrow focus on histology, this book provides a fantastic foundation in the basic sciences that are crucial for understanding all aspects of dentistry. 🦷 It delves into:  
   

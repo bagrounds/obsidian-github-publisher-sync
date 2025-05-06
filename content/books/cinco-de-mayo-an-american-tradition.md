@@ -13,7 +13,7 @@ share: true
 ### ℹ️ Overview  
   
 * 🧑‍🏫 **Author:** David E. Hayes-Bautista.  
-* 📜 **Core Argument:** This book challenges the widespread assumption that Cinco de Mayo is a major Mexican national holiday transplanted to the United States. 🇺🇸 ,,, Instead, Hayes-Bautista compellingly argues that Cinco de Mayo, as celebrated in the U.S., is fundamentally an *American* holiday, created by Latinos (both native-born Californios and immigrants from Mexico and Latin America) in California during the American Civil War era. ⚔️ ,,,,,, It highlights the stark contrast between the holiday's broad celebration across the U.S. 🎊 and its relatively minor observance in Mexico, mostly limited to the state of Puebla. 🇲🇽  
+* 📜 **Core Argument:** This book challenges the widespread assumption that Cinco de Mayo is a major Mexican national holiday transplanted to the United States. 🇺🇸 ,,, Instead, Hayes-Bautista compellingly argues that Cinco de Mayo, as celebrated in the U.S., is fundamentally an *American* holiday, created by Latinos (both native-born Californios and immigrants from Mexico and Latin America) in California during the American Civil War era. ⚔️ It highlights the stark contrast between the holiday's broad celebration across the U.S. 🎊 and its relatively minor observance in Mexico, mostly limited to the state of Puebla. 🇲🇽  
   
 ### 🔑 Key Arguments  
   

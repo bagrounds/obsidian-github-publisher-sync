@@ -7,7 +7,7 @@ URL: https://bagrounds.org/books
 backlinks: false
 ---
 [Home](../index.md)  
-# 📚 Books (349)  
+# 📚 Books (350)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [🧑‍🤝‍🧑📈 10 to 25: The Science of Motivating Young People: A Groundbreaking Approach to Leading the Next Generation - And Making Your Own Life Easier](./10-to-25-the-science-of-motivating-young-people-a-groundbreaking-approach-to-leading-the-next-generation-and-making-your-own-life-easier.md)  
 - [👁️ 1984](./1984.md)  
@@ -247,6 +247,7 @@ backlinks: false
 - [🌞🌬️🌊🌋 Sustainable Energy - Without the Hot Air](./sustainable-energy-without-the-hot-air.md)  
 - [Sync: How Order Emerges From Chaos In The Universe, Nature, And Daily Life](./sync.md)  
 - [Taking Charge of Adult ADHD by Russell Barkley](./taking-charge-of-adult-adhd.md)  
+- [🦷👶 Ten Cate's Oral Histology: Development, Structure, and Function](./ten-cates-oral-histology-development-structure-and-function.md)  
 - [The $100 Startup](./the-100-dollar-startup.md)  
 - [The 2-Hour Job Search](./the-2-hour-job-search.md)  
 - [The 48 Laws of Power](./the-48-laws-of-power.md)  

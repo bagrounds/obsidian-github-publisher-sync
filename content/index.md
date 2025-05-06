@@ -11,7 +11,7 @@ title: 🏡 Home
 ❔ What do 🫵 _you_ 🤔 think?  
   
 ## [🪞 Reflections](./reflections/index.md) (~Blog)  
-- [2025-05-05 | 🦷 Dentistry 🔬](./reflections/2025-05-05.md)  
+- [2025-05-05 | 🦷🔬 Cinco de Dientes 🇲🇽🇺🇸](./reflections/2025-05-05.md)  
 - [2025-05-04 | 🍽️ Intermittent ⌛](./reflections/2025-05-04.md)  
 - [2025-05-03 | ⏰ Circadian 🌍](./reflections/2025-05-03.md)  
 - [2025-05-02 | 🥱 2 Tired 😴](./reflections/2025-05-02.md)  

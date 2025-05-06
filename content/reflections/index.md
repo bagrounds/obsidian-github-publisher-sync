@@ -7,7 +7,9 @@ URL: https://bagrounds.org/reflections
 backlinks: false
 ---
 [Home](../index.md)  
-# 🪞 Reflections (170)  
+# 🪞 Reflections (172)  
+- [2025-05-05 | 🦷 Dentistry 🔬](./2025-05-05.md)  
+- [2025-05-04 | 🍽️ Intermittent ⌛](./2025-05-04.md)  
 - [2025-05-03 | ⏰ Circadian 🌍](./2025-05-03.md)  
 - [2025-05-02 | 🥱 2 Tired 😴](./2025-05-02.md)  
 - [2025-05-01 | 🥱 1 Tired 😴](./2025-05-01.md)  

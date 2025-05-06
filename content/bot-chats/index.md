@@ -7,7 +7,7 @@ URL: https://bagrounds.org/bot-chats
 backlinks: false
 ---
 [Home](../index.md)  
-# 🤖💬 Bot Chats (19)  
+# 🤖💬 Bot Chats (20)  
 - [AI Engineering Assistant Technology Recommendations](./ai-engineering-assistant-technology-recommendations.md)  
 - [Android Local LLMs](./android-local-llms.md)  
 - [🕸️🪵🏅 Blogging Success](./blogging-success.md)  
@@ -25,6 +25,7 @@ backlinks: false
 - [Parenting and Infant Development Guide](./parenting-and-infant-development-guide.md)  
 - [Parenting Resources Recommendations](./parenting-resources-recommendations.md)  
 - [Reliable News](./reliable-news.md)  
+- [🦷🔬 Science of Dentistry](./science-of-dentistry.md)  
 - [Special Characters In Logs](./special-characters-in-logs.md)  
 - [Summarize The Happiest Baby On The Block](./summarize-the-happiest-baby-on-the-block.md)  
   

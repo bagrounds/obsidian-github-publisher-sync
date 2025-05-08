@@ -1,14 +1,14 @@
 ---
 share: true
 aliases:
-  - The Phoenix Project
-title: The Phoenix Project
+  - 🐦‍🔥💻 The Phoenix Project
+title: 🐦‍🔥💻 The Phoenix Project
 URL: https://bagrounds.org/books/the-phoenix-project
 Author: 
 tags: 
 ---
 [Home](../index.md) > [Books](./index.md)  
-# The Phoenix Project  
+# 🐦‍🔥💻 The Phoenix Project  
 ## 🤖 AI Summary  
 ### **TL;DR 🚀**  
 * **TL;DR:** "The Phoenix Project" illustrates how applying manufacturing principles (like the Theory of Constraints) to IT operations can transform a dysfunctional organization into a high-performing, competitive business by focusing on flow, feedback, and continuous improvement.  

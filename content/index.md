@@ -10,7 +10,7 @@ title: 🏡 Home
 📑 Notes, 💭 thoughts, and 🔗 Links.  
 ❔ What do 🫵 _you_ 🤔 think?  
   
-## [🪞 Reflections](./reflections/index.md) (~Blog)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (174)  
 - [2025-05-07 | 🌸🌬️ Allergies 👃🤧 | 🎲 Random 🌲 Forests](./reflections/2025-05-07.md)  
 - [2025-05-06 | 🥱 3 Tired 😴](./reflections/2025-05-06.md)  
 - [2025-05-05 | 🦷🔬 Cinco de Dientes 🇲🇽🇺🇸](./reflections/2025-05-05.md)  
@@ -23,19 +23,19 @@ title: 🏡 Home
 - [2025-04-28 | 🏔️ Discipline 🧘](./reflections/2025-04-28.md)  
   
   
-## [📄  Articles](./articles/index.md)  
+## [📄  Articles](./articles/index.md) (24)  
   
-## [📚 Books](./books/index.md)  
+## [📚 Books](./books/index.md) (354)  
   
-## [🤖💬 Bot Chats](./bot-chats/index.md)  
+## [🤖💬 Bot Chats](./bot-chats/index.md) (22)  
   
-## [👥 People](./people/index.md)  
+## [👥 People](./people/index.md) (7)  
   
-## [💾 Software](./software/index.md)  
+## [💾 Software](./software/index.md) (32)  
   
-## [🌌 Topics](./topics/index.md)  
+## [🌌 Topics](./topics/index.md) (70)  
   
-## [📺 Videos](./videos/index.md)  
+## [📺 Videos](./videos/index.md) (128)  
   
 ## 🔗 Profiles  
 - [My resume](./topics/my-resume.md)  

@@ -6,7 +6,7 @@ title: 💾 Software
 backlinks: false
 ---
 [Home](../index.md)  
-# 💾 Software (32)  
+# 💾 Software (33)  
 - [Babylon.js](./babylon.md)  
 - [CodinGame](./codingame.md)  
 - [Cursor](./cursor.md)  
@@ -36,6 +36,7 @@ backlinks: false
 - [REST](./rest.md)  
 - [Static Site Generation](./static-site-generation.md)  
 - [Termux](./termux.md)  
+- [🐍🏎️📦 uv](./uv.md)  
 - [Vensim](./vensim.md)  
 - [Zod](./zod.md)  
 - [Zodios](./zodios.md)  

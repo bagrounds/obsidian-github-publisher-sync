@@ -45,7 +45,7 @@ share: true
 **🍎 Similar (Focus on Fruit Trees & Specific Regions/Climates):**  
   
 * 🌳 **"Grow a Little Fruit Tree" by Ann Ralph:** ℹ️ Focuses on techniques for keeping fruit trees small and manageable. 🍎 Covers selection, planting, and the needs of various fruit types like stone and pome fruits, figs, and persimmons.  
-* 🌳 **"The Home Orchard: Growing Your Own Deciduous Fruit and Nut Trees" (UC ANR Publication 3485) edited by Chuck A. Ingels, Pamela M. Geisel, and Maxwell V. Norton:** ℹ️ An authoritative reference for home orchardists, covering temperate-zone deciduous fruit and nut trees with in-depth chapters on various aspects of orchard management.  
+* **[🏡🍎🌳 The Home Orchard: Growing Your Own Deciduous Fruit and Nut Trees](../../the-home-orchard-growing-your-own-deciduous-fruit-and-nut-trees.md) (UC ANR Publication 3485) edited by Chuck A. Ingels, Pamela M. Geisel, and Maxwell V. Norton:** ℹ️ An authoritative reference for home orchardists, covering temperate-zone deciduous fruit and nut trees with in-depth chapters on various aspects of orchard management.  
 * 🍎 **"Fruit Trees for Every Garden: An Organic Approach to Growing Apples, Pears, Peaches, Plums, Citrus, and More" by Orin Martin:** ℹ️ Offers extensive information on planning, organic site preparation, and fruit variety/rootstock selection, written by an experienced orchard manager and educator.  
 * ✂️ **"How to Prune Fruit Trees and Roses" by R. Sanford Martin (updated edition):** 🌳 A user-friendly guide that demystifies pruning with clear instructions and illustrations for various temperate zone fruit trees and berries.  
   

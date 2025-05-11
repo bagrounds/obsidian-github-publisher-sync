@@ -66,7 +66,7 @@ tags:
 * 🔥 **Reinventing Fire: Bold Business Solutions for the New Energy Era** by Amory B. Lovins and Rocky Mountain Institute: Focuses more optimistically on business-led solutions and efficiency gains, emphasizing market opportunities in the energy transition, often with a stronger emphasis on existing technologies.  
 * 🛢️ **The Prize: The Epic Quest for Oil, Money, and Power** by Daniel Yergin: A comprehensive history of the oil industry, essential for understanding the geopolitical and economic forces shaped by fossil fuels, providing context for the transition away from them.  
 * 🎭 **The Ministry for the Future** by Kim Stanley Robinson (Fiction): While fiction, this novel vividly explores the near-future political, economic, and social turmoil and difficult choices involved in tackling climate change globally, offering a powerful narrative contrast to purely technical analyses.  
-* 🍩 **Doughnut Economics: Seven Ways to Think Like a 21st-Century Economist** by Kate Raworth: Offers a broader framework for sustainable development, placing energy within the context of social foundations and ecological ceilings, challenging traditional economic growth paradigms.  
+* **[🍩🌍 Doughnut Economics: Seven Ways to Think Like a 21st-Century Economist](./doughnut-economics-seven-ways-to-think-like-a-21st-century-economist.md)** by Kate Raworth: Offers a broader framework for sustainable development, placing energy within the context of social foundations and ecological ceilings, challenging traditional economic growth paradigms.  
   
 ### ✨ Creatively Related (Broader Context & Specific Technologies)  
   

@@ -60,7 +60,7 @@ tags:
   
 **Additional Book Recommendations:** 📚🌟  
 * **Best Alternate Book (Same Topic):** "The Value of Everything: Making and Taking in the Global Economy" by Mariana Mazzucato 📈💰. This book also heavily critiques neoliberalism 📉🚫, and explains the importance of the states role within innovation 💡🚀.  
-* **Best Tangentially Related Book:** "Doughnut Economics: Seven Ways to Think Like a 21st-Century Economist" by Kate Raworth 🍩🌍. This book offers a compelling vision 🌈🌟 of a sustainable 🌿🌍 and equitable ⚖️🤝 economy.  
+* **Best Tangentially Related Book:** [🍩🌍 Doughnut Economics: Seven Ways to Think Like a 21st-Century Economist](./doughnut-economics-seven-ways-to-think-like-a-21st-century-economist.md) by Kate Raworth 🍩🌍. This book offers a compelling vision 🌈🌟 of a sustainable 🌿🌍 and equitable ⚖️🤝 economy.  
 * **Best Diametrically Opposed Book:** "Capitalism and Freedom" by Milton Friedman 🗽💰. This classic work defends the principles of free-market capitalism 💰📈 and limited government 🏛️🚫.  
 * **Best Fiction Book (Related Ideas):** "The Ministry for the Future" by Kim Stanley Robinson 🌍🌡️. This novel explores the challenges of climate change 🌡️🔥 and the potential for collective action 🤝👥 to address them.  
 * **Best More General Book:** "[23 Things They Don't Tell You About Capitalism](./23-things-they-dont-tell-you-about-capitalism.md)" by Ha-Joon Chang 📊🤔. This book offers a critical overview 🧐🔍 of capitalism 💰📈 and its limitations 📉🚫.  

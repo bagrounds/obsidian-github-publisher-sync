@@ -63,7 +63,7 @@ Here is the text with emojis inserted:
   
 #### Further Reading 📚  
 * **Best Alternate Book on the Same Topic:** "Macroeconomics" by William Mitchell, L. Randall Wray, and Martin Watts 📚 (More technical and comprehensive).  
-* **Best Tangentially Related Book:** "Doughnut Economics" by Kate Raworth 🌎 (Focuses on sustainable economic models).  
+* **Best Tangentially Related Book:** [🍩🌍 Doughnut Economics: Seven Ways to Think Like a 21st-Century Economist](./doughnut-economics-seven-ways-to-think-like-a-21st-century-economist.md) by Kate Raworth 🌎 (Focuses on sustainable economic models).  
 * **Best Diametrically Opposed Book:** "Economics in One Lesson" by Henry Hazlitt 💸 (Advocates for free-market principles and limited government intervention).  
 * **Best Fiction Book That Incorporates Related Ideas:** "The Ministry for the Future" by Kim Stanley Robinson 🌟 (Explores economic and social responses to climate change).  
 * **Best More General Book:** "23 Things They Don't Tell You About Capitalism" by Ha-Joon Chang 📊 (Provides a critical look at mainstream economic assumptions).  

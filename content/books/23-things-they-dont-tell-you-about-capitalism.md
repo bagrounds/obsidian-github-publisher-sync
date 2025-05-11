@@ -62,7 +62,7 @@ tags:
   
 #### Additional Book Recommendations 📚  
 * **Best alternate book on the same topic:** "[Capital in the Twenty First Century](./capital-in-the-twenty-first-century.md)" by Thomas Piketty. This book provides a comprehensive analysis of wealth inequality and its implications for capitalism.  
-* **Best book that is tangentially related:** "Doughnut Economics: Seven Ways to Think Like a 21st-Century Economist" by Kate Raworth. This book offers a new economic model that balances human needs with environmental sustainability.  
+* **Best book that is tangentially related:** [🍩🌍 Doughnut Economics: Seven Ways to Think Like a 21st-Century Economist](./doughnut-economics-seven-ways-to-think-like-a-21st-century-economist.md) by Kate Raworth. This book offers a new economic model that balances human needs with environmental sustainability.  
 * **Best book that is diametrically opposed:** "Free to Choose: A Personal Statement" by Milton Friedman and Rose Friedman. This book advocates for free-market capitalism and limited government intervention.  
 * **Best fiction book that incorporates related ideas:** "The Ministry for the Future" by Kim Stanley Robinson. This novel explores the economic and political challenges of addressing climate change.  
 * **Best book that is more general:** "[Thinking, Fast and Slow](./thinking-fast-and-slow.md)" by Daniel Kahneman. This book explores the cognitive biases that influence economic decision-making.  

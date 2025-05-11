@@ -168,7 +168,7 @@ Why did the clock ⏰ break up with the stomach 😩 during time-restricted eati
   
   * **Topical (Directly about TRE/IF)**:  
       * [🌄⏳ The Circadian Code: Lose Weight, Supercharge Your Energy, and Transform Your Health from Morning to Midnight](../books/the-circadian-code.md) by Satchin Panda, PhD - Explains the science of circadian rhythms and TRE from a leading researcher.  
-      * "The Complete Guide to Fasting: Heal Your Body Through Intermittent, Alternate-Day, and Extended Fasting" by Dr. Jason Fung and Jimmy Moore - Covers various IF methods, including TRE 🍎.  
+      * [📖⏱️🍎 The Complete Guide to Fasting: Heal Your Body Through Intermittent, Alternate-Day, and Extended Fasting](../books/the-complete-guide-to-fasting-heal-your-body-through-intermittent-alternate-day-and-extended-fasting.md) by Dr. Jason Fung and Jimmy Moore - Covers various IF methods, including TRE 🍎.  
   * **Tangentially Related (Circadian Rhythms/Metabolism)**:  
       * [😴💭 Why We Sleep: Unlocking the Power of Sleep and Dreams](../books/why-we-sleep-unlocking-the-power-of-sleep-and-dreams.md) by Matthew Walker, PhD - 😴 While about sleep, deeply connected to circadian rhythms which underpin TRE.  
       * "The Obesity Code: Unlocking the Secrets of Weight Loss" by Dr. Jason Fung - Focuses on insulin's role in obesity, relevant to fasting's mechanism 📉.  

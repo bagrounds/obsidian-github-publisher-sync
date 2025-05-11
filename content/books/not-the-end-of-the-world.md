@@ -71,7 +71,7 @@ tags:
   
 ### 🎨 Creatively Related (Broader Context & Inspiration)  
   
-* 📚 **Doughnut Economics: Seven Ways to Think Like a 21st-Century Economist** by Kate Raworth: Proposes an economic model that aims to meet human needs within planetary boundaries.  
+* **[🍩🌍 Doughnut Economics: Seven Ways to Think Like a 21st-Century Economist](./doughnut-economics-seven-ways-to-think-like-a-21st-century-economist.md)** by Kate Raworth: Proposes an economic model that aims to meet human needs within planetary boundaries.  
 * 📚 **[Thinking in Systems](./thinking-in-systems.md): A Primer** by Donella H. Meadows: An essential guide to understanding complex systems, crucial for tackling interconnected environmental and social problems.  
 * 📚 **Drawdown: The Most Comprehensive Plan Ever Proposed to Reverse Global Warming** edited by Paul Hawken: Catalogs a wide array of existing solutions for reducing greenhouse gas emissions.  
 * 📚 **[The Sixth Extinction](./the-sixth-extinction.md): An Unnatural History** by Elizabeth Kolbert: Explores the ongoing biodiversity crisis through the lens of past mass extinction events, providing context for Ritchie's chapter on biodiversity loss.  

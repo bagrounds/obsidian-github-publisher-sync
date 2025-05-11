@@ -26,7 +26,7 @@ Heterodox economics is a diverse and critical body of economic thought that chal
 2.  **[🏛️💰 Debt: The First 5,000 Years](../books/debt-the-first-5000-years.md) by David Graeber:** 📜 A historical analysis of debt and its role in shaping societies.  
 3.  **"The General Theory of Employment, Interest and Money" by John Maynard Keynes:** 🔑 A foundational text of Post-Keynesian economics.  
 4.  **"[Capital in the Twenty First Century](../books/capital-in-the-twenty-first-century.md)" by Thomas Piketty:** 📈 An analysis of long-term trends in wealth and income inequality.  
-5.  **"Doughnut Economics: Seven Ways to Think Like a 21st-Century Economist" by Kate Raworth:** 🍩 A new economic model for sustainable and equitable development.  
+5.  **[🍩🌍 Doughnut Economics: Seven Ways to Think Like a 21st-Century Economist](../books/doughnut-economics-seven-ways-to-think-like-a-21st-century-economist.md) by Kate Raworth:** 🍩 A new economic model for sustainable and equitable development.  
 6.  **"[The Deficit Myth](../books/the-deficit-myth.md): Modern Monetary Theory and the Birth of the People's Economy" by Stephanie Kelton:** 📚 A clear introduction to MMT and its policy implications.  
   
 ## 💬 [Gemini](https://gemini.google.com/app) Prompt  

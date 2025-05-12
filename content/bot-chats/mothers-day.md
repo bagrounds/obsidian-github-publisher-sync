@@ -38,4 +38,4 @@ URL: https://bagrounds.org/bot-chats/mothers-day
 ### 🧠 Scientific and Psychological Perspectives on Motherhood  
   
 - 🤔 **"The Philosophical Parent: Asking the Hard Questions About Raising Children" by Jean Kazez:** ❓ This book explores the ethical and philosophical questions that arise in parenting, offering a thought-provoking look at the responsibilities and dilemmas mothers (and fathers) face.  
-- 🤰 **"Mother Brain: How Neuroscience Is Rewriting the Story of Parenthood" by Chelsea Conaboy:** (Published in 2022) 💡 This book delves into the neuroscience of parental brains, challenging outdated notions and exploring the significant brain changes that occur in mothers and other caregivers.
+- 🤰 **"[🤱🏼🧠 Mother Brain: How Neuroscience Is Rewriting the Story of Parenthood](../books/mother-brain-how-neuroscience-is-rewriting-the-story-of-parenthood.md)" by Chelsea Conaboy:** (Published in 2022) 💡 This book delves into the neuroscience of parental brains, challenging outdated notions and exploring the significant brain changes that occur in mothers and other caregivers.

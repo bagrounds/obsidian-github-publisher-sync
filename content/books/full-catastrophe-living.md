@@ -9,6 +9,9 @@ tags:
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🌪️🧘‍♂️ Full Catastrophe Living: Using the Wisdom of Your Body and Mind to Face Stress, Pain, and Illness  
+## 📝🐒 Human Notes  
+- 😴🧘🏼‍♀️ Let go like you sleep.  
+  
 ## 🤖 AI Summary  
 ### Full Catastrophe Living 🧘‍♂️  
 #### TL;DR 🤯  

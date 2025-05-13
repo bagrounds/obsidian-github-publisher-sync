@@ -7,7 +7,7 @@ URL: https://bagrounds.org/books
 backlinks: false
 ---
 [Home](../index.md)  
-# 📚 Books (364)  
+# 📚 Books (366)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [🧑‍🤝‍🧑📈 10 to 25: The Science of Motivating Young People: A Groundbreaking Approach to Leading the Next Generation - And Making Your Own Life Easier](./10-to-25-the-science-of-motivating-young-people-a-groundbreaking-approach-to-leading-the-next-generation-and-making-your-own-life-easier.md)  
 - [👁️ 1984](./1984.md)  
@@ -198,6 +198,7 @@ backlinks: false
 - [📗🚀🌍 Operating Manual for Spaceship Earth](./operating-manual-for-spaceship-earth.md)  
 - [Order Out of Chaos](./order-out-of-chaos.md)  
 - [Organize for Complexity](./organize-for-complexity.md)  
+- [🗓️✅ Organize Your Day: 17 Easy Strategies to Manage Your Day, Improve Productivity and Overcome Procrastination](./organize-your-day-17-easy-strategies-to-manage-your-day-improve-productivity-and-overcome-procrastination.md)  
 - [Outlive](./outlive.md)  
 - [Out Of The Crisis](./out-of-the-crisis.md)  
 - [👶🤔 Patterns of Attachment: A Psychological Study of the Strange Situation](./patterns-of-attachment-a-psychological-study-of-the-strange-situation.md)  
@@ -313,6 +314,7 @@ backlinks: false
 - [The New Economics](./the-new-economics.md)  
 - [The Nordic Theory of Everything](./the-nordic-theory-of-everything.md)  
 - [⏱️💡📈 The One Hour Content Plan: The Solopreneur's Guide to a Year's Worth of Blog Post Ideas in 60 Minutes and Creating Content That Hooks and Sells](./the-one-hour-content-plan-the-solopreneurs-guide-to-a-years-worth-of-blog-post-ideas-in-60-minutes-and-creating-content-that-hooks-and-sells.md)  
+- [🧠🗂️ The Organized Mind: Thinking Straight in the Age of Information Overload](./the-organized-mind-thinking-straight-in-the-age-of-information-overload.md)  
 - [👹 The Origins of Totalitarianism](./the-origins-of-totalitarianism.md)  
 - [🤝🐧🐳 The Penguin and the Leviathan: How Cooperation Triumphs over Self-Interest](./the-penguin-and-the-leviathan-how-cooperation-triumphs-over-self-interest.md)  
 - [👥⚔️🏛️ The People vs. Democracy: Why Our 🗽 Freedom Is in ⚠️ Danger and How to Save It](./the-people-vs-democracy.md)  

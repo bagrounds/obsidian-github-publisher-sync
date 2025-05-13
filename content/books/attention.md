@@ -44,7 +44,7 @@ Kahneman is a Nobel laureate in economics, and his work is grounded in decades o
 * **Practice Mindfulness:** 🧘‍♀️ Mindfulness practices can improve attentional control and reduce cognitive load.  
   
 ### Book Recommendations 📚  
-* **Best Alternate Book on the Same Topic:** "The Organized Mind: Thinking Straight in the Age of Information Overload" by Daniel Levitin. This book also discusses the limits of attention and provides practical strategies for managing information overload. 🧠  
+* **Best Alternate Book on the Same Topic:** [🧠🗂️ The Organized Mind: Thinking Straight in the Age of Information Overload](./the-organized-mind-thinking-straight-in-the-age-of-information-overload.md) by Daniel Levitin. This book also discusses the limits of attention and provides practical strategies for managing information overload. 🧠  
 * **Best Tangentially Related Book:** "[Drive: The Surprising Truth About What Motivates Us](./drive-the-surprising-truth-about-what-motivates-us.md)" by Daniel H. Pink. This book explores intrinsic motivation, which is closely related to how we allocate attention and effort. 🚀  
 * **Best Diametrically Opposed Book:** "The Singularity Is Near: When Humans Transcend Biology" by Ray Kurzweil. This book presents a future where technology enhances human cognition beyond current limitations, challenging the idea of inherent cognitive constraints. 🤖  
 * **Best Fiction Book That Incorporates Related Ideas:** "Flowers for Algernon" by Daniel Keyes. This novel explores the ethical implications of enhancing cognitive abilities, highlighting the complex relationship between intelligence and attention.   

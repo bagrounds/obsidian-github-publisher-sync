@@ -7,8 +7,10 @@ URL: https://bagrounds.org/reflections
 backlinks: false
 ---
 [Home](../index.md)  
-# 🪞 Reflections (178)  
-- [🗓️🍩🤱🏼🌍 2025-05-11 | 🍩 Doughnuts 🌍 | 🤱🏼💐 Mother's Day 🗓️](./2025-05-11.md)  
+# 🪞 Reflections (180)  
+- [2025-05-13](./2025-05-13.md)  
+- [2025-05-12 | 🍩 Doughnuts 🌍](./2025-05-12.md)  
+- [2025-05-11 | 🤱🏼💐 Mother's Day 🗓️](./2025-05-11.md)  
 - [2025-05-10 | 🍎 Fruit 🌳 Trees](./2025-05-10.md)  
 - [2025-05-09 | 🍎 Fruits 🌳 of 🧘🏼‍♀️ Change 🔄](./2025-05-09.md)  
 - [2025-05-08 | 😩⚕️ Indefatigable 🏎️🐍](./2025-05-08.md)  

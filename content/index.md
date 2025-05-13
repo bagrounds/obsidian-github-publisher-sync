@@ -10,8 +10,10 @@ title: 🏡 Home
 📑 Notes, 💭 thoughts, and 🔗 Links.  
 ❔ What do 🫵 _you_ 🤔 think?  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (178)  
-- [🗓️🍩🤱🏼🌍 2025-05-11 | 🍩 Doughnuts 🌍 | 🤱🏼💐 Mother's Day 🗓️](./reflections/2025-05-11.md)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (180)  
+- [2025-05-13](./reflections/2025-05-13.md)  
+- [2025-05-12 | 🍩 Doughnuts 🌍](./reflections/2025-05-12.md)  
+- [2025-05-11 | 🤱🏼💐 Mother's Day 🗓️](./reflections/2025-05-11.md)  
 - [2025-05-10 | 🍎 Fruit 🌳 Trees](./reflections/2025-05-10.md)  
 - [2025-05-09 | 🍎 Fruits 🌳 of 🧘🏼‍♀️ Change 🔄](./reflections/2025-05-09.md)  
 - [2025-05-08 | 😩⚕️ Indefatigable 🏎️🐍](./reflections/2025-05-08.md)  
@@ -19,15 +21,13 @@ title: 🏡 Home
 - [2025-05-06 | 🥱 3 Tired 😴](./reflections/2025-05-06.md)  
 - [2025-05-05 | 🦷🔬 Cinco de Dientes 🇲🇽🇺🇸](./reflections/2025-05-05.md)  
 - [2025-05-04 | 🍽️ Intermittent ⌛](./reflections/2025-05-04.md)  
-- [2025-05-03 | ⏰ Circadian 🌍](./reflections/2025-05-03.md)  
-- [2025-05-02 | 🥱 2 Tired 😴](./reflections/2025-05-02.md)  
   
   
 ## [📄  Articles](./articles/index.md) (24)  
   
-## [📚 Books](./books/index.md) (364)  
+## [📚 Books](./books/index.md) (366)  
   
-## [🤖💬 Bot Chats](./bot-chats/index.md) (24)  
+## [🤖💬 Bot Chats](./bot-chats/index.md) (25)  
   
 ## [👥 People](./people/index.md) (7)  
   

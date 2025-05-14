@@ -56,7 +56,7 @@ These books offer more structured, technical, or genre-specific guidance, contra
 These books connect to the broader themes of creativity, memoir, spirituality, and humor found in Lamott's work:  
 * ⚔️ **[The War of Art](./the-war-of-art.md): Break Through the Blocks and Win Your Inner Creative Battles** by Steven Pressfield: 🛡️ Focuses on overcoming "Resistance," the internal force that hinders creativity, echoing Lamott's discussion of internal obstacles.  
 * 🙏 **Traveling Mercies: Some Thoughts on Faith** by Anne Lamott: 📖 One of Lamott's memoirs exploring faith, grace, and life's imperfections with her signature humor and honesty.  
-* 👶 **Operating Instructions: A Journal of My Son's First Year** by Anne Lamott: 📝 A raw and funny journal about Lamott's experience with single motherhood.  
+* **[👶📖 Operating Instructions: A Journal of My Son’s First Year](./operating-instructions-a-journal-of-my-sons-first-year.md)** by Anne Lamott: 📝 A raw and funny journal about Lamott's experience with single motherhood.  
 * ✍️ **Zen in the Art of Writing** by Ray Bradbury: ✨ Essays celebrating the joy and passion of writing and creativity.  
 * 🌧️ **A Swim in the Pond in the Rain** by George Saunders: 🇷🇺 Analyzes Russian short stories to reveal insights into the craft of writing and reading.  
 * 🧑‍🎨 **Real Artists Don't Starve** by Jeff Goins: 🚫 Challenges the "starving artist" myth and provides strategies for thriving creatively and financially.  

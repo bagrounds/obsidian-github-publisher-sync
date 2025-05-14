@@ -47,7 +47,7 @@ Daniel J. Levitin, Ph.D., is a neuroscientist, cognitive psychologist, and bests
   
 ### ➡️ Similar Books (Focus on Productivity, Cognitive Science, and Organization)  
   
-* ✅ **Getting Things Done: The Art of Stress-Free Productivity by David Allen:** This book offers a widely adopted system for task management and organization, focusing on clearing mental clutter to enhance productivity and creativity.  
+* **[✅😌 Getting Things Done: The Art of Stress-Free Productivity](./getting-things-done-the-art-of-stress-free-productivity.md) by David Allen:** This book offers a widely adopted system for task management and organization, focusing on clearing mental clutter to enhance productivity and creativity.  
 * 🧠 **[Thinking, Fast and Slow](./thinking-fast-and-slow.md) by Daniel Kahneman:** Explores the two systems that drive the way we think—one fast and intuitive, the other slow and deliberative—and how they affect our judgments and decisions.  
 * 💪 **[The Power of Habit](./the-power-of-habit.md): Why We Do What We Do in Life and Business by Charles Duhigg:** Investigates the science behind habit formation and how understanding habits can lead to personal and organizational change.  
 * **[⚛️🔄 Atomic Habits](./atomic-habits.md): An Easy & Proven Way to Build Good Habits & Break Bad Ones by James Clear:** Provides a practical framework for making small, incremental changes that lead to remarkable results in habit formation.  

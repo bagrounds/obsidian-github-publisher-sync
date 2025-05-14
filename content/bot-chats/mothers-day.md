@@ -14,7 +14,7 @@ URL: https://bagrounds.org/bot-chats/mothers-day
   
 ### 🗓️ Books on Mother's Day and its Significance  
   
-- 📜 **"Memorializing Motherhood: Anna Jarvis and the Struggle for Control of Mother's Day" by Katharine Lane Antolini:** 🧐 This is a legitimate and insightful academic book that details the fascinating and often contentious history of how Mother's Day was founded by Anna Jarvis and her fight against its commercialization. ✊ It explores her motivations and the evolution of the holiday.  
+- **[💐👩‍👧‍👦⚔️ Memorializing Motherhood: Anna Jarvis and the Struggle for Control of Mother's Day](../books/memorializing-motherhood-anna-jarvis-and-the-struggle-for-control-of-mothers-day.md) by Katharine Lane Antolini:** 🧐 This is a legitimate and insightful academic book that details the fascinating and often contentious history of how Mother's Day was founded by Anna Jarvis and her fight against its commercialization. ✊ It explores her motivations and the evolution of the holiday.  
   
 ### 👩‍👧‍👦 Books Celebrating Motherhood and the Impact of a Great Mother (Biographical, Fictional, and Inspirational)  
   

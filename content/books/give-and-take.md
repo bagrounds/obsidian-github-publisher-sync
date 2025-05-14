@@ -10,10 +10,7 @@ tags:
 [Home](../index.md) > [Books](./index.md)  
 # Give and Take  
 ## 🤖 AI Summary  
-### 💬 [ChatGPT](https://chat.com) Prompt  
-> Summarize the book: Give and Take by Adam Grant. Start the summary with a TLDR - a single statement that conveys a maximum of the useful information provided in the book. Follow this with a deep dive. Catalogue the topics, methods, and research discussed. Be sure to highlight any significant theories, theses, or mental models proposed. Provide a critical analysis of the quality of the information presented, using scientific backing, author credentials, authoritative reviews, and other markers of high quality information as justification. Emphasize practical takeaways. Make the following additional book recommendations: the best alternate book on the same topic, the best book that is tangentially related, the best book that is diametrically opposed, and the best fiction book that incorporates related ideas. Format your response as markdown, starting at heading level H4, with inline links, for easy copy paste. Use meaningful emojis liberally to enhance readability, especially in headings and as bullets for lists.  
   
-### Response  
 #### TLDR 🤔    
 **Generosity isn’t just a virtue—it’s a strategic advantage that fuels lasting success in both careers and life.**  
   
@@ -62,8 +59,11 @@ The book is built on the idea that while takers might succeed in the short term,
 - **Alternate on the Same Topic:**    
   - *Never Eat Alone* by Keith Ferrazzi – A practical guide on networking and relationship building that complements the ideas in *Give and Take*.    
 - **Tangentially Related:**    
-  - [*Thinking, Fast and Slow* by Daniel Kahneman](https://www.goodreads.com/book/show/11468377-thinking-fast-and-slow) – Explores the cognitive processes behind our decisions, offering insight into the psychological underpinnings of interpersonal interactions.  
+  - [Thinking, Fast and Slow](./thinking-fast-and-slow.md) by Daniel Kahneman – Explores the cognitive processes behind our decisions, offering insight into the psychological underpinnings of interpersonal interactions.  
 - **Diametrically Opposed:**    
   - *[The 48 Laws of Power](./the-48-laws-of-power.md)* by Robert Greene – Presents a contrasting view where strategic power plays and self-interest drive success, challenging the altruistic approach of Grant’s thesis.    
 - **Fiction Incorporating Related Ideas:**    
   - [*Les Misérables* by Victor Hugo](https://www.goodreads.com/book/show/24280.Les_Mis_rables) – A classic narrative that, through its exploration of justice, redemption, and compassion, mirrors many of the social and ethical themes found in *Give and Take*.  
+  
+## 💬 [ChatGPT](https://chat.com) Prompt  
+> Summarize the book: Give and Take by Adam Grant. Start the summary with a TLDR - a single statement that conveys a maximum of the useful information provided in the book. Follow this with a deep dive. Catalogue the topics, methods, and research discussed. Be sure to highlight any significant theories, theses, or mental models proposed. Provide a critical analysis of the quality of the information presented, using scientific backing, author credentials, authoritative reviews, and other markers of high quality information as justification. Emphasize practical takeaways. Make the following additional book recommendations: the best alternate book on the same topic, the best book that is tangentially related, the best book that is diametrically opposed, and the best fiction book that incorporates related ideas. Format your response as markdown, starting at heading level H4, with inline links, for easy copy paste. Use meaningful emojis liberally to enhance readability, especially in headings and as bullets for lists.

@@ -64,7 +64,7 @@ _The Design of Paths and Goals_
   
 ### Additional Book Recommendations 📖  
 - **Alternate on the Same Topic:**  
-  - [Getting Things Done](https://en.wikipedia.org/wiki/Getting_Things_Done) by David Allen offers a structured, practical system for managing workflow and tasks—a complementary approach to planning with a focus on productivity. ✅  
+  - [✅😌 Getting Things Done: The Art of Stress-Free Productivity](./getting-things-done-the-art-of-stress-free-productivity.md) by David Allen offers a structured, practical system for managing workflow and tasks—a complementary approach to planning with a focus on productivity. ✅  
   
 - **Tangentially Related:**  
   - [The Art of Possibility](https://en.wikipedia.org/wiki/The_Art_of_Possibility) by Rosamund Stone Zander and Benjamin Zander, which inspires creative thinking and reimagining possibilities, aligning well with the book’s emphasis on flexible planning. 🎨  

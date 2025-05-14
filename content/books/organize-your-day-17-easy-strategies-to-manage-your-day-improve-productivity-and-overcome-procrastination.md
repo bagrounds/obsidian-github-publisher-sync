@@ -41,7 +41,7 @@ share: true
   
 * **[🤿💼 Deep Work](./deep-work.md): Rules for Focused Success in a Distracted World by Cal Newport:** Argues for the importance of cultivating the ability to focus without distraction on cognitively demanding tasks, contrasting with a focus on simply managing many small tasks.  
 * ⏳ **Four Thousand Weeks: Time Management for Mortals by Oliver Burkeman:** Takes a philosophical approach, acknowledging the finite nature of time and encouraging readers to make meaningful choices rather than trying to do everything.  
-* 🎯 **Essentialism: The Disciplined Pursuit of Less by Greg McKeown:** Focuses on identifying and prioritizing the "vital few" tasks and commitments, and eliminating the "trivial many."  
+* **[➖💯 Essentialism: The Disciplined Pursuit of Less](./essentialism-the-disciplined-pursuit-of-less.md) by Greg McKeown:** Focuses on identifying and prioritizing the "vital few" tasks and commitments, and eliminating the "trivial many."  
 * 😴 **[😴📈 Rest: Why You Get More Done When You Work Less](./rest-why-you-get-more-done-when-you-work-less.md) by Alex Soojung-Kim Pang:** Challenges the "hustle culture" by presenting scientific evidence that rest is crucial for productivity and creativity.  
   
 ### ✨ Creatively Related Book Recommendations (Broader Themes of Order, Focus, and Well-being):  

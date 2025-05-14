@@ -31,7 +31,7 @@ share: true
   
 ### 🗂️ Similar Books (Focus on Actionable Productivity & Time Management):  
   
-* ✅ **Getting Things Done: The Art of Stress-Free Productivity by David Allen:** A classic in the field, this book offers a comprehensive system for managing tasks and projects.  
+* **[✅😌 Getting Things Done: The Art of Stress-Free Productivity](./getting-things-done-the-art-of-stress-free-productivity.md) by David Allen:** A classic in the field, this book offers a comprehensive system for managing tasks and projects.  
 * 🐸 **Eat That Frog!: 21 Great Ways to Stop Procrastinating and Get More Done in Less Time by Brian Tracy:** Focuses on tackling the most challenging tasks first to build momentum and overcome procrastination.  
 * ⚙️ **[The 7 Habits of Highly Effective People](./the-7-habits-of-highly-effective-people.md) by Stephen R. Covey:** While broader in scope, its principles on proactivity, prioritization ("Put First Things First"), and beginning with the end in mind are highly relevant to daily organization.  
 * **[⚛️🔄 Atomic Habits](./atomic-habits.md): An Easy & Proven Way to Build Good Habits & Break Bad Ones by James Clear:** Explores the science of habit formation and provides practical strategies for making small, incremental changes that lead to significant results.  

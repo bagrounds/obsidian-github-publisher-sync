@@ -96,7 +96,7 @@ The information presented in "The Bullet Journal Method" is primarily based on t
   
 #### 📚 Additional Book Recommendations 🧐  
   
-* **Best Alternate Book on the Same Topic:** *Getting Things Done* by David Allen. While focusing more on a broader productivity system, it shares the core goal of organizing tasks and increasing efficiency. ⚙️  
+* **Best Alternate Book on the Same Topic:** [✅😌 Getting Things Done: The Art of Stress-Free Productivity](./getting-things-done-the-art-of-stress-free-productivity.md) by David Allen. While focusing more on a broader productivity system, it shares the core goal of organizing tasks and increasing efficiency. ⚙️  
 * **Best Book That Is Tangentially Related:** *[Deep Work](./deep-work.md): Rules for Focused Success in a Distracted World* by Cal Newport. Explores the importance of focused work, which can be enhanced by the intentionality fostered by Bullet Journaling. 🧠  
 * **Best Book That Is Diametrically Opposed:** *The Shallows: What the Internet Is Doing to Our Brains* by Nicholas Carr. Offers a critical perspective on the impact of digital technology on our cognitive abilities, contrasting with the Bullet Journal's analog approach. 📱➡️🧠  
 * **Best Fiction Book That Incorporates Related Ideas:** *The Name of the Wind* by Patrick Rothfuss. Features a protagonist who meticulously organizes his knowledge and tasks in a journal-like fashion, highlighting the power of record-keeping. 📖✨  

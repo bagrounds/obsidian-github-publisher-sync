@@ -55,7 +55,7 @@ share: true
 1. 😄 **Feel-Good Productivity** by Ali Abdaal: Argues against relying solely on discipline, suggesting that finding joy in the process is the secret to sustainable productivity.  
 2. **[⛰️➡️🧘 The Mountain is You: Transforming Self-Sabotage into Self-Mastery](./the-mountain-is-you.md)** by Brianna Wiest: Focuses on overcoming self-sabotage, understanding its roots (limiting beliefs, fear), and building self-mastery through self-compassion and resilience, rather than purely discipline.  
 3. ⏳ **Four Thousand Weeks: Time Management for Mortals** by Oliver Burkeman: Challenges the productivity-hacking culture, urging acceptance of limitations and focusing on what truly matters within our finite time.  
-4. 😌 **Effortless: Make It Easier to Do What Matters Most** by Greg McKeown: A follow-up to "Essentialism," this book focuses on simplifying processes and finding the easiest path to achieve important results, contrasting with the "brute force" approach often associated with discipline.  
+4. 😌 **Effortless: Make It Easier to Do What Matters Most** by Greg McKeown: A follow-up to [➖💯 Essentialism: The Disciplined Pursuit of Less](./essentialism-the-disciplined-pursuit-of-less.md), this book focuses on simplifying processes and finding the easiest path to achieve important results, contrasting with the "brute force" approach often associated with discipline.  
 5. 📜 **Meditations on Self-Discipline and Failure** by William Ferraiolo: Offers a Stoic (and sometimes Cynic) perspective on discipline, resilience, and dealing with failure, which can contrast with purely behavioral approaches.  
   
 ### 💡 Creatively Related (Exploring Themes of Temptation, Goals, Psychology)  

@@ -60,7 +60,7 @@ share: true
   
 ### ✨ Creatively Related (Exploring Themes Further)  
 * **[⚛️🔄 Atomic Habits](./atomic-habits.md)** by James Clear: 🧱 Focuses on the power of small, consistent habits for achieving long-term goals. 🧩 Complements Abdaal's approach by providing a framework for implementing the desired behaviors.  
-* 🧘 **Essentialism: The Disciplined Pursuit of Less** by Greg McKeown: ✂️ Teaches how to identify and focus on what truly matters, aligning with Abdaal's idea of doing more of *what matters to you* and the "Conserve" principle.  
+* **[➖💯 Essentialism: The Disciplined Pursuit of Less](./essentialism-the-disciplined-pursuit-of-less.md)** by Greg McKeown: ✂️ Teaches how to identify and focus on what truly matters, aligning with Abdaal's idea of doing more of *what matters to you* and the "Conserve" principle.  
 * 🧠 **Building a Second Brain** by Tiago Forte: 🗂️ Provides a method for organizing digital information to enhance creativity and knowledge management, useful for implementing the "Clarity" aspect of Abdaal's "Unblock" section.  
 * 🧠 **[Mindset](./mindset.md): The New Psychology of Success** by Carol S. Dweck: 💡 Explores the difference between fixed and growth mindsets, relevant to building the confidence ("Power") and resilience needed for feel-good productivity.  
 * 😟 **The Now Habit** by Neil Fiore: 🚧 Offers strategies for overcoming procrastination by addressing underlying fears and perfectionism, connecting to Abdaal's "Unblock" section, particularly "Courage".  

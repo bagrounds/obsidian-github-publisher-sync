@@ -38,7 +38,7 @@ share: true
   
 ### 🆚 Contrasting Books  
   
-* 🗂️ **Getting Things Done by David Allen:** A comprehensive system for organizing tasks and workflows to increase productivity. While valuable for managing commitments, it focuses more on managing *all* the things that command our attention, rather than ruthlessly eliminating non-essentials. 🚫  
+* **[✅😌 Getting Things Done: The Art of Stress-Free Productivity](./getting-things-done-the-art-of-stress-free-productivity.md) by David Allen:** A comprehensive system for organizing tasks and workflows to increase productivity. While valuable for managing commitments, it focuses more on managing *all* the things that command our attention, rather than ruthlessly eliminating non-essentials. 🚫  
 * 🌴 **The 4-Hour Workweek by Timothy Ferriss:** Promotes lifestyle design and maximizing efficiency to work less while earning more. While it shares a desire for more freedom and less unnecessary work, its focus on automation and outsourcing differs from Essentialism's emphasis on disciplined focus and contribution. 🤖  
   
 ### ✨ Creatively Related Books  

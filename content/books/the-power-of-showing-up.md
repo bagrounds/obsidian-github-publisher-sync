@@ -58,7 +58,7 @@ tags:
 ### 🎨 Creatively Related (Broader Themes of Presence & Connection)  
 * ***The Power of Now*** by Eckhart Tolle: ⏱️ Explores the spiritual importance of living in the present moment, a core theme in "showing up".  
 * ***Atlas of the Heart*** by Brené Brown: ❤️ Maps complex human emotions and experiences, enhancing the ability to "see" and understand others (and oneself).  
-* ***Wherever You Go, There You Are*** by Jon Kabat-Zinn: 🧘 A classic guide to mindfulness meditation for everyday life, cultivating the presence needed for showing up.  
+* **[👣➡️🌍 Wherever You Go, There You Are](./wherever-you-go-there-you-are.md)** by Jon Kabat-Zinn: 🧘 A classic guide to mindfulness meditation for everyday life, cultivating the presence needed for showing up.  
 * ***The Art of Communicating*** by Thich Nhat Hanh: 🗣️ Offers Buddhist wisdom on mindful communication, deep listening, and loving speech to build connection.  
 * ***How to Be an Adult in Relationships*** by David Richo: 🧑‍🤝‍🧑 Explores mindful loving and the keys to mature relationships, extending the concept of presence and understanding beyond parenting.  
 * ***Passion and Presence*** by Maci Daye: 🔥 Focuses on awakened intimacy and mindful connection in romantic relationships, touching on themes of presence and overcoming barriers.  

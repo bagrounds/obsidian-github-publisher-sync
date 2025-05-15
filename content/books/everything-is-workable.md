@@ -65,7 +65,7 @@ tags:
 * ☮️ **Everyday Zen: Love and Work** by Charlotte Joko Beck: Focuses on integrating Zen practice into the challenges of daily life, including relationships and work.  
 * 🧠 **[Emotional Intelligence](./emotional-intelligence.md): Why It Can Matter More Than IQ** by Daniel Goleman: The seminal work popularizing the concept of emotional intelligence, crucial for self-awareness and empathy in conflict.  
 * 🧭 **Atlas of the Heart** by Brené Brown: Explores the landscape of human emotions and experiences, fostering the emotional literacy needed for navigating conflict.  
-* 📍 **Wherever You Go, There You Are: Mindfulness Meditation in Everyday Life** by Jon Kabat-Zinn: A classic introduction to mindfulness practice for laypeople.  
+* **[👣➡️🌍 Wherever You Go, There You Are](./wherever-you-go-there-you-are.md): Mindfulness Meditation in Everyday Life** by Jon Kabat-Zinn: A classic introduction to mindfulness practice for laypeople.  
 * 🌐 **Integral Spirituality** by Ken Wilber: Explores the developmental framework (Integral Theory) that informs some of Hamilton's perspectives on worldviews and conflict.  
 * 🧠 **Embodied Conflict: The Neural Basis of Conflict and Communication** by Tim Hicks: Explores the physiological and neurological aspects of conflict and communication.  
   

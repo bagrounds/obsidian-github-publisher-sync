@@ -20,7 +20,7 @@ That's a fantastic goal! Finding a book that bridges scientific understanding wi
     * **Practical Application:** Provides a structured eight-week program with guided meditations and exercises for daily practice.  
     * **Story Element:** Uses anecdotes and examples to make the concepts relatable, though it's not primarily story-driven.  
   
-* **"Wherever You Go, There You Are: Mindfulness Meditation in Everyday Life" by Jon Kabat-Zinn:** This is a classic and highly accessible introduction to mindfulness by one of the pioneers of the secular mindfulness movement. While it may not delve deeply into the latest neuroscience, it beautifully articulates the principles and practices of mindfulness in a way that resonates with many. It includes gentle guidance and reflections that feel like personal insights.  
+* **[👣➡️🌍 Wherever You Go, There You Are](../books/wherever-you-go-there-you-are.md): Mindfulness Meditation in Everyday Life by Jon Kabat-Zinn:** This is a classic and highly accessible introduction to mindfulness by one of the pioneers of the secular mindfulness movement. While it may not delve deeply into the latest neuroscience, it beautifully articulates the principles and practices of mindfulness in a way that resonates with many. It includes gentle guidance and reflections that feel like personal insights.  
   
     * **Scientific Grounding:** Kabat-Zinn's work laid the foundation for much of the scientific research on mindfulness, particularly through the Mindfulness-Based Stress Reduction (MBSR) program.  
     * **Practical Application:** Offers numerous practical ways to cultivate mindfulness in everyday activities, from eating to walking.  

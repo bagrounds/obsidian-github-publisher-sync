@@ -75,7 +75,7 @@ tags:
 ### 🤔 Contrasting Perspectives (Alternative Approaches to Well-being)  
   
 * 📖 **Mindfulness** by Ellen J. Langer: Presents a different, more cognitive perspective on mindfulness developed in social psychology, distinct from meditative traditions. 💡 Often focuses on actively noticing novelty and questioning assumptions ("mindlessness").  
-* 📖 **10% Happier** by Dan Harris: A skeptical journalist's journey into meditation, offering a relatable perspective for those wary of spiritual jargon.  
+* **[📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)** by Dan Harris: A skeptical journalist's journey into meditation, offering a relatable perspective for those wary of spiritual jargon.  
 * 📖 **The Subtle Art of Not Giving a F*ck** by Mark Manson: A counterintuitive approach focusing on choosing what to care about and accepting life's struggles, contrasting with non-judgmental acceptance.  
 * 📖 **Books on Stoicism (e.g., Meditations by Marcus Aurelius, Letters from a Stoic by Seneca):** 🏛️ Ancient philosophy focused on virtue, reason, and accepting what you cannot control, offering a different framework for resilience.  
 * 📖 **Books on Cognitive Behavioral Therapy (CBT) or Acceptance and Commitment Therapy (ACT):** 🧑‍⚕️ Psychological approaches that focus on changing thought patterns or accepting thoughts/feelings without struggle to improve well-being.  

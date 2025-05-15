@@ -59,7 +59,7 @@ Kabat-Zinn's work is highly regarded and supported by extensive research. 📚 H
   
 #### Additional Book Recommendations 📚  
   
-- **Best Alternate Book on the Same Topic:** "Wherever You Go, There You Are" also by Jon Kabat-Zinn. 🗺️  
+- **Best Alternate Book on the Same Topic:** [👣➡️🌍 Wherever You Go, There You Are](./wherever-you-go-there-you-are.md) also by Jon Kabat-Zinn. 🗺️  
 - **Best Tangentially Related Book:** "[Thinking, Fast and Slow](./thinking-fast-and-slow.md)" by Daniel Kahneman, for understanding cognitive biases that mindfulness can help address. 🧠  
 - **Best Diametrically Opposed Book:** "The Subtle Art of Not Giving a F*ck" by Mark Manson, for a more direct, action-oriented approach to life's challenges. 🤬➡️ 😌  
 - **Best Fiction Book That Incorporates Related Ideas:** "The Buddha in the Attic" by Julie Otsuka, for exploring themes of acceptance and cultural adaptation. 🎎  

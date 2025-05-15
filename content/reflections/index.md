@@ -7,7 +7,8 @@ URL: https://bagrounds.org/reflections
 backlinks: false
 ---
 [Home](../index.md)  
-# 🪞 Reflections (180)  
+# 🪞 Reflections (181)  
+- [2025-05-14 | 🗺️ Plans 🗓️ | 🤱🏼 Moms ⚖️](./2025-05-14.md)  
 - [2025-05-13 | 🔮 Planning 📚](./2025-05-13.md)  
 - [2025-05-12 | 🍩 Doughnuts 🌍](./2025-05-12.md)  
 - [2025-05-11 | 🤱🏼💐 Mother's Day 🗓️](./2025-05-11.md)  

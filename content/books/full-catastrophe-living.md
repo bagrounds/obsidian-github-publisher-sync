@@ -1,16 +1,17 @@
 ---
 share: true
 aliases:
-  - "🌪️🧘‍♂️ Full Catastrophe Living: Using the Wisdom of Your Body and Mind to Face Stress, Pain, and Illness"
-title: "🌪️🧘‍♂️ Full Catastrophe Living: Using the Wisdom of Your Body and Mind to Face Stress, Pain, and Illness"
+  - "🌪️🧘🏼‍♀️ Full Catastrophe Living: Using the Wisdom of Your Body and Mind to Face Stress, Pain, and Illness"
+title: "🌪️🧘🏼‍♀️ Full Catastrophe Living: Using the Wisdom of Your Body and Mind to Face Stress, Pain, and Illness"
 URL: https://bagrounds.org/books/full-catastrophe-living
 Author: 
 tags: 
 ---
 [Home](../index.md) > [Books](./index.md)  
-# 🌪️🧘‍♂️ Full Catastrophe Living: Using the Wisdom of Your Body and Mind to Face Stress, Pain, and Illness  
+# 🌪️🧘🏼‍♀️ Full Catastrophe Living: Using the Wisdom of Your Body and Mind to Face Stress, Pain, and Illness  
 ## 📝🐒 Human Notes  
 - 😴🧘🏼‍♀️ Let go like you sleep.  
+- 🫁 Come back to the breath.  
   
 ## 🤖 AI Summary  
 ### Full Catastrophe Living 🧘‍♂️  

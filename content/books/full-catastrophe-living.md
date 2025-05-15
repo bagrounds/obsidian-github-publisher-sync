@@ -65,4 +65,4 @@ Kabat-Zinn's work is highly regarded and supported by extensive research. 📚 H
 - **Best Fiction Book That Incorporates Related Ideas:** "The Buddha in the Attic" by Julie Otsuka, for exploring themes of acceptance and cultural adaptation. 🎎  
 - **Best More General Book:** "The Power of Now" by Eckhart Tolle, for a broader perspective on present-moment awareness. 🕰️  
 - **Best More Rigorous Book:** "Mindfulness-Based Cognitive Therapy for Depression" by Mark Williams, John Teasdale, Zindel Segal, and Jon Kabat-Zinn. 👩‍⚕️  
-- **Best More Accessible Book:** "10% Happier" by Dan Harris, for a relatable and humorous introduction to mindfulness. 😂
+- **Best More Accessible Book:** [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md) by Dan Harris, for a relatable and humorous introduction to mindfulness. 😂

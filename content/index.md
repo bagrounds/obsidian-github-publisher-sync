@@ -11,7 +11,7 @@ title: 🏡 Home
 ❔ What do 🫵 _you_ 🤔 think?  
   
 ## [🪞 Reflections](./reflections/index.md) ~ Blog (182)  
-- [2025-05-15](./reflections/2025-05-15.md)  
+- [2025-05-15 | 🧘🏼‍♀️ Mindful 😌](./reflections/2025-05-15.md)  
 - [2025-05-14 | 🗺️ Plans 🗓️ | 🤱🏼 Moms ⚖️](./reflections/2025-05-14.md)  
 - [2025-05-13 | 🔮 Planning 📚](./reflections/2025-05-13.md)  
 - [2025-05-12 | 🍩 Doughnuts 🌍](./reflections/2025-05-12.md)  
@@ -25,9 +25,9 @@ title: 🏡 Home
   
 ## [📄  Articles](./articles/index.md) (24)  
   
-## [📚 Books](./books/index.md) (373)  
+## [📚 Books](./books/index.md) (374)  
   
-## [🤖💬 Bot Chats](./bot-chats/index.md) (25)  
+## [🤖💬 Bot Chats](./bot-chats/index.md) (26)  
   
 ## [👥 People](./people/index.md) (7)  
   

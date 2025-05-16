@@ -7,13 +7,14 @@ URL: https://bagrounds.org/bot-chats
 backlinks: false
 ---
 [Home](../index.md)  
-# 🤖💬 Bot Chats (25)  
+# 🤖💬 Bot Chats (26)  
 - [AI Engineering Assistant Technology Recommendations](./ai-engineering-assistant-technology-recommendations.md)  
 - [🌸🌬️🤧🔬📚 Allergy Science Books](./allergy-science-books.md)  
 - [Android Local LLMs](./android-local-llms.md)  
 - [🕸️🪵🏅 Blogging Success](./blogging-success.md)  
 - [✍🏼 Blogiversary 🕯️](./blogiversary.md)  
 - [📖 Book 🧭 Explorer 1](./book-explorer-1.md)  
+- [📖 Book 🧭 Explorer 2](./book-explorer-2.md)  
 - [Books for Democracy](./books-for-democracy.md)  
 - [🇲🇽💃 Cinco de Mayo](./cinco-de-mayo.md)  
 - [Effective Thought-Action Defusion Techniques](./effective-thought-action-defusion-techniques.md)  

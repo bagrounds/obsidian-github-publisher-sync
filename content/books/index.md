@@ -7,8 +7,9 @@ URL: https://bagrounds.org/books
 backlinks: false
 ---
 [Home](../index.md)  
-# 📚 Books (373)  
+# 📚 Books (374)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
+- [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)  
 - [🧑‍🤝‍🧑📈 10 to 25: The Science of Motivating Young People: A Groundbreaking Approach to Leading the Next Generation - And Making Your Own Life Easier](./10-to-25-the-science-of-motivating-young-people-a-groundbreaking-approach-to-leading-the-next-generation-and-making-your-own-life-easier.md)  
 - [👁️ 1984](./1984.md)  
 - [23 Things They Don't Tell You About Capitalism](./23-things-they-dont-tell-you-about-capitalism.md)  
@@ -112,7 +113,7 @@ backlinks: false
 - [Foundations of Software Testing](./foundations-of-software-testing.md)  
 - [Freakonomics](./freakonomics.md)  
 - [🌳🍎🍽️ From Tree to Table: Growing Backyard Fruit Trees in the Pacific Maritime Climate](./from-tree-to-table-growing-backyard-fruit-trees-in-the-pacific-maritime-climate.md)  
-- [🌪️🧘‍♂️ Full Catastrophe Living: Using the Wisdom of Your Body and Mind to Face Stress, Pain, and Illness](./full-catastrophe-living.md)  
+- [🌪️🧘🏼‍♀️ Full Catastrophe Living: Using the Wisdom of Your Body and Mind to Face Stress, Pain, and Illness](./full-catastrophe-living.md)  
 - [🌍🌿 Gaia's Garden: A Guide to Home-Scale Permaculture](./gaias-garden.md)  
 - [Gödel, Escher, Bach: An Eternal Golden Braid](./godel-escher-bach.md)  
 - [✅😌 Getting Things Done: The Art of Stress-Free Productivity](./getting-things-done-the-art-of-stress-free-productivity.md)  

@@ -15,7 +15,7 @@ share: true
   
 ### 🔑 Key Concepts  
   
-* 🔗 **Attachment Theory:** 👶 The book applies principles of attachment theory, typically used to understand parent-child bonds, to adult romantic relationships. ❤️‍🩹 It suggests that humans have an innate need for safe emotional connection with a loved one, similar to a child's need for a parent.  
+* **[🫂💖 Attachment Theory](../topics/attachment-theory.md):** 👶 The book applies principles of attachment theory, typically used to understand parent-child bonds, to adult romantic relationships. ❤️‍🩹 It suggests that humans have an innate need for safe emotional connection with a loved one, similar to a child's need for a parent.  
 * ❤️‍🩹 **Emotional Responsiveness (A.R.E.):** 🎯 A core concept is the importance of emotional responsiveness, broken down into Accessibility, Responsiveness, and Engagement.  
     * 👂 Accessibility: 🤝 Can you reach your partner and get their attention?  
     * 👂 Responsiveness: 🫂 Can you rely on your partner to respond emotionally to your needs and concerns?  

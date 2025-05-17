@@ -62,7 +62,7 @@ share: true
 * 🧑‍🤝‍🧑 **Adult Attachment & Relationships:**  
     * *[🧑‍❤️‍🧑🔗 Attached: The New Science of Adult Attachment and How It Can Help You Find - and Keep - Love](./attached-the-new-science-of-adult-attachment-and-how-it-can-help-you-find-and-keep-love.md)* by Amir Levine & Rachel S.F. Heller - A highly popular introduction to adult attachment styles in romantic relationships.  
     * 🧠 *Wired for Love: How Understanding Your Partner's Brain and Attachment Style Can Help You Defuse Conflict and Build a Secure Relationship* by Stan Tatkin - Focuses on neuroscience and partner dynamics.  
-    * 💖 *Hold Me Tight: Seven Conversations for a Lifetime of Love* by Sue Johnson - Based on Emotionally Focused Therapy (EFT), rooted in attachment theory.  
+    * [🫂 Hold Me Tight: Seven Conversations for a Lifetime of Love](./hold-me-tight-seven-conversations-for-a-lifetime-of-love.md) by Sue Johnson - Based on Emotionally Focused Therapy (EFT), rooted in attachment theory.  
     * 🩹 *The Power of Attachment: How to Create Deep and Lasting Intimate Relationships* by Diane Poole Heller - Explores healing attachment wounds.  
     * 🏳️‍🌈 *Polysecure: Attachment, Trauma and Consensual Nonmonogamy* by Jessica Fern - Applies attachment theory to non-monogamous relationships.  
 * 🛋️ **Clinical Applications:**  

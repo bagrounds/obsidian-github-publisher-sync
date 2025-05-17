@@ -8,12 +8,11 @@ share: true
 [Home](../index.md) > [Books](./index.md)  
 # 🗓️➕ 40 Days to Positive Change: Daily Support to Create a New Habit  
 ## 📝🐒 Human Notes  
-- 🙏🏼 Gratitude  
-    - 🔁 What habit would  
-        - 🎁 be a gift?  
-        - 🙏🏼 inspire gratitude?  
-        - 🤝 encourage trust and investment?  
-- 😄 Joy  
+### 🙏🏼 Gratitude  
+A 🔁 habit for self 🤝🏼 trust and 🌱 investment  
+  
+### 😄 Joy  
+🔜  
   
 ## 📖 Book Report: *40 Days to Positive Change: Daily Support to Create a New Habit* by Kelly McGonigal  
   

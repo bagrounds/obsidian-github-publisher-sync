@@ -3,11 +3,11 @@ share: true
 goodreads: https://www.goodreads.com/author/list/32817.Russell_L_Ackoff
 Wikipedia: https://en.wikipedia.org/wiki/Russell_L._Ackoff
 aliases:
-  - 🤔⚙️🗣️🤝💡🧩🔭📚👴Russell Ackoff
-title: 🤔⚙️🗣️🤝💡🧩🔭📚👴Russell Ackoff
+  - 🤔⚙️🗣️🤝💡🧩🔭📚👴 Russell Ackoff
+title: 🤔⚙️🗣️🤝💡🧩🔭📚👴 Russell Ackoff
 ---
 [Home](../index.md) > [People](./index.md)  
-# 🤔⚙️🗣️🤝💡🧩🔭📚👴Russell Ackoff  
+# 🤔⚙️🗣️🤝💡🧩🔭📚👴 Russell Ackoff  
 ## 🤖 AI Summary  
 🧠 Russell Lincoln Ackoff (1919-2009) was an American organizational theorist, 👨‍💼 consultant, and 👨‍🏫 professor emeritus of management science at the Wharton School, University of Pennsylvania. 🌟 He was a pioneer in the fields of operations research, 🌐 systems thinking, and 📊 management science.  
   

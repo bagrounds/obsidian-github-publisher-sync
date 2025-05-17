@@ -7,7 +7,7 @@ URL: https://bagrounds.org/books
 backlinks: false
 ---
 [Home](../index.md)  
-# 📚 Books (375)  
+# 📚 Books (376)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)  
 - [🧑‍🤝‍🧑📈 10 to 25: The Science of Motivating Young People: A Groundbreaking Approach to Leading the Next Generation - And Making Your Own Life Easier](./10-to-25-the-science-of-motivating-young-people-a-groundbreaking-approach-to-leading-the-next-generation-and-making-your-own-life-easier.md)  
@@ -33,6 +33,7 @@ backlinks: false
 - [Attention](./attention.md)  
 - [Automatic Control Systems](./automatic-control-systems.md)  
 - [Bayes' Theorem Examples](./bayes-theorem-examples.md)  
+- [👤🧠 Being You: A New Science of Consciousness](./being-you-a-new-science-of-consciousness.md)  
 - [Better Than Before: What I Learned About Making and Breaking Habits - to Sleep More, Quit Sugar, Procrastinate Less, and Generally Build a Happier Life](./better-than-before.md)  
 - [⚛️🌎 Beyond Weird: Why Everything You Thought You Knew about Quantum Physics Is Different](./beyond-weird.md)  
 - [🪄 Big Magic: Creative Living Beyond Fear](./big-magic.md)  

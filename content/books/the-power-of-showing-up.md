@@ -47,7 +47,7 @@ tags:
 * ***Raising a Secure Child*** by Kent Hoffman, Glen Cooper, & Bert Powell: 🛡️ Based on the Circle of Security program, focusing on nurturing attachment and emotional resilience.  
 * ***The Attachment Parenting Book*** by Dr. William & Martha Sears: 🤱 A foundational text outlining attachment parenting principles like bonding, breastfeeding, and babywearing.  
 * ***The Conscious Parent*** by Shefali Tsabary: 🧘 A philosophical guide emphasizing mindfulness and parental self-awareness in raising children.  
-* ***Hold Me Tight*** by Dr. Sue Johnson: 🤗 While focused on romantic relationships, it uses attachment theory (Emotionally Focused Therapy) to foster connection, relevant for understanding attachment bonds generally.  
+* **[🫂 Hold Me Tight: Seven Conversations for a Lifetime of Love](./hold-me-tight-seven-conversations-for-a-lifetime-of-love.md)** by Dr. Sue Johnson: 🤗 While focused on romantic relationships, it uses attachment theory (Emotionally Focused Therapy) to foster connection, relevant for understanding attachment bonds generally.  
   
 ### 🎭 Contrasting Perspectives (Alternative Parenting Approaches)  
 * ***Battle Hymn of the Tiger Mother*** by Amy Chua: 🐅 Presents a stricter, achievement-focused parenting style contrasting sharply with the attachment-based approach.  

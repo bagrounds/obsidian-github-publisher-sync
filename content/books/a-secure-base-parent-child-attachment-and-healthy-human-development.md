@@ -59,7 +59,7 @@ share: true
 3. **❤️ Books Applying Attachment to Adult Relationships:**  
     * *[🧑‍❤️‍🧑🔗 Attached: The New Science of Adult Attachment and How It Can Help You Find - and Keep - Love](./attached-the-new-science-of-adult-attachment-and-how-it-can-help-you-find-and-keep-love.md)* by Amir Levine & Rachel S.F. Heller: A very popular introduction to adult attachment styles (secure, anxious, avoidant), though sometimes criticized for bias against avoidant styles.  
     * 🧠 *Wired for Love: How Understanding Your Partner's Brain and Attachment Style Can Help You Defuse Conflict and Build a Secure Relationship* by Stan Tatkin: Integrates attachment theory and neuroscience for couples.  
-    * 🫂 *Hold Me Tight: Seven Conversations for a Lifetime of Love* by Sue Johnson: Focuses on Emotionally Focused Therapy (EFT), rooted in attachment theory, for couples. See also *Attachment Theory in Practice* by Sue Johnson.  
+    * [🫂 Hold Me Tight: Seven Conversations for a Lifetime of Love](./hold-me-tight-seven-conversations-for-a-lifetime-of-love.md) by Sue Johnson: Focuses on Emotionally Focused Therapy (EFT), rooted in attachment theory, for couples. See also *Attachment Theory in Practice* by Sue Johnson.  
     * 🔗 *The Power of Attachment: How to Create Deep and Lasting Intimate Relationships* by Diane Poole Heller: Explores healing attachment wounds and building secure relationships in adulthood.  
 4. **👩‍⚕️ Books on Attachment in Therapy:**  
     * 🛋️ *Attachment in Psychotherapy* by David J. Wallin: A highly regarded text integrating attachment theory into clinical practice.  

@@ -98,7 +98,7 @@ Here are some subtopics of Neuroplasticity/Mind-Body Interconnection that are _n
 - **The Impact of Sleep on Cognitive Function and Exercise Benefits**: 😴 While exercise can improve sleep, the intricate relationship between sleep quality and the neurological benefits of exercise isn't a primary focus.  
     - Recommendation: [😴💭 Why We Sleep: Unlocking the Power of Sleep and Dreams](../books/why-we-sleep-unlocking-the-power-of-sleep-and-dreams.md) by Matthew Walker. As recommended before, this provides a comprehensive understanding of sleep's vital role in brain health. 🌙  
 - **The Effects of Stress Reduction Techniques (beyond exercise) on the Brain**: 🧘 While exercise is a stress reducer, other methods like meditation and mindfulness aren't central to the book's arguments about brain function.  
-    - Recommendation: _Altered Traits: Science Reveals How Meditation Changes Your Mind, Brain, and Body_ by Daniel Goleman and Richard J. Davidson.2 This book explores the neurological impacts of various meditation practices. 🧠✨  
+    - Recommendation: [🔬🧘🏼‍♀️🧠 Altered Traits: Science Reveals How Meditation Changes Your Mind, Brain, and Body](../books/altered-traits-science-reveals-how-meditation-changes-your-mind-brain-and-body.md) by Daniel Goleman and Richard J. Davidson.2 This book explores the neurological impacts of various meditation practices. 🧠✨  
   
 Here are some books that cover similar topics to _Spark_ but from a slightly **different perspective**:  
   

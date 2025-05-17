@@ -7,7 +7,7 @@ URL: https://bagrounds.org/books
 backlinks: false
 ---
 [Home](../index.md)  
-# 📚 Books (374)  
+# 📚 Books (375)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)  
 - [🧑‍🤝‍🧑📈 10 to 25: The Science of Motivating Young People: A Groundbreaking Approach to Leading the Next Generation - And Making Your Own Life Easier](./10-to-25-the-science-of-motivating-young-people-a-groundbreaking-approach-to-leading-the-next-generation-and-making-your-own-life-easier.md)  
@@ -20,6 +20,7 @@ backlinks: false
 - [Adaptive Control](./adaptive-control.md)  
 - [🧑‍🌾🌿 A Gardener's Guide to Botany](./a-gardeners-guide-to-botany.md)  
 - [🤔💻🧠 Algorithms to Live By: The Computer Science of Human Decisions](./algorithms-to-live-by.md)  
+- [🔬🧘🏼‍♀️🧠 Altered Traits: Science Reveals How Meditation Changes Your Mind, Brain, and Body](./altered-traits-science-reveals-how-meditation-changes-your-mind-brain-and-body.md)  
 - [An Architect of Democracy: Building a Mosaic of Peace](./an-architect-of-democracy.md)  
 - [An Introduction to Causal Inference](./an-introduction-to-causal-inference.md)  
 - [Antifragile: Things That Gain from Disorder](./antifragile-things-that-gain-from-disorder.md)  

@@ -49,7 +49,7 @@ This report summarizes Kelly McGonigal's audio program, *40 Days to Positive Cha
 ### 🆚 Contrasting Books (Different Approaches or Focus):  
   
 * **[🧘🏋️ The Willpower Instinct: How Self-Control Works, Why It Matters, and What You Can Do to Get More of It](./the-willpower-instinct.md) by Kelly McGonigal:** While by the same author, this book delves deeper into the science of self-control and willpower, which is a component of habit change but not the sole focus.  
-* 💖 **Daring Greatly by Brené Brown:** This book focuses on vulnerability, shame, and courage, which can be underlying factors in the ability to make positive changes but approaches change from an emotional and interpersonal perspective rather than a purely habit-focused one.  
+* **[🦁🫀 Daring Greatly: How the Courage to Be Vulnerable Transforms the Way We Live, Love, Parent, and Lead](./daring-greatly-how-the-courage-to-be-vulnerable-transforms-the-way-we-live-love-parent-and-lead.md) by Brené Brown:** This book focuses on vulnerability, shame, and courage, which can be underlying factors in the ability to make positive changes but approaches change from an emotional and interpersonal perspective rather than a purely habit-focused one.  
   
 ### ✨ Creatively Related Books (Broader Themes of Well-being & Personal Growth):  
   

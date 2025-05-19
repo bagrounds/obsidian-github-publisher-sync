@@ -39,7 +39,7 @@ share: true
 ### ⚖️ Contrasting Perspectives (Alternative Approaches)  
 * 😔 ***Feeling Good: The New Mood Therapy*** **by David D. Burns:** Represents a more clinical Cognitive Behavioral Therapy (CBT) approach, focusing specifically on identifying and reframing cognitive distortions to treat depression and anxiety. While *Psycho-Cybernetics* incorporates some CBT-like ideas, *Feeling Good* is more structured and therapy-oriented.  
 * ***[🔦💡 Man's Search for Meaning](./mans-search-for-meaning.md)*** **by Viktor Frankl:** Contrasts Maltz's focus on goal achievement with an emphasis on finding meaning and purpose, even in suffering, as the primary human drive (Logotherapy).  
-* 💖 ***Daring Greatly*** **by Brené Brown:** Focuses on vulnerability, shame, and courage, offering a perspective centered on emotional exposure rather than the mechanistic goal-striving model of *Psycho-Cybernetics*.  
+* 💖 **[🦁🫀 Daring Greatly: How the Courage to Be Vulnerable Transforms the Way We Live, Love, Parent, and Lead](./daring-greatly-how-the-courage-to-be-vulnerable-transforms-the-way-we-live-love-parent-and-lead.md)** **by Brené Brown:** Focuses on vulnerability, shame, and courage, offering a perspective centered on emotional exposure rather than the mechanistic goal-striving model of *Psycho-Cybernetics*.  
 * 🛤️ ***The Road Less Traveled*** **by M. Scott Peck:** While a self-help classic, it integrates spiritual and psychological concepts with an emphasis on discipline, love, and grace, offering a different, less mechanistic framework than Maltz's cybernetic model.  
   
 ### 💡 Creatively Related (Expanding Concepts)  

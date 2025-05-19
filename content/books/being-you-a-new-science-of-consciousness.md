@@ -7,6 +7,9 @@ share: true
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 👤🧠 Being You: A New Science of Consciousness  
+## 📝🐒 Human Notes  
+- [🌡️⚙️ Inventing Temperature: Measurement and Scientific Progress](./inventing-temperature-measurement-and-scientific-progress.md)  
+  
 ## 🧠 Book Report: 📖 Being You: A New Science of Consciousness by Anil Seth  
   
 ### 🚀 Introduction  

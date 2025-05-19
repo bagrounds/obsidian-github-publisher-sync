@@ -7,7 +7,7 @@ URL: https://bagrounds.org/books
 backlinks: false
 ---
 [Home](../index.md)  
-# 📚 Books (376)  
+# 📚 Books (379)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)  
 - [🧑‍🤝‍🧑📈 10 to 25: The Science of Motivating Young People: A Groundbreaking Approach to Leading the Next Generation - And Making Your Own Life Easier](./10-to-25-the-science-of-motivating-young-people-a-groundbreaking-approach-to-leading-the-next-generation-and-making-your-own-life-easier.md)  
@@ -67,6 +67,7 @@ backlinks: false
 - [🧰💬 Crucial Conversations: Tools for Talking When Stakes Are High](./crucial-conversations-tools-for-talking-when-stakes-are-high.md)  
 - [Cybernetics](./cybernetics.md)  
 - [Daemon](./daemon.md)  
+- [🦁🫀 Daring Greatly: How the Courage to Be Vulnerable Transforms the Way We Live, Love, Parent, and Lead](./daring-greatly-how-the-courage-to-be-vulnerable-transforms-the-way-we-live-love-parent-and-lead.md)  
 - [🏛️💰 Debt: The First 5,000 Years](./debt-the-first-5000-years.md)  
 - [Debugging: The 9 Indispensable Rules for Finding Even the Most Elusive Software and Hardware Problems](./debugging.md)  
 - [Deep Learning](./deep-learning.md)  
@@ -133,6 +134,7 @@ backlinks: false
 - [Haskell Programming from First Principles](./haskell-programming-from-first-principles.md)  
 - [Head First Statistics](./head-first-statistics.md)  
 - [🙈⚡🔬🌌 Hidden Potential: The Science of Achieving Greater Things](./hidden-potential-the-science-of-achieving-greater-things.md)  
+- [🫂 Hold Me Tight: Seven Conversations for a Lifetime of Love](./hold-me-tight-seven-conversations-for-a-lifetime-of-love.md)  
 - [How Democracies Die](./how-democracies-die.md)  
 - [How Google Tests Software](./how-google-tests-software.md)  
 - [How Learning Works](./how-learning-works.md)  
@@ -165,6 +167,7 @@ backlinks: false
 - [🧬👥💾 Life 3.0: Being Human in the Age of Artificial Intelligence](./life-3-0.md)  
 - [Longitude: The True Story of a Lone Genius Who Solved the Greatest Scientific Problem of His Time](./longitude.md)  
 - [🧑🏿⚖️🧑🏻 Long Time Coming: Reckoning With Race In America](./long-time-coming-reckoning-with-race-in-america.md)  
+- [❤️🧠 Love Sense: The Revolutionary New Science of Romantic Relationships](./love-sense-the-revolutionary-new-science-of-romantic-relationships.md)  
 - [Macroeconomics](./macroeconomics.md)  
 - [Made to Stick: Why Some Ideas Survive and Others Die](./made-to-stick.md)  
 - [Mad House: How Donald Trump, MAGA Mean Girls, a Former Used Car Salesman, a Florida Nepo Baby, and a Man with Rats in His Walls Broke Congress](./mad-house.md)  

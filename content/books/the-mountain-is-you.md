@@ -41,7 +41,7 @@ Brianna Wiest's writing is often described as:
   
 ### 📖 Similar Reads (Overcoming Inner Obstacles, Self-Mastery)  
 1. **[⚛️🔄 Atomic Habits](./atomic-habits.md)** by James Clear: Focuses on the power of small, consistent changes to build good habits and break bad ones 🚫, aligning with Wiest's theme of actionable steps towards self-improvement 🌱.  
-2. **Daring Greatly** by Brené Brown: 🦸‍♀️ Explores vulnerability, shame 😔, and courage 💪, complementing Wiest's emphasis on confronting fears 😟 and building resilience through emotional honesty 🫂.  
+2. **[🦁🫀 Daring Greatly: How the Courage to Be Vulnerable Transforms the Way We Live, Love, Parent, and Lead](./daring-greatly-how-the-courage-to-be-vulnerable-transforms-the-way-we-live-love-parent-and-lead.md)** by Brené Brown: 🦸‍♀️ Explores vulnerability, shame 😔, and courage 💪, complementing Wiest's emphasis on confronting fears 😟 and building resilience through emotional honesty 🫂.  
 3. **[Mindset](./mindset.md): The New Psychology of Success** by Carol S. Dweck: 🧠 Introduces the concept of fixed vs. growth mindsets 🌱, echoing Wiest's ideas on how beliefs shape potential ✨ and the importance of embracing challenges for growth.  
 4. **The Four Agreements** by Don Miguel Ruiz: 🤝 Offers a code of conduct based on ancient Toltec wisdom to achieve personal freedom 🕊️ and peace ☮️, similar to Wiest's focus on changing inner narratives and beliefs.  
 5. **You Are a Badass** by Jen Sincero: 💃 A motivational guide to overcoming self-doubt 😟 and limiting beliefs with a humorous and accessible approach 😂.  

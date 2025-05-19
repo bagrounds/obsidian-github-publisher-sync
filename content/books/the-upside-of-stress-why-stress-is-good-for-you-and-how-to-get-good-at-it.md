@@ -40,7 +40,7 @@ share: true
   
 * 🧠 **[Mindset](./mindset.md): The New Psychology of Success by Carol S. Dweck:** Explores the foundational concept of fixed vs. growth mindsets, which aligns closely with McGonigal's emphasis on how beliefs shape outcomes. 👩‍🏫 Dweck's work is referenced by McGonigal.  
 * **[❤️‍🔥💪 Grit: The Power of Passion and Perseverance](./grit-the-power-of-passion-and-perseverance.md) by Angela Duckworth:** Focuses on the importance of perseverance and passion for long-term goals, complementing the idea of embracing challenges found in *The Upside of Stress*.  
-* 💖 **Daring Greatly: How the Courage to Be Vulnerable Transforms the Way We Live, Love, Parent, and Lead by Brené Brown:** Discusses vulnerability and courage in facing difficult situations, echoing the theme of engaging with challenges rather than avoiding them.  
+* **[🦁🫀 Daring Greatly: How the Courage to Be Vulnerable Transforms the Way We Live, Love, Parent, and Lead](./daring-greatly-how-the-courage-to-be-vulnerable-transforms-the-way-we-live-love-parent-and-lead.md) by Brené Brown:** Discusses vulnerability and courage in facing difficult situations, echoing the theme of engaging with challenges rather than avoiding them.  
 * 🛤️ **The Obstacle Is the Way: The Timeless Art of Turning Trials into Triumph by Ryan Holiday:** Draws on Stoic philosophy to argue that obstacles can be sources of strength and opportunity, similar to McGonigal's reframing of stress.  
 * 😊 **Hardwiring Happiness: The New Brain Science of Contentment, Calm, and Confidence by Rick Hanson:** Focuses on neuroplasticity and actively cultivating positive mental states, relating to the idea of intentionally shifting one's response to experiences.  
   

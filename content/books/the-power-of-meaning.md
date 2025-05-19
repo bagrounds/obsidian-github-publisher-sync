@@ -55,7 +55,7 @@ Smith's work is well-researched and accessible. She blends academic findings wit
 ### Additional Book Recommendations 📚  
   
 * **Best Alternate Book on the Same Topic**: "[Man's Search for Meaning](./mans-search-for-meaning.md)" by Viktor Frankl. 📖💡  
-* **Best Tangentially Related Book**: "Daring Greatly" by Brené Brown. 💖💪  
+* **Best Tangentially Related Book**: [🦁🫀 Daring Greatly: How the Courage to Be Vulnerable Transforms the Way We Live, Love, Parent, and Lead](./daring-greatly-how-the-courage-to-be-vulnerable-transforms-the-way-we-live-love-parent-and-lead.md) by Brené Brown. 💖💪  
 * **Best Diametrically Opposed Book**: "The Subtle Art of Not Giving a F\*ck" by Mark Manson. 😅🤷  
 * **Best Fiction Book Incorporating Related Ideas**: "A Gentleman in Moscow" by Amor Towles. 🏰🕰️  
 * **Best More General Book**: "[Sapiens: A Brief History of Humankind](./sapiens-a-brief-history-of-humankind.md)" by Yuval Noah Harari. 🌍🧠  

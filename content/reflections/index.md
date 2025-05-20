@@ -7,7 +7,8 @@ URL: https://bagrounds.org/reflections
 backlinks: false
 ---
 [Home](../index.md)  
-# 🪞 Reflections (186)  
+# 🪞 Reflections (187)  
+- [2025-05-20 | 👿 Health 🚫🏥 Insurance ⚔️](./2025-05-20.md)  
 - [2025-05-19 | 🧠 Conscious 😴 Rest](./2025-05-19.md)  
 - [2025-05-18 | 🦁 Daring 🫀](./2025-05-18.md)  
 - [2025-05-17 | 🧩 Ackoff | 👤 Being | 🫂 Love ❤️](./2025-05-17.md)  

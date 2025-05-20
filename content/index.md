@@ -11,7 +11,7 @@ title: 🏡 Home
 ❔ What do 🫵 _you_ 🤔 think?  
   
 ## [🪞 Reflections](./reflections/index.md) ~ Blog (186)  
-- [2025-05-19](./reflections/2025-05-19.md)  
+- [2025-05-19 | 🧠 Conscious 😴 Rest](./reflections/2025-05-19.md)  
 - [2025-05-18 | 🦁 Daring 🫀](./reflections/2025-05-18.md)  
 - [2025-05-17 | 🧩 Ackoff | 👤 Being | 🫂 Love ❤️](./reflections/2025-05-17.md)  
 - [2025-05-16 | 🧠 Altered Traits 🧘🏼‍♀️](./reflections/2025-05-16.md)  

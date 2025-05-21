@@ -12,7 +12,7 @@ share: true
 ### 📖 Overview  
   
 * *️⃣ **Title:** The Neuroscience of Change: A Compassion-Based Program for Personal Transformation  
-* ✍️ **Author:** Kelly McGonigal, PhD, a health psychologist and lecturer at Stanford University known for her work on the mind-body connection, resilience, and compassion.  
+* ✍️ **Author:** [Kelly McGonigal](../people/kelly-mcgonigal.md), PhD, a health psychologist and lecturer at Stanford University known for her work on the mind-body connection, resilience, and compassion.  
 * 🎧 **Format:** Primarily an audio program (available as download or CD set), consisting of six sessions with guided practices and exercises.  
 * 💡 **Core Idea:** Integrates findings from neuroscience 🧠, psychology ⚕️, and medicine 💊 with contemplative practices (like mindfulness and compassion) to create a practical program for personal transformation ✨. It aims to help individuals understand how their brain works and use that knowledge, combined with self-awareness and self-compassion, to make lasting changes 💖.  
   

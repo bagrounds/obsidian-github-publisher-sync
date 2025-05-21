@@ -43,7 +43,7 @@ The book is generally available in hardbound format and sometimes with online ac
 ### 🧑‍⚖️ Similar Books (Focus on ERISA and Employee Benefits Law)  
   
 * 📘 ***ERISA Fiduciary Answer Book*** (Wolters Kluwer): Specifically focuses on the complex area of ERISA fiduciary duties, liabilities, and related issues, offering a deeper dive than the broader ERISA Law Answer Book.  
-* 📘 ***ERISA Benefits Litigation Answer Book*** (Wolters Kluwer): Concentrates on the litigation aspects of ERISA, detailing causes of action, defenses, and unique litigation issues related to various benefit plans.  
+* **[🧑‍⚖️❓ ERISA Benefits Litigation Answer Book](./erisa-benefits-litigation-answer-book.md)** (Wolters Kluwer): Concentrates on the litigation aspects of ERISA, detailing causes of action, defenses, and unique litigation issues related to various benefit plans.  
 * 📘 ***The ERISA Survey of Federal Circuits*** (American Bar Association): Provides a circuit-by-circuit analysis of key ERISA litigation issues, offering a different perspective focusing on judicial interpretation across different jurisdictions.  
 * 📘 ***Qualified Retirement Plans*** by Bruce J. Temkin (Aspen Publishers): A comprehensive treatise covering the technical aspects of qualified retirement plans, including design, implementation, and compliance under ERISA and the Internal Revenue Code.  
   

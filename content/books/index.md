@@ -7,7 +7,7 @@ URL: https://bagrounds.org/books
 backlinks: false
 ---
 [Home](../index.md)  
-# 📚 Books (384)  
+# 📚 Books (385)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)  
 - [🧑‍🤝‍🧑📈 10 to 25: The Science of Motivating Young People: A Groundbreaking Approach to Leading the Next Generation - And Making Your Own Life Easier](./10-to-25-the-science-of-motivating-young-people-a-groundbreaking-approach-to-leading-the-next-generation-and-making-your-own-life-easier.md)  
@@ -381,6 +381,7 @@ backlinks: false
 - [Understanding Modern Money](./understanding-modern-money.md)  
 - [🤔🔌 Understanding Power: The Indispensable Chomsky](./understanding-power-the-indispensable-chomsky.md)  
 - [Universal Principles of Design](./universal-principles-of-design.md)  
+- [🤕❤️ What if Symptoms Are Your Friend?: An Introduction to BodyMind Bridge and Your Self-Healing Mind](./what-if-symptoms-are-your-friend-an-introduction-to-bodymind-bridge-and-your-self-healing-mind.md)  
 - [🌡️✅🌎 What If We Get It Right?: Visions of Climate Futures](./what-if-we-get-it-right-visions-of-climate-futures.md)  
 - [What's Going On in There?: How the Brain and Mind Develop in the First Five Years of Life](./whats-going-on-in-there.md)  
 - [👃🤧 What's in the Air?: The Complete Guide to Seasonal and Year-Round Airborne Allergies](./whats-in-the-air-the-complete-guide-to-seasonal-and-year-round-airborne-allergies.md)  

@@ -1,12 +1,12 @@
 ---
-title: "🏛️💻 Erisa: The Law and the Code"
+title: "🏛️💻 ERISA: The Law and the Code"
 aliases:
-  - "🏛️💻 Erisa: The Law and the Code"
+  - "🏛️💻 ERISA: The Law and the Code"
 URL: https://bagrounds.org/books/erisa-the-law-and-the-code
 share: true
 ---
 [Home](../index.md) > [Books](./index.md)  
-# 🏛️💻 Erisa: The Law and the Code  
+# 🏛️💻 ERISA: The Law and the Code  
 ## 📚 Book Report: ERISA: The Law and the Code  
   
 ### 📖 Introduction  

@@ -54,7 +54,7 @@ share: true
 ### 💡 Creatively Related Books  
 * 🧠 **Systems Thinking (General):**  
     * ♾️ *[The Fifth Discipline](./the-fifth-discipline.md): The Art & Practice of The Learning Organization* by Peter M. Senge: A classic on systems thinking and building learning organizations.  
-    * 🧐 Books by Russell L. Ackoff (e.g., *Ackoff's Best*, *Systems Thinking for Curious Managers*, *On Purposeful Systems*, *Beating the System: Using Creativity to Outsmart Bureaucracies*, *Ackoff's Fables: Irreverent Reflections on Business and Bureaucracy*): Ackoff was a pioneer in systems thinking and organizational design, often addressing bureaucracy with wit and insight.  
+    * 🧐 Books by [Russell Ackoff](../people/russell-ackoff.md) (e.g., *Ackoff's Best*, *Systems Thinking for Curious Managers*, *On Purposeful Systems*, *Beating the System: Using Creativity to Outsmart Bureaucracies*, *Ackoff's Fables: Irreverent Reflections on Business and Bureaucracy*): Ackoff was a pioneer in systems thinking and organizational design, often addressing bureaucracy with wit and insight.  
 * 🧠 **Organizational Psychology/Behavior:**  
     * 📊 *Business Psychology and Organizational Behaviour* by Eugene McKenna: Covers principles of psychology applied to work, including topics relevant to navigating organizational structures.  
     * 🎭 *Moral Mazes: The World of Corporate Managers* by Robert Jackall: Explores how bureaucratic structures shape managerial behavior, thinking, and ethics.  

@@ -7,7 +7,7 @@ URL: https://bagrounds.org/books
 backlinks: false
 ---
 [Home](../index.md)  
-# 📚 Books (381)  
+# 📚 Books (384)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)  
 - [🧑‍🤝‍🧑📈 10 to 25: The Science of Motivating Young People: A Groundbreaking Approach to Leading the Next Generation - And Making Your Own Life Easier](./10-to-25-the-science-of-motivating-young-people-a-groundbreaking-approach-to-leading-the-next-generation-and-making-your-own-life-easier.md)  
@@ -175,6 +175,7 @@ backlinks: false
 - [Mad House: How Donald Trump, MAGA Mean Girls, a Former Used Car Salesman, a Florida Nepo Baby, and a Man with Rats in His Walls Broke Congress](./mad-house.md)  
 - [Make It Stick](./make-it-stick.md)  
 - [Making Reliable Distributed Systems in the Presence of Software Errors](./making-reliable-distributed-systems-in-the-presence-of-software-errors.md)  
+- [💰⚕️ Making Them Pay: How to Get the Most from Health Insurance and Managed Care](./making-them-pay-how-to-get-the-most-from-health-insurance-and-managed-care.md)  
 - [🔦💡 Man's Search for Meaning](./mans-search-for-meaning.md)  
 - [🏭🫡 Manufacturing Consent: The Political Economy of the Mass Media](./manufacturing-consent.md)  
 - [Measure What Matters](./measure-what-matters.md)  
@@ -193,6 +194,7 @@ backlinks: false
 - [🪄💭 Necessary Illusions: Thought Control in Democratic Societies](./necessary-illusions.md)  
 - [🌐💰 Networks, Crowds, and Markets: Reasoning About a Highly Connected World](./networks-crowds-and-markets.md)  
 - [🧠🧘🏼‍♀️ Neuro-Discipline: Everyday Neuroscience for Self-Discipline, Focus, and Defeating Your Brain's Impulsive and Distracted Nature](./neuro-discipline-everyday-neuroscience-for-self-discipline-focus-and-defeating-your-brains-impulsive-and-distracted-nature.md)  
+- [🙅🏼‍♀️🧾🏥⚔️ Never Pay the First Bill: And Other Ways to Fight the Health Care System and Win](./never-pay-the-first-bill-and-other-ways-to-fight-the-health-care-system-and-win.md)  
 - [🙅‍♀️✂️⚖️ Never Split the Difference: Negotiating As If Your Life Depended On It](./never-split-the-difference.md)  
 - [🚫🎭🧠 No-Drama Discipline: The Whole-Brain Way to Calm the Chaos and Nurture Your Child's Developing Mind](./no-drama-discipline.md)  
 - [Noise](./noise.md)  
@@ -214,6 +216,7 @@ backlinks: false
 - [🗓️✅ Organize Your Day: 17 Easy Strategies to Manage Your Day, Improve Productivity and Overcome Procrastination](./organize-your-day-17-easy-strategies-to-manage-your-day-improve-productivity-and-overcome-procrastination.md)  
 - [Outlive](./outlive.md)  
 - [Out Of The Crisis](./out-of-the-crisis.md)  
+- [🧑‍⚕️🗣️ Patient Advocacy for Health Care Quality: Strategies for Achieving Patient-Centered Care](./patient-advocacy-for-health-care-quality-strategies-for-achieving-patient-centered-care.md)  
 - [👶🤔 Patterns of Attachment: A Psychological Study of the Strange Situation](./patterns-of-attachment-a-psychological-study-of-the-strange-situation.md)  
 - [Pax Democratica: A Strategy for the 21st Century](./pax-democratica.md)  
 - [Peak](./peak.md)  

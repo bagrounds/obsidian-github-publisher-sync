@@ -25,7 +25,7 @@ title: 🏡 Home
   
 ## [📄  Articles](./articles/index.md) (24)  
   
-## [📚 Books](./books/index.md) (380)  
+## [📚 Books](./books/index.md) (384)  
   
 ## [🤖💬 Bot Chats](./bot-chats/index.md) (26)  
   

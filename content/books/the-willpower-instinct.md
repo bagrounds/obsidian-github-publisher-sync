@@ -14,7 +14,7 @@ tags:
 ### ℹ️ Introduction  
   
 * 🔖 **Title:** *The Willpower Instinct: How Self-Control Works, Why It Matters, and What You Can Do to Get More of It*  
-* 🧑‍⚕️ **Author:** Kelly McGonigal, PhD (Health Psychologist and Lecturer at Stanford University).  
+* 🧑‍⚕️ **Author:** [Kelly McGonigal](../people/kelly-mcgonigal.md), PhD (Health Psychologist and Lecturer at Stanford University).  
 * 🧠 **Main Topic:** The book delves into the science of self-control, drawing from psychology, neuroscience, economics, and medicine to explain what willpower is, how it functions, and why it's crucial for achieving personal goals, improving health, and enhancing productivity. 🎯 It aims to translate research into practical strategies.  
   
 ### 🗝️ Key Concepts  

@@ -11,7 +11,7 @@ share: true
   
 ### ✍️ Introduction  
   
-* 👩‍⚕️ **Author:** Kelly McGonigal, PhD, a health psychologist and lecturer at Stanford University.  
+* 👩‍⚕️ **Author:** [Kelly McGonigal](../people/kelly-mcgonigal.md), PhD, a health psychologist and lecturer at Stanford University.  
 * 🧠 **Central Premise:** This book challenges the widespread belief that stress is inherently harmful. ⚠️ McGonigal argues that stress itself isn't bad; rather, it's the *belief* that stress is bad for you that causes the most damage. 💡 She proposes that changing your mindset about stress can make you healthier, happier, and more capable.  
   
 ### 🔑 Key Concepts  

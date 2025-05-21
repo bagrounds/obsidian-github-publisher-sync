@@ -10,7 +10,8 @@ title: 🏡 Home
 📑 Notes, 💭 thoughts, and 🔗 Links.  
 ❔ What do 🫵 _you_ 🤔 think?  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (187)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (188)  
+- [2025-05-21](./reflections/2025-05-21.md)  
 - [2025-05-20 | 👿 Health 🚫🏥 Insurance ⚔️](./reflections/2025-05-20.md)  
 - [2025-05-19 | 🧠 Conscious 😴 Rest](./reflections/2025-05-19.md)  
 - [2025-05-18 | 🦁 Daring 🫀](./reflections/2025-05-18.md)  
@@ -20,7 +21,6 @@ title: 🏡 Home
 - [2025-05-14 | 🗺️ Plans 🗓️ | 🤱🏼 Moms ⚖️](./reflections/2025-05-14.md)  
 - [2025-05-13 | 🔮 Planning 📚](./reflections/2025-05-13.md)  
 - [2025-05-12 | 🍩 Doughnuts 🌍](./reflections/2025-05-12.md)  
-- [2025-05-11 | 🤱🏼💐 Mother's Day 🗓️](./reflections/2025-05-11.md)  
   
   
 ## [📄  Articles](./articles/index.md) (24)  
@@ -29,7 +29,7 @@ title: 🏡 Home
   
 ## [🤖💬 Bot Chats](./bot-chats/index.md) (26)  
   
-## [👥 People](./people/index.md) (7)  
+## [👥 People](./people/index.md) (8)  
   
 ## [💾 Software](./software/index.md) (33)  
   

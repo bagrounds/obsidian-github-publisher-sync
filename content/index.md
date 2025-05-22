@@ -11,7 +11,7 @@ title: 🏡 Home
 ❔ What do 🫵 _you_ 🤔 think?  
   
 ## [🪞 Reflections](./reflections/index.md) ~ Blog (188)  
-- [2025-05-21](./reflections/2025-05-21.md)  
+- [2025-05-21 | 👶🏼🙅🏼‍♀️🏥 Symptoms of ERISA 👿👔💹](./reflections/2025-05-21.md)  
 - [2025-05-20 | 👿 Health 🚫🏥 Insurance ⚔️](./reflections/2025-05-20.md)  
 - [2025-05-19 | 🧠 Conscious 😴 Rest](./reflections/2025-05-19.md)  
 - [2025-05-18 | 🦁 Daring 🫀](./reflections/2025-05-18.md)  
@@ -25,7 +25,7 @@ title: 🏡 Home
   
 ## [📄  Articles](./articles/index.md) (24)  
   
-## [📚 Books](./books/index.md) (385)  
+## [📚 Books](./books/index.md) (391)  
   
 ## [🤖💬 Bot Chats](./bot-chats/index.md) (26)  
   

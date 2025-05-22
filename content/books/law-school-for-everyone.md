@@ -40,7 +40,7 @@ The course is designed to be accessible to a lay audience while still providing 
   
 * 📖 **_1L of a Ride: A Well-Traveled Guide to Your First Year of Law School_ by Andrew McClurg:** 📝 Provides practical advice and insights into navigating the challenges of the first year of law school, covering everything from studying and exams to maintaining well-being.  
 * 📖 **_Getting to Maybe: How to Excel on Law School Exams_ by Richard Michael Fischl and Jeremy Paul:** 🧐 Focuses specifically on the critical skill of issue-spotting and writing effective essay answers for law school exams, offering a different approach to legal analysis.  
-* 📖 **_The Bramble Bush: On Our Law and Its Study_ by Karl N. Llewellyn:** 👴 A classic, albeit older, text that offers a philosophical and practical perspective on the nature of law and the study of it in law school.  
+* **[📜🌿⚖️ The Bramble Bush: On Our Law and Its Study](./the-bramble-bush-on-our-law-and-its-study.md) by Karl N. Llewellyn:** 👴 A classic, albeit older, text that offers a philosophical and practical perspective on the nature of law and the study of it in law school.  
   
 ### 🎭 Contrasting: Critical Perspectives and Alternatives  
   

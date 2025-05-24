@@ -71,4 +71,30 @@ While mimicking baby sounds and actions is highly beneficial 👍, it's also imp
 - 🗣️ **Simple, repetitive text:** ✅ Easy for babies to follow and predict.  
 - 🤝 **Opportunities for interaction:** 👐 Lift-the-flaps, 🖐️ touch-and-feel elements, or actions to imitate.  
   
-😄 Happy reading and communicating with your little one!
+😄 Happy reading and communicating with your little one!  
+  
+## 💬 Prompt 3  
+> 🙋 Who are some prominent experts on this topic?  
+  
+🧠 Many brilliant researchers have dedicated their careers to understanding how 👶 babies learn to communicate 🗣️ and acquire language. Here are some prominent experts whose work is highly influential in this field:  
+  
+**⭐ Leading Researchers in Infant Language Acquisition and Development:**  
+  
+* 👩‍⚕️ **Dr. Patricia Kuhl:** A world-renowned expert in infant language acquisition 🗣️ and brain 🧠 development, particularly known for her research on how infants learn speech sounds 👂 and how "motherese" (or infant-directed speech 🗣️👶) impacts this process. She's a co-director of the University of Washington's Institute for Learning & Brain Sciences (I-LABS). Her work often involves studying brain 🧠 responses in babies 👶.  
+* 🧑‍🔬 **Dr. Andrew Meltzoff:** Also a co-director of I-LABS at the University of Washington, Dr. Meltzoff is famous for his research on imitation 🐒 in infants 👶. His studies have shown that newborns can imitate facial expressions 😮, suggesting an innate capacity for social learning 🤝 that is crucial for communication 🗣️.  
+* 👩‍🏫 **Dr. Roberta Golinkoff and Dr. Kathy Hirsh-Pasek:** These two researchers are frequently cited together for their extensive work on early language development 🗣️👶. They are authors of the book "How Babies Talk" 📖 and have conducted numerous studies on how children learn words ✍️, grammar 📚, and the social aspects 🫂 of language. Their research often emphasizes the importance of responsive adult-child interactions 🤝.  
+* 👨‍🏫 **Dr. Michael Goldstein:** A professor of psychology at Cornell University 🎓, Dr. Goldstein's research focuses on the social 🫂 and developmental processes involved in early communication 🗣️. He's known for his work on the "simplification effect," showing how babies' babbling 🗣️👶 can elicit simpler speech 🗣️ from adults 👩‍💼, creating a feedback loop 🔄 that aids language learning 🗣️📚.  
+* 👩‍🏫 **Dr. Elika Bergelson:** An associate professor of psychology at Harvard University 🎓, Dr. Bergelson studies how infants and toddlers 👶 learn language from their environment 🌳. Her research has provided insights into how early comprehension 🤔 begins and the global predictors of language development 🗣️👶, emphasizing the quantity and quality 💯 of speech children receive.  
+* 👩‍🔬 **Dr. Jenny Saffran:** A leading researcher in statistical learning 📊 in infants 👶. Her work has demonstrated that babies can use statistical regularities 📊 in the speech they hear 👂 to segment words ✍️ and learn language 🗣️📚, even before they understand meaning 🤔. She's based at the University of Wisconsin-Madison.  
+* 👩‍🏫 **Dr. Annick De Houwer:** A prominent scholar in bilingualism 🗣️🗣️ and child language acquisition 🗣️👶. Her research is invaluable for understanding how children learn two or more languages 🗣️🗣️ from an early age and the factors that influence this process.  
+* 👩‍🔬 **Dr. Janet Werker:** A researcher at the University of British Columbia 🎓, Dr. Werker is well-known for her work on how infants develop the ability to perceive and distinguish speech sounds 👂 from their native language 🗣️, and how this ability changes over the first year of life 👶.  
+  
+**🏢 Key Organizations and Institutes:**  
+  
+🧠 Many of these experts are associated with leading research institutions and centers dedicated to early childhood development and language. Some prominent examples include:  
+  
+* 🧠 **Institute for Learning & Brain Sciences (I-LABS) at the University of Washington:** A major hub for interdisciplinary research on early brain 🧠 and cognitive development 🤔, including extensive work on language acquisition 🗣️👶.  
+* 🧸 **ZERO TO THREE:** A national non-profit organization that provides resources 📚 and advocates 📣 for babies and toddlers 👶, often translating research into practical advice for parents 👩‍👩‍👧‍👦 and professionals 👩‍⚕️. They feature many experts in early childhood development 👶.  
+* 🏫 **Erikson Institute:** A graduate school and research center focused on early childhood development 👶, with a strong emphasis on applied research that benefits children and families 👩‍👩‍👧‍👦.  
+  
+🔎 When looking for reliable information on early communication 🗣️, seeking out research and resources 📚 from these individuals and institutions is a great starting point 👍.

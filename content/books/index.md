@@ -7,7 +7,7 @@ URL: https://bagrounds.org/books
 backlinks: false
 ---
 [Home](../index.md)  
-# 📚 Books (395)  
+# 📚 Books (396)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)  
 - [🧑‍🤝‍🧑📈 10 to 25: The Science of Motivating Young People: A Groundbreaking Approach to Leading the Next Generation - And Making Your Own Life Easier](./10-to-25-the-science-of-motivating-young-people-a-groundbreaking-approach-to-leading-the-next-generation-and-making-your-own-life-easier.md)  
@@ -143,6 +143,7 @@ backlinks: false
 - [⚕️💸 Health Insurance in America: A Consumer's Guide](./health-insurance-in-america-a-consumers-guide.md)  
 - [🙈⚡🔬🌌 Hidden Potential: The Science of Achieving Greater Things](./hidden-potential-the-science-of-achieving-greater-things.md)  
 - [🫂 Hold Me Tight: Seven Conversations for a Lifetime of Love](./hold-me-tight-seven-conversations-for-a-lifetime-of-love.md)  
+- [👶🗣️ How Babies Talk: The Magic and Mystery of Language in the First Three Years of Life](./how-babies-talk-the-magic-and-mystery-of-language-in-the-first-three-years-of-life.md)  
 - [How Democracies Die](./how-democracies-die.md)  
 - [How Google Tests Software](./how-google-tests-software.md)  
 - [How Learning Works](./how-learning-works.md)  

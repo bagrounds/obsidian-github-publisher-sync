@@ -10,7 +10,9 @@ title: 🏡 Home
 📑 Notes, 💭 thoughts, and 🔗 Links.  
 ❔ What do 🫵 _you_ 🤔 think?  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (188)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (190)  
+- [2025-05-23 | 📜 ERISA vs 👶🏼 Newborns 🤺](./reflections/2025-05-23.md)  
+- [2025-05-22 | ⚖️ Law 🎓 School](./reflections/2025-05-22.md)  
 - [2025-05-21 | 👶🏼🙅🏼‍♀️🏥 Symptoms of ERISA 👿👔💹](./reflections/2025-05-21.md)  
 - [2025-05-20 | 👿 Health 🚫🏥 Insurance ⚔️](./reflections/2025-05-20.md)  
 - [2025-05-19 | 🧠 Conscious 😴 Rest](./reflections/2025-05-19.md)  
@@ -19,13 +21,11 @@ title: 🏡 Home
 - [2025-05-16 | 🧠 Altered Traits 🧘🏼‍♀️](./reflections/2025-05-16.md)  
 - [2025-05-15 | 🧘🏼‍♀️ Mindful 😌](./reflections/2025-05-15.md)  
 - [2025-05-14 | 🗺️ Plans 🗓️ | 🤱🏼 Moms ⚖️](./reflections/2025-05-14.md)  
-- [2025-05-13 | 🔮 Planning 📚](./reflections/2025-05-13.md)  
-- [2025-05-12 | 🍩 Doughnuts 🌍](./reflections/2025-05-12.md)  
   
   
-## [📄  Articles](./articles/index.md) (24)  
+## [📄  Articles](./articles/index.md) (25)  
   
-## [📚 Books](./books/index.md) (391)  
+## [📚 Books](./books/index.md) (394)  
   
 ## [🤖💬 Bot Chats](./bot-chats/index.md) (26)  
   

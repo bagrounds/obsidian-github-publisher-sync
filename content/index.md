@@ -10,7 +10,8 @@ title: 🏡 Home
 📑 Notes, 💭 thoughts, and 🔗 Links.  
 ❔ What do 🫵 _you_ 🤔 think?  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (190)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (191)  
+- [2025-05-24](./reflections/2025-05-24.md)  
 - [2025-05-23 | 📜 ERISA vs 👶🏼 Newborns 🤺](./reflections/2025-05-23.md)  
 - [2025-05-22 | ⚖️ Law 🎓 School](./reflections/2025-05-22.md)  
 - [2025-05-21 | 👶🏼🙅🏼‍♀️🏥 Symptoms of ERISA 👿👔💹](./reflections/2025-05-21.md)  
@@ -20,12 +21,11 @@ title: 🏡 Home
 - [2025-05-17 | 🧩 Ackoff | 👤 Being | 🫂 Love ❤️](./reflections/2025-05-17.md)  
 - [2025-05-16 | 🧠 Altered Traits 🧘🏼‍♀️](./reflections/2025-05-16.md)  
 - [2025-05-15 | 🧘🏼‍♀️ Mindful 😌](./reflections/2025-05-15.md)  
-- [2025-05-14 | 🗺️ Plans 🗓️ | 🤱🏼 Moms ⚖️](./reflections/2025-05-14.md)  
   
   
 ## [📄  Articles](./articles/index.md) (25)  
   
-## [📚 Books](./books/index.md) (394)  
+## [📚 Books](./books/index.md) (395)  
   
 ## [🤖💬 Bot Chats](./bot-chats/index.md) (26)  
   
@@ -35,7 +35,7 @@ title: 🏡 Home
   
 ## [🌌 Topics](./topics/index.md) (70)  
   
-## [📺 Videos](./videos/index.md) (129)  
+## [📺 Videos](./videos/index.md) (130)  
   
 ## 🔗 Profiles  
 - [My resume](./topics/my-resume.md)  

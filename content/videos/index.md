@@ -7,7 +7,7 @@ URL: https://bagrounds.org/videos
 backlinks: false
 ---
 [Home](../index.md)  
-# 📺 Videos (132)  
+# 📺 Videos (133)  
 - [2025 Yearly Themes](./2025-yearly-themes.md)  
 - [3 High Leverage Career Skills (From a Principal At Amazon)](./3-high-leverage-career-skills-from-a-principal-at-amazon.md)  
 - [ACLU attorney on suing Trump administration for using wartime authority for deportations](./aclu-attorney-on-suing-trump-administration-for-using-wartime-authority-for-deportations.md)  
@@ -130,6 +130,7 @@ backlinks: false
 - [What makes something memorable?](./what-makes-something-memorable.md)  
 - [🥼🧠🚫💉 What research reveals about the rise in autism diagnoses and why vaccines aren't the cause](./what-research-reveals-about-the-rise-in-autism-diagnoses-and-why-vaccines-arent-the-cause.md)  
 - [What’s next for America’s Proud Boys after Donald Trump’s pardons | Extra Minutes](./whats-next-for-americas-proud-boys-after-donald-trumps-pardons-extra-minutes.md)  
+- [💰💣 What Trump’s ‘Big, Beautiful Bill’ Is Really Doing (Part 1) | The Ezra Klein Show](./what-trumps-big-beautiful-bill-is-really-doing-part-1-the-ezra-klein-show.md)  
 - [What we know — and don't know — about the U.S. strikes in Yemen](./what-we-know-and-dont-know-about-the-us-strikes-in-yemen.md)  
 - [Whitehouse and Murphy Dress Down Republican Tax «Thievery» in Colloquy on Senate Floor](./whitehouse-and-murphy-dress-down-republican-tax-thievery-in-colloquy-on-senate-floor.md)  
 - [Whitehouse Spotlights the Actual Weaponization of the Justice System by Trump's MAGA Cronies](./whitehouse-spotlights-the-actual-weaponization-of-the-justice-system-by-trumps-maga-cronies.md)  

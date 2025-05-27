@@ -71,7 +71,7 @@ The book offers an 🕵️ *insider* view of the events leading up to and follow
   
 * 🎭 **Best Fiction Book that Incorporates Related Ideas:** 👑 *All the King's Men* by Robert Penn Warren, which explores themes of power ✊, corruption 👿, and the abuse of authority. 🚨  
   
-* 🌍 **Best Book that is More General:** 📉 *How Democracies Die* by Steven Levitsky and Daniel Ziblatt, which examines the warning signs ⚠️ of democratic decline. 📉  
+* 🌍 **Best Book that is More General:** [🗳️🏛️☠️ How Democracies Die](./how-democracies-die.md) by Steven Levitsky and Daniel Ziblatt, which examines the warning signs ⚠️ of democratic decline. 📉  
   
 * 🔎 **Best Book that is More Specific:** 💥 *January 6: An American Trauma* by the Washington Post Staff, which focuses specifically 🎯 on the attack on the Capitol. 🏛️💥  
   

@@ -54,7 +54,7 @@ tags:
   
 ### ⚔️ Contrasting Approaches (Negotiation, Psychology, Strategy)  
 * **[👉🤝 Getting to Yes: Negotiating Agreement Without Giving In](./getting-to-yes-negotiating-agreement-without-giving-in.md)** by Roger Fisher, William Ury, and Bruce Patton: A classic, highly influential text on interest-based negotiation strategy. Hamilton's work is sometimes compared to it in terms of impact.  
-* 💬 **Difficult Conversations: How to Discuss What Matters Most** by Douglas Stone, Bruce Patton, and Sheila Heen: From the Harvard Negotiation Project, focuses on the structure and emotional undercurrents of difficult talks.  
+* **[💬😬 Difficult Conversations: How to Discuss What Matters Most](./difficult-conversations-how-to-discuss-what-matters-most.md)** by Douglas Stone, Bruce Patton, and Sheila Heen: From the Harvard Negotiation Project, focuses on the structure and emotional undercurrents of difficult talks.  
 * **[🧰💬 Crucial Conversations: Tools for Talking When Stakes Are High](./crucial-conversations-tools-for-talking-when-stakes-are-high.md)** by Kerry Patterson, Joseph Grenny, Ron McMillan, and Al Switzler: Offers tools for high-stakes communication, often in organizational settings.  
 * ❤️ **The Anatomy of Peace: Resolving the Heart of Conflict** by The Arbinger Institute: Focuses on shifting one's mindset ("heart") from inward (self-focused) to outward (considering others) as the key to resolving conflict.  
 * 💪 **Negotiate Without Fear: Strategies and Tools to Maximize Your Outcomes** by Victoria Medvec: A modern take on negotiation strategy, emphasizing assertiveness and maximizing outcomes.  

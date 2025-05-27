@@ -85,7 +85,7 @@ Okay, I've had a look at your blog. It's a fascinating mix of technical insights
   
 **Democracy & Current Events:**  
   
-* **"[How Democracies Die](../books/how-democracies-die.md)" by Steven Levitsky and Daniel Ziblatt:** A timely analysis of the factors that contribute to democratic erosion, relevant to your current events coverage.  
+* **[🗳️🏛️☠️ How Democracies Die](../books/how-democracies-die.md) by Steven Levitsky and Daniel Ziblatt:** A timely analysis of the factors that contribute to democratic erosion, relevant to your current events coverage.  
 * **"[On Tyranny: Twenty Lessons from the Twentieth Century](../books/on-tyranny.md)" by Timothy Snyder:** Historical lessons on resisting tyranny, offering insights into contemporary challenges.  
   
 **Parenting (Given the hints):**  

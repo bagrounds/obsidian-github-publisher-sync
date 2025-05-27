@@ -146,7 +146,7 @@ backlinks: false
 - [🙈⚡🔬🌌 Hidden Potential: The Science of Achieving Greater Things](./hidden-potential-the-science-of-achieving-greater-things.md)  
 - [🫂 Hold Me Tight: Seven Conversations for a Lifetime of Love](./hold-me-tight-seven-conversations-for-a-lifetime-of-love.md)  
 - [👶🗣️ How Babies Talk: The Magic and Mystery of Language in the First Three Years of Life](./how-babies-talk-the-magic-and-mystery-of-language-in-the-first-three-years-of-life.md)  
-- [How Democracies Die](./how-democracies-die.md)  
+- [🗳️🏛️☠️ How Democracies Die](./how-democracies-die.md)  
 - [How Google Tests Software](./how-google-tests-software.md)  
 - [How Learning Works](./how-learning-works.md)  
 - [How Not to Be Wrong: The Power of Mathematical Thinking](./how-not-to-be-wrong.md)  

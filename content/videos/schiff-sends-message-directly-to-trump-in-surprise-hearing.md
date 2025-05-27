@@ -49,5 +49,5 @@ tags:
   
 🛡️ **Defending Democracy:**  
 - 🕰️ _[On Tyranny: Twenty Lessons from the Twentieth Century](../books/on-tyranny.md)_ by Timothy Snyder: 📖 Offers historical lessons on resisting authoritarianism. 💪  
-- 💔 _How Democracies Die_ by Steven Levitsky and Daniel Ziblatt: 📉 Examines the gradual erosion of democratic institutions and how to prevent it. 🚧  
+- [🗳️🏛️☠️ How Democracies Die](../books/how-democracies-die.md) by Steven Levitsky and Daniel Ziblatt: 📉 Examines the gradual erosion of democratic institutions and how to prevent it. 🚧  
 - 🇺🇸 _Renegade: Defending Democracy and Liberty in Our Divided Country_ by Adam Kinzinger: 🗽 A personal account of defending democratic principles in contemporary American politics. 🤝  

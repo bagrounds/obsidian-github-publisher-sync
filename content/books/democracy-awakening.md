@@ -58,7 +58,7 @@ tags:
 ## 📚 Book Recommendations  
 ### 🤝 Similar Perspectives (History, Threats to Democracy, Center-Left Lens)  
   
-1. ☠️ **[How Democracies Die](./how-democracies-die.md)** by Steven Levitsky & Daniel Ziblatt: Analyzes the warning signs of democratic backsliding globally and applies them to the US context, focusing on the erosion of norms.  
+1. **[🗳️🏛️☠️ How Democracies Die](./how-democracies-die.md)** by Steven Levitsky & Daniel Ziblatt: Analyzes the warning signs of democratic backsliding globally and applies them to the US context, focusing on the erosion of norms.  
 2. 📜 **[On Tyranny: Twenty Lessons from the Twentieth Century](./on-tyranny.md)** by Timothy Snyder: A concise, urgent book drawing lessons from 20th-century European history about resisting authoritarianism.  
 3. 🌇 **[🥀 Twilight of Democracy: 🐍 The Seductive Lure of Authoritarianism](./twilight-of-democracy.md)** by Anne Applebaum: Explores why elites in various democracies have abandoned liberal democratic ideals for authoritarianism, blending personal observation and political analysis.  
 4. 🇺🇸 **These Truths: A History of the United States** by Jill Lepore: A comprehensive single-volume history focusing on the nation's founding principles ("truths") and the struggles to realize them.  

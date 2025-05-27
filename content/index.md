@@ -11,7 +11,7 @@ title: 🏡 Home
 ❔ What do 🫵 _you_ 🤔 think?  
   
 ## [🪞 Reflections](./reflections/index.md) ~ Blog (194)  
-- [2025-05-27](./reflections/2025-05-27.md)  
+- [2025-05-27 | 🐐 Kid 🔬 Science 📚](./reflections/2025-05-27.md)  
 - [2025-05-26 | 🏗️ Creative 🙅🏼‍♀️ Conflict](./reflections/2025-05-26.md)  
 - [2025-05-25 | 🌈 Psychedelic 🍄](./reflections/2025-05-25.md)  
 - [2025-05-24 | 🏥 Benefit ⚖️ | 🦜 Mimick 👶🏼](./reflections/2025-05-24.md)  

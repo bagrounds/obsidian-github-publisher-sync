@@ -7,12 +7,13 @@ URL: https://bagrounds.org/videos
 backlinks: false
 ---
 [Home](../index.md)  
-# 📺 Videos (134)  
+# 📺 Videos (135)  
 - [2025 Yearly Themes](./2025-yearly-themes.md)  
 - [3 High Leverage Career Skills (From a Principal At Amazon)](./3-high-leverage-career-skills-from-a-principal-at-amazon.md)  
 - [ACLU attorney on suing Trump administration for using wartime authority for deportations](./aclu-attorney-on-suing-trump-administration-for-using-wartime-authority-for-deportations.md)  
 - [A Dark Day for Our Country](./a-dark-day-for-our-country.md)  
 - [A look at the history of public media in the U.S. as Republicans target federal funding](./a-look-at-the-history-of-public-media-in-the-us-as-republicans-target-federal-funding.md)  
+- [🏛️📜💰🚨 Amy Walter and Jasmine Wright on how Senate Republicans feel about Trump's big bill](./amy-walter-and-jasmine-wright-on-how-senate-republicans-feel-about-trumps-big-bill.md)  
 - [Answering Behavioral Interview Questions Using the STAR Method](./answering-behavioral-interview-questions-using-the-star-method.md)  
 - [Anthropic MCP + Ollama. No Claude Needed? Check it out!](./anthropic-mcp-ollama-no-claude-needed-check-it-out.md)  
 - [A Simple Way to Learn Complex Skills](./a-simple-way-to-learn-complex-skills.md)  

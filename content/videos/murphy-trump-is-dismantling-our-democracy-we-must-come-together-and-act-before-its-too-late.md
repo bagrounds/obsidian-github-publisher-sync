@@ -26,7 +26,7 @@ tags:
 ## 📚 Book Recommendations  
   
 - **[On Tyranny: Twenty Lessons from the Twentieth Century](../books/on-tyranny.md)** by Timothy Snyder: This book offers historical perspectives on resisting authoritarianism.  
-- **[How Democracies Die](../books/how-democracies-die.md)** by Steven Levitsky and Daniel Ziblatt: This book examines how elected autocrats undermine democracy, using historical and global examples.  
+- **[🗳️🏛️☠️ How Democracies Die](../books/how-democracies-die.md)** by Steven Levitsky and Daniel Ziblatt: This book examines how elected autocrats undermine democracy, using historical and global examples.  
 - **The Assault on Reason** by Al Gore: This book discusses the role of truth and reason in democratic discourse.  
 - **Dark Money: The Hidden History of the Billionaires Behind the Rise of the Radical Right** by Jane Mayer: This book investigates the influence of money on political institutions.  
 - [Strongmen: Mussolini to the Present](../books/strongmen.md)  

@@ -10,8 +10,10 @@ title: 🏡 Home
 📑 Notes, 💭 thoughts, and 🔗 Links.  
 ❔ What do 🫵 _you_ 🤔 think?  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (191)  
-- [2025-05-24](./reflections/2025-05-24.md)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (193)  
+- [2025-05-26](./reflections/2025-05-26.md)  
+- [2025-05-25 | 🌈 Psychedelic 🍄](./reflections/2025-05-25.md)  
+- [2025-05-24 | 🏥 Benefit ⚖️ | 🦜 Mimick 👶🏼](./reflections/2025-05-24.md)  
 - [2025-05-23 | 📜 ERISA vs 👶🏼 Newborns 🤺](./reflections/2025-05-23.md)  
 - [2025-05-22 | ⚖️ Law 🎓 School](./reflections/2025-05-22.md)  
 - [2025-05-21 | 👶🏼🙅🏼‍♀️🏥 Symptoms of ERISA 👿👔💹](./reflections/2025-05-21.md)  
@@ -19,15 +21,13 @@ title: 🏡 Home
 - [2025-05-19 | 🧠 Conscious 😴 Rest](./reflections/2025-05-19.md)  
 - [2025-05-18 | 🦁 Daring 🫀](./reflections/2025-05-18.md)  
 - [2025-05-17 | 🧩 Ackoff | 👤 Being | 🫂 Love ❤️](./reflections/2025-05-17.md)  
-- [2025-05-16 | 🧠 Altered Traits 🧘🏼‍♀️](./reflections/2025-05-16.md)  
-- [2025-05-15 | 🧘🏼‍♀️ Mindful 😌](./reflections/2025-05-15.md)  
   
   
 ## [📄  Articles](./articles/index.md) (25)  
   
-## [📚 Books](./books/index.md) (395)  
+## [📚 Books](./books/index.md) (398)  
   
-## [🤖💬 Bot Chats](./bot-chats/index.md) (26)  
+## [🤖💬 Bot Chats](./bot-chats/index.md) (27)  
   
 ## [👥 People](./people/index.md) (8)  
   
@@ -35,7 +35,7 @@ title: 🏡 Home
   
 ## [🌌 Topics](./topics/index.md) (70)  
   
-## [📺 Videos](./videos/index.md) (130)  
+## [📺 Videos](./videos/index.md) (131)  
   
 ## 🔗 Profiles  
 - [My resume](./topics/my-resume.md)  

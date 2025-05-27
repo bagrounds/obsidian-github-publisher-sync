@@ -7,7 +7,7 @@ URL: https://bagrounds.org/books
 backlinks: false
 ---
 [Home](../index.md)  
-# 📚 Books (399)  
+# 📚 Books (400)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)  
 - [🧑‍🤝‍🧑📈 10 to 25: The Science of Motivating Young People: A Groundbreaking Approach to Leading the Next Generation - And Making Your Own Life Easier](./10-to-25-the-science-of-motivating-young-people-a-groundbreaking-approach-to-leading-the-next-generation-and-making-your-own-life-easier.md)  
@@ -264,6 +264,7 @@ backlinks: false
 - [Rules, Games, and Common Pool Resources](./rules-games-and-common-pool-resources.md)  
 - [Sapiens: A Brief History of Humankind](./sapiens-a-brief-history-of-humankind.md)  
 - [😊🧠 Satisfaction: The Science of Finding True Fulfillment](./satisfaction-the-science-of-finding-true-fulfillment.md)  
+- [🧪👶📈 Scientific Secrets for Raising Kids Who Thrive](./scientific-secrets-for-raising-kids-who-thrive.md)  
 - [😫👩‍👧‍👦 Screaming on the Inside: The Unsustainability of American Motherhood](./screaming-on-the-inside-the-unsustainability-of-american-motherhood.md)  
 - [📖🏛️📉 Seeing Like a State: How Certain Schemes to Improve the Human Condition Have Failed](./seeing-like-a-state-how-certain-schemes-to-improve-the-human-condition-have-failed.md)  
 - [Seven Sketches in Compositionality](./seven-sketches-in-compositionality.md)  

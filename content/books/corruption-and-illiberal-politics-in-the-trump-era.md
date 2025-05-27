@@ -68,8 +68,7 @@ tags:
 The book is anchored in rigorous scholarly methods and benefits from the strong credentials of editors Donna M. Goldstein and Kristen Drybread—both respected in anthropology and cultural studies. It has received praise from leading academics (e.g., endorsements by figures such as Nancy Scheper-Hughes and Michael Taussig) for its innovative approach and depth. While its dense, multi-essay format may challenge readers new to anthropological analysis, its empirical case studies and comparative frameworks make its arguments compelling and well-supported by both qualitative and quantitative research.  
   
 ### Additional Book Recommendations 📚  
-- **Best Alternate on the Same Topic:**  
-*[How Democracies Die](./how-democracies-die.md)* by Levitsky & Ziblatt  
+- **Best Alternate on the Same Topic:** [🗳️🏛️☠️ How Democracies Die](./how-democracies-die.md) by Levitsky & Ziblatt  
   • A seminal work exploring the erosion of democratic norms, offering a complementary perspective on institutional decay.  
   
 - **Best Tangentially Related Book:**  

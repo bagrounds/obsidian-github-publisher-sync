@@ -40,7 +40,7 @@ Okay, here are 📚 book recommendations on the requested topics and a 📝 repo
 **4. 🕊️ Democracy:**  
   
 * 🇺🇸 **[Democracy in America](../books/democracy-in-america.md)** **by Alexis de Tocqueville:** A classic analysis of American democracy in the 1830s, exploring its strengths, weaknesses, culture, and the conditions necessary for its survival.  
-* ⚠️ **[How Democracies Die](../books/how-democracies-die.md)** **by Steven Levitsky & Daniel Ziblatt:** Analyzes how democracies erode from within, often through seemingly legal means, by examining historical and contemporary examples and highlighting warning signs.  
+* **[🗳️🏛️☠️ How Democracies Die](../books/how-democracies-die.md)** **by Steven Levitsky & Daniel Ziblatt:** Analyzes how democracies erode from within, often through seemingly legal means, by examining historical and contemporary examples and highlighting warning signs.  
 * 🛡️ **The Open Society and Its Enemies** **by Karl Popper:** A vigorous defense of liberal democracy and a critique of theories (Plato, Hegel, Marx) Popper believed led to totalitarianism, arguing for piecemeal social engineering over utopian revolutions.  
 * 💬 **On Liberty** **by John Stuart Mill:** A foundational philosophical defense of individual freedom and limits on state power, arguing for freedom of thought, speech, and association as essential for a thriving society and democracy.  
 * 🗣️ **When the People Speak: Deliberative Democracy & Public Consultation** **by James S. Fishkin:** Argues for and presents practical examples of "deliberative polling" and other methods to create informed public opinion as a basis for democratic decision-making.  

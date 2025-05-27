@@ -7,7 +7,7 @@ URL: https://bagrounds.org/videos
 backlinks: false
 ---
 [Home](../index.md)  
-# 📺 Videos (130)  
+# 📺 Videos (132)  
 - [2025 Yearly Themes](./2025-yearly-themes.md)  
 - [3 High Leverage Career Skills (From a Principal At Amazon)](./3-high-leverage-career-skills-from-a-principal-at-amazon.md)  
 - [ACLU attorney on suing Trump administration for using wartime authority for deportations](./aclu-attorney-on-suing-trump-administration-for-using-wartime-authority-for-deportations.md)  
@@ -17,6 +17,7 @@ backlinks: false
 - [Anthropic MCP + Ollama. No Claude Needed? Check it out!](./anthropic-mcp-ollama-no-claude-needed-check-it-out.md)  
 - [A Simple Way to Learn Complex Skills](./a-simple-way-to-learn-complex-skills.md)  
 - [Biomedical Scientist Answers Pseudoscience Questions From Twitter | Tech Support | WIRED](./biomedical-scientist-answers-pseudoscience-questions-from-twitter-tech-support-wired.md)  
+- [👹📜🏛️ Brooks and Capehart on House Republicans passing Trump's legislative agenda](./brooks-and-capehart-on-house-republicans-passing-trumps-legislative-agenda.md)  
 - [Brooks and Capehart on how voters are reacting to federal cuts](./brooks-and-capehart-on-how-voters-are-reacting-to-federal-cuts.md)  
 - [Brooks and Capehart on the Democratic division over the stopgap funding bill](./brooks-and-capehart-on-the-democratic-division-over-the-stopgap-funding-bill.md)  
 - [Brooks and Capehart on the political reaction to Trump's tariffs](./brooks-and-capehart-on-the-political-reaction-to-trumps-tariffs.md)  
@@ -62,6 +63,7 @@ backlinks: false
 - [Judea Pearl, 2011 ACM Turing Award Recipient](./judea-pearl-2011-acm-turing-award-recipient.md)  
 - [Judea Pearl, 2012 ACM A.M. Turing Award Lecture «The Mechanization of Causal Inference»](./judea-pearl-2012-acm-a-m-turing-award-lecture-the-mechanization-of-causal-inference.md)  
 - [Just the Facts About the US Federal Budget: Steve Ballmer Talks Through the Numbers](./just-the-facts-about-the-us-federal-budget-steve-ballmer-talks-through-the-numbers.md)  
+- [🗣️💬🧠 Language Acquisition: Crash Course Linguistics  > 12](./language-acquisition-crash-course-linguistics-12.md)  
 - [Learn how to boost your baby's brain from a Harvard Professor | UNICEF](./learn-how-to-boost-your-baby-s-brain-from-a-harvard-professor-unicef.md)  
 - [Mass firings begin at government health agencies, including FDA, CDC and NIH](./mass-firings-begin-at-government-health-agencies-including-fda-cdc-and-nih.md)  
 - [Migrants in U.S. legally and with no criminal history caught up in Trump crackdown](./migrants-in-us-legally-and-with-no-criminal-history-caught-up-in-trump-crackdown.md)  

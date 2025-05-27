@@ -8,7 +8,7 @@ backlinks: false
 ---
 [Home](../index.md)  
 # 🪞 Reflections (194)  
-- [2025-05-27 | 🐐 Kid 🔬 Science 📚](./2025-05-27.md)  
+- [2025-05-27 | 🐐 Kid 🔬 Science 📚 | 📰 Republican 🐘 Debt 💸](./2025-05-27.md)  
 - [2025-05-26 | 🏗️ Creative 🙅🏼‍♀️ Conflict](./2025-05-26.md)  
 - [2025-05-25 | 🌈 Psychedelic 🍄](./2025-05-25.md)  
 - [2025-05-24 | 🏥 Benefit ⚖️ | 🦜 Mimick 👶🏼](./2025-05-24.md)  

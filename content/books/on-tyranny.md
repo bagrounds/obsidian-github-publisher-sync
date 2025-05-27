@@ -76,7 +76,7 @@ by Timothy Snyder
   
 ### Additional Book Recommendations 📚  
   
-* **Best Alternate Book on the Same Topic:** "How Democracies Die" by Steven Levitsky and Daniel Ziblatt. 🏛️ This book provides a deeper dive into the gradual erosion of democratic norms. 📉  
+* **Best Alternate Book on the Same Topic:** [🗳️🏛️☠️ How Democracies Die](./how-democracies-die.md) by Steven Levitsky and Daniel Ziblatt. 🏛️ This book provides a deeper dive into the gradual erosion of democratic norms. 📉  
 * **Best Tangentially Related Book:** "The Road to Unfreedom" by Timothy Snyder. 🛣️ This book explores the rise of Russian authoritarianism and its global implications. 🌐  
 * **Best Diametrically Opposed Book:** "The Authoritarian Personality" by Theodor W. Adorno et al. 🤯 This book explores psychological underpinnings of authoritarianism. While not opposed in topic, it is opposed in the idea that authoritarianism is a personality trait, rather than a political action.  
 * **Best Fiction Book That Incorporates Related Ideas:** "[1984](./1984.md)" by George Orwell. 👁️ This dystopian novel explores the dangers of totalitarianism and government surveillance. 🚨  

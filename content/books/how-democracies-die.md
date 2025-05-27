@@ -1,14 +1,14 @@
 ---
 share: true
 aliases:
-  - How Democracies Die
-title: How Democracies Die
+  - 🗳️🏛️☠️ How Democracies Die
+title: 🗳️🏛️☠️ How Democracies Die
 URL: https://bagrounds.org/books/how-democracies-die
 Author: 
 tags: 
 ---
 [Home](../index.md) > [Books](./index.md)  
-# How Democracies Die  
+# 🗳️🏛️☠️ How Democracies Die  
 ## 🤖 AI Summary  
 ### 🤔 TL;DR: How Democracies Die  
   

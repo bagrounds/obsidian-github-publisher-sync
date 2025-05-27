@@ -56,7 +56,7 @@ tags:
 ### ⚠️ Similar Warnings and Analyses  
   
 * 🇷🇺 **_The Road to Unfreedom: Russia, Europe, America_ by Timothy Snyder:** 🗣️ Explores the rise of authoritarianism, manipulation of information, and the interconnectedness of anti-democratic movements globally.  
-* 💀 **_[How Democracies Die](./how-democracies-die.md)_ by Steven Levitsky & Daniel Ziblatt:** 📉 Analyzes how democracies erode from within, often through seemingly legal means, drawing historical and contemporary parallels.  
+* **[🗳️🏛️☠️ How Democracies Die](./how-democracies-die.md) by Steven Levitsky & Daniel Ziblatt:** 📉 Analyzes how democracies erode from within, often through seemingly legal means, drawing historical and contemporary parallels.  
 * 📜 **_[On Tyranny: Twenty Lessons from the Twentieth Century](./on-tyranny.md)_ by Timothy Snyder:** 📚 A concise historical guide offering lessons on resisting authoritarianism based on 20th-century examples.  
 * 🔄 **_Cultural Backlash: Trump, Brexit, and Authoritarian Populism_ by Pippa Norris & Ronald Inglehart:** 🗣️ Argues that the rise of authoritarian populism is driven by a backlash against progressive cultural changes among traditional social conservatives.  
 * 🇷🇺 **_Surviving Autocracy_ by Masha Gessen:** 📝 A collection of essays analyzing the Trump presidency and the nature of autocracy in the modern era, drawing on experiences in Russia.  

@@ -7,8 +7,10 @@ URL: https://bagrounds.org/reflections
 backlinks: false
 ---
 [Home](../index.md)  
-# 🪞 Reflections (191)  
-- [2025-05-24](./2025-05-24.md)  
+# 🪞 Reflections (193)  
+- [2025-05-26](./2025-05-26.md)  
+- [2025-05-25 | 🌈 Psychedelic 🍄](./2025-05-25.md)  
+- [2025-05-24 | 🏥 Benefit ⚖️ | 🦜 Mimick 👶🏼](./2025-05-24.md)  
 - [2025-05-23 | 📜 ERISA vs 👶🏼 Newborns 🤺](./2025-05-23.md)  
 - [2025-05-22 | ⚖️ Law 🎓 School](./2025-05-22.md)  
 - [2025-05-21 | 👶🏼🙅🏼‍♀️🏥 Symptoms of ERISA 👿👔💹](./2025-05-21.md)  

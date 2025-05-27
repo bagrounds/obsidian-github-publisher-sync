@@ -49,7 +49,7 @@ Applebaum argues that the current wave 🌊 of authoritarianism is not solely dr
 ## 📚 Book Recommendations  
   
 ### 📖 Similar Themes (Democratic Backsliding & Authoritarianism)  
-1. 📉 **_[How Democracies Die](./how-democracies-die.md)_ by Steven Levitsky & Daniel Ziblatt:** A widely cited academic analysis identifying key indicators of democratic erosion, drawing historical parallels (including US history) to diagnose threats to modern democracies. Focuses on institutional decay and the breakdown of mutual toleration and forbearance.  
+1. **[🗳️🏛️☠️ How Democracies Die](./how-democracies-die.md) by Steven Levitsky & Daniel Ziblatt:** A widely cited academic analysis identifying key indicators of democratic erosion, drawing historical parallels (including US history) to diagnose threats to modern democracies. Focuses on institutional decay and the breakdown of mutual toleration and forbearance.  
 2. 📜 **_[On Tyranny: Twenty Lessons from the Twentieth Century](./on-tyranny.md)_ by Timothy Snyder:** A concise, impactful book drawing lessons from 20th-century European history (particularly the rise of fascism and communism) to provide practical guidance for resisting authoritarianism today.  
 3. 🇷🇺 **_The Road to Unfreedom: Russia, Europe, America_ by Timothy Snyder:** Explores the intellectual underpinnings and spread of Russian authoritarian ideas and their influence on politics in Europe and the United States.  
 4. 💪 **_[Strongmen: Mussolini to the Present](./strongmen.md)_ by Ruth Ben-Ghiat:** A historical survey examining the "strongman" playbook across different eras and regions, identifying common tactics related to corruption 💰, violence 🔪, propaganda 📢, and virility.  

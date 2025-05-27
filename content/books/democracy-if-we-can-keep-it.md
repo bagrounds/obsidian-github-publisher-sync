@@ -70,7 +70,7 @@ tags:
 - 💥 **"If We Can Keep It: How the Republic Collapsed and How It Might Be Saved" by Michael Tomasky**  
     – 📘 While sharing a title echoing Cose’s work, Tomasky’s book focuses on modern polarization and the risks to democratic institutions, offering a more contemporary, analytical, and sometimes alarmist view.  
   
-- 🔥 **"[How Democracies Die](./how-democracies-die.md)" by Steven Levitsky and Daniel Ziblatt**  
+- **[🗳️🏛️☠️ How Democracies Die](./how-democracies-die.md) by Steven Levitsky and Daniel Ziblatt**  
     – 🛑 Explores the warning signs and systemic weaknesses that can lead to the demise of democratic norms, providing a provocative counterpoint with an emphasis on political dynamics and institutional decay.  
   
 - 🚨 **"Democracy in Chains" by Nancy MacLean**  

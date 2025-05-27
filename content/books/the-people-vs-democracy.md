@@ -59,7 +59,7 @@ While painting a concerning picture, Mounk offers potential remedies focused on 
 ## 📚 Further Reading Recommendations  
 ### 🤝 Similar Themes (Democratic Decline, Populism, Liberalism Under Threat)  
   
-1. 💀 **[How Democracies Die](./how-democracies-die.md)** by Steven Levitsky & Daniel Ziblatt: Examines how democracies erode from within, often through elected leaders subverting democratic norms and institutions, drawing historical parallels and focusing heavily on the US case.  
+1. **[🗳️🏛️☠️ How Democracies Die](./how-democracies-die.md)** by Steven Levitsky & Daniel Ziblatt: Examines how democracies erode from within, often through elected leaders subverting democratic norms and institutions, drawing historical parallels and focusing heavily on the US case.  
 2. 🌑 **[🥀 Twilight of Democracy: 🐍 The Seductive Lure of Authoritarianism](./twilight-of-democracy.md)** by Anne Applebaum: A more personal and historical reflection on why elites in various countries have abandoned democratic ideals for authoritarianism or illiberalism.  
 3. 🇷🇺 **The Road to Unfreedom: Russia, Europe, America** by Timothy Snyder: Analyzes the rise of authoritarianism, particularly focusing on Russia's influence and the philosophical underpinnings of illiberal ideologies.  
 4. 🌪️ **Ill Winds: Saving Democracy from Russian Rage, Chinese Ambition, and American Complacency** by Larry Diamond: A comprehensive look at the internal and external threats facing democracy globally.  

@@ -7,7 +7,7 @@ URL: https://bagrounds.org/books
 backlinks: false
 ---
 [Home](../index.md)  
-# 📚 Books (396)  
+# 📚 Books (398)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)  
 - [🧑‍🤝‍🧑📈 10 to 25: The Science of Motivating Young People: A Groundbreaking Approach to Leading the Next Generation - And Making Your Own Life Easier](./10-to-25-the-science-of-motivating-young-people-a-groundbreaking-approach-to-leading-the-next-generation-and-making-your-own-life-easier.md)  
@@ -81,6 +81,7 @@ backlinks: false
 - [Designing Your Life](./designing-your-life.md)  
 - [Developmental Cognitive Neuroscience](./developmental-cognitive-neuroscience.md)  
 - [Developmental Science: An Advanced Textbook](./developmental-science.md)  
+- [💬😬 Difficult Conversations: How to Discuss What Matters Most](./difficult-conversations-how-to-discuss-what-matters-most.md)  
 - [🧘🟰🕊️ Discipline Equals Freedom: Field Manual](./discipline-equals-freedom-field-manual.md)  
 - [Distributed Algorithms](./distributed-algorithms.md)  
 - [Distributed Systems: Principles and Paradigms](./distributed-systems.md)  
@@ -151,6 +152,7 @@ backlinks: false
 - [🌿🔬 How Plants Work: The Science Behind the Amazing Things Plants Do](./how-plants-work.md)  
 - [✊🏿 How To Be An Antiracist](./how-to-be-an-antiracist.md)  
 - [How to Change](./how-to-change.md)  
+- [🧠🍄 How to Change Your Mind: What the New Science of Psychedelics Teaches Us About Consciousness, Dying, Addiction, Depression, and Transcendence](./how-to-change-your-mind-what-the-new-science-of-psychedelics-teaches-us-about-consciousness-dying-addiction-depression-and-transcendence.md)  
 - [How To Have A Good Day](./how-to-have-a-good-day.md)  
 - [How To Keep House While Drowning](./how-to-keep-house-while-drowning.md)  
 - [🏛️➡️👑 How to Lose a Country: The 7 Steps from Democracy to Dictatorship](./how-to-lose-a-country.md)  

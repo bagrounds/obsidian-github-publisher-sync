@@ -4,6 +4,8 @@ aliases:
   - "👩🏼‍⚖️💭🧮🏆 The Tools of Argument: How the Best Lawyers Think, Argue, and Win"
 URL: https://bagrounds.org/books/the-tools-of-argument-how-the-best-lawyers-think-argue-and-win
 share: true
+tags:
+  - law
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 👩🏼‍⚖️💭🧮🏆 The Tools of Argument: How the Best Lawyers Think, Argue, and Win  

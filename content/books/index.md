@@ -7,7 +7,7 @@ URL: https://bagrounds.org/books
 backlinks: false
 ---
 [Home](../index.md)  
-# 📚 Books (400)  
+# 📚 Books (401)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)  
 - [🧑‍🤝‍🧑📈 10 to 25: The Science of Motivating Young People: A Groundbreaking Approach to Leading the Next Generation - And Making Your Own Life Easier](./10-to-25-the-science-of-motivating-young-people-a-groundbreaking-approach-to-leading-the-next-generation-and-making-your-own-life-easier.md)  
@@ -17,6 +17,7 @@ backlinks: false
 - [7️⃣📏👑 7 Rules of Power: Surprising - but True - Advice on How to Get Things Done and Advance Your Career](./7-rules-of-power.md)  
 - [A Brief History of Time](./a-brief-history-of-time.md)  
 - [🏎️💾 Accelerate](./accelerate.md)  
+- [🌈🦎 A Color of His Own](./a-color-of-his-own.md)  
 - [Adaptive Control](./adaptive-control.md)  
 - [🧑‍🌾🌿 A Gardener's Guide to Botany](./a-gardeners-guide-to-botany.md)  
 - [🤔💻🧠 Algorithms to Live By: The Computer Science of Human Decisions](./algorithms-to-live-by.md)  

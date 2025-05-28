@@ -4,6 +4,8 @@ aliases:
   - "📜🌿⚖️ The Bramble Bush: On Our Law and Its Study"
 URL: https://bagrounds.org/books/the-bramble-bush-on-our-law-and-its-study
 share: true
+tags:
+  - law
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 📜🌿⚖️ The Bramble Bush: On Our Law and Its Study  

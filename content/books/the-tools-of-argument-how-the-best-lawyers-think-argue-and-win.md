@@ -43,8 +43,6 @@ Reviewers highlight several strengths of "The Tools of Argument":
   
 ## ➕ Additional Book Recommendations  
   
-Here is a plethora of additional book recommendations, categorized for clarity, offering similar, contrasting, and creatively related perspectives on the themes of argument, logic, critical thinking, and persuasion. 📚  
-  
 ### 👯 Similar Books (Logic, Argumentation, Legal Reasoning)  
   
 * ***Legal Argument: The Structure and Language of Effective Advocacy*** by James A. Gardner: Focuses specifically on the structure and language used in legal arguments. 👨‍⚖️  
@@ -54,7 +52,7 @@ Here is a plethora of additional book recommendations, categorized for clarity, 
 * ***Critical Thinking, Reading, and Writing: A Brief Guide to Argument*** by Sylvan Barnet: Combines critical thinking skills with the practical application of reading and writing arguments. ✍️  
 * ***Handbook of Legal Reasoning and Argumentation*** edited by Giorgio Bongiovanni et al.: A more academic and in-depth look at legal reasoning from logical, philosophical, and legal perspectives. 🏛️  
 * ***Legal Argumentation and Evidence*** by Douglas Walton: Focuses on how reasoning operates in legal contexts, particularly concerning evidence, drawing on argumentation theory and informal logic. ⚖️  
-* ***Thinking, Fast and Slow*** by Daniel Kahneman: While not strictly about argumentation, it explores the two systems of thought that influence judgment and decision-making, highly relevant to understanding persuasion and bias. 🧠  
+* **[Thinking, Fast and Slow](./thinking-fast-and-slow.md)** by Daniel Kahneman: While not strictly about argumentation, it explores the two systems of thought that influence judgment and decision-making, highly relevant to understanding persuasion and bias. 🧠  
 * ***Thinking from A to Z*** by Nigel Warburton: A concise guide defining and explaining common terms and concepts used in critical thinking and logic. 📚  
 * ***How to Win Every Argument: The Use and Abuse of Logic*** by Madsen Pirie: A witty and accessible guide to logical fallacies, explaining how they are used (and misused) in arguments. 😂  
 * ***A Rulebook for Arguments*** by Anthony Weston: A concise and classic guide offering practical advice on constructing short arguments. 📝  
@@ -63,8 +61,8 @@ Here is a plethora of additional book recommendations, categorized for clarity, 
 ### ☯️ Contrasting Books (Cooperative Argumentation, Alternative Dispute Resolution)  
   
 * **Books on Feminist Critiques of Adversarial Argumentation:** Several authors challenge the idea of argumentation as a purely adversarial "battle" ⚔️ and explore more cooperative or truth-seeking models. While specific book titles focusing solely on this as a contrasting *method* for a general audience might require deeper search, looking into the works of authors like Trudy Govier, Karen Warren, and Pamela Rooney, often referenced in discussions of feminist epistemology and argumentation theory, would provide this perspective. 👩‍⚖️  
-* ***Difficult Conversations: How to Discuss What Matters Most*** by Douglas Stone, Bruce Patton, and Sheila Heen: Focuses on navigating high-stakes conversations collaboratively rather than adversarially. 🤝  
-* ***Getting to Yes: Negotiating Agreement Without Giving In*** by Roger Fisher and William Ury: A foundational text on principled negotiation, emphasizing finding mutually agreeable solutions rather than winning an argument. ✅  
+* **[💬😬 Difficult Conversations: How to Discuss What Matters Most](./difficult-conversations-how-to-discuss-what-matters-most.md)** by Douglas Stone, Bruce Patton, and Sheila Heen: Focuses on navigating high-stakes conversations collaboratively rather than adversarially. 🤝  
+* **[👉🤝 Getting to Yes: Negotiating Agreement Without Giving In](./getting-to-yes-negotiating-agreement-without-giving-in.md)** by Roger Fisher and William Ury: A foundational text on principled negotiation, emphasizing finding mutually agreeable solutions rather than winning an argument. ✅  
   
 ### 🎨 Creatively Related Books (Rhetoric, Cognitive Science, Narrative)  
   
@@ -72,8 +70,8 @@ Here is a plethora of additional book recommendations, categorized for clarity, 
 * ***Rhetoric*** by Cicero: Key works by the Roman orator that further developed rhetorical theory and practice. 🗣️  
 * ***Quintilian's Institutio Oratoria***: A comprehensive guide to rhetorical education in ancient Rome. 👨‍🏫  
 * ***The Story Factor: Inspiration, Influence, and Persuasion Through the Art of Storytelling*** by Annette Simmons: Explores the power of narrative in persuasion, a concept also touched upon in "The Tools of Argument." ✍️  
-* ***Influence: The Psychology of Persuasion*** by Robert Cialdini: Delves into the psychological principles that underlie persuasion and compliance. 🧠  
-* ***Predictably Irrational: The Hidden Forces That Shape Our Decisions*** by Dan Ariely: Examines the irrationality of human behavior and decision-making, offering insights into why certain arguments might be more persuasive than others, regardless of pure logic. 🤔  
+* **[Influence](./influence.md): The Psychology of Persuasion** by Robert Cialdini: Delves into the psychological principles that underlie persuasion and compliance. 🧠  
+* ***[Predictably Irrational](./predictably-irrational.md): The Hidden Forces That Shape Our Decisions*** by Dan Ariely: Examines the irrationality of human behavior and decision-making, offering insights into why certain arguments might be more persuasive than others, regardless of pure logic. 🤔  
 * ***The Invisible Gorilla: And Other Ways Our Intuitions Deceive Us*** by Christopher Chabris and Daniel Simons: Explores cognitive biases and how our intuitions can mislead us, relevant to understanding why fallacious arguments can be convincing. 🙈  
 * ***Bad Arguments: 100 of the Most Important Fallacies in Western Philosophy*** edited by Ali Almossawi: A visually engaging guide to identifying common logical fallacies. ⚠️  
 * ***Thank You for Arguing: What Aristotle, Lincoln, and Homer Simpson Can Teach Us About the Art of Persuasion*** by Jay Heinrichs: A more popular and humorous look at rhetoric and persuasion in everyday life. 😂  

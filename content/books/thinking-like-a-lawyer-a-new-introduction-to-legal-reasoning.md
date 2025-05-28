@@ -4,6 +4,8 @@ aliases:
   - "🤔⚖️ Thinking Like a Lawyer: A New Introduction to Legal Reasoning"
 URL: https://bagrounds.org/books/thinking-like-a-lawyer-a-new-introduction-to-legal-reasoning
 share: true
+tags:
+  - law
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🤔⚖️ Thinking Like a Lawyer: A New Introduction to Legal Reasoning  
@@ -32,7 +34,7 @@ share: true
   
 ### ⚖️ Similar Books (Legal Reasoning & Introduction to Law)  
   
-* 🏆 **The Tools of Argument: How the Best Lawyers Think, Argue, and Win by Joel P. Trachtman:** This book offers a practical approach to legal argumentation, focusing on the techniques used by successful lawyers.  
+* **[👩🏼‍⚖️💭🧮🏆 The Tools of Argument: How the Best Lawyers Think, Argue, and Win](./the-tools-of-argument-how-the-best-lawyers-think-argue-and-win.md) by Joel P. Trachtman:** This book offers a practical approach to legal argumentation, focusing on the techniques used by successful lawyers.  
 * 👨‍⚖️ **Legal Reasoning by Martin P. Golding:** Explores legal reasoning from various angles, including the logic and justification of judicial decisions and the use of precedent.  
 * 🇩🇪 **Introduction to German Legal Methods by Reinhold Zippelius:** Provides a comparative perspective on legal reasoning by examining methods used in the German legal system.  
 * 🎓 **Getting to Maybe: How to Excel on Law School Exams by Richard Fischl and Jeremy Paul:** While focused on exam performance, this book delves into the analytical skills necessary for legal reasoning in a law school context.  

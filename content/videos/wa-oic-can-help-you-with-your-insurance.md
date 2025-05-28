@@ -7,7 +7,8 @@ URL: https://youtu.be/KowDnIoPDMU
 Author: 
 Platform: 
 Channel: Washington State Office of the Insurance Commissioner
-tags: 
+tags:
+  - law
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 🏞️⚕️🛡️🤝 WA OIC can help you with your insurance!  

@@ -41,7 +41,7 @@ Karl Llewellyn's 🌳 *The Bramble Bush* offers a foundational introduction to t
 * 👨‍🏫 **Edward H. Levi, *An Introduction to Legal Reasoning***: This book examines the method of reasoning by example in common law, showing how legal concepts evolve through the comparison and synthesis of cases, a key skill for law students emphasized in *The Bramble Bush*. 📚  
 * ✍️ **Richard Michael Fischl and Jeremy Paul, *Getting to Maybe: How to Excel on Law School Exams***: A practical guide for law students on how to approach law school exams, which resonates with Llewellyn's focus on the practical skills needed to succeed in legal study. ✅  
 * 📖 **Scott Turow, *One L: The Turbulent True Story of a First Year at Harvard Law School***: While a narrative, this book offers a realistic portrayal of the experience of a first-year law student, including grappling with the case method and the intensity of legal education, complementing Llewellyn's introductory guide. 🎓  
-* 🤔 **Frederick Schauer, *Thinking Like a Lawyer: A New Introduction to Legal Reasoning***: A contemporary look at legal reasoning, exploring the methods and characteristics of legal thought, building on the idea of learning to "think like a lawyer" introduced by Llewellyn. 🧠  
+* 🤔 **Frederick Schauer, [🤔⚖️ Thinking Like a Lawyer: A New Introduction to Legal Reasoning](./thinking-like-a-lawyer-a-new-introduction-to-legal-reasoning.md)**: A contemporary look at legal reasoning, exploring the methods and characteristics of legal thought, building on the idea of learning to "think like a lawyer" introduced by Llewellyn. 🧠  
   
 ### ⚖️ Contrasting Books (Different Legal Philosophies, Critiques of Realism)  
   

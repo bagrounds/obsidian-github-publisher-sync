@@ -4,6 +4,8 @@ aliases:
   - "💰⚕️ Making Them Pay: How to Get the Most from Health Insurance and Managed Care"
 URL: https://bagrounds.org/books/making-them-pay-how-to-get-the-most-from-health-insurance-and-managed-care
 share: true
+tags:
+  - law
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 💰⚕️ Making Them Pay: How to Get the Most from Health Insurance and Managed Care  

@@ -4,6 +4,8 @@ aliases:
   - 🧑‍⚖️📚 Law School for Everyone
 URL: https://bagrounds.org/books/law-school-for-everyone
 share: true
+tags:
+  - law
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧑‍⚖️📚 Law School for Everyone  

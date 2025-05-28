@@ -36,6 +36,10 @@ The course is designed to be accessible to a lay audience while still providing 
   
 ## 📚 Additional Book Recommendations  
   
+### 🗣️ Mentioned in Course  
+- ✍️⚖️ Defining Crimes  
+- 📚⚖️ Comprehensive Criminal Procedure  
+  
 ### 🏫 Similar: Introductions to Law and Legal Education  
   
 * 📖 **_1L of a Ride: A Well-Traveled Guide to Your First Year of Law School_ by Andrew McClurg:** 📝 Provides practical advice and insights into navigating the challenges of the first year of law school, covering everything from studying and exams to maintaining well-being.  

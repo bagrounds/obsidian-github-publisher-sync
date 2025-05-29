@@ -7,7 +7,7 @@ URL: https://bagrounds.org/books
 backlinks: false
 ---
 [Home](../index.md)  
-# 📚 Books (401)  
+# 📚 Books (405)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)  
 - [🧑‍🤝‍🧑📈 10 to 25: The Science of Motivating Young People: A Groundbreaking Approach to Leading the Next Generation - And Making Your Own Life Easier](./10-to-25-the-science-of-motivating-young-people-a-groundbreaking-approach-to-leading-the-next-generation-and-making-your-own-life-easier.md)  
@@ -140,6 +140,7 @@ backlinks: false
 - [🌱🍎🌳 Growing Fruit Trees: 12 Simple Steps to Abundant Fruit Production and Reconnecting with the Food You Eat](./growing-fruit-trees-12-simple-steps-to-abundant-fruit-production-and-reconnecting-with-the-food-you-eat.md)  
 - [⚙️🏢 Hack Your Bureaucracy: Get Things Done No Matter What Your Role on Any Team](./hack-your-bureaucracy-get-things-done-no-matter-what-your-role-on-any-team.md)  
 - [📖🫂🥼 Handbook of Attachment: Theory, Research, and Clinical Applications](./handbook-of-attachment-theory-research-and-clinical-applications.md)  
+- [👩🏼‍⚖️⚖️💭🧮🗣️ Handbook of Legal Reasoning and Argumentation](./handbook-of-legal-reasoning-and-argumentation.md)  
 - [Hardwiring Happiness: The Brain Science That Changes Everything](./hardwiring-happiness-the-brain-science-that-changes-everything.md)  
 - [Haskell Programming from First Principles](./haskell-programming-from-first-principles.md)  
 - [Head First Statistics](./head-first-statistics.md)  
@@ -371,6 +372,7 @@ backlinks: false
 - [The Staff Engineer's Path](./the-staff-engineers-path.md)  
 - [The Talent Code](./the-talent-code.md)  
 - [⚖️👈 The Tipping Point: How Little Things Can Make a Big Difference](./the-tipping-point.md)  
+- [👩🏼‍⚖️💭🧮🏆 The Tools of Argument: How the Best Lawyers Think, Argue, and Win](./the-tools-of-argument-how-the-best-lawyers-think-argue-and-win.md)  
 - [The Toyota Way](./the-toyota-way.md)  
 - [The Transsexual Empire](./the-transsexual-empire.md)  
 - [The Tyranny of Metrics](./the-tyranny-of-metrics.md)  
@@ -383,6 +385,7 @@ backlinks: false
 - [👍🧠 The Yes Brain: How to Cultivate Courage, Curiosity, and Resilience in Your Child](./the-yes-brain.md)  
 - [Thinking, Fast and Slow](./thinking-fast-and-slow.md)  
 - [Thinking in Systems](./thinking-in-systems.md)  
+- [🤔⚖️ Thinking Like a Lawyer: A New Introduction to Legal Reasoning](./thinking-like-a-lawyer-a-new-introduction-to-legal-reasoning.md)  
 - [🤥📣 This Is Not Propaganda: Adventures in the War Against Reality](./this-is-not-propaganda.md)  
 - [💭🦠 Thought Contagion: How Belief Spreads Through Society](./thought-contagion.md)  
 - [⏱️🍎 Time Restricted Eating: A Look into the Lifestyle](./time-restricted-eating-a-look-into-the-lifestyle.md)  
@@ -407,5 +410,6 @@ backlinks: false
 - [🦓 Why Zebras Don't Get Ulcers: The Acclaimed Guide to Stress, Stress-Related Disease, and Coping](./why-zebras-dont-get-ulcers.md)  
 - [💪📈 Willpower: Rediscovering the Greatest Human Strength](./willpower.md)  
 - [🥶🛌 Wintering: The Power of Rest and Retreat in Difficult Times](./wintering-the-power-of-rest-and-retreat-in-difficult-times.md)  
+- [💼🔙📦 Working Backwards: Insights, Stories, and Secrets from Inside Amazon](./working-backwards-insights-stories-and-secrets-from-inside-amazon.md)  
 - [Writing Down the Bones](./writing-down-the-bones.md)  
   

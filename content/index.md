@@ -10,7 +10,8 @@ title: 🏡 Home
 📑 Notes, 💭 thoughts, and 🔗 Links.  
 ❔ What do 🫵 _you_ 🤔 think?  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (196)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (197)  
+- [2025-05-30](./reflections/2025-05-30.md)  
 - [2025-05-29 | 🔙 Backward | 💡 Innovation](./reflections/2025-05-29.md)  
 - [2025-05-28 | ⚖️ Lawgic 💭](./reflections/2025-05-28.md)  
 - [2025-05-27 | 🐐 Kid 🔬 Science 📚 | 📰 Republican 🐘 Theft 💸](./reflections/2025-05-27.md)  
@@ -20,14 +21,13 @@ title: 🏡 Home
 - [2025-05-23 | 📜 ERISA vs 👶🏼 Newborns 🤺](./reflections/2025-05-23.md)  
 - [2025-05-22 | ⚖️ Law 🎓 School](./reflections/2025-05-22.md)  
 - [2025-05-21 | 👶🏼🙅🏼‍♀️🏥 Symptoms of ERISA 👿👔💹](./reflections/2025-05-21.md)  
-- [2025-05-20 | 👿 Health 🚫🏥 Insurance ⚔️](./reflections/2025-05-20.md)  
   
   
 ## [📄  Articles](./articles/index.md) (25)  
   
-## [📚 Books](./books/index.md) (406)  
+## [📚 Books](./books/index.md) (407)  
   
-## [🤖💬 Bot Chats](./bot-chats/index.md) (27)  
+## [🤖💬 Bot Chats](./bot-chats/index.md) (28)  
   
 ## [👥 People](./people/index.md) (8)  
   

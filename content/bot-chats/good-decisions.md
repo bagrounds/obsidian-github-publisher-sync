@@ -174,7 +174,7 @@ Here are some of the key disciplines focused on decision-making:
 🔄 These disciplines often overlap and build upon each other, offering a comprehensive and rigorous understanding of how decisions are made and how they can be improved 👍. 🎓 Many universities offer specialized programs (undergraduate and graduate) in "Decision Sciences," "Business Analytics," "Operations Research," or "Behavioral Decision Research" that integrate these different perspectives.  
   
 ## 💬 4. 📚 Books  
-> "🗣️ Considering everything we've discussed, recommend some good books on decision making and how to improve decisions.  
+> 🗣️ Considering everything we've discussed, recommend some good books on decision making and how to improve decisions.  
   
 🧠 Building on our discussion of what constitutes a good decision 🤔 and the various disciplines involved, here are some excellent books 📚 that can significantly improve your decision-making processes. 🚀 They range from foundational texts on cognitive biases 😵‍💫 to practical guides 🛠️ and insights from experts in fields like poker 🃏 and forecasting 🔮.  
   
@@ -192,7 +192,7 @@ Here are some of the key disciplines focused on decision-making:
     *   ⭐ **Why it's essential:** This newer work by Kahneman and co-authors delves into a different, yet equally pervasive, problem: noise. 🔈 While "bias" is a systematic deviation ⬅️, "noise" is unwanted variability in judgments that should be identical. 👯 Think of two doctors 🧑‍⚕️ giving different diagnoses for the same patient, or two judges 👨‍⚖️ handing down different sentences for similar crimes.  
     *   👂 **What you'll learn:** How inconsistency (noise) impacts decision-making in various domains 🏢, and practical strategies for reducing it in individual and organizational contexts. 🧑‍🤝‍🧑  
   
-4.  🎨 **The Art of Thinking Clearly by Rolf Dobelli:**  
+4.  **[🎨🤔🖼️ The Art of Thinking Clearly](../books/the-art-of-thinking-clearly.md) by Rolf Dobelli:**  
     *   ⭐ **Why it's essential:** A highly digestible book 🍔 that presents 99 common cognitive biases and logical fallacies in short, clear chapters. It's an excellent quick reference guide 📖 to many of the mental shortcuts 🩳 that can lead to poor decisions. 👎  
     *   👓 **What you'll learn:** A broad overview 🗺️ of various thinking errors and how to recognize them. 👀  
   

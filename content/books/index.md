@@ -7,7 +7,7 @@ URL: https://bagrounds.org/books
 backlinks: false
 ---
 [Home](../index.md)  
-# 📚 Books (406)  
+# 📚 Books (407)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)  
 - [🧑‍🤝‍🧑📈 10 to 25: The Science of Motivating Young People: A Groundbreaking Approach to Leading the Next Generation - And Making Your Own Life Easier](./10-to-25-the-science-of-motivating-young-people-a-groundbreaking-approach-to-leading-the-next-generation-and-making-your-own-life-easier.md)  
@@ -169,7 +169,7 @@ backlinks: false
 - [Ikigai: The Japanese Secret to a Long and Happy Life](./ikigai.md)  
 - [Incognito: The Secret Lives of the Brain](./incognito.md)  
 - [🧘 Indistractable: How to Control Your Attention and Choose Your Life](./indistractable.md)  
-- [Influence](./influence.md)  
+- [🍃🧠🤝🏼 Influence: The Psychology of Persuasion](./influence.md)  
 - [ℹ️ Information: A Very Short Introduction](./information.md)  
 - [📰⚔️🧠 Information Wars: How We Lost the Global Battle Against Disinformation and What We Can Do About It](./information-wars.md)  
 - [👨‍💼➕ Introduction to Employee Benefits Law](./introduction-to-employee-benefits-law.md)  
@@ -301,6 +301,7 @@ backlinks: false
 - [🎨🤓 The Art Of Learning](./the-art-of-learning.md)  
 - [The Art of Living: The Classical Manual on Virtue, Happiness, and Effectiveness](./the-art-of-living.md)  
 - [The Art of Strategy: A Game Theorist's Guide to Success in Business and Life](./the-art-of-strategy-a-game-theorists-guide-to-success-in-business-and-life.md)  
+- [🎨🤔🖼️ The Art of Thinking Clearly](./the-art-of-thinking-clearly.md)  
 - [🏡🍎 The Backyard Orchardist: A Complete Guide to Growing Fruit Trees in the Home Garden](../../the-backyard-orchardist-a-complete-guide-to-growing-fruit-trees-in-the-home-garden.md)  
 - [📜🤝 The Bill of Obligations: The Ten Habits of Good Citizens](./the-bill-of-obligations.md)  
 - [The Blade Itself](./the-blade-itself.md)  

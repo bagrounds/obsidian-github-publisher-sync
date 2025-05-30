@@ -8,7 +8,7 @@ backlinks: false
 ---
 [Home](../index.md)  
 # 🪞 Reflections (196)  
-- [2025-05-29](./2025-05-29.md)  
+- [2025-05-29 | 🔙 Backward | 💡 Innovation](./2025-05-29.md)  
 - [2025-05-28 | ⚖️ Lawgic 💭](./2025-05-28.md)  
 - [2025-05-27 | 🐐 Kid 🔬 Science 📚 | 📰 Republican 🐘 Theft 💸](./2025-05-27.md)  
 - [2025-05-26 | 🏗️ Creative 🙅🏼‍♀️ Conflict](./2025-05-26.md)  

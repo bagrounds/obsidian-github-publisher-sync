@@ -197,7 +197,7 @@ Here are some of the key disciplines focused on decision-making:
   
 ### 🛠️ Practical Guides & Frameworks  
   
-5. 🧭 **Decisive: How to Make Better Choices in Life and Work by Chip Heath and Dan Heath:**  
+5. **[🤔💡⚖️✅ Decisive: How to Make Better Choices in Life and Work](../books/decisive-how-to-make-better-choices-in-life-and-work.md) by Chip Heath and Dan Heath:**  
     * ⭐ **Why it's essential:** This book offers a practical, four-step process (WRAP) for making better decisions:  
         * ↔️ **W**iden your options  
         * ✅ **R**eality-test your assumptions  

@@ -7,7 +7,7 @@ URL: https://bagrounds.org/books
 backlinks: false
 ---
 [Home](../index.md)  
-# 📚 Books (407)  
+# 📚 Books (408)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)  
 - [🧑‍🤝‍🧑📈 10 to 25: The Science of Motivating Young People: A Groundbreaking Approach to Leading the Next Generation - And Making Your Own Life Easier](./10-to-25-the-science-of-motivating-young-people-a-groundbreaking-approach-to-leading-the-next-generation-and-making-your-own-life-easier.md)  
@@ -72,6 +72,7 @@ backlinks: false
 - [🦁🫀 Daring Greatly: How the Courage to Be Vulnerable Transforms the Way We Live, Love, Parent, and Lead](./daring-greatly-how-the-courage-to-be-vulnerable-transforms-the-way-we-live-love-parent-and-lead.md)  
 - [🏛️💰 Debt: The First 5,000 Years](./debt-the-first-5000-years.md)  
 - [Debugging: The 9 Indispensable Rules for Finding Even the Most Elusive Software and Hardware Problems](./debugging.md)  
+- [🤔💡⚖️✅ Decisive: How to Make Better Choices in Life and Work](./decisive-how-to-make-better-choices-in-life-and-work.md)  
 - [Deep Learning](./deep-learning.md)  
 - [🤿💼 Deep Work](./deep-work.md)  
 - [🏛️☀️⬆️ Democracy Awakening: 📝 Notes on the State of 🇺🇸 America](./democracy-awakening.md)  

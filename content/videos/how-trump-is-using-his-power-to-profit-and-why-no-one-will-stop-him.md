@@ -29,7 +29,7 @@ This episode of Washington Week discusses 📰 Donald Trump's 🏢 business deal
   
 ## 📚 📖 Book Recommendations  
 * 📚 **"All the President's Men" by Carl Bernstein and Bob Woodward:** This book details the 🌊 Watergate scandal and the investigations into President Nixon's abuse of power, offering a historical perspective on presidential ⚖️ accountability.  
-* 📚 **"Confidence Man: The Making and Unmaking of Donald Trump" by Maggie Haberman:** This book explores 👨 Donald Trump's life and presidency, including his 🏢 business dealings and their ethical 🤔 implications.  
+* **[👹🐍🛢️🇺🇸 Confidence Man: The Making of Donald Trump and the Breaking of America](../books/confidence-man-the-making-of-donald-trump-and-the-breaking-of-america.md) by Maggie Haberman:** This book explores 👨 Donald Trump's life and presidency, including his 🏢 business dealings and their ethical 🤔 implications.  
 * 📚 **"It Was All a Lie: How the Republican Party Became Donald Trump" by Stuart Stevens:** This book examines the 🐘 Republican Party's transformation and its relationship with 👨 Donald Trump, shedding light on the political 🎭 dynamics discussed in the video.  
 * 📚 **"American Kleptocracy: How the U.S. Became a Haven for Dirty Money" by Casey Michel:** This book discusses how the U.S. has become a hub for illicit 💸 financial flows, which is relevant to the discussion of Trump's 🏢 business dealings and potential ⚖️ conflicts of interest.  
 * 📚 **"The Assault on American Democracy" by Robert Reich:** This book analyzes the 🎯 threats to American democracy, including 👿 corruption and the 🔨 erosion of accountability mechanisms, which are central themes in the video.

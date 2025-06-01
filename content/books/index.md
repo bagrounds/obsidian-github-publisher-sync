@@ -7,7 +7,7 @@ URL: https://bagrounds.org/books
 backlinks: false
 ---
 [Home](../index.md)  
-# 📚 Books (408)  
+# 📚 Books (411)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)  
 - [🧑‍🤝‍🧑📈 10 to 25: The Science of Motivating Young People: A Groundbreaking Approach to Leading the Next Generation - And Making Your Own Life Easier](./10-to-25-the-science-of-motivating-young-people-a-groundbreaking-approach-to-leading-the-next-generation-and-making-your-own-life-easier.md)  
@@ -22,6 +22,7 @@ backlinks: false
 - [🧑‍🌾🌿 A Gardener's Guide to Botany](./a-gardeners-guide-to-botany.md)  
 - [🤔💻🧠 Algorithms to Live By: The Computer Science of Human Decisions](./algorithms-to-live-by.md)  
 - [🔬🧘🏼‍♀️🧠 Altered Traits: Science Reveals How Meditation Changes Your Mind, Brain, and Body](./altered-traits-science-reveals-how-meditation-changes-your-mind-brain-and-body.md)  
+- [🇺🇸💸🧺🌍 American Kleptocracy: How the U.S. Created the World's Greatest Money Laundering Scheme in History](./american-kleptocracy-how-the-us-created-the-worlds-greatest-money-laundering-scheme-in-history.md)  
 - [An Architect of Democracy: Building a Mosaic of Peace](./an-architect-of-democracy.md)  
 - [An Introduction to Causal Inference](./an-introduction-to-causal-inference.md)  
 - [Antifragile: Things That Gain from Disorder](./antifragile-things-that-gain-from-disorder.md)  
@@ -39,6 +40,7 @@ backlinks: false
 - [⚛️🌎 Beyond Weird: Why Everything You Thought You Knew about Quantum Physics Is Different](./beyond-weird.md)  
 - [🪄 Big Magic: Creative Living Beyond Fear](./big-magic.md)  
 - [🐦🕊️ Bird by Bird: Some Instructions on Writing and Life](./bird-by-bird.md)  
+- [⚡🚫💭 Blink: The Power of Thinking Without Thinking](./blink-the-power-of-thinking-without-thinking.md)  
 - [✍️💻💰 Blog, Inc.: Blogging for Passion, Profit, and to Create Community](./blog-inc-blogging-for-passion-profit-and-to-create-community.md)  
 - [🥱🤓 Bored and Brilliant: How Spacing Out Can Unlock Your Most Productive and Creative Self](./bored-and-brilliant.md)  
 - [🌿🧑‍🌾 Botany for Gardeners](./botany-for-gardeners.md)  
@@ -58,6 +60,7 @@ backlinks: false
 - [🧼💾 Clean Code: A Handbook of Agile Software Craftsmanship](./clean-code.md)  
 - [Cognitive Psychology and Its Implications](./cognitive-psychology-and-its-implications.md)  
 - [Complexity](./complexity.md)  
+- [👹🐍🛢️🇺🇸 Confidence Man: The Making of Donald Trump and the Breaking of America](./confidence-man-the-making-of-donald-trump-and-the-breaking-of-america.md)  
 - [Consensus through Conversation](./consensus-through-conversation.md)  
 - [🦠 Contagious: Why Things Catch On](./contagious.md)  
 - [📣✍️🎞️ Content Rules: How to Create Killer Blogs, Podcasts, Videos, eBooks, Webinars (and More) That Engage Customers and Ignite Your Business](./content-rules-how-to-create-killer-blogs-podcasts-videos-ebooks-webinars-and-more-that-engage-customers-and-ignite-your-business.md)  

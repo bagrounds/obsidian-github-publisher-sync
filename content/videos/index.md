@@ -7,7 +7,7 @@ URL: https://bagrounds.org/videos
 backlinks: false
 ---
 [Home](../index.md)  
-# 📺 Videos (135)  
+# 📺 Videos (136)  
 - [2025 Yearly Themes](./2025-yearly-themes.md)  
 - [3 High Leverage Career Skills (From a Principal At Amazon)](./3-high-leverage-career-skills-from-a-principal-at-amazon.md)  
 - [ACLU attorney on suing Trump administration for using wartime authority for deportations](./aclu-attorney-on-suing-trump-administration-for-using-wartime-authority-for-deportations.md)  
@@ -52,6 +52,7 @@ backlinks: false
 - [How to hack your brain to crave doing hard things.](./how-to-hack-your-brain-to-crave-doing-hard-things.md)  
 - [How to Reduce Bone Injury Risks | Running Science](./how-to-reduce-bone-injury-risks-running-science.md)  
 - [🗣️👽 How to Talk to Aliens](./how-to-talk-to-aliens.md)  
+- [👹🔌🤑 How Trump is using his power to profit and why no one will stop him](./how-trump-is-using-his-power-to-profit-and-why-no-one-will-stop-him.md)  
 - [How Trump's funding freeze is affecting American farmers](./how-trumps-funding-freeze-is-affecting-american-farmers.md)  
 - [How Trump's rhetoric compares to historic fascist language](./how-trumps-rhetoric-compares-to-historic-fascist-language.md)  
 - [How Trump's tariffs and trade war are impacting U.S. and global economies](./how-trumps-tariffs-and-trade-war-are-impacting-us-and-global-economies.md)  

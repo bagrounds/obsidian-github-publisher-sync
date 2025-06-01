@@ -69,7 +69,7 @@ tags:
 ### Book Recommendations 📚  
 * ⭐ **Best Alternate Book on the Same Topic:** "Thinking Strategically: The Competitive Edge in Business, Politics, and Everyday Life" by Avinash K. Dixit and Barry J. Nalebuff. (📚 This is their other book, 🤔 some prefer this one, and 🤔 some prefer "The Art of Strategy")  
 * 🔗 **Best Tangentially Related Book:** "[Thinking, Fast and Slow](./thinking-fast-and-slow.md)" by Daniel Kahneman. 🧠 (💡 Focuses on cognitive biases and decision-making, complementing game theory.)  
-* 🆚 **Best Diametrically Opposed Book:** "Blink: The Power of Thinking Without Thinking" by Malcolm Gladwell. ⚡️ (🚀 Emphasizes intuition and rapid decision-making, ⚔️ contrasting with the analytical approach of game theory.)  
+* 🆚 **Best Diametrically Opposed Book:** [⚡🚫💭 Blink: The Power of Thinking Without Thinking](./blink-the-power-of-thinking-without-thinking.md) by Malcolm Gladwell. ⚡️ (🚀 Emphasizes intuition and rapid decision-making, ⚔️ contrasting with the analytical approach of game theory.)  
 * 🎮 **Best Fiction Book That Incorporates Related Ideas:** "Ender's Game" by Orson Scott Card. 👾 (⚔️ Explores strategic thinking and decision-making in high-stakes situations.)  
 * 🌍 **Best Book That Is More General:** "[Influence](./influence.md): The Psychology of Persuasion" by Robert Cialdini. 🗣️ (🤝 Focuses on broader principles of persuasion and influence, which are relevant to strategic interactions.)  
 * 🎯 **Best Book That Is More Specific:** "Auction Theory" by Vijay Krishna. 💰 (🔎 Provides a deep dive into the specific application of game theory to auctions.)  

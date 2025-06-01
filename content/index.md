@@ -25,7 +25,7 @@ title: 🏡 Home
   
 ## [📄  Articles](./articles/index.md) (25)  
   
-## [📚 Books](./books/index.md) (408)  
+## [📚 Books](./books/index.md) (411)  
   
 ## [🤖💬 Bot Chats](./bot-chats/index.md) (28)  
   
@@ -35,7 +35,7 @@ title: 🏡 Home
   
 ## [🌌 Topics](./topics/index.md) (70)  
   
-## [📺 Videos](./videos/index.md) (136)  
+## [📺 Videos](./videos/index.md) (137)  
   
 ## 🔗 Profiles  
 - [My resume](./topics/my-resume.md)  

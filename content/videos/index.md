@@ -7,7 +7,7 @@ URL: https://bagrounds.org/videos
 backlinks: false
 ---
 [Home](../index.md)  
-# 📺 Videos (136)  
+# 📺 Videos (137)  
 - [2025 Yearly Themes](./2025-yearly-themes.md)  
 - [3 High Leverage Career Skills (From a Principal At Amazon)](./3-high-leverage-career-skills-from-a-principal-at-amazon.md)  
 - [ACLU attorney on suing Trump administration for using wartime authority for deportations](./aclu-attorney-on-suing-trump-administration-for-using-wartime-authority-for-deportations.md)  
@@ -89,6 +89,7 @@ backlinks: false
 - [Robert Putnam reflects on how America became so polarized and what can unify the nation](./robert-putnam-reflects-on-how-america-became-so-polarized-and-what-can-unify-the-nation.md)  
 - [Russell L Ackoff From Mechanistic to Systemic Thinking](./russell-l-ackoff-from-mechanistic-to-systemic-thinking.md)  
 - [Schiff Sends Message Directly to Trump in Surprise Hearing](./schiff-sends-message-directly-to-trump-in-surprise-hearing.md)  
+- [🏛️📣👹🤑 Schiff Takes To Senate Floor to Lay Out Trump's 10 Most Corrupt Acts So Far](./schiff-takes-to-senate-floor-to-lay-out-trumps-10-most-corrupt-acts-so-far.md)  
 - [Scientists sound alarm on Trump administration's dismantling of research funding](./scientists-sound-alarm-on-trump-administrations-dismantling-of-research-funding.md)  
 - [Sen. Bernie Sanders: NOBODY Should Have Voted for the Terrible CR](./sen-bernie-sanders-nobody-should-have-voted-for-the-terrible-cr.md)  
 - [Sen. Cantwell Speaks on the Senate Floor on the Trade Review Act of 2025](./sen-cantwell-speaks-on-the-senate-floor-on-the-trade-review-act-of-2025.md)  

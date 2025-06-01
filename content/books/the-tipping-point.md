@@ -56,7 +56,7 @@ Gladwell illustrates his theories with various case studies, including:
 ### 👯 Similar Books (Exploring Social Phenomena, Virality, Behavioral Economics)  
   
 * 🏆 **Outliers: The Story of Success** by Malcolm Gladwell: Explores the factors contributing to high achievement, looking beyond individual talent to context, opportunity, and culture.  
-* ⚡ **Blink: The Power of Thinking Without Thinking** by Malcolm Gladwell: Examines the process of snap judgments and rapid cognition.  
+* **[⚡🚫💭 Blink: The Power of Thinking Without Thinking](./blink-the-power-of-thinking-without-thinking.md)** by Malcolm Gladwell: Examines the process of snap judgments and rapid cognition.  
 * 🧐 **[Freakonomics](./freakonomics.md): A Rogue Economist Explores the Hidden Side of Everything** by Steven D. Levitt and Stephen J. Dubner: Uses economic principles to analyze diverse, often counterintuitive, aspects of human behavior. Gladwell himself recommended it, noting its entertaining approach to economics.  
 * 📢 **Contagious: How to Build Word of Mouth in the Digital Age** by Jonah Berger: Provides a framework (STEPPS) explaining why certain products, ideas, and content go viral, focusing on the psychology of sharing.  
 * ✅ **[Made to Stick: Why Some Ideas Survive and Others Die](./made-to-stick.md)** by Chip Heath and Dan Heath: Analyzes the characteristics that make ideas memorable and effective, complementing Gladwell's "Stickiness Factor".  

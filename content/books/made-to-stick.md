@@ -75,8 +75,8 @@ tags:
 **Additional Book Recommendations:**  
   
 * **Best alternate book on the same topic:** "[Influence](./influence.md): The Psychology of Persuasion" by Robert Cialdini. 🧠 (More focused on persuasion, but overlaps significantly.)  
-* **Best book that is tangentially related:** "[Thinking, Fast and Slow](./thinking-fast-and-slow.md)" by Daniel Kahneman. 💭 (Explores cognitive biases and decision-making, relevant to understanding how ideas are processed.)  
-* **Best book that is diametrically opposed:** "Blink: The Power of Thinking Without Thinking" by Malcolm Gladwell. ⚡ (While both discuss decision-making, "Blink" emphasizes intuition, whereas "Made to Stick" focuses on structured communication.)  
+* **Best book that is tangentially related:** [Thinking, Fast and Slow](./thinking-fast-and-slow.md) by Daniel Kahneman. 💭 (Explores cognitive biases and decision-making, relevant to understanding how ideas are processed.)  
+* **Best book that is diametrically opposed:** [⚡🚫💭 Blink: The Power of Thinking Without Thinking](./blink-the-power-of-thinking-without-thinking.md) by Malcolm Gladwell. ⚡ (While both discuss decision-making, "Blink" emphasizes intuition, whereas "Made to Stick" focuses on structured communication.)  
 * **Best fiction book that incorporates related ideas:** "The Hitchhiker's Guide to the Galaxy" by Douglas Adams. 🌌 (Uses unexpected and memorable ideas to create a lasting impact.)  
 * **Best book that is more general:** "[Thinking in Systems](./thinking-in-systems.md)" by Donella H. Meadows. ⚙️ (Explores systems thinking, a broader framework for understanding complex ideas.)  
 * **Best book that is more specific:** "Storytelling with Data: A Data Visualization Guide for Business Professionals" by Cole Nussbaumer Knaflic. 📈 (Focuses on making data-driven ideas stick through visual storytelling.)  

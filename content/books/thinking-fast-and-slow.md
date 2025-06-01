@@ -57,7 +57,7 @@ tags:
     * 🧠 Explores similar themes of human irrationality with 🧑‍🔬 engaging experiments and 🌎 real-world applications.  
   
 - ➕ **Tangentially Related:**  
-  - 💡 [**Blink: The Power of Thinking Without Thinking**](https://www.goodreads.com/book/show/40102.Blink) by Malcolm Gladwell  
+  - [⚡🚫💭 Blink: The Power of Thinking Without Thinking](./blink-the-power-of-thinking-without-thinking.md) by Malcolm Gladwell  
     * 🎯 Focuses on the strengths and ⚠️ pitfalls of our rapid, intuitive judgments, 🤝 complementing Kahneman’s insights.  
   
 - ⚔️ **Diametrically Opposed:**  

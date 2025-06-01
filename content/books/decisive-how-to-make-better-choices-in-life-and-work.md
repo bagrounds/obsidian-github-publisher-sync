@@ -41,7 +41,7 @@ share: true
   
 ### ⚖️ Contrasting Books  
   
-* ⚡ ***Blink: The Power of Thinking Without Thinking*** by Malcolm Gladwell: 👀 Argues for the power of rapid cognition and how our intuition and snap judgments can often be as effective, or even more effective, than deliberate analysis in certain situations. ⏪ This offers a counterpoint to the more systematic approach in *Decisive*.  
+* **[⚡🚫💭 Blink: The Power of Thinking Without Thinking](./blink-the-power-of-thinking-without-thinking.md)** by Malcolm Gladwell: 👀 Argues for the power of rapid cognition and how our intuition and snap judgments can often be as effective, or even more effective, than deliberate analysis in certain situations. ⏪ This offers a counterpoint to the more systematic approach in *Decisive*.  
 * 👨‍✈️ ***Sources of Power: How People Make Decisions*** by Gary Klein: 🎯 Focuses on decision-making in high-stakes, time-pressured environments, highlighting the role of experience and recognition-primed decision making in expert judgment, which can differ from the analytical approach of WRAP.  
   
 ### 🎨 Creatively Related Books  

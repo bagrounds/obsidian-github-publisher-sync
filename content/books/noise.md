@@ -73,7 +73,7 @@ tags:
     *Focuses on how subtle changes in choice architecture can significantly improve decision outcomes, resonating with the themes of structured decision-making.*  
   
 - **Diametrically Opposed**:    
-  - *[Blink: The Power of Thinking Without Thinking](https://en.wikipedia.org/wiki/Blink_(book))* by Malcolm Gladwell    
+  - [⚡🚫💭 Blink: The Power of Thinking Without Thinking](./blink-the-power-of-thinking-without-thinking.md) by Malcolm Gladwell    
     *Celebrates the strengths of rapid, intuitive decision-making, offering a counterpoint to the emphasis on reducing noise and standardizing judgments.*  
   
 - **Fiction Incorporating Related Ideas**:    

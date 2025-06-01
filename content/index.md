@@ -11,7 +11,7 @@ title: 🏡 Home
 ❔ What do 🫵 _you_ 🤔 think?  
   
 ## [🪞 Reflections](./reflections/index.md) ~ Blog (198)  
-- [2025-05-31](./reflections/2025-05-31.md)  
+- [2025-05-31 | ✅ Decisive | 👹 Corrupt 🤑](./reflections/2025-05-31.md)  
 - [2025-05-30 | 🤔 Decide 🎲](./reflections/2025-05-30.md)  
 - [2025-05-29 | 🔙 Backward | 💡 Innovation](./reflections/2025-05-29.md)  
 - [2025-05-28 | ⚖️ Lawgic 💭](./reflections/2025-05-28.md)  
@@ -35,7 +35,7 @@ title: 🏡 Home
   
 ## [🌌 Topics](./topics/index.md) (70)  
   
-## [📺 Videos](./videos/index.md) (135)  
+## [📺 Videos](./videos/index.md) (136)  
   
 ## 🔗 Profiles  
 - [My resume](./topics/my-resume.md)  

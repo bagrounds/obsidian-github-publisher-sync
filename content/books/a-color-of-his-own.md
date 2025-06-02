@@ -4,9 +4,12 @@ aliases:
   - 🌈🦎 A Color of His Own
 URL: https://bagrounds.org/books/a-color-of-his-own
 share: true
+affiliate link: https://amzn.to/4mJOfwg
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🌈🦎 A Color of His Own  
+[🛒 A Color of His Own. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4mJOfwg)  
+  
 ## 📘 Book Report: A Color of His Own  
   
 ### 📖 About the Book  

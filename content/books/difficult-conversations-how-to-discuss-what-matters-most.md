@@ -7,6 +7,8 @@ share: true
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 💬😬 Difficult Conversations: How to Discuss What Matters Most  
+[🛒 Difficult Conversations: How to Discuss What Matters Most. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/45697HO)  
+  
 ## 📚 Book Report: 🗣️ Difficult Conversations: How to Discuss What Matters Most  
   
 * 📚 *Difficult Conversations: How to Discuss What Matters Most*, by Douglas Stone, Bruce Patton, and Sheila Heen, offers a framework and practical guidance for navigating the challenging, 😬 high-stakes conversations that are an inevitable part of life. 🤝 Drawing on their work at the Harvard Negotiation Project, the authors dissect the anatomy of difficult conversations and provide strategies for handling them more effectively, promoting learning and stronger relationships rather than conflict and defensiveness.  

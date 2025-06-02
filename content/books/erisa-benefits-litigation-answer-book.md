@@ -6,9 +6,12 @@ URL: https://bagrounds.org/books/erisa-benefits-litigation-answer-book
 share: true
 tags:
   - law
+affiliate link: https://amzn.to/43xso28
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧑‍⚖️❓ ERISA Benefits Litigation Answer Book  
+[🛒 ERISA Benefits Litigation Answer Book. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/43xso28)  
+  
 ## 📖 Book Report: ERISA Benefits Litigation Answer Book  
   
 ### ℹ️ Overview  

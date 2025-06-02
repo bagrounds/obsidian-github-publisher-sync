@@ -6,9 +6,12 @@ title: "🤝🧘 Everything Is Workable: A Zen Approach to Conflict Resolution"
 URL: https://bagrounds.org/books/everything-is-workable-a-zen-approach-to-conflict-resolution
 Author: 
 tags: 
+affiliate link: https://amzn.to/3SwE3JK
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🤝🧘 Everything Is Workable: A Zen Approach to Conflict Resolution  
+[🛒 Everything Is Workable: A Zen Approach to Conflict Resolution. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3SwE3JK)  
+  
 ## 📖 Book Report: 🧘‍♀️ Everything Is Workable: A Zen Approach to Conflict Resolution  
   
 ### 🔍 Overview  

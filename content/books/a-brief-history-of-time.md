@@ -1,14 +1,17 @@
 ---
 share: true
 aliases:
-  - A Brief History of Time
-title: A Brief History of Time
+  - 🤏📜⏳ A Brief History of Time
+title: 🤏📜⏳ A Brief History of Time
 URL: https://bagrounds.org/books/a-brief-history-of-time
 Author: 
 tags: 
+affiliate link: https://amzn.to/4jsHpZa
 ---
 [Home](../index.md) > [Books](./index.md)  
-# A Brief History of Time  
+# 🤏📜⏳ A Brief History of Time  
+[🛒 A Brief History of Time. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4jsHpZa)  
+  
 ## 🤖 AI Summary  
 ### A Brief History of Time 🌌  
   

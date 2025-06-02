@@ -1,14 +1,17 @@
 ---
 share: true
 aliases:
-  - 🏎️💾 Accelerate
-title: 🏎️💾 Accelerate
+  - "🏎️💾 Accelerate: The Science of Lean Software and DevOps: Building and Scaling High Performing Technology Organizations"
+title: "🏎️💾 Accelerate: The Science of Lean Software and DevOps: Building and Scaling High Performing Technology Organizations"
 URL: https://bagrounds.org/books/accelerate
 Author: 
 tags: 
+affiliate link: https://amzn.to/4mFi8h4
 ---
 [Home](../index.md) > [Books](./index.md)  
-# 🏎️💾 Accelerate  
+# 🏎️💾 Accelerate: The Science of Lean Software and DevOps: Building and Scaling High Performing Technology Organizations  
+[🛒 Accelerate: The Science of Lean Software and DevOps: Building and Scaling High Performing Technology Organizations. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4mFi8h4)  
+  
 ## 🤖 AI Summary  
 ### Accelerate: The Science of Lean Software and DevOps: Building and Scaling High Performing Technology Organizations 🚀  
 **TL;DR:** High-performing technology organizations consistently achieve superior business outcomes through robust software delivery and operational capabilities, which are measurable and driven by specific technical and cultural practices.  

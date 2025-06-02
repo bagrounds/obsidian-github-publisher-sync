@@ -4,9 +4,12 @@ aliases:
   - "😴🧠 Sleepyhead: The Neuroscience of a Good Night's Rest"
 URL: https://bagrounds.org/books/sleepyhead-the-neuroscience-of-a-good-nights-rest
 share: true
+affiliate link: https://amzn.to/3FwiUwm
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 😴🧠 Sleepyhead: The Neuroscience of a Good Night's Rest  
+[🛒 Sleepyhead: The Neuroscience of a Good Night's Rest. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3FwiUwm)  
+  
 ## 😴 Book Report: Sleepyhead: The Neuroscience of a Good Night's Rest  
   
 ### ✍️ Author  

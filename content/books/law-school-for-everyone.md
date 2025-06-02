@@ -6,9 +6,12 @@ URL: https://bagrounds.org/books/law-school-for-everyone
 share: true
 tags:
   - law
+affiliate link: https://amzn.to/3FIMCy5
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧑‍⚖️📚 Law School for Everyone  
+[🛒 Law School for Everyone. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3FIMCy5)  
+  
   
 ## 📖 Book Report: ⚖️ Law School for Everyone  
   

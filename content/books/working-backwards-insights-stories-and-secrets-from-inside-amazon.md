@@ -4,9 +4,12 @@ aliases:
   - "💼🔙📦 Working Backwards: Insights, Stories, and Secrets from Inside Amazon"
 URL: https://bagrounds.org/books/working-backwards-insights-stories-and-secrets-from-inside-amazon
 share: true
+affiliate link: https://amzn.to/3Sw6siY
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 💼🔙📦 Working Backwards: Insights, Stories, and Secrets from Inside Amazon  
+[🛒 Working Backwards: Insights, Stories, and Secrets from Inside Amazon. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3Sw6siY)  
+  
 ## 📚 Book Report: Working Backwards: Insights, Stories, and Secrets from Inside Amazon  
   
 *Working Backwards: Insights, Stories, and Secrets from Inside Amazon* 💡 offers an insider's perspective on the principles and practices that fueled Amazon's remarkable growth and innovation. ✍️ Written by former Amazon executives Colin Bryar and Bill Carr, the book delves into the company's unique culture and operational methodologies.  

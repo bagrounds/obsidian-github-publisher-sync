@@ -4,9 +4,12 @@ aliases:
   - "📖⏱️🍎 The Complete Guide to Fasting: Heal Your Body Through Intermittent, Alternate-Day, and Extended Fasting"
 URL: https://bagrounds.org/books/the-complete-guide-to-fasting-heal-your-body-through-intermittent-alternate-day-and-extended-fasting
 share: true
+affiliate link: https://amzn.to/3FwibLE
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 📖⏱️🍎 The Complete Guide to Fasting: Heal Your Body Through Intermittent, Alternate-Day, and Extended Fasting  
+[🛒 The Complete Guide to Fasting: Heal Your Body Through Intermittent, Alternate-Day, and Extended Fasting. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3FwibLE)  
+  
 ## 📖 Book Report: The Complete Guide to Fasting  
   
 **✍️ Authors:** Dr. Jason Fung and Jimmy Moore  

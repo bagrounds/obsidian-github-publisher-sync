@@ -6,9 +6,12 @@ title: "🦓 Why Zebras Don't Get Ulcers: The Acclaimed Guide to Stress, Stress-
 URL: https://bagrounds.org/books/why-zebras-dont-get-ulcers
 Author: 
 tags: 
+affiliate link: https://amzn.to/45nTj3l
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🦓 Why Zebras Don't Get Ulcers: The Acclaimed Guide to Stress, Stress-Related Disease, and Coping  
+[🛒 Why Zebras Don't Get Ulcers: The Acclaimed Guide to Stress, Stress-Related Disease, and Coping. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/45nTj3l)  
+  
 ## 📖 Book Report: 🦓 Why Zebras Don't Get Ulcers by Robert M. Sapolsky  
   
 ### ✍️ Introduction  

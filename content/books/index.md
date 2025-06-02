@@ -7,7 +7,7 @@ URL: https://bagrounds.org/books
 backlinks: false
 ---
 [Home](../index.md)  
-# 📚 Books (411)  
+# 📚 Books (412)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)  
 - [🧑‍🤝‍🧑📈 10 to 25: The Science of Motivating Young People: A Groundbreaking Approach to Leading the Next Generation - And Making Your Own Life Easier](./10-to-25-the-science-of-motivating-young-people-a-groundbreaking-approach-to-leading-the-next-generation-and-making-your-own-life-easier.md)  
@@ -259,7 +259,7 @@ backlinks: false
 - [🧮♻️ Rational Ritual: Culture, Coordination, and Common Knowledge](./rational-ritual.md)  
 - [Reclaiming the State](./reclaiming-the-state.md)  
 - [Reinforcement Learning: An Introduction](./reinforcement-learning-an-introduction.md)  
-- [Resonate: Present Visual Stories that Transform Audiences](./resonate.md)  
+- [🔊🎞️🌱🤯 Resonate: Present Visual Stories that Transform Audiences](./resonate.md)  
 - [😴📈 Rest: Why You Get More Done When You Work Less](./rest-why-you-get-more-done-when-you-work-less.md)  
 - [🗓️🌷 RHS Gardening Through the Year](./rhs-gardening-through-the-year.md)  
 - [🪴 RHS How to Garden When You're New to Gardening: The Basics For Beginners](./rhs-how-to-garden-when-youre-new-to-gardening-the-basics-for-beginners.md)  
@@ -285,6 +285,7 @@ backlinks: false
 - [Software Estimation](./software-estimation.md)  
 - [Soft Wired: How the New Science of Brain Plasticity Can Change Your Life](./soft-wired-how-the-new-science-of-brain-plasticity-can-change-your-life.md)  
 - [⚠️👤 Something Happened](./something-happened.md)  
+- [⛲🔌🤔⚙️ Sources of Power: How People Make Decisions](./sources-of-power-how-people-make-decisions.md)  
 - [Spark: The Revolutionary New Science of Exercise and the Brain](./spark-the-revolutionary-new-science-of-exercise-and-the-brain.md)  
 - [Statistical Quality Control](./statistical-quality-control.md)  
 - [Statistics for Dummies](./statistics-for-dummies.md)  

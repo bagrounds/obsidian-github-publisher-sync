@@ -6,9 +6,12 @@ title: "🏛️➡️👑 How to Lose a Country: The 7 Steps from Democracy to D
 URL: https://bagrounds.org/books/how-to-lose-a-country
 Author: 
 tags: 
+affiliate link: https://amzn.to/4km5FNP
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🏛️➡️👑 How to Lose a Country: The 7 Steps from Democracy to Dictatorship  
+[🛒 How to Lose a Country: The 7 Steps from Democracy to Dictatorship. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4km5FNP)  
+  
 ## 📖 Book Report: How to Lose a Country  
   
 ### ✍️ Author and Publication  

@@ -4,9 +4,12 @@ aliases:
   - 😩⚕️ Fatigue Science for Human Health
 URL: https://bagrounds.org/books/fatigue-science-for-human-health
 share: true
+affiliate link: https://amzn.to/43oKvbT
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 😩⚕️ Fatigue Science for Human Health  
+[🛒 Fatigue Science for Human Health. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/43oKvbT)  
+  
 ## 📖 Book Report: Fatigue Science for Human Health  
   
 **Edited by:** ✍️ Y. Watanabe, 👩‍⚕️ B. Evengård, 👨‍⚕️ B. H. Natelson, 🧑‍⚕️ L. A. Jason, 👨‍🔬 H. Kuratsune  

@@ -6,6 +6,7 @@ title: "🧑🏿⚖️🧑🏻 Long Time Coming: Reckoning With Race In America"
 URL: https://bagrounds.org/books/long-time-coming-reckoning-with-race-in-america
 Author: 
 tags: 
+affiliate link: https://amzn.to/3HkBKa8
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧑🏿⚖️🧑🏻 Long Time Coming: Reckoning With Race In America  

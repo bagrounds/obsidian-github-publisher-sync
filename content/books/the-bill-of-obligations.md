@@ -6,11 +6,11 @@ title: "📜🤝 The Bill of Obligations: The Ten Habits of Good Citizens"
 URL: https://bagrounds.org/books/the-bill-of-obligations
 Author: 
 tags: 
-affiliate link: https://www.amazon.com/dp/0525560653/ref=cm_sw_r_as_gl_apa_gl_i_NSDDWMY3DKZ3NEB6E478?linkCode=ml1&tag=bagrounds-20
+affiliate link: https://amzn.to/3Hlupax
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 📜🤝 The Bill of Obligations: The Ten Habits of Good Citizens  
-[🛒 The Bill of Obligations: The Ten Habits of Good Citizens. As an Amazon Associate I earn from qualifying purchases.](https://www.amazon.com/dp/0525560653/ref=cm_sw_r_as_gl_apa_gl_i_NSDDWMY3DKZ3NEB6E478?linkCode=ml1&tag=bagrounds-20)  
+[🛒 The Bill of Obligations: The Ten Habits of Good Citizens. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3Hlupax)  
   
 ## 📖 Book Report: The Bill of Obligations: The Ten Habits of Good Citizens by Richard Haass  
   

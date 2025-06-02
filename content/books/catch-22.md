@@ -4,9 +4,12 @@ aliases:
   - 🔁🤪 Catch-22
 URL: https://bagrounds.org/books/catch-22
 share: true
+affiliate link: https://amzn.to/3SwyniU
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🔁🤪 Catch-22  
+[🛒 Catch-22. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3SwyniU)  
+  
 ## 📚 Book Report: Catch-22 by Joseph Heller  
   
 ### ✍️ Introduction  

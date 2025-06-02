@@ -4,9 +4,12 @@ aliases:
   - "👑💪🏽⁉️ Power: Why Some People Have It - and Others Don't"
 URL: https://bagrounds.org/books/power-why-some-people-have-it-and-others-dont
 share: true
+affiliate link: https://amzn.to/3Fud3aT
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 👑💪🏽⁉️ Power: Why Some People Have It - and Others Don't  
+[🛒 Power: Why Some People Have It - and Others Don't. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3Fud3aT)  
+  
 ## 📚 Book Report: 👑 Power: ❓ Why Some People Have It - and Others Don't by Jeffrey Pfeffer  
   
 ### 📖 Overview  

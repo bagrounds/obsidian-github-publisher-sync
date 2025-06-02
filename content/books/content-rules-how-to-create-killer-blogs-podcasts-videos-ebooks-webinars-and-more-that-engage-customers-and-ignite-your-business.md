@@ -76,7 +76,7 @@ share: true
 * 📣 **Building a StoryBrand** by Donald Miller: Provides a popular framework (SB7) for clarifying your message using storytelling principles to connect with customers.  
 * 🗣️ **Stories That Stick** by Kindra Hall: Focuses specifically on how to find, craft, and tell compelling business stories that captivate and influence.  
 * 🧠 **[Made to Stick: Why Some Ideas Survive and Others Die](./made-to-stick.md)** by Chip Heath & Dan Heath: Explores the characteristics of ideas that are memorable and effective, highly relevant to creating impactful content.  
-* 🖼️ **Resonate: Present Visual Stories that Transform Audiences** by Nancy Duarte: Focuses on creating presentations that tell compelling visual stories.  
+* **[🔊🎞️🌱🤯 Resonate: Present Visual Stories that Transform Audiences](./resonate.md)** by Nancy Duarte: Focuses on creating presentations that tell compelling visual stories.  
 * 🧬 **Wired for Story** by Lisa Cron: Explores the neuroscience behind why storytelling is so powerful and how to use it to hook readers.  
 * 🎧 **Books on Podcasting:**  
     * 🎙️ *Profit from Your Podcast* by Dave Jackson  

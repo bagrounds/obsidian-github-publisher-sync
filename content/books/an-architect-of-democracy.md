@@ -1,14 +1,17 @@
 ---
 share: true
 aliases:
-  - "An Architect of Democracy: Building a Mosaic of Peace"
-title: "An Architect of Democracy: Building a Mosaic of Peace"
+  - "✍️🗺️🏗️🗳️ An Architect of Democracy: Building a Mosaic of Peace"
+title: "✍️🗺️🏗️🗳️ An Architect of Democracy: Building a Mosaic of Peace"
 URL: https://bagrounds.org/books/an-architect-of-democracy
 Author: 
 tags: 
+affiliate link: https://amzn.to/4mOSl6u
 ---
 [Home](../index.md) > [Books](./index.md)  
-# An Architect of Democracy: Building a Mosaic of Peace  
+# ✍️🗺️🏗️🗳️ An Architect of Democracy: Building a Mosaic of Peace  
+[🛒 An Architect of Democracy: Building a Mosaic of Peace. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4mOSl6u)  
+  
 ## 🤖 AI Summary  
 ### An Architect of 🗳️ Democracy: Building a Mosaic of 🕊️ Peace  
 by James Robert Huntley  

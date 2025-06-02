@@ -4,9 +4,12 @@ share: true
 aliases:
   - "🕯️👀📐 Ritual: Perspectives and Dimensions"
 URL: https://bagrounds.org/books/ritual-perspectives-and-dimensions
+affiliate link: https://amzn.to/3ZMrCgF
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🕯️👀📐 Ritual: Perspectives and Dimensions  
+[🛒 Ritual: Perspectives and Dimensions. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3ZMrCgF)  
+  
 ## 📖 Book Report: Ritual: Perspectives and Dimensions by Catherine Bell  
   
 ### 👤 Introduction  

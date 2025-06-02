@@ -6,9 +6,12 @@ title: "🌱🧘🏼‍♀️🏆 Mindset: The New Psychology of Success"
 URL: https://bagrounds.org/books/Mindset
 Author: "[[Carol Dweck]]"
 tags: 
+affiliate link: https://amzn.to/3HAAyQ0
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🌱🧘🏼‍♀️🏆 Mindset: The New Psychology of Success  
+[🛒 Mindset: The New Psychology of Success. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3HAAyQ0)  
+  
 ## 📝🐒 Human Notes  
 - 🧱 Fixed mindset  
   - 👤 we are who we are  

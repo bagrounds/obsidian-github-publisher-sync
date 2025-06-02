@@ -6,9 +6,12 @@ URL: https://bagrounds.org/books/thinking-like-a-lawyer-a-new-introduction-to-le
 share: true
 tags:
   - law
+affiliate link: https://amzn.to/445lXUD
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🤔⚖️ Thinking Like a Lawyer: A New Introduction to Legal Reasoning  
+[🛒 Thinking Like a Lawyer: A New Introduction to Legal Reasoning. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/445lXUD)  
+  
 ## 📚 Book Report: ⚖️ Thinking Like a Lawyer: A New Introduction to Legal Reasoning  
   
 👨‍🏫 Frederick Schauer's "Thinking Like a Lawyer: A New Introduction to Legal Reasoning" serves as a primer on the fundamental concepts and methods that characterize legal thought. 🧑‍🎓 Aimed at law students and advanced undergraduates, the book also offers insights for scholars and practicing lawyers. 🤔 Schauer delves into the core question of whether legal reasoning is truly distinct from other forms of reasoning, ultimately arguing that while its components may not be entirely unique, their prominence and specific application within the legal system lend it a unique character.  

@@ -6,9 +6,12 @@ title: "🧮♻️ Rational Ritual: Culture, Coordination, and Common Knowledge"
 URL: https://bagrounds.org/books/rational-ritual
 Author: 
 tags: 
+affiliate link: https://amzn.to/4jBYMXz
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧮♻️ Rational Ritual: Culture, Coordination, and Common Knowledge  
+[🛒 Rational Ritual: Culture, Coordination, and Common Knowledge. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4jBYMXz)  
+  
 ## 📚 Book Report: Rational Ritual  
   
 **📜 Title:** Rational Ritual: Culture, Coordination, and Common Knowledge  

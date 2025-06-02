@@ -6,10 +6,11 @@ title: "🫄➕ Expecting Better: Why the Conventional Pregnancy Wisdom Is Wrong
 URL: https://bagrounds.org/books/expecting-better
 Author: "[[Emily Oster]]"
 tags: 
+affiliate link: https://amzn.to/3ZbhEoY
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🫄➕ Expecting Better: Why the Conventional Pregnancy Wisdom Is Wrong - and What You Really Need to Know  
-_Why the Conventional Pregnancy Wisdom Is Wrong - and What You Really Need to Know_  
+[🛒 Expecting Better: Why the Conventional Pregnancy Wisdom Is Wrong - and What You Really Need to Know. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3ZbhEoY)  
   
 ## 🤖 AI Report  
 ### 📚 TL;DR  

@@ -6,9 +6,12 @@ URL: https://bagrounds.org/books/erisa-law-answer-book
 share: true
 tags:
   - law
+affiliate link: https://amzn.to/4kRju6V
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🇺🇸❓📚 ERISA Law Answer Book  
+[🛒 ERISA Law Answer Book. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4kRju6V)  
+  
 ## 📖 Book Report: ERISA Law Answer Book  
   
 The 💼 *ERISA Law Answer Book*, published by Wolters Kluwer, serves as a comprehensive desk reference focused on the Employee Retirement Income Security Act of 1974 (ERISA). 📝 It is designed to provide clear, concise, and authoritative answers to a wide range of questions concerning ERISA compliance and the administration of retirement ⚕️ and health benefit programs.  

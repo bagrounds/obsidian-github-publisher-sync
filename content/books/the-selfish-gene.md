@@ -6,9 +6,12 @@ title: 👤🧬 The Selfish Gene
 URL: https://bagrounds.org/books/the-selfish-gene
 Author: 
 tags: 
+affiliate link: https://amzn.to/4mGO44D
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 👤🧬 The Selfish Gene  
+[🛒 The Selfish Gene. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4mGO44D)  
+  
 ## 📖 Book Report: The Selfish Gene by Richard Dawkins  
   
 ### ℹ️ Introduction  

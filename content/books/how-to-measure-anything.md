@@ -1,14 +1,17 @@
 ---
 share: true
 aliases:
-  - How to Measure Anything
-title: How to Measure Anything
+  - "📏🌌 How to Measure Anything: Finding the Value of Intangibles in Business"
+title: "📏🌌 How to Measure Anything: Finding the Value of Intangibles in Business"
 URL: https://bagrounds.org/books/how-to-measure-anything
 Author: 
 tags: 
+affiliate link: https://amzn.to/3ZFNPgs
 ---
 [Home](../index.md) > [Books](./index.md)  
-# How to Measure Anything  
+# 📏🌌 How to Measure Anything: Finding the Value of Intangibles in Business  
+[🛒 How to Measure Anything: Finding the Value of Intangibles in Business. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3ZFNPgs)  
+  
 ## 🤖 AI Summary  
 ### How to Measure Anything: Finding the Value of "Intangibles" in Business (Summary) 📏💡  
 **📝 TL;DR:** You can measure 📏 *anything* by reducing 📉 uncertainty through systematic observation 👀, calibrated estimation ⚖️, and the application of statistical methods 📊, even if it seems inherently intangible ✨.  

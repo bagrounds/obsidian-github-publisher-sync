@@ -6,9 +6,12 @@ URL: https://bagrounds.org/books/making-them-pay-how-to-get-the-most-from-health
 share: true
 tags:
   - law
+affiliate link: https://amzn.to/4l781An
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 💰⚕️ Making Them Pay: How to Get the Most from Health Insurance and Managed Care  
+[🛒 Making Them Pay: How to Get the Most from Health Insurance and Managed Care. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4l781An)  
+  
 ## 📚 Book Report: 💰 Making Them Pay: How to Get the Most from Health Insurance and Managed Care  
   
 ### 📝 Introduction  

@@ -4,9 +4,12 @@ aliases:
   - "🧠❤️🔄 The Neuroscience of Change: A Compassion-Based Program for Personal Transformation"
 URL: https://bagrounds.org/books/the-neuroscience-of-change-a-compassion-based-program-for-personal-transformation
 share: true
+affiliate link: https://amzn.to/4dJ4sxD
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧠❤️🔄 The Neuroscience of Change: A Compassion-Based Program for Personal Transformation  
+[🛒 The Neuroscience of Change: A Compassion-Based Program for Personal Transformation. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4dJ4sxD)  
+  
 ## 🧠 Book Report: The Neuroscience of Change  
   
 ### 📖 Overview  

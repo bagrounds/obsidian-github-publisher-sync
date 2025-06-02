@@ -4,9 +4,12 @@ aliases:
   - ⚠️👤 Something Happened
 URL: https://bagrounds.org/books/something-happened
 share: true
+affiliate link: https://amzn.to/43Hjnnr
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ⚠️👤 Something Happened  
+[🛒 Something Happened. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/43Hjnnr)  
+  
 ## 📚 Book Report: Something Happened by Joseph Heller  
   
 ### ℹ️ Overview  

@@ -4,9 +4,12 @@ aliases:
   - "🙈⚡🔬🌌 Hidden Potential: The Science of Achieving Greater Things"
 URL: https://bagrounds.org/books/hidden-potential-the-science-of-achieving-greater-things
 share: true
+affiliate link: https://amzn.to/4kQ8hn9
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🙈⚡🔬🌌 Hidden Potential: The Science of Achieving Greater Things  
+[🛒 Hidden Potential: The Science of Achieving Greater Things. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4kQ8hn9)  
+  
 ## 📖 Book Report: Hidden Potential by Adam Grant  
   
 ### 💡 Overview  

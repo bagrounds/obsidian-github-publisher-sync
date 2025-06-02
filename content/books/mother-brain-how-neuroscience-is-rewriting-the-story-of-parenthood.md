@@ -4,9 +4,12 @@ aliases:
   - "🤱🏼🧠 Mother Brain: How Neuroscience Is Rewriting the Story of Parenthood"
 URL: https://bagrounds.org/books/mother-brain-how-neuroscience-is-rewriting-the-story-of-parenthood
 share: true
+affiliate link: https://amzn.to/45ocnyr
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🤱🏼🧠 Mother Brain: How Neuroscience Is Rewriting the Story of Parenthood  
+[🛒 Mother Brain: How Neuroscience Is Rewriting the Story of Parenthood. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/45ocnyr)  
+  
 ## 🧠 Book Report: 👩‍⚕️ Mother Brain: How Neuroscience Is Rewriting the Story of Parenthood by Chelsea Conaboy  
   
 **👩‍💻 Author:** Chelsea Conaboy  

@@ -6,9 +6,12 @@ title: "👥⚔️👑 How to Stand Up to a Dictator: The Fight for Our Future"
 URL: https://bagrounds.org/books/how-to-stand-up-to-a-dictator
 Author: 
 tags: 
+affiliate link: https://amzn.to/4kq8ddX
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 👥⚔️👑 How to Stand Up to a Dictator: The Fight for Our Future  
+[🛒 How to Stand Up to a Dictator: The Fight for Our Future. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4kq8ddX)  
+  
 ## 📖 Book Report: 📢 How to Stand Up to a Dictator: The Fight for Our Future by Maria Ressa  
   
 ### ℹ️ Introduction  

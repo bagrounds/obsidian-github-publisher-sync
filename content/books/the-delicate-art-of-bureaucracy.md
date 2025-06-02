@@ -4,9 +4,12 @@ aliases:
   - "🏢📋🐒🪒🤼‍♂️ The Delicate Art of Bureaucracy: Digital Transformation with the Monkey, the Razor, and the Sumo Wrestler"
 URL: https://bagrounds.org/books/the-delicate-art-of-bureaucracy
 share: true
+affiliate link: https://amzn.to/4l7d9ED
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🏢📋🐒🪒🤼‍♂️ The Delicate Art of Bureaucracy: Digital Transformation with the Monkey, the Razor, and the Sumo Wrestler  
+[🛒 The Delicate Art of Bureaucracy: Digital Transformation with the Monkey, the Razor, and the Sumo Wrestler. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4l7d9ED)  
+  
 ## 📖 Book Report: The Delicate Art of Bureaucracy  
   
 ### 📝 Overview  

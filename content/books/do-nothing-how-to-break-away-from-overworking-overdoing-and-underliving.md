@@ -4,9 +4,12 @@ aliases:
   - "🌴🧘🏼‍♀️ Do Nothing: How to Break Away from Overworking, Overdoing, and Underliving"
 URL: https://bagrounds.org/books/do-nothing-how-to-break-away-from-overworking-overdoing-and-underliving
 share: true
+affiliate link: https://amzn.to/43I7zB8
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🌴🧘🏼‍♀️ Do Nothing: How to Break Away from Overworking, Overdoing, and Underliving  
+[🛒 Do Nothing: How to Break Away from Overworking, Overdoing, and Underliving. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/43I7zB8)  
+  
 ## 📚 Book Report: 🧘 Do Nothing by Celeste Headlee  
   
 ### ✍️ Introduction  

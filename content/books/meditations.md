@@ -4,9 +4,12 @@ aliases:
   - 🤔🧘 Meditations
 URL: https://bagrounds.org/books/meditations
 share: true
+affiliate link: https://amzn.to/3ZcGwwJ
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🤔🧘 Meditations  
+[🛒 Meditations. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3ZcGwwJ)  
+  
 ## 📖 Book Report: Meditations by Marcus Aurelius  
   
 ### ℹ️ Introduction  

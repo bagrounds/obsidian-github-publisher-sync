@@ -4,9 +4,12 @@ aliases:
   - "🍬⏳ The Marshmallow Test: Mastering Self-Control"
 URL: https://bagrounds.org/books/the-marshmallow-test-mastering-self-control
 share: true
+affiliate link: https://amzn.to/3FCKxDR
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🍬⏳ The Marshmallow Test: Mastering Self-Control  
+[🛒 The Marshmallow Test: Mastering Self-Control. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3FCKxDR)  
+  
 ## 📚 Book Report: The Marshmallow Test: Mastering Self-Control  
   
 ### 👨‍🏫 The Experiment  

@@ -6,9 +6,12 @@ title: "🧘🏋️ The Willpower Instinct: How Self-Control Works, Why It Matte
 URL: https://bagrounds.org/books/the-willpower-instinct
 Author: 
 tags: 
+affiliate link: https://amzn.to/3ZanKGf
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧘🏋️ The Willpower Instinct: How Self-Control Works, Why It Matters, and What You Can Do to Get More of It  
+[🛒 The Willpower Instinct: How Self-Control Works, Why It Matters, and What You Can Do to Get More of It. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3ZanKGf)  
+  
 ## 📚 Book Report: The Willpower Instinct  
   
 ### ℹ️ Introduction  

@@ -1,14 +1,17 @@
 ---
 share: true
 aliases:
-  - 🪖🎨 The War of Art
-title: 🪖🎨 The War of Art
+  - "🪖🎨 The War of Art: Break Through the Blocks and Win Your Inner Creative Battles"
+title: "🪖🎨 The War of Art: Break Through the Blocks and Win Your Inner Creative Battles"
 URL: https://bagrounds.org/books/the-war-of-art
 Author: 
 tags: 
+affiliate link: https://amzn.to/3HibNZ3
 ---
 [Home](../index.md) > [Books](./index.md)  
-# 🪖🎨 The War of Art  
+# 🪖🎨 The War of Art: Break Through the Blocks and Win Your Inner Creative Battles  
+[🛒 The War of Art: Break Through the Blocks and Win Your Inner Creative Battles. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3HibNZ3)  
+  
 ## 🤖 AI Summary  
 ### **TL;DR** 🎯  
 "The War of Art" is a guide to overcoming "Resistance," the internal force that prevents creative individuals from doing their work, by treating creative pursuits as a professional endeavor rather than a hobby.  

@@ -4,6 +4,7 @@ aliases:
   - "💬😬 Difficult Conversations: How to Discuss What Matters Most"
 URL: https://bagrounds.org/books/difficult-conversations-how-to-discuss-what-matters-most
 share: true
+affiliate link: https://amzn.to/45697HO
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 💬😬 Difficult Conversations: How to Discuss What Matters Most  

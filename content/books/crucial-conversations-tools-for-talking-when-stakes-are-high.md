@@ -4,9 +4,12 @@ aliases:
   - "🧰💬 Crucial Conversations: Tools for Talking When Stakes Are High"
 URL: https://bagrounds.org/books/crucial-conversations-tools-for-talking-when-stakes-are-high
 share: true
+affiliate link: https://amzn.to/43EgFPt
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧰💬 Crucial Conversations: Tools for Talking When Stakes Are High  
+[🛒 Crucial Conversations: Tools for Talking When Stakes Are High. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/43EgFPt)  
+  
 ## 📚 Book Report: Crucial Conversations  
   
 ### 🗣️ Introduction  

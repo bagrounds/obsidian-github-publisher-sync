@@ -4,9 +4,12 @@ aliases:
   - 🗓️🌷 RHS Gardening Through the Year
 URL: https://bagrounds.org/books/rhs-gardening-through-the-year
 share: true
+affiliate link: https://amzn.to/3FD3Dd1
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🗓️🌷 RHS Gardening Through the Year  
+[🛒 RHS Gardening Through the Year. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3FD3Dd1)  
+  
 ## 📚 Book Report: 🌻 RHS Gardening Through the Year by Ian Spence  
   
 ### 🪴 Introduction  

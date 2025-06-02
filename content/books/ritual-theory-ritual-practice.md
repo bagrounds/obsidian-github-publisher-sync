@@ -4,9 +4,11 @@ share: true
 aliases:
   - 🙏🔄 Ritual Theory, Ritual Practice
 URL: https://bagrounds.org/books/ritual-theory-ritual-practice
+affiliate link: https://amzn.to/4dGnlRM
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🙏🔄 Ritual Theory, Ritual Practice  
+[🛒 Ritual Theory, Ritual Practice. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4dGnlRM)  
   
 ## 📚 Book Report: *Ritual Theory, Ritual Practice* (Ed. Catherine Bell, 1992)  
   

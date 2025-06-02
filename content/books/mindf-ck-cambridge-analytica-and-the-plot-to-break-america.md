@@ -6,9 +6,12 @@ title: "🤯 Mindf*ck: Cambridge Analytica and the Plot to Break America"
 URL: https://bagrounds.org/books/mindfuck-cambridge-analytica-and-the-plot-to-break-america
 Author: 
 tags: 
+affiliate link: https://amzn.to/4kRG3bD
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🤯 Mindf\*ck: Cambridge Analytica and the Plot to Break America  
+[🛒 Mindf*ck: Cambridge Analytica and the Plot to Break America. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4kRG3bD)  
+  
 ## 📖 Book Report: Mindf\*ck: Cambridge Analytica and the Plot to Break America  
   
 ### ✍️ Author and Context  

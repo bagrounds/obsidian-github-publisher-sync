@@ -1,15 +1,17 @@
 ---
 aliases:
-  - Pets on the Couch
-title: Pets on the Couch
+  - 🐈🐕🛋️ Pets on the Couch
+title: 🐈🐕🛋️ Pets on the Couch
 Author: "[[nicholas-dodman]]"
 goodreads: https://www.goodreads.com/book/show/27274445-pets-on-the-couch
 URL: https://www.simonandschuster.com/books/Pets-on-the-Couch/Nicholas-Dodman/9781476749037
 share: true
+affiliate link: https://amzn.to/4kPcUxN
 ---
 [Home](../index.md) > [Books](./index.md)  
-# Pets on the Couch  
+# 🐈🐕🛋️ Pets on the Couch  
 _Neurotic Dogs, Compulsive Cats, Anxious Birds, and the New Science of Animal Psychiatry_  
+[🛒 Pets on the Couch. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4kPcUxN)  
   
 ## 🤖 AI Summary  
 **Summary of *Pets on the Couch***    

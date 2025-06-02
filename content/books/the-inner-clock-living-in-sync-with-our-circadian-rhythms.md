@@ -4,9 +4,11 @@ aliases:
   - "⏰👤 The Inner Clock: Living in Sync with Our Circadian Rhythms"
 URL: https://bagrounds.org/books/the-inner-clock-living-in-sync-with-our-circadian-rhythms
 share: true
+affiliate link: https://amzn.to/4kJoHgP
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ⏰👤 The Inner Clock: Living in Sync with Our Circadian Rhythms  
+[🛒 The Inner Clock: Living in Sync with Our Circadian Rhythms. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4kJoHgP)  
   
 ## 📚 Book Report: The Inner Clock by Lynne Peeples  
   

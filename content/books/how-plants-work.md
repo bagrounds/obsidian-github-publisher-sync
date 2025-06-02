@@ -6,6 +6,7 @@ title: "🌿🔬 How Plants Work: The Science Behind the Amazing Things Plants D
 URL: https://bagrounds.org/books/how-plants-work
 Author: 
 tags: 
+affiliate link: https://amzn.to/3HAzxYa
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🌿🔬 How Plants Work: The Science Behind the Amazing Things Plants Do  

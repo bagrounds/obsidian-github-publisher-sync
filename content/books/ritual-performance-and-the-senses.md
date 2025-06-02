@@ -4,9 +4,12 @@ share: true
 aliases:
   - 🕯️🎬👃 Ritual, Performance and the Senses
 URL: https://bagrounds.org/books/ritual-performance-and-the-senses
+affiliate link: https://amzn.to/3SA7fiZ
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🕯️🎬👃 Ritual, Performance and the Senses  
+[🛒 Ritual, Performance and the Senses. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3SA7fiZ)  
+  
 ## 📖 Book Report: 🎭 Ritual, 🎬 Performance and the 👃 Senses  
   
 This report focuses on the edited volume 📚 *Ritual, 🎭 Performance and the 👃 Senses* (Bloomsbury/Routledge 🗓️ 2015/2016), edited by 👨‍🏫 Michael Bull and 👨‍🏫 Jon P. Mitchell, part of the Sensory Studies series edited by 👨‍🏫 David Howes.  

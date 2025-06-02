@@ -6,9 +6,12 @@ title: ℹ️🌻 The Informed Gardener Blooms Again
 URL: https://bagrounds.org/books/the-informed-gardener-blooms-again
 Author: 
 tags: 
+affiliate link: https://amzn.to/4kpswbq
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ℹ️🌻 The Informed Gardener Blooms Again  
+[🛒 The Informed Gardener Blooms Again. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4kpswbq)  
+  
 ## 📚 Book Report: 🌻 The Informed Gardener Blooms Again  
   
 ### ✍️ Author and Background  

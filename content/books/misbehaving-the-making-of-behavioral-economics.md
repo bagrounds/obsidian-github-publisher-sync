@@ -4,9 +4,12 @@ share: true
 aliases:
   - "🤔💸 Misbehaving: The Making of Behavioral Economics"
 URL: https://bagrounds.org/books/misbehaving-the-making-of-behavioral-economics
+affiliate link: https://amzn.to/4jAWjN8
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🤔💸 Misbehaving: The Making of Behavioral Economics  
+[🛒 Misbehaving: The Making of Behavioral Economics. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4jAWjN8)  
+  
 ## 📚 Book Report: Misbehaving: The Making of Behavioral Economics  
   
 ### ✍️ Author  

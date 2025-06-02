@@ -6,9 +6,12 @@ title: "🕳️🧠👶🏽 The Whole-Brain Child: 12 Revolutionary Strategies t
 URL: https://bagrounds.org/books/the-whole-brain-child
 Author: 
 tags: 
+affiliate link: https://amzn.to/4mHBl1R
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🕳️🧠👶🏽 The Whole-Brain Child: 12 Revolutionary Strategies to Nurture Your Child's Developing Mind  
+[🛒 The Whole-Brain Child: 12 Revolutionary Strategies to Nurture Your Child's Developing Mind. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4mHBl1R)  
+  
 ## 🧠 Book Report: The Whole-Brain Child  
   
 ### 📚 Overview  

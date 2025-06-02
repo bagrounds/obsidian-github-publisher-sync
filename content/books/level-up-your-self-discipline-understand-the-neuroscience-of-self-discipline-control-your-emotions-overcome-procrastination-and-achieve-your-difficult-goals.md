@@ -4,9 +4,11 @@ aliases:
   - "💪🧠 Level-Up Your Self-Discipline: Understand the Neuroscience of Self-Discipline, Control Your Emotions, Overcome Procrastination, and Achieve Your Difficult Goals"
 URL: https://bagrounds.org/books/level-up-your-self-discipline-understand-the-neuroscience-of-self-discipline-control-your-emotions-overcome-procrastination-and-achieve-your-difficult-goals
 share: true
+affiliate link: https://amzn.to/45zmcJF
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 💪🧠 Level-Up Your Self-Discipline: Understand the Neuroscience of Self-Discipline, Control Your Emotions, Overcome Procrastination, and Achieve Your Difficult Goals  
+[🛒 Level-Up Your Self-Discipline: Understand the Neuroscience of Self-Discipline, Control Your Emotions, Overcome Procrastination, and Achieve Your Difficult Goals. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/45zmcJF)  
   
 ## 📖 Book Report: Level-Up Your Self-Discipline  
   

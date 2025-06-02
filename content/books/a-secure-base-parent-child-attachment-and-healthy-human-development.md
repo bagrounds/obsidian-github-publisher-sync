@@ -4,9 +4,12 @@ aliases:
   - "👨‍👩‍👧‍👦🛡️ A Secure Base: Parent-Child Attachment and Healthy Human Development"
 URL: https://bagrounds.org/books/a-secure-base-parent-child-attachment-and-healthy-human-development
 share: true
+affiliate link: https://amzn.to/4knb2wj
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 👨‍👩‍👧‍👦🛡️ A Secure Base: Parent-Child Attachment and Healthy Human Development  
+[🛒 A Secure Base: Parent-Child Attachment and Healthy Human Development. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4knb2wj)  
+  
 ## 📚 Book Report: A Secure Base by John Bowlby  
   
 ### 📖 Introduction  

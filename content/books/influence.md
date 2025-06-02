@@ -6,9 +6,12 @@ title: "🍃🧠🤝🏼 Influence: The Psychology of Persuasion"
 URL: https://bagrounds.org/books/Influence
 Author: "[[Robert Cialdini]]"
 tags: 
+affiliate link: https://amzn.to/4dJSMul
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🍃🧠🤝🏼 Influence: The Psychology of Persuasion  
+[🛒 Influence: The Psychology of Persuasion. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4dJSMul)  
+  
 ## 📝🐒 Human Notes   
 - ⚖️ contrast  
   - 💰 attempting to sell the most expensive item first increases likelihood of selling less expensive items, which seem cheap in comparison 🤑  

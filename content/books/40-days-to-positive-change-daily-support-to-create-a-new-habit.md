@@ -4,9 +4,12 @@ aliases:
   - "🗓️➕ 40 Days to Positive Change: Daily Support to Create a New Habit"
 URL: https://bagrounds.org/books/40-days-to-positive-change-daily-support-to-create-a-new-habit
 share: true
+affiliate link: https://amzn.to/3Fm62Jb
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🗓️➕ 40 Days to Positive Change: Daily Support to Create a New Habit  
+[🛒 40 Days to Positive Change: Daily Support to Create a New Habit. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3Fm62Jb)  
+  
 ## 📝🐒 Human Notes  
 ### 🙏🏼 Gratitude  
 A 🔁 habit for self 🤝🏼 trust and 🌱 investment  
@@ -16,7 +19,7 @@ A 🔁 habit for self 🤝🏼 trust and 🌱 investment
   
 ## 📖 Book Report: *40 Days to Positive Change: Daily Support to Create a New Habit* by Kelly McGonigal  
   
-This report summarizes Kelly McGonigal's audio program, *40 Days to Positive Change*, which offers a 🗓️ structured approach to instilling new, ✨ positive habits.  
+This report summarizes [Kelly McGonigal](../people/kelly-mcgonigal.md)'s audio program, *40 Days to Positive Change*, which offers a 🗓️ structured approach to instilling new, ✨ positive habits.  
   
 **💡 Key Concepts Discussed:**  
   

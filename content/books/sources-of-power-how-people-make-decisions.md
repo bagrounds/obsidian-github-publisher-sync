@@ -4,9 +4,12 @@ aliases:
   - "⛲🔌🤔⚙️ Sources of Power: How People Make Decisions"
 URL: https://bagrounds.org/books/sources-of-power-how-people-make-decisions
 share: true
+affiliate link: https://amzn.to/4juuGFc
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ⛲🔌🤔⚙️ Sources of Power: How People Make Decisions  
+[🛒 Sources of Power: How People Make Decisions. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4juuGFc)  
+  
 ## 📚 Book Report: Sources of Power: How People Make Decisions by Gary Klein  
   
 ### 🚀 Introduction  

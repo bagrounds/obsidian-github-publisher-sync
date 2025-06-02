@@ -4,9 +4,12 @@ aliases:
   - 📈➕ The Compound Effect
 URL: https://bagrounds.org/books/the-compound-effect
 share: true
+affiliate link: https://amzn.to/455U9Bt
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 📈➕ The Compound Effect  
+[🛒 The Compound Effect. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/455U9Bt)  
+  
 ## 📖 Book Report: ➕ The Compound Effect by Darren Hardy  
   
 ### 📝 Introduction  

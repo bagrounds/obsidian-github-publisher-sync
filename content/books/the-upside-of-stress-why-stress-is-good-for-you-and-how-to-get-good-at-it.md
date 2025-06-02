@@ -4,9 +4,12 @@ aliases:
   - "⬆️💪 The Upside of Stress: Why Stress Is Good for You, and How to Get Good at It"
 URL: https://bagrounds.org/books/the-upside-of-stress-why-stress-is-good-for-you-and-how-to-get-good-at-it
 share: true
+affiliate link: https://amzn.to/3Fu7XLN
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ⬆️💪 The Upside of Stress: Why Stress Is Good for You, and How to Get Good at It  
+[🛒 The Upside of Stress: Why Stress Is Good for You, and How to Get Good at It. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3Fu7XLN)  
+  
 ## 📖 Book Report: The Upside of Stress  
   
 ### ✍️ Introduction  

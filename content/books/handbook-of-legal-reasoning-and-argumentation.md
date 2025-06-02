@@ -6,6 +6,7 @@ URL: https://bagrounds.org/books/handbook-of-legal-reasoning-and-argumentation
 share: true
 tags:
   - law
+affiliate link: https://amzn.to/43pv7fr
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 👩🏼‍⚖️⚖️💭🧮🗣️ Handbook of Legal Reasoning and Argumentation  

@@ -1,14 +1,17 @@
 ---
 share: true
 aliases:
-  - 23 Things They Don't Tell You About Capitalism
-title: 23 Things They Don't Tell You About Capitalism
+  - 🤫🤑 23 Things They Don't Tell You About Capitalism
+title: 🤫🤑 23 Things They Don't Tell You About Capitalism
 URL: https://bagrounds.org/books/23-things-they-dont-tell-you-about-capitalism
 Author: 
 tags: 
+affiliate link: https://amzn.to/3ZLS7Tr
 ---
 [Home](../index.md) > [Books](./index.md)  
-# 23 Things They Don't Tell You About Capitalism  
+# 🤫🤑 23 Things They Don't Tell You About Capitalism  
+[🛒 23 Things They Don't Tell You About Capitalism. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3ZLS7Tr)  
+  
 ## 🤖 AI Summary  
 ### 📖 Book Report: 23 Things They Don't Tell You About Capitalism  
 #### TL;DR 🎯  

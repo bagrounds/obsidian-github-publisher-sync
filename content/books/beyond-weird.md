@@ -6,9 +6,12 @@ title: "⚛️🌎 Beyond Weird: Why Everything You Thought You Knew about Quant
 URL: https://bagrounds.org/books/beyond-weird
 Author: 
 tags: 
+affiliate link: https://amzn.to/4kkWHjM
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ⚛️🌎 Beyond Weird: Why Everything You Thought You Knew about Quantum Physics Is Different  
+[🛒 Beyond Weird: Why Everything You Thought You Knew about Quantum Physics Is Different. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4kkWHjM)  
+  
 ## 📚 Book Report: *Beyond Weird* by Philip Ball  
   
 ### ⚛️ Core Subject  

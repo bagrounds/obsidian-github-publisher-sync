@@ -4,9 +4,12 @@ aliases:
   - "💡📜 Where Good Ideas Come From: The Natural History of Innovation"
 URL: https://bagrounds.org/books/where-good-ideas-come-from-the-natural-history-of-innovation
 share: true
+affiliate link: https://amzn.to/3HocOP6
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 💡📜 Where Good Ideas Come From: The Natural History of Innovation  
+[🛒 Where Good Ideas Come From: The Natural History of Innovation. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3HocOP6)  
+  
 ## 📚 Book Report: Where Good Ideas Come From: The Natural History of Innovation  
   
 👨‍🏫 Steven Johnson's "Where Good Ideas Come From: The Natural History of Innovation" explores the environments and patterns that foster groundbreaking ideas. 💡 The book challenges the myth of the lone genius and the sudden "eureka" moment, arguing instead that innovation is a gradual process fueled by collaboration 🤝 and the recombination of existing elements. 🔬 Johnson synthesizes insights from diverse fields, including biology 🌿, urban studies 🏙️, and the history of technology ⚙️, to present a compelling case for how fertile environments 🌱, rather than isolated minds 🧠, are the true wellsprings of creativity.  

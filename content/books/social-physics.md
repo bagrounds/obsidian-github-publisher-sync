@@ -6,6 +6,7 @@ title: "🗣️💡🦠 Social Physics: How Good Ideas Spread - The Lessons from
 URL: https://bagrounds.org/books/social-physics
 Author: 
 tags: 
+affiliate link: https://amzn.to/4kKKnsZ
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🗣️💡🦠 Social Physics: How Good Ideas Spread - The Lessons from a New Science  

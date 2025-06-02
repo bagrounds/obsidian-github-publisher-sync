@@ -4,9 +4,12 @@ aliases:
   - 🎨🤔🖼️ The Art of Thinking Clearly
 URL: https://bagrounds.org/books/the-art-of-thinking-clearly
 share: true
+affiliate link: https://amzn.to/3ZN0tKD
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🎨🤔🖼️ The Art of Thinking Clearly  
+[🛒 The Art of Thinking Clearly. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3ZN0tKD)  
+  
 ## 📖 Book Report: The Art of Thinking Clearly by Rolf Dobelli  
   
 ### ℹ️ Overview  

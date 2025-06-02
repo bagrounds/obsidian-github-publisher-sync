@@ -4,9 +4,11 @@ aliases:
   - 📈🧘🏼‍♀️ 10% Happier
 URL: https://bagrounds.org/books/10-percent-happier
 share: true
+affiliate link: https://amzn.to/43Q2Ldo
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 📈🧘🏼‍♀️ 10% Happier  
+[🛒 10% Happier. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/43Q2Ldo)  
   
 ## 📚 Book Report: 10% Happier by Dan Harris  
   

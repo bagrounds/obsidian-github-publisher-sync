@@ -6,9 +6,12 @@ title: "🏆📰📣 How to Win an Information War: The Propagandist Who Outwitt
 URL: https://bagrounds.org/books/how-to-win-an-information-war
 Author: 
 tags: 
+affiliate link: https://amzn.to/4kLWjL2
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🏆📰📣 How to Win an Information War: The Propagandist Who Outwitted Hitler  
+[🛒 How to Win an Information War: The Propagandist Who Outwitted Hitler. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4kLWjL2)  
+  
 ## 📖 Book Report: 🏆 How to Win an Information War: 📢 The Propagandist Who Outwitted Hitler  
   
 **✍️ Author:** Peter Pomerantsev  

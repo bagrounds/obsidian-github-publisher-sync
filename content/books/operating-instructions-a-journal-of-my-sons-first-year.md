@@ -4,9 +4,12 @@ aliases:
   - "👶📖 Operating Instructions: A Journal of My Son’s First Year"
 URL: https://bagrounds.org/books/operating-instructions-a-journal-of-my-son-s-first-year
 share: true
+affiliate link: https://amzn.to/3HoA7by
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 👶📖 Operating Instructions: A Journal of My Son’s First Year  
+[🛒 Operating Instructions: A Journal of My Son’s First Year. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3HoA7by)  
+  
 ## 📖 Book Report: Operating Instructions: A Journal of My Son's First Year by Anne Lamott  
   
 🤱 This memoir by Anne Lamott offers a candid and often humorous 😂 account of her experiences during the first year 🎂 of her son 👶 Sam's life. ✍️ Written in a journal format, the book chronicles the overwhelming 😩 and transformative 🌟 journey of single 👩‍👧 motherhood. 💔 Lamott, a single parent and former alcoholic 🍷, navigates the challenges of raising a newborn 🍼 while also grappling with her own personal struggles and leaning on a supportive 🤗 community of friends 👯‍♀️ and family 👨‍👩‍👧‍👦.  

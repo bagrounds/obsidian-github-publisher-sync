@@ -6,9 +6,12 @@ URL: https://bagrounds.org/books/the-bramble-bush-on-our-law-and-its-study
 share: true
 tags:
   - law
+affiliate link: https://amzn.to/3HlmGsZ
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 📜🌿⚖️ The Bramble Bush: On Our Law and Its Study  
+[🛒 The Bramble Bush: On Our Law and Its Study. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3HlmGsZ)  
+  
 ## 📖 Book Report: 🌳 The Bramble Bush: On Our Law and Its Study  
   
 ### 📜 Introduction  

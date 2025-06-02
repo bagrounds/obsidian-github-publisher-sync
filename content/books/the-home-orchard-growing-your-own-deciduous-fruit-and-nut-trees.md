@@ -4,9 +4,12 @@ aliases:
   - "🏡🍎🌳 The Home Orchard: Growing Your Own Deciduous Fruit and Nut Trees"
 URL: https://bagrounds.org/books/the-home-orchard-growing-your-own-deciduous-fruit-and-nut-trees
 share: true
+affiliate link: https://amzn.to/3Hn567M
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🏡🍎🌳 The Home Orchard: Growing Your Own Deciduous Fruit and Nut Trees  
+[🛒 The Home Orchard: Growing Your Own Deciduous Fruit and Nut Trees. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3Hn567M)  
+  
 ## 🌳 Book Report: The Home Orchard: Growing Your Own Deciduous Fruit and Nut Trees  
   
 **🧑‍Authors:** Chuck Ingels, Pamela Geisel, and Maxwell Norton  

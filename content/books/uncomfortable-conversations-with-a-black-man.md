@@ -6,6 +6,7 @@ title: 😬👨🏿 Uncomfortable Conversations With A Black Man
 URL: https://bagrounds.org/books/uncomfortable-conversations-with-a-black-man
 Author: 
 tags: 
+affiliate link: https://www.amazon.com/dp/1250800463/ref=cm_sw_r_as_gl_apa_gl_i_NMTYY9Y6VW02S0DWD456?linkCode=ml1&tag=bagrounds-20
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 😬👨🏿 Uncomfortable Conversations With A Black Man  

@@ -4,9 +4,12 @@ aliases:
   - "✍️💻💰 Blog, Inc.: Blogging for Passion, Profit, and to Create Community"
 URL: https://bagrounds.org/books/blog-inc-blogging-for-passion-profit-and-to-create-community
 share: true
+affiliate link: https://amzn.to/43GdDdr
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ✍️💻💰 Blog, Inc.: Blogging for Passion, Profit, and to Create Community  
+[🛒 Blog, Inc.: Blogging for Passion, Profit, and to Create Community. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/43GdDdr)  
+  
 ## 📖 Book Report: 📝 Blog, Inc.: ✍️ Blogging for Passion, 💰 Profit, and to Create 🧑‍🤝‍🧑 Community  
   
 **🧑‍💻 Author:** Joy Deangdeelert Cho  

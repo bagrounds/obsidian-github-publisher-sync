@@ -4,9 +4,12 @@ aliases:
   - "🙅‍♀️✂️⚖️ Never Split the Difference: Negotiating As If Your Life Depended On It"
 URL: https://bagrounds.org/books/never-split-the-difference-negotiating-as-if-your-life-depended-on-it
 share: true
+affiliate link: https://amzn.to/43qPIQD
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🙅‍♀️✂️⚖️ Never Split the Difference: Negotiating As If Your Life Depended On It  
+[🛒 Never Split the Difference: Negotiating As If Your Life Depended On It. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/43qPIQD)  
+  
 ## 📖 Book Report: Never Split the Difference: Negotiating As If Your Life Depended On It  
   
 **👤 Author:** Chris Voss, with Tahl Raz  

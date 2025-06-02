@@ -4,6 +4,7 @@ aliases:
   - "🌳🍎🍽️ From Tree to Table: Growing Backyard Fruit Trees in the Pacific Maritime Climate"
 URL: https://bagrounds.org/books/from-tree-to-table-growing-backyard-fruit-trees-in-the-pacific-maritime-climate
 share: true
+affiliate link: https://amzn.to/45DykJD
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🌳🍎🍽️ From Tree to Table: Growing Backyard Fruit Trees in the Pacific Maritime Climate  

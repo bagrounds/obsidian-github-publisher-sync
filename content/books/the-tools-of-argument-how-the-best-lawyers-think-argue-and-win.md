@@ -6,9 +6,12 @@ URL: https://bagrounds.org/books/the-tools-of-argument-how-the-best-lawyers-thin
 share: true
 tags:
   - law
+affiliate link: https://amzn.to/4kSl20x
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 👩🏼‍⚖️💭🧮🏆 The Tools of Argument: How the Best Lawyers Think, Argue, and Win  
+[🛒 The Tools of Argument: How the Best Lawyers Think, Argue, and Win. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4kSl20x)  
+  
 ## 📚 Book Report: The Tools of Argument: How the Best Lawyers Think, Argue, and Win  
   
 ### 📖 Overview  

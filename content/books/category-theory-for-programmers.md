@@ -1,14 +1,17 @@
 ---
 share: true
 aliases:
-  - Category Theory for Programmers
-title: Category Theory for Programmers
+  - 🧮➡️👩🏼‍💻 Category Theory for Programmers
+title: 🧮➡️👩🏼‍💻 Category Theory for Programmers
 URL: https://bagrounds.org/books/category-theory-for-programmers
 Author: 
 tags: 
+affiliate link: https://amzn.to/4jNZYY9
 ---
 [Home](../index.md) > [Books](./index.md)  
-# Category Theory for Programmers  
+# 🧮➡️👩🏼‍💻 Category Theory for Programmers  
+[🛒 Category Theory for Programmers. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4jNZYY9)  
+  
 ## 🔗 Links  
 - [Category Theory for Programmers: The Preface (blog)](https://bartoszmilewski.com/2014/10/28/category-theory-for-programmers-the-preface)  
 - [An unofficial PDF version of "Category Theory For Programmers" by Bartosz Milewski, converted from his blogpost series (with permission!).](https://github.com/hmemcpy/milewski-ctfp-pdf)  

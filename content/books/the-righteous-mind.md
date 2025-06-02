@@ -1,14 +1,17 @@
 ---
 share: true
 aliases:
-  - The Righteous Mind
-title: The Righteous Mind
+  - "😇🧠 The Righteous Mind: Why Good People Are Divided by Politics and Religion"
+title: "😇🧠 The Righteous Mind: Why Good People Are Divided by Politics and Religion"
 URL: https://bagrounds.org/books/the-righteous-mind
 Author: 
 tags: 
+affiliate link: https://amzn.to/3ZIy2gS
 ---
 [Home](../index.md) > [Books](./index.md)  
-# The Righteous Mind  
+# 😇🧠 The Righteous Mind: Why Good People Are Divided by Politics and Religion  
+[🛒 The Righteous Mind: Why Good People Are Divided by Politics and Religion. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3ZIy2gS)  
+  
 ## 🤖 AI Summary  
 ### TLDR  
 🤔 Human morality is built on 🧠 evolved psychological foundations that 🧍 vary across individuals and 🤝 political groups, leading to 💔 deep divisions rooted in 🧭 differing moral intuitions rather than 💡 solely in reason or 📰 facts.  

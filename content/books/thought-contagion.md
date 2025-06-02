@@ -6,9 +6,12 @@ title: "💭🦠 Thought Contagion: How Belief Spreads Through Society"
 URL: https://bagrounds.org/books/thought-contagion
 Author: 
 tags: 
+affiliate link: https://amzn.to/4jBAflr
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 💭🦠 Thought Contagion: How Belief Spreads Through Society  
+[🛒 Thought Contagion: How Belief Spreads Through Society. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4jBAflr)  
+  
 ## 📚 Book Report: 🧠 Thought Contagion by Aaron Lynch  
   
 ### 📝 Overview  

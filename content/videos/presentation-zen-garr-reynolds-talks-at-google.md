@@ -99,7 +99,7 @@ His ideas align with **cognitive science research**:
   
 ### 🏗️ **Best Resource that is More General or More Specific**  
 - **More General**: 📖 *[Made to Stick: Why Some Ideas Survive and Others Die](../books/made-to-stick.md)* – Focuses on **sticky messaging** across all domains.  
-- **More Specific**: 📖 *[Resonate: Present Visual Stories that Transform Audiences](../books/resonate.md)* – A deeper dive into **visual storytelling**.  
+- **More Specific**: [🔊🎞️🌱🤯 Resonate: Present Visual Stories that Transform Audiences](../books/resonate.md) – A deeper dive into **visual storytelling**.  
   
 ### 🎓 **Best Resource that is More Rigorous or More Accessible**  
 - **More Rigorous**: 📖 *Tufte’s The Visual Display of Quantitative Information* – A **scientific** look at data visualization.  

@@ -6,9 +6,12 @@ title: "🌐💰 Networks, Crowds, and Markets: Reasoning About a Highly Connect
 URL: https://bagrounds.org/books/networks-crowds-and-markets
 Author: 
 tags: 
+affiliate link: https://amzn.to/3HnZSZw
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🌐💰 Networks, Crowds, and Markets: Reasoning About a Highly Connected World  
+[🛒 Networks, Crowds, and Markets: Reasoning About a Highly Connected World. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3HnZSZw)  
+  
 ## 📖 Book Report: Networks, Crowds, and Markets  
 ### 🔎 Overview  
   

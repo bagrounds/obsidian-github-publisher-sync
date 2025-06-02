@@ -1,12 +1,15 @@
 ---
-title: 🧑‍🌾🌿 A Gardener's Guide to Botany
+title: "🧑‍🌾🌿 A Gardener's Guide to Botany: The Biology Behind the Plants You Love, How They Grow, and What They Need"
 aliases:
-  - 🧑‍🌾🌿 A Gardener's Guide to Botany
+  - "🧑‍🌾🌿 A Gardener's Guide to Botany: The Biology Behind the Plants You Love, How They Grow, and What They Need"
 URL: https://bagrounds.org/books/a-gardeners-guide-to-botany
 share: true
+affiliate link: https://amzn.to/3SwsHp6
 ---
 [Home](../index.md) > [Books](./index.md)  
-# 🧑‍🌾🌿 A Gardener's Guide to Botany  
+# 🧑‍🌾🌿 A Gardener's Guide to Botany: The Biology Behind the Plants You Love, How They Grow, and What They Need  
+[🛒 A Gardener's Guide to Botany: The Biology Behind the Plants You Love, How They Grow, and What They Need. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3SwsHp6)  
+  
 ## 📖 Book Report: 🪴 A Gardener's Guide to Botany  
   
 ### 🔎 Overview  

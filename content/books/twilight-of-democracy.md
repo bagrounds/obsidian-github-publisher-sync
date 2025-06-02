@@ -6,11 +6,11 @@ title: "🥀 Twilight of Democracy: 🐍 The Seductive Lure of Authoritarianism"
 URL: https://bagrounds.org/books/twilight-of-democracy
 Author: 
 tags: 
-affiliate link: https://www.amazon.com/dp/0385545800/ref=cm_sw_r_as_gl_apa_gl_i_4YVNMM8NNYPCHFE0CKHH?linkCode=ml1&tag=bagrounds-20
+affiliate link: https://amzn.to/3ZO5UZJ
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🥀 Twilight of Democracy: 🐍 The Seductive Lure of Authoritarianism  
-[🛒 Twilight of Democracy: The Seductive Lure of Authoritarianism. As an Amazon Associate I earn from qualifying purchases.](https://www.amazon.com/dp/0385545800/ref=cm_sw_r_as_gl_apa_gl_i_4YVNMM8NNYPCHFE0CKHH?linkCode=ml1&tag=bagrounds-20)  
+[🛒 Twilight of Democracy: 🐍 The Seductive Lure of Authoritarianism. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3ZO5UZJ)  
   
 ## 📖 Book Report: Twilight of Democracy  
   

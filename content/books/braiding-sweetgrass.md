@@ -6,9 +6,12 @@ title: "🪢🌾 Braiding Sweetgrass: Indigenous Wisdom, Scientific Knowledge, a
 URL: https://bagrounds.org/books/braiding-sweetgrass
 Author: 
 tags: 
+affiliate link: https://amzn.to/3Ho8r6E
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🪢🌾 Braiding Sweetgrass: Indigenous Wisdom, Scientific Knowledge, and the Teachings of Plants  
+[🛒 Braiding Sweetgrass: Indigenous Wisdom, Scientific Knowledge, and the Teachings of Plants. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3Ho8r6E)  
+  
 ## 📚 Book Report: Braiding Sweetgrass  
   
 ### ✍️ Author  

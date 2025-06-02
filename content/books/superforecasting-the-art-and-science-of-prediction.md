@@ -4,9 +4,12 @@ aliases:
   - "🔮🎨🔬 Superforecasting: The Art and Science of Prediction"
 URL: https://bagrounds.org/books/superforecasting-the-art-and-science-of-prediction
 share: true
+affiliate link: https://amzn.to/3SzzP46
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🔮🎨🔬 Superforecasting: The Art and Science of Prediction  
+[🛒 Superforecasting: The Art and Science of Prediction. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3SzzP46)  
+  
 ## 📖 Book Report: Superforecasting: The Art and Science of Prediction  
   
 **✍️ Authors:** Philip E. Tetlock and Dan Gardner  

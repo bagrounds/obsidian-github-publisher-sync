@@ -4,6 +4,7 @@ aliases:
   - "❤️‍🔥💪 Grit: The Power of Passion and Perseverance"
 URL: https://bagrounds.org/books/grit-the-power-of-passion-and-perseverance
 share: true
+affiliate link: https://www.amazon.com/dp/1501111108/ref=cm_sw_r_as_gl_apa_gl_i_GG5EWTG486NC6DK0XCJ9?linkCode=ml1&tag=bagrounds-20
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ❤️‍🔥💪 Grit: The Power of Passion and Perseverance  

@@ -1,14 +1,16 @@
 ---
 share: true
 aliases:
-  - ⚛️🔄 Atomic Habits
-title: ⚛️🔄 Atomic Habits
+  - "⚛️🔄 Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones"
+title: "⚛️🔄 Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones"
 URL: https://bagrounds.org/books/atomic-habits
 Author: 
 tags: 
+affiliate link: https://amzn.to/4kmdS4v
 ---
 [Home](../index.md) > [Books](./index.md)  
-# ⚛️🔄 Atomic Habits  
+# ⚛️🔄 Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones  
+[🛒 Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4kmdS4v)  
   
 ## 🤖 AI Summary  
 ### Atomic Habits: Summary and Analysis 📚  

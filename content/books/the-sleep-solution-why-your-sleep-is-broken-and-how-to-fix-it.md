@@ -4,9 +4,12 @@ aliases:
   - "😴🛠️ The Sleep Solution: Why Your Sleep is Broken and How to Fix It"
 URL: https://bagrounds.org/books/the-sleep-solution-why-your-sleep-is-broken-and-how-to-fix-it
 share: true
+affiliate link: https://amzn.to/4kJRnGq
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 😴🛠️ The Sleep Solution: Why Your Sleep is Broken and How to Fix It  
+[🛒 The Sleep Solution: Why Your Sleep is Broken and How to Fix It. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4kJRnGq)  
+  
   
 ## 😴 Book Report: The Sleep Solution: Why Your Sleep is Broken and How to Fix It  
   

@@ -1,16 +1,18 @@
 ---
-title: "🎯🧠 The Motivated Brain: What Neuroscience Reveals About the Power of Purpose"
+title: 🎯🧠 The Motivated Brain
 aliases:
-  - "🎯🧠 The Motivated Brain: What Neuroscience Reveals About the Power of Purpose"
+  - 🎯🧠 The Motivated Brain
 URL: https://bagrounds.org/books/the-motivated-brain-what-neuroscience-reveals-about-the-power-of-purpose
 share: true
+affiliate link: https://amzn.to/4mIOsQ9
 ---
 [Home](../index.md) > [Books](./index.md)  
-# 🎯🧠 The Motivated Brain: What Neuroscience Reveals About the Power of Purpose  
-## 🧠 Book Report: The Motivated Brain  
+# 🎯🧠 The Motivated Brain  
+[🛒 The Motivated Brain. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4mIOsQ9)  
   
+## 🧠 Book Report: The Motivated Brain  
 ### 📖 Overview  
-* 🧠 "The Motivated Brain: What Neuroscience Reveals About the Power of Purpose," authored by 👩‍💼 Helle Bundgaard, founder of the Motivation Factor Institute, and 👨‍🔬 Jefferson Roy, a neuroscientist associated with MIT's Picower Institute for Learning and Memory, explores the 🔗 connection between brain science and motivation.  
+* 🧠 "The Motivated Brain," authored by 👩‍💼 Helle Bundgaard, founder of the Motivation Factor Institute, and 👨‍🔬 Jefferson Roy, a neuroscientist associated with MIT's Picower Institute for Learning and Memory, explores the 🔗 connection between brain science and motivation.  
 * 💡 The book posits that understanding brain function can help individuals and organizations enhance motivation, particularly by harnessing the power of purpose.  
   
 ### 🔑 Key Concepts  

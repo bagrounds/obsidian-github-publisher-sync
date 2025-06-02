@@ -6,9 +6,12 @@ title: "🦠 Contagious: Why Things Catch On"
 URL: https://bagrounds.org/books/contagious-why-things-catch-on
 Author: 
 tags: 
+affiliate link: https://www.amazon.com/dp/1451686579/ref=cm_sw_r_as_gl_apa_gl_i_AHDK76P0VMHSN7YGXDMQ?linkCode=ml1&tag=bagrounds-20
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🦠 Contagious: Why Things Catch On  
+[🛒 Contagious: Why Things Catch On. As an Amazon Associate I earn from qualifying purchases.](https://www.amazon.com/dp/1451686579/ref=cm_sw_r_as_gl_apa_gl_i_AHDK76P0VMHSN7YGXDMQ?linkCode=ml1&tag=bagrounds-20)  
+  
 ## 📚 Book Report: 🦠 Contagious: Why Things Catch On by Jonah Berger  
   
 ### 💡 Overview  

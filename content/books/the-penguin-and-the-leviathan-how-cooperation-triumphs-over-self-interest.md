@@ -4,9 +4,12 @@ share: true
 aliases:
   - "🤝🐧🐳 The Penguin and the Leviathan: How Cooperation Triumphs over Self-Interest"
 URL: https://bagrounds.org/books/the-penguin-and-the-leviathan-how-cooperation-triumphs-over-self-interest
+affiliate link: https://amzn.to/4ktFG7o
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🤝🐧🐳 The Penguin and the Leviathan: How Cooperation Triumphs over Self-Interest  
+[🛒 The Penguin and the Leviathan: How Cooperation Triumphs over Self-Interest. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4ktFG7o)  
+  
 ## 📖 Book Report: The Penguin and the Leviathan  
   
 **🧑‍🏫 Author:** Yochai Benkler  

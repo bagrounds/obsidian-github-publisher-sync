@@ -4,9 +4,12 @@ aliases:
   - "⚖️🎮 Fair Play: A Game-Changing Solution for When You Have Too Much to Do (and More Life to Live)"
 URL: https://bagrounds.org/books/fair-play-a-game-changing-solution-for-when-you-have-too-much-to-do-and-more-life-to-live
 share: true
+affiliate link: https://amzn.to/3Su3Kur
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ⚖️🎮 Fair Play: A Game-Changing Solution for When You Have Too Much to Do (and More Life to Live)  
+[🛒 Fair Play: A Game-Changing Solution for When You Have Too Much to Do (and More Life to Live). As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3Su3Kur)  
+  
 ## 📚 Book Report: Fair Play by Eve Rodsky  
   
 ### 💡 Overview  

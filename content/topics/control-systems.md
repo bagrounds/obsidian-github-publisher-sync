@@ -29,7 +29,7 @@ Control Systems are all about managing and regulating the behavior of dynamic sy
 2.  **"[Feedback Control of Dynamic Systems](../books/feedback-control-of-dynamic-systems.md)" by Gene F. Franklin, J. David Powell, and Abbas Emami-Naeini:** 📘 A classic textbook covering fundamental concepts and advanced topics in control systems. It offers a rigorous treatment of the subject, making it suitable for undergraduate and graduate students.  
 3.  **"Modern Control Systems" by Richard C. Dorf and Robert H. Bishop:** 📖 Another excellent textbook that covers a broad range of control system topics, including digital control and state-space analysis. It's known for its clear writing style and practical applications.  
 4.  **"Nonlinear Systems" by Hassan K. Khalil:** 📓 For those looking to delve into the complexities of nonlinear control, this book is a must-have. It provides a thorough treatment of nonlinear system analysis and control design.  
-5.  **"Adaptive Control" by Karl J. Åström and Björn Wittenmark:** 📝 A comprehensive resource on adaptive control, covering various techniques and applications. It's suitable for graduate students and researchers interested in this specialized area.  
+5.  **[🧬🕹️ Adaptive Control](../books/adaptive-control.md) by Karl J. Åström and Björn Wittenmark:** 📝 A comprehensive resource on adaptive control, covering various techniques and applications. It's suitable for graduate students and researchers interested in this specialized area.  
   
 ## 💬 [Gemini](https://gemini.google.com/app) Prompt  
 > For the category of Control Systems, please provide:  

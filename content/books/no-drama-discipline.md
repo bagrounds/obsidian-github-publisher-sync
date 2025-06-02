@@ -6,9 +6,12 @@ title: "🚫🎭🧠 No-Drama Discipline: The Whole-Brain Way to Calm the Chaos 
 URL: https://bagrounds.org/books/no-drama-discipline
 Author: 
 tags: 
+affiliate link: https://amzn.to/4knWZGV
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🚫🎭🧠 No-Drama Discipline: The Whole-Brain Way to Calm the Chaos and Nurture Your Child's Developing Mind  
+[🛒 No-Drama Discipline: The Whole-Brain Way to Calm the Chaos and Nurture Your Child's Developing Mind. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4knWZGV)  
+  
 ## 📚 Book Report: No-Drama Discipline  
   
 ### 🚀 Introduction  

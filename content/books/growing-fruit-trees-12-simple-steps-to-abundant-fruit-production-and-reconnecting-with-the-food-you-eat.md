@@ -4,9 +4,12 @@ aliases:
   - "🌱🍎🌳 Growing Fruit Trees: 12 Simple Steps to Abundant Fruit Production and Reconnecting with the Food You Eat"
 URL: https://bagrounds.org/books/growing-fruit-trees-12-simple-steps-to-abundant-fruit-production-and-reconnecting-with-the-food-you-eat
 share: true
+affiliate link: https://amzn.to/3SxiVD6
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🌱🍎🌳 Growing Fruit Trees: 12 Simple Steps to Abundant Fruit Production and Reconnecting with the Food You Eat  
+[🛒 Growing Fruit Trees: 12 Simple Steps to Abundant Fruit Production and Reconnecting with the Food You Eat. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3SxiVD6)  
+  
 ## 🍎 Book Report: Growing Fruit Trees: 12 Simple Steps to Abundant Fruit Production and Reconnecting with the Food You Eat  
   
 **🧑‍🌾 Author:** Jonathan Wheeler  

@@ -4,9 +4,12 @@ aliases:
   - "💐👩‍👧‍👦⚔️ Memorializing Motherhood: Anna Jarvis and the Struggle for Control of Mother's Day"
 URL: https://bagrounds.org/books/memorializing-motherhood-anna-jarvis-and-the-struggle-for-control-of-mothers-day
 share: true
+affiliate link: https://amzn.to/3HgYaJB
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 💐👩‍👧‍👦⚔️ Memorializing Motherhood: Anna Jarvis and the Struggle for Control of Mother's Day  
+[🛒 Memorializing Motherhood: Anna Jarvis and the Struggle for Control of Mother's Day. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3HgYaJB)  
+  
 ## 📚 Book Report: 💐 Memorializing Motherhood: Anna Jarvis and the Struggle for Control of Mother's Day  
   
 ### 🔎 Overview  

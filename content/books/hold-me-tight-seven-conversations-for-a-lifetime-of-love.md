@@ -4,9 +4,12 @@ aliases:
   - "🫂 Hold Me Tight: Seven Conversations for a Lifetime of Love"
 URL: https://bagrounds.org/books/hold-me-tight-seven-conversations-for-a-lifetime-of-love
 share: true
+affiliate link: https://amzn.to/4mIuiG0
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🫂 Hold Me Tight: Seven Conversations for a Lifetime of Love  
+[🛒 Hold Me Tight: Seven Conversations for a Lifetime of Love. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4mIuiG0)  
+  
 ## 📚 Book Report: 🫂 Hold Me Tight: Seven Conversations for a Lifetime of Love  
   
 ### ✍️ Introduction  

@@ -6,6 +6,7 @@ title: "✍🏼👍🏼 On Writing Well: The Classic Guide to Writing Nonfiction
 URL: https://bagrounds.org/books/on-writing-well-the-classic-guide-to-writing-nonfiction
 Author: 
 tags: 
+affiliate link: https://amzn.to/45aFANb
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ✍🏼👍🏼 On Writing Well: The Classic Guide to Writing Nonfiction  

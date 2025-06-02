@@ -6,9 +6,12 @@ title: "🥼🛡️ The Scientific Attitude: Defending Science from Denial, Frau
 URL: https://bagrounds.org/books/the-scientific-attitude
 Author: 
 tags: 
+affiliate link: https://amzn.to/3Hif8ax
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🥼🛡️ The Scientific Attitude: Defending Science from Denial, Fraud, and Pseudoscience  
+[🛒 The Scientific Attitude: Defending Science from Denial, Fraud, and Pseudoscience. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3Hif8ax)  
+  
 ## 📖 Book Report: The Scientific Attitude by Lee McIntyre  
   
 * 🧪 *The Scientific Attitude: Defending Science from Denial, Fraud, and Pseudoscience* by Lee McIntyre argues that the defining characteristic of science isn't a rigid "scientific method" but rather a fundamental "scientific attitude." 📅 Published in 2019, the book aims to clarify what makes science a uniquely reliable way of knowing, especially in an era rife with 🚫 science denial and 📢 misinformation.  

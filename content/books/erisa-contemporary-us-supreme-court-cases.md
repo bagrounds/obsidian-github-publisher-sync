@@ -6,9 +6,12 @@ URL: https://bagrounds.org/books/erisa-contemporary-us-supreme-court-cases
 share: true
 tags:
   - law
+affiliate link: https://amzn.to/43tlvjW
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🇺🇸⚖️ ERISA: Contemporary US Supreme Court Cases  
+[🛒 ERISA: Contemporary US Supreme Court Cases. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/43tlvjW)  
+  
 ## 📖 Book Report: ⚖️ ERISA: Contemporary US Supreme Court Cases  
   
 This report examines the likely content and significance of a book titled "ERISA: Contemporary US Supreme Court Cases." 📖 Such a volume would delve into the critical interpretations and applications of the Employee Retirement Income Security Act of 1974 (ERISA) by the U.S. Supreme Court in recent history. 🏛️ These decisions have profoundly shaped the landscape of employee benefits law, impacting everything from 👴 pension and 🏥 health plans to 💼 fiduciary responsibilities and 👨‍⚖️ litigation.  

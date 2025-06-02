@@ -4,9 +4,12 @@ aliases:
   - "🤔💡⚖️✅ Decisive: How to Make Better Choices in Life and Work"
 URL: https://bagrounds.org/books/decisive-how-to-make-better-choices-in-life-and-work
 share: true
+affiliate link: https://amzn.to/4kEP5s8
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🤔💡⚖️✅ Decisive: How to Make Better Choices in Life and Work  
+[🛒 Decisive: How to Make Better Choices in Life and Work. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4kEP5s8)  
+  
 ## 📚 Book Report: 🎯 Decisive: How to Make Better Choices in Life and Work  
   
 * 📖 *Decisive: How to Make Better Choices in Life and Work* by Chip and Dan Heath explores the systematic flaws in our decision-making processes and offers a framework to overcome them. 🧠 The authors argue that despite our awareness of biases, we often fall prey to predictable errors when making choices. 💡 The book aims to provide practical tools to improve decision-making in both personal and professional spheres.  

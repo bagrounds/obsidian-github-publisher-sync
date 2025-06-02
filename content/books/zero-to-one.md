@@ -6,9 +6,12 @@ title: 0️⃣➡️1️⃣ Zero To One
 URL: https://bagrounds.org/books/zero-to-one
 Author: 
 tags: 
+affiliate link: https://amzn.to/3ZavKqL
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 0️⃣➡️1️⃣ Zero To One  
+[🛒 Zero To One. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3ZavKqL)  
+  
 ## 🤖 AI Summary  
 ### Zero To One Summary 🚀  
 **TL;DR:** Instead of competing in existing markets ("going from 1 to n"), create a monopoly by building something entirely new ("going from 0 to 1"). 🥇  

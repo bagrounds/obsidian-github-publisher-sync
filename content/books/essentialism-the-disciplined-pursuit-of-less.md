@@ -4,9 +4,12 @@ aliases:
   - "➖💯 Essentialism: The Disciplined Pursuit of Less"
 URL: https://bagrounds.org/books/essentialism-the-disciplined-pursuit-of-less
 share: true
+affiliate link: https://www.amazon.com/dp/0804137382/ref=cm_sw_r_as_gl_apa_gl_i_G3WGKQSJVQV1VDFXVBT3?linkCode=ml1&tag=bagrounds-20
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ➖💯 Essentialism: The Disciplined Pursuit of Less  
+[🛒 Essentialism: The Disciplined Pursuit of Less. As an Amazon Associate I earn from qualifying purchases.](https://www.amazon.com/dp/0804137382/ref=cm_sw_r_as_gl_apa_gl_i_G3WGKQSJVQV1VDFXVBT3?linkCode=ml1&tag=bagrounds-20)  
+  
 ## 📚 Book Report: Essentialism: The Disciplined Pursuit of Less  
   
 🧑‍🏫 Greg McKeown's *Essentialism: The Disciplined Pursuit of Less* is a compelling argument for focusing our limited ⏳ time and energy on what truly matters, rather than being spread thin across countless non-essential activities. 🚫 The book challenges the prevailing notion that being busy 🏃 equates to being productive ✅ and instead advocates for a more deliberate and focused 🎯 approach to life and work.  

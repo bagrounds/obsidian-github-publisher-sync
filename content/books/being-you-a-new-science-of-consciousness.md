@@ -4,9 +4,12 @@ aliases:
   - "👤🧠 Being You: A New Science of Consciousness"
 URL: https://bagrounds.org/books/being-you-a-new-science-of-consciousness
 share: true
+affiliate link: https://amzn.to/4jubxDi
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 👤🧠 Being You: A New Science of Consciousness  
+[🛒 Being You: A New Science of Consciousness. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4jubxDi)  
+  
 ## 📝🐒 Human Notes  
 - [🌡️⚙️ Inventing Temperature: Measurement and Scientific Progress](./inventing-temperature-measurement-and-scientific-progress.md)  
   

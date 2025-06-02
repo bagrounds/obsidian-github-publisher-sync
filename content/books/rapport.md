@@ -6,9 +6,12 @@ title: "🤝🐾 Rapport: The Four Ways to Read People"
 URL: https://bagrounds.org/books/Rapport
 Author: 
 tags: 
+affiliate link: https://amzn.to/3FKbMwe
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🤝🐾 Rapport: The Four Ways to Read People  
+[🛒 Rapport: The Four Ways to Read People. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3FKbMwe)  
+  
 - Rapport can be learned. Practice.  
 - Depth of relationships > number.  
 - We don't have to agree or like others, but we should always seek to understand them.  

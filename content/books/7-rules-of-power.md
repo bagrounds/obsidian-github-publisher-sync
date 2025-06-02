@@ -4,9 +4,11 @@ aliases:
   - "7️⃣📏👑 7 Rules of Power: Surprising - but True - Advice on How to Get Things Done and Advance Your Career"
 URL: https://bagrounds.org/books/7-rules-of-power
 share: true
+affiliate link: https://amzn.to/43Np5En
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 7️⃣📏👑 7 Rules of Power: Surprising - but True - Advice on How to Get Things Done and Advance Your Career  
+[🛒 7️⃣📏👑 7 Rules of Power: Surprising - but True - Advice on How to Get Things Done and Advance Your Career. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/43Np5En)  
   
 ## 📖 Book Report: 7 Rules of Power  
   

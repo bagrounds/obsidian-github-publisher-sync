@@ -1,12 +1,15 @@
 ---
-title: "💔🤝 Trust: How Societies Lost It and How They Might Regain It"
+title: "💔🤝 A Question of Trust: The BBC Reith Lectures 2002"
 aliases:
-  - "💔🤝 Trust: How Societies Lost It and How They Might Regain It"
+  - "💔🤝 A Question of Trust: The BBC Reith Lectures 2002"
 URL: https://bagrounds.org/books/trust-how-societies-lost-it-and-how-they-might-regain-it
 share: true
+affiliate link: https://amzn.to/3ZarwiN
 ---
 [Home](../index.md) > [Books](./index.md)  
-# 💔🤝 Trust: How Societies Lost It and How They Might Regain It  
+# 💔🤝 A Question of Trust: The BBC Reith Lectures 2002  
+[🛒 A Question of Trust: The BBC Reith Lectures 2002. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3ZarwiN)  
+  
 ## 📖 Book Report: 🤝 Trust: How Societies Lost It and How They Might Regain It  
   
 This report references *A Question of Trust: The BBC Reith Lectures 2002*, the published version of Onora O'Neill's lectures which form the basis of the book titled *Trust: How Societies Lost It and How They Might Regain It*.  

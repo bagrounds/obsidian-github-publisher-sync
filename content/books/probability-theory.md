@@ -6,9 +6,12 @@ title: "🎲🧮 Probability Theory: The Logic of Science"
 URL: https://bagrounds.org/books/probability-theory
 Author: 
 tags: 
+affiliate link: https://amzn.to/43YIOCc
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🎲🧮 Probability Theory: The Logic of Science  
+[🛒 Probability Theory: The Logic of Science. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/43YIOCc)  
+  
 ## 🤖 AI Summary  
 ### Probability Theory: The Logic of Science by E.T. Jaynes Summary 📚  
 **TL;DR:** Probability theory, when approached correctly, is not merely a tool for analyzing random events, but a powerful extension of logic for reasoning with incomplete information, providing a consistent framework for inductive inference and scientific reasoning. 🧠  

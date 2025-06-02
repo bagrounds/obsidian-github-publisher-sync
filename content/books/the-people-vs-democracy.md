@@ -6,9 +6,12 @@ title: "👥⚔️🏛️ The People vs. Democracy: Why Our 🗽 Freedom Is in �
 URL: https://bagrounds.org/books/the-people-vs-democracy
 Author: 
 tags: 
+affiliate link: https://amzn.to/43rSo0c
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 👥⚔️🏛️ The People vs. Democracy: Why Our 🗽 Freedom Is in ⚠️ Danger and How to Save It  
+[🛒 The People vs. Democracy: Why Our 🗽 Freedom Is in ⚠️ Danger and How to Save It. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/43rSo0c)  
+  
 ## 📖 Book Report: The People vs. Democracy by Yascha Mounk  
   
 ### ℹ️ Introduction  

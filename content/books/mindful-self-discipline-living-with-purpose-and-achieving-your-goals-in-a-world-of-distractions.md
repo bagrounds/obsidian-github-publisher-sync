@@ -4,9 +4,12 @@ aliases:
   - "🧘🎯 Mindful Self-Discipline: Living with Purpose and Achieving Your Goals in a World of Distractions"
 URL: https://bagrounds.org/books/mindful-self-discipline-living-with-purpose-and-achieving-your-goals-in-a-world-of-distractions
 share: true
+affiliate link: https://amzn.to/4kNM2ya
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧘🎯 Mindful Self-Discipline: Living with Purpose and Achieving Your Goals in a World of Distractions  
+[🛒 Mindful Self-Discipline: Living with Purpose and Achieving Your Goals in a World of Distractions. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4kNM2ya)  
+  
 ## 📖 Book Report: 🧘‍♀️ Mindful Self-Discipline  
   
 *Mindful Self-Discipline: Living with Purpose and Achieving Your Goals in a World of Distractions* by ✍️ Giovanni Dienstmann (with S. J. Scott often listed as a contributor, though the primary authorship seems attributed to Dienstmann) presents a 🧭 comprehensive framework for cultivating self-discipline not through harshness or rigidity, but through 🧘‍♀️ mindfulness, 🧠 self-awareness, and 🎯 alignment with personal values.  

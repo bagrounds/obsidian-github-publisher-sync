@@ -4,9 +4,12 @@ aliases:
   - "🍎⚡ Eat for Energy: How to Beat Fatigue, Supercharge Your Mitochondria, and Unlock All-Day Energy"
 URL: https://bagrounds.org/books/eat-for-energy-how-to-beat-fatigue-supercharge-your-mitochondria-and-unlock-all-day-energy
 share: true
+affiliate link: https://amzn.to/3HkgWQ4
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🍎⚡ Eat for Energy: How to Beat Fatigue, Supercharge Your Mitochondria, and Unlock All-Day Energy  
+[🛒 Eat for Energy: How to Beat Fatigue, Supercharge Your Mitochondria, and Unlock All-Day Energy. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3HkgWQ4)  
+  
 ## 📖 Book Report: ⚡ Eat for Energy by Ari Whitten and Alex Leaf M.S.  
   
 ### ✍️ Introduction  

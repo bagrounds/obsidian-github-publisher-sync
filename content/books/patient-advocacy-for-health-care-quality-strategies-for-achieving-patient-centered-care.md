@@ -4,9 +4,12 @@ aliases:
   - "🧑‍⚕️🗣️ Patient Advocacy for Health Care Quality: Strategies for Achieving Patient-Centered Care"
 URL: https://bagrounds.org/books/patient-advocacy-for-health-care-quality-strategies-for-achieving-patient-centered-care
 share: true
+affiliate link: https://amzn.to/4kHFy3z
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧑‍⚕️🗣️ Patient Advocacy for Health Care Quality: Strategies for Achieving Patient-Centered Care  
+[🛒 Patient Advocacy for Health Care Quality: Strategies for Achieving Patient-Centered Care. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4kHFy3z)  
+  
 ## 📚 Book Report: 🗣️ Patient Advocacy for Health Care Quality: 🎯 Strategies for Achieving Patient-Centered Care  
   
 *Patient Advocacy for Health Care Quality: Strategies for Achieving Patient-Centered Care*, authored by Jo Anne L. Earp, Elizabeth A. French, and Melissa B. Gilkey, serves as an introductory volume exploring the critical role of patient advocacy in improving healthcare quality and fostering patient-centered care. 📅 Published in 2008, the book synthesizes patient advocacy from a multi-level perspective, making it a valuable resource for 🧑‍🎓 students and 🧑‍⚕️ professionals in public health, 🩺 nursing, and 🧑‍💼 social work.  

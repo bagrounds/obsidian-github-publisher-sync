@@ -4,6 +4,7 @@ aliases:
   - "👉🤝 Getting to Yes: Negotiating Agreement Without Giving In"
 URL: https://bagrounds.org/books/getting-to-yes-negotiating-agreement-without-giving-in
 share: true
+affiliate link: https://amzn.to/4mWV0Lo
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 👉🤝 Getting to Yes: Negotiating Agreement Without Giving In  

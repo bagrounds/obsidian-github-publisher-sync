@@ -1,14 +1,17 @@
 ---
 share: true
 aliases:
-  - Good To Great
-title: Good To Great
+  - "👍➡️👍👍 Good to Great: Why Some Companies Make the Leap...And Others Don't"
+title: "👍➡️👍👍 Good to Great: Why Some Companies Make the Leap...And Others Don't"
 URL: https://bagrounds.org/books/good-to-great
 Author: 
 tags: 
+affiliate link: https://amzn.to/455mhoo
 ---
 [Home](../index.md) > [Books](./index.md)  
-# Good To Great  
+# 👍➡️👍👍 Good to Great: Why Some Companies Make the Leap...And Others Don't  
+[🛒 Good to Great: Why Some Companies Make the Leap...And Others Don't. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/455mhoo)  
+  
 ## 🤖 AI Summary  
 ### Good to Great Summary 🚀  
 **TL;DR:** Sustained greatness in companies comes from disciplined people, disciplined thought, and disciplined action, not from charismatic leaders or trendy strategies.  

@@ -4,6 +4,7 @@ aliases:
   - "😊✅ Feel Good Productivity: How to Do More of What Matters to You"
 URL: https://bagrounds.org/books/feel-good-productivity-how-to-do-more-of-what-matters-to-you
 share: true
+affiliate link: https://amzn.to/4dJdYRa
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 😊✅ Feel Good Productivity: How to Do More of What Matters to You  

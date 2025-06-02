@@ -6,9 +6,12 @@ title: "💪📈 Willpower: Rediscovering the Greatest Human Strength"
 URL: https://bagrounds.org/books/Willpower
 Author: "[[Roy Baumeister]]"
 tags: 
+affiliate link: https://amzn.to/3Z8qy6H
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 💪📈 Willpower: Rediscovering the Greatest Human Strength  
+[🛒 Willpower: Rediscovering the Greatest Human Strength. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3Z8qy6H)  
+  
 ## 🤖 AI Summary  
 ### 📖 Book Report: Willpower  
   

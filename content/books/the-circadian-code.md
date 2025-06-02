@@ -4,9 +4,12 @@ aliases:
   - "🌄⏳ The Circadian Code: Lose Weight, Supercharge Your Energy, and Transform Your Health from Morning to Midnight"
 URL: https://bagrounds.org/books/the-circadian-code
 share: true
+affiliate link: https://amzn.to/4mKeliI
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🌄⏳ The Circadian Code: Lose Weight, Supercharge Your Energy, and Transform Your Health from Morning to Midnight  
+[🛒 The Circadian Code: Lose Weight, Supercharge Your Energy, and Transform Your Health from Morning to Midnight. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4mKeliI)  
+  
 ## 📖 Book Report: The Circadian Code  
   
 ### ✍️ Author  

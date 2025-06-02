@@ -6,9 +6,12 @@ title: ✊🏿 How To Be An Antiracist
 URL: https://bagrounds.org/books/how-to-be-an-antiracist
 Author: 
 tags: 
+affiliate link: https://amzn.to/4jsVcPq
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ✊🏿 How To Be An Antiracist  
+[🛒 How To Be An Antiracist. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4jsVcPq)  
+  
 ## 📚 Book Report: How to Be an Antiracist  
   
 **✍️ Author:** Ibram X. Kendi  

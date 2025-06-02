@@ -6,9 +6,12 @@ title: 🏔️ The Myth of Sisyphus
 URL: https://bagrounds.org/books/the-myth-of-sisyphus
 Author: 
 tags: 
+affiliate link: https://amzn.to/43JseFh
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🏔️ The Myth of Sisyphus  
+[🛒 The Myth of Sisyphus. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/43JseFh)  
+  
 ## 📖 Book Report: The Myth of Sisyphus by Albert Camus  
   
 ### ✍️ Introduction  

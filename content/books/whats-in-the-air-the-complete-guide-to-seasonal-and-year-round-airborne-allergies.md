@@ -4,9 +4,12 @@ aliases:
   - "👃🤧 What's in the Air?: The Complete Guide to Seasonal and Year-Round Airborne Allergies"
 URL: https://bagrounds.org/books/whats-in-the-air-the-complete-guide-to-seasonal-and-year-round-airborne-allergies
 share: true
+affiliate link: https://amzn.to/4kmYZit
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 👃🤧 What's in the Air?: The Complete Guide to Seasonal and Year-Round Airborne Allergies  
+[🛒 What's in the Air?: The Complete Guide to Seasonal and Year-Round Airborne Allergies. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4kmYZit)  
+  
 ## 📖 Book Report: *What's in the Air?: The Complete Guide to Seasonal and Year-Round Airborne Allergies*  
   
 **✍️ Authors:** Dr. Gillian Shepherd and Marian Betancourt  

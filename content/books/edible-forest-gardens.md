@@ -4,9 +4,12 @@ aliases:
   - 🍎🌳 Edible Forest Gardens
 URL: https://bagrounds.org/books/edible-forest-gardens
 share: true
+affiliate link: https://amzn.to/4n0cW7Z
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🍎🌳 Edible Forest Gardens  
+[🛒 Edible Forest Gardens. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4n0cW7Z)  
+  
 ## 🌳 Book Report: Edible Forest Gardens  
   
 ### 🌿 Overview  

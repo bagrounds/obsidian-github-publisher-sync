@@ -6,9 +6,12 @@ title: "📰⚔️🧠 Information Wars: How We Lost the Global Battle Against D
 URL: https://bagrounds.org/books/information-wars
 Author: 
 tags: 
+affiliate link: https://amzn.to/3ZcSgPK
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 📰⚔️🧠 Information Wars: How We Lost the Global Battle Against Disinformation and What We Can Do About It  
+[🛒 Information Wars: How We Lost the Global Battle Against Disinformation and What We Can Do About It. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3ZcSgPK)  
+  
 ## 📖 Book Report: Information Wars  
   
 **📚 Information Wars: How We Lost the Global Battle Against Disinformation and What We Can Do About It** by Richard Stengel  

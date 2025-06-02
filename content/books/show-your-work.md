@@ -6,9 +6,12 @@ title: "📝🎨🎶 Show Your Work!: 10 Ways to Share Your Creativity and Get D
 URL: https://bagrounds.org/books/show-your-work-10-ways-to-share-your-creativity-and-get-discovered
 Author: 
 tags: 
+affiliate link: https://amzn.to/4kFdY7g
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 📝🎨🎶 Show Your Work!: 10 Ways to Share Your Creativity and Get Discovered  
+[🛒 Show Your Work!: 10 Ways to Share Your Creativity and Get Discovered. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4kFdY7g)  
+  
 ## 📚 Book Report: 🌟 Show Your Work! 🎨 10 Ways to Share Your Creativity and Get Discovered by Austin Kleon  
   
 ### 📣 Introduction  

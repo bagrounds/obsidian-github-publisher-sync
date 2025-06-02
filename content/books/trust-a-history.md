@@ -4,6 +4,7 @@ aliases:
   - "🤝📜 Trust: A History"
 URL: https://bagrounds.org/books/trust-a-history
 share: true
+affiliate link: https://amzn.to/43MZpb3
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🤝📜 Trust: A History  

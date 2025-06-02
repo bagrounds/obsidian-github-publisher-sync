@@ -6,9 +6,12 @@ title: "👍🧠 The Yes Brain: How to Cultivate Courage, Curiosity, and Resilie
 URL: https://bagrounds.org/books/the-yes-brain
 Author: 
 tags: 
+affiliate link: https://amzn.to/4jtxOBi
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 👍🧠 The Yes Brain: How to Cultivate Courage, Curiosity, and Resilience in Your Child  
+[🛒 The Yes Brain: How to Cultivate Courage, Curiosity, and Resilience in Your Child. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4jtxOBi)  
+  
 ## 🧠 Book Report: The Yes Brain  
   
 ### 📖 Overview  

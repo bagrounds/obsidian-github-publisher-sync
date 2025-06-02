@@ -1,15 +1,17 @@
 ---
 share: true
 aliases:
-  - Writing Down the Bones
-title: Writing Down the Bones
+  - ✍️🦴 Writing Down the Bones
+title: ✍️🦴 Writing Down the Bones
 URL: https://bagrounds.org/books/writing-down-the-bones
 Author: 
 tags: 
+affiliate link: https://amzn.to/3FlGdZM
 ---
 [Home](../index.md) > [Books](./index.md)  
-# Writing Down the Bones  
+# ✍️🦴 Writing Down the Bones  
 by Natalie Goldberg  
+[🛒 Writing Down the Bones. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3FlGdZM)  
   
 ## 🤖 AI Summary  
 ### ✍️ TL;DR  

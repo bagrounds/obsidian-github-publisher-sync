@@ -68,7 +68,7 @@ Unlock your creative potential by addressing and dismantling your "creative bloc
 * **Best Diametrically Opposed Book:** *[✍🏼👍🏼 On Writing Well: The Classic Guide to Writing Nonfiction](./on-writing-well.md)* by William Zinsser. This book focuses on the craft of writing and emphasizes clarity and conciseness, contrasting with *The Artist's Way*'s emphasis on free-flowing expression. ✍️  
 * **Best Fiction Book That Incorporates Related Ideas:** *The Invention of Hugo Cabret* by Brian Selznick. This book explores themes of creativity, passion, and the power of dreams. 🎬  
 * **Best Book That Is More General:** *Flow: The Psychology of Optimal Experience* by Mihaly Csikszentmihalyi. This book explores the state of flow, which is a key aspect of creative engagement. 🌊  
-* **Best Book That Is More Specific:** *Writing Down the Bones* by Natalie Goldberg. This book focuses specifically on the craft of writing, providing practical exercises and advice for developing a writing practice. 🦴  
+* **Best Book That Is More Specific:** [✍️🦴 Writing Down the Bones](./writing-down-the-bones.md) by Natalie Goldberg. This book focuses specifically on the craft of writing, providing practical exercises and advice for developing a writing practice. 🦴  
 * **Best Book That Is More Rigorous:** *Creativity: The Psychology of Discovery and Invention* by Mihaly Csikszentmihalyi. This book provides a more academic and research-based exploration of creativity. 🧠  
 * **Best Book That Is More Accessible:** *Steal Like an Artist* by Austin Kleon. This book offers a concise and visually engaging guide to creative inspiration. 🎨  
   

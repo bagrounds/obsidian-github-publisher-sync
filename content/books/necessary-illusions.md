@@ -6,9 +6,12 @@ title: "🪄💭 Necessary Illusions: Thought Control in Democratic Societies"
 URL: https://bagrounds.org/books/necessary-illusions
 Author: 
 tags: 
+affiliate link: https://amzn.to/3HmJ7hg
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🪄💭 Necessary Illusions: Thought Control in Democratic Societies  
+[🛒 Necessary Illusions: Thought Control in Democratic Societies. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3HmJ7hg)  
+  
 ## 📚 Book Report: Necessary Illusions: Thought Control in Democratic Societies by Noam Chomsky  
   
 ### 📢 Introduction  

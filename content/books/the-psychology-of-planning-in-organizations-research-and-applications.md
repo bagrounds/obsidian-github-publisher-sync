@@ -4,9 +4,12 @@ aliases:
   - "🏢🗓️ The Psychology of Planning in Organizations: Research and Applications"
 URL: https://bagrounds.org/books/the-psychology-of-planning-in-organizations-research-and-applications
 share: true
+affiliate link: https://amzn.to/4kJlhL1
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🏢🗓️ The Psychology of Planning in Organizations: Research and Applications  
+[🛒 The Psychology of Planning in Organizations: Research and Applications. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4kJlhL1)  
+  
 ## 📖 Book Report: The Psychology of Planning in Organizations: Research and Applications  
   
 *The Psychology of Planning in Organizations: Research and Applications*, edited by Michael D. Mumford and Michael Frese, delves into the crucial role of 🧠 planning in organizational performance. 🌉 This book serves as a bridge between theoretical research and practical application, drawing insights from various fields within psychology and management.  

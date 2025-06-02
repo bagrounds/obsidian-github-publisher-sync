@@ -6,9 +6,12 @@ title: "🦄👤🗓️ The Mythical Man-Month: Essays on Software Engineering"
 URL: https://bagrounds.org/books/the-mythical-man-month
 Author: 
 tags: 
+affiliate link: https://amzn.to/4dKRNua
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🦄👤🗓️ The Mythical Man-Month: Essays on Software Engineering  
+[🛒 The Mythical Man-Month: Essays on Software Engineering. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4dKRNua)  
+  
 ## 📚 The Mythical Man-Month: A Summary  
   
 📖 "The Mythical Man-Month: Essays on Software Engineering" by Frederick P. Brooks Jr., first published in 1975, is a 🧱 cornerstone text in software engineering and project management. 👨‍💻 Based on Brooks' experiences managing the development of the OS/360 operating system at IBM, it remains ⏳ relevant due to its insightful exploration of the complexities inherent in large software projects.  

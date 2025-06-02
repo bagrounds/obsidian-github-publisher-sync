@@ -6,9 +6,11 @@ title: ℹ️🌱 The Informed Gardener
 URL: https://bagrounds.org/books/the-informed-gardener
 Author: 
 tags: 
+affiliate link: https://amzn.to/3Sum6eP
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ℹ️🌱 The Informed Gardener  
+[🛒 The Informed Gardener. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3Sum6eP)  
   
 ## 📚 Book Report: The Informed Gardener  
   

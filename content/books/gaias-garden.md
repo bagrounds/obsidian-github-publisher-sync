@@ -4,9 +4,12 @@ aliases:
   - "🌍🌿 Gaia's Garden: A Guide to Home-Scale Permaculture"
 URL: https://bagrounds.org/books/gaias-garden-a-guide-to-home-scale-permaculture
 share: true
+affiliate link: https://amzn.to/3Zbj8Q4
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🌍🌿 Gaia's Garden: A Guide to Home-Scale Permaculture  
+[🛒 Gaia's Garden: A Guide to Home-Scale Permaculture. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3Zbj8Q4)  
+  
 ## 📚 Book Report: 🌍 Gaia's Garden: A Guide to Home-Scale Permaculture  
   
 ### 📝 Overview  

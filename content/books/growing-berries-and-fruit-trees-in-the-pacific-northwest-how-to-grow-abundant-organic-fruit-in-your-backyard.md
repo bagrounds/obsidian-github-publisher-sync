@@ -4,6 +4,7 @@ aliases:
   - "🍓🌳 Growing Berries and Fruit Trees in the Pacific Northwest: How to Grow Abundant, Organic Fruit in Your Backyard"
 URL: https://bagrounds.org/books/growing-berries-and-fruit-trees-in-the-pacific-northwest-how-to-grow-abundant-organic-fruit-in-your-backyard
 share: true
+affiliate link: https://amzn.to/3Su4QGz
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🍓🌳 Growing Berries and Fruit Trees in the Pacific Northwest: How to Grow Abundant, Organic Fruit in Your Backyard  

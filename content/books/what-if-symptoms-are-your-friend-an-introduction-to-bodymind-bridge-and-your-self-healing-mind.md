@@ -4,9 +4,12 @@ aliases:
   - "🤕❤️ What if Symptoms Are Your Friend?: An Introduction to BodyMind Bridge and Your Self-Healing Mind"
 URL: https://bagrounds.org/books/what-if-symptoms-are-your-friend-an-introduction-to-bodymind-bridge-and-your-self-healing-mind
 share: true
+affiliate link: https://amzn.to/4jzHLNR
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🤕❤️ What if Symptoms Are Your Friend?: An Introduction to BodyMind Bridge and Your Self-Healing Mind  
+[🛒 What if Symptoms Are Your Friend?: An Introduction to BodyMind Bridge and Your Self-Healing Mind. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4jzHLNR)  
+  
 ## 📖 Book Report: 🤔 What if Symptoms Are Your Friend?  
   
 ### ℹ️ Overview  

@@ -6,9 +6,12 @@ title: 📗🚀🌍 Operating Manual for Spaceship Earth
 URL: https://bagrounds.org/books/operating-manual-for-spaceship-earth
 Author: 
 tags: 
+affiliate link: https://amzn.to/4knXcKd
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 📗🚀🌍 Operating Manual for Spaceship Earth  
+[🛒 Operating Manual for Spaceship Earth. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4knXcKd)  
+  
 ## 📖 Book Report: Operating Manual for Spaceship Earth 🌍  
   
 ### ✍️ Author and Publication 📅  

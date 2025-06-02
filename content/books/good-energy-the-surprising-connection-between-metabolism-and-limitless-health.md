@@ -4,9 +4,12 @@ aliases:
   - "⚡❤️‍🩹 Good Energy: The Surprising Connection Between Metabolism and Limitless Health"
 URL: https://bagrounds.org/books/good-energy-the-surprising-connection-between-metabolism-and-limitless-health
 share: true
+affiliate link: https://amzn.to/3FiAkws
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ⚡❤️‍🩹 Good Energy: The Surprising Connection Between Metabolism and Limitless Health  
+[🛒 Good Energy: The Surprising Connection Between Metabolism and Limitless Health. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3FiAkws)  
+  
 ## 📖 Book Report: Good Energy by Casey Means, MD  
   
 ### 🎯 Core Thesis  

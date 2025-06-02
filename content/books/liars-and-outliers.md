@@ -6,9 +6,12 @@ title: "🤥😈 Liars and Outliers: Enabling the Trust That Society Needs to Th
 URL: https://bagrounds.org/books/liars-and-outliers
 Author: 
 tags: 
+affiliate link: https://amzn.to/3Zf2mQ9
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🤥😈 Liars and Outliers: Enabling the Trust That Society Needs to Thrive  
+[🛒 Liars and Outliers: Enabling the Trust That Society Needs to Thrive. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3Zf2mQ9)  
+  
   
 ## 📖 Book Report: Liars and Outliers  
   

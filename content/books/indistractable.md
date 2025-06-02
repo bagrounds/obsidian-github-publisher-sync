@@ -6,9 +6,12 @@ title: "🧘 Indistractable: How to Control Your Attention and Choose Your Life"
 URL: https://bagrounds.org/books/indistractable
 Author: 
 tags: 
+affiliate link: https://amzn.to/43YVI2Y
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧘 Indistractable: How to Control Your Attention and Choose Your Life  
+[🛒 Indistractable: How to Control Your Attention and Choose Your Life. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/43YVI2Y)  
+  
 ## 📖 Book Report: Indistractable  
   
 ### 🚀 Introduction  

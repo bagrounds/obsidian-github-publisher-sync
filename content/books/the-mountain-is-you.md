@@ -4,9 +4,12 @@ aliases:
   - "⛰️➡️🧘 The Mountain is You: Transforming Self-Sabotage into Self-Mastery"
 URL: https://bagrounds.org/books/the-mountain-is-you-transforming-self-sabotage-into-self-mastery
 share: true
+affiliate link: https://amzn.to/4jvIqj0
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ⛰️➡️🧘 The Mountain is You: Transforming Self-Sabotage into Self-Mastery  
+[🛒 The Mountain is You: Transforming Self-Sabotage into Self-Mastery. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4jvIqj0)  
+  
 ## ⛰️ Book Report: The Mountain Is You  
   
 ### 💡 Overview  

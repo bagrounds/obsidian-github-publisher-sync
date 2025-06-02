@@ -73,7 +73,7 @@ tags:
   
 * 🐼 **Eats, Shoots & Leaves: The Zero Tolerance Approach to Punctuation** by Lynne Truss: 😂 A humorous yet informative look at the importance and common misuses of punctuation.  
 * 👑 **The Elements of Eloquence: How to Turn the Perfect English Phrase** by Mark Forsyth: 🗣️ Explores rhetorical figures and devices that make language memorable and beautiful.  
-* 🧘 **[Writing Down the Bones](./writing-down-the-bones.md): Freeing the Writer Within** by Natalie Goldberg: ✍️ Focuses on writing practice, mindfulness, and tapping into creative flow.  
+* **[✍️🦴 Writing Down the Bones](./writing-down-the-bones.md): Freeing the Writer Within** by Natalie Goldberg: ✍️ Focuses on writing practice, mindfulness, and tapping into creative flow.  
 * 🎭 **Metaphors We Live By** by George Lakoff & Mark Johnson: 💡 Explores how metaphors fundamentally shape thought and language, impacting communication style.  
 * ✍️ **Several Short Sentences About Writing** by Verlyn Klinkenborg: 💭 An unconventional meditation on the power and craft of the sentence itself.  
 * 📚 **Stylized: A Slightly Obsessive History of Strunk & White's The Elements of Style** by Mark Garvey: 📜 Explores the history, creation, and cultural impact of *The Elements of Style* itself.  

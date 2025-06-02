@@ -6,9 +6,12 @@ title: "🐦🕊️ Bird by Bird: Some Instructions on Writing and Life"
 URL: https://bagrounds.org/books/bird-by-bird
 Author: 
 tags: 
+affiliate link: https://amzn.to/4jyNMKu
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🐦🕊️ Bird by Bird: Some Instructions on Writing and Life  
+[🛒 Bird by Bird: Some Instructions on Writing and Life. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4jyNMKu)  
+  
 ## 📚 Book Report: 🐦 Bird by Bird by Anne Lamott  
   
 ### 💡 Overview  

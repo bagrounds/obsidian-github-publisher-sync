@@ -54,7 +54,7 @@ tags:
 * **[🐦🕊️ Bird by Bird: Some Instructions on Writing and Life](./bird-by-bird.md)** by Anne Lamott: Focuses on the emotional and psychological aspects of the writing life, offering encouragement, humor, and practical advice on overcoming writer's block and perfectionism.  
 * ⚔️ **[The War of Art](./the-war-of-art.md): Break Through the Blocks and Win Your Inner Creative Battles** by Steven Pressfield: Addresses the universal challenge of "Resistance" faced by creators, offering a motivational kick to overcome procrastination and fear.  
 * ✨ **[🪄 Big Magic: Creative Living Beyond Fear](./big-magic.md)** by Elizabeth Gilbert: Explores the nature of inspiration and creativity, encouraging readers to embrace curiosity and let go of fear in their creative pursuits.  
-* 🦴 **[Writing Down the Bones](./writing-down-the-bones.md)** by Natalie Goldberg: Blends Zen principles with writing practice, focusing on freeing the writer's voice through timed exercises and observation.  
+* **[✍️🦴 Writing Down the Bones](./writing-down-the-bones.md)** by Natalie Goldberg: Blends Zen principles with writing practice, focusing on freeing the writer's voice through timed exercises and observation.  
 * 🧘 **[The Artist's Way](./the-artists-way.md): A Spiritual Path to Higher Creativity** by Julia Cameron: A structured 12-week program designed to unblock creativity through tools like "Morning Pages" and "Artist Dates".  
 * ⛵ **Steering the Craft: A 21st-Century Guide to Sailing the Sea of Story** by Ursula K. Le Guin: A concise guide focusing on the fundamentals of narrative craft, from a master storyteller.  
 * 🧘‍♂️ **Zen in the Art of Writing** by Ray Bradbury: Essays celebrating the joy and passion of writing.  

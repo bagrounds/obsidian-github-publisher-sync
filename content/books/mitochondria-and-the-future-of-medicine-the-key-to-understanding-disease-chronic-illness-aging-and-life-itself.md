@@ -4,9 +4,12 @@ aliases:
   - "🔋⚕️⏳ Mitochondria and the Future of Medicine: The Key to Understanding Disease, Chronic Illness, Aging, and Life Itself"
 URL: https://bagrounds.org/books/mitochondria-and-the-future-of-medicine-the-key-to-understanding-disease-chronic-illness-aging-and-life-itself
 share: true
+affiliate link: https://amzn.to/4kk6nuX
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🔋⚕️⏳ Mitochondria and the Future of Medicine: The Key to Understanding Disease, Chronic Illness, Aging, and Life Itself  
+[🛒 Mitochondria and the Future of Medicine: The Key to Understanding Disease, Chronic Illness, Aging, and Life Itself. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4kk6nuX)  
+  
 ## 📖 Book Report: ⚛️ Mitochondria and the Future of Medicine  
   
 **🧑‍⚕️ Author:** Lee Know, ND  

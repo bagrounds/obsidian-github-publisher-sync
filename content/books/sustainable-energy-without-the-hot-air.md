@@ -6,9 +6,12 @@ title: 🌞🌬️🌊🌋 Sustainable Energy - Without the Hot Air
 URL: https://bagrounds.org/books/sustainable-energy-without-the-hot-air
 Author: 
 tags: 
+affiliate link: https://amzn.to/4dJZuAP
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🌞🌬️🌊🌋 Sustainable Energy - Without the Hot Air  
+[🛒 Sustainable Energy - Without the Hot Air. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4dJZuAP)  
+  
 ## 📖 Book Report: ⚡ Sustainable Energy - Without the Hot Air  
   
 ### 💡 Overview  

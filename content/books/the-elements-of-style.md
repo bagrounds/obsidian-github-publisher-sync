@@ -6,9 +6,12 @@ title: 🦢 The Elements of Style
 URL: https://bagrounds.org/books/the-elements-of-style
 Author: 
 tags: 
+affiliate link: https://amzn.to/4dNkTcj
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🦢 The Elements of Style  
+[🛒 The Elements of Style. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4dNkTcj)  
+  
 ## 📚 Book Report: The Elements of Style by William Strunk Jr. and E.B. White  
   
 ### 📌 Core Tenets  

@@ -6,9 +6,12 @@ title: "⚖️👈 The Tipping Point: How Little Things Can Make a Big Differenc
 URL: https://bagrounds.org/books/the-tipping-point
 Author: 
 tags: 
+affiliate link: https://amzn.to/3FCGeIH
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ⚖️👈 The Tipping Point: How Little Things Can Make a Big Difference  
+[🛒 The Tipping Point: How Little Things Can Make a Big Difference. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3FCGeIH)  
+  
 ## 📚 Book Report: The Tipping Point by Malcolm Gladwell  
   
 ### ✍️ Introduction  

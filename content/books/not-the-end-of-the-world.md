@@ -6,9 +6,12 @@ title: "⛔🌎🔚 Not the End of the World: How We Can Be the First Generation
 URL: https://bagrounds.org/books/not-the-end-of-the-world
 Author: 
 tags: 
+affiliate link: https://amzn.to/4mIM241
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ⛔🌎🔚 Not the End of the World: How We Can Be the First Generation to Build a Sustainable Planet  
+[🛒 Not the End of the World: How We Can Be the First Generation to Build a Sustainable Planet. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4mIM241)  
+  
 ## 📚 Book Report: 🌍 Not the End of the World  
   
 ### 🔎 Overview  

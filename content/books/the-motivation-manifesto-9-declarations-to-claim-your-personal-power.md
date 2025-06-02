@@ -4,9 +4,12 @@ aliases:
   - "🔥📜 The Motivation Manifesto: 9 Declarations to Claim Your Personal Power"
 URL: https://bagrounds.org/books/the-motivation-manifesto-9-declarations-to-claim-your-personal-power
 share: true
+affiliate link: https://amzn.to/3SwZ7zO
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🔥📜 The Motivation Manifesto: 9 Declarations to Claim Your Personal Power  
+[🛒 The Motivation Manifesto: 9 Declarations to Claim Your Personal Power. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3SwZ7zO)  
+  
 ## 📖 Book Report: The 🚀 Motivation Manifesto  
   
 ### 💡 Overview  

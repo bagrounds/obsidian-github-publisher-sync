@@ -4,9 +4,12 @@ aliases:
   - "🧑‍🤝‍🧑📈 10 to 25: The Science of Motivating Young People: A Groundbreaking Approach to Leading the Next Generation - And Making Your Own Life Easier"
 URL: https://bagrounds.org/books/10-to-25-the-science-of-motivating-young-people-a-groundbreaking-approach-to-leading-the-next-generation-and-making-your-own-life-easier
 share: true
+affiliate link: https://amzn.to/4dSK799
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧑‍🤝‍🧑📈 10 to 25: The Science of Motivating Young People: A Groundbreaking Approach to Leading the Next Generation - And Making Your Own Life Easier  
+[🛒 10 to 25: The Science of Motivating Young People: A Groundbreaking Approach to Leading the Next Generation - And Making Your Own Life Easier. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4dSK799)  
+  
 ## 📚 Book Report: 10 to 25: The Science of Motivating Young People  
   
 * 🧑‍🏫 *10 to 25: The Science of Motivating Young People: A Groundbreaking Approach to Leading the Next Generation―And Making Your Own Life Easier* by David Yeager (Note: Some sources list Blake Allan and Martin Seligman, but recent results focus on David Yeager as the author. It seems Blake Allan co-authored an earlier related concept paper, and Seligman's work underpins the theory, but Yeager is the primary author of this specific book). 🎯 This book aims to provide a science-backed framework for adults (parents, educators, mentors, managers) to effectively motivate individuals in the 10-to-25 age range.  

@@ -4,9 +4,12 @@ share: true
 aliases:
   - "🤔💻🧠 Algorithms to Live By: The Computer Science of Human Decisions"
 URL: https://bagrounds.org/books/algorithms-to-live-by
+affiliate link: https://amzn.to/4kxUFwM
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🤔💻🧠 Algorithms to Live By: The Computer Science of Human Decisions  
+[🛒 Algorithms to Live By: The Computer Science of Human Decisions. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4kxUFwM)  
+  
 ## 📚 Book Report: 🤖 Algorithms to Live By: 💻 The Computer Science of Human Decisions  
   
 **🧑‍🤝‍🧑 Authors:** Brian Christian and Tom Griffiths  

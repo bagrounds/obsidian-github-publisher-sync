@@ -6,10 +6,12 @@ title: "📜 On Writing: A Memoir of the Craft"
 URL: https://bagrounds.org/books/on-writing
 Author: 
 tags: 
+affiliate link: https://amzn.to/4kM2OO4
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 📜 On Writing: A Memoir of the Craft  
 by Stephen King  
+[🛒 On Writing: A Memoir of the Craft. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4kM2OO4)  
   
 ## 🤖 AI Summary  
 ### 📚 TL;DR: "On Writing" in a Nutshell 🌰  

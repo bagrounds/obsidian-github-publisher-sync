@@ -4,11 +4,11 @@ aliases:
   - "📖⏱️🍎 The Complete Guide to Fasting: Heal Your Body Through Intermittent, Alternate-Day, and Extended Fasting"
 URL: https://bagrounds.org/books/the-complete-guide-to-fasting-heal-your-body-through-intermittent-alternate-day-and-extended-fasting
 share: true
-affiliate link: https://www.amazon.com/dp/1628600012/ref=cm_sw_r_as_gl_apa_gl_i_GHG9YEPD66B1H2F2BAP5?linkCode=ml1&tag=bagrounds-20
+affiliate link: https://amzn.to/3FwibLE
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 📖⏱️🍎 The Complete Guide to Fasting: Heal Your Body Through Intermittent, Alternate-Day, and Extended Fasting  
-[🛒 The Complete Guide to Fasting: Heal Your Body Through Intermittent, Alternate-Day, and Extended Fasting. As an Amazon Associate I earn from qualifying purchases.](https://www.amazon.com/dp/1628600012/ref=cm_sw_r_as_gl_apa_gl_i_GHG9YEPD66B1H2F2BAP5?linkCode=ml1&tag=bagrounds-20)  
+[🛒 The Complete Guide to Fasting: Heal Your Body Through Intermittent, Alternate-Day, and Extended Fasting. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3FwibLE)  
   
 ## 📖 Book Report: The Complete Guide to Fasting  
   

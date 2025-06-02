@@ -6,6 +6,7 @@ title: "🤥📣 This Is Not Propaganda: Adventures in the War Against Reality"
 URL: https://bagrounds.org/books/this-is-not-propaganda
 Author: 
 tags: 
+affiliate link: https://amzn.to/4jwntEL
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🤥📣 This Is Not Propaganda: Adventures in the War Against Reality  

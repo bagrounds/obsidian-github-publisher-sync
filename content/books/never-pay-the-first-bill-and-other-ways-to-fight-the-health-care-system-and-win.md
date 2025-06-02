@@ -4,9 +4,12 @@ aliases:
   - "🙅🏼‍♀️🧾🏥⚔️ Never Pay the First Bill: And Other Ways to Fight the Health Care System and Win"
 URL: https://bagrounds.org/books/never-pay-the-first-bill-and-other-ways-to-fight-the-health-care-system-and-win
 share: true
+affiliate link: https://amzn.to/45BkIhZ
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🙅🏼‍♀️🧾🏥⚔️ Never Pay the First Bill: And Other Ways to Fight the Health Care System and Win  
+[🛒 Never Pay the First Bill: And Other Ways to Fight the Health Care System and Win. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/45BkIhZ)  
+  
 ## 📚 Book Report: Never Pay the First Bill: And Other Ways to Fight the Health Care System and Win 🏆  
   
 ### 📝 Summary  

@@ -4,9 +4,12 @@ aliases:
   - "📖🫂🥼 Handbook of Attachment: Theory, Research, and Clinical Applications"
 URL: https://bagrounds.org/books/handbook-of-attachment-theory-research-and-clinical-applications
 share: true
+affiliate link: https://amzn.to/4kjOXP5
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 📖🫂🥼 Handbook of Attachment: Theory, Research, and Clinical Applications  
+[🛒 Handbook of Attachment: Theory, Research, and Clinical Applications. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4kjOXP5)  
+  
 ## 📖 Book Report: Handbook of Attachment: Theory, Research, and Clinical Applications  
   
 ### 📚 Overview  

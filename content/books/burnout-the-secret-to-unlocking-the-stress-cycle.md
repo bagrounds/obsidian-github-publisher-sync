@@ -4,9 +4,12 @@ aliases:
   - "🥵🔥💨 Burnout: The Secret to Unlocking the Stress Cycle"
 URL: https://bagrounds.org/books/burnout-the-secret-to-unlocking-the-stress-cycle
 share: true
+affiliate link: https://amzn.to/3FkgmkX
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🥵🔥💨 Burnout: The Secret to Unlocking the Stress Cycle  
+[🛒 Burnout: The Secret to Unlocking the Stress Cycle. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3FkgmkX)  
+  
 ## 📚 Book Report: 😩 Burnout: The Secret to Unlocking the Stress Cycle  
   
 **🧑‍🤝‍🧑 Authors:** 👩‍⚕️ Emily Nagoski, PhD, and 🎤 Amelia Nagoski, DMA  

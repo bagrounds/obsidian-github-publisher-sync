@@ -6,9 +6,12 @@ title: "ℹ️ Information: A Very Short Introduction"
 URL: https://bagrounds.org/books/information
 Author: 
 tags: 
+affiliate link: https://amzn.to/4jwu95Q
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ℹ️ Information: A Very Short Introduction  
+[🛒 Information: A Very Short Introduction. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4jwu95Q)  
+  
 ## 📚 Book Report: ℹ️ Information: A Very Short Introduction  
   
 ### 📖 Introduction  

@@ -4,9 +4,12 @@ aliases:
   - "🔬🧘🏼‍♀️🧠 Altered Traits: Science Reveals How Meditation Changes Your Mind, Brain, and Body"
 URL: https://bagrounds.org/books/altered-traits-science-reveals-how-meditation-changes-your-mind-brain-and-body
 share: true
+affiliate link: https://amzn.to/43YvX2M
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🔬🧘🏼‍♀️🧠 Altered Traits: Science Reveals How Meditation Changes Your Mind, Brain, and Body  
+[🛒 Altered Traits: Science Reveals How Meditation Changes Your Mind, Brain, and Body. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/43YvX2M)  
+  
 ## 📖 Book Report: 🧠 Altered Traits: Science Reveals How Meditation Changes Your Mind, Brain, and Body  
   
 ### 📚 Overview  

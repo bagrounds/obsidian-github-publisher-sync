@@ -4,9 +4,12 @@ aliases:
   - "💪🎯🔬 The Science of Self-Discipline: The Willpower, Mental Toughness, and Self-Control to Resist Temptation and Achieve Your Goals"
 URL: https://bagrounds.org/books/the-science-of-self-discipline-the-willpower-mental-toughness-and-self-control-to-resist-temptation-and-achieve-your-goals
 share: true
+affiliate link: https://amzn.to/3ZNmNUm
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 💪🎯🔬 The Science of Self-Discipline: The Willpower, Mental Toughness, and Self-Control to Resist Temptation and Achieve Your Goals  
+[🛒 The Science of Self-Discipline: The Willpower, Mental Toughness, and Self-Control to Resist Temptation and Achieve Your Goals. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3ZNmNUm)  
+  
 ## 📚 Book Report: The Science of Self-Discipline by Peter Hollins  
   
 ### 📖 Introduction  

@@ -4,9 +4,12 @@ aliases:
   - "🧠🗂️ The Organized Mind: Thinking Straight in the Age of Information Overload"
 URL: https://bagrounds.org/books/the-organized-mind-thinking-straight-in-the-age-of-information-overload
 share: true
+affiliate link: https://amzn.to/3SSyVzT
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧠🗂️ The Organized Mind: Thinking Straight in the Age of Information Overload  
+[🛒 The Organized Mind: Thinking Straight in the Age of Information Overload. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3SSyVzT)  
+  
 ## 📚 Book Report: The Organized Mind  
   
 **🧑‍💻 Author:** Daniel J. Levitin  

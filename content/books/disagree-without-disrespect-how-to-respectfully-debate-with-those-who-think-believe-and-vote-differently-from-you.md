@@ -4,9 +4,12 @@ aliases:
   - "😠🤝 Disagree without Disrespect: How to Respectfully Debate with Those who Think, Believe and Vote Differently from You"
 URL: https://bagrounds.org/books/disagree-without-disrespect-how-to-respectfully-debate-with-those-who-think-believe-and-vote-differently-from-you
 share: true
+affiliate link: https://amzn.to/3FvRUgu
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 😠🤝 Disagree without Disrespect: How to Respectfully Debate with Those who Think, Believe and Vote Differently from You  
+[🛒 Disagree without Disrespect: How to Respectfully Debate with Those who Think, Believe and Vote Differently from You. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3FvRUgu)  
+  
 ## 📚 Book Report: 🤝 Disagree without Disrespect: 🤔 How to Respectfully Debate with Those who Think, Believe and Vote Differently from You  
   
 ### 📝 Summary  

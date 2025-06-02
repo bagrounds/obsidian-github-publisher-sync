@@ -4,9 +4,12 @@ share: true
 aliases:
   - "🏛️💰 Debt: The First 5,000 Years"
 URL: https://bagrounds.org/books/debt-the-first-5-000-years
+affiliate link: https://amzn.to/3SwYlTh
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🏛️💰 Debt: The First 5,000 Years  
+[🛒 Debt: The First 5,000 Years. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3SwYlTh)  
+  
 ## 📖 Book Report: Debt: The First 5,000 Years by David Graeber  
   
 ### 💡 Overview  

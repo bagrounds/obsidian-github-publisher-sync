@@ -67,7 +67,7 @@ Pressfield reframes the creative process as a battle against a tangible enemy, "
 * **Best Diametrically Opposed Book:** "[The Artist's Way](./the-artists-way.md)" by Julia Cameron. 🌈 (Emphasizes nurturing inner creativity through self-discovery and play, contrasting Pressfield's focus on discipline)  
 * **Best Fiction Book That Incorporates Related Ideas:** [🐦🕊️ Bird by Bird: Some Instructions on Writing and Life](./bird-by-bird.md) by Anne Lamott. ✍️ (Though a writing book, it heavily incorporates the idea of doing the work, and dealing with the inner voice.)  
 * **Best Book That Is More General:** [⚛️🔄 Atomic Habits](./atomic-habits.md) by James Clear. (Provides a broader framework for building habits, applicable to creative pursuits)  
-* **Best Book That Is More Specific:** "Writing Down the Bones" by Natalie Goldberg. 🦴 (Specifically focuses on the craft of writing and developing a writer's practice)  
+* **Best Book That Is More Specific:** [✍️🦴 Writing Down the Bones](./writing-down-the-bones.md) by Natalie Goldberg. 🦴 (Specifically focuses on the craft of writing and developing a writer's practice)  
 * **Best Book That Is More Rigorous:** "Flow: The Psychology of Optimal Experience" by Mihaly Csikszentmihalyi. 🌊 (Provides a scientific framework for understanding the flow state, which Pressfield alludes to as the "Muse")  
 * **Best Book That Is More Accessible:** "Steal Like an Artist" by Austin Kleon. 🎨 (A visually engaging and concise guide to creative inspiration and practice)  
   

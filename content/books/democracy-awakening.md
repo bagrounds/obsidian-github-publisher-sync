@@ -6,9 +6,12 @@ title: "🏛️☀️⬆️ Democracy Awakening: 📝 Notes on the State of 🇺
 URL: https://bagrounds.org/books/democracy-awakening
 Author: 
 tags: 
+affiliate link: https://amzn.to/3SzacAq
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🏛️☀️⬆️ Democracy Awakening: 📝 Notes on the State of 🇺🇸 America  
+[🛒 Democracy Awakening: 📝 Notes on the State of 🇺🇸 America. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3SzacAq)  
+  
 ## 📖 Book Report: Democracy Awakening  
   
 **🔖 Title:** *Democracy Awakening: Notes on the State of America*  

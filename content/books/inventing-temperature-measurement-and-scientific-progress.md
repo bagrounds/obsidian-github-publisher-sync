@@ -4,6 +4,7 @@ aliases:
   - "🌡️⚙️ Inventing Temperature: Measurement and Scientific Progress"
 URL: https://bagrounds.org/books/inventing-temperature-measurement-and-scientific-progress
 share: true
+affiliate link: https://amzn.to/3ZaJ52d
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🌡️⚙️ Inventing Temperature: Measurement and Scientific Progress  

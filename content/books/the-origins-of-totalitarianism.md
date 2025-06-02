@@ -6,9 +6,12 @@ title: 👹 The Origins of Totalitarianism
 URL: https://bagrounds.org/books/the-origins-of-totalitarianism
 Author: 
 tags: 
+affiliate link: https://amzn.to/4kLTIRo
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 👹 The Origins of Totalitarianism  
+[🛒 The Origins of Totalitarianism. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4kLTIRo)  
+  
 ## 📚 Book Report: The Origins of Totalitarianism by Hannah Arendt  
   
 ### ✍️ Introduction  

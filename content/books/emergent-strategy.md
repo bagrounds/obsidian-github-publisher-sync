@@ -1,14 +1,17 @@
 ---
 share: true
 aliases:
-  - "🦋 Emergent Strategy: Shaping Change, Changing Worlds"
-title: "🦋 Emergent Strategy: Shaping Change, Changing Worlds"
+  - "🦋♟️ Emergent Strategy: Shaping Change, Changing Worlds"
+title: "🦋♟️ Emergent Strategy: Shaping Change, Changing Worlds"
 URL: https://bagrounds.org/books/emergent-strategy-shaping-change-changing-worlds
 Author: 
 tags: 
+affiliate link: https://amzn.to/456a6HQ
 ---
 [Home](../index.md) > [Books](./index.md)  
-# 🦋 Emergent Strategy: Shaping Change, Changing Worlds  
+# 🦋♟️ Emergent Strategy: Shaping Change, Changing Worlds  
+[🛒 Emergent Strategy: Shaping Change, Changing Worlds. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/456a6HQ)  
+  
 ## 📖 Book Report: 🦋 Emergent Strategy: Shaping Change, Changing Worlds  
   
 **✍️ Author:** adrienne maree brown  

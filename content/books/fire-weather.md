@@ -6,9 +6,12 @@ title: "🔥⛈️ Fire Weather: A True Story from a Hotter World"
 URL: https://bagrounds.org/books/fire-weather
 Author: 
 tags: 
+affiliate link: https://www.amazon.com/dp/1524732850/ref=cm_sw_r_as_gl_apa_gl_i_335CB1RCKQXQBHR9ED4V?linkCode=ml1&tag=bagrounds-20
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🔥⛈️ Fire Weather: A True Story from a Hotter World  
+[🛒 Fire Weather: A True Story from a Hotter World. As an Amazon Associate I earn from qualifying purchases.](https://www.amazon.com/dp/1524732850/ref=cm_sw_r_as_gl_apa_gl_i_335CB1RCKQXQBHR9ED4V?linkCode=ml1&tag=bagrounds-20)  
+  
 ## 📚 Book Report: 🔥 Fire Weather: A True Story from a Hotter World  
   
 ### ✍️ Author  

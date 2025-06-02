@@ -1,12 +1,15 @@
 ---
-title: "🪴 RHS How to Garden When You're New to Gardening: The Basics For Beginners"
+title: "🪴🌱 RHS How to Garden When You're New to Gardening: The Basics for Absolute Beginners"
 aliases:
-  - "🪴 RHS How to Garden When You're New to Gardening: The Basics For Beginners"
+  - "🪴🌱 RHS How to Garden When You're New to Gardening: The Basics for Absolute Beginners"
 URL: https://bagrounds.org/books/rhs-how-to-garden-when-youre-new-to-gardening-the-basics-for-beginners
 share: true
+affiliate link: https://amzn.to/450yhHJ
 ---
 [Home](../index.md) > [Books](./index.md)  
-# 🪴 RHS How to Garden When You're New to Gardening: The Basics For Beginners  
+# 🪴🌱 RHS How to Garden When You're New to Gardening: The Basics for Absolute Beginners  
+[🛒 RHS How to Garden When You're New to Gardening: The Basics for Absolute Beginners. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/450yhHJ)  
+  
 ## 📖 Book Report: RHS How to Garden When You're New to Gardening  
   
 ### 💡 Overview  

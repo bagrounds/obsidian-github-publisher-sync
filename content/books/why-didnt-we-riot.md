@@ -6,10 +6,13 @@ title: "✍🏿🇺🇸💔 Why Didn't We Riot?: A Black Man In Trumpland"
 URL: https://bagrounds.org/books/why-didnt-we-riot
 Author: 
 tags: 
+affiliate link: https://amzn.to/43qLFDU
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ✍🏿🇺🇸💔 Why Didn't We Riot?: A Black Man In Trumpland  
 by Issac J. Bailey  
+[🛒 Why Didn't We Riot?: A Black Man In Trumpland. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/43qLFDU)  
+  
 ## 📖 Book Report: Why Didn't We Riot? A Black Man in Trumpland  
   
 ### ✍️ Author and Publication  

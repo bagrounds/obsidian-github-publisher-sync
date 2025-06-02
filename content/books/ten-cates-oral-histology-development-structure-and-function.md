@@ -4,9 +4,12 @@ aliases:
   - "🦷👶 Ten Cate's Oral Histology: Development, Structure, and Function"
 URL: https://bagrounds.org/books/ten-cates-oral-histology-development-structure-and-function
 share: true
+affiliate link: https://amzn.to/4mEPBZf
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🦷👶 Ten Cate's Oral Histology: Development, Structure, and Function  
+[🛒 Ten Cate's Oral Histology: Development, Structure, and Function. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4mEPBZf)  
+  
 ## 📖 Book Report: Ten Cate's Oral Histology: Development, Structure, and Function  
   
 ### 🔬 Overview  

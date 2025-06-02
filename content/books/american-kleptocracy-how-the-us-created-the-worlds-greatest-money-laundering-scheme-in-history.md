@@ -4,9 +4,12 @@ aliases:
   - "🇺🇸💸🧺🌍 American Kleptocracy: How the U.S. Created the World's Greatest Money Laundering Scheme in History"
 URL: https://bagrounds.org/books/american-kleptocracy-how-the-u-s-created-the-worlds-greatest-money-laundering-scheme-in-history
 share: true
+affiliate link: https://amzn.to/3SvVOsw
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🇺🇸💸🧺🌍 American Kleptocracy: How the U.S. Created the World's Greatest Money Laundering Scheme in History  
+[🛒 American Kleptocracy: How the U.S. Created the World's Greatest Money Laundering Scheme in History. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3SvVOsw)  
+  
 ## 📚 Book Report: American Kleptocracy: How the U.S. Created the World's Greatest Money Laundering Scheme in History  
   
 Casey Michel's *American Kleptocracy* 💥 is an explosive investigation into how the United States 🇺🇸 transformed into a premier destination for global illicit finance. Challenging the traditional image of offshore havens as small island nations, Michel demonstrates how various U.S. states, like Delaware and Nevada, have become central to money laundering 💸 and financial secrecy 🤫.  

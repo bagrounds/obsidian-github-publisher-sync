@@ -4,9 +4,12 @@ aliases:
   - "👶🤔 Patterns of Attachment: A Psychological Study of the Strange Situation"
 URL: https://bagrounds.org/books/patterns-of-attachment-a-psychological-study-of-the-strange-situation
 share: true
+affiliate link: https://amzn.to/4kSo9Wh
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 👶🤔 Patterns of Attachment: A Psychological Study of the Strange Situation  
+[🛒 Patterns of Attachment: A Psychological Study of the Strange Situation. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4kSo9Wh)  
+  
 ## 📚 Book Report: Patterns of Attachment  
   
 ### ℹ️ Overview  

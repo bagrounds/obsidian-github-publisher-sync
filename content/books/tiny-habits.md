@@ -1,13 +1,15 @@
 ---
 aliases:
-  - Tiny Habits
+  - "🤏♻️ Tiny Habits: The Small Changes That Change Everything"
 Author: "[[BJ Fog]]"
 share: true
-title: Tiny Habits
+title: "🤏♻️ Tiny Habits: The Small Changes That Change Everything"
+affiliate link: https://amzn.to/4kPIknK
 ---
 [Home](../index.md) > [Books](./index.md)  
-# Tiny Habits  
-_The Small Changes That Change Everything_  
+# 🤏♻️ Tiny Habits: The Small Changes That Change Everything  
+[🛒 Tiny Habits: The Small Changes That Change Everything. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4kPIknK)  
+  
 ## 🤖 AI Summary  
 ### TLDR  
 Tiny Habits: Achieve big changes by starting with incredibly small, easy-to-do habits and anchoring them to existing routines, focusing on positive emotions as a reward rather than willpower.  

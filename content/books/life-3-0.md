@@ -6,9 +6,12 @@ title: "🧬👥💾 Life 3.0: Being Human in the Age of Artificial Intelligence
 URL: https://bagrounds.org/books/life-3-0-being-human-in-the-age-of-artificial-intelligence
 Author: 
 tags: 
+affiliate link: https://amzn.to/4kmDGNV
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧬👥💾 Life 3.0: Being Human in the Age of Artificial Intelligence  
+[🛒 Life 3.0: Being Human in the Age of Artificial Intelligence. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4kmDGNV)  
+  
 ## 🤖 Book Report: Life 3.0: Being Human in the Age of Artificial Intelligence  
   
 ### ✍️ Author and Publication  

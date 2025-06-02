@@ -6,9 +6,11 @@ title: "🤔🔌 Understanding Power: The Indispensable Chomsky"
 URL: https://bagrounds.org/books/understanding-power-the-indispensable-chomsky
 Author: 
 tags: 
+affiliate link: https://amzn.to/3HnFo34
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🤔🔌 Understanding Power: The Indispensable Chomsky  
+[🛒 Understanding Power: The Indispensable Chomsky. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3HnFo34)  
   
 ## 📖 Book Report: *Understanding Power: The Indispensable Chomsky*  
   

@@ -6,9 +6,12 @@ title: "🔌👋 The Power of Showing Up: How Parental Presence Shapes Who Our K
 URL: https://bagrounds.org/books/the-power-of-showing-up
 Author: 
 tags: 
+affiliate link: https://amzn.to/4kqoFea
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🔌👋 The Power of Showing Up: How Parental Presence Shapes Who Our Kids Become and How Their Brains Get Wired  
+[🛒 The Power of Showing Up: How Parental Presence Shapes Who Our Kids Become and How Their Brains Get Wired. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4kqoFea)  
+  
 ## 📚 Book Report: The Power of Showing Up  
   
 ### ✍️ Authors  

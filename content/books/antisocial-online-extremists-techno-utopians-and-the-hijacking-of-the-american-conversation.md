@@ -6,9 +6,12 @@ title: "🙅🗣️💻 Antisocial: Online Extremists, Techno-Utopians, and the 
 URL: https://bagrounds.org/books/antisocial-online-extremists-techno-utopians-and-the-hijacking-of-the-american-conversation
 Author: 
 tags: 
+affiliate link: https://amzn.to/4kPcass
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🙅🗣️💻 Antisocial: Online Extremists, Techno-Utopians, and the Hijacking of the American Conversation  
+[🛒 Antisocial: Online Extremists, Techno-Utopians, and the Hijacking of the American Conversation. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4kPcass)  
+  
 ## 📚 Book Report: 😈 Antisocial by Andrew Marantz  
   
 ### 📝 Summary  

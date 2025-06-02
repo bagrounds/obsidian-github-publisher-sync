@@ -1,14 +1,17 @@
 ---
 share: true
 aliases:
-  - Adaptive Control
-title: Adaptive Control
+  - 🧬🕹️ Adaptive Control
+title: 🧬🕹️ Adaptive Control
 URL: https://bagrounds.org/books/adaptive-control
 Author: 
 tags: 
+affiliate link: https://amzn.to/4jrDdsB
 ---
 [Home](../index.md) > [Books](./index.md)  
-# Adaptive Control  
+# 🧬🕹️ Adaptive Control  
+[🛒 Adaptive Control. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4jrDdsB)  
+  
 ## 🤖 AI Summary  
 ### 📖 Adaptive Control by Karl J. Åström and Björn Wittenmark  
   

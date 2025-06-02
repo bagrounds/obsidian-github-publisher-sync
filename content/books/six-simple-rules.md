@@ -6,9 +6,12 @@ title: "🧶✔️ Six Simple Rules: How to Manage Complexity without Getting Co
 URL: https://bagrounds.org/books/six-simple-rules
 Author: 
 tags: 
+affiliate link: https://amzn.to/3HkYkPW
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧶✔️ Six Simple Rules: How to Manage Complexity without Getting Complicated  
+[🛒 Six Simple Rules: How to Manage Complexity without Getting Complicated. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3HkYkPW)  
+  
 ## 📚 Book Report: Six Simple Rules  
   
 ### 💡 Overview  

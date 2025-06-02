@@ -6,9 +6,12 @@ title: "🕊️🤝 Nonviolent Communication: A Language of Life"
 URL: https://bagrounds.org/books/nonviolent-communication
 Author: 
 tags: 
+affiliate link: https://amzn.to/3T980zy
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🕊️🤝 Nonviolent Communication: A Language of Life  
+[🛒 Nonviolent Communication: A Language of Life. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3T980zy)  
+  
 ## 📚 Book Report: Nonviolent Communication: A Language of Life  
   
 ### ✍️ Author  

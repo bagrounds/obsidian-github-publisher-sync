@@ -4,9 +4,12 @@ aliases:
   - "⚡🚫💭 Blink: The Power of Thinking Without Thinking"
 URL: https://bagrounds.org/books/blink-the-power-of-thinking-without-thinking
 share: true
+affiliate link: https://www.amazon.com/dp/0316172324/ref=cm_sw_r_as_gl_apa_gl_i_AJ7713PB88WV7P3BX5V8?linkCode=ml1&tag=bagrounds-20
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ⚡🚫💭 Blink: The Power of Thinking Without Thinking  
+[🛒 Blink: The Power of Thinking Without Thinking. As an Amazon Associate I earn from qualifying purchases.](https://www.amazon.com/dp/0316172324/ref=cm_sw_r_as_gl_apa_gl_i_AJ7713PB88WV7P3BX5V8?linkCode=ml1&tag=bagrounds-20)  
+  
 ## 📚 Book Report: Blink: The Power of Thinking Without Thinking by Malcolm Gladwell  
   
 ### 📝 Introduction  

@@ -8,8 +8,9 @@ affiliate link: https://amzn.to/3ZHtmry
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧘🟰🕊️ Discipline Equals Freedom: Field Manual  
-## 📖 Book Report: ⛓️ Discipline Equals 🔓 Freedom: 🪖 Field Manual  
 [🛒 Discipline Equals Freedom: Field Manual. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3ZHtmry)  
+  
+## 📖 Book Report: ⛓️ Discipline Equals 🔓 Freedom: 🪖 Field Manual  
   
 ### ℹ️ Overview  
 * 🧑‍💼 **Author:** Jocko Willink.  

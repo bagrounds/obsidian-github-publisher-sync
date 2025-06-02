@@ -4,9 +4,12 @@ aliases:
   - "📣✍️🎞️ Content Rules: How to Create Killer Blogs, Podcasts, Videos, eBooks, Webinars (and More) That Engage Customers and Ignite Your Business"
 URL: https://bagrounds.org/books/content-rules-how-to-create-killer-blogs-podcasts-videos-ebooks-webinars-and-more-that-engage-customers-and-ignite-your-business
 share: true
+affiliate link: https://amzn.to/3SzFhnv
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 📣✍️🎞️ Content Rules: How to Create Killer Blogs, Podcasts, Videos, eBooks, Webinars (and More) That Engage Customers and Ignite Your Business  
+[🛒 Content Rules: How to Create Killer Blogs, Podcasts, Videos, eBooks, Webinars (and More) That Engage Customers and Ignite Your Business. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3SzFhnv)  
+  
 ## 📚 Book Report: Content Rules  
   
 **✍️ Authors:** Ann Handley & C.C. Chapman  

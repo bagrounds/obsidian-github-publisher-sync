@@ -6,9 +6,12 @@ title: 👣➡️🌍 Wherever You Go, There You Are
 URL: https://bagrounds.org/books/wherever-you-go-there-you-are
 Author: 
 tags: 
+affiliate link: https://amzn.to/3T8Kdje
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 👣➡️🌍 Wherever You Go, There You Are  
+[🛒 Wherever You Go, There You Are. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3T8Kdje)  
+  
 ## 📖 Book Report: Wherever You Go, There You Are  
   
 ### ✍️ Author and Publication  

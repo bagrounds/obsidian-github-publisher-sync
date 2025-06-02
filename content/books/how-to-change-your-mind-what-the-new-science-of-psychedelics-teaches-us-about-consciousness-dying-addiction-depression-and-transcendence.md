@@ -4,9 +4,12 @@ aliases:
   - "🧠🍄 How to Change Your Mind: What the New Science of Psychedelics Teaches Us About Consciousness, Dying, Addiction, Depression, and Transcendence"
 URL: https://bagrounds.org/books/how-to-change-your-mind-what-the-new-science-of-psychedelics-teaches-us-about-consciousness-dying-addiction-depression-and-transcendence
 share: true
+affiliate link: https://amzn.to/4kFyVyO
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧠🍄 How to Change Your Mind: What the New Science of Psychedelics Teaches Us About Consciousness, Dying, Addiction, Depression, and Transcendence  
+[🛒 How to Change Your Mind: What the New Science of Psychedelics Teaches Us About Consciousness, Dying, Addiction, Depression, and Transcendence. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4kFyVyO)  
+  
 ## 📖 Book Report: How to Change Your Mind  
   
 ## 🧠 Summary and Key Themes  

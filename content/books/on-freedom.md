@@ -1,14 +1,17 @@
 ---
 share: true
 aliases:
-  - On Freedom
-title: On Freedom
+  - ✍️🗽 On Freedom
+title: ✍️🗽 On Freedom
 URL: https://bagrounds.org/books/on-freedom
 Author: 
 tags: 
+affiliate link: https://amzn.to/4knlP9H
 ---
 [Home](../index.md) > [Books](./index.md)  
-# On Freedom  
+# ✍️🗽 On Freedom  
+[🛒 On Freedom. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4knlP9H)  
+  
 ## 🤖 AI Summary  
 ### TL;DR ⏳  
 📜 Timothy Snyder's *On Freedom* argues that the common understanding of 🚫⛓️ freedom as merely the absence of external constraints ("freedom from") is insufficient and that true freedom is a ✨➕ positive project ("freedom to") requiring 👑 sovereignty, 🔮 unpredictability, ✈️ mobility, ✅ factuality, and 🤝 solidarity to enable individuals and societies to thrive.  

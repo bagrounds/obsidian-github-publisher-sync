@@ -4,9 +4,11 @@ aliases:
   - "🤝😇💰 Trust: The Social Virtues and the Creation of Prosperity"
 URL: https://bagrounds.org/books/trust-the-social-virtues-and-the-creation-of-prosperity
 share: true
+affiliate link: https://amzn.to/4kLuFOm
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🤝😇💰 Trust: The Social Virtues and the Creation of Prosperity  
+[🛒 Trust: The Social Virtues and the Creation of Prosperity. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4kLuFOm)  
   
 ## 📖 Book Report: 🤝 Trust: The Social Virtues and the Creation of Prosperity  
   

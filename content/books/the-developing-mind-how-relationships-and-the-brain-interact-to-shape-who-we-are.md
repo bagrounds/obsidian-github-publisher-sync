@@ -4,9 +4,12 @@ aliases:
   - "🧠🧑‍🤝‍🧑 The Developing Mind: How Relationships and the Brain Interact to Shape Who We Are"
 URL: https://bagrounds.org/books/the-developing-mind-how-relationships-and-the-brain-interact-to-shape-who-we-are
 share: true
+affiliate link: https://amzn.to/3FFXOeQ
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧠🧑‍🤝‍🧑 The Developing Mind: How Relationships and the Brain Interact to Shape Who We Are  
+[🛒 The Developing Mind: How Relationships and the Brain Interact to Shape Who We Are. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3FFXOeQ)  
+  
 ## 🧠 Book Report: The Developing Mind (Third Edition)  
   
 ### 📖 Overview  

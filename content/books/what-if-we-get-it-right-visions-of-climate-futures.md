@@ -4,9 +4,12 @@ aliases:
   - "🌡️✅🌎 What If We Get It Right?: Visions of Climate Futures"
 URL: https://bagrounds.org/books/what-if-we-get-it-right-visions-of-climate-futures
 share: true
+affiliate link: https://amzn.to/3T4xv5a
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🌡️✅🌎 What If We Get It Right?: Visions of Climate Futures  
+[🛒 What If We Get It Right?: Visions of Climate Futures. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3T4xv5a)  
+  
 ## 📚 Book Report: What If We Get It Right?: Visions of Climate Futures by Ayana Elizabeth Johnson  
   
 **🧑‍💻 Author:** 👩‍⚕️ Dr. Ayana Elizabeth Johnson, a marine biologist, policy expert, writer, and co-founder of 🏢 Urban Ocean Lab and The 🤝 All We Can Save Project.  

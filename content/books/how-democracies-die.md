@@ -6,9 +6,12 @@ title: 🗳️🏛️☠️ How Democracies Die
 URL: https://bagrounds.org/books/how-democracies-die
 Author: 
 tags: 
+affiliate link: https://amzn.to/4knY1mj
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🗳️🏛️☠️ How Democracies Die  
+[🛒 How Democracies Die. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4knY1mj)  
+  
 ## 🤖 AI Summary  
 ### 🤔 TL;DR: How Democracies Die  
   

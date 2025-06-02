@@ -4,9 +4,12 @@ aliases:
   - "🧐🕹️🔁 Psycho-Cybernetics: A New Way to Get More Living Out of Life"
 URL: https://bagrounds.org/books/psycho-cybernetics-a-new-way-to-get-more-living-out-of-life
 share: true
+affiliate link: https://amzn.to/4dGk7h6
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧐🕹️🔁 Psycho-Cybernetics: A New Way to Get More Living Out of Life  
+[🛒 Psycho-Cybernetics: A New Way to Get More Living Out of Life. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4dGk7h6)  
+  
 ## 📚 Book Report: *Psycho-Cybernetics: A New Way to Get More Living Out of Life*  
   
 ### 💡 Overview  

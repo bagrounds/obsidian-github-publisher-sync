@@ -6,9 +6,12 @@ title: "👨‍🚀 The Self-Driven Child: The 🔬 Science and 🤔 Sense of Gi
 URL: https://bagrounds.org/books/the-self-driven-child
 Author: 
 tags: 
+affiliate link: https://amzn.to/43pDMhR
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 👨‍🚀 The Self-Driven Child: The 🔬 Science and 🤔 Sense of Giving Your Kids More 🕹️ Control Over Their Lives  
+[🛒 The Self-Driven Child: The Science and Sense of Giving Your Kids More Control Over Their Lives. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/43pDMhR)  
+  
 ## 📝🐒 Human Notes  
 - 😫 Stressors: 🥜 NUTS  
     - 🆕 Novelty  

@@ -4,9 +4,12 @@ aliases:
   - "🦁🫀 Daring Greatly: How the Courage to Be Vulnerable Transforms the Way We Live, Love, Parent, and Lead"
 URL: https://bagrounds.org/books/daring-greatly-how-the-courage-to-be-vulnerable-transforms-the-way-we-live-love-parent-and-lead
 share: true
+affiliate link: https://www.amazon.com/dp/1592407331/ref=cm_sw_r_as_gl_apa_gl_i_7A0TSPK95HDN2TK8PTZC?linkCode=ml1&tag=bagrounds-20
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🦁🫀 Daring Greatly: How the Courage to Be Vulnerable Transforms the Way We Live, Love, Parent, and Lead  
+[🛒 Daring Greatly: How the Courage to Be Vulnerable Transforms the Way We Live, Love, Parent, and Lead. As an Amazon Associate I earn from qualifying purchases.](https://www.amazon.com/dp/1592407331/ref=cm_sw_r_as_gl_apa_gl_i_7A0TSPK95HDN2TK8PTZC?linkCode=ml1&tag=bagrounds-20)  
+  
 ## 📖 Book Report: Daring Greatly by Brené Brown  
   
 ### ℹ️ Overview  

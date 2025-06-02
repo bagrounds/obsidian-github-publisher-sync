@@ -4,9 +4,12 @@ aliases:
   - "🍩🌍 Doughnut Economics: Seven Ways to Think Like a 21st-Century Economist"
 URL: https://bagrounds.org/books/doughnut-economics-seven-ways-to-think-like-a-21st-century-economist
 share: true
+affiliate link: https://amzn.to/3FkjPQv
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🍩🌍 Doughnut Economics: Seven Ways to Think Like a 21st-Century Economist  
+[🛒 Doughnut Economics: Seven Ways to Think Like a 21st-Century Economist. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3FkjPQv)  
+  
 ## 📖 Book Report: 🍩 Doughnut Economics: Seven Ways to Think Like a 21st-Century Economist by Kate Raworth  
   
 **👩‍💼 Author:** Kate Raworth, an English economist working at the 🏫 University of Oxford and the 🏛️ University of Cambridge.  

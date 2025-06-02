@@ -1,15 +1,15 @@
 ---
 share: true
 aliases:
-  - "Resonate: Present Visual Stories that Transform Audiences"
-title: "Resonate: Present Visual Stories that Transform Audiences"
+  - "🔊🎞️🌱🤯 Resonate: Present Visual Stories that Transform Audiences"
+title: "🔊🎞️🌱🤯 Resonate: Present Visual Stories that Transform Audiences"
 URL: https://bagrounds.org/books/resonate
 Author: 
 tags: 
 affiliate link: https://amzn.to/45zltYW
 ---
 [Home](../index.md) > [Books](./index.md)  
-# Resonate: Present Visual Stories that Transform Audiences  
+# 🔊🎞️🌱🤯 Resonate: Present Visual Stories that Transform Audiences  
 [🛒 Resonate: Present Visual Stories that Transform Audiences. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/45zltYW)  
   
 ## 🤖 AI Summary  

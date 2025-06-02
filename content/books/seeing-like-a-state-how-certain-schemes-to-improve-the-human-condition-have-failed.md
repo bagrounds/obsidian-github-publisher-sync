@@ -4,9 +4,12 @@ share: true
 aliases:
   - "📖🏛️📉 Seeing Like a State: How Certain Schemes to Improve the Human Condition Have Failed"
 URL: https://bagrounds.org/books/seeing-like-a-state-how-certain-schemes-to-improve-the-human-condition-have-failed
+affiliate link: https://amzn.to/4dOZbVk
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 📖🏛️📉 Seeing Like a State: How Certain Schemes to Improve the Human Condition Have Failed  
+[🛒 Seeing Like a State: How Certain Schemes to Improve the Human Condition Have Failed. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4dOZbVk)  
+  
 ## 📚 Book Report: *Seeing Like a State* by James C. Scott  
   
 ### 🎯 Core Argument  

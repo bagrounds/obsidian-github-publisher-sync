@@ -4,9 +4,12 @@ aliases:
   - "🏛️⚙️ Bureaucracy: What Government Agencies Do And Why They Do It"
 URL: https://bagrounds.org/books/bureaucracy-what-government-agencies-do-and-why-they-do-it
 share: true
+affiliate link: https://amzn.to/44YROZ4
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🏛️⚙️ Bureaucracy: What Government Agencies Do And Why They Do It  
+[🛒 Bureaucracy: What Government Agencies Do And Why They Do It. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/44YROZ4)  
+  
 ## 📖 Book Report: Bureaucracy: What Government Agencies Do And Why They Do It  
   
 ### 🧑‍🏫 Author and Publication  

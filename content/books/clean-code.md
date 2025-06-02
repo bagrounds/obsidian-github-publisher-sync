@@ -6,9 +6,12 @@ title: "🧼💾 Clean Code: A Handbook of Agile Software Craftsmanship"
 URL: https://bagrounds.org/books/clean-code
 Author: 
 tags: 
+affiliate link: https://amzn.to/3ZHMwO2
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧼💾 Clean Code: A Handbook of Agile Software Craftsmanship  
+[🛒 Clean Code: A Handbook of Agile Software Craftsmanship. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3ZHMwO2)  
+  
 ## 📖 Book Report: Clean Code: A Handbook of Agile Software Craftsmanship  
   
 ### 📌 Overview  

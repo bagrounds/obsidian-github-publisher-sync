@@ -6,10 +6,12 @@ title: "🇮🇹🇩🇪🇱🇾🇷🇺🇺🇸 Strongmen: Mussolini to the Pre
 URL: https://bagrounds.org/books/strongmen
 Author: 
 tags: 
+affiliate link: https://amzn.to/43Mp17S
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🇮🇹🇩🇪🇱🇾🇷🇺🇺🇸 Strongmen: Mussolini to the Present  
 by Ruth Ben-Ghiat  
+[🛒 Strongmen: Mussolini to the Present. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/43Mp17S)  
   
 ## 🗣️ Quotes  
 > Every strongman targets universities with informers who report on students, faculty, and staff.  

@@ -4,9 +4,12 @@ aliases:
   - "🧠🧘🏼‍♀️ Neuro-Discipline: Everyday Neuroscience for Self-Discipline, Focus, and Defeating Your Brain's Impulsive and Distracted Nature"
 URL: https://bagrounds.org/books/neuro-discipline-everyday-neuroscience-for-self-discipline-focus-and-defeating-your-brains-impulsive-and-distracted-nature
 share: true
+affiliate link: https://amzn.to/4mKaS3G
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧠🧘🏼‍♀️ Neuro-Discipline: Everyday Neuroscience for Self-Discipline, Focus, and Defeating Your Brain's Impulsive and Distracted Nature  
+[🛒 Neuro-Discipline: Everyday Neuroscience for Self-Discipline, Focus, and Defeating Your Brain's Impulsive and Distracted Nature. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4mKaS3G)  
+  
 ## 🧠 Book Report: Neuro-Discipline  
   
 ### 🚀 Introduction  

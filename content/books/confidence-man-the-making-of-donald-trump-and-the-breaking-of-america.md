@@ -4,9 +4,12 @@ aliases:
   - "👹🐍🛢️🇺🇸 Confidence Man: The Making of Donald Trump and the Breaking of America"
 URL: https://bagrounds.org/books/confidence-man-the-making-of-donald-trump-and-the-breaking-of-america
 share: true
+affiliate link: https://amzn.to/3FBYOAM
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 👹🐍🛢️🇺🇸 Confidence Man: The Making of Donald Trump and the Breaking of America  
+[🛒 Confidence Man: The Making of Donald Trump and the Breaking of America. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3FBYOAM)  
+  
 ## 📖 Book Report: Confidence Man: The Making of Donald Trump and the Breaking of America by Maggie Haberman  
   
 ### ℹ️ Overview  

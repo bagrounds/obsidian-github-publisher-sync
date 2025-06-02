@@ -6,9 +6,12 @@ title: "🏭🫡 Manufacturing Consent: The Political Economy of the Mass Media"
 URL: https://bagrounds.org/books/manufacturing-consent
 Author: 
 tags: 
+affiliate link: https://amzn.to/4l791ED
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🏭🫡 Manufacturing Consent: The Political Economy of the Mass Media  
+[🛒 Manufacturing Consent: The Political Economy of the Mass Media. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4l791ED)  
+  
 ## 📚 Book Report: Manufacturing Consent  
   
 ### ℹ️ Book Overview  

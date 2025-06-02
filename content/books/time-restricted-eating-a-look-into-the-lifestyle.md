@@ -4,9 +4,12 @@ aliases:
   - "⏱️🍎 Time Restricted Eating: A Look into the Lifestyle"
 URL: https://bagrounds.org/books/time-restricted-eating-a-look-into-the-lifestyle
 share: true
+affiliate link: https://amzn.to/4jxa8fy
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ⏱️🍎 Time Restricted Eating: A Look into the Lifestyle  
+[🛒 Time Restricted Eating: A Look into the Lifestyle. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4jxa8fy)  
+  
   
 ## 📖 Book Report: Time Restricted Eating: A Look into the Lifestyle  
   

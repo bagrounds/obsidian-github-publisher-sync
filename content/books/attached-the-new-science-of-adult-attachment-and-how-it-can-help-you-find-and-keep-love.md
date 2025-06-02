@@ -1,12 +1,15 @@
 ---
-title: "🧑‍❤️‍🧑🔗 Attached: The New Science of Adult Attachment and How It Can Help You Find - and Keep - Love"
+title: "👩🏼‍❤️‍💋‍👨🏻🔗 Attached: The New Science of Adult Attachment and How It Can Help You Find - and Keep - Love"
 aliases:
-  - "🧑‍❤️‍🧑🔗 Attached: The New Science of Adult Attachment and How It Can Help You Find - and Keep - Love"
+  - "👩🏼‍❤️‍💋‍👨🏻🔗 Attached: The New Science of Adult Attachment and How It Can Help You Find - and Keep - Love"
 URL: https://bagrounds.org/books/attached-the-new-science-of-adult-attachment-and-how-it-can-help-you-find-and-keep-love
 share: true
+affiliate link: https://amzn.to/43GaUkd
 ---
 [Home](../index.md) > [Books](./index.md)  
-# 🧑‍❤️‍🧑🔗 Attached: The New Science of Adult Attachment and How It Can Help You Find - and Keep - Love  
+# 👩🏼‍❤️‍💋‍👨🏻🔗 Attached: The New Science of Adult Attachment and How It Can Help You Find - and Keep - Love  
+[🛒 Attached: The New Science of Adult Attachment and How It Can Help You Find - and Keep - Love. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/43GaUkd)  
+  
 ## 📚 Book Report: 🔗 Attached by Amir Levine and Rachel S. F. Heller  
   
 ### 💡 Overview  

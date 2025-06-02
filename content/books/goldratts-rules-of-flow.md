@@ -1,16 +1,16 @@
 ---
 share: true
 aliases:
-  - Goldratt's Rules of Flow
-title: Goldratt's Rules of Flow
+  - 📏🌊 Goldratt's Rules of Flow
+title: " 📏🌊 Goldratt's Rules of Flow"
 URL: https://bagrounds.org/books/goldratts-rules-of-flow
 Author: 
 tags: 
-affiliate link: https://amzn.to/4kR9KJX
+affiliate link: https://amzn.to/3Z7Ba5N
 ---
 [Home](../index.md) > [Books](./index.md)  
-# Goldratt's Rules of Flow  
-[🛒 Goldratt's Rules of Flow. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4kR9KJX)  
+# 📏🌊 Goldratt's Rules of Flow  
+[🛒 Goldratt's Rules of Flow. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3Z7Ba5N)  
   
 ## 🤖 AI Summary  
 ### 📖 TL;DR: Goldratt's Rules of Flow in One Sentence  

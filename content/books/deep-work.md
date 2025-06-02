@@ -1,14 +1,17 @@
 ---
 share: true
 aliases:
-  - 🤿💼 Deep Work
-title: 🤿💼 Deep Work
+  - "🤿💼 Deep Work: Rules for Focused Success in a Distracted World"
+title: "🤿💼 Deep Work: Rules for Focused Success in a Distracted World"
 URL: https://bagrounds.org/books/deep-work
 Author: 
 tags: 
+affiliate link: https://amzn.to/3HCgWuP
 ---
 [Home](../index.md) > [Books](./index.md)  
-# 🤿💼 Deep Work  
+# 🤿💼 Deep Work: Rules for Focused Success in a Distracted World  
+[🛒 Deep Work: Rules for Focused Success in a Distracted World. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3HCgWuP)  
+  
 ## 🤖 AI Summary  
 ### Deep Work: Rules for Focused Success in a Distracted World 🧠  
 **TL;DR:** To thrive in a knowledge-based economy, cultivate the ability to perform deep work—focused, distraction-free concentration—through deliberate practice and structured routines.  

@@ -6,9 +6,12 @@ URL: https://bagrounds.org/books/employee-benefits-law-erisa-and-beyond
 share: true
 tags:
   - law
+affiliate link: https://amzn.to/3ZFRdI3
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧑‍💼💰⚖️ Employee Benefits Law: ERISA and Beyond  
+[🛒 Employee Benefits Law: ERISA and Beyond. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3ZFRdI3)  
+  
 ## 📚 Book Report: Employee Benefits Law: ERISA and Beyond  
   
 📖 Employee Benefits Law: ERISA and Beyond, authored by Jeffrey D. Mamorsky, serves as a comprehensive guide to the intricate legal landscape governing employee benefits in the United States. 🧑‍⚖️ Primarily aimed at legal professionals, accountants, consultants, and other advisors, the book delves into the complexities of the Employee Retirement Income Security Act of 1974 (ERISA) and related statutes.  

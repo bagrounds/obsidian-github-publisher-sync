@@ -26,7 +26,7 @@ Here are some major subcategories of Adaptive Control:
   
 Here are some influential and accessible books on Adaptive Control:  
   
-1.  **"[adaptive-control](../books/adaptive-control.md)" by Karl J. Åström and Björn Wittenmark:** 📚 This is a classic and comprehensive text that covers the theoretical foundations and practical aspects of adaptive control. It's a go-to resource for researchers and practitioners. 🌟  
+1.  **[🧬🕹️ Adaptive Control](../books/adaptive-control.md) by Karl J. Åström and Björn Wittenmark:** 📚 This is a classic and comprehensive text that covers the theoretical foundations and practical aspects of adaptive control. It's a go-to resource for researchers and practitioners. 🌟  
 2.  **"Adaptive Control" by Gang Tao:** 📘 This book provides a clear and concise introduction to the main concepts and techniques of adaptive control, with a focus on practical applications. It is a good option for people who are new to the field. 🎓  
 3.  **"Adaptive Control Systems: Techniques and Applications" by Chih-Tsong Chen:** 📖 This book covers a wide range of adaptive control techniques and their applications in various engineering fields. It offers a balanced treatment of theory and practice. 🛠️  
 4.  **"Reinforcement Learning, second edition" by Richard S. Sutton and Andrew G. Barto:** 🤖 While not exclusively about adaptive control, this book is essential for understanding reinforcement learning-based adaptive control. It provides a comprehensive introduction to the fundamental concepts and algorithms of reinforcement learning. 🧠  

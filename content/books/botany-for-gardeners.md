@@ -4,9 +4,12 @@ aliases:
   - 🌿🧑‍🌾 Botany for Gardeners
 URL: https://bagrounds.org/books/botany-for-gardeners
 share: true
+affiliate link: https://amzn.to/4jt9qQg
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🌿🧑‍🌾 Botany for Gardeners  
+[🛒 Botany for Gardeners. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4jt9qQg)  
+  
 ## 📖 Book Report: Botany for Gardeners  
   
 ### ℹ️ Overview  

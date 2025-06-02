@@ -6,9 +6,12 @@ title: "🌪️🧘🏼‍♀️ Full Catastrophe Living: Using the Wisdom of Yo
 URL: https://bagrounds.org/books/full-catastrophe-living
 Author: 
 tags: 
+affiliate link: https://amzn.to/4mJU6Sg
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🌪️🧘🏼‍♀️ Full Catastrophe Living: Using the Wisdom of Your Body and Mind to Face Stress, Pain, and Illness  
+[🛒 Full Catastrophe Living: Using the Wisdom of Your Body and Mind to Face Stress, Pain, and Illness. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4mJU6Sg)  
+  
 ## 📝🐒 Human Notes  
 - 😴🧘🏼‍♀️ Let go like you sleep.  
 - 🫁 Come back to the breath.  

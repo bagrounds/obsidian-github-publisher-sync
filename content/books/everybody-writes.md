@@ -6,9 +6,12 @@ title: "🌍✍🏿 Everybody Writes: Your Go-To Guide to Creating Ridiculously 
 URL: https://bagrounds.org/books/everybody-writes-your-go-to-guide-to-creating-ridiculously-good-content
 Author: 
 tags: 
+affiliate link: https://amzn.to/3Ze8194
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🌍✍🏿 Everybody Writes: Your Go-To Guide to Creating Ridiculously Good Content  
+[🛒 Everybody Writes: Your Go-To Guide to Creating Ridiculously Good Content. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3Ze8194)  
+  
 ## 📚 Book Report: Everybody Writes by Ann Handley  
   
 ### 📝 Overview  

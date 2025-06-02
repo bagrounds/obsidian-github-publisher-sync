@@ -4,6 +4,7 @@ aliases:
   - "⚙️🏢 Hack Your Bureaucracy: Get Things Done No Matter What Your Role on Any Team"
 URL: https://bagrounds.org/books/hack-your-bureaucracy-get-things-done-no-matter-what-your-role-on-any-team
 share: true
+affiliate link: https://amzn.to/3T3FwHv
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ⚙️🏢 Hack Your Bureaucracy: Get Things Done No Matter What Your Role on Any Team  

@@ -4,9 +4,12 @@ aliases:
   - "⚕️💸 Health Insurance in America: A Consumer's Guide"
 URL: https://bagrounds.org/books/health-insurance-in-america-a-consumers-guide
 share: true
+affiliate link: https://amzn.to/3Swd0hy
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ⚕️💸 Health Insurance in America: A Consumer's Guide  
+[🛒 Health Insurance in America: A Consumer's Guide. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3Swd0hy)  
+  
 ## 📖 Book Report: 🏥 Health Insurance in America: A Consumer's Guide  
   
 ### ℹ️ Overview  

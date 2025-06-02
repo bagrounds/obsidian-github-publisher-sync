@@ -4,9 +4,12 @@ aliases:
   - "😫👩‍👧‍👦 Screaming on the Inside: The Unsustainability of American Motherhood"
 URL: https://bagrounds.org/books/screaming-on-the-inside-the-unsustainability-of-american-motherhood
 share: true
+affiliate link: https://amzn.to/43HjoI1
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 😫👩‍👧‍👦 Screaming on the Inside: The Unsustainability of American Motherhood  
+[🛒 Screaming on the Inside: The Unsustainability of American Motherhood. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/43HjoI1)  
+  
 ## 📚 Book Report: 😫 Screaming on the Inside: The Unsustainability of American Motherhood  
   
 ### ℹ️ Overview  

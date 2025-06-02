@@ -4,9 +4,12 @@ aliases:
   - "😴📈 Rest: Why You Get More Done When You Work Less"
 URL: https://bagrounds.org/books/rest-why-you-get-more-done-when-you-work-less
 share: true
+affiliate link: https://amzn.to/4mH6zWM
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 😴📈 Rest: Why You Get More Done When You Work Less  
+[🛒 Rest: Why You Get More Done When You Work Less. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4mH6zWM)  
+  
   
 ## 📚 Book Report: 😴 Rest by Alex Soojung-Kim Pang  
   

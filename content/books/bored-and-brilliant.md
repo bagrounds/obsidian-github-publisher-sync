@@ -6,9 +6,12 @@ title: "🥱🤓 Bored and Brilliant: How Spacing Out Can Unlock Your Most Produ
 URL: https://bagrounds.org/books/bored-and-brilliant
 Author: 
 tags: 
+affiliate link: https://amzn.to/3FA2N0J
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🥱🤓 Bored and Brilliant: How Spacing Out Can Unlock Your Most Productive and Creative Self  
+[🛒 Bored and Brilliant: How Spacing Out Can Unlock Your Most Productive and Creative Self. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3FA2N0J)  
+  
 ## 📖 Book Report: 🤯 Bored and Brilliant  
   
 ### ✍️ Introduction  

@@ -4,9 +4,12 @@ aliases:
   - "🍀⁉️ Fluke: Chance, Chaos, and Why Everything We Do Matters"
 URL: https://bagrounds.org/books/fluke-chance-chaos-and-why-everything-we-do-matters
 share: true
+affiliate link: https://amzn.to/4mFRDYY
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🍀⁉️ Fluke: Chance, Chaos, and Why Everything We Do Matters  
+[🛒 Fluke: Chance, Chaos, and Why Everything We Do Matters. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4mFRDYY)  
+  
 ## 📚 Book Report: *Fluke: Chance, Chaos, and Why Everything We Do Matters* by Brian Klaas  
   
 ### ℹ️ Introduction and Core Thesis  

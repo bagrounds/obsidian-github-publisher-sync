@@ -76,7 +76,7 @@ Melanie Mitchell is a highly respected computer scientist and complexity researc
 * **Best Tangentially Related Book:** "[Thinking in Systems](./thinking-in-systems.md): A Primer" by Donella H. Meadows. ⚙️  
 * **Best Diametrically Opposed Books:**  
     * "The Case Against Reality: Why Evolution Hid the Truth from Our Eyes" by Donald D. Hoffman. 👁️‍🗨️  
-    * The Black Swan: The Impact of the Highly Improbable by Nassim Nicholas Taleb – Challenges the predictability of systems and emphasizes rare, disruptive events over emergent order.  
+    * [⚫🦢🎲 The Black Swan: The Impact of the Highly Improbable](./the-black-swan-the-impact-of-the-highly-improbable.md) by Nassim Nicholas Taleb – Challenges the predictability of systems and emphasizes rare, disruptive events over emergent order.  
 * **Best Fiction Books Incorporating Related Ideas:**  
     * "The Three-Body Problem" by Liu Cixin. 🌌  
     * [Snow Crash](./snow-crash.md) by Neal Stephenson – A cyberpunk novel where the interplay of technology, culture, and individuals mirrors complex adaptive systems.  

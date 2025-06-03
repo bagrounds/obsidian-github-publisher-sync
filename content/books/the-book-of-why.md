@@ -60,7 +60,7 @@ tags:
 * **Best Fiction Book That Incorporates Related Ideas:** "Recursion" by Blake Crouch. 🌀 This science fiction thriller explores the consequences of manipulating memory and reality, raising questions about causality and counterfactuals.  
 * **Best More General Book:** "[Factfulness](./factfulness.md): Ten Reasons We're Wrong About the World—And Why Things Are Better Than You Think" by Hans Rosling. 🌍 This book emphasizes the importance of data and evidence-based reasoning, which is a broader context for causal analysis.  
 * **Best More Specific Book:** "Causal Inference in Statistics: A Primer" by Judea Pearl, Madelyn Glymour, and Nicholas P. Jewell. 📖 This book provides a more technical and in-depth treatment of causal inference, suitable for readers with a strong background in statistics.  
-* **Best More Rigorous Book:** "[Elements of Causal Inference: Foundations and Learning Algorithms](./elements-of-causal-inference-foundations-and-learning-algorithms.md)" by Jonas Peters, Dominik Janzing, and Bernhard Schölkopf. 📈 This book is a very technical, mathematically dense text.  
+* **Best More Rigorous Book:** [❓➡️💡🧮 Elements of Causal Inference: Foundations and Learning Algorithms](./elements-of-causal-inference-foundations-and-learning-algorithms.md) by Jonas Peters, Dominik Janzing, and Bernhard Schölkopf. 📈 This book is a very technical, mathematically dense text.  
 * **Best More Accessible Book:** "[Naked Statistics](./naked-statistics.md): Stripping the Dread from the Data" by Charles Wheelan. 📊 This book makes statistics more approachable, and provides a good foundation for understanding the need for causal analysis.  
   
 ## 💬 [Gemini](https://gemini.google.com) Prompt  

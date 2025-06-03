@@ -1,14 +1,17 @@
 ---
 share: true
 aliases:
-  - Continuous Delivery
-title: Continuous Delivery
+  - "🏗️🧪🚀✅ Continuous Delivery: Reliable Software Releases through Build, Test, and Deployment Automation"
+title: "🏗️🧪🚀✅ Continuous Delivery: Reliable Software Releases through Build, Test, and Deployment Automation"
 URL: https://bagrounds.org/books/continuous-delivery
 Author: 
 tags: 
+affiliate link: https://amzn.to/3HmSsG0
 ---
 [Home](../index.md) > [Books](./index.md)  
-# Continuous Delivery  
+# 🏗️🧪🚀✅ Continuous Delivery: Reliable Software Releases through Build, Test, and Deployment Automation  
+[🛒 Continuous Delivery: Reliable Software Releases through Build, Test, and Deployment Automation. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3HmSsG0)  
+  
 ## 🤖 AI Summary  
 ### TL;DR 🚀  
 Continuous Delivery empowers organizations to reliably release high-quality software changes rapidly and sustainably through automated, collaborative practices, minimizing risk and maximizing feedback.  

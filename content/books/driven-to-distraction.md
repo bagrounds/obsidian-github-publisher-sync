@@ -1,14 +1,17 @@
 ---
 share: true
 aliases:
-  - Driven to Distraction
-title: Driven to Distraction
+  - "🏎️🦋🐿️✨ Driven to Distraction: Recognizing and Coping with Attention Deficit Disorder from Childhood Through Adulthood"
+title: "🏎️🦋🐿️✨ Driven to Distraction: Recognizing and Coping with Attention Deficit Disorder from Childhood Through Adulthood"
 URL: https://bagrounds.org/books/driven-to-distraction
 Author: 
 tags: 
+affiliate link: https://amzn.to/3HoR4mj
 ---
 [Home](../index.md) > [Books](./index.md)  
-# Driven to Distraction  
+# 🏎️🦋🐿️✨ Driven to Distraction: Recognizing and Coping with Attention Deficit Disorder from Childhood Through Adulthood  
+[🛒 Driven to Distraction: Recognizing and Coping with Attention Deficit Disorder from Childhood Through Adulthood. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3HoR4mj)  
+  
 ## 🤖 AI Summary  
 ### TL;DR 🤯  
 * 📚 "Driven to Distraction" explains that 🧠 Attention Deficit Hyperactivity Disorder (ADHD) in adults 🧑‍💼 is a 💯 real, 🤔 often misunderstood condition, 💡 offering practical strategies for managing its challenges 💪 through a ➕ strengths-based approach.  

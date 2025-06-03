@@ -33,14 +33,12 @@ affiliate link: https://amzn.to/45EX7gu
   
 ## 📚 Additional Book Recommendations  
   
-Here is a selection of books similar, contrasting, and creatively related to *Fooled by Randomness*:  
-  
 ### 🤝 Similar Books (Exploring Randomness, Uncertainty, and Cognitive Biases)  
   
-* ⚫🦢 **The Black Swan: The Impact of the Highly Improbable by Nassim Nicholas Taleb:** ➡️ The direct successor in the *Incerto* series, this book delves deeper into the concept of Black Swan events and their massive impact on our world.  
-* 🛡️ **Antifragile: Things That Gain from Disorder by Nassim Nicholas Taleb:** ➕ Another book in the *Incerto* series, *Antifragile* explores systems that don't just withstand shocks but actually benefit from volatility and uncertainty.  
-* 🧠 **Thinking, Fast and Slow by Daniel Kahneman:** 🧱 A foundational text in behavioral economics, Kahneman's work explores the two systems of thought that drive our decisions and the cognitive biases that lead to irrationality, directly complementing Taleb's discussion of human reasoning errors.  
-* 😵‍💫 **Predictably Irrational: The Hidden Forces That Shape Our Decisions by Dan Ariely:** 👯 Similar to Kahneman, Ariely examines the irrational ways in which humans make decisions, often against their best interests, providing more examples of how we are "fooled" by factors outside of pure logic.  
+* **[⚫🦢🎲 The Black Swan: The Impact of the Highly Improbable](./the-black-swan-the-impact-of-the-highly-improbable.md) by Nassim Nicholas Taleb:** ➡️ The direct successor in the *Incerto* series, this book delves deeper into the concept of Black Swan events and their massive impact on our world.  
+* **[📉📈🌪️💪 Antifragile: Things That Gain from Disorder](./antifragile-things-that-gain-from-disorder.md) by Nassim Nicholas Taleb:** ➕ Another book in the *Incerto* series, *Antifragile* explores systems that don't just withstand shocks but actually benefit from volatility and uncertainty.  
+* **[🤔🐇🐢 Thinking, Fast and Slow](./thinking-fast-and-slow.md) by Daniel Kahneman:** 🧱 A foundational text in behavioral economics, Kahneman's work explores the two systems of thought that drive our decisions and the cognitive biases that lead to irrationality, directly complementing Taleb's discussion of human reasoning errors.  
+* 😵‍💫 **[Predictably Irrational](./predictably-irrational.md): The Hidden Forces That Shape Our Decisions by Dan Ariely:** 👯 Similar to Kahneman, Ariely examines the irrational ways in which humans make decisions, often against their best interests, providing more examples of how we are "fooled" by factors outside of pure logic.  
 * 🚶‍♂️ **The Drunkard's Walk: How Randomness Rules Our Lives by Leonard Mlodinow:** 🚶‍♀️ This book offers an accessible introduction to the laws of probability and how they influence our lives, echoing many of Taleb's points about the pervasive nature of randomness.  
 * 📜 **Against the Gods: The Remarkable Story of Risk by Peter L. Bernstein:** 🗓️ This book provides a historical perspective on humanity's understanding and management of risk, offering a broader context for Taleb's ideas.  
   
@@ -52,7 +50,7 @@ Here is a selection of books similar, contrasting, and creatively related to *Fo
   
 ### 💡 Creatively Related Books (Exploring Underlying Concepts or Broader Implications)  
   
-* 🦋 **Chaos: Making a New Science by James Gleick:** 🔬 This book introduces chaos theory, a field that explores how seemingly random events can arise from deterministic systems, and how small changes can have large, unpredictable outcomes (the butterfly effect). 🔗 This connects to Taleb's discussion of unpredictability and rare events.  
+* **[🌪️💥🦋🆕 Chaos: Making a New Science](./chaos.md) by James Gleick:** 🔬 This book introduces chaos theory, a field that explores how seemingly random events can arise from deterministic systems, and how small changes can have large, unpredictable outcomes (the butterfly effect). 🔗 This connects to Taleb's discussion of unpredictability and rare events.  
 * 🌐 **Complexity: The Emerging Science at the Edge of Order and Chaos by M. Mitchell Waldrop:** 🤯 This book explores the science of complex systems, which are often characterized by emergent properties and unpredictability, providing a scientific framework for understanding the kinds of environments Taleb describes.  
 * 🔄 **The Structure of Scientific Revolutions by Thomas S. Kuhn:** 🔭 Kuhn's work on paradigm shifts in science relates to Taleb's skepticism about established knowledge and theories, suggesting that scientific understanding is not a linear progression but is subject to discontinuous shifts, similar to the impact of Black Swan events.  
 * 📜 **The Philosophy of Keynes' Economics: Probability, Uncertainty and Convention edited by Jochen Runde and Sohei Mizuhara:** 🏛️ This academic text delves into the philosophical underpinnings of John Maynard Keynes' economic theories, particularly his views on probability and uncertainty, offering a more formal philosophical exploration of themes present in *Fooled by Randomness*.  

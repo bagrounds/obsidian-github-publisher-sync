@@ -80,7 +80,7 @@ affiliate link: https://amzn.to/4jAWjN8
   
 * **[🔮🎨🔬 Superforecasting: The Art and Science of Prediction](./superforecasting-the-art-and-science-of-prediction.md)** by Philip E. Tetlock and Dan Gardner:  
     * 🔗 *Relation:* Explores how to improve judgment and prediction accuracy, empirically identifying traits of successful forecasters. 🤔 Connects to decision-making under uncertainty and overcoming cognitive biases discussed in behavioral economics.  
-* ⚫ **The Black Swan: The Impact of the Highly Improbable** by Nassim Nicholas Taleb:  
+* **[⚫🦢🎲 The Black Swan: The Impact of the Highly Improbable](./the-black-swan-the-impact-of-the-highly-improbable.md)** by Nassim Nicholas Taleb:  
     * 🔗 *Relation:* Focuses on the limits of prediction and the disproportionate role of rare, high-impact events, highlighting cognitive biases that make us blind to them. 👁️ Complements behavioral insights on risk perception.  
 * 🎯 **[Range](./range.md): Why Generalists Triumph in a Specialized World** by David Epstein:  
     * 🔗 *Relation:* Argues for the value of broad experience in complex problem-solving and decision-making, offering a different perspective on expertise and cognitive flexibility than purely focusing on specific biases.  

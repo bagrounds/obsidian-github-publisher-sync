@@ -1,14 +1,17 @@
 ---
 share: true
 aliases:
-  - An Introduction to Causal Inference
-title: An Introduction to Causal Inference
+  - ❓➡️ An Introduction to Causal Inference
+title: ❓➡️ An Introduction to Causal Inference
 URL: https://bagrounds.org/books/an-introduction-to-causal-inference
 Author: 
 tags: 
+affiliate link: https://amzn.to/45BaONo
 ---
 [Home](../index.md) > [Books](./index.md)  
-# An Introduction to Causal Inference  
+# ❓➡️ An Introduction to Causal Inference  
+[🛒 An Introduction to Causal Inference. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/45BaONo)  
+  
 ## 🤖 AI Summary  
 ### 📚 TL;DR: An Introduction to Causal Inference  
 Understanding causality requires moving beyond mere correlation using graphical models and potential outcomes to identify and estimate causal effects from observational and experimental data. 🎯  

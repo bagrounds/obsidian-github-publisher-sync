@@ -1,14 +1,17 @@
 ---
 share: true
 aliases:
-  - Distributed Algorithms
-title: Distributed Algorithms
+  - 🌐🔗🤝💻 Distributed Algorithms
+title: 🌐🔗🤝💻 Distributed Algorithms
 URL: https://bagrounds.org/books/distributed-algorithms
 Author: 
 tags: 
+affiliate link: https://amzn.to/3ZCBPMX
 ---
 [Home](../index.md) > [Books](./index.md)  
-# Distributed Algorithms  
+# 🌐🔗🤝💻 Distributed Algorithms  
+[🛒 Distributed Algorithms. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3ZCBPMX)  
+  
 ## 🤖 AI Summary  
 ### Distributed Algorithms by Nancy Lynch 📚  
 **TL;DR:** 🚀 A comprehensive, formal treatment of distributed algorithms, emphasizing rigorous models and proofs for understanding and designing reliable distributed systems.  

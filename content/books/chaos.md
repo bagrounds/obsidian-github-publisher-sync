@@ -1,14 +1,17 @@
 ---
 share: true
 aliases:
-  - "Chaos: Making a New Science"
-title: "Chaos: Making a New Science"
+  - "🌪️💥🦋🆕 Chaos: Making a New Science"
+title: "🌪️💥🦋🆕 Chaos: Making a New Science"
 URL: https://bagrounds.org/books/chaos
 Author: 
 tags: 
+affiliate link: https://amzn.to/4dGUlt6
 ---
 [Home](../index.md) > [Books](./index.md)  
-# Chaos: Making a New Science  
+# 🌪️💥🦋🆕 Chaos: Making a New Science  
+[🛒 Chaos: Making a New Science. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4dGUlt6)  
+  
 ## 🤖 AI Summary  
 ### TL;DR 🤯  
 * Chaos theory reveals that seemingly random systems possess underlying patterns, sensitive dependence on initial conditions, and fractal structures, fundamentally altering our understanding of predictability and complexity.  

@@ -1,8 +1,8 @@
 ---
 share: true
 aliases:
-  - Judea Pearl, 2012 ACM A.M. Turing Award Lecture «The Mechanization of Causal Inference»
-title: Judea Pearl, 2012 ACM A.M. Turing Award Lecture «The Mechanization of Causal Inference»
+  - ⚙️❓🤖 Judea Pearl, 2012 ACM A.M. Turing Award Lecture «The Mechanization of Causal Inference»
+title: ⚙️❓🤖 Judea Pearl, 2012 ACM A.M. Turing Award Lecture «The Mechanization of Causal Inference»
 URL: https://youtu.be/iNm4nFBFmvo
 Author: 
 Platform: 
@@ -10,7 +10,7 @@ Channel: Association for Computing Machinery (ACM)
 tags: []
 ---
 [Home](../index.md) > [Videos](./index.md)  
-# Judea Pearl, 2012 ACM A.M. Turing Award Lecture «The Mechanization of Causal Inference»  
+# ⚙️❓🤖 Judea Pearl, 2012 ACM A.M. Turing Award Lecture «The Mechanization of Causal Inference»  
 ![Judea Pearl, 2012 ACM A.M. Turing Award Lecture «The Mechanization of Causal Inference»](https://youtu.be/iNm4nFBFmvo)  
   
 ## 🤖 AI Summary  
@@ -48,13 +48,13 @@ Judea Pearl's contributions are foundational in artificial intelligence and stat
   
 ### Additional Recommendations 📚  
 - **Best Alternate Resource on the Same Topic:**  
-  - *"Causality: Models, Reasoning, and Inference"* by Judea Perl provides an in-depth exploration of causal models and their applications.  
+  - [Causality](../books/causality.md): Models, Reasoning, and Inference by Judea Perl provides an in-depth exploration of causal models and their applications.  
   
 - **Best Resource Tangentially Related:**  
-  - *"[Thinking, Fast and Slow](../books/thinking-fast-and-slow.md)"* by Daniel Daniel Kahneman delves into human decision-making processes, offering insights into cognitive biases that affect causal reasoning.  
+  - [🤔🐇🐢 Thinking, Fast and Slow](../books/thinking-fast-and-slow.md) by Daniel Daniel Kahneman delves into human decision-making processes, offering insights into cognitive biases that affect causal reasoning.  
   
 - **Best Resource Diametrically Opposed:**  
-  - *"Fooled by Randomness"* by Nassim Nicholas Taeb challenges the human tendency to infer causality from randomness, emphasizing the role of chance in outcomes.  
+  - [🃏🎲 Fooled by Randomness: The Hidden Role of Chance in Life and in the Markets](../books/fooled-by-randomness-the-hidden-role-of-chance-in-life-and-in-the-markets.md) by Nassim Nicholas Taeb challenges the human tendency to infer causality from randomness, emphasizing the role of chance in outcomes.  
   
 - **Best Fiction Incorporating Related Ideas:**  
   - *"The Circle"* by Dave Eggrs explores themes of data, surveillance, and the implications of interpreting vast amounts of information, touching upon the ethics of inference.  

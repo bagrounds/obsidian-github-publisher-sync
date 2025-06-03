@@ -1,14 +1,16 @@
 ---
 aliases:
-  - A Thousand Brains
-title: A Thousand Brains
+  - "🧠🧠🧠🧠 A Thousand Brains: A New Theory of Intelligence"
+title: "🧠🧠🧠🧠 A Thousand Brains: A New Theory of Intelligence"
 Author: "[[jeff-hawkins]]"
 Medium: "#Audiobook"
 share: true
+affiliate link: https://amzn.to/4jzV3d7
 ---
 [Home](../index.md) > [Books](./index.md)  
-# A Thousand Brains  
-_A New Theory of Intelligence_  
+# 🧠🧠🧠🧠 A Thousand Brains: A New Theory of Intelligence  
+[🛒 A Thousand Brains: A New Theory of Intelligence. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4jzV3d7)  
+  
   
 ## 🤖 AI Summary  
 **Summary of *A Thousand Brains***    

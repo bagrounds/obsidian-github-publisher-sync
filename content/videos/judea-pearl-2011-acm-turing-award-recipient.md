@@ -66,7 +66,7 @@ Pearl's introduction of Bayesian networks and the formalization of causal models
   - *"Bayesian Networks and Decision Graphs"* by Finn V. Jensen offers a focused examination of Bayesian networks and their applications.  
   
 - **Best Resource More Rigorous:**  
-  - *"[Elements of Causal Inference: Foundations and Learning Algorithms](../books/elements-of-causal-inference-foundations-and-learning-algorithms.md)"* by Jonas Peters, Dominik Janzing, and Bernhard Schölkopf presents a mathematically rigorous treatment of causal inference.  
+  - [❓➡️💡🧮 Elements of Causal Inference: Foundations and Learning Algorithms](../books/elements-of-causal-inference-foundations-and-learning-algorithms.md) by Jonas Peters, Dominik Janzing, and Bernhard Schölkopf presents a mathematically rigorous treatment of causal inference.  
   
 - **Best Resource More Accessible:**  
   - *"[The Book of Why](../books/the-book-of-why.md): The New Science of Cause and Effect"* by Judea Pearl and Dana Mackenzie introduces causal thinking to a general audience without heavy technical jargon.  

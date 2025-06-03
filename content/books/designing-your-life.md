@@ -1,14 +1,17 @@
 ---
 share: true
 aliases:
-  - Designing Your Life
-title: Designing Your Life
+  - "🏗️😊🗺️✨ Designing Your Life: How to Build a Well-Lived, Joyful Life"
+title: "🏗️😊🗺️✨ Designing Your Life: How to Build a Well-Lived, Joyful Life"
 URL: https://bagrounds.org/books/designing-your-life
 Author: 
 tags: 
+affiliate link: https://amzn.to/43IBg5n
 ---
 [Home](../index.md) > [Books](./index.md)  
-# Designing Your Life  
+# 🏗️😊🗺️✨ Designing Your Life: How to Build a Well-Lived, Joyful Life  
+[🛒 Designing Your Life: How to Build a Well-Lived, Joyful Life. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/43IBg5n)  
+  
 ## 🤖 AI Summary  
 ### TL;DR 🚀  
 * **TL;DR:** Apply design thinking principles to your life to build a well-lived, joyful existence by prototyping possible futures and iterating based on what works.  

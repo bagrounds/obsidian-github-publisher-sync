@@ -80,7 +80,7 @@ affiliate link: https://amzn.to/3SzzP46
   
 * 📇 **[Range](./range.md): Why Generalists Triumph in a Specialized World** by David Epstein: Makes a case for breadth of experience and interdisciplinary thinking, resonating with the "foxy" approach of drawing on diverse knowledge. 🦊  
 * 🌱 **[Mindset](./mindset.md): The New Psychology of Success** by Carol S. Dweck: Explores the "growth mindset" identified as crucial for superforecasters.  
-* 🍀 **Fooled by Randomness: The Hidden Role of Chance in Life and in the Markets** by Nassim Nicholas Taleb: Explores the role of luck and randomness, particularly in finance, cautioning against attributing success solely to skill.  
+* **[🃏🎲 Fooled by Randomness: The Hidden Role of Chance in Life and in the Markets](./fooled-by-randomness-the-hidden-role-of-chance-in-life-and-in-the-markets.md)** by Nassim Nicholas Taleb: Explores the role of luck and randomness, particularly in finance, cautioning against attributing success solely to skill.  
 * ♠️ **Thinking in Bets: Making Smarter Decisions When You Don't Have All the Facts** by Annie Duke: A former professional poker player applies principles of probabilistic thinking and decision-making under uncertainty to life and business. 💼  
 * 📜 **Poor Charlie's Almanack: The Wit and Wisdom of Charles T. Munger** edited by Peter D. Kaufman: Collection of talks and essays from Charlie Munger, emphasizing multidisciplinary thinking, mental models, and avoiding cognitive errors in investing and life.  
 * 🌀 Books on Complexity Theory or Systems Thinking: Explore the dynamics of complex systems where traditional forecasting might be limited.  

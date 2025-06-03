@@ -1,14 +1,16 @@
 ---
 share: true
 aliases:
-  - Universal Principles of Design
-title: Universal Principles of Design
+  - "🌌📐🧩🗝️ Universal Principles of Design: 200 Ways to Increase Appeal, Enhance Usability, Influence Perception, and Make Better Design Decisions"
+title: "🌌📐🧩🗝️ Universal Principles of Design: 200 Ways to Increase Appeal, Enhance Usability, Influence Perception, and Make Better Design Decisions"
 URL: https://bagrounds.org/books/universal-principles-of-design
 Author: 
 tags: 
+affiliate link: https://amzn.to/3SuNedH
 ---
 [Home](../index.md) > [Books](./index.md)  
-# Universal Principles of Design  
+# 🌌📐🧩🗝️ Universal Principles of Design: 200 Ways to Increase Appeal, Enhance Usability, Influence Perception, and Make Better Design Decisions  
+[🛒 Universal Principles of Design: 200 Ways to Increase Appeal, Enhance Usability, Influence Perception, and Make Better Design Decisions. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3SuNedH)  
   
 ## 🤖 AI Summary  
 ### 📖 Book Report: Universal Principles of Design 🎨  

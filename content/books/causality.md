@@ -1,14 +1,17 @@
 ---
 share: true
 aliases:
-  - Causality
-title: Causality
+  - "❓➡️⚙️ Causality: Models, Reasoning, and Inference"
+title: "❓➡️⚙️ Causality: Models, Reasoning, and Inference"
 URL: https://bagrounds.org/books/causality
 Author: 
 tags: 
+affiliate link: https://amzn.to/4dOAtEw
 ---
 [Home](../index.md) > [Books](./index.md)  
-# Causality  
+# ❓➡️⚙️ Causality: Models, Reasoning, and Inference  
+[🛒 Causality: Models, Reasoning, and Inference. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4dOAtEw)  
+  
 ## 🤖 AI Summary  
 ### Causality by Judea Pearl 📚  
 **TL;DR:** 🎯 *Causality* by Judea Pearl provides a formal language and set of tools for reasoning about cause and effect, moving beyond traditional statistical methods that rely solely on correlation, and enabling more accurate predictions and interventions.  
@@ -60,7 +63,7 @@ tags:
   
 ### **Book Recommendations:** 📚  
 * **Best Alternate Book on the Same Topic:** *[Elements of Causal Inference: Foundations and Learning Algorithms](./elements-of-causal-inference-foundations-and-learning-algorithms.md)* by Jonas Peters, Dominik Janzing, and Bernhard Schölkopf. This book provides a more technical and algorithmic perspective on causal inference. 💻  
-* **Best Tangentially Related Book:** *[Thinking, Fast and Slow](./thinking-fast-and-slow.md)* by Daniel Kahneman. This book explores the cognitive biases and heuristics that influence human judgment and decision-making, which are closely related to causal reasoning. 🧠  
+* **Best Tangentially Related Book:** [🤔🐇🐢 Thinking, Fast and Slow](./thinking-fast-and-slow.md) by Daniel Kahneman. This book explores the cognitive biases and heuristics that influence human judgment and decision-making, which are closely related to causal reasoning. 🧠  
 * **Best Diametrically Opposed Book:** [⚫🦢🎲 The Black Swan: The Impact of the Highly Improbable](./the-black-swan-the-impact-of-the-highly-improbable.md) by Nassim Nicholas Taleb. While Taleb acknowledges the importance of causality, he emphasizes the limitations of our ability to predict and understand complex events, particularly those that are rare and unpredictable. 🦢  
 * **Best Fiction Book That Incorporates Related Ideas:** *The Man Who Folded Himself* by David Gerrold. This science fiction novel explores the implications of time travel and alternate realities, which are closely related to counterfactual reasoning. ⏳  
 * **Best Book That Is More General:** *[Factfulness](./factfulness.md): Ten Reasons We're Wrong About the World – and Why Things Are Better Than You Think* by Hans Rosling. This book uses data and statistics to challenge common misconceptions about the world, highlighting the importance of accurate causal reasoning. 📊  

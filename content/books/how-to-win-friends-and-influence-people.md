@@ -13,10 +13,6 @@ affiliate link: https://amzn.to/3FwV1Vs
 [🛒 How To Win Friends And Influence People. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3FwV1Vs)  
   
 ## 🤖 AI Summary  
-### 💬 [ChatGPT](https://chat.com) Prompt  
-> Summarize the book: How To Win Friends And Influence People. Start the summary with a TLDR - a single statement that conveys a maximum of the useful information provided in the book. Follow this with a deep dive. Catalogue the topics, methods, and research discussed. Be sure to highlight any significant theories, theses, or mental models proposed. Provide a critical analysis of the quality of the information presented, using scientific backing, author credentials, authoritative reviews, and other markers of high quality information as justification. Emphasize practical takeaways. Make the following additional book recommendations: the best alternate book on the same topic, the best book that is tangentially related, the best book that is diametrically opposed, and the best fiction book that incorporates related ideas. Format your response as markdown, starting at heading level H4, with inline links, for easy copy paste. Use meaningful emojis liberally to enhance readability, especially in headings and as bullets for lists.  
-  
-### Response  
 #### 📚 TLDR  
 Use genuine empathy, sincere appreciation, and thoughtful communication to build relationships and positively influence others.  
   
@@ -64,11 +60,14 @@ Use genuine empathy, sincere appreciation, and thoughtful communication to build
   - *[Influence](./influence.md): The Psychology of Persuasion* by Robert Cialdini    
     - Offers a research-backed exploration of the psychology behind persuasion and influence.    
 - **Best Book Tangentially Related:**    
-  - [*Emotional Intelligence*](https://en.wikipedia.org/wiki/Emotional_intelligence) by Daniel Goleman    
+  - [Emotional Intelligence](./emotional-intelligence.md) by Daniel Goleman    
     - Explores how understanding and managing emotions can enhance personal and professional relationships.    
 - **Best Book Diametrically Opposed:**    
-  - [*The 48 Laws of Power*](https://en.wikipedia.org/wiki/The_48_Laws_of_Power) by Robert Greene    
+  - [The 48 Laws of Power](./the-48-laws-of-power.md) by Robert Greene    
     - Presents a more Machiavellian perspective on influence, focusing on power dynamics and strategic manipulation.    
 - **Best Fiction Book Incorporating Related Ideas:**    
   - [*Pride and Prejudice*](https://en.wikipedia.org/wiki/Pride_and_Prejudice) by Jane Austen    
     - A classic novel that delves into the subtleties of social interaction, influence, and the impact of first impressions.  
+  
+## 💬 [ChatGPT](https://chat.com) Prompt  
+> Summarize the book: How To Win Friends And Influence People. Start the summary with a TLDR - a single statement that conveys a maximum of the useful information provided in the book. Follow this with a deep dive. Catalogue the topics, methods, and research discussed. Be sure to highlight any significant theories, theses, or mental models proposed. Provide a critical analysis of the quality of the information presented, using scientific backing, author credentials, authoritative reviews, and other markers of high quality information as justification. Emphasize practical takeaways. Make the following additional book recommendations: the best alternate book on the same topic, the best book that is tangentially related, the best book that is diametrically opposed, and the best fiction book that incorporates related ideas. Format your response as markdown, starting at heading level H4, with inline links, for easy copy paste. Use meaningful emojis liberally to enhance readability, especially in headings and as bullets for lists.

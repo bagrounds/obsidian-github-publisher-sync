@@ -85,7 +85,7 @@ _Thinking in Systems_ introduces the concept of systems thinking, which focuses 
     This book focuses on how disruptive innovations affect businesses, providing a perspective on how systems and processes within companies can be disrupted, indirectly applying system dynamics concepts.  
       
 3. **Best Diametrically Opposed Book**:    
-    **"The Black Swan: The Impact of the Highly Improbable" by Nassim Nicholas Taleb**    
+    **[⚫🦢🎲 The Black Swan: The Impact of the Highly Improbable](./the-black-swan-the-impact-of-the-highly-improbable.md) by Nassim Nicholas Taleb**    
     Taleb's book challenges the predictability of systems, arguing that rare, unpredictable events (Black Swans) have far greater impacts than the gradual changes emphasized in systems thinking, highlighting the limitations of modeling and predicting complex systems.  
       
 4. **Best Fiction Book that Incorporated Related Ideas**:    

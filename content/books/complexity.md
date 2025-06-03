@@ -1,15 +1,16 @@
 ---
 share: true
 aliases:
-  - Complexity
-title: Complexity
+  - "🌐🧭❓🔍🗺️ Complexity: A Guided Tour"
+title: "🌐🧭❓🔍🗺️ Complexity: A Guided Tour"
 URL: https://bagrounds.org/books/complexity
 Author: "[[Melanie Mitchell]]"
 tags: 
+affiliate link: https://amzn.to/3Svi7i6
 ---
 [Home](../index.md) > [Books](./index.md)  
-# Complexity  
-_A Guided Tour_  
+# 🌐🧭❓🔍🗺️ Complexity: A Guided Tour  
+[🛒 Complexity: A Guided Tour. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3Svi7i6)  
   
 ## 🤖 AI Summary  
 ### Complexity: A Guided Tour by Melanie Mitchell 📚  

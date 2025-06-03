@@ -1,14 +1,17 @@
 ---
 share: true
 aliases:
-  - Convex Optimization
-title: Convex Optimization
+  - ⛰️⬇️📈 Convex Optimization
+title: ⛰️⬇️📈 Convex Optimization
 URL: https://bagrounds.org/books/convex-optimization
 Author: 
 tags: 
+affiliate link: https://amzn.to/4564QUI
 ---
 [Home](../index.md) > [Books](./index.md)  
-# Convex Optimization  
+# ⛰️⬇️📈 Convex Optimization  
+[🛒 Convex Optimization. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4564QUI)  
+  
 ## 🤖 AI Summary  
 ### 📖 Book Report: Convex Optimization 📈  
   

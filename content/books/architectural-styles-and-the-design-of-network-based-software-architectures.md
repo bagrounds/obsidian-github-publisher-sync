@@ -1,14 +1,14 @@
 ---
 share: true
 aliases:
-  - Architectural Styles and the Design of Network Based Software Architectures
-title: Architectural Styles and the Design of Network Based Software Architectures
+  - 🏛️🕸️🧩 Architectural Styles and the Design of Network Based Software Architectures
+title: 🏛️🕸️🧩 Architectural Styles and the Design of Network Based Software Architectures
 URL: https://bagrounds.org/books/architectural-styles-and-the-design-of-network-based-software-architectures
 Author: 
 tags: 
 ---
 [Home](../index.md) > [Books](./index.md)  
-# Architectural Styles and the Design of Network Based Software Architectures  
+# 🏛️🕸️🧩 Architectural Styles and the Design of Network Based Software Architectures  
 ## 🤖 AI Summary  
 ### Architectural Styles and the Design of Network-based Software Architectures  
   

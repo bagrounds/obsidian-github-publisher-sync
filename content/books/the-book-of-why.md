@@ -1,14 +1,17 @@
 ---
 share: true
 aliases:
-  - The Book of Why
-title: The Book of Why
+  - "❓➡️💡 The Book of Why: The New Science of Cause and Effect"
+title: "❓➡️💡 The Book of Why: The New Science of Cause and Effect"
 URL: https://bagrounds.org/books/the-book-of-why
 Author: 
 tags: 
+affiliate link: https://amzn.to/4dNzsfR
 ---
 [Home](../index.md) > [Books](./index.md)  
-# The Book of Why  
+# ❓➡️💡 The Book of Why: The New Science of Cause and Effect  
+[🛒 The Book of Why: The New Science of Cause and Effect. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4dNzsfR)  
+  
 ## 🤖 AI Summary  
 ### The Book of Why: Summary & Analysis 🧠  
 **TL;DR:** 📖 The Book of Why argues for the centrality of causal reasoning in understanding the world, introducing the "Ladder of Causation" 🪜 and advocating for the use of causal diagrams 📊 and structural causal models to move beyond mere correlation. 🪜  

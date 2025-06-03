@@ -51,7 +51,7 @@ affiliate link: https://amzn.to/4juuGFc
   
 ### 🎨 Creatively Related Books (Exploring Complex Systems and Alternative Perspectives)  
   
-* 📚 ***The Black Swan: The Impact of the Highly Improbable*** by Nassim Nicholas Taleb. 🦢 Taleb's work focuses on the impact of rare, unpredictable events and challenges traditional models that rely on predictable outcomes. 🌪️ This relates to the uncertain and dynamic environments where NDM is particularly relevant.  
+* **[⚫🦢🎲 The Black Swan: The Impact of the Highly Improbable](./the-black-swan-the-impact-of-the-highly-improbable.md)** by Nassim Nicholas Taleb. 🦢 Taleb's work focuses on the impact of rare, unpredictable events and challenges traditional models that rely on predictable outcomes. 🌪️ This relates to the uncertain and dynamic environments where NDM is particularly relevant.  
 * 📚 ***[Thinking in Systems](./thinking-in-systems.md): A Primer*** by Donella H. Meadows. 🌐 This book provides a framework for understanding complex systems and how they behave, offering insights into the environments where many high-stakes decisions are made.  
 * 📚 ***Metaphorical Management: Using Intuition and Creativity as a Guiding Mechanism for Complex Systems*** by Klaus Elle. 💡 This book explores the role of intuition and creativity, particularly through metaphorical thinking, in navigating complex and unstable environments.  
 * 📚 ***Leading with Sense: The Intuitive Power of Savoir-Relier*** by Valérie Gauthier. 🤝 This book introduces the concept of "savoir-relier" (knowing how to connect) and emphasizes the role of intuition and sensory awareness in effective leadership and navigating complex systems.  

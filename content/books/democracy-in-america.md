@@ -1,14 +1,17 @@
 ---
 share: true
 aliases:
-  - Democracy in America
-title: Democracy in America
+  - 🗳️🕊️🇺🇸 Democracy in America
+title: 🗳️🕊️🇺🇸 Democracy in America
 URL: https://bagrounds.org/books/democracy-in-america
 Author: 
 tags: 
+affiliate link: https://amzn.to/4jsqOVj
 ---
 [Home](../index.md) > [Books](./index.md)  
-# Democracy in America  
+# 🗳️🕊️🇺🇸 Democracy in America  
+[🛒 Democracy in America. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4jsqOVj)  
+  
 ## 🤖 AI Summary  
 ### Democracy in America by Alexis de Tocqueville 🇺🇸🇫🇷  
   

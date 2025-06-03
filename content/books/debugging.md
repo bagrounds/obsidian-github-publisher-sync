@@ -1,14 +1,17 @@
 ---
 share: true
 aliases:
-  - "Debugging: The 9 Indispensable Rules for Finding Even the Most Elusive Software and Hardware Problems"
-title: "Debugging: The 9 Indispensable Rules for Finding Even the Most Elusive Software and Hardware Problems"
+  - "🐞🔍🤔✅ Debugging: The 9 Indispensable Rules for Finding Even the Most Elusive Software and Hardware Problems"
+title: "🐞🔍🤔✅ Debugging: The 9 Indispensable Rules for Finding Even the Most Elusive Software and Hardware Problems"
 URL: https://bagrounds.org/books/debugging
 Author: 
 tags: 
+affiliate link: https://amzn.to/4kmA3HP
 ---
 [Home](../index.md) > [Books](./index.md)  
-# Debugging: The 9 Indispensable Rules for Finding Even the Most Elusive Software and Hardware Problems  
+# 🐞🔍🤔✅ Debugging: The 9 Indispensable Rules for Finding Even the Most Elusive Software and Hardware Problems  
+[🛒 Debugging: The 9 Indispensable Rules for Finding Even the Most Elusive Software and Hardware Problems. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4kmA3HP)  
+  
 ## 🤖 AI Summary  
 ### Debugging 🐛  
   

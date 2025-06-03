@@ -1,14 +1,17 @@
 ---
 share: true
 aliases:
-  - "Executive Functions: What They Are, How They Work, and Why They Evolved"
-title: "Executive Functions: What They Are, How They Work, and Why They Evolved"
+  - "🧠⚙️🐒💡 Executive Functions: What They Are, How They Work, and Why They Evolved"
+title: "🧠⚙️🐒💡 Executive Functions: What They Are, How They Work, and Why They Evolved"
 URL: https://bagrounds.org/books/executive-functions
 Author: 
 tags: 
+affiliate link: https://amzn.to/3T7a8rC
 ---
 [Home](../index.md) > [Books](./index.md)  
-# Executive Functions: What They Are, How They Work, and Why They Evolved  
+# 🧠⚙️🐒💡 Executive Functions: What They Are, How They Work, and Why They Evolved  
+[🛒 Executive Functions: What They Are, How They Work, and Why They Evolved. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3T7a8rC)  
+  
 ## 🤖 AI Summary  
 ### 📖 Book Report: Executive Functions by Russell A. Barkley  
 ### 📝 TL;DR  

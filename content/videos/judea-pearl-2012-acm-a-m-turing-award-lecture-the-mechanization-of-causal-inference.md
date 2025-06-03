@@ -48,7 +48,7 @@ Judea Pearl's contributions are foundational in artificial intelligence and stat
   
 ### Additional Recommendations 📚  
 - **Best Alternate Resource on the Same Topic:**  
-  - [Causality](../books/causality.md): Models, Reasoning, and Inference by Judea Perl provides an in-depth exploration of causal models and their applications.  
+  - [❓➡️⚙️ Causality: Models, Reasoning, and Inference](../books/causality.md) by Judea Perl provides an in-depth exploration of causal models and their applications.  
   
 - **Best Resource Tangentially Related:**  
   - [🤔🐇🐢 Thinking, Fast and Slow](../books/thinking-fast-and-slow.md) by Daniel Daniel Kahneman delves into human decision-making processes, offering insights into cognitive biases that affect causal reasoning.  

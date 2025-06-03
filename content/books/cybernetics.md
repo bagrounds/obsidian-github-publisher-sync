@@ -1,16 +1,19 @@
 ---
 share: true
 aliases:
-  - Cybernetics
-title: Cybernetics
+  - "🤖🗣️🐒⚙️ Cybernetics: or Control and Communication in the Animal and the Machine"
+title: "🤖🗣️🐒⚙️ Cybernetics: or Control and Communication in the Animal and the Machine"
 URL: 
 Author: "[[Norbert Wiener]]"
 tags: 
 goodreads: https://www.goodreads.com/book/show/294941.Cybernetics
 Wikipedia: https://wikipedia.org/wiki/Cybernetics:_Or_Control_and_Communication_in_the_Animal_and_the_Machine
+affiliate link: https://amzn.to/3FmVo4Z
 ---
 [Home](../index.md) > [Books](./index.md)  
-# Cybernetics  
+# 🤖🗣️🐒⚙️ Cybernetics: or Control and Communication in the Animal and the Machine  
+[🛒 Cybernetics: or Control and Communication in the Animal and the Machine. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3FmVo4Z)  
+  
 ## 🤖 AI Summary  
 *Cybernetics* (1948) by Norbert Wiener explores the study of systems, feedback, control, and communication in both living organisms and machines. It emphasizes how systems regulate themselves through feedback loops and highlights the role of information in controlling behavior across biological, mechanical, and social systems. The book lays the foundation for fields like systems theory, artificial intelligence, and robotics.  
   

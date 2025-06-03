@@ -1,14 +1,17 @@
 ---
 share: true
 aliases:
-  - Capital in the Twenty First Century
-title: Capital in the Twenty First Century
+  - 💰📈🌍⏳ Capital in the Twenty-First Century
+title: 💰📈🌍⏳ Capital in the Twenty-First Century
 URL: https://bagrounds.org/books/capital-in-the-twenty-first-century
 Author: 
 tags: 
+affiliate link: https://amzn.to/3HjBmbV
 ---
 [Home](../index.md) > [Books](./index.md)  
-# Capital in the Twenty First Century  
+# 💰📈🌍⏳ Capital in the Twenty-First Century  
+[🛒 Capital in the Twenty-First Century. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3HjBmbV)  
+  
 ## 🤖 AI Summary  
 ### 📖 Book Report: Capital in the Twenty-First Century  
 **TL;DR:** 📈 Piketty's "Capital in the Twenty-First Century" argues that when the rate of return on capital exceeds the rate of economic growth ($r > g$), wealth inequality increases, leading to social and economic instability.  

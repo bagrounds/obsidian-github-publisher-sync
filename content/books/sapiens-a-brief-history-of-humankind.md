@@ -46,7 +46,7 @@ affiliate link: https://amzn.to/3HEBDX1
 4. 📖 **Best Fiction Book Incorporating Related Ideas:** ✍️  
    *The Years of Rice and Salt* by Kim Stanley Robinson  
    *Why:* This novel reimagines world history in a speculative alternate timeline where the cultural and political landscapes are dramatically different. 🗺️ It thoughtfully explores themes of civilization, cultural evolution, and the myriad paths human societies might take—resonating with many of the ideas found in *Sapiens*. 💭  
-   
+  
    Each of these recommendations provides a unique lens through which to view the complex tapestry of human history, complementing or challenging the narrative offered in *Sapiens*. 🔍  
   
 ## 💬 [ChatGPT](https://chat.com) Prompt  

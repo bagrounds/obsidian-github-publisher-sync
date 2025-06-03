@@ -56,12 +56,12 @@ This book, by Judea Pearl, Madelyn Glymour, and Nicholas P. Jewell, demystifies 
   
 ### 📚 Book Recommendations  
 * **Best Alternate Book on the Same Topic:** "Causal Inference: The Mixtape" by Scott Cunningham. 🎶 This book is more accessible and uses a conversational style, making it a great alternative for those new to causal inference.  
-* **Best Tangentially Related Book:** "[Thinking, Fast and Slow](./thinking-fast-and-slow.md)" by Daniel Kahneman. 🧠 This book explores the cognitive biases that can influence our judgments and decisions, providing insights into how we think about causality.  
+* **Best Tangentially Related Book:** [🤔🐇🐢 Thinking, Fast and Slow](./thinking-fast-and-slow.md) by Daniel Kahneman. 🧠 This book explores the cognitive biases that can influence our judgments and decisions, providing insights into how we think about causality.  
 * **Best Diametrically Opposed Book:** "[The Book of Why](./the-book-of-why.md): The New Science of Cause and Effect" by Judea Pearl and Dana Mackenzie. ❓ While written by the same primary author, it is written for a general audience and is a more narrative style book. It is not diametrically opposed in content, but is opposed in the style of delivery.  
 * **Best Fiction Book That Incorporates Related Ideas:** "Recursion" by Blake Crouch. 🌀 This science fiction thriller explores the consequences of manipulating memory and altering past events, touching on themes of counterfactuals and causal interference in a fictional context.  
 * **Best Book That Is More General:** "Data Analysis Using Regression and Multilevel/Hierarchical Models" by Andrew Gelman and Jennifer Hill. 📈 This book covers a broader range of statistical methods, including regression and multilevel modeling, which are often used in causal inference.  
 * **Best Book That Is More Specific:** "Causal Inference for Statistics, Social, and Biomedical Sciences: An Introduction" by Guido W. Imbens and Donald B. Rubin. 🔬 This book provides a more technical and in-depth treatment of causal inference, focusing on the potential outcomes framework.  
-* **Best Book That Is More Rigorous:** "Causality" by Judea Pearl. 🧠 This is the more advanced book by the same primary author, and is a much more technical and mathematical deep dive into the subject.  
+* **Best Book That Is More Rigorous:** [❓➡️⚙️ Causality: Models, Reasoning, and Inference](./causality.md) by Judea Pearl. 🧠 This is the more advanced book by the same primary author, and is a much more technical and mathematical deep dive into the subject.  
 * **Best Book That Is More Accessible:** "Mostly Harmless Econometrics: An Empiricist's Companion" by Joshua D. Angrist and Jörn-Steffen Pischke. 💰 This book provides a practical and accessible introduction to econometrics, with a focus on causal inference methods.  
   
 ## 💬 [Gemini](https://gemini.google.com) Prompt  

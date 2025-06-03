@@ -1,16 +1,17 @@
 ---
 share: true
 aliases:
-  - "Mad House: How Donald Trump, MAGA Mean Girls, a Former Used Car Salesman, a Florida Nepo Baby, and a Man with Rats in His Walls Broke Congress"
-title: "Mad House: How Donald Trump, MAGA Mean Girls, a Former Used Car Salesman, a Florida Nepo Baby, and a Man with Rats in His Walls Broke Congress"
+  - "🤯🐍🏘️🎪💥 Mad House: How Donald Trump, MAGA Mean Girls, a Former Used Car Salesman, a Florida Nepo Baby, and a Man with Rats in His Walls Broke Congress"
+title: "🤯🐍🏘️🎪💥 Mad House: How Donald Trump, MAGA Mean Girls, a Former Used Car Salesman, a Florida Nepo Baby, and a Man with Rats in His Walls Broke Congress"
 URL: https://bagrounds.org/books/mad-house
 Author: 
 tags: 
+affiliate link: https://amzn.to/3FmLost
 ---
 [Home](../index.md) > [Books](./index.md)  
-# Mad House: How Donald Trump, MAGA Mean Girls, a Former Used Car Salesman, a Florida Nepo Baby, and a Man with Rats in His Walls Broke Congress  
+# 🤯🐍🏘️🎪💥 Mad House: How Donald Trump, MAGA Mean Girls, a Former Used Car Salesman, a Florida Nepo Baby, and a Man with Rats in His Walls Broke Congress  
 By Annie Karni  
-- https://www.penguinrandomhouse.com/books/743988/mad-house-by-annie-karni-and-luke-broadwater  
+[🛒 Mad House: How Donald Trump, MAGA Mean Girls, a Former Used Car Salesman, a Florida Nepo Baby, and a Man with Rats in His Walls Broke Congress. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3FmLost)  
   
 ## 🤖 AI Summary  
 ### Mad House 🏛️🐀🚗  

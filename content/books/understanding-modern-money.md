@@ -1,14 +1,17 @@
 ---
 share: true
 aliases:
-  - Understanding Modern Money
-title: Understanding Modern Money
+  - 💰📈🤔 Understanding Modern Money
+title: 💰📈🤔 Understanding Modern Money
 URL: https://bagrounds.org/books/understanding-modern-money
 Author: 
 tags: 
+affiliate link: https://amzn.to/4jvn99m
 ---
 [Home](../index.md) > [Books](./index.md)  
-# Understanding Modern Money  
+# 💰📈🤔 Understanding Modern Money  
+[🛒 Understanding Modern Money. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4jvn99m)  
+  
 ## 🤖 AI Summary  
 ### 📖 Book Report: "Understanding Modern Money" by L. Randall Wray  
 #### TL;DR 💰💡  

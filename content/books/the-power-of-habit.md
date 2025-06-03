@@ -1,14 +1,17 @@
 ---
 share: true
 aliases:
-  - The Power of Habit
-title: The Power of Habit
+  - "🔄🧠💪 The Power of Habit: Why We Do What We Do in Life and Business"
+title: "🔄🧠💪 The Power of Habit: Why We Do What We Do in Life and Business"
 URL: https://bagrounds.org/books/the-power-of-habit
 Author: 
 tags: 
+affiliate link: https://amzn.to/458taW2
 ---
 [Home](../index.md) > [Books](./index.md)  
-# The Power of Habit  
+# 🔄🧠💪 The Power of Habit: Why We Do What We Do in Life and Business  
+[🛒 The Power of Habit: Why We Do What We Do in Life and Business. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/458taW2)  
+  
 ## 🤖 AI Summary  
 ### 📖 Book Report: The Power of Habit  
   

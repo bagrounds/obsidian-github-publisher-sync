@@ -1,15 +1,17 @@
 ---
 share: true
 aliases:
-  - Consensus through Conversation
-title: Consensus through Conversation
+  - "🗣️🤝✅ Consensus through Conversation: How to Achieve High-Commitment Decisions"
+title: "🗣️🤝✅ Consensus through Conversation: How to Achieve High-Commitment Decisions"
 URL: https://bagrounds.org/books/consensus-through-conversation
 Author: 
 tags: 
+affiliate link: https://amzn.to/3FLfoOB
 ---
 [Home](../index.md) > [Books](./index.md)  
-# Consensus through Conversation  
-_How to Achieve High-Commitment Decisions_  
+# 🗣️🤝✅ Consensus through Conversation: How to Achieve High-Commitment Decisions  
+[🛒 Consensus through Conversation: How to Achieve High-Commitment Decisions. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3FLfoOB)  
+  
 ## 🤖 AI Summary  
 ### **Summary of *Consensus Through Conversations***    
 Written by Larry Dressler, this book focuses on practical strategies for facilitating group discussions to reach consensus in organizational and team settings. It emphasizes active listening, creating inclusive environments, and guiding groups to shared understanding and decisions.  

@@ -1,14 +1,17 @@
 ---
 share: true
 aliases:
-  - Rules, Games, and Common Pool Resources
-title: Rules, Games, and Common Pool Resources
+  - 📜🎮🏞️ Rules, Games, and Common Pool Resources
+title: 📜🎮🏞️ Rules, Games, and Common Pool Resources
 URL: https://bagrounds.org/books/rules-games-and-common-pool-resources
 Author: 
 tags: 
+affiliate link: https://amzn.to/4mP8SY4
 ---
 [Home](../index.md) > [Books](./index.md)  
-# Rules, Games, and Common Pool Resources  
+# 📜🎮🏞️ Rules, Games, and Common Pool Resources  
+[🛒 Rules, Games, and Common Pool Resources. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4mP8SY4)  
+  
 ## 🤖 AI Summary  
 ### Summary and Analysis 🌍  
   

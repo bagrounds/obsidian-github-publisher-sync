@@ -1,14 +1,17 @@
 ---
 share: true
 aliases:
-  - Developmental Cognitive Neuroscience
-title: Developmental Cognitive Neuroscience
+  - "🧠👶📈 Introduction to Developmental Cognitive Neuroscience: An Introduction"
+title: "🧠👶📈 Introduction to Developmental Cognitive Neuroscience: An Introduction"
 URL: https://bagrounds.org/books/developmental-cognitive-neuroscience
 Author: 
 tags: 
+affiliate link: https://amzn.to/43tZS2M
 ---
 [Home](../index.md) > [Books](./index.md)  
-# Developmental Cognitive Neuroscience  
+# 🧠👶📈 Introduction to Developmental Cognitive Neuroscience: An Introduction  
+[🛒 Developmental Cognitive Neuroscience. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/43tZS2M)  
+  
 ## 🤖 AI Summary  
 ### Developmental Cognitive Neuroscience 🧠  
 **TL;DR:** This book explores the intricate interplay between brain development and cognitive changes across the lifespan, revealing how neural mechanisms underpin the emergence of perception, attention, memory, language, and executive functions.  

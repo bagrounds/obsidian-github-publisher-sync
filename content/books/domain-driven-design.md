@@ -1,14 +1,17 @@
 ---
 share: true
 aliases:
-  - "Domain-Driven Design: Tackling Complexity in the Heart of Software"
-title: "Domain-Driven Design: Tackling Complexity in the Heart of Software"
+  - "🧩🧱⚙️❤️ Domain-Driven Design: Tackling Complexity in the Heart of Software"
+title: "🧩🧱⚙️❤️ Domain-Driven Design: Tackling Complexity in the Heart of Software"
 URL: https://bagrounds.org/books/
 Author: 
 tags: 
+affiliate link: https://amzn.to/4jBFRMB
 ---
 [Home](../index.md) > [Books](./index.md)  
-# Domain Driven Design  
+# 🧩🧱⚙️❤️ Domain-Driven Design: Tackling Complexity in the Heart of Software  
+[🛒 Domain-Driven Design: Tackling Complexity in the Heart of Software. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4jBFRMB)  
+  
 ## 🤖 AI Summary  
 ### 📖 TL;DR 🚀  
   

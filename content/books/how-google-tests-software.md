@@ -1,14 +1,17 @@
 ---
 share: true
 aliases:
-  - How Google Tests Software
-title: How Google Tests Software
+  - 💻🔍✅ Google Tests Software
+title: 💻🔍✅ Google Tests Software
 URL: https://bagrounds.org/books/how-google-tests-software
 Author: 
 tags: 
+affiliate link: https://amzn.to/3HoCkUh
 ---
 [Home](../index.md) > [Books](./index.md)  
-# How Google Tests Software  
+# 💻🔍✅ Google Tests Software  
+[🛒 How Google Tests Software. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3HoCkUh)  
+  
 ## 🤖 AI Summary  
 ### 📖 Book Report: How Google Tests Software  
 **TL;DR:** This book offers a comprehensive look into Google's software testing practices, emphasizing the importance of a scalable, data-driven, and collaborative approach to ensuring software quality.  

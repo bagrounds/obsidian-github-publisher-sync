@@ -1,14 +1,17 @@
 ---
 share: true
 aliases:
-  - "Flow: The Psychology of Optimal Experience"
-title: "Flow: The Psychology of Optimal Experience"
-URL: https://bagrounds.org/books/Flow The Psychology of Optimal Experience
+  - "🌊🧘🧠📈 Flow: The Psychology of Optimal Experience"
+title: "🌊🧘🧠📈 Flow: The Psychology of Optimal Experience"
+URL: https://bagrounds.org/books/flow-the-psychology-of-optimal-experience
 Author: 
 tags: 
+affiliate link: https://amzn.to/4jrYkLn
 ---
 [Home](../index.md) > [Books](./index.md)  
-# Flow: The Psychology of Optimal Experience  
+# 🌊🧘🧠📈 Flow: The Psychology of Optimal Experience  
+[🛒 Flow: The Psychology of Optimal Experience. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4jrYkLn)  
+  
 ## 🤖 AI Summary  
 ### Flow: The Psychology of Optimal Experience Summary 📚  
 **TL;DR:** 🌟 Achieving happiness and fulfillment lies in experiencing "flow," a state of complete absorption in a challenging activity that matches one's skills, leading to a sense of control, clarity, and intrinsic reward.  

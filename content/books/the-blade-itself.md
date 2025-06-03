@@ -1,14 +1,17 @@
 ---
 share: true
 aliases:
-  - The Blade Itself
-title: The Blade Itself
+  - 🗡️🤕 The Blade Itself
+title: 🗡️🤕 The Blade Itself
 URL: https://bagrounds.org/books/the-blade-itself
 Author: 
 tags: 
+affiliate link: https://amzn.to/3SxcboT
 ---
 [Home](../index.md) > [Books](./index.md)  
-# The Blade Itself  
+# 🗡️🤕 The Blade Itself  
+[🛒 The Blade Itself. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3SxcboT)  
+  
 ## 🤖 AI Review  
 ### Context 📚  
   

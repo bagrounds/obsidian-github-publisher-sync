@@ -1,14 +1,17 @@
 ---
 share: true
 aliases:
-  - Daemon
-title: Daemon
+  - 😈💻👹🤖 Daemon
+title: 😈💻👹🤖 Daemon
 URL: https://bagrounds.org/books/daemon
 Author: 
 tags: 
+affiliate link: https://amzn.to/3HnI5lj
 ---
 [Home](../index.md) > [Books](./index.md)  
-# Daemon  
+# 😈💻👹🤖 Daemon  
+[🛒 Daemon. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3HnI5lj)  
+  
 ## 🤖 AI Summary  
 ### Context 🌐  
 * Author: Daniel Suarez ✍️  

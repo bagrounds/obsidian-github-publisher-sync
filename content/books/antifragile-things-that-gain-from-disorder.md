@@ -1,14 +1,17 @@
 ---
 share: true
 aliases:
-  - "Antifragile: Things That Gain from Disorder"
-title: "Antifragile: Things That Gain from Disorder"
+  - "📉📈🌪️💪 Antifragile: Things That Gain from Disorder"
+title: "📉📈🌪️💪 Antifragile: Things That Gain from Disorder"
 URL: https://bagrounds.org/books/antifragile-things-that-gain-from-disorder
 Author: 
 tags: 
+affiliate link: https://amzn.to/45JAVlg
 ---
 [Home](../index.md) > [Books](./index.md)  
-# Antifragile: Things That Gain from Disorder  
+# 📉📈🌪️💪 Antifragile: Things That Gain from Disorder  
+[🛒 Antifragile: Things That Gain from Disorder. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/45JAVlg)  
+  
 ## 🤖 AI Summary  
 ### Antifragile: Things That Gain from Disorder 🛠️  
 **📚 TL;DR:** Systems can be designed to not just withstand 💪 stress, but to improve and 🌱 grow stronger from it, a quality termed "antifragility," by embracing 💥 volatility and avoiding over-optimization.  

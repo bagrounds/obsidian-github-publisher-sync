@@ -1,14 +1,17 @@
 ---
 share: true
 aliases:
-  - Automatic Control Systems
-title: Automatic Control Systems
+  - ⚙️🤖🔄🕹️ Automatic Control Systems
+title: ⚙️🤖🔄🕹️ Automatic Control Systems
 URL: https://bagrounds.org/books/automatic-control-systems
 Author: 
 tags: 
+affiliate link: https://amzn.to/3Zcedyr
 ---
 [Home](../index.md) > [Books](./index.md)  
-# Automatic Control Systems  
+# ⚙️🤖🔄🕹️ Automatic Control Systems  
+[🛒 Automatic Control Systems. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3Zcedyr)  
+  
 ## 🤖 AI Summary  
 ### 📖  Automatic Control Systems  
   

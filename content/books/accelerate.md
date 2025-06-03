@@ -83,7 +83,7 @@ affiliate link: https://amzn.to/4mFi8h4
 * **Best Diametrically Opposed Book:** [🦄👤🗓️ The Mythical Man-Month: Essays on Software Engineering](./the-mythical-man-month.md) by Fred Brooks. (Classic software engineering book focusing on project management, with some points opposed to the agile and fast flow ideas of accelerate). 🕰️  
 * **Best Fiction Book That Incorporates Related Ideas:** "[Daemon](./daemon.md)" by Daniel Suarez. (Technological and organizational change themes). 🤖  
 * **Best Book That Is More General:** "[The Lean Startup](./the-lean-startup.md)" by Eric Ries. (General application of Lean principles). 💡  
-* **Best Book That Is More Specific:** "[Continuous Delivery](./continuous-delivery.md)" by Jez Humble and David Farley. (Focuses deeply on technical implementation of continuous delivery). 💻  
+* **Best Book That Is More Specific:** [🏗️🧪🚀✅ Continuous Delivery: Reliable Software Releases through Build, Test, and Deployment Automation](./continuous-delivery.md) by Jez Humble and David Farley. (Focuses deeply on technical implementation of continuous delivery). 💻  
 * **Best Book That Is More Rigorous:** Research papers on organizational psychology and statistical analysis. 📝  
 * **Best Book That Is More Accessible:** "[The DevOps Handbook](./the-devops-handbook.md)" by Gene Kim, Jez Humble, Patrick Debois, and John Willis. (More practical and less research heavy). 🛠️  
   

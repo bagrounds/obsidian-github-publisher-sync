@@ -1,14 +1,17 @@
 ---
 share: true
 aliases:
-  - "Distributed Systems: Principles and Paradigms"
-title: "Distributed Systems: Principles and Paradigms"
+  - "⚙️🕸️🧩🔑 Distributed Systems: Principles and Paradigms"
+title: "⚙️🕸️🧩🔑 Distributed Systems: Principles and Paradigms"
 URL: https://bagrounds.org/books/distributed-systems
 Author: 
 tags: 
+affiliate link: https://amzn.to/4jCApcr
 ---
 [Home](../index.md) > [Books](./index.md)  
-# Distributed Systems  
+# ⚙️🕸️🧩🔑 Distributed Systems: Principles and Paradigms  
+[🛒 Distributed Systems: Principles and Paradigms. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4jCApcr)  
+  
 ## 🤖 AI Summary  
 ### **TL;DR** 🚀  
 Distributed Systems: Principles and Paradigms provides a comprehensive overview of the fundamental concepts, models, and techniques for designing and implementing reliable and scalable distributed systems, emphasizing the challenges of concurrency, fault tolerance, and consistency.  

@@ -1,14 +1,17 @@
 ---
 share: true
 aliases:
-  - Bowling Alone
-title: Bowling Alone
+  - "🎳🏘️📉📈 Bowling Alone: The Collapse and Revival of American Community"
+title: "🎳🏘️📉📈 Bowling Alone: The Collapse and Revival of American Community"
 URL: https://bagrounds.org/books/bowling-alone
 Author: 
 tags: 
+affiliate link: https://amzn.to/4e40uA1
 ---
 [Home](../index.md) > [Books](./index.md)  
-# Bowling Alone  
+# 🎳🏘️📉📈 Bowling Alone: The Collapse and Revival of American Community  
+[🛒 Bowling Alone: The Collapse and Revival of American Community. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4e40uA1)  
+  
 ## 🤖 AI Summary  
 ### Bowling Alone Summary 🎳  
 **TL;DR:** American civic engagement and social capital have significantly declined in recent decades, leading to a weakening of communities and a decrease in societal well-being.  

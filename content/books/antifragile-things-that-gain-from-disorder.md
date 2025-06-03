@@ -54,8 +54,8 @@ tags:
 * Reviews on sites like Goodreads and Amazon show a wide range of opinions, from enthusiastic endorsements to sharp criticisms. Many appreciate the fresh perspective, while others find the writing style arrogant and repetitive. 🗣️  
 * His credentials as a former trader, risk analyst, and academic give him a unique viewpoint. 🧠  
   
-### **Book Recommendations:**  
-* **Best Alternate Book on the Same Topic:** "The Black Swan: The Impact of the Highly Improbable" by Nassim Nicholas Taleb. This book lays the groundwork for "Antifragile" and explores the role of randomness in our lives. 🦢  
+### **📚 Book Recommendations:**  
+* **Best Alternate Book on the Same Topic:** [⚫🦢🎲 The Black Swan: The Impact of the Highly Improbable](./the-black-swan-the-impact-of-the-highly-improbable.md) by Nassim Nicholas Taleb. This book lays the groundwork for "Antifragile" and explores the role of randomness in our lives. 🦢  
 * **Best Tangentially Related Book:** "[Thinking, Fast and Slow](./thinking-fast-and-slow.md)" by Daniel Kahneman. This book explores the cognitive biases that influence our decision-making, which is relevant to understanding how we perceive and react to risk. 🧠  
 * **Best Diametrically Opposed Book:** "[The Signal and the Noise: Why So Many Predictions Fail - but Some Don't](./the-signal-and-the-noise.md)" by Nate Silver. Silver emphasizes the importance of accurate prediction and statistical analysis, contrasting with Taleb's skepticism of forecasting. 📊  
 * **Best Fiction Book That Incorporates Related Ideas:** "Cryptonomicon" by Neal Stephenson. This novel explores themes of cryptography, information theory, and the impact of unpredictable events, reflecting some of Taleb's concerns about systemic risk. 💻  

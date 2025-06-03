@@ -1,14 +1,17 @@
 ---
 share: true
 aliases:
-  - Thinking, Fast and Slow
-title: Thinking, Fast and Slow
+  - 🤔🐇🐢 Thinking, Fast and Slow
+title: 🤔🐇🐢 Thinking, Fast and Slow
 URL: https://bagrounds.org/books/thinking-fast-and-slow
 Author: 
 tags: 
+affiliate link: https://amzn.to/4jQ0Tax
 ---
 [Home](../index.md) > [Books](./index.md)  
-# Thinking, Fast and Slow  
+# 🤔🐇🐢 Thinking, Fast and Slow  
+[🛒 Thinking, Fast and Slow. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4jQ0Tax)  
+  
 ## 🤖 AI Summary  
 ### TLDR 🚀  
 🧠 "Thinking, Fast and Slow" reveals that our minds operate via two distinct systems— ⚡️one fast, 💡 intuitive, and 😭 emotional, and the 🐢 other slow, 🤔 deliberate, and 🧮 logical— 🌍 shaping how we perceive the world and 🧐 make decisions.  

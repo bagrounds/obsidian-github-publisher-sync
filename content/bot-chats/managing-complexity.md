@@ -88,7 +88,7 @@ Alright, let's 🚀 delve even deeper and explore some often overlooked or less 
   
 **🌐 Complexity in Specific Domains:**  
   
-- 🦢 "The Black Swan: The Impact of the Highly Improbable" by Nassim Nicholas Taleb: While touching on antifragility, this 📖 book specifically highlights the role of rare and unpredictable 🍀 events in shaping complex systems and the limitations of traditional forecasting methods.  
+- [⚫🦢🎲 The Black Swan: The Impact of the Highly Improbable](../books/the-black-swan-the-impact-of-the-highly-improbable.md) by Nassim Nicholas Taleb: While touching on antifragility, this 📖 book specifically highlights the role of rare and unpredictable 🍀 events in shaping complex systems and the limitations of traditional forecasting methods.  
 - 🧘 "[Deep Work](../books/deep-work.md): Rules for Focused Success in a Distracted World" by Cal Newport: In an increasingly complex and information-saturated ℹ️ world, the ability to focus deeply on cognitively demanding tasks becomes a critical skill for navigating complexity and producing meaningful work.  
 - 🏙️ "The Death and Life of Great American Cities" by Jane Jacobs: A classic 🏛️ in urban planning, this book offers insights into the emergent complexity of successful cities, emphasizing the importance of mixed-use development, social interaction, and bottom-up dynamics.  
 - 📈 "Adaptive Markets: Financial Evolution at the Speed of Thought" by Andrew W. Lo: Applies principles of evolutionary biology 🧬 and complexity theory to understand the dynamics of financial markets, highlighting their adaptive and often unpredictable nature.  

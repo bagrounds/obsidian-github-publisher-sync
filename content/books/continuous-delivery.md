@@ -67,13 +67,13 @@ Continuous Delivery empowers organizations to reliably release high-quality soft
 "Continuous Delivery" is highly regarded within the software development community. 🏆 It is backed by the authors' extensive practical experience and draws upon established principles from lean manufacturing and agile development. The book's recommendations are grounded in sound engineering practices and have been proven effective in numerous organizations. Author credentials are very strong. Jez Humble and David Farley are recognized experts in the field. The book has received positive reviews from industry professionals and is considered a seminal work on the topic. The book is well written, and has a very practical approach. It is a very high quality source.  
   
 ### Book Recommendations 📚  
-* **Best Alternate Book on the Same Topic:** "The Phoenix Project" by Gene Kim, Kevin Behr, and George Spafford. (A novel that illustrates the principles of continuous delivery in a relatable way.) 🏭  
-* **Best Tangentially Related Book:** "[Accelerate](./accelerate.md)" by Nicole Forsgren, Jez Humble, and Gene Kim. (Provides empirical evidence for the impact of continuous delivery practices.) 📊  
+* **Best Alternate Book on the Same Topic:** [🐦‍🔥💻 The Phoenix Project](./the-phoenix-project.md) by Gene Kim, Kevin Behr, and George Spafford. (A novel that illustrates the principles of continuous delivery in a relatable way.) 🏭  
+* **Best Tangentially Related Book:** [🏎️💾 Accelerate: The Science of Lean Software and DevOps: Building and Scaling High Performing Technology Organizations](./accelerate.md) by Nicole Forsgren, Jez Humble, and Gene Kim. (Provides empirical evidence for the impact of continuous delivery practices.) 📊  
 * **Best Diametrically Opposed Book:** "Waterfall vs Agile vs Iterative" (Any document that describes the waterfall method will be diametrically opposed, as it is a sequential, non-iterative model.) 🌊  
 * **Best Fiction Book That Incorporates Related Ideas:** "[Daemon](./daemon.md)" by Daniel Suarez. (Explores the impact of automated systems and continuous improvement in a fictional context.) 🤖  
 * **Best Book That Is More General:** "[The Lean Startup](./the-lean-startup.md)" by Eric Ries. (Focuses on lean principles for building and scaling businesses.) 📈  
 * **Best Book That Is More Specific:** "Effective DevOps" by Jennifer Davis and Ryn Daniels. (Provides detailed guidance on implementing DevOps practices.) 💻  
-* **Best Book That Is More Rigorous:** "Site Reliability Engineering" by Betsy Beyer, Chris Jones, Jennifer Petoff, and Niall Richard Murphy. (Offers a more in-depth look at reliability engineering practices.) ⚙️  
+* **Best Book That Is More Rigorous:** [Site Reliability Engineering](./site-reliability-engineering.md) by Betsy Beyer, Chris Jones, Jennifer Petoff, and Niall Richard Murphy. (Offers a more in-depth look at reliability engineering practices.) ⚙️  
 * **Best Book That Is More Accessible:** "[The DevOps Handbook](./the-devops-handbook.md)" by Gene Kim, Patrick Debois, John Willis, and Jez Humble. (A more approachable guide to DevOps principles.) 🤝  
   
 ## 💬 [Gemini](https://gemini.google.com) Prompt  

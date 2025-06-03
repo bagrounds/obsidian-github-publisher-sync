@@ -1,15 +1,18 @@
 ---
 share: true
 aliases:
-  - "Fear: Trump in the White House"
-title: "Fear: Trump in the White House"
+  - "😱🤡🇺🇸 Fear: Trump in the White House"
+title: "😱🤡🇺🇸 Fear: Trump in the White House"
 URL: https://bagrounds.org/books/fear
 Author: 
 tags: 
+affiliate link: https://amzn.to/4kr6q8q
 ---
 [Home](../index.md) > [Books](./index.md)  
-# Fear: Trump in the White House  
+# 😱🤡🇺🇸 Fear: Trump in the White House  
 by Bob Woodward  
+[🛒 Fear: Trump in the White House. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4kr6q8q)  
+  
 ## 🤖 AI Summary  
 ### TL;DR 📖  
 "😨 "Fear" provides a deeply sourced, behind-the-scenes account of the 🌪️ chaotic and often 🚨 alarming inner workings of the 🏛️ Trump White House, revealing a constant ⚔️ struggle between 👨‍💼 advisors attempting to 🧠 manage and 🛑 contain the president's 💥 impulses and 📝 decisions."  

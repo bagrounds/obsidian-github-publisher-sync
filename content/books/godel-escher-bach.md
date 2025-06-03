@@ -1,14 +1,17 @@
 ---
 share: true
 aliases:
-  - "Gödel, Escher, Bach: An Eternal Golden Braid"
-title: "Gödel, Escher, Bach: An Eternal Golden Braid"
+  - "♾️📐🎶🥨 Gödel, Escher, Bach: An Eternal Golden Braid"
+title: "♾️📐🎶🥨 Gödel, Escher, Bach: An Eternal Golden Braid"
 URL: https://bagrounds.org/books/godel-escher-bach
 Author: 
 tags: 
+affiliate link: https://amzn.to/3ZGTin5
 ---
 [Home](../index.md) > [Books](./index.md)  
-# Gödel, Escher, Bach: An Eternal Golden Braid  
+# ♾️📐🎶🥨 Gödel, Escher, Bach: An Eternal Golden Braid  
+[🛒 Gödel, Escher, Bach: An Eternal Golden Braid. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3ZGTin5)  
+  
 ## 🤖 AI Summary  
 ### Gödel, Escher, Bach: An Eternal Golden Braid Summary 🤯  
 **TL;DR:** Gödel, Escher, Bach explores the nature of consciousness, meaning, and self-reference through the interconnected works of mathematician Kurt Gödel, artist M.C. Escher, and composer Johann Sebastian Bach, arguing that intelligence arises from formal systems and their inherent limitations.  

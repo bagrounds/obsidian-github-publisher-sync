@@ -1,14 +1,17 @@
 ---
 share: true
 aliases:
-  - Thinking in Systems
-title: Thinking in Systems
+  - "🌐🔗🧠📖 Thinking in Systems: A Primer"
+title: "🌐🔗🧠📖 Thinking in Systems: A Primer"
 URL: https://bagrounds.org/books/thinking-in-systems
 Author: 
 tags: 
+affiliate link: https://amzn.to/4jxdezW
 ---
 [Home](../index.md) > [Books](./index.md)  
-# Thinking in Systems  
+# 🌐🔗🧠📖 Thinking in Systems: A Primer  
+[🛒 Thinking in Systems: A Primer. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4jxdezW)  
+  
 ## 🤖 AI Summaries  
 #### **TLDR**  
 Systems thinking provides a framework for understanding complex, interconnected problems by focusing on relationships, feedback loops, and emergent behaviors, rather than isolated events.  

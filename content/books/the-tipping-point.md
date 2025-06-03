@@ -70,7 +70,7 @@ Gladwell illustrates his theories with various case studies, including:
 * 🤔 **[Thinking, Fast and Slow](./thinking-fast-and-slow.md)** by Daniel Kahneman: A deep dive into cognitive biases and the two systems driving human thought (fast/intuitive vs. slow/deliberate), offering a more cognitive science-based perspective on decision-making than Gladwell's sociological focus.  
 * 🎯 **[Peak](./peak.md): Secrets from the New Science of Expertise** by Anders Ericsson and Robert Pool: Challenges Gladwell's "10,000-hour rule" popularized in *Outliers* (often associated with *Tipping Point*-era Gladwell) by focusing on deliberate practice rather than just hours spent.  
 * 🤨 **Everything Is Obvious: *Once You Know the Answer*** by Duncan J. Watts: A sociologist and network scientist offers a critique of "common sense" explanations for social phenomena, arguing that predictability is often an illusion and challenging narrative-driven approaches like Gladwell's.  
-* 💣 **The Black Swan: The Impact of the Highly Improbable** by Nassim Nicholas Taleb: Focuses on the extreme impact of rare and unpredictable events, contrasting with the idea that trends can be reliably engineered or predicted by identifying key factors.  
+* **[⚫🦢🎲 The Black Swan: The Impact of the Highly Improbable](./the-black-swan-the-impact-of-the-highly-improbable.md)** by Nassim Nicholas Taleb: Focuses on the extreme impact of rare and unpredictable events, contrasting with the idea that trends can be reliably engineered or predicted by identifying key factors.  
   
 ### 💡 Creatively Related Books (Network Science, Trends, Broader Concepts)  
   

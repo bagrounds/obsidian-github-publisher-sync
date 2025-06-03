@@ -1,14 +1,17 @@
 ---
 share: true
 aliases:
-  - Control Systems Engineering
-title: Control Systems Engineering
+  - ⚙️📈🎯🤖 Control Systems Engineering
+title: ⚙️📈🎯🤖 Control Systems Engineering
 URL: https://bagrounds.org/books/control-systems-engineering
 Author: 
 tags: 
+affiliate link: https://amzn.to/3FnCeff
 ---
 [Home](../index.md) > [Books](./index.md)  
-# Control Systems Engineering  
+# ⚙️📈🎯🤖 Control Systems Engineering  
+[🛒 Control Systems Engineering. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3FnCeff)  
+  
 ## 🤖 AI Summary  
 ### 📖 Control Systems Engineering by Norman S. Nise  
   

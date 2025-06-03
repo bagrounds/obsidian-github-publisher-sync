@@ -1,14 +1,17 @@
 ---
 share: true
 aliases:
-  - Business Dynamics
-title: Business Dynamics
+  - "🌐🔗📈🧩 Business Dynamics: Systems Thinking and Modeling for a Complex World"
+title: "🌐🔗📈🧩 Business Dynamics: Systems Thinking and Modeling for a Complex World"
 URL: https://bagrounds.org/books/business-dynamics
 Author: 
 tags: 
+affiliate link: https://amzn.to/4kOfhAR
 ---
 [Home](../index.md) > [Books](./index.md)  
-# Business Dynamics  
+# 🌐🔗📈🧩 Business Dynamics: Systems Thinking and Modeling for a Complex World  
+[🛒 Business Dynamics: Systems Thinking and Modeling for a Complex World. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4kOfhAR)  
+  
 ## 🤖 AI Summary  
 #### TLDR  
 *Business Dynamics* teaches how to understand and model complex business systems using systems thinking and simulation, enabling better decision-making by recognizing feedback loops, delays, and nonlinearities that drive organizational behavior.  

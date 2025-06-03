@@ -1,14 +1,17 @@
 ---
 share: true
 aliases:
-  - Deep Learning
-title: Deep Learning
+  - 🧠💻🤖 Deep Learning
+title: 🧠💻🤖 Deep Learning
 URL: https://bagrounds.org/books/deep-learning
 Author: 
 tags: 
+affiliate link: https://amzn.to/43sWW6w
 ---
 [Home](../index.md) > [Books](./index.md)  
-# Deep Learning  
+# 🧠💻🤖 Deep Learning  
+[🛒 Deep Learning. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/43sWW6w)  
+  
 ## 🤖 AI Summary  
 ### 📖 Book Report: Deep Learning 🤖🧠  
   

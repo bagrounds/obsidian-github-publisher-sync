@@ -84,7 +84,7 @@ affiliate link: https://amzn.to/3FnCeff
   
 * **Best Alternate Book (Same Topic):** "Modern Control Systems" by Richard C. Dorf and Robert H. Bishop. 🔄📚  
 * **Best Tangentially Related Book:** "Feedback Systems: An Introduction for Scientists and Engineers" by Karl J. Åström and Richard M. Murray. 🔗💡  
-* **Best Diametrically Opposed Book:** "[Chaos: Making a New Science](./chaos.md)" by James Gleick (explores non-linear and unpredictable systems, contrasting with the focus on control). 🌀🌌  
+* **Best Diametrically Opposed Book:** [🌪️💥🦋🆕 Chaos: Making a New Science](./chaos.md) by James Gleick (explores non-linear and unpredictable systems, contrasting with the focus on control). 🌀🌌  
 * **Best Fiction Book (Related Ideas):** "The Martian" by Andy Weir (demonstrates problem-solving and control in extreme environments). 🚀🧑‍🚀  
 * **Best More General Book:** "Fundamentals of Signals and Systems" by Alan V. Oppenheim and Alan S. Willsky. 📶📚  
 * **Best More Specific Book:** "Digital Control System Analysis and Design" by Charles L. Phillips and Troy Nagle. 🔢💻  

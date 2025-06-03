@@ -229,7 +229,7 @@ backlinks: false
 - [On Tyranny: Twenty Lessons from the Twentieth Century](./on-tyranny.md)  
 - [📜 On Writing: A Memoir of the Craft](./on-writing.md)  
 - [✍🏼👍🏼 On Writing Well: The Classic Guide to Writing Nonfiction](./on-writing-well.md)  
-- [Onyx Storm](./onyx-storm.md)  
+- [🖤🐲⛈️ Onyx Storm](./onyx-storm.md)  
 - [👶📖 Operating Instructions: A Journal of My Son’s First Year](./operating-instructions-a-journal-of-my-sons-first-year.md)  
 - [📗🚀🌍 Operating Manual for Spaceship Earth](./operating-manual-for-spaceship-earth.md)  
 - [Order Out of Chaos](./order-out-of-chaos.md)  

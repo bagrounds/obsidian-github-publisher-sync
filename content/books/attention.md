@@ -1,14 +1,17 @@
 ---
 share: true
 aliases:
-  - Attention
-title: Attention
+  - 🤔💪 Attention and effort
+title: 🤔💪 Attention and effort
 URL: https://bagrounds.org/books/attention
 Author: 
 tags: 
+affiliate link: https://amzn.to/4kp44XK
 ---
 [Home](../index.md) > [Books](./index.md)  
-# Attention  
+# 🤔💪 Attention and effort  
+[🛒 Attention and effort. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4kp44XK)  
+  
 ## 🤖 AI Summary  
 ### Attention by Daniel Kahneman: Summary 🧠  
 **TL;DR:** Attention is a limited resource governed by effort and allocation, impacting our perception, cognition, and decision-making, and understanding its mechanisms is crucial for optimizing performance and avoiding cognitive biases.  

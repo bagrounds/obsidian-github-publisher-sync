@@ -1,14 +1,17 @@
 ---
 share: true
 aliases:
-  - "Democracy, If We Can Keep It: The ACLU's 100-Year Fight for Rights in America"
-title: "Democracy, If We Can Keep It: The ACLU's 100-Year Fight for Rights in America"
+  - "🗳️✊🤺🇺🇸 Democracy, If We Can Keep It: The ACLU's 100-Year Fight for Rights in America"
+title: "🗳️✊🤺🇺🇸 Democracy, If We Can Keep It: The ACLU's 100-Year Fight for Rights in America"
 URL: https://bagrounds.org/books/democracy-if-we-can-keep-it
 Author: 
 tags: 
+affiliate link: https://amzn.to/3HBPu0g
 ---
 [Home](../index.md) > [Books](./index.md)  
-# Democracy, If We Can Keep It: The ACLU's 100-Year Fight for Rights in America  
+# 🗳️✊🤺🇺🇸 Democracy, If We Can Keep It: The ACLU's 100-Year Fight for Rights in America  
+[🛒 Democracy, If We Can Keep It: The ACLU's 100-Year Fight for Rights in America. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3HBPu0g)  
+  
 ## 📚 Book Report: "Democracy, If We Can Keep It: The ACLU's 100-Year Fight for Rights in America"  
 **🔎 Overview**  
 - 📖 Author: Ellis Cose, a seasoned journalist with extensive experience covering civil liberties.  

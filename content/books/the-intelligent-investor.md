@@ -1,14 +1,17 @@
 ---
 share: true
 aliases:
-  - The Intelligent Investor
-title: The Intelligent Investor
+  - "🧠📈💰 The Intelligent Investor: The Definitive Book on Value Investing"
+title: "🧠📈💰 The Intelligent Investor: The Definitive Book on Value Investing"
 URL: https://bagrounds.org/books/the-intelligent-investor
 Author: 
 tags: 
+affiliate link: https://amzn.to/4mM0qbY
 ---
 [Home](../index.md) > [Books](./index.md)  
-# The Intelligent Investor  
+# 🧠📈💰 The Intelligent Investor: The Definitive Book on Value Investing  
+[🛒 The Intelligent Investor: The Definitive Book on Value Investing. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4mM0qbY)  
+  
 ## 🤖 AI Summary  
 ### The Intelligent Investor 📈  
   

@@ -1,14 +1,17 @@
 ---
 share: true
 aliases:
-  - Cognitive Psychology and Its Implications
-title: Cognitive Psychology and Its Implications
+  - 🧠🤔💡➡️ Cognitive Psychology and Its Implications
+title: 🧠🤔💡➡️ Cognitive Psychology and Its Implications
 URL: https://bagrounds.org/books/cognitive-psychology-and-its-implications
 Author: 
 tags: 
+affiliate link: https://amzn.to/4jx7AxG
 ---
 [Home](../index.md) > [Books](./index.md)  
-# Cognitive Psychology and Its Implications  
+# 🧠🤔💡➡️ Cognitive Psychology and Its Implications  
+[🛒 Cognitive Psychology and Its Implications. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4jx7AxG)  
+  
 ## 🤖 AI Summary  
 ### Cognitive Psychology and Its Implications: Summary 🧠  
 **TL;DR:** This book provides a comprehensive overview of cognitive psychology, exploring how we perceive, learn, remember, and think, with a focus on applying these principles to real-world situations.  

@@ -1,14 +1,17 @@
 ---
 share: true
 aliases:
-  - Designing Data-Intensive Applications
-title: Designing Data-Intensive Applications
+  - "💾⬆️🛡️ Designing Data-Intensive Applications: The Big Ideas Behind Reliable, Scalable, and Maintainable Systems"
+title: "💾⬆️🛡️ Designing Data-Intensive Applications: The Big Ideas Behind Reliable, Scalable, and Maintainable Systems"
 URL: https://bagrounds.org/books/designing-data-intensive-applications
 Author: 
 tags: 
+affiliate link: https://amzn.to/4jvutSk
 ---
 [Home](../index.md) > [Books](./index.md)  
-# Designing Data-Intensive Applications  
+# 💾⬆️🛡️ Designing Data-Intensive Applications: The Big Ideas Behind Reliable, Scalable, and Maintainable Systems  
+[🛒 Designing Data-Intensive Applications: The Big Ideas Behind Reliable, Scalable, and Maintainable Systems. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4jvutSk)  
+  
 ## 🤖 AI Summary  
 ### Designing Data-Intensive Applications Summary 📚  
 **TL;DR:** This book provides a comprehensive guide to building reliable, scalable, and maintainable data systems by exploring the fundamental principles behind various data storage and processing technologies, emphasizing trade-offs and best practices.  

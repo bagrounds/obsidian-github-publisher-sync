@@ -1,14 +1,17 @@
 ---
 share: true
 aliases:
-  - "Developmental Science: An Advanced Textbook"
-title: "Developmental Science: An Advanced Textbook"
+  - "👶🧠📈📚 Developmental Science: An Advanced Textbook"
+title: "👶🧠📈📚 Developmental Science: An Advanced Textbook"
 URL: https://bagrounds.org/books/developmental-science
 Author: 
 tags: 
+affiliate link: https://amzn.to/4kzqRQz
 ---
 [Home](../index.md) > [Books](./index.md)  
-# Developmental Science: An Advanced Textbook  
+# 👶🧠📈📚 Developmental Science: An Advanced Textbook  
+[🛒 Developmental Science: An Advanced Textbook. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4kzqRQz)  
+  
 ## 🤖 AI Summary  
 ### Developmental Science: An Advanced Textbook 👶📚  
 **TL;DR:** Developmental Science explores the intricate, dynamic, and multidimensional processes of human development from conception through adolescence, emphasizing the interplay of biological, cognitive, social, and emotional factors within various contexts.  

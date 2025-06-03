@@ -70,7 +70,7 @@ Ellenberg's writing is clear, engaging, and accessible to a wide audience. He ef
 ### **Book Recommendations 📚**  
 * **Best alternate book on the same topic:** *Innumeracy: Mathematical Illiteracy and Its Consequences* by John Allen Paulos. 📖  
 * **Best book that is tangentially related:** *[Thinking, Fast and Slow](./thinking-fast-and-slow.md)* by Daniel Kahneman. 🧠  
-* **Best book that is diametrically opposed:** *The Black Swan: The Impact of the Highly Improbable* by Nassim Nicholas Taleb. 🦢  
+* **Best book that is diametrically opposed:** [⚫🦢🎲 The Black Swan: The Impact of the Highly Improbable](./the-black-swan-the-impact-of-the-highly-improbable.md) by Nassim Nicholas Taleb. 🦢  
 * **Best fiction book that incorporates related ideas:** *The Curious Incident of the Dog in the Night-Time* by Mark Haddon. 🐕  
 * **Best book that is more general:** *[The Signal and the Noise: Why So Many Predictions Fail - but Some Don't](./the-signal-and-the-noise.md)* by Nate Silver. 📊  
 * **Best book that is more specific:** *Statistics Done Wrong: The Woefully Complete Guide* by Alex Reinhart. 📈  

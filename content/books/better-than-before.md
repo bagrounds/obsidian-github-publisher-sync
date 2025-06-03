@@ -1,14 +1,17 @@
 ---
 share: true
 aliases:
-  - "Better Than Before: What I Learned About Making and Breaking Habits - to Sleep More, Quit Sugar, Procrastinate Less, and Generally Build a Happier Life"
-title: "Better Than Before: What I Learned About Making and Breaking Habits - to Sleep More, Quit Sugar, Procrastinate Less, and Generally Build a Happier Life"
+  - "📉➡️👍 Better Than Before: What I Learned About Making and Breaking Habits - to Sleep More, Quit Sugar, Procrastinate Less, and Generally Build a Happier Life"
+title: "📉➡️👍 Better Than Before: What I Learned About Making and Breaking Habits - to Sleep More, Quit Sugar, Procrastinate Less, and Generally Build a Happier Life"
 URL: https://bagrounds.org/books/better-than-before
 Author: 
 tags: 
+affiliate link: https://amzn.to/4556LsH
 ---
 [Home](../index.md) > [Books](./index.md)  
-# Better Than Before  
+# 📉➡️👍 Better Than Before: What I Learned About Making and Breaking Habits - to Sleep More, Quit Sugar, Procrastinate Less, and Generally Build a Happier Life  
+[🛒 Better Than Before: What I Learned About Making and Breaking Habits - to Sleep More, Quit Sugar, Procrastinate Less, and Generally Build a Happier Life. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4556LsH)  
+  
 ## 🤖 AI Summary  
 ### 📖 Book Report: Better Than Before 🌟  
   

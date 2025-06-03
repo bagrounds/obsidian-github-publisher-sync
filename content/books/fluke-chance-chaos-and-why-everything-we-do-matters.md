@@ -47,7 +47,7 @@ affiliate link: https://amzn.to/4mFRDYY
 ## 📚 Book Recommendations  
 ### 👯 Similar Books (Exploring Chance, Complexity, Contingency)  
 * **[⚫🦢🎲 The Black Swan: The Impact of the Highly Improbable](./the-black-swan-the-impact-of-the-highly-improbable.md)** by Nassim Nicholas Taleb: A seminal work on the profound impact of rare, unpredictable events and the limitations of forecasting. *Fluke* is often compared to Taleb's work.  
-* 🎲 **Fooled by Randomness: The Hidden Role of Chance in Life and in the Markets** by Nassim Nicholas Taleb: Explores how we underestimate the role of randomness, particularly in finance and personal success.  
+* **[🃏🎲 Fooled by Randomness: The Hidden Role of Chance in Life and in the Markets](./fooled-by-randomness-the-hidden-role-of-chance-in-life-and-in-the-markets.md)** by Nassim Nicholas Taleb: Explores how we underestimate the role of randomness, particularly in finance and personal success.  
 * 🧠 **[Thinking, Fast and Slow](./thinking-fast-and-slow.md)** by Daniel Kahneman: While focused on cognitive biases, it delves into how our minds create narratives and struggle with probability and randomness, complementing *Fluke's* themes on perception.  
 * 🌍 **Ubiquity: Why Catastrophes Happen** by Mark Buchanan: Explores universal patterns in complex systems, from earthquakes to market crashes, touching on concepts like criticality discussed in *Fluke*.  
 * 🌀 **[Chaos: Making a New Science](./chaos.md)** by James Gleick: A classic popular science book introducing chaos theory and its pioneers, providing foundational context for the scientific concepts Klaas employs.  

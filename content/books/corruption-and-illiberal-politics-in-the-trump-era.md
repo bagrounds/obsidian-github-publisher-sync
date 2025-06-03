@@ -1,14 +1,17 @@
 ---
 share: true
 aliases:
-  - Corruption and Illiberal Politics in the Trump Era
-title: Corruption and Illiberal Politics in the Trump Era
+  - 💰👑👎🇺🇸 Corruption and Illiberal Politics in the Trump Era
+title: 💰👑👎🇺🇸 Corruption and Illiberal Politics in the Trump Era
 URL: https://bagrounds.org/books/corruption-and-illiberal-politics-in-the-trump-era
 Author: 
 tags: 
+affiliate link: https://amzn.to/4kIIhtz
 ---
 [Home](../index.md) > [Books](./index.md)  
-# Corruption and Illiberal Politics in the Trump Era  
+# 💰👑👎🇺🇸 Corruption and Illiberal Politics in the Trump Era  
+[🛒 Corruption and Illiberal Politics in the Trump Era. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4kIIhtz)  
+  
 ## 🤖 AI Summary  
 ### TL;DR 🚀  
 📢 A comprehensive, 🪞 anthropologically grounded critique revealing how 💰 corruption and 👿 illiberal practices during the 🤡 Trump era have 📉 eroded democratic norms in the 🇺🇸 US and 🌍 reshaped global politics.  

@@ -48,13 +48,13 @@ Pearl's introduction of Bayesian networks and the formalization of causal models
   
 ### Additional Recommendations 📖  
 - **Best Alternate Resource on the Same Topic:**  
-  - *"Causality: Models, Reasoning, and Inference"* by Judea Pearl offers an in-depth exploration of causal models and reasoning.  
+  - [❓➡️⚙️ Causality: Models, Reasoning, and Inference](../books/causality.md) by Judea Pearl offers an in-depth exploration of causal models and reasoning.  
   
 - **Best Resource Tangentially Related:**  
-  - *"[Thinking, Fast and Slow](../books/thinking-fast-and-slow.md)"* by Daniel Kahneman delves into human decision-making processes, complementing Pearl's work on reasoning.  
+  - [🤔🐇🐢 Thinking, Fast and Slow](../books/thinking-fast-and-slow.md) by Daniel Kahneman delves into human decision-making processes, complementing Pearl's work on reasoning.  
   
 - **Best Resource Diametrically Opposed:**  
-  - *"Fooled by Randomness"* by Nassim Nicholas Taleb challenges traditional interpretations of probability and randomness, offering a contrasting viewpoint.  
+  - [🃏🎲 Fooled by Randomness: The Hidden Role of Chance in Life and in the Markets](../books/fooled-by-randomness-the-hidden-role-of-chance-in-life-and-in-the-markets.md) by Nassim Nicholas Taleb challenges traditional interpretations of probability and randomness, offering a contrasting viewpoint.  
   
 - **Best Fiction Incorporating Related Ideas:**  
   - *"The Circle"* by Dave Eggers explores themes of technology, data, and their impact on society, reflecting on the ethical dimensions of AI.  

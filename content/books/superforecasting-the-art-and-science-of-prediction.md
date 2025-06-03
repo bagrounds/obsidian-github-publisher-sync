@@ -71,7 +71,7 @@ affiliate link: https://amzn.to/3SzzP46
   
 ### ↔️ Contrasting Perspectives (Limits of Prediction, Intuition, Narrative)  
   
-* ⚫ **The Black Swan: The Impact of the Highly Improbable** by Nassim Nicholas Taleb: Argues that history is dominated by rare, unpredictable, high-impact "black swan" events 🦢 that quantitative models often miss, challenging the focus on predicting based on past data. 🗓️  
+* **[⚫🦢🎲 The Black Swan: The Impact of the Highly Improbable](./the-black-swan-the-impact-of-the-highly-improbable.md)** by Nassim Nicholas Taleb: Argues that history is dominated by rare, unpredictable, high-impact "black swan" events 🦢 that quantitative models often miss, challenging the focus on predicting based on past data. 🗓️  
 * 💪 **[Antifragile: Things That Gain from Disorder](./antifragile-things-that-gain-from-disorder.md)** by Nassim Nicholas Taleb: Extends the ideas in *The Black Swan*, focusing on building systems that benefit from volatility and uncertainty, rather than trying to predict and prevent every shock. ⚡  
 * 🗣️ **Future Babble: Why Expert Predictions Fail – And Why We Believe Them Anyway** by Dan Gardner: Gardner's earlier book (which drew heavily on Tetlock's *Expert Political Judgment*) critiquing punditry and poor forecasting, though *Superforecasting* offers the constructive "how-to" follow-up.  
 * 🔮 *(Potentially)* Books emphasizing qualitative foresight, scenario planning for deep uncertainty, or intuition-based decision-making (though *Superforecasting* doesn't dismiss intuition entirely, it grounds it in analysis). 🧠  

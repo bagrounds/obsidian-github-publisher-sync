@@ -1,14 +1,17 @@
 ---
 share: true
 aliases:
-  - Give and Take
-title: Give and Take
+  - "🎁➡️🏆 Give and Take: A Revolutionary Approach to Success"
+title: "🎁➡️🏆 Give and Take: A Revolutionary Approach to Success"
 URL: https://bagrounds.org/books/give-and-take
 Author: 
 tags: 
+affiliate link: https://amzn.to/3ZCD26X
 ---
 [Home](../index.md) > [Books](./index.md)  
-# Give and Take  
+# 🎁➡️🏆 Give and Take: A Revolutionary Approach to Success  
+[🛒 Give and Take: A Revolutionary Approach to Success. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3ZCD26X)  
+  
 ## 🤖 AI Summary  
   
 #### TLDR 🤔    

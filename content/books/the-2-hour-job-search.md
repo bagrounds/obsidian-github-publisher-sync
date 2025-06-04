@@ -1,15 +1,17 @@
 ---
 share: true
 aliases:
-  - The 2-Hour Job Search
-title: The 2-Hour Job Search
+  - "⏳💻💼🎯 The 2-Hour Job Search: Using Technology to Get the Right Job Faster"
+title: "⏳💻💼🎯 The 2-Hour Job Search: Using Technology to Get the Right Job Faster"
 URL: https://bagrounds.org/books/the-2-hour-job-search
 Author: "[[Steve Dalton]]"
 tags: 
+affiliate link: https://amzn.to/3Sx4leV
 ---
 [Home](../index.md) > [Books](./index.md)  
-# The 2-Hour Job Search  
-_Using Technology to Get the Right Job Faster_  
+# ⏳💻💼🎯 The 2-Hour Job Search: Using Technology to Get the Right Job Faster  
+[🛒 The 2-Hour Job Search: Using Technology to Get the Right Job Faster. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3Sx4leV)  
+  
 ## 🤖 AI Summary  
 ### TL;DR 💡  
 - Invest about two focused hours to create a prioritized target list (the LAMP list) that leverages technology and your network, transforming a chaotic job search into a systematic, sales funnel–like process designed to secure informational interviews and drive job opportunities. 🚀📊  

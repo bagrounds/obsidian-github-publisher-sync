@@ -1,16 +1,18 @@
 ---
 share: true
 aliases:
-  - "Elasticsearch: The Definitive Guide"
-title: "Elasticsearch: The Definitive Guide"
+  - "⚡🔍👑📖 Elasticsearch: The Definitive Guide"
+title: "⚡🔍👑📖 Elasticsearch: The Definitive Guide"
 URL: https://bagrounds.org/books/elasticsearch-the-definitive-guide
 Author: 
 tags: 
+affiliate link: https://amzn.to/4dOURFt
 ---
 [Home](../index.md) > [Books](./index.md)  
-# Elasticsearch: The Definitive Guide  
+# ⚡🔍👑📖 Elasticsearch: The Definitive Guide  
+[🛒 Elasticsearch: The Definitive Guide. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4dOURFt)  
+  
 ## 🤖 AI Summary  
-Got it! Here's the book report with even more emojis:  
   
 ### 📖 Book Report: Elasticsearch: The Definitive Guide 🚀  
   

@@ -1,14 +1,17 @@
 ---
 share: true
 aliases:
-  - Peril
-title: Peril
+  - ⚠️😬😰 Peril
+title: ⚠️😬😰 Peril
 URL: https://bagrounds.org/books/peril
 Author: 
 tags: 
+affiliate link: https://amzn.to/4kq0rk3
 ---
 [Home](../index.md) > [Books](./index.md)  
-# Peril  
+# ⚠️😬😰 Peril  
+[🛒 Peril. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4kq0rk3)  
+  
 ## 🤖 AI Summary  
 ### Peril  
 by Bob Woodward and Robert Costa  

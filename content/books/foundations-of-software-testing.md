@@ -1,14 +1,17 @@
 ---
 share: true
 aliases:
-  - Foundations of Software Testing
-title: Foundations of Software Testing
+  - 🧱✅🐛 Foundations of Software Testing
+title: 🧱✅🐛 Foundations of Software Testing
 URL: https://bagrounds.org/books/foundations-of-software-testing
 Author: 
 tags: 
+affiliate link: https://amzn.to/45DF6Px
 ---
 [Home](../index.md) > [Books](./index.md)  
-# Foundations of Software Testing  
+# 🧱✅🐛 Foundations of Software Testing  
+[🛒 Foundations of Software Testing. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/45DF6Px)  
+  
 ## 🤖 AI Summary  
 ### 📖 Book Report: Foundations of Software Testing by Aditya P. Mathur  
 #### 📝 TL;DR  

@@ -1,16 +1,16 @@
 ---
 share: true
 aliases:
-  - "🤓🕵️‍♂️❓ Hidden Freakonomics: A Rogue Economist Explores the Hidden Side of Everything"
-title: "🤓🕵️‍♂️❓ Hidden Freakonomics: A Rogue Economist Explores the Hidden Side of Everything"
+  - "🤓🕵️‍♂️❓ Freakonomics: A Rogue Economist Explores the Hidden Side of Everything"
+title: "🤓🕵️‍♂️❓ Freakonomics: A Rogue Economist Explores the Hidden Side of Everything"
 URL: https://bagrounds.org/books/freakonomics
 Author: 
 tags: 
 affiliate link: https://amzn.to/3Zf86tf
 ---
 [Home](../index.md) > [Books](./index.md)  
-# 🤓🕵️‍♂️❓ Hidden Freakonomics: A Rogue Economist Explores the Hidden Side of Everything  
-[🛒 Hidden Freakonomics: A Rogue Economist Explores the Hidden Side of Everything. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3Zf86tf)  
+# 🤓🕵️‍♂️❓ Freakonomics: A Rogue Economist Explores the Hidden Side of Everything  
+[🛒 Freakonomics: A Rogue Economist Explores the Hidden Side of Everything. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3Zf86tf)  
   
 ## 🤖 AI Summary  
   

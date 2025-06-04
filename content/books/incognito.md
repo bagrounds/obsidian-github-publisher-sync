@@ -1,14 +1,17 @@
 ---
 share: true
 aliases:
-  - "Incognito: The Secret Lives of the Brain"
-title: "Incognito: The Secret Lives of the Brain"
+  - "🎭🤫🧠 Incognito: The Secret Lives of the Brain"
+title: "🎭🤫🧠 Incognito: The Secret Lives of the Brain"
 URL: https://bagrounds.org/books/incognito
 Author: 
 tags: 
+affiliate link: https://amzn.to/3ZN7SJO
 ---
 [Home](../index.md) > [Books](./index.md)  
-# Incognito  
+# 🎭🤫🧠 Incognito: The Secret Lives of the Brain  
+[🛒 Incognito: The Secret Lives of the Brain. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3ZN7SJO)  
+  
 ## 🤖 AI Summary  
 ### 🧠 TL;DR  
   

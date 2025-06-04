@@ -1,14 +1,17 @@
 ---
 share: true
 aliases:
-  - Head First Statistics
-title: Head First Statistics
+  - "🧠🤓📈💡 Head First Statistics: A Brain-Friendly Guide"
+title: "🧠🤓📈💡 Head First Statistics: A Brain-Friendly Guide"
 URL: https://bagrounds.org/books/head-first-statistics
 Author: 
 tags: 
+affiliate link: https://amzn.to/4jzIcaU
 ---
 [Home](../index.md) > [Books](./index.md)  
-# Head First Statistics  
+# 🧠🤓📈💡 Head First Statistics: A Brain-Friendly Guide  
+[🛒 Head First Statistics: A Brain-Friendly Guide. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4jzIcaU)  
+  
 ## 🤖 AI Summary  
 ### Head First Statistics Summary 📊  
 **📚 TL;DR:** "Head First Statistics" provides a visual 👁️ and intuitive introduction to statistical concepts, making them accessible through real-world 🌍 examples and interactive 🎮 exercises, empowering 💪 readers to understand 🧠 and apply statistical thinking in practical situations.  

@@ -1,14 +1,17 @@
 ---
 share: true
 aliases:
-  - The Nordic Theory of Everything
-title: The Nordic Theory of Everything
-URL: https://bagrounds.org/books/The Nordic Theory of Everything
+  - "🇸🇪🇩🇰🇳🇴🇫🇮🧩 The Nordic Theory of Everything: In Search of a Better Life"
+title: "🇸🇪🇩🇰🇳🇴🇫🇮🧩 The Nordic Theory of Everything: In Search of a Better Life"
+URL: https://bagrounds.org/books/the-nordic-theory-of-everything
 Author: 
 tags: 
+affiliate link: https://amzn.to/43FiD21
 ---
 [Home](../index.md) > [Books](./index.md)  
-# The Nordic Theory of Everything  
+# 🇸🇪🇩🇰🇳🇴🇫🇮🧩 The Nordic Theory of Everything: In Search of a Better Life  
+[🛒 The Nordic Theory of Everything: In Search of a Better Life. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/43FiD21)  
+  
 ## 🤖 AI Summary  
 ### The Nordic Theory of Everything by Anu Partanen 🌍  
   

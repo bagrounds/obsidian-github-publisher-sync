@@ -1,14 +1,17 @@
 ---
 share: true
 aliases:
-  - "Ikigai: The Japanese Secret to a Long and Happy Life"
-title: "Ikigai: The Japanese Secret to a Long and Happy Life"
+  - "🇯🇵🔑😊💯 Ikigai: The Japanese Secret to a Long and Happy Life"
+title: "🇯🇵🔑😊💯 Ikigai: The Japanese Secret to a Long and Happy Life"
 URL: https://bagrounds.org/books/ikigai
 Author: 
 tags: 
+affiliate link: https://amzn.to/4jzQLm4
 ---
 [Home](../index.md) > [Books](./index.md)  
-# Ikigai: The Japanese Secret to a Long and Happy Life  
+# 🇯🇵🔑😊💯 Ikigai: The Japanese Secret to a Long and Happy Life  
+[🛒 Ikigai: The Japanese Secret to a Long and Happy Life. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4jzQLm4)  
+  
 ## 🤖 AI Summary  
 ### 📖 Book Report: Ikigai: The Japanese Secret to a Long and Happy Life 🌸  
   

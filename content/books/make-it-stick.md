@@ -1,14 +1,17 @@
 ---
 share: true
 aliases:
-  - Make It Stick
-title: Make It Stick
+  - "🧠🔒 Make It Stick: The Science of Successful Learning"
+title: "🧠🔒 Make It Stick: The Science of Successful Learning"
 URL: https://bagrounds.org/books/make-it-stick
 Author: 
 tags: 
+affiliate link: https://amzn.to/3HoJAQh
 ---
 [Home](../index.md) > [Books](./index.md)  
-# Make It Stick  
+# 🧠🔒 Make It Stick: The Science of Successful Learning  
+[🛒 Make It Stick: The Science of Successful Learning. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3HoJAQh)  
+  
 ## 🤖 AI Summary  
 ### 🧠 Make It Stick - The Science of Successful Learning  
 **TL;DR:** Effective learning requires active retrieval, spaced repetition, interleaving, and varied practice to build durable knowledge, challenging the common belief that easy, passive study is optimal.  

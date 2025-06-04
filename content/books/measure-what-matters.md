@@ -1,14 +1,17 @@
 ---
 share: true
 aliases:
-  - Measure What Matters
-title: Measure What Matters
+  - "📈🎯✅📏 Measure What Matters: How Google, Bono, and the Gates Foundation Rock the World with OKRs"
+title: "📈🎯✅📏 Measure What Matters: How Google, Bono, and the Gates Foundation Rock the World with OKRs"
 URL: https://bagrounds.org/books/measure-what-matters
 Author: 
 tags: 
+affiliate link: https://amzn.to/4jSIGcp
 ---
 [Home](../index.md) > [Books](./index.md)  
-# Measure What Matters  
+# 📈🎯✅📏 Measure What Matters: How Google, Bono, and the Gates Foundation Rock the World with OKRs  
+[🛒 Measure What Matters: How Google, Bono, and the Gates Foundation Rock the World with OKRs. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4jSIGcp)  
+  
 ## 🤖 AI Summary  
 ### **TL;DR:** 🎯  
 "Measure What Matters" advocates for using Objectives and Key Results (OKRs) as a framework for goal setting and tracking, emphasizing alignment, transparency, and agility in achieving ambitious goals across organizations.  

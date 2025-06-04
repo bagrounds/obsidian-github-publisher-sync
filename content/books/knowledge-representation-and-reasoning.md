@@ -1,15 +1,17 @@
 ---
 share: true
 aliases:
-  - Knowledge Representation and Reasoning
-title: Knowledge Representation and Reasoning
+  - 🧠🔗🤔💡 Knowledge Representation and Reasoning
+title: 🧠🔗🤔💡 Knowledge Representation and Reasoning
 URL: https://bagrounds.org/books/knowledge-representation-and-reasoning
 Author: 
 tags: 
+affiliate link: https://amzn.to/4knpJ2j
 ---
 [Home](../index.md) > [Books](./index.md)  
-# Knowledge Representation and Reasoning  
+# 🧠🔗🤔💡 Knowledge Representation and Reasoning  
 by Ronald Brachman and Hector Levesque  
+[🛒 Knowledge Representation and Reasoning. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4knpJ2j)  
   
 ## 🤖 AI Summary  
 ### TL;DR 🤓  

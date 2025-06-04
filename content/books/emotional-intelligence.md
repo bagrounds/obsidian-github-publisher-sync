@@ -1,14 +1,17 @@
 ---
 share: true
 aliases:
-  - Emotional Intelligence
-title: Emotional Intelligence
+  - "❤️🧠📈🤔 Emotional Intelligence: Why It Can Matter More Than IQ"
+title: "❤️🧠📈🤔 Emotional Intelligence: Why It Can Matter More Than IQ"
 URL: https://bagrounds.org/books/emotional-intelligence
 Author: 
 tags: 
+affiliate link: https://amzn.to/45GkyG9
 ---
 [Home](../index.md) > [Books](./index.md)  
-# Emotional Intelligence  
+# ❤️🧠📈🤔 Emotional Intelligence: Why It Can Matter More Than IQ  
+[🛒 Emotional Intelligence: Why It Can Matter More Than IQ. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/45GkyG9)  
+  
 ## 🤖 AI Summary  
 ### 📝 TLDR  
 🧠 Emotional Intelligence argues that the ability to 😥 understand and 🧘 manage our own emotions—and those of 🫂 others—is as 💯 critical to 🚀 success and ⚕️ well-being as 🎓 traditional cognitive intelligence.  

@@ -1,14 +1,17 @@
 ---
 share: true
 aliases:
-  - "Longitude: The True Story of a Lone Genius Who Solved the Greatest Scientific Problem of His Time"
-title: "Longitude: The True Story of a Lone Genius Who Solved the Greatest Scientific Problem of His Time"
+  - "🧭🕰️🥇🗺️ Longitude: The True Story of a Lone Genius Who Solved the Greatest Scientific Problem of His Time"
+title: "🧭🕰️🥇🗺️ Longitude: The True Story of a Lone Genius Who Solved the Greatest Scientific Problem of His Time"
 URL: https://bagrounds.org/books/longitude
 Author: 
 tags: 
+affiliate link: https://amzn.to/4mRMhds
 ---
 [Home](../index.md) > [Books](./index.md)  
-# Longitude: The True Story of a Lone Genius Who Solved the Greatest Scientific Problem of His Time  
+# 🧭🕰️🥇🗺️ Longitude: The True Story of a Lone Genius Who Solved the Greatest Scientific Problem of His Time  
+[🛒 Longitude: The True Story of a Lone Genius Who Solved the Greatest Scientific Problem of His Time. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4mRMhds)  
+  
 ## 🤖 AI Summary  
 ### 🧭 TL;DR  
 John Harrison, a self-taught clockmaker, revolutionized navigation by inventing the marine chronometer, solving the centuries-old problem of accurately determining longitude at sea.  

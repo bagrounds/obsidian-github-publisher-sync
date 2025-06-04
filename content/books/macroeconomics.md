@@ -1,15 +1,15 @@
 ---
 share: true
 aliases:
-  - 📈🌍💰📊📈 Macroeconomics
-title: 📈🌍💰📊📈 Macroeconomics
+  - 🌍💰📊 Macroeconomics
+title: 🌍💰📊 Macroeconomics
 URL: https://bagrounds.org/books/macroeconomics
 Author: 
 tags: 
 affiliate link: https://amzn.to/4kKTAlL
 ---
 [Home](../index.md) > [Books](./index.md)  
-# 📈🌍💰📊📈 Macroeconomics  
+# 🌍💰📊 Macroeconomics  
 ## 🤖 AI Summary  
 ### 📖 Book Report: Macroeconomics  
 by William Mitchell, L. Randall Wray, and Martin Watts  

@@ -1,23 +1,22 @@
 ---
 share: true
 aliases:
-  - The Talent Code
-title: The Talent Code
+  - "👶🌱📈 The Talent Code: Greatness Isn't Born. It's Grown. Here's How."
+title: "👶🌱📈 The Talent Code: Greatness Isn't Born. It's Grown. Here's How."
 URL: https://bagrounds.org/books/the-talent-code
 Author: 
 tags: 
+affiliate link: https://amzn.to/3T5TkkP
 ---
 [Home](../index.md) > [Books](./index.md)  
-# The Talent Code  
-## 🤖 AI Summary  
-### 💬 [Gemini](https://gemini.google.com) Prompt  
-> Summarize the book: The Talent Code: Greatness Isn't Born. It's Grown. Start the summary with a TLDR - a single statement that conveys a maximum of the useful information provided in the book. Follow this with a deep dive. Catalogue the topics, methods, and research discussed. Be sure to highlight any significant theories, theses, or mental models proposed. Provide a critical analysis of the quality of the information presented, using scientific backing, author credentials, authoritative reviews, and other markers of high quality information as justification. Emphasize practical takeaways. Make the following additional book recommendations: the best alternate book on the same topic, the best book that is tangentially related, the best book that is diametrically opposed, and the best fiction book that incorporates related ideas. Format your response as markdown, starting at heading level H4, with inline links, for easy copy paste. Use meaningful emojis liberally to enhance readability, especially in headings and as bullets for lists.  
+# 👶🌱📈 The Talent Code: Greatness Isn't Born. It's Grown. Here's How.  
+[🛒 The Talent Code: Greatness Isn't Born. It's Grown. Here's How.. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3T5TkkP)  
   
-### Response  
-#### TLDR  
+## 🤖 AI Summary  
+### TLDR  
 Greatness is not innate but developed through deep practice, ignition (motivation), and master coaching, which cultivates myelin growth, the key to skill acquisition.  
   
-#### Deep Dive 🧠  
+### Deep Dive 🧠  
 Daniel Coyle's "The Talent Code" argues that talent isn't a mysterious gift, but a learned skill. He explores "talent hotbeds" around the world, places where exceptional individuals emerge in disproportionate numbers, to uncover the secrets behind skill development.  
   
 **Topics, Methods, and Research:**  
@@ -59,6 +58,9 @@ Daniel Coyle's "The Talent Code" argues that talent isn't a mysterious gift, but
   
 **Book Recommendations:**  
 * **Best Alternate Book on the Same Topic:** "[Peak](./peak.md): Secrets from the New Science of Expertise" by Anders Ericsson and Robert Pool. This book delves deeper into the science of deliberate practice. 📚  
-* **Best Tangentially Related Book:** "[Mindset](./mindset.md): The New Psychology of Success" by Carol S. Dweck. This book explores the importance of a growth mindset in achieving success. 🧠  
+* **Best Tangentially Related Book:** [🌱🧘🏼‍♀️🏆 Mindset: The New Psychology of Success](./mindset.md) by Carol S. Dweck. This book explores the importance of a growth mindset in achieving success. 🧠  
 * **Best Diametrically Opposed Book:** "Born to Run: A Hidden Tribe, Superathletes, and the Greatest Race the World Has Never Seen" by Christopher McDougall. While not strictly opposed, it emphasizes the innate abilities of certain individuals and cultures, contrasting with Coyle's focus on learned skills. 🏃  
 * **Best Fiction Book That Incorporates Related Ideas:** "Ender's Game" by Orson Scott Card. This science fiction novel explores the development of exceptional talent through rigorous training and practice, highlighting the power of focused effort and strategic thinking. 🎮  
+  
+## 💬 [Gemini](https://gemini.google.com) Prompt  
+> Summarize the book: The Talent Code: Greatness Isn't Born. It's Grown. Start the summary with a TLDR - a single statement that conveys a maximum of the useful information provided in the book. Follow this with a deep dive. Catalogue the topics, methods, and research discussed. Be sure to highlight any significant theories, theses, or mental models proposed. Provide a critical analysis of the quality of the information presented, using scientific backing, author credentials, authoritative reviews, and other markers of high quality information as justification. Emphasize practical takeaways. Make the following additional book recommendations: the best alternate book on the same topic, the best book that is tangentially related, the best book that is diametrically opposed, and the best fiction book that incorporates related ideas. Format your response as markdown, starting at heading level H4, with inline links, for easy copy paste. Use meaningful emojis liberally to enhance readability, especially in headings and as bullets for lists.

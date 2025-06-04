@@ -1,14 +1,17 @@
 ---
 share: true
 aliases:
-  - Dynamical Systems in Neuroscience
-title: Dynamical Systems in Neuroscience
+  - "🧠💥📈💡🎆 Dynamical Systems in Neuroscience: The Geometry of Excitability and Bursting"
+title: "🧠💥📈💡🎆 Dynamical Systems in Neuroscience: The Geometry of Excitability and Bursting"
 URL: https://bagrounds.org/books/dynamical-systems-in-neuroscience
 Author: 
 tags: 
+affiliate link: https://amzn.to/4dHj3cM
 ---
 [Home](../index.md) > [Books](./index.md)  
-# Dynamical Systems in Neuroscience  
+# 🧠💥📈💡🎆 Dynamical Systems in Neuroscience: The Geometry of Excitability and Bursting  
+[🛒 Dynamical Systems in Neuroscience: The Geometry of Excitability and Bursting. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4dHj3cM)  
+  
 ## 🤖 AI Summary  
 ### Dynamical Systems in Neuroscience: A Summary 🧠  
   

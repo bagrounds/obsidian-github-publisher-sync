@@ -1,16 +1,16 @@
 ---
 share: true
 aliases:
-  - "🔌😁🧠🔬 Hardwiring Happiness: The Brain Science That Changes Everything"
-title: "🔌😁🧠🔬 Hardwiring Happiness: The Brain Science That Changes Everything"
+  - "🔌😁🧠🔬 Hardwiring Happiness: The New Brain Science of Contentment, Calm, and Confidence"
+title: "🔌😁🧠🔬 Hardwiring Happiness: The New Brain Science of Contentment, Calm, and Confidence"
 URL: https://bagrounds.org/books/hardwiring-happiness-the-brain-science-that-changes-everything
 Author: 
 tags: 
-affiliate link: https://amzn.to/43QfrRp
+affiliate link: https://amzn.to/45LixIK
 ---
 [Home](../index.md) > [Books](./index.md)  
-# 🔌😁🧠🔬 Hardwiring Happiness: The Brain Science That Changes Everything  
-[🛒 Hardwiring Happiness: The Brain Science That Changes Everything. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/43QfrRp)  
+# 🔌😁🧠🔬 Hardwiring Happiness: The New Brain Science of Contentment, Calm, and Confidence  
+[🛒 Hardwiring Happiness: The New Brain Science of Contentment, Calm, and Confidence. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/45LixIK)  
   
 ## 🤖 AI Summary  
 ### Hardwiring Happiness: The Brain Science That Changes Everything 🧠✨  

@@ -1,14 +1,17 @@
 ---
 share: true
 aliases:
-  - The New Economics
-title: The New Economics
+  - "📈🏛️🏫 The New Economics: For Industry, Government, Education"
+title: "📈🏛️🏫 The New Economics: For Industry, Government, Education"
 URL: https://bagrounds.org/books/the-new-economics
 Author: 
 tags: 
+affiliate link: https://amzn.to/45aOdam
 ---
 [Home](../index.md) > [Books](./index.md)  
-# The New Economics  
+# 📈🏛️🏫 The New Economics: For Industry, Government, Education  
+[🛒 The New Economics: For Industry, Government, Education. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/45aOdam)  
+  
 ## 🤖 AI Summary  
 ### 📚 The New Economics: Summary and Analysis  
 #### TL;DR 🎯  

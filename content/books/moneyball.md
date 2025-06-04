@@ -1,14 +1,17 @@
 ---
 share: true
 aliases:
-  - Moneyball
-title: Moneyball
+  - "📉⚾💰 Moneyball: The Art of Winning an Unfair Game"
+title: "📉⚾💰 Moneyball: The Art of Winning an Unfair Game"
 URL: https://bagrounds.org/books/moneyball
 Author: 
 tags: 
+affiliate link: https://amzn.to/4ko04qa
 ---
 [Home](../index.md) > [Books](./index.md)  
-# Moneyball  
+# 📉⚾💰 Moneyball: The Art of Winning an Unfair Game  
+[🛒 Moneyball: The Art of Winning an Unfair Game. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4ko04qa)  
+  
 ## 🤖 AI Summary  
 ### Moneyball: The Art of Winning an Unfair Game by Michael Lewis ⚾️  
 **TL;DR:** By challenging conventional baseball wisdom and leveraging undervalued statistical analysis (sabermetrics), the Oakland Athletics, led by Billy Beane, built a competitive team on a shoestring budget.  

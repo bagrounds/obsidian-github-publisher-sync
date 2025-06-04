@@ -1,14 +1,21 @@
 ---
 share: true
 aliases:
-  - Feedback Control of Dynamic Systems
-title: Feedback Control of Dynamic Systems
+  - |-
+    ⚙️📈🔄🎯 
+    Feedback Control of Dynamic Systems
+title: |-
+  ⚙️📈🔄🎯 
+  Feedback Control of Dynamic Systems
 URL: https://bagrounds.org/books/feedback-control-of-dynamic-systems
 Author: 
 tags: 
+affiliate link: https://amzn.to/459IjXa
 ---
 [Home](../index.md) > [Books](./index.md)  
-# Feedback Control of Dynamic Systems  
+# ⚙️📈🔄🎯 Feedback Control of Dynamic Systems  
+[🛒 Feedback Control of Dynamic Systems. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/459IjXa)  
+  
 ## 🤖 AI Summary  
 ### 📖 Feedback Control of Dynamic Systems  
   

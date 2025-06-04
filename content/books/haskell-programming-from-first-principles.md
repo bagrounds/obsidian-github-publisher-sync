@@ -1,14 +1,14 @@
 ---
 share: true
 aliases:
-  - Haskell Programming from First Principles
-title: Haskell Programming from First Principles
+  - 🐣🌱👨‍🏫💻 Haskell Programming from First Principles
+title: 🐣🌱👨‍🏫💻 Haskell Programming from First Principles
 URL: https://bagrounds.org/books/haskell-programming-from-first-principles
 Author: 
 tags: 
 ---
 [Home](../index.md) > [Books](./index.md)  
-# Haskell Programming from First Principles  
+# 🐣🌱👨‍🏫💻 Haskell Programming from First Principles  
 ## 🔗 Links  
 - [Haskell Programming from First Principles: What's in the book?](https://haskellbook.com/progress)  
   

@@ -1,14 +1,17 @@
 ---
 share: true
 aliases:
-  - Learn You a Haskell for Great Good!
-title: Learn You a Haskell for Great Good!
+  - 👨‍🏫🎉👍✨ Learn You a Haskell for Great Good!
+title: 👨‍🏫🎉👍✨ Learn You a Haskell for Great Good!
 URL: https://bagrounds.org/books/learn-you-a-haskell-for-great-good
 Author: 
 tags: 
+affiliate link: https://amzn.to/3HmgMHV
 ---
 [Home](../index.md) > [Books](./index.md)  
-# Learn You a Haskell for Great Good!  
+# 👨‍🏫🎉👍✨ Learn You a Haskell for Great Good!  
+[🛒 Learn You a Haskell for Great Good!. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3HmgMHV)  
+  
 ## 🔗 Links  
 - https://learnyouahaskell.com  
   

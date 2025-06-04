@@ -1,14 +1,16 @@
 ---
 share: true
 aliases:
-  - "Don't Make Me Think, Revisited: A Common Sense Approach to Web Usability"
-title: "Don't Make Me Think, Revisited: A Common Sense Approach to Web Usability"
+  - "🚫💭🌐 Don't Make Me Think, Revisited: A Common Sense Approach to Web Usability"
+title: "🚫💭🌐 Don't Make Me Think, Revisited: A Common Sense Approach to Web Usability"
 URL: https://bagrounds.org/books/dont-make-me-think-revisited
 Author: 
 tags: 
+affiliate link: https://amzn.to/3HF6Qt9
 ---
 [Home](../index.md) > [Books](./index.md)  
-# Don't Make Me Think, Revisited: A Common Sense Approach to Web Usability  
+# 🚫💭🌐 Don't Make Me Think, Revisited: A Common Sense Approach to Web Usability  
+[🛒 Don't Make Me Think, Revisited: A Common Sense Approach to Web Usability. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3HF6Qt9)  
   
 ## 🤖 AI Summary  
 ### Don't Make Me Think, Revisited 🤔  

@@ -1,14 +1,17 @@
 ---
 share: true
 aliases:
-  - "Hardwiring Happiness: The Brain Science That Changes Everything"
-title: "Hardwiring Happiness: The Brain Science That Changes Everything"
+  - "🔌😁🧠🔬 Hardwiring Happiness: The Brain Science That Changes Everything"
+title: "🔌😁🧠🔬 Hardwiring Happiness: The Brain Science That Changes Everything"
 URL: https://bagrounds.org/books/hardwiring-happiness-the-brain-science-that-changes-everything
 Author: 
 tags: 
+affiliate link: https://amzn.to/43QfrRp
 ---
 [Home](../index.md) > [Books](./index.md)  
-# Hardwiring Happiness: The Brain Science That Changes Everything  
+# 🔌😁🧠🔬 Hardwiring Happiness: The Brain Science That Changes Everything  
+[🛒 Hardwiring Happiness: The Brain Science That Changes Everything. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/43QfrRp)  
+  
 ## 🤖 AI Summary  
 ### Hardwiring Happiness: The Brain Science That Changes Everything 🧠✨  
 **TL;DR:** You can actively rewire your brain for lasting happiness by focusing on positive experiences and internalizing them using the HEAL technique, regardless of past trauma or current circumstances.  

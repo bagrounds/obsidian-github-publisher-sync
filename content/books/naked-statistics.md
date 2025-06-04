@@ -1,14 +1,17 @@
 ---
 share: true
 aliases:
-  - Naked Statistics
-title: Naked Statistics
+  - "🙈📊🔢 Naked Statistics: Stripping the Dread from the Data"
+title: "🙈📊🔢 Naked Statistics: Stripping the Dread from the Data"
 URL: https://bagrounds.org/books/naked-statistics
 Author: 
 tags: 
+affiliate link: https://amzn.to/4jAC4PG
 ---
 [Home](../index.md) > [Books](./index.md)  
-# Naked Statistics  
+# 🙈📊🔢 Naked Statistics: Stripping the Dread from the Data  
+[🛒 Naked Statistics: Stripping the Dread from the Data. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4jAC4PG)  
+  
 ## 🤖 AI Summary  
 ### Naked Statistics: Stripping the Dread from the Data 📊  
 **TL;DR:** *Naked Statistics* 🙈📊 demystifies statistics by explaining core concepts through 💡 real-world examples, making complex ideas 🧠 accessible and showing how data 🧮 can be both 💪 powerful and ⚠️ misleading.  

@@ -1,15 +1,17 @@
 ---
 share: true
 aliases:
-  - On Democracy
-title: On Democracy
+  - 🏛️🗳️🗣️🤝 On Democracy
+title: 🏛️🗳️🗣️🤝 On Democracy
 URL: https://bagrounds.org/books/on-democracy
 Author: 
 tags: 
+affiliate link: https://amzn.to/4dLzFAp
 ---
 [Home](../index.md) > [Books](./index.md)  
-# On Democracy  
+# 🏛️🗳️🗣️🤝 On Democracy  
 by Robert Dahl  
+[🛒 On Democracy. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4dLzFAp)  
   
 ## 🤖 AI Summary  
 ### TL;DR 🧐  

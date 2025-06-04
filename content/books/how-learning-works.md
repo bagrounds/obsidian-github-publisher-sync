@@ -1,14 +1,17 @@
 ---
 share: true
 aliases:
-  - How Learning Works
-title: How Learning Works
+  - "🧠📚🍎💡📝 How Learning Works: Eight Research-Based Principles for Smart Teaching"
+title: "🧠📚🍎💡📝 How Learning Works: Eight Research-Based Principles for Smart Teaching"
 URL: https://bagrounds.org/books/how-learning-works
 Author: 
 tags: 
+affiliate link: https://amzn.to/3SAmrNa
 ---
 [Home](../index.md) > [Books](./index.md)  
-# How Learning Works  
+# 🧠📚🍎💡📝 How Learning Works: Eight Research-Based Principles for Smart Teaching  
+[🛒 How Learning Works: Eight Research-Based Principles for Smart Teaching. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3SAmrNa)  
+  
 ## 🤖 AI Summary  
 ### TL;DR: How Learning Works: Seven Research-Based Principles for Smart Teaching Summary 🧠  
 Effective teaching hinges on understanding and applying seven core principles derived from cognitive science, including prior knowledge, organization, motivation, mastery, practice, self-direction, and course climate, to foster meaningful and lasting learning.  

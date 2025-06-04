@@ -1,15 +1,17 @@
 ---
 share: true
 aliases:
-  - "On Tyranny: Twenty Lessons from the Twentieth Century"
-title: "On Tyranny: Twenty Lessons from the Twentieth Century"
+  - "👑🚫📜2️⃣0️⃣ On Tyranny: Twenty Lessons from the Twentieth Century"
+title: "👑🚫📜2️⃣0️⃣ On Tyranny: Twenty Lessons from the Twentieth Century"
 URL: https://bagrounds.org/books/on-tyranny
 Author: 
 tags: 
+affiliate link: https://amzn.to/4jDxSib
 ---
 [Home](../index.md) > [Books](./index.md)  
-# On Tyranny: Twenty Lessons from the Twentieth Century  
+# 👑🚫📜2️⃣0️⃣ On Tyranny: Twenty Lessons from the Twentieth Century  
 by Timothy Snyder  
+[🛒 2️⃣0️⃣ On Tyranny: Twenty Lessons from the Twentieth Century. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4jDxSib)  
   
 ## 🤖 AI Summary  
 ### On Tyranny 📜  

@@ -1,15 +1,18 @@
 ---
 share: true
 aliases:
-  - The Science of Storytelling
-title: The Science of Storytelling
+  - "🔬🗣️🎭 The Science of Storytelling: Why Stories Make Us Human and How to Tell Them Better"
+title: "🔬🗣️🎭 The Science of Storytelling: Why Stories Make Us Human and How to Tell Them Better"
 URL: 
 Author: 
 tags: 
+affiliate link: https://amzn.to/43JcK3N
 ---
 [Home](../index.md) > [Books](./index.md)  
-# The Science of Storytelling  
+# 🔬🗣️🎭 The Science of Storytelling: Why Stories Make Us Human and How to Tell Them Better  
 by Will Storr  
+[🛒 The Science of Storytelling: Why Stories Make Us Human and How to Tell Them Better. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/43JcK3N)  
+  
 ## 🤖 AI Summary  
 ### **TL;DR** 🤯  
   

@@ -1,14 +1,17 @@
 ---
 share: true
 aliases:
-  - "River of the Gods: Genius, Belief, and Betrayal in the Search for the Source of the Nile"
-title: "River of the Gods: Genius, Belief, and Betrayal in the Search for the Source of the Nile"
+  - "🌊🧠🙏⚔️ River of the Gods: Genius, Belief, and Betrayal in the Search for the Source of the Nile"
+title: "🌊🧠🙏⚔️ River of the Gods: Genius, Belief, and Betrayal in the Search for the Source of the Nile"
 URL: https://bagrounds.org/books/river-of-the-gods
 Author: 
 tags: 
+affiliate link: https://amzn.to/3FnUVQ1
 ---
 [Home](../index.md) > [Books](./index.md)  
-# River of the Gods: Genius, Belief, and Betrayal in the Search for the Source of the Nile  
+# 🌊🧠🙏⚔️ River of the Gods: Genius, Belief, and Betrayal in the Search for the Source of the Nile  
+[🛒 River of the Gods: Genius, Belief, and Betrayal in the Search for the Source of the Nile. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3FnUVQ1)  
+  
 ## 🤖 AI Summary  
 ### River of the Gods: Genius, Belief, and Betrayal in the Search for the Source of the Nile 🏞️  
   

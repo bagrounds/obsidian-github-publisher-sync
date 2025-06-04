@@ -1,14 +1,17 @@
 ---
 share: true
 aliases:
-  - Predictably Irrational
-title: Predictably Irrational
+  - "🔮🤷🏼‍♀️🤪 Predictably Irrational, Revised and Expanded Edition: The Hidden Forces That Shape Our Decisions"
+title: "🔮🤷🏼‍♀️🤪 Predictably Irrational, Revised and Expanded Edition: The Hidden Forces That Shape Our Decisions"
 URL: https://bagrounds.org/books/predictably-irrational
 Author: 
 tags: 
+affiliate link: https://amzn.to/4knUDaJ
 ---
 [Home](../index.md) > [Books](./index.md)  
-# Predictably Irrational  
+# 🔮🤷🏼‍♀️🤪 Predictably Irrational, Revised and Expanded Edition: The Hidden Forces That Shape Our Decisions  
+[🛒 Predictably Irrational, Revised and Expanded Edition: The Hidden Forces That Shape Our Decisions. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4knUDaJ)  
+  
 ## 🤖 AI Summary  
 ### ⏳ TL;DR  
 Predictably Irrational reveals how our decisions are frequently driven by irrational forces, often influenced by context, emotions, and ingrained habits, leading to predictable errors in judgment.  

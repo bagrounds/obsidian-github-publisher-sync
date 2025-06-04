@@ -1,14 +1,17 @@
 ---
 share: true
 aliases:
-  - "Made to Stick: Why Some Ideas Survive and Others Die"
-title: "Made to Stick: Why Some Ideas Survive and Others Die"
+  - "🧠🌱💀 Made to Stick: Why Some Ideas Survive and Others Die"
+title: "🧠🌱💀 Made to Stick: Why Some Ideas Survive and Others Die"
 URL: https://bagrounds.org/books/made-to-stick
 Author: 
 tags: 
+affiliate link: https://amzn.to/3FEYMIq
 ---
 [Home](../index.md) > [Books](./index.md)  
-# Made to Stick: Why Some Ideas Survive and Others Die  
+# 🧠🌱💀 Made to Stick: Why Some Ideas Survive and Others Die  
+[🛒 Made to Stick: Why Some Ideas Survive and Others Die. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3FEYMIq)  
+  
 ## 🤖 AI Summary  
 ### Made to Stick: Why Some Ideas Survive and Others Die 💡  
   

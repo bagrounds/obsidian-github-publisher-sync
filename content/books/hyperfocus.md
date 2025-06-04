@@ -1,14 +1,17 @@
 ---
 share: true
 aliases:
-  - Hyperfocus
-title: Hyperfocus
+  - "🎯👓🧠 Hyperfocus: How to Be More Productive in a World of Distraction"
+title: "🎯👓🧠 Hyperfocus: How to Be More Productive in a World of Distraction"
 URL: https://bagrounds.org/books/hyperfocus
 Author: 
 tags: 
+affiliate link: https://amzn.to/4dMMEll
 ---
 [Home](../index.md) > [Books](./index.md)  
-# Hyperfocus  
+# 🎯👓🧠 Hyperfocus: How to Be More Productive in a World of Distraction  
+[🛒 Hyperfocus: How to Be More Productive in a World of Distraction. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4dMMEll)  
+  
 ## 🤖 AI Summary  
 ### Hyperfocus: How to Manage Your Attention in a World of Distraction 🧠  
 **TL;DR:** Intentionally manage your attention by switching between hyperfocus (intense focus on a single task) and scatterfocus (deliberate mind wandering) to enhance productivity and creativity.  

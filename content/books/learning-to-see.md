@@ -1,16 +1,19 @@
 ---
 share: true
 aliases:
-  - Learning To See
-title: Learning To See
+  - "🙈👁️💡🤔 Learning to See: Value-Stream Mapping to Add Value and Eliminate MUDA"
+title: "🙈👁️💡🤔 Learning to See: Value-Stream Mapping to Add Value and Eliminate MUDA"
 URL: https://bagrounds.org/books/learning-to-see
 Author: 
 tags: 
+affiliate link: https://amzn.to/4kTIB9d
 ---
 [Home](../index.md) > [Books](./index.md)  
-# Learning To See  
+# 🙈👁️💡🤔 Learning to See: Value-Stream Mapping to Add Value and Eliminate MUDA  
+[🛒 Learning to See: Value-Stream Mapping to Add Value and Eliminate MUDA. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4kTIB9d)  
+  
 ## 🤖 AI Summary  
-### **Learning to See: Value-Stream Mapping to Add Value and Eliminate Muda** 🔍  
+### **Learning to See: Value-Stream Mapping to Add Value and Eliminate MUDA** 🔍  
 **TL;DR:** 📝 This book provides a practical, step-by-step guide to value-stream mapping, enabling organizations to identify and eliminate waste (muda) in their processes, ultimately improving efficiency and customer value.  
   
 **New or Surprising Perspective:** 💡 While many lean methodologies focus on individual process improvements, "Learning to See" emphasizes the **holistic view** of the entire value stream. It reveals how seemingly efficient individual steps can contribute to overall inefficiency when viewed from a broader perspective. This highlights the importance of understanding the flow of information and materials across an entire organization, not just isolated pockets. It also demystifies the mapping process, making it accessible to a wider audience.  

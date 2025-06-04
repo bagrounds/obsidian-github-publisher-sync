@@ -6,11 +6,11 @@ title: "📈🎯✅📏 Measure What Matters: How Google, Bono, and the Gates Fo
 URL: https://bagrounds.org/books/measure-what-matters
 Author: 
 tags: 
-affiliate link: https://amzn.to/4jSIGcp
+affiliate link: https://amzn.to/440jLPc
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 📈🎯✅📏 Measure What Matters: How Google, Bono, and the Gates Foundation Rock the World with OKRs  
-[🛒 Measure What Matters: How Google, Bono, and the Gates Foundation Rock the World with OKRs. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4jSIGcp)  
+[🛒 Measure What Matters: How Google, Bono, and the Gates Foundation Rock the World with OKRs. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/440jLPc)  
   
 ## 🤖 AI Summary  
 ### **TL;DR:** 🎯  

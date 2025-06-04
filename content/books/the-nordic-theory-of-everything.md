@@ -6,11 +6,11 @@ title: "🇸🇪🇩🇰🇳🇴🇫🇮🧩 The Nordic Theory of Everything: In
 URL: https://bagrounds.org/books/the-nordic-theory-of-everything
 Author: 
 tags: 
-affiliate link: https://amzn.to/43FiD21
+affiliate link: https://amzn.to/4jCN5Qm
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🇸🇪🇩🇰🇳🇴🇫🇮🧩 The Nordic Theory of Everything: In Search of a Better Life  
-[🛒 The Nordic Theory of Everything: In Search of a Better Life. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/43FiD21)  
+[🛒 The Nordic Theory of Everything: In Search of a Better Life. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4jCN5Qm)  
   
 ## 🤖 AI Summary  
 ### The Nordic Theory of Everything by Anu Partanen 🌍  

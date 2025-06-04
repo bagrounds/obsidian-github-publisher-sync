@@ -1,14 +1,17 @@
 ---
 share: true
 aliases:
-  - The Toyota Way
-title: The Toyota Way
+  - "🇯🇵⚙️📈💯 The Toyota Way: 14 Management Principles from the World's Greatest Manufacturer"
+title: "🇯🇵⚙️📈💯 The Toyota Way: 14 Management Principles from the World's Greatest Manufacturer"
 URL: https://bagrounds.org/books/the-toyota-way
 Author: 
 tags: 
+affiliate link: https://amzn.to/3Ho3dId
 ---
 [Home](../index.md) > [Books](./index.md)  
-# The Toyota Way  
+# 🇯🇵⚙️📈💯 The Toyota Way: 14 Management Principles from the World's Greatest Manufacturer  
+[🛒 The Toyota Way: 14 Management Principles from the World's Greatest Manufacturer. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3Ho3dId)  
+  
 ## 🤖 AI Summary  
 ### The Toyota Way Summary 🚗  
 **TL;DR:** The Toyota Way outlines a management philosophy focused on continuous improvement and respect for people, achieved through the Toyota Production System (TPS), which emphasizes eliminating waste and building a culture of learning and problem-solving.  

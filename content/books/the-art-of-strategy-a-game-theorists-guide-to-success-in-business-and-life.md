@@ -1,14 +1,17 @@
 ---
 share: true
 aliases:
-  - "The Art of Strategy: A Game Theorist's Guide to Success in Business and Life"
-title: "The Art of Strategy: A Game Theorist's Guide to Success in Business and Life"
+  - "♟️🧠📈🎯 The Art of Strategy: A Game Theorist's Guide to Success in Business and Life"
+title: "♟️🧠📈🎯 The Art of Strategy: A Game Theorist's Guide to Success in Business and Life"
 URL: https://bagrounds.org/books/the-art-of-strategy-a-game-theorists-guide-to-success-in-business-and-life
 Author: 
 tags: 
+affiliate link: https://amzn.to/4dQlUR1
 ---
 [Home](../index.md) > [Books](./index.md)  
-# The Art of Strategy: A Game Theorist's Guide to Success in Business and Life  
+# ♟️🧠📈🎯 The Art of Strategy: A Game Theorist's Guide to Success in Business and Life  
+[🛒 The Art of Strategy: A Game Theorist's Guide to Success in Business and Life. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4dQlUR1)  
+  
 ## 🤖 AI Summary  
 ### TL;DR 🎯  
 🎮 Use 🧠 game theory principles to 💡 understand strategic interactions, 🔮 anticipate others' moves, and ✅ make optimal decisions in 🌍 various aspects of life and 💼 business.  

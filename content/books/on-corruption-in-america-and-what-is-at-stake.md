@@ -1,14 +1,17 @@
 ---
 share: true
 aliases:
-  - "On Corruption in America: And What Is at Stake"
-title: "On Corruption in America: And What Is at Stake"
+  - "💰🏛️💔🇺🇸 On Corruption in America: And What Is at Stake"
+title: "💰🏛️💔🇺🇸 On Corruption in America: And What Is at Stake"
 URL: https://bagrounds.org/books/on-corruption-in-america-and-what-is-at-stake
 Author: 
 tags: 
+affiliate link: https://amzn.to/3SDyzNj
 ---
 [Home](../index.md) > [Books](./index.md)  
-# On Corruption in America: And What Is at Stake  
+# 💰🏛️💔🇺🇸 On Corruption in America: And What Is at Stake  
+[🛒 On Corruption in America: And What Is at Stake. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3SDyzNj)  
+  
 ## 🤖 AI Summary  
 ### On Corruption in America: And What Is at Stake 🇺🇸  
 **TL;DR:** Corruption in America is not merely about illegal acts but a systemic erosion of public trust and institutions, fueled by unchecked power and the prioritization of private interests over the common good, necessitating a reimagining of civic responsibility and democratic participation.  

@@ -10,11 +10,7 @@ tags:
 [Home](../index.md) > [Books](./index.md)  
 # Nudge  
 ## 🤖 AI Summary  
-### 💬 [Gemini](https://gemini.google.com) Prompt  
-> Summarize the book: Nudge: Improving Decisions About Health, Wealth, and Happiness. Start the summary with a TLDR - a single statement that conveys a maximum of the useful information provided in the book. Follow this with a deep dive. Catalogue the topics, methods, and research discussed. Be sure to highlight any significant theories, theses, or mental models proposed. Provide a critical analysis of the quality of the information presented, using scientific backing, author credentials, authoritative reviews, and other markers of high quality information as justification. Emphasize practical takeaways. Make the following additional book recommendations: the best alternate book on the same topic, the best book that is tangentially related, the best book that is diametrically opposed, and the best fiction book that incorporates related ideas. Format your response as markdown, starting at heading level H4, with inline links, for easy copy paste. Use meaningful emojis liberally to enhance readability, especially in headings and as bullets for lists.  
-  
-### Response  
-#### TLDR:  
+### TLDR  
 Nudge: Improving Decisions About Health, Wealth, and Happiness argues that by understanding human cognitive biases, we can design "choice architectures" that gently nudge people towards better decisions without restricting their freedom.  
   
 #### Deep Dive: 🧠💡  
@@ -59,5 +55,8 @@ Nudge: Improving Decisions About Health, Wealth, and Happiness argues that by un
 **Book Recommendations:** 📚  
 * **Best Alternate Book on the Same Topic:** "[Thinking, Fast and Slow](./thinking-fast-and-slow.md)" by Daniel Kahneman. This book provides a deeper dive into the cognitive biases that underlie human decision-making. 🧠  
 * **Best Tangentially Related Book:** "Predictably Irrational" by Dan Ariely. This book explores the ways in which people make irrational decisions in various aspects of their lives. 🤯  
-* **Best Diametrically Opposed Book:** "Freakonomics" by Steven D. Levitt and Stephen J. Dubner. While "Nudge" focuses on subtle interventions, "Freakonomics" often explores how incentives and disincentives drive behavior in unexpected ways. 💰  
+* **Best Diametrically Opposed Book:** "[🤓🕵️‍♂️❓ Hidden Freakonomics: A Rogue Economist Explores the Hidden Side of Everything](./freakonomics.md)" by Steven D. Levitt and Stephen J. Dubner. While "Nudge" focuses on subtle interventions, "Freakonomics" often explores how incentives and disincentives drive behavior in unexpected ways. 💰  
 * **Best Fiction Book That Incorporates Related Ideas:** "The Circle" by Dave Eggers. This novel explores the potential dangers of excessive transparency and social influence, which are relevant to the discussion of nudges and choice architecture. 💻  
+  
+## 💬 [Gemini](https://gemini.google.com) Prompt  
+> Summarize the book: Nudge: Improving Decisions About Health, Wealth, and Happiness. Start the summary with a TLDR - a single statement that conveys a maximum of the useful information provided in the book. Follow this with a deep dive. Catalogue the topics, methods, and research discussed. Be sure to highlight any significant theories, theses, or mental models proposed. Provide a critical analysis of the quality of the information presented, using scientific backing, author credentials, authoritative reviews, and other markers of high quality information as justification. Emphasize practical takeaways. Make the following additional book recommendations: the best alternate book on the same topic, the best book that is tangentially related, the best book that is diametrically opposed, and the best fiction book that incorporates related ideas. Format your response as markdown, starting at heading level H4, with inline links, for easy copy paste. Use meaningful emojis liberally to enhance readability, especially in headings and as bullets for lists.

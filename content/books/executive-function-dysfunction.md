@@ -1,14 +1,17 @@
 ---
 share: true
 aliases:
-  - Executive Function 'Dysfunction' - Strategies for Educators and Parents
-title: Executive Function 'Dysfunction' - Strategies for Educators and Parents
+  - 🧠🧩🚧🧑‍🏫👩‍👧‍👦 Executive Function Dysfunction - Strategies for Educators and Parents
+title: 🧠🧩🚧🧑‍🏫👩‍👧‍👦 Executive Function Dysfunction - Strategies for Educators and Parents
 URL: https://bagrounds.org/books/executive-function-dysfunction
 Author: 
 tags: 
+affiliate link: https://amzn.to/3HDxFOl
 ---
 [Home](../index.md) > [Books](./index.md)  
-# Executive Function 'Dysfunction' - Strategies for Educators and Parents  
+# 🧠🧩🚧🧑‍🏫👩‍👧‍👦 Executive Function Dysfunction - Strategies for Educators and Parents  
+[🛒 Executive Function Dysfunction - Strategies for Educators and Parents. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3HDxFOl)  
+  
 ## 🤖 AI Summary  
 ### 📖 Book Report: Executive Function 'Dysfunction' - Strategies for Educators and Parents  
 ### TL;DR 🎯✨  

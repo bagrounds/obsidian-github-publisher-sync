@@ -327,7 +327,7 @@ Feedback Control of Dynamic Systems]]
 - [The Dawn of Everything: A New History of Humanity](./the-dawn-of-everything.md)  
 - [The Deficit Myth](./the-deficit-myth.md)  
 - [🏢📋🐒🪒🤼‍♂️ The Delicate Art of Bureaucracy: Digital Transformation with the Monkey, the Razor, and the Sumo Wrestler](./the-delicate-art-of-bureaucracy.md)  
-- [The Demon-Haunted World: Science as a Candle in the Dark](./the-demon-haunted-world.md)  
+- [😈🌍🔬🕯️🌑 The Demon-Haunted World: Science as a Candle in the Dark](./the-demon-haunted-world.md)  
 - [The Design of Everyday Things](./the-design-of-everyday-things.md)  
 - [🧠🧑‍🤝‍🧑 The Developing Mind: How Relationships and the Brain Interact to Shape Who We Are](./the-developing-mind-how-relationships-and-the-brain-interact-to-shape-who-we-are.md)  
 - [The DevOps Handbook](./the-devops-handbook.md)  

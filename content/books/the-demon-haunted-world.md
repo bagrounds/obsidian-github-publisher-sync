@@ -1,14 +1,17 @@
 ---
 share: true
 aliases:
-  - "The Demon-Haunted World: Science as a Candle in the Dark"
-title: "The Demon-Haunted World: Science as a Candle in the Dark"
+  - "😈🌍🔬🕯️🌑 The Demon-Haunted World: Science as a Candle in the Dark"
+title: "😈🌍🔬🕯️🌑 The Demon-Haunted World: Science as a Candle in the Dark"
 URL: https://bagrounds.org/books/the-demon-haunted-world
 Author: 
 tags: 
+affiliate link: https://amzn.to/3SzAlPy
 ---
 [Home](../index.md) > [Books](./index.md)  
-# The Demon-Haunted World: Science as a Candle in the Dark  
+# 😈🌍🔬🕯️🌑 The Demon-Haunted World: Science as a Candle in the Dark  
+[🛒 The Demon-Haunted World: Science as a Candle in the Dark. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3SzAlPy)  
+  
 ## 🤖 AI Summary  
 ### TL;DR 🕯️  
 **TL;DR:** Carl Sagan's "The Demon-Haunted World" champions scientific skepticism and critical thinking as essential tools for navigating a world filled with pseudoscience and irrational beliefs, emphasizing the importance of a scientifically literate society for its survival and progress.  

@@ -1,14 +1,17 @@
 ---
 share: true
 aliases:
-  - The Upswing
-title: The Upswing
+  - "🤝📈🇺🇸🔁 The Upswing: How America Came Together a Century Ago and How We Can Do It Again"
+title: "🤝📈🇺🇸🔁 The Upswing: How America Came Together a Century Ago and How We Can Do It Again"
 URL: https://bagrounds.org/books/the-upswing
 Author: 
 tags: 
+affiliate link: https://amzn.to/4mMFkKw
 ---
 [Home](../index.md) > [Books](./index.md)  
-# The Upswing  
+# 🤝📈🇺🇸🔁 The Upswing: How America Came Together a Century Ago and How We Can Do It Again  
+[🛒 The Upswing: How America Came Together a Century Ago and How We Can Do It Again. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4mMFkKw)  
+  
 ## 🤖 AI Summary  
 ### 📖 Book Report: The Upswing 📈  
 **TL;DR:** "The Upswing" argues that America has experienced cyclical periods of individualism and communitarianism, with the late 20th century representing a nadir of individualism, and that we are poised for a new "upswing" towards greater social cohesion.  

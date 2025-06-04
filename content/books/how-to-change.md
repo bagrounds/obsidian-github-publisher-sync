@@ -1,14 +1,17 @@
 ---
 share: true
 aliases:
-  - How to Change
-title: How to Change
+  - "🐛➡️🦋 How to Change: The Science of Getting from Where You Are to Where You Want to Be"
+title: "🐛➡️🦋 How to Change: The Science of Getting from Where You Are to Where You Want to Be"
 URL: https://bagrounds.org/books/how-to-change
 Author: 
 tags: 
+affiliate link: https://amzn.to/3HGbEyo
 ---
 [Home](../index.md) > [Books](./index.md)  
-# How to Change  
+# 🐛➡️🦋 How to Change: The Science of Getting from Where You Are to Where You Want to Be  
+[🛒 How to Change: The Science of Getting from Where You Are to Where You Want to Be. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3HGbEyo)  
+  
 ## 🤖 AI Summary  
 ### 📖 Book Report: How to Change by Katy Milkman  
 **TL;DR:** 🚀 "How to Change" provides a comprehensive, research-backed framework for overcoming common barriers to behavior change, using a combination of psychological insights and practical tools.  

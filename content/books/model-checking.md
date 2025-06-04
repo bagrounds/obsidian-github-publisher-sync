@@ -1,14 +1,17 @@
 ---
 share: true
 aliases:
-  - Model Checking
-title: Model Checking
+  - 🤖🔍✅ Model Checking
+title: 🤖🔍✅ Model Checking
 URL: https://bagrounds.org/books/model-checking
 Author: 
 tags: 
+affiliate link: https://amzn.to/3ZRR706
 ---
 [Home](../index.md) > [Books](./index.md)  
-# Model Checking  
+# 🤖🔍✅ Model Checking  
+[🛒 Model Checking. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3ZRR706)  
+  
 ## 🤖 AI Summary  
 ### 📖 Book Report: Model Checking  
 #### TL;DR 🚀  

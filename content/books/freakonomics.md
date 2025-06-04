@@ -1,16 +1,18 @@
 ---
 share: true
 aliases:
-  - Freakonomics
-title: Freakonomics
+  - "🤓🕵️‍♂️❓ Hidden Freakonomics: A Rogue Economist Explores the Hidden Side of Everything"
+title: "🤓🕵️‍♂️❓ Hidden Freakonomics: A Rogue Economist Explores the Hidden Side of Everything"
 URL: https://bagrounds.org/books/freakonomics
 Author: 
 tags: 
+affiliate link: https://amzn.to/3Zf86tf
 ---
 [Home](../index.md) > [Books](./index.md)  
-# Freakonomics  
+# 🤓🕵️‍♂️❓ Hidden Freakonomics: A Rogue Economist Explores the Hidden Side of Everything  
+[🛒 Hidden Freakonomics: A Rogue Economist Explores the Hidden Side of Everything. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3Zf86tf)  
+  
 ## 🤖 AI Summary  
-Okay, here's a summary of *Freakonomics*:  
   
 ### TL;DR 📚  
 Incentives drive human behavior in surprising ways, and applying economic principles to everyday life can uncover unexpected truths behind complex social issues. 🔍  

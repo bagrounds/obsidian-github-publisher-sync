@@ -1,17 +1,20 @@
 ---
 share: true
 aliases:
-  - Human Attention
-title: Human Attention
+  - 🧠🎯👁️💡 Applied Attention Theory
+title: 🧠🎯👁️💡 Applied Attention Theory
 URL: https://bagrounds.org/books/human-attention
 Author: 
 tags: 
+affiliate link: https://amzn.to/43Vx0Rb
 ---
 [Home](../index.md) > [Books](./index.md)  
-# Human Attention  
+# 🧠🎯👁️💡 Applied Attention Theory  
+[🛒 Applied Attention Theory. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/43Vx0Rb)  
+  
 ## 🤖 AI Summary  
-### Human Attention by Christopher D. Wickens Summary 🧠  
-**TL;DR:** Wickens' "Human Attention" provides a comprehensive, model-driven overview of attention, integrating cognitive psychology, neuroscience, and human factors to explain how we select, focus, and manage cognitive resources in complex environments. 🚀  
+### Applied Attention Theory by Christopher D. Wickens Summary 🧠  
+**TL;DR:** Wickens' "Applied Attention Theory" provides a comprehensive, model-driven overview of attention, integrating cognitive psychology, neuroscience, and human factors to explain how we select, focus, and manage cognitive resources in complex environments. 🚀  
   
 **New/Surprising Perspective:** Unlike many texts that focus solely on theoretical cognitive models, Wickens bridges the gap between theory and application. He demonstrates how attentional principles directly impact real-world tasks like driving, air traffic control, and human-computer interaction. This emphasis on applied attention and human factors engineering provides a refreshingly practical perspective, moving beyond the lab and into everyday life. 🛠️  
   

@@ -1,14 +1,17 @@
 ---
 share: true
 aliases:
-  - The Tyranny of Metrics
-title: The Tyranny of Metrics
+  - 📊⛓️👑 📏 The Tyranny of Metrics
+title: 📊⛓️👑 📏 The Tyranny of Metrics
 URL: https://bagrounds.org/books/the-tyranny-of-metrics
 Author: 
 tags: 
+affiliate link: https://amzn.to/457gPkN
 ---
 [Home](../index.md) > [Books](./index.md)  
-# The Tyranny of Metrics  
+# 📊⛓️👑 📏 The Tyranny of Metrics  
+[🛒 The Tyranny of Metrics. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/457gPkN)  
+  
 ## 🤖 AI Summary  
 ### The Tyranny of Metrics: Summary & Analysis 📏  
 **📝 TL;DR:** 📊 Metrics, when used without careful consideration 🤔 of their limitations and unintended consequences 📉, can lead to perverse outcomes 😵‍💫, erode professional judgment 🧑‍⚖️, and undermine the very goals 🎯 they are intended to serve.  

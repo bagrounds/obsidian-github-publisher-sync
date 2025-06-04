@@ -1,14 +1,17 @@
 ---
 share: true
 aliases:
-  - Nonlinear Dynamics and Chaos
-title: Nonlinear Dynamics and Chaos
+  - "🦋🌀💥🤖 Nonlinear Dynamics and Chaos: With Applications to Physics, Biology, Chemistry, and Engineering"
+title: "🦋🌀💥🤖 Nonlinear Dynamics and Chaos: With Applications to Physics, Biology, Chemistry, and Engineering"
 URL: https://bagrounds.org/books/nonlinear-dynamics-and-chaos
 Author: 
 tags: 
+affiliate link: https://amzn.to/4ky6Wlc
 ---
 [Home](../index.md) > [Books](./index.md)  
-# Nonlinear Dynamics And Chaos  
+# 🦋🌀💥🤖 Nonlinear Dynamics and Chaos: With Applications to Physics, Biology, Chemistry, and Engineering  
+[🛒 Nonlinear Dynamics and Chaos: With Applications to Physics, Biology, Chemistry, and Engineering. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4ky6Wlc)  
+  
 ## 🤖 AI Summary  
 ### 📚 TL;DR: Nonlinear Dynamics and Chaos: With Applications to Physics, Biology, Chemistry, and Engineering 🌀  
 Nonlinear Dynamics and Chaos by Steven H. Strogatz provides a comprehensive introduction to the principles of nonlinear dynamics and chaos theory, emphasizing their interdisciplinary applications across various scientific fields, revealing how simple deterministic systems can exhibit complex and unpredictable behaviors.  

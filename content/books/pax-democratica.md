@@ -1,15 +1,17 @@
 ---
 share: true
 aliases:
-  - "Pax Democratica: A Strategy for the 21st Century"
-title: "Pax Democratica: A Strategy for the 21st Century"
+  - "🏛️🤝🕊️ Pax Democratica: A Strategy for the 21st Century"
+title: "🏛️🤝🕊️ Pax Democratica: A Strategy for the 21st Century"
 URL: https://bagrounds.org/books/pax-democratica
 Author: 
 tags: 
+affiliate link: https://amzn.to/4jCPhY6
 ---
 [Home](../index.md) > [Books](./index.md)  
-# Pax Democratica: A Strategy for the 21st Century  
+# 🏛️🤝🕊️ Pax Democratica: A Strategy for the 21st Century  
 by James Robert Huntley  
+[🛒 Pax Democratica: A Strategy for the 21st Century. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4jCPhY6)  
   
 ## 🤖 AI Summary  
 ### 🌍🤝 TL;DR  

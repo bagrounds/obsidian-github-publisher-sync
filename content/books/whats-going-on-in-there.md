@@ -1,14 +1,17 @@
 ---
 share: true
 aliases:
-  - "What's Going On in There?: How the Brain and Mind Develop in the First Five Years of Life"
-title: "What's Going On in There?: How the Brain and Mind Develop in the First Five Years of Life"
+  - "👶🧠🫨❓ What's Going On in There?: How the Brain and Mind Develop in the First Five Years of Life"
+title: "👶🧠🫨❓ What's Going On in There?: How the Brain and Mind Develop in the First Five Years of Life"
 URL: https://bagrounds.org/books/whats-going-on-in-there
 Author: 
 tags: 
+affiliate link: https://amzn.to/4koZ9G2
 ---
 [Home](../index.md) > [Books](./index.md)  
-# What's Going On in There?  
+# 👶🧠🫨❓ What's Going On in There?: How the Brain and Mind Develop in the First Five Years of Life  
+[🛒 What's Going On in There?: How the Brain and Mind Develop in the First Five Years of Life. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4koZ9G2)  
+  
 ## 🤖 AI Summary  
 ### What's Going On in There?: How the Brain and Mind Develop in the First Five Years of Life - Summary  
 **TL;DR:** 👶🧠 This book illuminates the astonishing pace and complexity of brain development in the first five years, emphasizing the crucial role of experience and nurturing in shaping a child's cognitive, emotional, and social capacities.  

@@ -1,14 +1,17 @@
 ---
 share: true
 aliases:
-  - "The Dictator's Handbook: Why Bad Behavior Is Almost Always Good Politics"
-title: "The Dictator's Handbook: Why Bad Behavior Is Almost Always Good Politics"
+  - "👑😈👎📈 The Dictator's Handbook: Why Bad Behavior Is Almost Always Good Politics"
+title: "👑😈👎📈 The Dictator's Handbook: Why Bad Behavior Is Almost Always Good Politics"
 URL: https://bagrounds.org/books/
 Author: 
 tags: 
+affiliate link: https://amzn.to/43R8TSz
 ---
 [Home](../index.md) > [Books](./index.md)  
-# The Dictator's Handbook: Why Bad Behavior Is Almost Always Good Politics  
+# 👑😈👎📈 The Dictator's Handbook: Why Bad Behavior Is Almost Always Good Politics  
+[🛒 The Dictator's Handbook: Why Bad Behavior Is Almost Always Good Politics. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/43R8TSz)  
+  
 ## 🤖 AI Summary  
 ### TL;DR ⏰  
 💰 "The Dictator's Handbook" argues that 👑 all leaders, regardless of their 👑 regime type, survive by catering to a small group of 🤝 essential supporters (the "selectorate") with 🎁 private goods, while the vast majority are kept subservient through 📉 low taxes and 🏛️ public goods.  

@@ -1,19 +1,22 @@
 ---
 share: true
 aliases:
-  - Nudge
-title: Nudge
+  - "👉🤏 Nudge: The Final Edition: Improving Decisions About Money, Health, and the Environment"
+title: "👉🤏 Nudge: The Final Edition: Improving Decisions About Money, Health, and the Environment"
 URL: https://bagrounds.org/books/nudge
 Author: 
 tags: 
+affiliate link: https://amzn.to/3ZLXT7C
 ---
 [Home](../index.md) > [Books](./index.md)  
-# Nudge  
+# 👉🤏 Nudge: The Final Edition: Improving Decisions About Money, Health, and the Environment  
+[🛒 Nudge: The Final Edition: Improving Decisions About Money, Health, and the Environment. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3ZLXT7C)  
+  
 ## 🤖 AI Summary  
 ### TLDR  
 Nudge: Improving Decisions About Health, Wealth, and Happiness argues that by understanding human cognitive biases, we can design "choice architectures" that gently nudge people towards better decisions without restricting their freedom.  
   
-#### Deep Dive: 🧠💡  
+### Deep Dive: 🧠💡  
 "Nudge" by Richard Thaler and Cass Sunstein explores how to improve decision-making by leveraging insights from behavioral economics. It moves away from the traditional economic view of humans as perfectly rational beings ("Econs") and acknowledges that we are "Humans" prone to predictable errors.  
   
 **Topics & Methods:**  
@@ -53,9 +56,9 @@ Nudge: Improving Decisions About Health, Wealth, and Happiness argues that by un
 * Simplify complex choices, and make information easier to understand.  
   
 **Book Recommendations:** 📚  
-* **Best Alternate Book on the Same Topic:** "[Thinking, Fast and Slow](./thinking-fast-and-slow.md)" by Daniel Kahneman. This book provides a deeper dive into the cognitive biases that underlie human decision-making. 🧠  
-* **Best Tangentially Related Book:** "Predictably Irrational" by Dan Ariely. This book explores the ways in which people make irrational decisions in various aspects of their lives. 🤯  
-* **Best Diametrically Opposed Book:** "[🤓🕵️‍♂️❓ Hidden Freakonomics: A Rogue Economist Explores the Hidden Side of Everything](./freakonomics.md)" by Steven D. Levitt and Stephen J. Dubner. While "Nudge" focuses on subtle interventions, "Freakonomics" often explores how incentives and disincentives drive behavior in unexpected ways. 💰  
+* **Best Alternate Book on the Same Topic:** [🤔🐇🐢 Thinking, Fast and Slow](./thinking-fast-and-slow.md) by Daniel Kahneman. This book provides a deeper dive into the cognitive biases that underlie human decision-making. 🧠  
+* **Best Tangentially Related Book:** [Predictably Irrational](./predictably-irrational.md) by Dan Ariely. This book explores the ways in which people make irrational decisions in various aspects of their lives. 🤯  
+* **Best Diametrically Opposed Book:** [🤓🕵️‍♂️❓ Freakonomics: A Rogue Economist Explores the Hidden Side of Everything](./freakonomics.md) by Steven D. Levitt and Stephen J. Dubner. While "Nudge" focuses on subtle interventions, "Freakonomics" often explores how incentives and disincentives drive behavior in unexpected ways. 💰  
 * **Best Fiction Book That Incorporates Related Ideas:** "The Circle" by Dave Eggers. This novel explores the potential dangers of excessive transparency and social influence, which are relevant to the discussion of nudges and choice architecture. 💻  
   
 ## 💬 [Gemini](https://gemini.google.com) Prompt  

@@ -1,14 +1,17 @@
 ---
 share: true
 aliases:
-  - "Executive Functions: Development, Assessment, and Intervention"
-title: "Executive Functions: Development, Assessment, and Intervention"
+  - 🧠🧩🛠️ Assessment and Intervention for Executive Function Difficulties
+title: 🧠🧩🛠️ Assessment and Intervention for Executive Function Difficulties
 URL: https://bagrounds.org/books/executive-functions-development-assessment-and-intervention
 Author: 
 tags: 
+affiliate link: https://amzn.to/43rYNsf
 ---
 [Home](../index.md) > [Books](./index.md)  
-# Executive Functions: Development, Assessment, and Intervention  
+# 🧠🧩🛠️ Assessment and Intervention for Executive Function Difficulties  
+[🛒 Assessment and Intervention for Executive Function Difficulties. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/43rYNsf)  
+  
 ## 🤖 AI Summary  
 ### 📖 Book Report: Executive Functions: Development, Assessment, and Intervention  
   

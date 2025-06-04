@@ -1,15 +1,16 @@
 ---
 aliases:
-  - Planning for Everything
-title: Planning for Everything
+  - "🗺️🎯🪜🏗️ Planning for Everything: The Design of Paths and Goals"
+title: "🗺️🎯🪜🏗️ Planning for Everything: The Design of Paths and Goals"
 Author: "[[Peter Morville]]"
 Medium: "#Audiobook"
 share: true
 URL: https://bagrounds.org/books/planning-for-everything
+affiliate link: https://amzn.to/3HsfA5T
 ---
 [Home](../index.md) > [Books](./index.md)  
-# Planning for Everything  
-_The Design of Paths and Goals_  
+# 🗺️🎯🪜🏗️ Planning for Everything: The Design of Paths and Goals  
+[🛒 Planning for Everything: The Design of Paths and Goals. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3HsfA5T)  
   
 ## 🤖 AI Summary  
 ### TL;DR 🚀  

@@ -1,14 +1,17 @@
 ---
 share: true
 aliases:
-  - Small Animal Internal Medicine
-title: Small Animal Internal Medicine
+  - 🐕🐈‍⬛🩺❤️‍🩹 Small Animal Internal Medicine
+title: 🐕🐈‍⬛🩺❤️‍🩹 Small Animal Internal Medicine
 URL: https://bagrounds.org/books/small-animal-internal-medicine
 Author: 
 tags: 
+affiliate link: https://amzn.to/3ZQjV9c
 ---
 [Home](../index.md) > [Books](./index.md)  
-# Small Animal Internal Medicine  
+# 🐕🐈‍⬛🩺❤️‍🩹 Small Animal Internal Medicine  
+[🛒 Small Animal Internal Medicine. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3ZQjV9c)  
+  
 ## 🤖 AI Summary  
 ### Small 🐾 Animal Internal  🩺Medicine  
   

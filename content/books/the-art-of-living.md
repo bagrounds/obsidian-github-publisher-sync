@@ -1,14 +1,17 @@
 ---
 share: true
 aliases:
-  - "The Art of Living: The Classical Manual on Virtue, Happiness, and Effectiveness"
-title: "The Art of Living: The Classical Manual on Virtue, Happiness, and Effectiveness"
+  - "🤸😊🎯🌟 The Art of Living: The Classical Manual on Virtue, Happiness, and Effectiveness"
+title: "🤸😊🎯🌟 The Art of Living: The Classical Manual on Virtue, Happiness, and Effectiveness"
 URL: https://bagrounds.org/books/the-art-of-living
 Author: 
 tags: 
+affiliate link: https://amzn.to/4dPcsxc
 ---
 [Home](../index.md) > [Books](./index.md)  
-# The Art of Living  
+# 🤸😊🎯🌟 The Art of Living: The Classical Manual on Virtue, Happiness, and Effectiveness  
+[🛒 The Art of Living: The Classical Manual on Virtue, Happiness, and Effectiveness. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4dPcsxc)  
+  
 ## 🤖 AI Summary  
 ### TL;DR 🧘‍♂️  
 Cultivate inner tranquility and effectiveness by aligning your judgments and actions with reason and nature, focusing on what you can control and accepting what you cannot.  

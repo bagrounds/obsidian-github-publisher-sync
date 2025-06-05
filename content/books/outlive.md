@@ -1,23 +1,22 @@
 ---
 share: true
 aliases:
-  - Outlive
-title: Outlive
+  - "⏳🔬🎨 Outlive: The Science and Art of Longevity"
+title: "⏳🔬🎨 Outlive: The Science and Art of Longevity"
 URL: https://bagrounds.org/books/outlive
 Author: 
 tags: 
+affiliate link: https://amzn.to/3SBXukf
 ---
 [Home](../index.md) > [Books](./index.md)  
-# Outlive  
-## 🤖 AI Summary  
-### 💬 [Gemini](https://gemini.google.com) Prompt  
-> Summarize the book: Outlive: The Science & Art of Longevity. Start the summary with a TLDR - a single statement that conveys a maximum of the useful information provided in the book. Follow this with a deep dive. Catalogue the topics, methods, and research discussed. Be sure to highlight any significant theories, theses, or mental models proposed. Provide a critical analysis of the quality of the information presented, using scientific backing, author credentials, authoritative reviews, and other markers of high quality information as justification. Emphasize practical takeaways. Make the following additional book recommendations: the best alternate book on the same topic; the best book that is tangentially related; the best book that is diametrically opposed; the best fiction book that incorporates related ideas; and a great unrelated book. Format your response as markdown, starting at heading level H4, with inline links, for easy copy paste. Use meaningful emojis liberally to enhance readability, especially in headings and as bullets for lists. Do not include broken links or links to commercial sites (e.g. Amazon).  
+# ⏳🔬🎨 Outlive: The Science and Art of Longevity  
+[🛒 Outlive: The Science and Art of Longevity. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3SBXukf)  
   
-### Response  
-#### **TLDR**  
+## 🤖 AI Summary  
+### TLDR  
 * Outlive: The Science & Art of Longevity advocates for a proactive, personalized approach to health, focusing on delaying chronic diseases and maximizing "healthspan" through strategic nutrition, exercise, emotional well-being, and medical interventions, rather than solely extending lifespan.  
   
-#### **Deep Dive** 🩺🧬🏋️‍♀️🧘  
+### Deep Dive 🩺🧬🏋️‍♀️🧘  
 * **Core Thesis:**  
     * Dr. Peter Attia argues that the traditional medical model focuses on treating diseases after they manifest, which is insufficient for maximizing longevity. He proposes a shift towards "Medicine 3.0," a preventative approach that targets the "Four Horsemen" of chronic disease: cardiovascular disease, cancer, neurodegenerative disease, and type 2 diabetes.  
     * The book emphasizes "healthspan," the period of life spent in good health, over simply extending lifespan.  
@@ -58,7 +57,7 @@ tags:
     * Take a proactive approach to your health.  
     * Focus on healthspan as much as lifespan.  
   
-#### **Book Recommendations** 📚  
+### Book Recommendations 📚  
 * **Best Alternate Book on the Same Topic:**  
     * "Lifespan: Why We Age—and Why We Don't Have To" by David A. Sinclair, PhD. This book provides a deep dive into the science of aging and potential interventions to slow or reverse the process. 🔬  
 * **Best Book That Is Tangentially Related:**  
@@ -68,4 +67,7 @@ tags:
 * **Best Fiction Book That Incorporates Related Ideas:**  
     * "Never Let Me Go" by Kazuo Ishiguro. This novel explores themes of mortality, healthcare, and the ethical implications of extending life, albeit in a dystopian setting. 💔  
 * **Great Unrelated Book:**  
-    * "[Sapiens: A Brief History of Humankind](./sapiens-a-brief-history-of-humankind.md)" by Yuval Noah Harari. This book provides a broad overview of human history and the factors that have shaped our species, offering a unique perspective on our place in the world. 🌍  
+    * [📜🌍⏳ Sapiens: A Brief History of Humankind](./sapiens-a-brief-history-of-humankind.md) by Yuval Noah Harari. This book provides a broad overview of human history and the factors that have shaped our species, offering a unique perspective on our place in the world. 🌍  
+  
+## 💬 [Gemini](https://gemini.google.com) Prompt  
+> Summarize the book: Outlive: The Science & Art of Longevity. Start the summary with a TLDR - a single statement that conveys a maximum of the useful information provided in the book. Follow this with a deep dive. Catalogue the topics, methods, and research discussed. Be sure to highlight any significant theories, theses, or mental models proposed. Provide a critical analysis of the quality of the information presented, using scientific backing, author credentials, authoritative reviews, and other markers of high quality information as justification. Emphasize practical takeaways. Make the following additional book recommendations: the best alternate book on the same topic; the best book that is tangentially related; the best book that is diametrically opposed; the best fiction book that incorporates related ideas; and a great unrelated book. Format your response as markdown, starting at heading level H4, with inline links, for easy copy paste. Use meaningful emojis liberally to enhance readability, especially in headings and as bullets for lists. Do not include broken links or links to commercial sites.

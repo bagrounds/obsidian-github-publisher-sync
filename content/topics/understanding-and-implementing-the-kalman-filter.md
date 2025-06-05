@@ -3,16 +3,16 @@ share: true
 aliases:
   - 💡🔧📏🔮〰️ Understanding and Implementing the Kalman Filter
 title: 💡🔧📏🔮〰️ Understanding and Implementing the Kalman Filter
-URL: https://bagrounds.org/books/understanding-and-implementing-the-kalman-filter
+URL: https://bagrounds.org/topics/understanding-and-implementing-the-kalman-filter
 Author: 
 tags: 
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](../index.md) > [Topics](./index.md)  
 # 💡🔧📏🔮〰️ Understanding and Implementing the Kalman Filter  
 ## 🤖 AI Summary  
 ### 📚 Understanding and Implementing the Kalman Filter  
   
-**📖 TL;DR:** 🚀 This book provides a practical, 🪜 step-by-step guide to 🧠 understanding and ⚙️ implementing [📏🔮〰️ Kalman Filter](../topics/kalman-filter.md)s, 🎯 focusing on ✨ intuition, 👨‍💻 practical applications, and 💻 code examples, ✅ enabling readers to 📊 estimate system states from 📢 noisy measurements effectively.  
+**📖 TL;DR:** 🚀 This provides a practical, 🪜 step-by-step guide to 🧠 understanding and ⚙️ implementing [📏🔮〰️ Kalman Filter](./kalman-filter.md)s, 🎯 focusing on ✨ intuition, 👨‍💻 practical applications, and 💻 code examples, ✅ enabling readers to 📊 estimate system states from 📢 noisy measurements effectively.  
   
 #### 💡 New or Surprising Perspectives 🧐  
   
@@ -34,7 +34,7 @@ tags:
     * **Real-World Applications:** It could highlight examples of how Kalman filters are used in various fields, such as navigation, tracking, and sensor fusion. 🛰️  
 * **Significant Theories and Mental Models:**  
     * **Bayesian Filtering:** The Kalman filter is firmly rooted in Bayesian filtering, where the state estimate is viewed as a probability distribution that is updated as new information becomes available. 🤔  
-    * **[Linear Systems Theory](../topics/linear-systems-theory.md):** Kalman filtering is built upon the foundation of linear systems theory, which provides tools for analyzing and controlling linear dynamic systems. 📐  
+    * **[Linear Systems Theory](./linear-systems-theory.md):** Kalman filtering is built upon the foundation of linear systems theory, which provides tools for analyzing and controlling linear dynamic systems. 📐  
 * **Prominent Examples:**  
     * **Target Tracking:** The classic example of tracking a moving object using radar measurements is likely covered in detail. 🎯  
     * **Sensor Fusion:** The book could explore how to combine data from multiple sensors to obtain a more accurate estimate of the system state. 📡  

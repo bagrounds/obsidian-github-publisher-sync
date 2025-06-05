@@ -6,10 +6,11 @@ title: 📄  Articles
 backlinks: false
 ---
 [Home](../index.md)  
-# 📄  Articles (24)  
+# 📄  Articles (27)  
 - [🦊😈🐾🕵️💸 5 takeaways about NPR's reporting on the whistleblower report about DOGE at the NLRB](./5-takeaways-about-nprs-reporting-on-the-whistleblower-report-about-doge-at-the-nlrb.md)  
 - [5 tips on getting started with Gems, your custom AI experts](./5-tips-on-getting-started-with-gems-your-custom-ai-experts.md)  
 - [⏱️⚔️🏛️ '60 Minutes' chief resigns, saying show's independence was compromised](./60-minutes-chief-resigns-saying-shows-independence-was-compromised.md)  
+- [🏛️🕸️🧩 Architectural Styles and the Design of Network Based Software Architectures](./architectural-styles-and-the-design-of-network-based-software-architectures.md)  
 - [👀 Attention Is All You Need](./attention-is-all-you-need.md)  
 - [Cannabis for Pets With Cancer](./cannabis-for-pets-with-cancer.md)  
 - [⚠️🖇️ Google Cautions Against Using Too Many Internal Links](./google-cautions-against-using-too-many-internal-links.md)  
@@ -17,6 +18,7 @@ backlinks: false
 - [How the Ph.D. Project, and 45 colleges, became a target of the Trump administration](./how-the-phd-project-and-45-colleges-became-a-target-of-the-trump-administration.md)  
 - [Iowa gives final approval to a bill removing gender identity protections despite protests](./iowa-gives-final-approval-to-a-bill-removing-gender-identity-protections-despite-protests.md)  
 - [Judge says deportation of Maryland man to an El Salvador prison was ‘wholly lawless’](./judge-says-deportation-of-maryland-man-to-an-el-salvador-prison-was-wholly-lawless.md)  
+- [⚙️🛡️🐛 Making Reliable Distributed Systems in the Presence of Software Errors](./making-reliable-distributed-systems-in-the-presence-of-software-errors.md)  
 - [🏛️🗞️🦊 More than 50 House Democrats demand answers after whistleblower report on DOGE](./more-than-50-house-democrats-demand-answers-after-whistleblower-report-on-doge.md)  
 - [Mouth And Throat Exercises to Help Stop Snoring and Improve OSA](./mouth-and-throat-exercises-to-help-stop-snoring-and-improve-osa.md)  
 - [Musical intervention enhances infants’ neural processing of temporal structure in music and speech](./musical-intervention-enhances-infants-neural-processing-of-temporal-structure-in-music-and-speech.md)  

@@ -78,7 +78,7 @@ Parents, caregivers, educators, and even pediatricians can use this book to:
   
 ### 👯 Similar Books (Focus on Practical Guidance for Parents/Caregivers)  
   
-* 🗣️ **Talk to Me, Baby! by Betty Bardige:** This book guides parents and professionals through six stages of language development from infancy to kindergarten, offering research-based strategies and downloadable resources for engaging talk.  
+* **[🗣️👶 Talk to Me, Baby!: How You Can Support Young Children's Language Development](./talk-to-me-baby-how-you-can-support-young-childrens-language-development.md) by Betty Bardige:** This book guides parents and professionals through six stages of language development from infancy to kindergarten, offering research-based strategies and downloadable resources for engaging talk.  
 * 💬 **Beyond Baby Talk: From Speaking to Spelling by Kenn Apel and Julie Masterson:** Provides parents and caregivers with information on speech and language development, along with strategies and activities to boost language and literacy skills at home.  
 * 🤝 **It Takes Two to Talk: A Practical Guide for Parents of Children with Language Delays by Jan Pepper and Elaine Weitzman:** A step-by-step guide with practical activities and real-life examples for parents of children with language delays.  
 * 🧩 **Helping Your Child with Language-Based Learning Disabilities by Daniel Franklin:** A comprehensive guide for parents navigating language-based learning disabilities.  

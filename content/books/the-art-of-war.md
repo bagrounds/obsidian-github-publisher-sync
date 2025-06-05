@@ -67,4 +67,7 @@ affiliate link: https://amzn.to/4dPrmDn
 * 🗺️ **Strategic Theory for the 21st Century: The Little Book on Big Strategy by Harry R. Yarger:** 📚 This book provides a framework for understanding strategy at the highest levels of the nation-state, bridging historical strategic thought with contemporary challenges.  
   
 ## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
-> Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on The Art of War. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.
+> Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on The Art of War. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.  
+  
+## 🐦 Tweet  
+<blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">🎨⚔️ The Art of War<br><br>📜 Ancient Wisdom | ⚔️ Military Strategy | 💡 Timeless Principles | 🧠 Strategic Thinking | 🎯 Path to Victory<a href="https://t.co/wm9CLiv2Sq">https://t.co/wm9CLiv2Sq</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/1930703026844844324?ref_src=twsrc%5Etfw">June 5, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

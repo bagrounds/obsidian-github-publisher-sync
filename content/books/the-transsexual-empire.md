@@ -1,14 +1,17 @@
 ---
 share: true
 aliases:
-  - The Transsexual Empire
-title: The Transsexual Empire
+  - ⚧️👑🏰 The Transsexual Empire
+title: ⚧️👑🏰 The Transsexual Empire
 URL: https://bagrounds.org/books/the-transsexual-empire
 Author: 
 tags: 
+affiliate link: https://amzn.to/4mHObNr
 ---
 [Home](../index.md) > [Books](./index.md)  
-# The Transsexual Empire  
+# ⚧️👑🏰 The Transsexual Empire  
+[🛒 The Transsexual Empire. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4mHObNr)  
+  
 ## 🤖 AI Summary  
 ### Prompt 2  
 > This book has been criticized by LGBT and feminist writers as transphobic and dehumanizing. How can a familiarity with and understanding of this book help support trans civil rights efforts?  

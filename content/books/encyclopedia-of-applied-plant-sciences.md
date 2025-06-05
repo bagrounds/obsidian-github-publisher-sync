@@ -6,9 +6,12 @@ title: 📚🌿🔬 Encyclopedia of Applied Plant Sciences
 URL: https://bagrounds.org/books/encyclopedia-of-applied-plant-sciences
 Author: 
 tags: 
+affiliate link: https://amzn.to/3ZjA0Ep
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 📚🌿🔬 Encyclopedia of Applied Plant Sciences  
+[🛒 Encyclopedia of Applied Plant Sciences. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3ZjA0Ep)  
+  
 ## 📖 Book Report: 🌿 Encyclopedia of Applied Plant Sciences  
   
 ### 🔎 Overview and Scope  

@@ -1,16 +1,16 @@
 ---
 share: true
 aliases:
-  - "👉🤏 Nudge: The Final Edition: Improving Decisions About Money, Health, and the Environment"
-title: "👉🤏 Nudge: The Final Edition: Improving Decisions About Money, Health, and the Environment"
+  - "👉🤏 Nudge: Improving Decisions about Health, Wealth, and Happiness"
+title: "👉🤏 Nudge: Improving Decisions about Health, Wealth, and Happiness"
 URL: https://bagrounds.org/books/nudge
 Author: 
 tags: 
 affiliate link: https://amzn.to/3ZLXT7C
 ---
 [Home](../index.md) > [Books](./index.md)  
-# 👉🤏 Nudge: The Final Edition: Improving Decisions About Money, Health, and the Environment  
-[🛒 Nudge: The Final Edition: Improving Decisions About Money, Health, and the Environment. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3ZLXT7C)  
+# 👉🤏 Nudge: Improving Decisions about Health, Wealth, and Happiness  
+[🛒 Nudge: Improving Decisions about Health, Wealth, and Happiness. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3ZLXT7C)  
   
 ## 🤖 AI Summary  
 ### TLDR  

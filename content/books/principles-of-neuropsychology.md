@@ -1,14 +1,17 @@
 ---
 share: true
 aliases:
-  - Principles of Neuropsychology
-title: Principles of Neuropsychology
+  - 🧠🤔🧪🔬 Principles of Neuropsychology
+title: 🧠🤔🧪🔬 Principles of Neuropsychology
 URL: https://bagrounds.org/books/principles-of-neuropsychology
 Author: 
 tags: 
+affiliate link: https://amzn.to/454VJna
 ---
 [Home](../index.md) > [Books](./index.md)  
-# Principles of Neuropsychology  
+# 🧠🤔🧪🔬 Principles of Neuropsychology  
+[🛒 Principles of Neuropsychology. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/454VJna)  
+  
 ## 🤖 AI Summary  
 ### 🧠 Principles of Neuropsychology: A Deep Dive with Extra Emojis! 🌟  
 **TL;DR:** "Principles of Neuropsychology" provides a comprehensive overview of neuropsychological theory, assessment, and clinical practice, bridging the gap between neuroscience and clinical applications. 🌉  

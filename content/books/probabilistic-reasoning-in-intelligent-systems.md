@@ -1,14 +1,17 @@
 ---
 share: true
 aliases:
-  - Probabilistic Reasoning in Intelligent Systems
-title: Probabilistic Reasoning in Intelligent Systems
+  - "🎲🧮🧠🤖 Probabilistic Reasoning in Intelligent Systems: Networks of Plausible Inference"
+title: "🎲🧮🧠🤖 Probabilistic Reasoning in Intelligent Systems: Networks of Plausible Inference"
 URL: https://bagrounds.org/books/probabilistic-reasoning-in-intelligent-systems
 Author: 
 tags: 
+affiliate link: https://amzn.to/4kM6KOF
 ---
 [Home](../index.md) > [Books](./index.md)  
-# Probabilistic Reasoning in Intelligent Systems  
+# 🎲🧮🧠🤖 Probabilistic Reasoning in Intelligent Systems: Networks of Plausible Inference  
+[🛒 Probabilistic Reasoning in Intelligent Systems: Networks of Plausible Inference. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4kM6KOF)  
+  
 ## 🤖 AI Summary  
 ### Probabilistic Reasoning in Intelligent Systems: Networks of Plausible Inference Summary 🧠  
 **TL;DR:** This book introduces Bayesian networks as a powerful tool for representing and reasoning with uncertainty in artificial intelligence, providing a framework for building intelligent systems that can handle complex, probabilistic relationships between variables.  

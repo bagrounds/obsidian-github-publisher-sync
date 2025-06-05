@@ -1,14 +1,17 @@
 ---
 share: true
 aliases:
-  - "The Bullet Journal Method: Track the Past, Order the Present, Design the Future"
-title: "The Bullet Journal Method: Track the Past, Order the Present, Design the Future"
+  - "📓📜🗂️🔮 The Bullet Journal Method: Track the Past, Order the Present, Design the Future"
+title: "📓📜🗂️🔮 The Bullet Journal Method: Track the Past, Order the Present, Design the Future"
 URL: https://bagrounds.org/books/the-bullet-journal-method
 Author: 
 tags: 
+affiliate link: https://amzn.to/3HmIyUZ
 ---
 [Home](../index.md) > [Books](./index.md) | [Bullet Journal](../videos/bullet-journal.md)  
-# The Bullet Journal Method  
+# 📓📜🗂️🔮 The Bullet Journal Method: Track the Past, Order the Present, Design the Future  
+[🛒 The Bullet Journal Method: Track the Past, Order the Present, Design the Future. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3HmIyUZ)  
+  
 ## 📝🐒 Human Notes  
 - 🧭 Ikigai: Life Worth, A Reason for Being  
     - 📚 [Ikigai: The Japanese Secret to a Long and Happy Life](./ikigai.md)  

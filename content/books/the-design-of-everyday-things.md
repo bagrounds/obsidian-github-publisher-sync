@@ -1,14 +1,17 @@
 ---
 share: true
 aliases:
-  - The Design of Everyday Things
-title: The Design of Everyday Things
+  - 💺🚪💡🤔 The Design of Everyday Things
+title: 💺🚪💡🤔 The Design of Everyday Things
 URL: https://bagrounds.org/books/the-design-of-everyday-things
 Author: 
 tags: 
+affiliate link: https://amzn.to/3FFG4Am
 ---
 [Home](../index.md) > [Books](./index.md)  
-# The Design of Everyday Things  
+# 💺🚪💡🤔 The Design of Everyday Things  
+[🛒 The Design of Everyday Things. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3FFG4Am)  
+  
 ## 🤖 AI Summary  
 ### 📖 The Design of Everyday Things 🚪  
   

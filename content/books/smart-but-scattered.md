@@ -1,14 +1,17 @@
 ---
 share: true
 aliases:
-  - Smart but Scattered
-title: Smart but Scattered
+  - "🧠🧩📈🧑‍🏫 Smart but Scattered: The Revolutionary Executive Skills Approach to Helping Kids Reach Their Potential"
+title: "🧠🧩📈🧑‍🏫 Smart but Scattered: The Revolutionary Executive Skills Approach to Helping Kids Reach Their Potential"
 URL: https://bagrounds.org/books/smart-but-scattered
 Author: 
 tags: 
+affiliate link: https://amzn.to/3SDEvG3
 ---
 [Home](../index.md) > [Books](./index.md)  
-# Smart but Scattered  
+# 🧠🧩📈🧑‍🏫 Smart but Scattered: The Revolutionary Executive Skills Approach to Helping Kids Reach Their Potential  
+[🛒 Smart but Scattered: The Revolutionary Executive Skills Approach to Helping Kids Reach Their Potential. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3SDEvG3)  
+  
 ## 🤖 AI Summary  
 ### 📖 Book Report: Smart but Scattered 🧩  
 **TL;DR:** "Smart but Scattered" offers practical strategies for parents and educators to help children and adolescents develop essential executive skills, such as planning, organization, and self-control, to improve their academic and personal lives. 🚀  

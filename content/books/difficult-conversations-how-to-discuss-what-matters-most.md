@@ -49,7 +49,7 @@ affiliate link: https://amzn.to/45697HO
   
 ### 🆚 Contrasting Books (Different Approaches or Contexts)  
   
-* ⚔️ ***The Art of War*** by Sun Tzu. 📜 While not about interpersonal communication in the modern sense, this ancient military treatise offers insights into strategy, conflict, and understanding your "opponent," which can be loosely applied to navigating challenging interactions.  
+* **[🎨⚔️ The Art of War](./the-art-of-war.md)** by Sun Tzu. 📜 While not about interpersonal communication in the modern sense, this ancient military treatise offers insights into strategy, conflict, and understanding your "opponent," which can be loosely applied to navigating challenging interactions.  
 * ✅ ***Disgree Without Disrespect*** by Philip Blackett. 🗣️ This book specifically addresses having respectful and productive conversations on complex and sensitive topics, focusing on pillars for disagreeing respectfully.  
 * 🔥 ***High Conflict: Why We Get Trapped and How We Get Out*** by Amanda Ripley. 💥 Explores the dynamics of high-intensity, intractable conflicts and offers strategies for de-escalation and finding a way out of harmful cycles.  
   

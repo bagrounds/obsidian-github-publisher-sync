@@ -1,14 +1,17 @@
 ---
 share: true
 aliases:
-  - Principles of Model Checking
-title: Principles of Model Checking
+  - 🤖✅ Principles of Model Checking
+title: 🤖✅ Principles of Model Checking
 URL: https://bagrounds.org/books/principles-of-model-checking
 Author: 
 tags: 
+affiliate link: https://amzn.to/4jE9QmR
 ---
 [Home](../index.md) > [Books](./index.md)  
-# Principles of Model Checking  
+# 🤖✅ Principles of Model Checking  
+[🛒 Principles of Model Checking. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4jE9QmR)  
+  
 ## 🤖 AI Summary  
 ### Principles of Model Checking: Summary 🔍  
 **TL;DR:** This book provides a comprehensive introduction to model checking, a formal verification technique for automatically verifying the correctness of finite-state systems against temporal logic specifications, emphasizing algorithms, data structures, and practical applications.  

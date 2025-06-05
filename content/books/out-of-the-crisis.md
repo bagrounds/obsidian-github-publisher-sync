@@ -1,14 +1,17 @@
 ---
 share: true
 aliases:
-  - Out Of The Crisis
-title: Out Of The Crisis
+  - 📉⬆️ Out Of The Crisis
+title: 📉⬆️ Out Of The Crisis
 URL: https://bagrounds.org/books/out-of-the-crisis
 Author: 
 tags: 
+affiliate link: https://amzn.to/3ZjED17
 ---
 [Home](../index.md) > [Books](./index.md)  
-# Out Of The Crisis  
+# 📉⬆️ Out Of The Crisis  
+[🛒 Out Of The Crisis. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3ZjED17)  
+  
 ## 🤖 AI Summary  
 ### 📚 Out of the Crisis: A Summary  
 **TL;DR:** 📉 Out of the Crisis advocates for a radical transformation of management based on quality, statistical thinking, and a profound understanding of systems, aiming to eliminate waste, improve productivity, and foster long-term prosperity through a focus on customer satisfaction and continuous improvement.  

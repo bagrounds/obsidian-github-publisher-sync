@@ -1,14 +1,17 @@
 ---
 share: true
 aliases:
-  - Snow Crash
-title: Snow Crash
+  - ❄️💻💥 Snow Crash
+title: ❄️💻💥 Snow Crash
 URL: https://bagrounds.org/books/snow-crash
 Author: 
 tags: 
+affiliate link: https://amzn.to/4kQEIBO
 ---
 [Home](../index.md) > [Books](./index.md)  
-# Snow Crash  
+# ❄️💻💥 Snow Crash  
+[🛒 Snow Crash. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4kQEIBO)  
+  
 ## 🤖 AI Summary  
 ### Context 🚀  
 * **Author:** Neal Stephenson 😎  

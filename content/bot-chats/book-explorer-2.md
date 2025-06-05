@@ -5,11 +5,8 @@ aliases:
 title: 📖 Book 🧭 Explorer 2
 URL: https://bagrounds.org/bot-chats/book-explorer-2
 ---
-[Home](../index.md) > [Bot Chats](./index.md)  
+[Home](../index.md) > [Bot Chats](./index.md) | [⏮️ 📖 Book 🧭 Explorer 1](./book-explorer-1.md)  
 # 📖 Book 🧭 Explorer 2  
-## 🔗 Related  
-- [📖 Book 🧭 Explorer 1](./book-explorer-1.md)  
-  
 ## 💬 [Gemini](../software/gemini.md) Prompt 1  
 > [🌪️🧘🏼‍♀️ Full Catastrophe Living: Using the Wisdom of Your Body and Mind to Face Stress, Pain, and Illness](../books/full-catastrophe-living.md)  
   

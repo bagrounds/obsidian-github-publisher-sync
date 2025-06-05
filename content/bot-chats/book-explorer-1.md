@@ -5,11 +5,8 @@ aliases:
 title: 📖 Book 🧭 Explorer 1
 URL: https://bagrounds.org/bot-chats/book-explorer-1
 ---
-[Home](../index.md) > [Bot Chats](./index.md)  
+[Home](../index.md) > [Bot Chats](./index.md) | [⏭️ 📖 Book 🧭 Explorer 2](./book-explorer-2.md)  
 # 📖 Book 🧭 Explorer 1  
-## 🔗 Related  
-- [📖 Book 🧭 Explorer 2](./book-explorer-2.md)  
-  
 ## Preparation: 🌱 Identifying a Seed  
 > Pick a candidate for the most valuable book to read. Argue your case. Use lots of emojis.  
   

@@ -1,14 +1,17 @@
 ---
 share: true
 aliases:
-  - The 7 Habits of Highly Effective People
-title: The 7 Habits of Highly Effective People
+  - 👤📈🎯🌟🔑🤝🏆 The 7 Habits of Highly Effective People
+title: 👤📈🎯🌟🔑🤝🏆 The 7 Habits of Highly Effective People
 URL: https://bagrounds.org/books/the-7-habits-of-highly-effective-people
 Author: 
 tags: 
+affiliate link: https://amzn.to/43HW8th
 ---
 [Home](../index.md) > [Books](./index.md)  
-# The 7 Habits of Highly Effective People  
+# 👤📈🎯🌟🔑🤝🏆 The 7 Habits of Highly Effective People  
+[🛒 The 7 Habits of Highly Effective People. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/43HW8th)  
+  
 ## 🤖 AI Summary  
 ### 📖 Book Report: The 7 Habits of Highly Effective People  
   

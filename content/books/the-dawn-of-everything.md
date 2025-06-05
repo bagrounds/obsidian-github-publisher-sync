@@ -1,14 +1,17 @@
 ---
 share: true
 aliases:
-  - "The Dawn of Everything: A New History of Humanity"
-title: "The Dawn of Everything: A New History of Humanity"
+  - "🌅🧑‍🤝‍🧑🌍 The Dawn of Everything: A New History of Humanity"
+title: "🌅🧑‍🤝‍🧑🌍 The Dawn of Everything: A New History of Humanity"
 URL: https://bagrounds.org/books/the-dawn-of-everything
 Author: 
 tags: 
+affiliate link: https://amzn.to/3ZRqZ5B
 ---
 [Home](../index.md) > [Books](./index.md)  
-# The Dawn of Everything  
+# 🌅🧑‍🤝‍🧑🌍 The Dawn of Everything: A New History of Humanity  
+[🛒 The Dawn of Everything: A New History of Humanity. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3ZRqZ5B)  
+  
 ## 🤖 AI Summary  
 ### 🌅 TL;DR  
 Human history isn't a linear progression from simple, egalitarian hunter-gatherers to complex, hierarchical states; instead, it's a tapestry of diverse social experiments, conscious choices, and dynamic shifts in organization, demonstrating that we have far more agency than previously thought.  

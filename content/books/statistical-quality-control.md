@@ -1,14 +1,17 @@
 ---
 share: true
 aliases:
-  - Statistical Quality Control
-title: Statistical Quality Control
+  - 📊📈✅🔍 Statistical Quality Control
+title: 📊📈✅🔍 Statistical Quality Control
 URL: https://bagrounds.org/books/statistical-quality-control
 Author: 
 tags: 
+affiliate link: https://amzn.to/3FIloYq
 ---
 [Home](../index.md) > [Books](./index.md)  
-# Statistical Quality Control  
+# 📊📈✅🔍 Statistical Quality Control  
+[🛒 Statistical Quality Control. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3FIloYq)  
+  
 ## 🤖 AI Summary  
 ### **Statistical Quality Control: Summary and Analysis** 📊  
 **TL;DR:** 📚 "Statistical Quality Control" by Grant and Leavenworth provides comprehensive methodologies for implementing and maintaining quality through statistical techniques, focusing on control charts and acceptance sampling to minimize variability and ensure product consistency.  

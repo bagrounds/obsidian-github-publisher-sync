@@ -1,14 +1,17 @@
 ---
 share: true
 aliases:
-  - The Deficit Myth
-title: The Deficit Myth
+  - "💰📉➡️📈🗳️ The Deficit Myth: Modern Monetary Theory and the Birth of the People's Economy"
+title: "💰📉➡️📈🗳️ The Deficit Myth: Modern Monetary Theory and the Birth of the People's Economy"
 URL: https://bagrounds.org/books/the-deficit-myth
 Author: 
 tags: 
+affiliate link: https://amzn.to/43NOEVV
 ---
 [Home](../index.md) > [Books](./index.md)  
-# The Deficit Myth  
+# 💰📉➡️📈🗳️ The Deficit Myth: Modern Monetary Theory and the Birth of the People's Economy  
+[🛒 The Deficit Myth: Modern Monetary Theory and the Birth of the People's Economy. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/43NOEVV)  
+  
 ## 🤖 AI Summary  
 ### 📖 Book Report: The Deficit Myth by Stephanie Kelton  
 #### TL;DR 🤯  

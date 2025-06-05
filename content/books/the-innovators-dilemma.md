@@ -1,14 +1,17 @@
 ---
 share: true
 aliases:
-  - The Innovator's Dilemma
-title: The Innovator's Dilemma
+  - "💡🤖💰💥🏢📉 The Innovator's Dilemma: When New Technologies Cause Great Firms to Fail"
+title: "💡🤖💰💥🏢📉 The Innovator's Dilemma: When New Technologies Cause Great Firms to Fail"
 URL: https://bagrounds.org/books/the-innovators-dilemma
 Author: 
 tags: 
+affiliate link: https://amzn.to/443oyiI
 ---
 [Home](../index.md) > [Books](./index.md)  
-# The Innovator's Dilemma  
+# 💡🤖💰💥🏢📉 The Innovator's Dilemma: When New Technologies Cause Great Firms to Fail  
+[🛒 The Innovator's Dilemma: When New Technologies Cause Great Firms to Fail. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/443oyiI)  
+  
 ## 🤖💬 AI Summary  
 ### 📖 The Innovator's Dilemma  
   

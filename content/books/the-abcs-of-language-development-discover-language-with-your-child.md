@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org/books/the-abc-s-of-language-development-discover-language-with-your-child
 share: true
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](../index.md) > [Books](./index.md) | [📺 👶🗣️🔤📢 📖 The ABCs of Language Development: Discover Language With Your Child](../videos/the-abcs-of-language-development-discover-language-with-your-child.md)  
 # 👶🔤 The ABC’s of Language Development: Discover Language with Your Child  
 [🆓 The ABCs of Language Development Book](https://languagesciences.ubc.ca/abcs-book)  
   

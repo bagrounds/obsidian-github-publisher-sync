@@ -1,14 +1,17 @@
 ---
 share: true
 aliases:
-  - The Age of Surveillance Capitalism
-title: The Age of Surveillance Capitalism
+  - "👁️‍🗨️💰⛓️👤 The Age of Surveillance Capitalism: The Fight for a Human Future at the New Frontier of Power"
+title: "👁️‍🗨️💰⛓️👤 The Age of Surveillance Capitalism: The Fight for a Human Future at the New Frontier of Power"
 URL: https://bagrounds.org/books/the-age-of-surveillance-capitalism
 Author: 
 tags: 
+affiliate link: https://amzn.to/4kwzGKY
 ---
 [Home](../index.md) > [Books](./index.md)  
-# The Age of Surveillance Capitalism  
+# 👁️‍🗨️💰⛓️👤 The Age of Surveillance Capitalism: The Fight for a Human Future at the New Frontier of Power  
+[🛒 The Age of Surveillance Capitalism: The Fight for a Human Future at the New Frontier of Power. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4kwzGKY)  
+  
 ## 🤖 AI Summary  
 ### TL;DR 🎯  
   

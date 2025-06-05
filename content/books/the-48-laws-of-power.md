@@ -1,14 +1,17 @@
 ---
 share: true
 aliases:
-  - The 48 Laws of Power
-title: The 48 Laws of Power
+  - 👑🎭♟️ 48 Laws of Power
+title: 👑🎭♟️ 48 Laws of Power
 URL: https://bagrounds.org/books/the-48-laws-of-power
 Author: 
 tags: 
+affiliate link: https://amzn.to/4jzNVxa
 ---
 [Home](../index.md) > [Books](./index.md)  
-# The 48 Laws of Power  
+# 👑🎭♟️ 48 Laws of Power  
+[🛒 48 Laws of Power. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4jzNVxa)  
+  
 ## 🤖 AI Summary  
 ### TLDR  
 **The 48 Laws of Power** distills centuries of historical wisdom into 48 provocative rules that reveal the often amoral tactics behind gaining and wielding power in any arena.    

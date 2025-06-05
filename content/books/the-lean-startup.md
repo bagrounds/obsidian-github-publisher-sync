@@ -1,14 +1,17 @@
 ---
 share: true
 aliases:
-  - The Lean Startup
-title: The Lean Startup
+  - "📉🧪🚀 The Lean Startup: How Today's Entrepreneurs Use Continuous Innovation to Create Radically Successful Businesses"
+title: "📉🧪🚀 The Lean Startup: How Today's Entrepreneurs Use Continuous Innovation to Create Radically Successful Businesses"
 URL: https://bagrounds.org/books/the-lean-startup
 Author: 
 tags: 
+affiliate link: https://amzn.to/45E1SH5
 ---
 [Home](../index.md) > [Books](./index.md)  
-# The Lean Startup  
+# 📉🧪🚀 The Lean Startup: How Today's Entrepreneurs Use Continuous Innovation to Create Radically Successful Businesses  
+[🛒 The Lean Startup: How Today's Entrepreneurs Use Continuous Innovation to Create Radically Successful Businesses. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/45E1SH5)  
+  
 ## 🤖 AI Summary  
 ### 🚀 TL;DR: The Lean Startup  
 Build a sustainable business by rapidly iterating through a "Build-Measure-Learn" feedback loop, focusing on validated learning and minimizing wasted effort through continuous deployment and customer feedback.  

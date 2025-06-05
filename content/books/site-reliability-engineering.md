@@ -1,14 +1,17 @@
 ---
 share: true
 aliases:
-  - Site Reliability Engineering
-title: Site Reliability Engineering
+  - "💻⚙️🛡️📈 Site Reliability Engineering: How Google Runs Production Systems"
+title: "💻⚙️🛡️📈 Site Reliability Engineering: How Google Runs Production Systems"
 URL: https://bagrounds.org/books/site-reliability-engineering
 Author: 
 tags: 
+affiliate link: https://amzn.to/4dMNm21
 ---
 [Home](../index.md) > [Books](./index.md)  
-# Site Reliability Engineering  
+# 💻⚙️🛡️📈 Site Reliability Engineering: How Google Runs Production Systems  
+[🛒 Site Reliability Engineering: How Google Runs Production Systems. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4dMNm21)  
+  
 ## 🤖 AI Summary  
 ### TL;DR 🚀  
 Site Reliability Engineering (SRE) is about applying software engineering principles to IT operations, emphasizing automation, measurement, and shared ownership to achieve reliable and scalable services.  

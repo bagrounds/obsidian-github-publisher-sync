@@ -36,7 +36,7 @@ The video 📹 discusses the launch 🚀 of the book, [👶🔤 The ABC’s of L
 * **[👶🗣️ How Babies Talk: The Magic and Mystery of Language in the First Three Years of Life](../books/how-babies-talk-the-magic-and-mystery-of-language-in-the-first-three-years-of-life.md) by Roberta Golinkoff and Kathy Hirsh-Pasek:** Written by developmental psychologists, this book offers insights into how infants begin to learn language even before birth.  
 * **"What to Do When Your Child Isn't Talking (2nd Edition)" by Nicola Lathey and Tracey Blake:** A practical guide by a speech and language therapist offering reassurance and solutions for parents concerned about speech delays.  
 * **"Childhood Speech, Language, and Listening Problems, 3rd Edition" by Patricia McAleer Hamaguchi:** A comprehensive resource by a speech-language pathologist, answering questions about various speech, language, and listening challenges in children.  
-* **"My First Learn-to-Talk Book" (by a Speech Pathologist):** Designed for beginning talkers, this book focuses on encouraging early imitation of sounds and words.  
+* **[👶🗣️ My First Learn-to-Talk Book: Created by an Early Speech Expert!](../books/my-first-learn-to-talk-book-created-by-an-early-speech-expert.md) (by a Speech Pathologist):** Designed for beginning talkers, this book focuses on encouraging early imitation of sounds and words.  
 * **"Speech Therapy for 0-5 Year-Olds" by Helen Oakmoor:** Highlights the critical period of early language development and strategies for exposure.  
 * **"Speech Therapy for Toddlers" by Kids SLT Publications:** Focuses on early and social interaction skills crucial for a child's development.  
   

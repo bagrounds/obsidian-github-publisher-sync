@@ -1,14 +1,17 @@
 ---
 share: true
 aliases:
-  - Seven Sketches in Compositionality
-title: Seven Sketches in Compositionality
+  - "📦➡️🧩 An Invitation to Applied Category Theory: Seven Sketches in Compositionality"
+title: "📦➡️🧩 An Invitation to Applied Category Theory: Seven Sketches in Compositionality"
 URL: https://bagrounds.org/books/seven-sketches-in-compositionality
 Author: 
 tags: 
+affiliate link: https://amzn.to/3Fnjexu
 ---
 [Home](../index.md) > [Books](./index.md)  
-# Seven Sketches in Compositionality  
+# 📦➡️🧩 An Invitation to Applied Category Theory: Seven Sketches in Compositionality  
+[🛒 An Invitation to Applied Category Theory: Seven Sketches in Compositionality. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3Fnjexu)  
+  
 ## 🔗 Links  
 - [Arxiv](https://arxiv.org/abs/1803.05316)  
   

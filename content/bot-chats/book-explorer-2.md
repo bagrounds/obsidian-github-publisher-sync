@@ -81,7 +81,7 @@ This book primarily covers the topics of:
 - **The Impact of Exercise on Learning and Memory** 🧠📖  
 - **Exercise as a Treatment for Mental Illness** 🎗️  
   
-It approaches these topics from the perspective of **neuroscientific research** and **clinical studies**, presenting evidence for the profound effects of physical activity on brain function and mental well-being.1 The authors, **John J. Ratey**, a clinical associate professor of psychiatry, and **Eric Hagerman**, a journalist, blend scientific rigor with accessible storytelling.  
+It approaches these topics from the perspective of **neuroscientific research** and **clinical studies**, presenting evidence for the profound effects of physical activity on brain function and mental well-being. The authors, **John J. Ratey**, a clinical associate professor of psychiatry, and **Eric Hagerman**, a journalist, blend scientific rigor with accessible storytelling.  
   
 ### Unifying Thematic Topic 🌟  
   
@@ -98,11 +98,11 @@ Here are some subtopics of Neuroplasticity/Mind-Body Interconnection that are _n
 - **The Impact of Sleep on Cognitive Function and Exercise Benefits**: 😴 While exercise can improve sleep, the intricate relationship between sleep quality and the neurological benefits of exercise isn't a primary focus.  
     - Recommendation: [😴💭 Why We Sleep: Unlocking the Power of Sleep and Dreams](../books/why-we-sleep-unlocking-the-power-of-sleep-and-dreams.md) by Matthew Walker. As recommended before, this provides a comprehensive understanding of sleep's vital role in brain health. 🌙  
 - **The Effects of Stress Reduction Techniques (beyond exercise) on the Brain**: 🧘 While exercise is a stress reducer, other methods like meditation and mindfulness aren't central to the book's arguments about brain function.  
-    - Recommendation: [🔬🧘🏼‍♀️🧠 Altered Traits: Science Reveals How Meditation Changes Your Mind, Brain, and Body](../books/altered-traits-science-reveals-how-meditation-changes-your-mind-brain-and-body.md) by Daniel Goleman and Richard J. Davidson.2 This book explores the neurological impacts of various meditation practices. 🧠✨  
+    - Recommendation: [🔬🧘🏼‍♀️🧠 Altered Traits: Science Reveals How Meditation Changes Your Mind, Brain, and Body](../books/altered-traits-science-reveals-how-meditation-changes-your-mind-brain-and-body.md) by Daniel Goleman and Richard J. Davidson. This book explores the neurological impacts of various meditation practices. 🧠✨  
   
 Here are some books that cover similar topics to _Spark_ but from a slightly **different perspective**:  
   
-- **Focusing more on the psychological and motivational aspects of exercise**: _The Joy of Movement: How Exercise Helps You Find Happiness, Hope, Connection, and Courage_ by Kelly McGonigal.3 This book explores the emotional and social benefits of physical activity, complementing the neuroscientific focus of _Spark_. 😊🤝  
+- **Focusing more on the psychological and motivational aspects of exercise**: _The Joy of Movement: How Exercise Helps You Find Happiness, Hope, Connection, and Courage_ by [Kelly McGonigal](../people/kelly-mcgonigal.md). This book explores the emotional and social benefits of physical activity, complementing the neuroscientific focus of _Spark_. 😊🤝  
   
 - **Examining the evolutionary basis of our need for movement**: _Moved to Learn: The Neuroscience of Body Literacy_ by Carla Hannaford. This book delves into how movement is fundamental to learning and cognitive development from an evolutionary standpoint. 🚶‍♀️👶  
   
@@ -119,7 +119,7 @@ Let's think of some topics very different from Neuroplasticity/Mind-Body Interco
   
 For a book completely dissimilar in topic or perspective from everything we've discussed, how about:  
   
-- _[The Sixth Extinction](../books/the-sixth-extinction.md): An Unnatural History_ by Elizabeth Kolbert.4 This Pulitzer Prize-winning book explores the history of5 mass extinctions on Earth and examines the current human-caused extinction event from a scientific and environmental perspective. It shifts our focus from individual well-being and brain function to the planet's biodiversity and our impact on it. 🌍💔  
+- _[The Sixth Extinction](../books/the-sixth-extinction.md): An Unnatural History_ by Elizabeth Kolbert. This Pulitzer Prize-winning book explores the history of mass extinctions on Earth and examines the current human-caused extinction event from a scientific and environmental perspective. It shifts our focus from individual well-being and brain function to the planet's biodiversity and our impact on it. 🌍💔  
   
 This was another stimulating exploration! What shall we investigate next? 🤔  
   
@@ -138,11 +138,11 @@ This book primarily covers the topics of:
 - **The Connection Between Gut Health and Neurological Disorders** 🎗️🧠  
 - **Strategies for Optimizing Gut Health for Brain Well-being** 🌱🧠  
   
-It approaches these topics from the perspective of **medical science**, **microbiology**, and **nutrition**, presenting research on the intricate communication between the gut and the brain via the trillions of microorganisms residing in our digestive system.1 The author, **David Perlmutter**, a neurologist, collaborates with **Kristin Loberg** to make this complex science accessible to a broad audience.2  
+It approaches these topics from the perspective of **medical science**, **microbiology**, and **nutrition**, presenting research on the intricate communication between the gut and the brain via the trillions of microorganisms residing in our digestive system. The author, **David Perlmutter**, a neurologist, collaborates with **Kristin Loberg** to make this complex science accessible to a broad audience.  
   
 ### Unifying Thematic Topic 🌟  
   
-The unifying thematic topic that tightly encompasses all of these areas is the **Gut-Brain Connection as a Key to Neurological Health**. It emphasizes that the health and balance of our gut microbiome profoundly influence our brain function, mental well-being, and susceptibility to neurological disorders.3  
+The unifying thematic topic that tightly encompasses all of these areas is the **Gut-Brain Connection as a Key to Neurological Health**. It emphasizes that the health and balance of our gut microbiome profoundly influence our brain function, mental well-being, and susceptibility to neurological disorders.  
   
 ### Local Exploration: Neighboring and Parent Topics 🌳  
   
@@ -159,7 +159,7 @@ Here are some subtopics of Neurogastroenterology/The Microbiome and Human Health
   
 Here are some books that cover similar topics to _Brain Maker_ but from a slightly **different perspective**:  
   
-- **Focusing more on the practical application of dietary changes for gut health**: _The Plant Paradox: The Hidden Dangers in "Healthy" Foods That Cause Disease and Weight Gain_ by Steven R. Gundry. This book presents4 a specific dietary approach to optimize gut health and overall well-being.5 🥑🥗  
+- **Focusing more on the practical application of dietary changes for gut health**: _The Plant Paradox: The Hidden Dangers in "Healthy" Foods That Cause Disease and Weight Gain_ by Steven R. Gundry. This book presents a specific dietary approach to optimize gut health and overall well-being.5 🥑🥗  
       
 - **Emphasizing the psychological impact of gut health and the bidirectional communication**: _This Is Your Brain on Plants_ by Neal Barnard. While focusing on plant-based diets, this book also highlights the psychological benefits linked to gut health. 🌱😊  
   

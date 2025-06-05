@@ -1,14 +1,17 @@
 ---
 share: true
 aliases:
-  - Rationality
-title: Rationality
+  - "🧠🤔❓ Rationality: What It Is, Why It Seems Scarce, Why It Matters"
+title: "🧠🤔❓ Rationality: What It Is, Why It Seems Scarce, Why It Matters"
 URL: https://bagrounds.org/books/rationality
 Author: 
 tags: 
+affiliate link: https://amzn.to/3FKe7Y4
 ---
 [Home](../index.md) > [Books](./index.md)  
-# Rationality  
+# 🧠🤔❓ Rationality: What It Is, Why It Seems Scarce, Why It Matters  
+[🛒 Rationality: What It Is, Why It Seems Scarce, Why It Matters. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3FKe7Y4)  
+  
 ## 🤖 AI Summary  
 ### TL;DR 🎯  
   

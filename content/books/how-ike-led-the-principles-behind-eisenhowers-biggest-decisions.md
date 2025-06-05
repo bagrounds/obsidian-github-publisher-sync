@@ -77,7 +77,7 @@ affiliate link: https://amzn.to/4dOJKMN
     * 📉 *The Falling Dominoes Book: Unraveling the Domino Theory in US Cold War Strategy*: Focuses on a specific strategic concept that influenced US policy during the Cold War.  
     * 🇷🇺 *Soviet Decisionmaking for National Security* by Jiri Valenta: Analyzes the Soviet process for national security decisions during the Cold War, providing a contrasting viewpoint.  
 * **Military Leadership and Strategy:**  
-    * ⚔️ *The Art of War* by Sun Tzu: A classic treatise on military strategy with timeless principles applicable to leadership.  
+    * ⚔️ [🎨⚔️ The Art of War](./the-art-of-war.md) by Sun Tzu: A classic treatise on military strategy with timeless principles applicable to leadership.  
     * 🪖 *Patton: A Genius for War* by Carlo D'Este: A biography of General George S. Patton, offering a contrasting, more flamboyant leadership style to Eisenhower's.  
 * **Psychology of Decision Making:**  
     * [🤔🐇🐢 Thinking, Fast and Slow](./thinking-fast-and-slow.md) by Daniel Kahneman: Explains the two systems of thought that influence decision-making, providing a scientific basis for understanding cognitive processes.  

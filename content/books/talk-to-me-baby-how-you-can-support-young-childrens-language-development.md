@@ -51,7 +51,7 @@ affiliate link: https://amzn.to/3FJgf2j
 * 🧠 **Thirty Million Words: Building a Child's Brain for Life** by Dana Suskind: 💬 Often mentioned alongside the importance of early language initiatives, this book emphasizes the impact of early language exposure on brain development.  
 * 🤝 **Connecting Through Talk: Building Strong Relationships and Support for Language Development** 🗣️ This book focuses on the link between responsive interactions and language growth.  
 * 🏫 **The Early Years Communication Handbook: A Practical Guide to Creating a Communication-friendly Setting in the Early Years** by Janet Cooper: 👂 This handbook offers practical advice for early years practitioners on creating environments that foster good listening, understanding, speaking, and communication skills.  
-* 📚 **Language, Literacy and Communication in the Early Years** by Prafull Dhondopant Kulkarni: 🚀 This book explores how communication and literacy can be enhanced in early childhood and their impact on a child's development.  
+* **[🗣️👶📚 Language, Literacy and Communication in the Early Years: A critical foundation](./language-literacy-and-communication-in-the-early-years-a-critical-foundation.md)** by Prafull Dhondopant Kulkarni: 🚀 This book explores how communication and literacy can be enhanced in early childhood and their impact on a child's development.  
   
 ### ➖ Contrasting Books  
   

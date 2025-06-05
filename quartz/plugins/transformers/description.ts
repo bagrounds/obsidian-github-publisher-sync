@@ -58,7 +58,7 @@ export const Description: QuartzTransformerPlugin<Partial<Options>> = (userOpts)
             let text = removeTitle(escapeHTML(toString(tree)), file.data.frontmatter?.title)
             const AFFILIATE_TEXT = 'As an Amazon Associate I earn from qualifying purchases.'
 
-            let affiliateLessText = text.split(AFFILIATE_TEXT).?[1]
+            let affiliateLessText = text.split(AFFILIATE_TEXT)?.[1]
             text = affiliateLessText || text
 
             if (opts.replaceExternalLinks) {

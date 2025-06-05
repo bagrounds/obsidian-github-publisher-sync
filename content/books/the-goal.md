@@ -1,14 +1,17 @@
 ---
 share: true
 aliases:
-  - The Goal
-title: The Goal
+  - "📈⚙️♾️ The Goal: A Process of Ongoing Improvement"
+title: "📈⚙️♾️ The Goal: A Process of Ongoing Improvement"
 URL: https://bagrounds.org/books/the-goal
 Author: 
 tags: 
+affiliate link: https://amzn.to/459fwBT
 ---
 [Home](../index.md) > [Books](./index.md)  
-# The Goal  
+# 📈⚙️♾️ The Goal: A Process of Ongoing Improvement  
+[🛒 The Goal: A Process of Ongoing Improvement. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/459fwBT)  
+  
 ## 🤖 AI Summary  
 - [Original deep research report exported to Google doc](https://docs.google.com/document/d/1QPatFi-DbbCqdu8nBqVodTvUg3W_uXOCj3A2czlVUME/edit?usp=drivesdk)  
 ### The Goal: A Summary and Analysis of Eliyahu M. Goldratt's Groundbreaking Business Novel  

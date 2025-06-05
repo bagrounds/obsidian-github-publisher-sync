@@ -1,16 +1,16 @@
 ---
 share: true
 aliases:
-  - 👑🎭♟️ 48 Laws of Power
-title: 👑🎭♟️ 48 Laws of Power
+  - 👑🎭♟️ The 48 Laws of Power
+title: 👑🎭♟️ The 48 Laws of Power
 URL: https://bagrounds.org/books/the-48-laws-of-power
 Author: 
 tags: 
 affiliate link: https://amzn.to/4jzNVxa
 ---
 [Home](../index.md) > [Books](./index.md)  
-# 👑🎭♟️ 48 Laws of Power  
-[🛒 48 Laws of Power. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4jzNVxa)  
+# 👑🎭♟️ The 48 Laws of Power  
+[🛒 The 48 Laws of Power. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4jzNVxa)  
   
 ## 🤖 AI Summary  
 ### TLDR  
@@ -62,19 +62,19 @@ affiliate link: https://amzn.to/4jzNVxa
   
 ### Additional Book Recommendations 📖  
 - **Alternate Book on the Same Topic:**    
-  - *[The Art of War](https://en.wikipedia.org/wiki/The_Art_of_War)* by Sun Tzu    
+  - The Art of War by Sun Tzu    
     - A timeless classic on strategy that complements Greene’s insights with a focus on military tactics and strategic foresight.    
   
 - **Tangentially Related Book:**    
-  - *[Influence](./influence.md): The Psychology of Persuasion by Robert Cialdini    
+  - [🍃🧠🤝🏼 Influence: The Psychology of Persuasion](./influence.md)  
     - Offers a research-backed exploration of persuasion and social influence, diving deep into psychological principles that govern human behavior.    
   
 - **Diametrically Opposed Book:**    
-  - *Give and Take* by Adam Grant    
+  - [🎁➡️🏆 Give and Take: A Revolutionary Approach to Success](./give-and-take.md) by Adam Grant    
     - Presents a counterpoint by highlighting how success often stems from generosity and collaboration rather than ruthless self-interest.    
   
 - **Fiction Book Incorporating Related Ideas:**    
-  - *[1984](./1984.md)* by George Orwell    
+  - [👁️ 1984](./1984.md) by George Orwell    
     - A dystopian narrative that explores themes of surveillance, control, and the dark side of power, offering a fictional yet profound reflection on manipulation and authority.  
   
 ## 💬 [ChatGPT](https://chat.com) Prompt  

@@ -1,14 +1,17 @@
 ---
 share: true
 aliases:
-  - "The Creative Act: A Way of Being"
-title: "The Creative Act: A Way of Being"
+  - "✨🎭🧘‍♂️🌌 The Creative Act: A Way of Being"
+title: "✨🎭🧘‍♂️🌌 The Creative Act: A Way of Being"
 URL: https://bagrounds.org/books/the-creative-act
 Author: 
 tags: 
+affiliate link: https://amzn.to/4dRHNiL
 ---
 [Home](../index.md) > [Books](./index.md)  
-# The Creative Act: A Way of Being  
+# ✨🎭🧘‍♂️🌌 The Creative Act: A Way of Being  
+[🛒 The Creative Act: A Way of Being. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4dRHNiL)  
+  
 ## 🤖 AI Summary  
 ### 🎨 TL;DR: The Creative Act: A Way of Being by Rick Rubin  
 Creativity is an inherent human capacity, a continuous process of discovery and connection to the universe, rather than a talent possessed by a select few, and can be cultivated through awareness and mindful engagement with the present moment.  

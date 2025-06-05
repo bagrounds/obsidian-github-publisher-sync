@@ -1,14 +1,17 @@
 ---
 share: true
 aliases:
-  - The Fifth Discipline
-title: The Fifth Discipline
+  - "🎨🔄🧠🏢The Fifth Discipline: The Art and Practice of the Learning Organization"
+title: "🎨🔄🧠🏢The Fifth Discipline: The Art and Practice of the Learning Organization"
 URL: https://bagrounds.org/books/the-fifth-discipline
 Author: 
 tags: 
+affiliate link: https://amzn.to/43RAzqx
 ---
 [Home](../index.md) > [Books](./index.md)  
-# The Fifth Discipline  
+# 🎨🔄🧠🏢The Fifth Discipline: The Art and Practice of the Learning Organization  
+[🛒 The Fifth Discipline: The Art and Practice of the Learning Organization. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/43RAzqx)  
+  
 ## 🤖💬 AI Summary  
 ### The Fifth Discipline: Summary 📚  
 **TL;DR:** Organizations can achieve sustainable success by fostering a culture of learning through five core disciplines: systems thinking, personal mastery, mental models, shared vision, and team learning. 🤝  

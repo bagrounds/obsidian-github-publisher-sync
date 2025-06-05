@@ -1,15 +1,16 @@
 ---
 share: true
 aliases:
-  - Organize for Complexity
-title: Organize for Complexity
+  - "🧩⚙️🌱📈 Organize for Complexity: How to Get Life Back Into Work to Build the High-Performance Organization"
+title: "🧩⚙️🌱📈 Organize for Complexity: How to Get Life Back Into Work to Build the High-Performance Organization"
 URL: https://bagrounds.org/books/organize-for-complexity
 Author: "[[Niels Pflaeging]]"
 tags: 
+affiliate link: https://amzn.to/43NLf9B
 ---
 [Home](../index.md) > [Books](./index.md)  
-# Organize for Complexity  
-_How to Get Life Back Into Work to Build the High-Performance Organization_  
+# 🧩⚙️🌱📈 Organize for Complexity: How to Get Life Back Into Work to Build the High-Performance Organization  
+[🛒 Organize for Complexity: How to Get Life Back Into Work to Build the High-Performance Organization. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/43NLf9B)  
   
 ## 🤖 AI Summary  
 ### 📚 Organize for Complexity: Summary & Analysis  

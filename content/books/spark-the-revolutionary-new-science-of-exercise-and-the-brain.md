@@ -1,14 +1,17 @@
 ---
 share: true
 aliases:
-  - "Spark: The Revolutionary New Science of Exercise and the Brain"
-title: "Spark: The Revolutionary New Science of Exercise and the Brain"
+  - "⚡🧠🏃 Spark: The Revolutionary New Science of Exercise and the Brain"
+title: "⚡🧠🏃 Spark: The Revolutionary New Science of Exercise and the Brain"
 URL: https://bagrounds.org/books/spark-the-revolutionary-new-science-of-exercise-and-the-brain
 Author: 
 tags: 
+affiliate link: https://amzn.to/3ZfcoAJ
 ---
 [Home](../index.md) > [Books](./index.md)  
-# Spark: The Revolutionary New Science of Exercise and the Brain  
+# ⚡🧠🏃 Spark: The Revolutionary New Science of Exercise and the Brain  
+[🛒 Spark: The Revolutionary New Science of Exercise and the Brain. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3ZfcoAJ)  
+  
 ## 🤖 AI Summary  
 ### 🧠 TL;DR  
 Exercise is not just about physical health; it profoundly impacts brain function, mood, learning, and mental health, with specific protocols enhancing various cognitive domains.  

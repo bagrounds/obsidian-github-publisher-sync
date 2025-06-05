@@ -1,13 +1,14 @@
 ---
 aliases:
-  - The Art of Fear
-title: The Art of Fear
+  - "🎨😨 The Art of Fear: Why Conquering Fear Won't Work and What to Do Instead"
+title: "🎨😨 The Art of Fear: Why Conquering Fear Won't Work and What to Do Instead"
 Author: "[[Kristen Ulmer]]"
 share: true
+affiliate link: https://amzn.to/4mIVTqN
 ---
 [Home](../index.md) > [Books](./index.md)  
-# The Art of Fear  
-_Why Conquering Fear Won't Work and What to Do Instead_  
+# 🎨😨 The Art of Fear: Why Conquering Fear Won't Work and What to Do Instead  
+[🛒 The Art of Fear: Why Conquering Fear Won't Work and What to Do Instead. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4mIVTqN)  
   
 ## 🤖 AI Summary  
 ### TL;DR 📌  

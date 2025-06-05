@@ -62,7 +62,7 @@ affiliate link: https://amzn.to/4jzNVxa
   
 ### Additional Book Recommendations 📖  
 - **Alternate Book on the Same Topic:**    
-  - The Art of War by Sun Tzu    
+  - [🎨⚔️ The Art of War](./the-art-of-war.md) by Sun Tzu    
     - A timeless classic on strategy that complements Greene’s insights with a focus on military tactics and strategic foresight.    
   
 - **Tangentially Related Book:**    

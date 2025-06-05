@@ -1,14 +1,17 @@
 ---
 share: true
 aliases:
-  - Stumbling on Happiness
-title: Stumbling on Happiness
+  - 🚶‍♀️❓😄😊 Stumbling on Happiness
+title: 🚶‍♀️❓😄😊 Stumbling on Happiness
 URL: https://bagrounds.org/books/stumbling-on-happiness
 Author: 
 tags: 
+affiliate link: https://amzn.to/4dYh2ZZ
 ---
 [Home](../index.md) > [Books](./index.md)  
-# Stumbling on Happiness  
+# 🚶‍♀️❓😄😊 Stumbling on Happiness  
+[🛒 Stumbling on Happiness. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4dYh2ZZ)  
+  
 ## 🤖 AI Summary  
 ### Stumbling on Happiness Summary 🧠  
 **TL;DR:** We're terrible at predicting what will make us happy because our brains use flawed simulations of the future, leading to choices that often don't deliver the expected joy.  

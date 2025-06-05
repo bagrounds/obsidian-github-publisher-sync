@@ -1,14 +1,17 @@
 ---
 share: true
 aliases:
-  - The Richest Man in Babylon
-title: The Richest Man in Babylon
+  - 💰🧔👑🏛️ The Richest Man in Babylon
+title: 💰🧔👑🏛️ The Richest Man in Babylon
 URL: https://bagrounds.org/books/the-richest-man-in-babylon
 Author: 
 tags: 
+affiliate link: https://amzn.to/43NvYFF
 ---
 [Home](../index.md) > [Books](./index.md)  
-# The Richest Man in Babylon  
+# 💰🧔👑🏛️ The Richest Man in Babylon  
+[🛒 The Richest Man in Babylon. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/43NvYFF)  
+  
 ## 🤖 AI Summary  
 ### The Richest Man in Babylon 💰  
   

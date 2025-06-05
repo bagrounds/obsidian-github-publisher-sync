@@ -85,4 +85,7 @@ affiliate link: https://amzn.to/4dOJKMN
     * [👉🤏 Nudge: Improving Decisions about Health, Wealth, and Happiness](./nudge.md) by Richard H. Thaler and Cass R. Sunstein: Examines how subtle changes in the way choices are presented can influence decision-making.  
   
 ## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
-> Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on How Ike Led: The Principles Behind Eisenhower's Biggest Decisions. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.
+> Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on How Ike Led: The Principles Behind Eisenhower's Biggest Decisions. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.  
+  
+## 🐦 Tweet  
+<blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">🇺🇸🪖♟️🔍⚖️🕊️🤝 How Ike Led: The Principles Behind Eisenhower’s Biggest Decisions<br><br>🗝️ Principles | 🪖 Leadership | 🤔 Decisions<a href="https://t.co/wa2o25L5lV">https://t.co/wa2o25L5lV</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/1930658046415675889?ref_src=twsrc%5Etfw">June 5, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

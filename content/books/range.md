@@ -1,14 +1,17 @@
 ---
 share: true
 aliases:
-  - Range
-title: Range
+  - "🌐🔭🎨🧩👨‍🎓 Range: Why Generalists Triumph in a Specialized World"
+title: "🌐🔭🎨🧩👨‍🎓 Range: Why Generalists Triumph in a Specialized World"
 URL: https://bagrounds.org/books/range
 Author: 
 tags: 
+affiliate link: https://amzn.to/4ktRiao
 ---
 [Home](../index.md) > [Books](./index.md)  
-# Range  
+# 🌐🔭🎨🧩👨‍🎓 Range: Why Generalists Triumph in a Specialized World  
+[🛒 Range: Why Generalists Triumph in a Specialized World. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4ktRiao)  
+  
 ## 🤖 AI Summary  
 ### ⏱️ TLDR  
 In a complex 🌍 and unpredictable 😵‍💫 world, broad 🌁 experience and diverse 🎭 skills (range) often lead to greater 🚀 long-term success than early 👶 specialization.  

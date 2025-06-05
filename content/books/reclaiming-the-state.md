@@ -1,14 +1,17 @@
 ---
 share: true
 aliases:
-  - Reclaiming the State
-title: Reclaiming the State
+  - "🏛️🔄✊🌍 Reclaiming the State: A Progressive Vision of Sovereignty for a Post-Neoliberal World"
+title: "🏛️🔄✊🌍 Reclaiming the State: A Progressive Vision of Sovereignty for a Post-Neoliberal World"
 URL: https://bagrounds.org/books/reclaiming-the-state
 Author: 
 tags: 
+affiliate link: https://amzn.to/4dSXFl4
 ---
 [Home](../index.md) > [Books](./index.md)  
-# Reclaiming the State  
+# 🏛️🔄✊🌍 Reclaiming the State: A Progressive Vision of Sovereignty for a Post-Neoliberal World  
+[🛒 Reclaiming the State: A Progressive Vision of Sovereignty for a Post-Neoliberal World. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4dSXFl4)  
+  
 ## 🤖 AI Summary  
 ### 📖 Reclaiming the State: A Progressive Vision of Sovereignty for a Post-Neoliberal World 🌍✨  
 **TL;DR:** 🎯🌟 This book argues for a revitalized, progressive state 🏛️🌈 that actively intervenes in the economy 💰📈 and society 🤝🤗 to address inequality 📉⚖️ and democratic deficits 🗳️📢, moving beyond the neoliberal paradigm 🚫📉.  

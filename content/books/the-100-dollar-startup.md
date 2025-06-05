@@ -1,14 +1,17 @@
 ---
 share: true
 aliases:
-  - The $100 Startup
-title: The $100 Startup
+  - "🪙💯🚀 The $100 Startup: Reinvent the Way You Make a Living, Do What You Love, and Create a New Future"
+title: "🪙💯🚀 The $100 Startup: Reinvent the Way You Make a Living, Do What You Love, and Create a New Future"
 URL: https://bagrounds.org/books/the-100-dollar-startup
 Author: 
 tags: 
+affiliate link: https://amzn.to/3Ht9v9p
 ---
 [Home](../index.md) > [Books](./index.md)  
-# The $100 Startup  
+# 🪙💯🚀 The $100 Startup: Reinvent the Way You Make a Living, Do What You Love, and Create a New Future  
+[🛒 The $100 Startup: Reinvent the Way You Make a Living, Do What You Love, and Create a New Future. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3Ht9v9p)  
+  
 ## 🤖 AI Summary  
 ### **The $100 Startup: Summary and Analysis** 🚀  
 **TL;DR:** 💸 Turn your passion into profit by launching a micro-business with minimal investment, focusing on value creation and customer-centricity.  

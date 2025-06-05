@@ -1,14 +1,17 @@
 ---
 share: true
 aliases:
-  - Taking Charge of Adult ADHD by Russell Barkley
-title: Taking Charge of Adult ADHD by Russell Barkley
+  - "🧠⬆️💼🏠❤️ Taking Charge of Adult ADHD: Proven Strategies to Succeed at Work, at Home, and in Relationships"
+title: "🧠⬆️💼🏠❤️ Taking Charge of Adult ADHD: Proven Strategies to Succeed at Work, at Home, and in Relationships"
 URL: https://bagrounds.org/books/taking-charge-of-adult-adhd
 Author: 
 tags: 
+affiliate link: https://amzn.to/3SBUTH3
 ---
 [Home](../index.md) > [Books](./index.md)  
-# Taking Charge of Adult ADHD by Russell Barkley  
+# 🧠⬆️💼🏠❤️ Taking Charge of Adult ADHD: Proven Strategies to Succeed at Work, at Home, and in Relationships  
+[🛒 Taking Charge of Adult ADHD: Proven Strategies to Succeed at Work, at Home, and in Relationships. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3SBUTH3)  
+  
 ## 🤖 AI Summary  
 ### 📖 Taking Charge of Adult ADHD by Russell Barkley  
 #### TL;DR 🎯  

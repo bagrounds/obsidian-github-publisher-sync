@@ -1,14 +1,17 @@
 ---
 share: true
 aliases:
-  - "The Creative Habit: Learn It and Use It for Life"
-title: "The Creative Habit: Learn It and Use It for Life"
+  - "💡🌱♾️ The Creative Habit: Learn It and Use It for Life"
+title: "💡🌱♾️ The Creative Habit: Learn It and Use It for Life"
 URL: https://bagrounds.org/books/the-creative-habit
 Author: 
 tags: 
+affiliate link: https://amzn.to/4dUcuUE
 ---
 [Home](../index.md) > [Books](./index.md)  
-# The Creative Habit: Learn It and Use It for Life  
+# 💡🌱♾️ The Creative Habit: Learn It and Use It for Life  
+[🛒 The Creative Habit: Learn It and Use It for Life. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4dUcuUE)  
+  
 ## 🤖 AI Summary  
 ### The Creative Habit: Summary 🎨  
 **TL;DR:** Creativity is a daily practice, not a mystical gift, and consistent, structured work habits are the key to unlocking and sustaining creative output.  

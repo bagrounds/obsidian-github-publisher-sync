@@ -1,14 +1,17 @@
 ---
 share: true
 aliases:
-  - "Reinforcement Learning: An Introduction"
-title: "Reinforcement Learning: An Introduction"
+  - "🤖➕🧠➡️ Reinforcement Learning: An Introduction"
+title: "🤖➕🧠➡️ Reinforcement Learning: An Introduction"
 URL: https://bagrounds.org/books/reinforcement-learning-an-introduction
 Author: 
 tags: 
+affiliate link: https://amzn.to/4krIXUx
 ---
 [Home](../index.md) > [Books](./index.md)  
-# Reinforcement Learning: An Introduction  
+# 🤖➕🧠➡️ Reinforcement Learning: An Introduction  
+[🛒 Reinforcement Learning: An Introduction. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4krIXUx)  
+  
 ## 🤖 AI Summary  
 ### 📖 Reinforcement Learning: An Introduction  
   

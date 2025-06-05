@@ -1,14 +1,17 @@
 ---
 share: true
 aliases:
-  - Statistics for Dummies
-title: Statistics for Dummies
+  - 📊🫠 Statistics for Dummies
+title: 📊🫠 Statistics for Dummies
 URL: https://bagrounds.org/books/statistics-for-dummies
 Author: 
 tags: 
+affiliate link: https://amzn.to/4mLhZbV
 ---
 [Home](../index.md) > [Books](./index.md)  
-# Statistics for Dummies  
+# 📊🫠 Statistics for Dummies  
+[🛒 Statistics for Dummies. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4mLhZbV)  
+  
 ## 🤖 AI Summary  
 ### Statistics for Dummies Summary 📊  
 **📚 TL;DR:** This book 📖 provides a practical, 🪜 approachable introduction to fundamental statistical concepts 📊 and methods, enabling readers 🤓 to understand 🤔 and interpret 🗣️ data 📈📉 in everyday life 🌎 and various fields.  

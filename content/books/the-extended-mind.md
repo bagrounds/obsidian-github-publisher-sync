@@ -1,14 +1,17 @@
 ---
 share: true
 aliases:
-  - The Extended Mind
-title: The Extended Mind
+  - "🧠🌐💡 The Extended Mind: The Power of Thinking Outside the Brain"
+title: "🧠🌐💡 The Extended Mind: The Power of Thinking Outside the Brain"
 URL: https://bagrounds.org/books/the-extended-mind
 Author: 
 tags: 
+affiliate link: https://amzn.to/3SX5Sex
 ---
 [Home](../index.md) > [Books](./index.md)  
-# The Extended Mind  
+# 🧠🌐💡 The Extended Mind: The Power of Thinking Outside the Brain  
+[🛒 The Extended Mind: The Power of Thinking Outside the Brain. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3SX5Sex)  
+  
 ## 🤖 AI Summary  
 ### **TLDR:** 🧠➡️🌍  
 🧠 _The Extended Mind_ argues that 🧠💡 cognition isn't confined to the 🧠👤 brain but extends into our 🤸‍♀️ bodies, 🏞️ environments, and 🤝 social interactions, 🔄 reshaping our 🧠 understanding of 🧠💡 intelligence and how we 📚 learn and 🧩 problem-solve.  

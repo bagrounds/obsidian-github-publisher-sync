@@ -205,7 +205,7 @@ Here are some of the key disciplines focused on decision-making:
         * 🛡️ **P**repare to be wrong  
     * 🎯 **What you'll learn:** A clear, actionable framework 🏗️ to navigate complex decisions, reduce bias, and improve outcomes. 📈  
   
-6. 🎲 **Thinking in Bets: Making Smarter Decisions When You Don't Have All the Facts by Annie Duke:**  
+6. **[🎲🤔 Thinking in Bets: Making Smarter Decisions When You Don't Have All the Facts](../books/thinking-in-bets-making-smarter-decisions-when-you-dont-have-all-the-facts.md) by Annie Duke:**  
     * ⭐ **Why it's essential:** Written by a former professional poker player 👩‍💼, this book offers a unique perspective 👓 on decision-making under uncertainty. Duke emphasizes thinking in probabilities ➗, separating the quality of a decision from its outcome 🥇, and embracing uncertainty. 🤔  
     * 🛣️ **What you'll learn:** How to adopt a probabilistic mindset 🧠, manage risk ⚠️, and learn from outcomes even when they don't go your way. 🛤️  
   

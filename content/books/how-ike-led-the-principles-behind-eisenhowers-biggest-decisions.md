@@ -57,7 +57,7 @@ affiliate link: https://amzn.to/4dOJKMN
     * 🗣️ *The President's Club: Inside the World's Most Exclusive Fraternity* by Nancy Gibbs and Michael Duffy: Explores the relationships and interactions between former and current presidents, offering insights into the unique fraternity of the presidency.  
 * **On Strategic Decision Making:**  
     * [🤔💡⚖️✅ Decisive: How to Make Better Choices in Life and Work](./decisive-how-to-make-better-choices-in-life-and-work.md) by Chip Heath and Dan Heath: Provides a framework for making better decisions by overcoming common biases.  
-    * 🎲 *Thinking in Bets: Making Smarter Decisions When You Don't Have All the Facts* by Annie Duke: Uses poker as a metaphor to teach probabilistic thinking and decision-making under uncertainty.  
+    * [🎲🤔 Thinking in Bets: Making Smarter Decisions When You Don't Have All the Facts](./thinking-in-bets-making-smarter-decisions-when-you-dont-have-all-the-facts.md) by Annie Duke: Uses poker as a metaphor to teach probabilistic thinking and decision-making under uncertainty.  
     * 🎯 *Good Strategy Bad Strategy: The Difference and Why It Matters* by Richard P. Rumelt: Defines what constitutes good strategy and identifies the hallmarks of bad strategy.  
     * 🗺️ *The Decision Book: Fifty Models for Strategic Thinking* by Mikael Krogerus and Roman Tschäppeler: Presents 50 different models for strategic thinking and decision-making.  
   

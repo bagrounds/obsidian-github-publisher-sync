@@ -73,4 +73,7 @@ This board book is primarily aimed at babies and toddlers, with a suggested age 
     * ⬆️ *Jump Around* by various authors: Prompts imitation through physical movements as well as sounds.  
   
 ## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
-> Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on My First Learn-to-Talk Book: Created by an Early Speech Expert!. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.
+> Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on My First Learn-to-Talk Book: Created by an Early Speech Expert!. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.  
+  
+## 🐦 Tweet  
+<blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">👶🗣️ My First Learn-to-Talk Book: Created by an Early Speech Expert!<br><br>👶 Language Acquisition | 👩‍⚕️ Speech Pathology | 📸 Visual Learning | 🎶 Rhyme and Rhythm | 👨‍👩‍👧‍👦 Caregiver Interaction<a href="https://t.co/MdFZpnzzdj">https://t.co/MdFZpnzzdj</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/1930875361497391573?ref_src=twsrc%5Etfw">June 6, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

@@ -10,7 +10,8 @@ title: 🏡 Home
 📑 Notes, 💭 thoughts, and 🔗 Links.  
 ❔ What do 🫵 _you_ 🤔 think?  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (202)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (203)  
+- [2025-06-05 | ♟️ Strategy | 🦜 Language | 🔬 Focus 📚📺](./reflections/2025-06-05.md)  
 - [2025-06-04 | 🌅 Reaping 💀](./reflections/2025-06-04.md)  
 - [2025-06-03 | 🃏 Random 🎲](./reflections/2025-06-03.md)  
 - [2025-06-02 | ⚫ Black 🦢 Swan 🎲](./reflections/2025-06-02.md)  
@@ -20,12 +21,11 @@ title: 🏡 Home
 - [2025-05-29 | 🔙 Backward | 💡 Innovation](./reflections/2025-05-29.md)  
 - [2025-05-28 | ⚖️ Lawgic 💭](./reflections/2025-05-28.md)  
 - [2025-05-27 | 🐐 Kid 🔬 Science 📚 | 📰 Republican 🐘 Theft 💸](./reflections/2025-05-27.md)  
-- [2025-05-26 | 🏗️ Creative 🙅🏼‍♀️ Conflict](./reflections/2025-05-26.md)  
   
   
 ## [📄  Articles](./articles/index.md) (27)  
   
-## [📚 Books](./books/index.md) (413)  
+## [📚 Books](./books/index.md) (420)  
   
 ## [🤖💬 Bot Chats](./bot-chats/index.md) (28)  
   
@@ -35,7 +35,7 @@ title: 🏡 Home
   
 ## [🌌 Topics](./topics/index.md) (71)  
   
-## [📺 Videos](./videos/index.md) (137)  
+## [📺 Videos](./videos/index.md) (140)  
   
 ## 🔗 Profiles  
 - [My resume](./topics/my-resume.md)  

@@ -3,11 +3,12 @@ share: true
 aliases:
   - "👶🗣️🔤📢 📖 The ABCs of Language Development: Discover Language With Your Child"
 title: "👶🗣️🔤📢 📖 The ABCs of Language Development: Discover Language With Your Child"
-URL: https://youtu.be/t6t9XL948TM
+URL: https://bagrounds.org/videos/the-abcs-of-language-development-discover-language-with-your-child
 Author: 
 Platform: "#YouTube"
 Channel: UBC Language Sciences
 tags: 
+youtube: https://youtu.be/t6t9XL948TM
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 👶🗣️🔤📢 📖 The ABCs of Language Development: Discover Language With Your Child  
@@ -62,4 +63,7 @@ The video 📹 discusses the launch 🚀 of the book, [👶🔤 The ABC’s of L
 * **"Mango, Abuela, and Me" by Meg Medina:** Explores overcoming language barriers and the importance of communication in forming family bonds across cultures.  
 * **"Max's Words" by Kate Banks:** A creative story about a boy who collects words and uses them to create stories, emphasizing the power and joy of language.  
 * **"The Boy Who Loved Words" by Roni Schotter:** Explores a child's passion for words and how he learns to share his love of language with others, fostering an appreciation for vocabulary.  
-* **"Because Amelia Smiled" by David Ezra Stein:** A picture book that illustrates how a small act of kindness (a smile) can have a ripple effect, connecting to the broader idea of positive communication.
+* **"Because Amelia Smiled" by David Ezra Stein:** A picture book that illustrates how a small act of kindness (a smile) can have a ripple effect, connecting to the broader idea of positive communication.  
+  
+## 🐦 Tweet   
+<blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">👶🗣️🔤📢 📖 The ABCs of Language Development: Discover Language With Your Child<br><br>👶 Infant Communication | 🇨🇦 British Columbia Services | 🌈 Color-Coded Sections | 🧑‍🤝‍🧑 Social Skills | 🤔 Theory of Mind | 🤝 Relationship Formation | 📚 Academic Abilities<a href="https://t.co/NkaKh77fXt">https://t.co/NkaKh77fXt</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/1930871699467067651?ref_src=twsrc%5Etfw">June 6, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

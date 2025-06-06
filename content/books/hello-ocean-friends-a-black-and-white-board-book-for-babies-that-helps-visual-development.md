@@ -60,4 +60,7 @@ affiliate link: https://amzn.to/3HJL9bm
 * 🌐 **Books introducing greetings in multiple languages** (if the "Hola" aspect of *Hello, Ocean Friends* resonated).  
   
 ## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
-> Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Hello, Ocean Friends: A Black-and-White Board Book for Babies That Helps Visual Development. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.
+> Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Hello, Ocean Friends: A Black-and-White Board Book for Babies That Helps Visual Development. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.  
+  
+## 🐦 Tweet  
+<blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">👶🦓🌊 Hello, Ocean Friends: A Black-and-White Board Book for Babies That Helps Visual Development<br><br>👁️‍🗨️ Visual Stimulation | 👶 Infants | 🐬 Ocean Life | 🗣️ Early Language | 📚 Board Book | 🧠 Cognitive Growth<a href="https://t.co/Gn22TzCq6J">https://t.co/Gn22TzCq6J</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/1930867480341454884?ref_src=twsrc%5Etfw">June 6, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

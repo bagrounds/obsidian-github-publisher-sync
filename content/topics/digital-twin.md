@@ -1,12 +1,12 @@
 ---
 share: true
 aliases:
-  - Digital Twin
-title: Digital Twin
+  - 👯💻 Digital Twin
+title: 👯💻 Digital Twin
 URL: https://bagrounds.org/topics/digital-twin
 ---
 [Home](../index.md) > [Topics](./index.md)  
-# Digital Twin  
+# 👯💻 Digital Twin  
 ## An Operational Definition  
 Digital twin - a digital representation of the recent state of a subject; a means of observation  
   

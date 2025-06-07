@@ -1,12 +1,12 @@
 ---
 share: true
 aliases:
-  - Ontologies
-title: Ontologies
+  - 🌳🗺️🔗🏛️ Ontologies
+title: 🌳🗺️🔗🏛️ Ontologies
 URL: https://bagrounds.org/topics/ontologies
 ---
 [Home](../index.md) > [Topics](./index.md)  
-# Ontologies  
+# 🌳🗺️🔗🏛️ Ontologies  
 ## 🤖 AI Summary  
 ### 🔨 What Is It?  
   

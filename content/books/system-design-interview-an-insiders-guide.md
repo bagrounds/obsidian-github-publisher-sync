@@ -4,9 +4,12 @@ aliases:
   - 🖥️🔑 System Design Interview - An Insider's Guide
 URL: https://bagrounds.org/books/system-design-interview-an-insiders-guide
 share: true
+affiliate link: https://amzn.to/43RaTKo
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🖥️🔑 System Design Interview - An Insider's Guide  
+[🛒 System Design Interview - An Insider's Guide. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/43RaTKo)  
+  
 ## 📖 Book Report: System Design Interview - An Insider's Guide  
   
 ✍️ Authored by Alex Xu, *System Design Interview - An Insider's Guide* is a highly-regarded resource aimed at preparing software engineers for the challenging system design interview component of technical interviews, particularly at major tech companies. 🏢 The book focuses on providing a structured approach and practical examples to common system design problems.  
@@ -75,4 +78,7 @@ This book is primarily aimed at software engineers preparing for technical inter
 * **[🐦‍🔥💻 The Phoenix Project](./the-phoenix-project.md): A Novel About IT, DevOps, and Helping Your Business Win by Gene Kim, Kevin Behr, George Spafford:** A business novel illustrating the principles of DevOps and their impact on IT system reliability and performance.  
   
 ## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
-> Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on System Design Interview - An Insider's Guide. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.
+> Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on System Design Interview - An Insider's Guide. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.  
+  
+## 🐦 Tweet  
+<blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">🖥️🔑 System Design Interview - An Insider&#39;s Guide<br><br>🧑‍💻 Interview Preparation | 🕸️ System Architecture | 🪜 Framework | ☁️ Distributed Systems | 📈 Scalability<a href="https://t.co/x62ceH5XYS">https://t.co/x62ceH5XYS</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/1931497338822082901?ref_src=twsrc%5Etfw">June 7, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

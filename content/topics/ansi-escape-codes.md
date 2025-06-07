@@ -1,12 +1,12 @@
 ---
 share: true
 aliases:
-  - ANSI escape codes
-title: ANSI escape codes
+  - 💻🎨⚙️ ANSI escape codes
+title: 💻🎨⚙️ ANSI escape codes
 URL: https://bagrounds.org/topics/ansi-escape-codes
 ---
 [Home](../index.md) > [Topics](./index.md)  
-# ANSI escape codes  
+# 💻🎨⚙️ ANSI escape codes  
 ## 🤖 AI Summary  
 ### 👉 What Is It?  
   

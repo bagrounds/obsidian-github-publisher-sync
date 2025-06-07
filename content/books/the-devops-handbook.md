@@ -1,15 +1,15 @@
 ---
 share: true
 aliases:
-  - "⚙️🚀🛡️ The DevOps Handbook, Second Edition: How to Create World-Class Agility, Reliability, & Security in Technology Organizations"
-title: "⚙️🚀🛡️ The DevOps Handbook, Second Edition: How to Create World-Class Agility, Reliability, & Security in Technology Organizations"
+  - "⚙️🚀🛡️ The DevOps Handbook: How to Create World-Class Agility, Reliability, & Security in Technology Organizations"
+title: "⚙️🚀🛡️ The DevOps Handbook: How to Create World-Class Agility, Reliability, & Security in Technology Organizations"
 URL: https://bagrounds.org/books/the-devops-handbook
 Author: 
 tags: 
 affiliate link: https://amzn.to/453CvhM
 ---
 [Home](../index.md) > [Books](./index.md)  
-# ⚙️🚀🛡️ The DevOps Handbook, Second Edition: How to Create World-Class Agility, Reliability, & Security in Technology Organizations  
+# ⚙️🚀🛡️ The DevOps Handbook: How to Create World-Class Agility, Reliability, & Security in Technology Organizations  
 [🛒 The DevOps Handbook, Second Edition: How to Create World-Class Agility, Reliability, & Security in Technology Organizations. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/453CvhM)  
   
 ## 🤖 AI Summary  

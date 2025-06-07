@@ -1,12 +1,12 @@
 ---
 share: true
 aliases:
-  - Reliable News
-title: Reliable News
+  - ✅🔎📰 Reliable News
+title: ✅🔎📰 Reliable News
 URL: https://bagrounds.org/bot-chats/reliable-news
 ---
 [Home](../index.md) > [Bot Chats](./index.md)  
-# Reliable News  
+# ✅🔎📰 Reliable News  
 ## [ChatGPT](https://chat.com) Prompt  
 > I want to find or assemble a collection of the most accurate, most objective, least bias news sources. I want news sources that are considered reliable and trustworthy by people of all political and social backgrounds. How should I go about this and what candidate news sources would you suggest? Support your choices with arguments as to why these sources are so trustworthy.  
   

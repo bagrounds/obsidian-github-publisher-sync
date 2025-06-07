@@ -1,15 +1,15 @@
 ---
 share: true
 aliases:
-  - The Staff Engineer's Path
-title: The Staff Engineer's Path
+  - 👶⬆️👨‍💻📈 The Staff Engineer's Path
+title: 👶⬆️👨‍💻📈 The Staff Engineer's Path
 URL: https://bagrounds.org/books/the-staff-engineers-path
 Author: "[[Tanya Reilly]]"
 tags: []
 affiliate link: https://amzn.to/4jy1HR7
 ---
 [Home](../index.md) > [Books](./index.md)  
-# The Staff Engineer's Path  
+# 👶⬆️👨‍💻📈 The Staff Engineer's Path  
 _A Guide for Individual Contributors Navigating Growth and Change_  
 [🛒 The Staff Engineer's Path. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4jy1HR7)  
   

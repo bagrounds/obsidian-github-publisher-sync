@@ -1,8 +1,8 @@
 ---
 share: true
 aliases:
-  - Improve Focus with Behavioral Tools & Medication for ADHD | Dr. John Kruse
-title: Improve Focus with Behavioral Tools & Medication for ADHD | Dr. John Kruse
+  - 🧠💊🎯 Improve Focus with Behavioral Tools & Medication for ADHD | Dr. John Kruse
+title: 🧠💊🎯 Improve Focus with Behavioral Tools & Medication for ADHD | Dr. John Kruse
 URL: https://youtu.be/NtQ-kdLlQiU
 Author: 
 Platform: 
@@ -10,7 +10,7 @@ Channel: Andrew Huberman
 tags: 
 ---
 [Home](../index.md) > [Videos](./index.md)  
-# Andrew Huberman - Improve Focus with Behavioral Tools & Medication for ADHD | Dr. John Kruse  
+# 🧠💊🎯 Improve Focus with Behavioral Tools & Medication for ADHD | Dr. John Kruse  
 ![Improve Focus with Behavioral Tools & Medication for ADHD | Dr. John Kruse](https://youtu.be/NtQ-kdLlQiU)  
   
 ## 🤖 AI Summary  

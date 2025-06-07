@@ -1,12 +1,12 @@
 ---
 share: true
 aliases:
-  - Pseudorange
-title: Pseudorange
+  - 🛰️📐≈ Pseudorange
+title: 🛰️📐≈ Pseudorange
 URL: https://bagrounds.org/topics/pseudorange
 ---
 [Home](../index.md) > [Topics](./index.md)  
-# Pseudorange  
+# 🛰️📐≈ Pseudorange  
 ## 🤖 AI Summary  
 ### 👉 What Is It?  
   

@@ -32,7 +32,7 @@ backlinks: false
 - [Parenting and Infant Development Guide](./parenting-and-infant-development-guide.md)  
 - [Parenting Resources Recommendations](./parenting-resources-recommendations.md)  
 - [🗺️🗓️📋✅🔮 Planning](./planning.md)  
-- [Reliable News](./reliable-news.md)  
+- [✅🔎📰 Reliable News](./reliable-news.md)  
 - [🦷🔬 Science of Dentistry](./science-of-dentistry.md)  
 - [Special Characters In Logs](./special-characters-in-logs.md)  
 - [Summarize The Happiest Baby On The Block](./summarize-the-happiest-baby-on-the-block.md)  

@@ -7,7 +7,7 @@ URL: https://bagrounds.org/books
 backlinks: false
 ---
 [Home](../index.md)  
-# 📚 Books (420)  
+# 📚 Books (422)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)  
 - [🧑‍🤝‍🧑📈 10 to 25: The Science of Motivating Young People: A Groundbreaking Approach to Leading the Next Generation - And Making Your Own Life Easier](./10-to-25-the-science-of-motivating-young-people-a-groundbreaking-approach-to-leading-the-next-generation-and-making-your-own-life-easier.md)  
@@ -338,6 +338,7 @@ Feedback Control of Dynamic Systems]]
 - [😈🌍🔬🕯️🌑 The Demon-Haunted World: Science as a Candle in the Dark](./the-demon-haunted-world.md)  
 - [💺🚪💡🤔 The Design of Everyday Things](./the-design-of-everyday-things.md)  
 - [🧠🧑‍🤝‍🧑 The Developing Mind: How Relationships and the Brain Interact to Shape Who We Are](./the-developing-mind-how-relationships-and-the-brain-interact-to-shape-who-we-are.md)  
+- [😈🔥👹 The Devils](./the-devils.md)  
 - [⚙️🚀🛡️ The DevOps Handbook, Second Edition: How to Create World-Class Agility, Reliability, & Security in Technology Organizations](./the-devops-handbook.md)  
 - [👑😈👎📈 The Dictator's Handbook: Why Bad Behavior Is Almost Always Good Politics](./the-dictators-handbook.md)  
 - [🦢 The Elements of Style](./the-elements-of-style.md)  
@@ -400,6 +401,7 @@ Feedback Control of Dynamic Systems]]
 - [🧘🏋️ The Willpower Instinct: How Self-Control Works, Why It Matters, and What You Can Do to Get More of It](./the-willpower-instinct.md)  
 - [👍🧠 The Yes Brain: How to Cultivate Courage, Curiosity, and Resilience in Your Child](./the-yes-brain.md)  
 - [🤔🐇🐢 Thinking, Fast and Slow](./thinking-fast-and-slow.md)  
+- [🎲🤔 Thinking in Bets: Making Smarter Decisions When You Don't Have All the Facts](./thinking-in-bets-making-smarter-decisions-when-you-dont-have-all-the-facts.md)  
 - [🌐🔗🧠📖 Thinking in Systems: A Primer](./thinking-in-systems.md)  
 - [🤔⚖️ Thinking Like a Lawyer: A New Introduction to Legal Reasoning](./thinking-like-a-lawyer-a-new-introduction-to-legal-reasoning.md)  
 - [🤥📣 This Is Not Propaganda: Adventures in the War Against Reality](./this-is-not-propaganda.md)  

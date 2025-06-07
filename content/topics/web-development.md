@@ -1,12 +1,12 @@
 ---
 share: true
 aliases:
-  - Web Development
-title: Web Development
+  - 💻🌐<> Web Development
+title: 💻🌐<> Web Development
 URL: https://bagrounds.org/topics/web-development
 ---
 [Home](../index.md) > [Topics](./index.md)  
-# Web Development  
+# 💻🌐<> Web Development  
 ## 🤖 AI Summary  
 ### Web Development  
   

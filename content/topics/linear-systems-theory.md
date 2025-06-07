@@ -1,12 +1,12 @@
 ---
 share: true
 aliases:
-  - Linear Systems Theory
-title: Linear Systems Theory
+  - ➕➖🔢📈📚 Linear Systems Theory
+title: ➕➖🔢📈📚 Linear Systems Theory
 URL: https://bagrounds.org/topics/linear-systems-theory
 ---
 [Home](../index.md) > [Topics](./index.md)  
-# Linear Systems Theory  
+# ➕➖🔢📈📚 Linear Systems Theory  
 ## 🤖 AI Summary  
 ### 👉 What Is It?  
   

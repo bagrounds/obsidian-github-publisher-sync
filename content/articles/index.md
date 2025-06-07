@@ -6,7 +6,7 @@ title: 📄  Articles
 backlinks: false
 ---
 [Home](../index.md)  
-# 📄  Articles (27)  
+# 📄  Articles (28)  
 - [🦊😈🐾🕵️💸 5 takeaways about NPR's reporting on the whistleblower report about DOGE at the NLRB](./5-takeaways-about-nprs-reporting-on-the-whistleblower-report-about-doge-at-the-nlrb.md)  
 - [5 tips on getting started with Gems, your custom AI experts](./5-tips-on-getting-started-with-gems-your-custom-ai-experts.md)  
 - [⏱️⚔️🏛️ '60 Minutes' chief resigns, saying show's independence was compromised](./60-minutes-chief-resigns-saying-shows-independence-was-compromised.md)  
@@ -14,6 +14,7 @@ backlinks: false
 - [👀 Attention Is All You Need](./attention-is-all-you-need.md)  
 - [Cannabis for Pets With Cancer](./cannabis-for-pets-with-cancer.md)  
 - [⚠️🖇️ Google Cautions Against Using Too Many Internal Links](./google-cautions-against-using-too-many-internal-links.md)  
+- [🧑‍💻🤖🤝 How Anthropic Teams Use Claude Code](./how-anthropic-teams-use-claude-code.md)  
 - [How Project 2025 Would Devastate Public Education](./how-project-2025-would-devastate-public-education.md)  
 - [How the Ph.D. Project, and 45 colleges, became a target of the Trump administration](./how-the-phd-project-and-45-colleges-became-a-target-of-the-trump-administration.md)  
 - [Iowa gives final approval to a bill removing gender identity protections despite protests](./iowa-gives-final-approval-to-a-bill-removing-gender-identity-protections-despite-protests.md)  

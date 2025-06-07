@@ -10,7 +10,8 @@ title: 🏡 Home
 📑 Notes, 💭 thoughts, and 🔗 Links.  
 ❔ What do 🫵 _you_ 🤔 think?  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (203)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (204)  
+- [2025-06-06 | 🎲 Bets 🎰 | 😈 Devils 👹 | 🤖 Claude 📚📄](./reflections/2025-06-06.md)  
 - [2025-06-05 | ♟️ Strategy | 🦜 Language | 🔬 Focus 📚📺](./reflections/2025-06-05.md)  
 - [2025-06-04 | 🌅 Reaping 💀](./reflections/2025-06-04.md)  
 - [2025-06-03 | 🃏 Random 🎲](./reflections/2025-06-03.md)  
@@ -20,12 +21,11 @@ title: 🏡 Home
 - [2025-05-30 | 🤔 Decide 🎲](./reflections/2025-05-30.md)  
 - [2025-05-29 | 🔙 Backward | 💡 Innovation](./reflections/2025-05-29.md)  
 - [2025-05-28 | ⚖️ Lawgic 💭](./reflections/2025-05-28.md)  
-- [2025-05-27 | 🐐 Kid 🔬 Science 📚 | 📰 Republican 🐘 Theft 💸](./reflections/2025-05-27.md)  
   
   
-## [📄  Articles](./articles/index.md) (27)  
+## [📄  Articles](./articles/index.md) (28)  
   
-## [📚 Books](./books/index.md) (420)  
+## [📚 Books](./books/index.md) (422)  
   
 ## [🤖💬 Bot Chats](./bot-chats/index.md) (28)  
   

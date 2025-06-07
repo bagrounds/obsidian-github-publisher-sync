@@ -1,12 +1,14 @@
 ---
 share: true
 aliases:
-  - Design a Performance Self-Evaluation System
-title: Design a Performance Self-Evaluation System
+  - 📊🧐📝⚙️ Design a Performance Self-Evaluation System
+title: 📊🧐📝⚙️ Design a Performance Self-Evaluation System
 URL: https://bagrounds.org/topics/design-a-performance-self-evaluation-system
+tags:
+  - bug
 ---
 [Home](../index.md) > [Topics](./index.md)  
-# Design a Performance Self-Evaluation System  
+# 📊🧐📝⚙️ Design a Performance Self-Evaluation System  
 ![design-a-performance-self-evaluation-system](../design-a-performance-self-evaluation-system.svg)  
 %%[🖋 Edit in Excalidraw](../../design-a-performance-self-evaluation-system.md)%%  
   

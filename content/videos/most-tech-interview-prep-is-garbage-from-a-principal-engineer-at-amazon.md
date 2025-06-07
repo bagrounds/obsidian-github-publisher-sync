@@ -75,7 +75,7 @@ tags:
   
 * ⚙️ **System Design:**  
     * [💾⬆️🛡️ Designing Data-Intensive Applications: The Big Ideas Behind Reliable, Scalable, and Maintainable Systems](../books/designing-data-intensive-applications.md) by Martin Kleppmann. A deep dive into distributed systems. 📚  
-    * ✍️ System Design Interview - An Insider's Guide by Alex Xu. 💡  
+    * [🖥️🔑 System Design Interview - An Insider's Guide](../books/system-design-interview-an-insiders-guide.md) by Alex Xu. 💡  
   
 * 🚀 **Leadership in Software Engineering:**  
     * [👶⬆️👨‍💻📈 The Staff Engineer's Path](../books/the-staff-engineers-path.md) by Tanya Reilly. For senior engineers looking to level up! 📈  

@@ -7,7 +7,7 @@ URL: https://bagrounds.org/books
 backlinks: false
 ---
 [Home](../index.md)  
-# 📚 Books (425)  
+# 📚 Books (428)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)  
 - [🧑‍🤝‍🧑📈 10 to 25: The Science of Motivating Young People: A Groundbreaking Approach to Leading the Next Generation - And Making Your Own Life Easier](./10-to-25-the-science-of-motivating-young-people-a-groundbreaking-approach-to-leading-the-next-generation-and-making-your-own-life-easier.md)  
@@ -326,6 +326,7 @@ Feedback Control of Dynamic Systems]]
 - [📜🤝 The Bill of Obligations: The Ten Habits of Good Citizens](./the-bill-of-obligations.md)  
 - [⚫🦢🎲 The Black Swan: The Impact of the Highly Improbable](./the-black-swan-the-impact-of-the-highly-improbable.md)  
 - [🗡️🤕 The Blade Itself](./the-blade-itself.md)  
+- [🤕🎼🧠 The Body Keeps the Score: Brain, Mind, and Body in the Healing of Trauma](./the-body-keeps-the-score-brain-mind-and-body-in-the-healing-of-trauma.md)  
 - [❓➡️💡 The Book of Why: The New Science of Cause and Effect](./the-book-of-why.md)  
 - [🧠🔄🏆 The Brain That Changes Itself: Stories of Personal Triumph from the Frontiers of Brain Science](./the-brain-that-changes-itself.md)  
 - [📜🌿⚖️ The Bramble Bush: On Our Law and Its Study](./the-bramble-bush-on-our-law-and-its-study.md)  
@@ -361,6 +362,7 @@ Feedback Control of Dynamic Systems]]
 - [💼🏆 The Job Closer: Time Saving Techniques for Acing Resumes, Interviews, Negotiations, and More](./the-job-closer.md)  
 - [📉🧪🚀 The Lean Startup: How Today's Entrepreneurs Use Continuous Innovation to Create Radically Successful Businesses](./the-lean-startup.md)  
 - [🍬⏳ The Marshmallow Test: Mastering Self-Control](./the-marshmallow-test-mastering-self-control.md)  
+- [🧘😞➡️ The Mindful Way Through Depression: Freeing Yourself from Chronic Unhappiness](./the-mindful-way-through-depression-freeing-yourself-from-chronic-unhappiness.md)  
 - [🎯🧠 The Motivated Brain](./the-motivated-brain-what-neuroscience-reveals-about-the-power-of-purpose.md)  
 - [🔥📜 The Motivation Manifesto: 9 Declarations to Claim Your Personal Power](./the-motivation-manifesto-9-declarations-to-claim-your-personal-power.md)  
 - [⛰️➡️🧘 The Mountain is You: Transforming Self-Sabotage into Self-Mastery](./the-mountain-is-you.md)  
@@ -399,6 +401,7 @@ Feedback Control of Dynamic Systems]]
 - [📊⛓️👑 📏 The Tyranny of Metrics](./the-tyranny-of-metrics.md)  
 - [⬆️💪 The Upside of Stress: Why Stress Is Good for You, and How to Get Good at It](./the-upside-of-stress-why-stress-is-good-for-you-and-how-to-get-good-at-it.md)  
 - [🤝📈🇺🇸🔁 The Upswing: How America Came Together a Century Ago and How We Can Do It Again](./the-upswing.md)  
+- [🌀⬆️🧠 The Upward Spiral: Using Neuroscience to Reverse the Course of Depression, One Small Change at a Time](./the-upward-spiral-using-neuroscience-to-reverse-the-course-of-depression-one-small-change-at-a-time.md)  
 - [🪖🎨 The War of Art: Break Through the Blocks and Win Your Inner Creative Battles](./the-war-of-art.md)  
 - [🕳️🧠👶🏽 The Whole-Brain Child: 12 Revolutionary Strategies to Nurture Your Child's Developing Mind](./the-whole-brain-child.md)  
 - [🧘🏋️ The Willpower Instinct: How Self-Control Works, Why It Matters, and What You Can Do to Get More of It](./the-willpower-instinct.md)  

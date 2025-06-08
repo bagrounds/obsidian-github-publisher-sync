@@ -1,8 +1,8 @@
 ---
 share: true
 aliases:
-  - 3 High Leverage Career Skills (From a Principal At Amazon)
-title: 3 High Leverage Career Skills (From a Principal At Amazon)
+  - 🪜📈🏢 3 High Leverage Career Skills (From a Principal At Amazon)
+title: 🪜📈🏢 3 High Leverage Career Skills (From a Principal At Amazon)
 URL: https://youtu.be/wc9gBBybgLw
 Author: 
 Platform: "#YouTube"
@@ -10,7 +10,7 @@ Channel: "[[A Life Engineered]]"
 tags: 
 ---
 [Home](../index.md) > [Videos](./index.md)  
-# 3 High Leverage Career Skills (From a Principal At Amazon)  
+# 🪜📈🏢 3 High Leverage Career Skills (From a Principal At Amazon)  
 ![3 High Leverage Career Skills (From a Principal At Amazon)](https://youtu.be/wc9gBBybgLw)  
   
 - High leverage = more output for less input  

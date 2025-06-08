@@ -43,7 +43,7 @@ Here are some subtopics of Well-being/Holistic Health that are *not* explicitly 
   
 Here are some books that cover similar topics to *Full Catastrophe Living* but from a slightly **different perspective**:  
   
-* **Focusing on the psychological aspects more directly**: *The Mindful Way Through Depression: Freeing Yourself from Chronic Unhappiness* by Mark Williams, John Teasdale, Zindel Segal, and Jon Kabat-Zinn. This book specifically applies mindfulness-based cognitive therapy (MBCT) to address depression. 🤔  
+* **Focusing on the psychological aspects more directly**: [🧘😞➡️ The Mindful Way Through Depression: Freeing Yourself from Chronic Unhappiness](../books/the-mindful-way-through-depression-freeing-yourself-from-chronic-unhappiness.md) by Mark Williams, John Teasdale, Zindel Segal, and Jon Kabat-Zinn. This book specifically applies mindfulness-based cognitive therapy (MBCT) to address depression. 🤔  
 * **Emphasizing the Buddhist roots of mindfulness**: [👣➡️🌍 Wherever You Go, There You Are](../books/wherever-you-go-there-you-are.md): Mindfulness Meditation in Everyday Life by Jon Kabat-Zinn. While by the same author, this book offers a more concise and introductory approach to mindfulness, sometimes with clearer connections to its foundational principles. 🌸  
   
 ### Global Exploration: Dissimilar Topics 🌌  

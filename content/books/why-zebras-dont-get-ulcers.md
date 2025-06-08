@@ -61,7 +61,7 @@ affiliate link: https://amzn.to/45nTj3l
 ### 🧠 Similar Reads (Exploring Stress, Biology, Health, Behavior)  
   
 * 🧠 **Behave: The Biology of Humans at Our Best and Worst** by Robert M. Sapolsky: Sapolsky's magnum opus, taking a wider view of human behavior, examining influences from seconds to millennia before an action occurs. 🧬 Builds upon themes in *Zebras*.  
-* 🤕 **The Body Keeps the Score: Brain, Mind, and Body in the Healing of Trauma** by Bessel van der Kolk: Focuses specifically on trauma's deep physiological and neurological impact, overlapping with Sapolsky's discussion of extreme stress.  
+* **[🤕🎼🧠 The Body Keeps the Score: Brain, Mind, and Body in the Healing of Trauma](./the-body-keeps-the-score-brain-mind-and-body-in-the-healing-of-trauma.md)** by Bessel van der Kolk: Focuses specifically on trauma's deep physiological and neurological impact, overlapping with Sapolsky's discussion of extreme stress.  
 * ⚕️ **Stress and Health: Biological and Psychological Interactions** by William R. Lovallo: A more academic textbook exploring the psychophysiological links between stress, emotions, brain function, and health outcomes.  
 * 🐒 **A Primate's Memoir: A Neuroscientist's Unconventional Life Among the Baboons** by Robert M. Sapolsky: A fascinating and often humorous account of Sapolsky's fieldwork studying baboons, offering insights into stress, social hierarchies, and behavior in primates (including us).  
 * 📈 **The Hour Between Dog and Wolf: Risk Taking, Gut Feelings and the Biology of Boom and Bust** by John Coates: Explores the biology of risk-taking and stress in high-pressure environments like financial trading, linking physiology to decision-making.  

@@ -51,7 +51,7 @@ affiliate link: https://amzn.to/3FkgmkX
 * 😩 **Can't Even: How Millennials Became the Burnout Generation** by Anne Helen Petersen: Explores burnout as a generational condition, particularly for millennials, linking it to economic precarity, societal distrust, and the pressure to perform online.  
 * ⚡ **I'm So Effing Tired: A Proven Plan to Beat Burnout, Boost Your Energy, and Reclaim Your Life** by Amy Shah, MD: Focuses on the physiological aspects of burnout, particularly the connection between gut health, immune system, and hormones, offering a plan to boost energy.  
 * 🤕 **When the Body Says No: The Cost of Hidden Stress** by Gabor Maté: Explores the deep connection between chronic stress, emotional repression, and physical illness.  
-* 🧠 **The Body Keeps the Score: Brain, Mind, and Body in the Healing of Trauma** by Bessel van der Kolk: While focused on trauma, its insights into how the body holds stress are relevant to understanding burnout's physical toll.  
+* **[🤕🎼🧠 The Body Keeps the Score: Brain, Mind, and Body in the Healing of Trauma](./the-body-keeps-the-score-brain-mind-and-body-in-the-healing-of-trauma.md)** by Bessel van der Kolk: While focused on trauma, its insights into how the body holds stress are relevant to understanding burnout's physical toll.  
   
 ### 🆚 Contrasting Perspectives (Different Approaches/Focus)  
 * 🧠 **The Burnout Society** by Byung-Chul Han: A philosophical take arguing that modern society's achievement-oriented, positive-reinforcement culture leads to self-exploitation and burnout, differing from the Nagoskis' focus on external stressors and the stress cycle.  

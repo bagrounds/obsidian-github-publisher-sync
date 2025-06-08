@@ -58,7 +58,7 @@ Eagleman's writing is engaging and accessible, making complex neuroscience conce
 ### 📚 Additional Book Recommendations  
   
 * **Best Alternate Book on the Same Topic:** "[Thinking, Fast and Slow](./thinking-fast-and-slow.md)" by Daniel Kahneman. 🧠 (Explores similar themes of conscious and unconscious thought processes.)  
-* **Best Book Tangentially Related:** "The Body Keeps the Score" by Bessel van der Kolk. 🤕 (Relates to the brain's response to trauma and its impact on behavior.)  
+* **Best Book Tangentially Related:** [🤕🎼🧠 The Body Keeps the Score: Brain, Mind, and Body in the Healing of Trauma](./the-body-keeps-the-score-brain-mind-and-body-in-the-healing-of-trauma.md) by Bessel van der Kolk. 🤕 (Relates to the brain's response to trauma and its impact on behavior.)  
 * **Best Diametrically Opposed Book:** "Free Will" by Sam Harris. 🙅‍♂️ (Argues strongly against the illusion of free will.)  
 * **Best Fiction Book Incorporating Related Ideas:** "Flowers for Algernon" by Daniel Keyes. 🐭 (Explores the ethical implications of altering brain function.)  
 * **Best More General Book:** "Brain Rules" by John Medina. 📝 (Provides a broader overview of brain function and its implications for everyday life.)  

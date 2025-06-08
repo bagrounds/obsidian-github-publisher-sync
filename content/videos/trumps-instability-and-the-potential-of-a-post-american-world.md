@@ -3,11 +3,12 @@ share: true
 aliases:
   - 🌪️🇺🇸📉🌍 Trump’s instability and the potential of a post-American world
 title: 🌪️🇺🇸📉🌍 Trump’s instability and the potential of a post-American world
-URL: https://youtu.be/7WibnG33Wy0
+URL: https://bagrounds.org/videos/trumps-instability-and-the-potential-of-a-post-american-world
 Author: 
 Platform: 
 Channel: Washington Week PBS
 tags: 
+youtube: https://youtu.be/7WibnG33Wy0
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 🌪️🇺🇸📉🌍 Trump’s instability and the potential of a post-American world  
@@ -46,4 +47,7 @@ tags:
   
 * 🤖 **On Technology and Modern Warfare:**  
     * ⚔️ **"War Made New: Technology, Warfare, and the Course of History: 1500 to Today" by Max Boot:** This book explores how technological revolutions have shaped the course of warfare throughout history.  
-    * 🚀 **"Disruptive and Game Changing Technologies in Modern Warfare: Development, Use, and Proliferation" edited by Margaret E. Kosal:** This book analyzes emerging innovations in science and technology and their potential to revolutionize international security.
+    * 🚀 **"Disruptive and Game Changing Technologies in Modern Warfare: Development, Use, and Proliferation" edited by Margaret E. Kosal:** This book analyzes emerging innovations in science and technology and their potential to revolutionize international security.  
+  
+## 🐦 Tweet  
+<blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">🌪️🇺🇸📉🌍 Trump’s instability and the potential of a post-American world<br><br>👊 Musk | ⚠️ No Buffers | 💰 Tariff Consequences | 🇨🇳 International Views | ⚖️ Trust Erosion | 💀 Zero-Sum Politics | 🇷🇺🇺🇦 War Stance | 🎭 Political Preoccupation | 🤖 Military AI<a href="https://t.co/gP5s59yEIo">https://t.co/gP5s59yEIo</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/1931506110030319775?ref_src=twsrc%5Etfw">June 8, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

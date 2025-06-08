@@ -58,7 +58,7 @@ The book delves into the complex science of sleep, 😴 exploring its fundamenta
 ### 🧬 Contrasting/Complementary Reads (Different Angles on Health & Biology)  
 * **[🌄⏳ The Circadian Code: Lose Weight, Supercharge Your Energy, and Transform Your Health from Morning to Midnight](./the-circadian-code.md)** by Satchin Panda  
     * ⏰ *Focus:* Deep dive specifically into circadian rhythms and how aligning lifestyle (especially eating patterns) with them impacts overall health, beyond just sleep.  
-* **The Body Keeps the Score: Brain, Mind, and Body in the Healing of Trauma** by Bessel van der Kolk  
+* **[🤕🎼🧠 The Body Keeps the Score: Brain, Mind, and Body in the Healing of Trauma](./the-body-keeps-the-score-brain-mind-and-body-in-the-healing-of-trauma.md)** by Bessel van der Kolk  
     * 💔 *Focus:* While centered on trauma, it explores the profound connection between psychological states and physiological processes, including how trauma can impact sleep and neurological function. 🤕 Relevant for understanding how stress impacts sleep.  
 * **Brain Rules: 12 Principles for Surviving and Thriving at Work, Home, and School** by John Medina  
     * 🧠 *Focus:* General principles of brain function for everyday life, including a dedicated chapter on sleep's importance for cognitive performance. Provides broader context for brain health.  

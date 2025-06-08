@@ -59,7 +59,7 @@ affiliate link: https://www.amazon.com/dp/1592407331/ref=cm_sw_r_as_gl_apa_gl_i_
   
 * *[🪄 Big Magic: Creative Living Beyond Fear](./big-magic.md)* by Elizabeth Gilbert: Discusses living a creative life by embracing curiosity and letting go of fear, which resonates with the idea of vulnerability in creative expression.  
 * 👑 *Untamed* by Glennon Doyle: A memoir and call to live authentically and break free from societal expectations, touching on themes of self-acceptance and courage.  
-* 🧠 *The Body Keeps the Score: Brain, Mind, and Body in the Healing of Trauma* by Bessel van der Kolk: While focused on trauma, it explores how experiences are held in the body and the path to healing, which can involve vulnerability in processing difficult emotions.  
+* [🤕🎼🧠 The Body Keeps the Score: Brain, Mind, and Body in the Healing of Trauma](./the-body-keeps-the-score-brain-mind-and-body-in-the-healing-of-trauma.md) by Bessel van der Kolk: While focused on trauma, it explores how experiences are held in the body and the path to healing, which can involve vulnerability in processing difficult emotions.  
 * 🚀 *You Are a Badass: How to Stop Doubting Your Greatness and Start Living an Awesome Life* by Jen Sincero: A more lighthearted, motivational book focused on overcoming self-doubt and embracing one's potential.  
 * 💔 *Lost Connections: Why You’re Depressed and How to Find Hope* by Johann Hari: Explores the societal causes of depression and anxiety and finding connection, a theme central to Brown's work on belonging.  
   

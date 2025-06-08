@@ -96,7 +96,7 @@ affiliate link: https://amzn.to/4kSo9Wh
     * ❤️ *Why Love Matters: How Affection Shapes a Baby's Brain* by Sue Gerhardt - Explores the neurobiological impact of early affection.  
     * 👶 *[Brain Rules for Baby](./brain-rules-for-baby.md)* by John Medina - A developmental molecular biologist's take on raising smart and happy children.  
 * 🤕 **Trauma & Healing:**  
-    * 📖 *The Body Keeps the Score: Brain, Mind, and Body in the Healing of Trauma* by Bessel van der Kolk - A landmark book on trauma, often relevant to disorganized attachment.  
+    * [🤕🎼🧠 The Body Keeps the Score: Brain, Mind, and Body in the Healing of Trauma](./the-body-keeps-the-score-brain-mind-and-body-in-the-healing-of-trauma.md) by Bessel van der Kolk - A landmark book on trauma, often relevant to disorganized attachment.  
     * 🧠 *Deep Brain Reorienting: Understanding the Neuroscience of Trauma, Attachment Wounding, and DBR Psychotherapy* by Frank Corrigan et al. - Introduces a specific trauma therapy linking neuroscience and attachment shock.  
 * 🎭 **Literary/Cultural Theory:**  
     * 🖼️ *Hooked: Art and Attachment* by Rita Felski - Uses "attachment" in a different sense, exploring aesthetic and sociological connections to art, contrasting with purely critical detachment modes of reading.".  

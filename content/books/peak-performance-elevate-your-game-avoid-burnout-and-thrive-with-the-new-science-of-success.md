@@ -60,7 +60,7 @@ The book is relevant for anyone seeking to improve their performance in any area
 * 🦸 **The Rise of Superman** by Steven Kotler: Focuses specifically on how extreme athletes use flow states to achieve seemingly impossible feats.  
 * 🤔 **[Thinking, Fast and Slow](./thinking-fast-and-slow.md)** by Daniel Kahneman: Explores the two systems of thinking (fast/intuitive vs. slow/deliberative) that drive judgment and decision-making, relevant to mindful performance.  
 * **[😴💭 Why We Sleep: Unlocking the Power of Sleep and Dreams](./why-we-sleep-unlocking-the-power-of-sleep-and-dreams.md)** by Matthew Walker: A deep dive into the science of sleep and its critical role in health, learning, memory, and performance.  
-* 🤕 **The Body Keeps the Score: Brain, Mind, and Body in the Healing of Trauma** by Bessel van der Kolk: While focused on trauma, it provides profound insights into the mind-body connection, stress, and regulation, relevant to understanding performance under pressure.  
+* **[🤕🎼🧠 The Body Keeps the Score: Brain, Mind, and Body in the Healing of Trauma](./the-body-keeps-the-score-brain-mind-and-body-in-the-healing-of-trauma.md)** by Bessel van der Kolk: While focused on trauma, it provides profound insights into the mind-body connection, stress, and regulation, relevant to understanding performance under pressure.  
 * 🙏 **[🔦💡 Man's Search for Meaning](./mans-search-for-meaning.md)** by Viktor Frankl: Explores finding purpose even in extreme adversity, resonating with the book's emphasis on purpose-driven performance.  
   
 ## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  

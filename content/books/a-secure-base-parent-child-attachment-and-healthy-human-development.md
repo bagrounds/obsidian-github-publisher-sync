@@ -84,7 +84,7 @@ affiliate link: https://amzn.to/4knb2wj
     * 🤝 *The Neuroscience of Human Relationships: Attachment and the Developing Social Brain* by Louis Cozolino: Details how social interactions and relationships influence brain structure and function.  
     * 👁️ *Mindsight: The New Science of Personal Transformation* by Daniel J. Siegel: Introduces the concept of "mindsight," the capacity to understand one's own mind and the minds of others, crucial for secure relationships.  
 2. **💔 Trauma and Development:**  
-    * 🤕 *The Body Keeps the Score: Brain, Mind, and Body in the Healing of Trauma* by Bessel van der Kolk: A landmark book exploring how trauma impacts the brain and body, often disrupting attachment systems and relational capacity.  
+    * [🤕🎼🧠 The Body Keeps the Score: Brain, Mind, and Body in the Healing of Trauma](./the-body-keeps-the-score-brain-mind-and-body-in-the-healing-of-trauma.md) by Bessel van der Kolk: A landmark book exploring how trauma impacts the brain and body, often disrupting attachment systems and relational capacity.  
     * 🌱 *Healing Trauma: Attachment, Mind, Body and Brain* edited by Daniel J. Siegel & Marion F. Solomon: A collection integrating attachment, trauma, and neuroscience for clinical understanding.  
     * 🐅 *Waking the Tiger: Healing Trauma* by Peter A. Levine: Focuses on somatic (body-based) approaches to healing trauma, which often involves resolving attachment-related issues.  
 3. 🧬 **Evolutionary Perspectives:** Books exploring the evolutionary basis of human behavior, parenting, and social bonding can provide a broader context for attachment theory.  

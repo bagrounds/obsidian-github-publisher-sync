@@ -26,7 +26,7 @@ tags:
 * 🌟 Successful trauma processing expands an individual's perception \[[06:21:00](http://www.youtube.com/watch?v=IMsAmWA7so0&t=22860)\].  
   
 ## 📚 Book Recommendations  
-* 🧠 **The Body Keeps the Score: Brain, Mind, and Body in the Healing of Trauma** by Bessel van der Kolk - This book is by the psychiatrist featured in the video and delves deeply into the effects of trauma and recovery methods.  
+* **[🤕🎼🧠 The Body Keeps the Score: Brain, Mind, and Body in the Healing of Trauma](../books/the-body-keeps-the-score-brain-mind-and-body-in-the-healing-of-trauma.md)** by Bessel van der Kolk - This book is by the psychiatrist featured in the video and delves deeply into the effects of trauma and recovery methods.  
 * 🐅 **Waking the Tiger: Healing Trauma** by Peter A. Levine - Explores trauma through a somatic experiencing lens.  
 * 🤕 **Complex PTSD: From Surviving to Thriving: A Guide to Recovering From Childhood Trauma** by Pete Walker - Focuses on complex PTSD and offers practical strategies for healing.  
 * 👨‍👩‍👧‍👦 **It Didn't Start with You: How Inherited Family Trauma Shapes Who We Are and How to End the Cycle** by Mark Wolynn - Examines inherited family trauma and its impact.  

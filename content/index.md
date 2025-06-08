@@ -10,8 +10,9 @@ title: 🏡 Home
 📑 Notes, 💭 thoughts, and 🔗 Links.  
 ❔ What do 🫵 _you_ 🤔 think?  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (205)  
-- [2025-06-07 | 🚜 Farm | 💾 Software | 🤖🐦  AutoTweet ⌨️](./reflections/2025-06-07.md)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (206)  
+- [2025-06-08](./reflections/2025-06-08.md)  
+- [2025-06-07 | 🚜 Farm | 💾 Software  | 🤕 Trauma | 🤖🐦 AutoTweet ⌨️](./reflections/2025-06-07.md)  
 - [2025-06-06 | 🎲 Bets 🎰 | 😈 Devils 👹 | 🤖 Claude 📚📄](./reflections/2025-06-06.md)  
 - [2025-06-05 | ♟️ Strategy | 🦜 Language | 🔬 Focus 📚📺](./reflections/2025-06-05.md)  
 - [2025-06-04 | 🌅 Reaping 💀](./reflections/2025-06-04.md)  
@@ -20,12 +21,11 @@ title: 🏡 Home
 - [2025-06-01 | 🤔 Decisions | 💰 Monetization](./reflections/2025-06-01.md)  
 - [2025-05-31 | ✅ Decisive | 👹 Corrupt 🤑](./reflections/2025-05-31.md)  
 - [2025-05-30 | 🤔 Decide 🎲](./reflections/2025-05-30.md)  
-- [2025-05-29 | 🔙 Backward | 💡 Innovation](./reflections/2025-05-29.md)  
   
   
 ## [📄  Articles](./articles/index.md) (28)  
   
-## [📚 Books](./books/index.md) (425)  
+## [📚 Books](./books/index.md) (428)  
   
 ## [🤖💬 Bot Chats](./bot-chats/index.md) (28)  
   
@@ -35,7 +35,7 @@ title: 🏡 Home
   
 ## [🌌 Topics](./topics/index.md) (71)  
   
-## [📺 Videos](./videos/index.md) (140)  
+## [📺 Videos](./videos/index.md) (142)  
   
 ## 🔗 Profiles  
 - [My resume](./topics/my-resume.md)  

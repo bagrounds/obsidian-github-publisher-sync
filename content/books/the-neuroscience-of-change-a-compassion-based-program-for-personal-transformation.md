@@ -71,7 +71,7 @@ affiliate link: https://amzn.to/4dJ4sxD
   
 ### ⚖️ Contrasting Perspectives (Different Change Models)  
   
-* 😊 **Feeling Good: The New Mood Therapy** by David D. Burns: A classic work based on Cognitive Behavioral Therapy (CBT), focusing primarily on identifying and changing negative thought patterns, with less emphasis on compassion or somatic elements.  
+* **[😊👍 Feeling Good: The New Mood Therapy](./feeling-good-the-new-mood-therapy.md)** by David D. Burns: A classic work based on Cognitive Behavioral Therapy (CBT), focusing primarily on identifying and changing negative thought patterns, with less emphasis on compassion or somatic elements.  
 * **[🧘🟰🕊️ Discipline Equals Freedom: Field Manual](./discipline-equals-freedom-field-manual.md)** by Jocko Willink: Emphasizes radical discipline, accountability, and overcoming challenges through mental toughness, contrasting with the compassion-centered approach.  
 * ⛰️ **Can't Hurt Me: Master Your Mind and Defy the Odds** by David Goggins: Focuses on pushing past perceived limits through extreme mental and physical discipline, a stark contrast to self-compassion methods.  
 * 🚫 **The Subtle Art of Not Giving a F*ck: A Counterintuitive Approach to Living a Good Life** by Mark Manson: Advocates for choosing what truly matters and accepting negative experiences rather than striving for constant positivity or relying heavily on specific techniques like mindfulness/compassion.  

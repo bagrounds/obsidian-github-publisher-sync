@@ -189,9 +189,9 @@ My therapist told me to challenge my negative thoughts 🤔. So now, when I thin
 ### 📖 Book Recommendations  
   
 * **Topical (Classic Guide)**:  
-    * 📘 Burns, David D. *Feeling Good: The New Mood Therapy*. 😊👍  
+    * 📘 Burns, David D. [😊👍 Feeling Good: The New Mood Therapy](../books/feeling-good-the-new-mood-therapy.md)  
 * **Tangentially Related (Cognitive Biases)**:  
-    * 🤔 Kahneman, Daniel. [Thinking, Fast and Slow](../books/thinking-fast-and-slow.md). 🐢🐇  
+    * 🤔 Kahneman, Daniel. [🤔🐇🐢 Thinking, Fast and Slow](../books/thinking-fast-and-slow.md)  
 * **Topically Opposed (Psychodynamic View)**:  
     * 👻 McWilliams, Nancy. *Psychoanalytic Diagnosis: Understanding Personality Structure in the Clinical Process*. 🧐👶  
 * **More General (Psychotherapy Overview)**:  

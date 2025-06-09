@@ -3,15 +3,16 @@ share: true
 aliases:
   - "📣👮🏿‍♂️🧑🏿‍🤝‍🧑🏿 LIVE: LAPD press conference after protests in Los Angeles over National Guard deployment"
 title: "📣👮🏿‍♂️🧑🏿‍🤝‍🧑🏿 LIVE: LAPD press conference after protests in Los Angeles over National Guard deployment"
-URL: https://www.youtube.com/live/OYsNYS4Mt3Q
+URL: https://bagrounds.org/videos/live-lapd-press-conference-after-protests-in-los-angeles-over-national-guard-deployment
 Author: 
 Platform: 
 Channel: Associated Press
 tags: 
+youtube: https://www.youtube.com/live/OYsNYS4Mt3Q
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 📣👮🏿‍♂️🧑🏿‍🤝‍🧑🏿 LIVE: LAPD press conference after protests in Los Angeles over National Guard deployment  
-![LIVE: LAPD press conference after protests in Los Angeles over National Guard deployment](https://www.youtube.com/live/OYsNYS4Mt3Q)  
+<iframe width="560" height="315" src="https://www.youtube.com/embed/OYsNYS4Mt3Q?si=dvPrtP1lNhYLoxMd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>  
   
 ## 🤖 AI Summary  
 * 👮 **LAPD's Role and Response to Protests** \[[01:05:38](http://www.youtube.com/watch?v=OYsNYS4Mt3Q&t=3938)\]: The video clarifies the LAPD's role in the ongoing events, their response to 📢 protests, and public safety responsibilities.  

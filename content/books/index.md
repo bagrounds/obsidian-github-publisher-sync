@@ -7,7 +7,7 @@ URL: https://bagrounds.org/books
 backlinks: false
 ---
 [Home](../index.md)  
-# 📚 Books (428)  
+# 📚 Books (430)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)  
 - [🧑‍🤝‍🧑📈 10 to 25: The Science of Motivating Young People: A Groundbreaking Approach to Leading the Next Generation - And Making Your Own Life Easier](./10-to-25-the-science-of-motivating-young-people-a-groundbreaking-approach-to-leading-the-next-generation-and-making-your-own-life-easier.md)  
@@ -109,6 +109,7 @@ backlinks: false
 - [❓➡️💡🧮 Elements of Causal Inference: Foundations and Learning Algorithms](./elements-of-causal-inference-foundations-and-learning-algorithms.md)  
 - [🦋♟️ Emergent Strategy: Shaping Change, Changing Worlds](./emergent-strategy.md)  
 - [❤️🧠📈🤔 Emotional Intelligence: Why It Can Matter More Than IQ](./emotional-intelligence.md)  
+- [🤖👑 Empire of AI: Dreams and Nightmares in Sam Altman's OpenAI](./empire-of-ai-dreams-and-nightmares-in-sam-altmans-openai.md)  
 - [🧑‍💼💰⚖️ Employee Benefits Law: ERISA and Beyond](./employee-benefits-law-erisa-and-beyond.md)  
 - [📚🌿🔬 Encyclopedia of Applied Plant Sciences](./encyclopedia-of-applied-plant-sciences.md)  
 - [💼📜 ERISA: A Comprehensive Guide](./erisa-a-comprehensive-guide.md)  
@@ -130,6 +131,7 @@ backlinks: false
 - [[books/feedback-control-of-dynamic-systems.md|⚙️📈🔄🎯   
 Feedback Control of Dynamic Systems]]  
 - [😊✅ Feel Good Productivity: How to Do More of What Matters to You](./feel-good-productivity-how-to-do-more-of-what-matters-to-you.md)  
+- [😊👍 Feeling Good: The New Mood Therapy](./feeling-good-the-new-mood-therapy.md)  
 - [🔥⛈️ Fire Weather: A True Story from a Hotter World](./fire-weather.md)  
 - [🌊🧘🧠📈 Flow: The Psychology of Optimal Experience](./flow-the-psychology-of-optimal-experience.md)  
 - [🍀⁉️ Fluke: Chance, Chaos, and Why Everything We Do Matters](./fluke-chance-chaos-and-why-everything-we-do-matters.md)  
@@ -254,7 +256,7 @@ Feedback Control of Dynamic Systems]]
 - [🗺️🎯🪜🏗️ Planning for Everything: The Design of Paths and Goals](./planning-for-everything.md)  
 - [📢📣 Platform: Get Noticed in a Noisy World](./platform-get-noticed-in-a-noisy-world.md)  
 - [👑💪🏽⁉️ Power: Why Some People Have It - and Others Don't](./power-why-some-people-have-it-and-others-dont.md)  
-- [🔮🤷🏼‍♀️🤪 Predictably Irrational, Revised and Expanded Edition: The Hidden Forces That Shape Our Decisions](./predictably-irrational.md)  
+- [🔮🤷🏼‍♀️🤪 Predictably Irrational: The Hidden Forces That Shape Our Decisions](./predictably-irrational.md)  
 - [🧑‍🏫📉🎤🧘 Presentation Zen: Simple Ideas on Presentation Design and Delivery](./presentation-zen.md)  
 - [🤖✅ Principles of Model Checking](./principles-of-model-checking.md)  
 - [🧠🤔🧪🔬 Principles of Neuropsychology](./principles-of-neuropsychology.md)  

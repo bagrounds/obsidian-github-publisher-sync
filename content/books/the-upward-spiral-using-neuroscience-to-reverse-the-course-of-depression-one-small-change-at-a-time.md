@@ -38,7 +38,7 @@ The book explains how various ⚙️ brain circuits contribute to depression and
   
 ### 🤝 Similar Books (Neuroscience, Practical Well-being, CBT)  
   
-* ✨ **Feeling Good: The New Mood Therapy by David D. Burns:** A classic in cognitive behavioral therapy (CBT), offering practical techniques to challenge negative thoughts and improve mood.  
+* ✨ **[😊👍 Feeling Good: The New Mood Therapy](./feeling-good-the-new-mood-therapy.md) by David D. Burns:** A classic in cognitive behavioral therapy (CBT), offering practical techniques to challenge negative thoughts and improve mood.  
 * 📝 **The Upward Spiral Workbook by Alex Korb:** A direct companion to "The Upward Spiral," providing exercises and a structured program to implement the book's principles.  
 * **[🔌😁🧠🔬 Hardwiring Happiness: The New Brain Science of Contentment, Calm, and Confidence](./hardwiring-happiness-the-brain-science-that-changes-everything.md) by Rick Hanson:** Explores how to use the brain's natural plasticity to make positive experiences stick and build inner strengths.  
 * 🧘 **Buddha's Brain: The Practical Neuroscience of Happiness, Love, and Wisdom by Rick Hanson and Richard Mendius:** Combines neuroscience with contemplative practices to show how to train your brain for well-being.  

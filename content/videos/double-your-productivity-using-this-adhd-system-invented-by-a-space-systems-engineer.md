@@ -39,7 +39,7 @@ youtube: https://youtu.be/ssi39F7bTLg
     * *Eat That Frog!: 21 Great Ways to Stop Procrastinating and Get More Done in Less Time* by Brian Tracy  
 * **For Overcoming Psychological Barriers and Self-Talk:**  
     * [🌱🧘🏼‍♀️🏆 Mindset: The New Psychology of Success](../books/mindset.md) by Carol S. Dweck  
-    * *Feeling Good: The New Mood Therapy* by David D. Burns  
+    * [😊👍 Feeling Good: The New Mood Therapy](../books/feeling-good-the-new-mood-therapy.md) by David D. Burns  
     * *Self-Compassion: The Proven Power of Being Kind to Yourself* by Kristin Neff  
   
 ## 🐦 Tweet  

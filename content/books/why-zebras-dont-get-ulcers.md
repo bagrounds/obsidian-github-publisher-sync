@@ -69,22 +69,21 @@ affiliate link: https://amzn.to/45nTj3l
   
 ### 🤔 Contrasting Perspectives (Mindfulness, Psychology, Critiques)  
   
-* 🧘 **[Full Catastrophe Living](./full-catastrophe-living.md): Using the Wisdom of Your Body and Mind to Face Stress, Pain, and Illness** by Jon Kabat-Zinn: A seminal work on Mindfulness-Based Stress Reduction (MBSR), offering a practical, mindfulness-focused approach to coping with stress, contrasting with Sapolsky's biological focus.  
-* 😌 **Feeling Good: The New Mood Therapy** by David D. Burns: Focuses on [♻️🫀🧠💪 Cognitive Behavioral Therapy](../topics/cognitive-behavioral-therapy.md) (CBT) techniques to manage mood disorders like depression and anxiety, emphasizing cognitive restructuring over biological mechanisms.  
+* **[🌪️🧘🏼‍♀️ Full Catastrophe Living: Using the Wisdom of Your Body and Mind to Face Stress, Pain, and Illness](./full-catastrophe-living.md)** by Jon Kabat-Zinn: A seminal work on Mindfulness-Based Stress Reduction (MBSR), offering a practical, mindfulness-focused approach to coping with stress, contrasting with Sapolsky's biological focus.  
+* **[😊👍 Feeling Good: The New Mood Therapy](./feeling-good-the-new-mood-therapy.md)** by David D. Burns: Focuses on [♻️🫀🧠💪 Cognitive Behavioral Therapy](../topics/cognitive-behavioral-therapy.md) (CBT) techniques to manage mood disorders like depression and anxiety, emphasizing cognitive restructuring over biological mechanisms.  
 * 😵‍💫 **The Paradox of Choice: Why More Is Less** by Barry Schwartz: Explores how excessive choice in modern life can lead to anxiety and stress, offering a sociological/psychological counterpoint to purely biological explanations of stress.  
 * 🤖 **Determined: A Science of Life Without Free Will** by Robert M. Sapolsky: While by the same author, this book presents a strong argument against free will based on biology, a potentially contrasting philosophical viewpoint for some readers regarding agency and control over stress responses.  
 * 🕉️ **Beyond the Self: Conversations between Buddhism and Neuroscience** by Matthieu Ricard and Wolf Singer: Explores mind, consciousness, and well-being from both Buddhist contemplative practice and neuroscience perspectives, offering different frameworks for understanding experience than Sapolsky's primary focus.  
   
 ### 🎨 Creatively Related (Neuroscience, Pop Science, Narrative Nonfiction)  
   
-* 🧠 **[Thinking, Fast and Slow](./thinking-fast-and-slow.md)** by Daniel Kahneman: Explores cognitive biases and the two systems of thought, relevant to how we perceive and react to stressful situations.  
+* **[🤔🐇🐢 Thinking, Fast and Slow](./thinking-fast-and-slow.md)** by Daniel Kahneman: Explores cognitive biases and the two systems of thought, relevant to how we perceive and react to stressful situations.  
 * 🧐 **The Man Who Mistook His Wife for a Hat and Other Clinical Tales** by Oliver Sacks: Compelling case studies in neurology, showcasing the intricate connection between brain function, perception, and behavior, written with deep humanism.  
 * 💀 **Stiff: The Curious Lives of Human Cadavers** by Mary Roach: Shares Sapolsky's knack for making potentially morbid or complex science engaging and humorous, though on a different topic.  
 * 🌍 **Guns, Germs, and Steel: The Fates of Human Societies** by Jared Diamond: Takes a broad, interdisciplinary look at the environmental and biological factors shaping human history, resonating with Sapolsky's biological perspective on larger scales.  
-* 🥴 **[Predictably Irrational](./predictably-irrational.md): The Hidden Forces That Shape Our Decisions** by Dan Ariely: Explores behavioral economics and the often illogical ways humans make decisions, sometimes influenced by stress or emotion.  
+* **[🔮🤷🏼‍♀️🤪 Predictably Irrational: The Hidden Forces That Shape Our Decisions](./predictably-irrational.md)** by Dan Ariely: Explores behavioral economics and the often illogical ways humans make decisions, sometimes influenced by stress or emotion.  
 * 🍎 **How Not to Die: Discover the Foods Scientifically Proven to Prevent and Reverse Disease** by Michael Greger: While focused on nutrition, it connects lifestyle factors (like diet) to the chronic diseases Sapolsky links with stress, offering a different angle on prevention.  
 * 🪄 **Alchemy: The Surprising Power of Ideas That Don't Make Sense** by Rory Sutherland: Explores the power of irrationality and psychological framing in human behavior and decision-making, offering a creative perspective related to the psychological aspects of stress.  
   
 ## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
-> Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Why Zebras Don't Get Ulcers. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text..  
-  
+> Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Why Zebras Don't Get Ulcers. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

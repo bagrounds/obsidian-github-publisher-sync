@@ -1,15 +1,15 @@
 ---
 share: true
 aliases:
-  - "🔮🤷🏼‍♀️🤪 Predictably Irrational, Revised and Expanded Edition: The Hidden Forces That Shape Our Decisions"
-title: "🔮🤷🏼‍♀️🤪 Predictably Irrational, Revised and Expanded Edition: The Hidden Forces That Shape Our Decisions"
+  - "🔮🤷🏼‍♀️🤪 Predictably Irrational: The Hidden Forces That Shape Our Decisions"
+title: "🔮🤷🏼‍♀️🤪 Predictably Irrational: The Hidden Forces That Shape Our Decisions"
 URL: https://bagrounds.org/books/predictably-irrational
 Author: 
 tags: 
 affiliate link: https://amzn.to/4mRoPwQ
 ---
 [Home](../index.md) > [Books](./index.md)  
-# 🔮🤷🏼‍♀️🤪 Predictably Irrational, Revised and Expanded Edition: The Hidden Forces That Shape Our Decisions  
+# 🔮🤷🏼‍♀️🤪 Predictably Irrational: The Hidden Forces That Shape Our Decisions  
 [🛒 Predictably Irrational, Revised and Expanded Edition: The Hidden Forces That Shape Our Decisions. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4mRoPwQ)  
   
 ## 🤖 AI Summary  

@@ -4,9 +4,12 @@ aliases:
   - "😊👍 Feeling Good: The New Mood Therapy"
 URL: https://bagrounds.org/books/feeling-good-the-new-mood-therapy
 share: true
+affiliate link: https://amzn.to/3Hvk2B0
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 😊👍 Feeling Good: The New Mood Therapy  
+[🛒 Feeling Good: The New Mood Therapy. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3Hvk2B0)  
+  
 ## 📚 Book Report: 😊 Feeling Good: The New Mood Therapy by David D. Burns  
   
 * 🧠 *Feeling Good: The New Mood Therapy*, first published in 1980 by David D. Burns, is a landmark self-help book that popularized cognitive behavioral therapy (CBT) for a general audience. 💡 It offers practical, scientifically proven techniques to help readers combat depression, anxiety, and negative thinking patterns without relying solely on medication. 🤔 The book emphasizes the profound connection between our thoughts and feelings, asserting that distorted thinking is often the root cause of emotional distress.  
@@ -59,4 +62,7 @@ share: true
 * **[🤕🎼🧠 The Body Keeps the Score: Brain, Mind, and Body in the Healing of Trauma](./the-body-keeps-the-score-brain-mind-and-body-in-the-healing-of-trauma.md) by Bessel van der Kolk:** 🧠 Explores the impact of trauma on the brain and body, highlighting the importance of somatic approaches in healing, which provides a broader perspective on mental health that goes beyond the cognitive focus of *Feeling Good*.  
   
 ## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
-> Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Feeling Good: The New Mood Therapy. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.
+> Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Feeling Good: The New Mood Therapy. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.  
+  
+## 🐦 Tweet  
+<blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">😊👍 Feeling Good: The New Mood Therapy<br><br>🧠 Cognitive Distortions | ✍️ Triple Column Technique | 📅 Daily Activity Schedule | ❤️ Self-Esteem | 😡 Anger Management | 🧘 Mindfulness | 🥰 Self-Compassion<a href="https://t.co/5cDGQTu0g2">https://t.co/5cDGQTu0g2</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/1931919815159247064?ref_src=twsrc%5Etfw">June 9, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

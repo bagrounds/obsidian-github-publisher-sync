@@ -10,7 +10,8 @@ title: 🏡 Home
 📑 Notes, 💭 thoughts, and 🔗 Links.  
 ❔ What do 🫵 _you_ 🤔 think?  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (206)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (207)  
+- [2025-06-09](./reflections/2025-06-09.md)  
 - [2025-06-08 | ⚕️ Heal | 🤖👑 AImpire | 🧊🚨📣🪖 Unrest 📚📺](./reflections/2025-06-08.md)  
 - [2025-06-07 | 🚜 Farm | 💾 Software  | 🤕 Trauma | 🤖🐦 AutoTweet ⌨️](./reflections/2025-06-07.md)  
 - [2025-06-06 | 🎲 Bets 🎰 | 😈 Devils 👹 | 🤖 Claude 📚📄](./reflections/2025-06-06.md)  
@@ -20,12 +21,11 @@ title: 🏡 Home
 - [2025-06-02 | ⚫ Black 🦢 Swan 🎲](./reflections/2025-06-02.md)  
 - [2025-06-01 | 🤔 Decisions | 💰 Monetization](./reflections/2025-06-01.md)  
 - [2025-05-31 | ✅ Decisive | 👹 Corrupt 🤑](./reflections/2025-05-31.md)  
-- [2025-05-30 | 🤔 Decide 🎲](./reflections/2025-05-30.md)  
   
   
 ## [📄  Articles](./articles/index.md) (28)  
   
-## [📚 Books](./books/index.md) (430)  
+## [📚 Books](./books/index.md) (431)  
   
 ## [🤖💬 Bot Chats](./bot-chats/index.md) (28)  
   
@@ -35,7 +35,7 @@ title: 🏡 Home
   
 ## [🌌 Topics](./topics/index.md) (71)  
   
-## [📺 Videos](./videos/index.md) (144)  
+## [📺 Videos](./videos/index.md) (145)  
   
 ## 🔗 Profiles  
 - [My resume](./topics/my-resume.md)  

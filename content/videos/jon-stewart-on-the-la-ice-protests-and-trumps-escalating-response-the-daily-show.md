@@ -3,11 +3,12 @@ share: true
 aliases:
   - 🇺🇸😡📺 Jon Stewart on the L.A. ICE Protests and Trump's Escalating Response | The Daily Show
 title: 🇺🇸😡📺 Jon Stewart on the L.A. ICE Protests and Trump's Escalating Response | The Daily Show
-URL: https://youtu.be/wDt1-L4KFPQ
+URL: https://bagrounds.org/videos/jon-stewart-on-the-la-ice-protests-and-trumps-escalating-response-the-daily-show
 Author: 
 Platform: 
 Channel: The Daily Show
 tags: 
+youtube: https://youtu.be/wDt1-L4KFPQ
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 🇺🇸😡📺 Jon Stewart on the L.A. ICE Protests and Trump's Escalating Response | The Daily Show  
@@ -30,4 +31,9 @@ tags:
 ## 📚 Book Recommendations  
 * 🛂 **For immigration issues:** *Reign of Terror: How the 9/11 Era Destabilized America and Produced Trump* by Spencer Ackerman. 📖 This book explores the history and consequences of American immigration policy.  
 * 🏛️ **For the Trump administration:** *I Alone Can Fix It: Donald J. Trump's Catastrophic Final Year* by Carol Leonnig and Philip Rucker. 📖 This book provides an in-depth look at the Trump administration.  
-* 🎭 **For political satire:** *America (The Book): A Citizen's Guide to Democracy Inaction* by Jon Stewart and The Daily Show Writers. 📖 This book offers a satirical take on American politics.
+* 🎭 **For political satire:** *America (The Book): A Citizen's Guide to Democracy Inaction* by Jon Stewart and The Daily Show Writers. 📖 This book offers a satirical take on American politics.  
+  
+## 🐦 Tweets  
+<blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr"><a href="https://twitter.com/hashtag/FreeSpeech?src=hash&amp;ref_src=twsrc%5Etfw">#FreeSpeech</a><br>The right-wing media describes <a href="https://twitter.com/realDonaldTrump?ref_src=twsrc%5Etfw">@realDonaldTrump</a> and <a href="https://twitter.com/elonmusk?ref_src=twsrc%5Etfw">@elonmusk</a> as 🦍 “two alpha males duking it out,” but they’re really “just a couple of fucking 🍑 pussies.”<a href="https://twitter.com/jonstewart?ref_src=twsrc%5Etfw">@jonstewart</a><a href="https://twitter.com/TheDailyShow?ref_src=twsrc%5Etfw">@TheDailyShow</a><a href="https://twitter.com/hashtag/TACOTrump?src=hash&amp;ref_src=twsrc%5Etfw">#TACOTrump</a><a href="https://twitter.com/hashtag/ElonMuskIsANationalSecurityThreat?src=hash&amp;ref_src=twsrc%5Etfw">#ElonMuskIsANationalSecurityThreat</a><a href="https://twitter.com/hashtag/EpsteinList?src=hash&amp;ref_src=twsrc%5Etfw">#EpsteinList</a><a href="https://t.co/4Z1unbrxcp">https://t.co/4Z1unbrxcp</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/1932499415513940235?ref_src=twsrc%5Etfw">June 10, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>  
+  
+<blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr"><a href="https://twitter.com/hashtag/FreeSpeech?src=hash&amp;ref_src=twsrc%5Etfw">#FreeSpeech</a><br>The right-wing media describes <a href="https://twitter.com/realDonaldTrump?ref_src=twsrc%5Etfw">@realDonaldTrump</a> and <a href="https://twitter.com/elonmusk?ref_src=twsrc%5Etfw">@elonmusk</a> as 🦍 “two alpha males duking it out,” but they’re really “just a couple of fucking 🍑 pussies.”<a href="https://twitter.com/jonstewart?ref_src=twsrc%5Etfw">@jonstewart</a><a href="https://twitter.com/TheDailyShow?ref_src=twsrc%5Etfw">@TheDailyShow</a><a href="https://twitter.com/hashtag/TACOTrump?src=hash&amp;ref_src=twsrc%5Etfw">#TACOTrump</a><a href="https://twitter.com/hashtag/ElonMuskIsANationalSecurityThreat?src=hash&amp;ref_src=twsrc%5Etfw">#ElonMuskIsANationalSecurityThreat</a><a href="https://twitter.com/hashtag/EpsteinList?src=hash&amp;ref_src=twsrc%5Etfw">#EpsteinList</a><a href="https://t.co/4Z1unbrxcp">https://t.co/4Z1unbrxcp</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/1932499415513940235?ref_src=twsrc%5Etfw">June 10, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

@@ -7,7 +7,7 @@ URL: https://bagrounds.org/books
 backlinks: false
 ---
 [Home](../index.md)  
-# 📚 Books (430)  
+# 📚 Books (431)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)  
 - [🧑‍🤝‍🧑📈 10 to 25: The Science of Motivating Young People: A Groundbreaking Approach to Leading the Next Generation - And Making Your Own Life Easier](./10-to-25-the-science-of-motivating-young-people-a-groundbreaking-approach-to-leading-the-next-generation-and-making-your-own-life-easier.md)  
@@ -417,6 +417,7 @@ Feedback Control of Dynamic Systems]]
 - [⏱️🍎 Time Restricted Eating: A Look into the Lifestyle](./time-restricted-eating-a-look-into-the-lifestyle.md)  
 - [🤏♻️ Tiny Habits: The Small Changes That Change Everything](./tiny-habits.md)  
 - [🏳️‍⚧️📜🌱✊ Transgender History: The Roots of Today's Revolution](./transgender-history.md)  
+- [🇺🇸🇩🇪🤥📣 Trump and Hitler: A Comparative Study in Lying](./trump-and-hitler-a-comparative-study-in-lying.md)  
 - [🤝📜 Trust: A History](./trust-a-history.md)  
 - [🤝😇💰 Trust: The Social Virtues and the Creation of Prosperity](./trust-the-social-virtues-and-the-creation-of-prosperity.md)  
 - [🥀 Twilight of Democracy: 🐍 The Seductive Lure of Authoritarianism](./twilight-of-democracy.md)  

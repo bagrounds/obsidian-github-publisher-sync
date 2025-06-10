@@ -64,9 +64,9 @@ The book offers an 🕵️ *insider* view of the events leading up to and follow
 * 👨‍💼 **Author Credentials:** Bob Woodward and Robert Costa are 👴 veteran journalists with decades of experience covering Washington politics. Woodward is known for his 🕵️ in-depth investigative reporting and has written ✍️ numerous best-selling books about the presidency. Costa is a well-respected 👨‍💼 political reporter. 📰  
 * 👍👎 **Authoritative Reviews:** "Peril" has received 🎭 mixed reviews. Some critics have 🙏 praised its detailed reporting and 🔑 insider perspective, while others have 😠 criticized its reliance on 🤫 anonymous sources and its 🤔 lack of critical analysis. However, most reviewers agree that the book provides a 💎 valuable account of a critical period in 🇺🇸 American history. 📚  
   
-### Additional Book Recommendations 📚  
+### Book Recommendations 📚  
   
-* ⭐ **Best Alternate Book on the Same Topic:** 🗓️ *I Alone Can Fix It: Donald J. Trump's Catastrophic Final Year* by Carol Leonnig and Philip Rucker. 🗓️  
+* ⭐ **Best Alternate Book on the Same Topic:** 🗓️ [🍊🤡🤥👹💥🏛️🇺🇸 I Alone Can Fix It: Donald J. Trump's Catastrophic Final Year](./i-alone-can-fix-it-donald-j-trumps-catastrophic-final-year.md) by Carol Leonnig and Philip Rucker. 🗓️  
   
 * ✨ **Best Tangentially Related Book:** ⚠️ *The Fifth Risk* by Michael Lewis, which explores the transition process ➡️ and the challenges 😥 faced by incoming administrations. ⚠️  
   

@@ -30,7 +30,13 @@ youtube: https://youtu.be/wDt1-L4KFPQ
   
 ## 📚 Book Recommendations  
 * 🛂 **For immigration issues:** *Reign of Terror: How the 9/11 Era Destabilized America and Produced Trump* by Spencer Ackerman. 📖 This book explores the history and consequences of American immigration policy.  
-* 🏛️ **For the Trump administration:** [🍊🤡🤥👹💥🏛️🇺🇸 I Alone Can Fix It: Donald J. Trump's Catastrophic Final Year](../books/i-alone-can-fix-it-donald-j-trumps-catastrophic-final-year.md) by Carol Leonnig and Philip Rucker. 📖 This book provides an in-depth look at the Trump administration.  
+* 🏛️ **For the Trump administration:**  
+    * [🍊🤡🤥👹💥🏛️🇺🇸 I Alone Can Fix It: Donald J. Trump's Catastrophic Final Year](../books/i-alone-can-fix-it-donald-j-trumps-catastrophic-final-year.md) by Carol Leonnig and Philip Rucker. 📖 This book provides an in-depth look at the Trump administration.  
+    * [🇺🇸🇩🇪🤥📣 Trump and Hitler: A Comparative Study in Lying](../books/trump-and-hitler-a-comparative-study-in-lying.md)  
+    * [😱🤡🇺🇸 Fear: Trump in the White House](../books/fear.md)  
+    * [⚠️😬😰 Peril](../books/peril.md)  
+    * [👹🐍🛢️🇺🇸 Confidence Man: The Making of Donald Trump and the Breaking of America](../books/confidence-man-the-making-of-donald-trump-and-the-breaking-of-america.md)  
+    * [🤯🐍🏘️🎪💥 Mad House: How Donald Trump, MAGA Mean Girls, a Former Used Car Salesman, a Florida Nepo Baby, and a Man with Rats in His Walls Broke Congress](../books/mad-house.md)  
 * 🎭 **For political satire:** *America (The Book): A Citizen's Guide to Democracy Inaction* by Jon Stewart and The Daily Show Writers. 📖 This book offers a satirical take on American politics.  
   
 ## 🐦 Tweets  

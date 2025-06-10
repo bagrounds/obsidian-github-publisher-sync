@@ -33,3 +33,4 @@ youtube: https://youtu.be/c0NjmETIR0s
 * ✝️ **Catholic Pilgrimages:** "The Way: A Journey Toward the Spiritual Heart of Catholic Faith" by Adam Shaw". 🚶‍♀️  
   
 ## 🐦 Tweet  
+<blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">👨‍⚖️💂‍♂️🚨🇺🇸 Trump Orders Another 2,000 Guardsmen, 700 Marines To LA | NPR News Now<br><br>🚨 Protests | 🛂 Immigration Raids | 🇷🇺 Ukraine Conflict | 💉 Vaccine Policy | 💔 School Shooting | ✝️ Catholic Pilgrimage | 📰 Political Conflicts<a href="https://t.co/sYtvrYOeIH">https://t.co/sYtvrYOeIH</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/1932495528098738401?ref_src=twsrc%5Etfw">June 10, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

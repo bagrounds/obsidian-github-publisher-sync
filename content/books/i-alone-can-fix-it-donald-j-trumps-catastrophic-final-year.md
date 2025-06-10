@@ -12,7 +12,7 @@ affiliate link: https://www.amazon.com/dp/0593298942/ref=cm_sw_r_as_gl_apa_gl_i_
   
 ## 📖 Book Report: 🚨 I Alone Can Fix It: Donald J. Trump's Catastrophic Final Year  
   
-*I Alone Can Fix It: Donald J. Trump's Catastrophic Final Year* ✍️ is a non-fiction book authored by Pulitzer Prize-winning 📰 Washington Post reporters Carol D. Leonnig and Philip Rucker. 🗓️ Published in 2021 by Penguin Press, the book 📚 is a sequel to their previous work, *A Very Stable Genius*, continuing their detailed examination 🔍 of Donald Trump's presidency by focusing specifically on its tumultuous final year.  
+*I Alone Can Fix It: Donald J. Trump's Catastrophic Final Year* ✍️ is a non-fiction book authored by Pulitzer Prize-winning 📰 Washington Post reporters Carol D. Leonnig and Philip Rucker. 🗓️ Published in 2021 by Penguin Press, the book 📚 is a sequel to their previous work, *[🤡🫨😭🤬😵‍💫🤥👹🇺🇸 A Very Stable Genius: Donald J. Trump's Testing of America](./a-very-stable-genius-donald-j-trumps-testing-of-america.md)*, continuing their detailed examination 🔍 of Donald Trump's presidency by focusing specifically on its tumultuous final year.  
   
 ### 📝 Summary  
   
@@ -34,7 +34,7 @@ affiliate link: https://www.amazon.com/dp/0593298942/ref=cm_sw_r_as_gl_apa_gl_i_
   
 ### 🤝 Similar Books (Accounts of the Trump Presidency)  
   
-* ***A Very Stable Genius: Donald J. Trump's Testing of America*** by Philip Rucker and Carol Leonnig: The essential precursor 📖 by the same authors, covering the initial three years of the Trump administration and setting the stage for the final year. ⏳  
+* **[🤡🫨😭🤬😵‍💫🤥👹🇺🇸 A Very Stable Genius: Donald J. Trump's Testing of America](./a-very-stable-genius-donald-j-trumps-testing-of-america.md)** by Philip Rucker and Carol Leonnig: The essential precursor 📖 by the same authors, covering the initial three years of the Trump administration and setting the stage for the final year. ⏳  
 * **[⚠️😬😰 Peril](./peril.md)** by Bob Woodward and Robert Costa: The concluding volume 🔚 in Woodward's trilogy on the Trump presidency (following *Fear* and *Rage*), which also heavily covers the transition period and the events around January 6th. 🗓️  
 * ***Landslide: The Final Days of the Trump Presidency*** by Michael Wolff: Offers another narrative 📖 focused specifically on the end 🔚 of Trump's term and his reaction to the election results. 🗳️  
 * ***Betrayal: The Final Act of the Trump Show*** by Jonathan Karl: Explores the period after the 2020 election, focusing on the political maneuvering and the fracturing 💔 within the Republican party. 🐘  
@@ -57,4 +57,6 @@ affiliate link: https://www.amazon.com/dp/0593298942/ref=cm_sw_r_as_gl_apa_gl_i_
 * **[🏭🫡 Manufacturing Consent: The Political Economy of the Mass Media](./manufacturing-consent.md)** by Edward S. Herman and Noam Chomsky: Explores how mass media 📺 can be used to shape public perception and consent 👍, relevant to understanding the information environment and challenges to objective truth discussed in *I Alone Can Fix It*. 📖  
   
 ## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
-> Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on I Alone Can Fix It: Donald J. Trump's Catastrophic Final Year. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.
+> Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on I Alone Can Fix It: Donald J. Trump's Catastrophic Final Year. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.  
+  
+## 🐦 Tweet  

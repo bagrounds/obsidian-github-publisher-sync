@@ -67,12 +67,12 @@ While the public saw Trump's tweets 🗣️ and public appearances 📺, "Fear" 
   
 ### Book Recommendations 📚  
   
-* ⭐ **Best alternate book on the same topic**: 📰 "A Very Stable Genius" by Philip Rucker and Carol Leonnig (also focusing on the Trump White House).  
+* ⭐ **Best alternate book on the same topic**: A [🤡🫨😭🤬😵‍💫🤥👹🇺🇸 A Very Stable Genius: Donald J. Trump's Testing of America](./a-very-stable-genius-donald-j-trumps-testing-of-america.md) by Philip Rucker and Carol Leonnig (also focusing on the Trump White House).  
 * ⭐ **Best book that is tangentially related**: 🧠 "Too Much and Never Enough: How My Family Created the World's Most Dangerous Man" by Mary L. Trump (a psychological portrait of Donald Trump by his niece). 👨‍👩‍👧‍👦 😥  
 * ⭐ **Best book that is diametrically opposed**: 📢 "Triggered: How the Left Thrives on Hate and Wants to Silence Us" by Donald Trump Jr. (offering a staunch defense of Trump's policies and actions). 🛡️ 😠  
 * ⭐ **Best fiction book that incorporates related ideas**: 👑 "All the King's Men" by Robert Penn Warren (a novel about political corruption and the abuse of power). 🏛️ 💔  
 * ⭐ **Best book that is more general or more specific**:  
-    * ⬆️ *More General*: 📜 "[On Tyranny: Twenty Lessons from the Twentieth Century](./on-tyranny.md)" by Timothy Snyder (exploring the historical precedents for authoritarianism). 🕰️ 🌍  
+    * ⬆️ *More General*: [👑🚫📜2️⃣0️⃣ On Tyranny: Twenty Lessons from the Twentieth Century](./on-tyranny.md) by Timothy Snyder (exploring the historical precedents for authoritarianism). 🕰️ 🌍  
     * ⬇️ *More Specific*: 🔍 "The Mueller Report" (the official report on the investigation into Russian interference in the 2016 election). 🇷🇺 🗳️  
 * ⭐ **Best book that is more rigorous or more accessible**:  
     * 💪 *More Rigorous*: 🤓 Scholarly articles on political psychology and presidential decision-making. 📚 🧠  

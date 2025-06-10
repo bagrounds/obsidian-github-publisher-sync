@@ -3,11 +3,12 @@ share: true
 aliases:
   - 👨‍⚖️💂‍♂️🚨🇺🇸 Trump Orders Another 2,000 Guardsmen, 700 Marines To LA | NPR News Now
 title: 👨‍⚖️💂‍♂️🚨🇺🇸 Trump Orders Another 2,000 Guardsmen, 700 Marines To LA | NPR News Now
-URL: https://youtu.be/c0NjmETIR0s
+URL: https://bagrounds.org/videos/trump-orders-another-2000-guardsmen-700-marines-to-la-npr-news-now
 Author: 
 Platform: 
 Channel: NPR
 tags: 
+youtube: https://youtu.be/c0NjmETIR0s
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 👨‍⚖️💂‍♂️🚨🇺🇸 Trump Orders Another 2,000 Guardsmen, 700 Marines To LA | NPR News Now  
@@ -29,4 +30,6 @@ tags:
 * 🌡️ **Vaccine Policies and Public Health:** To learn more about vaccine science and public health debates, "On Immunity: An Inoculation" by Eula Biss offers a thoughtful exploration. 🔬  
 * 💔 **School Shootings:** "Columbine" by Dave Cullen provides an in-depth look at a tragic school shooting and its aftermath. 🕊️  
 * 🌍 **Russia-Ukraine Conflict:** To understand the history and ongoing conflict between Russia and Ukraine, consider "The Gates of Europe: A History of Ukraine" by Serhii Plokhy. 🗺️  
-* ✝️ **Catholic Pilgrimages:** "The Way: A Journey Toward the Spiritual Heart of Catholic Faith" by Adam Shaw". 🚶‍♀️
+* ✝️ **Catholic Pilgrimages:** "The Way: A Journey Toward the Spiritual Heart of Catholic Faith" by Adam Shaw". 🚶‍♀️  
+  
+## 🐦 Tweet  

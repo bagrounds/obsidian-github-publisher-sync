@@ -3,11 +3,12 @@ share: true
 aliases:
   - 🤫🌱🗣️ The Secret Form of Resistance No One Talks About
 title: 🤫🌱🗣️ The Secret Form of Resistance No One Talks About
-URL: https://youtu.be/uo0qgvkbgvM
+URL: https://bagrounds.org/videos/the-secret-form-of-resistance-no-one-talks-about
 Author: 
 Platform: 
 Channel: Elizabeth Cronise McLaughlin
 tags: 
+youtube: https://youtu.be/uo0qgvkbgvM
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 🤫🌱🗣️ The Secret Form of Resistance No One Talks About  
@@ -38,4 +39,7 @@ Here are some books that touch on the topics of 🕵️ stealth activism, strate
 * 📖 **Rules for Radicals: A Pragmatic Primer for Realistic Radicals** by Saul D. Alinsky: A guide to community organizing and activism.  
 * **[🦋♟️ Emergent Strategy: Shaping Change, Changing Worlds](../books/emergent-strategy.md)** by Adrienne Maree Brown: Explores strategies for creating change.  
 * 📖 **We Do This 'Til We Free Us: Abolitionist Organizing and Transforming Justice** by Mariame Kaba: Focuses on abolitionist organizing and transforming justice.  
-* 📖 **Social Justice for the Sensitive Soul: How to Change the World in Quiet Ways**: 💖 This book explores how sensitive people can engage in social ⚖️ justice work.
+* 📖 **Social Justice for the Sensitive Soul: How to Change the World in Quiet Ways**: 💖 This book explores how sensitive people can engage in social ⚖️ justice work.  
+  
+## 🐦 Tweet  
+<blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">🤫🌱🗣️ The Secret Form of Resistance No One Talks About<br><br>🕵️ Stealth Activism | ⚖️ Social Justice | ✊ Liberation | 🎭 Cultural Shift | 🫂 Protecting Groups<a href="https://t.co/B3HalNoz73">https://t.co/B3HalNoz73</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/1932795144421749138?ref_src=twsrc%5Etfw">June 11, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

@@ -11,7 +11,7 @@ title: 🏡 Home
 ❔ What do 🫵 _you_ 🤔 think?  
   
 ## [🪞 Reflections](./reflections/index.md) ~ Blog (210)  
-- [2025-06-12](./reflections/2025-06-12.md)  
+- [2025-06-12 | 👹⚔️🏛️🇺🇸 Trump Admin Assaults US Senator](./reflections/2025-06-12.md)  
 - [2025-06-11 | 🥸 Stealth 🪧 Activism](./reflections/2025-06-11.md)  
 - [2025-06-10 | 🥸⚔️👨‍👩‍👧‍👦 ICE vs Family | 👹⚔️🪧 Trump vs Speech | 🐍⚔️⚕️ RFK vs Health](./reflections/2025-06-10.md)  
 - [2025-06-09 | 🤥 Lying | 🌄 Morning 📚📺](./reflections/2025-06-09.md)  

@@ -3,7 +3,7 @@ share: true
 aliases:
   - 🗣️🚪 Sen. Padilla gives remarks after forcible removal from Noem briefing
 title: 🗣️🚪 Sen. Padilla gives remarks after forcible removal from Noem briefing
-URL: https://bagrounds.org
+URL: https://bagrounds.org/videos/watch-sen-padilla-gives-remarks-after-forcible-removal-from-noem-briefing
 Author: 
 Platform: 
 Channel: PBS NewsHour

@@ -8,7 +8,7 @@ backlinks: false
 ---
 [Home](../index.md)  
 # 🪞 Reflections (210)  
-- [2025-06-12](./2025-06-12.md)  
+- [2025-06-12 | 👹⚔️🏛️🇺🇸 Trump Admin Assaults US Senator](./2025-06-12.md)  
 - [2025-06-11 | 🥸 Stealth 🪧 Activism](./2025-06-11.md)  
 - [2025-06-10 | 🥸⚔️👨‍👩‍👧‍👦 ICE vs Family | 👹⚔️🪧 Trump vs Speech | 🐍⚔️⚕️ RFK vs Health](./2025-06-10.md)  
 - [2025-06-09 | 🤥 Lying | 🌄 Morning 📚📺](./2025-06-09.md)  

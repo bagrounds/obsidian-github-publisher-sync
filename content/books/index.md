@@ -7,7 +7,7 @@ URL: https://bagrounds.org/books
 backlinks: false
 ---
 [Home](../index.md)  
-# 📚 Books (431)  
+# 📚 Books (434)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)  
 - [🧑‍🤝‍🧑📈 10 to 25: The Science of Motivating Young People: A Groundbreaking Approach to Leading the Next Generation - And Making Your Own Life Easier](./10-to-25-the-science-of-motivating-young-people-a-groundbreaking-approach-to-leading-the-next-generation-and-making-your-own-life-easier.md)  
@@ -39,6 +39,7 @@ backlinks: false
 - [🤔💪 Attention and effort](./attention.md)  
 - [🧠📖 A User's Guide to the Brain: Perception, Attention, and the Four Theaters of the Brain](./the-users-guide-to-the-brain-perception-attention-and-the-four-theaters-of-the-mind.md)  
 - [⚙️🤖🔄🕹️ Automatic Control Systems](./automatic-control-systems.md)  
+- [🤡🫨😭🤬😵‍💫🤥👹🇺🇸 A Very Stable Genius: Donald J. Trump's Testing of America](./a-very-stable-genius-donald-j-trumps-testing-of-america.md)  
 - [➕🎲👀👶 Bayes' Theorem Examples: A Visual Introduction For Beginners](./bayes-theorem-examples.md)  
 - [👤🧠 Being You: A New Science of Consciousness](./being-you-a-new-science-of-consciousness.md)  
 - [📉➡️👍 Better Than Before: What I Learned About Making and Breaking Habits - to Sleep More, Quit Sugar, Procrastinate Less, and Generally Build a Happier Life](./better-than-before.md)  
@@ -138,6 +139,7 @@ Feedback Control of Dynamic Systems]]
 - [🃏🎲 Fooled by Randomness: The Hidden Role of Chance in Life and in the Markets](./fooled-by-randomness-the-hidden-role-of-chance-in-life-and-in-the-markets.md)  
 - [🧱✅🐛 Foundations of Software Testing](./foundations-of-software-testing.md)  
 - [🤓🕵️‍♂️❓ Freakonomics: A Rogue Economist Explores the Hidden Side of Everything](./freakonomics.md)  
+- [🛂⛓️ From Deportation to Prison: The Politics of Immigration Enforcement in Post-Civil Rights America](./from-deportation-to-prison-the-politics-of-immigration-enforcement-in-post-civil-rights-america.md)  
 - [🌳🍎🍽️ From Tree to Table: Growing Backyard Fruit Trees in the Pacific Maritime Climate](./from-tree-to-table-growing-backyard-fruit-trees-in-the-pacific-maritime-climate.md)  
 - [🌪️🧘🏼‍♀️ Full Catastrophe Living: Using the Wisdom of Your Body and Mind to Face Stress, Pain, and Illness](./full-catastrophe-living.md)  
 - [🌍🌿 Gaia's Garden: A Guide to Home-Scale Permaculture](./gaias-garden.md)  
@@ -179,6 +181,7 @@ Feedback Control of Dynamic Systems]]
 - [🏆📰📣 How to Win an Information War: The Propagandist Who Outwitted Hitler](./how-to-win-an-information-war.md)  
 - [🫂🤝🗣️ How To Win Friends And Influence People](./how-to-win-friends-and-influence-people.md)  
 - [🎯👓🧠 Hyperfocus: How to Be More Productive in a World of Distraction](./hyperfocus.md)  
+- [🍊🤡🤥👹💥🏛️🇺🇸 I Alone Can Fix It: Donald J. Trump's Catastrophic Final Year](./i-alone-can-fix-it-donald-j-trumps-catastrophic-final-year.md)  
 - [✨📐🗺️🎯🏗️ Idealized Design: Creating an Organization's Future](./idealized-design.md)  
 - [🇯🇵🔑😊💯 Ikigai: The Japanese Secret to a Long and Happy Life](./ikigai.md)  
 - [🎭🤫🧠 Incognito: The Secret Lives of the Brain](./incognito.md)  

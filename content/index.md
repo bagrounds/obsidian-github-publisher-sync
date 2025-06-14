@@ -10,7 +10,8 @@ title: 🏡 Home
 📑 Notes, 💭 thoughts, and 🔗 Links.  
 ❔ What do 🫵 _you_ 🤔 think?  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (210)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (211)  
+- [2025-06-13 | 🥾 Deportation ➡️ Prison ⛓️](./reflections/2025-06-13.md)  
 - [2025-06-12 | 👹⚔️🏛️🇺🇸 Trump Admin Assaults US Senator](./reflections/2025-06-12.md)  
 - [2025-06-11 | 🥸 Stealth 🪧 Activism](./reflections/2025-06-11.md)  
 - [2025-06-10 | 🥸⚔️👨‍👩‍👧‍👦 ICE vs Family | 👹⚔️🪧 Trump vs Speech | 🐍⚔️⚕️ RFK vs Health](./reflections/2025-06-10.md)  
@@ -20,12 +21,11 @@ title: 🏡 Home
 - [2025-06-06 | 🎲 Bets 🎰 | 😈 Devils 👹 | 🤖 Claude 📚📄](./reflections/2025-06-06.md)  
 - [2025-06-05 | ♟️ Strategy | 🦜 Language | 🔬 Focus 📚📺](./reflections/2025-06-05.md)  
 - [2025-06-04 | 🌅 Reaping 💀](./reflections/2025-06-04.md)  
-- [2025-06-03 | 🃏 Random 🎲](./reflections/2025-06-03.md)  
   
   
 ## [📄  Articles](./articles/index.md) (28)  
   
-## [📚 Books](./books/index.md) (433)  
+## [📚 Books](./books/index.md) (434)  
   
 ## [🤖💬 Bot Chats](./bot-chats/index.md) (28)  
   

@@ -7,7 +7,8 @@ URL: https://bagrounds.org/reflections
 backlinks: false
 ---
 [Home](../index.md)  
-# 🪞 Reflections (212)  
+# 🪞 Reflections (213)  
+- [2025-06-15 | 👨‍👦🗓️ Father's Day | ⚔️🕊️ Tolstoy | ♟️ Chess 🤖💬📚](./2025-06-15.md)  
 - [2025-06-14 | 🎯🏛️ Assassination | 🇮🇱🚀🇮🇷 War | 🚫👑 No Kings](./2025-06-14.md)  
 - [2025-06-13 | 🥾 Deportation ➡️ Prison ⛓️](./2025-06-13.md)  
 - [2025-06-12 | 👹⚔️🏛️🇺🇸 Trump Admin Assaults US Senator](./2025-06-12.md)  

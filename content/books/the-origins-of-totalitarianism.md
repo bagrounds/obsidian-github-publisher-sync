@@ -87,7 +87,7 @@ affiliate link: https://amzn.to/4kLTIRo
 ### 🎨 Creatively Related Works (Themes, Experiences, Concepts)  
   
 * 📖 **Primo Levi - *Survival in Auschwitz* (also known as *If This Is a Man*)**: A profound and restrained memoir of Levi's experience in Auschwitz, focusing on the dehumanization and the struggle to maintain humanity. 💔 Complements Arendt's analysis of concentration camps.  
-* 📖 **Vasily Grossman - *Life and Fate***: An epic novel often compared to *War and Peace*, set during the Battle of Stalingrad, which unflinchingly equates Nazi and Soviet totalitarianism.  
+* 📖 **Vasily Grossman - *Life and Fate***: An epic novel often compared to [⚔️🕊️ War and Peace](./war-and-peace.md), set during the Battle of Stalingrad, which unflinchingly equates Nazi and Soviet totalitarianism.  
 * 📖 **Franz Kafka - *The Trial***: A surreal novel depicting an individual caught in an inexplicable and oppressive bureaucratic system, resonating with themes of arbitrary power and alienation.  
 * 📖 **Margaret Atwood - *The Handmaid's Tale***: A modern dystopian novel exploring themes of theocratic totalitarianism, control over bodies, and the suppression of individuality, particularly focusing on gender.  
 * 📖 **Hannah Arendt - *Eichmann in Jerusalem: A Report on the Banality of Evil***: Arendt's controversial report on Adolf Eichmann's trial, where she develops the concept of the "banality of evil" – the idea that great evil can be committed by ordinary, thoughtless people.  

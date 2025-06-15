@@ -7,7 +7,7 @@ URL: https://bagrounds.org/videos
 backlinks: false
 ---
 [Home](../index.md)  
-# 📺 Videos (152)  
+# 📺 Videos (153)  
 - [2025 Yearly Themes](./2025-yearly-themes.md)  
 - [2️⃣⬆️🧠👩‍🚀 Double Your Productivity using this ADHD System (Invented by a Space Systems Engineer)](./double-your-productivity-using-this-adhd-system-invented-by-a-space-systems-engineer.md)  
 - [🪜📈🏢 3 High Leverage Career Skills (From a Principal At Amazon)](./3-high-leverage-career-skills-from-a-principal-at-amazon.md)  
@@ -85,6 +85,7 @@ backlinks: false
 - [💻🤖🏠📚 Ollama Course – Build AI Apps Locally](./ollama-course-build-ai-apps-locally.md)  
 - [Optimizing Webservers for High Throughput and Low Latency | Dropbox](./optimizing-webservers-for-high-throughput-and-low-latency-dropbox.md)  
 - [🗺️♟️🤖🤝 Parables on the Power of Planning in AI: From Poker to Diplomacy: Noam Brown (OpenAI)](./parables-on-the-power-of-planning-in-ai-from-poker-to-diplomacy-noam-brown-openai.md)  
+- [⚔️💥🏛️🇮🇱🇮🇷🪧🇺🇸🎂 PBS News Weekend full episode, June 14, 2025](./pbs-news-weekend-full-episode-june-14-2025.md)  
 - [PBS News Weekly: A deeper look at Trump's tariff wars, education cuts and more | March 14, 2025](./pbs-news-weekly-a-deeper-look-at-trumps-tariff-wars-education-cuts-and-more-march-14-2025.md)  
 - [Pediatrician's Top Tips For Newborn Sleep](./pediatricians-top-tips-for-newborn-sleep.md)  
 - [Presentation Zen | Garr Reynolds | Talks at Google](./presentation-zen-garr-reynolds-talks-at-google.md)  
@@ -100,7 +101,7 @@ backlinks: false
 - [Scientists sound alarm on Trump administration's dismantling of research funding](./scientists-sound-alarm-on-trump-administrations-dismantling-of-research-funding.md)  
 - [Sen. Bernie Sanders: NOBODY Should Have Voted for the Terrible CR](./sen-bernie-sanders-nobody-should-have-voted-for-the-terrible-cr.md)  
 - [Sen. Cantwell Speaks on the Senate Floor on the Trade Review Act of 2025](./sen-cantwell-speaks-on-the-senate-floor-on-the-trade-review-act-of-2025.md)  
-- [🗣️🚪 Sen. Padilla gives remarks after forcible removal from Noem briefing](./WATCH%20Sen.%20Padilla%20gives%20remarks%20after%20forcible%20removal%20from%20Noem%20briefing.md)  
+- [🗣️🚪 Sen. Padilla gives remarks after forcible removal from Noem briefing](./watch-sen-padilla-gives-remarks-after-forcible-removal-from-noem-briefing.md)  
 - [SHIN SPLINTS for Runners: Challenges, Causes, and Rehab](./shin-splints-for-runners-challenges-causes-and-rehab.md)  
 - [Spaceship You](./spaceship-you.md)  
 - [Supreme Court clears way for deportations under Alien Enemies Act](./supreme-court-clears-way-for-deportations-under-alien-enemies-act.md)  

@@ -13,7 +13,7 @@ affiliate link: https://amzn.to/43Jdt6r
   
 ### ℹ️ Overview  
   
-"📖 Political Violence in America: 🗓️ Historical Flashpoints and 📈 Modern-Day Trends" is a 📚 two-volume 📜 encyclopedia edited by 🧑‍💼 Lori Cox Han and 🧑‍💼 Tomislav Han, published in 🗓️ March 2022 by 🏢 ABC-CLIO. 🔍 This extensive work surveys the ⏳ long history of political violence in the 🇺🇸 United States, from the 🏛️ colonial era through to the 2️⃣1️⃣st century, with a particular focus on 📰 contemporary drivers of such violence and intimidati👮on. 🤔 It challenges the common perception of the 🇺🇸 U.S. as a nation solely built on 🕊️ peaceful democratic ideals, 揭露 revealing a history heavily marked by 💥 violence.  
+"📖 Political Violence in America: 🗓️ Historical Flashpoints and 📈 Modern-Day Trends" is a 📚 two-volume 📜 encyclopedia edited by 🧑‍💼 Lori Cox Han and 🧑‍💼 Tomislav Han, published in 🗓️ March 2022 by 🏢 ABC-CLIO. 🔍 This extensive work surveys the ⏳ long history of political violence in the 🇺🇸 United States, from the 🏛️ colonial era through to the 2️⃣1️⃣st century, with a particular focus on 📰 contemporary drivers of such violence and intimidation. 🤔 It challenges the common perception of the 🇺🇸 U.S. as a nation solely built on 🕊️ peaceful democratic ideals, revealing a history heavily marked by 💥 violence.  
   
 ### 🔑 Key Themes and Arguments  
   
@@ -56,7 +56,7 @@ affiliate link: https://amzn.to/43Jdt6r
 * 📖 ***Modern American Extremism and Domestic Terrorism: An Encyclopedia of Extremists and Extremist Groups*** by 🧑‍💼 Barry J. Balleck. 📜 This encyclopedia focuses specifically on individuals and groups involved in extremist behavior and domestic terrorism in the 🇺🇸 U.S., particularly highlighting the resurgence of such groups since 🗓️ 2008.  
 * 📖 ***Radical American Partisanship: Mapping Violent Hostility, Its Causes, and the Consequences for Democracy*** by 🧑‍💼 Nathan P. Kalmoe and 🧑‍💼 Lilliana Mason. 🤔 This book examines the rise of radical partisanship and its links to violent hostility among ordinary 🇺🇸 Americans, analyzing the risk it poses to 🏛️ democracy.  
 * 📖 ***Bringing the War Home: The White Power Movement and Paramilitary America*** by 🧑‍💼 Kathleen Belew. 📜 This book explores the history of the white power movement in the 🇺🇸 U.S., tracing its origins and connections to paramilitary violence.  
-* 📖 ***Harbingers: What January 6 and Charlottesville Reveal About Rising Threats to American Democracy*** by 🧑‍💼 Tim Heaphy. ✍️ Written by a lead investigator into the January 6th attack and the Charlottesville riot, this book offers a view on these recent flashpoints and their implications for 🇺🇸 American democracy.  
+* **[🇺🇸⚠️ Harbingers: What January 6 and Charlottesville Reveal About Rising Threats to American Democracy](./harbingers-what-january-6-and-charlottesville-reveal-about-rising-threats-to-american-democracy.md)** by 🧑‍💼 Tim Heaphy. ✍️ Written by a lead investigator into the January 6th attack and the Charlottesville riot, this book offers a view on these recent flashpoints and their implications for 🇺🇸 American democracy.  
   
 ### 🆚 Contrasting Books (Different Geographies, Types of Violence, or Approaches)  
   

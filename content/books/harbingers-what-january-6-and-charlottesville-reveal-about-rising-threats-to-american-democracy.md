@@ -37,7 +37,7 @@ Heaphy structures the narrative by taking readers through the investigative proc
   
 ### 📖 Similar Books (Focus on Threats to Democracy and Political Violence)  
   
-* 📉 **[🗳️🏛️☠️ How Democracies Die](./how-democracies-die.md)** by Steven Levitsky and Daniel Ziblatt: Examines how democracies can erode from within through the subtle weakening of norms and institutions.  
+* **[🗳️🏛️☠️ How Democracies Die](./how-democracies-die.md)** by Steven Levitsky and Daniel Ziblatt: Examines how democracies can erode from within through the subtle weakening of norms and institutions.  
 * 🇺🇸 **Four Threats: The Recurring Crises of American Democracy** by Suzanne Mettler and Robert C. Lieberman: Explores historical instances of threats to American democracy, including polarization, racism, inequality, and executive power, arguing that their confluence today poses a significant danger.  
 * 🚫 **Attack from Within: How Disinformation is Sabotaging America** by Barbara McQuade: Discusses the impact of disinformation on American democracy and how to combat it, a theme also present in *Harbingers*.  
 * 🗳️ **The Steal: The Attempt to Overturn the 2020 Election and the People Who Stopped It** by Mark Bowden and Matthew Teague: Documents the efforts to challenge the 2020 election results, providing context for the events of January 6th.  

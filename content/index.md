@@ -10,7 +10,8 @@ title: 🏡 Home
 📑 Notes, 💭 thoughts, and 🔗 Links.  
 ❔ What do 🫵 _you_ 🤔 think?  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (211)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (212)  
+- [2025-06-14 | 🎯🏛️ Assassination | 🇮🇱🚀🇮🇷 War | 🚫👑 No Kings](./reflections/2025-06-14.md)  
 - [2025-06-13 | 🥾 Deportation ➡️ Prison ⛓️](./reflections/2025-06-13.md)  
 - [2025-06-12 | 👹⚔️🏛️🇺🇸 Trump Admin Assaults US Senator](./reflections/2025-06-12.md)  
 - [2025-06-11 | 🥸 Stealth 🪧 Activism](./reflections/2025-06-11.md)  
@@ -20,12 +21,11 @@ title: 🏡 Home
 - [2025-06-07 | 🚜 Farm | 💾 Software  | 🤕 Trauma | 🤖🐦 AutoTweet ⌨️](./reflections/2025-06-07.md)  
 - [2025-06-06 | 🎲 Bets 🎰 | 😈 Devils 👹 | 🤖 Claude 📚📄](./reflections/2025-06-06.md)  
 - [2025-06-05 | ♟️ Strategy | 🦜 Language | 🔬 Focus 📚📺](./reflections/2025-06-05.md)  
-- [2025-06-04 | 🌅 Reaping 💀](./reflections/2025-06-04.md)  
   
   
 ## [📄  Articles](./articles/index.md) (28)  
   
-## [📚 Books](./books/index.md) (434)  
+## [📚 Books](./books/index.md) (436)  
   
 ## [🤖💬 Bot Chats](./bot-chats/index.md) (28)  
   
@@ -35,7 +35,7 @@ title: 🏡 Home
   
 ## [🌌 Topics](./topics/index.md) (71)  
   
-## [📺 Videos](./videos/index.md) (152)  
+## [📺 Videos](./videos/index.md) (153)  
   
 ## 🔗 Profiles  
 - [My resume](./topics/my-resume.md)  

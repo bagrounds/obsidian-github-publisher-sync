@@ -7,7 +7,7 @@ URL: https://bagrounds.org/books
 backlinks: false
 ---
 [Home](../index.md)  
-# 📚 Books (434)  
+# 📚 Books (436)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)  
 - [🧑‍🤝‍🧑📈 10 to 25: The Science of Motivating Young People: A Groundbreaking Approach to Leading the Next Generation - And Making Your Own Life Easier](./10-to-25-the-science-of-motivating-young-people-a-groundbreaking-approach-to-leading-the-next-generation-and-making-your-own-life-easier.md)  
@@ -157,6 +157,7 @@ Feedback Control of Dynamic Systems]]
 - [⚙️🏢 Hack Your Bureaucracy: Get Things Done No Matter What Your Role on Any Team](./hack-your-bureaucracy-get-things-done-no-matter-what-your-role-on-any-team.md)  
 - [📖🫂🥼 Handbook of Attachment: Theory, Research, and Clinical Applications](./handbook-of-attachment-theory-research-and-clinical-applications.md)  
 - [👩🏼‍⚖️⚖️💭🧮🗣️ Handbook of Legal Reasoning and Argumentation](./handbook-of-legal-reasoning-and-argumentation.md)  
+- [🇺🇸⚠️ Harbingers: What January 6 and Charlottesville Reveal About Rising Threats to American Democracy](./harbingers-what-january-6-and-charlottesville-reveal-about-rising-threats-to-american-democracy.md)  
 - [🔌😁🧠🔬 Hardwiring Happiness: The New Brain Science of Contentment, Calm, and Confidence](./hardwiring-happiness-the-brain-science-that-changes-everything.md)  
 - [🐣🌱👨‍🏫💻 Haskell Programming from First Principles](./haskell-programming-from-first-principles.md)  
 - [🧠🤓📈💡 Head First Statistics: A Brain-Friendly Guide](./head-first-statistics.md)  
@@ -258,6 +259,7 @@ Feedback Control of Dynamic Systems]]
 - [🐈🐕🛋️ Pets on the Couch](./pets-on-the-couch.md)  
 - [🗺️🎯🪜🏗️ Planning for Everything: The Design of Paths and Goals](./planning-for-everything.md)  
 - [📢📣 Platform: Get Noticed in a Noisy World](./platform-get-noticed-in-a-noisy-world.md)  
+- [🇺🇸💥 Political Violence in America: Historical Flashpoints and Modern-Day Trends](./political-violence-in-america-historical-flashpoints-and-modern-day-trends.md)  
 - [👑💪🏽⁉️ Power: Why Some People Have It - and Others Don't](./power-why-some-people-have-it-and-others-dont.md)  
 - [🔮🤷🏼‍♀️🤪 Predictably Irrational: The Hidden Forces That Shape Our Decisions](./predictably-irrational.md)  
 - [🧑‍🏫📉🎤🧘 Presentation Zen: Simple Ideas on Presentation Design and Delivery](./presentation-zen.md)  

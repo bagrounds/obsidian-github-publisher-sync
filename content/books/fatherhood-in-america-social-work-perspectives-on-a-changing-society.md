@@ -32,7 +32,7 @@ The book emphasizes the 🔑 critical role fathers play in their children's 🌱
   
 ### 🤝 Similar Books (🧑‍💼 Social Work and 🧑‍🏫 Academic Focus)  
   
-* 📖 The Role of the Father in Child Development by Michael E. Lamb: 🌳 A foundational text in fatherhood research, offering in-depth analysis of the father's impact on child outcomes.  
+* 📖 [👨‍👧 The Role of the Father in Child Development](./the-role-of-the-father-in-child-development.md) by Michael E. Lamb: 🌳 A foundational text in fatherhood research, offering in-depth analysis of the father's impact on child outcomes.  
 * 📖 Social Work Practice with Fathers: Engagement, Assessment, and Intervention by Gary Clapton: This book provides direct guidance for 🧑‍💼 social work practitioners on how to effectively work with fathers, addressing the historical bias towards mother- and child-focused interventions in social services.  
 * 📖 *Social Work Practice with Children and Families: A Family Health Approach by Mary Patricia Van Hook:* This text presents a framework for working with families from a resiliency-based approach, which can be directly applied to understanding and supporting fathers within the family unit.  
   

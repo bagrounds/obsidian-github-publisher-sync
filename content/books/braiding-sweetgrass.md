@@ -62,7 +62,7 @@ affiliate link: https://amzn.to/3Ho8r6E
 ### 📖 Similar Reads (Indigenous Wisdom, Ecology, Nature Connection)  
 * 🌿 ***Gathering Moss: A Natural and Cultural History of Mosses*** **by Robin Wall Kimmerer:** 🔬 Her earlier work focusing on the overlooked world of mosses, blending science and wonder.  
 * 🌳 ***Finding the Mother Tree: Discovering the Wisdom of the Forest*** **by Suzanne Simard:** 🌲 A forest ecologist's research into the complex communication and symbiotic relationships between trees.  
-* 🍄 ***Entangled Life: How Fungi Make Our Worlds, Change Our Minds & Shape Our Futures*** **by Merlin Sheldrake:** 🌐 Explores the fascinating world of fungi and their essential, often hidden, roles in ecosystems.  
+* **[🍄🌍🧠🔮 Entangled Life: How Fungi Make Our Worlds, Change Our Minds & Shape Our Futures](./entangled-life-how-fungi-make-our-worlds-change-our-minds-shape-our-futures.md)** **by Merlin Sheldrake:** 🌐 Explores the fascinating world of fungi and their essential, often hidden, roles in ecosystems.  
 * 🌍 ***Rooted: Life at the Crossroads of Science, Nature, and Spirit*** **by Lyanda Lynn Haupt:** ✨ Blends science, mysticism, and nature observation to explore deep connections with the wild.  
 * 📜 ***An Indigenous Peoples' History of the United States*** **by Roxanne Dunbar-Ortiz:** 🇺🇸 Provides crucial historical context about the colonization and resilience of Indigenous peoples in the US.  
 * 🌲 ***The Overstory*** **by Richard Powers:** 🏆 A Pulitzer Prize-winning novel where trees are central characters, weaving together human lives and ecological consciousness (Fiction).  

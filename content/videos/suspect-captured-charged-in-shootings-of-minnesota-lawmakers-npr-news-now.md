@@ -61,4 +61,7 @@ youtube: https://youtu.be/1t1KbqguXz8
 **On Aviation Accident Investigation:**  
 * 🔎 **"The Crash Detectives: Investigating the World's Most Mysterious Air Disasters"** by Christine Negroni: Explores how human and machine failures lead to air disasters ✈️ and how they are investigated.  
 * 🔬 **"Beyond the Black Box: The Forensics of Airplane Crashes"** by George Bibel: Delves into the scientific and forensic aspects of airplane crash investigations ✈️.  
-* 👨‍✈️ **"Why Planes Crash: An Accident Investigator's Fight for Safe Skies"** by David Soucie: An insider's perspective on air accident investigation and safety.
+* 👨‍✈️ **"Why Planes Crash: An Accident Investigator's Fight for Safe Skies"** by David Soucie: An insider's perspective on air accident investigation and safety.  
+  
+## 🐦 Tweet  
+<blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">👤💀🏛️🚓 Suspect Captured, Charged In Shootings Of Minnesota Lawmakers | NPR News Now<br><br>🇮🇱⚔️ Israel-Iran Conflict | 🇨🇦🤝 G7 Summit | 🛂💔 Deportation Policies | ✈️💀 Air India Crash | 🌊🚨 Natural Disasters | ⚾🦸 Shohei Ohtani<a href="https://t.co/ffyy0QIjvG">https://t.co/ffyy0QIjvG</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/1934743227237847548?ref_src=twsrc%5Etfw">June 16, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

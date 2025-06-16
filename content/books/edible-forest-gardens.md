@@ -80,7 +80,7 @@ affiliate link: https://amzn.to/4n0cW7Z
   
 * ***[🪢🌾 Braiding Sweetgrass: Indigenous Wisdom, Scientific Knowledge, and the Teachings of Plants](./braiding-sweetgrass.md)*** **by Robin Wall Kimmerer:** 🌿 Explores indigenous ecological knowledge, reciprocity, and a deep relationship with the plant world, offering profound philosophical context.  
 * 📚 ***Teaming with Microbes*** **(and related books like *Teaming with Fungi*) by Jeff Lowenfels & Wayne Lewis:** 🦠 Delves into soil science and the complex life within the soil, crucial for understanding ecosystem function.  
-* 📚 ***Entangled Life: How Fungi Make Our Worlds, Change Our Minds & Shape Our Futures*** **by Merlin Sheldrake:** 🍄 A mind-expanding exploration of the world of fungi and their critical roles in ecosystems.  
+* **[🍄🌍🧠🔮 Entangled Life: How Fungi Make Our Worlds, Change Our Minds & Shape Our Futures](./entangled-life-how-fungi-make-our-worlds-change-our-minds-shape-our-futures.md)** **by Merlin Sheldrake:** 🍄 A mind-expanding exploration of the world of fungi and their critical roles in ecosystems.  
 * 📚 ***Radical Mycology*** **by Peter McCoy:** 🍄 A comprehensive guide to working with fungi for food, medicine, and ecological restoration.  
 * 📚 ***Foraging for Edible Wild Plants*** **by Gail Harland (or similar regional foraging guides):** 🌿 Practical guides to identifying and using wild edible plants, connecting directly to the "edible" aspect of forest ecosystems.  
 * 📚 ***Ecology without Culture*** **by Christine L. Marran or other Ecocriticism/Ecophilosophy texts:** 📜 Explore the cultural, philosophical, and literary dimensions of human relationships with the environment.".  

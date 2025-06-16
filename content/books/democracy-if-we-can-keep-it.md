@@ -76,7 +76,7 @@ affiliate link: https://amzn.to/3HBPu0g
 - **[🗳️🏛️☠️ How Democracies Die](./how-democracies-die.md) by Steven Levitsky and Daniel Ziblatt**  
     – 🛑 Explores the warning signs and systemic weaknesses that can lead to the demise of democratic norms, providing a provocative counterpoint with an emphasis on political dynamics and institutional decay.  
   
-- 🚨 **"Democracy in Chains" by Nancy MacLean**  
+- 🚨 **[🏛️⛓️ Democracy in Chains: The Deep History of the Radical Right's Stealth Plan for America](./democracy-in-chains-the-deep-history-of-the-radical-rights-stealth-plan-for-america.md) by Nancy MacLean**  
     – 📖 Investigates the historical evolution of American democracy from a critical perspective, questioning how economic and political forces have sometimes undermined it.  
   
 ### 🎨 Creatively Related Works  

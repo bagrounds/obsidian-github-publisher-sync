@@ -33,7 +33,7 @@ affiliate link: https://amzn.to/3G2kqGH
   
 📖 These books explore the history and influence of the radical right, the impact of money on politics, and critiques of conservative and libertarian movements.  
   
-* 💰 ***Dark Money: The Hidden History of the Billionaires Behind the Rise of the Radical Right*** by Jane Mayer. This book investigates the network of wealthy donors, including the Koch brothers, and their role in funding conservative and libertarian organizations to shift American politics to the right.  
+* **[💰🤫 Dark Money: The Hidden History of the Billionaires Behind the Rise of the Radical Right](./dark-money-the-hidden-history-of-the-billionaires-behind-the-rise-of-the-radical-right.md)** by Jane Mayer. This book investigates the network of wealthy donors, including the Koch brothers, and their role in funding conservative and libertarian organizations to shift American politics to the right.  
 * 🇺🇸 ***Alt-America: The Rise of the Radical Right in the Age of Trump*** by David Neiwert. This work examines the historical roots and recent resurgence of right-wing extremism in the United States.  
 * 🗳️ ***The Money Men: The Real Story of Fund-raising's Influence on Political Power in America*** by Jeffrey H. Birnbaum. This book delves into the world of political fundraising and its impact on American political power.  
 * 💵 ***Money in American Politics: An Encyclopedia*** by David Schultz. An encyclopedic look at how money influences campaigns, elections, and policy in the U.S.  

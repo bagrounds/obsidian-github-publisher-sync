@@ -32,7 +32,7 @@ youtube: https://youtu.be/uo0qgvkbgvM
   
 Here are some books that touch on the topics of 🕵️ stealth activism, strategic activism, and social justice strategies:  
   
-* 📖 **Democracy in Chains: The Deep History of the Radical Right's Stealth Plan for America** by Nancy MacLean: Explores the history of the radical right's efforts to alter democratic governance. [Democracy in Chains](https://www.nationalbook.org/books/democracy-in-chains-the-deep-history-of-the-radical-rights-stealth-plan-for-america/)  
+* **[🏛️⛓️ Democracy in Chains: The Deep History of the Radical Right's Stealth Plan for America](../books/democracy-in-chains-the-deep-history-of-the-radical-rights-stealth-plan-for-america.md)** by Nancy MacLean: Explores the history of the radical right's efforts to alter democratic governance.  
 * 📖 **The Aesthetics of Stealth: Digital Culture, Video Games, and the Politics of Perception** by Toni Pape: Examines the concept of 👾 stealth in digital culture and its implications. [The Aesthetics of Stealth](https://direct.mit.edu/books/oa-monograph-pdf/2474402/book_9780262380768.pdf)  
 * 📖 **Stealth Reconstruction: An Untold Story of Racial Politics in Recent Southern History** by Glen Browder: Reveals the untold story of biracial work in Southern politics. [Stealth Reconstruction](https://books.google.com/books/about/Stealth_Reconstruction.html?id=ELAsAQAAIAAJ)  
 * 📖 **The Art of Activism: Your All-Purpose Guide to Make the Impossible Possible** by Steve Duncombe and Steve Lambert: A guide to effective social change. [The Art of Activism](https://orbooks.com/catalog/the-art-of-activism/)  

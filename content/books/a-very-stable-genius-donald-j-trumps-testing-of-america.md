@@ -43,7 +43,7 @@ affiliate link: https://amzn.to/4jJeL64
   
 * **[⚠️😬😰 Peril](./peril.md)** by Bob Woodward and Robert Costa: The third book in Woodward's series on the Trump presidency, covering the transition out of office and the beginning of the Biden administration.  
 * **[😱🤡🇺🇸 Fear: Trump in the White House](./fear.md)** by Bob Woodward: An earlier book by Woodward focusing on the internal dynamics of the Trump White House during its first year and a half.  
-* 😠 **Rage** by Bob Woodward: The second book in Woodward's series, covering events from 2018 into 2020, including interviews with Trump himself.  
+* **[😡🤬 Rage](./rage.md)** by Bob Woodward: The second book in Woodward's series, covering events from 2018 into 2020, including interviews with Trump himself.  
 * 🔥 **Fire and Fury: Inside the Trump White House** by Michael Wolff: One of the earliest and most explosive insider accounts of the Trump administration.  
 * 🛡️ **Siege: Trump Under Fire** by Michael Wolff: Wolff's follow-up to "Fire and Fury."  
 * **[🍊🤡🤥👹💥🏛️🇺🇸 I Alone Can Fix It: Donald J. Trump's Catastrophic Final Year](./i-alone-can-fix-it-donald-j-trumps-catastrophic-final-year.md)** by Carol Leonnig and Philip Rucker: The authors' subsequent book covering the final year of Trump's presidency.  

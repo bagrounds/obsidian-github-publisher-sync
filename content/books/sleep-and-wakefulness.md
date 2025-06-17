@@ -61,4 +61,7 @@ affiliate link: https://amzn.to/445lxxn
 * 🌍 **Wild Nights: How Taming Sleep Created Our Restless World** by Benjamin Reiss: 🌃 A cultural and historical look at how societal changes have transformed sleep practices and our relationship with sleep.  
   
 ## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
-> Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Sleep and Wakefulness by Nathaniel Kleitman. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.
+> Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Sleep and Wakefulness by Nathaniel Kleitman. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.  
+  
+## 🐦 Tweet  
+<blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">😴🌞 Sleep and Wakefulness<br><br>👨‍🔬 Sleep Research | 🕰️ Circadian Rhythms | 🧪 Physiological Study | 😴 REM Sleep | 📚 Foundational Text<a href="https://t.co/ia8uITqk1P">https://t.co/ia8uITqk1P</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/1935124683973906805?ref_src=twsrc%5Etfw">June 17, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

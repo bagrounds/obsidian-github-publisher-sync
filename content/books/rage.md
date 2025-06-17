@@ -4,11 +4,11 @@ aliases:
   - 😡🤬 Rage
 URL: https://bagrounds.org/books/rage
 share: true
-affiliate link: https://www.amazon.com/dp/198213173X/ref=cm_sw_r_as_gl_apa_gl_i_ZW66G6MXMCAPNQQ0F9NW?linkCode=ml1&tag=bagrounds-20
+affiliate link: https://amzn.to/45mskVJ
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 😡🤬 Rage  
-[🛒 Rage. As an Amazon Associate I earn from qualifying purchases.](https://www.amazon.com/dp/198213173X/ref=cm_sw_r_as_gl_apa_gl_i_ZW66G6MXMCAPNQQ0F9NW?linkCode=ml1&tag=bagrounds-20)  
+[🛒 Rage. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/45mskVJ)  
   
 ## 📖 Book Report: Rage by Bob Woodward  
   

@@ -62,4 +62,7 @@ affiliate link: https://amzn.to/45mskVJ
 * ***The Iliad*** by Homer: 😠🛡️ An epic poem centered on the "rage of Achilles," perhaps one of the most famous explorations of intense anger and its consequences in Western literature.  
   
 ## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
-> Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Rage. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.
+> Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Rage. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.  
+  
+## 🐦 Tweet  
+![X](https://x.com/bagrounds/status/1934798023638569061)

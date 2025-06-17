@@ -11,11 +11,23 @@ affiliate link: https://amzn.to/3Fm62Jb
 [🛒 40 Days to Positive Change: Daily Support to Create a New Habit. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3Fm62Jb)  
   
 ## 📝🐒 Human Notes  
-### 🙏🏼 Gratitude  
-A 🔁 habit for self 🤝🏼 trust and 🌱 investment  
+### 🔁 Habit Formation  
+1.  🚀 Motivation  
+2.  🎯 Intention  
+3.  🎬 Action  
+4.  🏆 Reward  
+5.  🧠 Internalization  
   
-### 😄 Joy  
-🔜  
+### 🗝️ Principles  
+- 🏡 Environmental Support  
+- ☺️ Positive Emotions  
+  
+### 🧠🫀 States  
+- 🙏🏼 Gratitude - A 🔁 habit for self 🤝🏼 trust and 🌱 investment  
+- 😄 Joy  
+- 💕 Love  
+- 🌐 Interdependence  
+- 🎉 Celebration  
   
 ## 📖 Book Report: *40 Days to Positive Change: Daily Support to Create a New Habit* by Kelly McGonigal  
   
@@ -60,8 +72,6 @@ This report summarizes [Kelly McGonigal](../people/kelly-mcgonigal.md)'s audio p
 * 🥰 **The Gifts of Imperfection by Brené Brown:** This book explores wholehearted living through cultivating courage, compassion, and connection, which aligns with the foundational elements of positive change mentioned in McGonigal's program (like loving compassion).  
 * 🌍 **Positive Psychology as Social Change (edited collection):** This volume explores how positive psychology can be leveraged to enhance social welfare and group-level flourishing, broadening the scope from individual habit change to wider societal impact.  
 * 🌿 **Living with a Green Heart: How to Keep Your Body, Your Home, and the Planet Healthy in a Toxic World by Gay Browne:** This book connects personal well-being with environmental health, suggesting that positive changes in one's lifestyle can have a broader impact.  
-  
-✨ This selection aims to provide a range of perspectives on creating positive change, from the mechanics of habit formation to the emotional and societal dimensions of personal growth.  
   
 ## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on 40 Days to Positive Change: Daily Support to Create a New Habit. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

@@ -10,6 +10,8 @@ affiliate link: https://www.amazon.com/dp/1250800463/ref=cm_sw_r_as_gl_apa_gl_i_
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 😬👨🏿 Uncomfortable Conversations With A Black Man  
+[🛒 Uncomfortable Conversations With A Black Man. As an Amazon Associate I earn from qualifying purchases.](https://www.amazon.com/dp/1250800463/ref=cm_sw_r_as_gl_apa_gl_i_NMTYY9Y6VW02S0DWD456?linkCode=ml1&tag=bagrounds-20)  
+  
 ## 📖 Book Report: 🗣️ Uncomfortable Conversations With A Black Man  
   
 ### 👨‍🏫 Author and Background  
@@ -56,7 +58,7 @@ affiliate link: https://www.amazon.com/dp/1250800463/ref=cm_sw_r_as_gl_apa_gl_i_
 * 🇬🇧 **Why I'm No Longer Talking to White People About Race** by Reni Eddo-Lodge: Offers a contrasting viewpoint from Britain, explaining the author's frustration with unproductive conversations about race and focusing on systemic issues.  
   
 ### 🎨 Creatively Related Reads (Themes of Empathy, Communication, Bridge-Building, Related Narratives)  
-* 🙏 **Just Mercy: A Story of Justice and Redemption** by Bryan Stevenson: A memoir focused on fighting injustice within the legal system, highlighting empathy and the human cost of systemic bias.  
+* **[🧑🏿‍⚖️🔄 Just Mercy: A Story of Justice and Redemption](./just-mercy-a-story-of-justice-and-redemption.md)** by Bryan Stevenson: A memoir focused on fighting injustice within the legal system, highlighting empathy and the human cost of systemic bias.  
 * ❤️‍🩹 **The Antiracist Heart: A Self-Compassion and Activism Handbook** by Roxy Manning & Sarah Peyton: Combines neuroscience, self-compassion, and Nonviolent Communication principles for internal and interpersonal antiracist work.  
 * 🎤 **Finding Me: A Memoir** by Viola Davis: A powerful memoir exploring identity, trauma, and finding one's voice, touching on themes of race and belonging in America.  
 * 🤕 **What Happened To You?: Conversations on Trauma, Resilience, and Healing** by Bruce D. Perry & Oprah Winfrey: Explores how past trauma shapes present behavior, fostering empathy and understanding for others' experiences.  

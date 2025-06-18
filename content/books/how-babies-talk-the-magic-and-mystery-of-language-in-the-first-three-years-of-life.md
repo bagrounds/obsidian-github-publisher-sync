@@ -44,7 +44,7 @@ The 📖 book is primarily aimed at 👨‍👩‍👧‍👦 parents and is ✍
   
 ### 👶 Similar Books (Child Language Development, Early Cognitive Science)  
   
-* 🧠 *The Scientist in the Crib: What Early Learning Tells Us About the Mind* by Alison Gopnik, Andrew N. Meltzoff, and Patricia K. Kuhl: Explores how very young children learn about the world, including language, using scientific research.  
+* [👶🧠🔬 The Scientist in the Crib: Minds, Brains, And How Children Learn](./the-scientist-in-the-crib-minds-brains-and-how-children-learn.md) by Alison Gopnik, Andrew N. Meltzoff, and Patricia K. Kuhl: Explores how very young children learn about the world, including language, using scientific research.  
 * 🗣️ *Beginning to Learn: Thinking, Talking, Reading, Writing* by Gordon Wells: A detailed look at language development in early childhood within social contexts.  
 * 📚 *Child Language: Acquisition and Development* by Matthew Saxton: A more academic textbook providing an in-depth overview of child language acquisition theories and research.  
 * 🗣️ *The Language Instinct: How the Mind Creates Language* by Steven Pinker: While broader than just child development, it offers a foundational understanding of the human capacity for language.  

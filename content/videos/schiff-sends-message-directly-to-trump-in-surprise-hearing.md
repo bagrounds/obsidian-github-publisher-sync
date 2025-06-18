@@ -24,7 +24,7 @@ tags:
 ## 🤖 AI Summary  
 ⚖️ **Miscarriage of Justice:**  
 - 👨‍⚖️ _The Innocent Man: Murder and Injustice in a Small Town_ by John Grisham: 📖 A true story of a man wrongly convicted of murder. 🚨  
-- ⚖️ _Just Mercy: A Story of Justice and Redemption_ by Bryan Stevenson: ✊🏾 Explores the systemic issues leading to wrongful convictions and the importance of legal defense for the marginalized. 🫂  
+- [🧑🏿‍⚖️🔄 Just Mercy: A Story of Justice and Redemption](../books/just-mercy-a-story-of-justice-and-redemption.md) by Bryan Stevenson: ✊🏾 Explores the systemic issues leading to wrongful convictions and the importance of legal defense for the marginalized. 🫂  
 - 🕵️ _Convicting the Innocent: Where Criminal Prosecutions Go Wrong_ by Brandon L. Garrett: 🔍 An examination of the causes of wrongful convictions through case studies. 📚  
   
 🚨 **Abuse of Power:**  

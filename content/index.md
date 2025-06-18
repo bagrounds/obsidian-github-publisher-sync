@@ -10,7 +10,9 @@ title: 🏡 Home
 📑 Notes, 💭 thoughts, and 🔗 Links.  
 ❔ What do 🫵 _you_ 🤔 think?  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (213)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (215)  
+- [2025-06-17 | ➡️ Change | 😴 Rest | 🕊️ Freedom 📚](./reflections/2025-06-17.md)  
+- [2025-06-16 | 🗑️ Waste | 🪤 Capture | 👊🏻 Violence | 🥸 Intrigue | 😡 Rage](./reflections/2025-06-16.md)  
 - [2025-06-15 | 👨‍👦🗓️ Father's Day | ⚔️🕊️ Tolstoy | ♟️ Chess 🤖💬📚](./reflections/2025-06-15.md)  
 - [2025-06-14 | 🎯🏛️ Assassination | 🇮🇱🚀🇮🇷 War | 🚫👑 No Kings](./reflections/2025-06-14.md)  
 - [2025-06-13 | 🥾 Deportation ➡️ Prison ⛓️](./reflections/2025-06-13.md)  
@@ -19,13 +21,11 @@ title: 🏡 Home
 - [2025-06-10 | 🥸⚔️👨‍👩‍👧‍👦 ICE vs Family | 👹⚔️🪧 Trump vs Speech | 🐍⚔️⚕️ RFK vs Health](./reflections/2025-06-10.md)  
 - [2025-06-09 | 🤥 Lying | 🌄 Morning 📚📺](./reflections/2025-06-09.md)  
 - [2025-06-08 | ⚕️ Heal | 🤖👑 AImpire | 🧊🚨📣🪖 Unrest 📚📺](./reflections/2025-06-08.md)  
-- [2025-06-07 | 🚜 Farm | 💾 Software  | 🤕 Trauma | 🤖🐦 AutoTweet ⌨️](./reflections/2025-06-07.md)  
-- [2025-06-06 | 🎲 Bets 🎰 | 😈 Devils 👹 | 🤖 Claude 📚📄](./reflections/2025-06-06.md)  
   
   
 ## [📄  Articles](./articles/index.md) (28)  
   
-## [📚 Books](./books/index.md) (443)  
+## [📚 Books](./books/index.md) (452)  
   
 ## [🤖💬 Bot Chats](./bot-chats/index.md) (30)  
   
@@ -35,7 +35,7 @@ title: 🏡 Home
   
 ## [🌌 Topics](./topics/index.md) (71)  
   
-## [📺 Videos](./videos/index.md) (153)  
+## [📺 Videos](./videos/index.md) (156)  
   
 ## 🔗 Profiles  
 - [My resume](./topics/my-resume.md)  

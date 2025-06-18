@@ -69,4 +69,7 @@ affiliate link: https://amzn.to/4l52oDb
 * 👦🏿 ***All American Boys*** by Jason Reynolds and Brendan Kiely. 📖 A young adult novel exploring the aftermath of an act of police brutality from two different teenage perspectives (one Black, one white), touching on themes of racial profiling and activism.  
   
 ## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
-> Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Just Mercy: A Story of Justice and Redemption. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.
+> Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Just Mercy: A Story of Justice and Redemption. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.  
+  
+## 🐦 Tweet  
+<blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">🧑🏿‍⚖️🔄 Just Mercy: A Story of Justice and Redemption<br><br>🧑🏿‍🤝‍🧑🏾 Racial Bias | 🏛️ Legal System | 💔 Inequality | 🕊️ Mercy<a href="https://t.co/MO7wx2EXwu">https://t.co/MO7wx2EXwu</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/1935132422812877240?ref_src=twsrc%5Etfw">June 18, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

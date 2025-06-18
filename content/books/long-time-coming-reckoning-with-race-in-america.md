@@ -10,6 +10,8 @@ affiliate link: https://amzn.to/3HkBKa8
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧑🏿⚖️🧑🏻 Long Time Coming: Reckoning With Race In America  
+[🛒 Long Time Coming: Reckoning With Race In America. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3HkBKa8)  
+  
 ## 📚 Book Report: Long Time Coming: Reckoning With Race In America  
 by Michael Eric Dyson  
   
@@ -79,7 +81,7 @@ by Michael Eric Dyson
 * 🚂 **"The Underground Railroad" by Colson Whitehead (Fiction):** A novel that reimagines the Underground Railroad as a literal train system, exploring the brutality of slavery and the quest for freedom in a fantastical yet historically grounded way.  
 * 👻 **"Beloved" by Toni Morrison (Fiction):** A haunting novel delving into the psychological trauma of slavery through the story of a former enslaved woman haunted by her past.  
 * 🎤 **"Citizen: An American Lyric" by Claudia Rankine (Poetry/Essay):** A powerful blend of poetry, essays, and images documenting the everyday experiences of racism and microaggressions faced by Black Americans.  
-* ⚖️ **"Just Mercy: A Story of Justice and Redemption" by Bryan Stevenson (Memoir/Nonfiction):** The story of the Equal Justice Initiative, focusing on wrongful convictions and the injustices within the US legal system, particularly for Black men on death row.  
+* **[🧑🏿‍⚖️🔄 Just Mercy: A Story of Justice and Redemption](./just-mercy-a-story-of-justice-and-redemption.md) by Bryan Stevenson (Memoir/Nonfiction):** The story of the Equal Justice Initiative, focusing on wrongful convictions and the injustices within the US legal system, particularly for Black men on death row.  
 * ☀️ **"The Warmth of Other Suns: The Epic Story of America's Great Migration" by Isabel Wilkerson (Narrative Nonfiction):** Chronicles the decades-long migration of Black citizens from the South to the North and West, exploring the hopes and challenges they faced.  
 * 🏋️ **"Heavy: An American Memoir" by Kiese Laymon (Memoir):** A deeply personal memoir exploring themes of race, weight, family, trauma, and growing up Black in Mississippi.  
 * 🌃 **"Arc of Justice: A Saga of Race, Civil Rights, and Murder in the Jazz Age" by Kevin Boyle (Historical Nonfiction):** Focuses on the case of Dr. Ossian Sweet in 1920s Detroit, illustrating the fight for housing rights and justice against mob violence.  

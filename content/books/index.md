@@ -7,7 +7,7 @@ URL: https://bagrounds.org/books
 backlinks: false
 ---
 [Home](../index.md)  
-# 📚 Books (452)  
+# 📚 Books (454)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)  
 - [🧑‍🤝‍🧑📈 10 to 25: The Science of Motivating Young People: A Groundbreaking Approach to Leading the Next Generation - And Making Your Own Life Easier](./10-to-25-the-science-of-motivating-young-people-a-groundbreaking-approach-to-leading-the-next-generation-and-making-your-own-life-easier.md)  
@@ -300,6 +300,7 @@ Feedback Control of Dynamic Systems]]
 - [😊🧠 Satisfaction: The Science of Finding True Fulfillment](./satisfaction-the-science-of-finding-true-fulfillment.md)  
 - [🧪👶📈 Scientific Secrets for Raising Kids Who Thrive](./scientific-secrets-for-raising-kids-who-thrive.md)  
 - [😫👩‍👧‍👦 Screaming on the Inside: The Unsustainability of American Motherhood](./screaming-on-the-inside-the-unsustainability-of-american-motherhood.md)  
+- [👨‍👩‍👧‍👦🧠 Second Nature: How Parents Can Use Neuroscience to Help Kids Develop Empathy, Creativity, and Self-Control](./second-nature-how-parents-can-use-neuroscience-to-help-kids-develop-empathy-creativity-and-self-control.md)  
 - [📖🏛️📉 Seeing Like a State: How Certain Schemes to Improve the Human Condition Have Failed](./seeing-like-a-state-how-certain-schemes-to-improve-the-human-condition-have-failed.md)  
 - [📝🎨🎶 Show Your Work!: 10 Ways to Share Your Creativity and Get Discovered](./show-your-work.md)  
 - [💻⚙️🛡️📈 Site Reliability Engineering: How Google Runs Production Systems](./site-reliability-engineering.md)  
@@ -408,6 +409,7 @@ Feedback Control of Dynamic Systems]]
 - [💪🎯🔬 The Science of Self-Discipline: The Willpower, Mental Toughness, and Self-Control to Resist Temptation and Achieve Your Goals](./the-science-of-self-discipline-the-willpower-mental-toughness-and-self-control-to-resist-temptation-and-achieve-your-goals.md)  
 - [🔬🗣️🎭 The Science of Storytelling: Why Stories Make Us Human and How to Tell Them Better](./the-science-of-storytelling.md)  
 - [🥼🛡️ The Scientific Attitude: Defending Science from Denial, Fraud, and Pseudoscience](./the-scientific-attitude.md)  
+- [👶🧠🔬 The Scientist in the Crib: Minds, Brains, And How Children Learn](./the-scientist-in-the-crib-minds-brains-and-how-children-learn.md)  
 - [👨‍🚀 The Self-Driven Child: The 🔬 Science and 🤔 Sense of Giving Your Kids More 🕹️ Control Over Their Lives](./the-self-driven-child.md)  
 - [👤🧬 The Selfish Gene](./the-selfish-gene.md)  
 - [📡🌫️🔮🎲 The Signal and the Noise: Why So Many Predictions Fail - but Some Don't](./the-signal-and-the-noise.md)  

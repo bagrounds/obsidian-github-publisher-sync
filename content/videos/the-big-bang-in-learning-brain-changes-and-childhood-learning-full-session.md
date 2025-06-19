@@ -3,7 +3,7 @@ share: true
 aliases:
   - "💥🧠👶 The «Big Bang» in Learning: Brain Changes and Childhood Learning (Full Session)"
 title: "💥🧠👶 The «Big Bang» in Learning: Brain Changes and Childhood Learning (Full Session)"
-URL: https://bagrounds.org/videos/
+URL: https://bagrounds.org/videos/the-big-bang-in-learning-brain-changes-and-childhood-learning-full-session
 Author: 
 Platform: 
 Channel: The Aspen Institute
@@ -49,4 +49,7 @@ youtube: https://youtu.be/4zgkSObH4dU
     * "The Invisible Boy" by Trudy Ludwig (for empathy and inclusion)  
     * "Big Feelings" by Alexandra Penfold (for navigating emotional challenges)  
     * "The Rabbit Listened" by Cori Doerrfeld (for the importance of listening and empathy)  
-    * "The Bad Seed" series by Jory John and Pete Oswald (for character development and self-reflection)
+    * "The Bad Seed" series by Jory John and Pete Oswald (for character development and self-reflection)  
+  
+## 🐦 Tweet  
+<blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">💥🧠👶 The «Big Bang» in Learning: Brain Changes and Childhood Learning (Full Session)<br><br>🧠 Brain Growth | 👶 Early Development | 🗣️ Language Acquisition | 🧑‍🤝‍🧑 Social Interaction | 😥 Toxic Stress | 🧠 Executive Function | 👧 Perspective-Taking<a href="https://t.co/qyhJYBr7dZ">https://t.co/qyhJYBr7dZ</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/1935580364011098361?ref_src=twsrc%5Etfw">June 19, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

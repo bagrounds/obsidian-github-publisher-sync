@@ -13,6 +13,8 @@ affiliate link: https://amzn.to/4dISzYB
 ## 📝🐒 Human Notes  
 - 👍🏼 Supervised Tummy Time  
 - 👍🏼 Taekwondo  
+    - ➕ Self Monitoring  
+    - ➕ Self Regulation  
   
 ## 📚 Book Report: 🧪 Scientific Secrets for Raising Kids Who Thrive  
   
@@ -76,4 +78,7 @@ The book/course explores numerous themes crucial for raising thriving children, 
 * 🧸 **Books on the Importance of Play:** Exploring works that champion the necessity of unstructured play for child development aligns with themes in "🧪 Scientific Secrets." ⚽  
   
 ## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
-> Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Scientific Secrets for Raising Kids Who Thrive. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.
+> Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Scientific Secrets for Raising Kids Who Thrive. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.  
+  
+## 🐦 Tweet  
+<blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">🧪👶📈 Scientific Secrets for Raising Kids Who Thrive<br><br>👶 Childrearing | 🍎 Nutrition | 🧠 Cognitive Development | 😴 Sleep | 🎭 Parenting Styles<a href="https://t.co/FjoJIXazBF">https://t.co/FjoJIXazBF</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/1935578551820157290?ref_src=twsrc%5Etfw">June 19, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

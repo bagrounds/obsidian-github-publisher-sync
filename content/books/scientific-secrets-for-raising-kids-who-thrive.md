@@ -10,6 +10,10 @@ affiliate link: https://amzn.to/4dISzYB
 # 🧪👶📈 Scientific Secrets for Raising Kids Who Thrive  
 [🛒 Scientific Secrets for Raising Kids Who Thrive. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4dISzYB)  
   
+## 📝🐒 Human Notes  
+- 👍🏼 Supervised Tummy Time  
+- 👍🏼 Taekwondo  
+  
 ## 📚 Book Report: 🧪 Scientific Secrets for Raising Kids Who Thrive  
   
 🧪 Scientific Secrets for Raising Kids Who Thrive 🎓 is presented as a course by Professor Peter M. Vishton, an expert in the cognitive development of early childhood. 🧠 The material aims to bridge the gap between scientific research on child development and practical, real-world parenting advice. 💡 Unlike books offering anecdotal guidance, this course provides an evidence-based perspective to help parents make informed decisions from their child's birth and beyond. 👶  
@@ -50,10 +54,10 @@ The book/course explores numerous themes crucial for raising thriving children, 
 * **[🕳️🧠👶🏽 The Whole-Brain Child: 12 Revolutionary Strategies to Nurture Your Child's Developing Mind](./the-whole-brain-child.md)** by Daniel J. Siegel and Tina Payne Bryson. This highly respected book explains the science of a child's developing brain in an accessible way and offers practical strategies for parents. 🚀  
 * ❤️ **Parenting From The Inside Out: How A Deeper Self-Understanding Can Help You Raise Children Who Thrive** by Daniel J. Siegel and Mary Hartzell. This book explores how a parent's own experiences and self-understanding impact their parenting and a child's development. 🤝  
 * 🧬 **The Science of Parenting: How Today's Brain Research Can Help You Raise Happy, Emotionally Balanced Children** by Margot Sunderland. This guide compiles the latest scientific and neurobiological research to help parents understand their children's brains and offers scientifically proven advice. 💡  
-* 👶 **[The Science Of Mom](./the-science-of-mom.md): A Research-Based Guide to Your Baby's First Year** by Alice Callahan. Written by a scientist, this book explains the research behind common "science-based" parenting advice for a baby's first year. 🍼  
+* **[🤰👶🔬👩‍⚕️ 🧪 The Science of Mom: A Research-Based Guide to Your Baby's First Year](./the-science-of-mom.md)** by Alice Callahan. Written by a scientist, this book explains the research behind common "science-based" parenting advice for a baby's first year. 🍼  
 * 😇 **How to Raise Kids Who Aren't Assholes: Science-Based Strategies for Better Parenting-from Tots to Teens** by Melinda Wenner Moyer. This book provides research-backed strategies for instilling positive traits like honesty and generosity in children. 💖  
 * **[🔌👋 The Power of Showing Up: How Parental Presence Shapes Who Our Kids Become and How Their Brains Get Wired](./the-power-of-showing-up.md)** by Daniel J. Siegel and Tina Payne Bryson. This book focuses on the importance of parental presence and attachment based on neuroscience and attachment science. 👨‍👩‍👧‍👦  
-* 📊 **[Cribsheet](./cribsheet.md): A Data-Driven Guide to Better, More Relaxed Parenting, from Birth to Preschool** by Emily Oster. An economist analyzes data to provide insights on common parenting questions during the early years. 📈  
+* **[👶📊😌 Cribsheet: A Data-Driven Guide to Better, More Relaxed Parenting, from Birth to Preschool](./cribsheet.md)** by Emily Oster. An economist analyzes data to provide insights on common parenting questions during the early years. 📈  
 * **[🫄➕ Expecting Better: Why the Conventional Pregnancy Wisdom Is Wrong - and What You Really Need to Know](./expecting-better.md)** by Emily Oster. This book applies a data-driven approach to pregnancy, similar to *Cribsheet*. 🤰  
   
 ### ☯️ Contrasting Perspectives  

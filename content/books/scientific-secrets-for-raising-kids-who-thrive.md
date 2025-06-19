@@ -15,6 +15,7 @@ affiliate link: https://amzn.to/4dISzYB
 - 👍🏼 Taekwondo  
     - ➕ Self Monitoring  
     - ➕ Self Regulation  
+- 👍🏼 Enriched perceptual environment  
   
 ## 📚 Book Report: 🧪 Scientific Secrets for Raising Kids Who Thrive  
   

@@ -10,7 +10,7 @@ Channel: Heather Cox Richardson
 tags: 
 youtube: https://youtu.be/g2ysFqdbVII
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](../index.md) > [Videos](./index.md) | [🏛️🇺🇸📖 Heather Cox Richardson](../people/heather-cox-richardson.md)  
 # 🇮🇱⚔️🇮🇷👹☢️⛪🪓🏝️ The Latest on Israel and Iran: Trump, Nukes, and a MAGA Split  
 ![The Latest on Israel and Iran: Trump, Nukes, and a MAGA Split](https://youtu.be/g2ysFqdbVII)  
   

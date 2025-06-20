@@ -16,6 +16,12 @@ affiliate link: https://amzn.to/4dISzYB
     - ➕ Self Monitoring  
     - ➕ Self Regulation  
 - 👍🏼 Enriched perceptual environment  
+    - 🚫 Avoid excessive stress  
+- 🫛 Regularly taste healthy foods  
+    - 🚫 Don't force large quantities  
+- 🤟🏼 Sign language  
+- 🎶 Motherese  
+- 🗣️ Converse with adult language  
   
 ## 📚 Book Report: 🧪 Scientific Secrets for Raising Kids Who Thrive  
   

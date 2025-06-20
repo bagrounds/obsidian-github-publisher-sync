@@ -10,7 +10,7 @@ Channel: Heather Cox Richardson
 tags: 
 youtube: https://youtu.be/NpLB33tBsZU
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](../index.md) > [Videos](./index.md) | [🏛️🇺🇸📖 Heather Cox Richardson](../people/heather-cox-richardson.md)  
 # 👹⏱️🇺🇸➡️💰 Why the Trump Administration Is Rushing the Budget Reconciliation Bill Through  
 ![Why the Trump Administration Is Rushing the Budget Reconciliation Bill Through](https://youtu.be/NpLB33tBsZU)  
   

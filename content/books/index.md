@@ -7,7 +7,7 @@ URL: https://bagrounds.org/books
 backlinks: false
 ---
 [Home](../index.md)  
-# 📚 Books (455)  
+# 📚 Books (456)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)  
 - [🧑‍🤝‍🧑📈 10 to 25: The Science of Motivating Young People: A Groundbreaking Approach to Leading the Next Generation - And Making Your Own Life Easier](./10-to-25-the-science-of-motivating-young-people-a-groundbreaking-approach-to-leading-the-next-generation-and-making-your-own-life-easier.md)  
@@ -260,6 +260,7 @@ Feedback Control of Dynamic Systems]]
 - [🗓️✅ Organize Your Day: 17 Easy Strategies to Manage Your Day, Improve Productivity and Overcome Procrastination](./organize-your-day-17-easy-strategies-to-manage-your-day-improve-productivity-and-overcome-procrastination.md)  
 - [⏳🔬🎨 Outlive: The Science and Art of Longevity](./outlive.md)  
 - [📉⬆️ Out Of The Crisis](./out-of-the-crisis.md)  
+- [🤱🏼🤿🪞🌱 Parenting from the Inside Out: How a Deeper Self-Understanding Can Help You Raise Children Who Thrive](./parenting-from-the-inside-out-how-a-deeper-self-understanding-can-help-you-raise-children-who-thrive.md)  
 - [🧑‍⚕️🗣️ Patient Advocacy for Health Care Quality: Strategies for Achieving Patient-Centered Care](./patient-advocacy-for-health-care-quality-strategies-for-achieving-patient-centered-care.md)  
 - [👶🤔 Patterns of Attachment: A Psychological Study of the Strange Situation](./patterns-of-attachment-a-psychological-study-of-the-strange-situation.md)  
 - [🏛️🤝🕊️ Pax Democratica: A Strategy for the 21st Century](./pax-democratica.md)  

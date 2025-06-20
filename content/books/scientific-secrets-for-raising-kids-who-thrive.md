@@ -11,17 +11,18 @@ affiliate link: https://amzn.to/4dISzYB
 [🛒 Scientific Secrets for Raising Kids Who Thrive. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4dISzYB)  
   
 ## 📝🐒 Human Notes  
-- 👍🏼 Supervised Tummy Time  
-- 👍🏼 Taekwondo  
+- 💪🏼 Supervised Tummy Time  
+- 🥋 Taekwondo  
     - ➕ Self Monitoring  
     - ➕ Self Regulation  
-- 👍🏼 Enriched perceptual environment  
+- 🧸 Enriched perceptual environment  
     - 🚫 Avoid excessive stress  
 - 🫛 Regularly taste healthy foods  
     - 🚫 Don't force large quantities  
 - 🤟🏼 Sign language  
 - 🎶 Motherese  
 - 🗣️ Converse with adult language  
+- 🚫🤜🏼 No Corporal Punishment  
   
 ## 📚 Book Report: 🧪 Scientific Secrets for Raising Kids Who Thrive  
   

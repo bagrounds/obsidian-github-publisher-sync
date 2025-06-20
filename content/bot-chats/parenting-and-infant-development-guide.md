@@ -42,7 +42,7 @@ This area examines the theories behind how parents can support their children’
   - [Alfie Kohn](https://www.alfiekohn.org/) critiques traditional discipline methods and advocates for nurturing approaches.  
     
 - **Recommended Reading:**    
-  - *Parenting from the Inside Out* by Daniel J. Siegel & Mary Hartzell, which connects the dots between parental self-awareness and child well-being.  
+  - [🤱🏼🤿🪞🌱 Parenting from the Inside Out: How a Deeper Self-Understanding Can Help You Raise Children Who Thrive](../books/parenting-from-the-inside-out-how-a-deeper-self-understanding-can-help-you-raise-children-who-thrive.md) by Daniel J. Siegel & Mary Hartzell, which connects the dots between parental self-awareness and child well-being.  
     
 - **Articles & Videos:**    
   Look for content on the [Harvard Graduate School of Education](https://www.gse.harvard.edu/) and related TED Talks that explore modern parenting challenges and innovations.  

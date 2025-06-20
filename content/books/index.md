@@ -7,7 +7,7 @@ URL: https://bagrounds.org/books
 backlinks: false
 ---
 [Home](../index.md)  
-# 📚 Books (456)  
+# 📚 Books (459)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)  
 - [🧑‍🤝‍🧑📈 10 to 25: The Science of Motivating Young People: A Groundbreaking Approach to Leading the Next Generation - And Making Your Own Life Easier](./10-to-25-the-science-of-motivating-young-people-a-groundbreaking-approach-to-leading-the-next-generation-and-making-your-own-life-easier.md)  
@@ -45,6 +45,7 @@ backlinks: false
 - [👤🧠 Being You: A New Science of Consciousness](./being-you-a-new-science-of-consciousness.md)  
 - [📉➡️👍 Better Than Before: What I Learned About Making and Breaking Habits - to Sleep More, Quit Sugar, Procrastinate Less, and Generally Build a Happier Life](./better-than-before.md)  
 - [⚛️🌎 Beyond Weird: Why Everything You Thought You Knew about Quantum Physics Is Different](./beyond-weird.md)  
+- [❓🏛️👶 Big Ideas for Little Philosophers: Truth with Socrates](./big-ideas-for-little-philosophers-truth-with-socrates.md)  
 - [🪄 Big Magic: Creative Living Beyond Fear](./big-magic.md)  
 - [🐦🕊️ Bird by Bird: Some Instructions on Writing and Life](./bird-by-bird.md)  
 - [⚡🚫💭 Blink: The Power of Thinking Without Thinking](./blink-the-power-of-thinking-without-thinking.md)  
@@ -220,6 +221,7 @@ Feedback Control of Dynamic Systems]]
 - [🧠🔒 Make It Stick: The Science of Successful Learning](./make-it-stick.md)  
 - [💰⚕️ Making Them Pay: How to Get the Most from Health Insurance and Managed Care](./making-them-pay-how-to-get-the-most-from-health-insurance-and-managed-care.md)  
 - [🔦💡 Man's Search for Meaning](./mans-search-for-meaning.md)  
+- [🏭☢️😱 Manufactured Crisis: The Untold Story of the Iran Nuclear Scare](./manufactured-crisis-the-untold-story-of-the-iran-nuclear-scare.md)  
 - [🏭🫡 Manufacturing Consent: The Political Economy of the Mass Media](./manufacturing-consent.md)  
 - [📈🎯✅📏 Measure What Matters: How Google, Bono, and the Gates Foundation Rock the World with OKRs](./measure-what-matters.md)  
 - [🤔🧘 Meditations](./meditations.md)  
@@ -282,6 +284,7 @@ Feedback Control of Dynamic Systems]]
 - [💰🤔😊 Psychology of Money: Timeless lessons on wealth, greed, and happiness](./the-psychology-of-money.md)  
 - [ 🎯🎭🔗🧭🏆 Purposeful Performance: The Secret Mix of Connecting, Leading, and Succeeding](./purposeful-performance.md)  
 - [😡🤬 Rage](./rage.md)  
+- [🌱👼🏼 Raising Good Humans: A Mindful Guide to Breaking the Cycle of Reactive Parenting and Raising Kind, Confident Kids](./raising-good-humans-a-mindful-guide-to-breaking-the-cycle-of-reactive-parenting-and-raising-kind-confident-kids.md)  
 - [🌐🔭🎨🧩👨‍🎓 Range: Why Generalists Triumph in a Specialized World](./range.md)  
 - [🤝🐾 Rapport: The Four Ways to Read People](./rapport.md)  
 - [🧠🤔❓ Rationality: What It Is, Why It Seems Scarce, Why It Matters](./rationality.md)  

@@ -52,4 +52,7 @@ youtube: https://youtu.be/g2ysFqdbVII
 **On Internal US Politics and Foreign Policy:**  
 - 🏛️✍️ **American Foreign Policy and Process** by James M. McCormick. Explores governmental and non-governmental actors shaping American foreign policy.  
 - 🧐🧠 **National Security through a Cockeyed Lens: How Cognitive Bias Impacts U.S. Foreign Policy** by Steve A. Yetiv. Delves into how psychological biases affect decision-making in U.S. foreign policy.  
-- 📢📰 **Selling Intervention and War: The Presidency, the Media, and the American Public** by Jon Western. Examines dynamics between the presidency, media, and public opinion in shaping support for military intervention.
+- 📢📰 **Selling Intervention and War: The Presidency, the Media, and the American Public** by Jon Western. Examines dynamics between the presidency, media, and public opinion in shaping support for military intervention.  
+  
+## 🐦 Tweet  
+<blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">🇮🇱⚔️🇮🇷👹☢️⛪🪓🏝️ The Latest on Israel and Iran: Trump, Nukes, and a MAGA Split<br><br>🤝 JCPOA | 💥 Maximum Pressure Campaign | 🏛️ White House Personnel | 📰 US Foreign Policy | ☢️ Nuclear Program | 🌍 International Conflicts<a href="https://t.co/OJ7tYeTNzq">https://t.co/OJ7tYeTNzq</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/1936187716787748915?ref_src=twsrc%5Etfw">June 20, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

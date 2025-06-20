@@ -10,7 +10,7 @@ Channel: Heather Cox Richardson
 tags: 
 youtube: https://youtu.be/4diHMLyJPx0
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](../index.md) > [Videos](./index.md) | [🏛️🇺🇸📖 Heather Cox Richardson](../people/heather-cox-richardson.md)  
 # 🗣️👂🇺🇸 American Conversations: Secretary Pete Buttigieg  
 ![American Conversations: Secretary Pete Buttigieg](https://youtu.be/4diHMLyJPx0)  
   

@@ -8,7 +8,7 @@ backlinks: false
 ---
 [Home](../index.md)  
 # 🪞 Reflections (217)  
-- [2025-06-19](./2025-06-19.md)  
+- [2025-06-19 | 🤱🏼🪞 Inside Out 📚](./2025-06-19.md)  
 - [2025-06-18 | 👶🏼 Baby 🔬 Science 📺📚](./2025-06-18.md)  
 - [2025-06-17 | ➡️ Change | 😴 Rest | 🕊️ Freedom 📚](./2025-06-17.md)  
 - [2025-06-16 | 🗑️ Waste | 🪤 Capture | 👊🏻 Violence | 🥸 Intrigue | 😡 Rage](./2025-06-16.md)  

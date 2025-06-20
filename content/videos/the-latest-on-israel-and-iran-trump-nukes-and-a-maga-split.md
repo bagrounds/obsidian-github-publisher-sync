@@ -36,7 +36,7 @@ youtube: https://youtu.be/g2ysFqdbVII
   
 ## 📚 Book Recommendations  
 **On Iran's Nuclear Program and US-Iran Relations:**  
-- 🕵️‍♀️📚 **Manufactured Crisis: The Untold Story of the Iran Nuclear Scare** by Gareth Porter. Argues Iran's nuclear energy program is peaceful and evidence otherwise was manufactured.  
+- **[🏭☢️😱 Manufactured Crisis: The Untold Story of the Iran Nuclear Scare](../books/manufactured-crisis-the-untold-story-of-the-iran-nuclear-scare.md)** by Gareth Porter. Argues Iran's nuclear energy program is peaceful and evidence otherwise was manufactured.  
 - ⚛️📜 **Nuclear Iran: The Birth of an Atomic State** by David Patrikarakos. Details the history of Iran's nuclear program and its connection to the country's modern history.  
 - 💣🌐 **Iran and the Bomb: The Abdication of International Responsibility** by Thérèse Delpech. Analyzes Iran's nuclear saga and argues its ambitions are geared towards a bomb.  
 - 🇺🇸🇮🇷 **US Foreign Policy and Iran: American-Iranian Relations since the Islamic Revolution** by Donette Murray. Assesses US foreign policy decision-making concerning Iran since 1979.  

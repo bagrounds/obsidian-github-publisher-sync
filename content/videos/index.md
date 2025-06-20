@@ -7,7 +7,7 @@ URL: https://bagrounds.org/videos
 backlinks: false
 ---
 [Home](../index.md)  
-# 📺 Videos (157)  
+# 📺 Videos (158)  
 - [2025 Yearly Themes](./2025-yearly-themes.md)  
 - [2️⃣⬆️🧠👩‍🚀 Double Your Productivity using this ADHD System (Invented by a Space Systems Engineer)](./double-your-productivity-using-this-adhd-system-invented-by-a-space-systems-engineer.md)  
 - [🪜📈🏢 3 High Leverage Career Skills (From a Principal At Amazon)](./3-high-leverage-career-skills-from-a-principal-at-amazon.md)  
@@ -122,6 +122,7 @@ backlinks: false
 - [The Happiest Baby on the Block - Harvey Karp (Summary)](./the-happiest-baby-on-the-block-harvey-karp-summary.md)  
 - [The history of civil service and the impact of Trump's slashing of the workforce](./the-history-of-civil-service-and-the-impact-of-trumps-slashing-of-the-workforce.md)  
 - [The history of diversity, equity and inclusion efforts in America](./the-history-of-diversity-equity-and-inclusion-efforts-in-america.md)  
+- [🇮🇱⚔️🇮🇷👹☢️⛪🪓🏝️ The Latest on Israel and Iran: Trump, Nukes, and a MAGA Split](./the-latest-on-israel-and-iran-trump-nukes-and-a-maga-split.md)  
 - [The OLDEST websites EVER 👩‍💻](./the-oldest-websites-ever.md)  
 - [📉🎶👎 The Real Reason Why Music Is Getting Worse](./the-real-reason-why-music-is-getting-worse.md)  
 - [🌅🧠🗝️🚀📈 The Remarkable Morning Method: 5 Ways to Unlock Your Best Mental State](./the-remarkable-morning-method-5-ways-to-unlock-your-best-mental-state.md)  

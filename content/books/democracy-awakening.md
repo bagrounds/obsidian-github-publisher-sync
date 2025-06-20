@@ -15,7 +15,7 @@ affiliate link: https://amzn.to/3SzacAq
 ## 📖 Book Report: Democracy Awakening  
   
 **🔖 Title:** *Democracy Awakening: Notes on the State of America*  
-**✍️ Author:** Heather Cox Richardson  
+**✍️ Author:** [🏛️🇺🇸📖 Heather Cox Richardson](../people/heather-cox-richardson.md)  
 **🗓️ Publication Date:** 2023  
   
 ### ℹ️ Introduction  

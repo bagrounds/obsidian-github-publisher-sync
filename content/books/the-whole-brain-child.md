@@ -53,7 +53,7 @@ affiliate link: https://amzn.to/4mHBl1R
 * 🧠 **Neuroscience & Attachment-Based Parenting:**  
     * 🧠 *Brain-Based Parenting* by Daniel A. Hughes & Jonathan Baylin: 🤝 Delves into the neuroscience of attachment and caregiving.  
     * 🧠 *Brain-Body Parenting* by Mona Delahooke: 👶 Focuses on understanding children's behavior through the lens of their nervous system.  
-    * 🫂 *Parenting from the Inside Out* by Daniel J. Siegel & Mary Hartzell: 👨‍👩‍👧‍👦 Explores how parents' own childhood experiences impact their parenting.  
+    * [🤱🏼🤿🪞🌱 Parenting from the Inside Out: How a Deeper Self-Understanding Can Help You Raise Children Who Thrive](./parenting-from-the-inside-out-how-a-deeper-self-understanding-can-help-you-raise-children-who-thrive.md) by Daniel J. Siegel & Mary Hartzell: 👨‍👩‍👧‍👦 Explores how parents' own childhood experiences impact their parenting.  
 * 💖 **Emotional Intelligence & Connection:**  
     * 💖 *Raising an Emotionally Intelligent Child* by John Gottman & Joan Declaire: 👨‍🏫 A classic guide to coaching children through their emotional world.  
     * 🗣️ *How to Talk So Kids Will Listen & Listen So Kids Will Talk* by Adele Faber & Elaine Mazlish: 👂 Practical communication strategies for fostering cooperation and connection.  

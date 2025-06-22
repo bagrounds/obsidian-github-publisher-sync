@@ -35,7 +35,7 @@ title: 🏡 Home
   
 ## [🌌 Topics](./topics/index.md) (71)  
   
-## [📺 Videos](./videos/index.md) (160)  
+## [📺 Videos](./videos/index.md) (161)  
   
 ## 🔗 Profiles  
 - [My resume](./topics/my-resume.md)  

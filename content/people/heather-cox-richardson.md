@@ -17,7 +17,7 @@ URL: https://bagrounds.org/people/heather-cox-richardson
 * ✊🏿 *The Death of Reconstruction: Race, Labor, and Politics in the Post-Civil War North, 1865-1901* (2001)  
 * 🇺🇸 *West from Appomattox: The Reconstruction of America After the Civil War* (2007)  
 * 💔 *Wounded Knee: Party Politics and the Road to an American Massacre* (2010)  
-* 🐘 *To Make Men Free: A History of the Republican Party From 1854 To The Present* (2014)  
+* [🇺🇸⛓️‍💥📜🐘 To Make Men Free: A History of the Republican Party](../books/to-make-men-free-a-history-of-the-republican-party.md) From 1854 To The Present (2014)  
 * 🇺🇲 *How the South Won the Civil War: Oligarchy, Democracy, and the Continuing Fight for the Soul of America* (2020)  
 * 🗽 [🏛️☀️⬆️ Democracy Awakening: 📝 Notes on the State of 🇺🇸 America](../books/democracy-awakening.md) (2023)  
   

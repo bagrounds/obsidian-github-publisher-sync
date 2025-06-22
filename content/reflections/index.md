@@ -7,7 +7,10 @@ URL: https://bagrounds.org/reflections
 backlinks: false
 ---
 [Home](../index.md)  
-# 🪞 Reflections (217)  
+# 🪞 Reflections (220)  
+- [2025-06-22](./2025-06-22.md)  
+- [2025-06-21 | 🐘 To Make Men Free 📚](./2025-06-21.md)  
+- [2025-06-20 | 👶 Little | 🌍 Big](./2025-06-20.md)  
 - [2025-06-19 | 🤱🏼🪞 Inside Out 📚](./2025-06-19.md)  
 - [2025-06-18 | 👶🏼 Baby 🔬 Science 📺📚](./2025-06-18.md)  
 - [2025-06-17 | ➡️ Change | 😴 Rest | 🕊️ Freedom 📚](./2025-06-17.md)  

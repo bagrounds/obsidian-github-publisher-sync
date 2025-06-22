@@ -10,7 +10,10 @@ title: 🏡 Home
 📑 Notes, 💭 thoughts, and 🔗 Links.  
 ❔ What do 🫵 _you_ 🤔 think?  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (217)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (220)  
+- [2025-06-22](./reflections/2025-06-22.md)  
+- [2025-06-21 | 🐘 To Make Men Free 📚](./reflections/2025-06-21.md)  
+- [2025-06-20 | 👶 Little | 🌍 Big](./reflections/2025-06-20.md)  
 - [2025-06-19 | 🤱🏼🪞 Inside Out 📚](./reflections/2025-06-19.md)  
 - [2025-06-18 | 👶🏼 Baby 🔬 Science 📺📚](./reflections/2025-06-18.md)  
 - [2025-06-17 | ➡️ Change | 😴 Rest | 🕊️ Freedom 📚](./reflections/2025-06-17.md)  
@@ -18,24 +21,21 @@ title: 🏡 Home
 - [2025-06-15 | 👨‍👦🗓️ Father's Day | ⚔️🕊️ Tolstoy | ♟️ Chess 🤖💬📚](./reflections/2025-06-15.md)  
 - [2025-06-14 | 🎯🏛️ Assassination | 🇮🇱🚀🇮🇷 War | 🚫👑 No Kings](./reflections/2025-06-14.md)  
 - [2025-06-13 | 🥾 Deportation ➡️ Prison ⛓️](./reflections/2025-06-13.md)  
-- [2025-06-12 | 👹⚔️🏛️🇺🇸 Trump Admin Assaults US Senator](./reflections/2025-06-12.md)  
-- [2025-06-11 | 🥸 Stealth 🪧 Activism](./reflections/2025-06-11.md)  
-- [2025-06-10 | 🥸⚔️👨‍👩‍👧‍👦 ICE vs Family | 👹⚔️🪧 Trump vs Speech | 🐍⚔️⚕️ RFK vs Health](./reflections/2025-06-10.md)  
   
   
 ## [📄  Articles](./articles/index.md) (28)  
   
-## [📚 Books](./books/index.md) (456)  
+## [📚 Books](./books/index.md) (463)  
   
-## [🤖💬 Bot Chats](./bot-chats/index.md) (30)  
+## [🤖💬 Bot Chats](./bot-chats/index.md) (31)  
   
-## [👥 People](./people/index.md) (8)  
+## [👥 People](./people/index.md) (9)  
   
 ## [💾 Software](./software/index.md) (33)  
   
 ## [🌌 Topics](./topics/index.md) (71)  
   
-## [📺 Videos](./videos/index.md) (157)  
+## [📺 Videos](./videos/index.md) (160)  
   
 ## 🔗 Profiles  
 - [My resume](./topics/my-resume.md)  

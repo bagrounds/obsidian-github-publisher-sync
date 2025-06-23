@@ -10,7 +10,8 @@ title: 🏡 Home
 📑 Notes, 💭 thoughts, and 🔗 Links.  
 ❔ What do 🫵 _you_ 🤔 think?  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (220)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (221)  
+- [2025-06-23](./reflections/2025-06-23.md)  
 - [2025-06-22 | 🕯️ Ritual | 🪄 Magic | 🇺🇸💣🇮🇷 War 🤖💬📚📺](./reflections/2025-06-22.md)  
 - [2025-06-21 | 🐘 To Make Men Free 📚](./reflections/2025-06-21.md)  
 - [2025-06-20 | 👶 Little | 🌍 Big](./reflections/2025-06-20.md)  
@@ -20,7 +21,6 @@ title: 🏡 Home
 - [2025-06-16 | 🗑️ Waste | 🪤 Capture | 👊🏻 Violence | 🥸 Intrigue | 😡 Rage](./reflections/2025-06-16.md)  
 - [2025-06-15 | 👨‍👦🗓️ Father's Day | ⚔️🕊️ Tolstoy | ♟️ Chess 🤖💬📚](./reflections/2025-06-15.md)  
 - [2025-06-14 | 🎯🏛️ Assassination | 🇮🇱🚀🇮🇷 War | 🚫👑 No Kings](./reflections/2025-06-14.md)  
-- [2025-06-13 | 🥾 Deportation ➡️ Prison ⛓️](./reflections/2025-06-13.md)  
   
   
 ## [📄  Articles](./articles/index.md) (28)  

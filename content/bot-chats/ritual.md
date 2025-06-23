@@ -150,7 +150,7 @@ Beyond habits and rituals, there are several powerful areas to explore for influ
 * ℹ️ **Topic:** How stories shape our understanding of the world, influence our beliefs, and can be used to inspire action and create shared meaning.  
 * 💡 **Why it's relevant:** Rituals often have an underlying narrative. Understanding how stories work can help you imbue your personal and group rituals with deeper meaning, making them more resonant and enduring. It's about crafting the "why" in a compelling way.  
 * 📖 **Representative Book:**  
-    * 📊 **Storytelling with Data: A Data Visualization Guide for Business Professionals by Cole Nussbaumer Knaflic**  
+    * **[📖📊📈 Storytelling with Data: A Data Visualization Guide for Business Professionals](../books/storytelling-with-data-a-data-visualization-guide-for-business-professionals.md) by Cole Nussbaumer Knaflic**  
         * While focused on data, Knaflic's core message is about the power of narrative to make information impactful and actionable. The principles of structuring a compelling story, identifying the "so what," and creating a clear call to action can be applied to how you frame your habits and rituals for yourself and others.  
     * 📜 **The Power of Myth by Joseph Campbell (with Bill Moyers)**  
         * For a deeper, more archetypal dive into storytelling and its role in human culture and psychology, this classic explores universal myths and their enduring significance. Understanding these foundational narratives can inform the symbolic depth of your personal rituals.  

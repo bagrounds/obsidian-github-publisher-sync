@@ -3,7 +3,7 @@ share: true
 aliases:
   - 👊👹🇺🇸🛡️ How to Fight Fascism in America — with Timothy Snyder | Prof G Conversations
 title: 👊👹🇺🇸🛡️ How to Fight Fascism in America — with Timothy Snyder | Prof G Conversations
-URL: https://bagrounds.org/videos/
+URL: https://bagrounds.org/videos/how-to-fight-fascism-in-america-with-timothy-snyder-prof-g-conversations
 Author: 
 Platform: 
 Channel: The Prof G Pod – Scott Galloway
@@ -40,4 +40,7 @@ This interview with Professor Timothy Snyder discusses the 🌍 return of fascis
 * 📖 **The Anatomy of Fascism** by Robert O. Paxton.  
 * **[👹 The Origins of Totalitarianism](../books/the-origins-of-totalitarianism.md)** by Hannah Arendt.  
 * 🌐 **The World Is Flat: A Brief History of the Twenty-first Century** by Thomas L. Friedman.  
-* 😠 **Globalization and its Discontents** by Joseph E. Stiglitz.
+* 😠 **Globalization and its Discontents** by Joseph E. Stiglitz.  
+  
+## 🐦 Tweet  
+<blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">👊👹🇺🇸🛡️ How to Fight Fascism in America — with Timothy Snyder | Prof G Conversations<br><br>🏛️ US Politics | 🌍 Global Implications | 💣 Terror Attacks | 💰 Wealth Focus | 🧑‍🤝‍🧑 Coalitions | 💼 Corporate Silence | ⛓️ Supply Chains<a href="https://t.co/z7WNigMMQa">https://t.co/z7WNigMMQa</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/1937295474752680106?ref_src=twsrc%5Etfw">June 23, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

@@ -3,7 +3,7 @@ share: true
 aliases:
   - 👹👀🇺🇸📉 The Big Short author Michael Lewis on what he thinks happens next with Trump and the USA
 title: 👹👀🇺🇸📉 The Big Short author Michael Lewis on what he thinks happens next with Trump and the USA
-URL: https://bagrounds.org/videos/
+URL: https://bagrounds.org/videos/the-big-short-author-michael-lewis-on-what-he-thinks-happens-next-with-trump-and-the-usa
 Author: 
 Platform: 
 Channel: The Sydney Morning Herald and The Age
@@ -27,4 +27,7 @@ youtube: https://youtu.be/93Y9DNFHws4
 * 🧑‍💼 **On Civil Servants:** To learn more about the role and importance of civil servants, consider reading "The Fifth Risk" by Michael Lewis, which also features Heather Stone.  
 * 💸 **On Political Monetization:** For insights into the monetization of politics, explore "All the President's Men" by Carl Bernstein and Bob Woodward.  
 * ⚠️ **On the Risks of Gambling:** To understand the dangers of legalized sports betting, "Addiction by Design: Machine Gambling in Las Vegas" by Natasha Dow Schüll provides a deep dive into the subject.  
-* 🤝 **On Storytelling and Bridging Divides:** "Talking to Strangers: What We Should Know About the People We Don't Know" by Malcolm Gladwell explores the challenges of understanding and connecting with others.
+* 🤝 **On Storytelling and Bridging Divides:** "Talking to Strangers: What We Should Know About the People We Don't Know" by Malcolm Gladwell explores the challenges of understanding and connecting with others.  
+  
+## 🐦 Tweet  
+<blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">👹👀🇺🇸📉 The Big Short author Michael Lewis on what he thinks happens next with Trump and the USA<br><br>🏛️ Civil Servants | ⚕️ Rare Diseases | 🇺🇸 Political Monetization | 🎰 Sports Betting | 🗣️ Storytelling<a href="https://t.co/VqwPcxXQHE">https://t.co/VqwPcxXQHE</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/1937293565073518818?ref_src=twsrc%5Etfw">June 23, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

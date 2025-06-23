@@ -23,6 +23,7 @@ youtube: https://youtu.be/93Y9DNFHws4
   
 ## 📚 Book Recommendations  
 - **[🏛️❓ Who Is Government?: The Untold Story of Public Service](../books/who-is-government-the-untold-story-of-public-service.md)** by Michael Lewis.  
+- [💰💥📉 The Big Short: Inside the Doomsday Machine](../books/the-big-short-inside-the-doomsday-machine.md) by Michael Lewis.  
 * 🧑‍💼 **On Civil Servants:** To learn more about the role and importance of civil servants, consider reading "The Fifth Risk" by Michael Lewis, which also features Heather Stone.  
 * 💸 **On Political Monetization:** For insights into the monetization of politics, explore "All the President's Men" by Carl Bernstein and Bob Woodward.  
 * ⚠️ **On the Risks of Gambling:** To understand the dangers of legalized sports betting, "Addiction by Design: Machine Gambling in Las Vegas" by Natasha Dow Schüll provides a deep dive into the subject.  

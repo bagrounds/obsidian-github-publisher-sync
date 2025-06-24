@@ -11,7 +11,7 @@ affiliate link: https://amzn.to/4dISzYB
 [🛒 Scientific Secrets for Raising Kids Who Thrive. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4dISzYB)  
   
 ## 📝🐒 Human Notes  
-- 💪🏼 Supervised Tummy Time  
+- 💪 Supervised Tummy Time  
 - 🥋 Taekwondo  
     - ➕ Self Monitoring  
     - ➕ Self Regulation  
@@ -19,10 +19,17 @@ affiliate link: https://amzn.to/4dISzYB
     - 🚫 Avoid excessive stress  
 - 🫛 Regularly taste healthy foods  
     - 🚫 Don't force large quantities  
-- 🤟🏼 Sign language  
+- 🤟 Sign language  
 - 🎶 Motherese  
 - 🗣️ Converse with adult language  
-- 🚫🤜🏼 No Corporal Punishment  
+- 🚫🤜 No Corporal Punishment  
+    - ➡️ instead  
+        - 😇🙌 reward good behavior  
+        - 🗣️❔ explain why  
+- ✅🧭 Be [👨‍👩‍👦🧭🤝 Authoritative](../topics/authoritative-parenting.md)  
+    - 🚫👑 not authoritarian  
+    - 🚫🟢 not permissive  
+    - 🚫🥱 not uninvolved  
   
 ## 📚 Book Report: 🧪 Scientific Secrets for Raising Kids Who Thrive  
   

@@ -11,7 +11,7 @@ title: 🏡 Home
 ❔ What do 🫵 _you_ 🤔 think?  
   
 ## [🪞 Reflections](./reflections/index.md) ~ Blog (221)  
-- [2025-06-23](./reflections/2025-06-23.md)  
+- [2025-06-23 | 🕯️ Ritual | 💰📉 Short | 👹🇺🇸 Fascism 🤖💬📚📺](./reflections/2025-06-23.md)  
 - [2025-06-22 | 🕯️ Ritual | 🪄 Magic | 🇺🇸💣🇮🇷 War 🤖💬📚📺](./reflections/2025-06-22.md)  
 - [2025-06-21 | 🐘 To Make Men Free 📚](./reflections/2025-06-21.md)  
 - [2025-06-20 | 👶 Little | 🌍 Big](./reflections/2025-06-20.md)  
@@ -25,7 +25,7 @@ title: 🏡 Home
   
 ## [📄  Articles](./articles/index.md) (28)  
   
-## [📚 Books](./books/index.md) (463)  
+## [📚 Books](./books/index.md) (466)  
   
 ## [🤖💬 Bot Chats](./bot-chats/index.md) (31)  
   
@@ -35,7 +35,7 @@ title: 🏡 Home
   
 ## [🌌 Topics](./topics/index.md) (71)  
   
-## [📺 Videos](./videos/index.md) (162)  
+## [📺 Videos](./videos/index.md) (165)  
   
 ## 🔗 Profiles  
 - [My resume](./topics/my-resume.md)  

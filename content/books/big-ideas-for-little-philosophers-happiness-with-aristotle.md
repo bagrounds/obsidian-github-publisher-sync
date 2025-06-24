@@ -38,7 +38,7 @@ affiliate link: https://amzn.to/3ZLGBaU
 * 📚 **Other Books in the "Big Ideas for Little Philosophers" Series:** 🌍 Explore more philosophers and their core ideas presented in the same accessible board book format.  
     * ⚖️ *Equality with Simone de Beauvoir*  
     * [❓🏛️👶 Truth with Socrates](./big-ideas-for-little-philosophers-truth-with-socrates.md)  
-    * 🎨 *Imagination with René Descartes*  
+    * [🤔👶💭 Imagination with René Descartes](./big-ideas-for-little-philosophers-imagination-with-rene-descartes.md)  
     * ❤️ *Kindness with Confucius*  
     * 💞 *Love with Plato*  
 * 🦸 **"Ordinary People Change the World" Series by Brad Meltzer:** 📚 While not strictly philosophy, this biography series introduces young readers to historical figures who embodied important virtues and ideas.  

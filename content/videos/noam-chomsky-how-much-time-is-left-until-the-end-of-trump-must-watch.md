@@ -50,4 +50,7 @@ The video includes several calls to action:
     * *Collective Action and Exchange: A Game-Theoretic Approach to Contemporary Political Economy* by William D. Ferguson.  
     * *Collective Action for Social Change: An Introduction to Community Organizing* by Aaron Schutz and Marie G. Sandy.  
     * *The Abolitionist's Handbook* by Patrisse Khan-Cullors.  
-    * *A Force More Powerful* by Ackerman and Duvall. 🕊️ The book provides real examples of nonviolent conflicts.
+    * *A Force More Powerful* by Ackerman and Duvall. 🕊️ The book provides real examples of nonviolent conflicts.  
+  
+## 🐦 Tweet  
+<blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">🤔⏳👹⬇️ How Much Time Is Left Until the End of Trump?<br><br>🏛️ Institutional Decay | 📢 Demagoguery | ✊ Collective Action | 🛠️ System Redesign | ⚖️ Justice | 🤝 Solidarity | 🛡️ Defending Truth | 🤥 Misinformation | 🌍 Social Change | 🕊️ Nonviolent Conflict<a href="https://t.co/yoR21NXvBn">https://t.co/yoR21NXvBn</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/1937303880490238262?ref_src=twsrc%5Etfw">June 24, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

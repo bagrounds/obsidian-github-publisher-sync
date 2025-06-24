@@ -35,7 +35,7 @@ affiliate link: https://amzn.to/3G9KUWP
   
 ### 🗂️ Similar Books (Introduction to Philosophy for Children)  
   
-* 📚 **Other Books in the *Big Ideas for Little Philosophers* Series:** 🌟 This series covers other prominent philosophers and their core ideas, such as Love with Plato, Happiness with Aristotle, Imagination with René Descartes, Kindness with Confucius, and Equality with Simone de Beauvoir.  
+* 📚 **Other Books in the *Big Ideas for Little Philosophers* Series:** 🌟 This series covers other prominent philosophers and their core ideas, such as Love with Plato, [🤔👶😊 Happiness with Aristotle](./big-ideas-for-little-philosophers-happiness-with-aristotle.md), Imagination with René Descartes, Kindness with Confucius, and Equality with Simone de Beauvoir.  
 * 💭 ***Big Ideas for Curious Minds: An Introduction to Philosophy*** by The School of Life: 🌍 Uses everyday situations to explain philosophical concepts in a kid-friendly way.  
 * 🤔 ***Philosophy for Kids: Key Ideas Clearly Explained*** by David A. White: 💡 Introduces philosophical concepts through engaging stories and discussions.  
 * ❓ ***I Wonder: A Book of Questions with No Answers*** by Annaka Harris: 🧐 Encourages curiosity and philosophical thinking through a series of open-ended questions.  

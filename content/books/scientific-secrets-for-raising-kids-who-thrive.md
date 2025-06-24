@@ -31,6 +31,11 @@ affiliate link: https://amzn.to/4dISzYB
     - 🚫🟢 not permissive  
     - 🚫🥱 not uninvolved  
 - 🥰📖 Enjoy teaching kids to love reading  
+- 📈🧠 To improve intelligence  
+    - ⏹️ Play with blocks  
+    - ⛹️‍♀️ Exercise daily  
+    - 🎹 Play music  
+    - 🙌🏋️‍♀️ Praise effort, not intelligence  
   
 ## 📚 Book Report: 🧪 Scientific Secrets for Raising Kids Who Thrive  
   

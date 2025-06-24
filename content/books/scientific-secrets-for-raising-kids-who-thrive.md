@@ -30,6 +30,7 @@ affiliate link: https://amzn.to/4dISzYB
     - 🚫👑 not authoritarian  
     - 🚫🟢 not permissive  
     - 🚫🥱 not uninvolved  
+- 🥰📖 Enjoy teaching kids to love reading  
   
 ## 📚 Book Report: 🧪 Scientific Secrets for Raising Kids Who Thrive  
   

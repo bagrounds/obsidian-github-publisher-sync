@@ -171,4 +171,7 @@ While specific individual names of "experts" might fluctuate as research evolves
     * ✅🚂 **Why recommended:** A beautifully written narrative nonfiction book that delves into the experiences of students and faculty at a residential school for the deaf. It offers a nuanced look at the complexities of identity, language, and community within the Deaf world.  
     * ℹ️📚 **Topics:** Deaf schools, ASL, oralism vs. sign language, Deaf culture, and educational philosophies.  
   
-📚✅ This list provides a good starting point for exploring the multifaceted world of infant hearing, hearing loss, and deafness. 📅✅ Remember to check publication dates for the most up-to-date information, especially for technology and medical recommendations.
+📚✅ This list provides a good starting point for exploring the multifaceted world of infant hearing, hearing loss, and deafness. 📅✅ Remember to check publication dates for the most up-to-date information, especially for technology and medical recommendations.  
+  
+## 🐦 Tweet  
+<blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">👶👂 Infant Hearing<br><br>👶 Newborn Care | 👶🗣️ Language Development | 🧪👂 Screening Tools | ⚙️👂 Otoacoustic Emissions | 🧠⚡️ Auditory Brainstem Response | 👨‍⚕️👂 Pediatric Audiology | 🏢🗣️ ASHA | 🌐👶 CDC EHDI | 🍎📚 Educational Practices | 🫶 Deaf Culture<a href="https://t.co/2ALMo3mH2m">https://t.co/2ALMo3mH2m</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/1937989386328822036?ref_src=twsrc%5Etfw">June 25, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

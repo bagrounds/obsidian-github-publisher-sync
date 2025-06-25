@@ -48,7 +48,7 @@ Research consistently shows that authoritative parenting is associated with a wi
   
 ## 📚 Books  
   
-### 👑 Core Authoritative & Positive Discipline Books:  
+### 👑 Core Authoritative & Positive Discipline Books  
   
 1. 📚 **"Positive Discipline" series by Jane Nelsen Ed.D.:**  
     * 👨‍👩‍👧‍👦 **"Positive Discipline: The Classic Guide to Helping Children Develop Self-Discipline, Responsibility, Cooperation, and Problem-Solving Skills"**: 👍 This is often considered the foundational book for positive discipline. Dr. Nelsen emphasizes kindness and firmness simultaneously, fostering mutual respect and teaching valuable life skills.  
@@ -62,7 +62,7 @@ Research consistently shows that authoritative parenting is associated with a wi
   
 5. **[🚫🎭🧠 No-Drama Discipline: The Whole-Brain Way to Calm the Chaos and Nurture Your Child's Developing Mind](../books/no-drama-discipline.md) by Daniel J. Siegel, M.D., and Tina Payne Bryson, Ph.D.:** 🛠️ A direct application of "The Whole-Brain Child" principles to discipline. It provides actionable strategies for handling misbehavior in a way that's respectful, effective, and brain-wise.  
   
-### ➕ Other Highly Recommended Books that Align with Authoritative Principles:  
+### ➕ Other Highly Recommended Books that Align with Authoritative Principles  
   
 6. **[🤱🏼🤿🪞🌱 Parenting from the Inside Out: How a Deeper Self-Understanding Can Help You Raise Children Who Thrive](../books/parenting-from-the-inside-out-how-a-deeper-self-understanding-can-help-you-raise-children-who-thrive.md) by Daniel J. Siegel, M.D., and Mary Hartzell, M.Ed.:** 🫂 This book explores how a parent's own childhood experiences and emotional history can impact their parenting style. It helps parents develop self-awareness to become more conscious and effective in their interactions with their children. 🌟  
   

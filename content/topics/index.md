@@ -7,7 +7,7 @@ URL: https://bagrounds.org/topics
 backlinks: false
 ---
 [Home](../index.md)  
-# 🌌 Topics (71)  
+# 🌌 Topics (72)  
 - [Adaptive Control](./adaptive-control.md)  
 - [A Hierarchical View of Human Knowledge](./a-hierarchical-view-of-human-knowledge.md)  
 - [A Method For Estimating Work](./a-method-for-estimating-work.md)  
@@ -15,6 +15,7 @@ backlinks: false
 - [Applied Arts](./applied-arts.md)  
 - [Arts](./arts.md)  
 - [🫂💖 Attachment Theory](./attachment-theory.md)  
+- [👨‍👩‍👦🧭🤝 Authoritative Parenting](./authoritative-parenting.md)  
 - [Books Removed From Naval Academy Library](./books-removed-from-naval-academy-library.md)  
 - [Code Testing and Validation](./code-testing-and-validation.md)  
 - [♻️🫀🧠💪 Cognitive Behavioral Therapy](./cognitive-behavioral-therapy.md)  

@@ -63,4 +63,7 @@ affiliate link: https://amzn.to/4egVN5X
 * 🔭 **Zoom** by Istvan Banyai: (A wordless picture book that plays with perspective and challenges the reader's assumptions about what they are seeing, encouraging different ways of thinking). 👀  
   
 ## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
-> Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Big Ideas for Little Philosophers: Imagination with René Descartes. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.
+> Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Big Ideas for Little Philosophers: Imagination with René Descartes. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.  
+  
+## 🐦 Tweet  
+<blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">🤔👶💭 Big Ideas for Little Philosophers: Imagination with René Descartes<br><br>👶 Toddlers | 🌟 Selfhood | 🤗 Empathy | 🍎 Digestible Ideas | 👨‍🏫 Educators<a href="https://t.co/XEI1qVgFis">https://t.co/XEI1qVgFis</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/1937990756066857184?ref_src=twsrc%5Etfw">June 25, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

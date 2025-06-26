@@ -1,15 +1,14 @@
 import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
-import { h } from "preact" // Explicitly import Preact's createElement function
 
 // Define the FixedFooter component
 const FixedFooter: QuartzComponent = ((opts?: {}) => { // Use 'opts' for any future configuration
   const FixedFooterComponent: QuartzComponent = ({ fileData }: QuartzComponentProps) => {
     // Get Amazon link and book title from frontmatter
-    const amazonLink = fileData.frontmatter?.["affiliate link"] as string | undefined
+    const affiliateLink = fileData.frontmatter?.["affiliate link"] as string | undefined // Corrected property name
     const bookTitle = fileData.frontmatter?.title as string | undefined
 
-    // Only render if the 'amazon' link and 'title' are present in frontmatter
-    if (!amazonLink || !bookTitle) {
+    // Only render if the 'affiliate link' and 'title' are present in frontmatter
+    if (!affiliateLink || !bookTitle) {
       return null // Don't render if the required data is missing
     }
 
@@ -18,7 +17,7 @@ const FixedFooter: QuartzComponent = ((opts?: {}) => { // Use 'opts' for any fut
 
     return (
       <div class="fixed-cta-footer"> {/* Use class for HTML attributes in Preact/JSX */}
-        <a href={amazonLink} class="cta-button" target="_blank" rel="noopener noreferrer">
+        <a href={affiliateLink} class="cta-button" target="_blank" rel="noopener noreferrer"> {/* Using corrected link variable */}
           {buttonText}
         </a>
         <p class="affiliate-text">{affiliateDisclosure}</p>
@@ -33,52 +32,46 @@ const FixedFooter: QuartzComponent = ((opts?: {}) => { // Use 'opts' for any fut
       bottom: 0;
       left: 0;
       width: 100%;
-      background-color: var(--background-secondary); /* Use your theme's background color */
+      background-color: var(--background-secondary);
       border-top: 1px solid var(--border);
-      padding: 0.8em 1em;
+      /* Fluid padding: scales between 0.6em and 0.8em vertically, 0.5em and 1em horizontally */
+      /* These 'vw' values are suggestions and might need fine-tuning for your specific design */
+      padding: clamp(0.6em, 2vw, 0.8em) clamp(0.5em, 2vw, 1em);
       display: flex;
       flex-direction: column;
       align-items: center;
       gap: 0.5em;
-      z-index: 1000; /* Ensure it stays above other content */
-      box-shadow: 0 -2px 10px rgba(0,0,0,0.1); /* Subtle shadow */
+      z-index: 1000;
+      box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
     }
 
     .fixed-cta-footer .cta-button {
       display: block;
-      background-color: #FF9900; /* Amazon orange or your primary brand color */
-      color: white;
-      padding: 0.7em 1.5em;
-      border-radius: 8px; /* More rounded corners */
+      background-color: var(--tertiary);
+      color: var(--background);
+      /* Fluid padding for the button itself */
+      padding: clamp(0.6em, 2vw, 0.7em) clamp(1em, 4vw, 1.5em);
+      border-radius: 8px;
       text-decoration: none;
       font-weight: bold;
-      font-size: 1.1em;
+      /* Fluid font-size for the button text */
+      font-size: clamp(1em, 2.5vw, 1.1em);
       text-align: center;
-      transition: background-color 0.2s ease-in-out;
-      width: 100%; /* Make button full width on smaller screens */
-      max-width: 300px; /* Max width for desktop */
+      transition: background-color 0.2s ease-in-out, filter 0.2s ease-in-out;
+      width: 100%; /* Ensures it takes full width on small screens */
+      max-width: 300px; /* Caps its width on larger screens */
     }
 
     .fixed-cta-footer .cta-button:hover {
-      background-color: #e68a00; /* Darker orange on hover */
+      background-color: var(--tertiary);
+      filter: brightness(0.9);
     }
 
     .fixed-cta-footer .affiliate-text {
-      font-size: 0.75em;
+      font-size: 0.75em; /* This small fixed font size is usually fine across devices */
       color: var(--text-muted);
       text-align: center;
       margin: 0;
-    }
-
-    /* Responsive adjustments for mobile */
-    @media (max-width: 768px) {
-      .fixed-cta-footer {
-        padding: 0.6em 0.5em; /* Reduce padding on smaller screens */
-      }
-      .fixed-cta-footer .cta-button {
-        font-size: 1em;
-        padding: 0.6em 1em;
-      }
     }
   `
   return FixedFooterComponent

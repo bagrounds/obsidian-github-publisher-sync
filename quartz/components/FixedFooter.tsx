@@ -17,7 +17,7 @@ const FixedFooter: QuartzComponent = ((opts?: {}) => {
       return null // Don't render if the required data is missing
     }
 
-    const buttonText = `🛒 Get ${remove emojis(bookTitle.replace(/:.*$/, '')).replace(/\s+/g,  ' '.trim()} on Amazon`
+    const buttonText = `🛒 Get ${removeEmojis(bookTitle.replace(/:.*$/, '')).replace(/\s+/g,  ' '.trim()} on Amazon`
     const affiliateDisclosure = "As an Amazon Associate I earn from qualifying purchases."
 
     return (

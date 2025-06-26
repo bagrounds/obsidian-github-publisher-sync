@@ -20,6 +20,10 @@ section {
   color: var(--darkgray);
 }
 
+body {
+  padding-bottom: 15vh;
+}
+
 .text-highlight {
   background-color: var(--textHighlight);
   padding: 0 0.1rem;

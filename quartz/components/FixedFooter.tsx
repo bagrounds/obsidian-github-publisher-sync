@@ -1,5 +1,10 @@
 import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
 
+function removeEmojis(str: string): string {
+  // \p{Emoji_Modifier_Base} and \p{Emoji_Component} are often needed for combined emojis
+  return str.replace(/[\p{Emoji}\p{Emoji_Presentation}\p{Emoji_Modifier}\p{Emoji_Modifier_Base}\p{Emoji_Component}\p{Emoji_Regional_Indicator}]/gu, '');
+}
+
 // Define the FixedFooter component
 const FixedFooter: QuartzComponent = ((opts?: {}) => {
   const FixedFooterComponent: QuartzComponent = ({ fileData }: QuartzComponentProps) => {
@@ -12,7 +17,7 @@ const FixedFooter: QuartzComponent = ((opts?: {}) => {
       return null // Don't render if the required data is missing
     }
 
-    const buttonText = `🛒 Get ${bookTitle.replace(/:.*$/, '')} on Amazon`
+    const buttonText = `🛒 Get ${remove emojis(bookTitle.replace(/:.*$/, '')).replace(/\s+/g,  ' '.trim()} on Amazon`
     const affiliateDisclosure = "As an Amazon Associate I earn from qualifying purchases."
 
     return (

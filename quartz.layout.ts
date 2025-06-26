@@ -1,90 +1,5 @@
 import { PageLayout, SharedLayout } from "./quartz/cfg"
 import * as Component from "./quartz/components"
-import React from "react" // REQUIRED FOR React.createElement CALLS
-
-// Define the Fixed CTA Footer Component as a named constant using React.createElement
-const FixedFooter: QuartzComponent = ((props: QuartzComponentProps) => { // Renamed here
-  const { fileData } = props
-  
-  // Use the 'amazon' frontmatter field directly for the link
-  const amazonLink = fileData.frontmatter?.amazon as string | undefined
-  const bookTitle = fileData.frontmatter?.title as string | undefined
-
-  // Only render if the 'amazon' link and 'title' are present in frontmatter
-  if (!amazonLink || !bookTitle) {
-    return null // Don't render if the required data is missing
-  }
-
-  const buttonText = `🛒 Get "${bookTitle}" on Amazon`
-  const affiliateDisclosure = "As an Amazon Associate I earn from qualifying purchases."
-
-  // Return structure using React.createElement calls (desugared JSX)
-  return React.createElement("div", { className: "fixed-cta-footer" },
-    React.createElement("a", {
-      href: amazonLink,
-      className: "cta-button",
-      target: "_blank",
-      rel: "noopener noreferrer"
-    }, buttonText),
-    React.createElement("p", { className: "affiliate-text" }, affiliateDisclosure)
-  );
-}) satisfies QuartzComponent;
-
-// Assign the CSS to the component's `css` property
-FixedFooter.css = ` /* Renamed here */
-  .fixed-cta-footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background-color: var(--background-secondary); /* Use your theme's background color */
-    border-top: 1px solid var(--border);
-    padding: 0.8em 1em;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.5em;
-    z-index: 1000; /* Ensure it stays above other content */
-    box-shadow: 0 -2px 10px rgba(0,0,0,0.1); /* Subtle shadow */
-  }
-
-  .fixed-cta-footer .cta-button {
-    display: block;
-    background-color: #FF9900; /* Amazon orange or your primary brand color */
-    color: white;
-    padding: 0.7em 1.5em;
-    border-radius: 8px; /* More rounded corners */
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1.1em;
-    text-align: center;
-    transition: background-color 0.2s ease-in-out;
-    width: 100%; /* Make button full width on smaller screens */
-    max-width: 300px; /* Max width for desktop */
-  }
-
-  .fixed-cta-footer .cta-button:hover {
-    background-color: #e68a00; /* Darker orange on hover */
-  }
-
-  .fixed-cta-footer .affiliate-text {
-    font-size: 0.75em;
-    color: var(--text-muted);
-    text-align: center;
-    margin: 0;
-  }
-
-  /* Responsive adjustments for mobile */
-  @media (max-width: 768px) {
-    .fixed-cta-footer {
-      padding: 0.6em 0.5em; /* Reduce padding on smaller screens */
-    }
-    .fixed-cta-footer .cta-button {
-      font-size: 1em;
-      padding: 0.6em 1em;
-    }
-  }
-`;
 
 // components shared across all pages
 export const sharedPageComponents: SharedLayout = {
@@ -129,9 +44,7 @@ export const sharedPageComponents: SharedLayout = {
     }),
   ],
 
-
-FixedFooter,
-
+  Component.FixedFooter(),
 
   footer: Component.Footer({
     links: {

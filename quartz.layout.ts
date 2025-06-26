@@ -42,10 +42,8 @@ export const sharedPageComponents: SharedLayout = {
         inputPosition: 'top',
       }
     }),
+    Component.FixedFooter(),
   ],
-
-  Component.FixedFooter(),
-
   footer: Component.Footer({
     links: {
       GitHub: "https://github.com/bagrounds/obsidian-github-publisher-sync"

@@ -73,4 +73,7 @@ affiliate link: https://amzn.to/3Te4Xq3
 * 🤕 **End Back Pain Forever: A Groundbreaking Approach to Eliminate Your Suffering by Norman Marcus:** Presents an approach that emphasizes treating muscular causes of back pain, often overlooked by conventional medicine.  
   
 ## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
-> Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Back Mechanic. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.
+> Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Back Mechanic. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.  
+  
+## 🐦 Tweet  
+<blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">🔙🛠️ Back Mechanic<br><br>🔬 Evidence-Based | 🤕 Pain Triggers | 🧘 Spine Hygiene | 💪 Core Exercises | 🏋️‍♂️ Lifting Techniques | 🌱 Building Resilience<a href="https://t.co/wjzv6xdQNq">https://t.co/wjzv6xdQNq</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/1938381805205524882?ref_src=twsrc%5Etfw">June 26, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

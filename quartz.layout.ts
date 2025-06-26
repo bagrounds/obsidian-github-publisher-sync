@@ -1,51 +1,7 @@
 import { PageLayout, SharedLayout } from "./quartz/cfg"
 import * as Component from "./quartz/components"
 
-// components shared across all pages
-export const sharedPageComponents: SharedLayout = {
-  head: Component.Head(),
-  header: [],
-  afterBody: [
-    /* Previous implementation based on giscus docs
-    <script src="https://giscus.app/client.js"
-      data-repo="bagrounds/obsidian-github-publisher-sync"
-      data-repo-id="R_kgDOLuWiLA"
-      data-category="Announcements"
-      data-category-id="DIC_kwDOLuWiLM4Ckd0H"
-      data-mapping="pathname"
-      data-strict="1"
-      data-reactions-enabled="1"
-      data-emit-metadata="0"
-      data-input-position="top"
-      data-theme="preferred_color_scheme"
-      data-lang="en"
-      crossorigin="anonymous"
-      async>
-    </script>
-    */
-    Component.Graph(),
-    Component.Backlinks(),
-    Component.Comments({
-      provider: 'giscus',
-      options: {
-        // from data-repo
-        repo: 'bagrounds/obsidian-github-publisher-sync',
-        // from data-repo-id
-        repoId: 'R_kgDOLuWiLA',
-        // from data-category
-        category: 'Announcements',
-        // from data-category-id
-        categoryId: 'DIC_kwDOLuWiLM4Ckd0H',
-        mapping: 'pathname',
-        strict: true,
-        reactionsEnabled: true,
-        inputPosition: 'top',
-      }
-    }),
-  ],
-
-
-((props: QuartzComponentProps) => {
+const FixedFooter = ((props: QuartzComponentProps) => {
   const { fileData } = props
   
   // Use the 'amazon' frontmatter field directly for the link
@@ -127,7 +83,53 @@ export const sharedPageComponents: SharedLayout = {
       </div>
     </>
   )
-}) as QuartzComponent,
+}) as QuartzComponent
+
+// components shared across all pages
+export const sharedPageComponents: SharedLayout = {
+  head: Component.Head(),
+  header: [],
+  afterBody: [
+    /* Previous implementation based on giscus docs
+    <script src="https://giscus.app/client.js"
+      data-repo="bagrounds/obsidian-github-publisher-sync"
+      data-repo-id="R_kgDOLuWiLA"
+      data-category="Announcements"
+      data-category-id="DIC_kwDOLuWiLM4Ckd0H"
+      data-mapping="pathname"
+      data-strict="1"
+      data-reactions-enabled="1"
+      data-emit-metadata="0"
+      data-input-position="top"
+      data-theme="preferred_color_scheme"
+      data-lang="en"
+      crossorigin="anonymous"
+      async>
+    </script>
+    */
+    Component.Graph(),
+    Component.Backlinks(),
+    Component.Comments({
+      provider: 'giscus',
+      options: {
+        // from data-repo
+        repo: 'bagrounds/obsidian-github-publisher-sync',
+        // from data-repo-id
+        repoId: 'R_kgDOLuWiLA',
+        // from data-category
+        category: 'Announcements',
+        // from data-category-id
+        categoryId: 'DIC_kwDOLuWiLM4Ckd0H',
+        mapping: 'pathname',
+        strict: true,
+        reactionsEnabled: true,
+        inputPosition: 'top',
+      }
+    }),
+  ],
+
+
+FixedFooter,
 
 
   footer: Component.Footer({

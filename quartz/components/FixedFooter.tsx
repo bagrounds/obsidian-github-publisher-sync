@@ -23,7 +23,7 @@ const FixedFooter: QuartzComponent = ((opts?: {}) => { // Use 'opts' for any fut
         if (footer) {
           const updatePadding = () => {
             const footerHeight = footer.offsetHeight;
-            document.documentElement.style.setProperty('--fixed-footer-height', \`${footerHeight}px\`);
+            document.documentElement.style.setProperty('--fixed-footer-height', footerHeight + 'px');
           };
 
           // Set padding initially

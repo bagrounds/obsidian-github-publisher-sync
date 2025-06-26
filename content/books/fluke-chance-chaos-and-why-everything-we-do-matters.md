@@ -71,4 +71,7 @@ affiliate link: https://amzn.to/4mFRDYY
 * 🚨 **Contingency Plan** by Lou Allin: A thriller novel whose plot revolves around contingency planning in a dangerous situation, offering a narrative take on the concept.  
   
 ## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
-> Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Fluke: Chance, Chaos, and Why Everything We Do Matters. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.
+> Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Fluke: Chance, Chaos, and Why Everything We Do Matters. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.  
+  
+## 🐦 Tweet  
+<blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">🍀⁉️ Fluke: Chance, Chaos, and Why Everything We Do Matters<br><br>🎲 Randomness | 🦋 Butterfly Effect | 🧠 Cognitive Biases | ⏳ Path Dependency | 🌍 Interconnectedness | 🚀 Embracing Uncertainty<a href="https://t.co/Dy1J9gS1Zu">https://t.co/Dy1J9gS1Zu</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/1938083252990050519?ref_src=twsrc%5Etfw">June 26, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

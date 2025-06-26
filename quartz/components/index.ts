@@ -16,6 +16,7 @@ import Graph from "./Graph"
 import Backlinks from "./Backlinks"
 import Search from "./Search"
 import Footer from "./Footer"
+import FixedFooter from "./FixedFooter"
 import DesktopOnly from "./DesktopOnly"
 import MobileOnly from "./MobileOnly"
 import RecentNotes from "./RecentNotes"
@@ -42,6 +43,7 @@ export {
   Backlinks,
   Search,
   Footer,
+  FixedFooter,
   DesktopOnly,
   MobileOnly,
   RecentNotes,

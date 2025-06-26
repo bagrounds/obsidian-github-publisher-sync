@@ -14,14 +14,36 @@ const FixedFooter: QuartzComponent = ((opts?: {}) => { // Use 'opts' for any fut
 
     const buttonText = `🛒 Get "${bookTitle}" on Amazon`
     const affiliateDisclosure = "As an Amazon Associate I earn from qualifying purchases."
+    // --- Inlined JavaScript Code ---
+    // This script measures the footer's height and sets a CSS variable.
+    // It runs after the DOM is fully loaded and on window resize.
+    const inlineScript = `
+      document.addEventListener('DOMContentLoaded', () => {
+        const footer = document.getElementById('fixed-cta-footer');
+        if (footer) {
+          const updatePadding = () => {
+            const footerHeight = footer.offsetHeight;
+            document.documentElement.style.setProperty('--fixed-footer-height', \`${footerHeight}px\`);
+          };
 
+          // Set padding initially
+          updatePadding();
+
+          // Update padding on window resize (footer height might change due to text wrapping)
+          window.addEventListener('resize', updatePadding);
+        }
+      });
+    `;
     return (
+<>
       <div class="fixed-cta-footer"> {/* Use class for HTML attributes in Preact/JSX */}
         <a href={affiliateLink} class="cta-button" target="_blank" rel="noopener noreferrer"> {/* Using corrected link variable */}
           {buttonText}
         </a>
         <p class="affiliate-text">{affiliateDisclosure}</p>
       </div>
+      <script dangerouslySetInnerHTML={{ __html: inlineScript }} />
+</>
     )
   }
 
@@ -32,7 +54,6 @@ const FixedFooter: QuartzComponent = ((opts?: {}) => { // Use 'opts' for any fut
       bottom: 0;
       left: 0;
       width: 100%;
-      background-color: var(--background-secondary);
       border-top: 1px solid var(--border);
       /* Fluid padding: scales between 0.6em and 0.8em vertically, 0.5em and 1em horizontally */
       /* These 'vw' values are suggestions and might need fine-tuning for your specific design */
@@ -47,8 +68,6 @@ const FixedFooter: QuartzComponent = ((opts?: {}) => { // Use 'opts' for any fut
 
     .fixed-cta-footer .cta-button {
       display: block;
-      background-color: var(--tertiary);
-      color: var(--background);
       /* Fluid padding for the button itself */
       padding: clamp(0.6em, 2vw, 0.7em) clamp(1em, 4vw, 1.5em);
       border-radius: 8px;
@@ -63,13 +82,11 @@ const FixedFooter: QuartzComponent = ((opts?: {}) => { // Use 'opts' for any fut
     }
 
     .fixed-cta-footer .cta-button:hover {
-      background-color: var(--tertiary);
       filter: brightness(0.9);
     }
 
     .fixed-cta-footer .affiliate-text {
       font-size: 0.75em; /* This small fixed font size is usually fine across devices */
-      color: var(--text-muted);
       text-align: center;
       margin: 0;
     }

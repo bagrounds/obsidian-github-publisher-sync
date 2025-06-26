@@ -10,7 +10,8 @@ title: 🏡 Home
 📑 Notes, 💭 thoughts, and 🔗 Links.  
 ❔ What do 🫵 _you_ 🤔 think?  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (222)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (223)  
+- [2025-06-25 | 👶🏼👂🏼 Hear? 🤖💬📚](./reflections/2025-06-25.md)  
 - [2025-06-24 | 🌱 Raising 📖 Readers 📚🌌](./reflections/2025-06-24.md)  
 - [2025-06-23 | 🕯️ Ritual | 💰📉 Short | 👹🇺🇸 Fascism 🤖💬📚📺](./reflections/2025-06-23.md)  
 - [2025-06-22 | 🕯️ Ritual | 🪄 Magic | 🇺🇸💣🇮🇷 War 🤖💬📚📺](./reflections/2025-06-22.md)  
@@ -20,14 +21,13 @@ title: 🏡 Home
 - [2025-06-18 | 👶🏼 Baby 🔬 Science 📺📚](./reflections/2025-06-18.md)  
 - [2025-06-17 | ➡️ Change | 😴 Rest | 🕊️ Freedom 📚](./reflections/2025-06-17.md)  
 - [2025-06-16 | 🗑️ Waste | 🪤 Capture | 👊🏻 Violence | 🥸 Intrigue | 😡 Rage](./reflections/2025-06-16.md)  
-- [2025-06-15 | 👨‍👦🗓️ Father's Day | ⚔️🕊️ Tolstoy | ♟️ Chess 🤖💬📚](./reflections/2025-06-15.md)  
   
   
 ## [📄  Articles](./articles/index.md) (28)  
   
-## [📚 Books](./books/index.md) (468)  
+## [📚 Books](./books/index.md) (469)  
   
-## [🤖💬 Bot Chats](./bot-chats/index.md) (31)  
+## [🤖💬 Bot Chats](./bot-chats/index.md) (32)  
   
 ## [👥 People](./people/index.md) (9)  
   

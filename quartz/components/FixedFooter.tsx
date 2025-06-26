@@ -1,10 +1,10 @@
 import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
 
 // Define the FixedFooter component
-const FixedFooter: QuartzComponent = ((opts?: {}) => { // Use 'opts' for any future configuration
+const FixedFooter: QuartzComponent = ((opts?: {}) => {
   const FixedFooterComponent: QuartzComponent = ({ fileData }: QuartzComponentProps) => {
     // Get Amazon link and book title from frontmatter
-    const affiliateLink = fileData.frontmatter?.["affiliate link"] as string | undefined // Corrected property name
+    const affiliateLink = fileData.frontmatter?.["affiliate link"] as string | undefined
     const bookTitle = fileData.frontmatter?.title as string | undefined
 
     // Only render if the 'affiliate link' and 'title' are present in frontmatter
@@ -23,7 +23,13 @@ const FixedFooter: QuartzComponent = ((opts?: {}) => { // Use 'opts' for any fut
         if (footer) {
           const updatePadding = () => {
             const footerHeight = footer.offsetHeight;
-            document.documentElement.style.setProperty('--fixed-footer-height', footerHeight + 'px');
+
+            // Calculate buffer based on the root font size (e.g., 1.5 times the base font size)
+            // This makes the buffer responsive and less "guessed".
+            const rootFontSize = parseFloat(getComputedStyle(document.documentElement).fontSize);
+            const buffer = rootFontSize * 1.5; // You can adjust the 1.5 multiplier as needed (e.g., 1em, 2em)
+
+            document.documentElement.style.setProperty('--fixed-footer-height', (footerHeight + buffer) + 'px');
           };
 
           // Set padding initially
@@ -36,8 +42,8 @@ const FixedFooter: QuartzComponent = ((opts?: {}) => { // Use 'opts' for any fut
     `;
     return (
 <>
-      <div class="fixed-cta-footer"> {/* Use class for HTML attributes in Preact/JSX */}
-        <a href={affiliateLink} class="cta-button" target="_blank" rel="noopener noreferrer"> {/* Using corrected link variable */}
+      <div id="fixed-cta-footer" class="fixed-cta-footer">
+        <a href={affiliateLink} class="cta-button" target="_blank" rel="noopener noreferrer">
           {buttonText}
         </a>
         <p class="affiliate-text">{affiliateDisclosure}</p>
@@ -54,9 +60,8 @@ const FixedFooter: QuartzComponent = ((opts?: {}) => { // Use 'opts' for any fut
       bottom: 0;
       left: 0;
       width: 100%;
+      background-color: var(--background-secondary);
       border-top: 1px solid var(--border);
-      /* Fluid padding: scales between 0.6em and 0.8em vertically, 0.5em and 1em horizontally */
-      /* These 'vw' values are suggestions and might need fine-tuning for your specific design */
       padding: clamp(0.6em, 2vw, 0.8em) clamp(0.5em, 2vw, 1em);
       display: flex;
       flex-direction: column;
@@ -68,25 +73,30 @@ const FixedFooter: QuartzComponent = ((opts?: {}) => { // Use 'opts' for any fut
 
     .fixed-cta-footer .cta-button {
       display: block;
-      /* Fluid padding for the button itself */
+      background-color: transparent;
+      color: var(--link);
+      border: 1px solid var(--link);
       padding: clamp(0.6em, 2vw, 0.7em) clamp(1em, 4vw, 1.5em);
       border-radius: 8px;
       text-decoration: none;
       font-weight: bold;
-      /* Fluid font-size for the button text */
       font-size: clamp(1em, 2.5vw, 1.1em);
       text-align: center;
-      transition: background-color 0.2s ease-in-out, filter 0.2s ease-in-out;
-      width: 100%; /* Ensures it takes full width on small screens */
-      max-width: 300px; /* Caps its width on larger screens */
+      transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+      width: 100%;
+      max-width: 300px;
     }
 
     .fixed-cta-footer .cta-button:hover {
-      filter: brightness(0.9);
+      background-color: var(--link);
+      color: var(--background-secondary);
+      border-color: var(--link);
+      filter: none;
     }
 
     .fixed-cta-footer .affiliate-text {
-      font-size: 0.75em; /* This small fixed font size is usually fine across devices */
+      font-size: 0.75em;
+      color: var(--text-muted);
       text-align: center;
       margin: 0;
     }
@@ -94,4 +104,4 @@ const FixedFooter: QuartzComponent = ((opts?: {}) => { // Use 'opts' for any fut
   return FixedFooterComponent
 }) satisfies QuartzComponentConstructor
 
-export default FixedFooter // Export default for easier import
+export default FixedFooter

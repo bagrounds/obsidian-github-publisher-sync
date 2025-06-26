@@ -12,7 +12,7 @@ const FixedFooter: QuartzComponent = ((opts?: {}) => {
       return null // Don't render if the required data is missing
     }
 
-    const buttonText = `🛒 Get "${bookTitle}" on Amazon`
+    const buttonText = `🛒 Get ${bookTitle} on Amazon`
     const affiliateDisclosure = "As an Amazon Associate I earn from qualifying purchases."
 
     return (
@@ -34,8 +34,8 @@ const FixedFooter: QuartzComponent = ((opts?: {}) => {
       bottom: 0;
       left: 0;
       width: 100%;
-      background-color: white !important; /* <--- CRITICAL TEST: Changed to white and added !important */
-      border-top: 1px solid var(--border);
+      background-color: var(--light) !important; /* <--- CRITICAL TEST: Changed to white and added !important */
+      border-top: 2px solid var(--gray);
       padding: clamp(0.6em, 2vw, 0.8em) clamp(0.5em, 2vw, 1em);
       display: flex;
       flex-direction: column;
@@ -63,7 +63,7 @@ const FixedFooter: QuartzComponent = ((opts?: {}) => {
 
     .fixed-cta-footer .cta-button:hover {
       background-color: var(--link);
-      color: var(--background-secondary);
+      color: var(--highlight);
       border-color: var(--link);
       filter: none;
     }

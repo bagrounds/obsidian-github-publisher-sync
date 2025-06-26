@@ -35,8 +35,8 @@ const FixedFooter: QuartzComponent = ((opts?: {}) => {
       left: 0;
       width: 100%;
       background-color: var(--light) !important; /* <--- CRITICAL TEST: Changed to white and added !important */
-      border-top: 2px solid var(--gray);
-      padding: clamp(0.6em, 2vw, 0.8em) clamp(0.5em, 2vw, 1em);
+      border-top: 1px solid var(--gray);
+      padding: clamp(0.6em, 1.5vw, 0.8em) clamp(0.5em, 1.5vw, 1em);
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -47,9 +47,8 @@ const FixedFooter: QuartzComponent = ((opts?: {}) => {
 
     .fixed-cta-footer .cta-button {
       display: block;
-      background-color: transparent;
-      color: var(--link);
-      border: 1px solid var(--link);
+      background-color: var(--highlight);
+      border: 1px solid var(--gray);
       padding: clamp(0.6em, 2vw, 0.7em) clamp(1em, 4vw, 1.5em);
       border-radius: 8px;
       text-decoration: none;

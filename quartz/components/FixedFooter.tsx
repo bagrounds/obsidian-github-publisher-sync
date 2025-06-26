@@ -5,7 +5,7 @@ import { h } from "preact" // Explicitly import Preact's createElement function
 const FixedFooter: QuartzComponent = ((opts?: {}) => { // Use 'opts' for any future configuration
   const FixedFooterComponent: QuartzComponent = ({ fileData }: QuartzComponentProps) => {
     // Get Amazon link and book title from frontmatter
-    const amazonLink = fileData.frontmatter?.amazon as string | undefined
+    const amazonLink = fileData.frontmatter?.["affiliate link"] as string | undefined
     const bookTitle = fileData.frontmatter?.title as string | undefined
 
     // Only render if the 'amazon' link and 'title' are present in frontmatter

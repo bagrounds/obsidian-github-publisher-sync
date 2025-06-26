@@ -45,7 +45,7 @@ The book typically includes:
 ### 🤝 Similar Approaches (Focus on Self-Treatment & Exercise)  
   
 * 📚 **Treat Your Own Neck** by Robin McKenzie: Part of the same series, applying the McKenzie Method to neck pain.  
-* 📚 **Back Mechanic** by Dr. Stuart McGill: Provides a detailed self-assessment guide to identify specific back pain triggers and offers targeted exercises based on individual needs. Known for its emphasis on spine-sparing strategies.  
+* **[🔙🛠️ Back Mechanic](./back-mechanic.md)** by Dr. Stuart McGill: Provides a detailed self-assessment guide to identify specific back pain triggers and offers targeted exercises based on individual needs. Known for its emphasis on spine-sparing strategies.  
 * 📚 **The Trigger Point Therapy Workbook: Your Self-Treatment Guide for Pain Relief** by Clair Davies and Amber Davies: Focuses on releasing muscle knots and tension (trigger points) that can contribute to back pain through self-massage techniques.  
 * 📚 **Trigger Point Therapy for Low Back Pain: A Self-Treatment Workbook** by Sharon Sauer and Mary Biancalana: A more specific application of trigger point therapy to lower back pain.  
 * 📚 **Pain Free** by Pete Egoscue: Presents the Egoscue Method, which focuses on corrective exercises and postural alignment to address musculoskeletal imbalances.  

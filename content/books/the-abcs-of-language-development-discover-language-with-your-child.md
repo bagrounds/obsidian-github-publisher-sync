@@ -90,7 +90,7 @@ Parents, caregivers, educators, and even pediatricians can use this book to:
 * 🧐 **Child Language Acquisition: Contrasting Theoretical Approaches by Ben Ambridge and Elena V. M. Lieven:** This academic text reviews the major theoretical debates in child language acquisition, specifically contrasting generativist/nativist and constructivist/empiricist approaches across core domains like phonology, word-learning, and syntax.  
 * 🌐 **An Introduction to Bilingual Development by Annick De Houwer:** A concise book focusing on the language development milestones of bilingual children from birth to preschool and beyond.  
 * 📚 **Bilingual First Language Acquisition by Annick De Houwer:** A more comprehensive textbook delving into the intricacies and research on raising children to speak multiple languages.  
-* 🙋‍♀️ **A Parents' and Teachers' Guide to Bilingualism by Colin Baker:** A classic guide offering questions and answers on various aspects of raising bilingual children.  
+* **[👨‍👩‍👧‍👦🗣️🗣️ A Parents' and Teachers' Guide to Bilingualism](./a-parents-and-teachers-guide-to-bilingualism.md) by Colin Baker:** A classic guide offering questions and answers on various aspects of raising bilingual children.  
 * 🗣️ **The Natural Approach: Language Acquisition in the Classroom by Stephen D. Krashen:** While focused on second language acquisition in a classroom setting, it presents a theoretical approach (the Natural Approach) that contrasts with some traditional methods and has implications for understanding language learning processes more broadly.  
   
 ### 🎨 Creatively Related Books (Connecting Language with Other Areas and Creative Expression)  

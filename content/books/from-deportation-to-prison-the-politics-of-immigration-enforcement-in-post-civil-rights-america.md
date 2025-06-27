@@ -4,9 +4,12 @@ aliases:
   - "🛂⛓️ From Deportation to Prison: The Politics of Immigration Enforcement in Post-Civil Rights America"
 URL: https://bagrounds.org/books/from-deportation-to-prison-the-politics-of-immigration-enforcement-in-post-civil-rights-america
 share: true
+affiliate link: https://amzn.to/40nBWMn
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🛂⛓️ From Deportation to Prison: The Politics of Immigration Enforcement in Post-Civil Rights America  
+[🛒 From Deportation to Prison: The Politics of Immigration Enforcement in Post-Civil Rights America. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/40nBWMn)  
+  
 ## 📚 Book Report: ➡️ From Deportation to Prison: 🏛️ The Politics of Immigration Enforcement in Post-Civil Rights America  
   
 By Patrisia Macías-Rojas  

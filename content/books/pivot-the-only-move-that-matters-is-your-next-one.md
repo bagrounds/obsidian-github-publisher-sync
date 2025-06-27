@@ -4,9 +4,12 @@ aliases:
   - "➡️ Pivot: The Only Move That Matters Is Your Next One"
 URL: https://bagrounds.org/books/pivot-the-only-move-that-matters-is-your-next-one
 share: true
+affiliate link: https://amzn.to/40uJFbA
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ➡️ Pivot: The Only Move That Matters Is Your Next One  
+[🛒 Pivot: The Only Move That Matters Is Your Next One. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/40uJFbA)  
+  
 ## 📚 Book Report: 🔄 Pivot: The Only Move That Matters Is Your Next One by Jenny Blake  
   
 ### 🚀 Introduction  

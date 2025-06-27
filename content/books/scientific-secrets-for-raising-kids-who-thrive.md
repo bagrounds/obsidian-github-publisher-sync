@@ -36,6 +36,10 @@ affiliate link: https://amzn.to/4dISzYB
     - ⛹️‍♀️ Exercise daily  
     - 🎹 Play music  
     - 🙌🏋️‍♀️ Praise effort, not intelligence  
+- 🧮 Number Sense  
+    - 🌱🚀 Early math skill predicts long term success  
+    - [🔢💯 Hundred Board](../topics/hundred-board.md)  
+    - 🧩🃏♟️ Board Games  
   
 ## 📚 Book Report: 🧪 Scientific Secrets for Raising Kids Who Thrive  
   

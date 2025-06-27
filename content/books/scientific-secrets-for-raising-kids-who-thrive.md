@@ -40,7 +40,7 @@ affiliate link: https://amzn.to/4dISzYB
     - 🌱🚀 Early math skill predicts long term success  
     - [🔢💯 Hundred Board](../topics/hundred-board.md)  
     - 🧩🃏♟️ Board Games  
-- 🦜🌎 Bilingualism  
+- 🦜🌎 [🗣️🗣️ Bilingualism](../topics/bilingualism.md)  
     - 📈 improves  
         - 📚 reading comprehension  
         - 🧠 working memory  

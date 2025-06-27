@@ -45,7 +45,7 @@ affiliate link: https://amzn.to/3HJL9bm
 ### 🆚 Contrasting Books (Focus on Color, Detail, or Different Concepts)  
   
 * 🐻 **Brown Bear, Brown Bear, What Do You See?** by Bill Martin Jr. and Eric Carle. 🌈 Uses bright colors and simple, recognizable animals to introduce colors and patterns.  
-* 🐛 **The Very Hungry Caterpillar** by Eric Carle. Features vibrant collage illustrations and a simple narrative, engaging senses through die-cut pages.  
+* **[🐛🍎 The Very Hungry Caterpillar](./the-very-hungry-caterpillar.md)** by Eric Carle. Features vibrant collage illustrations and a simple narrative, engaging senses through die-cut pages.  
 * 🐶 **Where's Spot?** by Eric Hill. A classic lift-the-flap book that encourages interaction and introduces simple prepositions, utilizing color illustrations.  
 * 🐠 **Ocean Friends: Touch & Feel Board Book** (Little Hippo Books version). 🖐️ While also ocean-themed, this version incorporates soft, colorful illustrations and touch-and-feel textures, contrasting with the primary black-and-white focus of *Hello, Ocean Friends*.  
 * 📸 **Any book featuring realistic photographs of animals or objects.** 🖼️ These would contrast with the stylized, high-contrast illustrations.  

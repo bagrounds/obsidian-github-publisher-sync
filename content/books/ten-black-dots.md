@@ -33,7 +33,7 @@ affiliate link: https://amzn.to/4kasfrO
   
 * 🍎 **Feast for 10 by Cathryn Falwell:** A counting book featuring a family shopping for food for a feast, incorporating counting up to ten.  
 * 🔤 **Chicka Chicka Boom Boom by Bill Martin Jr. and John Archambault:** While focused on the alphabet, it shares the rhythmic and repetitive text structure that engages young learners.  
-* 🐛 **The Very Hungry Caterpillar by Eric Carle:** A classic that incorporates counting as the caterpillar eats through various foods, also featuring distinctive illustrations.  
+* **[🐛🍎 The Very Hungry Caterpillar](./the-very-hungry-caterpillar.md) by Eric Carle:** A classic that incorporates counting as the caterpillar eats through various foods, also featuring distinctive illustrations.  
 * 💋 **Counting Kisses by Karen Katz:** A simple counting book centered around a baby and different family members giving kisses.  
 * 🦁 **1, 2, 3 to the Zoo by Eric Carle:** Another counting book by Eric Carle, following animals on their way to the zoo.  
   

@@ -53,4 +53,7 @@ affiliate link: https://amzn.to/4kasfrO
 * 🖌️ **Ish by Peter H. Reynolds:** A story about a boy who learns to embrace his own unique artistic style, encouraging creative freedom similar to how "Ten Black Dots" shows multiple possibilities from simple elements.  
   
 ## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
-> Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Ten Black Dots. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.
+> Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Ten Black Dots. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.  
+  
+## 🐦 Tweet  
+<blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">⚫🔢 Ten Black Dots<br><br>🔢 Counting | 🎨 Illustrations | 👨‍🏫 Teaching | 📚 Book Recommendations | ➕ Math | 💡 Creativity | 👦 Children<a href="https://t.co/s4KHA7KxZ9">https://t.co/s4KHA7KxZ9</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/1938626892778938682?ref_src=twsrc%5Etfw">June 27, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

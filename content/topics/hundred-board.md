@@ -85,4 +85,42 @@ The Hundred Board is a versatile tool used in early math education, particularly
 * 🧑‍🏫 **Teacher Guidance:** While self-correction is valuable, structured activities led by a teacher or trained adult, often with specific learning objectives, tend to yield the most significant improvements.  
 * 🔄 **"Bottom-Up" Hundred Charts:** Some research suggests that a "bottom-up" hundred chart (where 1 is in the bottom-left and numbers ascend upwards) might better align with children's mental models of increasing quantity and movements on a number line, potentially supporting reasoning more effectively, especially for concepts like "adding 10" by moving up.  
   
-🎉 In conclusion, scientific evidence strongly supports the use of hundred boards and similar numerical grid games as effective tools for developing foundational number sense, basic arithmetic skills, and fostering a positive attitude towards mathematics in young children. Their visual, tactile, and interactive nature makes them a valuable component of early math education.
+🎉 In conclusion, scientific evidence strongly supports the use of hundred boards and similar numerical grid games as effective tools for developing foundational number sense, basic arithmetic skills, and fostering a positive attitude towards mathematics in young children. Their visual, tactile, and interactive nature makes them a valuable component of early math education.  
+  
+## 📚 Book Recommendations  
+  
+### 📚 For Educators and Parents Focused on Using the Hundred Board  
+  
+1.  🔢 **"It Makes Sense: Using the Hundreds Chart to Build Number Sense" by Melissa Conklin and Stephanie Sheffield (Grades K-2)**  
+    * 👩‍🏫 This book is highly recommended for teachers. 📊 It transforms the hundreds chart from a static poster into an interactive tool. ✏️ It offers twenty classroom-tested lessons and games to help students understand the base-ten number system and develop strong number sense. ➕ It also includes strategies for differentiation, assessment rubrics, and reproducible resources.  
+  
+2.  💯 **"Hundred Board Book, Grades Pre-K-2" by Sandra Clarkson and Vincent Altamuro**  
+    * 🏢 Published by Didax, this resource focuses on hands-on activities with the hundred board. 🎲 It features 60 games and activities with accompanying teacher notes, designed to help students explore counting, ordering numbers, place value, number patterns, and basic addition and subtraction. ✅ It aligns with Common Core State Standards.  
+  
+3.  ➕ **"Hundred Number Board Activities, Grades K-1," "Grades 2-3," and "Grades 4-5" by Carson Dellosa Education**  
+    * 🏫 These are activity books that offer games and exercises using the hundred number board, suitable for various early elementary grades. 💻 They are often available as ebooks and provide structured activities for learning centers and group work.  
+  
+### 🧮 For Broader Early Childhood Math Education and Number Sense  
+  
+4.  💡 **"Number Sense Routines: Building Numerical Literacy Every Day in Grades K-3" by Jessica F. Shumway**  
+    * ❌ While not solely focused on the hundred board, this book is excellent for understanding how to build strong number sense in young children. 🗓️ It provides practical routines and strategies that can be integrated into daily lessons, many of which can be enhanced by tools like the hundreds chart.  
+  
+5.  🤔 **"What's Math Got to Do with It?: How Teachers and Parents Can Transform Mathematics Learning and Inspire Success" by Jo Boaler**  
+    * 🧠 This book offers a broader perspective on how to foster a positive and effective math learning environment. 🎓 Jo Boaler is a renowned mathematics education professor, and her insights are valuable for understanding how children learn math and how to support them effectively.  
+  
+6.  🍎 **"Preparing Early Childhood Educators to Teach Math" (edited by Herbert P. Ginsburg, Marilou Hyson, and Taniesha A. Woods)**  
+    * 📚 This is a more academic but highly informative resource that delves into the research and best practices for preparing educators to teach early childhood mathematics. 👧 It covers key concepts, child development, and effective pedagogical approaches.  
+  
+### 🎨 Children's Picture Books to Foster Number Sense (Great for Read-Alouds)  
+  
+7.  **[⚫🔢 Ten Black Dots](../books/ten-black-dots.md) by Donald Crews**  
+    * 🔢 A classic for introducing numbers 1-10 and subitizing (instantly recognizing the quantity of a small group of objects).  
+  
+8.  🚪 **"The Doorbell Rang" by Pat Hutchins**  
+    * 🍪 Excellent for exploring concepts of sharing, division, and basic fractions in a relatable context.  
+  
+9.  🦀 **"One is a Snail, Ten is a Crab" by April Pulley Sayre and Jeff Sayre**  
+    * 🐌 A creative book that helps children count by different increments and understand number combinations (e.g., how many legs for various creatures).  
+  
+10. 🌳 **"Anno's Counting Book" by Mitsumasa Anno**  
+    * 🖼️ A beautifully illustrated wordless counting book that encourages observation and numerical understanding.

@@ -341,7 +341,7 @@ Let's think of some topics very different from Philosophy of Value/Existential P
   
 For a book completely dissimilar in topic or perspective from everything we've discussed, how about:  
   
-* *The Very Hungry Caterpillar* by Eric Carle. This beloved children's book offers a simple and colorful narrative about the life cycle of a butterfly. It's a delightful and straightforward story that stands in stark contrast to the complex philosophical inquiries and allegorical tales we've explored. 🐛🦋🍎  
+* [🐛🍎 The Very Hungry Caterpillar](../books/the-very-hungry-caterpillar.md) by Eric Carle. This beloved children's book offers a simple and colorful narrative about the life cycle of a butterfly. It's a delightful and straightforward story that stands in stark contrast to the complex philosophical inquiries and allegorical tales we've explored. 🐛🦋🍎  
   
 That was a thoughtful and winding journey through the world of *Zen and the Art of Motorcycle Maintenance*! Where shall our literary exploration take us next? 🤔📚🗺️  
   

@@ -76,7 +76,7 @@ By proactively adapting to these shifts, focusing on higher-order thinking, and 
   
 ## 📚📚 More Books  
 ### On Career Transitions and Job Searching  
-* ***Pivot: The Only Move That Matters Is Your Next One* by Jenny Blake:** Written by a former Google career development specialist, this book provides a structured approach to making strategic career shifts, emphasizing small experiments and continuous iteration.  
+* **[➡️ Pivot: The Only Move That Matters Is Your Next One](../books/pivot-the-only-move-that-matters-is-your-next-one.md) by Jenny Blake:** Written by a former Google career development specialist, this book provides a structured approach to making strategic career shifts, emphasizing small experiments and continuous iteration.  
 * ***The Squiggly Career: Ditch the Ladder, Discover Opportunity, Design Your Career* by Helen Tupper and Sarah Ellis:** This book champions a non-linear career path, offering tools and exercises to navigate a changing professional landscape and define success on your own terms.  
 * ***Working Identity: Unconventional Strategies for Reinventing Your Career* by Herminia Ibarra:** Based on extensive research, this book challenges the traditional view of career change, suggesting that successful reinvention often comes from experimenting with new identities and actions rather than just deep introspection.  
   

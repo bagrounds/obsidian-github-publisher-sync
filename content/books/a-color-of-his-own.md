@@ -67,7 +67,7 @@ affiliate link: https://amzn.to/4mJOfwg
 ### 🎭 Contrasting Concepts (Fixed vs. Changing, Solitary vs. Group)  
   
 * **🔒 Books with Fixed or Strong Identities:**  
-    * 🐛 *The Very Hungry Caterpillar* by Eric Carle (Focuses on transformation but the caterpillar has a clear, singular identity at each stage).  
+    * [🐛🍎 The Very Hungry Caterpillar](./the-very-hungry-caterpillar.md) by Eric Carle (Focuses on transformation but the caterpillar has a clear, singular identity at each stage).  
     * 🦒 *Giraffes Can't Dance* by Giles Andreae (Gerald the giraffe discovers his unique talent, reinforcing a personal identity).  
     * 🐘 *Elmer* by David McKee (Elmer is a patchwork elephant who learns the value of his own unique appearance).  
   

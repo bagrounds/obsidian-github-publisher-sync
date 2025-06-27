@@ -37,5 +37,5 @@ tags:
 ## 📚 Book Recommendations  
   
 * 📖 - **"The Language Instinct: How the Mind Creates Language" by Steven Pinker:** A classic exploration of how humans acquire and use language.  
-* 📖🗣️ - **"Bilingual: Life and Reality" by François Grosjean:** This book provides a comprehensive overview of bilingualism, covering various aspects such as language acquisition, cognitive effects, and social implications.  
+* 📖🗣️ - **"Bilingual: Life and Reality" by François Grosjean:** This book provides a comprehensive overview of [🗣️🗣️ Bilingualism](../topics/bilingualism.md), covering various aspects such as language acquisition, cognitive effects, and social implications.  
 * 📖👧🗣️ - **"Languages and Children: Making the Match" by Helena Curtain and Carol Ann Dahlberg:** This book focuses on language education for children, covering topics like early language learning, bilingual education, and heritage language maintenance.

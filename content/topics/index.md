@@ -7,7 +7,7 @@ URL: https://bagrounds.org/topics
 backlinks: false
 ---
 [Home](../index.md)  
-# 🌌 Topics (72)  
+# 🌌 Topics (73)  
 - [Adaptive Control](./adaptive-control.md)  
 - [A Hierarchical View of Human Knowledge](./a-hierarchical-view-of-human-knowledge.md)  
 - [A Method For Estimating Work](./a-method-for-estimating-work.md)  
@@ -35,6 +35,7 @@ backlinks: false
 - [Graphic Design](./graphic-design.md)  
 - [Heterodox Economics](./heterodox-economics.md)  
 - [Humanities](./humanities.md)  
+- [🔢💯 Hundred Board](./hundred-board.md)  
 - [iNaturalist](./inaturalist.md)  
 - [Informative Speaking](./informative-speaking.md)  
 - [Job Guarantee / Employer of Last Resort](./job-guarantee-employer-of-last-resort.md)  

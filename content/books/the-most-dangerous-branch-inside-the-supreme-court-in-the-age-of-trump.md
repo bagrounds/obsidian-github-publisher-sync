@@ -4,9 +4,12 @@ aliases:
   - "⚠️🏛️👹🇺🇸 The Most Dangerous Branch: Inside the Supreme Court in the Age of Trump"
 URL: https://bagrounds.org/books/the-most-dangerous-branch-inside-the-supreme-court-in-the-age-of-trump
 share: true
+affiliate link: https://amzn.to/4kaYFSX
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ⚠️🏛️👹🇺🇸 The Most Dangerous Branch: Inside the Supreme Court in the Age of Trump  
+[🛒 The Most Dangerous Branch: Inside the Supreme Court in the Age of Trump. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4kaYFSX)  
+  
 ## 📖 Book Report: ⚖️ The Most Dangerous Branch: 🏛️ Inside the Supreme Court in the Age of Trump  
   
 *The Most Dangerous Branch: Inside the Supreme Court in the Age of Trump* by David A. Kaplan delves into the inner workings of the Supreme Court, arguing that it has become the most powerful 💥 and, at times, overreaching 🚧 branch of the U.S. government. 🗣️ Drawing on interviews with justices and their clerks, Kaplan provides a look 👀 at the personalities and dynamics within the Court during a period of significant change 🔄 and political polarization polarization.  

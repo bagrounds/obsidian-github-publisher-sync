@@ -16,6 +16,7 @@ affiliate link: https://amzn.to/4ln5XnQ
 - 🧟 Unconscious decisions feel conscious  
 - 🪈 To influence your behavior, target your unconscious brain  
 - 🎮 People (including babies) love to influence the world  
+- 🧘 Sit quietly and think about what you're going to do for 20 minutes to beat procrastination  
   
 ## 🧠 Book Report: Outsmart Yourself: Brain-Based Strategies for a Better You  
   

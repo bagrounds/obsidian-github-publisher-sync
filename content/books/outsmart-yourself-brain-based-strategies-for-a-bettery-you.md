@@ -17,6 +17,7 @@ affiliate link: https://amzn.to/4ln5XnQ
 - 🪈 To influence your behavior, target your unconscious brain  
 - 🎮 People (including babies) love to influence the world  
 - 🧘 Sit quietly and think about what you're going to do for 20 minutes to beat procrastination  
+- 📝 To reduce a bad habit: record every time you do it  
   
 ## 🧠 Book Report: Outsmart Yourself: Brain-Based Strategies for a Better You  
   

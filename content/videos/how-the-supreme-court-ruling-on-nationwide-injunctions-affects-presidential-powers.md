@@ -22,7 +22,7 @@ youtube: https://youtu.be/V9IrathROWk
 * 👨‍⚖️ **Other Supreme Court Cases**: The video also briefly mentions four other cases the Supreme Court ruled on, including one upholding a provision of the Affordable Care Act ⚕️, a Texas law on age verification for pornography 🔞 sites, a case on internet/phone 🌐 service for rural/low-income communities 🏘️, and a case involving LGBTQ-themed books 📚 in schools 🏫 \[[01:21](http://www.youtube.com/watch?v=V9IrathROWk&t=81)\].  
 * 🏳️‍🌈 **LGBTQ-Themed Books in Schools**: In a case from Maryland, the court ruled in favor of parents 👨‍👩‍👧‍👦 who argued that LGBTQ-themed books 📚 in schools 🏫 violated their religious beliefs 🙏 \[[08:12](http://www.youtube.com/watch?v=V9IrathROWk&t=492)\]. This ruling has raised concerns 😟 about potential chaos in public education and undermining the idea of a uniform curriculum 🏫 \[[08:50](http://www.youtube.com/watch?v=V9IrathROWk&t=530)\].  
   
-📚 **Book Recommendations**  
+## 📚 Book Recommendations  
 **On the Supreme Court and Judiciary:**  
 * 📚 ***The Nine: Inside the Secret World of the Supreme Court*** by Jeffrey Toobin: Provides an insider's look into the dynamics and decision-making of the Supreme Court 👨‍⚖️.  
 * 📚 ***A People's History of the Supreme Court: The Men and Women Whose Cases and Decisions Have Shaped Our Constitution*** by Peter Irons: Offers a critical perspective on the Court's history and its impact on American society 🏛️.  

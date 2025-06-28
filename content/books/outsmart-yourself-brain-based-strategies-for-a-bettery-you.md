@@ -12,8 +12,10 @@ affiliate link: https://amzn.to/4ln5XnQ
   
 ## 📝🐒 Human Notes  
 - 👂 Language is better understood in the right ear than the left  
-- 🤫 Keep your big goals to yourself  
+- 🤫 Don't broadcast your big goals  
 - 🧟 Unconscious decisions feel conscious  
+- 🪈 To influence your behavior, target your unconscious brain  
+- 🎮 People (including babies) love to influence the world  
   
 ## 🧠 Book Report: Outsmart Yourself: Brain-Based Strategies for a Better You  
   

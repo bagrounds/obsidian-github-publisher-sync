@@ -50,4 +50,7 @@ youtube: https://youtu.be/V9IrathROWk
   
 **On LGBTQ+ Rights and Education Law:**  
 * 📚 ***Out Law: What LGBT Youth Should Know About Their Legal Rights*** by Lisa Keen: Offers an overview of legal issues affecting LGBT youth 🏳️‍🌈, including in educational settings 🏫.  
-* 📚 ***The Gay Revolution: The Story of the Struggle*** by Lillian Faderman: A comprehensive history of the LGBTQ+ rights movement 🏳️‍🌈.
+* 📚 ***The Gay Revolution: The Story of the Struggle*** by Lillian Faderman: A comprehensive history of the LGBTQ+ rights movement 🏳️‍🌈.  
+  
+## 🐦 Tweet  
+<blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">🏛️🚫🛑👑 How the Supreme Court ruling on nationwide injunctions affects presidential powers<br><br>👨‍⚖️ Decisions | 🏛️ Executive | 👶 Birthwrong | ⚕️ Affordable Care Act | 🏳️‍🌈 LGBTQ Wrongs | 🏫 Indoctrination<a href="https://t.co/2ckRD0gA7q">https://t.co/2ckRD0gA7q</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/1938827105808343485?ref_src=twsrc%5Etfw">June 28, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

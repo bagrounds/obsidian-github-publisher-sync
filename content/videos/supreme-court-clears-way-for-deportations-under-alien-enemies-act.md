@@ -35,6 +35,6 @@ tags:
     - 📖 _The Constitution of the United States of America: Analysis and Interpretation_  
   
 - ⚖️ **Supreme Court:**  
-    - 💥 _The Most Dangerous Branch: Inside the Supreme Court in the Age of Trump_ by David A. Kaplan  
+    - [⚠️🏛️👹🇺🇸 The Most Dangerous Branch: Inside the Supreme Court in the Age of Trump](../books/the-most-dangerous-branch-inside-the-supreme-court-in-the-age-of-trump.md) by David A. Kaplan  
     - 😠 _Supreme Inequality: The Supreme Court's Fifty-Year Battle for a More Unjust America_ by Adam Cohen  
-    - 🕵️ _The Nine: Inside the Secret World of the Supreme Court_ by Jeffrey Toobin  
+    - 🕵️ _The Nine: Inside the Secret World of the Supreme Court_ by Jeffrey Toobin

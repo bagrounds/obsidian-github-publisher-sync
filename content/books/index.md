@@ -7,7 +7,7 @@ URL: https://bagrounds.org/books
 backlinks: false
 ---
 [Home](../index.md)  
-# 📚 Books (480)  
+# 📚 Books (483)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)  
 - [🧑‍🤝‍🧑📈 10 to 25: The Science of Motivating Young People: A Groundbreaking Approach to Leading the Next Generation - And Making Your Own Life Easier](./10-to-25-the-science-of-motivating-young-people-a-groundbreaking-approach-to-leading-the-next-generation-and-making-your-own-life-easier.md)  
@@ -81,6 +81,7 @@ backlinks: false
 - [⚙️📈🎯🤖 Control Systems Engineering](./control-systems-engineering.md)  
 - [⛰️⬇️📈 Convex Optimization](./convex-optimization.md)  
 - [💰👑👎🇺🇸 Corruption and Illiberal Politics in the Trump Era](./corruption-and-illiberal-politics-in-the-trump-era.md)  
+- [💪📈 Creatine: A Natural Substance and Its Benefits for Muscle Metabolism, Fitness, Health & Longevity](./creatine-a-natural-substance-and-its-benefits-for-muscle-metabolism-fitness-health-longevity.md)  
 - [👶📊😌 Cribsheet: A Data-Driven Guide to Better, More Relaxed Parenting, from Birth to Preschool](./cribsheet.md)  
 - [🧰💬 Crucial Conversations: Tools for Talking When Stakes Are High](./crucial-conversations-tools-for-talking-when-stakes-are-high.md)  
 - [🤖🗣️🐒⚙️ Cybernetics: or Control and Communication in the Animal and the Machine](./cybernetics.md)  
@@ -129,6 +130,7 @@ backlinks: false
 - [🇺🇸❓📚 ERISA Law Answer Book](./erisa-law-answer-book.md)  
 - [🏛️💻 ERISA: The Law and the Code](./erisa-the-law-and-the-code.md)  
 - [➖💯 Essentialism: The Disciplined Pursuit of Less](./essentialism-the-disciplined-pursuit-of-less.md)  
+- [💪⚕️ Essentials of Creatine in Sports and Health](./essentials-of-creatine-in-sports-and-health.md)  
 - [🌍✍🏿 Everybody Writes: Your Go-To Guide to Creating Ridiculously Good Content](./everybody-writes.md)  
 - [🤝🧘 Everything Is Workable: A Zen Approach to Conflict Resolution](./everything-is-workable.md)  
 - [🧠🧩🚧🧑‍🏫👩‍👧‍👦 Executive Function Dysfunction - Strategies for Educators and Parents](./executive-function-dysfunction.md)  
@@ -211,6 +213,7 @@ Feedback Control of Dynamic Systems]]
 - [🧑🏿‍⚖️🔄 Just Mercy: A Story of Justice and Redemption](./just-mercy-a-story-of-justice-and-redemption.md)  
 - [🧠🔗🤔💡 Knowledge Representation and Reasoning](./knowledge-representation-and-reasoning.md)  
 - [🗣️👶📚 Language, Literacy and Communication in the Early Years: A critical foundation](./language-literacy-and-communication-in-the-early-years-a-critical-foundation.md)  
+- [🇺🇸🏛️🚫📜⚖️ Lawless: How the Supreme Court Runs on Conservative Grievance, Fringe Theories, and Bad Vibes](./lawless-how-the-supreme-court-runs-on-conservative-grievance-fringe-theories-and-bad-vibes.md)  
 - [🧑‍⚖️📚 Law School for Everyone](./law-school-for-everyone.md)  
 - [🙈👁️💡🤔 Learning to See: Value-Stream Mapping to Add Value and Eliminate MUDA](./learning-to-see.md)  
 - [👨‍🏫🎉👍✨ Learn You a Haskell for Great Good!](./learn-you-a-haskell-for-great-good.md)  

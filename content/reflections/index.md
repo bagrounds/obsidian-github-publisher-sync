@@ -7,7 +7,9 @@ URL: https://bagrounds.org/reflections
 backlinks: false
 ---
 [Home](../index.md)  
-# 🪞 Reflections (225)  
+# 🪞 Reflections (227)  
+- [2025-06-29 | 💪 Creatine 🌌📚📺](./2025-06-29.md)  
+- [2025-06-28 | 🇺🇸🏛️ American 🗳️⚖️ Democracy 📚📺](./2025-06-28.md)  
 - [2025-06-27 | 🌱Cultivate | 🧬 Adapt | 🪓 Execute 📚🌌📺📰](./2025-06-27.md)  
 - [2025-06-26 | 🔥🇺🇸 Fire | 🔙 Back | 👶🏼🔢 Baby 📚🌌](./2025-06-26.md)  
 - [2025-06-25 | 👶🏼👂🏼 Hear? 🤖💬📚](./2025-06-25.md)  

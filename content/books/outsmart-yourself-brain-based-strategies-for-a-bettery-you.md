@@ -18,6 +18,7 @@ affiliate link: https://amzn.to/4ln5XnQ
 - 🎮 People (including babies) love to influence the world  
 - 🧘 Sit quietly and think about what you're going to do for 20 minutes to beat procrastination  
 - 📝 To reduce a bad habit: record every time you do it  
+- 🆕 Find a new habit to replace bad habits with. Think about the trigger.  
   
 ## 🧠 Book Report: Outsmart Yourself: Brain-Based Strategies for a Better You  
   

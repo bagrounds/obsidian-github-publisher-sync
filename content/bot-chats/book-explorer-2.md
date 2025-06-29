@@ -99,7 +99,7 @@ Here are some subtopics of Neuroplasticity/Mind-Body Interconnection that are _n
   
 Here are some books that cover similar topics to _Spark_ but from a slightly **different perspective**:  
   
-- **Focusing more on the psychological and motivational aspects of exercise**: _The Joy of Movement: How Exercise Helps You Find Happiness, Hope, Connection, and Courage_ by [Kelly McGonigal](../people/kelly-mcgonigal.md). This book explores the emotional and social benefits of physical activity, complementing the neuroscientific focus of _Spark_. 😊🤝  
+- **Focusing more on the psychological and motivational aspects of exercise**: [🏃😊❤️ The Joy of Movement: How Exercise Helps Us Find Happiness, Hope, Connection, and Courage](../books/the-joy-of-movement-how-exercise-helps-us-find-happiness-hope-connection-and-courage.md) by [Kelly McGonigal](../people/kelly-mcgonigal.md). This book explores the emotional and social benefits of physical activity, complementing the neuroscientific focus of _Spark_. 😊🤝  
   
 - **Examining the evolutionary basis of our need for movement**: _Moved to Learn: The Neuroscience of Body Literacy_ by Carla Hannaford. This book delves into how movement is fundamental to learning and cognitive development from an evolutionary standpoint. 🚶‍♀️👶  
   

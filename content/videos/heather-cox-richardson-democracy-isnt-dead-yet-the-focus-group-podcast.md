@@ -3,7 +3,7 @@ share: true
 aliases:
   - 🏛️⚠️⏳ Democracy Isn’t Dead. Yet. | The Focus Group Podcast
 title: 🏛️⚠️⏳ Democracy Isn’t Dead. Yet. | The Focus Group Podcast
-URL: https://bagrounds.org/videos/
+URL: https://bagrounds.org/videos/heather-cox-richardson-democracy-isnt-dead-yet-the-focus-group-podcast
 Author: 
 Platform: 
 Channel: The Bulwark
@@ -25,4 +25,7 @@ youtube: https://youtu.be/UHK7YTsLt2A
 * [👑🚫📜2️⃣0️⃣ On Tyranny: Twenty Lessons from the Twentieth Century](../books/on-tyranny.md) by Timothy Snyder  
 * [👻🇺🇸⚔️🪽 The Soul of America: The Battle for Our Better Angels](../books/the-soul-of-america-the-battle-for-our-better-angels.md) by Jon Meacham  
 * [🗳️🕊️🇺🇸 Democracy in America](../books/democracy-in-america.md) by Alexis de Tocqueville  
-* [👁️‍🗨️💰⛓️👤 The Age of Surveillance Capitalism: The Fight for a Human Future at the New Frontier of Power](../books/the-age-of-surveillance-capitalism.md) by Shoshana Zuboff
+* [👁️‍🗨️💰⛓️👤 The Age of Surveillance Capitalism: The Fight for a Human Future at the New Frontier of Power](../books/the-age-of-surveillance-capitalism.md) by Shoshana Zuboff  
+  
+## 🐦 Tweet  
+<blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">🏛️⚠️⏳ Democracy Isn’t Dead. Yet. | The Focus Group Podcast<a href="https://twitter.com/BulwarkOnline?ref_src=twsrc%5Etfw">@BulwarkOnline</a><a href="https://twitter.com/HC_Richardson?ref_src=twsrc%5Etfw">@HC_Richardson</a> <br><br>🔪 Political Assassinations | 🗳️ Voter Suppression | 👑 Authoritarianism | 🪧 Protest | 📱 Misinformation | 📜 History | 🤞 Hope<a href="https://t.co/U3hChEzo1L">https://t.co/U3hChEzo1L</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/1939133256781467817?ref_src=twsrc%5Etfw">June 29, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

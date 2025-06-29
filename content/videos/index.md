@@ -7,7 +7,7 @@ URL: https://bagrounds.org/videos
 backlinks: false
 ---
 [Home](../index.md)  
-# 📺 Videos (166)  
+# 📺 Videos (168)  
 - [2025 Yearly Themes](./2025-yearly-themes.md)  
 - [2️⃣⬆️🧠👩‍🚀 Double Your Productivity using this ADHD System (Invented by a Space Systems Engineer)](./double-your-productivity-using-this-adhd-system-invented-by-a-space-systems-engineer.md)  
 - [🪜📈🏢 3 High Leverage Career Skills (From a Principal At Amazon)](./3-high-leverage-career-skills-from-a-principal-at-amazon.md)  
@@ -30,6 +30,7 @@ backlinks: false
 - [📒 Bullet Journal](./bullet-journal.md)  
 - [⏰👵🔬 Circadian Code to Extend Longevity | Satchin Panda | TEDxVeniceBeach](./circadian-code-to-extend-longevity-satchin-panda-tedx-venice-beach.md)  
 - [Co-Sleeping With Infants: Science, Public Policy, and Parents Civil Rights, with James McKenna, PhD](./co-sleeping-with-infants-science-public-policy-and-parents-civil-rights-with-james-mckenna-phd.md)  
+- [🏛️⚠️⏳ Democracy Isn’t Dead. Yet. | The Focus Group Podcast](./heather-cox-richardson-democracy-isnt-dead-yet-the-focus-group-podcast.md)  
 - [☕⛓️‍💥🚄❓ Does drinking coffee break your fast? | Satchin Panda](./does-drinking-coffee-break-your-fast-satchin-panda.md)  
 - [⬇️⬆️🗣️ Don't Get Down Leveled or How to Tell a Good Story (From a Principal at Amazon)](./dont-get-down-leveled-or-how-to-tell-a-good-story-from-a-principal-at-amazon.md)  
 - [Dr. Adam Grant: How to Unlock Your Potential, Motivation & Unique Abilities](./dr-adam-grant-how-to-unlock-your-potential-motivation-and-unique-abilities.md)  
@@ -51,6 +52,7 @@ backlinks: false
 - [How I use LLMs](./how-i-use-llms.md)  
 - [How new job cuts at the nation’s leading health agency affect Americans](./how-new-job-cuts-at-the-nations-leading-health-agency-affect-americans.md)  
 - [How the Elite rigged Society (and why it’s falling apart) | David Brooks](./how-the-elite-rigged-society-and-why-it-s-falling-apart-david-brooks.md)  
+- [🏛️🚫🛑👑 How the Supreme Court ruling on nationwide injunctions affects presidential powers](./how-the-supreme-court-ruling-on-nationwide-injunctions-affects-presidential-powers.md)  
 - [⛽🔥🌪️🌀🌍 How the Trump administration is dismantling climate protections](./how-the-trump-administration-is-dismantling-climate-protections.md)  
 - [How to Become an Expert in ANYTHING - The Dunning Kruger Effect](./how-to-become-an-expert-in-anything-the-dunning-kruger-effect.md)  
 - [👊👹🇺🇸🛡️ How to Fight Fascism in America — with Timothy Snyder | Prof G Conversations](./how-to-fight-fascism-in-america-with-timothy-snyder-prof-g-conversations.md)  

@@ -10,7 +10,9 @@ title: 🏡 Home
 📑 Notes, 💭 thoughts, and 🔗 Links.  
 ❔ What do 🫵 _you_ 🤔 think?  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (225)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (227)  
+- [2025-06-29 | 💪 Creatine 🌌📚📺](./reflections/2025-06-29.md)  
+- [2025-06-28 | 🇺🇸🏛️ American 🗳️⚖️ Democracy 📚📺](./reflections/2025-06-28.md)  
 - [2025-06-27 | 🌱Cultivate | 🧬 Adapt | 🪓 Execute 📚🌌📺📰](./reflections/2025-06-27.md)  
 - [2025-06-26 | 🔥🇺🇸 Fire | 🔙 Back | 👶🏼🔢 Baby 📚🌌](./reflections/2025-06-26.md)  
 - [2025-06-25 | 👶🏼👂🏼 Hear? 🤖💬📚](./reflections/2025-06-25.md)  
@@ -19,13 +21,11 @@ title: 🏡 Home
 - [2025-06-22 | 🕯️ Ritual | 🪄 Magic | 🇺🇸💣🇮🇷 War 🤖💬📚📺](./reflections/2025-06-22.md)  
 - [2025-06-21 | 🐘 To Make Men Free 📚](./reflections/2025-06-21.md)  
 - [2025-06-20 | 👶 Little | 🌍 Big](./reflections/2025-06-20.md)  
-- [2025-06-19 | 🤱🏼🪞 Inside Out 📚](./reflections/2025-06-19.md)  
-- [2025-06-18 | 👶🏼 Baby 🔬 Science 📺📚](./reflections/2025-06-18.md)  
   
   
-## [📄  Articles](./articles/index.md) (28)  
+## [📄  Articles](./articles/index.md) (29)  
   
-## [📚 Books](./books/index.md) (478)  
+## [📚 Books](./books/index.md) (483)  
   
 ## [🤖💬 Bot Chats](./bot-chats/index.md) (32)  
   
@@ -33,9 +33,9 @@ title: 🏡 Home
   
 ## [💾 Software](./software/index.md) (33)  
   
-## [🌌 Topics](./topics/index.md) (74)  
+## [🌌 Topics](./topics/index.md) (75)  
   
-## [📺 Videos](./videos/index.md) (167)  
+## [📺 Videos](./videos/index.md) (169)  
   
 ## 🔗 Profiles  
 - [My resume](./topics/my-resume.md)  

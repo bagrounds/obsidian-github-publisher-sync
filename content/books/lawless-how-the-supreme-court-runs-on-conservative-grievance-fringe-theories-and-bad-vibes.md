@@ -5,9 +5,12 @@ aliases:
 URL: https://bagrounds.org/books/lawless-how-the-supreme-court-runs-on-conservative-grievance-fringe-theories-and-bad-vibes
 share: true
 CTA: Understand the Supreme Court's descent.
+affiliate link: https://amzn.to/45MWIc7
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🇺🇸🏛️🚫📜⚖️ Lawless: How the Supreme Court Runs on Conservative Grievance, Fringe Theories, and Bad Vibes  
+[🛒 Lawless: How the Supreme Court Runs on Conservative Grievance, Fringe Theories, and Bad Vibes. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/45MWIc7)  
+  
 ## 📖 Book Report: Lawless: How the Supreme Court Runs on Conservative Grievance, Fringe Theories, and Bad Vibes  
   
 **✍️ Author:** Leah Litman  

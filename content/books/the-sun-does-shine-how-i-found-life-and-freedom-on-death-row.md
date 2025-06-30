@@ -5,6 +5,7 @@ aliases:
 URL: https://bagrounds.org/books/the-sun-does-shine-how-i-found-life-and-freedom-on-death-row
 share: true
 affiliate link: https://amzn.to/447m8yH
+CTA: Reclaim humanity.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ☀️⛓️🕊️ The Sun Does Shine: How I Found Life and Freedom on Death Row  

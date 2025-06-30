@@ -5,6 +5,7 @@ aliases:
 URL: https://bagrounds.org/books/the-soul-of-america-the-battle-for-our-better-angels
 share: true
 affiliate link: https://amzn.to/4l8KuiK
+CTA: Embrace hope.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 👻🇺🇸⚔️🪽 The Soul of America: The Battle for Our Better Angels  

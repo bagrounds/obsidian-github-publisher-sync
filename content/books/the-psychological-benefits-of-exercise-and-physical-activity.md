@@ -4,9 +4,12 @@ aliases:
   - 🧠🏃 The Psychological Benefits of Exercise and Physical Activity
 URL: https://bagrounds.org/books/the-psychological-benefits-of-exercise-and-physical-activity
 share: true
+affiliate link: https://amzn.to/3Gf0Uaa
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧠🏃 The Psychological Benefits of Exercise and Physical Activity  
+[🛒 The Psychological Benefits of Exercise and Physical Activity. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3Gf0Uaa)  
+  
 ## 📚 Book Report: The Psychological Benefits of Exercise and Physical Activity  
   
 This report focuses on the themes presented in books and research concerning the psychological benefits derived from engaging in 🏃 exercise and physical activity. 🧠 A prominent text exploring this topic is "The Psychological Benefits of Exercise and Physical Activity" by Jennifer L. Etnier, which specifically examines the psychological outcomes influenced by physical activity behaviors. 🧠 Another highly relevant book in this area is "Spark: The Revolutionary New Science of Exercise and the Brain" by John J. Ratey, which delves into the significant impact of physical activity on brain function and mental health.  

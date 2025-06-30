@@ -5,6 +5,7 @@ aliases:
 URL: https://bagrounds.org/books/the-big-short-inside-the-doomsday-machine
 share: true
 affiliate link: https://amzn.to/43WFjMD
+CTA: Uncover Wall Street's deception.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 💰💥📉 The Big Short: Inside the Doomsday Machine  
@@ -45,7 +46,7 @@ Michael Lewis is known for his ability to transform complex, often dry, subjects
 ### ⚖️ Contrasting Books (Different Perspectives, Broader Economic/Social Impact)  
   
 * 🧑🏿 The New Jim Crow: Mass Incarceration in the Age of Colorblindness by Michelle Alexander: While seemingly unrelated, this book offers a contrasting perspective on systemic issues in America, focusing on the impact of the justice system on marginalized communities. 🌐 It highlights how different societal structures can perpetuate inequality, providing a broader social context beyond the financial world.  
-* 🏚️ Evicted: Poverty and Profit in the American City by Matthew Desmond: This book offers a ground-level view of the housing crisis, focusing on the lives of tenants and landlords in Milwaukee. 🧑‍🤝‍🧑 It provides a powerful human counterpoint to the high-finance world depicted in *The Big Short*, showing the devastating social consequences of economic instability.  
+* [🏚️💰 Evicted: Poverty and Profit in the American City](./evicted-poverty-and-profit-in-the-american-city.md) by Matthew Desmond: This book offers a ground-level view of the housing crisis, focusing on the lives of tenants and landlords in Milwaukee. 🧑‍🤝‍🧑 It provides a powerful human counterpoint to the high-finance world depicted in *The Big Short*, showing the devastating social consequences of economic instability.  
 * [💰📈🌍⏳ Capital in the Twenty-First Century](./capital-in-the-twenty-first-century.md) by Thomas Piketty: This extensive economic analysis examines the dynamics of wealth and income inequality over centuries. 📊 It provides a long-term, macro-economic framework for understanding the distribution of wealth that contrasts with *The Big Short*'s focus on a specific market failure.  
 * 👩 Opening Belle by Maureen Sherry: A fictional account offering a perspective on Wall Street from the viewpoint of a woman, contrasting with the male-dominated narratives often found in books about the financial crisis.  
   

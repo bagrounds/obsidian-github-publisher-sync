@@ -48,7 +48,7 @@ youtube: https://youtu.be/4E4fd2ozHlw
   
 **On Civil Rights:**  
   
-* ***The New Jim Crow: Mass Incarceration in the Age of Colorblindness*** by Michelle Alexander: A powerful and influential book arguing that the U.S. criminal justice system acts as a contemporary system of racial control.  
+* **[🧑🏿⛓️🙈 The New Jim Crow: Mass Incarceration in the Age of Colorblindness](../books/the-new-jim-crow-mass-incarceration-in-the-age-of-colorblindness.md)** by Michelle Alexander: A powerful and influential book arguing that the U.S. criminal justice system acts as a contemporary system of racial control.  
 * ***The Autobiography of Malcolm X*** as told to Alex Haley: A seminal work offering a vital perspective on the Civil Rights Movement and Black identity.  
 * ***March*** (Trilogy) by John Lewis, Andrew Aydin, and Nate Powell: A graphic novel series recounting the life of Civil Rights leader John Lewis and key events of the movement.  
 * ***The Color of Law: A Forgotten History of How Our Government Segregated America*** by Richard Rothstein: This book details how government policies at all levels intentionally created residential segregation.  

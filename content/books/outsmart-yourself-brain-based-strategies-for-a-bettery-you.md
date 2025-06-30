@@ -5,6 +5,7 @@ aliases:
 URL: https://bagrounds.org/books/outsmart-yourself-brain-based-strategies-for-a-bettery-you
 share: true
 affiliate link: https://amzn.to/4ln5XnQ
+CTA: Reclaim your brain.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧠📈 Outsmart Yourself: Brain-Based Strategies for a Bettery You  

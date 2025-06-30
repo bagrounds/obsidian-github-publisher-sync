@@ -3,7 +3,7 @@ share: true
 aliases:
   - "🤡💵📺 Trump’s One Big Beautiful Bill: Last Week Tonight with John Oliver (HBO)"
 title: "🤡💵📺 Trump’s One Big Beautiful Bill: Last Week Tonight with John Oliver (HBO)"
-URL: https://bagrounds.org/videos/
+URL: https://bagrounds.org/videos/trumps-one-big-beautiful-bill-last-week-tonight-with-john-oliver-hbo
 Author: 
 Platform: 
 Channel: LastWeekTonight
@@ -46,4 +46,7 @@ youtube: https://youtu.be/vjFL-cBcjKc
     * [💰➡️ The Triumph of Injustice: How the Rich Dodge Taxes and How to Make Them Pay](../books/the-triumph-of-injustice-how-the-rich-dodge-taxes-and-how-to-make-them-pay.md) by Emmanuel Saez and Gabriel Zucman  
 * **📚 For understanding the legislative process and political dynamics**:  
     * *🏛️🤝 Team of Rivals: The Political Genius of Abraham Lincoln* by Doris Kearns Goodwin (while historical, it offers insights into political maneuvering and compromise)  
-    * *👤 The Power Elite* by C. Wright Mills (a classic on power structures in America)
+    * *👤 The Power Elite* by C. Wright Mills (a classic on power structures in America)  
+  
+## 🐦 Tweet  
+<blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">🤡💵📺 Trump’s One Big Beautiful Bill: Last Week Tonight with John Oliver (HBO)<a href="https://twitter.com/iamjohnoliver?ref_src=twsrc%5Etfw">@iamjohnoliver</a><br><br>💰 Billionaire Tax Cuts | 🏥📉 Slashing Healthcare | 🍎📉 Cutting Food Assistance | 🏛️📈 National Debt | 📝 Work Requirements | 🎭 Political Hypocrisy<a href="https://twitter.com/hashtag/VoteNo?src=hash&amp;ref_src=twsrc%5Etfw">#VoteNo</a><a href="https://t.co/wGNhuX8kvq">https://t.co/wGNhuX8kvq</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/1939827313002389517?ref_src=twsrc%5Etfw">June 30, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

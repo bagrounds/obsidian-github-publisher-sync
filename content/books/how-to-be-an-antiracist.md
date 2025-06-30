@@ -7,6 +7,7 @@ URL: https://bagrounds.org/books/how-to-be-an-antiracist
 Author: 
 tags: 
 affiliate link: https://amzn.to/4jsVcPq
+CTA: Confront racism.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ✊🏿 How To Be An Antiracist  

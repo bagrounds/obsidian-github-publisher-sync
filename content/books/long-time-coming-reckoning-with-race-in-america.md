@@ -7,6 +7,7 @@ URL: https://bagrounds.org/books/long-time-coming-reckoning-with-race-in-america
 Author: 
 tags: 
 affiliate link: https://amzn.to/3HkBKa8
+CTA: Embrace uncomfortable truths.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧑🏿⚖️🧑🏻 Long Time Coming: Reckoning With Race In America  
@@ -62,7 +63,7 @@ by Michael Eric Dyson
 ### 📖 Similar Books (Further Reading on Race and Reckoning)  
   
 * ✉️ **"Between the World and Me" by Ta-Nehisi Coates:** Structured as a letter to his son, this book offers a personal and historical exploration of the vulnerability of Black bodies in America.  
-* ⛓️ **"The New Jim Crow: Mass Incarceration in the Age of Colorblindness" by Michelle Alexander:** A seminal work arguing that the U.S. criminal justice system functions as a contemporary system of racial control.  
+* **[🧑🏿⛓️🙈 The New Jim Crow: Mass Incarceration in the Age of Colorblindness](./the-new-jim-crow-mass-incarceration-in-the-age-of-colorblindness.md) by Michelle Alexander:** A seminal work arguing that the U.S. criminal justice system functions as a contemporary system of racial control.  
 * 🗓️ **"Stamped from the Beginning: The Definitive History of Racist Ideas in America" by Ibram X. Kendi:** A comprehensive history tracing the origins and evolution of anti-Black racist ideas and their power throughout American history.  
 * 🏰 **"Caste: The Origins of Our Discontents" by Isabel Wilkerson:** Argues that America's racial hierarchy functions as an entrenched caste system, drawing parallels with caste systems in other countries.  
 * 🎤 **"Tears We Cannot Stop: A Sermon to White America" by Michael Eric Dyson:** An earlier work by Dyson that also directly confronts white America about its role in racial inequality, written with similar passion.  

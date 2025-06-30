@@ -5,6 +5,7 @@ aliases:
 URL: https://bagrounds.org/books/the-joy-of-movement-how-exercise-helps-us-find-happiness-hope-connection-and-courage
 share: true
 affiliate link: https://amzn.to/3I3XBmG
+CTA: Embrace joyful movement.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🏃😊❤️ The Joy of Movement: How Exercise Helps Us Find Happiness, Hope, Connection, and Courage  

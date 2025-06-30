@@ -7,6 +7,7 @@ URL: https://bagrounds.org/books/democracy-in-america
 Author: 
 tags: 
 affiliate link: https://amzn.to/4jsqOVj
+CTA: Understand democracy.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🗳️🕊️🇺🇸 Democracy in America  

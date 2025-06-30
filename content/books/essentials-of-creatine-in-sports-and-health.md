@@ -5,6 +5,7 @@ aliases:
 URL: https://bagrounds.org/books/essentials-of-creatine-in-sports-and-health
 share: true
 affiliate link: https://amzn.to/4nquiuL
+CTA: Fuel your performance.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 💪⚕️ Essentials of Creatine in Sports and Health  

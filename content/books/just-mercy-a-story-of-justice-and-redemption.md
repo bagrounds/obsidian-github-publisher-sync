@@ -5,6 +5,7 @@ aliases:
 URL: https://bagrounds.org/books/just-mercy-a-story-of-justice-and-redemption
 share: true
 affiliate link: https://amzn.to/4l52oDb
+CTA: Demand justice.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧑🏿‍⚖️🔄 Just Mercy: A Story of Justice and Redemption  
@@ -50,7 +51,7 @@ affiliate link: https://amzn.to/4l52oDb
 * ⚖️ ***Just Pursuit: A Black Prosecutor's Fight for Fairness*** by Laura Coates. 👨🏿‍⚖️ Provides a perspective from within the prosecutorial side of the justice system, highlighting its inherent problems, particularly for marginalized defendants.  
 * 🏙️ ***Ghettoside: A True Story of Murder in America*** by Jill Leovy. 🔪 An in-depth look at the high rate of unsolved murders of Black men in Los Angeles and what it reveals about the justice system's failures.  
 * 📖 ***Understanding Mass Incarceration: A People's Guide to the Key Civil Rights Struggle of Our Time*** by James Kilgore. 🏛️ A primer on the structure, goals, and impact of the U.S. criminal justice system.  
-* 🏘️ ***Evicted: Poverty and Profit in the American City*** by Matthew Desmond. 💔 While focused on housing, this book examines the systemic issues of poverty that are closely intertwined with the factors leading to involvement in the criminal justice system.  
+* **[🏚️💰 Evicted: Poverty and Profit in the American City](./evicted-poverty-and-profit-in-the-american-city.md)** by Matthew Desmond. 💔 While focused on housing, this book examines the systemic issues of poverty that are closely intertwined with the factors leading to involvement in the criminal justice system.  
   
 ### ⚔️ Contrasting Books  
   

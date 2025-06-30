@@ -44,8 +44,8 @@ The video discusses President Trump's "big beautiful bill," dubbed the "big budg
   
 **🏦 On Tax Policy and Income Inequality:**  
   
-* 📚 "[Capital in the Twenty First Century](../books/capital-in-the-twenty-first-century.md)" by Thomas Piketty: A comprehensive analysis 🔬 of wealth 💰 and income inequality ⚖️ over centuries 🕰️, offering insights 💡 into the effects of tax policies 📜 on distribution 📊.  
-* 📚 "The Triumph of Injustice: How the Rich Dodge Taxes and How to Make Them Pay" by Emmanuel Saez and Gabriel Zucman: Explores the history 📜 of taxation 🧾 in the U.S. 🇺🇸 and argues for policies 📜 that would make the tax system more progressive 📈.  
+* [💰📈🌍⏳ Capital in the Twenty-First Century](../books/capital-in-the-twenty-first-century.md) by Thomas Piketty: A comprehensive analysis 🔬 of wealth 💰 and income inequality ⚖️ over centuries 🕰️, offering insights 💡 into the effects of tax policies 📜 on distribution 📊.  
+* [💰➡️ The Triumph of Injustice: How the Rich Dodge Taxes and How to Make Them Pay](../books/the-triumph-of-injustice-how-the-rich-dodge-taxes-and-how-to-make-them-pay.md) by Emmanuel Saez and Gabriel Zucman: Explores the history 📜 of taxation 🧾 in the U.S. 🇺🇸 and argues for policies 📜 that would make the tax system more progressive 📈.  
 * 📚 "Taxing the Rich: A History of Fiscal Fairness in the United States and Europe" by David Stasavage: Provides historical context 🕰️ on debates 🗣️ surrounding taxation 🧾 of the wealthy 🤑.  
   
 **🛂 On Immigration and ICE Policies:**  
@@ -58,4 +58,4 @@ The video discusses President Trump's "big beautiful bill," dubbed the "big budg
   
 * 📚 "The Uninhabitable Earth: Life After Warming" by David Wallace-Wells: A stark 💀 look at the potential future impacts 💥 of climate change 🌍🔥, emphasizing the urgency 🚨 of energy policy decisions ⚡.  
 * 📚 "Shorting the Grid: The Hidden Fragility of Our Electric Grid" by Meredith Angwin: Provides insight 💡 into the complexities 🧩 of energy infrastructure 💡 and the implications 🎯 of policy changes 📜 on different energy sources ⚡.  
-* 📚 "Drawdown: The Most Comprehensive Plan Ever Proposed to Reverse Global Warming" edited by Paul Hawken: Presents a collection 📚 of viable solutions ✅ to address climate change 🌍🔥, many of which involve renewable energy technologies ♻️⚡.  
+* 📚 "Drawdown: The Most Comprehensive Plan Ever Proposed to Reverse Global Warming" edited by Paul Hawken: Presents a collection 📚 of viable solutions ✅ to address climate change 🌍🔥, many of which involve renewable energy technologies ♻️⚡.

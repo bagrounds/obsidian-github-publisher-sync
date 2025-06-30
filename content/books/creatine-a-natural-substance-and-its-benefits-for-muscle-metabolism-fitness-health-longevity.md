@@ -4,6 +4,7 @@ aliases:
   - "💪📈 Creatine: A Natural Substance and Its Benefits for Muscle Metabolism, Fitness, Health & Longevity"
 URL: https://bagrounds.org/books/creatine-a-natural-substance-and-its-benefits-for-muscle-metabolism-fitness-health-longevity
 share: true
+CTA: Fuel your potential.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 💪📈 Creatine: A Natural Substance and Its Benefits for Muscle Metabolism, Fitness, Health & Longevity  

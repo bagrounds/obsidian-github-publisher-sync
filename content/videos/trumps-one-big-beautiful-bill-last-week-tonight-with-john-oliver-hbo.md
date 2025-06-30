@@ -35,7 +35,7 @@ youtube: https://youtu.be/vjFL-cBcjKc
   
 ## 📚 Book Recommendations  
 * **📚 For understanding the impact of policy on poverty and social safety nets**:  
-    * *🏠 Evicted: Poverty and Profit in the American City* by Matthew Desmond  
+    * [🏚️💰 Evicted: Poverty and Profit in the American City](../books/evicted-poverty-and-profit-in-the-american-city.md) by Matthew Desmond  
     * *💼 Nickel and Dimed: On (Not) Getting By in America* by Barbara Ehrenreich  
     * *⚖️ The New Jim Crow: Mass Incarceration in the Age of Colorblindness* by Michelle Alexander  
 * **📚 For understanding healthcare policy and its effects**:  

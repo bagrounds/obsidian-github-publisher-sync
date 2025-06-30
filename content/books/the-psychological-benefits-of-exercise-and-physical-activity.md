@@ -5,6 +5,7 @@ aliases:
 URL: https://bagrounds.org/books/the-psychological-benefits-of-exercise-and-physical-activity
 share: true
 affiliate link: https://amzn.to/3Gf0Uaa
+CTA: Move toward well-being.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧠🏃 The Psychological Benefits of Exercise and Physical Activity  

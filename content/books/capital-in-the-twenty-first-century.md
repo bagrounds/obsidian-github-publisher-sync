@@ -7,6 +7,7 @@ URL: https://bagrounds.org/books/capital-in-the-twenty-first-century
 Author: 
 tags: 
 affiliate link: https://amzn.to/3HjBmbV
+CTA: Understand capital.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 💰📈🌍⏳ Capital in the Twenty-First Century  

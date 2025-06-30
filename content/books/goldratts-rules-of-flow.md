@@ -7,6 +7,7 @@ URL: https://bagrounds.org/books/goldratts-rules-of-flow
 Author: 
 tags: 
 affiliate link: https://amzn.to/3Z7Ba5N
+CTA: Optimize flow.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 📏🌊 Goldratt's Rules of Flow  

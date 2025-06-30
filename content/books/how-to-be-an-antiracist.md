@@ -69,7 +69,7 @@ affiliate link: https://amzn.to/4jsVcPq
 * 🏛️ **_Stamped from the Beginning: The Definitive History of Racist Ideas in America_ by Ibram X. Kendi:** Kendi's earlier, National Book Award-winning work provides the deep historical context for the ideas presented in *How to Be an Antiracist*.  
 * 👦 **_Stamped: Racism, Antiracism, and You_ by Jason Reynolds and Ibram X. Kendi:** A young adult adaptation ("remix") of *Stamped from the Beginning*, making the history of racist ideas accessible to younger readers.  
 * 🗣️ **_So You Want to Talk About Race_ by Ijeoma Oluo:** Offers practical advice and clear explanations for navigating conversations about race, privilege, and systemic discrimination.  
-* ⛓️ **_The New Jim Crow: Mass Incarceration in the Age of Colorblindness_ by Michelle Alexander:** Explores how the U.S. criminal justice system functions as a contemporary system of racial control.  
+* **[🧑🏿⛓️🙈 The New Jim Crow: Mass Incarceration in the Age of Colorblindness](./the-new-jim-crow-mass-incarceration-in-the-age-of-colorblindness.md) by Michelle Alexander:** Explores how the U.S. criminal justice system functions as a contemporary system of racial control.  
 * 🛡️ **_White Fragility: Why It's So Hard for White People to Talk About Racism_ by Robin DiAngelo:** Examines the defensive reactions white people often have when challenged racially and how this hinders cross-racial dialogue and progress.  
 * 🧘 **_Me and White Supremacy: Combat Racism, Change the World, and Become a Good Ancestor_ by Layla F. Saad:** A workbook designed to help readers, particularly those who hold white privilege, examine their own complicity in white supremacy.  
   

@@ -45,7 +45,7 @@ CTA: Demand justice.
   
 ### 🤝 Similar Books  
   
-* 📕 ***The New Jim Crow: Mass Incarceration in the Age of Colorblindness*** by Michelle Alexander. ✊🏿 This seminal work argues that the U.S. criminal justice system functions as a contemporary system of racial control, akin to Jim Crow laws.  
+* **[🧑🏿⛓️🙈 The New Jim Crow: Mass Incarceration in the Age of Colorblindness](./the-new-jim-crow-mass-incarceration-in-the-age-of-colorblindness.md)** by Michelle Alexander. ✊🏿 This seminal work argues that the U.S. criminal justice system functions as a contemporary system of racial control, akin to Jim Crow laws.  
 * **[☀️⛓️🕊️ The Sun Does Shine: How I Found Life and Freedom on Death Row](./the-sun-does-shine-how-i-found-life-and-freedom-on-death-row.md)** by Anthony Ray Hinton. 📝 A memoir by one of Bryan Stevenson's clients who was exonerated after decades on death row, offering a first-person account of the injustices faced.  
 * 🔑 ***A Knock at Midnight: A Story of Hope, Justice, and Freedom*** by Brittany K. Barnett. 👩🏾‍⚖️ A memoir by a lawyer fighting for individuals serving disproportionate sentences for drug offenses, often through the Third Strike rule.  
 * ⚖️ ***Just Pursuit: A Black Prosecutor's Fight for Fairness*** by Laura Coates. 👨🏿‍⚖️ Provides a perspective from within the prosecutorial side of the justice system, highlighting its inherent problems, particularly for marginalized defendants.  

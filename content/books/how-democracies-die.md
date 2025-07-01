@@ -74,11 +74,11 @@ The book outlines several steps that citizens, political leaders, and institutio
 ### 📚 Further Reading  
   
 * **Best Alternate Book on the Same Topic:** *It's Even Worse Than You Think: What the Trump Administration Is Doing to America* by David Cay Johnston. 💡  
-* **Best Tangentially Related Book:** *[The Righteous Mind](./the-righteous-mind.md): Why Good People Are Divided by Politics and Religion* by Jonathan Haidt. 🧠  
+* **Best Tangentially Related Book:** [😇🧠 The Righteous Mind: Why Good People Are Divided by Politics and Religion](./the-righteous-mind.md): Why Good People Are Divided by Politics and Religion* by Jonathan Haidt.  
 * **Best Diametrically Opposed Book:** *The Case for Trump* by Victor Davis Hanson (Although, it's not diametrically opposed so much as argues that the measures Trump took were necessary and within appropriate boundaries). 👎  
 * **Best Fiction Book that Incorporates Related Ideas:** *It Can't Happen Here* by Sinclair Lewis. 📖  
-* **Best Book That Is More General:** *[On Tyranny: Twenty Lessons from the Twentieth Century](./on-tyranny.md)* by Timothy Snyder. 🌍  
-* **Best Book That Is More Specific:** *The Federalist Papers* by Alexander Hamilton, James Madison, and John Jay. 📜  
+* **Best Book That Is More General:** [👑🚫📜2️⃣0️⃣ On Tyranny: Twenty Lessons from the Twentieth Century](./on-tyranny.md) by Timothy Snyder.  
+* **Best Book That Is More Specific:** [🇺🇸📜 The Federalist Papers](./the-federalist-papers.md) by Alexander Hamilton, James Madison, and John Jay.  
 * **Best Book That Is More Rigorous:** *The Breakdown of Democratic Regimes* by Juan Linz. 🔬  
 * **Best Book That Is More Accessible:** *Are We Done Fighting?: Building Understanding in a World of Hate and Division* by Kristin Hansen. 🗣️  
   

@@ -10,7 +10,8 @@ title: 🏡 Home
 📑 Notes, 💭 thoughts, and 🔗 Links.  
 ❔ What do 🫵 _you_ 🤔 think?  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (228)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (229)  
+- [2025-07-01](./reflections/2025-07-01.md)  
 - [2025-06-30 | 🇺🇸👹📜💸 Conning US 📺📚](./reflections/2025-06-30.md)  
 - [2025-06-29 | 💪 Creatine | 💃🏼🕺🏽 Movement 🌌📚📺](./reflections/2025-06-29.md)  
 - [2025-06-28 | 🇺🇸🏛️ American 🗳️⚖️ Democracy 📚📺](./reflections/2025-06-28.md)  
@@ -20,7 +21,6 @@ title: 🏡 Home
 - [2025-06-24 | 🌱 Raising 📖 Readers 📚🌌](./reflections/2025-06-24.md)  
 - [2025-06-23 | 🕯️ Ritual | 💰📉 Short | 👹🇺🇸 Fascism 🤖💬📚📺](./reflections/2025-06-23.md)  
 - [2025-06-22 | 🕯️ Ritual | 🪄 Magic | 🇺🇸💣🇮🇷 War 🤖💬📚📺](./reflections/2025-06-22.md)  
-- [2025-06-21 | 🐘 To Make Men Free 📚](./reflections/2025-06-21.md)  
   
   
 ## [📄  Articles](./articles/index.md) (29)  
@@ -28,7 +28,7 @@ title: 🏡 Home
 - [🧑‍💻🤖🤝 How Anthropic Teams Use Claude Code](./articles/how-anthropic-teams-use-claude-code.md)  
   
   
-## [📚 Books](./books/index.md) (488)  
+## [📚 Books](./books/index.md) (489)  
   
 ## [🤖💬 Bot Chats](./bot-chats/index.md) (32)  
   
@@ -38,7 +38,7 @@ title: 🏡 Home
   
 ## [🌌 Topics](./topics/index.md) (75)  
   
-## [📺 Videos](./videos/index.md) (170)  
+## [📺 Videos](./videos/index.md) (171)  
   
 ## 🔗 Profiles  
 - [My resume](./topics/my-resume.md)  

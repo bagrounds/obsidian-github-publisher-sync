@@ -59,7 +59,7 @@ affiliate link: https://amzn.to/45MWIc7
     * 🕵️‍♀️ While not exclusively about the judiciary, Mayer's investigative work reveals the funding networks and ideological infrastructure supporting the conservative legal movement and the appointment of conservative judges, providing important context for understanding the forces behind the Court Litman describes.  
 * 🇺🇸 **These Truths: A History of the United States** by Jill Lepore  
     * 📜 A comprehensive history of the United States, Lepore's book provides a broad historical context for understanding the long-standing debates about the Constitution, the role of the judiciary, and the recurring tensions between different visions of America – issues that form the backdrop of the contemporary Court battles Litman details.  
-* 📜 **The Federalist Papers** by James Madison, Alexander Hamilton, and John Jay  
+* **[🇺🇸📜 The Federalist Papers](./the-federalist-papers.md)** by James Madison, Alexander Hamilton, and John Jay  
     * 🏛️ Reading the arguments of the framers regarding the structure and powers of the U.S. government, including the judiciary, offers essential historical context for evaluating contemporary debates about the Supreme Court's role and the justices' interpretive methodologies.  
 * 🏘️ **Caste: The Origins of Our Discontents** by Isabel Wilkerson  
     * 🌍 Wilkerson's exploration of a rigid social hierarchy in the United States provides a different lens through which to view the concept of entrenched power and the systemic disadvantages faced by certain groups, offering a resonant, albeit not directly legal, parallel to Litman's discussion of a Court potentially protecting a specific minority group's interests.  

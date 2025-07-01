@@ -7,6 +7,7 @@ URL: https://bagrounds.org/books/the-happiest-baby-on-the-block
 Author: 
 tags: 
 affiliate link: https://amzn.to/4kraxBd
+CTA: Soothe your baby.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 👶😊😴 The Happiest Baby on the Block: The New Way to Calm Crying and Help Your Newborn Baby Sleep Longer  

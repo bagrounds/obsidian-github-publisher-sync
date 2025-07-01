@@ -1,12 +1,12 @@
 ---
 share: true
 aliases:
-  - Parenting and Infant Development Guide
-title: Parenting and Infant Development Guide
+  - 🤰🏼👶🍼👨‍👩‍👦 Parenting and Infant Development Guide
+title: 🤰🏼👶🍼👨‍👩‍👦 Parenting and Infant Development Guide
 URL: https://bagrounds.org/bot-chats/parenting-and-infant-development-guide
 ---
 [Home](../index.md) > [Bot Chats](./index.md)  
-# Parenting and Infant Development Guide  
+# 🤰🏼👶🍼👨‍👩‍👦 Parenting and Infant Development Guide  
   
 ## [ChatGPT](https://chat.com) Prompt  
 > I want to be an expert on parenting and infant care and development. Assume I don't know much on the topic. Assemble a report that will serve as an introduction and starting point for further research. Identify expert individuals, institutions, and organizations. List high quality books, videos, articles, and other resources, aiming to present the highest quality material with the most practical insights. Start at a high level by breaking the topics down into sub categories, then apply the same research strategy to each sub-field. Format your response as markdown with inline links starting at H3 heading.  

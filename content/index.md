@@ -24,6 +24,9 @@ title: 🏡 Home
   
   
 ## [📄  Articles](./articles/index.md) (29)  
+- [💪🧠📉💊🔎 Creatine Supplementation in Depression: A Review of Mechanisms, Efficacy, Clinical Outcomes, and Future Directions](./articles/creatine-supplementation-in-depression-a-review-of-mechanisms-efficacy-clinical-outcomes-and-future-directions.md)  
+- [🧑‍💻🤖🤝 How Anthropic Teams Use Claude Code](./articles/how-anthropic-teams-use-claude-code.md)  
+  
   
 ## [📚 Books](./books/index.md) (488)  
   

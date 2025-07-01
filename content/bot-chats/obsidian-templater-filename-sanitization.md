@@ -1,12 +1,12 @@
 ---
 share: true
 aliases:
-  - Obsidian Templater Filename Sanitization
-title: Obsidian Templater Filename Sanitization
+  - ⚙️📝🧹 Obsidian Templater Filename Sanitization
+title: ⚙️📝🧹 Obsidian Templater Filename Sanitization
 URL: https://bagrounds.org/bot-chats/obsidian-templater-filename-sanitization
 ---
 [Home](../index.md) > [Bot Chats](./index.md)  
-# Obsidian Templater Filename Sanitization  
+# ⚙️📝🧹 Obsidian Templater Filename Sanitization  
 ## [Meta.ai](https://www.meta.ai) Prompt  
 > Can you write an obsidian templater script that will sanitize the file name? The result should be kabob-case and only contain lowercase alphanumeric characters and dashes. There should not be dashes at the start or end of the filename.  
   

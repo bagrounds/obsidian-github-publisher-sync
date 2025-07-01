@@ -1,11 +1,11 @@
 ---
 share: true
 aliases:
-  - Special Characters In Logs
-title: Special Characters In Logs
+  - ⁉️🔣🪵 Special Characters In Logs
+title: ⁉️🔣🪵 Special Characters In Logs
 ---
 [Home](../index.md) > [Bot Chats](./index.md)  
-# Special Characters In Logs  
+# ⁉️🔣🪵 Special Characters In Logs  
 ## ChatGPT Prompt  
 > What's with all the special characters in this log message?  
 | 2024-12-14T08:34:24.861Z | plugin:obsidian-mkdocs-publisher:202:74 | log | \["\u001b\[37m2024-12-14 08:34:24.861\u001b\[39m\u001b\[0m\u001b\[0m\t\u001b\[91m\u001b\[1mFATAL\u001b\[22m\u001b\[39m\u001b\[0m\u001b\[0m\t\u001b\[37m\u001b\[39m\u001b\[0m\u001b\[0m\u001b\[1m\u001b\[37m\tEnveloppe\u001b\[39m\u001b\[22m\u001b\[0m\u001b\[0m\t\n\u001b\[97m\u001b\[101m\u001b\[1m ReferenceError \u001b\[22m\u001b\[49m\u001b\[39m\u001b\[0m\u001b\[0m Buffer is not defined\u001b\[0m\u001b\[0m\nerror stack:\n  • \u001b\[33m\u001b\[39m\u001b\[0m\u001b\[0m\t\u001b\[0m\u001b\[0m\n\t\u001b\[37m\u001b\[39m\u001b\[0m\u001b\[0m\n  • \u001b\[33m\u001b\[39m\u001b\[0m\u001b\[0m\t\u001b\[0m\u001b\[0m\n\t\u001b\[37m\u001b\[39m\u001b\[0m\u001b\[0m\n  • \u001b\[33m\u001b\[39m\u001b\[0m\u001b\[0m\t\u001b\[0m\u001b\[0m\n\t\u001b\[37m\u001b\[39m\u001b\[0m\u001b\[0m\n  • \u001b\[33m\u001b\[39m\u001b\[0m\u001b\[0m\t\u001b\[0m\u001b\[0m\n\t\u001b\[37m\u001b\[39m\u001b\[0m\u001b\[0m\n  • \u001b\[33m\u001b\[39m\u001b\[0m\u001b\[0m\t\u001b\[0m\u001b\[0m\n\t\u001b\[37m\u001b\[39m\u001b\[0m\u001b\[0m\n  • \u001b\[33m\u001b\[39m\u001b\[0m\u001b\[0m\t\u001b\[0m\u001b\[0m\n\t\u001b\[37m\u001b\[39m\u001b\[0m\u001b\[0m\u001b\[0m\u001b\[0m"] |  

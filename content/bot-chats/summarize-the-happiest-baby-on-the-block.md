@@ -1,12 +1,12 @@
 ---
 share: true
 aliases:
-  - Summarize The Happiest Baby On The Block
-title: Summarize The Happiest Baby On The Block
+  - 👶😭➡️😊 Summarize The Happiest Baby On The Block
+title: 👶😭➡️😊 Summarize The Happiest Baby On The Block
 URL: https://bagrounds.org/bot-chats/summarize-the-happiest-baby-on-the-block
 ---
-[Home](../index.md) > [Bot Chats](./index.md)  
-# Summarize The Happiest Baby On The Block  
+[Home](../index.md) > [Bot Chats](./index.md) | [👶😊😴 The Happiest Baby on the Block](../books/the-happiest-baby-on-the-block.md)  
+# 👶😭➡️😊 Summarize The Happiest Baby On The Block  
 ## [ChatGPT](https://chat.com) Prompt  
 Summarize the book: The Happiest Baby on the Block.  
 Highlight the most important, useful, and unique ideas discussed.  

@@ -1,12 +1,12 @@
 ---
 share: true
 aliases:
-  - AI Engineering Assistant Technology Recommendations
-title: AI Engineering Assistant Technology Recommendations
+  - 🤖⚙️📈💡 AI Engineering Assistant Technology Recommendations
+title: 🤖⚙️📈💡 AI Engineering Assistant Technology Recommendations
 URL: https://bagrounds.org/bot-chats/ai-engineering-assistant-technology-recommendations
 ---
 [Home](../index.md) > [Bot Chats](./index.md)  
-# AI Engineering Assistant Technology Recommendations  
+# 🤖⚙️📈💡 AI Engineering Assistant Technology Recommendations  
 ## Gemini  
 ### Prompt  
 > Based on the following notes, can you recommend some technologies I should consider starting with?  

@@ -7,7 +7,7 @@ URL: https://bagrounds.org/bot-chats
 backlinks: false
 ---
 [Home](../index.md)  
-# 🤖💬 Bot Chats (31)  
+# 🤖💬 Bot Chats (32)  
 - [AI Engineering Assistant Technology Recommendations](./ai-engineering-assistant-technology-recommendations.md)  
 - [🌸🌬️🤧🔬📚 Allergy Science Books](./allergy-science-books.md)  
 - [Android Local LLMs](./android-local-llms.md)  
@@ -25,6 +25,7 @@ backlinks: false
 - [🏡🍎🌳📚 Home Fruit Tree Books](./fruit-tree-books.md)  
 - [How Much Wood](./how-much-wood.md)  
 - [🥱👎 How To Not Be Tired](./how-to-not-be-tired.md)  
+- [👶👂 Infant Hearing](./infant-hearing.md)  
 - [🧭 Managing 🕸️ Complexity 🧠](./managing-complexity.md)  
 - [🦜👶🏼 Mimicking Babies](./mimicking-babies.md)  
 - [🧘📚🔍 Mindfulness Book Research](./mindfulness-book-research.md)  

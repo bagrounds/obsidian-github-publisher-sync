@@ -1,12 +1,12 @@
 ---
 share: true
 aliases:
-  - Static Site Generation
-title: Static Site Generation
+  - 💾🧱⚡️ Static Site Generation
+title: 💾🧱⚡️ Static Site Generation
 URL: https://bagrounds.org/software/static-site-generation
 ---
-[Home](../index.md) > [Software](./index.md)  
-# Static Site Generation  
+[Home](../index.md) > [Topics](./index.md)  
+# 💾🧱⚡️ Static Site Generation  
   
 ## 🤖 AI Summary  
 ### 👉 What Is It?  

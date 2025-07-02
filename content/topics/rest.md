@@ -1,12 +1,12 @@
 ---
 share: true
 aliases:
-  - REST
-title: REST
+  - 😴🛌🧘 REST
+title: 😴🛌🧘 REST
 URL: https://bagrounds.org/software/rest
 ---
-[Home](../index.md) > [Software](./index.md)  
-# REST  
+[Home](../index.md) > [Topics](./index.md)  
+# 😴🛌🧘 REST  
   
 ## 🤖 AI Summary  
 ### Representational State Transfer (REST) 🌐🔗⚡  
@@ -56,7 +56,7 @@ REST, or Representational State Transfer, is an architectural style for designin
 * Network protocols 💻🌐  
 * HTTP 🌐  
 * Web architecture 🏗️  
-* [Software Engineering](../topics/software-engineering.md) 🛠️  
+* [Software Engineering](./software-engineering.md) 🛠️  
   
 🌲 **Topics:**  
   

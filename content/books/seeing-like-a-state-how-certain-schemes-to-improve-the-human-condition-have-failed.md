@@ -5,6 +5,7 @@ aliases:
   - "📖🏛️📉 Seeing Like a State: How Certain Schemes to Improve the Human Condition Have Failed"
 URL: https://bagrounds.org/books/seeing-like-a-state-how-certain-schemes-to-improve-the-human-condition-have-failed
 affiliate link: https://amzn.to/4dOZbVk
+CTA: Resist simplification.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 📖🏛️📉 Seeing Like a State: How Certain Schemes to Improve the Human Condition Have Failed  
@@ -51,15 +52,13 @@ affiliate link: https://amzn.to/4dOZbVk
   
 ## 📚 Book Recommendations  
   
-Here is a plethora of additional book recommendations, categorized for relevance to *Seeing Like a State*:  
-  
 ### 📖 Similar Reads (Exploring State Power, Planning, Complexity, Unintended Consequences)  
   
 * 👨‍🏫 **Scott, James C. - *Against the Grain: A Deep History of the Earliest States***: 🌾 Explores the origins of agrarian states, arguing they were often fragile and coercive 💪, challenging traditional narratives of progress 🚀. 🏗️ Builds on themes from *Seeing Like a State*.  
 * 🏔️ **Scott, James C. - *The Art of Not Being Governed: An Anarchist History of Upland Southeast Asia***: 🏃‍♂️ Examines how societies have historically evaded state control 👑, complementing the critique of state legibility 👁️.  
-* 🔄 **Polanyi, Karl - *The Great Transformation***: 💸 Analyzes the historical imposition of market economies and the societal counter-movements ✊, echoing Scott's theme of imposed systems disrupting organic social orders.  
+* 🔄 **Polanyi, Karl - [🌍🏛️ The Great Transformation: The Political and Economic Origins of Our Time](./the-great-transformation-the-political-and-economic-origins-of-our-time.md)**: 💸 Analyzes the historical imposition of market economies and the societal counter-movements ✊, echoing Scott's theme of imposed systems disrupting organic social orders.  
 * 🤝 **Ostrom, Elinor - *Governing the Commons***: 🏡 Provides counter-examples where local communities successfully manage resources without state control 👑 or privatization 💸, highlighting the effectiveness of local arrangements (*mētis* 🧠).  
-* 💪 **Taleb, Nassim Nicholas - *Antifragile: Things That Gain from Disorder***: 💥 Explores systems that benefit from shocks and variability, contrasting with the fragility often induced by top-down simplification and control ⚙️.  
+* 💪 **Taleb, Nassim Nicholas - [📉📈🌪️💪 Antifragile: Things That Gain from Disorder](./antifragile-things-that-gain-from-disorder.md)**: 💥 Explores systems that benefit from shocks and variability, contrasting with the fragility often induced by top-down simplification and control ⚙️.  
 * 🌍 **Said, Edward - *Orientalism***: 👁️ Critiques how Western powers constructed simplified, often dehumanizing 💔, views of "The Orient" to justify control 👑, similar to the state's creation of "legible" subjects.  
 * 👨‍🔬 **Mitchell, Timothy - *Rule of Experts: Egypt, Techno-Politics, Modernity***: 🇪🇬 Examines how expert knowledge 🤓 and technical schemes ⚙️ were used to govern Egypt, often with problematic results 👎, resonating with Scott's critique of high modernism 🚀.  
   
@@ -74,11 +73,11 @@ Here is a plethora of additional book recommendations, categorized for relevance
 ### 🎨 Creatively Related (Fiction, Systems Thinking, Urbanism, Specific Histories)  
   
 * 🏘️ **Jacobs, Jane - *The Death and Life of Great American Cities***: 🏙️ A classic critique of modernist urban planning 📐, championing the complex, organic life of city neighborhoods – a practical application of valuing *mētis* 🧠 in urban contexts.  
-* **Orwell, George - *[👁️ Nineteen Eighty-Four](./1984.md)***: 📖 Fictional exploration of an extreme authoritarian state obsessed with control 👑 and legibility (Newspeak 🗣️, surveillance 👁️).  
+* **Orwell, George - [👁️ Nineteen Eighty-Four](./1984.md)**: 📖 Fictional exploration of an extreme authoritarian state obsessed with control 👑 and legibility (Newspeak 🗣️, surveillance 👁️).  
 * 🧪 **Huxley, Aldous - *Brave New World***: 🧬 Dystopian novel depicting a society engineered for stability and happiness 😄 through scientific control ⚙️, touching on themes of high modernism 🚀 and the suppression of messy human realities 💔.  
-* 🕸️ **Mitchell, Melanie - *[Complexity](./complexity.md): A Guided Tour***: 🌐 An accessible introduction to complexity science, providing theoretical background for understanding why the complex systems Scott discusses are difficult to simplify and control ⚙️.  
+* 🕸️ **Mitchell, Melanie - [🌐🧭❓🔍🗺️ Complexity: A Guided Tour](./complexity.md)**: An accessible introduction to complexity science, providing theoretical background for understanding why the complex systems Scott discusses are difficult to simplify and control ⚙️.  
 * 🏜️ **Reisner, Marc - *Cadillac Desert: The American West and Its Disappearing Water***: 💧 Chronicles large-scale water engineering projects in the American West, illustrating the ambition and often unforeseen ecological consequences 💥 of high-modernist schemes applied to nature 🌳.  
-* 🔄 **Meadows, Donella H. - *[Thinking in Systems](./thinking-in-systems.md): A Primer***: ⚙️ Introduces systems thinking, offering tools to understand the interconnectedness and feedback loops that top-down planners often ignore.  
+* 🔄 **Meadows, Donella H. - [🌐🔗🧠📖 Thinking in Systems: A Primer](./thinking-in-systems.md)**: Introduces systems thinking, offering tools to understand the interconnectedness and feedback loops that top-down planners often ignore.  
 * **Graeber, David - [🏛️💰 Debt: The First 5,000 Years](./debt-the-first-5000-years.md)**: 📜 An anthropological history of debt that, like Scott's work, challenges conventional economic 💸 and social 🧑‍🤝‍🧑 narratives and explores diverse human arrangements.  
   
 ## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  

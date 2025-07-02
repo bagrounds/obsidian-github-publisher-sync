@@ -29,16 +29,34 @@ title: 🏡 Home
   
   
 ## [📚 Books](./books/index.md) (490)  
+- [🌍🏛️ The Great Transformation: The Political and Economic Origins of Our Time](./books/the-great-transformation-the-political-and-economic-origins-of-our-time.md)  
+- [🇺🇸📜 The Federalist Papers](./books/the-federalist-papers.md)  
+  
   
 ## [🤖💬 Bot Chats](./bot-chats/index.md) (32)  
+- [👶😭➡️😊 Summarize The Happiest Baby On The Block](./bot-chats/summarize-the-happiest-baby-on-the-block.md)  
+- [⁉️🔣🪵 Special Characters In Logs](./bot-chats/special-characters-in-logs.md)  
+  
   
 ## [👥 People](./people/index.md) (9)  
+- [🧠🔬🧘‍♀️💪📈❤️‍🩹🗣️📚🌟 Kelly McGonigal](./people/kelly-mcgonigal.md)  
+- [🏛️🇺🇸📖 Heather Cox Richardson](./people/heather-cox-richardson.md)  
+  
   
 ## [💾 Software](./software/index.md) (33)  
+- [REST](./software/rest.md)  
+- [🐍🏎️📦 uv](./software/uv.md)  
+  
   
 ## [🌌 Topics](./topics/index.md) (75)  
+- [💪🏋️‍♂️ Creatine](./topics/creatine.md)  
+- [🗣️🗣️ Bilingualism](./topics/bilingualism.md)  
+  
   
 ## [📺 Videos](./videos/index.md) (176)  
+- [🏛️👹👑📜 Politics Chat, July 1, 2025](./videos/politics-chat-july-1-2025.md)  
+- [🇺🇸🚫➡️🇺🇦⚔️🇷🇺 U.S. withholds weapons promised to Ukraine as Russian forces gain more territory](./videos/us-withholds-weapons-promised-to-ukraine-as-russian-forces-gain-more-territory.md)  
+  
   
 ## 🔗 Profiles  
 - [My resume](./topics/my-resume.md)  

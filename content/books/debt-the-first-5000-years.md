@@ -5,6 +5,7 @@ aliases:
   - "🏛️💰 Debt: The First 5,000 Years"
 URL: https://bagrounds.org/books/debt-the-first-5-000-years
 affiliate link: https://amzn.to/3SwYlTh
+CTA: Understand debt.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🏛️💰 Debt: The First 5,000 Years  
@@ -44,9 +45,9 @@ affiliate link: https://amzn.to/3SwYlTh
 ## ✅ Recommendations  
   
 ### 📚 Similar Deep Dives into Economic/Social History  
-* ***The Great Transformation*** **by Karl Polanyi:** A classic work arguing that market economies are historically recent and required state intervention to emerge, dis-embedding the economy from society. Explores the devastating social consequences.  
+* **[🌍🏛️ The Great Transformation: The Political and Economic Origins of Our Time](./the-great-transformation-the-political-and-economic-origins-of-our-time.md)** **by Karl Polanyi:** A classic work arguing that market economies are historically recent and required state intervention to emerge, dis-embedding the economy from society. Explores the devastating social consequences.  
 * ***The Dawn of Everything: A New History of Humanity*** **by David Graeber and David Wengrow:** Graeber's final major work, co-authored with archaeologist Wengrow. Challenges linear narratives of social evolution, arguing human societies have experimented with diverse political and social forms for millennia.  
-* ***[📖🏛️📉 Seeing Like a State: How Certain Schemes to Improve the Human Condition Have Failed](./seeing-like-a-state-how-certain-schemes-to-improve-the-human-condition-have-failed.md)*** **by James C. Scott:** Examines why large-scale state projects often fail, focusing on the imposition of simplified, legible systems onto complex local realities—a theme resonant with Graeber's critique of state-imposed economic systems.  
+* **[📖🏛️📉 Seeing Like a State: How Certain Schemes to Improve the Human Condition Have Failed](./seeing-like-a-state-how-certain-schemes-to-improve-the-human-condition-have-failed.md)** **by James C. Scott:** Examines why large-scale state projects often fail, focusing on the imposition of simplified, legible systems onto complex local realities—a theme resonant with Graeber's critique of state-imposed economic systems.  
 * ***Money Changes Everything: How Finance Made Civilization Possible*** **by William N. Goetzmann:** Offers a different long-term history of finance, emphasizing its constructive role in civilization's development, potentially contrasting with Graeber's focus on debt's coercive aspects.  
 * ***The Gift*** **by Marcel Mauss:** Foundational anthropological text exploring gift exchange economies and the social obligations they create, a key influence on Graeber's concept of "human economies."  
   
@@ -57,7 +58,7 @@ affiliate link: https://amzn.to/3SwYlTh
 * ***Why Nations Fail: The Origins of Power, Prosperity, and Poverty*** **by Daron Acemoglu and James A. Robinson:** Argues that inclusive political and economic institutions are key to prosperity, offering an institution-focused alternative to Graeber's anthropological lens, though potentially sharing some critiques of extractive systems.  
   
 ### 🤔 Exploring Related Themes (Power, Morality, Social Structures)  
-* ***[Capital in the Twenty First Century](./capital-in-the-twenty-first-century.md)*** **by Thomas Piketty:** A landmark empirical study of wealth and income inequality over centuries, complementing Graeber's historical narrative with quantitative data on economic concentration.  
+* **[💰📈🌍⏳ Capital in the Twenty-First Century](./capital-in-the-twenty-first-century.md)** **by Thomas Piketty:** A landmark empirical study of wealth and income inequality over centuries, complementing Graeber's historical narrative with quantitative data on economic concentration.  
 * ***Bullshit Jobs: A Theory*** **by David Graeber:** Explores the proliferation of meaningless employment in modern economies, extending his critique of contemporary capitalism's logic.  
 * ***Discipline and Punish: The Birth of the Prison*** **by Michel Foucault:** While not about economics directly, Foucault's analysis of power, surveillance, and social control resonates with Graeber's arguments about how debt and state power discipline populations.  
 * ***Against the Grain: A Deep History of the Earliest States*** **by James C. Scott:** Argues that early states were often coercive and fragile entities built on controlling grain production and populations, aligning with Graeber's themes of state violence and extraction.  

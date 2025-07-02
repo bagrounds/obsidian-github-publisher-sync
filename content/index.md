@@ -43,19 +43,19 @@ title: 🏡 Home
 - [🏛️🇺🇸📖 Heather Cox Richardson](./people/heather-cox-richardson.md)  
   
   
-## [💾 Software](./software/index.md) (33)  
-- [REST](./software/rest.md)  
+## [💾 Software](./software/index.md) (29)  
+- [💎🔬🔍📈 Quartz](./software/quartz.md)  
 - [🐍🏎️📦 uv](./software/uv.md)  
   
   
-## [🌌 Topics](./topics/index.md) (75)  
-- [💪🏋️‍♂️ Creatine](./topics/creatine.md)  
-- [🗣️🗣️ Bilingualism](./topics/bilingualism.md)  
+## [🌌 Topics](./topics/index.md) (79)  
+- [😴🛌🧘 REST](./topics/rest.md)  
+- [💾🧱⚡️ Static Site Generation](./topics/static-site-generation.md)  
   
   
 ## [📺 Videos](./videos/index.md) (176)  
+- [Anthropic MCP + Ollama. No Claude Needed? Check it out!](./videos/anthropic-mcp-ollama-no-claude-needed-check-it-out.md)  
 - [🏛️👹👑📜 Politics Chat, July 1, 2025](./videos/politics-chat-july-1-2025.md)  
-- [🇺🇸🚫➡️🇺🇦⚔️🇷🇺 U.S. withholds weapons promised to Ukraine as Russian forces gain more territory](./videos/us-withholds-weapons-promised-to-ukraine-as-russian-forces-gain-more-territory.md)  
   
   
 ## 🔗 Profiles  

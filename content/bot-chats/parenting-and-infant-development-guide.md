@@ -85,7 +85,7 @@ Understanding the rapid changes during infancy is crucial. This section explores
     
 - **Key Resources:**    
   - **Books:**    
-    - *Brain Rules for Baby* by John Medina discusses how early brain development impacts later learning.    
+    - [👶🧠😊📈📚 Brain Rules for Baby: How to Raise a Smart and Happy Child from Zero to Five](../books/brain-rules-for-baby.md) by John Medina discusses how early brain development impacts later learning.    
     - *Caring for Your Baby and Young Child* (by the [American Academy of Pediatrics](https://www.aap.org/)) offers evidence-based guidelines.  
   - **Organizations:**    
     - [Zero to Three](https://www.zerotothree.org/) focuses specifically on early development research and practical advice.    

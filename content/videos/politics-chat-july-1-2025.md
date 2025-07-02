@@ -31,7 +31,7 @@ youtube: https://www.youtube.com/live/_bV222ElZMk
 ### 💰 On U.S. Federal Budget, Economic Policy, and Social Programs  
 * 📊 **"The Federal Budget: Politics, Policy, Process" by Allen Schick:** A comprehensive guide to the federal budget, explaining its political context, policy implications, and the processes involved.  
 * 👨‍👩‍👧‍👦 **"A People's Guide to the Federal Budget" by National Priorities Project:** A more accessible guide designed to help the general public understand the federal budget and its impact.  
-* 🌍 **"The Great Transformation: The Political and Economic Origins of Our Time" by Karl Polanyi:** While not solely about the U.S., this classic work explores the relationship between economic systems and social structures, offering a broader context for understanding the impact of economic policies.  
+* **[🌍🏛️ The Great Transformation: The Political and Economic Origins of Our Time](../books/the-great-transformation-the-political-and-economic-origins-of-our-time.md) by Karl Polanyi:** While not solely about the U.S., this classic work explores the relationship between economic systems and social structures, offering a broader context for understanding the impact of economic policies.  
   
 ### 🌎 On U.S. Immigration History and Policy  
 * 🚧 **"Impossible Subjects: Illegal Aliens and the Making of Modern America" by Mae M. Ngai:** Explores how the concept of "illegality" in immigration was constructed and its impact on American society.  

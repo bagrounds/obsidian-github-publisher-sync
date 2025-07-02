@@ -12,7 +12,7 @@ youtube: https://www.youtube.com/live/_bV222ElZMk
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 🏛️👹👑📜 Politics Chat, July 1, 2025  
-![Politics Chat, July 1, 2025](https://www.youtube.com/live/_bV222ElZMk)  
+![Politics Chat, July 1, 2025](http://www.youtube.com/watch?v=_bV222ElZMk)  
   
 ## 🤖 AI Summary  
 * ⚖️ **Presidential Immunity and its Consequences** \[[02:20](http://www.youtube.com/watch?v=_bV222ElZMk&t=140)\]: The 👨‍⚖️ *Donald J. Trump v. United States* Supreme Court case established that the 🇺🇸 President of the United States has absolute immunity for crimes committed as part of official acts. This ruling ⏳ allowed for delays in Trump's federal criminal cases, preventing them from going to trial before the 2024 election \[[04:31](http://www.youtube.com/watch?v=_bV222ElZMk&t=271)\].  
@@ -37,4 +37,6 @@ youtube: https://www.youtube.com/live/_bV222ElZMk
 * 🚧 **"Impossible Subjects: Illegal Aliens and the Making of Modern America" by Mae M. Ngai:** Explores how the concept of "illegality" in immigration was constructed and its impact on American society.  
 * 🇺🇸 **"One Mighty and Irresistible Tide: The Epic Struggle Over American Immigration, 1924-1965" by Jia Lynn Yang:** A sweeping history of the battles to reform American immigration laws in the 20th century.  
 * 💔 **"Separated: Inside an American Tragedy" by Jacob Soboroff:** A deeply reported account of the family separation crisis at the U.S.-Mexico border.  
-* 🗺️ **"Everyone Who Is Gone Is Here: The United States, Central America, and the Roots of Our Migration Crisis" by Jonathan Blitzer:** Examines the historical roots of the current migration crisis from Central America to the U.S.
+* 🗺️ **"Everyone Who Is Gone Is Here: The United States, Central America, and the Roots of Our Migration Crisis" by Jonathan Blitzer:** Examines the historical roots of the current migration crisis from Central America to the U.S.  
+  
+## 🐦 Tweet  

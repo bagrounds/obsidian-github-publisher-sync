@@ -7,6 +7,7 @@ URL: https://bagrounds.org/books/brain-rules-for-baby
 Author: 
 tags: 
 affiliate link: https://amzn.to/4km3BoW
+CTA: Nurture brilliance.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 👶🧠😊📈📚 Brain Rules for Baby: How to Raise a Smart and Happy Child from Zero to Five  

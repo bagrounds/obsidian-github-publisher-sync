@@ -5,6 +5,7 @@ aliases:
 URL: https://bagrounds.org/books/the-users-guide-to-the-brain-perception-attention-and-the-four-theaters-of-the-mind
 share: true
 affiliate link: https://amzn.to/44ZdPaa
+CTA: Understand your brain.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧠📖 A User's Guide to the Brain: Perception, Attention, and the Four Theaters of the Brain  
@@ -47,11 +48,11 @@ affiliate link: https://amzn.to/44ZdPaa
   
 ## 📚 Book Recommendations  
 ### 🤓 Similar Reads (Accessible Popular Neuroscience)  
-* 🏃 **[Spark: The Revolutionary New Science of Exercise and the Brain](./spark-the-revolutionary-new-science-of-exercise-and-the-brain.md)** by John J. Ratey & Eric Hagerman: Ratey's other well-known work focusing specifically on the profound effects of physical activity on brain health, mood, and cognition.  
-* 🧠 **[The Brain That Changes Itself](./the-brain-that-changes-itself.md): Stories of Personal Triumph from the Frontiers of Brain Science** by Norman Doidge: Explores neuroplasticity through compelling case studies.  
-* 🕵️ **[Incognito: The Secret Lives of the Brain](./incognito.md)** by David Eagleman: Delves into the unconscious processes that drive much of our behavior, written in an engaging style.  
-* 🤔 **[Thinking, Fast and Slow](./thinking-fast-and-slow.md)** by Daniel Kahneman: While more focused on cognitive biases and behavioral economics, it deeply explores the two systems of thought processes rooted in brain function.  
-* 📝 **Brain Rules: 12 Principles for Surviving and Thriving at Work, Home, and School** by John Medina: Offers practical, science-backed rules for leveraging how our brains actually work.  
+* **[⚡🧠🏃 Spark: The Revolutionary New Science of Exercise and the Brain](./spark-the-revolutionary-new-science-of-exercise-and-the-brain.md)** by John J. Ratey & Eric Hagerman: Ratey's other well-known work focusing specifically on the profound effects of physical activity on brain health, mood, and cognition.  
+* **[🧠🔄🏆 The Brain That Changes Itself: Stories of Personal Triumph from the Frontiers of Brain Science](./the-brain-that-changes-itself.md)** by Norman Doidge: Explores neuroplasticity through compelling case studies.  
+* **[🎭🤫🧠 Incognito: The Secret Lives of the Brain](./incognito.md)** by David Eagleman: Delves into the unconscious processes that drive much of our behavior, written in an engaging style.  
+* **[🤔🐇🐢 Thinking, Fast and Slow](./thinking-fast-and-slow.md)** by Daniel Kahneman: While more focused on cognitive biases and behavioral economics, it deeply explores the two systems of thought processes rooted in brain function.  
+* **[🧠💡📈🏠🏢🧑‍🎓 Brain Rules: 12 Principles for Surviving and Thriving at Work, Home, and School](./brain-rules-12-principles-for-surviving-and-thriving-at-work-home-and-school.md)** by John Medina: Offers practical, science-backed rules for leveraging how our brains actually work.  
   
 ### 🧐 Contrasting Perspectives (Deeper Dives, Critiques, or Different Angles)  
 * 👻 **Phantoms in the Brain: Probing the Mysteries of the Human Mind** by V.S. Ramachandran & Sandra Blakeslee: Focuses on fascinating neurological case studies that reveal surprising truths about brain organization and consciousness.  
@@ -61,8 +62,8 @@ affiliate link: https://amzn.to/44ZdPaa
 * 🧠 **Brain-Mind: From Neurons to Consciousness and Creativity** by Paul Thagard: A more academic attempt to provide a unified, brain-based theory of cognition, emotion, and consciousness, integrating neural and symbolic ideas.  
   
 ### ✨ Creatively Related (Broader Themes, Applications, Philosophy)  
-* 🎶 **[Gödel, Escher, Bach: An Eternal Golden Braid](./godel-escher-bach.md)** by Douglas Hofstadter: A complex, Pulitzer Prize-winning exploration of consciousness, self-reference, and intelligence through math, music, and art.  
-* 🌊 **[Flow: The Psychology of Optimal Experience](./flow-the-psychology-of-optimal-experience.md)** by Mihaly Csikszentmihalyi: Explores the state of complete absorption ("flow") and its psychological underpinnings, related to attention and engagement.  
+* **[♾️📐🎶🥨 Gödel, Escher, Bach: An Eternal Golden Braid](./godel-escher-bach.md)** by Douglas Hofstadter: A complex, Pulitzer Prize-winning exploration of consciousness, self-reference, and intelligence through math, music, and art.  
+* **[🌊🧘🧠📈 Flow: The Psychology of Optimal Experience](./flow-the-psychology-of-optimal-experience.md)** by Mihaly Csikszentmihalyi: Explores the state of complete absorption ("flow") and its psychological underpinnings, related to attention and engagement.  
 * 🎩 **The Man Who Mistook His Wife for a Hat and Other Clinical Tales** by Oliver Sacks: Poetic and humane accounts of individuals navigating bizarre neurological conditions, highlighting the fragility and wonder of the mind.  
 * **[👤🧠 Being You: A New Science of Consciousness](./being-you-a-new-science-of-consciousness.md)** by Anil Seth: A contemporary look at consciousness, arguing that our experience of the world is a form of "controlled hallucination" generated by the brain.  
 * **[🧠🍄 How to Change Your Mind: What the New Science of Psychedelics Teaches Us About Consciousness, Dying, Addiction, Depression, and Transcendence](./how-to-change-your-mind-what-the-new-science-of-psychedelics-teaches-us-about-consciousness-dying-addiction-depression-and-transcendence.md)** by Michael Pollan: Explores consciousness and the brain through the lens of psychedelic research.  

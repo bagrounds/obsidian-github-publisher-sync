@@ -6,8 +6,9 @@ aliases:
 backlinks: false
 ---
 [Home](../index.md)  
-# 👥 People (8)  
+# 👥 People (9)  
 - [Andrej Karpathy](./andrej-karpathy.md)  
+- [🏛️🇺🇸📖 Heather Cox Richardson](./heather-cox-richardson.md)  
 - [Jay Kreps](./jay-kreps.md)  
 - [🧠🔬🧘‍♀️💪📈❤️‍🩹🗣️📚🌟 Kelly McGonigal](./kelly-mcgonigal.md)  
 - [Nicholas Dodman](./nicholas-dodman.md)  

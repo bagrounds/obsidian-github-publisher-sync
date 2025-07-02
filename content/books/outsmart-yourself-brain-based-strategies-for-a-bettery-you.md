@@ -20,6 +20,11 @@ CTA: Reclaim your brain.
 - 🧘 Sit quietly and think about what you're going to do for 20 minutes to beat procrastination  
 - 📝 To reduce a bad habit: record every time you do it  
 - 🆕 Find a new habit to replace bad habits with. Think about the trigger.  
+- 🧐 Monotask  
+- 🔮 Imagine your future self  
+- 🏋🏼‍♀️ Practice  
+- 🧘🏼‍♀️ Meditate  
+- 😴 Sleep  
   
 ## 🧠 Book Report: Outsmart Yourself: Brain-Based Strategies for a Better You  
   
@@ -49,7 +54,7 @@ The core of "Outsmart Yourself" lies in bridging the gap 🌉 between understand
 * **[🔄🧠💪 The Power of Habit: Why We Do What We Do in Life and Business](./the-power-of-habit.md) by Charles Duhigg:** Explores the science behind why habits exist and how they can be changed 🔄, looking at habits in individuals' lives, organizations, and societies.  
 * **[🤔🐇🐢 Thinking, Fast and Slow](./thinking-fast-and-slow.md) by Daniel Kahneman:** While broader, this book introduces the two systems of thought that drive the way we think and make choices 🤔 (System 1: fast, intuitive, and emotional; System 2: slow, deliberate, and logical), highly relevant to understanding our automatic brain 🧠.  
 * 🤫 **Subliminal: How Your Unconscious Mind Rules Your Behavior by Leonard Mlodinow:** Explores the profound influence of the subconscious on our perceptions, behaviors, and decisions.  
-* 🧠 **Brain Rules by John Medina:** Presents 12 principles for how the brain works 🧠 and how to apply them to daily life, covering topics like exercise 🏃‍♀️, sleep 😴, stress 😫, and memory 💭.  
+* **[🧠💡📈🏠🏢🧑‍🎓 Brain Rules: 12 Principles for Surviving and Thriving at Work, Home, and School](./brain-rules-12-principles-for-surviving-and-thriving-at-work-home-and-school.md) by John Medina:** Presents 12 principles for how the brain works 🧠 and how to apply them to daily life, covering topics like exercise 🏃‍♀️, sleep 😴, stress 😫, and memory 💭.  
   
 ### ⚖️ Contrasting Reads (Different Perspectives on Change)  
   

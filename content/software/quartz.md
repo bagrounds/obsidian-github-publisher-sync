@@ -1,12 +1,12 @@
 ---
 share: true
 aliases:
-  - Quartz
-title: Quartz
+  - 💎🔬🔍📈 Quartz
+title: 💎🔬🔍📈 Quartz
 URL: https://bagrounds.org/software/quartz
 ---
 [Home](../index.md) > [Software](./index.md)  
-# Quartz  
+# 💎🔬🔍📈 Quartz  
   
 ## 🤖 AI Summary  
 ### 👉 What Is It?  

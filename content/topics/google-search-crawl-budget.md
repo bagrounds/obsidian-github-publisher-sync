@@ -1,12 +1,12 @@
 ---
 share: true
 aliases:
-  - Google Search Crawl Budget
-title: Google Search Crawl Budget
-URL: https://bagrounds.org/software/google-search-crawl-budget
+  - 🤖🕸️💸🔎 Google Search Crawl Budget
+title: 🤖🕸️💸🔎 Google Search Crawl Budget
+URL: https://bagrounds.org/topics/google-search-crawl-budget
 ---
-[Home](../index.md) > [Software](./index.md)  
-# Google Search Crawl Budget  
+[Home](../index.md) > [Topics](./index.md)  
+# 🤖🕸️💸🔎 Google Search Crawl Budget  
 ## 🤖 AI Summary  
 - **🤖🔍💰 What is Crawl Budget?**  
     - Googlebot 🤖, the diligent explorer, has limited time ⏱️ and energy 🔋 to explore the vast internet.  

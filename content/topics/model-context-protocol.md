@@ -1,12 +1,12 @@
 ---
 share: true
 aliases:
-  - Model Context Protocol
-title: Model Context Protocol
+  - 🧠🌍⚙️ Model Context Protocol
+title: 🧠🌍⚙️ Model Context Protocol
 URL: https://bagrounds.org/software/model-context-protocol
 ---
-[Home](../index.md) > [Software](./index.md)  
-# Model Context Protocol  
+[Home](../index.md) > [Topics](./index.md)  
+# 🧠🌍⚙️ Model Context Protocol  
   
 ## 🤖 AI Summary  
 ### 🔨 Tool Report: Model Context Protocol (MCP) ⚙️  
@@ -49,7 +49,7 @@ URL: https://bagrounds.org/software/model-context-protocol
 * Artificial Intelligence (AI) 🤖  
 * Data Integration 🔗  
 * Protocol Design 📜  
-* [Software Engineering](../topics/software-engineering.md) 💻  
+* [Software Engineering](./software-engineering.md) 💻  
   
 🌲 **Topics:**  
   

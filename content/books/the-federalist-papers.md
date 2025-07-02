@@ -65,4 +65,9 @@ These books offer creative or alternative explorations of the themes, historical
 * 👨‍🎓 ***Essays and Papers on the U.S. Constitution*** by various modern scholars: Numerous contemporary collections and analyses exist that re-examine *The Federalist Papers* and the Constitution through a modern lens, applying their principles to current political and legal issues. These works demonstrate the enduring relevance and ongoing interpretation of the Founders' ideas.  
   
 ## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
-> Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on The Federalist Papers. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.
+> Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on The Federalist Papers. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.  
+  
+  
+  
+## 🐦 Tweet  
+<blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">🇺🇸📜 The Federalist Papers<br><br>📜 Constitution | 🇺🇸 American History | 🤝 Union | 👎 Confederation | ✋ Representation | ⚖️ Separation of Powers | 🏘️ Federalism | 🎬 Executive | 👨‍⚖️ Judiciary | 👥 Pluralism<a href="https://t.co/qmKCotvDGd">https://t.co/qmKCotvDGd</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/1940229460256858612?ref_src=twsrc%5Etfw">July 2, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

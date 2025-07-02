@@ -11,7 +11,7 @@ title: 🏡 Home
 ❔ What do 🫵 _you_ 🤔 think?  
   
 ## [🪞 Reflections](./reflections/index.md) ~ Blog (229)  
-- [2025-07-01](./reflections/2025-07-01.md)  
+- [2025-07-01 | 🇺🇸🏛️💸 50 Senators Betray US 📺📰 🔍📚](./reflections/2025-07-01.md)  
 - [2025-06-30 | 🇺🇸👹📜💸 Conning US 📺📚](./reflections/2025-06-30.md)  
 - [2025-06-29 | 💪 Creatine | 💃🏼🕺🏽 Movement 🌌📚📺](./reflections/2025-06-29.md)  
 - [2025-06-28 | 🇺🇸🏛️ American 🗳️⚖️ Democracy 📚📺](./reflections/2025-06-28.md)  
@@ -28,7 +28,7 @@ title: 🏡 Home
 - [🧑‍💻🤖🤝 How Anthropic Teams Use Claude Code](./articles/how-anthropic-teams-use-claude-code.md)  
   
   
-## [📚 Books](./books/index.md) (489)  
+## [📚 Books](./books/index.md) (490)  
   
 ## [🤖💬 Bot Chats](./bot-chats/index.md) (32)  
   
@@ -38,7 +38,7 @@ title: 🏡 Home
   
 ## [🌌 Topics](./topics/index.md) (75)  
   
-## [📺 Videos](./videos/index.md) (171)  
+## [📺 Videos](./videos/index.md) (176)  
   
 ## 🔗 Profiles  
 - [My resume](./topics/my-resume.md)  

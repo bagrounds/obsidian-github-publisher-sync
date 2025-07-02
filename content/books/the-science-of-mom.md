@@ -7,6 +7,7 @@ URL: https://bagrounds.org/books/the-science-of-mom
 Author: 
 tags: 
 affiliate link: https://amzn.to/4jwUGzK
+CTA: Understand your baby.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🤰👶🔬👩‍⚕️ 🧪 The Science of Mom: A Research-Based Guide to Your Baby's First Year  
@@ -72,7 +73,7 @@ This book offers a refreshing perspective by treating parenting as an experiment
 "The Science of Mom" is written by Alice Callahan, Ph.D., who has a background in nutrition and public health. This lends credibility to the scientific approach presented. The book effectively translates complex scientific concepts into accessible language for parents. The emphasis on evidence-based practices is a strong point, as it encourages parents to move away from anecdotal advice. The book is backed by citations of peer-reviewed research, which is a key marker of quality information. However, some parents may find the data-driven approach overwhelming or feel that it diminishes the importance of intuition and emotional connection. The book is well reviewed by many sites that focus on science based parenting. ✅  
   
 ### 📚 Book Recommendations  
-* **Best Alternate Book (Same Topic):** "[Brain Rules for Baby](./brain-rules-for-baby.md)" by John Medina. This book provides a similar science-based approach to parenting, focusing on brain development. 🧠  
+* **Best Alternate Book (Same Topic):** [👶🧠😊📈📚 Brain Rules for Baby: How to Raise a Smart and Happy Child from Zero to Five](./brain-rules-for-baby.md) by John Medina. This book provides a similar science-based approach to parenting, focusing on brain development. 🧠  
 * **Best Tangentially Related Book:** [🕳️🧠👶🏽 The Whole-Brain Child: 12 Revolutionary Strategies to Nurture Your Child's Developing Mind](./the-whole-brain-child.md) by Daniel J. Siegel and Tina Payne Bryson. This book delves into the neurological basis of children's behavior and offers practical strategies for managing emotional outbursts. 🧠🤝  
 * **Best Diametrically Opposed Book:** "Bringing Up Bébé" by Pamela Druckerman. This book explores a more traditional and intuitive parenting style, contrasting sharply with the science-driven approach. 🇫🇷  
 * **Best Fiction Book (Related Ideas):** "Room" by Emma Donoghue. This novel explores a mother's ingenuity and resourcefulness in creating a nurturing environment for her child in extreme circumstances, touching on themes of development and resilience. 🏠  

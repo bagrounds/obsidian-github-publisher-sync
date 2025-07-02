@@ -61,7 +61,7 @@ Eagleman's writing is engaging and accessible, making complex neuroscience conce
 * **Best Book Tangentially Related:** [🤕🎼🧠 The Body Keeps the Score: Brain, Mind, and Body in the Healing of Trauma](./the-body-keeps-the-score-brain-mind-and-body-in-the-healing-of-trauma.md) by Bessel van der Kolk. 🤕 (Relates to the brain's response to trauma and its impact on behavior.)  
 * **Best Diametrically Opposed Book:** "Free Will" by Sam Harris. 🙅‍♂️ (Argues strongly against the illusion of free will.)  
 * **Best Fiction Book Incorporating Related Ideas:** "Flowers for Algernon" by Daniel Keyes. 🐭 (Explores the ethical implications of altering brain function.)  
-* **Best More General Book:** "Brain Rules" by John Medina. 📝 (Provides a broader overview of brain function and its implications for everyday life.)  
+* **Best More General Book:** [🧠💡📈🏠🏢🧑‍🎓 Brain Rules: 12 Principles for Surviving and Thriving at Work, Home, and School](./brain-rules-12-principles-for-surviving-and-thriving-at-work-home-and-school.md) by John Medina. 📝 (Provides a broader overview of brain function and its implications for everyday life.)  
 * **Best More Specific Book:** "Phantoms in the Brain" by V.S. Ramachandran. 👻 (Focuses on specific neurological phenomena and their implications.)  
 * **More Rigorous Book:** "Principles of Neural Science" by Eric R. Kandel, James H. Schwartz, and Thomas M. Jessell. 📖 (A comprehensive textbook on neuroscience.)  
 * **More Accessible Book:** "[The Brain That Changes Itself](./the-brain-that-changes-itself.md)" by Norman Doidge. 🔄 (Focuses on neuroplasticity and its potential for healing.)  

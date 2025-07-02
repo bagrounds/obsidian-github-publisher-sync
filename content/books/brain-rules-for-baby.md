@@ -32,7 +32,7 @@ affiliate link: https://amzn.to/4km3BoW
 * He utilizes brain imaging studies to illustrate the neurological basis of various behaviors. 🧠  
   
 **Significant Theories/Theses/Mental Models:**  
-* **12 Brain Rules Applied to Baby Development:** 📝 The book adapts the 12 brain rules from Medina's previous book, "Brain Rules," to the context of early childhood.  
+* **12 Brain Rules Applied to Baby Development:** 📝 The book adapts the 12 brain rules from Medina's previous book, [🧠💡📈🏠🏢🧑‍🎓 Brain Rules: 12 Principles for Surviving and Thriving at Work, Home, and School](./brain-rules-12-principles-for-surviving-and-thriving-at-work-home-and-school.md), to the context of early childhood.  
 * **Stress as a Brain Killer:** 🤯 Chronic stress, both in parents and children, has detrimental effects on brain development.  
 * **The Importance of Emotional Connection:** ❤️ Secure attachment and emotional responsiveness are crucial for healthy brain development.  
 * **Exploration as Learning:** 🗺️ Children learn best through active exploration and play.  

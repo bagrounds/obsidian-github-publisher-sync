@@ -7,7 +7,8 @@ URL: https://bagrounds.org/reflections
 backlinks: false
 ---
 [Home](../index.md)  
-# 🪞 Reflections (229)  
+# 🪞 Reflections (230)  
+- [2025-07-02](./2025-07-02.md)  
 - [2025-07-01 | 🇺🇸🏛️💸 50 Senators Betray US 📺📰 🔍📚](./2025-07-01.md)  
 - [2025-06-30 | 🇺🇸👹📜💸 Conning US 📺📚](./2025-06-30.md)  
 - [2025-06-29 | 💪 Creatine | 💃🏼🕺🏽 Movement 🌌📚📺](./2025-06-29.md)  

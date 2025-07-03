@@ -7,7 +7,7 @@ URL: https://bagrounds.org/books
 backlinks: false
 ---
 [Home](../index.md)  
-# 📚 Books (490)  
+# 📚 Books (491)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)  
 - [🧑‍🤝‍🧑📈 10 to 25: The Science of Motivating Young People: A Groundbreaking Approach to Leading the Next Generation - And Making Your Own Life Easier](./10-to-25-the-science-of-motivating-young-people-a-groundbreaking-approach-to-leading-the-next-generation-and-making-your-own-life-easier.md)  
@@ -59,6 +59,7 @@ backlinks: false
 - [🌿🧑‍🌾 Botany for Gardeners](./botany-for-gardeners.md)  
 - [🎳🏘️📉📈 Bowling Alone: The Collapse and Revival of American Community](./bowling-alone.md)  
 - [🪢🌾 Braiding Sweetgrass: Indigenous Wisdom, Scientific Knowledge, and the Teachings of Plants](./braiding-sweetgrass.md)  
+- [🧠💡📈🏠🏢🧑‍🎓 Brain Rules: 12 Principles for Surviving and Thriving at Work, Home, and School](./brain-rules-12-principles-for-surviving-and-thriving-at-work-home-and-school.md)  
 - [👶🧠😊📈📚 Brain Rules for Baby: How to Raise a Smart and Happy Child from Zero to Five](./brain-rules-for-baby.md)  
 - [🏛️⚙️ Bureaucracy: What Government Agencies Do And Why They Do It](./bureaucracy-what-government-agencies-do-and-why-they-do-it.md)  
 - [🥵🔥💨 Burnout: The Secret to Unlocking the Stress Cycle](./burnout-the-secret-to-unlocking-the-stress-cycle.md)  

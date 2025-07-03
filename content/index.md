@@ -11,7 +11,7 @@ title: 🏡 Home
 ❔ What do 🫵 _you_ 🤔 think?  
   
 ## [🪞 Reflections](./reflections/index.md) ~ Blog (230)  
-- [2025-07-02](./reflections/2025-07-02.md)  
+- [2025-07-02 | 🧠 Brains 📚](./reflections/2025-07-02.md)  
 - [2025-07-01 | 🇺🇸🏛️💸 50 Senators Betray US 📺📰 🔍📚](./reflections/2025-07-01.md)  
 - [2025-06-30 | 🇺🇸👹📜💸 Conning US 📺📚](./reflections/2025-06-30.md)  
 - [2025-06-29 | 💪 Creatine | 💃🏼🕺🏽 Movement 🌌📚📺](./reflections/2025-06-29.md)  

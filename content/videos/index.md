@@ -7,7 +7,7 @@ URL: https://bagrounds.org/videos
 backlinks: false
 ---
 [Home](../index.md)  
-# 📺 Videos (176)  
+# 📺 Videos (177)  
 - [❓💪🔬 12 Questions About Creatine with Stephen Cornish, PhD](./12-questions-about-creatine-w-stephen-cornish-phd.md)  
 - [2025 Yearly Themes](./2025-yearly-themes.md)  
 - [2️⃣⬆️🧠👩‍🚀 Double Your Productivity using this ADHD System (Invented by a Space Systems Engineer)](./double-your-productivity-using-this-adhd-system-invented-by-a-space-systems-engineer.md)  
@@ -21,7 +21,7 @@ backlinks: false
 - [🏛️📜💰🚨 Amy Walter and Jasmine Wright on how Senate Republicans feel about Trump's big bill](./amy-walter-and-jasmine-wright-on-how-senate-republicans-feel-about-trumps-big-bill.md)  
 - [🏛️💥📈 Amy Walter and Leigh Ann Caldwell on the rise in political violence](./amy-walter-and-leigh-ann-caldwell-on-the-rise-in-political-violence.md)  
 - [🗣️⭐💼 Answering Behavioral Interview Questions Using the STAR Method](./answering-behavioral-interview-questions-using-the-star-method.md)  
-- [Anthropic MCP + Ollama. No Claude Needed? Check it out!](./anthropic-mcp-ollama-no-claude-needed-check-it-out.md)  
+- [🤖🧠🚫 Anthropic MCP + Ollama No Claude Needed Check it out](./anthropic-mcp-ollama-no-claude-needed-check-it-out.md)  
 - [A Simple Way to Learn Complex Skills](./a-simple-way-to-learn-complex-skills.md)  
 - [Biomedical Scientist Answers Pseudoscience Questions From Twitter | Tech Support | WIRED](./biomedical-scientist-answers-pseudoscience-questions-from-twitter-tech-support-wired.md)  
 - [👹📜🏛️ Brooks and Capehart on House Republicans passing Trump's legislative agenda](./brooks-and-capehart-on-house-republicans-passing-trumps-legislative-agenda.md)  
@@ -90,6 +90,7 @@ backlinks: false
 - [🤔⏳👹⬇️ Noam Chomsky || How Much Time Is Left Until the End of Trump ( Must Watch )](./noam-chomsky-how-much-time-is-left-until-the-end-of-trump-must-watch.md)  
 - [Nobel-winning economist Joseph Stiglitz on Trump, tariffs and democracy | Front Burner](./nobel-winning-economist-joseph-stiglitz-on-trump-tariffs-and-democracy-front-burner.md)  
 - [NPR and PBS heads face sharp questioning about federal funding during House hearing](./npr-and-pbs-heads-face-sharp-questioning-about-federal-funding-during-house-hearing.md)  
+- [🇺🇸🎂🎉🤔 Okay, But Why Do We Celebrate the 4th of July?](./okay-but-why-do-we-celebrate-the-4th-of-july.md)  
 - [💻🤖🏠📚 Ollama Course – Build AI Apps Locally](./ollama-course-build-ai-apps-locally.md)  
 - [Optimizing Webservers for High Throughput and Low Latency | Dropbox](./optimizing-webservers-for-high-throughput-and-low-latency-dropbox.md)  
 - [🗺️♟️🤖🤝 Parables on the Power of Planning in AI: From Poker to Diplomacy: Noam Brown (OpenAI)](./parables-on-the-power-of-planning-in-ai-from-poker-to-diplomacy-noam-brown-openai.md)  

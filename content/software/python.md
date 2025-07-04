@@ -1,12 +1,12 @@
 ---
 share: true
 aliases:
-  - Python
-title: Python
+  - 🐍💻🐍 Python
+title: 🐍💻🐍 Python
 URL: https://bagrounds.org/software/python
 ---
 [Home](../index.md) > [Software](./index.md)  
-# Python  
+# 🐍💻🐍 Python  
   
 ## 🤖 AI Summary  
 ### 🔨 Tool Report: Python  

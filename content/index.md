@@ -36,7 +36,8 @@ title: 🏡 Home
 - [🌍🏛️ The Great Transformation: The Political and Economic Origins of Our Time](./books/the-great-transformation-the-political-and-economic-origins-of-our-time.md)  
   
   
-## [📺 Videos](./videos/index.md) (177)  
+## [📺 Videos](./videos/index.md) (178)  
+- [🧢🇺🇸📢➡️ The MAGA Ideology That Brought Us to This Moment](./videos/the-maga-ideology-that-brought-us-to-this-moment.md)  
 - [🇺🇸🎂🎉🤔 Okay, But Why Do We Celebrate the 4th of July?](./videos/okay-but-why-do-we-celebrate-the-4th-of-july.md)  
 - [🤖🧠🚫 Anthropic MCP + Ollama No Claude Needed Check it out](./videos/anthropic-mcp-ollama-no-claude-needed-check-it-out.md)  
 - [🏛️👹👑📜 Politics Chat, July 1, 2025](./videos/politics-chat-july-1-2025.md)  
@@ -46,7 +47,6 @@ title: 🏡 Home
 - [👹📜🏛️🏠 What's in the version of Trump's bill passed by the Senate and its chances in the House](./videos/whats-in-the-version-of-trumps-bill-passed-by-the-senate-and-its-chances-in-the-house.md)  
 - [👹🐊🔒 Trump visits Florida's 'Alligator Alcatraz,' urges more states to open ICE detention sites](./videos/trump-visits-floridas-alligator-alcatraz-urges-more-states-to-open-ice-detention-sites.md)  
 - [🗣️🚪 Sen. Padilla gives remarks after forcible removal from Noem briefing](./videos/watch-sen-padilla-gives-remarks-after-forcible-removal-from-noem-briefing.md)  
-- [🤡💵📺 Trump’s One Big Beautiful Bill: Last Week Tonight with John Oliver (HBO)](./videos/trumps-one-big-beautiful-bill-last-week-tonight-with-john-oliver-hbo.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (79)  

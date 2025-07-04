@@ -3,7 +3,7 @@ share: true
 aliases:
   - 🇺🇸🎂🎉🤔 Okay, But Why Do We Celebrate the 4th of July?
 title: 🇺🇸🎂🎉🤔 Okay, But Why Do We Celebrate the 4th of July?
-URL: https://bagrounds.org/videos/
+URL: https://bagrounds.org/videos/okay-but-why-do-we-celebrate-the-4th-of-july
 Author: 
 Platform: 
 Channel: Red Wine and Blue
@@ -36,4 +36,7 @@ youtube: https://youtu.be/0inIrGhjKk4
       
 - 🇺🇸 **_Give Me Liberty!: An American History_** by Eric Foner: A widely used college textbook that provides a broad survey of American history, including detailed sections on the colonial period, the Revolution, and the formation of the government.  
       
-- ✊🏿 **_Stamped from the Beginning: The Definitive History of Racist Ideas in America_** by Ibram X. Kendi: While not solely focused on the Revolution, this book provides essential context on the history of race and racism in America, which is relevant to understanding the full scope of American founding principles and their application.
+- ✊🏿 **_Stamped from the Beginning: The Definitive History of Racist Ideas in America_** by Ibram X. Kendi: While not solely focused on the Revolution, this book provides essential context on the history of race and racism in America, which is relevant to understanding the full scope of American founding principles and their application.  
+  
+## 🐦 Tweet  
+<blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">🇺🇸🎂🎉🤔 Okay, But Why Do We Celebrate the 4th of July?<br><br>🇬🇧 Colonize | 👑 Rule | 💰 Tax | 💥 Massacre | 🍵 Party | 🤝 Congress | 📜 Declaration of Independence | 🏛️ American Constitution | 👨‍💼 Executive Branch | ⚖️ Judicial Branch | 🤔 Democracy | ✊🏿 Race<a href="https://t.co/kh0ymXXsnp">https://t.co/kh0ymXXsnp</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/1941053711335526637?ref_src=twsrc%5Etfw">July 4, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

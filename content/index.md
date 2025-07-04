@@ -37,7 +37,7 @@ title: 🏡 Home
   
   
 ## [📺 Videos](./videos/index.md) (176)  
-- [Anthropic MCP + Ollama. No Claude Needed? Check it out!](./videos/anthropic-mcp-ollama-no-claude-needed-check-it-out.md)  
+- [🤖🧠🚫 Anthropic MCP + Ollama No Claude Needed Check it out](./videos/anthropic-mcp-ollama-no-claude-needed-check-it-out.md)  
 - [🏛️👹👑📜 Politics Chat, July 1, 2025](./videos/politics-chat-july-1-2025.md)  
 - [🇺🇸🚫➡️🇺🇦⚔️🇷🇺 U.S. withholds weapons promised to Ukraine as Russian forces gain more territory](./videos/us-withholds-weapons-promised-to-ukraine-as-russian-forces-gain-more-territory.md)  
 - [🇺🇸🚫⛑️ USAID closes its doors after six decades](./videos/usaid-closes-its-doors-after-six-decades.md)  
@@ -66,19 +66,19 @@ title: 🏡 Home
   
   
 ## [📄  Articles](./articles/index.md) (29)  
+- [👨‍⚖️🆚🏢🗺️ Peckham v. Gem State Mut. of Utah, 964 F. 2d 1043 - Court of Appeals, 10th Circuit](../Peckham%20v.%20Gem%20State%20Mut.%20of%20Utah,%20964%20F.%202d%201043%20-%20Court%20of%20Appeals,%2010th%20Circuit.md)  
 - [💪🧠📉💊🔎 Creatine Supplementation in Depression: A Review of Mechanisms, Efficacy, Clinical Outcomes, and Future Directions](./articles/creatine-supplementation-in-depression-a-review-of-mechanisms-efficacy-clinical-outcomes-and-future-directions.md)  
 - [🧑‍💻🤖🤝 How Anthropic Teams Use Claude Code](./articles/how-anthropic-teams-use-claude-code.md)  
 - [🏛️🕸️🧩 Architectural Styles and the Design of Network Based Software Architectures](./articles/architectural-styles-and-the-design-of-network-based-software-architectures.md)  
 - [⚙️🛡️🐛 Making Reliable Distributed Systems in the Presence of Software Errors](./articles/making-reliable-distributed-systems-in-the-presence-of-software-errors.md)  
-- [Peckham v. Gem State Mut. of Utah, 964 F. 2d 1043 - Court of Appeals, 10th Circuit](../Peckham%20v.%20Gem%20State%20Mut.%20of%20Utah,%20964%20F.%202d%201043%20-%20Court%20of%20Appeals,%2010th%20Circuit.md)  
   
   
 ## [💾 Software](./software/index.md) (29)  
+- [🐍💻🐍 Python](./software/python.md)  
 - [💎🔬🔍📈 Quartz](./software/quartz.md)  
 - [🐍🏎️📦 uv](./software/uv.md)  
 - [🕸️📊 Google Analytics](./software/google-analytics.md)  
 - [🎨🧱 Graphiti](./software/graphiti.md)  
-- [Python](./software/python.md)  
   
   
 ## [👥 People](./people/index.md) (9)  

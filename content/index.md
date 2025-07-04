@@ -23,39 +23,68 @@ title: 🏡 Home
 - [2025-06-24 | 🌱 Raising 📖 Readers 📚🌌](./reflections/2025-06-24.md)  
   
   
-## [📄  Articles](./articles/index.md) (29)  
-- [💪🧠📉💊🔎 Creatine Supplementation in Depression: A Review of Mechanisms, Efficacy, Clinical Outcomes, and Future Directions](./articles/creatine-supplementation-in-depression-a-review-of-mechanisms-efficacy-clinical-outcomes-and-future-directions.md)  
-- [🧑‍💻🤖🤝 How Anthropic Teams Use Claude Code](./articles/how-anthropic-teams-use-claude-code.md)  
-  
-  
 ## [📚 Books](./books/index.md) (492)  
 - [🧠💡📈🏠🏢🧑‍🎓 Brain Rules: 12 Principles for Surviving and Thriving at Work, Home, and School](./books/brain-rules-12-principles-for-surviving-and-thriving-at-work-home-and-school.md)  
 - [🧠📈 Outsmart Yourself: Brain-Based Strategies for a Bettery You](./books/outsmart-yourself-brain-based-strategies-for-a-bettery-you.md)  
-  
-  
-## [🤖💬 Bot Chats](./bot-chats/index.md) (32)  
-- [🤰🏼👶🍼👨‍👩‍👦 Parenting and Infant Development Guide](./bot-chats/parenting-and-infant-development-guide.md)  
-- [👶😭➡️😊 Summarize The Happiest Baby On The Block](./bot-chats/summarize-the-happiest-baby-on-the-block.md)  
-  
-  
-## [👥 People](./people/index.md) (9)  
-- [🧠🔬🧘‍♀️💪📈❤️‍🩹🗣️📚🌟 Kelly McGonigal](./people/kelly-mcgonigal.md)  
-- [🏛️🇺🇸📖 Heather Cox Richardson](./people/heather-cox-richardson.md)  
-  
-  
-## [💾 Software](./software/index.md) (29)  
-- [💎🔬🔍📈 Quartz](./software/quartz.md)  
-- [🐍🏎️📦 uv](./software/uv.md)  
-  
-  
-## [🌌 Topics](./topics/index.md) (79)  
-- [😴🛌🧘 REST](./topics/rest.md)  
-- [💾🧱⚡️ Static Site Generation](./topics/static-site-generation.md)  
+- [🤫🧠 Subliminal: How Your Unconscious Mind Rules Your Behavior](./books/subliminal-how-your-unconscious-mind-rules-your-behavior.md)  
+- [👶🧠😊📈📚 Brain Rules for Baby: How to Raise a Smart and Happy Child from Zero to Five](./books/brain-rules-for-baby.md)  
+- [🤰👶🔬👩‍⚕️ 🧪 The Science of Mom: A Research-Based Guide to Your Baby's First Year](./books/the-science-of-mom.md)  
+- [😴🧠 Sleepyhead: The Neuroscience of a Good Night's Rest](./books/sleepyhead-the-neuroscience-of-a-good-nights-rest.md)  
+- [🎭🤫🧠 Incognito: The Secret Lives of the Brain](./books/incognito.md)  
+- [⚡🧠🏃 Spark: The Revolutionary New Science of Exercise and the Brain](./books/spark-the-revolutionary-new-science-of-exercise-and-the-brain.md)  
+- [🧠📖 A User's Guide to the Brain: Perception, Attention, and the Four Theaters of the Brain](./books/the-users-guide-to-the-brain-perception-attention-and-the-four-theaters-of-the-mind.md)  
+- [🌍🏛️ The Great Transformation: The Political and Economic Origins of Our Time](./books/the-great-transformation-the-political-and-economic-origins-of-our-time.md)  
   
   
 ## [📺 Videos](./videos/index.md) (176)  
 - [Anthropic MCP + Ollama. No Claude Needed? Check it out!](./videos/anthropic-mcp-ollama-no-claude-needed-check-it-out.md)  
 - [🏛️👹👑📜 Politics Chat, July 1, 2025](./videos/politics-chat-july-1-2025.md)  
+- [🇺🇸🚫➡️🇺🇦⚔️🇷🇺 U.S. withholds weapons promised to Ukraine as Russian forces gain more territory](./videos/us-withholds-weapons-promised-to-ukraine-as-russian-forces-gain-more-territory.md)  
+- [🇺🇸🚫⛑️ USAID closes its doors after six decades](./videos/usaid-closes-its-doors-after-six-decades.md)  
+- [🇺🇸📚🔄 A look at what's behind the efforts to reshape how American history is taught](./videos/a-look-at-whats-behind-the-efforts-to-reshape-how-american-history-is-taught.md)  
+- [👹📜🏛️🏠 What's in the version of Trump's bill passed by the Senate and its chances in the House](./videos/whats-in-the-version-of-trumps-bill-passed-by-the-senate-and-its-chances-in-the-house.md)  
+- [👹🐊🔒 Trump visits Florida's 'Alligator Alcatraz,' urges more states to open ICE detention sites](./videos/trump-visits-floridas-alligator-alcatraz-urges-more-states-to-open-ice-detention-sites.md)  
+- [🗣️🚪 Sen. Padilla gives remarks after forcible removal from Noem briefing](./videos/watch-sen-padilla-gives-remarks-after-forcible-removal-from-noem-briefing.md)  
+- [🤡💵📺 Trump’s One Big Beautiful Bill: Last Week Tonight with John Oliver (HBO)](./videos/trumps-one-big-beautiful-bill-last-week-tonight-with-john-oliver-hbo.md)  
+- [💰💣 What Trump’s ‘Big, Beautiful Bill’ Is Really Doing (Part 1) | The Ezra Klein Show](./videos/what-trumps-big-beautiful-bill-is-really-doing-part-1-the-ezra-klein-show.md)  
+  
+  
+## [🌌 Topics](./topics/index.md) (79)  
+- [😴🛌🧘 REST](./topics/rest.md)  
+- [💾🧱⚡️ Static Site Generation](./topics/static-site-generation.md)  
+- [🧠🌍⚙️ Model Context Protocol](./topics/model-context-protocol.md)  
+- [🤖🕸️💸🔎 Google Search Crawl Budget](./topics/google-search-crawl-budget.md)  
+- [💪🏋️‍♂️ Creatine](./topics/creatine.md)  
+  
+  
+## [🤖💬 Bot Chats](./bot-chats/index.md) (32)  
+- [🤰🏼👶🍼👨‍👩‍👦 Parenting and Infant Development Guide](./bot-chats/parenting-and-infant-development-guide.md)  
+- [👶😭➡️😊 Summarize The Happiest Baby On The Block](./bot-chats/summarize-the-happiest-baby-on-the-block.md)  
+- [⁉️🔣🪵 Special Characters In Logs](./bot-chats/special-characters-in-logs.md)  
+- [🤱🏼📚💡 Parenting Resources Recommendations](./bot-chats/parenting-resources-recommendations.md)  
+- [⚙️📝🧹 Obsidian Templater Filename Sanitization](./bot-chats/obsidian-templater-filename-sanitization.md)  
+  
+  
+## [📄  Articles](./articles/index.md) (29)  
+- [💪🧠📉💊🔎 Creatine Supplementation in Depression: A Review of Mechanisms, Efficacy, Clinical Outcomes, and Future Directions](./articles/creatine-supplementation-in-depression-a-review-of-mechanisms-efficacy-clinical-outcomes-and-future-directions.md)  
+- [🧑‍💻🤖🤝 How Anthropic Teams Use Claude Code](./articles/how-anthropic-teams-use-claude-code.md)  
+- [🏛️🕸️🧩 Architectural Styles and the Design of Network Based Software Architectures](./articles/architectural-styles-and-the-design-of-network-based-software-architectures.md)  
+- [⚙️🛡️🐛 Making Reliable Distributed Systems in the Presence of Software Errors](./articles/making-reliable-distributed-systems-in-the-presence-of-software-errors.md)  
+- [Peckham v. Gem State Mut. of Utah, 964 F. 2d 1043 - Court of Appeals, 10th Circuit](../Peckham%20v.%20Gem%20State%20Mut.%20of%20Utah,%20964%20F.%202d%201043%20-%20Court%20of%20Appeals,%2010th%20Circuit.md)  
+  
+  
+## [💾 Software](./software/index.md) (29)  
+- [💎🔬🔍📈 Quartz](./software/quartz.md)  
+- [🐍🏎️📦 uv](./software/uv.md)  
+- [🕸️📊 Google Analytics](./software/google-analytics.md)  
+- [🎨🧱 Graphiti](./software/graphiti.md)  
+- [Python](./software/python.md)  
+  
+  
+## [👥 People](./people/index.md) (9)  
+- [🧠🔬🧘‍♀️💪📈❤️‍🩹🗣️📚🌟 Kelly McGonigal](./people/kelly-mcgonigal.md)  
+- [🏛️🇺🇸📖 Heather Cox Richardson](./people/heather-cox-richardson.md)  
+- [🤔⚙️🗣️🤝💡🧩🔭📚👴 Russell Ackoff](./people/russell-ackoff.md)  
   
   
 ## 🔗 Profiles  

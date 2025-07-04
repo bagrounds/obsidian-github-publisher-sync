@@ -10,7 +10,8 @@ title: 🏡 Home
 📑 Notes, 💭 thoughts, and 🔗 Links.  
 ❔ What do 🫵 _you_ 🤔 think?  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (231)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (232)  
+- [2025-07-04 | 🇺🇸 Independence Day 📺](./reflections/2025-07-04.md)  
 - [2025-07-03 | 🤫 Subliminal 📚](./reflections/2025-07-03.md)  
 - [2025-07-02 | 🧠 Brains 📚](./reflections/2025-07-02.md)  
 - [2025-07-01 | 🇺🇸🏛️💸 50 Senators Betray US 📺📰 🔍📚](./reflections/2025-07-01.md)  
@@ -20,13 +21,12 @@ title: 🏡 Home
 - [2025-06-27 | 🌱Cultivate | 🧬 Adapt | 🪓 Execute 📚🌌📺📰](./reflections/2025-06-27.md)  
 - [2025-06-26 | 🔥🇺🇸 Fire | 🔙 Back | 👶🏼🔢 Baby 📚🌌](./reflections/2025-06-26.md)  
 - [2025-06-25 | 👶🏼👂🏼 Hear? 🤖💬📚](./reflections/2025-06-25.md)  
-- [2025-06-24 | 🌱 Raising 📖 Readers 📚🌌](./reflections/2025-06-24.md)  
   
   
 ## [📚 Books](./books/index.md) (492)  
+- [🤫🧠 Subliminal: How Your Unconscious Mind Rules Your Behavior](./books/subliminal-how-your-unconscious-mind-rules-your-behavior.md)  
 - [🧠💡📈🏠🏢🧑‍🎓 Brain Rules: 12 Principles for Surviving and Thriving at Work, Home, and School](./books/brain-rules-12-principles-for-surviving-and-thriving-at-work-home-and-school.md)  
 - [🧠📈 Outsmart Yourself: Brain-Based Strategies for a Bettery You](./books/outsmart-yourself-brain-based-strategies-for-a-bettery-you.md)  
-- [🤫🧠 Subliminal: How Your Unconscious Mind Rules Your Behavior](./books/subliminal-how-your-unconscious-mind-rules-your-behavior.md)  
 - [👶🧠😊📈📚 Brain Rules for Baby: How to Raise a Smart and Happy Child from Zero to Five](./books/brain-rules-for-baby.md)  
 - [🤰👶🔬👩‍⚕️ 🧪 The Science of Mom: A Research-Based Guide to Your Baby's First Year](./books/the-science-of-mom.md)  
 - [😴🧠 Sleepyhead: The Neuroscience of a Good Night's Rest](./books/sleepyhead-the-neuroscience-of-a-good-nights-rest.md)  
@@ -36,7 +36,8 @@ title: 🏡 Home
 - [🌍🏛️ The Great Transformation: The Political and Economic Origins of Our Time](./books/the-great-transformation-the-political-and-economic-origins-of-our-time.md)  
   
   
-## [📺 Videos](./videos/index.md) (176)  
+## [📺 Videos](./videos/index.md) (177)  
+- [🇺🇸🎂🎉🤔 Okay, But Why Do We Celebrate the 4th of July?](./videos/okay-but-why-do-we-celebrate-the-4th-of-july.md)  
 - [🤖🧠🚫 Anthropic MCP + Ollama No Claude Needed Check it out](./videos/anthropic-mcp-ollama-no-claude-needed-check-it-out.md)  
 - [🏛️👹👑📜 Politics Chat, July 1, 2025](./videos/politics-chat-july-1-2025.md)  
 - [🇺🇸🚫➡️🇺🇦⚔️🇷🇺 U.S. withholds weapons promised to Ukraine as Russian forces gain more territory](./videos/us-withholds-weapons-promised-to-ukraine-as-russian-forces-gain-more-territory.md)  
@@ -46,7 +47,6 @@ title: 🏡 Home
 - [👹🐊🔒 Trump visits Florida's 'Alligator Alcatraz,' urges more states to open ICE detention sites](./videos/trump-visits-floridas-alligator-alcatraz-urges-more-states-to-open-ice-detention-sites.md)  
 - [🗣️🚪 Sen. Padilla gives remarks after forcible removal from Noem briefing](./videos/watch-sen-padilla-gives-remarks-after-forcible-removal-from-noem-briefing.md)  
 - [🤡💵📺 Trump’s One Big Beautiful Bill: Last Week Tonight with John Oliver (HBO)](./videos/trumps-one-big-beautiful-bill-last-week-tonight-with-john-oliver-hbo.md)  
-- [💰💣 What Trump’s ‘Big, Beautiful Bill’ Is Really Doing (Part 1) | The Ezra Klein Show](./videos/what-trumps-big-beautiful-bill-is-really-doing-part-1-the-ezra-klein-show.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (79)  

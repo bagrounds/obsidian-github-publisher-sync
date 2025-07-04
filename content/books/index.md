@@ -7,7 +7,7 @@ URL: https://bagrounds.org/books
 backlinks: false
 ---
 [Home](../index.md)  
-# 📚 Books (491)  
+# 📚 Books (492)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)  
 - [🧑‍🤝‍🧑📈 10 to 25: The Science of Motivating Young People: A Groundbreaking Approach to Leading the Next Generation - And Making Your Own Life Easier](./10-to-25-the-science-of-motivating-young-people-a-groundbreaking-approach-to-leading-the-next-generation-and-making-your-own-life-easier.md)  
@@ -343,6 +343,7 @@ Feedback Control of Dynamic Systems]]
 - [📖📊📈 Storytelling with Data: A Data Visualization Guide for Business Professionals](./storytelling-with-data-a-data-visualization-guide-for-business-professionals.md)  
 - [🇮🇹🇩🇪🇱🇾🇷🇺🇺🇸 Strongmen: Mussolini to the Present](./strongmen.md)  
 - [🚶‍♀️❓😄😊 Stumbling on Happiness](./stumbling-on-happiness.md)  
+- [🤫🧠 Subliminal: How Your Unconscious Mind Rules Your Behavior](./subliminal-how-your-unconscious-mind-rules-your-behavior.md)  
 - [🌅🔪💀 Sunrise On The Reaping](./sunrise-on-the-reaping.md)  
 - [🔮🎨🔬 Superforecasting: The Art and Science of Prediction](./superforecasting-the-art-and-science-of-prediction.md)  
 - [🌞🌬️🌊🌋 Sustainable Energy - Without the Hot Air](./sustainable-energy-without-the-hot-air.md)  

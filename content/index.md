@@ -10,7 +10,8 @@ title: 🏡 Home
 📑 Notes, 💭 thoughts, and 🔗 Links.  
 ❔ What do 🫵 _you_ 🤔 think?  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (230)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (231)  
+- [2025-07-03 | 🤫 Subliminal 📚](./reflections/2025-07-03.md)  
 - [2025-07-02 | 🧠 Brains 📚](./reflections/2025-07-02.md)  
 - [2025-07-01 | 🇺🇸🏛️💸 50 Senators Betray US 📺📰 🔍📚](./reflections/2025-07-01.md)  
 - [2025-06-30 | 🇺🇸👹📜💸 Conning US 📺📚](./reflections/2025-06-30.md)  
@@ -20,7 +21,6 @@ title: 🏡 Home
 - [2025-06-26 | 🔥🇺🇸 Fire | 🔙 Back | 👶🏼🔢 Baby 📚🌌](./reflections/2025-06-26.md)  
 - [2025-06-25 | 👶🏼👂🏼 Hear? 🤖💬📚](./reflections/2025-06-25.md)  
 - [2025-06-24 | 🌱 Raising 📖 Readers 📚🌌](./reflections/2025-06-24.md)  
-- [2025-06-23 | 🕯️ Ritual | 💰📉 Short | 👹🇺🇸 Fascism 🤖💬📚📺](./reflections/2025-06-23.md)  
   
   
 ## [📄  Articles](./articles/index.md) (29)  
@@ -28,9 +28,9 @@ title: 🏡 Home
 - [🧑‍💻🤖🤝 How Anthropic Teams Use Claude Code](./articles/how-anthropic-teams-use-claude-code.md)  
   
   
-## [📚 Books](./books/index.md) (491)  
-- [👶🧠😊📈📚 Brain Rules for Baby: How to Raise a Smart and Happy Child from Zero to Five](./books/brain-rules-for-baby.md)  
-- [🤰👶🔬👩‍⚕️ 🧪 The Science of Mom: A Research-Based Guide to Your Baby's First Year](./books/the-science-of-mom.md)  
+## [📚 Books](./books/index.md) (492)  
+- [🧠💡📈🏠🏢🧑‍🎓 Brain Rules: 12 Principles for Surviving and Thriving at Work, Home, and School](./books/brain-rules-12-principles-for-surviving-and-thriving-at-work-home-and-school.md)  
+- [🧠📈 Outsmart Yourself: Brain-Based Strategies for a Bettery You](./books/outsmart-yourself-brain-based-strategies-for-a-bettery-you.md)  
   
   
 ## [🤖💬 Bot Chats](./bot-chats/index.md) (32)  

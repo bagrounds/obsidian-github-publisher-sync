@@ -10,7 +10,7 @@ Channel: Red Wine and Blue
 tags: 
 youtube: https://youtu.be/0inIrGhjKk4
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](../index.md) > [Videos](./index.md) | [🏛️🇺🇸📖 Heather Cox Richardson](../people/heather-cox-richardson.md)  
 # 🇺🇸🎂🎉🤔 Okay, But Why Do We Celebrate the 4th of July?  
 ![Okay, But Why Do We Celebrate the 4th of July?](https://youtu.be/0inIrGhjKk4)  
   

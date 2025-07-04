@@ -3,14 +3,14 @@ share: true
 aliases:
   - 🧢🇺🇸📢➡️ The MAGA Ideology That Brought Us to This Moment
 title: 🧢🇺🇸📢➡️ The MAGA Ideology That Brought Us to This Moment
-URL: https://bagrounds.org/videos/
+URL: https://bagrounds.org/videos/the-maga-ideology-that-brought-us-to-this-moment
 Author: 
 Platform: 
 Channel: Heather Cox Richardson
 tags: 
 youtube: https://youtu.be/jIonrnzj_BU
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](../index.md) > [Videos](./index.md) | [🏛️🇺🇸📖 Heather Cox Richardson](../people/heather-cox-richardson.md)  
 # 🧢🇺🇸📢➡️ The MAGA Ideology That Brought Us to This Moment  
 ![The MAGA Ideology That Brought Us to This Moment](https://youtu.be/jIonrnzj_BU)  
   
@@ -37,4 +37,7 @@ youtube: https://youtu.be/jIonrnzj_BU
       
 - [🗳️🏛️☠️ How Democracies Die](../books/how-democracies-die.md) by Steven Levitsky and Daniel Ziblatt: Examines historical and contemporary examples of democratic backsliding, offering a framework to understand the threats to democratic norms and institutions, relevant to the video's concerns about the direction of American politics.  
       
-- [🌍🏛️ The Great Transformation: The Political and Economic Origins of Our Time](../books/the-great-transformation-the-political-and-economic-origins-of-our-time.md) by Karl Polanyi: A foundational text in economic sociology that explores the social and political consequences of market liberalization, providing a broader historical and theoretical context for discussions on economic systems and social equality.
+- [🌍🏛️ The Great Transformation: The Political and Economic Origins of Our Time](../books/the-great-transformation-the-political-and-economic-origins-of-our-time.md) by Karl Polanyi: A foundational text in economic sociology that explores the social and political consequences of market liberalization, providing a broader historical and theoretical context for discussions on economic systems and social equality.  
+  
+## 🐦 Tweet  
+<blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">🧢🇺🇸📢➡️ The MAGA Ideology That Brought Us to This Moment<a href="https://twitter.com/HC_Richardson?ref_src=twsrc%5Etfw">@HC_Richardson</a><br><br>👑 The &quot;some people are better than others&quot; ideology is antithetical to American independence. <br><br>🎆🇺🇸🎇 Celebrate the overthrow of kings.<a href="https://t.co/2vb74V3ZG3">https://t.co/2vb74V3ZG3</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/1941056034493415658?ref_src=twsrc%5Etfw">July 4, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

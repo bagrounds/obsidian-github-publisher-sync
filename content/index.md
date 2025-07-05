@@ -10,7 +10,8 @@ title: 🏡 Home
 📑 Notes, 💭 thoughts, and 🔗 Links.  
 ❔ What do 🫵 _you_ 🤔 think?  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (232)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (233)  
+- [2025-07-05](./reflections/2025-07-05.md)  
 - [2025-07-04 | 🇺🇸 Independence Day 📺](./reflections/2025-07-04.md)  
 - [2025-07-03 | 🤫 Subliminal 📚](./reflections/2025-07-03.md)  
 - [2025-07-02 | 🧠 Brains 📚](./reflections/2025-07-02.md)  
@@ -20,33 +21,32 @@ title: 🏡 Home
 - [2025-06-28 | 🇺🇸🏛️ American 🗳️⚖️ Democracy 📚📺](./reflections/2025-06-28.md)  
 - [2025-06-27 | 🌱Cultivate | 🧬 Adapt | 🪓 Execute 📚🌌📺📰](./reflections/2025-06-27.md)  
 - [2025-06-26 | 🔥🇺🇸 Fire | 🔙 Back | 👶🏼🔢 Baby 📚🌌](./reflections/2025-06-26.md)  
-- [2025-06-25 | 👶🏼👂🏼 Hear? 🤖💬📚](./reflections/2025-06-25.md)  
   
   
-## [📚 Books](./books/index.md) (492)  
+## [📚 Books](./books/index.md) (496)  
+- [🤕⚕️ The Headache Handbook: Diagnosis and Treatment](./books/the-headache-handbook-diagnosis-and-treatment.md)  
+- [🚫📄🇺🇸 The Undocumented Americans](./books/the-undocumented-americans.md)  
+- [⛓️🏕️📜 Concentration Camps: A Short History](./books/concentration-camps-a-short-history.md)  
+- [🇺🇸🔒 American Gulag: Inside U.S. Immigration Prisons](./books/american-gulag-inside-us-immigration-prisons.md)  
 - [🤫🧠 Subliminal: How Your Unconscious Mind Rules Your Behavior](./books/subliminal-how-your-unconscious-mind-rules-your-behavior.md)  
 - [🧠💡📈🏠🏢🧑‍🎓 Brain Rules: 12 Principles for Surviving and Thriving at Work, Home, and School](./books/brain-rules-12-principles-for-surviving-and-thriving-at-work-home-and-school.md)  
 - [🧠📈 Outsmart Yourself: Brain-Based Strategies for a Bettery You](./books/outsmart-yourself-brain-based-strategies-for-a-bettery-you.md)  
 - [👶🧠😊📈📚 Brain Rules for Baby: How to Raise a Smart and Happy Child from Zero to Five](./books/brain-rules-for-baby.md)  
 - [🤰👶🔬👩‍⚕️ 🧪 The Science of Mom: A Research-Based Guide to Your Baby's First Year](./books/the-science-of-mom.md)  
 - [😴🧠 Sleepyhead: The Neuroscience of a Good Night's Rest](./books/sleepyhead-the-neuroscience-of-a-good-nights-rest.md)  
-- [🎭🤫🧠 Incognito: The Secret Lives of the Brain](./books/incognito.md)  
-- [⚡🧠🏃 Spark: The Revolutionary New Science of Exercise and the Brain](./books/spark-the-revolutionary-new-science-of-exercise-and-the-brain.md)  
-- [🧠📖 A User's Guide to the Brain: Perception, Attention, and the Four Theaters of the Brain](./books/the-users-guide-to-the-brain-perception-attention-and-the-four-theaters-of-the-mind.md)  
-- [🌍🏛️ The Great Transformation: The Political and Economic Origins of Our Time](./books/the-great-transformation-the-political-and-economic-origins-of-our-time.md)  
   
   
-## [📺 Videos](./videos/index.md) (178)  
-- [🧢🇺🇸📢➡️ The MAGA Ideology That Brought Us to This Moment](./videos/the-maga-ideology-that-brought-us-to-this-moment.md)  
-- [🇺🇸🎂🎉🤔 Okay, But Why Do We Celebrate the 4th of July?](./videos/okay-but-why-do-we-celebrate-the-4th-of-july.md)  
-- [🤖🧠🚫 Anthropic MCP + Ollama No Claude Needed Check it out](./videos/anthropic-mcp-ollama-no-claude-needed-check-it-out.md)  
-- [🏛️👹👑📜 Politics Chat, July 1, 2025](./videos/politics-chat-july-1-2025.md)  
-- [🇺🇸🚫➡️🇺🇦⚔️🇷🇺 U.S. withholds weapons promised to Ukraine as Russian forces gain more territory](./videos/us-withholds-weapons-promised-to-ukraine-as-russian-forces-gain-more-territory.md)  
-- [🇺🇸🚫⛑️ USAID closes its doors after six decades](./videos/usaid-closes-its-doors-after-six-decades.md)  
-- [🇺🇸📚🔄 A look at what's behind the efforts to reshape how American history is taught](./videos/a-look-at-whats-behind-the-efforts-to-reshape-how-american-history-is-taught.md)  
-- [👹📜🏛️🏠 What's in the version of Trump's bill passed by the Senate and its chances in the House](./videos/whats-in-the-version-of-trumps-bill-passed-by-the-senate-and-its-chances-in-the-house.md)  
+## [📺 Videos](./videos/index.md) (183)  
+- [📜🇺🇸🗽➡️ The Declaration of Independence | Journey to American Democracy](./videos/the-declaration-of-independence-journey-to-american-democracy.md)  
+- [👹👶🏼💸➡️👴🏻💰 What Trump’s ‘Big, Beautiful Bill’ Is Really Doing (Part 2) | The Ezra Klein Show](./videos/what-trumps-big-beautiful-bill-is-really-doing-part-2-the-ezra-klein-show.md)  
+- [👤💀🏛️🚓 Suspect Captured, Charged In Shootings Of Minnesota Lawmakers | NPR News Now](./videos/suspect-captured-charged-in-shootings-of-minnesota-lawmakers-npr-news-now.md)  
+- [👹⏱️🇺🇸➡️💰 Why the Trump Administration Is Rushing the Budget Reconciliation Bill Through](./videos/why-the-trump-administration-is-rushing-the-budget-reconciliation-bill-through.md)  
+- [💰💣 What Trump’s ‘Big, Beautiful Bill’ Is Really Doing (Part 1) | The Ezra Klein Show](./videos/what-trumps-big-beautiful-bill-is-really-doing-part-1-the-ezra-klein-show.md)  
 - [👹🐊🔒 Trump visits Florida's 'Alligator Alcatraz,' urges more states to open ICE detention sites](./videos/trump-visits-floridas-alligator-alcatraz-urges-more-states-to-open-ice-detention-sites.md)  
-- [🗣️🚪 Sen. Padilla gives remarks after forcible removal from Noem briefing](./videos/watch-sen-padilla-gives-remarks-after-forcible-removal-from-noem-briefing.md)  
+- [👮‍♂️💪🚫📜 How Trump’s Bill Creates a Super Police Force](./videos/how-trumps-bill-creates-a-super-police-force.md)  
+- [🗣️🤫🐘 Mike Levin Reveals What Republicans Told Him Behind Closed Doors About Big Beautiful Bill](./videos/mike-levin-reveals-what-republicans-told-him-behind-closed-doors-about-big-beautiful-bill.md)  
+- [🧢🇺🇸📢➡️ The MAGA Ideology That Brought Us to This Moment](./videos/the-maga-ideology-that-brought-us-to-this-moment.md)  
+- [🤔➡️💰 Why Republicans once staunchly opposed to Trump's bill changed their minds](./videos/why-republicans-once-staunchly-opposed-to-trumps-bill-changed-their-minds.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (79)  
@@ -57,12 +57,12 @@ title: 🏡 Home
 - [💪🏋️‍♂️ Creatine](./topics/creatine.md)  
   
   
-## [🤖💬 Bot Chats](./bot-chats/index.md) (32)  
+## [🤖💬 Bot Chats](./bot-chats/index.md) (33)  
+- [🤕😖 Headaches](./bot-chats/headaches.md)  
 - [🤰🏼👶🍼👨‍👩‍👦 Parenting and Infant Development Guide](./bot-chats/parenting-and-infant-development-guide.md)  
 - [👶😭➡️😊 Summarize The Happiest Baby On The Block](./bot-chats/summarize-the-happiest-baby-on-the-block.md)  
 - [⁉️🔣🪵 Special Characters In Logs](./bot-chats/special-characters-in-logs.md)  
 - [🤱🏼📚💡 Parenting Resources Recommendations](./bot-chats/parenting-resources-recommendations.md)  
-- [⚙️📝🧹 Obsidian Templater Filename Sanitization](./bot-chats/obsidian-templater-filename-sanitization.md)  
   
   
 ## [📄  Articles](./articles/index.md) (29)  

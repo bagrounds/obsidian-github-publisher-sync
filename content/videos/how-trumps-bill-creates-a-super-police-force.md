@@ -31,7 +31,7 @@ youtube: https://youtu.be/FxG6O127EQQ
   
 - 🗺️ **Borderlands/La Frontera: The New Mestiza** by Gloria Anzaldúa: A personal and theoretical look at the human experience of living on the U.S.-Mexico border.  
   
-- 🔒 **American Gulag: Inside U.S. Immigration Prisons** by Mark Dow: Investigates the realities and conditions of U.S. immigration detention centers.  
+- **[🇺🇸🔒 American Gulag: Inside U.S. Immigration Prisons](../books/american-gulag-inside-us-immigration-prisons.md)** by Mark Dow: Investigates the realities and conditions of U.S. immigration detention centers.  
   
 - 📖 **Concentration Camps: A Short History** by Andrea Pitzer: Provides a historical framework for understanding the concept of "concentration camps" in detention contexts.  
   

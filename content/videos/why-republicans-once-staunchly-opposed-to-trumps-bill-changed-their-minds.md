@@ -3,7 +3,7 @@ share: true
 aliases:
   - 🤔➡️💰 Why Republicans once staunchly opposed to Trump's bill changed their minds
 title: 🤔➡️💰 Why Republicans once staunchly opposed to Trump's bill changed their minds
-URL: https://bagrounds.org/videos/
+URL: https://bagrounds.org/videos/why-republicans-once-staunchly-opposed-to-trumps-bill-changed-their-minds
 Author: 
 Platform: 
 Channel: PBS NewsHour
@@ -38,4 +38,7 @@ The key reasons for this shift include:
     * *An American Sickness: How Healthcare Became Big Business and How You Can Take It Back* by Elisabeth Rosenthal  
 * **American Politics and Voter Behavior:**  
     * *Strangers in Their Own Land: Anger and Mourning on the American Right* by Arlie Russell Hochschild  
-    * [👻🇺🇸⚔️🪽 The Soul of America: The Battle for Our Better Angels](../books/the-soul-of-america-the-battle-for-our-better-angels.md) by Jon Meacham
+    * [👻🇺🇸⚔️🪽 The Soul of America: The Battle for Our Better Angels](../books/the-soul-of-america-the-battle-for-our-better-angels.md) by Jon Meacham  
+  
+## 🐦 Tweet  
+<blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">🤔➡️💰 Why Republicans once staunchly opposed to Trump&#39;s bill changed their minds<a href="https://twitter.com/NewsHour?ref_src=twsrc%5Etfw">@NewsHour</a><br><br>👹 <a href="https://twitter.com/realDonaldTrump?ref_src=twsrc%5Etfw">@realDonaldTrump</a> Demands | 🐕 Republicans Comply | 🫡😰 Cowardice | 💸 Higher Deficits | 🔪 Medicaid | ✂️ SNAP | 🏛️🏷️ <a href="https://twitter.com/lisamurkowski?ref_src=twsrc%5Etfw">@lisamurkowski</a> Sellout | 🇺🇸 Happy 4th 🎆<a href="https://t.co/TRUCMK81fA">https://t.co/TRUCMK81fA</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/1941290453871325626?ref_src=twsrc%5Etfw">July 5, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

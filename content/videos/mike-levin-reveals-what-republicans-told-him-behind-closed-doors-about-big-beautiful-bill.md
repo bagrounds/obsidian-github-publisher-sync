@@ -51,4 +51,7 @@ youtube: https://youtu.be/2I46qw_A6vs
     * *This Changes Everything: Capitalism vs. The Climate* by Naomi Klein  
 * 🇺🇸 **On American Politics and Legislation:**  
     * *Bending the Arc: My Journey from Chaos to Clarity* by Joe Biden  
-    * [😇🧠 The Righteous Mind: Why Good People Are Divided by Politics and Religion](../books/the-righteous-mind.md) by Jonathan Haidt
+    * [😇🧠 The Righteous Mind: Why Good People Are Divided by Politics and Religion](../books/the-righteous-mind.md) by Jonathan Haidt  
+  
+## 🐦 Tweet  
+<blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">🗣️🤫🐘 Mike Levin Reveals What Republicans Told Him Behind Closed Doors About Big Beautiful Bill<a href="https://twitter.com/MikeLevin?ref_src=twsrc%5Etfw">@MikeLevin</a><br><br>🤫 Republican Duplicity | 👹👑 Fealty to <a href="https://twitter.com/realDonaldTrump?ref_src=twsrc%5Etfw">@realDonaldTrump</a> | 💸 Rising Debt | 🏥✂️ Healthcare Cuts | ⏳ Delayed Effects | 🍃✂️ Clean Energy Cuts<a href="https://t.co/JrZMvLPKY5">https://t.co/JrZMvLPKY5</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/1941315239255154813?ref_src=twsrc%5Etfw">July 5, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

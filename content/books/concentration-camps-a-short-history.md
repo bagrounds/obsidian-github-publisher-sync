@@ -5,6 +5,7 @@ aliases:
 URL: https://bagrounds.org/books/concentration-camps-a-short-history
 share: true
 affiliate link: https://amzn.to/3IePtzH
+CTA: Confront atrocity.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ⛓️🏕️📜 Concentration Camps: A Short History  

@@ -35,7 +35,7 @@ youtube: https://youtu.be/FxG6O127EQQ
   
 - **[⛓️🏕️📜 Concentration Camps: A Short History](../books/concentration-camps-a-short-history.md)** by Andrea Pitzer: Provides a historical framework for understanding the concept of "concentration camps" in detention contexts.  
   
-- 📝 **The Undocumented Americans** by Karla Cornejo Villavicencio: Shares humanizing personal stories of undocumented immigrants.  
+- **[🚫📄🇺🇸 The Undocumented Americans](../books/the-undocumented-americans.md)** by Karla Cornejo Villavicencio: Shares humanizing personal stories of undocumented immigrants.  
   
 - 📜 **Detention Empire: Reagan's War on Immigrants and the Seeds of Resistance** by Kristina Shull: Traces the historical expansion of the U.S. immigration detention system.  
   

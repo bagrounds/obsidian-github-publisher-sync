@@ -33,7 +33,7 @@ youtube: https://youtu.be/FxG6O127EQQ
   
 - **[🇺🇸🔒 American Gulag: Inside U.S. Immigration Prisons](../books/american-gulag-inside-us-immigration-prisons.md)** by Mark Dow: Investigates the realities and conditions of U.S. immigration detention centers.  
   
-- 📖 **Concentration Camps: A Short History** by Andrea Pitzer: Provides a historical framework for understanding the concept of "concentration camps" in detention contexts.  
+- **[⛓️🏕️📜 Concentration Camps: A Short History](../books/concentration-camps-a-short-history.md)** by Andrea Pitzer: Provides a historical framework for understanding the concept of "concentration camps" in detention contexts.  
   
 - 📝 **The Undocumented Americans** by Karla Cornejo Villavicencio: Shares humanizing personal stories of undocumented immigrants.  
   

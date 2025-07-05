@@ -31,7 +31,7 @@ youtube: https://youtu.be/7FwNLWynFAQ
 ## 📚 📖 Book Recommendations  
 * 📚 **For immigration policy and history:**  
     * 📖 *Deported: Immigrant Policing, Activism, and Latinx Politics* by Tanya Golash-Boza  
-    * 📖 *The Undocumented Americans* by Karla Cornejo Villavicencio  
+    * [🚫📄🇺🇸 The Undocumented Americans](../books/the-undocumented-americans.md) by Karla Cornejo Villavicencio  
     * 📖 *Migrating to Prison: America's Obsession with Locking Up Immigrants* by César Cuauhtémoc García Hernández  
   
 * 📚 **For the U.S. political landscape and executive power:**  

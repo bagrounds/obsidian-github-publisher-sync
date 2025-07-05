@@ -25,6 +25,9 @@ CTA: Reclaim your brain.
 - 🏋🏼‍♀️ Practice  
 - 🧘🏼‍♀️ Meditate  
 - 😴 Sleep  
+- 😁 Smile for happiness  
+- 🦸🏼‍♀️ Pose like Wonder Woman for confidence  
+- 🚶🏼‍♀️ Move your body to solve problems  
   
 ## 🧠 Book Report: Outsmart Yourself: Brain-Based Strategies for a Better You  
   

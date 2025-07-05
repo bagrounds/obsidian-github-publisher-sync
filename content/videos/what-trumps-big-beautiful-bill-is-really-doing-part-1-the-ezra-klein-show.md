@@ -50,7 +50,7 @@ The video discusses President Trump's "big beautiful bill," dubbed the "big budg
   
 **🛂 On Immigration and ICE Policies:**  
   
-* 📚 "The Undocumented Americans" by Karla Cornejo Villavicencio: A poignant 😢 and personal ❤️‍🩹 look at the lives of undocumented immigrants 🧳 in various American cities 🏙️.  
+* [🚫📄🇺🇸 The Undocumented Americans](../books/the-undocumented-americans.md) by Karla Cornejo Villavicencio: A poignant 😢 and personal ❤️‍🩹 look at the lives of undocumented immigrants 🧳 in various American cities 🏙️.  
 * 📚 "Detain and Punish: The New U.S. Immigration Law" by Michael Welch: Examines the historical context 🕰️ and implications 🎯 of increased detention 👮 and deportation ✈️ efforts.  
 * 📚 "City of Inmates: Carceral Capitalism in Los Angeles" by Kelly Lytle Hernández: While focused on Los Angeles 🌴, this book offers a broader understanding 🌐 of the history 📜 of incarceration ⛓️ and its intersection ➕ with immigration policies 🛂.  
   

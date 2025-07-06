@@ -3,7 +3,7 @@ share: true
 aliases:
   - 💰🔄 Trump’s mega bill ‘hasn’t even cut taxes, it’s redistributed them’ | Justin Wolfers
 title: 💰🔄 Trump’s mega bill ‘hasn’t even cut taxes, it’s redistributed them’ | Justin Wolfers
-URL: https://bagrounds.org/videos/
+URL: https://bagrounds.org/videos/trumps-mega-bill-hasnt-even-cut-taxes-its-redistributed-them-justin-wolfers
 Author: 
 Platform: 
 Channel: Times Radio
@@ -29,4 +29,7 @@ youtube: https://youtu.be/7duenc71Uok
     * [🏛️💰 Debt: The First 5,000 Years](../books/debt-the-first-5000-years.md) by David Graeber  
 * **On Trade and Tariffs:**  
     * *Trade Wars Are Class Wars: How Globalism Hurts Workers and Harms Our Future* by Matthew C. Klein and Michael Pettis  
-    * *The Myth of Free Trade: A Historical Reassessment* by Peter D. Sutherland
+    * *The Myth of Free Trade: A Historical Reassessment* by Peter D. Sutherland  
+  
+## 🐦 Tweet  
+<blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">💰🔄 Trump’s mega bill ‘hasn’t even cut taxes, it’s redistributed them’ | Justin Wolfers<br><br>👹 <a href="https://twitter.com/realDonaldTrump?ref_src=twsrc%5Etfw">@realDonaldTrump</a> &amp; 🐘 Republican Party 🧛🏻‍♂️ <a href="https://twitter.com/SenateGOP?ref_src=twsrc%5Etfw">@SenateGOP</a> 🤡 <a href="https://twitter.com/HouseGOP?ref_src=twsrc%5Etfw">@HouseGOP</a> 🏚️➡️💸➡️🏰 steal from the poor to give to the rich<a href="https://twitter.com/RepDavid?ref_src=twsrc%5Etfw">@RepDavid</a> <a href="https://twitter.com/tombarrettmi7?ref_src=twsrc%5Etfw">@tombarrettmi7</a> <a href="https://twitter.com/RepMackenzie?ref_src=twsrc%5Etfw">@RepMackenzie</a> et al<a href="https://t.co/ZAXxGO9kzq">https://t.co/ZAXxGO9kzq</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/1941677626244161941?ref_src=twsrc%5Etfw">July 6, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

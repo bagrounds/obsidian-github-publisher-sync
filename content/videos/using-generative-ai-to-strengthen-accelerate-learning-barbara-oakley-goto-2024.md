@@ -35,7 +35,7 @@ youtube: https://youtu.be/rbTaEsieWsU
 * 🤖 AI apps are categorized into Foundational Large Language Models (e.g., ChatGPT, Claude) \[[39:16](http://www.youtube.com/watch?v=rbTaEsieWsU&t=2356)\], 🎁 Wrappers (e.g., WriteSonic, Jasper) \[[39:54](http://www.youtube.com/watch?v=rbTaEsieWsU&t=2394)\], 🔬 Research Apps (e.g., Semantic Scholar, Sci) \[[41:36](http://www.youtube.com/watch?v=rbTaEsieWsU&t=2496)\], 🌐 Live-to-Internet Apps (e.g., Co-pilot) \[[42:43](http://www.youtube.com/watch?v=rbTaEsieWsU&t=2563)\], 📊 PowerPoint Generators \[[42:54](http://www.youtube.com/watch?v=rbTaEsieWsU&t=2574)\], 🍎 Apps for Teachers/Instructors \[[43:44](http://www.youtube.com/watch?v=rbTaEsieWsU&t=2624)\], 🚀 Upskilling Platforms (e.g., Coursera, I Do Recall) \[[43:56](http://www.youtube.com/watch?v=rbTaEsieWsU&t=2636)\], ➕ Math Solvers (e.g., Gauth, MathGPT) \[[44:21](http://www.youtube.com/watch?v=rbTaEsieWsU&t=2661)\], 💼 Productivity Platforms (e.g., Canva, Gamma) \[[45:52](http://www.youtube.com/watch?v=rbTaEsieWsU&t=2752)\], 💻 Coding Platforms (based on Llama) \[[46:02](http://www.youtube.com/watch?v=rbTaEsieWsU&t=2762)\], and 🖼️ Imagery and Video Generators (e.g., DALL-E, Stable Diffusion, Midjourney, Gemini) \[[46:07](http://www.youtube.com/watch?v=rbTaEsieWsU&t=2767)\].  
   
 ## 📚 Book Recommendations  
-* 📖 "Teaching with AI"  
+* [🤖🧑‍🏫 Teaching with AI: A Practical Guide to a New Era of Human Learning](../books/teaching-with-ai-a-practical-guide-to-a-new-era-of-human-learning.md)  
 * 🤖 "ChatGPT and the Future of AI" by Terry Sejnowski  
 * 🤝 "Co-Intelligence" by Ethan Mollick  
 * ❓ "The Alignment Problem"  

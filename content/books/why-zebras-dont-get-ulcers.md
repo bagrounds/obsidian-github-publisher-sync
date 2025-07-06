@@ -7,6 +7,7 @@ URL: https://bagrounds.org/books/why-zebras-dont-get-ulcers
 Author: 
 tags: 
 affiliate link: https://amzn.to/45nTj3l
+CTA: Master your stress.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🦓 Why Zebras Don't Get Ulcers: The Acclaimed Guide to Stress, Stress-Related Disease, and Coping  
@@ -80,7 +81,7 @@ affiliate link: https://amzn.to/45nTj3l
 * **[🤔🐇🐢 Thinking, Fast and Slow](./thinking-fast-and-slow.md)** by Daniel Kahneman: Explores cognitive biases and the two systems of thought, relevant to how we perceive and react to stressful situations.  
 * 🧐 **The Man Who Mistook His Wife for a Hat and Other Clinical Tales** by Oliver Sacks: Compelling case studies in neurology, showcasing the intricate connection between brain function, perception, and behavior, written with deep humanism.  
 * 💀 **Stiff: The Curious Lives of Human Cadavers** by Mary Roach: Shares Sapolsky's knack for making potentially morbid or complex science engaging and humorous, though on a different topic.  
-* 🌍 **Guns, Germs, and Steel: The Fates of Human Societies** by Jared Diamond: Takes a broad, interdisciplinary look at the environmental and biological factors shaping human history, resonating with Sapolsky's biological perspective on larger scales.  
+* **[🔫🦠🔩 Guns, Germs, and Steel: The Fates of Human Societies](./guns-germs-and-steel-the-fates-of-human-societies.md)** by Jared Diamond: Takes a broad, interdisciplinary look at the environmental and biological factors shaping human history, resonating with Sapolsky's biological perspective on larger scales.  
 * **[🔮🤷🏼‍♀️🤪 Predictably Irrational: The Hidden Forces That Shape Our Decisions](./predictably-irrational.md)** by Dan Ariely: Explores behavioral economics and the often illogical ways humans make decisions, sometimes influenced by stress or emotion.  
 * 🍎 **How Not to Die: Discover the Foods Scientifically Proven to Prevent and Reverse Disease** by Michael Greger: While focused on nutrition, it connects lifestyle factors (like diet) to the chronic diseases Sapolsky links with stress, offering a different angle on prevention.  
 * 🪄 **Alchemy: The Surprising Power of Ideas That Don't Make Sense** by Rory Sutherland: Explores the power of irrationality and psychological framing in human behavior and decision-making, offering a creative perspective related to the psychological aspects of stress.  

@@ -40,3 +40,4 @@ youtube: https://youtu.be/Keytao-qAWI
     * [👻🇺🇸⚔️🪽 The Soul of America: The Battle for Our Better Angels](../books/the-soul-of-america-the-battle-for-our-better-angels.md) by Jon Meacham.  
   
 ## 🐦 Tweet  
+<blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">🇺🇸📈💡🔮🚀 What the U.S. has accomplished in 250 years of innovation and what’s next<a href="https://twitter.com/NewsHour?ref_src=twsrc%5Etfw">@NewsHour</a><br><br>📺 PBS | 🔬 Science | 🏛️ Democracy | 🚀 Risk-Taking | 😥 Stress Test | 🌊🚪 Watergate<a href="https://t.co/gD0ltb0lHu">https://t.co/gD0ltb0lHu</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/1941653293119496460?ref_src=twsrc%5Etfw">July 6, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

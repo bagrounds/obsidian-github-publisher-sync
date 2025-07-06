@@ -7,7 +7,8 @@ URL: https://bagrounds.org/videos
 backlinks: false
 ---
 [Home](../index.md)  
-# 📺 Videos (183)  
+# 📺 Videos (187)  
+- [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [❓💪🔬 12 Questions About Creatine with Stephen Cornish, PhD](./12-questions-about-creatine-w-stephen-cornish-phd.md)  
 - [2025 Yearly Themes](./2025-yearly-themes.md)  
 - [2️⃣⬆️🧠👩‍🚀 Double Your Productivity using this ADHD System (Invented by a Space Systems Engineer)](./double-your-productivity-using-this-adhd-system-invented-by-a-space-systems-engineer.md)  
@@ -118,6 +119,7 @@ backlinks: false
 - [🗣️🚪 Sen. Padilla gives remarks after forcible removal from Noem briefing](./watch-sen-padilla-gives-remarks-after-forcible-removal-from-noem-briefing.md)  
 - [SHIN SPLINTS for Runners: Challenges, Causes, and Rehab](./shin-splints-for-runners-challenges-causes-and-rehab.md)  
 - [Spaceship You](./spaceship-you.md)  
+- [😵‍💫🇺🇸🐘🚫 Strange cognitive dissonance among the MAGA who are convinced to vote against their own interests](./strange-cognitive-dissonance-among-the-maga-who-are-convinced-to-vote-against-their-own-interests.md)  
 - [Supreme Court clears way for deportations under Alien Enemies Act](./supreme-court-clears-way-for-deportations-under-alien-enemies-act.md)  
 - [Susan Crawford wins Wisconsin Supreme Court seat, cementing liberal majority](./susan-crawford-wins-wisconsin-supreme-court-seat-cementing-liberal-majority.md)  
 - [👤💀🏛️🚓 Suspect Captured, Charged In Shootings Of Minnesota Lawmakers | NPR News Now](./suspect-captured-charged-in-shootings-of-minnesota-lawmakers-npr-news-now.md)  
@@ -156,6 +158,7 @@ backlinks: false
 - [Trump administration targets college and university budgets in DEI crackdown](./trump-administration-targets-college-and-university-budgets-in-dei-crackdown.md)  
 - [👨‍⚖️💂‍♂️🚨🇺🇸 Trump Orders Another 2,000 Guardsmen, 700 Marines To LA | NPR News Now](./trump-orders-another-2000-guardsmen-700-marines-to-la-npr-news-now.md)  
 - [🌪️🇺🇸📉🌍 Trump’s instability and the potential of a post-American world](./trumps-instability-and-the-potential-of-a-post-american-world.md)  
+- [💰🔄 Trump’s mega bill ‘hasn’t even cut taxes, it’s redistributed them’ | Justin Wolfers](./trumps-mega-bill-hasnt-even-cut-taxes-its-redistributed-them-justin-wolfers.md)  
 - [🤡💵📺 Trump’s One Big Beautiful Bill: Last Week Tonight with John Oliver (HBO)](./trumps-one-big-beautiful-bill-last-week-tonight-with-john-oliver-hbo.md)  
 - [Trump Tariff Cold Open - SNL](./trump-tariff-cold-open-snl.md)  
 - [👹🐊🔒 Trump visits Florida's 'Alligator Alcatraz,' urges more states to open ICE detention sites](./trump-visits-floridas-alligator-alcatraz-urges-more-states-to-open-ice-detention-sites.md)  
@@ -175,6 +178,7 @@ backlinks: false
 - [🥼🧠🚫💉 What research reveals about the rise in autism diagnoses and why vaccines aren't the cause](./what-research-reveals-about-the-rise-in-autism-diagnoses-and-why-vaccines-arent-the-cause.md)  
 - [👹📜🏛️🏠 What's in the version of Trump's bill passed by the Senate and its chances in the House](./whats-in-the-version-of-trumps-bill-passed-by-the-senate-and-its-chances-in-the-house.md)  
 - [What’s next for America’s Proud Boys after Donald Trump’s pardons | Extra Minutes](./whats-next-for-americas-proud-boys-after-donald-trumps-pardons-extra-minutes.md)  
+- [🇺🇸📈💡🔮🚀 What the U.S. has accomplished in 250 years of innovation and what’s next](./what-the-us-has-accomplished-in-250-years-of-innovation-and-whats-next.md)  
 - [💰💣 What Trump’s ‘Big, Beautiful Bill’ Is Really Doing (Part 1) | The Ezra Klein Show](./what-trumps-big-beautiful-bill-is-really-doing-part-1-the-ezra-klein-show.md)  
 - [👹👶🏼💸➡️👴🏻💰 What Trump’s ‘Big, Beautiful Bill’ Is Really Doing (Part 2) | The Ezra Klein Show](./what-trumps-big-beautiful-bill-is-really-doing-part-2-the-ezra-klein-show.md)  
 - [What we know — and don't know — about the U.S. strikes in Yemen](./what-we-know-and-dont-know-about-the-us-strikes-in-yemen.md)  

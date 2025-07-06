@@ -24,29 +24,29 @@ title: 🏡 Home
   
   
 ## [📚 Books](./books/index.md) (496)  
+- [🧠📈 Outsmart Yourself: Brain-Based Strategies for a Bettery You](./books/outsmart-yourself-brain-based-strategies-for-a-bettery-you.md)  
 - [🤕⚕️ The Headache Handbook: Diagnosis and Treatment](./books/the-headache-handbook-diagnosis-and-treatment.md)  
 - [🚫📄🇺🇸 The Undocumented Americans](./books/the-undocumented-americans.md)  
 - [⛓️🏕️📜 Concentration Camps: A Short History](./books/concentration-camps-a-short-history.md)  
 - [🇺🇸🔒 American Gulag: Inside U.S. Immigration Prisons](./books/american-gulag-inside-us-immigration-prisons.md)  
 - [🤫🧠 Subliminal: How Your Unconscious Mind Rules Your Behavior](./books/subliminal-how-your-unconscious-mind-rules-your-behavior.md)  
 - [🧠💡📈🏠🏢🧑‍🎓 Brain Rules: 12 Principles for Surviving and Thriving at Work, Home, and School](./books/brain-rules-12-principles-for-surviving-and-thriving-at-work-home-and-school.md)  
-- [🧠📈 Outsmart Yourself: Brain-Based Strategies for a Bettery You](./books/outsmart-yourself-brain-based-strategies-for-a-bettery-you.md)  
 - [👶🧠😊📈📚 Brain Rules for Baby: How to Raise a Smart and Happy Child from Zero to Five](./books/brain-rules-for-baby.md)  
 - [🤰👶🔬👩‍⚕️ 🧪 The Science of Mom: A Research-Based Guide to Your Baby's First Year](./books/the-science-of-mom.md)  
 - [😴🧠 Sleepyhead: The Neuroscience of a Good Night's Rest](./books/sleepyhead-the-neuroscience-of-a-good-nights-rest.md)  
   
   
-## [📺 Videos](./videos/index.md) (183)  
+## [📺 Videos](./videos/index.md) (187)  
+- [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./videos/10-charts-to-understand-the-900-page-budget-bill.md)  
+- [💰🔄 Trump’s mega bill ‘hasn’t even cut taxes, it’s redistributed them’ | Justin Wolfers](./videos/trumps-mega-bill-hasnt-even-cut-taxes-its-redistributed-them-justin-wolfers.md)  
+- [😵‍💫🇺🇸🐘🚫 Strange cognitive dissonance among the MAGA who are convinced to vote against their own interests](./videos/strange-cognitive-dissonance-among-the-maga-who-are-convinced-to-vote-against-their-own-interests.md)  
+- [🇺🇸📈💡🔮🚀 What the U.S. has accomplished in 250 years of innovation and what’s next](./videos/what-the-us-has-accomplished-in-250-years-of-innovation-and-whats-next.md)  
 - [📜🇺🇸🗽➡️ The Declaration of Independence | Journey to American Democracy](./videos/the-declaration-of-independence-journey-to-american-democracy.md)  
 - [👹👶🏼💸➡️👴🏻💰 What Trump’s ‘Big, Beautiful Bill’ Is Really Doing (Part 2) | The Ezra Klein Show](./videos/what-trumps-big-beautiful-bill-is-really-doing-part-2-the-ezra-klein-show.md)  
 - [👤💀🏛️🚓 Suspect Captured, Charged In Shootings Of Minnesota Lawmakers | NPR News Now](./videos/suspect-captured-charged-in-shootings-of-minnesota-lawmakers-npr-news-now.md)  
 - [👹⏱️🇺🇸➡️💰 Why the Trump Administration Is Rushing the Budget Reconciliation Bill Through](./videos/why-the-trump-administration-is-rushing-the-budget-reconciliation-bill-through.md)  
 - [💰💣 What Trump’s ‘Big, Beautiful Bill’ Is Really Doing (Part 1) | The Ezra Klein Show](./videos/what-trumps-big-beautiful-bill-is-really-doing-part-1-the-ezra-klein-show.md)  
 - [👹🐊🔒 Trump visits Florida's 'Alligator Alcatraz,' urges more states to open ICE detention sites](./videos/trump-visits-floridas-alligator-alcatraz-urges-more-states-to-open-ice-detention-sites.md)  
-- [👮‍♂️💪🚫📜 How Trump’s Bill Creates a Super Police Force](./videos/how-trumps-bill-creates-a-super-police-force.md)  
-- [🗣️🤫🐘 Mike Levin Reveals What Republicans Told Him Behind Closed Doors About Big Beautiful Bill](./videos/mike-levin-reveals-what-republicans-told-him-behind-closed-doors-about-big-beautiful-bill.md)  
-- [🧢🇺🇸📢➡️ The MAGA Ideology That Brought Us to This Moment](./videos/the-maga-ideology-that-brought-us-to-this-moment.md)  
-- [🤔➡️💰 Why Republicans once staunchly opposed to Trump's bill changed their minds](./videos/why-republicans-once-staunchly-opposed-to-trumps-bill-changed-their-minds.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (79)  
@@ -65,12 +65,12 @@ title: 🏡 Home
 - [🤱🏼📚💡 Parenting Resources Recommendations](./bot-chats/parenting-resources-recommendations.md)  
   
   
-## [📄  Articles](./articles/index.md) (29)  
+## [📄  Articles](./articles/index.md) (30)  
+- [💻💰🤝👹🇺🇸 Tech moguls Altman, Bezos and Zuckerberg donate to Trump's inauguration fund](./articles/tech-moguls-altman-bezos-and-zuckerberg-donate-to-trumps-inauguration-fund.md)  
 - [👨‍⚖️🆚🏢🗺️ Peckham v. Gem State Mut. of Utah, 964 F. 2d 1043 - Court of Appeals, 10th Circuit](../Peckham%20v.%20Gem%20State%20Mut.%20of%20Utah,%20964%20F.%202d%201043%20-%20Court%20of%20Appeals,%2010th%20Circuit.md)  
 - [💪🧠📉💊🔎 Creatine Supplementation in Depression: A Review of Mechanisms, Efficacy, Clinical Outcomes, and Future Directions](./articles/creatine-supplementation-in-depression-a-review-of-mechanisms-efficacy-clinical-outcomes-and-future-directions.md)  
 - [🧑‍💻🤖🤝 How Anthropic Teams Use Claude Code](./articles/how-anthropic-teams-use-claude-code.md)  
 - [🏛️🕸️🧩 Architectural Styles and the Design of Network Based Software Architectures](./articles/architectural-styles-and-the-design-of-network-based-software-architectures.md)  
-- [⚙️🛡️🐛 Making Reliable Distributed Systems in the Presence of Software Errors](./articles/making-reliable-distributed-systems-in-the-presence-of-software-errors.md)  
   
   
 ## [💾 Software](./software/index.md) (29)  

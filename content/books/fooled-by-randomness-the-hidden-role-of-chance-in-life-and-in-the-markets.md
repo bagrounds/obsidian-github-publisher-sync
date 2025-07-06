@@ -5,6 +5,7 @@ aliases:
 URL: https://bagrounds.org/books/fooled-by-randomness-the-hidden-role-of-chance-in-life-and-in-the-markets
 share: true
 affiliate link: https://amzn.to/45EX7gu
+CTA: Outsmart randomness.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🃏🎲 Fooled by Randomness: The Hidden Role of Chance in Life and in the Markets  
@@ -45,7 +46,7 @@ affiliate link: https://amzn.to/45EX7gu
 ### 🆚 Contrasting Books (Emphasizing Determinism, Predictability, or Different Approaches)  
   
 * ➗ **Deterministic and Random Evolution by Jens Lorenz:** ➕ This book explores mathematical concepts for both deterministic and random systems, providing a more technical perspective on the subjects Taleb discusses philosophically.  
-* 🌍 **Guns, Germs, and Steel: The Fates of Human Societies by Jared Diamond:** 🗺️ While not a direct contrast in subject matter, Diamond's work offers a grand historical narrative emphasizing geographical and environmental determinism as key factors in shaping human societies, presenting a view where large-scale outcomes are less about individual randomness and more about underlying systematic forces.  
+* **[🔫🦠🔩 Guns, Germs, and Steel: The Fates of Human Societies](./guns-germs-and-steel-the-fates-of-human-societies.md) by Jared Diamond:** 🗺️ While not a direct contrast in subject matter, Diamond's work offers a grand historical narrative emphasizing geographical and environmental determinism as key factors in shaping human societies, presenting a view where large-scale outcomes are less about individual randomness and more about underlying systematic forces.  
 * 🙏 **Think and Grow Rich by Napoleon Hill:** 🥇 A classic self-help book focused on mindset and personal agency in achieving success, this book presents a stark contrast to Taleb's emphasis on external randomness and luck.  
   
 ### 💡 Creatively Related Books (Exploring Underlying Concepts or Broader Implications)  

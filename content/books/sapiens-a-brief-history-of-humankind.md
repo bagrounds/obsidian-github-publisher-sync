@@ -7,6 +7,7 @@ URL: https://bagrounds.org/books/sapiens
 Author: 
 tags: 
 affiliate link: https://amzn.to/3HEBDX1
+CTA: Understand humanity.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 📜🌍⏳ Sapiens: A Brief History of Humankind  
@@ -32,7 +33,7 @@ affiliate link: https://amzn.to/3HEBDX1
 📚 **Additional Book Recommendations**  
   
 1. 🥇 **Best Alternate Book on the Same Topic:** 🌍  
-   *Guns, Germs, and Steel: The Fates of Human Societies* by Jared Diamond  
+   [🔫🦠🔩 Guns, Germs, and Steel: The Fates of Human Societies](./guns-germs-and-steel-the-fates-of-human-societies.md) by Jared Diamond  
    *Why:* 🤔 Like *Sapiens*, this book explores the factors that shaped human civilizations but places a stronger emphasis on environmental and geographical determinants, offering a complementary yet distinct perspective. 🗺️  
   
 2. 🥈 **Best Book Tangentially Related:** 🕊️  

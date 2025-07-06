@@ -37,4 +37,6 @@ youtube: https://youtu.be/Keytao-qAWI
     * "The American Character" by Denis Brogan  
 * **For the idea of 🇺🇸 as a "work in progress" and civic engagement:**  
     * "A People's History of the United States" by Howard Zinn  
-    * [👻🇺🇸⚔️🪽 The Soul of America: The Battle for Our Better Angels](../books/the-soul-of-america-the-battle-for-our-better-angels.md) by Jon Meacham.
+    * [👻🇺🇸⚔️🪽 The Soul of America: The Battle for Our Better Angels](../books/the-soul-of-america-the-battle-for-our-better-angels.md) by Jon Meacham.  
+  
+## 🐦 Tweet  

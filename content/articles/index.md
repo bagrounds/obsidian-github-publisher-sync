@@ -2,11 +2,11 @@
 share: true
 aliases:
   - 📄  Articles
-title: 📄  Articles
+title: 📄 Articles
 backlinks: false
 ---
 [Home](../index.md)  
-# 📄  Articles (30)  
+# 📄 Articles (30)  
 - [🦊😈🐾🕵️💸 5 takeaways about NPR's reporting on the whistleblower report about DOGE at the NLRB](./5-takeaways-about-nprs-reporting-on-the-whistleblower-report-about-doge-at-the-nlrb.md)  
 - [5 tips on getting started with Gems, your custom AI experts](./5-tips-on-getting-started-with-gems-your-custom-ai-experts.md)  
 - [⏱️⚔️🏛️ '60 Minutes' chief resigns, saying show's independence was compromised](./60-minutes-chief-resigns-saying-shows-independence-was-compromised.md)  

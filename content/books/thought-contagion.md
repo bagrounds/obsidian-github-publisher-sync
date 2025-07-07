@@ -7,6 +7,7 @@ URL: https://bagrounds.org/books/thought-contagion
 Author: 
 tags: 
 affiliate link: https://amzn.to/4jBAflr
+CTA: Understand belief.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 💭🦠 Thought Contagion: How Belief Spreads Through Society  
@@ -62,7 +63,7 @@ affiliate link: https://amzn.to/4jBAflr
 * 🌍 ***Cultural Evolution: How Darwinian Theory Can Explain Human Culture and Synthesize the Social Sciences*** 🌍 **by Alex Mesoudi (2011):** ➡️ Provides an accessible overview of the broader field of cultural evolution, integrating various approaches. 📖  
 * 🧑‍🤝‍🧑 ***The Secret of Our Success: How Culture Is Driving Human Evolution, Domesticating Our Species, and Making Us Smarter*** 🧑‍🤝‍🧑 **by Joseph Henrich (2015):** ➡️ Focuses on how cumulative cultural evolution is central to human adaptation and success. 🏆  
 * 🔗 ***Networks and the Spread of Ideas in the Past: Strong Ties, Innovation and Knowledge Exchange*** 🔗 **edited by Anna Collar et al. (2022):** ➡️ Explores how social network structures, particularly strong ties, influenced the transmission of ideas historically. 🏛️  
-* 🔄 ***The Structure of Scientific Revolutions*** 🔄 **by Thomas S. Kuhn (1962):** ➡️ A classic work on how scientific ideas change, focusing on paradigm shifts and community acceptance, offering a different perspective on idea propagation within a specific domain. 🧪  
+* **[🔬🔄 The Structure of Scientific Revolutions](./the-structure-of-scientific-revolutions.md)** **by Thomas S. Kuhn (1962):** ➡️ A classic work on how scientific ideas change, focusing on paradigm shifts and community acceptance, offering a different perspective on idea propagation within a specific domain. 🧪  
 * ✅ **[Made to Stick: Why Some Ideas Survive and Others Die](./made-to-stick.md)** ✅ **by Chip Heath & Dan Heath (2007):** ➡️ Offers practical advice on making ideas memorable and impactful, based on principles like simplicity, unexpectedness, concreteness, credibility, emotions, and stories. ✨  
   
 ## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  

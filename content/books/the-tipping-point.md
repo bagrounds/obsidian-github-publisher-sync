@@ -7,6 +7,7 @@ URL: https://bagrounds.org/books/the-tipping-point
 Author: 
 tags: 
 affiliate link: https://amzn.to/3FCGeIH
+CTA: Start epidemics.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ⚖️👈 The Tipping Point: How Little Things Can Make a Big Difference  
@@ -75,7 +76,7 @@ Gladwell illustrates his theories with various case studies, including:
 ### 💡 Creatively Related Books (Network Science, Trends, Broader Concepts)  
   
 * 🕸️ **Linked: The New Science of Networks** by Albert-László Barabási: Explores the structure and behavior of networks, providing a scientific underpinning for concepts like Gladwell's "Connectors."  
-* 🔄 **The Structure of Scientific Revolutions** by Thomas S. Kuhn: While focused on science history, it explores the concept of paradigm shifts, which share similarities with societal "tipping points" where prevailing ideas suddenly change.  
+* **[🔬🔄 The Structure of Scientific Revolutions](./the-structure-of-scientific-revolutions.md)** by Thomas S. Kuhn: While focused on science history, it explores the concept of paradigm shifts, which share similarities with societal "tipping points" where prevailing ideas suddenly change.  
 * 🌍 **[Sapiens: A Brief History of Humankind](./sapiens-a-brief-history-of-humankind.md)** by Yuval Noah Harari: Offers a sweeping view of human history, touching upon how ideas, myths, and social structures spread and shape societies over millennia.  
 * 🔢 **[The Signal and the Noise: Why So Many Predictions Fail - but Some Don't](./the-signal-and-the-noise.md)** by Nate Silver: Discusses forecasting and distinguishing meaningful patterns (signals) from randomness (noise), relevant to understanding and predicting trends.  
 * ⏪ **Revenge of the Tipping Point** by Malcolm Gladwell: Gladwell's 2024 follow-up, revisiting and expanding on the original ideas with new theories and case studies.  

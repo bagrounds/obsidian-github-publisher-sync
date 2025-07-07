@@ -7,7 +7,9 @@ URL: https://bagrounds.org/reflections
 backlinks: false
 ---
 [Home](../index.md)  
-# 🪞 Reflections (233)  
+# 🪞 Reflections (235)  
+- [2025-07-07](./2025-07-07.md)  
+- [2025-07-06 | 🤖 AI, 🦠 Germs, and 🏫 School](./2025-07-06.md)  
 - [2025-07-05 | 🤕🏚️➡️💸➡️🏰 Robber 🧛🏻‍♂️🤝👹 Barons 🤖💬📚📺📄](./2025-07-05.md)  
 - [2025-07-04 | 🇺🇸 Independence Day 📺](./2025-07-04.md)  
 - [2025-07-03 | 🤫 Subliminal 📚](./2025-07-03.md)  

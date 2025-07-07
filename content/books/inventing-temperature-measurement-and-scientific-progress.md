@@ -5,9 +5,12 @@ aliases:
 URL: https://bagrounds.org/books/inventing-temperature-measurement-and-scientific-progress
 share: true
 affiliate link: https://amzn.to/3ZaJ52d
+CTA: Quantify knowledge.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🌡️⚙️ Inventing Temperature: Measurement and Scientific Progress  
+[🛒 Inventing Temperature: Measurement and Scientific Progress. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3ZaJ52d)  
+  
 ## 📚 Book Report: Inventing Temperature: Measurement and Scientific Progress by Hasok Chang  
   
 Hasok Chang's 🌡️ *Inventing Temperature: Measurement and Scientific Progress* delves into the fascinating history and philosophy surrounding the concept and measurement of temperature. 💡 The book challenges the notion of scientific progress as a linear accumulation of facts, instead highlighting the complex, often messy, and iterative process of defining and measuring a fundamental physical property. 👨‍🔬 Chang examines the struggles of renowned scientists in the 18th and 19th centuries as they grappled with creating thermometers, extending their reach beyond standard ranges, and verifying their accuracy without circular reasoning.  
@@ -42,7 +45,7 @@ The book explores the historical journey of temperature measurement, covering:
   
 ### 📚 Contrasting or Related Themes (Broader History and Philosophy of Science)  
   
-* 🔄 **The Structure of Scientific Revolutions by Thomas S. Kuhn:** 💥 A seminal work in the philosophy of science that introduced the concept of paradigm shifts, offering a different lens through which to view scientific progress compared to the more iterative process described by Chang.  
+* **[🔬🔄 The Structure of Scientific Revolutions](./the-structure-of-scientific-revolutions.md) by Thomas S. Kuhn:** 💥 A seminal work in the philosophy of science that introduced the concept of paradigm shifts, offering a different lens through which to view scientific progress compared to the more iterative process described by Chang.  
 * 🧪 **Representing and Intervening: Introductory Topics in the Philosophy of Experimental Science by Ian Hacking:** 🔬 This book emphasizes the active role of experimentation and intervention in scientific practice, complementing Chang's focus on measurement as a form of intervention and construction.  
 * 🏛️ **Leviathan and the Air-Pump: Hobbes, Boyle, and the Experimental Life by Steven Shapin and Simon Schaffer:** 📜 A classic in the history of science, this book examines the controversies surrounding the establishment of experimental science in the 17th century, highlighting the social and political factors involved in scientific knowledge creation.  
   

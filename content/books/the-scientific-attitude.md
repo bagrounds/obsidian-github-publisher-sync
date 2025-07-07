@@ -7,6 +7,7 @@ URL: https://bagrounds.org/books/the-scientific-attitude
 Author: 
 tags: 
 affiliate link: https://amzn.to/3Hif8ax
+CTA: Embrace skepticism.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🥼🛡️ The Scientific Attitude: Defending Science from Denial, Fraud, and Pseudoscience  
@@ -60,7 +61,7 @@ affiliate link: https://amzn.to/3Hif8ax
   
 ## 🆚 Contrasting Perspectives (Philosophy/Sociology of Science Critiques)  
   
-* 🔄 **Thomas S. Kuhn - *The Structure of Scientific Revolutions***: A landmark work arguing that science progresses through periodic "paradigm shifts" rather than purely linear accumulation, emphasizing the sociological and historical aspects of scientific change. Contrasts with a simpler view of evidence leading directly to theory change.  
+* 🔄 **Thomas S. Kuhn - [🔬🔄 The Structure of Scientific Revolutions](./the-structure-of-scientific-revolutions.md)**: A landmark work arguing that science progresses through periodic "paradigm shifts" rather than purely linear accumulation, emphasizing the sociological and historical aspects of scientific change. Contrasts with a simpler view of evidence leading directly to theory change.  
 * 🏴 **Paul Feyerabend - *Against Method***: An anarchist view of science arguing that there is no single, binding scientific method and that adhering too strictly to methodological rules can stifle progress. Challenges the idea of a unified "scientific attitude" as the sole driver.  
 * 🧪 **Ian Hacking - *Representing and Intervening***: Explores the relationship between scientific theories (representing) and experimental practice (intervening), arguing for a form of scientific realism grounded in experimental manipulation rather than just theoretical confirmation. Offers a different philosophical grounding for science's success.  
 * 🧑‍🤝‍🧑 **Helen Longino - *Science as Social Knowledge: Values and Objectivity in Scientific Inquiry***: Argues that the objectivity of science emerges from social processes within the scientific community (like critical discourse) rather than solely from individual attitudes or adherence to method. Complements but also nuances McIntyre's community focus.  

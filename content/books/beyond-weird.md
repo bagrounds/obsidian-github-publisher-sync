@@ -7,6 +7,7 @@ URL: https://bagrounds.org/books/beyond-weird
 Author: 
 tags: 
 affiliate link: https://amzn.to/4kkWHjM
+CTA: Question reality.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ⚛️🌎 Beyond Weird: Why Everything You Thought You Knew about Quantum Physics Is Different  
@@ -70,7 +71,7 @@ affiliate link: https://amzn.to/4kkWHjM
   
 ### 🎨 Creatively Related Books (Philosophy of Science, Limits of Knowledge, Challenging Intuition)  
   
-* 🔄 **The Structure of Scientific Revolutions** by Thomas S. Kuhn: A seminal work on how scientific understanding changes, exploring paradigm shifts. 💡 Relates to *Beyond Weird*'s theme of evolving interpretations and challenging established ways of thinking (like classical intuition).  
+* **[🔬🔄 The Structure of Scientific Revolutions](./the-structure-of-scientific-revolutions.md)** by Thomas S. Kuhn: A seminal work on how scientific understanding changes, exploring paradigm shifts. 💡 Relates to *Beyond Weird*'s theme of evolving interpretations and challenging established ways of thinking (like classical intuition).  
 * 🎵 **[Gödel, Escher, Bach: An Eternal Golden Braid](./godel-escher-bach.md)** by Douglas Hofstadter: A sprawling, creative exploration of consciousness, systems, and self-reference through mathematics, art, and music. 🧩 Connects to the themes of interpretation, complex systems, and the limits of formal systems that echo in QM discussions.  
 * 🤔 **Theory and Reality: An Introduction to the Philosophy of Science** by Peter Godfrey-Smith: A standard text offering a broader view of how scientific theories relate to reality, providing context for the specific interpretational debates within QM that Ball discusses.  
 * 🌍 **[Sapiens: A Brief History of Humankind](./sapiens-a-brief-history-of-humankind.md)** by Yuval Noah Harari: While not about physics, its exploration of how humans create shared fictions and frameworks to understand the world resonates with the QM interpretation debate – how much is the map, and how much is the territory?  

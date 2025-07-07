@@ -10,7 +10,9 @@ title: 🏡 Home
 📑 Notes, 💭 thoughts, and 🔗 Links.  
 ❔ What do 🫵 _you_ 🤔 think?  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (233)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (235)  
+- [2025-07-07](./reflections/2025-07-07.md)  
+- [2025-07-06 | 🤖 AI, 🦠 Germs, and 🏫 School](./reflections/2025-07-06.md)  
 - [2025-07-05 | 🤕🏚️➡️💸➡️🏰 Robber 🧛🏻‍♂️🤝👹 Barons 🤖💬📚📺📄](./reflections/2025-07-05.md)  
 - [2025-07-04 | 🇺🇸 Independence Day 📺](./reflections/2025-07-04.md)  
 - [2025-07-03 | 🤫 Subliminal 📚](./reflections/2025-07-03.md)  
@@ -19,24 +21,25 @@ title: 🏡 Home
 - [2025-06-30 | 🇺🇸👹📜💸 Conning US 📺📚](./reflections/2025-06-30.md)  
 - [2025-06-29 | 💪 Creatine | 💃🏼🕺🏽 Movement 🌌📚📺](./reflections/2025-06-29.md)  
 - [2025-06-28 | 🇺🇸🏛️ American 🗳️⚖️ Democracy 📚📺](./reflections/2025-06-28.md)  
-- [2025-06-27 | 🌱Cultivate | 🧬 Adapt | 🪓 Execute 📚🌌📺📰](./reflections/2025-06-27.md)  
-- [2025-06-26 | 🔥🇺🇸 Fire | 🔙 Back | 👶🏼🔢 Baby 📚🌌](./reflections/2025-06-26.md)  
   
   
-## [📚 Books](./books/index.md) (496)  
-- [🧠📈 Outsmart Yourself: Brain-Based Strategies for a Bettery You](./books/outsmart-yourself-brain-based-strategies-for-a-bettery-you.md)  
-- [🤕⚕️ The Headache Handbook: Diagnosis and Treatment](./books/the-headache-handbook-diagnosis-and-treatment.md)  
-- [🚫📄🇺🇸 The Undocumented Americans](./books/the-undocumented-americans.md)  
-- [⛓️🏕️📜 Concentration Camps: A Short History](./books/concentration-camps-a-short-history.md)  
-- [🇺🇸🔒 American Gulag: Inside U.S. Immigration Prisons](./books/american-gulag-inside-us-immigration-prisons.md)  
-- [🤫🧠 Subliminal: How Your Unconscious Mind Rules Your Behavior](./books/subliminal-how-your-unconscious-mind-rules-your-behavior.md)  
-- [🧠💡📈🏠🏢🧑‍🎓 Brain Rules: 12 Principles for Surviving and Thriving at Work, Home, and School](./books/brain-rules-12-principles-for-surviving-and-thriving-at-work-home-and-school.md)  
-- [👶🧠😊📈📚 Brain Rules for Baby: How to Raise a Smart and Happy Child from Zero to Five](./books/brain-rules-for-baby.md)  
-- [🤰👶🔬👩‍⚕️ 🧪 The Science of Mom: A Research-Based Guide to Your Baby's First Year](./books/the-science-of-mom.md)  
-- [😴🧠 Sleepyhead: The Neuroscience of a Good Night's Rest](./books/sleepyhead-the-neuroscience-of-a-good-nights-rest.md)  
+## [📚 Books](./books/index.md) (501)  
+- [🥼🛡️ The Scientific Attitude: Defending Science from Denial, Fraud, and Pseudoscience](./books/the-scientific-attitude.md)  
+- [🤖🗣️🐒⚙️ Cybernetics: or Control and Communication in the Animal and the Machine](./books/cybernetics.md)  
+- [⚖️👈 The Tipping Point: How Little Things Can Make a Big Difference](./books/the-tipping-point.md)  
+- [🌡️⚙️ Inventing Temperature: Measurement and Scientific Progress](./books/inventing-temperature-measurement-and-scientific-progress.md)  
+- [💭🦠 Thought Contagion: How Belief Spreads Through Society](./books/thought-contagion.md)  
+- [⚛️🌎 Beyond Weird: Why Everything You Thought You Knew about Quantum Physics Is Different](./books/beyond-weird.md)  
+- [🃏🎲 Fooled by Randomness: The Hidden Role of Chance in Life and in the Markets](./books/fooled-by-randomness-the-hidden-role-of-chance-in-life-and-in-the-markets.md)  
+- [🏛️🗣️ Polemic for Democracy](./books/polemic-for-democracy.md)  
+- [🔬🔄 The Structure of Scientific Revolutions](./books/the-structure-of-scientific-revolutions.md)  
+- [😥🏫🇺🇸 The Shame of the Nation: The Restoration of Apartheid Schooling in America](./books/the-shame-of-the-nation-the-restoration-of-apartheid-schooling-in-america.md)  
   
   
-## [📺 Videos](./videos/index.md) (187)  
+## [📺 Videos](./videos/index.md) (190)  
+- [🇺🇸🛠️⏱️🏛️ How to Rebuild American Democracy in 20 Minutes](./videos/how-to-rebuild-american-democracy-in-20-minutes.md)  
+- [👹💰🚫👩‍🏫 Trump administration withholds billions in school grants for critical programs](./videos/trump-administration-withholds-billions-in-school-grants-for-critical-programs.md)  
+- [🤖🧠🚀📈 Using Generative AI to Strengthen & Accelerate Learning • Barbara Oakley • GOTO 2024](./videos/using-generative-ai-to-strengthen-accelerate-learning-barbara-oakley-goto-2024.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./videos/10-charts-to-understand-the-900-page-budget-bill.md)  
 - [💰🔄 Trump’s mega bill ‘hasn’t even cut taxes, it’s redistributed them’ | Justin Wolfers](./videos/trumps-mega-bill-hasnt-even-cut-taxes-its-redistributed-them-justin-wolfers.md)  
 - [😵‍💫🇺🇸🐘🚫 Strange cognitive dissonance among the MAGA who are convinced to vote against their own interests](./videos/strange-cognitive-dissonance-among-the-maga-who-are-convinced-to-vote-against-their-own-interests.md)  
@@ -44,9 +47,6 @@ title: 🏡 Home
 - [📜🇺🇸🗽➡️ The Declaration of Independence | Journey to American Democracy](./videos/the-declaration-of-independence-journey-to-american-democracy.md)  
 - [👹👶🏼💸➡️👴🏻💰 What Trump’s ‘Big, Beautiful Bill’ Is Really Doing (Part 2) | The Ezra Klein Show](./videos/what-trumps-big-beautiful-bill-is-really-doing-part-2-the-ezra-klein-show.md)  
 - [👤💀🏛️🚓 Suspect Captured, Charged In Shootings Of Minnesota Lawmakers | NPR News Now](./videos/suspect-captured-charged-in-shootings-of-minnesota-lawmakers-npr-news-now.md)  
-- [👹⏱️🇺🇸➡️💰 Why the Trump Administration Is Rushing the Budget Reconciliation Bill Through](./videos/why-the-trump-administration-is-rushing-the-budget-reconciliation-bill-through.md)  
-- [💰💣 What Trump’s ‘Big, Beautiful Bill’ Is Really Doing (Part 1) | The Ezra Klein Show](./videos/what-trumps-big-beautiful-bill-is-really-doing-part-1-the-ezra-klein-show.md)  
-- [👹🐊🔒 Trump visits Florida's 'Alligator Alcatraz,' urges more states to open ICE detention sites](./videos/trump-visits-floridas-alligator-alcatraz-urges-more-states-to-open-ice-detention-sites.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (79)  
@@ -58,11 +58,11 @@ title: 🏡 Home
   
   
 ## [🤖💬 Bot Chats](./bot-chats/index.md) (33)  
+- [🧭 Managing 🕸️ Complexity 🧠](./bot-chats/managing-complexity.md)  
+- [📖 Book 🧭 Explorer 1](./bot-chats/book-explorer-1.md)  
 - [🤕😖 Headaches](./bot-chats/headaches.md)  
 - [🤰🏼👶🍼👨‍👩‍👦 Parenting and Infant Development Guide](./bot-chats/parenting-and-infant-development-guide.md)  
 - [👶😭➡️😊 Summarize The Happiest Baby On The Block](./bot-chats/summarize-the-happiest-baby-on-the-block.md)  
-- [⁉️🔣🪵 Special Characters In Logs](./bot-chats/special-characters-in-logs.md)  
-- [🤱🏼📚💡 Parenting Resources Recommendations](./bot-chats/parenting-resources-recommendations.md)  
   
   
 ## [📄  Articles](./articles/index.md) (30)  

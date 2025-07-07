@@ -7,7 +7,7 @@ URL: https://bagrounds.org/videos
 backlinks: false
 ---
 [Home](../index.md)  
-# 📺 Videos (187)  
+# 📺 Videos (190)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [❓💪🔬 12 Questions About Creatine with Stephen Cornish, PhD](./12-questions-about-creatine-w-stephen-cornish-phd.md)  
 - [2025 Yearly Themes](./2025-yearly-themes.md)  
@@ -62,6 +62,7 @@ backlinks: false
 - [👊👹🇺🇸🛡️ How to Fight Fascism in America — with Timothy Snyder | Prof G Conversations](./how-to-fight-fascism-in-america-with-timothy-snyder-prof-g-conversations.md)  
 - [🥱💭✂️🎬🫡 How to Force Your Brain To Be Motivated (when you don’t feel like it)](./how-to-force-your-brain-to-be-motivated-when-you-dont-feel-like-it.md)  
 - [How to hack your brain to crave doing hard things.](./how-to-hack-your-brain-to-crave-doing-hard-things.md)  
+- [🇺🇸🛠️⏱️🏛️ How to Rebuild American Democracy in 20 Minutes](./how-to-rebuild-american-democracy-in-20-minutes.md)  
 - [How to Reduce Bone Injury Risks | Running Science](./how-to-reduce-bone-injury-risks-running-science.md)  
 - [🗣️👽 How to Talk to Aliens](./how-to-talk-to-aliens.md)  
 - [👹🔌🤑 How Trump is using his power to profit and why no one will stop him](./how-trump-is-using-his-power-to-profit-and-why-no-one-will-stop-him.md)  
@@ -156,6 +157,7 @@ backlinks: false
 - [To Save Democracy, Here’s a Playbook That Works](./to-save-democracy-heres-a-playbook-that-works.md)  
 - [👹🪖🇺🇸🚧✊🏾 Troops deployed in LA as immigration raids stir fear and protests](./troops-deployed-in-la-as-immigration-raids-stir-fear-and-protests.md)  
 - [Trump administration targets college and university budgets in DEI crackdown](./trump-administration-targets-college-and-university-budgets-in-dei-crackdown.md)  
+- [👹💰🚫👩‍🏫 Trump administration withholds billions in school grants for critical programs](./trump-administration-withholds-billions-in-school-grants-for-critical-programs.md)  
 - [👨‍⚖️💂‍♂️🚨🇺🇸 Trump Orders Another 2,000 Guardsmen, 700 Marines To LA | NPR News Now](./trump-orders-another-2000-guardsmen-700-marines-to-la-npr-news-now.md)  
 - [🌪️🇺🇸📉🌍 Trump’s instability and the potential of a post-American world](./trumps-instability-and-the-potential-of-a-post-american-world.md)  
 - [💰🔄 Trump’s mega bill ‘hasn’t even cut taxes, it’s redistributed them’ | Justin Wolfers](./trumps-mega-bill-hasnt-even-cut-taxes-its-redistributed-them-justin-wolfers.md)  
@@ -165,6 +167,7 @@ backlinks: false
 - [🇺🇸💣🇮🇷⚠️ UN chief says US bombing of Iran marks 'perilous turn' | REUTERS](./un-chief-says-us-bombing-of-iran-marks-perilous-turn-reuters.md)  
 - [🇺🇸🚫⛑️ USAID closes its doors after six decades](./usaid-closes-its-doors-after-six-decades.md)  
 - [US deportees in El Salvador stuck in legal limbo, lawyers say | REUTERS](./us-deportees-in-el-salvador-stuck-in-legal-limbo-lawyers-say-reuters.md)  
+- [🤖🧠🚀📈 Using Generative AI to Strengthen & Accelerate Learning • Barbara Oakley • GOTO 2024](./using-generative-ai-to-strengthen-accelerate-learning-barbara-oakley-goto-2024.md)  
 - [🇺🇸🚫➡️🇺🇦⚔️🇷🇺 U.S. withholds weapons promised to Ukraine as Russian forces gain more territory](./us-withholds-weapons-promised-to-ukraine-as-russian-forces-gain-more-territory.md)  
 - [🏞️⚕️🛡️🤝 WA OIC can help you with your insurance!](./wa-oic-can-help-you-with-your-insurance.md)  
 - [WATCH: 'Whose throat do I get to choke’ if tariff approach fails, Tillis asks trade rep](./watch-whose-throat-do-i-get-to-choke-if-tariff-approach-fails-tillis-asks-trade-rep.md)  

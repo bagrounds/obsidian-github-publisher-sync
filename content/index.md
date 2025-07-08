@@ -11,7 +11,7 @@ title: 🏡 Home
 ❔ What do 🫵 _you_ 🤔 think?  
   
 ## [🪞 Reflections](./reflections/index.md) ~ Blog (235)  
-- [2025-07-07](./reflections/2025-07-07.md)  
+- [2025-07-07 | 🇺🇸🔬🏗️ Structure 📺📚](./reflections/2025-07-07.md)  
 - [2025-07-06 | 🤖 AI, 🦠 Germs, and 🏫 School](./reflections/2025-07-06.md)  
 - [2025-07-05 | 🤕🏚️➡️💸➡️🏰 Robber 🧛🏻‍♂️🤝👹 Barons 🤖💬📚📺📄](./reflections/2025-07-05.md)  
 - [2025-07-04 | 🇺🇸 Independence Day 📺](./reflections/2025-07-04.md)  

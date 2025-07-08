@@ -41,4 +41,7 @@ youtube: https://youtu.be/cFca2mYb1wc
 ### 🧑‍🤝‍🧑 On Political Parties and the Two-Party System  
 * ***📖 A Tale of Two Parties: Living Amongst Republicans and Democrats Since 1952*** by Kenneth Janda: Explains how American party politics have changed and the two-party system's persistence.  
 * ***📖 Two Parties--or More?: The American Party System*** by John F. Bibby and L. Sandy Maisel: Addresses why the U.S. maintains a two-party system compared to other democracies.  
-* ***📖 The Two-party System Nobody Asked for*** by Bob Mills: Analyzes the Democratic and Republican parties and questions the two-party system's overall effectiveness.
+* ***📖 The Two-party System Nobody Asked for*** by Bob Mills: Analyzes the Democratic and Republican parties and questions the two-party system's overall effectiveness.  
+  
+## 🐦 Tweet  
+<blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">🇺🇸🛠️⏱️🏛️ How to Rebuild American Democracy in 20 Minutes<br><br>⚖️ Abolish the Senate | 👥 Multimember Ranked Choice | 🗳️ Popular Vote President | 🔥 60% Impeachment | 🏘️ Grow the House of Representatives | 🧑‍⚖️ 21 Term Limited Justices | 🤝 Multiparty System<a href="https://t.co/TW8Mes6d5K">https://t.co/TW8Mes6d5K</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/1942259093978366332?ref_src=twsrc%5Etfw">July 7, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

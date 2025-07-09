@@ -3,7 +3,7 @@ share: true
 aliases:
   - 📢👁️🗣️💡 It's Our Job to Make Sure People Know the Truth
 title: 📢👁️🗣️💡 It's Our Job to Make Sure People Know the Truth
-URL: https://bagrounds.org/videos/
+URL: https://bagrounds.org/videos/its-our-job-to-make-sure-people-know-the-truth
 Author: 
 Platform: 
 Channel: Heather Cox Richardson
@@ -37,4 +37,7 @@ Richardson discusses several key issues related to the current political climate
     * *Contagious: How to Build Word of Mouth in the Digital Age* by Jonah Berger  
 * ⚖️ **On Human Rights and Social Justice (related to concentration camps):**  
     * *Ordinary Men: Reserve Police Battalion 101 and the Final Solution in Poland* by Christopher R. Browning (for understanding how ordinary people can participate in atrocities)  
-    * [🧑🏿⛓️🙈 The New Jim Crow: Mass Incarceration in the Age of Colorblindness](../books/the-new-jim-crow-mass-incarceration-in-the-age-of-colorblindness.md) by Michelle Alexander
+    * [🧑🏿⛓️🙈 The New Jim Crow: Mass Incarceration in the Age of Colorblindness](../books/the-new-jim-crow-mass-incarceration-in-the-age-of-colorblindness.md) by Michelle Alexander  
+  
+## 🐦 Tweet  
+<blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">📢👁️🗣️💡 It&#39;s Our Job to Make Sure People Know the Truth<a href="https://twitter.com/HC_Richardson?ref_src=twsrc%5Etfw">@HC_Richardson</a> <br>💰📉 Government Funding Cuts | 😥📢 Public Helplessness | 🗳️🏛️ Local Elections | 📣✍️ Communication Strategies | ⚠️📢 Public Awareness | 🚧😥 Concentration Camps | 💪🌟 Call to Action<a href="https://t.co/qCY7M34u7B">https://t.co/qCY7M34u7B</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/1942972188342276371?ref_src=twsrc%5Etfw">July 9, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

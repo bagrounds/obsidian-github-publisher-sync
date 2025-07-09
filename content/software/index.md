@@ -4,11 +4,12 @@ aliases:
   - 💾 Software
 title: 💾 Software
 backlinks: false
+URL: https://bagrounds.org/software
 ---
 [Home](../index.md)  
 # 💾 Software (29)  
-- [Babylon.js](./babylon.md)  
-- [CodinGame](./codingame.md)  
+- [🌐🧱🖥️🎮 Babylon.js](./babylon.md)  
+- [💻🎮🕹️🧠 CodinGame](./codingame.md)  
 - [Cursor](./cursor.md)  
 - [Elastic Search](./elastic-search.md)  
 - [Express.js](./express.md)  
@@ -26,7 +27,7 @@ backlinks: false
 - [Ollama](./ollama.md)  
 - [Open WebUI](./open-webui.md)  
 - [Pydantic](./pydantic.md)  
-- [Python](./python.md)  
+- [🐍💻🐍 Python](./python.md)  
 - [💎🔬🔍📈 Quartz](./quartz.md)  
 - [QuickCheck](./quickcheck.md)  
 - [React](./react.md)  

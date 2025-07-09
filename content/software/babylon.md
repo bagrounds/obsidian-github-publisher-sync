@@ -1,12 +1,12 @@
 ---
 share: true
 aliases:
-  - Babylon.js
-title: Babylon.js
+  - 🌐🧱🖥️🎮 Babylon.js
+title: 🌐🧱🖥️🎮 Babylon.js
 URL: https://bagrounds.org/software/babylon
 ---
 [Home](../index.md) > [Software](./index.md)  
-# Babylon.js  
+# 🌐🧱🖥️🎮 Babylon.js  
 ## 🤖 AI Summary  
 ### Babylon.js 🎮✨🌟  
   

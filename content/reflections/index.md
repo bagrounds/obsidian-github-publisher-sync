@@ -8,7 +8,7 @@ backlinks: false
 ---
 [Home](../index.md)  
 # 🪞 Reflections (237)  
-- [2025-07-09](./2025-07-09.md)  
+- [2025-07-09 | 👹 Authority ⚔️ versus 🌍 Society 📺📚](./2025-07-09.md)  
 - [2025-07-08 | 🧠🧘🏼‍♀️ Operating Ourselves 📚](./2025-07-08.md)  
 - [2025-07-07 | 🇺🇸🔬🏗️ Structure 📺📚](./2025-07-07.md)  
 - [2025-07-06 | 🤖 AI, 🦠 Germs, and 🏫 School](./2025-07-06.md)  

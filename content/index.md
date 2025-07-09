@@ -11,7 +11,7 @@ title: 🏡 Home
 ❔ What do 🫵 _you_ 🤔 think?  
   
 ## [🪞 Reflections](./reflections/index.md) ~ Blog (237)  
-- [2025-07-09](./reflections/2025-07-09.md)  
+- [2025-07-09 | 👹 Authority ⚔️ versus 🌍 Society 📺📚](./reflections/2025-07-09.md)  
 - [2025-07-08 | 🧠🧘🏼‍♀️ Operating Ourselves 📚](./reflections/2025-07-08.md)  
 - [2025-07-07 | 🇺🇸🔬🏗️ Structure 📺📚](./reflections/2025-07-07.md)  
 - [2025-07-06 | 🤖 AI, 🦠 Germs, and 🏫 School](./reflections/2025-07-06.md)  
@@ -23,7 +23,9 @@ title: 🏡 Home
 - [2025-06-30 | 🇺🇸👹📜💸 Conning US 📺📚](./reflections/2025-06-30.md)  
   
   
-## [📚 Books](./books/index.md) (502)  
+## [📚 Books](./books/index.md) (504)  
+- [🚩⚖️ The Socialist Manifesto: The Case for Radical Politics in an Era of Extreme Inequality](./books/the-socialist-manifesto-the-case-for-radical-politics-in-an-era-of-extreme-inequality.md)  
+- [🫵🤝🌍🏛️ Why You Should Be a Socialist](./books/why-you-should-be-a-socialist.md)  
 - [🧘🏼‍♀️👩🏼‍🏫 Practicing Mindfulness: An Introduction to Meditation](./books/practicing-mindfulness-an-introduction-to-meditation.md)  
 - [🧠📈 Outsmart Yourself: Brain-Based Strategies for a Bettery You](./books/outsmart-yourself-brain-based-strategies-for-a-bettery-you.md)  
 - [🥼🛡️ The Scientific Attitude: Defending Science from Denial, Fraud, and Pseudoscience](./books/the-scientific-attitude.md)  
@@ -32,11 +34,12 @@ title: 🏡 Home
 - [🌡️⚙️ Inventing Temperature: Measurement and Scientific Progress](./books/inventing-temperature-measurement-and-scientific-progress.md)  
 - [💭🦠 Thought Contagion: How Belief Spreads Through Society](./books/thought-contagion.md)  
 - [⚛️🌎 Beyond Weird: Why Everything You Thought You Knew about Quantum Physics Is Different](./books/beyond-weird.md)  
-- [🃏🎲 Fooled by Randomness: The Hidden Role of Chance in Life and in the Markets](./books/fooled-by-randomness-the-hidden-role-of-chance-in-life-and-in-the-markets.md)  
-- [🏛️🗣️ Polemic for Democracy](./books/polemic-for-democracy.md)  
   
   
-## [📺 Videos](./videos/index.md) (191)  
+## [📺 Videos](./videos/index.md) (193)  
+- [📢👁️🗣️💡 It's Our Job to Make Sure People Know the Truth](./videos/its-our-job-to-make-sure-people-know-the-truth.md)  
+- [🤯😲😳 You Aren't Going to Believe This](./videos/you-arent-going-to-believe-this.md)  
+- [📜🇺🇸🗽➡️ The Declaration of Independence | Journey to American Democracy](./videos/the-declaration-of-independence-journey-to-american-democracy.md)  
 - [👑🏙️🏛️ What Trump’s Threat to ‘Take Over’ Cities Says About Our Democracy](./videos/what-trumps-threat-to-take-over-cities-says-about-our-democracy.md)  
 - [🇺🇸🛠️⏱️🏛️ How to Rebuild American Democracy in 20 Minutes](./videos/how-to-rebuild-american-democracy-in-20-minutes.md)  
 - [👹💰🚫👩‍🏫 Trump administration withholds billions in school grants for critical programs](./videos/trump-administration-withholds-billions-in-school-grants-for-critical-programs.md)  
@@ -44,25 +47,22 @@ title: 🏡 Home
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./videos/10-charts-to-understand-the-900-page-budget-bill.md)  
 - [💰🔄 Trump’s mega bill ‘hasn’t even cut taxes, it’s redistributed them’ | Justin Wolfers](./videos/trumps-mega-bill-hasnt-even-cut-taxes-its-redistributed-them-justin-wolfers.md)  
 - [😵‍💫🇺🇸🐘🚫 Strange cognitive dissonance among the MAGA who are convinced to vote against their own interests](./videos/strange-cognitive-dissonance-among-the-maga-who-are-convinced-to-vote-against-their-own-interests.md)  
-- [🇺🇸📈💡🔮🚀 What the U.S. has accomplished in 250 years of innovation and what’s next](./videos/what-the-us-has-accomplished-in-250-years-of-innovation-and-whats-next.md)  
-- [📜🇺🇸🗽➡️ The Declaration of Independence | Journey to American Democracy](./videos/the-declaration-of-independence-journey-to-american-democracy.md)  
-- [👹👶🏼💸➡️👴🏻💰 What Trump’s ‘Big, Beautiful Bill’ Is Really Doing (Part 2) | The Ezra Klein Show](./videos/what-trumps-big-beautiful-bill-is-really-doing-part-2-the-ezra-klein-show.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (79)  
+- [⚙️🧠🔄 Adaptive Control](./topics/adaptive-control.md)  
 - [😴🛌🧘 REST](./topics/rest.md)  
 - [💾🧱⚡️ Static Site Generation](./topics/static-site-generation.md)  
 - [🧠🌍⚙️ Model Context Protocol](./topics/model-context-protocol.md)  
 - [🤖🕸️💸🔎 Google Search Crawl Budget](./topics/google-search-crawl-budget.md)  
-- [💪🏋️‍♂️ Creatine](./topics/creatine.md)  
   
   
 ## [🤖💬 Bot Chats](./bot-chats/index.md) (33)  
+- [🪵❓ How Much Wood](./bot-chats/how-much-wood.md)  
+- [🤖📱🧠 Android Local LLMs](./bot-chats/android-local-llms.md)  
 - [🧭 Managing 🕸️ Complexity 🧠](./bot-chats/managing-complexity.md)  
 - [📖 Book 🧭 Explorer 1](./bot-chats/book-explorer-1.md)  
 - [🤕😖 Headaches](./bot-chats/headaches.md)  
-- [🤰🏼👶🍼👨‍👩‍👦 Parenting and Infant Development Guide](./bot-chats/parenting-and-infant-development-guide.md)  
-- [👶😭➡️😊 Summarize The Happiest Baby On The Block](./bot-chats/summarize-the-happiest-baby-on-the-block.md)  
   
   
 ## [📄  Articles](./articles/index.md) (30)  
@@ -74,11 +74,11 @@ title: 🏡 Home
   
   
 ## [💾 Software](./software/index.md) (29)  
-- [🐍💻🐍 Python](./software/python.md)  
-- [💎🔬🔍📈 Quartz](./software/quartz.md)  
-- [🐍🏎️📦 uv](./software/uv.md)  
-- [🕸️📊 Google Analytics](./software/google-analytics.md)  
-- [🎨🧱 Graphiti](./software/graphiti.md)  
+- [💾✍️🌋⚫️ Obsidian](./software/obsidian.md)  
+- [💾➕🤝 Git](./software/git.md)  
+- [🤖♊ Gemini](./software/gemini.md)  
+- [🌐🛤️ Express.js](./software/express.md)  
+- [↔️🔍 Elastic Search](./software/elastic-search.md)  
   
   
 ## [👥 People](./people/index.md) (9)  

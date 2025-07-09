@@ -1,12 +1,12 @@
 ---
 share: true
 aliases:
-  - Git
-title: Git
+  - 💾➕🤝 Git
+title: 💾➕🤝 Git
 URL: https://bagrounds.org/software/git
 ---
 [Home](../index.md) > [Software](./index.md)  
-# Git  
+# 💾➕🤝 Git  
   
 ## 🤖 AI Summary  
 ### 🔨 Tool Report: Git 🌳  

@@ -41,4 +41,7 @@ Senator Adam Schiff discusses several critical issues regarding the changes and 
     * 🏞️ *The Line Becomes a River: Dispatches from the Border* by Francisco Cantú  
 * **👨‍💼 On Political Appointments and Governance:**  
     * [🔥💣💥😡🤬 Fire and Fury: Inside the Trump White House](../books/fire-and-fury-inside-the-trump-white-house.md) by Michael Wolff  
-    * [😱🤡🇺🇸 Fear: Trump in the White House](../books/fear.md) by Bob Woodward
+    * [😱🤡🇺🇸 Fear: Trump in the White House](../books/fear.md) by Bob Woodward  
+  
+## 🐦 Tweet  
+<blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">🤯😲😳 You Aren&#39;t Going to Believe This<a href="https://twitter.com/AdamSchiff?ref_src=twsrc%5Etfw">@AdamSchiff</a> <br><br>👹 <a href="https://twitter.com/realDonaldTrump?ref_src=twsrc%5Etfw">@realDonaldTrump</a> Appointments 🏛️💥 Insurrectionist Jared Weiss to 🧑‍⚖️ Justice Department | 👮 FBI Morale | 🛂 Immigration Raids | 💣 Terrorism Unit | 🏛️ Political Influence | 💼 Corporate Crime<a href="https://t.co/JPL3vxqXaV">https://t.co/JPL3vxqXaV</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/1942954808002146350?ref_src=twsrc%5Etfw">July 9, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

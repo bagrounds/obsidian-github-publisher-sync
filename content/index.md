@@ -10,7 +10,9 @@ title: 🏡 Home
 📑 Notes, 💭 thoughts, and 🔗 Links.  
 ❔ What do 🫵 _you_ 🤔 think?  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (235)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (237)  
+- [2025-07-09](./reflections/2025-07-09.md)  
+- [2025-07-08 | 🧠🧘🏼‍♀️ Operating Ourselves 📚](./reflections/2025-07-08.md)  
 - [2025-07-07 | 🇺🇸🔬🏗️ Structure 📺📚](./reflections/2025-07-07.md)  
 - [2025-07-06 | 🤖 AI, 🦠 Germs, and 🏫 School](./reflections/2025-07-06.md)  
 - [2025-07-05 | 🤕🏚️➡️💸➡️🏰 Robber 🧛🏻‍♂️🤝👹 Barons 🤖💬📚📺📄](./reflections/2025-07-05.md)  
@@ -19,11 +21,11 @@ title: 🏡 Home
 - [2025-07-02 | 🧠 Brains 📚](./reflections/2025-07-02.md)  
 - [2025-07-01 | 🇺🇸🏛️💸 50 Senators Betray US 📺📰 🔍📚](./reflections/2025-07-01.md)  
 - [2025-06-30 | 🇺🇸👹📜💸 Conning US 📺📚](./reflections/2025-06-30.md)  
-- [2025-06-29 | 💪 Creatine | 💃🏼🕺🏽 Movement 🌌📚📺](./reflections/2025-06-29.md)  
-- [2025-06-28 | 🇺🇸🏛️ American 🗳️⚖️ Democracy 📚📺](./reflections/2025-06-28.md)  
   
   
-## [📚 Books](./books/index.md) (501)  
+## [📚 Books](./books/index.md) (502)  
+- [🧘🏼‍♀️👩🏼‍🏫 Practicing Mindfulness: An Introduction to Meditation](./books/practicing-mindfulness-an-introduction-to-meditation.md)  
+- [🧠📈 Outsmart Yourself: Brain-Based Strategies for a Bettery You](./books/outsmart-yourself-brain-based-strategies-for-a-bettery-you.md)  
 - [🥼🛡️ The Scientific Attitude: Defending Science from Denial, Fraud, and Pseudoscience](./books/the-scientific-attitude.md)  
 - [🤖🗣️🐒⚙️ Cybernetics: or Control and Communication in the Animal and the Machine](./books/cybernetics.md)  
 - [⚖️👈 The Tipping Point: How Little Things Can Make a Big Difference](./books/the-tipping-point.md)  
@@ -32,11 +34,10 @@ title: 🏡 Home
 - [⚛️🌎 Beyond Weird: Why Everything You Thought You Knew about Quantum Physics Is Different](./books/beyond-weird.md)  
 - [🃏🎲 Fooled by Randomness: The Hidden Role of Chance in Life and in the Markets](./books/fooled-by-randomness-the-hidden-role-of-chance-in-life-and-in-the-markets.md)  
 - [🏛️🗣️ Polemic for Democracy](./books/polemic-for-democracy.md)  
-- [🔬🔄 The Structure of Scientific Revolutions](./books/the-structure-of-scientific-revolutions.md)  
-- [😥🏫🇺🇸 The Shame of the Nation: The Restoration of Apartheid Schooling in America](./books/the-shame-of-the-nation-the-restoration-of-apartheid-schooling-in-america.md)  
   
   
-## [📺 Videos](./videos/index.md) (190)  
+## [📺 Videos](./videos/index.md) (191)  
+- [👑🏙️🏛️ What Trump’s Threat to ‘Take Over’ Cities Says About Our Democracy](./videos/what-trumps-threat-to-take-over-cities-says-about-our-democracy.md)  
 - [🇺🇸🛠️⏱️🏛️ How to Rebuild American Democracy in 20 Minutes](./videos/how-to-rebuild-american-democracy-in-20-minutes.md)  
 - [👹💰🚫👩‍🏫 Trump administration withholds billions in school grants for critical programs](./videos/trump-administration-withholds-billions-in-school-grants-for-critical-programs.md)  
 - [🤖🧠🚀📈 Using Generative AI to Strengthen & Accelerate Learning • Barbara Oakley • GOTO 2024](./videos/using-generative-ai-to-strengthen-accelerate-learning-barbara-oakley-goto-2024.md)  
@@ -46,7 +47,6 @@ title: 🏡 Home
 - [🇺🇸📈💡🔮🚀 What the U.S. has accomplished in 250 years of innovation and what’s next](./videos/what-the-us-has-accomplished-in-250-years-of-innovation-and-whats-next.md)  
 - [📜🇺🇸🗽➡️ The Declaration of Independence | Journey to American Democracy](./videos/the-declaration-of-independence-journey-to-american-democracy.md)  
 - [👹👶🏼💸➡️👴🏻💰 What Trump’s ‘Big, Beautiful Bill’ Is Really Doing (Part 2) | The Ezra Klein Show](./videos/what-trumps-big-beautiful-bill-is-really-doing-part-2-the-ezra-klein-show.md)  
-- [👤💀🏛️🚓 Suspect Captured, Charged In Shootings Of Minnesota Lawmakers | NPR News Now](./videos/suspect-captured-charged-in-shootings-of-minnesota-lawmakers-npr-news-now.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (79)  

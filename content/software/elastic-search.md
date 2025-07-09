@@ -1,12 +1,12 @@
 ---
 share: true
 aliases:
-  - Elastic Search
-title: Elastic Search
+  - ↔️🔍 Elastic Search
+title: ↔️🔍 Elastic Search
 URL: https://bagrounds.org/software/elastic-search
 ---
 [Home](../index.md) > [Software](./index.md)  
-# Elastic Search  
+# ↔️🔍 Elastic Search  
   
 ## 🤖 AI Summary  
 ### 💾 Software Report: Elasticsearch 🔍  

@@ -30,12 +30,16 @@ CTA: Reclaim your brain.
 - 🚶🏼‍♀️ Move your body to solve problems  
 - ⏳ Spend time with things to like them more  
 - 🥳 Exciting activities help people bond  
-- 😊 To be happy  
+- 😊 To be happier  
+    - 🙏 Express gratitude  
     - 🏞️ View nature  
     - 🏃 Exercise  
     - 🧠 Be mindful  
     - 🧘 Meditate  
+    - ⏳ Think about time more than money  
     - 💲 Value your time more  
+    - 🥛 Be more optimistic  
+        - 💪 Trying builds habitual optimism  
 - 😊 Being happy makes you  
     - 🧠 smarter  
     - 🚀 more productive 🎉  

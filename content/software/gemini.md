@@ -1,12 +1,12 @@
 ---
 share: true
 aliases:
-  - Gemini
-title: Gemini
+  - 🤖♊ Gemini
+title: 🤖♊ Gemini
 URL: https://bagrounds.org/software/gemini
 ---
 [Home](../index.md) > [Software](./index.md)  
-# Gemini  
+# 🤖♊ Gemini  
   
 ## 🤖 AI Summary  
 ### 👉 What Is It?  

@@ -1,12 +1,12 @@
 ---
 share: true
 aliases:
-  - Obsidian
-title: Obsidian
+  - 💾✍️🌋⚫️ Obsidian
+title: 💾✍️🌋⚫️ Obsidian
 URL: https://bagrounds.org/software/obsidian
 ---
 [Home](../index.md) > [Software](./index.md)  
-# Obsidian  
+# 💾✍️🌋⚫️ Obsidian  
   
 ## 🤖 AI Summary  
 ### 💾 Software Report: Obsidian 📝✨  

@@ -3,7 +3,7 @@ share: true
 aliases:
   - 👑🏙️🏛️ What Trump’s Threat to ‘Take Over’ Cities Says About Our Democracy
 title: 👑🏙️🏛️ What Trump’s Threat to ‘Take Over’ Cities Says About Our Democracy
-URL: https://bagrounds.org/videos/
+URL: https://bagrounds.org/videos/what-trumps-threat-to-take-over-cities-says-about-our-democracy
 Author: 
 Platform: 
 Channel: Heather Cox Richardson
@@ -40,4 +40,7 @@ youtube: https://youtu.be/Fy3FGdPbWq8
   
 * 📉 **_Socialism: An Economic and Sociological Analysis_** by Ludwig von Mises: Critiques socialism 🚩, arguing it's economically unfeasible, providing another key contrasting viewpoint.  
   
-* 🗳️🕊️🇺🇸 **[Democracy in America](../books/democracy-in-america.md)** by Alexis de Tocqueville: A classic study of American democracy 🗳️🕊️🇺🇸, relevant for understanding the historical foundations of American political ideals.
+* 🗳️🕊️🇺🇸 **[Democracy in America](../books/democracy-in-america.md)** by Alexis de Tocqueville: A classic study of American democracy 🗳️🕊️🇺🇸, relevant for understanding the historical foundations of American political ideals.  
+  
+## 🐦 Tweet  
+<blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">👑🏙️🏛️ What Trump’s Threat to ‘Take Over’ Cities Says About Our Democracy<a href="https://twitter.com/HC_Richardson?ref_src=twsrc%5Etfw">@HC_Richardson</a> <a href="https://twitter.com/ZohranKMamdani?ref_src=twsrc%5Etfw">@ZohranKMamdani</a><br><br>📜 History | 🗣️ Republican Rhetoric | 👹 Authoritarianism | 🚩 Socialism | 🗳️ Voting Rights | ⚖️ Civil Rights | 🇺🇸 American Ideals<a href="https://t.co/6VmKaxOptm">https://t.co/6VmKaxOptm</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/1942944852628693350?ref_src=twsrc%5Etfw">July 9, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

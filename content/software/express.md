@@ -1,12 +1,12 @@
 ---
 share: true
 aliases:
-  - Express.js
-title: Express.js
+  - 🌐🛤️ Express.js
+title: 🌐🛤️ Express.js
 URL: https://bagrounds.org/software/express
 ---
 [Home](../index.md) > [Software](./index.md)  
-# Express.js  
+# 🌐🛤️ Express.js  
   
 ## 🤖 AI Summary  
 ### 💾 Software Report: Express.js 🚀  

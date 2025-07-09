@@ -1,12 +1,12 @@
 ---
 share: true
 aliases:
-  - Cursor
-title: Cursor
+  - 🤖🖱️📍 Cursor
+title: 🤖🖱️📍 Cursor
 URL: https://bagrounds.org/software/cursor
 ---
 [Home](../index.md) > [Software](./index.md)  
-# Cursor  
+# 🤖🖱️📍 Cursor  
   
 ## 🤖 AI Summary  
 ### 🔨 Tool Report: Cursor IDE 💻  

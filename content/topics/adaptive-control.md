@@ -1,12 +1,12 @@
 ---
 share: true
 aliases:
-  - Adaptive Control
-title: Adaptive Control
+  - ⚙️🧠🔄 Adaptive Control
+title: ⚙️🧠🔄 Adaptive Control
 URL: https://bagrounds.org/topics/adaptive-control
 ---
 [Home](../index.md) > [Topics](./index.md) > [Knowledge](./a-hierarchical-view-of-human-knowledge.md) > [Engineering](./engineering.md) > [Electrical Engineering](./electrical-engineering.md) > [Control Systems](./control-systems.md)  
-# Adaptive Control  
+# ⚙️🧠🔄 Adaptive Control  
 ## 🤖 AI Summary  
 **High-Level Summary:**  
   

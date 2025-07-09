@@ -7,7 +7,7 @@ URL: https://bagrounds.org/books
 backlinks: false
 ---
 [Home](../index.md)  
-# 📚 Books (501)  
+# 📚 Books (502)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)  
 - [🧑‍🤝‍🧑📈 10 to 25: The Science of Motivating Young People: A Groundbreaking Approach to Leading the Next Generation - And Making Your Own Life Easier](./10-to-25-the-science-of-motivating-young-people-a-groundbreaking-approach-to-leading-the-next-generation-and-making-your-own-life-easier.md)  
@@ -290,6 +290,7 @@ Feedback Control of Dynamic Systems]]
 - [🏛️🗣️ Polemic for Democracy](./polemic-for-democracy.md)  
 - [🇺🇸💥 Political Violence in America: Historical Flashpoints and Modern-Day Trends](./political-violence-in-america-historical-flashpoints-and-modern-day-trends.md)  
 - [👑💪🏽⁉️ Power: Why Some People Have It - and Others Don't](./power-why-some-people-have-it-and-others-dont.md)  
+- [🧘🏼‍♀️👩🏼‍🏫 Practicing Mindfulness: An Introduction to Meditation](./practicing-mindfulness-an-introduction-to-meditation.md)  
 - [🔮🤷🏼‍♀️🤪 Predictably Irrational: The Hidden Forces That Shape Our Decisions](./predictably-irrational.md)  
 - [🧑‍🏫📉🎤🧘 Presentation Zen: Simple Ideas on Presentation Design and Delivery](./presentation-zen.md)  
 - [🤖✅ Principles of Model Checking](./principles-of-model-checking.md)  

@@ -22,9 +22,9 @@ youtube: https://youtu.be/Fy3FGdPbWq8
 * 😠 Trump's recent statements demonstrate how the MAGA Republican party is unwilling to accept democratic outcomes 🗳️ if they disagree with them 👎 \[[04:22](http://www.youtube.com/watch?v=Fy3FGdPbWq8&t=262)\].  
   
 ## 📚 Book Recommendations  
-* 🚩 **_The Socialist Manifesto: The Case for Radical Politics in an Era of Extreme Inequality_** by Bhaskar Sunkara: Presents a modern argument for democratic socialism 🗳️🕊️, clarifying its goals and distinguishing it from other ideologies.  
+* **[🚩⚖️ The Socialist Manifesto: The Case for Radical Politics in an Era of Extreme Inequality](../books/the-socialist-manifesto-the-case-for-radical-politics-in-an-era-of-extreme-inequality.md)** by Bhaskar Sunkara: Presents a modern argument for democratic socialism 🗳️🕊️, clarifying its goals and distinguishing it from other ideologies.  
   
-* 📣 **_Why You Should Be a Socialist_** by Nathan Robinson: An accessible contemporary argument for democratic socialism 🗳️🕊️, addressing common misunderstandings and making a case for its benefits.  
+* **[🫵🤝🌍🏛️ Why You Should Be a Socialist](../books/why-you-should-be-a-socialist.md)** by Nathan Robinson: An accessible contemporary argument for democratic socialism 🗳️🕊️, addressing common misunderstandings and making a case for its benefits.  
   
 * ⚙️ **_Towards a New Socialism_** by W. Paul Cockshott and Allin Cottrell: Discusses the practicalities and economic models for a socialist system 🚩, offering a detailed perspective on its implementation.  
   

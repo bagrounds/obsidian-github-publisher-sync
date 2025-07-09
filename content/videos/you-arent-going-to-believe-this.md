@@ -36,7 +36,7 @@ Senator Adam Schiff discusses several critical issues regarding the changes and 
 * **💼 On White-Collar Crime and Corporate Prosecutions:**  
     * 🩸 *Bad Blood: Secrets and Lies in a Silicon Valley Startup* by John Carreyrou  
     * 💰 *Den of Thieves* by James B. Stewart  
-* ** border On Immigration Policy and Enforcement:**  
+* **🧱 On Immigration Policy and Enforcement:**  
     * ❓ *Tell Me How It Ends: An Essay in 40 Questions* by Valeria Luiselli  
     * 🏞️ *The Line Becomes a River: Dispatches from the Border* by Francisco Cantú  
 * **👨‍💼 On Political Appointments and Governance:**  

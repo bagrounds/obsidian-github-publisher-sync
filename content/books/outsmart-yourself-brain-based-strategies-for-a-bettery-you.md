@@ -28,6 +28,17 @@ CTA: Reclaim your brain.
 - 😁 Smile for happiness  
 - 🦸🏼‍♀️ Pose like Wonder Woman for confidence  
 - 🚶🏼‍♀️ Move your body to solve problems  
+- ⏳ Spend time with things to like them more  
+- 🥳 Exciting activities help people bond  
+- 😊 To be happy  
+    - 🏞️ View nature  
+    - 🏃 Exercise  
+    - 🧠 Be mindful  
+    - 🧘 Meditate  
+    - 💲 Value your time more  
+- 😊 Being happy makes you  
+    - 🧠 smarter  
+    - 🚀 more productive 🎉  
   
 ## 🧠 Book Report: Outsmart Yourself: Brain-Based Strategies for a Better You  
   

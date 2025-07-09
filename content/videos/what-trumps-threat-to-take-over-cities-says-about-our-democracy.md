@@ -10,7 +10,7 @@ Channel: Heather Cox Richardson
 tags: 
 youtube: https://youtu.be/Fy3FGdPbWq8
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](../index.md) > [Videos](./index.md) | [🏛️🇺🇸📖 Heather Cox Richardson](../people/heather-cox-richardson.md)  
 # 👑🏙️🏛️ What Trump’s Threat to ‘Take Over’ Cities Says About Our Democracy  
 ![What Trump’s Threat to ‘Take Over’ Cities Says About Our Democracy](https://youtu.be/Fy3FGdPbWq8)  
   

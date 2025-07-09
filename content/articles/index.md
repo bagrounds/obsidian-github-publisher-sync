@@ -4,6 +4,7 @@ aliases:
   - 📄  Articles
 title: 📄 Articles
 backlinks: false
+URL: https://bagrounds.org/articles
 ---
 [Home](../index.md)  
 # 📄 Articles (30)  

@@ -10,7 +10,7 @@ Channel: Y Combinator
 tags: 
 youtube: https://youtu.be/LCEmiRjPEtQ
 ---
-[Home](../index.md) > [Videos](./index.md) | [Andrej Karpathy](../people/andrej-karpathy.md)  
+[Home](../index.md) > [Videos](./index.md) | [🤖🧠💻 Andrej Karpathy](../people/andrej-karpathy.md)  
 # 💻🔄💻 Andrej Karpathy: Software Is Changing (Again)  
 ![Andrej Karpathy: Software Is Changing (Again)](https://youtu.be/LCEmiRjPEtQ)  
   
@@ -18,7 +18,7 @@ youtube: https://youtu.be/LCEmiRjPEtQ
 * ⚙️ **Evolution of Software**:  
     * 👨‍💻 **Software 1.0:** ⌨️ Traditional code written by humans \[[01:42](http://www.youtube.com/watch?v=LCEmiRjPEtQ&t=102)\].  
     * 🧠 **Software 2.0:** 🕸️ Neural networks, where the code is learned through data and optimization \[[01:48](http://www.youtube.com/watch?v=LCEmiRjPEtQ&t=108)\].  
-    * 🗣️ **Software 3.0:** 🤖 Large Language Models (LLMs) that are programmable using natural language prompts \[[03:06](http://www.youtube.com/watch?v=LCEmiRjPEtQ&t=186)\].  
+    * 🗣️ **Software 3.0:** [🤖🦜 Large Language Models (LLMs)](../topics/large-language-models.md) that are programmable using natural language prompts \[[03:06](http://www.youtube.com/watch?v=LCEmiRjPEtQ&t=186)\].  
 * 🏢 **LLMs as New Operating Systems**:  
     * 💡 LLMs are likened to utilities due to centralized training (capex) and metered access via APIs (opex) \[[06:35](http://www.youtube.com/watch?v=LCEmiRjPEtQ&t=395)\].  
     * 🏭 LLMs are analogous to fabs due to significant capital investment and rapid technological advancements \[[08:04](http://www.youtube.com/watch?v=LCEmiRjPEtQ&t=484)\].  
@@ -40,7 +40,7 @@ youtube: https://youtu.be/LCEmiRjPEtQ
 ## 📚 Book Recommendations  
 * **[🧠💻🤖 Deep Learning](../books/deep-learning.md)** by Ian Goodfellow, Yoshua Bengio, and Aaron Courville: 🏆 This is the **definitive guide to neural networks and deep learning** (what the video calls "Software 2.0"). 🤓 It's technical but comprehensive.  
 * 🗺️ **The Master Algorithm: How the Quest for the Ultimate Learning Machine Will Remake Our World** by Pedro Domingos: 🧩 It **explains different types of machine learning**, helping you understand where deep learning fits in the broader AI landscape.  
-* 🗣️ **Large Language Models: Concepts, Techniques and Applications** by David Atkinson and Victor Abutridy: 📖 A great introduction to **how LLMs work, the models available, and how they're evaluated**.  
+* **[🤖🦜 Large Language Models: Concepts, Techniques and Applications](../books/large-language-models-concepts-techniques-and-applications.md)** by David Atkinson and Victor Abutridy: 📖 A great introduction to **how LLMs work, the models available, and how they're evaluated**.  
 * 🧑‍💻 **Hands-On Large Language Models** by Jay Alammar and Maarten Grootendorst: 🛠️ This is a **practical guide for building with LLMs**, covering key techniques like prompt engineering and RAG.  
 * **[🧬👥💾 Life 3.0: Being Human in the Age of Artificial Intelligence](../books/life-3-0.md)** by Max Tegmark: 🤔 Explores the **long-term impact of AI on humanity** and why aligning AI with human values is crucial.  
 * 🇨🇳 **AI Superpowers: China, Silicon Valley, and the New World Order** by Kai-Fu Lee: 🌎 Provides insight into the **global competition in AI** and its economic and societal effects.  

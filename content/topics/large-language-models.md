@@ -1,12 +1,12 @@
 ---
 share: true
 aliases:
-  - Large Language Models
-title: Large Language Models
+  - 🤖🦜 Large Language Models
+title: 🤖🦜 Large Language Models
 URL: https://bagrounds.org/topics/large-language-models
 ---
 [Home](../index.md) > [Topics](./index.md)  
-# Large Language Models  
+# 🤖🦜 Large Language Models  
 ## 🤖 AI Summary  
 ### 👉 What Is It?  
   

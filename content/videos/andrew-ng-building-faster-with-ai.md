@@ -10,7 +10,7 @@ Channel: Y Combinator
 tags: 
 youtube: https://youtu.be/RNJCfif1dPY
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](../index.md) > [Videos](./index.md) | [👨‍🏫🤖 Andrew Ng](../people/andrew-ng.md)  
 # 🤖🚀📈 Andrew Ng: Building Faster with AI  
 ![Andrew Ng: Building Faster with AI](https://youtu.be/RNJCfif1dPY)  
   

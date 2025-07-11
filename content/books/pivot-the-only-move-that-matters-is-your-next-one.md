@@ -5,6 +5,7 @@ aliases:
 URL: https://bagrounds.org/books/pivot-the-only-move-that-matters-is-your-next-one
 share: true
 affiliate link: https://amzn.to/40uJFbA
+CTA: Embrace change.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ➡️ Pivot: The Only Move That Matters Is Your Next One  
@@ -65,7 +66,7 @@ The book also highlights the importance of:
 * **[👤📈🎯🌟🔑🤝🏆 The 7 Habits of Highly Effective People](./the-7-habits-of-highly-effective-people.md) by Stephen R. Covey:** A foundational book on personal and professional effectiveness, emphasizing principles like proactivity and beginning with the end in mind, which are essential for intentional career navigation.  
 * 💪 **Choose Yourself by James Altucher:** Encourages readers to invest in themselves, their ideas, and their well-being, particularly relevant for those considering striking out on their own or building a career on their unique strengths and interests.  
 * 🛡️ **Rejection Proof: How I Beat Fear and Became Invincible Through 100 Days of Rejection by Jia Jiang:** Offers a new perspective on overcoming the fear of rejection, a common obstacle when networking, pitching ideas, or seeking new opportunities during a pivot.  
-* 🧭 **Start with Why: How Great Leaders Inspire Everyone to Take Action by Simon Sinek:** Helps individuals identify their core motivation and purpose, providing a strong foundation and direction for any significant career pivot.".  
+* **[❓🎯 Start with Why: How Great Leaders Inspire Everyone to Take Action](./start-with-why-how-great-leaders-inspire-everyone-to-take-action.md) by Simon Sinek:** Helps individuals identify their core motivation and purpose, providing a strong foundation and direction for any significant career pivot.".  
   
 ## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Pivot: The Only Move That Matters Is Your Next One. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

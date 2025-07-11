@@ -34,7 +34,7 @@ youtube: https://youtu.be/RNJCfif1dPY
 * **🚀 For Startup Execution and Speed:**  
     * [📉🧪🚀 The Lean Startup: How Today's Entrepreneurs Use Continuous Innovation to Create Radically Successful Businesses](../books/the-lean-startup.md) by Eric Ries  
     * 📈 "Blitzscaling" by Reid Hoffman and Chris Yeh  
-    * 🎯 "Start with Why" by Simon Sinek (for developing concrete ideas and purpose)  
+    * [❓🎯 Start with Why: How Great Leaders Inspire Everyone to Take Action](../books/start-with-why-how-great-leaders-inspire-everyone-to-take-action.md) by Simon Sinek (for developing concrete ideas and purpose)  
 * **📣 For Product Management and Feedback:**  
     * 🧑‍💻 "Inspired: How to Create Tech Products Customers Love" by Marty Cagan  
     * 🗣️ "The Mom Test: How to talk to anyone about your business idea and know if it's good" by Rob Fitzpatrick  

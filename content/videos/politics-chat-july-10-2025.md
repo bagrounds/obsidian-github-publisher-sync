@@ -38,3 +38,4 @@ youtube: https://www.youtube.com/embed/JCfHvSctDz0
     * [⚠️🥴🕹️🌐 The Fifth Risk](../books/the-fifth-risk.md) by Michael Lewis  
   
 ## 🐦 Tweet  
+<blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">💰🌊🚧🏛️🪧🚨 Politics Chat, July 10, 2025<br><br>🏛️ Looting Public Programs | 🌊 Incompetent Flash Flood Response | 🌮 <a href="https://twitter.com/hashtag/TACO?src=hash&amp;ref_src=twsrc%5Etfw">#TACO</a> Tariffs | 🌪️ Admin Infighting | ✊ Growing Opposition | 🚨 Desperate Power Grabs | 🇺🇸 Birthright Citizenship<a href="https://twitter.com/HC_Richardson?ref_src=twsrc%5Etfw">@HC_Richardson</a>: Thank you!<a href="https://t.co/LKXfTE90Dr">https://t.co/LKXfTE90Dr</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/1943480001615269987?ref_src=twsrc%5Etfw">July 11, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

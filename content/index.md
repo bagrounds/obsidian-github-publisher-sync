@@ -10,7 +10,9 @@ title: 🏡 Home
 📑 Notes, 💭 thoughts, and 🔗 Links.  
 ❔ What do 🫵 _you_ 🤔 think?  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (237)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (239)  
+- [2025-07-11](./reflections/2025-07-11.md)  
+- [2025-07-10 | 🤖 AI | 🪧 Pushback 📺📚👥](./reflections/2025-07-10.md)  
 - [2025-07-09 | 👹 Authority ⚔️ versus 🌍 Society 📺📚](./reflections/2025-07-09.md)  
 - [2025-07-08 | 🧠🧘🏼‍♀️ Operating Ourselves 📚](./reflections/2025-07-08.md)  
 - [2025-07-07 | 🇺🇸🔬🏗️ Structure 📺📚](./reflections/2025-07-07.md)  
@@ -19,42 +21,40 @@ title: 🏡 Home
 - [2025-07-04 | 🇺🇸 Independence Day 📺](./reflections/2025-07-04.md)  
 - [2025-07-03 | 🤫 Subliminal 📚](./reflections/2025-07-03.md)  
 - [2025-07-02 | 🧠 Brains 📚](./reflections/2025-07-02.md)  
-- [2025-07-01 | 🇺🇸🏛️💸 50 Senators Betray US 📺📰 🔍📚](./reflections/2025-07-01.md)  
-- [2025-06-30 | 🇺🇸👹📜💸 Conning US 📺📚](./reflections/2025-06-30.md)  
   
   
-## [📚 Books](./books/index.md) (504)  
+## [📚 Books](./books/index.md) (506)  
+- [🧘🏼‍♀️👩🏼‍🏫 Practicing Mindfulness: An Introduction to Meditation](./books/practicing-mindfulness-an-introduction-to-meditation.md)  
+- [🏛️❓ Who Is Government?: The Untold Story of Public Service](./books/who-is-government-the-untold-story-of-public-service.md)  
+- [🍊🤡🤥👹💥🏛️🇺🇸 I Alone Can Fix It: Donald J. Trump's Catastrophic Final Year](./books/i-alone-can-fix-it-donald-j-trumps-catastrophic-final-year.md)  
+- [⚠️😬😰 Peril](./books/peril.md)  
+- [🤯🐍🏘️🎪💥 Mad House: How Donald Trump, MAGA Mean Girls, a Former Used Car Salesman, a Florida Nepo Baby, and a Man with Rats in His Walls Broke Congress](./books/mad-house.md)  
+- [⚠️🥴🕹️🌐 The Fifth Risk](./books/the-fifth-risk.md)  
+- [🤖🦜 Large Language Models: Concepts, Techniques and Applications](./books/large-language-models-concepts-techniques-and-applications.md)  
 - [🚩⚖️ The Socialist Manifesto: The Case for Radical Politics in an Era of Extreme Inequality](./books/the-socialist-manifesto-the-case-for-radical-politics-in-an-era-of-extreme-inequality.md)  
 - [🫵🤝🌍🏛️ Why You Should Be a Socialist](./books/why-you-should-be-a-socialist.md)  
-- [🧘🏼‍♀️👩🏼‍🏫 Practicing Mindfulness: An Introduction to Meditation](./books/practicing-mindfulness-an-introduction-to-meditation.md)  
 - [🧠📈 Outsmart Yourself: Brain-Based Strategies for a Bettery You](./books/outsmart-yourself-brain-based-strategies-for-a-bettery-you.md)  
-- [🥼🛡️ The Scientific Attitude: Defending Science from Denial, Fraud, and Pseudoscience](./books/the-scientific-attitude.md)  
-- [🤖🗣️🐒⚙️ Cybernetics: or Control and Communication in the Animal and the Machine](./books/cybernetics.md)  
-- [⚖️👈 The Tipping Point: How Little Things Can Make a Big Difference](./books/the-tipping-point.md)  
-- [🌡️⚙️ Inventing Temperature: Measurement and Scientific Progress](./books/inventing-temperature-measurement-and-scientific-progress.md)  
-- [💭🦠 Thought Contagion: How Belief Spreads Through Society](./books/thought-contagion.md)  
-- [⚛️🌎 Beyond Weird: Why Everything You Thought You Knew about Quantum Physics Is Different](./books/beyond-weird.md)  
   
   
-## [📺 Videos](./videos/index.md) (193)  
+## [📺 Videos](./videos/index.md) (198)  
+- [🎓🎮🏆✨ Last Lecture Series: How to Design a Winnable Game – Graham Weaver](./videos/last-lecture-series-how-to-design-a-winnable-game-graham-weaver.md)  
+- [🤖🚀📈 Andrew Ng: Building Faster with AI](./videos/andrew-ng-building-faster-with-ai.md)  
+- [💰🌊🚧🏛️🪧🚨 Politics Chat, July 10, 2025](./videos/politics-chat-july-10-2025.md)  
+- [👹👀🇺🇸📉 The Big Short author Michael Lewis on what he thinks happens next with Trump and the USA](./videos/the-big-short-author-michael-lewis-on-what-he-thinks-happens-next-with-trump-and-the-usa.md)  
+- [🏛️📉🇺🇸🔟 Schiff Takes To Senate Floor to Lay Out the Top 10 Ways Trump is Wrecking America](./videos/schiff-takes-to-senate-floor-to-lay-out-the-top-10-ways-trump-is-wrecking-america.md)  
+- [💻🔄💻 Andrej Karpathy: Software Is Changing (Again)](./videos/andrej-karpathy-software-is-changing-again.md)  
 - [📢👁️🗣️💡 It's Our Job to Make Sure People Know the Truth](./videos/its-our-job-to-make-sure-people-know-the-truth.md)  
 - [🤯😲😳 You Aren't Going to Believe This](./videos/you-arent-going-to-believe-this.md)  
 - [📜🇺🇸🗽➡️ The Declaration of Independence | Journey to American Democracy](./videos/the-declaration-of-independence-journey-to-american-democracy.md)  
 - [👑🏙️🏛️ What Trump’s Threat to ‘Take Over’ Cities Says About Our Democracy](./videos/what-trumps-threat-to-take-over-cities-says-about-our-democracy.md)  
-- [🇺🇸🛠️⏱️🏛️ How to Rebuild American Democracy in 20 Minutes](./videos/how-to-rebuild-american-democracy-in-20-minutes.md)  
-- [👹💰🚫👩‍🏫 Trump administration withholds billions in school grants for critical programs](./videos/trump-administration-withholds-billions-in-school-grants-for-critical-programs.md)  
-- [🤖🧠🚀📈 Using Generative AI to Strengthen & Accelerate Learning • Barbara Oakley • GOTO 2024](./videos/using-generative-ai-to-strengthen-accelerate-learning-barbara-oakley-goto-2024.md)  
-- [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./videos/10-charts-to-understand-the-900-page-budget-bill.md)  
-- [💰🔄 Trump’s mega bill ‘hasn’t even cut taxes, it’s redistributed them’ | Justin Wolfers](./videos/trumps-mega-bill-hasnt-even-cut-taxes-its-redistributed-them-justin-wolfers.md)  
-- [😵‍💫🇺🇸🐘🚫 Strange cognitive dissonance among the MAGA who are convinced to vote against their own interests](./videos/strange-cognitive-dissonance-among-the-maga-who-are-convinced-to-vote-against-their-own-interests.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (79)  
+- [🤖🦜 Large Language Models](./topics/large-language-models.md)  
 - [⚙️🧠🔄 Adaptive Control](./topics/adaptive-control.md)  
 - [😴🛌🧘 REST](./topics/rest.md)  
 - [💾🧱⚡️ Static Site Generation](./topics/static-site-generation.md)  
 - [🧠🌍⚙️ Model Context Protocol](./topics/model-context-protocol.md)  
-- [🤖🕸️💸🔎 Google Search Crawl Budget](./topics/google-search-crawl-budget.md)  
   
   
 ## [🤖💬 Bot Chats](./bot-chats/index.md) (33)  
@@ -81,10 +81,10 @@ title: 🏡 Home
 - [↔️🔍 Elastic Search](./software/elastic-search.md)  
   
   
-## [👥 People](./people/index.md) (9)  
+## [👥 People](./people/index.md) (10)  
+- [👨‍🏫🤖 Andrew Ng](./people/andrew-ng.md)  
+- [🤖🧠💻 Andrej Karpathy](./people/andrej-karpathy.md)  
 - [🧠🔬🧘‍♀️💪📈❤️‍🩹🗣️📚🌟 Kelly McGonigal](./people/kelly-mcgonigal.md)  
-- [🏛️🇺🇸📖 Heather Cox Richardson](./people/heather-cox-richardson.md)  
-- [🤔⚙️🗣️🤝💡🧩🔭📚👴 Russell Ackoff](./people/russell-ackoff.md)  
   
   
 ## 🔗 Profiles  

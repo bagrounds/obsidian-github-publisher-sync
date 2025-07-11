@@ -6,10 +6,13 @@ title: "🏎️⛽ Drive: The Surprising Truth About What Motivates Us"
 URL: https://bagrounds.org/books/drive-the-surprising-truth-about-what-motivates-us
 Author: 
 tags: 
-affiliate link: https://www.amazon.com/dp/1594488843/ref=cm_sw_r_as_gl_apa_gl_i_ANPS5G8TJB6ED4K8GVR3?linkCode=ml1&tag=bagrounds-20
+affiliate link: https://amzn.to/4o1nZyf
+CTA: Reimagine motivation.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🏎️⛽ Drive: The Surprising Truth About What Motivates Us  
+[🛒 Drive: The Surprising Truth About What Motivates Us. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4o1nZyf)  
+  
 ## 🤖 AI Summary  
 ### Drive: The Surprising Truth About What Motivates Us 🚗  
 **TL;DR:** Intrinsic motivation, driven by autonomy, mastery, and purpose, significantly outperforms extrinsic motivation (rewards and punishments) for complex, creative, and long-term tasks.  
@@ -64,8 +67,8 @@ affiliate link: https://www.amazon.com/dp/1594488843/ref=cm_sw_r_as_gl_apa_gl_i_
 * **Best Tangentially Related Book:** "[Thinking, Fast and Slow](./thinking-fast-and-slow.md)" by Daniel Kahneman. This book explores the cognitive biases that influence our decision-making, providing a broader understanding of human behavior. 🧠  
 * **Best Diametrically Opposed Book:** "The One Minute Manager" by Kenneth Blanchard and Spencer Johnson. This book advocates for a more directive and results-oriented management style, focusing on clear goals and feedback. ⏱️  
 * **Best Fiction Book That Incorporates Related Ideas:** "Atlas Shrugged" by Ayn Rand. This novel explores themes of individual achievement and the importance of personal motivation, although from a very different philosophical perspective. 🗽  
-* **Best Book That Is More General:** "Start With Why" by Simon Sinek. Sinek explores the concept of purpose, and how starting with "why" can lead to greater motivation and success. ❓  
-* **Best Book That Is More Specific:** "[Deep Work](./deep-work.md): Rules for Focused Success in a Distracted World" by Cal Newport. This book provides practical strategies for cultivating focus and mastery in a specific area. 🧘  
+* **Best Book That Is More General:** [❓🎯 Start with Why: How Great Leaders Inspire Everyone to Take Action](./start-with-why-how-great-leaders-inspire-everyone-to-take-action.md) by Simon Sinek. Sinek explores the concept of purpose, and how starting with "why" can lead to greater motivation and success. ❓  
+* **Best Book That Is More Specific:** [🤿💼 Deep Work: Rules for Focused Success in a Distracted World](./deep-work.md) by Cal Newport. This book provides practical strategies for cultivating focus and mastery in a specific area. 🧘  
 * **Best Book That Is More Rigorous:** "Self-Determination Theory: Basic Psychological Needs in Motivation, Development, and Wellness" by Richard M. Ryan and Edward L. Deci. This book is a comprehensive and scientific exploration of the theory. 🧪  
 * **Best Book That Is More Accessible:** "The Happiness Advantage" by Shawn Achor. This book provides an accessible and practical approach to applying positive psychology to improve happiness and performance. 😊  
   

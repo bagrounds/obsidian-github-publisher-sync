@@ -5,6 +5,7 @@ aliases:
 URL: https://bagrounds.org/books/7-rules-of-power
 share: true
 affiliate link: https://amzn.to/43Np5En
+CTA: Seize power.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 7️⃣📏👑 7 Rules of Power: Surprising - but True - Advice on How to Get Things Done and Advance Your Career  
@@ -51,8 +52,8 @@ Pfeffer outlines seven rules for building and using power:
 * 📚 **Power, for All: How It Really Works and Why It's Everyone's Business** by Julie Battilana & Tiziana Casciaro: 🤝 Offers a contrasting view, arguing that humility and warmth can increase a leader's power and focusing on collective empowerment.  
 * 📚 **Give and Take: Why Helping Others Drives Our Success** by Adam Grant: 😇 Argues that "givers" often achieve more long-term success than "takers," contrasting with a purely self-interested approach to power.  
 * 📚 **Dare to Lead** by Brené Brown: 🛡️ Champions vulnerability, courage, and empathy as key leadership strengths, directly opposing Pfeffer's skepticism about showing vulnerability.  
-* 📚 **Start with Why: How Great Leaders Inspire Everyone to Take Action** by Simon Sinek: 🎯 Focuses on purpose-driven leadership and inspiration rather than purely strategic power plays.  
-* 📚 **[The 7 Habits of Highly Effective People](./the-7-habits-of-highly-effective-people.md)** by Stephen Covey: 🌟 Emphasizes principle-centered leadership, integrity, and collaboration (win-win thinking).  
+* **[❓🎯 Start with Why: How Great Leaders Inspire Everyone to Take Action](./start-with-why-how-great-leaders-inspire-everyone-to-take-action.md)** by Simon Sinek: 🎯 Focuses on purpose-driven leadership and inspiration rather than purely strategic power plays.  
+* **[👤📈🎯🌟🔑🤝🏆 The 7 Habits of Highly Effective People](./the-7-habits-of-highly-effective-people.md)** by Stephen Covey: 🌟 Emphasizes principle-centered leadership, integrity, and collaboration (win-win thinking).  
   
 ### ✨ Creatively Related (Illustrations & Explorations)  
 * 👤 **Biographies of Powerful Figures:** 📚 Studying lives like 🇺🇸 Abraham Lincoln, 🇬🇧 Winston Churchill, ✊🏿 Malcolm X, 🚧 Robert Moses, or 🍎 Steve Jobs can provide nuanced case studies of power in action.  

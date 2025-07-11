@@ -11,6 +11,16 @@ affiliate link: https://amzn.to/44lHABp
 # 🧘🏼‍♀️👩🏼‍🏫 Practicing Mindfulness: An Introduction to Meditation  
 [🛒 Practicing Mindfulness: An Introduction to Meditation. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/44lHABp)  
   
+## 📝🐒 Human Notes  
+🧘 Practicing mindfulness is like 🐕‍🦺 training a puppy.  
+🐾 You put the puppy down and tell it to stay.  
+🤔 The puppy wonders away.  
+↩️ So you pick the puppy up again and put it down again and tell it to stay.  
+🚶 And it wonders away again.  
+😠 It does no good to treat the puppy harshly.  
+🔄 You do it over and over until one day, ✨ voila, the puppy stays.  
+🌬️ Likewise, firmly, but kindly returning the awareness to the breath 🧠 sharpens your attentiveness to what the mind is doing and accustoms it to staying put.  
+  
 ## 📖 Book Report: Practicing Mindfulness: An Introduction to Meditation  
   
 🧘 "Practicing Mindfulness: An Introduction to Meditation" appears to be a practical and accessible guide designed for individuals new to mindfulness and meditation. 📖 The book aims to introduce the core concepts and provide actionable techniques to incorporate mindfulness into daily life for reduced stress, improved mental well-being, and enhanced self-awareness.  

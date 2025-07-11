@@ -8,11 +8,11 @@ Author:
 Platform: 
 Channel: Heather Cox Richardson
 tags: 
-youtube: https://www.youtube.com/live/JCfHvSctDz0
+youtube: https://www.youtube.com/embed/JCfHvSctDz0
 ---
 [Home](../index.md) > [Videos](./index.md) | [🏛️🇺🇸📖 Heather Cox Richardson](../people/heather-cox-richardson.md)  
 # 💰🌊🚧🏛️🪧🚨 Politics Chat, July 10, 2025  
-![Politics Chat, July 10, 2025](https://www.youtube.com/live/JCfHvSctDz0)  
+![Politics Chat, July 10, 2025](https://www.youtube.com/embed/JCfHvSctDz0)  
   
 ## 🤖 AI Summary  
 * 💰⚖️ **Budget Reconciliation Bill and its Aftermath** \[[02:28](http://www.youtube.com/watch?v=JCfHvSctDz0&t=148)\]: The House passed a budget reconciliation bill on July 3rd, which was seen as a triumph by President Trump and MAGA Republicans. The bill cuts nearly a trillion dollars from Medicaid 🏥, reduces SNAP benefits 🍽️, eliminates energy credits ⚡, and allocates significant funds to immigration enforcement 🛂.  
@@ -35,4 +35,6 @@ youtube: https://www.youtube.com/live/JCfHvSctDz0
     * *The Globalization Paradox: Democracy and the Future of the World Economy* by Dani Rodrik  
 * 🏛️📜 **On Government and Public Policy:**  
     * [🗳️🕊️🇺🇸 Democracy in America](../books/democracy-in-america.md) by Alexis de Tocqueville  
-    * [⚠️🥴🕹️🌐 The Fifth Risk](../books/the-fifth-risk.md) by Michael Lewis
+    * [⚠️🥴🕹️🌐 The Fifth Risk](../books/the-fifth-risk.md) by Michael Lewis  
+  
+## 🐦 Tweet  

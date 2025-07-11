@@ -18,7 +18,7 @@ youtube: https://youtu.be/rbTaEsieWsU
 * 🤖 "AI will not replace humans, but humans who use AI will replace those who don't" \[[00:31](http://www.youtube.com/watch?v=rbTaEsieWsU&t=31)\].  
 * 🧠 There is a global demand for well-researched, neuroscientifically-based information on effective learning \[[02:42](http://www.youtube.com/watch?v=rbTaEsieWsU&t=162)\].  
 * ✍️ Generative AI, like ChatGPT, functions by predicting the next words in sentences and numerically relating words through "clever word embeddings" across entire essays and the internet \[[03:14](http://www.youtube.com/watch?v=rbTaEsieWsU&t=194)\].  
-* ⚙️ The 2017 paper "Attention Is All You Need" introduced the "transformer," which was foundational for companies like Anthropic and the development of ChatGPT \[[04:48](http://www.youtube.com/watch?v=rbTaEsieWsU&t=288)\].  
+* ⚙️ The 2017 paper [👀 Attention Is All You Need](../articles/attention-is-all-you-need.md) introduced the "transformer," which was foundational for companies like Anthropic and the development of ChatGPT \[[04:48](http://www.youtube.com/watch?v=rbTaEsieWsU&t=288)\].  
 * 🎶 The Suno app can generate songs from text inputs, suggesting that creativity 💡 can arise from various sources, not just humans \[[07:18](http://www.youtube.com/watch?v=rbTaEsieWsU&t=438)\].  
 * ➡️ A transformer has an encoder for the prompt and a decoder for the output \[[09:06](http://www.youtube.com/watch?v=rbTaEsieWsU&t=546)\].  
 * 🧠 The flow of information through transformers is remarkably similar to that of the human brain \[[09:28](http://www.youtube.com/watch?v=rbTaEsieWsU&t=568)\].  

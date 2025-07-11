@@ -22,7 +22,7 @@ tags:
   
 ## 📚 Books  
 📚 **1. For the Foundation of Deep Learning:**  
-* 🧠 **"[Deep Learning](../books/deep-learning.md)" by Ian Goodfellow, Yoshua Bengio, and Aaron Courville:**  
+* **[🧠💻🤖 Deep Learning](../books/deep-learning.md) by Ian Goodfellow, Yoshua Bengio, and Aaron Courville:**  
     * 💡 This is a comprehensive textbook covering the fundamentals of deep learning, including neural networks, backpropagation, and various architectures. 🏗️ It provides the necessary background to understand the context in which the Transformer was developed and why it was a significant departure from previous approaches. 🚀  
   
 📚 **2. For Natural Language Processing Context:**  
@@ -43,4 +43,4 @@ tags:
   
 📚 **6. To Consider the Implications:**  
 * ❓ **"The Alignment Problem: Machine Learning and Human Values" by Brian Christian:**  
-    * 🕊️ This book delves into the challenges of aligning advanced AI systems with human values. ⚖️ As Transformer models become more powerful and are used in various applications, it's important to consider the ethical implications and potential societal impact, which this book explores. 💭  
+    * 🕊️ This book delves into the challenges of aligning advanced AI systems with human values. ⚖️ As Transformer models become more powerful and are used in various applications, it's important to consider the ethical implications and potential societal impact, which this book explores. 💭

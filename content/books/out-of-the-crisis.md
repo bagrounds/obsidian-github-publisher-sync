@@ -7,6 +7,7 @@ URL: https://bagrounds.org/books/out-of-the-crisis
 Author: 
 tags: 
 affiliate link: https://amzn.to/3ZjED17
+CTA: Rebuild your organization.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 📉⬆️ Out Of The Crisis  

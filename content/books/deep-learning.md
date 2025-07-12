@@ -7,6 +7,7 @@ URL: https://bagrounds.org/books/deep-learning
 Author: 
 tags: 
 affiliate link: https://amzn.to/43sWW6w
+CTA: Master deep learning.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧠💻🤖 Deep Learning  

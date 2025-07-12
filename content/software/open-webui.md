@@ -1,12 +1,12 @@
 ---
 share: true
 aliases:
-  - Open WebUI
-title: Open WebUI
+  - 🌐🔓💻 Open WebUI
+title: 🌐🔓💻 Open WebUI
 URL: https://bagrounds.org/software/open-webui
 ---
 [Home](../index.md) > [Software](./index.md)  
-# Open WebUI  
+# 🌐🔓💻 Open WebUI  
   
 ## 🤖 AI Summary  
 ### 💾 Software Report: Open WebUI 🌐  
@@ -99,10 +99,10 @@ A universal remote control for multiple televisions, each representing a differe
   
 Open WebUI emerged from the growing need for a versatile and self-hostable interface for interacting with various LLMs. It addresses the fragmentation of LLM interfaces and the desire for greater control and privacy. It's a community driven project. 🧑‍🤝‍🧑  
   
-### Relevant Book Recommendations 📚  
+### 📚 Book Recommendations  
   
-* "Natural Language Processing with Transformers" by Tunstall, von Werra, Wolf. 📖  
-* "Deep Learning" by Ian Goodfellow, Yoshua Bengio, Aaron Courville. 🧠  
+* [🗣️💻 Natural Language Processing with Transformers](../books/natural-language-processing-with-transformers.md) by Tunstall, von Werra, Wolf. 📖  
+* [🧠💻🤖 Deep Learning](../books/deep-learning.md) by Ian Goodfellow, Yoshua Bengio, Aaron Courville. 🧠  
   
 ### Links to Relevant YouTube Channels or Videos 📺  
   

@@ -7,6 +7,7 @@ URL: https://bagrounds.org/books/an-architect-of-democracy
 Author: 
 tags: 
 affiliate link: https://amzn.to/4mOSl6u
+CTA: Construct peace.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ✍️🗺️🏗️🗳️ An Architect of Democracy: Building a Mosaic of Peace  
@@ -62,7 +63,7 @@ Huntley offers a perspective grounded in decades of hands-on experience 🛠️ 
   
 ### 📚 Book Recommendations  
 * **Best Alternate on Same Topic:** 📖 *Governing the World: The History of an Idea* by Mark Mazower. Explores the history of international organizations and governance ideas, offering a broader historical context. 🌍📜  
-* **Best Tangentially Related:** 🤝 *Diplomacy* by Henry Kissinger. Offers a high-level, realist perspective on international relations and statecraft, focusing more on power politics than Huntley's emphasis on institutions and citizens. 👑♟️  
+* **Best Tangentially Related:** [🤝🌍 Diplomacy](./diplomacy.md) by Henry Kissinger. Offers a high-level, realist perspective on international relations and statecraft, focusing more on power politics than Huntley's emphasis on institutions and citizens. 👑♟️  
 * **Best Diametrically Opposed:** 💥 *The End of History and the Last Man* by Francis Fukuyama (representing the optimism Huntley might share) *contrasted with* critiques like *The Clash of Civilizations and the Remaking of World Order* by Samuel P. Huntington, which posits conflict based on cultural differences rather than universalizing democracy. ⚔️  
 * **Best Fiction Incorporating Related Ideas:** *The Ugly American* by Eugene Burdick and William Lederer. Although fiction, it critiques American diplomatic and aid efforts abroad, highlighting the disconnect between policy ideals and grassroots realities, touching on themes relevant to effective international engagement. 🇺🇸😬🌏  
 * **Best More General/Specific:**  

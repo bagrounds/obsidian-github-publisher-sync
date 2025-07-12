@@ -12,7 +12,7 @@ backlinks: false
 - [🏛️🇺🇸📖 Heather Cox Richardson](./heather-cox-richardson.md)  
 - [👨‍💻☁️🐘 Jay Kreps](./jay-kreps.md)  
 - [🧠🔬🧘‍♀️💪📈❤️‍🩹🗣️📚🌟 Kelly McGonigal](./kelly-mcgonigal.md)  
-- [Nicholas Dodman](./nicholas-dodman.md)  
+- [🐕‍🦺🧠🐾 Nicholas Dodman](./nicholas-dodman.md)  
 - [🤔⚙️🗣️🤝💡🧩🔭📚👴 Russell Ackoff](./russell-ackoff.md)  
 - [🕸️🌐👨‍💻 Tim Berners-Lee](./tim-berners-lee.md)  
 - [📈📊⚙️🎯 W Edwards Deming](./w-edwards-deming.md)  

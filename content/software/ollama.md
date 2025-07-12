@@ -100,8 +100,8 @@ URL: https://bagrounds.org/software/ollama
   
 **Relevant Book Recommendations:**  
   
-* "Deep Learning" 🧠📚.  
-* "Natural Language Processing with Transformers" 🤖📖.  
+* [🧠💻🤖 Deep Learning](../books/deep-learning.md)  
+* [🗣️💻 Natural Language Processing with Transformers](../books/natural-language-processing-with-transformers.md)  
   
 **Links to Relevant YouTube Channels or Videos:**  
   

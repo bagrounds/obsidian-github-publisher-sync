@@ -120,12 +120,12 @@ Cursor IDE emerged as a response to the advancements in LLMs, aiming to bring th
   
 📖 **Book Recommendations**  
   
-- Topical: "[Deep Learning](../books/deep-learning.md)" by Ian Goodfellow, Yoshua Bengio, and Aaron Courville. 🧠  
+- Topical: [🧠💻🤖 Deep Learning](../books/deep-learning.md) by Ian Goodfellow, Yoshua Bengio, and Aaron Courville. 🧠  
 - Tangentially related: "Artificial Intelligence: A Modern Approach" by Stuart Russell and Peter Norvig. 🤖  
-- Topically opposed: "[🧼💾 Clean Code: A Handbook of Agile Software Craftsmanship](../books/clean-code.md)" by Robert C. Martin. ✍️  
+- Topically opposed: [🧼💾 Clean Code: A Handbook of Agile Software Craftsmanship](../books/clean-code.md) by Robert C. Martin. ✍️  
 - More general: "Superintelligence: Paths, Dangers, Strategies" by Nick Bostrom. 🤯  
-- More specific: "Natural Language Processing with Transformers" by Tunstall, von Werra, Wolf. 🗣️  
-- Fictional: "[Daemon](../books/daemon.md)" by Daniel Suarez. 🌐  
+- More specific: [🗣️💻 Natural Language Processing with Transformers](../books/natural-language-processing-with-transformers.md) by Tunstall, von Werra, Wolf. 🗣️  
+- Fictional: [😈💻👹🤖 Daemon](../books/daemon.md) by Daniel Suarez. 🌐  
 - Rigorous: "Speech and Language Processing" by Dan Jurafsky and James H. Martin. 💬  
 - Accessible: [🧬👥💾 Life 3.0: Being Human in the Age of Artificial Intelligence](../books/life-3-0.md) by Max Tegmark. ⚡  
   

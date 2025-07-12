@@ -44,4 +44,7 @@ youtube: https://youtu.be/c-b9F5IZhRs
     * *A Random Walk Down Wall Street* by Burton G. Malkiel  
 * **🌌 🌠 On Astronomy and Comets:**  
     * *Cosmos* by Carl Sagan  
-    * *Comet* by Carl Sagan and Ann Druyan
+    * *Comet* by Carl Sagan and Ann Druyan  
+  
+## 🐦 Tweet  
+<blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">📰🏛️📉 News Wrap: State Department lays off more than 1,300 in latest cuts to federal workforce<br>🏛️ Foreign Service | 💣 9/11 Attacks | 💊 Mass Overdose | ⚖️ Drug Trafficking | 🇧🇦 Srebrenica Massacre | 📉 Stock Market | ☄️ Comet | 🌊 Texas Floods<a href="https://twitter.com/NewsHour?ref_src=twsrc%5Etfw">@NewsHour</a> <a href="https://t.co/TCOHVBvBfJ">https://t.co/TCOHVBvBfJ</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/1944181492793422067?ref_src=twsrc%5Etfw">July 12, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

@@ -34,7 +34,7 @@ tags:
     * 💻 This online book offers a clear and accessible introduction to neural networks and deep learning. 🤔 It's great for building intuition about how these models work, which can help in grasping the innovations of the attention mechanism. 💡  
   
 📚 **4. Specifically on Transformers:**  
-* 🤖 **"Natural Language Processing with Transformers" by Lewis Tunstall, Leandro von Werra, and Thomas Wolf:**  
+* **[🗣️💻 Natural Language Processing with Transformers](../books/natural-language-processing-with-transformers.md) by Lewis Tunstall, Leandro von Werra, and Thomas Wolf:**  
     * 🚀 This book focuses specifically on the Transformer architecture and its applications in NLP. 🛠️ It's a practical guide that covers implementation details, fine-tuning techniques, and various use cases of Transformers. ⚙️  
   
 📚 **5. For Broader AI Context:**  

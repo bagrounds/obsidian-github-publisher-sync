@@ -28,7 +28,7 @@ youtube: https://youtu.be/c-b9F5IZhRs
   
 ## 📚 📖 Book Recommendations  
 * **🏛️ On the State Department and Foreign Service:**  
-    * *Diplomacy* by Henry Kissinger  
+    * [🤝🌍 Diplomacy](../books/diplomacy.md) by Henry Kissinger  
     * *The American Foreign Service: A History* by William Barnes and John Heath  
 * **💥 ✈️ On the September 11th Attacks:**  
     * *The Looming Tower: Al-Qaeda and the Road to 9/11* by Lawrence Wright  

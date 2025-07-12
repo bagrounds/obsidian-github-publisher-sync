@@ -11,7 +11,7 @@ title: 🏡 Home
 ❔ What do 🫵 _you_ 🤔 think?  
   
 ## [🪞 Reflections](./reflections/index.md) ~ Blog (239)  
-- [2025-07-11](./reflections/2025-07-11.md)  
+- [2025-07-11 | 🌟 Clarity 📚📺](./reflections/2025-07-11.md)  
 - [2025-07-10 | 🤖 AI | 🪧 Pushback 📺📚👥](./reflections/2025-07-10.md)  
 - [2025-07-09 | 👹 Authority ⚔️ versus 🌍 Society 📺📚](./reflections/2025-07-09.md)  
 - [2025-07-08 | 🧠🧘🏼‍♀️ Operating Ourselves 📚](./reflections/2025-07-08.md)  
@@ -23,30 +23,30 @@ title: 🏡 Home
 - [2025-07-02 | 🧠 Brains 📚](./reflections/2025-07-02.md)  
   
   
-## [📚 Books](./books/index.md) (506)  
+## [📚 Books](./books/index.md) (507)  
+- [❓🎯 Start with Why: How Great Leaders Inspire Everyone to Take Action](./books/start-with-why-how-great-leaders-inspire-everyone-to-take-action.md)  
+- [7️⃣📏👑 7 Rules of Power: Surprising - but True - Advice on How to Get Things Done and Advance Your Career](./books/7-rules-of-power.md)  
+- [🏎️⛽ Drive: The Surprising Truth About What Motivates Us](./books/drive-the-surprising-truth-about-what-motivates-us.md)  
+- [➡️ Pivot: The Only Move That Matters Is Your Next One](./books/pivot-the-only-move-that-matters-is-your-next-one.md)  
 - [🧘🏼‍♀️👩🏼‍🏫 Practicing Mindfulness: An Introduction to Meditation](./books/practicing-mindfulness-an-introduction-to-meditation.md)  
 - [🏛️❓ Who Is Government?: The Untold Story of Public Service](./books/who-is-government-the-untold-story-of-public-service.md)  
 - [🍊🤡🤥👹💥🏛️🇺🇸 I Alone Can Fix It: Donald J. Trump's Catastrophic Final Year](./books/i-alone-can-fix-it-donald-j-trumps-catastrophic-final-year.md)  
 - [⚠️😬😰 Peril](./books/peril.md)  
 - [🤯🐍🏘️🎪💥 Mad House: How Donald Trump, MAGA Mean Girls, a Former Used Car Salesman, a Florida Nepo Baby, and a Man with Rats in His Walls Broke Congress](./books/mad-house.md)  
 - [⚠️🥴🕹️🌐 The Fifth Risk](./books/the-fifth-risk.md)  
-- [🤖🦜 Large Language Models: Concepts, Techniques and Applications](./books/large-language-models-concepts-techniques-and-applications.md)  
-- [🚩⚖️ The Socialist Manifesto: The Case for Radical Politics in an Era of Extreme Inequality](./books/the-socialist-manifesto-the-case-for-radical-politics-in-an-era-of-extreme-inequality.md)  
-- [🫵🤝🌍🏛️ Why You Should Be a Socialist](./books/why-you-should-be-a-socialist.md)  
-- [🧠📈 Outsmart Yourself: Brain-Based Strategies for a Bettery You](./books/outsmart-yourself-brain-based-strategies-for-a-bettery-you.md)  
   
   
 ## [📺 Videos](./videos/index.md) (198)  
-- [🎓🎮🏆✨ Last Lecture Series: How to Design a Winnable Game – Graham Weaver](./videos/last-lecture-series-how-to-design-a-winnable-game-graham-weaver.md)  
+- [🤖🧠🚀📈 Using Generative AI to Strengthen & Accelerate Learning • Barbara Oakley • GOTO 2024](./videos/using-generative-ai-to-strengthen-accelerate-learning-barbara-oakley-goto-2024.md)  
+- [💻🌍🚶‍♀️ Where All the Tech Workers Are Going](./videos/where-all-the-tech-workers-are-going.md)  
 - [🤖🚀📈 Andrew Ng: Building Faster with AI](./videos/andrew-ng-building-faster-with-ai.md)  
+- [🎓🎮🏆✨ Last Lecture Series: How to Design a Winnable Game – Graham Weaver](./videos/last-lecture-series-how-to-design-a-winnable-game-graham-weaver.md)  
 - [💰🌊🚧🏛️🪧🚨 Politics Chat, July 10, 2025](./videos/politics-chat-july-10-2025.md)  
 - [👹👀🇺🇸📉 The Big Short author Michael Lewis on what he thinks happens next with Trump and the USA](./videos/the-big-short-author-michael-lewis-on-what-he-thinks-happens-next-with-trump-and-the-usa.md)  
 - [🏛️📉🇺🇸🔟 Schiff Takes To Senate Floor to Lay Out the Top 10 Ways Trump is Wrecking America](./videos/schiff-takes-to-senate-floor-to-lay-out-the-top-10-ways-trump-is-wrecking-america.md)  
 - [💻🔄💻 Andrej Karpathy: Software Is Changing (Again)](./videos/andrej-karpathy-software-is-changing-again.md)  
 - [📢👁️🗣️💡 It's Our Job to Make Sure People Know the Truth](./videos/its-our-job-to-make-sure-people-know-the-truth.md)  
 - [🤯😲😳 You Aren't Going to Believe This](./videos/you-arent-going-to-believe-this.md)  
-- [📜🇺🇸🗽➡️ The Declaration of Independence | Journey to American Democracy](./videos/the-declaration-of-independence-journey-to-american-democracy.md)  
-- [👑🏙️🏛️ What Trump’s Threat to ‘Take Over’ Cities Says About Our Democracy](./videos/what-trumps-threat-to-take-over-cities-says-about-our-democracy.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (79)  
@@ -66,11 +66,11 @@ title: 🏡 Home
   
   
 ## [📄  Articles](./articles/index.md) (30)  
+- [👀 Attention Is All You Need](./articles/attention-is-all-you-need.md)  
 - [💻💰🤝👹🇺🇸 Tech moguls Altman, Bezos and Zuckerberg donate to Trump's inauguration fund](./articles/tech-moguls-altman-bezos-and-zuckerberg-donate-to-trumps-inauguration-fund.md)  
 - [👨‍⚖️🆚🏢🗺️ Peckham v. Gem State Mut. of Utah, 964 F. 2d 1043 - Court of Appeals, 10th Circuit](../Peckham%20v.%20Gem%20State%20Mut.%20of%20Utah,%20964%20F.%202d%201043%20-%20Court%20of%20Appeals,%2010th%20Circuit.md)  
 - [💪🧠📉💊🔎 Creatine Supplementation in Depression: A Review of Mechanisms, Efficacy, Clinical Outcomes, and Future Directions](./articles/creatine-supplementation-in-depression-a-review-of-mechanisms-efficacy-clinical-outcomes-and-future-directions.md)  
 - [🧑‍💻🤖🤝 How Anthropic Teams Use Claude Code](./articles/how-anthropic-teams-use-claude-code.md)  
-- [🏛️🕸️🧩 Architectural Styles and the Design of Network Based Software Architectures](./articles/architectural-styles-and-the-design-of-network-based-software-architectures.md)  
   
   
 ## [💾 Software](./software/index.md) (29)  

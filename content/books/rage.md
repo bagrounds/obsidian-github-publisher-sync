@@ -5,6 +5,7 @@ aliases:
 URL: https://bagrounds.org/books/rage
 share: true
 affiliate link: https://amzn.to/45mskVJ
+CTA: Recall madness.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 😡🤬 Rage  
@@ -48,7 +49,7 @@ affiliate link: https://amzn.to/45mskVJ
   
 * ***The Art of Peace*** by Morihei Ueshiba: 🧘 A collection of teachings on the philosophy of Aikido, emphasizing harmony, non-violence, and resolving conflict peacefully.  
 * ***Peace Is Every Step: The Path of Mindfulness in Everyday Life*** by Thich Nhat Hanh: 🧘‍♀️ Explores mindfulness practices as a way to cultivate inner peace and deal with challenging emotions, including anger.  
-* ***Diplomacy*** by Henry Kissinger: 🤝 A comprehensive historical analysis of diplomatic efforts and international relations, offering a contrast to confrontational approaches.  
+* **[🤝🌍 Diplomacy](./diplomacy.md)** by Henry Kissinger: 🤝 A comprehensive historical analysis of diplomatic efforts and international relations, offering a contrast to confrontational approaches.  
 * ***Moral Boundaries: A Family Systems Approach to Emotional, Self, and Change*** by Harriet Lerner: 💔 While *The Dance of Anger* is more directly about anger, Lerner's work generally focuses on understanding emotional patterns in relationships and fostering healthier interactions, offering tools for managing conflict differently.  
   
 ### 🧠 Creatively Related Reads (Psychology, History, Philosophy)  

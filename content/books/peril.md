@@ -7,6 +7,7 @@ URL: https://bagrounds.org/books/peril
 Author: 
 tags: 
 affiliate link: https://amzn.to/4kq0rk3
+CTA: Witness chaos.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ⚠️😬😰 Peril  
@@ -66,9 +67,9 @@ The book offers an 🕵️ *insider* view of the events leading up to and follow
   
 ### Book Recommendations 📚  
   
-* ⭐ **Best Alternate Book on the Same Topic:** 🗓️ [🍊🤡🤥👹💥🏛️🇺🇸 I Alone Can Fix It: Donald J. Trump's Catastrophic Final Year](./i-alone-can-fix-it-donald-j-trumps-catastrophic-final-year.md) by Carol Leonnig and Philip Rucker. 🗓️  
+* ⭐ **Best Alternate Book on the Same Topic:** [🍊🤡🤥👹💥🏛️🇺🇸 I Alone Can Fix It: Donald J. Trump's Catastrophic Final Year](./i-alone-can-fix-it-donald-j-trumps-catastrophic-final-year.md) by Carol Leonnig and Philip Rucker. 🗓️  
   
-* ✨ **Best Tangentially Related Book:** ⚠️ *The Fifth Risk* by Michael Lewis, which explores the transition process ➡️ and the challenges 😥 faced by incoming administrations. ⚠️  
+* ✨ **Best Tangentially Related Book:** [⚠️🥴🕹️🌐 The Fifth Risk](./the-fifth-risk.md) by Michael Lewis, which explores the transition process ➡️ and the challenges 😥 faced by incoming administrations. ⚠️  
   
 * ⚖️ **Best Diametrically Opposed Book:** 🚩 *Rigged: How the Media, 📰 Big Tech, 💻 and the Democrats 💙 Seized Our Elections* by Mollie Hemingway, which presents a conservative perspective 🤔 on the 2020 election. 🇺🇸  
   

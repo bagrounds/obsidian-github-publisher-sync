@@ -26,7 +26,7 @@ youtube: https://youtu.be/d4aLV8sKvZM
 🗺️ **U.S. Foreign Policy, Geopolitics, and Great Power Competition:**  
 - ♟️ **_The Grand Chessboard: American Primacy and Its Geostrategic Imperatives_** by Zbigniew Brzezinski: A classic text on 🇺🇸 U.S. foreign policy and its strategic interests in Eurasia.  
   
-- 🤝 **_Diplomacy_** by Henry Kissinger: Provides a historical overview of diplomacy and foreign policy from a realist perspective.  
+- **[🤝🌍 Diplomacy](../books/diplomacy.md)** by Henry Kissinger: Provides a historical overview of diplomacy and foreign policy from a realist perspective.  
   
 - 🇺🇸 **_America's Great-Power Opportunity: Revitalizing U.S. Foreign Policy to Meet the Challenges of Strategic Competition_** by Ali Wyne: This book analyzes the concept of great-power competition, particularly with 🇨🇳 China and 🇷🇺 Russia, and argues for a focus on American self-renewal.  
   

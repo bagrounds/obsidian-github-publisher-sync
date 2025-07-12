@@ -71,4 +71,7 @@ This video discusses ⚙️ context engineering for agents \[[00:00](http://www.
 🧠 **For Memory Systems in AI:**  
   
 * 💾 **"AI Memory" by Jamal Hopper:** 💡 This e-book specifically explores how artificial intelligence can revolutionize memory retention and learning, examining the intersection of AI, cognitive psychology, and semantics. 🤔 While more conceptual, it touches upon the idea of AI-driven tools enhancing learning and memory, which is relevant to the "memory" aspect of context engineering.  
-* 📚 Books that delve into **Knowledge Representation and Reasoning in AI** would also be beneficial, as effective memory systems often rely on how knowledge is structured and accessed.
+* 📚 Books that delve into **Knowledge Representation and Reasoning in AI** would also be beneficial, as effective memory systems often rely on how knowledge is structured and accessed.  
+  
+## 🐦 Tweet  
+<blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">🖼️🤔🛠️🤖 Context Engineering for Agents<br><br>🧠 LLMs | ✍️ Writing | 👉 Selecting | 🗜️ Compressing | 🏝️ Isolating | 💬 Prompts | ⛓️ LangChain | 🪜 LangGraph | 👩‍🏫 Instructions | 💾 Memory | 🧸 Examples | 🧰 Tools | 🔄 Feedback<a href="https://t.co/uUytpVXZs8">https://t.co/uUytpVXZs8</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/1944170177467494830?ref_src=twsrc%5Etfw">July 12, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

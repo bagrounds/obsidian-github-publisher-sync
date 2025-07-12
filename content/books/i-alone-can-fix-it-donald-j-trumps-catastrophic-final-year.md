@@ -5,6 +5,7 @@ aliases:
 URL: https://bagrounds.org/books/i-alone-can-fix-it-donald-j-trumps-catastrophic-final-year
 share: true
 affiliate link: https://www.amazon.com/dp/0593298942/ref=cm_sw_r_as_gl_apa_gl_i_5JJH1PZB0EFV943NX1WE?linkCode=ml1&tag=bagrounds-20
+CTA: Remember history.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🍊🤡🤥👹💥🏛️🇺🇸 I Alone Can Fix It: Donald J. Trump's Catastrophic Final Year  
@@ -52,7 +53,7 @@ affiliate link: https://www.amazon.com/dp/0593298942/ref=cm_sw_r_as_gl_apa_gl_i_
 * **[👑🚫📜2️⃣0️⃣ On Tyranny: Twenty Lessons from the Twentieth Century](./on-tyranny.md)** by Timothy Snyder: A brief but impactful guide 📖 drawing parallels 〰️ between historical authoritarianism and contemporary political trends, providing a framework for identifying threats to democracy. 🛡️  
 * **[👹 The Origins of Totalitarianism](./the-origins-of-totalitarianism.md)** by Hannah Arendt: A foundational academic text 📜 exploring the historical and philosophical roots 🌳 of totalitarian movements, offering deep context for discussions about political extremism and its dangers. ⚠️  
 * ***On Populist Reason*** by Ernesto Laclau: Analyzes the structure and appeal of populist political movements, which can help in understanding the dynamics of Trump's base and rhetoric. 🗣️  
-* ***The Fifth Risk*** by Michael Lewis: Illustrates the critical, often unseen 🙈, work performed by government agencies and the risks associated with undermining institutional expertise 💡, providing context for the challenges faced by the administration in responding to crises like the pandemic. 🦠  
+* **[⚠️🥴🕹️🌐 The Fifth Risk](./the-fifth-risk.md)** by Michael Lewis: Illustrates the critical, often unseen 🙈, work performed by government agencies and the risks associated with undermining institutional expertise 💡, providing context for the challenges faced by the administration in responding to crises like the pandemic. 🦠  
 * **[🗳️🏛️☠️ How Democracies Die](./how-democracies-die.md)** by Steven Levitsky and Daniel Ziblatt: Examines historical and contemporary examples 🏛️ of democratic backsliding, offering a comparative perspective 🔭 on the pressures faced by American democratic institutions during the Trump era. 🇺🇸  
 * **[🏭🫡 Manufacturing Consent: The Political Economy of the Mass Media](./manufacturing-consent.md)** by Edward S. Herman and Noam Chomsky: Explores how mass media 📺 can be used to shape public perception and consent 👍, relevant to understanding the information environment and challenges to objective truth discussed in *I Alone Can Fix It*. 📖  
   

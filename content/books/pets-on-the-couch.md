@@ -4,7 +4,7 @@ aliases:
 title: 🐈🐕🛋️ Pets on the Couch
 Author: "[[nicholas-dodman]]"
 goodreads: https://www.goodreads.com/book/show/27274445-pets-on-the-couch
-URL: https://www.simonandschuster.com/books/Pets-on-the-Couch/Nicholas-Dodman/9781476749037
+URL: https://bagrounds.org/books/pets-on-the-couch
 share: true
 affiliate link: https://amzn.to/4kPcUxN
 ---
@@ -15,7 +15,7 @@ _Neurotic Dogs, Compulsive Cats, Anxious Birds, and the New Science of Animal Ps
   
 ## 🤖 AI Summary  
 **Summary of *Pets on the Couch***    
-Written by Nicholas Dodman, this book explores the emerging field of veterinary psychiatry, examining the emotional and mental health issues of pets and how their behavior mirrors human psychological challenges.  
+Written by [🐕‍🦺🧠🐾 Nicholas Dodman](../people/nicholas-dodman.md), this book explores the emerging field of veterinary psychiatry, examining the emotional and mental health issues of pets and how their behavior mirrors human psychological challenges.  
   
 ### Book Recommendations    
 1. **Best Alternate on the Same Topic**: *The Other End of the Leash* by Patricia B. McConnell – Focuses on the psychology of dogs and their interactions with humans from a behaviorist perspective.    

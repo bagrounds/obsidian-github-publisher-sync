@@ -5,6 +5,7 @@ aliases:
 URL: https://bagrounds.org/books/the-art-of-war
 share: true
 affiliate link: https://amzn.to/4dPrmDn
+CTA: Master strategy.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🎨⚔️ The Art of War  
@@ -49,7 +50,7 @@ affiliate link: https://amzn.to/4dPrmDn
 🤝 In contrast to *The Art of War*'s focus on winning conflict, these books explore approaches centered on peace, negotiation, diplomacy, and nonviolent resolution.  
   
 * ☮️ **The Art of Peace by Morihei Ueshiba:** 🌿 Authored by the founder of Aikido, this work presents a philosophy of resolving conflict through harmony and compassion rather than confrontation. ☯️ It offers a philosophical counterpart to *The Art of War*.  
-* 🌐 **Diplomacy by Henry Kissinger:** 📜 This book provides a historical overview of international relations and the strategies employed by world leaders, emphasizing the role of diplomacy in achieving peace and stability through negotiation and understanding.  
+* 🌐 **[🤝🌍 Diplomacy](./diplomacy.md) by Henry Kissinger:** 📜 This book provides a historical overview of international relations and the strategies employed by world leaders, emphasizing the role of diplomacy in achieving peace and stability through negotiation and understanding.  
 * **[👉🤝 Getting to Yes: Negotiating Agreement Without Giving In](./getting-to-yes-negotiating-agreement-without-giving-in.md) by Roger Fisher and William Ury:** 📚 A foundational text on principled negotiation, offering practical strategies for reaching mutually agreeable solutions in conflicts without resorting to adversarial tactics.  
 * 🕊️ **The Dynamics of Conflict Resolution: A Practitioner's Guide by Bernard Mayer:** 📚 This book provides a comprehensive look at conflict resolution processes, models, and interventions, offering a theoretical and practical guide for navigating and resolving disputes peacefully.  
 * 🌍 **Just Peacemaking: Ten Practices for Abolishing War edited by Glen H. Stassen:** 📚 This book proposes a peace ethic focused on proactive practices aimed at preventing war and facilitating peace, offering an alternative to traditional just war theory and pacifism.  

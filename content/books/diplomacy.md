@@ -5,6 +5,7 @@ aliases:
 URL: https://bagrounds.org/books/diplomacy
 share: true
 affiliate link: https://amzn.to/3U9t21C
+CTA: Review history.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🤝🌍 Diplomacy  
@@ -69,4 +70,7 @@ affiliate link: https://amzn.to/3U9t21C
 * ***Outpost: Life on the Frontlines of American Diplomacy*** by Christopher R. Hill: 🇺🇸 Provides a firsthand account of modern American diplomacy from the perspective of a career diplomat in various global hotspots.  
   
 ## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
-> Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Diplomacy. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.
+> Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Diplomacy. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.  
+  
+## 🐦 Tweet  
+<blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">🤝🌍 Diplomacy<br><br>A comprehensive historical analysis of international relations and the evolution of diplomatic practice from the 17th century to the end of the Cold War.<br><br>🏛️ International Relations | 📜 Statecraft | 🤝 Negotiation | 🇺🇸 US Foreign Policy<a href="https://t.co/jpPBfCGqsk">https://t.co/jpPBfCGqsk</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/1944182793447387241?ref_src=twsrc%5Etfw">July 12, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

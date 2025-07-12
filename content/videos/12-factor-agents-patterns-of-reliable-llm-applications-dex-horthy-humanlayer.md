@@ -14,6 +14,18 @@ youtube: https://youtu.be/8kMaTybvDUw
 # 🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer  
 ![12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](https://youtu.be/8kMaTybvDUw)  
   
+## 📝🐒 Human Notes  
+- 🤏 Focused prompt -> ✅ quality response  
+- 🤖 Strength: 🗣️ natural language -> ⚙️ JSON  
+- 🌍 Context Engineering is everything  
+    - ✍️ Prompt  
+    - 🧠 Memory  
+    - 📚 RAG  
+    - ⏳ History  
+    - 🧱 Structured Output  
+- 🎯 Prefer small, focused agents  
+- ➡️ Agents should be stateless  
+  
 ## 🤖 AI Summary  
 The video discusses several challenges and issues related to building reliable AI agents 🤖 and LLM applications, drawing parallels to traditional software engineering principles.  
   

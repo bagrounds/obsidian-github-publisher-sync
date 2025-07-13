@@ -7,7 +7,7 @@ URL: https://bagrounds.org/books
 backlinks: false
 ---
 [Home](../index.md)  
-# 📚 Books (512)  
+# 📚 Books (513)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)  
 - [🧑‍🤝‍🧑📈 10 to 25: The Science of Motivating Young People: A Groundbreaking Approach to Leading the Next Generation - And Making Your Own Life Easier](./10-to-25-the-science-of-motivating-young-people-a-groundbreaking-approach-to-leading-the-next-generation-and-making-your-own-life-easier.md)  
@@ -189,6 +189,7 @@ Feedback Control of Dynamic Systems]]
 - [👶🦓🌊 Hello, Ocean Friends: A Black-and-White Board Book for Babies That Helps Visual Development](./hello-ocean-friends-a-black-and-white-board-book-for-babies-that-helps-visual-development.md)  
 - [🙈⚡🔬🌌 Hidden Potential: The Science of Achieving Greater Things](./hidden-potential-the-science-of-achieving-greater-things.md)  
 - [🫂 Hold Me Tight: Seven Conversations for a Lifetime of Love](./hold-me-tight-seven-conversations-for-a-lifetime-of-love.md)  
+- [🏛️👹🇺🇸🏰👹🇷🇺 House of Trump, House of Putin: The Untold Story of Donald Trump and the Russian Mafia](./house-of-trump-house-of-putin-the-untold-story-of-donald-trump-and-the-russian-mafia.md)  
 - [👶🗣️ How Babies Talk: The Magic and Mystery of Language in the First Three Years of Life](./how-babies-talk-the-magic-and-mystery-of-language-in-the-first-three-years-of-life.md)  
 - [🗳️🏛️☠️ How Democracies Die](./how-democracies-die.md)  
 - [🇺🇸🪖♟️🔍⚖️🕊️🤝 How Ike Led: The Principles Behind Eisenhower's Biggest Decisions](./how-ike-led-the-principles-behind-eisenhowers-biggest-decisions.md)  

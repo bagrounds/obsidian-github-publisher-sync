@@ -2,7 +2,7 @@
 title: ✅➕ Abundance
 aliases:
   - ✅➕ Abundance
-URL: https://bagrounds.org/books/abundance-by-ezra-klein
+URL: https://bagrounds.org/books/abundance
 share: true
 affiliate link: https://amzn.to/4524SME
 CTA: Think bigger.

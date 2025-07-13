@@ -35,4 +35,7 @@ youtube: https://youtu.be/spCXl6frtlo
     * [😇🧠 The Righteous Mind: Why Good People Are Divided by Politics and Religion](../books/the-righteous-mind.md) by Jonathan Haidt  
     * [🎳🏘️📉📈 Bowling Alone: The Collapse and Revival of American Community](../books/bowling-alone.md) by Robert D. Putnam  
 * **On the Role of the Federal Government in Disasters**:  
-    * *The Great Deluge: Hurricane Katrina, New Orleans, and the Mississippi Gulf Coast* by Douglas Brinkley (for a detailed account of a major disaster response)
+    * *The Great Deluge: Hurricane Katrina, New Orleans, and the Mississippi Gulf Coast* by Douglas Brinkley (for a detailed account of a major disaster response)  
+  
+## 🐦 Tweet  
+<blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">⛈️🇺🇸🗣️💬 Brooks and Capehart on the federal response to the Texas flooding disaster<br><br>👹 <a href="https://twitter.com/realDonaldTrump?ref_src=twsrc%5Etfw">@realDonaldTrump</a> Administration | 💸 Tariff &quot;Policies&quot; | 🧑‍💼 State Department Mass Firings | 🙏 David Gergen<a href="https://twitter.com/NewsHour?ref_src=twsrc%5Etfw">@NewsHour</a><a href="https://twitter.com/nytdavidbrooks?ref_src=twsrc%5Etfw">@nytdavidbrooks</a><a href="https://twitter.com/CapehartJ?ref_src=twsrc%5Etfw">@CapehartJ</a><a href="https://twitter.com/IAmAmnaNawaz?ref_src=twsrc%5Etfw">@IAmAmnaNawaz</a><a href="https://t.co/BwZJJqJWHD">https://t.co/BwZJJqJWHD</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/1944206179829527022?ref_src=twsrc%5Etfw">July 13, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

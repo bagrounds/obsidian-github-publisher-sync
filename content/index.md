@@ -11,7 +11,7 @@ title: 🏡 Home
 ❔ What do 🫵 _you_ 🤔 think?  
   
 ## [🪞 Reflections](./reflections/index.md) ~ Blog (241)  
-- [2025-07-13](./reflections/2025-07-13.md)  
+- [2025-07-13 | 🌎 Abundance | 🤝🏻 Collusion | 🧬 DNA 📚📄🤖💬📺](./reflections/2025-07-13.md)  
 - [2025-07-12 | 🤖 Agents | 🌊 Tragedy 📺📚📰](./reflections/2025-07-12.md)  
 - [2025-07-11 | 🌟 Clarity 📚📺](./reflections/2025-07-11.md)  
 - [2025-07-10 | 🤖 AI | 🪧 Pushback 📺📚👥](./reflections/2025-07-10.md)  
@@ -23,7 +23,10 @@ title: 🏡 Home
 - [2025-07-04 | 🇺🇸 Independence Day 📺](./reflections/2025-07-04.md)  
   
   
-## [📚 Books](./books/index.md) (512)  
+## [📚 Books](./books/index.md) (514)  
+- [🏘️↔️ The Big Sort: Why the Clustering of Like-Minded America Is Tearing Us Apart](./books/the-big-sort-why-the-clustering-of-like-minded-america-is-tearing-us-apart.md)  
+- [😇🧠 The Righteous Mind: Why Good People Are Divided by Politics and Religion](./books/the-righteous-mind.md)  
+- [🏛️👹🇺🇸🏰👹🇷🇺 House of Trump, House of Putin: The Untold Story of Donald Trump and the Russian Mafia](./books/house-of-trump-house-of-putin-the-untold-story-of-donald-trump-and-the-russian-mafia.md)  
 - [🔬🔄 The Structure of Scientific Revolutions](./books/the-structure-of-scientific-revolutions.md)  
 - [📜🌍👥 A Brief History of Everyone Who Ever Lived](./books/a-brief-history-of-everyone-who-ever-lived.md)  
 - [✅➕ Abundance](./books/abundance.md)  
@@ -31,12 +34,10 @@ title: 🏡 Home
 - [✍️🗺️🏗️🗳️ An Architect of Democracy: Building a Mosaic of Peace](./books/an-architect-of-democracy.md)  
 - [🎨⚔️ The Art of War](./books/the-art-of-war.md)  
 - [😡🤬 Rage](./books/rage.md)  
-- [🗣️💻 Natural Language Processing with Transformers](./books/natural-language-processing-with-transformers.md)  
-- [🤖⚙️🔁 Designing Machine Learning Systems: An Iterative Process for Production-Ready Applications](./books/designing-machine-learning-systems-an-iterative-process-for-production-ready-applications.md)  
-- [🧠💻🤖 Deep Learning](./books/deep-learning.md)  
   
   
-## [📺 Videos](./videos/index.md) (204)  
+## [📺 Videos](./videos/index.md) (205)  
+- [❓😡🇺🇸🗳️ Why the hell did people vote for Trump? (the answers will shock you)](./videos/why-the-hell-did-people-vote-for-trump-the-answers-will-shock-you.md)  
 - [😟🔮 Anne Applebaum: «It Is What I Feared Would Happen»](./videos/anne-applebaum-it-is-what-i-feared-would-happen.md)  
 - [⛈️🇺🇸🗣️💬 Brooks and Capehart on the federal response to the Texas flooding disaster](./videos/brooks-and-capehart-on-the-federal-response-to-the-texas-flooding-disaster.md)  
 - [⚠️🌊🏘️❌ FEMA missed major flood risks at Camp Mystic in Texas, new analysis reveals](./videos/fema-missed-major-flood-risks-at-camp-mystic-in-texas-new-analysis-reveals.md)  
@@ -46,7 +47,6 @@ title: 🏡 Home
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./videos/12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
 - [🌐🕸️🔮 The Future of the Web • Sir Tim Berners-Lee • GOTO 2018](./videos/the-future-of-the-web-sir-tim-berners-lee-goto-2018.md)  
 - [🕸️🛠️🤔 Three decades after inventing the web, Tim Berners-Lee has some ideas on how to fix it](./videos/three-decades-after-inventing-the-web-tim-berners-lee-has-some-ideas-on-how-to-fix-it.md)  
-- [🤖🧠🚀📈 Using Generative AI to Strengthen & Accelerate Learning • Barbara Oakley • GOTO 2024](./videos/using-generative-ai-to-strengthen-accelerate-learning-barbara-oakley-goto-2024.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (79)  

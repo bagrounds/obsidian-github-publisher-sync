@@ -33,4 +33,7 @@ youtube: https://youtu.be/Kp1MUqZKOUA
     * *Post-Truth* by Matthew d'Ancona.  
 * 🏛️ **On US Politics and Institutions:**  
     * [🗳️🏛️☠️ How Democracies Die](../books/how-democracies-die.md) by Steven Levitsky and Daniel Ziblatt.  
-    * [⚠️🥴🕹️🌐 The Fifth Risk](../books/the-fifth-risk.md) by Michael Lewis (While not directly about authoritarianism, it touches on the undermining of government institutions).
+    * [⚠️🥴🕹️🌐 The Fifth Risk](../books/the-fifth-risk.md) by Michael Lewis (While not directly about authoritarianism, it touches on the undermining of government institutions).  
+  
+## 🐦 Tweet  
+<blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">😟🔮 Anne Applebaum: «It Is What I Feared Would Happen»<br><br>🇺🇸 Political Climate | 👮 Immigration and Customs Enforcement | 🏢 Mass Prisons | 🚫 Disinformation | 🚀 Elon Musk | 🇺🇦 War in Ukraine | 🇮🇷 U.S. Iran Strategy | 🤥 Lies<a href="https://twitter.com/anneapplebaum?ref_src=twsrc%5Etfw">@anneapplebaum</a><a href="https://twitter.com/SykesCharlie?ref_src=twsrc%5Etfw">@SykesCharlie</a><a href="https://t.co/JpyuqsJCUQ">https://t.co/JpyuqsJCUQ</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/1944216740805951962?ref_src=twsrc%5Etfw">July 13, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

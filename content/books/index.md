@@ -7,7 +7,7 @@ URL: https://bagrounds.org/books
 backlinks: false
 ---
 [Home](../index.md)  
-# 📚 Books (510)  
+# 📚 Books (512)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)  
 - [🧑‍🤝‍🧑📈 10 to 25: The Science of Motivating Young People: A Groundbreaking Approach to Leading the Next Generation - And Making Your Own Life Easier](./10-to-25-the-science-of-motivating-young-people-a-groundbreaking-approach-to-leading-the-next-generation-and-making-your-own-life-easier.md)  
@@ -16,7 +16,9 @@ backlinks: false
 - [🤫🤑 23 Things They Don't Tell You About Capitalism](./23-things-they-dont-tell-you-about-capitalism.md)  
 - [🗓️➕ 40 Days to Positive Change: Daily Support to Create a New Habit](./40-days-to-positive-change-daily-support-to-create-a-new-habit.md)  
 - [7️⃣📏👑 7 Rules of Power: Surprising - but True - Advice on How to Get Things Done and Advance Your Career](./7-rules-of-power.md)  
+- [📜🌍👥 A Brief History of Everyone Who Ever Lived](./a-brief-history-of-everyone-who-ever-lived.md)  
 - [🤏📜⏳ A Brief History of Time](./a-brief-history-of-time.md)  
+- [✅➕ Abundance](./abundance.md)  
 - [🏎️💾 Accelerate: The Science of Lean Software and DevOps: Building and Scaling High Performing Technology Organizations](./accelerate.md)  
 - [🌈🦎 A Color of His Own](./a-color-of-his-own.md)  
 - [🧬🕹️ Adaptive Control](./adaptive-control.md)  

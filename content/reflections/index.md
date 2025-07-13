@@ -7,7 +7,9 @@ URL: https://bagrounds.org/reflections
 backlinks: false
 ---
 [Home](../index.md)  
-# 🪞 Reflections (239)  
+# 🪞 Reflections (241)  
+- [2025-07-13 | 🌎 Abundance | 🤝🏻 Collusion | 🧬 DNA 📚📄🤖💬📺](./2025-07-13.md)  
+- [2025-07-12 | 🤖 Agents | 🌊 Tragedy 📺📚📰](./2025-07-12.md)  
 - [2025-07-11 | 🌟 Clarity 📚📺](./2025-07-11.md)  
 - [2025-07-10 | 🤖 AI | 🪧 Pushback 📺📚👥](./2025-07-10.md)  
 - [2025-07-09 | 👹 Authority ⚔️ versus 🌍 Society 📺📚](./2025-07-09.md)  

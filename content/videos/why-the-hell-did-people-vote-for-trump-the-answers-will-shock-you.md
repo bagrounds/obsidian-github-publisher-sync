@@ -47,4 +47,7 @@ This video covers several specific issues related to 🗣️ political polarizat
 * **For understanding voter behavior and demographics:**  
     * *Identity Crisis: The 2016 Presidential Campaign and the Battle for the Meaning of America* by John Sides, Michael Tesler, and Lynn Vavreck  
 * **For exploring postmaterialism and value shifts:**  
-    * *Culture Shift in Advanced Industrial Society* by Ronald Inglehart (the foundational work on postmaterialism)
+    * *Culture Shift in Advanced Industrial Society* by Ronald Inglehart (the foundational work on postmaterialism)  
+  
+## 🐦 Tweet  
+<blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">❓😡🇺🇸🗳️ Why the hell did people vote for Trump? (the answers will shock you)<br><br>🗳️ Election Results | 🇺🇸 Political Polarization | 🫂 Voter Demographics | 📰 Media Influence | 💔 Lack of Institutional Trust | 😇 Moral Foundations Theory<a href="https://twitter.com/RanigaVinay?ref_src=twsrc%5Etfw">@RanigaVinay</a><a href="https://t.co/hnBbhi37zG">https://t.co/hnBbhi37zG</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/1944535573890494955?ref_src=twsrc%5Etfw">July 13, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

@@ -10,7 +10,8 @@ title: 🏡 Home
 📑 Notes, 💭 thoughts, and 🔗 Links.  
 ❔ What do 🫵 _you_ 🤔 think?  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (239)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (240)  
+- [2025-07-12](./reflections/2025-07-12.md)  
 - [2025-07-11 | 🌟 Clarity 📚📺](./reflections/2025-07-11.md)  
 - [2025-07-10 | 🤖 AI | 🪧 Pushback 📺📚👥](./reflections/2025-07-10.md)  
 - [2025-07-09 | 👹 Authority ⚔️ versus 🌍 Society 📺📚](./reflections/2025-07-09.md)  
@@ -20,41 +21,40 @@ title: 🏡 Home
 - [2025-07-05 | 🤕🏚️➡️💸➡️🏰 Robber 🧛🏻‍♂️🤝👹 Barons 🤖💬📚📺📄](./reflections/2025-07-05.md)  
 - [2025-07-04 | 🇺🇸 Independence Day 📺](./reflections/2025-07-04.md)  
 - [2025-07-03 | 🤫 Subliminal 📚](./reflections/2025-07-03.md)  
-- [2025-07-02 | 🧠 Brains 📚](./reflections/2025-07-02.md)  
   
   
-## [📚 Books](./books/index.md) (507)  
+## [📚 Books](./books/index.md) (510)  
+- [🤝🌍 Diplomacy](./books/diplomacy.md)  
+- [✍️🗺️🏗️🗳️ An Architect of Democracy: Building a Mosaic of Peace](./books/an-architect-of-democracy.md)  
+- [🎨⚔️ The Art of War](./books/the-art-of-war.md)  
+- [😡🤬 Rage](./books/rage.md)  
+- [🗣️💻 Natural Language Processing with Transformers](./books/natural-language-processing-with-transformers.md)  
+- [🤖⚙️🔁 Designing Machine Learning Systems: An Iterative Process for Production-Ready Applications](./books/designing-machine-learning-systems-an-iterative-process-for-production-ready-applications.md)  
+- [🧠💻🤖 Deep Learning](./books/deep-learning.md)  
+- [🐈🐕🛋️ Pets on the Couch](./books/pets-on-the-couch.md)  
+- [📉⬆️ Out Of The Crisis](./books/out-of-the-crisis.md)  
 - [❓🎯 Start with Why: How Great Leaders Inspire Everyone to Take Action](./books/start-with-why-how-great-leaders-inspire-everyone-to-take-action.md)  
-- [7️⃣📏👑 7 Rules of Power: Surprising - but True - Advice on How to Get Things Done and Advance Your Career](./books/7-rules-of-power.md)  
-- [🏎️⛽ Drive: The Surprising Truth About What Motivates Us](./books/drive-the-surprising-truth-about-what-motivates-us.md)  
-- [➡️ Pivot: The Only Move That Matters Is Your Next One](./books/pivot-the-only-move-that-matters-is-your-next-one.md)  
-- [🧘🏼‍♀️👩🏼‍🏫 Practicing Mindfulness: An Introduction to Meditation](./books/practicing-mindfulness-an-introduction-to-meditation.md)  
-- [🏛️❓ Who Is Government?: The Untold Story of Public Service](./books/who-is-government-the-untold-story-of-public-service.md)  
-- [🍊🤡🤥👹💥🏛️🇺🇸 I Alone Can Fix It: Donald J. Trump's Catastrophic Final Year](./books/i-alone-can-fix-it-donald-j-trumps-catastrophic-final-year.md)  
-- [⚠️😬😰 Peril](./books/peril.md)  
-- [🤯🐍🏘️🎪💥 Mad House: How Donald Trump, MAGA Mean Girls, a Former Used Car Salesman, a Florida Nepo Baby, and a Man with Rats in His Walls Broke Congress](./books/mad-house.md)  
-- [⚠️🥴🕹️🌐 The Fifth Risk](./books/the-fifth-risk.md)  
   
   
-## [📺 Videos](./videos/index.md) (198)  
+## [📺 Videos](./videos/index.md) (204)  
+- [😟🔮 Anne Applebaum: «It Is What I Feared Would Happen»](./videos/anne-applebaum-it-is-what-i-feared-would-happen.md)  
+- [⛈️🇺🇸🗣️💬 Brooks and Capehart on the federal response to the Texas flooding disaster](./videos/brooks-and-capehart-on-the-federal-response-to-the-texas-flooding-disaster.md)  
+- [⚠️🌊🏘️❌ FEMA missed major flood risks at Camp Mystic in Texas, new analysis reveals](./videos/fema-missed-major-flood-risks-at-camp-mystic-in-texas-new-analysis-reveals.md)  
+- [📰🏛️📉 News Wrap: State Department lays off more than 1,300 in latest cuts to federal workforce](./videos/news-wrap-state-department-lays-off-more-than-1300-in-latest-cuts-to-federal-workforce.md)  
+- [🇺🇸🚫➡️🇺🇦⚔️🇷🇺 U.S. withholds weapons promised to Ukraine as Russian forces gain more territory](./videos/us-withholds-weapons-promised-to-ukraine-as-russian-forces-gain-more-territory.md)  
+- [🖼️🤔🛠️🤖 Context Engineering for Agents](./videos/context-engineering-for-agents.md)  
+- [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./videos/12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
+- [🌐🕸️🔮 The Future of the Web • Sir Tim Berners-Lee • GOTO 2018](./videos/the-future-of-the-web-sir-tim-berners-lee-goto-2018.md)  
+- [🕸️🛠️🤔 Three decades after inventing the web, Tim Berners-Lee has some ideas on how to fix it](./videos/three-decades-after-inventing-the-web-tim-berners-lee-has-some-ideas-on-how-to-fix-it.md)  
 - [🤖🧠🚀📈 Using Generative AI to Strengthen & Accelerate Learning • Barbara Oakley • GOTO 2024](./videos/using-generative-ai-to-strengthen-accelerate-learning-barbara-oakley-goto-2024.md)  
-- [💻🌍🚶‍♀️ Where All the Tech Workers Are Going](./videos/where-all-the-tech-workers-are-going.md)  
-- [🤖🚀📈 Andrew Ng: Building Faster with AI](./videos/andrew-ng-building-faster-with-ai.md)  
-- [🎓🎮🏆✨ Last Lecture Series: How to Design a Winnable Game – Graham Weaver](./videos/last-lecture-series-how-to-design-a-winnable-game-graham-weaver.md)  
-- [💰🌊🚧🏛️🪧🚨 Politics Chat, July 10, 2025](./videos/politics-chat-july-10-2025.md)  
-- [👹👀🇺🇸📉 The Big Short author Michael Lewis on what he thinks happens next with Trump and the USA](./videos/the-big-short-author-michael-lewis-on-what-he-thinks-happens-next-with-trump-and-the-usa.md)  
-- [🏛️📉🇺🇸🔟 Schiff Takes To Senate Floor to Lay Out the Top 10 Ways Trump is Wrecking America](./videos/schiff-takes-to-senate-floor-to-lay-out-the-top-10-ways-trump-is-wrecking-america.md)  
-- [💻🔄💻 Andrej Karpathy: Software Is Changing (Again)](./videos/andrej-karpathy-software-is-changing-again.md)  
-- [📢👁️🗣️💡 It's Our Job to Make Sure People Know the Truth](./videos/its-our-job-to-make-sure-people-know-the-truth.md)  
-- [🤯😲😳 You Aren't Going to Believe This](./videos/you-arent-going-to-believe-this.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (79)  
+- [🧠🌍⚙️ Model Context Protocol](./topics/model-context-protocol.md)  
 - [🤖🦜 Large Language Models](./topics/large-language-models.md)  
 - [⚙️🧠🔄 Adaptive Control](./topics/adaptive-control.md)  
 - [😴🛌🧘 REST](./topics/rest.md)  
 - [💾🧱⚡️ Static Site Generation](./topics/static-site-generation.md)  
-- [🧠🌍⚙️ Model Context Protocol](./topics/model-context-protocol.md)  
   
   
 ## [🤖💬 Bot Chats](./bot-chats/index.md) (33)  
@@ -67,24 +67,24 @@ title: 🏡 Home
   
 ## [📄  Articles](./articles/index.md) (30)  
 - [👀 Attention Is All You Need](./articles/attention-is-all-you-need.md)  
+- [🪵 The Log: What every software engineer should know about real-time data's unifying abstraction](./articles/the-log-what-every-software%20engineer-should-know-about-real-time-datas-unifying-abstraction.md)  
 - [💻💰🤝👹🇺🇸 Tech moguls Altman, Bezos and Zuckerberg donate to Trump's inauguration fund](./articles/tech-moguls-altman-bezos-and-zuckerberg-donate-to-trumps-inauguration-fund.md)  
 - [👨‍⚖️🆚🏢🗺️ Peckham v. Gem State Mut. of Utah, 964 F. 2d 1043 - Court of Appeals, 10th Circuit](../Peckham%20v.%20Gem%20State%20Mut.%20of%20Utah,%20964%20F.%202d%201043%20-%20Court%20of%20Appeals,%2010th%20Circuit.md)  
 - [💪🧠📉💊🔎 Creatine Supplementation in Depression: A Review of Mechanisms, Efficacy, Clinical Outcomes, and Future Directions](./articles/creatine-supplementation-in-depression-a-review-of-mechanisms-efficacy-clinical-outcomes-and-future-directions.md)  
-- [🧑‍💻🤖🤝 How Anthropic Teams Use Claude Code](./articles/how-anthropic-teams-use-claude-code.md)  
   
   
 ## [💾 Software](./software/index.md) (29)  
+- [🌐🔓💻 Open WebUI](./software/open-webui.md)  
+- [Ollama](./software/ollama.md)  
+- [🤖🖱️📍 Cursor](./software/cursor.md)  
 - [💾✍️🌋⚫️ Obsidian](./software/obsidian.md)  
 - [💾➕🤝 Git](./software/git.md)  
-- [🤖♊ Gemini](./software/gemini.md)  
-- [🌐🛤️ Express.js](./software/express.md)  
-- [↔️🔍 Elastic Search](./software/elastic-search.md)  
   
   
 ## [👥 People](./people/index.md) (10)  
-- [👨‍🏫🤖 Andrew Ng](./people/andrew-ng.md)  
-- [🤖🧠💻 Andrej Karpathy](./people/andrej-karpathy.md)  
-- [🧠🔬🧘‍♀️💪📈❤️‍🩹🗣️📚🌟 Kelly McGonigal](./people/kelly-mcgonigal.md)  
+- [🐕‍🦺🧠🐾 Nicholas Dodman](./people/nicholas-dodman.md)  
+- [🕸️🌐👨‍💻 Tim Berners-Lee](./people/tim-berners-lee.md)  
+- [📈📊⚙️🎯 W Edwards Deming](./people/w-edwards-deming.md)  
   
   
 ## 🔗 Profiles  

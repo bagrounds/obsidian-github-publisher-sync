@@ -10,8 +10,9 @@ title: 🏡 Home
 📑 Notes, 💭 thoughts, and 🔗 Links.  
 ❔ What do 🫵 _you_ 🤔 think?  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (240)  
-- [2025-07-12](./reflections/2025-07-12.md)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (241)  
+- [2025-07-13](./reflections/2025-07-13.md)  
+- [2025-07-12 | 🤖 Agents | 🌊 Tragedy 📺📚📰](./reflections/2025-07-12.md)  
 - [2025-07-11 | 🌟 Clarity 📚📺](./reflections/2025-07-11.md)  
 - [2025-07-10 | 🤖 AI | 🪧 Pushback 📺📚👥](./reflections/2025-07-10.md)  
 - [2025-07-09 | 👹 Authority ⚔️ versus 🌍 Society 📺📚](./reflections/2025-07-09.md)  
@@ -20,10 +21,12 @@ title: 🏡 Home
 - [2025-07-06 | 🤖 AI, 🦠 Germs, and 🏫 School](./reflections/2025-07-06.md)  
 - [2025-07-05 | 🤕🏚️➡️💸➡️🏰 Robber 🧛🏻‍♂️🤝👹 Barons 🤖💬📚📺📄](./reflections/2025-07-05.md)  
 - [2025-07-04 | 🇺🇸 Independence Day 📺](./reflections/2025-07-04.md)  
-- [2025-07-03 | 🤫 Subliminal 📚](./reflections/2025-07-03.md)  
   
   
-## [📚 Books](./books/index.md) (510)  
+## [📚 Books](./books/index.md) (512)  
+- [🔬🔄 The Structure of Scientific Revolutions](./books/the-structure-of-scientific-revolutions.md)  
+- [📜🌍👥 A Brief History of Everyone Who Ever Lived](./books/a-brief-history-of-everyone-who-ever-lived.md)  
+- [✅➕ Abundance](./books/abundance.md)  
 - [🤝🌍 Diplomacy](./books/diplomacy.md)  
 - [✍️🗺️🏗️🗳️ An Architect of Democracy: Building a Mosaic of Peace](./books/an-architect-of-democracy.md)  
 - [🎨⚔️ The Art of War](./books/the-art-of-war.md)  
@@ -31,9 +34,6 @@ title: 🏡 Home
 - [🗣️💻 Natural Language Processing with Transformers](./books/natural-language-processing-with-transformers.md)  
 - [🤖⚙️🔁 Designing Machine Learning Systems: An Iterative Process for Production-Ready Applications](./books/designing-machine-learning-systems-an-iterative-process-for-production-ready-applications.md)  
 - [🧠💻🤖 Deep Learning](./books/deep-learning.md)  
-- [🐈🐕🛋️ Pets on the Couch](./books/pets-on-the-couch.md)  
-- [📉⬆️ Out Of The Crisis](./books/out-of-the-crisis.md)  
-- [❓🎯 Start with Why: How Great Leaders Inspire Everyone to Take Action](./books/start-with-why-how-great-leaders-inspire-everyone-to-take-action.md)  
   
   
 ## [📺 Videos](./videos/index.md) (204)  
@@ -57,20 +57,20 @@ title: 🏡 Home
 - [💾🧱⚡️ Static Site Generation](./topics/static-site-generation.md)  
   
   
-## [🤖💬 Bot Chats](./bot-chats/index.md) (33)  
+## [🤖💬 Bot Chats](./bot-chats/index.md) (34)  
+- [🇷🇺👹🤝👹🇺🇸 Trump and Putin](./bot-chats/trump-and-putin.md)  
 - [🪵❓ How Much Wood](./bot-chats/how-much-wood.md)  
 - [🤖📱🧠 Android Local LLMs](./bot-chats/android-local-llms.md)  
 - [🧭 Managing 🕸️ Complexity 🧠](./bot-chats/managing-complexity.md)  
 - [📖 Book 🧭 Explorer 1](./bot-chats/book-explorer-1.md)  
-- [🤕😖 Headaches](./bot-chats/headaches.md)  
   
   
-## [📄  Articles](./articles/index.md) (30)  
+## [📄  Articles](./articles/index.md) (31)  
+- [🧑‍⚖️🧬💰🤝 Judge OKs sale of 23andMe - and its trove of DNA data - to a nonprofit led by its founder](./articles/judge-oks-sale-of-23andme-and-its-trove-of-dna-data-to-a-nonprofit-led-by-its-founder.md)  
 - [👀 Attention Is All You Need](./articles/attention-is-all-you-need.md)  
 - [🪵 The Log: What every software engineer should know about real-time data's unifying abstraction](./articles/the-log-what-every-software%20engineer-should-know-about-real-time-datas-unifying-abstraction.md)  
 - [💻💰🤝👹🇺🇸 Tech moguls Altman, Bezos and Zuckerberg donate to Trump's inauguration fund](./articles/tech-moguls-altman-bezos-and-zuckerberg-donate-to-trumps-inauguration-fund.md)  
 - [👨‍⚖️🆚🏢🗺️ Peckham v. Gem State Mut. of Utah, 964 F. 2d 1043 - Court of Appeals, 10th Circuit](../Peckham%20v.%20Gem%20State%20Mut.%20of%20Utah,%20964%20F.%202d%201043%20-%20Court%20of%20Appeals,%2010th%20Circuit.md)  
-- [💪🧠📉💊🔎 Creatine Supplementation in Depression: A Review of Mechanisms, Efficacy, Clinical Outcomes, and Future Directions](./articles/creatine-supplementation-in-depression-a-review-of-mechanisms-efficacy-clinical-outcomes-and-future-directions.md)  
   
   
 ## [💾 Software](./software/index.md) (29)  

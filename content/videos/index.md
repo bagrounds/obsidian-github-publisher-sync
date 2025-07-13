@@ -7,7 +7,7 @@ URL: https://bagrounds.org/videos
 backlinks: false
 ---
 [Home](../index.md)  
-# 📺 Videos (204)  
+# 📺 Videos (205)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
 - [❓💪🔬 12 Questions About Creatine with Stephen Cornish, PhD](./12-questions-about-creatine-w-stephen-cornish-phd.md)  
@@ -204,6 +204,7 @@ backlinks: false
 - [Why Bob Woodward worries about Trump's America](./why-bob-woodward-worries-about-trumps-america.md)  
 - [Why Do Babies Spit Up So Much?](./why-do-babies-spit-up-so-much.md)  
 - [🤔➡️💰 Why Republicans once staunchly opposed to Trump's bill changed their minds](./why-republicans-once-staunchly-opposed-to-trumps-bill-changed-their-minds.md)  
+- [❓😡🇺🇸🗳️ Why the hell did people vote for Trump? (the answers will shock you)](./why-the-hell-did-people-vote-for-trump-the-answers-will-shock-you.md)  
 - [👹⏱️🇺🇸➡️💰 Why the Trump Administration Is Rushing the Budget Reconciliation Bill Through](./why-the-trump-administration-is-rushing-the-budget-reconciliation-bill-through.md)  
 - [👹🇺🇸📉🔨👁️ With Trump “We Are Watching the Deliberate Dismantling of American Democracy”](./with-trump-we-are-watching-the-deliberate-dismantling-of-american-democracy.md)  
 - [🤯😲😳 You Aren't Going to Believe This](./you-arent-going-to-believe-this.md)  

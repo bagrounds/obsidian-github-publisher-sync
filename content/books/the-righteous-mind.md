@@ -7,6 +7,7 @@ URL: https://bagrounds.org/books/the-righteous-mind
 Author: 
 tags: 
 affiliate link: https://amzn.to/3ZIy2gS
+CTA: Understand morality.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 😇🧠 The Righteous Mind: Why Good People Are Divided by Politics and Religion  
@@ -53,8 +54,8 @@ affiliate link: https://amzn.to/3ZIy2gS
 * 🧘 **Self Awareness:** 🤔 Understand your own moral foundations, 🧱 and how they influence 💫 your judgement. ⚖️  
   
 ### Book Recommendations 📚  
-* **Best Alternate Book on the Same Topic:** "[Thinking, Fast and Slow](./thinking-fast-and-slow.md)" by Daniel Kahneman 🧠: Provides a broader understanding of cognitive biases and decision-making, which complements Haidt's work on moral intuition.  
-* **Best Tangentially Related Book:** "[Sapiens: A Brief History of Humankind](./sapiens-a-brief-history-of-humankind.md)" by Yuval Noah Harari 🌍: Explores the evolutionary and cultural forces that have shaped human societies, providing a broader context for understanding morality and groupishness.  
+* **Best Alternate Book on the Same Topic:** [🤔🐇🐢 Thinking, Fast and Slow](./thinking-fast-and-slow.md) by Daniel Kahneman 🧠: Provides a broader understanding of cognitive biases and decision-making, which complements Haidt's work on moral intuition.  
+* **Best Tangentially Related Book:** [📜🌍⏳ Sapiens: A Brief History of Humankind](./sapiens-a-brief-history-of-humankind.md) by Yuval Noah Harari 🌍: Explores the evolutionary and cultural forces that have shaped human societies, providing a broader context for understanding morality and groupishness.  
 * **Best Diametrically Opposed Book:** "Enlightenment Now: The Case for Reason, Science, Humanism, and Progress" by Steven Pinker 💡: While not directly opposed, Pinker emphasizes the power of reason and progress, which contrasts with Haidt's focus on the role of intuition and groupishness.  
 * **Best Fiction Book with Related Ideas:** "Lord of the Flies" by William Golding 🏝️: Explores the darker side of human nature and the breakdown of social order, reflecting themes of groupishness and moral foundations.  
 * **Random Book Everyone Should Read:** "The Hitchhiker's Guide to the Galaxy" by Douglas Adams 🌌: A humorous and thought-provoking exploration of the universe, reminding us of the absurdity and wonder of existence.  

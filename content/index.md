@@ -23,20 +23,21 @@ title: 🏡 Home
 - [2025-07-04 | 🇺🇸 Independence Day 📺](./reflections/2025-07-04.md)  
   
   
-## [📚 Books](./books/index.md) (516)  
-- [🇷🇺🤫🇺🇸 Collusion: Secret Meetings, Dirty Money, and How Russia Helped Donald Trump Win](./books/collusion-secret-meetings-dirty-money-and-how-russia-helped-donald-trump-win.md)  
-- [🏛️👹🇺🇸🏰👹🇷🇺 House of Trump, House of Putin: The Untold Story of Donald Trump and the Russian Mafia](./books/house-of-trump-house-of-putin-the-untold-story-of-donald-trump-and-the-russian-mafia.md)  
-- [✅➕ Abundance](./books/abundance.md)  
+## [📚 Books](./books/index.md) (518)  
+- [👹🐍🛢️🇺🇸 Confidence Man: The Making of Donald Trump and the Breaking of America](./books/confidence-man-the-making-of-donald-trump-and-the-breaking-of-america.md)  
+- [🤯🐍🏘️🎪💥 Mad House: How Donald Trump, MAGA Mean Girls, a Former Used Car Salesman, a Florida Nepo Baby, and a Man with Rats in His Walls Broke Congress](./books/mad-house.md)  
+- [🇷🇺⚔️🇺🇦🇮🇱⚔️🇮🇷🇺🇸⚔️🇺🇸 War](./books/war.md)  
 - [📉❓ Why Nothing Works: Who Killed Progress - and How to Bring It Back](./books/why-nothing-works-who-killed-progress-and-how-to-bring-it-back.md)  
+- [🇷🇺🪝🇺🇸 American Kompromat: How the KGB Cultivated Donald Trump, and Other Tales of Sex, Greed, Power, and Treachery](./books/american-kompromat-how-the-kgb-cultivated-donald-trump-and-other-tales-of-sex-greed-power-and-treachery.md)  
+- [🏛️👹🇺🇸🏰👹🇷🇺 House of Trump, House of Putin: The Untold Story of Donald Trump and the Russian Mafia](./books/house-of-trump-house-of-putin-the-untold-story-of-donald-trump-and-the-russian-mafia.md)  
+- [🇷🇺🤫🇺🇸 Collusion: Secret Meetings, Dirty Money, and How Russia Helped Donald Trump Win](./books/collusion-secret-meetings-dirty-money-and-how-russia-helped-donald-trump-win.md)  
+- [✅➕ Abundance](./books/abundance.md)  
 - [🏘️↔️ The Big Sort: Why the Clustering of Like-Minded America Is Tearing Us Apart](./books/the-big-sort-why-the-clustering-of-like-minded-america-is-tearing-us-apart.md)  
 - [😇🧠 The Righteous Mind: Why Good People Are Divided by Politics and Religion](./books/the-righteous-mind.md)  
-- [🔬🔄 The Structure of Scientific Revolutions](./books/the-structure-of-scientific-revolutions.md)  
-- [📜🌍👥 A Brief History of Everyone Who Ever Lived](./books/a-brief-history-of-everyone-who-ever-lived.md)  
-- [🤝🌍 Diplomacy](./books/diplomacy.md)  
-- [✍️🗺️🏗️🗳️ An Architect of Democracy: Building a Mosaic of Peace](./books/an-architect-of-democracy.md)  
   
   
 ## [📺 Videos](./videos/index.md) (206)  
+- [👨‍⚖️💂‍♂️🚨🇺🇸 Trump Orders Another 2,000 Guardsmen, 700 Marines To LA | NPR News Now](./videos/trump-orders-another-2000-guardsmen-700-marines-to-la-npr-news-now.md)  
 - [🤖📅🦢🚲 2025 in LLMs so far, illustrated by Pelicans on Bicycles - Simon Willison](./videos/2025-in-llms-so-far-illustrated-by-pelicans-on-bicycles-simon-willison.md)  
 - [❓😡🇺🇸🗳️ Why the hell did people vote for Trump? (the answers will shock you)](./videos/why-the-hell-did-people-vote-for-trump-the-answers-will-shock-you.md)  
 - [😟🔮 Anne Applebaum: «It Is What I Feared Would Happen»](./videos/anne-applebaum-it-is-what-i-feared-would-happen.md)  
@@ -46,7 +47,6 @@ title: 🏡 Home
 - [🇺🇸🚫➡️🇺🇦⚔️🇷🇺 U.S. withholds weapons promised to Ukraine as Russian forces gain more territory](./videos/us-withholds-weapons-promised-to-ukraine-as-russian-forces-gain-more-territory.md)  
 - [🖼️🤔🛠️🤖 Context Engineering for Agents](./videos/context-engineering-for-agents.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./videos/12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
-- [🌐🕸️🔮 The Future of the Web • Sir Tim Berners-Lee • GOTO 2018](./videos/the-future-of-the-web-sir-tim-berners-lee-goto-2018.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (79)  

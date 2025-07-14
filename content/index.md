@@ -10,7 +10,8 @@ title: 🏡 Home
 📑 Notes, 💭 thoughts, and 🔗 Links.  
 ❔ What do 🫵 _you_ 🤔 think?  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (241)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (242)  
+- [2025-07-14](./reflections/2025-07-14.md)  
 - [2025-07-13 | 🌎 Abundance | 🤝🏻 Collusion | 🧬 DNA 📚📄🤖💬📺](./reflections/2025-07-13.md)  
 - [2025-07-12 | 🤖 Agents | 🌊 Tragedy 📺📚📰](./reflections/2025-07-12.md)  
 - [2025-07-11 | 🌟 Clarity 📚📺](./reflections/2025-07-11.md)  
@@ -20,10 +21,10 @@ title: 🏡 Home
 - [2025-07-07 | 🇺🇸🔬🏗️ Structure 📺📚](./reflections/2025-07-07.md)  
 - [2025-07-06 | 🤖 AI, 🦠 Germs, and 🏫 School](./reflections/2025-07-06.md)  
 - [2025-07-05 | 🤕🏚️➡️💸➡️🏰 Robber 🧛🏻‍♂️🤝👹 Barons 🤖💬📚📺📄](./reflections/2025-07-05.md)  
-- [2025-07-04 | 🇺🇸 Independence Day 📺](./reflections/2025-07-04.md)  
   
   
-## [📚 Books](./books/index.md) (518)  
+## [📚 Books](./books/index.md) (519)  
+- [☀️📖🌿 The New Sunset Western Garden Book: The Ultimate Gardening Guide](./books/the-new-sunset-western-garden-book-the-ultimate-gardening-guide.md)  
 - [🇷🇺⚔️🇺🇦🇮🇱⚔️🇮🇷🇺🇸⚔️🇺🇸 War](./books/war.md)  
 - [👹🐍🛢️🇺🇸 Confidence Man: The Making of Donald Trump and the Breaking of America](./books/confidence-man-the-making-of-donald-trump-and-the-breaking-of-america.md)  
 - [🤯🐍🏘️🎪💥 Mad House: How Donald Trump, MAGA Mean Girls, a Former Used Car Salesman, a Florida Nepo Baby, and a Man with Rats in His Walls Broke Congress](./books/mad-house.md)  
@@ -33,7 +34,6 @@ title: 🏡 Home
 - [🇷🇺🤫🇺🇸 Collusion: Secret Meetings, Dirty Money, and How Russia Helped Donald Trump Win](./books/collusion-secret-meetings-dirty-money-and-how-russia-helped-donald-trump-win.md)  
 - [✅➕ Abundance](./books/abundance.md)  
 - [🏘️↔️ The Big Sort: Why the Clustering of Like-Minded America Is Tearing Us Apart](./books/the-big-sort-why-the-clustering-of-like-minded-america-is-tearing-us-apart.md)  
-- [😇🧠 The Righteous Mind: Why Good People Are Divided by Politics and Religion](./books/the-righteous-mind.md)  
   
   
 ## [📺 Videos](./videos/index.md) (206)  

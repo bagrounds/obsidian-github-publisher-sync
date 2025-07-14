@@ -8,12 +8,11 @@ Author:
 Platform: 
 Channel: Noam Chomsky Wisdom
 tags: 
-youtube: https://youtu.be/SS9MJNSlgww
+youtube: https://youtu.be/OT3iwYsuWOw
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 🤔⏳👹⬇️ Noam Chomsky || How Much Time Is Left Until the End of Trump ( Must Watch )  
-![Noam Chomsky || How Much Time Is Left Until the End of Trump ( Must Watch )](https://youtu.be/SS9MJNSlgww)  
-  
+![Noam Chomsky || How Much Time Is Left Until the End of Trump ( Must Watch )](https://youtu.be/OT3iwYsuWOw)  
 ## 🤖 AI Summary  
 The video addresses the following issues:  
 * **🧑‍🤝‍🧑 Beyond the Individual:** Focusing solely on one political figure misses the broader issues.  

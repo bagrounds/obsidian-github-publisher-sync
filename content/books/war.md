@@ -5,6 +5,7 @@ aliases:
 URL: https://bagrounds.org/books/war
 share: true
 affiliate link: https://amzn.to/4nMsEDL
+CTA: Look deeper.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🇷🇺⚔️🇺🇦🇮🇱⚔️🇮🇷🇺🇸⚔️🇺🇸 War  

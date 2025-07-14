@@ -24,9 +24,9 @@ title: 🏡 Home
   
   
 ## [📚 Books](./books/index.md) (518)  
+- [🇷🇺⚔️🇺🇦🇮🇱⚔️🇮🇷🇺🇸⚔️🇺🇸 War](./books/war.md)  
 - [👹🐍🛢️🇺🇸 Confidence Man: The Making of Donald Trump and the Breaking of America](./books/confidence-man-the-making-of-donald-trump-and-the-breaking-of-america.md)  
 - [🤯🐍🏘️🎪💥 Mad House: How Donald Trump, MAGA Mean Girls, a Former Used Car Salesman, a Florida Nepo Baby, and a Man with Rats in His Walls Broke Congress](./books/mad-house.md)  
-- [🇷🇺⚔️🇺🇦🇮🇱⚔️🇮🇷🇺🇸⚔️🇺🇸 War](./books/war.md)  
 - [📉❓ Why Nothing Works: Who Killed Progress - and How to Bring It Back](./books/why-nothing-works-who-killed-progress-and-how-to-bring-it-back.md)  
 - [🇷🇺🪝🇺🇸 American Kompromat: How the KGB Cultivated Donald Trump, and Other Tales of Sex, Greed, Power, and Treachery](./books/american-kompromat-how-the-kgb-cultivated-donald-trump-and-other-tales-of-sex-greed-power-and-treachery.md)  
 - [🏛️👹🇺🇸🏰👹🇷🇺 House of Trump, House of Putin: The Untold Story of Donald Trump and the Russian Mafia](./books/house-of-trump-house-of-putin-the-untold-story-of-donald-trump-and-the-russian-mafia.md)  

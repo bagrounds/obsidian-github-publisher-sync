@@ -7,6 +7,7 @@ URL: https://bagrounds.org/books/mad-house
 Author: 
 tags: 
 affiliate link: https://amzn.to/3FmLost
+CTA: Expose the madness.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🤯🐍🏘️🎪💥 Mad House: How Donald Trump, MAGA Mean Girls, a Former Used Car Salesman, a Florida Nepo Baby, and a Man with Rats in His Walls Broke Congress  
@@ -73,7 +74,7 @@ By Annie Karni
   
 #### Additional Book Recommendations 📚  
   
-* 🏆 **Best Alternate Book (Same Topic):** 🇺🇸 "[Peril](./peril.md)" by Bob Woodward and Robert Costa. 🇺🇸 This book provides a broader look at the transition of power from Trump to Biden, which is tangentially related to the congressional chaos.  
+* 🏆 **Best Alternate Book (Same Topic):** [⚠️😬😰 Peril](./peril.md) by Bob Woodward and Robert Costa. 🇺🇸 This book provides a broader look at the transition of power from Trump to Biden, which is tangentially related to the congressional chaos.  
   
 * 🤝 **Best Tangentially Related Book:** 🤔 "Why We're Polarized" by Ezra Klein. 🤝 This book explores the roots of political polarization in the United States, providing context for the events described in "Mad House." 🇺🇸 📚  
   
@@ -81,7 +82,7 @@ By Annie Karni
   
 * 🎭 **Best Fiction Book (Related Ideas):** 🃏 "House of Cards" by Michael Dobbs. 🇬🇧 This fictional political thriller explores the dark side of power and ambition in British politics, offering a dramatic portrayal of political maneuvering. 😈 👑  
   
-* 🌍 **Best More General Book:** ⚠️ "The Fifth Risk" by Michael Lewis. 💼 This book examines the transition of power in the Trump administration, highlighting the importance of competent governance. 💡 ✍️  
+* 🌍 **Best More General Book:** [⚠️🥴🕹️🌐 The Fifth Risk](./the-fifth-risk.md) by Michael Lewis. 💼 This book examines the transition of power in the Trump administration, highlighting the importance of competent governance. 💡✍️  
   
 * 🎯 **Best More Specific Book:** 💥 "Insurgency: How Republicans Lost Their Party and Got Everything They Ever Wanted" by Jeremy Peters.🐘 This book dives into the Republican party's internal struggles. 🐘 🔥  
   

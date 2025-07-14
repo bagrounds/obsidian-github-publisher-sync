@@ -5,6 +5,7 @@ aliases:
 URL: https://bagrounds.org/books/botany-for-gardeners
 share: true
 affiliate link: https://amzn.to/4jt9qQg
+CTA: Grow smarter.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🌿🧑‍🌾 Botany for Gardeners  

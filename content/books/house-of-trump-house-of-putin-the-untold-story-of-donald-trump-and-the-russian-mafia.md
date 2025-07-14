@@ -38,7 +38,7 @@ The book is a 🥇 *New York Times* bestseller. 📰 Reviews have described it a
 ### 📖 Similar Reads (Focus on Trump, Russia, Corruption, Organized Crime)  
   
 * 🕵️ **American Kompromat: How the KGB Cultivated Donald Trump, and What It Means for America** by Craig Unger: Unger's follow-up book, delving further into the alleged cultivation of Trump by Russian intelligence.  
-* 🤝 **Collusion: How Russia Helped Trump Win the Presidency** by Luke Harding: Explores the connections between the Trump campaign and Russia, drawing on the author's experience as a journalist in Moscow.  
+* **[🇷🇺🤫🇺🇸 Collusion: Secret Meetings, Dirty Money, and How Russia Helped Donald Trump Win](./collusion-secret-meetings-dirty-money-and-how-russia-helped-donald-trump-win.md)** by Luke Harding: Explores the connections between the Trump campaign and Russia, drawing on the author's experience as a journalist in Moscow.  
 * ⚠️ **Red Notice: A True Story of High Finance, Murder, and One Man's Fight for Justice** by Bill Browder: Details the corruption and danger within the Russian financial system and the lengths Putin's regime will go to protect itself.  
 * 👑 **The New Tsar: The Rise and Reign of Vladimir Putin** by Steven Lee Myers: Provides a comprehensive biography of Vladimir Putin and his consolidation of power in Russia.  
 * 💸 **Kleptopia: How Dirty Money is Conquering the World** by Tom Burgis: Investigates the global flow of illicit finance and its corrosive effects on democracy, with connections to Russia and other authoritarian states.  

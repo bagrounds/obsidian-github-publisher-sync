@@ -171,7 +171,7 @@ The post-Cold War era has seen U.S.-Russia relations oscillate between periods o
 * **[🏛️👹🇺🇸🏰👹🇷🇺 House of Trump, House of Putin: The Untold Story of Donald Trump and the Russian Mafia](../books/house-of-trump-house-of-putin-the-untold-story-of-donald-trump-and-the-russian-mafia.md) by Craig Unger**  
     * This book offers a comprehensive investigation into the decades-long relationship among Donald Trump, Vladimir Putin, and the Russian Mafia, arguing that these connections ultimately helped Trump win the White House. Unger traces the financial and personal ties back to the 1970s, focusing on real estate as a vehicle for Russian money.  
   
-* **"Collusion: Secret Meetings, Dirty Money, and How Russia Helped Donald Trump Win" by Luke Harding**  
+* **[🇷🇺🤫🇺🇸 Collusion: Secret Meetings, Dirty Money, and How Russia Helped Donald Trump Win](../books/collusion-secret-meetings-dirty-money-and-how-russia-helped-donald-trump-win.md) by Luke Harding**  
     * Written by a former *Guardian* foreign correspondent who was expelled from Russia, this book aims to connect the dots of the Trump-Russia story. Harding draws on new material, key sources, and unique access to principals to detail the alleged secret meetings, financial transactions, and influence operations.  
   
 * **"Interference: The Inside Story of Trump, Russia, and the Mueller Investigation" by Aaron Zebley, James Quarles, and Andrew Goldstein**  

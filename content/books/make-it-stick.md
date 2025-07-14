@@ -7,6 +7,7 @@ URL: https://bagrounds.org/books/make-it-stick
 Author: 
 tags: 
 affiliate link: https://amzn.to/3HoJAQh
+CTA: 🧠 Absorb lasting knowledge.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧠🔒 Make It Stick: The Science of Successful Learning  

@@ -7,6 +7,7 @@ URL: https://bagrounds.org/books/Mindset
 Author: "[[Carol Dweck]]"
 tags: 
 affiliate link: https://amzn.to/3HAAyQ0
+CTA: 📈 Cultivate growth.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🌱🧘🏼‍♀️🏆 Mindset: The New Psychology of Success  

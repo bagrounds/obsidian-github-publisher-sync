@@ -25,6 +25,8 @@ title: 🏡 Home
   
 ## [📚 Books](./books/index.md) (519)  
 - [☀️📖🌿 The New Sunset Western Garden Book: The Ultimate Gardening Guide](./books/the-new-sunset-western-garden-book-the-ultimate-gardening-guide.md)  
+- [🪢🌾 Braiding Sweetgrass: Indigenous Wisdom, Scientific Knowledge, and the Teachings of Plants](./books/braiding-sweetgrass.md)  
+- [🌿🧑‍🌾 Botany for Gardeners](./books/botany-for-gardeners.md)  
 - [🇷🇺⚔️🇺🇦🇮🇱⚔️🇮🇷🇺🇸⚔️🇺🇸 War](./books/war.md)  
 - [👹🐍🛢️🇺🇸 Confidence Man: The Making of Donald Trump and the Breaking of America](./books/confidence-man-the-making-of-donald-trump-and-the-breaking-of-america.md)  
 - [🤯🐍🏘️🎪💥 Mad House: How Donald Trump, MAGA Mean Girls, a Former Used Car Salesman, a Florida Nepo Baby, and a Man with Rats in His Walls Broke Congress](./books/mad-house.md)  
@@ -32,8 +34,6 @@ title: 🏡 Home
 - [🇷🇺🪝🇺🇸 American Kompromat: How the KGB Cultivated Donald Trump, and Other Tales of Sex, Greed, Power, and Treachery](./books/american-kompromat-how-the-kgb-cultivated-donald-trump-and-other-tales-of-sex-greed-power-and-treachery.md)  
 - [🏛️👹🇺🇸🏰👹🇷🇺 House of Trump, House of Putin: The Untold Story of Donald Trump and the Russian Mafia](./books/house-of-trump-house-of-putin-the-untold-story-of-donald-trump-and-the-russian-mafia.md)  
 - [🇷🇺🤫🇺🇸 Collusion: Secret Meetings, Dirty Money, and How Russia Helped Donald Trump Win](./books/collusion-secret-meetings-dirty-money-and-how-russia-helped-donald-trump-win.md)  
-- [✅➕ Abundance](./books/abundance.md)  
-- [🏘️↔️ The Big Sort: Why the Clustering of Like-Minded America Is Tearing Us Apart](./books/the-big-sort-why-the-clustering-of-like-minded-america-is-tearing-us-apart.md)  
   
   
 ## [📺 Videos](./videos/index.md) (206)  
@@ -103,3 +103,4 @@ title: 🏡 Home
 - <a href="https://www.quora.com/profile/Bryan-Grounds"><img style="height:1em; margin:0;" src="https://simpleicons.org/icons/quora.svg"/> Quora</a>  
 - <a href="http://stackoverflow.com/users/2081363/bagrounds"><img style="height:1em; margin:0;" src="https://simpleicons.org/icons/stackoverflow.svg"/> StackOverflow</a>  
 - <a href="https://twitter.com/bagrounds"><img style="height:1em; margin:0;" src="https://simpleicons.org/icons/x.svg"/> X (Formerly Twitter)</a>  
+- <a href="https://bsky.app/profile/bagrounds.bsky.social"><img style="height:1em; margin:0;" src="https://simpleicons.org/icons/bluesky.svg"/> Bluesky</a>  

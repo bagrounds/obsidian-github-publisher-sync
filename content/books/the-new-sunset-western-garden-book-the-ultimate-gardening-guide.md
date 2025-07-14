@@ -69,4 +69,14 @@ tags:
 * 📖 ***Dereck Jarman's Garden***. 🖼️ This book (or similar ones focusing on notable or unique gardens) offers artistic and personal inspiration, showcasing a specific vision and approach to creating a garden space.  
   
 ## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
-> Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on The New Sunset Western Garden Book: The Ultimate Gardening Guide. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.
+> Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on The New Sunset Western Garden Book: The Ultimate Gardening Guide. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.  
+  
+## 🐦 Tweet  
+<blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">☀️📖🌿 The New Sunset Western Garden Book: The Ultimate Gardening Guide<br><br>🪴 Plant Encyclopedia | ☀️ Climate Zones | 🌱 Gardening Techniques | 🏡 Garden Styles | 🎯 Western US | 💡 Innovative Ideas | 📖 The Bible of Western Gardening<a href="https://t.co/AMBLqG4Wyy">https://t.co/AMBLqG4Wyy</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/1944755080374390842?ref_src=twsrc%5Etfw">July 14, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>  
+  
+## 🦋 Bluesky  
+<blockquote class="bluesky-embed" data-bluesky-uri="at://did:plc:i4yli6h7x2uoj7acxunww2fc/app.bsky.feed.post/3ltwjl5l4z22b" data-bluesky-cid="bafyreieuzvwwdw5lqojp72qydoho3n7zeub3uaicxz362tzigngxbxeoa4" data-bluesky-embed-color-mode="system"><p lang="en">☀️📖🌿 The New Sunset Western Garden Book: The Ultimate Gardening Guide  
+  
+🪴 Plant Encyclopedia | ☀️ Climate Zones | 🌱 Gardening Techniques | 🏡 Garden Styles | 🎯 Western US | 💡 Innovative Ideas | 📖 The Bible of Western Gardening  
+  
+bagrounds.org/books/the-ne...<br><br><a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc/post/3ltwjl5l4z22b?ref_src=embed">[image or embed]</a></p>&mdash; Bryan Grounds (<a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc?ref_src=embed">@bagrounds.bsky.social</a>) <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc/post/3ltwjl5l4z22b?ref_src=embed">Jul 14, 2025 at 6:46 AM</a></blockquote><script async src="https://embed.bsky.app/static/embed.js" charset="utf-8"></script>

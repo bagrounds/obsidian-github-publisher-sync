@@ -5,6 +5,7 @@ aliases:
 URL: https://bagrounds.org/books/the-art-of-thinking-clearly
 share: true
 affiliate link: https://amzn.to/3ZN0tKD
+CTA: 💡 Sharpen judgement.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🎨🤔🖼️ The Art of Thinking Clearly  

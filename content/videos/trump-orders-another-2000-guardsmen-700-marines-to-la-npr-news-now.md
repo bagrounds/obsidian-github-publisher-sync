@@ -26,7 +26,7 @@ youtube: https://youtu.be/c0NjmETIR0s
   
 ## 📚 Book Recommendations  
 * 🛂 **Immigration Raids and Protests:** To understand the complexities of immigration issues and the impact of raids, consider exploring books like "The Devil's Highway: A True Story" by Luis Alberto Urrea, which depicts the harrowing journey of immigrants crossing the border, or "American Dirt" by Jeanine Cummins, a novel about a Mexican woman fleeing to the United States. 📖  
-* 🏛️ **Political Conflicts:** For insights into political clashes and the dynamics between leaders, you might find "Fear: Trump in the White House" by Bob Woodward or "A Warning" by Anonymous helpful. 📰  
+* 🏛️ **Political Conflicts:** For insights into political clashes and the dynamics between leaders, you might find [😱🤡🇺🇸 Fear: Trump in the White House](../books/fear.md) by Bob Woodward or "A Warning" by Anonymous helpful. 📰  
 * 🌡️ **Vaccine Policies and Public Health:** To learn more about vaccine science and public health debates, "On Immunity: An Inoculation" by Eula Biss offers a thoughtful exploration. 🔬  
 * 💔 **School Shootings:** "Columbine" by Dave Cullen provides an in-depth look at a tragic school shooting and its aftermath. 🕊️  
 * 🌍 **Russia-Ukraine Conflict:** To understand the history and ongoing conflict between Russia and Ukraine, consider "The Gates of Europe: A History of Ukraine" by Serhii Plokhy. 🗺️  

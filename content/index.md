@@ -23,20 +23,21 @@ title: 🏡 Home
 - [2025-07-04 | 🇺🇸 Independence Day 📺](./reflections/2025-07-04.md)  
   
   
-## [📚 Books](./books/index.md) (514)  
+## [📚 Books](./books/index.md) (516)  
+- [🇷🇺🤫🇺🇸 Collusion: Secret Meetings, Dirty Money, and How Russia Helped Donald Trump Win](./books/collusion-secret-meetings-dirty-money-and-how-russia-helped-donald-trump-win.md)  
+- [🏛️👹🇺🇸🏰👹🇷🇺 House of Trump, House of Putin: The Untold Story of Donald Trump and the Russian Mafia](./books/house-of-trump-house-of-putin-the-untold-story-of-donald-trump-and-the-russian-mafia.md)  
+- [✅➕ Abundance](./books/abundance.md)  
+- [📉❓ Why Nothing Works: Who Killed Progress - and How to Bring It Back](./books/why-nothing-works-who-killed-progress-and-how-to-bring-it-back.md)  
 - [🏘️↔️ The Big Sort: Why the Clustering of Like-Minded America Is Tearing Us Apart](./books/the-big-sort-why-the-clustering-of-like-minded-america-is-tearing-us-apart.md)  
 - [😇🧠 The Righteous Mind: Why Good People Are Divided by Politics and Religion](./books/the-righteous-mind.md)  
-- [🏛️👹🇺🇸🏰👹🇷🇺 House of Trump, House of Putin: The Untold Story of Donald Trump and the Russian Mafia](./books/house-of-trump-house-of-putin-the-untold-story-of-donald-trump-and-the-russian-mafia.md)  
 - [🔬🔄 The Structure of Scientific Revolutions](./books/the-structure-of-scientific-revolutions.md)  
 - [📜🌍👥 A Brief History of Everyone Who Ever Lived](./books/a-brief-history-of-everyone-who-ever-lived.md)  
-- [✅➕ Abundance](./books/abundance.md)  
 - [🤝🌍 Diplomacy](./books/diplomacy.md)  
 - [✍️🗺️🏗️🗳️ An Architect of Democracy: Building a Mosaic of Peace](./books/an-architect-of-democracy.md)  
-- [🎨⚔️ The Art of War](./books/the-art-of-war.md)  
-- [😡🤬 Rage](./books/rage.md)  
   
   
-## [📺 Videos](./videos/index.md) (205)  
+## [📺 Videos](./videos/index.md) (206)  
+- [🤖📅🦢🚲 2025 in LLMs so far, illustrated by Pelicans on Bicycles - Simon Willison](./videos/2025-in-llms-so-far-illustrated-by-pelicans-on-bicycles-simon-willison.md)  
 - [❓😡🇺🇸🗳️ Why the hell did people vote for Trump? (the answers will shock you)](./videos/why-the-hell-did-people-vote-for-trump-the-answers-will-shock-you.md)  
 - [😟🔮 Anne Applebaum: «It Is What I Feared Would Happen»](./videos/anne-applebaum-it-is-what-i-feared-would-happen.md)  
 - [⛈️🇺🇸🗣️💬 Brooks and Capehart on the federal response to the Texas flooding disaster](./videos/brooks-and-capehart-on-the-federal-response-to-the-texas-flooding-disaster.md)  
@@ -46,7 +47,6 @@ title: 🏡 Home
 - [🖼️🤔🛠️🤖 Context Engineering for Agents](./videos/context-engineering-for-agents.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./videos/12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
 - [🌐🕸️🔮 The Future of the Web • Sir Tim Berners-Lee • GOTO 2018](./videos/the-future-of-the-web-sir-tim-berners-lee-goto-2018.md)  
-- [🕸️🛠️🤔 Three decades after inventing the web, Tim Berners-Lee has some ideas on how to fix it](./videos/three-decades-after-inventing-the-web-tim-berners-lee-has-some-ideas-on-how-to-fix-it.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (79)  

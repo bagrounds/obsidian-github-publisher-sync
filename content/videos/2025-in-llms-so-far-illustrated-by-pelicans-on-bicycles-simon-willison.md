@@ -71,4 +71,7 @@ youtube: https://youtu.be/YpY83-kA7Bo
 ### 🔮 General AI and its Future  
 * 🇨🇳 ***AI Superpowers: China, Silicon Valley, and the New World Order*** by Kai-Fu Lee: 🌍 Provides a perspective on the global race for AI dominance, particularly between the US and China.  
 * 🤖 ***Artificial Intelligence: A Modern Approach*** by Stuart Russell and Peter Norvig: 🎓 A comprehensive and widely used textbook for those seeking a deep academic understanding of AI principles and techniques.  
-* 🧠 ***A Brief History of Intelligence*** by Max Bennett: 💡 Offers a mix of AI, neuroscience, and human history to provide an insightful look at the evolution of intelligence.
+* 🧠 ***A Brief History of Intelligence*** by Max Bennett: 💡 Offers a mix of AI, neuroscience, and human history to provide an insightful look at the evolution of intelligence.  
+  
+## 🐦 Tweet  
+<blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">🤖📅🦢🚲 2025 in LLMs so far, illustrated by Pelicans on Bicycles - Simon Willison<br><br>🚴‍♀️ Benchmark | 💰 Costs | 🇨🇳 DeepSeek | 📉 Stock Impact | 🖼️ Image Generation | 🏆 Leaderboard | 🐛 Bugs | 🧰 Tools | ⚠️ Risks | ⚖️ Ethics | 🌎 Societal Impact<a href="https://twitter.com/simonw?ref_src=twsrc%5Etfw">@simonw</a><a href="https://t.co/K6jEUILDk7">https://t.co/K6jEUILDk7</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/1944580593372815586?ref_src=twsrc%5Etfw">July 14, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

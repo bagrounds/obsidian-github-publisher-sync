@@ -7,6 +7,7 @@ URL: https://bagrounds.org/books/peak
 Author: 
 tags: 
 affiliate link: https://amzn.to/448T3mz
+CTA: 🏆 Master your potential.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ⛰️📈🥇 Peak: Secrets from the New Science of Expertise  

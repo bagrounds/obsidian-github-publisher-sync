@@ -7,7 +7,7 @@ URL: https://bagrounds.org/books
 backlinks: false
 ---
 [Home](../index.md)  
-# 📚 Books (516)  
+# 📚 Books (518)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)  
 - [🧑‍🤝‍🧑📈 10 to 25: The Science of Motivating Young People: A Groundbreaking Approach to Leading the Next Generation - And Making Your Own Life Easier](./10-to-25-the-science-of-motivating-young-people-a-groundbreaking-approach-to-leading-the-next-generation-and-making-your-own-life-easier.md)  
@@ -28,6 +28,7 @@ backlinks: false
 - [👨‍👦🇺🇸📜 American Fatherhood: A Cultural History](./american-fatherhood-a-cultural-history.md)  
 - [🇺🇸🔒 American Gulag: Inside U.S. Immigration Prisons](./american-gulag-inside-us-immigration-prisons.md)  
 - [🇺🇸💸🧺🌍 American Kleptocracy: How the U.S. Created the World's Greatest Money Laundering Scheme in History](./american-kleptocracy-how-the-us-created-the-worlds-greatest-money-laundering-scheme-in-history.md)  
+- [🇷🇺🪝🇺🇸 American Kompromat: How the KGB Cultivated Donald Trump, and Other Tales of Sex, Greed, Power, and Treachery](./american-kompromat-how-the-kgb-cultivated-donald-trump-and-other-tales-of-sex-greed-power-and-treachery.md)  
 - [✍️🗺️🏗️🗳️ An Architect of Democracy: Building a Mosaic of Peace](./an-architect-of-democracy.md)  
 - [❓➡️ An Introduction to Causal Inference](./an-introduction-to-causal-inference.md)  
 - [📦➡️🧩 An Invitation to Applied Category Theory: Seven Sketches in Compositionality](./seven-sketches-in-compositionality.md)  
@@ -506,6 +507,7 @@ Feedback Control of Dynamic Systems]]
 - [💰📈🤔 Understanding Modern Money](./understanding-modern-money.md)  
 - [🤔🔌 Understanding Power: The Indispensable Chomsky](./understanding-power-the-indispensable-chomsky.md)  
 - [🌌📐🧩🗝️ Universal Principles of Design: 200 Ways to Increase Appeal, Enhance Usability, Influence Perception, and Make Better Design Decisions](./universal-principles-of-design.md)  
+- [🇷🇺⚔️🇺🇦🇮🇱⚔️🇮🇷🇺🇸⚔️🇺🇸 War](./war.md)  
 - [⚔️🕊️ War and Peace](./war-and-peace.md)  
 - [🤕❤️ What if Symptoms Are Your Friend?: An Introduction to BodyMind Bridge and Your Self-Healing Mind](./what-if-symptoms-are-your-friend-an-introduction-to-bodymind-bridge-and-your-self-healing-mind.md)  
 - [🌡️✅🌎 What If We Get It Right?: Visions of Climate Futures](./what-if-we-get-it-right-visions-of-climate-futures.md)  

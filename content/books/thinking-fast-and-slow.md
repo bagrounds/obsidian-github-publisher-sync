@@ -7,6 +7,7 @@ URL: https://bagrounds.org/books/thinking-fast-and-slow
 Author: 
 tags: 
 affiliate link: https://amzn.to/4jQ0Tax
+CTA: 🧠 Understand your mind.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🤔🐇🐢 Thinking, Fast and Slow  

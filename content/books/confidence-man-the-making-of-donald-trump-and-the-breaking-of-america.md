@@ -31,8 +31,8 @@ affiliate link: https://amzn.to/3FBYOAM
   
 ### 🔂 Similar Books  
   
-* 😱 ***[Fear: Trump in the White House](./fear.md)*** by Bob Woodward. 📝 A detailed account of the Trump administration based on hundreds of hours of interviews.  
-* 🚧 ***[Peril](./peril.md)*** by Bob Woodward and Robert Costa. 🏛️ Examines the transition between the Trump and Biden administrations, highlighting the events surrounding the January 6th Capitol attack.  
+* **[😱🤡🇺🇸 Fear: Trump in the White House](./fear.md)** by Bob Woodward. 📝 A detailed account of the Trump administration based on hundreds of hours of interviews.  
+* **[⚠️😬😰 Peril](./peril.md)** by Bob Woodward and Robert Costa. 🏛️ Examines the transition between the Trump and Biden administrations, highlighting the events surrounding the January 6th Capitol attack.  
 * 📜 ***The Divider: Trump in the White House, 2017-2021*** by Peter Baker and Susan Glasser. 📅 Offers a comprehensive history of Trump's single term as president.  
 * 💔 ***Too Much and Never Enough: How My Family Created the World's Most Dangerous Man*** by Mary L. Trump. 👨‍👩‍👧 A psychological portrait of Donald Trump from the perspective of his niece.  
 * 🏢 ***The Making of Donald Trump*** by David Cay Johnston. 💼 An earlier look at Trump's business career and his rise to prominence.  

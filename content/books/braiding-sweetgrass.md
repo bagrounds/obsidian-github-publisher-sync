@@ -7,6 +7,7 @@ URL: https://bagrounds.org/books/braiding-sweetgrass
 Author: 
 tags: 
 affiliate link: https://amzn.to/3Ho8r6E
+CTA: Grow honorably.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🪢🌾 Braiding Sweetgrass: Indigenous Wisdom, Scientific Knowledge, and the Teachings of Plants  

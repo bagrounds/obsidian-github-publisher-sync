@@ -1,15 +1,16 @@
 ---
 share: true
 aliases:
-  - "🌊🧘🧠📈 Flow: The Psychology of Optimal Experience"
-title: "🌊🧘🧠📈 Flow: The Psychology of Optimal Experience"
+  - "🌊🧘🏼‍♀️🧠📈 Flow: The Psychology of Optimal Experience"
+title: "🌊🧘🏼‍♀️🧠📈 Flow: The Psychology of Optimal Experience"
 URL: https://bagrounds.org/books/flow-the-psychology-of-optimal-experience
 Author: 
 tags: 
 affiliate link: https://amzn.to/4jrYkLn
+CTA: 🧘🏼‍♀️ Engage fully.
 ---
 [Home](../index.md) > [Books](./index.md)  
-# 🌊🧘🧠📈 Flow: The Psychology of Optimal Experience  
+# 🌊🧘🏼‍♀️🧠📈 Flow: The Psychology of Optimal Experience  
 [🛒 Flow: The Psychology of Optimal Experience. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4jrYkLn)  
   
 ## 🤖 AI Summary  

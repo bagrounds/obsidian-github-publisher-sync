@@ -5,6 +5,7 @@ title: "🎨😨 The Art of Fear: Why Conquering Fear Won't Work and What to Do 
 Author: "[[Kristen Ulmer]]"
 share: true
 affiliate link: https://amzn.to/4mIVTqN
+CTA: 💪 Embrace vulnerability.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🎨😨 The Art of Fear: Why Conquering Fear Won't Work and What to Do Instead  
@@ -59,7 +60,7 @@ However, the book leans heavily on anecdotal evidence and personal experience ra
   
 ### Additional Book Recommendations 📚  
 * **Best alternate book on the same topic:** [🦁🫀 Daring Greatly: How the Courage to Be Vulnerable Transforms the Way We Live, Love, Parent, and Lead](./daring-greatly-how-the-courage-to-be-vulnerable-transforms-the-way-we-live-love-parent-and-lead.md) by Brené Brown. This book explores the power of vulnerability and how embracing difficult emotions, including fear, can lead to a more wholehearted life. ❤️  
-* **Best book that is tangentially related:** *Mindfulness in Plain English* by Bhante Henepola Gunaratana. This accessible guide to mindfulness meditation provides practical techniques for observing thoughts and feelings, including fear, without judgment, which aligns with Ulmer's approach of feeling fear fully. 🧘  
+* **Best book that is tangentially related:** [🧘🗣️ Mindfulness in Plain English](./mindfulness-in-plain-english.md) by Bhante Henepola Gunaratana. This accessible guide to mindfulness meditation provides practical techniques for observing thoughts and feelings, including fear, without judgment, which aligns with Ulmer's approach of feeling fear fully. 🧘  
 * **Best book that is diametrically opposed:** *The Gift of Fear: Survival Signals That Protect Us from Violence* by Gavin de Becker. While Ulmer focuses on our internal relationship with fear, de Becker's book emphasizes the importance of trusting our instincts and the "signals" of fear as crucial for physical safety. ⚠️  
 * **Best fiction book that incorporates related ideas:** *The Lord of the Rings* by J.R.R. Tolkien. Frodo's journey is fraught with fear, but his ability to face it, even when overwhelmed, is central to his courage and ultimate success. 💍  
 * **Best book that is more general:** *[Emotional Intelligence](./emotional-intelligence.md): Why It Can Matter More Than IQ* by Daniel Goleman. This seminal work explores the broader landscape of emotions and how understanding and managing them, including fear, contributes to overall well-being and success. 🧠  

@@ -14,6 +14,11 @@ youtube: https://youtu.be/U23HVqrY_fI
 # 🧠🚫📚 You’re Not Stupid: How to Learn Anything With Books  
 ![You’re Not Stupid: How to Learn Anything With Books](https://youtu.be/U23HVqrY_fI)  
   
+## 📝🐒 Human Notes  
+- 🗺️ Reading map = 📚 curriculum  
+* 📚 Select books to design 🎯 curricula.  
+* ✍️ Write a review for every 📚 book you read.  
+  
 ## 🤖 AI Summary  
 📚 This video introduces a 🖐️ five-step method for creating a "reading map," a 🗺️ self-made curriculum designed to help individuals learn anything they want through books in a structured way \[[01:15](http://www.youtube.com/watch?v=U23HVqrY_fI&t=75)\].  
   

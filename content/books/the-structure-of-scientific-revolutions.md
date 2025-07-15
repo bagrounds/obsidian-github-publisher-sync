@@ -40,7 +40,7 @@ CTA: Reimagine science.
   
 ### ⚔️ Contrasting Perspectives (Philosophy of Science)  
   
-* ✅ **The Logic of Scientific Discovery by Karl Popper:** 🗝️ A major work in the philosophy of science that proposes falsifiability as the criterion for distinguishing science from non-science. 🆚 Popper's view of science as a process of conjecture and refutation stands in contrast to Kuhn's model of revolutionary shifts between incommensurable paradigms.  
+* **[🤔🔬 The Logic of Scientific Discovery](./the-logic-of-scientific-discovery.md) by Karl Popper:** 🗝️ A major work in the philosophy of science that proposes falsifiability as the criterion for distinguishing science from non-science. 🆚 Popper's view of science as a process of conjecture and refutation stands in contrast to Kuhn's model of revolutionary shifts between incommensurable paradigms.  
 * 🙅‍♂️ **Conjectures and Refutations by Karl Popper:** ➕ Further develops Popper's philosophy of science, presenting his ideas on falsification and critical rationalism.  
 * 🤔 **An Introduction to the Philosophy of Science by Rudolf Carnap:** 🏛️ Represents the logical positivist tradition that Kuhn's work challenged. 📑 Carnap and other logical positivists focused on the logical structure of scientific theories and verification.  
 * 🤔 **The Structure of Science: Problems in the Logic of Scientific Explanation by Ernest Nagel:** 🏛️ Another important work from the logical empiricist tradition, preceding and offering a different perspective on the issues Kuhn addresses.  

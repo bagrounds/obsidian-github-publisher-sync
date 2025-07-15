@@ -7,6 +7,7 @@ URL: https://bagrounds.org/books/nonviolent-communication
 Author: 
 tags: 
 affiliate link: https://amzn.to/3T980zy
+CTA: 🕊️ Practice empathy.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🕊️🤝 Nonviolent Communication: A Language of Life  

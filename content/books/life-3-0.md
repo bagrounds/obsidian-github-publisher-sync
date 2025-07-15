@@ -7,6 +7,7 @@ URL: https://bagrounds.org/books/life-3-0-being-human-in-the-age-of-artificial-i
 Author: 
 tags: 
 affiliate link: https://amzn.to/4kmDGNV
+CTA: 💡 Explore AI's potential.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧬👥💾 Life 3.0: Being Human in the Age of Artificial Intelligence  

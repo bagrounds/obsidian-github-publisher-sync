@@ -7,6 +7,7 @@ URL: https://bagrounds.org/books/how-learning-works
 Author: 
 tags: 
 affiliate link: https://amzn.to/3SAmrNa
+CTA: 💡 Transform instruction.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧠📚🍎💡📝 How Learning Works: Eight Research-Based Principles for Smart Teaching  

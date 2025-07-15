@@ -7,6 +7,7 @@ URL: https://bagrounds.org/books/cognitive-psychology-and-its-implications
 Author: 
 tags: 
 affiliate link: https://amzn.to/4jx7AxG
+CTA: 🧠 Grasp understanding.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧠🤔💡➡️ Cognitive Psychology and Its Implications  

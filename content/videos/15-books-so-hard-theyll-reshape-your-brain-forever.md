@@ -51,4 +51,14 @@ While this video provides an excellent introduction to books that foster first p
 * **[🤔🐇🐢 Thinking, Fast and Slow](../books/thinking-fast-and-slow.md) by Daniel Kahneman**: A classic that explores the two systems that drive the way we think and make decisions, highly relevant to the probability and logic aspects discussed.  
 * 🧘‍♀️ **"The Book of Joy: Lasting Happiness in a Changing World" by Dalai Lama XIV and Desmond Tutu**: Offers a contrasting perspective on truth, meaning, and consciousness through the lens of spiritual wisdom and practical advice.  
 * 🌌 **"Cosmos" by Carl Sagan**: While not strictly philosophical, this book broadens the scope of thinking about the universe and our place in it, touching upon scientific reasoning and the search for truth.  
-* 🎨 **"A Whole New Mind: Why Right-Brainers Will Rule the Future" by Daniel H. Pink**: This book offers a creative and contrasting view on thinking skills, emphasizing the importance of creativity, empathy, and meaning in the modern world.
+* 🎨 **"A Whole New Mind: Why Right-Brainers Will Rule the Future" by Daniel H. Pink**: This book offers a creative and contrasting view on thinking skills, emphasizing the importance of creativity, empathy, and meaning in the modern world.  
+  
+## 🐦 Tweet  
+<blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">🧠💪🤯🔄♾️ 15 Books So Hard They’ll Reshape Your Brain Forever<br><br>🎲 Probability | 💡 Truth and Meaning | ➕ Logic and Mathematics | 👁️ Consciousness | ⚖️ Value | 🧠 First Principles | 📚 Reading Recommendations<a href="https://t.co/0QMb3d75uT">https://t.co/0QMb3d75uT</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/1944940245319049515?ref_src=twsrc%5Etfw">July 15, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>  
+  
+## 🦋 Bluesky  
+<blockquote class="bluesky-embed" data-bluesky-uri="at://did:plc:i4yli6h7x2uoj7acxunww2fc/app.bsky.feed.post/3ltxsqnjf6s2b" data-bluesky-cid="bafyreiadbkurhsz5y7pahts54w63ofclzwu7ea6d6pbvbep3sjmhkcitxq" data-bluesky-embed-color-mode="system"><p lang="en">🧠💪🤯🔄♾️ 15 Books So Hard They’ll Reshape Your Brain Forever  
+  
+🎲 Probability | 🗣️ Language | ➕ Mathematics | 🧠 Consciousness | ⚖️ Value | 🤓 Philosophy | 📚 Reading List  
+  
+bagrounds.org/videos/15-bo...<br><br><a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc/post/3ltxsqnjf6s2b?ref_src=embed">[image or embed]</a></p>&mdash; Bryan Grounds (<a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc?ref_src=embed">@bagrounds.bsky.social</a>) <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc/post/3ltxsqnjf6s2b?ref_src=embed">Jul 14, 2025 at 7:03 PM</a></blockquote><script async src="https://embed.bsky.app/static/embed.js" charset="utf-8"></script>

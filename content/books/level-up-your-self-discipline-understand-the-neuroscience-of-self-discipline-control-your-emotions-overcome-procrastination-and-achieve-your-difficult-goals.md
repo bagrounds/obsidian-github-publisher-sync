@@ -5,6 +5,7 @@ aliases:
 URL: https://bagrounds.org/books/level-up-your-self-discipline-understand-the-neuroscience-of-self-discipline-control-your-emotions-overcome-procrastination-and-achieve-your-difficult-goals
 share: true
 affiliate link: https://amzn.to/45zmcJF
+CTA: 🧘🏼‍♀️ Master yourself.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 💪🧠 Level-Up Your Self-Discipline: Understand the Neuroscience of Self-Discipline, Control Your Emotions, Overcome Procrastination, and Achieve Your Difficult Goals  
@@ -61,17 +62,17 @@ affiliate link: https://amzn.to/45zmcJF
   
 * **[🧠🧘🏼‍♀️ Neuro-Discipline: Everyday Neuroscience for Self-Discipline, Focus, and Defeating Your Brain's Impulsive and Distracted Nature](./neuro-discipline-everyday-neuroscience-for-self-discipline-focus-and-defeating-your-brains-impulsive-and-distracted-nature.md)** by Peter Hollins: Explores the neuroscience behind focus, impulses, and laziness, offering practical tips based on how the brain works.  
 * **[💪🎯🔬 The Science of Self-Discipline: The Willpower, Mental Toughness, and Self-Control to Resist Temptation and Achieve Your Goals](./the-science-of-self-discipline-the-willpower-mental-toughness-and-self-control-to-resist-temptation-and-achieve-your-goals.md)** by Peter Hollins: Focuses on building willpower and mental toughness to resist temptation and reach goals.  
-* 💪 **[Willpower](./willpower.md): Rediscovering the Greatest Human Strength** by Roy F. Baumeister and John Tierney: A foundational book arguing that willpower is a finite resource and exploring the science behind managing it effectively.  
+* **[💪📈 Willpower: Rediscovering the Greatest Human Strength](./willpower.md)** by Roy F. Baumeister and John Tierney: A foundational book arguing that willpower is a finite resource and exploring the science behind managing it effectively.  
 * **[🧘🏋️ The Willpower Instinct: How Self-Control Works, Why It Matters, and What You Can Do to Get More of It](./the-willpower-instinct.md)** by Kelly McGonigal, Ph.D.: Integrates psychological, medical, and neuroscientific insights into willpower, offering practical exercises and explaining the science of self-control.  
-* **[⚛️🔄 Atomic Habits](./atomic-habits.md): An Easy & Proven Way to Build Good Habits & Break Bad Ones** by James Clear: Provides a highly practical framework for building small, consistent habits that lead to significant results, emphasizing systems over goals.  
-* 🔄 **[The Power of Habit](./the-power-of-habit.md): Why We Do What We Do in Life and Business** by Charles Duhigg: Explores the science of habit formation (the cue-routine-reward loop) and how understanding it can help change behaviors.  
+* **[⚛️🔄 Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones](./atomic-habits.md)** by James Clear: Provides a highly practical framework for building small, consistent habits that lead to significant results, emphasizing systems over goals.  
+* **[🔄🧠💪 The Power of Habit: Why We Do What We Do in Life and Business](./the-power-of-habit.md)** by Charles Duhigg: Explores the science of habit formation (the cue-routine-reward loop) and how understanding it can help change behaviors.  
 * 🌱 **Mini Habits: Smaller Habits, Bigger Results** by Stephen Guise: Advocates for starting with incredibly small, "too small to fail" habits to build momentum and overcome resistance.  
 * 🐸 **Eat That Frog!: 21 Great Ways to Stop Procrastinating and Get More Done in Less Time** by Brian Tracy: Offers practical techniques focused on prioritizing and tackling the most challenging tasks first to boost productivity and overcome procrastination.  
 * ⏰ **The Now Habit: A Strategic Program for Overcoming Procrastination and Enjoying Guilt-Free Play** by Neil Fiore: Addresses the underlying psychological reasons for procrastination (like fear of failure) and offers strategies like the "Unschedule" method.  
   
 ### 🎭 Contrasting Perspectives (Different Angles on Willpower/Motivation)  
   
-* 🧠 **[Mindset](./mindset.md): The New Psychology of Success** by Carol S. Dweck: While related to achievement, focuses on the crucial difference between a "fixed mindset" and a "growth mindset" rather than solely on willpower depletion models.  
+* **[🌱🧘🏼‍♀️🏆 Mindset: The New Psychology of Success](./mindset.md)** by Carol S. Dweck: While related to achievement, focuses on the crucial difference between a "fixed mindset" and a "growth mindset" rather than solely on willpower depletion models.  
 * 💖 **Self-Compassion: The Proven Power of Being Kind to Yourself** by Kristin Neff: Offers an alternative to relentless self-criticism, arguing that self-compassion is a more sustainable motivator than harsh self-discipline.  
 * 🚀 **[Drive: The Surprising Truth About What Motivates Us](./drive-the-surprising-truth-about-what-motivates-us.md)** by Daniel Pink: Challenges traditional reward-and-punishment models, emphasizing intrinsic motivators like autonomy, mastery, and purpose.  
 * ⏳ **Four Thousand Weeks: Time Management for Mortals** by Oliver Burkeman: A philosophical take on productivity that encourages embracing limitations and finiteness rather than striving for impossible efficiency or control.  
@@ -82,13 +83,13 @@ affiliate link: https://amzn.to/45zmcJF
   
 ### ✨ Creatively Related (Broader Personal Development & Mind Function)  
   
-* **[🤿💼 Deep Work](./deep-work.md): Rules for Focused Success in a Distracted World** by Cal Newport: Focuses on the ability to concentrate without distraction on cognitively demanding tasks, a crucial component often enabled by self-discipline.  
+* **[🤿💼 Deep Work: Rules for Focused Success in a Distracted World](./deep-work.md)** by Cal Newport: Focuses on the ability to concentrate without distraction on cognitively demanding tasks, a crucial component often enabled by self-discipline.  
 * **[❤️‍🔥💪 Grit: The Power of Passion and Perseverance](./grit-the-power-of-passion-and-perseverance.md)** by Angela Duckworth: Explores the importance of long-term passion and persistence for achieving goals, complementing the moment-to-moment focus of self-discipline.  
 * 🧠 **[Thinking, Fast and Slow](./thinking-fast-and-slow.md)** by Daniel Kahneman: Delves into the two systems of thinking (intuitive/fast and deliberate/slow) and the cognitive biases that affect decision-making, relevant to understanding impulsive choices.  
 * **[✅😌 Getting Things Done: The Art of Stress-Free Productivity](./getting-things-done-the-art-of-stress-free-productivity.md)** by David Allen: A comprehensive system for managing tasks and projects to achieve a state of mental clarity and focus, relying on external systems rather than just internal willpower.  
 * 🎯 **The ONE Thing: The Surprisingly Simple Truth Behind Extraordinary Results** by Gary Keller and Jay Papasan: Focuses on extreme prioritization—identifying and concentrating on the single most important task to achieve breakthrough results.  
 * **[➖💯 Essentialism: The Disciplined Pursuit of Less](./essentialism-the-disciplined-pursuit-of-less.md)** by Greg McKeown: Advocates for doing fewer things better by deliberately distinguishing the vital few from the trivial many.  
-* 🎓 **Ultralearning: Master Hard Skills, Outsmart the Competition, and Accelerate Your Career** by Scott Young: Focuses on aggressive, self-directed learning strategies, requiring intense focus and discipline.  
+* **[🚀🧠🏆 Ultralearning: Master Hard Skills, Outsmart the Competition, and Accelerate Your Career](./ultralearning-master-hard-skills-outsmart-the-competition-and-accelerate-your-career.md)** by Scott Young: Focuses on aggressive, self-directed learning strategies, requiring intense focus and discipline.  
 * 💪 **Self-Efficacy: The Exercise of Control** by Albert Bandura: A seminal academic work on the belief in one's ability to succeed, a key psychological underpinning related to motivation and perseverance.  
 * 🧠 **Work on psychological concepts like Self/Identity:** Understanding how our sense of self is constructed and how it influences behavior can provide context for self-discipline challenges (e.g., research reviewed by Oyserman et al.).  
   

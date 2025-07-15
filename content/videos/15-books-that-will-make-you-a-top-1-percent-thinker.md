@@ -50,4 +50,6 @@ This content provides a solid foundational list of texts for developing critical
 * [📜🌍⏳ Sapiens: A Brief History of Humankind](../books/sapiens-a-brief-history-of-humankind.md) by Yuval Noah Harari: 🌍 Provides a broad historical and interdisciplinary perspective on human behavior and societal development, offering a macro view that complements the more specific philosophical texts.  
 * [🎨🤔🖼️ The Art of Thinking Clearly](../books/the-art-of-thinking-clearly.md) by Rolf Dobelli: 🤔 A practical guide to common thinking errors and how to avoid them, offering a more accessible approach to critical thinking.  
 * 📖 *Discipline and Punish: The Birth of the Prison* by Michel Foucault: ⛓️ A contrasting perspective on power, knowledge, and social control, offering a critical lens on political theory and human behavior.  
-* 📖 *Zen and the Art of Motorcycle Maintenance: An Inquiry Into Values* by Robert M. Pirsig: 🏍️ A philosophical novel that explores concepts of quality, values, and rationality in a more narrative and introspective manner.
+* 📖 *Zen and the Art of Motorcycle Maintenance: An Inquiry Into Values* by Robert M. Pirsig: 🏍️ A philosophical novel that explores concepts of quality, values, and rationality in a more narrative and introspective manner.  
+  
+## 🐦 Tweet  

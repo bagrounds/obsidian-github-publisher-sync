@@ -7,6 +7,7 @@ URL: https://bagrounds.org/books/the-creative-act
 Author: 
 tags: 
 affiliate link: https://amzn.to/4dRHNiL
+CTA: ✨ Embrace artistry.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ✨🎭🧘‍♂️🌌 The Creative Act: A Way of Being  

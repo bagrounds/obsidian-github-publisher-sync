@@ -7,6 +7,7 @@ URL: https://bagrounds.org/books/the-artists-way
 Author: 
 tags: 
 affiliate link: https://amzn.to/4dO2eNi
+CTA: ✨ Awaken creative spirit.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🎨🙏✨ The Artist's Way: A Spiritual Path to Higher Creativity  

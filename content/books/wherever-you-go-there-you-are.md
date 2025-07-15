@@ -7,6 +7,7 @@ URL: https://bagrounds.org/books/wherever-you-go-there-you-are
 Author: 
 tags: 
 affiliate link: https://amzn.to/3T8Kdje
+CTA: 🧘🏼‍♀️ Be present.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 👣➡️🌍 Wherever You Go, There You Are  
@@ -66,7 +67,7 @@ affiliate link: https://amzn.to/3T8Kdje
 * 📖 **Peace is Every Step** by Thich Nhat Hanh: Short, accessible teachings on finding peace in everyday moments.  
 * 📖 **Radical Acceptance** by Tara Brach: Integrates Buddhist teachings and psychology, focusing on accepting ourselves and our lives with compassion.  
 * 📖 **Lovingkindness** by Sharon Salzberg: Focuses on cultivating compassion and kindness towards oneself and others through Metta meditation.  
-* 📖 **Mindfulness in Plain English** by Henepola Gunaratana: A straightforward, practical guide to insight meditation (Vipassanā).  
+* **[🧘🗣️ Mindfulness in Plain English](./mindfulness-in-plain-english.md)** by Henepola Gunaratana: A straightforward, practical guide to insight meditation (Vipassanā).  
   
 ### 🧠 Deeper Dives into Mindfulness & Meditation Theory  
   

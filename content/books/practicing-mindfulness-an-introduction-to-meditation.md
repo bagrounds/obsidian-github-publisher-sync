@@ -4,7 +4,7 @@ aliases:
   - "🧘🏼‍♀️👩🏼‍🏫 Practicing Mindfulness: An Introduction to Meditation"
 URL: https://bagrounds.org/books/practicing-mindfulness-an-introduction-to-meditation
 share: true
-CTA: Begin meditating.
+CTA: 🧘 Quiet your mind.
 affiliate link: https://amzn.to/44lHABp
 ---
 [Home](../index.md) > [Books](./index.md)  
@@ -12,14 +12,17 @@ affiliate link: https://amzn.to/44lHABp
 [🛒 Practicing Mindfulness: An Introduction to Meditation. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/44lHABp)  
   
 ## 📝🐒 Human Notes  
-🧘 Practicing mindfulness is like 🐕‍🦺 training a puppy.  
-🐾 You put the puppy down and tell it to stay.  
-🤔 The puppy wonders away.  
-↩️ So you pick the puppy up again and put it down again and tell it to stay.  
-🚶 And it wonders away again.  
-😠 It does no good to treat the puppy harshly.  
-🔄 You do it over and over until one day, ✨ voila, the puppy stays.  
-🌬️ Likewise, firmly, but kindly returning the awareness to the breath 🧠 sharpens your attentiveness to what the mind is doing and accustoms it to staying put.  
+- 🧘 Practicing mindfulness is like 🐕‍🦺 training a puppy.  
+    - 🐾 You put the puppy down and tell it to stay.  
+    - 🤔 The puppy wonders away.  
+    - ↩️ So you pick the puppy up again and put it down again and tell it to stay.  
+    - 🚶 And it wonders away again.  
+    - 😠 It does no good to treat the puppy harshly.  
+    - 🔄 You do it over and over until one day, ✨ voila, the puppy stays.  
+    - 🌬️ Likewise, firmly, but kindly returning the awareness to the breath 🧠 sharpens your attentiveness to what the mind is doing and accustoms it to staying put.  
+- ✌️ There are two ways to do the dishes 🍽️  
+    - ✨ to have clean dishes 🧽  
+    - 🔄 to do the dishes 🧼  
   
 ## 📖 Book Report: Practicing Mindfulness: An Introduction to Meditation  
   
@@ -47,7 +50,7 @@ affiliate link: https://amzn.to/44lHABp
 ### 📖 Similar Books (Introductory and Practical)  
   
 * **[👣➡️🌍 Wherever You Go, There You Are](./wherever-you-go-there-you-are.md): Mindfulness Meditation in Everyday Life by Jon Kabat-Zinn:** A classic in the field, this book provides accessible wisdom and short practices for integrating mindfulness into daily life. 👨‍🏫 Kabat-Zinn is a pioneer in secular mindfulness.  
-* 📝 **Mindfulness in Plain English by Bhante Henepola Gunaratana:** Praised for its clear and straightforward approach, this book demystifies mindfulness meditation and offers practical instructions. ☸️ It comes from a Buddhist monastic tradition but is presented in a universally accessible way.  
+* **[🧘🗣️ Mindfulness in Plain English](./mindfulness-in-plain-english.md) by Bhante Henepola Gunaratana:** Praised for its clear and straightforward approach, this book demystifies mindfulness meditation and offers practical instructions. ☸️ It comes from a Buddhist monastic tradition but is presented in a universally accessible way.  
 * 🌸 **The Miracle of Mindfulness: An Introduction to the Practice of Meditation by Thich Nhat Hanh:** A gentle and poetic introduction to mindfulness from a renowned Zen master, emphasizing how to find mindfulness in everyday tasks.  
 * 🗓️ **Real Happiness: The Power of Meditation: A 28-Day Program by Sharon Salzberg:** This book offers a structured, step-by-step 28-day program for establishing a meditation routine, focusing on meditation as an exercise.  
   

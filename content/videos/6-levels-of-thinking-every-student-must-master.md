@@ -10,7 +10,7 @@ Channel: Justin Sung
 tags: 
 youtube: https://youtu.be/1xqerXscTsE
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](../index.md) > [Videos](./index.md) | [🧠👨‍🎓📈 Justin Sung](../people/justin-sung.md)  
 # 🧠🪜💡🤔⬆️🎓 6 Levels of Thinking Every Student MUST Master  
 ![6 Levels of Thinking Every Student MUST Master](https://youtu.be/1xqerXscTsE)  
   

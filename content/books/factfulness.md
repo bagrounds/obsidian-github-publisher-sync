@@ -7,6 +7,7 @@ URL: https://bagrounds.org/books/factfulness
 Author: 
 tags: 
 affiliate link: https://amzn.to/3ZKol1s
+CTA: 💡 Embrace reality.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🤔🌍📈✅ Factfulness: Ten Reasons We're Wrong About the World - and Why Things Are Better Than You Think  

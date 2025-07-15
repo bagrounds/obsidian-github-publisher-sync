@@ -7,6 +7,7 @@ URL: https://bagrounds.org/books/bird-by-bird
 Author: 
 tags: 
 affiliate link: https://amzn.to/4jyNMKu
+CTA: ✍️ Unleash your story.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🐦🕊️ Bird by Bird: Some Instructions on Writing and Life  

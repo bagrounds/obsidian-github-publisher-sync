@@ -7,6 +7,7 @@ URL: https://bagrounds.org/books/indistractable
 Author: 
 tags: 
 affiliate link: https://amzn.to/43YVI2Y
+CTA: 🧠 Reclaim focus.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧘 Indistractable: How to Control Your Attention and Choose Your Life  

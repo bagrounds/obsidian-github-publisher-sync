@@ -4,10 +4,13 @@ aliases:
   - "❤️‍🔥💪 Grit: The Power of Passion and Perseverance"
 URL: https://bagrounds.org/books/grit-the-power-of-passion-and-perseverance
 share: true
-affiliate link: https://www.amazon.com/dp/1501111108/ref=cm_sw_r_as_gl_apa_gl_i_GG5EWTG486NC6DK0XCJ9?linkCode=ml1&tag=bagrounds-20
+affiliate link: https://amzn.to/3Gpbiwb
+CTA: 🌟 Embrace resilience.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ❤️‍🔥💪 Grit: The Power of Passion and Perseverance  
+[🛒 Grit: The Power of Passion and Perseverance. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3Gpbiwb)  
+  
 ## 📖 Book Report: Grit: The Power of Passion and Perseverance  
   
 ### ✍️ Author  
@@ -52,25 +55,25 @@ affiliate link: https://www.amazon.com/dp/1501111108/ref=cm_sw_r_as_gl_apa_gl_i_
 ## 📚 Book Recommendations  
   
 ### 🧠 Similar Reads (Focus on Mindset & Perseverance)  
-* 🧠 **[Mindset](./mindset.md): The New Psychology of Success by Carol S. Dweck:** 🧠 Explores the foundational concept of fixed vs. growth mindsets, which Duckworth cites as crucial for developing grit. It details how beliefs about our abilities shape our approach to challenges and learning.  
+* **[🌱🧘🏼‍♀️🏆 Mindset: The New Psychology of Success](./mindset.md) by Carol S. Dweck:** 🧠 Explores the foundational concept of fixed vs. growth mindsets, which Duckworth cites as crucial for developing grit. It details how beliefs about our abilities shape our approach to challenges and learning.  
 * 🚧 **The Obstacle Is the Way by Ryan Holiday:** 🚧 Draws on Stoic philosophy to argue that challenges should be embraced as opportunities for growth, aligning with the 💪 perseverance aspect of grit.  
-* 🚀 **[Drive: The Surprising Truth About What Motivates Us](./drive-the-surprising-truth-about-what-motivates-us.md) by Daniel H. Pink:** 🚀 Examines the importance of intrinsic motivation (autonomy, mastery, purpose) over external rewards, echoing Grit's emphasis on ❤️ passion and 🌟 purpose.  
-* **[⚛️🔄 Atomic Habits](./atomic-habits.md) by James Clear:** ⚛️ While focused on habit formation, its principles of making small, consistent improvements align well with the 💪 perseverance and deliberate practice aspects of building grit over the long term.  
-* 🔄 **[The Power of Habit](./the-power-of-habit.md) by Charles Duhigg:** 🔄 Explores the science of habit formation, referencing Duckworth's work and offering insights into building the consistent effort required for grit.  
+* **[🏎️⛽ Drive: The Surprising Truth About What Motivates Us](./drive-the-surprising-truth-about-what-motivates-us.md) by Daniel H. Pink:** 🚀 Examines the importance of intrinsic motivation (autonomy, mastery, purpose) over external rewards, echoing Grit's emphasis on ❤️ passion and 🌟 purpose.  
+* **[⚛️🔄 Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones](./atomic-habits.md) by James Clear:** While focused on habit formation, its principles of making small, consistent improvements align well with the 💪 perseverance and deliberate practice aspects of building grit over the long term.  
+* **[🔄🧠💪 The Power of Habit: Why We Do What We Do in Life and Business](./the-power-of-habit.md) by Charles Duhigg:** Explores the science of habit formation, referencing Duckworth's work and offering insights into building the consistent effort required for grit.  
   
 ### 🆚 Contrasting Perspectives (Talent, Luck, Systemic Factors)  
-* 🌍 **[Range](./range.md): Why Generalists Triumph in a Specialized World by David Epstein:** 🌍 Argues against early specialization (often associated with deep, gritty focus) and champions the power of broad experience and experimentation, especially in complex, uncertain fields.  
+* **[🌐🔭🎨🧩👨‍🎓 Range: Why Generalists Triumph in a Specialized World](./range.md) by David Epstein:** 🌍 Argues against early specialization (often associated with deep, gritty focus) and champions the power of broad experience and experimentation, especially in complex, uncertain fields.  
 * 🌟 **Outliers: The Story of Success by Malcolm Gladwell:** 🌟 While highlighting the importance of practice (the 10,000-hour rule), Gladwell also emphasizes the significant role of opportunity, timing, culture, and cumulative advantage, offering a counterpoint to a purely individualistic focus on grit.  
 * 🍀 **Success and Luck: Good Fortune and the Myth of Meritocracy by Robert H. Frank:** 🍀 Argues that chance plays a much larger role in individual success than often acknowledged, challenging the idea that grit and hard work alone determine outcomes in a meritocratic system.  
 * 🚪 **Quitting: A Life Strategy by Julia Keller:** 🚪 Presents the argument that strategically quitting, rather than persevering at all costs, can sometimes be the wiser and healthier path, offering a direct counterpoint to the "never give up" element of grit culture.  
 * 🧠 **Talent Is Overrated: What Really Separates World-Class Performers from Everybody Else by Geoff Colvin:** 🧠 While strongly emphasizing deliberate practice (similar to *Grit*), its core argument leans more heavily on practice as *the* differentiator, potentially downplaying the 'passion' component Duckworth highlights and offering a different angle on the talent debate.  
   
 ### 🎨 Creatively Related Reads (Deliberate Practice, Flow, Biography)  
-* 🥇 **[Peak](./peak.md): Secrets from the New Science of Expertise by Anders Ericsson and Robert Pool:** 🥇 Written by the originator of deliberate practice research (cited by Duckworth), this book delves deeper into the specific techniques required to achieve expert performance in any field.  
-* 🌊 **[Flow: The Psychology of Optimal Experience](./flow-the-psychology-of-optimal-experience.md) by Mihaly Csikszentmihalyi:** 🌊 Explores the state of complete absorption in an activity ("flow"), which Duckworth notes gritty people experience more often through deliberate practice.  
-* **[🎨🤓 The Art Of Learning](./the-art-of-learning.md): A Journey in the Pursuit of Excellence by Josh Waitzkin:** 🥋 A memoir from a chess prodigy and martial arts champion detailing his methods for mastering skills and maintaining performance under pressure, illustrating grit and deliberate practice in action.  
-* 💻 **[🤿💼 Deep Work](./deep-work.md): Rules for Focused Success in a Distracted World by Cal Newport:** 💻 Focuses on the ability to concentrate without distraction on cognitively demanding tasks, a skill closely related to the deliberate practice needed to build skill and achieve mastery.  
-* 🧬 **[The Talent Code](./the-talent-code.md): Greatness Isn't Born. It's Grown. Here's How. by Daniel Coyle:** 🧬 Explores the neurological basis (myelin growth) of skill acquisition through deep practice, complementing the ideas in *Grit* and *Peak*.  
+* **[⛰️📈🥇 Peak: Secrets from the New Science of Expertise](./peak.md) by Anders Ericsson and Robert Pool:** 🥇 Written by the originator of deliberate practice research (cited by Duckworth), this book delves deeper into the specific techniques required to achieve expert performance in any field.  
+* **[🌊🧘🏼‍♀️🧠📈 Flow: The Psychology of Optimal Experience](./flow-the-psychology-of-optimal-experience.md) by Mihaly Csikszentmihalyi:** 🌊 Explores the state of complete absorption in an activity ("flow"), which Duckworth notes gritty people experience more often through deliberate practice.  
+* **[🎨🤓 The Art of Learning: A Journey in the Pursuit of Excellence](./the-art-of-learning.md) by Josh Waitzkin:** 🥋 A memoir from a chess prodigy and martial arts champion detailing his methods for mastering skills and maintaining performance under pressure, illustrating grit and deliberate practice in action.  
+* **[🤿💼 Deep Work: Rules for Focused Success in a Distracted World](./deep-work.md) by Cal Newport:** 💻 Focuses on the ability to concentrate without distraction on cognitively demanding tasks, a skill closely related to the deliberate practice needed to build skill and achieve mastery.  
+* **[👶🌱📈 The Talent Code: Greatness Isn't Born. It's Grown. Here's How.](./the-talent-code.md) by Daniel Coyle:** 🧬 Explores the neurological basis (myelin growth) of skill acquisition through deep practice, complementing the ideas in *Grit* and *Peak*.  
 * 📜 **Biographies/Memoirs of Resilient Individuals:** 📜 Reading about the lives of people who overcame significant adversity through 💪 perseverance (e.g., *Unbroken* by Laura Hillenbrand, *Educated* by Tara Westover, *Shoe Dog* by Phil Knight) can provide compelling narrative examples of grit in action.  
   
 ## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  

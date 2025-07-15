@@ -4,7 +4,7 @@ aliases:
   - "☀️📖🌿 The New Sunset Western Garden Book: The Ultimate Gardening Guide"
 URL: https://bagrounds.org/books/the-new-sunset-western-garden-book-the-ultimate-gardening-guide
 share: true
-CTA: 🌱 Grow your paradise.
+CTA: 🌱 Grow your dream garden.
 affiliate link: https://amzn.to/4lpccrr
 tags: 
 ---

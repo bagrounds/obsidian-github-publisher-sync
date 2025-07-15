@@ -11,7 +11,7 @@ title: 🏡 Home
 ❔ What do 🫵 _you_ 🤔 think?  
   
 ## [🪞 Reflections](./reflections/index.md) ~ Blog (242)  
-- [2025-07-14](./reflections/2025-07-14.md)  
+- [2025-07-14 | 🌄 Sunset | 🧠 Learning | 🚍 Bus](./reflections/2025-07-14.md)  
 - [2025-07-13 | 🌎 Abundance | 🤝🏻 Collusion | 🧬 DNA 📚📄🤖💬📺](./reflections/2025-07-13.md)  
 - [2025-07-12 | 🤖 Agents | 🌊 Tragedy 📺📚📰](./reflections/2025-07-12.md)  
 - [2025-07-11 | 🌟 Clarity 📚📺](./reflections/2025-07-11.md)  
@@ -23,30 +23,30 @@ title: 🏡 Home
 - [2025-07-05 | 🤕🏚️➡️💸➡️🏰 Robber 🧛🏻‍♂️🤝👹 Barons 🤖💬📚📺📄](./reflections/2025-07-05.md)  
   
   
-## [📚 Books](./books/index.md) (519)  
+## [📚 Books](./books/index.md) (522)  
 - [☀️📖🌿 The New Sunset Western Garden Book: The Ultimate Gardening Guide](./books/the-new-sunset-western-garden-book-the-ultimate-gardening-guide.md)  
-- [🪢🌾 Braiding Sweetgrass: Indigenous Wisdom, Scientific Knowledge, and the Teachings of Plants](./books/braiding-sweetgrass.md)  
-- [🌿🧑‍🌾 Botany for Gardeners](./books/botany-for-gardeners.md)  
-- [🇷🇺⚔️🇺🇦🇮🇱⚔️🇮🇷🇺🇸⚔️🇺🇸 War](./books/war.md)  
-- [👹🐍🛢️🇺🇸 Confidence Man: The Making of Donald Trump and the Breaking of America](./books/confidence-man-the-making-of-donald-trump-and-the-breaking-of-america.md)  
-- [🤯🐍🏘️🎪💥 Mad House: How Donald Trump, MAGA Mean Girls, a Former Used Car Salesman, a Florida Nepo Baby, and a Man with Rats in His Walls Broke Congress](./books/mad-house.md)  
-- [📉❓ Why Nothing Works: Who Killed Progress - and How to Bring It Back](./books/why-nothing-works-who-killed-progress-and-how-to-bring-it-back.md)  
-- [🇷🇺🪝🇺🇸 American Kompromat: How the KGB Cultivated Donald Trump, and Other Tales of Sex, Greed, Power, and Treachery](./books/american-kompromat-how-the-kgb-cultivated-donald-trump-and-other-tales-of-sex-greed-power-and-treachery.md)  
-- [🏛️👹🇺🇸🏰👹🇷🇺 House of Trump, House of Putin: The Untold Story of Donald Trump and the Russian Mafia](./books/house-of-trump-house-of-putin-the-untold-story-of-donald-trump-and-the-russian-mafia.md)  
-- [🇷🇺🤫🇺🇸 Collusion: Secret Meetings, Dirty Money, and How Russia Helped Donald Trump Win](./books/collusion-secret-meetings-dirty-money-and-how-russia-helped-donald-trump-win.md)  
+- [🔬🔄 The Structure of Scientific Revolutions](./books/the-structure-of-scientific-revolutions.md)  
+- [🧪👁️ The Scientific Image](./books/the-scientific-image.md)  
+- [🤔🔬 The Logic of Scientific Discovery](./books/the-logic-of-scientific-discovery.md)  
+- [🐦🕊️ Bird by Bird: Some Instructions on Writing and Life](./books/bird-by-bird.md)  
+- [❤️‍🔥💪 Grit: The Power of Passion and Perseverance](./books/grit-the-power-of-passion-and-perseverance.md)  
+- [💪🧠 Level-Up Your Self-Discipline: Understand the Neuroscience of Self-Discipline, Control Your Emotions, Overcome Procrastination, and Achieve Your Difficult Goals](./books/level-up-your-self-discipline-understand-the-neuroscience-of-self-discipline-control-your-emotions-overcome-procrastination-and-achieve-your-difficult-goals.md)  
+- [🧠📚🍎💡📝 How Learning Works: Eight Research-Based Principles for Smart Teaching](./books/how-learning-works.md)  
+- [🧠🤔💡➡️ Cognitive Psychology and Its Implications](./books/cognitive-psychology-and-its-implications.md)  
+- [🧠🔒 Make It Stick: The Science of Successful Learning](./books/make-it-stick.md)  
   
   
-## [📺 Videos](./videos/index.md) (206)  
-- [👨‍⚖️💂‍♂️🚨🇺🇸 Trump Orders Another 2,000 Guardsmen, 700 Marines To LA | NPR News Now](./videos/trump-orders-another-2000-guardsmen-700-marines-to-la-npr-news-now.md)  
-- [🤖📅🦢🚲 2025 in LLMs so far, illustrated by Pelicans on Bicycles - Simon Willison](./videos/2025-in-llms-so-far-illustrated-by-pelicans-on-bicycles-simon-willison.md)  
-- [❓😡🇺🇸🗳️ Why the hell did people vote for Trump? (the answers will shock you)](./videos/why-the-hell-did-people-vote-for-trump-the-answers-will-shock-you.md)  
-- [😟🔮 Anne Applebaum: «It Is What I Feared Would Happen»](./videos/anne-applebaum-it-is-what-i-feared-would-happen.md)  
-- [⛈️🇺🇸🗣️💬 Brooks and Capehart on the federal response to the Texas flooding disaster](./videos/brooks-and-capehart-on-the-federal-response-to-the-texas-flooding-disaster.md)  
-- [⚠️🌊🏘️❌ FEMA missed major flood risks at Camp Mystic in Texas, new analysis reveals](./videos/fema-missed-major-flood-risks-at-camp-mystic-in-texas-new-analysis-reveals.md)  
-- [📰🏛️📉 News Wrap: State Department lays off more than 1,300 in latest cuts to federal workforce](./videos/news-wrap-state-department-lays-off-more-than-1300-in-latest-cuts-to-federal-workforce.md)  
-- [🇺🇸🚫➡️🇺🇦⚔️🇷🇺 U.S. withholds weapons promised to Ukraine as Russian forces gain more territory](./videos/us-withholds-weapons-promised-to-ukraine-as-russian-forces-gain-more-territory.md)  
-- [🖼️🤔🛠️🤖 Context Engineering for Agents](./videos/context-engineering-for-agents.md)  
-- [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./videos/12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
+## [📺 Videos](./videos/index.md) (211)  
+- [🧠💪🤯🔄♾️ 15 Books So Hard They’ll Reshape Your Brain Forever](./videos/15-books-so-hard-theyll-reshape-your-brain-forever.md)  
+- [🧠📈🥇 15 Books That Will Make You a Top 1% Thinker](./videos/15-books-that-will-make-you-a-top-1-percent-thinker.md)  
+- [🧠🚫📚 You’re Not Stupid: How to Learn Anything With Books](./videos/youre-not-stupid-how-to-learn-anything-with-books.md)  
+- [❓🛠️👨‍🎓 The Black Box Effect: How To Learn ANY Skill Quickly](./videos/the-black-box-effect-how-to-learn-any-skill-quickly.md)  
+- [🧠💡🎯🚫 You're Not Stupid: How To Never Lose Focus Again](./videos/youre-not-stupid-how-to-never-lose-focus-again.md)  
+- [🧠🗺️💡🔑 What I Learned after 5000 Hours of Mind Mapping](./videos/what-i-learned-after-5000-hours-of-mind-mapping.md)  
+- [🤓📈📉⚠️ How to Become an Expert in ANYTHING - The Dunning Kruger Effect](./videos/how-to-become-an-expert-in-anything-the-dunning-kruger-effect.md)  
+- [🥱💭✂️🎬🫡 How to Force Your Brain To Be Motivated (when you don’t feel like it)](./videos/how-to-force-your-brain-to-be-motivated-when-you-dont-feel-like-it.md)  
+- [⏱️🧠🐘 The 10 Minute memory method](./videos/the-10-minute-memory-method.md)  
+- [🧠🪜💡🤔⬆️🎓 6 Levels of Thinking Every Student MUST Master](./videos/6-levels-of-thinking-every-student-must-master.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (79)  
@@ -81,10 +81,10 @@ title: 🏡 Home
 - [💾➕🤝 Git](./software/git.md)  
   
   
-## [👥 People](./people/index.md) (10)  
+## [👥 People](./people/index.md) (11)  
+- [🧠👨‍🎓📈 Justin Sung](./people/justin-sung.md)  
 - [🐕‍🦺🧠🐾 Nicholas Dodman](./people/nicholas-dodman.md)  
 - [🕸️🌐👨‍💻 Tim Berners-Lee](./people/tim-berners-lee.md)  
-- [📈📊⚙️🎯 W Edwards Deming](./people/w-edwards-deming.md)  
   
   
 ## 🔗 Profiles  

@@ -4,7 +4,7 @@ aliases:
   - "🧘🏼‍♀️👩🏼‍🏫 Practicing Mindfulness: An Introduction to Meditation"
 URL: https://bagrounds.org/books/practicing-mindfulness-an-introduction-to-meditation
 share: true
-CTA: 🧘 Quiet your mind.
+CTA: 🧘🏼‍♀️ Quiet your mind.
 affiliate link: https://amzn.to/44lHABp
 ---
 [Home](../index.md) > [Books](./index.md)  
@@ -71,4 +71,14 @@ affiliate link: https://amzn.to/44lHABp
 * 🧠 **The Embodied Mind: Cognitive Science and Human Experience by Francisco Varela, Evan Thompson, and Eleanor Rosch:** This foundational text in cognitive science explores the theory of enaction and the role of lived experience, including insights from Buddhist mindfulness practice, in understanding the mind.  
   
 ## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
-> Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Practicing Mindfulness: An Introduction to Meditation. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.
+> Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Practicing Mindfulness: An Introduction to Meditation. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.  
+  
+## 🐦 Tweet  
+<blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">🧘🏼‍♀️👩🏼‍🏫 Practicing Mindfulness: An Introduction to Meditation<br><br>🫁 Breathing Exercises | 😌 Daily Life Integration | ❤️‍🩹 Emotional Regulation | 🧠 Mental Well-being | ✨ Present Moment Awareness | 👩🏼‍🏫 <a href="https://twitter.com/greatcoursesco?ref_src=twsrc%5Etfw">@greatcoursesco</a><a href="https://t.co/onD4Ur2vQb">https://t.co/onD4Ur2vQb</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/1945229191601136022?ref_src=twsrc%5Etfw">July 15, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>  
+  
+## 🦋 Bluesky  
+<blockquote class="bluesky-embed" data-bluesky-uri="at://did:plc:i4yli6h7x2uoj7acxunww2fc/app.bsky.feed.post/3ltzstikec22s" data-bluesky-cid="bafyreidvmi65ealgqj2yo3s5jxjiawvykxos5n7hbsz7zdfblm6izthu3u" data-bluesky-embed-color-mode="system"><p lang="en">🧘🏼‍♀️👩🏼‍🏫 Practicing Mindfulness: An Introduction to Meditation  
+  
+🫁 Breathing Exercises | 😌 Daily Life Integration | ❤️‍🩹 Emotional Regulation | 🧠 Mental Well-being | ✨ Present Moment Awareness  
+  
+bagrounds.org/books/practi...<br><br><a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc/post/3ltzstikec22s?ref_src=embed">[image or embed]</a></p>&mdash; Bryan Grounds (<a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc?ref_src=embed">@bagrounds.bsky.social</a>) <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc/post/3ltzstikec22s?ref_src=embed">Jul 15, 2025 at 2:10 PM</a></blockquote><script async src="https://embed.bsky.app/static/embed.js" charset="utf-8"></script>

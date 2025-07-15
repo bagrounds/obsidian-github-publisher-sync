@@ -5,6 +5,7 @@ aliases:
 URL: https://bagrounds.org/books/10-percent-happier
 share: true
 affiliate link: https://amzn.to/43Q2Ldo
+CTA: 🧘‍♀️ Cultivate inner peace.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 📈🧘🏼‍♀️ 10% Happier  
@@ -44,7 +45,7 @@ affiliate link: https://amzn.to/43Q2Ldo
   
 * 📖 **Meditation for Fidgety Skeptics** by Dan Harris: A direct follow-up providing practical "how-to" guidance for those who struggle with traditional meditation. 🧘  
 * 📖 **The Headspace Guide to Meditation & Mindfulness** by Andy Puddicombe: Offers a simple, ten-minute-a-day approach to mindfulness. ⏱️  
-* 📖 **Mindfulness in Plain English** by Henepola Gunaratana: A straightforward and classic guide to mindfulness meditation. ✍️  
+* **[🧘🗣️ Mindfulness in Plain English](./mindfulness-in-plain-english.md)** by Henepola Gunaratana: A straightforward and classic guide to mindfulness meditation. ✍️  
 * **[👣➡️🌍 Wherever You Go, There You Are](./wherever-you-go-there-you-are.md)** by Jon Kabat-Zinn: A foundational text on cultivating mindfulness in everyday life. 🚶  
   
 ### 🕉️ Contrasting: Deeper Spiritual or Philosophical Exploration  

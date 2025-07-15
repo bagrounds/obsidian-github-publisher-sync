@@ -6,11 +6,12 @@ aliases:
 backlinks: false
 ---
 [Home](../index.md)  
-# 👥 People (10)  
+# 👥 People (11)  
 - [🤖🧠💻 Andrej Karpathy](./andrej-karpathy.md)  
 - [👨‍🏫🤖 Andrew Ng](./andrew-ng.md)  
 - [🏛️🇺🇸📖 Heather Cox Richardson](./heather-cox-richardson.md)  
 - [👨‍💻☁️🐘 Jay Kreps](./jay-kreps.md)  
+- [🧠👨‍🎓📈 Justin Sung](./justin-sung.md)  
 - [🧠🔬🧘‍♀️💪📈❤️‍🩹🗣️📚🌟 Kelly McGonigal](./kelly-mcgonigal.md)  
 - [🐕‍🦺🧠🐾 Nicholas Dodman](./nicholas-dodman.md)  
 - [🤔⚙️🗣️🤝💡🧩🔭📚👴 Russell Ackoff](./russell-ackoff.md)  

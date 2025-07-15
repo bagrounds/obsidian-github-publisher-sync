@@ -7,6 +7,7 @@ URL: https://bagrounds.org/books/deep-work
 Author: 
 tags: 
 affiliate link: https://amzn.to/3HCgWuP
+CTA: 🧠 Master concentration.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🤿💼 Deep Work: Rules for Focused Success in a Distracted World  

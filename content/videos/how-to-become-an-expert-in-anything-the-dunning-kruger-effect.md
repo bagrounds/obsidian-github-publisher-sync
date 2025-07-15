@@ -1,16 +1,16 @@
 ---
 share: true
 aliases:
-  - How to Become an Expert in ANYTHING - The Dunning Kruger Effect
-title: How to Become an Expert in ANYTHING - The Dunning Kruger Effect
+  - 🤓📈📉⚠️ How to Become an Expert in ANYTHING - The Dunning Kruger Effect
+title: 🤓📈📉⚠️ How to Become an Expert in ANYTHING - The Dunning Kruger Effect
 URL: https://youtu.be/tXSNfuUilio
 Author: 
 Platform: 
 Channel: Justin Sung
 tags: 
 ---
-[Home](../index.md) > [Videos](./index.md)  
-# Justin Sung - How to Become an Expert in ANYTHING - The Dunning Kruger Effect  
+[Home](../index.md) > [Videos](./index.md) | [🧠👨‍🎓📈 Justin Sung](../people/justin-sung.md)  
+# 🤓📈📉⚠️ How to Become an Expert in ANYTHING - The Dunning Kruger Effect  
 ![How to Become an Expert in ANYTHING - The Dunning Kruger Effect](https://youtu.be/tXSNfuUilio)  
   
 ## 🤖 AI Summary  
@@ -61,9 +61,9 @@ This video explains the Dunning-Kruger effect, which describes the journey to ex
   
 ### Additional Resources 📚  
 * **Books:**  
-    * "[Mindset](../books/mindset.md): The New Psychology of Success" by Carol S. Dweck 🧠  
-    * "[Peak](../books/peak.md): Secrets from the New Science of Expertise" by Anders Ericsson 🚀  
+    * [🌱🧘🏼‍♀️🏆 Mindset: The New Psychology of Success](../books/mindset.md) by Carol S. Dweck 🧠  
+    * [⛰️📈🥇 Peak: Secrets from the New Science of Expertise](../books/peak.md) by Anders Ericsson 🚀  
     * "So Good They Can't Ignore You" by Cal Newport 🌟  
     * "How to Learn a Foreign Language" by Paul Pimsleur 🗣️  
     * "The Inner Game of Tennis" by W. Timothy Gallwey 🎾  
-    * The video mentions "How to Change" by Katy Milkman. 🔄  
+    * The video mentions [🐛➡️🦋 How to Change: The Science of Getting from Where You Are to Where You Want to Be](../books/how-to-change.md) by Katy Milkman. 🔄  

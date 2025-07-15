@@ -1,16 +1,16 @@
 ---
 share: true
 aliases:
-  - "You're Not Stupid: How To Never Lose Focus Again"
-title: "You're Not Stupid: How To Never Lose Focus Again"
+  - "🧠💡🎯🚫 You're Not Stupid: How To Never Lose Focus Again"
+title: "🧠💡🎯🚫 You're Not Stupid: How To Never Lose Focus Again"
 URL: https://youtu.be/fDpBqMCugZg
 Author: 
 Platform: 
 Channel: Justin Sung
 tags: 
 ---
-[Home](../index.md) > [Videos](./index.md)  
-# Justin Sung - You're Not Stupid: How To Never Lose Focus Again  
+[Home](../index.md) > [Videos](./index.md) | [🧠👨‍🎓📈 Justin Sung](../people/justin-sung.md)  
+# 🧠💡🎯🚫 You're Not Stupid: How To Never Lose Focus Again  
 ![You're Not Stupid: How To Never Lose Focus Again](https://youtu.be/fDpBqMCugZg)  
   
 ## 🤖 AI Summary  
@@ -66,6 +66,6 @@ Learn how to optimize your focus with practical tips, from managing distractions
 * **Anki:** [00:17:38] Learn how to make Anki three times more effective. 🧠  
   
 ### 📖 Recommended Books  
-* **[Deep Work](../books/deep-work.md): Rules for Focused Success in a Distracted World** by Cal Newport 🏆  
-* **[Flow: The Psychology of Optimal Experience](../books/flow-the-psychology-of-optimal-experience.md)** by Mihaly Csikszentmihalyi 🌟  
-* **[Indistractable](../books/indistractable.md): How to Control Your Attention and Choose Your Life** by Nir Eyal 📚  
+* **[🤿💼 Deep Work: Rules for Focused Success in a Distracted World](../books/deep-work.md)** by Cal Newport 🏆  
+* **[🌊🧘🧠📈 Flow: The Psychology of Optimal Experience](../books/flow-the-psychology-of-optimal-experience.md)** by Mihaly Csikszentmihalyi 🌟  
+* **[🧘 Indistractable: How to Control Your Attention and Choose Your Life](../books/indistractable.md)** by Nir Eyal 📚  

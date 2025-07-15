@@ -7,6 +7,7 @@ URL: https://bagrounds.org/books/atomic-habits
 Author: 
 tags: 
 affiliate link: https://amzn.to/4kmdS4v
+CTA: 🚀 Transform yourself.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ⚛️🔄 Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones  

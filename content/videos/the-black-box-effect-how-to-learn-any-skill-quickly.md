@@ -10,7 +10,7 @@ Channel: Justin Sung
 tags: 
 youtube: https://youtu.be/NfeSoCLtxxc
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](../index.md) > [Videos](./index.md) | [🧠👨‍🎓📈 Justin Sung](../people/justin-sung.md)  
 # ❓🛠️👨‍🎓 The Black Box Effect: How To Learn ANY Skill Quickly  
 ![The Black Box Effect: How To Learn ANY Skill Quickly](https://youtu.be/NfeSoCLtxxc)  
   

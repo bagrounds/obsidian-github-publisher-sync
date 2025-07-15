@@ -7,6 +7,7 @@ URL: https://bagrounds.org/books/Influence
 Author: "[[Robert Cialdini]]"
 tags: 
 affiliate link: https://amzn.to/4dJSMul
+CTA: 🤝 Master persuasion.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🍃🧠🤝🏼 Influence: The Psychology of Persuasion  

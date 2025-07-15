@@ -7,6 +7,7 @@ URL: https://bagrounds.org/books/antifragile-things-that-gain-from-disorder
 Author: 
 tags: 
 affiliate link: https://amzn.to/45JAVlg
+CTA: 💪 Thrive through chaos.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 📉📈🌪️💪 Antifragile: Things That Gain from Disorder  

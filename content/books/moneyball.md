@@ -7,6 +7,7 @@ URL: https://bagrounds.org/books/moneyball
 Author: 
 tags: 
 affiliate link: https://amzn.to/4ko04qa
+CTA: 📈 Outsmart the system.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 📉⚾💰 Moneyball: The Art of Winning an Unfair Game  

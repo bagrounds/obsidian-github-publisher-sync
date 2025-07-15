@@ -7,7 +7,7 @@ URL: https://bagrounds.org/books/drive-the-surprising-truth-about-what-motivates
 Author: 
 tags: 
 affiliate link: https://amzn.to/4o1nZyf
-CTA: Reimagine motivation.
+CTA: 🚀 Fuel progress.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🏎️⛽ Drive: The Surprising Truth About What Motivates Us  

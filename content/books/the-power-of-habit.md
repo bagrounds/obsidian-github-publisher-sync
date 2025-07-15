@@ -7,6 +7,7 @@ URL: https://bagrounds.org/books/the-power-of-habit
 Author: 
 tags: 
 affiliate link: https://amzn.to/458taW2
+CTA: 💪 Understand routines.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🔄🧠💪 The Power of Habit: Why We Do What We Do in Life and Business  

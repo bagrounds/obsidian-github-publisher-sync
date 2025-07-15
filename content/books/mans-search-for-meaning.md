@@ -7,6 +7,7 @@ URL: https://bagrounds.org/books/mans-search-for-meaning
 Author: 
 tags: 
 affiliate link: https://amzn.to/4dJnF29
+CTA: 🌟 Discover resilience.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🔦💡 Man's Search for Meaning  

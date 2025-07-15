@@ -5,6 +5,7 @@ aliases:
 URL: https://bagrounds.org/books/thinking-in-bets-making-smarter-decisions-when-you-dont-have-all-the-facts
 share: true
 affiliate link: https://amzn.to/3FABraR
+CTA: 🎲 Wager wisely.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🎲🤔 Thinking in Bets: Making Smarter Decisions When You Don't Have All the Facts  

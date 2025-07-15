@@ -7,6 +7,7 @@ URL: https://bagrounds.org/books/the-war-of-art
 Author: 
 tags: 
 affiliate link: https://amzn.to/3HibNZ3
+CTA: ⚔️ Conquer resistance.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🪖🎨 The War of Art: Break Through the Blocks and Win Your Inner Creative Battles  

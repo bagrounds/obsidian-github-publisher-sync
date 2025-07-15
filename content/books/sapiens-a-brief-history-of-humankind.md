@@ -7,7 +7,7 @@ URL: https://bagrounds.org/books/sapiens
 Author: 
 tags: 
 affiliate link: https://amzn.to/3HEBDX1
-CTA: Understand humanity.
+CTA: 🌍 Explore our origins.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 📜🌍⏳ Sapiens: A Brief History of Humankind  

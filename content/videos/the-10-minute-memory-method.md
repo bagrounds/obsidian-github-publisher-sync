@@ -9,7 +9,7 @@ Platform: "#YouTube"
 Channel: "[[Justin Sung]]"
 tags: 
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](../index.md) > [Videos](./index.md) | [🧠👨‍🎓📈 Justin Sung](../people/justin-sung.md)  
 # ⏱️🧠🐘 The 10 Minute memory method  
 ![The 10 Minute memory method](https://youtu.be/YCqqkGUsNxo)  
   

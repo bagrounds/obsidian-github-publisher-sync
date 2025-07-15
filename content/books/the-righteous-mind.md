@@ -7,7 +7,7 @@ URL: https://bagrounds.org/books/the-righteous-mind
 Author: 
 tags: 
 affiliate link: https://amzn.to/3ZIy2gS
-CTA: Understand morality.
+CTA: 🤝 Bridge divides.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 😇🧠 The Righteous Mind: Why Good People Are Divided by Politics and Religion  

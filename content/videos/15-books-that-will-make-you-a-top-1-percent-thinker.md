@@ -24,7 +24,7 @@ youtube: https://youtu.be/DIs9EaOl0yo
     * 📖 *The Nature of Buddhist Ethics* by Damien Keown \[[03:08](http://www.youtube.com/watch?v=DIs9EaOl0yo&t=188)\]  
   
 * **🧠 Epistemology** \[[04:01](http://www.youtube.com/watch?v=DIs9EaOl0yo&t=241)\]: 🔍 This category focuses on the study of knowledge, including its nature, possibility, and verification.  
-    * 📖 *On Language* by Noam Chomsky \[[04:04](http://www.youtube.com/watch?v=DIs9EaOl0yo&t=244)\]  
+    * [🗣️ On Language](../books/on-language.md) by Noam Chomsky \[[04:04](http://www.youtube.com/watch?v=DIs9EaOl0yo&t=244)\]  
     * [🤔🔬 The Logic of Scientific Discovery](../books/the-logic-of-scientific-discovery.md) by Karl Popper \[[05:29](http://www.youtube.com/watch?v=DIs9EaOl0yo&t=329)\]  
     * 📖 *The Philosophical Discourse of Modernity* by Jürgen Habermas \[[06:15](http://www.youtube.com/watch?v=DIs9EaOl0yo&t=375)\]  
     * 📖 *Reasons and Persons* by Derek Parfit \[[07:01](http://www.youtube.com/watch?v=DIs9EaOl0yo&t=421)\]  

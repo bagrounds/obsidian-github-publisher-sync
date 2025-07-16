@@ -7,7 +7,7 @@ URL: https://bagrounds.org/videos
 backlinks: false
 ---
 [Home](../index.md)  
-# 📺 Videos (211)  
+# 📺 Videos (214)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
 - [❓💪🔬 12 Questions About Creatine with Stephen Cornish, PhD](./12-questions-about-creatine-w-stephen-cornish-phd.md)  
@@ -15,6 +15,7 @@ backlinks: false
 - [🧠📈🥇 15 Books That Will Make You a Top 1% Thinker](./15-books-that-will-make-you-a-top-1-percent-thinker.md)  
 - [🤖📅🦢🚲 2025 in LLMs so far, illustrated by Pelicans on Bicycles - Simon Willison](./2025-in-llms-so-far-illustrated-by-pelicans-on-bicycles-simon-willison.md)  
 - [2025 Yearly Themes](./2025-yearly-themes.md)  
+- [📚⏱️💡 21 Life-Changing Books Summarized in 18 Minutes](./21-life-changing-books-summarized-in-18-minutes.md)  
 - [2️⃣⬆️🧠👩‍🚀 Double Your Productivity using this ADHD System (Invented by a Space Systems Engineer)](./double-your-productivity-using-this-adhd-system-invented-by-a-space-systems-engineer.md)  
 - [🪜📈🏢 3 High Leverage Career Skills (From a Principal At Amazon)](./3-high-leverage-career-skills-from-a-principal-at-amazon.md)  
 - [🧠⏳🚀⚡ 4 ADHD Habits to Make 2025 Hyper Productive](./4-adhd-habits-to-make-2025-hyper-productive.md)  
@@ -71,6 +72,7 @@ backlinks: false
 - [⛽🔥🌪️🌀🌍 How the Trump administration is dismantling climate protections](./how-the-trump-administration-is-dismantling-climate-protections.md)  
 - [🤓📈📉⚠️ How to Become an Expert in ANYTHING - The Dunning Kruger Effect](./how-to-become-an-expert-in-anything-the-dunning-kruger-effect.md)  
 - [👊👹🇺🇸🛡️ How to Fight Fascism in America — with Timothy Snyder | Prof G Conversations](./how-to-fight-fascism-in-america-with-timothy-snyder-prof-g-conversations.md)  
+- [❓🧭🗺️💡 How To Find Your Life's Purpose](./how-to-find-your-lifes-purpose.md)  
 - [🥱💭✂️🎬🫡 How to Force Your Brain To Be Motivated (when you don’t feel like it)](./how-to-force-your-brain-to-be-motivated-when-you-dont-feel-like-it.md)  
 - [How to hack your brain to crave doing hard things.](./how-to-hack-your-brain-to-crave-doing-hard-things.md)  
 - [🇺🇸🛠️⏱️🏛️ How to Rebuild American Democracy in 20 Minutes](./how-to-rebuild-american-democracy-in-20-minutes.md)  
@@ -86,6 +88,7 @@ backlinks: false
 - [🧠💊🎯 Improve Focus with Behavioral Tools & Medication for ADHD | Dr. John Kruse](./improve-focus-with-behavioral-tools-medication-for-adhd-dr-john-kruse.md)  
 - [Infant Cosleeping with James McKenna, PhD](./infant-cosleeping-with-james-mckenna-phd.md)  
 - [Is Every Civilization Doomed to Fail? - Gregory Aldrete](./is-every-civilization-doomed-to-fail-gregory-aldrete.md)  
+- [🤖🗓️🧑‍🏫 I Tried AI as a Life Coach for 365 Days - Here’s What I Learned](./i-tried-ai-as-a-life-coach-for-365-days-heres-what-i-learned.md)  
 - [It’s actually pretty easy to get ahead of 99% of people.](./it-is-actually-pretty-easy-to-get-ahead-of-99-percent-of%20people.md)  
 - [📢👁️🗣️💡 It's Our Job to Make Sure People Know the Truth](./its-our-job-to-make-sure-people-know-the-truth.md)  
 - [🇺🇸😡📺 Jon Stewart on the L.A. ICE Protests and Trump's Escalating Response | The Daily Show](./jon-stewart-on-the-la-ice-protests-and-trumps-escalating-response-the-daily-show.md)  

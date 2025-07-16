@@ -7,6 +7,7 @@ URL: https://bagrounds.org/books/naked-statistics
 Author: 
 tags: 
 affiliate link: https://amzn.to/4jAC4PG
+CTA: 💯 Conquer the numbers.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🙈📊🔢 Naked Statistics: Stripping the Dread from the Data  

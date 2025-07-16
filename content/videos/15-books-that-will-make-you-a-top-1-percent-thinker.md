@@ -38,7 +38,7 @@ youtube: https://youtu.be/DIs9EaOl0yo
   
 * **🚶 Human Behavior** \[[12:29](http://www.youtube.com/watch?v=DIs9EaOl0yo&t=749)\]: 🌍 The final section emphasizes the importance of understanding how humans actually behave in the real world.  
     * 📖 *Social Foundations of Thought and Action* by Albert Bandura \[[12:44](http://www.youtube.com/watch?v=DIs9EaOl0yo&t=764)\]  
-    * 📖 *What Works, What Doesn't, and When: Case Studies in Applied Behavioral Science* by Dilip Soman \[[14:53](http://www.youtube.com/watch?v=DIs9EaOl0yo&t=893)\]  
+    * [✅❌⏳ What Works, What Doesn't, and When: Case Studies in Applied Behavioral Science](../books/what-works-what-doesnt-and-when-case-studies-in-applied-behavioral-science.md) by Dilip Soman \[[14:53](http://www.youtube.com/watch?v=DIs9EaOl0yo&t=893)\]  
   
 💡 The video stresses the importance of reading 📚 diverse viewpoints, even those one disagrees with, to foster intellectual growth and critical analysis \[[01:54](http://www.youtube.com/watch?v=DIs9EaOl0yo&t=114)\]. 🏋️ It highlights that becoming a better thinker requires active training of the mind, which may not always be easy or pleasant, but ultimately leads to self-mastery \[[15:43](http://www.youtube.com/watch?v=DIs9EaOl0yo&t=943)\].  
   

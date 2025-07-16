@@ -10,7 +10,9 @@ title: 🏡 Home
 📑 Notes, 💭 thoughts, and 🔗 Links.  
 ❔ What do 🫵 _you_ 🤔 think?  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (242)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (244)  
+- [2025-07-16](./reflections/2025-07-16.md)  
+- [2025-07-15 | 🧘🏼‍♀️ Mindful | 🎯 Purposeful | 🦮 Guided 📚📺](./reflections/2025-07-15.md)  
 - [2025-07-14 | 🌄 Sunset | 🧠 Learning | 🚍 Bus](./reflections/2025-07-14.md)  
 - [2025-07-13 | 🌎 Abundance | 🤝🏻 Collusion | 🧬 DNA 📚📄🤖💬📺](./reflections/2025-07-13.md)  
 - [2025-07-12 | 🤖 Agents | 🌊 Tragedy 📺📚📰](./reflections/2025-07-12.md)  
@@ -19,34 +21,32 @@ title: 🏡 Home
 - [2025-07-09 | 👹 Authority ⚔️ versus 🌍 Society 📺📚](./reflections/2025-07-09.md)  
 - [2025-07-08 | 🧠🧘🏼‍♀️ Operating Ourselves 📚](./reflections/2025-07-08.md)  
 - [2025-07-07 | 🇺🇸🔬🏗️ Structure 📺📚](./reflections/2025-07-07.md)  
-- [2025-07-06 | 🤖 AI, 🦠 Germs, and 🏫 School](./reflections/2025-07-06.md)  
-- [2025-07-05 | 🤕🏚️➡️💸➡️🏰 Robber 🧛🏻‍♂️🤝👹 Barons 🤖💬📚📺📄](./reflections/2025-07-05.md)  
   
   
-## [📚 Books](./books/index.md) (522)  
-- [☀️📖🌿 The New Sunset Western Garden Book: The Ultimate Gardening Guide](./books/the-new-sunset-western-garden-book-the-ultimate-gardening-guide.md)  
-- [🔬🔄 The Structure of Scientific Revolutions](./books/the-structure-of-scientific-revolutions.md)  
-- [🧪👁️ The Scientific Image](./books/the-scientific-image.md)  
-- [🤔🔬 The Logic of Scientific Discovery](./books/the-logic-of-scientific-discovery.md)  
-- [🐦🕊️ Bird by Bird: Some Instructions on Writing and Life](./books/bird-by-bird.md)  
-- [❤️‍🔥💪 Grit: The Power of Passion and Perseverance](./books/grit-the-power-of-passion-and-perseverance.md)  
-- [💪🧠 Level-Up Your Self-Discipline: Understand the Neuroscience of Self-Discipline, Control Your Emotions, Overcome Procrastination, and Achieve Your Difficult Goals](./books/level-up-your-self-discipline-understand-the-neuroscience-of-self-discipline-control-your-emotions-overcome-procrastination-and-achieve-your-difficult-goals.md)  
-- [🧠📚🍎💡📝 How Learning Works: Eight Research-Based Principles for Smart Teaching](./books/how-learning-works.md)  
-- [🧠🤔💡➡️ Cognitive Psychology and Its Implications](./books/cognitive-psychology-and-its-implications.md)  
-- [🧠🔒 Make It Stick: The Science of Successful Learning](./books/make-it-stick.md)  
+## [📚 Books](./books/index.md) (525)  
+- [🙈📊🔢 Naked Statistics: Stripping the Dread from the Data](./books/naked-statistics.md)  
+- [📈🎯✅📏 Measure What Matters: How Google, Bono, and the Gates Foundation Rock the World with OKRs](./books/measure-what-matters.md)  
+- [📊⛓️👑 📏 The Tyranny of Metrics](./books/the-tyranny-of-metrics.md)  
+- [✅❌⏳ What Works, What Doesn't, and When: Case Studies in Applied Behavioral Science](./books/what-works-what-doesnt-and-when-case-studies-in-applied-behavioral-science.md)  
+- [✅🤔 Useful Not True](./books/useful-not-true.md)  
+- [🕊️🤝 Nonviolent Communication: A Language of Life](./books/nonviolent-communication.md)  
+- [🧬👥💾 Life 3.0: Being Human in the Age of Artificial Intelligence](./books/life-3-0.md)  
+- [🧘🏼‍♀️👩🏼‍🏫 Practicing Mindfulness: An Introduction to Meditation](./books/practicing-mindfulness-an-introduction-to-meditation.md)  
+- [🏎️⛽ Drive: The Surprising Truth About What Motivates Us](./books/drive-the-surprising-truth-about-what-motivates-us.md)  
+- [📉📈🌪️💪 Antifragile: Things That Gain from Disorder](./books/antifragile-things-that-gain-from-disorder.md)  
   
   
-## [📺 Videos](./videos/index.md) (211)  
-- [🧠💪🤯🔄♾️ 15 Books So Hard They’ll Reshape Your Brain Forever](./videos/15-books-so-hard-theyll-reshape-your-brain-forever.md)  
+## [📺 Videos](./videos/index.md) (214)  
 - [🧠📈🥇 15 Books That Will Make You a Top 1% Thinker](./videos/15-books-that-will-make-you-a-top-1-percent-thinker.md)  
+- [🤖🗓️🧑‍🏫 I Tried AI as a Life Coach for 365 Days - Here’s What I Learned](./videos/i-tried-ai-as-a-life-coach-for-365-days-heres-what-i-learned.md)  
+- [📚⏱️💡 21 Life-Changing Books Summarized in 18 Minutes](./videos/21-life-changing-books-summarized-in-18-minutes.md)  
+- [❓🧭🗺️💡 How To Find Your Life's Purpose](./videos/how-to-find-your-lifes-purpose.md)  
+- [🧠💪🤯🔄♾️ 15 Books So Hard They’ll Reshape Your Brain Forever](./videos/15-books-so-hard-theyll-reshape-your-brain-forever.md)  
 - [🧠🚫📚 You’re Not Stupid: How to Learn Anything With Books](./videos/youre-not-stupid-how-to-learn-anything-with-books.md)  
 - [❓🛠️👨‍🎓 The Black Box Effect: How To Learn ANY Skill Quickly](./videos/the-black-box-effect-how-to-learn-any-skill-quickly.md)  
 - [🧠💡🎯🚫 You're Not Stupid: How To Never Lose Focus Again](./videos/youre-not-stupid-how-to-never-lose-focus-again.md)  
 - [🧠🗺️💡🔑 What I Learned after 5000 Hours of Mind Mapping](./videos/what-i-learned-after-5000-hours-of-mind-mapping.md)  
 - [🤓📈📉⚠️ How to Become an Expert in ANYTHING - The Dunning Kruger Effect](./videos/how-to-become-an-expert-in-anything-the-dunning-kruger-effect.md)  
-- [🥱💭✂️🎬🫡 How to Force Your Brain To Be Motivated (when you don’t feel like it)](./videos/how-to-force-your-brain-to-be-motivated-when-you-dont-feel-like-it.md)  
-- [⏱️🧠🐘 The 10 Minute memory method](./videos/the-10-minute-memory-method.md)  
-- [🧠🪜💡🤔⬆️🎓 6 Levels of Thinking Every Student MUST Master](./videos/6-levels-of-thinking-every-student-must-master.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (79)  
@@ -58,11 +58,11 @@ title: 🏡 Home
   
   
 ## [🤖💬 Bot Chats](./bot-chats/index.md) (34)  
+- [🧘📚🔍 Mindfulness Book Research](./bot-chats/mindfulness-book-research.md)  
 - [🇷🇺👹🤝👹🇺🇸 Trump and Putin](./bot-chats/trump-and-putin.md)  
 - [🪵❓ How Much Wood](./bot-chats/how-much-wood.md)  
 - [🤖📱🧠 Android Local LLMs](./bot-chats/android-local-llms.md)  
 - [🧭 Managing 🕸️ Complexity 🧠](./bot-chats/managing-complexity.md)  
-- [📖 Book 🧭 Explorer 1](./bot-chats/book-explorer-1.md)  
   
   
 ## [📄  Articles](./articles/index.md) (31)  

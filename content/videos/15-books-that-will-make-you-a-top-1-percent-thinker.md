@@ -53,3 +53,4 @@ This content provides a solid foundational list of texts for developing critical
 * 📖 *Zen and the Art of Motorcycle Maintenance: An Inquiry Into Values* by Robert M. Pirsig: 🏍️ A philosophical novel that explores concepts of quality, values, and rationality in a more narrative and introspective manner.  
   
 ## 🐦 Tweet  
+<blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">🧠📈🥇 15 Books That Will Make You a Top 1% Thinker<br><br>🧐 Value Theory | 🧠 Epistemology | 🏛️ Political Theory | 🚶 Human Behavior | 📚 Reading | 🤔 Critical Analysis<a href="https://t.co/qZmkTxzwtN">https://t.co/qZmkTxzwtN</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/1945612646931468459?ref_src=twsrc%5Etfw">July 16, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

@@ -4,6 +4,7 @@ share: true
 aliases:
   - 👥 People
 backlinks: false
+URL: https://bagrounds.org/people
 ---
 [Home](../index.md)  
 # 👥 People (11)  

@@ -7,6 +7,7 @@ URL: https://bagrounds.org/books/information-wars
 Author: 
 tags: 
 affiliate link: https://amzn.to/3ZcSgPK
+CTA: 🛡️ Fortify truth.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 📰⚔️🧠 Information Wars: How We Lost the Global Battle Against Disinformation and What We Can Do About It  
@@ -53,7 +54,7 @@ While acknowledging the difficulties, Stengel outlines potential strategies:
 1. 📱 **Likewar: The Weaponization of Social Media** by P.W. Singer and Emerson T. Brooking: Explores how social media has become a battlefield, covering everything from 💣 ISIS to election interference.  
 2. 🕰️ **Active Measures: The Secret History of Disinformation and Political Warfare** by Thomas Rid: Provides a deep historical context for disinformation campaigns, tracing them back through the Cold War and earlier, offering perspective on current 🇷🇺 Russian tactics.  
 3. 🌍 **[🤥📣 This Is Not Propaganda: Adventures in the War Against Reality](./this-is-not-propaganda.md)** by Peter Pomerantsev: A personal and investigative journey into the world of modern propaganda, exploring its effects on individuals and societies globally.  
-4. 🇺🇸 **Network Propaganda: Manipulation, Disinformation, and Radicalization in American Politics** by Yochai Benkler, Robert Faris, and Hal Roberts: A research-heavy analysis focusing on the structure of the 🇺🇸 US media ecosystem and how it contributes to the spread of disinformation, particularly on the right.  
+4. 🇺🇸 **[📢🕸️ Network Propaganda: Manipulation, Disinformation, and Radicalization in American Politics](./network-propaganda-manipulation-disinformation-and-radicalization-in-american-politics.md)** by Yochai Benkler, Robert Faris, and Hal Roberts: A research-heavy analysis focusing on the structure of the 🇺🇸 US media ecosystem and how it contributes to the spread of disinformation, particularly on the right.  
 5. 🇪🇺 **How to Lose the Information War: Russia, Fake News, and the Future of Conflict** by Nina Jankowicz: Focuses on 🇷🇺 Russian disinformation tactics deployed in Central and Eastern Europe, offering case studies and lessons learned (often the hard way) by targeted nations.  
 6. 🤔 **The Misinformation Age: How False Beliefs Spread** by Cailin O'Connor and James Owen Weatherall: Explores the social and philosophical dynamics of how false beliefs propagate through networks, even among rational actors.  
 7. 📰 **Information at War: Journalism, Disinformation, and Modern Warfare** by Philip Seib: Analyzes the crucial role information (true or false) plays in modern conflict, from WWII to the present digital age.  

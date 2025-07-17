@@ -7,6 +7,7 @@ URL: https://bagrounds.org/books/
 Author: 
 tags: 
 affiliate link: https://amzn.to/43R8TSz
+CTA: 👑 Seize power.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 👑😈👎📈 The Dictator's Handbook: Why Bad Behavior Is Almost Always Good Politics  
@@ -64,7 +65,7 @@ The book offers a 😒 cynical but 🤔 compelling perspective by stripping away
   
 ### Book Recommendations 📚  
   
-* 🏆 **Best alternate book on the same topic:** 🌍 *Why Nations Fail* by Daron Acemoglu and James A. Robinson - 🏛️ Explores how political and economic institutions shape the prosperity of nations. ⚖️ While differing in their specific frameworks, it complements "The Dictator's Handbook" by providing a broader historical perspective.  
+* 🏆 **Best alternate book on the same topic:** [🌎👎👑💰🏚️ Why Nations Fail: The Origins of Power, Prosperity, and Poverty](./why-nations-fail-the-origins-of-power-prosperity-and-poverty.md) by Daron Acemoglu and James A. Robinson - 🏛️ Explores how political and economic institutions shape the prosperity of nations. ⚖️ While differing in their specific frameworks, it complements "The Dictator's Handbook" by providing a broader historical perspective.  
 * 🧠 **Best book that is tangentially related:** 🤔 *[Thinking, Fast and Slow](./thinking-fast-and-slow.md)* by Daniel Kahneman - 💡 Offers insights into cognitive biases and decision-making, which can help explain why leaders and their supporters make seemingly irrational choices.  
 * 🆚 **Best book that is diametrically opposed:** 👑 *The Prince* by Niccolò Machiavelli - 📜 Machiavelli's classic provides a manual for how a leader *should* behave. 📖 "The Dictator's Handbook" describes how leaders *do* behave, offering a more pragmatic counterpoint to Machiavelli's prescriptive advice.  
 * 🐷 **Best fiction book that incorporates related ideas:** 🐴 *Animal Farm* by George Orwell - 🐷 A satirical allegory of the Russian Revolution, illustrating how power corrupts and how even well-intentioned revolutions can lead to tyranny.  

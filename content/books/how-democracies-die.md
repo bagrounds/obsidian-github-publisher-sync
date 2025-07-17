@@ -7,6 +7,7 @@ URL: https://bagrounds.org/books/how-democracies-die
 Author: 
 tags: 
 affiliate link: https://amzn.to/4knY1mj
+CTA: 🚨 Defend self-governance.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🗳️🏛️☠️ How Democracies Die  

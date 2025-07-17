@@ -7,6 +7,7 @@ URL: https://bagrounds.org/books/the-nordic-theory-of-everything
 Author: 
 tags: 
 affiliate link: https://amzn.to/4jCN5Qm
+CTA: 🌍 Explore well-being.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🇸🇪🇩🇰🇳🇴🇫🇮🧩 The Nordic Theory of Everything: In Search of a Better Life  
@@ -69,5 +70,5 @@ Partanen's book offers a compelling and accessible perspective on Nordic societi
 - **Best Fiction Book That Incorporates Related Ideas:** _The Dispossessed_ by Ursula K. Le Guin. This science fiction novel explores the complexities of a society based on collectivist principles, prompting reflection on different social structures. 👽  
 - **Best Book That Is More General:** _Utopia for Realists: How We Can Build the Ideal Society_ by Rutger Bregman. This book explores various progressive ideas for societal improvement, some of which align with Nordic principles. ✨  
 - **Best Book That Is More Specific:** Any in-depth academic study on the specific social welfare policies of a particular Nordic country (e.g., a book focusing solely on the Finnish education system). 🇫🇮  
-- **Best Book That Is More Rigorous:** _Why Nations Fail: The Origins of Power, Prosperity, and Poverty_ by Daron Acemoglu and James A. Robinson. This book offers a broad, historically grounded analysis of the factors contributing to national success, including institutional structures. 🏛️  
-- **Best Book That Is More Accessible:** Articles and reports from organizations like the OECD that compare social and economic indicators across different countries. 🌐  
+- **Best Book That Is More Rigorous:** [🌎👎👑💰🏚️ Why Nations Fail: The Origins of Power, Prosperity, and Poverty](./why-nations-fail-the-origins-of-power-prosperity-and-poverty.md) by Daron Acemoglu and James A. Robinson. This book offers a broad, historically grounded analysis of the factors contributing to national success, including institutional structures. 🏛️  
+- **Best Book That Is More Accessible:** Articles and reports from organizations like the OECD that compare social and economic indicators across different countries. 🌐

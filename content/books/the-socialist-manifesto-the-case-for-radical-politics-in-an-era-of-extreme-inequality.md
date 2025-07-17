@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org/books/the-socialist-manifesto-the-case-for-radical-politics-in-an-era-of-extreme-inequality
 share: true
 affiliate link: https://amzn.to/4lCBiD8
-CTA: Demand equality.
+CTA: ✊ Seize the future.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🚩⚖️ The Socialist Manifesto: The Case for Radical Politics in an Era of Extreme Inequality  
@@ -63,7 +63,7 @@ Reviewers have noted that *The Socialist Manifesto* is an accessible introductio
 * ***News from Nowhere*** by William Morris: Another utopian novel 🏡 from the same period, presenting a vision of a future socialist society that is decentralized and agrarian 🌾.  
 * ***The Dispossessed*** by Ursula K. Le Guin: A science fiction novel 👽 exploring two contrasting societies, one capitalist and the other anarcho-syndicalist, offering a nuanced look at different social and economic systems.  
 * ***The Shock Doctrine: The Rise of Disaster Capitalism*** by Naomi Klein: Examines how neoliberal economic policies 🏛️ have been implemented in various countries following crises 💥, linking economic policy to political power.  
-* ***Why Nations Fail: The Origins of Power, Prosperity, and Poverty*** by Daron Acemoglu and James A. Robinson: Analyzes the role of political and economic institutions 🏛️ in determining the wealth 💰 and poverty 🏚️ of nations, providing a framework for understanding systemic inequality.  
+* **[🌎👎👑💰🏚️ Why Nations Fail: The Origins of Power, Prosperity, and Poverty](./why-nations-fail-the-origins-of-power-prosperity-and-poverty.md)** by Daron Acemoglu and James A. Robinson: Analyzes the role of political and economic institutions 🏛️ in determining the wealth 💰 and poverty 🏚️ of nations, providing a framework for understanding systemic inequality.  
 * ***Requiem for the American Dream: The 10 Principles of Concentration of Wealth & Power*** by Noam Chomsky: Examines the concentration of wealth 🤑 and its detrimental impact on democracy 🗳️ and social progress 🌱 in the United States.  
 * **[🧑🏿⛓️🙈 The New Jim Crow: Mass Incarceration in the Age of Colorblindness](./the-new-jim-crow-mass-incarceration-in-the-age-of-colorblindness.md)** by Michelle Alexander: While focused on the US justice system ⚖️, this book intersects with themes of systemic inequality and the impact of social structures on marginalized communities.  
   

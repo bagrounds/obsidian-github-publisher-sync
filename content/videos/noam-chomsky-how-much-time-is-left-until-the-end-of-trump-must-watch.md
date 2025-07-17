@@ -43,7 +43,7 @@ The video includes several calls to action:
 * **🔎 On truth and misinformation:**  
     * [🤥📣 This Is Not Propaganda: Adventures in the War Against Reality](../books/this-is-not-propaganda.md) by Peter Pomerantsev.  
     * [🚫✅🤥 Post-Truth](../books/post-truth.md) by Lee McIntyre.  
-    * *Network Propaganda: Manipulation, Disinformation, and Radicalization in American Politics* by Yochai Benkler, Robert Faris, and Hal Roberts. 🤖 The book includes analysis of how information can spread and affect political views.  
+    * [📢🕸️ Network Propaganda: Manipulation, Disinformation, and Radicalization in American Politics](../books/network-propaganda-manipulation-disinformation-and-radicalization-in-american-politics.md) by Yochai Benkler, Robert Faris, and Hal Roberts. 🤖 The book includes analysis of how information can spread and affect political views.  
     * *On Disinformation* by Lee McIntyre.  
 * **🌍 On collective action and social change:**  
     * *Collective Action and Exchange: A Game-Theoretic Approach to Contemporary Political Economy* by William D. Ferguson.  

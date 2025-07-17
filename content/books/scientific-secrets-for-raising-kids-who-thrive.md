@@ -20,8 +20,8 @@ CTA: 🌱 Nurture successful children.
     - 🚫 Avoid excessive stress  
 - 🫛 Regularly taste healthy foods  
     - 🚫 Don't force large quantities  
-- 🤟 Sign language  
-- 🎶 Motherese  
+- 🤟 Sign language before speech is good.  
+- 🎶 Motherese is good.  
 - 🗣️ Converse with adult language  
 - 🚫🤜 No Corporal Punishment  
     - ➡️ instead  
@@ -52,6 +52,7 @@ CTA: 🌱 Nurture successful children.
     - ✅ I got that right. 🏋️ That means I tried hard.  
     - ❌ I got that wrong. 🔮 That means I need to try harder next time.  
 - 🧠 Montessori methods work.  
+- 🛋️ Minimize sedentary activity.  
 - 🏀 Team sports are great for kids.  
     - ⚠️ But not 🏈 tackle football or any activity with regular impact to the 🤕 head.  
     - ⚠️ Heading drills in ⚽ soccer are also dangerous.  

@@ -42,7 +42,7 @@ The video includes several calls to action:
     * *Why Nations Fail* by Daron Acemoglu and James A. Robinson.  
 * **🔎 On truth and misinformation:**  
     * [🤥📣 This Is Not Propaganda: Adventures in the War Against Reality](../books/this-is-not-propaganda.md) by Peter Pomerantsev.  
-    * *Post-Truth* by Lee McIntyre.  
+    * [🚫✅🤥 Post-Truth](../books/post-truth.md) by Lee McIntyre.  
     * *Network Propaganda: Manipulation, Disinformation, and Radicalization in American Politics* by Yochai Benkler, Robert Faris, and Hal Roberts. 🤖 The book includes analysis of how information can spread and affect political views.  
     * *On Disinformation* by Lee McIntyre.  
 * **🌍 On collective action and social change:**  

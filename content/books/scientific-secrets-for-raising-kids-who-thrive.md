@@ -46,6 +46,10 @@ affiliate link: https://amzn.to/4dISzYB
         - 🧠 working memory  
         - 🎨 creativity  
     - 🧠 delays the onset of dementia  
+- ✍️ Attribution style  
+    - 🧑‍🏫 Lead by example.  
+    - ✅ I got that right. 🏋️ That means I tried hard.  
+    - ❌ I got that wrong. 🔮 That means I need to try harder next time.  
   
 ## 📚 Book Report: 🧪 Scientific Secrets for Raising Kids Who Thrive  
   
@@ -74,7 +78,7 @@ The book/course explores numerous themes crucial for raising thriving children, 
 * 👩‍🏫 **Montessori Approach:** The effectiveness of the Montessori method for teaching academics and executive function is presented. 🧮  
 * 📚 **Homework and Learning:** Guidance is provided on supporting children with homework, suggesting that excessive parental help can be less effective than allowing children to problem-solve. 📝 Consistent study time and location are recommended. 📍  
 * 🌟 **Resilience and Self-Esteem:** Strategies for promoting persistence and healthy self-esteem through adolescence are included. 🌱  
-* 😌 **Unburdened Childhood:** The value of allowing children to progress at their own pace and explore their interests is emphasized, advocating for an "unhurried childhood." 🛤️  
+* 😌 **Unburdened Childhood:** The value of allowing children to progress at their own pace and explore their interests is emphasized, advocating for an unhurried childhood. 🛤️  
   
 ### Conclusion  
   
@@ -86,7 +90,7 @@ The book/course explores numerous themes crucial for raising thriving children, 
   
 * **[🕳️🧠👶🏽 The Whole-Brain Child: 12 Revolutionary Strategies to Nurture Your Child's Developing Mind](./the-whole-brain-child.md)** by Daniel J. Siegel and Tina Payne Bryson. This highly respected book explains the science of a child's developing brain in an accessible way and offers practical strategies for parents. 🚀  
 * **[🤱🏼🤿🪞🌱 Parenting from the Inside Out: How a Deeper Self-Understanding Can Help You Raise Children Who Thrive](./parenting-from-the-inside-out-how-a-deeper-self-understanding-can-help-you-raise-children-who-thrive.md)** by Daniel J. Siegel and Mary Hartzell. This book explores how a parent's own experiences and self-understanding impact their parenting and a child's development. 🤝  
-* 🧬 **The Science of Parenting: How Today's Brain Research Can Help You Raise Happy, Emotionally Balanced Children** by Margot Sunderland. This guide compiles the latest scientific and neurobiological research to help parents understand their children's brains and offers scientifically proven advice. 💡  
+* **[🔬🧠👶📈😊 The Science of Parenting: How Today's Brain Research Can Help You Raise Happy, Emotionally Balanced Children](./the-science-of-parenting-how-todays-brain-research-can-help-you-raise-happy-emotionally-balanced-children.md)** by Margot Sunderland. This guide compiles the latest scientific and neurobiological research to help parents understand their children's brains and offers scientifically proven advice. 💡  
 * **[🤰👶🔬👩‍⚕️ 🧪 The Science of Mom: A Research-Based Guide to Your Baby's First Year](./the-science-of-mom.md)** by Alice Callahan. Written by a scientist, this book explains the research behind common "science-based" parenting advice for a baby's first year. 🍼  
 * 😇 **How to Raise Kids Who Aren't Assholes: Science-Based Strategies for Better Parenting-from Tots to Teens** by Melinda Wenner Moyer. This book provides research-backed strategies for instilling positive traits like honesty and generosity in children. 💖  
 * **[🔌👋 The Power of Showing Up: How Parental Presence Shapes Who Our Kids Become and How Their Brains Get Wired](./the-power-of-showing-up.md)** by Daniel J. Siegel and Tina Payne Bryson. This book focuses on the importance of parental presence and attachment based on neuroscience and attachment science. 👨‍👩‍👧‍👦  
@@ -106,7 +110,7 @@ The book/course explores numerous themes crucial for raising thriving children, 
 * 🎭 **Books on Creativity:** Exploring books specifically about fostering creativity can complement the idea of raising children who thrive, as creativity is a key aspect of potential. 🌟  
 * 💪 **Books on Resilience:** Books focusing on building resilience in children and teens, such as "Building Resilience in Children and Teens" by Dr. Ken Ginsburg, directly address a crucial component of thriving. 🌱  
 * 📖 **Children's Literature Highlighting Key Themes:** Reading and discussing children's books that feature characters demonstrating resilience, empathy, problem-solving, or a love of learning can be a creative way to reinforce the concepts from the parenting book with children. 👦 For instance, books using high contrast for infants are scientifically supported for visual development. 👀 Similarly, books with individually named characters can aid language development. 🗣️  
-* 🧸 **Books on the Importance of Play:** Exploring works that champion the necessity of unstructured play for child development aligns with themes in "🧪 Scientific Secrets." ⚽  
+* 🧸 **Books on the Importance of Play:** Exploring works that champion the necessity of unstructured play for child development aligns with themes in 🧪 Scientific Secrets. ⚽  
   
 ## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Scientific Secrets for Raising Kids Who Thrive. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.  

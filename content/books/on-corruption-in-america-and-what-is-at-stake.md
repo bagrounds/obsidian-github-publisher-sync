@@ -7,6 +7,7 @@ URL: https://bagrounds.org/books/on-corruption-in-america-and-what-is-at-stake
 Author: 
 tags: 
 affiliate link: https://amzn.to/3SDyzNj
+CTA: ⚖️ Uphold integrity.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 💰🏛️💔🇺🇸 On Corruption in America: And What Is at Stake  
@@ -62,7 +63,7 @@ The information presented is generally of high quality. The author draws on a wi
 * **Best Book That Is Tangentially Related:** [🎳🏘️📉📈 Bowling Alone: The Collapse and Revival of American Community](./bowling-alone.md) by Robert D. Putnam. This book explores the decline of social capital and civic engagement in America, which is a related factor in the rise of corruption. 🤝  
 * **Best Book That Is Diametrically Opposed:** *The Case for Capitalism* by Alan Greenspan. This book offers a defense of free-market capitalism and argues that government intervention in the economy is often harmful. 📈  
 * **Best Fiction Book That Incorporates Related Ideas:** *All the King's Men* by Robert Penn Warren. This novel explores the corrupting influence of power and the complexities of political morality. 👑  
-* **Best Book That Is More General:** *Why Nations Fail: The Origins of Power, Prosperity, and Poverty* by Daron Acemoglu and James A. Robinson. This book provides a broader historical and comparative perspective on the role of institutions in economic and political development. 🌍  
+* **Best Book That Is More General:** [🌎👎👑💰🏚️ Why Nations Fail: The Origins of Power, Prosperity, and Poverty](./why-nations-fail-the-origins-of-power-prosperity-and-poverty.md) by Daron Acemoglu and James A. Robinson. This book provides a broader historical and comparative perspective on the role of institutions in economic and political development. 🌍  
 * **Best Book That Is More Specific:** *The Looting Machine: Warlords, Oligarchs, Corporations, Smugglers, and the Theft of Africa's Wealth* by Tom Burgis. This book focuses on the specific mechanisms of corruption in resource-rich countries. 💎  
 * **Best Book That Is More Rigorous:** *Political Order and Political Decay: From the Industrial Revolution to the Globalization of Democracy* by Francis Fukuyama. This book provides a detailed historical and theoretical analysis of the development of political institutions. 🏛️  
 * **Best Book That Is More Accessible:** *Throw Them All Out: How Politicians and Their Friends Get Rich Off Insider Stock Tips, Land Deals, and Cronyism That Would Send Us to Jail* by Peter Schweizer. This book provides a more journalistic and anecdotal account of corruption in Washington. 📰  

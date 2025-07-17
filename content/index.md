@@ -11,7 +11,7 @@ title: 🏡 Home
 ❔ What do 🫵 _you_ 🤔 think?  
   
 ## [🪞 Reflections](./reflections/index.md) ~ Blog (244)  
-- [2025-07-16](./reflections/2025-07-16.md)  
+- [2025-07-16 | 👉 Doing | 🏃🏼‍♀️ Running | 🦜 Language 📚📄](./reflections/2025-07-16.md)  
 - [2025-07-15 | 🧘🏼‍♀️ Mindful | 🎯 Purposeful | 🦮 Guided 📚📺](./reflections/2025-07-15.md)  
 - [2025-07-14 | 🌄 Sunset | 🧠 Learning | 🚍 Bus](./reflections/2025-07-14.md)  
 - [2025-07-13 | 🌎 Abundance | 🤝🏻 Collusion | 🧬 DNA 📚📄🤖💬📺](./reflections/2025-07-13.md)  
@@ -23,7 +23,10 @@ title: 🏡 Home
 - [2025-07-07 | 🇺🇸🔬🏗️ Structure 📺📚](./reflections/2025-07-07.md)  
   
   
-## [📚 Books](./books/index.md) (525)  
+## [📚 Books](./books/index.md) (528)  
+- [🫵🚫🦥🧩💩 You Aren't A Lazy Piece of Sh!t: From Procrastination to Productivity](./books/you-arent-a-lazy-piece-of-sht-from-procrastination-to-productivity.md)  
+- [🗣️ On Language](./books/on-language.md)  
+- [🏃🏆👵 The Complete Guide to Running: How to Be a Champion from 9 to 90](./books/the-complete-guide-to-running.md)  
 - [🙈📊🔢 Naked Statistics: Stripping the Dread from the Data](./books/naked-statistics.md)  
 - [📈🎯✅📏 Measure What Matters: How Google, Bono, and the Gates Foundation Rock the World with OKRs](./books/measure-what-matters.md)  
 - [📊⛓️👑 📏 The Tyranny of Metrics](./books/the-tyranny-of-metrics.md)  
@@ -31,9 +34,6 @@ title: 🏡 Home
 - [✅🤔 Useful Not True](./books/useful-not-true.md)  
 - [🕊️🤝 Nonviolent Communication: A Language of Life](./books/nonviolent-communication.md)  
 - [🧬👥💾 Life 3.0: Being Human in the Age of Artificial Intelligence](./books/life-3-0.md)  
-- [🧘🏼‍♀️👩🏼‍🏫 Practicing Mindfulness: An Introduction to Meditation](./books/practicing-mindfulness-an-introduction-to-meditation.md)  
-- [🏎️⛽ Drive: The Surprising Truth About What Motivates Us](./books/drive-the-surprising-truth-about-what-motivates-us.md)  
-- [📉📈🌪️💪 Antifragile: Things That Gain from Disorder](./books/antifragile-things-that-gain-from-disorder.md)  
   
   
 ## [📺 Videos](./videos/index.md) (214)  
@@ -65,12 +65,12 @@ title: 🏡 Home
 - [🧭 Managing 🕸️ Complexity 🧠](./bot-chats/managing-complexity.md)  
   
   
-## [📄  Articles](./articles/index.md) (31)  
+## [📄  Articles](./articles/index.md) (32)  
+- [👀👶🏼🏃🏼‍♀️🛣️ What to Look for in a Jogging Stroller](./articles/what-to-look-for-in-a-jogging-stroller.md)  
 - [🧑‍⚖️🧬💰🤝 Judge OKs sale of 23andMe - and its trove of DNA data - to a nonprofit led by its founder](./articles/judge-oks-sale-of-23andme-and-its-trove-of-dna-data-to-a-nonprofit-led-by-its-founder.md)  
 - [👀 Attention Is All You Need](./articles/attention-is-all-you-need.md)  
 - [🪵 The Log: What every software engineer should know about real-time data's unifying abstraction](./articles/the-log-what-every-software%20engineer-should-know-about-real-time-datas-unifying-abstraction.md)  
 - [💻💰🤝👹🇺🇸 Tech moguls Altman, Bezos and Zuckerberg donate to Trump's inauguration fund](./articles/tech-moguls-altman-bezos-and-zuckerberg-donate-to-trumps-inauguration-fund.md)  
-- [👨‍⚖️🆚🏢🗺️ Peckham v. Gem State Mut. of Utah, 964 F. 2d 1043 - Court of Appeals, 10th Circuit](../Peckham%20v.%20Gem%20State%20Mut.%20of%20Utah,%20964%20F.%202d%201043%20-%20Court%20of%20Appeals,%2010th%20Circuit.md)  
   
   
 ## [💾 Software](./software/index.md) (29)  

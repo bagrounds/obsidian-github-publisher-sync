@@ -56,6 +56,11 @@ CTA: 🌱 Nurture successful children.
 - 🏀 Team sports are great for kids.  
     - ⚠️ But not 🏈 tackle football or any activity with regular impact to the 🤕 head.  
     - ⚠️ Heading drills in ⚽ soccer are also dangerous.  
+- 🚀 Adolescents seek to  
+    - 🌟 stand out  
+    - 🤝 fit in  
+    - 🏆 measure up  
+    - 💪 take hold  
   
 ## 📚 Book Report: 🧪 Scientific Secrets for Raising Kids Who Thrive  
   

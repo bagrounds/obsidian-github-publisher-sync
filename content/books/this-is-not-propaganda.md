@@ -7,9 +7,12 @@ URL: https://bagrounds.org/books/this-is-not-propaganda
 Author: 
 tags: 
 affiliate link: https://amzn.to/4jwntEL
+CTA: 👁️ Question everything.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🤥📣 This Is Not Propaganda: Adventures in the War Against Reality  
+[🛒 This Is Not Propaganda: Adventures in the War Against Reality. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4jwntEL)  
+  
 ## 📚 Book Report: This Is Not Propaganda by Peter Pomerantsev  
   
 ### ℹ️ Overview  

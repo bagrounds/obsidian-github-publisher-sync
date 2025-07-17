@@ -7,7 +7,7 @@ URL: https://bagrounds.org/books/capital-in-the-twenty-first-century
 Author: 
 tags: 
 affiliate link: https://amzn.to/3HjBmbV
-CTA: Understand capital.
+CTA: ⚖️ Understand wealth.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 💰📈🌍⏳ Capital in the Twenty-First Century  
@@ -63,7 +63,7 @@ CTA: Understand capital.
 * **Best Tangentially Related Book:** "[Thinking, Fast and Slow](./thinking-fast-and-slow.md)" by Daniel Kahneman. This book explores the cognitive biases that influence economic decision-making, providing insights into the psychological factors that contribute to inequality.  
 * **Best Diametrically Opposed Book:** "Basic Economics" by Thomas Sowell. This book presents a classical liberal perspective on economics, emphasizing the role of free markets and limited government intervention.  
 * **Best Fiction Book That Incorporates Related Ideas:** "The Grapes of Wrath" by John Steinbeck. This novel depicts the social and economic consequences of inequality during the Great Depression.  
-* **Best Book That Is More General:** "Why Nations Fail: The Origins of Power, Prosperity, and Poverty" by Daron Acemoglu and James A. Robinson. This book examines the institutional factors that contribute to economic development and inequality.  
+* **Best Book That Is More General:** [🌎👎👑💰🏚️ Why Nations Fail: The Origins of Power, Prosperity, and Poverty](./why-nations-fail-the-origins-of-power-prosperity-and-poverty.md) by Daron Acemoglu and James A. Robinson. This book examines the institutional factors that contribute to economic development and inequality.  
 * **Best Book That Is More Specific:** "Unequal Childhoods: Class, Race, and Family Life" by Annette Lareau. This book provides a detailed sociological analysis of how social class shapes children's lives and opportunities.  
 * **Best Book That Is More Rigorous:** "Advanced Macroeconomics" by David Romer. A graduate level textbook that provides rigorous mathematical models of macroeconomic phenomena.  
 * **Best Book That Is More Accessible:** [🍩🌍 Doughnut Economics: Seven Ways to Think Like a 21st-Century Economist](./doughnut-economics-seven-ways-to-think-like-a-21st-century-economist.md) by Kate Raworth. This book offers a more approachable and visually engaging critique of traditional economic models, with a focus on sustainability and equity.  

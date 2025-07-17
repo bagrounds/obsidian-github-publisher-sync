@@ -30,7 +30,7 @@ youtube: https://youtu.be/Kp1MUqZKOUA
     * *The Road to Unfreedom: Russia, Europe, America* by Timothy Snyder.  
 * 📰 **On Disinformation and Truth:**  
     * *The Death of Truth: Notes on Falsehood in the Age of Trump* by Michiko Kakutani.  
-    * *Post-Truth* by Matthew d'Ancona.  
+    * [🚫✅🤥 Post-Truth](../books/post-truth.md) by Lee McIntyre.  
 * 🏛️ **On US Politics and Institutions:**  
     * [🗳️🏛️☠️ How Democracies Die](../books/how-democracies-die.md) by Steven Levitsky and Daniel Ziblatt.  
     * [⚠️🥴🕹️🌐 The Fifth Risk](../books/the-fifth-risk.md) by Michael Lewis (While not directly about authoritarianism, it touches on the undermining of government institutions).  

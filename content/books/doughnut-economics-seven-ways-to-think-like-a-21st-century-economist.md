@@ -5,6 +5,7 @@ aliases:
 URL: https://bagrounds.org/books/doughnut-economics-seven-ways-to-think-like-a-21st-century-economist
 share: true
 affiliate link: https://amzn.to/3FkjPQv
+CTA: 🍩 Reimagine prosperity.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🍩🌍 Doughnut Economics: Seven Ways to Think Like a 21st-Century Economist  
@@ -57,7 +58,7 @@ Raworth outlines seven key shifts in economic thinking to achieve the goal of li
 * 🗽 **"Capitalism and Freedom" by Milton Friedman:** A classic defense of free-market capitalism, arguing that economic freedom is essential for political freedom and prosperity.  
 * 📈 **"The Wealth of Nations" by Adam Smith:** The foundational text of classical economics, emphasizing the benefits of free markets, division of labor, and self-interest (though often interpreted more narrowly than Smith intended).  
 * 💡 **"Enlightenment Now: The Case for Reason, Science, Humanism, and Progress" by Steven Pinker:** Argues that, on the whole, the world is improving due to the principles of the Enlightenment, including market-driven progress, offering a more optimistic view of current systems (though acknowledging challenges).  
-* 🏛️ **"Why Nations Fail: The Origins of Power, Prosperity, and Poverty" by Daron Acemoglu and James A. Robinson:** Focuses on the role of political and economic institutions in determining national prosperity, offering a different lens on development and inequality than Doughnut Economics' primary focus.  
+* **[🌎👎👑💰🏚️ Why Nations Fail: The Origins of Power, Prosperity, and Poverty](./why-nations-fail-the-origins-of-power-prosperity-and-poverty.md) by Daron Acemoglu and James A. Robinson:** Focuses on the role of political and economic institutions in determining national prosperity, offering a different lens on development and inequality than Doughnut Economics' primary focus.  
   
 **🎨 Creatively Related (Broader Thinking on Systems, Nature & Society):**  
   

@@ -7,6 +7,7 @@ URL: https://bagrounds.org/books/complexity
 Author: "[[Melanie Mitchell]]"
 tags: 
 affiliate link: https://amzn.to/3Svi7i6
+CTA: ✨ Transcend simplicity.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🌐🧭❓🔍🗺️ Complexity: A Guided Tour  

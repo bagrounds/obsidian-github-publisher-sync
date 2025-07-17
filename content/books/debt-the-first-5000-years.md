@@ -5,7 +5,7 @@ aliases:
   - "🏛️💰 Debt: The First 5,000 Years"
 URL: https://bagrounds.org/books/debt-the-first-5-000-years
 affiliate link: https://amzn.to/3SwYlTh
-CTA: Understand debt.
+CTA: ⚖️ Examine civilization's ledger.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🏛️💰 Debt: The First 5,000 Years  
@@ -55,7 +55,7 @@ CTA: Understand debt.
 * ***The Road to Serfdom*** **by Friedrich Hayek:** A classic defense of classical liberalism, arguing against state planning and intervention in the economy—a sharp contrast to Graeber's critique of market fundamentalism and focus on state violence underpinning markets.  
 * ***The Ascent of Money: A Financial History of the World*** **by Niall Ferguson:** Presents a more conventional history of finance, often celebrating its innovations and linking financial development to Western power.  
 * ***Economics: The User's Guide*** **by Ha-Joon Chang:** Offers a critical but accessible overview of different economic schools of thought, providing context for understanding where Graeber's arguments fit and diverge.  
-* ***Why Nations Fail: The Origins of Power, Prosperity, and Poverty*** **by Daron Acemoglu and James A. Robinson:** Argues that inclusive political and economic institutions are key to prosperity, offering an institution-focused alternative to Graeber's anthropological lens, though potentially sharing some critiques of extractive systems.  
+* **[🌎👎👑💰🏚️ Why Nations Fail: The Origins of Power, Prosperity, and Poverty](./why-nations-fail-the-origins-of-power-prosperity-and-poverty.md)** **by Daron Acemoglu and James A. Robinson:** Argues that inclusive political and economic institutions are key to prosperity, offering an institution-focused alternative to Graeber's anthropological lens, though potentially sharing some critiques of extractive systems.  
   
 ### 🤔 Exploring Related Themes (Power, Morality, Social Structures)  
 * **[💰📈🌍⏳ Capital in the Twenty-First Century](./capital-in-the-twenty-first-century.md)** **by Thomas Piketty:** A landmark empirical study of wealth and income inequality over centuries, complementing Graeber's historical narrative with quantitative data on economic concentration.  

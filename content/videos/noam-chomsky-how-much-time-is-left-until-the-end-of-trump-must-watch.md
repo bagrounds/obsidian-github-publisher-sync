@@ -39,7 +39,7 @@ The video includes several calls to action:
     * [🗳️🕊️🇺🇸 Democracy in America](../books/democracy-in-america.md) by Alexis de Tocqueville.  
     * *The Prince* by Niccolo Machiavelli.  
     * [👑🚫📜2️⃣0️⃣ On Tyranny: Twenty Lessons from the Twentieth Century](../books/on-tyranny.md) by Timothy Snyder.  
-    * *Why Nations Fail* by Daron Acemoglu and James A. Robinson.  
+    * [🌎👎👑💰🏚️ Why Nations Fail: The Origins of Power, Prosperity, and Poverty](../books/why-nations-fail-the-origins-of-power-prosperity-and-poverty.md) by Daron Acemoglu and James A. Robinson.  
 * **🔎 On truth and misinformation:**  
     * [🤥📣 This Is Not Propaganda: Adventures in the War Against Reality](../books/this-is-not-propaganda.md) by Peter Pomerantsev.  
     * [🚫✅🤥 Post-Truth](../books/post-truth.md) by Lee McIntyre.  

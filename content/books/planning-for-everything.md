@@ -7,6 +7,7 @@ Medium: "#Audiobook"
 share: true
 URL: https://bagrounds.org/books/planning-for-everything
 affiliate link: https://amzn.to/3HsfA5T
+CTA: 🧭 Chart your course.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🗺️🎯🪜🏗️ Planning for Everything: The Design of Paths and Goals  

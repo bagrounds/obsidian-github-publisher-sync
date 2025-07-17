@@ -5,6 +5,7 @@ aliases:
 URL: https://bagrounds.org/books/scientific-secrets-for-raising-kids-who-thrive
 share: true
 affiliate link: https://amzn.to/4dISzYB
+CTA: 🌱 Nurture successful children.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧪👶📈 Scientific Secrets for Raising Kids Who Thrive  
@@ -50,6 +51,10 @@ affiliate link: https://amzn.to/4dISzYB
     - 🧑‍🏫 Lead by example.  
     - ✅ I got that right. 🏋️ That means I tried hard.  
     - ❌ I got that wrong. 🔮 That means I need to try harder next time.  
+- 🧠 Montessori methods work.  
+- 🏀 Team sports are great for kids.  
+    - ⚠️ But not 🏈 tackle football or any activity with regular impact to the 🤕 head.  
+    - ⚠️ Heading drills in ⚽ soccer are also dangerous.  
   
 ## 📚 Book Report: 🧪 Scientific Secrets for Raising Kids Who Thrive  
   

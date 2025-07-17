@@ -5,6 +5,7 @@ aliases:
 URL: https://bagrounds.org/books/trust-the-social-virtues-and-the-creation-of-prosperity
 share: true
 affiliate link: https://amzn.to/4kLuFOm
+CTA: 🤝 Cultivate reliable bonds.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🤝😇💰 Trust: The Social Virtues and the Creation of Prosperity  
@@ -58,9 +59,9 @@ affiliate link: https://amzn.to/4kLuFOm
 * 💥 **"The Great Disruption: Human Nature and the Reconstitution of Social Order" by Francis Fukuyama:** Fukuyama's follow-up explores the social and moral shifts (rising crime, declining trust, family breakdown) in Western societies from the 1960s to 1990s and the potential for spontaneous social re-norming.  
 * 📜 **"The Origins of Political Order" & "Political Order and Political Decay" by Francis Fukuyama:** These volumes provide a broader historical and institutional context, examining the development of political institutions (the state, rule of law, accountability) across different civilizations, complementing the cultural focus of *Trust*.  
   
-### ⚖️ H3: Contrasting Perspectives & Critiques  
+### ⚖️ Contrasting Perspectives & Critiques  
 * 🏛️ **"The Quality of Government: Corruption, Social Trust, and Inequality in International Perspective" by Bo Rothstein:** Argues that the *quality* of impartial government institutions (low corruption, universal application of rules) is paramount in building social trust, rather than trust primarily stemming from cultural predispositions or civil society participation. It offers an institution-centric alternative to Fukuyama's culture-centric view.  
-* 🌍 **"Why Nations Fail: The Origins of Power, Prosperity, and Poverty" by Daron Acemoglu and James A. Robinson:** Emphasizes the critical role of *inclusive* economic and political institutions over geography, culture, or specific leader policies in determining national prosperity. 🏛️ It presents a strong argument for institutional design as the primary driver, potentially contrasting with Fukuyama's cultural emphasis.  
+* **[🌎👎👑💰🏚️ Why Nations Fail: The Origins of Power, Prosperity, and Poverty](./why-nations-fail-the-origins-of-power-prosperity-and-poverty.md) by Daron Acemoglu and James A. Robinson:** Emphasizes the critical role of *inclusive* economic and political institutions over geography, culture, or specific leader policies in determining national prosperity. 🏛️ It presents a strong argument for institutional design as the primary driver, potentially contrasting with Fukuyama's cultural emphasis.  
 * 👀 **[📖🏛️📉 Seeing Like a State: How Certain Schemes to Improve the Human Condition Have Failed](./seeing-like-a-state-how-certain-schemes-to-improve-the-human-condition-have-failed.md) by James C. Scott:** Critiques large-scale state planning and social engineering projects, highlighting how they often fail by ignoring local, practical knowledge ('metis') and simplifying complex social realities. 🤔 While not directly about trust, it offers a cautionary tale about top-down approaches versus the organic social structures Fukuyama discusses.  
   
 ### 💡 Creatively Related (Technology, Psychology, Specific Contexts)  

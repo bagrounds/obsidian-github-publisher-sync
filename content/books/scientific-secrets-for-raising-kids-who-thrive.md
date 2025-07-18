@@ -61,6 +61,9 @@ CTA: 🌱 Nurture successful children.
     - 🤝 fit in  
     - 🏆 measure up  
     - 💪 take hold  
+- ⚠️ Beware anecdotal advice  
+- ⚠️ Beware unproven products  
+- 🧸 Encourage unstructured play  
   
 ## 📚 Book Report: 🧪 Scientific Secrets for Raising Kids Who Thrive  
   

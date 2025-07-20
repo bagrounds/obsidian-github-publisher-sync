@@ -7,6 +7,7 @@ URL: https://bagrounds.org/books/freakonomics
 Author: 
 tags: 
 affiliate link: https://amzn.to/3Zf86tf
+CTA: 🧐 Question everything.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🤓🕵️‍♂️❓ Freakonomics: A Rogue Economist Explores the Hidden Side of Everything  
@@ -84,7 +85,7 @@ Incentives drive human behavior in surprising ways, and applying economic princi
   
 * **Best Alternate Book on the Same Topic:** *SuperFreakonomics* by Steven Levitt and Stephen Dubner. Continues the exploration of unconventional topics using economic analysis. 🤯  
 * **Best Book Tangentially Related:** [🤔🐇🐢 Thinking, Fast and Slow](./thinking-fast-and-slow.md) by Daniel Kahneman. Explores the cognitive biases that influence decision-making, complementing the book's discussions of incentives. 🧠  
-* **Best Book Diametrically Opposed:** *The Spirit Level: Why More Equal Societies Almost Always Do Better* by Richard Wilkinson and Kate Pickett. Argues that social inequality, rather than individual incentives, is the primary driver of social problems. ⚖️  
+* **Best Book Diametrically Opposed:** [⚖️⬆️🤝 The Spirit Level: Why Greater Equality Makes Societies Stronger](./the-spirit-level-why-greater-equality-makes-societies-stronger.md) by Richard Wilkinson and Kate Pickett. Argues that social inequality, rather than individual incentives, is the primary driver of social problems. ⚖️  
 * **Best Fiction Book that Incorporates Related Ideas:** [📡🌫️🔮🎲 The Signal and the Noise: Why So Many Predictions Fail - but Some Don't](./the-signal-and-the-noise.md) by Nate Silver. Although non-fiction, the book's clear explanations of statistical forecasting, probability, and prediction incorporate related ideas. 🔮  
 * **Best Book That is More General:** [👉🤏 Nudge: Improving Decisions about Health, Wealth, and Happiness](./nudge.md) by Richard H. Thaler and Cass R. Sunstein. Focuses on how to design choices that "nudge" people towards better decisions. 👍  
 * **Best Book That is More Specific:** Any academic text on econometrics or behavioral economics. 📚  

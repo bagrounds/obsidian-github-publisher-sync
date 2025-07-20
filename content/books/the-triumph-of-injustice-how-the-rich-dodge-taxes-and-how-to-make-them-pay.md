@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org/books/the-triumph-of-injustice-how-the-rich-dodge-taxes-and-how-to-make-them-pay
 share: true
 affiliate link: https://amzn.to/4lAXY6F
-CTA: Unmask inequality.
+CTA: ⚖️ Demand fairness.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 💰➡️ The Triumph of Injustice: How the Rich Dodge Taxes and How to Make Them Pay  
@@ -66,7 +66,7 @@ CTA: Unmask inequality.
 * 🎭 **The Gilded Age: A Tale of Today by Mark Twain and Charles Dudley Warner:** ✍️ A satirical novel from the late 19th century that critiques the corruption and materialism of the era, highlighting issues of wealth concentration and political influence that resonate with the themes of contemporary inequality.  
 * **[🧑🏿⛓️🙈 The New Jim Crow: Mass Incarceration in the Age of Colorblindness](./the-new-jim-crow-mass-incarceration-in-the-age-of-colorblindness.md) by Michelle Alexander:** ⚖️ While focused on the justice system, this book highlights how seemingly neutral policies can perpetuate racial and economic inequality, offering a parallel to how tax policy can disproportionately impact different groups.  
 * **[🗳️🕊️🇺🇸 Democracy in America](./democracy-in-america.md) by Alexis de Tocqueville:** 🏛️ A classic analysis of American democracy in the 19th century, discussing the tension between equality and liberty and the potential pitfalls of democratic societies, providing a historical backdrop for discussions about the influence of concentrated wealth on governance.  
-* 🌱 **The Spirit Level: Why More Equal Societies Almost Always Do Better by Richard Wilkinson and Kate Pickett:** 💯 This book argues that more equal societies have better outcomes across a range of social indicators, from health and education to trust and social mobility, reinforcing the broader societal benefits of addressing inequality.  
+* **[⚖️⬆️🤝 The Spirit Level: Why Greater Equality Makes Societies Stronger](./the-spirit-level-why-greater-equality-makes-societies-stronger.md) by Richard Wilkinson and Kate Pickett:** 💯 This book argues that more equal societies have better outcomes across a range of social indicators, from health and education to trust and social mobility, reinforcing the broader societal benefits of addressing inequality.  
 * 📚 **Capital and Ideology by Thomas Piketty:** 💭 A follow-up to *Capital in the Twenty-First Century*, this book examines the historical and ideological justifications for inequality in different societies, providing a deeper understanding of the narratives that support or oppose progressive taxation and wealth redistribution.  
   
 ## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  

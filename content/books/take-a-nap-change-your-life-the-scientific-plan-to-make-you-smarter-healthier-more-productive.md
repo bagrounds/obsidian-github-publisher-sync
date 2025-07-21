@@ -4,6 +4,7 @@ aliases:
   - "😴🧠📈 Take a Nap! Change Your Life.: The Scientific Plan to Make You Smarter, Healthier, More Productive"
 URL: https://bagrounds.org/books/take-a-nap-change-your-life-the-scientific-plan-to-make-you-smarter-healthier-more-productive
 share: true
+CTA: 😴 Recharge your potential.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 😴🧠📈 Take a Nap! Change Your Life.: The Scientific Plan to Make You Smarter, Healthier, More Productive  

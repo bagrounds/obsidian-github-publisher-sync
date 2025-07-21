@@ -10,8 +10,9 @@ title: 🏡 Home
 📑 Notes, 💭 thoughts, and 🔗 Links.  
 ❔ What do 🫵 _you_ 🤔 think?  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (248)  
-- [2025-07-20](./reflections/2025-07-20.md)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (249)  
+- [2025-07-21](./reflections/2025-07-21.md)  
+- [2025-07-20 | ✨ Motivation | 🎹 Music | 🍉 Melon 📺👶🏼](./reflections/2025-07-20.md)  
 - [2025-07-19](./reflections/2025-07-19.md)  
 - [2025-07-18 | 🧸 Encourage Unstructured Play 📚](./reflections/2025-07-18.md)  
 - [2025-07-17 | 👶🏼 Parenting | 🤥 Propaganda | 🏚️ Poverty](./reflections/2025-07-17.md)  
@@ -20,7 +21,6 @@ title: 🏡 Home
 - [2025-07-14 | 🌄 Sunset | 🧠 Learning | 🚍 Bus](./reflections/2025-07-14.md)  
 - [2025-07-13 | 🌎 Abundance | 🤝🏻 Collusion | 🧬 DNA 📚📄🤖💬📺](./reflections/2025-07-13.md)  
 - [2025-07-12 | 🤖 Agents | 🌊 Tragedy 📺📚📰](./reflections/2025-07-12.md)  
-- [2025-07-11 | 🌟 Clarity 📚📺](./reflections/2025-07-11.md)  
   
   
 ## [📚 Books](./books/index.md) (535)  
@@ -36,7 +36,9 @@ title: 🏡 Home
 - [🧪👶📈 Scientific Secrets for Raising Kids Who Thrive](./books/scientific-secrets-for-raising-kids-who-thrive.md)  
   
   
-## [📺 Videos](./videos/index.md) (221)  
+## [📺 Videos](./videos/index.md) (223)  
+- [✨🎯🔒✅ How to make your dreams basically inevitable](./videos/how-to-make-your-dreams-basically-inevitable.md)  
+- [😴🧪💯🏆 The scientifically proven best night routine ever](./videos/the-scientifically-proven-best-night-routine-ever.md)  
 - [🚫⏳🔓 the secret hack that makes procrastination impossible](./videos/the-secret-hack-that-makes-procrastination-impossible.md)  
 - [🇺🇸🤯😵‍💫❓ How half the US lost part of their minds](./videos/how-half-the-us-lost-part-of-their-minds.md)  
 - [🗳️🔓🤔 Is it easy to steal an election?](./videos/is-it-easy-to-steal-an-election.md)  
@@ -45,8 +47,6 @@ title: 🏡 Home
 - [🎯🪜🏗️✅ How to Build Systems to Actually Achieve Your Goals](./videos/how-to-build-systems-to-actually-achieve-your-goals.md)  
 - [📰🤝🗣️ Building a News Community with Jim Acosta | Explainer](./videos/building-a-news-community-with-jim-acosta-explainer.md)  
 - [🤔⏳👹⬇️ Noam Chomsky || How Much Time Is Left Until the End of Trump ( Must Watch )](./videos/noam-chomsky-how-much-time-is-left-until-the-end-of-trump-must-watch.md)  
-- [😟🔮 Anne Applebaum: «It Is What I Feared Would Happen»](./videos/anne-applebaum-it-is-what-i-feared-would-happen.md)  
-- [🧠📈🥇 15 Books That Will Make You a Top 1% Thinker](./videos/15-books-that-will-make-you-a-top-1-percent-thinker.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (79)  

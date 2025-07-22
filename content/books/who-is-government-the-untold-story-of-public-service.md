@@ -5,6 +5,7 @@ aliases:
 URL: https://bagrounds.org/books/who-is-government-the-untold-story-of-public-service
 share: true
 affiliate link: https://amzn.to/3T5DPJJ
+CTA: Appreciate public servants.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🏛️❓ Who Is Government?: The Untold Story of Public Service  
@@ -36,7 +37,7 @@ affiliate link: https://amzn.to/3T5DPJJ
   
 ### 🏛️ Similar Reads (Focus on Public Service/Government Function)  
   
-* 📘 ***The Fifth Risk*** ✍️ by Michael Lewis: A companion book to *Who Is Government?*, this work specifically examines the critical, often-overlooked functions of federal agencies like the Departments of Energy, Agriculture, and Commerce, and the risks posed by neglecting their expertise.  
+* **[⚠️🥴🕹️🌐 The Fifth Risk](./the-fifth-risk.md)** ✍️ by Michael Lewis: A companion book to *Who Is Government?*, this work specifically examines the critical, often-overlooked functions of federal agencies like the Departments of Energy, Agriculture, and Commerce, and the risks posed by neglecting their expertise.  
 * **[🗳️🕊️🇺🇸 Democracy in America](./democracy-in-america.md)** ✍️ by Alexis de Tocqueville: While historical, Tocqueville's classic offers foundational observations on American democracy, its institutions, and the role of civil society and government in shaping the nation.  
 * 🏢 ***Working*** ✍️ by Robert Caro: Though focusing on the lives of politicians like Robert Moses and Lyndon B. Johnson, Caro's detailed accounts reveal much about the mechanics of power, government, and infrastructure projects, often highlighting the roles of countless individuals within these systems.  
 * 🏗️ ***The Power Broker: Robert Moses and the Fall of New York*** ✍️ by Robert Caro: A deep dive into how one unelected official wielded immense power to shape a major city, illustrating the significant impact individuals within government structures can have.  

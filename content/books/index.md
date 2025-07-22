@@ -7,7 +7,7 @@ URL: https://bagrounds.org/books
 backlinks: false
 ---
 [Home](../index.md)  
-# 📚 Books (535)  
+# 📚 Books (537)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)  
 - [🧑‍🤝‍🧑📈 10 to 25: The Science of Motivating Young People: A Groundbreaking Approach to Leading the Next Generation - And Making Your Own Life Easier](./10-to-25-the-science-of-motivating-young-people-a-groundbreaking-approach-to-leading-the-next-generation-and-making-your-own-life-easier.md)  
@@ -369,6 +369,7 @@ Feedback Control of Dynamic Systems]]
 - [🌞🌬️🌊🌋 Sustainable Energy - Without the Hot Air](./sustainable-energy-without-the-hot-air.md)  
 - [💥🌀➡️⏳⚖️🕰️ ️ Sync: How Order Emerges From Chaos In The Universe, Nature, And Daily Life](./sync.md)  
 - [🖥️🔑 System Design Interview - An Insider's Guide](./system-design-interview-an-insiders-guide.md)  
+- [😴🧠📈 Take a Nap! Change Your Life.: The Scientific Plan to Make You Smarter, Healthier, More Productive](./take-a-nap-change-your-life-the-scientific-plan-to-make-you-smarter-healthier-more-productive.md)  
 - [🧠⬆️💼🏠❤️ Taking Charge of Adult ADHD: Proven Strategies to Succeed at Work, at Home, and in Relationships](./taking-charge-of-adult-adhd.md)  
 - [🗣️👶 Talk to Me, Baby!: How You Can Support Young Children's Language Development](./talk-to-me-baby-how-you-can-support-young-childrens-language-development.md)  
 - [🤖🧑‍🏫 Teaching with AI: A Practical Guide to a New Era of Human Learning](./teaching-with-ai-a-practical-guide-to-a-new-era-of-human-learning.md)  
@@ -468,6 +469,7 @@ Feedback Control of Dynamic Systems]]
 - [🤰👶🔬👩‍⚕️ 🧪 The Science of Mom: A Research-Based Guide to Your Baby's First Year](./the-science-of-mom.md)  
 - [🔬🧠👶📈😊 The Science of Parenting: How Today's Brain Research Can Help You Raise Happy, Emotionally Balanced Children](./the-science-of-parenting-how-todays-brain-research-can-help-you-raise-happy-emotionally-balanced-children.md)  
 - [💪🎯🔬 The Science of Self-Discipline: The Willpower, Mental Toughness, and Self-Control to Resist Temptation and Achieve Your Goals](./the-science-of-self-discipline-the-willpower-mental-toughness-and-self-control-to-resist-temptation-and-achieve-your-goals.md)  
+- [😴🔬 The Science of Sleep: What It Is, How It Works, and Why It Matters](./the-science-of-sleep-what-it-is-how-it-works-and-why-it-matters.md)  
 - [🔬🗣️🎭 The Science of Storytelling: Why Stories Make Us Human and How to Tell Them Better](./the-science-of-storytelling.md)  
 - [🥼🛡️ The Scientific Attitude: Defending Science from Denial, Fraud, and Pseudoscience](./the-scientific-attitude.md)  
 - [🧪👁️ The Scientific Image](./the-scientific-image.md)  

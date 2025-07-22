@@ -10,20 +10,21 @@ title: 🏡 Home
 📑 Notes, 💭 thoughts, and 🔗 Links.  
 ❔ What do 🫵 _you_ 🤔 think?  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (249)  
-- [2025-07-21](./reflections/2025-07-21.md)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (250)  
+- [2025-07-22](./reflections/2025-07-22.md)  
+- [2025-07-21 | 😴 Take a Nap! 📚](./reflections/2025-07-21.md)  
 - [2025-07-20 | ✨ Motivation | 🎹 Music | 🍉 Melon 📺👶🏼](./reflections/2025-07-20.md)  
-- [2025-07-19](./reflections/2025-07-19.md)  
+- [2025-07-19 | 📰 News | 🎙️ Comedy | 🟰 Equity 📺📚📰](./reflections/2025-07-19.md)  
 - [2025-07-18 | 🧸 Encourage Unstructured Play 📚](./reflections/2025-07-18.md)  
 - [2025-07-17 | 👶🏼 Parenting | 🤥 Propaganda | 🏚️ Poverty](./reflections/2025-07-17.md)  
 - [2025-07-16 | 👉 Doing | 🏃🏼‍♀️ Running | 🦜 Language 📚📄](./reflections/2025-07-16.md)  
 - [2025-07-15 | 🧘🏼‍♀️ Mindful | 🎯 Purposeful | 🦮 Guided 📚📺](./reflections/2025-07-15.md)  
 - [2025-07-14 | 🌄 Sunset | 🧠 Learning | 🚍 Bus](./reflections/2025-07-14.md)  
 - [2025-07-13 | 🌎 Abundance | 🤝🏻 Collusion | 🧬 DNA 📚📄🤖💬📺](./reflections/2025-07-13.md)  
-- [2025-07-12 | 🤖 Agents | 🌊 Tragedy 📺📚📰](./reflections/2025-07-12.md)  
   
   
-## [📚 Books](./books/index.md) (535)  
+## [📚 Books](./books/index.md) (536)  
+- [😴🧠📈 Take a Nap! Change Your Life.: The Scientific Plan to Make You Smarter, Healthier, More Productive](./books/take-a-nap-change-your-life-the-scientific-plan-to-make-you-smarter-healthier-more-productive.md)  
 - [💰➡️ The Triumph of Injustice: How the Rich Dodge Taxes and How to Make Them Pay](./books/the-triumph-of-injustice-how-the-rich-dodge-taxes-and-how-to-make-them-pay.md)  
 - [🤓🕵️‍♂️❓ Freakonomics: A Rogue Economist Explores the Hidden Side of Everything](./books/freakonomics.md)  
 - [⚖️⬆️🤝 The Spirit Level: Why Greater Equality Makes Societies Stronger](./books/the-spirit-level-why-greater-equality-makes-societies-stronger.md)  
@@ -33,20 +34,19 @@ title: 🏡 Home
 - [🙈📊🔢 Naked Statistics: Stripping the Dread from the Data](./books/naked-statistics.md)  
 - [📰⚔️🧠 Information Wars: How We Lost the Global Battle Against Disinformation and What We Can Do About It](./books/information-wars.md)  
 - [📊🤥 How to Lie with Statistics](./books/how-to-lie-with-statistics.md)  
-- [🧪👶📈 Scientific Secrets for Raising Kids Who Thrive](./books/scientific-secrets-for-raising-kids-who-thrive.md)  
   
   
-## [📺 Videos](./videos/index.md) (223)  
+## [📺 Videos](./videos/index.md) (229)  
+- [🚀⏱️💥🏆 How to do more in 90 days than most do in their entire lives](./videos/how-to-do-more-in-90-days-than-most-do-in-their-entire-lives.md)  
+- [⚙️📈🎓🏆 This simple productivity system got me into Harvard and Yale](./videos/this-simple-productivity-system-got-me-into-harvard-and-yale.md)  
+- [📢👨⚖️🗣️ Tamara Keith and Amy Walter on the public response to Trump's handling of the Epstein case](./videos/tamara-keith-and-amy-walter-on-the-public-response-to-trumps-handling-of-the-epstein-case.md)  
+- [☀️📚😎👍 Top books to read this summer, according to Ann Patchett and Maureen Corrigan](./videos/top-books-to-read-this-summer-according-to-ann-patchett-and-maureen-corrigan.md)  
+- [➡️⚖️💪 Our work continues, without fear or favor](./videos/our-work-continues-without-fear-or-favor.md)  
+- [🧠💰⚠️ The price you pay for being smart It's Been a Minute](./videos/the-price-you-pay-for-being-smart-its-been-a-minute.md)  
 - [✨🎯🔒✅ How to make your dreams basically inevitable](./videos/how-to-make-your-dreams-basically-inevitable.md)  
 - [😴🧪💯🏆 The scientifically proven best night routine ever](./videos/the-scientifically-proven-best-night-routine-ever.md)  
 - [🚫⏳🔓 the secret hack that makes procrastination impossible](./videos/the-secret-hack-that-makes-procrastination-impossible.md)  
 - [🇺🇸🤯😵‍💫❓ How half the US lost part of their minds](./videos/how-half-the-us-lost-part-of-their-minds.md)  
-- [🗳️🔓🤔 Is it easy to steal an election?](./videos/is-it-easy-to-steal-an-election.md)  
-- [📺💸❓ CBS says Colbert cancelation was financial decision, but timing raises questions](./videos/cbs-says-colbert-cancelation-was-financial-decision-but-timing-raises-questions.md)  
-- [🤔🧐📚💯🏆 Critical Thinking Book Recommendations – My Top 5 Must Reads](./videos/critical-thinking-book-recommendations-my-top-5-must-reads.md)  
-- [🎯🪜🏗️✅ How to Build Systems to Actually Achieve Your Goals](./videos/how-to-build-systems-to-actually-achieve-your-goals.md)  
-- [📰🤝🗣️ Building a News Community with Jim Acosta | Explainer](./videos/building-a-news-community-with-jim-acosta-explainer.md)  
-- [🤔⏳👹⬇️ Noam Chomsky || How Much Time Is Left Until the End of Trump ( Must Watch )](./videos/noam-chomsky-how-much-time-is-left-until-the-end-of-trump-must-watch.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (79)  

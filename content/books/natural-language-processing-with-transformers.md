@@ -57,7 +57,7 @@ affiliate link: https://amzn.to/4eLqHU9
   
 * 📚 **Transformers for Natural Language Processing: Build innovative deep neural network architectures for NLP with Python, PyTorch, TensorFlow, BERT, RoBERTa, and more** by Denis Rothman. This book also focuses on transformers and covers various models and applications using different frameworks.  
 * 📚 **Hands-On Generative AI with Transformers and Diffusion Models** by Omar Sanseviero, Pedro Cuenca, Apolinário Passos, Jonathan Whitaker. While broader than just NLP, it covers generative AI with a strong focus on transformers.  
-* 📚 **Hands-On Large Language Models** by Jay Alammar, Maarten Grootendorst. This book delves into Large Language Models (LLMs), which are predominantly based on transformer architectures.  
+* **[🤖🗣️ Hands-On Large Language Models: Language Understanding and Generation](./hands-on-large-language-models-language-understanding-and-generation.md)** by Jay Alammar, Maarten Grootendorst. This book delves into Large Language Models (LLMs), which are predominantly based on transformer architectures.  
 * 📚 **Building Language Applications with Hugging Face** (This is the same book as the report, just a slightly different title/subtitle sometimes used) by Lewis Tunstall, Leandro von Werra, Thomas Wolf.  
   
 ### ⚖️ Contrasting Books (Different NLP Approaches or Focus)  

@@ -62,7 +62,7 @@ CTA: Explore LLMs.
 * ⭐ ***Decoding Large Language Models*** by Irena Cronin: Provides a thorough journey through LLM architecture, training, and application, balancing theoretical foundations with practical examples and covering advanced topics like fine-tuning and ethical considerations.  
 * 🚀 ***Quick Start Guide to Large Language Models: Strategies and Best Practices for Using ChatGPT and Other LLMs*** by Sinan Ozdemir: A practical guide exploring the function, capabilities, and limitations of prominent LLMs, focusing on chat systems and leveraging frameworks like LangChain for application implementation.  
 * 🧠 ***Understanding Large Language Models: Learning Their Underlying Concepts and Technologies***: Explores the underlying concepts and technologies of LLMs.  
-* 💻 ***Hands-On Large Language Models*** by Jay Alammar: Offers a practical resource for leveraging pretrained LLMs for various applications like text classification and retrieval-augmented generation (RAG), using intuitive diagrams and example-based walkthroughs.  
+* **[🤖🗣️ Hands-On Large Language Models: Language Understanding and Generation](./hands-on-large-language-models-language-understanding-and-generation.md)** by Jay Alammar: Offers a practical resource for leveraging pretrained LLMs for various applications like text classification and retrieval-augmented generation (RAG), using intuitive diagrams and example-based walkthroughs.  
 * 🎓 ***Foundations of Large Language Models*** by Tong Xiao and Jingbo Zhu: An academically grounded book focusing on the theoretical underpinnings like pretraining objectives, RLHF, and instruction tuning.  
   
 ### ⚖️ Contrasting Books (Different Perspectives or Related Fields)  

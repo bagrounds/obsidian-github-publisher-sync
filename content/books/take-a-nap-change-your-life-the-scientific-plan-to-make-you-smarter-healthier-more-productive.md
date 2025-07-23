@@ -35,7 +35,7 @@ CTA: 😴 Recharge your potential.
 * **[😴💭 Why We Sleep: Unlocking the Power of Sleep and Dreams](./why-we-sleep-unlocking-the-power-of-sleep-and-dreams.md) by Matthew Walker, PhD:** 🧠 A comprehensive deep dive into the science of sleep and dreams, this 📰 New York Times bestseller explains the vital role sleep plays in every aspect of our physical and mental health.  
 * 📖 **The Sleep Revolution: Transforming Your Life, One Night at a Time by Arianna Huffington:** 👩‍💼 The co-founder of The Huffington Post makes a compelling case for the importance of sleep, drawing on scientific research and personal anecdotes to show how sleep deprivation negatively impacts our lives.  
 * 📖 **Sleep Smarter: 21 Essential Strategies to Sleep Your Way to a Better Body, Better Health, and Bigger Success by Shawn Stevenson:** ✅ This book provides actionable tips for improving sleep quality, from optimizing your sleep environment to understanding the connection between diet and rest.  
-* 📖 **The Science of Sleep: What It Is, How It Works, and Why It Matters by Wallace B. Mendelson:** 🧑‍🔬 This book offers an accessible scientific account of sleep science, helping readers understand their personal relationship with sleep and develop better sleep habits.  
+* **[😴🔬 The Science of Sleep: What It Is, How It Works, and Why It Matters](./the-science-of-sleep-what-it-is-how-it-works-and-why-it-matters.md) by Wallace B. Mendelson:** 🧑‍🔬 This book offers an accessible scientific account of sleep science, helping readers understand their personal relationship with sleep and develop better sleep habits.  
   
 ### 📚 Contrasting and Creatively Related Book Recommendations  
   

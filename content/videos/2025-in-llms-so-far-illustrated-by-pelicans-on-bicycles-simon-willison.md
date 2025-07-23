@@ -50,7 +50,7 @@ youtube: https://youtu.be/YpY83-kA7Bo
 ## 📚 Book Recommendations  
 ### 🤖 Understanding Large Language Models (LLMs) & Transformers  
 * 🧑‍💻 ***Build a Large Language Model (From Scratch)*** by Sebastian Raschka: 📚 This book is excellent for those who want a hands-on, practical understanding of how to construct LLMs, including planning, coding, training, and fine-tuning. It's highly praised for its clarity and practical examples.  
-* 🧑‍💻 ***Hands-on Large Language Models*** by Jay Alammar and Maarten Grootendorst: 📖 A practical guide for working with LLMs.  
+* **[🤖🗣️ Hands-On Large Language Models: Language Understanding and Generation](../books/hands-on-large-language-models-language-understanding-and-generation.md)** by Jay Alammar and Maarten Grootendorst: 📖 A practical guide for working with LLMs.  
 * **[🗣️💻 Natural Language Processing with Transformers](../books/natural-language-processing-with-transformers.md): Building Language Applications with Hugging Face** by Lewis Tunstall, Leandro von Werra, Thomas Wolf: 📦 This book focuses on the widely used Hugging Face library and provides practical guidance on building NLP applications with transformer models.  
 * 🗣️ ***Speech and Language Processing*** by Daniel Jurafsky and James H. Martin: 🎓 Often considered a foundational textbook in NLP, providing a comprehensive overview of language processing, computational linguistics, and speech recognition. 📚 While extensive, it's a valuable resource for in-depth understanding.  
   

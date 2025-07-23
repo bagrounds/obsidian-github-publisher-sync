@@ -5,6 +5,7 @@ aliases:
 URL: https://bagrounds.org/books/getting-things-done-the-art-of-stress-free-productivity
 share: true
 affiliate link: https://amzn.to/3FiAaFm
+CTA: ✅ Conquer chaos.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ✅😌 Getting Things Done: The Art of Stress-Free Productivity  

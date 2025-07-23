@@ -3,7 +3,7 @@ share: true
 aliases:
   - 🤖🧠👁️ Ilya Sutskever, OpenAI
 title: 🤖🧠👁️ Ilya Sutskever, OpenAI
-URL: https://bagrounds.org/videos/
+URL: https://bagrounds.org/videos/ilya-sutskever-openai
 Author: 
 Platform: 
 Channel: UC Berkeley EECS
@@ -18,8 +18,8 @@ youtube: https://www.youtube.com/watch?v=RvEwFvl-TrY
 🤖 **Why Deep Learning Works:** 🧠 Deep learning's effectiveness stems from its ability to find the "best short program" or "small circuit" that explains given data \[[03:12](http://www.youtube.com/watch?v=RvEwFvl-TrY&t=192)\]. 💡 While finding the absolute best short program is computationally intractable, finding the best small circuit is solvable with backpropagation \[[04:20](http://www.youtube.com/watch?v=RvEwFvl-TrY&t=260)\]. ❓ The success of backpropagation in this regard is a "fortunate mystery" \[[05:46](http://www.youtube.com/watch?v=RvEwFvl-TrY&t=346)\].  
   
 🎮 **Reinforcement Learning (RL):** 🤖 RL is presented as a framework for agents to learn by interacting with an environment and receiving rewards \[[07:35](http://www.youtube.com/watch?v=RvEwFvl-TrY&t=455)\]. 🧠 Neural networks are used to represent policies in RL \[[09:22](http://www.youtube.com/watch?v=RvEwFvl-TrY&t=562)\]. 📈 Two classes of RL algorithms include:  
-    * 🎲 **Policy Gradients**: Involves adding randomness to actions and increasing the likelihood of actions that lead to better outcomes \[[10:11](http://www.youtube.com/watch?v=RvEwFvl-TrY&t=611)\].  
-    * 🔄 **Q-learning**: A less stable but more sample-efficient off-policy algorithm that can learn from actions taken by anyone, not just the agent itself \[[11:43](http://www.youtube.com/watch?v=RvEwFvl-TrY&t=703)\].  
+* 🎲 **Policy Gradients**: Involves adding randomness to actions and increasing the likelihood of actions that lead to better outcomes \[[10:11](http://www.youtube.com/watch?v=RvEwFvl-TrY&t=611)\].  
+* 🔄 **Q-learning**: A less stable but more sample-efficient off-policy algorithm that can learn from actions taken by anyone, not just the agent itself \[[11:43](http://www.youtube.com/watch?v=RvEwFvl-TrY&t=703)\].  
   
 🧠 **Meta-Learning:** 📚 This concept is described as "learning to learn," similar to biological evolution \[[14:35](http://www.youtube.com/watch?v=RvEwFvl-TrY&t=875)\]. 🎯 The dominant approach involves training a system on many tasks rather than just one, enabling it to quickly solve new tasks \[[14:54](http://www.youtube.com/watch?v=RvEwFvl-TrY&t=894)\]. 🏆 Examples of meta-learning success include superhuman performance in character recognition \[[17:25](http://www.youtube.com/watch?v=RvEwFvl-TrY&t=1045)\] and learning architectures that generalize well across different image datasets \[[18:13](http://www.youtube.com/watch?v=RvEwFvl-TrY&t=1093)\].  
   

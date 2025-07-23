@@ -4,7 +4,7 @@ aliases:
   - "🤖⚙️🔁 Designing Machine Learning Systems: An Iterative Process for Production-Ready Applications"
 URL: https://bagrounds.org/books/designing-machine-learning-systems-an-iterative-process-for-production-ready-applications
 share: true
-CTA: Engineer intelligence.
+CTA: 🚀 Deploy intelligent applications.
 affiliate link: https://amzn.to/4lpZ59z
 ---
 [Home](../index.md) > [Books](./index.md)  

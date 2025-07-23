@@ -7,6 +7,7 @@ URL: https://bagrounds.org/books/reinforcement-learning-an-introduction
 Author: 
 tags: 
 affiliate link: https://amzn.to/4krIXUx
+CTA: 🤖 Master adaptation.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🤖➕🧠➡️ Reinforcement Learning: An Introduction  

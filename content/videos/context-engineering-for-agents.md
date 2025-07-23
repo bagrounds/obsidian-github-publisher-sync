@@ -48,7 +48,7 @@ This video discusses ⚙️ context engineering for agents \[[00:00](http://www.
 🦜 **For Large Language Models (LLMs) and their fundamentals:**  
   
 * 🏗️ **"Build a Large Language Model (From Scratch)" by Sebastian Raschka:** 🧑‍💻 This book is ideal for those who want a deep, technical understanding of how LLMs are built from the ground up.  
-* 👨‍🏫 **"Hands-On Large Language Models" by Jay Alammar:** ✍️ Known for his clear explanations and visualizations, Jay Alammar's books are great for practical understanding and application.  
+* **[🤖🗣️ Hands-On Large Language Models: Language Understanding and Generation](../books/hands-on-large-language-models-language-understanding-and-generation.md) by Jay Alammar:** ✍️ Known for his clear explanations and visualizations, Jay Alammar's books are great for practical understanding and application.  
 * **[🗣️💻 Natural Language Processing with Transformers](../books/natural-language-processing-with-transformers.md) by Lewis Tunstall, Leandro von Werra, and Thomas Wolf:** 🧠 If you're interested in the core architecture behind many modern LLMs, this book provides an excellent deep dive into transformers using the Hugging Face library.  
   
 ✨ **For Prompt Engineering:**  

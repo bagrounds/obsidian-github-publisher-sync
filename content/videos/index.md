@@ -7,7 +7,7 @@ URL: https://bagrounds.org/videos
 backlinks: false
 ---
 [Home](../index.md)  
-# 📺 Videos (229)  
+# 📺 Videos (231)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
 - [❓💪🔬 12 Questions About Creatine with Stephen Cornish, PhD](./12-questions-about-creatine-w-stephen-cornish-phd.md)  
@@ -58,6 +58,7 @@ backlinks: false
 - [Dr. Matt Walker: Using Sleep to Improve Learning, Creativity & Memory | Huberman Lab Guest Series](./dr-matt-walker-using-sleep-to-improve-learning-creativity-and-memory-huberman-lab-guest-series.md)  
 - [Eat your food in the RIGHT ORDER: 75% healthier with this small trick | Episode 6 of 18](./eat-your-food-in-the-right-order-75-healthier-with-this-small-trick-episode-6-of-18.md)  
 - [Elon Musk's Family History in South Africa Reveals Ties to Apartheid & Neo-Nazi Movements](./elon-musks-family-history-in-south-africa-reveals-ties-to-apartheid-neo-nazi-movements.md)  
+- [🐘🔴👴🏿💥 Epstein Is A Real Problem For The GOP | Trump's Creepy Past | Blaming Obama](./epstein-is-a-real-problem-for-the-gop-trumps-creepy-past-blaming-obama.md)  
 - [Ethics expert breaks down Trump administration’s conflicts of interest](./ethics-expert-breaks-down-trump-administrations-conflicts-of-interest.md)  
 - [Experts are STUNNED! Meta's NEW LLM Architecture is a GAME-CHANGER!](./experts-are-stunned-metas-new-llm-architecture-is-a-game-changer.md)  
 - [Fascist tendencies in Trump: A comparison to Hitler's rise | DW News](./fascist-tendencies-in-trump-a-comparison-to-hitler-s-rise-dw-news.md)  
@@ -91,6 +92,7 @@ backlinks: false
 - [How Trump's rhetoric compares to historic fascist language](./how-trumps-rhetoric-compares-to-historic-fascist-language.md)  
 - [How Trump's tariffs and trade war are impacting U.S. and global economies](./how-trumps-tariffs-and-trade-war-are-impacting-us-and-global-economies.md)  
 - [I Built an AI That Does My Work For Me](./i-built-an-ai-that-does-my-work-for-me.md)  
+- [🤖🧠👁️ Ilya Sutskever, OpenAI](./ilya-sutskever-openai.md)  
 - [Immigration judge rules Trump administration can deport Columbia protestor Mahmoud Khalil](./immigration-judge-rules-trump-administration-can-deport-columbia-protestor-mahmoud-khalil.md)  
 - [🧠💊🎯 Improve Focus with Behavioral Tools & Medication for ADHD | Dr. John Kruse](./improve-focus-with-behavioral-tools-medication-for-adhd-dr-john-kruse.md)  
 - [Infant Cosleeping with James McKenna, PhD](./infant-cosleeping-with-james-mckenna-phd.md)  

@@ -7,6 +7,7 @@ URL: https://bagrounds.org/books/thinking-in-systems
 Author: 
 tags: 
 affiliate link: https://amzn.to/4jxdezW
+CTA: 🌐 Understand interactions.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🌐🔗🧠📖 Thinking in Systems: A Primer  

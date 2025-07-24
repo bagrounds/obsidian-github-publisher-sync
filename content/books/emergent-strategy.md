@@ -7,6 +7,7 @@ URL: https://bagrounds.org/books/emergent-strategy-shaping-change-changing-world
 Author: 
 tags: 
 affiliate link: https://amzn.to/456a6HQ
+CTA: 🌱 Cultivate resilience.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🦋♟️ Emergent Strategy: Shaping Change, Changing Worlds  

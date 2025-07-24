@@ -7,6 +7,7 @@ URL: https://bagrounds.org/books/the-fifth-discipline
 Author: 
 tags: 
 affiliate link: https://amzn.to/43RAzqx
+CTA: 🌱 Cultivate collective intelligence.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🎨🔄🧠🏢 The Fifth Discipline: The Art and Practice of the Learning Organization  

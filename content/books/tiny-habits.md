@@ -5,6 +5,7 @@ Author: "[[BJ Fog]]"
 share: true
 title: "🤏♻️ Tiny Habits: The Small Changes That Change Everything"
 affiliate link: https://amzn.to/4kPIknK
+CTA: 🌱 Cultivate progress.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🤏♻️ Tiny Habits: The Small Changes That Change Everything  

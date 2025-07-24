@@ -7,6 +7,7 @@ URL: https://bagrounds.org/books/the-elements-of-style
 Author: 
 tags: 
 affiliate link: https://amzn.to/4dNkTcj
+CTA: ✏️ Master clarity.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🦢 The Elements of Style  

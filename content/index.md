@@ -10,9 +10,10 @@ title: 🏡 Home
 📑 Notes, 💭 thoughts, and 🔗 Links.  
 ❔ What do 🫵 _you_ 🤔 think?  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (250)  
-- [2025-07-22](./reflections/2025-07-22.md)  
-- [2025-07-21 | 😴 Take a Nap! 📚](./reflections/2025-07-21.md)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (251)  
+- [2025-07-23 | 🤖 AI | 👶🏼 NI 📺📄🥇👶🏼](./reflections/2025-07-23.md)  
+- [2025-07-22 | 🚀 More | 🤿 Deep | 🫛 Peas 📺📚👶🏼](./reflections/2025-07-22.md)  
+- [2025-07-21 | 😴 Nap! | 🧠 Smart | 🥦 Broccoli 📚📺📰👶🏼](./reflections/2025-07-21.md)  
 - [2025-07-20 | ✨ Motivation | 🎹 Music | 🍉 Melon 📺👶🏼](./reflections/2025-07-20.md)  
 - [2025-07-19 | 📰 News | 🎙️ Comedy | 🟰 Equity 📺📚📰](./reflections/2025-07-19.md)  
 - [2025-07-18 | 🧸 Encourage Unstructured Play 📚](./reflections/2025-07-18.md)  
@@ -20,33 +21,32 @@ title: 🏡 Home
 - [2025-07-16 | 👉 Doing | 🏃🏼‍♀️ Running | 🦜 Language 📚📄](./reflections/2025-07-16.md)  
 - [2025-07-15 | 🧘🏼‍♀️ Mindful | 🎯 Purposeful | 🦮 Guided 📚📺](./reflections/2025-07-15.md)  
 - [2025-07-14 | 🌄 Sunset | 🧠 Learning | 🚍 Bus](./reflections/2025-07-14.md)  
-- [2025-07-13 | 🌎 Abundance | 🤝🏻 Collusion | 🧬 DNA 📚📄🤖💬📺](./reflections/2025-07-13.md)  
   
   
-## [📚 Books](./books/index.md) (536)  
-- [😴🧠📈 Take a Nap! Change Your Life.: The Scientific Plan to Make You Smarter, Healthier, More Productive](./books/take-a-nap-change-your-life-the-scientific-plan-to-make-you-smarter-healthier-more-productive.md)  
-- [💰➡️ The Triumph of Injustice: How the Rich Dodge Taxes and How to Make Them Pay](./books/the-triumph-of-injustice-how-the-rich-dodge-taxes-and-how-to-make-them-pay.md)  
-- [🤓🕵️‍♂️❓ Freakonomics: A Rogue Economist Explores the Hidden Side of Everything](./books/freakonomics.md)  
-- [⚖️⬆️🤝 The Spirit Level: Why Greater Equality Makes Societies Stronger](./books/the-spirit-level-why-greater-equality-makes-societies-stronger.md)  
-- [📺🌃⚔️ The Late Shift: Letterman, Leno, and the Network Battle for the Night](./books/the-late-shift-letterman-leno-and-the-network-battle-for-the-night.md)  
-- [ 🚫❌🧮💭 How Not to Be Wrong: The Power of Mathematical Thinking](./books/how-not-to-be-wrong.md)  
-- [📊🫠 Statistics for Dummies](./books/statistics-for-dummies.md)  
-- [🙈📊🔢 Naked Statistics: Stripping the Dread from the Data](./books/naked-statistics.md)  
-- [📰⚔️🧠 Information Wars: How We Lost the Global Battle Against Disinformation and What We Can Do About It](./books/information-wars.md)  
-- [📊🤥 How to Lie with Statistics](./books/how-to-lie-with-statistics.md)  
+## [📚 Books](./books/index.md) (540)  
+- [🧠💻🤖 Deep Learning](./books/deep-learning.md)  
+- [🤖⚙️🔁 Designing Machine Learning Systems: An Iterative Process for Production-Ready Applications](./books/designing-machine-learning-systems-an-iterative-process-for-production-ready-applications.md)  
+- [🤖➕🧠➡️ Reinforcement Learning: An Introduction](./books/reinforcement-learning-an-introduction.md)  
+- [🤔💪 Attention and effort](./books/attention.md)  
+- [🤿💼 Deep Work: Rules for Focused Success in a Distracted World](./books/deep-work.md)  
+- [👤📈🎯🌟🔑🤝🏆 The 7 Habits of Highly Effective People](./books/the-7-habits-of-highly-effective-people.md)  
+- [✅😌 Getting Things Done: The Art of Stress-Free Productivity](./books/getting-things-done-the-art-of-stress-free-productivity.md)  
+- [🤖🏗️ AI Engineering: Building Applications with Foundation Models](./books/ai-engineering-building-applications-with-foundation-models.md)  
+- [🤖🦜 Large Language Models: Concepts, Techniques and Applications](./books/large-language-models-concepts-techniques-and-applications.md)  
+- [🗣️💻 Natural Language Processing with Transformers](./books/natural-language-processing-with-transformers.md)  
   
   
-## [📺 Videos](./videos/index.md) (229)  
+## [📺 Videos](./videos/index.md) (231)  
+- [🤖🧠👁️ Ilya Sutskever, OpenAI](./videos/ilya-sutskever-openai.md)  
+- [🐘🔴👴🏿💥 Epstein Is A Real Problem For The GOP | Trump's Creepy Past | Blaming Obama](./videos/epstein-is-a-real-problem-for-the-gop-trumps-creepy-past-blaming-obama.md)  
+- [💻🔄💻 Andrej Karpathy: Software Is Changing (Again)](./videos/andrej-karpathy-software-is-changing-again.md)  
+- [🖼️🤔🛠️🤖 Context Engineering for Agents](./videos/context-engineering-for-agents.md)  
+- [🤖📅🦢🚲 2025 in LLMs so far, illustrated by Pelicans on Bicycles - Simon Willison](./videos/2025-in-llms-so-far-illustrated-by-pelicans-on-bicycles-simon-willison.md)  
 - [🚀⏱️💥🏆 How to do more in 90 days than most do in their entire lives](./videos/how-to-do-more-in-90-days-than-most-do-in-their-entire-lives.md)  
 - [⚙️📈🎓🏆 This simple productivity system got me into Harvard and Yale](./videos/this-simple-productivity-system-got-me-into-harvard-and-yale.md)  
 - [📢👨⚖️🗣️ Tamara Keith and Amy Walter on the public response to Trump's handling of the Epstein case](./videos/tamara-keith-and-amy-walter-on-the-public-response-to-trumps-handling-of-the-epstein-case.md)  
 - [☀️📚😎👍 Top books to read this summer, according to Ann Patchett and Maureen Corrigan](./videos/top-books-to-read-this-summer-according-to-ann-patchett-and-maureen-corrigan.md)  
 - [➡️⚖️💪 Our work continues, without fear or favor](./videos/our-work-continues-without-fear-or-favor.md)  
-- [🧠💰⚠️ The price you pay for being smart It's Been a Minute](./videos/the-price-you-pay-for-being-smart-its-been-a-minute.md)  
-- [✨🎯🔒✅ How to make your dreams basically inevitable](./videos/how-to-make-your-dreams-basically-inevitable.md)  
-- [😴🧪💯🏆 The scientifically proven best night routine ever](./videos/the-scientifically-proven-best-night-routine-ever.md)  
-- [🚫⏳🔓 the secret hack that makes procrastination impossible](./videos/the-secret-hack-that-makes-procrastination-impossible.md)  
-- [🇺🇸🤯😵‍💫❓ How half the US lost part of their minds](./videos/how-half-the-us-lost-part-of-their-minds.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (79)  
@@ -65,12 +65,12 @@ title: 🏡 Home
 - [🧭 Managing 🕸️ Complexity 🧠](./bot-chats/managing-complexity.md)  
   
   
-## [📄  Articles](./articles/index.md) (32)  
+## [📄  Articles](./articles/index.md) (34)  
+- [📚🧩🤖 Guide Comprehensive RAG Implementation Guide](./articles/comprehensive-rag-implementation-guide.md)  
+- [📈❓📏🤖 On the Difficulty of Extrapolation with NN Scaling](./articles/on-the-difficulty-of-extrapolation-with-nn-scaling.md)  
 - [👀👶🏼🏃🏼‍♀️🛣️ What to Look for in a Jogging Stroller](./articles/what-to-look-for-in-a-jogging-stroller.md)  
 - [🧑‍⚖️🧬💰🤝 Judge OKs sale of 23andMe - and its trove of DNA data - to a nonprofit led by its founder](./articles/judge-oks-sale-of-23andme-and-its-trove-of-dna-data-to-a-nonprofit-led-by-its-founder.md)  
 - [👀 Attention Is All You Need](./articles/attention-is-all-you-need.md)  
-- [🪵 The Log: What every software engineer should know about real-time data's unifying abstraction](./articles/the-log-what-every-software%20engineer-should-know-about-real-time-datas-unifying-abstraction.md)  
-- [💻💰🤝👹🇺🇸 Tech moguls Altman, Bezos and Zuckerberg donate to Trump's inauguration fund](./articles/tech-moguls-altman-bezos-and-zuckerberg-donate-to-trumps-inauguration-fund.md)  
   
   
 ## [💾 Software](./software/index.md) (29)  

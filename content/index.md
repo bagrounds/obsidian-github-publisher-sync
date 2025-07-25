@@ -10,7 +10,9 @@ title: 🏡 Home
 📑 Notes, 💭 thoughts, and 🔗 Links.  
 ❔ What do 🫵 _you_ 🤔 think?  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (251)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (253)  
+- [2025-07-25](./reflections/2025-07-25.md)  
+- [2025-07-24 | 🤖🧙‍♂️ Synthetic Wisdom 🤖💬](./reflections/2025-07-24.md)  
 - [2025-07-23 | 🤖 AI | 👶🏼 NI 📺📄🥇👶🏼](./reflections/2025-07-23.md)  
 - [2025-07-22 | 🚀 More | 🤿 Deep | 🫛 Peas 📺📚👶🏼](./reflections/2025-07-22.md)  
 - [2025-07-21 | 😴 Nap! | 🧠 Smart | 🥦 Broccoli 📚📺📰👶🏼](./reflections/2025-07-21.md)  
@@ -19,21 +21,19 @@ title: 🏡 Home
 - [2025-07-18 | 🧸 Encourage Unstructured Play 📚](./reflections/2025-07-18.md)  
 - [2025-07-17 | 👶🏼 Parenting | 🤥 Propaganda | 🏚️ Poverty](./reflections/2025-07-17.md)  
 - [2025-07-16 | 👉 Doing | 🏃🏼‍♀️ Running | 🦜 Language 📚📄](./reflections/2025-07-16.md)  
-- [2025-07-15 | 🧘🏼‍♀️ Mindful | 🎯 Purposeful | 🦮 Guided 📚📺](./reflections/2025-07-15.md)  
-- [2025-07-14 | 🌄 Sunset | 🧠 Learning | 🚍 Bus](./reflections/2025-07-14.md)  
   
   
-## [📚 Books](./books/index.md) (540)  
+## [📚 Books](./books/index.md) (541)  
+- [🧼💾 Clean Code: A Handbook of Agile Software Craftsmanship](./books/clean-code.md)  
+- [🏎️💾 Accelerate: The Science of Lean Software and DevOps: Building and Scaling High Performing Technology Organizations](./books/accelerate.md)  
+- [⚙️🚀🛡️ The DevOps Handbook: How to Create World-Class Agility, Reliability, & Security in Technology Organizations](./books/the-devops-handbook.md)  
+- [🧑‍🤝‍🧑⚙️➡️ Team Topologies: Organizing Business and Technology Teams for Fast Flow](./books/team-topologies-organizing-business-and-technology-teams-for-fast-flow.md)  
+- [🎨🔄🧠🏢 The Fifth Discipline: The Art and Practice of the Learning Organization](./books/the-fifth-discipline.md)  
+- [🦋♟️ Emergent Strategy: Shaping Change, Changing Worlds](./books/emergent-strategy.md)  
+- [🦢 The Elements of Style](./books/the-elements-of-style.md)  
+- [🌐🔗🧠📖 Thinking in Systems: A Primer](./books/thinking-in-systems.md)  
+- [🤏♻️ Tiny Habits: The Small Changes That Change Everything](./books/tiny-habits.md)  
 - [🧠💻🤖 Deep Learning](./books/deep-learning.md)  
-- [🤖⚙️🔁 Designing Machine Learning Systems: An Iterative Process for Production-Ready Applications](./books/designing-machine-learning-systems-an-iterative-process-for-production-ready-applications.md)  
-- [🤖➕🧠➡️ Reinforcement Learning: An Introduction](./books/reinforcement-learning-an-introduction.md)  
-- [🤔💪 Attention and effort](./books/attention.md)  
-- [🤿💼 Deep Work: Rules for Focused Success in a Distracted World](./books/deep-work.md)  
-- [👤📈🎯🌟🔑🤝🏆 The 7 Habits of Highly Effective People](./books/the-7-habits-of-highly-effective-people.md)  
-- [✅😌 Getting Things Done: The Art of Stress-Free Productivity](./books/getting-things-done-the-art-of-stress-free-productivity.md)  
-- [🤖🏗️ AI Engineering: Building Applications with Foundation Models](./books/ai-engineering-building-applications-with-foundation-models.md)  
-- [🤖🦜 Large Language Models: Concepts, Techniques and Applications](./books/large-language-models-concepts-techniques-and-applications.md)  
-- [🗣️💻 Natural Language Processing with Transformers](./books/natural-language-processing-with-transformers.md)  
   
   
 ## [📺 Videos](./videos/index.md) (231)  
@@ -57,12 +57,12 @@ title: 🏡 Home
 - [💾🧱⚡️ Static Site Generation](./topics/static-site-generation.md)  
   
   
-## [🤖💬 Bot Chats](./bot-chats/index.md) (34)  
+## [🤖💬 Bot Chats](./bot-chats/index.md) (37)  
+- [🧠🤝 System 2 Rapport Building](./bot-chats/system-2-rapport-building.md)  
+- [🧩🏢🤖 Domain Driven AI Product Development](./bot-chats/domain-driven-ai-product-development.md)  
+- [🎯🐜🌍 Purpose Driven Tiny Habits for Systemic Change](./bot-chats/purpose-driven-tiny-habits-for-systemic-change.md)  
 - [🧘📚🔍 Mindfulness Book Research](./bot-chats/mindfulness-book-research.md)  
 - [🇷🇺👹🤝👹🇺🇸 Trump and Putin](./bot-chats/trump-and-putin.md)  
-- [🪵❓ How Much Wood](./bot-chats/how-much-wood.md)  
-- [🤖📱🧠 Android Local LLMs](./bot-chats/android-local-llms.md)  
-- [🧭 Managing 🕸️ Complexity 🧠](./bot-chats/managing-complexity.md)  
   
   
 ## [📄  Articles](./articles/index.md) (34)  

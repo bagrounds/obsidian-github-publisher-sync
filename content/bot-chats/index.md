@@ -7,7 +7,7 @@ URL: https://bagrounds.org/bot-chats
 backlinks: false
 ---
 [Home](../index.md)  
-# 🤖💬 Bot Chats (34)  
+# 🤖💬 Bot Chats (37)  
 - [🤖⚙️📈💡 AI Engineering Assistant Technology Recommendations](./ai-engineering-assistant-technology-recommendations.md)  
 - [🌸🌬️🤧🔬📚 Allergy Science Books](./allergy-science-books.md)  
 - [🤖📱🧠 Android Local LLMs](./android-local-llms.md)  
@@ -18,6 +18,7 @@ backlinks: false
 - [📚🗳️🤝🏛️ Books for Democracy](./books-for-democracy.md)  
 - [♟️👑⚔️🧠 Chess](./chess.md)  
 - [🇲🇽💃 Cinco de Mayo](./cinco-de-mayo.md)  
+- [🧩🏢🤖 Domain Driven AI Product Development](./domain-driven-ai-product-development.md)  
 - [💭🚫➡️💡 Effective Thought-Action Defusion Techniques](./effective-thought-action-defusion-techniques.md)  
 - [👨‍👧‍👦👔🎁 Fathers Day](./fathers-day.md)  
 - [⛽ Fueling a 👥 Movement to ⚔️ Fight 👹 Tyranny and 💪 Strengthen 🗳️ Democracy](./fueling-a-movement-to-fight-tyranny-and-strengthen-democracy.md)  
@@ -36,10 +37,12 @@ backlinks: false
 - [🤰🏼👶🍼👨‍👩‍👦 Parenting and Infant Development Guide](./parenting-and-infant-development-guide.md)  
 - [🤱🏼📚💡 Parenting Resources Recommendations](./parenting-resources-recommendations.md)  
 - [🗺️🗓️📋✅🔮 Planning](./planning.md)  
+- [🎯🐜🌍 Purpose Driven Tiny Habits for Systemic Change](./purpose-driven-tiny-habits-for-systemic-change.md)  
 - [✅🔎📰 Reliable News](./reliable-news.md)  
 - [🛐🕯️🔄 Ritual](./ritual.md)  
 - [🦷🔬 Science of Dentistry](./science-of-dentistry.md)  
 - [⁉️🔣🪵 Special Characters In Logs](./special-characters-in-logs.md)  
 - [👶😭➡️😊 Summarize The Happiest Baby On The Block](./summarize-the-happiest-baby-on-the-block.md)  
+- [🧠🤝 System 2 Rapport Building](./system-2-rapport-building.md)  
 - [🇷🇺👹🤝👹🇺🇸 Trump and Putin](./trump-and-putin.md)  
   

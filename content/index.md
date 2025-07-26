@@ -11,7 +11,7 @@ title: 🏡 Home
 ❔ What do 🫵 _you_ 🤔 think?  
   
 ## [🪞 Reflections](./reflections/index.md) ~ Blog (253)  
-- [2025-07-25](./reflections/2025-07-25.md)  
+- [2025-07-25 | ☀️ Fusion | 🍑🎃 Pumpkin 🤖💬📚👶🏼](./reflections/2025-07-25.md)  
 - [2025-07-24 | 🤖🧙‍♂️ Synthetic Wisdom 🤖💬](./reflections/2025-07-24.md)  
 - [2025-07-23 | 🤖 AI | 👶🏼 NI 📺📄🥇👶🏼](./reflections/2025-07-23.md)  
 - [2025-07-22 | 🚀 More | 🤿 Deep | 🫛 Peas 📺📚👶🏼](./reflections/2025-07-22.md)  
@@ -23,7 +23,8 @@ title: 🏡 Home
 - [2025-07-16 | 👉 Doing | 🏃🏼‍♀️ Running | 🦜 Language 📚📄](./reflections/2025-07-16.md)  
   
   
-## [📚 Books](./books/index.md) (541)  
+## [📚 Books](./books/index.md) (542)  
+- [🔟💡 Ten Types of Innovation: The Discipline of Building Breakthroughs](./books/ten-types-of-innovation-the-discipline-of-building-breakthroughs.md)  
 - [🧼💾 Clean Code: A Handbook of Agile Software Craftsmanship](./books/clean-code.md)  
 - [🏎️💾 Accelerate: The Science of Lean Software and DevOps: Building and Scaling High Performing Technology Organizations](./books/accelerate.md)  
 - [⚙️🚀🛡️ The DevOps Handbook: How to Create World-Class Agility, Reliability, & Security in Technology Organizations](./books/the-devops-handbook.md)  
@@ -33,7 +34,6 @@ title: 🏡 Home
 - [🦢 The Elements of Style](./books/the-elements-of-style.md)  
 - [🌐🔗🧠📖 Thinking in Systems: A Primer](./books/thinking-in-systems.md)  
 - [🤏♻️ Tiny Habits: The Small Changes That Change Everything](./books/tiny-habits.md)  
-- [🧠💻🤖 Deep Learning](./books/deep-learning.md)  
   
   
 ## [📺 Videos](./videos/index.md) (231)  
@@ -57,12 +57,12 @@ title: 🏡 Home
 - [💾🧱⚡️ Static Site Generation](./topics/static-site-generation.md)  
   
   
-## [🤖💬 Bot Chats](./bot-chats/index.md) (37)  
+## [🤖💬 Bot Chats](./bot-chats/index.md) (39)  
+- [🤰⏰👶🔮 Forecasting Parenthood](./bot-chats/forecasting-parenthood.md)  
+- [⚛️💡🚀 Atomic Innovation](./bot-chats/atomic-innovation.md)  
 - [🧠🤝 System 2 Rapport Building](./bot-chats/system-2-rapport-building.md)  
 - [🧩🏢🤖 Domain Driven AI Product Development](./bot-chats/domain-driven-ai-product-development.md)  
 - [🎯🐜🌍 Purpose Driven Tiny Habits for Systemic Change](./bot-chats/purpose-driven-tiny-habits-for-systemic-change.md)  
-- [🧘📚🔍 Mindfulness Book Research](./bot-chats/mindfulness-book-research.md)  
-- [🇷🇺👹🤝👹🇺🇸 Trump and Putin](./bot-chats/trump-and-putin.md)  
   
   
 ## [📄  Articles](./articles/index.md) (34)  

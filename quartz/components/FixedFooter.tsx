@@ -16,7 +16,7 @@ const FixedFooter: QuartzComponent = ((opts?: {}) => {
       return null // Don't render if the required data is missing
     }
 
-    const cta = fileData.frontmatter?.["CTA"] || "Start reading today."
+    const cta = fileData.frontmatter?.["CTA"] || "👉 Start reading today."
     const prefix = `${cta} `
 
     const buttonText = `${prefix}🛒 Get ${bookTitle.replace(/:.*$/, '')} on Amazon`

@@ -44,7 +44,7 @@ To explore for a better understanding, one could delve into:
 * 🌍 **Cultural Variations**: 🌏 How different cultures approach and value productivity, and whether these Western-centric principles are universally applicable.  
   
 ## 📚 Book Recommendations  
-* [💯⬇️⬆️ The 80/20 Principle: The Secret to Achieving More with Less](../books/the-80-20-principle-the-secret-to-achieving-more-with-less.md) by Richard Koch: A foundational text on the Pareto Principle, offering broader applications beyond personal productivity.  
+* [💯⬇️⬆️ The 80 20 Principle: The Secret to Achieving More with Less](../books/the-80-20-principle-the-secret-to-achieving-more-with-less.md) by Richard Koch: A foundational text on the Pareto Principle, offering broader applications beyond personal productivity.  
 * [✅😌 Getting Things Done: The Art of Stress-Free Productivity](../books/getting-things-done-the-art-of-stress-free-productivity.md) by David Allen: A classic in productivity, providing a comprehensive system for organizing tasks and reducing mental clutter, which could complement the Zeigarnik Effect.  
 * [📉🧪🚀 The Lean Startup: How Today's Entrepreneurs Use Continuous Innovation to Create Radically Successful Businesses](../books/the-lean-startup.md) by Eric Ries: Explores the concept of continuous experimentation and iteration, resonating with the "Action Over Time" aspect of the Championship Mentality.  
 * [🤿💼 Deep Work: Rules for Focused Success in a Distracted World](../books/deep-work.md) by Cal Newport: Focuses on the importance of concentrated, uninterrupted work, which aligns with the idea of prioritizing high-impact tasks.  

@@ -1,7 +1,7 @@
 ---
 title: "💯⬇️⬆️ The 80/20 Principle: The Secret to Achieving More with Less"
 aliases:
-  - "💯⬇️⬆️ The 80/20 Principle: The Secret to Achieving More with Less"
+  - "💯⬇️⬆️ The 80 20 Principle: The Secret to Achieving More with Less"
 URL: https://bagrounds.org/books/the-80-20-principle-the-secret-to-achieving-more-with-less
 share: true
 CTA: 🎯 Prioritize effectively.

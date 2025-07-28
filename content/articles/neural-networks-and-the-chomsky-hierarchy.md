@@ -8,7 +8,7 @@ Author:
 tags: 
 ---
 [Home](../index.md) > [Articles](./index.md)  
-# 🧠🕸️📜📈 Neural Networks and the Chomsky Hierarchy  
+# [🧠🕸️📜📈 Neural Networks and the Chomsky Hierarchy](https://arxiv.org/pdf/2207.02098)  
   
 ## 🤖 AI Summary  
 📝 The paper investigates whether 💡 insights from the theory of computation can 🔮 predict the limits of neural network generalization in practice. The study 🔬 involved 20,910 models and 15 tasks to examine how 🧠 neural network models for program induction relate to 🏛️ idealized computational models defined by the Chomsky hierarchy.  

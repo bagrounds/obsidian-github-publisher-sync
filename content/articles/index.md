@@ -7,7 +7,7 @@ backlinks: false
 URL: https://bagrounds.org/articles
 ---
 [Home](../index.md)  
-# 📄 Articles (34)  
+# 📄 Articles (35)  
 - [🦊😈🐾🕵️💸 5 takeaways about NPR's reporting on the whistleblower report about DOGE at the NLRB](./5-takeaways-about-nprs-reporting-on-the-whistleblower-report-about-doge-at-the-nlrb.md)  
 - [5 tips on getting started with Gems, your custom AI experts](./5-tips-on-getting-started-with-gems-your-custom-ai-experts.md)  
 - [⏱️⚔️🏛️ '60 Minutes' chief resigns, saying show's independence was compromised](./60-minutes-chief-resigns-saying-shows-independence-was-compromised.md)  
@@ -28,6 +28,7 @@ URL: https://bagrounds.org/articles
 - [Mouth And Throat Exercises to Help Stop Snoring and Improve OSA](./mouth-and-throat-exercises-to-help-stop-snoring-and-improve-osa.md)  
 - [Musical intervention enhances infants’ neural processing of temporal structure in music and speech](./musical-intervention-enhances-infants-neural-processing-of-temporal-structure-in-music-and-speech.md)  
 - [📚🔥 Naval Academy removes nearly 400 books from library in new DEI purge ordered by Hegseth’s office](./naval-academy-removes-nearly-400-books-from-library-in-new-dei-purge-ordered-by-hegseths-office.md)  
+- [🧠🕸️📜📈 Neural Networks and the Chomsky Hierarchy](./neural-networks-and-the-chomsky-hierarchy.md)  
 - [🥼💰🧊 NIH freezes funds to Harvard and four other universities, but can’t tell them](./nih-freezes-funds-to-harvard-and-four-other-universities-but-cant-tell-them.md)  
 - [📈❓📏🤖 On the Difficulty of Extrapolation with NN Scaling](./on-the-difficulty-of-extrapolation-with-nn-scaling.md)  
 - [Project 2025 and education: A lot of bad ideas, some more actionable than others](./project-2025-and-education-a-lot-of-bad-ideas-some-more-actionable-than-others.md)  

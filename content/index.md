@@ -10,7 +10,8 @@ title: 🏡 Home
 📑 Notes, 💭 thoughts, and 🔗 Links.  
 ❔ What do 🫵 _you_ 🤔 think?  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (255)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (256)  
+- [2025-07-28](./reflections/2025-07-28.md)  
 - [2025-07-27 | 🤏🪙 80/20 📺📚](./reflections/2025-07-27.md)  
 - [2025-07-26 | 🪵 Chip | 💃🏼 Dance 🤖💬📚📺](./reflections/2025-07-26.md)  
 - [2025-07-25 | ☀️ Fusion | 🍑🎃 Pumpkin 🤖💬📚👶🏼](./reflections/2025-07-25.md)  
@@ -20,10 +21,10 @@ title: 🏡 Home
 - [2025-07-21 | 😴 Nap! | 🧠 Smart | 🥦 Broccoli 📚📺📰👶🏼](./reflections/2025-07-21.md)  
 - [2025-07-20 | ✨ Motivation | 🎹 Music | 🍉 Melon 📺👶🏼](./reflections/2025-07-20.md)  
 - [2025-07-19 | 📰 News | 🎙️ Comedy | 🟰 Equity 📺📚📰](./reflections/2025-07-19.md)  
-- [2025-07-18 | 🧸 Encourage Unstructured Play 📚](./reflections/2025-07-18.md)  
   
   
 ## [📚 Books](./books/index.md) (544)  
+- [🤖🏗️ AI Engineering: Building Applications with Foundation Models](./books/ai-engineering-building-applications-with-foundation-models.md)  
 - [💯⬇️⬆️ The 80/20 Principle: The Secret to Achieving More with Less](./books/the-80-20-principle-the-secret-to-achieving-more-with-less.md)  
 - [💃➡️ Beginning Modern Dance](./books/beginning-modern-dance.md)  
 - [🔟💡 Ten Types of Innovation: The Discipline of Building Breakthroughs](./books/ten-types-of-innovation-the-discipline-of-building-breakthroughs.md)  
@@ -33,10 +34,10 @@ title: 🏡 Home
 - [🧑‍🤝‍🧑⚙️➡️ Team Topologies: Organizing Business and Technology Teams for Fast Flow](./books/team-topologies-organizing-business-and-technology-teams-for-fast-flow.md)  
 - [🎨🔄🧠🏢 The Fifth Discipline: The Art and Practice of the Learning Organization](./books/the-fifth-discipline.md)  
 - [🦋♟️ Emergent Strategy: Shaping Change, Changing Worlds](./books/emergent-strategy.md)  
-- [🦢 The Elements of Style](./books/the-elements-of-style.md)  
   
   
-## [📺 Videos](./videos/index.md) (233)  
+## [📺 Videos](./videos/index.md) (234)  
+- [🤖🧑‍💻📈🚧 John Schulman - Reinforcement Learning from Human Feedback: Progress and Challenges](./videos/john-schulman-reinforcement-learning-from-human-feedback-progress-and-challenges.md)  
 - [🚀📈🤯🚨 How To Be So Productive That It Feels ILLEGAL](./videos/how-to-be-so-productive-that-it-feels-illegal.md)  
 - [🩰🤸‍♀️🧑‍🏫📖 Ultimate Guide To Learning Dance For Beginners | STEEZY.CO](./videos/ultimate-guide-to-learning-dance-for-beginners-steezy-co.md)  
 - [🤖🧠👁️ Ilya Sutskever, OpenAI](./videos/ilya-sutskever-openai.md)  
@@ -46,7 +47,6 @@ title: 🏡 Home
 - [🤖📅🦢🚲 2025 in LLMs so far, illustrated by Pelicans on Bicycles - Simon Willison](./videos/2025-in-llms-so-far-illustrated-by-pelicans-on-bicycles-simon-willison.md)  
 - [🚀⏱️💥🏆 How to do more in 90 days than most do in their entire lives](./videos/how-to-do-more-in-90-days-than-most-do-in-their-entire-lives.md)  
 - [⚙️📈🎓🏆 This simple productivity system got me into Harvard and Yale](./videos/this-simple-productivity-system-got-me-into-harvard-and-yale.md)  
-- [📢👨⚖️🗣️ Tamara Keith and Amy Walter on the public response to Trump's handling of the Epstein case](./videos/tamara-keith-and-amy-walter-on-the-public-response-to-trumps-handling-of-the-epstein-case.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (79)  
@@ -65,12 +65,12 @@ title: 🏡 Home
 - [🧩🏢🤖 Domain Driven AI Product Development](./bot-chats/domain-driven-ai-product-development.md)  
   
   
-## [📄  Articles](./articles/index.md) (34)  
+## [📄  Articles](./articles/index.md) (35)  
+- [🧠🕸️📜📈 Neural Networks and the Chomsky Hierarchy](./articles/neural-networks-and-the-chomsky-hierarchy.md)  
 - [📚🧩🤖 Guide Comprehensive RAG Implementation Guide](./articles/comprehensive-rag-implementation-guide.md)  
 - [📈❓📏🤖 On the Difficulty of Extrapolation with NN Scaling](./articles/on-the-difficulty-of-extrapolation-with-nn-scaling.md)  
 - [👀👶🏼🏃🏼‍♀️🛣️ What to Look for in a Jogging Stroller](./articles/what-to-look-for-in-a-jogging-stroller.md)  
 - [🧑‍⚖️🧬💰🤝 Judge OKs sale of 23andMe - and its trove of DNA data - to a nonprofit led by its founder](./articles/judge-oks-sale-of-23andme-and-its-trove-of-dna-data-to-a-nonprofit-led-by-its-founder.md)  
-- [👀 Attention Is All You Need](./articles/attention-is-all-you-need.md)  
   
   
 ## [💾 Software](./software/index.md) (29)  

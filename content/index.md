@@ -10,7 +10,9 @@ title: 🏡 Home
 📑 Notes, 💭 thoughts, and 🔗 Links.  
 ❔ What do 🫵 _you_ 🤔 think?  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (253)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (255)  
+- [2025-07-27 | 🤏🪙 80/20 📺📚](./reflections/2025-07-27.md)  
+- [2025-07-26 | 🪵 Chip | 💃🏼 Dance 🤖💬📚📺](./reflections/2025-07-26.md)  
 - [2025-07-25 | ☀️ Fusion | 🍑🎃 Pumpkin 🤖💬📚👶🏼](./reflections/2025-07-25.md)  
 - [2025-07-24 | 🤖🧙‍♂️ Synthetic Wisdom 🤖💬](./reflections/2025-07-24.md)  
 - [2025-07-23 | 🤖 AI | 👶🏼 NI 📺📄🥇👶🏼](./reflections/2025-07-23.md)  
@@ -19,11 +21,11 @@ title: 🏡 Home
 - [2025-07-20 | ✨ Motivation | 🎹 Music | 🍉 Melon 📺👶🏼](./reflections/2025-07-20.md)  
 - [2025-07-19 | 📰 News | 🎙️ Comedy | 🟰 Equity 📺📚📰](./reflections/2025-07-19.md)  
 - [2025-07-18 | 🧸 Encourage Unstructured Play 📚](./reflections/2025-07-18.md)  
-- [2025-07-17 | 👶🏼 Parenting | 🤥 Propaganda | 🏚️ Poverty](./reflections/2025-07-17.md)  
-- [2025-07-16 | 👉 Doing | 🏃🏼‍♀️ Running | 🦜 Language 📚📄](./reflections/2025-07-16.md)  
   
   
-## [📚 Books](./books/index.md) (542)  
+## [📚 Books](./books/index.md) (544)  
+- [💯⬇️⬆️ The 80/20 Principle: The Secret to Achieving More with Less](./books/the-80-20-principle-the-secret-to-achieving-more-with-less.md)  
+- [💃➡️ Beginning Modern Dance](./books/beginning-modern-dance.md)  
 - [🔟💡 Ten Types of Innovation: The Discipline of Building Breakthroughs](./books/ten-types-of-innovation-the-discipline-of-building-breakthroughs.md)  
 - [🧼💾 Clean Code: A Handbook of Agile Software Craftsmanship](./books/clean-code.md)  
 - [🏎️💾 Accelerate: The Science of Lean Software and DevOps: Building and Scaling High Performing Technology Organizations](./books/accelerate.md)  
@@ -32,11 +34,11 @@ title: 🏡 Home
 - [🎨🔄🧠🏢 The Fifth Discipline: The Art and Practice of the Learning Organization](./books/the-fifth-discipline.md)  
 - [🦋♟️ Emergent Strategy: Shaping Change, Changing Worlds](./books/emergent-strategy.md)  
 - [🦢 The Elements of Style](./books/the-elements-of-style.md)  
-- [🌐🔗🧠📖 Thinking in Systems: A Primer](./books/thinking-in-systems.md)  
-- [🤏♻️ Tiny Habits: The Small Changes That Change Everything](./books/tiny-habits.md)  
   
   
-## [📺 Videos](./videos/index.md) (231)  
+## [📺 Videos](./videos/index.md) (233)  
+- [🚀📈🤯🚨 How To Be So Productive That It Feels ILLEGAL](./videos/how-to-be-so-productive-that-it-feels-illegal.md)  
+- [🩰🤸‍♀️🧑‍🏫📖 Ultimate Guide To Learning Dance For Beginners | STEEZY.CO](./videos/ultimate-guide-to-learning-dance-for-beginners-steezy-co.md)  
 - [🤖🧠👁️ Ilya Sutskever, OpenAI](./videos/ilya-sutskever-openai.md)  
 - [🐘🔴👴🏿💥 Epstein Is A Real Problem For The GOP | Trump's Creepy Past | Blaming Obama](./videos/epstein-is-a-real-problem-for-the-gop-trumps-creepy-past-blaming-obama.md)  
 - [💻🔄💻 Andrej Karpathy: Software Is Changing (Again)](./videos/andrej-karpathy-software-is-changing-again.md)  
@@ -45,8 +47,6 @@ title: 🏡 Home
 - [🚀⏱️💥🏆 How to do more in 90 days than most do in their entire lives](./videos/how-to-do-more-in-90-days-than-most-do-in-their-entire-lives.md)  
 - [⚙️📈🎓🏆 This simple productivity system got me into Harvard and Yale](./videos/this-simple-productivity-system-got-me-into-harvard-and-yale.md)  
 - [📢👨⚖️🗣️ Tamara Keith and Amy Walter on the public response to Trump's handling of the Epstein case](./videos/tamara-keith-and-amy-walter-on-the-public-response-to-trumps-handling-of-the-epstein-case.md)  
-- [☀️📚😎👍 Top books to read this summer, according to Ann Patchett and Maureen Corrigan](./videos/top-books-to-read-this-summer-according-to-ann-patchett-and-maureen-corrigan.md)  
-- [➡️⚖️💪 Our work continues, without fear or favor](./videos/our-work-continues-without-fear-or-favor.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (79)  
@@ -57,12 +57,12 @@ title: 🏡 Home
 - [💾🧱⚡️ Static Site Generation](./topics/static-site-generation.md)  
   
   
-## [🤖💬 Bot Chats](./bot-chats/index.md) (39)  
+## [🤖💬 Bot Chats](./bot-chats/index.md) (40)  
+- [💃🕺🎶 Learn to Dance](./bot-chats/learn-to-dance.md)  
 - [🤰⏰👶🔮 Forecasting Parenthood](./bot-chats/forecasting-parenthood.md)  
 - [⚛️💡🚀 Atomic Innovation](./bot-chats/atomic-innovation.md)  
 - [🧠🤝 System 2 Rapport Building](./bot-chats/system-2-rapport-building.md)  
 - [🧩🏢🤖 Domain Driven AI Product Development](./bot-chats/domain-driven-ai-product-development.md)  
-- [🎯🐜🌍 Purpose Driven Tiny Habits for Systemic Change](./bot-chats/purpose-driven-tiny-habits-for-systemic-change.md)  
   
   
 ## [📄  Articles](./articles/index.md) (34)  

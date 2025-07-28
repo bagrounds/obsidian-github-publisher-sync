@@ -7,7 +7,7 @@ URL: https://bagrounds.org/videos
 backlinks: false
 ---
 [Home](../index.md)  
-# 📺 Videos (231)  
+# 📺 Videos (233)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
 - [❓💪🔬 12 Questions About Creatine with Stephen Cornish, PhD](./12-questions-about-creatine-w-stephen-cornish-phd.md)  
@@ -76,6 +76,7 @@ backlinks: false
 - [🏛️🚫🛑👑 How the Supreme Court ruling on nationwide injunctions affects presidential powers](./how-the-supreme-court-ruling-on-nationwide-injunctions-affects-presidential-powers.md)  
 - [⛽🔥🌪️🌀🌍 How the Trump administration is dismantling climate protections](./how-the-trump-administration-is-dismantling-climate-protections.md)  
 - [🤓📈📉⚠️ How to Become an Expert in ANYTHING - The Dunning Kruger Effect](./how-to-become-an-expert-in-anything-the-dunning-kruger-effect.md)  
+- [🚀📈🤯🚨 How To Be So Productive That It Feels ILLEGAL](./how-to-be-so-productive-that-it-feels-illegal.md)  
 - [🎯🪜🏗️✅ How to Build Systems to Actually Achieve Your Goals](./how-to-build-systems-to-actually-achieve-your-goals.md)  
 - [🚀⏱️💥🏆 How to do more in 90 days than most do in their entire lives](./how-to-do-more-in-90-days-than-most-do-in-their-entire-lives.md)  
 - [👊👹🇺🇸🛡️ How to Fight Fascism in America — with Timothy Snyder | Prof G Conversations](./how-to-fight-fascism-in-america-with-timothy-snyder-prof-g-conversations.md)  
@@ -201,6 +202,7 @@ backlinks: false
 - [🤡💵📺 Trump’s One Big Beautiful Bill: Last Week Tonight with John Oliver (HBO)](./trumps-one-big-beautiful-bill-last-week-tonight-with-john-oliver-hbo.md)  
 - [Trump Tariff Cold Open - SNL](./trump-tariff-cold-open-snl.md)  
 - [👹🐊🔒 Trump visits Florida's 'Alligator Alcatraz,' urges more states to open ICE detention sites](./trump-visits-floridas-alligator-alcatraz-urges-more-states-to-open-ice-detention-sites.md)  
+- [🩰🤸‍♀️🧑‍🏫📖 Ultimate Guide To Learning Dance For Beginners | STEEZY.CO](./ultimate-guide-to-learning-dance-for-beginners-steezy-co.md)  
 - [🇺🇸💣🇮🇷⚠️ UN chief says US bombing of Iran marks 'perilous turn' | REUTERS](./un-chief-says-us-bombing-of-iran-marks-perilous-turn-reuters.md)  
 - [🇺🇸🚫⛑️ USAID closes its doors after six decades](./usaid-closes-its-doors-after-six-decades.md)  
 - [US deportees in El Salvador stuck in legal limbo, lawyers say | REUTERS](./us-deportees-in-el-salvador-stuck-in-legal-limbo-lawyers-say-reuters.md)  

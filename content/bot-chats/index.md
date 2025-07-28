@@ -7,10 +7,11 @@ URL: https://bagrounds.org/bot-chats
 backlinks: false
 ---
 [Home](../index.md)  
-# 🤖💬 Bot Chats (37)  
+# 🤖💬 Bot Chats (40)  
 - [🤖⚙️📈💡 AI Engineering Assistant Technology Recommendations](./ai-engineering-assistant-technology-recommendations.md)  
 - [🌸🌬️🤧🔬📚 Allergy Science Books](./allergy-science-books.md)  
 - [🤖📱🧠 Android Local LLMs](./android-local-llms.md)  
+- [⚛️💡🚀 Atomic Innovation](./atomic-innovation.md)  
 - [🕸️🪵🏅 Blogging Success](./blogging-success.md)  
 - [✍🏼 Blogiversary 🕯️](./blogiversary.md)  
 - [📖 Book 🧭 Explorer 1](./book-explorer-1.md)  
@@ -21,6 +22,7 @@ backlinks: false
 - [🧩🏢🤖 Domain Driven AI Product Development](./domain-driven-ai-product-development.md)  
 - [💭🚫➡️💡 Effective Thought-Action Defusion Techniques](./effective-thought-action-defusion-techniques.md)  
 - [👨‍👧‍👦👔🎁 Fathers Day](./fathers-day.md)  
+- [🤰⏰👶🔮 Forecasting Parenthood](./forecasting-parenthood.md)  
 - [⛽ Fueling a 👥 Movement to ⚔️ Fight 👹 Tyranny and 💪 Strengthen 🗳️ Democracy](./fueling-a-movement-to-fight-tyranny-and-strengthen-democracy.md)  
 - [😇🔮🎲🎬 Good Decisions](./good-decisions.md)  
 - [🤕😖 Headaches](./headaches.md)  
@@ -28,6 +30,7 @@ backlinks: false
 - [🪵❓ How Much Wood](./how-much-wood.md)  
 - [🥱👎 How To Not Be Tired](./how-to-not-be-tired.md)  
 - [👶👂 Infant Hearing](./infant-hearing.md)  
+- [💃🕺🎶 Learn to Dance](./learn-to-dance.md)  
 - [🧭 Managing 🕸️ Complexity 🧠](./managing-complexity.md)  
 - [🦜👶🏼 Mimicking Babies](./mimicking-babies.md)  
 - [🧘📚🔍 Mindfulness Book Research](./mindfulness-book-research.md)  

@@ -1,8 +1,8 @@
 ---
 share: true
 aliases:
-  - "Co-Sleeping With Infants: Science, Public Policy, and Parents Civil Rights, with James McKenna, PhD"
-title: "Co-Sleeping With Infants: Science, Public Policy, and Parents Civil Rights, with James McKenna, PhD"
+  - "👶🛏️⚖️ Co-Sleeping With Infants: Science, Public Policy, and Parents Civil Rights, with James McKenna, PhD"
+title: "👶🛏️⚖️ Co-Sleeping With Infants: Science, Public Policy, and Parents Civil Rights, with James McKenna, PhD"
 URL: https://youtu.be/XCZzzqFkyiU
 Author: 
 Platform: 
@@ -10,7 +10,7 @@ Channel: Pathways to Family Wellness
 tags: 
 ---
 [Home](../index.md) > [Videos](./index.md)  
-# Co-Sleeping With Infants: Science, Public Policy, and Parents Civil Rights, with James McKenna, PhD  
+# 👶🛏️⚖️ Co-Sleeping With Infants: Science, Public Policy, and Parents Civil Rights, with James McKenna, PhD  
 ![Co-Sleeping With Infants: Science, Public Policy, and Parents Civil Rights, with James McKenna, PhD](https://youtu.be/XCZzzqFkyiU)  
   
 ## 🤖 AI Summary  

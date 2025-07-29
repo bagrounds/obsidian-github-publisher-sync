@@ -1,8 +1,8 @@
 ---
 share: true
 aliases:
-  - Biomedical Scientist Answers Pseudoscience Questions From Twitter | Tech Support | WIRED
-title: Biomedical Scientist Answers Pseudoscience Questions From Twitter | Tech Support | WIRED
+  - 🧫❓❌📱 Biomedical Scientist Answers Pseudoscience Questions From Twitter | Tech Support | WIRED
+title: 🧫❓❌📱 Biomedical Scientist Answers Pseudoscience Questions From Twitter | Tech Support | WIRED
 URL: https://youtu.be/vj71yGp-8WM
 Author: 
 Platform: "#YouTube"
@@ -10,7 +10,7 @@ Channel: "[[WIRED]]"
 tags: 
 ---
 [Home](../index.md) > [Videos](./index.md)  
-# Biomedical Scientist Answers Pseudoscience Questions From Twitter | Tech Support | WIRED  
+# 🧫❓❌📱 Biomedical Scientist Answers Pseudoscience Questions From Twitter | Tech Support | WIRED  
 ![Biomedical Scientist Answers Pseudoscience Questions From Twitter | Tech Support | WIRED](https://youtu.be/vj71yGp-8WM)  
   
 🎩 [Pseudoscience](https://wikipedia.org/wiki/Pseudoscience) is fake science.  

@@ -11,7 +11,7 @@ title: 🏡 Home
 ❔ What do 🫵 _you_ 🤔 think?  
   
 ## [🪞 Reflections](./reflections/index.md) ~ Blog (256)  
-- [2025-07-28](./reflections/2025-07-28.md)  
+- [2025-07-28 | 🤖 AI | 💰 Millionaire 📚📺📄](./reflections/2025-07-28.md)  
 - [2025-07-27 | 🤏🪙 80/20 📺📚](./reflections/2025-07-27.md)  
 - [2025-07-26 | 🪵 Chip | 💃🏼 Dance 🤖💬📚📺](./reflections/2025-07-26.md)  
 - [2025-07-25 | ☀️ Fusion | 🍑🎃 Pumpkin 🤖💬📚👶🏼](./reflections/2025-07-25.md)  
@@ -23,20 +23,23 @@ title: 🏡 Home
 - [2025-07-19 | 📰 News | 🎙️ Comedy | 🟰 Equity 📺📚📰](./reflections/2025-07-19.md)  
   
   
-## [📚 Books](./books/index.md) (544)  
+## [📚 Books](./books/index.md) (545)  
+- [🤖🧠 Artificial Intelligence: A Modern Approach](./books/artificial-intelligence-a-modern-approach.md)  
+- [🧠🔗🤔💡 Knowledge Representation and Reasoning](./books/knowledge-representation-and-reasoning.md)  
+- [🎲🧮🧠🤖 Probabilistic Reasoning in Intelligent Systems: Networks of Plausible Inference](./books/probabilistic-reasoning-in-intelligent-systems.md)  
+- [🤖➕🧠➡️ Reinforcement Learning: An Introduction](./books/reinforcement-learning-an-introduction.md)  
+- [🧠💻🤖 Deep Learning](./books/deep-learning.md)  
 - [🤖🏗️ AI Engineering: Building Applications with Foundation Models](./books/ai-engineering-building-applications-with-foundation-models.md)  
 - [💯⬇️⬆️ The 80/20 Principle: The Secret to Achieving More with Less](./books/the-80-20-principle-the-secret-to-achieving-more-with-less.md)  
 - [💃➡️ Beginning Modern Dance](./books/beginning-modern-dance.md)  
 - [🔟💡 Ten Types of Innovation: The Discipline of Building Breakthroughs](./books/ten-types-of-innovation-the-discipline-of-building-breakthroughs.md)  
 - [🧼💾 Clean Code: A Handbook of Agile Software Craftsmanship](./books/clean-code.md)  
-- [🏎️💾 Accelerate: The Science of Lean Software and DevOps: Building and Scaling High Performing Technology Organizations](./books/accelerate.md)  
-- [⚙️🚀🛡️ The DevOps Handbook: How to Create World-Class Agility, Reliability, & Security in Technology Organizations](./books/the-devops-handbook.md)  
-- [🧑‍🤝‍🧑⚙️➡️ Team Topologies: Organizing Business and Technology Teams for Fast Flow](./books/team-topologies-organizing-business-and-technology-teams-for-fast-flow.md)  
-- [🎨🔄🧠🏢 The Fifth Discipline: The Art and Practice of the Learning Organization](./books/the-fifth-discipline.md)  
-- [🦋♟️ Emergent Strategy: Shaping Change, Changing Worlds](./books/emergent-strategy.md)  
   
   
-## [📺 Videos](./videos/index.md) (234)  
+## [📺 Videos](./videos/index.md) (235)  
+- [⏱️💰📈 This simple time management system will make you a millionaire](./videos/this-simple-time-management-system-will-make-you-a-millionaire.md)  
+- [Judea Pearl, 2011 ACM Turing Award Recipient](./videos/judea-pearl-2011-acm-turing-award-recipient.md)  
+- [🤖📅🦢🚲 2025 in LLMs so far, illustrated by Pelicans on Bicycles - Simon Willison](./videos/2025-in-llms-so-far-illustrated-by-pelicans-on-bicycles-simon-willison.md)  
 - [🤖🧑‍💻📈🚧 John Schulman - Reinforcement Learning from Human Feedback: Progress and Challenges](./videos/john-schulman-reinforcement-learning-from-human-feedback-progress-and-challenges.md)  
 - [🚀📈🤯🚨 How To Be So Productive That It Feels ILLEGAL](./videos/how-to-be-so-productive-that-it-feels-illegal.md)  
 - [🩰🤸‍♀️🧑‍🏫📖 Ultimate Guide To Learning Dance For Beginners | STEEZY.CO](./videos/ultimate-guide-to-learning-dance-for-beginners-steezy-co.md)  
@@ -44,17 +47,14 @@ title: 🏡 Home
 - [🐘🔴👴🏿💥 Epstein Is A Real Problem For The GOP | Trump's Creepy Past | Blaming Obama](./videos/epstein-is-a-real-problem-for-the-gop-trumps-creepy-past-blaming-obama.md)  
 - [💻🔄💻 Andrej Karpathy: Software Is Changing (Again)](./videos/andrej-karpathy-software-is-changing-again.md)  
 - [🖼️🤔🛠️🤖 Context Engineering for Agents](./videos/context-engineering-for-agents.md)  
-- [🤖📅🦢🚲 2025 in LLMs so far, illustrated by Pelicans on Bicycles - Simon Willison](./videos/2025-in-llms-so-far-illustrated-by-pelicans-on-bicycles-simon-willison.md)  
-- [🚀⏱️💥🏆 How to do more in 90 days than most do in their entire lives](./videos/how-to-do-more-in-90-days-than-most-do-in-their-entire-lives.md)  
-- [⚙️📈🎓🏆 This simple productivity system got me into Harvard and Yale](./videos/this-simple-productivity-system-got-me-into-harvard-and-yale.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (79)  
-- [🧠🌍⚙️ Model Context Protocol](./topics/model-context-protocol.md)  
-- [🤖🦜 Large Language Models](./topics/large-language-models.md)  
-- [⚙️🧠🔄 Adaptive Control](./topics/adaptive-control.md)  
-- [😴🛌🧘 REST](./topics/rest.md)  
-- [💾🧱⚡️ Static Site Generation](./topics/static-site-generation.md)  
+- [Reinforcement Learning based Adaptive Control](./topics/reinforcement-learning-based-adaptive-control.md)  
+- [Computer Science](./topics/computer-science.md)  
+- [🇨🇳🤖 DeepSeek](./topics/deepseek.md)  
+- [🧠🌐 Knowledge Graphs](./topics/knowledge-graphs.md)  
+- [🌳🗺️🔗🏛️ Ontologies](./topics/ontologies.md)  
   
   
 ## [🤖💬 Bot Chats](./bot-chats/index.md) (40)  
@@ -65,20 +65,20 @@ title: 🏡 Home
 - [🧩🏢🤖 Domain Driven AI Product Development](./bot-chats/domain-driven-ai-product-development.md)  
   
   
-## [📄  Articles](./articles/index.md) (35)  
+## [📄  Articles](./articles/index.md) (36)  
+- [👀 Attention Is All You Need](./articles/attention-is-all-you-need.md)  
+- [🕵️‍♀️💼👥 Agents](./articles/agents.md)  
 - [🧠🕸️📜📈 Neural Networks and the Chomsky Hierarchy](./articles/neural-networks-and-the-chomsky-hierarchy.md)  
 - [📚🧩🤖 Guide Comprehensive RAG Implementation Guide](./articles/comprehensive-rag-implementation-guide.md)  
 - [📈❓📏🤖 On the Difficulty of Extrapolation with NN Scaling](./articles/on-the-difficulty-of-extrapolation-with-nn-scaling.md)  
-- [👀👶🏼🏃🏼‍♀️🛣️ What to Look for in a Jogging Stroller](./articles/what-to-look-for-in-a-jogging-stroller.md)  
-- [🧑‍⚖️🧬💰🤝 Judge OKs sale of 23andMe - and its trove of DNA data - to a nonprofit led by its founder](./articles/judge-oks-sale-of-23andme-and-its-trove-of-dna-data-to-a-nonprofit-led-by-its-founder.md)  
   
   
 ## [💾 Software](./software/index.md) (29)  
+- [GitHub Copilot for VS Code](./software/github-copilot-for-vs-code.md)  
+- [🤖♊ Gemini](./software/gemini.md)  
+- [🤖🖱️📍 Cursor](./software/cursor.md)  
 - [🌐🔓💻 Open WebUI](./software/open-webui.md)  
 - [Ollama](./software/ollama.md)  
-- [🤖🖱️📍 Cursor](./software/cursor.md)  
-- [💾✍️🌋⚫️ Obsidian](./software/obsidian.md)  
-- [💾➕🤝 Git](./software/git.md)  
   
   
 ## [👥 People](./people/index.md) (11)  

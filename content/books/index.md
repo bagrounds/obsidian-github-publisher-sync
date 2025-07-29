@@ -7,7 +7,7 @@ URL: https://bagrounds.org/books
 backlinks: false
 ---
 [Home](../index.md)  
-# 📚 Books (544)  
+# 📚 Books (545)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)  
 - [🧑‍🤝‍🧑📈 10 to 25: The Science of Motivating Young People: A Groundbreaking Approach to Leading the Next Generation - And Making Your Own Life Easier](./10-to-25-the-science-of-motivating-young-people-a-groundbreaking-approach-to-leading-the-next-generation-and-making-your-own-life-easier.md)  
@@ -39,6 +39,7 @@ backlinks: false
 - [👨‍👩‍👧‍👦🗣️🗣️ A Parents' and Teachers' Guide to Bilingualism](./a-parents-and-teachers-guide-to-bilingualism.md)  
 - [🧠🎯👁️💡 Applied Attention Theory](./human-attention.md)  
 - [💔🤝 A Question of Trust: The BBC Reith Lectures 2002](./trust-how-societies-lost-it-and-how-they-might-regain-it.md)  
+- [🤖🧠 Artificial Intelligence: A Modern Approach](./artificial-intelligence-a-modern-approach.md)  
 - [👨‍👩‍👧‍👦🛡️ A Secure Base: Parent-Child Attachment and Healthy Human Development](./a-secure-base-parent-child-attachment-and-healthy-human-development.md)  
 - [🧠🧩🛠️ Assessment and Intervention for Executive Function Difficulties](./executive-functions-development-assessment-and-intervention.md)  
 - [🧠🧠🧠🧠 A Thousand Brains: A New Theory of Intelligence](./a-thousand-brains.md)  
@@ -385,7 +386,7 @@ Feedback Control of Dynamic Systems]]
 - [⏳💻💼🎯 The 2-Hour Job Search: Using Technology to Get the Right Job Faster](./the-2-hour-job-search.md)  
 - [👑🎭♟️ The 48 Laws of Power](./the-48-laws-of-power.md)  
 - [👤📈🎯🌟🔑🤝🏆 The 7 Habits of Highly Effective People](./the-7-habits-of-highly-effective-people.md)  
-- [💯⬇️⬆️ The 80/20 Principle: The Secret to Achieving More with Less](./the-80-20-principle-the-secret-to-achieving-more-with-less.md)  
+- [💯⬇️⬆️ The 80 20 Principle: The Secret to Achieving More with Less](./the-80-20-principle-the-secret-to-achieving-more-with-less.md)  
 - [👶🔤 The ABC’s of Language Development: Discover Language with Your Child](./the-abcs-of-language-development-discover-language-with-your-child.md)  
 - [👁️‍🗨️💰⛓️👤 The Age of Surveillance Capitalism: The Fight for a Human Future at the New Frontier of Power](./the-age-of-surveillance-capitalism.md)  
 - [🎨🙏✨ The Artist's Way: A Spiritual Path to Higher Creativity](./the-artists-way.md)  

@@ -7,7 +7,7 @@ URL: https://bagrounds.org/videos
 backlinks: false
 ---
 [Home](../index.md)  
-# 📺 Videos (235)  
+# 📺 Videos (236)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
 - [❓💪🔬 12 Questions About Creatine with Stephen Cornish, PhD](./12-questions-about-creatine-w-stephen-cornish-phd.md)  
@@ -51,7 +51,7 @@ backlinks: false
 - [🏛️⚠️⏳ Democracy Isn’t Dead. Yet. | The Focus Group Podcast](./heather-cox-richardson-democracy-isnt-dead-yet-the-focus-group-podcast.md)  
 - [☕⛓️‍💥🚄❓ Does drinking coffee break your fast? | Satchin Panda](./does-drinking-coffee-break-your-fast-satchin-panda.md)  
 - [⬇️⬆️🗣️ Don't Get Down Leveled or How to Tell a Good Story (From a Principal at Amazon)](./dont-get-down-leveled-or-how-to-tell-a-good-story-from-a-principal-at-amazon.md)  
-- [Dr. Adam Grant: How to Unlock Your Potential, Motivation & Unique Abilities](./dr-adam-grant-how-to-unlock-your-potential-motivation-and-unique-abilities.md)  
+- [🔑🔓🚀🌟 Dr. Adam Grant: How to Unlock Your Potential, Motivation & Unique Abilities](./dr-adam-grant-how-to-unlock-your-potential-motivation-and-unique-abilities.md)  
 - [Dr. Casey Means: Transform Your Health by Improving Metabolism, Hormone & Blood Sugar Regulation](./dr-casey-means-transform-your-health-by-improving-metabolism-hormone-and-blood-sugar-regulation.md)  
 - [Dr. Mark D'Esposito: How to Optimize Cognitive Function & Brain Health](./dr-mark-desposito-how-to-optimize-cognitive-function-and-brain-health.md)  
 - [☕⏳😴🧊☀️🏋️ Dr. Matt Walker: How to Structure Your Sleep, Use Naps & Time Caffeine | Huberman Lab Guest Series](./dr-matt-walker-how-to-structure-your-sleep-use-naps-and-time-caffeine-huberman-lab-guest-series.md)  
@@ -185,6 +185,7 @@ backlinks: false
 - [🚫⏳🔓 the secret hack that makes procrastination impossible](./the-secret-hack-that-makes-procrastination-impossible.md)  
 - [🤫🔑👨‍💻 The Secret Skill Every Tech Leader Possesses](./the-secret-skill-every-tech-leader-possesses.md)  
 - [The security vulnerabilities of using Signal to discuss military operations](./the-security-vulnerabilities-of-using-signal-to-discuss-military-operations.md)  
+- [🛠️⚙️🚀🛡️ The simple system that makes you unstoppable](./the-simple-system-that-makes-you-unstoppable.md)  
 - [📓 This Journal Keeps Me Productive (& Maybe You Too)](./this-journal-keeps-me-productive-and-maybe-you-too.md)  
 - [This Secret Principle Will Transform Your Notes](./this-secret-principle-will-transform-your-notes.md)  
 - [⚙️📈🎓🏆 This simple productivity system got me into Harvard and Yale](./this-simple-productivity-system-got-me-into-harvard-and-yale.md)  

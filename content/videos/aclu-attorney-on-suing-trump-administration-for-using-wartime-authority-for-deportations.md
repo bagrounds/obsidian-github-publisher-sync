@@ -1,8 +1,8 @@
 ---
 share: true
 aliases:
-  - ACLU attorney on suing Trump administration for using wartime authority for deportations
-title: ACLU attorney on suing Trump administration for using wartime authority for deportations
+  - 👨‍⚖️🇺🇸⚔️🛑 ACLU attorney on suing Trump administration for using wartime authority for deportations
+title: 👨‍⚖️🇺🇸⚔️🛑 ACLU attorney on suing Trump administration for using wartime authority for deportations
 URL: https://youtu.be/PznKw433MDM
 Author: 
 Platform: 
@@ -10,7 +10,7 @@ Channel: PBS NewsHour
 tags: 
 ---
 [Home](../index.md) > [Videos](./index.md)  
-# ACLU attorney on suing Trump administration for using wartime authority for deportations  
+# 👨‍⚖️🇺🇸⚔️🛑 ACLU attorney on suing Trump administration for using wartime authority for deportations  
 ![ACLU attorney on suing Trump administration for using wartime authority for deportations](https://youtu.be/PznKw433MDM)  
   
 ## 🤖 AI Summary  

@@ -7,7 +7,7 @@ URL: https://bagrounds.org/videos
 backlinks: false
 ---
 [Home](../index.md)  
-# 📺 Videos (234)  
+# 📺 Videos (235)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
 - [❓💪🔬 12 Questions About Creatine with Stephen Cornish, PhD](./12-questions-about-creatine-w-stephen-cornish-phd.md)  
@@ -188,6 +188,7 @@ backlinks: false
 - [📓 This Journal Keeps Me Productive (& Maybe You Too)](./this-journal-keeps-me-productive-and-maybe-you-too.md)  
 - [This Secret Principle Will Transform Your Notes](./this-secret-principle-will-transform-your-notes.md)  
 - [⚙️📈🎓🏆 This simple productivity system got me into Harvard and Yale](./this-simple-productivity-system-got-me-into-harvard-and-yale.md)  
+- [⏱️💰📈 This simple time management system will make you a millionaire](./this-simple-time-management-system-will-make-you-a-millionaire.md)  
 - [This Single Rule Underpins All Of Physics](./this-single-rule-underpins-all-of-physics.md)  
 - [🕸️🛠️🤔 Three decades after inventing the web, Tim Berners-Lee has some ideas on how to fix it](./three-decades-after-inventing-the-web-tim-berners-lee-has-some-ideas-on-how-to-fix-it.md)  
 - [Tools to Enhance Working Memory & Attention](./tools-to-enhance-working-memory-and-attention.md)  

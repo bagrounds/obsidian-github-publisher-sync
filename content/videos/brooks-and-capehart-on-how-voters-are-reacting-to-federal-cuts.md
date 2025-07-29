@@ -1,8 +1,8 @@
 ---
 share: true
 aliases:
-  - Brooks and Capehart on how voters are reacting to federal cuts
-title: Brooks and Capehart on how voters are reacting to federal cuts
+  - ✂️🏛️😡 Brooks and Capehart on how voters are reacting to federal cuts
+title: ✂️🏛️😡 Brooks and Capehart on how voters are reacting to federal cuts
 URL: https://youtu.be/2Ocea9sJHrI
 Author: 
 Platform: 
@@ -10,7 +10,7 @@ Channel: PBS NewsHour
 tags: 
 ---
 [Home](../index.md) > [Videos](./index.md)  
-# PBS NewsHour - Brooks and Capehart on how voters are reacting to federal cuts  
+# ✂️🏛️😡 Brooks and Capehart on how voters are reacting to federal cuts  
 ![Brooks and Capehart on how voters are reacting to federal cuts](https://youtu.be/2Ocea9sJHrI)  
   
 ## 🤖 AI Summary  

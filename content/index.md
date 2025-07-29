@@ -10,7 +10,8 @@ title: 🏡 Home
 📑 Notes, 💭 thoughts, and 🔗 Links.  
 ❔ What do 🫵 _you_ 🤔 think?  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (256)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (257)  
+- [2025-07-29 | 🚫🛑 Unstoppable 📺](./reflections/2025-07-29.md)  
 - [2025-07-28 | 🤖 AI | 💰 Millionaire 📚📺📄](./reflections/2025-07-28.md)  
 - [2025-07-27 | 🤏🪙 80 20 📺📚](./reflections/2025-07-27.md)  
 - [2025-07-26 | 🪵 Chip | 💃🏼 Dance 🤖💬📚📺](./reflections/2025-07-26.md)  
@@ -20,7 +21,6 @@ title: 🏡 Home
 - [2025-07-22 | 🚀 More | 🤿 Deep | 🫛 Peas 📺📚👶🏼](./reflections/2025-07-22.md)  
 - [2025-07-21 | 😴 Nap! | 🧠 Smart | 🥦 Broccoli 📚📺📰👶🏼](./reflections/2025-07-21.md)  
 - [2025-07-20 | ✨ Motivation | 🎹 Music | 🍉 Melon 📺👶🏼](./reflections/2025-07-20.md)  
-- [2025-07-19 | 📰 News | 🎙️ Comedy | 🟰 Equity 📺📚📰](./reflections/2025-07-19.md)  
   
   
 ## [📚 Books](./books/index.md) (545)  
@@ -36,7 +36,8 @@ title: 🏡 Home
 - [🧼💾 Clean Code: A Handbook of Agile Software Craftsmanship](./books/clean-code.md)  
   
   
-## [📺 Videos](./videos/index.md) (235)  
+## [📺 Videos](./videos/index.md) (236)  
+- [🛠️⚙️🚀🛡️ The simple system that makes you unstoppable](./videos/the-simple-system-that-makes-you-unstoppable.md)  
 - [🔑🔓🚀🌟 Dr. Adam Grant: How to Unlock Your Potential, Motivation & Unique Abilities](./videos/dr-adam-grant-how-to-unlock-your-potential-motivation-and-unique-abilities.md)  
 - [👶🛏️⚖️ Co-Sleeping With Infants: Science, Public Policy, and Parents Civil Rights, with James McKenna, PhD](./videos/co-sleeping-with-infants-science-public-policy-and-parents-civil-rights-with-james-mckenna-phd.md)  
 - [👨‍💼🛑💰🗣️ Brooks and Capehart on the political reaction to Trump's tariffs](./videos/brooks-and-capehart-on-the-political-reaction-to-trumps-tariffs.md)  
@@ -46,7 +47,6 @@ title: 🏡 Home
 - [👶🧩🧠➡️ A Simple Way to Learn Complex Skills](./videos/a-simple-way-to-learn-complex-skills.md)  
 - [📺🏛️💸🎯 A look at the history of public media in the U.S. as Republicans target federal funding](./videos/a-look-at-the-history-of-public-media-in-the-us-as-republicans-target-federal-funding.md)  
 - [⚫😭🇺🇸 A Dark Day for Our Country](./videos/a-dark-day-for-our-country.md)  
-- [🗓️🎯📈💡 2025 Yearly Themes](./videos/2025-yearly-themes.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (79)  

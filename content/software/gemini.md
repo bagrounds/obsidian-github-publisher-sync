@@ -146,7 +146,7 @@ URL: https://bagrounds.org/software/gemini
     - "[The Age of Surveillance Capitalism](../books/the-age-of-surveillance-capitalism.md)" by Shoshana Zuboff. 🕵️‍♂️💻 - Critiques the use of data and AI for surveillance and control, offering a counterpoint to the optimistic view of AI's potential. 🛡️  
     - "Digital Minimalism" by Cal Newport. 📱🚫 - Advocates for a more intentional and selective use of technology, providing a perspective on the potential downsides of excessive reliance on AI-powered tools. 🧘  
 - **More general:**  
-    - "Artificial Intelligence: A Modern Approach" by Stuart Russell and Peter Norvig. 🤖📚 - A foundational textbook on AI, covering a wide range of topics and providing a comprehensive overview of the field. 🧠  
+    - [🤖🧠 Artificial Intelligence: A Modern Approach](../books/artificial-intelligence-a-modern-approach.md) by Stuart Russell and Peter Norvig. 🤖📚 - A foundational textbook on AI, covering a wide range of topics and providing a comprehensive overview of the field. 🧠  
     - "AI Superpowers: China, Silicon Valley, and the New World Order" by Kai-Fu Lee. 🌍🤖 - Explores the global competition in AI and its potential impact on the future of work and society. 🌐  
 - **More specific:**  
     - "Transformers for Natural Language Processing: Deep Learning with BERT, GPT, and other models" by Denis Rothman. ⚡🗣️- A more in depth look into the technology that powers Gemini.  

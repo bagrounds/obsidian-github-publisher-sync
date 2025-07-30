@@ -7,7 +7,7 @@ URL: https://bagrounds.org/books
 backlinks: false
 ---
 [Home](../index.md)  
-# 📚 Books (545)  
+# 📚 Books (546)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)  
 - [🧑‍🤝‍🧑📈 10 to 25: The Science of Motivating Young People: A Groundbreaking Approach to Leading the Next Generation - And Making Your Own Life Easier](./10-to-25-the-science-of-motivating-young-people-a-groundbreaking-approach-to-leading-the-next-generation-and-making-your-own-life-easier.md)  
@@ -169,6 +169,7 @@ Feedback Control of Dynamic Systems]]
 - [🧱✅🐛 Foundations of Software Testing](./foundations-of-software-testing.md)  
 - [🤓🕵️‍♂️❓ Freakonomics: A Rogue Economist Explores the Hidden Side of Everything](./freakonomics.md)  
 - [🛂⛓️ From Deportation to Prison: The Politics of Immigration Enforcement in Post-Civil Rights America](./from-deportation-to-prison-the-politics-of-immigration-enforcement-in-post-civil-rights-america.md)  
+- [💪😊🎯 From Strength to Strength: Finding Success, Happiness, and Deep Purpose in the Second Half of Life](./from-strength-to-strength-finding-success-happiness-and-deep-purpose-in-the-second-half-of-life.md)  
 - [🌳🍎🍽️ From Tree to Table: Growing Backyard Fruit Trees in the Pacific Maritime Climate](./from-tree-to-table-growing-backyard-fruit-trees-in-the-pacific-maritime-climate.md)  
 - [🌪️🧘🏼‍♀️ Full Catastrophe Living: Using the Wisdom of Your Body and Mind to Face Stress, Pain, and Illness](./full-catastrophe-living.md)  
 - [🌍🌿 Gaia's Garden: A Guide to Home-Scale Permaculture](./gaias-garden.md)  

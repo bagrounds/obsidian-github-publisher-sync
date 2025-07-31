@@ -7,7 +7,7 @@ URL: https://bagrounds.org/videos
 backlinks: false
 ---
 [Home](../index.md)  
-# 📺 Videos (237)  
+# 📺 Videos (238)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
 - [❓💪🔬 12 Questions About Creatine with Stephen Cornish, PhD](./12-questions-about-creatine-w-stephen-cornish-phd.md)  
@@ -19,6 +19,7 @@ backlinks: false
 - [2️⃣⬆️🧠👩‍🚀 Double Your Productivity using this ADHD System (Invented by a Space Systems Engineer)](./double-your-productivity-using-this-adhd-system-invented-by-a-space-systems-engineer.md)  
 - [🪜📈🏢 3 High Leverage Career Skills (From a Principal At Amazon)](./3-high-leverage-career-skills-from-a-principal-at-amazon.md)  
 - [🧠⏳🚀⚡ 4 ADHD Habits to Make 2025 Hyper Productive](./4-adhd-habits-to-make-2025-hyper-productive.md)  
+- [🎨🧱🔄 513 - Why Creatives Have to Build Habits Differently and How to Do It](./513-why-creatives-have-to-build-habits-differently-and-how-to-do-it.md)  
 - [🧠🪜💡🤔⬆️🎓 6 Levels of Thinking Every Student MUST Master](./6-levels-of-thinking-every-student-must-master.md)  
 - [👨‍⚖️🇺🇸⚔️🛑 ACLU attorney on suing Trump administration for using wartime authority for deportations](./aclu-attorney-on-suing-trump-administration-for-using-wartime-authority-for-deportations.md)  
 - [⚫😭🇺🇸 A Dark Day for Our Country](./a-dark-day-for-our-country.md)  

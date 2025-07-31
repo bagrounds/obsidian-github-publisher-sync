@@ -53,7 +53,7 @@ affiliate link: https://amzn.to/3Hyx3K0
   
 ### ✨ Creatively Related Books (Exploring Broader Impacts, History, or Philosophy)  
   
-* 🤖 **Superintelligence: Paths, Dangers, Strategies** by Nick Bostrom. A foundational text exploring the potential risks and challenges posed by the development of superintelligent AI, providing a philosophical and existential backdrop to the AGI race described in "Empire of AI."  
+* **[🤖⚠️📈 Superintelligence: Paths, Dangers, Strategies](./superintelligence-paths-dangers-strategies.md)** by Nick Bostrom. A foundational text exploring the potential risks and challenges posed by the development of superintelligent AI, providing a philosophical and existential backdrop to the AGI race described in "Empire of AI."  
 * **[🧬👥💾 Life 3.0: Being Human in the Age of Artificial Intelligence](./life-3-0.md)** by Max Tegmark. Discusses various possible futures for humanity in the age of AI, prompting thought experiments about the long-term societal impact of advanced AI.  
 * 🤝 **Human Compatible: Artificial Intelligence and the Problem of Control** by Stuart Russell. Addresses the crucial problem of ensuring that advanced AI systems are aligned with human values, a key safety concern related to the pursuit of AGI.  
 * ⚔️ **The Anarchy: The Relentless Rise of the East India Company** by William Dalrymple. Explicitly referenced by Karen Hao as an inspiration, this historical account of a powerful corporation's rise to dominance provides a compelling parallel to the "empire" framing of the AI industry.  

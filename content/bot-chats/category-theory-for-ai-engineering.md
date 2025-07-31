@@ -258,4 +258,7 @@ You have a "summarization" task. One FM might prefer a prompt like "Summarize th
   
 8. 📰 **Academic Papers and Research on Applied Category Theory in AI/ML:** Keep an eye on recent research from groups like "AlgebraicJulia" and others exploring the intersection. 🚀 While not traditional books, these papers often present the cutting edge of applying category theory to practical problems in AI, including topics like compositional modeling, data integration, and formal verification of AI systems. 🧑‍🔬 Look for authors like David Spivak, Emily Riehl, John Baez, and Jules Hedges, who are prominent in the field of Applied Category Theory.  
   
-🎉 By combining the practical insights from AI engineering books with the rigorous formalisms of category theory, you'll be well-equipped to explore and implement the "Categorical Model Algebra" approach to building the next generation of robust and intelligent AI systems.
+🎉 By combining the practical insights from AI engineering books with the rigorous formalisms of category theory, you'll be well-equipped to explore and implement the "Categorical Model Algebra" approach to building the next generation of robust and intelligent AI systems.  
+  
+## 🐦 Tweet  
+<blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">📐🔗🤖🧠 Category Theory for AI Engineering<br><br>🤖 Foundation Models | 🧮 Abstraction | 🤝 Interoperability | 🧪 Formalization | 🧱 Composition<a href="https://t.co/0HKSKhQpSi">https://t.co/0HKSKhQpSi</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/1950956565768688039?ref_src=twsrc%5Etfw">July 31, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

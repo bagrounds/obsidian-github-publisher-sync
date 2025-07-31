@@ -45,4 +45,4 @@ youtube: https://youtu.be/LCEmiRjPEtQ
 * **[🧬👥💾 Life 3.0: Being Human in the Age of Artificial Intelligence](../books/life-3-0.md)** by Max Tegmark: 🤔 Explores the **long-term impact of AI on humanity** and why aligning AI with human values is crucial.  
 * 🇨🇳 **AI Superpowers: China, Silicon Valley, and the New World Order** by Kai-Fu Lee: 🌎 Provides insight into the **global competition in AI** and its economic and societal effects.  
 * 🤖 **Human Compatible: Artificial Intelligence and the Problem of Control** by Stuart Russell: ✅ Addresses the **challenge of designing AI to always benefit humanity**, avoiding unintended negative consequences.  
-* 🤯 **Superintelligence: Paths, Dangers, Strategies** by Nick Bostrom: ⚠️ A foundational book examining the **potential for superintelligent AI** and strategies for ensuring its safe development.
+* **[🤖⚠️📈 Superintelligence: Paths, Dangers, Strategies](../books/superintelligence-paths-dangers-strategies.md)** by Nick Bostrom: ⚠️ A foundational book examining the **potential for superintelligent AI** and strategies for ensuring its safe development.

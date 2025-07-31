@@ -7,6 +7,7 @@ URL: https://bagrounds.org/books/clean-code
 Author: 
 tags: 
 affiliate link: https://amzn.to/3ZHMwO2
+CTA: ✨ Polish your bits.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧼💾 Clean Code: A Handbook of Agile Software Craftsmanship  
@@ -66,11 +67,11 @@ The book covers numerous principles and practices, including:
 ### ⚔️ Contrasting Perspectives & Broader Scope  
 * 💡 **A Philosophy of Software Design** by John Ousterhout: Offers a different perspective, sometimes contrasting with Clean Code, emphasizing minimizing complexity ("deep modules, shallow interfaces") over extreme decomposition. Often recommended as a more modern alternative.  
 * ✨ **Code Simplicity: The Fundamentals of Software** by Max Kanat-Alexander: A shorter book laying down general rules and heuristics for better software design without specific code examples.  
-* 📊 **[Designing Data-Intensive Applications](./designing-data-intensive-applications.md)** by Martin Kleppmann: Focuses on the challenges of data systems, exploring the underlying principles of reliability, scalability, and maintainability in data-driven applications.  
-* 🌐 **[Domain-Driven Design: Tackling Complexity in the Heart of Software](./domain-driven-design.md)** by Eric Evans: Focuses on aligning software design with the complexities of the business domain.  
-* 👥 **Team Topologies: Organizing Business and Technology Teams for Fast Flow** by Matthew Skelton and Manuel Pais: Explores how team organization impacts software architecture and delivery.  
-* 📈 **[Accelerate](./accelerate.md): The Science of Lean Software and DevOps** by Nicole Forsgren, Jez Humble, and Gene Kim: Uses research to explore practices that drive high performance in technology organizations.  
-* 🏢 **Software Engineering at Google** edited by Titus Winters, Tom Manshreck, and Hyrum Wright: Provides insights into Google's engineering practices, focusing on scale, sustainability, and long-term maintenance.  
+* **[💾⬆️🛡️ Designing Data-Intensive Applications: The Big Ideas Behind Reliable, Scalable, and Maintainable Systems](./designing-data-intensive-applications.md)** by Martin Kleppmann: Focuses on the challenges of data systems, exploring the underlying principles of reliability, scalability, and maintainability in data-driven applications.  
+* **[🧩🧱⚙️❤️ Domain-Driven Design: Tackling Complexity in the Heart of Software](./domain-driven-design.md)** by Eric Evans: Focuses on aligning software design with the complexities of the business domain.  
+* **[🧑‍🤝‍🧑⚙️➡️ Team Topologies: Organizing Business and Technology Teams for Fast Flow](./team-topologies-organizing-business-and-technology-teams-for-fast-flow.md)** by Matthew Skelton and Manuel Pais: Explores how team organization impacts software architecture and delivery.  
+* **[🏎️💾 Accelerate: The Science of Lean Software and DevOps: Building and Scaling High Performing Technology Organizations](./accelerate.md)** by Nicole Forsgren, Jez Humble, and Gene Kim: Uses research to explore practices that drive high performance in technology organizations.  
+* **[💻⚙️ Software Engineering at Google: Lessons Learned from Programming Over Time](./software-engineering-at-google-lessons-learned-from-programming-over-time.md)** edited by Titus Winters, Tom Manshreck, and Hyrum Wright: Provides insights into Google's engineering practices, focusing on scale, sustainability, and long-term maintenance.  
   
 ### 🎨 Creatively Related Reads  
 * 🧠 **Think Like a Programmer: An Introduction to Creative Problem Solving** by V. Anton Spraul: Focuses on the fundamental skill of problem-solving for programmers, breaking down challenges and fostering creative solutions.  

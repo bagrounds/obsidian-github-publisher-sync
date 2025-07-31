@@ -11,7 +11,7 @@ title: 🏡 Home
 ❔ What do 🫵 _you_ 🤔 think?  
   
 ## [🪞 Reflections](./reflections/index.md) ~ Blog (258)  
-- [2025-07-30 | 🤖 AI | 🏹 Arrows 📚📺🤖💬](./reflections/2025-07-30.md)  
+- [2025-07-30 | 🤖 AI | 🏹 Arrows | 🫟 Creatives 📚📺🤖💬](./reflections/2025-07-30.md)  
 - [2025-07-29 | 🚫🛑 Unstoppable 📺](./reflections/2025-07-29.md)  
 - [2025-07-28 | 🤖 AI | 💰 Millionaire 📚📺📄](./reflections/2025-07-28.md)  
 - [2025-07-27 | 🤏🪙 80 20 📺📚](./reflections/2025-07-27.md)  
@@ -36,7 +36,8 @@ title: 🏡 Home
 - [💃➡️ Beginning Modern Dance](./books/beginning-modern-dance.md)  
   
   
-## [📺 Videos](./videos/index.md) (237)  
+## [📺 Videos](./videos/index.md) (238)  
+- [🎨🧱🔄 513 - Why Creatives Have to Build Habits Differently and How to Do It](./videos/513-why-creatives-have-to-build-habits-differently-and-how-to-do-it.md)  
 - [🤖🧠⚙️👩‍💻 AI Engineering with Chip Huyen](./videos/ai-engineering-with-chip-huyen.md)  
 - [😴🧠💡 Dr. Matt Walker: Using Sleep to Improve Learning, Creativity & Memory | Huberman Lab Guest Series](./videos/dr-matt-walker-using-sleep-to-improve-learning-creativity-and-memory-huberman-lab-guest-series.md)  
 - [🧠⬆️🧑‍⚕️💪💡 Dr. Mark D'Esposito: How to Optimize Cognitive Function & Brain Health](./videos/dr-mark-desposito-how-to-optimize-cognitive-function-and-brain-health.md)  
@@ -46,7 +47,6 @@ title: 🏡 Home
 - [👶🛏️⚖️ Co-Sleeping With Infants: Science, Public Policy, and Parents Civil Rights, with James McKenna, PhD](./videos/co-sleeping-with-infants-science-public-policy-and-parents-civil-rights-with-james-mckenna-phd.md)  
 - [👨‍💼🛑💰🗣️ Brooks and Capehart on the political reaction to Trump's tariffs](./videos/brooks-and-capehart-on-the-political-reaction-to-trumps-tariffs.md)  
 - [💔🏛️💸 Brooks and Capehart on the Democratic division over the stopgap funding bill](./videos/brooks-and-capehart-on-the-democratic-division-over-the-stopgap-funding-bill.md)  
-- [✂️🏛️😡 Brooks and Capehart on how voters are reacting to federal cuts](./videos/brooks-and-capehart-on-how-voters-are-reacting-to-federal-cuts.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (79)  

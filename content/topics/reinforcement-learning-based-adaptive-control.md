@@ -1,12 +1,12 @@
 ---
 share: true
 aliases:
-  - Reinforcement Learning based Adaptive Control
-title: Reinforcement Learning based Adaptive Control
+  - 🤖🔄🧠💪 Reinforcement Learning based Adaptive Control
+title: 🤖🔄🧠💪 Reinforcement Learning based Adaptive Control
 URL: https://bagrounds.org/topics/reinforcement-learning-based-adaptive-control
 ---
 [Home](../index.md) > [Topics](./index.md) > [Knowledge](./a-hierarchical-view-of-human-knowledge.md) > [Engineering](./engineering.md) > [Electrical Engineering](./electrical-engineering.md) > [Control Systems](./control-systems.md) > [Adaptive Control](./adaptive-control.md)  
-# Reinforcement Learning based Adaptive Control  
+# 🤖🔄🧠💪 Reinforcement Learning based Adaptive Control  
 ## 🤖 AI Summary  
 **High-Level Summary:**  
   
@@ -26,10 +26,10 @@ Here are some major subcategories within Reinforcement Learning based Adaptive C
   
 Here are some influential and accessible books that provide a good introduction to Reinforcement Learning and Adaptive Control:  
   
-1.  **"[Reinforcement Learning: An Introduction](../books/reinforcement-learning-an-introduction.md)" by Richard S. Sutton and Andrew G. Barto:** 📚 This is considered the bible of RL, providing a comprehensive and clear introduction to the fundamental concepts and algorithms. It's a must-read for anyone interested in RL. (Highly recommended for all of the subcategories)  
-2.  **"[Adaptive Control](../books/adaptive-control.md)" by Karl J. Åström and Björn Wittenmark:** ⚙️ This classic text provides a thorough introduction to traditional adaptive control methods, which form the foundation for many RL-based adaptive control techniques. It's essential for understanding the underlying principles. (Especially useful for Adaptive critic designs)  
+1.  **[🤖➕🧠➡️ Reinforcement Learning: An Introduction](../books/reinforcement-learning-an-introduction.md) by Richard S. Sutton and Andrew G. Barto:** 📚 This is considered the bible of RL, providing a comprehensive and clear introduction to the fundamental concepts and algorithms. It's a must-read for anyone interested in RL. (Highly recommended for all of the subcategories)  
+2.  **[🧬🕹️ Adaptive Control](../books/adaptive-control.md) by Karl J. Åström and Björn Wittenmark:** ⚙️ This classic text provides a thorough introduction to traditional adaptive control methods, which form the foundation for many RL-based adaptive control techniques. It's essential for understanding the underlying principles. (Especially useful for Adaptive critic designs)  
 3.  **"Deep Reinforcement Learning Hands-On" by Maxim Lapan:** 💻 This book offers practical examples and code implementations of various deep RL algorithms, making it a great resource for learning how to apply RL to real-world control problems. It is very useful for model free methods.  
-4.  **"Artificial Intelligence: A Modern Approach" by Stuart Russell and Peter Norvig:** 💡 While not solely focused on RL or adaptive control, this book provides a broad overview of AI concepts, including RL and planning, which are essential for understanding the context of these fields. (Good for general understanding of the field)  
+4.  **[🤖🧠 Artificial Intelligence: A Modern Approach](../books/artificial-intelligence-a-modern-approach.md) by Stuart Russell and Peter Norvig:** 💡 While not solely focused on RL or adaptive control, this book provides a broad overview of AI concepts, including RL and planning, which are essential for understanding the context of these fields. (Good for general understanding of the field)  
 5.  **"Robot Dynamics and Control" by Mark W. Spong, Seth Hutchinson, and M. Vidyasagar:** 🤖 This book is a great resource for understanding the dynamics and control of robotic systems, which are common applications of RL-based adaptive control. It provides a solid foundation in the principles of robot control. (Useful for application understanding)  
   
 ## 💬 [Gemini](https://gemini.google.com/app) Prompt  

@@ -3,7 +3,7 @@ share: true
 aliases:
   - "🤖🧑‍💻📈🚧 John Schulman - Reinforcement Learning from Human Feedback: Progress and Challenges"
 title: "🤖🧑‍💻📈🚧 John Schulman - Reinforcement Learning from Human Feedback: Progress and Challenges"
-URL: https://bagrounds.org/videos/
+URL: https://bagrounds.org/videos/john-schulman-reinforcement-learning-from-human-feedback-progress-and-challenges
 Author: 
 Platform: 
 Channel: UC Berkeley EECS

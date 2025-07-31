@@ -50,8 +50,8 @@ title: 🏡 Home
   
   
 ## [🌌 Topics](./topics/index.md) (79)  
-- [Reinforcement Learning based Adaptive Control](./topics/reinforcement-learning-based-adaptive-control.md)  
-- [Computer Science](./topics/computer-science.md)  
+- [💻🔬 Computer Science](./topics/computer-science.md)  
+- [🤖🔄🧠💪 Reinforcement Learning based Adaptive Control](./topics/reinforcement-learning-based-adaptive-control.md)  
 - [🇨🇳🤖 DeepSeek](./topics/deepseek.md)  
 - [🧠🌐 Knowledge Graphs](./topics/knowledge-graphs.md)  
 - [🌳🗺️🔗🏛️ Ontologies](./topics/ontologies.md)  
@@ -74,11 +74,11 @@ title: 🏡 Home
   
   
 ## [💾 Software](./software/index.md) (29)  
-- [GitHub Copilot for VS Code](./software/github-copilot-for-vs-code.md)  
+- [🦙💬 Ollama](./software/ollama.md)  
+- [🤖💻🪄 GitHub Copilot for VS Code](./software/github-copilot-for-vs-code.md)  
 - [🤖♊ Gemini](./software/gemini.md)  
 - [🤖🖱️📍 Cursor](./software/cursor.md)  
 - [🌐🔓💻 Open WebUI](./software/open-webui.md)  
-- [Ollama](./software/ollama.md)  
   
   
 ## [👥 People](./people/index.md) (11)  

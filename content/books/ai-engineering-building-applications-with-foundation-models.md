@@ -31,6 +31,26 @@ affiliate link: https://amzn.to/459bMyS
                 - ✍️ ask for concise responses  
         - 🏋️ reinforcement learning - punish hallucinations  
             - 🤖 RLHF might make hallucinations worse, but humans might prefer this. 🧑‍💻  
+- 🤖 Prompt engineering best practices  
+    - ✍️ write clear, explicit, unambiguous instructions  
+    - 🎭 ask the model to adopt a persona  
+    - 💡 provide examples  
+    - 📌 specify the 📤 output format  
+        - 📝 e.g. no preambles  
+    - 🌍 provide sufficient context  
+    - 🧠 to restrict model knowledge to context  
+        - ❗ "answer using the only provided context"  
+        - 📚 cite your sources  
+    - 🧩 break complex tasks into simpler subtasks  
+    - 🧠 Let it think  
+    - 🔗 Chain of Thought (COT)  
+        - 🤔 "Think step by step"  
+        - 🗣️ "Explain your decision"  
+    - 🔎 Self Critique  
+        - ✅ "Check your work"  
+- 🔄 Iterate  
+- 2️⃣ Version your prompts  
+- 📏 Evaluate prompt engineering tools  
   
 ## 📚 Book Report: AI Engineering: Building Applications with Foundation Models  
   

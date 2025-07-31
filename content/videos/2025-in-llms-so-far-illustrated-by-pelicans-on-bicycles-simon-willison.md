@@ -62,7 +62,7 @@ youtube: https://youtu.be/YpY83-kA7Bo
 ### ⚖️ AI Ethics, Safety, and Societal Impact  
 * 🤔 ***The Alignment Problem: Machine Learning and Human Values*** by Brian Christian: 🧭 Explores the critical challenge of aligning AI systems with human values, a core issue in AI safety.  
 * 🤖 ***Human Compatible: Artificial Intelligence and the Problem of Control*** by Stuart Russell: ⚠️ A highly influential book by a leading AI researcher, addressing the existential risk posed by advanced AI and how to ensure AI remains beneficial to humanity.  
-* 🧠 ***Superintelligence: Paths, Dangers, Strategies*** by Nick Bostrom: ⚠️ A thought-provoking and foundational text on the potential for superintelligent AI and the risks associated with it.  
+* **[🤖⚠️📈 Superintelligence: Paths, Dangers, Strategies](../books/superintelligence-paths-dangers-strategies.md)** by Nick Bostrom: ⚠️ A thought-provoking and foundational text on the potential for superintelligent AI and the risks associated with it.  
 * **[🧬👥💾 Life 3.0: Being Human in the Age of Artificial Intelligence](../books/life-3-0.md)** by Max Tegmark: 🌎 Explores the vast potential and profound implications of AI for life on Earth and beyond, covering its impact on society, work, and even the future of consciousness.  
 * 🧑‍💻 ***Hello World: Being Human in the Age of Algorithms*** by Hannah Fry: 🌍 Offers insights into how algorithms impact society in real-world scenarios, recommended for understanding the broader societal effects of AI.  
 * 📚 ***Introduction to AI Safety, Ethics, and Society*** by Dan Hendrycks: 🏛️ A textbook that approaches AI safety as a societal challenge, covering technical aspects, collective action problems, and AI governance.  
@@ -70,7 +70,7 @@ youtube: https://youtu.be/YpY83-kA7Bo
   
 ### 🔮 General AI and its Future  
 * 🇨🇳 ***AI Superpowers: China, Silicon Valley, and the New World Order*** by Kai-Fu Lee: 🌍 Provides a perspective on the global race for AI dominance, particularly between the US and China.  
-* 🤖 ***Artificial Intelligence: A Modern Approach*** by Stuart Russell and Peter Norvig: 🎓 A comprehensive and widely used textbook for those seeking a deep academic understanding of AI principles and techniques.  
+* **[🤖🧠 Artificial Intelligence: A Modern Approach](../books/artificial-intelligence-a-modern-approach.md)** by Stuart Russell and Peter Norvig: 🎓 A comprehensive and widely used textbook for those seeking a deep academic understanding of AI principles and techniques.  
 * 🧠 ***A Brief History of Intelligence*** by Max Bennett: 💡 Offers a mix of AI, neuroscience, and human history to provide an insightful look at the evolution of intelligence.  
   
 ## 🐦 Tweet  

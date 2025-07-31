@@ -10,7 +10,8 @@ title: 🏡 Home
 📑 Notes, 💭 thoughts, and 🔗 Links.  
 ❔ What do 🫵 _you_ 🤔 think?  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (257)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (258)  
+- [2025-07-30 | 🤖 AI 📚📺](./reflections/2025-07-30.md)  
 - [2025-07-29 | 🚫🛑 Unstoppable 📺](./reflections/2025-07-29.md)  
 - [2025-07-28 | 🤖 AI | 💰 Millionaire 📚📺📄](./reflections/2025-07-28.md)  
 - [2025-07-27 | 🤏🪙 80 20 📺📚](./reflections/2025-07-27.md)  
@@ -20,33 +21,32 @@ title: 🏡 Home
 - [2025-07-23 | 🤖 AI | 👶🏼 NI 📺📄🥇👶🏼](./reflections/2025-07-23.md)  
 - [2025-07-22 | 🚀 More | 🤿 Deep | 🫛 Peas 📺📚👶🏼](./reflections/2025-07-22.md)  
 - [2025-07-21 | 😴 Nap! | 🧠 Smart | 🥦 Broccoli 📚📺📰👶🏼](./reflections/2025-07-21.md)  
-- [2025-07-20 | ✨ Motivation | 🎹 Music | 🍉 Melon 📺👶🏼](./reflections/2025-07-20.md)  
   
   
-## [📚 Books](./books/index.md) (545)  
+## [📚 Books](./books/index.md) (547)  
+- [🤖⚙️ Agentic Artificial Intelligence: Harnessing AI Agents to Reinvent Business, Work and Life](./books/agentic-artificial-intelligence-harnessing-ai-agents-to-reinvent-business-work-and-life.md)  
+- [🤖🏗️ AI Engineering: Building Applications with Foundation Models](./books/ai-engineering-building-applications-with-foundation-models.md)  
+- [💪😊🎯 From Strength to Strength: Finding Success, Happiness, and Deep Purpose in the Second Half of Life](./books/from-strength-to-strength-finding-success-happiness-and-deep-purpose-in-the-second-half-of-life.md)  
 - [💯⬇️⬆️ The 80 20 Principle: The Secret to Achieving More with Less](./books/the-80-20-principle-the-secret-to-achieving-more-with-less.md)  
 - [🤖🧠 Artificial Intelligence: A Modern Approach](./books/artificial-intelligence-a-modern-approach.md)  
 - [🧠🔗🤔💡 Knowledge Representation and Reasoning](./books/knowledge-representation-and-reasoning.md)  
 - [🎲🧮🧠🤖 Probabilistic Reasoning in Intelligent Systems: Networks of Plausible Inference](./books/probabilistic-reasoning-in-intelligent-systems.md)  
 - [🤖➕🧠➡️ Reinforcement Learning: An Introduction](./books/reinforcement-learning-an-introduction.md)  
 - [🧠💻🤖 Deep Learning](./books/deep-learning.md)  
-- [🤖🏗️ AI Engineering: Building Applications with Foundation Models](./books/ai-engineering-building-applications-with-foundation-models.md)  
 - [💃➡️ Beginning Modern Dance](./books/beginning-modern-dance.md)  
-- [🔟💡 Ten Types of Innovation: The Discipline of Building Breakthroughs](./books/ten-types-of-innovation-the-discipline-of-building-breakthroughs.md)  
-- [🧼💾 Clean Code: A Handbook of Agile Software Craftsmanship](./books/clean-code.md)  
   
   
-## [📺 Videos](./videos/index.md) (236)  
+## [📺 Videos](./videos/index.md) (237)  
+- [🤖🧠⚙️👩‍💻 AI Engineering with Chip Huyen](./videos/ai-engineering-with-chip-huyen.md)  
+- [😴🧠💡 Dr. Matt Walker: Using Sleep to Improve Learning, Creativity & Memory | Huberman Lab Guest Series](./videos/dr-matt-walker-using-sleep-to-improve-learning-creativity-and-memory-huberman-lab-guest-series.md)  
+- [🧠⬆️🧑‍⚕️💪💡 Dr. Mark D'Esposito: How to Optimize Cognitive Function & Brain Health](./videos/dr-mark-desposito-how-to-optimize-cognitive-function-and-brain-health.md)  
+- [🍎🔄🩸 Dr. Casey Means: Transform Your Health by Improving Metabolism, Hormone & Blood Sugar Regulation](./videos/dr-casey-means-transform-your-health-by-improving-metabolism-hormone-and-blood-sugar-regulation.md)  
 - [🛠️⚙️🚀🛡️ The simple system that makes you unstoppable](./videos/the-simple-system-that-makes-you-unstoppable.md)  
 - [🔑🔓🚀🌟 Dr. Adam Grant: How to Unlock Your Potential, Motivation & Unique Abilities](./videos/dr-adam-grant-how-to-unlock-your-potential-motivation-and-unique-abilities.md)  
 - [👶🛏️⚖️ Co-Sleeping With Infants: Science, Public Policy, and Parents Civil Rights, with James McKenna, PhD](./videos/co-sleeping-with-infants-science-public-policy-and-parents-civil-rights-with-james-mckenna-phd.md)  
 - [👨‍💼🛑💰🗣️ Brooks and Capehart on the political reaction to Trump's tariffs](./videos/brooks-and-capehart-on-the-political-reaction-to-trumps-tariffs.md)  
 - [💔🏛️💸 Brooks and Capehart on the Democratic division over the stopgap funding bill](./videos/brooks-and-capehart-on-the-democratic-division-over-the-stopgap-funding-bill.md)  
 - [✂️🏛️😡 Brooks and Capehart on how voters are reacting to federal cuts](./videos/brooks-and-capehart-on-how-voters-are-reacting-to-federal-cuts.md)  
-- [🧫❓❌📱 Biomedical Scientist Answers Pseudoscience Questions From Twitter | Tech Support | WIRED](./videos/biomedical-scientist-answers-pseudoscience-questions-from-twitter-tech-support-wired.md)  
-- [👶🧩🧠➡️ A Simple Way to Learn Complex Skills](./videos/a-simple-way-to-learn-complex-skills.md)  
-- [📺🏛️💸🎯 A look at the history of public media in the U.S. as Republicans target federal funding](./videos/a-look-at-the-history-of-public-media-in-the-us-as-republicans-target-federal-funding.md)  
-- [⚫😭🇺🇸 A Dark Day for Our Country](./videos/a-dark-day-for-our-country.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (79)  

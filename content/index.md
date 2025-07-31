@@ -11,7 +11,7 @@ title: 🏡 Home
 ❔ What do 🫵 _you_ 🤔 think?  
   
 ## [🪞 Reflections](./reflections/index.md) ~ Blog (258)  
-- [2025-07-30 | 🤖 AI 📚📺](./reflections/2025-07-30.md)  
+- [2025-07-30 | 🤖 AI | 🏹 Arrows 📚📺🤖💬](./reflections/2025-07-30.md)  
 - [2025-07-29 | 🚫🛑 Unstoppable 📺](./reflections/2025-07-29.md)  
 - [2025-07-28 | 🤖 AI | 💰 Millionaire 📚📺📄](./reflections/2025-07-28.md)  
 - [2025-07-27 | 🤏🪙 80 20 📺📚](./reflections/2025-07-27.md)  
@@ -57,12 +57,12 @@ title: 🏡 Home
 - [🌳🗺️🔗🏛️ Ontologies](./topics/ontologies.md)  
   
   
-## [🤖💬 Bot Chats](./bot-chats/index.md) (40)  
+## [🤖💬 Bot Chats](./bot-chats/index.md) (41)  
+- [📐🔗🤖🧠 Category Theory for AI Engineering](./bot-chats/category-theory-for-ai-engineering.md)  
 - [💃🕺🎶 Learn to Dance](./bot-chats/learn-to-dance.md)  
 - [🤰⏰👶🔮 Forecasting Parenthood](./bot-chats/forecasting-parenthood.md)  
 - [⚛️💡🚀 Atomic Innovation](./bot-chats/atomic-innovation.md)  
 - [🧠🤝 System 2 Rapport Building](./bot-chats/system-2-rapport-building.md)  
-- [🧩🏢🤖 Domain Driven AI Product Development](./bot-chats/domain-driven-ai-product-development.md)  
   
   
 ## [📄  Articles](./articles/index.md) (36)  

@@ -42,7 +42,7 @@ affiliate link: https://amzn.to/4obYudu
   
 ### 👓 Contrasting and Focused Perspectives  
   
-* 🤯 **"Superintelligence: Paths, Dangers, Strategies" by Nick Bostrom:** ⚠️ This book moves away from the technical implementation of AI and delves into the philosophical and existential questions surrounding the potential creation of artificial superintelligence. 🎯 It contrasts with AIMA's focus on building rational agents by exploring the long-term consequences of succeeding in that endeavor.  
+* **[🤖⚠️📈 Superintelligence: Paths, Dangers, Strategies](./superintelligence-paths-dangers-strategies.md) by Nick Bostrom:** ⚠️ This book moves away from the technical implementation of AI and delves into the philosophical and existential questions surrounding the potential creation of artificial superintelligence. 🎯 It contrasts with AIMA's focus on building rational agents by exploring the long-term consequences of succeeding in that endeavor.  
 * **[❓➡️💡 The Book of Why: The New Science of Cause and Effect](./the-book-of-why.md) by Judea Pearl and Dana Mackenzie:** ❓ Written by one of the pioneers of Bayesian networks, a topic covered in AIMA, this book argues for the importance of causal reasoning in AI. 💡 It presents a different paradigm for building intelligent systems, one that goes beyond pattern recognition to understand cause and effect.  
   
 ### ✨ Creatively Related and Inspirational Reads  

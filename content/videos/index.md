@@ -7,7 +7,7 @@ URL: https://bagrounds.org/videos
 backlinks: false
 ---
 [Home](../index.md)  
-# 📺 Videos (236)  
+# 📺 Videos (237)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
 - [❓💪🔬 12 Questions About Creatine with Stephen Cornish, PhD](./12-questions-about-creatine-w-stephen-cornish-phd.md)  
@@ -22,6 +22,7 @@ backlinks: false
 - [🧠🪜💡🤔⬆️🎓 6 Levels of Thinking Every Student MUST Master](./6-levels-of-thinking-every-student-must-master.md)  
 - [👨‍⚖️🇺🇸⚔️🛑 ACLU attorney on suing Trump administration for using wartime authority for deportations](./aclu-attorney-on-suing-trump-administration-for-using-wartime-authority-for-deportations.md)  
 - [⚫😭🇺🇸 A Dark Day for Our Country](./a-dark-day-for-our-country.md)  
+- [🤖🧠⚙️👩‍💻 AI Engineering with Chip Huyen](./ai-engineering-with-chip-huyen.md)  
 - [📺🏛️💸🎯 A look at the history of public media in the U.S. as Republicans target federal funding](./a-look-at-the-history-of-public-media-in-the-us-as-republicans-target-federal-funding.md)  
 - [🇺🇸📚🔄 A look at what's behind the efforts to reshape how American history is taught](./a-look-at-whats-behind-the-efforts-to-reshape-how-american-history-is-taught.md)  
 - [🏛️⚖️🌍 A look rulings from the Supreme Court term that could have far-reaching consequences](./a-look-rulings-from-the-supreme-court-term-that-could-have-far-reaching-consequences.md)  

@@ -1,12 +1,12 @@
 ---
 share: true
 aliases:
-  - GitHub Copilot for VS Code
-title: GitHub Copilot for VS Code
+  - 🤖💻🪄 GitHub Copilot for VS Code
+title: 🤖💻🪄 GitHub Copilot for VS Code
 URL: https://bagrounds.org/software/github-copilot-for-vs-code
 ---
 [Home](../index.md) > [Software](./index.md)  
-# GitHub Copilot for VS Code  
+# 🤖💻🪄 GitHub Copilot for VS Code  
   
 ## 🤖 AI Summary  
 ### GitHub Copilot for VS Code 🤖💻✨  
@@ -130,9 +130,9 @@ GitHub Copilot was developed as a collaboration between GitHub 🐱‍💻 and O
 * Topical: "Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow" by Aurélien Géron 📚🧠  
 * Tangentially related: "Superintelligence: Paths, Dangers, Strategies" by Nick Bostrom 🧠🤯  
 * Topically opposed: "Code: The Hidden Language of Computer Hardware and Software" by Charles Petzold 💻📚  
-* More general: "Artificial Intelligence: A Modern Approach" by Stuart Russell and Peter Norvig 🤖🧠  
-* More specific: "[Deep Learning](../books/deep-learning.md)" by Ian Goodfellow, Yoshua Bengio, and Aaron Courville 🧠📚  
-* Fictional: "[Daemon](../books/daemon.md)" by Daniel Suarez 👾💻  
+* More general: [🤖🧠 Artificial Intelligence: A Modern Approach](../books/artificial-intelligence-a-modern-approach.md) by Stuart Russell and Peter Norvig 🤖🧠  
+* More specific: [🧠💻🤖 Deep Learning](../books/deep-learning.md) by Ian Goodfellow, Yoshua Bengio, and Aaron Courville 🧠📚  
+* Fictional: [😈💻👹🤖 Daemon](../books/daemon.md) by Daniel Suarez 👾💻  
 * Rigorous: "Speech and Language Processing" by Dan Jurafsky and James H. Martin 🗣️📚  
 * Accessible: [🧬👥💾 Life 3.0: Being Human in the Age of Artificial Intelligence](../books/life-3-0.md) by Max Tegmark 🤖🧠  
   

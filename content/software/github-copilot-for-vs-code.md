@@ -128,7 +128,7 @@ GitHub Copilot was developed as a collaboration between GitHub 🐱‍💻 and O
 📖 **Book Recommendations**  
   
 * Topical: "Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow" by Aurélien Géron 📚🧠  
-* Tangentially related: "Superintelligence: Paths, Dangers, Strategies" by Nick Bostrom 🧠🤯  
+* Tangentially related: [🤖⚠️📈 Superintelligence: Paths, Dangers, Strategies](../books/superintelligence-paths-dangers-strategies.md) by Nick Bostrom 🧠🤯  
 * Topically opposed: "Code: The Hidden Language of Computer Hardware and Software" by Charles Petzold 💻📚  
 * More general: [🤖🧠 Artificial Intelligence: A Modern Approach](../books/artificial-intelligence-a-modern-approach.md) by Stuart Russell and Peter Norvig 🤖🧠  
 * More specific: [🧠💻🤖 Deep Learning](../books/deep-learning.md) by Ian Goodfellow, Yoshua Bengio, and Aaron Courville 🧠📚  

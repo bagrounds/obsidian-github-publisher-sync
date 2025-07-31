@@ -173,10 +173,10 @@ Why did the large language model break up with the chatbot? 🤔 Because it felt
   
 ### 📖 Book Recommendations 📚  
   
-* **Topical:** [Deep Learning](../books/deep-learning.md) by Goodfellow, Bengio, and Courville (Rigorous) 🧠  
+* **Topical:** [🧠💻🤖 Deep Learning](../books/deep-learning.md) by Goodfellow, Bengio, and Courville (Rigorous) 🧠  
 * **Tangentially Related:** *The Alignment Problem: Machine Learning and Human Values* by Brian Christian (Accessible) 👍  
 * **Topically Opposed:** *The Myth of Artificial Intelligence: Why Computers Can't Think the Way We Do* by Erik J. Larson (Accessible) 👎  
-* **More General:** *Artificial Intelligence: A Modern Approach* by Russell and Norvig (Rigorous) 🤖  
+* **More General:** [🤖🧠 Artificial Intelligence: A Modern Approach](../books/artificial-intelligence-a-modern-approach.md) by Russell and Norvig (Rigorous) 🤖  
 * **More Specific:** Research papers and documentation released by DeepSeek AI (Rigorous/Accessible) 🇨🇳  
 * **Fictional:** *Neuromancer* by William Gibson (Accessible) 💻🌌  
 * **Rigorous:** *Neural Networks and Deep Learning* by Michael Nielsen (Accessible/Rigorous) 🕸️💡  

@@ -1,12 +1,12 @@
 ---
 share: true
 aliases:
-  - Computer Science
-title: Computer Science
+  - 💻🔬 Computer Science
+title: 💻🔬 Computer Science
 URL: https://bagrounds.org/topics/computer-science
 ---
 [Home](../index.md) > [Topics](./index.md) > [Knowledge](./a-hierarchical-view-of-human-knowledge.md) > [Engineering](./engineering.md) > [Software Engineering](./software-engineering.md)  
-# Computer Science  
+# 💻🔬 Computer Science  
 ## 🤖 AI Summary  
 **High-Level Summary:**  
 Computer Science is the study of computation, automation, and information. It encompasses both theoretical and practical aspects, focusing on the design, development, and analysis of algorithms, data structures, and computer systems. Its core goals are to understand the nature of computation, create efficient and reliable software and hardware, and solve complex problems using computational methods. Computer Science is fundamental to modern society, driving innovation in virtually every field, from medicine and finance to entertainment and communication. 🚀🌐💡  
@@ -32,7 +32,7 @@ Here are some excellent books to get you started in Computer Science:
     * This is a classic and comprehensive textbook on algorithms and data structures. It's often referred to as "CLRS" and is considered a must-have for any serious computer science student. 📚📈  
 2.  **"Code: The Hidden Language of Computer Hardware and Software" by Charles Petzold:**  
     * This book provides a fascinating and accessible explanation of how computers work, starting from the basics of electricity and logic gates to the creation of software. It's a great way to understand the fundamental concepts of computer science. 💡🔌  
-3.  **"Artificial Intelligence: A Modern Approach" by Stuart Russell and Peter Norvig:**  
+3.  **[🤖🧠 Artificial Intelligence: A Modern Approach](../books/artificial-intelligence-a-modern-approach.md) by Stuart Russell and Peter Norvig:**  
     * This is a leading textbook on artificial intelligence, covering a wide range of topics from search and planning to machine learning and robotics. It's a comprehensive and authoritative resource for anyone interested in AI. 🤖🧠  
 4.  **[🧼💾 Clean Code: A Handbook of Agile Software Craftsmanship](../books/clean-code.md) by Robert C. Martin:**  
     * This book is a must read for anyone that wants to write better code. It focuses on the practices and principles of writing maintainable code. 🧑‍💻✨  

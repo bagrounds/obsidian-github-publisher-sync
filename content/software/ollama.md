@@ -1,12 +1,12 @@
 ---
 share: true
 aliases:
-  - Ollama
-title: Ollama
+  - 🦙💬 Ollama
+title: 🦙💬 Ollama
 URL: https://bagrounds.org/software/ollama
 ---
 [Home](../index.md) > [Software](./index.md)  
-# Ollama  
+# 🦙💬 Ollama  
   
 ## 🤖 AI Summary  
 ### Ollama: Run [Language Models](../topics/large-language-models.md) Locally  

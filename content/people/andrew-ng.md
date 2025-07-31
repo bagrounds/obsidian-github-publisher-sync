@@ -42,7 +42,7 @@ Here are some of his key contributions and roles:
 * 🤝 **"Human Compatible: AI and the Problem of Control" by Stuart Russell:** 🤔 This book explores the challenges of developing AI systems that are aligned with human values and interests, and the potential implications for humanity.  
 * **[🧬👥💾 Life 3.0: Being Human in the Age of Artificial Intelligence](../books/life-3-0.md) by Max Tegmark:** ⏳ This book delves into the potential futures of AI and its profound impact on human existence, examining both risks and rewards.  
 * 🎯 **"The Master Algorithm: How the Quest for the Ultimate Learning Machine Will Remake Our World" by Pedro Domingos:** ✨ This book offers an engaging look at the pursuit of a "master algorithm" that could drive artificial general intelligence.  
-* ⚠️ **"Superintelligence: Paths, Dangers, Strategies" by Nick Bostrom:** 📜 This philosophical and cautionary book examines the potential paths and hazards that may arise as AI systems surpass human cognitive abilities.  
+* **[🤖⚠️📈 Superintelligence: Paths, Dangers, Strategies](../books/superintelligence-paths-dangers-strategies.md) by Nick Bostrom:** 📜 This philosophical and cautionary book examines the potential paths and hazards that may arise as AI systems surpass human cognitive abilities.  
   
 **🏢 IV. Business and Entrepreneurship Books (from Andrew Ng's broader recommendations):**  
 👔 Andrew Ng also recommends books that go beyond technical AI, focusing on innovation, business building, and understanding user needs:  

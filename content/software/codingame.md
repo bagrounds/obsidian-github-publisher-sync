@@ -40,7 +40,7 @@ CodinGame provides a highly scalable 📈, multi-language 🌍, cloud-based ☁�
   
 #### 🚀 Notable Capabilities  
   
-* **Multi-language support** 🌐: Write code in over 25 programming languages 🐍 java ☕ #️⃣ C++ 💻.  
+* **Multi-language support** 🌐: Write code in over 25 programming languages, e.g. 🐍 Python, ☕ java, ➕ C++.  
 * **Gamified learning paths** 🛣️: Progress through "puzzles" and "contests" with increasing difficulty 🏆.  
 * **Code editor with syntax highlighting and auto-completion** ✍️: A comfortable coding environment 🖥️.  
 * **Automated code evaluation** 🤖: Instantly checks code correctness and performance 📊.  

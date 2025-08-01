@@ -57,7 +57,7 @@ youtube: https://youtu.be/YpY83-kA7Bo
 ### ✍️ Prompt Engineering  
 * 🤖 ***Prompt Engineering for Generative AI*** by James Phoenix and Mike Taylor: 🔑 This O'Reilly book provides a solid foundation in generative AI and how to effectively use prompt engineering principles to get reliable results from LLMs and diffusion models.  
 * 💡 ***Unlocking the Secrets of Prompt Engineering: Master the art of creative language generation to accelerate your journey from novice to pro*** by Gilbert Mizrahi: 🎨 This book offers strategies and examples for using AI co-writing tools effectively across various domains.  
-* 🧑‍💻 ***The Art of Prompt Engineering with ChatGPT: A Hands-on Guide*** by Nathan Hunter: 📖 A practical guide specifically focused on prompt engineering with ChatGPT.  
+* **[💻✍️ The Art of Prompt Engineering with ChatGPT: A Hands-On Guide](../books/the-art-of-prompt-engineering-with-chatgpt-a-hands-on-guide.md)** by Nathan Hunter: 📖 A practical guide specifically focused on prompt engineering with ChatGPT.  
   
 ### ⚖️ AI Ethics, Safety, and Societal Impact  
 * 🤔 ***The Alignment Problem: Machine Learning and Human Values*** by Brian Christian: 🧭 Explores the critical challenge of aligning AI systems with human values, a core issue in AI safety.  

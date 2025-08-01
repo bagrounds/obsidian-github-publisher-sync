@@ -1,14 +1,14 @@
 ---
 share: true
 aliases:
-  - 5 tips on getting started with Gems, your custom AI experts
-title: 5 tips on getting started with Gems, your custom AI experts
+  - 🌱🤖⚙️🖐️ 5 tips on getting started with Gems, your custom AI experts
+title: 🌱🤖⚙️🖐️ 5 tips on getting started with Gems, your custom AI experts
 URL: https://bagrounds.org/articles/5-tips-on-getting-started-with-gems-your-custom-ai-experts
 Author: 
 tags: 
 ---
 [Home](../index.md) > [Articles](./index.md)  
-# 5 tips on getting started with Gems, your custom AI experts  
+# [🌱🤖⚙️🖐️ 5 tips on getting started with Gems, your custom AI experts](https://blog.google/products/gemini/google-gems-tips)  
   
 ## 🤖 AI Summary  
 **Getting Started with ([Gemini](../software/gemini.md)) Gems 💎✨**  
@@ -25,5 +25,4 @@ tags:
 * **Fiction:** "Klara and the Sun" (Kazuo Ishiguro) explores AI companionship. 🤖❤️☀️  
   
 ## 💬 [Gemini](https://Gemini.google.com) Prompt  
-> Summarize the article: [5 tips on getting started with Gems, your custom AI experts](https://blog.google/products/gemini/google-gems-tips). Emphasize practical takeaways. Make the following additional recommendations: the best alternate resource on the same topic, the best resource that is tangentially related, the best resource that is diametrically opposed, and the best fiction that incorporates related ideas. Use lots of emojis.  
-  
+> Summarize the article: [5 tips on getting started with Gems, your custom AI experts](https://blog.google/products/gemini/google-gems-tips). Emphasize practical takeaways. Make the following additional recommendations: the best alternate resource on the same topic, the best resource that is tangentially related, the best resource that is diametrically opposed, and the best fiction that incorporates related ideas. Use lots of emojis.

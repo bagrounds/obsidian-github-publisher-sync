@@ -26,4 +26,6 @@ tags:
 * [🤔🐇🐢 Thinking, Fast and Slow](../books/thinking-fast-and-slow.md): A book on human cognition that parallels the paper's discussion of AI reasoning.  
 * 🤖 The Master Algorithm: Provides a broader perspective on the various schools of thought in machine learning.  
 * [🧬👥💾 Life 3.0: Being Human in the Age of Artificial Intelligence](../books/life-3-0.md): Explores the societal implications of advanced AI, offering a philosophical perspective.  
-* [🤔💻🧠 Algorithms to Live By: The Computer Science of Human Decisions](../books/algorithms-to-live-by.md): Connects computer algorithms to real-world human decision-making.
+* [🤔💻🧠 Algorithms to Live By: The Computer Science of Human Decisions](../books/algorithms-to-live-by.md): Connects computer algorithms to real-world human decision-making.  
+  
+## 🐦 Tweet  

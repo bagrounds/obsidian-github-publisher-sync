@@ -91,14 +91,14 @@ URL: https://bagrounds.org/software/model-context-protocol
   
 📖 **Book Recommendations:**  
   
-* Topical: _Natural Language Processing with Transformers_ by Tunstall, von Werra, Wolf 📚  
-* Tangentially related: _[Designing Data-Intensive Applications](../books/designing-data-intensive-applications.md)_ by Kleppmann 📚  
+* Topical: [🗣️💻 Natural Language Processing with Transformers](../books/natural-language-processing-with-transformers.md) by Tunstall, von Werra, Wolf 📚  
+* Tangentially related: [💾⬆️🛡️ Designing Data-Intensive Applications: The Big Ideas Behind Reliable, Scalable, and Maintainable Systems](../books/designing-data-intensive-applications.md) by Kleppmann 📚  
 * Topically opposed: [🦄👤🗓️ The Mythical Man-Month: Essays on Software Engineering](../books/the-mythical-man-month.md) by Brooks 📚 (focuses on software project management, not AI integration)  
-* More general: _Artificial Intelligence: A Modern Approach_ by Russell & Norvig 📚  
+* More general: [🤖🧠 Artificial Intelligence: A Modern Approach](../books/artificial-intelligence-a-modern-approach.md) by Russell & Norvig 📚  
 * More specific: (Currently, there aren't many books specifically on MCP, as it's a relatively new protocol. Keep an eye out for future publications!)  
-* Fictional: _[Daemon](../books/daemon.md)_ and _Freedom™_ by Suarez 📚 (explores AI integration in a fictional context)  
+* Fictional: [😈💻👹🤖 Daemon](../books/daemon.md) and _Freedom™_ by Suarez 📚 (explores AI integration in a fictional context)  
 * Rigorous: (The [MCP specification documents](https://github.com/modelcontextprotocol) themselves are the most rigorous source.)  
 * Accessible: (Keep an eye out for blog posts and tutorials on MCP from Anthropic and the community.)  
   
 📺 **Links To Relevant YouTube Channels Or Videos:**  
-- [Anthropic MCP + Ollama. No Claude Needed? Check it out!](../videos/anthropic-mcp-ollama-no-claude-needed-check-it-out.md)  
+- [Anthropic MCP + Ollama. No Claude Needed? Check it out!](../videos/anthropic-mcp-ollama-no-claude-needed-check-it-out.md)

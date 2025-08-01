@@ -48,9 +48,20 @@ affiliate link: https://amzn.to/459bMyS
         - 🗣️ "Explain your decision"  
     - 🔎 Self Critique  
         - ✅ "Check your work"  
-- 🔄 Iterate  
-- 2️⃣ Version your prompts  
-- 📏 Evaluate prompt engineering tools  
+    - 🔄 Iterate  
+    - 2️⃣ Version your prompts  
+    - 📏 Evaluate prompt engineering tools  
+- 📚 RAG  
+    - 🔑 Keyword vs ➡️ vector search  
+- 🤖 Agents  
+    - 🧰 tool use  
+    - 🗺️ planning  
+    - ⚠️ failure modes  
+    - ✅ evaluation  
+- 🧠 Memory  
+    - 🧠 Model contains internal knowledge  
+    - 🪟 Context window ~ ⌛ short term memory  
+    - 💾 External storage ~ 📆 long term memory  
   
 ## 📚 Book Report: AI Engineering: Building Applications with Foundation Models  
   

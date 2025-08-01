@@ -5,12 +5,12 @@ aliases:
 title: 👀 Attention Is All You Need
 URL: https://bagrounds.org/articles/attention-is-all-you-need
 Author: 
-tags: 
+tags: []
 ---
 [Home](../index.md) > [Articles](./index.md)  
 # [👀 Attention Is All You Need](https://arxiv.org/pdf/1706.03762)  
 ## 🤖 AI Summary  
-**TL;DR:** 😴 **TL;DR:** 📄 This paper came up with a new way for computers to process language, called the "Transformer." 🤖 It's really good at tasks like translation 🗣️ because it pays attention 👀 to all parts of a sentence at once, instead of reading it word by word.  
+😴 **TL;DR:** 📄 This paper came up with a new way for computers to process language, called the "Transformer." 🤖 It's really good at tasks like translation 🗣️ because it pays attention 👀 to all parts of a sentence at once, instead of reading it word by word.  
   
 **Explanation:**  
   

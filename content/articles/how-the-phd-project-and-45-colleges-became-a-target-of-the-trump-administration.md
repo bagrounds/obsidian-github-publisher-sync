@@ -1,14 +1,14 @@
 ---
 share: true
 aliases:
-  - How the Ph.D. Project, and 45 colleges, became a target of the Trump administration
-title: How the Ph.D. Project, and 45 colleges, became a target of the Trump administration
+  - 👨‍🎓🎯🚫 How the Ph.D. Project, and 45 colleges, became a target of the Trump administration
+title: 👨‍🎓🎯🚫 How the Ph.D. Project, and 45 colleges, became a target of the Trump administration
 URL: https://bagrounds.org/articles/how-the-phd-project-and-45-colleges-became-a-target-of-the-trump-administration
 Author: 
 tags: 
 ---
 [Home](../index.md) > [Articles](./index.md)  
-# [How the Ph.D. Project, and 45 colleges, became a target of the Trump administration](https://www.npr.org/2025/03/24/nx-s1-5330715/trump-phd-college-university-investigation-dei-diversity)  
+# [👨‍🎓🎯🚫 How the Ph.D. Project, and 45 colleges, became a target of the Trump administration](https://www.npr.org/2025/03/24/nx-s1-5330715/trump-phd-college-university-investigation-dei-diversity)  
 ## 🤖 AI Summary: Federal Investigation of Ph.D. Project and its Impact on Diversity Initiatives  
 • 🏛️ The U.S. Education Department is investigating 🔎 45 universities 🏫 for partnering with the 🧑‍🎓 Ph.D. Project, a nonprofit supporting 🤝 underrepresented minority doctoral students in business 💼, alleging violation 🚫 of the 1964 Civil Rights Act due to race-based eligibility.  
   

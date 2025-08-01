@@ -7,7 +7,7 @@ URL: https://bagrounds.org/books
 backlinks: false
 ---
 [Home](../index.md)  
-# 📚 Books (547)  
+# 📚 Books (549)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)  
 - [🧑‍🤝‍🧑📈 10 to 25: The Science of Motivating Young People: A Groundbreaking Approach to Leading the Next Generation - And Making Your Own Life Easier](./10-to-25-the-science-of-motivating-young-people-a-groundbreaking-approach-to-leading-the-next-generation-and-making-your-own-life-easier.md)  
@@ -373,6 +373,7 @@ Feedback Control of Dynamic Systems]]
 - [🤫🧠 Subliminal: How Your Unconscious Mind Rules Your Behavior](./subliminal-how-your-unconscious-mind-rules-your-behavior.md)  
 - [🌅🔪💀 Sunrise On The Reaping](./sunrise-on-the-reaping.md)  
 - [🔮🎨🔬 Superforecasting: The Art and Science of Prediction](./superforecasting-the-art-and-science-of-prediction.md)  
+- [🤖⚠️📈 Superintelligence: Paths, Dangers, Strategies](./superintelligence-paths-dangers-strategies.md)  
 - [🌞🌬️🌊🌋 Sustainable Energy - Without the Hot Air](./sustainable-energy-without-the-hot-air.md)  
 - [💥🌀➡️⏳⚖️🕰️ ️ Sync: How Order Emerges From Chaos In The Universe, Nature, And Daily Life](./sync.md)  
 - [🖥️🔑 System Design Interview - An Insider's Guide](./system-design-interview-an-insiders-guide.md)  
@@ -395,6 +396,7 @@ Feedback Control of Dynamic Systems]]
 - [🎨😨 The Art of Fear: Why Conquering Fear Won't Work and What to Do Instead](./the-art-of-fear.md)  
 - [🎨🤓 The Art of Learning: A Journey in the Pursuit of Excellence](./the-art-of-learning.md)  
 - [🤸😊🎯🌟 The Art of Living: The Classical Manual on Virtue, Happiness, and Effectiveness](./the-art-of-living.md)  
+- [💻✍️ The Art of Prompt Engineering with ChatGPT: A Hands-On Guide](./the-art-of-prompt-engineering-with-chatgpt-a-hands-on-guide.md)  
 - [😴🧘☕⏳ The Art of Rest: How to Find Respite in the Modern Age](./the-art-of-rest-how-to-find-respite-in-the-modern-age.md)  
 - [♟️🧠📈🎯 The Art of Strategy: A Game Theorist's Guide to Success in Business and Life](./the-art-of-strategy-a-game-theorists-guide-to-success-in-business-and-life.md)  
 - [🎨🤔🖼️ The Art of Thinking Clearly](./the-art-of-thinking-clearly.md)  

@@ -29,4 +29,7 @@ The paper 🧐 contrasts the new framework with existing methods, primarily Chai
 * The Alignment Problem by Brian Christian: Addresses the critical question of how to ensure machine learning systems ⚖️ align with human values.  
 * Build a Large Language Model (From Scratch) by Sebastian Raschka: A hands-on guide for those who want to 🛠️ build a large language model from the ground up.  
 * AI Superpowers: China, Silicon Valley, and the New World Order by Kai-Fu Lee: Offers a broader geopolitical 🌎 perspective on the global competition in artificial intelligence.  
-* Multi-Agent Reinforcement Learning: Foundations and Modern Approaches by Stefano V. Albrecht, Filippos Christianos, and Lukas Schäfer: Dives into how multiple intelligent agents can 🤝 interact and learn in shared environments.
+* Multi-Agent Reinforcement Learning: Foundations and Modern Approaches by Stefano V. Albrecht, Filippos Christianos, and Lukas Schäfer: Dives into how multiple intelligent agents can 🤝 interact and learn in shared environments.  
+  
+## 🐦 Tweet  
+<blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">🗣️🗺️🤖⚙️ Reasoning with Language Model is Planning with World Model<br><br>🧠 Reasoning | 🗺️ Planning | 🤖 Language Models | 📈 Performance | 💡 Framework | 🤖 World Model | 🗄️ Arxiv<a href="https://t.co/o2QQgTuDxO">https://t.co/o2QQgTuDxO</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/1951088746855801047?ref_src=twsrc%5Etfw">August 1, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

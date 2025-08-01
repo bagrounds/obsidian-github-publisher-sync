@@ -8,7 +8,7 @@ Author:
 tags: 
 ---
 [Home](../index.md) > [Articles](./index.md)  
-# ⚙️🛡️🐛 Making Reliable Distributed Systems in the Presence of Software Errors  
+# [⚙️🛡️🐛 Making Reliable Distributed Systems in the Presence of Software Errors](https://erlang.org/download/armstrong_thesis_2003.pdf)  
 ## 🤖 AI Summary  
 ### TL;DR 💡  
   
@@ -86,7 +86,7 @@ The thesis is supported by case studies of real-world systems, including the Eri
   
 While the focus is primarily on software aspects, the importance of considering both software and hardware failures is acknowledged. 💻🔧🌐 The thesis also discusses the limitations of the current implementations and suggests areas for future work, demonstrating a commitment to continuous improvement. 🛠️🚀📈  
   
-### Additional Book Recommendations 📚  
+## Book Recommendations 📚  
   
 * **Best alternate book on the same topic**: "Designing for Scalability with Erlang/OTP" by Francesco Cesarini and Steve Vinoski. 📚🚀📈  
   
@@ -94,7 +94,7 @@ While the focus is primarily on software aspects, the importance of considering 
   
 * **Best book that is diametrically opposed**: [🦄👤🗓️ The Mythical Man-Month: Essays on Software Engineering](../books/the-mythical-man-month.md) by Frederick P. Brooks Jr., which focuses on software project management but offers a contrasting perspective on the challenges of software development. 📚🤔💼  
   
-* **Best fiction book that incorporates related ideas**: "[Daemon](../books/daemon.md)" by Daniel Suarez, a techno-thriller that explores themes of distributed systems and autonomous software. 📚🤖🌐  
+* **Best fiction book that incorporates related ideas**: [😈💻👹🤖 Daemon](../books/daemon.md) by Daniel Suarez, a techno-thriller that explores themes of distributed systems and autonomous software. 📚🤖🌐  
   
 * **Best book that is more general**: "Distributed Systems: Concepts and Design" by George Coulouris, Jean Dollimore, and Tim Kindberg, for a broader overview of distributed systems. 📚🌐💡  
   

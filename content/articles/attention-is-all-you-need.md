@@ -8,7 +8,7 @@ Author:
 tags: 
 ---
 [Home](../index.md) > [Articles](./index.md)  
-# 👀 Attention Is All You Need  
+# [👀 Attention Is All You Need](https://arxiv.org/pdf/1706.03762)  
 ## 🤖 AI Summary  
 **TL;DR:** 😴 **TL;DR:** 📄 This paper came up with a new way for computers to process language, called the "Transformer." 🤖 It's really good at tasks like translation 🗣️ because it pays attention 👀 to all parts of a sentence at once, instead of reading it word by word.  
   
@@ -38,7 +38,7 @@ tags:
     * 🚀 This book focuses specifically on the Transformer architecture and its applications in NLP. 🛠️ It's a practical guide that covers implementation details, fine-tuning techniques, and various use cases of Transformers. ⚙️  
   
 📚 **5. For Broader AI Context:**  
-* 🤖 **"Artificial Intelligence: A Modern Approach" by Stuart Russell and Peter Norvig:**  
+* 🤖 **[🤖🧠 Artificial Intelligence: A Modern Approach](../books/artificial-intelligence-a-modern-approach.md) by Stuart Russell and Peter Norvig:**  
     * 🌍 While not solely focused on deep learning or NLP, this book provides a comprehensive overview of artificial intelligence. 🔭 It helps to situate the Transformer within the broader landscape of AI research and its potential impact on the field. ✨  
   
 📚 **6. To Consider the Implications:**  

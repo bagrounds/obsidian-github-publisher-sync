@@ -7,7 +7,7 @@ backlinks: false
 URL: https://bagrounds.org/articles
 ---
 [Home](../index.md)  
-# 📄 Articles (37)  
+# 📄 Articles (39)  
 - [🦊😈🐾🕵️💸 5 takeaways about NPR's reporting on the whistleblower report about DOGE at the NLRB](./5-takeaways-about-nprs-reporting-on-the-whistleblower-report-about-doge-at-the-nlrb.md)  
 - [🌱🤖⚙️🖐️ 5 tips on getting started with Gems, your custom AI experts](./5-tips-on-getting-started-with-gems-your-custom-ai-experts.md)  
 - [⏱️⚔️🏛️ '60 Minutes' chief resigns, saying show's independence was compromised](./60-minutes-chief-resigns-saying-shows-independence-was-compromised.md)  
@@ -15,6 +15,7 @@ URL: https://bagrounds.org/articles
 - [🏛️🕸️🧩 Architectural Styles and the Design of Network Based Software Architectures](./architectural-styles-and-the-design-of-network-based-software-architectures.md)  
 - [👀 Attention Is All You Need](./attention-is-all-you-need.md)  
 - [🐕🌿⚕️🎗️ Cannabis for Pets With Cancer](./cannabis-for-pets-with-cancer.md)  
+- [🏗️🧩🌍 Context Engineering: An Emerging Concept in the MCP Ecosystem](./context-engineering-an-emerging-concept-in-the-mcp-ecosystem.md)  
 - [💪🧠📉💊🔎 Creatine Supplementation in Depression: A Review of Mechanisms, Efficacy, Clinical Outcomes, and Future Directions](./creatine-supplementation-in-depression-a-review-of-mechanisms-efficacy-clinical-outcomes-and-future-directions.md)  
 - [⚠️🖇️ Google Cautions Against Using Too Many Internal Links](./google-cautions-against-using-too-many-internal-links.md)  
 - [📚🧩🤖 Guide Comprehensive RAG Implementation Guide](./comprehensive-rag-implementation-guide.md)  
@@ -30,6 +31,7 @@ URL: https://bagrounds.org/articles
 - [Musical intervention enhances infants’ neural processing of temporal structure in music and speech](./musical-intervention-enhances-infants-neural-processing-of-temporal-structure-in-music-and-speech.md)  
 - [📚🔥 Naval Academy removes nearly 400 books from library in new DEI purge ordered by Hegseth’s office](./naval-academy-removes-nearly-400-books-from-library-in-new-dei-purge-ordered-by-hegseths-office.md)  
 - [🧠🕸️📜📈 Neural Networks and the Chomsky Hierarchy](./neural-networks-and-the-chomsky-hierarchy.md)  
+- [📊🔎🤖🪜 New Evaluation, Library, and Analysis of Step By Step Reasoning with Large Language Models](./new-evaluation-library-and-analysis-of-step-by-step-reasoning-with-large-language-models.md)  
 - [🥼💰🧊 NIH freezes funds to Harvard and four other universities, but can’t tell them](./nih-freezes-funds-to-harvard-and-four-other-universities-but-cant-tell-them.md)  
 - [📈❓📏🤖 On the Difficulty of Extrapolation with NN Scaling](./on-the-difficulty-of-extrapolation-with-nn-scaling.md)  
 - [Project 2025 and education: A lot of bad ideas, some more actionable than others](./project-2025-and-education-a-lot-of-bad-ideas-some-more-actionable-than-others.md)  

@@ -1,14 +1,14 @@
 ---
 share: true
 aliases:
-  - How Project 2025 Would Devastate Public Education
-title: How Project 2025 Would Devastate Public Education
+  - 📉🍎🔥🚫 How Project 2025 Would Devastate Public Education
+title: 📉🍎🔥🚫 How Project 2025 Would Devastate Public Education
 URL: https://bagrounds.org/articles/how-project-2025-would-devastate-public-education
 Author: 
 tags: 
 ---
 [Home](../index.md) > [Articles](./index.md)  
-# [How Project 2025 Would Devastate Public Education](https://www.nea.org/nea-today/all-news-articles/how-project-2025-would-devastate-public-education)  
+# [📉🍎🔥🚫 How Project 2025 Would Devastate Public Education](https://www.nea.org/nea-today/all-news-articles/how-project-2025-would-devastate-public-education)  
 ## 🤖 AI Summary  
 * **Prioritization of "Parental Rights" and School Choice:** 👨‍👩‍👧‍👦➡️🏫 Project 2025 advocates for expanding "parental rights," which often translates to promoting voucher programs and charter schools. 💸 The NEA argues this diverts public funds from traditional public schools, undermining their resources and stability. 📉 It is feared this will increase segregation and inequality within the education system. 💔  
 * **Ideological Curriculum Control:** 📚🚫 The project aims to impose a conservative ideological framework on school curricula. 📜 This could lead to restrictions on teaching topics like critical race theory, LGBTQ+ issues, and certain aspects of history. 🤐 The NEA expresses concern about the suppression of diverse perspectives and the erosion of academic freedom. 🗽➡️🔒  

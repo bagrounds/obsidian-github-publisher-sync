@@ -4,10 +4,13 @@ aliases:
   - "😴🧠📈 Take a Nap! Change Your Life.: The Scientific Plan to Make You Smarter, Healthier, More Productive"
 URL: https://bagrounds.org/books/take-a-nap-change-your-life-the-scientific-plan-to-make-you-smarter-healthier-more-productive
 share: true
-CTA: 😴 Recharge your potential.
+CTA: 🛌 Revitalize existence.
+affiliate link: https://amzn.to/3U9wZ6E
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](../index.md) > [Books](./index.md) | [😴🎡 The Nap Wheel](../articles/the-nap-wheel.md)  
 # 😴🧠📈 Take a Nap! Change Your Life.: The Scientific Plan to Make You Smarter, Healthier, More Productive  
+[🛒 Take a Nap! Change Your Life.: The Scientific Plan to Make You Smarter, Healthier, More Productive. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3U9wZ6E)  
+  
 😴 A wave of scientific evidence is washing away the stigma of the midday nap, and 👨‍⚕️ Dr. Sara C. Mednick's "Take a Nap! Change Your Life" is a key text in this 🌅 awakening. 📖 This book serves as a practical guide to harnessing the power of napping for a more productive, healthier, and fulfilling life.  
   
 ## 📖 Book Report: *Take a Nap! Change Your Life.*  

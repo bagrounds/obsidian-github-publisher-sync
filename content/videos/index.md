@@ -7,7 +7,7 @@ URL: https://bagrounds.org/videos
 backlinks: false
 ---
 [Home](../index.md)  
-# 📺 Videos (238)  
+# 📺 Videos (240)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
 - [❓💪🔬 12 Questions About Creatine with Stephen Cornish, PhD](./12-questions-about-creatine-w-stephen-cornish-phd.md)  
@@ -16,6 +16,7 @@ backlinks: false
 - [🤖📅🦢🚲 2025 in LLMs so far, illustrated by Pelicans on Bicycles - Simon Willison](./2025-in-llms-so-far-illustrated-by-pelicans-on-bicycles-simon-willison.md)  
 - [🗓️🎯📈💡 2025 Yearly Themes](./2025-yearly-themes.md)  
 - [📚⏱️💡 21 Life-Changing Books Summarized in 18 Minutes](./21-life-changing-books-summarized-in-18-minutes.md)  
+- [😴⬇️⚡ 22: The Power of the Downstate, Optimizing Sleep and Recovery | Sara Mednick, PhD](./22-the-power-of-the-downstate-optimizing-sleep-and-recovery-sara-mednick-phd.md)  
 - [2️⃣⬆️🧠👩‍🚀 Double Your Productivity using this ADHD System (Invented by a Space Systems Engineer)](./double-your-productivity-using-this-adhd-system-invented-by-a-space-systems-engineer.md)  
 - [🪜📈🏢 3 High Leverage Career Skills (From a Principal At Amazon)](./3-high-leverage-career-skills-from-a-principal-at-amazon.md)  
 - [🧠⏳🚀⚡ 4 ADHD Habits to Make 2025 Hyper Productive](./4-adhd-habits-to-make-2025-hyper-productive.md)  
@@ -159,6 +160,7 @@ backlinks: false
 - [Susan Crawford wins Wisconsin Supreme Court seat, cementing liberal majority](./susan-crawford-wins-wisconsin-supreme-court-seat-cementing-liberal-majority.md)  
 - [👤💀🏛️🚓 Suspect Captured, Charged In Shootings Of Minnesota Lawmakers | NPR News Now](./suspect-captured-charged-in-shootings-of-minnesota-lawmakers-npr-news-now.md)  
 - [Systems Thinking Course - Lesson 03 - Pillar 2: Communication](./systems-thinking-course-lesson-03-pillar-2-communication.md)  
+- [😴🔄✨ Take a Nap! Change Your Life | Sara Mednick | Talks at Google](./take-a-nap-change-your-life-sara-mednick-talks-at-google.md)  
 - [📢👨⚖️🗣️ Tamara Keith and Amy Walter on the public response to Trump's handling of the Epstein case](./tamara-keith-and-amy-walter-on-the-public-response-to-trumps-handling-of-the-epstein-case.md)  
 - [💩🍄👶♻️🗑️ Texas startup sells plastic-eating fungi diapers to tackle landfill waste | REUTERS](./texas-startup-sells-plastic-eating-fungi-diapers-to-tackle-landfill-waste-reuters.md)  
 - [⏱️🧠🐘 The 10 Minute memory method](./the-10-minute-memory-method.md)  

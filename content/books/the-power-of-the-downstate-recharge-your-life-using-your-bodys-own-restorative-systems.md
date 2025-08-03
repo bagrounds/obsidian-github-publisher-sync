@@ -35,7 +35,7 @@ The Power of the Downstate offers readers practical, evidence-based strategies t
   
 ### 📖 Similar Reads  
   
-* 👃 **Breath: The New Science of a Lost Art by James Nestor:** 🫁 This book delves deep into the science and practice of breathing, exploring how conscious control of our breath can have profound effects on our physical and mental health.  
+* **[🫁🌬️ Breath: The New Science of a Lost Art](./breath-the-new-science-of-a-lost-art.md) by James Nestor:** 🫁 This book delves deep into the science and practice of breathing, exploring how conscious control of our breath can have profound effects on our physical and mental health.  
 * **[😴💭 Why We Sleep: Unlocking the Power of Sleep and Dreams](./why-we-sleep-unlocking-the-power-of-sleep-and-dreams.md) by Matthew Walker:** 🧠 A comprehensive exploration of the vital role sleep plays in every aspect of our lives, from learning and memory to emotional regulation and physical health.  
 * **[😴📈 Rest: Why You Get More Done When You Work Less](./rest-why-you-get-more-done-when-you-work-less.md) by Alex Soojung-Kim Pang:** ⏱️ This book challenges the modern cult of busyness and makes a compelling case for the importance of deliberate rest in achieving peak performance and a more fulfilling life.  
 * **[🤕🎼🧠 The Body Keeps the Score: Brain, Mind, and Body in the Healing of Trauma](./the-body-keeps-the-score-brain-mind-and-body-in-the-healing-of-trauma.md) by Bessel van der Kolk:** 🧠 While focused on trauma, this book provides profound insights into the mind-body connection and the importance of somatic practices for healing and well-being.  

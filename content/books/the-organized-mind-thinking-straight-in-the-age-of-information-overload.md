@@ -5,6 +5,7 @@ aliases:
 URL: https://bagrounds.org/books/the-organized-mind-thinking-straight-in-the-age-of-information-overload
 share: true
 affiliate link: https://amzn.to/3SSyVzT
+CTA: 🧠 Simplify your life.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧠🗂️ The Organized Mind: Thinking Straight in the Age of Information Overload  
@@ -64,7 +65,7 @@ Daniel J. Levitin, Ph.D., is a neuroscientist, cognitive psychologist, and bests
 * ⌛ **Four Thousand Weeks: Time Management for Mortals by Oliver Burkeman:** Challenges conventional productivity advice and encourages readers to embrace their limitations and make conscious choices about how to spend their finite time.  
 * **[😴📈 Rest: Why You Get More Done When You Work Less](./rest-why-you-get-more-done-when-you-work-less.md) by Alex Soojung-Kim Pang:** Argues for the importance of deliberate rest in achieving peak performance and creativity, contrasting with the "always-on" mentality.  
 * 📱 **Digital Minimalism: Choosing a Focused Life in a Noisy World by Cal Newport:** Offers a philosophy for intentionally and aggressively curating your digital life to support your values and goals, rather than being consumed by technology.  
-* 🧘 **How to Do Nothing: Resisting the Attention Economy by Jenny Odell:** A more philosophical take that critiques the "attention economy" and advocates for reclaiming our attention for deeper engagement with the world around us.  
+* **[📵 How to Do Nothing: Resisting the Attention Economy](./how-to-do-nothing-resisting-the-attention-economy.md) by Jenny Odell:** A more philosophical take that critiques the "attention economy" and advocates for reclaiming our attention for deeper engagement with the world around us.  
   
 ### 💡 Creatively Related Book Recommendations  
   

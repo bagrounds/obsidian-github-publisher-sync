@@ -53,7 +53,7 @@ The book is packed 💼 with practical techniques ⚙️ to help readers move fr
   
 * 🚫 **_Laziness Does Not Exist_ by Devon Price:** This book offers a powerful counter-narrative 📢 to the hustle culture 🏃‍♀️, arguing that what we label as "laziness" is often a response to burnout 🔥, unmet needs, or systemic barriers. It advocates for self-compassion 💖 and setting realistic expectations ✅.  
 * ⏳ **_Four Thousand Weeks: Time Management for Mortals_ by Oliver Burkeman:** A thought-provoking 🧠 book that challenges the modern obsession with "getting everything done." Burkeman encourages readers to embrace their limitations 🚧 and focus on what truly matters ❤️ in their finite lives.  
-* 📵 **_How to Do Nothing: Resisting the Attention Economy_ by Jenny Odell:** This book is a compelling argument for disconnecting 🔌 from the constant demands of the digital world 🌐 and rediscovering the value of deep attention 👀 and meaningful engagement 🤝 with the physical world 🌍.  
+* **[📵 How to Do Nothing: Resisting the Attention Economy](./how-to-do-nothing-resisting-the-attention-economy.md) by Jenny Odell:** This book is a compelling argument for disconnecting 🔌 from the constant demands of the digital world 🌐 and rediscovering the value of deep attention 👀 and meaningful engagement 🤝 with the physical world 🌍.  
   
 ### 🎨 Creatively Related Reads: Exploring the Psychology of Habits and Motivation  
   

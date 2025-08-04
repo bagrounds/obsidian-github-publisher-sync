@@ -5,6 +5,7 @@ aliases:
 URL: https://bagrounds.org/books/fatigue-science-for-human-health
 share: true
 affiliate link: https://amzn.to/43oKvbT
+CTA: 😴 Prioritize restoration.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 😩⚕️ Fatigue Science for Human Health  
@@ -67,7 +68,7 @@ affiliate link: https://amzn.to/43oKvbT
 * 🛌 **Sleep Smarter: 21 Proven Tips to Sleep Your Way To a Better Body, Better Health and Bigger Success** by Shawn Stevenson: Provides practical, science-backed strategies to enhance sleep quality by aligning with circadian rhythms and minimizing sleep disruptors.  
 * **[🌄⏳ The Circadian Code: Lose Weight, Supercharge Your Energy, and Transform Your Health from Morning to Midnight](./the-circadian-code.md)** by Dr. Satchin Panda: Explains how aligning daily routines with the body's natural clock can improve health and energy.  
 * 📝 **Sleep: A Very Short Introduction** by Steven W. Lockley: A concise, information-packed introduction to the current scientific understanding of sleep and related medical conditions.  
-* 📚 **The Science of Sleep** (Open Textbook Library): A comprehensive introduction to the biology, psychology, and cultural context of sleep.  
+* **[😴🔬 The Science of Sleep: What It Is, How It Works, and Why It Matters](./the-science-of-sleep-what-it-is-how-it-works-and-why-it-matters.md)** (Open Textbook Library): A comprehensive introduction to the biology, psychology, and cultural context of sleep.  
 * 🏥 **Principles and Practice of Sleep Medicine** (Elsevier): A comprehensive medical textbook on sleep medicine.  
 * 🔄 **Sleep Reimagined: The Fast Track to a Revitalized Life** by Pedram Navab: Focuses on a cognitive behavioral therapy (CBT-I) program to improve sleep.  
 * 🌃 **Mapping the Darkness** by Kenneth Miller: Weaves science and history to tell the story of scientists who pioneered sleep science.  
@@ -91,7 +92,7 @@ affiliate link: https://amzn.to/43oKvbT
 * **[➖💯 Essentialism: The Disciplined Pursuit of Less](./essentialism-the-disciplined-pursuit-of-less.md)** by Greg McKeown: Advocates for identifying what is truly essential and eliminating the rest to focus on what matters.  
 * 📵 **Digital Minimalism: Choosing a Focused Life in a Noisy World** by Cal Newport: Argues for intentional technology use to reclaim solitude and focus, preventing burnout.  
 * **[🤿💼 Deep Work](./deep-work.md): Rules for Focused Success in a Distracted World** by Cal Newport: Offers strategies for developing the ability to focus without distraction on cognitively demanding tasks.  
-* 🌳 **How to Do Nothing: Resisting the Attention Economy** by Jenny Odell: A critique of the attention economy and its role in "hustle culture."  
+* **[📵 How to Do Nothing: Resisting the Attention Economy](./how-to-do-nothing-resisting-the-attention-economy.md)** by Jenny Odell: A critique of the attention economy and its role in "hustle culture."  
 * 🙅‍♀️ **Laziness Does Not Exist** by Devon Price: Challenges societal notions of laziness and productivity.  
 * 🕊️ **The Radical Pursuit of Rest: Escaping the Productivity Trap** by John Koessler: A theological and philosophical exploration of rest in a culture that values constant activity.  
 * 🕰️ **The Philosophy of Rest** by Ella Adelia Fletcher: An older work exploring the importance of physical, mental, and emotional rest for well-being and productivity.  

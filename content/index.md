@@ -10,7 +10,8 @@ title: 🏡 Home
 📑 Notes, 💭 thoughts, and 🔗 Links.  
 ❔ What do 🫵 _you_ 🤔 think?  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (261)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (262)  
+- [2025-08-03 | 😎 Chill 📚](./reflections/2025-08-03.md)  
 - [2025-08-02 | 🫁 Breath 📚](./reflections/2025-08-02.md)  
 - [2025-08-01 | 😴 Nap | 🔋 Downstate | 👩🏼‍🔬 Mednick 📚📄📺👥](./reflections/2025-08-01.md)  
 - [2025-07-31 | 💬 Prompt | 🖼️ Context | 🗺️ Plan 📚📄](./reflections/2025-07-31.md)  
@@ -20,20 +21,19 @@ title: 🏡 Home
 - [2025-07-27 | 🤏🪙 80 20 📺📚](./reflections/2025-07-27.md)  
 - [2025-07-26 | 🪵 Chip | 💃🏼 Dance 🤖💬📚📺](./reflections/2025-07-26.md)  
 - [2025-07-25 | ☀️ Fusion | 🍑🎃 Pumpkin 🤖💬📚👶🏼](./reflections/2025-07-25.md)  
-- [2025-07-24 | 🤖🧙‍♂️ Synthetic Wisdom 🤖💬](./reflections/2025-07-24.md)  
   
   
-## [📚 Books](./books/index.md) (551)  
-- [😴🧠 Sleepyhead: The Neuroscience of a Good Night's Rest](./books/sleepyhead-the-neuroscience-of-a-good-nights-rest.md)  
-- [🔋⬇️⬆️ The Power of the Downstate: Recharge Your Life Using Your Body's Own Restorative Systems](./books/the-power-of-the-downstate-recharge-your-life-using-your-bodys-own-restorative-systems.md)  
-- [⏱️🍎 Time Restricted Eating: A Look into the Lifestyle](./books/time-restricted-eating-a-look-into-the-lifestyle.md)  
+## [📚 Books](./books/index.md) (552)  
+- [🧠🗂️ The Organized Mind: Thinking Straight in the Age of Information Overload](./books/the-organized-mind-thinking-straight-in-the-age-of-information-overload.md)  
+- [🥶🛌 Wintering: The Power of Rest and Retreat in Difficult Times](./books/wintering-the-power-of-rest-and-retreat-in-difficult-times.md)  
+- [🚀📈🧘 Peak Performance: Elevate Your Game, Avoid Burnout, and Thrive with the New Science of Success](./books/peak-performance-elevate-your-game-avoid-burnout-and-thrive-with-the-new-science-of-success.md)  
+- [😩⚕️ Fatigue Science for Human Health](./books/fatigue-science-for-human-health.md)  
+- [🌴🧘🏼‍♀️ Do Nothing: How to Break Away from Overworking, Overdoing, and Underliving](./books/do-nothing-how-to-break-away-from-overworking-overdoing-and-underliving.md)  
+- [😴📈 Rest: Why You Get More Done When You Work Less](./books/rest-why-you-get-more-done-when-you-work-less.md)  
+- [😴🧘☕⏳ The Art of Rest: How to Find Respite in the Modern Age](./books/the-art-of-rest-how-to-find-respite-in-the-modern-age.md)  
+- [🫵🚫🦥🧩💩 You Aren't A Lazy Piece of Sh!t: From Procrastination to Productivity](./books/you-arent-a-lazy-piece-of-sht-from-procrastination-to-productivity.md)  
 - [🫁🌬️ Breath: The New Science of a Lost Art](./books/breath-the-new-science-of-a-lost-art.md)  
-- [😴🧠📈 Take a Nap! Change Your Life.: The Scientific Plan to Make You Smarter, Healthier, More Productive](./books/take-a-nap-change-your-life-the-scientific-plan-to-make-you-smarter-healthier-more-productive.md)  
-- [🤖🏗️ AI Engineering: Building Applications with Foundation Models](./books/ai-engineering-building-applications-with-foundation-models.md)  
-- [💻✍️ The Art of Prompt Engineering with ChatGPT: A Hands-On Guide](./books/the-art-of-prompt-engineering-with-chatgpt-a-hands-on-guide.md)  
-- [🧠🧠🧠🧠 A Thousand Brains: A New Theory of Intelligence](./books/a-thousand-brains.md)  
-- [🤖👑 Empire of AI: Dreams and Nightmares in Sam Altman's OpenAI](./books/empire-of-ai-dreams-and-nightmares-in-sam-altmans-openai.md)  
-- [🧬👥💾 Life 3.0: Being Human in the Age of Artificial Intelligence](./books/life-3-0.md)  
+- [🔋⬇️⬆️ The Power of the Downstate: Recharge Your Life Using Your Body's Own Restorative Systems](./books/the-power-of-the-downstate-recharge-your-life-using-your-bodys-own-restorative-systems.md)  
   
   
 ## [📺 Videos](./videos/index.md) (240)  

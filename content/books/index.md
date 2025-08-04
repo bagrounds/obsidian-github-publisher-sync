@@ -7,7 +7,7 @@ URL: https://bagrounds.org/books
 backlinks: false
 ---
 [Home](../index.md)  
-# 📚 Books (551)  
+# 📚 Books (552)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)  
 - [🧑‍🤝‍🧑📈 10 to 25: The Science of Motivating Young People: A Groundbreaking Approach to Leading the Next Generation - And Making Your Own Life Easier](./10-to-25-the-science-of-motivating-young-people-a-groundbreaking-approach-to-leading-the-next-generation-and-making-your-own-life-easier.md)  
@@ -209,6 +209,7 @@ Feedback Control of Dynamic Systems]]
 - [✊🏿 How To Be An Antiracist](./how-to-be-an-antiracist.md)  
 - [🐛➡️🦋 How to Change: The Science of Getting from Where You Are to Where You Want to Be](./how-to-change.md)  
 - [🧠🍄 How to Change Your Mind: What the New Science of Psychedelics Teaches Us About Consciousness, Dying, Addiction, Depression, and Transcendence](./how-to-change-your-mind-what-the-new-science-of-psychedelics-teaches-us-about-consciousness-dying-addiction-depression-and-transcendence.md)  
+- [📵 How to Do Nothing: Resisting the Attention Economy](./how-to-do-nothing-resisting-the-attention-economy.md)  
 - [☀️😀👍😊🌻 How to Have a Good Day: Harness the Power of Behavioral Science to Transform Your Working Life](./how-to-have-a-good-day.md)  
 - [🏡🫧🗑️🍽️🧺📍❔ How to Keep House While Drowning: A Gentle Approach to Cleaning and Organizing](./how-to-keep-house-while-drowning.md)  
 - [📊🤥 How to Lie with Statistics](./how-to-lie-with-statistics.md)  

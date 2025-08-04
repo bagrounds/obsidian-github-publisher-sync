@@ -5,6 +5,7 @@ aliases:
 URL: https://bagrounds.org/books/peak-performance-elevate-your-game-avoid-burnout-and-thrive-with-the-new-science-of-success
 share: true
 affiliate link: https://amzn.to/3HDF0xm
+CTA: 🚀 Maximize potential.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🚀📈🧘 Peak Performance: Elevate Your Game, Avoid Burnout, and Thrive with the New Science of Success  
@@ -52,7 +53,7 @@ The book is relevant for anyone seeking to improve their performance in any area
 * **[😴📈 Rest: Why You Get More Done When You Work Less](./rest-why-you-get-more-done-when-you-work-less.md)** by Alex Soojung-Kim Pang: Argues for the strategic importance of rest, challenging the idea that relentless work is the key to productivity.  
 * ⏳ **Four Thousand Weeks: Time Management for Mortals** by Oliver Burkeman: Critiques the productivity-obsession culture and encourages embracing limitations for a more meaningful life.  
 * 🦥 **Laziness Does Not Exist** by Devon Price: Challenges conventional notions of productivity and laziness, arguing for self-compassion and understanding systemic barriers.  
-* 📵 **How to Do Nothing: Resisting the Attention Economy** by Jenny Odell: Advocates for disengagement from the attention economy and reclaiming focus for deeper connection and observation.  
+* **[📵 How to Do Nothing: Resisting the Attention Economy](./how-to-do-nothing-resisting-the-attention-economy.md)** by Jenny Odell: Advocates for disengagement from the attention economy and reclaiming focus for deeper connection and observation.  
   
 ### 🎨 Creatively Related (Exploring Adjacent Concepts)  
 * 💔 **The Passion Paradox** by Brad Stulberg and Steve Magness: Explores the complexities of passion, how to cultivate a healthy "harmonious passion," and avoid destructive "obsessive passion".  

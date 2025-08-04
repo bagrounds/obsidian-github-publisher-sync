@@ -8,6 +8,8 @@ affiliate link: https://amzn.to/43I7HAG
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🥶🛌 Wintering: The Power of Rest and Retreat in Difficult Times  
+[🛒 Wintering: The Power of Rest and Retreat in Difficult Times. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/43I7HAG)  
+  
 ## 📚 Book Report: ❄️ Wintering: The Power of Rest and Retreat in Difficult Times  
   
 ### ℹ️ Overview  
@@ -48,7 +50,7 @@ affiliate link: https://amzn.to/43I7HAG
 ## 📚 Further Reading Recommendations  
   
 ### ☯️ Similar Themes (Rest, Nature, Reflection, Cycles)  
-* 📕 **_How to Do Nothing: Resisting the Attention Economy_ by Jenny Odell:** Explores withdrawing attention from the "attention economy" and finding value outside constant productivity.  
+* **[📵 How to Do Nothing: Resisting the Attention Economy](./how-to-do-nothing-resisting-the-attention-economy.md) by Jenny Odell:** Explores withdrawing attention from the "attention economy" and finding value outside constant productivity.  
 * **[🪢🌾 Braiding Sweetgrass: Indigenous Wisdom, Scientific Knowledge, and the Teachings of Plants](./braiding-sweetgrass.md) by Robin Wall Kimmerer:** Blends Indigenous wisdom, scientific knowledge, and personal reflection on nature, reciprocity, and connection.  
 * **[😴📈 Rest: Why You Get More Done When You Work Less](./rest-why-you-get-more-done-when-you-work-less.md) by Alex Soojung-Kim Pang:** Presents scientific and practical arguments for the importance of rest for productivity and well-being.  
 * 🤫 **_Silence: In the Age of Noise_ by Erling Kagge:** An explorer's meditation on the power and scarcity of silence.  

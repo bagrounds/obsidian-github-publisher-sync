@@ -48,7 +48,7 @@ The Power of the Downstate offers readers practical, evidence-based strategies t
   
 ### 🎨 Creative Connections  
   
-* 📵 **How to Do Nothing: Resisting the Attention Economy by Jenny Odell:** 🌍 A powerful critique of the forces that seek to monetize our attention and a call for a more intentional and engaged way of being in the world.  
+* **[📵 How to Do Nothing: Resisting the Attention Economy](./how-to-do-nothing-resisting-the-attention-economy.md) by Jenny Odell:** 🌍 A powerful critique of the forces that seek to monetize our attention and a call for a more intentional and engaged way of being in the world.  
 * 😥 **When the Body Says No: The Cost of Hidden Stress by Gabor Maté:** ❤️‍🩹 This book explores the deep connections between emotional stress and physical illness, offering a compassionate and holistic view of health.  
 * 🏝️ **The Art of Stillness: Adventures in Going Nowhere by Pico Iyer:** 🧘 A beautiful and meditative exploration of the value of slowing down, being present, and finding sanctuary in a world of constant motion.  
 * **[🥶🛌 Wintering: The Power of Rest and Retreat in Difficult Times](./wintering-the-power-of-rest-and-retreat-in-difficult-times.md) by Katherine May:** 🐻‍❄️ A memoir and exploration of the "fallow periods" in our lives, arguing for the necessity of rest and retreat as a natural and essential part of the human experience.  

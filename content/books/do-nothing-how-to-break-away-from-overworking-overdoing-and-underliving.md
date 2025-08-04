@@ -39,7 +39,7 @@ This book is particularly relevant for:
 ## 📚 Book Recommendations  
 ### 🧘 Similar Books (Focus on Rest, Anti-Hustle, Slow Living, Mindfulness)  
 * **[😴📈 Rest: Why You Get More Done When You Work Less](./rest-why-you-get-more-done-when-you-work-less.md)** by Alex Soojung-Kim Pang: 🔬 Explores the science and practices behind rest, arguing it's crucial for productivity and creativity.  
-* 🙅 **How to Do Nothing: Resisting the Attention Economy** by Jenny Odell: 🧠 A philosophical exploration of reclaiming attention from the forces that seek to monetize it, advocating for a deeper engagement with the physical world and community.  
+* **[📵 How to Do Nothing: Resisting the Attention Economy](./how-to-do-nothing-resisting-the-attention-economy.md)** by Jenny Odell: 🧠 A philosophical exploration of reclaiming attention from the forces that seek to monetize it, advocating for a deeper engagement with the physical world and community.  
 * 📱 **Digital Minimalism: Choosing a Focused Life in a Noisy World** by Cal Newport: 💡 Offers strategies for reducing reliance on digital technology to cultivate a more focused and meaningful life.  
 * 🐌 **Slow Productivity: The Lost Art of Accomplishment Without Burnout** by Cal Newport: 💡 Presents a philosophy for meaningful work based on doing fewer things, working at a natural pace, and obsessing over quality.  
 * **[➖💯 Essentialism: The Disciplined Pursuit of Less](./essentialism-the-disciplined-pursuit-of-less.md)** by Greg McKeown: 🎯 Focuses on identifying and prioritizing the truly essential tasks and eliminating the rest.  

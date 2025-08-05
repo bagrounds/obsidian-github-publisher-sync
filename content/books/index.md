@@ -7,7 +7,7 @@ URL: https://bagrounds.org/books
 backlinks: false
 ---
 [Home](../index.md)  
-# 📚 Books (552)  
+# 📚 Books (555)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)  
 - [🧑‍🤝‍🧑📈 10 to 25: The Science of Motivating Young People: A Groundbreaking Approach to Leading the Next Generation - And Making Your Own Life Easier](./10-to-25-the-science-of-motivating-young-people-a-groundbreaking-approach-to-leading-the-next-generation-and-making-your-own-life-easier.md)  
@@ -42,6 +42,7 @@ backlinks: false
 - [💔🤝 A Question of Trust: The BBC Reith Lectures 2002](./trust-how-societies-lost-it-and-how-they-might-regain-it.md)  
 - [🤖🧠 Artificial Intelligence: A Modern Approach](./artificial-intelligence-a-modern-approach.md)  
 - [👨‍👩‍👧‍👦🛡️ A Secure Base: Parent-Child Attachment and Healthy Human Development](./a-secure-base-parent-child-attachment-and-healthy-human-development.md)  
+- [❓📚 A Simple Guide to Retrieval Augmented Generation](./a-simple-guide-to-retrieval-augmented-generation.md)  
 - [🧠🧩🛠️ Assessment and Intervention for Executive Function Difficulties](./executive-functions-development-assessment-and-intervention.md)  
 - [🧠🧠🧠🧠 A Thousand Brains: A New Theory of Intelligence](./a-thousand-brains.md)  
 - [⚛️🔄 Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones](./atomic-habits.md)  
@@ -71,6 +72,8 @@ backlinks: false
 - [🧠💡📈🏠🏢🧑‍🎓 Brain Rules: 12 Principles for Surviving and Thriving at Work, Home, and School](./brain-rules-12-principles-for-surviving-and-thriving-at-work-home-and-school.md)  
 - [👶🧠😊📈📚 Brain Rules for Baby: How to Raise a Smart and Happy Child from Zero to Five](./brain-rules-for-baby.md)  
 - [🫁🌬️ Breath: The New Science of a Lost Art](./breath-the-new-science-of-a-lost-art.md)  
+- [🤖🧠⚙️💡 Building Agentic AI Systems: Create intelligent, autonomous AI agents that can reason, plan, and adapt](./building-agentic-ai-systems-create-intelligent-autonomous-ai-agents-that-can-reason-plan-and-adapt.md)  
+- [🤖🧠🔗 Building AI Agents with LLMs, RAG, and Knowledge Graphs: A practical guide to autonomous and modern AI agents](./building-ai-agents-with-llms-rag-and-knowledge-graphs-a-practical-guide-to-autonomous-and-modern-ai-agents.md)  
 - [🏛️⚙️ Bureaucracy: What Government Agencies Do And Why They Do It](./bureaucracy-what-government-agencies-do-and-why-they-do-it.md)  
 - [🥵🔥💨 Burnout: The Secret to Unlocking the Stress Cycle](./burnout-the-secret-to-unlocking-the-stress-cycle.md)  
 - [🌐🔗📈🧩 Business Dynamics: Systems Thinking and Modeling for a Complex World](./business-dynamics.md)  

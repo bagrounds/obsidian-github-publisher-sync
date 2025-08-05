@@ -10,7 +10,8 @@ title: 🏡 Home
 📑 Notes, 💭 thoughts, and 🔗 Links.  
 ❔ What do 🫵 _you_ 🤔 think?  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (262)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (263)  
+- [2025-08-04 | 🤖 AI | 🚚 RAG | 🏗️ Agents 📚🤖💬](./reflections/2025-08-04.md)  
 - [2025-08-03 | 😎 Chill 📚](./reflections/2025-08-03.md)  
 - [2025-08-02 | 🫁 Breath 📚](./reflections/2025-08-02.md)  
 - [2025-08-01 | 😴 Nap | 🔋 Downstate | 👩🏼‍🔬 Mednick 📚📄📺👥](./reflections/2025-08-01.md)  
@@ -20,10 +21,12 @@ title: 🏡 Home
 - [2025-07-28 | 🤖 AI | 💰 Millionaire 📚📺📄](./reflections/2025-07-28.md)  
 - [2025-07-27 | 🤏🪙 80 20 📺📚](./reflections/2025-07-27.md)  
 - [2025-07-26 | 🪵 Chip | 💃🏼 Dance 🤖💬📚📺](./reflections/2025-07-26.md)  
-- [2025-07-25 | ☀️ Fusion | 🍑🎃 Pumpkin 🤖💬📚👶🏼](./reflections/2025-07-25.md)  
   
   
-## [📚 Books](./books/index.md) (552)  
+## [📚 Books](./books/index.md) (555)  
+- [🤖🧠⚙️💡 Building Agentic AI Systems: Create intelligent, autonomous AI agents that can reason, plan, and adapt](./books/building-agentic-ai-systems-create-intelligent-autonomous-ai-agents-that-can-reason-plan-and-adapt.md)  
+- [❓📚 A Simple Guide to Retrieval Augmented Generation](./books/a-simple-guide-to-retrieval-augmented-generation.md)  
+- [🤖🧠🔗 Building AI Agents with LLMs, RAG, and Knowledge Graphs: A practical guide to autonomous and modern AI agents](./books/building-ai-agents-with-llms-rag-and-knowledge-graphs-a-practical-guide-to-autonomous-and-modern-ai-agents.md)  
 - [🧠🗂️ The Organized Mind: Thinking Straight in the Age of Information Overload](./books/the-organized-mind-thinking-straight-in-the-age-of-information-overload.md)  
 - [🥶🛌 Wintering: The Power of Rest and Retreat in Difficult Times](./books/wintering-the-power-of-rest-and-retreat-in-difficult-times.md)  
 - [🚀📈🧘 Peak Performance: Elevate Your Game, Avoid Burnout, and Thrive with the New Science of Success](./books/peak-performance-elevate-your-game-avoid-burnout-and-thrive-with-the-new-science-of-success.md)  
@@ -31,9 +34,6 @@ title: 🏡 Home
 - [🌴🧘🏼‍♀️ Do Nothing: How to Break Away from Overworking, Overdoing, and Underliving](./books/do-nothing-how-to-break-away-from-overworking-overdoing-and-underliving.md)  
 - [😴📈 Rest: Why You Get More Done When You Work Less](./books/rest-why-you-get-more-done-when-you-work-less.md)  
 - [😴🧘☕⏳ The Art of Rest: How to Find Respite in the Modern Age](./books/the-art-of-rest-how-to-find-respite-in-the-modern-age.md)  
-- [🫵🚫🦥🧩💩 You Aren't A Lazy Piece of Sh!t: From Procrastination to Productivity](./books/you-arent-a-lazy-piece-of-sht-from-procrastination-to-productivity.md)  
-- [🫁🌬️ Breath: The New Science of a Lost Art](./books/breath-the-new-science-of-a-lost-art.md)  
-- [🔋⬇️⬆️ The Power of the Downstate: Recharge Your Life Using Your Body's Own Restorative Systems](./books/the-power-of-the-downstate-recharge-your-life-using-your-bodys-own-restorative-systems.md)  
   
   
 ## [📺 Videos](./videos/index.md) (240)  
@@ -57,12 +57,12 @@ title: 🏡 Home
 - [🧠🌐 Knowledge Graphs](./topics/knowledge-graphs.md)  
   
   
-## [🤖💬 Bot Chats](./bot-chats/index.md) (41)  
+## [🤖💬 Bot Chats](./bot-chats/index.md) (42)  
+- [📚🤖💬 RAG and Agents](./bot-chats/rag-and-agents.md)  
 - [📐🔗🤖🧠 Category Theory for AI Engineering](./bot-chats/category-theory-for-ai-engineering.md)  
 - [💃🕺🎶 Learn to Dance](./bot-chats/learn-to-dance.md)  
 - [🤰⏰👶🔮 Forecasting Parenthood](./bot-chats/forecasting-parenthood.md)  
 - [⚛️💡🚀 Atomic Innovation](./bot-chats/atomic-innovation.md)  
-- [🧠🤝 System 2 Rapport Building](./bot-chats/system-2-rapport-building.md)  
   
   
 ## [📄  Articles](./articles/index.md) (40)  

@@ -7,7 +7,7 @@ URL: https://bagrounds.org/books
 backlinks: false
 ---
 [Home](../index.md)  
-# 📚 Books (560)  
+# 📚 Books (561)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)  
 - [🧑‍🤝‍🧑📈 10 to 25: The Science of Motivating Young People: A Groundbreaking Approach to Leading the Next Generation - And Making Your Own Life Easier](./10-to-25-the-science-of-motivating-young-people-a-groundbreaking-approach-to-leading-the-next-generation-and-making-your-own-life-easier.md)  
@@ -222,6 +222,7 @@ Feedback Control of Dynamic Systems]]
 - [👥⚔️👑 How to Stand Up to a Dictator: The Fight for Our Future](./how-to-stand-up-to-a-dictator.md)  
 - [🏆📰📣 How to Win an Information War: The Propagandist Who Outwitted Hitler](./how-to-win-an-information-war.md)  
 - [🫂🤝🗣️ How To Win Friends And Influence People](./how-to-win-friends-and-influence-people.md)  
+- [🧑‍💻🤖 Human + Machine: Reimagining Work in the Age of AI](./human-machine-reimagining-work-in-the-age-of-ai.md)  
 - [🧑‍⚕️🧩 Human Physiology: From Cells to Systems](./human-physiology-from-cells-to-systems.md)  
 - [🎯👓🧠 Hyperfocus: How to Be More Productive in a World of Distraction](./hyperfocus.md)  
 - [🍊🤡🤥👹💥🏛️🇺🇸 I Alone Can Fix It: Donald J. Trump's Catastrophic Final Year](./i-alone-can-fix-it-donald-j-trumps-catastrophic-final-year.md)  

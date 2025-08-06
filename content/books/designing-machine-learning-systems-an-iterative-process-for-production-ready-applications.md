@@ -57,7 +57,7 @@ Chip Huyen provides a structured approach to thinking about ML systems, breaking
 ### 🎨 Creatively Related: Data Engineering, Distributed Systems, and SRE  
   
 * **[💾⬆️🛡️ Designing Data-Intensive Applications: The Big Ideas Behind Reliable, Scalable, and Maintainable Systems](./designing-data-intensive-applications.md)** by Martin Kleppmann. 💾 While not solely focused on ML, this book is a seminal work on designing data systems and is highly relevant for the data infrastructure underpinning ML.  
-* 🧱 **Fundamentals of Data Engineering** by Joe Reis and Matt Housley. ⚙️ Provides a comprehensive overview of the data engineering lifecycle, essential for providing data to ML systems.  
+* **[💾🏗️ Fundamentals of Data Engineering: Plan and Build Robust Data Systems](./fundamentals-of-data-engineering-plan-and-build-robust-data-systems.md)** by Joe Reis and Matt Housley. ⚙️ Provides a comprehensive overview of the data engineering lifecycle, essential for providing data to ML systems.  
 * **[💻⚙️🛡️📈 Site Reliability Engineering: How Google Runs Production Systems](./site-reliability-engineering.md)** by Betsy Beyer et al. ⚙️ A foundational text on SRE principles and practices for managing large-scale production systems, many of which are applicable to ML systems.  
 * 📝 **The Site Reliability Workbook** by Betsy Beyer et al. 📚 A practical companion to the SRE book, offering exercises and guidance for implementing SRE principles.  
 * 🤝 **Effective DevOps: Building a Culture of Collaboration, Affinity, and Tooling at Scale** by Jennifer Davis and Katherine Daniels. 🧑‍🤝‍🧑 Focuses on the cultural and collaborative aspects necessary for successful operations, relevant to MLOps.  

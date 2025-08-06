@@ -7,7 +7,7 @@ URL: https://bagrounds.org/videos
 backlinks: false
 ---
 [Home](../index.md)  
-# 📺 Videos (240)  
+# 📺 Videos (241)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
 - [❓💪🔬 12 Questions About Creatine with Stephen Cornish, PhD](./12-questions-about-creatine-w-stephen-cornish-phd.md)  
@@ -71,6 +71,7 @@ backlinks: false
 - [History Professor Answers Dictator Questions | Tech Support | WIRED](./history-professor-answers-dictator-questions-tech-support-wired.md)  
 - [How AI Cracked the Protein Folding Code and Won a Nobel Prize](./how-ai-cracked-the-protein-folding-code-and-won-a-nobel-prize.md)  
 - [How automakers are navigating Trump’s tariffs on imported vehicles and parts](./how-automakers-are-navigating-trumps-tariffs-on-imported-vehicles-and-parts.md)  
+- [🤖⬇️🧠⏳ How ChatGPT Slowly Destroys Your Brain - Science Confirms It](./how-chatgpt-slowly-destroys-your-brain-science-confirms-it.md)  
 - [How “Digital Twins” Could Help Us Predict the Future | Karen Willcox | TED](./how-digital-twins-could-help-us-predict-the-future-karen-willcox-ted.md)  
 - [🇺🇸🤯😵‍💫❓ How half the US lost part of their minds](./how-half-the-us-lost-part-of-their-minds.md)  
 - [How I use LLMs](./how-i-use-llms.md)  

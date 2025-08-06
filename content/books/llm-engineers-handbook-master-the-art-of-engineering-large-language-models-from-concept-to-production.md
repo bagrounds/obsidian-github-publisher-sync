@@ -46,7 +46,7 @@ CTA: 🛠️ Build impactful LLMs.
   
 * 🗣️ **Speech and Language Processing** by Dan Jurafsky and James H. Martin: 📜 Often considered a foundational text in NLP, this book provides a deep dive into the linguistic and computational principles that underpin the field.  
 * **[🧠💻🤖 Deep Learning](./deep-learning.md)** by Ian Goodfellow, Yoshua Bengio, and Aaron Courville: 📚 This book is a comprehensive theoretical introduction to the field of deep learning, covering the mathematical and conceptual foundations.  
-* 💯 **The Hundred-Page Language Models Book** by Andriy Burkov: 📄 This concise book offers a clear and mathematically grounded explanation of how language models work, from basic concepts to modern transformer architectures.  
+* **[💯💻 The Hundred-Page Language Models Book: hands-on with PyTorch](./the-hundred-page-language-models-book-hands-on-with-pytorch-.md)** by Andriy Burkov: 📄 This concise book offers a clear and mathematically grounded explanation of how language models work, from basic concepts to modern transformer architectures.  
 * 🔍 **Large Language Models: A Deep Dive: Bridging Theory and Practice** by Uday Kamath: 📚 This book offers an in-depth exploration of the design, training, and application of LLMs, with a strong emphasis on the underlying algorithms and techniques.  
   
 ### 🎨 Creative Connections: Expanding the Engineer's Mindset  

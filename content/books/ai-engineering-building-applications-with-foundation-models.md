@@ -88,8 +88,8 @@ A distinguishing feature of this book is its intentional lack of extensive code 
 ### 🧑‍💻 Similar Reads (Focus on AI/ML Engineering)  
   
 * **[💾⬆️🛡️ Designing Data-Intensive Applications: The Big Ideas Behind Reliable, Scalable, and Maintainable Systems](./designing-data-intensive-applications.md)** by Martin Kleppmann: While not strictly about AI, this book provides an essential foundation in the principles of data systems, which is highly relevant for building robust and scalable AI applications. 📈  
-* 🤖 **Machine Learning Engineering** by Andriy Burkov: This book offers a practical guide to the entire lifecycle of a machine learning project, covering everything from data collection to model deployment and monitoring. 📊  
-* 🗄️ **Fundamentals of Data Engineering: Planning and Building Robust Data Systems** by Joe Reis and Matt Housley: This book provides a comprehensive overview of the data engineering landscape, which is crucial for preparing and managing the large datasets required for foundation models. 💾  
+* **[🤖⚙️ Machine Learning Engineering](./machine-learning-engineering.md)** by Andriy Burkov: This book offers a practical guide to the entire lifecycle of a machine learning project, covering everything from data collection to model deployment and monitoring. 📊  
+* **[💾🏗️ Fundamentals of Data Engineering: Plan and Build Robust Data Systems](./fundamentals-of-data-engineering-plan-and-build-robust-data-systems.md)** by Joe Reis and Matt Housley: This book provides a comprehensive overview of the data engineering landscape, which is crucial for preparing and managing the large datasets required for foundation models. 💾  
   
 ### 🔍 Contrasting Perspectives (Broader AI Topics)  
   

@@ -10,7 +10,8 @@ title: 🏡 Home
 📑 Notes, 💭 thoughts, and 🔗 Links.  
 ❔ What do 🫵 _you_ 🤔 think?  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (264)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (265)  
+- [2025-08-06](./reflections/2025-08-06.md)  
 - [2025-08-05 | 🧠 AI | 👩🏼‍🏫 ML | 🦜 LLM 📚](./reflections/2025-08-05.md)  
 - [2025-08-04 | 🤖 AI | 🚚 RAG | 🏗️ Agents 📚🤖💬](./reflections/2025-08-04.md)  
 - [2025-08-03 | 😎 Chill 📚](./reflections/2025-08-03.md)  
@@ -20,10 +21,10 @@ title: 🏡 Home
 - [2025-07-30 | 🤖 AI | 🏹 Arrows | 🫟 Creatives 📚📺🤖💬](./reflections/2025-07-30.md)  
 - [2025-07-29 | 🚫🛑 Unstoppable 📺](./reflections/2025-07-29.md)  
 - [2025-07-28 | 🤖 AI | 💰 Millionaire 📚📺📄](./reflections/2025-07-28.md)  
-- [2025-07-27 | 🤏🪙 80 20 📺📚](./reflections/2025-07-27.md)  
   
   
-## [📚 Books](./books/index.md) (560)  
+## [📚 Books](./books/index.md) (561)  
+- [🧑‍💻🤖 Human + Machine: Reimagining Work in the Age of AI](./books/human-machine-reimagining-work-in-the-age-of-ai.md)  
 - [💯💻 The Hundred-Page Language Models Book: hands-on with PyTorch](./books/the-hundred-page-language-models-book-hands-on-with-pytorch-.md)  
 - [🤖⚙️ Machine Learning Engineering](./books/machine-learning-engineering.md)  
 - [💾🏗️ Fundamentals of Data Engineering: Plan and Build Robust Data Systems](./books/fundamentals-of-data-engineering-plan-and-build-robust-data-systems.md)  
@@ -33,10 +34,12 @@ title: 🏡 Home
 - [🤖🛠️ LLM Engineer's Handbook: Master the art of engineering large language models from concept to production](./books/llm-engineers-handbook-master-the-art-of-engineering-large-language-models-from-concept-to-production.md)  
 - [🤖🧠⚙️💡 Building Agentic AI Systems: Create intelligent, autonomous AI agents that can reason, plan, and adapt](./books/building-agentic-ai-systems-create-intelligent-autonomous-ai-agents-that-can-reason-plan-and-adapt.md)  
 - [❓📚 A Simple Guide to Retrieval Augmented Generation](./books/a-simple-guide-to-retrieval-augmented-generation.md)  
-- [🤖🧠🔗 Building AI Agents with LLMs, RAG, and Knowledge Graphs: A practical guide to autonomous and modern AI agents](./books/building-ai-agents-with-llms-rag-and-knowledge-graphs-a-practical-guide-to-autonomous-and-modern-ai-agents.md)  
   
   
-## [📺 Videos](./videos/index.md) (240)  
+## [📺 Videos](./videos/index.md) (242)  
+- [🌅🧠🚀♾️ This morning routine is scientifically proven to make you limitless](./videos/this-morning-routine-is-scientifically-proven-to-make-you-limitless.md)  
+- [💻🌍🚶‍♀️ Where All the Tech Workers Are Going](./videos/where-all-the-tech-workers-are-going.md)  
+- [🤖⬇️🧠⏳ How ChatGPT Slowly Destroys Your Brain - Science Confirms It](./videos/how-chatgpt-slowly-destroys-your-brain-science-confirms-it.md)  
 - [😴⬇️⚡ 22: The Power of the Downstate, Optimizing Sleep and Recovery | Sara Mednick, PhD](./videos/22-the-power-of-the-downstate-optimizing-sleep-and-recovery-sara-mednick-phd.md)  
 - [😴🔄✨ Take a Nap! Change Your Life | Sara Mednick | Talks at Google](./videos/take-a-nap-change-your-life-sara-mednick-talks-at-google.md)  
 - [🤖📅🦢🚲 2025 in LLMs so far, illustrated by Pelicans on Bicycles - Simon Willison](./videos/2025-in-llms-so-far-illustrated-by-pelicans-on-bicycles-simon-willison.md)  
@@ -44,9 +47,6 @@ title: 🏡 Home
 - [🤖🏢👁️ New book ‘Empire of AI’ investigates OpenAI, the company behind ChatGPT](./videos/new-book-empire-of-ai-investigates-openai-the-company-behind-chatgpt.md)  
 - [💻🔄💻 Andrej Karpathy: Software Is Changing (Again)](./videos/andrej-karpathy-software-is-changing-again.md)  
 - [🤖🧠👁️ Ilya Sutskever, OpenAI](./videos/ilya-sutskever-openai.md)  
-- [🎨🧱🔄 513 - Why Creatives Have to Build Habits Differently and How to Do It](./videos/513-why-creatives-have-to-build-habits-differently-and-how-to-do-it.md)  
-- [🤖🧠⚙️👩‍💻 AI Engineering with Chip Huyen](./videos/ai-engineering-with-chip-huyen.md)  
-- [😴🧠💡 Dr. Matt Walker: Using Sleep to Improve Learning, Creativity & Memory | Huberman Lab Guest Series](./videos/dr-matt-walker-using-sleep-to-improve-learning-creativity-and-memory-huberman-lab-guest-series.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (79)  

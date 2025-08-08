@@ -65,12 +65,12 @@ title: 🏡 Home
 - [⚛️💡🚀 Atomic Innovation](./bot-chats/atomic-innovation.md)  
   
   
-## [📄  Articles](./articles/index.md) (41)  
-- [📈🤖✍️🔄 AI Marketing in 2024](./articles/ai-traffic-is-up-527-percent-seo-is-being-rewritten.md)  
+## [📄  Articles](./articles/index.md) (42)  
+- [🧠💪📈 BDNF Response to High Intensity Exercise](./articles/bdnf-response-to-high-intensity-exercise.md)  
+- [📈🤖✍️🔄 AI traffic is up 527%. SEO is being rewritten.](./articles/ai-traffic-is-up-527-percent-seo-is-being-rewritten.md)  
 - [😴🎡 The Nap Wheel](./articles/the-nap-wheel.md)  
 - [🏗️🧩🌍 Context Engineering: An Emerging Concept in the MCP Ecosystem](./articles/context-engineering-an-emerging-concept-in-the-mcp-ecosystem.md)  
 - [📊🔎🤖🪜 New Evaluation, Library, and Analysis of Step By Step Reasoning with Large Language Models](./articles/new-evaluation-library-and-analysis-of-step-by-step-reasoning-with-large-language-models.md)  
-- [🗣️🗺️🤖⚙️ Reasoning with Language Model is Planning with World Model](./articles/reasoning-with-language-model-is-planning-with-world-model.md)  
   
   
 ## [💾 Software](./software/index.md) (29)  

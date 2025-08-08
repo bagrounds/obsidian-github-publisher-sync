@@ -1,14 +1,14 @@
 ---
 share: true
 aliases:
-  - "🤖🗣️🔑 Asynchronous Introducing Open SWE: An Open Source Asynchronous Coding Agent"
-title: "🤖🗣️🔑 Asynchronous Introducing Open SWE: An Open Source Asynchronous Coding Agent"
+  - "🤖🗣️🔑 Introducing Open SWE: An Open Source Asynchronous Coding Agent"
+title: "🤖🗣️🔑 Introducing Open SWE: An Open Source Asynchronous Coding Agent"
 URL: https://bagrounds.org/articles/introducing-open-swe-an-open-source-asynchronous-coding-agent
 Author: 
 tags: 
 ---
 [Home](../index.md) > [Articles](./index.md)  
-# [🤖🗣️🔑 Asynchronous Introducing Open SWE: An Open Source Asynchronous Coding Agent](https://blog.langchain.com/introducing-open-swe-an-open-source-asynchronous-coding-agent)  
+# [🤖🗣️🔑 Introducing Open SWE: An Open Source Asynchronous Coding Agent](https://blog.langchain.com/introducing-open-swe-an-open-source-asynchronous-coding-agent)  
 ## 🤖 AI Summary  
 - ✨ **Open SWE is an open-source, asynchronous coding agent** built to operate in the cloud. It is designed to act like another engineer on a development team.  
 - ⭐ A key feature is its asynchronous operation, allowing it to run on multiple tasks in parallel without consuming local resources.  

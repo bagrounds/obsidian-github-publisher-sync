@@ -10,8 +10,9 @@ title: 🏡 Home
 📑 Notes, 💭 thoughts, and 🔗 Links.  
 ❔ What do 🫵 _you_ 🤔 think?  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (265)  
-- [2025-08-06](./reflections/2025-08-06.md)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (266)  
+- [2025-08-07 | 🤖 AIO? 🎯| 📚 RAG | 🌊 WAIve 📄📚](./reflections/2025-08-07.md)  
+- [2025-08-06 | 🧟 BrAIns | 🌄 Morning | ❤️‍🔥 Intense 📺📚](./reflections/2025-08-06.md)  
 - [2025-08-05 | 🧠 AI | 👩🏼‍🏫 ML | 🦜 LLM 📚](./reflections/2025-08-05.md)  
 - [2025-08-04 | 🤖 AI | 🚚 RAG | 🏗️ Agents 📚🤖💬](./reflections/2025-08-04.md)  
 - [2025-08-03 | 😎 Chill 📚](./reflections/2025-08-03.md)  
@@ -20,23 +21,23 @@ title: 🏡 Home
 - [2025-07-31 | 💬 Prompt | 🖼️ Context | 🗺️ Plan 📚📄](./reflections/2025-07-31.md)  
 - [2025-07-30 | 🤖 AI | 🏹 Arrows | 🫟 Creatives 📚📺🤖💬](./reflections/2025-07-30.md)  
 - [2025-07-29 | 🚫🛑 Unstoppable 📺](./reflections/2025-07-29.md)  
-- [2025-07-28 | 🤖 AI | 💰 Millionaire 📚📺📄](./reflections/2025-07-28.md)  
   
   
-## [📚 Books](./books/index.md) (561)  
+## [📚 Books](./books/index.md) (563)  
+- [🤖📈 AI for Marketing and Product Innovation: Powerful New Tools for Predicting Trends, Connecting with Customers, and Closing Sales](./books/ai-for-marketing-and-product-innovation-powerful-new-tools-for-predicting-trends-connecting-with-customers-and-closing-sales.md)  
+- [🌊🤖🤔 The Coming Wave: Technology, Power, and the 21st Century's Greatest Dilemma](./books/the-coming-wave-technology-power-and-the-21st-centurys-greatest-dilemma.md)  
+- [📉❓ Why Nothing Works: Who Killed Progress - and How to Bring It Back](./books/why-nothing-works-who-killed-progress-and-how-to-bring-it-back.md)  
+- [🧬👥💾 Life 3.0: Being Human in the Age of Artificial Intelligence](./books/life-3-0.md)  
 - [🧑‍💻🤖 Human + Machine: Reimagining Work in the Age of AI](./books/human-machine-reimagining-work-in-the-age-of-ai.md)  
 - [💯💻 The Hundred-Page Language Models Book: hands-on with PyTorch](./books/the-hundred-page-language-models-book-hands-on-with-pytorch-.md)  
 - [🤖⚙️ Machine Learning Engineering](./books/machine-learning-engineering.md)  
 - [💾🏗️ Fundamentals of Data Engineering: Plan and Build Robust Data Systems](./books/fundamentals-of-data-engineering-plan-and-build-robust-data-systems.md)  
 - [🤖📐 Perceptrons: An Introduction to Computational Geometry](./books/perceptrons-an-introduction-to-computational-geometry.md)  
 - [🤖⚙️🔁 Designing Machine Learning Systems: An Iterative Process for Production-Ready Applications](./books/designing-machine-learning-systems-an-iterative-process-for-production-ready-applications.md)  
-- [🤖🏗️ AI Engineering: Building Applications with Foundation Models](./books/ai-engineering-building-applications-with-foundation-models.md)  
-- [🤖🛠️ LLM Engineer's Handbook: Master the art of engineering large language models from concept to production](./books/llm-engineers-handbook-master-the-art-of-engineering-large-language-models-from-concept-to-production.md)  
-- [🤖🧠⚙️💡 Building Agentic AI Systems: Create intelligent, autonomous AI agents that can reason, plan, and adapt](./books/building-agentic-ai-systems-create-intelligent-autonomous-ai-agents-that-can-reason-plan-and-adapt.md)  
-- [❓📚 A Simple Guide to Retrieval Augmented Generation](./books/a-simple-guide-to-retrieval-augmented-generation.md)  
   
   
-## [📺 Videos](./videos/index.md) (242)  
+## [📺 Videos](./videos/index.md) (243)  
+- [❤️‍🔥🏋️🏃 The Role of High-Intensity Interval Training and Strength Training in Cardiovascular Health](./videos/the-role-of-high-intensity-interval-training-and-strength-training-in-cardiovascular-health.md)  
 - [🌅🧠🚀♾️ This morning routine is scientifically proven to make you limitless](./videos/this-morning-routine-is-scientifically-proven-to-make-you-limitless.md)  
 - [💻🌍🚶‍♀️ Where All the Tech Workers Are Going](./videos/where-all-the-tech-workers-are-going.md)  
 - [🤖⬇️🧠⏳ How ChatGPT Slowly Destroys Your Brain - Science Confirms It](./videos/how-chatgpt-slowly-destroys-your-brain-science-confirms-it.md)  
@@ -46,7 +47,6 @@ title: 🏡 Home
 - [🤖🧑‍💻📈🚧 John Schulman - Reinforcement Learning from Human Feedback: Progress and Challenges](./videos/john-schulman-reinforcement-learning-from-human-feedback-progress-and-challenges.md)  
 - [🤖🏢👁️ New book ‘Empire of AI’ investigates OpenAI, the company behind ChatGPT](./videos/new-book-empire-of-ai-investigates-openai-the-company-behind-chatgpt.md)  
 - [💻🔄💻 Andrej Karpathy: Software Is Changing (Again)](./videos/andrej-karpathy-software-is-changing-again.md)  
-- [🤖🧠👁️ Ilya Sutskever, OpenAI](./videos/ilya-sutskever-openai.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (79)  
@@ -65,12 +65,12 @@ title: 🏡 Home
 - [⚛️💡🚀 Atomic Innovation](./bot-chats/atomic-innovation.md)  
   
   
-## [📄  Articles](./articles/index.md) (40)  
+## [📄  Articles](./articles/index.md) (41)  
+- [📈🤖✍️🔄 AI Marketing in 2024](./articles/ai-traffic-is-up-527-percent-seo-is-being-rewritten.md)  
 - [😴🎡 The Nap Wheel](./articles/the-nap-wheel.md)  
 - [🏗️🧩🌍 Context Engineering: An Emerging Concept in the MCP Ecosystem](./articles/context-engineering-an-emerging-concept-in-the-mcp-ecosystem.md)  
 - [📊🔎🤖🪜 New Evaluation, Library, and Analysis of Step By Step Reasoning with Large Language Models](./articles/new-evaluation-library-and-analysis-of-step-by-step-reasoning-with-large-language-models.md)  
 - [🗣️🗺️🤖⚙️ Reasoning with Language Model is Planning with World Model](./articles/reasoning-with-language-model-is-planning-with-world-model.md)  
-- [👀 Attention Is All You Need](./articles/attention-is-all-you-need.md)  
   
   
 ## [💾 Software](./software/index.md) (29)  

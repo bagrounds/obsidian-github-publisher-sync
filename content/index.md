@@ -10,7 +10,8 @@ title: 🏡 Home
 📑 Notes, 💭 thoughts, and 🔗 Links.  
 ❔ What do 🫵 _you_ 🤔 think?  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (266)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (267)  
+- [2025-08-08](./reflections/2025-08-08.md)  
 - [2025-08-07 | 🤖 AIO? 🎯| 📚 RAG | 🌊 WAIve 📄📚](./reflections/2025-08-07.md)  
 - [2025-08-06 | 🧟 BrAIns | 🌄 Morning | ❤️‍🔥 Intense 📺📚](./reflections/2025-08-06.md)  
 - [2025-08-05 | 🧠 AI | 👩🏼‍🏫 ML | 🦜 LLM 📚](./reflections/2025-08-05.md)  
@@ -20,10 +21,11 @@ title: 🏡 Home
 - [2025-08-01 | 😴 Nap | 🔋 Downstate | 👩🏼‍🔬 Mednick 📚📄📺👥](./reflections/2025-08-01.md)  
 - [2025-07-31 | 💬 Prompt | 🖼️ Context | 🗺️ Plan 📚📄](./reflections/2025-07-31.md)  
 - [2025-07-30 | 🤖 AI | 🏹 Arrows | 🫟 Creatives 📚📺🤖💬](./reflections/2025-07-30.md)  
-- [2025-07-29 | 🚫🛑 Unstoppable 📺](./reflections/2025-07-29.md)  
   
   
-## [📚 Books](./books/index.md) (563)  
+## [📚 Books](./books/index.md) (564)  
+- [🤖🧠🔗 Building AI Agents with LLMs, RAG, and Knowledge Graphs: A practical guide to autonomous and modern AI agents](./books/building-ai-agents-with-llms-rag-and-knowledge-graphs-a-practical-guide-to-autonomous-and-modern-ai-agents.md)  
+- [🤖⚙️ AI Agents in Action](./books/ai-agents-in-action.md)  
 - [🤖📈 AI for Marketing and Product Innovation: Powerful New Tools for Predicting Trends, Connecting with Customers, and Closing Sales](./books/ai-for-marketing-and-product-innovation-powerful-new-tools-for-predicting-trends-connecting-with-customers-and-closing-sales.md)  
 - [🌊🤖🤔 The Coming Wave: Technology, Power, and the 21st Century's Greatest Dilemma](./books/the-coming-wave-technology-power-and-the-21st-centurys-greatest-dilemma.md)  
 - [📉❓ Why Nothing Works: Who Killed Progress - and How to Bring It Back](./books/why-nothing-works-who-killed-progress-and-how-to-bring-it-back.md)  
@@ -32,11 +34,10 @@ title: 🏡 Home
 - [💯💻 The Hundred-Page Language Models Book: hands-on with PyTorch](./books/the-hundred-page-language-models-book-hands-on-with-pytorch-.md)  
 - [🤖⚙️ Machine Learning Engineering](./books/machine-learning-engineering.md)  
 - [💾🏗️ Fundamentals of Data Engineering: Plan and Build Robust Data Systems](./books/fundamentals-of-data-engineering-plan-and-build-robust-data-systems.md)  
-- [🤖📐 Perceptrons: An Introduction to Computational Geometry](./books/perceptrons-an-introduction-to-computational-geometry.md)  
-- [🤖⚙️🔁 Designing Machine Learning Systems: An Iterative Process for Production-Ready Applications](./books/designing-machine-learning-systems-an-iterative-process-for-production-ready-applications.md)  
   
   
 ## [📺 Videos](./videos/index.md) (243)  
+- [🖼️🤔🛠️🤖 Context Engineering for Agents](./videos/context-engineering-for-agents.md)  
 - [❤️‍🔥🏋️🏃 The Role of High-Intensity Interval Training and Strength Training in Cardiovascular Health](./videos/the-role-of-high-intensity-interval-training-and-strength-training-in-cardiovascular-health.md)  
 - [🌅🧠🚀♾️ This morning routine is scientifically proven to make you limitless](./videos/this-morning-routine-is-scientifically-proven-to-make-you-limitless.md)  
 - [💻🌍🚶‍♀️ Where All the Tech Workers Are Going](./videos/where-all-the-tech-workers-are-going.md)  
@@ -46,7 +47,6 @@ title: 🏡 Home
 - [🤖📅🦢🚲 2025 in LLMs so far, illustrated by Pelicans on Bicycles - Simon Willison](./videos/2025-in-llms-so-far-illustrated-by-pelicans-on-bicycles-simon-willison.md)  
 - [🤖🧑‍💻📈🚧 John Schulman - Reinforcement Learning from Human Feedback: Progress and Challenges](./videos/john-schulman-reinforcement-learning-from-human-feedback-progress-and-challenges.md)  
 - [🤖🏢👁️ New book ‘Empire of AI’ investigates OpenAI, the company behind ChatGPT](./videos/new-book-empire-of-ai-investigates-openai-the-company-behind-chatgpt.md)  
-- [💻🔄💻 Andrej Karpathy: Software Is Changing (Again)](./videos/andrej-karpathy-software-is-changing-again.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (79)  
@@ -65,12 +65,12 @@ title: 🏡 Home
 - [⚛️💡🚀 Atomic Innovation](./bot-chats/atomic-innovation.md)  
   
   
-## [📄  Articles](./articles/index.md) (42)  
+## [📄  Articles](./articles/index.md) (43)  
+- [🤖🗣️🔑 Asynchronous Introducing Open SWE: An Open Source Asynchronous Coding Agent](./articles/introducing-open-swe-an-open-source-asynchronous-coding-agent.md)  
 - [🧠💪📈 BDNF Response to High Intensity Exercise](./articles/bdnf-response-to-high-intensity-exercise.md)  
 - [📈🤖✍️🔄 AI traffic is up 527%. SEO is being rewritten.](./articles/ai-traffic-is-up-527-percent-seo-is-being-rewritten.md)  
 - [😴🎡 The Nap Wheel](./articles/the-nap-wheel.md)  
 - [🏗️🧩🌍 Context Engineering: An Emerging Concept in the MCP Ecosystem](./articles/context-engineering-an-emerging-concept-in-the-mcp-ecosystem.md)  
-- [📊🔎🤖🪜 New Evaluation, Library, and Analysis of Step By Step Reasoning with Large Language Models](./articles/new-evaluation-library-and-analysis-of-step-by-step-reasoning-with-large-language-models.md)  
   
   
 ## [💾 Software](./software/index.md) (29)  

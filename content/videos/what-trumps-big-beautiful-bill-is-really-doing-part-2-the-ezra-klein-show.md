@@ -52,8 +52,8 @@ tags:
         * 📖 *Reinventing American Health Care: How the Affordable Care Act Will Improve Our Terribly Complex, Blatantly Unjust, Outrageously Expensive, Grossly Inefficient, Error Prone System* by Ezekiel J. Emanuel  
         * 📖 *ObamaCare Survival Guide: The Affordable Care Act and What It Means for You and Your Healthcare* by Nick J. Tate  
 * ⚖️ **Income Inequality:**  
-    * 📖 [Capital in the Twenty First Century](../books/capital-in-the-twenty-first-century.md) by Thomas Piketty  
-    * 📖 *The Price of Inequality: How Today's Divided Society Endangers Our Future* by Joseph Stiglitz  
+    * [💰📈🌍⏳ Capital in the Twenty-First Century](../books/capital-in-the-twenty-first-century.md) by Thomas Piketty  
+    * [🏷️🏚️💔🏰 The Price of Inequality: How Today's Divided Society Endangers Our Future](../books/the-price-of-inequality-how-todays-divided-society-endangers-our-future.md) by Joseph Stiglitz  
 * 🍃 **Clean Energy Incentives:**  
         * 📖 *Federal Incentives for Renewable Energy* by Liam Belisario  
         * 📖 *Renewable Energy and Energy Efficiency Incentives: A Summary of Federal Programs* by Congressional Research Service  

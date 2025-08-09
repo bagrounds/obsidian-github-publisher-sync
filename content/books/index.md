@@ -7,7 +7,7 @@ URL: https://bagrounds.org/books
 backlinks: false
 ---
 [Home](../index.md)  
-# 📚 Books (564)  
+# 📚 Books (566)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)  
 - [🧑‍🤝‍🧑📈 10 to 25: The Science of Motivating Young People: A Groundbreaking Approach to Leading the Next Generation - And Making Your Own Life Easier](./10-to-25-the-science-of-motivating-young-people-a-groundbreaking-approach-to-leading-the-next-generation-and-making-your-own-life-easier.md)  
@@ -296,6 +296,7 @@ Feedback Control of Dynamic Systems]]
 - [🏛️🗳️🗣️🤝 On Democracy](./on-democracy.md)  
 - [✍️🗽 On Freedom](./on-freedom.md)  
 - [🗣️ On Language](./on-language.md)  
+- [🔄 On Revolution](./on-revolution.md)  
 - [📜 On Writing: A Memoir of the Craft](./on-writing.md)  
 - [✍🏼👍🏼 On Writing Well: The Classic Guide to Writing Nonfiction](./on-writing-well.md)  
 - [🖤🐲⛈️ Onyx Storm](./onyx-storm.md)  
@@ -488,6 +489,7 @@ Feedback Control of Dynamic Systems]]
 - [🔑🧭❤️ The Power of Meaning: Crafting a Life That Matters](./the-power-of-meaning.md)  
 - [🔌👋 The Power of Showing Up: How Parental Presence Shapes Who Our Kids Become and How Their Brains Get Wired](./the-power-of-showing-up.md)  
 - [🔋⬇️⬆️ The Power of the Downstate: Recharge Your Life Using Your Body's Own Restorative Systems](./the-power-of-the-downstate-recharge-your-life-using-your-bodys-own-restorative-systems.md)  
+- [🏷️🏚️💔🏰 The Price of Inequality: How Today's Divided Society Endangers Our Future](./the-price-of-inequality-how-todays-divided-society-endangers-our-future.md)  
 - [🧠🏃 The Psychological Benefits of Exercise and Physical Activity](./the-psychological-benefits-of-exercise-and-physical-activity.md)  
 - [🏢🗓️ The Psychology of Planning in Organizations: Research and Applications](./the-psychology-of-planning-in-organizations-research-and-applications.md)  
 - [💰🧔👑🏛️ The Richest Man in Babylon](./the-richest-man-in-babylon.md)  

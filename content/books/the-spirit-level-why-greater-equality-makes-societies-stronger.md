@@ -43,7 +43,7 @@ Wilkinson and Pickett posit that the psychological effects of inequality are a k
   
 ### 🤝 Similar Reads: 🗺️ Exploring the Landscape of Inequality  
   
-* 💰 **"The Price of Inequality: How Today's Divided Society Endangers Our Future" by Joseph E. Stiglitz:** 🏆 The Nobel laureate in economics argues that inequality is not just morally wrong but also economically destructive, hindering growth and stability.  
+* **[🏷️🏚️💔🏰 The Price of Inequality: How Today's Divided Society Endangers Our Future](./the-price-of-inequality-how-todays-divided-society-endangers-our-future.md) by Joseph E. Stiglitz:** 🏆 The Nobel laureate in economics argues that inequality is not just morally wrong but also economically destructive, hindering growth and stability.  
 * **[💰📈🌍⏳ Capital in the Twenty-First Century](./capital-in-the-twenty-first-century.md) by Thomas Piketty:** 🌍 A monumental work of economic history that traces the dynamics of wealth and income inequality in Europe and the United States since the 18th century, arguing that the rate of return on capital tends to exceed the rate of economic growth.  
 * **[🏚️💰 Evicted: Poverty and Profit in the American City](./evicted-poverty-and-profit-in-the-american-city.md) by Matthew Desmond:** ❤️‍🩹 A powerful and intimate look at the lives of eight families in Milwaukee, illustrating the devastating human cost of housing instability and poverty.  
 * 👦 **"Our Kids: The American Dream in Crisis" by Robert D. Putnam:** 🇺🇸 Explores the growing opportunity gap between rich and poor children in America, highlighting the decline of social mobility.  

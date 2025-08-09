@@ -7,7 +7,7 @@ URL: https://bagrounds.org/videos
 backlinks: false
 ---
 [Home](../index.md)  
-# 📺 Videos (242)  
+# 📺 Videos (244)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
 - [❓💪🔬 12 Questions About Creatine with Stephen Cornish, PhD](./12-questions-about-creatine-w-stephen-cornish-phd.md)  
@@ -96,6 +96,7 @@ backlinks: false
 - [👨‍🌾🚫💵 How Trump's funding freeze is affecting American farmers](./how-trumps-funding-freeze-is-affecting-american-farmers.md)  
 - [How Trump's rhetoric compares to historic fascist language](./how-trumps-rhetoric-compares-to-historic-fascist-language.md)  
 - [How Trump's tariffs and trade war are impacting U.S. and global economies](./how-trumps-tariffs-and-trade-war-are-impacting-us-and-global-economies.md)  
+- [📉🐘🇺🇸😬 Huge Economic Problems Coming for Republicans and the U.S. | Explainer](./huge-economic-problems-coming-for-republicans-and-the-us-explainer.md)  
 - [I Built an AI That Does My Work For Me](./i-built-an-ai-that-does-my-work-for-me.md)  
 - [🤖🧠👁️ Ilya Sutskever, OpenAI](./ilya-sutskever-openai.md)  
 - [Immigration judge rules Trump administration can deport Columbia protestor Mahmoud Khalil](./immigration-judge-rules-trump-administration-can-deport-columbia-protestor-mahmoud-khalil.md)  
@@ -185,6 +186,7 @@ backlinks: false
 - [🧠💰⚠️ The price you pay for being smart It's Been a Minute](./the-price-you-pay-for-being-smart-its-been-a-minute.md)  
 - [📉🎶👎 The Real Reason Why Music Is Getting Worse](./the-real-reason-why-music-is-getting-worse.md)  
 - [🌅🧠🗝️🚀📈 The Remarkable Morning Method: 5 Ways to Unlock Your Best Mental State](./the-remarkable-morning-method-5-ways-to-unlock-your-best-mental-state.md)  
+- [❤️‍🔥🏋️🏃 The Role of High-Intensity Interval Training and Strength Training in Cardiovascular Health](./the-role-of-high-intensity-interval-training-and-strength-training-in-cardiovascular-health.md)  
 - [😴🧪💯🏆 The scientifically proven best night routine ever](./the-scientifically-proven-best-night-routine-ever.md)  
 - [🤫🌱🗣️ The Secret Form of Resistance No One Talks About](./the-secret-form-of-resistance-no-one-talks-about.md)  
 - [🚫⏳🔓 the secret hack that makes procrastination impossible](./the-secret-hack-that-makes-procrastination-impossible.md)  

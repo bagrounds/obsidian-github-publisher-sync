@@ -10,8 +10,9 @@ title: 🏡 Home
 📑 Notes, 💭 thoughts, and 🔗 Links.  
 ❔ What do 🫵 _you_ 🤔 think?  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (267)  
-- [2025-08-08](./reflections/2025-08-08.md)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (268)  
+- [2025-08-09](./reflections/2025-08-09.md)  
+- [2025-08-08 | 🏗️🤖 Building AI Agents 📄📚](./reflections/2025-08-08.md)  
 - [2025-08-07 | 🤖 AIO? 🎯| 📚 RAG | 🌊 WAIve 📄📚](./reflections/2025-08-07.md)  
 - [2025-08-06 | 🧟 BrAIns | 🌄 Morning | ❤️‍🔥 Intense 📺📚](./reflections/2025-08-06.md)  
 - [2025-08-05 | 🧠 AI | 👩🏼‍🏫 ML | 🦜 LLM 📚](./reflections/2025-08-05.md)  
@@ -20,7 +21,6 @@ title: 🏡 Home
 - [2025-08-02 | 🫁 Breath 📚](./reflections/2025-08-02.md)  
 - [2025-08-01 | 😴 Nap | 🔋 Downstate | 👩🏼‍🔬 Mednick 📚📄📺👥](./reflections/2025-08-01.md)  
 - [2025-07-31 | 💬 Prompt | 🖼️ Context | 🗺️ Plan 📚📄](./reflections/2025-07-31.md)  
-- [2025-07-30 | 🤖 AI | 🏹 Arrows | 🫟 Creatives 📚📺🤖💬](./reflections/2025-07-30.md)  
   
   
 ## [📚 Books](./books/index.md) (564)  
@@ -36,7 +36,8 @@ title: 🏡 Home
 - [💾🏗️ Fundamentals of Data Engineering: Plan and Build Robust Data Systems](./books/fundamentals-of-data-engineering-plan-and-build-robust-data-systems.md)  
   
   
-## [📺 Videos](./videos/index.md) (243)  
+## [📺 Videos](./videos/index.md) (244)  
+- [📉🐘🇺🇸😬 Huge Economic Problems Coming for Republicans and the U.S. | Explainer](./videos/huge-economic-problems-coming-for-republicans-and-the-us-explainer.md)  
 - [🖼️🤔🛠️🤖 Context Engineering for Agents](./videos/context-engineering-for-agents.md)  
 - [❤️‍🔥🏋️🏃 The Role of High-Intensity Interval Training and Strength Training in Cardiovascular Health](./videos/the-role-of-high-intensity-interval-training-and-strength-training-in-cardiovascular-health.md)  
 - [🌅🧠🚀♾️ This morning routine is scientifically proven to make you limitless](./videos/this-morning-routine-is-scientifically-proven-to-make-you-limitless.md)  
@@ -46,7 +47,6 @@ title: 🏡 Home
 - [😴🔄✨ Take a Nap! Change Your Life | Sara Mednick | Talks at Google](./videos/take-a-nap-change-your-life-sara-mednick-talks-at-google.md)  
 - [🤖📅🦢🚲 2025 in LLMs so far, illustrated by Pelicans on Bicycles - Simon Willison](./videos/2025-in-llms-so-far-illustrated-by-pelicans-on-bicycles-simon-willison.md)  
 - [🤖🧑‍💻📈🚧 John Schulman - Reinforcement Learning from Human Feedback: Progress and Challenges](./videos/john-schulman-reinforcement-learning-from-human-feedback-progress-and-challenges.md)  
-- [🤖🏢👁️ New book ‘Empire of AI’ investigates OpenAI, the company behind ChatGPT](./videos/new-book-empire-of-ai-investigates-openai-the-company-behind-chatgpt.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (79)  
@@ -65,12 +65,12 @@ title: 🏡 Home
 - [⚛️💡🚀 Atomic Innovation](./bot-chats/atomic-innovation.md)  
   
   
-## [📄  Articles](./articles/index.md) (43)  
-- [🤖🗣️🔑 Asynchronous Introducing Open SWE: An Open Source Asynchronous Coding Agent](./articles/introducing-open-swe-an-open-source-asynchronous-coding-agent.md)  
+## [📄  Articles](./articles/index.md) (44)  
+- [🤖🧠👨‍💻🏗️ How we built our multi Agent research system](./articles/how-we-built-our-multi-agent-research-system.md)  
+- [🤖🗣️🔑 Introducing Open SWE: An Open Source Asynchronous Coding Agent](./articles/introducing-open-swe-an-open-source-asynchronous-coding-agent.md)  
 - [🧠💪📈 BDNF Response to High Intensity Exercise](./articles/bdnf-response-to-high-intensity-exercise.md)  
 - [📈🤖✍️🔄 AI traffic is up 527%. SEO is being rewritten.](./articles/ai-traffic-is-up-527-percent-seo-is-being-rewritten.md)  
 - [😴🎡 The Nap Wheel](./articles/the-nap-wheel.md)  
-- [🏗️🧩🌍 Context Engineering: An Emerging Concept in the MCP Ecosystem](./articles/context-engineering-an-emerging-concept-in-the-mcp-ecosystem.md)  
   
   
 ## [💾 Software](./software/index.md) (29)  

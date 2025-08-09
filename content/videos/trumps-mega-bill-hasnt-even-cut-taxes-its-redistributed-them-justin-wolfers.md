@@ -22,7 +22,7 @@ youtube: https://youtu.be/7duenc71Uok
 ## 📚 Book Recommendations  
 * **On Tax Policy and Economics:**  
     * [💰📈🌍⏳ Capital in the Twenty-First Century](../books/capital-in-the-twenty-first-century.md) by Thomas Piketty  
-    * *The Price of Inequality* by Joseph E. Stiglitz  
+    * [🏷️🏚️💔🏰 The Price of Inequality: How Today's Divided Society Endangers Our Future](../books/the-price-of-inequality-how-todays-divided-society-endangers-our-future.md) by Joseph E. Stiglitz  
     * *Economics in One Lesson* by Henry Hazlitt  
 * **On US National Debt and Fiscal Policy:**  
     * [💰📉➡️📈🗳️ The Deficit Myth: Modern Monetary Theory and the Birth of the People's Economy](../books/the-deficit-myth.md) by Stephanie Kelton  

@@ -7,7 +7,7 @@ URL: https://bagrounds.org/videos
 backlinks: false
 ---
 [Home](../index.md)  
-# 📺 Videos (244)  
+# 📺 Videos (245)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
 - [❓💪🔬 12 Questions About Creatine with Stephen Cornish, PhD](./12-questions-about-creatine-w-stephen-cornish-phd.md)  
@@ -67,6 +67,7 @@ backlinks: false
 - [Fascist tendencies in Trump: A comparison to Hitler's rise | DW News](./fascist-tendencies-in-trump-a-comparison-to-hitler-s-rise-dw-news.md)  
 - [⚠️🌊🏘️❌ FEMA missed major flood risks at Camp Mystic in Texas, new analysis reveals](./fema-missed-major-flood-risks-at-camp-mystic-in-texas-new-analysis-reveals.md)  
 - [👨‍⚕️➡️😬💉💥 Former CDC director reacts to RFK Jr.'s firing of entire vaccine advisory panel](./former-cdc-director-reacts-to-rfk-jrs-firing-of-entire-vaccine-advisory-panel.md)  
+- [✊📢✅ Forms of Resistance and Reasons to Believe It’s Working | Explainer](./forms-of-resistance-and-reasons-to-believe-its-working-explainer.md)  
 - [FTC commissioner fired by Trump says move threatens agency designed to protect consumers](./ftc-commissioner-fired-by-trump-says-move-threatens-agency-designed-to-protect-consumers.md)  
 - [History Professor Answers Dictator Questions | Tech Support | WIRED](./history-professor-answers-dictator-questions-tech-support-wired.md)  
 - [How AI Cracked the Protein Folding Code and Won a Nobel Prize](./how-ai-cracked-the-protein-folding-code-and-won-a-nobel-prize.md)  

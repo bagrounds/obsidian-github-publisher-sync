@@ -42,7 +42,7 @@ youtube: https://youtu.be/2I46qw_A6vs
 ## 📚 Book Recommendations  
 * 📖 **On Fiscal Policy and National Debt:**  
     * [💰📉➡️📈🗳️ The Deficit Myth: Modern Monetary Theory and the Birth of the People's Economy](../books/the-deficit-myth.md) by Stephanie Kelton  
-    * *The Price of Inequality: How Today's Divided Society Endangers Our Future* by Joseph E. Stiglitz  
+    * [🏷️🏚️💔🏰 The Price of Inequality: How Today's Divided Society Endangers Our Future](../books/the-price-of-inequality-how-todays-divided-society-endangers-our-future.md) by Joseph E. Stiglitz  
 * 🏥 **On Healthcare Policy and the Affordable Care Act:**  
     * *The Healing of America: A Global Quest for Better, Cheaper, and Fairer Health Care* by T.R. Reid  
     * *An American Sickness: How Healthcare Lost Its Way and How We Can Heal It* by Elisabeth Rosenthal  

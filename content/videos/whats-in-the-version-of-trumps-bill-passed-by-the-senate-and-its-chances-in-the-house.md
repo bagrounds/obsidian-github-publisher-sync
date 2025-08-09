@@ -40,7 +40,7 @@ youtube: https://youtu.be/kcn8-UMub10
 * ***Get What's Yours: The Secrets to Maxing Out Your Social Security*** by Laurence J. Kotlikoff and Philip Moeller: A practical guide for individuals looking to understand and maximize their Social Security benefits through strategic claiming decisions.  
   
 ### ⚖️ On Economic Inequality & Social Policy  
-* ***The Price of Inequality*** by Joseph E. Stiglitz: Examines the causes and consequences of economic inequality in the United States and globally, arguing for policy changes to promote greater equity and economic stability.  
+* **[🏷️🏚️💔🏰 The Price of Inequality: How Today's Divided Society Endangers Our Future](../books/the-price-of-inequality-how-todays-divided-society-endangers-our-future.md)** by Joseph E. Stiglitz: Examines the causes and consequences of economic inequality in the United States and globally, arguing for policy changes to promote greater equity and economic stability.  
 * **[🧑🏿⛓️🙈 The New Jim Crow: Mass Incarceration in the Age of Colorblindness](../books/the-new-jim-crow-mass-incarceration-in-the-age-of-colorblindness.md)** by Michelle Alexander: Explores the history and impact of mass incarceration in the United States, arguing that it functions as a new system of racial caste.  
   
 ### 🛡️ On National Security & Defense  

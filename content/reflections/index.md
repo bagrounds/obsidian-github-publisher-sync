@@ -7,8 +7,9 @@ URL: https://bagrounds.org/reflections
 backlinks: false
 ---
 [Home](../index.md)  
-# 🪞 Reflections (267)  
-- [2025-08-08](./2025-08-08.md)  
+# 🪞 Reflections (268)  
+- [2025-08-09](./2025-08-09.md)  
+- [2025-08-08 | 🏗️🤖 Building AI Agents 📄📚](./2025-08-08.md)  
 - [2025-08-07 | 🤖 AIO? 🎯| 📚 RAG | 🌊 WAIve 📄📚](./2025-08-07.md)  
 - [2025-08-06 | 🧟 BrAIns | 🌄 Morning | ❤️‍🔥 Intense 📺📚](./2025-08-06.md)  
 - [2025-08-05 | 🧠 AI | 👩🏼‍🏫 ML | 🦜 LLM 📚](./2025-08-05.md)  

@@ -10,8 +10,9 @@ title: 🏡 Home
 📑 Notes, 💭 thoughts, and 🔗 Links.  
 ❔ What do 🫵 _you_ 🤔 think?  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (268)  
-- [2025-08-09](./reflections/2025-08-09.md)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (269)  
+- [2025-08-10 | 🤖🚛📚🗺️RAG Guide 📚](./reflections/2025-08-10.md)  
+- [2025-08-09 | ✊ Resistance 📺📚](./reflections/2025-08-09.md)  
 - [2025-08-08 | 🏗️🤖 Building AI Agents 📄📚](./reflections/2025-08-08.md)  
 - [2025-08-07 | 🤖 AIO? 🎯| 📚 RAG | 🌊 WAIve 📄📚](./reflections/2025-08-07.md)  
 - [2025-08-06 | 🧟 BrAIns | 🌄 Morning | ❤️‍🔥 Intense 📺📚](./reflections/2025-08-06.md)  
@@ -20,10 +21,10 @@ title: 🏡 Home
 - [2025-08-03 | 😎 Chill 📚](./reflections/2025-08-03.md)  
 - [2025-08-02 | 🫁 Breath 📚](./reflections/2025-08-02.md)  
 - [2025-08-01 | 😴 Nap | 🔋 Downstate | 👩🏼‍🔬 Mednick 📚📄📺👥](./reflections/2025-08-01.md)  
-- [2025-07-31 | 💬 Prompt | 🖼️ Context | 🗺️ Plan 📚📄](./reflections/2025-07-31.md)  
   
   
 ## [📚 Books](./books/index.md) (566)  
+- [❓📚 A Simple Guide to Retrieval Augmented Generation](./books/a-simple-guide-to-retrieval-augmented-generation.md)  
 - [🔄 On Revolution](./books/on-revolution.md)  
 - [🌍🏛️ The Great Transformation: The Political and Economic Origins of Our Time](./books/the-great-transformation-the-political-and-economic-origins-of-our-time.md)  
 - [⚠️🥴🕹️🌐 The Fifth Risk](./books/the-fifth-risk.md)  
@@ -33,7 +34,6 @@ title: 🏡 Home
 - [🤖🧠🔗 Building AI Agents with LLMs, RAG, and Knowledge Graphs: A practical guide to autonomous and modern AI agents](./books/building-ai-agents-with-llms-rag-and-knowledge-graphs-a-practical-guide-to-autonomous-and-modern-ai-agents.md)  
 - [🤖⚙️ AI Agents in Action](./books/ai-agents-in-action.md)  
 - [🤖📈 AI for Marketing and Product Innovation: Powerful New Tools for Predicting Trends, Connecting with Customers, and Closing Sales](./books/ai-for-marketing-and-product-innovation-powerful-new-tools-for-predicting-trends-connecting-with-customers-and-closing-sales.md)  
-- [🌊🤖🤔 The Coming Wave: Technology, Power, and the 21st Century's Greatest Dilemma](./books/the-coming-wave-technology-power-and-the-21st-centurys-greatest-dilemma.md)  
   
   
 ## [📺 Videos](./videos/index.md) (245)  
@@ -66,11 +66,11 @@ title: 🏡 Home
   
   
 ## [📄  Articles](./articles/index.md) (44)  
+- [📊🔎🤖🪜 New Evaluation, Library, and Analysis of Step By Step Reasoning with Large Language Models](./articles/new-evaluation-library-and-analysis-of-step-by-step-reasoning-with-large-language-models.md)  
 - [🤖🧠👨‍💻🏗️ How we built our multi Agent research system](./articles/how-we-built-our-multi-agent-research-system.md)  
 - [🤖🗣️🔑 Introducing Open SWE: An Open Source Asynchronous Coding Agent](./articles/introducing-open-swe-an-open-source-asynchronous-coding-agent.md)  
 - [🧠💪📈 BDNF Response to High Intensity Exercise](./articles/bdnf-response-to-high-intensity-exercise.md)  
 - [📈🤖✍️🔄 AI traffic is up 527%. SEO is being rewritten.](./articles/ai-traffic-is-up-527-percent-seo-is-being-rewritten.md)  
-- [😴🎡 The Nap Wheel](./articles/the-nap-wheel.md)  
   
   
 ## [💾 Software](./software/index.md) (29)  

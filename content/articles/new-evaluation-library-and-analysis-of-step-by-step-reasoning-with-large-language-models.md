@@ -29,3 +29,4 @@ tags:
 * [🤔💻🧠 Algorithms to Live By: The Computer Science of Human Decisions](../books/algorithms-to-live-by.md): Connects computer algorithms to real-world human decision-making.  
   
 ## 🐦 Tweet  
+<blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">📊🔎🤖🪜 New Evaluation, Library, and Analysis of Step By Step Reasoning with Large Language Models<br><br>🤖 Automated Evaluation | 📚 Unified Library | 🧐 Reasoning Analysis | 🏆 Reward-Guided Search | 🌐 Embodied Environments | 🎯 Prompt Design | 🗄️ Arxiv<a href="https://t.co/CMMotBgOmJ">https://t.co/CMMotBgOmJ</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/1951090600054497510?ref_src=twsrc%5Etfw">August 1, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

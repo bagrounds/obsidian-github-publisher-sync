@@ -10,8 +10,9 @@ title: 🏡 Home
 📑 Notes, 💭 thoughts, and 🔗 Links.  
 ❔ What do 🫵 _you_ 🤔 think?  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (269)  
-- [2025-08-10 | 🤖🚛📚🗺️RAG Guide 📚](./reflections/2025-08-10.md)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (270)  
+- [2025-08-11 | 🤖🛃🎬 AAiA 📚](./reflections/2025-08-11.md)  
+- [2025-08-10 | 🤖🚛📚🗺️ RAG Guide 🏁📚](./reflections/2025-08-10.md)  
 - [2025-08-09 | ✊ Resistance 📺📚](./reflections/2025-08-09.md)  
 - [2025-08-08 | 🏗️🤖 Building AI Agents 📄📚](./reflections/2025-08-08.md)  
 - [2025-08-07 | 🤖 AIO? 🎯| 📚 RAG | 🌊 WAIve 📄📚](./reflections/2025-08-07.md)  
@@ -20,7 +21,6 @@ title: 🏡 Home
 - [2025-08-04 | 🤖 AI | 🚚 RAG | 🏗️ Agents 📚🤖💬](./reflections/2025-08-04.md)  
 - [2025-08-03 | 😎 Chill 📚](./reflections/2025-08-03.md)  
 - [2025-08-02 | 🫁 Breath 📚](./reflections/2025-08-02.md)  
-- [2025-08-01 | 😴 Nap | 🔋 Downstate | 👩🏼‍🔬 Mednick 📚📄📺👥](./reflections/2025-08-01.md)  
   
   
 ## [📚 Books](./books/index.md) (566)  

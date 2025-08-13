@@ -10,7 +10,8 @@ title: 🏡 Home
 📑 Notes, 💭 thoughts, and 🔗 Links.  
 ❔ What do 🫵 _you_ 🤔 think?  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (270)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (271)  
+- [2025-08-12 | 🤖🤠 AI Mess 📄📚](./reflections/2025-08-12.md)  
 - [2025-08-11 | 🤖🛃🎬 AAiA 📚](./reflections/2025-08-11.md)  
 - [2025-08-10 | 🤖🚛📚🗺️ RAG Guide 🏁📚](./reflections/2025-08-10.md)  
 - [2025-08-09 | ✊ Resistance 📺📚](./reflections/2025-08-09.md)  
@@ -20,10 +21,11 @@ title: 🏡 Home
 - [2025-08-05 | 🧠 AI | 👩🏼‍🏫 ML | 🦜 LLM 📚](./reflections/2025-08-05.md)  
 - [2025-08-04 | 🤖 AI | 🚚 RAG | 🏗️ Agents 📚🤖💬](./reflections/2025-08-04.md)  
 - [2025-08-03 | 😎 Chill 📚](./reflections/2025-08-03.md)  
-- [2025-08-02 | 🫁 Breath 📚](./reflections/2025-08-02.md)  
   
   
-## [📚 Books](./books/index.md) (566)  
+## [📚 Books](./books/index.md) (567)  
+- [🗑️✨ Refactoring: Improving the Design of Existing Code](./books/refactoring-improving-the-design-of-existing-code.md)  
+- [🧼💾 Clean Code: A Handbook of Agile Software Craftsmanship](./books/clean-code.md)  
 - [❓📚 A Simple Guide to Retrieval Augmented Generation](./books/a-simple-guide-to-retrieval-augmented-generation.md)  
 - [🔄 On Revolution](./books/on-revolution.md)  
 - [🌍🏛️ The Great Transformation: The Political and Economic Origins of Our Time](./books/the-great-transformation-the-political-and-economic-origins-of-our-time.md)  
@@ -32,8 +34,6 @@ title: 🏡 Home
 - [💰➡️ The Triumph of Injustice: How the Rich Dodge Taxes and How to Make Them Pay](./books/the-triumph-of-injustice-how-the-rich-dodge-taxes-and-how-to-make-them-pay.md)  
 - [🏷️🏚️💔🏰 The Price of Inequality: How Today's Divided Society Endangers Our Future](./books/the-price-of-inequality-how-todays-divided-society-endangers-our-future.md)  
 - [🤖🧠🔗 Building AI Agents with LLMs, RAG, and Knowledge Graphs: A practical guide to autonomous and modern AI agents](./books/building-ai-agents-with-llms-rag-and-knowledge-graphs-a-practical-guide-to-autonomous-and-modern-ai-agents.md)  
-- [🤖⚙️ AI Agents in Action](./books/ai-agents-in-action.md)  
-- [🤖📈 AI for Marketing and Product Innovation: Powerful New Tools for Predicting Trends, Connecting with Customers, and Closing Sales](./books/ai-for-marketing-and-product-innovation-powerful-new-tools-for-predicting-trends-connecting-with-customers-and-closing-sales.md)  
   
   
 ## [📺 Videos](./videos/index.md) (245)  
@@ -65,20 +65,20 @@ title: 🏡 Home
 - [⚛️💡🚀 Atomic Innovation](./bot-chats/atomic-innovation.md)  
   
   
-## [📄  Articles](./articles/index.md) (44)  
+## [📄  Articles](./articles/index.md) (45)  
+- [🤖🧱🏗️🧠 An Approach to Building with AI](./articles/an-approach-to-building-with-ai.md)  
 - [📊🔎🤖🪜 New Evaluation, Library, and Analysis of Step By Step Reasoning with Large Language Models](./articles/new-evaluation-library-and-analysis-of-step-by-step-reasoning-with-large-language-models.md)  
 - [🤖🧠👨‍💻🏗️ How we built our multi Agent research system](./articles/how-we-built-our-multi-agent-research-system.md)  
 - [🤖🗣️🔑 Introducing Open SWE: An Open Source Asynchronous Coding Agent](./articles/introducing-open-swe-an-open-source-asynchronous-coding-agent.md)  
 - [🧠💪📈 BDNF Response to High Intensity Exercise](./articles/bdnf-response-to-high-intensity-exercise.md)  
-- [📈🤖✍️🔄 AI traffic is up 527%. SEO is being rewritten.](./articles/ai-traffic-is-up-527-percent-seo-is-being-rewritten.md)  
   
   
 ## [💾 Software](./software/index.md) (29)  
+- [Zodios](./software/zodios.md)  
 - [🤖🖱️📍 Cursor](./software/cursor.md)  
 - [🤖💻🪄 GitHub Copilot for VS Code](./software/github-copilot-for-vs-code.md)  
 - [💻🎮🕹️🧠 CodinGame](./software/codingame.md)  
 - [🦙💬 Ollama](./software/ollama.md)  
-- [🤖♊ Gemini](./software/gemini.md)  
   
   
 ## [👥 People](./people/index.md) (12)  

@@ -7,7 +7,7 @@ URL: https://bagrounds.org/books
 backlinks: false
 ---
 [Home](../index.md)  
-# 📚 Books (566)  
+# 📚 Books (567)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)  
 - [🧑‍🤝‍🧑📈 10 to 25: The Science of Motivating Young People: A Groundbreaking Approach to Leading the Next Generation - And Making Your Own Life Easier](./10-to-25-the-science-of-motivating-young-people-a-groundbreaking-approach-to-leading-the-next-generation-and-making-your-own-life-easier.md)  
@@ -341,6 +341,7 @@ Feedback Control of Dynamic Systems]]
 - [🧠🤔❓ Rationality: What It Is, Why It Seems Scarce, Why It Matters](./rationality.md)  
 - [🧮♻️ Rational Ritual: Culture, Coordination, and Common Knowledge](./rational-ritual.md)  
 - [🏛️🔄✊🌍 Reclaiming the State: A Progressive Vision of Sovereignty for a Post-Neoliberal World](./reclaiming-the-state.md)  
+- [🗑️✨ Refactoring: Improving the Design of Existing Code](./refactoring-improving-the-design-of-existing-code.md)  
 - [🤖➕🧠➡️ Reinforcement Learning: An Introduction](./reinforcement-learning-an-introduction.md)  
 - [🔊🎞️🌱🤯 Resonate: Present Visual Stories that Transform Audiences](./resonate.md)  
 - [😴📈 Rest: Why You Get More Done When You Work Less](./rest-why-you-get-more-done-when-you-work-less.md)  

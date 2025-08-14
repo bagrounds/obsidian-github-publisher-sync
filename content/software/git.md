@@ -120,12 +120,12 @@ Git was created by Linus Torvalds in 2005 to manage the [Linux](./linux.md) kern
 📖 **Book Recommendations**  
   
 - Topical: "Pro Git" by Scott Chacon and Ben Straub. 📖  
-- Tangentially related: "The Phoenix Project" by Gene Kim, Kevin Behr, and George Spafford. 🏭  
+- Tangentially related: [🐦‍🔥💻 The Phoenix Project](../books/the-phoenix-project.md) by Gene Kim, Kevin Behr, and George Spafford. 🏭  
 - Topically opposed: "Centralized Version Control using Subversion" 📚  
-- More general: "Working Effectively with Legacy Code" by Michael Feathers. 🛠️  
+- More general: [🧱🛠️ Working Effectively with Legacy Code](../books/working-effectively-with-legacy-code.md) by Michael Feathers. 🛠️  
 - More specific: "Git Internals" by Scott Chacon. 🧠  
 - Fictional: "Ready Player One" by Ernest Cline (for its themes of collaboration and versioning in virtual worlds). 🎮  
-- Rigorous: "Software Engineering at Google" by Titus Winters, Tom Manshreck, and Hyrum Wright. 💻  
+- Rigorous: [💻⚙️ Software Engineering at Google: Lessons Learned from Programming Over Time](../books/software-engineering-at-google-lessons-learned-from-programming-over-time.md) by Titus Winters, Tom Manshreck, and Hyrum Wright. 💻  
 - Accessible: "Learn Git Branching" (interactive website). 🌐  
   
 📺 **Links To Relevant YouTube Channels Or Videos**  

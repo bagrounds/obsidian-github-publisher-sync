@@ -10,7 +10,8 @@ title: 🏡 Home
 📑 Notes, 💭 thoughts, and 🔗 Links.  
 ❔ What do 🫵 _you_ 🤔 think?  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (271)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (272)  
+- [2025-08-13 | 📜 Legacy Code 📚](./reflections/2025-08-13.md)  
 - [2025-08-12 | 🤖🤠 AI Mess 📄📚](./reflections/2025-08-12.md)  
 - [2025-08-11 | 🤖🛃🎬 AAiA 📚](./reflections/2025-08-11.md)  
 - [2025-08-10 | 🤖🚛📚🗺️ RAG Guide 🏁📚](./reflections/2025-08-10.md)  
@@ -20,12 +21,12 @@ title: 🏡 Home
 - [2025-08-06 | 🧟 BrAIns | 🌄 Morning | ❤️‍🔥 Intense 📺📚](./reflections/2025-08-06.md)  
 - [2025-08-05 | 🧠 AI | 👩🏼‍🏫 ML | 🦜 LLM 📚](./reflections/2025-08-05.md)  
 - [2025-08-04 | 🤖 AI | 🚚 RAG | 🏗️ Agents 📚🤖💬](./reflections/2025-08-04.md)  
-- [2025-08-03 | 😎 Chill 📚](./reflections/2025-08-03.md)  
   
   
-## [📚 Books](./books/index.md) (567)  
-- [🗑️✨ Refactoring: Improving the Design of Existing Code](./books/refactoring-improving-the-design-of-existing-code.md)  
+## [📚 Books](./books/index.md) (568)  
 - [🧼💾 Clean Code: A Handbook of Agile Software Craftsmanship](./books/clean-code.md)  
+- [🗑️✨ Refactoring: Improving the Design of Existing Code](./books/refactoring-improving-the-design-of-existing-code.md)  
+- [🧱🛠️ Working Effectively with Legacy Code](./books/working-effectively-with-legacy-code.md)  
 - [❓📚 A Simple Guide to Retrieval Augmented Generation](./books/a-simple-guide-to-retrieval-augmented-generation.md)  
 - [🔄 On Revolution](./books/on-revolution.md)  
 - [🌍🏛️ The Great Transformation: The Political and Economic Origins of Our Time](./books/the-great-transformation-the-political-and-economic-origins-of-our-time.md)  
@@ -33,7 +34,6 @@ title: 🏡 Home
 - [⚖️⬆️🤝 The Spirit Level: Why Greater Equality Makes Societies Stronger](./books/the-spirit-level-why-greater-equality-makes-societies-stronger.md)  
 - [💰➡️ The Triumph of Injustice: How the Rich Dodge Taxes and How to Make Them Pay](./books/the-triumph-of-injustice-how-the-rich-dodge-taxes-and-how-to-make-them-pay.md)  
 - [🏷️🏚️💔🏰 The Price of Inequality: How Today's Divided Society Endangers Our Future](./books/the-price-of-inequality-how-todays-divided-society-endangers-our-future.md)  
-- [🤖🧠🔗 Building AI Agents with LLMs, RAG, and Knowledge Graphs: A practical guide to autonomous and modern AI agents](./books/building-ai-agents-with-llms-rag-and-knowledge-graphs-a-practical-guide-to-autonomous-and-modern-ai-agents.md)  
   
   
 ## [📺 Videos](./videos/index.md) (245)  
@@ -50,11 +50,11 @@ title: 🏡 Home
   
   
 ## [🌌 Topics](./topics/index.md) (79)  
+- [Software Development and Coding](./topics/software-development-and-coding.md)  
 - [⚙️💡💻🤖📡 Technology](./topics/technology.md)  
 - [💻🔬 Computer Science](./topics/computer-science.md)  
 - [🤖🔄🧠💪 Reinforcement Learning based Adaptive Control](./topics/reinforcement-learning-based-adaptive-control.md)  
 - [🇨🇳🤖 DeepSeek](./topics/deepseek.md)  
-- [🧠🌐 Knowledge Graphs](./topics/knowledge-graphs.md)  
   
   
 ## [🤖💬 Bot Chats](./bot-chats/index.md) (42)  
@@ -74,11 +74,11 @@ title: 🏡 Home
   
   
 ## [💾 Software](./software/index.md) (29)  
+- [💾➕🤝 Git](./software/git.md)  
 - [Zodios](./software/zodios.md)  
 - [🤖🖱️📍 Cursor](./software/cursor.md)  
 - [🤖💻🪄 GitHub Copilot for VS Code](./software/github-copilot-for-vs-code.md)  
 - [💻🎮🕹️🧠 CodinGame](./software/codingame.md)  
-- [🦙💬 Ollama](./software/ollama.md)  
   
   
 ## [👥 People](./people/index.md) (12)  

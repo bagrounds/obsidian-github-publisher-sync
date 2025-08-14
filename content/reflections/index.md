@@ -6,7 +6,7 @@ title: 🪞 Reflections
 URL: https://bagrounds.org/reflections
 backlinks: false
 ---
-[](.md)[Home](../index.md)  
+[Home](../index.md)  
 # 🪞 Reflections (272)  
 - [2025-08-13 | 📜 Legacy Code 📚](./2025-08-13.md)  
 - [2025-08-12 | 🤖🤠 AI Mess 📄📚](./2025-08-12.md)  

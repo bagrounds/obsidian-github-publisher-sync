@@ -265,8 +265,8 @@ Because they met **uv** and suddenly, all their dependencies were resolved so mu
   
 #### 🌍 More General (Software Engineering):  
   
-* 💻 **"The Pragmatic Programmer" by Andrew Hunt and David Thomas:** General software development wisdom, including managing dependencies and tooling effectively.  
-* **[🏎️💾 Accelerate](../books/accelerate.md): The Science of Lean Software and DevOps by Nicole Forsgren, Jez Humble, and Gene Kim:** Discusses how to build and scale high-performing technology organizations, where efficient tooling (like `uv`) plays a role in reducing lead times.  
+* **[🧑‍💻📈 The Pragmatic Programmer: Your Journey to Mastery](../books/the-pragmatic-programmer-your-journey-to-mastery.md) by Andrew Hunt and David Thomas:** General software development wisdom, including managing dependencies and tooling effectively.  
+* **[🏎️💾 Accelerate: The Science of Lean Software and DevOps: Building and Scaling High Performing Technology Organizations](../books/accelerate.md): by Nicole Forsgren, Jez Humble, and Gene Kim:** Discusses how to build and scale high-performing technology organizations, where efficient tooling (like `uv`) plays a role in reducing lead times.  
   
 #### 🔬 More Specific (Deep Dive into Resolvers - Highly Academic):  
   

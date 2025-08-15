@@ -52,7 +52,7 @@ CTA: 🛠️ Build impactful LLMs.
 ### 🎨 Creative Connections: Expanding the Engineer's Mindset  
   
 * **[🤖⚙️🔁 Designing Machine Learning Systems: An Iterative Process for Production-Ready Applications](./designing-machine-learning-systems-an-iterative-process-for-production-ready-applications.md)** by Chip Huyen: 🧱 This book focuses on the iterative process of designing and building reliable, scalable, and maintainable machine learning systems, a crucial skill for any MLOps-focused engineer.  
-* 🧑‍💻 **The Pragmatic Programmer: Your Journey to Mastery** by David Thomas and Andrew Hunt: 🕰️ A classic in software engineering, this book offers timeless advice on writing better software and becoming a more effective developer.  
+* **[🧑‍💻📈 The Pragmatic Programmer: Your Journey to Mastery](./the-pragmatic-programmer-your-journey-to-mastery.md)** by David Thomas and Andrew Hunt: 🕰️ A classic in software engineering, this book offers timeless advice on writing better software and becoming a more effective developer.  
 * 🗺️ **Atlas of AI** by Kate Crawford: 🌏 This book offers a critical perspective on the social, political, and environmental costs of artificial intelligence, encouraging engineers to consider the broader implications of their work.  
 * 🤖 **AI Ethics** by Mark Coeckelbergh: ⚖️ This book provides a practical and accessible analysis of the ethical issues surrounding AI, a vital topic for anyone building and deploying these powerful technologies.  
   

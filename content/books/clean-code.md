@@ -55,7 +55,7 @@ The book covers numerous principles and practices, including:
   
 ## 📚 Further Reading: Expanding on Clean Code  
 ### 🤝 Similar Reads (Code Quality & Craftsmanship)  
-* 🛤️ **The Pragmatic Programmer: Your Journey To Mastery** by David Thomas and Andrew Hunt: A classic offering practical advice on a wider range of topics beyond just code, focusing on developer effectiveness and philosophy. Seen as a companion or sometimes alternative starting point.  
+* **[🧑‍💻📈 The Pragmatic Programmer: Your Journey to Mastery](./the-pragmatic-programmer-your-journey-to-mastery.md)** by David Thomas and Andrew Hunt: A classic offering practical advice on a wider range of topics beyond just code, focusing on developer effectiveness and philosophy. Seen as a companion or sometimes alternative starting point.  
 * 🏗️ **Code Complete: A Practical Handbook of Software Construction** by Steve McConnell: A comprehensive and highly regarded handbook covering software construction in detail, often recommended alongside or even before Clean Code for its breadth. Focuses more on the overall software development process.  
 * **[🗑️✨ Refactoring: Improving the Design of Existing Code](./refactoring-improving-the-design-of-existing-code.md)** by Martin Fowler (with Kent Beck): The definitive guide to improving existing code systematically and safely. Focuses on specific techniques for restructuring code.  
 * **[🧱🛠️ Working Effectively with Legacy Code](./working-effectively-with-legacy-code.md)** by Michael C. Feathers: Essential techniques for dealing with large, untested, or poorly understood codebases.  

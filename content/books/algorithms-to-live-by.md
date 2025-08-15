@@ -76,7 +76,7 @@ affiliate link: https://amzn.to/4kxUFwM
   
 ### 🎨 Creatively Related Reads (Complexity, Systems, Information, Thinking Tools)  
   
-* 🛠️ **The Pragmatic Programmer: From Journeyman to Master** by Andrew Hunt and David Thomas: While aimed at software developers, it offers practical advice on thinking, learning, and problem-solving that resonates with applying structured approaches to complex tasks.  
+* **[🧑‍💻📈 The Pragmatic Programmer: Your Journey to Mastery](./the-pragmatic-programmer-your-journey-to-mastery.md)** by Andrew Hunt and David Thomas: While aimed at software developers, it offers practical advice on thinking, learning, and problem-solving that resonates with applying structured approaches to complex tasks.  
 * 👨‍💻 **Code: The Hidden Language of Computer Hardware and Software** by Charles Petzold: Explains the fundamental building blocks of computers and computation, providing context for where algorithms operate.  
 * 🖥️ **The Most Complex Machine: A Survey of Computers and Computing** by David Eck: Explains computation accessibly and connects it to daily life, similar in goal but perhaps broader in scope than just algorithms.  
 * 💡 **Tools For Thought** by Howard Rheingold: An older but insightful look at the history and potential of computers to augment human intellect.  

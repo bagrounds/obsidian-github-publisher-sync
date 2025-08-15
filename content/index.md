@@ -11,7 +11,7 @@ title: 🏡 Home
 ❔ What do 🫵 _you_ 🤔 think?  
   
 ## [🪞 Reflections](./reflections/index.md) ~ Blog (273)  
-- [2025-08-14](./reflections/2025-08-14.md)  
+- [2025-08-14 | 🧵 Pragmatic 📚📄](./reflections/2025-08-14.md)  
 - [2025-08-13 | 📜 Legacy Code 📚](./reflections/2025-08-13.md)  
 - [2025-08-12 | 🤖🤠 AI Mess 📄📚](./reflections/2025-08-12.md)  
 - [2025-08-11 | 🤖🛃🎬 AAiA 📚](./reflections/2025-08-11.md)  

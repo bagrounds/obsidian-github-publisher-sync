@@ -57,20 +57,20 @@ title: 🏡 Home
 - [💻🔬 Computer Science](./topics/computer-science.md)  
   
   
-## [🤖💬 Bot Chats](./bot-chats/index.md) (42)  
-- [📚🤖💬 RAG and Agents](./bot-chats/rag-and-agents.md)  
-- [📐🔗🤖🧠 Category Theory for AI Engineering](./bot-chats/category-theory-for-ai-engineering.md)  
-- [💃🕺🎶 Learn to Dance](./bot-chats/learn-to-dance.md)  
-- [🤰⏰👶🔮 Forecasting Parenthood](./bot-chats/forecasting-parenthood.md)  
-- [⚛️💡🚀 Atomic Innovation](./bot-chats/atomic-innovation.md)  
-  
-  
 ## [📄  Articles](./articles/index.md) (46)  
 - [♊💻🆚 Gemini CLI + VS Code: Native diffing and context-aware workflows](./articles/gemini-cli-+-vs-code-native-diffing-and-context-aware-workflows.md)  
 - [🤖🧱🏗️🧠 An Approach to Building with AI](./articles/an-approach-to-building-with-ai.md)  
 - [📊🔎🤖🪜 New Evaluation, Library, and Analysis of Step By Step Reasoning with Large Language Models](./articles/new-evaluation-library-and-analysis-of-step-by-step-reasoning-with-large-language-models.md)  
 - [🤖🧠👨‍💻🏗️ How we built our multi Agent research system](./articles/how-we-built-our-multi-agent-research-system.md)  
 - [🤖🗣️🔑 Introducing Open SWE: An Open Source Asynchronous Coding Agent](./articles/introducing-open-swe-an-open-source-asynchronous-coding-agent.md)  
+  
+  
+## [🤖💬 Bot Chats](./bot-chats/index.md) (42)  
+- [📚🤖💬 RAG and Agents](./bot-chats/rag-and-agents.md)  
+- [📐🔗🤖🧠 Category Theory for AI Engineering](./bot-chats/category-theory-for-ai-engineering.md)  
+- [💃🕺🎶 Learn to Dance](./bot-chats/learn-to-dance.md)  
+- [🤰⏰👶🔮 Forecasting Parenthood](./bot-chats/forecasting-parenthood.md)  
+- [⚛️💡🚀 Atomic Innovation](./bot-chats/atomic-innovation.md)  
   
   
 ## [💾 Software](./software/index.md) (29)  
@@ -103,4 +103,4 @@ title: 🏡 Home
 - <a href="https://www.quora.com/profile/Bryan-Grounds"><img style="height:1em; margin:0;" src="https://simpleicons.org/icons/quora.svg"/> Quora</a>  
 - <a href="http://stackoverflow.com/users/2081363/bagrounds"><img style="height:1em; margin:0;" src="https://simpleicons.org/icons/stackoverflow.svg"/> StackOverflow</a>  
 - <a href="https://twitter.com/bagrounds"><img style="height:1em; margin:0;" src="https://simpleicons.org/icons/x.svg"/> X (Formerly Twitter)</a>  
-- <a href="https://bsky.app/profile/bagrounds.bsky.social"><img style="height:1em; margin:0;" src="https://simpleicons.org/icons/bluesky.svg"/> Bluesky</a>  
+- <a href="https://bsky.app/profile/bagrounds.bsky.social"><img style="height:1em; margin:0;" src="https://simpleicons.org/icons/bluesky.svg"/> Bluesky</a>

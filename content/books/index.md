@@ -7,7 +7,7 @@ URL: https://bagrounds.org/books
 backlinks: false
 ---
 [Home](../index.md)  
-# 📚 Books (568)  
+# 📚 Books (570)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)  
 - [🧑‍🤝‍🧑📈 10 to 25: The Science of Motivating Young People: A Groundbreaking Approach to Leading the Next Generation - And Making Your Own Life Easier](./10-to-25-the-science-of-motivating-young-people-a-groundbreaking-approach-to-leading-the-next-generation-and-making-your-own-life-easier.md)  
@@ -28,6 +28,7 @@ backlinks: false
 - [🤖🏗️ AI Engineering: Building Applications with Foundation Models](./ai-engineering-building-applications-with-foundation-models.md)  
 - [🤖📈 AI for Marketing and Product Innovation: Powerful New Tools for Predicting Trends, Connecting with Customers, and Closing Sales](./ai-for-marketing-and-product-innovation-powerful-new-tools-for-predicting-trends-connecting-with-customers-and-closing-sales.md)  
 - [🤖🖱️🤝 AI meets UX: Designing the Next Generation of User-Centered Products: Where innovation meets empathy to shape the future of design](./ai-meets-ux-designing-the-next-generation-of-user-centered-products-where-innovation-meets-empathy-to-shape-the-future-of-design.md)  
+- [🤖💻 AI-Powered Developer: Build great software with ChatGPT and Copilot](./ai-powered-developer-build-great-software-with-chatgpt-and-copilot.md)  
 - [🤔💻🧠 Algorithms to Live By: The Computer Science of Human Decisions](./algorithms-to-live-by.md)  
 - [🔬🧘🏼‍♀️🧠 Altered Traits: Science Reveals How Meditation Changes Your Mind, Brain, and Body](./altered-traits-science-reveals-how-meditation-changes-your-mind-brain-and-body.md)  
 - [👨‍👦🇺🇸📜 American Fatherhood: A Cultural History](./american-fatherhood-a-cultural-history.md)  
@@ -490,6 +491,7 @@ Feedback Control of Dynamic Systems]]
 - [🔑🧭❤️ The Power of Meaning: Crafting a Life That Matters](./the-power-of-meaning.md)  
 - [🔌👋 The Power of Showing Up: How Parental Presence Shapes Who Our Kids Become and How Their Brains Get Wired](./the-power-of-showing-up.md)  
 - [🔋⬇️⬆️ The Power of the Downstate: Recharge Your Life Using Your Body's Own Restorative Systems](./the-power-of-the-downstate-recharge-your-life-using-your-bodys-own-restorative-systems.md)  
+- [🧑‍💻📈 The Pragmatic Programmer: Your Journey to Mastery](./the-pragmatic-programmer-your-journey-to-mastery.md)  
 - [🏷️🏚️💔🏰 The Price of Inequality: How Today's Divided Society Endangers Our Future](./the-price-of-inequality-how-todays-divided-society-endangers-our-future.md)  
 - [🧠🏃 The Psychological Benefits of Exercise and Physical Activity](./the-psychological-benefits-of-exercise-and-physical-activity.md)  
 - [🏢🗓️ The Psychology of Planning in Organizations: Research and Applications](./the-psychology-of-planning-in-organizations-research-and-applications.md)  

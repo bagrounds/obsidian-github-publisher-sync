@@ -122,7 +122,7 @@ Pydantic was created to address the need for robust data validation and settings
   
 * **Topical:** "Effective Python: 90 Specific Ways to Write Better Python" by Brett Slatkin 🐍.  
 * **Tangentially Related:** [🧼💾 Clean Code: A Handbook of Agile Software Craftsmanship](../books/clean-code.md) by Robert C. Martin 🧼.  
-* **Topically Opposed:** "The Pragmatic Programmer: Your Journey To Mastery, 20th Anniversary Edition." By David Thomas and Andrew Hunt 🛠️.  
+* **Topically Opposed:** [🧑‍💻📈 The Pragmatic Programmer: Your Journey to Mastery](../books/the-pragmatic-programmer-your-journey-to-mastery.md) By David Thomas and Andrew Hunt 🛠️.  
 * **More General:** "Fluent Python: Clear, Concise, and Effective Programming" by Luciano Ramalho 🐍.  
 * **More Specific:** Pydantic's official documentation 📄.  
 * **Fictional:** "Ready Player One" by Ernest Cline 🎮.  

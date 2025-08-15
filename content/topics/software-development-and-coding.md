@@ -33,7 +33,7 @@ URL: https://bagrounds.org/topics/software-development-and-coding
   
 1. **[🧼💾 Clean Code: A Handbook of Agile Software Craftsmanship](../books/clean-code.md) by Robert C. Martin:** 📖✨  
     * Dive into the art of writing readable and maintainable code! This book emphasizes clean code principles, making your code a joy to read and work with. 🤩  
-2. **"The Pragmatic Programmer: From Journeyman to Master" by Andrew Hunt and David Thomas:** 🛠️🌟  
+2. **[🧑‍💻📈 The Pragmatic Programmer: Your Journey to Mastery](../books/the-pragmatic-programmer-your-journey-to-mastery.md) by Andrew Hunt and David Thomas:** 🛠️🌟  
     * A treasure trove of practical advice for software developers! Learn how to think like a pragmatic programmer and elevate your coding skills. 🚀  
 3. **"Effective Java" by Joshua Bloch:** ☕💡  
     * Master the art of writing high-quality Java code! This book provides invaluable insights into best practices, design patterns, and optimization techniques. 🥇  

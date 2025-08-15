@@ -7,6 +7,7 @@ URL: https://bagrounds.org/books/debugging
 Author: 
 tags: 
 affiliate link: https://amzn.to/4kmA3HP
+CTA: 🛠️ Conquer errors.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🐞🔍🤔✅ Debugging: The 9 Indispensable Rules for Finding Even the Most Elusive Software and Hardware Problems  
@@ -69,8 +70,8 @@ affiliate link: https://amzn.to/4kmA3HP
   
 ### Additional Book Recommendations 📚  
   
-* **Best Alternate Book on the Same Topic:** "The Pragmatic Programmer: Your Journey to Mastery" by Andrew Hunt and David Thomas. This book contains many debugging techniques, and general software development mastery. 🧑‍🏫  
-* **Best Tangentially Related Book:** "[Thinking, Fast and Slow](./thinking-fast-and-slow.md)" by Daniel Kahneman. This book delves into cognitive biases, which can hinder effective debugging. 🧠  
+* **Best Alternate Book on the Same Topic:** [🧑‍💻📈 The Pragmatic Programmer: Your Journey to Mastery](./the-pragmatic-programmer-your-journey-to-mastery.md) by Andrew Hunt and David Thomas. This book contains many debugging techniques, and general software development mastery. 🧑‍🏫  
+* **Best Tangentially Related Book:** [🤔🐇🐢 Thinking, Fast and Slow](./thinking-fast-and-slow.md) by Daniel Kahneman. This book delves into cognitive biases, which can hinder effective debugging. 🧠  
 * **Best Diametrically Opposed Book:** "Code Complete" by Steve McConnell. While an excellent software engineering book, it focuses on preventing bugs through good coding practices, rather than detailed debugging. 🧑‍💻  
 * **Best Fiction Book That Incorporates Related Ideas:** "The Martian" by Andy Weir. This book showcases problem-solving and debugging in a high-stakes, technical environment. 🚀  
 * **Best More General Book:** "Problem Solving 101" by Ken Watanabe. This book gives very good general problem solving skills. 💡  

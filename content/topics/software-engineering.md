@@ -37,7 +37,7 @@ Here are some influential and accessible books that provide a solid foundation i
     * This book focuses on writing readable and maintainable code, emphasizing principles and practices that lead to high-quality software. It's a must-read for any developer. 📚✨  
 2.  **"Design Patterns: Elements of Reusable Object-Oriented Software" by Erich Gamma, Richard Helm, Ralph Johnson, and John Vlissides (The "Gang of Four" or GoF):**  
     * A classic in software design, this book introduces fundamental design patterns that can be applied to solve common software design problems. It’s a very valuable tool. 🧩💡  
-3.  **"The Pragmatic Programmer: Your Journey To Mastery, 20th Anniversary Edition" by David Thomas and Andrew Hunt:**  
+3.  **[🧑‍💻📈 The Pragmatic Programmer: Your Journey to Mastery](../books/the-pragmatic-programmer-your-journey-to-mastery.md) by David Thomas and Andrew Hunt:**  
     * This book offers practical advice and tips for software developers, covering a wide range of topics from coding to project management. It emphasizes pragmatism and craftsmanship. 🛠️📖  
 4.  **"Software Engineering" by Ian Sommerville:**  
     * This book is a comprehensive introduction to software engineering, covering all aspects of the software development lifecycle. It's widely used in academic settings. 🎓📘  

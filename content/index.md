@@ -10,7 +10,8 @@ title: 🏡 Home
 📑 Notes, 💭 thoughts, and 🔗 Links.  
 ❔ What do 🫵 _you_ 🤔 think?  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (272)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (273)  
+- [2025-08-14](./reflections/2025-08-14.md)  
 - [2025-08-13 | 📜 Legacy Code 📚](./reflections/2025-08-13.md)  
 - [2025-08-12 | 🤖🤠 AI Mess 📄📚](./reflections/2025-08-12.md)  
 - [2025-08-11 | 🤖🛃🎬 AAiA 📚](./reflections/2025-08-11.md)  
@@ -20,20 +21,19 @@ title: 🏡 Home
 - [2025-08-07 | 🤖 AIO? 🎯| 📚 RAG | 🌊 WAIve 📄📚](./reflections/2025-08-07.md)  
 - [2025-08-06 | 🧟 BrAIns | 🌄 Morning | ❤️‍🔥 Intense 📺📚](./reflections/2025-08-06.md)  
 - [2025-08-05 | 🧠 AI | 👩🏼‍🏫 ML | 🦜 LLM 📚](./reflections/2025-08-05.md)  
-- [2025-08-04 | 🤖 AI | 🚚 RAG | 🏗️ Agents 📚🤖💬](./reflections/2025-08-04.md)  
   
   
-## [📚 Books](./books/index.md) (568)  
-- [🧼💾 Clean Code: A Handbook of Agile Software Craftsmanship](./books/clean-code.md)  
+## [📚 Books](./books/index.md) (570)  
+- [🤖💻 AI-Powered Developer: Build great software with ChatGPT and Copilot](./books/ai-powered-developer-build-great-software-with-chatgpt-and-copilot.md)  
 - [🗑️✨ Refactoring: Improving the Design of Existing Code](./books/refactoring-improving-the-design-of-existing-code.md)  
-- [🧱🛠️ Working Effectively with Legacy Code](./books/working-effectively-with-legacy-code.md)  
-- [❓📚 A Simple Guide to Retrieval Augmented Generation](./books/a-simple-guide-to-retrieval-augmented-generation.md)  
-- [🔄 On Revolution](./books/on-revolution.md)  
-- [🌍🏛️ The Great Transformation: The Political and Economic Origins of Our Time](./books/the-great-transformation-the-political-and-economic-origins-of-our-time.md)  
-- [⚠️🥴🕹️🌐 The Fifth Risk](./books/the-fifth-risk.md)  
-- [⚖️⬆️🤝 The Spirit Level: Why Greater Equality Makes Societies Stronger](./books/the-spirit-level-why-greater-equality-makes-societies-stronger.md)  
-- [💰➡️ The Triumph of Injustice: How the Rich Dodge Taxes and How to Make Them Pay](./books/the-triumph-of-injustice-how-the-rich-dodge-taxes-and-how-to-make-them-pay.md)  
-- [🏷️🏚️💔🏰 The Price of Inequality: How Today's Divided Society Endangers Our Future](./books/the-price-of-inequality-how-todays-divided-society-endangers-our-future.md)  
+- [🧑‍💻📈 The Pragmatic Programmer: Your Journey to Mastery](./books/the-pragmatic-programmer-your-journey-to-mastery.md)  
+- [🤔💻🧠 Algorithms to Live By: The Computer Science of Human Decisions](./books/algorithms-to-live-by.md)  
+- [🦄👤🗓️ The Mythical Man-Month: Essays on Software Engineering](./books/the-mythical-man-month.md)  
+- [🐞🔍🤔✅ Debugging: The 9 Indispensable Rules for Finding Even the Most Elusive Software and Hardware Problems](./books/debugging.md)  
+- [🧱✅🐛 Foundations of Software Testing](./books/foundations-of-software-testing.md)  
+- [💻⚙️ Software Engineering at Google: Lessons Learned from Programming Over Time](./books/software-engineering-at-google-lessons-learned-from-programming-over-time.md)  
+- [🖥️🔑 System Design Interview - An Insider's Guide](./books/system-design-interview-an-insiders-guide.md)  
+- [🤖🛠️ LLM Engineer's Handbook: Master the art of engineering large language models from concept to production](./books/llm-engineers-handbook-master-the-art-of-engineering-large-language-models-from-concept-to-production.md)  
   
   
 ## [📺 Videos](./videos/index.md) (245)  
@@ -50,11 +50,11 @@ title: 🏡 Home
   
   
 ## [🌌 Topics](./topics/index.md) (79)  
+- [Software Engineering](./topics/software-engineering.md)  
+- [Yak Shaving](./topics/yak-shaving.md)  
 - [Software Development and Coding](./topics/software-development-and-coding.md)  
 - [⚙️💡💻🤖📡 Technology](./topics/technology.md)  
 - [💻🔬 Computer Science](./topics/computer-science.md)  
-- [🤖🔄🧠💪 Reinforcement Learning based Adaptive Control](./topics/reinforcement-learning-based-adaptive-control.md)  
-- [🇨🇳🤖 DeepSeek](./topics/deepseek.md)  
   
   
 ## [🤖💬 Bot Chats](./bot-chats/index.md) (42)  
@@ -65,20 +65,20 @@ title: 🏡 Home
 - [⚛️💡🚀 Atomic Innovation](./bot-chats/atomic-innovation.md)  
   
   
-## [📄  Articles](./articles/index.md) (45)  
+## [📄  Articles](./articles/index.md) (46)  
+- [♊💻🆚 Gemini CLI + VS Code: Native diffing and context-aware workflows](./articles/gemini-cli-+-vs-code-native-diffing-and-context-aware-workflows.md)  
 - [🤖🧱🏗️🧠 An Approach to Building with AI](./articles/an-approach-to-building-with-ai.md)  
 - [📊🔎🤖🪜 New Evaluation, Library, and Analysis of Step By Step Reasoning with Large Language Models](./articles/new-evaluation-library-and-analysis-of-step-by-step-reasoning-with-large-language-models.md)  
 - [🤖🧠👨‍💻🏗️ How we built our multi Agent research system](./articles/how-we-built-our-multi-agent-research-system.md)  
 - [🤖🗣️🔑 Introducing Open SWE: An Open Source Asynchronous Coding Agent](./articles/introducing-open-swe-an-open-source-asynchronous-coding-agent.md)  
-- [🧠💪📈 BDNF Response to High Intensity Exercise](./articles/bdnf-response-to-high-intensity-exercise.md)  
   
   
 ## [💾 Software](./software/index.md) (29)  
+- [Hypothesis](./software/hypothesis.md)  
+- [Pydantic](./software/pydantic.md)  
+- [🐍🏎️📦 uv](./software/uv.md)  
 - [💾➕🤝 Git](./software/git.md)  
 - [Zodios](./software/zodios.md)  
-- [🤖🖱️📍 Cursor](./software/cursor.md)  
-- [🤖💻🪄 GitHub Copilot for VS Code](./software/github-copilot-for-vs-code.md)  
-- [💻🎮🕹️🧠 CodinGame](./software/codingame.md)  
   
   
 ## [👥 People](./people/index.md) (12)  

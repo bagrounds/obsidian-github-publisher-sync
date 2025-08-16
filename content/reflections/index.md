@@ -7,7 +7,8 @@ URL: https://bagrounds.org/reflections
 backlinks: false
 ---
 [Home](../index.md)  
-# 🪞 Reflections (273)  
+# 🪞 Reflections (274)  
+- [2025-08-15 | 🔋 Tireless UX 📺📚](./2025-08-15.md)  
 - [2025-08-14 | 🧵 Pragmatic 📚📄](./2025-08-14.md)  
 - [2025-08-13 | 📜 Legacy Code 📚](./2025-08-13.md)  
 - [2025-08-12 | 🤖🤠 AI Mess 📄📚](./2025-08-12.md)  

@@ -10,7 +10,8 @@ title: 🏡 Home
 📑 Notes, 💭 thoughts, and 🔗 Links.  
 ❔ What do 🫵 _you_ 🤔 think?  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (273)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (274)  
+- [2025-08-15 | 🔋 Tireless UX 📺📚](./reflections/2025-08-15.md)  
 - [2025-08-14 | 🧵 Pragmatic 📚📄](./reflections/2025-08-14.md)  
 - [2025-08-13 | 📜 Legacy Code 📚](./reflections/2025-08-13.md)  
 - [2025-08-12 | 🤖🤠 AI Mess 📄📚](./reflections/2025-08-12.md)  
@@ -20,10 +21,10 @@ title: 🏡 Home
 - [2025-08-08 | 🏗️🤖 Building AI Agents 📄📚](./reflections/2025-08-08.md)  
 - [2025-08-07 | 🤖 AIO? 🎯| 📚 RAG | 🌊 WAIve 📄📚](./reflections/2025-08-07.md)  
 - [2025-08-06 | 🧟 BrAIns | 🌄 Morning | ❤️‍🔥 Intense 📺📚](./reflections/2025-08-06.md)  
-- [2025-08-05 | 🧠 AI | 👩🏼‍🏫 ML | 🦜 LLM 📚](./reflections/2025-08-05.md)  
   
   
-## [📚 Books](./books/index.md) (570)  
+## [📚 Books](./books/index.md) (571)  
+- [🧠📐 Laws of UX: Using Psychology to Design Better Products & Services](./books/laws-of-ux-using-psychology-to-design-better-products-services.md)  
 - [🤖💻 AI-Powered Developer: Build great software with ChatGPT and Copilot](./books/ai-powered-developer-build-great-software-with-chatgpt-and-copilot.md)  
 - [🗑️✨ Refactoring: Improving the Design of Existing Code](./books/refactoring-improving-the-design-of-existing-code.md)  
 - [🧑‍💻📈 The Pragmatic Programmer: Your Journey to Mastery](./books/the-pragmatic-programmer-your-journey-to-mastery.md)  
@@ -33,10 +34,10 @@ title: 🏡 Home
 - [🧱✅🐛 Foundations of Software Testing](./books/foundations-of-software-testing.md)  
 - [💻⚙️ Software Engineering at Google: Lessons Learned from Programming Over Time](./books/software-engineering-at-google-lessons-learned-from-programming-over-time.md)  
 - [🖥️🔑 System Design Interview - An Insider's Guide](./books/system-design-interview-an-insiders-guide.md)  
-- [🤖🛠️ LLM Engineer's Handbook: Master the art of engineering large language models from concept to production](./books/llm-engineers-handbook-master-the-art-of-engineering-large-language-models-from-concept-to-production.md)  
   
   
-## [📺 Videos](./videos/index.md) (245)  
+## [📺 Videos](./videos/index.md) (246)  
+- [🔋⚡😴🌞 How to never be tired again](./videos/how-to-never-be-tired-again.md)  
 - [✊📢✅ Forms of Resistance and Reasons to Believe It’s Working | Explainer](./videos/forms-of-resistance-and-reasons-to-believe-its-working-explainer.md)  
 - [👹📜🏛️🏠 What's in the version of Trump's bill passed by the Senate and its chances in the House](./videos/whats-in-the-version-of-trumps-bill-passed-by-the-senate-and-its-chances-in-the-house.md)  
 - [🗣️🤫🐘 Mike Levin Reveals What Republicans Told Him Behind Closed Doors About Big Beautiful Bill](./videos/mike-levin-reveals-what-republicans-told-him-behind-closed-doors-about-big-beautiful-bill.md)  
@@ -46,7 +47,6 @@ title: 🏡 Home
 - [🖼️🤔🛠️🤖 Context Engineering for Agents](./videos/context-engineering-for-agents.md)  
 - [❤️‍🔥🏋️🏃 The Role of High-Intensity Interval Training and Strength Training in Cardiovascular Health](./videos/the-role-of-high-intensity-interval-training-and-strength-training-in-cardiovascular-health.md)  
 - [🌅🧠🚀♾️ This morning routine is scientifically proven to make you limitless](./videos/this-morning-routine-is-scientifically-proven-to-make-you-limitless.md)  
-- [💻🌍🚶‍♀️ Where All the Tech Workers Are Going](./videos/where-all-the-tech-workers-are-going.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (79)  

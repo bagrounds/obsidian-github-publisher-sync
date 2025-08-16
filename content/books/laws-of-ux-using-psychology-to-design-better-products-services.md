@@ -11,6 +11,12 @@ CTA: 🧠 Apply user insights.
 # 🧠📐 Laws of UX: Using Psychology to Design Better Products & Services  
 [🛒 Laws of UX: Using Psychology to Design Better Products & Services. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3HetfOr)  
   
+## 📝🐒 Human Notes  
+- Users spend most of their time on other sites. Leverage common design patterns.  
+- Make targets big, sufficient spaced, and easy to reach.   
+- Minimize choices to ease decisions.  
+- Working memory = 5-9  
+  
 ## 📚 A Foundational Guide to Human-Centered Design  
   
 👩‍💻 Jon Yablonski's *Laws of UX: Using Psychology to Design Better Products & Services* serves as an essential resource for designers and creators, translating complex psychological principles into practical, actionable guidelines for user experience (UX) design. 🧠 The book's core premise is that the most effective and intuitive designs are those that align with the inherent psychological tendencies of users. 💡 By understanding these fundamental "laws," designers can create products that feel more natural, engaging, and ultimately more successful.  

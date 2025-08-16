@@ -7,7 +7,7 @@ URL: https://bagrounds.org/books
 backlinks: false
 ---
 [Home](../index.md)  
-# 📚 Books (570)  
+# 📚 Books (571)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)  
 - [🧑‍🤝‍🧑📈 10 to 25: The Science of Motivating Young People: A Groundbreaking Approach to Leading the Next Generation - And Making Your Own Life Easier](./10-to-25-the-science-of-motivating-young-people-a-groundbreaking-approach-to-leading-the-next-generation-and-making-your-own-life-easier.md)  
@@ -246,6 +246,7 @@ Feedback Control of Dynamic Systems]]
 - [🤖🦜 Large Language Models: Concepts, Techniques and Applications](./large-language-models-concepts-techniques-and-applications.md)  
 - [🇺🇸🏛️🚫📜⚖️ Lawless: How the Supreme Court Runs on Conservative Grievance, Fringe Theories, and Bad Vibes](./lawless-how-the-supreme-court-runs-on-conservative-grievance-fringe-theories-and-bad-vibes.md)  
 - [🧑‍⚖️📚 Law School for Everyone](./law-school-for-everyone.md)  
+- [🧠📐 Laws of UX: Using Psychology to Design Better Products & Services](./laws-of-ux-using-psychology-to-design-better-products-services.md)  
 - [🙈👁️💡🤔 Learning to See: Value-Stream Mapping to Add Value and Eliminate MUDA](./learning-to-see.md)  
 - [👨‍🏫🎉👍✨ Learn You a Haskell for Great Good!](./learn-you-a-haskell-for-great-good.md)  
 - [💪🧠 Level-Up Your Self-Discipline: Understand the Neuroscience of Self-Discipline, Control Your Emotions, Overcome Procrastination, and Achieve Your Difficult Goals](./level-up-your-self-discipline-understand-the-neuroscience-of-self-discipline-control-your-emotions-overcome-procrastination-and-achieve-your-difficult-goals.md)  

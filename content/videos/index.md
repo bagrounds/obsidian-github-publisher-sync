@@ -7,7 +7,7 @@ URL: https://bagrounds.org/videos
 backlinks: false
 ---
 [Home](../index.md)  
-# 📺 Videos (245)  
+# 📺 Videos (246)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
 - [❓💪🔬 12 Questions About Creatine with Stephen Cornish, PhD](./12-questions-about-creatine-w-stephen-cornish-phd.md)  
@@ -89,6 +89,7 @@ backlinks: false
 - [🥱💭✂️🎬🫡 How to Force Your Brain To Be Motivated (when you don’t feel like it)](./how-to-force-your-brain-to-be-motivated-when-you-dont-feel-like-it.md)  
 - [How to hack your brain to crave doing hard things.](./how-to-hack-your-brain-to-crave-doing-hard-things.md)  
 - [✨🎯🔒✅ How to make your dreams basically inevitable](./how-to-make-your-dreams-basically-inevitable.md)  
+- [🔋⚡😴🌞 How to never be tired again](./how-to-never-be-tired-again.md)  
 - [🇺🇸🛠️⏱️🏛️ How to Rebuild American Democracy in 20 Minutes](./how-to-rebuild-american-democracy-in-20-minutes.md)  
 - [How to Reduce Bone Injury Risks | Running Science](./how-to-reduce-bone-injury-risks-running-science.md)  
 - [🗣️👽 How to Talk to Aliens](./how-to-talk-to-aliens.md)  

@@ -1,11 +1,11 @@
 ---
 share: true
 aliases:
-  - Software Engineering
-title: Software Engineering
+  - 💻⚙️🧩🏗️ Software Engineering
+title: 💻⚙️🧩🏗️ Software Engineering
 ---
 [Home](../index.md) > [Topics](./index.md) > [Knowledge](./a-hierarchical-view-of-human-knowledge.md) > [Engineering](./engineering.md)  
-# Software Engineering  
+# 💻⚙️🧩🏗️ Software Engineering  
 ## 🤖 AI Summary  
 **High-Level Summary:**  
 Software Engineering is the systematic application of engineering principles to the design, development, maintenance, and retirement of software. It's about creating reliable, efficient, and maintainable software systems that solve real-world problems. The goal is to produce high-quality software within budget and on time, while managing complexity and ensuring robustness. 🛠️✨  

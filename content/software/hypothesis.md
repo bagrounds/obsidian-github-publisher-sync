@@ -1,12 +1,12 @@
 ---
 share: true
 aliases:
-  - Hypothesis
-title: Hypothesis
+  - ❓🧪✅🤔 Hypothesis
+title: ❓🧪✅🤔 Hypothesis
 URL: https://bagrounds.org/software/hypothesis
 ---
 [Home](../index.md) > [Software](./index.md)  
-# Hypothesis  
+# ❓🧪✅🤔 Hypothesis  
   
 ## 🤖 AI Summary  
 ### 👉 What Is It?  

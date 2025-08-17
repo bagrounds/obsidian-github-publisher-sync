@@ -1,13 +1,12 @@
 ---
 share: true
 aliases:
-  - A Hierarchical View of Human Knowledge
-  - Knowledge
-title: A Hierarchical View of Human Knowledge
+  - 🌲🪜🧠 A Hierarchical View of Human Knowledge
+title: 🌲🪜🧠 A Hierarchical View of Human Knowledge
 URL: https://bagrounds.org/topics/a-hierarchical-view-of-human-knowledge
 ---
 [Home](../index.md) > [Topics](./index.md)  
-# A Hierarchical View of Human Knowledge  
+# 🌲🪜🧠 A Hierarchical View of Human Knowledge  
 ## 🤖 AI Summary  
 **Introduction: A Hierarchical View of Human Knowledge** 🧠  
   

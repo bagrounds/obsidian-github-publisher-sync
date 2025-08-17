@@ -25,11 +25,30 @@ youtube: https://youtu.be/tke6X2eME3c
 * 🔄 Operating like a **sprinter**—oscillating between expending and recovering energy—is more effective than the linear "marathon" style.  
 * 🧘 Building **positive rituals** is essential for lasting change, as willpower alone is not enough.  
   
-## 🤔 **Evaluation**  
+### 🔋📋 Energy Audit: 16 Yes or No Questions  
   
-This perspective on managing energy rather than time provides a compelling counter-argument to traditional productivity methods that often focus solely on time-blocking and efficiency. While the video presents a strong case, other viewpoints suggest that the **work-life balance** concept itself is flawed. Alternative ideas include work-life integration, which sees work and personal life as a continuous flow rather than two separate scales to be balanced, and work-life harmony, which aims for the different aspects of life to create a cohesive whole.  
+1. 😴 I don't regularly get at least seven to eight hours of sleep and I often wake up feeling 😩 tired.  
+2. 🍳 I frequently skip breakfast or I settle for something that isn't particularly 🍔 healthy.  
+3. 🏋️ I don't work out enough, meaning cardiovascular training at least three times a week and strength training at least once a week. If you don't do both of those, you're a yes.  
+4. ⏰ I don't take regular breaks during the day to renew and recharge and I often eat 🥪 lunch at my desk if I eat lunch at all.  
+5. 😠 I frequently find myself feeling irritable, 😡 impatient, or 😟 anxious at work, especially when demand is high.  
+6. 👨‍👩‍👧‍👦 I don't have enough time with my family and loved ones and when I'm with them I'm not always really with them.  
+7. 🎉 I take too little time in my life for the activities that I most deeply enjoy.  
+8. 🙏 I rarely stop to express my appreciation to others or to savor and celebrate my accomplishments and blessings. If you don't do both those things, you're a yes.  
+9. 👀 I have difficulty focusing on one thing at a time and I'm easily 😵‍💫 distracted during the day, especially by 📧 email.  
+10. 🚨 I spend much of my time reacting to immediate demands rather than focusing on activities with long-term value and higher leverage.  
+11. 🤔 I don't take enough time for reflection, strategizing or thinking creatively.  
+12. 🌙 I work in the evenings and/or on the 🌴 weekends and I rarely take a vacation free of work if I take a vacation at all.  
+13. 🎯 I spend too little time at work doing what I do best and enjoy most.  
+14. 💔 There's significant gaps between what I say is important in my life and how I actually live.  
+15. 🧭 My decisions at work are more influenced by external demands than by a strong clear sense of my own purpose.  
+16. ❤️ I don't invest enough positive time and energy in making a positive difference to others in the world.  
   
-Furthermore, some critics of this approach might argue that it places too much responsibility on the individual to manage their energy, potentially overlooking the impact of toxic work environments, systemic issues, and unsupportive organizational cultures. Exploring topics such as the **role of corporate responsibility** in preventing burnout, the **socioeconomic factors** that affect an individual's ability to prioritize self-care, and the **psychological impact of digital connectivity** could provide a more comprehensive understanding of modern productivity challenges.  
+## 🤔 Evaluation  
+  
+This perspective on managing energy rather than time provides a compelling counter-argument to traditional productivity methods that often focus solely on time-blocking and efficiency. While the video presents a strong case, other viewpoints suggest that the ⚖️ work-life balance concept itself is flawed. Alternative ideas include work-life integration, which sees work and personal life as a continuous flow rather than two separate scales to be balanced, and work-life harmony, which aims for the different aspects of life to create a cohesive whole. 🧘‍♀️  
+  
+Furthermore, some critics of this approach might argue that it places too much responsibility on the individual to manage their energy, potentially overlooking the impact of toxic work environments, systemic issues, and unsupportive organizational cultures. Exploring topics such as the 🏢 role of corporate responsibility in preventing burnout, the 🌍 socioeconomic factors that affect an individual's ability to prioritize self-care, and the 📱 psychological impact of digital connectivity could provide a more comprehensive understanding of modern productivity challenges.  
   
 ## 📚 Book Recommendations  
   

@@ -7,7 +7,7 @@ URL: https://bagrounds.org/books
 backlinks: false
 ---
 [Home](../index.md)  
-# 📚 Books (571)  
+# 📚 Books (572)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)  
 - [🧑‍🤝‍🧑📈 10 to 25: The Science of Motivating Young People: A Groundbreaking Approach to Leading the Next Generation - And Making Your Own Life Easier](./10-to-25-the-science-of-motivating-young-people-a-groundbreaking-approach-to-leading-the-next-generation-and-making-your-own-life-easier.md)  
@@ -488,6 +488,7 @@ Feedback Control of Dynamic Systems]]
 - [👥⚔️🏛️ The People vs. Democracy: Why Our 🗽 Freedom Is in ⚠️ Danger and How to Save It](./the-people-vs-democracy.md)  
 - [👶🤔❤️ The Philosophical Baby: What Children's Minds Tell Us About Truth, Love, and the Meaning of Life](./the-philosophical-baby-what-childrens-minds-tell-us-about-truth-love-and-the-meaning-of-life.md)  
 - [🐦‍🔥💻 The Phoenix Project](./the-phoenix-project.md)  
+- [🔋📈 The Power of Full Engagement: Managing Energy, Not Time, Is the Key to High Performance and Personal Renewal](./the-power-of-full-engagement-managing-energy-not-time-is-the-key-to-high-performance-and-personal-renewal.md)  
 - [🔄🧠💪 The Power of Habit: Why We Do What We Do in Life and Business](./the-power-of-habit.md)  
 - [🔑🧭❤️ The Power of Meaning: Crafting a Life That Matters](./the-power-of-meaning.md)  
 - [🔌👋 The Power of Showing Up: How Parental Presence Shapes Who Our Kids Become and How Their Brains Get Wired](./the-power-of-showing-up.md)  

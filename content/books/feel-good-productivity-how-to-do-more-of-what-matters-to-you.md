@@ -8,6 +8,8 @@ affiliate link: https://amzn.to/4dJdYRa
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 😊✅ Feel Good Productivity: How to Do More of What Matters to You  
+[🛒 Feel Good Productivity: How to Do More of What Matters to You. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4dJdYRa)  
+  
 ## 📚 Book Report: Feel Good Productivity by Ali Abdaal  
   
 ### 🎯 Core Premise  
@@ -49,7 +51,7 @@ affiliate link: https://amzn.to/4dJdYRa
 ### 👍 Similar Reads (Focus on Well-being & Productivity)  
 * 😃 **The Happiness Advantage** by Shawn Achor: 🔬 Explores the science showing that happiness fuels success, not the other way around, offering principles to leverage positivity for improved performance. 🤝 Directly aligns with Abdaal's core premise.  
 * 🌊 **[Flow: The Psychology of Optimal Experience](./flow-the-psychology-of-optimal-experience.md)** by Mihaly Csikszentmihalyi: 🧘 Discusses the concept of "flow," a state of deep enjoyment and engagement in an activity, which resonates with the "feel good" aspect of productivity.  
-* 🔋 **The Power of Full Engagement** by Jim Loehr and Tony Schwartz: ⚡ Emphasizes managing energy, not just time, across physical, emotional, mental, and spiritual dimensions to achieve high performance and prevent burnout. ♻️ This shares the focus on sustainable energy with Abdaal's "Sustain" section.  
+* **[🔋📈 The Power of Full Engagement: Managing Energy, Not Time, Is the Key to High Performance and Personal Renewal](./the-power-of-full-engagement-managing-energy-not-time-is-the-key-to-high-performance-and-personal-renewal.md)** by Jim Loehr and Tony Schwartz: ⚡ Emphasizes managing energy, not just time, across physical, emotional, mental, and spiritual dimensions to achieve high performance and prevent burnout. ♻️ This shares the focus on sustainable energy with Abdaal's "Sustain" section.  
 * ☀️ **Learned Optimism: How to Change Your Mind and Your Life** by Martin Seligman: 💡 A foundational text in positive psychology focusing on developing optimism, a key component of feeling good and resilience.  
 * 🌱 **Flourish: A Visionary New Understanding of Happiness and Wellbeing** by Martin Seligman: ➕ Expands on positive psychology concepts, defining well-being through Positive emotions, Engagement, Relationships, Meaning, and Accomplishment (PERMA), relevant to Abdaal's holistic view.  
   

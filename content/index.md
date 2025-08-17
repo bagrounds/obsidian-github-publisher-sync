@@ -10,7 +10,8 @@ title: 🏡 Home
 📑 Notes, 💭 thoughts, and 🔗 Links.  
 ❔ What do 🫵 _you_ 🤔 think?  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (274)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (275)  
+- [2025-08-16 | 💍 Engage 📚](./reflections/2025-08-16.md)  
 - [2025-08-15 | 🔋 Tireless UX 📺📚](./reflections/2025-08-15.md)  
 - [2025-08-14 | 🧵 Pragmatic 📚📄](./reflections/2025-08-14.md)  
 - [2025-08-13 | 📜 Legacy Code 📚](./reflections/2025-08-13.md)  
@@ -20,20 +21,19 @@ title: 🏡 Home
 - [2025-08-09 | ✊ Resistance 📺📚](./reflections/2025-08-09.md)  
 - [2025-08-08 | 🏗️🤖 Building AI Agents 📄📚](./reflections/2025-08-08.md)  
 - [2025-08-07 | 🤖 AIO? 🎯| 📚 RAG | 🌊 WAIve 📄📚](./reflections/2025-08-07.md)  
-- [2025-08-06 | 🧟 BrAIns | 🌄 Morning | ❤️‍🔥 Intense 📺📚](./reflections/2025-08-06.md)  
   
   
-## [📚 Books](./books/index.md) (571)  
+## [📚 Books](./books/index.md) (572)  
+- [⚡🧠🏃 Spark: The Revolutionary New Science of Exercise and the Brain](./books/spark-the-revolutionary-new-science-of-exercise-and-the-brain.md)  
+- [🗓️✅ Organize Your Day: 17 Easy Strategies to Manage Your Day, Improve Productivity and Overcome Procrastination](./books/organize-your-day-17-easy-strategies-to-manage-your-day-improve-productivity-and-overcome-procrastination.md)  
+- [😊✅ Feel Good Productivity: How to Do More of What Matters to You](./books/feel-good-productivity-how-to-do-more-of-what-matters-to-you.md)  
+- [⏰👤 The Inner Clock: Living in Sync with Our Circadian Rhythms](./books/the-inner-clock-living-in-sync-with-our-circadian-rhythms.md)  
+- [📖⏱️🍎 The Complete Guide to Fasting: Heal Your Body Through Intermittent, Alternate-Day, and Extended Fasting](./books/the-complete-guide-to-fasting-heal-your-body-through-intermittent-alternate-day-and-extended-fasting.md)  
+- [🌊🧘🏼‍♀️🧠📈 Flow: The Psychology of Optimal Experience](./books/flow-the-psychology-of-optimal-experience.md)  
+- [😩⚕️ Fatigue Science for Human Health](./books/fatigue-science-for-human-health.md)  
+- [🔋📈 The Power of Full Engagement: Managing Energy, Not Time, Is the Key to High Performance and Personal Renewal](./books/the-power-of-full-engagement-managing-energy-not-time-is-the-key-to-high-performance-and-personal-renewal.md)  
 - [🧠📐 Laws of UX: Using Psychology to Design Better Products & Services](./books/laws-of-ux-using-psychology-to-design-better-products-services.md)  
 - [🤖💻 AI-Powered Developer: Build great software with ChatGPT and Copilot](./books/ai-powered-developer-build-great-software-with-chatgpt-and-copilot.md)  
-- [🗑️✨ Refactoring: Improving the Design of Existing Code](./books/refactoring-improving-the-design-of-existing-code.md)  
-- [🧑‍💻📈 The Pragmatic Programmer: Your Journey to Mastery](./books/the-pragmatic-programmer-your-journey-to-mastery.md)  
-- [🤔💻🧠 Algorithms to Live By: The Computer Science of Human Decisions](./books/algorithms-to-live-by.md)  
-- [🦄👤🗓️ The Mythical Man-Month: Essays on Software Engineering](./books/the-mythical-man-month.md)  
-- [🐞🔍🤔✅ Debugging: The 9 Indispensable Rules for Finding Even the Most Elusive Software and Hardware Problems](./books/debugging.md)  
-- [🧱✅🐛 Foundations of Software Testing](./books/foundations-of-software-testing.md)  
-- [💻⚙️ Software Engineering at Google: Lessons Learned from Programming Over Time](./books/software-engineering-at-google-lessons-learned-from-programming-over-time.md)  
-- [🖥️🔑 System Design Interview - An Insider's Guide](./books/system-design-interview-an-insiders-guide.md)  
   
   
 ## [📺 Videos](./videos/index.md) (246)  
@@ -58,11 +58,11 @@ title: 🏡 Home
   
   
 ## [📄  Articles](./articles/index.md) (46)  
+- [😴🎡 The Nap Wheel](./articles/the-nap-wheel.md)  
 - [♊💻🆚 Gemini CLI + VS Code: Native diffing and context-aware workflows](./articles/gemini-cli-+-vs-code-native-diffing-and-context-aware-workflows.md)  
 - [🤖🧱🏗️🧠 An Approach to Building with AI](./articles/an-approach-to-building-with-ai.md)  
 - [📊🔎🤖🪜 New Evaluation, Library, and Analysis of Step By Step Reasoning with Large Language Models](./articles/new-evaluation-library-and-analysis-of-step-by-step-reasoning-with-large-language-models.md)  
 - [🤖🧠👨‍💻🏗️ How we built our multi Agent research system](./articles/how-we-built-our-multi-agent-research-system.md)  
-- [🤖🗣️🔑 Introducing Open SWE: An Open Source Asynchronous Coding Agent](./articles/introducing-open-swe-an-open-source-asynchronous-coding-agent.md)  
   
   
 ## [🤖💬 Bot Chats](./bot-chats/index.md) (42)  

@@ -37,6 +37,7 @@ title: 🏡 Home
   
   
 ## [📺 Videos](./videos/index.md) (246)  
+- [🧠🛠️💪📈 How to hack your brain to crave doing hard things](./videos/how-to-hack-your-brain-to-crave-doing-hard-things.md)  
 - [🔋⚡😴🌞 How to never be tired again](./videos/how-to-never-be-tired-again.md)  
 - [✊📢✅ Forms of Resistance and Reasons to Believe It’s Working | Explainer](./videos/forms-of-resistance-and-reasons-to-believe-its-working-explainer.md)  
 - [👹📜🏛️🏠 What's in the version of Trump's bill passed by the Senate and its chances in the House](./videos/whats-in-the-version-of-trumps-bill-passed-by-the-senate-and-its-chances-in-the-house.md)  
@@ -46,15 +47,14 @@ title: 🏡 Home
 - [📉🐘🇺🇸😬 Huge Economic Problems Coming for Republicans and the U.S. | Explainer](./videos/huge-economic-problems-coming-for-republicans-and-the-us-explainer.md)  
 - [🖼️🤔🛠️🤖 Context Engineering for Agents](./videos/context-engineering-for-agents.md)  
 - [❤️‍🔥🏋️🏃 The Role of High-Intensity Interval Training and Strength Training in Cardiovascular Health](./videos/the-role-of-high-intensity-interval-training-and-strength-training-in-cardiovascular-health.md)  
-- [🌅🧠🚀♾️ This morning routine is scientifically proven to make you limitless](./videos/this-morning-routine-is-scientifically-proven-to-make-you-limitless.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (79)  
-- [Software Engineering](./topics/software-engineering.md)  
-- [Yak Shaving](./topics/yak-shaving.md)  
-- [Software Development and Coding](./topics/software-development-and-coding.md)  
+- [🌲🪜🧠 A Hierarchical View of Human Knowledge](./topics/a-hierarchical-view-of-human-knowledge.md)  
+- [💻⚙️💡💾 Software Development and Coding](./topics/software-development-and-coding.md)  
+- [🦬🪒 Yak Shaving](./topics/yak-shaving.md)  
+- [💻⚙️🧩🏗️ Software Engineering](./topics/software-engineering.md)  
 - [⚙️💡💻🤖📡 Technology](./topics/technology.md)  
-- [💻🔬 Computer Science](./topics/computer-science.md)  
   
   
 ## [📄  Articles](./articles/index.md) (46)  
@@ -74,11 +74,11 @@ title: 🏡 Home
   
   
 ## [💾 Software](./software/index.md) (29)  
-- [Hypothesis](./software/hypothesis.md)  
-- [Pydantic](./software/pydantic.md)  
+- [⛎♉️♊️♋️♌️♍️♎️♏️♐️♑️♒️♓️ Zodios](./software/zodios.md)  
+- [🐍📜🔍✅ Pydantic](./software/pydantic.md)  
+- [❓🧪✅🤔 Hypothesis](./software/hypothesis.md)  
 - [🐍🏎️📦 uv](./software/uv.md)  
 - [💾➕🤝 Git](./software/git.md)  
-- [Zodios](./software/zodios.md)  
   
   
 ## [👥 People](./people/index.md) (12)  

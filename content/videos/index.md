@@ -87,7 +87,7 @@ backlinks: false
 - [👊👹🇺🇸🛡️ How to Fight Fascism in America — with Timothy Snyder | Prof G Conversations](./how-to-fight-fascism-in-america-with-timothy-snyder-prof-g-conversations.md)  
 - [❓🧭🗺️💡 How To Find Your Life's Purpose](./how-to-find-your-lifes-purpose.md)  
 - [🥱💭✂️🎬🫡 How to Force Your Brain To Be Motivated (when you don’t feel like it)](./how-to-force-your-brain-to-be-motivated-when-you-dont-feel-like-it.md)  
-- [How to hack your brain to crave doing hard things.](./how-to-hack-your-brain-to-crave-doing-hard-things.md)  
+- [🧠🛠️💪📈 How to hack your brain to crave doing hard things](./how-to-hack-your-brain-to-crave-doing-hard-things.md)  
 - [✨🎯🔒✅ How to make your dreams basically inevitable](./how-to-make-your-dreams-basically-inevitable.md)  
 - [🔋⚡😴🌞 How to never be tired again](./how-to-never-be-tired-again.md)  
 - [🇺🇸🛠️⏱️🏛️ How to Rebuild American Democracy in 20 Minutes](./how-to-rebuild-american-democracy-in-20-minutes.md)  

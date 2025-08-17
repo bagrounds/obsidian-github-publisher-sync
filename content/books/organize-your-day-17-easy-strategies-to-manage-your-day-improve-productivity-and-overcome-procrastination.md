@@ -50,9 +50,9 @@ affiliate link: https://amzn.to/45ABqy2
 ### ✨ Creatively Related Book Recommendations (Broader Themes of Order, Focus, and Well-being):  
   
 * 🧹 **The Life-Changing Magic of Tidying Up by Marie Kondo:** While focused on physical decluttering, its principles of mindful organization and keeping only what "sparks joy" can be metaphorically applied to tasks and commitments.  
-* 🌊 **[Flow: The Psychology of Optimal Experience](./flow-the-psychology-of-optimal-experience.md) by Mihaly Csikszentmihalyi:** Explores the state of complete absorption in an activity, which is often a byproduct of good organization and focused effort.  
-* 🧠 **[Thinking, Fast and Slow](./thinking-fast-and-slow.md) by Daniel Kahneman:** Delves into the two systems that drive the way we think, offering insights into decision-making and potential biases that can affect productivity and procrastination.  
-* ⚡ **The Power of Full Engagement: Managing Energy, Not Time, is the Key to High Performance and Personal Renewal by Jim Loehr and Tony Schwartz:** Shifts the focus from managing time to managing energy levels (physical, emotional, mental, and spiritual) for sustained high performance.  
+* **[🌊🧘🏼‍♀️🧠📈 Flow: The Psychology of Optimal Experience](./flow-the-psychology-of-optimal-experience.md) by Mihaly Csikszentmihalyi:** Explores the state of complete absorption in an activity, which is often a byproduct of good organization and focused effort.  
+* **[🤔🐇🐢 Thinking, Fast and Slow](./thinking-fast-and-slow.md) by Daniel Kahneman:** Delves into the two systems that drive the way we think, offering insights into decision-making and potential biases that can affect productivity and procrastination.  
+* **[🔋📈 The Power of Full Engagement: Managing Energy, Not Time, Is the Key to High Performance and Personal Renewal](./the-power-of-full-engagement-managing-energy-not-time-is-the-key-to-high-performance-and-personal-renewal.md) by Jim Loehr and Tony Schwartz:** Shifts the focus from managing time to managing energy levels (physical, emotional, mental, and spiritual) for sustained high performance.  
 * 📱 **Digital Minimalism: Choosing a Focused Life in a Noisy World by Cal Newport:** Addresses the specific challenges of maintaining focus and productivity in an age of constant digital distractions.  
   
 ## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  

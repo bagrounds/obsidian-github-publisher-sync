@@ -1,12 +1,12 @@
 ---
 share: true
 aliases:
-  - Software Development and Coding
-title: Software Development and Coding
+  - 💻⚙️💡💾 Software Development and Coding
+title: 💻⚙️💡💾 Software Development and Coding
 URL: https://bagrounds.org/topics/software-development-and-coding
 ---
 [Home](../index.md) > [Topics](./index.md) > [Knowledge](./a-hierarchical-view-of-human-knowledge.md) > [Engineering](./engineering.md) > [Software Engineering](./software-engineering.md)  
-# Software Development and Coding  
+# 💻⚙️💡💾 Software Development and Coding  
 ## 🤖 AI Summary  
 **High-Level Summary:**  
   

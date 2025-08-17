@@ -1,12 +1,12 @@
 ---
 share: true
 aliases:
-  - Pydantic
-title: Pydantic
+  - 🐍📜🔍✅ Pydantic
+title: 🐍📜🔍✅ Pydantic
 URL: https://bagrounds.org/software/pydantic
 ---
 [Home](../index.md) > [Software](./index.md)  
-# Pydantic  
+# 🐍📜🔍✅ Pydantic  
   
 ## 🤖 AI Summary  
 ### Pydantic 🐍  

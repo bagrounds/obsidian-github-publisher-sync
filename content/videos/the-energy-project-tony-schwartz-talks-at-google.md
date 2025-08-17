@@ -13,6 +13,11 @@ youtube: https://youtu.be/tke6X2eME3c
 [Home](../index.md) > [Videos](./index.md) | [🔋📈 The Power of Full Engagement: Managing Energy, Not Time, Is the Key to High Performance and Personal Renewal](../books/the-power-of-full-engagement-managing-energy-not-time-is-the-key-to-high-performance-and-personal-renewal.md)  
 # 🔋⚡💡 The Energy Project | Tony Schwartz | Talks at Google  
 ![The Energy Project | Tony Schwartz | Talks at Google](https://youtu.be/tke6X2eME3c)  
+## 📝🐒 Human Notes  
+- ⚡ Energy cycles 90-120 minutes all day  
+- 🔄 Recovery can be trained  
+- 🏃🏼‍♀️ Be a sprinter, not a marathoner  
+  
 ## 🤖 AI Summary  
   
 * 🗣️ An **ever-increasing demand** in life creates a growing gap between what is required of us and our capacity to meet that demand.  

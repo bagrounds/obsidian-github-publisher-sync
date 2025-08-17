@@ -102,7 +102,7 @@ Zodios was created to address the challenges of maintaining type safety and cons
   
 * "Effective TypeScript" by Dan Vanderkam ⌨️  
 * "Designing Web APIs" by Greg Brail 🌐  
-* "Refactoring: Improving the Design of Existing Code" by Martin Fowler 🛠️  
+* [🗑️✨ Refactoring: Improving the Design of Existing Code](../books/refactoring-improving-the-design-of-existing-code.md) by Martin Fowler 🛠️  
   
 ### Links to Relevant YouTube Channels or Videos 📺  
   

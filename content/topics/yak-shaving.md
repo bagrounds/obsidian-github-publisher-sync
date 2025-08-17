@@ -1,12 +1,12 @@
 ---
 share: true
 aliases:
-  - Yak Shaving
-title: Yak Shaving
+  - 🦬🪒 Yak Shaving
+title: 🦬🪒 Yak Shaving
 URL: https://bagrounds.org/topics/yak-shaving
 ---
 [Home](../index.md) > [Topics](./index.md)  
-# Yak Shaving  
+# 🦬🪒 Yak Shaving  
 ## 🤖 AI Summary  
 ### Yak Shaving 🪒  
   

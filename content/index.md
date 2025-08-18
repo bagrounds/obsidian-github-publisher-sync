@@ -10,7 +10,8 @@ title: 🏡 Home
 📑 Notes, 💭 thoughts, and 🔗 Links.  
 ❔ What do 🫵 _you_ 🤔 think?  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (275)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (276)  
+- [2025-08-17 | 🤡 Distractions | 🔋 Energy 📺](./reflections/2025-08-17.md)  
 - [2025-08-16 | 💍 Engage 📚](./reflections/2025-08-16.md)  
 - [2025-08-15 | 🔋 Tireless UX 📺📚](./reflections/2025-08-15.md)  
 - [2025-08-14 | 🧵 Pragmatic 📚📄](./reflections/2025-08-14.md)  
@@ -20,7 +21,6 @@ title: 🏡 Home
 - [2025-08-10 | 🤖🚛📚🗺️ RAG Guide 🏁📚](./reflections/2025-08-10.md)  
 - [2025-08-09 | ✊ Resistance 📺📚](./reflections/2025-08-09.md)  
 - [2025-08-08 | 🏗️🤖 Building AI Agents 📄📚](./reflections/2025-08-08.md)  
-- [2025-08-07 | 🤖 AIO? 🎯| 📚 RAG | 🌊 WAIve 📄📚](./reflections/2025-08-07.md)  
   
   
 ## [📚 Books](./books/index.md) (572)  
@@ -36,17 +36,17 @@ title: 🏡 Home
 - [🤖💻 AI-Powered Developer: Build great software with ChatGPT and Copilot](./books/ai-powered-developer-build-great-software-with-chatgpt-and-copilot.md)  
   
   
-## [📺 Videos](./videos/index.md) (246)  
+## [📺 Videos](./videos/index.md) (251)  
+- [🔋📈🧘🗣️ The Energy Project | Tony Schwartz | Talks at Google](./videos/the-energy-project-tony-schwartz-talks-at-google.md)  
+- [⏱️🔋✅ The one productivity system you need: time vs energy management (ep. 1)](./videos/the-one-productivity-system-you-need-time-vs-energy-management-ep-1.md)  
+- [🤥📢👨‍💼 Tony Schwartz: The Truth About Trump | Oxford Union Q&A](./videos/tony-schwartz-the-truth-about-trump-oxford-union-q-a.md)  
+- [🔋🎯💯⚡ THE POWER OF FULL ENGAGEMENT by Jim Loehr and Tony Schwartz | Animated Core Message](./videos/the-power-of-full-engagement-by-jim-loehr-and-tony-schwartz-animated-core-message.md)  
+- [👹🤡👑📢 Trump’s Distractions Are Part of the Authoritarian Playbook | Explainer](./videos/trumps-distractions-are-part-of-the-authoritarian-playbook-explainer.md)  
 - [🧠🛠️💪📈 How to hack your brain to crave doing hard things](./videos/how-to-hack-your-brain-to-crave-doing-hard-things.md)  
 - [🔋⚡😴🌞 How to never be tired again](./videos/how-to-never-be-tired-again.md)  
 - [✊📢✅ Forms of Resistance and Reasons to Believe It’s Working | Explainer](./videos/forms-of-resistance-and-reasons-to-believe-its-working-explainer.md)  
 - [👹📜🏛️🏠 What's in the version of Trump's bill passed by the Senate and its chances in the House](./videos/whats-in-the-version-of-trumps-bill-passed-by-the-senate-and-its-chances-in-the-house.md)  
 - [🗣️🤫🐘 Mike Levin Reveals What Republicans Told Him Behind Closed Doors About Big Beautiful Bill](./videos/mike-levin-reveals-what-republicans-told-him-behind-closed-doors-about-big-beautiful-bill.md)  
-- [👹👶🏼💸➡️👴🏻💰 What Trump’s ‘Big, Beautiful Bill’ Is Really Doing (Part 2) | The Ezra Klein Show](./videos/what-trumps-big-beautiful-bill-is-really-doing-part-2-the-ezra-klein-show.md)  
-- [💰🔄 Trump’s mega bill ‘hasn’t even cut taxes, it’s redistributed them’ | Justin Wolfers](./videos/trumps-mega-bill-hasnt-even-cut-taxes-its-redistributed-them-justin-wolfers.md)  
-- [📉🐘🇺🇸😬 Huge Economic Problems Coming for Republicans and the U.S. | Explainer](./videos/huge-economic-problems-coming-for-republicans-and-the-us-explainer.md)  
-- [🖼️🤔🛠️🤖 Context Engineering for Agents](./videos/context-engineering-for-agents.md)  
-- [❤️‍🔥🏋️🏃 The Role of High-Intensity Interval Training and Strength Training in Cardiovascular Health](./videos/the-role-of-high-intensity-interval-training-and-strength-training-in-cardiovascular-health.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (79)  

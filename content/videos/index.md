@@ -7,7 +7,7 @@ URL: https://bagrounds.org/videos
 backlinks: false
 ---
 [Home](../index.md)  
-# 📺 Videos (247)  
+# 📺 Videos (251)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
 - [❓💪🔬 12 Questions About Creatine with Stephen Cornish, PhD](./12-questions-about-creatine-w-stephen-cornish-phd.md)  
@@ -176,6 +176,7 @@ backlinks: false
 - [The concept that changes how you learn forever.](./the-concept-that-changes-how-you-learn-forever.md)  
 - [The conditions inside the infamous El Salvador prison where deported migrants are held](./the-conditions-inside-the-infamous-el-salvador-prison-where-deported-migrants-are-held.md)  
 - [📜🇺🇸🗽➡️ The Declaration of Independence | Journey to American Democracy](./the-declaration-of-independence-journey-to-american-democracy.md)  
+- [🔋📈🧘🗣️ The Energy Project | Tony Schwartz | Talks at Google](./the-energy-project-tony-schwartz-talks-at-google.md)  
 - [✏️🗂️⏱️✨ The Excalidraw Obsidian Showcase 57 key features in just 17 minutes](../the-excalidraw-obsidian-showcase-57-key-features-in-just-17-minutes.md)  
 - [The far-right Proud Boys’ chilling message for the world | 60 Minutes Australia](./the-far-right-proud-boys-chilling-message-for-the-world-60-minutes-australia.md)  
 - [🌐🕸️🔮 The Future of the Web • Sir Tim Berners-Lee • GOTO 2018](./the-future-of-the-web-sir-tim-berners-lee-goto-2018.md)  
@@ -185,6 +186,8 @@ backlinks: false
 - [🇮🇱⚔️🇮🇷👹☢️⛪🪓🏝️ The Latest on Israel and Iran: Trump, Nukes, and a MAGA Split](./the-latest-on-israel-and-iran-trump-nukes-and-a-maga-split.md)  
 - [🧢🇺🇸📢➡️ The MAGA Ideology That Brought Us to This Moment](./the-maga-ideology-that-brought-us-to-this-moment.md)  
 - [The OLDEST websites EVER 👩‍💻](./the-oldest-websites-ever.md)  
+- [⏱️🔋✅ The one productivity system you need: time vs energy management (ep. 1)](./the-one-productivity-system-you-need-time-vs-energy-management-ep-1.md)  
+- [🔋🎯💯⚡ THE POWER OF FULL ENGAGEMENT by Jim Loehr and Tony Schwartz | Animated Core Message](./the-power-of-full-engagement-by-jim-loehr-and-tony-schwartz-animated-core-message.md)  
 - [🧠💰⚠️ The price you pay for being smart It's Been a Minute](./the-price-you-pay-for-being-smart-its-been-a-minute.md)  
 - [📉🎶👎 The Real Reason Why Music Is Getting Worse](./the-real-reason-why-music-is-getting-worse.md)  
 - [🌅🧠🗝️🚀📈 The Remarkable Morning Method: 5 Ways to Unlock Your Best Mental State](./the-remarkable-morning-method-5-ways-to-unlock-your-best-mental-state.md)  
@@ -202,6 +205,7 @@ backlinks: false
 - [⏱️💰📈 This simple time management system will make you a millionaire](./this-simple-time-management-system-will-make-you-a-millionaire.md)  
 - [This Single Rule Underpins All Of Physics](./this-single-rule-underpins-all-of-physics.md)  
 - [🕸️🛠️🤔 Three decades after inventing the web, Tim Berners-Lee has some ideas on how to fix it](./three-decades-after-inventing-the-web-tim-berners-lee-has-some-ideas-on-how-to-fix-it.md)  
+- [🤥📢👨‍💼 Tony Schwartz: The Truth About Trump | Oxford Union Q&A](./tony-schwartz-the-truth-about-trump-oxford-union-q-a.md)  
 - [Tools to Enhance Working Memory & Attention](./tools-to-enhance-working-memory-and-attention.md)  
 - [☀️📚😎👍 Top books to read this summer, according to Ann Patchett and Maureen Corrigan](./top-books-to-read-this-summer-according-to-ann-patchett-and-maureen-corrigan.md)  
 - [💣✉️📰 Top Trump officials accidentally texted U.S. war plans to journalist Jeffrey Goldberg](./top-trump-officials-accidentally-texted-u-s-war-plans-to-journalist-jeffrey-goldberg.md)  

@@ -10,7 +10,8 @@ title: 🏡 Home
 📑 Notes, 💭 thoughts, and 🔗 Links.  
 ❔ What do 🫵 _you_ 🤔 think?  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (276)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (277)  
+- [2025-08-18](./reflections/2025-08-18.md)  
 - [2025-08-17 | 🤡 Distractions | 🔋 Energy 📺](./reflections/2025-08-17.md)  
 - [2025-08-16 | 💍 Engage 📚](./reflections/2025-08-16.md)  
 - [2025-08-15 | 🔋 Tireless UX 📺📚](./reflections/2025-08-15.md)  
@@ -20,7 +21,6 @@ title: 🏡 Home
 - [2025-08-11 | 🤖🛃🎬 AAiA 📚](./reflections/2025-08-11.md)  
 - [2025-08-10 | 🤖🚛📚🗺️ RAG Guide 🏁📚](./reflections/2025-08-10.md)  
 - [2025-08-09 | ✊ Resistance 📺📚](./reflections/2025-08-09.md)  
-- [2025-08-08 | 🏗️🤖 Building AI Agents 📄📚](./reflections/2025-08-08.md)  
   
   
 ## [📚 Books](./books/index.md) (572)  
@@ -57,12 +57,12 @@ title: 🏡 Home
 - [⚙️💡💻🤖📡 Technology](./topics/technology.md)  
   
   
-## [📄  Articles](./articles/index.md) (46)  
+## [📄  Articles](./articles/index.md) (47)  
+- [📈❤️⏱️💪🧘 High Intensity Functional Training Guided by Individualized Heart Rate Variability Results in Similar Health and Fitness Improvements as Predetermined Training with Less Effort](./articles/high-intensity-functional-training-guided-by-individualized-heart-rate-variability-results-in-similar-health-and-fitness-improvements-as-predetermined-training-with-less-effort.md)  
 - [😴🎡 The Nap Wheel](./articles/the-nap-wheel.md)  
 - [♊💻🆚 Gemini CLI + VS Code: Native diffing and context-aware workflows](./articles/gemini-cli-+-vs-code-native-diffing-and-context-aware-workflows.md)  
 - [🤖🧱🏗️🧠 An Approach to Building with AI](./articles/an-approach-to-building-with-ai.md)  
 - [📊🔎🤖🪜 New Evaluation, Library, and Analysis of Step By Step Reasoning with Large Language Models](./articles/new-evaluation-library-and-analysis-of-step-by-step-reasoning-with-large-language-models.md)  
-- [🤖🧠👨‍💻🏗️ How we built our multi Agent research system](./articles/how-we-built-our-multi-agent-research-system.md)  
   
   
 ## [🤖💬 Bot Chats](./bot-chats/index.md) (42)  

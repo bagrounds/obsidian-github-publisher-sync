@@ -17,6 +17,7 @@ youtube: https://youtu.be/tke6X2eME3c
 - ⚡ Energy cycles 90-120 minutes all day  
 - 🔄 Recovery can be trained  
 - 🏃🏼‍♀️ Be a sprinter, not a marathoner  
+- ⏰ Build time and behavior specific, achievable rituals  
   
 ## 🤖 AI Summary  
   

@@ -13,8 +13,10 @@ tags:
 ## 🤖 AI Summary  
 The study compares high-intensity functional training (HIFT) guided by individualized heart rate variability (HRV) to predetermined HIFT on cardiovascular function, body composition, and performance. 🏃‍♀️  
   
-The following issues were covered:  
-* 🫀 All participants significantly improved resting heart rate, lean mass, fat mass, strength, and work capacity.  
+* 📱 **Measurement:** 👆 Participants used a smartphone app to take daily morning HRV readings with their index finger on the camera. 📈 The root mean squared of successive differences (RMSSD) was used.  
+* 🗓️ **Baselines:** 🤸 A 14-day baseline period was used. 📊 A seven-day rolling average and smallest worthwhile change (SWC) windows were calculated to track changes.  
+* 🔬 **Smallest worthwhile change (SWC)**: a metric used to determine meaningful changes in an individual's HRV from their personal baseline. 📏 It was calculated as two windows: ±0.5 (SWC1) and ±1 (SWC2) of the individual's mean Ln rMMSD standard deviation.  
+* ⚙️ **Adjustments:** 📉 Training was reduced when the rolling seven-day average fell within a SWC window. 🏋️ A 25% reduction in volume and load was made if it was between SWC1 and SWC2, or a low-intensity session was completed if it exceeded SWC2.* 🫀 All participants significantly improved resting heart rate, lean mass, fat mass, strength, and work capacity.  
 * 🏋️‍♀️ No significant differences were observed between the groups for changes in cardiovascular function, body composition, or fitness.  
 * 📉 The HRV-guided group trained significantly fewer days at high intensity compared to the predetermined group.  
 * 👍 HIFT is a valid program structure for improving muscular strength.  

@@ -53,7 +53,7 @@ affiliate link: https://amzn.to/4mmls0c
   
 * **[😴📈 Rest: Why You Get More Done When You Work Less](./rest-why-you-get-more-done-when-you-work-less.md)** by Alex Soojung-Kim Pang: This book champions the idea that rest is not a passive activity but an active skill that is crucial for creativity and productivity.  
 * **[😴💭 Why We Sleep: Unlocking the Power of Sleep and Dreams](./why-we-sleep-unlocking-the-power-of-sleep-and-dreams.md)** by Matthew Walker: A neuroscientist's exploration of the vital role that sleep plays in every aspect of our physical and mental well-being.  
-* 🩹 **Good to Go** by Christie Aschwanden: A deep dive into the science of athletic recovery, with insights that are applicable to anyone looking to optimize their rest and renewal.  
+* **[💪🧪 Good to Go: What the Athlete in All of Us Can Learn from the Strange Science of Recovery](./good-to-go-what-the-athlete-in-all-of-us-can-learn-from-the-strange-science-of-recovery.md)** by Christie Aschwanden: A deep dive into the science of athletic recovery, with insights that are applicable to anyone looking to optimize their rest and renewal.  
   
 #### 🔄 Habit Formation and Routine  
   

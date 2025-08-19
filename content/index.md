@@ -11,7 +11,7 @@ title: 🏡 Home
 ❔ What do 🫵 _you_ 🤔 think?  
   
 ## [🪞 Reflections](./reflections/index.md) ~ Blog (277)  
-- [2025-08-18](./reflections/2025-08-18.md)  
+- [2025-08-18 | 🫀🦮🏋🏼‍♀️ HRV Guided HIFT 📄](./reflections/2025-08-18.md)  
 - [2025-08-17 | 🤡 Distractions | 🔋 Energy 📺](./reflections/2025-08-17.md)  
 - [2025-08-16 | 💍 Engage 📚](./reflections/2025-08-16.md)  
 - [2025-08-15 | 🔋 Tireless UX 📺📚](./reflections/2025-08-15.md)  

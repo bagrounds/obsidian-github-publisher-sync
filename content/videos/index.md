@@ -7,7 +7,7 @@ URL: https://bagrounds.org/videos
 backlinks: false
 ---
 [Home](../index.md)  
-# 📺 Videos (251)  
+# 📺 Videos (252)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
 - [❓💪🔬 12 Questions About Creatine with Stephen Cornish, PhD](./12-questions-about-creatine-w-stephen-cornish-phd.md)  
@@ -187,6 +187,7 @@ backlinks: false
 - [🧢🇺🇸📢➡️ The MAGA Ideology That Brought Us to This Moment](./the-maga-ideology-that-brought-us-to-this-moment.md)  
 - [The OLDEST websites EVER 👩‍💻](./the-oldest-websites-ever.md)  
 - [⏱️🔋✅ The one productivity system you need: time vs energy management (ep. 1)](./the-one-productivity-system-you-need-time-vs-energy-management-ep-1.md)  
+- [🤖📈🌟 The Only Trait for Success in the AI Era—How to Build It | Carnegie Mellon University Po-Shen Loh](./the-only-trait-for-success-in-the-ai-era-how-to-build-it-carnegie-mellon-university-po-shen-loh.md)  
 - [🔋🎯💯⚡ THE POWER OF FULL ENGAGEMENT by Jim Loehr and Tony Schwartz | Animated Core Message](./the-power-of-full-engagement-by-jim-loehr-and-tony-schwartz-animated-core-message.md)  
 - [🧠💰⚠️ The price you pay for being smart It's Been a Minute](./the-price-you-pay-for-being-smart-its-been-a-minute.md)  
 - [📉🎶👎 The Real Reason Why Music Is Getting Worse](./the-real-reason-why-music-is-getting-worse.md)  

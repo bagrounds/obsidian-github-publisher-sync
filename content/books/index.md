@@ -7,7 +7,7 @@ URL: https://bagrounds.org/books
 backlinks: false
 ---
 [Home](../index.md)  
-# 📚 Books (572)  
+# 📚 Books (574)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)  
 - [🧑‍🤝‍🧑📈 10 to 25: The Science of Motivating Young People: A Groundbreaking Approach to Leading the Next Generation - And Making Your Own Life Easier](./10-to-25-the-science-of-motivating-young-people-a-groundbreaking-approach-to-leading-the-next-generation-and-making-your-own-life-easier.md)  
@@ -188,6 +188,7 @@ Feedback Control of Dynamic Systems]]
 - [🎁➡️🏆 Give and Take: A Revolutionary Approach to Success](./give-and-take.md)  
 - [ 📏🌊 Goldratt's Rules of Flow](./goldratts-rules-of-flow.md)  
 - [⚡❤️‍🩹 Good Energy: The Surprising Connection Between Metabolism and Limitless Health](./good-energy-the-surprising-connection-between-metabolism-and-limitless-health.md)  
+- [💪🧪 Good to Go: What the Athlete in All of Us Can Learn from the Strange Science of Recovery](./good-to-go-what-the-athlete-in-all-of-us-can-learn-from-the-strange-science-of-recovery.md)  
 - [👍➡️👍👍 Good to Great: Why Some Companies Make the Leap...And Others Don't](./good-to-great.md)  
 - [💻🔍✅ Google Tests Software](./how-google-tests-software.md)  
 - [❤️‍🔥💪 Grit: The Power of Passion and Perseverance](./grit-the-power-of-passion-and-perseverance.md)  
@@ -508,6 +509,7 @@ Feedback Control of Dynamic Systems]]
 - [🥼🛡️ The Scientific Attitude: Defending Science from Denial, Fraud, and Pseudoscience](./the-scientific-attitude.md)  
 - [🧪👁️ The Scientific Image](./the-scientific-image.md)  
 - [👶🧠🔬 The Scientist in the Crib: Minds, Brains, And How Children Learn](./the-scientist-in-the-crib-minds-brains-and-how-children-learn.md)  
+- [🤖📈 The Second Machine Age: Work, Progress, and Prosperity in a Time of Brilliant Technologies](./the-second-machine-age-work-progress-and-prosperity-in-a-time-of-brilliant-technologies.md)  
 - [👨‍🚀 The Self-Driven Child: The 🔬 Science and 🤔 Sense of Giving Your Kids More 🕹️ Control Over Their Lives](./the-self-driven-child.md)  
 - [👤🧬 The Selfish Gene](./the-selfish-gene.md)  
 - [😥🏫🇺🇸 The Shame of the Nation: The Restoration of Apartheid Schooling in America](./the-shame-of-the-nation-the-restoration-of-apartheid-schooling-in-america.md)  

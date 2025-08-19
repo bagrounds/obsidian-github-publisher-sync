@@ -7,7 +7,8 @@ URL: https://bagrounds.org/reflections
 backlinks: false
 ---
 [Home](../index.md)  
-# 🪞 Reflections (276)  
+# 🪞 Reflections (277)  
+- [2025-08-18 | 🫀🦮🏋🏼‍♀️ HRV Guided HIFT 📄](./2025-08-18.md)  
 - [2025-08-17 | 🤡 Distractions | 🔋 Energy 📺](./2025-08-17.md)  
 - [2025-08-16 | 💍 Engage 📚](./2025-08-16.md)  
 - [2025-08-15 | 🔋 Tireless UX 📺📚](./2025-08-15.md)  

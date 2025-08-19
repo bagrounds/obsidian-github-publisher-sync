@@ -10,7 +10,8 @@ title: 🏡 Home
 📑 Notes, 💭 thoughts, and 🔗 Links.  
 ❔ What do 🫵 _you_ 🤔 think?  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (277)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (278)  
+- [2025-08-19](./reflections/2025-08-19.md)  
 - [2025-08-18 | 🫀🦮🏋🏼‍♀️ HRV Guided HIFT 📄](./reflections/2025-08-18.md)  
 - [2025-08-17 | 🤡 Distractions | 🔋 Energy 📺](./reflections/2025-08-17.md)  
 - [2025-08-16 | 💍 Engage 📚](./reflections/2025-08-16.md)  
@@ -20,10 +21,12 @@ title: 🏡 Home
 - [2025-08-12 | 🤖🤠 AI Mess 📄📚](./reflections/2025-08-12.md)  
 - [2025-08-11 | 🤖🛃🎬 AAiA 📚](./reflections/2025-08-11.md)  
 - [2025-08-10 | 🤖🚛📚🗺️ RAG Guide 🏁📚](./reflections/2025-08-10.md)  
-- [2025-08-09 | ✊ Resistance 📺📚](./reflections/2025-08-09.md)  
   
   
-## [📚 Books](./books/index.md) (572)  
+## [📚 Books](./books/index.md) (574)  
+- [🤖📈 The Second Machine Age: Work, Progress, and Prosperity in a Time of Brilliant Technologies](./books/the-second-machine-age-work-progress-and-prosperity-in-a-time-of-brilliant-technologies.md)  
+- [💪🧪 Good to Go: What the Athlete in All of Us Can Learn from the Strange Science of Recovery](./books/good-to-go-what-the-athlete-in-all-of-us-can-learn-from-the-strange-science-of-recovery.md)  
+- [🔋📈 The Power of Full Engagement: Managing Energy, Not Time, Is the Key to High Performance and Personal Renewal](./books/the-power-of-full-engagement-managing-energy-not-time-is-the-key-to-high-performance-and-personal-renewal.md)  
 - [⚡🧠🏃 Spark: The Revolutionary New Science of Exercise and the Brain](./books/spark-the-revolutionary-new-science-of-exercise-and-the-brain.md)  
 - [🗓️✅ Organize Your Day: 17 Easy Strategies to Manage Your Day, Improve Productivity and Overcome Procrastination](./books/organize-your-day-17-easy-strategies-to-manage-your-day-improve-productivity-and-overcome-procrastination.md)  
 - [😊✅ Feel Good Productivity: How to Do More of What Matters to You](./books/feel-good-productivity-how-to-do-more-of-what-matters-to-you.md)  
@@ -31,12 +34,10 @@ title: 🏡 Home
 - [📖⏱️🍎 The Complete Guide to Fasting: Heal Your Body Through Intermittent, Alternate-Day, and Extended Fasting](./books/the-complete-guide-to-fasting-heal-your-body-through-intermittent-alternate-day-and-extended-fasting.md)  
 - [🌊🧘🏼‍♀️🧠📈 Flow: The Psychology of Optimal Experience](./books/flow-the-psychology-of-optimal-experience.md)  
 - [😩⚕️ Fatigue Science for Human Health](./books/fatigue-science-for-human-health.md)  
-- [🔋📈 The Power of Full Engagement: Managing Energy, Not Time, Is the Key to High Performance and Personal Renewal](./books/the-power-of-full-engagement-managing-energy-not-time-is-the-key-to-high-performance-and-personal-renewal.md)  
-- [🧠📐 Laws of UX: Using Psychology to Design Better Products & Services](./books/laws-of-ux-using-psychology-to-design-better-products-services.md)  
-- [🤖💻 AI-Powered Developer: Build great software with ChatGPT and Copilot](./books/ai-powered-developer-build-great-software-with-chatgpt-and-copilot.md)  
   
   
-## [📺 Videos](./videos/index.md) (251)  
+## [📺 Videos](./videos/index.md) (252)  
+- [🤖📈🌟 The Only Trait for Success in the AI Era—How to Build It | Carnegie Mellon University Po-Shen Loh](./videos/the-only-trait-for-success-in-the-ai-era-how-to-build-it-carnegie-mellon-university-po-shen-loh.md)  
 - [🔋📈🧘🗣️ The Energy Project | Tony Schwartz | Talks at Google](./videos/the-energy-project-tony-schwartz-talks-at-google.md)  
 - [⏱️🔋✅ The one productivity system you need: time vs energy management (ep. 1)](./videos/the-one-productivity-system-you-need-time-vs-energy-management-ep-1.md)  
 - [🤥📢👨‍💼 Tony Schwartz: The Truth About Trump | Oxford Union Q&A](./videos/tony-schwartz-the-truth-about-trump-oxford-union-q-a.md)  
@@ -46,7 +47,6 @@ title: 🏡 Home
 - [🔋⚡😴🌞 How to never be tired again](./videos/how-to-never-be-tired-again.md)  
 - [✊📢✅ Forms of Resistance and Reasons to Believe It’s Working | Explainer](./videos/forms-of-resistance-and-reasons-to-believe-its-working-explainer.md)  
 - [👹📜🏛️🏠 What's in the version of Trump's bill passed by the Senate and its chances in the House](./videos/whats-in-the-version-of-trumps-bill-passed-by-the-senate-and-its-chances-in-the-house.md)  
-- [🗣️🤫🐘 Mike Levin Reveals What Republicans Told Him Behind Closed Doors About Big Beautiful Bill](./videos/mike-levin-reveals-what-republicans-told-him-behind-closed-doors-about-big-beautiful-bill.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (79)  
@@ -57,12 +57,12 @@ title: 🏡 Home
 - [⚙️💡💻🤖📡 Technology](./topics/technology.md)  
   
   
-## [📄  Articles](./articles/index.md) (47)  
+## [📄  Articles](./articles/index.md) (49)  
+- [🇷🇺🇺🇸👹🗳️💸 Letters from an American - August 18, 2025](./articles/letters-from-an-american-august-18-2025.md)  
+- [❤️📈🏋️ HRV Guided training](./articles/hrv-guided-training.md)  
 - [📈❤️⏱️💪🧘 High Intensity Functional Training Guided by Individualized Heart Rate Variability Results in Similar Health and Fitness Improvements as Predetermined Training with Less Effort](./articles/high-intensity-functional-training-guided-by-individualized-heart-rate-variability-results-in-similar-health-and-fitness-improvements-as-predetermined-training-with-less-effort.md)  
 - [😴🎡 The Nap Wheel](./articles/the-nap-wheel.md)  
 - [♊💻🆚 Gemini CLI + VS Code: Native diffing and context-aware workflows](./articles/gemini-cli-+-vs-code-native-diffing-and-context-aware-workflows.md)  
-- [🤖🧱🏗️🧠 An Approach to Building with AI](./articles/an-approach-to-building-with-ai.md)  
-- [📊🔎🤖🪜 New Evaluation, Library, and Analysis of Step By Step Reasoning with Large Language Models](./articles/new-evaluation-library-and-analysis-of-step-by-step-reasoning-with-large-language-models.md)  
   
   
 ## [🤖💬 Bot Chats](./bot-chats/index.md) (42)  

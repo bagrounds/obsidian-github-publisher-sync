@@ -61,7 +61,7 @@ CTA: 🛡️ Defend factual reality.
 * The Believing Brain by Michael Shermer  
 * Conspiracy by Michael Shermer  
 * Why People Believe Weird Things by Michael Shermer  
-* Cultish by Amanda Montell  
+* [✝️🗣️ Cultish: The Language of Fanaticism](./cultish-the-language-of-fanaticism.md) by Amanda Montell  
 * A Time Outside This Time by Amitava Kumar  
   
 ## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-flash)  

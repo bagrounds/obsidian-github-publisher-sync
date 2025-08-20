@@ -4,10 +4,10 @@ aliases:
   - 🤔⏳👹⬇️ Noam Chomsky || How Much Time Is Left Until the End of Trump ( Must Watch )
 title: 🤔⏳👹⬇️ Noam Chomsky || How Much Time Is Left Until the End of Trump ( Must Watch )
 URL: https://bagrounds.org/videos/noam-chomsky-how-much-time-is-left-until-the-end-of-trump-must-watch
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: Noam Chomsky Wisdom
-tags: 
+tags:
 youtube: https://youtu.be/OT3iwYsuWOw
 ---
 [Home](../index.md) > [Videos](./index.md)  
@@ -44,7 +44,7 @@ The video includes several calls to action:
     * [🤥📣 This Is Not Propaganda: Adventures in the War Against Reality](../books/this-is-not-propaganda.md) by Peter Pomerantsev.  
     * [🚫✅🤥 Post-Truth](../books/post-truth.md) by Lee McIntyre.  
     * [📢🕸️ Network Propaganda: Manipulation, Disinformation, and Radicalization in American Politics](../books/network-propaganda-manipulation-disinformation-and-radicalization-in-american-politics.md) by Yochai Benkler, Robert Faris, and Hal Roberts. 🤖 The book includes analysis of how information can spread and affect political views.  
-    * *On Disinformation* by Lee McIntyre.  
+    * [📢🛡️ On Disinformation: How to Fight for Truth and Protect Democracy](../books/on-disinformation-how-to-fight-for-truth-and-protect-democracy.md) by Lee McIntyre.  
 * **🌍 On collective action and social change:**  
     * *Collective Action and Exchange: A Game-Theoretic Approach to Contemporary Political Economy* by William D. Ferguson.  
     * *Collective Action for Social Change: An Introduction to Community Organizing* by Aaron Schutz and Marie G. Sandy.  

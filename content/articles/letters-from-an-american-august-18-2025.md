@@ -4,8 +4,8 @@ aliases:
   - 🇷🇺🇺🇸👹🗳️💸 Letters from an American - August 18, 2025
 title: 🇷🇺🇺🇸👹🗳️💸 Letters from an American - August 18, 2025
 URL: https://bagrounds.org/articles/letters-from-an-american-august-18-2025
-Author: 
-tags: 
+Author:
+tags:
 ---
 [Home](../index.md) > [Articles](./index.md) | [🏛️🇺🇸📖 Heather Cox Richardson](../people/heather-cox-richardson.md)  
 # 🇷🇺🇺🇸👹🗳️💸 Letters from an American - August 18, 2025  
@@ -27,7 +27,7 @@ To achieve a more balanced understanding, it would be useful to explore differen
 * **Foreign Policy and Diplomacy**: The article characterizes Trump's foreign policy meetings as a display of his inability to manage the presidency. 🗣️ Diplomatic analysts may offer contrasting perspectives, for example, viewing his approach as a deliberate strategy to disrupt traditional alliances or to re-establish a different kind of global order.  
   
 ## 📚 Book Recommendations  
-* On Disinformation by Lee McIntyre: This book provides a practical guide on how to combat disinformation campaigns. 💡 It is relevant because the text discusses how the president and his allies are pushing false claims about election fraud.  
+* [📢🛡️ On Disinformation: How to Fight for Truth and Protect Democracy](../books/on-disinformation-how-to-fight-for-truth-and-protect-democracy.md) by Lee McIntyre: This book provides a practical guide on how to combat disinformation campaigns. 💡 It is relevant because the text discusses how the president and his allies are pushing false claims about election fraud.  
 * The Constitutional Presidency edited by Joseph M. Bessette and Jeffrey K. Tulis: This collection of essays explores the constitutional powers of the presidency. 📖 It is relevant as the article questions the president's authority to dictate election rules.  
 * Politics of Disinformation edited by Guillermo Lopez-Garcia et al.: A comprehensive exploration of the theoretical concepts of disinformation and its impact on the political arena. 🗳️ It is relevant to the article's discussion of election fraud claims and media lawsuits.  
 * The World According to Putin by Steve LeVine: A book that explores the psychology and political motivations of the Russian leader. 🇷🇺 It provides a contrasting view of the foreign policy issues mentioned in the article, focusing on the perspective of Putin rather than the American presidency.  

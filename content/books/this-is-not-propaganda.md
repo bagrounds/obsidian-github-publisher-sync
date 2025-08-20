@@ -4,8 +4,8 @@ aliases:
   - "🤥📣 This Is Not Propaganda: Adventures in the War Against Reality"
 title: "🤥📣 This Is Not Propaganda: Adventures in the War Against Reality"
 URL: https://bagrounds.org/books/this-is-not-propaganda
-Author: 
-tags: 
+Author:
+tags:
 affiliate link: https://amzn.to/4jwntEL
 CTA: 👁️ Question everything.
 ---
@@ -74,7 +74,7 @@ CTA: 👁️ Question everything.
 * **Psychology and Society:**  
     * **[🏭🫡 Manufacturing Consent: The Political Economy of the Mass Media](./manufacturing-consent.md)** by Edward S. Herman and Noam Chomsky: A seminal work arguing that mass media functions as a propaganda system for elite interests, even in democratic societies.  
     * 🤯 **The True Believer: Thoughts on the Nature of Mass Movements** by Eric Hoffer: Analyzes the psychology behind fanaticism and mass movements, relevant to understanding susceptibility to propaganda.  
-    * 🗣️ **Cultish: The Language of Fanaticism** by Amanda Montell: Explores how language is used to create cohesion and exert control in groups, from cults to corporations, touching on manipulation tactics.  
+    * **[✝️🗣️ Cultish: The Language of Fanaticism](./cultish-the-language-of-fanaticism.md)** by Amanda Montell: Explores how language is used to create cohesion and exert control in groups, from cults to corporations, touching on manipulation tactics.  
 * **Specific Case Studies:**  
     * 🕵️ **[🤯 Mindf*ck: Cambridge Analytica and the Plot to Break America](./mindf-ck-cambridge-analytica-and-the-plot-to-break-america.md)** by Christopher Wylie: An insider's account of the Cambridge Analytica scandal, detailing data harvesting and psychological targeting for political campaigns.  
     * 🇵🇭 **[👥⚔️👑 How to Stand Up to a Dictator: The Fight for Our Future](./how-to-stand-up-to-a-dictator.md)** by Maria Ressa: Memoir by the Filipino journalist (mentioned by Pomerantsev) battling disinformation and state attacks under Duterte.  

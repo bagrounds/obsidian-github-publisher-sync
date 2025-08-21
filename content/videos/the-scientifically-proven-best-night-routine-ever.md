@@ -4,13 +4,13 @@ aliases:
   - 😴🧪💯🏆 The scientifically proven best night routine ever
 title: 😴🧪💯🏆 The scientifically proven best night routine ever
 URL: https://bagrounds.org/videos/the-scientifically-proven-best-night-routine-ever
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: SpoonFedStudy
-tags: 
+tags:
 youtube: https://youtu.be/XdB3cmcBGJ4
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](../index.md) > [Videos](./index.md) | [🥄👶📚 SpoonFedStudy](../topics/spoonfedstudy.md)  
 # 😴🧪💯🏆 The scientifically proven best night routine ever  
 ![the scientifically proven best night routine ever](https://youtu.be/XdB3cmcBGJ4)  
   

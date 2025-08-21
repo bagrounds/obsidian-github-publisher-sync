@@ -4,13 +4,13 @@ aliases:
   - 🛠️⚙️🚀🛡️ The simple system that makes you unstoppable
 title: 🛠️⚙️🚀🛡️ The simple system that makes you unstoppable
 URL: https://bagrounds.org/videos/the-simple-system-that-makes-you-unstoppable
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: SpoonFedStudy
-tags: 
+tags:
 youtube: https://youtu.be/fesslaSxdqs
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](../index.md) > [Videos](./index.md) | [🥄👶📚 SpoonFedStudy](../topics/spoonfedstudy.md)  
 # 🛠️⚙️🚀🛡️ The simple system that makes you unstoppable  
 ![The simple system that makes you unstoppable.](https://youtu.be/fesslaSxdqs)  
   

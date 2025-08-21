@@ -4,13 +4,13 @@ aliases:
   - ⚙️📈🎓🏆 This simple productivity system got me into Harvard and Yale
 title: ⚙️📈🎓🏆 This simple productivity system got me into Harvard and Yale
 URL: https://bagrounds.org/videos/this-simple-productivity-system-got-me-into-harvard-and-yale
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: SpoonFedStudy
-tags: 
+tags:
 youtube: https://youtu.be/_7vM5wEUz_s
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](../index.md) > [Videos](./index.md) | [🥄👶📚 SpoonFedStudy](../topics/spoonfedstudy.md)  
 # ⚙️📈🎓🏆 This simple productivity system got me into Harvard and Yale  
 ![This simple productivity system got me into Harvard and Yale](https://youtu.be/_7vM5wEUz_s)  
   

@@ -54,7 +54,7 @@ Bostrom dedicates a significant portion of the book to exploring potential strat
 ### 🤝 Similar in Theme  
   
 * **[🧬👥💾 Life 3.0: Being Human in the Age of Artificial Intelligence](./life-3-0.md)** by Max Tegmark: Explores the future of life with AI, covering a wide range of possible futures and the choices we have in shaping them.  
-* 🤖 **Human Compatible: Artificial Intelligence and the Problem of Control** by Stuart Russell: A leading AI researcher offers his perspective on the control problem and proposes a new approach to building safe AI.  
+* **[🤖🧑‍ Human Compatible: Artificial Intelligence and the Problem of Control](./human-compatible-artificial-intelligence-and-the-problem-of-control.md)** by Stuart Russell: A leading AI researcher offers his perspective on the control problem and proposes a new approach to building safe AI.  
 * 💥 **The Precipice: Existential Risk and the Future of Humanity** by Toby Ord: While broader in scope, this book extensively covers the risks from unaligned artificial intelligence as a major category of existential threat.  
 * 💖 **The Alignment Problem: Machine Learning and Human Values** by Brian Christian: Delves into the technical and ethical challenges of aligning AI with human values, providing a more in-depth look at a key aspect of Bostrom's argument.  
   

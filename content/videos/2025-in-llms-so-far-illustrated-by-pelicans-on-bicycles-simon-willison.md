@@ -4,10 +4,10 @@ aliases:
   - 🤖📅🦢🚲 2025 in LLMs so far, illustrated by Pelicans on Bicycles - Simon Willison
 title: 🤖📅🦢🚲 2025 in LLMs so far, illustrated by Pelicans on Bicycles - Simon Willison
 URL: https://bagrounds.org/videos/2025-in-llms-so-far-illustrated-by-pelicans-on-bicycles-simon-willison
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: AI Engineer
-tags: 
+tags:
 youtube: https://youtu.be/YpY83-kA7Bo
 ---
 [Home](../index.md) > [Videos](./index.md)  
@@ -61,7 +61,7 @@ youtube: https://youtu.be/YpY83-kA7Bo
   
 ### ⚖️ AI Ethics, Safety, and Societal Impact  
 * 🤔 ***The Alignment Problem: Machine Learning and Human Values*** by Brian Christian: 🧭 Explores the critical challenge of aligning AI systems with human values, a core issue in AI safety.  
-* 🤖 ***Human Compatible: Artificial Intelligence and the Problem of Control*** by Stuart Russell: ⚠️ A highly influential book by a leading AI researcher, addressing the existential risk posed by advanced AI and how to ensure AI remains beneficial to humanity.  
+* **[🤖🧑‍ Human Compatible: Artificial Intelligence and the Problem of Control](../books/human-compatible-artificial-intelligence-and-the-problem-of-control.md)** by Stuart Russell: ⚠️ A highly influential book by a leading AI researcher, addressing the existential risk posed by advanced AI and how to ensure AI remains beneficial to humanity.  
 * **[🤖⚠️📈 Superintelligence: Paths, Dangers, Strategies](../books/superintelligence-paths-dangers-strategies.md)** by Nick Bostrom: ⚠️ A thought-provoking and foundational text on the potential for superintelligent AI and the risks associated with it.  
 * **[🧬👥💾 Life 3.0: Being Human in the Age of Artificial Intelligence](../books/life-3-0.md)** by Max Tegmark: 🌎 Explores the vast potential and profound implications of AI for life on Earth and beyond, covering its impact on society, work, and even the future of consciousness.  
 * 🧑‍💻 ***Hello World: Being Human in the Age of Algorithms*** by Hannah Fry: 🌍 Offers insights into how algorithms impact society in real-world scenarios, recommended for understanding the broader societal effects of AI.  

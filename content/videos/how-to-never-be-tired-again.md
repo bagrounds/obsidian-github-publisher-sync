@@ -4,13 +4,13 @@ aliases:
   - 🔋⚡😴🌞 How to never be tired again
 title: 🔋⚡😴🌞 How to never be tired again
 URL: https://bagrounds.org/videos/how-to-never-be-tired-again
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: SpoonFedStudy
-tags: 
+tags:
 youtube: https://youtu.be/1UhPYndEgX0
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](../index.md) > [Videos](./index.md) | [🥄👶📚 SpoonFedStudy](../topics/spoonfedstudy.md)  
 # 🔋⚡😴🌞 How to never be tired again  
 ![How to never be tired again](https://youtu.be/1UhPYndEgX0)  
 ## 🤖 AI Summary  

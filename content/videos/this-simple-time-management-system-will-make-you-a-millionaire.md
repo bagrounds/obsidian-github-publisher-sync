@@ -4,13 +4,13 @@ aliases:
   - ⏱️💰📈 This simple time management system will make you a millionaire
 title: ⏱️💰📈 This simple time management system will make you a millionaire
 URL: https://bagrounds.org/videos/
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: SpoonFedStudy
-tags: 
+tags:
 youtube: https://youtu.be/s-9M93Xj54M
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](../index.md) > [Videos](./index.md) | [🥄👶📚 SpoonFedStudy](../topics/spoonfedstudy.md)  
 # ⏱️💰📈 This simple time management system will make you a millionaire  
 ![This simple time management system will make you a millionaire.](https://youtu.be/s-9M93Xj54M)  
   

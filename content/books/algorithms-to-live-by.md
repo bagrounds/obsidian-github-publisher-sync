@@ -83,7 +83,7 @@ affiliate link: https://amzn.to/4kxUFwM
 * 📚 **From Computing to Computational Thinking** by Paul S. Wang: A guidebook explaining computational thinking concepts without programming knowledge, using everyday examples.  
 * ⚔️ **Chip War: The Fight for the World's Most Critical Technology** by Chris Miller: Explores the geopolitical and technological battle over microchips, the hardware upon which algorithms run.  
 * ℹ️ **The Information: A History, a Theory, a Flood** by James Gleick: A historical and conceptual exploration of information theory, which underlies much of computer science and algorithmic thinking.  
-* 🤖 **Human Compatible: Artificial Intelligence and the Problem of Control** by Stuart Russell: Discusses the future of AI and the importance of aligning machine objectives with human values, extending the algorithmic theme into existential considerations.  
+* **[🤖🧑‍ Human Compatible: Artificial Intelligence and the Problem of Control](./human-compatible-artificial-intelligence-and-the-problem-of-control.md)** by Stuart Russell: Discusses the future of AI and the importance of aligning machine objectives with human values, extending the algorithmic theme into existential considerations.  
   
 ## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Algorithms to Live By: The Computer Science of Human Decisions. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

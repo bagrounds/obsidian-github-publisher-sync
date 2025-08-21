@@ -23,20 +23,22 @@ title: 🏡 Home
 - [2025-08-11 | 🤖🛃🎬 AAiA 📚](./reflections/2025-08-11.md)  
   
   
-## [📚 Books](./books/index.md) (576)  
+## [📚 Books](./books/index.md) (579)  
+- [🤖🧑‍ Human Compatible: Artificial Intelligence and the Problem of Control](./books/human-compatible-artificial-intelligence-and-the-problem-of-control.md)  
+- [🤖🧑‍🏫 Training Data for Machine Learning: Human Supervision from Annotation to Data Science](./books/training-data-for-machine-learning-human-supervision-from-annotation-to-data-science.md)  
+- [🧑‍💻🤖 Human-in-the-Loop Machine Learning: Active learning and annotation for human-centered AI](./books/human-in-the-loop-machine-learning-active-learning-and-annotation-for-human-centered-ai.md)  
+- [🤖⚠️📈 Superintelligence: Paths, Dangers, Strategies](./books/superintelligence-paths-dangers-strategies.md)  
+- [🤖👑 Empire of AI: Dreams and Nightmares in Sam Altman's OpenAI](./books/empire-of-ai-dreams-and-nightmares-in-sam-altmans-openai.md)  
+- [🧬👥💾 Life 3.0: Being Human in the Age of Artificial Intelligence](./books/life-3-0.md)  
+- [🤔💻🧠 Algorithms to Live By: The Computer Science of Human Decisions](./books/algorithms-to-live-by.md)  
 - [🤥📣 This Is Not Propaganda: Adventures in the War Against Reality](./books/this-is-not-propaganda.md)  
 - [📢🛡️ On Disinformation: How to Fight for Truth and Protect Democracy](./books/on-disinformation-how-to-fight-for-truth-and-protect-democracy.md)  
 - [✝️🗣️ Cultish: The Language of Fanaticism](./books/cultish-the-language-of-fanaticism.md)  
-- [🤖📈 The Second Machine Age: Work, Progress, and Prosperity in a Time of Brilliant Technologies](./books/the-second-machine-age-work-progress-and-prosperity-in-a-time-of-brilliant-technologies.md)  
-- [💪🧪 Good to Go: What the Athlete in All of Us Can Learn from the Strange Science of Recovery](./books/good-to-go-what-the-athlete-in-all-of-us-can-learn-from-the-strange-science-of-recovery.md)  
-- [🔋📈 The Power of Full Engagement: Managing Energy, Not Time, Is the Key to High Performance and Personal Renewal](./books/the-power-of-full-engagement-managing-energy-not-time-is-the-key-to-high-performance-and-personal-renewal.md)  
-- [⚡🧠🏃 Spark: The Revolutionary New Science of Exercise and the Brain](./books/spark-the-revolutionary-new-science-of-exercise-and-the-brain.md)  
-- [🗓️✅ Organize Your Day: 17 Easy Strategies to Manage Your Day, Improve Productivity and Overcome Procrastination](./books/organize-your-day-17-easy-strategies-to-manage-your-day-improve-productivity-and-overcome-procrastination.md)  
-- [😊✅ Feel Good Productivity: How to Do More of What Matters to You](./books/feel-good-productivity-how-to-do-more-of-what-matters-to-you.md)  
-- [⏰👤 The Inner Clock: Living in Sync with Our Circadian Rhythms](./books/the-inner-clock-living-in-sync-with-our-circadian-rhythms.md)  
   
   
 ## [📺 Videos](./videos/index.md) (252)  
+- [💻🔄💻 Andrej Karpathy: Software Is Changing (Again)](./videos/andrej-karpathy-software-is-changing-again.md)  
+- [🤖📅🦢🚲 2025 in LLMs so far, illustrated by Pelicans on Bicycles - Simon Willison](./videos/2025-in-llms-so-far-illustrated-by-pelicans-on-bicycles-simon-willison.md)  
 - [🤔⏳👹⬇️ Noam Chomsky || How Much Time Is Left Until the End of Trump ( Must Watch )](./videos/noam-chomsky-how-much-time-is-left-until-the-end-of-trump-must-watch.md)  
 - [🤖📈🌟 The Only Trait for Success in the AI Era—How to Build It | Carnegie Mellon University Po-Shen Loh](./videos/the-only-trait-for-success-in-the-ai-era-how-to-build-it-carnegie-mellon-university-po-shen-loh.md)  
 - [🔋📈🧘🗣️ The Energy Project | Tony Schwartz | Talks at Google](./videos/the-energy-project-tony-schwartz-talks-at-google.md)  
@@ -45,8 +47,6 @@ title: 🏡 Home
 - [🔋🎯💯⚡ THE POWER OF FULL ENGAGEMENT by Jim Loehr and Tony Schwartz | Animated Core Message](./videos/the-power-of-full-engagement-by-jim-loehr-and-tony-schwartz-animated-core-message.md)  
 - [👹🤡👑📢 Trump’s Distractions Are Part of the Authoritarian Playbook | Explainer](./videos/trumps-distractions-are-part-of-the-authoritarian-playbook-explainer.md)  
 - [🧠🛠️💪📈 How to hack your brain to crave doing hard things](./videos/how-to-hack-your-brain-to-crave-doing-hard-things.md)  
-- [🔋⚡😴🌞 How to never be tired again](./videos/how-to-never-be-tired-again.md)  
-- [✊📢✅ Forms of Resistance and Reasons to Believe It’s Working | Explainer](./videos/forms-of-resistance-and-reasons-to-believe-its-working-explainer.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (79)  
@@ -57,12 +57,12 @@ title: 🏡 Home
 - [⚙️💡💻🤖📡 Technology](./topics/technology.md)  
   
   
-## [📄  Articles](./articles/index.md) (49)  
+## [📄  Articles](./articles/index.md) (50)  
+- [🧲🧑‍💻🤖 Magnetic UI: Towards Human In The Loop Agentic Systems](./articles/magentic-ui-towards-human-in-the-loop-agentic-systems.md)  
 - [🇷🇺🇺🇸👹🗳️💸 Letters from an American - August 18, 2025](./articles/letters-from-an-american-august-18-2025.md)  
 - [❤️📈🏋️ HRV Guided training](./articles/hrv-guided-training.md)  
 - [📈❤️⏱️💪🧘 High Intensity Functional Training Guided by Individualized Heart Rate Variability Results in Similar Health and Fitness Improvements as Predetermined Training with Less Effort](./articles/high-intensity-functional-training-guided-by-individualized-heart-rate-variability-results-in-similar-health-and-fitness-improvements-as-predetermined-training-with-less-effort.md)  
 - [😴🎡 The Nap Wheel](./articles/the-nap-wheel.md)  
-- [♊💻🆚 Gemini CLI + VS Code: Native diffing and context-aware workflows](./articles/gemini-cli-+-vs-code-native-diffing-and-context-aware-workflows.md)  
   
   
 ## [🤖💬 Bot Chats](./bot-chats/index.md) (42)  

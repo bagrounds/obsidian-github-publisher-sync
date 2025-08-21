@@ -4,13 +4,13 @@ aliases:
   - ✨🎯🔒✅ How to make your dreams basically inevitable
 title: ✨🎯🔒✅ How to make your dreams basically inevitable
 URL: https://bagrounds.org/videos/how-to-make-your-dreams-basically-inevitable
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: SpoonFedStudy
-tags: 
+tags:
 youtube: https://youtu.be/oHeO6t55ko0
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](../index.md) > [Videos](./index.md) | [🥄👶📚 SpoonFedStudy](../topics/spoonfedstudy.md)  
 # ✨🎯🔒✅ How to make your dreams basically inevitable  
 ![How to make your dreams basically inevitable.](https://youtu.be/oHeO6t55ko0)  
   

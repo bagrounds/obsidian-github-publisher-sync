@@ -7,7 +7,7 @@ URL: https://bagrounds.org/books
 backlinks: false
 ---
 [Home](../index.md)  
-# 📚 Books (576)  
+# 📚 Books (579)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)  
 - [🧑‍🤝‍🧑📈 10 to 25: The Science of Motivating Young People: A Groundbreaking Approach to Leading the Next Generation - And Making Your Own Life Easier](./10-to-25-the-science-of-motivating-young-people-a-groundbreaking-approach-to-leading-the-next-generation-and-making-your-own-life-easier.md)  
@@ -227,6 +227,8 @@ Feedback Control of Dynamic Systems]]
 - [👥⚔️👑 How to Stand Up to a Dictator: The Fight for Our Future](./how-to-stand-up-to-a-dictator.md)  
 - [🏆📰📣 How to Win an Information War: The Propagandist Who Outwitted Hitler](./how-to-win-an-information-war.md)  
 - [🫂🤝🗣️ How To Win Friends And Influence People](./how-to-win-friends-and-influence-people.md)  
+- [🤖🧑‍ Human Compatible: Artificial Intelligence and the Problem of Control](./human-compatible-artificial-intelligence-and-the-problem-of-control.md)  
+- [🧑‍💻🤖 Human-in-the-Loop Machine Learning: Active learning and annotation for human-centered AI](./human-in-the-loop-machine-learning-active-learning-and-annotation-for-human-centered-ai.md)  
 - [🧑‍💻🤖 Human + Machine: Reimagining Work in the Age of AI](./human-machine-reimagining-work-in-the-age-of-ai.md)  
 - [🧑‍⚕️🧩 Human Physiology: From Cells to Systems](./human-physiology-from-cells-to-systems.md)  
 - [🎯👓🧠 Hyperfocus: How to Be More Productive in a World of Distraction](./hyperfocus.md)  
@@ -549,6 +551,7 @@ Feedback Control of Dynamic Systems]]
 - [⏱️🍎 Time Restricted Eating: A Look into the Lifestyle](./time-restricted-eating-a-look-into-the-lifestyle.md)  
 - [🤏♻️ Tiny Habits: The Small Changes That Change Everything](./tiny-habits.md)  
 - [🇺🇸⛓️‍💥📜🐘 To Make Men Free: A History of the Republican Party](./to-make-men-free-a-history-of-the-republican-party.md)  
+- [🤖🧑‍🏫 Training Data for Machine Learning: Human Supervision from Annotation to Data Science](./training-data-for-machine-learning-human-supervision-from-annotation-to-data-science.md)  
 - [🏳️‍⚧️📜🌱✊ Transgender History: The Roots of Today's Revolution](./transgender-history.md)  
 - [🍬🫵🔙 Treat Your Own Back](./treat-your-own-back.md)  
 - [🇺🇸🇩🇪🤥📣 Trump and Hitler: A Comparative Study in Lying](./trump-and-hitler-a-comparative-study-in-lying.md)  

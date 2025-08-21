@@ -7,7 +7,7 @@ URL: https://bagrounds.org/topics
 backlinks: false
 ---
 [Home](../index.md)  
-# 🌌 Topics (79)  
+# 🌌 Topics (80)  
 - [⚙️🧠🔄 Adaptive Control](./adaptive-control.md)  
 - [🌲🪜🧠 A Hierarchical View of Human Knowledge](./a-hierarchical-view-of-human-knowledge.md)  
 - [A Method For Estimating Work](./a-method-for-estimating-work.md)  
@@ -75,6 +75,7 @@ backlinks: false
 - [💻⚙️💡💾 Software Development and Coding](./software-development-and-coding.md)  
 - [💻⚙️🧩🏗️ Software Engineering](./software-engineering.md)  
 - [Software Testing and Quality Assurance](./software-testing-and-quality-assurance.md)  
+- [🥄👶📚 SpoonFedStudy](./spoonfedstudy.md)  
 - [Static APIs](./static-apis.md)  
 - [💾🧱⚡️ Static Site Generation](./static-site-generation.md)  
 - [⚙️💡💻🤖📡 Technology](./technology.md)  

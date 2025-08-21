@@ -4,13 +4,13 @@ aliases:
   - 🚫⏳🔓 the secret hack that makes procrastination impossible
 title: 🚫⏳🔓 the secret hack that makes procrastination impossible
 URL: https://bagrounds.org/videos/the-secret-hack-that-makes-procrastination-impossible
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: SpoonFedStudy
-tags: 
+tags:
 youtube: https://youtu.be/_ic1jc91RO8
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](../index.md) > [Videos](./index.md) | [🥄👶📚 SpoonFedStudy](../topics/spoonfedstudy.md)  
 # 🚫⏳🔓 the secret hack that makes procrastination impossible  
 ![the secret hack that makes procrastination impossible.](https://youtu.be/_ic1jc91RO8)  
   

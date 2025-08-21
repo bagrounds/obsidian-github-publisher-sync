@@ -10,7 +10,8 @@ title: 🏡 Home
 📑 Notes, 💭 thoughts, and 🔗 Links.  
 ❔ What do 🫵 _you_ 🤔 think?  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (279)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (280)  
+- [2025-08-21](./reflections/2025-08-21.md)  
 - [2025-08-20](./reflections/2025-08-20.md)  
 - [2025-08-19 | 🫀 Recovery | 🇺🇸 American | 🤖 Machines 📄📚📺](./reflections/2025-08-19.md)  
 - [2025-08-18 | 🫀🦮🏋🏼‍♀️ HRV Guided HIFT 📄](./reflections/2025-08-18.md)  
@@ -20,7 +21,6 @@ title: 🏡 Home
 - [2025-08-14 | 🧵 Pragmatic 📚📄](./reflections/2025-08-14.md)  
 - [2025-08-13 | 📜 Legacy Code 📚](./reflections/2025-08-13.md)  
 - [2025-08-12 | 🤖🤠 AI Mess 📄📚](./reflections/2025-08-12.md)  
-- [2025-08-11 | 🤖🛃🎬 AAiA 📚](./reflections/2025-08-11.md)  
   
   
 ## [📚 Books](./books/index.md) (579)  
@@ -37,24 +37,24 @@ title: 🏡 Home
   
   
 ## [📺 Videos](./videos/index.md) (252)  
+- [🚫⏳🔓 the secret hack that makes procrastination impossible](./videos/the-secret-hack-that-makes-procrastination-impossible.md)  
+- [😴🧪💯🏆 The scientifically proven best night routine ever](./videos/the-scientifically-proven-best-night-routine-ever.md)  
+- [✨🎯🔒✅ How to make your dreams basically inevitable](./videos/how-to-make-your-dreams-basically-inevitable.md)  
+- [⚙️📈🎓🏆 This simple productivity system got me into Harvard and Yale](./videos/this-simple-productivity-system-got-me-into-harvard-and-yale.md)  
+- [🚀⏱️💥🏆 How to do more in 90 days than most do in their entire lives](./videos/how-to-do-more-in-90-days-than-most-do-in-their-entire-lives.md)  
+- [⏱️💰📈 This simple time management system will make you a millionaire](./videos/this-simple-time-management-system-will-make-you-a-millionaire.md)  
+- [🛠️⚙️🚀🛡️ The simple system that makes you unstoppable](./videos/the-simple-system-that-makes-you-unstoppable.md)  
+- [🌅🧠🚀♾️ This morning routine is scientifically proven to make you limitless](./videos/this-morning-routine-is-scientifically-proven-to-make-you-limitless.md)  
+- [🔋⚡😴🌞 How to never be tired again](./videos/how-to-never-be-tired-again.md)  
 - [💻🔄💻 Andrej Karpathy: Software Is Changing (Again)](./videos/andrej-karpathy-software-is-changing-again.md)  
-- [🤖📅🦢🚲 2025 in LLMs so far, illustrated by Pelicans on Bicycles - Simon Willison](./videos/2025-in-llms-so-far-illustrated-by-pelicans-on-bicycles-simon-willison.md)  
-- [🤔⏳👹⬇️ Noam Chomsky || How Much Time Is Left Until the End of Trump ( Must Watch )](./videos/noam-chomsky-how-much-time-is-left-until-the-end-of-trump-must-watch.md)  
-- [🤖📈🌟 The Only Trait for Success in the AI Era—How to Build It | Carnegie Mellon University Po-Shen Loh](./videos/the-only-trait-for-success-in-the-ai-era-how-to-build-it-carnegie-mellon-university-po-shen-loh.md)  
-- [🔋📈🧘🗣️ The Energy Project | Tony Schwartz | Talks at Google](./videos/the-energy-project-tony-schwartz-talks-at-google.md)  
-- [⏱️🔋✅ The one productivity system you need: time vs energy management (ep. 1)](./videos/the-one-productivity-system-you-need-time-vs-energy-management-ep-1.md)  
-- [🤥📢👨‍💼 Tony Schwartz: The Truth About Trump | Oxford Union Q&A](./videos/tony-schwartz-the-truth-about-trump-oxford-union-q-a.md)  
-- [🔋🎯💯⚡ THE POWER OF FULL ENGAGEMENT by Jim Loehr and Tony Schwartz | Animated Core Message](./videos/the-power-of-full-engagement-by-jim-loehr-and-tony-schwartz-animated-core-message.md)  
-- [👹🤡👑📢 Trump’s Distractions Are Part of the Authoritarian Playbook | Explainer](./videos/trumps-distractions-are-part-of-the-authoritarian-playbook-explainer.md)  
-- [🧠🛠️💪📈 How to hack your brain to crave doing hard things](./videos/how-to-hack-your-brain-to-crave-doing-hard-things.md)  
   
   
-## [🌌 Topics](./topics/index.md) (79)  
+## [🌌 Topics](./topics/index.md) (80)  
+- [🥄👶📚 SpoonFedStudy](./topics/spoonfedstudy.md)  
 - [🌲🪜🧠 A Hierarchical View of Human Knowledge](./topics/a-hierarchical-view-of-human-knowledge.md)  
 - [💻⚙️💡💾 Software Development and Coding](./topics/software-development-and-coding.md)  
 - [🦬🪒 Yak Shaving](./topics/yak-shaving.md)  
 - [💻⚙️🧩🏗️ Software Engineering](./topics/software-engineering.md)  
-- [⚙️💡💻🤖📡 Technology](./topics/technology.md)  
   
   
 ## [📄  Articles](./articles/index.md) (50)  

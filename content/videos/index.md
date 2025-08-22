@@ -7,7 +7,7 @@ URL: https://bagrounds.org/videos
 backlinks: false
 ---
 [Home](../index.md)  
-# 📺 Videos (252)  
+# 📺 Videos (253)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
 - [❓💪🔬 12 Questions About Creatine with Stephen Cornish, PhD](./12-questions-about-creatine-w-stephen-cornish-phd.md)  
@@ -236,6 +236,7 @@ backlinks: false
 - [🧠🗺️💡🔑 What I Learned after 5000 Hours of Mind Mapping](./what-i-learned-after-5000-hours-of-mind-mapping.md)  
 - [What Makes Some Brains More Focused Than Others? | Marvin Chun | TEDxKFAS](./what-makes-some-brains-more-focused-than-others-marvin-chun-tedxkfas.md)  
 - [What makes something memorable?](./what-makes-something-memorable.md)  
+- [🤔🌎🤠🚨 What on Earth Is Going on in Texas? | Explainer](./what-on-earth-is-going-on-in-texas-explainer.md)  
 - [🥼🧠🚫💉 What research reveals about the rise in autism diagnoses and why vaccines aren't the cause](./what-research-reveals-about-the-rise-in-autism-diagnoses-and-why-vaccines-arent-the-cause.md)  
 - [👹📜🏛️🏠 What's in the version of Trump's bill passed by the Senate and its chances in the House](./whats-in-the-version-of-trumps-bill-passed-by-the-senate-and-its-chances-in-the-house.md)  
 - [What’s next for America’s Proud Boys after Donald Trump’s pardons | Extra Minutes](./whats-next-for-americas-proud-boys-after-donald-trumps-pardons-extra-minutes.md)  

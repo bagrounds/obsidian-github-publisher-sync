@@ -4,8 +4,8 @@ aliases:
   - "🎯👓🧠 Hyperfocus: How to Be More Productive in a World of Distraction"
 title: "🎯👓🧠 Hyperfocus: How to Be More Productive in a World of Distraction"
 URL: https://bagrounds.org/books/hyperfocus
-Author: 
-tags: 
+Author:
+tags:
 affiliate link: https://amzn.to/4dMMEll
 ---
 [Home](../index.md) > [Books](./index.md)  
@@ -57,9 +57,9 @@ affiliate link: https://amzn.to/4dMMEll
 * The concepts are presented in a very practical, actionable way, which is a strength for many readers.  
   
 **Book Recommendations 📚:**  
-* **Best Alternate Book on the Same Topic:** "[Deep Work](./deep-work.md): Rules for Focused Success in a Distracted World" by Cal Newport. This book also explores the importance of focused work, but with a greater emphasis on the value of deep work in a knowledge economy. 💼  
-* **Best Tangentially Related Book:** "[Atomic Habits](./atomic-habits.md): An Easy & Proven Way to Build Good Habits & Break Bad Ones" by James Clear. This book offers valuable insights into habit formation, which is crucial for managing attention and productivity. 🔄  
-* **Best Diametrically Opposed Book:** "The Shallows: What the Internet Is Doing to Our Brains" by Nicholas Carr. This book presents a cautionary view of the internet's impact on attention and cognitive abilities, contrasting with "Hyperfocus's" emphasis on managing attention in a digital world. 🌐  
+* **Best Alternate Book on the Same Topic:** [🤿💼 Deep Work: Rules for Focused Success in a Distracted World](./deep-work.md) by Cal Newport. This book also explores the importance of focused work, but with a greater emphasis on the value of deep work in a knowledge economy. 💼  
+* **Best Tangentially Related Book:** [⚛️🔄 Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones](./atomic-habits.md) by James Clear. This book offers valuable insights into habit formation, which is crucial for managing attention and productivity. 🔄  
+* **Best Diametrically Opposed Book:** [📱🧠 The Shallows: What the Internet Is Doing to Our Brains](./the-shallows-what-the-internet-is-doing-to-our-brains.md) by Nicholas Carr. This book presents a cautionary view of the internet's impact on attention and cognitive abilities, contrasting with "Hyperfocus's" emphasis on managing attention in a digital world. 🌐  
 * **Best Fiction Book That Incorporates Related Ideas:** "Flowers for Algernon" by Daniel Keyes. This novel explores the complexities of intelligence and attention, raising thought-provoking questions about the nature of focus and cognitive abilities. 🧠🌷  
 * **Best More General Book:** "[Thinking, Fast and Slow](./thinking-fast-and-slow.md)" by Daniel Kahneman. This book gives a broad overview of how the brain works, and the two systems of thinking. 🧠🧠  
 * **Best More Specific Book:** "Your Brain at Work" by David Rock. This book delves deeper into the neuroscience of attention and cognitive performance in the workplace. 🏢  

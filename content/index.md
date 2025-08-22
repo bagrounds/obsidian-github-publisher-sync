@@ -36,7 +36,10 @@ title: 🏡 Home
 - [✝️🗣️ Cultish: The Language of Fanaticism](./books/cultish-the-language-of-fanaticism.md)  
   
   
-## [📺 Videos](./videos/index.md) (252)  
+## [📺 Videos](./videos/index.md) (254)  
+- [😵‍💫❓🤯🤦‍♂️ What the Heck Just Happened?](./videos/what-the-heck-just-happened.md)  
+- [🤔🌎🤠🚨 What on Earth Is Going on in Texas? | Explainer](./videos/what-on-earth-is-going-on-in-texas-explainer.md)  
+- [🌅🧠🚀♾️ This morning routine is scientifically proven to make you limitless](./videos/this-morning-routine-is-scientifically-proven-to-make-you-limitless.md)  
 - [🚫⏳🔓 the secret hack that makes procrastination impossible](./videos/the-secret-hack-that-makes-procrastination-impossible.md)  
 - [😴🧪💯🏆 The scientifically proven best night routine ever](./videos/the-scientifically-proven-best-night-routine-ever.md)  
 - [✨🎯🔒✅ How to make your dreams basically inevitable](./videos/how-to-make-your-dreams-basically-inevitable.md)  
@@ -44,9 +47,6 @@ title: 🏡 Home
 - [🚀⏱️💥🏆 How to do more in 90 days than most do in their entire lives](./videos/how-to-do-more-in-90-days-than-most-do-in-their-entire-lives.md)  
 - [⏱️💰📈 This simple time management system will make you a millionaire](./videos/this-simple-time-management-system-will-make-you-a-millionaire.md)  
 - [🛠️⚙️🚀🛡️ The simple system that makes you unstoppable](./videos/the-simple-system-that-makes-you-unstoppable.md)  
-- [🌅🧠🚀♾️ This morning routine is scientifically proven to make you limitless](./videos/this-morning-routine-is-scientifically-proven-to-make-you-limitless.md)  
-- [🔋⚡😴🌞 How to never be tired again](./videos/how-to-never-be-tired-again.md)  
-- [💻🔄💻 Andrej Karpathy: Software Is Changing (Again)](./videos/andrej-karpathy-software-is-changing-again.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (80)  

@@ -4,8 +4,8 @@ aliases:
   - "🙅🗣️💻 Antisocial: Online Extremists, Techno-Utopians, and the Hijacking of the American Conversation"
 title: "🙅🗣️💻 Antisocial: Online Extremists, Techno-Utopians, and the Hijacking of the American Conversation"
 URL: https://bagrounds.org/books/antisocial-online-extremists-techno-utopians-and-the-hijacking-of-the-american-conversation
-Author: 
-tags: 
+Author:
+tags:
 affiliate link: https://amzn.to/4kPcass
 ---
 [Home](../index.md) > [Books](./index.md)  
@@ -61,7 +61,7 @@ affiliate link: https://amzn.to/4kPcass
 * 🧑‍🤝‍🧑 **Radicalization: A Critical Approach** by Kevin McDonald: 📚 Offers a sociological perspective focusing on the experience and embodiment of radicalization processes, potentially contrasting with Marantz's journalistic approach.  
   
 ### 🎨 Creatively Related (Broader Themes: Sociology of Internet, Propaganda, Dystopia)  
-* 🧠 **The Shallows: What the Internet Is Doing to Our Brains** by Nicholas Carr: 💻 Explores the cognitive effects of constant internet use.  
+* **[📱🧠 The Shallows: What the Internet Is Doing to Our Brains](./the-shallows-what-the-internet-is-doing-to-our-brains.md)** by Nicholas Carr: 💻 Explores the cognitive effects of constant internet use.  
 * 🎭 **Amusing Ourselves to Death: Public Discourse in the Age of Show Business** by Neil Postman: 📺 A classic critique of how television (and by extension, later media) shapes public discourse, prioritizing entertainment over substance.  
 * 🥺 **So You've Been Publicly Shamed** by Jon Ronson: 😥 Explores the phenomenon and consequences of online shaming.  
 * 🪞 **Trick Mirror: Reflections on Self-Delusion** by Jia Tolentino: 🤳 Essays exploring internet culture, identity, and modern life.  

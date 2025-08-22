@@ -58,7 +58,7 @@ CTA: 👁️ Question everything.
   
 * 🌐 **The Net Delusion: The Dark Side of Internet Freedom** by Evgeny Morozov: An earlier, influential critique arguing against the techno-optimism that believed the internet would inherently foster democracy, foreshadowing many themes Pomerantsev explores.  
 * 📺 **Amusing Ourselves to Death: Public Discourse in the Age of Show Business** by Neil Postman: A classic critique of television's impact on public discourse, arguing it prioritizes entertainment over substance – offers a pre-internet perspective on media degrading truth.  
-* 🧠 **The Shallows: What the Internet Is Doing to Our Brains** by Nicholas Carr: Focuses on the cognitive impacts of the internet, suggesting it encourages superficial thinking, which contrasts with Pomerantsev's focus on deliberate manipulation but complements the theme of eroding critical engagement.  
+* **[📱🧠 The Shallows: What the Internet Is Doing to Our Brains](./the-shallows-what-the-internet-is-doing-to-our-brains.md)** by Nicholas Carr: Focuses on the cognitive impacts of the internet, suggesting it encourages superficial thinking, which contrasts with Pomerantsev's focus on deliberate manipulation but complements the theme of eroding critical engagement.  
 * 📱 **Ten Arguments for Deleting Your Social Media Accounts Right Now** by Jaron Lanier: A polemic arguing for disengagement from social media platforms due to their manipulative nature and negative societal effects, offering a stark personal solution rather than a systemic analysis.  
   
 ### 🎭 Creatively Related  

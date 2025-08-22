@@ -3,7 +3,7 @@ share: true
 aliases:
   - 😵‍💫❓🤯🤦‍♂️ What the Heck Just Happened?
 title: 😵‍💫❓🤯🤦‍♂️ What the Heck Just Happened?
-URL: https://bagrounds.org/videos/
+URL: https://bagrounds.org/videos/what-the-heck-just-happened
 Author:
 Platform:
 Channel: Heather Cox Richardson
@@ -12,7 +12,7 @@ youtube: https://www.youtube.com/live/ayr2PQY3TfY
 ---
 [Home](../index.md) > [Videos](./index.md) | [🏛️🇺🇸📖 Heather Cox Richardson](../people/heather-cox-richardson.md)  
 # 😵‍💫❓🤯🤦‍♂️ What the Heck Just Happened?  
-![What the Heck Just Happened?](https://www.youtube.com/live/ayr2PQY3TfY)  
+![What the Heck Just Happened?](https://www.youtube.com/embed/ayr2PQY3TfY)  
   
 ## 🤖 AI Summary  
 The 📺 video, titled "What the Heck Just Happened?", discusses the historical context and modern-day relevance of standing armies in the United States.   
@@ -41,4 +41,7 @@ For a more comprehensive understanding, topics to explore include:
 * 📜 Posse Comitatus Act by Ray A Zuniga, offers a contrasting perspective, arguing that the act has been misinterpreted and should be repealed to allow for a more effective "whole of government approach" to domestic crises.  
 * 😂 Animal Farm by George Orwell is a satirical fable that allegorically critiques totalitarianism and the corrupting nature of power, a theme creatively related to the video's discussion of humor as a tool against authoritarians.  
 * [🎳🏘️📉📈 Bowling Alone: The Collapse and Revival of American Community](../books/bowling-alone.md) by Robert D. Putnam explores the decline of civic engagement and community life in America, which relates to the video's final point about the importance of community.  
-* [👑🚫📜2️⃣0️⃣ On Tyranny: Twenty Lessons from the Twentieth Century](../books/on-tyranny.md) by Timothy Snyder, provides historical lessons on how to resist the rise of authoritarianism, a topic that resonates with the video's concerns about the potential for government overreach.
+* [👑🚫📜2️⃣0️⃣ On Tyranny: Twenty Lessons from the Twentieth Century](../books/on-tyranny.md) by Timothy Snyder, provides historical lessons on how to resist the rise of authoritarianism, a topic that resonates with the video's concerns about the potential for government overreach.  
+  
+## 🐦 Tweet  
+<blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">😵‍💫❓🤯🤦‍♂️ What the Heck Just Happened?<br><br>🏛️ Founding Fathers | 💂 British Colonialism | 💰 Taxation | 🚨 Federalization | 👮 Police | 😠 Intimidation | 🛡️ National Guard | 😂 Humor | 🤝 Community | 📜 Posse Comitatus Act<a href="https://twitter.com/HC_Richardson?ref_src=twsrc%5Etfw">@HC_Richardson</a><a href="https://t.co/01UZtNjTlJ">https://t.co/01UZtNjTlJ</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/1958781775070593482?ref_src=twsrc%5Etfw">August 22, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

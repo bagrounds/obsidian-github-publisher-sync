@@ -24,6 +24,7 @@ CTA: 🧠 Master concentration.
         1. 🧺🤔 Productive Meditation  
         2. 🧠 Memorize a deck of cards  
     3. 📵 Quit Social Media  
+    4. 🌊 Drain the shallows  
   
 ## 🤖 AI Summary  
 ### Deep Work: Rules for Focused Success in a Distracted World 🧠  

@@ -4,14 +4,26 @@ aliases:
   - "🤿💼 Deep Work: Rules for Focused Success in a Distracted World"
 title: "🤿💼 Deep Work: Rules for Focused Success in a Distracted World"
 URL: https://bagrounds.org/books/deep-work
-Author: 
-tags: 
+Author:
+tags:
 affiliate link: https://amzn.to/3HCgWuP
 CTA: 🧠 Master concentration.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🤿💼 Deep Work: Rules for Focused Success in a Distracted World  
 [🛒 Deep Work: Rules for Focused Success in a Distracted World. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3HCgWuP)  
+  
+## 📝🐒 Human Notes  
+1. 💡 Idea  
+    1. 💎 Valuable  
+    2. ✨ Rare  
+    3. 💖 Meaningful  
+2. 📜 Rules  
+    1. 👩‍💻 Work deeply  
+    2. 😴 Embrace Boredom  
+        1. 🧺🤔 Productive Meditation  
+        2. 🧠 Memorize a deck of cards  
+    3. 📵 Quit Social Media  
   
 ## 🤖 AI Summary  
 ### Deep Work: Rules for Focused Success in a Distracted World 🧠  
@@ -60,7 +72,7 @@ CTA: 🧠 Master concentration.
 **Book Recommendations 📚:**  
 * **Best Alternate Book on the Same Topic:** [🧘 Indistractable: How to Control Your Attention and Choose Your Life](./indistractable.md) by Nir Eyal. It provides a more comprehensive framework for managing distractions and building habits. 🧘  
 * **Best Tangentially Related Book:** [⚛️🔄 Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones](./atomic-habits.md) by James Clear. It focuses on building small, consistent habits that lead to significant results, which aligns with the principles of establishing deep work routines. ⚛️  
-* **Best Diametrically Opposed Book:** "The Shallows: What the Internet Is Doing to Our Brains" by Nicholas Carr. While it explores the negative impacts of the internet on attention, it doesn't offer the same practical solutions for cultivating deep focus. 🌐  
+* **Best Diametrically Opposed Book:** [📱🧠 The Shallows: What the Internet Is Doing to Our Brains](./the-shallows-what-the-internet-is-doing-to-our-brains.md) by Nicholas Carr. While it explores the negative impacts of the internet on attention, it doesn't offer the same practical solutions for cultivating deep focus. 🌐  
 * **Best Fiction Book That Incorporates Related Ideas:** "Flowers for Algernon" by Daniel Keyes. It explores the complexities of intelligence and the value of deep thought in a world of superficiality. 🌸  
 * **Best Book That Is More General:** [🤔🐇🐢 Thinking, Fast and Slow](./thinking-fast-and-slow.md) by Daniel Kahneman. It provides a deeper understanding of cognitive processes and how they affect decision-making. 🧠  
 * **Best Book That Is More Specific:** [⛰️📈🥇 Peak: Secrets from the New Science of Expertise](./peak.md) by Anders Ericsson and Robert Pool. It delves into the science of deliberate practice and skill acquisition. 📈  
@@ -68,4 +80,4 @@ CTA: 🧠 Master concentration.
 * **Best Book That Is More Accessible:** [🎯👓🧠 Hyperfocus: How to Be More Productive in a World of Distraction](./hyperfocus.md) by Chris Bailey. It provides very practical, easy to implement advice. 🎯  
   
 ## 💬 [Gemini](https://gemini.google.com) Prompt  
-> Summarize the book: Deep Work: Rules for Focused Success in a Distracted World. Start with a TL;DR - a single statement that conveys a maximum of the useful information provided in the book. Next, explain how this book may offer a new or surprising perspective. Follow this with a deep dive. Catalogue the topics, methods, and research discussed. Be sure to highlight any significant theories, theses, or mental models proposed. Provide a critical analysis of the quality of the information presented, using scientific backing, author credentials, authoritative reviews, and other markers of high quality information as justification. Emphasize practical takeaways. Make the following additional book recommendations: the best alternate book on the same topic; the best book that is tangentially related; the best book that is diametrically opposed; the best fiction book that incorporates related ideas; the best book that is more general or more specific; and the best book that is more rigorous or more accessible than this book. Format your response as markdown, starting at heading level H3, with inline links, for easy copy paste. Use meaningful emojis generously (at least one per heading, bullet point, and paragraph) to enhance readability. Do not include broken links or links to commercial sites.  
+> Summarize the book: Deep Work: Rules for Focused Success in a Distracted World. Start with a TL;DR - a single statement that conveys a maximum of the useful information provided in the book. Next, explain how this book may offer a new or surprising perspective. Follow this with a deep dive. Catalogue the topics, methods, and research discussed. Be sure to highlight any significant theories, theses, or mental models proposed. Provide a critical analysis of the quality of the information presented, using scientific backing, author credentials, authoritative reviews, and other markers of high quality information as justification. Emphasize practical takeaways. Make the following additional book recommendations: the best alternate book on the same topic; the best book that is tangentially related; the best book that is diametrically opposed; the best fiction book that incorporates related ideas; the best book that is more general or more specific; and the best book that is more rigorous or more accessible than this book. Format your response as markdown, starting at heading level H3, with inline links, for easy copy paste. Use meaningful emojis generously (at least one per heading, bullet point, and paragraph) to enhance readability. Do not include broken links or links to commercial sites.

@@ -11,7 +11,7 @@ title: 🏡 Home
 ❔ What do 🫵 _you_ 🤔 think?  
   
 ## [🪞 Reflections](./reflections/index.md) ~ Blog (283)  
-- [2025-08-24 | 😇 Righteous 📚](./reflections/2025-08-24.md)  
+- [2025-08-24 | 😇 Righteous | 🏋🏼‍♀️ Masochism 📚🪞](./reflections/2025-08-24.md)  
 - [2025-08-23 | 🤿 Deep | 🐌 Slow | 👍 Good 📚👥](./reflections/2025-08-23.md)  
 - [2025-08-22 | 🤿 Deep | 📱 Shallow 📚](./reflections/2025-08-22.md)  
 - [2025-08-21 | 🥄 SpoonFed | 🤯 What? 🌌📺](./reflections/2025-08-21.md)  
@@ -24,6 +24,7 @@ title: 🏡 Home
   
   
 ## [📚 Books](./books/index.md) (582)  
+- [😇🧠 The Righteous Mind: Why Good People Are Divided by Politics and Religion](./books/the-righteous-mind.md)  
 - [💼🏆 The Job Closer: Time Saving Techniques for Acing Resumes, Interviews, Negotiations, and More](./books/the-job-closer.md)  
 - [💡📜 Where Good Ideas Come From: The Natural History of Innovation](./books/where-good-ideas-come-from-the-natural-history-of-innovation.md)  
 - [🏗️😊🗺️✨ Designing Your Life: How to Build a Well-Lived, Joyful Life](./books/designing-your-life.md)  
@@ -33,7 +34,6 @@ title: 🏡 Home
 - [🤿💼 Deep Work: Rules for Focused Success in a Distracted World](./books/deep-work.md)  
 - [🌴🧘🏼‍♀️ Do Nothing: How to Break Away from Overworking, Overdoing, and Underliving](./books/do-nothing-how-to-break-away-from-overworking-overdoing-and-underliving.md)  
 - [😴📈 Rest: Why You Get More Done When You Work Less](./books/rest-why-you-get-more-done-when-you-work-less.md)  
-- [🐌🎯 Slow Productivity: The Lost Art of Accomplishment Without Burnout](./books/slow-productivity-the-lost-art-of-accomplishment-without-burnout.md)  
   
   
 ## [📺 Videos](./videos/index.md) (255)  

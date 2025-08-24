@@ -14,7 +14,7 @@ CTA: 🧠 Master concentration.
 [🛒 Deep Work: Rules for Focused Success in a Distracted World. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3HCgWuP)  
   
 ## 📝🐒 Human Notes  
-1. 💡 Idea  
+1. 🤿💼 Deep work is  
     1. 💎 Valuable  
     2. ✨ Rare  
     3. 💖 Meaningful  

@@ -4,8 +4,8 @@ aliases:
   - "🏗️😊🗺️✨ Designing Your Life: How to Build a Well-Lived, Joyful Life"
 title: "🏗️😊🗺️✨ Designing Your Life: How to Build a Well-Lived, Joyful Life"
 URL: https://bagrounds.org/books/designing-your-life
-Author: 
-tags: 
+Author:
+tags:
 affiliate link: https://amzn.to/43IBg5n
 ---
 [Home](../index.md) > [Books](./index.md)  
@@ -65,12 +65,12 @@ affiliate link: https://amzn.to/43IBg5n
   
 ### Book Recommendations 📚  
 * **Best Alternate Book (Same Topic):** "What Color Is Your Parachute?" by Richard N. Bolles. This classic career guide provides detailed job-hunting strategies and self-assessment tools. 🌈  
-* **Best Tangentially Related Book:** "[Drive: The Surprising Truth About What Motivates Us](./drive-the-surprising-truth-about-what-motivates-us.md)" by Daniel H. Pink. Explores intrinsic motivation and how to find purpose in work. 🚗  
+* **Best Tangentially Related Book:** [🏎️⛽ Drive: The Surprising Truth About What Motivates Us](./drive-the-surprising-truth-about-what-motivates-us.md) by Daniel H. Pink. Explores intrinsic motivation and how to find purpose in work. 🚗  
 * **Best Diametrically Opposed Book:** "The Subtle Art of Not Giving a F\*ck" by Mark Manson. Offers a contrarian view on finding happiness by embracing limitations. 🚫  
 * **Best Fiction Book (Related Ideas):** "The Midnight Library" by Matt Haig. Explores the concept of alternate lives and the choices that shape them. 🌃  
-* **Best More General Book:** "[Atomic Habits](./atomic-habits.md)" by James Clear. This book explores how small changes in habits can lead to big results. ⚛️  
-* **Best More Specific Book:** "So Good They Can't Ignore You" by Cal Newport. Focuses on developing valuable skills and building a fulfilling career. 💼  
-* **Best More Rigorous Book:** "Flow: The Psychology of Optimal Experience" by Mihaly Csikszentmihalyi. A deep dive into the state of flow and its impact on happiness. 🌊  
+* **Best More General Book:** [⚛️🔄 Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones](./atomic-habits.md) by James Clear. This book explores how small changes in habits can lead to big results. ⚛️  
+* **Best More Specific Book:** [💪❤️ So Good They Can't Ignore You: Why Skills Trump Passion in the Quest for Work You Love](./so-good-they-cant-ignore-you-why-skills-trump-passion-in-the-quest-for-work-you-love.md) by Cal Newport. Focuses on developing valuable skills and building a fulfilling career. 💼  
+* **Best More Rigorous Book:** [🌊🧘🏼‍♀️🧠📈 Flow: The Psychology of Optimal Experience](./flow-the-psychology-of-optimal-experience.md) by Mihaly Csikszentmihalyi. A deep dive into the state of flow and its impact on happiness. 🌊  
 * **Best More Accessible Book:** "The Happiness Project" by Gretchen Rubin. A personal journey of exploring happiness through monthly goals. 😊  
   
 ## 💬 [Gemini](https://gemini.google.com) Prompt  

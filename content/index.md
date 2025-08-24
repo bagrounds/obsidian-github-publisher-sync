@@ -10,7 +10,8 @@ title: 🏡 Home
 📑 Notes, 💭 thoughts, and 🔗 Links.  
 ❔ What do 🫵 _you_ 🤔 think?  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (282)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (283)  
+- [2025-08-24 | 😇 Righteous 📚](./reflections/2025-08-24.md)  
 - [2025-08-23 | 🤿 Deep | 🐌 Slow | 👍 Good 📚👥](./reflections/2025-08-23.md)  
 - [2025-08-22 | 🤿 Deep | 📱 Shallow 📚](./reflections/2025-08-22.md)  
 - [2025-08-21 | 🥄 SpoonFed | 🤯 What? 🌌📺](./reflections/2025-08-21.md)  
@@ -20,7 +21,6 @@ title: 🏡 Home
 - [2025-08-17 | 🤡 Distractions | 🔋 Energy 📺](./reflections/2025-08-17.md)  
 - [2025-08-16 | 💍 Engage 📚](./reflections/2025-08-16.md)  
 - [2025-08-15 | 🔋 Tireless UX 📺📚](./reflections/2025-08-15.md)  
-- [2025-08-14 | 🧵 Pragmatic 📚📄](./reflections/2025-08-14.md)  
   
   
 ## [📚 Books](./books/index.md) (582)  

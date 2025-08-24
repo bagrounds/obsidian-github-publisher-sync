@@ -4,14 +4,18 @@ aliases:
   - "😇🧠 The Righteous Mind: Why Good People Are Divided by Politics and Religion"
 title: "😇🧠 The Righteous Mind: Why Good People Are Divided by Politics and Religion"
 URL: https://bagrounds.org/books/the-righteous-mind
-Author: 
-tags: 
+Author:
+tags:
 affiliate link: https://amzn.to/3ZIy2gS
 CTA: 🤝 Bridge divides.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 😇🧠 The Righteous Mind: Why Good People Are Divided by Politics and Religion  
 [🛒 The Righteous Mind: Why Good People Are Divided by Politics and Religion. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3ZIy2gS)  
+  
+## 📝🐒 Human Notes  
+- 😇👿 We are all self-righteous hypocrites   
+- 🐘🤔 Intuitions come first, strategic reasoning second  
   
 ## 🤖 AI Summary  
 ### TLDR  

@@ -5,7 +5,7 @@ aliases:
 title: "⏳💻💼🎯 The 2-Hour Job Search: Using Technology to Get the Right Job Faster"
 URL: https://bagrounds.org/books/the-2-hour-job-search
 Author: "[[Steve Dalton]]"
-tags: 
+tags:
 affiliate link: https://amzn.to/3Sx4leV
 ---
 [Home](../index.md) > [Books](./index.md)  
@@ -67,10 +67,10 @@ affiliate link: https://amzn.to/3Sx4leV
   - What Color Is Your Parachute? by Richard Bolles  
     - A classic guide that combines self-assessment with practical job-hunting advice. ✈️  
 - **Best Book Tangentially Related:**    
-  - [Designing Your Life](./designing-your-life.md) by Bill Burnett & Dave Evans  
+  - [🏗️😊🗺️✨ Designing Your Life: How to Build a Well-Lived, Joyful Life](./designing-your-life.md) by Bill Burnett & Dave Evans  
     - Uses design thinking to reimagine career planning, expanding beyond the traditional job search. 🎨  
 - **Best Book Diametrically Opposed:**  
-  - So Good They Can't Ignore You by Cal Newport  
+  - [💪❤️ So Good They Can't Ignore You: Why Skills Trump Passion in the Quest for Work You Love](./so-good-they-cant-ignore-you-why-skills-trump-passion-in-the-quest-for-work-you-love.md) by Cal Newport  
     - Argues that career satisfaction comes from building rare, valuable skills rather than chasing jobs. 🚀  
 - **Best Fiction Book Incorporating Related Ideas:**  
   - Microserfs by Douglas Coupland  

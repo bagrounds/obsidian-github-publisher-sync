@@ -44,7 +44,7 @@ In an age of 🌐 constant connectivity and 🤯 relentless demands for our atte
 #### ➕ **Similar Books**  
   
 * ⏳ **Four Thousand Weeks: Time Management for Mortals** by Oliver Burkeman: This book similarly challenges the productivity-obsessed culture and encourages readers to embrace their limitations and focus on what truly matters in their finite lives.  
-* 🧠 **The Shallows: What the Internet Is Doing to Our Brains** by Nicholas Carr: Carr's work provides a scientific and historical context for Odell's arguments, exploring how the internet is reshaping our cognitive processes and making deep thinking more difficult.  
+* **[📱🧠 The Shallows: What the Internet Is Doing to Our Brains](./the-shallows-what-the-internet-is-doing-to-our-brains.md)** by Nicholas Carr: Carr's work provides a scientific and historical context for Odell's arguments, exploring how the internet is reshaping our cognitive processes and making deep thinking more difficult.  
 * 🎭 **Amusing Ourselves to Death: Public Discourse in the Age of Show Business** by Neil Postman: A foundational text that critiques the trivialization of public life by entertainment-focused media, a precursor to many of the concerns Odell raises about the attention economy.  
   
 #### ➖ **Contrasting Books**  

@@ -7,7 +7,7 @@ URL: https://bagrounds.org/videos
 backlinks: false
 ---
 [Home](../index.md)  
-# 📺 Videos (254)  
+# 📺 Videos (255)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
 - [❓💪🔬 12 Questions About Creatine with Stephen Cornish, PhD](./12-questions-about-creatine-w-stephen-cornish-phd.md)  
@@ -23,6 +23,7 @@ backlinks: false
 - [🎨🧱🔄 513 - Why Creatives Have to Build Habits Differently and How to Do It](./513-why-creatives-have-to-build-habits-differently-and-how-to-do-it.md)  
 - [🧠🪜💡🤔⬆️🎓 6 Levels of Thinking Every Student MUST Master](./6-levels-of-thinking-every-student-must-master.md)  
 - [👨‍⚖️🇺🇸⚔️🛑 ACLU attorney on suing Trump administration for using wartime authority for deportations](./aclu-attorney-on-suing-trump-administration-for-using-wartime-authority-for-deportations.md)  
+- [🗣️🧑‍💼🌉 A Conversation With California Governor Gavin Newsom](./a-conversation-with-california-governor-gavin-newsom.md)  
 - [⚫😭🇺🇸 A Dark Day for Our Country](./a-dark-day-for-our-country.md)  
 - [🤖🧠⚙️👩‍💻 AI Engineering with Chip Huyen](./ai-engineering-with-chip-huyen.md)  
 - [📺🏛️💸🎯 A look at the history of public media in the U.S. as Republicans target federal funding](./a-look-at-the-history-of-public-media-in-the-us-as-republicans-target-federal-funding.md)  

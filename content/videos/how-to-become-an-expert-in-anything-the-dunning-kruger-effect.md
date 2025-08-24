@@ -4,10 +4,10 @@ aliases:
   - 🤓📈📉⚠️ How to Become an Expert in ANYTHING - The Dunning Kruger Effect
 title: 🤓📈📉⚠️ How to Become an Expert in ANYTHING - The Dunning Kruger Effect
 URL: https://youtu.be/tXSNfuUilio
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: Justin Sung
-tags: 
+tags:
 ---
 [Home](../index.md) > [Videos](./index.md) | [🧠👨‍🎓📈 Justin Sung](../people/justin-sung.md)  
 # 🤓📈📉⚠️ How to Become an Expert in ANYTHING - The Dunning Kruger Effect  
@@ -63,7 +63,7 @@ This video explains the Dunning-Kruger effect, which describes the journey to ex
 * **Books:**  
     * [🌱🧘🏼‍♀️🏆 Mindset: The New Psychology of Success](../books/mindset.md) by Carol S. Dweck 🧠  
     * [⛰️📈🥇 Peak: Secrets from the New Science of Expertise](../books/peak.md) by Anders Ericsson 🚀  
-    * "So Good They Can't Ignore You" by Cal Newport 🌟  
+    * [💪❤️ So Good They Can't Ignore You: Why Skills Trump Passion in the Quest for Work You Love](../books/so-good-they-cant-ignore-you-why-skills-trump-passion-in-the-quest-for-work-you-love.md) by Cal Newport 🌟  
     * "How to Learn a Foreign Language" by Paul Pimsleur 🗣️  
     * "The Inner Game of Tennis" by W. Timothy Gallwey 🎾  
     * The video mentions [🐛➡️🦋 How to Change: The Science of Getting from Where You Are to Where You Want to Be](../books/how-to-change.md) by Katy Milkman. 🔄  

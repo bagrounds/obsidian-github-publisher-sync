@@ -5,8 +5,9 @@ aliases:
 title: "💼🏆 The Job Closer: Time Saving Techniques for Acing Resumes, Interviews, Negotiations, and More"
 URL: https://bagrounds.org/books/the-job-closer-time-saving-techniques-for-acing-resumes-interviews-negotiations-and-more
 Author: "[[Steve Dalton]]"
-tags: 
+tags:
 affiliate link: https://amzn.to/459hiTz
+CTA: 🚀 Secure your future.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 💼🏆 The Job Closer: Time Saving Techniques for Acing Resumes, Interviews, Negotiations, and More  
@@ -54,7 +55,7 @@ While the book offers valuable frameworks, some critics note that the ⚙️ str
   
 * ***What Color Is Your Parachute?*** by Richard N. Bolles: A classic in 📈 career guidance, this book takes a more 🌐 holistic approach, incorporating 🧠 self-assessment and broader 📈 career exploration alongside practical 💼 job search advice. It's known for its in-depth exercises to help individuals identify their skills, interests, and values.  
 * **[🏗️😊🗺️✨ Designing Your Life: How to Build a Well-Lived, Joyful Life](./designing-your-life.md)** by Bill Burnett and Dave Evans: This book applies 📐 design thinking principles to life and 📈 career planning, encouraging 🧪 experimentation and prototyping different possibilities rather than following a rigid path.  
-* ***So Good They Can't Ignore You: Why Skills Trump Passion in the Quest For Work You Love*** by Cal Newport: Newport challenges the conventional wisdom of "following your passion," arguing instead for the importance of developing valuable skills and expertise as a path to 📈 career fulfillment.  
+* **[💪❤️ So Good They Can't Ignore You: Why Skills Trump Passion in the Quest for Work You Love](./so-good-they-cant-ignore-you-why-skills-trump-passion-in-the-quest-for-work-you-love.md)** by Cal Newport: Newport challenges the conventional wisdom of "following your passion," arguing instead for the importance of developing valuable skills and expertise as a path to 📈 career fulfillment.  
   
 ### 🎨 Creatively Related Books (Focus on Complementary Skills and Mindset)  
   

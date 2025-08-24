@@ -7,7 +7,7 @@ URL: https://bagrounds.org/books
 backlinks: false
 ---
 [Home](../index.md)  
-# 📚 Books (579)  
+# 📚 Books (582)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)  
 - [🧑‍🤝‍🧑📈 10 to 25: The Science of Motivating Young People: A Groundbreaking Approach to Leading the Next Generation - And Making Your Own Life Easier](./10-to-25-the-science-of-motivating-young-people-a-groundbreaking-approach-to-leading-the-next-generation-and-making-your-own-life-easier.md)  
@@ -374,6 +374,7 @@ Feedback Control of Dynamic Systems]]
 - [🧶✔️ Six Simple Rules: How to Manage Complexity without Getting Complicated](./six-simple-rules.md)  
 - [😴🌞 Sleep and Wakefulness](./sleep-and-wakefulness.md)  
 - [😴🧠 Sleepyhead: The Neuroscience of a Good Night's Rest](./sleepyhead-the-neuroscience-of-a-good-nights-rest.md)  
+- [🐌🎯 Slow Productivity: The Lost Art of Accomplishment Without Burnout](./slow-productivity-the-lost-art-of-accomplishment-without-burnout.md)  
 - [🐕🐈‍⬛🩺❤️‍🩹 Small Animal Internal Medicine](./small-animal-internal-medicine.md)  
 - [🧠🧩📈🧑‍🏫 Smart but Scattered: The Revolutionary Executive Skills Approach to Helping Kids Reach Their Potential](./smart-but-scattered.md)  
 - [❄️💻💥 Snow Crash](./snow-crash.md)  
@@ -381,6 +382,7 @@ Feedback Control of Dynamic Systems]]
 - [💻⚙️ Software Engineering at Google: Lessons Learned from Programming Over Time](./software-engineering-at-google-lessons-learned-from-programming-over-time.md)  
 - [💾🔮🤔🎲🎱 Software Estimation: Demystifying the Black Art](./software-estimation.md)  
 - [🧠🔄💡🌱✨ Soft Wired: How the New Science of Brain Plasticity Can Change Your Life](./soft-wired-how-the-new-science-of-brain-plasticity-can-change-your-life.md)  
+- [💪❤️ So Good They Can't Ignore You: Why Skills Trump Passion in the Quest for Work You Love](./so-good-they-cant-ignore-you-why-skills-trump-passion-in-the-quest-for-work-you-love.md)  
 - [⚠️👤 Something Happened](./something-happened.md)  
 - [⛲🔌🤔⚙️ Sources of Power: How People Make Decisions](./sources-of-power-how-people-make-decisions.md)  
 - [⚡🧠🏃 Spark: The Revolutionary New Science of Exercise and the Brain](./spark-the-revolutionary-new-science-of-exercise-and-the-brain.md)  
@@ -516,6 +518,7 @@ Feedback Control of Dynamic Systems]]
 - [🤖📈 The Second Machine Age: Work, Progress, and Prosperity in a Time of Brilliant Technologies](./the-second-machine-age-work-progress-and-prosperity-in-a-time-of-brilliant-technologies.md)  
 - [👨‍🚀 The Self-Driven Child: The 🔬 Science and 🤔 Sense of Giving Your Kids More 🕹️ Control Over Their Lives](./the-self-driven-child.md)  
 - [👤🧬 The Selfish Gene](./the-selfish-gene.md)  
+- [📱🧠 The Shallows: What the Internet Is Doing to Our Brains](./the-shallows-what-the-internet-is-doing-to-our-brains.md)  
 - [😥🏫🇺🇸 The Shame of the Nation: The Restoration of Apartheid Schooling in America](./the-shame-of-the-nation-the-restoration-of-apartheid-schooling-in-america.md)  
 - [📡🌫️🔮🎲 The Signal and the Noise: Why So Many Predictions Fail - but Some Don't](./the-signal-and-the-noise.md)  
 - [💀🌍📉⏳ The Sixth Extinction: An Unnatural History](./the-sixth-extinction.md)  

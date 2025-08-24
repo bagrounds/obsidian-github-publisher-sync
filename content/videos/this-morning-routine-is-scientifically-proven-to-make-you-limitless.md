@@ -3,7 +3,7 @@ share: true
 aliases:
   - 🌅🧠🚀♾️ This morning routine is scientifically proven to make you limitless
 title: 🌅🧠🚀♾️ This morning routine is scientifically proven to make you limitless
-URL: https://bagrounds.org/videos/
+URL: https://bagrounds.org/videos/this-morning-routine-is-scientifically-proven-to-make-you-limitless
 Author:
 Platform:
 Channel: SpoonFedStudy

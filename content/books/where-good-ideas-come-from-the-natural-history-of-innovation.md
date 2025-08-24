@@ -5,6 +5,7 @@ aliases:
 URL: https://bagrounds.org/books/where-good-ideas-come-from-the-natural-history-of-innovation
 share: true
 affiliate link: https://amzn.to/3HocOP6
+CTA: 💡 Cultivate creativity.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 💡📜 Where Good Ideas Come From: The Natural History of Innovation  
@@ -44,8 +45,8 @@ affiliate link: https://amzn.to/3HocOP6
   
 ### 🆚 Contrasting Books (Focus on Structure, Individual Effort, or Different Contexts)  
   
-* 📉 **[The Innovator's Dilemma](./the-innovators-dilemma.md): When New Technologies Cause Great Firms to Fail by Clayton M. Christensen:** This classic explores why successful companies often fail to capitalize on disruptive innovations. 🏢 It focuses on organizational structures and decision-making within established businesses, offering a contrast to Johnson's emphasis on open, networked environments.  
-* 💪 **So Good They Can't Ignore You: Why Skills Trump Passion in the Quest for Work You Love by Cal Newport:** Newport argues that valuable skills 🤹, rather than pre-existing passion ❤️‍🔥, lead to fulfilling work. 🎯 While not directly about innovation's origins, it contrasts the idea of passion-driven creativity with a more deliberate, skill-based approach to developing expertise, which can, in turn, lead to innovative contributions.  
+* **[💡🤖💰💥🏢📉 The Innovator's Dilemma: When New Technologies Cause Great Firms to Fail](./the-innovators-dilemma.md) by Clayton M. Christensen:** This classic explores why successful companies often fail to capitalize on disruptive innovations. 🏢 It focuses on organizational structures and decision-making within established businesses, offering a contrast to Johnson's emphasis on open, networked environments.  
+* **[💪❤️ So Good They Can't Ignore You: Why Skills Trump Passion in the Quest for Work You Love](./so-good-they-cant-ignore-you-why-skills-trump-passion-in-the-quest-for-work-you-love.md) by Cal Newport:** Newport argues that valuable skills 🤹, rather than pre-existing passion ❤️‍🔥, lead to fulfilling work. 🎯 While not directly about innovation's origins, it contrasts the idea of passion-driven creativity with a more deliberate, skill-based approach to developing expertise, which can, in turn, lead to innovative contributions.  
 * ⚙️ **Disciplined Dreaming: A Proven System to Drive Breakthrough Creativity by Josh Linkner:** This book provides a structured system and practical tools for fostering creativity within organizations. 🧩 It offers a more prescriptive, process-oriented approach compared to Johnson's focus on emergent properties of systems.  
   
 ### 🎨 Creatively Related Books (Networks, Complex Systems, Environment)  

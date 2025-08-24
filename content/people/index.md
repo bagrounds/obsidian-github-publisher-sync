@@ -7,9 +7,10 @@ backlinks: false
 URL: https://bagrounds.org/people
 ---
 [Home](../index.md)  
-# 👥 People (12)  
+# 👥 People (13)  
 - [🤖🧠💻 Andrej Karpathy](./andrej-karpathy.md)  
 - [👨‍🏫🤖 Andrew Ng](./andrew-ng.md)  
+- [👨‍🏫📚💻🤔 Cal Newport](./cal-newport.md)  
 - [🏛️🇺🇸📖 Heather Cox Richardson](./heather-cox-richardson.md)  
 - [👨‍💻☁️🐘 Jay Kreps](./jay-kreps.md)  
 - [🧠👨‍🎓📈 Justin Sung](./justin-sung.md)  

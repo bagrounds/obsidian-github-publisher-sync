@@ -4,8 +4,8 @@ aliases:
   - "⛔🌎🔚 Not the End of the World: How We Can Be the First Generation to Build a Sustainable Planet"
 title: "⛔🌎🔚 Not the End of the World: How We Can Be the First Generation to Build a Sustainable Planet"
 URL: https://bagrounds.org/books/not-the-end-of-the-world
-Author: 
-tags: 
+Author:
+tags:
 affiliate link: https://amzn.to/4mIM241
 ---
 [Home](../index.md) > [Books](./index.md)  
@@ -60,8 +60,8 @@ affiliate link: https://amzn.to/4mIM241
   
 ### 📖 Similar Reads (Data-Driven Optimism & Solutions)  
   
-* 📚 **[Factfulness](./factfulness.md): Ten Reasons We're Wrong About the World—and Why Things Are Better Than You Think** by Hans Rosling, Ola Rosling, and Anna Rosling Rönnlund: A major inspiration for Ritchie, this book uses data to challenge pessimistic assumptions about global health, poverty, and development.  
-* 📚 **Enlightenment Now: The Case for Reason, Science, Humanism, and Progress** by Steven Pinker: Argues that, on balance, life has improved dramatically across various metrics thanks to Enlightenment values, though it faces criticism for downplaying certain risks.  
+* **[🤔🌍📈✅ Factfulness: Ten Reasons We're Wrong About the World - and Why Things Are Better Than You Think](./factfulness.md)** by Hans Rosling, Ola Rosling, and Anna Rosling Rönnlund: A major inspiration for Ritchie, this book uses data to challenge pessimistic assumptions about global health, poverty, and development.  
+* **[💡🔬🧑‍🤝‍🧑📈 Enlightenment Now: The Case for Reason, Science, Humanism, and Progress](./enlightenment-now-the-case-for-reason-science-humanism-and-progress.md)** by Steven Pinker: Argues that, on balance, life has improved dramatically across various metrics thanks to Enlightenment values, though it faces criticism for downplaying certain risks.  
 * 📚 **How the World Really Works: A Scientist's Guide to Our Past, Present and Future** by Vaclav Smil: Provides a data-heavy look at the fundamental systems (energy, food production, materials) underpinning modern civilization. Less overtly optimistic than Ritchie, but deeply informative and reality-based.  
 * 📚 **The Big Fix: Seven Practical Steps to Save Our Planet** by Hal Harvey and Justin Gillis: Focuses on concrete policy and technological solutions for climate change, emphasizing practicality and achievable goals.  
   

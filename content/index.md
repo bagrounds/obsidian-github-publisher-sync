@@ -23,8 +23,9 @@ title: 🏡 Home
 - [2025-08-17 | 🤡 Distractions | 🔋 Energy 📺](./reflections/2025-08-17.md)  
   
   
-## [📚 Books](./books/index.md) (585)  
+## [📚 Books](./books/index.md) (586)  
 - [😇🧠 The Righteous Mind: Why Good People Are Divided by Politics and Religion](./books/the-righteous-mind.md)  
+- [👦🏝️🐷 Lord of the Flies](./books/lord-of-the-flies.md)  
 - [🍩🌍 Doughnut Economics: Seven Ways to Think Like a 21st-Century Economist](./books/doughnut-economics-seven-ways-to-think-like-a-21st-century-economist.md)  
 - [👤💬 The Analects of Confucius](./books/the-analects-of-confucius.md)  
 - [💡🔬🧑‍🤝‍🧑📈 Enlightenment Now: The Case for Reason, Science, Humanism, and Progress](./books/enlightenment-now-the-case-for-reason-science-humanism-and-progress.md)  
@@ -33,7 +34,6 @@ title: 🏡 Home
 - [🤔🧩⚖️ Patterns, Thinking, and Cognition: A Theory of Judgment](./books/patterns-thinking-and-cognition-a-theory-of-judgment.md)  
 - [💼🏆 The Job Closer: Time Saving Techniques for Acing Resumes, Interviews, Negotiations, and More](./books/the-job-closer.md)  
 - [💡📜 Where Good Ideas Come From: The Natural History of Innovation](./books/where-good-ideas-come-from-the-natural-history-of-innovation.md)  
-- [🏗️😊🗺️✨ Designing Your Life: How to Build a Well-Lived, Joyful Life](./books/designing-your-life.md)  
   
   
 ## [📺 Videos](./videos/index.md) (255)  

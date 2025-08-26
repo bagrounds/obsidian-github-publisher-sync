@@ -10,7 +10,8 @@ title: 🏡 Home
 📑 Notes, 💭 thoughts, and 🔗 Links.  
 ❔ What do 🫵 _you_ 🤔 think?  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (284)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (285)  
+- [2025-08-26 | 😇⛰️ Moral Foundations 📚](./reflections/2025-08-26.md)  
 - [2025-08-25 | 😇 Righteous | 💡 Enlightenment | 📜 Confucius 📚](./reflections/2025-08-25.md)  
 - [2025-08-24 | 😇 Righteous | 🏋🏼‍♀️ Masochism 📚🪞](./reflections/2025-08-24.md)  
 - [2025-08-23 | 🤿 Deep | 🐌 Slow | 👍 Good 📚👥](./reflections/2025-08-23.md)  
@@ -20,14 +21,13 @@ title: 🏡 Home
 - [2025-08-19 | 🫀 Recovery | 🇺🇸 American | 🤖 Machines 📄📚📺](./reflections/2025-08-19.md)  
 - [2025-08-18 | 🫀🦮🏋🏼‍♀️ HRV Guided HIFT 📄](./reflections/2025-08-18.md)  
 - [2025-08-17 | 🤡 Distractions | 🔋 Energy 📺](./reflections/2025-08-17.md)  
-- [2025-08-16 | 💍 Engage 📚](./reflections/2025-08-16.md)  
   
   
 ## [📚 Books](./books/index.md) (585)  
+- [😇🧠 The Righteous Mind: Why Good People Are Divided by Politics and Religion](./books/the-righteous-mind.md)  
 - [🍩🌍 Doughnut Economics: Seven Ways to Think Like a 21st-Century Economist](./books/doughnut-economics-seven-ways-to-think-like-a-21st-century-economist.md)  
 - [👤💬 The Analects of Confucius](./books/the-analects-of-confucius.md)  
 - [💡🔬🧑‍🤝‍🧑📈 Enlightenment Now: The Case for Reason, Science, Humanism, and Progress](./books/enlightenment-now-the-case-for-reason-science-humanism-and-progress.md)  
-- [😇🧠 The Righteous Mind: Why Good People Are Divided by Politics and Religion](./books/the-righteous-mind.md)  
 - [🤔🌍📈✅ Factfulness: Ten Reasons We're Wrong About the World - and Why Things Are Better Than You Think](./books/factfulness.md)  
 - [⛔🌎🔚 Not the End of the World: How We Can Be the First Generation to Build a Sustainable Planet](./books/not-the-end-of-the-world.md)  
 - [🤔🧩⚖️ Patterns, Thinking, and Cognition: A Theory of Judgment](./books/patterns-thinking-and-cognition-a-theory-of-judgment.md)  
@@ -37,6 +37,7 @@ title: 🏡 Home
   
   
 ## [📺 Videos](./videos/index.md) (255)  
+- [❓😡🇺🇸🗳️ Why the hell did people vote for Trump? (the answers will shock you)](./videos/why-the-hell-did-people-vote-for-trump-the-answers-will-shock-you.md)  
 - [🤓📈📉⚠️ How to Become an Expert in ANYTHING - The Dunning Kruger Effect](./videos/how-to-become-an-expert-in-anything-the-dunning-kruger-effect.md)  
 - [🪜📈🏢 3 High Leverage Career Skills (From a Principal At Amazon)](./videos/3-high-leverage-career-skills-from-a-principal-at-amazon.md)  
 - [🤖⬇️🧠⏳ How ChatGPT Slowly Destroys Your Brain - Science Confirms It](./videos/how-chatgpt-slowly-destroys-your-brain-science-confirms-it.md)  
@@ -46,15 +47,14 @@ title: 🏡 Home
 - [🌅🧠🚀♾️ This morning routine is scientifically proven to make you limitless](./videos/this-morning-routine-is-scientifically-proven-to-make-you-limitless.md)  
 - [🚫⏳🔓 the secret hack that makes procrastination impossible](./videos/the-secret-hack-that-makes-procrastination-impossible.md)  
 - [😴🧪💯🏆 The scientifically proven best night routine ever](./videos/the-scientifically-proven-best-night-routine-ever.md)  
-- [✨🎯🔒✅ How to make your dreams basically inevitable](./videos/how-to-make-your-dreams-basically-inevitable.md)  
   
   
-## [🌌 Topics](./topics/index.md) (80)  
+## [🌌 Topics](./topics/index.md) (81)  
+- [❤️‍🩹⚖️🤝👑😇🗽 Moral Foundations Theory](./topics/moral-foundations-theory.md)  
 - [🥄👶📚 SpoonFedStudy](./topics/spoonfedstudy.md)  
 - [🌲🪜🧠 A Hierarchical View of Human Knowledge](./topics/a-hierarchical-view-of-human-knowledge.md)  
 - [💻⚙️💡💾 Software Development and Coding](./topics/software-development-and-coding.md)  
 - [🦬🪒 Yak Shaving](./topics/yak-shaving.md)  
-- [💻⚙️🧩🏗️ Software Engineering](./topics/software-engineering.md)  
   
   
 ## [📄  Articles](./articles/index.md) (50)  

@@ -10,7 +10,8 @@ title: 🏡 Home
 📑 Notes, 💭 thoughts, and 🔗 Links.  
 ❔ What do 🫵 _you_ 🤔 think?  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (283)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (284)  
+- [2025-08-25 | 😇 Righteous | 💡 Enlightenment | 📜 Confucius 📚](./reflections/2025-08-25.md)  
 - [2025-08-24 | 😇 Righteous | 🏋🏼‍♀️ Masochism 📚🪞](./reflections/2025-08-24.md)  
 - [2025-08-23 | 🤿 Deep | 🐌 Slow | 👍 Good 📚👥](./reflections/2025-08-23.md)  
 - [2025-08-22 | 🤿 Deep | 📱 Shallow 📚](./reflections/2025-08-22.md)  
@@ -20,20 +21,19 @@ title: 🏡 Home
 - [2025-08-18 | 🫀🦮🏋🏼‍♀️ HRV Guided HIFT 📄](./reflections/2025-08-18.md)  
 - [2025-08-17 | 🤡 Distractions | 🔋 Energy 📺](./reflections/2025-08-17.md)  
 - [2025-08-16 | 💍 Engage 📚](./reflections/2025-08-16.md)  
-- [2025-08-15 | 🔋 Tireless UX 📺📚](./reflections/2025-08-15.md)  
   
   
-## [📚 Books](./books/index.md) (582)  
+## [📚 Books](./books/index.md) (585)  
+- [🍩🌍 Doughnut Economics: Seven Ways to Think Like a 21st-Century Economist](./books/doughnut-economics-seven-ways-to-think-like-a-21st-century-economist.md)  
+- [👤💬 The Analects of Confucius](./books/the-analects-of-confucius.md)  
+- [💡🔬🧑‍🤝‍🧑📈 Enlightenment Now: The Case for Reason, Science, Humanism, and Progress](./books/enlightenment-now-the-case-for-reason-science-humanism-and-progress.md)  
 - [😇🧠 The Righteous Mind: Why Good People Are Divided by Politics and Religion](./books/the-righteous-mind.md)  
+- [🤔🌍📈✅ Factfulness: Ten Reasons We're Wrong About the World - and Why Things Are Better Than You Think](./books/factfulness.md)  
+- [⛔🌎🔚 Not the End of the World: How We Can Be the First Generation to Build a Sustainable Planet](./books/not-the-end-of-the-world.md)  
+- [🤔🧩⚖️ Patterns, Thinking, and Cognition: A Theory of Judgment](./books/patterns-thinking-and-cognition-a-theory-of-judgment.md)  
 - [💼🏆 The Job Closer: Time Saving Techniques for Acing Resumes, Interviews, Negotiations, and More](./books/the-job-closer.md)  
 - [💡📜 Where Good Ideas Come From: The Natural History of Innovation](./books/where-good-ideas-come-from-the-natural-history-of-innovation.md)  
 - [🏗️😊🗺️✨ Designing Your Life: How to Build a Well-Lived, Joyful Life](./books/designing-your-life.md)  
-- [⏳💻💼🎯 The 2-Hour Job Search: Using Technology to Get the Right Job Faster](./books/the-2-hour-job-search.md)  
-- [🚀🧠🏆 Ultralearning: Master Hard Skills, Outsmart the Competition, and Accelerate Your Career](./books/ultralearning-master-hard-skills-outsmart-the-competition-and-accelerate-your-career.md)  
-- [💪❤️ So Good They Can't Ignore You: Why Skills Trump Passion in the Quest for Work You Love](./books/so-good-they-cant-ignore-you-why-skills-trump-passion-in-the-quest-for-work-you-love.md)  
-- [🤿💼 Deep Work: Rules for Focused Success in a Distracted World](./books/deep-work.md)  
-- [🌴🧘🏼‍♀️ Do Nothing: How to Break Away from Overworking, Overdoing, and Underliving](./books/do-nothing-how-to-break-away-from-overworking-overdoing-and-underliving.md)  
-- [😴📈 Rest: Why You Get More Done When You Work Less](./books/rest-why-you-get-more-done-when-you-work-less.md)  
   
   
 ## [📺 Videos](./videos/index.md) (255)  

@@ -14,20 +14,28 @@ CTA: 🤝 Bridge divides.
 [🛒 The Righteous Mind: Why Good People Are Divided by Politics and Religion. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3ZIy2gS)  
   
 ## 📝🐒 Human Notes  
-- 😇👿 We are all self-righteous hypocrites   
+- 😇👿 We are all self-righteous hypocrites  
 - 🐘🤔 Intuitions come first, strategic reasoning second  
-    - Exploratory thought - fair consideration of alternatives  
-        - Prompted when your know you'll be accountable to a discerning audience with unknown views  
-    - Confirmatory thought - one sided attempt to rationalize a point of view  
-    - self esteem is based on our understanding of other people's evaluation of us  
-    - Confirmation Bias - we look for reasons to confirm our instincts, not to refute them  
-    - Can vs must  
-        - Want to believe? Ask: can I?  
-        - Don't want to believe it? Ask: must I?  
-- Western Educated Industrialized Rich Democratic (WEIRD)  
-    - More analytical than relational  
-    - individualistic, rule based, universalist  
--   
+    - 🔎 Exploratory thought - ⚖️ fair consideration of alternatives  
+        - 🗣️ Prompted when you know you'll be accountable to a discerning audience with unknown views  
+    - ✅ Confirmatory thought - ➡️ one sided attempt to rationalize a point of view  
+    - 💖 Self esteem is based on our understanding of other people's evaluation of us  
+    - 🔎✅ Confirmation Bias - 👀 we look for reasons to confirm our instincts, not to refute them  
+    - ⚖️ Can vs must  
+        - 💖 Want to believe? Ask: can I?  
+        - 💔 Don't want to believe it? Ask: must I?  
+- 🌍 Western Educated Industrialized Rich Democratic (WEIRD)  
+    - 🧠 More analytical than relational  
+    - 🧍individualistic, 📜 rule based, 🌐 universalist  
+- ⚖️ 6 Moral Foundations  
+    - ❤️‍🩹 Care / 🤕 Harm  
+    - 🤝 Fairness / 🦹 Cheating  
+    - 🗽 Liberty / ⛓️ Oppression  
+    - 🫂 Loyalty / 💔 Betrayal  
+    - 👑 Authority / 💣 Subversion  
+    - ⛪ Sanctity / 💩 Degradation  
+- 🫏🙈 Democrats appeal to the first 3  
+- 🐘😇 Republicans appeal to all 6  
   
 ### 📚 Books Mentioned  
 - [🤔🧩⚖️ Patterns, Thinking, and Cognition: A Theory of Judgment](./patterns-thinking-and-cognition-a-theory-of-judgment.md)  
@@ -42,7 +50,7 @@ CTA: 🤝 Bridge divides.
 ⚖️ Jonathan Haidt's "The Righteous Mind" ⚖️ delves into the 🧠 psychological origins of morality 🤔 and its role in ➡️ political 🏛️ and religious 🙏 divisions. He argues that 🗣️ moral 😇 reasoning is often ⏰ post-hoc rationalization of pre-existing moral 🤔 intuitions, rather than a purely logical 💡 process.  
   
 #### **📚 Topics and Methods:**  
-* **🧱 Moral Foundations Theory:** 👨‍🏫 Haidt proposes six (originally five) foundational moral values:  
+* **[❤️‍🩹⚖️🤝👑😇🗽 Moral Foundations Theory](../topics/moral-foundations-theory.md):** 👨‍🏫 Haidt proposes six (originally five) foundational moral values:  
     * 🩹 Care/Harm  
     * ⚖️ Fairness/Cheating  
     * 🤝 Loyalty/Betrayal  

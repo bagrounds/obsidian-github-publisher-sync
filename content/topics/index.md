@@ -7,7 +7,7 @@ URL: https://bagrounds.org/topics
 backlinks: false
 ---
 [Home](../index.md)  
-# 🌌 Topics (80)  
+# 🌌 Topics (81)  
 - [⚙️🧠🔄 Adaptive Control](./adaptive-control.md)  
 - [🌲🪜🧠 A Hierarchical View of Human Knowledge](./a-hierarchical-view-of-human-knowledge.md)  
 - [A Method For Estimating Work](./a-method-for-estimating-work.md)  
@@ -56,6 +56,7 @@ backlinks: false
 - [Memory](./memory.md)  
 - [🧠🌍⚙️ Model Context Protocol](./model-context-protocol.md)  
 - [Modern Monetary Theory](./modern-monetary-theory.md)  
+- [❤️‍🩹⚖️🤝👑😇🗽 Moral Foundations Theory](./moral-foundations-theory.md)  
 - [My Resume](./my-resume.md)  
 - [🌳🗺️🔗🏛️ Ontologies](./ontologies.md)  
 - [Philosophy](./philosophy.md)  

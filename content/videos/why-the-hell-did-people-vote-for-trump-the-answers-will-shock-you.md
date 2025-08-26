@@ -4,10 +4,10 @@ aliases:
   - ❓😡🇺🇸🗳️ Why the hell did people vote for Trump? (the answers will shock you)
 title: ❓😡🇺🇸🗳️ Why the hell did people vote for Trump? (the answers will shock you)
 URL: https://bagrounds.org/videos/why-the-hell-did-people-vote-for-trump-the-answers-will-shock-you
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: Vinay Raniga
-tags: 
+tags:
 youtube: https://youtu.be/d08-e8I0xYg
 ---
 [Home](../index.md) > [Videos](./index.md)  
@@ -34,7 +34,7 @@ This video covers several specific issues related to 🗣️ political polarizat
 * 🧠 **Psychological Reasons for Political Choice (Jonathan Haidt's "The Righteous Mind")** \[[10:30](http://www.youtube.com/watch?v=d08-e8I0xYg&t=630)\]:  
     * ❤️‍🔥 **Intuitive vs. Rational Thinking**: Political ideals are often based on intuition and gut feelings, with reasoning used to justify these positions 🧐 \[[11:06](http://www.youtube.com/watch?v=d08-e8I0xYg&t=666)\].  
     * 👥 **Groupishness**: Humans have a natural tendency to form groups with shared beliefs, contributing to the "us versus them" mentality in politics ⚔️ \[[11:58](http://www.youtube.com/watch?v=d08-e8I0xYg&t=718)\].  
-    * 📜 **Moral Foundations Theory**:  
+    * 📜 **[❤️‍🩹⚖️🤝👑😇🗽 Moral Foundations Theory](../topics/moral-foundations-theory.md)**:  
         * 💙 **Left/Democrats**: Emphasize care, fairness, and liberty from oppression \[[12:45](http://www.youtube.com/watch?v=d08-e8I0xYg&t=765)\].  
         * ❤️ **Right/Republicans**: Emphasize loyalty, authority, sanctity, and liberty/freedom from government overreach \[[13:04](http://www.youtube.com/watch?v=d08-e8I0xYg&t=784)\].  
   

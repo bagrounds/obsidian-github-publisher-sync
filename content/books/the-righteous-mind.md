@@ -16,6 +16,23 @@ CTA: 🤝 Bridge divides.
 ## 📝🐒 Human Notes  
 - 😇👿 We are all self-righteous hypocrites   
 - 🐘🤔 Intuitions come first, strategic reasoning second  
+    - Exploratory thought - fair consideration of alternatives  
+        - Prompted when your know you'll be accountable to a discerning audience with unknown views  
+    - Confirmatory thought - one sided attempt to rationalize a point of view  
+    - self esteem is based on our understanding of other people's evaluation of us  
+    - Confirmation Bias - we look for reasons to confirm our instincts, not to refute them  
+    - Can vs must  
+        - Want to believe? Ask: can I?  
+        - Don't want to believe it? Ask: must I?  
+- Western Educated Industrialized Rich Democratic (WEIRD)  
+    - More analytical than relational  
+    - individualistic, rule based, universalist  
+-   
+  
+### 📚 Books Mentioned  
+- [🤔🧩⚖️ Patterns, Thinking, and Cognition: A Theory of Judgment](./patterns-thinking-and-cognition-a-theory-of-judgment.md)  
+- [🔮🤷🏼‍♀️🤪 Predictably Irrational: The Hidden Forces That Shape Our Decisions](./predictably-irrational.md)  
+- [👤💬 The Analects of Confucius](./the-analects-of-confucius.md)  
   
 ## 🤖 AI Summary  
 ### TLDR  
@@ -60,7 +77,7 @@ CTA: 🤝 Bridge divides.
 ### Book Recommendations 📚  
 * **Best Alternate Book on the Same Topic:** [🤔🐇🐢 Thinking, Fast and Slow](./thinking-fast-and-slow.md) by Daniel Kahneman 🧠: Provides a broader understanding of cognitive biases and decision-making, which complements Haidt's work on moral intuition.  
 * **Best Tangentially Related Book:** [📜🌍⏳ Sapiens: A Brief History of Humankind](./sapiens-a-brief-history-of-humankind.md) by Yuval Noah Harari 🌍: Explores the evolutionary and cultural forces that have shaped human societies, providing a broader context for understanding morality and groupishness.  
-* **Best Diametrically Opposed Book:** "Enlightenment Now: The Case for Reason, Science, Humanism, and Progress" by Steven Pinker 💡: While not directly opposed, Pinker emphasizes the power of reason and progress, which contrasts with Haidt's focus on the role of intuition and groupishness.  
+* **Best Diametrically Opposed Book:** [💡🔬🧑‍🤝‍🧑📈 Enlightenment Now: The Case for Reason, Science, Humanism, and Progress](./enlightenment-now-the-case-for-reason-science-humanism-and-progress.md) by Steven Pinker 💡: While not directly opposed, Pinker emphasizes the power of reason and progress, which contrasts with Haidt's focus on the role of intuition and groupishness.  
 * **Best Fiction Book with Related Ideas:** "Lord of the Flies" by William Golding 🏝️: Explores the darker side of human nature and the breakdown of social order, reflecting themes of groupishness and moral foundations.  
 * **Random Book Everyone Should Read:** "The Hitchhiker's Guide to the Galaxy" by Douglas Adams 🌌: A humorous and thought-provoking exploration of the universe, reminding us of the absurdity and wonder of existence.  
   

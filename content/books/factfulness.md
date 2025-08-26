@@ -4,8 +4,8 @@ aliases:
   - "🤔🌍📈✅ Factfulness: Ten Reasons We're Wrong About the World - and Why Things Are Better Than You Think"
 title: "🤔🌍📈✅ Factfulness: Ten Reasons We're Wrong About the World - and Why Things Are Better Than You Think"
 URL: https://bagrounds.org/books/factfulness
-Author: 
-tags: 
+Author:
+tags:
 affiliate link: https://amzn.to/3ZKol1s
 CTA: 💡 Embrace reality.
 ---
@@ -61,11 +61,11 @@ Factfulness argues that we have a dramatically skewed, pessimistic view of the w
   
 ## **Book Recommendations 📚**  
 * **Best Alternate Book on the Same Topic:**  
-    * "Enlightenment Now: The Case for Reason, Science, Humanism, and Progress" by Steven Pinker. This book also argues for progress and uses data to challenge pessimistic views. 💡  
+    * [💡🔬🧑‍🤝‍🧑📈 Enlightenment Now: The Case for Reason, Science, Humanism, and Progress](./enlightenment-now-the-case-for-reason-science-humanism-and-progress.md) by Steven Pinker. This book also argues for progress and uses data to challenge pessimistic views. 💡  
 * **Best Book That Is Tangentially Related:**  
     * [🤔🐇🐢 Thinking, Fast and Slow](./thinking-fast-and-slow.md) by Daniel Kahneman. This book explores the cognitive biases that influence our thinking, providing a deeper understanding of the mental mechanisms behind our skewed worldview. 🧠  
 * **Best Book That Is Diametrically Opposed:**  
-    * "[The Sixth Extinction](./the-sixth-extinction.md): An Unnatural History" by Elizabeth Kolbert. While "Factfulness" emphasizes progress, Kolbert's book highlights the devastating impact of human activity on the planet, offering a starkly different perspective. 🌎  
+    * [💀🌍📉⏳ The Sixth Extinction: An Unnatural History](./the-sixth-extinction.md) by Elizabeth Kolbert. While "Factfulness" emphasizes progress, Kolbert's book highlights the devastating impact of human activity on the planet, offering a starkly different perspective. 🌎  
 * **Best Fiction Book That Incorporates Related Ideas:**  
     * "The Ministry for the Future" by Kim Stanley Robinson. This novel explores the complexities of climate change and the challenges of achieving global progress, showcasing the interplay between data, politics, and human behavior. 🌍📖  
 * **Random Book That Everyone Should Read:**  

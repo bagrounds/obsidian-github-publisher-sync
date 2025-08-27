@@ -36,6 +36,12 @@ CTA: 🤝 Bridge divides.
     - ⛪ Sanctity / 💩 Degradation  
 - 🫏🙈 Democrats appeal to the first 3  
 - 🐘😇 Republicans appeal to all 6  
+- 🐝 The Hive Hypothesis  
+    - 🐒🐝 Humans are 90% Chimp, 10% bee  
+    - Humans are conditional hive creatures  
+    - We can temporarily, ecstatically lose ourselves in something greater than ourselves  
+    - dance, awe in nature, psychedelics  
+    - oxytocin, mirror neurons  
   
 ### 📚 Books Mentioned  
 - [🤔🧩⚖️ Patterns, Thinking, and Cognition: A Theory of Judgment](./patterns-thinking-and-cognition-a-theory-of-judgment.md)  
@@ -88,7 +94,7 @@ CTA: 🤝 Bridge divides.
 * **Best Tangentially Related Book:** [📜🌍⏳ Sapiens: A Brief History of Humankind](./sapiens-a-brief-history-of-humankind.md) by Yuval Noah Harari 🌍: Explores the evolutionary and cultural forces that have shaped human societies, providing a broader context for understanding morality and groupishness.  
 * **Best Diametrically Opposed Book:** [💡🔬🧑‍🤝‍🧑📈 Enlightenment Now: The Case for Reason, Science, Humanism, and Progress](./enlightenment-now-the-case-for-reason-science-humanism-and-progress.md) by Steven Pinker 💡: While not directly opposed, Pinker emphasizes the power of reason and progress, which contrasts with Haidt's focus on the role of intuition and groupishness.  
 * **Best Fiction Book with Related Ideas:** [👦🏝️🐷 Lord of the Flies](./lord-of-the-flies.md) by William Golding 🏝️: Explores the darker side of human nature and the breakdown of social order, reflecting themes of groupishness and moral foundations.  
-* **Random Book Everyone Should Read:** "The Hitchhiker's Guide to the Galaxy" by Douglas Adams 🌌: A humorous and thought-provoking exploration of the universe, reminding us of the absurdity and wonder of existence.  
+* **Random Book Everyone Should Read:** [👍🦮🌌 The Hitchhiker's Guide to the Galaxy](./the-hitchhikers-guide-to-the-galaxy.md) by Douglas Adams 🌌: A humorous and thought-provoking exploration of the universe, reminding us of the absurdity and wonder of existence.  
   
 ## 💬 [Gemini](https://gemini.google.com) Prompt  
 > Summarize the book: The Righteous Mind: Why Good People Are Divided by Politics and Religion. Start the summary with a TLDR - a single statement that conveys a maximum of the useful information provided in the book. Follow this with a deep dive. Catalogue the topics, methods, and research discussed. Be sure to highlight any significant theories, theses, or mental models proposed. Provide a critical analysis of the quality of the information presented, using scientific backing, author credentials, authoritative reviews, and other markers of high quality information as justification. Emphasize practical takeaways. Make the following additional book recommendations: the best alternate book on the same topic, the best book that is tangentially related, the best book that is diametrically opposed, the best fiction book that incorporates related ideas, and a random book that everyone should read. Format your response as markdown, starting at heading level H4, with inline links, for easy copy paste. Use meaningful emojis liberally to enhance readability, especially in headings and as bullets for lists.  

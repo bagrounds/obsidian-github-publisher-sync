@@ -173,7 +173,7 @@ Let's think of some topics very different from Neurogastroenterology/The Microbi
   
 For a book completely dissimilar in topic or perspective from everything we've discussed, how about:  
   
-- _The Hitchhiker's Guide to the Galaxy_ by Douglas Adams. This comedic science fiction novel offers a wildly imaginative and humorous take on the universe, life, and everything in between. It's a complete departure from the scientific and health-focused books we've been exploring, embracing absurdity and philosophical humor. 🚀😂  
+- [👍🦮🌌 The Hitchhiker's Guide to the Galaxy](../books/the-hitchhikers-guide-to-the-galaxy.md) by Douglas Adams. This comedic science fiction novel offers a wildly imaginative and humorous take on the universe, life, and everything in between. It's a complete departure from the scientific and health-focused books we've been exploring, embracing absurdity and philosophical humor. 🚀😂  
   
 This has been another enlightening journey into the world of books! What new territory shall we explore next? 🤔  
   

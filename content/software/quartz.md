@@ -152,7 +152,7 @@ URL: https://bagrounds.org/software/quartz
 - **More Specific:**  
     - "React Explained" by Zac Gordon ⚛️  
 - **Fictional:**  
-    - "The Hitchhiker's Guide to the Galaxy" by Douglas Adams 🚀  
+    - [👍🦮🌌 The Hitchhiker's Guide to the Galaxy](../books/the-hitchhikers-guide-to-the-galaxy.md) by Douglas Adams 🚀  
 - **Rigorous:**  
     - "Introduction to Information Retrieval" by Christopher D. Manning, Prabhakar Raghavan, Hinrich Schütze 🔍  
 - **Accessible:**  

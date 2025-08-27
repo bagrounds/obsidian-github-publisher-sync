@@ -166,7 +166,7 @@ Here's a breakdown:
   
 **Meta Global Exploration:**  
   
-* "The Hitchhiker's Guide to the Galaxy" by Douglas Adams. This book is a work of science fiction humor that is very different from the serious, historical analysis of "Sapiens." It explores the universe with a comedic, philosophical, and often absurd lens. 🌌😂  
+* [👍🦮🌌 The Hitchhiker's Guide to the Galaxy](../books/the-hitchhikers-guide-to-the-galaxy.md) by Douglas Adams. This book is a work of science fiction humor that is very different from the serious, historical analysis of "Sapiens." It explores the universe with a comedic, philosophical, and often absurd lens. 🌌😂  
   
 ## Prompt 3  
 > "The Hitchhiker's Guide to the Galaxy" by Douglas Adams  

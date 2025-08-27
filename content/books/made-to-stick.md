@@ -4,9 +4,10 @@ aliases:
   - "🧠🌱💀 Made to Stick: Why Some Ideas Survive and Others Die"
 title: "🧠🌱💀 Made to Stick: Why Some Ideas Survive and Others Die"
 URL: https://bagrounds.org/books/made-to-stick
-Author: 
-tags: 
+Author:
+tags:
 affiliate link: https://amzn.to/3FEYMIq
+CTA: 📢 Share sticky ideas.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧠🌱💀 Made to Stick: Why Some Ideas Survive and Others Die  
@@ -80,7 +81,7 @@ affiliate link: https://amzn.to/3FEYMIq
 * **Best alternate book on the same topic:** [🍃🧠🤝🏼 Influence: The Psychology of Persuasion](./influence.md) by Robert Cialdini. 🧠 (More focused on persuasion, but overlaps significantly.)  
 * **Best book that is tangentially related:** [🤔🐇🐢 Thinking, Fast and Slow](./thinking-fast-and-slow.md) by Daniel Kahneman. 💭 (Explores cognitive biases and decision-making, relevant to understanding how ideas are processed.)  
 * **Best book that is diametrically opposed:** [⚡🚫💭 Blink: The Power of Thinking Without Thinking](./blink-the-power-of-thinking-without-thinking.md) by Malcolm Gladwell. ⚡ (While both discuss decision-making, "Blink" emphasizes intuition, whereas "Made to Stick" focuses on structured communication.)  
-* **Best fiction book that incorporates related ideas:** "The Hitchhiker's Guide to the Galaxy" by Douglas Adams. 🌌 (Uses unexpected and memorable ideas to create a lasting impact.)  
+* **Best fiction book that incorporates related ideas:** [👍🦮🌌 The Hitchhiker's Guide to the Galaxy](./the-hitchhikers-guide-to-the-galaxy.md) by Douglas Adams. 🌌 (Uses unexpected and memorable ideas to create a lasting impact.)  
 * **Best book that is more general:** [🌐🔗🧠📖 Thinking in Systems: A Primer](./thinking-in-systems.md) by Donella H. Meadows. ⚙️ (Explores systems thinking, a broader framework for understanding complex ideas.)  
 * **Best book that is more specific:** [📖📊📈 Storytelling with Data: A Data Visualization Guide for Business Professionals](./storytelling-with-data-a-data-visualization-guide-for-business-professionals.md) by Cole Nussbaumer Knaflic. 📈 (Focuses on making data-driven ideas stick through visual storytelling.)  
 * **Best book that is more rigorous:** [👉🤏 Nudge: Improving Decisions about Health, Wealth, and Happiness](./nudge.md) by Richard H. Thaler and Cass R. Sunstein. 🧑‍⚖️ (More academic and research-focused, exploring behavioral economics and decision architecture.)  

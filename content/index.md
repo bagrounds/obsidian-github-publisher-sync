@@ -23,17 +23,17 @@ title: 🏡 Home
 - [2025-08-17 | 🤡 Distractions | 🔋 Energy 📺](./reflections/2025-08-17.md)  
   
   
-## [📚 Books](./books/index.md) (586)  
+## [📚 Books](./books/index.md) (587)  
+- [📏🌌 How to Measure Anything: Finding the Value of Intangibles in Business](./books/how-to-measure-anything.md)  
+- [👍🦮🌌 The Hitchhiker's Guide to the Galaxy](./books/the-hitchhikers-guide-to-the-galaxy.md)  
+- [🧠🌱💀 Made to Stick: Why Some Ideas Survive and Others Die](./books/made-to-stick.md)  
+- [🔁🤪 Catch-22](./books/catch-22.md)  
 - [😇🧠 The Righteous Mind: Why Good People Are Divided by Politics and Religion](./books/the-righteous-mind.md)  
 - [👦🏝️🐷 Lord of the Flies](./books/lord-of-the-flies.md)  
 - [🍩🌍 Doughnut Economics: Seven Ways to Think Like a 21st-Century Economist](./books/doughnut-economics-seven-ways-to-think-like-a-21st-century-economist.md)  
 - [👤💬 The Analects of Confucius](./books/the-analects-of-confucius.md)  
 - [💡🔬🧑‍🤝‍🧑📈 Enlightenment Now: The Case for Reason, Science, Humanism, and Progress](./books/enlightenment-now-the-case-for-reason-science-humanism-and-progress.md)  
 - [🤔🌍📈✅ Factfulness: Ten Reasons We're Wrong About the World - and Why Things Are Better Than You Think](./books/factfulness.md)  
-- [⛔🌎🔚 Not the End of the World: How We Can Be the First Generation to Build a Sustainable Planet](./books/not-the-end-of-the-world.md)  
-- [🤔🧩⚖️ Patterns, Thinking, and Cognition: A Theory of Judgment](./books/patterns-thinking-and-cognition-a-theory-of-judgment.md)  
-- [💼🏆 The Job Closer: Time Saving Techniques for Acing Resumes, Interviews, Negotiations, and More](./books/the-job-closer.md)  
-- [💡📜 Where Good Ideas Come From: The Natural History of Innovation](./books/where-good-ideas-come-from-the-natural-history-of-innovation.md)  
   
   
 ## [📺 Videos](./videos/index.md) (255)  
@@ -66,25 +66,25 @@ title: 🏡 Home
   
   
 ## [🤖💬 Bot Chats](./bot-chats/index.md) (42)  
+- [📖 Book 🧭 Explorer 2](./bot-chats/book-explorer-2.md)  
+- [📖 Book 🧭 Explorer 1](./bot-chats/book-explorer-1.md)  
 - [📚🤖💬 RAG and Agents](./bot-chats/rag-and-agents.md)  
 - [📐🔗🤖🧠 Category Theory for AI Engineering](./bot-chats/category-theory-for-ai-engineering.md)  
 - [💃🕺🎶 Learn to Dance](./bot-chats/learn-to-dance.md)  
-- [🤰⏰👶🔮 Forecasting Parenthood](./bot-chats/forecasting-parenthood.md)  
-- [⚛️💡🚀 Atomic Innovation](./bot-chats/atomic-innovation.md)  
   
   
 ## [💾 Software](./software/index.md) (29)  
+- [💎🔬🔍📈 Quartz](./software/quartz.md)  
 - [⛎♉️♊️♋️♌️♍️♎️♏️♐️♑️♒️♓️ Zodios](./software/zodios.md)  
 - [🐍📜🔍✅ Pydantic](./software/pydantic.md)  
 - [❓🧪✅🤔 Hypothesis](./software/hypothesis.md)  
 - [🐍🏎️📦 uv](./software/uv.md)  
-- [💾➕🤝 Git](./software/git.md)  
   
   
-## [👥 People](./people/index.md) (13)  
+## [👥 People](./people/index.md) (14)  
+- [🧠🤝🐘 Jonathan Haidt](./people/jonathan-haidt.md)  
 - [👨‍🏫📚💻🤔 Cal Newport](./people/cal-newport.md)  
 - [😴🧠🌃 Sara C. Mednick](./people/sara-c-mednick.md)  
-- [👨‍🏫🤖 Andrew Ng](./people/andrew-ng.md)  
   
   
 ## 🔗 Profiles  

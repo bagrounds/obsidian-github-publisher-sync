@@ -20,7 +20,7 @@ URL: https://bagrounds.org/people/jonathan-haidt
   
 ✍️ Haidt is also known for his widely-read books that explore these concepts for a general audience:  
   
-* 📚 _The Happiness Hypothesis: Finding Modern Truth in Ancient Wisdom_ (2006): 🧘‍♂️ This book explores the intersection of ancient philosophical ideas and modern psychological research on happiness.  
+* [😀📜 The Happiness Hypothesis: Finding Modern Truth in Ancient Wisdom](../books/the-happiness-hypothesis-finding-modern-truth-in-ancient-wisdom.md) (2006): 🧘‍♂️ This book explores the intersection of ancient philosophical ideas and modern psychological research on happiness.  
 * 😇🧠 [😇🧠 The Righteous Mind: Why Good People Are Divided by Politics and Religion](../books/the-righteous-mind.md) (2012): 🕊️ This book delves into Moral Foundations Theory and applies it to the deep divisions in political and religious life.  
 * 🏫 _The Coddling of the American Mind: How Good Intentions and Bad Ideas Are Setting Up a Generation for Failure_ (2018), co-authored with Greg Lukianoff: 😟 This book examines the rise of "safetyism" and its impact on mental health and viewpoint diversity on college campuses.  
 * 📱 _The Anxious Generation: How the Great Rewiring of Childhood Is Causing an Epidemic of Mental Illness_ (2024): 😢 This book argues that the shift from a play-based to a phone-based childhood, particularly with the advent of smartphones and social media, has contributed to a sharp increase in anxiety and depression among adolescents.  

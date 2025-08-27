@@ -4,9 +4,10 @@ aliases:
   - "📏🌌 How to Measure Anything: Finding the Value of Intangibles in Business"
 title: "📏🌌 How to Measure Anything: Finding the Value of Intangibles in Business"
 URL: https://bagrounds.org/books/how-to-measure-anything
-Author: 
-tags: 
+Author:
+tags:
 affiliate link: https://amzn.to/3ZFNPgs
+CTA: 💰 Quantify uncertainty.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 📏🌌 How to Measure Anything: Finding the Value of Intangibles in Business  
@@ -53,9 +54,9 @@ affiliate link: https://amzn.to/3ZFNPgs
   
 ### Book Recommendations 📚✨  
 * **Best Alternate Book on the Same Topic:** "Thinking in Numbers" by Daniel Tammet. This book explores the beauty and practicality of numbers in everyday life, providing a complementary perspective on quantitative thinking. 🔢🧠  
-* **Best Tangentially Related Book:** "[Thinking, Fast and Slow](./thinking-fast-and-slow.md)" by Daniel Kahneman. This book explores the cognitive biases that can affect decision-making, providing valuable insights into how to improve judgment and reduce errors in measurement. 🧠💡  
+* **Best Tangentially Related Book:** [🤔🐇🐢 Thinking, Fast and Slow](./thinking-fast-and-slow.md) by Daniel Kahneman. This book explores the cognitive biases that can affect decision-making, providing valuable insights into how to improve judgment and reduce errors in measurement. 🧠💡  
 * **Best Diametrically Opposed Book:** "Intuition" by Osho. Osho's work celebrates intuition over analytical thinking, providing a counterpoint to the book's emphasis on measurement and quantification. 🧘‍♂️☯️  
-* **Best Fiction Book That Incorporates Related Ideas:** "The Hitchhiker's Guide to the Galaxy" by Douglas Adams. This humorous science fiction series explores the absurdities of attempting to quantify the universe, providing a satirical take on the challenges of measurement. 🌌😂  
+* **Best Fiction Book That Incorporates Related Ideas:** [👍🦮🌌 The Hitchhiker's Guide to the Galaxy](./the-hitchhikers-guide-to-the-galaxy.md) by Douglas Adams. This humorous science fiction series explores the absurdities of attempting to quantify the universe, providing a satirical take on the challenges of measurement. 🌌😂  
 * **Best More General Book:** [🔮🎨🔬 Superforecasting: The Art and Science of Prediction](./superforecasting-the-art-and-science-of-prediction.md) by Philip E. Tetlock and Dan Gardner. This book delves into the science of prediction and how to improve forecasting accuracy, offering a broader perspective on quantitative thinking. 🔮📈  
 * **Best More Specific Book:** "Applied Bayesian Statistics: With R and OpenBUGS Examples" by Mary Kathryn Cowles. This book provides a rigorous and detailed introduction to Bayesian statistics, offering a deeper dive into the mathematical foundations of the methods discussed in "How to Measure Anything." 💻📊  
 * **Best More Accessible Book:** "[Naked Statistics](./naked-statistics.md): Stripping the Dread from the Data" by Charles Wheelan. This book offers a clear and engaging introduction to statistics, making complex concepts accessible to a wider audience. 📊😊  

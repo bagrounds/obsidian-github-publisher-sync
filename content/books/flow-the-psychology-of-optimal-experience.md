@@ -4,8 +4,8 @@ aliases:
   - "🌊🧘🏼‍♀️🧠📈 Flow: The Psychology of Optimal Experience"
 title: "🌊🧘🏼‍♀️🧠📈 Flow: The Psychology of Optimal Experience"
 URL: https://bagrounds.org/books/flow-the-psychology-of-optimal-experience
-Author: 
-tags: 
+Author:
+tags:
 affiliate link: https://amzn.to/4jrYkLn
 CTA: 🧘🏼‍♀️ Engage fully.
 ---
@@ -56,8 +56,8 @@ Mihaly Csikszentmihalyi's "Flow" shifts the focus from external sources of happi
   
 ### Book Recommendations 📚  
 * **Best Alternate Book on the Same Topic:** "Finding Flow: The Psychology of Engagement with Everyday Life" by Mihaly Csikszentmihalyi. This is a more accessible version of the same ideas. 🔄  
-* **Best Tangentially Related Book:** "[Drive: The Surprising Truth About What Motivates Us](./drive-the-surprising-truth-about-what-motivates-us.md)" by Daniel H. Pink. This book explores intrinsic motivation, which is closely related to flow. 🚗  
-* **Best Diametrically Opposed Book:** "The Happiness Hypothesis: Finding Modern Truth in Ancient Wisdom" by Jonathan Haidt. While Haidt also explores happiness, he emphasizes external factors and ancient philosophical perspectives more than Csikszentmihalyi. ☯️  
+* **Best Tangentially Related Book:** [🏎️⛽ Drive: The Surprising Truth About What Motivates Us](./drive-the-surprising-truth-about-what-motivates-us.md) by Daniel H. Pink. This book explores intrinsic motivation, which is closely related to flow. 🚗  
+* **Best Diametrically Opposed Book:** [😀📜 The Happiness Hypothesis: Finding Modern Truth in Ancient Wisdom](./the-happiness-hypothesis-finding-modern-truth-in-ancient-wisdom.md) by Jonathan Haidt. While Haidt also explores happiness, he emphasizes external factors and ancient philosophical perspectives more than Csikszentmihalyi. ☯️  
 * **Best Fiction Book That Incorporates Related Ideas:** "The Art of Racing in the Rain" by Garth Stein. This novel illustrates the concept of flow through the perspective of a dog observing his race car driver owner. 🏎️  
 * **Best Book That Is More General:** "Stumbling on Happiness" by Daniel Gilbert. Gilbert explores the psychological biases that affect our predictions of happiness. 🧠  
 * **Best Book That Is More Specific:** [🤿💼 Deep Work: Rules for Focused Success in a Distracted World](./deep-work.md) by Cal Newport. This book provides specific strategies for achieving focused work, which is a key component of flow. 💻  

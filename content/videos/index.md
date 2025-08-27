@@ -7,7 +7,7 @@ URL: https://bagrounds.org/videos
 backlinks: false
 ---
 [Home](../index.md)  
-# 📺 Videos (255)  
+# 📺 Videos (257)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
 - [❓💪🔬 12 Questions About Creatine with Stephen Cornish, PhD](./12-questions-about-creatine-w-stephen-cornish-phd.md)  
@@ -22,6 +22,7 @@ backlinks: false
 - [🧠⏳🚀⚡ 4 ADHD Habits to Make 2025 Hyper Productive](./4-adhd-habits-to-make-2025-hyper-productive.md)  
 - [🎨🧱🔄 513 - Why Creatives Have to Build Habits Differently and How to Do It](./513-why-creatives-have-to-build-habits-differently-and-how-to-do-it.md)  
 - [🧠🪜💡🤔⬆️🎓 6 Levels of Thinking Every Student MUST Master](./6-levels-of-thinking-every-student-must-master.md)  
+- [🏛️📉⚠️🎭 A Brittle Administration Inventing a Crime Crisis | Explainer](./a-brittle-administration-inventing-a-crime-crisis-explainer.md)  
 - [👨‍⚖️🇺🇸⚔️🛑 ACLU attorney on suing Trump administration for using wartime authority for deportations](./aclu-attorney-on-suing-trump-administration-for-using-wartime-authority-for-deportations.md)  
 - [🗣️🧑‍💼🌉 A Conversation With California Governor Gavin Newsom](./a-conversation-with-california-governor-gavin-newsom.md)  
 - [⚫😭🇺🇸 A Dark Day for Our Country](./a-dark-day-for-our-country.md)  
@@ -143,6 +144,7 @@ backlinks: false
 - [Pediatrician's Top Tips For Newborn Sleep](./pediatricians-top-tips-for-newborn-sleep.md)  
 - [💰🌊🚧🏛️🪧🚨 Politics Chat, July 10, 2025](./politics-chat-july-10-2025.md)  
 - [🏛️👹👑📜 Politics Chat, July 1, 2025](./politics-chat-july-1-2025.md)  
+- [👨‍⚖️🚫👩🏿‍💼 Power to Fire Lisa Cook? | Explainer](./does-trump-have-the-power-to-fire-lisa-cook-explainer.md)  
 - [Presentation Zen | Garr Reynolds | Talks at Google](./presentation-zen-garr-reynolds-talks-at-google.md)  
 - [📈🪜🚀 Principal Engineer Reveals How To Be Promoted FAST](./principal-engineer-reveals-how-to-be-promoted-fast.md)  
 - [Professor explains why he's leaving Yale for Toronto as colleges react to Trump's threats](./professor-explains-why-hes-leaving-yale-for-toronto-as-colleges-react-to-trumps-threats.md)  

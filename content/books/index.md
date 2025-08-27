@@ -7,7 +7,7 @@ URL: https://bagrounds.org/books
 backlinks: false
 ---
 [Home](../index.md)  
-# 📚 Books (586)  
+# 📚 Books (589)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)  
 - [🧑‍🤝‍🧑📈 10 to 25: The Science of Motivating Young People: A Groundbreaking Approach to Leading the Next Generation - And Making Your Own Life Easier](./10-to-25-the-science-of-motivating-young-people-a-groundbreaking-approach-to-leading-the-next-generation-and-making-your-own-life-easier.md)  
@@ -463,8 +463,10 @@ Feedback Control of Dynamic Systems]]
 - [📈⚙️♾️ The Goal: A Process of Ongoing Improvement](./the-goal.md)  
 - [🌍🏛️ The Great Transformation: The Political and Economic Origins of Our Time](./the-great-transformation-the-political-and-economic-origins-of-our-time.md)  
 - [👶😊😴 The Happiest Baby on the Block: The New Way to Calm Crying and Help Your Newborn Baby Sleep Longer](./the-happiest-baby-on-the-block.md)  
+- [😀📜 The Happiness Hypothesis: Finding Modern Truth in Ancient Wisdom](./the-happiness-hypothesis-finding-modern-truth-in-ancient-wisdom.md)  
 - [🤕⚕️ The Headache Handbook: Diagnosis and Treatment](./the-headache-handbook-diagnosis-and-treatment.md)  
 - [🕵️🌐 The Hidden Psychology of Social Networks: How Brands Create Authentic Engagement by Understanding What Motivates Us](./the-hidden-psychology-of-social-networks.md)  
+- [👍🦮🌌 The Hitchhiker's Guide to the Galaxy](./the-hitchhikers-guide-to-the-galaxy.md)  
 - [🏡🍎🌳 The Home Orchard: Growing Your Own Deciduous Fruit and Nut Trees](./the-home-orchard-growing-your-own-deciduous-fruit-and-nut-trees.md)  
 - [😊🧠📈🎯 The How of Happiness: A Scientific Approach to Getting the Life You Want](./the-how-of-happiness-a-scientific-approach-to-getting-the-life-you-want.md)  
 - [💯💻 The Hundred-Page Language Models Book: hands-on with PyTorch](./the-hundred-page-language-models-book-hands-on-with-pytorch-.md)  
@@ -499,6 +501,7 @@ Feedback Control of Dynamic Systems]]
 - [👥⚔️🏛️ The People vs. Democracy: Why Our 🗽 Freedom Is in ⚠️ Danger and How to Save It](./the-people-vs-democracy.md)  
 - [👶🤔❤️ The Philosophical Baby: What Children's Minds Tell Us About Truth, Love, and the Meaning of Life](./the-philosophical-baby-what-childrens-minds-tell-us-about-truth-love-and-the-meaning-of-life.md)  
 - [🐦‍🔥💻 The Phoenix Project](./the-phoenix-project.md)  
+- [💪🏛️ The Power and Independence of the Federal Reserve](./the-power-and-independence-of-the-federal-reserve.md)  
 - [🔋📈 The Power of Full Engagement: Managing Energy, Not Time, Is the Key to High Performance and Personal Renewal](./the-power-of-full-engagement-managing-energy-not-time-is-the-key-to-high-performance-and-personal-renewal.md)  
 - [🔄🧠💪 The Power of Habit: Why We Do What We Do in Life and Business](./the-power-of-habit.md)  
 - [🔑🧭❤️ The Power of Meaning: Crafting a Life That Matters](./the-power-of-meaning.md)  

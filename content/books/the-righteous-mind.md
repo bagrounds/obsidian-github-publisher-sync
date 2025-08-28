@@ -16,6 +16,7 @@ CTA: 🤝 Bridge divides.
 ## 📝🐒 Human Notes  
 - 😇👿 We are all self-righteous hypocrites  
 - 🪢🙈 Morality binds and blinds  
+- 💰🧬 Transactional vs transformational leadership  
 - 🐘🤔 Intuitions come first, strategic reasoning second  
     - 🔎 Exploratory thought - ⚖️ fair consideration of alternatives  
         - 🗣️ Prompted when you know you'll be accountable to a discerning audience with unknown views  

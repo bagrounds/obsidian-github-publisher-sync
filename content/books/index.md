@@ -7,7 +7,7 @@ URL: https://bagrounds.org/books
 backlinks: false
 ---
 [Home](../index.md)  
-# 📚 Books (589)  
+# 📚 Books (591)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)  
 - [🧑‍🤝‍🧑📈 10 to 25: The Science of Motivating Young People: A Groundbreaking Approach to Leading the Next Generation - And Making Your Own Life Easier](./10-to-25-the-science-of-motivating-young-people-a-groundbreaking-approach-to-leading-the-next-generation-and-making-your-own-life-easier.md)  
@@ -57,6 +57,7 @@ backlinks: false
 - [🔙🛠️ Back Mechanic](./back-mechanic.md)  
 - [➕🎲👀👶 Bayes' Theorem Examples: A Visual Introduction For Beginners](./bayes-theorem-examples.md)  
 - [💃➡️ Beginning Modern Dance](./beginning-modern-dance.md)  
+- [😇😈 Behave: The Biology of Humans at Our Best and Worst](./behave-the-biology-of-humans-at-our-best-and-worst.md)  
 - [👤🧠 Being You: A New Science of Consciousness](./being-you-a-new-science-of-consciousness.md)  
 - [📉➡️👍 Better Than Before: What I Learned About Making and Breaking Habits - to Sleep More, Quit Sugar, Procrastinate Less, and Generally Build a Happier Life](./better-than-before.md)  
 - [⚛️🌎 Beyond Weird: Why Everything You Thought You Knew about Quantum Physics Is Different](./beyond-weird.md)  
@@ -446,6 +447,7 @@ Feedback Control of Dynamic Systems]]
 - [📈➕ The Compound Effect](./the-compound-effect.md)  
 - [✨🎭🧘‍♂️🌌 The Creative Act: A Way of Being](./the-creative-act.md)  
 - [💡🌱♾️ The Creative Habit: Learn It and Use It for Life](./the-creative-habit.md)  
+- [🧘🏼‍♀️📅 The Daily Stoic: 366 Meditations on Wisdom, Perseverance, and the Art of Living](./the-daily-stoic-366-meditations-on-wisdom-perseverance-and-the-art-of-living.md)  
 - [🌅🧑‍🤝‍🧑🌍 The Dawn of Everything: A New History of Humanity](./the-dawn-of-everything.md)  
 - [💰📉➡️📈🗳️ The Deficit Myth: Modern Monetary Theory and the Birth of the People's Economy](./the-deficit-myth.md)  
 - [🏢📋🐒🪒🤼‍♂️ The Delicate Art of Bureaucracy: Digital Transformation with the Monkey, the Razor, and the Sumo Wrestler](./the-delicate-art-of-bureaucracy.md)  

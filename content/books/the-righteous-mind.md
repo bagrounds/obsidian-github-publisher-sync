@@ -15,6 +15,7 @@ CTA: 🤝 Bridge divides.
   
 ## 📝🐒 Human Notes  
 - 😇👿 We are all self-righteous hypocrites  
+- 🪢🙈 Morality binds and blinds  
 - 🐘🤔 Intuitions come first, strategic reasoning second  
     - 🔎 Exploratory thought - ⚖️ fair consideration of alternatives  
         - 🗣️ Prompted when you know you'll be accountable to a discerning audience with unknown views  
@@ -38,16 +39,17 @@ CTA: 🤝 Bridge divides.
 - 🐘😇 Republicans appeal to all 6  
 - 🐝 The Hive Hypothesis  
     - 🐒🐝 Humans are 90% Chimp, 10% bee  
-    - Humans are conditional hive creatures  
-    - We can temporarily, ecstatically lose ourselves in something greater than ourselves  
-    - dance, awe in nature, psychedelics  
-    - oxytocin, mirror neurons  
+    - 🧬 Humans are conditional 🐝 hive creatures  
+    - ⏱️ We can temporarily, 🤩 ecstatically lose ourselves in something greater than ourselves, like a collective consciousness or shared experience. 🤯  
+    - 💃 dance, 🏞️ awe in nature, 🍄 psychedelics  
+    - 🥰 oxytocin, 🪞 mirror neurons 😊. The way our brains are wired contributes to our hive mentality.  
   
 ### 📚 Books Mentioned  
 - [🤔🧩⚖️ Patterns, Thinking, and Cognition: A Theory of Judgment](./patterns-thinking-and-cognition-a-theory-of-judgment.md)  
 - [🔮🤷🏼‍♀️🤪 Predictably Irrational: The Hidden Forces That Shape Our Decisions](./predictably-irrational.md)  
 - [👤💬 The Analects of Confucius](./the-analects-of-confucius.md)  
 - [👤🧬 The Selfish Gene](./the-selfish-gene.md)  
+- [🎳🏘️📉📈 Bowling Alone: The Collapse and Revival of American Community](./bowling-alone.md)  
   
 ## 🤖 AI Summary  
 ### TLDR  

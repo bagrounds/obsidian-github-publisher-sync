@@ -10,7 +10,7 @@ Channel: Talks at Google
 tags:
 youtube: https://youtu.be/2APK3tlPL_0
 ---
-[Home](../index.md) > [Videos](./index.md) | [🧠🤝🐘 Jonathan Haidt](../people/jonathan-haidt.md)  
+[Home](../index.md) > [Videos](./index.md) | [😇🧠 The Righteous Mind: Why Good People Are Divided by Politics and Religion](../books/the-righteous-mind.md)  
 # 😇🧠⚖️ The Righteous Mind | Jonathan Haidt | Talks at Google  
 ![The Righteous Mind | Jonathan Haidt | Talks at Google](https://youtu.be/2APK3tlPL_0)  
   

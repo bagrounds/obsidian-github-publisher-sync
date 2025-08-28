@@ -62,7 +62,7 @@ Raworth outlines seven key shifts in economic thinking to achieve the goal of li
   
 **🎨 Creatively Related (Broader Thinking on Systems, Nature & Society):**  
   
-* 🔄 **"[Thinking in Systems](./thinking-in-systems.md): A Primer" by Donella H. Meadows:** An accessible introduction to systems thinking, which is a core element of Raworth's approach to understanding the economy.  
+* **[🌐🔗🧠📖 Thinking in Systems: A Primer](./thinking-in-systems.md) by Donella H. Meadows:** An accessible introduction to systems thinking, which is a core element of Raworth's approach to understanding the economy.  
 * **[🪢🌾 Braiding Sweetgrass: Indigenous Wisdom, Scientific Knowledge, and the Teachings of Plants](./braiding-sweetgrass.md) by Robin Wall Kimmerer:** Offers indigenous perspectives on humanity's relationship with the natural world, emphasizing reciprocity and respect – a cultural underpinning for regenerative economies.  
 * 🔥 **"The Uninhabitable Earth: Life After Warming" by David Wallace-Wells:** A stark look at the potential consequences of climate change, reinforcing the urgency of respecting ecological ceilings.  
 * 🫂 **"Humankind: A Hopeful History" by Rutger Bregman:** Challenges the cynical view of human nature often embedded in traditional economics (the "rational economic man"), aligning with Raworth's call to nurture a more complex and cooperative understanding of humanity.  

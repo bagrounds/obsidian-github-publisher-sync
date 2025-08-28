@@ -5,15 +5,15 @@ aliases:
 title: Functional Finance
 URL: https://bagrounds.org/topics/functional-finance
 ---
-[Home](../index.md) > [Topics](./index.md) > [Knowledge](./a-hierarchical-view-of-human-knowledge.md) > [Social Sciences](./social-sciences.md) > [Economics](./economics.md) > [Heterodox Economics](./heterodox-economics.md) > [Modern Monetary Theory](./modern-monetary-theory.md)  
+[Home](../index.md) > [Topics](./index.md) > [Knowledge](./a-hierarchical-view-of-human-knowledge.md) > [Social Sciences](./social-sciences.md) > [Economics](./economics.md) > [Heterodox Economics](./heterodox-economics.md) > [🏦♾️📈💸 Modern Monetary Theory](./modern-monetary-theory.md)  
 # Functional Finance  
 ## 🤖 AI Summary  
 **High-Level Summary:**  
 Functional Finance, a macroeconomic theory, posits that governments should prioritize achieving specific economic goals (like full employment and price stability) over maintaining a balanced budget. ⚖️ It argues that fiscal policy should be used to regulate the economy, with the budget being a tool to achieve those goals, rather than an end in itself. Essentially, "finance" should "function" to serve the economy, not the other way around. 💡 It emphasizes that a sovereign government, which issues its own currency, is not constrained by revenue in the same way as a household or a business. 💰 Instead, its primary limit is real resource availability and inflation. 📈  
   
 **Subcategories:**  
-1.  **[Modern Monetary Theory](./modern-monetary-theory.md) (MMT):** 🔄 This is the most prominent contemporary manifestation of Functional Finance. It emphasizes that a sovereign currency issuer can always create the necessary money to meet its spending obligations. It focuses on the role of taxes in driving currency demand and controlling inflation. 📊  
-2.  **[Job Guarantee / Employer of Last Resort](./job-guarantee-employer-of-last-resort.md):** 👷‍♀️ This policy proposal, often associated with MMT, advocates for a government-funded program that guarantees employment to anyone willing and able to work. It aims to stabilize employment and prices by acting as a buffer stock of labor. 🛠️  
+1.  **[🏦♾️📈💸 Modern Monetary Theory](./modern-monetary-theory.md) (MMT):** 🔄 This is the most prominent contemporary manifestation of Functional Finance. It emphasizes that a sovereign currency issuer can always create the necessary money to meet its spending obligations. It focuses on the role of taxes in driving currency demand and controlling inflation. 📊  
+2.  **[🧑‍💼🛡️ Job Guarantee / Employer of Last Resort](./job-guarantee-employer-of-last-resort.md):** 👷‍♀️ This policy proposal, often associated with MMT, advocates for a government-funded program that guarantees employment to anyone willing and able to work. It aims to stabilize employment and prices by acting as a buffer stock of labor. 🛠️  
 3.  **Fiscal Policy as a Primary Tool:** 📈 Functional Finance places fiscal policy (government spending and taxation) at the forefront of economic management. It argues that monetary policy (interest rates, etc.) is secondary and less effective in achieving desired economic outcomes. 🎯  
 4.  **Sovereign Currency Operations:** 🏦 This area focuses on how a government with a sovereign currency actually operates its fiscal and monetary policy. It analyzes the mechanics of treasury operations, central bank actions, and the interactions between them. ⚙️  
   

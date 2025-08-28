@@ -7,7 +7,9 @@ URL: https://bagrounds.org/reflections
 backlinks: false
 ---
 [Home](../index.md)  
-# 🪞 Reflections (285)  
+# 🪞 Reflections (287)  
+- [2025-08-28 | 👉 Right | 🐒 Behave 📺📚](./2025-08-28.md)  
+- [2025-08-27 | ☺️ Happy | 😶 Stoic 📚](./2025-08-27.md)  
 - [2025-08-26 | 😇⛰️ Moral Foundations | ⛓️‍💥 Brittle 📚🌌👥📺✍️](./2025-08-26.md)  
 - [2025-08-25 | 😇 Righteous | 💡 Enlightenment | 📜 Confucius 📚](./2025-08-25.md)  
 - [2025-08-24 | 😇 Righteous | 🏋🏼‍♀️ Masochism 📚🪞](./2025-08-24.md)  

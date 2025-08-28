@@ -19,10 +19,10 @@ Heterodox economics is a diverse and critical body of economic thought that chal
 * **Ecological Economics:** 🌿 Addresses the relationship between the economy and the environment.  
 * **Social Economics:** 🧑‍🤝‍🧑 Focuses on the ethical and social dimensions of economic activity.  
 * **Austrian Economics:** 🇦🇹 Emphasizes individual action, subjective value, and market processes.  
-* **[Modern Monetary Theory](./modern-monetary-theory.md) (MMT):** 💰 Challenges conventional views of government finance, arguing that a sovereign currency issuer is not constrained by revenue in the same way as a household. It argues the real limit is inflation.  
+* **[🏦♾️📈💸 Modern Monetary Theory](./modern-monetary-theory.md) (MMT):** 💰 Challenges conventional views of government finance, arguing that a sovereign currency issuer is not constrained by revenue in the same way as a household. It argues the real limit is inflation.  
   
 **Book Recommendations:**  
-1.  **"23 Things They Don't Tell You About Capitalism" by Ha-Joon Chang:** 📖 A critique of mainstream economic assumptions, accessible to a wide audience.  
+1.  **[🤫🤑 23 Things They Don't Tell You About Capitalism](../books/23-things-they-dont-tell-you-about-capitalism.md) by Ha-Joon Chang:** 📖 A critique of mainstream economic assumptions, accessible to a wide audience.  
 2.  **[🏛️💰 Debt: The First 5,000 Years](../books/debt-the-first-5000-years.md) by David Graeber:** 📜 A historical analysis of debt and its role in shaping societies.  
 3.  **"The General Theory of Employment, Interest and Money" by John Maynard Keynes:** 🔑 A foundational text of Post-Keynesian economics.  
 4.  **"[Capital in the Twenty First Century](../books/capital-in-the-twenty-first-century.md)" by Thomas Piketty:** 📈 An analysis of long-term trends in wealth and income inequality.  

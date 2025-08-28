@@ -7,7 +7,7 @@ URL: https://bagrounds.org/videos
 backlinks: false
 ---
 [Home](../index.md)  
-# 📺 Videos (257)  
+# 📺 Videos (259)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
 - [❓💪🔬 12 Questions About Creatine with Stephen Cornish, PhD](./12-questions-about-creatine-w-stephen-cornish-phd.md)  
@@ -195,6 +195,8 @@ backlinks: false
 - [🧠💰⚠️ The price you pay for being smart It's Been a Minute](./the-price-you-pay-for-being-smart-its-been-a-minute.md)  
 - [📉🎶👎 The Real Reason Why Music Is Getting Worse](./the-real-reason-why-music-is-getting-worse.md)  
 - [🌅🧠🗝️🚀📈 The Remarkable Morning Method: 5 Ways to Unlock Your Best Mental State](./the-remarkable-morning-method-5-ways-to-unlock-your-best-mental-state.md)  
+- [😇🧠⚖️ The Righteous Mind by Jonathan Haidt (BOOK INSIGHTS)](./the-righteous-mind-by-jonathan-haidt-book-insights.md)  
+- [😇🧠⚖️ The Righteous Mind | Jonathan Haidt | Talks at Google](./the-righteous-mind-jonathan-haidt-talks-at-google.md)  
 - [❤️‍🔥🏋️🏃 The Role of High-Intensity Interval Training and Strength Training in Cardiovascular Health](./the-role-of-high-intensity-interval-training-and-strength-training-in-cardiovascular-health.md)  
 - [😴🧪💯🏆 The scientifically proven best night routine ever](./the-scientifically-proven-best-night-routine-ever.md)  
 - [🤫🌱🗣️ The Secret Form of Resistance No One Talks About](./the-secret-form-of-resistance-no-one-talks-about.md)  

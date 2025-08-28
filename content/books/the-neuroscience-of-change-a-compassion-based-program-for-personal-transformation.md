@@ -5,6 +5,7 @@ aliases:
 URL: https://bagrounds.org/books/the-neuroscience-of-change-a-compassion-based-program-for-personal-transformation
 share: true
 affiliate link: https://amzn.to/4dJ4sxD
+CTA: 🧠 Cultivate inner peace.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧠❤️🔄 The Neuroscience of Change: A Compassion-Based Program for Personal Transformation  
@@ -63,9 +64,9 @@ affiliate link: https://amzn.to/4dJ4sxD
 * **[⬆️💪 The Upside of Stress: Why Stress Is Good for You, and How to Get Good at It](./the-upside-of-stress-why-stress-is-good-for-you-and-how-to-get-good-at-it.md)** by Kelly McGonigal: Reframes stress, using science to show how changing your mindset about stress can make you healthier and more resilient 💪.  
 * 💖 **Self-Compassion: The Proven Power of Being Kind to Yourself** by Kristin Neff: A foundational book on self-compassion, explaining the core concepts (self-kindness, common humanity, mindfulness) and their benefits, aligning well with McGonigal's compassion focus.  
 * ✍️ **The Mindful Self-Compassion Workbook** by Kristin Neff & Christopher Germer: A practical workbook based on their evidence-based 8-week program, offering exercises to build self-compassion skills.  
-* **[⚛️🔄 Atomic Habits](./atomic-habits.md): An Easy & Proven Way to Build Good Habits & Break Bad Ones** by James Clear: Focuses on the science of habit formation through small, incremental changes, overlapping with the practical change aspects.  
-* 🔄 **[The Brain That Changes Itself](./the-brain-that-changes-itself.md): Stories of Personal Triumph from the Frontiers of Brain Science** by Norman Doidge: Presents compelling stories of neuroplasticity in action, illustrating the brain's capacity for change.  
-* 🧬 **Behave: The Biology of Humans at Our Best and Worst** by Robert M. Sapolsky: A deep dive into the biological and neurological underpinnings of human behavior, for those wanting more in-depth science 🔬.  
+* **[⚛️🔄 Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones](./atomic-habits.md)** by James Clear: Focuses on the science of habit formation through small, incremental changes, overlapping with the practical change aspects.  
+* **[🧠🔄🏆 The Brain That Changes Itself: Stories of Personal Triumph from the Frontiers of Brain Science](./the-brain-that-changes-itself.md)** by Norman Doidge: Presents compelling stories of neuroplasticity in action, illustrating the brain's capacity for change.  
+* **[😇😈 Behave: The Biology of Humans at Our Best and Worst](./behave-the-biology-of-humans-at-our-best-and-worst.md)** by Robert M. Sapolsky: A deep dive into the biological and neurological underpinnings of human behavior, for those wanting more in-depth science 🔬.  
 * 👁️ **Mindsight: The New Science of Personal Transformation** by Daniel Siegel: Explores how understanding our own minds (mindsight) can lead to healing and transformation, integrating neuroscience and mindfulness.  
 * 🔄 **Rewire: Change Your Brain to Break Bad Habits, Overcome Addictions, Conquer Self-Destructive Behavior** by Richard O'Connor (mentioned in a list of thought-provoking non-fiction): Focuses specifically on using brain science to overcome negative patterns.  
   

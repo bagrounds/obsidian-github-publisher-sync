@@ -52,6 +52,9 @@ CTA: 🤝 Bridge divides.
 - [👤🧬 The Selfish Gene](./the-selfish-gene.md)  
 - [🎳🏘️📉📈 Bowling Alone: The Collapse and Revival of American Community](./bowling-alone.md)  
   
+### 🔗 Links  
+- 🧭 [YourMorals.org](https://yourmorals.org)  
+  
 ## 🤖 AI Summary  
 ### TLDR  
 🤔 Human morality is built on 🧠 evolved psychological foundations that 🧍 vary across individuals and 🤝 political groups, leading to 💔 deep divisions rooted in 🧭 differing moral intuitions rather than 💡 solely in reason or 📰 facts.  

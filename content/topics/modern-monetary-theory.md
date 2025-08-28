@@ -1,12 +1,12 @@
 ---
 share: true
 aliases:
-  - Modern Monetary Theory
-title: Modern Monetary Theory
+  - 🏦♾️📈💸 Modern Monetary Theory
+title: 🏦♾️📈💸 Modern Monetary Theory
 URL: https://bagrounds.org/topics/modern-monetary-theory
 ---
 [Home](../index.md) > [Topics](./index.md) > [Knowledge](./a-hierarchical-view-of-human-knowledge.md) > [Social Sciences](./social-sciences.md) > [Economics](./economics.md) > [Heterodox Economics](./heterodox-economics.md)  
-# Modern Monetary Theory  
+# 🏦♾️📈💸 Modern Monetary Theory  
 ## 🤖 AI Summary  
 **High-Level Summary:**  
 Modern Monetary Theory (MMT) is a macroeconomic theory that challenges conventional views about how a government with sovereign currency (meaning it prints its own money) should manage its finances. 💰 MMT argues that such a government is not constrained by revenue in the same way as a household or a business. Instead, its primary constraint is real resources (like labor and materials) and inflation. 📈 The central idea is that a sovereign government can always create money to pay for its spending, and the real question is how to manage that spending to achieve full employment and price stability. ⚖️ MMT emphasizes the role of fiscal policy (government spending and taxation) over monetary policy (interest rates) in managing the economy. 🌐  
@@ -14,7 +14,7 @@ Modern Monetary Theory (MMT) is a macroeconomic theory that challenges conventio
 **Subcategories:**  
 1.  **Sovereign Currency Operations:** 🏦 This subcategory focuses on the mechanics of how a government with a sovereign currency operates. It examines how money is created, how government spending and taxation interact, and the implications of these operations for the economy. It explains that taxes are not primarily for funding spending, but for regulating demand and creating demand for the currency itself. 📝  
 2.  **[Functional Finance](./functional-finance.md):** 📊 This branch emphasizes that government spending and taxation should be evaluated based on their functional effects on the economy, rather than traditional notions of "balanced budgets." The primary goal is to maintain full employment and price stability. 🎯  
-3.  **[Job Guarantee / Employer of Last Resort](./job-guarantee-employer-of-last-resort.md):** 💼 This is a key policy proposal associated with MMT. It suggests that the government should guarantee a job to anyone willing and able to work at a minimum wage. This would act as an automatic stabilizer, ensuring full employment and controlling inflation. 👷‍♀️👷‍♂️  
+3.  **[🧑‍💼🛡️ Job Guarantee / Employer of Last Resort](./job-guarantee-employer-of-last-resort.md):** 💼 This is a key policy proposal associated with MMT. It suggests that the government should guarantee a job to anyone willing and able to work at a minimum wage. This would act as an automatic stabilizer, ensuring full employment and controlling inflation. 👷‍♀️👷‍♂️  
 4.  **Fiscal Policy Dominance:** 🏛️ MMT highlights the importance of fiscal policy over monetary policy. It argues that government spending and taxation are more effective tools for managing the economy than interest rate adjustments by central banks. 📣  
 5.  **Inflation Management:** 📉 MMT addresses concerns about inflation by arguing that it is primarily caused by real resource constraints, not simply by government spending. It suggests that inflation can be managed through fiscal policy, including taxation and targeted spending programs. 🛑  
   

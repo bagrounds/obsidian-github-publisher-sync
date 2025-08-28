@@ -10,7 +10,9 @@ title: 🏡 Home
 📑 Notes, 💭 thoughts, and 🔗 Links.  
 ❔ What do 🫵 _you_ 🤔 think?  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (285)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (287)  
+- [2025-08-28 | 👉 Right | 🐒 Behave 📺📚](./reflections/2025-08-28.md)  
+- [2025-08-27 | ☺️ Happy | 😶 Stoic 📚](./reflections/2025-08-27.md)  
 - [2025-08-26 | 😇⛰️ Moral Foundations | ⛓️‍💥 Brittle 📚🌌👥📺✍️](./reflections/2025-08-26.md)  
 - [2025-08-25 | 😇 Righteous | 💡 Enlightenment | 📜 Confucius 📚](./reflections/2025-08-25.md)  
 - [2025-08-24 | 😇 Righteous | 🏋🏼‍♀️ Masochism 📚🪞](./reflections/2025-08-24.md)  
@@ -19,24 +21,24 @@ title: 🏡 Home
 - [2025-08-21 | 🥄 SpoonFed | 🤯 What? 🌌📺](./reflections/2025-08-21.md)  
 - [2025-08-20 | ➰ In the Loop 📚📄](./reflections/2025-08-20.md)  
 - [2025-08-19 | 🫀 Recovery | 🇺🇸 American | 🤖 Machines 📄📚📺](./reflections/2025-08-19.md)  
-- [2025-08-18 | 🫀🦮🏋🏼‍♀️ HRV Guided HIFT 📄](./reflections/2025-08-18.md)  
-- [2025-08-17 | 🤡 Distractions | 🔋 Energy 📺](./reflections/2025-08-17.md)  
   
   
-## [📚 Books](./books/index.md) (588)  
-- [💪🏛️ The Power and Independence of the Federal Reserve](./books/the-power-and-independence-of-the-federal-reserve.md)  
-- [📏🌌 How to Measure Anything: Finding the Value of Intangibles in Business](./books/how-to-measure-anything.md)  
-- [👍🦮🌌 The Hitchhiker's Guide to the Galaxy](./books/the-hitchhikers-guide-to-the-galaxy.md)  
-- [🧠🌱💀 Made to Stick: Why Some Ideas Survive and Others Die](./books/made-to-stick.md)  
-- [🔁🤪 Catch-22](./books/catch-22.md)  
+## [📚 Books](./books/index.md) (591)  
+- [😇😈 Behave: The Biology of Humans at Our Best and Worst](./books/behave-the-biology-of-humans-at-our-best-and-worst.md)  
+- [🧠❤️🔄 The Neuroscience of Change: A Compassion-Based Program for Personal Transformation](./books/the-neuroscience-of-change-a-compassion-based-program-for-personal-transformation.md)  
+- [🙏❤️ Ritual: How Seemingly Senseless Acts Make Life Worth Living](./books/ritual-how-seemingly-senseless-acts-make-life-worth-living.md)  
+- [🤫🧠 Subliminal: How Your Unconscious Mind Rules Your Behavior](./books/subliminal-how-your-unconscious-mind-rules-your-behavior.md)  
+- [🦓 Why Zebras Don't Get Ulcers: The Acclaimed Guide to Stress, Stress-Related Disease, and Coping](./books/why-zebras-dont-get-ulcers.md)  
 - [😇🧠 The Righteous Mind: Why Good People Are Divided by Politics and Religion](./books/the-righteous-mind.md)  
-- [👦🏝️🐷 Lord of the Flies](./books/lord-of-the-flies.md)  
-- [🍩🌍 Doughnut Economics: Seven Ways to Think Like a 21st-Century Economist](./books/doughnut-economics-seven-ways-to-think-like-a-21st-century-economist.md)  
-- [👤💬 The Analects of Confucius](./books/the-analects-of-confucius.md)  
-- [💡🔬🧑‍🤝‍🧑📈 Enlightenment Now: The Case for Reason, Science, Humanism, and Progress](./books/enlightenment-now-the-case-for-reason-science-humanism-and-progress.md)  
+- [🤔🧘 Meditations](./books/meditations.md)  
+- [🧘🏼‍♀️📅 The Daily Stoic: 366 Meditations on Wisdom, Perseverance, and the Art of Living](./books/the-daily-stoic-366-meditations-on-wisdom-perseverance-and-the-art-of-living.md)  
+- [🔬🧘🏼‍♀️🧠 Altered Traits: Science Reveals How Meditation Changes Your Mind, Brain, and Body](./books/altered-traits-science-reveals-how-meditation-changes-your-mind-brain-and-body.md)  
+- [😊🧠 Satisfaction: The Science of Finding True Fulfillment](./books/satisfaction-the-science-of-finding-true-fulfillment.md)  
   
   
-## [📺 Videos](./videos/index.md) (257)  
+## [📺 Videos](./videos/index.md) (259)  
+- [😇🧠⚖️ The Righteous Mind by Jonathan Haidt (BOOK INSIGHTS)](./videos/the-righteous-mind-by-jonathan-haidt-book-insights.md)  
+- [😇🧠⚖️ The Righteous Mind | Jonathan Haidt | Talks at Google](./videos/the-righteous-mind-jonathan-haidt-talks-at-google.md)  
 - [👨‍⚖️🚫👩🏿‍💼 Power to Fire Lisa Cook? | Explainer](./videos/does-trump-have-the-power-to-fire-lisa-cook-explainer.md)  
 - [🏛️📉⚠️🎭 A Brittle Administration Inventing a Crime Crisis | Explainer](./videos/a-brittle-administration-inventing-a-crime-crisis-explainer.md)  
 - [❓😡🇺🇸🗳️ Why the hell did people vote for Trump? (the answers will shock you)](./videos/why-the-hell-did-people-vote-for-trump-the-answers-will-shock-you.md)  
@@ -45,8 +47,6 @@ title: 🏡 Home
 - [🤖⬇️🧠⏳ How ChatGPT Slowly Destroys Your Brain - Science Confirms It](./videos/how-chatgpt-slowly-destroys-your-brain-science-confirms-it.md)  
 - [🗣️🧑‍💼🌉 A Conversation With California Governor Gavin Newsom](./videos/a-conversation-with-california-governor-gavin-newsom.md)  
 - [😵‍💫❓🤯🤦‍♂️ What the Heck Just Happened?](./videos/what-the-heck-just-happened.md)  
-- [🤔🌎🤠🚨 What on Earth Is Going on in Texas? | Explainer](./videos/what-on-earth-is-going-on-in-texas-explainer.md)  
-- [🌅🧠🚀♾️ This morning routine is scientifically proven to make you limitless](./videos/this-morning-routine-is-scientifically-proven-to-make-you-limitless.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (81)  

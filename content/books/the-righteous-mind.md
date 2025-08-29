@@ -54,6 +54,7 @@ CTA: 🤝 Bridge divides.
   
 ### 🔗 Links  
 - 🧭 [YourMorals.org](https://yourmorals.org)  
+- 🤝 [CivilPolitics.org](https://www.civilpolitics.org)  
   
 ## 🤖 AI Summary  
 ### TLDR  

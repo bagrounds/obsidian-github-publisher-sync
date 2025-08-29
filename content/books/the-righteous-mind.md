@@ -31,7 +31,7 @@ CTA: 🤝 Bridge divides.
     - 🧍individualistic, 📜 rule based, 🌐 universalist  
 - ⚖️ 6 Moral Foundations  
     - ❤️‍🩹 Care / 🤕 Harm  
-    - 🤝 Fairness / 🦹 Cheating  
+    - ⚖️ Fairness / 🦹 Cheating  
     - 🗽 Liberty / ⛓️ Oppression  
     - 🫂 Loyalty / 💔 Betrayal  
     - 👑 Authority / 💣 Subversion  
@@ -44,6 +44,19 @@ CTA: 🤝 Bridge divides.
     - ⏱️ We can temporarily, 🤩 ecstatically lose ourselves in something greater than ourselves, like a collective consciousness or shared experience. 🤯  
     - 💃 dance, 🏞️ awe in nature, 🍄 psychedelics  
     - 🥰 oxytocin, 🪞 mirror neurons 😊. The way our brains are wired contributes to our hive mentality.  
+- 🐘 Intuition comes first  
+    - 🫂 Improve relationships to alter intuition, reasoning, and behavior  
+- 🙈 We are all blind around our own sacred objects  
+    - 🛐 To understand others, follow sacredness  
+    - 😇 Which foundation carries the most weight?  
+    - 🥰 Make friends first  
+- 🧬 Genes influence but don't determine politics  
+    - 🤹🏼‍♀️ Novelty seeking and threat insensitivity predispose liberalism  
+    - ⚠️ Routine seeking and threat sensitivity predispose conservatism  
+- 🦉 Political ideological wisdom  
+    - 🛣️ Liberal: regulate corporations to protect society  
+    - 💹 Libertarian: empower markets to drive innovation  
+    - 😇 Conservative: protect sacred institutions to elevate pro social behavior  
   
 ### 📚 Books Mentioned  
 - [🤔🧩⚖️ Patterns, Thinking, and Cognition: A Theory of Judgment](./patterns-thinking-and-cognition-a-theory-of-judgment.md)  
@@ -51,9 +64,11 @@ CTA: 🤝 Bridge divides.
 - [👤💬 The Analects of Confucius](./the-analects-of-confucius.md)  
 - [👤🧬 The Selfish Gene](./the-selfish-gene.md)  
 - [🎳🏘️📉📈 Bowling Alone: The Collapse and Revival of American Community](./bowling-alone.md)  
+- [😀📜 The Happiness Hypothesis: Finding Modern Truth in Ancient Wisdom](./the-happiness-hypothesis-finding-modern-truth-in-ancient-wisdom.md)  
   
 ### 🔗 Links  
 - 🧭 [YourMorals.org](https://yourmorals.org)  
+- 🤝 [CivilPolitics.org](https://www.civilpolitics.org)  
   
 ## 🤖 AI Summary  
 ### TLDR  

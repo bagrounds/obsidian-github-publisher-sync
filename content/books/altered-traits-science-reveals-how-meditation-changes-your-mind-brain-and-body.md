@@ -5,6 +5,7 @@ aliases:
 URL: https://bagrounds.org/books/altered-traits-science-reveals-how-meditation-changes-your-mind-brain-and-body
 share: true
 affiliate link: https://amzn.to/43YvX2M
+CTA: 🧘 Transform yourself.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🔬🧘🏼‍♀️🧠 Altered Traits: Science Reveals How Meditation Changes Your Mind, Brain, and Body  
@@ -41,7 +42,7 @@ affiliate link: https://amzn.to/43YvX2M
   
 * 🧠 ***The Emotional Life of Your Brain: How Its Unique Patterns Affect the Way You Think, Feel, and Live—and How You Can Change Them*** by Richard J. Davidson. 👨‍Co-authored by Davidson, this book delves deeper into the neuroscience of emotions and how understanding your brain's emotional style can lead to greater well-being.  
 * 🧘 **[👣➡️🌍 Wherever You Go, There You Are](./wherever-you-go-there-you-are.md): Mindfulness Meditation in Everyday Life** by Jon Kabat-Zinn. 📖 A classic in the field of mindfulness, offering practical guidance and principles for incorporating mindfulness into daily life.  
-* 🧐 ***Why Buddhism is True: The Science and Philosophy of Meditation and Enlightenment*** by Robert Wright. 📖 This book explores the intersection of modern psychological science and ancient Buddhist thought, particularly mindful meditation, examining how meditation can help us understand distorted realities created by our minds.  
+* **[🧘🧠✅ Why Buddhism is True: The Science and Philosophy of Meditation and Enlightenment](./why-buddhism-is-true-the-science-and-philosophy-of-meditation-and-enlightenment.md)** by Robert Wright. 📖 This book explores the intersection of modern psychological science and ancient Buddhist thought, particularly mindful meditation, examining how meditation can help us understand distorted realities created by our minds.  
 * 🧠 ***Buddha's Brain: The Practical Neuroscience of Happiness, Love, and Wisdom*** by Rick Hanson. 📖 Blends Buddhist teachings with neuroscience to explain how to change your outlook, increase happiness, and cultivate inner peace through understanding neural mechanisms.  
 * 🔬 ***The Science of Meditation: How to Change Your Brain, Mind and Body*** by Daniel Goleman and Richard J. Davidson. 📖 This appears to be the British title for *Altered Traits*, covering the same core material on the science of how meditation changes the mind, brain, and body.  
 * 🎯 ***Focus: The Hidden Driver of Excellence*** by Daniel Goleman. 📖 While not solely about meditation, this book by Goleman explores the science of attention and how developing focus is crucial for success, a concept deeply connected to meditation practices.  

@@ -50,7 +50,7 @@ CTA: 🧘‍♀️ Cultivate inner peace.
   
 ### 🕉️ Contrasting: Deeper Spiritual or Philosophical Exploration  
   
-* 📖 **Why Buddhism is True** by Robert Wright: Explores the scientific and philosophical basis for Buddhist ideas, including mindfulness and the nature of the self. 🤔  
+* **[🧘🧠✅ Why Buddhism is True: The Science and Philosophy of Meditation and Enlightenment](./why-buddhism-is-true-the-science-and-philosophy-of-meditation-and-enlightenment.md)** by Robert Wright: Explores the scientific and philosophical basis for Buddhist ideas, including mindfulness and the nature of the self. 🤔  
 * 📖 **Radical Acceptance** by Tara Brach: Focuses on using mindfulness and self-compassion to heal suffering and embrace one's life. ❤️‍🩹  
 * 📖 **The Places That Scare You** by Pema Chödrön: A guide to working with fear and difficult emotions from a Buddhist perspective. 😨  
 * 📖 **Going to Pieces Without Falling Apart** by Mark Epstein: A psychiatrist's perspective on how Buddhist teachings can help navigate emotional difficulties. 🤕  

@@ -7,7 +7,7 @@ URL: https://bagrounds.org/books
 backlinks: false
 ---
 [Home](../index.md)  
-# 📚 Books (591)  
+# 📚 Books (592)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)  
 - [🧑‍🤝‍🧑📈 10 to 25: The Science of Motivating Young People: A Groundbreaking Approach to Leading the Next Generation - And Making Your Own Life Easier](./10-to-25-the-science-of-motivating-young-people-a-groundbreaking-approach-to-leading-the-next-generation-and-making-your-own-life-easier.md)  
@@ -586,6 +586,7 @@ Feedback Control of Dynamic Systems]]
 - [💡📜 Where Good Ideas Come From: The Natural History of Innovation](./where-good-ideas-come-from-the-natural-history-of-innovation.md)  
 - [👣➡️🌍 Wherever You Go, There You Are](./wherever-you-go-there-you-are.md)  
 - [🏛️❓ Who Is Government?: The Untold Story of Public Service](./who-is-government-the-untold-story-of-public-service.md)  
+- [🧘🧠✅ Why Buddhism is True: The Science and Philosophy of Meditation and Enlightenment](./why-buddhism-is-true-the-science-and-philosophy-of-meditation-and-enlightenment.md)  
 - [✍🏿🇺🇸💔 Why Didn't We Riot?: A Black Man In Trumpland](./why-didnt-we-riot.md)  
 - [🌎👎👑💰🏚️ Why Nations Fail: The Origins of Power, Prosperity, and Poverty](./why-nations-fail-the-origins-of-power-prosperity-and-poverty.md)  
 - [📉❓ Why Nothing Works: Who Killed Progress - and How to Bring It Back](./why-nothing-works-who-killed-progress-and-how-to-bring-it-back.md)  

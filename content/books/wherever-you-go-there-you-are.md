@@ -4,8 +4,8 @@ aliases:
   - 👣➡️🌍 Wherever You Go, There You Are
 title: 👣➡️🌍 Wherever You Go, There You Are
 URL: https://bagrounds.org/books/wherever-you-go-there-you-are
-Author: 
-tags: 
+Author:
+tags:
 affiliate link: https://amzn.to/3T8Kdje
 CTA: 🧘🏼‍♀️ Be present.
 ---
@@ -72,7 +72,7 @@ CTA: 🧘🏼‍♀️ Be present.
 ### 🧠 Deeper Dives into Mindfulness & Meditation Theory  
   
 * 📖 **Aware: The Science and Practice of Presence** by Daniel J. Siegel, M.D.: Explores the neuroscience behind meditation and introduces the "Wheel of Awareness" practice for focus and emotional resilience.  
-* 📖 **Why Buddhism is True** by Robert Wright: Examines Buddhist philosophy and psychology through the lens of evolutionary psychology and modern science.  
+* **[🧘🧠✅ Why Buddhism is True: The Science and Philosophy of Meditation and Enlightenment](./why-buddhism-is-true-the-science-and-philosophy-of-meditation-and-enlightenment.md)** by Robert Wright: Examines Buddhist philosophy and psychology through the lens of evolutionary psychology and modern science.  
 * 📖 **Coming to Our Senses** by Jon Kabat-Zinn: A deeper, more expansive exploration of mindfulness and its potential for personal and global healing.  
 * 📖 **The Routledge Handbook of Phenomenology of Mindfulness** edited by Susi Ferrarello & Christos Hadjioannou: An academic collection exploring mindfulness through the lens of phenomenology, contrasting it with various philosophical traditions.  
   

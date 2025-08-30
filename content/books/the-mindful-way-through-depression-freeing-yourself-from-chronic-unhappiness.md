@@ -5,6 +5,7 @@ aliases:
 URL: https://bagrounds.org/books/the-mindful-way-through-depression-freeing-yourself-from-chronic-unhappiness
 share: true
 affiliate link: https://amzn.to/3ZksF7v
+CTA: 🧘‍♀️ Conquer despair.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧘😞➡️ The Mindful Way Through Depression: Freeing Yourself from Chronic Unhappiness  
@@ -69,7 +70,7 @@ Key concepts explored include:
 * 🧘 **[👣➡️🌍 Wherever You Go, There You Are](./wherever-you-go-there-you-are.md): Mindfulness Meditation in Everyday Life** by Jon Kabat-Zinn: Another classic by Kabat-Zinn, this book offers short, accessible teachings and practices for incorporating mindfulness into daily life, relevant for sustaining the practice learned in "The Mindful Way Through Depression." 🚶  
 * ✍️ **Reasons to Stay Alive** by Matt Haig: A memoir offering a raw and honest account of the author's struggle with severe depression and anxiety, providing a relatable personal perspective on the challenges discussed in "The Mindful Way Through Depression." 💔  
 * 🕊️ **The Untethered Soul: The Journey Beyond Yourself** by Michael A. Singer: A spiritual approach to letting go of limiting thoughts and emotions, aligning with the mindfulness concept of observing the self without identification. ✨  
-* 🧠 **Why Buddhism is True: The Science and Philosophy of Meditation and Enlightenment** by Robert Wright: Explores the connections between Buddhist philosophy, mindfulness, and evolutionary psychology, providing a deeper intellectual context for the practice. ⚛️  
+* **[🧘🧠✅ Why Buddhism is True: The Science and Philosophy of Meditation and Enlightenment](./why-buddhism-is-true-the-science-and-philosophy-of-meditation-and-enlightenment.md)** by Robert Wright: Explores the connections between Buddhist philosophy, mindfulness, and evolutionary psychology, providing a deeper intellectual context for the practice. ⚛️  
 * **[🪄 Big Magic: Creative Living Beyond Fear](./big-magic.md)** by Elizabeth Gilbert: While not directly about depression, this book encourages embracing creativity and living a life driven by curiosity rather than fear, offering an inspiring perspective on finding aliveness and possibility, themes relevant to recovering from chronic unhappiness. ✨  
 * 📓 **Start Where You Are: A Journal for Self-Exploration** by Meera Lee Patel: An interactive journal with prompts and exercises that encourage mindfulness and self-reflection, offering a creative way to engage with the principles in "The Mindful Way Through Depression." ✍️  
 * 🧘 **The Power of Now: A Guide to Spiritual Enlightenment** by Eckhart Tolle: Focuses on the importance of living in the present moment and transcending the ego, resonating with the mindfulness emphasis on present awareness. ✨  

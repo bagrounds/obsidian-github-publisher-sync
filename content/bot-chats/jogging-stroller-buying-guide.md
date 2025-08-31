@@ -34,4 +34,100 @@ URL: https://bagrounds.org/bot-chats/jogging-stroller-buying-guide
   
 📢 I’ll let you know as soon as the guide is 📝 ready for review.  
   
-...
+The full report: [Choosing a Jogging Stroller: Safety First](https://chatgpt.com/s/dr_68b4c926597c8191ba560cc15ddc515e)  
+  
+## 🏃‍♀️ Quick Guide to Buying a Jogging Stroller  
+  
+### 🔒 Safety First  
+  
+* 👶 Wait until baby is **6+ months** (AAP)  
+* 🎯 Look for **ASTM F833 certification** (meets US safety standards)  
+* 🛡️ **5-point harness** is a must  
+* 🖐️ **Wrist strap** + **front wheel lock** for stability  
+* 🛑 Test brakes (foot or hand) before every run  
+* 🔄 Check wheel attachments before jogging (CPSC recalls have flagged this in past)  
+  
+### 🚼 Key Features to Compare  
+  
+* 🛞 **Wheels**: Air-filled (smooth ride, needs pumping) vs foam/plastic (low maintenance, bumpier)  
+* ⚖️ **Suspension**: Crucial for trails; optional for smooth pavement  
+* 🔧 **Brakes**: Foot brake standard; hand brake best for downhills  
+* 📏 **Handlebar**: Adjustable = better ergonomics  
+* 🌞 **Canopy**: Large, ventilated, UPF 50+ preferred  
+* 📦 **Fold/Storage**: One-hand fold & big basket = easier daily use  
+* 🧸 **Weight limit**: Most range 50–75 lb  
+  
+### 💰 Best Value Picks  
+  
+#### Budget (\~\$150–\$200)  
+  
+* **Baby Trend Expedition** 🛞 Affordable, air tires  
+  
+  * ✅ Cheap, snack tray  
+  * ❌ No suspension, 50 lb limit, heavy  
+  
+* **Graco FastAction Jogger** 🔄 One-hand fold  
+  
+  * ✅ Adjustable handle  
+  * ❌ Stiff brakes, bumpy on uneven ground  
+  
+#### Mid-Range (\~\$300–\$500)  
+  
+* **Joovy Zoom 360 Ultralight** 🚀  
+  
+  * ✅ Great suspension, roomy basket, includes pump  
+  * ❌ Fixed handlebar, tracking drifts  
+  
+* **Baby Jogger Summit X3** 🌳  
+  
+  * ✅ All-wheel suspension, canopy, 1-hand fold  
+  * ❌ Heavy, handle not adjustable  
+  
+* **Guava Roam** (sale \~\$500) ✈️  
+  
+  * ✅ Compact fold, sturdy, adjustable handle  
+  * ❌ No hand brake  
+  
+#### Premium (\$600+)  
+  
+* **Thule Urban Glide 3** ⭐  
+  
+  * ✅ Light, smooth ride, hand brake, sleek fold  
+  * ❌ Pricey, 49 lb child max  
+  
+* **BOB Revolution Flex 3.0** 🏔️  
+  
+  * ✅ Rugged suspension, 75 lb limit, adjustable handle  
+  * ❌ Bulky, heavy  
+  
+### 🏃 Best by Use Case  
+  
+* **Daily Pavement Running (your case)**  
+  👉 *Best value:* **Joovy Zoom 360 (\$299)** – suspension + air tires = smooth, affordable.  
+  👉 *Upgrade:* **Thule Urban Glide 3 (\$640)** – lighter, hand brake, best long-term comfort.  
+  
+* **Occasional Jogger / Walker**  
+  👉 **Baby Trend Expedition** – lowest cost, fine for light use.  
+  
+* **Trail / All-Terrain**  
+  👉 **BOB Flex 3.0** – top suspension, handles rough paths.  
+  
+* **Compact / Travel Friendly**  
+  👉 **Guava Roam** – folds small, doubles as everyday stroller.  
+  
+### ✅ Quick Comparison Table  
+  
+| Model                 | Price | Suspension | Handlebar  | Weight Limit | Hand Brake | Best For             |  
+| --------------------- | ----- | ---------- | ---------- | ------------ | ---------- | -------------------- |  
+| Baby Trend Expedition | \$150 | ❌          | Fixed      | 50 lb        | ❌          | Occasional budget    |  
+| Joovy Zoom 360        | \$299 | ✅          | Fixed      | 75 lb        | ❌          | Daily pavement value |  
+| Baby Jogger Summit X3 | \$350 | ✅          | Fixed      | 75 lb        | ❌          | All-terrain mid      |  
+| Guava Roam            | \$500 | ✅          | Adjustable | 55 lb        | ❌          | Compact crossover    |  
+| Thule Urban Glide 3   | \$640 | ✅          | Adjustable | 49 lb        | ✅          | Serious runners      |  
+| BOB Flex 3.0          | \$550 | ✅          | Adjustable | 75 lb        | ❌          | Trail/all-terrain    |  
+  
+### 🎯 Bottom Line  
+  
+* 🏅 **Best Value Overall:** Joovy Zoom 360 – smooth, safe, affordable.  
+* 💎 **Best Premium:** Thule Urban Glide 3 – worth it if you run daily/long distances.  
+* 💵 **Best Budget:** Baby Trend Expedition – fine for light use only.

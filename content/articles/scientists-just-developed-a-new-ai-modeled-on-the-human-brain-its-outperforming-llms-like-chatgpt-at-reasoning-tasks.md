@@ -25,7 +25,7 @@ The ⚖️ HRM presents a compelling alternative to current **large language mod
   
 ### 🧠 Similar  
   
-- 🧠 **Livewired** by David Eagleman: This book explores the brain's 🧠 constant state of change and adaptability, which offers a great parallel to the new, adaptable AI models being developed.  
+- **[🧠🔄 Livewired: The Inside Story of the Ever-Changing Brain](../books/livewired-the-inside-story-of-the-ever-changing-brain.md)** by David Eagleman: This book explores the brain's 🧠 constant state of change and adaptability, which offers a great parallel to the new, adaptable AI models being developed.  
   
 - **[🧠🧠🧠🧠 A Thousand Brains: A New Theory of Intelligence](../books/a-thousand-brains.md)** by Jeff Hawkins: This book proposes that intelligence comes from the brain building a predictive "world model," a view highly relevant to the new AI model's hierarchical design.  
   

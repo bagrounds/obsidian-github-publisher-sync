@@ -7,7 +7,7 @@ URL: https://bagrounds.org/books
 backlinks: false
 ---
 [Home](../index.md)  
-# 📚 Books (592)  
+# 📚 Books (593)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)  
 - [🧑‍🤝‍🧑📈 10 to 25: The Science of Motivating Young People: A Groundbreaking Approach to Leading the Next Generation - And Making Your Own Life Easier](./10-to-25-the-science-of-motivating-young-people-a-groundbreaking-approach-to-leading-the-next-generation-and-making-your-own-life-easier.md)  
@@ -258,6 +258,7 @@ Feedback Control of Dynamic Systems]]
 - [💪🧠 Level-Up Your Self-Discipline: Understand the Neuroscience of Self-Discipline, Control Your Emotions, Overcome Procrastination, and Achieve Your Difficult Goals](./level-up-your-self-discipline-understand-the-neuroscience-of-self-discipline-control-your-emotions-overcome-procrastination-and-achieve-your-difficult-goals.md)  
 - [🤥😈 Liars and Outliers: Enabling the Trust That Society Needs to Thrive](./liars-and-outliers.md)  
 - [🧬👥💾 Life 3.0: Being Human in the Age of Artificial Intelligence](./life-3-0.md)  
+- [🧠🔄 Livewired: The Inside Story of the Ever-Changing Brain](./livewired-the-inside-story-of-the-ever-changing-brain.md)  
 - [🤖🛠️ LLM Engineer's Handbook: Master the art of engineering large language models from concept to production](./llm-engineers-handbook-master-the-art-of-engineering-large-language-models-from-concept-to-production.md)  
 - [🧭🕰️🥇🗺️ Longitude: The True Story of a Lone Genius Who Solved the Greatest Scientific Problem of His Time](./longitude.md)  
 - [🧑🏿⚖️🧑🏻 Long Time Coming: Reckoning With Race In America](./long-time-coming-reckoning-with-race-in-america.md)  

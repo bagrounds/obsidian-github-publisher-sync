@@ -11,7 +11,7 @@ URL: https://bagrounds.org/bot-chats/jogging-stroller-buying-guide
 > 🏃‍♀️ Write a detailed consumer guide to purchasing a jogging stroller. 🔎 Research real products and focus on comparing quality, price, and features. 💰 If there are different price points, clearly describe what you're getting for the additional money. 🎯 Aim to help consumers get the ideal stroller for their use case for as cheap as possible.  
 >  
 > 📝 Here's an example summary of a consumer reports guide to get you started.  
-> https://bagrounds.org/articles/what-to-look-for-in-a-jogging-stroller  
+> [👀👶🏼🏃🏼‍♀️🛣️ What to Look for in a Jogging Stroller](../articles/what-to-look-for-in-a-jogging-stroller.md)  
 >  
 > 🔬 Pull in information from any available scientific studies, 🏛️ regulatory bodies, 🗣️ consumer advocacy groups, 📰 reputable news sources etc to help justify any claims made by manufacturers or retailers. ✅ Order your recommendations by best value per money, assuming a reasonable bar for safety and quality.  
   

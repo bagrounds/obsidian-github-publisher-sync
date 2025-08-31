@@ -7,7 +7,7 @@ backlinks: false
 URL: https://bagrounds.org/articles
 ---
 [Home](../index.md)  
-# 📄 Articles (50)  
+# 📄 Articles (52)  
 - [🦊😈🐾🕵️💸 5 takeaways about NPR's reporting on the whistleblower report about DOGE at the NLRB](./5-takeaways-about-nprs-reporting-on-the-whistleblower-report-about-doge-at-the-nlrb.md)  
 - [🌱🤖⚙️🖐️ 5 tips on getting started with Gems, your custom AI experts](./5-tips-on-getting-started-with-gems-your-custom-ai-experts.md)  
 - [⏱️⚔️🏛️ '60 Minutes' chief resigns, saying show's independence was compromised](./60-minutes-chief-resigns-saying-shows-independence-was-compromised.md)  
@@ -23,6 +23,7 @@ URL: https://bagrounds.org/articles
 - [♊💻🆚 Gemini CLI + VS Code: Native diffing and context-aware workflows](./gemini-cli-+-vs-code-native-diffing-and-context-aware-workflows.md)  
 - [⚠️🖇️ Google Cautions Against Using Too Many Internal Links](./google-cautions-against-using-too-many-internal-links.md)  
 - [📚🧩🤖 Guide Comprehensive RAG Implementation Guide](./comprehensive-rag-implementation-guide.md)  
+- [🧠🪜⏱️📈 Hierarchical gradients of multiple timescales in the mammalian forebrain](./hierarchical-gradients-of-multiple-timescales-in-the-mammalian-forebrain.md)  
 - [📈❤️⏱️💪🧘 High Intensity Functional Training Guided by Individualized Heart Rate Variability Results in Similar Health and Fitness Improvements as Predetermined Training with Less Effort](./high-intensity-functional-training-guided-by-individualized-heart-rate-variability-results-in-similar-health-and-fitness-improvements-as-predetermined-training-with-less-effort.md)  
 - [🧑‍💻🤖🤝 How Anthropic Teams Use Claude Code](./how-anthropic-teams-use-claude-code.md)  
 - [📉🍎🔥🚫 How Project 2025 Would Devastate Public Education](./how-project-2025-would-devastate-public-education.md)  
@@ -48,6 +49,7 @@ URL: https://bagrounds.org/articles
 - [✊🏾✊🏽✊🏿 Protesters unite against Trump in hundreds of rallies across the U.S.](./protesters-unite-against-trump-in-hundreds-of-rallies-across-the-us.md)  
 - [🗣️🗺️🤖⚙️ Reasoning with Language Model is Planning with World Model](./reasoning-with-language-model-is-planning-with-world-model.md)  
 - [Safe Sleep for Breastfeeding Babies](./safe-sleep-for-breastfeeding-babies.md)  
+- [🧠🤖📈 Scientists just developed a new AI modeled on the human brain — it's outperforming LLMs like ChatGPT at reasoning tasks](./scientists-just-developed-a-new-ai-modeled-on-the-human-brain-its-outperforming-llms-like-chatgpt-at-reasoning-tasks.md)  
 - [Snohomish County schools react to education department firings](./snohomish-county-schools-react-to-education-department-firings.md)  
 - [💻💰🤝👹🇺🇸 Tech moguls Altman, Bezos and Zuckerberg donate to Trump's inauguration fund](./tech-moguls-altman-bezos-and-zuckerberg-donate-to-trumps-inauguration-fund.md)  
 - [🪵 The Log: What every software engineer should know about real-time data's unifying abstraction](./the-log-what-every-software%20engineer-should-know-about-real-time-datas-unifying-abstraction.md)  

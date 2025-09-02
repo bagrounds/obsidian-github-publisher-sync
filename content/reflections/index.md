@@ -7,8 +7,10 @@ URL: https://bagrounds.org/reflections
 backlinks: false
 ---
 [Home](../index.md)  
-# 🪞 Reflections (289)  
-- [2025-08-30](./2025-08-30.md)  
+# 🪞 Reflections (291)  
+- [2025-09-01 | 🧠 Embodied | 🍤 Shrimp 📚](./2025-09-01.md)  
+- [2025-08-31 | 🧮 Reasoning | 🏃🏼‍♀️ Strolling](./2025-08-31.md)  
+- [2025-08-30 | 🤖 Chatbots | 📜 Philosophy | ⚠️ Threats 🌌📚📺](./2025-08-30.md)  
 - [2025-08-29 | 😇 Righteous | ☺️ Happy | 👀 Aware 📚🌌](./2025-08-29.md)  
 - [2025-08-28 | 👉 Right | 🐒 Behave | 💼🛟 JobNet 📺📚💡](./2025-08-28.md)  
 - [2025-08-27 | ☺️ Happy | 😶 Stoic 📚](./2025-08-27.md)  
@@ -280,7 +282,7 @@ backlinks: false
 - [2024-06-04 | 🏔️🔍 Peak Finding ⌨️🪞](./2024-06-04.md)  
 - [2024-06-03 | 🧪 Pseudoscience | 🪞 Palindromes](./2024-06-03.md)  
 - [2024-06-02 | 🧠 Memorable | 🕸️ Complex | 🔀 Merge 📺⌨️🪞](./2024-06-02.md)  
-- [2024-06-01](./2024-06-01.md)  
+- [2024-06-01 | 🎏 Streamline | 👀 Focus | 🔀 Merge 📺⌨️](./2024-06-01.md)  
 - [2024-05-31](./2024-05-31.md)  
 - [2024-05-30 | 🏔️ Mountain | 🐘 Memory 📚📺](./2024-05-30.md)  
 - [2024-05-29](./2024-05-29.md)  

@@ -7,7 +7,7 @@ URL: https://bagrounds.org/books
 backlinks: false
 ---
 [Home](../index.md)  
-# 📚 Books (593)  
+# 📚 Books (594)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)  
 - [🧑‍🤝‍🧑📈 10 to 25: The Science of Motivating Young People: A Groundbreaking Approach to Leading the Next Generation - And Making Your Own Life Easier](./10-to-25-the-science-of-motivating-young-people-a-groundbreaking-approach-to-leading-the-next-generation-and-making-your-own-life-easier.md)  
@@ -459,6 +459,7 @@ Feedback Control of Dynamic Systems]]
 - [⚙️🚀🛡️ The DevOps Handbook: How to Create World-Class Agility, Reliability, & Security in Technology Organizations](./the-devops-handbook.md)  
 - [👑😈👎📈 The Dictator's Handbook: Why Bad Behavior Is Almost Always Good Politics](./the-dictators-handbook.md)  
 - [🦢 The Elements of Style](./the-elements-of-style.md)  
+- [🧠🫂 The Embodied Mind: Cognitive Science and Human Experience](./the-embodied-mind-cognitive-science-and-human-experience.md)  
 - [🧠🌐💡 The Extended Mind: The Power of Thinking Outside the Brain](./the-extended-mind.md)  
 - [🇺🇸📜 The Federalist Papers](./the-federalist-papers.md)  
 - [🎨🔄🧠🏢 The Fifth Discipline: The Art and Practice of the Learning Organization](./the-fifth-discipline.md)  

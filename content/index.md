@@ -10,7 +10,8 @@ title: 🏡 Home
 📑 Notes, 💭 thoughts, and 🔗 Links.  
 ❔ What do 🫵 _you_ 🤔 think?  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (291)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (292)  
+- [2025-09-02 | 🧠 Mind | 🧎🏼‍♂️ Kneeling 📚👶🏼](./reflections/2025-09-02.md)  
 - [2025-09-01 | 🧠 Embodied | 🍤 Shrimp 📚](./reflections/2025-09-01.md)  
 - [2025-08-31 | 🧮 Reasoning | 🏃🏼‍♀️ Strolling](./reflections/2025-08-31.md)  
 - [2025-08-30 | 🤖 Chatbots | 📜 Philosophy | ⚠️ Threats 🌌📚📺](./reflections/2025-08-30.md)  
@@ -20,20 +21,19 @@ title: 🏡 Home
 - [2025-08-26 | 😇⛰️ Moral Foundations | ⛓️‍💥 Brittle 📚🌌👥📺✍️](./reflections/2025-08-26.md)  
 - [2025-08-25 | 😇 Righteous | 💡 Enlightenment | 📜 Confucius 📚](./reflections/2025-08-25.md)  
 - [2025-08-24 | 😇 Righteous | 🏋🏼‍♀️ Masochism 📚🪞](./reflections/2025-08-24.md)  
-- [2025-08-23 | 🤿 Deep | 🐌 Slow | 👍 Good 📚👥](./reflections/2025-08-23.md)  
   
   
-## [📚 Books](./books/index.md) (594)  
+## [📚 Books](./books/index.md) (595)  
+- [🧠🫂 The Embodied Mind: Cognitive Science and Human Experience](./books/the-embodied-mind-cognitive-science-and-human-experience.md)  
+- [🧠🌱🤔 Mind in Life: Biology, Phenomenology, and the Sciences of Mind](./books/mind-in-life-biology-phenomenology-and-the-sciences-of-mind.md)  
 - [🏃😊❤️ The Joy of Movement: How Exercise Helps Us Find Happiness, Hope, Connection, and Courage](./books/the-joy-of-movement-how-exercise-helps-us-find-happiness-hope-connection-and-courage.md)  
 - [🧘🏼‍♀️👩🏼‍🏫 Practicing Mindfulness: An Introduction to Meditation](./books/practicing-mindfulness-an-introduction-to-meditation.md)  
-- [🧠🫂 The Embodied Mind: Cognitive Science and Human Experience](./books/the-embodied-mind-cognitive-science-and-human-experience.md)  
 - [🧠🔄 Livewired: The Inside Story of the Ever-Changing Brain](./books/livewired-the-inside-story-of-the-ever-changing-brain.md)  
 - [🔬🧘🏼‍♀️🧠 Altered Traits: Science Reveals How Meditation Changes Your Mind, Brain, and Body](./books/altered-traits-science-reveals-how-meditation-changes-your-mind-brain-and-body.md)  
 - [🧘😞➡️ The Mindful Way Through Depression: Freeing Yourself from Chronic Unhappiness](./books/the-mindful-way-through-depression-freeing-yourself-from-chronic-unhappiness.md)  
 - [👣➡️🌍 Wherever You Go, There You Are](./books/wherever-you-go-there-you-are.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./books/10-percent-happier.md)  
 - [😀📜 The Happiness Hypothesis: Finding Modern Truth in Ancient Wisdom](./books/the-happiness-hypothesis-finding-modern-truth-in-ancient-wisdom.md)  
-- [🧘🧠✅ Why Buddhism is True: The Science and Philosophy of Meditation and Enlightenment](./books/why-buddhism-is-true-the-science-and-philosophy-of-meditation-and-enlightenment.md)  
   
   
 ## [📺 Videos](./videos/index.md) (266)  

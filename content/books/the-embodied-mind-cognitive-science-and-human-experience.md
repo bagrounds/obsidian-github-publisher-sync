@@ -38,7 +38,7 @@ CTA: 🧠 Understand yourself.
   
 📖 These books further explore the concepts of embodied cognition, enactivism, and the integration of phenomenology or biology into the understanding of the mind.  
   
-* 🧠 **Mind in Life: Biology, Phenomenology, and the Sciences of Mind** by Evan Thompson  
+* **[🧠🌱🤔 Mind in Life: Biology, Phenomenology, and the Sciences of Mind](./mind-in-life-biology-phenomenology-and-the-sciences-of-mind.md)** by Evan Thompson  
     * ✍️ Written by one of the co-authors of The Embodied Mind, 📖 this book deepens the exploration of the relationship between life and mind, developing a comprehensive theory of enaction from biological, phenomenological, and scientific perspectives.  
 * 👁️ **Phenomenology of Perception** by Maurice Merleau-Ponty  
     * 🏛️ A foundational philosophical text that profoundly influenced the embodied cognition movement. 🤔 Merleau-Ponty's work examines the primacy of perception and the body as the fundamental site of knowing and being in the world, providing a crucial philosophical backdrop for the ideas in The Embodied Mind.  

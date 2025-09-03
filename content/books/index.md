@@ -7,7 +7,7 @@ URL: https://bagrounds.org/books
 backlinks: false
 ---
 [Home](../index.md)  
-# 📚 Books (594)  
+# 📚 Books (595)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)  
 - [🧑‍🤝‍🧑📈 10 to 25: The Science of Motivating Young People: A Groundbreaking Approach to Leading the Next Generation - And Making Your Own Life Easier](./10-to-25-the-science-of-motivating-young-people-a-groundbreaking-approach-to-leading-the-next-generation-and-making-your-own-life-easier.md)  
@@ -279,6 +279,7 @@ Feedback Control of Dynamic Systems]]
 - [🤯 Mindf*ck: Cambridge Analytica and the Plot to Break America](./mindf-ck-cambridge-analytica-and-the-plot-to-break-america.md)  
 - [🧘🗣️ Mindfulness in Plain English](./mindfulness-in-plain-english.md)  
 - [🧘🎯 Mindful Self-Discipline: Living with Purpose and Achieving Your Goals in a World of Distractions](./mindful-self-discipline-living-with-purpose-and-achieving-your-goals-in-a-world-of-distractions.md)  
+- [🧠🌱🤔 Mind in Life: Biology, Phenomenology, and the Sciences of Mind](./mind-in-life-biology-phenomenology-and-the-sciences-of-mind.md)  
 - [🌱🧘🏼‍♀️🏆 Mindset: The New Psychology of Success](./mindset.md)  
 - [🤔💸 Misbehaving: The Making of Behavioral Economics](./misbehaving-the-making-of-behavioral-economics.md)  
 - [🔋⚕️⏳ Mitochondria and the Future of Medicine: The Key to Understanding Disease, Chronic Illness, Aging, and Life Itself](./mitochondria-and-the-future-of-medicine-the-key-to-understanding-disease-chronic-illness-aging-and-life-itself.md)  

@@ -4,13 +4,14 @@ aliases:
   - "🔥⛈️ Fire Weather: A True Story from a Hotter World"
 title: "🔥⛈️ Fire Weather: A True Story from a Hotter World"
 URL: https://bagrounds.org/books/fire-weather
-Author: 
-tags: 
-affiliate link: https://www.amazon.com/dp/1524732850/ref=cm_sw_r_as_gl_apa_gl_i_335CB1RCKQXQBHR9ED4V?linkCode=ml1&tag=bagrounds-20
+Author:
+tags:
+affiliate link: https://amzn.to/3JIwH4B
+CTA: 🌎 Confront catastrophe.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🔥⛈️ Fire Weather: A True Story from a Hotter World  
-[🛒 Fire Weather: A True Story from a Hotter World. As an Amazon Associate I earn from qualifying purchases.](https://www.amazon.com/dp/1524732850/ref=cm_sw_r_as_gl_apa_gl_i_335CB1RCKQXQBHR9ED4V?linkCode=ml1&tag=bagrounds-20)  
+[🛒 Fire Weather: A True Story from a Hotter World. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3JIwH4B)  
   
 ## 📚 Book Report: 🔥 Fire Weather: A True Story from a Hotter World  
   
@@ -60,7 +61,7 @@ affiliate link: https://www.amazon.com/dp/1524732850/ref=cm_sw_r_as_gl_apa_gl_i_
 * 🌪️ **_Isaac's Storm_** by Erik Larson: Narrative non-fiction about the 1900 Galveston hurricane, focusing on meteorological hubris and the human cost of underestimating nature.  
 * 🏥 **_Five Days at Memorial_** by Sheri Fink: Examines the harrowing ethical decisions made at a New Orleans hospital during Hurricane Katrina, focusing on human systems under extreme stress.  
 * 💰 **_This Changes Everything: Capitalism vs. The Climate_** by Naomi Klein: Argues that the climate crisis requires a fundamental restructuring of our economic system.  
-* 🤥 **_Merchants of Doubt_** by Naomi Oreskes & Erik M. Conway: Exposes the campaigns designed to obscure the scientific consensus on climate change and other health/environmental issues.  
+* **[💰🤥 Merchants of Doubt](./merchants-of-doubt.md)** by Naomi Oreskes & Erik M. Conway: Exposes the campaigns designed to obscure the scientific consensus on climate change and other health/environmental issues.  
 * **[⛔🌎🔚 Not the End of the World: How We Can Be the First Generation to Build a Sustainable Planet](./not-the-end-of-the-world.md)** by Hannah Ritchie: Offers a data-driven, more optimistic perspective on environmental problems and potential solutions.  
   
 ### ✨ Creatively Related (Narrative Non-fiction Style, Human Psychology, Resource History)  

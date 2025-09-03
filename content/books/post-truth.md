@@ -36,7 +36,7 @@ CTA: 📢 Confront deception.
   
 * 🧑‍🎓 ***The Death of Expertise: The Campaign Against Established Knowledge and Why it Matters*** **by Tom Nichols:** Explores the societal rejection of expert opinion and the dangerous consequences of a culture that values personal opinion over established knowledge.  
 * ⚔️ ***Weaponized Lies: How to Think Critically in the Post-Truth Era*** **by Daniel J. Levitin:** Provides a practical guide to identifying and navigating the flood of misinformation, focusing on developing critical thinking skills for the digital age.  
-* 🏭 ***Merchants of Doubt: How a Handful of Scientists Obscured the Truth on Issues from Tobacco Smoke to Global Warming*** **by Naomi Oreskes and Erik M. Conway:** Offers a detailed historical account of the tactics used by politically and corporately motivated scientists to deliberately obscure facts and manufacture doubt.  
+* **[💰🤥 Merchants of Doubt](./merchants-of-doubt.md): How a Handful of Scientists Obscured the Truth on Issues from Tobacco Smoke to Global Warming** **by Naomi Oreskes and Erik M. Conway:** Offers a detailed historical account of the tactics used by politically and corporately motivated scientists to deliberately obscure facts and manufacture doubt.  
 * 🗣️ ***How to Talk to a Science Denier*** **by Lee McIntyre:** A follow-up to *Post-Truth*, this book offers practical strategies for engaging in productive conversations with those who reject scientific consensus on various topics.  
   
 ### 🆚 Contrasting & Critical Perspectives  

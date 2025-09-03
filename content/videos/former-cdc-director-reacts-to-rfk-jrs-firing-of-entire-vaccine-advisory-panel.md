@@ -4,10 +4,10 @@ aliases:
   - 👨‍⚕️➡️😬💉💥 Former CDC director reacts to RFK Jr.'s firing of entire vaccine advisory panel
 title: 👨‍⚕️➡️😬💉💥 Former CDC director reacts to RFK Jr.'s firing of entire vaccine advisory panel
 URL: https://bagrounds.org/videos/former-cdc-director-reacts-to-rfk-jrs-firing-of-entire-vaccine-advisory-panel
-Author: 
-Platform: 
-Channel: 
-tags: 
+Author:
+Platform:
+Channel:
+tags:
 youtube: https://youtu.be/vLbn78SFvO8
 ---
 [Home](../index.md) > [Videos](./index.md)  
@@ -38,4 +38,4 @@ youtube: https://youtu.be/vLbn78SFvO8
     * ⚠️ **"Deadly Choices: How the Anti-Vaccine Movement Threatens Us All"** by Paul A. Offit: Written by a prominent vaccinologist 👨‍⚕️, this book directly addresses the anti-vaccine movement, its origins, and its public health implications.  
   
 * 🔬 **On Scientific Integrity and Misinformation:**  
-    * 🤥 **"Merchants of Doubt: How a Handful of Scientists Obscured the Truth on Issues from Tobacco Smoke to Global Warming"** by Naomi Oreskes and Erik M. Conway: While not exclusively about vaccines, this book brilliantly exposes tactics 🎭 used to sow doubt 🤔 about scientific consensus, a highly relevant topic when discussing public trust 🙏 in health institutions.
+    * **[💰🤥 Merchants of Doubt](../books/merchants-of-doubt.md): How a Handful of Scientists Obscured the Truth on Issues from Tobacco Smoke to Global Warming** by Naomi Oreskes and Erik M. Conway: While not exclusively about vaccines, this book brilliantly exposes tactics 🎭 used to sow doubt 🤔 about scientific consensus, a highly relevant topic when discussing public trust 🙏 in health institutions.

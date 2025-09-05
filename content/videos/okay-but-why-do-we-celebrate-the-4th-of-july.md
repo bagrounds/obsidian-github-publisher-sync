@@ -4,10 +4,10 @@ aliases:
   - 🇺🇸🎂🎉🤔 Okay, But Why Do We Celebrate the 4th of July?
 title: 🇺🇸🎂🎉🤔 Okay, But Why Do We Celebrate the 4th of July?
 URL: https://bagrounds.org/videos/okay-but-why-do-we-celebrate-the-4th-of-july
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: Red Wine and Blue
-tags: 
+tags:
 youtube: https://youtu.be/0inIrGhjKk4
 ---
 [Home](../index.md) > [Videos](./index.md) | [🏛️🇺🇸📖 Heather Cox Richardson](../people/heather-cox-richardson.md)  
@@ -24,7 +24,7 @@ youtube: https://youtu.be/0inIrGhjKk4
 📚 **Book Recommendations**  
 - 📖 **_1776_** by David McCullough: A narrative history focusing on the pivotal year of the American Revolution, following George Washington and the Continental Army.  
       
-- 📢 **_Common Sense_** by Thomas Paine: A powerful pamphlet that argued for American independence from British rule, widely read and influential during the Revolution.  
+- **[🧠💡 Common Sense](../books/common-sense.md)** by Thomas Paine: A powerful pamphlet that argued for American independence from British rule, widely read and influential during the Revolution.  
       
 - 🇺🇸📜 **[ The Federalist Papers](../books/the-federalist-papers.md)** by Alexander Hamilton, James Madison, and John Jay: A collection of essays written to persuade New York to ratify the U.S. Constitution, providing insight into the intentions and philosophy of the Founding Fathers regarding American governance.  
       

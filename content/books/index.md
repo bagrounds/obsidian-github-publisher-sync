@@ -7,7 +7,7 @@ URL: https://bagrounds.org/books
 backlinks: false
 ---
 [Home](../index.md)  
-# 📚 Books (596)  
+# 📚 Books (599)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)  
 - [🧑‍🤝‍🧑📈 10 to 25: The Science of Motivating Young People: A Groundbreaking Approach to Leading the Next Generation - And Making Your Own Life Easier](./10-to-25-the-science-of-motivating-young-people-a-groundbreaking-approach-to-leading-the-next-generation-and-making-your-own-life-easier.md)  
@@ -276,6 +276,7 @@ Feedback Control of Dynamic Systems]]
 - [📈🎯✅📏 Measure What Matters: How Google, Bono, and the Gates Foundation Rock the World with OKRs](./measure-what-matters.md)  
 - [🤔🧘 Meditations](./meditations.md)  
 - [💐👩‍👧‍👦⚔️ Memorializing Motherhood: Anna Jarvis and the Struggle for Control of Mother's Day](./memorializing-motherhood-anna-jarvis-and-the-struggle-for-control-of-mothers-day.md)  
+- [💰🤥 Merchants of Doubt](./merchants-of-doubt.md)  
 - [🤯 Mindf*ck: Cambridge Analytica and the Plot to Break America](./mindf-ck-cambridge-analytica-and-the-plot-to-break-america.md)  
 - [🧘🗣️ Mindfulness in Plain English](./mindfulness-in-plain-english.md)  
 - [🧘🎯 Mindful Self-Discipline: Living with Purpose and Achieving Your Goals in a World of Distractions](./mindful-self-discipline-living-with-purpose-and-achieving-your-goals-in-a-world-of-distractions.md)  
@@ -431,6 +432,7 @@ Feedback Control of Dynamic Systems]]
 - [♟️🧠📈🎯 The Art of Strategy: A Game Theorist's Guide to Success in Business and Life](./the-art-of-strategy-a-game-theorists-guide-to-success-in-business-and-life.md)  
 - [🎨🤔🖼️ The Art of Thinking Clearly](./the-art-of-thinking-clearly.md)  
 - [🎨⚔️ The Art of War](./the-art-of-war.md)  
+- [⚡️ The Autobiograpy of Benjamin Franklin](./the-autobiography-of-benjamin-franklin.md)  
 - [🏡🍎 The Backyard Orchardist: A Complete Guide to Growing Fruit Trees in the Home Garden](./the-backyard-orchardist-a-complete-guide-to-growing-fruit-trees-in-the-home-garden.md)  
 - [💰💥📉 The Big Short: Inside the Doomsday Machine](./the-big-short-inside-the-doomsday-machine.md)  
 - [🏘️↔️ The Big Sort: Why the Clustering of Like-Minded America Is Tearing Us Apart](./the-big-sort-why-the-clustering-of-like-minded-america-is-tearing-us-apart.md)  
@@ -542,6 +544,7 @@ Feedback Control of Dynamic Systems]]
 - [🔬🔄 The Structure of Scientific Revolutions](./the-structure-of-scientific-revolutions.md)  
 - [☀️⛓️🕊️ The Sun Does Shine: How I Found Life and Freedom on Death Row](./the-sun-does-shine-how-i-found-life-and-freedom-on-death-row.md)  
 - [👶🌱📈 The Talent Code: Greatness Isn't Born. It's Grown. Here's How.](./the-talent-code.md)  
+- [👴🏽📚 The Teachings of Ptahhotep: The Oldest Book in the World](./the-teachings-of-ptahhotep-the-oldest-book-in-the-world.md)  
 - [⚖️👈 The Tipping Point: How Little Things Can Make a Big Difference](./the-tipping-point.md)  
 - [👩🏼‍⚖️💭🧮🏆 The Tools of Argument: How the Best Lawyers Think, Argue, and Win](./the-tools-of-argument-how-the-best-lawyers-think-argue-and-win.md)  
 - [🇯🇵⚙️📈💯 The Toyota Way: 14 Management Principles from the World's Greatest Manufacturer](./the-toyota-way.md)  

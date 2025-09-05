@@ -4,10 +4,10 @@ aliases:
   - 📜🇺🇸🗽➡️ The Declaration of Independence | Journey to American Democracy
 title: 📜🇺🇸🗽➡️ The Declaration of Independence | Journey to American Democracy
 URL: https://bagrounds.org/videos/
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: Heather Cox Richardson
-tags: 
+tags:
 youtube: https://youtu.be/gkFxD-CMlZM
 ---
 [Home](../index.md) > [Videos](./index.md) | [🏛️🇺🇸📖 Heather Cox Richardson](../people/heather-cox-richardson.md)  
@@ -46,7 +46,7 @@ The specific issues covered include:
   
 ## 📚 Book Recommendations  
 - 📖 **For Understanding the Philosophical Principles:**  
-    - 📜 **_Common Sense_** **by Thomas Paine:** A powerful and widely read pamphlet that advocated for American independence, laying out many of the arguments against British rule and for self-governance. It significantly influenced public opinion.  
+    - **[🧠💡 Common Sense](../books/common-sense.md)** **by Thomas Paine:** A powerful and widely read pamphlet that advocated for American independence, laying out many of the arguments against British rule and for self-governance. It significantly influenced public opinion.  
   
     - 📜 **_Two Treatises of Government_** **by John Locke:** While written earlier, Locke's philosophy on natural rights, social contract theory, and the right to revolution profoundly influenced the Declaration of Independence. Reading this provides a deeper understanding of the intellectual foundations.  
   

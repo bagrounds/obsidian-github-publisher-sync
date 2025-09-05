@@ -10,8 +10,9 @@ title: 🏡 Home
 📑 Notes, 💭 thoughts, and 🔗 Links.  
 ❔ What do 🫵 _you_ 🤔 think?  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (293)  
-- [2025-09-03](./reflections/2025-09-03.md)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (294)  
+- [2025-09-04 | 🏆 Success | 😇 Virtue | 🍓 Strawberry 📺📚👶🏼](./reflections/2025-09-04.md)  
+- [2025-09-03 | 🏍️ Glide | 🤥 Doubt 🛍️📺📚📄👶🏼](./reflections/2025-09-03.md)  
 - [2025-09-02 | 🧠 Mind | 🧎🏼‍♂️ Kneeling 📚👶🏼](./reflections/2025-09-02.md)  
 - [2025-09-01 | 🧠 Embodied | 🍤 Shrimp 📚](./reflections/2025-09-01.md)  
 - [2025-08-31 | 🧮 Reasoning | 🏃🏼‍♀️ Strolling](./reflections/2025-08-31.md)  
@@ -20,33 +21,32 @@ title: 🏡 Home
 - [2025-08-28 | 👉 Right | 🐒 Behave | 💼🛟 JobNet 📺📚💡](./reflections/2025-08-28.md)  
 - [2025-08-27 | ☺️ Happy | 😶 Stoic 📚](./reflections/2025-08-27.md)  
 - [2025-08-26 | 😇⛰️ Moral Foundations | ⛓️‍💥 Brittle 📚🌌👥📺✍️](./reflections/2025-08-26.md)  
-- [2025-08-25 | 😇 Righteous | 💡 Enlightenment | 📜 Confucius 📚](./reflections/2025-08-25.md)  
   
   
-## [📚 Books](./books/index.md) (596)  
+## [📚 Books](./books/index.md) (599)  
+- [🚀🧠🏆 Ultralearning: Master Hard Skills, Outsmart the Competition, and Accelerate Your Career](./books/ultralearning-master-hard-skills-outsmart-the-competition-and-accelerate-your-career.md)  
+- [⚡️ The Autobiograpy of Benjamin Franklin](./books/the-autobiography-of-benjamin-franklin.md)  
+- [👴🏽📚 The Teachings of Ptahhotep: The Oldest Book in the World](./books/the-teachings-of-ptahhotep-the-oldest-book-in-the-world.md)  
+- [🥼🛡️ The Scientific Attitude: Defending Science from Denial, Fraud, and Pseudoscience](./books/the-scientific-attitude.md)  
+- [🔥⛈️ Fire Weather: A True Story from a Hotter World](./books/fire-weather.md)  
+- [🚫✅🤥 Post-Truth](./books/post-truth.md)  
+- [💰🤥 Merchants of Doubt](./books/merchants-of-doubt.md)  
 - [📗🚀🌍 Operating Manual for Spaceship Earth](./books/operating-manual-for-spaceship-earth.md)  
 - [🔥📜 The Motivation Manifesto: 9 Declarations to Claim Your Personal Power](./books/the-motivation-manifesto-9-declarations-to-claim-your-personal-power.md)  
 - [🐌🎯 Slow Productivity: The Lost Art of Accomplishment Without Burnout](./books/slow-productivity-the-lost-art-of-accomplishment-without-burnout.md)  
-- [💪❤️ So Good They Can't Ignore You: Why Skills Trump Passion in the Quest for Work You Love](./books/so-good-they-cant-ignore-you-why-skills-trump-passion-in-the-quest-for-work-you-love.md)  
-- [👍🦮🌌 The Hitchhiker's Guide to the Galaxy](./books/the-hitchhikers-guide-to-the-galaxy.md)  
-- [🧘🏼‍♀️📅 The Daily Stoic: 366 Meditations on Wisdom, Perseverance, and the Art of Living](./books/the-daily-stoic-366-meditations-on-wisdom-perseverance-and-the-art-of-living.md)  
-- [🏍️🧘❓ Zen and the Art of Motorcycle Maintenance: An Inquiry into Values](./books/zen-and-the-art-of-motorcycle-maintenance-an-inquiry-into-values.md)  
-- [🧠🫂 The Embodied Mind: Cognitive Science and Human Experience](./books/the-embodied-mind-cognitive-science-and-human-experience.md)  
-- [🧠🌱🤔 Mind in Life: Biology, Phenomenology, and the Sciences of Mind](./books/mind-in-life-biology-phenomenology-and-the-sciences-of-mind.md)  
-- [🏃😊❤️ The Joy of Movement: How Exercise Helps Us Find Happiness, Hope, Connection, and Courage](./books/the-joy-of-movement-how-exercise-helps-us-find-happiness-hope-connection-and-courage.md)  
   
   
-## [📺 Videos](./videos/index.md) (267)  
+## [📺 Videos](./videos/index.md) (269)  
+- [🧪📈✅💡 The secret formula that guarantees success (according to science)](./videos/the-secret-formula-that-guarantees-success-according-to-science.md)  
+- [👨‍⚕️➡️😬💉💥 Former CDC director reacts to RFK Jr.'s firing of entire vaccine advisory panel](./videos/former-cdc-director-reacts-to-rfk-jrs-firing-of-entire-vaccine-advisory-panel.md)  
+- [⚠️🌊🏘️❌ FEMA missed major flood risks at Camp Mystic in Texas, new analysis reveals](./videos/fema-missed-major-flood-risks-at-camp-mystic-in-texas-new-analysis-reveals.md)  
+- [👴🚫📈 Why the Trump Administration Is Doubling Down as Momentum Grows Against Them | Explainer](./videos/why-the-trump-administration-is-doubling-down-as-momentum-grows-against-them-explainer.md)  
 - [🧠📈🥇 15 Books That Will Make You a Top 1% Thinker](./videos/15-books-that-will-make-you-a-top-1-percent-thinker.md)  
 - [👶🏃‍♀️🏅✅ Thule Urban Glide 3 Full Review | Best Running / Jogging Stroller 2024](./videos/thule-urban-glide-3-full-review-best-running-jogging-stroller-2024.md)  
 - [❓🤯😵‍💫 What the Heck Just Happened | 2025-08-30](./videos/what-the-heck-just-happened-2025-08-30.md)  
 - [🇺🇸🗣️🏛️ American Conversations: Senator Sherrod Brown](./videos/american-conversations-senator-sherrod-brown.md)  
 - [🇺🇸🗳️⚠️ A Big-Picture Look at the Threat to Voting Coming From the Trump Administration | Explainer](./videos/a-big-picture-look-at-the-threat-to-voting-coming-from-the-trump-administration-explainer.md)  
 - [⚙️💨🧘 I built a system that makes work feel easy](./videos/i-built-a-system-that-makes-work-feel-easy.md)  
-- [😇🧠⚖️ The Righteous Mind | Jonathan Haidt | Talks at Google](./videos/the-righteous-mind-jonathan-haidt-talks-at-google.md)  
-- [💰💣 What Trump’s ‘Big, Beautiful Bill’ Is Really Doing (Part 1) | The Ezra Klein Show](./videos/what-trumps-big-beautiful-bill-is-really-doing-part-1-the-ezra-klein-show.md)  
-- [👹📜🏛️🏠 What's in the version of Trump's bill passed by the Senate and its chances in the House](./videos/whats-in-the-version-of-trumps-bill-passed-by-the-senate-and-its-chances-in-the-house.md)  
-- [🇺🇸💔🩹❓ Can a divided America heal? | Jonathan Haidt](./videos/can-a-divided-america-heal-jonathan-haidt.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (82)  
@@ -57,12 +57,12 @@ title: 🏡 Home
 - [🧑‍💼🛡️ Job Guarantee / Employer of Last Resort](./topics/job-guarantee-employer-of-last-resort.md)  
   
   
-## [📄  Articles](./articles/index.md) (52)  
+## [📄  Articles](./articles/index.md) (53)  
+- [🇺🇸⛰️☀️💉 Washington, Oregon and California will issue their own vaccine recommendations, separate from CDC](./articles/washington-oregon-and-california-will-issue-their-own-vaccine-recommendations-separate-from-cdc.md)  
 - [👀👶🏼🏃🏼‍♀️🛣️ What to Look for in a Jogging Stroller](./articles/what-to-look-for-in-a-jogging-stroller.md)  
 - [🧠🪜⏱️📈 Hierarchical gradients of multiple timescales in the mammalian forebrain](./articles/hierarchical-gradients-of-multiple-timescales-in-the-mammalian-forebrain.md)  
 - [🧠🤖📈 Scientists just developed a new AI modeled on the human brain — it's outperforming LLMs like ChatGPT at reasoning tasks](./articles/scientists-just-developed-a-new-ai-modeled-on-the-human-brain-its-outperforming-llms-like-chatgpt-at-reasoning-tasks.md)  
 - [📈🤖✍️🔄 AI traffic is up 527%. SEO is being rewritten.](./articles/ai-traffic-is-up-527-percent-seo-is-being-rewritten.md)  
-- [🇷🇺🇺🇸👹🗳️💸 Letters from an American - August 18, 2025](./articles/letters-from-an-american-august-18-2025.md)  
   
   
 ## [🤖💬 Bot Chats](./bot-chats/index.md) (43)  

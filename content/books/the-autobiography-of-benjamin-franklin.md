@@ -54,7 +54,7 @@ The narrative details Franklin's relentless 🚀 pursuit of self-improvement, in
   
 ### 🎨 Creatively Related Books  
   
-* 📜 **Common Sense by Thomas Paine**: 💯 A pamphlet that greatly influenced the American Revolution, it reflects the revolutionary spirit and Enlightenment ideals that Franklin championed and actively participated in shaping. Reading Paine offers insight into the political discourse of Franklin's era.  
+* **[🧠💡 Common Sense](./common-sense.md) by Thomas Paine**: 💯 A pamphlet that greatly influenced the American Revolution, it reflects the revolutionary spirit and Enlightenment ideals that Franklin championed and actively participated in shaping. Reading Paine offers insight into the political discourse of Franklin's era.  
 * 💡 **Poor Richard's Almanack by Benjamin Franklin**: 💯 While not an autobiography, this collection of aphorisms, proverbs, and practical advice published by Franklin himself provides direct insight into the values he promoted—frugality, industry, and moral rectitude—which are also central to his autobiography.  
 * 🐭 **Ben and Me by Robert Lawson**: 💯 This charming children's book offers a fictionalized, humorous account of Benjamin Franklin's life told from the perspective of a mouse named Amos, who claims to be the true brains behind Franklin's many inventions and achievements. It provides a lighthearted, imaginative entry point into Franklin's world.  
   

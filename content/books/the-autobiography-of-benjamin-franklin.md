@@ -5,6 +5,7 @@ aliases:
 URL: https://bagrounds.org/books/the-autobiography-of-benjamin-franklin
 share: true
 affiliate link: https://amzn.to/4m4BISH
+CTA: 🇺🇸 Embrace self-improvement.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ⚡️ The Autobiograpy of Benjamin Franklin  

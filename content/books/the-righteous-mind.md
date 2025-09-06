@@ -9,7 +9,7 @@ tags:
 affiliate link: https://amzn.to/3ZIy2gS
 CTA: 🤝 Bridge divides.
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](../index.md) > [Books](./index.md) | [🧠🤝🐘 Jonathan Haidt](../people/jonathan-haidt.md)  
 # 😇🧠 The Righteous Mind: Why Good People Are Divided by Politics and Religion  
 [🛒 The Righteous Mind: Why Good People Are Divided by Politics and Religion. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3ZIy2gS)  
   

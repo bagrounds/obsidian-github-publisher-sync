@@ -62,7 +62,7 @@ Key concepts explored include:
   
 ### 🆚 Contrasting Books (Different Perspectives on Depression)  
   
-* 😔 **The Noonday Demon: An Atlas of Depression** by Andrew Solomon: A comprehensive and deeply personal exploration of depression from various angles, including its history, cultural context, and treatment, offering a wide-ranging view beyond a single therapeutic modality. 🗺️  
+* **[☀️👿 The Noonday Demon: An Atlas of Depression](./the-noonday-demon-an-atlas-of-depression.md)** by Andrew Solomon: A comprehensive and deeply personal exploration of depression from various angles, including its history, cultural context, and treatment, offering a wide-ranging view beyond a single therapeutic modality. 🗺️  
 * 🌍 **Lost Connections: Why You’re Depressed and Anxious and How to Find Hope** by Johann Hari: Argues that depression and anxiety are often rooted in social and environmental factors rather than just chemical imbalances, offering a contrasting perspective on the causes of unhappiness. 🌳  
   
 ### 🎨 Creatively Related Books (Exploring Themes, Practices, or Personal Journeys)  

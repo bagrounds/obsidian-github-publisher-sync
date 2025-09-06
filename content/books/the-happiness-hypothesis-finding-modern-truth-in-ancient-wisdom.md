@@ -7,9 +7,15 @@ share: true
 affiliate link: https://amzn.to/47h4Dit
 CTA: ☀️ Discover serenity.
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](../index.md) > [Books](./index.md) | [🧠🤝🐘 Jonathan Haidt](../people/jonathan-haidt.md)  
 # 😀📜 The Happiness Hypothesis: Finding Modern Truth in Ancient Wisdom  
 [🛒 The Happiness Hypothesis: Finding Modern Truth in Ancient Wisdom. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/47h4Dit)  
+  
+## 📝🐒 Human Notes  
+- [👴🏽📚 The Teachings of Ptahhotep: The Oldest Book in the World](./the-teachings-of-ptahhotep-the-oldest-book-in-the-world.md)  
+- [⚡️ The Autobiograpy of Benjamin Franklin](./the-autobiography-of-benjamin-franklin.md)  
+- [🧠💡 Common Sense](./common-sense.md)  
+- [👤🤔 The Ethics of Identity](./the-ethics-of-identity.md)  
   
 ## 📖 Book Report: The Happiness Hypothesis: Finding Modern Truth in Ancient Wisdom  
   
@@ -40,7 +46,7 @@ CTA: ☀️ Discover serenity.
 ### ➖ Contrasting Books  
   
 * 💔 **Loving Ourselves** by Ray Ashford. 🗓️ This book, published in 1977, is noted to offer a contrasting path to happiness by focusing more on the "negative side" of psychology, unlike Haidt's emphasis on positive psychology. 📜 It presents a different historical and psychological framework for understanding personal well-being.  
-* 😔 **The Noonday Demon: An Atlas of Depression** by Andrew Solomon. 🌑 While not directly contrasting in methodology, this book offers a profound exploration of depression, providing a stark contrast to the pursuit of happiness. 😥 It delves into the nature of suffering and mental illness, offering a perspective that highlights the challenges to well-being that Haidt's book aims to address.  
+* **[☀️👿 The Noonday Demon: An Atlas of Depression](./the-noonday-demon-an-atlas-of-depression.md)** by Andrew Solomon. 🌑 While not directly contrasting in methodology, this book offers a profound exploration of depression, providing a stark contrast to the pursuit of happiness. 😥 It delves into the nature of suffering and mental illness, offering a perspective that highlights the challenges to well-being that Haidt's book aims to address.  
   
 ### 💡 Creatively Related Books  
   

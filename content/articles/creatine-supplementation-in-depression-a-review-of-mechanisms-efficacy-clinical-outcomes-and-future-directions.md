@@ -4,8 +4,8 @@ aliases:
   - "💪🧠📉💊🔎 Creatine Supplementation in Depression: A Review of Mechanisms, Efficacy, Clinical Outcomes, and Future Directions"
 title: "💪🧠📉💊🔎 Creatine Supplementation in Depression: A Review of Mechanisms, Efficacy, Clinical Outcomes, and Future Directions"
 URL: https://bagrounds.org/articles/creatine-supplementation-in-depression-a-review-of-mechanisms-efficacy-clinical-outcomes-and-future-directions
-Author: 
-tags: 
+Author:
+tags:
 ---
 [Home](../index.md) > [Articles](./index.md)  
 # 💪🧠📉💊🔎 [Creatine Supplementation in Depression: A Review of Mechanisms, Efficacy, Clinical Outcomes, and Future Directions](https://pmc.ncbi.nlm.nih.gov/articles/PMC11567172)  
@@ -23,7 +23,7 @@ tags:
 ## 📚 Book Recommendations  
 * 🧠 **On Depression and Mental Health:**  
     * 📖 [😊👍 Feeling Good: The New Mood Therapy](../books/feeling-good-the-new-mood-therapy.md) by David D. Burns (for cognitive behavioral therapy approaches to depression)  
-    * 📖 *The Noonday Demon: An Atlas of Depression* by Andrew Solomon (a comprehensive look at depression)  
+    * [☀️👿 The Noonday Demon: An Atlas of Depression](../books/the-noonday-demon-an-atlas-of-depression.md) by Andrew Solomon (a comprehensive look at depression)  
     * 📖 *Lost Connections: Why You’re Depressed and How to Find Hope* by Johann Hari (exploring societal causes of depression and anxiety)  
 * 🍎 **On Nutrition, Supplements, and Brain Health:**  
     * 📖 *Brain Food: The Surprising Science of Eating Smart* by Lisa Mosconi (focuses on the impact of diet on brain health)  

@@ -15,7 +15,7 @@ URL: https://bagrounds.org/people/jonathan-haidt
   
 🌟 Some of his key contributions and ideas include:  
   
-* ❤️‍🩹⚖️🤝👑😇🗽 **[❤️‍🩹⚖️🤝👑😇🗽 Moral Foundations Theory](../topics/moral-foundations-theory.md):** 🧠 This theory, which he co-developed, proposes that human moral reasoning is not based solely on logic, but is rooted in a set of innate, intuitive foundations. These foundations include care/harm, fairness/cheating, loyalty/betrayal, authority/subversion, and sanctity/degradation. ⚖️ A sixth foundation, liberty/oppression, has also been added. 🌍 He uses this framework to explain why people with different political ideologies often have different moral priorities.  
+-  **[❤️‍🩹⚖️🤝👑😇🗽 Moral Foundations Theory](../topics/moral-foundations-theory.md):** 🧠 This theory, which he co-developed, proposes that human moral reasoning is not based solely on logic, but is rooted in a set of innate, intuitive foundations. These foundations include care/harm, fairness/cheating, loyalty/betrayal, authority/subversion, and sanctity/degradation. ⚖️ A sixth foundation, liberty/oppression, has also been added. 🌍 He uses this framework to explain why people with different political ideologies often have different moral priorities.  
 * 🐶 The Social Intuitionist Model: This model argues that moral judgments are primarily driven by fast, automatic moral intuitions, and that moral reasoning is often used after the fact to justify those initial intuitions. 🐕‍🦺 He describes this using the metaphor of an "emotional dog and its rational tail."  
   
 ✍️ Haidt is also known for his widely-read books that explore these concepts for a general audience:  

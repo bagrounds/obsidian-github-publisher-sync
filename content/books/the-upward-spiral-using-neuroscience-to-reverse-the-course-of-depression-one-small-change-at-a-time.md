@@ -48,7 +48,7 @@ The book explains how various ⚙️ brain circuits contribute to depression and
   
 * 🌍 **Lost Connections: Uncovering the Real Causes of Depression - and the Unexpected Solutions by Johann Hari:** Argues that social and environmental factors, rather than just biological ones, are primary drivers of depression and anxiety, offering a critique of purely medical models.  
 * 😔 **Darkness Visible: A Memoir of Madness by William Styron:** A powerful and personal memoir offering a raw and intimate account of the subjective experience of severe depression.  
-* 📖 **The Noonday Demon: An Atlas of Depression by Andrew Solomon:** A comprehensive exploration of depression, combining personal experience, historical context, and scientific research across cultures.  
+* **[☀️👿 The Noonday Demon: An Atlas of Depression](./the-noonday-demon-an-atlas-of-depression.md) by Andrew Solomon:** A comprehensive exploration of depression, combining personal experience, historical context, and scientific research across cultures.  
 * 💊 **Against Depression by Peter D. Kramer:** A more philosophical and historical look at depression and its treatment, including the impact of antidepressants.  
 * 🏞️ **Swamplands of the Soul: New Life in Dismal Places by James Hollis:** A Jungian perspective on depression and emotional struggles, viewing them as opportunities for psychological growth rather than just something to be cured.  
   

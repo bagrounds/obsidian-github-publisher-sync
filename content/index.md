@@ -10,7 +10,9 @@ title: 🏡 Home
 📑 Notes, 💭 thoughts, and 🔗 Links.  
 ❔ What do 🫵 _you_ 🤔 think?  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (294)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (296)  
+- [2025-09-06](./reflections/2025-09-06.md)  
+- [2025-09-05 | 🤔 Ideological 📚](./reflections/2025-09-05.md)  
 - [2025-09-04 | 🏆 Success | 😇 Virtue | 🍓 Strawberry 📺📚👶🏼](./reflections/2025-09-04.md)  
 - [2025-09-03 | 🏍️ Glide | 🤥 Doubt 🛍️📺📚📄👶🏼](./reflections/2025-09-03.md)  
 - [2025-09-02 | 🧠 Mind | 🧎🏼‍♂️ Kneeling 📚👶🏼](./reflections/2025-09-02.md)  
@@ -19,24 +21,24 @@ title: 🏡 Home
 - [2025-08-30 | 🤖 Chatbots | 📜 Philosophy | ⚠️ Threats 🌌📚📺](./reflections/2025-08-30.md)  
 - [2025-08-29 | 😇 Righteous | ☺️ Happy | 👀 Aware 📚🌌](./reflections/2025-08-29.md)  
 - [2025-08-28 | 👉 Right | 🐒 Behave | 💼🛟 JobNet 📺📚💡](./reflections/2025-08-28.md)  
-- [2025-08-27 | ☺️ Happy | 😶 Stoic 📚](./reflections/2025-08-27.md)  
-- [2025-08-26 | 😇⛰️ Moral Foundations | ⛓️‍💥 Brittle 📚🌌👥📺✍️](./reflections/2025-08-26.md)  
   
   
-## [📚 Books](./books/index.md) (599)  
-- [🚀🧠🏆 Ultralearning: Master Hard Skills, Outsmart the Competition, and Accelerate Your Career](./books/ultralearning-master-hard-skills-outsmart-the-competition-and-accelerate-your-career.md)  
-- [⚡️ The Autobiograpy of Benjamin Franklin](./books/the-autobiography-of-benjamin-franklin.md)  
-- [👴🏽📚 The Teachings of Ptahhotep: The Oldest Book in the World](./books/the-teachings-of-ptahhotep-the-oldest-book-in-the-world.md)  
-- [🥼🛡️ The Scientific Attitude: Defending Science from Denial, Fraud, and Pseudoscience](./books/the-scientific-attitude.md)  
-- [🔥⛈️ Fire Weather: A True Story from a Hotter World](./books/fire-weather.md)  
-- [🚫✅🤥 Post-Truth](./books/post-truth.md)  
-- [💰🤥 Merchants of Doubt](./books/merchants-of-doubt.md)  
-- [📗🚀🌍 Operating Manual for Spaceship Earth](./books/operating-manual-for-spaceship-earth.md)  
-- [🔥📜 The Motivation Manifesto: 9 Declarations to Claim Your Personal Power](./books/the-motivation-manifesto-9-declarations-to-claim-your-personal-power.md)  
-- [🐌🎯 Slow Productivity: The Lost Art of Accomplishment Without Burnout](./books/slow-productivity-the-lost-art-of-accomplishment-without-burnout.md)  
+## [📚 Books](./books/index.md) (604)  
+- [🌀⬆️🧠 The Upward Spiral: Using Neuroscience to Reverse the Course of Depression, One Small Change at a Time](./books/the-upward-spiral-using-neuroscience-to-reverse-the-course-of-depression-one-small-change-at-a-time.md)  
+- [🧘😞➡️ The Mindful Way Through Depression: Freeing Yourself from Chronic Unhappiness](./books/the-mindful-way-through-depression-freeing-yourself-from-chronic-unhappiness.md)  
+- [😀📜 The Happiness Hypothesis: Finding Modern Truth in Ancient Wisdom](./books/the-happiness-hypothesis-finding-modern-truth-in-ancient-wisdom.md)  
+- [☀️👿 The Noonday Demon: An Atlas of Depression](./books/the-noonday-demon-an-atlas-of-depression.md)  
+- [🗺️❤️📐 Flatland: A Romance of Many Dimensions](./books/flatland-a-romance-of-many-dimensions.md)  
+- [👤🤔 The Ethics of Identity](./books/the-ethics-of-identity.md)  
+- [👑🏛️ Second Treatise of Government](./books/second-treatise-of-government.md)  
+- [🤏📜⏳ A Brief History of Time](./books/a-brief-history-of-time.md)  
+- [👍🦮🌌 The Hitchhiker's Guide to the Galaxy](./books/the-hitchhikers-guide-to-the-galaxy.md)  
+- [😇🧠 The Righteous Mind: Why Good People Are Divided by Politics and Religion](./books/the-righteous-mind.md)  
   
   
 ## [📺 Videos](./videos/index.md) (269)  
+- [🇺🇸🎂🎉🤔 Okay, But Why Do We Celebrate the 4th of July?](./videos/okay-but-why-do-we-celebrate-the-4th-of-july.md)  
+- [📜🇺🇸🗽➡️ The Declaration of Independence | Journey to American Democracy](./videos/the-declaration-of-independence-journey-to-american-democracy.md)  
 - [🧪📈✅💡 The secret formula that guarantees success (according to science)](./videos/the-secret-formula-that-guarantees-success-according-to-science.md)  
 - [👨‍⚕️➡️😬💉💥 Former CDC director reacts to RFK Jr.'s firing of entire vaccine advisory panel](./videos/former-cdc-director-reacts-to-rfk-jrs-firing-of-entire-vaccine-advisory-panel.md)  
 - [⚠️🌊🏘️❌ FEMA missed major flood risks at Camp Mystic in Texas, new analysis reveals](./videos/fema-missed-major-flood-risks-at-camp-mystic-in-texas-new-analysis-reveals.md)  
@@ -45,8 +47,6 @@ title: 🏡 Home
 - [👶🏃‍♀️🏅✅ Thule Urban Glide 3 Full Review | Best Running / Jogging Stroller 2024](./videos/thule-urban-glide-3-full-review-best-running-jogging-stroller-2024.md)  
 - [❓🤯😵‍💫 What the Heck Just Happened | 2025-08-30](./videos/what-the-heck-just-happened-2025-08-30.md)  
 - [🇺🇸🗣️🏛️ American Conversations: Senator Sherrod Brown](./videos/american-conversations-senator-sherrod-brown.md)  
-- [🇺🇸🗳️⚠️ A Big-Picture Look at the Threat to Voting Coming From the Trump Administration | Explainer](./videos/a-big-picture-look-at-the-threat-to-voting-coming-from-the-trump-administration-explainer.md)  
-- [⚙️💨🧘 I built a system that makes work feel easy](./videos/i-built-a-system-that-makes-work-feel-easy.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (82)  
@@ -58,11 +58,11 @@ title: 🏡 Home
   
   
 ## [📄  Articles](./articles/index.md) (53)  
+- [💪🧠📉💊🔎 Creatine Supplementation in Depression: A Review of Mechanisms, Efficacy, Clinical Outcomes, and Future Directions](./articles/creatine-supplementation-in-depression-a-review-of-mechanisms-efficacy-clinical-outcomes-and-future-directions.md)  
 - [🇺🇸⛰️☀️💉 Washington, Oregon and California will issue their own vaccine recommendations, separate from CDC](./articles/washington-oregon-and-california-will-issue-their-own-vaccine-recommendations-separate-from-cdc.md)  
 - [👀👶🏼🏃🏼‍♀️🛣️ What to Look for in a Jogging Stroller](./articles/what-to-look-for-in-a-jogging-stroller.md)  
 - [🧠🪜⏱️📈 Hierarchical gradients of multiple timescales in the mammalian forebrain](./articles/hierarchical-gradients-of-multiple-timescales-in-the-mammalian-forebrain.md)  
 - [🧠🤖📈 Scientists just developed a new AI modeled on the human brain — it's outperforming LLMs like ChatGPT at reasoning tasks](./articles/scientists-just-developed-a-new-ai-modeled-on-the-human-brain-its-outperforming-llms-like-chatgpt-at-reasoning-tasks.md)  
-- [📈🤖✍️🔄 AI traffic is up 527%. SEO is being rewritten.](./articles/ai-traffic-is-up-527-percent-seo-is-being-rewritten.md)  
   
   
 ## [🤖💬 Bot Chats](./bot-chats/index.md) (43)  

@@ -5,6 +5,7 @@ aliases:
 URL: https://bagrounds.org/books/the-upward-spiral-using-neuroscience-to-reverse-the-course-of-depression-one-small-change-at-a-time
 share: true
 affiliate link: https://amzn.to/4mSyumA
+CTA: 🧠 Rewire for happiness.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🌀⬆️🧠 The Upward Spiral: Using Neuroscience to Reverse the Course of Depression, One Small Change at a Time  

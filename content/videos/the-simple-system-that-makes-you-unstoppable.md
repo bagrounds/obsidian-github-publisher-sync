@@ -14,6 +14,9 @@ youtube: https://youtu.be/fesslaSxdqs
 # 🛠️⚙️🚀🛡️ The simple system that makes you unstoppable  
 ![The simple system that makes you unstoppable.](https://youtu.be/fesslaSxdqs)  
   
+## 📝🐒 Human Notes  
+- 🏋🏽‍♂️🔗🍦 Before indulging my nightly ice cream habit, I do a set of pushups or dance with my son for 1 song.  
+  
 ## 🤖 AI Summary  
 🎯 This video outlines a 🪜 six-step framework to achieve goals effortlessly and build positive habits \[[00:06](http://www.youtube.com/watch?v=fesslaSxdqs&t=6)\]. 🗣️ The speaker shares his personal experience of using this system to consistently hold a 15-minute plank daily \[[00:13](http://www.youtube.com/watch?v=fesslaSxdqs&t=13)\].  
   

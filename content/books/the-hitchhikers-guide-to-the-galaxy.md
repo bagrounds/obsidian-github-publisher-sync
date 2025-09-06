@@ -65,8 +65,8 @@ affiliate link: https://amzn.to/41qogAX
 ### 🎨 Creatively Related Books  
   
 * 💀 **Cat's Cradle by Kurt Vonnegut:** This satirical novel delves into themes of science, religion, and the end of the world with dark humor and a deeply absurd worldview, reminiscent of Adams's philosophical musings on meaninglessness.  
-* 📐 **Flatland A Romance of Many Dimensions by Edwin A Abbott:** This mathematical novella explores concepts of different dimensions and societal structures through the eyes of a square, offering a unique narrative perspective and mind-bending ideas about reality, similar to the imaginative scope of Adams's universe.  
-* 🏍️ **Zen and the Art of Motorcycle Maintenance by Robert M Pirsig:** This philosophical novel explores a man's intellectual and spiritual journey, delving into questions of quality, values, and the meaning of life, echoing the underlying philosophical quest present in Arthur Dent's cosmic wanderings.  
+* **[🗺️❤️📐 Flatland: A Romance of Many Dimensions](./flatland-a-romance-of-many-dimensions.md) by Edwin A Abbott:** This mathematical novella explores concepts of different dimensions and societal structures through the eyes of a square, offering a unique narrative perspective and mind-bending ideas about reality, similar to the imaginative scope of Adams's universe.  
+* **[🏍️🧘❓ Zen and the Art of Motorcycle Maintenance: An Inquiry into Values](./zen-and-the-art-of-motorcycle-maintenance-an-inquiry-into-values.md) by Robert M Pirsig:** This philosophical novel explores a man's intellectual and spiritual journey, delving into questions of quality, values, and the meaning of life, echoing the underlying philosophical quest present in Arthur Dent's cosmic wanderings.  
   
 ## 💬 [Gemini](https://gemini.google.com) Prompt (gemini-2.5-flash)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by similar, contrasting, and creatively related book recommendations on The Hitchhiker's Guide to the Galaxy. Never quote or italicize titles. Be thorough but concise. Use section headings and bulleted lists to avoid long blocks of text.

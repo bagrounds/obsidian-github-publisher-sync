@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org/books/the-fifth-risk
 share: true
 affiliate link: https://amzn.to/44VXum6
-CTA: Confront incompetence.
+CTA: 🚨 Shield our future.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ⚠️🥴🕹️🌐 The Fifth Risk  
@@ -44,7 +44,7 @@ CTA: Confront incompetence.
     * 💰 *Liar's Poker* (Lewis's memoir of his time as a bond salesman in the 1980s, offering an inside look at financial culture and risk).  
   
 * **On U.S. Government & Bureaucracy:**  
-    * 🤝 *Team of Rivals: The Political Genius of Abraham Lincoln* by Doris Kearns Goodwin (A historical look at presidential leadership and cabinet building, offering a contrasting view of a highly functional and diverse team).  
+    * [🤝🏛️ Team of Rivals: The Political Genius of Abraham Lincoln](./team-of-rivals-the-political-genius-of-abraham-lincoln.md) by Doris Kearns Goodwin (A historical look at presidential leadership and cabinet building, offering a contrasting view of a highly functional and diverse team).  
     * 💣 *Command and Control: Nuclear Weapons, the Damascus Accident, and the Illusion of Safety* by Eric Schlosser (Examines the history of nuclear weapons safety, highlighting the inherent risks and the systems in place, connecting to the DOE's role).  
     * 🕵️ *Legacy of Ashes: The History of the CIA* by Tim Weiner (A critical look at another crucial, often opaque, government agency managing significant risks).  
     * 🧠 *The Death of Expertise: The Campaign Against Established Knowledge and Why it Matters* by Tom Nichols (Explores the societal devaluation of expertise, a theme central to *The Fifth Risk*'s concerns about ignoring career officials).  

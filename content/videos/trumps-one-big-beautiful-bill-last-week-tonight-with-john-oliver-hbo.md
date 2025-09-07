@@ -4,10 +4,10 @@ aliases:
   - "🤡💵📺 Trump’s One Big Beautiful Bill: Last Week Tonight with John Oliver (HBO)"
 title: "🤡💵📺 Trump’s One Big Beautiful Bill: Last Week Tonight with John Oliver (HBO)"
 URL: https://bagrounds.org/videos/trumps-one-big-beautiful-bill-last-week-tonight-with-john-oliver-hbo
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: LastWeekTonight
-tags: 
+tags:
 youtube: https://youtu.be/vjFL-cBcjKc
 ---
 [Home](../index.md) > [Videos](./index.md)  
@@ -45,7 +45,7 @@ youtube: https://youtu.be/vjFL-cBcjKc
     * 💰📈🌍⏳ *[Capital in the Twenty-First Century](../books/capital-in-the-twenty-first-century.md)* by Thomas Piketty  
     * [💰➡️ The Triumph of Injustice: How the Rich Dodge Taxes and How to Make Them Pay](../books/the-triumph-of-injustice-how-the-rich-dodge-taxes-and-how-to-make-them-pay.md) by Emmanuel Saez and Gabriel Zucman  
 * **📚 For understanding the legislative process and political dynamics**:  
-    * *🏛️🤝 Team of Rivals: The Political Genius of Abraham Lincoln* by Doris Kearns Goodwin (while historical, it offers insights into political maneuvering and compromise)  
+    * [🤝🏛️ Team of Rivals: The Political Genius of Abraham Lincoln](../books/team-of-rivals-the-political-genius-of-abraham-lincoln.md) by Doris Kearns Goodwin (while historical, it offers insights into political maneuvering and compromise)  
     * *👤 The Power Elite* by C. Wright Mills (a classic on power structures in America)  
   
 ## 🐦 Tweet  

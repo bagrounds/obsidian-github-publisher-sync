@@ -5,6 +5,7 @@ aliases:
 URL: https://bagrounds.org/books/a-very-stable-genius-donald-j-trumps-testing-of-america
 share: true
 affiliate link: https://amzn.to/4jJeL64
+CTA: 🚨 Confront the truth.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🤡🫨😭🤬😵‍💫🤥👹🇺🇸 A Very Stable Genius: Donald J. Trump's Testing of America  
@@ -64,7 +65,7 @@ affiliate link: https://amzn.to/4jJeL64
 * **[👁️ Nineteen Eighty-Four](./1984.md)** by George Orwell: A dystopian novel exploring themes of surveillance, propaganda, and authoritarianism, relevant for its examination of truth and power.  
 * 🏗️ **The Power Broker: Robert Moses and the Fall of New York** by Robert Caro: A monumental biography detailing the accumulation and use of power by Robert Moses, offering a deep dive into the nature of wielding influence in a political system.  
 * **[🤔🐇🐢 Thinking, Fast and Slow](./thinking-fast-and-slow.md)** by Daniel Kahneman: While not political, this book on cognitive biases and decision-making can offer a framework for understanding the psychological aspects of leadership and public perception.  
-* 🤝 **Team of Rivals: The Political Genius of Abraham Lincoln** by Doris Kearns Goodwin: A historical account of Lincoln's presidency and his strategic inclusion of political rivals in his cabinet, providing a contrasting example of leadership style.  
+* **[🤝🏛️ Team of Rivals: The Political Genius of Abraham Lincoln](./team-of-rivals-the-political-genius-of-abraham-lincoln.md)** by Doris Kearns Goodwin: A historical account of Lincoln's presidency and his strategic inclusion of political rivals in his cabinet, providing a contrasting example of leadership style.  
 * 🧘 **Make Mindfulness Great Again: A Very Stable Genius's Guide to Inner Peace** by (Various Authors, presented as humor/gag gift): A humorous take that repurposes the book's title phrase in a completely different, non-political context, highlighting the cultural impact of Trump's rhetoric.  
 * 📜 Books on the history of American populism or political movements, providing broader context for Trump's rise to power.  
 * ⏳ Works of historical analysis focusing on moments of political crisis or transitions of power in democracies.  

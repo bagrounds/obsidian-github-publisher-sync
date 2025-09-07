@@ -44,7 +44,7 @@ affiliate link: https://amzn.to/3Hvk2B0
 * 📖 **Mind Over Mood: Change How You Feel by Changing the Way You Think by Dennis Greenberger and Christine A. Padesky:** 🗂️ Another highly recommended workbook-style approach to CBT, providing structured worksheets to help identify and change negative thinking patterns.  
 * 📖 **Retrain Your Brain: Cognitive Behavioral Therapy in 7 Weeks: A Workbook for Managing Depression and Anxiety by Seth J. Gillihan PhD:** 🗓️ A practical workbook designed to guide readers through CBT principles and exercises over a seven-week period.  
 * 📖 **Feeling Great: The Revolutionary New Treatment for Depression and Anxiety by David D. Burns MD:** 🆕 A more recent work by Burns, presenting updated techniques and insights, particularly related to TEAM-CBT.  
-* 📖 **The Happiness Trap: How to Stop Struggling and Start Living: A Guide to ACT by Russ Harris:** 🧘 Introduces Acceptance and Commitment Therapy (ACT), a related but distinct approach that emphasizes accepting difficult thoughts and feelings while committing to values-based actions.  
+* **[😩😊 The Happiness Trap: How to Stop Struggling and Start Living](./the-happiness-trap-how-to-stop-struggling-and-start-living.md): A Guide to ACT by Russ Harris:** 🧘 Introduces Acceptance and Commitment Therapy (ACT), a related but distinct approach that emphasizes accepting difficult thoughts and feelings while committing to values-based actions.  
   
 ### 🔄 Contrasting Books (Different Therapeutic Approaches or Perspectives)  
   

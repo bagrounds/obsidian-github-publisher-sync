@@ -4,9 +4,10 @@ aliases:
   - "🏆📰📣 How to Win an Information War: The Propagandist Who Outwitted Hitler"
 title: "🏆📰📣 How to Win an Information War: The Propagandist Who Outwitted Hitler"
 URL: https://bagrounds.org/books/how-to-win-an-information-war
-Author: 
-tags: 
+Author:
+tags:
 affiliate link: https://amzn.to/4kLWjL2
+CTA: ⚔️ Resist disinformation.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🏆📰📣 How to Win an Information War: The Propagandist Who Outwitted Hitler  
@@ -70,7 +71,7 @@ affiliate link: https://amzn.to/4kLWjL2
   
 * 🌐 **The Net Delusion: The Dark Side of Internet Freedom** by Evgeny Morozov: Critiques cyber-utopianism, arguing that the internet can empower authoritarian regimes as much as, or more than, it empowers democratic movements.  
 * 🤡 **Amusing Ourselves to Death: Public Discourse in the Age of Show Business** by Neil Postman: Argues that television (and by extension, image-based media) degrades public discourse by prioritizing entertainment over substance, contrasting with propaganda's deliberate manipulation.  
-* 🤕 **The Coddling of the American Mind: How Good Intentions and Bad Ideas Are Setting Up a Generation for Failure** by Greg Lukianoff and Jonathan Haidt: While not about information warfare *per se*, it explores cognitive distortions and safetyism on campuses, offering a different perspective on vulnerabilities in modern discourse and critical thinking.  
+* **[🤕👶 The Coddling of the American Mind: How Good Intentions and Bad Ideas Are Setting Up a Generation for Failure](./the-coddling-of-the-american-mind-how-good-intentions-and-bad-ideas-are-setting-up-a-generation-for-failure.md)** by Greg Lukianoff and Jonathan Haidt: While not about information warfare *per se*, it explores cognitive distortions and safetyism on campuses, offering a different perspective on vulnerabilities in modern discourse and critical thinking.  
 * 🧑‍🏫 **Mind Over Media: Propaganda Education for a Digital Age** by Renee Hobbs: Focuses on media literacy education as a primary defense against propaganda, emphasizing critical consumption skills rather than counter-propaganda tactics.  
 * 🏛️ **Democracy and Truth: A Short History** by Sophia Rosenfeld: Explores the historically complex and often fraught relationship between democratic governance and the concept of truth, offering historical context to current "post-truth" anxieties.  
   

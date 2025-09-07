@@ -38,7 +38,7 @@ CTA: ✅ Embrace paradox.
 * 📚 **"The Meaning of Truth" by William James:** ➕ A sequel to *Pragmatism*, this book further explores the nature of truth as a dynamic and evolving concept shaped by human experience.  
 * **[🌱🧘🏼‍♀️🏆 Mindset: The New Psychology of Success](./mindset.md) by Carol S. Dweck:** 📈 Dweck's influential work explores the difference between a "fixed mindset" and a "growth mindset," aligning with Sivers' emphasis on the power of belief in shaping outcomes.  
 * **[⚛️🔄 Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones](./atomic-habits.md) by James Clear:** 🪜 This book provides a practical framework for building good habits and breaking bad ones, which is a direct application of choosing useful actions to achieve desired results.  
-* 😔 **"The Happiness Trap" by Russ Harris:** ❤️‍🩹 Based on Acceptance and Commitment Therapy (ACT), this book teaches readers to stop struggling against difficult thoughts and feelings and instead focus on living a rich and meaningful life, a sentiment that resonates with Sivers' focus on useful action over internal struggle.  
+* **[😩😊 The Happiness Trap: How to Stop Struggling and Start Living](./the-happiness-trap-how-to-stop-struggling-and-start-living.md) by Russ Harris:** ❤️‍🩹 Based on Acceptance and Commitment Therapy (ACT), this book teaches readers to stop struggling against difficult thoughts and feelings and instead focus on living a rich and meaningful life, a sentiment that resonates with Sivers' focus on useful action over internal struggle.  
   
 ### ⚔️ Contrasting Perspectives: The Case for Objective Truth  
   

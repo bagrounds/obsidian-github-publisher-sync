@@ -4,8 +4,8 @@ aliases:
   - "🎭🤫🧠 Incognito: The Secret Lives of the Brain"
 title: "🎭🤫🧠 Incognito: The Secret Lives of the Brain"
 URL: https://bagrounds.org/books/incognito
-Author: 
-tags: 
+Author:
+tags:
 affiliate link: https://amzn.to/3ZN7SJO
 CTA: Uncover your mind.
 ---

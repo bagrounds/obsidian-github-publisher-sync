@@ -11,7 +11,7 @@ title: 🏡 Home
 ❔ What do 🫵 _you_ 🤔 think?  
   
 ## [🪞 Reflections](./reflections/index.md) ~ Blog (296)  
-- [2025-09-06](./reflections/2025-09-06.md)  
+- [2025-09-06 | 👿 Demon | 🪤 Trap | ♾️ Resilience 📚📺](./reflections/2025-09-06.md)  
 - [2025-09-05 | 🤔 Ideological 📚](./reflections/2025-09-05.md)  
 - [2025-09-04 | 🏆 Success | 😇 Virtue | 🍓 Strawberry 📺📚👶🏼](./reflections/2025-09-04.md)  
 - [2025-09-03 | 🏍️ Glide | 🤥 Doubt 🛍️📺📚📄👶🏼](./reflections/2025-09-03.md)  
@@ -23,7 +23,10 @@ title: 🏡 Home
 - [2025-08-28 | 👉 Right | 🐒 Behave | 💼🛟 JobNet 📺📚💡](./reflections/2025-08-28.md)  
   
   
-## [📚 Books](./books/index.md) (604)  
+## [📚 Books](./books/index.md) (605)  
+- [😊👍 Feeling Good: The New Mood Therapy](./books/feeling-good-the-new-mood-therapy.md)  
+- [✅🤔 Useful Not True](./books/useful-not-true.md)  
+- [😩😊 The Happiness Trap: How to Stop Struggling and Start Living](./books/the-happiness-trap-how-to-stop-struggling-and-start-living.md)  
 - [🌀⬆️🧠 The Upward Spiral: Using Neuroscience to Reverse the Course of Depression, One Small Change at a Time](./books/the-upward-spiral-using-neuroscience-to-reverse-the-course-of-depression-one-small-change-at-a-time.md)  
 - [🧘😞➡️ The Mindful Way Through Depression: Freeing Yourself from Chronic Unhappiness](./books/the-mindful-way-through-depression-freeing-yourself-from-chronic-unhappiness.md)  
 - [😀📜 The Happiness Hypothesis: Finding Modern Truth in Ancient Wisdom](./books/the-happiness-hypothesis-finding-modern-truth-in-ancient-wisdom.md)  
@@ -31,12 +34,11 @@ title: 🏡 Home
 - [🗺️❤️📐 Flatland: A Romance of Many Dimensions](./books/flatland-a-romance-of-many-dimensions.md)  
 - [👤🤔 The Ethics of Identity](./books/the-ethics-of-identity.md)  
 - [👑🏛️ Second Treatise of Government](./books/second-treatise-of-government.md)  
-- [🤏📜⏳ A Brief History of Time](./books/a-brief-history-of-time.md)  
-- [👍🦮🌌 The Hitchhiker's Guide to the Galaxy](./books/the-hitchhikers-guide-to-the-galaxy.md)  
-- [😇🧠 The Righteous Mind: Why Good People Are Divided by Politics and Religion](./books/the-righteous-mind.md)  
   
   
-## [📺 Videos](./videos/index.md) (269)  
+## [📺 Videos](./videos/index.md) (270)  
+- [🧠🛠️♾️💪 How to reprogram your mind to have infinite resilience](./videos/how-to-reprogram-your-mind-to-have-infinite-resilience.md)  
+- [🛠️⚙️🚀🛡️ The simple system that makes you unstoppable](./videos/the-simple-system-that-makes-you-unstoppable.md)  
 - [🇺🇸🎂🎉🤔 Okay, But Why Do We Celebrate the 4th of July?](./videos/okay-but-why-do-we-celebrate-the-4th-of-july.md)  
 - [📜🇺🇸🗽➡️ The Declaration of Independence | Journey to American Democracy](./videos/the-declaration-of-independence-journey-to-american-democracy.md)  
 - [🧪📈✅💡 The secret formula that guarantees success (according to science)](./videos/the-secret-formula-that-guarantees-success-according-to-science.md)  
@@ -45,8 +47,6 @@ title: 🏡 Home
 - [👴🚫📈 Why the Trump Administration Is Doubling Down as Momentum Grows Against Them | Explainer](./videos/why-the-trump-administration-is-doubling-down-as-momentum-grows-against-them-explainer.md)  
 - [🧠📈🥇 15 Books That Will Make You a Top 1% Thinker](./videos/15-books-that-will-make-you-a-top-1-percent-thinker.md)  
 - [👶🏃‍♀️🏅✅ Thule Urban Glide 3 Full Review | Best Running / Jogging Stroller 2024](./videos/thule-urban-glide-3-full-review-best-running-jogging-stroller-2024.md)  
-- [❓🤯😵‍💫 What the Heck Just Happened | 2025-08-30](./videos/what-the-heck-just-happened-2025-08-30.md)  
-- [🇺🇸🗣️🏛️ American Conversations: Senator Sherrod Brown](./videos/american-conversations-senator-sherrod-brown.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (82)  

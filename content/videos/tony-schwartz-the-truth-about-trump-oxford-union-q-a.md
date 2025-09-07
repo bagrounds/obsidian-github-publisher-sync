@@ -4,10 +4,10 @@ aliases:
   - "🤥📢👨‍💼 Tony Schwartz: The Truth About Trump | Oxford Union Q&A"
 title: "🤥📢👨‍💼 Tony Schwartz: The Truth About Trump | Oxford Union Q&A"
 URL: https://bagrounds.org/videos/tony-schwartz-the-truth-about-trump-oxford-union-q-a
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: OxfordUnion
-tags: 
+tags:
 youtube: https://youtu.be/qxF_CDDJ0YI
 ---
 [Home](../index.md) > [Videos](./index.md)  
@@ -33,4 +33,4 @@ This 🗣️ perspective is that of an insider who now has a strong ⚖️ criti
 * A Promised Land by Barack Obama chronicles a presidential journey from a different perspective, offering insight into the complexities of political life and leadership.  
 * The Audacity of Hope by Barack Obama explores the beliefs and values that shape American politics and provides a contrast in political philosophy.  
 * [🤔🐇🐢 Thinking, Fast and Slow](../books/thinking-fast-and-slow.md) by Daniel Kahneman delves into the two systems that drive the way we think, offering a psychological framework to better understand the behaviors discussed.  
-* Team of Rivals The Political Genius of Abraham Lincoln by Doris Kearns Goodwin provides a historical counterpoint, examining a leader who unified disparate personalities and viewpoints.
+* [🤝🏛️ Team of Rivals: The Political Genius of Abraham Lincoln](../books/team-of-rivals-the-political-genius-of-abraham-lincoln.md) by Doris Kearns Goodwin provides a historical counterpoint, examining a leader who unified disparate personalities and viewpoints.

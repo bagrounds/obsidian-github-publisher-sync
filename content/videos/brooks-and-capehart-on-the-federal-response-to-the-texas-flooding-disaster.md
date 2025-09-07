@@ -4,10 +4,10 @@ aliases:
   - ⛈️🇺🇸🗣️💬 Brooks and Capehart on the federal response to the Texas flooding disaster
 title: ⛈️🇺🇸🗣️💬 Brooks and Capehart on the federal response to the Texas flooding disaster
 URL: https://bagrounds.org/videos/brooks-and-capehart-on-the-federal-response-to-the-texas-flooding-disaster
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: PBS NewsHour
-tags: 
+tags:
 youtube: https://youtu.be/spCXl6frtlo
 ---
 [Home](../index.md) > [Videos](./index.md)  
@@ -24,7 +24,7 @@ youtube: https://youtu.be/spCXl6frtlo
 * **On U.S. Politics and Presidential Administrations**:  
     * [😱🤡🇺🇸 Fear: Trump in the White House](../books/fear.md) by Bob Woodward  
     * *A Warning* by Anonymous  
-    * *Team of Rivals: The Political Genius of Abraham Lincoln* by Doris Kearns Goodwin (for historical context on political leadership and navigating crises)  
+    * [🤝🏛️ Team of Rivals: The Political Genius of Abraham Lincoln](../books/team-of-rivals-the-political-genius-of-abraham-lincoln.md) by Doris Kearns Goodwin (for historical context on political leadership and navigating crises)  
 * **On Economics and Trade Policy (Tariffs)**:  
     * *Free to Choose* by Milton Friedman (for a classic perspective on free markets)  
     * *The World Is Flat: A Brief History of the Twenty-first Century* by Thomas L. Friedman (for insights into globalization and trade)  

@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org/books/who-is-government-the-untold-story-of-public-service
 share: true
 affiliate link: https://amzn.to/3T5DPJJ
-CTA: Appreciate public servants.
+CTA: 🏛️ Honor dedication.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🏛️❓ Who Is Government?: The Untold Story of Public Service  
@@ -41,7 +41,7 @@ CTA: Appreciate public servants.
 * **[🗳️🕊️🇺🇸 Democracy in America](./democracy-in-america.md)** ✍️ by Alexis de Tocqueville: While historical, Tocqueville's classic offers foundational observations on American democracy, its institutions, and the role of civil society and government in shaping the nation.  
 * 🏢 ***Working*** ✍️ by Robert Caro: Though focusing on the lives of politicians like Robert Moses and Lyndon B. Johnson, Caro's detailed accounts reveal much about the mechanics of power, government, and infrastructure projects, often highlighting the roles of countless individuals within these systems.  
 * 🏗️ ***The Power Broker: Robert Moses and the Fall of New York*** ✍️ by Robert Caro: A deep dive into how one unelected official wielded immense power to shape a major city, illustrating the significant impact individuals within government structures can have.  
-* 🤝 ***Team of Rivals: The Political Genius of Abraham Lincoln*** ✍️ by Doris Kearns Goodwin: Explores how Lincoln managed a cabinet of strong, often conflicting personalities, offering insights into leadership and navigating complex relationships within a government during crisis.  
+* **[🤝🏛️ Team of Rivals: The Political Genius of Abraham Lincoln](./team-of-rivals-the-political-genius-of-abraham-lincoln.md)** ✍️ by Doris Kearns Goodwin: Explores how Lincoln managed a cabinet of strong, often conflicting personalities, offering insights into leadership and navigating complex relationships within a government during crisis.  
   
 ### ⚖️ Contrasting Reads (Critiques/Different Perspectives on Government)  
   

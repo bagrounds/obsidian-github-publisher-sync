@@ -1,14 +1,14 @@
 ---
 share: true
 aliases:
-  - Snohomish County schools react to education department firings
-title: Snohomish County schools react to education department firings
+  - 🏫🔥 Snohomish County schools react to education department firings
+title: 🏫🔥 Snohomish County schools react to education department firings
 URL: https://bagrounds.org/articles/snohomish-county-schools-react-to-education-department-firings
-Author: 
-tags: 
+Author:
+tags:
 ---
 [Home](../index.md) > [Articles](./index.md)  
-# Snohomish County schools react to education department firings  
+# 🏫🔥 Snohomish County schools react to education department firings  
 ## 🤖 AI Summary  
 ### 📰 Article Summary  
 - **Layoff Announcement 💼:** The U.S. Department of Education is cutting over 1,300 jobs, reducing its staff from about 4,200.  

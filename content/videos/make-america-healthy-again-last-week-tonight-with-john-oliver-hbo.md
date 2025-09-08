@@ -3,7 +3,7 @@ share: true
 aliases:
   - "🇺🇸💪🏥😂 Make America Healthy Again: Last Week Tonight with John Oliver (HBO)"
 title: "🇺🇸💪🏥😂 Make America Healthy Again: Last Week Tonight with John Oliver (HBO)"
-URL: https://bagrounds.org/videos/
+URL: https://bagrounds.org/videos/make-america-healthy-again-last-week-tonight-with-john-oliver-hbo
 Author:
 Platform:
 Channel: LastWeekTonight
@@ -35,4 +35,7 @@ To explore a better understanding, it would be beneficial to examine the argumen
 ## 📚 Book Recommendations  
 * Food Politics by Marion Nestle: A similar book that examines the political and economic forces behind what we eat, and how corporations and the government influence dietary choices.  
 * [💰🤥 Merchants of Doubt](../books/merchants-of-doubt.md) by Naomi Oreskes and Erik M. Conway: A creatively related book that explores how a small group of scientists with connections to corporations and think tanks deliberately obscured scientific research on issues like tobacco and climate change.  
-* The Healthy Deviant by Pilar Gerasimo: A book that offers a different perspective on health, encouraging readers to question conventional health advice and carve their own path.
+* The Healthy Deviant by Pilar Gerasimo: A book that offers a different perspective on health, encouraging readers to question conventional health advice and carve their own path.  
+  
+## 🐦 Tweet  
+<blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">🇺🇸💪🏥😂 Make America Healthy Again: Last Week Tonight with John Oliver (HBO)<br><br>🧑‍⚕️ Public Health Policy | 🧪 Unscientific Claims | 🗣️ Influential Figures | 🔬 Scientific Research | 💉 Vaccines | 🍎 Core Health Issues<a href="https://t.co/d4yyCmImov">https://t.co/d4yyCmImov</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/1964921903484994018?ref_src=twsrc%5Etfw">September 8, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

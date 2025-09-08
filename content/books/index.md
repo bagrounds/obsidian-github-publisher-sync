@@ -7,7 +7,7 @@ URL: https://bagrounds.org/books
 backlinks: false
 ---
 [Home](../index.md)  
-# 📚 Books (605)  
+# 📚 Books (607)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)  
 - [🧑‍🤝‍🧑📈 10 to 25: The Science of Motivating Young People: A Groundbreaking Approach to Leading the Next Generation - And Making Your Own Life Easier](./10-to-25-the-science-of-motivating-young-people-a-groundbreaking-approach-to-leading-the-next-generation-and-making-your-own-life-easier.md)  
@@ -414,6 +414,7 @@ Feedback Control of Dynamic Systems]]
 - [🧠⬆️💼🏠❤️ Taking Charge of Adult ADHD: Proven Strategies to Succeed at Work, at Home, and in Relationships](./taking-charge-of-adult-adhd.md)  
 - [🗣️👶 Talk to Me, Baby!: How You Can Support Young Children's Language Development](./talk-to-me-baby-how-you-can-support-young-childrens-language-development.md)  
 - [🤖🧑‍🏫 Teaching with AI: A Practical Guide to a New Era of Human Learning](./teaching-with-ai-a-practical-guide-to-a-new-era-of-human-learning.md)  
+- [🤝🏛️ Team of Rivals: The Political Genius of Abraham Lincoln](./team-of-rivals-the-political-genius-of-abraham-lincoln.md)  
 - [🧑‍🤝‍🧑⚙️➡️ Team Topologies: Organizing Business and Technology Teams for Fast Flow](./team-topologies-organizing-business-and-technology-teams-for-fast-flow.md)  
 - [⚫🔢 Ten Black Dots](./ten-black-dots.md)  
 - [🦷👶 Ten Cate's Oral Histology: Development, Structure, and Function](./ten-cates-oral-histology-development-structure-and-function.md)  
@@ -448,6 +449,7 @@ Feedback Control of Dynamic Systems]]
 - [📜🌿⚖️ The Bramble Bush: On Our Law and Its Study](./the-bramble-bush-on-our-law-and-its-study.md)  
 - [📓📜🗂️🔮 The Bullet Journal Method: Track the Past, Order the Present, Design the Future](./the-bullet-journal-method.md)  
 - [🌄⏳ The Circadian Code: Lose Weight, Supercharge Your Energy, and Transform Your Health from Morning to Midnight](./the-circadian-code.md)  
+- [🤕👶 The Coddling of the American Mind: How Good Intentions and Bad Ideas Are Setting Up a Generation for Failure](./the-coddling-of-the-american-mind-how-good-intentions-and-bad-ideas-are-setting-up-a-generation-for-failure.md)  
 - [🌊🤖🤔 The Coming Wave: Technology, Power, and the 21st Century's Greatest Dilemma](./the-coming-wave-technology-power-and-the-21st-centurys-greatest-dilemma.md)  
 - [📖⏱️🍎 The Complete Guide to Fasting: Heal Your Body Through Intermittent, Alternate-Day, and Extended Fasting](./the-complete-guide-to-fasting-heal-your-body-through-intermittent-alternate-day-and-extended-fasting.md)  
 - [🏃🏆👵 The Complete Guide to Running: How to Be a Champion from 9 to 90](./the-complete-guide-to-running.md)  

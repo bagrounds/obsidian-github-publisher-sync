@@ -7,7 +7,7 @@ share: true
 affiliate link: https://amzn.to/488y2M5
 CTA: 🌱 Nurture resilience.
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](../index.md) > [Books](./index.md) | [🧠🤝🐘 Jonathan Haidt](../people/jonathan-haidt.md)  
 # 📱😥 The Anxious Generation: How the Great Rewiring of Childhood Is Causing an Epidemic of Mental Illness  
 [🛒 The Anxious Generation: How the Great Rewiring of Childhood Is Causing an Epidemic of Mental Illness. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/488y2M5)  
   

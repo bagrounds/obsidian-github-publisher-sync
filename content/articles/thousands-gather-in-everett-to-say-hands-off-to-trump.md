@@ -1,14 +1,14 @@
 ---
 share: true
 aliases:
-  - Thousands gather in Everett to say ‘Hands Off!’ to Trump
-title: Thousands gather in Everett to say ‘Hands Off!’ to Trump
+  - 🪧👐🏽🚫👹 Thousands gather in Everett to say ‘Hands Off!’ to Trump
+title: 🪧👐🏽🚫👹 Thousands gather in Everett to say ‘Hands Off!’ to Trump
 URL: https://bagrounds.org/articles/thousands-gather-in-everett-to-say-hands-off-to-trump
-Author: 
-tags: 
+Author:
+tags:
 ---
 [Home](../index.md) > [Articles](./index.md)  
-# 📢 [Thousands gather in Everett to say ‘Hands Off!’ to Trump](https://www.heraldnet.com/news/thousands-gather-in-everett-to-say-hands-off-to-trump-musk)  
+# [🪧👐🏽🚫👹 Thousands gather in Everett to say ‘Hands Off!’ to Trump](https://www.heraldnet.com/news/thousands-gather-in-everett-to-say-hands-off-to-trump-musk)  
   
 ![An estimated 4,000 people attended the anti-Trump demonstration at the Snohomish County campus on Saturday, April 5, 2025, in Everett, Washington. (Aaron Kennedy / The Herald)](https://www.heraldnet.com/wp-content/uploads/2025/04/39068026_web1_L2-250405-HandsOff-crowd1-1024x682.jpg)  
 > An estimated 4,000 people attended the anti-Trump demonstration at the Snohomish County campus on Saturday, April 5, 2025, in Everett, Washington. (Aaron Kennedy / The Herald)  

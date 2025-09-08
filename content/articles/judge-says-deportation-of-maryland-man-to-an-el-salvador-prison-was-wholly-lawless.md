@@ -1,14 +1,14 @@
 ---
 share: true
 aliases:
-  - Judge says deportation of Maryland man to an El Salvador prison was ‘wholly lawless’
-title: Judge says deportation of Maryland man to an El Salvador prison was ‘wholly lawless’
+  - 👨‍⚖️🚫🇸🇻 Jail Judge says deportation of Maryland man to an El Salvador prison was ‘wholly lawless’
+title: 👨‍⚖️🚫🇸🇻 Jail Judge says deportation of Maryland man to an El Salvador prison was ‘wholly lawless’
 URL: https://bagrounds.org/articles/judge-says-deportation-of-maryland-man-to-an-el-salvador-prison-was-wholly-lawless
-Author: 
-tags: 
+Author:
+tags:
 ---
 [Home](../index.md) > [Articles](./index.md)  
-# [Judge says deportation of Maryland man to an El Salvador prison was ‘wholly lawless’](https://apnews.com/article/ice-trump-immigration-el-savador-5d2f7b919cb1a4ed5ce31d44f391d8f5)  
+# [👨‍⚖️🚫🇸🇻 Judge says deportation of Maryland man to an El Salvador prison was ‘wholly lawless’](https://apnews.com/article/ice-trump-immigration-el-savador-5d2f7b919cb1a4ed5ce31d44f391d8f5)  
 ## 🤖 AI Summary  
 ### 🚨 Erroneous Deportation of Maryland Man to El Salvador 🇸🇻  
   

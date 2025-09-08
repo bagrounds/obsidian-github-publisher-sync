@@ -1,15 +1,14 @@
 ---
 share: true
 aliases:
-  - Treatment of Feline Gastrointestinal Small-Cell Lymphoma With Chlorambucil and Glucocorticoids
-title: Treatment of Feline Gastrointestinal Small-Cell Lymphoma With Chlorambucil and Glucocorticoids
+  - 🐈‍⬛🧪💊🩺 Treatment of Feline Gastrointestinal Small-Cell Lymphoma With Chlorambucil and Glucocorticoids
+title: 🐈‍⬛🧪💊🩺 Treatment of Feline Gastrointestinal Small-Cell Lymphoma With Chlorambucil and Glucocorticoids
 URL: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3092124
-Author: 
-tags: 
+Author:
+tags:
 ---
 [Home](../index.md) > [Articles](./index.md)  
-# Treatment of Feline Gastrointestinal Small-Cell Lymphoma With Chlorambucil and Glucocorticoids  
-- https://pmc.ncbi.nlm.nih.gov/articles/PMC3092124  
+# [🐈‍⬛🧪💊🩺 Treatment of Feline Gastrointestinal Small-Cell Lymphoma With Chlorambucil and Glucocorticoids](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3092124)  
   
 ## 🤖 AI Summary  
 ### Study Summary: Feline GI Small-Cell Lymphoma Treatment 😸🔬  
@@ -49,7 +48,7 @@ The study supports a standardized treatment protocol for feline gastrointestinal
 ### 📚 Book Recommendations  
 For a comprehensive resource on feline gastrointestinal lymphoma, I recommend:  
   
-* **"[Small Animal Internal Medicine](../books/small-animal-internal-medicine.md)" by Richard W. Nelson and C. Guillermo Couto. 📚🩺**  
+* **[🐕🐈‍⬛🩺❤️‍🩹 Small Animal Internal Medicine](../books/small-animal-internal-medicine.md) by Richard W. Nelson and C. Guillermo Couto. 📚🩺**  
     * This text provides detailed information on the pathophysiology 🧬, diagnosis 🔍, and treatment 💊 of feline lymphoma, including gastrointestinal manifestations.  
     * It serves as a standard reference for veterinary professionals 🧑‍⚕️👩‍⚕️, offering in-depth coverage of relevant clinical topics.  
     * While technical 🤓, it can be a valuable resource for individuals seeking advanced information, in conjunction with veterinary consultation 🗣️.  

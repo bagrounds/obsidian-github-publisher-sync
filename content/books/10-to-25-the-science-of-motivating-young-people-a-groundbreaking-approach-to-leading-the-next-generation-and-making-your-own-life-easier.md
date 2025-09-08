@@ -5,6 +5,7 @@ aliases:
 URL: https://bagrounds.org/books/10-to-25-the-science-of-motivating-young-people-a-groundbreaking-approach-to-leading-the-next-generation-and-making-your-own-life-easier
 share: true
 affiliate link: https://amzn.to/4dSK799
+CTA: 🚀 Guide young adults.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧑‍🤝‍🧑📈 10 to 25: The Science of Motivating Young People: A Groundbreaking Approach to Leading the Next Generation - And Making Your Own Life Easier  
@@ -82,7 +83,7 @@ affiliate link: https://amzn.to/4dSK799
     * 🤝 *Complementary:* While *10 to 25* focuses on the *mindset* and *psychology*, this book offers very specific, practical communication scripts and techniques for respectful and effective dialogue with teenagers, putting some principles into concrete action.  
 3. 👧 **Untangled: Guiding Teenage Girls Through the Seven Transitions into Adulthood** by Lisa Damour  
     * 🤝 *Complementary:* Focuses specifically on the developmental journey of teenage girls, offering insights into common challenges and emotional landscapes that complement the broader age range and motivation focus of *10 to 25*.  
-4. 😟 **The Anxious Generation: How the Great Rewiring of Childhood Is Causing an Epidemic of Mental Illness** by Jonathan Haidt  
+4. **[📱😥 The Anxious Generation: How the Great Rewiring of Childhood Is Causing an Epidemic of Mental Illness](./the-anxious-generation-how-the-great-rewiring-of-childhood-is-causing-an-epidemic-of-mental-illness.md)** by Jonathan Haidt  
     * 🌍 *Contextual/Complementary:* Provides important context regarding the mental health challenges facing the 10-25 age group today, particularly related to technology and shifts in childhood experiences. 🧠 Understanding these pressures is relevant to applying motivational strategies effectively.  
   
 ### ✨ Creatively Related (Broader Well-being, Purpose, Life Design)  

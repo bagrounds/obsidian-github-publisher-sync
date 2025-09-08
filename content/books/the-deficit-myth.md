@@ -4,9 +4,10 @@ aliases:
   - "💰📉➡️📈🗳️ The Deficit Myth: Modern Monetary Theory and the Birth of the People's Economy"
 title: "💰📉➡️📈🗳️ The Deficit Myth: Modern Monetary Theory and the Birth of the People's Economy"
 URL: https://bagrounds.org/books/the-deficit-myth
-Author: 
-tags: 
+Author:
+tags:
 affiliate link: https://amzn.to/43NOEVV
+CTA: 💡 Question scarcity.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 💰📉➡️📈🗳️ The Deficit Myth: Modern Monetary Theory and the Birth of the People's Economy  
@@ -69,9 +70,9 @@ Here is the text with emojis inserted:
 * **Best Tangentially Related Book:** [🍩🌍 Doughnut Economics: Seven Ways to Think Like a 21st-Century Economist](./doughnut-economics-seven-ways-to-think-like-a-21st-century-economist.md) by Kate Raworth 🌎 (Focuses on sustainable economic models).  
 * **Best Diametrically Opposed Book:** "Economics in One Lesson" by Henry Hazlitt 💸 (Advocates for free-market principles and limited government intervention).  
 * **Best Fiction Book That Incorporates Related Ideas:** "The Ministry for the Future" by Kim Stanley Robinson 🌟 (Explores economic and social responses to climate change).  
-* **Best More General Book:** "23 Things They Don't Tell You About Capitalism" by Ha-Joon Chang 📊 (Provides a critical look at mainstream economic assumptions).  
+* **Best More General Book:** [🤫🤑 23 Things They Don't Tell You About Capitalism](./23-things-they-dont-tell-you-about-capitalism.md) by Ha-Joon Chang 📊 (Provides a critical look at mainstream economic assumptions).  
 * **Best More Specific Book:** "Can We Afford the Future?" by Frank van den Boom 💸 (Focuses on the specifics of fiscal sustainability).  
-* **Best More Rigorous Book:** "Understanding Modern Money" by L. Randall Wray 📚 (A more technical and detailed explanation of MMT).  
+* **Best More Rigorous Book:** [💰📈🤔 Understanding Modern Money](./understanding-modern-money.md) by L. Randall Wray 📚 (A more technical and detailed explanation of MMT).  
 * **Best More Accessible Book:** "Why Minsky Matters" by L. Randall Wray 🤔 (Explains the work of Hyman Minsky, a key influence on MMT, in an accessible way).  
   
 ## 💬 [Gemini](https://gemini.google.com) Prompt  

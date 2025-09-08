@@ -1,12 +1,12 @@
 ---
 share: true
 aliases:
-  - Heterodox Economics
-title: Heterodox Economics
+  - 🤔🚫➡️📚 Heterodox Economics
+title: 🤔🚫➡️📚 Heterodox Economics
 URL: https://bagrounds.org/topics/heterodox-economics
 ---
 [Home](../index.md) > [Topics](./index.md) > [Knowledge](./a-hierarchical-view-of-human-knowledge.md) > [Social Sciences](./social-sciences.md) > [Economics](./economics.md)  
-# Heterodox Economics  
+# 🤔🚫➡️📚 Heterodox Economics  
 ## 🤖 AI Summary  
 **High-Level Summary:**  
 Heterodox economics is a diverse and critical body of economic thought that challenges the mainstream neoclassical synthesis. It moves beyond assumptions of rational choice, market efficiency, and equilibrium, focusing on real-world complexities like power, institutions, history, social relations, and uncertainty. 🧐 It aims to provide alternative explanations for economic phenomena and address pressing issues like inequality, financial instability, and environmental degradation. 🌍 Within this diverse field, theories like Modern Monetary Theory (MMT) are gaining traction, further challenging conventional ideas about government finance and macroeconomic policy. 💰 Ultimately, heterodox economics seeks a more realistic and inclusive understanding of how economies work and impact society. 🤝  
@@ -22,12 +22,12 @@ Heterodox economics is a diverse and critical body of economic thought that chal
 * **[🏦♾️📈💸 Modern Monetary Theory](./modern-monetary-theory.md) (MMT):** 💰 Challenges conventional views of government finance, arguing that a sovereign currency issuer is not constrained by revenue in the same way as a household. It argues the real limit is inflation.  
   
 **Book Recommendations:**  
-1.  **[🤫🤑 23 Things They Don't Tell You About Capitalism](../books/23-things-they-dont-tell-you-about-capitalism.md) by Ha-Joon Chang:** 📖 A critique of mainstream economic assumptions, accessible to a wide audience.  
-2.  **[🏛️💰 Debt: The First 5,000 Years](../books/debt-the-first-5000-years.md) by David Graeber:** 📜 A historical analysis of debt and its role in shaping societies.  
-3.  **"The General Theory of Employment, Interest and Money" by John Maynard Keynes:** 🔑 A foundational text of Post-Keynesian economics.  
-4.  **"[Capital in the Twenty First Century](../books/capital-in-the-twenty-first-century.md)" by Thomas Piketty:** 📈 An analysis of long-term trends in wealth and income inequality.  
-5.  **[🍩🌍 Doughnut Economics: Seven Ways to Think Like a 21st-Century Economist](../books/doughnut-economics-seven-ways-to-think-like-a-21st-century-economist.md) by Kate Raworth:** 🍩 A new economic model for sustainable and equitable development.  
-6.  **"[The Deficit Myth](../books/the-deficit-myth.md): Modern Monetary Theory and the Birth of the People's Economy" by Stephanie Kelton:** 📚 A clear introduction to MMT and its policy implications.  
+1. **[🤫🤑 23 Things They Don't Tell You About Capitalism](../books/23-things-they-dont-tell-you-about-capitalism.md) by Ha-Joon Chang:** 📖 A critique of mainstream economic assumptions, accessible to a wide audience.  
+2. **[🏛️💰 Debt: The First 5,000 Years](../books/debt-the-first-5000-years.md) by David Graeber:** 📜 A historical analysis of debt and its role in shaping societies.  
+3. **"The General Theory of Employment, Interest and Money" by John Maynard Keynes:** 🔑 A foundational text of Post-Keynesian economics.  
+4. **[💰📈🌍⏳ Capital in the Twenty-First Century](../books/capital-in-the-twenty-first-century.md) by Thomas Piketty:** 📈 An analysis of long-term trends in wealth and income inequality.  
+5. **[🍩🌍 Doughnut Economics: Seven Ways to Think Like a 21st-Century Economist](../books/doughnut-economics-seven-ways-to-think-like-a-21st-century-economist.md) by Kate Raworth:** 🍩 A new economic model for sustainable and equitable development.  
+6. **[💰📉➡️📈🗳️ The Deficit Myth: Modern Monetary Theory and the Birth of the People's Economy](../books/the-deficit-myth.md) by Stephanie Kelton:** 📚 A clear introduction to MMT and its policy implications.  
   
 ## 💬 [Gemini](https://gemini.google.com/app) Prompt  
 > For the category of Heterodox Economics, please provide:  

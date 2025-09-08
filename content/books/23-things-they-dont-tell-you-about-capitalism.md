@@ -4,9 +4,10 @@ aliases:
   - 🤫🤑 23 Things They Don't Tell You About Capitalism
 title: 🤫🤑 23 Things They Don't Tell You About Capitalism
 URL: https://bagrounds.org/books/23-things-they-dont-tell-you-about-capitalism
-Author: 
-tags: 
+Author:
+tags:
 affiliate link: https://amzn.to/3ZLS7Tr
+CTA: 🧐 Question assumptions.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🤫🤑 23 Things They Don't Tell You About Capitalism  

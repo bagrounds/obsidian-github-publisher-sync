@@ -1,14 +1,14 @@
 ---
 share: true
 aliases:
-  - "Project 2025 and education: A lot of bad ideas, some more actionable than others"
-title: "Project 2025 and education: A lot of bad ideas, some more actionable than others"
+  - "🚫🏫📉⚠️ Project 2025 and education: A lot of bad ideas, some more actionable than others"
+title: "🚫🏫📉⚠️ Project 2025 and education: A lot of bad ideas, some more actionable than others"
 URL: https://bagrounds.org/articles/project-2025-and-education-a-lot-of-bad-ideas-some-more-actionable-than-others
-Author: 
-tags: 
+Author:
+tags:
 ---
 [Home](../index.md) > [Articles](./index.md)  
-# [Project 2025 and education: A lot of bad ideas, some more actionable than others](https://www.brookings.edu/articles/project-2025-and-education-a-lot-of-bad-ideas-some-more-actionable-than-others)  
+# [🚫🏫📉⚠️ Project 2025 and education: A lot of bad ideas, some more actionable than others](https://www.brookings.edu/articles/project-2025-and-education-a-lot-of-bad-ideas-some-more-actionable-than-others)  
   
 ## 🤖 AI Summary  
 Project 2025's education proposals represent a significant and comprehensive shift in the landscape of American education 🇺🇸📚. To provide a thorough overview, here's a breakdown of the key elements:  

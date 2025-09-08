@@ -7,7 +7,7 @@ share: true
 affiliate link: https://amzn.to/4mRH2d2
 CTA: 🛡️ Fortify resilience.
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](../index.md) > [Books](./index.md) | [🧠🤝🐘 Jonathan Haidt](../people/jonathan-haidt.md)  
 # 🤕👶 The Coddling of the American Mind: How Good Intentions and Bad Ideas Are Setting Up a Generation for Failure  
 [🛒 The Coddling of the American Mind: How Good Intentions and Bad Ideas Are Setting Up a Generation for Failure. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4mRH2d2)  
   
@@ -55,7 +55,7 @@ CTA: 🛡️ Fortify resilience.
   
 ### 🎨 Creatively Related Books  
   
-* 📱 **The Anxious Generation: How the Great Rewiring of Childhood Is Causing an Epidemic of Mental Illness by Jonathan Haidt**  
+* **[📱😥 The Anxious Generation: How the Great Rewiring of Childhood Is Causing an Epidemic of Mental Illness](./the-anxious-generation-how-the-great-rewiring-of-childhood-is-causing-an-epidemic-of-mental-illness.md) by Jonathan Haidt**  
     ✍️ This book, by one of The Coddling of the American Mind's authors, expands on one of the explanatory threads by specifically focusing on how the pervasive use of smartphones and social media in childhood has contributed to the mental health crisis among adolescents. 🔎 It offers a deeper dive into the technological factors impacting the generation discussed.  
 * 📊 **Discrimination and Disparities by Thomas Sowell**  
     🤔 Sowell's work often challenges conventional wisdom regarding social inequalities, examining economic and historical data to argue against what he perceives as misinterpretations of disparities. 👓 His analytical approach, which emphasizes systemic processes over individual or group malevolence, offers a different lens through which to view societal divisions, providing a broader context for discussions related to the "Untruth of Us Versus Them."  

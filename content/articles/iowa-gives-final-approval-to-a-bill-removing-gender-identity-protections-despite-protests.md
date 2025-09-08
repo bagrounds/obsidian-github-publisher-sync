@@ -1,14 +1,14 @@
 ---
 share: true
 aliases:
-  - Iowa gives final approval to a bill removing gender identity protections despite protests
-title: Iowa gives final approval to a bill removing gender identity protections despite protests
+  - 🏳️‍⚧️🚫🗣️ Iowa gives final approval to a bill removing gender identity protections despite protests
+title: 🏳️‍⚧️🚫🗣️ Iowa gives final approval to a bill removing gender identity protections despite protests
 URL: https://bagrounds.org/articles/iowa-gives-final-approval-to-a-bill-removing-gender-identity-protections-despite-protests
-Author: 
-tags: 
+Author:
+tags:
 ---
 [Home](../index.md) > [Articles](./index.md)  
-# Iowa gives final approval to a bill removing gender identity protections despite protests  
+# 🏳️‍⚧️🚫🗣️ Iowa gives final approval to a bill removing gender identity protections despite protests  
 ## 🤖 AI Summary  
 ### 💬 [ChatGPT](https://chat.com) Prompt 1  
 > Summarize the article: [Iowa gives final approval to a bill removing gender identity protections despite protests](https://apnews.com/article/iowa-civil-rights-code-gender-identity-cf68d2183210133b15a47e526ad2fb0d). Recommend additional and related resources on the topics discussed.  

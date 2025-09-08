@@ -1,14 +1,14 @@
 ---
 share: true
 aliases:
-  - Safe Sleep for Breastfeeding Babies
-title: Safe Sleep for Breastfeeding Babies
+  - 🤱😴👶 Safe Sleep for Breastfeeding Babies
+title: 🤱😴👶 Safe Sleep for Breastfeeding Babies
 URL: https://bagrounds.org/articles/safe-sleep-for-breastfeeding-babies
-Author: 
-tags: 
+Author:
+tags:
 ---
 [Home](../index.md) > [Articles](./index.md)  
-# Safe Sleep for Breastfeeding Babies  
+# [🤱😴👶 Safe Sleep for Breastfeeding Babies](https://llli.org/breastfeeding-info/sleep-bedshare)  
 ## 🤖 AI Summary  
 Below is a comprehensive summary and analysis of the article “[Safe Sleep For Breastfeeding Babies](https://llli.org/breastfeeding-info/sleep-bedshare)” from La Leche League International.  
   

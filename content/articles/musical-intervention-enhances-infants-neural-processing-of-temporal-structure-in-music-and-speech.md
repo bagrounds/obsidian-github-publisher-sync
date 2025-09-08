@@ -1,14 +1,14 @@
 ---
 share: true
 aliases:
-  - Musical intervention enhances infants’ neural processing of temporal structure in music and speech
-title: Musical intervention enhances infants’ neural processing of temporal structure in music and speech
+  - 🎶👶🧠🗣️ Musical intervention enhances infants’ neural processing of temporal structure in music and speech
+title: 🎶👶🧠🗣️ Musical intervention enhances infants’ neural processing of temporal structure in music and speech
 URL: https://bagrounds.org/articles/musical-intervention-enhances-infants-neural-processing-of-temporal-structure-in-music-and-speech
-Author: 
-tags: 
+Author:
+tags:
 ---
 [Home](../index.md) > [Articles](./index.md)  
-# Musical intervention enhances infants’ neural processing of temporal structure in music and speech  
+# [🎶👶🧠🗣️ Musical intervention enhances infants’ neural processing of temporal structure in music and speech](https://www.pnas.org/doi/epdf/10.1073/pnas.1603984113)  
 ## 🤖 AI Summary  
 ### 💬 [ChatGPT](https://chat.com) Prompt  
 > Summarize the paper [Musical intervention enhances infants’ neural processing of temporal structure in music and speech](https://www.pnas.org/doi/epdf/10.1073/pnas.1603984113). Emphasize practical takeaways for new parents. Provide references to high quality resources on related topics. Format your response as markdown with inline links, starting at H4 heading.  

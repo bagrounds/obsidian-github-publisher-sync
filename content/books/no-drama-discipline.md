@@ -4,9 +4,10 @@ aliases:
   - "🚫🎭🧠 No-Drama Discipline: The Whole-Brain Way to Calm the Chaos and Nurture Your Child's Developing Mind"
 title: "🚫🎭🧠 No-Drama Discipline: The Whole-Brain Way to Calm the Chaos and Nurture Your Child's Developing Mind"
 URL: https://bagrounds.org/books/no-drama-discipline
-Author: 
-tags: 
+Author:
+tags:
 affiliate link: https://amzn.to/4knWZGV
+CTA: 🧠 Understand children.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🚫🎭🧠 No-Drama Discipline: The Whole-Brain Way to Calm the Chaos and Nurture Your Child's Developing Mind  
@@ -68,8 +69,8 @@ affiliate link: https://amzn.to/4knWZGV
 * 🧠 **Mindsight: The New Science of Personal Transformation** by Daniel J. Siegel: 🤔 Explores the concept of Mindsight (understanding the inner world of self and others) in greater depth, applicable beyond just parenting.  
 * 🧘 **Aware: The Science and Practice of Presence** by Daniel J. Siegel: 🧘‍♀️ Focuses on mindfulness meditation and developing awareness as a tool for well-being, relevant for parents managing their own stress and reactivity.  
 * **[❤️‍🔥💪 Grit: The Power of Passion and Perseverance](./grit-the-power-of-passion-and-perseverance.md)** by Angela Duckworth: 🌱 While not a parenting book per se, it explores the importance of perseverance and passion, traits many positive parenting approaches aim to foster.  
-* 🧠 **[Mindset](./mindset.md): The New Psychology of Success** by Carol S. Dweck: ✅ Discusses the concept of fixed vs. growth mindsets, which is highly relevant to how parents approach challenges and learning with their children.  
-* 📱 **The Anxious Generation: How the Great Rewiring of Childhood Is Causing an Epidemic of Mental Illness** by Jonathan Haidt: 😞 While focusing on the impact of modern childhood (smartphones, decline of free play), it touches on resilience and child development, offering a broader societal context.  
+* **[🌱🧘🏼‍♀️🏆 Mindset: The New Psychology of Success](./mindset.md)** by Carol S. Dweck: ✅ Discusses the concept of fixed vs. growth mindsets, which is highly relevant to how parents approach challenges and learning with their children.  
+* **[📱😥 The Anxious Generation: How the Great Rewiring of Childhood Is Causing an Epidemic of Mental Illness](./the-anxious-generation-how-the-great-rewiring-of-childhood-is-causing-an-epidemic-of-mental-illness.md)** by Jonathan Haidt: 😞 While focusing on the impact of modern childhood (smartphones, decline of free play), it touches on resilience and child development, offering a broader societal context.  
 * 🐸 **Sitting Still Like a Frog: Mindfulness Exercises for Kids (and Their Parents)** by Eline Snel: 🧘 Offers practical mindfulness activities for children, aligning with the goal of teaching emotional regulation.  
 * 🫂 **Books on [🫂💖 Attachment Theory](../topics/attachment-theory.md)** (e.g., by John Bowlby, Gordon Neufeld): 💖 Provide deeper understanding of the parent-child bond, which underpins the connection aspect of "No-Drama Discipline.".  
   

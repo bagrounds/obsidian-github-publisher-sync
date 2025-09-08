@@ -1,12 +1,12 @@
 ---
 share: true
 aliases:
-  - Functional Finance
-title: Functional Finance
+  - 💰🏛️📈 Functional Finance
+title: 💰🏛️📈 Functional Finance
 URL: https://bagrounds.org/topics/functional-finance
 ---
 [Home](../index.md) > [Topics](./index.md) > [Knowledge](./a-hierarchical-view-of-human-knowledge.md) > [Social Sciences](./social-sciences.md) > [Economics](./economics.md) > [Heterodox Economics](./heterodox-economics.md) > [🏦♾️📈💸 Modern Monetary Theory](./modern-monetary-theory.md)  
-# Functional Finance  
+# 💰🏛️📈 Functional Finance  
 ## 🤖 AI Summary  
 **High-Level Summary:**  
 Functional Finance, a macroeconomic theory, posits that governments should prioritize achieving specific economic goals (like full employment and price stability) over maintaining a balanced budget. ⚖️ It argues that fiscal policy should be used to regulate the economy, with the budget being a tool to achieve those goals, rather than an end in itself. Essentially, "finance" should "function" to serve the economy, not the other way around. 💡 It emphasizes that a sovereign government, which issues its own currency, is not constrained by revenue in the same way as a household or a business. 💰 Instead, its primary limit is real resource availability and inflation. 📈  
@@ -18,9 +18,9 @@ Functional Finance, a macroeconomic theory, posits that governments should prior
 4.  **Sovereign Currency Operations:** 🏦 This area focuses on how a government with a sovereign currency actually operates its fiscal and monetary policy. It analyzes the mechanics of treasury operations, central bank actions, and the interactions between them. ⚙️  
   
 **Book Recommendations:**  
-1.  **"[The Deficit Myth](../books/the-deficit-myth.md): Modern Monetary Theory and the Birth of the People's Economy" by Stephanie Kelton:** 📚 This book provides a clear and accessible introduction to MMT, explaining its core principles and policy implications. It debunks common misconceptions about government deficits and debt. ✨  
+1. **[💰📉➡️📈🗳️ The Deficit Myth: Modern Monetary Theory and the Birth of the People's Economy](../books/the-deficit-myth.md) by Stephanie Kelton:** 📚 This book provides a clear and accessible introduction to MMT, explaining its core principles and policy implications. It debunks common misconceptions about government deficits and debt. ✨  
 2.  **"Macroeconomics" by William Mitchell, L. Randall Wray, and Martin Watts:** 📖 A comprehensive textbook that covers MMT and Functional Finance in depth. It's suitable for those who want a more rigorous understanding of the theory. 🤓  
-3.  **"[Understanding Modern Money](../books/understanding-modern-money.md): The Key to Full Employment and Price Stability" by L. Randall Wray:** 📝 This book delves into the mechanics of modern monetary systems, emphasizing the role of the state in creating and managing money. It provides a solid foundation for understanding Functional Finance. 🧠  
+3.  **[💰📈🤔 Understanding Modern Money](../books/understanding-modern-money.md): The Key to Full Employment and Price Stability by L. Randall Wray:** 📝 This book delves into the mechanics of modern monetary systems, emphasizing the role of the state in creating and managing money. It provides a solid foundation for understanding Functional Finance. 🧠  
 4.  **"Seven Deadly Innocent Frauds of Economic Policy" by Warren Mosler:** 📜 This book is a shorter, more direct explaination of the core concepts of MMT, and provides a good entry point to the thought process. 🧐  
 5.  **"Full Employment Abandoned: Shifting Sands and Policy Failures" by William Mitchell and Joan Muysken:** 💼 This book focuses on the failure of mainstream economics to achieve and maintain full employment, and it provides insight into the importance of a Job Guarantee. 👷‍♂️  
   

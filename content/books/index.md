@@ -7,7 +7,7 @@ URL: https://bagrounds.org/books
 backlinks: false
 ---
 [Home](../index.md)  
-# 📚 Books (607)  
+# 📚 Books (609)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)  
 - [🧑‍🤝‍🧑📈 10 to 25: The Science of Motivating Young People: A Groundbreaking Approach to Leading the Next Generation - And Making Your Own Life Easier](./10-to-25-the-science-of-motivating-young-people-a-groundbreaking-approach-to-leading-the-next-generation-and-making-your-own-life-easier.md)  
@@ -427,6 +427,7 @@ Feedback Control of Dynamic Systems]]
 - [👶🔤 The ABC’s of Language Development: Discover Language with Your Child](./the-abcs-of-language-development-discover-language-with-your-child.md)  
 - [👁️‍🗨️💰⛓️👤 The Age of Surveillance Capitalism: The Fight for a Human Future at the New Frontier of Power](./the-age-of-surveillance-capitalism.md)  
 - [👤💬 The Analects of Confucius](./the-analects-of-confucius.md)  
+- [📱😥 The Anxious Generation: How the Great Rewiring of Childhood Is Causing an Epidemic of Mental Illness](./the-anxious-generation-how-the-great-rewiring-of-childhood-is-causing-an-epidemic-of-mental-illness.md)  
 - [🎨🙏✨ The Artist's Way: A Spiritual Path to Higher Creativity](./the-artists-way.md)  
 - [🎨😨 The Art of Fear: Why Conquering Fear Won't Work and What to Do Instead](./the-art-of-fear.md)  
 - [🎨🤓 The Art of Learning: A Journey in the Pursuit of Excellence](./the-art-of-learning.md)  
@@ -494,6 +495,7 @@ Feedback Control of Dynamic Systems]]
 - [🏃😊❤️ The Joy of Movement: How Exercise Helps Us Find Happiness, Hope, Connection, and Courage](./the-joy-of-movement-how-exercise-helps-us-find-happiness-hope-connection-and-courage.md)  
 - [📺🌃⚔️ The Late Shift: Letterman, Leno, and the Network Battle for the Night](./the-late-shift-letterman-leno-and-the-network-battle-for-the-night.md)  
 - [📉🧪🚀 The Lean Startup: How Today's Entrepreneurs Use Continuous Innovation to Create Radically Successful Businesses](./the-lean-startup.md)  
+- [🧠📚💡🧩 The Learning Brain](./the-learning-brain.md)  
 - [🤔🔬 The Logic of Scientific Discovery](./the-logic-of-scientific-discovery.md)  
 - [🍬⏳ The Marshmallow Test: Mastering Self-Control](./the-marshmallow-test-mastering-self-control.md)  
 - [🧘😞➡️ The Mindful Way Through Depression: Freeing Yourself from Chronic Unhappiness](./the-mindful-way-through-depression-freeing-yourself-from-chronic-unhappiness.md)  

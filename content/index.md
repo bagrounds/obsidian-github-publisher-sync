@@ -10,7 +10,8 @@ title: 🏡 Home
 📑 Notes, 💭 thoughts, and 🔗 Links.  
 ❔ What do 🫵 _you_ 🤔 think?  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (298)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (299)  
+- [2025-09-09 | 🧠 Learning | 🏃🏼‍♀️ Running 📚🪞](./reflections/2025-09-09.md)  
 - [2025-09-08 | 😰 Anxious | 🔧 AI Tools 📚📄✍🏽](./reflections/2025-09-08.md)  
 - [2025-09-07 | 🍼 Coddling | ⚠️ Warning | 🗽 Freedom 📚📰😆📺](./reflections/2025-09-07.md)  
 - [2025-09-06 | 👿 Demon | 🪤 Trap | ♾️ Resilience 📚📺](./reflections/2025-09-06.md)  
@@ -20,10 +21,10 @@ title: 🏡 Home
 - [2025-09-02 | 🧠 Mind | 🧎🏼‍♂️ Kneeling 📚👶🏼](./reflections/2025-09-02.md)  
 - [2025-09-01 | 🧠 Embodied | 🍤 Shrimp 📚](./reflections/2025-09-01.md)  
 - [2025-08-31 | 🧮 Reasoning | 🏃🏼‍♀️ Strolling](./reflections/2025-08-31.md)  
-- [2025-08-30 | 🤖 Chatbots | 📜 Philosophy | ⚠️ Threats 🌌📚📺](./reflections/2025-08-30.md)  
   
   
-## [📚 Books](./books/index.md) (608)  
+## [📚 Books](./books/index.md) (609)  
+- [🧠📚💡🧩 The Learning Brain](./books/the-learning-brain.md)  
 - [📱😥 The Anxious Generation: How the Great Rewiring of Childhood Is Causing an Epidemic of Mental Illness](./books/the-anxious-generation-how-the-great-rewiring-of-childhood-is-causing-an-epidemic-of-mental-illness.md)  
 - [💰📉➡️📈🗳️ The Deficit Myth: Modern Monetary Theory and the Birth of the People's Economy](./books/the-deficit-myth.md)  
 - [🤫🤑 23 Things They Don't Tell You About Capitalism](./books/23-things-they-dont-tell-you-about-capitalism.md)  
@@ -33,10 +34,11 @@ title: 🏡 Home
 - [🇷🇺🪝🇺🇸 American Kompromat: How the KGB Cultivated Donald Trump, and Other Tales of Sex, Greed, Power, and Treachery](./books/american-kompromat-how-the-kgb-cultivated-donald-trump-and-other-tales-of-sex-greed-power-and-treachery.md)  
 - [🏛️❓ Who Is Government?: The Untold Story of Public Service](./books/who-is-government-the-untold-story-of-public-service.md)  
 - [🤡🫨😭🤬😵‍💫🤥👹🇺🇸 A Very Stable Genius: Donald J. Trump's Testing of America](./books/a-very-stable-genius-donald-j-trumps-testing-of-america.md)  
-- [🇺🇸⛓️‍💥📜🐘 To Make Men Free: A History of the Republican Party](./books/to-make-men-free-a-history-of-the-republican-party.md)  
   
   
 ## [📺 Videos](./videos/index.md) (275)  
+- [🦴🤕🏃‍♀️🧪 How to Reduce Bone Injury Risks | Running Science](./videos/how-to-reduce-bone-injury-risks-running-science.md)  
+- [🏃🦵🤕 SHIN SPLINTS for Runners: Challenges, Causes, and Rehab](./videos/shin-splints-for-runners-challenges-causes-and-rehab.md)  
 - [🍎➡️🥗💯 Eat your food in the RIGHT ORDER: 75% healthier with this small trick | Episode 6 of 18](./videos/eat-your-food-in-the-right-order-75-healthier-with-this-small-trick-episode-6-of-18.md)  
 - [🇺🇸💪🏥😂 Make America Healthy Again: Last Week Tonight with John Oliver (HBO)](./videos/make-america-healthy-again-last-week-tonight-with-john-oliver-hbo.md)  
 - [🕵️🇺🇸💻👁️ How ICE Spies On American Citizens | Incognito Mode | WIRED](./videos/how-ice-spies-on-american-citizens-incognito-mode-wired.md)  
@@ -45,8 +47,6 @@ title: 🏡 Home
 - [🤡💵📺 Trump’s One Big Beautiful Bill: Last Week Tonight with John Oliver (HBO)](./videos/trumps-one-big-beautiful-bill-last-week-tonight-with-john-oliver-hbo.md)  
 - [⛈️🇺🇸🗣️💬 Brooks and Capehart on the federal response to the Texas flooding disaster](./videos/brooks-and-capehart-on-the-federal-response-to-the-texas-flooding-disaster.md)  
 - [🤥📢👨‍💼 Tony Schwartz: The Truth About Trump | Oxford Union Q&A](./videos/tony-schwartz-the-truth-about-trump-oxford-union-q-a.md)  
-- [🤔🌎🤠🚨 What on Earth Is Going on in Texas? | Explainer](./videos/what-on-earth-is-going-on-in-texas-explainer.md)  
-- [⚠️📉😬 Brooks and Bouie on economic warning signs](./videos/brooks-and-bouie-on-economic-warning-signs.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (82)  

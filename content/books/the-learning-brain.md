@@ -16,6 +16,15 @@ CTA: 🧠 Absorb knowledge.
     - ⏳ Space out practice sessions over time  
     - 💪 Challenge yourself to reach attainable goals  
     - 🎲 Randomize practice rather than following a fixed routine  
+- 🧠 Working Memory  
+    - 💡 Predicts IQ  
+    - 🧩 Components  
+        - 🗣️ Phonological loop  
+        - 👁️ Visiospatial sketch pad  
+        - ⚙️ Central Executive  
+        - 📚 Episodic Buffer  
+    - 🗣️💨 Rate of speech corresponds with working memory capacity  
+    - 🏋🏼‍♀️ Can be improved  
   
 ## 📚 Book Report: The Great Courses: The Learning Brain  
   

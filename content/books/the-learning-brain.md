@@ -25,6 +25,18 @@ CTA: 🧠 Absorb knowledge.
         - 📚 Episodic Buffer  
     - 🗣️💨 Rate of speech corresponds with working memory capacity  
     - 🏋🏼‍♀️ Can be improved  
+        - 💪 in healthy adults  
+        - 🧑‍🦱 and children with ADHD  
+        - 🧠 via working memory training tasks  
+        - 🤷 but evidence is mixed  
+            - ✅ some studies support  
+            - ❌ and some contradict  
+- ✨ Optimize learning  
+    * 🌱 adopt a positive mindset  
+    * 🎯 be strategic and deliberate about learning  
+    * 💪 learn actively, not passively  
+    * 🔎 identify good sources of information that will challenge you  
+    * 🏃 exercise, 🍎 eat well, and 😴 sleep well  
   
 ## 📚 Book Report: The Great Courses: The Learning Brain  
   

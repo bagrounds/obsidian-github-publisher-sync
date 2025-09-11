@@ -10,7 +10,8 @@ title: 🏡 Home
 📑 Notes, 💭 thoughts, and 🔗 Links.  
 ❔ What do 🫵 _you_ 🤔 think?  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (299)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (300)  
+- [2025-09-10 | 🏃🏼‍♀️ Anatomy for Runners 📚📺](./reflections/2025-09-10.md)  
 - [2025-09-09 | 🧠 Learning | 🏃🏼‍♀️ Running 📚🪞](./reflections/2025-09-09.md)  
 - [2025-09-08 | 😰 Anxious | 🔧 AI Tools 📚📄✍🏽](./reflections/2025-09-08.md)  
 - [2025-09-07 | 🍼 Coddling | ⚠️ Warning | 🗽 Freedom 📚📰😆📺](./reflections/2025-09-07.md)  
@@ -20,10 +21,10 @@ title: 🏡 Home
 - [2025-09-03 | 🏍️ Glide | 🤥 Doubt 🛍️📺📚📄👶🏼](./reflections/2025-09-03.md)  
 - [2025-09-02 | 🧠 Mind | 🧎🏼‍♂️ Kneeling 📚👶🏼](./reflections/2025-09-02.md)  
 - [2025-09-01 | 🧠 Embodied | 🍤 Shrimp 📚](./reflections/2025-09-01.md)  
-- [2025-08-31 | 🧮 Reasoning | 🏃🏼‍♀️ Strolling](./reflections/2025-08-31.md)  
   
   
-## [📚 Books](./books/index.md) (609)  
+## [📚 Books](./books/index.md) (610)  
+- [🏃‍♀️🦴 Anatomy for Runners: Unlocking Your Athletic Potential for Health, Speed, and Injury Prevention](./books/anatomy-for-runners-unlocking-your-athletic-potential-for-health-speed-and-injury-prevention.md)  
 - [🧠📚💡🧩 The Learning Brain](./books/the-learning-brain.md)  
 - [📱😥 The Anxious Generation: How the Great Rewiring of Childhood Is Causing an Epidemic of Mental Illness](./books/the-anxious-generation-how-the-great-rewiring-of-childhood-is-causing-an-epidemic-of-mental-illness.md)  
 - [💰📉➡️📈🗳️ The Deficit Myth: Modern Monetary Theory and the Birth of the People's Economy](./books/the-deficit-myth.md)  
@@ -33,12 +34,12 @@ title: 🏡 Home
 - [🤕👶 The Coddling of the American Mind: How Good Intentions and Bad Ideas Are Setting Up a Generation for Failure](./books/the-coddling-of-the-american-mind-how-good-intentions-and-bad-ideas-are-setting-up-a-generation-for-failure.md)  
 - [🇷🇺🪝🇺🇸 American Kompromat: How the KGB Cultivated Donald Trump, and Other Tales of Sex, Greed, Power, and Treachery](./books/american-kompromat-how-the-kgb-cultivated-donald-trump-and-other-tales-of-sex-greed-power-and-treachery.md)  
 - [🏛️❓ Who Is Government?: The Untold Story of Public Service](./books/who-is-government-the-untold-story-of-public-service.md)  
-- [🤡🫨😭🤬😵‍💫🤥👹🇺🇸 A Very Stable Genius: Donald J. Trump's Testing of America](./books/a-very-stable-genius-donald-j-trumps-testing-of-america.md)  
   
   
-## [📺 Videos](./videos/index.md) (275)  
-- [🦴🤕🏃‍♀️🧪 How to Reduce Bone Injury Risks | Running Science](./videos/how-to-reduce-bone-injury-risks-running-science.md)  
+## [📺 Videos](./videos/index.md) (276)  
+- [🏃‍♀️⚕️💪 ECFIT Expert Series - Jay Dicharry](./videos/ecfit-expert-series-jay-dicharry.md)  
 - [🏃🦵🤕 SHIN SPLINTS for Runners: Challenges, Causes, and Rehab](./videos/shin-splints-for-runners-challenges-causes-and-rehab.md)  
+- [🦴🤕🏃‍♀️🧪 How to Reduce Bone Injury Risks | Running Science](./videos/how-to-reduce-bone-injury-risks-running-science.md)  
 - [🍎➡️🥗💯 Eat your food in the RIGHT ORDER: 75% healthier with this small trick | Episode 6 of 18](./videos/eat-your-food-in-the-right-order-75-healthier-with-this-small-trick-episode-6-of-18.md)  
 - [🇺🇸💪🏥😂 Make America Healthy Again: Last Week Tonight with John Oliver (HBO)](./videos/make-america-healthy-again-last-week-tonight-with-john-oliver-hbo.md)  
 - [🕵️🇺🇸💻👁️ How ICE Spies On American Citizens | Incognito Mode | WIRED](./videos/how-ice-spies-on-american-citizens-incognito-mode-wired.md)  
@@ -46,7 +47,6 @@ title: 🏡 Home
 - [👓⚖️ There Are Two Ways to Look At Freedom | Explainer](./videos/there-are-two-ways-to-look-at-freedom-explainer.md)  
 - [🤡💵📺 Trump’s One Big Beautiful Bill: Last Week Tonight with John Oliver (HBO)](./videos/trumps-one-big-beautiful-bill-last-week-tonight-with-john-oliver-hbo.md)  
 - [⛈️🇺🇸🗣️💬 Brooks and Capehart on the federal response to the Texas flooding disaster](./videos/brooks-and-capehart-on-the-federal-response-to-the-texas-flooding-disaster.md)  
-- [🤥📢👨‍💼 Tony Schwartz: The Truth About Trump | Oxford Union Q&A](./videos/tony-schwartz-the-truth-about-trump-oxford-union-q-a.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (82)  

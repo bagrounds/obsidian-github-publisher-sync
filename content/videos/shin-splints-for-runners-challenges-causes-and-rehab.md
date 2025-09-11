@@ -36,7 +36,7 @@ tags:
   
 ## 📚 Book Recommendations  
   
-* 🏃‍♀️ **Similar:** Anatomy for Runners by Jay Dicharry. 🧠 This book provides a deeper dive into the biomechanics of running and how to prevent injuries by improving your body's "chassis" and running technique.  
+* 🏃‍♀️ **Similar:** [🏃‍♀️🦴 Anatomy for Runners: Unlocking Your Athletic Potential for Health, Speed, and Injury Prevention](../books/anatomy-for-runners-unlocking-your-athletic-potential-for-health-speed-and-injury-prevention.md) by Jay Dicharry. 🧠 This book provides a deeper dive into the biomechanics of running and how to prevent injuries by improving your body's "chassis" and running technique.  
 * 🤕 **Similar:** Running Injury Free, Second Edition by Jeff Galloway. 📖 This guide offers advice for preventing and treating common running injuries, with a focus on specific training techniques and how to return to running after an injury.  
 * 🔬 **Contrasting:** Running: Biomechanics and Exercise Physiology in Practice by Frans Bosch and Ronald Klomp. 🧑‍🔬 A highly technical book that challenges conventional wisdom about training and biomechanics, providing a different perspective on the science behind running.  
 * 🌿 **Creatively Related:** Why We Run: A Natural History by Bernd Heinrich. 🌍 This book is a more philosophical and biological exploration of human running, providing a broader context for the human body's evolutionary ability to run long distances.

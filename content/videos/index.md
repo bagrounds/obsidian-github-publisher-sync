@@ -7,7 +7,7 @@ URL: https://bagrounds.org/videos
 backlinks: false
 ---
 [Home](../index.md)  
-# 📺 Videos (275)  
+# 📺 Videos (276)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
 - [❓💪🔬 12 Questions About Creatine with Stephen Cornish, PhD](./12-questions-about-creatine-w-stephen-cornish-phd.md)  
@@ -66,6 +66,7 @@ backlinks: false
 - [☕⏳😴🧊☀️🏋️ Dr. Matt Walker: How to Structure Your Sleep, Use Naps & Time Caffeine | Huberman Lab Guest Series](./dr-matt-walker-how-to-structure-your-sleep-use-naps-and-time-caffeine-huberman-lab-guest-series.md)  
 - [😴🧠💡 Dr. Matt Walker: Using Sleep to Improve Learning, Creativity & Memory | Huberman Lab Guest Series](./dr-matt-walker-using-sleep-to-improve-learning-creativity-and-memory-huberman-lab-guest-series.md)  
 - [🍎➡️🥗💯 Eat your food in the RIGHT ORDER: 75% healthier with this small trick | Episode 6 of 18](./eat-your-food-in-the-right-order-75-healthier-with-this-small-trick-episode-6-of-18.md)  
+- [🏃‍♀️⚕️💪 ECFIT Expert Series - Jay Dicharry](./ecfit-expert-series-jay-dicharry.md)  
 - [Elon Musk's Family History in South Africa Reveals Ties to Apartheid & Neo-Nazi Movements](./elon-musks-family-history-in-south-africa-reveals-ties-to-apartheid-neo-nazi-movements.md)  
 - [🐘🔴👴🏿💥 Epstein Is A Real Problem For The GOP | Trump's Creepy Past | Blaming Obama](./epstein-is-a-real-problem-for-the-gop-trumps-creepy-past-blaming-obama.md)  
 - [Ethics expert breaks down Trump administration’s conflicts of interest](./ethics-expert-breaks-down-trump-administrations-conflicts-of-interest.md)  

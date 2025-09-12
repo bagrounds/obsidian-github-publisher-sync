@@ -102,7 +102,7 @@ The digital landscape is in constant flux 🌊. Stagnation is the enemy of susta
   
 * Cialdini, R. B. (2006). [🍃🧠🤝🏼 Influence: The Psychology of Persuasion](../books/influence.md). HarperBusiness.  
 * Kim, W. C., & Mauborgne, R. (2005). [🌊📈 Blue Ocean Strategy: How to Create Uncontested Market Space and Make the Competition Irrelevant](../books/blue-ocean-strategy-how-to-create-uncontested-market-space-and-make-the-competition-irrelevant.md). Harvard Business School Press.  
-* Nielsen, J. (1994). *Usability Engineering*. Morgan Kaufmann.  
+* Nielsen, J. (1994). [💻⚙️ Usability Engineering](../books/usability-engineering.md). Morgan Kaufmann.  
 * Pirolli, P., & Card, S. K. (1999). Information foraging. *Psychological Review*, 106(4), 643–672.  
 * Sweller, J. (1988). Cognitive load theory. In P. L. Smith & T. R. Russell (Eds.), *Instructional design: Implications from cognitive science* (pp. 293–311). Erlbaum.  
   

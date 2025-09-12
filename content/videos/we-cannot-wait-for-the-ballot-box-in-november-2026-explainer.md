@@ -3,7 +3,7 @@ share: true
 aliases:
   - ⏳🗳️🙅 We Cannot Wait for the Ballot Box in November 2026 | Explainer
 title: ⏳🗳️🙅 We Cannot Wait for the Ballot Box in November 2026 | Explainer
-URL: https://bagrounds.org/videos/
+URL: https://bagrounds.org/videos/we-cannot-wait-for-the-ballot-box-in-november-2026-explainer
 Author:
 Platform:
 Channel: Heather Cox Richardson
@@ -33,4 +33,7 @@ This video presents a 🔍 specific perspective on the current political climate
 * 📖 Rules for Radicals by Saul Alinsky offers a guide to political activism and community organizing.  
 * [👑🚫📜2️⃣0️⃣ On Tyranny: Twenty Lessons from the Twentieth Century](../books/on-tyranny.md) by Timothy Snyder provides a historical look at how democracies fail and offers lessons for the present day.  
 * [😇🧠 The Righteous Mind: Why Good People Are Divided by Politics and Religion](../books/the-righteous-mind.md) by Jonathan Haidt explores the psychological foundations of morality and politics, helping to understand different political viewpoints.  
-* 📖 The Obstacle Is the Way by Ryan Holiday offers a philosophy for turning problems into opportunities, which could be creatively related to the video's message of turning anxiety into action.
+* 📖 The Obstacle Is the Way by Ryan Holiday offers a philosophy for turning problems into opportunities, which could be creatively related to the video's message of turning anxiety into action.  
+  
+## 🐦 Tweet  
+<blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">⏳🗳️🙅 We Cannot Wait for the Ballot Box in November 2026 | Explainer<br><br>🗳️ Political Action | 🇺🇸 US Politics | 📢 Raising Awareness | 🤝 Patriotism | 👑🚫📜 Democracy<a href="https://twitter.com/HC_Richardson?ref_src=twsrc%5Etfw">@HC_Richardson</a><a href="https://t.co/8blYxm8cQp">https://t.co/8blYxm8cQp</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/1966293548086735188?ref_src=twsrc%5Etfw">September 12, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

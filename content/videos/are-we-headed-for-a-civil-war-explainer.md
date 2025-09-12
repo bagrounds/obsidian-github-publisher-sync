@@ -3,7 +3,7 @@ share: true
 aliases:
   - 🇺🇸⚔️ Are We Headed for a Civil War? | Explainer
 title: 🇺🇸⚔️ Are We Headed for a Civil War? | Explainer
-URL: https://bagrounds.org/videos/
+URL: https://bagrounds.org/videos/are-we-headed-for-a-civil-war-explainer
 Author:
 Platform:
 Channel: Heather Cox Richardson
@@ -30,4 +30,7 @@ youtube: https://youtu.be/6wAlyA4mxus
 * Battle Cry of Freedom by James M. McPherson: This book provides a comprehensive, single-volume history of the American Civil War era, covering the lead-up to the conflict, the battles, and the political climate.  
 * The Cost of Compromise by John Weyermuller: This work offers a contrasting perspective by arguing that the failure to hold the South accountable after the Civil War laid the groundwork for future political violence and divisions.  
 * Race and Reunion by David W. Blight: This book examines the post-Civil War era and how the memory of the war was shaped in the following decades, often glossing over the central issue of slavery in favor of a narrative of national reconciliation.  
-* [🤝🏛️ Team of Rivals: The Political Genius of Abraham Lincoln](../books/team-of-rivals-the-political-genius-of-abraham-lincoln.md) by Doris Kearns Goodwin: A creatively related book that explores the political genius of Abraham Lincoln and how he managed to unite his political opponents to form a cabinet and lead the Union during the war.
+* [🤝🏛️ Team of Rivals: The Political Genius of Abraham Lincoln](../books/team-of-rivals-the-political-genius-of-abraham-lincoln.md) by Doris Kearns Goodwin: A creatively related book that explores the political genius of Abraham Lincoln and how he managed to unite his political opponents to form a cabinet and lead the Union during the war.  
+  
+## 🐦 Tweet  
+<blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">🇺🇸⚔️ Are We Headed for a Civil War? | Explainer<br><br>💥 Power Dynamics | 🇺🇲 American History | 🕊️ Avoiding Conflict | 🤝 Political Solutions<a href="https://twitter.com/HC_Richardson?ref_src=twsrc%5Etfw">@HC_Richardson</a><a href="https://t.co/NJZgYzvIPm">https://t.co/NJZgYzvIPm</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/1966292927048827257?ref_src=twsrc%5Etfw">September 12, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

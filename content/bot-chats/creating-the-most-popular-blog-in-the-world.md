@@ -30,7 +30,7 @@ The most popular blogs don't try to be everything to everyone; they expertly car
   
 * 🧠 **Cognitive Load Theory (Psychology)**: Sweller's Cognitive Load Theory (1988) suggests that effective learning (and by extension, consumption of content) minimizes extraneous cognitive load. This means clear, concise writing, well-structured arguments, and strategic use of visuals and headings. Avoid jargon where possible, or explain it thoroughly.  
 * 🎣 **The "Hook" and Narrative Arc (Psychology)**: Humans are wired for stories. Every piece of content should have a compelling hook, a clear narrative arc (even for an informational post), and a satisfying conclusion ✅. This taps into our innate desire for resolution and understanding. Blogs like *Humans of New York* exemplify pure narrative power.  
-* 🔍 **Information Foraging Theory (Engineering/Psychology)**: Drawing from animal foraging behavior, this theory suggests users "forage" for information online, seeking cues (headlines, images, snippets) to determine if a "patch" (page) is worth investing time in (Pirolli & Card, 1999). Optimize your headlines, meta descriptions, and initial paragraphs to provide rich, enticing "scent."  
+* **[🔍🍎🌲📚 Information Foraging Theory](../articles/information-foraging-theory.md) (Engineering/Psychology)**: Drawing from animal foraging behavior, this theory suggests users "forage" for information online, seeking cues (headlines, images, snippets) to determine if a "patch" (page) is worth investing time in (Pirolli & Card, 1999). Optimize your headlines, meta descriptions, and initial paragraphs to provide rich, enticing "scent."  
 * 🖼️ **Visual Storytelling**: The human brain processes visuals significantly faster than text. Integrating high-quality, relevant images, infographics, and videos is not optional; it's essential for breaking up text, explaining complex concepts, and increasing engagement.  
 * 🎨 **Case Study: *The Oatmeal***: Matthew Inman's *The Oatmeal* combines humor 😂, striking visuals 💥, and often surprisingly insightful commentary on everyday life and complex topics. His ability to distill ideas into digestible, entertaining, and highly shareable visual essays is a masterclass in content engineering.  
 * 📝 **The Content Creation Process**: It is vital to have a consistent and repeatable process for content creation. This involves:  
@@ -103,7 +103,7 @@ The digital landscape is in constant flux 🌊. Stagnation is the enemy of susta
 * Cialdini, R. B. (2006). [🍃🧠🤝🏼 Influence: The Psychology of Persuasion](../books/influence.md). HarperBusiness.  
 * Kim, W. C., & Mauborgne, R. (2005). [🌊📈 Blue Ocean Strategy: How to Create Uncontested Market Space and Make the Competition Irrelevant](../books/blue-ocean-strategy-how-to-create-uncontested-market-space-and-make-the-competition-irrelevant.md). Harvard Business School Press.  
 * Nielsen, J. (1994). [💻⚙️ Usability Engineering](../books/usability-engineering.md). Morgan Kaufmann.  
-* Pirolli, P., & Card, S. K. (1999). Information foraging. *Psychological Review*, 106(4), 643–672.  
+* Pirolli, P., & Card, S. K. (1999). [🔍🍎🌲📚 Information Foraging Theory](../articles/information-foraging-theory.md). *Psychological Review*, 106(4), 643–672.  
 * Sweller, J. (1988). Cognitive load theory. In P. L. Smith & T. R. Russell (Eds.), *Instructional design: Implications from cognitive science* (pp. 293–311). Erlbaum.  
   
 ---  

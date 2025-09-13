@@ -7,7 +7,7 @@ backlinks: false
 URL: https://bagrounds.org/articles
 ---
 [Home](../index.md)  
-# 📄 Articles (55)  
+# 📄 Articles (56)  
 - [🦊😈🐾🕵️💸 5 takeaways about NPR's reporting on the whistleblower report about DOGE at the NLRB](./5-takeaways-about-nprs-reporting-on-the-whistleblower-report-about-doge-at-the-nlrb.md)  
 - [🌱🤖⚙️🖐️ 5 tips on getting started with Gems, your custom AI experts](./5-tips-on-getting-started-with-gems-your-custom-ai-experts.md)  
 - [⏱️⚔️🏛️ '60 Minutes' chief resigns, saying show's independence was compromised](./60-minutes-chief-resigns-saying-shows-independence-was-compromised.md)  
@@ -31,6 +31,7 @@ URL: https://bagrounds.org/articles
 - [👨‍🎓🎯🚫 How the Ph.D. Project, and 45 colleges, became a target of the Trump administration](./how-the-phd-project-and-45-colleges-became-a-target-of-the-trump-administration.md)  
 - [🤖🧠👨‍💻🏗️ How we built our multi Agent research system](./how-we-built-our-multi-agent-research-system.md)  
 - [❤️📈🏋️ HRV Guided training](./hrv-guided-training.md)  
+- [🔍🍎🌲📚 Information Foraging Theory](./information-foraging-theory.md)  
 - [🤖🗣️🔑 Introducing Open SWE: An Open Source Asynchronous Coding Agent](./introducing-open-swe-an-open-source-asynchronous-coding-agent.md)  
 - [🏳️‍⚧️🚫🗣️ Iowa gives final approval to a bill removing gender identity protections despite protests](./iowa-gives-final-approval-to-a-bill-removing-gender-identity-protections-despite-protests.md)  
 - [👨‍⚖️🚫🇸🇻 Jail Judge says deportation of Maryland man to an El Salvador prison was ‘wholly lawless’](./judge-says-deportation-of-maryland-man-to-an-el-salvador-prison-was-wholly-lawless.md)  

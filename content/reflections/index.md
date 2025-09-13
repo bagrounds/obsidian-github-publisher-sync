@@ -7,7 +7,9 @@ URL: https://bagrounds.org/reflections
 backlinks: false
 ---
 [Home](../index.md)  
-# 🪞 Reflections (300)  
+# 🪞 Reflections (302)  
+- [2025-09-12 | 🌐 Blog | 🫐 Forage | 🏃🏼‍♀️ Move 🤖💬📚📄📺](./2025-09-12.md)  
+- [2025-09-11 | 🇺🇸👀 Watching | 🦺 Coddling | 🏃🏼‍♀️ Running 📺📚](./2025-09-11.md)  
 - [2025-09-10 | 🏃🏼‍♀️ Anatomy for Runners 📚📺](./2025-09-10.md)  
 - [2025-09-09 | 🧠 Learning | 🏃🏼‍♀️ Running 📚🪞](./2025-09-09.md)  
 - [2025-09-08 | 😰 Anxious | 🔧 AI Tools 📚📄✍🏽](./2025-09-08.md)  

@@ -10,7 +10,9 @@ title: 🏡 Home
 📑 Notes, 💭 thoughts, and 🔗 Links.  
 ❔ What do 🫵 _you_ 🤔 think?  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (300)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (302)  
+- [2025-09-12 | 🌐 Blog | 🫐 Forage | 🏃🏼‍♀️ Move 🤖💬📚📄📺](./reflections/2025-09-12.md)  
+- [2025-09-11 | 🇺🇸👀 Watching | 🦺 Coddling | 🏃🏼‍♀️ Running 📺📚](./reflections/2025-09-11.md)  
 - [2025-09-10 | 🏃🏼‍♀️ Anatomy for Runners 📚📺](./reflections/2025-09-10.md)  
 - [2025-09-09 | 🧠 Learning | 🏃🏼‍♀️ Running 📚🪞](./reflections/2025-09-09.md)  
 - [2025-09-08 | 😰 Anxious | 🔧 AI Tools 📚📄✍🏽](./reflections/2025-09-08.md)  
@@ -19,34 +21,32 @@ title: 🏡 Home
 - [2025-09-05 | 🤔 Ideological 📚](./reflections/2025-09-05.md)  
 - [2025-09-04 | 🏆 Success | 😇 Virtue | 🍓 Strawberry 📺📚👶🏼](./reflections/2025-09-04.md)  
 - [2025-09-03 | 🏍️ Glide | 🤥 Doubt 🛍️📺📚📄👶🏼](./reflections/2025-09-03.md)  
-- [2025-09-02 | 🧠 Mind | 🧎🏼‍♂️ Kneeling 📚👶🏼](./reflections/2025-09-02.md)  
-- [2025-09-01 | 🧠 Embodied | 🍤 Shrimp 📚](./reflections/2025-09-01.md)  
   
   
-## [📚 Books](./books/index.md) (610)  
+## [📚 Books](./books/index.md) (615)  
+- [🧭🍎 Foraging Theory](./books/foraging-theory.md)  
+- [💻⚙️ Usability Engineering](./books/usability-engineering.md)  
+- [0️⃣➡️1️⃣ Zero To One](./books/zero-to-one.md)  
+- [🔟💡 Ten Types of Innovation: The Discipline of Building Breakthroughs](./books/ten-types-of-innovation-the-discipline-of-building-breakthroughs.md)  
+- [💡📜 Where Good Ideas Come From: The Natural History of Innovation](./books/where-good-ideas-come-from-the-natural-history-of-innovation.md)  
+- [🌊📈 Blue Ocean Strategy: How to Create Uncontested Market Space and Make the Competition Irrelevant](./books/blue-ocean-strategy-how-to-create-uncontested-market-space-and-make-the-competition-irrelevant.md)  
+- [🧠📈 Outsmart Yourself: Brain-Based Strategies for a Bettery You](./books/outsmart-yourself-brain-based-strategies-for-a-bettery-you.md)  
+- [⚕️💀 Being Mortal: Medicine and What Matters in the End](./books/being-mortal-medicine-and-what-matters-in-the-end.md)  
 - [🏃‍♀️🦴 Anatomy for Runners: Unlocking Your Athletic Potential for Health, Speed, and Injury Prevention](./books/anatomy-for-runners-unlocking-your-athletic-potential-for-health-speed-and-injury-prevention.md)  
-- [🧠📚💡🧩 The Learning Brain](./books/the-learning-brain.md)  
-- [📱😥 The Anxious Generation: How the Great Rewiring of Childhood Is Causing an Epidemic of Mental Illness](./books/the-anxious-generation-how-the-great-rewiring-of-childhood-is-causing-an-epidemic-of-mental-illness.md)  
-- [💰📉➡️📈🗳️ The Deficit Myth: Modern Monetary Theory and the Birth of the People's Economy](./books/the-deficit-myth.md)  
-- [🤫🤑 23 Things They Don't Tell You About Capitalism](./books/23-things-they-dont-tell-you-about-capitalism.md)  
-- [🧑‍🤝‍🧑📈 10 to 25: The Science of Motivating Young People: A Groundbreaking Approach to Leading the Next Generation - And Making Your Own Life Easier](./books/10-to-25-the-science-of-motivating-young-people-a-groundbreaking-approach-to-leading-the-next-generation-and-making-your-own-life-easier.md)  
-- [🚫🎭🧠 No-Drama Discipline: The Whole-Brain Way to Calm the Chaos and Nurture Your Child's Developing Mind](./books/no-drama-discipline.md)  
-- [🤕👶 The Coddling of the American Mind: How Good Intentions and Bad Ideas Are Setting Up a Generation for Failure](./books/the-coddling-of-the-american-mind-how-good-intentions-and-bad-ideas-are-setting-up-a-generation-for-failure.md)  
-- [🇷🇺🪝🇺🇸 American Kompromat: How the KGB Cultivated Donald Trump, and Other Tales of Sex, Greed, Power, and Treachery](./books/american-kompromat-how-the-kgb-cultivated-donald-trump-and-other-tales-of-sex-greed-power-and-treachery.md)  
-- [🏛️❓ Who Is Government?: The Untold Story of Public Service](./books/who-is-government-the-untold-story-of-public-service.md)  
+- [🏃🛠️⚡ Running Rewired: Reinvent Your Run for Stability, Strength, and Speed](./books/running-rewired-reinvent-your-run-for-stability-strength-and-speed.md)  
   
   
-## [📺 Videos](./videos/index.md) (276)  
+## [📺 Videos](./videos/index.md) (281)  
+- [🏃🤸🧠💪 Why You Should Train Movement, Not Muscle](./videos/why-you-should-train-movement-not-muscle-with-jay-dicharry.md)  
+- [🏛️🐘⬆️🙏 Heather Cox Richardson on Why She's Still Hopeful Under MAGA and Donald Trump](./videos/heather-cox-richardson-on-why-shes-still-hopeful-under-maga-and-donald-trump.md)  
+- [👨‍💼🎓📺 Trump vs Higher Education: Last Week Tonight with John Oliver (HBO)](./videos/trump-vs-higher-education-last-week-tonight-with-john-oliver-hbo.md)  
+- [⏳🗳️🙅 We Cannot Wait for the Ballot Box in November 2026 | Explainer](./videos/we-cannot-wait-for-the-ballot-box-in-november-2026-explainer.md)  
+- [🇺🇸⚔️ Are We Headed for a Civil War? | Explainer](./videos/are-we-headed-for-a-civil-war-explainer.md)  
 - [🏃‍♀️⚕️💪 ECFIT Expert Series - Jay Dicharry](./videos/ecfit-expert-series-jay-dicharry.md)  
 - [🏃🦵🤕 SHIN SPLINTS for Runners: Challenges, Causes, and Rehab](./videos/shin-splints-for-runners-challenges-causes-and-rehab.md)  
 - [🦴🤕🏃‍♀️🧪 How to Reduce Bone Injury Risks | Running Science](./videos/how-to-reduce-bone-injury-risks-running-science.md)  
 - [🍎➡️🥗💯 Eat your food in the RIGHT ORDER: 75% healthier with this small trick | Episode 6 of 18](./videos/eat-your-food-in-the-right-order-75-healthier-with-this-small-trick-episode-6-of-18.md)  
 - [🇺🇸💪🏥😂 Make America Healthy Again: Last Week Tonight with John Oliver (HBO)](./videos/make-america-healthy-again-last-week-tonight-with-john-oliver-hbo.md)  
-- [🕵️🇺🇸💻👁️ How ICE Spies On American Citizens | Incognito Mode | WIRED](./videos/how-ice-spies-on-american-citizens-incognito-mode-wired.md)  
-- [💉🚫🌴 Florida to end state vaccine mandates](./videos/florida-to-end-state-vaccine-mandates-reuters.md)  
-- [👓⚖️ There Are Two Ways to Look At Freedom | Explainer](./videos/there-are-two-ways-to-look-at-freedom-explainer.md)  
-- [🤡💵📺 Trump’s One Big Beautiful Bill: Last Week Tonight with John Oliver (HBO)](./videos/trumps-one-big-beautiful-bill-last-week-tonight-with-john-oliver-hbo.md)  
-- [⛈️🇺🇸🗣️💬 Brooks and Capehart on the federal response to the Texas flooding disaster](./videos/brooks-and-capehart-on-the-federal-response-to-the-texas-flooding-disaster.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (82)  
@@ -57,20 +57,20 @@ title: 🏡 Home
 - [🧑‍💼🛡️ Job Guarantee / Employer of Last Resort](./topics/job-guarantee-employer-of-last-resort.md)  
   
   
-## [📄  Articles](./articles/index.md) (55)  
+## [📄  Articles](./articles/index.md) (56)  
+- [🔍🍎🌲📚 Information Foraging Theory](./articles/information-foraging-theory.md)  
 - [🪧👐🏽🚫👹 Thousands gather in Everett to say ‘Hands Off!’ to Trump](./articles/thousands-gather-in-everett-to-say-hands-off-to-trump.md)  
 - [🚫🏫📉⚠️ Project 2025 and education: A lot of bad ideas, some more actionable than others](./articles/project-2025-and-education-a-lot-of-bad-ideas-some-more-actionable-than-others.md)  
 - [🤱😴👶 Safe Sleep for Breastfeeding Babies](./articles/safe-sleep-for-breastfeeding-babies.md)  
 - [🎶👶🧠🗣️ Musical intervention enhances infants’ neural processing of temporal structure in music and speech](./articles/musical-intervention-enhances-infants-neural-processing-of-temporal-structure-in-music-and-speech.md)  
-- [🏫🔥 Snohomish County schools react to education department firings](./articles/snohomish-county-schools-react-to-education-department-firings.md)  
   
   
-## [🤖💬 Bot Chats](./bot-chats/index.md) (43)  
+## [🤖💬 Bot Chats](./bot-chats/index.md) (44)  
+- [📈🌐🏆📢 Creating the Most Popular Blog in the World](./bot-chats/creating-the-most-popular-blog-in-the-world.md)  
 - [📖 Book 🧭 Explorer 2](./bot-chats/book-explorer-2.md)  
 - [👶🏼🛒🏃🏼‍♀️🦮💲🦮 Jogging Stroller Buying Guide](./bot-chats/jogging-stroller-buying-guide.md)  
 - [📖 Book 🧭 Explorer 1](./bot-chats/book-explorer-1.md)  
 - [📚🤖💬 RAG and Agents](./bot-chats/rag-and-agents.md)  
-- [📐🔗🤖🧠 Category Theory for AI Engineering](./bot-chats/category-theory-for-ai-engineering.md)  
   
   
 ## [💾 Software](./software/index.md) (29)  

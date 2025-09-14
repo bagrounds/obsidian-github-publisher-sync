@@ -11,6 +11,10 @@ CTA: 🏃‍♀️ Fortify your stride.
 # 🏃‍♀️🦴 Anatomy for Runners: Unlocking Your Athletic Potential for Health, Speed, and Injury Prevention  
 [🛒 Anatomy for Runners: Unlocking Your Athletic Potential for Health, Speed, and Injury Prevention. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4nuh7IA)  
   
+## 📝🐒 Human Notes  
+- ⚖️ Balance, 🎮 control, and 🤸 variety of movements  
+- 🦶 Feet need feedback. 🩴 Prefer minimal shoes.  
+  
 ## 📖 Book Report: 🏃‍♀️ Anatomy for Runners  
   
 🏃‍♀️ Anatomy for Runners: 🔓 Unlocking Your Athletic Potential for Health, Speed, and Injury Prevention is a comprehensive guide by Jay Dicharry that delves into the intricate relationship between 🦴 human anatomy, 🏃‍♀️ running biomechanics, and 🌿 sustainable athletic performance. 📚 The book aims to empower runners with the knowledge to prevent injuries, improve efficiency, and unlock their full potential.  

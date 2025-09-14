@@ -23,7 +23,9 @@ title: 🏡 Home
 - [2025-09-05 | 🤔 Ideological 📚](./reflections/2025-09-05.md)  
   
   
-## [📚 Books](./books/index.md) (619)  
+## [📚 Books](./books/index.md) (620)  
+- [➡️🌌🚀😡 A Long Way to a Small, Angry Planet](./books/a-long-way-to-a-small-angry-planet.md)  
+- [🏃‍♀️🦴 Anatomy for Runners: Unlocking Your Athletic Potential for Health, Speed, and Injury Prevention](./books/anatomy-for-runners-unlocking-your-athletic-potential-for-health-speed-and-injury-prevention.md)  
 - [😠🎭 Uncivil Agreement: How Politics Became Our Identity](./books/uncivil-agreement-how-politics-became-our-identity.md)  
 - [😠🤝 Disagree without Disrespect: How to Respectfully Debate with Those who Think, Believe and Vote Differently from You](./books/disagree-without-disrespect-how-to-respectfully-debate-with-those-who-think-believe-and-vote-differently-from-you.md)  
 - [🇺🇸🧠 American Amnesia: How the War on Government Led Us to Forget What Made America Prosper](./books/american-amnesia-how-the-war-on-government-led-us-to-forget-what-made-america-prosper.md)  
@@ -32,8 +34,6 @@ title: 🏡 Home
 - [⛰️📈🥇 Peak: Secrets from the New Science of Expertise](./books/peak.md)  
 - [🏃🏆👵 The Complete Guide to Running: How to Be a Champion from 9 to 90](./books/the-complete-guide-to-running.md)  
 - [🫁🌬️ Breath: The New Science of a Lost Art](./books/breath-the-new-science-of-a-lost-art.md)  
-- [🏃🛠️⚡ Running Rewired: Reinvent Your Run for Stability, Strength, and Speed](./books/running-rewired-reinvent-your-run-for-stability-strength-and-speed.md)  
-- [🏃‍♂️⛰️ Born to Run: A Hidden Tribe, Superathletes, and the Greatest Race the World Has Never Seen](./books/born-to-run-a-hidden-tribe-superathletes-and-the-greatest-race-the-world-has-never-seen.md)  
   
   
 ## [📺 Videos](./videos/index.md) (285)  
@@ -87,7 +87,8 @@ title: 🏡 Home
 - [😴🧠🌃 Sara C. Mednick](./people/sara-c-mednick.md)  
   
   
-## [🛍️ Products](./products/index.md) (1)  
+## [🛍️ Products](./products/index.md) (2)  
+- [👶🌧️💨 Graco Baby Jogging Stroller Universal Rain Cover, Ventilated Weather Shield, Waterproof, Windproof, Versatile Size to Fit Most Jogging Strollers, Vinyl, Clear, Plastic](./products/graco-baby-jogging-stroller-universal-rain-cover-ventilated-weather-shield-waterproof-windproof-versatile-size-to-fit-most-jogging-strollers-vinyl-clear-plastic.md)  
 - [👶🏃🌆 Thule Urban Glide 3](./products/thule-urban-glide-3.md)  
   
   

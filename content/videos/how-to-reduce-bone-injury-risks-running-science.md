@@ -28,7 +28,7 @@ This podcast offers a 👨‍🔬 science-backed perspective on running injuries
   
 ## 📚 Book Recommendations  
   
-  * Born to Run by Christopher McDougall: This book offers a 🏃‍♂️ narrative look at endurance running and biomechanics, providing a different, more story-based perspective than the scientific discussion in the podcast.  
+  * [🏃‍♂️⛰️ Born to Run: A Hidden Tribe, Superathletes, and the Greatest Race the World Has Never Seen](../books/born-to-run-a-hidden-tribe-superathletes-and-the-greatest-race-the-world-has-never-seen.md) by Christopher McDougall: This book offers a 🏃‍♂️ narrative look at endurance running and biomechanics, providing a different, more story-based perspective than the scientific discussion in the podcast.  
   * [💪🧪 Good to Go: What the Athlete in All of Us Can Learn from the Strange Science of Recovery](../books/good-to-go-what-the-athlete-in-all-of-us-can-learn-from-the-strange-science-of-recovery.md) by Christie Aschwanden: This book 🔍 investigates the science of sports recovery, which is a related topic to injury prevention and training.  
   * The New Rules of Marathon and Half-Marathon Nutrition by Matt Fitzgerald: This book provides actionable 🍎 nutritional advice, expanding on the topic of energy deficiency mentioned in the video.  
   * Endure: Mind, Body, and the Curiously Elastic Limits of Human Performance by Alex Hutchinson: This book explores the 🧠 mental and physical limits of endurance, offering a contrasting perspective on how the brain influences athletic performance.

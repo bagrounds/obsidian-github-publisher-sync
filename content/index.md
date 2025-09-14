@@ -10,7 +10,8 @@ title: 🏡 Home
 📑 Notes, 💭 thoughts, and 🔗 Links.  
 ❔ What do 🫵 _you_ 🤔 think?  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (302)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (303)  
+- [2025-09-13 | 👣 Run 📚](./reflections/2025-09-13.md)  
 - [2025-09-12 | 🌐 Blog | 🫐 Forage | 🏃🏼‍♀️ Move 🤖💬📚📄📺](./reflections/2025-09-12.md)  
 - [2025-09-11 | 🇺🇸👀 Watching | 🦺 Coddling | 🏃🏼‍♀️ Running 📺📚](./reflections/2025-09-11.md)  
 - [2025-09-10 | 🏃🏼‍♀️ Anatomy for Runners 📚📺](./reflections/2025-09-10.md)  
@@ -20,31 +21,30 @@ title: 🏡 Home
 - [2025-09-06 | 👿 Demon | 🪤 Trap | ♾️ Resilience 📚📺](./reflections/2025-09-06.md)  
 - [2025-09-05 | 🤔 Ideological 📚](./reflections/2025-09-05.md)  
 - [2025-09-04 | 🏆 Success | 😇 Virtue | 🍓 Strawberry 📺📚👶🏼](./reflections/2025-09-04.md)  
-- [2025-09-03 | 🏍️ Glide | 🤥 Doubt 🛍️📺📚📄👶🏼](./reflections/2025-09-03.md)  
   
   
-## [📚 Books](./books/index.md) (615)  
+## [📚 Books](./books/index.md) (616)  
+- [👶🌱📈 The Talent Code: Greatness Isn't Born. It's Grown. Here's How.](./books/the-talent-code.md)  
+- [⛰️📈🥇 Peak: Secrets from the New Science of Expertise](./books/peak.md)  
+- [🏃🏆👵 The Complete Guide to Running: How to Be a Champion from 9 to 90](./books/the-complete-guide-to-running.md)  
+- [🫁🌬️ Breath: The New Science of a Lost Art](./books/breath-the-new-science-of-a-lost-art.md)  
+- [🏃🛠️⚡ Running Rewired: Reinvent Your Run for Stability, Strength, and Speed](./books/running-rewired-reinvent-your-run-for-stability-strength-and-speed.md)  
+- [🏃‍♂️⛰️ Born to Run: A Hidden Tribe, Superathletes, and the Greatest Race the World Has Never Seen](./books/born-to-run-a-hidden-tribe-superathletes-and-the-greatest-race-the-world-has-never-seen.md)  
 - [🧭🍎 Foraging Theory](./books/foraging-theory.md)  
 - [💻⚙️ Usability Engineering](./books/usability-engineering.md)  
 - [0️⃣➡️1️⃣ Zero To One](./books/zero-to-one.md)  
 - [🔟💡 Ten Types of Innovation: The Discipline of Building Breakthroughs](./books/ten-types-of-innovation-the-discipline-of-building-breakthroughs.md)  
-- [💡📜 Where Good Ideas Come From: The Natural History of Innovation](./books/where-good-ideas-come-from-the-natural-history-of-innovation.md)  
-- [🌊📈 Blue Ocean Strategy: How to Create Uncontested Market Space and Make the Competition Irrelevant](./books/blue-ocean-strategy-how-to-create-uncontested-market-space-and-make-the-competition-irrelevant.md)  
-- [🧠📈 Outsmart Yourself: Brain-Based Strategies for a Bettery You](./books/outsmart-yourself-brain-based-strategies-for-a-bettery-you.md)  
-- [⚕️💀 Being Mortal: Medicine and What Matters in the End](./books/being-mortal-medicine-and-what-matters-in-the-end.md)  
-- [🏃‍♀️🦴 Anatomy for Runners: Unlocking Your Athletic Potential for Health, Speed, and Injury Prevention](./books/anatomy-for-runners-unlocking-your-athletic-potential-for-health-speed-and-injury-prevention.md)  
-- [🏃🛠️⚡ Running Rewired: Reinvent Your Run for Stability, Strength, and Speed](./books/running-rewired-reinvent-your-run-for-stability-strength-and-speed.md)  
   
   
 ## [📺 Videos](./videos/index.md) (281)  
+- [🦴🤕🏃‍♀️🧪 How to Reduce Bone Injury Risks | Running Science](./videos/how-to-reduce-bone-injury-risks-running-science.md)  
+- [🏃‍♀️⚕️💪 ECFIT Expert Series - Jay Dicharry](./videos/ecfit-expert-series-jay-dicharry.md)  
 - [🏃🤸🧠💪 Why You Should Train Movement, Not Muscle](./videos/why-you-should-train-movement-not-muscle-with-jay-dicharry.md)  
 - [🏛️🐘⬆️🙏 Heather Cox Richardson on Why She's Still Hopeful Under MAGA and Donald Trump](./videos/heather-cox-richardson-on-why-shes-still-hopeful-under-maga-and-donald-trump.md)  
 - [👨‍💼🎓📺 Trump vs Higher Education: Last Week Tonight with John Oliver (HBO)](./videos/trump-vs-higher-education-last-week-tonight-with-john-oliver-hbo.md)  
 - [⏳🗳️🙅 We Cannot Wait for the Ballot Box in November 2026 | Explainer](./videos/we-cannot-wait-for-the-ballot-box-in-november-2026-explainer.md)  
 - [🇺🇸⚔️ Are We Headed for a Civil War? | Explainer](./videos/are-we-headed-for-a-civil-war-explainer.md)  
-- [🏃‍♀️⚕️💪 ECFIT Expert Series - Jay Dicharry](./videos/ecfit-expert-series-jay-dicharry.md)  
 - [🏃🦵🤕 SHIN SPLINTS for Runners: Challenges, Causes, and Rehab](./videos/shin-splints-for-runners-challenges-causes-and-rehab.md)  
-- [🦴🤕🏃‍♀️🧪 How to Reduce Bone Injury Risks | Running Science](./videos/how-to-reduce-bone-injury-risks-running-science.md)  
 - [🍎➡️🥗💯 Eat your food in the RIGHT ORDER: 75% healthier with this small trick | Episode 6 of 18](./videos/eat-your-food-in-the-right-order-75-healthier-with-this-small-trick-episode-6-of-18.md)  
 - [🇺🇸💪🏥😂 Make America Healthy Again: Last Week Tonight with John Oliver (HBO)](./videos/make-america-healthy-again-last-week-tonight-with-john-oliver-hbo.md)  
   
@@ -58,11 +58,11 @@ title: 🏡 Home
   
   
 ## [📄  Articles](./articles/index.md) (56)  
+- [👀👶🏼🏃🏼‍♀️🛣️ What to Look for in a Jogging Stroller](./articles/what-to-look-for-in-a-jogging-stroller.md)  
 - [🔍🍎🌲📚 Information Foraging Theory](./articles/information-foraging-theory.md)  
 - [🪧👐🏽🚫👹 Thousands gather in Everett to say ‘Hands Off!’ to Trump](./articles/thousands-gather-in-everett-to-say-hands-off-to-trump.md)  
 - [🚫🏫📉⚠️ Project 2025 and education: A lot of bad ideas, some more actionable than others](./articles/project-2025-and-education-a-lot-of-bad-ideas-some-more-actionable-than-others.md)  
 - [🤱😴👶 Safe Sleep for Breastfeeding Babies](./articles/safe-sleep-for-breastfeeding-babies.md)  
-- [🎶👶🧠🗣️ Musical intervention enhances infants’ neural processing of temporal structure in music and speech](./articles/musical-intervention-enhances-infants-neural-processing-of-temporal-structure-in-music-and-speech.md)  
   
   
 ## [🤖💬 Bot Chats](./bot-chats/index.md) (44)  

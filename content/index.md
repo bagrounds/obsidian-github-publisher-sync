@@ -10,7 +10,8 @@ title: 🏡 Home
 📑 Notes, 💭 thoughts, and 🔗 Links.  
 ❔ What do 🫵 _you_ 🤔 think?  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (303)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (304)  
+- [2025-09-14 | 🇨🇦 Canada | 🥶 ICE | 🥴 Amnesia 📺📚](./reflections/2025-09-14.md)  
 - [2025-09-13 | 👣 Run 📚](./reflections/2025-09-13.md)  
 - [2025-09-12 | 🌐 Blog | 🫐 Forage | 🏃🏼‍♀️ Move 🤖💬📚📄📺](./reflections/2025-09-12.md)  
 - [2025-09-11 | 🇺🇸👀 Watching | 🦺 Coddling | 🏃🏼‍♀️ Running 📺📚](./reflections/2025-09-11.md)  
@@ -20,33 +21,32 @@ title: 🏡 Home
 - [2025-09-07 | 🍼 Coddling | ⚠️ Warning | 🗽 Freedom 📚📰😆📺](./reflections/2025-09-07.md)  
 - [2025-09-06 | 👿 Demon | 🪤 Trap | ♾️ Resilience 📚📺](./reflections/2025-09-06.md)  
 - [2025-09-05 | 🤔 Ideological 📚](./reflections/2025-09-05.md)  
-- [2025-09-04 | 🏆 Success | 😇 Virtue | 🍓 Strawberry 📺📚👶🏼](./reflections/2025-09-04.md)  
   
   
-## [📚 Books](./books/index.md) (616)  
+## [📚 Books](./books/index.md) (619)  
+- [😠🎭 Uncivil Agreement: How Politics Became Our Identity](./books/uncivil-agreement-how-politics-became-our-identity.md)  
+- [😠🤝 Disagree without Disrespect: How to Respectfully Debate with Those who Think, Believe and Vote Differently from You](./books/disagree-without-disrespect-how-to-respectfully-debate-with-those-who-think-believe-and-vote-differently-from-you.md)  
+- [🇺🇸🧠 American Amnesia: How the War on Government Led Us to Forget What Made America Prosper](./books/american-amnesia-how-the-war-on-government-led-us-to-forget-what-made-america-prosper.md)  
+- [🙋‍♂️🏛️ Why I Am a Liberal: Being Definitions and Personal Confessions of Faith by the Best Minds of the Liberal Party](./books/why-i-am-a-liberal-being-definitions-and-personal-confessions-of-faith-by-the-best-minds-of-the-liberal-party.md)  
 - [👶🌱📈 The Talent Code: Greatness Isn't Born. It's Grown. Here's How.](./books/the-talent-code.md)  
 - [⛰️📈🥇 Peak: Secrets from the New Science of Expertise](./books/peak.md)  
 - [🏃🏆👵 The Complete Guide to Running: How to Be a Champion from 9 to 90](./books/the-complete-guide-to-running.md)  
 - [🫁🌬️ Breath: The New Science of a Lost Art](./books/breath-the-new-science-of-a-lost-art.md)  
 - [🏃🛠️⚡ Running Rewired: Reinvent Your Run for Stability, Strength, and Speed](./books/running-rewired-reinvent-your-run-for-stability-strength-and-speed.md)  
 - [🏃‍♂️⛰️ Born to Run: A Hidden Tribe, Superathletes, and the Greatest Race the World Has Never Seen](./books/born-to-run-a-hidden-tribe-superathletes-and-the-greatest-race-the-world-has-never-seen.md)  
-- [🧭🍎 Foraging Theory](./books/foraging-theory.md)  
-- [💻⚙️ Usability Engineering](./books/usability-engineering.md)  
-- [0️⃣➡️1️⃣ Zero To One](./books/zero-to-one.md)  
-- [🔟💡 Ten Types of Innovation: The Discipline of Building Breakthroughs](./books/ten-types-of-innovation-the-discipline-of-building-breakthroughs.md)  
   
   
-## [📺 Videos](./videos/index.md) (281)  
+## [📺 Videos](./videos/index.md) (285)  
+- [📚⏱️💡 21 Life-Changing Books Summarized in 18 Minutes](./videos/21-life-changing-books-summarized-in-18-minutes.md)  
+- [🛂🛑🇺🇸🎤 Immigration Enforcement: Last Week Tonight with John Oliver (HBO)](./videos/immigration-enforcement-last-week-tonight-with-john-oliver-hbo.md)  
+- [🧠💪🧘 How To Force Your Brain To Do Hard Things (Lotus Method)](./videos/how-to-force-your-brain-to-do-hard-things-lotus-method.md)  
+- [🏛️🚨🇺🇸 Former Homeland Security chief Jeh Johnson issues urgent call to protect U.S. democracy](./videos/former-homeland-security-chief-jeh-johnson-issues-urgent-call-to-protect-u-s-democracy.md)  
+- [🇺🇸➡️🇨🇦 Dear Americans… we saved you a seat](./videos/dear-americans-we-saved-you-a-seat.md)  
 - [🦴🤕🏃‍♀️🧪 How to Reduce Bone Injury Risks | Running Science](./videos/how-to-reduce-bone-injury-risks-running-science.md)  
 - [🏃‍♀️⚕️💪 ECFIT Expert Series - Jay Dicharry](./videos/ecfit-expert-series-jay-dicharry.md)  
 - [🏃🤸🧠💪 Why You Should Train Movement, Not Muscle](./videos/why-you-should-train-movement-not-muscle-with-jay-dicharry.md)  
 - [🏛️🐘⬆️🙏 Heather Cox Richardson on Why She's Still Hopeful Under MAGA and Donald Trump](./videos/heather-cox-richardson-on-why-shes-still-hopeful-under-maga-and-donald-trump.md)  
 - [👨‍💼🎓📺 Trump vs Higher Education: Last Week Tonight with John Oliver (HBO)](./videos/trump-vs-higher-education-last-week-tonight-with-john-oliver-hbo.md)  
-- [⏳🗳️🙅 We Cannot Wait for the Ballot Box in November 2026 | Explainer](./videos/we-cannot-wait-for-the-ballot-box-in-november-2026-explainer.md)  
-- [🇺🇸⚔️ Are We Headed for a Civil War? | Explainer](./videos/are-we-headed-for-a-civil-war-explainer.md)  
-- [🏃🦵🤕 SHIN SPLINTS for Runners: Challenges, Causes, and Rehab](./videos/shin-splints-for-runners-challenges-causes-and-rehab.md)  
-- [🍎➡️🥗💯 Eat your food in the RIGHT ORDER: 75% healthier with this small trick | Episode 6 of 18](./videos/eat-your-food-in-the-right-order-75-healthier-with-this-small-trick-episode-6-of-18.md)  
-- [🇺🇸💪🏥😂 Make America Healthy Again: Last Week Tonight with John Oliver (HBO)](./videos/make-america-healthy-again-last-week-tonight-with-john-oliver-hbo.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (82)  

@@ -46,7 +46,7 @@ The book is intended for a broad spectrum of fitness enthusiasts. 🤩 Whether y
   
 ### 🆚 Contrasting Perspectives: Alternative Running Philosophies  
   
-* 📖 ***Born to Run: A Hidden Tribe, Superathletes, and the Greatest Race the World Has Never Seen*** **by Christopher McDougall:** This iconic book challenges modern running conventions by exploring the lives of the Tarahumara Indians, a tribe of super-runners who run long distances with minimal footwear and few injuries. 👣 It sparked the minimalist running movement.  
+* **[🏃‍♂️⛰️ Born to Run: A Hidden Tribe, Superathletes, and the Greatest Race the World Has Never Seen](./born-to-run-a-hidden-tribe-superathletes-and-the-greatest-race-the-world-has-never-seen.md)** **by Christopher McDougall:** This iconic book challenges modern running conventions by exploring the lives of the Tarahumara Indians, a tribe of super-runners who run long distances with minimal footwear and few injuries. 👣 It sparked the minimalist running movement.  
 * 📖 ***Run Less, Run Faster: Become a Faster, Stronger Runner with the Revolutionary 3-Runs-a-Week Training Program*** **by Bill Pierce, Scott Murr, and Ray Moss:** This book, based on the Furman Institute of Running and Scientific Training (FIRST) program, advocates for a lower-mileage, higher-intensity training plan. ⏱️ It's a great option for time-crunched runners who still want to improve their race times.  
 * 📖 ***What I Talk About When I Talk About Running*** **by Haruki Murakami:** A memoir from the acclaimed novelist, this book is less of a training guide and more of a meditation on the intersection of running and writing. ✍️ It offers a unique and introspective look at the role running can play in a creative life.  
   

@@ -53,7 +53,7 @@ CTA: 🫁 Discover proper breathing.
   
 ### 🎨 Creatively Related Reads: Lost Arts and Fundamental Skills  
   
-* 📖 **Born to Run: A Hidden Tribe, Superathletes, and the Greatest Race the World Has Never Seen** by Christopher McDougall: This book explores another "lost art" of human movement—natural running—and tells a captivating story of a remote tribe that has maintained this ability.  
+* **[🏃‍♂️⛰️ Born to Run: A Hidden Tribe, Superathletes, and the Greatest Race the World Has Never Seen](./born-to-run-a-hidden-tribe-superathletes-and-the-greatest-race-the-world-has-never-seen.md)** by Christopher McDougall: This book explores another "lost art" of human movement—natural running—and tells a captivating story of a remote tribe that has maintained this ability.  
 * **[📵 How to Do Nothing: Resisting the Attention Economy](./how-to-do-nothing-resisting-the-attention-economy.md)** by Jenny Odell: In a world of constant distraction, this book makes a case for rediscovering the lost art of paying attention and being present in our physical surroundings.  
 * 📖 **Salt, Fat, Acid, Heat: Mastering the Elements of Good Cooking** by Samin Nosrat: This book breaks down the fundamentals of cooking into four simple elements, empowering readers to become more intuitive and creative in the kitchen, much like *Breath* aims to do for our breathing.  
 * 📖 **The Wim Hof Method: Activate Your Full Human Potential** by Wim Hof: For those intrigued by the more extreme breathing techniques mentioned in *Breath*, this book offers a firsthand account and practical guide to the Wim Hof Method, which involves a combination of breathing exercises, cold exposure, and mindset training.  

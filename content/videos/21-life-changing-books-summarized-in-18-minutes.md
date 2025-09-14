@@ -4,10 +4,10 @@ aliases:
   - 📚⏱️💡 21 Life-Changing Books Summarized in 18 Minutes
 title: 📚⏱️💡 21 Life-Changing Books Summarized in 18 Minutes
 URL: https://bagrounds.org/videos/21-life-changing-books-summarized-in-18-minutes
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: Daniel Pink
-tags: 
+tags:
 youtube: https://youtu.be/lyLEBnUTqJI
 ---
 [Home](../index.md) > [Videos](./index.md)  
@@ -29,7 +29,7 @@ youtube: https://youtu.be/lyLEBnUTqJI
 * 🌍 **Rulemakers, Rulebreakers by Michele Gelfand** \[[09:21](http://www.youtube.com/watch?v=lyLEBnUTqJI&t=561)\]: 🗺️ Explores "tight" and "loose" cultures, where tight cultures have rigid rules and loose cultures have weaker social norms, and how these differences organize the world.  
 * 🧬 **The Genetic Lottery by Kathryn Paige Harden** \[[10:11](http://www.youtube.com/watch?v=lyLEBnUTqJI&t=611)\]: 🎰 Argues that genes significantly affect life outcomes and that birth is, in some ways, a lottery, suggesting that this fact must be considered when building a better world.  
 * **[😇🧠 The Righteous Mind: Why Good People Are Divided by Politics and Religion](../books/the-righteous-mind.md) by Jonathan Haidt** \[[10:53](http://www.youtube.com/watch?v=lyLEBnUTqJI&t=653)\]: 💡 Contends that human moral decisions are primarily driven by visceral emotional reactions, with reason serving to support those feelings, and introduces the concept of multiple moral foundations.  
-* 🇺🇸 **Uncivil Agreement by Lilliana Mason** \[[11:54](http://www.youtube.com/watch?v=lyLEBnUTqJI&t=714)\]: 🗳️ Explains that American politics is increasingly driven by identity rather than just interests, leading to fierce disagreements between distinct political tribes.  
+* **[😠🎭 Uncivil Agreement: How Politics Became Our Identity](../books/uncivil-agreement-how-politics-became-our-identity.md) by Lilliana Mason** \[[11:54](http://www.youtube.com/watch?v=lyLEBnUTqJI&t=714)\]: 🗳️ Explains that American politics is increasingly driven by identity rather than just interests, leading to fierce disagreements between distinct political tribes.  
 * **[🌱🧘🏼‍♀️🏆 Mindset: The New Psychology of Success](../books/mindset.md) by Carol Dweck** \[[12:58](http://www.youtube.com/watch?v=lyLEBnUTqJI&t=778)\]: 🚀 Introduces the concepts of a fixed mindset (abilities are finite) and a growth mindset (abilities are malleable and can be expanded through effort), emphasizing the importance of cultivating a growth mindset.  
 * 📉 **Scarcity by Sendhil Mullainathan and Eldar Shafir** \[[13:47](http://www.youtube.com/watch?v=lyLEBnUTqJI&t=827)\]: 💸 Demonstrates that a lack of resources (time, money) negatively impacts decision-making, leading to worse choices and explaining why people struggling economically may make impulsive decisions.  
 * **[🐦🕊️ Bird by Bird: Some Instructions on Writing and Life](../books/bird-by-bird.md) by Anne Lamott** \[[14:47](http://www.youtube.com/watch?v=lyLEBnUTqJI&t=887)\]: ✍️ Offers a simple yet profound lesson for writing and life: tackle large tasks "bird by bird," focusing on small, manageable steps.  

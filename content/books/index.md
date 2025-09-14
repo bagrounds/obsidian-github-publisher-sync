@@ -7,7 +7,7 @@ URL: https://bagrounds.org/books
 backlinks: false
 ---
 [Home](../index.md)  
-# 📚 Books (616)  
+# 📚 Books (619)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)  
 - [🧑‍🤝‍🧑📈 10 to 25: The Science of Motivating Young People: A Groundbreaking Approach to Leading the Next Generation - And Making Your Own Life Easier](./10-to-25-the-science-of-motivating-young-people-a-groundbreaking-approach-to-leading-the-next-generation-and-making-your-own-life-easier.md)  
@@ -31,6 +31,7 @@ backlinks: false
 - [🤖💻 AI-Powered Developer: Build great software with ChatGPT and Copilot](./ai-powered-developer-build-great-software-with-chatgpt-and-copilot.md)  
 - [🤔💻🧠 Algorithms to Live By: The Computer Science of Human Decisions](./algorithms-to-live-by.md)  
 - [🔬🧘🏼‍♀️🧠 Altered Traits: Science Reveals How Meditation Changes Your Mind, Brain, and Body](./altered-traits-science-reveals-how-meditation-changes-your-mind-brain-and-body.md)  
+- [🇺🇸🧠 American Amnesia: How the War on Government Led Us to Forget What Made America Prosper](./american-amnesia-how-the-war-on-government-led-us-to-forget-what-made-america-prosper.md)  
 - [👨‍👦🇺🇸📜 American Fatherhood: A Cultural History](./american-fatherhood-a-cultural-history.md)  
 - [🇺🇸🔒 American Gulag: Inside U.S. Immigration Prisons](./american-gulag-inside-us-immigration-prisons.md)  
 - [🇺🇸💸🧺🌍 American Kleptocracy: How the U.S. Created the World's Greatest Money Laundering Scheme in History](./american-kleptocracy-how-the-us-created-the-worlds-greatest-money-laundering-scheme-in-history.md)  
@@ -593,6 +594,7 @@ Feedback Control of Dynamic Systems]]
 - [🤝😇💰 Trust: The Social Virtues and the Creation of Prosperity](./trust-the-social-virtues-and-the-creation-of-prosperity.md)  
 - [🥀 Twilight of Democracy: 🐍 The Seductive Lure of Authoritarianism](./twilight-of-democracy.md)  
 - [🚀🧠🏆 Ultralearning: Master Hard Skills, Outsmart the Competition, and Accelerate Your Career](./ultralearning-master-hard-skills-outsmart-the-competition-and-accelerate-your-career.md)  
+- [😠🎭 Uncivil Agreement: How Politics Became Our Identity](./uncivil-agreement-how-politics-became-our-identity.md)  
 - [😬👨🏿 Uncomfortable Conversations With A Black Man](./uncomfortable-conversations-with-a-black-man.md)  
 - [💰📈🤔 Understanding Modern Money](./understanding-modern-money.md)  
 - [🤔🔌 Understanding Power: The Indispensable Chomsky](./understanding-power-the-indispensable-chomsky.md)  
@@ -611,6 +613,7 @@ Feedback Control of Dynamic Systems]]
 - [🏛️❓ Who Is Government?: The Untold Story of Public Service](./who-is-government-the-untold-story-of-public-service.md)  
 - [🧘🧠✅ Why Buddhism is True: The Science and Philosophy of Meditation and Enlightenment](./why-buddhism-is-true-the-science-and-philosophy-of-meditation-and-enlightenment.md)  
 - [✍🏿🇺🇸💔 Why Didn't We Riot?: A Black Man In Trumpland](./why-didnt-we-riot.md)  
+- [🙋‍♂️🏛️ Why I Am a Liberal: Being Definitions and Personal Confessions of Faith by the Best Minds of the Liberal Party](./why-i-am-a-liberal-being-definitions-and-personal-confessions-of-faith-by-the-best-minds-of-the-liberal-party.md)  
 - [🌎👎👑💰🏚️ Why Nations Fail: The Origins of Power, Prosperity, and Poverty](./why-nations-fail-the-origins-of-power-prosperity-and-poverty.md)  
 - [📉❓ Why Nothing Works: Who Killed Progress - and How to Bring It Back](./why-nothing-works-who-killed-progress-and-how-to-bring-it-back.md)  
 - [😴💭 Why We Sleep: Unlocking the Power of Sleep and Dreams](./why-we-sleep-unlocking-the-power-of-sleep-and-dreams.md)  

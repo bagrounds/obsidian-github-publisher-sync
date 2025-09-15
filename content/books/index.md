@@ -7,7 +7,7 @@ URL: https://bagrounds.org/books
 backlinks: false
 ---
 [Home](../index.md)  
-# 📚 Books (620)  
+# 📚 Books (622)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)  
 - [🧑‍🤝‍🧑📈 10 to 25: The Science of Motivating Young People: A Groundbreaking Approach to Leading the Next Generation - And Making Your Own Life Easier](./10-to-25-the-science-of-motivating-young-people-a-groundbreaking-approach-to-leading-the-next-generation-and-making-your-own-life-easier.md)  
@@ -251,6 +251,7 @@ Feedback Control of Dynamic Systems]]
 - [🍃🧠🤝🏼 Influence: The Psychology of Persuasion](./influence.md)  
 - [ℹ️ Information: A Very Short Introduction](./information.md)  
 - [📰⚔️🧠 Information Wars: How We Lost the Global Battle Against Disinformation and What We Can Do About It](./information-wars.md)  
+- [🏃🤕 Injury-Free Running: Your Illustrated Guide to Biomechanics, Gait Analysis, and Injury Prevention](./injury-free-running-your-illustrated-guide-to-biomechanics-gait-analysis-and-injury-prevention.md)  
 - [🧠👶📈 Introduction to Developmental Cognitive Neuroscience: An Introduction](./developmental-cognitive-neuroscience.md)  
 - [👨‍💼➕ Introduction to Employee Benefits Law](./introduction-to-employee-benefits-law.md)  
 - [🌡️⚙️ Inventing Temperature: Measurement and Scientific Progress](./inventing-temperature-measurement-and-scientific-progress.md)  
@@ -377,6 +378,7 @@ Feedback Control of Dynamic Systems]]
 - [🛐❓ Ritual: What It Is, How It Works, and Why](./ritual-what-it-is-how-it-works-and-why.md)  
 - [🌊🧠🙏⚔️ River of the Gods: Genius, Belief, and Betrayal in the Search for the Source of the Nile](./river-of-the-gods.md)  
 - [📜🎮🏞️ Rules, Games, and Common Pool Resources](./rules-games-and-common-pool-resources.md)  
+- [🏃‍♂️🦴 Running Anatomy](./running-anatomy.md)  
 - [🏃🛠️⚡ Running Rewired: Reinvent Your Run for Stability, Strength, and Speed](./running-rewired-reinvent-your-run-for-stability-strength-and-speed.md)  
 - [📜🌍⏳ Sapiens: A Brief History of Humankind](./sapiens-a-brief-history-of-humankind.md)  
 - [😊🧠 Satisfaction: The Science of Finding True Fulfillment](./satisfaction-the-science-of-finding-true-fulfillment.md)  

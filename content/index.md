@@ -10,7 +10,8 @@ title: 🏡 Home
 📑 Notes, 💭 thoughts, and 🔗 Links.  
 ❔ What do 🫵 _you_ 🤔 think?  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (304)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (305)  
+- [2025-09-15](./reflections/2025-09-15.md)  
 - [2025-09-14 | 🇨🇦 Canada | 🥶 ICE | 🥴 Amnesia 📺📚](./reflections/2025-09-14.md)  
 - [2025-09-13 | 👣 Run 📚](./reflections/2025-09-13.md)  
 - [2025-09-12 | 🌐 Blog | 🫐 Forage | 🏃🏼‍♀️ Move 🤖💬📚📄📺](./reflections/2025-09-12.md)  
@@ -20,20 +21,19 @@ title: 🏡 Home
 - [2025-09-08 | 😰 Anxious | 🔧 AI Tools 📚📄✍🏽](./reflections/2025-09-08.md)  
 - [2025-09-07 | 🍼 Coddling | ⚠️ Warning | 🗽 Freedom 📚📰😆📺](./reflections/2025-09-07.md)  
 - [2025-09-06 | 👿 Demon | 🪤 Trap | ♾️ Resilience 📚📺](./reflections/2025-09-06.md)  
-- [2025-09-05 | 🤔 Ideological 📚](./reflections/2025-09-05.md)  
   
   
-## [📚 Books](./books/index.md) (620)  
-- [➡️🌌🚀😡 A Long Way to a Small, Angry Planet](./books/a-long-way-to-a-small-angry-planet.md)  
+## [📚 Books](./books/index.md) (622)  
+- [🏃🛠️⚡ Running Rewired: Reinvent Your Run for Stability, Strength, and Speed](./books/running-rewired-reinvent-your-run-for-stability-strength-and-speed.md)  
 - [🏃‍♀️🦴 Anatomy for Runners: Unlocking Your Athletic Potential for Health, Speed, and Injury Prevention](./books/anatomy-for-runners-unlocking-your-athletic-potential-for-health-speed-and-injury-prevention.md)  
+- [🏃🤕 Injury-Free Running: Your Illustrated Guide to Biomechanics, Gait Analysis, and Injury Prevention](./books/injury-free-running-your-illustrated-guide-to-biomechanics-gait-analysis-and-injury-prevention.md)  
+- [🏃‍♂️🦴 Running Anatomy](./books/running-anatomy.md)  
+- [➡️🌌🚀😡 A Long Way to a Small, Angry Planet](./books/a-long-way-to-a-small-angry-planet.md)  
 - [😠🎭 Uncivil Agreement: How Politics Became Our Identity](./books/uncivil-agreement-how-politics-became-our-identity.md)  
 - [😠🤝 Disagree without Disrespect: How to Respectfully Debate with Those who Think, Believe and Vote Differently from You](./books/disagree-without-disrespect-how-to-respectfully-debate-with-those-who-think-believe-and-vote-differently-from-you.md)  
 - [🇺🇸🧠 American Amnesia: How the War on Government Led Us to Forget What Made America Prosper](./books/american-amnesia-how-the-war-on-government-led-us-to-forget-what-made-america-prosper.md)  
 - [🙋‍♂️🏛️ Why I Am a Liberal: Being Definitions and Personal Confessions of Faith by the Best Minds of the Liberal Party](./books/why-i-am-a-liberal-being-definitions-and-personal-confessions-of-faith-by-the-best-minds-of-the-liberal-party.md)  
 - [👶🌱📈 The Talent Code: Greatness Isn't Born. It's Grown. Here's How.](./books/the-talent-code.md)  
-- [⛰️📈🥇 Peak: Secrets from the New Science of Expertise](./books/peak.md)  
-- [🏃🏆👵 The Complete Guide to Running: How to Be a Champion from 9 to 90](./books/the-complete-guide-to-running.md)  
-- [🫁🌬️ Breath: The New Science of a Lost Art](./books/breath-the-new-science-of-a-lost-art.md)  
   
   
 ## [📺 Videos](./videos/index.md) (285)  

@@ -53,7 +53,7 @@ Purpose: 🎯 The overall purpose of Anatomy for Runners is to provide runners w
   
 * **[🏃🛠️⚡ Running Rewired: Reinvent Your Run for Stability, Strength, and Speed](./running-rewired-reinvent-your-run-for-stability-strength-and-speed.md) by Jay Dicharry:** Also by Dicharry, this book offers a continuation of his work on running biomechanics, injury prevention, and targeted exercises to build a stronger, more resilient runner.  
 * **[🏃‍♂️🦴 Running Anatomy](./running-anatomy.md) by Joseph Puleo:** This illustrated guide provides detailed anatomical insights into the muscles involved in running, offering exercises to strengthen these groups and improve overall performance and injury prevention.  
-* 🛡️ **Injury-Free Running: Your Illustrated Guide to Biomechanics, Gait Analysis, and Injury Prevention by Tom Michaud:** This guide focuses on understanding anatomy, biomechanics, and gait analysis, coupled with strengthening exercises and rehabilitation protocols to help runners avoid injuries and improve efficiency.  
+* **[🏃🤕 Injury-Free Running: Your Illustrated Guide to Biomechanics, Gait Analysis, and Injury Prevention](./injury-free-running-your-illustrated-guide-to-biomechanics-gait-analysis-and-injury-prevention.md) by Tom Michaud:** This guide focuses on understanding anatomy, biomechanics, and gait analysis, coupled with strengthening exercises and rehabilitation protocols to help runners avoid injuries and improve efficiency.  
 * 🔬 **Running Mechanics and Gait Analysis:** This resource offers a comprehensive review of recent research and clinical concepts related to gait and injury analysis, providing an advanced clinical assessment of gait and guidelines for treatment.  
   
 ### ⚖️ Contrasting Books  

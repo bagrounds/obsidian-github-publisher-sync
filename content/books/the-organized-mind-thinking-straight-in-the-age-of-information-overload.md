@@ -61,7 +61,7 @@ Daniel J. Levitin, Ph.D., is a neuroscientist, cognitive psychologist, and bests
   
 ### ⬅️ Contrasting Books (Alternative Perspectives or Focus Areas)  
   
-* 🌐 **The Shallows: What the Internet Is Doing to Our Brains by Nicholas Carr:** Presents a more critical view of the internet's impact on our cognitive abilities, arguing that it encourages shallow thinking and diminishes our capacity for deep concentration and contemplation.  
+* **[📱🧠 The Shallows: What the Internet Is Doing to Our Brains](./the-shallows-what-the-internet-is-doing-to-our-brains.md) by Nicholas Carr:** Presents a more critical view of the internet's impact on our cognitive abilities, arguing that it encourages shallow thinking and diminishes our capacity for deep concentration and contemplation.  
 * ⌛ **Four Thousand Weeks: Time Management for Mortals by Oliver Burkeman:** Challenges conventional productivity advice and encourages readers to embrace their limitations and make conscious choices about how to spend their finite time.  
 * **[😴📈 Rest: Why You Get More Done When You Work Less](./rest-why-you-get-more-done-when-you-work-less.md) by Alex Soojung-Kim Pang:** Argues for the importance of deliberate rest in achieving peak performance and creativity, contrasting with the "always-on" mentality.  
 * 📱 **Digital Minimalism: Choosing a Focused Life in a Noisy World by Cal Newport:** Offers a philosophy for intentionally and aggressively curating your digital life to support your values and goals, rather than being consumed by technology.  
@@ -74,7 +74,7 @@ Daniel J. Levitin, Ph.D., is a neuroscientist, cognitive psychologist, and bests
 * 🌊 **[Flow: The Psychology of Optimal Experience](./flow-the-psychology-of-optimal-experience.md) by Mihaly Csikszentmihalyi:** While not directly about organization, it explores the state of "flow" – deep, effortless concentration – which is often a goal of better organization and reduced distraction.  
 * 🧐 **A Field Guide to Lies: Critical Thinking in the Information Age by Daniel J. Levitin:** A follow-up by the same author that focuses on how to critically evaluate information and identify misinformation, a crucial skill in the age of information overload.  
 * 📐 **[The Design of Everyday Things](./the-design-of-everyday-things.md) by Don Norman:** While focused on product design, it offers insights into how the design of our environment and tools impacts our cognitive processes and ease of use, aligning with Levitin's emphasis on externalizing organization.  
-* 🚶 **Moonwalking with Einstein: The Art and Science of Remembering Everything by Joshua Foer:** Explores memory techniques and the nature of memory itself, offering a different angle on the cognitive processes Levitin discusses.  
+* **[🚶‍♂️🧠 Moonwalking with Einstein: The Art and Science of Remembering Everything](./moonwalking-with-einstein-the-art-and-science-of-remembering-everything.md) by Joshua Foer:** Explores memory techniques and the nature of memory itself, offering a different angle on the cognitive processes Levitin discusses.  
 * 🧠 **Organize Your Mind, Organize Your Life: Train Your Brain to Get More Done in Less Time by Margaret Moore and Paul Hammerness:** This book also blends theory and practical advice for improving organization and productivity through understanding brain function.".  
   
 ## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  

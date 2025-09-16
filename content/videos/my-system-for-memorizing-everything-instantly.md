@@ -27,5 +27,5 @@ The perspective in this video contrasts with the popular belief that rote memori
   
 ## 📚 Book Recommendations  
 * A Mind for Numbers: How to Excel at Math and Science (Even If You Flunked Algebra) by Barbara Oakley: This book explores the 💡 science of learning, offering strategies for effective studying and problem-solving, moving beyond simple memorization.  
-* Moonwalking with Einstein: The Art and Science of Remembering Everything by Joshua Foer: This book provides a fascinating exploration of the world of memory champions and the techniques they use, including the Memory Palace, offering a different perspective on its potential.  
+* [🚶‍♂️🧠 Moonwalking with Einstein: The Art and Science of Remembering Everything](../books/moonwalking-with-einstein-the-art-and-science-of-remembering-everything.md) by Joshua Foer: This book provides a fascinating exploration of the world of memory champions and the techniques they use, including the Memory Palace, offering a different perspective on its potential.  
 * [🤿💼 Deep Work: Rules for Focused Success in a Distracted World](../books/deep-work.md) by Cal Newport: This book offers insights into how to focus without distraction on a cognitively demanding task, which complements the idea of moving beyond rote memorization to achieve a deeper understanding.

@@ -7,7 +7,7 @@ URL: https://bagrounds.org/videos
 backlinks: false
 ---
 [Home](../index.md)  
-# 📺 Videos (288)  
+# 📺 Videos (289)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
 - [❓💪🔬 12 Questions About Creatine with Stephen Cornish, PhD](./12-questions-about-creatine-w-stephen-cornish-phd.md)  
@@ -142,6 +142,7 @@ backlinks: false
 - [🗑️👩‍💻👎 Most Tech Interview Prep is GARBAGE](./most-tech-interview-prep-is-garbage-from-a-principal-engineer-at-amazon.md)  
 - [Murphy: Six Weeks In, This White House Is On Its Way To Being The Most Corrupt In U.S. History](./murphy-six-weeks-in-this-white-house-is-on-its-way-to-being-the-most-corrupt-in-u-s-history.md)  
 - [Murphy: Trump Is Dismantling Our Democracy. We Must Come Together And Act Before It’s Too Late.](./murphy-trump-is-dismantling-our-democracy-we-must-come-together-and-act-before-its-too-late.md)  
+- [🧠💾⚡️ My system for memorizing everything INSTANTLY](./my-system-for-memorizing-everything-instantly.md)  
 - [🤖🏢👁️ New book ‘Empire of AI’ investigates OpenAI, the company behind ChatGPT](./new-book-empire-of-ai-investigates-openai-the-company-behind-chatgpt.md)  
 - [👶🧑‍👩‍👧‍👦💲➡️ New Mexico to launch universal free childcare for all New Mexicans](./new-mexico-to-launch-universal-free-childcare-for-all-new-mexicans.md)  
 - [News Wrap: Senate pulls all-nighter to pass Republican budget bill](./news-wrap-senate-pulls-all-nighter-to-pass-republican-budget-bill.md)  

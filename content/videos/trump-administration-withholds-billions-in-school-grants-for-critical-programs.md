@@ -4,10 +4,10 @@ aliases:
   - 👹💰🚫👩‍🏫 Trump administration withholds billions in school grants for critical programs
 title: 👹💰🚫👩‍🏫 Trump administration withholds billions in school grants for critical programs
 URL: https://bagrounds.org/videos/trump-administration-withholds-billions-in-school-grants-for-critical-programs
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: PBS NewsHour
-tags: 
+tags:
 youtube: https://youtu.be/RKy3LIgafew
 ---
 [Home](../index.md) > [Videos](./index.md)  
@@ -30,6 +30,6 @@ The Trump administration 🛑 blocked nearly $7 billion 💰 in approved funding
 ## 📚 Book Recommendations  
 * [😥🏫🇺🇸 The Shame of the Nation: The Restoration of Apartheid Schooling in America](../books/the-shame-of-the-nation-the-restoration-of-apartheid-schooling-in-america.md) by Jonathan Kozol  
 * 📖 "Savage Inequalities: Children in America's Schools" by Jonathan Kozol  
-* 📖 "The Death and Life of the Great American School System: How Testing and Choice Are Undermining Education" by Diane Ravitch  
+* [💀🇺🇸🏫 The Death and Life of the Great American School System: How Testing and Choice Are Undermining Education](../books/the-death-and-life-of-the-great-american-school-system-how-testing-and-choice-are-undermining-education.md) by Diane Ravitch  
 * 📖 "Educated" by Tara Westover  
 * 📖 "The Price of Privilege: How Parental Pressure and Material Advantage Are Creating a Generation of Disconnected and Unhappy Kids" by Madeline Levine

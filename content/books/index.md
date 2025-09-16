@@ -7,7 +7,7 @@ URL: https://bagrounds.org/books
 backlinks: false
 ---
 [Home](../index.md)  
-# 📚 Books (622)  
+# 📚 Books (624)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)  
 - [🧑‍🤝‍🧑📈 10 to 25: The Science of Motivating Young People: A Groundbreaking Approach to Leading the Next Generation - And Making Your Own Life Easier](./10-to-25-the-science-of-motivating-young-people-a-groundbreaking-approach-to-leading-the-next-generation-and-making-your-own-life-easier.md)  
@@ -365,6 +365,7 @@ Feedback Control of Dynamic Systems]]
 - [🧠🤔❓ Rationality: What It Is, Why It Seems Scarce, Why It Matters](./rationality.md)  
 - [🧮♻️ Rational Ritual: Culture, Coordination, and Common Knowledge](./rational-ritual.md)  
 - [🏛️🔄✊🌍 Reclaiming the State: A Progressive Vision of Sovereignty for a Post-Neoliberal World](./reclaiming-the-state.md)  
+- [🤕📈 Recovering from Training: How to Manage Fatigue to Maximize Performance](./recovering-from-training-how-to-manage-fatigue-to-maximize-performance.md)  
 - [🗑️✨ Refactoring: Improving the Design of Existing Code](./refactoring-improving-the-design-of-existing-code.md)  
 - [🤖➕🧠➡️ Reinforcement Learning: An Introduction](./reinforcement-learning-an-introduction.md)  
 - [🔊🎞️🌱🤯 Resonate: Present Visual Stories that Transform Audiences](./resonate.md)  
@@ -590,6 +591,7 @@ Feedback Control of Dynamic Systems]]
 - [🤏♻️ Tiny Habits: The Small Changes That Change Everything](./tiny-habits.md)  
 - [🇺🇸⛓️‍💥📜🐘 To Make Men Free: A History of the Republican Party](./to-make-men-free-a-history-of-the-republican-party.md)  
 - [🤖🧑‍🏫 Training Data for Machine Learning: Human Supervision from Annotation to Data Science](./training-data-for-machine-learning-human-supervision-from-annotation-to-data-science.md)  
+- [👶🏛️➡️ Transforming Early Years Policy in the U.S.: A Call to Action](./transforming-early-years-policy-in-the-us-a-call-to-action.md)  
 - [🏳️‍⚧️📜🌱✊ Transgender History: The Roots of Today's Revolution](./transgender-history.md)  
 - [🍬🫵🔙 Treat Your Own Back](./treat-your-own-back.md)  
 - [🇺🇸🇩🇪🤥📣 Trump and Hitler: A Comparative Study in Lying](./trump-and-hitler-a-comparative-study-in-lying.md)  

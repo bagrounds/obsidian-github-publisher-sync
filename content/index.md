@@ -11,7 +11,7 @@ title: 🏡 Home
 ❔ What do 🫵 _you_ 🤔 think?  
   
 ## [🪞 Reflections](./reflections/index.md) ~ Blog (305)  
-- [2025-09-15](./reflections/2025-09-15.md)  
+- [2025-09-15 | 🏃🏼‍♀️ Run | ❤️‍🩹 Recover | 👶🏼 Transform 📚📰📺](./reflections/2025-09-15.md)  
 - [2025-09-14 | 🇨🇦 Canada | 🥶 ICE | 🥴 Amnesia 📺📚](./reflections/2025-09-14.md)  
 - [2025-09-13 | 👣 Run 📚](./reflections/2025-09-13.md)  
 - [2025-09-12 | 🌐 Blog | 🫐 Forage | 🏃🏼‍♀️ Move 🤖💬📚📄📺](./reflections/2025-09-12.md)  
@@ -23,7 +23,9 @@ title: 🏡 Home
 - [2025-09-06 | 👿 Demon | 🪤 Trap | ♾️ Resilience 📚📺](./reflections/2025-09-06.md)  
   
   
-## [📚 Books](./books/index.md) (622)  
+## [📚 Books](./books/index.md) (624)  
+- [👶🏛️➡️ Transforming Early Years Policy in the U.S.: A Call to Action](./books/transforming-early-years-policy-in-the-us-a-call-to-action.md)  
+- [🤕📈 Recovering from Training: How to Manage Fatigue to Maximize Performance](./books/recovering-from-training-how-to-manage-fatigue-to-maximize-performance.md)  
 - [🏃🛠️⚡ Running Rewired: Reinvent Your Run for Stability, Strength, and Speed](./books/running-rewired-reinvent-your-run-for-stability-strength-and-speed.md)  
 - [🏃‍♀️🦴 Anatomy for Runners: Unlocking Your Athletic Potential for Health, Speed, and Injury Prevention](./books/anatomy-for-runners-unlocking-your-athletic-potential-for-health-speed-and-injury-prevention.md)  
 - [🏃🤕 Injury-Free Running: Your Illustrated Guide to Biomechanics, Gait Analysis, and Injury Prevention](./books/injury-free-running-your-illustrated-guide-to-biomechanics-gait-analysis-and-injury-prevention.md)  
@@ -32,11 +34,12 @@ title: 🏡 Home
 - [😠🎭 Uncivil Agreement: How Politics Became Our Identity](./books/uncivil-agreement-how-politics-became-our-identity.md)  
 - [😠🤝 Disagree without Disrespect: How to Respectfully Debate with Those who Think, Believe and Vote Differently from You](./books/disagree-without-disrespect-how-to-respectfully-debate-with-those-who-think-believe-and-vote-differently-from-you.md)  
 - [🇺🇸🧠 American Amnesia: How the War on Government Led Us to Forget What Made America Prosper](./books/american-amnesia-how-the-war-on-government-led-us-to-forget-what-made-america-prosper.md)  
-- [🙋‍♂️🏛️ Why I Am a Liberal: Being Definitions and Personal Confessions of Faith by the Best Minds of the Liberal Party](./books/why-i-am-a-liberal-being-definitions-and-personal-confessions-of-faith-by-the-best-minds-of-the-liberal-party.md)  
-- [👶🌱📈 The Talent Code: Greatness Isn't Born. It's Grown. Here's How.](./books/the-talent-code.md)  
   
   
-## [📺 Videos](./videos/index.md) (285)  
+## [📺 Videos](./videos/index.md) (288)  
+- [🇺🇸🗣️💥💔 Tamara Keith and Amy Walter on the political response to Charlie Kirk's killing](./videos/tamara-keith-and-amy-walter-on-the-political-response-to-charlie-kirks-killing.md)  
+- [🇺🇸✂️🩺🤕 States face hard choices after major cuts to federal health care funding](./videos/states-face-hard-choices-after-major-cuts-to-federal-health-care-funding.md)  
+- [👶🧑‍👩‍👧‍👦💲➡️ New Mexico to launch universal free childcare for all New Mexicans](./videos/new-mexico-to-launch-universal-free-childcare-for-all-new-mexicans.md)  
 - [📚⏱️💡 21 Life-Changing Books Summarized in 18 Minutes](./videos/21-life-changing-books-summarized-in-18-minutes.md)  
 - [🛂🛑🇺🇸🎤 Immigration Enforcement: Last Week Tonight with John Oliver (HBO)](./videos/immigration-enforcement-last-week-tonight-with-john-oliver-hbo.md)  
 - [🧠💪🧘 How To Force Your Brain To Do Hard Things (Lotus Method)](./videos/how-to-force-your-brain-to-do-hard-things-lotus-method.md)  
@@ -44,9 +47,6 @@ title: 🏡 Home
 - [🇺🇸➡️🇨🇦 Dear Americans… we saved you a seat](./videos/dear-americans-we-saved-you-a-seat.md)  
 - [🦴🤕🏃‍♀️🧪 How to Reduce Bone Injury Risks | Running Science](./videos/how-to-reduce-bone-injury-risks-running-science.md)  
 - [🏃‍♀️⚕️💪 ECFIT Expert Series - Jay Dicharry](./videos/ecfit-expert-series-jay-dicharry.md)  
-- [🏃🤸🧠💪 Why You Should Train Movement, Not Muscle](./videos/why-you-should-train-movement-not-muscle-with-jay-dicharry.md)  
-- [🏛️🐘⬆️🙏 Heather Cox Richardson on Why She's Still Hopeful Under MAGA and Donald Trump](./videos/heather-cox-richardson-on-why-shes-still-hopeful-under-maga-and-donald-trump.md)  
-- [👨‍💼🎓📺 Trump vs Higher Education: Last Week Tonight with John Oliver (HBO)](./videos/trump-vs-higher-education-last-week-tonight-with-john-oliver-hbo.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (82)  

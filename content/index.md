@@ -10,7 +10,8 @@ title: 🏡 Home
 📑 Notes, 💭 thoughts, and 🔗 Links.  
 ❔ What do 🫵 _you_ 🤔 think?  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (305)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (306)  
+- [2025-09-16](./reflections/2025-09-16.md)  
 - [2025-09-15 | 🏃🏼‍♀️ Run | ❤️‍🩹 Recover | 👶🏼 Transform 📚📰📺](./reflections/2025-09-15.md)  
 - [2025-09-14 | 🇨🇦 Canada | 🥶 ICE | 🥴 Amnesia 📺📚](./reflections/2025-09-14.md)  
 - [2025-09-13 | 👣 Run 📚](./reflections/2025-09-13.md)  
@@ -20,23 +21,24 @@ title: 🏡 Home
 - [2025-09-09 | 🧠 Learning | 🏃🏼‍♀️ Running 📚🪞](./reflections/2025-09-09.md)  
 - [2025-09-08 | 😰 Anxious | 🔧 AI Tools 📚📄✍🏽](./reflections/2025-09-08.md)  
 - [2025-09-07 | 🍼 Coddling | ⚠️ Warning | 🗽 Freedom 📚📰😆📺](./reflections/2025-09-07.md)  
-- [2025-09-06 | 👿 Demon | 🪤 Trap | ♾️ Resilience 📚📺](./reflections/2025-09-06.md)  
   
   
-## [📚 Books](./books/index.md) (624)  
+## [📚 Books](./books/index.md) (625)  
+- [♟️🧑‍🏫 Bobby Fischer Teaches Chess](./books/bobby-fischer-teaches-chess.md)  
+- [🧠🗂️ The Organized Mind: Thinking Straight in the Age of Information Overload](./books/the-organized-mind-thinking-straight-in-the-age-of-information-overload.md)  
+- [🤫🧠 Subliminal: How Your Unconscious Mind Rules Your Behavior](./books/subliminal-how-your-unconscious-mind-rules-your-behavior.md)  
+- [🚀🧠🏆 Ultralearning: Master Hard Skills, Outsmart the Competition, and Accelerate Your Career](./books/ultralearning-master-hard-skills-outsmart-the-competition-and-accelerate-your-career.md)  
+- [🚶‍♂️🧠 Moonwalking with Einstein: The Art and Science of Remembering Everything](./books/moonwalking-with-einstein-the-art-and-science-of-remembering-everything.md)  
 - [👶🏛️➡️ Transforming Early Years Policy in the U.S.: A Call to Action](./books/transforming-early-years-policy-in-the-us-a-call-to-action.md)  
 - [🤕📈 Recovering from Training: How to Manage Fatigue to Maximize Performance](./books/recovering-from-training-how-to-manage-fatigue-to-maximize-performance.md)  
 - [🏃🛠️⚡ Running Rewired: Reinvent Your Run for Stability, Strength, and Speed](./books/running-rewired-reinvent-your-run-for-stability-strength-and-speed.md)  
 - [🏃‍♀️🦴 Anatomy for Runners: Unlocking Your Athletic Potential for Health, Speed, and Injury Prevention](./books/anatomy-for-runners-unlocking-your-athletic-potential-for-health-speed-and-injury-prevention.md)  
 - [🏃🤕 Injury-Free Running: Your Illustrated Guide to Biomechanics, Gait Analysis, and Injury Prevention](./books/injury-free-running-your-illustrated-guide-to-biomechanics-gait-analysis-and-injury-prevention.md)  
-- [🏃‍♂️🦴 Running Anatomy](./books/running-anatomy.md)  
-- [➡️🌌🚀😡 A Long Way to a Small, Angry Planet](./books/a-long-way-to-a-small-angry-planet.md)  
-- [😠🎭 Uncivil Agreement: How Politics Became Our Identity](./books/uncivil-agreement-how-politics-became-our-identity.md)  
-- [😠🤝 Disagree without Disrespect: How to Respectfully Debate with Those who Think, Believe and Vote Differently from You](./books/disagree-without-disrespect-how-to-respectfully-debate-with-those-who-think-believe-and-vote-differently-from-you.md)  
-- [🇺🇸🧠 American Amnesia: How the War on Government Led Us to Forget What Made America Prosper](./books/american-amnesia-how-the-war-on-government-led-us-to-forget-what-made-america-prosper.md)  
   
   
-## [📺 Videos](./videos/index.md) (288)  
+## [📺 Videos](./videos/index.md) (289)  
+- [🧠⬆️🧑‍⚕️💪💡 Dr. Mark D'Esposito: How to Optimize Cognitive Function & Brain Health](./videos/dr-mark-desposito-how-to-optimize-cognitive-function-and-brain-health.md)  
+- [🧠💾⚡️ My system for memorizing everything INSTANTLY](./videos/my-system-for-memorizing-everything-instantly.md)  
 - [🇺🇸🗣️💥💔 Tamara Keith and Amy Walter on the political response to Charlie Kirk's killing](./videos/tamara-keith-and-amy-walter-on-the-political-response-to-charlie-kirks-killing.md)  
 - [🇺🇸✂️🩺🤕 States face hard choices after major cuts to federal health care funding](./videos/states-face-hard-choices-after-major-cuts-to-federal-health-care-funding.md)  
 - [👶🧑‍👩‍👧‍👦💲➡️ New Mexico to launch universal free childcare for all New Mexicans](./videos/new-mexico-to-launch-universal-free-childcare-for-all-new-mexicans.md)  
@@ -45,8 +47,6 @@ title: 🏡 Home
 - [🧠💪🧘 How To Force Your Brain To Do Hard Things (Lotus Method)](./videos/how-to-force-your-brain-to-do-hard-things-lotus-method.md)  
 - [🏛️🚨🇺🇸 Former Homeland Security chief Jeh Johnson issues urgent call to protect U.S. democracy](./videos/former-homeland-security-chief-jeh-johnson-issues-urgent-call-to-protect-u-s-democracy.md)  
 - [🇺🇸➡️🇨🇦 Dear Americans… we saved you a seat](./videos/dear-americans-we-saved-you-a-seat.md)  
-- [🦴🤕🏃‍♀️🧪 How to Reduce Bone Injury Risks | Running Science](./videos/how-to-reduce-bone-injury-risks-running-science.md)  
-- [🏃‍♀️⚕️💪 ECFIT Expert Series - Jay Dicharry](./videos/ecfit-expert-series-jay-dicharry.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (82)  

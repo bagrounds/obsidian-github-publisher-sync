@@ -11,7 +11,7 @@ title: 🏡 Home
 ❔ What do 🫵 _you_ 🤔 think?  
   
 ## [🪞 Reflections](./reflections/index.md) ~ Blog (306)  
-- [2025-09-16](./reflections/2025-09-16.md)  
+- [2025-09-16 | 🧠 Memorizing | 🌝 Moonwalking | 🏫 Schooling 📺📚📰](./reflections/2025-09-16.md)  
 - [2025-09-15 | 🏃🏼‍♀️ Run | ❤️‍🩹 Recover | 👶🏼 Transform 📚📰📺](./reflections/2025-09-15.md)  
 - [2025-09-14 | 🇨🇦 Canada | 🥶 ICE | 🥴 Amnesia 📺📚](./reflections/2025-09-14.md)  
 - [2025-09-13 | 👣 Run 📚](./reflections/2025-09-13.md)  
@@ -23,7 +23,9 @@ title: 🏡 Home
 - [2025-09-07 | 🍼 Coddling | ⚠️ Warning | 🗽 Freedom 📚📰😆📺](./reflections/2025-09-07.md)  
   
   
-## [📚 Books](./books/index.md) (625)  
+## [📚 Books](./books/index.md) (626)  
+- [🤖🧑‍🏫 Teaching with AI: A Practical Guide to a New Era of Human Learning](./books/teaching-with-ai-a-practical-guide-to-a-new-era-of-human-learning.md)  
+- [💀🇺🇸🏫 The Death and Life of the Great American School System: How Testing and Choice Are Undermining Education](./books/the-death-and-life-of-the-great-american-school-system-how-testing-and-choice-are-undermining-education.md)  
 - [♟️🧑‍🏫 Bobby Fischer Teaches Chess](./books/bobby-fischer-teaches-chess.md)  
 - [🧠🗂️ The Organized Mind: Thinking Straight in the Age of Information Overload](./books/the-organized-mind-thinking-straight-in-the-age-of-information-overload.md)  
 - [🤫🧠 Subliminal: How Your Unconscious Mind Rules Your Behavior](./books/subliminal-how-your-unconscious-mind-rules-your-behavior.md)  
@@ -32,11 +34,11 @@ title: 🏡 Home
 - [👶🏛️➡️ Transforming Early Years Policy in the U.S.: A Call to Action](./books/transforming-early-years-policy-in-the-us-a-call-to-action.md)  
 - [🤕📈 Recovering from Training: How to Manage Fatigue to Maximize Performance](./books/recovering-from-training-how-to-manage-fatigue-to-maximize-performance.md)  
 - [🏃🛠️⚡ Running Rewired: Reinvent Your Run for Stability, Strength, and Speed](./books/running-rewired-reinvent-your-run-for-stability-strength-and-speed.md)  
-- [🏃‍♀️🦴 Anatomy for Runners: Unlocking Your Athletic Potential for Health, Speed, and Injury Prevention](./books/anatomy-for-runners-unlocking-your-athletic-potential-for-health-speed-and-injury-prevention.md)  
-- [🏃🤕 Injury-Free Running: Your Illustrated Guide to Biomechanics, Gait Analysis, and Injury Prevention](./books/injury-free-running-your-illustrated-guide-to-biomechanics-gait-analysis-and-injury-prevention.md)  
   
   
-## [📺 Videos](./videos/index.md) (289)  
+## [📺 Videos](./videos/index.md) (290)  
+- [👹💰🚫👩‍🏫 Trump administration withholds billions in school grants for critical programs](./videos/trump-administration-withholds-billions-in-school-grants-for-critical-programs.md)  
+- [📉📚❓🧑‍🏫 What's caused reading scores to drop to worst point in decades? Education expert weighs in](./videos/whats-caused-reading-scores-to-drop-to-worst-point-in-decades-education-expert-weighs-in.md)  
 - [🧠⬆️🧑‍⚕️💪💡 Dr. Mark D'Esposito: How to Optimize Cognitive Function & Brain Health](./videos/dr-mark-desposito-how-to-optimize-cognitive-function-and-brain-health.md)  
 - [🧠💾⚡️ My system for memorizing everything INSTANTLY](./videos/my-system-for-memorizing-everything-instantly.md)  
 - [🇺🇸🗣️💥💔 Tamara Keith and Amy Walter on the political response to Charlie Kirk's killing](./videos/tamara-keith-and-amy-walter-on-the-political-response-to-charlie-kirks-killing.md)  
@@ -45,8 +47,6 @@ title: 🏡 Home
 - [📚⏱️💡 21 Life-Changing Books Summarized in 18 Minutes](./videos/21-life-changing-books-summarized-in-18-minutes.md)  
 - [🛂🛑🇺🇸🎤 Immigration Enforcement: Last Week Tonight with John Oliver (HBO)](./videos/immigration-enforcement-last-week-tonight-with-john-oliver-hbo.md)  
 - [🧠💪🧘 How To Force Your Brain To Do Hard Things (Lotus Method)](./videos/how-to-force-your-brain-to-do-hard-things-lotus-method.md)  
-- [🏛️🚨🇺🇸 Former Homeland Security chief Jeh Johnson issues urgent call to protect U.S. democracy](./videos/former-homeland-security-chief-jeh-johnson-issues-urgent-call-to-protect-u-s-democracy.md)  
-- [🇺🇸➡️🇨🇦 Dear Americans… we saved you a seat](./videos/dear-americans-we-saved-you-a-seat.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (82)  

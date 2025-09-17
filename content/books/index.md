@@ -7,7 +7,7 @@ URL: https://bagrounds.org/books
 backlinks: false
 ---
 [Home](../index.md)  
-# 📚 Books (625)  
+# 📚 Books (626)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)  
 - [🧑‍🤝‍🧑📈 10 to 25: The Science of Motivating Young People: A Groundbreaking Approach to Leading the Next Generation - And Making Your Own Life Easier](./10-to-25-the-science-of-motivating-young-people-a-groundbreaking-approach-to-leading-the-next-generation-and-making-your-own-life-easier.md)  
@@ -471,6 +471,7 @@ Feedback Control of Dynamic Systems]]
 - [💡🌱♾️ The Creative Habit: Learn It and Use It for Life](./the-creative-habit.md)  
 - [🧘🏼‍♀️📅 The Daily Stoic: 366 Meditations on Wisdom, Perseverance, and the Art of Living](./the-daily-stoic-366-meditations-on-wisdom-perseverance-and-the-art-of-living.md)  
 - [🌅🧑‍🤝‍🧑🌍 The Dawn of Everything: A New History of Humanity](./the-dawn-of-everything.md)  
+- [💀🇺🇸🏫 The Death and Life of the Great American School System: How Testing and Choice Are Undermining Education](./the-death-and-life-of-the-great-american-school-system-how-testing-and-choice-are-undermining-education.md)  
 - [💰📉➡️📈🗳️ The Deficit Myth: Modern Monetary Theory and the Birth of the People's Economy](./the-deficit-myth.md)  
 - [🏢📋🐒🪒🤼‍♂️ The Delicate Art of Bureaucracy: Digital Transformation with the Monkey, the Razor, and the Sumo Wrestler](./the-delicate-art-of-bureaucracy.md)  
 - [😈🌍🔬🕯️🌑 The Demon-Haunted World: Science as a Candle in the Dark](./the-demon-haunted-world.md)  

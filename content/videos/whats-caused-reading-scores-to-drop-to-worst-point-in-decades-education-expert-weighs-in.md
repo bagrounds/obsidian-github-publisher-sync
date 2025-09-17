@@ -30,7 +30,7 @@ The 🎬 video's perspective on the decline in student scores is largely support
 ## 📚 Book Recommendations  
   
   * [💀🇺🇸🏫 The Death and Life of the Great American School System: How Testing and Choice Are Undermining Education](../books/the-death-and-life-of-the-great-american-school-system-how-testing-and-choice-are-undermining-education.md) by Diane Ravitch. This 📓 book argues that education reform has strayed from its purpose by focusing on testing and accountability instead of on curriculum.  
-  * 📖 How Children Succeed: Grit, Curiosity, and the Hidden Power of Character by Paul Tough. A 📖 deep dive into the non-cognitive skills that matter most for student achievement, focusing on character development rather than test scores.  
+  * [🧑‍🎓🌱 How Children Succeed: Grit, Curiosity, and the Hidden Power of Character](../books/how-children-succeed-grit-curiosity-and-the-hidden-power-of-character.md) by Paul Tough. A 📖 deep dive into the non-cognitive skills that matter most for student achievement, focusing on character development rather than test scores.  
   * 📖 Savage Inequalities: Children in America's Schools by Jonathan Kozol. This 📓 book provides a powerful and heartbreaking look at the vast disparities in funding and resources between school districts, offering a contrasting view on the root causes of educational struggles.  
   * 📖 Dumbing Us Down: The Hidden Curriculum of Compulsory Schooling by John Taylor Gatto. This 📕 book critiques the very structure of the modern school system and its effect on natural learning instincts.  
   

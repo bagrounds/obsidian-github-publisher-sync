@@ -4,9 +4,10 @@ aliases:
   - "🧠🧩📈🧑‍🏫 Smart but Scattered: The Revolutionary Executive Skills Approach to Helping Kids Reach Their Potential"
 title: "🧠🧩📈🧑‍🏫 Smart but Scattered: The Revolutionary Executive Skills Approach to Helping Kids Reach Their Potential"
 URL: https://bagrounds.org/books/smart-but-scattered
-Author: 
-tags: 
+Author:
+tags:
 affiliate link: https://amzn.to/3SDEvG3
+CTA: 🚀 Empower children.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧠🧩📈🧑‍🏫 Smart but Scattered: The Revolutionary Executive Skills Approach to Helping Kids Reach Their Potential  
@@ -73,13 +74,13 @@ affiliate link: https://amzn.to/3SDEvG3
   
 ### 📚 Book Recommendations  
 * **Best Alternate Book on the Same Topic:** "The Explosive Child" by Ross W. Greene. This book provides a similar focus on understanding and addressing behavioral challenges in children, with a focus on collaborative problem-solving. 🤝🤝  
-* **Best Book Tangentially Related:** "[Mindset](./mindset.md): The New Psychology of Success" by Carol S. Dweck. This book explores the importance of a growth mindset, which is closely related to the development of executive skills. 🌱🧠  
+* **Best Book Tangentially Related:** [🌱🧘🏼‍♀️🏆 Mindset: The New Psychology of Success](./mindset.md) by Carol S. Dweck. This book explores the importance of a growth mindset, which is closely related to the development of executive skills. 🌱🧠  
 * **Best Book Diametrically Opposed:** "Battle Hymn of the Tiger Mother" by Amy Chua. While controversial, this book presents a starkly different approach to parenting, emphasizing strict discipline and high expectations. 🐅🔥  
 * **Best Fiction Book That Incorporates Related Ideas:** "Wonder" by R.J. Palacio. This novel explores the challenges faced by a child with facial differences, highlighting the importance of empathy, resilience, and social-emotional skills. 💖📖  
-* **Best Book More General:** "How Children Succeed: Grit, Curiosity, and the Hidden Power of Character" by Paul Tough. This book looks at a wide range of factors that contribute to children's success, including executive skills. 🌟📚  
+* **Best Book More General:** [🧑‍🎓🌱 How Children Succeed: Grit, Curiosity, and the Hidden Power of Character](./how-children-succeed-grit-curiosity-and-the-hidden-power-of-character.md) by Paul Tough. This book looks at a wide range of factors that contribute to children's success, including executive skills. 🌟📚  
 * **Best Book More Specific:** "Late, Lost, and Unprepared: A Parents' Guide to Helping Children with Executive Functioning" by Joyce Cooper-Kahn and Laurie Dietzel. This book offers a more in-depth focus on the challenges faced by children with executive functioning difficulties. 🧭📚  
-* **Best Book More Rigorous:** "[Executive Functions: Development, Assessment, and Intervention](./executive-functions-development-assessment-and-intervention.md)" edited by Sam Goldstein and Jack A. Naglieri. A more academic and research-focused look at executive functions. 🤓📚  
-* **Best Book More Accessible:** "[Driven to Distraction](./driven-to-distraction.md) (Revised): Recognizing and Coping with Attention Deficit Disorder from Childhood Through Adulthood" By Edward M. Hallowell and John J. Ratey. This book is a very easy to understand book about ADHD, which overlaps with executive function. 📖🧠  
+* **Best Book More Rigorous:** [🧠🧩🛠️ Assessment and Intervention for Executive Function Difficulties](./executive-functions-development-assessment-and-intervention.md) edited by Sam Goldstein and Jack A. Naglieri. A more academic and research-focused look at executive functions. 🤓📚  
+* **Best Book More Accessible:** [🏎️🦋🐿️✨ Driven to Distraction: Recognizing and Coping with Attention Deficit Disorder from Childhood Through Adulthood](./driven-to-distraction.md) (Revised): Recognizing and Coping with Attention Deficit Disorder from Childhood Through Adulthood" By Edward M. Hallowell and John J. Ratey. This book is a very easy to understand book about ADHD, which overlaps with executive function. 📖🧠  
   
 ## 💬 [Gemini](https://gemini.google.com) Prompt  
 > Summarize the book: Smart but Scattered. Start with a TL;DR - a single statement that conveys a maximum of the useful information provided in the book. Next, explain how this book may offer a new or surprising perspective. Follow this with a deep dive. Catalogue the topics, methods, and research discussed. Be sure to highlight any significant theories, theses, or mental models proposed. Summarize prominent examples discussed. Emphasize practical takeaways, including detailed, specific, concrete, step-by-step advice, guidance, or techniques discussed. Provide a critical analysis of the quality of the information presented, using scientific backing, author credentials, authoritative reviews, and other markers of high quality information as justification. Make the following additional book recommendations: the best alternate book on the same topic; the best book that is tangentially related; the best book that is diametrically opposed; the best fiction book that incorporates related ideas; the best book that is more general or more specific; and the best book that is more rigorous or more accessible than this book. Format your response as markdown, starting at heading level H3, with inline links, for easy copy paste. Use meaningful emojis generously (at least one per heading, bullet point, and paragraph) to enhance readability. Do not include broken links or links to commercial sites.

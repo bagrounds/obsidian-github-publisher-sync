@@ -10,7 +10,8 @@ title: 🏡 Home
 📑 Notes, 💭 thoughts, and 🔗 Links.  
 ❔ What do 🫵 _you_ 🤔 think?  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (306)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (307)  
+- [2025-09-17 | 💰 Wealth | 👶🏼 Children | 📜 Constitution 📚📺](./reflections/2025-09-17.md)  
 - [2025-09-16 | 🧠 Memorizing | 🌝 Moonwalking | 🏫 Schooling 📺📚📰](./reflections/2025-09-16.md)  
 - [2025-09-15 | 🏃🏼‍♀️ Run | ❤️‍🩹 Recover | 👶🏼 Transform 📚📰📺](./reflections/2025-09-15.md)  
 - [2025-09-14 | 🇨🇦 Canada | 🥶 ICE | 🥴 Amnesia 📺📚](./reflections/2025-09-14.md)  
@@ -20,33 +21,32 @@ title: 🏡 Home
 - [2025-09-10 | 🏃🏼‍♀️ Anatomy for Runners 📚📺](./reflections/2025-09-10.md)  
 - [2025-09-09 | 🧠 Learning | 🏃🏼‍♀️ Running 📚🪞](./reflections/2025-09-09.md)  
 - [2025-09-08 | 😰 Anxious | 🔧 AI Tools 📚📄✍🏽](./reflections/2025-09-08.md)  
-- [2025-09-07 | 🍼 Coddling | ⚠️ Warning | 🗽 Freedom 📚📰😆📺](./reflections/2025-09-07.md)  
   
   
-## [📚 Books](./books/index.md) (626)  
-- [🤖🧑‍🏫 Teaching with AI: A Practical Guide to a New Era of Human Learning](./books/teaching-with-ai-a-practical-guide-to-a-new-era-of-human-learning.md)  
+## [📚 Books](./books/index.md) (629)  
+- [🙏🏛️ The Establishment Clause: Religion and the First Amendment](./books/the-establishment-clause-religion-and-the-first-amendment.md)  
+- [👶🧠😊📈📚 Brain Rules for Baby: How to Raise a Smart and Happy Child from Zero to Five](./books/brain-rules-for-baby.md)  
+- [🧠🧩📈🧑‍🏫 Smart but Scattered: The Revolutionary Executive Skills Approach to Helping Kids Reach Their Potential](./books/smart-but-scattered.md)  
 - [💀🇺🇸🏫 The Death and Life of the Great American School System: How Testing and Choice Are Undermining Education](./books/the-death-and-life-of-the-great-american-school-system-how-testing-and-choice-are-undermining-education.md)  
+- [🧑‍🎓🌱 How Children Succeed: Grit, Curiosity, and the Hidden Power of Character](./books/how-children-succeed-grit-curiosity-and-the-hidden-power-of-character.md)  
+- [🚫💰❤️ The Wealth Money Can't Buy: The 8 Hidden Habits to Live Your Richest Life](./books/the-wealth-money-cant-buy-the-8-hidden-habits-to-live-your-richest-life.md)  
+- [🤖🧑‍🏫 Teaching with AI: A Practical Guide to a New Era of Human Learning](./books/teaching-with-ai-a-practical-guide-to-a-new-era-of-human-learning.md)  
 - [♟️🧑‍🏫 Bobby Fischer Teaches Chess](./books/bobby-fischer-teaches-chess.md)  
 - [🧠🗂️ The Organized Mind: Thinking Straight in the Age of Information Overload](./books/the-organized-mind-thinking-straight-in-the-age-of-information-overload.md)  
 - [🤫🧠 Subliminal: How Your Unconscious Mind Rules Your Behavior](./books/subliminal-how-your-unconscious-mind-rules-your-behavior.md)  
-- [🚀🧠🏆 Ultralearning: Master Hard Skills, Outsmart the Competition, and Accelerate Your Career](./books/ultralearning-master-hard-skills-outsmart-the-competition-and-accelerate-your-career.md)  
-- [🚶‍♂️🧠 Moonwalking with Einstein: The Art and Science of Remembering Everything](./books/moonwalking-with-einstein-the-art-and-science-of-remembering-everything.md)  
-- [👶🏛️➡️ Transforming Early Years Policy in the U.S.: A Call to Action](./books/transforming-early-years-policy-in-the-us-a-call-to-action.md)  
-- [🤕📈 Recovering from Training: How to Manage Fatigue to Maximize Performance](./books/recovering-from-training-how-to-manage-fatigue-to-maximize-performance.md)  
-- [🏃🛠️⚡ Running Rewired: Reinvent Your Run for Stability, Strength, and Speed](./books/running-rewired-reinvent-your-run-for-stability-strength-and-speed.md)  
   
   
-## [📺 Videos](./videos/index.md) (290)  
-- [👹💰🚫👩‍🏫 Trump administration withholds billions in school grants for critical programs](./videos/trump-administration-withholds-billions-in-school-grants-for-critical-programs.md)  
+## [📺 Videos](./videos/index.md) (292)  
+- [✝️🏛️↔️ Why the Constitution Separates Church and State | Explainer](./videos/why-the-constitution-separates-church-and-state-explainer.md)  
+- [📜🇺🇸🏛️⚖️ The United States Constitution | Heather Cox Richardson](./videos/the-united-states-constitution-heather-cox-richardson.md)  
 - [📉📚❓🧑‍🏫 What's caused reading scores to drop to worst point in decades? Education expert weighs in](./videos/whats-caused-reading-scores-to-drop-to-worst-point-in-decades-education-expert-weighs-in.md)  
+- [👹💰🚫👩‍🏫 Trump administration withholds billions in school grants for critical programs](./videos/trump-administration-withholds-billions-in-school-grants-for-critical-programs.md)  
 - [🧠⬆️🧑‍⚕️💪💡 Dr. Mark D'Esposito: How to Optimize Cognitive Function & Brain Health](./videos/dr-mark-desposito-how-to-optimize-cognitive-function-and-brain-health.md)  
 - [🧠💾⚡️ My system for memorizing everything INSTANTLY](./videos/my-system-for-memorizing-everything-instantly.md)  
 - [🇺🇸🗣️💥💔 Tamara Keith and Amy Walter on the political response to Charlie Kirk's killing](./videos/tamara-keith-and-amy-walter-on-the-political-response-to-charlie-kirks-killing.md)  
 - [🇺🇸✂️🩺🤕 States face hard choices after major cuts to federal health care funding](./videos/states-face-hard-choices-after-major-cuts-to-federal-health-care-funding.md)  
 - [👶🧑‍👩‍👧‍👦💲➡️ New Mexico to launch universal free childcare for all New Mexicans](./videos/new-mexico-to-launch-universal-free-childcare-for-all-new-mexicans.md)  
 - [📚⏱️💡 21 Life-Changing Books Summarized in 18 Minutes](./videos/21-life-changing-books-summarized-in-18-minutes.md)  
-- [🛂🛑🇺🇸🎤 Immigration Enforcement: Last Week Tonight with John Oliver (HBO)](./videos/immigration-enforcement-last-week-tonight-with-john-oliver-hbo.md)  
-- [🧠💪🧘 How To Force Your Brain To Do Hard Things (Lotus Method)](./videos/how-to-force-your-brain-to-do-hard-things-lotus-method.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (82)  

@@ -7,7 +7,7 @@ URL: https://bagrounds.org/books
 backlinks: false
 ---
 [Home](../index.md)  
-# 📚 Books (626)  
+# 📚 Books (629)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)  
 - [🧑‍🤝‍🧑📈 10 to 25: The Science of Motivating Young People: A Groundbreaking Approach to Leading the Next Generation - And Making Your Own Life Easier](./10-to-25-the-science-of-motivating-young-people-a-groundbreaking-approach-to-leading-the-next-generation-and-making-your-own-life-easier.md)  
@@ -221,6 +221,7 @@ Feedback Control of Dynamic Systems]]
 - [🫂 Hold Me Tight: Seven Conversations for a Lifetime of Love](./hold-me-tight-seven-conversations-for-a-lifetime-of-love.md)  
 - [🏛️👹🇺🇸🏰👹🇷🇺 House of Trump, House of Putin: The Untold Story of Donald Trump and the Russian Mafia](./house-of-trump-house-of-putin-the-untold-story-of-donald-trump-and-the-russian-mafia.md)  
 - [👶🗣️ How Babies Talk: The Magic and Mystery of Language in the First Three Years of Life](./how-babies-talk-the-magic-and-mystery-of-language-in-the-first-three-years-of-life.md)  
+- [🧑‍🎓🌱 How Children Succeed: Grit, Curiosity, and the Hidden Power of Character](./how-children-succeed-grit-curiosity-and-the-hidden-power-of-character.md)  
 - [🗳️🏛️☠️ How Democracies Die](./how-democracies-die.md)  
 - [🇺🇸🪖♟️🔍⚖️🕊️🤝 How Ike Led: The Principles Behind Eisenhower's Biggest Decisions](./how-ike-led-the-principles-behind-eisenhowers-biggest-decisions.md)  
 - [🧠📚🍎💡📝 How Learning Works: Eight Research-Based Principles for Smart Teaching](./how-learning-works.md)  
@@ -482,6 +483,7 @@ Feedback Control of Dynamic Systems]]
 - [👑😈👎📈 The Dictator's Handbook: Why Bad Behavior Is Almost Always Good Politics](./the-dictators-handbook.md)  
 - [🦢 The Elements of Style](./the-elements-of-style.md)  
 - [🧠🫂 The Embodied Mind: Cognitive Science and Human Experience](./the-embodied-mind-cognitive-science-and-human-experience.md)  
+- [🙏🏛️ The Establishment Clause: Religion and the First Amendment](./the-establishment-clause-religion-and-the-first-amendment.md)  
 - [👤🤔 The Ethics of Identity](./the-ethics-of-identity.md)  
 - [🧠🌐💡 The Extended Mind: The Power of Thinking Outside the Brain](./the-extended-mind.md)  
 - [🇺🇸📜 The Federalist Papers](./the-federalist-papers.md)  
@@ -580,6 +582,7 @@ Feedback Control of Dynamic Systems]]
 - [🌀⬆️🧠 The Upward Spiral: Using Neuroscience to Reverse the Course of Depression, One Small Change at a Time](./the-upward-spiral-using-neuroscience-to-reverse-the-course-of-depression-one-small-change-at-a-time.md)  
 - [🐛🍎 The Very Hungry Caterpillar](./the-very-hungry-caterpillar.md)  
 - [🪖🎨 The War of Art: Break Through the Blocks and Win Your Inner Creative Battles](./the-war-of-art.md)  
+- [🚫💰❤️ The Wealth Money Can't Buy: The 8 Hidden Habits to Live Your Richest Life](./the-wealth-money-cant-buy-the-8-hidden-habits-to-live-your-richest-life.md)  
 - [🕳️🧠👶🏽 The Whole-Brain Child: 12 Revolutionary Strategies to Nurture Your Child's Developing Mind](./the-whole-brain-child.md)  
 - [🧘🏋️ The Willpower Instinct: How Self-Control Works, Why It Matters, and What You Can Do to Get More of It](./the-willpower-instinct.md)  
 - [👍🧠 The Yes Brain: How to Cultivate Courage, Curiosity, and Resilience in Your Child](./the-yes-brain.md)  

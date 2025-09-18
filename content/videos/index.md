@@ -7,7 +7,7 @@ URL: https://bagrounds.org/videos
 backlinks: false
 ---
 [Home](../index.md)  
-# 📺 Videos (290)  
+# 📺 Videos (292)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
 - [❓💪🔬 12 Questions About Creatine with Stephen Cornish, PhD](./12-questions-about-creatine-w-stephen-cornish-phd.md)  
@@ -227,6 +227,7 @@ backlinks: false
 - [🤫🔑👨‍💻 The Secret Skill Every Tech Leader Possesses](./the-secret-skill-every-tech-leader-possesses.md)  
 - [The security vulnerabilities of using Signal to discuss military operations](./the-security-vulnerabilities-of-using-signal-to-discuss-military-operations.md)  
 - [🛠️⚙️🚀🛡️ The simple system that makes you unstoppable](./the-simple-system-that-makes-you-unstoppable.md)  
+- [📜🇺🇸🏛️⚖️ The United States Constitution | Heather Cox Richardson](./the-united-states-constitution-heather-cox-richardson.md)  
 - [📓 This Journal Keeps Me Productive (& Maybe You Too)](./this-journal-keeps-me-productive-and-maybe-you-too.md)  
 - [🌅🧠🚀♾️ This morning routine is scientifically proven to make you limitless](./this-morning-routine-is-scientifically-proven-to-make-you-limitless.md)  
 - [This Secret Principle Will Transform Your Notes](./this-secret-principle-will-transform-your-notes.md)  
@@ -286,6 +287,7 @@ backlinks: false
 - [Why Bob Woodward worries about Trump's America](./why-bob-woodward-worries-about-trumps-america.md)  
 - [Why Do Babies Spit Up So Much?](./why-do-babies-spit-up-so-much.md)  
 - [🤔➡️💰 Why Republicans once staunchly opposed to Trump's bill changed their minds](./why-republicans-once-staunchly-opposed-to-trumps-bill-changed-their-minds.md)  
+- [✝️🏛️↔️ Why the Constitution Separates Church and State | Explainer](./why-the-constitution-separates-church-and-state-explainer.md)  
 - [❓😡🇺🇸🗳️ Why the hell did people vote for Trump? (the answers will shock you)](./why-the-hell-did-people-vote-for-trump-the-answers-will-shock-you.md)  
 - [👴🚫📈 Why the Trump Administration Is Doubling Down as Momentum Grows Against Them | Explainer](./why-the-trump-administration-is-doubling-down-as-momentum-grows-against-them-explainer.md)  
 - [👹⏱️🇺🇸➡️💰 Why the Trump Administration Is Rushing the Budget Reconciliation Bill Through](./why-the-trump-administration-is-rushing-the-budget-reconciliation-bill-through.md)  

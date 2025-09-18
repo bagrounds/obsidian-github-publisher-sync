@@ -7,7 +7,8 @@ URL: https://bagrounds.org/reflections
 backlinks: false
 ---
 [Home](../index.md)  
-# 🪞 Reflections (306)  
+# 🪞 Reflections (307)  
+- [2025-09-17 | 💰 Wealth | 👶🏼 Children | 📜 Constitution 📚📺](./2025-09-17.md)  
 - [2025-09-16 | 🧠 Memorizing | 🌝 Moonwalking | 🏫 Schooling 📺📚📰](./2025-09-16.md)  
 - [2025-09-15 | 🏃🏼‍♀️ Run | ❤️‍🩹 Recover | 👶🏼 Transform 📚📰📺](./2025-09-15.md)  
 - [2025-09-14 | 🇨🇦 Canada | 🥶 ICE | 🥴 Amnesia 📺📚](./2025-09-14.md)  

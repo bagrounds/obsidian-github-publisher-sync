@@ -1,9 +1,9 @@
 ---
 share: true
 aliases:
-  - 👑⛓️🤔 Is This What Authoritarianism Looks Like A Debate
-title: 👑⛓️🤔 Is This What Authoritarianism Looks Like A Debate
-URL: https://bagrounds.org/videos/
+  - 👑⛓️🤔 Is This What Authoritarianism Looks Like? A Debate.
+title: 👑⛓️🤔 Is This What Authoritarianism Looks Like? A Debate.
+URL: https://bagrounds.org/videos/is-this-what-authoritarianism-looks-like-a-debate
 Author:
 Platform:
 Channel: The Opinions Podcast
@@ -11,7 +11,7 @@ tags:
 youtube: https://youtu.be/dIjTBNOK1tc
 ---
 [Home](../index.md) > [Videos](./index.md)  
-# 👑⛓️🤔 Is This What Authoritarianism Looks Like A Debate  
+# 👑⛓️🤔 Is This What Authoritarianism Looks Like? A Debate.  
 ![Is This What Authoritarianism Looks Like? A Debate.](https://youtu.be/dIjTBNOK1tc)  
   
 ## 🤖 AI Summary  

@@ -7,7 +7,7 @@ URL: https://bagrounds.org/books
 backlinks: false
 ---
 [Home](../index.md)  
-# 📚 Books (629)  
+# 📚 Books (630)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)  
 - [🧑‍🤝‍🧑📈 10 to 25: The Science of Motivating Young People: A Groundbreaking Approach to Leading the Next Generation - And Making Your Own Life Easier](./10-to-25-the-science-of-motivating-young-people-a-groundbreaking-approach-to-leading-the-next-generation-and-making-your-own-life-easier.md)  
@@ -462,6 +462,7 @@ Feedback Control of Dynamic Systems]]
 - [🧠🔄🏆 The Brain That Changes Itself: Stories of Personal Triumph from the Frontiers of Brain Science](./the-brain-that-changes-itself.md)  
 - [📜🌿⚖️ The Bramble Bush: On Our Law and Its Study](./the-bramble-bush-on-our-law-and-its-study.md)  
 - [📓📜🗂️🔮 The Bullet Journal Method: Track the Past, Order the Present, Design the Future](./the-bullet-journal-method.md)  
+- [⛺🔥 The Campout Cookbook: Inspired Recipes for Cooking Around the Fire and Under the Stars](./the-campout-cookbook-inspired-recipes-for-cooking-around-the-fire-and-under-the-stars.md)  
 - [🌄⏳ The Circadian Code: Lose Weight, Supercharge Your Energy, and Transform Your Health from Morning to Midnight](./the-circadian-code.md)  
 - [🤕👶 The Coddling of the American Mind: How Good Intentions and Bad Ideas Are Setting Up a Generation for Failure](./the-coddling-of-the-american-mind-how-good-intentions-and-bad-ideas-are-setting-up-a-generation-for-failure.md)  
 - [🌊🤖🤔 The Coming Wave: Technology, Power, and the 21st Century's Greatest Dilemma](./the-coming-wave-technology-power-and-the-21st-centurys-greatest-dilemma.md)  

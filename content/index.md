@@ -10,7 +10,9 @@ title: 🏡 Home
 📑 Notes, 💭 thoughts, and 🔗 Links.  
 ❔ What do 🫵 _you_ 🤔 think?  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (307)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (309)  
+- [2025-09-19 | 🏕️ Camping 📚](./reflections/2025-09-19.md)  
+- [2025-09-18 | 🇺🇸 Authoritarian | 🌱 Thrive | 🔥 Grill 📺📰🔍🛍️](./reflections/2025-09-18.md)  
 - [2025-09-17 | 💰 Wealth | 👶🏼 Children | 📜 Constitution 📚📺](./reflections/2025-09-17.md)  
 - [2025-09-16 | 🧠 Memorizing | 🌝 Moonwalking | 🏫 Schooling 📺📚📰](./reflections/2025-09-16.md)  
 - [2025-09-15 | 🏃🏼‍♀️ Run | ❤️‍🩹 Recover | 👶🏼 Transform 📚📰📺](./reflections/2025-09-15.md)  
@@ -19,11 +21,10 @@ title: 🏡 Home
 - [2025-09-12 | 🌐 Blog | 🫐 Forage | 🏃🏼‍♀️ Move 🤖💬📚📄📺](./reflections/2025-09-12.md)  
 - [2025-09-11 | 🇺🇸👀 Watching | 🦺 Coddling | 🏃🏼‍♀️ Running 📺📚](./reflections/2025-09-11.md)  
 - [2025-09-10 | 🏃🏼‍♀️ Anatomy for Runners 📚📺](./reflections/2025-09-10.md)  
-- [2025-09-09 | 🧠 Learning | 🏃🏼‍♀️ Running 📚🪞](./reflections/2025-09-09.md)  
-- [2025-09-08 | 😰 Anxious | 🔧 AI Tools 📚📄✍🏽](./reflections/2025-09-08.md)  
   
   
-## [📚 Books](./books/index.md) (629)  
+## [📚 Books](./books/index.md) (630)  
+- [⛺🔥 The Campout Cookbook: Inspired Recipes for Cooking Around the Fire and Under the Stars](./books/the-campout-cookbook-inspired-recipes-for-cooking-around-the-fire-and-under-the-stars.md)  
 - [🙏🏛️ The Establishment Clause: Religion and the First Amendment](./books/the-establishment-clause-religion-and-the-first-amendment.md)  
 - [👶🧠😊📈📚 Brain Rules for Baby: How to Raise a Smart and Happy Child from Zero to Five](./books/brain-rules-for-baby.md)  
 - [🧠🧩📈🧑‍🏫 Smart but Scattered: The Revolutionary Executive Skills Approach to Helping Kids Reach Their Potential](./books/smart-but-scattered.md)  
@@ -33,20 +34,19 @@ title: 🏡 Home
 - [🤖🧑‍🏫 Teaching with AI: A Practical Guide to a New Era of Human Learning](./books/teaching-with-ai-a-practical-guide-to-a-new-era-of-human-learning.md)  
 - [♟️🧑‍🏫 Bobby Fischer Teaches Chess](./books/bobby-fischer-teaches-chess.md)  
 - [🧠🗂️ The Organized Mind: Thinking Straight in the Age of Information Overload](./books/the-organized-mind-thinking-straight-in-the-age-of-information-overload.md)  
-- [🤫🧠 Subliminal: How Your Unconscious Mind Rules Your Behavior](./books/subliminal-how-your-unconscious-mind-rules-your-behavior.md)  
   
   
-## [📺 Videos](./videos/index.md) (292)  
-- [✝️🏛️↔️ Why the Constitution Separates Church and State | Explainer](./videos/why-the-constitution-separates-church-and-state-explainer.md)  
+## [📺 Videos](./videos/index.md) (298)  
+- [🧠🌱⬆️ Lisa Lawson explores the neuroscience of adolescence in 'Thrive'](./videos/lisa-lawson-explores-the-neuroscience-of-adolescence-in-thrive.md)  
+- [👑⛓️🤔 Is This What Authoritarianism Looks Like? A Debate.](./videos/is-this-what-authoritarianism-looks-like-a-debate.md)  
+- [🔥🚫🏛️⬆️ Archivist fired by Trump launches a national effort to strengthen democracy](./videos/archivist-fired-by-trump-launches-a-national-effort-to-strengthen-democracy.md)  
+- [👩‍⚕️🗣️🙊👨 What ousted CDC director Monarez revealed about RFK Jr. during a Senate hearing](./videos/what-ousted-cdc-director-monarez-revealed-about-rfk-jr-during-a-senate-hearing.md)  
+- [👩‍⚖️🔒🗣️ Woman wrongfully detained in immigration raid describes what she endured](./videos/woman-wrongfully-detained-in-immigration-raid-describes-what-she-endured.md)  
 - [📜🇺🇸🏛️⚖️ The United States Constitution | Heather Cox Richardson](./videos/the-united-states-constitution-heather-cox-richardson.md)  
+- [📉❓⬇️💰 Federal Reserve cuts interest rates amid economic uncertainty](./videos/federal-reserve-cuts-interest-rates-amid-economic-uncertainty.md)  
+- [👴🚫📈 Why the Trump Administration Is Doubling Down as Momentum Grows Against Them | Explainer](./videos/why-the-trump-administration-is-doubling-down-as-momentum-grows-against-them-explainer.md)  
+- [✝️🏛️↔️ Why the Constitution Separates Church and State | Explainer](./videos/why-the-constitution-separates-church-and-state-explainer.md)  
 - [📉📚❓🧑‍🏫 What's caused reading scores to drop to worst point in decades? Education expert weighs in](./videos/whats-caused-reading-scores-to-drop-to-worst-point-in-decades-education-expert-weighs-in.md)  
-- [👹💰🚫👩‍🏫 Trump administration withholds billions in school grants for critical programs](./videos/trump-administration-withholds-billions-in-school-grants-for-critical-programs.md)  
-- [🧠⬆️🧑‍⚕️💪💡 Dr. Mark D'Esposito: How to Optimize Cognitive Function & Brain Health](./videos/dr-mark-desposito-how-to-optimize-cognitive-function-and-brain-health.md)  
-- [🧠💾⚡️ My system for memorizing everything INSTANTLY](./videos/my-system-for-memorizing-everything-instantly.md)  
-- [🇺🇸🗣️💥💔 Tamara Keith and Amy Walter on the political response to Charlie Kirk's killing](./videos/tamara-keith-and-amy-walter-on-the-political-response-to-charlie-kirks-killing.md)  
-- [🇺🇸✂️🩺🤕 States face hard choices after major cuts to federal health care funding](./videos/states-face-hard-choices-after-major-cuts-to-federal-health-care-funding.md)  
-- [👶🧑‍👩‍👧‍👦💲➡️ New Mexico to launch universal free childcare for all New Mexicans](./videos/new-mexico-to-launch-universal-free-childcare-for-all-new-mexicans.md)  
-- [📚⏱️💡 21 Life-Changing Books Summarized in 18 Minutes](./videos/21-life-changing-books-summarized-in-18-minutes.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (82)  
@@ -87,7 +87,8 @@ title: 🏡 Home
 - [😴🧠🌃 Sara C. Mednick](./people/sara-c-mednick.md)  
   
   
-## [🛍️ Products](./products/index.md) (2)  
+## [🛍️ Products](./products/index.md) (3)  
+- [🔥💨🏕️ Coleman Triton 2-Burner Propane Stove, Portable Camping Cooktop with 2 Adjustable Burners & Wind Guards, 22,000 BTUs of Power for Camping, Tailgating, Grilling, BBQ, & More](./products/coleman-triton-2-burner-propane-stove-portable-camping-cooktop-with-2-adjustable-burners-wind-guards-22000-btus-of-power-for-camping-tailgating-grilling-bbq-more.md)  
 - [👶🌧️💨 Graco Baby Jogging Stroller Universal Rain Cover, Ventilated Weather Shield, Waterproof, Windproof, Versatile Size to Fit Most Jogging Strollers, Vinyl, Clear, Plastic](./products/graco-baby-jogging-stroller-universal-rain-cover-ventilated-weather-shield-waterproof-windproof-versatile-size-to-fit-most-jogging-strollers-vinyl-clear-plastic.md)  
 - [👶🏃🌆 Thule Urban Glide 3](./products/thule-urban-glide-3.md)  
   

@@ -10,7 +10,8 @@ title: 🏡 Home
 📑 Notes, 💭 thoughts, and 🔗 Links.  
 ❔ What do 🫵 _you_ 🤔 think?  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (309)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (310)  
+- [2025-09-20 | 🫵🏼👀🧠 Being You 📚](./reflections/2025-09-20.md)  
 - [2025-09-19 | 🏕️ Camping 📚](./reflections/2025-09-19.md)  
 - [2025-09-18 | 🇺🇸 Authoritarian | 🌱 Thrive | 🔥 Grill 📺📰🔍🛍️](./reflections/2025-09-18.md)  
 - [2025-09-17 | 💰 Wealth | 👶🏼 Children | 📜 Constitution 📚📺](./reflections/2025-09-17.md)  
@@ -20,7 +21,6 @@ title: 🏡 Home
 - [2025-09-13 | 👣 Run 📚](./reflections/2025-09-13.md)  
 - [2025-09-12 | 🌐 Blog | 🫐 Forage | 🏃🏼‍♀️ Move 🤖💬📚📄📺](./reflections/2025-09-12.md)  
 - [2025-09-11 | 🇺🇸👀 Watching | 🦺 Coddling | 🏃🏼‍♀️ Running 📺📚](./reflections/2025-09-11.md)  
-- [2025-09-10 | 🏃🏼‍♀️ Anatomy for Runners 📚📺](./reflections/2025-09-10.md)  
   
   
 ## [📚 Books](./books/index.md) (630)  

@@ -5,6 +5,7 @@ aliases:
 URL: https://bagrounds.org/books/being-you-a-new-science-of-consciousness
 share: true
 affiliate link: https://amzn.to/4jubxDi
+CTA: 🧠 Explore awareness.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 👤🧠 Being You: A New Science of Consciousness  
@@ -38,7 +39,7 @@ affiliate link: https://amzn.to/4jubxDi
   
 ### 🧠 Similar Books (Exploring Consciousness and the Brain)  
   
-* 🌊 **The Hidden Spring: A Journey to the Source of Consciousness by Mark Solms:** This book also investigates the biological basis of consciousness, focusing on the role of the brainstem and affect (feelings) as the fundamental source of consciousness.  
+* **[❓🧠 The Hidden Spring: A Journey to the Source of Consciousness](./the-hidden-spring-a-journey-to-the-source-of-consciousness.md) by Mark Solms:** This book also investigates the biological basis of consciousness, focusing on the role of the brainstem and affect (feelings) as the fundamental source of consciousness.  
 * ⚙️ **The Experience Machine: How Our Minds Predict and Shape Reality by Andy Clark:** Clark's work aligns with Seth's by exploring the predictive processing framework and how our brains actively construct our perception of reality.  
 * 🧠 **Consciousness and the Brain: Deciphering How the Brain Codes Our Thoughts by Stanislas Dehaene:** Dehaene's book provides an in-depth look at the neural correlates of consciousness and global workspace theory.  
 * ❓ **Conscious: A Brief Guide to the Fundamental Mystery of the Mind by Annaka Harris:** Harris explores various theories of consciousness, including panpsychism, and delves into the philosophical implications of subjective experience.  

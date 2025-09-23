@@ -47,7 +47,7 @@ CTA: 🚨 Unmask deception.
   
 #### **🎨 Creative & Thematic Pairings**  
   
-* 📺 **"Amusing Ourselves to Death: Public Discourse in the Age of Show Business" by Neil Postman:** Postman's prescient 1985 critique of how television was shaping public discourse provides a historical and philosophical backdrop to the issues of infotainment and political spectacle discussed in "Network Propaganda."  
+* **[📺💀 Amusing Ourselves to Death: Public Discourse in the Age of Show Business](./amusing-ourselves-to-death-public-discourse-in-the-age-of-show-business.md) by Neil Postman:** Postman's prescient 1985 critique of how television was shaping public discourse provides a historical and philosophical backdrop to the issues of infotainment and political spectacle discussed in "Network Propaganda."  
 * 👩‍🦰 **"The Handmaid's Tale" by Margaret Atwood:** This dystopian novel, while fictional, offers a chilling portrayal of how a society can be radicalized and its perception of reality manipulated, providing a narrative companion to the non-fiction analysis of "Network Propaganda."  
 * 🧠 **[🤔🐇🐢 Thinking, Fast and Slow](./thinking-fast-and-slow.md) by Daniel Kahneman:** Kahneman's exploration of the two systems of human thought provides a cognitive science foundation for understanding why people are susceptible to the very disinformation and propaganda that "Network Propaganda" documents.  
   

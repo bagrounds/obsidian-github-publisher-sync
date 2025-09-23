@@ -41,7 +41,7 @@ Topics to explore for a better understanding could include:
 ## 📚 Book Recommendations  
 * [👑🚫📜2️⃣0️⃣ On Tyranny: Twenty Lessons from the Twentieth Century](../books/on-tyranny.md) by Timothy Snyder: 📚 Offers twenty lessons from the twentieth century on how to resist tyranny, providing historical context for authoritarian tendencies.  
 * [🏭🫡 Manufacturing Consent: The Political Economy of the Mass Media](../books/manufacturing-consent.md) by Edward S. Herman and Noam Chomsky: 📖 Explores how mass media can be used to control public opinion in democratic societies.  
-* Amusing Ourselves to Death by Neil Postman: 📺 Discusses the impact of television on public discourse and how it shapes the way we perceive reality.  
+* [📺💀 Amusing Ourselves to Death: Public Discourse in the Age of Show Business](../books/amusing-ourselves-to-death-public-discourse-in-the-age-of-show-business.md) by Neil Postman: 📺 Discusses the impact of television on public discourse and how it shapes the way we perceive reality.  
 * [👁️ Nineteen Eighty-Four](../books/1984.md) by George Orwell: 👁️‍🗨️ A classic dystopian novel about government surveillance, censorship, and the manipulation of truth, relevant to themes of controlled speech.  
 * The Art of the Deal by Donald J. Trump and Tony Schwartz: 💰 Provides an inside look at Trump's business philosophy and communication style, offering context to the persona satirized in the video.  
   

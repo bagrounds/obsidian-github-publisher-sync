@@ -4,9 +4,10 @@ aliases:
   - "🪄💭 Necessary Illusions: Thought Control in Democratic Societies"
 title: "🪄💭 Necessary Illusions: Thought Control in Democratic Societies"
 URL: https://bagrounds.org/books/necessary-illusions
-Author: 
-tags: 
+Author:
+tags:
 affiliate link: https://amzn.to/3HmJ7hg
+CTA: 🗣️ Question authority.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🪄💭 Necessary Illusions: Thought Control in Democratic Societies  
@@ -50,7 +51,7 @@ affiliate link: https://amzn.to/3HmJ7hg
   
 * **[🏭🫡 Manufacturing Consent: The Political Economy of the Mass Media](./manufacturing-consent.md)** by Edward S. Herman and Noam Chomsky: 🧱 The foundational text detailing the Propaganda Model discussed in *Necessary Illusions*. 📖 Essential companion reading.  
 * 🗣️ **[🤔🔌 Understanding Power: The Indispensable Chomsky](./understanding-power-the-indispensable-chomsky.md)** edited by Peter R. Mitchell and John Schoeffel: 🎤 A collection of Chomsky's talks and interviews, offering accessible insights into his views on media, power, and global politics.  
-* 📺 **Amusing Ourselves to Death: Public Discourse in the Age of Show Business** by Neil Postman: 🤡 Argues that television (and by extension, modern media) degrades public discourse by prioritizing entertainment over substance, creating a populace easily distracted from important issues.  
+* **[📺💀 Amusing Ourselves to Death: Public Discourse in the Age of Show Business](./amusing-ourselves-to-death-public-discourse-in-the-age-of-show-business.md)** by Neil Postman: 🤡 Argues that television (and by extension, modern media) degrades public discourse by prioritizing entertainment over substance, creating a populace easily distracted from important issues.  
 * 📣 **Propaganda** by Edward Bernays: 👨‍🏫 A foundational text on public relations and propaganda by one of its pioneers (and Freud's nephew), offering a candid look at techniques for shaping public opinion.  
 * 📰 **Inventing Reality: The Politics of News Media** by Michael Parenti: 🧐 A critical analysis, similar to Chomsky's, focusing on how media serves corporate and political interests, often ignoring systemic issues.  
   

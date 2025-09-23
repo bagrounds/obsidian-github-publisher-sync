@@ -4,8 +4,8 @@ aliases:
   - "📰⚔️🧠 Information Wars: How We Lost the Global Battle Against Disinformation and What We Can Do About It"
 title: "📰⚔️🧠 Information Wars: How We Lost the Global Battle Against Disinformation and What We Can Do About It"
 URL: https://bagrounds.org/books/information-wars
-Author: 
-tags: 
+Author:
+tags:
 affiliate link: https://amzn.to/3ZcSgPK
 CTA: 🛡️ Fortify truth.
 ---
@@ -63,7 +63,7 @@ While acknowledging the difficulties, Stengel outlines potential strategies:
 ### ⚖️ Contrasting Books (Alternative Perspectives/Critiques)  
   
 1. **[🏭🫡 Manufacturing Consent: The Political Economy of the Mass Media](./manufacturing-consent.md)** by Edward S. Herman and Noam Chomsky: A classic critique arguing that Western media, even without overt censorship, functions as a propaganda system for elite interests. Offers a different lens on information control than state-sponsored disinformation.  
-2. 🤡 **Amusing Ourselves to Death: Public Discourse in the Age of Show Business** by Neil Postman: Argues the *medium* (television, and by extension, digital media) shapes the message, leading to trivialized public discourse, contrasting with Stengel's focus on intentional malicious content.  
+2. **[📺💀 Amusing Ourselves to Death: Public Discourse in the Age of Show Business](./amusing-ourselves-to-death-public-discourse-in-the-age-of-show-business.md)** by Neil Postman: Argues the *medium* (television, and by extension, digital media) shapes the message, leading to trivialized public discourse, contrasting with Stengel's focus on intentional malicious content.  
 3. 📱 **[🤯 Mindf*ck: Cambridge Analytica and the Plot to Break America](./mindf-ck-cambridge-analytica-and-the-plot-to-break-america.md)** by Christopher Wylie: While detailing disinformation tactics, it focuses more on the data harvesting and psychological targeting aspects enabled by tech platforms, offering a specific case study with a whistleblower perspective.  
 4. 🗣️ *(Consider books focusing on free speech absolutism or critiques of the term 'disinformation' as overly broad or politically weaponized, though specific titles may vary and require careful selection based on viewpoint.)*  
   

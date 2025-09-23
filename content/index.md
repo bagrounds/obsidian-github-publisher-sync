@@ -10,7 +10,9 @@ title: 🏡 Home
 📑 Notes, 💭 thoughts, and 🔗 Links.  
 ❔ What do 🫵 _you_ 🤔 think?  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (310)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (312)  
+- [2025-09-22 | 👤 Being | 🎙️ Kimmel 📚📺](./reflections/2025-09-22.md)  
+- [2025-09-21 | 🥸🌊 Hidden Spring 📚](./reflections/2025-09-21.md)  
 - [2025-09-20 | 🫵🏼👀🧠 Being You 📚](./reflections/2025-09-20.md)  
 - [2025-09-19 | 🏕️ Camping 📚](./reflections/2025-09-19.md)  
 - [2025-09-18 | 🇺🇸 Authoritarian | 🌱 Thrive | 🔥 Grill 📺📰🔍🛍️](./reflections/2025-09-18.md)  
@@ -19,11 +21,12 @@ title: 🏡 Home
 - [2025-09-15 | 🏃🏼‍♀️ Run | ❤️‍🩹 Recover | 👶🏼 Transform 📚📰📺](./reflections/2025-09-15.md)  
 - [2025-09-14 | 🇨🇦 Canada | 🥶 ICE | 🥴 Amnesia 📺📚](./reflections/2025-09-14.md)  
 - [2025-09-13 | 👣 Run 📚](./reflections/2025-09-13.md)  
-- [2025-09-12 | 🌐 Blog | 🫐 Forage | 🏃🏼‍♀️ Move 🤖💬📚📄📺](./reflections/2025-09-12.md)  
-- [2025-09-11 | 🇺🇸👀 Watching | 🦺 Coddling | 🏃🏼‍♀️ Running 📺📚](./reflections/2025-09-11.md)  
   
   
-## [📚 Books](./books/index.md) (630)  
+## [📚 Books](./books/index.md) (631)  
+- [👤🧠 Being You: A New Science of Consciousness](./books/being-you-a-new-science-of-consciousness.md)  
+- [❓🧠 The Hidden Spring: A Journey to the Source of Consciousness](./books/the-hidden-spring-a-journey-to-the-source-of-consciousness.md)  
+- [🌡️⚙️ Inventing Temperature: Measurement and Scientific Progress](./books/inventing-temperature-measurement-and-scientific-progress.md)  
 - [⛺🔥 The Campout Cookbook: Inspired Recipes for Cooking Around the Fire and Under the Stars](./books/the-campout-cookbook-inspired-recipes-for-cooking-around-the-fire-and-under-the-stars.md)  
 - [🙏🏛️ The Establishment Clause: Religion and the First Amendment](./books/the-establishment-clause-religion-and-the-first-amendment.md)  
 - [👶🧠😊📈📚 Brain Rules for Baby: How to Raise a Smart and Happy Child from Zero to Five](./books/brain-rules-for-baby.md)  
@@ -31,12 +34,10 @@ title: 🏡 Home
 - [💀🇺🇸🏫 The Death and Life of the Great American School System: How Testing and Choice Are Undermining Education](./books/the-death-and-life-of-the-great-american-school-system-how-testing-and-choice-are-undermining-education.md)  
 - [🧑‍🎓🌱 How Children Succeed: Grit, Curiosity, and the Hidden Power of Character](./books/how-children-succeed-grit-curiosity-and-the-hidden-power-of-character.md)  
 - [🚫💰❤️ The Wealth Money Can't Buy: The 8 Hidden Habits to Live Your Richest Life](./books/the-wealth-money-cant-buy-the-8-hidden-habits-to-live-your-richest-life.md)  
-- [🤖🧑‍🏫 Teaching with AI: A Practical Guide to a New Era of Human Learning](./books/teaching-with-ai-a-practical-guide-to-a-new-era-of-human-learning.md)  
-- [♟️🧑‍🏫 Bobby Fischer Teaches Chess](./books/bobby-fischer-teaches-chess.md)  
-- [🧠🗂️ The Organized Mind: Thinking Straight in the Age of Information Overload](./books/the-organized-mind-thinking-straight-in-the-age-of-information-overload.md)  
   
   
-## [📺 Videos](./videos/index.md) (298)  
+## [📺 Videos](./videos/index.md) (299)  
+- [📺🎤👮‍♂️📰 Jimmy Kimmel & the FCC: Last Week Tonight with John Oliver (HBO)](./videos/jimmy-kimmel-the-fcc-last-week-tonight-with-john-oliver-hbo.md)  
 - [🧠🌱⬆️ Lisa Lawson explores the neuroscience of adolescence in 'Thrive'](./videos/lisa-lawson-explores-the-neuroscience-of-adolescence-in-thrive.md)  
 - [👑⛓️🤔 Is This What Authoritarianism Looks Like? A Debate.](./videos/is-this-what-authoritarianism-looks-like-a-debate.md)  
 - [🔥🚫🏛️⬆️ Archivist fired by Trump launches a national effort to strengthen democracy](./videos/archivist-fired-by-trump-launches-a-national-effort-to-strengthen-democracy.md)  
@@ -46,7 +47,6 @@ title: 🏡 Home
 - [📉❓⬇️💰 Federal Reserve cuts interest rates amid economic uncertainty](./videos/federal-reserve-cuts-interest-rates-amid-economic-uncertainty.md)  
 - [👴🚫📈 Why the Trump Administration Is Doubling Down as Momentum Grows Against Them | Explainer](./videos/why-the-trump-administration-is-doubling-down-as-momentum-grows-against-them-explainer.md)  
 - [✝️🏛️↔️ Why the Constitution Separates Church and State | Explainer](./videos/why-the-constitution-separates-church-and-state-explainer.md)  
-- [📉📚❓🧑‍🏫 What's caused reading scores to drop to worst point in decades? Education expert weighs in](./videos/whats-caused-reading-scores-to-drop-to-worst-point-in-decades-education-expert-weighs-in.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (82)  

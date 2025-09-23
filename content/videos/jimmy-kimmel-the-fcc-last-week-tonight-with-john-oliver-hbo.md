@@ -45,4 +45,7 @@ To gain a more complete understanding, it would be beneficial to 📖 explore pe
 * [👁️ 1984](../books/1984.md) by George Orwell: A classic dystopian novel that vividly portrays a government's control over information and speech, providing a creative parallel to the concerns raised about censorship.  
 * [👻🇺🇸⚔️🪽 The Soul of America: The Battle for Our Better Angels](../books/the-soul-of-america-the-battle-for-our-better-angels.md) by Jon Meacham: Offers a historical perspective on moments when American values, including free speech, have been challenged and defended.  
 * The Authoritarian Moment by Ben Shapiro: Would provide a contrasting viewpoint on challenges to free speech, likely from a conservative perspective.  
-* Amusing Ourselves to Death by Neil Postman: Discusses the impact of television on public discourse, offering a broader context for the role of media in society.
+* Amusing Ourselves to Death by Neil Postman: Discusses the impact of television on public discourse, offering a broader context for the role of media in society.  
+  
+## 🐦 Tweet  
+<blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">📺🎤👮‍♂️📰 Jimmy Kimmel &amp; the FCC: Last Week Tonight with John Oliver (HBO)<br><br>🚨 Suspension | 🗣️ Criticism | 🏢 Media Consolidation | 🏛️ First Amendment | 🌍 International Precedents | 🤝 Corporate Pressure<a href="https://t.co/diP3kW4eM3">https://t.co/diP3kW4eM3</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/1970529714256453660?ref_src=twsrc%5Etfw">September 23, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

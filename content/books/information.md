@@ -7,6 +7,7 @@ URL: https://bagrounds.org/books/information
 Author:
 tags:
 affiliate link: https://amzn.to/4jwu95Q
+CTA: 💡 Explore knowledge.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ℹ️ Information: A Very Short Introduction  
@@ -61,7 +62,7 @@ affiliate link: https://amzn.to/4jwu95Q
 ### ⚠️ Contrasting Perspectives (Critical Views on Information/Technology)  
   
 * **[📱🧠 The Shallows: What the Internet Is Doing to Our Brains](./the-shallows-what-the-internet-is-doing-to-our-brains.md)** by Nicholas Carr: Argues that the constant connectivity and information flow of the internet are negatively impacting our cognitive abilities, particularly deep thinking and concentration.  
-* 📖 **Amusing Ourselves to Death: Public Discourse in the Age of Show Business** by Neil Postman: A pre-internet critique arguing that television as a medium degrades public discourse by prioritizing entertainment over substance – arguments that many find relevant to the internet age.  
+* **[📺💀 Amusing Ourselves to Death: Public Discourse in the Age of Show Business](./amusing-ourselves-to-death-public-discourse-in-the-age-of-show-business.md)** by Neil Postman: A pre-internet critique arguing that television as a medium degrades public discourse by prioritizing entertainment over substance – arguments that many find relevant to the internet age.  
 * 📖 **Technopoly: The Surrender of Culture to Technology** by Neil Postman: Expands on his critique, arguing that technology subtly reshapes culture and values, often in undesirable ways.  
 * 📖 **The Cult of the Amateur: How Today's Internet is Killing Our Culture** by Andrew Keen: A polemical critique arguing that user-generated content and the decline of traditional gatekeepers are eroding cultural standards and expertise.  
 * 📖 **The Future of Reputation: Gossip, Rumor, and Privacy on the Internet** by Daniel Solove: Focuses specifically on the challenges to privacy and reputation management in the digital age.  

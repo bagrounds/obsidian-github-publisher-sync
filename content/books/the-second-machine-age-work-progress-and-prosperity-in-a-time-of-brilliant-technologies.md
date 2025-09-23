@@ -5,6 +5,7 @@ aliases:
 URL: https://bagrounds.org/books/the-second-machine-age-work-progress-and-prosperity-in-a-time-of-brilliant-technologies
 share: true
 affiliate link: https://amzn.to/4oz7eui
+CTA: 🤖 Prepare for tomorrow.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🤖📈 The Second Machine Age: Work, Progress, and Prosperity in a Time of Brilliant Technologies  
@@ -57,7 +58,7 @@ affiliate link: https://amzn.to/4oz7eui
 * 💔 **Alone Together: Why We Expect More from Technology and Less from Each Other** by Sherry Turkle: 🫂 Explores the social impact of digital technologies, particularly how our increasing reliance on networked devices and AI is altering human relationships and our sense of self, often in isolating ways.  
 * **[👁️‍🗨️💰⛓️👤 The Age of Surveillance Capitalism: The Fight for a Human Future at the New Frontier of Power](./the-age-of-surveillance-capitalism.md)** by Shoshana Zuboff: 💰 Investigates how personal data is systematically extracted and exploited for profit by tech companies, revealing a new economic order she terms "surveillance capitalism" and its implications for democracy and individual autonomy.  
 * ⚠️ **Weapons of Math Destruction: How Big Data Increases Inequality and Threatens Democracy** by Cathy O'Neil: 📊 Examines the dangers of algorithms in shaping our lives, arguing that opaque, unregulated, and unfair algorithms perpetuate and exacerbate social and economic inequality.  
-* 📺 **Amusing Ourselves to Death: Public Discourse in the Age of Show Business** by Neil Postman: 🗣️ While older, this book provides a critical perspective on the impact of media (specifically television, but highly relevant to digital media) on public discourse, suggesting a decline in rational thought due to entertainment-driven communication.  
+* **[📺💀 Amusing Ourselves to Death: Public Discourse in the Age of Show Business](./amusing-ourselves-to-death-public-discourse-in-the-age-of-show-business.md)** by Neil Postman: 🗣️ While older, this book provides a critical perspective on the impact of media (specifically television, but highly relevant to digital media) on public discourse, suggesting a decline in rational thought due to entertainment-driven communication.  
 * **[📱🧠 The Shallows: What the Internet Is Doing to Our Brains](./the-shallows-what-the-internet-is-doing-to-our-brains.md)** by Nicholas Carr: 🌐 Explores how the internet's structure and constant flow of information are rewiring our brains, potentially diminishing our capacity for deep thinking, concentration, and contemplative reading.  
 * ⚙️ **The Technological Society** by Jacques Ellul: 📜 A much older work, but a foundational critique of technology, arguing that technique (the pervasive rationalization and efficiency in all aspects of life) becomes an autonomous force that shapes human values and society, often to our detriment.  
   

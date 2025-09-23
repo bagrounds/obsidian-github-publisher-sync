@@ -7,7 +7,7 @@ URL: https://bagrounds.org/videos
 backlinks: false
 ---
 [Home](../index.md)  
-# 📺 Videos (298)  
+# 📺 Videos (299)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
 - [❓💪🔬 12 Questions About Creatine with Stephen Cornish, PhD](./12-questions-about-creatine-w-stephen-cornish-phd.md)  
@@ -129,6 +129,7 @@ backlinks: false
 - [🤖🗓️🧑‍🏫 I Tried AI as a Life Coach for 365 Days - Here’s What I Learned](./i-tried-ai-as-a-life-coach-for-365-days-heres-what-i-learned.md)  
 - [It’s actually pretty easy to get ahead of 99% of people.](./it-is-actually-pretty-easy-to-get-ahead-of-99-percent-of%20people.md)  
 - [📢👁️🗣️💡 It's Our Job to Make Sure People Know the Truth](./its-our-job-to-make-sure-people-know-the-truth.md)  
+- [📺🎤👮‍♂️📰 Jimmy Kimmel & the FCC: Last Week Tonight with John Oliver (HBO)](./jimmy-kimmel-the-fcc-last-week-tonight-with-john-oliver-hbo.md)  
 - [🤖🧑‍💻📈🚧 John Schulman - Reinforcement Learning from Human Feedback: Progress and Challenges](./john-schulman-reinforcement-learning-from-human-feedback-progress-and-challenges.md)  
 - [🇺🇸😡📺 Jon Stewart on the L.A. ICE Protests and Trump's Escalating Response | The Daily Show](./jon-stewart-on-the-la-ice-protests-and-trumps-escalating-response-the-daily-show.md)  
 - [Judea Pearl, 2011 ACM Turing Award Recipient](./judea-pearl-2011-acm-turing-award-recipient.md)  

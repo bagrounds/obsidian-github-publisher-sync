@@ -7,6 +7,7 @@ URL: https://bagrounds.org/books/antisocial-online-extremists-techno-utopians-an
 Author:
 tags:
 affiliate link: https://amzn.to/4kPcass
+CTA: 🚨 Confront hate.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🙅🗣️💻 Antisocial: Online Extremists, Techno-Utopians, and the Hijacking of the American Conversation  
@@ -62,7 +63,7 @@ affiliate link: https://amzn.to/4kPcass
   
 ### 🎨 Creatively Related (Broader Themes: Sociology of Internet, Propaganda, Dystopia)  
 * **[📱🧠 The Shallows: What the Internet Is Doing to Our Brains](./the-shallows-what-the-internet-is-doing-to-our-brains.md)** by Nicholas Carr: 💻 Explores the cognitive effects of constant internet use.  
-* 🎭 **Amusing Ourselves to Death: Public Discourse in the Age of Show Business** by Neil Postman: 📺 A classic critique of how television (and by extension, later media) shapes public discourse, prioritizing entertainment over substance.  
+* **[📺💀 Amusing Ourselves to Death: Public Discourse in the Age of Show Business](./amusing-ourselves-to-death-public-discourse-in-the-age-of-show-business.md)** by Neil Postman: 📺 A classic critique of how television (and by extension, later media) shapes public discourse, prioritizing entertainment over substance.  
 * 🥺 **So You've Been Publicly Shamed** by Jon Ronson: 😥 Explores the phenomenon and consequences of online shaming.  
 * 🪞 **Trick Mirror: Reflections on Self-Delusion** by Jia Tolentino: 🤳 Essays exploring internet culture, identity, and modern life.  
 * 🧬 **Critiquing Transhumanism: The Human Cost of Pursuing Techno-Utopia** by Julie Miller: 🦾 Critiques the philosophical underpinnings of techno-utopian goals from a different angle (transhumanism).  

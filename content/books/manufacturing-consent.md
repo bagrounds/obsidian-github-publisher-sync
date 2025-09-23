@@ -4,8 +4,8 @@ aliases:
   - "🏭🫡 Manufacturing Consent: The Political Economy of the Mass Media"
 title: "🏭🫡 Manufacturing Consent: The Political Economy of the Mass Media"
 URL: https://bagrounds.org/books/manufacturing-consent
-Author: 
-tags: 
+Author:
+tags:
 affiliate link: https://amzn.to/4l791ED
 CTA: 📢 Question authority.
 ---
@@ -59,7 +59,7 @@ Herman and Chomsky introduce the "Propaganda Model" to explain how news is filte
 ### 📰 Similar Reads (Media Criticism, Propaganda, Political Economy)  
 1. 🎭 **Inventing Reality: The Politics of News Media** by Michael Parenti: Published shortly before *Manufacturing Consent*, this book covers similar ground, analyzing how media shapes perceptions to favor elite interests. 🚶‍♂️ Some consider it a more accessible precursor.  
 2. 💰 **The New Media Monopoly** by Ben Bagdikian: Chronicles the increasing concentration of media ownership in the hands of fewer corporations and its implications for democracy.  
-3. 🤡 **Amusing Ourselves to Death: Public Discourse in the Age of Show Business** by Neil Postman: Argues that television (and by extension, image-based media) degrades public discourse by prioritizing entertainment over substance.  
+3. **[📺💀 Amusing Ourselves to Death: Public Discourse in the Age of Show Business](./amusing-ourselves-to-death-public-discourse-in-the-age-of-show-business.md)** by Neil Postman: Argues that television (and by extension, image-based media) degrades public discourse by prioritizing entertainment over substance.  
 4. 📑 **[🪄💭 Necessary Illusions: Thought Control in Democratic Societies](./necessary-illusions.md)** by Noam Chomsky: A follow-up work building on the themes of *Manufacturing Consent*.  
 5. 📢 **Propaganda** by Jacques Ellul: A foundational sociological analysis of propaganda, exploring its nature and necessity in modern societies, regardless of political system.  
 6. 💸 **Rich Media, Poor Democracy: Communication Politics in Dubious Times** by Robert W. McChesney: Examines the impact of media deregulation, concentration, and commercialism on democratic processes.  

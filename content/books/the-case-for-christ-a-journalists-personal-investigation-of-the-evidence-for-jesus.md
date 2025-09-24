@@ -47,13 +47,13 @@ CTA: ❓ Question faith.
   
 ### 🗂️ Similar Books  
   
-* ✝️ **Mere Christianity by C.S. Lewis:** 📖 This classic work of Christian apologetics offers a comprehensive yet accessible explanation and defense of core Christian beliefs, drawing on reason and common human experience. 🤝 Like Strobel, Lewis aims to present a rational case for faith.  
+* **[✝️ Mere Christianity](./mere-christianity.md) by C.S. Lewis:** 📖 This classic work of Christian apologetics offers a comprehensive yet accessible explanation and defense of core Christian beliefs, drawing on reason and common human experience. 🤝 Like Strobel, Lewis aims to present a rational case for faith.  
 * 🤔 **The Reason for God: Belief in an Age of Skepticism by Timothy Keller:** ❓ Keller addresses common doubts and objections to Christianity with intellectual rigor and respect for skeptics. 💭 It's thoughtful and engaging for those exploring or articulating faith.  
 * 🕵️ **Person of Interest: Why Jesus Still Matters in a World that Rejects the Bible by J. Warner Wallace:** 🔪 Written by a cold-case homicide detective, this book applies investigative techniques to historical evidence for Jesus, similar to Strobel's journalistic approach, to build a case for his significance and divinity.  
   
 ### ⚖️ Contrasting Books  
   
-* 👎 **The Case Against The Case for Christ by Robert M. Price:** 📖 This book offers a direct critique of Strobel's work, challenging its methodology, arguments, and conclusions. ⚠️ It addresses the perceived flaws in Strobel's investigation and provides alternative explanations.  
+* **[🧑‍🏫🆚⛪ The Case Against The Case For Christ: A New Testament Scholar Refutes the Reverend Lee Strobel](./the-case-against-the-case-for-christ-a-new-testament-scholar-refutes-the-reverend-lee-strobel.md) by Robert M. Price:** 📖 This book offers a direct critique of Strobel's work, challenging its methodology, arguments, and conclusions. ⚠️ It addresses the perceived flaws in Strobel's investigation and provides alternative explanations.  
 * **[❓✝️ The God Delusion](./the-god-delusion.md) by Richard Dawkins:** 🔥 A prominent work of atheism, Dawkins' book presents a fiery argument against religious belief, dissecting perceived flaws in religious reasoning and the impact of faith, offering a stark contrast to apologetic works.  
 * 🇮🇱 **Zealot: The Life and Times of Jesus of Nazareth by Reza Aslan:** 📜 Aslan provides a historical, sociological, and political perspective on Jesus, portraying him as a revolutionary Jewish figure rather than focusing on his divinity, offering an alternative historical interpretation.  
   

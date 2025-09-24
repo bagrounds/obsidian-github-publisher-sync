@@ -34,7 +34,7 @@ The God Delusion generated widespread discussion and debate 🗣️, receiving b
   
 These books echo the themes of atheism, skepticism 🤔, and the critique of religion 🙏 from a scientific 🔬 or rationalist perspective.  
   
-* 📖 **God Is Not Great: How Religion Poisons Everything by Christopher Hitchens**: Another prominent work of the "New Atheism" movement, Hitchens' book systematically critiques organized religion 🙏, arguing that it is violent ⚔️, irrational 🤪, intolerant 🚫, and inimical to freedom 🕊️.  
+* **[🙏🚫🌍 God Is Not Great: How Religion Poisons Everything](./god-is-not-great-how-religion-poisons-everything.md) by Christopher Hitchens**: Another prominent work of the "New Atheism" movement, Hitchens' book systematically critiques organized religion 🙏, arguing that it is violent ⚔️, irrational 🤪, intolerant 🚫, and inimical to freedom 🕊️.  
 * ✉️ **Letter to a Christian Nation by Sam Harris**: This concise book directly addresses American Christians, arguing against the moral and intellectual validity of religious faith 🙏 and advocating for reason 🤔 and secular ethics.  
 * ✨ **Breaking the Spell: Religion as a Natural Phenomenon by Daniel Dennett**: Dennett, a philosopher 🤔, explores religion 🙏 from a naturalistic perspective, seeking to explain its origins 👶, evolution 🧬, and effects without resorting to supernatural explanations 👻.  
   

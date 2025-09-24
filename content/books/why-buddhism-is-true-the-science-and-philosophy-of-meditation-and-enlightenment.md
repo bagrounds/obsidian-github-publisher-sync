@@ -54,7 +54,7 @@ affiliate link: https://amzn.to/47eR6Ii
     📜 A foundational work in Western philosophy, Kant's text explores the limits of human reason and knowledge, focusing on empirical experience and the structures of the mind without drawing on Eastern spiritual traditions or evolutionary psychology. 🧠 It provides a different intellectual tradition for understanding consciousness and reality.  
 * 🙏 **The Varieties of Religious Experience** by William James  
     📚 While not directly "contrasting" in a confrontational sense, James's work is a classic study of religious and spiritual experiences from a psychological perspective. 📝 It documents a wide range of personal accounts, including those with mystical and supernatural elements, offering a broader and less explicitly secular view of spiritual phenomena than Wright's.  
-* 👿 **The God Delusion** by Richard Dawkins  
+* **[❓✝️ The God Delusion](./the-god-delusion.md)** by Richard Dawkins  
     atheist Dawkins's book strongly argues against the existence of God and criticizes religious belief from a staunchly atheistic and scientific materialist perspective. 🧪 This contrasts with Wright's position, which, while secular, seeks to validate the "truth" of certain Buddhist insights and practices.  
   
 ### 🎨 Creatively Related Books  

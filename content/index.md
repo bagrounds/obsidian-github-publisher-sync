@@ -10,7 +10,8 @@ title: 🏡 Home
 📑 Notes, 💭 thoughts, and 🔗 Links.  
 ❔ What do 🫵 _you_ 🤔 think?  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (312)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (313)  
+- [2025-09-23 | 🎙️ Kimmel | 📺 Amusing | ✝️ Christ 📺📚](./reflections/2025-09-23.md)  
 - [2025-09-22 | 👤 Being | 🎙️ Kimmel 📚📺](./reflections/2025-09-22.md)  
 - [2025-09-21 | 🥸🌊 Hidden Spring 📚](./reflections/2025-09-21.md)  
 - [2025-09-20 | 🫵🏼👀🧠 Being You 📚](./reflections/2025-09-20.md)  
@@ -20,33 +21,32 @@ title: 🏡 Home
 - [2025-09-16 | 🧠 Memorizing | 🌝 Moonwalking | 🏫 Schooling 📺📚📰](./reflections/2025-09-16.md)  
 - [2025-09-15 | 🏃🏼‍♀️ Run | ❤️‍🩹 Recover | 👶🏼 Transform 📚📰📺](./reflections/2025-09-15.md)  
 - [2025-09-14 | 🇨🇦 Canada | 🥶 ICE | 🥴 Amnesia 📺📚](./reflections/2025-09-14.md)  
-- [2025-09-13 | 👣 Run 📚](./reflections/2025-09-13.md)  
   
   
-## [📚 Books](./books/index.md) (631)  
-- [👤🧠 Being You: A New Science of Consciousness](./books/being-you-a-new-science-of-consciousness.md)  
-- [❓🧠 The Hidden Spring: A Journey to the Source of Consciousness](./books/the-hidden-spring-a-journey-to-the-source-of-consciousness.md)  
-- [🌡️⚙️ Inventing Temperature: Measurement and Scientific Progress](./books/inventing-temperature-measurement-and-scientific-progress.md)  
-- [⛺🔥 The Campout Cookbook: Inspired Recipes for Cooking Around the Fire and Under the Stars](./books/the-campout-cookbook-inspired-recipes-for-cooking-around-the-fire-and-under-the-stars.md)  
-- [🙏🏛️ The Establishment Clause: Religion and the First Amendment](./books/the-establishment-clause-religion-and-the-first-amendment.md)  
-- [👶🧠😊📈📚 Brain Rules for Baby: How to Raise a Smart and Happy Child from Zero to Five](./books/brain-rules-for-baby.md)  
-- [🧠🧩📈🧑‍🏫 Smart but Scattered: The Revolutionary Executive Skills Approach to Helping Kids Reach Their Potential](./books/smart-but-scattered.md)  
-- [💀🇺🇸🏫 The Death and Life of the Great American School System: How Testing and Choice Are Undermining Education](./books/the-death-and-life-of-the-great-american-school-system-how-testing-and-choice-are-undermining-education.md)  
-- [🧑‍🎓🌱 How Children Succeed: Grit, Curiosity, and the Hidden Power of Character](./books/how-children-succeed-grit-curiosity-and-the-hidden-power-of-character.md)  
-- [🚫💰❤️ The Wealth Money Can't Buy: The 8 Hidden Habits to Live Your Richest Life](./books/the-wealth-money-cant-buy-the-8-hidden-habits-to-live-your-richest-life.md)  
+## [📚 Books](./books/index.md) (638)  
+- [🧘🧠✅ Why Buddhism is True: The Science and Philosophy of Meditation and Enlightenment](./books/why-buddhism-is-true-the-science-and-philosophy-of-meditation-and-enlightenment.md)  
+- [❓✝️ The God Delusion](./books/the-god-delusion.md)  
+- [📰❓✝️ The Case for Christ: A Journalist's Personal Investigation of the Evidence for Jesus](./books/the-case-for-christ-a-journalists-personal-investigation-of-the-evidence-for-jesus.md)  
+- [🧑‍🏫🆚⛪ The Case Against The Case For Christ: A New Testament Scholar Refutes the Reverend Lee Strobel](./books/the-case-against-the-case-for-christ-a-new-testament-scholar-refutes-the-reverend-lee-strobel.md)  
+- [✝️ Mere Christianity](./books/mere-christianity.md)  
+- [❓✝️ The Dawkins Delusion?: Atheist Fundamentalism and the Denial of the Divine](./books/the-dawkins-delusion-atheist-fundamentalism-and-the-denial-of-the-divine.md)  
+- [🙏🚫🌍 God Is Not Great: How Religion Poisons Everything](./books/god-is-not-great-how-religion-poisons-everything.md)  
+- [🤖📈 The Second Machine Age: Work, Progress, and Prosperity in a Time of Brilliant Technologies](./books/the-second-machine-age-work-progress-and-prosperity-in-a-time-of-brilliant-technologies.md)  
+- [📢🕸️ Network Propaganda: Manipulation, Disinformation, and Radicalization in American Politics](./books/network-propaganda-manipulation-disinformation-and-radicalization-in-american-politics.md)  
+- [ℹ️ Information: A Very Short Introduction](./books/information.md)  
   
   
-## [📺 Videos](./videos/index.md) (299)  
+## [📺 Videos](./videos/index.md) (301)  
+- [🔥🚫🏛️⬆️ Archivist fired by Trump launches a national effort to strengthen democracy](./videos/archivist-fired-by-trump-launches-a-national-effort-to-strengthen-democracy.md)  
 - [📺🎤👮‍♂️📰 Jimmy Kimmel & the FCC: Last Week Tonight with John Oliver (HBO)](./videos/jimmy-kimmel-the-fcc-last-week-tonight-with-john-oliver-hbo.md)  
+- [🤡🗣️📰🇺🇸 Jon Stewart's Post-Kimmel Primer on Free Speech in the Glorious Trump Era | The Daily Show](./videos/jon-stewarts-post-kimmel-primer-on-free-speech-in-the-glorious-trump-era-the-daily-show.md)  
+- [🙊🤐👑 Jimmy Kimmel's Suspension Was Always About Censorship (Just Ask Trump) | The Daily Show](./videos/jimmy-kimmels-suspension-was-always-about-censorship-just-ask-trump-the-daily-show.md)  
 - [🧠🌱⬆️ Lisa Lawson explores the neuroscience of adolescence in 'Thrive'](./videos/lisa-lawson-explores-the-neuroscience-of-adolescence-in-thrive.md)  
 - [👑⛓️🤔 Is This What Authoritarianism Looks Like? A Debate.](./videos/is-this-what-authoritarianism-looks-like-a-debate.md)  
-- [🔥🚫🏛️⬆️ Archivist fired by Trump launches a national effort to strengthen democracy](./videos/archivist-fired-by-trump-launches-a-national-effort-to-strengthen-democracy.md)  
 - [👩‍⚕️🗣️🙊👨 What ousted CDC director Monarez revealed about RFK Jr. during a Senate hearing](./videos/what-ousted-cdc-director-monarez-revealed-about-rfk-jr-during-a-senate-hearing.md)  
 - [👩‍⚖️🔒🗣️ Woman wrongfully detained in immigration raid describes what she endured](./videos/woman-wrongfully-detained-in-immigration-raid-describes-what-she-endured.md)  
 - [📜🇺🇸🏛️⚖️ The United States Constitution | Heather Cox Richardson](./videos/the-united-states-constitution-heather-cox-richardson.md)  
 - [📉❓⬇️💰 Federal Reserve cuts interest rates amid economic uncertainty](./videos/federal-reserve-cuts-interest-rates-amid-economic-uncertainty.md)  
-- [👴🚫📈 Why the Trump Administration Is Doubling Down as Momentum Grows Against Them | Explainer](./videos/why-the-trump-administration-is-doubling-down-as-momentum-grows-against-them-explainer.md)  
-- [✝️🏛️↔️ Why the Constitution Separates Church and State | Explainer](./videos/why-the-constitution-separates-church-and-state-explainer.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (82)  

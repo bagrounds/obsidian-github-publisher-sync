@@ -54,7 +54,7 @@ CTA: ❓ Question faith.
 ### ⚖️ Contrasting Books  
   
 * 👎 **The Case Against The Case for Christ by Robert M. Price:** 📖 This book offers a direct critique of Strobel's work, challenging its methodology, arguments, and conclusions. ⚠️ It addresses the perceived flaws in Strobel's investigation and provides alternative explanations.  
-* 🚫 **The God Delusion by Richard Dawkins:** 🔥 A prominent work of atheism, Dawkins' book presents a fiery argument against religious belief, dissecting perceived flaws in religious reasoning and the impact of faith, offering a stark contrast to apologetic works.  
+* **[❓✝️ The God Delusion](./the-god-delusion.md) by Richard Dawkins:** 🔥 A prominent work of atheism, Dawkins' book presents a fiery argument against religious belief, dissecting perceived flaws in religious reasoning and the impact of faith, offering a stark contrast to apologetic works.  
 * 🇮🇱 **Zealot: The Life and Times of Jesus of Nazareth by Reza Aslan:** 📜 Aslan provides a historical, sociological, and political perspective on Jesus, portraying him as a revolutionary Jewish figure rather than focusing on his divinity, offering an alternative historical interpretation.  
   
 ### 🎨 Creatively Related Books  

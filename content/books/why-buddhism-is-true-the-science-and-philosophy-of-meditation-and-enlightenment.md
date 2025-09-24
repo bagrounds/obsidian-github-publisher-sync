@@ -48,7 +48,7 @@ affiliate link: https://amzn.to/47eR6Ii
   
 📖 These recommendations offer perspectives that either uphold traditional religious or spiritual views, propose entirely different philosophical frameworks, or present a purely materialistic viewpoint that contrasts with Wright's attempt to bridge science and secular spirituality.  
   
-* ✝️ **Mere Christianity** by C.S. Lewis  
+* **[✝️ Mere Christianity](./mere-christianity.md)** by C.S. Lewis  
     🛡️ This classic work presents a robust defense of Christian belief, offering a stark contrast to Wright's secular exploration of spirituality. 🕊️ Lewis argues for the rationality and coherence of traditional religious faith, which stands in opposition to a framework that explicitly removes supernatural elements.  
 * 🤔 **Critique of Pure Reason** by Immanuel Kant  
     📜 A foundational work in Western philosophy, Kant's text explores the limits of human reason and knowledge, focusing on empirical experience and the structures of the mind without drawing on Eastern spiritual traditions or evolutionary psychology. 🧠 It provides a different intellectual tradition for understanding consciousness and reality.  

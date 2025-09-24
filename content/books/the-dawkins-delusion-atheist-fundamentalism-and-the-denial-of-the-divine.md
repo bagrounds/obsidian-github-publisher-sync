@@ -55,7 +55,7 @@ CTA: 💡 Reconsider belief.
 ➖ These recommendations represent the "new atheist" perspective, advocating for atheism and presenting arguments against the existence of God:  
   
 * **[❓✝️ The God Delusion](./the-god-delusion.md)** by Richard Dawkins. ❗This is the seminal work to which The Dawkins Delusion? is a direct response, outlining Dawkins' arguments that God is a delusion and that religion is harmful.  
-* 📖 **God Is Not Great: How Religion Poisons Everything** by Christopher Hitchens. 😠 A provocative and often polemical critique of organized religion, arguing that it is the source of much of the world's evil and irrationality.  
+* **[🙏🚫🌍 God Is Not Great: How Religion Poisons Everything](./god-is-not-great-how-religion-poisons-everything.md)** by Christopher Hitchens. 😠 A provocative and often polemical critique of organized religion, arguing that it is the source of much of the world's evil and irrationality.  
 * 📖 **Letter to a Christian Nation** by Sam Harris. ✉️ This concise book directly challenges the tenets of Christianity and highlights what Harris perceives as the dangers and irrationality of religious belief in the modern world.  
   
 ### ✨ Creatively Related Books  

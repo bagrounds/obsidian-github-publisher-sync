@@ -36,17 +36,17 @@ title: 🏡 Home
 - [🙏🚫🌍 God Is Not Great: How Religion Poisons Everything](./books/god-is-not-great-how-religion-poisons-everything.md)  
   
   
-## [📺 Videos](./videos/index.md) (305)  
-- [🤔💡🔄 The surprising habits of original thinkers](./videos/the-surprising-habits-of-original-thinkers-adam-grant-ted.md)  
-- [❌🤔💡 On being wrong | Kathryn Schulz](./videos/on-being-wrong-kathryn-schulz.md)  
+## [📺 Videos](./videos/index.md) (309)  
+- [👨🏿🗣️🏛️ President Barack Obama in Conversation with Steve Scully | Jefferson Educational Society](./videos/president-barack-obama-in-conversation-with-steve-scully-jefferson-educational-society.md)  
+- [🏛️🗣️📅 Politics Chat, September 25, 2025](./videos/politics-chat-september-25-2025.md)  
+- [✔️✔️✔️🧠 Use the Triple Check Method to jumpstart your brain | Anne-Laure Le Cunff](./videos/use-the-triple-check-method-to-jumpstart-your-brain-anne-laure-le-cunff.md)  
+- [📺🚫🗣️ Why some stations won't air Jimmy Kimmel's return to late night](./videos/why-some-stations-wont-air-jimmy-kimmels-return-to-late-night.md)  
 - [🗣️🛠️☮️ A simple tool for better communication during toxic conflict | Amanda Ripley](./videos/a-simple-tool-for-better-communication-during-toxic-conflict-amanda-ripley.md)  
+- [❌🤔💡 On being wrong | Kathryn Schulz](./videos/on-being-wrong-kathryn-schulz.md)  
+- [🤔💡🔄 The surprising habits of original thinkers](./videos/the-surprising-habits-of-original-thinkers-adam-grant-ted.md)  
 - [🧠⏱️⚡️📚 How to learn ANYTHING in less than 24 hours](./videos/how-to-learn-anything-in-less-than-24-hours.md)  
 - [🤔🧐📚💯🏆 Critical Thinking Book Recommendations – My Top 5 Must Reads](./videos/critical-thinking-book-recommendations-my-top-5-must-reads.md)  
 - [🔥🚫🏛️⬆️ Archivist fired by Trump launches a national effort to strengthen democracy](./videos/archivist-fired-by-trump-launches-a-national-effort-to-strengthen-democracy.md)  
-- [📺🎤👮‍♂️📰 Jimmy Kimmel & the FCC: Last Week Tonight with John Oliver (HBO)](./videos/jimmy-kimmel-the-fcc-last-week-tonight-with-john-oliver-hbo.md)  
-- [🤡🗣️📰🇺🇸 Jon Stewart's Post-Kimmel Primer on Free Speech in the Glorious Trump Era | The Daily Show](./videos/jon-stewarts-post-kimmel-primer-on-free-speech-in-the-glorious-trump-era-the-daily-show.md)  
-- [🙊🤐👑 Jimmy Kimmel's Suspension Was Always About Censorship (Just Ask Trump) | The Daily Show](./videos/jimmy-kimmels-suspension-was-always-about-censorship-just-ask-trump-the-daily-show.md)  
-- [🧠🌱⬆️ Lisa Lawson explores the neuroscience of adolescence in 'Thrive'](./videos/lisa-lawson-explores-the-neuroscience-of-adolescence-in-thrive.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (82)  

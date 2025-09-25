@@ -7,7 +7,7 @@ URL: https://bagrounds.org/videos
 backlinks: false
 ---
 [Home](../index.md)  
-# 📺 Videos (301)  
+# 📺 Videos (303)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
 - [❓💪🔬 12 Questions About Creatine with Stephen Cornish, PhD](./12-questions-about-creatine-w-stephen-cornish-phd.md)  
@@ -104,6 +104,7 @@ backlinks: false
 - [🥱💭✂️🎬🫡 How to Force Your Brain To Be Motivated (when you don’t feel like it)](./how-to-force-your-brain-to-be-motivated-when-you-dont-feel-like-it.md)  
 - [🧠💪🧘 How To Force Your Brain To Do Hard Things (Lotus Method)](./how-to-force-your-brain-to-do-hard-things-lotus-method.md)  
 - [🧠🛠️💪📈 How to hack your brain to crave doing hard things](./how-to-hack-your-brain-to-crave-doing-hard-things.md)  
+- [🧠⏱️⚡️📚 How to learn ANYTHING in less than 24 hours](./how-to-learn-anything-in-less-than-24-hours.md)  
 - [✨🎯🔒✅ How to make your dreams basically inevitable](./how-to-make-your-dreams-basically-inevitable.md)  
 - [🔋⚡😴🌞 How to never be tired again](./how-to-never-be-tired-again.md)  
 - [🇺🇸🛠️⏱️🏛️ How to Rebuild American Democracy in 20 Minutes](./how-to-rebuild-american-democracy-in-20-minutes.md)  
@@ -160,6 +161,7 @@ backlinks: false
 - [NPR and PBS heads face sharp questioning about federal funding during House hearing](./npr-and-pbs-heads-face-sharp-questioning-about-federal-funding-during-house-hearing.md)  
 - [🇺🇸🎂🎉🤔 Okay, But Why Do We Celebrate the 4th of July?](./okay-but-why-do-we-celebrate-the-4th-of-july.md)  
 - [💻🤖🏠📚 Ollama Course – Build AI Apps Locally](./ollama-course-build-ai-apps-locally.md)  
+- [❌🤔💡 On being wrong | Kathryn Schulz](./on-being-wrong-kathryn-schulz.md)  
 - [Optimizing Webservers for High Throughput and Low Latency | Dropbox](./optimizing-webservers-for-high-throughput-and-low-latency-dropbox.md)  
 - [➡️⚖️💪 Our work continues, without fear or favor](./our-work-continues-without-fear-or-favor.md)  
 - [🗺️♟️🤖🤝 Parables on the Power of Planning in AI: From Poker to Diplomacy: Noam Brown (OpenAI)](./parables-on-the-power-of-planning-in-ai-from-poker-to-diplomacy-noam-brown-openai.md)  

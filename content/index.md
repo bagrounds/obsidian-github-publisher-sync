@@ -24,6 +24,7 @@ title: 🏡 Home
   
   
 ## [📚 Books](./books/index.md) (640)  
+- [🤕👶 The Coddling of the American Mind: How Good Intentions and Bad Ideas Are Setting Up a Generation for Failure](./books/the-coddling-of-the-american-mind-how-good-intentions-and-bad-ideas-are-setting-up-a-generation-for-failure.md)  
 - [❌ Being Wrong: Adventures in the Margin of Error](./books/being-wrong-adventures-in-the-margin-of-error.md)  
 - [⏱️🚀 The First 20 Hours: How to Learn Anything... Fast](./books/the-first-20-hours-how-to-learn-anything-fast.md)  
 - [🧘🧠✅ Why Buddhism is True: The Science and Philosophy of Meditation and Enlightenment](./books/why-buddhism-is-true-the-science-and-philosophy-of-meditation-and-enlightenment.md)  
@@ -33,20 +34,19 @@ title: 🏡 Home
 - [✝️ Mere Christianity](./books/mere-christianity.md)  
 - [❓✝️ The Dawkins Delusion?: Atheist Fundamentalism and the Denial of the Divine](./books/the-dawkins-delusion-atheist-fundamentalism-and-the-denial-of-the-divine.md)  
 - [🙏🚫🌍 God Is Not Great: How Religion Poisons Everything](./books/god-is-not-great-how-religion-poisons-everything.md)  
-- [🤖📈 The Second Machine Age: Work, Progress, and Prosperity in a Time of Brilliant Technologies](./books/the-second-machine-age-work-progress-and-prosperity-in-a-time-of-brilliant-technologies.md)  
   
   
-## [📺 Videos](./videos/index.md) (303)  
-- [🤔🧐📚💯🏆 Critical Thinking Book Recommendations – My Top 5 Must Reads](./videos/critical-thinking-book-recommendations-my-top-5-must-reads.md)  
+## [📺 Videos](./videos/index.md) (305)  
+- [🤔💡🔄 The surprising habits of original thinkers](./videos/the-surprising-habits-of-original-thinkers-adam-grant-ted.md)  
 - [❌🤔💡 On being wrong | Kathryn Schulz](./videos/on-being-wrong-kathryn-schulz.md)  
+- [🗣️🛠️☮️ A simple tool for better communication during toxic conflict | Amanda Ripley](./videos/a-simple-tool-for-better-communication-during-toxic-conflict-amanda-ripley.md)  
 - [🧠⏱️⚡️📚 How to learn ANYTHING in less than 24 hours](./videos/how-to-learn-anything-in-less-than-24-hours.md)  
+- [🤔🧐📚💯🏆 Critical Thinking Book Recommendations – My Top 5 Must Reads](./videos/critical-thinking-book-recommendations-my-top-5-must-reads.md)  
 - [🔥🚫🏛️⬆️ Archivist fired by Trump launches a national effort to strengthen democracy](./videos/archivist-fired-by-trump-launches-a-national-effort-to-strengthen-democracy.md)  
 - [📺🎤👮‍♂️📰 Jimmy Kimmel & the FCC: Last Week Tonight with John Oliver (HBO)](./videos/jimmy-kimmel-the-fcc-last-week-tonight-with-john-oliver-hbo.md)  
 - [🤡🗣️📰🇺🇸 Jon Stewart's Post-Kimmel Primer on Free Speech in the Glorious Trump Era | The Daily Show](./videos/jon-stewarts-post-kimmel-primer-on-free-speech-in-the-glorious-trump-era-the-daily-show.md)  
 - [🙊🤐👑 Jimmy Kimmel's Suspension Was Always About Censorship (Just Ask Trump) | The Daily Show](./videos/jimmy-kimmels-suspension-was-always-about-censorship-just-ask-trump-the-daily-show.md)  
 - [🧠🌱⬆️ Lisa Lawson explores the neuroscience of adolescence in 'Thrive'](./videos/lisa-lawson-explores-the-neuroscience-of-adolescence-in-thrive.md)  
-- [👑⛓️🤔 Is This What Authoritarianism Looks Like? A Debate.](./videos/is-this-what-authoritarianism-looks-like-a-debate.md)  
-- [👩‍⚕️🗣️🙊👨 What ousted CDC director Monarez revealed about RFK Jr. during a Senate hearing](./videos/what-ousted-cdc-director-monarez-revealed-about-rfk-jr-during-a-senate-hearing.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (82)  

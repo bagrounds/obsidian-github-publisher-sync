@@ -7,7 +7,7 @@ URL: https://bagrounds.org/videos
 backlinks: false
 ---
 [Home](../index.md)  
-# 📺 Videos (303)  
+# 📺 Videos (305)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
 - [❓💪🔬 12 Questions About Creatine with Stephen Cornish, PhD](./12-questions-about-creatine-w-stephen-cornish-phd.md)  
@@ -42,6 +42,7 @@ backlinks: false
 - [🤖🧠🚫 Anthropic MCP + Ollama No Claude Needed Check it out](./anthropic-mcp-ollama-no-claude-needed-check-it-out.md)  
 - [🔥🚫🏛️⬆️ Archivist fired by Trump launches a national effort to strengthen democracy](./archivist-fired-by-trump-launches-a-national-effort-to-strengthen-democracy.md)  
 - [🇺🇸⚔️ Are We Headed for a Civil War? | Explainer](./are-we-headed-for-a-civil-war-explainer.md)  
+- [🗣️🛠️☮️ A simple tool for better communication during toxic conflict | Amanda Ripley](./a-simple-tool-for-better-communication-during-toxic-conflict-amanda-ripley.md)  
 - [👶🧩🧠➡️ A Simple Way to Learn Complex Skills](./a-simple-way-to-learn-complex-skills.md)  
 - [🧫❓❌📱 Biomedical Scientist Answers Pseudoscience Questions From Twitter | Tech Support | WIRED](./biomedical-scientist-answers-pseudoscience-questions-from-twitter-tech-support-wired.md)  
 - [⚠️📉😬 Brooks and Bouie on economic warning signs](./brooks-and-bouie-on-economic-warning-signs.md)  
@@ -236,6 +237,7 @@ backlinks: false
 - [🤫🔑👨‍💻 The Secret Skill Every Tech Leader Possesses](./the-secret-skill-every-tech-leader-possesses.md)  
 - [The security vulnerabilities of using Signal to discuss military operations](./the-security-vulnerabilities-of-using-signal-to-discuss-military-operations.md)  
 - [🛠️⚙️🚀🛡️ The simple system that makes you unstoppable](./the-simple-system-that-makes-you-unstoppable.md)  
+- [🤔💡🔄 The surprising habits of original thinkers](./the-surprising-habits-of-original-thinkers-adam-grant-ted.md)  
 - [📜🇺🇸🏛️⚖️ The United States Constitution | Heather Cox Richardson](./the-united-states-constitution-heather-cox-richardson.md)  
 - [📓 This Journal Keeps Me Productive (& Maybe You Too)](./this-journal-keeps-me-productive-and-maybe-you-too.md)  
 - [🌅🧠🚀♾️ This morning routine is scientifically proven to make you limitless](./this-morning-routine-is-scientifically-proven-to-make-you-limitless.md)  

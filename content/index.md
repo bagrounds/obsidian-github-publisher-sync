@@ -10,7 +10,9 @@ title: 🏡 Home
 📑 Notes, 💭 thoughts, and 🔗 Links.  
 ❔ What do 🫵 _you_ 🤔 think?  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (313)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (315)  
+- [2025-09-25 | ❌ Wrong 📺📚](./reflections/2025-09-25.md)  
+- [2025-09-24 | 🧠⚡ Learn Fast 📺📚](./reflections/2025-09-24.md)  
 - [2025-09-23 | 🎙️ Kimmel | 📺 Amusing | ✝️ Christ 📺📚](./reflections/2025-09-23.md)  
 - [2025-09-22 | 👤 Being | 🎙️ Kimmel 📚📺](./reflections/2025-09-22.md)  
 - [2025-09-21 | 🥸🌊 Hidden Spring 📚](./reflections/2025-09-21.md)  
@@ -19,11 +21,11 @@ title: 🏡 Home
 - [2025-09-18 | 🇺🇸 Authoritarian | 🌱 Thrive | 🔥 Grill 📺📰🔍🛍️](./reflections/2025-09-18.md)  
 - [2025-09-17 | 💰 Wealth | 👶🏼 Children | 📜 Constitution 📚📺](./reflections/2025-09-17.md)  
 - [2025-09-16 | 🧠 Memorizing | 🌝 Moonwalking | 🏫 Schooling 📺📚📰](./reflections/2025-09-16.md)  
-- [2025-09-15 | 🏃🏼‍♀️ Run | ❤️‍🩹 Recover | 👶🏼 Transform 📚📰📺](./reflections/2025-09-15.md)  
-- [2025-09-14 | 🇨🇦 Canada | 🥶 ICE | 🥴 Amnesia 📺📚](./reflections/2025-09-14.md)  
   
   
-## [📚 Books](./books/index.md) (638)  
+## [📚 Books](./books/index.md) (640)  
+- [❌ Being Wrong: Adventures in the Margin of Error](./books/being-wrong-adventures-in-the-margin-of-error.md)  
+- [⏱️🚀 The First 20 Hours: How to Learn Anything... Fast](./books/the-first-20-hours-how-to-learn-anything-fast.md)  
 - [🧘🧠✅ Why Buddhism is True: The Science and Philosophy of Meditation and Enlightenment](./books/why-buddhism-is-true-the-science-and-philosophy-of-meditation-and-enlightenment.md)  
 - [❓✝️ The God Delusion](./books/the-god-delusion.md)  
 - [📰❓✝️ The Case for Christ: A Journalist's Personal Investigation of the Evidence for Jesus](./books/the-case-for-christ-a-journalists-personal-investigation-of-the-evidence-for-jesus.md)  
@@ -32,11 +34,12 @@ title: 🏡 Home
 - [❓✝️ The Dawkins Delusion?: Atheist Fundamentalism and the Denial of the Divine](./books/the-dawkins-delusion-atheist-fundamentalism-and-the-denial-of-the-divine.md)  
 - [🙏🚫🌍 God Is Not Great: How Religion Poisons Everything](./books/god-is-not-great-how-religion-poisons-everything.md)  
 - [🤖📈 The Second Machine Age: Work, Progress, and Prosperity in a Time of Brilliant Technologies](./books/the-second-machine-age-work-progress-and-prosperity-in-a-time-of-brilliant-technologies.md)  
-- [📢🕸️ Network Propaganda: Manipulation, Disinformation, and Radicalization in American Politics](./books/network-propaganda-manipulation-disinformation-and-radicalization-in-american-politics.md)  
-- [ℹ️ Information: A Very Short Introduction](./books/information.md)  
   
   
-## [📺 Videos](./videos/index.md) (301)  
+## [📺 Videos](./videos/index.md) (303)  
+- [🤔🧐📚💯🏆 Critical Thinking Book Recommendations – My Top 5 Must Reads](./videos/critical-thinking-book-recommendations-my-top-5-must-reads.md)  
+- [❌🤔💡 On being wrong | Kathryn Schulz](./videos/on-being-wrong-kathryn-schulz.md)  
+- [🧠⏱️⚡️📚 How to learn ANYTHING in less than 24 hours](./videos/how-to-learn-anything-in-less-than-24-hours.md)  
 - [🔥🚫🏛️⬆️ Archivist fired by Trump launches a national effort to strengthen democracy](./videos/archivist-fired-by-trump-launches-a-national-effort-to-strengthen-democracy.md)  
 - [📺🎤👮‍♂️📰 Jimmy Kimmel & the FCC: Last Week Tonight with John Oliver (HBO)](./videos/jimmy-kimmel-the-fcc-last-week-tonight-with-john-oliver-hbo.md)  
 - [🤡🗣️📰🇺🇸 Jon Stewart's Post-Kimmel Primer on Free Speech in the Glorious Trump Era | The Daily Show](./videos/jon-stewarts-post-kimmel-primer-on-free-speech-in-the-glorious-trump-era-the-daily-show.md)  
@@ -44,9 +47,6 @@ title: 🏡 Home
 - [🧠🌱⬆️ Lisa Lawson explores the neuroscience of adolescence in 'Thrive'](./videos/lisa-lawson-explores-the-neuroscience-of-adolescence-in-thrive.md)  
 - [👑⛓️🤔 Is This What Authoritarianism Looks Like? A Debate.](./videos/is-this-what-authoritarianism-looks-like-a-debate.md)  
 - [👩‍⚕️🗣️🙊👨 What ousted CDC director Monarez revealed about RFK Jr. during a Senate hearing](./videos/what-ousted-cdc-director-monarez-revealed-about-rfk-jr-during-a-senate-hearing.md)  
-- [👩‍⚖️🔒🗣️ Woman wrongfully detained in immigration raid describes what she endured](./videos/woman-wrongfully-detained-in-immigration-raid-describes-what-she-endured.md)  
-- [📜🇺🇸🏛️⚖️ The United States Constitution | Heather Cox Richardson](./videos/the-united-states-constitution-heather-cox-richardson.md)  
-- [📉❓⬇️💰 Federal Reserve cuts interest rates amid economic uncertainty](./videos/federal-reserve-cuts-interest-rates-amid-economic-uncertainty.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (82)  

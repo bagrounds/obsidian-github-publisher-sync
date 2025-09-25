@@ -47,7 +47,7 @@ youtube: https://youtu.be/EM9B8Qin9ac
   
 ## 📚 Book Recommendations  
   
-* ✍️ A Promised Land: **Similar**—Provides the essential context for the speaker's own political philosophy, particularly the tension between working for change within the system and pushing against it.  
+* [➡️🌟🗺️ A Promised Land](../books/a-promised-land.md): **Similar**—Provides the essential context for the speaker's own political philosophy, particularly the tension between working for change within the system and pushing against it.  
 * [✊🏿 How To Be An Antiracist](../books/how-to-be-an-antiracist.md): **Contrasting**—A contrasting perspective that would reject the incremental, "game of addition" approach in favor of immediate, structural transformation to dismantle systemic hierarchy.  
 * [🗳️🕊️🇺🇸 Democracy in America](../books/democracy-in-america.md): **Similar**—Offers a timeless analysis of the American experiment, focusing on the power of **civil society** and the importance of **association** (which relates to the use of Meetup) to counteract a political system's potential failings.  
 * 📰 The Death of Truth: **Creatively Related**—Directly addresses the collapse of a "common sense of truth" and the undermining of fact-based political discourse due to a flood of disinformation and digital noise.  

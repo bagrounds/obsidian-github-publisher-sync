@@ -30,7 +30,7 @@ The video covers several issues raised by Tony Schwartz, the ghostwriter of *The
 This 🗣️ perspective is that of an insider who now has a strong ⚖️ critical view of his former associate. A contrasting perspective would be from those who believe Trump's use of "hyperbole" is a form of political rhetoric, not a disregard for the truth, and that his actions are a rejection of the political establishment. To get a better understanding of the issues discussed, one could explore topics such as the psychology of political leadership, the impact of ghostwriting on public perception, and the role of populist movements in modern politics.  
   
 ## 📚 Book Recommendations  
-* A Promised Land by Barack Obama chronicles a presidential journey from a different perspective, offering insight into the complexities of political life and leadership.  
+* [➡️🌟🗺️ A Promised Land](../books/a-promised-land.md) by Barack Obama chronicles a presidential journey from a different perspective, offering insight into the complexities of political life and leadership.  
 * The Audacity of Hope by Barack Obama explores the beliefs and values that shape American politics and provides a contrast in political philosophy.  
 * [🤔🐇🐢 Thinking, Fast and Slow](../books/thinking-fast-and-slow.md) by Daniel Kahneman delves into the two systems that drive the way we think, offering a psychological framework to better understand the behaviors discussed.  
 * [🤝🏛️ Team of Rivals: The Political Genius of Abraham Lincoln](../books/team-of-rivals-the-political-genius-of-abraham-lincoln.md) by Doris Kearns Goodwin provides a historical counterpoint, examining a leader who unified disparate personalities and viewpoints.

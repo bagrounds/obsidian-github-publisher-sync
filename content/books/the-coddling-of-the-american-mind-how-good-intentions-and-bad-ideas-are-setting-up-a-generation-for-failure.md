@@ -13,6 +13,7 @@ CTA: 🛡️ Fortify resilience.
   
 ## 📝🐒 Human Notes  
 - 🌐 [TheCoddling.com](https://www.thecoddling.com)  
+- [❌🤔💡 On being wrong | Kathryn Schulz](../videos/on-being-wrong-kathryn-schulz.md)  
   
 ## 📚 Book Report: The Coddling of the American Mind: How Good Intentions and Bad Ideas Are Setting Up a Generation for Failure  
   

@@ -4,9 +4,10 @@ aliases:
   - 0️⃣➡️1️⃣ Zero To One
 title: 0️⃣➡️1️⃣ Zero To One
 URL: https://bagrounds.org/books/zero-to-one
-Author: 
-tags: 
+Author:
+tags:
 affiliate link: https://amzn.to/3ZavKqL
+CTA: 🚀 Build the future.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 0️⃣➡️1️⃣ Zero To One  
@@ -66,11 +67,11 @@ affiliate link: https://amzn.to/3ZavKqL
 * **Quality of Information:** The book provides valuable insights into the mindset and strategies of successful entrepreneurs. However, it's important to remember that Thiel's perspectives are shaped by his own experiences and may not be suitable for all situations. 💭  
   
 ### Book Recommendations 📚  
-* **Best Alternate Book on the Same Topic:** "[The Lean Startup](./the-lean-startup.md)" by Eric Ries. While it focuses on incremental improvement, it provides a valuable counterpoint to Thiel's emphasis on radical innovation. 🔄  
-* **Best Tangentially Related Book:** "Good to Great" by Jim Collins. This book explores the characteristics of companies that achieve long-term success, providing a broader perspective on building enduring businesses. 📈  
-* **Best Diametrically Opposed Book:** "Blue Ocean Strategy" by W. Chan Kim and Renée Mauborgne. This book advocates for creating uncontested market space, but it emphasizes avoiding direct competition rather than creating monopolies. 🌊  
+* **Best Alternate Book on the Same Topic:** [📉🧪🚀 The Lean Startup: How Today's Entrepreneurs Use Continuous Innovation to Create Radically Successful Businesses](./the-lean-startup.md) by Eric Ries. While it focuses on incremental improvement, it provides a valuable counterpoint to Thiel's emphasis on radical innovation. 🔄  
+* **Best Tangentially Related Book:** [👍➡️👍👍 Good to Great: Why Some Companies Make the Leap...And Others Don't](./good-to-great.md) by Jim Collins. This book explores the characteristics of companies that achieve long-term success, providing a broader perspective on building enduring businesses. 📈  
+* **Best Diametrically Opposed Book:** [🌊📈 Blue Ocean Strategy: How to Create Uncontested Market Space and Make the Competition Irrelevant](./blue-ocean-strategy-how-to-create-uncontested-market-space-and-make-the-competition-irrelevant.md) by W. Chan Kim and Renée Mauborgne. This book advocates for creating uncontested market space, but it emphasizes avoiding direct competition rather than creating monopolies. 🌊  
 * **Best Fiction Book That Incorporates Related Ideas:** "Atlas Shrugged" by Ayn Rand. This novel explores the role of innovation and individual achievement in society, reflecting some of Thiel's philosophical views. 🏛️  
-* **Best More General Book:** "[Sapiens: A Brief History of Humankind](./sapiens-a-brief-history-of-humankind.md)" by Yuval Noah Harari. This book provides a broad overview of human history and the forces that have shaped our world, offering a macro-level perspective on innovation and progress. 🌍  
+* **Best More General Book:** [📜🌍⏳ Sapiens: A Brief History of Humankind](./sapiens-a-brief-history-of-humankind.md) by Yuval Noah Harari. This book provides a broad overview of human history and the forces that have shaped our world, offering a macro-level perspective on innovation and progress. 🌍  
 * **Best More Specific Book:** "Venture Deals: Be Smarter Than Your Lawyer and Venture Capitalist" by Brad Feld and Jason Mendelson. This book gives a deep dive into the specifics of venture capital deals, a key area of focus for Thiel. 🤝  
 * **Best More Rigorous Book:** "Innovation and Its Discontents: How Our Broken Patent System Is Endangering Innovation and Progress, and What to Do About It" by Adam B. Jaffe and Josh Lerner. This book provides a much more academically rigorous look at the process of innovation. 📜  
 * **Best More Accessible Book:** "The Hard Thing About Hard Things" by Ben Horowitz. This book offers practical advice and candid insights into the challenges of building and running a startup, presented in a more accessible and relatable style. 🗣️  

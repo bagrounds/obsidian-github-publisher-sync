@@ -10,7 +10,7 @@ Channel: SpoonFedStudy
 tags:
 youtube: https://youtu.be/TGIF12opfbg
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](../index.md) > [Videos](./index.md) | [🥄👶📚 SpoonFedStudy](../topics/spoonfedstudy.md)  
 # 🧠⏱️⚡️📚 How to learn ANYTHING in less than 24 hours  
 ![How to learn ANYTHING in less than 24 hours](https://youtu.be/TGIF12opfbg)  
   

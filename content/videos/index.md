@@ -7,7 +7,7 @@ URL: https://bagrounds.org/videos
 backlinks: false
 ---
 [Home](../index.md)  
-# 📺 Videos (309)  
+# 📺 Videos (310)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
 - [❓💪🔬 12 Questions About Creatine with Stephen Cornish, PhD](./12-questions-about-creatine-w-stephen-cornish-phd.md)  
@@ -210,6 +210,7 @@ backlinks: false
 - [❓🛠️👨‍🎓 The Black Box Effect: How To Learn ANY Skill Quickly](./the-black-box-effect-how-to-learn-any-skill-quickly.md)  
 - [The concept that changes how you learn forever.](./the-concept-that-changes-how-you-learn-forever.md)  
 - [The conditions inside the infamous El Salvador prison where deported migrants are held](./the-conditions-inside-the-infamous-el-salvador-prison-where-deported-migrants-are-held.md)  
+- [👨🏿🗣️🏛️ The Connecticut Forum: President Barack Obama in Conversation with Heather Cox Richardson](./president-barack-obama-in-conversation-with-heather-cox-richardson-the-connecticut-forum.md)  
 - [📜🇺🇸🗽➡️ The Declaration of Independence | Journey to American Democracy](./the-declaration-of-independence-journey-to-american-democracy.md)  
 - [🔋📈🧘🗣️ The Energy Project | Tony Schwartz | Talks at Google](./the-energy-project-tony-schwartz-talks-at-google.md)  
 - [✏️🗂️⏱️✨ The Excalidraw Obsidian Showcase 57 key features in just 17 minutes](../the-excalidraw-obsidian-showcase-57-key-features-in-just-17-minutes.md)  

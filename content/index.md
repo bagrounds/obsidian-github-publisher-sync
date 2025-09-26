@@ -11,7 +11,7 @@ title: 🏡 Home
 ❔ What do 🫵 _you_ 🤔 think?  
   
 ## [🪞 Reflections](./reflections/index.md) ~ Blog (315)  
-- [2025-09-25 | ❌ Wrong | ☣️ Toxic | 🔰 Original 📺📚📰🔍](./reflections/2025-09-25.md)  
+- [2025-09-25 | ❌ Wrong | ☣️ Toxic | 🔰 Original | 🌟 Promised 📺📚📰🔍](./reflections/2025-09-25.md)  
 - [2025-09-24 | 🧠⚡ Learn Fast 📺📚](./reflections/2025-09-24.md)  
 - [2025-09-23 | 🎙️ Kimmel | 📺 Amusing | ✝️ Christ 📺📚](./reflections/2025-09-23.md)  
 - [2025-09-22 | 👤 Being | 🎙️ Kimmel 📚📺](./reflections/2025-09-22.md)  
@@ -24,8 +24,8 @@ title: 🏡 Home
   
   
 ## [📚 Books](./books/index.md) (641)  
-- [➡️🌟🗺️ A Promised Land](./books/a-promised-land.md)  
 - [🤕👶 The Coddling of the American Mind: How Good Intentions and Bad Ideas Are Setting Up a Generation for Failure](./books/the-coddling-of-the-american-mind-how-good-intentions-and-bad-ideas-are-setting-up-a-generation-for-failure.md)  
+- [➡️🌟🗺️ A Promised Land](./books/a-promised-land.md)  
 - [❌ Being Wrong: Adventures in the Margin of Error](./books/being-wrong-adventures-in-the-margin-of-error.md)  
 - [⏱️🚀 The First 20 Hours: How to Learn Anything... Fast](./books/the-first-20-hours-how-to-learn-anything-fast.md)  
 - [🧘🧠✅ Why Buddhism is True: The Science and Philosophy of Meditation and Enlightenment](./books/why-buddhism-is-true-the-science-and-philosophy-of-meditation-and-enlightenment.md)  

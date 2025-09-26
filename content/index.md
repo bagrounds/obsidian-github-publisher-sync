@@ -11,7 +11,7 @@ title: 🏡 Home
 ❔ What do 🫵 _you_ 🤔 think?  
   
 ## [🪞 Reflections](./reflections/index.md) ~ Blog (315)  
-- [2025-09-25 | ❌ Wrong 📺📚](./reflections/2025-09-25.md)  
+- [2025-09-25 | ❌ Wrong | ☣️ Toxic | 🔰 Original 📺📚📰🔍](./reflections/2025-09-25.md)  
 - [2025-09-24 | 🧠⚡ Learn Fast 📺📚](./reflections/2025-09-24.md)  
 - [2025-09-23 | 🎙️ Kimmel | 📺 Amusing | ✝️ Christ 📺📚](./reflections/2025-09-23.md)  
 - [2025-09-22 | 👤 Being | 🎙️ Kimmel 📚📺](./reflections/2025-09-22.md)  
@@ -23,7 +23,8 @@ title: 🏡 Home
 - [2025-09-16 | 🧠 Memorizing | 🌝 Moonwalking | 🏫 Schooling 📺📚📰](./reflections/2025-09-16.md)  
   
   
-## [📚 Books](./books/index.md) (640)  
+## [📚 Books](./books/index.md) (641)  
+- [➡️🌟🗺️ A Promised Land](./books/a-promised-land.md)  
 - [🤕👶 The Coddling of the American Mind: How Good Intentions and Bad Ideas Are Setting Up a Generation for Failure](./books/the-coddling-of-the-american-mind-how-good-intentions-and-bad-ideas-are-setting-up-a-generation-for-failure.md)  
 - [❌ Being Wrong: Adventures in the Margin of Error](./books/being-wrong-adventures-in-the-margin-of-error.md)  
 - [⏱️🚀 The First 20 Hours: How to Learn Anything... Fast](./books/the-first-20-hours-how-to-learn-anything-fast.md)  
@@ -33,10 +34,11 @@ title: 🏡 Home
 - [🧑‍🏫🆚⛪ The Case Against The Case For Christ: A New Testament Scholar Refutes the Reverend Lee Strobel](./books/the-case-against-the-case-for-christ-a-new-testament-scholar-refutes-the-reverend-lee-strobel.md)  
 - [✝️ Mere Christianity](./books/mere-christianity.md)  
 - [❓✝️ The Dawkins Delusion?: Atheist Fundamentalism and the Denial of the Divine](./books/the-dawkins-delusion-atheist-fundamentalism-and-the-denial-of-the-divine.md)  
-- [🙏🚫🌍 God Is Not Great: How Religion Poisons Everything](./books/god-is-not-great-how-religion-poisons-everything.md)  
   
   
-## [📺 Videos](./videos/index.md) (309)  
+## [📺 Videos](./videos/index.md) (310)  
+- [🤥📢👨‍💼 Tony Schwartz: The Truth About Trump | Oxford Union Q&A](./videos/tony-schwartz-the-truth-about-trump-oxford-union-q-a.md)  
+- [👨🏿🗣️🏛️ The Connecticut Forum: President Barack Obama in Conversation with Heather Cox Richardson](./videos/president-barack-obama-in-conversation-with-heather-cox-richardson-the-connecticut-forum.md)  
 - [👨🏿🗣️🏛️ President Barack Obama in Conversation with Steve Scully | Jefferson Educational Society](./videos/president-barack-obama-in-conversation-with-steve-scully-jefferson-educational-society.md)  
 - [🏛️🗣️📅 Politics Chat, September 25, 2025](./videos/politics-chat-september-25-2025.md)  
 - [✔️✔️✔️🧠 Use the Triple Check Method to jumpstart your brain | Anne-Laure Le Cunff](./videos/use-the-triple-check-method-to-jumpstart-your-brain-anne-laure-le-cunff.md)  
@@ -45,8 +47,6 @@ title: 🏡 Home
 - [❌🤔💡 On being wrong | Kathryn Schulz](./videos/on-being-wrong-kathryn-schulz.md)  
 - [🤔💡🔄 The surprising habits of original thinkers](./videos/the-surprising-habits-of-original-thinkers-adam-grant-ted.md)  
 - [🧠⏱️⚡️📚 How to learn ANYTHING in less than 24 hours](./videos/how-to-learn-anything-in-less-than-24-hours.md)  
-- [🤔🧐📚💯🏆 Critical Thinking Book Recommendations – My Top 5 Must Reads](./videos/critical-thinking-book-recommendations-my-top-5-must-reads.md)  
-- [🔥🚫🏛️⬆️ Archivist fired by Trump launches a national effort to strengthen democracy](./videos/archivist-fired-by-trump-launches-a-national-effort-to-strengthen-democracy.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (82)  

@@ -4,9 +4,10 @@ aliases:
   - "🧠💥📈💡🎆 Dynamical Systems in Neuroscience: The Geometry of Excitability and Bursting"
 title: "🧠💥📈💡🎆 Dynamical Systems in Neuroscience: The Geometry of Excitability and Bursting"
 URL: https://bagrounds.org/books/dynamical-systems-in-neuroscience
-Author: 
-tags: 
+Author:
+tags:
 affiliate link: https://amzn.to/4dHj3cM
+CTA: 🧠 Explore brain rhythms.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧠💥📈💡🎆 Dynamical Systems in Neuroscience: The Geometry of Excitability and Bursting  
@@ -81,7 +82,7 @@ The book delves into the following topics, employing various methods and discuss
   
 * 🏆 **Best Alternate Book on the Same Topic:** 🧠 *Theoretical Neuroscience: Computational and Mathematical Modeling of Neural Systems* by Peter Dayan and L.F. Abbott. A classic 🥇 and comprehensive 📚 textbook, though perhaps more mathematically ➕➖✖️➗ demanding.  
 * 🛤️ **Best Tangentially Related Book:** 🧠 *Principles of Neural Science* by Eric R. Kandel, James H. Schwartz, Thomas M. Jessell, Steven J. Siegelbaum, and A.J. Hudspeth. Provides a broad 🔭 overview of neuroscience 🧠, covering topics from molecular biology 🧬 to cognition 🤔.  
-* 🔄 **Best Diametrically Opposed Book:** 🤯 *How Emotions Are Made: The Secret Life of the Brain* by Lisa Feldman Barrett. While not directly opposed 🙅‍♀️, it offers a constructivist 🏗️ view of emotions 🥰😡😭, challenging purely mechanistic ⚙️ interpretations.  
+* 🔄 **Best Diametrically Opposed Book:** [🧠🤔 How Emotions Are Made: The Secret Life of the Brain](./how-emotions-are-made-the-secret-life-of-the-brain.md) by Lisa Feldman Barrett. While not directly opposed 🙅‍♀️, it offers a constructivist 🏗️ view of emotions 🥰😡😭, challenging purely mechanistic ⚙️ interpretations.  
 * 📖 **Best Fiction Book That Incorporates Related Ideas:** 🏙️ *Permutation City* by Greg Egan. Explores the philosophical ❓ implications of computational simulations 💻 and consciousness 🤔.  
 * 🌍 **Best Book That Is More General:** 🧮 *[Nonlinear Dynamics and Chaos](./nonlinear-dynamics-and-chaos.md): With Applications to Physics, Biology, Chemistry, and Engineering* by Steven H. Strogatz. Provides a broader 🔍 introduction to dynamical systems theory ⚛️, applicable to various fields 🔬.  
 * 🎯 **Best Book That Is More Specific:** 🔎 Any focused review 📄 in *Scholarpedia*, such as the review of the Hodgkin-Huxley model 🌊 or the Wilson-Cowan model 🧑‍🤝‍🧑.  

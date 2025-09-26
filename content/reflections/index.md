@@ -8,7 +8,7 @@ backlinks: false
 ---
 [Home](../index.md)  
 # 🪞 Reflections (315)  
-- [2025-09-25 | ❌ Wrong | ☣️ Toxic | 🔰 Original 📺📚📰🔍](./2025-09-25.md)  
+- [2025-09-25 | ❌ Wrong | ☣️ Toxic | 🔰 Original | 🌟 Promised 📺📚📰🔍](./2025-09-25.md)  
 - [2025-09-24 | 🧠⚡ Learn Fast 📺📚](./2025-09-24.md)  
 - [2025-09-23 | 🎙️ Kimmel | 📺 Amusing | ✝️ Christ 📺📚](./2025-09-23.md)  
 - [2025-09-22 | 👤 Being | 🎙️ Kimmel 📚📺](./2025-09-22.md)  

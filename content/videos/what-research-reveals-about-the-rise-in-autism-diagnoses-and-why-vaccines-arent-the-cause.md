@@ -4,10 +4,10 @@ aliases:
   - 🥼🧠🚫💉 What research reveals about the rise in autism diagnoses and why vaccines aren't the cause
 title: 🥼🧠🚫💉 What research reveals about the rise in autism diagnoses and why vaccines aren't the cause
 URL: https://youtu.be/LVopbRZA9_Y
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: PBS NewsHour
-tags: 
+tags:
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 🥼🧠🚫💉 What research reveals about the rise in autism diagnoses and why vaccines aren't the cause  
@@ -33,7 +33,7 @@ tags:
   
 ### 🧩 Autism Spectrum Disorder  
   
-- 🗣️ **The Reason I Jump: One Boy's Voice from the Silence of Autism** by Naoki Higashida.  
+- 🗣️ **[👦🗣️ The Reason I Jump: The Inner Voice of a Thirteen-Year-Old Boy with Autism](../books/the-reason-i-jump-the-inner-voice-of-a-thirteen-year-old-boy-with-autism.md)** by Naoki Higashida.  
     - ✍️ **Description:** This book offers a unique 🌟 and intimate ❤️ perspective on autism from the viewpoint of a non-speaking 🙊 autistic teenager. Through a question ❓-and-answer 🗣️ format, Higashida eloquently describes his inner thoughts 🤔, feelings 🥰, and sensory 🖐️ experiences, providing profound 🧠 insights into a different way of perceiving 👀 the world 🌍.  
     - 🎓 **Credentials:** Naoki Higashida is a non-speaking 🙊 individual with autism. The book was translated 🌐 from Japanese 🇯🇵 and gained international 🌎 acclaim for its powerful 💪 portrayal of the autistic experience.  
     - 💡 **Relevance:** It offers a valuable 🥇 first-hand 🙋 account that can help neurotypical individuals better understand 🤔 the internal world 🌌 of someone with autism, fostering empathy 🤗 and breaking down 🧱 misconceptions.  

@@ -5,6 +5,7 @@ aliases:
 URL: https://bagrounds.org/books/the-developing-mind-how-relationships-and-the-brain-interact-to-shape-who-we-are
 share: true
 affiliate link: https://amzn.to/3FFXOeQ
+CTA: 🧠 Understand connections.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧠🧑‍🤝‍🧑 The Developing Mind: How Relationships and the Brain Interact to Shape Who We Are  
@@ -64,7 +65,7 @@ affiliate link: https://amzn.to/3FFXOeQ
 2. 🧠 **The Mindful Brain: Reflection and Attunement in the Cultivation of Well-Being** by Daniel J. Siegel: A direct follow-up to *The Developing Mind*, focusing specifically on the neuroscience of mindfulness.  
 3. 🫂 **Social: Why Our Brains Are Wired to Connect** by Matthew D. Lieberman: Explores the neuroscience of social connection, reinforcing the "interpersonal" aspect of IPNB from a social neuroscience perspective.  
 4. 💔 **Lost Connections: Uncovering the Real Causes of Depression – and the Unexpected Solutions** by Johann Hari: Argues that disconnection (from meaningful work, people, values, etc.) is a primary driver of depression and anxiety, resonating with the IPNB focus on relationships and integration for well-being.  
-5. 🤔 **How Emotions Are Made: The Secret Life of the Brain** by Lisa Feldman Barrett: Offers a theory of constructed emotion, providing a different but related perspective on how the brain creates emotional experiences.  
+5. **[🧠🤔 How Emotions Are Made: The Secret Life of the Brain](./how-emotions-are-made-the-secret-life-of-the-brain.md)** by Lisa Feldman Barrett: Offers a theory of constructed emotion, providing a different but related perspective on how the brain creates emotional experiences.  
 6. 💖 **Unconditional Parenting: Moving from Rewards and Punishments to Love and Reason** by Alfie Kohn: Advocates for parenting based on children's needs and understanding, challenging traditional discipline methods, which aligns with the attuned relational approach implicit in IPNB.  
 7. 🎉 **Thank & Grow Rich: A 30-Day Experiment in Shameless Gratitude and Unabashed Joy** by Pam Grout: Explores the power of mindset and gratitude, touching on themes of subjective experience shaping reality, albeit from a less neurobiological perspective.  
   

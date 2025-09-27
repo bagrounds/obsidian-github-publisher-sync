@@ -15,7 +15,7 @@ youtube: https://youtu.be/K_RSZC0s8a4
 ![The Science Behind Dramatically Better Conversations | Charles Duhigg | TED](https://youtu.be/K_RSZC0s8a4)  
   
 ## 📝🐒 Human Notes  
-- Supercommunicators  
+- [🗣️🔗 Supercommunicators: How to Unlock the Secret Language of Connection](../books/supercommunicators-how-to-unlock-the-secret-language-of-connection.md)  
   
 ## 🤖 AI Summary  
 🤯 Research indicates that discussions are not one conversation but contain many, tending to fall into three buckets \[[02:07](http://www.youtube.com/watch?v=K_RSZC0s8a4&t=127)].  

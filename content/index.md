@@ -10,7 +10,8 @@ title: 🏡 Home
 📑 Notes, 💭 thoughts, and 🔗 Links.  
 ❔ What do 🫵 _you_ 🤔 think?  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (315)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (316)  
+- [2025-09-26 | ♾️ Autism | 🧠 Emotion | 🇺🇸 Promise 📺📚📰](./reflections/2025-09-26.md)  
 - [2025-09-25 | ❌ Wrong | ☣️ Toxic | 🔰 Original | 🌟 Promised 📺📚📰🔍](./reflections/2025-09-25.md)  
 - [2025-09-24 | 🧠⚡ Learn Fast 📺📚](./reflections/2025-09-24.md)  
 - [2025-09-23 | 🎙️ Kimmel | 📺 Amusing | ✝️ Christ 📺📚](./reflections/2025-09-23.md)  
@@ -20,33 +21,32 @@ title: 🏡 Home
 - [2025-09-19 | 🏕️ Camping 📚](./reflections/2025-09-19.md)  
 - [2025-09-18 | 🇺🇸 Authoritarian | 🌱 Thrive | 🔥 Grill 📺📰🔍🛍️](./reflections/2025-09-18.md)  
 - [2025-09-17 | 💰 Wealth | 👶🏼 Children | 📜 Constitution 📚📺](./reflections/2025-09-17.md)  
-- [2025-09-16 | 🧠 Memorizing | 🌝 Moonwalking | 🏫 Schooling 📺📚📰](./reflections/2025-09-16.md)  
   
   
-## [📚 Books](./books/index.md) (641)  
+## [📚 Books](./books/index.md) (643)  
+- [🧠💥📈💡🎆 Dynamical Systems in Neuroscience: The Geometry of Excitability and Bursting](./books/dynamical-systems-in-neuroscience.md)  
+- [🧠🧑‍🤝‍🧑 The Developing Mind: How Relationships and the Brain Interact to Shape Who We Are](./books/the-developing-mind-how-relationships-and-the-brain-interact-to-shape-who-we-are.md)  
+- [🧠🤔 How Emotions Are Made: The Secret Life of the Brain](./books/how-emotions-are-made-the-secret-life-of-the-brain.md)  
+- [👦🗣️ The Reason I Jump: The Inner Voice of a Thirteen-Year-Old Boy with Autism](./books/the-reason-i-jump-the-inner-voice-of-a-thirteen-year-old-boy-with-autism.md)  
 - [🤕👶 The Coddling of the American Mind: How Good Intentions and Bad Ideas Are Setting Up a Generation for Failure](./books/the-coddling-of-the-american-mind-how-good-intentions-and-bad-ideas-are-setting-up-a-generation-for-failure.md)  
 - [➡️🌟🗺️ A Promised Land](./books/a-promised-land.md)  
 - [❌ Being Wrong: Adventures in the Margin of Error](./books/being-wrong-adventures-in-the-margin-of-error.md)  
 - [⏱️🚀 The First 20 Hours: How to Learn Anything... Fast](./books/the-first-20-hours-how-to-learn-anything-fast.md)  
 - [🧘🧠✅ Why Buddhism is True: The Science and Philosophy of Meditation and Enlightenment](./books/why-buddhism-is-true-the-science-and-philosophy-of-meditation-and-enlightenment.md)  
 - [❓✝️ The God Delusion](./books/the-god-delusion.md)  
-- [📰❓✝️ The Case for Christ: A Journalist's Personal Investigation of the Evidence for Jesus](./books/the-case-for-christ-a-journalists-personal-investigation-of-the-evidence-for-jesus.md)  
-- [🧑‍🏫🆚⛪ The Case Against The Case For Christ: A New Testament Scholar Refutes the Reverend Lee Strobel](./books/the-case-against-the-case-for-christ-a-new-testament-scholar-refutes-the-reverend-lee-strobel.md)  
-- [✝️ Mere Christianity](./books/mere-christianity.md)  
-- [❓✝️ The Dawkins Delusion?: Atheist Fundamentalism and the Denial of the Divine](./books/the-dawkins-delusion-atheist-fundamentalism-and-the-denial-of-the-divine.md)  
   
   
-## [📺 Videos](./videos/index.md) (310)  
+## [📺 Videos](./videos/index.md) (313)  
+- [🤔🤯❤️📖 How to Understand Emotions | Dr. Lisa Feldman Barrett](./videos/how-to-understand-emotions-dr-lisa-feldman-barrett.md)  
+- [🧩🗣️👎 Autism advocate calls Trump's statements on the condition 'stigmatizing'](./videos/autism-advocate-calls-trumps-statements-on-the-condition-stigmatizing.md)  
+- [🧠⚙️🛠️💡 You aren't at the mercy of your emotions -- your brain creates them | Lisa Feldman Barrett](./videos/you-arent-at-the-mercy-of-your-emotions-your-brain-creates-them-lisa-feldman-barrett.md)  
+- [🥼🧠🚫💉 What research reveals about the rise in autism diagnoses and why vaccines aren't the cause](./videos/what-research-reveals-about-the-rise-in-autism-diagnoses-and-why-vaccines-arent-the-cause.md)  
 - [🤥📢👨‍💼 Tony Schwartz: The Truth About Trump | Oxford Union Q&A](./videos/tony-schwartz-the-truth-about-trump-oxford-union-q-a.md)  
 - [👨🏿🗣️🏛️ The Connecticut Forum: President Barack Obama in Conversation with Heather Cox Richardson](./videos/president-barack-obama-in-conversation-with-heather-cox-richardson-the-connecticut-forum.md)  
 - [👨🏿🗣️🏛️ President Barack Obama in Conversation with Steve Scully | Jefferson Educational Society](./videos/president-barack-obama-in-conversation-with-steve-scully-jefferson-educational-society.md)  
 - [🏛️🗣️📅 Politics Chat, September 25, 2025](./videos/politics-chat-september-25-2025.md)  
 - [✔️✔️✔️🧠 Use the Triple Check Method to jumpstart your brain | Anne-Laure Le Cunff](./videos/use-the-triple-check-method-to-jumpstart-your-brain-anne-laure-le-cunff.md)  
 - [📺🚫🗣️ Why some stations won't air Jimmy Kimmel's return to late night](./videos/why-some-stations-wont-air-jimmy-kimmels-return-to-late-night.md)  
-- [🗣️🛠️☮️ A simple tool for better communication during toxic conflict | Amanda Ripley](./videos/a-simple-tool-for-better-communication-during-toxic-conflict-amanda-ripley.md)  
-- [❌🤔💡 On being wrong | Kathryn Schulz](./videos/on-being-wrong-kathryn-schulz.md)  
-- [🤔💡🔄 The surprising habits of original thinkers](./videos/the-surprising-habits-of-original-thinkers-adam-grant-ted.md)  
-- [🧠⏱️⚡️📚 How to learn ANYTHING in less than 24 hours](./videos/how-to-learn-anything-in-less-than-24-hours.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (82)  

@@ -56,7 +56,7 @@ CTA: 🔬 Question everything.
 * 🤔 **Michael Shermer - *Why People Believe Weird Things: Pseudoscience, Superstition, and Other Confusions of Our Time***: Explores the psychology behind belief in the irrational and provides case studies of various pseudoscientific claims.  
 * 🕵️‍♀️ **Naomi Oreskes & Erik M. Conway - [💰🤥 Merchants of Doubt](./merchants-of-doubt.md)**: Investigates how a small group of politically connected scientists obscured the truth on issues like tobacco smoke, acid rain, and global warming, highlighting organized science denial.  
 * 🧠 **Steven Novella (and the SGU team) - *The Skeptics' Guide to the Universe: How to Know What's Really Real in a World Increasingly Full of Fake***: A practical guide to critical thinking, identifying logical fallacies, and understanding cognitive biases, based on the popular podcast.  
-* 📉 **Ben Goldacre - *Bad Science***: Focuses specifically on the misrepresentation and misuse of science and statistics, particularly in journalism and by the pharmaceutical industry.  
+* 📉 **Ben Goldacre - [🧪👎 Bad Science: Quacks, Hacks, and Big Pharma Flacks](./bad-science-quacks-hacks-and-big-pharma-flacks.md)**: Focuses specifically on the misrepresentation and misuse of science and statistics, particularly in journalism and by the pharmaceutical industry.  
 * 🗣️ **Lee McIntyre - *How to Talk to a Science Denier***: McIntyre's follow-up book, offering practical strategies for engaging with those who reject scientific consensus, based on his concept of the scientific attitude.  
   
 ## 🆚 Contrasting Perspectives (Philosophy/Sociology of Science Critiques)  

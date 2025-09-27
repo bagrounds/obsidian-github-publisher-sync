@@ -3,11 +3,11 @@ share: true
 aliases:
   - 🇺🇸📰🗓️ PBS News Weekend full episode, June 22, 2025
 title: 🇺🇸📰🗓️ PBS News Weekend full episode, June 22, 2025
-URL: https://bagrounds.org/videos/
-Author: 
-Platform: 
+URL: https://bagrounds.org/videos/pbs-news-weekend-full-episode-june-22-2025
+Author:
+Platform:
 Channel: PBS NewsHour
-tags: 
+tags:
 youtube: https://youtu.be/hpQsRoQtQiw
 ---
 [Home](../index.md) > [Videos](./index.md)  
@@ -34,7 +34,7 @@ youtube: https://youtu.be/hpQsRoQtQiw
   
 * 🇵🇸💔 **For the humanitarian crisis in Gaza and the Israeli-Palestinian conflict:**  
     * 🇵🇸🕊️ "**Gaza: An Inquest into Its Martyrdom**" by Norman G. Finkelstein. This book provides a critical examination 🧐 of the situation in Gaza.  
-    * 🇵🇸⏳ "**The Hundred Years' War on Palestine: A History of Settler Colonialism and Resistance, 1917–2017**" by Rashid Khalidi. This work offers a broad historical overview 📜 of the conflict.  
+    * **[🇮🇱⏳ The Hundred Years' War on Palestine: A History of Settler Colonialism and Resistance, 1917–2017](../books/the-hundred-years-war-on-palestine-a-history-of-settler-colonialism-and-resistance-1917-2017.md)** by Rashid Khalidi. This work offers a broad historical overview 📜 of the conflict.  
     * 🇵🇸🎨 "**Palestine**" by Joe Sacco. A graphic novel ✍️ that provides an immersive, firsthand account 🚶‍♀️ of daily life and injustices ⚖️ faced by Palestinians.  
   
 * 🔥🌍 **For extreme heat and climate change:**  

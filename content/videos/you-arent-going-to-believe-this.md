@@ -4,10 +4,10 @@ aliases:
   - 🤯😲😳 You Aren't Going to Believe This
 title: 🤯😲😳 You Aren't Going to Believe This
 URL: https://bagrounds.org/videos/you-arent-going-to-believe-this
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: Sen. Adam Schiff
-tags: 
+tags:
 youtube: https://youtu.be/HoaTV7rd1LQ
 ---
 [Home](../index.md) > [Videos](./index.md)  
@@ -31,7 +31,7 @@ Senator Adam Schiff discusses several critical issues regarding the changes and 
     * ⚖️ *Justice on Trial: Storming the Citadel and Navigating the Trump Presidency* by Andrew McCabe  
     * 👔 *Confidence Men: Wall Street, Washington, and the Education of a President* by Ron Suskind  
 * **🕵️ On the FBI and Law Enforcement:**  
-    * 🗣️ *A Higher Loyalty: Truth, Lies, and Leadership* by James Comey  
+    * [⬆️🤥🏛️ A Higher Loyalty: Truth, Lies, and Leadership](../books/a-higher-loyalty-truth-lies-and-leadership.md) by James Comey  
     * 🤫 *The Bureau: The Secret History of the FBI* by Ronald Kessler  
 * **💼 On White-Collar Crime and Corporate Prosecutions:**  
     * 🩸 *Bad Blood: Secrets and Lies in a Silicon Valley Startup* by John Carreyrou  

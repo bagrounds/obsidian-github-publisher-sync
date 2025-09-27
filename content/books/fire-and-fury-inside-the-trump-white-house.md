@@ -5,6 +5,7 @@ aliases:
 URL: https://bagrounds.org/books/fire-and-fury-inside-the-trump-white-house
 share: true
 affiliate link: https://amzn.to/44dqshb
+CTA: 💥 Uncover the chaos.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🔥💣💥😡🤬 Fire and Fury: Inside the Trump White House  
@@ -37,7 +38,7 @@ affiliate link: https://amzn.to/44dqshb
 ### 📖 Similar Books (Focus on Trump Administration/Politics)  
   
 * **[😱🤡🇺🇸 Fear: Trump in the White House](./fear.md) by Bob Woodward:** ⚖️ Similar to "Fire and Fury" in its focus on the internal dynamics and perceived dysfunction of the Trump White House, but generally regarded as more rigorously reported by a veteran investigative journalist.  
-* 📖 **A Higher Loyalty: Truth, Lies, and Leadership by James Comey:** 🕵️ Offers a firsthand account from the perspective of the former FBI Director who was fired by Trump, providing an insider's view of interactions with the President and the political climate.  
+* **[⬆️🤥🏛️ A Higher Loyalty: Truth, Lies, and Leadership](./a-higher-loyalty-truth-lies-and-leadership.md) by James Comey:** 🕵️ Offers a firsthand account from the perspective of the former FBI Director who was fired by Trump, providing an insider's view of interactions with the President and the political climate.  
 * 📖 **The Divider: Trump in the White House, 2017-2021 by Peter Baker and Susan Glasser:** 🗓️ Provides an extensive account covering the entire Trump presidency, offering a broad historical perspective based on numerous interviews.  
 * **[👹🐍🛢️🇺🇸 Confidence Man: The Making of Donald Trump and the Breaking of America](./confidence-man-the-making-of-donald-trump-and-the-breaking-of-america.md) by Maggie Haberman:** 👤 Written by a long-time Trump observer, this book delves into Trump's background and career, providing context for his presidency based on deep sourcing.  
 * 📖 **Unhinged: An Insider's Account of the Trump White House by Omarosa Manigault Newman:** 😠 Another tell-all from a former White House insider, offering a highly critical perspective on the President and his administration.  

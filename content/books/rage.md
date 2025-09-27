@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org/books/rage
 share: true
 affiliate link: https://amzn.to/45mskVJ
-CTA: Recall madness.
+CTA: 😡 Recall Madness.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 😡🤬 Rage  
@@ -41,7 +41,7 @@ CTA: Recall madness.
   
 * **[😱🤡🇺🇸 Fear: Trump in the White House](./fear.md)** by Bob Woodward: ✍️ The preceding book by the same author, offering an earlier look into the Trump administration's dynamics and chaos.  
 * **[⚠️😬😰 Peril](./peril.md)** by Bob Woodward and Robert Costa: ✍️ The subsequent book covering the end of the Trump presidency and the beginning of the Biden administration.  
-* ***A Higher Loyalty: Truth, Lies, and Leadership*** by James Comey: 🗣️ An account from the former FBI Director who served under Trump, providing an insider perspective on leadership and ethics.  
+* **[⬆️🤥🏛️ A Higher Loyalty: Truth, Lies, and Leadership](./a-higher-loyalty-truth-lies-and-leadership.md)** by James Comey: 🗣️ An account from the former FBI Director who served under Trump, providing an insider perspective on leadership and ethics.  
 * **[👑🚫📜2️⃣0️⃣ On Tyranny: Twenty Lessons from the Twentieth Century](./on-tyranny.md)** by Timothy Snyder: 💡 A concise guide drawing lessons from 20th-century history on how to identify and resist rising authoritarianism, relevant to the political context discussed in *Rage*.  
 * **Trumpocracy: The Corruption of the American Republic** by David Frum: 🏛️ Analyzes how the Trump presidency impacted American democratic institutions and norms.  
   

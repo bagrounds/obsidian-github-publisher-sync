@@ -3,7 +3,7 @@ share: true
 aliases:
   - ⚕️🗣️💊 Health experts respond to Trump's claims linking autism to acetaminophen
 title: ⚕️🗣️💊 Health experts respond to Trump's claims linking autism to acetaminophen
-URL: https://bagrounds.org/videos/
+URL: https://bagrounds.org/videos/health-experts-respond-to-trumps-claims-linking-autism-to-acetaminophen
 Author:
 Platform:
 Channel: PBS NewsHour

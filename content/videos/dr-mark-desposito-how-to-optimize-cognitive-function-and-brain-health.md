@@ -7,7 +7,7 @@ URL: https://youtu.be/HYVeP4F0GNU
 Platform: "#YouTube"
 Channel: "[[Huberman Lab]]"
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](../index.md) > [Videos](./index.md) | [🧠🫀👀🔬 Andrew Huberman](../people/andrew-huberman.md)  
 # 🧠⬆️🧑‍⚕️💪💡 Dr. Mark D'Esposito: How to Optimize Cognitive Function & Brain Health  
 ![Dr. Mark D'Esposito: How to Optimize Cognitive Function & Brain Health](https://youtu.be/HYVeP4F0GNU)  
   

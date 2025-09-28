@@ -10,7 +10,8 @@ title: 🏡 Home
 📑 Notes, 💭 thoughts, and 🔗 Links.  
 ❔ What do 🫵 _you_ 🤔 think?  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (317)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (318)  
+- [2025-09-28](./reflections/2025-09-28.md)  
 - [2025-09-27 | 🧘🏼‍♀️🔥 Calm Under Fire 📺📰🔍📚](./reflections/2025-09-27.md)  
 - [2025-09-26 | ♾️ Autism | 🧠 Emotion | 🇺🇸 Promise 📺📚📰](./reflections/2025-09-26.md)  
 - [2025-09-25 | ❌ Wrong | ☣️ Toxic | 🔰 Original | 🌟 Promised 📺📚📰🔍](./reflections/2025-09-25.md)  
@@ -20,33 +21,32 @@ title: 🏡 Home
 - [2025-09-21 | 🥸🌊 Hidden Spring 📚](./reflections/2025-09-21.md)  
 - [2025-09-20 | 🫵🏼👀🧠 Being You 📚](./reflections/2025-09-20.md)  
 - [2025-09-19 | 🏕️ Camping 📚](./reflections/2025-09-19.md)  
-- [2025-09-18 | 🇺🇸 Authoritarian | 🌱 Thrive | 🔥 Grill 📺📰🔍🛍️](./reflections/2025-09-18.md)  
   
   
-## [📚 Books](./books/index.md) (650)  
+## [📚 Books](./books/index.md) (652)  
+- [📚🧠 The New York Times Guide to Essential Knowledge: A Desk Reference for the Curious Mind](./books/the-new-york-times-guide-to-essential-knowledge-a-desk-reference-for-the-curious-mind.md)  
+- [😈🌍🔬🕯️🌑 The Demon-Haunted World: Science as a Candle in the Dark](./books/the-demon-haunted-world.md)  
+- [🥼🛡️ The Scientific Attitude: Defending Science from Denial, Fraud, and Pseudoscience](./books/the-scientific-attitude.md)  
+- [🧪👎 Bad Science: Quacks, Hacks, and Big Pharma Flacks](./books/bad-science-quacks-hacks-and-big-pharma-flacks.md)  
 - [🗣️🔗 Supercommunicators: How to Unlock the Secret Language of Connection](./books/supercommunicators-how-to-unlock-the-secret-language-of-connection.md)  
 - [💔💪🔗 The Power of Vulnerability: Teachings of Authenticity, Connection, and Courage](./books/the-power-of-vulnerability-teachings-of-authenticity-connection-and-courage.md)  
 - [🔒🐦 I Know Why the Caged Bird Sings](./books/i-know-why-the-caged-bird-sings.md)  
 - [🇮🇱⏳ The Hundred Years' War on Palestine: A History of Settler Colonialism and Resistance, 1917–2017](./books/the-hundred-years-war-on-palestine-a-history-of-settler-colonialism-and-resistance-1917-2017.md)  
 - [🇺🇸⚔️ Alexander Hamilton](./books/alexander-hamilton.md)  
 - [😡🤬 Rage](./books/rage.md)  
-- [🔥💣💥😡🤬 Fire and Fury: Inside the Trump White House](./books/fire-and-fury-inside-the-trump-white-house.md)  
-- [⬆️🤥🏛️ A Higher Loyalty: Truth, Lies, and Leadership](./books/a-higher-loyalty-truth-lies-and-leadership.md)  
-- [😢🔄 Emotion and Adaptation](./books/emotion-and-adaptation.md)  
-- [🧠💥📈💡🎆 Dynamical Systems in Neuroscience: The Geometry of Excitability and Bursting](./books/dynamical-systems-in-neuroscience.md)  
   
   
-## [📺 Videos](./videos/index.md) (321)  
-- [🗣️🧠⬆️📈 The Science Behind Dramatically Better Conversations | Charles Duhigg | TED](./videos/the-science-behind-dramatically-better-conversations-charles-duhigg-ted.md)  
-- [👩‍⚖️📜➡️ Rep. Alexandria Ocasio-Cortez (D-NY) on Resolution Honoring Charlie Kirk](./videos/rep-alexandria-ocasio-cortez-d-ny-on-resolution-honoring-charlie-kirk.md)  
-- [🧘☮️😌😊 How to Never Get Angry or Bothered by Anyone | MAYA ANGELOU MOTIVATION](./videos/how-to-never-get-angry-or-bothered-by-anyone-maya-angelou-motivation.md)  
-- [🇺🇸🗳️⚙️🤔 How the Trump administration is trying to change the way people vote](./videos/how-the-trump-administration-is-trying-to-change-the-way-people-vote.md)  
-- [🏛️👎 Ex-Trump White House attorney calls Comey's indictment 'un-American and despicable'](./videos/ex-trump-white-house-attorney-calls-comeys-indictment-un-american-and-despicable.md)  
-- [👨‍⚖️⬆️🏛️ Brooks and Capehart on the Comey indictment and upending of DOJ norms](./videos/brooks-and-capehart-on-the-comey-indictment-and-upending-of-doj-norms.md)  
-- [🇺🇸📰🗓️ PBS News Weekend full episode, June 22, 2025](./videos/pbs-news-weekend-full-episode-june-22-2025.md)  
-- [🇮🇱⚔️🌍🚶 News Wrap: Netanyahu vows to press ahead in Gaza as U.N. delegates walk out in protest](./videos/news-wrap-netanyahu-vows-to-press-ahead-in-gaza-as-un-delegates-walk-out-in-protest.md)  
-- [❓🤯😵‍💫🤷 What the Heck Just Happened? | 2025-09-27](./videos/what-the-heck-just-happened-2025-09-27.md)  
-- [🤯😲😳 You Aren't Going to Believe This](./videos/you-arent-going-to-believe-this.md)  
+## [📺 Videos](./videos/index.md) (325)  
+- [🧠🎯⬆️ Tools to Enhance Working Memory & Attention](./videos/tools-to-enhance-working-memory-and-attention.md)  
+- [☕⏳😴🧊☀️🏋️ Dr. Matt Walker: How to Structure Your Sleep, Use Naps & Time Caffeine | Huberman Lab Guest Series](./videos/dr-matt-walker-how-to-structure-your-sleep-use-naps-and-time-caffeine-huberman-lab-guest-series.md)  
+- [🧠💊🎯 Improve Focus with Behavioral Tools & Medication for ADHD | Dr. John Kruse](./videos/improve-focus-with-behavioral-tools-medication-for-adhd-dr-john-kruse.md)  
+- [🔑🔓🚀🌟 Dr. Adam Grant: How to Unlock Your Potential, Motivation & Unique Abilities](./videos/dr-adam-grant-how-to-unlock-your-potential-motivation-and-unique-abilities.md)  
+- [🍎🔄🩸 Dr. Casey Means: Transform Your Health by Improving Metabolism, Hormone & Blood Sugar Regulation](./videos/dr-casey-means-transform-your-health-by-improving-metabolism-hormone-and-blood-sugar-regulation.md)  
+- [😴🧠💡 Dr. Matt Walker: Using Sleep to Improve Learning, Creativity & Memory | Huberman Lab Guest Series](./videos/dr-matt-walker-using-sleep-to-improve-learning-creativity-and-memory-huberman-lab-guest-series.md)  
+- [🧠⬆️🧑‍⚕️💪💡 Dr. Mark D'Esposito: How to Optimize Cognitive Function & Brain Health](./videos/dr-mark-desposito-how-to-optimize-cognitive-function-and-brain-health.md)  
+- [🤔🤯❤️📖 How to Understand Emotions | Dr. Lisa Feldman Barrett](./videos/how-to-understand-emotions-dr-lisa-feldman-barrett.md)  
+- [🧠👁️📈✨ How to Expand Your Consciousness | Dr. Christof Koch](./videos/how-to-expand-your-consciousness-dr-christof-koch.md)  
+- [📢👮‍♂️🇺🇸 News Wrap: Trump orders troops to Portland, authorizing ‘full force’](./videos/news-wrap-trump-orders-troops-to-portland-authorizing-full-force.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (82)  
@@ -81,10 +81,10 @@ title: 🏡 Home
 - [🐍🏎️📦 uv](./software/uv.md)  
   
   
-## [👥 People](./people/index.md) (14)  
+## [👥 People](./people/index.md) (15)  
+- [🧠🫀👀🔬 Andrew Huberman](./people/andrew-huberman.md)  
 - [🧠🤝🐘 Jonathan Haidt](./people/jonathan-haidt.md)  
 - [👨‍🏫📚💻🤔 Cal Newport](./people/cal-newport.md)  
-- [😴🧠🌃 Sara C. Mednick](./people/sara-c-mednick.md)  
   
   
 ## [🛍️ Products](./products/index.md) (3)  

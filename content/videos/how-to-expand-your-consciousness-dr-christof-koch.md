@@ -10,7 +10,7 @@ Channel: Andrew Huberman
 tags:
 youtube: https://youtu.be/2t4vswC-3mY
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](../index.md) > [Videos](./index.md) | [🧠🫀👀🔬 Andrew Huberman](../people/andrew-huberman.md)  
 # 🧠👁️📈✨ How to Expand Your Consciousness | Dr. Christof Koch  
 ![How to Expand Your Consciousness | Dr. Christof Koch](https://youtu.be/2t4vswC-3mY)  
   

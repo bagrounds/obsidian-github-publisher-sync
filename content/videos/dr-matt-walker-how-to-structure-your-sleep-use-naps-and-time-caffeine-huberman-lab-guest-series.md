@@ -4,12 +4,12 @@ aliases:
   - "☕⏳😴🧊☀️🏋️ Dr. Matt Walker: How to Structure Your Sleep, Use Naps & Time Caffeine | Huberman Lab Guest Series"
 title: "☕⏳😴🧊☀️🏋️ Dr. Matt Walker: How to Structure Your Sleep, Use Naps & Time Caffeine | Huberman Lab Guest Series"
 URL: https://youtu.be/4F_RBc1akC8
-Author: 
-Platform: 
-Channel: 
-tags: 
+Author:
+Platform:
+Channel:
+tags:
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](../index.md) > [Videos](./index.md) | [🧠🫀👀🔬 Andrew Huberman](../people/andrew-huberman.md)  
 # ☕⏳😴🧊☀️🏋️ Dr. Matt Walker: How to Structure Your Sleep, Use Naps & Time Caffeine | Huberman Lab Guest Series  
 ![Dr. Matt Walker: How to Structure Your Sleep, Use Naps & Time Caffeine | Huberman Lab Guest Series](https://youtu.be/4F_RBc1akC8)  
   

@@ -4,12 +4,12 @@ aliases:
   - "🔑🔓🚀🌟 Dr. Adam Grant: How to Unlock Your Potential, Motivation & Unique Abilities"
 title: "🔑🔓🚀🌟 Dr. Adam Grant: How to Unlock Your Potential, Motivation & Unique Abilities"
 URL: https://youtu.be/3gtvNYa3Nd8
-Author: 
+Author:
 Platform: "#YouTube"
 Channel: "[[Huberman Lab]]"
-tags: 
+tags:
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](../index.md) > [Videos](./index.md) | [🧠🫀👀🔬 Andrew Huberman](../people/andrew-huberman.md)  
 # 🔑🔓🚀🌟 Dr. Adam Grant: How to Unlock Your Potential, Motivation & Unique Abilities  
 ![Dr. Adam Grant: How to Unlock Your Potential, Motivation & Unique Abilities](https://youtu.be/3gtvNYa3Nd8)  
   

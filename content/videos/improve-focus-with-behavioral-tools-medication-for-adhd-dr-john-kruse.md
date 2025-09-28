@@ -4,12 +4,12 @@ aliases:
   - 🧠💊🎯 Improve Focus with Behavioral Tools & Medication for ADHD | Dr. John Kruse
 title: 🧠💊🎯 Improve Focus with Behavioral Tools & Medication for ADHD | Dr. John Kruse
 URL: https://youtu.be/NtQ-kdLlQiU
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: Andrew Huberman
-tags: 
+tags:
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](../index.md) > [Videos](./index.md) | [🧠🫀👀🔬 Andrew Huberman](../people/andrew-huberman.md)  
 # 🧠💊🎯 Improve Focus with Behavioral Tools & Medication for ADHD | Dr. John Kruse  
 ![Improve Focus with Behavioral Tools & Medication for ADHD | Dr. John Kruse](https://youtu.be/NtQ-kdLlQiU)  
   
@@ -55,6 +55,6 @@ Dr. John Cruz and Andrew Huberman discuss the complexities of ADHD, covering its
   
 ### 📖 Recommended Books  
   
-- **[Driven to Distraction](../books/driven-to-distraction.md) (Revised): Recognizing and Coping with Attention Deficit Disorder** by Edward M. Hallowell and John J. Ratey  
+- **[🏎️🦋🐿️✨ Driven to Distraction: Recognizing and Coping with Attention Deficit Disorder from Childhood Through Adulthood](../books/driven-to-distraction.md)** by Edward M. Hallowell and John J. Ratey  
 - **Scattered Minds: The Origins and Healing of Attention Deficit Disorder** by Gabor Maté  
-- **[Taking Charge of Adult ADHD by Russell Barkley](../books/taking-charge-of-adult-adhd.md)** by Russell A. Barkley  
+- **[🧠⬆️💼🏠❤️ Taking Charge of Adult ADHD: Proven Strategies to Succeed at Work, at Home, and in Relationships](../books/taking-charge-of-adult-adhd.md)** by Russell A. Barkley

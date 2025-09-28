@@ -10,7 +10,7 @@ Channel: Andrew Huberman
 tags:
 youtube: https://youtu.be/FeRgqJVALMQ
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](../index.md) > [Videos](./index.md) | [🧠🫀👀🔬 Andrew Huberman](../people/andrew-huberman.md)  
 # 🤔🤯❤️📖 How to Understand Emotions | Dr. Lisa Feldman Barrett  
 ![How to Understand Emotions | Dr. Lisa Feldman Barrett](https://youtu.be/FeRgqJVALMQ)  
   

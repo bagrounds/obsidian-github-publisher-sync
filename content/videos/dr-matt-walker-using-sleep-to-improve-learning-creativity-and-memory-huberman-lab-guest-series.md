@@ -4,12 +4,12 @@ aliases:
   - "😴🧠💡 Dr. Matt Walker: Using Sleep to Improve Learning, Creativity & Memory | Huberman Lab Guest Series"
 title: "😴🧠💡 Dr. Matt Walker: Using Sleep to Improve Learning, Creativity & Memory | Huberman Lab Guest Series"
 URL: https://youtu.be/F9KrZd_-ge0
-Author: 
+Author:
 Platform: "#YouTube"
 Channel: "[[Huberman Lab]]"
-tags: 
+tags:
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](../index.md) > [Videos](./index.md) | [🧠🫀👀🔬 Andrew Huberman](../people/andrew-huberman.md)  
 # 😴🧠💡 Dr. Matt Walker: Using Sleep to Improve Learning, Creativity & Memory | Huberman Lab Guest Series  
 ![Dr. Matt Walker: Using Sleep to Improve Learning, Creativity & Memory | Huberman Lab Guest Series](https://youtu.be/F9KrZd_-ge0)  
   

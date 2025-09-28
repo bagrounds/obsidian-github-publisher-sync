@@ -1,16 +1,16 @@
 ---
 share: true
 aliases:
-  - Tools to Enhance Working Memory & Attention
-title: Tools to Enhance Working Memory & Attention
+  - 🧠🎯⬆️ Tools to Enhance Working Memory & Attention
+title: 🧠🎯⬆️ Tools to Enhance Working Memory & Attention
 URL: https://youtu.be/CQlTmOFM4Qs
-Author: 
+Author:
 Platform: "#YouTube"
 Channel: "[[Huberman Lab]]"
-tags: 
+tags:
 ---
-[Home](../index.md) > [Videos](./index.md)  
-# Tools to Enhance Working Memory & Attention  
+[Home](../index.md) > [Videos](./index.md) | [🧠🫀👀🔬 Andrew Huberman](../people/andrew-huberman.md)  
+# 🧠🎯⬆️ Tools to Enhance Working Memory & Attention  
 ![Tools to Enhance Working Memory & Attention](https://youtu.be/CQlTmOFM4Qs)  
 ## 📝🐒 Human Notes  
 - ↕️ Working memory follows an upside down U shaped function with respect to dopamine levels in the prefrontal cortex.  

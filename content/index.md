@@ -57,12 +57,12 @@ title: 🏡 Home
 - [🧑‍💼🛡️ Job Guarantee / Employer of Last Resort](./topics/job-guarantee-employer-of-last-resort.md)  
   
   
-## [📄  Articles](./articles/index.md) (58)  
+## [📄  Articles](./articles/index.md) (59)  
+- [🧠📈🔑 Cognitive load is what matters](./articles/cognitive-load-is-what-matters.md)  
 - [🤔⚙️🧩🏗️💡 Everything I know about good system design](./articles/everything-i-know-about-good-system-design.md)  
 - [❓📈🤦 Failing to Understand the Exponential, Again](./articles/failing-to-understand-the-exponential-again.md)  
 - [👀👶🏼🏃🏼‍♀️🛣️ What to Look for in a Jogging Stroller](./articles/what-to-look-for-in-a-jogging-stroller.md)  
 - [🔍🍎🌲📚 Information Foraging Theory](./articles/information-foraging-theory.md)  
-- [🪧👐🏽🚫👹 Thousands gather in Everett to say ‘Hands Off!’ to Trump](./articles/thousands-gather-in-everett-to-say-hands-off-to-trump.md)  
   
   
 ## [🤖💬 Bot Chats](./bot-chats/index.md) (45)  
@@ -88,8 +88,8 @@ title: 🏡 Home
   
   
 ## [🛍️ Products](./products/index.md) (3)  
-- [🔥💨🏕️ Coleman Triton 2-Burner Propane Stove, Portable Camping Cooktop with 2 Adjustable Burners & Wind Guards, 22,000 BTUs of Power for Camping, Tailgating, Grilling, BBQ, & More](./products/coleman-triton-2-burner-propane-stove-portable-camping-cooktop-with-2-adjustable-burners-wind-guards-22000-btus-of-power-for-camping-tailgating-grilling-bbq-more.md)  
 - [👶🌧️💨 Graco Baby Jogging Stroller Universal Rain Cover, Ventilated Weather Shield, Waterproof, Windproof, Versatile Size to Fit Most Jogging Strollers, Vinyl, Clear, Plastic](./products/graco-baby-jogging-stroller-universal-rain-cover-ventilated-weather-shield-waterproof-windproof-versatile-size-to-fit-most-jogging-strollers-vinyl-clear-plastic.md)  
+- [🔥💨🏕️ Coleman Triton 2-Burner Propane Stove, Portable Camping Cooktop with 2 Adjustable Burners & Wind Guards, 22,000 BTUs of Power for Camping, Tailgating, Grilling, BBQ, & More](./products/coleman-triton-2-burner-propane-stove-portable-camping-cooktop-with-2-adjustable-burners-wind-guards-22000-btus-of-power-for-camping-tailgating-grilling-bbq-more.md)  
 - [👶🏃🌆 Thule Urban Glide 3](./products/thule-urban-glide-3.md)  
   
   

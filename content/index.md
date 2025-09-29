@@ -10,8 +10,9 @@ title: 🏡 Home
 📑 Notes, 💭 thoughts, and 🔗 Links.  
 ❔ What do 🫵 _you_ 🤔 think?  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (318)  
-- [2025-09-28](./reflections/2025-09-28.md)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (319)  
+- [2025-09-29](./reflections/2025-09-29.md)  
+- [2025-09-28 | 🏃🏼‍♀️ Bodies | 🧠 Minds | 👊 Power 📺📰📚👥](./reflections/2025-09-28.md)  
 - [2025-09-27 | 🧘🏼‍♀️🔥 Calm Under Fire 📺📰🔍📚](./reflections/2025-09-27.md)  
 - [2025-09-26 | ♾️ Autism | 🧠 Emotion | 🇺🇸 Promise 📺📚📰](./reflections/2025-09-26.md)  
 - [2025-09-25 | ❌ Wrong | ☣️ Toxic | 🔰 Original | 🌟 Promised 📺📚📰🔍](./reflections/2025-09-25.md)  
@@ -20,7 +21,6 @@ title: 🏡 Home
 - [2025-09-22 | 👤 Being | 🎙️ Kimmel 📚📺](./reflections/2025-09-22.md)  
 - [2025-09-21 | 🥸🌊 Hidden Spring 📚](./reflections/2025-09-21.md)  
 - [2025-09-20 | 🫵🏼👀🧠 Being You 📚](./reflections/2025-09-20.md)  
-- [2025-09-19 | 🏕️ Camping 📚](./reflections/2025-09-19.md)  
   
   
 ## [📚 Books](./books/index.md) (652)  
@@ -65,12 +65,12 @@ title: 🏡 Home
 - [🤱😴👶 Safe Sleep for Breastfeeding Babies](./articles/safe-sleep-for-breastfeeding-babies.md)  
   
   
-## [🤖💬 Bot Chats](./bot-chats/index.md) (44)  
+## [🤖💬 Bot Chats](./bot-chats/index.md) (45)  
+- [✍️🥇🇺🇸 Creating the Most Popular Title in the Country](./bot-chats/creating-the-most-popular-title-in-the-country.md)  
 - [📈🌐🏆📢 Creating the Most Popular Blog in the World](./bot-chats/creating-the-most-popular-blog-in-the-world.md)  
 - [📖 Book 🧭 Explorer 2](./bot-chats/book-explorer-2.md)  
 - [👶🏼🛒🏃🏼‍♀️🦮💲🦮 Jogging Stroller Buying Guide](./bot-chats/jogging-stroller-buying-guide.md)  
 - [📖 Book 🧭 Explorer 1](./bot-chats/book-explorer-1.md)  
-- [📚🤖💬 RAG and Agents](./bot-chats/rag-and-agents.md)  
   
   
 ## [💾 Software](./software/index.md) (29)  

@@ -7,7 +7,7 @@ backlinks: false
 URL: https://bagrounds.org/articles
 ---
 [Home](../index.md)  
-# 📄 Articles (58)  
+# 📄 Articles (59)  
 - [🦊😈🐾🕵️💸 5 takeaways about NPR's reporting on the whistleblower report about DOGE at the NLRB](./5-takeaways-about-nprs-reporting-on-the-whistleblower-report-about-doge-at-the-nlrb.md)  
 - [🌱🤖⚙️🖐️ 5 tips on getting started with Gems, your custom AI experts](./5-tips-on-getting-started-with-gems-your-custom-ai-experts.md)  
 - [⏱️⚔️🏛️ '60 Minutes' chief resigns, saying show's independence was compromised](./60-minutes-chief-resigns-saying-shows-independence-was-compromised.md)  
@@ -18,6 +18,7 @@ URL: https://bagrounds.org/articles
 - [👀 Attention Is All You Need](./attention-is-all-you-need.md)  
 - [🧠💪📈 BDNF Response to High Intensity Exercise](./bdnf-response-to-high-intensity-exercise.md)  
 - [🐕🌿⚕️🎗️ Cannabis for Pets With Cancer](./cannabis-for-pets-with-cancer.md)  
+- [🧠📈🔑 Cognitive load is what matters](./cognitive-load-is-what-matters.md)  
 - [🏗️🧩🌍 Context Engineering: An Emerging Concept in the MCP Ecosystem](./context-engineering-an-emerging-concept-in-the-mcp-ecosystem.md)  
 - [💪🧠📉💊🔎 Creatine Supplementation in Depression: A Review of Mechanisms, Efficacy, Clinical Outcomes, and Future Directions](./creatine-supplementation-in-depression-a-review-of-mechanisms-efficacy-clinical-outcomes-and-future-directions.md)  
 - [⚙️🤖📈🤝 Engineering and AI: Advancing the synergy](./engineering-and-ai-advancing-the-synergy.md)  

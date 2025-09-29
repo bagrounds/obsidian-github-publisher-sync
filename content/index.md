@@ -23,7 +23,8 @@ title: 🏡 Home
 - [2025-09-20 | 🫵🏼👀🧠 Being You 📚](./reflections/2025-09-20.md)  
   
   
-## [📚 Books](./books/index.md) (652)  
+## [📚 Books](./books/index.md) (653)  
+- [✍️📣 The Adweek Copywriting Handbook: The Ultimate Guide to Writing Powerful Advertising and Marketing Copy from One of America's Top Copywriters](./books/the-adweek-copywriting-handbook-the-ultimate-guide-to-writing-powerful-advertising-and-marketing-copy-from-one-of-americas-top-copywriters.md)  
 - [📚🧠 The New York Times Guide to Essential Knowledge: A Desk Reference for the Curious Mind](./books/the-new-york-times-guide-to-essential-knowledge-a-desk-reference-for-the-curious-mind.md)  
 - [😈🌍🔬🕯️🌑 The Demon-Haunted World: Science as a Candle in the Dark](./books/the-demon-haunted-world.md)  
 - [🥼🛡️ The Scientific Attitude: Defending Science from Denial, Fraud, and Pseudoscience](./books/the-scientific-attitude.md)  
@@ -33,7 +34,6 @@ title: 🏡 Home
 - [🔒🐦 I Know Why the Caged Bird Sings](./books/i-know-why-the-caged-bird-sings.md)  
 - [🇮🇱⏳ The Hundred Years' War on Palestine: A History of Settler Colonialism and Resistance, 1917–2017](./books/the-hundred-years-war-on-palestine-a-history-of-settler-colonialism-and-resistance-1917-2017.md)  
 - [🇺🇸⚔️ Alexander Hamilton](./books/alexander-hamilton.md)  
-- [😡🤬 Rage](./books/rage.md)  
   
   
 ## [📺 Videos](./videos/index.md) (325)  

@@ -447,22 +447,22 @@ These books provide the scientific foundation for exploiting cognitive biases, r
 * **[🔮🤷🏼‍♀️🤪 Predictably Irrational: The Hidden Forces That Shape Our Decisions](../books/predictably-irrational.md)** by Dan Ariely: An accessible look at the many biases (like the **Zero Price Effect** and the **Endowment Effect**) that make consumers consistently illogical in their spending.  
 * **[👉🤏 Nudge: Improving Decisions about Health, Wealth, and Happiness](../books/nudge.md)** by Richard H. Thaler and Cass R. Sunstein: Lays out the principles of **Choice Architecture**, supporting the idea of setting up an automatic system (a "nudge") to manage bills.  
 * **[🤔💸 Misbehaving: The Making of Behavioral Economics](../books/misbehaving-the-making-of-behavioral-economics.md)** by Richard H. Thaler: Thaler’s personal history of the field, solidifying the idea that people are predictably irrational, which necessitates the structured solution your article provides.  
-* ***The Undoing Project: A Friendship That Changed Our Minds*** by Michael Lewis: The captivating narrative behind the work of Kahneman and Tversky, useful for framing the human story behind the science.  
+* **The Undoing Project: A Friendship That Changed Our Minds** by Michael Lewis: The captivating narrative behind the work of Kahneman and Tversky, useful for framing the human story behind the science.  
   
 ## ✍️ Writing, Titles, and Virality  
   
 These resources focus on the craft of creating content that achieves high readership and virality.  
   
 * **[🦠 Contagious: Why Things Catch On](../books/contagious.md)** by Jonah Berger: Analyzes the six principles (**STEPPS**) that make content viral, particularly the use of **Triggers** (like "Loyalty Tax") and social currency.  
-* ***The Adweek Copywriting Handbook*** by Joseph Sugarman: A classic guide to direct-response copywriting, emphasizing the title's primary job to stop the reader and promise a massive benefit.  
+* **[✍️📣 The Adweek Copywriting Handbook: The Ultimate Guide to Writing Powerful Advertising and Marketing Copy from One of America's Top Copywriters](../books/the-adweek-copywriting-handbook-the-ultimate-guide-to-writing-powerful-advertising-and-marketing-copy-from-one-of-americas-top-copywriters.md)** by Joseph Sugarman: A classic guide to direct-response copywriting, emphasizing the title's primary job to stop the reader and promise a massive benefit.  
 * **[✍🏼👍🏼 On Writing Well: The Classic Guide to Writing Nonfiction](../books/on-writing-well.md)** by William Zinsser: The essential guide to concise, clear, and trustworthy non-fiction, ensuring the body of your viral article meets high-quality journalistic standards.  
   
 ## 🔍 Web & SEO Specifics  
   
 For an article to become the most popular in the country, it needs to dominate search engine results. These books cover the technical requirements.  
   
-* ***The Art of SEO: Mastering Search Engine Optimization*** by Eric Enge, Stephan Spencer, and Jessie Stricchiola: The comprehensive technical guide for structuring the title, headings, and content to achieve maximum search visibility and authority.  
-* ***Web Style Guide: Foundations of Design*** by Patrick J. Lynch and Sarah Horton: Focuses on online usability, ensuring that once readers click the title, the **"M minutes" process** is easy to read, follow, and implement.  
+* **The Art of SEO: Mastering Search Engine Optimization** by Eric Enge, Stephan Spencer, and Jessie Stricchiola: The comprehensive technical guide for structuring the title, headings, and content to achieve maximum search visibility and authority.  
+* **Web Style Guide: Foundations of Design** by Patrick J. Lynch and Sarah Horton: Focuses on online usability, ensuring that once readers click the title, the **"M minutes" process** is easy to read, follow, and implement.  
   
 ## 🛡️ Actionable & Complementary Finance  
   
@@ -470,11 +470,11 @@ These books address the practical skills (negotiation, habit-building) and the b
   
 * **[🙅‍♀️✂️⚖️ Never Split the Difference: Negotiating As If Your Life Depended On It](../books/never-split-the-difference.md)** by Chris Voss: Provides the **Tactical Empathy** and negotiation scripts necessary for readers to succeed when calling providers to cut costs.  
 * **[🔄🧠💪 The Power of Habit: Why We Do What We Do in Life and Business](../books/the-power-of-habit.md)** by Charles Duhigg: Explains how to implement and sustain a "Bill Audit" routine by focusing on the **Cue $\rightarrow$ Routine $\rightarrow$ Reward** habit loop.  
-* ***The Psychology of Money: Timeless Lessons on Wealth, Greed, and Happiness*** by Morgan Housel: Provides a crucial counterpoint, emphasizing that **behavior** and financial independence are more important than hyper-optimization.  
-* ***Your Money or Your Life*** by Vicki Robin and Joe Dominguez: Reframes saving as increasing your **life energy** (time and freedom), providing a powerful emotional reason to fight the "loyalty tax."  
+* **The Psychology of Money: Timeless Lessons on Wealth, Greed, and Happiness** by Morgan Housel: Provides a crucial counterpoint, emphasizing that **behavior** and financial independence are more important than hyper-optimization.  
+* **Your Money or Your Life** by Vicki Robin and Joe Dominguez: Reframes saving as increasing your **life energy** (time and freedom), providing a powerful emotional reason to fight the "loyalty tax."  
   
 ## 📚 Fiction for Context and Philosophy  
   
-* ***Confessions of a Shopaholic*** **(Series)** by Sophie Kinsella: A humorous, modern story dealing with the constant, compulsive cycle of **consumer debt and financial denial**. It perfectly illustrates the kind of financial behavior your article aims to correct.  
-* ***The Great Gatsby*** by F. Scott Fitzgerald: A classic novel that serves as a cautionary tale about the illusion of happiness through material wealth and the corrupting influence of money.  
-* ***A Christmas Carol*** by Charles Dickens: A timeless story about the perils of greed and the ultimate value of money when used for human connection and generosity.
+* **Confessions of a Shopaholic** **(Series)** by Sophie Kinsella: A humorous, modern story dealing with the constant, compulsive cycle of **consumer debt and financial denial**. It perfectly illustrates the kind of financial behavior your article aims to correct.  
+* **The Great Gatsby** by F. Scott Fitzgerald: A classic novel that serves as a cautionary tale about the illusion of happiness through material wealth and the corrupting influence of money.  
+* **A Christmas Carol** by Charles Dickens: A timeless story about the perils of greed and the ultimate value of money when used for human connection and generosity.

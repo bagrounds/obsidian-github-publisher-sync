@@ -13,6 +13,7 @@ CTA: 🛡️ Defend precious cargo.
   
 ## 📝🐒 Human Notes  
 - For my [👶🏃🌆 Thule Urban Glide 3](./thule-urban-glide-3.md)  
+- 👍 Fits great; no issues after first run in light rain.  
   
 ## 🛍️📋 Product Report: Graco Baby Jogging Stroller Universal Rain Cover  
   

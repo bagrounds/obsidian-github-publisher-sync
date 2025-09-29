@@ -57,12 +57,12 @@ title: 🏡 Home
 - [🧑‍💼🛡️ Job Guarantee / Employer of Last Resort](./topics/job-guarantee-employer-of-last-resort.md)  
   
   
-## [📄  Articles](./articles/index.md) (56)  
+## [📄  Articles](./articles/index.md) (57)  
+- [❓📈🤦 Failing to Understand the Exponential, Again](./articles/failing-to-understand-the-exponential-again.md)  
 - [👀👶🏼🏃🏼‍♀️🛣️ What to Look for in a Jogging Stroller](./articles/what-to-look-for-in-a-jogging-stroller.md)  
 - [🔍🍎🌲📚 Information Foraging Theory](./articles/information-foraging-theory.md)  
 - [🪧👐🏽🚫👹 Thousands gather in Everett to say ‘Hands Off!’ to Trump](./articles/thousands-gather-in-everett-to-say-hands-off-to-trump.md)  
 - [🚫🏫📉⚠️ Project 2025 and education: A lot of bad ideas, some more actionable than others](./articles/project-2025-and-education-a-lot-of-bad-ideas-some-more-actionable-than-others.md)  
-- [🤱😴👶 Safe Sleep for Breastfeeding Babies](./articles/safe-sleep-for-breastfeeding-babies.md)  
   
   
 ## [🤖💬 Bot Chats](./bot-chats/index.md) (45)  

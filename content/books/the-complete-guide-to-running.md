@@ -52,7 +52,7 @@ The book is intended for a broad spectrum of fitness enthusiasts. 🤩 Whether y
   
 ### 🎨 Creative Connections: The Runner's World Beyond a Runner's Manual  
   
-* 📖 ***Endure: Mind, Body, and the Curiously Elastic Limits of Human Performance*** **by Alex Hutchinson:** For those intrigued by the science introduced in Fee's book, *Endure* takes a deep dive into the psychology and physiology of endurance. 🧠 It explores how we can push our limits and what truly defines our capabilities.  
+* **[💪🧠 Endure: Mind, Body, and the Curiously Elastic Limits of Human Performance](./endure-mind-body-and-the-curiously-elastic-limits-of-human-performance.md)** **by Alex Hutchinson:** For those intrigued by the science introduced in Fee's book, *Endure* takes a deep dive into the psychology and physiology of endurance. 🧠 It explores how we can push our limits and what truly defines our capabilities.  
 * 📖 ***Once a Runner*** **by John L. Parker Jr.:** This cult-classic novel captures the essence of competitive running. 🏃‍♂️ It tells the story of a collegiate runner who will do anything to see how fast he can truly be. It's a fictional but deeply resonant portrayal of the dedication and sacrifice required for the sport. 😓  
 * 📖 ***Let Your Mind Run: A Memoir of Thinking My Way to Victory*** **by Deena Kastor and Michelle Hamilton:** This inspiring memoir from an Olympic medalist and American record holder focuses on the power of mindset. 💪 Kastor shares how she transformed her running career by changing her thoughts, offering a powerful lesson in sports psychology. 🏅  
   

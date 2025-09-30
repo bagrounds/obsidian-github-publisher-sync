@@ -48,7 +48,7 @@ CTA: 🧐 Question everything.
   
 * 📖 **How to Read a Book by Mortimer J. Adler and Charles Van Doren:** A classic guide to intelligent and active reading, emphasizing critical engagement with texts to achieve a deeper understanding and discern truth. 💪 It implicitly advocates for rigorous intellectual discipline to minimize errors in comprehension and judgment.  
 * **[😈🌍🔬🕯️🌑 The Demon-Haunted World: Science as a Candle in the Dark](./the-demon-haunted-world.md) by Carl Sagan:** Sagan champions scientific skepticism, critical thinking, and the scientific method as tools to combat pseudoscience, superstition, and flawed reasoning. 🔎 It offers a powerful argument for striving for factual accuracy and evidence-based understanding.  
-* 🎓 **The Death of Expertise by Tom Nichols:** This book critiques the contemporary devaluation of knowledge and experts, arguing that a widespread disregard for factual accuracy and informed opinion leads to a society prone to misinformation and incorrect beliefs.  
+* **[💀👨‍🏫 The Death of Expertise: The Campaign Against Established Knowledge and Why It Matters](./the-death-of-expertise-the-campaign-against-established-knowledge-and-why-it-matters.md) by Tom Nichols:** This book critiques the contemporary devaluation of knowledge and experts, arguing that a widespread disregard for factual accuracy and informed opinion leads to a society prone to misinformation and incorrect beliefs.  
   
 ### 💡 Creatively Related Books  
   

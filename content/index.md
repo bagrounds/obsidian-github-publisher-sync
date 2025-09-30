@@ -4,7 +4,7 @@ aliases:
   - 🏡 Home
 URL: https://bagrounds.org
 backlinks: false
-title: 🏡 Home
+title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 ---
 # 🏡 Home  
 📑 Notes, 💭 thoughts, and 🔗 Links.  

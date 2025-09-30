@@ -4,10 +4,10 @@ aliases:
   - 🧠💰⚠️ The price you pay for being smart It's Been a Minute
 title: 🧠💰⚠️ The price you pay for being smart It's Been a Minute
 URL: https://bagrounds.org/videos/the-price-you-pay-for-being-smart-its-been-a-minute
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: NPR Podcasts
-tags: 
+tags:
 youtube: https://youtu.be/fjPmFDXQPSU
 ---
 [Home](../index.md) > [Videos](./index.md)  
@@ -28,8 +28,8 @@ youtube: https://youtu.be/fjPmFDXQPSU
 🤝 This video presents a clear perspective on anti-intellectualism, framing it as a threat to democracy and intellectual pursuits. 🧐 It would be beneficial to explore alternative perspectives on the critiques of academia, such as arguments regarding academic jargon, perceived detachment from practical concerns, or the role of public engagement in scholarly work. 💡 Further understanding could be gained by examining historical instances of anti-intellectual movements and their societal impacts.  
   
 ## 📚 Book Recommendations  
-* 📚  by Richard Hofstadter: 📜 A classic exploration of the historical roots and manifestations of anti-intellectualism in the United States.  
-* 🧠 The Death of Expertise by Tom Nichols: 📉 Examines the decline of respect for knowledge and the rise of uninformed opinion in modern society.  
+* 📚 Anti-Intellectualism in American Life by Richard Hofstadter: 📜 A classic exploration of the historical roots and manifestations of anti-intellectualism in the United States.  
+* [💀👨‍🏫 The Death of Expertise: The Campaign Against Established Knowledge and Why It Matters](../books/the-death-of-expertise-the-campaign-against-established-knowledge-and-why-it-matters.md) by Tom Nichols: 📉 Examines the decline of respect for knowledge and the rise of uninformed opinion in modern society.  
 * 👃 The Smell of Desire: Pathways to Novel Psychoactive Drugs by Elizabeth A. M. Jones: 🧪 While not directly about anti-intellectualism, this book delves into the science and cultural aspects of smell, offering a different lens on the topic of Dr. Lukes' thesis.  
 * 🗣️ The Public Intellectual by Russell Jacoby: 🧐 Discusses the role and decline of public intellectuals in contemporary society.  
 * 🗳️ Democracy and Education by John Dewey: 🍎 A foundational text on the connection between education and democratic ideals.

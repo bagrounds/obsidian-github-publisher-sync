@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org/books/the-psychological-benefits-of-exercise-and-physical-activity
 share: true
 affiliate link: https://amzn.to/3Gf0Uaa
-CTA: Move toward well-being.
+CTA: 💪 Embrace movement.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧠🏃 The Psychological Benefits of Exercise and Physical Activity  
@@ -48,7 +48,7 @@ This report focuses on the themes presented in books and research concerning the
 * 🛠️ **Shop Class as Soulcraft: An Inquiry into the Value of Work** by Matthew B. Crawford. 🧠 This book explores the cognitive and psychological benefits of manual labor and skilled craftsmanship, offering a perspective on the mental engagement derived from physical activity that isn't necessarily traditional "exercise."  
 * **[🎨🙏✨ The Artist's Way: A Spiritual Path to Higher Creativity](./the-artists-way.md)** by Julia Cameron. 🚶 This popular book on unlocking creativity often incorporates physical activities like walking as tools for clearing the mind and fostering creative flow, linking physical movement to artistic and psychological processes.  
 * 🏃 **Exercised: Why Something We Never Evolved to Do Is Healthy and Rewarding** by Daniel E. Lieberman. 🐒 This book takes an evolutionary perspective on physical activity, exploring why exercise, despite its benefits, is often viewed as a chore and how our evolutionary history shapes our relationship with movement.  
-* 🏃 **Endure: Mind, Body, and the Curiously Elastic Limits of Human Performance** by Alex Hutchinson. 🧠 This book investigates the science of human endurance, examining the psychological and physical factors that determine our limits and how we can push past them, offering insights into the mental fortitude developed through challenging physical activity.  
+* **[💪🧠 Endure: Mind, Body, and the Curiously Elastic Limits of Human Performance](./endure-mind-body-and-the-curiously-elastic-limits-of-human-performance.md)** by Alex Hutchinson. 🧠 This book investigates the science of human endurance, examining the psychological and physical factors that determine our limits and how we can push past them, offering insights into the mental fortitude developed through challenging physical activity.  
   
 ## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on The Psychological Benefits of Exercise and Physical Activity. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

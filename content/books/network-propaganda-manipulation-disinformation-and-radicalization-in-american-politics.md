@@ -37,7 +37,7 @@ CTA: 🚨 Unmask deception.
   
 * 🎭 **"The Lies That Bind: Rethinking Identity" by Kwame Anthony Appiah:** While not directly about network propaganda, Appiah's exploration of identity—creed, country, color, class, and culture—provides a philosophical underpinning to understand the tribalism that fuels media polarization.  
 * **[🗳️🏛️☠️ How Democracies Die](./how-democracies-die.md) by Steven Levitsky and Daniel Ziblatt:** This book offers a historical and comparative perspective on the erosion of democratic norms, which complements the media-focused analysis of "Network Propaganda."  
-* 🧠 **"The Death of Expertise: The Campaign Against Established Knowledge and Why it Matters" by Tom Nichols:** Nichols' work delves into the societal trend of rejecting expert knowledge, a phenomenon that "Network Propaganda" shows is exploited by the right-wing media ecosystem.  
+* **[💀👨‍🏫 The Death of Expertise: The Campaign Against Established Knowledge and Why It Matters](./the-death-of-expertise-the-campaign-against-established-knowledge-and-why-it-matters.md) by Tom Nichols:** Nichols' work delves into the societal trend of rejecting expert knowledge, a phenomenon that "Network Propaganda" shows is exploited by the right-wing media ecosystem.  
   
 #### **🤔 Contrasting & Critical**  
   

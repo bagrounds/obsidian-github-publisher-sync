@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org/books/the-joy-of-movement-how-exercise-helps-us-find-happiness-hope-connection-and-courage
 share: true
 affiliate link: https://amzn.to/3I3XBmG
-CTA: Be happy.
+CTA: 💪 Discover vitality.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🏃😊❤️ The Joy of Movement: How Exercise Helps Us Find Happiness, Hope, Connection, and Courage  
@@ -47,7 +47,7 @@ CTA: Be happy.
   
 * 🏋️ ***Starting Strength: Basic Barbell Training*** **by Mark Rippetoe:** 🔩 A foundational text focused purely on the technical execution and programming of basic barbell exercises for strength development. 💪 Represents a focus solely on the physical 'how-to' of exercise.  
 * 🧪 ***The Physiology of Physical Training*** **by Zsolt Radák:** 🔬 Delves into the detailed physiological and methodological aspects of physical training, covering cellular adaptation and training techniques from a biological perspective, rather than the psychological or emotional benefits.  
-* 🏃 ***Endure: Mind, Body, and the Curiously Elastic Limits of Human Performance*** **by Alex Hutchinson:** 🧠 While it touches on the mental aspect, this book primarily investigates the *physical* limits of human endurance and the science behind pushing those boundaries, often in extreme conditions.  
+* **[💪🧠 Endure: Mind, Body, and the Curiously Elastic Limits of Human Performance](./endure-mind-body-and-the-curiously-elastic-limits-of-human-performance.md)** **by Alex Hutchinson:** 🧠 While it touches on the mental aspect, this book primarily investigates the *physical* limits of human endurance and the science behind pushing those boundaries, often in extreme conditions.  
 * 🧘 ***Pause, Rest, Be: Stillness Practices for Courage in Times of Change*** **by Octavia F. Raheem:** ☮️ Offers practices focused on rest, stillness, and reflection as tools for courage and restoration, presenting an alternative or complementary approach to well-being that emphasizes the absence of movement.  
 * 🧘 ***Strength in Stillness: The Power of Transcendental Meditation*** **by Bob Roth:** 🧠 Focuses on meditation as a means to access inner calm, reduce stress, and build resilience through stillness, providing a contrast to the idea of achieving these states through physical movement.  
 * 🧘 ***Sitting in the Stillness*** **by Martin Underwood:** 🌳 Explores stillness and mindfulness through therapeutic stories, highlighting the peace available beyond mental agitation, a contrasting approach to finding well-being compared to the energy of movement.  

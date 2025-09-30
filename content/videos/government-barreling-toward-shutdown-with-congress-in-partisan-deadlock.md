@@ -35,7 +35,7 @@ youtube: https://youtu.be/esBQsoyBSQY
   
 ## 📚 Book Recommendations  
 ### Similar  
-* 📘 The Death of Expertise by Tom Nichols: Explores the political environment where expert warnings about the shutdown's cost are often dismissed in favor of political posturing.  
+* [💀👨‍🏫 The Death of Expertise: The Campaign Against Established Knowledge and Why It Matters](../books/the-death-of-expertise-the-campaign-against-established-knowledge-and-why-it-matters.md) by Tom Nichols: Explores the political environment where expert warnings about the shutdown's cost are often dismissed in favor of political posturing.  
 * 🗳️ It Was All a Lie by Stuart Stevens: Offers an insider's perspective on the political calculations and strategies within one party that lead to confrontations like the government shutdown standoff.  
   
 ### Contrasting  

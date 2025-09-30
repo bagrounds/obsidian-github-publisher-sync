@@ -447,7 +447,7 @@ These books provide the scientific foundation for exploiting cognitive biases, r
 * **[🔮🤷🏼‍♀️🤪 Predictably Irrational: The Hidden Forces That Shape Our Decisions](../books/predictably-irrational.md)** by Dan Ariely: An accessible look at the many biases (like the **Zero Price Effect** and the **Endowment Effect**) that make consumers consistently illogical in their spending.  
 * **[👉🤏 Nudge: Improving Decisions about Health, Wealth, and Happiness](../books/nudge.md)** by Richard H. Thaler and Cass R. Sunstein: Lays out the principles of **Choice Architecture**, supporting the idea of setting up an automatic system (a "nudge") to manage bills.  
 * **[🤔💸 Misbehaving: The Making of Behavioral Economics](../books/misbehaving-the-making-of-behavioral-economics.md)** by Richard H. Thaler: Thaler’s personal history of the field, solidifying the idea that people are predictably irrational, which necessitates the structured solution your article provides.  
-* **The Undoing Project: A Friendship That Changed Our Minds** by Michael Lewis: The captivating narrative behind the work of Kahneman and Tversky, useful for framing the human story behind the science.  
+* **[🧑‍🤝‍🧑🧠 The Undoing Project: A Friendship That Changed Our Minds](../books/the-undoing-project-a-friendship-that-changed-our-minds.md)** by Michael Lewis: The captivating narrative behind the work of Kahneman and Tversky, useful for framing the human story behind the science.  
   
 ## ✍️ Writing, Titles, and Virality  
   

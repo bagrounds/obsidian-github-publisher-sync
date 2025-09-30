@@ -7,7 +7,7 @@ URL: https://bagrounds.org/books
 backlinks: false
 ---
 [Home](../index.md)  
-# 📚 Books (653)  
+# 📚 Books (655)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)  
 - [🧑‍🤝‍🧑📈 10 to 25: The Science of Motivating Young People: A Groundbreaking Approach to Leading the Next Generation - And Making Your Own Life Easier](./10-to-25-the-science-of-motivating-young-people-a-groundbreaking-approach-to-leading-the-next-generation-and-making-your-own-life-easier.md)  
@@ -263,6 +263,7 @@ Feedback Control of Dynamic Systems]]
 - [ℹ️ Information: A Very Short Introduction](./information.md)  
 - [📰⚔️🧠 Information Wars: How We Lost the Global Battle Against Disinformation and What We Can Do About It](./information-wars.md)  
 - [🏃🤕 Injury-Free Running: Your Illustrated Guide to Biomechanics, Gait Analysis, and Injury Prevention](./injury-free-running-your-illustrated-guide-to-biomechanics-gait-analysis-and-injury-prevention.md)  
+- [🧠🏆 Inner Excellence: Train Your Mind for Extraordinary Performance and the Best Possible Life](./inner-excellence-train-your-mind-for-extraordinary-performance-and-the-best-possible-life.md)  
 - [🧠👶📈 Introduction to Developmental Cognitive Neuroscience: An Introduction](./developmental-cognitive-neuroscience.md)  
 - [👨‍💼➕ Introduction to Employee Benefits Law](./introduction-to-employee-benefits-law.md)  
 - [🌡️⚙️ Inventing Temperature: Measurement and Scientific Progress](./inventing-temperature-measurement-and-scientific-progress.md)  
@@ -601,6 +602,7 @@ Feedback Control of Dynamic Systems]]
 - [💰➡️ The Triumph of Injustice: How the Rich Dodge Taxes and How to Make Them Pay](./the-triumph-of-injustice-how-the-rich-dodge-taxes-and-how-to-make-them-pay.md)  
 - [📊⛓️👑 📏 The Tyranny of Metrics](./the-tyranny-of-metrics.md)  
 - [🚫📄🇺🇸 The Undocumented Americans](./the-undocumented-americans.md)  
+- [🧑‍🤝‍🧑🧠 The Undoing Project: A Friendship That Changed Our Minds](./the-undoing-project-a-friendship-that-changed-our-minds.md)  
 - [⬆️💪 The Upside of Stress: Why Stress Is Good for You, and How to Get Good at It](./the-upside-of-stress-why-stress-is-good-for-you-and-how-to-get-good-at-it.md)  
 - [🤝📈🇺🇸🔁 The Upswing: How America Came Together a Century Ago and How We Can Do It Again](./the-upswing.md)  
 - [🌀⬆️🧠 The Upward Spiral: Using Neuroscience to Reverse the Course of Depression, One Small Change at a Time](./the-upward-spiral-using-neuroscience-to-reverse-the-course-of-depression-one-small-change-at-a-time.md)  

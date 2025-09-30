@@ -49,7 +49,7 @@ CTA: 🚨 Shield our future.
     * 🕵️ *Legacy of Ashes: The History of the CIA* by Tim Weiner (A critical look at another crucial, often opaque, government agency managing significant risks).  
     * 🧠 *The Death of Expertise: The Campaign Against Established Knowledge and Why it Matters* by Tom Nichols (Explores the societal devaluation of expertise, a theme central to *The Fifth Risk*'s concerns about ignoring career officials).  
     * 🌐 *Recoding America: Why Government is Failing in the Digital Age and How We Can Do Better* by Jennifer Pahlka (Examines the technological and bureaucratic challenges facing government in the 21st century).  
-    * 💭 *The Undoing Project: A Friendship That Changed Our Minds* by Michael Lewis (While not directly about government, it explores the work of behavioral economists Kahneman and Tversky on how humans assess risk and make decisions, providing a psychological backdrop to the challenges Lewis describes).  
+    * [🧑‍🤝‍🧑🧠 The Undoing Project: A Friendship That Changed Our Minds](./the-undoing-project-a-friendship-that-changed-our-minds.md) by Michael Lewis (While not directly about government, it explores the work of behavioral economists Kahneman and Tversky on how humans assess risk and make decisions, providing a psychological backdrop to the challenges Lewis describes).  
     * 🏛️ *Why We're Polarized* by Ezra Klein (Discusses the political and social forces that have led to deep partisan divisions, which can impact the functioning of government agencies).  
   
 ### ⚖️ Contrasting Books (Different Perspectives on Government/Risk)  

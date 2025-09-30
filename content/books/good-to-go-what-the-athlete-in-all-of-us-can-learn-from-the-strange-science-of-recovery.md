@@ -37,7 +37,7 @@ CTA: 💪 Optimize wellbeing.
 ### 👯 Similar Books  
   
 * 🧬 The Sports Gene: Inside the Unexpected Science of Extraordinary Athletic Performance by David Epstein  
-* 💪 Endure: Mind, Body, and the Curiously Elastic Limits of Human Performance by Alex Hutchinson  
+* [💪🧠 Endure: Mind, Body, and the Curiously Elastic Limits of Human Performance](./endure-mind-body-and-the-curiously-elastic-limits-of-human-performance.md) by Alex Hutchinson  
 * 👩 Roar: How to Match Your Food and Fitness to Your Unique Female Physiology for Optimum Performance, Great Health, and a Strong, Lean Body for Life by Stacy Sims  
 * [😴💭 Why We Sleep: Unlocking the Power of Sleep and Dreams](./why-we-sleep-unlocking-the-power-of-sleep-and-dreams.md) by Matthew Walker  
 * 🎾 Bounce: Mozart, Federer, Picasso, Beckham, and the Science of Success by Matthew Syed  

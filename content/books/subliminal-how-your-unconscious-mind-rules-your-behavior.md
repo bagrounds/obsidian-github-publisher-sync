@@ -42,7 +42,7 @@ Leonard Mlodinow, a theoretical physicist 👨‍🔬 and science writer, ✍️
 * **[🔮🤷🏼‍♀️🤪 Predictably Irrational: The Hidden Forces That Shape Our Decisions](./predictably-irrational.md) by Dan Ariely:** Delves into the systematic ways in which humans are irrational, often driven by unconscious biases and external factors. 🤔  
 * **[👉🤏 Nudge: Improving Decisions about Health, Wealth, and Happiness](./nudge.md) by Richard Thaler and Cass Sunstein:** Focuses on how subtle changes in the way choices are presented ("nudges") can significantly influence decisions, demonstrating the power of context and the unconscious. 🎯  
 * **[😇😈 Behave: The Biology of Humans at Our Best and Worst](./behave-the-biology-of-humans-at-our-best-and-worst.md) by Robert M. Sapolsky:** A comprehensive look at the biological factors, including unconscious drives and brain function, that underpin human behavior. 🧬  
-* 🫂 **The Undoing Project: A Friendship That Changed Our Minds by Michael Lewis:** Tells the story of the collaboration between Daniel Kahneman and Amos Tversky and their groundbreaking work on cognitive biases and heuristics. 🧑‍🤝‍🧑  
+* **[🧑‍🤝‍🧑🧠 The Undoing Project: A Friendship That Changed Our Minds](./the-undoing-project-a-friendship-that-changed-our-minds.md) by Michael Lewis:** Tells the story of the collaboration between Daniel Kahneman and Amos Tversky and their groundbreaking work on cognitive biases and heuristics. 🧑‍🤝‍🧑  
   
 **☯️ Contrasting or Complementary Perspectives (Consciousness, Free Will, Different Psychological Frameworks):**  
   

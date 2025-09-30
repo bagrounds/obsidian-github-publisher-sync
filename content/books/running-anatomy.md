@@ -59,7 +59,7 @@ These books offer detailed insights into running mechanics, injury prevention, a
 These recommendations offer different perspectives on running, moving beyond pure anatomy to focus on training methodologies, mental aspects, or broader movement principles.  
   
 * 📊 **Daniels' Running Formula by Jack Daniels**: 📈 While Running Anatomy focuses on *how* the body works, Daniels' Running Formula provides a highly scientific and data-driven approach to structuring training plans. 🎯 It uses current fitness levels to define specific intensities and speeds for workouts, making it a guide for *what* to do in training.  
-* 🧠 **Endure: Mind, Body, and the Curiously Elastic Limits of Human Performance by Alex Hutchinson**: 💡 Referenced within Running Anatomy, this book contrasts with a purely physical view by exploring the psychological and neurological factors that influence human endurance and performance, including concepts like the "central governor model".  
+* **[💪🧠 Endure: Mind, Body, and the Curiously Elastic Limits of Human Performance](./endure-mind-body-and-the-curiously-elastic-limits-of-human-performance.md) by Alex Hutchinson**: 💡 Referenced within Running Anatomy, this book contrasts with a purely physical view by exploring the psychological and neurological factors that influence human endurance and performance, including concepts like the "central governor model".  
 * 🧘 **ChiRunning by Danny Dreyer**: 🧘‍♀️ This book presents a revolutionary approach to running form, emphasizing effortless, injury-free running through principles of balance, relaxation, and proper alignment rather than muscle-specific anatomical breakdown. ✨ It focuses on technique to minimize impact.  
   
 ### 🌀 Creatively Related Books  

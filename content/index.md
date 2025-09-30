@@ -10,8 +10,9 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 📑 Notes, 💭 thoughts, and 🔗 Links.  
 ❔ What do 🫵 _you_ 🤔 think?  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (319)  
-- [2025-09-29](./reflections/2025-09-29.md)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (320)  
+- [2025-09-30](./reflections/2025-09-30.md)  
+- [2025-09-29 | 🌧️ Rain | 🏆 Excellence | ⚙️ Engineering 🪞🛍️🤖💬📚📄](./reflections/2025-09-29.md)  
 - [2025-09-28 | 🏃🏼‍♀️ Bodies | 🧠 Minds | 👊 Power 📺📰📚👥](./reflections/2025-09-28.md)  
 - [2025-09-27 | 🧘🏼‍♀️🔥 Calm Under Fire 📺📰🔍📚](./reflections/2025-09-27.md)  
 - [2025-09-26 | ♾️ Autism | 🧠 Emotion | 🇺🇸 Promise 📺📚📰](./reflections/2025-09-26.md)  
@@ -20,20 +21,19 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [2025-09-23 | 🎙️ Kimmel | 📺 Amusing | ✝️ Christ 📺📚](./reflections/2025-09-23.md)  
 - [2025-09-22 | 👤 Being | 🎙️ Kimmel 📚📺](./reflections/2025-09-22.md)  
 - [2025-09-21 | 🥸🌊 Hidden Spring 📚](./reflections/2025-09-21.md)  
-- [2025-09-20 | 🫵🏼👀🧠 Being You 📚](./reflections/2025-09-20.md)  
   
   
-## [📚 Books](./books/index.md) (653)  
+## [📚 Books](./books/index.md) (655)  
+- [🤔💸 Misbehaving: The Making of Behavioral Economics](./books/misbehaving-the-making-of-behavioral-economics.md)  
+- [💰💥📉 The Big Short: Inside the Doomsday Machine](./books/the-big-short-inside-the-doomsday-machine.md)  
+- [🚫✅🤥 Post-Truth](./books/post-truth.md)  
+- [⚠️🥴🕹️🌐 The Fifth Risk](./books/the-fifth-risk.md)  
+- [🤫🧠 Subliminal: How Your Unconscious Mind Rules Your Behavior](./books/subliminal-how-your-unconscious-mind-rules-your-behavior.md)  
+- [🧑‍🤝‍🧑🧠 The Undoing Project: A Friendship That Changed Our Minds](./books/the-undoing-project-a-friendship-that-changed-our-minds.md)  
+- [🧠🏆 Inner Excellence: Train Your Mind for Extraordinary Performance and the Best Possible Life](./books/inner-excellence-train-your-mind-for-extraordinary-performance-and-the-best-possible-life.md)  
 - [✍️📣 The Adweek Copywriting Handbook: The Ultimate Guide to Writing Powerful Advertising and Marketing Copy from One of America's Top Copywriters](./books/the-adweek-copywriting-handbook-the-ultimate-guide-to-writing-powerful-advertising-and-marketing-copy-from-one-of-americas-top-copywriters.md)  
 - [📚🧠 The New York Times Guide to Essential Knowledge: A Desk Reference for the Curious Mind](./books/the-new-york-times-guide-to-essential-knowledge-a-desk-reference-for-the-curious-mind.md)  
 - [😈🌍🔬🕯️🌑 The Demon-Haunted World: Science as a Candle in the Dark](./books/the-demon-haunted-world.md)  
-- [🥼🛡️ The Scientific Attitude: Defending Science from Denial, Fraud, and Pseudoscience](./books/the-scientific-attitude.md)  
-- [🧪👎 Bad Science: Quacks, Hacks, and Big Pharma Flacks](./books/bad-science-quacks-hacks-and-big-pharma-flacks.md)  
-- [🗣️🔗 Supercommunicators: How to Unlock the Secret Language of Connection](./books/supercommunicators-how-to-unlock-the-secret-language-of-connection.md)  
-- [💔💪🔗 The Power of Vulnerability: Teachings of Authenticity, Connection, and Courage](./books/the-power-of-vulnerability-teachings-of-authenticity-connection-and-courage.md)  
-- [🔒🐦 I Know Why the Caged Bird Sings](./books/i-know-why-the-caged-bird-sings.md)  
-- [🇮🇱⏳ The Hundred Years' War on Palestine: A History of Settler Colonialism and Resistance, 1917–2017](./books/the-hundred-years-war-on-palestine-a-history-of-settler-colonialism-and-resistance-1917-2017.md)  
-- [🇺🇸⚔️ Alexander Hamilton](./books/alexander-hamilton.md)  
   
   
 ## [📺 Videos](./videos/index.md) (325)  

@@ -7,8 +7,9 @@ URL: https://bagrounds.org/reflections
 backlinks: false
 ---
 [Home](../index.md)  
-# 🪞 Reflections (320)  
-- [2025-09-30](./2025-09-30.md)  
+# 🪞 Reflections (321)  
+- [2025-10-01](./2025-10-01.md)  
+- [2025-09-30 | 🧠 Endure | 🇮🇱 Netanyahu | 🛑 Shutdown 📚📺📰📄✍️](./2025-09-30.md)  
 - [2025-09-29 | 🌧️ Rain | 🏆 Excellence | ⚙️ Engineering 🪞🛍️🤖💬📚📄](./2025-09-29.md)  
 - [2025-09-28 | 🏃🏼‍♀️ Bodies | 🧠 Minds | 👊 Power 📺📰📚👥](./2025-09-28.md)  
 - [2025-09-27 | 🧘🏼‍♀️🔥 Calm Under Fire 📺📰🔍📚](./2025-09-27.md)  

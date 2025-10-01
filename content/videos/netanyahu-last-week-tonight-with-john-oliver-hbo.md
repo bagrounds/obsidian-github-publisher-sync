@@ -48,4 +48,7 @@ youtube: https://youtu.be/0_Bwix9IjOE
   
 ### Creatively Related  
 * 🏰 The Power Broker: Robert Moses and the Fall of New York 🍎 by Robert A. Caro. 🏗️ A massive biography detailing how one unelected, immensely ambitious official manipulated political systems to acquire and maintain power over decades, offering a powerful parallel on the theme of long-term political dominance.  
-* 👑 The Prince 📜 by Niccolò Machiavelli. 🐍 A classic treatise on political philosophy that discusses how rulers can acquire, maintain, and wield political power, directly relating to Netanyahu's relentless focus on clinging to office and pragmatic alliances \[[30:26](http://www.youtube.com/watch?v=0_Bwix9IjOE&t=1826)].
+* 👑 The Prince 📜 by Niccolò Machiavelli. 🐍 A classic treatise on political philosophy that discusses how rulers can acquire, maintain, and wield political power, directly relating to Netanyahu's relentless focus on clinging to office and pragmatic alliances \[[30:26](http://www.youtube.com/watch?v=0_Bwix9IjOE&t=1826)].  
+  
+## 🐦 Tweet  
+<blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">🇮🇱🎤📺 Netanyahu: Last Week Tonight with John Oliver (HBO)<br><br>👮 Corruption | 📰 Media Bias | 🗳️ Israeli Politics | 💰 Funding of Hamas | 🕊️ Palestinian Conflict | 📜 Revisionist Zionism | 🤝 Abraham Accords | 🇺🇸 US Aid to Israel<a href="https://t.co/R3BJfNbXcQ">https://t.co/R3BJfNbXcQ</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/1973170357025866122?ref_src=twsrc%5Etfw">September 30, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

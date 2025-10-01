@@ -10,8 +10,9 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 📑 Notes, 💭 thoughts, and 🔗 Links.  
 ❔ What do 🫵 _you_ 🤔 think?  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (320)  
-- [2025-09-30](./reflections/2025-09-30.md)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (321)  
+- [2025-10-01](./reflections/2025-10-01.md)  
+- [2025-09-30 | 🧠 Endure | 🇮🇱 Netanyahu | 🛑 Shutdown 📚📺📰📄✍️](./reflections/2025-09-30.md)  
 - [2025-09-29 | 🌧️ Rain | 🏆 Excellence | ⚙️ Engineering 🪞🛍️🤖💬📚📄](./reflections/2025-09-29.md)  
 - [2025-09-28 | 🏃🏼‍♀️ Bodies | 🧠 Minds | 👊 Power 📺📰📚👥](./reflections/2025-09-28.md)  
 - [2025-09-27 | 🧘🏼‍♀️🔥 Calm Under Fire 📺📰🔍📚](./reflections/2025-09-27.md)  
@@ -20,33 +21,32 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [2025-09-24 | 🧠⚡ Learn Fast 📺📚](./reflections/2025-09-24.md)  
 - [2025-09-23 | 🎙️ Kimmel | 📺 Amusing | ✝️ Christ 📺📚](./reflections/2025-09-23.md)  
 - [2025-09-22 | 👤 Being | 🎙️ Kimmel 📚📺](./reflections/2025-09-22.md)  
-- [2025-09-21 | 🥸🌊 Hidden Spring 📚](./reflections/2025-09-21.md)  
   
   
-## [📚 Books](./books/index.md) (655)  
-- [🤔💸 Misbehaving: The Making of Behavioral Economics](./books/misbehaving-the-making-of-behavioral-economics.md)  
-- [💰💥📉 The Big Short: Inside the Doomsday Machine](./books/the-big-short-inside-the-doomsday-machine.md)  
-- [🚫✅🤥 Post-Truth](./books/post-truth.md)  
+## [📚 Books](./books/index.md) (658)  
+- [🧑‍🤝‍🧑💸 The Two-Income Trap](./books/the-two-income-trap.md)  
+- [📢🕸️ Network Propaganda: Manipulation, Disinformation, and Radicalization in American Politics](./books/network-propaganda-manipulation-disinformation-and-radicalization-in-american-politics.md)  
+- [❌ Being Wrong: Adventures in the Margin of Error](./books/being-wrong-adventures-in-the-margin-of-error.md)  
 - [⚠️🥴🕹️🌐 The Fifth Risk](./books/the-fifth-risk.md)  
-- [🤫🧠 Subliminal: How Your Unconscious Mind Rules Your Behavior](./books/subliminal-how-your-unconscious-mind-rules-your-behavior.md)  
-- [🧑‍🤝‍🧑🧠 The Undoing Project: A Friendship That Changed Our Minds](./books/the-undoing-project-a-friendship-that-changed-our-minds.md)  
-- [🧠🏆 Inner Excellence: Train Your Mind for Extraordinary Performance and the Best Possible Life](./books/inner-excellence-train-your-mind-for-extraordinary-performance-and-the-best-possible-life.md)  
-- [✍️📣 The Adweek Copywriting Handbook: The Ultimate Guide to Writing Powerful Advertising and Marketing Copy from One of America's Top Copywriters](./books/the-adweek-copywriting-handbook-the-ultimate-guide-to-writing-powerful-advertising-and-marketing-copy-from-one-of-americas-top-copywriters.md)  
-- [📚🧠 The New York Times Guide to Essential Knowledge: A Desk Reference for the Curious Mind](./books/the-new-york-times-guide-to-essential-knowledge-a-desk-reference-for-the-curious-mind.md)  
-- [😈🌍🔬🕯️🌑 The Demon-Haunted World: Science as a Candle in the Dark](./books/the-demon-haunted-world.md)  
+- [🚫✅🤥 Post-Truth](./books/post-truth.md)  
+- [💀👨‍🏫 The Death of Expertise: The Campaign Against Established Knowledge and Why It Matters](./books/the-death-of-expertise-the-campaign-against-established-knowledge-and-why-it-matters.md)  
+- [🏃😊❤️ The Joy of Movement: How Exercise Helps Us Find Happiness, Hope, Connection, and Courage](./books/the-joy-of-movement-how-exercise-helps-us-find-happiness-hope-connection-and-courage.md)  
+- [🧠🏃 The Psychological Benefits of Exercise and Physical Activity](./books/the-psychological-benefits-of-exercise-and-physical-activity.md)  
+- [💪🧪 Good to Go: What the Athlete in All of Us Can Learn from the Strange Science of Recovery](./books/good-to-go-what-the-athlete-in-all-of-us-can-learn-from-the-strange-science-of-recovery.md)  
+- [🏃🏆👵 The Complete Guide to Running: How to Be a Champion from 9 to 90](./books/the-complete-guide-to-running.md)  
   
   
-## [📺 Videos](./videos/index.md) (325)  
+## [📺 Videos](./videos/index.md) (330)  
+- [🇮🇱🎤📺 Netanyahu: Last Week Tonight with John Oliver (HBO)](./videos/netanyahu-last-week-tonight-with-john-oliver-hbo.md)  
+- [👩‍👧‍👦💼⬇️ Why so many mothers with young children are leaving the workforce](./videos/why-so-many-mothers-with-young-children-are-leaving-the-workforce.md)  
+- [📺🪖🇺🇸 WATCH: Hegseth's full remarks on new military directives ending 'politically correct' leadership](./videos/watch-hegseths-full-remarks-on-new-military-directives-ending-politically-correct-leadership.md)  
+- [🧠💰⚠️ The price you pay for being smart It's Been a Minute](./videos/the-price-you-pay-for-being-smart-its-been-a-minute.md)  
+- [⚕️🗣️💊 Health experts respond to Trump's claims linking autism to acetaminophen](./videos/health-experts-respond-to-trumps-claims-linking-autism-to-acetaminophen.md)  
+- [🏛️💥🧱🚫 Government barreling toward shutdown with Congress in partisan deadlock](./videos/government-barreling-toward-shutdown-with-congress-in-partisan-deadlock.md)  
+- [🦴🤕🏃‍♀️🧪 How to Reduce Bone Injury Risks | Running Science](./videos/how-to-reduce-bone-injury-risks-running-science.md)  
+- [🧠⬆️🍎🚀 Enhance Your Learning Speed & Health Using Neuroscience Based Protocols | Dr. Poppy Crum](./videos/enhance-your-learning-speed-health-using-neuroscience-based-protocols-dr-poppy-crum.md)  
 - [🧠🎯⬆️ Tools to Enhance Working Memory & Attention](./videos/tools-to-enhance-working-memory-and-attention.md)  
 - [☕⏳😴🧊☀️🏋️ Dr. Matt Walker: How to Structure Your Sleep, Use Naps & Time Caffeine | Huberman Lab Guest Series](./videos/dr-matt-walker-how-to-structure-your-sleep-use-naps-and-time-caffeine-huberman-lab-guest-series.md)  
-- [🧠💊🎯 Improve Focus with Behavioral Tools & Medication for ADHD | Dr. John Kruse](./videos/improve-focus-with-behavioral-tools-medication-for-adhd-dr-john-kruse.md)  
-- [🔑🔓🚀🌟 Dr. Adam Grant: How to Unlock Your Potential, Motivation & Unique Abilities](./videos/dr-adam-grant-how-to-unlock-your-potential-motivation-and-unique-abilities.md)  
-- [🍎🔄🩸 Dr. Casey Means: Transform Your Health by Improving Metabolism, Hormone & Blood Sugar Regulation](./videos/dr-casey-means-transform-your-health-by-improving-metabolism-hormone-and-blood-sugar-regulation.md)  
-- [😴🧠💡 Dr. Matt Walker: Using Sleep to Improve Learning, Creativity & Memory | Huberman Lab Guest Series](./videos/dr-matt-walker-using-sleep-to-improve-learning-creativity-and-memory-huberman-lab-guest-series.md)  
-- [🧠⬆️🧑‍⚕️💪💡 Dr. Mark D'Esposito: How to Optimize Cognitive Function & Brain Health](./videos/dr-mark-desposito-how-to-optimize-cognitive-function-and-brain-health.md)  
-- [🤔🤯❤️📖 How to Understand Emotions | Dr. Lisa Feldman Barrett](./videos/how-to-understand-emotions-dr-lisa-feldman-barrett.md)  
-- [🧠👁️📈✨ How to Expand Your Consciousness | Dr. Christof Koch](./videos/how-to-expand-your-consciousness-dr-christof-koch.md)  
-- [📢👮‍♂️🇺🇸 News Wrap: Trump orders troops to Portland, authorizing ‘full force’](./videos/news-wrap-trump-orders-troops-to-portland-authorizing-full-force.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (82)  
@@ -57,12 +57,12 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [🧑‍💼🛡️ Job Guarantee / Employer of Last Resort](./topics/job-guarantee-employer-of-last-resort.md)  
   
   
-## [📄  Articles](./articles/index.md) (59)  
+## [📄  Articles](./articles/index.md) (60)  
+- [💰⚙️📈🔍 Defining and Characterizing Reward Hacking](./articles/defining-and-characterizing-reward-hacking.md)  
+- [🧠💪📈 BDNF Response to High Intensity Exercise](./articles/bdnf-response-to-high-intensity-exercise.md)  
 - [🧠📈🔑 Cognitive load is what matters](./articles/cognitive-load-is-what-matters.md)  
 - [🤔⚙️🧩🏗️💡 Everything I know about good system design](./articles/everything-i-know-about-good-system-design.md)  
 - [❓📈🤦 Failing to Understand the Exponential, Again](./articles/failing-to-understand-the-exponential-again.md)  
-- [👀👶🏼🏃🏼‍♀️🛣️ What to Look for in a Jogging Stroller](./articles/what-to-look-for-in-a-jogging-stroller.md)  
-- [🔍🍎🌲📚 Information Foraging Theory](./articles/information-foraging-theory.md)  
   
   
 ## [🤖💬 Bot Chats](./bot-chats/index.md) (45)  

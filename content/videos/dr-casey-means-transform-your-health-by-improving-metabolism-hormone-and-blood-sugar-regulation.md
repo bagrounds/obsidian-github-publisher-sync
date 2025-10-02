@@ -47,4 +47,4 @@ While the podcast 🧐 thoroughly explains the mechanisms and importance of meta
 * The Obesity Code by Jason Fung: Discusses the hormonal basis of obesity and insulin resistance, offering a different perspective on diet and metabolic disease.  
 * [⚡🧠🏃 Spark: The Revolutionary New Science of Exercise and the Brain](../books/spark-the-revolutionary-new-science-of-exercise-and-the-brain.md) by John J. Ratey: Highlights the profound impact of physical activity on brain health, which is intertwined with metabolic health.  
 * Salt Sugar Fat: How the Food Giants Hooked Us by Michael Moss: Investigates how the food industry designs products that contribute to poor dietary habits and metabolic issues.  
-* Lifespan: Why We Age—and Why We Don't Have To by David A. Sinclair: Delves into the science of aging and how metabolic pathways play a crucial role in longevity and disease prevention.
+* [⏳🙅 Lifespan: Why We Age - and Why We Don't Have To](../books/lifespan-why-we-age-and-why-we-dont-have-to.md) To by David A. Sinclair: Delves into the science of aging and how metabolic pathways play a crucial role in longevity and disease prevention.

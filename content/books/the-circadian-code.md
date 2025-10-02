@@ -5,6 +5,7 @@ aliases:
 URL: https://bagrounds.org/books/the-circadian-code
 share: true
 affiliate link: https://amzn.to/4mKeliI
+CTA: ⏰  Synchronize your life.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🌄⏳ The Circadian Code: Lose Weight, Supercharge Your Energy, and Transform Your Health from Morning to Midnight  
@@ -53,8 +54,8 @@ affiliate link: https://amzn.to/4mKeliI
   
 ### 🎨 Creatively Related Books (Broader Themes)  
 * ⚖️ **The Obesity Code** by Dr. Jason Fung: Focuses on the hormonal theory of obesity, particularly insulin resistance, and advocates for intermittent fasting (including TRE) and dietary changes (reducing sugar/refined carbs) as solutions. This aligns closely with the metabolic benefits discussed by Panda.  
-* ⏳ **Lifespan: Why We Age—and Why We Don't Have To** by David Sinclair: Explores the science of aging and longevity, touching upon factors like diet, fasting, and cellular repair mechanisms (like autophagy) that overlap with the health benefits attributed to TRE.  
-* **[⚛️🔄 Atomic Habits](./atomic-habits.md)** by James Clear: While not about circadian rhythms, this book provides a practical framework for building the consistent habits (like regular sleep times, eating windows, and exercise routines) needed to implement the advice in "The Circadian Code."  
+* **[⏳🙅 Lifespan: Why We Age - and Why We Don't Have To](./lifespan-why-we-age-and-why-we-dont-have-to.md)** by David Sinclair: Explores the science of aging and longevity, touching upon factors like diet, fasting, and cellular repair mechanisms (like autophagy) that overlap with the health benefits attributed to TRE.  
+* **[⚛️🔄 Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones](./atomic-habits.md)** by James Clear: While not about circadian rhythms, this book provides a practical framework for building the consistent habits (like regular sleep times, eating windows, and exercise routines) needed to implement the advice in "The Circadian Code."  
 * ☀️ **Chasing the Sun: How the Science of Sunlight Shapes Our Bodies and Minds** by Linda Geddes: Explores the profound impact of sunlight (and its absence) on human health, sleep, and biology, connecting directly to Panda's emphasis on light's role in circadian rhythm regulation.  
 * 🦠 **Gut: The Inside Story of Our Body's Most Underrated Organ** by Giulia Enders: Discusses the importance of gut health and the microbiome, which research suggests is influenced by meal timing and circadian rhythms.  
 * 🔆 **The Light Doctor: Using Light to Boost Health, Improve Sleep, and Live Longer** by Dr. Martin Moore-Ede: Focuses specifically on the therapeutic and regulatory power of light for health and circadian alignment.  

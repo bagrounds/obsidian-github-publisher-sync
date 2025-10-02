@@ -11,7 +11,7 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 ❔ What do 🫵 _you_ 🤔 think?  
   
 ## [🪞 Reflections](./reflections/index.md) ~ Blog (321)  
-- [2025-10-01](./reflections/2025-10-01.md)  
+- [2025-10-01 | ✨ Endure | ⏳ Outlive | 🛡️ Preserve 📚](./reflections/2025-10-01.md)  
 - [2025-09-30 | 🧠 Endure | 🇮🇱 Netanyahu | 🛑 Shutdown 📚📺📰📄✍️](./reflections/2025-09-30.md)  
 - [2025-09-29 | 🌧️ Rain | 🏆 Excellence | ⚙️ Engineering 🪞🛍️🤖💬📚📄](./reflections/2025-09-29.md)  
 - [2025-09-28 | 🏃🏼‍♀️ Bodies | 🧠 Minds | 👊 Power 📺📰📚👥](./reflections/2025-09-28.md)  
@@ -23,20 +23,21 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [2025-09-22 | 👤 Being | 🎙️ Kimmel 📚📺](./reflections/2025-09-22.md)  
   
   
-## [📚 Books](./books/index.md) (658)  
+## [📚 Books](./books/index.md) (659)  
+- [⏳🔬🎨 Outlive: The Science and Art of Longevity](./books/outlive.md)  
+- [💪📈 Creatine: A Natural Substance and Its Benefits for Muscle Metabolism, Fitness, Health & Longevity](./books/creatine-a-natural-substance-and-its-benefits-for-muscle-metabolism-fitness-health-longevity.md)  
+- [🌄⏳ The Circadian Code: Lose Weight, Supercharge Your Energy, and Transform Your Health from Morning to Midnight](./books/the-circadian-code.md)  
+- [⏱️🍎 Time Restricted Eating: A Look into the Lifestyle](./books/time-restricted-eating-a-look-into-the-lifestyle.md)  
+- [⏳🙅 Lifespan: Why We Age - and Why We Don't Have To](./books/lifespan-why-we-age-and-why-we-dont-have-to.md)  
 - [🧑‍🤝‍🧑💸 The Two-Income Trap](./books/the-two-income-trap.md)  
 - [📢🕸️ Network Propaganda: Manipulation, Disinformation, and Radicalization in American Politics](./books/network-propaganda-manipulation-disinformation-and-radicalization-in-american-politics.md)  
 - [❌ Being Wrong: Adventures in the Margin of Error](./books/being-wrong-adventures-in-the-margin-of-error.md)  
 - [⚠️🥴🕹️🌐 The Fifth Risk](./books/the-fifth-risk.md)  
 - [🚫✅🤥 Post-Truth](./books/post-truth.md)  
-- [💀👨‍🏫 The Death of Expertise: The Campaign Against Established Knowledge and Why It Matters](./books/the-death-of-expertise-the-campaign-against-established-knowledge-and-why-it-matters.md)  
-- [🏃😊❤️ The Joy of Movement: How Exercise Helps Us Find Happiness, Hope, Connection, and Courage](./books/the-joy-of-movement-how-exercise-helps-us-find-happiness-hope-connection-and-courage.md)  
-- [🧠🏃 The Psychological Benefits of Exercise and Physical Activity](./books/the-psychological-benefits-of-exercise-and-physical-activity.md)  
-- [💪🧪 Good to Go: What the Athlete in All of Us Can Learn from the Strange Science of Recovery](./books/good-to-go-what-the-athlete-in-all-of-us-can-learn-from-the-strange-science-of-recovery.md)  
-- [🏃🏆👵 The Complete Guide to Running: How to Be a Champion from 9 to 90](./books/the-complete-guide-to-running.md)  
   
   
 ## [📺 Videos](./videos/index.md) (330)  
+- [🍎🔄🩸 Dr. Casey Means: Transform Your Health by Improving Metabolism, Hormone & Blood Sugar Regulation](./videos/dr-casey-means-transform-your-health-by-improving-metabolism-hormone-and-blood-sugar-regulation.md)  
 - [🇮🇱🎤📺 Netanyahu: Last Week Tonight with John Oliver (HBO)](./videos/netanyahu-last-week-tonight-with-john-oliver-hbo.md)  
 - [👩‍👧‍👦💼⬇️ Why so many mothers with young children are leaving the workforce](./videos/why-so-many-mothers-with-young-children-are-leaving-the-workforce.md)  
 - [📺🪖🇺🇸 WATCH: Hegseth's full remarks on new military directives ending 'politically correct' leadership](./videos/watch-hegseths-full-remarks-on-new-military-directives-ending-politically-correct-leadership.md)  
@@ -46,7 +47,6 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [🦴🤕🏃‍♀️🧪 How to Reduce Bone Injury Risks | Running Science](./videos/how-to-reduce-bone-injury-risks-running-science.md)  
 - [🧠⬆️🍎🚀 Enhance Your Learning Speed & Health Using Neuroscience Based Protocols | Dr. Poppy Crum](./videos/enhance-your-learning-speed-health-using-neuroscience-based-protocols-dr-poppy-crum.md)  
 - [🧠🎯⬆️ Tools to Enhance Working Memory & Attention](./videos/tools-to-enhance-working-memory-and-attention.md)  
-- [☕⏳😴🧊☀️🏋️ Dr. Matt Walker: How to Structure Your Sleep, Use Naps & Time Caffeine | Huberman Lab Guest Series](./videos/dr-matt-walker-how-to-structure-your-sleep-use-naps-and-time-caffeine-huberman-lab-guest-series.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (82)  

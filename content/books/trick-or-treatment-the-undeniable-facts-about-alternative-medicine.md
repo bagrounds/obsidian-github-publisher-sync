@@ -5,9 +5,12 @@ aliases:
 URL: https://bagrounds.org/books/trick-or-treatment-the-undeniable-facts-about-alternative-medicine
 share: true
 CTA: 🧐 Question remedies.
+affiliate link: https://amzn.to/3IViotn
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ❓✅ Trick or Treatment: The Undeniable Facts about Alternative Medicine  
+[🛒 Trick or Treatment: The Undeniable Facts about Alternative Medicine. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3IViotn)  
+  
 ## 📚 Book Report: 🧪 Trick or Treatment: The Undeniable Facts about Alternative Medicine  
   
 🧪 Trick or Treatment: The Undeniable Facts about Alternative Medicine, co-authored by science writer Simon Singh and Professor Edzard Ernst, offers a rigorous, evidence-based examination of various alternative medical practices. 🗓️ Published in 2008, the book aims to provide clarity and truth regarding treatments that exist outside the realm of conventional medicine.  

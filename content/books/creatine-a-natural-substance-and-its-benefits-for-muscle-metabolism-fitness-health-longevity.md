@@ -4,7 +4,7 @@ aliases:
   - "💪📈 Creatine: A Natural Substance and Its Benefits for Muscle Metabolism, Fitness, Health & Longevity"
 URL: https://bagrounds.org/books/creatine-a-natural-substance-and-its-benefits-for-muscle-metabolism-fitness-health-longevity
 share: true
-CTA: Fuel your potential.
+CTA: 💪 Elevate performance.
 affiliate link: https://amzn.to/3G32qw5
 ---
 [Home](../index.md) > [Books](./index.md)  
@@ -48,7 +48,7 @@ In essence, the book appears to serve as an informative guide for a general audi
   
 * 🧠 **"Boundless: Upgrade Your Brain, Optimize Your Body & Defy Aging"** by Ben Greenfield: This book covers a wide range of biohacking strategies for optimizing physical and cognitive performance and longevity, likely discussing supplements like creatine within a broader context of lifestyle interventions. 🚀  
 * 🦠 **"Tripping Over the Truth: How the Metabolic Theory of Cancer Is Overturning One of Medicine's Most Entrenched Paradigms"** by Travis Christofferson: This book explores the role of metabolism in disease, offering a deeper dive into cellular energy pathways that are fundamental to understanding how creatine works at a basic level. 🧬  
-* 👵 **"Lifespan: Why We Age—and Why We Don't Have To"** by David A. Sinclair and Matthew D. LaPlante: This book examines the science of aging and potential interventions to slow or reverse it, discussing various metabolic pathways and compounds that influence longevity, which could provide a broader context for creatine's potential role in healthy aging. 👴  
+* **[⏳🙅 Lifespan: Why We Age - and Why We Don't Have To](./lifespan-why-we-age-and-why-we-dont-have-to.md)** by David A. Sinclair and Matthew D. LaPlante: This book examines the science of aging and potential interventions to slow or reverse it, discussing various metabolic pathways and compounds that influence longevity, which could provide a broader context for creatine's potential role in healthy aging. 👴  
 * 🏅 **"Faster, Higher, Stronger: How Sports Science is Reshaping Training, Nutrition, and Recruitment"** by Mark McClusky: This book explores the history and evolution of sports science, providing a historical and technological context for the research and application of performance-enhancing substances like creatine. 📈  
 * ⚡ **"Energy Medicine: The Scientific Basis"** by James L. Oschman: This book delves into the body's energy fields and their role in health and healing. While a departure from biochemistry, it offers a different perspective on energy within the body that can be creatively related to the cellular energy processes influenced by creatine.🌀  
   

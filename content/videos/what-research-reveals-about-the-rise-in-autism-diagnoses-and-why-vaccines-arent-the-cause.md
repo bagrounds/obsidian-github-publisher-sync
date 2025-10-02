@@ -60,7 +60,7 @@ tags:
   
 ### 📚 Debunked Scientific Claims  
   
-- ⚕️ **Trick or Treatment** by Simon Singh and Edzard Ernst.  
+- **[❓✅ Trick or Treatment: The Undeniable Facts about Alternative Medicine](../books/trick-or-treatment-the-undeniable-facts-about-alternative-medicine.md)** by Simon Singh and Edzard Ernst.  
     - ℹ️ **Description:** 📖 This book critically examines various forms of alternative medicine, including 🏠 homeopathy, 📍 acupuncture, and 🦴 chiropractic, using 🔬 scientific evidence to assess their effectiveness. 💪 It empowers readers to distinguish between 🧪 evidence-based treatments and those lacking 🚫 scientific support.  
     - 👨‍🔬 **Credentials:** ✍️ Simon Singh is a British science writer and physicist. 👨‍⚕️ Edzard Ernst is a retired physician and academic researcher specializing in complementary and alternative medicine. 💯 Both are known for their rigorous, evidence-based approach.  
     - 💡 **Relevance:** 🎬 In the context of the video's discussion about debunked claims related to autism, this book provides a 🗺️ framework for understanding how 📢 scientific misinformation can spread and the importance of relying on ✅ credible evidence.  

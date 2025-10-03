@@ -10,7 +10,8 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 📑 Notes, 💭 thoughts, and 🔗 Links.  
 ❔ What do 🫵 _you_ 🤔 think?  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (321)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (322)  
+- [2025-10-02 | 🃏 Trick | 😊 Mood | 🤔 Think 📚](./reflections/2025-10-02.md)  
 - [2025-10-01 | ✨ Endure | ⏳ Outlive | 🛡️ Preserve 📚](./reflections/2025-10-01.md)  
 - [2025-09-30 | 🧠 Endure | 🇮🇱 Netanyahu | 🛑 Shutdown 📚📺📰📄✍️](./reflections/2025-09-30.md)  
 - [2025-09-29 | 🌧️ Rain | 🏆 Excellence | ⚙️ Engineering 🪞🛍️🤖💬📚📄](./reflections/2025-09-29.md)  
@@ -20,23 +21,23 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [2025-09-25 | ❌ Wrong | ☣️ Toxic | 🔰 Original | 🌟 Promised 📺📚📰🔍](./reflections/2025-09-25.md)  
 - [2025-09-24 | 🧠⚡ Learn Fast 📺📚](./reflections/2025-09-24.md)  
 - [2025-09-23 | 🎙️ Kimmel | 📺 Amusing | ✝️ Christ 📺📚](./reflections/2025-09-23.md)  
-- [2025-09-22 | 👤 Being | 🎙️ Kimmel 📚📺](./reflections/2025-09-22.md)  
   
   
-## [📚 Books](./books/index.md) (659)  
+## [📚 Books](./books/index.md) (662)  
+- [🤔🐇🐢 Thinking, Fast and Slow](./books/thinking-fast-and-slow.md)  
+- [🏃😊 Exercise for Mood and Anxiety: Proven Strategies for Overcoming Depression and Enhancing Well-Being](./books/exercise-for-mood-and-anxiety-proven-strategies-for-overcoming-depression-and-enhancing-well-being.md)  
+- [🧠💪😊 Mental Fitness: Maximizing Mood, Motivation, & Mental Wellness by Optimizing the Brain-Body-Biome](./books/mental-fitness-maximizing-mood-motivation-mental-wellness-by-optimizing-the-brain-body-biome.md)  
+- [❓✅ Trick or Treatment: The Undeniable Facts about Alternative Medicine](./books/trick-or-treatment-the-undeniable-facts-about-alternative-medicine.md)  
+- [🧪👎 Bad Science: Quacks, Hacks, and Big Pharma Flacks](./books/bad-science-quacks-hacks-and-big-pharma-flacks.md)  
 - [⏳🔬🎨 Outlive: The Science and Art of Longevity](./books/outlive.md)  
 - [💪📈 Creatine: A Natural Substance and Its Benefits for Muscle Metabolism, Fitness, Health & Longevity](./books/creatine-a-natural-substance-and-its-benefits-for-muscle-metabolism-fitness-health-longevity.md)  
 - [🌄⏳ The Circadian Code: Lose Weight, Supercharge Your Energy, and Transform Your Health from Morning to Midnight](./books/the-circadian-code.md)  
 - [⏱️🍎 Time Restricted Eating: A Look into the Lifestyle](./books/time-restricted-eating-a-look-into-the-lifestyle.md)  
 - [⏳🙅 Lifespan: Why We Age - and Why We Don't Have To](./books/lifespan-why-we-age-and-why-we-dont-have-to.md)  
-- [🧑‍🤝‍🧑💸 The Two-Income Trap](./books/the-two-income-trap.md)  
-- [📢🕸️ Network Propaganda: Manipulation, Disinformation, and Radicalization in American Politics](./books/network-propaganda-manipulation-disinformation-and-radicalization-in-american-politics.md)  
-- [❌ Being Wrong: Adventures in the Margin of Error](./books/being-wrong-adventures-in-the-margin-of-error.md)  
-- [⚠️🥴🕹️🌐 The Fifth Risk](./books/the-fifth-risk.md)  
-- [🚫✅🤥 Post-Truth](./books/post-truth.md)  
   
   
 ## [📺 Videos](./videos/index.md) (330)  
+- [🥼🧠🚫💉 What research reveals about the rise in autism diagnoses and why vaccines aren't the cause](./videos/what-research-reveals-about-the-rise-in-autism-diagnoses-and-why-vaccines-arent-the-cause.md)  
 - [🍎🔄🩸 Dr. Casey Means: Transform Your Health by Improving Metabolism, Hormone & Blood Sugar Regulation](./videos/dr-casey-means-transform-your-health-by-improving-metabolism-hormone-and-blood-sugar-regulation.md)  
 - [🇮🇱🎤📺 Netanyahu: Last Week Tonight with John Oliver (HBO)](./videos/netanyahu-last-week-tonight-with-john-oliver-hbo.md)  
 - [👩‍👧‍👦💼⬇️ Why so many mothers with young children are leaving the workforce](./videos/why-so-many-mothers-with-young-children-are-leaving-the-workforce.md)  
@@ -46,7 +47,6 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [🏛️💥🧱🚫 Government barreling toward shutdown with Congress in partisan deadlock](./videos/government-barreling-toward-shutdown-with-congress-in-partisan-deadlock.md)  
 - [🦴🤕🏃‍♀️🧪 How to Reduce Bone Injury Risks | Running Science](./videos/how-to-reduce-bone-injury-risks-running-science.md)  
 - [🧠⬆️🍎🚀 Enhance Your Learning Speed & Health Using Neuroscience Based Protocols | Dr. Poppy Crum](./videos/enhance-your-learning-speed-health-using-neuroscience-based-protocols-dr-poppy-crum.md)  
-- [🧠🎯⬆️ Tools to Enhance Working Memory & Attention](./videos/tools-to-enhance-working-memory-and-attention.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (82)  

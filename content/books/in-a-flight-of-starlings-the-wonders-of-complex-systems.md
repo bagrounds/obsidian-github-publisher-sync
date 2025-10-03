@@ -4,9 +4,12 @@ aliases:
   - "🐦➕ In a Flight of Starlings: The Wonders of Complex Systems"
 URL: https://bagrounds.org/books/in-a-flight-of-starlings-the-wonders-of-complex-systems
 share: true
+affiliate link: https://amzn.to/4pRxgcO
+CTA: ✨ Explore emergence.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🐦➕ In a Flight of Starlings: The Wonders of Complex Systems  
+[🛒 In a Flight of Starlings: The Wonders of Complex Systems. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4pRxgcO)  
   
 ### 🏆 🎉 Giorgio Parisi's Complex Systems Understanding Strategy  
   

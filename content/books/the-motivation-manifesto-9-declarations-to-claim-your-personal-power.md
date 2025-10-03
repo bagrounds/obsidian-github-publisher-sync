@@ -41,7 +41,7 @@ affiliate link: https://amzn.to/3SwZ7zO
 ## 📚 Book Recommendations  
   
 ### 🌟 Similar Reads (Motivation & Personal Power)  
-* 📚 ***High Performance Habits: How Extraordinary People Become That Way*** **by Brendon Burchard**: 🧠 Explores specific habits that lead to long-term success, complementing the manifesto's focus on motivation.  
+* **[📈🌟 High Performance Habits: How Extraordinary People Become That Way](./high-performance-habits-how-extraordinary-people-become-that-way.md)** **by Brendon Burchard**: 🧠 Explores specific habits that lead to long-term success, complementing the manifesto's focus on motivation.  
 * 📚 ***The Charge: Activating the 10 Human Drives That Make You Feel Alive*** **by Brendon Burchard**: ⚡ Another work by the same author focusing on activating drives for a more engaged life.  
 * 📚 ***You Are a Badass: How to Stop Doubting Your Greatness and Start Living an Awesome Life*** **by Jen Sincero**: 😂 Offers practical advice with humor and wit to build self-confidence and pursue goals, similar to the manifesto's aim of overcoming self-doubt.  
 * 📚 ***[The 7 Habits of Highly Effective People](./the-7-habits-of-highly-effective-people.md)*** **by Stephen R. Covey**: ✅ A classic providing principles for personal and professional effectiveness, including goal-setting and proactivity.  
@@ -59,7 +59,7 @@ affiliate link: https://amzn.to/3SwZ7zO
 * 📚 ***[The Creative Act: A Way of Being](./the-creative-act.md)*** **by Rick Rubin**: ✍️ A poetic exploration of creativity that encourages transcending barriers and finding awe, relating to the manifesto's call for living fully and expressing oneself.  
 * 📚 ***Walden*** **by Henry David Thoreau**: 🌳 A classic transcendentalist work exploring self-reliance, simple living, and finding freedom from societal constraints, echoing the manifesto's call for independence.  
 * 📚 ***101 Essays That Will Change the Way You Think*** **by Brianna Wiest**: 🤯 A collection challenging perspectives on life, promoting self-awareness and reframing thought patterns, aligning with the manifesto's goal of inner transformation.  
-* 📚 ***Zen and the Art of Motorcycle Maintenance*** **by Robert M. Pirsig**: 🏍️ A philosophical novel exploring the meaning of quality, presence, and different approaches to life and technology, touching on themes relevant to living intentionally.  
+* **[🏍️🧘❓ Zen and the Art of Motorcycle Maintenance: An Inquiry into Values](./zen-and-the-art-of-motorcycle-maintenance-an-inquiry-into-values.md)** **by Robert M. Pirsig**: 🏍️ A philosophical novel exploring the meaning of quality, presence, and different approaches to life and technology, touching on themes relevant to living intentionally.  
   
 ## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on The Motivation Manifesto: 9 Declarations to Claim Your Personal Power. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

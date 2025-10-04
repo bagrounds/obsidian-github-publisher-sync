@@ -81,7 +81,7 @@ affiliate link: https://amzn.to/48awcKQ
     * [🫄➕ Expecting Better: Why the Conventional Pregnancy Wisdom Is Wrong - and What You Really Need to Know](./expecting-better.md)  
     * **[👶📊😌 Cribsheet: A Data-Driven Guide to Better, More Relaxed Parenting, from Birth to Preschool](./cribsheet.md)**  
     * ⚠️ **The Unexpected**  
-* 💖 **Good Inside by Becky Kennedy**  
+* **[❤️👪 Good Inside: A Guide to Becoming the Parent You Want to Be](./good-inside-a-guide-to-becoming-the-parent-you-want-to-be.md) by Becky Kennedy**  
 * 🚀 **[👨‍🚀 The Self-Driven Child: The 🔬 Science and 🤔 Sense of Giving Your Kids More 🕹️ Control Over Their Lives](./the-self-driven-child.md) by William Stixrud and Ned Johnson**  
   
 **🤔 Contrasting/Related Perspectives (Different Approaches or Complementary Topics)**  

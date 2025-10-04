@@ -10,7 +10,8 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 📑 Notes, 💭 thoughts, and 🔗 Links.  
 ❔ What do 🫵 _you_ 🤔 think?  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (322)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (323)  
+- [2025-10-03 | 🏎️ Performance | 🐦 Starlings | 👶🏼 Montessori 📺📚](./reflections/2025-10-03.md)  
 - [2025-10-02 | 🃏 Trick | 😊 Mood | 🤔 Think 📚](./reflections/2025-10-02.md)  
 - [2025-10-01 | ✨ Endure | ⏳ Outlive | 🛡️ Preserve 📚](./reflections/2025-10-01.md)  
 - [2025-09-30 | 🧠 Endure | 🇮🇱 Netanyahu | 🛑 Shutdown 📚📺📰📄✍️](./reflections/2025-09-30.md)  
@@ -20,33 +21,32 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [2025-09-26 | ♾️ Autism | 🧠 Emotion | 🇺🇸 Promise 📺📚📰](./reflections/2025-09-26.md)  
 - [2025-09-25 | ❌ Wrong | ☣️ Toxic | 🔰 Original | 🌟 Promised 📺📚📰🔍](./reflections/2025-09-25.md)  
 - [2025-09-24 | 🧠⚡ Learn Fast 📺📚](./reflections/2025-09-24.md)  
-- [2025-09-23 | 🎙️ Kimmel | 📺 Amusing | ✝️ Christ 📺📚](./reflections/2025-09-23.md)  
   
   
-## [📚 Books](./books/index.md) (662)  
+## [📚 Books](./books/index.md) (665)  
+- [🐦➕ In a Flight of Starlings: The Wonders of Complex Systems](./books/in-a-flight-of-starlings-the-wonders-of-complex-systems.md)  
+- [❓🎁 Who Gets What - and Why: The New Economics of Matchmaking and Market Design](./books/who-gets-what-and-why-the-new-economics-of-matchmaking-and-market-design.md)  
+- [🔥📜 The Motivation Manifesto: 9 Declarations to Claim Your Personal Power](./books/the-motivation-manifesto-9-declarations-to-claim-your-personal-power.md)  
+- [🚀🧠🏆 Ultralearning: Master Hard Skills, Outsmart the Competition, and Accelerate Your Career](./books/ultralearning-master-hard-skills-outsmart-the-competition-and-accelerate-your-career.md)  
+- [📈🌟 High Performance Habits: How Extraordinary People Become That Way](./books/high-performance-habits-how-extraordinary-people-become-that-way.md)  
+- [🚀📈🧘 Peak Performance: Elevate Your Game, Avoid Burnout, and Thrive with the New Science of Success](./books/peak-performance-elevate-your-game-avoid-burnout-and-thrive-with-the-new-science-of-success.md)  
 - [🤔🐇🐢 Thinking, Fast and Slow](./books/thinking-fast-and-slow.md)  
 - [🏃😊 Exercise for Mood and Anxiety: Proven Strategies for Overcoming Depression and Enhancing Well-Being](./books/exercise-for-mood-and-anxiety-proven-strategies-for-overcoming-depression-and-enhancing-well-being.md)  
 - [🧠💪😊 Mental Fitness: Maximizing Mood, Motivation, & Mental Wellness by Optimizing the Brain-Body-Biome](./books/mental-fitness-maximizing-mood-motivation-mental-wellness-by-optimizing-the-brain-body-biome.md)  
 - [❓✅ Trick or Treatment: The Undeniable Facts about Alternative Medicine](./books/trick-or-treatment-the-undeniable-facts-about-alternative-medicine.md)  
-- [🧪👎 Bad Science: Quacks, Hacks, and Big Pharma Flacks](./books/bad-science-quacks-hacks-and-big-pharma-flacks.md)  
-- [⏳🔬🎨 Outlive: The Science and Art of Longevity](./books/outlive.md)  
-- [💪📈 Creatine: A Natural Substance and Its Benefits for Muscle Metabolism, Fitness, Health & Longevity](./books/creatine-a-natural-substance-and-its-benefits-for-muscle-metabolism-fitness-health-longevity.md)  
-- [🌄⏳ The Circadian Code: Lose Weight, Supercharge Your Energy, and Transform Your Health from Morning to Midnight](./books/the-circadian-code.md)  
-- [⏱️🍎 Time Restricted Eating: A Look into the Lifestyle](./books/time-restricted-eating-a-look-into-the-lifestyle.md)  
-- [⏳🙅 Lifespan: Why We Age - and Why We Don't Have To](./books/lifespan-why-we-age-and-why-we-dont-have-to.md)  
   
   
-## [📺 Videos](./videos/index.md) (330)  
+## [📺 Videos](./videos/index.md) (334)  
+- [👶🧸8️⃣🗓️ Montessori Items For An 8 Month Old Baby](./videos/8-montessori-items-for-an-8-month-old-baby-cc.md)  
+- [🇮🇹🏆🗣️ Giorgio Parisi: Nobel Prize Conversations](./videos/giorgio-parisi-nobel-prize-conversations.md)  
+- [🧠🎯🏆😌 Controlling Your Dopamine for Motivation, Focus & Satisfaction | Huberman Lab Essentials](./videos/controlling-your-dopamine-for-motivation-focus-satisfaction-huberman-lab-essentials.md)  
+- [🧠🍎💊📈 Food & Supplements for Brain Health & Cognitive Performance | Huberman Lab Essentials](./videos/food-supplements-for-brain-health-cognitive-performance-huberman-lab-essentials.md)  
 - [🥼🧠🚫💉 What research reveals about the rise in autism diagnoses and why vaccines aren't the cause](./videos/what-research-reveals-about-the-rise-in-autism-diagnoses-and-why-vaccines-arent-the-cause.md)  
 - [🍎🔄🩸 Dr. Casey Means: Transform Your Health by Improving Metabolism, Hormone & Blood Sugar Regulation](./videos/dr-casey-means-transform-your-health-by-improving-metabolism-hormone-and-blood-sugar-regulation.md)  
 - [🇮🇱🎤📺 Netanyahu: Last Week Tonight with John Oliver (HBO)](./videos/netanyahu-last-week-tonight-with-john-oliver-hbo.md)  
 - [👩‍👧‍👦💼⬇️ Why so many mothers with young children are leaving the workforce](./videos/why-so-many-mothers-with-young-children-are-leaving-the-workforce.md)  
 - [📺🪖🇺🇸 WATCH: Hegseth's full remarks on new military directives ending 'politically correct' leadership](./videos/watch-hegseths-full-remarks-on-new-military-directives-ending-politically-correct-leadership.md)  
 - [🧠💰⚠️ The price you pay for being smart It's Been a Minute](./videos/the-price-you-pay-for-being-smart-its-been-a-minute.md)  
-- [⚕️🗣️💊 Health experts respond to Trump's claims linking autism to acetaminophen](./videos/health-experts-respond-to-trumps-claims-linking-autism-to-acetaminophen.md)  
-- [🏛️💥🧱🚫 Government barreling toward shutdown with Congress in partisan deadlock](./videos/government-barreling-toward-shutdown-with-congress-in-partisan-deadlock.md)  
-- [🦴🤕🏃‍♀️🧪 How to Reduce Bone Injury Risks | Running Science](./videos/how-to-reduce-bone-injury-risks-running-science.md)  
-- [🧠⬆️🍎🚀 Enhance Your Learning Speed & Health Using Neuroscience Based Protocols | Dr. Poppy Crum](./videos/enhance-your-learning-speed-health-using-neuroscience-based-protocols-dr-poppy-crum.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (82)  

@@ -5,6 +5,7 @@ aliases:
 URL: https://bagrounds.org/books/screaming-on-the-inside-the-unsustainability-of-american-motherhood
 share: true
 affiliate link: https://amzn.to/43HjoI1
+CTA: 🤰 Support mothers.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 😫👩‍👧‍👦 Screaming on the Inside: The Unsustainability of American Motherhood  
@@ -43,7 +44,7 @@ affiliate link: https://amzn.to/43HjoI1
   
 * 📊 **[🫄➕ Expecting Better: Why the Conventional Pregnancy Wisdom Is Wrong - and What You Really Need to Know](./expecting-better.md) by Emily Oster:** While acknowledging the difficulties, Oster's book takes a data-driven approach to pregnancy and parenting, empowering mothers with information to make informed choices rather than focusing solely on societal pressures.  
 * 🇨🇳 **The First 40 Days: The Essential Art of Nourishing the New Mother by Heng Ou, Amely Greeven, and Marisa Belger:** This book focuses on the importance of postpartum care and nourishment based on traditional Chinese philosophy, offering a different cultural perspective on supporting new mothers.  
-* 🧠 **Good Inside by Dr. Becky Kennedy:** This book focuses on a specific parenting philosophy centered on connection and understanding a child's inner world, offering a different approach to navigating the parent-child relationship.  
+* 🧠 **[❤️👪 Good Inside: A Guide to Becoming the Parent You Want to Be](./good-inside-a-guide-to-becoming-the-parent-you-want-to-be.md) by Dr. Becky Kennedy:** This book focuses on a specific parenting philosophy centered on connection and understanding a child's inner world, offering a different approach to navigating the parent-child relationship.  
   
 ### ✨ Creatively Related (Exploring Motherhood Through Different Genres or Lenses)  
   

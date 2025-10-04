@@ -4,8 +4,8 @@ aliases:
   - "🕳️🧠👶🏽 The Whole-Brain Child: 12 Revolutionary Strategies to Nurture Your Child's Developing Mind"
 title: "🕳️🧠👶🏽 The Whole-Brain Child: 12 Revolutionary Strategies to Nurture Your Child's Developing Mind"
 URL: https://bagrounds.org/books/the-whole-brain-child
-Author: 
-tags: 
+Author:
+tags:
 affiliate link: https://amzn.to/4mHBl1R
 ---
 [Home](../index.md) > [Books](./index.md)  
@@ -58,7 +58,7 @@ affiliate link: https://amzn.to/4mHBl1R
     * 💖 *Raising an Emotionally Intelligent Child* by John Gottman & Joan Declaire: 👨‍🏫 A classic guide to coaching children through their emotional world.  
     * 🗣️ *How to Talk So Kids Will Listen & Listen So Kids Will Talk* by Adele Faber & Elaine Mazlish: 👂 Practical communication strategies for fostering cooperation and connection.  
     * 👶 *How to Talk So Little Kids Will Listen* by Joanna Faber & Julie King: 🗣️ Adapts the "How to Talk" principles for younger children (ages 2-7).  
-    * 🧠 *Good Inside* by Dr. Becky Kennedy: 🫂 Focuses on building connection and resilience through understanding children's internal experiences.  
+    * [❤️👪 Good Inside: A Guide to Becoming the Parent You Want to Be](./good-inside-a-guide-to-becoming-the-parent-you-want-to-be.md) by Dr. Becky Kennedy: 🫂 Focuses on building connection and resilience through understanding children's internal experiences.  
   
 ### ⚖️ Contrasting Approaches or Focus  
 * 📜 **Behaviorism-Focused:**  

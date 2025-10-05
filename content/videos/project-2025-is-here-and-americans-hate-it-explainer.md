@@ -10,7 +10,7 @@ Channel: Heather Cox Richardson
 tags:
 youtube: https://youtu.be/3eGUFiK6EUg
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](../index.md) > [Videos](./index.md) | [🏛️🇺🇸📖 Heather Cox Richardson](../people/heather-cox-richardson.md)  
 # 🇺🇸🗓️👎 Project 2025 Is Here and Americans Hate It | Explainer  
 ![Project 2025 Is Here and Americans Hate It | Explainer](https://youtu.be/3eGUFiK6EUg)  
   

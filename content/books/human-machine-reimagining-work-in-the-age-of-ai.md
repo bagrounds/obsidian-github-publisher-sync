@@ -38,7 +38,7 @@ In conclusion, 🏁 *Human + Machine* offers a practical and optimistic roadmap 
   
 ### 👍 Similar in Spirit: Collaboration and Co-evolution  
   
-* 📈 **Prediction Machines: The Simple Economics of Artificial Intelligence** by Ajay Agrawal, Joshua Gans, and Avi Goldfarb: This book breaks down the economic principles behind AI, arguing that its primary function is to lower the cost 📉 of prediction, thereby creating new opportunities for innovation and efficiency.  
+* **[🤖📈 Prediction Machines: The Simple Economics of Artificial Intelligence](./prediction-machines-the-simple-economics-of-artificial-intelligence.md)** by Ajay Agrawal, Joshua Gans, and Avi Goldfarb: This book breaks down the economic principles behind AI, arguing that its primary function is to lower the cost 📉 of prediction, thereby creating new opportunities for innovation and efficiency.  
 * 💼 **The Future of Work: How Artificial Intelligence Can Augment Human Capabilities** by Business Expert Press: This book offers a roadmap 🗺️ for leaders to navigate the AI-driven transformation, focusing on organizational design and process re-engineering to create a hyper-automated yet human-centric workplace.  
 * 🔄 **Reinventing Jobs: A 4-Step Approach for Applying Automation to Work** by Ravin Jesuthasan and John W. Boudreau: Providing a practical framework, this book guides leaders on how to strategically integrate automation ⚙️ while optimizing human roles and redesigning workflows.  
   

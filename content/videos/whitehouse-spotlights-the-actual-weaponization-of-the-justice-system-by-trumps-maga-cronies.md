@@ -1,16 +1,16 @@
 ---
 share: true
 aliases:
-  - Whitehouse Spotlights the Actual Weaponization of the Justice System by Trump's MAGA Cronies
-title: Whitehouse Spotlights the Actual Weaponization of the Justice System by Trump's MAGA Cronies
+  - 🏛️⚖️🎯💥 Whitehouse Spotlights the Actual Weaponization of the Justice System by Trump's MAGA Cronies
+title: 🏛️⚖️🎯💥 Whitehouse Spotlights the Actual Weaponization of the Justice System by Trump's MAGA Cronies
 URL: https://youtu.be/PsH3wd8HIlY
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: Senator Sheldon Whitehouse
-tags: 
+tags:
 ---
 [Home](../index.md) > [Videos](./index.md)  
-# Whitehouse Spotlights the Actual Weaponization of the Justice System by Trump's MAGA Cronies  
+# 🏛️⚖️🎯💥 Whitehouse Spotlights the Actual Weaponization of the Justice System by Trump's MAGA Cronies  
 ![Whitehouse Spotlights the Actual Weaponization of the Justice System by Trump's MAGA Cronies](https://youtu.be/PsH3wd8HIlY)  
   
 ## 🤖 AI Summary  
@@ -26,5 +26,5 @@ tags:
   
 ## 📚 Book Recommendations  
 - **"All the President's Men" by Carl Bernstein and Bob Woodward:** This book details the investigation into the Watergate scandal, highlighting potential abuses of power and the role of the Department of Justice.  
-- **"The Rule of Law" by Tom Bingham:** This book explores the concept of the rule of law and its importance in a democratic society, relevant to discussions about the weaponization of the justice system.  
+- **[🏛️⚖️ The Rule of Law](../books/the-rule-of-law.md) by Tom Bingham:** This book explores the concept of the rule of law and its importance in a democratic society, relevant to discussions about the weaponization of the justice system.  
 - **"United States Attorneys: Powers and Duties" by Brian L. Whisler:** This book provides an overview of the powers and duties of United States Attorneys, which can be useful to better understand the role of the Department of Justice.  

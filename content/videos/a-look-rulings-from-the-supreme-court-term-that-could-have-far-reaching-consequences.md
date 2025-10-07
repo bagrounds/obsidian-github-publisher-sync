@@ -4,10 +4,10 @@ aliases:
   - 🏛️⚖️🌍 A look rulings from the Supreme Court term that could have far-reaching consequences
 title: 🏛️⚖️🌍 A look rulings from the Supreme Court term that could have far-reaching consequences
 URL: https://bagrounds.org/videos/a-look-rulings-from-the-supreme-court-term-that-could-have-far-reaching-consequences
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: PBS NewsHour
-tags: 
+tags:
 youtube: https://youtu.be/X7xxl9GgrkQ
 ---
 [Home](../index.md) > [Videos](./index.md)  
@@ -45,5 +45,5 @@ youtube: https://youtu.be/X7xxl9GgrkQ
   
 **😠 For threats against judges and the judiciary's integrity**  
 * 📖 "Judges Under Siege: Threats, Disinformation, and the Decline of Public Trust in the Judiciary" (an article/collection of essays often found in legal journals like _Judicature_): This topic is frequently addressed in scholarly articles and symposia rather than standalone books. However, collecting such essays or exploring journals like _Judicature_ or the _Duke Law Journal's_ Bolch Judicial Institute publications would be beneficial.  
-* 📖 "The Rule of Law" by Tom Bingham: A foundational text on the importance of the rule of law and an independent judiciary, providing context for why threats to judges undermine democratic principles.  
+* [🏛️⚖️ The Rule of Law](../books/the-rule-of-law.md) by Tom Bingham: A foundational text on the importance of the rule of law and an independent judiciary, providing context for why threats to judges undermine democratic principles.  
 * 📖 "How Judges Think" by Richard A. Posner: While not specifically about threats, this book explores the practicalities and challenges of judicial decision-making, which can indirectly touch upon the pressures and external factors judges face.

@@ -10,8 +10,9 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 📑 Notes, 💭 thoughts, and 🔗 Links.  
 ❔ What do 🫵 _you_ 🤔 think?  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (325)  
-- [2025-10-05](./reflections/2025-10-05.md)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (326)  
+- [2025-10-06 | ⭐ Promised | 🔮 Prediction | ⚖️ Law 📚📺](./reflections/2025-10-06.md)  
+- [2025-10-05 | 💕 Love | 👎 2025 | 🎭 Quantico 📚📺](./reflections/2025-10-05.md)  
 - [2025-10-04 | 🏢 Firm | ❤️ Good | 💨 Fast 📚📺](./reflections/2025-10-04.md)  
 - [2025-10-03 | 🏎️ Performance | 🐦 Starlings | 👶🏼 Montessori 📺📚](./reflections/2025-10-03.md)  
 - [2025-10-02 | 🃏 Trick | 😊 Mood | 🤔 Think 📚](./reflections/2025-10-02.md)  
@@ -20,33 +21,32 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [2025-09-29 | 🌧️ Rain | 🏆 Excellence | ⚙️ Engineering 🪞🛍️🤖💬📚📄](./reflections/2025-09-29.md)  
 - [2025-09-28 | 🏃🏼‍♀️ Bodies | 🧠 Minds | 👊 Power 📺📰📚👥](./reflections/2025-09-28.md)  
 - [2025-09-27 | 🧘🏼‍♀️🔥 Calm Under Fire 📺📰🔍📚](./reflections/2025-09-27.md)  
-- [2025-09-26 | ♾️ Autism | 🧠 Emotion | 🇺🇸 Promise 📺📚📰](./reflections/2025-09-26.md)  
   
   
-## [📚 Books](./books/index.md) (667)  
+## [📚 Books](./books/index.md) (669)  
+- [🏛️⚖️ The Rule of Law](./books/the-rule-of-law.md)  
+- [🤖📈 Prediction Machines: The Simple Economics of Artificial Intelligence](./books/prediction-machines-the-simple-economics-of-artificial-intelligence.md)  
+- [🧑‍💻🤖 Human + Machine: Reimagining Work in the Age of AI](./books/human-machine-reimagining-work-in-the-age-of-ai.md)  
+- [🤖📈 The Second Machine Age: Work, Progress, and Prosperity in a Time of Brilliant Technologies](./books/the-second-machine-age-work-progress-and-prosperity-in-a-time-of-brilliant-technologies.md)  
+- [🤕👶 The Coddling of the American Mind: How Good Intentions and Bad Ideas Are Setting Up a Generation for Failure](./books/the-coddling-of-the-american-mind-how-good-intentions-and-bad-ideas-are-setting-up-a-generation-for-failure.md)  
 - [😫👩‍👧‍👦 Screaming on the Inside: The Unsustainability of American Motherhood](./books/screaming-on-the-inside-the-unsustainability-of-american-motherhood.md)  
 - [🕳️🧠👶🏽 The Whole-Brain Child: 12 Revolutionary Strategies to Nurture Your Child's Developing Mind](./books/the-whole-brain-child.md)  
 - [👨‍👩‍👧‍👦📊 The Family Firm: A Data-Driven Guide to Better Decision Making in the Early School Years](./books/the-family-firm-a-data-driven-guide-to-better-decision-making-in-the-early-school-years.md)  
 - [❤️👪 Good Inside: A Guide to Becoming the Parent You Want to Be](./books/good-inside-a-guide-to-becoming-the-parent-you-want-to-be.md)  
 - [🐦➕ In a Flight of Starlings: The Wonders of Complex Systems](./books/in-a-flight-of-starlings-the-wonders-of-complex-systems.md)  
-- [❓🎁 Who Gets What - and Why: The New Economics of Matchmaking and Market Design](./books/who-gets-what-and-why-the-new-economics-of-matchmaking-and-market-design.md)  
-- [🔥📜 The Motivation Manifesto: 9 Declarations to Claim Your Personal Power](./books/the-motivation-manifesto-9-declarations-to-claim-your-personal-power.md)  
-- [🚀🧠🏆 Ultralearning: Master Hard Skills, Outsmart the Competition, and Accelerate Your Career](./books/ultralearning-master-hard-skills-outsmart-the-competition-and-accelerate-your-career.md)  
-- [📈🌟 High Performance Habits: How Extraordinary People Become That Way](./books/high-performance-habits-how-extraordinary-people-become-that-way.md)  
-- [🚀📈🧘 Peak Performance: Elevate Your Game, Avoid Burnout, and Thrive with the New Science of Success](./books/peak-performance-elevate-your-game-avoid-burnout-and-thrive-with-the-new-science-of-success.md)  
   
   
-## [📺 Videos](./videos/index.md) (337)  
+## [📺 Videos](./videos/index.md) (338)  
+- [🏛️⚖️🎯💥 Whitehouse Spotlights the Actual Weaponization of the Justice System by Trump's MAGA Cronies](./videos/whitehouse-spotlights-the-actual-weaponization-of-the-justice-system-by-trumps-maga-cronies.md)  
+- [🏛️⚖️🌍 A look rulings from the Supreme Court term that could have far-reaching consequences](./videos/a-look-rulings-from-the-supreme-court-term-that-could-have-far-reaching-consequences.md)  
+- [🙊🤐👑 Jimmy Kimmel's Suspension Was Always About Censorship (Just Ask Trump) | The Daily Show](./videos/jimmy-kimmels-suspension-was-always-about-censorship-just-ask-trump-the-daily-show.md)  
+- [👩‍⚖️🛑🇺🇸🏛️ Oregon governor calls Trump's actions 'an abuse of power and threat to our democracy'](./videos/oregon-governor-calls-trumps-actions-an-abuse-of-power-and-threat-to-our-democracy.md)  
 - [🇺🇸📅👎 Project 2025 Is Here and Americans Hate It | Explainer](./videos/project-2025-is-here-and-americans-hate-it-explainer.md)  
 - [🔎🎭🇺🇸 A Deeper Look at Hegseth and Trump’s Performances in Quantico | Explainer](./videos/a-deeper-look-at-hegseth-and-trumps-performances-in-quantico-explainer.md)  
 - [🥇🧑‍🏫🏃💨 Learn Any Skill Faster By Copying How Olympic Athletes Train](./videos/learn-any-skill-faster-by-copying-how-olympic-athletes-train.md)  
 - [👶🧸8️⃣🗓️ Montessori Items For An 8 Month Old Baby](./videos/8-montessori-items-for-an-8-month-old-baby-cc.md)  
 - [🇮🇹🏆🗣️ Giorgio Parisi: Nobel Prize Conversations](./videos/giorgio-parisi-nobel-prize-conversations.md)  
 - [🧠🎯🏆😌 Controlling Your Dopamine for Motivation, Focus & Satisfaction | Huberman Lab Essentials](./videos/controlling-your-dopamine-for-motivation-focus-satisfaction-huberman-lab-essentials.md)  
-- [🧠🍎💊📈 Food & Supplements for Brain Health & Cognitive Performance | Huberman Lab Essentials](./videos/food-supplements-for-brain-health-cognitive-performance-huberman-lab-essentials.md)  
-- [🥼🧠🚫💉 What research reveals about the rise in autism diagnoses and why vaccines aren't the cause](./videos/what-research-reveals-about-the-rise-in-autism-diagnoses-and-why-vaccines-arent-the-cause.md)  
-- [🍎🔄🩸 Dr. Casey Means: Transform Your Health by Improving Metabolism, Hormone & Blood Sugar Regulation](./videos/dr-casey-means-transform-your-health-by-improving-metabolism-hormone-and-blood-sugar-regulation.md)  
-- [🇮🇱🎤📺 Netanyahu: Last Week Tonight with John Oliver (HBO)](./videos/netanyahu-last-week-tonight-with-john-oliver-hbo.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (82)  

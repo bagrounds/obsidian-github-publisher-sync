@@ -7,8 +7,9 @@ URL: https://bagrounds.org/reflections
 backlinks: false
 ---
 [Home](../index.md)  
-# 🪞 Reflections (325)  
-- [2025-10-05](./2025-10-05.md)  
+# 🪞 Reflections (326)  
+- [2025-10-06 | ⭐ Promised | 🔮 Prediction | ⚖️ Law 📚📺](./2025-10-06.md)  
+- [2025-10-05 | 💕 Love | 👎 2025 | 🎭 Quantico 📚📺](./2025-10-05.md)  
 - [2025-10-04 | 🏢 Firm | ❤️ Good | 💨 Fast 📚📺](./2025-10-04.md)  
 - [2025-10-03 | 🏎️ Performance | 🐦 Starlings | 👶🏼 Montessori 📺📚](./2025-10-03.md)  
 - [2025-10-02 | 🃏 Trick | 😊 Mood | 🤔 Think 📚](./2025-10-02.md)  

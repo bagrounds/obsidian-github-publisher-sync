@@ -66,14 +66,15 @@ affiliate link: https://amzn.to/42Pm2fl
     * 🛡️ Maintain independent, non-politicized law enforcement/civil service.  
     * ✔️ Monitor implementation of new laws for compliance.  
   
-### 📚 Book Recommendations on The Rule of Law  
+### 📚 Book Recommendations  
   
 #### ⚖️ Similar: Core Rule of Law Texts  
 * 📖 The Rule of Law by Tom Bingham  
-* 📖 On the Rule of Law: History, Politics, Theory by Brian Z Tamanaha  
+* 📖 [🏛️⚖️ On the Rule of Law: History, Politics, Theory](./on-the-rule-of-law-history-politics-theory.md) by Brian Z Tamanaha  
 * 📖 Thoughtfulness and the Rule of Law by Jeremy Waldron  
 * 📖 Justice for Hedgehogs by Ronald Dworkin  
 * 📖 Introduction to the Study of the Law of the Constitution by A V Dicey  
+  
   
 #### ⚔️ Contrasting: Challenges, Critiques, Alternative Perspectives  
 * 📖 Against Constitutionalism by Martin Loughlin  
@@ -90,6 +91,13 @@ affiliate link: https://amzn.to/42Pm2fl
 * 📖 Customary Justice and the Rule of Law in War-Torn Societies edited by David Isser  
 * 📖 Measuring Peace: Principles, Practices, and Politics by Richard Caplan  
 * 📖 The Rule of Law in Comparative Perspective by Mortimer N S Sellers and Tadeusz Tomaszewski  
+  
+  
+  
+  
+  
+  
+  
   
 ## 💬 [Gemini](https://gemini.google.com) Prompt (gemini-2.5-flash)  
 > Create a concise, expert-level cheat sheet for The Rule of Law.  

@@ -10,7 +10,9 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 📑 Notes, 💭 thoughts, and 🔗 Links.  
 ❔ What do 🫵 _you_ 🤔 think?  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (327)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (329)  
+- [2025-10-09](./reflections/2025-10-09.md)  
+- [2025-10-08 | 🌪️ Chaos | 🕹️ Control | 🔮 Prediction 📺📚](./reflections/2025-10-08.md)  
 - [2025-10-07 | ⚖️ On the Rule of Law 📚](./reflections/2025-10-07.md)  
 - [2025-10-06 | ⭐ Promised | 🔮 Prediction | ⚖️ Law 📚📺](./reflections/2025-10-06.md)  
 - [2025-10-05 | 💕 Love | 👎 2025 | 🎭 Quantico 📚📺](./reflections/2025-10-05.md)  
@@ -19,14 +21,12 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [2025-10-02 | 🃏 Trick | 😊 Mood | 🤔 Think 📚](./reflections/2025-10-02.md)  
 - [2025-10-01 | ✨ Endure | ⏳ Outlive | 🛡️ Preserve 📚](./reflections/2025-10-01.md)  
 - [2025-09-30 | 🧠 Endure | 🇮🇱 Netanyahu | 🛑 Shutdown 📚📺📰📄✍️](./reflections/2025-09-30.md)  
-- [2025-09-29 | 🌧️ Rain | 🏆 Excellence | ⚙️ Engineering 🪞🛍️🤖💬📚📄](./reflections/2025-09-29.md)  
-- [2025-09-28 | 🏃🏼‍♀️ Bodies | 🧠 Minds | 👊 Power 📺📰📚👥](./reflections/2025-09-28.md)  
   
   
 ## [📚 Books](./books/index.md) (670)  
+- [🤖📈 Prediction Machines: The Simple Economics of Artificial Intelligence](./books/prediction-machines-the-simple-economics-of-artificial-intelligence.md)  
 - [🏛️⚖️ The Rule of Law](./books/the-rule-of-law.md)  
 - [🏛️⚖️ On the Rule of Law: History, Politics, Theory](./books/on-the-rule-of-law-history-politics-theory.md)  
-- [🤖📈 Prediction Machines: The Simple Economics of Artificial Intelligence](./books/prediction-machines-the-simple-economics-of-artificial-intelligence.md)  
 - [🧑‍💻🤖 Human + Machine: Reimagining Work in the Age of AI](./books/human-machine-reimagining-work-in-the-age-of-ai.md)  
 - [🤖📈 The Second Machine Age: Work, Progress, and Prosperity in a Time of Brilliant Technologies](./books/the-second-machine-age-work-progress-and-prosperity-in-a-time-of-brilliant-technologies.md)  
 - [🤕👶 The Coddling of the American Mind: How Good Intentions and Bad Ideas Are Setting Up a Generation for Failure](./books/the-coddling-of-the-american-mind-how-good-intentions-and-bad-ideas-are-setting-up-a-generation-for-failure.md)  
@@ -36,7 +36,9 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [❤️👪 Good Inside: A Guide to Becoming the Parent You Want to Be](./books/good-inside-a-guide-to-becoming-the-parent-you-want-to-be.md)  
   
   
-## [📺 Videos](./videos/index.md) (338)  
+## [📺 Videos](./videos/index.md) (340)  
+- [💪🏋️📅 Motoren unseres Lebens - Muskeltraining 2015](./videos/motoren-unseres-lebens-muskeltraining-2015-vortrag-dr-patrick-oconnor.md)  
+- [🌪️➡️🕹️ An Attempt to Turn Chaos Into Control | Explainer](./videos/an-attempt-to-turn-chaos-into-control-explainer.md)  
 - [🏛️⚖️🎯💥 Whitehouse Spotlights the Actual Weaponization of the Justice System by Trump's MAGA Cronies](./videos/whitehouse-spotlights-the-actual-weaponization-of-the-justice-system-by-trumps-maga-cronies.md)  
 - [🏛️⚖️🌍 A look rulings from the Supreme Court term that could have far-reaching consequences](./videos/a-look-rulings-from-the-supreme-court-term-that-could-have-far-reaching-consequences.md)  
 - [🙊🤐👑 Jimmy Kimmel's Suspension Was Always About Censorship (Just Ask Trump) | The Daily Show](./videos/jimmy-kimmels-suspension-was-always-about-censorship-just-ask-trump-the-daily-show.md)  
@@ -45,8 +47,6 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [🔎🎭🇺🇸 A Deeper Look at Hegseth and Trump’s Performances in Quantico | Explainer](./videos/a-deeper-look-at-hegseth-and-trumps-performances-in-quantico-explainer.md)  
 - [🥇🧑‍🏫🏃💨 Learn Any Skill Faster By Copying How Olympic Athletes Train](./videos/learn-any-skill-faster-by-copying-how-olympic-athletes-train.md)  
 - [👶🧸8️⃣🗓️ Montessori Items For An 8 Month Old Baby](./videos/8-montessori-items-for-an-8-month-old-baby-cc.md)  
-- [🇮🇹🏆🗣️ Giorgio Parisi: Nobel Prize Conversations](./videos/giorgio-parisi-nobel-prize-conversations.md)  
-- [🧠🎯🏆😌 Controlling Your Dopamine for Motivation, Focus & Satisfaction | Huberman Lab Essentials](./videos/controlling-your-dopamine-for-motivation-focus-satisfaction-huberman-lab-essentials.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (82)  

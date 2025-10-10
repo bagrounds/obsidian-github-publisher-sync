@@ -39,7 +39,7 @@ This book is ideal for:
   
 ### 📖 Similar Reads  
   
-* 🤖 **AI Agents in Action** by Micheal Lanham: ⚙️ This book provides a proven framework for developing practical agents that can handle real-world business and personal tasks. 🚀 It covers agent behavior patterns, production-ready deployment, and the use of tools like the OpenAI Assistants API.  
+* **[🤖⚙️ AI Agents in Action](./ai-agents-in-action.md)** by Micheal Lanham: ⚙️ This book provides a proven framework for developing practical agents that can handle real-world business and personal tasks. 🚀 It covers agent behavior patterns, production-ready deployment, and the use of tools like the OpenAI Assistants API.  
 * 🌳 **Knowledge Graph-Enhanced RAG** by Tomaž Bratanič and Oskar Hane: 🌳 This title focuses on how to structure context data as a knowledge graph to implement more accurate, performant, and traceable RAG systems. 🔧 It is filled with practical techniques for building RAG on both unstructured and structured data.  
 * **[❓📚 A Simple Guide to Retrieval Augmented Generation](./a-simple-guide-to-retrieval-augmented-generation.md)** by Abhinav Kimothi: 📖 For those who want a plain-English guide to RAG, this book is packed with realistic Python 🐍 code examples. 🧑‍🏫 It takes the reader from the basic concepts of RAG to more advanced approaches, making it accessible even for those new to AI.  
   

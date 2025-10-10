@@ -10,8 +10,9 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 📑 Notes, 💭 thoughts, and 🔗 Links.  
 ❔ What do 🫵 _you_ 🤔 think?  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (329)  
-- [2025-10-09](./reflections/2025-10-09.md)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (330)  
+- [2025-10-10](./reflections/2025-10-10.md)  
+- [2025-10-09 | 🐍 Corruption | 💙 Cerulean | 🤖 Autonomous 📺📰📚📄](./reflections/2025-10-09.md)  
 - [2025-10-08 | 🌪️ Chaos | 🕹️ Control | 🔮 Prediction 📺📚](./reflections/2025-10-08.md)  
 - [2025-10-07 | ⚖️ On the Rule of Law 📚](./reflections/2025-10-07.md)  
 - [2025-10-06 | ⭐ Promised | 🔮 Prediction | ⚖️ Law 📚📺](./reflections/2025-10-06.md)  
@@ -20,10 +21,10 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [2025-10-03 | 🏎️ Performance | 🐦 Starlings | 👶🏼 Montessori 📺📚](./reflections/2025-10-03.md)  
 - [2025-10-02 | 🃏 Trick | 😊 Mood | 🤔 Think 📚](./reflections/2025-10-02.md)  
 - [2025-10-01 | ✨ Endure | ⏳ Outlive | 🛡️ Preserve 📚](./reflections/2025-10-01.md)  
-- [2025-09-30 | 🧠 Endure | 🇮🇱 Netanyahu | 🛑 Shutdown 📚📺📰📄✍️](./reflections/2025-09-30.md)  
   
   
-## [📚 Books](./books/index.md) (670)  
+## [📚 Books](./books/index.md) (671)  
+- [🏠💙🌈 The House in the Cerulean Sea](./books/the-house-in-the-cerulean-sea.md)  
 - [🤖📈 Prediction Machines: The Simple Economics of Artificial Intelligence](./books/prediction-machines-the-simple-economics-of-artificial-intelligence.md)  
 - [🏛️⚖️ The Rule of Law](./books/the-rule-of-law.md)  
 - [🏛️⚖️ On the Rule of Law: History, Politics, Theory](./books/on-the-rule-of-law-history-politics-theory.md)  
@@ -33,20 +34,19 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [😫👩‍👧‍👦 Screaming on the Inside: The Unsustainability of American Motherhood](./books/screaming-on-the-inside-the-unsustainability-of-american-motherhood.md)  
 - [🕳️🧠👶🏽 The Whole-Brain Child: 12 Revolutionary Strategies to Nurture Your Child's Developing Mind](./books/the-whole-brain-child.md)  
 - [👨‍👩‍👧‍👦📊 The Family Firm: A Data-Driven Guide to Better Decision Making in the Early School Years](./books/the-family-firm-a-data-driven-guide-to-better-decision-making-in-the-early-school-years.md)  
-- [❤️👪 Good Inside: A Guide to Becoming the Parent You Want to Be](./books/good-inside-a-guide-to-becoming-the-parent-you-want-to-be.md)  
   
   
-## [📺 Videos](./videos/index.md) (340)  
+## [📺 Videos](./videos/index.md) (345)  
+- [🍊🚫👯‍♀️🏛️ Trump Dodges Ghislaine Maxwell Pardon Q as Bondi Stonewalls Senate | The Daily Show](./videos/trump-dodges-ghislaine-maxwell-pardon-q-as-bondi-stonewalls-senate-the-daily-show.md)  
+- [🏛️😂📺 Presidential Libraries: Last Week Tonight with John Oliver (HBO)](./videos/presidential-libraries-last-week-tonight-with-john-oliver-hbo.md)  
+- [👮🚨🇺🇸 ICE escalates aggressive raids in Chicago as Trump moves to deploy National Guard](./videos/ice-escalates-aggressive-raids-in-chicago-as-trump-moves-to-deploy-national-guard.md)  
+- [🇺🇸👑🗣️ Murphy Floor Speech on Trump's Authoritarian Takeover](./videos/murphy-floor-speech-on-trumps-authoritarian-takeover.md)  
+- [🧑‍🤝‍🧑💰⛽ Sen. Whitehouse: «Trump is Moving Money from Pockets of Normal Americans to Fossil Fuel Megadonors»](./videos/sen-whitehouse-trump-is-moving-money-from-pockets-of-normal-americans-to-fossil-fuel-megadonors.md)  
 - [💪🏋️📅 Motoren unseres Lebens - Muskeltraining 2015](./videos/motoren-unseres-lebens-muskeltraining-2015-vortrag-dr-patrick-oconnor.md)  
 - [🌪️➡️🕹️ An Attempt to Turn Chaos Into Control | Explainer](./videos/an-attempt-to-turn-chaos-into-control-explainer.md)  
 - [🏛️⚖️🎯💥 Whitehouse Spotlights the Actual Weaponization of the Justice System by Trump's MAGA Cronies](./videos/whitehouse-spotlights-the-actual-weaponization-of-the-justice-system-by-trumps-maga-cronies.md)  
 - [🏛️⚖️🌍 A look rulings from the Supreme Court term that could have far-reaching consequences](./videos/a-look-rulings-from-the-supreme-court-term-that-could-have-far-reaching-consequences.md)  
 - [🙊🤐👑 Jimmy Kimmel's Suspension Was Always About Censorship (Just Ask Trump) | The Daily Show](./videos/jimmy-kimmels-suspension-was-always-about-censorship-just-ask-trump-the-daily-show.md)  
-- [👩‍⚖️🛑🇺🇸🏛️ Oregon governor calls Trump's actions 'an abuse of power and threat to our democracy'](./videos/oregon-governor-calls-trumps-actions-an-abuse-of-power-and-threat-to-our-democracy.md)  
-- [🇺🇸📅👎 Project 2025 Is Here and Americans Hate It | Explainer](./videos/project-2025-is-here-and-americans-hate-it-explainer.md)  
-- [🔎🎭🇺🇸 A Deeper Look at Hegseth and Trump’s Performances in Quantico | Explainer](./videos/a-deeper-look-at-hegseth-and-trumps-performances-in-quantico-explainer.md)  
-- [🥇🧑‍🏫🏃💨 Learn Any Skill Faster By Copying How Olympic Athletes Train](./videos/learn-any-skill-faster-by-copying-how-olympic-athletes-train.md)  
-- [👶🧸8️⃣🗓️ Montessori Items For An 8 Month Old Baby](./videos/8-montessori-items-for-an-8-month-old-baby-cc.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (82)  
@@ -57,12 +57,12 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [🏦♾️📈💸 Modern Monetary Theory](./topics/modern-monetary-theory.md)  
   
   
-## [📄  Articles](./articles/index.md) (60)  
+## [📄  Articles](./articles/index.md) (61)  
+- [🤖⚙️🔄🗣️ Agentic Context Engineering: Evolving Contexts for Self Improving Language Models](./articles/agentic-context-engineering-evolving-contexts-for-self-improving-language-models.md)  
 - [💰⚙️📈🔍 Defining and Characterizing Reward Hacking](./articles/defining-and-characterizing-reward-hacking.md)  
 - [🧠💪📈 BDNF Response to High Intensity Exercise](./articles/bdnf-response-to-high-intensity-exercise.md)  
 - [🧠📈🔑 Cognitive load is what matters](./articles/cognitive-load-is-what-matters.md)  
 - [🤔⚙️🧩🏗️💡 Everything I know about good system design](./articles/everything-i-know-about-good-system-design.md)  
-- [❓📈🤦 Failing to Understand the Exponential, Again](./articles/failing-to-understand-the-exponential-again.md)  
   
   
 ## [🤖💬 Bot Chats](./bot-chats/index.md) (45)  

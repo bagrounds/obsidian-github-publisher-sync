@@ -68,4 +68,7 @@ A: 💥 Aggressive tactics used by federal agents included: 🔗 Zip-tying child
   
 ### Creatively Related (Focusing on Civil Liberties and Policing)  
 * [🧑🏿⛓️🙈 The New Jim Crow: Mass Incarceration in the Age of Colorblindness](../books/the-new-jim-crow-mass-incarceration-in-the-age-of-colorblindness.md) by Michelle Alexander: Connects the current system of law enforcement and incarceration to historical forms of racial control, offering a powerful lens through which to analyze the racial profiling claims in the Chicago raids.  
-* ✍️ A People's History of the United States by : Provides a perspective on American history focused on the struggles of marginalized groups against government authority, framing the protests and resistance in Chicago as part of a longer tradition of dissent.
+* ✍️ A People's History of the United States by : Provides a perspective on American history focused on the struggles of marginalized groups against government authority, framing the protests and resistance in Chicago as part of a longer tradition of dissent.  
+  
+## 🐦 Tweet  
+<blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">👮🚨🇺🇸 ICE escalates aggressive raids in Chicago as Trump moves to deploy National Guard<br><br>🏛️ Legal Challenges | 💥 Aggressive Tactics | 🧑🏽 Racial Profiling | 🕊️ Lawsuits | 🛡️ DHS Controversy<a href="https://twitter.com/NewsHour?ref_src=twsrc%5Etfw">@NewsHour</a><a href="https://t.co/CLcotWeybD">https://t.co/CLcotWeybD</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/1976445529912647872?ref_src=twsrc%5Etfw">October 10, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

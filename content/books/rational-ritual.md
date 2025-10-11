@@ -4,9 +4,10 @@ aliases:
   - "🧮♻️ Rational Ritual: Culture, Coordination, and Common Knowledge"
 title: "🧮♻️ Rational Ritual: Culture, Coordination, and Common Knowledge"
 URL: https://bagrounds.org/books/rational-ritual
-Author: 
-tags: 
+Author:
+tags:
 affiliate link: https://amzn.to/4jBYMXz
+CTA: 🤝 Coordinate behaviors.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧮♻️ Rational Ritual: Culture, Coordination, and Common Knowledge  
@@ -57,7 +58,7 @@ affiliate link: https://amzn.to/4jBYMXz
   
 ### 🤝 Similar Reads (Coordination, Common Knowledge, Game Theory, Ritual)  
   
-* ⚔️ **The Strategy of Conflict** by Thomas C. Schelling: 🧱 A foundational text in game theory that explores coordination problems, focal points, and tacit bargaining, which heavily influenced Chwe's work.  
+* **[⚔️♟️ The Strategy of Conflict](./the-strategy-of-conflict.md)** by Thomas C. Schelling: 🧱 A foundational text in game theory that explores coordination problems, focal points, and tacit bargaining, which heavily influenced Chwe's work.  
 * 🗣️ **Using Language** by Herbert H. Clark: 🧠 Explores the cognitive and social processes underlying language use, including the concept of common ground (closely related to common knowledge) in communication.  
 * 🤝 **The Evolution of Cooperation** by Robert Axelrod: 🎮 Uses game theory (specifically the Prisoner's Dilemma) to explore how cooperation can emerge and persist among self-interested individuals. ✅ While focused on cooperation rather than pure coordination, it shares the game-theoretic approach to social phenomena.  
 * 🌐 **Micromotives and Macrobehavior** by Thomas C. Schelling: 🤔 Explores how individual choices and interactions can lead to surprising large-scale social patterns, including segregation and critical mass dynamics, relevant to coordination.  

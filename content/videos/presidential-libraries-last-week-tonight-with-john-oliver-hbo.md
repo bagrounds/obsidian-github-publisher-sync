@@ -72,4 +72,7 @@ A: ⏳ *Records are technically subject to public request* under the Freedom of 
 ### **Creatively Related (Focus on Key Themes and Personalities):**  
   
 * *All the President's Men* 📰 **Relevance:** The definitive account of the investigative journalism that uncovered the **Watergate scandal**, providing the true, non-whitewashed history that the Nixon Library originally tried to deny \[[13:31](http://www.youtube.com/watch?v=dB1-lg-xZWc&t=811)].  
-* *The Art of the Deal* 🏗️ **Relevance:** Provides insight into the *mindset of deal-making and self-promotion* (like that of Donald Trump) that views monument-building, fundraising, and transactional politics as inseparable, illustrating the psychological driver behind exploiting the library loophole \[[21:47](http://www.youtube.com/watch?v=dB1-lg-xZWc&t=1307)].
+* *The Art of the Deal* 🏗️ **Relevance:** Provides insight into the *mindset of deal-making and self-promotion* (like that of Donald Trump) that views monument-building, fundraising, and transactional politics as inseparable, illustrating the psychological driver behind exploiting the library loophole \[[21:47](http://www.youtube.com/watch?v=dB1-lg-xZWc&t=1307)].  
+  
+## 🐦 Tweet  
+<blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">🏛️😂📺 Presidential Libraries: Last Week Tonight with John Oliver (HBO)<br><br>🏛️ Archives | 💰 Funding | 🖼️ Exhibits | 📜 Transparency | 🚨 Corruption<a href="https://t.co/BzyDEotwPb">https://t.co/BzyDEotwPb</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/1976880966057836799?ref_src=twsrc%5Etfw">October 11, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

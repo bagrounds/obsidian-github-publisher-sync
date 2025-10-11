@@ -10,8 +10,9 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 📑 Notes, 💭 thoughts, and 🔗 Links.  
 ❔ What do 🫵 _you_ 🤔 think?  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (330)  
-- [2025-10-10](./reflections/2025-10-10.md)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (331)  
+- [2025-10-11](./reflections/2025-10-11.md)  
+- [2025-10-10 | 👹🗂️ Epstein Files | 🏃🏼‍♀️ Aerobics | 🔮 Prediction 📺📰📚](./reflections/2025-10-10.md)  
 - [2025-10-09 | 🐍 Corruption | 💙 Cerulean | 🤖 Autonomous 📺📰📚📄](./reflections/2025-10-09.md)  
 - [2025-10-08 | 🌪️ Chaos | 🕹️ Control | 🔮 Prediction 📺📚](./reflections/2025-10-08.md)  
 - [2025-10-07 | ⚖️ On the Rule of Law 📚](./reflections/2025-10-07.md)  
@@ -20,7 +21,6 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [2025-10-04 | 🏢 Firm | ❤️ Good | 💨 Fast 📚📺](./reflections/2025-10-04.md)  
 - [2025-10-03 | 🏎️ Performance | 🐦 Starlings | 👶🏼 Montessori 📺📚](./reflections/2025-10-03.md)  
 - [2025-10-02 | 🃏 Trick | 😊 Mood | 🤔 Think 📚](./reflections/2025-10-02.md)  
-- [2025-10-01 | ✨ Endure | ⏳ Outlive | 🛡️ Preserve 📚](./reflections/2025-10-01.md)  
   
   
 ## [📚 Books](./books/index.md) (671)  
@@ -36,17 +36,17 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [👨‍👩‍👧‍👦📊 The Family Firm: A Data-Driven Guide to Better Decision Making in the Early School Years](./books/the-family-firm-a-data-driven-guide-to-better-decision-making-in-the-early-school-years.md)  
   
   
-## [📺 Videos](./videos/index.md) (345)  
-- [🍊🚫👯‍♀️🏛️ Trump Dodges Ghislaine Maxwell Pardon Q as Bondi Stonewalls Senate | The Daily Show](./videos/trump-dodges-ghislaine-maxwell-pardon-q-as-bondi-stonewalls-senate-the-daily-show.md)  
+## [📺 Videos](./videos/index.md) (348)  
+- [📚🧠🤝🌍 How books shape minds and societies, building cognitive resilience and civic mindedness](./videos/how-books-shape-minds-and-societies-building-cognitive-resilience-and-civic-mindedness.md)  
 - [🏛️😂📺 Presidential Libraries: Last Week Tonight with John Oliver (HBO)](./videos/presidential-libraries-last-week-tonight-with-john-oliver-hbo.md)  
+- [🫀💪📈 Guide How to Build a Monster Aerobic System | Your Detailed Guide](./videos/how-to-build-a-monster-aerobic-system-your-detailed-guide.md)  
+- [🇺🇸👑👎 How the start of Trump’s second term looks like some autocracies](./videos/how-the-start-of-trumps-second-term-looks-like-some-autocracies.md)  
+- [🍊🚫👯‍♀️🏛️ Trump Dodges Ghislaine Maxwell Pardon Q as Bondi Stonewalls Senate | The Daily Show](./videos/trump-dodges-ghislaine-maxwell-pardon-q-as-bondi-stonewalls-senate-the-daily-show.md)  
 - [👮🚨🇺🇸 ICE escalates aggressive raids in Chicago as Trump moves to deploy National Guard](./videos/ice-escalates-aggressive-raids-in-chicago-as-trump-moves-to-deploy-national-guard.md)  
 - [🇺🇸👑🗣️ Murphy Floor Speech on Trump's Authoritarian Takeover](./videos/murphy-floor-speech-on-trumps-authoritarian-takeover.md)  
 - [🧑‍🤝‍🧑💰⛽ Sen. Whitehouse: «Trump is Moving Money from Pockets of Normal Americans to Fossil Fuel Megadonors»](./videos/sen-whitehouse-trump-is-moving-money-from-pockets-of-normal-americans-to-fossil-fuel-megadonors.md)  
 - [💪🏋️📅 Motoren unseres Lebens - Muskeltraining 2015](./videos/motoren-unseres-lebens-muskeltraining-2015-vortrag-dr-patrick-oconnor.md)  
 - [🌪️➡️🕹️ An Attempt to Turn Chaos Into Control | Explainer](./videos/an-attempt-to-turn-chaos-into-control-explainer.md)  
-- [🏛️⚖️🎯💥 Whitehouse Spotlights the Actual Weaponization of the Justice System by Trump's MAGA Cronies](./videos/whitehouse-spotlights-the-actual-weaponization-of-the-justice-system-by-trumps-maga-cronies.md)  
-- [🏛️⚖️🌍 A look rulings from the Supreme Court term that could have far-reaching consequences](./videos/a-look-rulings-from-the-supreme-court-term-that-could-have-far-reaching-consequences.md)  
-- [🙊🤐👑 Jimmy Kimmel's Suspension Was Always About Censorship (Just Ask Trump) | The Daily Show](./videos/jimmy-kimmels-suspension-was-always-about-censorship-just-ask-trump-the-daily-show.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (82)  

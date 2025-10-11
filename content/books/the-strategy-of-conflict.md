@@ -118,4 +118,6 @@ STRICT FORMATTING RULES:
 > - Lines: DO NOT use horizontal rules (---) or tables.  
 > - Brevity: Full sentences are NOT required. Adopt an ultra-concise, Strunk and White-style brevity (e.g., "Protein: 1.6 g/kg min. Muscle preservation."). Do not Use filler or unnecessary language. Edit your own work to achieve ultimate concision. Your goal is to convey maximum insight with as few words as possible.  
 > - Completeness: PRIORITIZE COMPLETE LISTS. Only use "etc." or ellipses (...) on their own bullet point when providing a complete list is genuinely impossible or impractical for the cheat sheet's format.  
-> Follow the cheet sheet with similar, contrasting, and creatively related book recommendations on The Strategy of Conflict. Never quote or italicize titles. Be thorough but concise. Use section headings and bulleted lists to avoid long blocks of text.
+> Follow the cheet sheet with similar, contrasting, and creatively related book recommendations on The Strategy of Conflict. Never quote or italicize titles. Be thorough but concise. Use section headings and bulleted lists to avoid long blocks of text.  
+  
+## 🐦 Tweet  

@@ -14,6 +14,14 @@ youtube: https://youtu.be/GZKU7TgR6IU
 # 👥🌍📢💡 How Common Knowledge Shapes the World | Steven Pinker | TED  
 ![How Common Knowledge Shapes the World | Steven Pinker | TED](https://youtu.be/GZKU7TgR6IU)  
   
+## 🔦 Highlights  
+  
+1. 🚫 Why are autocrats terrified of public protests? The reason was explained by Gandhi when he said, "100,000 Englishmen cannot control 350 million Indians if the Indians refuse to cooperate".  
+2. ✊ This common knowledge allows them to coordinate their resistance whether by literally storming the palace or by bringing the apparatus of the state to a halt through boycotts and work stoppages.  
+3. 🤝 Basic civility depends on norms such as that you don't brazenly lie, you don't insult people to their faces, you don't prosecute personal vendettas.  
+4. 🌐 In the global arena, peace depends on norms such as that nation states are immortal, national borders are grandfathered in, conquest is unacceptable, and nuclear weapons are unthinkable.  
+5. 📉 I hope that, having explained the logic behind human harmony, I don't have to explain how these norms are currently under threat or what is at stake if we lose them.  
+  
 ## 🤖 AI Summary  
   
 * 💡 Common knowledge is logically distinct from private knowledge \[[00:36](http://www.youtube.com/watch?v=GZKU7TgR6IU&t=36)]. Private knowledge is *I know something* and *you know it*, while common knowledge includes the infinite recursion of *I know that you know that I know that you know it*, *ad infinitum* \[[00:46](http://www.youtube.com/watch?v=GZKU7TgR6IU&t=46)].  
@@ -44,7 +52,7 @@ A: 🤯 Private knowledge is when two people simply know the same fact \[[00:36]
 A: 🗺️ Coordination requires a focal point or a public agreement \[[02:42](http://www.youtube.com/watch?v=GZKU7TgR6IU&t=162)]. The separated couple example highlights how, without a public signal, they are trapped in a futile cycle of anticipating the other's anticipations \[[01:32](http://www.youtube.com/watch?v=GZKU7TgR6IU&t=92)]. A focal point—a conspicuously salient place like the big clock in Grand Central Station—allows both to simultaneously anticipate that the other will select it, creating the necessary common knowledge for them to meet \[[02:50](http://www.youtube.com/watch?v=GZKU7TgR6IU&t=170)].  
   
 ### Q: 🤫 Why do people use innuendo and euphemism, like "Netflix and chill," instead of direct speech?  
-A: 🎭 Innuendo is used to avoid establishing the common knowledge that a specific overture was made or an intention was revealed \[[10:41](http://www.youtube.com/watch?v=GZKU7TgR6IU&t=641)]. If direct speech is rejected, common knowledge is established that the relationship has changed and the overture can't be taken back \[[11:34](http://www.youtube.com/watch?v=GZKU7TgR6IU&t=694)]. Veiled language allows individuals to maintain the *fiction* of the prior, platonic relationship \[[11:15](http://www.youtube.com/watch?v=GZKU7TgR6IU&t=675)].  
+A: 🎭 Innuendo is used to avoid establishing the common knowledge that a specific overture was made or an intention was revealed \[[10:41](http://www.youtube.com/watch?v=GZKU7TgR6IU&t=641)]. If direct speech is used, common knowledge is established that the relationship has changed and the overture can't be taken back \[[11:34](http://www.youtube.com/watch?v=GZKU7TgR6IU&t=694)]. Veiled language allows individuals to maintain the *fiction* of the prior, platonic relationship \[[11:15](http://www.youtube.com/watch?v=GZKU7TgR6IU&t=675)].  
   
 ### Q: 📈 What is the role of common knowledge in speculative financial bubbles?  
 A: 💰 Financial speculation, according to Keynes, is a game of recursive mentalizing—choosing the asset that one anticipates the greatest number of other investors will choose \[[06:01](http://www.youtube.com/watch?v=GZKU7TgR6IU&t=361)]. Common knowledge acts to levitate an asset's price based on the shared expectation of rising value, not its inherent productive worth \[[07:12](http://www.youtube.com/watch?v=GZKU7TgR6IU&t=432)]. Bubbles pop when the *doubt* about the asset's value becomes common knowledge, triggering a mass panic sale \[[07:28](http://www.youtube.com/watch?v=GZKU7TgR6IU&t=448)].  
@@ -53,7 +61,7 @@ A: 💰 Financial speculation, according to Keynes, is a game of recursive menta
   
 ### Similar  
   
-* 🧠 The Strategy of Conflict by Thomas Schelling [Source: Princeton University Press]. This book introduces the concept of the focal point, which is central to the video’s explanation of how unspoken common knowledge facilitates coordination problems.  
+* [⚔️♟️ The Strategy of Conflict](../books/the-strategy-of-conflict.md) by Thomas Schelling [Source: Princeton University Press]. This book introduces the concept of the focal point, which is central to the video’s explanation of how unspoken common knowledge facilitates coordination problems.  
 * 🗣️ The Language Instinct by Steven Pinker [Source: William Morrow and Company]. This work explores the nature of language as an innate human ability, touching upon how direct speech evolved and functions as a powerful, public mechanism for generating common knowledge.  
 * 🎲 Game Theory: A Nontechnical Introduction by Morten D. Davis [Source: Dover Publications]. Provides a highly accessible overview of the mathematical principles, including coordination games, that underpin the logic of common assumptions in social interaction.  
   

@@ -5,6 +5,7 @@ aliases:
 URL: https://bagrounds.org/books/organize-your-day-17-easy-strategies-to-manage-your-day-improve-productivity-and-overcome-procrastination
 share: true
 affiliate link: https://amzn.to/45ABqy2
+CTA: ✅ Conquer your schedule.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🗓️✅ Organize Your Day: 17 Easy Strategies to Manage Your Day, Improve Productivity and Overcome Procrastination  
@@ -53,7 +54,7 @@ affiliate link: https://amzn.to/45ABqy2
 * **[🌊🧘🏼‍♀️🧠📈 Flow: The Psychology of Optimal Experience](./flow-the-psychology-of-optimal-experience.md) by Mihaly Csikszentmihalyi:** Explores the state of complete absorption in an activity, which is often a byproduct of good organization and focused effort.  
 * **[🤔🐇🐢 Thinking, Fast and Slow](./thinking-fast-and-slow.md) by Daniel Kahneman:** Delves into the two systems that drive the way we think, offering insights into decision-making and potential biases that can affect productivity and procrastination.  
 * **[🔋📈 The Power of Full Engagement: Managing Energy, Not Time, Is the Key to High Performance and Personal Renewal](./the-power-of-full-engagement-managing-energy-not-time-is-the-key-to-high-performance-and-personal-renewal.md) by Jim Loehr and Tony Schwartz:** Shifts the focus from managing time to managing energy levels (physical, emotional, mental, and spiritual) for sustained high performance.  
-* 📱 **Digital Minimalism: Choosing a Focused Life in a Noisy World by Cal Newport:** Addresses the specific challenges of maintaining focus and productivity in an age of constant digital distractions.  
+* **[📱⬇️🧘 Digital Minimalism: Choosing a Focused Life in a Noisy World](./digital-minimalism-choosing-a-focused-life-in-a-noisy-world.md) by Cal Newport:** Addresses the specific challenges of maintaining focus and productivity in an age of constant digital distractions.  
   
 ## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Organize Your Day: 17 Easy Strategies to Manage Your Day, Improve Productivity and Overcome Procrastination. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

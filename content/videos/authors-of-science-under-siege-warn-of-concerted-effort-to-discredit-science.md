@@ -10,7 +10,7 @@ Channel: PBS NewsHour
 tags:
 youtube: https://youtu.be/VZq7ZavUlJc
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](../index.md) > [Videos](./index.md) | [🔬🛡️ Science Under Siege: How to Fight the Five Most Powerful Forces That Threaten Our World](../books/science-under-siege-how-to-fight-the-five-most-powerful-forces-that-threaten-our-world.md)  
 # 🔬🛡️🤥 Authors of 'Science Under Siege' warn of concerted effort to discredit science  
 ![Authors of 'Science Under Siege' warn of concerted effort to discredit science](https://youtu.be/VZq7ZavUlJc)  
   

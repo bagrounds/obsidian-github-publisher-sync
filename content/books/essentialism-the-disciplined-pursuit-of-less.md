@@ -4,11 +4,12 @@ aliases:
   - "➖💯 Essentialism: The Disciplined Pursuit of Less"
 URL: https://bagrounds.org/books/essentialism-the-disciplined-pursuit-of-less
 share: true
-affiliate link: https://www.amazon.com/dp/0804137382/ref=cm_sw_r_as_gl_apa_gl_i_G3WGKQSJVQV1VDFXVBT3?linkCode=ml1&tag=bagrounds-20
+affiliate link: https://amzn.to/4q8rVOm
+CTA: ✂️ Trim obligations.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ➖💯 Essentialism: The Disciplined Pursuit of Less  
-[🛒 Essentialism: The Disciplined Pursuit of Less. As an Amazon Associate I earn from qualifying purchases.](https://www.amazon.com/dp/0804137382/ref=cm_sw_r_as_gl_apa_gl_i_G3WGKQSJVQV1VDFXVBT3?linkCode=ml1&tag=bagrounds-20)  
+[🛒 Essentialism: The Disciplined Pursuit of Less. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4q8rVOm)  
   
 ## 📚 Book Report: Essentialism: The Disciplined Pursuit of Less  
   
@@ -33,9 +34,9 @@ affiliate link: https://www.amazon.com/dp/0804137382/ref=cm_sw_r_as_gl_apa_gl_i_
   
 ### 🤝 Similar Books  
   
-* **[🤿💼 Deep Work](./deep-work.md): Rules for Focused Success in a Distracted World by Cal Newport:** Explores the importance of focused, uninterrupted work for producing high-quality results, a natural complement to Essentialism's focus on the vital few. 💯  
+* **[🤿💼 Deep Work: Rules for Focused Success in a Distracted World](./deep-work.md) by Cal Newport:** Explores the importance of focused, uninterrupted work for producing high-quality results, a natural complement to Essentialism's focus on the vital few. 💯  
 * 🎯 **The ONE Thing: The Surprisingly Simple Truth Behind Extraordinary Results by Gary Keller:** Argues for focusing on the single most important thing in any given area to achieve significant results, echoing the idea of identifying the essential. 🔑  
-* 📱 **Digital Minimalism: Choosing a Focused Life in a Noisy World by Cal Newport:** Applies the principles of minimalism to our relationship with technology, helping to eliminate digital distractions that hinder focus on essential activities. 🚫  
+* **[📱⬇️🧘 Digital Minimalism: Choosing a Focused Life in a Noisy World](./digital-minimalism-choosing-a-focused-life-in-a-noisy-world.md) by Cal Newport:** Applies the principles of minimalism to our relationship with technology, helping to eliminate digital distractions that hinder focus on essential activities. 🚫  
 * 😌 **Effortless: Make It Easier to Do What Matters Most by Greg McKeown:** McKeown's follow-up book, focusing on making the execution of essential tasks simpler and less taxing. ⚙️  
 * 🧹 **The Life-Changing Magic of Tidying Up by Marie Kondo:** While focused on physical decluttering, its emphasis on keeping only what "sparks joy" aligns with the Essentialist principle of identifying and keeping only what is truly valuable. ✨  
   

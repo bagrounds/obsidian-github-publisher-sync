@@ -4,8 +4,8 @@ aliases:
   - "🦋♟️ Emergent Strategy: Shaping Change, Changing Worlds"
 title: "🦋♟️ Emergent Strategy: Shaping Change, Changing Worlds"
 URL: https://bagrounds.org/books/emergent-strategy-shaping-change-changing-worlds
-Author: 
-tags: 
+Author:
+tags:
 affiliate link: https://amzn.to/456a6HQ
 CTA: 🌱 Cultivate resilience.
 ---
@@ -59,7 +59,7 @@ This book resonates strongly with:
   
 * **Saul Alinsky - *Rules for Radicals: A Pragmatic Primer for Realistic Radicals***: ✊ A classic text on community organizing focused on power analysis, direct action, and more confrontational, strategically planned tactics. 🆚 Offers a contrast to the relational, adaptive focus of *Emergent Strategy*.  
 * **Mark Engler & Paul Engler - *This Is an Uprising: How Nonviolent Revolt Is Shaping the Twenty-First Century***: 📣 Analyzes successful nonviolent movements, focusing on strategic disruption, structure, and momentum. 🔄 While valuing adaptation, it presents a more structured approach to large-scale mobilization than *Emergent Strategy*'s emphasis on the small-scale shaping the large.  
-* **Erica Chenoweth & Maria J. Stephan - *Why Civil Resistance Works: The Strategic Logic of Nonviolent Conflict***: 📊 A data-driven analysis comparing violent and nonviolent campaigns, focusing on strategic choices and participation numbers. 🆚 Contrasts with *Emergent Strategy*'s more process-oriented, nature-inspired approach.  
+* **Erica Chenoweth & Maria J. Stephan - [🕊️💪 Why Civil Resistance Works: The Strategic Logic of Nonviolent Conflict](./why-civil-resistance-works-the-strategic-logic-of-nonviolent-conflict.md)**: 📊 A data-driven analysis comparing violent and nonviolent campaigns, focusing on strategic choices and participation numbers. 🆚 Contrasts with *Emergent Strategy*'s more process-oriented, nature-inspired approach.  
   
 ### 🎨 Creatively Related (Expanding on Themes: Sci-Fi, Nature Writing, Community)  
   

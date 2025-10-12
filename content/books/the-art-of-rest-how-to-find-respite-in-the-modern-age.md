@@ -5,6 +5,7 @@ aliases:
 URL: https://bagrounds.org/books/the-art-of-rest-how-to-find-respite-in-the-modern-age
 share: true
 affiliate link: https://amzn.to/4kTTWXi
+CTA: 🕊️ Embrace tranquility.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🎨😴🧘☕⏳ The Art of Rest: How to Find Respite in the Modern Age  
@@ -76,7 +77,7 @@ Claudia Hammond's *The Art of Rest* serves as a timely reminder that rest is not
 * ***The Upside of Downtime: Why Boredom is Good*** **by Sandi Mann:** Argues for the benefits of boredom and unstructured downtime for creativity and inspiration.  
 * ***The Procrastination Economy: The Big Business of Downtime*** **by Ethan Tussey:** Examines how industries have capitalized on our downtime and moments of waiting, offering a societal perspective on the commercialization of non-working time.  
 * **[🥵🔥💨 Burnout: The Secret to Unlocking the Stress Cycle](./burnout-the-secret-to-unlocking-the-stress-cycle.md)** **by Amelia Nagoski and Emily Nagoski:** While focused on stress and burnout, it highlights the physiological need to complete the stress cycle, which often involves rest and recovery.  
-* ***Digital Minimalism: Choosing Focus in a Noisy World*** **by Cal Newport:** Advocates for a philosophy of technology use that focuses on optimizing for deeply valued activities and intentionally scheduling periods away from digital connectivity, directly supporting the ability to rest.  
+* **[📱⬇️🧘 Digital Minimalism: Choosing a Focused Life in a Noisy World](./digital-minimalism-choosing-a-focused-life-in-a-noisy-world.md)** **by Cal Newport:** Advocates for a philosophy of technology use that focuses on optimizing for deeply valued activities and intentionally scheduling periods away from digital connectivity, directly supporting the ability to rest.  
   
 ## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on The Art of Rest: How to Find Respite in the Modern Age. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.  

@@ -90,7 +90,7 @@ CTA: 😴 Prioritize restoration.
 * **[😴📈 Rest: Why You Get More Done When You Work Less](./rest-why-you-get-more-done-when-you-work-less.md)** by Alex Soojung-Kim Pang: Challenges "hustle culture" by demonstrating through historical examples and scientific research that deliberate rest enhances productivity.  
 * ⏳ **Four Thousand Weeks: Time Management for Mortals** by Oliver Burkeman: A philosophical look at time management, acknowledging our finite lives and questioning the obsession with productivity.  
 * **[➖💯 Essentialism: The Disciplined Pursuit of Less](./essentialism-the-disciplined-pursuit-of-less.md)** by Greg McKeown: Advocates for identifying what is truly essential and eliminating the rest to focus on what matters.  
-* 📵 **Digital Minimalism: Choosing a Focused Life in a Noisy World** by Cal Newport: Argues for intentional technology use to reclaim solitude and focus, preventing burnout.  
+* **[📱⬇️🧘 Digital Minimalism: Choosing a Focused Life in a Noisy World](./digital-minimalism-choosing-a-focused-life-in-a-noisy-world.md)** by Cal Newport: Argues for intentional technology use to reclaim solitude and focus, preventing burnout.  
 * **[🤿💼 Deep Work](./deep-work.md): Rules for Focused Success in a Distracted World** by Cal Newport: Offers strategies for developing the ability to focus without distraction on cognitively demanding tasks.  
 * **[📵 How to Do Nothing: Resisting the Attention Economy](./how-to-do-nothing-resisting-the-attention-economy.md)** by Jenny Odell: A critique of the attention economy and its role in "hustle culture."  
 * 🙅‍♀️ **Laziness Does Not Exist** by Devon Price: Challenges societal notions of laziness and productivity.  

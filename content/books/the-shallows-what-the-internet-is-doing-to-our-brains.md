@@ -37,7 +37,7 @@ The Shallows was a finalist for the 🏆 Pulitzer Prize in 🗓️ 2011 and spar
   
 ### ➕ Similar Books  
   
-* 🧘‍♀️ **Digital Minimalism: Choosing a Focused Life in a Noisy World** by Cal Newport  
+* **[📱⬇️🧘 Digital Minimalism: Choosing a Focused Life in a Noisy World](./digital-minimalism-choosing-a-focused-life-in-a-noisy-world.md)** by Cal Newport  
     * This book advocates for a philosophy of technology use that prioritizes deep work and intentional engagement, echoing Carr's concerns about distraction and the need for focused attention. Newport proposes a structured approach to reducing digital clutter and reclaiming one's time and focus.  
 * 🤯 **Stolen Focus: Why You Can't Pay Attention—and How to Think Deeply Again** by Johann Hari  
     * Hari's work investigates the societal and systemic factors contributing to the modern attention crisis, aligning with Carr's exploration of how external forces, particularly technology, erode our capacity for concentration.  

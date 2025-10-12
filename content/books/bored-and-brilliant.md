@@ -41,7 +41,7 @@ affiliate link: https://amzn.to/3FA2N0J
 ## 📚 Book Recommendations  
   
 ### 🤓 Similar Reads (Focus on Digital Minimalism, Attention, Creativity)  
-* 📱 **Digital Minimalism: 🧘 Choosing a Focused Life in a Noisy World** by ✍️ Cal Newport: Argues for a philosophy of technology use where tools are intentionally selected to support deeply held values, advocating for a decluttering process similar to Zomorodi's challenges.  
+* **[📱⬇️🧘 Digital Minimalism: Choosing a Focused Life in a Noisy World](./digital-minimalism-choosing-a-focused-life-in-a-noisy-world.md)** by ✍️ Cal Newport: Argues for a philosophy of technology use where tools are intentionally selected to support deeply held values, advocating for a decluttering process similar to Zomorodi's challenges.  
 * **[🤿💼 Deep Work: Rules for Focused Success in a Distracted World](./deep-work.md) by ✍️ Cal Newport: Explores the importance of distraction-free concentration for producing high-quality work and achieving mastery.  
 * 📱 **How to Break Up With Your Phone** by 👩‍💼 Catherine Price: Offers a practical plan to create a healthier relationship with your smartphone, reducing addiction and reclaiming attention.  
 * 🤯 **Stolen Focus: 😞 Why You Can't Pay Attention—and How to Think Deeply Again** by ✍️ Johann Hari: Investigates the societal, technological, and environmental factors diminishing our collective attention spans and offers solutions.  

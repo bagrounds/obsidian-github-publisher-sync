@@ -14,7 +14,7 @@ Cal Newport is an American author, computer science professor at Georgetown Univ
   
 His notable books include:  
 * **[🤿💼 Deep Work: Rules for Focused Success in a Distracted World](../books/deep-work.md)** (2016)  
-* **Digital Minimalism: Choosing a Focused Life in a Noisy World** (2019)  
+* **[📱⬇️🧘 Digital Minimalism: Choosing a Focused Life in a Noisy World](../books/digital-minimalism-choosing-a-focused-life-in-a-noisy-world.md)** (2019)  
 * **A World Without Email: Reimagining Work in an Age of Communication Overload** (2021)  
 * **[💪❤️ So Good They Can't Ignore You: Why Skills Trump Passion in the Quest for Work You Love](../books/so-good-they-cant-ignore-you-why-skills-trump-passion-in-the-quest-for-work-you-love.md)** (2012)  
 * **[🐌🎯 Slow Productivity: The Lost Art of Accomplishment Without Burnout](../books/slow-productivity-the-lost-art-of-accomplishment-without-burnout.md)** (2024)  

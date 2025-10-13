@@ -89,7 +89,7 @@ Cal Newport's Digital Minimalism presents a consistent and well-defined philosop
   
 #### 💡 Similar Books (Focus on intentional tech use, productivity, focus)  
 * [🤿💼 Deep Work: Rules for Focused Success in a Distracted World](./deep-work.md) by Cal Newport  
-* 📱 How to Break Up with Your Phone by Catherine Price  
+* [📱💔 How to Break Up with Your Phone: The 30-Day Plan to Take Back Your Life](./how-to-break-up-with-your-phone-the-30-day-plan-to-take-back-your-life.md) by Catherine Price  
 * [🧘 Indistractable: How to Control Your Attention and Choose Your Life](./indistractable.md) by Nir Eyal  
 * [➖💯 Essentialism: The Disciplined Pursuit of Less](./essentialism-the-disciplined-pursuit-of-less.md) by Greg McKeown  
 * [⚛️🔄 Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones](./atomic-habits.md) by James Clear  

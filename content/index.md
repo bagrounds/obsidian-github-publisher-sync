@@ -10,8 +10,9 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 📑 Notes, 💭 thoughts, and 🔗 Links.  
 ❔ What do 🫵 _you_ 🤔 think?  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (331)  
-- [2025-10-11](./reflections/2025-10-11.md)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (332)  
+- [2025-10-12 | 🤏 Minimal | 💔 Break Up 📚](./reflections/2025-10-12.md)  
+- [2025-10-11 | 📚 Books | 📣 Common Knowledge | ♟️ Strategy | ✊ Resistance 📺📰📚](./reflections/2025-10-11.md)  
 - [2025-10-10 | 👹🗂️ Epstein Files | 🏃🏼‍♀️ Aerobics | 🔮 Prediction 📺📰📚](./reflections/2025-10-10.md)  
 - [2025-10-09 | 🐍 Corruption | 💙 Cerulean | 🤖 Autonomous 📺📰📚📄](./reflections/2025-10-09.md)  
 - [2025-10-08 | 🌪️ Chaos | 🕹️ Control | 🔮 Prediction 📺📚](./reflections/2025-10-08.md)  
@@ -20,33 +21,32 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [2025-10-05 | 💕 Love | 👎 2025 | 🎭 Quantico 📚📺](./reflections/2025-10-05.md)  
 - [2025-10-04 | 🏢 Firm | ❤️ Good | 💨 Fast 📚📺](./reflections/2025-10-04.md)  
 - [2025-10-03 | 🏎️ Performance | 🐦 Starlings | 👶🏼 Montessori 📺📚](./reflections/2025-10-03.md)  
-- [2025-10-02 | 🃏 Trick | 😊 Mood | 🤔 Think 📚](./reflections/2025-10-02.md)  
   
   
-## [📚 Books](./books/index.md) (671)  
-- [🏠💙🌈 The House in the Cerulean Sea](./books/the-house-in-the-cerulean-sea.md)  
-- [🤖📈 Prediction Machines: The Simple Economics of Artificial Intelligence](./books/prediction-machines-the-simple-economics-of-artificial-intelligence.md)  
-- [🏛️⚖️ The Rule of Law](./books/the-rule-of-law.md)  
-- [🏛️⚖️ On the Rule of Law: History, Politics, Theory](./books/on-the-rule-of-law-history-politics-theory.md)  
-- [🧑‍💻🤖 Human + Machine: Reimagining Work in the Age of AI](./books/human-machine-reimagining-work-in-the-age-of-ai.md)  
-- [🤖📈 The Second Machine Age: Work, Progress, and Prosperity in a Time of Brilliant Technologies](./books/the-second-machine-age-work-progress-and-prosperity-in-a-time-of-brilliant-technologies.md)  
-- [🤕👶 The Coddling of the American Mind: How Good Intentions and Bad Ideas Are Setting Up a Generation for Failure](./books/the-coddling-of-the-american-mind-how-good-intentions-and-bad-ideas-are-setting-up-a-generation-for-failure.md)  
-- [😫👩‍👧‍👦 Screaming on the Inside: The Unsustainability of American Motherhood](./books/screaming-on-the-inside-the-unsustainability-of-american-motherhood.md)  
-- [🕳️🧠👶🏽 The Whole-Brain Child: 12 Revolutionary Strategies to Nurture Your Child's Developing Mind](./books/the-whole-brain-child.md)  
-- [👨‍👩‍👧‍👦📊 The Family Firm: A Data-Driven Guide to Better Decision Making in the Early School Years](./books/the-family-firm-a-data-driven-guide-to-better-decision-making-in-the-early-school-years.md)  
+## [📚 Books](./books/index.md) (676)  
+- [📱⬇️🧘 Digital Minimalism: Choosing a Focused Life in a Noisy World](./books/digital-minimalism-choosing-a-focused-life-in-a-noisy-world.md)  
+- [🥱🤓 Bored and Brilliant: How Spacing Out Can Unlock Your Most Productive and Creative Self](./books/bored-and-brilliant.md)  
+- [📱💔 How to Break Up with Your Phone: The 30-Day Plan to Take Back Your Life](./books/how-to-break-up-with-your-phone-the-30-day-plan-to-take-back-your-life.md)  
+- [➖💯 Essentialism: The Disciplined Pursuit of Less](./books/essentialism-the-disciplined-pursuit-of-less.md)  
+- [📢📣 Platform: Get Noticed in a Noisy World](./books/platform-get-noticed-in-a-noisy-world.md)  
+- [😴🧘☕⏳ The Art of Rest: How to Find Respite in the Modern Age](./books/the-art-of-rest-how-to-find-respite-in-the-modern-age.md)  
+- [😩⚕️ Fatigue Science for Human Health](./books/fatigue-science-for-human-health.md)  
+- [🗓️✅ Organize Your Day: 17 Easy Strategies to Manage Your Day, Improve Productivity and Overcome Procrastination](./books/organize-your-day-17-easy-strategies-to-manage-your-day-improve-productivity-and-overcome-procrastination.md)  
+- [📱🧠 The Shallows: What the Internet Is Doing to Our Brains](./books/the-shallows-what-the-internet-is-doing-to-our-brains.md)  
+- [🌴🧘🏼‍♀️ Do Nothing: How to Break Away from Overworking, Overdoing, and Underliving](./books/do-nothing-how-to-break-away-from-overworking-overdoing-and-underliving.md)  
   
   
-## [📺 Videos](./videos/index.md) (348)  
+## [📺 Videos](./videos/index.md) (353)  
+- [🔬🛡️🤥 Authors of 'Science Under Siege' warn of concerted effort to discredit science](./videos/authors-of-science-under-siege-warn-of-concerted-effort-to-discredit-science.md)  
+- [🌪️➡️🕹️ An Attempt to Turn Chaos Into Control | Explainer](./videos/an-attempt-to-turn-chaos-into-control-explainer.md)  
+- [🌱⛰️💪 Effective Resistance to Authoritarianism: «The violets in the mountains have broken the rocks»](./videos/effective-resistance-to-authoritarianism-the-violets-in-the-mountains-have-broken-the-rocks.md)  
+- [🫂🔑📈 The Secret Trick to Improve Your Social Connections | Kasley Killam | How to Be a Better Human | TED](./videos/the-secret-trick-to-improve-your-social-connections-kasley-killam-how-to-be-a-better-human-ted.md)  
+- [👑🚫🌍🗣️ How to stop authoritarianism across the globe: a conversation with President Obama](./videos/how-to-stop-authoritarianism-across-the-globe-a-conversation-with-president-obama.md)  
+- [👥🌍📢💡 How Common Knowledge Shapes the World | Steven Pinker | TED](./videos/how-common-knowledge-shapes-the-world-steven-pinker-ted.md)  
 - [📚🧠🤝🌍 How books shape minds and societies, building cognitive resilience and civic mindedness](./videos/how-books-shape-minds-and-societies-building-cognitive-resilience-and-civic-mindedness.md)  
 - [🏛️😂📺 Presidential Libraries: Last Week Tonight with John Oliver (HBO)](./videos/presidential-libraries-last-week-tonight-with-john-oliver-hbo.md)  
 - [🫀💪📈 Guide How to Build a Monster Aerobic System | Your Detailed Guide](./videos/how-to-build-a-monster-aerobic-system-your-detailed-guide.md)  
 - [🇺🇸👑👎 How the start of Trump’s second term looks like some autocracies](./videos/how-the-start-of-trumps-second-term-looks-like-some-autocracies.md)  
-- [🍊🚫👯‍♀️🏛️ Trump Dodges Ghislaine Maxwell Pardon Q as Bondi Stonewalls Senate | The Daily Show](./videos/trump-dodges-ghislaine-maxwell-pardon-q-as-bondi-stonewalls-senate-the-daily-show.md)  
-- [👮🚨🇺🇸 ICE escalates aggressive raids in Chicago as Trump moves to deploy National Guard](./videos/ice-escalates-aggressive-raids-in-chicago-as-trump-moves-to-deploy-national-guard.md)  
-- [🇺🇸👑🗣️ Murphy Floor Speech on Trump's Authoritarian Takeover](./videos/murphy-floor-speech-on-trumps-authoritarian-takeover.md)  
-- [🧑‍🤝‍🧑💰⛽ Sen. Whitehouse: «Trump is Moving Money from Pockets of Normal Americans to Fossil Fuel Megadonors»](./videos/sen-whitehouse-trump-is-moving-money-from-pockets-of-normal-americans-to-fossil-fuel-megadonors.md)  
-- [💪🏋️📅 Motoren unseres Lebens - Muskeltraining 2015](./videos/motoren-unseres-lebens-muskeltraining-2015-vortrag-dr-patrick-oconnor.md)  
-- [🌪️➡️🕹️ An Attempt to Turn Chaos Into Control | Explainer](./videos/an-attempt-to-turn-chaos-into-control-explainer.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (82)  
@@ -74,17 +74,17 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
   
   
 ## [💾 Software](./software/index.md) (29)  
+- [🤖♊ Gemini](./software/gemini.md)  
 - [💎🔬🔍📈 Quartz](./software/quartz.md)  
 - [⛎♉️♊️♋️♌️♍️♎️♏️♐️♑️♒️♓️ Zodios](./software/zodios.md)  
 - [🐍📜🔍✅ Pydantic](./software/pydantic.md)  
 - [❓🧪✅🤔 Hypothesis](./software/hypothesis.md)  
-- [🐍🏎️📦 uv](./software/uv.md)  
   
   
 ## [👥 People](./people/index.md) (15)  
+- [👨‍🏫📚💻🤔 Cal Newport](./people/cal-newport.md)  
 - [🧠🫀👀🔬 Andrew Huberman](./people/andrew-huberman.md)  
 - [🧠🤝🐘 Jonathan Haidt](./people/jonathan-haidt.md)  
-- [👨‍🏫📚💻🤔 Cal Newport](./people/cal-newport.md)  
   
   
 ## [🛍️ Products](./products/index.md) (3)  

@@ -7,6 +7,7 @@ URL: https://bagrounds.org/books/bored-and-brilliant
 Author:
 tags:
 affiliate link: https://amzn.to/3FA2N0J
+CTA: 🧘‍♀️ Unplug, create.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🥱🤓 Bored and Brilliant: How Spacing Out Can Unlock Your Most Productive and Creative Self  
@@ -43,7 +44,7 @@ affiliate link: https://amzn.to/3FA2N0J
 ### 🤓 Similar Reads (Focus on Digital Minimalism, Attention, Creativity)  
 * **[📱⬇️🧘 Digital Minimalism: Choosing a Focused Life in a Noisy World](./digital-minimalism-choosing-a-focused-life-in-a-noisy-world.md)** by ✍️ Cal Newport: Argues for a philosophy of technology use where tools are intentionally selected to support deeply held values, advocating for a decluttering process similar to Zomorodi's challenges.  
 * **[🤿💼 Deep Work: Rules for Focused Success in a Distracted World](./deep-work.md) by ✍️ Cal Newport: Explores the importance of distraction-free concentration for producing high-quality work and achieving mastery.  
-* 📱 **How to Break Up With Your Phone** by 👩‍💼 Catherine Price: Offers a practical plan to create a healthier relationship with your smartphone, reducing addiction and reclaiming attention.  
+* **[📱💔 How to Break Up with Your Phone: The 30-Day Plan to Take Back Your Life](./how-to-break-up-with-your-phone-the-30-day-plan-to-take-back-your-life.md)** by 👩‍💼 Catherine Price: Offers a practical plan to create a healthier relationship with your smartphone, reducing addiction and reclaiming attention.  
 * 🤯 **Stolen Focus: 😞 Why You Can't Pay Attention—and How to Think Deeply Again** by ✍️ Johann Hari: Investigates the societal, technological, and environmental factors diminishing our collective attention spans and offers solutions.  
 * **[📱🧠 The Shallows: What the Internet Is Doing to Our Brains](./the-shallows-what-the-internet-is-doing-to-our-brains.md)** by ✍️ Nicholas Carr: Explores the neurological impact of the internet, arguing that its constant stimulation encourages shallow thinking over deep contemplation.  
 * 🎯 **Attention Span: 🧠 A Groundbreaking Way to Restore Balance, Happiness and Productivity** by 👩‍💼 Gloria Mark: Delves into decades of research on how technology affects attention, presenting findings on distraction, multitasking, and different attention states.  

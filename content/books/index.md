@@ -7,7 +7,7 @@ URL: https://bagrounds.org/books
 backlinks: false
 ---
 [Home](../index.md)  
-# 📚 Books (676)  
+# 📚 Books (678)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)  
 - [🧑‍🤝‍🧑📈 10 to 25: The Science of Motivating Young People: A Groundbreaking Approach to Leading the Next Generation - And Making Your Own Life Easier](./10-to-25-the-science-of-motivating-young-people-a-groundbreaking-approach-to-leading-the-next-generation-and-making-your-own-life-easier.md)  
@@ -634,6 +634,7 @@ Feedback Control of Dynamic Systems]]
 - [🎲🤔 Thinking in Bets: Making Smarter Decisions When You Don't Have All the Facts](./thinking-in-bets-making-smarter-decisions-when-you-dont-have-all-the-facts.md)  
 - [🌐🔗🧠📖 Thinking in Systems: A Primer](./thinking-in-systems.md)  
 - [🤔⚖️ Thinking Like a Lawyer: A New Introduction to Legal Reasoning](./thinking-like-a-lawyer-a-new-introduction-to-legal-reasoning.md)  
+- [🧠📈 Thinking Strategically: The Competitive Edge in Business, Politics and Everyday Life](./thinking-strategically-the-competitive-edge-in-business-politics-and-everyday-life.md)  
 - [🤥📣 This Is Not Propaganda: Adventures in the War Against Reality](./this-is-not-propaganda.md)  
 - [💭🦠 Thought Contagion: How Belief Spreads Through Society](./thought-contagion.md)  
 - [⏱️🍎 Time Restricted Eating: A Look into the Lifestyle](./time-restricted-eating-a-look-into-the-lifestyle.md)  
@@ -663,6 +664,7 @@ Feedback Control of Dynamic Systems]]
 - [👶🧠🫨❓ What's Going On in There?: How the Brain and Mind Develop in the First Five Years of Life](./whats-going-on-in-there.md)  
 - [👃🤧 What's in the Air?: The Complete Guide to Seasonal and Year-Round Airborne Allergies](./whats-in-the-air-the-complete-guide-to-seasonal-and-year-round-airborne-allergies.md)  
 - [✅❌⏳ What Works, What Doesn't, and When: Case Studies in Applied Behavioral Science](./what-works-what-doesnt-and-when-case-studies-in-applied-behavioral-science.md)  
+- [❓🏘️ Where Do We Go from Here: Chaos or Community?](./where-do-we-go-from-here-chaos-or-community.md)  
 - [💡📜 Where Good Ideas Come From: The Natural History of Innovation](./where-good-ideas-come-from-the-natural-history-of-innovation.md)  
 - [👣➡️🌍 Wherever You Go, There You Are](./wherever-you-go-there-you-are.md)  
 - [❓🎁 Who Gets What - and Why: The New Economics of Matchmaking and Market Design](./who-gets-what-and-why-the-new-economics-of-matchmaking-and-market-design.md)  

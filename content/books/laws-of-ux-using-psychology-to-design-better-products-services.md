@@ -56,7 +56,7 @@ CTA: 🧠 Apply user insights.
 ### 💡 Creatively Related: Exploring the Human Mind and Behavior  
   
 * **[🤔🐇🐢 Thinking, Fast and Slow](./thinking-fast-and-slow.md)** by Daniel Kahneman: 🚀 A groundbreaking exploration of the two systems that drive the way we think, offering profound insights into human judgment and decision-making.  
-* 🔗 **Hooked: How to Build Habit-Forming Products** by Nir Eyal: 🎣 Examines the psychology behind what makes some products so engaging and how to apply those principles to create products people love.  
+* **[🎣📱 Hooked: How to Build Habit-Forming Products](./hooked-how-to-build-habit-forming-products.md)** by Nir Eyal: 🎣 Examines the psychology behind what makes some products so engaging and how to apply those principles to create products people love.  
 * **[👉🤏 Nudge: Improving Decisions about Health, Wealth, and Happiness](./nudge.md)** by Richard H. Thaler and Cass R. Sunstein: ➡️ This book introduces the concept of "choice architecture" and how subtle "nudges" can influence behavior in positive ways.  
 * **[🔮🤷🏼‍♀️🤪 Predictably Irrational: The Hidden Forces That Shape Our Decisions](./predictably-irrational.md)** by Dan Ariely: ❓ Uncovers the hidden forces that shape our decisions, revealing the consistent and often surprising patterns of human irrationality.  
 * **[🔄🧠💪 The Power of Habit: Why We Do What We Do in Life and Business](./the-power-of-habit.md)** by Charles Duhigg: 🔄 Explores the science of habit formation in our lives, companies, and societies.  

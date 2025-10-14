@@ -94,7 +94,7 @@ A: ☢️ The book, published in 1960, built its concepts by slowly moving towar
   
 #### 🤝 Similar Books (Strategic Interaction, Game Theory)  
 * 🎮 Game Theory: A Nontechnical Introduction by Morton M Davis  
-* 📈 Thinking Strategically: The Competitive Edge in Business, Politics, and Everyday Life by Avinash K Dixit and Barry J Nalebuff  
+* [🧠📈 Thinking Strategically: The Competitive Edge in Business, Politics and Everyday Life](./thinking-strategically-the-competitive-edge-in-business-politics-and-everyday-life.md) by Avinash K Dixit and Barry J Nalebuff  
 * [♟️🧠📈🎯 The Art of Strategy: A Game Theorist's Guide to Success in Business and Life](./the-art-of-strategy-a-game-theorists-guide-to-success-in-business-and-life.md) by Avinash K Dixit and Barry J Nalebuff  
   
 #### 🆚 Contrasting Books (Alternative Views on Conflict, Power, Cooperation)  

@@ -113,7 +113,7 @@ A: Catherine Price's book provides a structured, step-by-step 30-day program, mo
     * 🥺 Addresses technology addiction and the quest for real-life connection.  
   
 #### 🖥️ Contrasting Books (Understanding Design & Broader Tech Impact)  
-* 🎣 Hooked: How to Build Habit-Forming Products by Nir Eyal  
+* [🎣📱 Hooked: How to Build Habit-Forming Products](./hooked-how-to-build-habit-forming-products.md) by Nir Eyal  
     * ⚙️ Explains the "Hook Model" of creating addictive products, offering insight into what Price's book aims to counteract.  
 * [📱🧠 The Shallows: What the Internet Is Doing to Our Brains](./the-shallows-what-the-internet-is-doing-to-our-brains.md) by Nicholas Carr  
     * 🌊 A deep dive into the neurological and cognitive effects of internet use.  

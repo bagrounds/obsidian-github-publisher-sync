@@ -11,6 +11,9 @@ affiliate link: https://amzn.to/4q2ZrG5
 # 📱⬇️🧘 Digital Minimalism: Choosing a Focused Life in a Noisy World  
 [🛒 Digital Minimalism: Choosing a Focused Life in a Noisy World. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4q2ZrG5)  
   
+## 📝🐒 Human Notes  
+- Jennifer Grigel, Social Media Professional  
+  
 ### 🏆 Cal Newport's Digital Minimalism Strategy  
   
 #### 🎯 Core Philosophy  

@@ -10,7 +10,8 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 📑 Notes, 💭 thoughts, and 🔗 Links.  
 ❔ What do 🫵 _you_ 🤔 think?  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (332)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (333)  
+- [2025-10-13 | ♟️ Strategy | ✝️ Religion | 👥 Community 📚📺](./reflections/2025-10-13.md)  
 - [2025-10-12 | 🤏 Minimal | 💔 Break Up 📚](./reflections/2025-10-12.md)  
 - [2025-10-11 | 📚 Books | 📣 Common Knowledge | ♟️ Strategy | ✊ Resistance 📺📰📚](./reflections/2025-10-11.md)  
 - [2025-10-10 | 👹🗂️ Epstein Files | 🏃🏼‍♀️ Aerobics | 🔮 Prediction 📺📰📚](./reflections/2025-10-10.md)  
@@ -20,23 +21,23 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [2025-10-06 | ⭐ Promised | 🔮 Prediction | ⚖️ Law 📚📺](./reflections/2025-10-06.md)  
 - [2025-10-05 | 💕 Love | 👎 2025 | 🎭 Quantico 📚📺](./reflections/2025-10-05.md)  
 - [2025-10-04 | 🏢 Firm | ❤️ Good | 💨 Fast 📚📺](./reflections/2025-10-04.md)  
-- [2025-10-03 | 🏎️ Performance | 🐦 Starlings | 👶🏼 Montessori 📺📚](./reflections/2025-10-03.md)  
   
   
-## [📚 Books](./books/index.md) (676)  
+## [📚 Books](./books/index.md) (678)  
+- [❓🏘️ Where Do We Go from Here: Chaos or Community?](./books/where-do-we-go-from-here-chaos-or-community.md)  
+- [♟️🧠📈🎯 The Art of Strategy: A Game Theorist's Guide to Success in Business and Life](./books/the-art-of-strategy-a-game-theorists-guide-to-success-in-business-and-life.md)  
+- [⚔️♟️ The Strategy of Conflict](./books/the-strategy-of-conflict.md)  
+- [🧠📈 Thinking Strategically: The Competitive Edge in Business, Politics and Everyday Life](./books/thinking-strategically-the-competitive-edge-in-business-politics-and-everyday-life.md)  
 - [📱⬇️🧘 Digital Minimalism: Choosing a Focused Life in a Noisy World](./books/digital-minimalism-choosing-a-focused-life-in-a-noisy-world.md)  
 - [🥱🤓 Bored and Brilliant: How Spacing Out Can Unlock Your Most Productive and Creative Self](./books/bored-and-brilliant.md)  
 - [📱💔 How to Break Up with Your Phone: The 30-Day Plan to Take Back Your Life](./books/how-to-break-up-with-your-phone-the-30-day-plan-to-take-back-your-life.md)  
 - [➖💯 Essentialism: The Disciplined Pursuit of Less](./books/essentialism-the-disciplined-pursuit-of-less.md)  
 - [📢📣 Platform: Get Noticed in a Noisy World](./books/platform-get-noticed-in-a-noisy-world.md)  
 - [😴🧘☕⏳ The Art of Rest: How to Find Respite in the Modern Age](./books/the-art-of-rest-how-to-find-respite-in-the-modern-age.md)  
-- [😩⚕️ Fatigue Science for Human Health](./books/fatigue-science-for-human-health.md)  
-- [🗓️✅ Organize Your Day: 17 Easy Strategies to Manage Your Day, Improve Productivity and Overcome Procrastination](./books/organize-your-day-17-easy-strategies-to-manage-your-day-improve-productivity-and-overcome-procrastination.md)  
-- [📱🧠 The Shallows: What the Internet Is Doing to Our Brains](./books/the-shallows-what-the-internet-is-doing-to-our-brains.md)  
-- [🌴🧘🏼‍♀️ Do Nothing: How to Break Away from Overworking, Overdoing, and Underliving](./books/do-nothing-how-to-break-away-from-overworking-overdoing-and-underliving.md)  
   
   
-## [📺 Videos](./videos/index.md) (353)  
+## [📺 Videos](./videos/index.md) (354)  
+- [🤔🗣️🏛️🇺🇸 A New Way to Think About Religion and Politics with James Talarico | American Conversations](./videos/a-new-way-to-think-about-religion-and-politics-with-james-talarico-american-conversations.md)  
 - [🔬🛡️🤥 Authors of 'Science Under Siege' warn of concerted effort to discredit science](./videos/authors-of-science-under-siege-warn-of-concerted-effort-to-discredit-science.md)  
 - [🌪️➡️🕹️ An Attempt to Turn Chaos Into Control | Explainer](./videos/an-attempt-to-turn-chaos-into-control-explainer.md)  
 - [🌱⛰️💪 Effective Resistance to Authoritarianism: «The violets in the mountains have broken the rocks»](./videos/effective-resistance-to-authoritarianism-the-violets-in-the-mountains-have-broken-the-rocks.md)  
@@ -46,7 +47,6 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [📚🧠🤝🌍 How books shape minds and societies, building cognitive resilience and civic mindedness](./videos/how-books-shape-minds-and-societies-building-cognitive-resilience-and-civic-mindedness.md)  
 - [🏛️😂📺 Presidential Libraries: Last Week Tonight with John Oliver (HBO)](./videos/presidential-libraries-last-week-tonight-with-john-oliver-hbo.md)  
 - [🫀💪📈 Guide How to Build a Monster Aerobic System | Your Detailed Guide](./videos/how-to-build-a-monster-aerobic-system-your-detailed-guide.md)  
-- [🇺🇸👑👎 How the start of Trump’s second term looks like some autocracies](./videos/how-the-start-of-trumps-second-term-looks-like-some-autocracies.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (82)  

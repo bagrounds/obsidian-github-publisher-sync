@@ -138,12 +138,12 @@ A: King outlined four basic steps: 1) 🔍 collection of facts to confirm injust
 > Create a concise, expert-level cheat sheet for Where Do We Go from Here: Chaos or Community?.  
 Extract and distill the core philosophy and most actionable, specific steps into a highly condensed format. Section headings and bulleted lists only - no paragraphs or standalone prose - organized appropriately into major thematic sections.  
 STRICT FORMATTING RULES:  
-- Use markdown only.  
-- Title: Use an H3 markdown header (###) for the main title (e.g., "🏆 [Author]'s [Topic] Strategy").  
-- Structure: Use H4 Markdown headers (####) for the major thematic sections. Use nested bullet points for all lists (no horizontal or comma-separated lists).  
-- Lines: DO NOT use horizontal rules (---) or tables.  
-- Brevity: Full sentences are NOT required. Adopt an ultra-concise, Strunk and White-style brevity (e.g., "Protein: 1.6 g/kg min. Muscle preservation."). Do not Use filler or unnecessary language. Edit your own work to achieve ultimate concision. Your goal is to convey maximum insight with as few words as possible.  
-- Completeness: PRIORITIZE COMPLETE LISTS. Only use "etc." or ellipses (...) on their own bullet point when providing a complete list is genuinely impossible or impractical for the cheat sheet's format.  
-Follow the cheet sheet with an evaluation section that compares the main points with high quality, objective sources.  
-Next, write an FAQ section, optimized for SEO and UX.  
-Finally, provide similar, contrasting, and creatively related book recommendations on Where Do We Go from Here: Chaos or Community?. Never quote or italicize titles. Be thorough but concise. Use section headings and bulleted lists to avoid long blocks of text.
+> - Use markdown only.  
+> - Title: Use an H3 markdown header (###) for the main title (e.g., "🏆 [Author]'s [Topic] Strategy").  
+> - Structure: Use H4 Markdown headers (####) for the major thematic sections. Use nested bullet points for all lists (no horizontal or comma-separated lists).  
+> - Lines: DO NOT use horizontal rules (---) or tables.  
+> - Brevity: Full sentences are NOT required. Adopt an ultra-concise, Strunk and White-style brevity (e.g., "Protein: 1.6 g/kg min. Muscle preservation."). Do not Use filler or unnecessary language. Edit your own work to achieve ultimate concision. Your goal is to convey maximum insight with as few words as possible.  
+> - Completeness: PRIORITIZE COMPLETE LISTS. Only use "etc." or ellipses (...) on their own bullet point when providing a complete list is genuinely impossible or impractical for the cheat sheet's format.  
+> Follow the cheet sheet with an evaluation section that compares the main points with high quality, objective sources.  
+> Next, write an FAQ section, optimized for SEO and UX.  
+> Finally, provide similar, contrasting, and creatively related book recommendations on Where Do We Go from Here: Chaos or Community?. Never quote or italicize titles. Be thorough but concise. Use section headings and bulleted lists to avoid long blocks of text.

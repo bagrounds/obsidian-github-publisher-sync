@@ -7,7 +7,8 @@ URL: https://bagrounds.org/reflections
 backlinks: false
 ---
 [Home](../index.md)  
-# 🪞 Reflections (333)  
+# 🪞 Reflections (334)  
+- [2025-10-14 | 🦐 Minimal | 👀 Indistractible | 🪝 Hooked 📚](./2025-10-14.md)  
 - [2025-10-13 | ♟️ Strategy | ✝️ Religion | 👥 Community 📚📺](./2025-10-13.md)  
 - [2025-10-12 | 🤏 Minimal | 💔 Break Up 📚](./2025-10-12.md)  
 - [2025-10-11 | 📚 Books | 📣 Common Knowledge | ♟️ Strategy | ✊ Resistance 📺📰📚](./2025-10-11.md)  

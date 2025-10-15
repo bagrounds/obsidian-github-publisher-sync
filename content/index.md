@@ -10,7 +10,8 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 📑 Notes, 💭 thoughts, and 🔗 Links.  
 ❔ What do 🫵 _you_ 🤔 think?  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (333)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (334)  
+- [2025-10-14 | 🦐 Minimal | 👀 Indistractible | 🪝 Hooked 📚](./reflections/2025-10-14.md)  
 - [2025-10-13 | ♟️ Strategy | ✝️ Religion | 👥 Community 📚📺](./reflections/2025-10-13.md)  
 - [2025-10-12 | 🤏 Minimal | 💔 Break Up 📚](./reflections/2025-10-12.md)  
 - [2025-10-11 | 📚 Books | 📣 Common Knowledge | ♟️ Strategy | ✊ Resistance 📺📰📚](./reflections/2025-10-11.md)  
@@ -20,20 +21,19 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [2025-10-07 | ⚖️ On the Rule of Law 📚](./reflections/2025-10-07.md)  
 - [2025-10-06 | ⭐ Promised | 🔮 Prediction | ⚖️ Law 📚📺](./reflections/2025-10-06.md)  
 - [2025-10-05 | 💕 Love | 👎 2025 | 🎭 Quantico 📚📺](./reflections/2025-10-05.md)  
-- [2025-10-04 | 🏢 Firm | ❤️ Good | 💨 Fast 📚📺](./reflections/2025-10-04.md)  
   
   
-## [📚 Books](./books/index.md) (678)  
+## [📚 Books](./books/index.md) (679)  
+- [🦠 Contagious: Why Things Catch On](./books/contagious.md)  
+- [🧠📐 Laws of UX: Using Psychology to Design Better Products & Services](./books/laws-of-ux-using-psychology-to-design-better-products-services.md)  
+- [🧘 Indistractable: How to Control Your Attention and Choose Your Life](./books/indistractable.md)  
+- [📱💔 How to Break Up with Your Phone: The 30-Day Plan to Take Back Your Life](./books/how-to-break-up-with-your-phone-the-30-day-plan-to-take-back-your-life.md)  
+- [🎣📱 Hooked: How to Build Habit-Forming Products](./books/hooked-how-to-build-habit-forming-products.md)  
+- [📱⬇️🧘 Digital Minimalism: Choosing a Focused Life in a Noisy World](./books/digital-minimalism-choosing-a-focused-life-in-a-noisy-world.md)  
 - [❓🏘️ Where Do We Go from Here: Chaos or Community?](./books/where-do-we-go-from-here-chaos-or-community.md)  
 - [♟️🧠📈🎯 The Art of Strategy: A Game Theorist's Guide to Success in Business and Life](./books/the-art-of-strategy-a-game-theorists-guide-to-success-in-business-and-life.md)  
 - [⚔️♟️ The Strategy of Conflict](./books/the-strategy-of-conflict.md)  
 - [🧠📈 Thinking Strategically: The Competitive Edge in Business, Politics and Everyday Life](./books/thinking-strategically-the-competitive-edge-in-business-politics-and-everyday-life.md)  
-- [📱⬇️🧘 Digital Minimalism: Choosing a Focused Life in a Noisy World](./books/digital-minimalism-choosing-a-focused-life-in-a-noisy-world.md)  
-- [🥱🤓 Bored and Brilliant: How Spacing Out Can Unlock Your Most Productive and Creative Self](./books/bored-and-brilliant.md)  
-- [📱💔 How to Break Up with Your Phone: The 30-Day Plan to Take Back Your Life](./books/how-to-break-up-with-your-phone-the-30-day-plan-to-take-back-your-life.md)  
-- [➖💯 Essentialism: The Disciplined Pursuit of Less](./books/essentialism-the-disciplined-pursuit-of-less.md)  
-- [📢📣 Platform: Get Noticed in a Noisy World](./books/platform-get-noticed-in-a-noisy-world.md)  
-- [😴🧘☕⏳ The Art of Rest: How to Find Respite in the Modern Age](./books/the-art-of-rest-how-to-find-respite-in-the-modern-age.md)  
   
   
 ## [📺 Videos](./videos/index.md) (354)  

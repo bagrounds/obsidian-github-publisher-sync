@@ -3,7 +3,7 @@ share: true
 aliases:
   - 🤖📰🧐 [ACL 2025] Large Language Model Agents for Content Analysis
 title: 🤖📰🧐 [ACL 2025] Large Language Model Agents for Content Analysis
-URL: https://bagrounds.org/videos/
+URL: https://bagrounds.org/videos/acl-2025-large-language-model-agents-for-content-analysis
 Author:
 Platform:
 Channel: Chengshuai Zhao
@@ -67,4 +67,7 @@ A: 🤝 The framework addresses subjectivity by simulating human-like processes:
 * 📗 Principles of Qualitative Research: Designing a Qualitative Study by Juliet Corbin and Anselm Strauss: Focuses on **Grounded Theory** and the subjective nature of qualitative coding, which stands in conceptual contrast to the LLM-agent's quantitative, rule-based approach.  
 * 📙 Weapons of Math Destruction by Cathy O'Neil: Critically examines how algorithmic systems can embed **bias**, providing a necessary ethical counterpoint to the video's focus on mitigating algorithmic bias.  
 * [🤔🐇🐢 Thinking, Fast and Slow](../books/thinking-fast-and-slow.md) by Daniel Kahneman: The dual-process model (**System 1** vs. **System 2**) parallels the SCALE process of rapid initial coding followed by slow, deliberative agent *discussion* to resolve conflict.  
-* [🔬🔄 The Structure of Scientific Revolutions](../books/the-structure-of-scientific-revolutions.md) by Thomas S. Kuhn: Discusses scientific progress through **paradigm evolution**, relating to the SCALE framework's dynamic feature of *codebook evolution* by the collaborating agents.
+* [🔬🔄 The Structure of Scientific Revolutions](../books/the-structure-of-scientific-revolutions.md) by Thomas S. Kuhn: Discusses scientific progress through **paradigm evolution**, relating to the SCALE framework's dynamic feature of *codebook evolution* by the collaborating agents.  
+  
+## 🐦 Tweet  
+<blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">🤖📰🧐 [ACL 2025] Large Language Model Agents for Content Analysis<br><br>🧑‍🔬 Research Method | 🗣️ Collaborative Discussions | 👨‍🏫 Human Intervention | 📈 Coding Accuracy | 🤖 Multi-agent Framework<a href="https://t.co/P9W3dPxN48">https://t.co/P9W3dPxN48</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/1978622106712658118?ref_src=twsrc%5Etfw">October 16, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

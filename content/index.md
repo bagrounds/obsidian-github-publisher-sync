@@ -10,7 +10,8 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 📑 Notes, 💭 thoughts, and 🔗 Links.  
 ❔ What do 🫵 _you_ 🤔 think?  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (334)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (335)  
+- [2025-10-15 | 🖼️ SIGGRAPH | 🦜 ACL | 😇 Good | ✊🏿 Antiracist 📺📚](./reflections/2025-10-15.md)  
 - [2025-10-14 | 🦐 Minimal | 👀 Indistractible | 🪝 Hooked 📚](./reflections/2025-10-14.md)  
 - [2025-10-13 | ♟️ Strategy | ✝️ Religion | 👥 Community 📚📺](./reflections/2025-10-13.md)  
 - [2025-10-12 | 🤏 Minimal | 💔 Break Up 📚](./reflections/2025-10-12.md)  
@@ -20,10 +21,10 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [2025-10-08 | 🌪️ Chaos | 🕹️ Control | 🔮 Prediction 📺📚](./reflections/2025-10-08.md)  
 - [2025-10-07 | ⚖️ On the Rule of Law 📚](./reflections/2025-10-07.md)  
 - [2025-10-06 | ⭐ Promised | 🔮 Prediction | ⚖️ Law 📚📺](./reflections/2025-10-06.md)  
-- [2025-10-05 | 💕 Love | 👎 2025 | 🎭 Quantico 📚📺](./reflections/2025-10-05.md)  
   
   
 ## [📚 Books](./books/index.md) (679)  
+- [✊🏿 How to Be An Antiracist](./books/how-to-be-an-antiracist.md)  
 - [🦠 Contagious: Why Things Catch On](./books/contagious.md)  
 - [🧠📐 Laws of UX: Using Psychology to Design Better Products & Services](./books/laws-of-ux-using-psychology-to-design-better-products-services.md)  
 - [🧘 Indistractable: How to Control Your Attention and Choose Your Life](./books/indistractable.md)  
@@ -33,20 +34,19 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [❓🏘️ Where Do We Go from Here: Chaos or Community?](./books/where-do-we-go-from-here-chaos-or-community.md)  
 - [♟️🧠📈🎯 The Art of Strategy: A Game Theorist's Guide to Success in Business and Life](./books/the-art-of-strategy-a-game-theorists-guide-to-success-in-business-and-life.md)  
 - [⚔️♟️ The Strategy of Conflict](./books/the-strategy-of-conflict.md)  
-- [🧠📈 Thinking Strategically: The Competitive Edge in Business, Politics and Everyday Life](./books/thinking-strategically-the-competitive-edge-in-business-politics-and-everyday-life.md)  
   
   
-## [📺 Videos](./videos/index.md) (354)  
+## [📺 Videos](./videos/index.md) (358)  
+- [😃☀️👍📈 ️ HOW TO HAVE A GOOD DAY by Caroline Webb | Animated Summary](./videos/how-to-have-a-good-day-by-caroline-webb-animated-summary.md)  
+- [🤖📰🧐 [ACL 2025] Large Language Model Agents for Content Analysis](./videos/acl-2025-large-language-model-agents-for-content-analysis.md)  
+- [📰🌍🏘️ Matryoshka ACL 2025: Hierarchical Level-Wise News Article Clustering via Multilingual Matryoshka Embeddings](./videos/acl-2025-hierarchical-level-wise-news-article-clustering-via-multilingual-matryoshka-embeddings.md)  
+- [🧑‍💻📈⏩ SIGGRAPH Thesis Fast Forward 2025](./videos/siggraph-thesis-fast-forward-2025.md)  
 - [🤔🗣️🏛️🇺🇸 A New Way to Think About Religion and Politics with James Talarico | American Conversations](./videos/a-new-way-to-think-about-religion-and-politics-with-james-talarico-american-conversations.md)  
 - [🔬🛡️🤥 Authors of 'Science Under Siege' warn of concerted effort to discredit science](./videos/authors-of-science-under-siege-warn-of-concerted-effort-to-discredit-science.md)  
 - [🌪️➡️🕹️ An Attempt to Turn Chaos Into Control | Explainer](./videos/an-attempt-to-turn-chaos-into-control-explainer.md)  
 - [🌱⛰️💪 Effective Resistance to Authoritarianism: «The violets in the mountains have broken the rocks»](./videos/effective-resistance-to-authoritarianism-the-violets-in-the-mountains-have-broken-the-rocks.md)  
 - [🫂🔑📈 The Secret Trick to Improve Your Social Connections | Kasley Killam | How to Be a Better Human | TED](./videos/the-secret-trick-to-improve-your-social-connections-kasley-killam-how-to-be-a-better-human-ted.md)  
 - [👑🚫🌍🗣️ How to stop authoritarianism across the globe: a conversation with President Obama](./videos/how-to-stop-authoritarianism-across-the-globe-a-conversation-with-president-obama.md)  
-- [👥🌍📢💡 How Common Knowledge Shapes the World | Steven Pinker | TED](./videos/how-common-knowledge-shapes-the-world-steven-pinker-ted.md)  
-- [📚🧠🤝🌍 How books shape minds and societies, building cognitive resilience and civic mindedness](./videos/how-books-shape-minds-and-societies-building-cognitive-resilience-and-civic-mindedness.md)  
-- [🏛️😂📺 Presidential Libraries: Last Week Tonight with John Oliver (HBO)](./videos/presidential-libraries-last-week-tonight-with-john-oliver-hbo.md)  
-- [🫀💪📈 Guide How to Build a Monster Aerobic System | Your Detailed Guide](./videos/how-to-build-a-monster-aerobic-system-your-detailed-guide.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (82)  

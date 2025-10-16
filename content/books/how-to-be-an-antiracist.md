@@ -4,7 +4,7 @@ aliases:
   - ✊🏿 How to Be An Antiracist
 URL: https://bagrounds.org/books/how-to-be-an-antiracist
 share: true
-CTA: ✊ Dismantle bias.
+CTA: 🌍 Build equity.
 affiliate link: https://amzn.to/4nr8heh
 ---
 [Home](../index.md) > [Books](./index.md)  
@@ -68,23 +68,23 @@ affiliate link: https://amzn.to/4nr8heh
   
 ### ❓ Frequently Asked Questions (FAQ)  
   
-#### ❔ What is Ibram X. Kendi's definition of racism?  
-📝 Kendi defines racism as a powerful collection of racist policies that lead to racial inequity, substantiated by racist ideas. 🏛️ It's a system, not just individual prejudice.  
+#### ❔ Q: What is Ibram X. Kendi's definition of racism?  
+📝 A: Kendi defines racism as a powerful collection of racist policies that lead to racial inequity, substantiated by racist ideas. 🏛️ It's a system, not just individual prejudice.  
   
-#### 🤷 Why can't I just be "not racist"?  
-🙅 Kendi argues that "not racist" is a passive stance that enables racism to persist. ⚖️ There is no neutral position in the struggle against racial inequity; one must either actively support racist policies (racist) or antiracist policies (antiracist).  
+#### 🤷 Q: Why can't I just be "not racist"?  
+🙅 A: Kendi argues that "not racist" is a passive stance that enables racism to persist. ⚖️ There is no neutral position in the struggle against racial inequity; one must either actively support racist policies (racist) or antiracist policies (antiracist).  
   
-#### 👥 Can people of color be racist?  
-✅ Yes, Kendi asserts that anyone can express racist ideas or support racist policies, including people of color. 💪 Racism is about power and policy, not simply racial identity.  
+#### 👥 Q: Can people of color be racist?  
+✅ A: Yes, Kendi asserts that anyone can express racist ideas or support racist policies, including people of color. 💪 Racism is about power and policy, not simply racial identity.  
   
-#### 🆚 What is the difference between a racist idea and a racist policy?  
-💭 A racist idea suggests one racial group is inferior or superior. 🏛️ A racist policy is any measure that produces or sustains racial inequity between racial groups. 🤔 Kendi posits that racist policies are often created out of self-interest and then justified by racist ideas.  
+#### 🆚 Q: What is the difference between a racist idea and a racist policy?  
+💭 A: A racist idea suggests one racial group is inferior or superior. 🏛️ A racist policy is any measure that produces or sustains racial inequity between racial groups. 🤔 Kendi posits that racist policies are often created out of self-interest and then justified by racist ideas.  
   
-#### 🎭 What is "dueling consciousness"?  
-🎭 Dueling consciousness, as described by Kendi, refers to the internal conflict within individuals between antiracist ideas and racist ideas (such as assimilationist or segregationist beliefs). 👤 This internal struggle can occur in people of all racial backgrounds.  
+#### 🎭 Q: What is "dueling consciousness"?  
+🎭 A: Dueling consciousness, as described by Kendi, refers to the internal conflict within individuals between antiracist ideas and racist ideas (such as assimilationist or segregationist beliefs). 👤 This internal struggle can occur in people of all racial backgrounds.  
   
-#### 🚀 How can I start being antiracist in my daily life?  
-🏁 Begin with continuous self-reflection and confessing any racist ideas or policies you may have supported. 🎯 Actively identify and challenge racial inequities in your sphere of influence, support antiracist policies, and educate yourself and others about the systemic nature of racism.  
+#### 🚀 Q: How can I start being antiracist in my daily life?  
+🏁 A: Begin with continuous self-reflection and confessing any racist ideas or policies you may have supported. 🎯 Actively identify and challenge racial inequities in your sphere of influence, support antiracist policies, and educate yourself and others about the systemic nature of racism.  
   
 ### 📚 Book Recommendations  
   

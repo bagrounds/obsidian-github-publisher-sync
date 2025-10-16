@@ -50,7 +50,7 @@ CTA: 💪 Optimize wellbeing.
 * ⏱️ The 4-Hour Body: An Uncommon Guide to Rapid Fat-Loss, Incredible Sex, and Becoming Superhuman by Timothy Ferriss (often advocates for specific, sometimes unconventional, "biohacks" and practices)  
 * 🏋️‍♂️ Bigger Leaner Stronger by Michael Matthews (focuses heavily on training methodology and macro-nutrient tracking for muscle gain and fat loss, with less emphasis on holistic recovery science)  
 * 💪 The New Rules of Lifting Supercharged: Ten All-New Muscle-Building Rules for Men and Women by Lou Schuler and Alwyn Cosgrove (a training-focused book that might promote specific recovery tools without the same level of scientific skepticism)  
-* 🤸 Becoming a Supple Leopard: The Ultimate Guide to Resolving Pain, Preventing Injury, and Optimizing Athletic Performance by Kelly Starrett (emphasizes specific mobility and soft tissue work for performance and recovery, a more prescriptive approach than Good to Go)  
+* [🤸🤕 Becoming a Supple Leopard: The Ultimate Guide to Resolving Pain, Preventing Injury, and Optimizing Athletic Performance](./becoming-a-supple-leopard-the-ultimate-guide-to-resolving-pain-preventing-injury-and-optimizing-athletic-performance.md) by Kelly Starrett (emphasizes specific mobility and soft tissue work for performance and recovery, a more prescriptive approach than Good to Go)  
   
 ### 🧠 Creatively Related Books  
   

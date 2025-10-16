@@ -5,6 +5,7 @@ aliases:
 URL: https://bagrounds.org/books/back-mechanic
 share: true
 affiliate link: https://amzn.to/3Te4Xq3
+CTA: 🚶‍♀️ Restore your back.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🔙🛠️ Back Mechanic  
@@ -69,7 +70,7 @@ affiliate link: https://amzn.to/3Te4Xq3
 * **[⚛️🔄 Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones](./atomic-habits.md) by James Clear:** Provides a framework for building good habits and breaking bad ones, which is essential for consistently applying spine hygiene and exercise principles.  
 * **[🦓 Why Zebras Don't Get Ulcers: The Acclaimed Guide to Stress, Stress-Related Disease, and Coping](./why-zebras-dont-get-ulcers.md) by Robert M. Sapolsky:** Explores the impact of stress on the body, including chronic pain, offering a biological perspective on the mind-body connection.  
 * **[🧠🔄🏆 The Brain That Changes Itself: Stories of Personal Triumph from the Frontiers of Brain Science](./the-brain-that-changes-itself.md) by Norman Doidge:** Discusses neuroplasticity, the brain's ability to change, which provides a scientific basis for how consistent effort in rehabilitation can rewire pain pathways.  
-* 🤸‍♀️ **Becoming a Supple Leopard: The Ultimate Guide to Resolving Pain, Preventing Injury, and Optimizing Athletic Performance by Kelly Starrett:** Focuses on movement and mobility to address pain and improve performance, often used by athletes and those interested in optimizing physical function.  
+* **[🤸🤕 Becoming a Supple Leopard: The Ultimate Guide to Resolving Pain, Preventing Injury, and Optimizing Athletic Performance](./becoming-a-supple-leopard-the-ultimate-guide-to-resolving-pain-preventing-injury-and-optimizing-athletic-performance.md) by Kelly Starrett:** Focuses on movement and mobility to address pain and improve performance, often used by athletes and those interested in optimizing physical function.  
 * 🤕 **End Back Pain Forever: A Groundbreaking Approach to Eliminate Your Suffering by Norman Marcus:** Presents an approach that emphasizes treating muscular causes of back pain, often overlooked by conventional medicine.  
   
 ## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  

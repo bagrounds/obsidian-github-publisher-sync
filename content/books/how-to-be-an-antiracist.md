@@ -124,4 +124,7 @@ STRICT FORMATTING RULES:
 > - Completeness: PRIORITIZE COMPLETE LISTS. Only use "etc." or ellipses (...) on their own bullet point when providing a complete list is genuinely impossible or impractical for the cheat sheet's format.  
 > Follow the cheet sheet with an evaluation section that compares the main points with high quality, objective sources.  
 > Next, write an FAQ section, optimized for SEO and UX.  
-> Finally, provide similar, contrasting, and creatively related book recommendations on How to Be an Antiracist. Never quote or italicize titles. Be thorough but concise. Use section headings and bulleted lists to avoid long blocks of text.
+> Finally, provide similar, contrasting, and creatively related book recommendations on How to Be an Antiracist. Never quote or italicize titles. Be thorough but concise. Use section headings and bulleted lists to avoid long blocks of text.  
+  
+## 🐦 Tweet  
+<blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">✊🏿 How to Be An Antiracist<br><br>✊🏿 Racial Equity | 🚫 Challenging Prejudice | 🏛️ Policy Reform | 🤔 Self-Awareness<a href="https://twitter.com/ibramxk?ref_src=twsrc%5Etfw">@ibramxk</a><a href="https://t.co/9oKVldWMhV">https://t.co/9oKVldWMhV</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/1978637420049613297?ref_src=twsrc%5Etfw">October 16, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

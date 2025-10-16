@@ -242,7 +242,7 @@ Feedback Control of Dynamic Systems]]
 - [🧠📚🍎💡📝 How Learning Works: Eight Research-Based Principles for Smart Teaching](./how-learning-works.md)  
 - [ 🚫❌🧮💭 How Not to Be Wrong: The Power of Mathematical Thinking](./how-not-to-be-wrong.md)  
 - [🌿🔬 How Plants Work: The Science Behind the Amazing Things Plants Do](./how-plants-work.md)  
-- [✊🏿 How To Be An Antiracist](./how-to-be-an-antiracist.md)  
+- [✊🏿 How to Be An Antiracist](./how-to-be-an-antiracist.md)  
 - [📱💔 How to Break Up with Your Phone: The 30-Day Plan to Take Back Your Life](./how-to-break-up-with-your-phone-the-30-day-plan-to-take-back-your-life.md)  
 - [🐛➡️🦋 How to Change: The Science of Getting from Where You Are to Where You Want to Be](./how-to-change.md)  
 - [🧠🍄 How to Change Your Mind: What the New Science of Psychedelics Teaches Us About Consciousness, Dying, Addiction, Depression, and Transcendence](./how-to-change-your-mind-what-the-new-science-of-psychedelics-teaches-us-about-consciousness-dying-addiction-depression-and-transcendence.md)  

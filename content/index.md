@@ -37,6 +37,8 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
   
   
 ## [📺 Videos](./videos/index.md) (358)  
+- [🧠🔄♾️💡 The concept that changes how you learn forever](./videos/the-concept-that-changes-how-you-learn-forever.md)  
+- [📈🚀🏁🏆  It’s actually pretty easy to get ahead of 99% of people](./videos/it-is-actually-pretty-easy-to-get-ahead-of-99-percent-of%20people.md)  
 - [😃☀️👍📈 ️ HOW TO HAVE A GOOD DAY by Caroline Webb | Animated Summary](./videos/how-to-have-a-good-day-by-caroline-webb-animated-summary.md)  
 - [🤖📰🧐 [ACL 2025] Large Language Model Agents for Content Analysis](./videos/acl-2025-large-language-model-agents-for-content-analysis.md)  
 - [📰🌍🏘️ Matryoshka ACL 2025: Hierarchical Level-Wise News Article Clustering via Multilingual Matryoshka Embeddings](./videos/acl-2025-hierarchical-level-wise-news-article-clustering-via-multilingual-matryoshka-embeddings.md)  
@@ -45,8 +47,6 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [🔬🛡️🤥 Authors of 'Science Under Siege' warn of concerted effort to discredit science](./videos/authors-of-science-under-siege-warn-of-concerted-effort-to-discredit-science.md)  
 - [🌪️➡️🕹️ An Attempt to Turn Chaos Into Control | Explainer](./videos/an-attempt-to-turn-chaos-into-control-explainer.md)  
 - [🌱⛰️💪 Effective Resistance to Authoritarianism: «The violets in the mountains have broken the rocks»](./videos/effective-resistance-to-authoritarianism-the-violets-in-the-mountains-have-broken-the-rocks.md)  
-- [🫂🔑📈 The Secret Trick to Improve Your Social Connections | Kasley Killam | How to Be a Better Human | TED](./videos/the-secret-trick-to-improve-your-social-connections-kasley-killam-how-to-be-a-better-human-ted.md)  
-- [👑🚫🌍🗣️ How to stop authoritarianism across the globe: a conversation with President Obama](./videos/how-to-stop-authoritarianism-across-the-globe-a-conversation-with-president-obama.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (82)  

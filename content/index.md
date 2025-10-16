@@ -10,7 +10,8 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 📑 Notes, 💭 thoughts, and 🔗 Links.  
 ❔ What do 🫵 _you_ 🤔 think?  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (335)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (336)  
+- [2025-10-16](./reflections/2025-10-16.md)  
 - [2025-10-15 | 🖼️ SIGGRAPH | 🦜 ACL | 😇 Good | ✊🏿 Antiracist 📺📚](./reflections/2025-10-15.md)  
 - [2025-10-14 | 🦐 Minimal | 👀 Indistractible | 🪝 Hooked 📚](./reflections/2025-10-14.md)  
 - [2025-10-13 | ♟️ Strategy | ✝️ Religion | 👥 Community 📚📺](./reflections/2025-10-13.md)  
@@ -20,23 +21,23 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [2025-10-09 | 🐍 Corruption | 💙 Cerulean | 🤖 Autonomous 📺📰📚📄](./reflections/2025-10-09.md)  
 - [2025-10-08 | 🌪️ Chaos | 🕹️ Control | 🔮 Prediction 📺📚](./reflections/2025-10-08.md)  
 - [2025-10-07 | ⚖️ On the Rule of Law 📚](./reflections/2025-10-07.md)  
-- [2025-10-06 | ⭐ Promised | 🔮 Prediction | ⚖️ Law 📚📺](./reflections/2025-10-06.md)  
   
   
-## [📚 Books](./books/index.md) (679)  
+## [📚 Books](./books/index.md) (680)  
+- [🔙🛠️ Back Mechanic](./books/back-mechanic.md)  
+- [🏃‍♀️🦴 Anatomy for Runners: Unlocking Your Athletic Potential for Health, Speed, and Injury Prevention](./books/anatomy-for-runners-unlocking-your-athletic-potential-for-health-speed-and-injury-prevention.md)  
+- [💪🧪 Good to Go: What the Athlete in All of Us Can Learn from the Strange Science of Recovery](./books/good-to-go-what-the-athlete-in-all-of-us-can-learn-from-the-strange-science-of-recovery.md)  
+- [💪📈 Creatine: A Natural Substance and Its Benefits for Muscle Metabolism, Fitness, Health & Longevity](./books/creatine-a-natural-substance-and-its-benefits-for-muscle-metabolism-fitness-health-longevity.md)  
+- [🤸🤕 Becoming a Supple Leopard: The Ultimate Guide to Resolving Pain, Preventing Injury, and Optimizing Athletic Performance](./books/becoming-a-supple-leopard-the-ultimate-guide-to-resolving-pain-preventing-injury-and-optimizing-athletic-performance.md)  
 - [✊🏿 How to Be An Antiracist](./books/how-to-be-an-antiracist.md)  
 - [🦠 Contagious: Why Things Catch On](./books/contagious.md)  
 - [🧠📐 Laws of UX: Using Psychology to Design Better Products & Services](./books/laws-of-ux-using-psychology-to-design-better-products-services.md)  
 - [🧘 Indistractable: How to Control Your Attention and Choose Your Life](./books/indistractable.md)  
 - [📱💔 How to Break Up with Your Phone: The 30-Day Plan to Take Back Your Life](./books/how-to-break-up-with-your-phone-the-30-day-plan-to-take-back-your-life.md)  
-- [🎣📱 Hooked: How to Build Habit-Forming Products](./books/hooked-how-to-build-habit-forming-products.md)  
-- [📱⬇️🧘 Digital Minimalism: Choosing a Focused Life in a Noisy World](./books/digital-minimalism-choosing-a-focused-life-in-a-noisy-world.md)  
-- [❓🏘️ Where Do We Go from Here: Chaos or Community?](./books/where-do-we-go-from-here-chaos-or-community.md)  
-- [♟️🧠📈🎯 The Art of Strategy: A Game Theorist's Guide to Success in Business and Life](./books/the-art-of-strategy-a-game-theorists-guide-to-success-in-business-and-life.md)  
-- [⚔️♟️ The Strategy of Conflict](./books/the-strategy-of-conflict.md)  
   
   
-## [📺 Videos](./videos/index.md) (358)  
+## [📺 Videos](./videos/index.md) (359)  
+- [🏋️🤕🛑 3 Causes Of Pain In Shoulder Doing Push-ups +Tips To Stop Your Shoulder From Hurting With Push-ups](./videos/3-causes-of-pain-in-shoulder-doing-push-ups-tips-to-stop-your-shoulder-from-hurting-with-push-ups.md)  
 - [🧠🔄♾️💡 The concept that changes how you learn forever](./videos/the-concept-that-changes-how-you-learn-forever.md)  
 - [📈🚀🏁🏆  It’s actually pretty easy to get ahead of 99% of people](./videos/it-is-actually-pretty-easy-to-get-ahead-of-99-percent-of%20people.md)  
 - [😃☀️👍📈 ️ HOW TO HAVE A GOOD DAY by Caroline Webb | Animated Summary](./videos/how-to-have-a-good-day-by-caroline-webb-animated-summary.md)  
@@ -46,7 +47,6 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [🤔🗣️🏛️🇺🇸 A New Way to Think About Religion and Politics with James Talarico | American Conversations](./videos/a-new-way-to-think-about-religion-and-politics-with-james-talarico-american-conversations.md)  
 - [🔬🛡️🤥 Authors of 'Science Under Siege' warn of concerted effort to discredit science](./videos/authors-of-science-under-siege-warn-of-concerted-effort-to-discredit-science.md)  
 - [🌪️➡️🕹️ An Attempt to Turn Chaos Into Control | Explainer](./videos/an-attempt-to-turn-chaos-into-control-explainer.md)  
-- [🌱⛰️💪 Effective Resistance to Authoritarianism: «The violets in the mountains have broken the rocks»](./videos/effective-resistance-to-authoritarianism-the-violets-in-the-mountains-have-broken-the-rocks.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (82)  

@@ -7,7 +7,7 @@ URL: https://bagrounds.org/videos
 backlinks: false
 ---
 [Home](../index.md)  
-# 📺 Videos (359)  
+# 📺 Videos (361)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
 - [❓💪🔬 12 Questions About Creatine with Stephen Cornish, PhD](./12-questions-about-creatine-w-stephen-cornish-phd.md)  
@@ -150,6 +150,7 @@ backlinks: false
 - [⚙️💨🧘 I built a system that makes work feel easy](./i-built-a-system-that-makes-work-feel-easy.md)  
 - [👮🚨🇺🇸 ICE escalates aggressive raids in Chicago as Trump moves to deploy National Guard](./ice-escalates-aggressive-raids-in-chicago-as-trump-moves-to-deploy-national-guard.md)  
 - [🤖🧠👁️ Ilya Sutskever, OpenAI](./ilya-sutskever-openai.md)  
+- [🎭🤥👓 Image vs Reality—What the Administration Wants You to Think | Explainer](./image-vs-reality-what-the-administration-wants-you-to-think-explainer.md)  
 - [🛂🛑🇺🇸🎤 Immigration Enforcement: Last Week Tonight with John Oliver (HBO)](./immigration-enforcement-last-week-tonight-with-john-oliver-hbo.md)  
 - [Immigration judge rules Trump administration can deport Columbia protestor Mahmoud Khalil](./immigration-judge-rules-trump-administration-can-deport-columbia-protestor-mahmoud-khalil.md)  
 - [🧠💊🎯 Improve Focus with Behavioral Tools & Medication for ADHD | Dr. John Kruse](./improve-focus-with-behavioral-tools-medication-for-adhd-dr-john-kruse.md)  
@@ -349,6 +350,7 @@ backlinks: false
 - [🏛️⚖️🎯💥 Whitehouse Spotlights the Actual Weaponization of the Justice System by Trump's MAGA Cronies](./whitehouse-spotlights-the-actual-weaponization-of-the-justice-system-by-trumps-maga-cronies.md)  
 - [Why Bob Woodward worries about Trump's America](./why-bob-woodward-worries-about-trumps-america.md)  
 - [Why Do Babies Spit Up So Much?](./why-do-babies-spit-up-so-much.md)  
+- [💰➡️🪖 Why It Matters That Trump Rerouted Money to Pay the Troops | Explainer](./why-it-matters-that-trump-rerouted-money-to-pay-the-troops-explainer.md)  
 - [🤔➡️💰 Why Republicans once staunchly opposed to Trump's bill changed their minds](./why-republicans-once-staunchly-opposed-to-trumps-bill-changed-their-minds.md)  
 - [👩‍👧‍👦💼⬇️ Why so many mothers with young children are leaving the workforce](./why-so-many-mothers-with-young-children-are-leaving-the-workforce.md)  
 - [📺🚫🗣️ Why some stations won't air Jimmy Kimmel's return to late night](./why-some-stations-wont-air-jimmy-kimmels-return-to-late-night.md)  

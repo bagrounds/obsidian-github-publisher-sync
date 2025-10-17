@@ -10,8 +10,9 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 📑 Notes, 💭 thoughts, and 🔗 Links.  
 ❔ What do 🫵 _you_ 🤔 think?  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (336)  
-- [2025-10-16](./reflections/2025-10-16.md)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (337)  
+- [2025-10-17](./reflections/2025-10-17.md)  
+- [2025-10-16 | 🤕 Pain | 🐆 Leopard | 🤖 Disinformation 📺📚📄](./reflections/2025-10-16.md)  
 - [2025-10-15 | 🖼️ SIGGRAPH | 🦜 ACL | 😇 Good | ✊🏿 Antiracist 📺📚](./reflections/2025-10-15.md)  
 - [2025-10-14 | 🦐 Minimal | 👀 Indistractible | 🪝 Hooked 📚](./reflections/2025-10-14.md)  
 - [2025-10-13 | ♟️ Strategy | ✝️ Religion | 👥 Community 📚📺](./reflections/2025-10-13.md)  
@@ -20,10 +21,11 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [2025-10-10 | 👹🗂️ Epstein Files | 🏃🏼‍♀️ Aerobics | 🔮 Prediction 📺📰📚](./reflections/2025-10-10.md)  
 - [2025-10-09 | 🐍 Corruption | 💙 Cerulean | 🤖 Autonomous 📺📰📚📄](./reflections/2025-10-09.md)  
 - [2025-10-08 | 🌪️ Chaos | 🕹️ Control | 🔮 Prediction 📺📚](./reflections/2025-10-08.md)  
-- [2025-10-07 | ⚖️ On the Rule of Law 📚](./reflections/2025-10-07.md)  
   
   
-## [📚 Books](./books/index.md) (680)  
+## [📚 Books](./books/index.md) (681)  
+- [📱🗳️📉🩺 The Hype Machine: How Social Media Disrupts Our Elections, Our Economy, and Our Health - and How We Must Adapt](./books/the-hype-machine-how-social-media-disrupts-our-elections-our-economy-and-our-health-and-how-we-must-adapt.md)  
+- [👥⚔️👑 How to Stand Up to a Dictator: The Fight for Our Future](./books/how-to-stand-up-to-a-dictator.md)  
 - [🔙🛠️ Back Mechanic](./books/back-mechanic.md)  
 - [🏃‍♀️🦴 Anatomy for Runners: Unlocking Your Athletic Potential for Health, Speed, and Injury Prevention](./books/anatomy-for-runners-unlocking-your-athletic-potential-for-health-speed-and-injury-prevention.md)  
 - [💪🧪 Good to Go: What the Athlete in All of Us Can Learn from the Strange Science of Recovery](./books/good-to-go-what-the-athlete-in-all-of-us-can-learn-from-the-strange-science-of-recovery.md)  
@@ -32,11 +34,11 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [✊🏿 How to Be An Antiracist](./books/how-to-be-an-antiracist.md)  
 - [🦠 Contagious: Why Things Catch On](./books/contagious.md)  
 - [🧠📐 Laws of UX: Using Psychology to Design Better Products & Services](./books/laws-of-ux-using-psychology-to-design-better-products-services.md)  
-- [🧘 Indistractable: How to Control Your Attention and Choose Your Life](./books/indistractable.md)  
-- [📱💔 How to Break Up with Your Phone: The 30-Day Plan to Take Back Your Life](./books/how-to-break-up-with-your-phone-the-30-day-plan-to-take-back-your-life.md)  
   
   
-## [📺 Videos](./videos/index.md) (359)  
+## [📺 Videos](./videos/index.md) (361)  
+- [🎭🤥👓 Image vs Reality—What the Administration Wants You to Think | Explainer](./videos/image-vs-reality-what-the-administration-wants-you-to-think-explainer.md)  
+- [💰➡️🪖 Why It Matters That Trump Rerouted Money to Pay the Troops | Explainer](./videos/why-it-matters-that-trump-rerouted-money-to-pay-the-troops-explainer.md)  
 - [🏋️🤕🛑 3 Causes Of Pain In Shoulder Doing Push-ups +Tips To Stop Your Shoulder From Hurting With Push-ups](./videos/3-causes-of-pain-in-shoulder-doing-push-ups-tips-to-stop-your-shoulder-from-hurting-with-push-ups.md)  
 - [🧠🔄♾️💡 The concept that changes how you learn forever](./videos/the-concept-that-changes-how-you-learn-forever.md)  
 - [📈🚀🏁🏆  It’s actually pretty easy to get ahead of 99% of people](./videos/it-is-actually-pretty-easy-to-get-ahead-of-99-percent-of%20people.md)  
@@ -45,8 +47,6 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [📰🌍🏘️ Matryoshka ACL 2025: Hierarchical Level-Wise News Article Clustering via Multilingual Matryoshka Embeddings](./videos/acl-2025-hierarchical-level-wise-news-article-clustering-via-multilingual-matryoshka-embeddings.md)  
 - [🧑‍💻📈⏩ SIGGRAPH Thesis Fast Forward 2025](./videos/siggraph-thesis-fast-forward-2025.md)  
 - [🤔🗣️🏛️🇺🇸 A New Way to Think About Religion and Politics with James Talarico | American Conversations](./videos/a-new-way-to-think-about-religion-and-politics-with-james-talarico-american-conversations.md)  
-- [🔬🛡️🤥 Authors of 'Science Under Siege' warn of concerted effort to discredit science](./videos/authors-of-science-under-siege-warn-of-concerted-effort-to-discredit-science.md)  
-- [🌪️➡️🕹️ An Attempt to Turn Chaos Into Control | Explainer](./videos/an-attempt-to-turn-chaos-into-control-explainer.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (82)  
@@ -57,12 +57,12 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [🏦♾️📈💸 Modern Monetary Theory](./topics/modern-monetary-theory.md)  
   
   
-## [📄  Articles](./articles/index.md) (61)  
+## [📄  Articles](./articles/index.md) (62)  
+- [🤖😴📢🗳️ Sleeper Social Bots: A New Generation of AI Disinformation Bots are Already a Political Threat](./articles/sleeper-social-bots-a-new-generation-of-ai-disinformation-bots-are-already-a-political-threat.md)  
 - [🤖⚙️🔄🗣️ Agentic Context Engineering: Evolving Contexts for Self Improving Language Models](./articles/agentic-context-engineering-evolving-contexts-for-self-improving-language-models.md)  
 - [💰⚙️📈🔍 Defining and Characterizing Reward Hacking](./articles/defining-and-characterizing-reward-hacking.md)  
 - [🧠💪📈 BDNF Response to High Intensity Exercise](./articles/bdnf-response-to-high-intensity-exercise.md)  
 - [🧠📈🔑 Cognitive load is what matters](./articles/cognitive-load-is-what-matters.md)  
-- [🤔⚙️🧩🏗️💡 Everything I know about good system design](./articles/everything-i-know-about-good-system-design.md)  
   
   
 ## [🤖💬 Bot Chats](./bot-chats/index.md) (45)  

@@ -92,13 +92,6 @@ affiliate link: https://amzn.to/42Pm2fl
 * 📖 Measuring Peace: Principles, Practices, and Politics by Richard Caplan  
 * 📖 The Rule of Law in Comparative Perspective by Mortimer N S Sellers and Tadeusz Tomaszewski  
   
-  
-  
-  
-  
-  
-  
-  
 ## 💬 [Gemini](https://gemini.google.com) Prompt (gemini-2.5-flash)  
 > Create a concise, expert-level cheat sheet for The Rule of Law.  
 Extract and distill the core philosophy and most actionable, specific steps into a highly condensed format. Section headings and bulleted lists only - no paragraphs or standalone prose - organized appropriately into major thematic sections.  

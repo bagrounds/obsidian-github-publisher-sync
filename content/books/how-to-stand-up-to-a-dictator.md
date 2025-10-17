@@ -4,9 +4,10 @@ aliases:
   - "👥⚔️👑 How to Stand Up to a Dictator: The Fight for Our Future"
 title: "👥⚔️👑 How to Stand Up to a Dictator: The Fight for Our Future"
 URL: https://bagrounds.org/books/how-to-stand-up-to-a-dictator
-Author: 
-tags: 
+Author:
+tags:
 affiliate link: https://amzn.to/4kq8ddX
+CTA: ✊ Challenge tyranny.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 👥⚔️👑 How to Stand Up to a Dictator: The Fight for Our Future  
@@ -66,7 +67,7 @@ affiliate link: https://amzn.to/4kq8ddX
   
 ### ⚖️ Contrasting Perspectives/Approaches  
   
-1. 📜 **The Hype Machine: How Social Media Disrupts Our Elections, Our Economy, and Our Health—and How We Must Adapt** by Sinan Aral: While acknowledging the dangers ⚠️, Aral also explores the potential benefits 👍 and complexities of social media, focusing on adaptation rather than solely confrontation.  
+1. **[📱🗳️📉🩺 The Hype Machine: How Social Media Disrupts Our Elections, Our Economy, and Our Health - and How We Must Adapt](./the-hype-machine-how-social-media-disrupts-our-elections-our-economy-and-our-health-and-how-we-must-adapt.md)** by Sinan Aral: While acknowledging the dangers ⚠️, Aral also explores the potential benefits 👍 and complexities of social media, focusing on adaptation rather than solely confrontation.  
 2. 📜 **Frenemies: How Social Media Polarizes America** by Jaime Settle: Focuses empirically on *how* social media mechanics contribute to polarization 💔, perhaps offering a more academic 🧑‍🏫, less activist perspective than Ressa's memoir-driven account.  
 3. 📜 **`#`Republic: Divided Democracy in the Age of Social Media** by Cass R. Sunstein: Discusses the dangers of echo chambers 🗣️ and filter bubbles 🫧 created by personalization online 💻, focusing on the architectural aspects of division.  
   

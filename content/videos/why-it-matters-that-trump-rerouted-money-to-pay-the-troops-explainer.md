@@ -66,4 +66,7 @@ A: 💸 The money came from approximately **$8 billion** in "unobligated" **Rese
 ### Creatively Related Books (Focus on Historical Context of Representation)  
   
 * ☕ *The Radicalism of the American Revolution* by Gordon S. Wood: Explains the transformation of American society and politics during the revolutionary era, providing deep context for why the principle of legislative control over taxation and spending was so vital to the founding generation.  
-* 👑 *Magna Carta: The True Story Behind the Charter* by David Starkey: A historical account that details the origins and significance of the 1215 document, highlighting the historical roots of limiting executive authority (the King) to raise revenue without approval from a legislative body.
+* 👑 *Magna Carta: The True Story Behind the Charter* by David Starkey: A historical account that details the origins and significance of the 1215 document, highlighting the historical roots of limiting executive authority (the King) to raise revenue without approval from a legislative body.  
+  
+## 🐦 Tweet  
+<blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">💰➡️🪖 Why It Matters That Trump Rerouted Money to Pay the Troops | Explainer<br><br>💰 Finances | 📜 Constitutionality | 👑 Executive Branch | 🏛️ Congress | 🇺🇸 U.S. Government<a href="https://twitter.com/HC_Richardson?ref_src=twsrc%5Etfw">@HC_Richardson</a><a href="https://t.co/htUoZOh0Wv">https://t.co/htUoZOh0Wv</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/1979217892420780258?ref_src=twsrc%5Etfw">October 17, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

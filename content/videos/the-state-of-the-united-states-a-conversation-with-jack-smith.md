@@ -88,7 +88,7 @@ A: 💪 The speaker encourages young people to double down on their commitment t
 ### Similar Themes (Rule of Law, Integrity, Prosecution)  
   
 * [🏛️⚖️ The Rule of Law](../books/the-rule-of-law.md) by Tom Bingham. 💡 This book provides an accessible yet authoritative explanation of the concept of the rule of law, serving as a global primer on the very subject at the heart of the conversation.  
-* 📝 Where Law Ends: Inside the Müller Investigation by Andrew Weissman. 🤝 Written by the interlocutor in the video, this memoir offers an insider's view of a previous high-stakes Special Counsel investigation, detailing the internal conflicts and dedication to process within the Department of Justice.  
+* [🇺🇸🕵️‍♂️🚫 Where Law Ends: Inside the Mueller Investigation](../books/where-law-ends-inside-the-mueller-investigation.md) by Andrew Weissman. 🤝 Written by the interlocutor in the video, this memoir offers an insider's view of a previous high-stakes Special Counsel investigation, detailing the internal conflicts and dedication to process within the Department of Justice.  
 * 📜 The Great Dissent: How Oliver Wendell Holmes Changed His Mind—and Changed the Law During World War I by Thomas Healy. 🕊️ Examines the role of the First Amendment and the high legal bar for incitement—a topic explicitly discussed in relation to the January 6 charges—through the lens of historical Supreme Court debates.  
   
 ### Contrasting Perspectives (DOJ Critique, Presidential Power)  

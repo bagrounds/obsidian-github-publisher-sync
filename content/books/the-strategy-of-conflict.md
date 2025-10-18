@@ -121,3 +121,4 @@ STRICT FORMATTING RULES:
 > Follow the cheet sheet with similar, contrasting, and creatively related book recommendations on The Strategy of Conflict. Never quote or italicize titles. Be thorough but concise. Use section headings and bulleted lists to avoid long blocks of text.  
   
 ## 🐦 Tweet  
+<blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">⚔️♟️ The Strategy of Conflict<br><br>🤝 Bargaining | 🧠 Rational Choice | 🗣️ Communication | ⚠️ Threats | 📍 Focal Points | ☢️ Nuclear Deterrence<a href="https://t.co/kKBczSAvUj">https://t.co/kKBczSAvUj</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/1977132302682698046?ref_src=twsrc%5Etfw">October 11, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

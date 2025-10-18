@@ -123,7 +123,7 @@ A: While comprehensive and detailed, which can be overwhelming for some beginner
     * 🪑 Focuses on mitigating the negative effects of prolonged sitting through movement, posture, and workplace modifications.  
 * 🏃 **Ready to Run: Unlocking Your Potential to Run Pain Free and Perform Your Best** by Kelly Starrett and TJ Murphy  
     * 💨 Applies Supple Leopard principles specifically to running mechanics, injury prevention, and performance for runners.  
-* 💪 **Built to Move: The 10 Essential Habits to Help You Move Freely and Live Fully** by Kelly Starrett and Juliet Starrett  
+* **[🏃🤸 Built to Move: The Ten Essential Habits to Help You Move Freely and Live Fully](./built-to-move-the-ten-essential-habits-to-help-you-move-freely-and-live-fully.md)** by Kelly Starrett and Juliet Starrett  
     * 🌱 A more accessible guide focusing on fundamental daily habits for movement, sleep, and nutrition to improve overall well-being.  
 * 🤸 **Functional Movement Screen: The Use of Fundamental Movements as an Assessment of Function - As It Relates To Performance** by Gray Cook  
     * 🔎 Introduces the Functional Movement Screen (FMS) system to identify movement limitations and asymmetries.  

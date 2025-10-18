@@ -64,7 +64,7 @@ A: 🕊️ Vought said he has no problem being called a Christian nationalist wh
 ## 📚 Book Recommendations  
   
 * 📚 Mandate for Leadership: The Conservative Promise (Edited by Paul Dans and Steven Groves; Foreword by Kevin D. Roberts): This is the blueprint for Project 2025 detailing plans for a massive, immediate dismantling of the federal administrative state.  
-* 📚 The Great Suppression: Voting Rights, Corporate Cash, and the Conservative Assault on Democracy (by Zachary Roth): This book analyzes conservative strategies to restrict voting and political power, creating an environment for non-majoritarian rule.  
+* [🗳️💰⬇️ The Great Suppression: Voting Rights, Corporate Cash, and the Conservative Assault on Democracy](../books/the-great-suppression-voting-rights-corporate-cash-and-the-conservative-assault-on-democracy.md) (by Zachary Roth): This book analyzes conservative strategies to restrict voting and political power, creating an environment for non-majoritarian rule.  
 * [⚠️🥴🕹️🌐 The Fifth Risk](../books/the-fifth-risk.md) (by Michael Lewis): Lewis explores 🌎 the critical, human-centered work of federal agencies—like Energy, Agriculture, and Commerce—countering the view that bureaucracy is useless.  
 * 📚 The Lost Soul of the American Presidency: The Decline into Demagoguery and the Prospects for Renewal (by Stephen F. Knott): This book provides a constitutional critique of the modern, partisan presidency, challenging the goal of maximizing executive power.  
 * 📚 A Time for Choosing: The Rise of Modern American Conservatism (by Jonathan M. Schoenwald): This book details the historical and tactical rise of modern American conservatism from the 1960s onward.  

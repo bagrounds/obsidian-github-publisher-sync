@@ -3,7 +3,7 @@ share: true
 aliases:
   - 🗣️🧑‍💼🌉 A Conversation With California Governor Gavin Newsom
 title: 🗣️🧑‍💼🌉 A Conversation With California Governor Gavin Newsom
-URL: https://bagrounds.org/videos/
+URL: https://bagrounds.org/videos/a-conversation-with-california-governor-gavin-newsom
 Author:
 Platform:
 Channel: Heather Cox Richardson
@@ -31,6 +31,6 @@ The video's perspective on California's 🌉 role in national politics is a stra
 * [🗳️🏛️☠️ How Democracies Die](../books/how-democracies-die.md) by Steven Levitsky and Daniel Ziblatt analyzes how democracies can decline from within, offering a contrast to the video's hopeful tone.  
 * 🗺️ Gerrymandering the States by Alex Keena, Michael Latner, Anthony J. McGann, and Charles Anthony Smith examines the practice of political redistricting, providing a detailed look at the issue discussed in the video.  
 * [🗳️🕊️🇺🇸 Democracy in America](../books/democracy-in-america.md) by Alexis de Tocqueville offers a foundational look at the nature of American democracy and can provide a classic perspective for comparison.  
-* 🏛️ The Great Suppression by Zachary Roth provides a deeply reported look at the new conservative movement working to undermine American democracy.  
+* [🗳️💰⬇️ The Great Suppression: Voting Rights, Corporate Cash, and the Conservative Assault on Democracy](../books/the-great-suppression-voting-rights-corporate-cash-and-the-conservative-assault-on-democracy.md) by Zachary Roth provides a deeply reported look at the new conservative movement working to undermine American democracy.  
 * 🌆 Why Cities Lose by Jonathan Rodden explores the urban-rural political divide that underpins much of the state-level political conflict discussed in the video.  
 * ⚖️ The Fight to Vote by Michael Waldman traces the history of voting rights in America, providing essential context for the political debates over redistricting and election security.

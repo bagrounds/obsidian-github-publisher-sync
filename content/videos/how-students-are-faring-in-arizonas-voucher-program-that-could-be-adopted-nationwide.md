@@ -29,7 +29,6 @@ youtube: https://youtu.be/sts1CJsYNjs
 * 🗺️ 18 states have since followed Arizona's lead, expanding their voucher programs to be universal.  
   
 ## 🤔 Evaluation  
-  
 * 📉 **Comparison and Contrast**  
     * 📉 Unbiased research from the Learning Policy Institute and the Brookings Institution contrasts the goal of better education. Studies show students who switch from public to private schools using a voucher often experience significant losses in achievement on standardized tests, sometimes compared to the learning loss seen during the pandemic, according to the National Education Association (NEA).  
     * 💵 The program's nearly $1 billion cost is confirmed by external sources; The Education Trust reports this expense has exceeded estimates and equates to half of Arizona's state deficit for the current fiscal year, shifting money from public schools.  
@@ -56,9 +55,8 @@ A: 📚 No, a significant body of rigorous research indicates they don't. 📉 S
 A: 💰 The program largely benefits families who were already in private schools or homeschooling, according to the Learning Policy Institute. 🧑‍💻 The Brookings Institution confirms that funds are disproportionately used by families in high-income areas, making the program a subsidy for choices they were already able to afford.  
   
 ## 📚 Book Recommendations  
-  
 * 🚫 **Similar (Pro-Public School/Anti-Voucher)**  
-    * The Privateers: How Billionaires Created a Culture War and Sold School Vouchers: Documents how the voucher movement was fueled by a wealthy few despite negative academic results.  
+    * [💰🧑‍🏫⚔️ The Privateers: How Billionaires Created a Culture War and Sold School Vouchers](../books/the-privateers-how-billionaires-created-a-culture-war-and-sold-school-vouchers.md): Documents how the voucher movement was fueled by a wealthy few despite negative academic results.  
     * School Choice and the Betrayal of Democracy: How Market-Based Education Reform Fails Our Communities: Argues that market-based reforms undermine democratic communities and fail to create civic-minded, equitable education systems.  
     * Schoolhouse Burning: Public Education and the Assault on American Democracy: Examines the constitutional and historical commitment to public education and critiques school choice as a threat to this democratic foundation.  
 * 💸 **Contrasting (Pro-Choice/School Reform)**  

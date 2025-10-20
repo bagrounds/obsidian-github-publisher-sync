@@ -67,7 +67,7 @@ affiliate link: https://amzn.to/46XpRkY
 ### 📖 Similar  
 * 📖 Democracy, Deliberation, and Education by Robert Asen  
 * [💀🇺🇸🏫 The Death and Life of the Great American School System: How Testing and Choice Are Undermining Education](./the-death-and-life-of-the-great-american-school-system-how-testing-and-choice-are-undermining-education.md) by Diane Ravitch  
-* 📖 Reign of Error: The Hoax of the Privatization Movement and the Danger to America's Public Schools by Diane Ravitch  
+* [👑🏫🤥 Reign of Error: The Hoax of the Privatization Movement and the Danger to America's Public Schools](./reign-of-error-the-hoax-of-the-privatization-movement-and-the-danger-to-americas-public-schools.md) by Diane Ravitch  
   
 ### 📖 Contrasting  
 * 📖 The School Choice Journey: Education Reform and Its Impact in the United States by John Merrifield  

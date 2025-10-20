@@ -7,7 +7,7 @@ URL: https://bagrounds.org/videos
 backlinks: false
 ---
 [Home](../index.md)  
-# 📺 Videos (363)  
+# 📺 Videos (365)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
 - [❓💪🔬 12 Questions About Creatine with Stephen Cornish, PhD](./12-questions-about-creatine-w-stephen-cornish-phd.md)  
@@ -114,10 +114,12 @@ backlinks: false
 - [🕵️🇺🇸💻👁️ How ICE Spies On American Citizens | Incognito Mode | WIRED](./how-ice-spies-on-american-citizens-incognito-mode-wired.md)  
 - [How I use LLMs](./how-i-use-llms.md)  
 - [How new job cuts at the nation’s leading health agency affect Americans](./how-new-job-cuts-at-the-nations-leading-health-agency-affect-americans.md)  
+- [🏫💸📊🇺🇸 How students are faring in Arizona's voucher program that could be adopted nationwide](./how-students-are-faring-in-arizonas-voucher-program-that-could-be-adopted-nationwide.md)  
 - [How the Elite rigged Society (and why it’s falling apart) | David Brooks](./how-the-elite-rigged-society-and-why-it-s-falling-apart-david-brooks.md)  
 - [🇺🇸👑👎 How the start of Trump’s second term looks like some autocracies](./how-the-start-of-trumps-second-term-looks-like-some-autocracies.md)  
 - [🏛️🚫🛑👑 How the Supreme Court ruling on nationwide injunctions affects presidential powers](./how-the-supreme-court-ruling-on-nationwide-injunctions-affects-presidential-powers.md)  
 - [⛽🔥🌪️🌀🌍 How the Trump administration is dismantling climate protections](./how-the-trump-administration-is-dismantling-climate-protections.md)  
+- [🧑‍🏫🌪️🇺🇸 How the Trump administration is dramatically reshaping education in America](./how-the-trump-administration-is-dramatically-reshaping-education-in-america.md)  
 - [🇺🇸🗳️⚙️🤔 How the Trump administration is trying to change the way people vote](./how-the-trump-administration-is-trying-to-change-the-way-people-vote.md)  
 - [🤓📈📉⚠️ How to Become an Expert in ANYTHING - The Dunning Kruger Effect](./how-to-become-an-expert-in-anything-the-dunning-kruger-effect.md)  
 - [🚀📈🤯🚨 How To Be So Productive That It Feels ILLEGAL](./how-to-be-so-productive-that-it-feels-illegal.md)  

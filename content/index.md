@@ -10,8 +10,10 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 📑 Notes, 💭 thoughts, and 🔗 Links.  
 ❔ What do 🫵 _you_ 🤔 think?  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (337)  
-- [2025-10-17](./reflections/2025-10-17.md)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (339)  
+- [2025-10-19 | 🏫💸 The Paradox of School Choice 📰📚](./reflections/2025-10-19.md)  
+- [2025-10-18 | 🤖📣 Propaganda Machines | 🧑‍🧑‍🧒‍🧒🏢 Family Firms 📚](./reflections/2025-10-18.md)  
+- [2025-10-17 | 🤥 Demagoguery | 📜 Law | 🤸🏼‍♀️ Mobility 📺📚](./reflections/2025-10-17.md)  
 - [2025-10-16 | 🤕 Pain | 🐆 Leopard | 🤖 Disinformation 📺📚📄](./reflections/2025-10-16.md)  
 - [2025-10-15 | 🖼️ SIGGRAPH | 🦜 ACL | 😇 Good | ✊🏿 Antiracist 📺📚](./reflections/2025-10-15.md)  
 - [2025-10-14 | 🦐 Minimal | 👀 Indistractible | 🪝 Hooked 📚](./reflections/2025-10-14.md)  
@@ -19,24 +21,24 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [2025-10-12 | 🤏 Minimal | 💔 Break Up 📚](./reflections/2025-10-12.md)  
 - [2025-10-11 | 📚 Books | 📣 Common Knowledge | ♟️ Strategy | ✊ Resistance 📺📰📚](./reflections/2025-10-11.md)  
 - [2025-10-10 | 👹🗂️ Epstein Files | 🏃🏼‍♀️ Aerobics | 🔮 Prediction 📺📰📚](./reflections/2025-10-10.md)  
-- [2025-10-09 | 🐍 Corruption | 💙 Cerulean | 🤖 Autonomous 📺📰📚📄](./reflections/2025-10-09.md)  
-- [2025-10-08 | 🌪️ Chaos | 🕹️ Control | 🔮 Prediction 📺📚](./reflections/2025-10-08.md)  
   
   
-## [📚 Books](./books/index.md) (686)  
-- [🤸🤕 Becoming a Supple Leopard: The Ultimate Guide to Resolving Pain, Preventing Injury, and Optimizing Athletic Performance](./books/becoming-a-supple-leopard-the-ultimate-guide-to-resolving-pain-preventing-injury-and-optimizing-athletic-performance.md)  
+## [📚 Books](./books/index.md) (690)  
+- [🏫💔🏛️ School Choice and the Betrayal of Democracy: How Market-Based Education Reform Fails Our Communities](./books/school-choice-and-the-betrayal-of-democracy-how-market-based-education-reform-fails-our-communities.md)  
+- [💰🧑‍🏫⚔️ The Privateers: How Billionaires Created a Culture War and Sold School Vouchers](./books/the-privateers-how-billionaires-created-a-culture-war-and-sold-school-vouchers.md)  
+- [📱📢🤖 Computational Propaganda: Political Parties, Politicians, and Political Manipulation on Social Media](./books/computational-propaganda-political-parties-politicians-and-political-manipulation-on-social-media.md)  
+- [🤖🏛️ Lie Machines: How to Save Democracy from Troll Armies, Deceitful Robots, Junk News Operations, and Political Operatives](./books/lie-machines-how-to-save-democracy-from-troll-armies-deceitful-robots-junk-news-operations-and-political-operatives.md)  
+- [⚔️♟️ The Strategy of Conflict](./books/the-strategy-of-conflict.md)  
 - [🏃🤸 Built to Move: The Ten Essential Habits to Help You Move Freely and Live Fully](./books/built-to-move-the-ten-essential-habits-to-help-you-move-freely-and-live-fully.md)  
+- [🤸🤕 Becoming a Supple Leopard: The Ultimate Guide to Resolving Pain, Preventing Injury, and Optimizing Athletic Performance](./books/becoming-a-supple-leopard-the-ultimate-guide-to-resolving-pain-preventing-injury-and-optimizing-athletic-performance.md)  
 - [🇺🇸🕵️‍♂️🚫 Where Law Ends: Inside the Mueller Investigation](./books/where-law-ends-inside-the-mueller-investigation.md)  
 - [🇺🇸💔 The Lost Soul of the American Presidency: The Decline into Demagoguery and the Prospects for Renewal](./books/the-lost-soul-of-the-american-presidency-the-decline-into-demagoguery-and-the-prospects-for-renewal.md)  
 - [🇺🇸➡️ A Time for Choosing: The Rise of Modern American Conservatism](./books/a-time-for-choosing-the-rise-of-modern-american-conservatism.md)  
-- [🗳️💰⬇️ The Great Suppression: Voting Rights, Corporate Cash, and the Conservative Assault on Democracy](./books/the-great-suppression-voting-rights-corporate-cash-and-the-conservative-assault-on-democracy.md)  
-- [🏛️⚖️ The Rule of Law](./books/the-rule-of-law.md)  
-- [📱🗳️📉🩺 The Hype Machine: How Social Media Disrupts Our Elections, Our Economy, and Our Health - and How We Must Adapt](./books/the-hype-machine-how-social-media-disrupts-our-elections-our-economy-and-our-health-and-how-we-must-adapt.md)  
-- [👥⚔️👑 How to Stand Up to a Dictator: The Fight for Our Future](./books/how-to-stand-up-to-a-dictator.md)  
-- [🔙🛠️ Back Mechanic](./books/back-mechanic.md)  
   
   
-## [📺 Videos](./videos/index.md) (363)  
+## [📺 Videos](./videos/index.md) (365)  
+- [🧑‍🏫🌪️🇺🇸 How the Trump administration is dramatically reshaping education in America](./videos/how-the-trump-administration-is-dramatically-reshaping-education-in-america.md)  
+- [🏫💸📊🇺🇸 How students are faring in Arizona's voucher program that could be adopted nationwide](./videos/how-students-are-faring-in-arizonas-voucher-program-that-could-be-adopted-nationwide.md)  
 - [🇺🇸🗣️❓ The State of the United States: A Conversation with Jack Smith](./videos/the-state-of-the-united-states-a-conversation-with-jack-smith.md)  
 - [👤🎭🏛️ Russell Vought: The Shadow President](./videos/russell-vought-the-shadow-president.md)  
 - [🎭🤥👓 Image vs Reality—What the Administration Wants You to Think | Explainer](./videos/image-vs-reality-what-the-administration-wants-you-to-think-explainer.md)  
@@ -45,8 +47,6 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [🏋️🤕🛑 3 Causes Of Pain In Shoulder Doing Push-ups +Tips To Stop Your Shoulder From Hurting With Push-ups](./videos/3-causes-of-pain-in-shoulder-doing-push-ups-tips-to-stop-your-shoulder-from-hurting-with-push-ups.md)  
 - [🧠🔄♾️💡 The concept that changes how you learn forever](./videos/the-concept-that-changes-how-you-learn-forever.md)  
 - [📈🚀🏁🏆  It’s actually pretty easy to get ahead of 99% of people](./videos/it-is-actually-pretty-easy-to-get-ahead-of-99-percent-of%20people.md)  
-- [😃☀️👍📈 ️ HOW TO HAVE A GOOD DAY by Caroline Webb | Animated Summary](./videos/how-to-have-a-good-day-by-caroline-webb-animated-summary.md)  
-- [🤖📰🧐 [ACL 2025] Large Language Model Agents for Content Analysis](./videos/acl-2025-large-language-model-agents-for-content-analysis.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (82)  

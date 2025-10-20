@@ -5,6 +5,7 @@ aliases:
 URL: https://bagrounds.org/books/gaias-garden-a-guide-to-home-scale-permaculture
 share: true
 affiliate link: https://amzn.to/3Zbj8Q4
+CTA: 🌱 Cultivate resilience.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🌍🌿 Gaia's Garden: A Guide to Home-Scale Permaculture  
@@ -79,7 +80,7 @@ affiliate link: https://amzn.to/3Zbj8Q4
     * 🍎 **The Holistic Orchard** by Michael Phillips: Focuses on ecological orchard management.  
 * 🧘 **Philosophical / Foundational:**  
     * 🌾 **The One-Straw Revolution** by Masanobu Fukuoka: A classic manifesto on natural farming and minimal intervention, influential to permaculture's founders.  
-    * 🏘️ **A Pattern Language** by Christopher Alexander, et al.: While about architecture and urban design, its pattern-based design thinking deeply influenced permaculture.  
+    * **[🏘️🧱🏗️ A Pattern Language: Towns, Buildings, Construction](./a-pattern-language-towns-buildings-construction.md)** by Christopher Alexander, et al.: While about architecture and urban design, its pattern-based design thinking deeply influenced permaculture.  
     * **[🪢🌾 Braiding Sweetgrass: Indigenous Wisdom, Scientific Knowledge, and the Teachings of Plants](./braiding-sweetgrass.md)** by Robin Wall Kimmerer: Explores indigenous wisdom, scientific knowledge, and the interconnectedness of life, resonating with permaculture ethics.  
     * 📜 **Permaculture: Principles and Pathways Beyond Sustainability** by David Holmgren: A deep dive into the ethics and principles of permaculture by its other co-founder.  
     * 📘 **Permaculture: A Designer's Manual** by Bill Mollison: The dense, comprehensive foundational text of permaculture, considered advanced reading.  

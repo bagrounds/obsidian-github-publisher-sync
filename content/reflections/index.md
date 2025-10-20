@@ -7,8 +7,10 @@ URL: https://bagrounds.org/reflections
 backlinks: false
 ---
 [Home](../index.md)  
-# 🪞 Reflections (337)  
-- [2025-10-17](./2025-10-17.md)  
+# 🪞 Reflections (339)  
+- [2025-10-19 | 🏫💸 The Paradox of School Choice 📰📚](./2025-10-19.md)  
+- [2025-10-18 | 🤖📣 Propaganda Machines | 🧑‍🧑‍🧒‍🧒🏢 Family Firms 📚](./2025-10-18.md)  
+- [2025-10-17 | 🤥 Demagoguery | 📜 Law | 🤸🏼‍♀️ Mobility 📺📚](./2025-10-17.md)  
 - [2025-10-16 | 🤕 Pain | 🐆 Leopard | 🤖 Disinformation 📺📚📄](./2025-10-16.md)  
 - [2025-10-15 | 🖼️ SIGGRAPH | 🦜 ACL | 😇 Good | ✊🏿 Antiracist 📺📚](./2025-10-15.md)  
 - [2025-10-14 | 🦐 Minimal | 👀 Indistractible | 🪝 Hooked 📚](./2025-10-14.md)  

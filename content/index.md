@@ -23,8 +23,10 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [2025-10-10 | 👹🗂️ Epstein Files | 🏃🏼‍♀️ Aerobics | 🔮 Prediction 📺📰📚](./reflections/2025-10-10.md)  
   
   
-## [📚 Books](./books/index.md) (690)  
+## [📚 Books](./books/index.md) (691)  
+- [💀🇺🇸🏫 The Death and Life of the Great American School System: How Testing and Choice Are Undermining Education](./books/the-death-and-life-of-the-great-american-school-system-how-testing-and-choice-are-undermining-education.md)  
 - [🏫💔🏛️ School Choice and the Betrayal of Democracy: How Market-Based Education Reform Fails Our Communities](./books/school-choice-and-the-betrayal-of-democracy-how-market-based-education-reform-fails-our-communities.md)  
+- [👑🏫🤥 Reign of Error: The Hoax of the Privatization Movement and the Danger to America's Public Schools](./books/reign-of-error-the-hoax-of-the-privatization-movement-and-the-danger-to-americas-public-schools.md)  
 - [💰🧑‍🏫⚔️ The Privateers: How Billionaires Created a Culture War and Sold School Vouchers](./books/the-privateers-how-billionaires-created-a-culture-war-and-sold-school-vouchers.md)  
 - [📱📢🤖 Computational Propaganda: Political Parties, Politicians, and Political Manipulation on Social Media](./books/computational-propaganda-political-parties-politicians-and-political-manipulation-on-social-media.md)  
 - [🤖🏛️ Lie Machines: How to Save Democracy from Troll Armies, Deceitful Robots, Junk News Operations, and Political Operatives](./books/lie-machines-how-to-save-democracy-from-troll-armies-deceitful-robots-junk-news-operations-and-political-operatives.md)  
@@ -32,8 +34,6 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [🏃🤸 Built to Move: The Ten Essential Habits to Help You Move Freely and Live Fully](./books/built-to-move-the-ten-essential-habits-to-help-you-move-freely-and-live-fully.md)  
 - [🤸🤕 Becoming a Supple Leopard: The Ultimate Guide to Resolving Pain, Preventing Injury, and Optimizing Athletic Performance](./books/becoming-a-supple-leopard-the-ultimate-guide-to-resolving-pain-preventing-injury-and-optimizing-athletic-performance.md)  
 - [🇺🇸🕵️‍♂️🚫 Where Law Ends: Inside the Mueller Investigation](./books/where-law-ends-inside-the-mueller-investigation.md)  
-- [🇺🇸💔 The Lost Soul of the American Presidency: The Decline into Demagoguery and the Prospects for Renewal](./books/the-lost-soul-of-the-american-presidency-the-decline-into-demagoguery-and-the-prospects-for-renewal.md)  
-- [🇺🇸➡️ A Time for Choosing: The Rise of Modern American Conservatism](./books/a-time-for-choosing-the-rise-of-modern-american-conservatism.md)  
   
   
 ## [📺 Videos](./videos/index.md) (365)  

@@ -57,7 +57,7 @@ A: 💰 The program largely benefits families who were already in private school
 ## 📚 Book Recommendations  
 * 🚫 **Similar (Pro-Public School/Anti-Voucher)**  
     * [💰🧑‍🏫⚔️ The Privateers: How Billionaires Created a Culture War and Sold School Vouchers](../books/the-privateers-how-billionaires-created-a-culture-war-and-sold-school-vouchers.md): Documents how the voucher movement was fueled by a wealthy few despite negative academic results.  
-    * School Choice and the Betrayal of Democracy: How Market-Based Education Reform Fails Our Communities: Argues that market-based reforms undermine democratic communities and fail to create civic-minded, equitable education systems.  
+    * [🏫💔🏛️ School Choice and the Betrayal of Democracy: How Market-Based Education Reform Fails Our Communities](../books/school-choice-and-the-betrayal-of-democracy-how-market-based-education-reform-fails-our-communities.md): Argues that market-based reforms undermine democratic communities and fail to create civic-minded, equitable education systems.  
     * Schoolhouse Burning: Public Education and the Assault on American Democracy: Examines the constitutional and historical commitment to public education and critiques school choice as a threat to this democratic foundation.  
 * 💸 **Contrasting (Pro-Choice/School Reform)**  
     * The Charter School Experiment: 🧑‍🏫 Investigates the rise, impact, and controversies surrounding charter schools as a key market-based reform.  

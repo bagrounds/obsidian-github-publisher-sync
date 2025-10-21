@@ -10,7 +10,8 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 📑 Notes, 💭 thoughts, and 🔗 Links.  
 ❔ What do 🫵 _you_ 🤔 think?  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (339)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (340)  
+- [2025-10-20 | 🐆 Patterns | 🐾 Cats | 🔋 Mitochondria 📄📚📺](./reflections/2025-10-20.md)  
 - [2025-10-19 | 🏫💸 The Paradox of School Choice 📰📚](./reflections/2025-10-19.md)  
 - [2025-10-18 | 🤖📣 Propaganda Machines | 🧑‍🧑‍🧒‍🧒🏢 Family Firms 📚](./reflections/2025-10-18.md)  
 - [2025-10-17 | 🤥 Demagoguery | 📜 Law | 🤸🏼‍♀️ Mobility 📺📚](./reflections/2025-10-17.md)  
@@ -20,33 +21,32 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [2025-10-13 | ♟️ Strategy | ✝️ Religion | 👥 Community 📚📺](./reflections/2025-10-13.md)  
 - [2025-10-12 | 🤏 Minimal | 💔 Break Up 📚](./reflections/2025-10-12.md)  
 - [2025-10-11 | 📚 Books | 📣 Common Knowledge | ♟️ Strategy | ✊ Resistance 📺📰📚](./reflections/2025-10-11.md)  
-- [2025-10-10 | 👹🗂️ Epstein Files | 🏃🏼‍♀️ Aerobics | 🔮 Prediction 📺📰📚](./reflections/2025-10-10.md)  
   
   
-## [📚 Books](./books/index.md) (691)  
+## [📚 Books](./books/index.md) (695)  
+- [🐱👑 Total Cat Mojo: The Ultimate Guide to Life with Your Cat](./books/total-cat-mojo-the-ultimate-guide-to-life-with-your-cat.md)  
+- [🐱👍 Think Like a Cat: How to Raise a Well-Adjusted Cat - Not a Sour Puss](./books/think-like-a-cat-how-to-raise-a-well-adjusted-cat-not-a-sour-puss.md)  
+- [⌨️🤖 Prompt Engineering for LLMs: The Art and Science of Building Large Language Model-Based Applications](./books/prompt-engineering-for-llms-the-art-and-science-of-building-large-language-model-based-applications.md)  
+- [🤖🦜 Large Language Models: Concepts, Techniques and Applications](./books/large-language-models-concepts-techniques-and-applications.md)  
+- [🌍🌿 Gaia's Garden: A Guide to Home-Scale Permaculture](./books/gaias-garden.md)  
+- [🗑️✨ Refactoring: Improving the Design of Existing Code](./books/refactoring-improving-the-design-of-existing-code.md)  
+- [💡📜 Where Good Ideas Come From: The Natural History of Innovation](./books/where-good-ideas-come-from-the-natural-history-of-innovation.md)  
+- [🏘️🧱🏗️ A Pattern Language: Towns, Buildings, Construction](./books/a-pattern-language-towns-buildings-construction.md)  
 - [💀🇺🇸🏫 The Death and Life of the Great American School System: How Testing and Choice Are Undermining Education](./books/the-death-and-life-of-the-great-american-school-system-how-testing-and-choice-are-undermining-education.md)  
 - [🏫💔🏛️ School Choice and the Betrayal of Democracy: How Market-Based Education Reform Fails Our Communities](./books/school-choice-and-the-betrayal-of-democracy-how-market-based-education-reform-fails-our-communities.md)  
-- [👑🏫🤥 Reign of Error: The Hoax of the Privatization Movement and the Danger to America's Public Schools](./books/reign-of-error-the-hoax-of-the-privatization-movement-and-the-danger-to-americas-public-schools.md)  
-- [💰🧑‍🏫⚔️ The Privateers: How Billionaires Created a Culture War and Sold School Vouchers](./books/the-privateers-how-billionaires-created-a-culture-war-and-sold-school-vouchers.md)  
-- [📱📢🤖 Computational Propaganda: Political Parties, Politicians, and Political Manipulation on Social Media](./books/computational-propaganda-political-parties-politicians-and-political-manipulation-on-social-media.md)  
-- [🤖🏛️ Lie Machines: How to Save Democracy from Troll Armies, Deceitful Robots, Junk News Operations, and Political Operatives](./books/lie-machines-how-to-save-democracy-from-troll-armies-deceitful-robots-junk-news-operations-and-political-operatives.md)  
-- [⚔️♟️ The Strategy of Conflict](./books/the-strategy-of-conflict.md)  
-- [🏃🤸 Built to Move: The Ten Essential Habits to Help You Move Freely and Live Fully](./books/built-to-move-the-ten-essential-habits-to-help-you-move-freely-and-live-fully.md)  
-- [🤸🤕 Becoming a Supple Leopard: The Ultimate Guide to Resolving Pain, Preventing Injury, and Optimizing Athletic Performance](./books/becoming-a-supple-leopard-the-ultimate-guide-to-resolving-pain-preventing-injury-and-optimizing-athletic-performance.md)  
-- [🇺🇸🕵️‍♂️🚫 Where Law Ends: Inside the Mueller Investigation](./books/where-law-ends-inside-the-mueller-investigation.md)  
   
   
-## [📺 Videos](./videos/index.md) (365)  
-- [🧑‍🏫🌪️🇺🇸 How the Trump administration is dramatically reshaping education in America](./videos/how-the-trump-administration-is-dramatically-reshaping-education-in-america.md)  
+## [📺 Videos](./videos/index.md) (368)  
+- [🖼️🤔🛠️🤖 Context Engineering for Agents](./videos/context-engineering-for-agents.md)  
+- [⚡🔋💪 The Mitochondria Protocol: How to Actually Fix Your Energy](./videos/the-mitochondria-protocol-how-to-actually-fix-your-energy.md)  
 - [🏫💸📊🇺🇸 How students are faring in Arizona's voucher program that could be adopted nationwide](./videos/how-students-are-faring-in-arizonas-voucher-program-that-could-be-adopted-nationwide.md)  
+- [🏛️🇺🇸⚖️💔 Former Justice Anthony Kennedy on political division and the state of the Supreme Court](./videos/former-justice-anthony-kennedy-on-political-division-and-the-state-of-the-supreme-court.md)  
+- [🧠📉⚠️ Heather Cox Richardson: Trump Is Mentally Crumbling—But Still Dangerous | The Bulwark Podcast](./videos/heather-cox-richardson-trump-is-mentally-crumbling-but-still-dangerous-the-bulwark-podcast.md)  
+- [🧑‍🏫🌪️🇺🇸 How the Trump administration is dramatically reshaping education in America](./videos/how-the-trump-administration-is-dramatically-reshaping-education-in-america.md)  
 - [🇺🇸🗣️❓ The State of the United States: A Conversation with Jack Smith](./videos/the-state-of-the-united-states-a-conversation-with-jack-smith.md)  
 - [👤🎭🏛️ Russell Vought: The Shadow President](./videos/russell-vought-the-shadow-president.md)  
 - [🎭🤥👓 Image vs Reality—What the Administration Wants You to Think | Explainer](./videos/image-vs-reality-what-the-administration-wants-you-to-think-explainer.md)  
 - [🗣️🧑‍💼🌉 A Conversation With California Governor Gavin Newsom](./videos/a-conversation-with-california-governor-gavin-newsom.md)  
-- [💰➡️🪖 Why It Matters That Trump Rerouted Money to Pay the Troops | Explainer](./videos/why-it-matters-that-trump-rerouted-money-to-pay-the-troops-explainer.md)  
-- [🏋️🤕🛑 3 Causes Of Pain In Shoulder Doing Push-ups +Tips To Stop Your Shoulder From Hurting With Push-ups](./videos/3-causes-of-pain-in-shoulder-doing-push-ups-tips-to-stop-your-shoulder-from-hurting-with-push-ups.md)  
-- [🧠🔄♾️💡 The concept that changes how you learn forever](./videos/the-concept-that-changes-how-you-learn-forever.md)  
-- [📈🚀🏁🏆  It’s actually pretty easy to get ahead of 99% of people](./videos/it-is-actually-pretty-easy-to-get-ahead-of-99-percent-of%20people.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (82)  
@@ -57,12 +57,12 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [🏦♾️📈💸 Modern Monetary Theory](./topics/modern-monetary-theory.md)  
   
   
-## [📄  Articles](./articles/index.md) (62)  
+## [📄  Articles](./articles/index.md) (63)  
+- [🧑‍🏫🌍🛠️📈 Agent Skills: Equipping agents for the real world with Agent Skills](./articles/equipping-agents-for-the-real-world-with-agent-skills.md)  
 - [🤖😴📢🗳️ Sleeper Social Bots: A New Generation of AI Disinformation Bots are Already a Political Threat](./articles/sleeper-social-bots-a-new-generation-of-ai-disinformation-bots-are-already-a-political-threat.md)  
 - [🤖⚙️🔄🗣️ Agentic Context Engineering: Evolving Contexts for Self Improving Language Models](./articles/agentic-context-engineering-evolving-contexts-for-self-improving-language-models.md)  
 - [💰⚙️📈🔍 Defining and Characterizing Reward Hacking](./articles/defining-and-characterizing-reward-hacking.md)  
 - [🧠💪📈 BDNF Response to High Intensity Exercise](./articles/bdnf-response-to-high-intensity-exercise.md)  
-- [🧠📈🔑 Cognitive load is what matters](./articles/cognitive-load-is-what-matters.md)  
   
   
 ## [🤖💬 Bot Chats](./bot-chats/index.md) (45)  

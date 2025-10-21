@@ -68,4 +68,7 @@ tags:
 ### Creatively Related  
   
 * [💺🚪💡🤔 The Design of Everyday Things](../books/the-design-of-everyday-things.md) by Don Norman. 🎛️ This book discusses the principle of affordance and the importance of clear, understandable interfaces, relating to how the name and description of a skill must be perfectly crafted for the agent to know when and how to afford its use.  
-* [🧠🌱💀 Made to Stick: Why Some Ideas Survive and Others Die](../books/made-to-stick.md) by Chip Heath and Dan Heath. ✨ This explores making ideas simple and concrete, which is key to effectively writing the instructions within the SKILL.md file so the agent reliably grasps the skill's purpose.
+* [🧠🌱💀 Made to Stick: Why Some Ideas Survive and Others Die](../books/made-to-stick.md) by Chip Heath and Dan Heath. ✨ This explores making ideas simple and concrete, which is key to effectively writing the instructions within the SKILL.md file so the agent reliably grasps the skill's purpose.  
+  
+## 🐦 Tweet  
+<blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">🧑‍🏫🌍🛠️📈 Agent Skills: Equipping agents for the real world with Agent Skills<br><br>🤖 Agent Specialization | 📁 Skill Structure | 📄 Progressive Disclosure | ⚙️ Code Execution | 📚 Knowledge Organization | 🔐 Security Auditing<a href="https://twitter.com/AnthropicAI?ref_src=twsrc%5Etfw">@AnthropicAI</a><a href="https://t.co/uGjsBuY53J">https://t.co/uGjsBuY53J</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/1980439570350239807?ref_src=twsrc%5Etfw">October 21, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

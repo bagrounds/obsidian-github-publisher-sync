@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org/books/large-language-models-concepts-techniques-and-applications
 share: true
 affiliate link: https://amzn.to/3Ty40sY
-CTA: Explore LLMs.
+CTA: 💡 Unlock LLM potential.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🤖🦜 Large Language Models: Concepts, Techniques and Applications  
@@ -51,10 +51,6 @@ CTA: Explore LLMs.
 * ✅ **Comprehensive Coverage:** Covers foundations, methodologies, cutting-edge models, and practical use cases.  
 * 🏢 **Industry and Academia Relevant:** Valuable for a broad range of professionals and students.  
   
-### 👎 Weaknesses  
-  
-* ⚠️ Information on weaknesses was not readily available in the provided search results.  
-  
 ## ➕ Additional Book Recommendations  
   
 ### 📚 Similar Books (Concepts, Techniques, Applications)  
@@ -76,8 +72,8 @@ CTA: Explore LLMs.
   
 * 📈 ***Introduction to Large Language Models for Business Leaders: Responsible AI Strategy Beyond Fear and Hype*** by I Almeida: Focuses on the strategic and business implications of LLMs, including responsible AI.  
 * **[💾⬆️🛡️ Designing Data-Intensive Applications: The Big Ideas Behind Reliable, Scalable, and Maintainable Systems](./designing-data-intensive-applications.md)** by Martin Kleppmann: While not directly about LLMs, this book is highly relevant for understanding the underlying systems and data infrastructure required to build and deploy large-scale AI applications.  
-* ✍️ ***Prompt Engineering for LLMs*** by John Berryman and Albert Ziegler: Concentrates on the crucial skill of crafting effective prompts to get the best results from LLMs, a vital practical aspect of working with these models.  
-* 🤖 ***AI Engineering***: A broader look at the principles and practices of building AI applications with foundation models, including prompt engineering and model evaluation.  
+* **[⌨️🤖 Prompt Engineering for LLMs: The Art and Science of Building Large Language Model-Based Applications](./prompt-engineering-for-llms-the-art-and-science-of-building-large-language-model-based-applications.md)** by John Berryman and Albert Ziegler: Concentrates on the crucial skill of crafting effective prompts to get the best results from LLMs, a vital practical aspect of working with these models.  
+* **[🤖🏗️ AI Engineering: Building Applications with Foundation Models](./ai-engineering-building-applications-with-foundation-models.md)**: A broader look at the principles and practices of building AI applications with foundation models, including prompt engineering and model evaluation.  
 * 🤔 Books on the philosophy of AI or the ethics of artificial intelligence would provide a contrasting, more theoretical perspective on the societal impact and considerations surrounding powerful AI systems like LLMs. (Based on the general knowledge about AI ethics)  
   
 ## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  

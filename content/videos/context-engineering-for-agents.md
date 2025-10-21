@@ -4,10 +4,10 @@ aliases:
   - 🖼️🤔🛠️🤖 Context Engineering for Agents
 title: 🖼️🤔🛠️🤖 Context Engineering for Agents
 URL: https://bagrounds.org/videos/context-engineering-for-agents
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: LangChain
-tags: 
+tags:
 youtube: https://youtu.be/4GiqzUHD5AA
 ---
 [Home](../index.md) > [Videos](./index.md)  
@@ -53,13 +53,13 @@ This video discusses ⚙️ context engineering for agents \[[00:00](http://www.
   
 ✨ **For Prompt Engineering:**  
   
-* 🪄 **"Prompt Engineering for LLMs" by John Berryman and Albert Ziegler:** 💡 This O'Reilly book focuses on the art and science of crafting effective prompts to unlock the potential of LLMs. ✍️ It covers architectural understanding, strategy, and specific techniques like few-shot learning and RAG.  
+* **[⌨️🤖 Prompt Engineering for LLMs: The Art and Science of Building Large Language Model-Based Applications](../books/prompt-engineering-for-llms-the-art-and-science-of-building-large-language-model-based-applications.md) by John Berryman and Albert Ziegler:** 💡 This O'Reilly book focuses on the art and science of crafting effective prompts to unlock the potential of LLMs. ✍️ It covers architectural understanding, strategy, and specific techniques like few-shot learning and RAG.  
 * 🔑 **"Unlocking the Secrets of Prompt Engineering: Master the art of creative language generation to accelerate your journey from novice to pro" by Gilbert Mizrahi:** 🚀 This book aims to help readers master AI-driven writing and effectively use prompts for diverse applications.  
 * 🎨 **"Prompt Engineering for Generative AI" by James Phoenix and Mike Taylor:** 📚 Another O'Reilly title that provides a solid foundation in generative AI and how to apply prompt engineering principles to work effectively with LLMs and diffusion models.  
   
 🤖 **For AI Agent Design and Development:**  
   
-* 🕵️‍♂️ **"AI Agents in Action" by Micheal Lanham:** ⚙️ This book offers a practical framework for developing LLM-powered autonomous agents and intelligent assistants. 🧠 It covers knowledge management, memory systems, feedback loops, and multi-agent systems.  
+* **[🤖⚙️ AI Agents in Action](../books/ai-agents-in-action.md) by Micheal Lanham:** ⚙️ This book offers a practical framework for developing LLM-powered autonomous agents and intelligent assistants. 🧠 It covers knowledge management, memory systems, feedback loops, and multi-agent systems.  
 * 🏢 **"Building Applications with AI Agents" by Michael Albada:** 🔬 This book provides a research-based approach to designing and implementing single- and multi-agent systems, covering core components, design principles, and deployment strategies.  
 * 🔗 **"LangChain for RAG Beginners: Build Your First Powerful AI GPT Agent" by Karel Hernandez Rodriguez:** 🌟 Given the mention of LangGraph in the video, this book focusing on LangChain and Retrieval Augmented Generation (RAG) for building agents would be highly relevant.  
   

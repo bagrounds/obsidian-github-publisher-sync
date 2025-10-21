@@ -77,7 +77,7 @@ A definitive guide to decoding feline behavior through understanding their natur
 * 🎯 Don't Shoot the Dog! by Karen Pryor (general behavioral science, but not cat-specific)  
   
 ### ➕ Related  
-* 🐈‍⬛ Decoding Your Cat: The Ultimate Experts Explain Common Cat Behaviors and Reveal How to Prevent and Solve Them by American College of Veterinary Behaviorists  
+* [🐈‍⬛❓ Decoding Your Cat: The Ultimate Experts Explain Common Cat Behaviors and Reveal How to Prevent or Change Unwanted Ones](./decoding-your-cat-the-ultimate-experts-explain-common-cat-behaviors-and-reveal-how-to-prevent-or-change-unwanted-ones.md) by American College of Veterinary Behaviorists  
 * 🤫 Cat Confidential by Vicky Halls  
 * 🪄 The Little Book of Cat Tricks by Kat Brown  
   

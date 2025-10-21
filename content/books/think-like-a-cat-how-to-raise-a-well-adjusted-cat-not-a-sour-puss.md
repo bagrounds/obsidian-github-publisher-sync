@@ -68,7 +68,7 @@ A definitive guide to decoding feline behavior through understanding their natur
 ## 📚 Book Recommendations  
   
 ### 👍 Similar  
-* 📚 Total Cat Mojo by Jackson Galaxy  
+* 📚 [🐱👑 Total Cat Mojo: The Ultimate Guide to Life with Your Cat](./total-cat-mojo-the-ultimate-guide-to-life-with-your-cat.md) by Jackson Galaxy  
 * 📚 Cat Sense by John Bradshaw  
 * 📚 The Special Needs Cat by Celeste Yarnall  
   

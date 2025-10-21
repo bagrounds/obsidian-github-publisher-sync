@@ -7,7 +7,7 @@ URL: https://bagrounds.org/videos
 backlinks: false
 ---
 [Home](../index.md)  
-# 📺 Videos (365)  
+# 📺 Videos (368)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
 - [❓💪🔬 12 Questions About Creatine with Stephen Cornish, PhD](./12-questions-about-creatine-w-stephen-cornish-phd.md)  
@@ -95,6 +95,7 @@ backlinks: false
 - [🧠🍎💊📈 Food & Supplements for Brain Health & Cognitive Performance | Huberman Lab Essentials](./food-supplements-for-brain-health-cognitive-performance-huberman-lab-essentials.md)  
 - [👨‍⚕️➡️😬💉💥 Former CDC director reacts to RFK Jr.'s firing of entire vaccine advisory panel](./former-cdc-director-reacts-to-rfk-jrs-firing-of-entire-vaccine-advisory-panel.md)  
 - [🏛️🚨🇺🇸 Former Homeland Security chief Jeh Johnson issues urgent call to protect U.S. democracy](./former-homeland-security-chief-jeh-johnson-issues-urgent-call-to-protect-u-s-democracy.md)  
+- [🏛️🇺🇸⚖️💔 Former Justice Anthony Kennedy on political division and the state of the Supreme Court](./former-justice-anthony-kennedy-on-political-division-and-the-state-of-the-supreme-court.md)  
 - [✊📢✅ Forms of Resistance and Reasons to Believe It’s Working | Explainer](./forms-of-resistance-and-reasons-to-believe-its-working-explainer.md)  
 - [FTC commissioner fired by Trump says move threatens agency designed to protect consumers](./ftc-commissioner-fired-by-trump-says-move-threatens-agency-designed-to-protect-consumers.md)  
 - [🇮🇹🏆🗣️ Giorgio Parisi: Nobel Prize Conversations](./giorgio-parisi-nobel-prize-conversations.md)  
@@ -102,6 +103,7 @@ backlinks: false
 - [🫀💪📈 Guide How to Build a Monster Aerobic System | Your Detailed Guide](./how-to-build-a-monster-aerobic-system-your-detailed-guide.md)  
 - [⚕️🗣️💊 Health experts respond to Trump's claims linking autism to acetaminophen](./health-experts-respond-to-trumps-claims-linking-autism-to-acetaminophen.md)  
 - [🏛️🐘⬆️🙏 Heather Cox Richardson on Why She's Still Hopeful Under MAGA and Donald Trump](./heather-cox-richardson-on-why-shes-still-hopeful-under-maga-and-donald-trump.md)  
+- [🧠📉⚠️ Heather Cox Richardson: Trump Is Mentally Crumbling—But Still Dangerous | The Bulwark Podcast](./heather-cox-richardson-trump-is-mentally-crumbling-but-still-dangerous-the-bulwark-podcast.md)  
 - [History Professor Answers Dictator Questions | Tech Support | WIRED](./history-professor-answers-dictator-questions-tech-support-wired.md)  
 - [How AI Cracked the Protein Folding Code and Won a Nobel Prize](./how-ai-cracked-the-protein-folding-code-and-won-a-nobel-prize.md)  
 - [How automakers are navigating Trump’s tariffs on imported vehicles and parts](./how-automakers-are-navigating-trumps-tariffs-on-imported-vehicles-and-parts.md)  
@@ -267,6 +269,7 @@ backlinks: false
 - [The history of diversity, equity and inclusion efforts in America](./the-history-of-diversity-equity-and-inclusion-efforts-in-america.md)  
 - [🇮🇱⚔️🇮🇷👹☢️⛪🪓🏝️ The Latest on Israel and Iran: Trump, Nukes, and a MAGA Split](./the-latest-on-israel-and-iran-trump-nukes-and-a-maga-split.md)  
 - [🧢🇺🇸📢➡️ The MAGA Ideology That Brought Us to This Moment](./the-maga-ideology-that-brought-us-to-this-moment.md)  
+- [⚡🔋💪 The Mitochondria Protocol: How to Actually Fix Your Energy](./the-mitochondria-protocol-how-to-actually-fix-your-energy.md)  
 - [The OLDEST websites EVER 👩‍💻](./the-oldest-websites-ever.md)  
 - [⏱️🔋✅ The one productivity system you need: time vs energy management (ep. 1)](./the-one-productivity-system-you-need-time-vs-energy-management-ep-1.md)  
 - [🤖📈🌟 The Only Trait for Success in the AI Era—How to Build It | Carnegie Mellon University Po-Shen Loh](./the-only-trait-for-success-in-the-ai-era-how-to-build-it-carnegie-mellon-university-po-shen-loh.md)  

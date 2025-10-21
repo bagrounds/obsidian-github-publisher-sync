@@ -7,7 +7,8 @@ URL: https://bagrounds.org/reflections
 backlinks: false
 ---
 [Home](../index.md)  
-# 🪞 Reflections (339)  
+# 🪞 Reflections (340)  
+- [2025-10-20 | 🐆 Patterns | 🐾 Cats | 🔋 Mitochondria 📄📚📺](./2025-10-20.md)  
 - [2025-10-19 | 🏫💸 The Paradox of School Choice 📰📚](./2025-10-19.md)  
 - [2025-10-18 | 🤖📣 Propaganda Machines | 🧑‍🧑‍🧒‍🧒🏢 Family Firms 📚](./2025-10-18.md)  
 - [2025-10-17 | 🤥 Demagoguery | 📜 Law | 🤸🏼‍♀️ Mobility 📺📚](./2025-10-17.md)  

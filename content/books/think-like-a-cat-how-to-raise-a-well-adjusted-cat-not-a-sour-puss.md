@@ -5,11 +5,11 @@ aliases:
 URL: https://bagrounds.org/books/think-like-a-cat-how-to-raise-a-well-adjusted-cat-not-a-sour-puss
 share: true
 CTA: 🐱 Embrace feline wisdom.
-affiliate link: https://amzn.to/4hl5dyP
+affiliate link: https://amzn.to/49c02Ps
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🐱👍 Think Like a Cat: How to Raise a Well-Adjusted Cat - Not a Sour Puss  
-[🛒 Think Like a Cat: How to Raise a Well-Adjusted Cat - Not a Sour Puss. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4hl5dyP)  
+[🛒 Think Like a Cat: How to Raise a Well-Adjusted Cat - Not a Sour Puss. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/49c02Ps)  
   
 A definitive guide to decoding feline behavior through understanding their natural instincts and motivations to foster harmonious cohabitation and prevent common behavioral issues 😻 🐾.  
   

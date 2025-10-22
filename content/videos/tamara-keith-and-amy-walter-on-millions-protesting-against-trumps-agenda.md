@@ -112,4 +112,7 @@ youtube: https://youtu.be/rHYMr2eJV_8
   
 - [👁️ 1984](../books/1984.md) by George Orwell: A classic dystopian novel that highlights themes of **absolute power and the manipulation of truth**, which resonates with discussions of political rhetoric and media control in the modern era.  
   
-- 👗 The Handmaid's Tale by Margaret Atwood: A feminist dystopia that gained renewed popularity in the wake of the Women's March, connecting themes of **control over women's rights** to contemporary political action.
+- 👗 The Handmaid's Tale by Margaret Atwood: A feminist dystopia that gained renewed popularity in the wake of the Women's March, connecting themes of **control over women's rights** to contemporary political action.  
+  
+## 🐦 Tweet  
+<blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">🗣️📢🚫 Tamara Keith and Amy Walter on millions protesting against Trump’s agenda<br><br>🧑‍🤝‍🧑 Protests | 🇺🇲 Political Divide | 🏛️ Government Shutdown | 🗳️ Elections | 🧱 Redistricting | 🏰 White House Renovation<a href="https://twitter.com/NewsHour?ref_src=twsrc%5Etfw">@NewsHour</a><a href="https://t.co/lFUAiP7KiU">https://t.co/lFUAiP7KiU</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/1980829927491662286?ref_src=twsrc%5Etfw">October 22, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

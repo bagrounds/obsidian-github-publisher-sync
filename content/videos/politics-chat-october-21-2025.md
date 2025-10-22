@@ -54,7 +54,7 @@ A: 📈 The *No Kings* rallies were significant because they demonstrated that t
   
 **Similar (Focus on the state of American democracy and polarization):**  
   
-* Divided Politics, Divided Nation by Darrell M. West: 🇺🇸 Analyzes how economic, cultural, and political factors have created a dangerous **tribalism** that threatens US democracy. (Source 4.1)  
+* [🇺🇸⚔️ Divided Politics, Divided Nation: Hyperconflict in the Trump Era](../books/divided-politics-divided-nation-hyperconflict-in-the-trump-era.md) by Darrell M. West: 🇺🇸 Analyzes how economic, cultural, and political factors have created a dangerous **tribalism** that threatens US democracy. (Source 4.1)  
 * Democracies Divided: The Global Challenge of Political Polarization edited by Thomas Carothers and Andrew O'Donohue: 🌐 Provides a comparative, international analysis of severe political **polarization**, offering insights into the global democratic recession that America is part of. (Source 4.2)  
 * [🗳️🏛️☠️ How Democracies Die](../books/how-democracies-die.md) by Steven Levitsky and Daniel Ziblatt: ⚠️ Examines the subtle ways democratic institutions are undermined by elected leaders, providing a framework to understand the current administration's actions.  
   

@@ -10,7 +10,8 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 📑 Notes, 💭 thoughts, and 🔗 Links.  
 ❔ What do 🫵 _you_ 🤔 think?  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (340)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (341)  
+- [2025-10-21 | 🐈 Decode | 🇺🇸 Divide | 🏎️ Drive | 🚫👑 Dethrone 📚📰📺](./reflections/2025-10-21.md)  
 - [2025-10-20 | 🐆 Patterns | 🐾 Cats | 🔋 Mitochondria 📄📚📺](./reflections/2025-10-20.md)  
 - [2025-10-19 | 🏫💸 The Paradox of School Choice 📰📚](./reflections/2025-10-19.md)  
 - [2025-10-18 | 🤖📣 Propaganda Machines | 🧑‍🧑‍🧒‍🧒🏢 Family Firms 📚](./reflections/2025-10-18.md)  
@@ -20,33 +21,32 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [2025-10-14 | 🦐 Minimal | 👀 Indistractible | 🪝 Hooked 📚](./reflections/2025-10-14.md)  
 - [2025-10-13 | ♟️ Strategy | ✝️ Religion | 👥 Community 📚📺](./reflections/2025-10-13.md)  
 - [2025-10-12 | 🤏 Minimal | 💔 Break Up 📚](./reflections/2025-10-12.md)  
-- [2025-10-11 | 📚 Books | 📣 Common Knowledge | ♟️ Strategy | ✊ Resistance 📺📰📚](./reflections/2025-10-11.md)  
   
   
-## [📚 Books](./books/index.md) (695)  
-- [🐱👑 Total Cat Mojo: The Ultimate Guide to Life with Your Cat](./books/total-cat-mojo-the-ultimate-guide-to-life-with-your-cat.md)  
+## [📚 Books](./books/index.md) (697)  
+- [🇺🇸⚔️ Divided Politics, Divided Nation: Hyperconflict in the Trump Era](./books/divided-politics-divided-nation-hyperconflict-in-the-trump-era.md)  
+- [🐈‍⬛❓ Decoding Your Cat: The Ultimate Experts Explain Common Cat Behaviors and Reveal How to Prevent or Change Unwanted Ones](./books/decoding-your-cat-the-ultimate-experts-explain-common-cat-behaviors-and-reveal-how-to-prevent-or-change-unwanted-ones.md)  
 - [🐱👍 Think Like a Cat: How to Raise a Well-Adjusted Cat - Not a Sour Puss](./books/think-like-a-cat-how-to-raise-a-well-adjusted-cat-not-a-sour-puss.md)  
+- [🐱👑 Total Cat Mojo: The Ultimate Guide to Life with Your Cat](./books/total-cat-mojo-the-ultimate-guide-to-life-with-your-cat.md)  
 - [⌨️🤖 Prompt Engineering for LLMs: The Art and Science of Building Large Language Model-Based Applications](./books/prompt-engineering-for-llms-the-art-and-science-of-building-large-language-model-based-applications.md)  
 - [🤖🦜 Large Language Models: Concepts, Techniques and Applications](./books/large-language-models-concepts-techniques-and-applications.md)  
 - [🌍🌿 Gaia's Garden: A Guide to Home-Scale Permaculture](./books/gaias-garden.md)  
 - [🗑️✨ Refactoring: Improving the Design of Existing Code](./books/refactoring-improving-the-design-of-existing-code.md)  
 - [💡📜 Where Good Ideas Come From: The Natural History of Innovation](./books/where-good-ideas-come-from-the-natural-history-of-innovation.md)  
 - [🏘️🧱🏗️ A Pattern Language: Towns, Buildings, Construction](./books/a-pattern-language-towns-buildings-construction.md)  
-- [💀🇺🇸🏫 The Death and Life of the Great American School System: How Testing and Choice Are Undermining Education](./books/the-death-and-life-of-the-great-american-school-system-how-testing-and-choice-are-undermining-education.md)  
-- [🏫💔🏛️ School Choice and the Betrayal of Democracy: How Market-Based Education Reform Fails Our Communities](./books/school-choice-and-the-betrayal-of-democracy-how-market-based-education-reform-fails-our-communities.md)  
   
   
-## [📺 Videos](./videos/index.md) (368)  
+## [📺 Videos](./videos/index.md) (372)  
+- [🏛️🗣️📅 Politics Chat, October 21, 2025](./videos/politics-chat-october-21-2025.md)  
+- [🚫👑⚡✊ Sen. Bernie Sanders - Harnessing Energy From «No Kings» Rally to «Fight Oligarchy» | The Daily Show](./videos/sen-bernie-sanders-harnessing-energy-from-no-kings-rally-to-fight-oligarchy-the-daily-show.md)  
+- [👑⬇️🗣️📺 No Kings Protests Defy GOP Expectations & Jon Gives Trump a Royal Inspection | The Daily Show](./videos/no-kings-protests-defy-gop-expectations-jon-gives-trump-a-royal-inspection-the-daily-show.md)  
+- [🗣️📢🚫 Tamara Keith and Amy Walter on millions protesting against Trump’s agenda](./videos/tamara-keith-and-amy-walter-on-millions-protesting-against-trumps-agenda.md)  
 - [🖼️🤔🛠️🤖 Context Engineering for Agents](./videos/context-engineering-for-agents.md)  
 - [⚡🔋💪 The Mitochondria Protocol: How to Actually Fix Your Energy](./videos/the-mitochondria-protocol-how-to-actually-fix-your-energy.md)  
 - [🏫💸📊🇺🇸 How students are faring in Arizona's voucher program that could be adopted nationwide](./videos/how-students-are-faring-in-arizonas-voucher-program-that-could-be-adopted-nationwide.md)  
 - [🏛️🇺🇸⚖️💔 Former Justice Anthony Kennedy on political division and the state of the Supreme Court](./videos/former-justice-anthony-kennedy-on-political-division-and-the-state-of-the-supreme-court.md)  
 - [🧠📉⚠️ Heather Cox Richardson: Trump Is Mentally Crumbling—But Still Dangerous | The Bulwark Podcast](./videos/heather-cox-richardson-trump-is-mentally-crumbling-but-still-dangerous-the-bulwark-podcast.md)  
 - [🧑‍🏫🌪️🇺🇸 How the Trump administration is dramatically reshaping education in America](./videos/how-the-trump-administration-is-dramatically-reshaping-education-in-america.md)  
-- [🇺🇸🗣️❓ The State of the United States: A Conversation with Jack Smith](./videos/the-state-of-the-united-states-a-conversation-with-jack-smith.md)  
-- [👤🎭🏛️ Russell Vought: The Shadow President](./videos/russell-vought-the-shadow-president.md)  
-- [🎭🤥👓 Image vs Reality—What the Administration Wants You to Think | Explainer](./videos/image-vs-reality-what-the-administration-wants-you-to-think-explainer.md)  
-- [🗣️🧑‍💼🌉 A Conversation With California Governor Gavin Newsom](./videos/a-conversation-with-california-governor-gavin-newsom.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (82)  

@@ -79,4 +79,7 @@ A: 💥 Yes, the video 🎥 featured a segment that compared specific actions of
     * 📖 A classic dystopian  dystopia warning about a future where a **totalitarian regime** monitors all aspects of life, rewriting history and truth, highly relevant to discussions of **media manipulation** and **government overreach**.  
   
 * **It Can't Happen Here** by Sinclair Lewis  
-    * 🇺🇸 Written in 1935, this chillingly 🥶 prescient novel imagines the **rise of a populist American dictator** named Buzz Windrip, illustrating how an authoritarian movement could take root in the United States.
+    * 🇺🇸 Written in 1935, this chillingly 🥶 prescient novel imagines the **rise of a populist American dictator** named Buzz Windrip, illustrating how an authoritarian movement could take root in the United States.  
+  
+## 🐦 Tweet  
+<blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">👑⬇️🗣️📺 No Kings Protests Defy GOP Expectations &amp; Jon Gives Trump a Royal Inspection | The Daily Show<br><br>🐘 Republicans | 🕊️ Peaceful Demonstrations | 👴 Demographics | 🇺🇸 Trump&#39;s Presidency | 📜 Declaration of Independence<a href="https://twitter.com/jonstewart?ref_src=twsrc%5Etfw">@jonstewart</a><a href="https://twitter.com/TheDailyShow?ref_src=twsrc%5Etfw">@TheDailyShow</a><a href="https://t.co/yYDwF9BPJk">https://t.co/yYDwF9BPJk</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/1980831360618229792?ref_src=twsrc%5Etfw">October 22, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

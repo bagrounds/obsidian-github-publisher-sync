@@ -3,7 +3,7 @@ share: true
 aliases:
   - 🗣️📢🚫 Tamara Keith and Amy Walter on millions protesting against Trump’s agenda
 title: 🗣️📢🚫 Tamara Keith and Amy Walter on millions protesting against Trump’s agenda
-URL: https://bagrounds.org/videos/tamara-keith-and-amy-walter-on-millions-protesting-against-trump-s-agenda
+URL: https://bagrounds.org/videos/tamara-keith-and-amy-walter-on-millions-protesting-against-trumps-agenda
 Author:
 Platform:
 Channel: PBS NewsHour

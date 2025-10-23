@@ -4,10 +4,10 @@ aliases:
   - 🗣️🤫🐘 Mike Levin Reveals What Republicans Told Him Behind Closed Doors About Big Beautiful Bill
 title: 🗣️🤫🐘 Mike Levin Reveals What Republicans Told Him Behind Closed Doors About Big Beautiful Bill
 URL: https://bagrounds.org/videos/mike-levin-reveals-what-republicans-told-him-behind-closed-doors-about-big-beautiful-bill
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: Forbes Breaking News
-tags: 
+tags:
 youtube: https://youtu.be/2I46qw_A6vs
 ---
 [Home](../index.md) > [Videos](./index.md)  
@@ -44,7 +44,7 @@ youtube: https://youtu.be/2I46qw_A6vs
     * [💰📉➡️📈🗳️ The Deficit Myth: Modern Monetary Theory and the Birth of the People's Economy](../books/the-deficit-myth.md) by Stephanie Kelton  
     * [🏷️🏚️💔🏰 The Price of Inequality: How Today's Divided Society Endangers Our Future](../books/the-price-of-inequality-how-todays-divided-society-endangers-our-future.md) by Joseph E. Stiglitz  
 * 🏥 **On Healthcare Policy and the Affordable Care Act:**  
-    * *The Healing of America: A Global Quest for Better, Cheaper, and Fairer Health Care* by T.R. Reid  
+    * [⚕️💰🇺🇸 The Healing of America: A Global Quest for Better, Cheaper, and Fairer Health Care](../books/the-healing-of-america-a-global-quest-for-better-cheaper-and-fairer-health-care.md) by T.R. Reid  
     * *An American Sickness: How Healthcare Lost Its Way and How We Can Heal It* by Elisabeth Rosenthal  
 * 🍃 **On Environmental Policy and Clean Energy:**  
     * *Drawdown: The Most Comprehensive Plan Ever Proposed to Reverse Global Warming* edited by Paul Hawken  

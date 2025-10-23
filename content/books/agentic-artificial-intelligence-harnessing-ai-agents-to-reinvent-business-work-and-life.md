@@ -39,7 +39,7 @@ affiliate link: https://amzn.to/45e9rCD
 ### ⚖️ Contrasting Perspectives  
   
 * 🤔 **The Alignment Problem: Machine Learning and Human Values** by Brian Christian: 🤝 This book explores the challenges of ensuring that AI systems act in accordance with human values, offering a critical counterpoint to the optimistic view of autonomous agents.  
-* 💥 **Weapons of Math Destruction: How Big Data Increases Inequality and Threatens Democracy** by Cathy O'Neil: 📢 A powerful critique of the societal risks posed by algorithmic decision-making, this book encourages a more cautious approach to the deployment of AI.  
+* **[📊📉🏛️ Weapons of Math Destruction: How Big Data Increases Inequality and Threatens Democracy](./weapons-of-math-destruction-how-big-data-increases-inequality-and-threatens-democracy.md)** by Cathy O'Neil: 📢 A powerful critique of the societal risks posed by algorithmic decision-making, this book encourages a more cautious approach to the deployment of AI.  
 * **[🤖⚠️📈 Superintelligence: Paths, Dangers, Strategies](./superintelligence-paths-dangers-strategies.md)** by Nick Bostrom: ⌚ While *Agentic Artificial Intelligence* focuses on the near-term practical applications of AI, this book delves into the long-term existential risks and ethical considerations of creating superintelligent agents.  
   
 ### ✨ Creative Connections  

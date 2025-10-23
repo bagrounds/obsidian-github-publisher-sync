@@ -58,7 +58,7 @@ affiliate link: https://amzn.to/4oMyd5Q
   
 * 🤥 The Myth of Artificial Intelligence: Why Computers Can't Think the Way We Do by Erik J. Larson  
     * 🚫 Larson's book contrasts with Russell's by arguing against the imminent arrival of human-level or superintelligent AI, challenging the underlying assumptions about what constitutes "intelligence" and whether machines can truly replicate human cognitive abilities.  
-* ⚖️ Weapons of Math Destruction: How Big Data Increases Inequality and Threatens Democracy by Cathy O'Neil  
+* [📊📉🏛️ Weapons of Math Destruction: How Big Data Increases Inequality and Threatens Democracy](./weapons-of-math-destruction-how-big-data-increases-inequality-and-threatens-democracy.md) by Cathy O'Neil  
     * ⚠️ While Human Compatible focuses on future existential risks, 📰 O'Neil's book highlights the immediate, real-world harms caused by algorithms and big data in areas like employment, credit, and justice, demonstrating how current AI technologies can perpetuate and exacerbate societal inequalities.  
 * 🏘️ Automating Inequality: How High-Tech Tools Profile, Police, and Punish the Poor by Virginia Eubanks  
     * 😔 Similar to Weapons of Math Destruction, this book offers a critical view of AI's present-day social impact, focusing on how data-mining and algorithmic systems affect vulnerable populations, providing a grounded contrast to the abstract discussions of superintelligence.  

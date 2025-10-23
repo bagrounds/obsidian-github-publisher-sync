@@ -45,7 +45,7 @@ In conclusion, 🏁 *Human + Machine* offers a practical and optimistic roadmap 
 ### ⚠️ Contrasting Perspectives: Cautionary Tales and Critical Eyes  
   
 * 🌐 **The Big Nine: How the Tech Titans and Their Thinking Machines Could Warp Humanity** by Amy Webb: This book raises concerns 😟 about the concentration of AI development in the hands of a few powerful tech companies and the potential for their biases and agendas to shape the future of humanity.  
-* ⚖️ **Weapons of Math Destruction: How Big Data Increases Inequality and Threatens Democracy** by Cathy O'Neil: This work exposes the dark side 🌑 of algorithms, showing how they can perpetuate and even amplify existing biases, leading to unfair outcomes in areas like hiring, lending, and criminal justice 🏛️.  
+* **[📊📉🏛️ Weapons of Math Destruction: How Big Data Increases Inequality and Threatens Democracy](./weapons-of-math-destruction-how-big-data-increases-inequality-and-threatens-democracy.md)** by Cathy O'Neil: This work exposes the dark side 🌑 of algorithms, showing how they can perpetuate and even amplify existing biases, leading to unfair outcomes in areas like hiring, lending, and criminal justice 🏛️.  
 * 🤔 **Mindless: The Human Condition in the Age of Artificial Intelligence** by Robert Skidelsky: This book takes a philosophical and historical look 🧐 at the impact of machines on work and life, questioning the narrative of inevitable progress and exploring the potential for AI to devalue human skills and judgment.  
   
 ### 🎭 Creatively Related: Fictional Explorations of AI and Humanity  

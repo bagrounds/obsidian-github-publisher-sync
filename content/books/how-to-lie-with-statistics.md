@@ -52,7 +52,7 @@ CTA: 📊 Question presented figures.
 ### 💡 Creative Connections: Expanding Your Intellectual Toolkit  
   
 * **[🤔🐇🐢 Thinking, Fast and Slow](./thinking-fast-and-slow.md) by Daniel Kahneman:** 🧠 A groundbreaking exploration of the two systems that drive our thinking, revealing the cognitive biases that can lead to errors in judgment. 💥  
-* 📖 **"Weapons of Math Destruction: How Big Data Increases Inequality and Threatens Democracy" by Cathy O'Neil:** 🤖 A critical look at how algorithms and big data can be used in ways that are opaque, unregulated, and damaging to society. 💔  
+* **[📊📉🏛️ Weapons of Math Destruction: How Big Data Increases Inequality and Threatens Democracy](./weapons-of-math-destruction-how-big-data-increases-inequality-and-threatens-democracy.md) by Cathy O'Neil:** 🤖 A critical look at how algorithms and big data can be used in ways that are opaque, unregulated, and damaging to society. 💔  
 * 📖 **"How to Lie with Maps" by Mark Monmonier:** 🗺️ A fascinating look at how maps, like statistics, can be manipulated to present a distorted view of the world. 🌍  
 * 📖 **"The Ethical Use of Data in Education" by Ellen B. Mandinach and Edith S. Gummer:** 🍎 This book explores the ethical dilemmas and responsibilities associated with the collection and use of data in educational settings. 🏫  
 * 📖 **"Data Ethics" by Gry Hasselbalch and Pernille Tranberg:** 🛡️ Provides a framework for the ethical implementation of data in information management systems. ⚙️  

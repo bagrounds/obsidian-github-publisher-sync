@@ -34,7 +34,7 @@ The provided article from *PNAS Nexus* gives a forward-looking perspective on th
   
 * **[🤖🏗️ AI Engineering: Building Applications with Foundation Models](../books/ai-engineering-building-applications-with-foundation-models.md)** by Chip Huyen: A book on the systems side of AI engineering, explaining how to develop and operate AI applications.  
 * 🛠️ **The LLM Engineering Handbook** by Paul Iusztin and Maxime Labonne: A guide to understanding the entire Large Language Model (LLM) stack, from foundational models to vector databases.  
-* ⚖️ **Weapons of Math Destruction** by Cathy O'Neil: A contrasting perspective that explores how big data and algorithms can increase inequality and threaten democracy.  
+* **[📊📉🏛️ Weapons of Math Destruction: How Big Data Increases Inequality and Threatens Democracy](../books/weapons-of-math-destruction-how-big-data-increases-inequality-and-threatens-democracy.md)** by Cathy O'Neil: A contrasting perspective that explores how big data and algorithms can increase inequality and threaten democracy.  
 * 🧐 **The Alignment Problem** by Brian Christian: A book on the complex challenge of aligning machine learning models with human values.  
 * 🚗 **Autonomous Vehicle Safety Solutions** by Aparna Kumari: A detailed look at the safety assurance complexities in the design and operation of autonomous driving systems.  
 * 🧪 **AI and Robotic Technology in Materials and Chemistry Research** by Xi Zhu: A creatively related book that focuses on the practical application of AI and robotics in materials science and chemistry research.  

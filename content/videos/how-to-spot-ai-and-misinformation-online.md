@@ -60,7 +60,7 @@ A: 📡 AI is a cheap and fast tool for campaigns to create political content th
 ### **Similar**  
   
 * [📱🗳️📉🩺 The Hype Machine: How Social Media Disrupts Our Elections, Our Economy, and Our Health - and How We Must Adapt](../books/the-hype-machine-how-social-media-disrupts-our-elections-our-economy-and-our-health-and-how-we-must-adapt.md) by Sinan Aral explores how social media algorithms influence our politics and public health, linking directly to the platform dynamics and emotional sharing discussed in the video.  
-* ✖️ Weapons of Math Destruction by Cathy O'Neil discusses the hidden ways that algorithms reinforce inequality and undermine democracy, similar to the video's focus on AI's negative societal impact.  
+* [📊📉🏛️ Weapons of Math Destruction: How Big Data Increases Inequality and Threatens Democracy](../books/weapons-of-math-destruction-how-big-data-increases-inequality-and-threatens-democracy.md) by Cathy O'Neil discusses the hidden ways that algorithms reinforce inequality and undermine democracy, similar to the video's focus on AI's negative societal impact.  
   
 ### **Contrasting**  
   

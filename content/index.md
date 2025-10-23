@@ -10,7 +10,8 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 📑 Notes, 💭 thoughts, and 🔗 Links.  
 ❔ What do 🫵 _you_ 🤔 think?  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (341)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (342)  
+- [2025-10-22](./reflections/2025-10-22.md)  
 - [2025-10-21 | 🐈 Decode | 🇺🇸 Divide | 🏎️ Drive | 🚫👑 Dethrone 📚📰📺](./reflections/2025-10-21.md)  
 - [2025-10-20 | 🐆 Patterns | 🐾 Cats | 🔋 Mitochondria 📄📚📺](./reflections/2025-10-20.md)  
 - [2025-10-19 | 🏫💸 The Paradox of School Choice 📰📚](./reflections/2025-10-19.md)  
@@ -20,33 +21,32 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [2025-10-15 | 🖼️ SIGGRAPH | 🦜 ACL | 😇 Good | ✊🏿 Antiracist 📺📚](./reflections/2025-10-15.md)  
 - [2025-10-14 | 🦐 Minimal | 👀 Indistractible | 🪝 Hooked 📚](./reflections/2025-10-14.md)  
 - [2025-10-13 | ♟️ Strategy | ✝️ Religion | 👥 Community 📚📺](./reflections/2025-10-13.md)  
-- [2025-10-12 | 🤏 Minimal | 💔 Break Up 📚](./reflections/2025-10-12.md)  
   
   
-## [📚 Books](./books/index.md) (697)  
-- [🇺🇸⚔️ Divided Politics, Divided Nation: Hyperconflict in the Trump Era](./books/divided-politics-divided-nation-hyperconflict-in-the-trump-era.md)  
-- [🐈‍⬛❓ Decoding Your Cat: The Ultimate Experts Explain Common Cat Behaviors and Reveal How to Prevent or Change Unwanted Ones](./books/decoding-your-cat-the-ultimate-experts-explain-common-cat-behaviors-and-reveal-how-to-prevent-or-change-unwanted-ones.md)  
-- [🐱👍 Think Like a Cat: How to Raise a Well-Adjusted Cat - Not a Sour Puss](./books/think-like-a-cat-how-to-raise-a-well-adjusted-cat-not-a-sour-puss.md)  
-- [🐱👑 Total Cat Mojo: The Ultimate Guide to Life with Your Cat](./books/total-cat-mojo-the-ultimate-guide-to-life-with-your-cat.md)  
-- [⌨️🤖 Prompt Engineering for LLMs: The Art and Science of Building Large Language Model-Based Applications](./books/prompt-engineering-for-llms-the-art-and-science-of-building-large-language-model-based-applications.md)  
-- [🤖🦜 Large Language Models: Concepts, Techniques and Applications](./books/large-language-models-concepts-techniques-and-applications.md)  
-- [🌍🌿 Gaia's Garden: A Guide to Home-Scale Permaculture](./books/gaias-garden.md)  
-- [🗑️✨ Refactoring: Improving the Design of Existing Code](./books/refactoring-improving-the-design-of-existing-code.md)  
-- [💡📜 Where Good Ideas Come From: The Natural History of Innovation](./books/where-good-ideas-come-from-the-natural-history-of-innovation.md)  
-- [🏘️🧱🏗️ A Pattern Language: Towns, Buildings, Construction](./books/a-pattern-language-towns-buildings-construction.md)  
+## [📚 Books](./books/index.md) (699)  
+- [🗣️💡🦠 Social Physics: How Good Ideas Spread - The Lessons from a New Science](./books/social-physics.md)  
+- [👁️‍🗨️💰⛓️👤 The Age of Surveillance Capitalism: The Fight for a Human Future at the New Frontier of Power](./books/the-age-of-surveillance-capitalism.md)  
+- [📊🤥 How to Lie with Statistics](./books/how-to-lie-with-statistics.md)  
+- [🤖🗣️ Hands-On Large Language Models: Language Understanding and Generation](./books/hands-on-large-language-models-language-understanding-and-generation.md)  
+- [🤖⚙️ Agentic Artificial Intelligence: Harnessing AI Agents to Reinvent Business, Work and Life](./books/agentic-artificial-intelligence-harnessing-ai-agents-to-reinvent-business-work-and-life.md)  
+- [🤖🖱️🤝 AI meets UX: Designing the Next Generation of User-Centered Products: Where innovation meets empathy to shape the future of design](./books/ai-meets-ux-designing-the-next-generation-of-user-centered-products-where-innovation-meets-empathy-to-shape-the-future-of-design.md)  
+- [🌊🤖🤔 The Coming Wave: Technology, Power, and the 21st Century's Greatest Dilemma](./books/the-coming-wave-technology-power-and-the-21st-centurys-greatest-dilemma.md)  
+- [🤖📈 AI for Marketing and Product Innovation: Powerful New Tools for Predicting Trends, Connecting with Customers, and Closing Sales](./books/ai-for-marketing-and-product-innovation-powerful-new-tools-for-predicting-trends-connecting-with-customers-and-closing-sales.md)  
+- [🤖💻 AI-Powered Developer: Build great software with ChatGPT and Copilot](./books/ai-powered-developer-build-great-software-with-chatgpt-and-copilot.md)  
+- [🧬👥💾 Life 3.0: Being Human in the Age of Artificial Intelligence](./books/life-3-0.md)  
   
   
-## [📺 Videos](./videos/index.md) (372)  
-- [🏛️🗣️📅 Politics Chat, October 21, 2025](./videos/politics-chat-october-21-2025.md)  
-- [🚫👑⚡✊ Sen. Bernie Sanders - Harnessing Energy From «No Kings» Rally to «Fight Oligarchy» | The Daily Show](./videos/sen-bernie-sanders-harnessing-energy-from-no-kings-rally-to-fight-oligarchy-the-daily-show.md)  
-- [👑⬇️🗣️📺 No Kings Protests Defy GOP Expectations & Jon Gives Trump a Royal Inspection | The Daily Show](./videos/no-kings-protests-defy-gop-expectations-jon-gives-trump-a-royal-inspection-the-daily-show.md)  
-- [🗣️📢🚫 Tamara Keith and Amy Walter on millions protesting against Trump’s agenda](./videos/tamara-keith-and-amy-walter-on-millions-protesting-against-trumps-agenda.md)  
-- [🖼️🤔🛠️🤖 Context Engineering for Agents](./videos/context-engineering-for-agents.md)  
-- [⚡🔋💪 The Mitochondria Protocol: How to Actually Fix Your Energy](./videos/the-mitochondria-protocol-how-to-actually-fix-your-energy.md)  
-- [🏫💸📊🇺🇸 How students are faring in Arizona's voucher program that could be adopted nationwide](./videos/how-students-are-faring-in-arizonas-voucher-program-that-could-be-adopted-nationwide.md)  
-- [🏛️🇺🇸⚖️💔 Former Justice Anthony Kennedy on political division and the state of the Supreme Court](./videos/former-justice-anthony-kennedy-on-political-division-and-the-state-of-the-supreme-court.md)  
-- [🧠📉⚠️ Heather Cox Richardson: Trump Is Mentally Crumbling—But Still Dangerous | The Bulwark Podcast](./videos/heather-cox-richardson-trump-is-mentally-crumbling-but-still-dangerous-the-bulwark-podcast.md)  
-- [🧑‍🏫🌪️🇺🇸 How the Trump administration is dramatically reshaping education in America](./videos/how-the-trump-administration-is-dramatically-reshaping-education-in-america.md)  
+## [📺 Videos](./videos/index.md) (379)  
+- [🇩🇪⚖️🇺🇸 Blueprint Why Germany's Legacy of Accountability Should Be A Blueprint for America's Moral Reckoning](./videos/why-germanys-legacy-of-accountability-should-be-a-blueprint-for-americas-moral-reckoning.md)  
+- [🚧⏳ The Unfinished Revolution with Atlantic EIC Jeffrey Goldberg](./videos/the-unfinished-revolution-with-atlantic-eic-jeffrey-goldberg.md)  
+- [🤖🏢👁️ New book ‘Empire of AI’ investigates OpenAI, the company behind ChatGPT](./videos/new-book-empire-of-ai-investigates-openai-the-company-behind-chatgpt.md)  
+- [🤖📰🧐 [ACL 2025] Large Language Model Agents for Content Analysis](./videos/acl-2025-large-language-model-agents-for-content-analysis.md)  
+- [🤖👀❌📰 How to spot AI and misinformation online](./videos/how-to-spot-ai-and-misinformation-online.md)  
+- [🤖🗣️⚠️😵‍💫 AI content supercharges confusion and spreads misleading information, critics warn](./videos/ai-content-supercharges-confusion-and-spreads-misleading-information-critics-warn.md)  
+- [📈🗣️💥😵‍💫 The rise of viral debate videos and their impact on our ability to disagree](./videos/the-rise-of-viral-debate-videos-and-their-impact-on-our-ability-to-disagree.md)  
+- [👹📜🏛️ Brooks and Capehart on House Republicans passing Trump's legislative agenda](./videos/brooks-and-capehart-on-house-republicans-passing-trumps-legislative-agenda.md)  
+- [🤔➡️💰 Why Republicans once staunchly opposed to Trump's bill changed their minds](./videos/why-republicans-once-staunchly-opposed-to-trumps-bill-changed-their-minds.md)  
+- [😵‍💫🇺🇸🐘🚫 Strange cognitive dissonance among the MAGA who are convinced to vote against their own interests](./videos/strange-cognitive-dissonance-among-the-maga-who-are-convinced-to-vote-against-their-own-interests.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (82)  
@@ -58,11 +58,11 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
   
   
 ## [📄  Articles](./articles/index.md) (63)  
+- [⚙️🤖📈🤝 Engineering and AI: Advancing the synergy](./articles/engineering-and-ai-advancing-the-synergy.md)  
 - [🧑‍🏫🌍🛠️📈 Agent Skills: Equipping agents for the real world with Agent Skills](./articles/equipping-agents-for-the-real-world-with-agent-skills.md)  
 - [🤖😴📢🗳️ Sleeper Social Bots: A New Generation of AI Disinformation Bots are Already a Political Threat](./articles/sleeper-social-bots-a-new-generation-of-ai-disinformation-bots-are-already-a-political-threat.md)  
 - [🤖⚙️🔄🗣️ Agentic Context Engineering: Evolving Contexts for Self Improving Language Models](./articles/agentic-context-engineering-evolving-contexts-for-self-improving-language-models.md)  
 - [💰⚙️📈🔍 Defining and Characterizing Reward Hacking](./articles/defining-and-characterizing-reward-hacking.md)  
-- [🧠💪📈 BDNF Response to High Intensity Exercise](./articles/bdnf-response-to-high-intensity-exercise.md)  
   
   
 ## [🤖💬 Bot Chats](./bot-chats/index.md) (45)  

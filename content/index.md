@@ -23,7 +23,8 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [2025-10-13 | ♟️ Strategy | ✝️ Religion | 👥 Community 📚📺](./reflections/2025-10-13.md)  
   
   
-## [📚 Books](./books/index.md) (699)  
+## [📚 Books](./books/index.md) (700)  
+- [💔💻 Burn Book: A Tech Love Story](./books/burn-book-a-tech-love-story.md)  
 - [🗣️💡🦠 Social Physics: How Good Ideas Spread - The Lessons from a New Science](./books/social-physics.md)  
 - [👁️‍🗨️💰⛓️👤 The Age of Surveillance Capitalism: The Fight for a Human Future at the New Frontier of Power](./books/the-age-of-surveillance-capitalism.md)  
 - [📊🤥 How to Lie with Statistics](./books/how-to-lie-with-statistics.md)  
@@ -33,10 +34,11 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [🌊🤖🤔 The Coming Wave: Technology, Power, and the 21st Century's Greatest Dilemma](./books/the-coming-wave-technology-power-and-the-21st-centurys-greatest-dilemma.md)  
 - [🤖📈 AI for Marketing and Product Innovation: Powerful New Tools for Predicting Trends, Connecting with Customers, and Closing Sales](./books/ai-for-marketing-and-product-innovation-powerful-new-tools-for-predicting-trends-connecting-with-customers-and-closing-sales.md)  
 - [🤖💻 AI-Powered Developer: Build great software with ChatGPT and Copilot](./books/ai-powered-developer-build-great-software-with-chatgpt-and-copilot.md)  
-- [🧬👥💾 Life 3.0: Being Human in the Age of Artificial Intelligence](./books/life-3-0.md)  
   
   
-## [📺 Videos](./videos/index.md) (379)  
+## [📺 Videos](./videos/index.md) (381)  
+- [👩‍💻👑🦆 Kara Swisher: Tech, Power, and Why You Should Get the F*cking Duck](./videos/kara-swisher-tech-power-and-why-you-should-get-the-fcking-duck.md)  
+- [💰🇺🇸❓🗣️ Who Owns America? Bernie Sanders Says the Quiet Part Out Loud](./videos/who-owns-america-bernie-sanders-says-the-quiet-part-out-loud.md)  
 - [🇩🇪⚖️🇺🇸 Blueprint Why Germany's Legacy of Accountability Should Be A Blueprint for America's Moral Reckoning](./videos/why-germanys-legacy-of-accountability-should-be-a-blueprint-for-americas-moral-reckoning.md)  
 - [🚧⏳ The Unfinished Revolution with Atlantic EIC Jeffrey Goldberg](./videos/the-unfinished-revolution-with-atlantic-eic-jeffrey-goldberg.md)  
 - [🤖🏢👁️ New book ‘Empire of AI’ investigates OpenAI, the company behind ChatGPT](./videos/new-book-empire-of-ai-investigates-openai-the-company-behind-chatgpt.md)  
@@ -45,8 +47,6 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [🤖🗣️⚠️😵‍💫 AI content supercharges confusion and spreads misleading information, critics warn](./videos/ai-content-supercharges-confusion-and-spreads-misleading-information-critics-warn.md)  
 - [📈🗣️💥😵‍💫 The rise of viral debate videos and their impact on our ability to disagree](./videos/the-rise-of-viral-debate-videos-and-their-impact-on-our-ability-to-disagree.md)  
 - [👹📜🏛️ Brooks and Capehart on House Republicans passing Trump's legislative agenda](./videos/brooks-and-capehart-on-house-republicans-passing-trumps-legislative-agenda.md)  
-- [🤔➡️💰 Why Republicans once staunchly opposed to Trump's bill changed their minds](./videos/why-republicans-once-staunchly-opposed-to-trumps-bill-changed-their-minds.md)  
-- [😵‍💫🇺🇸🐘🚫 Strange cognitive dissonance among the MAGA who are convinced to vote against their own interests](./videos/strange-cognitive-dissonance-among-the-maga-who-are-convinced-to-vote-against-their-own-interests.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (82)  

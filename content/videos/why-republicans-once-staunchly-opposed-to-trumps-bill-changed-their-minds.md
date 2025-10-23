@@ -4,10 +4,10 @@ aliases:
   - 🤔➡️💰 Why Republicans once staunchly opposed to Trump's bill changed their minds
 title: 🤔➡️💰 Why Republicans once staunchly opposed to Trump's bill changed their minds
 URL: https://bagrounds.org/videos/why-republicans-once-staunchly-opposed-to-trumps-bill-changed-their-minds
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: PBS NewsHour
-tags: 
+tags:
 youtube: https://youtu.be/Ijbo9yKRGI0
 ---
 [Home](../index.md) > [Videos](./index.md)  
@@ -34,7 +34,7 @@ The key reasons for this shift include:
     * *Basic Economics: A Common Sense Guide to the Economy* by Thomas Sowell  
     * [💰📉➡️📈🗳️ The Deficit Myth: Modern Monetary Theory and the Birth of the People's Economy](../books/the-deficit-myth.md) by Stephanie Kelton  
 * **Healthcare Policy and Medicaid:**  
-    * *The Healing of America: A Global Quest for Better, Cheaper, and Fairer Health Care* by T.R. Reid  
+    * [⚕️💰🇺🇸 The Healing of America: A Global Quest for Better, Cheaper, and Fairer Health Care](../books/the-healing-of-america-a-global-quest-for-better-cheaper-and-fairer-health-care.md) by T.R. Reid  
     * *An American Sickness: How Healthcare Became Big Business and How You Can Take It Back* by Elisabeth Rosenthal  
 * **American Politics and Voter Behavior:**  
     * *Strangers in Their Own Land: Anger and Mourning on the American Right* by Arlie Russell Hochschild  

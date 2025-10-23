@@ -4,8 +4,8 @@ aliases:
   - "👁️‍🗨️💰⛓️👤 The Age of Surveillance Capitalism: The Fight for a Human Future at the New Frontier of Power"
 title: "👁️‍🗨️💰⛓️👤 The Age of Surveillance Capitalism: The Fight for a Human Future at the New Frontier of Power"
 URL: https://bagrounds.org/books/the-age-of-surveillance-capitalism
-Author: 
-tags: 
+Author:
+tags:
 affiliate link: https://amzn.to/4kwzGKY
 ---
 [Home](../index.md) > [Books](./index.md)  
@@ -97,7 +97,7 @@ While the book is more descriptive and analytical than prescriptive, it offers s
 * **Best Book That Is Diametrically Opposed:** *In Defense of Big Data* by Kenneth Cukier, Viktor Mayer-Schönberger, and Francis de Véricourt. 📊 Argues for the benefits and potential of big data analysis.  
 * **Best Fiction Book That Incorporates Related Ideas:** *The Circle* by Dave Eggers. ⭕ A dystopian novel exploring the dangers of transparency and surveillance.  
 * **Best Book That Is More General:** *[Capital in the Twenty First Century](./capital-in-the-twenty-first-century.md)* by Thomas Piketty. 💰 Explores inequality and the dynamics of capitalism over the long term.  
-* **Best Book That Is More Specific:** *Weapons of Math Destruction* by Cathy O'Neil. 💣 Focuses on the biases and dangers of algorithms in various sectors.  
+* **Best Book That Is More Specific:** [📊📉🏛️ Weapons of Math Destruction: How Big Data Increases Inequality and Threatens Democracy](./weapons-of-math-destruction-how-big-data-increases-inequality-and-threatens-democracy.md) by Cathy O'Neil. 💣 Focuses on the biases and dangers of algorithms in various sectors.  
 * **Best Book That Is More Rigorous:** Academic papers on data privacy and algorithmic bias in journals like *Information, Communication & Society*. 🧑‍🏫  
 * **Best Book That Is More Accessible:** *Click Here to Kill Everybody* by Bruce Schneier. 🖱️ Discusses the security vulnerabilities of the Internet of Things in a more accessible style.  
   

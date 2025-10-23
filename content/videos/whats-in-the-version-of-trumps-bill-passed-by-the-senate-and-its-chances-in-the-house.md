@@ -3,11 +3,11 @@ share: true
 aliases:
   - 👹📜🏛️🏠 What's in the version of Trump's bill passed by the Senate and its chances in the House
 title: 👹📜🏛️🏠 What's in the version of Trump's bill passed by the Senate and its chances in the House
-URL: https://bagrounds.org/videos/
-Author: 
-Platform: 
+URL: https://bagrounds.org/videos/whats-in-the-version-of-trumps-bill-passed-by-the-senate-and-its-chances-in-the-house
+Author:
+Platform:
 Channel: PBS NewsHour
-tags: 
+tags:
 youtube: https://youtu.be/kcn8-UMub10
 ---
 [Home](../index.md) > [Videos](./index.md)  
@@ -23,14 +23,14 @@ youtube: https://youtu.be/kcn8-UMub10
   
 ## 📚 Book Recommendations  
 ### 💸 On US Budget and Fiscal Policy  
-* **[💰📉➡️📈🗳️ The Deficit Myth: Modern Monetary Theory and the Birth of the People's Economy](../books/the-deficit-myth.md)** by Stephanie Kelton: Explores Modern Monetary Theory (MMT) and challenges conventional views on government debt and deficits, offering a different perspective on how the government can finance public spending.  
+* **[💰📉➡️📈🗳️ The Deficit Myth: Modern Monetary Theory and the Birth of the People's Economy](../books/the-deficit-myth.md)** by Stephanie Kelton: Explores [🏦♾️📈💸 Modern Monetary Theory](../topics/modern-monetary-theory.md) (MMT) and challenges conventional views on government debt and deficits, offering a different perspective on how the government can finance public spending.  
 * ***This Time Is Different: Eight Centuries of Financial Folly*** by Carmen M. Reinhart and Kenneth Rogoff: Provides a historical context for understanding financial crises, 💸 debt, and fiscal policy across various countries and centuries, offering valuable insights into current national debt discussions.  
 * ***A Fiscal Cliff*** (edited by John Merrifield and Barry Poulson): This volume assesses the United States' fiscal constraints and offers new perspectives and potential solutions to the nation's 💸 debt crisis from various scholars and policymakers.  
 * ***A People's Guide to the Federal Budget*** by Mattea Kramer et al. / National Priorities Project: Aims to demystify the federal budget process for the average citizen, explaining where money comes from and goes, and the impact of budget choices on everyday lives.  
   
 ### 🏥 On US Healthcare Policy  
 * ***An American Sickness: How Healthcare Became Big Business and How You Can Take It Back*** by Elisabeth Rosenthal: A journalistic investigation into the dysfunctional US 🏥 healthcare system, exposing its problems and offering practical solutions for patients and advocating for reform.  
-* ***The Healing of America: A Global Quest for Better, Cheaper, and Fairer Health Care*** by T.R. Reid: This book compares the US 🏥 healthcare system to successful universal healthcare systems in other industrialized democracies, providing context and potential models for reform.  
+* **[⚕️💰🇺🇸 The Healing of America: A Global Quest for Better, Cheaper, and Fairer Health Care](../books/the-healing-of-america-a-global-quest-for-better-cheaper-and-fairer-health-care.md)** by T.R. Reid: This book compares the US 🏥 healthcare system to successful universal healthcare systems in other industrialized democracies, providing context and potential models for reform.  
 * ***America's Bitter Pill: Money, Politics, Backroom Deals, and the Fight to Fix Our Broken Healthcare System*** by Steven Brill: An in-depth look at the Affordable Care Act (Obamacare), its implementation, and its successes and failures in addressing abuses in the 🏥 healthcare industry.  
 * ***Introduction to U.S. Health Policy: The Organization, Financing, and Delivery of Health Care in America*** by Donald A. Barr: A comprehensive overview of the history, structure, successes, and problems of the US 🏥 healthcare system, covering topics like insurance programs (Medicare and Medicaid) and key policy issues.  
   

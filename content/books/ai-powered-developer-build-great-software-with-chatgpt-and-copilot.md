@@ -49,7 +49,7 @@ CTA: 🤖 Automate development.
 ### ⚖️ Contrasting Books  
   
 * 🤔 **The Architect's Paradox: Uncertainty and the Philosophy of Software Architecture** by Barry O'Reilly: While not directly about AI, this book champions the importance of human intuition, critical thinking, and navigating uncertainty in software architecture, offering a counterpoint to over-reliance on automated solutions.  
-* 🚨 **Weapons of Math Destruction: How Big Data Increases Inequality and Threatens Democracy** by Cathy O'Neil: This book provides a crucial critical perspective on the societal impact of algorithms and AI, encouraging developers to consider the ethical implications of the tools they build and use.  
+* **[📊📉🏛️ Weapons of Math Destruction: How Big Data Increases Inequality and Threatens Democracy](./weapons-of-math-destruction-how-big-data-increases-inequality-and-threatens-democracy.md)** by Cathy O'Neil: This book provides a crucial critical perspective on the societal impact of algorithms and AI, encouraging developers to consider the ethical implications of the tools they build and use.  
 * ⚠️ **Artificial Unintelligence: How Computers Misunderstand the World** by Meredith Broussard: Broussard's work highlights the limitations and biases of AI, serving as a reminder that human oversight and critical evaluation are essential in software development.  
 * 🧠 **The Programmer's Brain: What every programmer needs to know about cognition** by Felienne Hermans: This book delves into the cognitive processes of programming, emphasizing the human element of coding and problem-solving, which can be overlooked in the age of AI.  
   

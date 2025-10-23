@@ -38,7 +38,7 @@ affiliate link: https://amzn.to/47hWcmX
   
 ### ⚖️ Contrasting Perspectives: 🔎 The Critical Lens on AI  
   
-* 💣 **Weapons of Math Destruction: 📉 How Big Data Increases Inequality and 🚨 Threatens Democracy** by Cathy O'Neil: 🌑 This book explores the dark side of big data and algorithms, arguing that they can perpetuate and even worsen societal inequalities.  
+* **[📊📉🏛️ Weapons of Math Destruction: How Big Data Increases Inequality and Threatens Democracy](./weapons-of-math-destruction-how-big-data-increases-inequality-and-threatens-democracy.md)** by Cathy O'Neil: 🌑 This book explores the dark side of big data and algorithms, arguing that they can perpetuate and even worsen societal inequalities.  
 * **[👁️‍🗨️💰⛓️👤 The Age of Surveillance Capitalism: The Fight for a Human Future at the New Frontier of Power](./the-age-of-surveillance-capitalism.md)** by Shoshana Zuboff: 🏛️ A seminal work that examines how technology companies are using our personal data to predict and control our behavior for profit.  
 * 🌍 **Atlas of AI: ✊ Power, 🏛️ Politics, and the 💸 Planetary Costs of Artificial Intelligence** by Kate Crawford: 🌿 This book reveals the hidden costs of AI, from the natural resources it consumes to the human labor it exploits, and questions the narratives of AI as a neutral and objective technology.  
 * 😇 **Ethical AI in Marketing: 🤝 Aligning Growth, ⚖️ Responsibility and 🫂 Customer Trust** by Nicole M. Alexander: 🛠️ This practical guide equips marketing professionals to navigate the ethical complexities of AI-driven marketing, focusing on fostering consumer trust.  

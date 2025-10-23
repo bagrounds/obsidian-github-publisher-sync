@@ -142,7 +142,7 @@ affiliate link: https://amzn.to/4h2i3Sm
 * **[🔮🎨🔬 Superforecasting: The Art and Science of Prediction](./superforecasting-the-art-and-science-of-prediction.md)**: Philip Tetlock and Dan Gardner. Investigates the art of human prediction and judgment, a key complement to AI prediction.  
   
 ### ➖ Contrasting & Critically Related Reads  
-* 📕 **Weapons of Math Destruction: How Big Data Increases Inequality and Threatens Democracy**: Cathy O'Neil. Explores the societal risks, biases, and ethical issues of algorithmic decision-making.  
+* **[📊📉🏛️ Weapons of Math Destruction: How Big Data Increases Inequality and Threatens Democracy](./weapons-of-math-destruction-how-big-data-increases-inequality-and-threatens-democracy.md)**: Cathy O'Neil. Explores the societal risks, biases, and ethical issues of algorithmic decision-making.  
 * 📕 **Atlas of AI: Power, Politics, and the Planetary Costs of Artificial Intelligence**: Kate Crawford. Critiques the material and environmental costs, and power structures behind AI.  
 * **[🤖🧑‍ Human Compatible: Artificial Intelligence and the Problem of Control](./human-compatible-artificial-intelligence-and-the-problem-of-control.md)**: Stuart Russell. Addresses the existential risks and control problem of advanced AI.  
   

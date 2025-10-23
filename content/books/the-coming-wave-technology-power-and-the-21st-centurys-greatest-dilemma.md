@@ -44,7 +44,7 @@ affiliate link: https://amzn.to/46Il4nN
 ### ⚖️ Offering Contrasting Perspectives  
   
 * **[👁️‍🗨️💰⛓️👤 The Age of Surveillance Capitalism: The Fight for a Human Future at the New Frontier of Power](./the-age-of-surveillance-capitalism.md)** by Shoshana Zuboff: While Suleyman focuses on the future potential for overbearing surveillance, Zuboff argues that a powerful form of surveillance is already a dominant feature of the digital economy, raising critical questions about privacy and corporate power.  
-* 📈 **Weapons of Math Destruction: How Big Data Increases Inequality and Threatens Democracy** by Cathy O'Neil: This book provides a critical look at the ways in which algorithms, if not carefully designed, can perpetuate and even amplify existing societal inequalities, offering a more present-day-focused critique of technology's impact.  
+* **[📊📉🏛️ Weapons of Math Destruction: How Big Data Increases Inequality and Threatens Democracy](./weapons-of-math-destruction-how-big-data-increases-inequality-and-threatens-democracy.md)** by Cathy O'Neil: This book provides a critical look at the ways in which algorithms, if not carefully designed, can perpetuate and even amplify existing societal inequalities, offering a more present-day-focused critique of technology's impact.  
 * 🤝 **The Alignment Problem: Machine Learning and Human Values** by Brian Christian: This book explores the technical and ethical challenges of ensuring that AI systems understand and act in accordance with human values, providing a more focused examination of a key aspect of the "containment problem."  
   
 ### ✨ Creatively Related Explorations  

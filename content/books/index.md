@@ -7,7 +7,7 @@ URL: https://bagrounds.org/books
 backlinks: false
 ---
 [Home](../index.md)  
-# 📚 Books (699)  
+# 📚 Books (700)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)  
 - [🧑‍🤝‍🧑📈 10 to 25: The Science of Motivating Young People: A Groundbreaking Approach to Leading the Next Generation - And Making Your Own Life Easier](./10-to-25-the-science-of-motivating-young-people-a-groundbreaking-approach-to-leading-the-next-generation-and-making-your-own-life-easier.md)  
@@ -95,6 +95,7 @@ backlinks: false
 - [🤖🧠🔗 Building AI Agents with LLMs, RAG, and Knowledge Graphs: A practical guide to autonomous and modern AI agents](./building-ai-agents-with-llms-rag-and-knowledge-graphs-a-practical-guide-to-autonomous-and-modern-ai-agents.md)  
 - [🏃🤸 Built to Move: The Ten Essential Habits to Help You Move Freely and Live Fully](./built-to-move-the-ten-essential-habits-to-help-you-move-freely-and-live-fully.md)  
 - [🏛️⚙️ Bureaucracy: What Government Agencies Do And Why They Do It](./bureaucracy-what-government-agencies-do-and-why-they-do-it.md)  
+- [💔💻 Burn Book: A Tech Love Story](./burn-book-a-tech-love-story.md)  
 - [🥵🔥💨 Burnout: The Secret to Unlocking the Stress Cycle](./burnout-the-secret-to-unlocking-the-stress-cycle.md)  
 - [🌐🔗📈🧩 Business Dynamics: Systems Thinking and Modeling for a Complex World](./business-dynamics.md)  
 - [💰📈🌍⏳ Capital in the Twenty-First Century](./capital-in-the-twenty-first-century.md)  

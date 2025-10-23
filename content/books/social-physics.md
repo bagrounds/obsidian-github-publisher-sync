@@ -4,12 +4,15 @@ aliases:
   - "🗣️💡🦠 Social Physics: How Good Ideas Spread - The Lessons from a New Science"
 title: "🗣️💡🦠 Social Physics: How Good Ideas Spread - The Lessons from a New Science"
 URL: https://bagrounds.org/books/social-physics
-Author: 
-tags: 
+Author:
+tags:
 affiliate link: https://amzn.to/4kKKnsZ
+CTA: 🤝 Cultivate collaboration.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🗣️💡🦠 Social Physics: How Good Ideas Spread - The Lessons from a New Science  
+[🛒 Social Physics: How Good Ideas Spread - The Lessons from a New Science. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4kKKnsZ)  
+  
 ## 📚 Book Report: Social Physics  
 This 📝 report summarizes Alex "Sandy" Pentland's *Social Physics: How Good Ideas Spread—The Lessons from a New Science*.  
   
@@ -68,8 +71,8 @@ This 📝 report summarizes Alex "Sandy" Pentland's *Social Physics: How Good Id
   
 ### 🧐 Contrasting Perspectives (Qualitative, Critical, Individual Focus)  
   
-* **Weapons of Math Destruction: How Big Data Increases Inequality and Threatens Democracy** by Cathy O'Neil: A critical look at how algorithms and big data, often deployed with goals similar to those Pentland discusses, can perpetuate bias, increase inequality, and lack transparency. ⚠️ A necessary counterpoint regarding the potential harms of data-driven social engineering.  
-* **[Thinking, Fast and Slow](./thinking-fast-and-slow.md)** by Daniel Kahneman: Focuses on individual cognitive biases and the psychology of decision-making, contrasting with Pentland's network-level focus. 🧠 Explains *why* individuals might act irrationally, complementing the *how* of idea spread in networks.  
+* **[📊📉🏛️ Weapons of Math Destruction: How Big Data Increases Inequality and Threatens Democracy](./weapons-of-math-destruction-how-big-data-increases-inequality-and-threatens-democracy.md)** by Cathy O'Neil: A critical look at how algorithms and big data, often deployed with goals similar to those Pentland discusses, can perpetuate bias, increase inequality, and lack transparency. ⚠️ A necessary counterpoint regarding the potential harms of data-driven social engineering.  
+* **[🤔🐇🐢 Thinking, Fast and Slow](./thinking-fast-and-slow.md)** by Daniel Kahneman: Focuses on individual cognitive biases and the psychology of decision-making, contrasting with Pentland's network-level focus. 🧠 Explains *why* individuals might act irrationally, complementing the *how* of idea spread in networks.  
 * **[📖🏛️📉 Seeing Like a State: How Certain Schemes to Improve the Human Condition Have Failed](./seeing-like-a-state-how-certain-schemes-to-improve-the-human-condition-have-failed.md)** by James C. Scott: Critiques large-scale, top-down planning efforts (often data-driven) that ignore local, practical knowledge ("metis"). 🌳 Offers a cautionary tale about imposing simplified models onto complex social realities, relevant to the ambition of Social Physics.  
 * **The Human Condition** by Hannah Arendt: A deep philosophical work exploring human activity (labor, work, action) and the public sphere. 🕊️ Provides a rich, qualitative counterpoint to the quantitative, data-centric view of social interaction.  
   

@@ -40,7 +40,7 @@ affiliate link: https://amzn.to/455KHfS
   
 ### 🧐 Contrasting Perspectives: The Critical Lens on AI  
   
-* 💣 **"Weapons of Math Destruction: How Big Data Increases Inequality and Threatens Democracy" by Cathy O'Neil:** ⚠️ This serves as a crucial counterpoint, revealing the dark side of algorithmic decision-making and reinforcing the ethical urgency that "AI meets UX" advocates for.  
+* **[📊📉🏛️ Weapons of Math Destruction: How Big Data Increases Inequality and Threatens Democracy](./weapons-of-math-destruction-how-big-data-increases-inequality-and-threatens-democracy.md) by Cathy O'Neil:** ⚠️ This serves as a crucial counterpoint, revealing the dark side of algorithmic decision-making and reinforcing the ethical urgency that "AI meets UX" advocates for.  
 * **[💺🚪💡🤔 The Design of Everyday Things](./the-design-of-everyday-things.md) by Don Norman:** ✨ A foundational text in user-centered design, this book, while not focused on AI, provides the essential principles of intuitive and human-friendly design that must be applied to even the most complex AI systems.  
 * **[🤖⚠️📈 Superintelligence: Paths, Dangers, Strategies](./superintelligence-paths-dangers-strategies.md) by Nick Bostrom:** 🤖 This book takes a philosophical and cautionary look at the long-term risks of advanced AI, offering a stark contrast to the more immediate, practical concerns of product design and encouraging a deeper consideration of the ultimate goals of artificial intelligence.  
   

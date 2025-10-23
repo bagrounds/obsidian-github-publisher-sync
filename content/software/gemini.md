@@ -159,4 +159,4 @@ URL: https://bagrounds.org/software/gemini
     - "Neural Networks and Deep Learning" by Michael Nielsen. ⚡🧠 - An accessible and in-depth exploration of neural networks and deep learning, providing a solid understanding of the underlying principles. 📖  
 - **Accessible:**  
     - "Hello World: Being Human in the Age of Algorithms" by Hannah Fry. 🤖🤝 - An engaging and accessible introduction to the world of algorithms and their impact on our lives. 🌐  
-    - "Weapons of Math Destruction" by Cathy O'Neil. ⚖️🤖 - Explores the potential for bias and discrimination in algorithms and AI, raising important ethical considerations. 🛡️  
+    - [📊📉🏛️ Weapons of Math Destruction: How Big Data Increases Inequality and Threatens Democracy](../books/weapons-of-math-destruction-how-big-data-increases-inequality-and-threatens-democracy.md) by Cathy O'Neil. ⚖️🤖 - Explores the potential for bias and discrimination in algorithms and AI, raising important ethical considerations. 🛡️

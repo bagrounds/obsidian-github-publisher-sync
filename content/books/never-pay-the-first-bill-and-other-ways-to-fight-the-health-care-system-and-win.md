@@ -5,6 +5,7 @@ aliases:
 URL: https://bagrounds.org/books/never-pay-the-first-bill-and-other-ways-to-fight-the-health-care-system-and-win
 share: true
 affiliate link: https://amzn.to/45BkIhZ
+CTA: ✊ Challenge inflated costs.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🙅🏼‍♀️🧾🏥⚔️ Never Pay the First Bill: And Other Ways to Fight the Health Care System and Win  
@@ -47,7 +48,7 @@ These books delve into the complexities and issues within the American healthcar
   
 These books might offer different perspectives on healthcare, focus on broader health and wellness outside the traditional billing system, or explore healthcare systems in other countries.  
   
-* 🌍 **The Healing of America: A Global Quest for Better, Cheaper, and Fairer Health Care by T. R. Reid.** Compares the U.S. healthcare system to successful universal healthcare systems in other industrialized democracies.  
+* **[⚕️💰🇺🇸 The Healing of America: A Global Quest for Better, Cheaper, and Fairer Health Care](./the-healing-of-america-a-global-quest-for-better-cheaper-and-fairer-health-care.md) by T. R. Reid.** Compares the U.S. healthcare system to successful universal healthcare systems in other industrialized democracies.  
 * ✊🏿 **Legacy: A Black Physician Reckons with Racism in American Medicine by Uché Blackstock, MD.** Explores the intersection of racism and healthcare, highlighting systemic inequities that impact patient care and outcomes.  
 * ⚕️ **Random Acts of Medicine: The Hidden Forces That Sway Doctors, Impact Patients, and Shape Our Health by Anupam B. Jena.** Examines unseen factors influencing medical decisions and patient care, offering a different lens than purely financial motivations.  
 * 🎗️ **Dear Cancer: A Collection of Letters from One Woman's Fight by Rita Pamplin.** A personal account of navigating a health crisis, focusing on the emotional and personal fight rather than systemic financial battles.  

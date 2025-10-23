@@ -70,4 +70,7 @@ A: 📡 AI is a cheap and fast tool for campaigns to create political content th
 ### **Creatively Related**  
   
 * [🤔🐇🐢 Thinking, Fast and Slow](../books/thinking-fast-and-slow.md) by Daniel Kahneman details the cognitive biases and systems of thinking that make people susceptible to emotional and non-skeptical content, which AI exploits for engagement.  
-* [👁️‍🗨️💰⛓️👤 The Age of Surveillance Capitalism: The Fight for a Human Future at the New Frontier of Power](../books/the-age-of-surveillance-capitalism.md) by Shoshana Zuboff explains the fundamental economic model of social media—the extraction of user data for profit—which drives the entire ecosystem where misinformation thrives.
+* [👁️‍🗨️💰⛓️👤 The Age of Surveillance Capitalism: The Fight for a Human Future at the New Frontier of Power](../books/the-age-of-surveillance-capitalism.md) by Shoshana Zuboff explains the fundamental economic model of social media—the extraction of user data for profit—which drives the entire ecosystem where misinformation thrives.  
+  
+## 🐦 Tweet  
+<blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">🤖👀❌📰 How to spot AI and misinformation online<br><br>🤖 Bots | 📝 False Content | 🛡️ Defense | 📱 Social Media | 🍎 Content Accuracy | 🗳️ Elections | 📰 Media Literacy<a href="https://twitter.com/NewsHour?ref_src=twsrc%5Etfw">@NewsHour</a><a href="https://t.co/r2DA326v7i">https://t.co/r2DA326v7i</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/1981501505908986003?ref_src=twsrc%5Etfw">October 23, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

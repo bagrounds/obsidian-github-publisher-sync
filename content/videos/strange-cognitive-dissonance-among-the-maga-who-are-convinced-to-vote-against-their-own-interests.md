@@ -4,10 +4,10 @@ aliases:
   - 😵‍💫🇺🇸🐘🚫 Strange cognitive dissonance among the MAGA who are convinced to vote against their own interests
 title: 😵‍💫🇺🇸🐘🚫 Strange cognitive dissonance among the MAGA who are convinced to vote against their own interests
 URL: https://bagrounds.org/videos/strange-cognitive-dissonance-among-the-maga-who-are-convinced-to-vote-against-their-own-interests
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: FRANCE 24 English
-tags: 
+tags:
 youtube: https://youtu.be/2fUs-YDzZPU
 ---
 [Home](../index.md) > [Videos](./index.md)  
@@ -42,7 +42,7 @@ youtube: https://youtu.be/2fUs-YDzZPU
     * [🤔🐇🐢 Thinking, Fast and Slow](../books/thinking-fast-and-slow.md) by Daniel Kahneman  
   
 * **⚕️ Healthcare Policy:**  
-    * *The Healing of America: A Global Quest for Better, Cheaper, and Fairer Health Care* by T.R. Reid  
+    * [⚕️💰🇺🇸 The Healing of America: A Global Quest for Better, Cheaper, and Fairer Health Care](../books/the-healing-of-america-a-global-quest-for-better-cheaper-and-fairer-health-care.md) by T.R. Reid  
     * *An American Sickness: How Healthcare Became Big Business and How You Can Take It Back* by Elisabeth Rosenthal  
   
 ## 🐦 Tweet  

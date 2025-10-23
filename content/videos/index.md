@@ -7,7 +7,7 @@ URL: https://bagrounds.org/videos
 backlinks: false
 ---
 [Home](../index.md)  
-# 📺 Videos (379)  
+# 📺 Videos (381)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
 - [❓💪🔬 12 Questions About Creatine with Stephen Cornish, PhD](./12-questions-about-creatine-w-stephen-cornish-phd.md)  
@@ -176,6 +176,7 @@ backlinks: false
 - [Judea Pearl, 2011 ACM Turing Award Recipient](./judea-pearl-2011-acm-turing-award-recipient.md)  
 - [⚙️❓🤖 Judea Pearl, 2012 ACM A.M. Turing Award Lecture «The Mechanization of Causal Inference»](./judea-pearl-2012-acm-a-m-turing-award-lecture-the-mechanization-of-causal-inference.md)  
 - [Just the Facts About the US Federal Budget: Steve Ballmer Talks Through the Numbers](./just-the-facts-about-the-us-federal-budget-steve-ballmer-talks-through-the-numbers.md)  
+- [👩‍💻👑🦆 Kara Swisher: Tech, Power, and Why You Should Get the F*cking Duck](./kara-swisher-tech-power-and-why-you-should-get-the-fcking-duck.md)  
 - [🗣️💬🧠 Language Acquisition: Crash Course Linguistics  > 12](./language-acquisition-crash-course-linguistics-12.md)  
 - [🎓🎮🏆✨ Last Lecture Series: How to Design a Winnable Game – Graham Weaver](./last-lecture-series-how-to-design-a-winnable-game-graham-weaver.md)  
 - [🥇🧑‍🏫🏃💨 Learn Any Skill Faster By Copying How Olympic Athletes Train](./learn-any-skill-faster-by-copying-how-olympic-athletes-train.md)  
@@ -365,6 +366,7 @@ backlinks: false
 - [💻🌍🚶‍♀️ Where All the Tech Workers Are Going](./where-all-the-tech-workers-are-going.md)  
 - [Whitehouse and Murphy Dress Down Republican Tax «Thievery» in Colloquy on Senate Floor](./whitehouse-and-murphy-dress-down-republican-tax-thievery-in-colloquy-on-senate-floor.md)  
 - [🏛️⚖️🎯💥 Whitehouse Spotlights the Actual Weaponization of the Justice System by Trump's MAGA Cronies](./whitehouse-spotlights-the-actual-weaponization-of-the-justice-system-by-trumps-maga-cronies.md)  
+- [💰🇺🇸❓🗣️ Who Owns America? Bernie Sanders Says the Quiet Part Out Loud](./who-owns-america-bernie-sanders-says-the-quiet-part-out-loud.md)  
 - [Why Bob Woodward worries about Trump's America](./why-bob-woodward-worries-about-trumps-america.md)  
 - [Why Do Babies Spit Up So Much?](./why-do-babies-spit-up-so-much.md)  
 - [💰➡️🪖 Why It Matters That Trump Rerouted Money to Pay the Troops | Explainer](./why-it-matters-that-trump-rerouted-money-to-pay-the-troops-explainer.md)  

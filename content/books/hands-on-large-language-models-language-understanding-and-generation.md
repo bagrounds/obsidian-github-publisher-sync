@@ -56,7 +56,7 @@ affiliate link: https://amzn.to/4f2wnct
   
 #### ⚖️ On the Ethics and Societal Impact of AI  
   
-* 💥 **Weapons of Math Destruction by Cathy O'Neil:** This book explores how big data and algorithms can perpetuate and even amplify inequality.  
+* **[📊📉🏛️ Weapons of Math Destruction: How Big Data Increases Inequality and Threatens Democracy](./weapons-of-math-destruction-how-big-data-increases-inequality-and-threatens-democracy.md) by Cathy O'Neil:** This book explores how big data and algorithms can perpetuate and even amplify inequality.  
 * 🌍 **Atlas of AI by Kate Crawford:** A critical examination of the hidden social, political, and environmental costs of artificial intelligence.  
 * **[👁️‍🗨️💰⛓️👤 The Age of Surveillance Capitalism: The Fight for a Human Future at the New Frontier of Power](./the-age-of-surveillance-capitalism.md) by Shoshana Zuboff:** A groundbreaking analysis of the new form of capitalism that uses human experience as raw material for commercial practices.  
 * ✊ **Algorithms of Oppression by Safiya Umoja Noble:** This book reveals how search engines and other algorithmic platforms can reinforce racism and other forms of discrimination.  

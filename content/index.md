@@ -10,8 +10,9 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 📑 Notes, 💭 thoughts, and 🔗 Links.  
 ❔ What do 🫵 _you_ 🤔 think?  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (343)  
-- [2025-10-23](./reflections/2025-10-23.md)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (344)  
+- [2025-10-24](./reflections/2025-10-24.md)  
+- [2025-10-23 | 🏎️ Drive | 💰 Oligarchy | ⚛️ Social Physics 📚](./reflections/2025-10-23.md)  
 - [2025-10-22 | 👹 Corrupt 💰 Capital 💸 Costs ⚖️ Civic 💥 Conflict 📚📰📺](./reflections/2025-10-22.md)  
 - [2025-10-21 | 🐈 Decode | 🇺🇸 Divide | 🏎️ Drive | 🚫👑 Dethrone 📚📰📺](./reflections/2025-10-21.md)  
 - [2025-10-20 | 🐆 Patterns | 🐾 Cats | 🔋 Mitochondria 📄📚📺](./reflections/2025-10-20.md)  
@@ -20,10 +21,10 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [2025-10-17 | 🤥 Demagoguery | 📜 Law | 🤸🏼‍♀️ Mobility 📺📚](./reflections/2025-10-17.md)  
 - [2025-10-16 | 🤕 Pain | 🐆 Leopard | 🤖 Disinformation 📺📚📄](./reflections/2025-10-16.md)  
 - [2025-10-15 | 🖼️ SIGGRAPH | 🦜 ACL | 😇 Good | ✊🏿 Antiracist 📺📚](./reflections/2025-10-15.md)  
-- [2025-10-14 | 🦐 Minimal | 👀 Indistractible | 🪝 Hooked 📚](./reflections/2025-10-14.md)  
   
   
-## [📚 Books](./books/index.md) (700)  
+## [📚 Books](./books/index.md) (701)  
+- [🇺🇸⚔️💰 Fight Oligarchy](./books/fight-oligarchy.md)  
 - [💔💻 Burn Book: A Tech Love Story](./books/burn-book-a-tech-love-story.md)  
 - [🗣️💡🦠 Social Physics: How Good Ideas Spread - The Lessons from a New Science](./books/social-physics.md)  
 - [👁️‍🗨️💰⛓️👤 The Age of Surveillance Capitalism: The Fight for a Human Future at the New Frontier of Power](./books/the-age-of-surveillance-capitalism.md)  
@@ -33,20 +34,19 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [🤖🖱️🤝 AI meets UX: Designing the Next Generation of User-Centered Products: Where innovation meets empathy to shape the future of design](./books/ai-meets-ux-designing-the-next-generation-of-user-centered-products-where-innovation-meets-empathy-to-shape-the-future-of-design.md)  
 - [🌊🤖🤔 The Coming Wave: Technology, Power, and the 21st Century's Greatest Dilemma](./books/the-coming-wave-technology-power-and-the-21st-centurys-greatest-dilemma.md)  
 - [🤖📈 AI for Marketing and Product Innovation: Powerful New Tools for Predicting Trends, Connecting with Customers, and Closing Sales](./books/ai-for-marketing-and-product-innovation-powerful-new-tools-for-predicting-trends-connecting-with-customers-and-closing-sales.md)  
-- [🤖💻 AI-Powered Developer: Build great software with ChatGPT and Copilot](./books/ai-powered-developer-build-great-software-with-chatgpt-and-copilot.md)  
   
   
-## [📺 Videos](./videos/index.md) (381)  
-- [👩‍💻👑🦆 Kara Swisher: Tech, Power, and Why You Should Get the F*cking Duck](./videos/kara-swisher-tech-power-and-why-you-should-get-the-fcking-duck.md)  
+## [📺 Videos](./videos/index.md) (382)  
+- [🏗️📈🤝🌍 Building a Better Economy | Alex Pentland | TEDxMIT](./videos/building-a-better-economy-alex-pentland-tedxmit.md)  
+- [🤖👀❌📰 How to spot AI and misinformation online](./videos/how-to-spot-ai-and-misinformation-online.md)  
 - [💰🇺🇸❓🗣️ Who Owns America? Bernie Sanders Says the Quiet Part Out Loud](./videos/who-owns-america-bernie-sanders-says-the-quiet-part-out-loud.md)  
+- [🚫👑⚡✊ Sen. Bernie Sanders - Harnessing Energy From «No Kings» Rally to «Fight Oligarchy» | The Daily Show](./videos/sen-bernie-sanders-harnessing-energy-from-no-kings-rally-to-fight-oligarchy-the-daily-show.md)  
+- [👩‍💻👑🦆 Kara Swisher: Tech, Power, and Why You Should Get the F*cking Duck](./videos/kara-swisher-tech-power-and-why-you-should-get-the-fcking-duck.md)  
 - [🇩🇪⚖️🇺🇸 Blueprint Why Germany's Legacy of Accountability Should Be A Blueprint for America's Moral Reckoning](./videos/why-germanys-legacy-of-accountability-should-be-a-blueprint-for-americas-moral-reckoning.md)  
 - [🚧⏳ The Unfinished Revolution with Atlantic EIC Jeffrey Goldberg](./videos/the-unfinished-revolution-with-atlantic-eic-jeffrey-goldberg.md)  
 - [🤖🏢👁️ New book ‘Empire of AI’ investigates OpenAI, the company behind ChatGPT](./videos/new-book-empire-of-ai-investigates-openai-the-company-behind-chatgpt.md)  
 - [🤖📰🧐 [ACL 2025] Large Language Model Agents for Content Analysis](./videos/acl-2025-large-language-model-agents-for-content-analysis.md)  
-- [🤖👀❌📰 How to spot AI and misinformation online](./videos/how-to-spot-ai-and-misinformation-online.md)  
 - [🤖🗣️⚠️😵‍💫 AI content supercharges confusion and spreads misleading information, critics warn](./videos/ai-content-supercharges-confusion-and-spreads-misleading-information-critics-warn.md)  
-- [📈🗣️💥😵‍💫 The rise of viral debate videos and their impact on our ability to disagree](./videos/the-rise-of-viral-debate-videos-and-their-impact-on-our-ability-to-disagree.md)  
-- [👹📜🏛️ Brooks and Capehart on House Republicans passing Trump's legislative agenda](./videos/brooks-and-capehart-on-house-republicans-passing-trumps-legislative-agenda.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (82)  

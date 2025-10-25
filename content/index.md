@@ -10,7 +10,8 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 📑 Notes, 💭 thoughts, and 🔗 Links.  
 ❔ What do 🫵 _you_ 🤔 think?  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (344)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (345)  
+- [2025-10-25](./reflections/2025-10-25.md)  
 - [2025-10-24](./reflections/2025-10-24.md)  
 - [2025-10-23 | 🏎️ Drive | 💰 Oligarchy | ⚛️ Social Physics 📚](./reflections/2025-10-23.md)  
 - [2025-10-22 | 👹 Corrupt 💰 Capital 💸 Costs ⚖️ Civic 💥 Conflict 📚📰📺](./reflections/2025-10-22.md)  
@@ -20,41 +21,40 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [2025-10-18 | 🤖📣 Propaganda Machines | 🧑‍🧑‍🧒‍🧒🏢 Family Firms 📚](./reflections/2025-10-18.md)  
 - [2025-10-17 | 🤥 Demagoguery | 📜 Law | 🤸🏼‍♀️ Mobility 📺📚](./reflections/2025-10-17.md)  
 - [2025-10-16 | 🤕 Pain | 🐆 Leopard | 🤖 Disinformation 📺📚📄](./reflections/2025-10-16.md)  
-- [2025-10-15 | 🖼️ SIGGRAPH | 🦜 ACL | 😇 Good | ✊🏿 Antiracist 📺📚](./reflections/2025-10-15.md)  
   
   
-## [📚 Books](./books/index.md) (701)  
-- [🇺🇸⚔️💰 Fight Oligarchy](./books/fight-oligarchy.md)  
+## [📚 Books](./books/index.md) (704)  
+- [📉📈 Stabilizing an Unstable Economy](./books/stabilizing-an-unstable-economy.md)  
+- [💼✅ The Case for a Job Guarantee](./books/the-case-for-a-job-guarantee.md)  
+- [💰🤫 Dark Money: The Hidden History of the Billionaires Behind the Rise of the Radical Right](./books/dark-money-the-hidden-history-of-the-billionaires-behind-the-rise-of-the-radical-right.md)  
+- [🧠🏆 Inner Excellence: Train Your Mind for Extraordinary Performance and the Best Possible Life](./books/inner-excellence-train-your-mind-for-extraordinary-performance-and-the-best-possible-life.md)  
 - [💔💻 Burn Book: A Tech Love Story](./books/burn-book-a-tech-love-story.md)  
+- [🏆🎭 Winners Take All: The Elite Charade of Changing the World](./books/winners-take-all-the-elite-charade-of-changing-the-world.md)  
+- [🇺🇸⚔️💰 Fight Oligarchy](./books/fight-oligarchy.md)  
 - [🗣️💡🦠 Social Physics: How Good Ideas Spread - The Lessons from a New Science](./books/social-physics.md)  
 - [👁️‍🗨️💰⛓️👤 The Age of Surveillance Capitalism: The Fight for a Human Future at the New Frontier of Power](./books/the-age-of-surveillance-capitalism.md)  
 - [📊🤥 How to Lie with Statistics](./books/how-to-lie-with-statistics.md)  
-- [🤖🗣️ Hands-On Large Language Models: Language Understanding and Generation](./books/hands-on-large-language-models-language-understanding-and-generation.md)  
-- [🤖⚙️ Agentic Artificial Intelligence: Harnessing AI Agents to Reinvent Business, Work and Life](./books/agentic-artificial-intelligence-harnessing-ai-agents-to-reinvent-business-work-and-life.md)  
-- [🤖🖱️🤝 AI meets UX: Designing the Next Generation of User-Centered Products: Where innovation meets empathy to shape the future of design](./books/ai-meets-ux-designing-the-next-generation-of-user-centered-products-where-innovation-meets-empathy-to-shape-the-future-of-design.md)  
-- [🌊🤖🤔 The Coming Wave: Technology, Power, and the 21st Century's Greatest Dilemma](./books/the-coming-wave-technology-power-and-the-21st-centurys-greatest-dilemma.md)  
-- [🤖📈 AI for Marketing and Product Innovation: Powerful New Tools for Predicting Trends, Connecting with Customers, and Closing Sales](./books/ai-for-marketing-and-product-innovation-powerful-new-tools-for-predicting-trends-connecting-with-customers-and-closing-sales.md)  
   
   
-## [📺 Videos](./videos/index.md) (382)  
+## [📺 Videos](./videos/index.md) (386)  
+- [👨‍🦳🆚💰 Senator Bernie Sanders on Fighting the Billionaires](./videos/senator-bernie-sanders-on-fighting-the-billionaires.md)  
+- [🇺🇸⚔️🏛️ The Fight to Save American Democracy — with Heather Cox Richardson | Prof G Conversations](./videos/the-fight-to-save-american-democracy-with-heather-cox-richardson-prof-g-conversations.md)  
+- [📺🕰️📰🎂🎉 A look at 50 years of the News Hour](./videos/a-look-at-50-years-of-the-news-hour.md)  
+- [🏛️🔨🗑️ Brooks and Atkins Stohr on the East Wing demolition](./videos/brooks-and-atkins-stohr-on-the-east-wing-demolition.md)  
 - [🏗️📈🤝🌍 Building a Better Economy | Alex Pentland | TEDxMIT](./videos/building-a-better-economy-alex-pentland-tedxmit.md)  
 - [🤖👀❌📰 How to spot AI and misinformation online](./videos/how-to-spot-ai-and-misinformation-online.md)  
 - [💰🇺🇸❓🗣️ Who Owns America? Bernie Sanders Says the Quiet Part Out Loud](./videos/who-owns-america-bernie-sanders-says-the-quiet-part-out-loud.md)  
 - [🚫👑⚡✊ Sen. Bernie Sanders - Harnessing Energy From «No Kings» Rally to «Fight Oligarchy» | The Daily Show](./videos/sen-bernie-sanders-harnessing-energy-from-no-kings-rally-to-fight-oligarchy-the-daily-show.md)  
 - [👩‍💻👑🦆 Kara Swisher: Tech, Power, and Why You Should Get the F*cking Duck](./videos/kara-swisher-tech-power-and-why-you-should-get-the-fcking-duck.md)  
 - [🇩🇪⚖️🇺🇸 Blueprint Why Germany's Legacy of Accountability Should Be A Blueprint for America's Moral Reckoning](./videos/why-germanys-legacy-of-accountability-should-be-a-blueprint-for-americas-moral-reckoning.md)  
-- [🚧⏳ The Unfinished Revolution with Atlantic EIC Jeffrey Goldberg](./videos/the-unfinished-revolution-with-atlantic-eic-jeffrey-goldberg.md)  
-- [🤖🏢👁️ New book ‘Empire of AI’ investigates OpenAI, the company behind ChatGPT](./videos/new-book-empire-of-ai-investigates-openai-the-company-behind-chatgpt.md)  
-- [🤖📰🧐 [ACL 2025] Large Language Model Agents for Content Analysis](./videos/acl-2025-large-language-model-agents-for-content-analysis.md)  
-- [🤖🗣️⚠️😵‍💫 AI content supercharges confusion and spreads misleading information, critics warn](./videos/ai-content-supercharges-confusion-and-spreads-misleading-information-critics-warn.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (82)  
+- [🏦♾️📈💸 Modern Monetary Theory](./topics/modern-monetary-theory.md)  
 - [👨‍👩‍👦🧭🤝 Authoritative Parenting](./topics/authoritative-parenting.md)  
 - [🤔🚫➡️📚 Heterodox Economics](./topics/heterodox-economics.md)  
 - [💰🏛️📈 Functional Finance](./topics/functional-finance.md)  
 - [🧠🤖🗣️💡 Self-Aware Learning Chatbot](./topics/self-aware-learning-chatbot.md)  
-- [🏦♾️📈💸 Modern Monetary Theory](./topics/modern-monetary-theory.md)  
   
   
 ## [📄  Articles](./articles/index.md) (63)  

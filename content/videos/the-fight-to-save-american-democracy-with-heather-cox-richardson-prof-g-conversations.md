@@ -10,7 +10,7 @@ Channel: The Prof G Pod – Scott Galloway
 tags:
 youtube: https://youtu.be/qVV1rZUw-jI
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](../index.md) > [Videos](./index.md) | [🏛️🇺🇸📖 Heather Cox Richardson](../people/heather-cox-richardson.md)  
 # 🇺🇸⚔️🏛️ The Fight to Save American Democracy — with Heather Cox Richardson | Prof G Conversations  
 ![The Fight to Save American Democracy — with Heather Cox Richardson | Prof G Conversations](https://youtu.be/qVV1rZUw-jI)  
   

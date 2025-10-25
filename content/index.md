@@ -12,7 +12,7 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
   
 ## [🪞 Reflections](./reflections/index.md) ~ Blog (345)  
 - [2025-10-25](./reflections/2025-10-25.md)  
-- [2025-10-24](./reflections/2025-10-24.md)  
+- [2025-10-24 | 🤑 Billionaires | 🗳️ Democracy | 🏛️💥 Demolition | 📰🕰️ News Hour 📺📰📚](./reflections/2025-10-24.md)  
 - [2025-10-23 | 🏎️ Drive | 💰 Oligarchy | ⚛️ Social Physics 📚](./reflections/2025-10-23.md)  
 - [2025-10-22 | 👹 Corrupt 💰 Capital 💸 Costs ⚖️ Civic 💥 Conflict 📚📰📺](./reflections/2025-10-22.md)  
 - [2025-10-21 | 🐈 Decode | 🇺🇸 Divide | 🏎️ Drive | 🚫👑 Dethrone 📚📰📺](./reflections/2025-10-21.md)  

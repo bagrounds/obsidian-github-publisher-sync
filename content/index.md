@@ -23,7 +23,8 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [2025-10-16 | 🤕 Pain | 🐆 Leopard | 🤖 Disinformation 📺📚📄](./reflections/2025-10-16.md)  
   
   
-## [📚 Books](./books/index.md) (705)  
+## [📚 Books](./books/index.md) (706)  
+- [🏚️⚠️ The Precariat: The New Dangerous Class](./books/the-precariat-the-new-dangerous-class.md)  
 - [💰🏛️ Modern Money Theory: A Primer on Macroeconomics for Sovereign Monetary Systems](./books/modern-money-theory-a-primer-on-macroeconomics-for-sovereign-monetary-systems.md)  
 - [📉📈 Stabilizing an Unstable Economy](./books/stabilizing-an-unstable-economy.md)  
 - [💼✅ The Case for a Job Guarantee](./books/the-case-for-a-job-guarantee.md)  
@@ -33,7 +34,6 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [🏆🎭 Winners Take All: The Elite Charade of Changing the World](./books/winners-take-all-the-elite-charade-of-changing-the-world.md)  
 - [🇺🇸⚔️💰 Fight Oligarchy](./books/fight-oligarchy.md)  
 - [🗣️💡🦠 Social Physics: How Good Ideas Spread - The Lessons from a New Science](./books/social-physics.md)  
-- [👁️‍🗨️💰⛓️👤 The Age of Surveillance Capitalism: The Fight for a Human Future at the New Frontier of Power](./books/the-age-of-surveillance-capitalism.md)  
   
   
 ## [📺 Videos](./videos/index.md) (386)  

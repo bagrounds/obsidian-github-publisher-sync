@@ -23,7 +23,8 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [2025-10-16 | 🤕 Pain | 🐆 Leopard | 🤖 Disinformation 📺📚📄](./reflections/2025-10-16.md)  
   
   
-## [📚 Books](./books/index.md) (704)  
+## [📚 Books](./books/index.md) (705)  
+- [💰🏛️ Modern Money Theory: A Primer on Macroeconomics for Sovereign Monetary Systems](./books/modern-money-theory-a-primer-on-macroeconomics-for-sovereign-monetary-systems.md)  
 - [📉📈 Stabilizing an Unstable Economy](./books/stabilizing-an-unstable-economy.md)  
 - [💼✅ The Case for a Job Guarantee](./books/the-case-for-a-job-guarantee.md)  
 - [💰🤫 Dark Money: The Hidden History of the Billionaires Behind the Rise of the Radical Right](./books/dark-money-the-hidden-history-of-the-billionaires-behind-the-rise-of-the-radical-right.md)  
@@ -33,7 +34,6 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [🇺🇸⚔️💰 Fight Oligarchy](./books/fight-oligarchy.md)  
 - [🗣️💡🦠 Social Physics: How Good Ideas Spread - The Lessons from a New Science](./books/social-physics.md)  
 - [👁️‍🗨️💰⛓️👤 The Age of Surveillance Capitalism: The Fight for a Human Future at the New Frontier of Power](./books/the-age-of-surveillance-capitalism.md)  
-- [📊🤥 How to Lie with Statistics](./books/how-to-lie-with-statistics.md)  
   
   
 ## [📺 Videos](./videos/index.md) (386)  

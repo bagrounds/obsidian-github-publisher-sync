@@ -93,7 +93,7 @@ affiliate link: https://amzn.to/3WkxbAX
 ### 🔗 Related Books  
 * 🧑‍🤝‍🧑 Cultures@SiliconValley by J. A. English-Lueck  
 * ⚔️ The New Class War: Saving Democracy from the Managerial Elite by Michael Lind  
-* 🏆 Winners Take All: The Elite Charade of Changing the World by Anand Giridharadas  
+* [🏆🎭 Winners Take All: The Elite Charade of Changing the World](./winners-take-all-the-elite-charade-of-changing-the-world.md) by Anand Giridharadas  
   
 ## 🫵 🤔 What Do You Think?  
   

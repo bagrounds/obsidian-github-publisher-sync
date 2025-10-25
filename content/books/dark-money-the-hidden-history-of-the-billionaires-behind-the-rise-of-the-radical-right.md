@@ -37,11 +37,11 @@ While widely praised for its research, some critiques of *Dark Money* suggest th
 ### 🤝 Similar Books (Exploring Money in Politics, Conservatism, and Investigative Journalism)  
   
 * **[🏛️⛓️ Democracy in Chains: The Deep History of the Radical Right's Stealth Plan for America](./democracy-in-chains-the-deep-history-of-the-radical-rights-stealth-plan-for-america.md)** **by Nancy MacLean:** Explores the intellectual origins of the radical right's anti-government ideology, tracing it back to economist James Buchanan and his work at the Public Choice school.  
-* ***💰 Republic, Lost: How Money Corrupts Congress—and a Plan to Stop It*** ** by Lawrence Lessig:** Examines the systemic corruption in Washington stemming from campaign finance and lobbying, and proposes solutions for reform.  
+* **💰 Republic, Lost: How Money Corrupts Congress—and a Plan to Stop It** by Lawrence Lessig: Examines the systemic corruption in Washington stemming from campaign finance and lobbying, and proposes solutions for reform.  
 * ***🎥 Citizen Koch: An American Story About "Giving"*** **by Tadayoshi Finck, Chris Leonard, and Lisa Graves:** A companion book to the documentary film, further investigating the Koch brothers' political influence.  
 * ***🏛️ The Power Elite*** **by C. Wright Mills:** A classic sociological text examining the interconnectedness of political, economic, and military elites in American society.  
 * ***☕ Poison Tea: How the Tea Party Is Killing America*** **by Jeff Biggers:** Provides a critical look at the origins and impact of the Tea Party movement, which is significantly intertwined with the funding networks discussed in *Dark Money*.  
-* ***🏆 Winners Take All: The Elite Charade of Changing the World*** **by Anand Giridharadas:** Critiques how global elites often seek to "change the world" in ways that maintain their own power and privilege, rather than addressing systemic inequalities.  
+* **[🏆🎭 Winners Take All: The Elite Charade of Changing the World](./winners-take-all-the-elite-charade-of-changing-the-world.md)** **by Anand Giridharadas:** Critiques how global elites often seek to "change the world" in ways that maintain their own power and privilege, rather than addressing systemic inequalities.  
   
 ### 🆚 Contrasting Books (Offering Different Perspectives)  
   

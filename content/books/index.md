@@ -7,7 +7,7 @@ URL: https://bagrounds.org/books
 backlinks: false
 ---
 [Home](../index.md)  
-# 📚 Books (700)  
+# 📚 Books (702)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)  
 - [🧑‍🤝‍🧑📈 10 to 25: The Science of Motivating Young People: A Groundbreaking Approach to Leading the Next Generation - And Making Your Own Life Easier](./10-to-25-the-science-of-motivating-young-people-a-groundbreaking-approach-to-leading-the-next-generation-and-making-your-own-life-easier.md)  
@@ -197,6 +197,7 @@ backlinks: false
 Feedback Control of Dynamic Systems]]  
 - [😊✅ Feel Good Productivity: How to Do More of What Matters to You](./feel-good-productivity-how-to-do-more-of-what-matters-to-you.md)  
 - [😊👍 Feeling Good: The New Mood Therapy](./feeling-good-the-new-mood-therapy.md)  
+- [🇺🇸⚔️💰 Fight Oligarchy](./fight-oligarchy.md)  
 - [🔥💣💥😡🤬 Fire and Fury: Inside the Trump White House](./fire-and-fury-inside-the-trump-white-house.md)  
 - [🔥⛈️ Fire Weather: A True Story from a Hotter World](./fire-weather.md)  
 - [🗺️❤️📐 Flatland: A Romance of Many Dimensions](./flatland-a-romance-of-many-dimensions.md)  
@@ -701,6 +702,7 @@ Feedback Control of Dynamic Systems]]
 - [🫵🤝🌍🏛️ Why You Should Be a Socialist](./why-you-should-be-a-socialist.md)  
 - [🦓 Why Zebras Don't Get Ulcers: The Acclaimed Guide to Stress, Stress-Related Disease, and Coping](./why-zebras-dont-get-ulcers.md)  
 - [💪📈 Willpower: Rediscovering the Greatest Human Strength](./willpower.md)  
+- [🏆🎭 Winners Take All: The Elite Charade of Changing the World](./winners-take-all-the-elite-charade-of-changing-the-world.md)  
 - [🥶🛌 Wintering: The Power of Rest and Retreat in Difficult Times](./wintering-the-power-of-rest-and-retreat-in-difficult-times.md)  
 - [💼🔙📦 Working Backwards: Insights, Stories, and Secrets from Inside Amazon](./working-backwards-insights-stories-and-secrets-from-inside-amazon.md)  
 - [🧱🛠️ Working Effectively with Legacy Code](./working-effectively-with-legacy-code.md)  

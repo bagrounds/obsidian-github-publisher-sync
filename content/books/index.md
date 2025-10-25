@@ -7,7 +7,7 @@ URL: https://bagrounds.org/books
 backlinks: false
 ---
 [Home](../index.md)  
-# 📚 Books (704)  
+# 📚 Books (705)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)  
 - [🧑‍🤝‍🧑📈 10 to 25: The Science of Motivating Young People: A Groundbreaking Approach to Leading the Next Generation - And Making Your Own Life Easier](./10-to-25-the-science-of-motivating-young-people-a-groundbreaking-approach-to-leading-the-next-generation-and-making-your-own-life-easier.md)  
@@ -329,6 +329,7 @@ Feedback Control of Dynamic Systems]]
 - [🔋⚕️⏳ Mitochondria and the Future of Medicine: The Key to Understanding Disease, Chronic Illness, Aging, and Life Itself](./mitochondria-and-the-future-of-medicine-the-key-to-understanding-disease-chronic-illness-aging-and-life-itself.md)  
 - [🤖🔍✅ Model Checking](./model-checking.md)  
 - [🔄📈🧩 Modeling of Dynamic Systems](./modeling-dynamic-systems.md)  
+- [💰🏛️ Modern Money Theory: A Primer on Macroeconomics for Sovereign Monetary Systems](./modern-money-theory-a-primer-on-macroeconomics-for-sovereign-monetary-systems.md)  
 - [📉⚾💰 Moneyball: The Art of Winning an Unfair Game](./moneyball.md)  
 - [🚶‍♂️🧠 Moonwalking with Einstein: The Art and Science of Remembering Everything](./moonwalking-with-einstein-the-art-and-science-of-remembering-everything.md)  
 - [🤱🏼🧠 Mother Brain: How Neuroscience Is Rewriting the Story of Parenthood](./mother-brain-how-neuroscience-is-rewriting-the-story-of-parenthood.md)  

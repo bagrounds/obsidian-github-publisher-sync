@@ -52,7 +52,7 @@ affiliate link: https://amzn.to/46Lws0o
   
 🤔 These recommendations offer perspectives that might challenge or complement the individualistic, inner-focused approach of Inner Excellence by highlighting external factors or different philosophies of success:  
   
-* 🌍 **Winners Take All: The Elite Charade of Changing the World** by Anand Giridharadas  
+* **[🏆🎭 Winners Take All: The Elite Charade of Changing the World](./winners-take-all-the-elite-charade-of-changing-the-world.md)** by Anand Giridharadas  
     * 🧐 This book critically examines how the global elite, despite good intentions, often perpetuate systemic inequalities. 🌍 It contrasts with Inner Excellence by focusing on external societal structures and collective action rather than individual mental frameworks for change and success.  
 * **[🏚️💰 Evicted: Poverty and Profit in the American City](./evicted-poverty-and-profit-in-the-american-city.md)** by Matthew Desmond  
     * 🏆 This Pulitzer Prize-winning work explores the structural causes and devastating effects of poverty in America. 😔 It offers a stark contrast by illustrating how external circumstances, economic systems, and policy failures profoundly impact individuals' lives, often overshadowing the power of individual mindset alone.  

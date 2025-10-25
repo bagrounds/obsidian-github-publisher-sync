@@ -17,7 +17,7 @@ youtube: https://youtu.be/ZrC4_Ops7m0
 ## 🤖 AI Summary  
 * 🏗️ The White House East Wing was completely demolished this week to build a ballroom, with the price tag now increasing to about $300 million.  
 * 🍰 The demolition photos are shocking because the building is sacred, feeling like taking a claw into a wedding cake.  
-* 📏 I have long believed the White House is just too small, as it was built for John and Abigail Adams, necessitating a room for state dinners since presidents currently use tents.  
+* 📏 The White House is just too small, as it was built for John and Abigail Adams, necessitating a room for state dinners since presidents currently use tents.  
 * 💰 Corporate and private sponsors are funding the project, leading to the **corporatization** of the people's house.  
 * 🤝 Private funding is concerning because the president is accountable to Google, corporate interests, Meta, and unknown donors, not to the American people.  
 * 📜 The president's accountability to donors is exactly what the **Emoluments Clause** and other constitutional measures are supposed to protect against.  

@@ -7,7 +7,7 @@ URL: https://bagrounds.org/books
 backlinks: false
 ---
 [Home](../index.md)  
-# 📚 Books (702)  
+# 📚 Books (704)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)  
 - [🧑‍🤝‍🧑📈 10 to 25: The Science of Motivating Young People: A Groundbreaking Approach to Leading the Next Generation - And Making Your Own Life Easier](./10-to-25-the-science-of-motivating-young-people-a-groundbreaking-approach-to-leading-the-next-generation-and-making-your-own-life-easier.md)  
@@ -448,6 +448,7 @@ Feedback Control of Dynamic Systems]]
 - [⛲🔌🤔⚙️ Sources of Power: How People Make Decisions](./sources-of-power-how-people-make-decisions.md)  
 - [⚡🧠🏃 Spark: The Revolutionary New Science of Exercise and the Brain](./spark-the-revolutionary-new-science-of-exercise-and-the-brain.md)  
 - [🧪✨🧠 Spellbound: Modern Science, Ancient Magic, and the Hidden Potential of the Unconscious Mind](./spellbound-modern-science-ancient-magic-and-the-hidden-potential-of-the-unconscious-mind.md)  
+- [📉📈 Stabilizing an Unstable Economy](./stabilizing-an-unstable-economy.md)  
 - [❓🎯 Start with Why: How Great Leaders Inspire Everyone to Take Action](./start-with-why-how-great-leaders-inspire-everyone-to-take-action.md)  
 - [📊📈✅🔍 Statistical Quality Control](./statistical-quality-control.md)  
 - [📊🫠 Statistics for Dummies](./statistics-for-dummies.md)  
@@ -504,6 +505,7 @@ Feedback Control of Dynamic Systems]]
 - [📓📜🗂️🔮 The Bullet Journal Method: Track the Past, Order the Present, Design the Future](./the-bullet-journal-method.md)  
 - [⛺🔥 The Campout Cookbook: Inspired Recipes for Cooking Around the Fire and Under the Stars](./the-campout-cookbook-inspired-recipes-for-cooking-around-the-fire-and-under-the-stars.md)  
 - [🧑‍🏫🆚⛪ The Case Against The Case For Christ: A New Testament Scholar Refutes the Reverend Lee Strobel](./the-case-against-the-case-for-christ-a-new-testament-scholar-refutes-the-reverend-lee-strobel.md)  
+- [💼✅ The Case for a Job Guarantee](./the-case-for-a-job-guarantee.md)  
 - [📰❓✝️ The Case for Christ: A Journalist's Personal Investigation of the Evidence for Jesus](./the-case-for-christ-a-journalists-personal-investigation-of-the-evidence-for-jesus.md)  
 - [🌄⏳ The Circadian Code: Lose Weight, Supercharge Your Energy, and Transform Your Health from Morning to Midnight](./the-circadian-code.md)  
 - [🤕👶 The Coddling of the American Mind: How Good Intentions and Bad Ideas Are Setting Up a Generation for Failure](./the-coddling-of-the-american-mind-how-good-intentions-and-bad-ideas-are-setting-up-a-generation-for-failure.md)  

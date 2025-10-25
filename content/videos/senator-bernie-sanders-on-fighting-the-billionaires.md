@@ -49,7 +49,7 @@ A: 🧗 Real change takes place from the bottom up, through grassroots mobilizat
 ## 📚 Book Recommendations  
   
 ### ↔️ Similar  
-* 📚 Winners Take All: The Elite Charade of Changing the World by Anand Giridharadas: Argues that elites use philanthropy to maintain power and avoid real systemic change, similar to the critique of oligarchy.  
+* [🏆🎭 Winners Take All: The Elite Charade of Changing the World](../books/winners-take-all-the-elite-charade-of-changing-the-world.md) by Anand Giridharadas: Argues that elites use philanthropy to maintain power and avoid real systemic change, similar to the critique of oligarchy.  
 * [💰📈🌍⏳ Capital in the Twenty-First Century](../books/capital-in-the-twenty-first-century.md) by Thomas Piketty: A comprehensive study on wealth and income inequality, showing a historical tendency for wealth concentration.  
 * [💰🤫 Dark Money: The Hidden History of the Billionaires Behind the Rise of the Radical Right](../books/dark-money-the-hidden-history-of-the-billionaires-behind-the-rise-of-the-radical-right.md) by Jane Mayer: Exposes how a network of wealthy donors secretly funds conservative political efforts, detailing the political power of a few.  
   

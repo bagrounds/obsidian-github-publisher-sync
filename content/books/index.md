@@ -7,7 +7,7 @@ URL: https://bagrounds.org/books
 backlinks: false
 ---
 [Home](../index.md)  
-# 📚 Books (705)  
+# 📚 Books (706)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)  
 - [🧑‍🤝‍🧑📈 10 to 25: The Science of Motivating Young People: A Groundbreaking Approach to Leading the Next Generation - And Making Your Own Life Easier](./10-to-25-the-science-of-motivating-young-people-a-groundbreaking-approach-to-leading-the-next-generation-and-making-your-own-life-easier.md)  
@@ -600,6 +600,7 @@ Feedback Control of Dynamic Systems]]
 - [🔋⬇️⬆️ The Power of the Downstate: Recharge Your Life Using Your Body's Own Restorative Systems](./the-power-of-the-downstate-recharge-your-life-using-your-bodys-own-restorative-systems.md)  
 - [💔💪🔗 The Power of Vulnerability: Teachings of Authenticity, Connection, and Courage](./the-power-of-vulnerability-teachings-of-authenticity-connection-and-courage.md)  
 - [🧑‍💻📈 The Pragmatic Programmer: Your Journey to Mastery](./the-pragmatic-programmer-your-journey-to-mastery.md)  
+- [🏚️⚠️ The Precariat: The New Dangerous Class](./the-precariat-the-new-dangerous-class.md)  
 - [🏷️🏚️💔🏰 The Price of Inequality: How Today's Divided Society Endangers Our Future](./the-price-of-inequality-how-todays-divided-society-endangers-our-future.md)  
 - [💰🧑‍🏫⚔️ The Privateers: How Billionaires Created a Culture War and Sold School Vouchers](./the-privateers-how-billionaires-created-a-culture-war-and-sold-school-vouchers.md)  
 - [🧠🏃 The Psychological Benefits of Exercise and Physical Activity](./the-psychological-benefits-of-exercise-and-physical-activity.md)  

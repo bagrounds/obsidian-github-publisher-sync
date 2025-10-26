@@ -11,7 +11,7 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 ❔ What do 🫵 _you_ 🤔 think?  
   
 ## [🪞 Reflections](./reflections/index.md) ~ Blog (345)  
-- [2025-10-25 | ✅💼 Guaranteed Jobs 📚](./reflections/2025-10-25.md)  
+- [2025-10-25 | 💼 Jobs | 🤝 Trust | 💥 Demolition 📚📰📺](./reflections/2025-10-25.md)  
 - [2025-10-24 | 🤑 Billionaires | 🗳️ Democracy | 🏛️💥 Demolition | 📰🕰️ News Hour 📺📰📚](./reflections/2025-10-24.md)  
 - [2025-10-23 | 🏎️ Drive | 💰 Oligarchy | ⚛️ Social Physics 📚](./reflections/2025-10-23.md)  
 - [2025-10-22 | 👹 Corrupt 💰 Capital 💸 Costs ⚖️ Civic 💥 Conflict 📚📰📺](./reflections/2025-10-22.md)  
@@ -23,8 +23,9 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [2025-10-16 | 🤕 Pain | 🐆 Leopard | 🤖 Disinformation 📺📚📄](./reflections/2025-10-16.md)  
   
   
-## [📚 Books](./books/index.md) (707)  
+## [📚 Books](./books/index.md) (708)  
 - [💼✅ The Case for a Job Guarantee](./books/the-case-for-a-job-guarantee.md)  
+- [💰🇺🇸 Making Money Work for Us: How MMT Can Save America](./books/making-money-work-for-us-how-mmt-can-save-america.md)  
 - [🧑‍🤝‍🧑✅🌍 Full Employment and Social Justice: Solidarity and Sustainability](./books/full-employment-and-social-justice-solidarity-and-sustainability.md)  
 - [🏚️⚠️ The Precariat: The New Dangerous Class](./books/the-precariat-the-new-dangerous-class.md)  
 - [💰🏛️ Modern Money Theory: A Primer on Macroeconomics for Sovereign Monetary Systems](./books/modern-money-theory-a-primer-on-macroeconomics-for-sovereign-monetary-systems.md)  
@@ -33,10 +34,11 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [🧠🏆 Inner Excellence: Train Your Mind for Extraordinary Performance and the Best Possible Life](./books/inner-excellence-train-your-mind-for-extraordinary-performance-and-the-best-possible-life.md)  
 - [💔💻 Burn Book: A Tech Love Story](./books/burn-book-a-tech-love-story.md)  
 - [🏆🎭 Winners Take All: The Elite Charade of Changing the World](./books/winners-take-all-the-elite-charade-of-changing-the-world.md)  
-- [🇺🇸⚔️💰 Fight Oligarchy](./books/fight-oligarchy.md)  
   
   
-## [📺 Videos](./videos/index.md) (386)  
+## [📺 Videos](./videos/index.md) (388)  
+- [❓😵🤯 What the Heck Just Happened (2025-10-25)?](./videos/what-the-heck-just-happened-2025-10-25.md)  
+- [🤔📊📉❓ What happens when no one trusts a country’s economic data](./videos/what-happens-when-no-one-trusts-a-countrys-economic-data.md)  
 - [👨‍🦳🆚💰 Senator Bernie Sanders on Fighting the Billionaires](./videos/senator-bernie-sanders-on-fighting-the-billionaires.md)  
 - [🇺🇸⚔️🏛️ The Fight to Save American Democracy — with Heather Cox Richardson | Prof G Conversations](./videos/the-fight-to-save-american-democracy-with-heather-cox-richardson-prof-g-conversations.md)  
 - [📺🕰️📰🎂🎉 A look at 50 years of the News Hour](./videos/a-look-at-50-years-of-the-news-hour.md)  
@@ -45,8 +47,6 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [🤖👀❌📰 How to spot AI and misinformation online](./videos/how-to-spot-ai-and-misinformation-online.md)  
 - [💰🇺🇸❓🗣️ Who Owns America? Bernie Sanders Says the Quiet Part Out Loud](./videos/who-owns-america-bernie-sanders-says-the-quiet-part-out-loud.md)  
 - [🚫👑⚡✊ Sen. Bernie Sanders - Harnessing Energy From «No Kings» Rally to «Fight Oligarchy» | The Daily Show](./videos/sen-bernie-sanders-harnessing-energy-from-no-kings-rally-to-fight-oligarchy-the-daily-show.md)  
-- [👩‍💻👑🦆 Kara Swisher: Tech, Power, and Why You Should Get the F*cking Duck](./videos/kara-swisher-tech-power-and-why-you-should-get-the-fcking-duck.md)  
-- [🇩🇪⚖️🇺🇸 Blueprint Why Germany's Legacy of Accountability Should Be A Blueprint for America's Moral Reckoning](./videos/why-germanys-legacy-of-accountability-should-be-a-blueprint-for-americas-moral-reckoning.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (82)  

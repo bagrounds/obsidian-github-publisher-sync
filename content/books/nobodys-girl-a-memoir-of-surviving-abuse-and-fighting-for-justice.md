@@ -82,4 +82,7 @@ Virginia Roberts Giuffre's harrowing, posthumously published account detailing h
   
 ## 🫵 What Do You Think?  
   
-🤔 Which aspect of Virginia Giuffre's fight for justice do you find most impactful, and how do memoirs like *Nobody's Girl* contribute to broader conversations about abuse and accountability?
+🤔 Which aspect of Virginia Giuffre's fight for justice do you find most impactful, and how do memoirs like *Nobody's Girl* contribute to broader conversations about abuse and accountability?  
+  
+## 🐦 Tweet  
+<blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">💔👊⚖️ Nobody&#39;s Girl: A Memoir of Surviving Abuse and Fighting for Justice by Virginia Roberts Giuffre<br><br>🗣️ Voice Reclamation | 🧑‍⚖️ Legal Battles | 🏛️ Institutional Corruption | 💖 Healing | 🦸‍♀️ Survivor Advocacy | ✍️ Memoir<a href="https://t.co/zBD5Engfxj">https://t.co/zBD5Engfxj</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/1982547625095381316?ref_src=twsrc%5Etfw">October 26, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

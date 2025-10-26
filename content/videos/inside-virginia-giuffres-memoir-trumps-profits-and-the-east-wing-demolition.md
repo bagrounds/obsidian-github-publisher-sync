@@ -60,6 +60,7 @@ youtube: https://youtu.be/Us-6ezyN5oI
 ## 📚 Book Recommendations  
   
 ### ↔️ Similar  
+* [💔👊⚖️ Nobody's Girl: A Memoir of Surviving Abuse and Fighting for Justice](../books/nobodys-girl-a-memoir-of-surviving-abuse-and-fighting-for-justice.md)  
 * 📖 **Know My Name** by Chanel Miller: A powerful memoir by a survivor of sexual assault, focusing on the justice system, public scrutiny, and the journey toward healing.  
 * 📚 **Trauma and Recovery** by Judith Herman: A foundational text that explains the dynamics of abuse, the process of psychological trauma, and the stages of recovery, providing a clinical framework for understanding Giuffre’s experiences.  
 * **[🤕🎼🧠 The Body Keeps the Score: Brain, Mind, and Body in the Healing of Trauma](../books/the-body-keeps-the-score-brain-mind-and-body-in-the-healing-of-trauma.md)** by Bessel van der Kolk: Explains how trauma physically alters the brain and body, providing context for Giuffre’s chronic health issues mentioned in the video.  

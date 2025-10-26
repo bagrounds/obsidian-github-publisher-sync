@@ -7,7 +7,7 @@ URL: https://bagrounds.org/videos
 backlinks: false
 ---
 [Home](../index.md)  
-# 📺 Videos (386)  
+# 📺 Videos (388)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
 - [❓💪🔬 12 Questions About Creatine with Stephen Cornish, PhD](./12-questions-about-creatine-w-stephen-cornish-phd.md)  
@@ -351,6 +351,7 @@ backlinks: false
 - [What Are You?](./what-are-you.md)  
 - [What EXACTLY is in the Republican Budget Blueprint?](./what-exactly-is-in-the-republican-budget-blueprint.md)  
 - [🥼🦷💧 What happened when Calgary removed fluoride from its water supply](./what-happened-when-calgary-removed-fluoride-from-its-water-supply.md)  
+- [🤔📊📉❓ What happens when no one trusts a country’s economic data](./what-happens-when-no-one-trusts-a-countrys-economic-data.md)  
 - [🧠🗺️💡🔑 What I Learned after 5000 Hours of Mind Mapping](./what-i-learned-after-5000-hours-of-mind-mapping.md)  
 - [What Makes Some Brains More Focused Than Others? | Marvin Chun | TEDxKFAS](./what-makes-some-brains-more-focused-than-others-marvin-chun-tedxkfas.md)  
 - [What makes something memorable?](./what-makes-something-memorable.md)  
@@ -363,6 +364,7 @@ backlinks: false
 - [😵‍💫❓🤯🤦‍♂️ What the Heck Just Happened?](./what-the-heck-just-happened.md)  
 - [❓🤯😵‍💫 What the Heck Just Happened | 2025-08-30](./what-the-heck-just-happened-2025-08-30.md)  
 - [❓🤯😵‍💫🤷 What the Heck Just Happened? | 2025-09-27](./what-the-heck-just-happened-2025-09-27.md)  
+- [❓😵🤯 What the Heck Just Happened (2025-10-25)?](./what-the-heck-just-happened-2025-10-25.md)  
 - [🇺🇸📈💡🔮🚀 What the U.S. has accomplished in 250 years of innovation and what’s next](./what-the-us-has-accomplished-in-250-years-of-innovation-and-whats-next.md)  
 - [💰💣 What Trump’s ‘Big, Beautiful Bill’ Is Really Doing (Part 1) | The Ezra Klein Show](./what-trumps-big-beautiful-bill-is-really-doing-part-1-the-ezra-klein-show.md)  
 - [👹👶🏼💸➡️👴🏻💰 What Trump’s ‘Big, Beautiful Bill’ Is Really Doing (Part 2) | The Ezra Klein Show](./what-trumps-big-beautiful-bill-is-really-doing-part-2-the-ezra-klein-show.md)  

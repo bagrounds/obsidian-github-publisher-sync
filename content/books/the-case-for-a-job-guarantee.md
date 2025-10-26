@@ -72,7 +72,7 @@ affiliate link: https://amzn.to/47iuypP
   
 ### Similar  
 * [💰📉➡️📈🗳️ The Deficit Myth: Modern Monetary Theory and the Birth of the People's Economy](./the-deficit-myth.md) by Stephanie Kelton  
-* Full Employment and Social Justice: Solidarity and Sustainability by Bill Mitchell  
+* [🧑‍🤝‍🧑✅🌍 Full Employment and Social Justice: Solidarity and Sustainability](./full-employment-and-social-justice-solidarity-and-sustainability.md) by Bill Mitchell  
 * Making Money Work for Us: How MMT Can Save America by L. Randall Wray  
   
 ### Contrasting  

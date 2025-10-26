@@ -72,4 +72,7 @@ youtube: https://youtu.be/EsA3EOo7CXY
   
 ### 🎨 Creatively Related  
 * [⚫🦢🎲 The Black Swan: The Impact of the Highly Improbable](../books/the-black-swan-the-impact-of-the-highly-improbable.md) by Nassim Nicholas Taleb: is a deep dive into the impact of rare, unpredictable events that defy statistical models, relating to how data manipulation or sudden loss of trust can be an unpredictable Black Swan event with extreme consequences.  
-* ⚖️ The Great Reversal by Thomas Philippon: uses economic data to argue that the U.S. economy has become less competitive due to anti-competitive practices, tangentially relating by showing how a clear-eyed analysis of data can reveal structural issues that government figures might otherwise mask.
+* ⚖️ The Great Reversal by Thomas Philippon: uses economic data to argue that the U.S. economy has become less competitive due to anti-competitive practices, tangentially relating by showing how a clear-eyed analysis of data can reveal structural issues that government figures might otherwise mask.  
+  
+## 🐦 Tweet  
+<blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">🤔📊📉❓ What happens when no one trusts a country’s economic data<br><br>🇺🇸 US Economy | 🇬🇷 Greek Crisis | 🇦🇷 Argentina | 🤥 Data Manipulation | 📊 Statistical Integrity<a href="https://twitter.com/NewsHour?ref_src=twsrc%5Etfw">@NewsHour</a><a href="https://t.co/YgLupQ5xrP">https://t.co/YgLupQ5xrP</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/1982292690189603194?ref_src=twsrc%5Etfw">October 26, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

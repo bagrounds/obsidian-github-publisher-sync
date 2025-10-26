@@ -11,7 +11,7 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 ❔ What do 🫵 _you_ 🤔 think?  
   
 ## [🪞 Reflections](./reflections/index.md) ~ Blog (345)  
-- [2025-10-25](./reflections/2025-10-25.md)  
+- [2025-10-25 | ✅💼 Guaranteed Jobs 📚](./reflections/2025-10-25.md)  
 - [2025-10-24 | 🤑 Billionaires | 🗳️ Democracy | 🏛️💥 Demolition | 📰🕰️ News Hour 📺📰📚](./reflections/2025-10-24.md)  
 - [2025-10-23 | 🏎️ Drive | 💰 Oligarchy | ⚛️ Social Physics 📚](./reflections/2025-10-23.md)  
 - [2025-10-22 | 👹 Corrupt 💰 Capital 💸 Costs ⚖️ Civic 💥 Conflict 📚📰📺](./reflections/2025-10-22.md)  
@@ -23,17 +23,17 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [2025-10-16 | 🤕 Pain | 🐆 Leopard | 🤖 Disinformation 📺📚📄](./reflections/2025-10-16.md)  
   
   
-## [📚 Books](./books/index.md) (706)  
+## [📚 Books](./books/index.md) (707)  
+- [💼✅ The Case for a Job Guarantee](./books/the-case-for-a-job-guarantee.md)  
+- [🧑‍🤝‍🧑✅🌍 Full Employment and Social Justice: Solidarity and Sustainability](./books/full-employment-and-social-justice-solidarity-and-sustainability.md)  
 - [🏚️⚠️ The Precariat: The New Dangerous Class](./books/the-precariat-the-new-dangerous-class.md)  
 - [💰🏛️ Modern Money Theory: A Primer on Macroeconomics for Sovereign Monetary Systems](./books/modern-money-theory-a-primer-on-macroeconomics-for-sovereign-monetary-systems.md)  
 - [📉📈 Stabilizing an Unstable Economy](./books/stabilizing-an-unstable-economy.md)  
-- [💼✅ The Case for a Job Guarantee](./books/the-case-for-a-job-guarantee.md)  
 - [💰🤫 Dark Money: The Hidden History of the Billionaires Behind the Rise of the Radical Right](./books/dark-money-the-hidden-history-of-the-billionaires-behind-the-rise-of-the-radical-right.md)  
 - [🧠🏆 Inner Excellence: Train Your Mind for Extraordinary Performance and the Best Possible Life](./books/inner-excellence-train-your-mind-for-extraordinary-performance-and-the-best-possible-life.md)  
 - [💔💻 Burn Book: A Tech Love Story](./books/burn-book-a-tech-love-story.md)  
 - [🏆🎭 Winners Take All: The Elite Charade of Changing the World](./books/winners-take-all-the-elite-charade-of-changing-the-world.md)  
 - [🇺🇸⚔️💰 Fight Oligarchy](./books/fight-oligarchy.md)  
-- [🗣️💡🦠 Social Physics: How Good Ideas Spread - The Lessons from a New Science](./books/social-physics.md)  
   
   
 ## [📺 Videos](./videos/index.md) (386)  

@@ -11,7 +11,7 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 ❔ What do 🫵 _you_ 🤔 think?  
   
 ## [🪞 Reflections](./reflections/index.md) ~ Blog (345)  
-- [2025-10-25 | 💼 Jobs | 🤝 Trust | 💥 Demolition 📚📰📺](./reflections/2025-10-25.md)  
+- [2025-10-25 | 💼 Jobs | 🤝 Trust | 💥 Demolition | 📖 Giuffre 📚📰📺](./reflections/2025-10-25.md)  
 - [2025-10-24 | 🤑 Billionaires | 🗳️ Democracy | 🏛️💥 Demolition | 📰🕰️ News Hour 📺📰📚](./reflections/2025-10-24.md)  
 - [2025-10-23 | 🏎️ Drive | 💰 Oligarchy | ⚛️ Social Physics 📚](./reflections/2025-10-23.md)  
 - [2025-10-22 | 👹 Corrupt 💰 Capital 💸 Costs ⚖️ Civic 💥 Conflict 📚📰📺](./reflections/2025-10-22.md)  
@@ -36,9 +36,10 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [🏆🎭 Winners Take All: The Elite Charade of Changing the World](./books/winners-take-all-the-elite-charade-of-changing-the-world.md)  
   
   
-## [📺 Videos](./videos/index.md) (388)  
-- [❓😵🤯 What the Heck Just Happened (2025-10-25)?](./videos/what-the-heck-just-happened-2025-10-25.md)  
+## [📺 Videos](./videos/index.md) (389)  
 - [🤔📊📉❓ What happens when no one trusts a country’s economic data](./videos/what-happens-when-no-one-trusts-a-countrys-economic-data.md)  
+- [❓😵🤯 What the Heck Just Happened (2025-10-25)?](./videos/what-the-heck-just-happened-2025-10-25.md)  
+- [👧🏝️💰🏚️ Inside Virginia Giuffre’s Memoir, Trump’s Profits, and the East Wing Demolition](./videos/inside-virginia-giuffres-memoir-trumps-profits-and-the-east-wing-demolition.md)  
 - [👨‍🦳🆚💰 Senator Bernie Sanders on Fighting the Billionaires](./videos/senator-bernie-sanders-on-fighting-the-billionaires.md)  
 - [🇺🇸⚔️🏛️ The Fight to Save American Democracy — with Heather Cox Richardson | Prof G Conversations](./videos/the-fight-to-save-american-democracy-with-heather-cox-richardson-prof-g-conversations.md)  
 - [📺🕰️📰🎂🎉 A look at 50 years of the News Hour](./videos/a-look-at-50-years-of-the-news-hour.md)  
@@ -46,7 +47,6 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [🏗️📈🤝🌍 Building a Better Economy | Alex Pentland | TEDxMIT](./videos/building-a-better-economy-alex-pentland-tedxmit.md)  
 - [🤖👀❌📰 How to spot AI and misinformation online](./videos/how-to-spot-ai-and-misinformation-online.md)  
 - [💰🇺🇸❓🗣️ Who Owns America? Bernie Sanders Says the Quiet Part Out Loud](./videos/who-owns-america-bernie-sanders-says-the-quiet-part-out-loud.md)  
-- [🚫👑⚡✊ Sen. Bernie Sanders - Harnessing Energy From «No Kings» Rally to «Fight Oligarchy» | The Daily Show](./videos/sen-bernie-sanders-harnessing-energy-from-no-kings-rally-to-fight-oligarchy-the-daily-show.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (82)  

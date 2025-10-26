@@ -8,7 +8,7 @@ backlinks: false
 ---
 [Home](../index.md)  
 # 🪞 Reflections (345)  
-- [2025-10-25](./2025-10-25.md)  
+- [2025-10-25 | ✅💼 Guaranteed Jobs 📚](./2025-10-25.md)  
 - [2025-10-24 | 🤑 Billionaires | 🗳️ Democracy | 🏛️💥 Demolition | 📰🕰️ News Hour 📺📰📚](./2025-10-24.md)  
 - [2025-10-23 | 🏎️ Drive | 💰 Oligarchy | ⚛️ Social Physics 📚](./2025-10-23.md)  
 - [2025-10-22 | 👹 Corrupt 💰 Capital 💸 Costs ⚖️ Civic 💥 Conflict 📚📰📺](./2025-10-22.md)  

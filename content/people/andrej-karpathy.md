@@ -32,8 +32,9 @@ Here's a summary of his background, career, and impact:
 🧑‍💻 Andrej Karpathy is an influential figure 🌟 in the AI community 🤖, known for his technical expertise 🧠, leadership roles 💼, and commitment to making AI knowledge widely available 📚.  
   
 ## 📚 Book Recommendations  
-**🧠 For Deep Learning Fundamentals (often recommended by Karpathy and others):**  
-1. **📖 [🧠💻🤖 Deep Learning](../books/deep-learning.md) by Ian Goodfellow, Yoshua Bengio, and Aaron Courville:**  
+**🧠 For Vibe Coding and Deep Learning Fundamentals (often recommended by Karpathy and others):**  
+1. [🤖💻 Vibe Coding: Building Production-Grade Software With GenAI, Chat, Agents, and Beyond](../books/vibe-coding-building-production-grade-software-with-genai-chat-agents-and-beyond.md)  
+2. **📖 [🧠💻🤖 Deep Learning](../books/deep-learning.md) by Ian Goodfellow, Yoshua Bengio, and Aaron Courville:**  
     * 📚 This is often referred to as "the Deep Learning book." 🎓 It's a comprehensive, theoretical textbook that covers the mathematical and conceptual foundations of deep learning. 👨‍🏫 Karpathy mentioned that there were "very few books to draw on during my PhD for DL," but this book has become a definitive resource.  
     * 👍 **Best for:** 🤔 Those who want a rigorous, in-depth understanding of the underlying theory. 💻 It's not a hands-on coding book, but it's essential for a solid academic foundation.  
     * ❗ *Note: 🌐 It's available for free online.*  

@@ -23,7 +23,8 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [2025-10-18 | 🤖📣 Propaganda Machines | 🧑‍🧑‍🧒‍🧒🏢 Family Firms 📚](./reflections/2025-10-18.md)  
   
   
-## [📚 Books](./books/index.md) (709)  
+## [📚 Books](./books/index.md) (710)  
+- [🤖💻 Vibe Coding: Building Production-Grade Software With GenAI, Chat, Agents, and Beyond](./books/vibe-coding-building-production-grade-software-with-genai-chat-agents-and-beyond.md)  
 - [💰📉➡️📈🗳️ The Deficit Myth: Modern Monetary Theory and the Birth of the People's Economy](./books/the-deficit-myth.md)  
 - [💔👊⚖️ Nobody's Girl: A Memoir of Surviving Abuse and Fighting for Justice](./books/nobodys-girl-a-memoir-of-surviving-abuse-and-fighting-for-justice.md)  
 - [💼✅ The Case for a Job Guarantee](./books/the-case-for-a-job-guarantee.md)  
@@ -33,10 +34,11 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [💰🏛️ Modern Money Theory: A Primer on Macroeconomics for Sovereign Monetary Systems](./books/modern-money-theory-a-primer-on-macroeconomics-for-sovereign-monetary-systems.md)  
 - [📉📈 Stabilizing an Unstable Economy](./books/stabilizing-an-unstable-economy.md)  
 - [💰🤫 Dark Money: The Hidden History of the Billionaires Behind the Rise of the Radical Right](./books/dark-money-the-hidden-history-of-the-billionaires-behind-the-rise-of-the-radical-right.md)  
-- [🧠🏆 Inner Excellence: Train Your Mind for Extraordinary Performance and the Best Possible Life](./books/inner-excellence-train-your-mind-for-extraordinary-performance-and-the-best-possible-life.md)  
   
   
 ## [📺 Videos](./videos/index.md) (390)  
+- [💻🔄💻 Andrej Karpathy: Software Is Changing (Again)](./videos/andrej-karpathy-software-is-changing-again.md)  
+- [🙋💻❓ How I use LLMs](./videos/how-i-use-llms.md)  
 - [🪖🚫📚😠 Pentagon's attempt to ban books from base schools faces backlash from military families](./videos/pentagons-attempt-to-ban-books-from-base-schools-faces-backlash-from-military-families.md)  
 - [👧🏝️💰🏚️ Inside Virginia Giuffre’s Memoir, Trump’s Profits, and the East Wing Demolition](./videos/inside-virginia-giuffres-memoir-trumps-profits-and-the-east-wing-demolition.md)  
 - [🤔📊📉❓ What happens when no one trusts a country’s economic data](./videos/what-happens-when-no-one-trusts-a-countrys-economic-data.md)  
@@ -45,8 +47,6 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [🇺🇸⚔️🏛️ The Fight to Save American Democracy — with Heather Cox Richardson | Prof G Conversations](./videos/the-fight-to-save-american-democracy-with-heather-cox-richardson-prof-g-conversations.md)  
 - [📺🕰️📰🎂🎉 A look at 50 years of the News Hour](./videos/a-look-at-50-years-of-the-news-hour.md)  
 - [🏛️🔨🗑️ Brooks and Atkins Stohr on the East Wing demolition](./videos/brooks-and-atkins-stohr-on-the-east-wing-demolition.md)  
-- [🏗️📈🤝🌍 Building a Better Economy | Alex Pentland | TEDxMIT](./videos/building-a-better-economy-alex-pentland-tedxmit.md)  
-- [🤖👀❌📰 How to spot AI and misinformation online](./videos/how-to-spot-ai-and-misinformation-online.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (82)  
@@ -82,9 +82,9 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
   
   
 ## [👥 People](./people/index.md) (15)  
+- [🤖🧠💻 Andrej Karpathy](./people/andrej-karpathy.md)  
 - [👨‍🏫📚💻🤔 Cal Newport](./people/cal-newport.md)  
 - [🧠🫀👀🔬 Andrew Huberman](./people/andrew-huberman.md)  
-- [🧠🤝🐘 Jonathan Haidt](./people/jonathan-haidt.md)  
   
   
 ## [🛍️ Products](./products/index.md) (3)  

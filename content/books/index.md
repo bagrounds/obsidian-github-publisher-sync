@@ -7,7 +7,7 @@ URL: https://bagrounds.org/books
 backlinks: false
 ---
 [Home](../index.md)  
-# 📚 Books (707)  
+# 📚 Books (710)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)  
 - [🧑‍🤝‍🧑📈 10 to 25: The Science of Motivating Young People: A Groundbreaking Approach to Leading the Next Generation - And Making Your Own Life Easier](./10-to-25-the-science-of-motivating-young-people-a-groundbreaking-approach-to-leading-the-next-generation-and-making-your-own-life-easier.md)  
@@ -311,6 +311,7 @@ Feedback Control of Dynamic Systems]]
 - [🧠🌱💀 Made to Stick: Why Some Ideas Survive and Others Die](./made-to-stick.md)  
 - [🤯🐍🏘️🎪💥 Mad House: How Donald Trump, MAGA Mean Girls, a Former Used Car Salesman, a Florida Nepo Baby, and a Man with Rats in His Walls Broke Congress](./mad-house.md)  
 - [🧠🔒 Make It Stick: The Science of Successful Learning](./make-it-stick.md)  
+- [💰🇺🇸 Making Money Work for Us: How MMT Can Save America](./making-money-work-for-us-how-mmt-can-save-america.md)  
 - [💰⚕️ Making Them Pay: How to Get the Most from Health Insurance and Managed Care](./making-them-pay-how-to-get-the-most-from-health-insurance-and-managed-care.md)  
 - [🔦💡 Man's Search for Meaning](./mans-search-for-meaning.md)  
 - [🏭☢️😱 Manufactured Crisis: The Untold Story of the Iran Nuclear Scare](./manufactured-crisis-the-untold-story-of-the-iran-nuclear-scare.md)  
@@ -343,6 +344,7 @@ Feedback Control of Dynamic Systems]]
 - [🧠🧘🏼‍♀️ Neuro-Discipline: Everyday Neuroscience for Self-Discipline, Focus, and Defeating Your Brain's Impulsive and Distracted Nature](./neuro-discipline-everyday-neuroscience-for-self-discipline-focus-and-defeating-your-brains-impulsive-and-distracted-nature.md)  
 - [🙅🏼‍♀️🧾🏥⚔️ Never Pay the First Bill: And Other Ways to Fight the Health Care System and Win](./never-pay-the-first-bill-and-other-ways-to-fight-the-health-care-system-and-win.md)  
 - [🙅‍♀️✂️⚖️ Never Split the Difference: Negotiating As If Your Life Depended On It](./never-split-the-difference.md)  
+- [💔👊⚖️ Nobody's Girl: A Memoir of Surviving Abuse and Fighting for Justice](./nobodys-girl-a-memoir-of-surviving-abuse-and-fighting-for-justice.md)  
 - [🚫🎭🧠 No-Drama Discipline: The Whole-Brain Way to Calm the Chaos and Nurture Your Child's Developing Mind](./no-drama-discipline.md)  
 - [🙉📢😵‍💫🔇 Noise: A Flaw in Human Judgment](./noise.md)  
 - [🦋🌀💥🤖 Nonlinear Dynamics and Chaos: With Applications to Physics, Biology, Chemistry, and Engineering](./nonlinear-dynamics-and-chaos.md)  
@@ -683,6 +685,7 @@ Feedback Control of Dynamic Systems]]
 - [🌌📐🧩🗝️ Universal Principles of Design: 200 Ways to Increase Appeal, Enhance Usability, Influence Perception, and Make Better Design Decisions](./universal-principles-of-design.md)  
 - [💻⚙️ Usability Engineering](./usability-engineering.md)  
 - [✅🤔 Useful Not True](./useful-not-true.md)  
+- [🤖💻 Vibe Coding: Building Production-Grade Software With GenAI, Chat, Agents, and Beyond](./vibe-coding-building-production-grade-software-with-genai-chat-agents-and-beyond.md)  
 - [🇷🇺⚔️🇺🇦🇮🇱⚔️🇮🇷🇺🇸⚔️🇺🇸 War](./war.md)  
 - [⚔️🕊️ War and Peace](./war-and-peace.md)  
 - [📊📉🏛️ Weapons of Math Destruction: How Big Data Increases Inequality and Threatens Democracy](./weapons-of-math-destruction-how-big-data-increases-inequality-and-threatens-democracy.md)  

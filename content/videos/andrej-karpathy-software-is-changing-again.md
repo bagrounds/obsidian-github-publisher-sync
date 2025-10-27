@@ -3,7 +3,7 @@ share: true
 aliases:
   - "💻🔄💻 Andrej Karpathy: Software Is Changing (Again)"
 title: "💻🔄💻 Andrej Karpathy: Software Is Changing (Again)"
-URL: https://bagrounds.org/videos/
+URL: https://bagrounds.org/videos/andrej-karpathy-software-is-changing-again
 Author:
 Platform:
 Channel: Y Combinator
@@ -38,6 +38,7 @@ youtube: https://youtu.be/LCEmiRjPEtQ
 * 🔮 **Future Outlook:** ⏳ The industry is in an exciting, early stage, akin to the 1960s of operating systems \[[38:16](http://www.youtube.com/watch?v=LCEmiRjPEtQ&t=2296)\]. 📈 The next decade will see a gradual shift towards more autonomous products \[[39:08](http://www.youtube.com/watch?v=LCEmiRjPEtQ&t=2348)\].  
   
 ## 📚 Book Recommendations  
+- [🤖💻 Vibe Coding: Building Production-Grade Software With GenAI, Chat, Agents, and Beyond](../books/vibe-coding-building-production-grade-software-with-genai-chat-agents-and-beyond.md)  
 * **[🧠💻🤖 Deep Learning](../books/deep-learning.md)** by Ian Goodfellow, Yoshua Bengio, and Aaron Courville: 🏆 This is the **definitive guide to neural networks and deep learning** (what the video calls "Software 2.0"). 🤓 It's technical but comprehensive.  
 * 🗺️ **The Master Algorithm: How the Quest for the Ultimate Learning Machine Will Remake Our World** by Pedro Domingos: 🧩 It **explains different types of machine learning**, helping you understand where deep learning fits in the broader AI landscape.  
 * **[🤖🦜 Large Language Models: Concepts, Techniques and Applications](../books/large-language-models-concepts-techniques-and-applications.md)** by David Atkinson and Victor Abutridy: 📖 A great introduction to **how LLMs work, the models available, and how they're evaluated**.  

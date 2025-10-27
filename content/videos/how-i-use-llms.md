@@ -1,109 +1,65 @@
 ---
 share: true
 aliases:
-  - How I use LLMs
-title: How I use LLMs
+  - 🙋💻❓ How I use LLMs
+title: 🙋💻❓ How I use LLMs
 URL: https://youtu.be/EWvNQjAaOHw
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: Andrej Karpathy
-tags: 
+tags:
 ---
-[Home](../index.md) > [Videos](./index.md)  
-# How I use LLMs  
+[Home](../index.md) > [Videos](./index.md) | [🤖🧠💻 Andrej Karpathy](../people/andrej-karpathy.md)  
+# 🙋💻❓ How I use LLMs  
 ![How I use LLMs](https://youtu.be/EWvNQjAaOHw)  
   
-By [Andrej Karpathy](../people/andrej-karpathy.md)  
+## 🤖 AI Summary  
+* **ChatGPT** 🥇, deployed in 2022, is the Original Gangster incumbent, being the most popular and feature-rich model \[[01:13](http://www.youtube.com/watch?v=EWvNQjAaOHw&t=73)].  
+* The LLM **ecosystem** 🌳 is rich, featuring big Tech offerings like Google's Gemini, Meta, and Microsoft's Copilot, alongside startups like Anthropic's Claude and xAI's Grok \[[01:30](http://www.youtube.com/watch?v=EWvNQjAaOHw&t=90)].  
+* **Model leaderboards** 📊, such as Chatbot Arena and the Seal Leaderboard, can be used to track model strengths and current performance across a variety of tasks \[[02:08](http://www.youtube.com/watch?v=EWvNQjAaOHw&t=128)].  
+* The basic interaction involves giving the model a **text prompt** ✍️ and receiving text back, which is effective for creative tasks like generating haikus \[[02:53](http://www.youtube.com/watch?v=EWvNQjAaOHw&t=173)].  
+* The chat window functions as the model's **working memory** 🧠, and a buildup of tokens in the window can become distracting, decrease accuracy, and is expensive \[[16:45](http://www.youtube.com/watch?v=EWvNQjAaOHw&t=1005)].  
+* Always **start a new thread** 💡 when previous context is no longer useful to prevent distraction and mitigate token cost issues \[[16:45](http://www.youtube.com/watch?v=EWvNQjAaOHw&t=1005)].  
+* A **larger model** 🐘 has superior World Knowledge, answers complex questions, provides better writing, and is more creative \[[02:08:05](http://www.youtube.com/watch?v=EWvNQjAaOHw&t=7685)].  
+* The latest frontier is **reinforcement learning** 📈 to improve accuracy in problems involving math, code, and reasoning \[[02:08:32](http://www.youtube.com/watch?v=EWvNQjAaOHw&t=7712)].  
+* Models are rapidly gaining **tools** 🛠️ such as internet search for fresh knowledge and a Python interpreter for generating figures or plots (Advanced Data Analysis) \[[02:08:58](http://www.youtube.com/watch?v=EWvNQjAaOHw&t=7738)].  
+* **Multimodality** 📸 is maturing, allowing models to handle text, audio, images, and video as native input and output (Omni models) \[[02:09:39](http://www.youtube.com/watch?v=EWvNQjAaOHw&t=7779)].  
+* **Quality of life** ✨ features like file uploads, memory, instructions, and GPTs enhance the overall user experience \[[02:10:18](http://www.youtube.com/watch?v=EWvNQjAaOHw&t=7818)].  
+* Pricing for flagship models like **GPT-4o** involves usage limits, such as 80 messages every 3 hours for the $20 per month Plus subscription \[[19:32](http://www.youtube.com/watch?v=EWvNQjAaOHw&t=1172)].  
   
-## 🤖 AI Summary - Exploring Large Language Models (LLMs) and AI Tools  
-### **Introduction to Large Language Models (LLMs)**  
-- The video continues a general audience series on **[Large Language Models](../topics/large-language-models.md) (LLMs)**, particularly **ChatGPT**.  
-- Previous videos covered **how LLMs work under the hood**; this one focuses on **practical applications**.  
+## 🤔 Evaluation  
+* **The video** 🎥 offers an exceptionally practical and high-quality perspective on LLM use, drawing on the experience of a field leader.  
+* **The speaker's** 🗣️ use of metaphors, like the LLM being a zip file of the internet and the chat history acting as working memory, is widely accepted and scientifically sound in the AI community.  
+* **The claim** that reinforcement learning is a key frontier for improving reasoning, math, and code is supported by extensive research into techniques like Reinforcement Learning from Human Feedback (RLHF), as detailed in papers like **Training a Helpful and Harmless Assistant** (Anthropic, 2021).  
+* **Overall** ✅, the video is highly reliable and provides an unbiased technical and practical overview of the current LLM landscape.  
   
-### **Evolution of LLMs**  
-- **ChatGPT’s Launch (2022):** First major LLM deployment by OpenAI, allowing users to interact with AI through a text-based interface.  
-- **2025 AI Ecosystem:** The space has evolved, with competitors like:  
-  - **Google [Gemini](../software/gemini.md)**  
-  - **Meta’s AI assistant**  
-  - **Microsoft Copilot**  
-  - **Anthropic’s Claude**  
-  - **Elon Musk’s Grok**  
-  - **Chinese ([🇨🇳🤖 DeepSeek](../topics/deepseek.md)) and French (Mistral) AI models**.  
+### Topics to Explore for a Better Understanding  
+* **The Nature of Hallucination** 👻: Explore why LLMs generate false but plausible-sounding information, which is a key limitation of the next-token prediction mechanism, even in larger models.  
+* **Attention and Context Window Limits** 📏: Investigate the computational cost of the **attention mechanism**, the core concept introduced in the paper **Attention Is All You Need** (Google Brain, 2017), which explains why long chat histories are expensive and distracting.  
+* **Model Persona Training** 🎭: Research the specific post-training processes, such as Supervised Fine-Tuning (SFT) and RLHF, that transform the internet-trained zip file into a conversational assistant with a defined persona \[[02:08:05](http://www.youtube.com/watch?v=EWvNQjAaOHw&t=7685)].  
   
-### **Where to Track AI Model Performance**  
-- **Leaderboard Websites:**    
-  - **[Chatbot Arena](https://openlm.ai/chatbot-arena)** (for ranking AI models).    
-  - **[Scale AI’s Eval Leaderboard](https://scale.com/leaderboard)** (comparison of model performances on different tasks).    
+## ❓ Frequently Asked Questions (FAQ)  
   
-### **How LLMs Work**  
-- Inputs and outputs are broken into **tokens**.  
-- LLMs **predict the next token** based on patterns learned during training.  
-- **Limitations & Knowledge Cutoff** – LLMs rely on pre-existing data and may lack real-time updates.  
-### **AI-Powered Internet Search**  
-- AI can **visit multiple web pages**, extract relevant information, and summarize results.  
-- **Search Token Mechanism:** Some AI models use a search token to **trigger live web searches**.  
-- **Comparison of AI Search Capabilities** – Different AI models handle search differently (e.g., ChatGPT vs. Claude).  
+### 🛑 Q: Why are the conversational limits of chatbots like GPT-4o restricted, even for paid users?  
+💸 A: Conversational limits 🛑 are necessary because large language models, especially flagship models like GPT-4o, require a **substantial amount** of computational resources for each interaction. The models are inherently **expensive** 💰 to run due to their massive size and complexity, so capping messages helps manage server load, resource consumption, and cost.  
   
-### **Deep Research Feature in AI**  
-- A new feature allowing **AI to spend more time** on complex research.  
-- Combines **internet search** and **reasoning** to generate **detailed reports**.  
+### 🧠 Q: How does the size of a Large Language Model affect its performance?  
+📏 A: **Model size** 🧠 directly influences capability and performance. **Larger models** 🐘 typically contain more World Knowledge, effectively handle complex queries, produce higher-quality writing, and exhibit greater creativity. **Smaller models** 🤏 are prone to more errors, including generating false information, a behavior known as hallucination \[[02:08:05](http://www.youtube.com/watch?v=EWvNQjAaOHw&t=7685)].  
   
-### **LLMs and File Processing**  
-- **Uploading Documents for Analysis** – AI can analyze **PDFs, scientific papers, and books**.  
-- **Interactive Learning:** AI can provide summaries, historical context, and explanations.  
+### 🎨 Q: What is the significance of multimodality in modern large language models?  
+🖼️ A: **Multimodality** 🎨 is a crucial feature signifying a model's capacity to process and generate information across various formats, including **text, audio, images, and video** \[[02:09:39](http://www.youtube.com/watch?v=EWvNQjAaOHw&t=7779)]. This capability evolves models past simple text conversations, allowing them to perceive and interact with the world in a more integrated, human-like way.  
   
-### **AI for Data Analysis and Code Generation**  
-- **LLMs and Coding Assistance** – AI can generate code but must be **verified**.  
-- **AI for Advanced Data Analysis (ADA)** – Creating graphs, **trend predictions**, and statistical modeling.  
-- **Claude’s "Artifacts" Feature** – Interactive coding with **real-time JavaScript and React execution**.  
+## 📚 Book Recommendations  
   
-### **AI-Assisted Coding in VS Code & Cursor**  
-- **Cursor as an AI Coding Assistant** – AI-driven project modifications in **VS Code**.  
-- **"Vibe Coding" Approach** – AI automates **repetitive coding tasks**.  
+### ↔️ Similar  
+- [🤖💻 Vibe Coding: Building Production-Grade Software With GenAI, Chat, Agents, and Beyond](../books/vibe-coding-building-production-grade-software-with-genai-chat-agents-and-beyond.md)  
+* **[🧠💻🤖 Deep Learning](../books/deep-learning.md)** by Ian Goodfellow, Yoshua Bengio, and Aaron Courville: This serves as the definitive textbook on the fundamental concepts of deep learning, providing the theoretical foundation for how large language models are structured and trained.  
+* **The Algorithmic Foundations of Reinforcement Learning** by Csaba Szepesvári: This work provides a rigorous and deep dive into the mathematical techniques behind reinforcement learning, the advanced training method mentioned for improving an LLM's reasoning and accuracy.  
   
-### **AI and Multimodal Capabilities**  
-- LLMs now process **images, audio, and video**.  
-- Example: Analyzing a **nutrition label** from a supplement mix and categorizing ingredients.  
+### 🆚 Contrasting  
+* **The Myth of Artificial Intelligence: Why Computers Can’t Think the Way We Do** by Erik J. Larson: This book offers an opposing viewpoint by challenging the claims of strong general AI, arguing that current machine learning is fundamentally limited to narrow tasks and differs from human intelligence.  
+* **[🧠🧠🧠🧠 A Thousand Brains: A New Theory of Intelligence](../books/a-thousand-brains.md)** by Jeff Hawkins: This presents an alternative, biological theory of intelligence—the Thousand Brains Theory—which offers a distinct architectural model compared to the transformer-based mechanisms of modern LLMs.  
   
-### **AI for Medical and Scientific Analysis**  
-- **Blood Test Interpretation:** AI can transcribe **blood test results**, provide insights, and highlight concerns.  
-- **AI in Mathematics and Science:** Recognizing and solving **complex equations** from an image.  
-  
-### **AI for Everyday Object Analysis**  
-- Example: Uploading a **toothpaste ingredient list** to analyze which chemicals are **essential vs. unnecessary**.  
-  
-### **AI Image and Video Generation**  
-- **DALL·E 3** – Generates high-quality images based on text prompts.  
-- **AI-generated videos** – Tools like **Runway, Sora, and Pika** compete in video generation.  
-  
-### **Custom GPTs and AI Assistants**  
-- Users can build **custom GPTs** to automate tasks.  
-- Examples:  
-  - **Korean Vocabulary Extractor** – Turns sentences into flashcards.  
-  - **AI Subtitle Reader** – Extracts and translates subtitles from screenshots.  
-  
-## **Timestamps for Key Sections**  
-### **Introduction to Large Language Models (LLMs)**  
-- **[00:00:00 - Introduction](https://youtu.be/EWvNQjAaOHw&t=0)** – Overview of LLMs and ChatGPT's evolution.    
-- **[00:05:30 - AI Ecosystem in 2025](https://youtu.be/EWvNQjAaOHw&t=330)** – Google Gemini, Meta AI, Claude, Grok, etc.    
-- **[00:12:45 - How LLMs Work](https://youtu.be/EWvNQjAaOHw&t=765)** – Tokenization, prediction, and training phases.    
-  
-### **AI-Powered Search and Research**  
-- **[00:32:10 - AI for Web Search](https://youtu.be/EWvNQjAaOHw&t=1930)** – How AI fetches real-time information.    
-- **[00:40:00 - Deep Research Tools](https://youtu.be/EWvNQjAaOHw&t=2400)** – AI performing in-depth searches and summarization.    
-- **[00:50:20 - File Analysis](https://youtu.be/EWvNQjAaOHw&t=3020)** – Uploading PDFs for AI-powered summarization.    
-  
-### **AI for Data Science & Coding**  
-- **[01:06:00 - AI-Assisted Coding](https://youtu.be/EWvNQjAaOHw&t=3960)** – Using AI for software development.    
-- **[01:14:45 - Claude’s Artifacts Feature](https://youtu.be/EWvNQjAaOHw&t=4485)** – Generating code and flashcards.    
-- **[01:23:30 - Vibe Coding in VS Code](https://youtu.be/EWvNQjAaOHw&t=5010)** – AI-assisted programming and auto-coding.    
-  
-### **AI for Multimodal Understanding**  
-- **[01:41:30 - AI Image Processing](https://youtu.be/EWvNQjAaOHw&t=6090)** – Uploading images for AI analysis.    
-- **[01:45:00 - AI for Blood Test Interpretation](https://youtu.be/EWvNQjAaOHw&t=6300)** – Uploading medical results for AI insights.    
-- **[01:50:00 - AI for Meme Explanation](https://youtu.be/EWvNQjAaOHw&t=6600)** – Decoding humor and social media memes.    
-  
-### **AI-Generated Content and Personalization**  
-- **[02:00:00 - AI Image Generation](https://youtu.be/EWvNQjAaOHw&t=7200)** – Creating visuals using DALL·E.    
-- **[02:05:30 - ChatGPT Memory Feature](https://youtu.be/EWvNQjAaOHw&t=7530)** – How AI remembers user preferences.    
-- **[02:09:30 - Custom GPTs for Language Learning](https://youtu.be/EWvNQjAaOHw&t=7770)** – Creating AI-powered language tools.    
+### 🎨 Creatively Related  
+* **[🤔🐇🐢 Thinking, Fast and Slow](../books/thinking-fast-and-slow.md)** by Daniel Kahneman: This book explores human cognition's two systems (fast/intuitive and slow/deliberate), which can be analogized to an LLM's quick token-prediction versus its slower, deliberate Chain-of-Thought reasoning using its context window working memory.  
+* **[📱🧠 The Shallows: What the Internet Is Doing to Our Brains](../books/the-shallows-what-the-internet-is-doing-to-our-brains.md)** by Nicholas Carr: This work examines how new information technologies, like the internet that forms the basis of the LLM's training data (the zip file), are changing human attention and knowledge consumption, providing a macro-cultural lens on the subject.

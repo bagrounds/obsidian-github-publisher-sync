@@ -10,7 +10,9 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 📑 Notes, 💭 thoughts, and 🔗 Links.  
 ❔ What do 🫵 _you_ 🤔 think?  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (345)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (347)  
+- [2025-10-27](./reflections/2025-10-27.md)  
+- [2025-10-26 | 👹⛓️👧🏼 Sex Trafficking | 🇺🇸🚫📚 Book Bans 📚📰](./reflections/2025-10-26.md)  
 - [2025-10-25 | 💼 Jobs | 🤝 Trust | 💥 Demolition | 📖 Giuffre 📚📰📺](./reflections/2025-10-25.md)  
 - [2025-10-24 | 🤑 Billionaires | 🗳️ Democracy | 🏛️💥 Demolition | 📰🕰️ News Hour 📺📰📚](./reflections/2025-10-24.md)  
 - [2025-10-23 | 🏎️ Drive | 💰 Oligarchy | ⚛️ Social Physics 📚](./reflections/2025-10-23.md)  
@@ -19,11 +21,11 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [2025-10-20 | 🐆 Patterns | 🐾 Cats | 🔋 Mitochondria 📄📚📺](./reflections/2025-10-20.md)  
 - [2025-10-19 | 🏫💸 The Paradox of School Choice 📰📚](./reflections/2025-10-19.md)  
 - [2025-10-18 | 🤖📣 Propaganda Machines | 🧑‍🧑‍🧒‍🧒🏢 Family Firms 📚](./reflections/2025-10-18.md)  
-- [2025-10-17 | 🤥 Demagoguery | 📜 Law | 🤸🏼‍♀️ Mobility 📺📚](./reflections/2025-10-17.md)  
-- [2025-10-16 | 🤕 Pain | 🐆 Leopard | 🤖 Disinformation 📺📚📄](./reflections/2025-10-16.md)  
   
   
-## [📚 Books](./books/index.md) (708)  
+## [📚 Books](./books/index.md) (709)  
+- [💰📉➡️📈🗳️ The Deficit Myth: Modern Monetary Theory and the Birth of the People's Economy](./books/the-deficit-myth.md)  
+- [💔👊⚖️ Nobody's Girl: A Memoir of Surviving Abuse and Fighting for Justice](./books/nobodys-girl-a-memoir-of-surviving-abuse-and-fighting-for-justice.md)  
 - [💼✅ The Case for a Job Guarantee](./books/the-case-for-a-job-guarantee.md)  
 - [💰🇺🇸 Making Money Work for Us: How MMT Can Save America](./books/making-money-work-for-us-how-mmt-can-save-america.md)  
 - [🧑‍🤝‍🧑✅🌍 Full Employment and Social Justice: Solidarity and Sustainability](./books/full-employment-and-social-justice-solidarity-and-sustainability.md)  
@@ -32,21 +34,19 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [📉📈 Stabilizing an Unstable Economy](./books/stabilizing-an-unstable-economy.md)  
 - [💰🤫 Dark Money: The Hidden History of the Billionaires Behind the Rise of the Radical Right](./books/dark-money-the-hidden-history-of-the-billionaires-behind-the-rise-of-the-radical-right.md)  
 - [🧠🏆 Inner Excellence: Train Your Mind for Extraordinary Performance and the Best Possible Life](./books/inner-excellence-train-your-mind-for-extraordinary-performance-and-the-best-possible-life.md)  
-- [💔💻 Burn Book: A Tech Love Story](./books/burn-book-a-tech-love-story.md)  
-- [🏆🎭 Winners Take All: The Elite Charade of Changing the World](./books/winners-take-all-the-elite-charade-of-changing-the-world.md)  
   
   
-## [📺 Videos](./videos/index.md) (389)  
+## [📺 Videos](./videos/index.md) (390)  
+- [🪖🚫📚😠 Pentagon's attempt to ban books from base schools faces backlash from military families](./videos/pentagons-attempt-to-ban-books-from-base-schools-faces-backlash-from-military-families.md)  
+- [👧🏝️💰🏚️ Inside Virginia Giuffre’s Memoir, Trump’s Profits, and the East Wing Demolition](./videos/inside-virginia-giuffres-memoir-trumps-profits-and-the-east-wing-demolition.md)  
 - [🤔📊📉❓ What happens when no one trusts a country’s economic data](./videos/what-happens-when-no-one-trusts-a-countrys-economic-data.md)  
 - [❓😵🤯 What the Heck Just Happened (2025-10-25)?](./videos/what-the-heck-just-happened-2025-10-25.md)  
-- [👧🏝️💰🏚️ Inside Virginia Giuffre’s Memoir, Trump’s Profits, and the East Wing Demolition](./videos/inside-virginia-giuffres-memoir-trumps-profits-and-the-east-wing-demolition.md)  
 - [👨‍🦳🆚💰 Senator Bernie Sanders on Fighting the Billionaires](./videos/senator-bernie-sanders-on-fighting-the-billionaires.md)  
 - [🇺🇸⚔️🏛️ The Fight to Save American Democracy — with Heather Cox Richardson | Prof G Conversations](./videos/the-fight-to-save-american-democracy-with-heather-cox-richardson-prof-g-conversations.md)  
 - [📺🕰️📰🎂🎉 A look at 50 years of the News Hour](./videos/a-look-at-50-years-of-the-news-hour.md)  
 - [🏛️🔨🗑️ Brooks and Atkins Stohr on the East Wing demolition](./videos/brooks-and-atkins-stohr-on-the-east-wing-demolition.md)  
 - [🏗️📈🤝🌍 Building a Better Economy | Alex Pentland | TEDxMIT](./videos/building-a-better-economy-alex-pentland-tedxmit.md)  
 - [🤖👀❌📰 How to spot AI and misinformation online](./videos/how-to-spot-ai-and-misinformation-online.md)  
-- [💰🇺🇸❓🗣️ Who Owns America? Bernie Sanders Says the Quiet Part Out Loud](./videos/who-owns-america-bernie-sanders-says-the-quiet-part-out-loud.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (82)  

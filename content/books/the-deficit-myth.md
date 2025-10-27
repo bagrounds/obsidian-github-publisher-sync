@@ -66,7 +66,7 @@ Here is the text with emojis inserted:
 * The book has received positive reviews from economists and policymakers who appreciate its fresh perspective on fiscal policy 👥. It also has been subject to criticism, much of which centers on the risk of inflation, and the political implications of an MMT based policy 🚨.  
   
 #### Further Reading 📚  
-* **Best Alternate Book on the Same Topic:** "Macroeconomics" by William Mitchell, L. Randall Wray, and Martin Watts 📚 (More technical and comprehensive).  
+* **Best Alternate Book on the Same Topic:** [🌍💰📊 Macroeconomics](./macroeconomics.md) by William Mitchell, L. Randall Wray, and Martin Watts 📚 (More technical and comprehensive).  
 * **Best Tangentially Related Book:** [🍩🌍 Doughnut Economics: Seven Ways to Think Like a 21st-Century Economist](./doughnut-economics-seven-ways-to-think-like-a-21st-century-economist.md) by Kate Raworth 🌎 (Focuses on sustainable economic models).  
 * **Best Diametrically Opposed Book:** "Economics in One Lesson" by Henry Hazlitt 💸 (Advocates for free-market principles and limited government intervention).  
 * **Best Fiction Book That Incorporates Related Ideas:** "The Ministry for the Future" by Kim Stanley Robinson 🌟 (Explores economic and social responses to climate change).  

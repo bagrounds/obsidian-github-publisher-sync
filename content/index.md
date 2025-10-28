@@ -7,8 +7,10 @@ backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 ---
 # 🏡 Home  
+📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
 📑 Notes, 💭 thoughts, and 🔗 Links.  
 ❔ What do 🫵 _you_ 🤔 think?  
+💬 Comment on any page with your GitHub account.  
   
 ## [🪞 Reflections](./reflections/index.md) ~ Blog (348)  
 - [2025-10-28](./reflections/2025-10-28.md)  

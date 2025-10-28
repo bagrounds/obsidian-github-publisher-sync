@@ -10,8 +10,9 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 📑 Notes, 💭 thoughts, and 🔗 Links.  
 ❔ What do 🫵 _you_ 🤔 think?  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (347)  
-- [2025-10-27](./reflections/2025-10-27.md)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (348)  
+- [2025-10-28](./reflections/2025-10-28.md)  
+- [2025-10-27 | 💰🦄 Deficit Myths | 🤖💻 Vibe Coding | 👑 3rd Term 📚📰](./reflections/2025-10-27.md)  
 - [2025-10-26 | 👹⛓️👧🏼 Sex Trafficking | 🇺🇸🚫📚 Book Bans 📚📰](./reflections/2025-10-26.md)  
 - [2025-10-25 | 💼 Jobs | 🤝 Trust | 💥 Demolition | 📖 Giuffre 📚📰📺](./reflections/2025-10-25.md)  
 - [2025-10-24 | 🤑 Billionaires | 🗳️ Democracy | 🏛️💥 Demolition | 📰🕰️ News Hour 📺📰📚](./reflections/2025-10-24.md)  
@@ -20,12 +21,11 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [2025-10-21 | 🐈 Decode | 🇺🇸 Divide | 🏎️ Drive | 🚫👑 Dethrone 📚📰📺](./reflections/2025-10-21.md)  
 - [2025-10-20 | 🐆 Patterns | 🐾 Cats | 🔋 Mitochondria 📄📚📺](./reflections/2025-10-20.md)  
 - [2025-10-19 | 🏫💸 The Paradox of School Choice 📰📚](./reflections/2025-10-19.md)  
-- [2025-10-18 | 🤖📣 Propaganda Machines | 🧑‍🧑‍🧒‍🧒🏢 Family Firms 📚](./reflections/2025-10-18.md)  
   
   
 ## [📚 Books](./books/index.md) (710)  
-- [🤖💻 Vibe Coding: Building Production-Grade Software With GenAI, Chat, Agents, and Beyond](./books/vibe-coding-building-production-grade-software-with-genai-chat-agents-and-beyond.md)  
 - [💰📉➡️📈🗳️ The Deficit Myth: Modern Monetary Theory and the Birth of the People's Economy](./books/the-deficit-myth.md)  
+- [🤖💻 Vibe Coding: Building Production-Grade Software With GenAI, Chat, Agents, and Beyond](./books/vibe-coding-building-production-grade-software-with-genai-chat-agents-and-beyond.md)  
 - [💔👊⚖️ Nobody's Girl: A Memoir of Surviving Abuse and Fighting for Justice](./books/nobodys-girl-a-memoir-of-surviving-abuse-and-fighting-for-justice.md)  
 - [💼✅ The Case for a Job Guarantee](./books/the-case-for-a-job-guarantee.md)  
 - [💰🇺🇸 Making Money Work for Us: How MMT Can Save America](./books/making-money-work-for-us-how-mmt-can-save-america.md)  
@@ -36,7 +36,8 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [💰🤫 Dark Money: The Hidden History of the Billionaires Behind the Rise of the Radical Right](./books/dark-money-the-hidden-history-of-the-billionaires-behind-the-rise-of-the-radical-right.md)  
   
   
-## [📺 Videos](./videos/index.md) (390)  
+## [📺 Videos](./videos/index.md) (391)  
+- [🇺🇸🔄👑😬 Tamara Keith and Amy Walter on Trump flirting with the idea of the 3rd term](./videos/tamara-keith-and-amy-walter-on-trump-flirting-with-the-idea-of-the-3rd-term.md)  
 - [💻🔄💻 Andrej Karpathy: Software Is Changing (Again)](./videos/andrej-karpathy-software-is-changing-again.md)  
 - [🙋💻❓ How I use LLMs](./videos/how-i-use-llms.md)  
 - [🪖🚫📚😠 Pentagon's attempt to ban books from base schools faces backlash from military families](./videos/pentagons-attempt-to-ban-books-from-base-schools-faces-backlash-from-military-families.md)  
@@ -46,7 +47,6 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [👨‍🦳🆚💰 Senator Bernie Sanders on Fighting the Billionaires](./videos/senator-bernie-sanders-on-fighting-the-billionaires.md)  
 - [🇺🇸⚔️🏛️ The Fight to Save American Democracy — with Heather Cox Richardson | Prof G Conversations](./videos/the-fight-to-save-american-democracy-with-heather-cox-richardson-prof-g-conversations.md)  
 - [📺🕰️📰🎂🎉 A look at 50 years of the News Hour](./videos/a-look-at-50-years-of-the-news-hour.md)  
-- [🏛️🔨🗑️ Brooks and Atkins Stohr on the East Wing demolition](./videos/brooks-and-atkins-stohr-on-the-east-wing-demolition.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (82)  

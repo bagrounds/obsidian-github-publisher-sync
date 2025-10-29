@@ -7,8 +7,9 @@ URL: https://bagrounds.org/reflections
 backlinks: false
 ---
 [Home](../index.md)  
-# 🪞 Reflections (348)  
-- [2025-10-28](./2025-10-28.md)  
+# 🪞 Reflections (349)  
+- [2025-10-29 | 💵 Deficits | 🤖 Vibes 📚](./2025-10-29.md)  
+- [2025-10-28 | 🧸 Soft Currency | 👽🏥 Undocumented Healthcare | 🥦 SNAP 📚📰📺](./2025-10-28.md)  
 - [2025-10-27 | 💰🦄 Deficit Myths | 🤖💻 Vibe Coding | 👑 3rd Term 📚📰](./2025-10-27.md)  
 - [2025-10-26 | 👹⛓️👧🏼 Sex Trafficking | 🇺🇸🚫📚 Book Bans 📚📰](./2025-10-26.md)  
 - [2025-10-25 | 💼 Jobs | 🤝 Trust | 💥 Demolition | 📖 Giuffre 📚📰📺](./2025-10-25.md)  

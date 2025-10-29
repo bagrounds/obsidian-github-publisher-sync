@@ -2,7 +2,7 @@
 title: "💰📉➡️📈🗳️ The Deficit Myth: Modern Monetary Theory and the Birth of the People's Economy"
 aliases:
   - "💰📉➡️📈🗳️ The Deficit Myth: Modern Monetary Theory and the Birth of the People's Economy"
-URL: https://bagrounds.org/books/the-deficit-myth-modern-monetary-theory-and-the-birth-of-the-peoples-economy
+URL: https://bagrounds.org/books/the-deficit-myth
 share: true
 CTA: 💸 Dismantle scarcity.
 affiliate link: https://amzn.to/43NOEVV

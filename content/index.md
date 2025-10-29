@@ -12,8 +12,9 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 ❔ What do 🫵 _you_ 🤔 think?  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (348)  
-- [2025-10-28](./reflections/2025-10-28.md)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (349)  
+- [2025-10-29 | 💵 Deficits | 🤖 Vibes 📚](./reflections/2025-10-29.md)  
+- [2025-10-28 | 🧸 Soft Currency | 👽🏥 Undocumented Healthcare | 🥦 SNAP 📚📰📺](./reflections/2025-10-28.md)  
 - [2025-10-27 | 💰🦄 Deficit Myths | 🤖💻 Vibe Coding | 👑 3rd Term 📚📰](./reflections/2025-10-27.md)  
 - [2025-10-26 | 👹⛓️👧🏼 Sex Trafficking | 🇺🇸🚫📚 Book Bans 📚📰](./reflections/2025-10-26.md)  
 - [2025-10-25 | 💼 Jobs | 🤝 Trust | 💥 Demolition | 📖 Giuffre 📚📰📺](./reflections/2025-10-25.md)  
@@ -22,10 +23,10 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [2025-10-22 | 👹 Corrupt 💰 Capital 💸 Costs ⚖️ Civic 💥 Conflict 📚📰📺](./reflections/2025-10-22.md)  
 - [2025-10-21 | 🐈 Decode | 🇺🇸 Divide | 🏎️ Drive | 🚫👑 Dethrone 📚📰📺](./reflections/2025-10-21.md)  
 - [2025-10-20 | 🐆 Patterns | 🐾 Cats | 🔋 Mitochondria 📄📚📺](./reflections/2025-10-20.md)  
-- [2025-10-19 | 🏫💸 The Paradox of School Choice 📰📚](./reflections/2025-10-19.md)  
   
   
-## [📚 Books](./books/index.md) (710)  
+## [📚 Books](./books/index.md) (711)  
+- [💵🏛️📈 Soft Currency Economics II: The Origin of Modern Monetary Theory](./books/soft-currency-economics-ii-the-origin-of-modern-monetary-theory.md)  
 - [💰📉➡️📈🗳️ The Deficit Myth: Modern Monetary Theory and the Birth of the People's Economy](./books/the-deficit-myth.md)  
 - [🤖💻 Vibe Coding: Building Production-Grade Software With GenAI, Chat, Agents, and Beyond](./books/vibe-coding-building-production-grade-software-with-genai-chat-agents-and-beyond.md)  
 - [💔👊⚖️ Nobody's Girl: A Memoir of Surviving Abuse and Fighting for Justice](./books/nobodys-girl-a-memoir-of-surviving-abuse-and-fighting-for-justice.md)  
@@ -35,10 +36,11 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [🏚️⚠️ The Precariat: The New Dangerous Class](./books/the-precariat-the-new-dangerous-class.md)  
 - [💰🏛️ Modern Money Theory: A Primer on Macroeconomics for Sovereign Monetary Systems](./books/modern-money-theory-a-primer-on-macroeconomics-for-sovereign-monetary-systems.md)  
 - [📉📈 Stabilizing an Unstable Economy](./books/stabilizing-an-unstable-economy.md)  
-- [💰🤫 Dark Money: The Hidden History of the Billionaires Behind the Rise of the Radical Right](./books/dark-money-the-hidden-history-of-the-billionaires-behind-the-rise-of-the-radical-right.md)  
   
   
-## [📺 Videos](./videos/index.md) (391)  
+## [📺 Videos](./videos/index.md) (393)  
+- [📰🇺🇸❓🏛️ This Week In Politics, A Big-Picture Look at Where We Are Right Now | Explainer](./videos/this-week-in-politics-a-big-picture-look-at-where-we-are-right-now-explainer.md)  
+- [❓🏥🛂 Who Pays for Undocumented Migrants’ Healthcare? Reporter Explains | Amanpour and Company](./videos/who-pays-for-undocumented-migrants-healthcare-reporter-explains-amanpour-and-company.md)  
 - [🇺🇸🔄👑😬 Tamara Keith and Amy Walter on Trump flirting with the idea of the 3rd term](./videos/tamara-keith-and-amy-walter-on-trump-flirting-with-the-idea-of-the-3rd-term.md)  
 - [💻🔄💻 Andrej Karpathy: Software Is Changing (Again)](./videos/andrej-karpathy-software-is-changing-again.md)  
 - [🙋💻❓ How I use LLMs](./videos/how-i-use-llms.md)  
@@ -47,8 +49,6 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [🤔📊📉❓ What happens when no one trusts a country’s economic data](./videos/what-happens-when-no-one-trusts-a-countrys-economic-data.md)  
 - [❓😵🤯 What the Heck Just Happened (2025-10-25)?](./videos/what-the-heck-just-happened-2025-10-25.md)  
 - [👨‍🦳🆚💰 Senator Bernie Sanders on Fighting the Billionaires](./videos/senator-bernie-sanders-on-fighting-the-billionaires.md)  
-- [🇺🇸⚔️🏛️ The Fight to Save American Democracy — with Heather Cox Richardson | Prof G Conversations](./videos/the-fight-to-save-american-democracy-with-heather-cox-richardson-prof-g-conversations.md)  
-- [📺🕰️📰🎂🎉 A look at 50 years of the News Hour](./videos/a-look-at-50-years-of-the-news-hour.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (82)  

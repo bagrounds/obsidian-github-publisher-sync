@@ -4,8 +4,8 @@ aliases:
   - "♊💻🆚 Gemini CLI + VS Code: Native diffing and context-aware workflows"
 title: "♊💻🆚 Gemini CLI + VS Code: Native diffing and context-aware workflows"
 URL: https://bagrounds.org/articles/gemini-cli-+-vs-code-native-diffing-and-context-aware-workflows
-Author: 
-tags: 
+Author:
+tags:
 ---
 [Home](../index.md) > [Articles](./index.md)  
 # ♊💻🆚 Gemini CLI + VS Code: Native diffing and context-aware workflows  
@@ -25,4 +25,4 @@ This integration 🤝 significantly differs from a standalone CLI by moving the 
 - [🤖💻 AI-Powered Developer: Build great software with ChatGPT and Copilot](../books/ai-powered-developer-build-great-software-with-chatgpt-and-copilot.md) by Nathan B. Crocker: A relevant book that explores how developers can harness AI to boost productivity and handle various tasks.  
 - The Linux Command Line by William Shotts: A contrasting recommendation that focuses on the foundational skills of using the terminal, highlighting that a deep understanding of the command line is still crucial, even with AI tools.  
 - Context-Aware Pervasive Systems by Seng Loke: A creatively related book that delves into the architectures and principles of context-aware systems, providing a theoretical foundation for the technology powering the Gemini CLI's new features.  
-- Patterns of Application Development Using AI by Obie Fernandez: Offers a pragmatic approach to integrating AI components into application architectures, with real-world examples and lessons learned.
+- [🤖🧩 Patterns of Application Development Using AI](../books/patterns-of-application-development-using-ai.md) by Obie Fernandez: Offers a pragmatic approach to integrating AI components into application architectures, with real-world examples and lessons learned.

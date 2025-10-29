@@ -56,6 +56,7 @@ youtube: https://youtu.be/MFsYKQdcdz0
 ### ↔️ Similar  
   
 - [🤖💻 Vibe Coding: Building Production-Grade Software With GenAI, Chat, Agents, and Beyond](../books/vibe-coding-building-production-grade-software-with-genai-chat-agents-and-beyond.md)  
+- [🤖🏗️ AI Engineering: Building Applications with Foundation Models](../books/ai-engineering-building-applications-with-foundation-models.md)  
 * 📚 Patterns of Application Development Using AI by Obie Fernandez. This book offers a pragmatic, pattern-based approach to integrating Large Language Models (LLMs) into application architectures, focusing on practical, real-world use cases.  
 * 🧠 The LLM Engineering Handbook by Paul Iusztin and Maxime Labonne. This covers the entire LLM stack, including embedding models and vector databases, providing essential knowledge for building resilient, AI-driven systems.  
   

@@ -35,30 +35,25 @@ jobs:
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git config --global user.name "github-actions[bot]"
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '20'
-          cache: 'npm'
-
-      - name: Install Dependencies
-        run: npm ci
-
-      - name: Cache Quartz Transpiled Build
+      - name: Cache Node Modules
+        id: cache
         uses: actions/cache@v4
         with:
-          path: .quartz-cache
-          key: quartz-cache-${{ hashFiles('quartz/**/*.ts', 'quartz/**/*.tsx', 'quartz/**/*.scss', 'package-lock.json') }}
+          path: node_modules
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
           restore-keys: |
-            quartz-cache-
+            ${{ runner.os }}-node-
+
+      - name: Install Dependencies (if cache is not hit)
+        if: ${{ steps.cache.outputs.cache-hit != 'true' }}
+        run: npm ci
 
       - name: Cache OG Images
         uses: actions/cache@v4
         with:
           path: public
-          key: og-images-${{ hashFiles('content/**/*.md', 'quartz.config.ts', 'quartz.layout.ts') }}
+          key: og-images-${{ github.sha }}
           restore-keys: |
-            og-images-${{ hashFiles('quartz.config.ts', 'quartz.layout.ts') }}-
             og-images-
 
       - name: Build Quartz

@@ -5,6 +5,7 @@ on:
     branches:
       - main
       - copilot/investigate-build-time-optimization  # TEMPORARY: for testing cache optimization
+  workflow_dispatch:  # TEMPORARY: allows manual trigger for testing
 
 permissions:
   contents: read

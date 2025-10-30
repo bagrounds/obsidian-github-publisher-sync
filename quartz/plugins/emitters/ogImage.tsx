@@ -78,7 +78,9 @@ async function processOgImage(
   const slug = fileData.slug!
   const outputPath = path.join(ctx.argv.output, `${slug}-og-image.webp`)
   
-  // Skip regeneration if OG image exists and is newer than source
+  // Hybrid caching strategy: GitHub Actions caches the entire public/ directory
+  // (see .github/workflows/deploy.yml), and this code performs per-file checking
+  // at build time. Skip regeneration if cached OG image exists and is newer than source.
   if (SKIP_EXISTING) {
     try {
       const ogImageStats = await fs.stat(outputPath)

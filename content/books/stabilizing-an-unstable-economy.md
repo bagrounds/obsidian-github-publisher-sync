@@ -72,7 +72,7 @@ affiliate link: https://amzn.to/4qt1iDY
 * 📖 Why Minsky Matters: An Introduction to the Work of a Maverick Economist by L. Randall Wray  
   
 ### 🆚 Contrasting  
-* 📖 The General Theory of Employment, Interest and Money by John Maynard Keynes (for its foundational role and Minsky's critical extension of it)  
+* [🧑‍💼🏦💸 The General Theory of Employment, Interest, and Money](./the-general-theory-of-employment-interest-and-money.md) by John Maynard Keynes (for its foundational role and Minsky's critical extension of it)  
 * [👉🤏 Nudge: Improving Decisions about Health, Wealth, and Happiness](./nudge.md) by Richard H. Thaler and Cass R. Sunstein (focus on behavioral interventions vs. structural regulation)  
 * [🤔🐇🐢 Thinking, Fast and Slow](./thinking-fast-and-slow.md) by Daniel Kahneman (explores cognitive biases relevant to economic decision-making without Minsky's structural focus)  
   

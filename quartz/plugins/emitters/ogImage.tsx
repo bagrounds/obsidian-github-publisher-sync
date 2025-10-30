@@ -15,6 +15,7 @@ import path from "node:path"
 import chalk from "chalk"
 
 const SKIP_EXISTING = process.env.SKIP_EXISTING_OG_IMAGES === "true"
+console.log(`[OG Cache] SKIP_EXISTING_OG_IMAGES env var: "${process.env.SKIP_EXISTING_OG_IMAGES}", SKIP_EXISTING: ${SKIP_EXISTING}`)
 
 const defaultOptions: SocialImageOptions = {
   colorScheme: "lightMode",

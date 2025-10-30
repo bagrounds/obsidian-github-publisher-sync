@@ -84,7 +84,7 @@ CTA: 💡 Understand money.
   
 ### 📖 Related  
 * [🏛️💰 Debt: The First 5,000 Years](./debt-the-first-5000-years.md) by David Graeber  
-* The General Theory of Employment, Interest and Money by John Maynard Keynes  
+* [🧑‍💼🏦💸 The General Theory of Employment, Interest, and Money](./the-general-theory-of-employment-interest-and-money.md) by John Maynard Keynes  
 * [💰📈🌍⏳ Capital in the Twenty-First Century](./capital-in-the-twenty-first-century.md) by Thomas Piketty  
   
 ## 🫵 What Do You Think?  

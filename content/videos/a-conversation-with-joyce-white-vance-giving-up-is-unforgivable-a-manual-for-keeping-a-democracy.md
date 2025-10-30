@@ -57,6 +57,7 @@ youtube: https://youtu.be/juxS6qgVNuc
 ## 📚 Book Recommendations  
   
 ### ↔️ Similar  
+- [🏛️💪 Giving Up Is Unforgivable: A Manual for Keeping a Democracy](../books/giving-up-is-unforgivable-a-manual-for-keeping-a-democracy.md)  
 * 📚 The Authoritarian Moment by Ben Sasse. 🤝 Details how the breakdown of civil discourse and the rise of political extremism creates a fertile ground for the democratic threats discussed in the video.  
 * 📚 How Civil Wars Start: And How to Stop Them by Barbara F. Walter. 🛑 Explores the conditions and warning signs of democratic breakdown and political violence, echoing the speaker's concerns about the fragility of the current system.  
   

@@ -13,7 +13,7 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 💬 Comment on any page with your GitHub account.  
   
 ## [🪞 Reflections](./reflections/index.md) ~ Blog (349)  
-- [📅📉🤖 2025-10-29 | 💵 Deficits | 🤖 Vibes 📚](./reflections/2025-10-29.md)  
+- [2025-10-29 | 💵 Deficits | 🤖 Vibes 📚](./reflections/2025-10-29.md)  
 - [2025-10-28 | 🧸 Soft Currency | 👽🏥 Undocumented Healthcare | 🥦 SNAP 📚📰📺](./reflections/2025-10-28.md)  
 - [2025-10-27 | 💰🦄 Deficit Myths | 🤖💻 Vibe Coding | 👑 3rd Term 📚📰](./reflections/2025-10-27.md)  
 - [2025-10-26 | 👹⛓️👧🏼 Sex Trafficking | 🇺🇸🚫📚 Book Bans 📚📰](./reflections/2025-10-26.md)  
@@ -39,11 +39,11 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
   
   
 ## [📺 Videos](./videos/index.md) (399)  
+- [✨💻💀🤖 Steve Yegge on productive vibe coding, the death of the IDE, babysitting a fleet of AI coding agents](./videos/steve-yegge-on-productive-vibe-coding-the-death-of-the-ide-babysitting-a-fleet-of-ai-coding-agents.md)  
 - [🧑‍🔬📉🇺🇸🔚 Top researchers consider leaving U.S. amid funding cuts: 'The science world is ending'](./videos/top-researchers-consider-leaving-us-amid-funding-cuts-the-science-world-is-ending.md)  
 - [🇺🇸🛡️💪 Never Give Up A Conversation with Joyce White Vance—«Giving Up Is Unforgivable: A Manual for Keeping a Democracy»](./videos/a-conversation-with-joyce-white-vance-giving-up-is-unforgivable-a-manual-for-keeping-a-democracy.md)  
 - [👨‍💻➡️🤖🧩 Beyond the IDE: Toward Multi-Agent Orchestration](./videos/beyond-the-ide-toward-multi-agent-orchestration.md)  
 - [😎✨💻🔮 Vibe Coding Is The Only Future - Steve Yegge](./videos/vibe-coding-is-the-only-future-steve-yegge.md)  
-- [✨💻💀🤖 Steve Yegge on productive vibe coding, the death of the IDE, babysitting a fleet of AI coding agents](./videos/steve-yegge-on-productive-vibe-coding-the-death-of-the-ide-babysitting-a-fleet-of-ai-coding-agents.md)  
 - [🌊🏄‍♂️✋🧠 Urge Surfing Demonstration and Explanation by a Therapist | Effectively manage cravings and urges](./videos/urge-surfing-demonstration-and-explanation-by-a-therapist-effectively-manage-cravings-and-urges.md)  
 - [📰🇺🇸❓🏛️ This Week In Politics, A Big-Picture Look at Where We Are Right Now | Explainer](./videos/this-week-in-politics-a-big-picture-look-at-where-we-are-right-now-explainer.md)  
 - [❓🏥🛂 Who Pays for Undocumented Migrants’ Healthcare? Reporter Explains | Amanpour and Company](./videos/who-pays-for-undocumented-migrants-healthcare-reporter-explains-amanpour-and-company.md)  
@@ -59,12 +59,12 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [🧠🤖🗣️💡 Self-Aware Learning Chatbot](./topics/self-aware-learning-chatbot.md)  
   
   
-## [📄  Articles](./articles/index.md) (63)  
+## [📄  Articles](./articles/index.md) (64)  
+- [🤔💭🤔💭 Why We Think](./articles/why-we-think.md)  
 - [♊💻🆚 Gemini CLI + VS Code: Native diffing and context-aware workflows](./articles/gemini-cli-+-vs-code-native-diffing-and-context-aware-workflows.md)  
 - [⚙️🤖📈🤝 Engineering and AI: Advancing the synergy](./articles/engineering-and-ai-advancing-the-synergy.md)  
 - [🧑‍🏫🌍🛠️📈 Agent Skills: Equipping agents for the real world with Agent Skills](./articles/equipping-agents-for-the-real-world-with-agent-skills.md)  
 - [🤖😴📢🗳️ Sleeper Social Bots: A New Generation of AI Disinformation Bots are Already a Political Threat](./articles/sleeper-social-bots-a-new-generation-of-ai-disinformation-bots-are-already-a-political-threat.md)  
-- [🤖⚙️🔄🗣️ Agentic Context Engineering: Evolving Contexts for Self Improving Language Models](./articles/agentic-context-engineering-evolving-contexts-for-self-improving-language-models.md)  
   
   
 ## [🤖💬 Bot Chats](./bot-chats/index.md) (45)  

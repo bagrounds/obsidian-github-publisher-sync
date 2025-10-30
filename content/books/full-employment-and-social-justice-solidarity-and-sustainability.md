@@ -72,7 +72,7 @@ CTA: 🤝 Build a fair future.
 ## 📚 Book Recommendations  
   
 ### Similar  
-* 📖 The General Theory of Employment, Interest and Money by John Maynard Keynes (Foundational text on demand-side economics and government intervention for employment).  
+* [🧑‍💼🏦💸 The General Theory of Employment, Interest, and Money](./the-general-theory-of-employment-interest-and-money.md) by John Maynard Keynes (Foundational text on demand-side economics and government intervention for employment).  
 * [🏛️🔄✊🌍 Reclaiming the State: A Progressive Vision of Sovereignty for a Post-Neoliberal World](./reclaiming-the-state.md) by William Mitchell and Thomas Fazi (Explores how the state can be a vehicle for progressive economic change).  
 * 🌍 Employment Guarantee Schemes: Job Creation and Policy in Developing Countries and Emerging Markets edited by Mathew Forstater and Michael J. Murray (Further explores the practicalities of employment guarantee programs).  
   

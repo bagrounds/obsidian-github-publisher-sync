@@ -13,7 +13,7 @@ affiliate link: https://amzn.to/48UVuwS
   
 💰 A radical plan for wartime finance centered on compulsory saving (deferred pay) and higher taxation to curb inflation, mobilize resources, and prevent post-war depression, rather than relying solely on deficit spending. 📈🛡️  
   
-## 🏆 Keynes's Wartime Economic Strategy  
+## 🏆 Keynes' Wartime Economic Strategy  
   
 ### 📊 Core Philosophy  
 * 🏭 **Resource Mobilization:** Shift national production to war effort, ensuring full employment.  
@@ -75,7 +75,7 @@ affiliate link: https://amzn.to/48UVuwS
 ## 📚 Book Recommendations  
   
 ### ↔️ Similar  
-* 📖 The General Theory of Employment, Interest and Money by John Maynard Keynes  
+* [🧑‍💼🏦💸 The General Theory of Employment, Interest, and Money](./the-general-theory-of-employment-interest-and-money.md) by John Maynard Keynes  
 * 📖 The Economic Consequences of the Peace by John Maynard Keynes  
 * 📖 A Tract on Monetary Reform by John Maynard Keynes  
   

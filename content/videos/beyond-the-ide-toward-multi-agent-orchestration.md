@@ -93,4 +93,7 @@ youtube: https://youtu.be/D0cG4GLuzgM
 ### 🎨 Creatively Related  
   
 * [📈⚙️♾️ The Goal: A Process of Ongoing Improvement](../books/the-goal.md) by Eliyahu M. Goldratt and Jeff Cox. 🎯 A business novel that explains the Theory of Constraints, which helps identify and manage the system's single largest bottleneck, directly applying to the speaker's claim that the bottleneck shifts from coding to merging.  
-* [🌊🧘🏼‍♀️🧠📈 Flow: The Psychology of Optimal Experience](../books/flow-the-psychology-of-optimal-experience.md) by Mihaly Csikszentmihalyi. 🧘 Explores the mental state of deep immersion and enjoyment in a process, relating to the speaker's rediscovery of the joy of coding when the repetitive work is abstracted away by AI.
+* [🌊🧘🏼‍♀️🧠📈 Flow: The Psychology of Optimal Experience](../books/flow-the-psychology-of-optimal-experience.md) by Mihaly Csikszentmihalyi. 🧘 Explores the mental state of deep immersion and enjoyment in a process, relating to the speaker's rediscovery of the joy of coding when the repetitive work is abstracted away by AI.  
+  
+## 🐦 Tweet  
+<blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">👨‍💻➡️🤖🧩 Beyond the IDE: Toward Multi-Agent Orchestration<br><br>💻 AI Coding | 📈 Productivity Boost | 🚧 Agent Challenges | 🗺️ Monolith Solutions | 💥 Merging Bottleneck | 🏗️ Agent Orchestration | ❓ FAQ | 📚 Book Recommendations<a href="https://t.co/xIwpBUPDtV">https://t.co/xIwpBUPDtV</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/1983694916258812211?ref_src=twsrc%5Etfw">October 30, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

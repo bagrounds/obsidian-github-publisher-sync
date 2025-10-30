@@ -86,7 +86,7 @@ CTA: 💰 Understand economics.
 ## 📚 Book Recommendations  
   
 ### Similar Books  
-* 🔑 Keynes A Very Short Introduction  
+* [💰 Keynes: A Very Short Introduction](./keynes-a-very-short-introduction.md)  
 * 🛑 The End of Laissez-Faire  
 * 🕊️ The Economic Consequences of the Peace  
   

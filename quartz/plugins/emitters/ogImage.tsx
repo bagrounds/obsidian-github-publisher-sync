@@ -82,12 +82,14 @@ async function processOgImage(
   if (SKIP_EXISTING) {
     try {
       const ogImageStats = await fs.stat(outputPath)
-      const sourceModified = fileData.dates?.modified ?? new Date(0)
-      if (ogImageStats.mtime > sourceModified) {
+      const sourceModified = fileData.dates?.modified
+      if (sourceModified && ogImageStats.mtime > sourceModified) {
+        console.log(`[OG Cache] Skipping ${slug} - cached image is current`)
         return outputPath as FullSlug
       }
-    } catch {
-      // File doesn't exist, continue with generation
+      console.log(`[OG Cache] Regenerating ${slug} - source modified: ${sourceModified?.toISOString() || 'unknown'}, cached: ${ogImageStats.mtime.toISOString()}`)
+    } catch (err) {
+      console.log(`[OG Cache] Generating ${slug} - no cached image found`)
     }
   }
   

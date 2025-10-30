@@ -18,6 +18,7 @@ affiliate link: https://amzn.to/43NOEVV
     - Soft Money Currency  
     - Wealth of Nations  
     - A Treatise on Money  
+    - [💰⚔️ How to pay for the war: a radical plan for the chancellor of the exchequer](./how-to-pay-for-the-war-a-radical-plan-for-the-chancellor-of-the-exchequer.md)  
 - 🚫 TABS  
     - Tax And Borrow then Spend  
 - ✅ STAB  
@@ -87,7 +88,7 @@ affiliate link: https://amzn.to/43NOEVV
 * [💰📈🤔 Understanding Modern Money](./understanding-modern-money.md) by L. Randall Wray.  
 * Why Minsky Matters by L. Randall Wray.  
 * [💰🏛️ Modern Money Theory: A Primer on Macroeconomics for Sovereign Monetary Systems](./modern-money-theory-a-primer-on-macroeconomics-for-sovereign-monetary-systems.md) by L. Randall Wray  
-* 🪙 Soft Currency Economics by Warren Mosler  
+* [💵🏛️📈 Soft Currency Economics II: The Origin of Modern Monetary Theory](./soft-currency-economics-ii-the-origin-of-modern-monetary-theory.md) by Warren Mosler  
 * 🚫 Seven Deadly Innocent Frauds Of Economic Policy by Warren Mosler  
   
 ### 🆚 Contrasting  

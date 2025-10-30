@@ -7,7 +7,7 @@ URL: https://bagrounds.org/books
 backlinks: false
 ---
 [Home](../index.md)  
-# 📚 Books (715)  
+# 📚 Books (717)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)  
 - [🧑‍🤝‍🧑📈 10 to 25: The Science of Motivating Young People: A Groundbreaking Approach to Leading the Next Generation - And Making Your Own Life Easier](./10-to-25-the-science-of-motivating-young-people-a-groundbreaking-approach-to-leading-the-next-generation-and-making-your-own-life-easier.md)  
@@ -263,6 +263,7 @@ Feedback Control of Dynamic Systems]]
 - [📊🤥 How to Lie with Statistics](./how-to-lie-with-statistics.md)  
 - [🏛️➡️👑 How to Lose a Country: The 7 Steps from Democracy to Dictatorship](./how-to-lose-a-country.md)  
 - [📏🌌 How to Measure Anything: Finding the Value of Intangibles in Business](./how-to-measure-anything.md)  
+- [💰⚔️ How to pay for the war: a radical plan for the chancellor of the exchequer](./how-to-pay-for-the-war-a-radical-plan-for-the-chancellor-of-the-exchequer.md)  
 - [👥⚔️👑 How to Stand Up to a Dictator: The Fight for Our Future](./how-to-stand-up-to-a-dictator.md)  
 - [🏆📰📣 How to Win an Information War: The Propagandist Who Outwitted Hitler](./how-to-win-an-information-war.md)  
 - [🫂🤝🗣️ How To Win Friends And Influence People](./how-to-win-friends-and-influence-people.md)  
@@ -546,6 +547,7 @@ Feedback Control of Dynamic Systems]]
 - [🎨🔄🧠🏢 The Fifth Discipline: The Art and Practice of the Learning Organization](./the-fifth-discipline.md)  
 - [⚠️🥴🕹️🌐 The Fifth Risk](./the-fifth-risk.md)  
 - [⏱️🚀 The First 20 Hours: How to Learn Anything... Fast](./the-first-20-hours-how-to-learn-anything-fast.md)  
+- [🧑‍💼🏦💸 The General Theory of Employment, Interest, and Money](./the-general-theory-of-employment-interest-and-money.md)  
 - [📈⚙️♾️ The Goal: A Process of Ongoing Improvement](./the-goal.md)  
 - [❓✝️ The God Delusion](./the-god-delusion.md)  
 - [🗳️💰⬇️ The Great Suppression: Voting Rights, Corporate Cash, and the Conservative Assault on Democracy](./the-great-suppression-voting-rights-corporate-cash-and-the-conservative-assault-on-democracy.md)  

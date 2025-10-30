@@ -11,6 +11,7 @@ import { write } from "./helpers"
 import { BuildCtx } from "../../util/ctx"
 import { QuartzPluginData } from "../vfile"
 import fs from "node:fs/promises"
+import path from "node:path"
 import chalk from "chalk"
 
 const defaultOptions: SocialImageOptions = {
@@ -73,6 +74,23 @@ async function processOgImage(
 ) {
   const cfg = ctx.cfg.configuration
   const slug = fileData.slug!
+  const outputPath = path.join(ctx.argv.output, `${slug}-og-image.webp`)
+  
+  // Check if OG image already exists and source file modification time
+  if (process.env.SKIP_EXISTING_OG_IMAGES === "true") {
+    try {
+      const ogImageStats = await fs.stat(outputPath)
+      const sourceModified = fileData.dates?.modified ?? new Date(0)
+      
+      // Skip if OG image exists and is newer than source file
+      if (ogImageStats.mtime > sourceModified) {
+        return []
+      }
+    } catch {
+      // File doesn't exist, continue with generation
+    }
+  }
+  
   const titleSuffix = cfg.pageTitleSuffix ?? ""
   const title =
     (fileData.frontmatter?.title ?? i18n(cfg.locale).propertyDefaults.title) + titleSuffix

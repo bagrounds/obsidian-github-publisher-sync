@@ -35,20 +35,35 @@ jobs:
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git config --global user.name "github-actions[bot]"
 
-      - name: Cache Node Modules
-        id: cache
-        uses: actions/cache@v4
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
         with:
-          path: node_modules
-          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-node-
+          node-version: '20'
+          cache: 'npm'
 
-      - name: Install Dependencies (if cache is not hit)
-        if: ${{ steps.cache.outputs.cache-hit != 'true' }}
+      - name: Install Dependencies
         run: npm ci
 
+      - name: Cache Quartz Transpiled Build
+        uses: actions/cache@v4
+        with:
+          path: .quartz-cache
+          key: quartz-cache-${{ hashFiles('quartz/**/*.ts', 'quartz/**/*.tsx', 'quartz/**/*.scss', 'package-lock.json') }}
+          restore-keys: |
+            quartz-cache-
+
+      - name: Cache OG Images
+        uses: actions/cache@v4
+        with:
+          path: public
+          key: og-images-${{ hashFiles('content/**/*.md', 'quartz.config.ts', 'quartz.layout.ts') }}
+          restore-keys: |
+            og-images-${{ hashFiles('quartz.config.ts', 'quartz.layout.ts') }}-
+            og-images-
+
       - name: Build Quartz
+        env:
+          SKIP_EXISTING_OG_IMAGES: "true"
         run: npx quartz build
 
       - name: Upload artifact

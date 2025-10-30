@@ -12,7 +12,8 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 ❔ What do 🫵 _you_ 🤔 think?  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (349)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (350)  
+- [2025-10-30 | 📜🏛️ The Ledger of Sovereignty 📚💌📊](./reflections/2025-10-30.md)  
 - [2025-10-29 | 💵 Deficits | 🤖 Vibes | 🔬 Science | 🗳️ Democracy 📚📺📰📄](./reflections/2025-10-29.md)  
 - [2025-10-28 | 🧸 Soft Currency | 👽🏥 Undocumented Healthcare | 🥦 SNAP 📚📰📺](./reflections/2025-10-28.md)  
 - [2025-10-27 | 💰🦄 Deficit Myths | 🤖💻 Vibe Coding | 👑 3rd Term 📚📰](./reflections/2025-10-27.md)  
@@ -22,20 +23,19 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [2025-10-23 | 🏎️ Drive | 💰 Oligarchy | ⚛️ Social Physics 📚](./reflections/2025-10-23.md)  
 - [2025-10-22 | 👹 Corrupt 💰 Capital 💸 Costs ⚖️ Civic 💥 Conflict 📚📰📺](./reflections/2025-10-22.md)  
 - [2025-10-21 | 🐈 Decode | 🇺🇸 Divide | 🏎️ Drive | 🚫👑 Dethrone 📚📰📺](./reflections/2025-10-21.md)  
-- [2025-10-20 | 🐆 Patterns | 🐾 Cats | 🔋 Mitochondria 📄📚📺](./reflections/2025-10-20.md)  
   
   
-## [📚 Books](./books/index.md) (715)  
+## [📚 Books](./books/index.md) (717)  
+- [🔬🔄 The Structure of Scientific Revolutions](./books/the-structure-of-scientific-revolutions.md)  
+- [📉📈 Stabilizing an Unstable Economy](./books/stabilizing-an-unstable-economy.md)  
+- [💰🏛️ Modern Money Theory: A Primer on Macroeconomics for Sovereign Monetary Systems](./books/modern-money-theory-a-primer-on-macroeconomics-for-sovereign-monetary-systems.md)  
+- [🧑‍🤝‍🧑✅🌍 Full Employment and Social Justice: Solidarity and Sustainability](./books/full-employment-and-social-justice-solidarity-and-sustainability.md)  
+- [💵🏛️📈 Soft Currency Economics II: The Origin of Modern Monetary Theory](./books/soft-currency-economics-ii-the-origin-of-modern-monetary-theory.md)  
+- [💰⚔️ How to pay for the war: a radical plan for the chancellor of the exchequer](./books/how-to-pay-for-the-war-a-radical-plan-for-the-chancellor-of-the-exchequer.md)  
+- [🧑‍💼🏦💸 The General Theory of Employment, Interest, and Money](./books/the-general-theory-of-employment-interest-and-money.md)  
+- [💰📉➡️📈🗳️ The Deficit Myth: Modern Monetary Theory and the Birth of the People's Economy](./books/the-deficit-myth.md)  
 - [🧪📣🏛️ Science with Impact: How to Engage People, Change Practice, and Influence Policy](./books/science-with-impact-how-to-engage-people-change-practice-and-influence-policy.md)  
 - [🧪🏛️ The Science of Science Policy: A Handbook](./books/the-science-of-science-policy-a-handbook.md)  
-- [🏛️💪 Giving Up Is Unforgivable: A Manual for Keeping a Democracy](./books/giving-up-is-unforgivable-a-manual-for-keeping-a-democracy.md)  
-- [🤖🧩 Patterns of Application Development Using AI](./books/patterns-of-application-development-using-ai.md)  
-- [💵🏛️📈 Soft Currency Economics II: The Origin of Modern Monetary Theory](./books/soft-currency-economics-ii-the-origin-of-modern-monetary-theory.md)  
-- [💰📉➡️📈🗳️ The Deficit Myth: Modern Monetary Theory and the Birth of the People's Economy](./books/the-deficit-myth.md)  
-- [🤖💻 Vibe Coding: Building Production-Grade Software With GenAI, Chat, Agents, and Beyond](./books/vibe-coding-building-production-grade-software-with-genai-chat-agents-and-beyond.md)  
-- [💔👊⚖️ Nobody's Girl: A Memoir of Surviving Abuse and Fighting for Justice](./books/nobodys-girl-a-memoir-of-surviving-abuse-and-fighting-for-justice.md)  
-- [💼✅ The Case for a Job Guarantee](./books/the-case-for-a-job-guarantee.md)  
-- [💰🇺🇸 Making Money Work for Us: How MMT Can Save America](./books/making-money-work-for-us-how-mmt-can-save-america.md)  
   
   
 ## [📺 Videos](./videos/index.md) (399)  
@@ -52,9 +52,9 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
   
   
 ## [🌌 Topics](./topics/index.md) (82)  
+- [🤔🚫➡️📚 Heterodox Economics](./topics/heterodox-economics.md)  
 - [🏦♾️📈💸 Modern Monetary Theory](./topics/modern-monetary-theory.md)  
 - [👨‍👩‍👦🧭🤝 Authoritative Parenting](./topics/authoritative-parenting.md)  
-- [🤔🚫➡️📚 Heterodox Economics](./topics/heterodox-economics.md)  
 - [💰🏛️📈 Functional Finance](./topics/functional-finance.md)  
 - [🧠🤖🗣️💡 Self-Aware Learning Chatbot](./topics/self-aware-learning-chatbot.md)  
   

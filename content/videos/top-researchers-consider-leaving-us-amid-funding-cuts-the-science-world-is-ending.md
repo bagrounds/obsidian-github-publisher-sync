@@ -69,5 +69,5 @@ youtube: https://youtu.be/yLvO070E_dI
   
 ### 🎨 Creatively Related  
   
-* 🌍 *Science with Impact: How to Engage People, Change Practice, and Influence Policy* by Anne Helen Toomey. This book argues that science faces a **public-relations crisis** due to its emphasis on trickle-down research and offers a guide for scientists to build **public trust** and communicate with policymakers for real-world impact.  
+* [🧪📣🏛️ Science with Impact: How to Engage People, Change Practice, and Influence Policy](../books/science-with-impact-how-to-engage-people-change-practice-and-influence-policy.md) by Anne Helen Toomey argues that science faces a **public-relations crisis** due to its emphasis on trickle-down research and offers a guide for scientists to build **public trust** and communicate with policymakers for real-world impact.  
 * 🏛️ *Science Funding: Politics and Porkbarrel* by Joseph Paul Martino. A critical examination of how political criteria, **congressional micromanagement**, and the favoritism of massive Big Science projects compromise the integrity and efficiency of the **science funding system**.

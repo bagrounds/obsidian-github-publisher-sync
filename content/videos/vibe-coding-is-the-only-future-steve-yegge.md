@@ -68,4 +68,7 @@ youtube: https://youtu.be/MFsYKQdcdz0
 ### 🎨 Creatively Related  
   
 * [🧬👥💾 Life 3.0: Being Human in the Age of Artificial Intelligence](../books/life-3-0.md) by Max Tegmark. This explores the future of Artificial Intelligence and humanity, including the utopian versus dystopian scenarios, providing a broader, philosophical context for the rapid technological shifts discussed in the video.  
-* 🚀 Direction Through Disruption: A guide to career resilience during rapid technology and workplace change by Rob Livingstone. This offers a framework for professional adaptation and resilience in careers fundamentally reshaped by disruptive digital technologies like AI.
+* 🚀 Direction Through Disruption: A guide to career resilience during rapid technology and workplace change by Rob Livingstone. This offers a framework for professional adaptation and resilience in careers fundamentally reshaped by disruptive digital technologies like AI.  
+  
+## 🐦 Tweet  
+<blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">😎✨💻🔮 Vibe Coding Is The Only Future - Steve Yegge<br><br>🤖 Generative AI | 🛠️ System Maintenance | 🏗️ System Design | 📈 LLM Limits | 📐 Model Architectures | 🧪 Mixture-of-Experts Models | 📜 Ethical Frameworks | 💰 Economic Impact<a href="https://t.co/3v3Mw79G97">https://t.co/3v3Mw79G97</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/1983694523508375804?ref_src=twsrc%5Etfw">October 30, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

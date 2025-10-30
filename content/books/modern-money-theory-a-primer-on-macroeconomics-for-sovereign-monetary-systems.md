@@ -73,7 +73,7 @@ affiliate link: https://amzn.to/3KZBJKR
   
 ### 📖 Contrasting  
 * 📚 Capitalism and Freedom by Milton Friedman  
-* 📚 The General Theory of Employment, Interest, and Money by John Maynard Keynes (while foundational, MMT presents a distinct evolution)  
+* [🧑‍💼🏦💸 The General Theory of Employment, Interest, and Money](./the-general-theory-of-employment-interest-and-money.md) by John Maynard Keynes (while foundational, MMT presents a distinct evolution)  
 * 📚 Monetary Economics: An Integrated Approach to Credit, Money, Income, Production and Wealth by Wynne Godley and Marc Lavoie  
   
 ### 📖 Related  

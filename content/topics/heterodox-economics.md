@@ -24,7 +24,7 @@ Heterodox economics is a diverse and critical body of economic thought that chal
 **Book Recommendations:**  
 1. **[🤫🤑 23 Things They Don't Tell You About Capitalism](../books/23-things-they-dont-tell-you-about-capitalism.md) by Ha-Joon Chang:** 📖 A critique of mainstream economic assumptions, accessible to a wide audience.  
 2. **[🏛️💰 Debt: The First 5,000 Years](../books/debt-the-first-5000-years.md) by David Graeber:** 📜 A historical analysis of debt and its role in shaping societies.  
-3. **"The General Theory of Employment, Interest and Money" by John Maynard Keynes:** 🔑 A foundational text of Post-Keynesian economics.  
+3. **[🧑‍💼🏦💸 The General Theory of Employment, Interest, and Money](../books/the-general-theory-of-employment-interest-and-money.md) by John Maynard Keynes:** 🔑 A foundational text of Post-Keynesian economics.  
 4. **[💰📈🌍⏳ Capital in the Twenty-First Century](../books/capital-in-the-twenty-first-century.md) by Thomas Piketty:** 📈 An analysis of long-term trends in wealth and income inequality.  
 5. **[🍩🌍 Doughnut Economics: Seven Ways to Think Like a 21st-Century Economist](../books/doughnut-economics-seven-ways-to-think-like-a-21st-century-economist.md) by Kate Raworth:** 🍩 A new economic model for sustainable and equitable development.  
 6. **[💰📉➡️📈🗳️ The Deficit Myth: Modern Monetary Theory and the Birth of the People's Economy](../books/the-deficit-myth.md) by Stephanie Kelton:** 📚 A clear introduction to MMT and its policy implications.  

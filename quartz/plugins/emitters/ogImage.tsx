@@ -87,18 +87,20 @@ async function processOgImage(
   const slug = fileData.slug!;
   const outputPath = path.join(ctx.argv.output, `${slug}-og-image.webp`);
 
-  // Check if OG image already exists and source file modification time
+  // Optimization: Skip OG image regeneration if it already exists and is up-to-date
+  // This checks both file existence and modification times to avoid regenerating
+  // images when the cached version is newer than the source markdown file
   if (process.env.SKIP_EXISTING_OG_IMAGES === "true") {
     try {
       const ogImageStats = await fs.stat(outputPath);
       const sourceModified = fileData.dates?.modified ?? new Date(0);
 
-      // Skip if OG image exists and is newer than source file
+      // Skip generation if OG image exists and is newer than source file
       if (ogImageStats.mtime > sourceModified) {
         return [];
       }
     } catch {
-      // File doesn't exist, continue with generation
+      // OG image doesn't exist yet, continue with generation
     }
   }
 

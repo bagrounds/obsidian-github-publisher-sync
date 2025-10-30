@@ -1,7 +1,7 @@
 import { QuartzEmitterPlugin } from "../types"
 import { i18n } from "../../i18n"
 import { unescapeHTML } from "../../util/escape"
-import { FullSlug, getFileExtension, isAbsoluteURL, joinSegments, QUARTZ } from "../../util/path"
+import { FilePath, FullSlug, getFileExtension, isAbsoluteURL, joinSegments, QUARTZ } from "../../util/path"
 import { ImageOptions, SocialImageOptions, defaultImage, getSatoriFonts } from "../../util/og"
 import sharp from "sharp"
 import satori, { SatoriOptions } from "satori"
@@ -87,7 +87,7 @@ async function processOgImage(
       const sourceModified = fileData.dates?.modified
       if (sourceModified && ogImageStats.mtime > sourceModified) {
         console.log(`[OG Cache] Skipping ${slug} - cached image is current`)
-        return outputPath as FullSlug
+        return outputPath as FilePath
       }
       console.log(`[OG Cache] Regenerating ${slug} - source modified: ${sourceModified?.toISOString() || 'unknown'}, cached: ${ogImageStats.mtime.toISOString()}`)
     } catch (err) {

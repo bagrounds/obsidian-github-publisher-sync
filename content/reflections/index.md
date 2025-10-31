@@ -8,7 +8,7 @@ backlinks: false
 ---
 [Home](../index.md)  
 # 🪞 Reflections (351)  
-- [2025-10-31](./2025-10-31.md)  
+- [2025-10-31 | 🗣️🤖 Ode to Vibe Code 📄📚💌](./2025-10-31.md)  
 - [2025-10-30 | 📜🏛️ Sovereign Ledger | 🇺🇸👑📖 Authoritarian Playbook 📺📚💌📊🐦](./2025-10-30.md)  
 - [2025-10-29 | 💵 Deficits | 🤖 Vibes | 🔬 Science | 🗳️ Democracy 📚📺📰📄](./2025-10-29.md)  
 - [2025-10-28 | 🧸 Soft Currency | 👽🏥 Undocumented Healthcare | 🥦 SNAP 📚📰📺](./2025-10-28.md)  

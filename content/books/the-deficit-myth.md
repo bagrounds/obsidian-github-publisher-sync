@@ -84,7 +84,7 @@ affiliate link: https://amzn.to/43NOEVV
 ### 🤝 Similar  
 * [🌍💰📊 Macroeconomics](./macroeconomics.md) by William Mitchell, L.  
 * [🤫🤑 23 Things They Don't Tell You About Capitalism](./23-things-they-dont-tell-you-about-capitalism.md) by Ha-Joon Chang.  
-* Can We Afford the Future? by Frank van den Boom.  
+* [💰🌎🌡️ Can We Afford the Future?: The Economics of a Warming World](./can-we-afford-the-future-the-economics-of-a-warming-world.md) by Frank van den Boom.  
 * [💰📈🤔 Understanding Modern Money](./understanding-modern-money.md) by L. Randall Wray.  
 * Why Minsky Matters by L. Randall Wray.  
 * [💰🏛️ Modern Money Theory: A Primer on Macroeconomics for Sovereign Monetary Systems](./modern-money-theory-a-primer-on-macroeconomics-for-sovereign-monetary-systems.md) by L. Randall Wray  

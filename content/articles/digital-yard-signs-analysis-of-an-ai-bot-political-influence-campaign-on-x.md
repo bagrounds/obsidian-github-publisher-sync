@@ -51,4 +51,7 @@ Topics to explore for a better understanding:
   
 ### 🎨 Creatively Related  
 * 💡 Challenges in Large Language Model Development and AI Ethics published by IGI Global addresses the complex ethical dilemmas surrounding the core technology used in the influence campaign, analyzing issues like bias and accountability.  
-* 🗣️ Communicative AI: A Critical Introduction to Large Language Models by Mark Coeckelbergh and David J. Gunkel explores the philosophical significance of LLMs, questioning the very nature of language, truth, authorship, and lies in the age of generative AI.
+* 🗣️ Communicative AI: A Critical Introduction to Large Language Models by Mark Coeckelbergh and David J. Gunkel explores the philosophical significance of LLMs, questioning the very nature of language, truth, authorship, and lies in the age of generative AI.  
+  
+## 🐦 Tweet  
+<blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">🤖📢❌ Digital Yard Signs: Analysis of an AI Bot Political Influence Campaign on X<br><br>🤖 Bots | 📢 Influence | 🗳️ Elections | 📱 Social Media | 🏛️ Politics | 👹 MAGA | 🐦 X | 🧌 <a href="https://twitter.com/elonmusk?ref_src=twsrc%5Etfw">@elonmusk</a> Undermines Democracy<a href="https://t.co/SuQ2pPPrGm">https://t.co/SuQ2pPPrGm</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/1984178090395005436?ref_src=twsrc%5Etfw">October 31, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

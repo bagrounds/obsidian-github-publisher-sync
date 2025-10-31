@@ -49,10 +49,10 @@ jobs:
         run: npm ci
 
       # Cache OG images across builds for performance. This uses a hybrid approach:
-      # 1. GitHub Actions caches the entire public/ directory (directory-level)
-      # 2. Build-time logic in quartz/plugins/emitters/ogImage.tsx checks each file's
-      #    modification time and skips regeneration if cached image is newer than source
-      # 3. Only changed files regenerate their OG images, others reuse cached versions
+      # 1. GitHub Actions caches the entire public/ directory (OG images + manifest)
+      # 2. Build-time logic in quartz/plugins/emitters/ogImage.tsx uses .og-cache-manifest.json
+      #    to track which files have been processed and their source modification dates
+      # 3. Only files with changed source content regenerate their OG images
       # This provides per-file granularity without managing thousands of cache entries.
       - name: Cache OG Images
         uses: actions/cache@v4

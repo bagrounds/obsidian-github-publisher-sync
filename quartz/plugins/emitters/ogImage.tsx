@@ -16,6 +16,34 @@ import chalk from "chalk"
 
 const SKIP_EXISTING = process.env.SKIP_EXISTING_OG_IMAGES === "true"
 
+// Cache manifest to track generated OG images and their source modification times
+// This persists across builds when the public/ directory is cached
+interface OGCacheManifest {
+  [slug: string]: string // slug -> source modification date ISO string
+}
+
+let cacheManifest: OGCacheManifest | null = null
+
+async function loadCacheManifest(outputDir: string): Promise<OGCacheManifest> {
+  if (cacheManifest !== null) return cacheManifest
+  
+  const manifestPath = path.join(outputDir, '.og-cache-manifest.json')
+  try {
+    const content = await fs.readFile(manifestPath, 'utf-8')
+    cacheManifest = JSON.parse(content)
+    console.log(`[OG Cache] Loaded manifest with ${Object.keys(cacheManifest).length} entries`)
+    return cacheManifest
+  } catch {
+    cacheManifest = {}
+    return cacheManifest
+  }
+}
+
+async function saveCacheManifest(outputDir: string, manifest: OGCacheManifest): Promise<void> {
+  const manifestPath = path.join(outputDir, '.og-cache-manifest.json')
+  await fs.writeFile(manifestPath, JSON.stringify(manifest, null, 2), 'utf-8')
+}
+
 const defaultOptions: SocialImageOptions = {
   colorScheme: "lightMode",
   width: 1200,
@@ -80,18 +108,31 @@ async function processOgImage(
   
   // Hybrid caching strategy: GitHub Actions caches the entire public/ directory
   // (see .github/workflows/deploy.yml), and this code performs per-file checking
-  // at build time. Skip regeneration if cached OG image exists and is newer than source.
+  // at build time using a manifest file (.og-cache-manifest.json) to track which
+  // files have been processed and their source modification dates. This is more
+  // reliable than filesystem mtimes which don't survive cache restoration.
   if (SKIP_EXISTING) {
-    try {
-      const ogImageStats = await fs.stat(outputPath)
-      const sourceModified = fileData.dates?.modified
-      if (sourceModified && ogImageStats.mtime > sourceModified) {
-        console.log(`[OG Cache] Skipping ${slug} - cached image is current`)
-        return outputPath as FilePath
+    const manifest = await loadCacheManifest(ctx.argv.output)
+    const sourceModified = fileData.dates?.modified
+    
+    if (sourceModified) {
+      const sourceModifiedISO = sourceModified.toISOString()
+      const cachedModified = manifest[slug]
+      
+      // Check if OG image exists and source hasn't changed since it was generated
+      try {
+        await fs.stat(outputPath)
+        if (cachedModified === sourceModifiedISO) {
+          console.log(`[OG Cache] Skipping ${slug} - cached image is current`)
+          return outputPath as FilePath
+        }
+        console.log(`[OG Cache] Regenerating ${slug} - source modified: ${sourceModifiedISO}, cached: ${cachedModified || 'not in manifest'}`)
+      } catch {
+        console.log(`[OG Cache] Generating ${slug} - no cached image found`)
       }
-      console.log(`[OG Cache] Regenerating ${slug} - source modified: ${sourceModified?.toISOString() || 'unknown'}, cached: ${ogImageStats.mtime.toISOString()}`)
-    } catch (err) {
-      console.log(`[OG Cache] Generating ${slug} - no cached image found`)
+      
+      // Update manifest with current source modification time
+      manifest[slug] = sourceModifiedISO
     }
   }
   
@@ -141,6 +182,12 @@ export const CustomOgImages: QuartzEmitterPlugin<Partial<SocialImageOptions>> = 
         if (vfile.data.frontmatter?.socialImage !== undefined) continue
         yield processOgImage(ctx, vfile.data, fonts, fullOptions)
       }
+      
+      // Save the manifest after processing all files
+      if (SKIP_EXISTING && cacheManifest) {
+        await saveCacheManifest(ctx.argv.output, cacheManifest)
+        console.log(`[OG Cache] Saved manifest with ${Object.keys(cacheManifest).length} entries`)
+      }
     },
     async *partialEmit(ctx, _content, _resources, changeEvents) {
       const cfg = ctx.cfg.configuration
@@ -155,6 +202,12 @@ export const CustomOgImages: QuartzEmitterPlugin<Partial<SocialImageOptions>> = 
         if (changeEvent.type === "add" || changeEvent.type === "change") {
           yield processOgImage(ctx, changeEvent.file.data, fonts, fullOptions)
         }
+      }
+      
+      // Save the manifest after processing changed files
+      if (SKIP_EXISTING && cacheManifest) {
+        await saveCacheManifest(ctx.argv.output, cacheManifest)
+        console.log(`[OG Cache] Saved manifest with ${Object.keys(cacheManifest).length} entries`)
       }
     },
     externalResources: (ctx) => {

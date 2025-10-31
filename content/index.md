@@ -12,8 +12,9 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 ❔ What do 🫵 _you_ 🤔 think?  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (350)  
-- [2025-10-30 | 📜🏛️ The Ledger of Sovereignty 📚💌📊](./reflections/2025-10-30.md)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (351)  
+- [2025-10-31](./reflections/2025-10-31.md)  
+- [2025-10-30 | 📜🏛️ Sovereign Ledger | 🇺🇸👑📖 Authoritarian Playbook 📺📚💌📊🐦](./reflections/2025-10-30.md)  
 - [2025-10-29 | 💵 Deficits | 🤖 Vibes | 🔬 Science | 🗳️ Democracy 📚📺📰📄](./reflections/2025-10-29.md)  
 - [2025-10-28 | 🧸 Soft Currency | 👽🏥 Undocumented Healthcare | 🥦 SNAP 📚📰📺](./reflections/2025-10-28.md)  
 - [2025-10-27 | 💰🦄 Deficit Myths | 🤖💻 Vibe Coding | 👑 3rd Term 📚📰](./reflections/2025-10-27.md)  
@@ -22,23 +23,23 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [2025-10-24 | 🤑 Billionaires | 🗳️ Democracy | 🏛️💥 Demolition | 📰🕰️ News Hour 📺📰📚](./reflections/2025-10-24.md)  
 - [2025-10-23 | 🏎️ Drive | 💰 Oligarchy | ⚛️ Social Physics 📚](./reflections/2025-10-23.md)  
 - [2025-10-22 | 👹 Corrupt 💰 Capital 💸 Costs ⚖️ Civic 💥 Conflict 📚📰📺](./reflections/2025-10-22.md)  
-- [2025-10-21 | 🐈 Decode | 🇺🇸 Divide | 🏎️ Drive | 🚫👑 Dethrone 📚📰📺](./reflections/2025-10-21.md)  
   
   
-## [📚 Books](./books/index.md) (717)  
+## [📚 Books](./books/index.md) (719)  
+- [🌍💰📊 Macroeconomics](./books/macroeconomics.md)  
+- [💰📉➡️📈🗳️ The Deficit Myth: Modern Monetary Theory and the Birth of the People's Economy](./books/the-deficit-myth.md)  
+- [💰🌎🌡️ Can We Afford the Future?: The Economics of a Warming World](./books/can-we-afford-the-future-the-economics-of-a-warming-world.md)  
+- [🧑‍💼🏦💸 The General Theory of Employment, Interest, and Money](./books/the-general-theory-of-employment-interest-and-money.md)  
+- [💰 Keynes: A Very Short Introduction](./books/keynes-a-very-short-introduction.md)  
 - [🔬🔄 The Structure of Scientific Revolutions](./books/the-structure-of-scientific-revolutions.md)  
 - [📉📈 Stabilizing an Unstable Economy](./books/stabilizing-an-unstable-economy.md)  
 - [💰🏛️ Modern Money Theory: A Primer on Macroeconomics for Sovereign Monetary Systems](./books/modern-money-theory-a-primer-on-macroeconomics-for-sovereign-monetary-systems.md)  
 - [🧑‍🤝‍🧑✅🌍 Full Employment and Social Justice: Solidarity and Sustainability](./books/full-employment-and-social-justice-solidarity-and-sustainability.md)  
 - [💵🏛️📈 Soft Currency Economics II: The Origin of Modern Monetary Theory](./books/soft-currency-economics-ii-the-origin-of-modern-monetary-theory.md)  
-- [💰⚔️ How to pay for the war: a radical plan for the chancellor of the exchequer](./books/how-to-pay-for-the-war-a-radical-plan-for-the-chancellor-of-the-exchequer.md)  
-- [🧑‍💼🏦💸 The General Theory of Employment, Interest, and Money](./books/the-general-theory-of-employment-interest-and-money.md)  
-- [💰📉➡️📈🗳️ The Deficit Myth: Modern Monetary Theory and the Birth of the People's Economy](./books/the-deficit-myth.md)  
-- [🧪📣🏛️ Science with Impact: How to Engage People, Change Practice, and Influence Policy](./books/science-with-impact-how-to-engage-people-change-practice-and-influence-policy.md)  
-- [🧪🏛️ The Science of Science Policy: A Handbook](./books/the-science-of-science-policy-a-handbook.md)  
   
   
-## [📺 Videos](./videos/index.md) (399)  
+## [📺 Videos](./videos/index.md) (400)  
+- [🇺🇸🗣️👑 Senator Slotkin Delivers Speech on Trump's Authoritarian Playbook](./videos/senator-slotkin-delivers-speech-on-trumps-authoritarian-playbook.md)  
 - [✨💻💀🤖 Steve Yegge on productive vibe coding, the death of the IDE, babysitting a fleet of AI coding agents](./videos/steve-yegge-on-productive-vibe-coding-the-death-of-the-ide-babysitting-a-fleet-of-ai-coding-agents.md)  
 - [🧑‍🔬📉🇺🇸🔚 Top researchers consider leaving U.S. amid funding cuts: 'The science world is ending'](./videos/top-researchers-consider-leaving-us-amid-funding-cuts-the-science-world-is-ending.md)  
 - [🇺🇸🛡️💪 Never Give Up A Conversation with Joyce White Vance—«Giving Up Is Unforgivable: A Manual for Keeping a Democracy»](./videos/a-conversation-with-joyce-white-vance-giving-up-is-unforgivable-a-manual-for-keeping-a-democracy.md)  
@@ -48,23 +49,22 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [📰🇺🇸❓🏛️ This Week In Politics, A Big-Picture Look at Where We Are Right Now | Explainer](./videos/this-week-in-politics-a-big-picture-look-at-where-we-are-right-now-explainer.md)  
 - [❓🏥🛂 Who Pays for Undocumented Migrants’ Healthcare? Reporter Explains | Amanpour and Company](./videos/who-pays-for-undocumented-migrants-healthcare-reporter-explains-amanpour-and-company.md)  
 - [🇺🇸🔄👑😬 Tamara Keith and Amy Walter on Trump flirting with the idea of the 3rd term](./videos/tamara-keith-and-amy-walter-on-trump-flirting-with-the-idea-of-the-3rd-term.md)  
-- [💻🔄💻 Andrej Karpathy: Software Is Changing (Again)](./videos/andrej-karpathy-software-is-changing-again.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (82)  
-- [🤔🚫➡️📚 Heterodox Economics](./topics/heterodox-economics.md)  
 - [🏦♾️📈💸 Modern Monetary Theory](./topics/modern-monetary-theory.md)  
+- [🤔🚫➡️📚 Heterodox Economics](./topics/heterodox-economics.md)  
 - [👨‍👩‍👦🧭🤝 Authoritative Parenting](./topics/authoritative-parenting.md)  
 - [💰🏛️📈 Functional Finance](./topics/functional-finance.md)  
 - [🧠🤖🗣️💡 Self-Aware Learning Chatbot](./topics/self-aware-learning-chatbot.md)  
   
   
-## [📄  Articles](./articles/index.md) (64)  
+## [📄  Articles](./articles/index.md) (65)  
+- [🤖📢❌ Digital Yard Signs: Analysis of an AI Bot Political Influence Campaign on X](./articles/digital-yard-signs-analysis-of-an-ai-bot-political-influence-campaign-on-x.md)  
 - [🤔💭🤔💭 Why We Think](./articles/why-we-think.md)  
 - [♊💻🆚 Gemini CLI + VS Code: Native diffing and context-aware workflows](./articles/gemini-cli-+-vs-code-native-diffing-and-context-aware-workflows.md)  
 - [⚙️🤖📈🤝 Engineering and AI: Advancing the synergy](./articles/engineering-and-ai-advancing-the-synergy.md)  
 - [🧑‍🏫🌍🛠️📈 Agent Skills: Equipping agents for the real world with Agent Skills](./articles/equipping-agents-for-the-real-world-with-agent-skills.md)  
-- [🤖😴📢🗳️ Sleeper Social Bots: A New Generation of AI Disinformation Bots are Already a Political Threat](./articles/sleeper-social-bots-a-new-generation-of-ai-disinformation-bots-are-already-a-political-threat.md)  
   
   
 ## [🤖💬 Bot Chats](./bot-chats/index.md) (45)  

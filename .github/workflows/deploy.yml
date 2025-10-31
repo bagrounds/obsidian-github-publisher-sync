@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+      - copilot/investigate-build-time-optimization  # TEMPORARY: for testing, remove before merge
 
 permissions:
   contents: read

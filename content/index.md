@@ -25,7 +25,8 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [2025-10-22 | 👹 Corrupt 💰 Capital 💸 Costs ⚖️ Civic 💥 Conflict 📚📰📺](./reflections/2025-10-22.md)  
   
   
-## [📚 Books](./books/index.md) (720)  
+## [📚 Books](./books/index.md) (721)  
+- [🧑‍💻🤖 Beyond Vibe Coding: From Coder to AI-Era Developer](./books/beyond-vibe-coding-from-coder-to-ai-era-developer.md)  
 - [💰🤥 Merchants of Doubt](./books/merchants-of-doubt.md)  
 - [🤥📣 This Is Not Propaganda: Adventures in the War Against Reality](./books/this-is-not-propaganda.md)  
 - [📰⚔️🧠 Information Wars: How We Lost the Global Battle Against Disinformation and What We Can Do About It](./books/information-wars.md)  
@@ -35,7 +36,6 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [💰🌎🌡️ Can We Afford the Future?: The Economics of a Warming World](./books/can-we-afford-the-future-the-economics-of-a-warming-world.md)  
 - [🧑‍💼🏦💸 The General Theory of Employment, Interest, and Money](./books/the-general-theory-of-employment-interest-and-money.md)  
 - [💰 Keynes: A Very Short Introduction](./books/keynes-a-very-short-introduction.md)  
-- [🔬🔄 The Structure of Scientific Revolutions](./books/the-structure-of-scientific-revolutions.md)  
   
   
 ## [📺 Videos](./videos/index.md) (400)  

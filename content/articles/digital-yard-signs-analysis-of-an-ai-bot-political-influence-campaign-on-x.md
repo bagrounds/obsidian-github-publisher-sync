@@ -42,7 +42,7 @@ Topics to explore for a better understanding:
 ## 📚 Book Recommendations  
   
 ### ↔️ Similar  
-* 📜 Active Measures: The Secret History of Disinformation and Political Warfare by Thomas Rid provides the deep historical context for modern influence campaigns, connecting traditional espionage to digital warfare.  
+* [🎭🤫 Active Measures: The Secret History of Disinformation and Political Warfare](../books/active-measures-the-secret-history-of-disinformation-and-political-warfare.md) by Thomas Rid provides the deep historical context for modern influence campaigns, connecting traditional espionage to digital warfare.  
 * [🤖🏛️ Lie Machines: How to Save Democracy from Troll Armies, Deceitful Robots, Junk News Operations, and Political Operatives](../books/lie-machines-how-to-save-democracy-from-troll-armies-deceitful-robots-junk-news-operations-and-political-operatives.md) by Philip N. Howard examines the systematic use of **computational propaganda** and automation in shaping political outcomes.  
   
 ### 🆚 Contrasting  

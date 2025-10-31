@@ -17,17 +17,22 @@ import chalk from "chalk"
 const SKIP_EXISTING = process.env.SKIP_EXISTING_OG_IMAGES === "true"
 
 // Cache manifest to track generated OG images and their source modification times
-// This persists across builds when the public/ directory is cached
+// Saved outside public/ directory to survive the clean step at build start
 interface OGCacheManifest {
   [slug: string]: string // slug -> source modification date ISO string
 }
 
 let cacheManifest: OGCacheManifest | null = null
 
-async function loadCacheManifest(outputDir: string): Promise<OGCacheManifest> {
+// Get manifest path in .quartz-cache directory (survives public/ clean)
+function getManifestPath(): string {
+  return path.join(process.cwd(), '.quartz-cache', 'og-cache-manifest.json')
+}
+
+async function loadCacheManifest(): Promise<OGCacheManifest> {
   if (cacheManifest !== null) return cacheManifest
   
-  const manifestPath = path.join(outputDir, '.og-cache-manifest.json')
+  const manifestPath = getManifestPath()
   try {
     const content = await fs.readFile(manifestPath, 'utf-8')
     cacheManifest = JSON.parse(content)
@@ -35,13 +40,17 @@ async function loadCacheManifest(outputDir: string): Promise<OGCacheManifest> {
     return cacheManifest
   } catch {
     cacheManifest = {}
+    console.log(`[OG Cache] No existing manifest found, starting fresh`)
     return cacheManifest
   }
 }
 
-async function saveCacheManifest(outputDir: string, manifest: OGCacheManifest): Promise<void> {
-  const manifestPath = path.join(outputDir, '.og-cache-manifest.json')
+async function saveCacheManifest(manifest: OGCacheManifest): Promise<void> {
+  const manifestPath = getManifestPath()
+  // Ensure .quartz-cache directory exists
+  await fs.mkdir(path.dirname(manifestPath), { recursive: true })
   await fs.writeFile(manifestPath, JSON.stringify(manifest, null, 2), 'utf-8')
+  console.log(`[OG Cache] Saved manifest with ${Object.keys(manifest).length} entries`)
 }
 
 const defaultOptions: SocialImageOptions = {
@@ -106,13 +115,13 @@ async function processOgImage(
   const slug = fileData.slug!
   const outputPath = path.join(ctx.argv.output, `${slug}-og-image.webp`)
   
-  // Hybrid caching strategy: GitHub Actions caches the entire public/ directory
+  // Hybrid caching strategy: GitHub Actions caches .quartz-cache directory
   // (see .github/workflows/deploy.yml), and this code performs per-file checking
-  // at build time using a manifest file (.og-cache-manifest.json) to track which
-  // files have been processed and their source modification dates. This is more
+  // at build time using a manifest file (.quartz-cache/og-cache-manifest.json) to track
+  // which files have been processed and their source modification dates. This is more
   // reliable than filesystem mtimes which don't survive cache restoration.
   if (SKIP_EXISTING) {
-    const manifest = await loadCacheManifest(ctx.argv.output)
+    const manifest = await loadCacheManifest()
     const sourceModified = fileData.dates?.modified
     
     if (sourceModified) {
@@ -185,8 +194,7 @@ export const CustomOgImages: QuartzEmitterPlugin<Partial<SocialImageOptions>> = 
       
       // Save the manifest after processing all files
       if (SKIP_EXISTING && cacheManifest) {
-        await saveCacheManifest(ctx.argv.output, cacheManifest)
-        console.log(`[OG Cache] Saved manifest with ${Object.keys(cacheManifest).length} entries`)
+        await saveCacheManifest(cacheManifest)
       }
     },
     async *partialEmit(ctx, _content, _resources, changeEvents) {
@@ -206,8 +214,7 @@ export const CustomOgImages: QuartzEmitterPlugin<Partial<SocialImageOptions>> = 
       
       // Save the manifest after processing changed files
       if (SKIP_EXISTING && cacheManifest) {
-        await saveCacheManifest(ctx.argv.output, cacheManifest)
-        console.log(`[OG Cache] Saved manifest with ${Object.keys(cacheManifest).length} entries`)
+        await saveCacheManifest(cacheManifest)
       }
     },
     externalResources: (ctx) => {

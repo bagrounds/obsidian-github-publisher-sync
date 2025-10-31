@@ -13,7 +13,7 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 💬 Comment on any page with your GitHub account.  
   
 ## [🪞 Reflections](./reflections/index.md) ~ Blog (351)  
-- [2025-10-31](./reflections/2025-10-31.md)  
+- [2025-10-31 | 🗣️🤖 Ode to Vibe Code 📄📚💌](./reflections/2025-10-31.md)  
 - [2025-10-30 | 📜🏛️ Sovereign Ledger | 🇺🇸👑📖 Authoritarian Playbook 📺📚💌📊🐦](./reflections/2025-10-30.md)  
 - [2025-10-29 | 💵 Deficits | 🤖 Vibes | 🔬 Science | 🗳️ Democracy 📚📺📰📄](./reflections/2025-10-29.md)  
 - [2025-10-28 | 🧸 Soft Currency | 👽🏥 Undocumented Healthcare | 🥦 SNAP 📚📰📺](./reflections/2025-10-28.md)  
@@ -25,17 +25,17 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [2025-10-22 | 👹 Corrupt 💰 Capital 💸 Costs ⚖️ Civic 💥 Conflict 📚📰📺](./reflections/2025-10-22.md)  
   
   
-## [📚 Books](./books/index.md) (719)  
+## [📚 Books](./books/index.md) (720)  
+- [💰🤥 Merchants of Doubt](./books/merchants-of-doubt.md)  
+- [🤥📣 This Is Not Propaganda: Adventures in the War Against Reality](./books/this-is-not-propaganda.md)  
+- [📰⚔️🧠 Information Wars: How We Lost the Global Battle Against Disinformation and What We Can Do About It](./books/information-wars.md)  
+- [🎭🤫 Active Measures: The Secret History of Disinformation and Political Warfare](./books/active-measures-the-secret-history-of-disinformation-and-political-warfare.md)  
 - [🌍💰📊 Macroeconomics](./books/macroeconomics.md)  
 - [💰📉➡️📈🗳️ The Deficit Myth: Modern Monetary Theory and the Birth of the People's Economy](./books/the-deficit-myth.md)  
 - [💰🌎🌡️ Can We Afford the Future?: The Economics of a Warming World](./books/can-we-afford-the-future-the-economics-of-a-warming-world.md)  
 - [🧑‍💼🏦💸 The General Theory of Employment, Interest, and Money](./books/the-general-theory-of-employment-interest-and-money.md)  
 - [💰 Keynes: A Very Short Introduction](./books/keynes-a-very-short-introduction.md)  
 - [🔬🔄 The Structure of Scientific Revolutions](./books/the-structure-of-scientific-revolutions.md)  
-- [📉📈 Stabilizing an Unstable Economy](./books/stabilizing-an-unstable-economy.md)  
-- [💰🏛️ Modern Money Theory: A Primer on Macroeconomics for Sovereign Monetary Systems](./books/modern-money-theory-a-primer-on-macroeconomics-for-sovereign-monetary-systems.md)  
-- [🧑‍🤝‍🧑✅🌍 Full Employment and Social Justice: Solidarity and Sustainability](./books/full-employment-and-social-justice-solidarity-and-sustainability.md)  
-- [💵🏛️📈 Soft Currency Economics II: The Origin of Modern Monetary Theory](./books/soft-currency-economics-ii-the-origin-of-modern-monetary-theory.md)  
   
   
 ## [📺 Videos](./videos/index.md) (400)  

@@ -7,7 +7,7 @@ backlinks: false
 URL: https://bagrounds.org/articles
 ---
 [Home](../index.md)  
-# 📄 Articles (64)  
+# 📄 Articles (65)  
 - [🦊😈🐾🕵️💸 5 takeaways about NPR's reporting on the whistleblower report about DOGE at the NLRB](./5-takeaways-about-nprs-reporting-on-the-whistleblower-report-about-doge-at-the-nlrb.md)  
 - [🌱🤖⚙️🖐️ 5 tips on getting started with Gems, your custom AI experts](./5-tips-on-getting-started-with-gems-your-custom-ai-experts.md)  
 - [⏱️⚔️🏛️ '60 Minutes' chief resigns, saying show's independence was compromised](./60-minutes-chief-resigns-saying-shows-independence-was-compromised.md)  
@@ -24,6 +24,7 @@ URL: https://bagrounds.org/articles
 - [🏗️🧩🌍 Context Engineering: An Emerging Concept in the MCP Ecosystem](./context-engineering-an-emerging-concept-in-the-mcp-ecosystem.md)  
 - [💪🧠📉💊🔎 Creatine Supplementation in Depression: A Review of Mechanisms, Efficacy, Clinical Outcomes, and Future Directions](./creatine-supplementation-in-depression-a-review-of-mechanisms-efficacy-clinical-outcomes-and-future-directions.md)  
 - [💰⚙️📈🔍 Defining and Characterizing Reward Hacking](./defining-and-characterizing-reward-hacking.md)  
+- [🤖📢❌ Digital Yard Signs: Analysis of an AI Bot Political Influence Campaign on X](./digital-yard-signs-analysis-of-an-ai-bot-political-influence-campaign-on-x.md)  
 - [⚙️🤖📈🤝 Engineering and AI: Advancing the synergy](./engineering-and-ai-advancing-the-synergy.md)  
 - [🤔⚙️🧩🏗️💡 Everything I know about good system design](./everything-i-know-about-good-system-design.md)  
 - [❓📈🤦 Failing to Understand the Exponential, Again](./failing-to-understand-the-exponential-again.md)  

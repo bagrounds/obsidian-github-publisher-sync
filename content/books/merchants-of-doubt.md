@@ -48,7 +48,7 @@ The overarching strategy involved:
 * 🧪 **Doubt is Their Product: How Industry's Assault on Science Threatens Your Health** by David Michaels. 👨‍🔬 This book offers a contemporary look at how industries manufacture uncertainty about scientific findings to avoid regulation, 🧱 building on similar themes to Merchants of Doubt.  
 * 🇺🇸 **The Republican War on Science** by Chris Mooney. 🏛️ Mooney explores the political suppression and distortion of scientific research, particularly within government agencies, 🤝 aligning with Merchants of Doubt's critique of ideological interference in science.  
 * 💰 **The Triumph of Doubt: Dark Money and the Science of Deception** by David Michaels. 🧪 A follow-up to his earlier work, this book continues to examine how doubt is systematically manufactured by corporate interests to evade accountability on issues ranging from climate change to opioids and concussions.  
-* 🕵️ **Active Measures: The Secret History of Disinformation and Political Warfare** by Thomas Rid. 🌐 While broader in scope, focusing on state-sponsored disinformation, this book provides a historical and analytical framework for understanding the tactics of deception, which resonates with the "doubt-mongering" strategies in Merchants of Doubt.  
+* **[🎭🤫 Active Measures: The Secret History of Disinformation and Political Warfare](./active-measures-the-secret-history-of-disinformation-and-political-warfare.md)** by Thomas Rid. 🌐 While broader in scope, focusing on state-sponsored disinformation, this book provides a historical and analytical framework for understanding the tactics of deception, which resonates with the "doubt-mongering" strategies in Merchants of Doubt.  
   
 ### ⚖️ Contrasting Books  
   

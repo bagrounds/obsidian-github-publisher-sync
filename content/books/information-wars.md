@@ -51,7 +51,7 @@ While acknowledging the difficulties, Stengel outlines potential strategies:
 ## 📚 Book Recommendations  
 ### 📖 Similar Books (Focus on Disinformation & Information Warfare)  
   
-1. 📱 **Likewar: The Weaponization of Social Media** by P.W. Singer and Emerson T. Brooking: Explores how social media has become a battlefield, covering everything from 💣 ISIS to election interference.  
+1. **[📱⚔️ LikeWar: The Weaponization of Social Media](./likewar-the-weaponization-of-social-media.md)** by P.W. Singer and Emerson T. Brooking: Explores how social media has become a battlefield, covering everything from 💣 ISIS to election interference.  
 2. **[🎭🤫 Active Measures: The Secret History of Disinformation and Political Warfare](./active-measures-the-secret-history-of-disinformation-and-political-warfare.md)** by Thomas Rid: Provides a deep historical context for disinformation campaigns, tracing them back through the Cold War and earlier, offering perspective on current 🇷🇺 Russian tactics.  
 3. 🌍 **[🤥📣 This Is Not Propaganda: Adventures in the War Against Reality](./this-is-not-propaganda.md)** by Peter Pomerantsev: A personal and investigative journey into the world of modern propaganda, exploring its effects on individuals and societies globally.  
 4. 🇺🇸 **[📢🕸️ Network Propaganda: Manipulation, Disinformation, and Radicalization in American Politics](./network-propaganda-manipulation-disinformation-and-radicalization-in-american-politics.md)** by Yochai Benkler, Robert Faris, and Hal Roberts: A research-heavy analysis focusing on the structure of the 🇺🇸 US media ecosystem and how it contributes to the spread of disinformation, particularly on the right.  

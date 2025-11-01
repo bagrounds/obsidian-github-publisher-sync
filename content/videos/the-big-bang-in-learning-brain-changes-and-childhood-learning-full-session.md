@@ -4,10 +4,10 @@ aliases:
   - "💥🧠👶 The «Big Bang» in Learning: Brain Changes and Childhood Learning (Full Session)"
 title: "💥🧠👶 The «Big Bang» in Learning: Brain Changes and Childhood Learning (Full Session)"
 URL: https://bagrounds.org/videos/the-big-bang-in-learning-brain-changes-and-childhood-learning-full-session
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: The Aspen Institute
-tags: 
+tags:
 youtube: https://youtu.be/4zgkSObH4dU
 ---
 [Home](../index.md) > [Videos](./index.md)  
@@ -34,7 +34,7 @@ youtube: https://youtu.be/4zgkSObH4dU
   
 ### For Language Acquisition  
 * **[👶🗣️ How Babies Talk: The Magic and Mystery of Language in the First Three Years of Life](../books/how-babies-talk-the-magic-and-mystery-of-language-in-the-first-three-years-of-life.md)** by Kathy Hirsh-Pasek and Roberta Golinkoff: Written by developmental psychologists and language experts, this guide offers insights into how infants begin to learn language, even from the womb.  
-* **"The Language Instinct: How the Mind Creates Language"** by Steven Pinker: A more in-depth look at the science behind language and how it's acquired.  
+* **[🗣️🧠 The Language Instinct: How the Mind Creates Language](../books/the-language-instinct-how-the-mind-creates-language.md)** by Steven Pinker: A more in-depth look at the science behind language and how it's acquired.  
 * **"Child Language: Acquisition and Development"** by Matthew Saxton: A more academic resource for those interested in the theoretical aspects of child language development.  
   
 ### For Executive Function in Children  

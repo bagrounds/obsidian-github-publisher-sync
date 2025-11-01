@@ -1,12 +1,12 @@
 ---
 share: true
 aliases:
-  - Linguistics
-title: Linguistics
+  - 🗣️📚🧠 Linguistics
+title: 🗣️📚🧠 Linguistics
 URL: https://bagrounds.org/topics/linguistics
 ---
 [Home](../index.md) > [Topics](./index.md) > [Knowledge](./a-hierarchical-view-of-human-knowledge.md) > [Humanities](./humanities.md)  
-# Linguistics  
+# 🗣️📚🧠 Linguistics  
 ## 🤖 AI Summary  
 **High-Level Summary:**  
 Linguistics is the scientific study of language. It seeks to understand the nature of language, how it's structured, how it's acquired, how it's used, and how it changes over time. It's not just about learning languages; it's about exploring the underlying principles that govern all human language. The goal is to uncover the universal properties of language and to document the diversity of languages across the globe. Linguistics is crucial for understanding human cognition, communication, and culture. 🧠💬🌐  

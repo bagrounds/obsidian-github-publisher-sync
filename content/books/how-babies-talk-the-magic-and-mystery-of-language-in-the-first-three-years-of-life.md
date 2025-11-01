@@ -5,6 +5,7 @@ aliases:
 URL: https://bagrounds.org/books/how-babies-talk-the-magic-and-mystery-of-language-in-the-first-three-years-of-life
 share: true
 affiliate link: https://amzn.to/4kqtDYr
+CTA: 👶 Decode infant communication.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 👶🗣️ How Babies Talk: The Magic and Mystery of Language in the First Three Years of Life  

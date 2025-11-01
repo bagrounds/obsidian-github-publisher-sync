@@ -4,10 +4,10 @@ aliases:
   - "🗣️💬🧠 Language Acquisition: Crash Course Linguistics #12"
 title: "🗣️💬🧠 Language Acquisition: Crash Course Linguistics #12"
 URL: https://youtu.be/Ccsf0yX7ECg
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: CrashCourse
-tags: 
+tags:
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 🗣️💬🧠 Language Acquisition: Crash Course Linguistics #12  
@@ -36,6 +36,6 @@ tags:
   
 ## 📚 Book Recommendations  
   
-* 📖 - **"The Language Instinct: How the Mind Creates Language" by Steven Pinker:** A classic exploration of how humans acquire and use language.  
+* **[🗣️🧠 The Language Instinct: How the Mind Creates Language](../books/the-language-instinct-how-the-mind-creates-language.md) by Steven Pinker:** A classic exploration of how humans acquire and use language.  
 * 📖🗣️ - **"Bilingual: Life and Reality" by François Grosjean:** This book provides a comprehensive overview of [🗣️🗣️ Bilingualism](../topics/bilingualism.md), covering various aspects such as language acquisition, cognitive effects, and social implications.  
 * 📖👧🗣️ - **"Languages and Children: Making the Match" by Helena Curtain and Carol Ann Dahlberg:** This book focuses on language education for children, covering topics like early language learning, bilingual education, and heritage language maintenance.

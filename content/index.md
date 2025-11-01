@@ -52,7 +52,7 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
   
   
 ## [🌌 Topics](./topics/index.md) (82)  
-- [Linguistics](./topics/linguistics.md)  
+- [🗣️📚🧠 Linguistics](./topics/linguistics.md)  
 - [🗣️🗣️ Bilingualism](./topics/bilingualism.md)  
 - [🏦♾️📈💸 Modern Monetary Theory](./topics/modern-monetary-theory.md)  
 - [🤔🚫➡️📚 Heterodox Economics](./topics/heterodox-economics.md)  

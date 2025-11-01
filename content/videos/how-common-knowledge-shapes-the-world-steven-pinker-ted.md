@@ -62,7 +62,7 @@ A: 💰 Financial speculation, according to Keynes, is a game of recursive menta
 ### Similar  
   
 * [⚔️♟️ The Strategy of Conflict](../books/the-strategy-of-conflict.md) by Thomas Schelling [Source: Princeton University Press]. This book introduces the concept of the focal point, which is central to the video’s explanation of how unspoken common knowledge facilitates coordination problems.  
-* 🗣️ The Language Instinct by Steven Pinker [Source: William Morrow and Company]. This work explores the nature of language as an innate human ability, touching upon how direct speech evolved and functions as a powerful, public mechanism for generating common knowledge.  
+* [🗣️🧠 The Language Instinct: How the Mind Creates Language](../books/the-language-instinct-how-the-mind-creates-language.md) by Steven Pinker [Source: William Morrow and Company]. This work explores the nature of language as an innate human ability, touching upon how direct speech evolved and functions as a powerful, public mechanism for generating common knowledge.  
 * 🎲 Game Theory: A Nontechnical Introduction by Morten D. Davis [Source: Dover Publications]. Provides a highly accessible overview of the mathematical principles, including coordination games, that underpin the logic of common assumptions in social interaction.  
   
 ### Contrasting  

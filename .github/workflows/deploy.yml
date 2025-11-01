@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+      - copilot/fix-unchanged-og-image-regeneration
 
 permissions:
   contents: read

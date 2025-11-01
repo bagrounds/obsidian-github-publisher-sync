@@ -4,10 +4,10 @@ aliases:
   - "👶🗣️🔤📢 📖 The ABCs of Language Development: Discover Language With Your Child"
 title: "👶🗣️🔤📢 📖 The ABCs of Language Development: Discover Language With Your Child"
 URL: https://bagrounds.org/videos/the-abcs-of-language-development-discover-language-with-your-child
-Author: 
+Author:
 Platform: "#YouTube"
 Channel: UBC Language Sciences
-tags: 
+tags:
 youtube: https://youtu.be/t6t9XL948TM
 ---
 [Home](../index.md) > [Videos](./index.md)  
@@ -49,7 +49,7 @@ The video 📹 discusses the launch 🚀 of the book, [👶🔤 The ABC’s of L
 * **"Selective Mutism":** This book follows a child who experiences selective mutism, exploring how they find new ways to communicate.  
 * **"The MIT Encyclopedia of Communication Disorders" edited by Raymond D. Kent:** A massive reference work covering a wide range of communication and speech disorders in children and adults.  
 * **"Child Language Acquisition: Contrasting Theoretical Approaches" by Ben Ambridge:** For those interested in the theoretical underpinnings, this book explores different perspectives on how children acquire language.  
-* **"The Language Instinct: How the Mind Creates Language" by Steven Pinker:** While not solely focused on child development, Pinker's famous work explores the innate human capacity for language, offering a broader scientific context.  
+* **[🗣️🧠 The Language Instinct: How the Mind Creates Language](../books/the-language-instinct-how-the-mind-creates-language.md) by Steven Pinker:** While not solely focused on child development, Pinker's famous work explores the innate human capacity for language, offering a broader scientific context.  
 * **"Through the Language Glass: Why the World Looks Different in Other Languages" by Guy Deutscher:** Explores how different languages can shape our perception of the world, offering a contrasting view on the influence of language beyond basic acquisition.  
   
 ### Creatively Related Books (Focus on Communication, Social Skills & Fictional Exploration of Language)  

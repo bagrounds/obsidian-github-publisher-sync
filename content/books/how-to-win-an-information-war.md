@@ -64,7 +64,7 @@ CTA: ⚔️ Resist disinformation.
 * 🗣️ **Propaganda** by Edward Bernays: Written by the "father of public relations," this seminal 1928 work outlines the principles of influencing public opinion, viewing propaganda as a necessary tool for democratic governance.  
 * 🤥 **Trust Me, I'm Lying: Confessions of a Media Manipulator** by Ryan Holiday: A provocative insider's account of how modern online media can be manipulated for profit and attention, revealing unethical tactics.  
 * 🛡️ **The Kill Chain: Defending America in the Future of High-Tech Warfare** by Christian Brose: While focused more broadly on military tech, it addresses the integration of information warfare into modern defense strategy.  
-* 📱 **LikeWar: The Weaponization of Social Media** by P.W. Singer and Emerson T. Brooking: Explores how social media platforms have become battlegrounds for influence operations, political campaigns, and state actors.  
+* **[📱⚔️ LikeWar: The Weaponization of Social Media](./likewar-the-weaponization-of-social-media.md)** by P.W. Singer and Emerson T. Brooking: Explores how social media platforms have become battlegrounds for influence operations, political campaigns, and state actors.  
 * 🤖 **The Chaos Machine: The Inside Story of How Social Media Rewired Our Minds and Our World** by Max Fisher: Examines the design of social media algorithms and how they contribute to polarization, extremism, and the spread of disinformation.  
   
 ### 🎭 Contrasting Perspectives (Different Angles on Information, Solutions, Democracy)  

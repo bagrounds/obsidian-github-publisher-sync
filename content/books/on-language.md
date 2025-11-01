@@ -31,7 +31,7 @@ CTA: 🗣️ Explore expression.
   
 #### 🤝 Echoes of Chomsky: Books in a Similar Vein  
   
-* 🧠 ***The Language Instinct: How the Mind Creates Language*** **by Steven Pinker:** 🤔 Often considered a more accessible popularization of Chomskyan ideas, Pinker's work champions the concept of an innate language faculty. 🧬 He argues that language is a biological adaptation and provides a wealth of examples from child language acquisition and cognitive science to support the idea of a "language instinct."  
+* **[🗣️🧠 The Language Instinct: How the Mind Creates Language](./the-language-instinct-how-the-mind-creates-language.md)** **by Steven Pinker:** 🤔 Often considered a more accessible popularization of Chomskyan ideas, Pinker's work champions the concept of an innate language faculty. 🧬 He argues that language is a biological adaptation and provides a wealth of examples from child language acquisition and cognitive science to support the idea of a "language instinct."  
   
 * 🗣️ ***Language and Mind*** **by Noam Chomsky:** 🧐 For those wanting a deeper dive into Chomsky's own writings, this collection of essays directly explores the relationship between language and human thought. 🧠 It provides a more detailed exposition of his theories on the biological basis of language and its implications for understanding the mind.  
   

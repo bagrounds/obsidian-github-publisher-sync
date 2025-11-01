@@ -25,7 +25,10 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [2025-10-22 | 👹 Corrupt 💰 Capital 💸 Costs ⚖️ Civic 💥 Conflict 📚📰📺](./reflections/2025-10-22.md)  
   
   
-## [📚 Books](./books/index.md) (721)  
+## [📚 Books](./books/index.md) (722)  
+- [👶🗣️ How Babies Talk: The Magic and Mystery of Language in the First Three Years of Life](./books/how-babies-talk-the-magic-and-mystery-of-language-in-the-first-three-years-of-life.md)  
+- [🗣️ On Language](./books/on-language.md)  
+- [🗣️🧠 The Language Instinct: How the Mind Creates Language](./books/the-language-instinct-how-the-mind-creates-language.md)  
 - [🧑‍💻🤖 Beyond Vibe Coding: From Coder to AI-Era Developer](./books/beyond-vibe-coding-from-coder-to-ai-era-developer.md)  
 - [💰🤥 Merchants of Doubt](./books/merchants-of-doubt.md)  
 - [🤥📣 This Is Not Propaganda: Adventures in the War Against Reality](./books/this-is-not-propaganda.md)  
@@ -33,38 +36,35 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [🎭🤫 Active Measures: The Secret History of Disinformation and Political Warfare](./books/active-measures-the-secret-history-of-disinformation-and-political-warfare.md)  
 - [🌍💰📊 Macroeconomics](./books/macroeconomics.md)  
 - [💰📉➡️📈🗳️ The Deficit Myth: Modern Monetary Theory and the Birth of the People's Economy](./books/the-deficit-myth.md)  
-- [💰🌎🌡️ Can We Afford the Future?: The Economics of a Warming World](./books/can-we-afford-the-future-the-economics-of-a-warming-world.md)  
-- [🧑‍💼🏦💸 The General Theory of Employment, Interest, and Money](./books/the-general-theory-of-employment-interest-and-money.md)  
-- [💰 Keynes: A Very Short Introduction](./books/keynes-a-very-short-introduction.md)  
   
   
 ## [📺 Videos](./videos/index.md) (400)  
+- [👶🗣️🔤📢 📖 The ABCs of Language Development: Discover Language With Your Child](./videos/the-abcs-of-language-development-discover-language-with-your-child.md)  
+- [💥🧠👶 The «Big Bang» in Learning: Brain Changes and Childhood Learning (Full Session)](./videos/the-big-bang-in-learning-brain-changes-and-childhood-learning-full-session.md)  
+- [🗣️💬🧠 Language Acquisition: Crash Course Linguistics  > 12](./videos/language-acquisition-crash-course-linguistics-12.md)  
+- [👥🌍📢💡 How Common Knowledge Shapes the World | Steven Pinker | TED](./videos/how-common-knowledge-shapes-the-world-steven-pinker-ted.md)  
 - [🇺🇸🗣️👑 Senator Slotkin Delivers Speech on Trump's Authoritarian Playbook](./videos/senator-slotkin-delivers-speech-on-trumps-authoritarian-playbook.md)  
 - [✨💻💀🤖 Steve Yegge on productive vibe coding, the death of the IDE, babysitting a fleet of AI coding agents](./videos/steve-yegge-on-productive-vibe-coding-the-death-of-the-ide-babysitting-a-fleet-of-ai-coding-agents.md)  
 - [🧑‍🔬📉🇺🇸🔚 Top researchers consider leaving U.S. amid funding cuts: 'The science world is ending'](./videos/top-researchers-consider-leaving-us-amid-funding-cuts-the-science-world-is-ending.md)  
 - [🇺🇸🛡️💪 Never Give Up A Conversation with Joyce White Vance—«Giving Up Is Unforgivable: A Manual for Keeping a Democracy»](./videos/a-conversation-with-joyce-white-vance-giving-up-is-unforgivable-a-manual-for-keeping-a-democracy.md)  
 - [👨‍💻➡️🤖🧩 Beyond the IDE: Toward Multi-Agent Orchestration](./videos/beyond-the-ide-toward-multi-agent-orchestration.md)  
 - [😎✨💻🔮 Vibe Coding Is The Only Future - Steve Yegge](./videos/vibe-coding-is-the-only-future-steve-yegge.md)  
-- [🌊🏄‍♂️✋🧠 Urge Surfing Demonstration and Explanation by a Therapist | Effectively manage cravings and urges](./videos/urge-surfing-demonstration-and-explanation-by-a-therapist-effectively-manage-cravings-and-urges.md)  
-- [📰🇺🇸❓🏛️ This Week In Politics, A Big-Picture Look at Where We Are Right Now | Explainer](./videos/this-week-in-politics-a-big-picture-look-at-where-we-are-right-now-explainer.md)  
-- [❓🏥🛂 Who Pays for Undocumented Migrants’ Healthcare? Reporter Explains | Amanpour and Company](./videos/who-pays-for-undocumented-migrants-healthcare-reporter-explains-amanpour-and-company.md)  
-- [🇺🇸🔄👑😬 Tamara Keith and Amy Walter on Trump flirting with the idea of the 3rd term](./videos/tamara-keith-and-amy-walter-on-trump-flirting-with-the-idea-of-the-3rd-term.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (82)  
+- [Linguistics](./topics/linguistics.md)  
+- [🗣️🗣️ Bilingualism](./topics/bilingualism.md)  
 - [🏦♾️📈💸 Modern Monetary Theory](./topics/modern-monetary-theory.md)  
 - [🤔🚫➡️📚 Heterodox Economics](./topics/heterodox-economics.md)  
 - [👨‍👩‍👦🧭🤝 Authoritative Parenting](./topics/authoritative-parenting.md)  
-- [💰🏛️📈 Functional Finance](./topics/functional-finance.md)  
-- [🧠🤖🗣️💡 Self-Aware Learning Chatbot](./topics/self-aware-learning-chatbot.md)  
   
   
-## [📄  Articles](./articles/index.md) (65)  
+## [📄  Articles](./articles/index.md) (66)  
+- [🗣️🧠🧑‍💻📚 Relating Natural Language Aptitude to Individual Differences in Learning Programming Languages](./articles/relating-natural-language-aptitude-to-individual-differences-in-learning-programming-languages.md)  
 - [🤖📢❌ Digital Yard Signs: Analysis of an AI Bot Political Influence Campaign on X](./articles/digital-yard-signs-analysis-of-an-ai-bot-political-influence-campaign-on-x.md)  
 - [🤔💭🤔💭 Why We Think](./articles/why-we-think.md)  
 - [♊💻🆚 Gemini CLI + VS Code: Native diffing and context-aware workflows](./articles/gemini-cli-+-vs-code-native-diffing-and-context-aware-workflows.md)  
 - [⚙️🤖📈🤝 Engineering and AI: Advancing the synergy](./articles/engineering-and-ai-advancing-the-synergy.md)  
-- [🧑‍🏫🌍🛠️📈 Agent Skills: Equipping agents for the real world with Agent Skills](./articles/equipping-agents-for-the-real-world-with-agent-skills.md)  
   
   
 ## [🤖💬 Bot Chats](./bot-chats/index.md) (45)  

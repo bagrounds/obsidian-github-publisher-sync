@@ -77,7 +77,7 @@ While the benefits are significant, bilingualism can also present some challenge
 * 🍎 **"Foundations of Bilingual Education and Bilingualism" by Colin Baker:** 📚 This is a key textbook in the field of bilingual education, offering a thorough academic overview.  
 * 👶 **"An Introduction to Bilingual Development" by Annick De Houwer:** 📖 An introductory textbook that focuses specifically on bilingual development.  
 * 📝 **"How Languages are Learned" by Patsy M. Lightbown and Nina Spada:** 💯 A widely used and highly regarded textbook on second language acquisition, offering a solid foundation for understanding how people learn new languages.  
-* 🧠 **"The Language Instinct: How the Mind Creates Language" by Steven Pinker:** 💡 While not exclusively about bilingualism, this classic book explores the innate human capacity for language, which is foundational to understanding language acquisition in any context.  
+* **[🗣️🧠 The Language Instinct: How the Mind Creates Language](../books/the-language-instinct-how-the-mind-creates-language.md) by Steven Pinker:** 💡 While not exclusively about bilingualism, this classic book explores the innate human capacity for language, which is foundational to understanding language acquisition in any context.  
 * 📖 **"Introducing Second Language Acquisition" by Muriel Saville-Troike:** 🚀 A strong introduction to the field of Second Language Acquisition (SLA).  
   
 ### 🧒👧 Children's Bilingual Books  

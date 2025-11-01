@@ -27,7 +27,7 @@ Here are some major subcategories of Linguistics:
 * **Applied Linguistics:** The application of linguistic theories and methods to practical problems, such as language teaching and translation. 💼🗣️  
   
 **Book Recommendations:**  
-1.  **"The Language Instinct" by Steven Pinker:** This book provides an engaging introduction to the biological basis of language, arguing that humans have an innate "language instinct." It's accessible and thought-provoking. 🧠🗣️📚  
+1.  **[🗣️🧠 The Language Instinct: How the Mind Creates Language](../books/the-language-instinct-how-the-mind-creates-language.md) by Steven Pinker:** This book provides an engaging introduction to the biological basis of language, arguing that humans have an innate "language instinct." It's accessible and thought-provoking. 🧠🗣️📚  
 2.  **"Language: The Basics" by R.L. Trask and Peter Stockwell:** A clear and concise overview of the core concepts in linguistics, covering phonetics, phonology, morphology, syntax, semantics, and pragmatics. Perfect for beginners. 📖✨  
 3.  **"Words and Rules: The Ingredients of Language" by Steven Pinker:** This book delves into the mental grammar of language, exploring how we combine words and rules to create and understand sentences. It's a fascinating look at the cognitive mechanisms underlying language. 📝🧠🔍  
 4.  **"Sociolinguistics" by Ronald Wardhaugh and Janet M. Fuller:** A comprehensive introduction to the study of language and society, covering topics such as language variation, language attitudes, and language planning. 👥🗣️🌍  

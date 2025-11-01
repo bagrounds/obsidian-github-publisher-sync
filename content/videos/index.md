@@ -7,7 +7,7 @@ URL: https://bagrounds.org/videos
 backlinks: false
 ---
 [Home](../index.md)  
-# 📺 Videos (399)  
+# 📺 Videos (400)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
 - [❓💪🔬 12 Questions About Creatine with Stephen Cornish, PhD](./12-questions-about-creatine-w-stephen-cornish-phd.md)  
@@ -247,6 +247,7 @@ backlinks: false
 - [🏛️📣👹🤑 Schiff Takes To Senate Floor to Lay Out Trump's 10 Most Corrupt Acts So Far](./schiff-takes-to-senate-floor-to-lay-out-trumps-10-most-corrupt-acts-so-far.md)  
 - [Scientists sound alarm on Trump administration's dismantling of research funding](./scientists-sound-alarm-on-trump-administrations-dismantling-of-research-funding.md)  
 - [👨‍🦳🆚💰 Senator Bernie Sanders on Fighting the Billionaires](./senator-bernie-sanders-on-fighting-the-billionaires.md)  
+- [🇺🇸🗣️👑 Senator Slotkin Delivers Speech on Trump's Authoritarian Playbook](./senator-slotkin-delivers-speech-on-trumps-authoritarian-playbook.md)  
 - [🚫👑⚡✊ Sen. Bernie Sanders - Harnessing Energy From «No Kings» Rally to «Fight Oligarchy» | The Daily Show](./sen-bernie-sanders-harnessing-energy-from-no-kings-rally-to-fight-oligarchy-the-daily-show.md)  
 - [Sen. Bernie Sanders: NOBODY Should Have Voted for the Terrible CR](./sen-bernie-sanders-nobody-should-have-voted-for-the-terrible-cr.md)  
 - [Sen. Cantwell Speaks on the Senate Floor on the Trade Review Act of 2025](./sen-cantwell-speaks-on-the-senate-floor-on-the-trade-review-act-of-2025.md)  

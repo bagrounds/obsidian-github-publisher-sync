@@ -54,7 +54,7 @@ jobs:
         with:
           path: |
             .quartz-cache/
-          key: ${{ runner.os }}-og-cache-${{ github.sha }}
+          key: ${{ runner.os }}-og-cache-${{ hashFiles('content/**/*.md', 'quartz.config.ts') }}
           restore-keys: |
             ${{ runner.os }}-og-cache-
 

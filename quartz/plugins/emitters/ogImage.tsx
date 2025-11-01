@@ -88,7 +88,7 @@ async function saveManifest(manifest: OgCacheManifest): Promise<void> {
 // Compute hash of content that affects OG image generation
 function computeContentHash(
   fileData: QuartzPluginData,
-  cfg: any,
+  cfg: BuildCtx["cfg"]["configuration"],
   userOpts: SocialImageOptions,
 ): string {
   const titleSuffix = cfg.pageTitleSuffix ?? "";

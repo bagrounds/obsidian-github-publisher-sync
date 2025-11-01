@@ -7,7 +7,7 @@ backlinks: false
 URL: https://bagrounds.org/articles
 ---
 [Home](../index.md)  
-# 📄 Articles (65)  
+# 📄 Articles (66)  
 - [🦊😈🐾🕵️💸 5 takeaways about NPR's reporting on the whistleblower report about DOGE at the NLRB](./5-takeaways-about-nprs-reporting-on-the-whistleblower-report-about-doge-at-the-nlrb.md)  
 - [🌱🤖⚙️🖐️ 5 tips on getting started with Gems, your custom AI experts](./5-tips-on-getting-started-with-gems-your-custom-ai-experts.md)  
 - [⏱️⚔️🏛️ '60 Minutes' chief resigns, saying show's independence was compromised](./60-minutes-chief-resigns-saying-shows-independence-was-compromised.md)  
@@ -58,6 +58,7 @@ URL: https://bagrounds.org/articles
 - [🚫🏫📉⚠️ Project 2025 and education: A lot of bad ideas, some more actionable than others](./project-2025-and-education-a-lot-of-bad-ideas-some-more-actionable-than-others.md)  
 - [✊🏾✊🏽✊🏿 Protesters unite against Trump in hundreds of rallies across the U.S.](./protesters-unite-against-trump-in-hundreds-of-rallies-across-the-us.md)  
 - [🗣️🗺️🤖⚙️ Reasoning with Language Model is Planning with World Model](./reasoning-with-language-model-is-planning-with-world-model.md)  
+- [🗣️🧠🧑‍💻📚 Relating Natural Language Aptitude to Individual Differences in Learning Programming Languages](./relating-natural-language-aptitude-to-individual-differences-in-learning-programming-languages.md)  
 - [🤱😴👶 Safe Sleep for Breastfeeding Babies](./safe-sleep-for-breastfeeding-babies.md)  
 - [🧠🤖📈 Scientists just developed a new AI modeled on the human brain — it's outperforming LLMs like ChatGPT at reasoning tasks](./scientists-just-developed-a-new-ai-modeled-on-the-human-brain-its-outperforming-llms-like-chatgpt-at-reasoning-tasks.md)  
 - [🤖😴📢🗳️ Sleeper Social Bots: A New Generation of AI Disinformation Bots are Already a Political Threat](./sleeper-social-bots-a-new-generation-of-ai-disinformation-bots-are-already-a-political-threat.md)  

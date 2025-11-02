@@ -3,9 +3,9 @@ share: true
 aliases:
   - "👑😈👎📈 The Dictator's Handbook: Why Bad Behavior Is Almost Always Good Politics"
 title: "👑😈👎📈 The Dictator's Handbook: Why Bad Behavior Is Almost Always Good Politics"
-URL: https://bagrounds.org/books/
-Author: 
-tags: 
+URL: https://bagrounds.org/books/the-dictators-handbook
+Author:
+tags:
 affiliate link: https://amzn.to/43R8TSz
 CTA: 👑 Seize power.
 ---
@@ -18,13 +18,13 @@ CTA: 👑 Seize power.
 💰 "The Dictator's Handbook" argues that 👑 all leaders, regardless of their 👑 regime type, survive by catering to a small group of 🤝 essential supporters (the "selectorate") with 🎁 private goods, while the vast majority are kept subservient through 📉 low taxes and 🏛️ public goods.  
   
 ### New or Surprising Perspective 🤔  
-The book offers a 😒 cynical but 🤔 compelling perspective by stripping away ⚖️ moral judgment and focusing on the 💪 *practical* incentives that drive leaders. It posits that even ostensibly 🗳️ democratic leaders are motivated by the same 🦁 survival instincts as 👑 dictators, just operating in different 🌍 contexts with different 👥 selectorates. This might be 😲 surprising to those who believe in the inherent😇 goodness of leaders or the 🧠 power of ideology.  
+The book offers a 😒 cynical but 🤔 compelling perspective by stripping away ⚖️ moral judgment and focusing on the 💪 *practical* incentives that drive leaders. It posits that even ostensibly 🗳️ democratic leaders are motivated by the same 🦁 survival instincts as 👑 dictators, just operating in different 🌍 contexts with different 👥 selectorates. This might be 😲 surprising to those who believe in the inherent 😇 goodness of leaders or the 🧠 power of ideology.  
   
 ### Deep Dive 🤿  
 **Topics:**  
   
 * 🛡️ **Survival of Leaders:** 🪖 The book centers around the strategies leaders use to acquire and maintain power, irrespective of regime type.  
-* 👑 **The Selectorate Theory:** 🔑 This is the core concept, dividing the population into the *nominal selectorate* 👥 (those who could potentially have a say🗣️), the *real selectorate* ✅ (those who actually choose the leader🙋), and the *winning coalition* 🤝 (the essential supporters whose loyalty is critical ❤️).  
+* 👑 **The Selectorate Theory:** 🔑 This is the core concept, dividing the population into the *nominal selectorate* 👥 (those who could potentially have a say 🗣️), the *real selectorate* ✅ (those who actually choose the leader 🙋), and the *winning coalition* 🤝 (the essential supporters whose loyalty is critical ❤️).  
 * 📊 **Private vs. Public Goods:** 🎁 Leaders favor private goods 💰 (e.g., bribes 💸, contracts 📝, privileges ✨) for their winning coalition and public goods 🏥 (e.g., infrastructure 🌉, healthcare ⚕️) for the general population 🌍, based on which strategy best secures their power 💪.  
 * 🏛️ **Regime Types:** ⚖️ The book compares autocracies 👑, oligarchies 👥👥👥, and democracies 🗳️, showing how the size of the selectorate and winning coalition shapes political behavior.  
 * 💸 **Corruption and Kleptocracy:** 😈 Explores why corruption is often a feature, not a bug 🐛, of political systems, particularly where the winning coalition is small 🤏.  

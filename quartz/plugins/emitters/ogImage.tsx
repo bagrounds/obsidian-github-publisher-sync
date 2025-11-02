@@ -23,10 +23,7 @@ const defaultOptions: SocialImageOptions = {
 }
 
 type OgCacheManifest = {
-  [slug: string]: {
-    cacheKey: string
-    mtime: number
-  }
+  [slug: string]: string
 }
 
 const CACHE_DIR = ".quartz-cache"
@@ -35,24 +32,30 @@ const MANIFEST_FILE = path.join(CACHE_DIR, "og-cache-manifest.json")
 const SKIP_EXISTING = process.env.SKIP_EXISTING_OG_IMAGES === "true"
 
 async function loadManifest(): Promise<OgCacheManifest> {
+  const startTime = performance.now()
   try {
     const data = await fs.readFile(MANIFEST_FILE, "utf-8")
     const manifest = JSON.parse(data)
-    console.log(chalk.cyan(`[OG Cache] Loaded manifest with ${Object.keys(manifest).length} entries`))
+    const duration = (performance.now() - startTime).toFixed(2)
+    console.log(chalk.cyan(`[OG Cache] Loaded manifest with ${Object.keys(manifest).length} entries (${duration}ms)`))
     return manifest
   } catch (err) {
-    console.log(chalk.yellow("[OG Cache] No existing manifest found, creating new one"))
+    const duration = (performance.now() - startTime).toFixed(2)
+    console.log(chalk.yellow(`[OG Cache] No existing manifest found, creating new one (${duration}ms)`))
     return {}
   }
 }
 
 async function saveManifest(manifest: OgCacheManifest): Promise<void> {
+  const startTime = performance.now()
   try {
     await fs.mkdir(CACHE_DIR, { recursive: true })
     await fs.writeFile(MANIFEST_FILE, JSON.stringify(manifest, null, 2), "utf-8")
-    console.log(chalk.green(`[OG Cache] Saved manifest with ${Object.keys(manifest).length} entries`))
+    const duration = (performance.now() - startTime).toFixed(2)
+    console.log(chalk.green(`[OG Cache] Saved manifest with ${Object.keys(manifest).length} entries (${duration}ms)`))
   } catch (err) {
-    console.warn(chalk.yellow(`[OG Cache] Failed to save manifest: ${err}`))
+    const duration = (performance.now() - startTime).toFixed(2)
+    console.warn(chalk.yellow(`[OG Cache] Failed to save manifest: ${err} (${duration}ms)`))
   }
 }
 
@@ -95,18 +98,27 @@ async function shouldSkipGeneration(
 
   const cfg = ctx.cfg.configuration
   const currentCacheKey = computeCacheKey(fileData, cfg, userOpts)
-  const cachedEntry = manifest[slug]
+  const cachedKey = manifest[slug]
   
-  if (!cachedEntry || cachedEntry.cacheKey !== currentCacheKey) {
+  if (!cachedKey) {
+    console.log(chalk.yellow(`[OG Cache] Cache miss (new file): ${slug}`))
+    return false
+  }
+  
+  if (cachedKey !== currentCacheKey) {
+    console.log(chalk.yellow(`[OG Cache] Cache miss (content changed): ${slug}`))
     return false
   }
 
+  const startTime = performance.now()
   const copied = await copyCachedImage(ctx, slug)
+  const duration = (performance.now() - startTime).toFixed(2)
+  
   if (copied) {
-    console.log(chalk.green(`[OG Cache] ✓ Cache hit for ${slug}`))
+    console.log(chalk.green(`[OG Cache] ✓ Cache hit for ${slug} (${duration}ms)`))
     return true
   } else {
-    console.log(chalk.yellow(`[OG Cache] Cache miss (file not found) for ${slug}`))
+    console.log(chalk.yellow(`[OG Cache] Cache miss (file not found in cache): ${slug}`))
     return false
   }
 }
@@ -177,6 +189,7 @@ async function processOgImage(
     fileData.frontmatter?.description ??
     unescapeHTML(fileData.description?.trim() ?? i18n(cfg.locale).propertyDefaults.description)
 
+  const genStartTime = performance.now()
   console.log(chalk.blue(`[OG Cache] Generating OG image for ${slug}`))
 
   const stream = await generateSocialImage(
@@ -197,20 +210,24 @@ async function processOgImage(
     ext: ".webp",
   })
 
+  const genDuration = (performance.now() - genStartTime).toFixed(2)
+  console.log(chalk.blue(`[OG Cache] Generated OG image for ${slug} (${genDuration}ms)`))
+
+  const cacheStartTime = performance.now()
   try {
     const publicImagePath = path.join(ctx.argv.output, `${slug}-og-image.webp`)
     const cachedImagePath = path.join(OG_CACHE_DIR, `${slug}-og-image.webp`)
     await fs.mkdir(path.dirname(cachedImagePath), { recursive: true })
     await fs.copyFile(publicImagePath, cachedImagePath)
+    const cacheDuration = (performance.now() - cacheStartTime).toFixed(2)
+    console.log(chalk.blue(`[OG Cache] Cached image for ${slug} (${cacheDuration}ms)`))
   } catch (err) {
-    console.warn(chalk.yellow(`[OG Cache] Failed to cache image for ${slug}: ${err}`))
+    const cacheDuration = (performance.now() - cacheStartTime).toFixed(2)
+    console.warn(chalk.yellow(`[OG Cache] Failed to cache image for ${slug}: ${err} (${cacheDuration}ms)`))
   }
 
   const currentCacheKey = computeCacheKey(fileData, cfg, fullOptions)
-  manifest[slug] = {
-    cacheKey: currentCacheKey,
-    mtime: Date.now(),
-  }
+  manifest[slug] = currentCacheKey
 
   return result
 }

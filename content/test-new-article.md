@@ -2,8 +2,8 @@
 share: true
 aliases:
   - 🛰️📐≈ Pseudorange
-title: 🛰️📐≈ Pseudorange - MODIFIED FOR TESTING
-URL: https://bagrounds.org/topics/pseudorange
+title: 🧪 New Test Article
+URL: https://bagrounds.org/test-new-article
 ---
 [Home](../index.md) > [Topics](./index.md)  
 # 🛰️📐≈ Pseudorange  

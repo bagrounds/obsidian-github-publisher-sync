@@ -50,7 +50,7 @@ A: 🔄 Scholars observe a **global reverse wave** of democratic decline, where 
   
 ### Contrasting Books  
 * [🇺🇸📜 The Federalist Papers](../books/the-federalist-papers.md) by Alexander Hamilton, James Madison, and John Jay: 🖋️ Provides the foundational, *optimistic* theory of American separation of powers and federalism, which the video argues is failing due to hyper-partisanship.  
-* The Narrow Corridor: States, Societies, and the Fate of Liberty by Daron Acemoglu and James A. Robinson: 🚧 Presents the idea that liberty exists in a *narrow corridor* between a despotic state and an absent state, suggesting U.S. institutions are fundamentally resilient against full autocracy due to a long history of societal mobilization.  
+* [↔️🏛️ The Narrow Corridor: States, Societies, and the Fate of Liberty](../books/the-narrow-corridor-states-societies-and-the-fate-of-liberty.md) by Daron Acemoglu and James A. Robinson: 🚧 Presents the idea that liberty exists in a *narrow corridor* between a despotic state and an absent state, suggesting U.S. institutions are fundamentally resilient against full autocracy due to a long history of societal mobilization.  
   
 ### Creatively Related Books  
 * [💰🤫 Dark Money: The Hidden History of the Billionaires Behind the Rise of the Radical Right](../books/dark-money-the-hidden-history-of-the-billionaires-behind-the-rise-of-the-radical-right.md) by Jane Mayer: 💰 Explores the *financial infrastructure* and long-term legal strategies used by wealthy donors to influence and capture political and judicial institutions, directly enabling the "autocratic legalism" described.  

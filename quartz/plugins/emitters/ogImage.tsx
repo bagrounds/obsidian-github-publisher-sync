@@ -66,9 +66,11 @@ function computeCacheKey(
 ): string {
   const titleSuffix = cfg.pageTitleSuffix ?? ""
   const title = (fileData.frontmatter?.title ?? "") + titleSuffix
+  // Only use explicitly set descriptions, not auto-generated ones
+  // Auto-generated descriptions can vary between builds and shouldn't affect OG images
   const description = fileData.frontmatter?.socialDescription ??
     fileData.frontmatter?.description ??
-    (fileData.description?.trim() ?? "")
+    ""
   
   return `${title}|${description}|${userOpts.width}|${userOpts.height}|${userOpts.colorScheme}`
 }

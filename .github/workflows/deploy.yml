@@ -4,7 +4,6 @@ on:
   push:
     branches:
       - main
-      - copilot/fix-unchanged-og-image-regeneration
 
 permissions:
   contents: read
@@ -55,7 +54,7 @@ jobs:
         with:
           path: |
             .quartz-cache/
-          key: ${{ runner.os }}-og-cache-${{ hashFiles('content/**/*.md', 'quartz.config.ts') }}
+          key: ${{ runner.os }}-og-cache-${{ github.sha }}
           restore-keys: |
             ${{ runner.os }}-og-cache-
 

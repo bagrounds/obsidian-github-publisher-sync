@@ -12,6 +12,7 @@ import { BuildCtx } from "../../util/ctx"
 import { QuartzPluginData } from "../vfile"
 import fs from "node:fs/promises"
 import chalk from "chalk"
+import crypto from "crypto"
 import path from "path"
 
 const defaultOptions: SocialImageOptions = {
@@ -22,8 +23,12 @@ const defaultOptions: SocialImageOptions = {
   excludeRoot: false,
 }
 
+// Cache manifest type
 type OgCacheManifest = {
-  [slug: string]: string
+  [slug: string]: {
+    hash: string
+    mtime: number
+  }
 }
 
 const CACHE_DIR = ".quartz-cache"
@@ -31,50 +36,50 @@ const OG_CACHE_DIR = path.join(CACHE_DIR, "og-images")
 const MANIFEST_FILE = path.join(CACHE_DIR, "og-cache-manifest.json")
 const SKIP_EXISTING = process.env.SKIP_EXISTING_OG_IMAGES === "true"
 
+// Load the manifest from disk
 async function loadManifest(): Promise<OgCacheManifest> {
-  const startTime = performance.now()
   try {
     const data = await fs.readFile(MANIFEST_FILE, "utf-8")
     const manifest = JSON.parse(data)
-    const duration = (performance.now() - startTime).toFixed(2)
-    console.log(chalk.cyan(`[OG Cache] Loaded manifest with ${Object.keys(manifest).length} entries (${duration}ms)`))
+    console.log(chalk.cyan(`[OG Cache] Loaded manifest with ${Object.keys(manifest).length} entries`))
     return manifest
   } catch (err) {
-    const duration = (performance.now() - startTime).toFixed(2)
-    console.log(chalk.yellow(`[OG Cache] No existing manifest found, creating new one (${duration}ms)`))
+    console.log(chalk.yellow("[OG Cache] No existing manifest found, creating new one"))
     return {}
   }
 }
 
+// Save the manifest to disk
 async function saveManifest(manifest: OgCacheManifest): Promise<void> {
-  const startTime = performance.now()
   try {
     await fs.mkdir(CACHE_DIR, { recursive: true })
     await fs.writeFile(MANIFEST_FILE, JSON.stringify(manifest, null, 2), "utf-8")
-    const duration = (performance.now() - startTime).toFixed(2)
-    console.log(chalk.green(`[OG Cache] Saved manifest with ${Object.keys(manifest).length} entries (${duration}ms)`))
+    console.log(chalk.green(`[OG Cache] Saved manifest with ${Object.keys(manifest).length} entries`))
   } catch (err) {
-    const duration = (performance.now() - startTime).toFixed(2)
-    console.warn(chalk.yellow(`[OG Cache] Failed to save manifest: ${err} (${duration}ms)`))
+    console.warn(chalk.yellow(`[OG Cache] Failed to save manifest: ${err}`))
   }
 }
 
-function computeCacheKey(
-  fileData: QuartzPluginData,
-  cfg: BuildCtx["cfg"]["configuration"],
-  userOpts: SocialImageOptions,
-): string {
+// Compute hash of content that affects OG image generation
+function computeContentHash(fileData: QuartzPluginData, cfg: any, userOpts: SocialImageOptions): string {
   const titleSuffix = cfg.pageTitleSuffix ?? ""
   const title = (fileData.frontmatter?.title ?? "") + titleSuffix
-  // Only use explicitly set descriptions, not auto-generated ones
-  // Auto-generated descriptions can vary between builds and shouldn't affect OG images
   const description = fileData.frontmatter?.socialDescription ??
     fileData.frontmatter?.description ??
-    ""
+    (fileData.description?.trim() ?? "")
   
-  return `${title}|${description}|${userOpts.width}|${userOpts.height}|${userOpts.colorScheme}`
+  const content = JSON.stringify({
+    title,
+    description,
+    width: userOpts.width,
+    height: userOpts.height,
+    colorScheme: userOpts.colorScheme,
+  })
+  
+  return crypto.createHash("sha256").update(content).digest("hex").substring(0, 16)
 }
 
+// Copy cached OG image from cache directory to public directory
 async function copyCachedImage(ctx: BuildCtx, slug: string): Promise<boolean> {
   const cachedImagePath = path.join(OG_CACHE_DIR, `${slug}-og-image.webp`)
   const publicImagePath = path.join(ctx.argv.output, `${slug}-og-image.webp`)
@@ -87,6 +92,7 @@ async function copyCachedImage(ctx: BuildCtx, slug: string): Promise<boolean> {
   }
 }
 
+// Check if cached OG image exists and is up to date
 async function shouldSkipGeneration(
   ctx: BuildCtx,
   slug: string,
@@ -99,28 +105,20 @@ async function shouldSkipGeneration(
   }
 
   const cfg = ctx.cfg.configuration
-  const currentCacheKey = computeCacheKey(fileData, cfg, userOpts)
-  const cachedKey = manifest[slug]
+  const currentHash = computeContentHash(fileData, cfg, userOpts)
+  const cachedEntry = manifest[slug]
   
-  if (!cachedKey) {
-    console.log(chalk.yellow(`[OG Cache] Cache miss (new file): ${slug}`))
-    return false
-  }
-  
-  if (cachedKey !== currentCacheKey) {
-    console.log(chalk.yellow(`[OG Cache] Cache miss (content changed): ${slug}`))
+  if (!cachedEntry || cachedEntry.hash !== currentHash) {
     return false
   }
 
-  const startTime = performance.now()
+  // Check if the cached OG image file exists and copy it to public/
   const copied = await copyCachedImage(ctx, slug)
-  const duration = (performance.now() - startTime).toFixed(2)
-  
   if (copied) {
-    console.log(chalk.green(`[OG Cache] ✓ Cache hit for ${slug} (${duration}ms)`))
+    console.log(chalk.green(`[OG Cache] ✓ Cache hit for ${slug}`))
     return true
   } else {
-    console.log(chalk.yellow(`[OG Cache] Cache miss (file not found in cache): ${slug}`))
+    console.log(chalk.yellow(`[OG Cache] Cache miss (file not found) for ${slug}`))
     return false
   }
 }
@@ -179,6 +177,7 @@ async function processOgImage(
   const cfg = ctx.cfg.configuration
   const slug = fileData.slug!
   
+  // Check if we should skip generation
   if (await shouldSkipGeneration(ctx, slug, fileData, manifest, fullOptions)) {
     return `${slug}-og-image.webp`
   }
@@ -191,7 +190,6 @@ async function processOgImage(
     fileData.frontmatter?.description ??
     unescapeHTML(fileData.description?.trim() ?? i18n(cfg.locale).propertyDefaults.description)
 
-  const genStartTime = performance.now()
   console.log(chalk.blue(`[OG Cache] Generating OG image for ${slug}`))
 
   const stream = await generateSocialImage(
@@ -212,24 +210,23 @@ async function processOgImage(
     ext: ".webp",
   })
 
-  const genDuration = (performance.now() - genStartTime).toFixed(2)
-  console.log(chalk.blue(`[OG Cache] Generated OG image for ${slug} (${genDuration}ms)`))
-
-  const cacheStartTime = performance.now()
+  // Also save to cache directory
   try {
     const publicImagePath = path.join(ctx.argv.output, `${slug}-og-image.webp`)
     const cachedImagePath = path.join(OG_CACHE_DIR, `${slug}-og-image.webp`)
+    // Ensure the subdirectory exists
     await fs.mkdir(path.dirname(cachedImagePath), { recursive: true })
     await fs.copyFile(publicImagePath, cachedImagePath)
-    const cacheDuration = (performance.now() - cacheStartTime).toFixed(2)
-    console.log(chalk.blue(`[OG Cache] Cached image for ${slug} (${cacheDuration}ms)`))
   } catch (err) {
-    const cacheDuration = (performance.now() - cacheStartTime).toFixed(2)
-    console.warn(chalk.yellow(`[OG Cache] Failed to cache image for ${slug}: ${err} (${cacheDuration}ms)`))
+    console.warn(chalk.yellow(`[OG Cache] Failed to cache image for ${slug}: ${err}`))
   }
 
-  const currentCacheKey = computeCacheKey(fileData, cfg, fullOptions)
-  manifest[slug] = currentCacheKey
+  // Update manifest after successful generation
+  const currentHash = computeContentHash(fileData, cfg, fullOptions)
+  manifest[slug] = {
+    hash: currentHash,
+    mtime: Date.now(),
+  }
 
   return result
 }
@@ -249,6 +246,7 @@ export const CustomOgImages: QuartzEmitterPlugin<Partial<SocialImageOptions>> = 
       const bodyFont = cfg.theme.typography.body
       const fonts = await getSatoriFonts(headerFont, bodyFont)
 
+      // Load manifest at the start of emission
       const manifest = await loadManifest()
 
       for (const [_tree, vfile] of content) {
@@ -256,6 +254,7 @@ export const CustomOgImages: QuartzEmitterPlugin<Partial<SocialImageOptions>> = 
         yield processOgImage(ctx, vfile.data, fonts, fullOptions, manifest)
       }
 
+      // Save manifest at the end of emission
       await saveManifest(manifest)
     },
     async *partialEmit(ctx, _content, _resources, changeEvents) {
@@ -264,6 +263,7 @@ export const CustomOgImages: QuartzEmitterPlugin<Partial<SocialImageOptions>> = 
       const bodyFont = cfg.theme.typography.body
       const fonts = await getSatoriFonts(headerFont, bodyFont)
 
+      // Load manifest for partial emit
       const manifest = await loadManifest()
 
       // find all slugs that changed or were added
@@ -275,6 +275,7 @@ export const CustomOgImages: QuartzEmitterPlugin<Partial<SocialImageOptions>> = 
         }
       }
 
+      // Save manifest after partial emit
       await saveManifest(manifest)
     },
     externalResources: (ctx) => {

@@ -7,7 +7,7 @@ URL: https://bagrounds.org/books
 backlinks: false
 ---
 [Home](../index.md)  
-# 📚 Books (726)  
+# 📚 Books (729)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)  
 - [🧑‍🤝‍🧑📈 10 to 25: The Science of Motivating Young People: A Groundbreaking Approach to Leading the Next Generation - And Making Your Own Life Easier](./10-to-25-the-science-of-motivating-young-people-a-groundbreaking-approach-to-leading-the-next-generation-and-making-your-own-life-easier.md)  
@@ -289,6 +289,7 @@ Feedback Control of Dynamic Systems]]
 - [📰⚔️🧠 Information Wars: How We Lost the Global Battle Against Disinformation and What We Can Do About It](./information-wars.md)  
 - [🏃🤕 Injury-Free Running: Your Illustrated Guide to Biomechanics, Gait Analysis, and Injury Prevention](./injury-free-running-your-illustrated-guide-to-biomechanics-gait-analysis-and-injury-prevention.md)  
 - [🧠🏆 Inner Excellence: Train Your Mind for Extraordinary Performance and the Best Possible Life](./inner-excellence-train-your-mind-for-extraordinary-performance-and-the-best-possible-life.md)  
+- [👻🔗 In the Realm of Hungry Ghosts: Close Encounters with Addiction](./in-the-realm-of-hungry-ghosts-close-encounters-with-addiction.md)  
 - [🧠👶📈 Introduction to Developmental Cognitive Neuroscience: An Introduction](./developmental-cognitive-neuroscience.md)  
 - [👨‍💼➕ Introduction to Employee Benefits Law](./introduction-to-employee-benefits-law.md)  
 - [🌡️⚙️ Inventing Temperature: Measurement and Scientific Progress](./inventing-temperature-measurement-and-scientific-progress.md)  
@@ -393,6 +394,7 @@ Feedback Control of Dynamic Systems]]
 - [➡️ Pivot: The Only Move That Matters Is Your Next One](./pivot-the-only-move-that-matters-is-your-next-one.md)  
 - [🗺️🎯🪜🏗️ Planning for Everything: The Design of Paths and Goals](./planning-for-everything.md)  
 - [📢📣 Platform: Get Noticed in a Noisy World](./platform-get-noticed-in-a-noisy-world.md)  
+- [🧑‍🤝‍🧑 Platonic: How the Science of Attachment Can Help You Make - and Keep - Friends](./platonic-how-the-science-of-attachment-can-help-you-make-and-keep-friends.md)  
 - [🏛️🗣️ Polemic for Democracy](./polemic-for-democracy.md)  
 - [🇺🇸💥 Political Violence in America: Historical Flashpoints and Modern-Day Trends](./political-violence-in-america-historical-flashpoints-and-modern-day-trends.md)  
 - [🚫✅🤥 Post-Truth](./post-truth.md)  
@@ -595,6 +597,7 @@ Feedback Control of Dynamic Systems]]
 - [⛰️➡️🧘 The Mountain is You: Transforming Self-Sabotage into Self-Mastery](./the-mountain-is-you.md)  
 - [🦄👤🗓️ The Mythical Man-Month: Essays on Software Engineering](./the-mythical-man-month.md)  
 - [🏔️ The Myth of Sisyphus](./the-myth-of-sisyphus.md)  
+- [↔️🏛️ The Narrow Corridor: States, Societies, and the Fate of Liberty](./the-narrow-corridor-states-societies-and-the-fate-of-liberty.md)  
 - [🧠❤️🔄 The Neuroscience of Change: A Compassion-Based Program for Personal Transformation](./the-neuroscience-of-change-a-compassion-based-program-for-personal-transformation.md)  
 - [📈🏛️🏫 The New Economics: For Industry, Government, Education](./the-new-economics.md)  
 - [🧑🏿⛓️🙈 The New Jim Crow: Mass Incarceration in the Age of Colorblindness](./the-new-jim-crow-mass-incarceration-in-the-age-of-colorblindness.md)  

@@ -7,7 +7,7 @@ URL: https://bagrounds.org/videos
 backlinks: false
 ---
 [Home](../index.md)  
-# 📺 Videos (400)  
+# 📺 Videos (402)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
 - [❓💪🔬 12 Questions About Creatine with Stephen Cornish, PhD](./12-questions-about-creatine-w-stephen-cornish-phd.md)  
@@ -256,6 +256,7 @@ backlinks: false
 - [🏃🦵🤕 SHIN SPLINTS for Runners: Challenges, Causes, and Rehab](./shin-splints-for-runners-challenges-causes-and-rehab.md)  
 - [🧑‍💻📈⏩ SIGGRAPH Thesis Fast Forward 2025](./siggraph-thesis-fast-forward-2025.md)  
 - [Spaceship You](./spaceship-you.md)  
+- [🤖🗣️🤝 Stanford Seminar - Beyond «Bots and Trolls» - Understanding Disinformation as Collaborative Work](./stanford-seminar-beyond-bots-and-trolls-understanding-disinformation-as-collaborative-work.md)  
 - [🇺🇸✂️🩺🤕 States face hard choices after major cuts to federal health care funding](./states-face-hard-choices-after-major-cuts-to-federal-health-care-funding.md)  
 - [✨💻💀🤖 Steve Yegge on productive vibe coding, the death of the IDE, babysitting a fleet of AI coding agents](./steve-yegge-on-productive-vibe-coding-the-death-of-the-ide-babysitting-a-fleet-of-ai-coding-agents.md)  
 - [😵‍💫🇺🇸🐘🚫 Strange cognitive dissonance among the MAGA who are convinced to vote against their own interests](./strange-cognitive-dissonance-among-the-maga-who-are-convinced-to-vote-against-their-own-interests.md)  
@@ -275,6 +276,7 @@ backlinks: false
 - [💥🧠👶 The «Big Bang» in Learning: Brain Changes and Childhood Learning (Full Session)](./the-big-bang-in-learning-brain-changes-and-childhood-learning-full-session.md)  
 - [👹👀🇺🇸📉 The Big Short author Michael Lewis on what he thinks happens next with Trump and the USA](./the-big-short-author-michael-lewis-on-what-he-thinks-happens-next-with-trump-and-the-usa.md)  
 - [❓🛠️👨‍🎓 The Black Box Effect: How To Learn ANY Skill Quickly](./the-black-box-effect-how-to-learn-any-skill-quickly.md)  
+- [💔🏛️📉❓ The Broken Promise: Democracy, the Economy & What Comes Next with Pete Buttigieg](./the-broken-promise-democracy-the-economy-what-comes-next-with-pete-buttigieg.md)  
 - [🧠🔄♾️💡 The concept that changes how you learn forever](./the-concept-that-changes-how-you-learn-forever.md)  
 - [The conditions inside the infamous El Salvador prison where deported migrants are held](./the-conditions-inside-the-infamous-el-salvador-prison-where-deported-migrants-are-held.md)  
 - [👨🏿🗣️🏛️ The Connecticut Forum: President Barack Obama in Conversation with Heather Cox Richardson](./president-barack-obama-in-conversation-with-heather-cox-richardson-the-connecticut-forum.md)  
@@ -382,7 +384,7 @@ backlinks: false
 - [👑🏙️🏛️ What Trump’s Threat to ‘Take Over’ Cities Says About Our Democracy](./what-trumps-threat-to-take-over-cities-says-about-our-democracy.md)  
 - [What we know — and don't know — about the U.S. strikes in Yemen](./what-we-know-and-dont-know-about-the-us-strikes-in-yemen.md)  
 - [💻🌍🚶‍♀️ Where All the Tech Workers Are Going](./where-all-the-tech-workers-are-going.md)  
-- [Whitehouse and Murphy Dress Down Republican Tax «Thievery» in Colloquy on Senate Floor](./whitehouse-and-murphy-dress-down-republican-tax-thievery-in-colloquy-on-senate-floor.md)  
+- [🏛️👔😡💸 Whitehouse and Murphy Dress Down Republican Tax «Thievery» in Colloquy on Senate Floor](./whitehouse-and-murphy-dress-down-republican-tax-thievery-in-colloquy-on-senate-floor.md)  
 - [🏛️⚖️🎯💥 Whitehouse Spotlights the Actual Weaponization of the Justice System by Trump's MAGA Cronies](./whitehouse-spotlights-the-actual-weaponization-of-the-justice-system-by-trumps-maga-cronies.md)  
 - [💰🇺🇸❓🗣️ Who Owns America? Bernie Sanders Says the Quiet Part Out Loud](./who-owns-america-bernie-sanders-says-the-quiet-part-out-loud.md)  
 - [❓🏥🛂 Who Pays for Undocumented Migrants’ Healthcare? Reporter Explains | Amanpour and Company](./who-pays-for-undocumented-migrants-healthcare-reporter-explains-amanpour-and-company.md)  

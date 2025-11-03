@@ -1,8 +1,8 @@
 ---
 share: true
 aliases:
-  - Whitehouse and Murphy Dress Down Republican Tax «Thievery» in Colloquy on Senate Floor
-title: Whitehouse and Murphy Dress Down Republican Tax «Thievery» in Colloquy on Senate Floor
+  - 🏛️👔😡💸 Whitehouse and Murphy Dress Down Republican Tax «Thievery» in Colloquy on Senate Floor
+title: 🏛️👔😡💸 Whitehouse and Murphy Dress Down Republican Tax «Thievery» in Colloquy on Senate Floor
 URL: https://youtu.be/3huEn7lbMWs
 Author:
 Platform:
@@ -10,7 +10,7 @@ Channel: Senator Sheldon Whitehouse
 tags:
 ---
 [Home](../index.md) > [Videos](./index.md)  
-# Whitehouse and Murphy Dress Down Republican Tax «Thievery» in Colloquy on Senate Floor  
+# 🏛️👔😡💸 Whitehouse and Murphy Dress Down Republican Tax «Thievery» in Colloquy on Senate Floor  
 ![Whitehouse and Murphy Dress Down Republican Tax «Thievery» in Colloquy on Senate Floor](https://youtu.be/3huEn7lbMWs)  
   
 ## 🤖 AI Summary  

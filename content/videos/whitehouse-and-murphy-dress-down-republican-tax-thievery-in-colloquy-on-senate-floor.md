@@ -4,10 +4,10 @@ aliases:
   - Whitehouse and Murphy Dress Down Republican Tax «Thievery» in Colloquy on Senate Floor
 title: Whitehouse and Murphy Dress Down Republican Tax «Thievery» in Colloquy on Senate Floor
 URL: https://youtu.be/3huEn7lbMWs
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: Senator Sheldon Whitehouse
-tags: 
+tags:
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # Whitehouse and Murphy Dress Down Republican Tax «Thievery» in Colloquy on Senate Floor  
@@ -24,7 +24,7 @@ tags:
   
 ## 📚 Book Recommendations  
 **✨ Addiction Recovery:**  
-- 👻 _In the Realm of Hungry Ghosts: Close Encounters with Addiction_ by Gabor Maté  
+- [👻🔗 In the Realm of Hungry Ghosts: Close Encounters with Addiction](../books/in-the-realm-of-hungry-ghosts-close-encounters-with-addiction.md) by Gabor Maté  
 - 🥳 _The Unexpected Joy of Being Sober_ by Catherine Gray  
 - 🤝 _Beyond Addiction: How Science and Kindness Help People Change_ by Jeffrey Foote, Carrie Wilkens, and Nicole Kosanke  
 - 🧠 _This Naked Mind: Control Alcohol, Find Freedom, Discover Happiness & Change Your Life_ by Annie Grace  

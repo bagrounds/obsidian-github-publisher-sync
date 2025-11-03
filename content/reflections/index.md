@@ -7,7 +7,10 @@ URL: https://bagrounds.org/reflections
 backlinks: false
 ---
 [Home](../index.md)  
-# 🪞 Reflections (351)  
+# 🪞 Reflections (354)  
+- [2025-11-03](./2025-11-03.md)  
+- [2025-11-02 | 🫂 Friends | 🇺🇸 Nations | 💊 Drugs 📚📄](./2025-11-02.md)  
+- [2025-11-01 | 🗂️ Folding | 🧌 Trolling | 🖇️ Connecting 📄📺📚](./2025-11-01.md)  
 - [2025-10-31 | 🗣️🤖 Ode to Vibe Code 📄📚💌](./2025-10-31.md)  
 - [2025-10-30 | 📜🏛️ Sovereign Ledger | 🇺🇸👑📖 Authoritarian Playbook 📺📚💌📊🐦](./2025-10-30.md)  
 - [2025-10-29 | 💵 Deficits | 🤖 Vibes | 🔬 Science | 🗳️ Democracy 📚📺📰📄](./2025-10-29.md)  

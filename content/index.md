@@ -12,7 +12,10 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 ❔ What do 🫵 _you_ 🤔 think?  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (351)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (354)  
+- [2025-11-03](./reflections/2025-11-03.md)  
+- [2025-11-02 | 🫂 Friends | 🇺🇸 Nations | 💊 Drugs 📚📄](./reflections/2025-11-02.md)  
+- [2025-11-01 | 🗂️ Folding | 🧌 Trolling | 🖇️ Connecting 📄📺📚](./reflections/2025-11-01.md)  
 - [2025-10-31 | 🗣️🤖 Ode to Vibe Code 📄📚💌](./reflections/2025-10-31.md)  
 - [2025-10-30 | 📜🏛️ Sovereign Ledger | 🇺🇸👑📖 Authoritarian Playbook 📺📚💌📊🐦](./reflections/2025-10-30.md)  
 - [2025-10-29 | 💵 Deficits | 🤖 Vibes | 🔬 Science | 🗳️ Democracy 📚📺📰📄](./reflections/2025-10-29.md)  
@@ -20,35 +23,32 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [2025-10-27 | 💰🦄 Deficit Myths | 🤖💻 Vibe Coding | 👑 3rd Term 📚📰](./reflections/2025-10-27.md)  
 - [2025-10-26 | 👹⛓️👧🏼 Sex Trafficking | 🇺🇸🚫📚 Book Bans 📚📰](./reflections/2025-10-26.md)  
 - [2025-10-25 | 💼 Jobs | 🤝 Trust | 💥 Demolition | 📖 Giuffre 📚📰📺](./reflections/2025-10-25.md)  
-- [2025-10-24 | 🤑 Billionaires | 🗳️ Democracy | 🏛️💥 Demolition | 📰🕰️ News Hour 📺📰📚](./reflections/2025-10-24.md)  
-- [2025-10-23 | 🏎️ Drive | 💰 Oligarchy | ⚛️ Social Physics 📚](./reflections/2025-10-23.md)  
-- [2025-10-22 | 👹 Corrupt 💰 Capital 💸 Costs ⚖️ Civic 💥 Conflict 📚📰📺](./reflections/2025-10-22.md)  
   
   
-## [📚 Books](./books/index.md) (722)  
-- [👶🗣️ How Babies Talk: The Magic and Mystery of Language in the First Three Years of Life](./books/how-babies-talk-the-magic-and-mystery-of-language-in-the-first-three-years-of-life.md)  
-- [🗣️ On Language](./books/on-language.md)  
-- [🗣️🧠 The Language Instinct: How the Mind Creates Language](./books/the-language-instinct-how-the-mind-creates-language.md)  
-- [🧑‍💻🤖 Beyond Vibe Coding: From Coder to AI-Era Developer](./books/beyond-vibe-coding-from-coder-to-ai-era-developer.md)  
-- [💰🤥 Merchants of Doubt](./books/merchants-of-doubt.md)  
-- [🤥📣 This Is Not Propaganda: Adventures in the War Against Reality](./books/this-is-not-propaganda.md)  
+## [📚 Books](./books/index.md) (729)  
+- [👻🔗 In the Realm of Hungry Ghosts: Close Encounters with Addiction](./books/in-the-realm-of-hungry-ghosts-close-encounters-with-addiction.md)  
+- [🌎👎👑💰🏚️ Why Nations Fail: The Origins of Power, Prosperity, and Poverty](./books/why-nations-fail-the-origins-of-power-prosperity-and-poverty.md)  
+- [↔️🏛️ The Narrow Corridor: States, Societies, and the Fate of Liberty](./books/the-narrow-corridor-states-societies-and-the-fate-of-liberty.md)  
+- [👑😈👎📈 The Dictator's Handbook: Why Bad Behavior Is Almost Always Good Politics](./books/the-dictators-handbook.md)  
+- [🧑‍🤝‍🧑🔬 The Science of Making Friends: Helping Socially Challenged Teens and Young Adults](./books/the-science-of-making-friends-helping-socially-challenged-teens-and-young-adults.md)  
+- [🧑‍🤝‍🧑 Platonic: How the Science of Attachment Can Help You Make - and Keep - Friends](./books/platonic-how-the-science-of-attachment-can-help-you-make-and-keep-friends.md)  
+- [🧑‍🤝‍🧑 Belonging: The Science of Creating Connection and Bridging Divides](./books/belonging-the-science-of-creating-connection-and-bridging-divides.md)  
+- [💰👑 How to be a Billionaire: Proven Strategies from the Titans of Wealth](./books/how-to-be-a-billionaire-proven-strategies-from-the-titans-of-wealth.md)  
+- [🏆📰📣 How to Win an Information War: The Propagandist Who Outwitted Hitler](./books/how-to-win-an-information-war.md)  
 - [📰⚔️🧠 Information Wars: How We Lost the Global Battle Against Disinformation and What We Can Do About It](./books/information-wars.md)  
-- [🎭🤫 Active Measures: The Secret History of Disinformation and Political Warfare](./books/active-measures-the-secret-history-of-disinformation-and-political-warfare.md)  
-- [🌍💰📊 Macroeconomics](./books/macroeconomics.md)  
-- [💰📉➡️📈🗳️ The Deficit Myth: Modern Monetary Theory and the Birth of the People's Economy](./books/the-deficit-myth.md)  
   
   
-## [📺 Videos](./videos/index.md) (400)  
+## [📺 Videos](./videos/index.md) (402)  
+- [🏛️👔😡💸 Whitehouse and Murphy Dress Down Republican Tax «Thievery» in Colloquy on Senate Floor](./videos/whitehouse-and-murphy-dress-down-republican-tax-thievery-in-colloquy-on-senate-floor.md)  
+- [🇺🇸👑👎 How the start of Trump’s second term looks like some autocracies](./videos/how-the-start-of-trumps-second-term-looks-like-some-autocracies.md)  
+- [💔🏛️📉❓ The Broken Promise: Democracy, the Economy & What Comes Next with Pete Buttigieg](./videos/the-broken-promise-democracy-the-economy-what-comes-next-with-pete-buttigieg.md)  
+- [🤖🗣️🤝 Stanford Seminar - Beyond «Bots and Trolls» - Understanding Disinformation as Collaborative Work](./videos/stanford-seminar-beyond-bots-and-trolls-understanding-disinformation-as-collaborative-work.md)  
 - [👶🗣️🔤📢 📖 The ABCs of Language Development: Discover Language With Your Child](./videos/the-abcs-of-language-development-discover-language-with-your-child.md)  
 - [💥🧠👶 The «Big Bang» in Learning: Brain Changes and Childhood Learning (Full Session)](./videos/the-big-bang-in-learning-brain-changes-and-childhood-learning-full-session.md)  
 - [🗣️💬🧠 Language Acquisition: Crash Course Linguistics  > 12](./videos/language-acquisition-crash-course-linguistics-12.md)  
 - [👥🌍📢💡 How Common Knowledge Shapes the World | Steven Pinker | TED](./videos/how-common-knowledge-shapes-the-world-steven-pinker-ted.md)  
 - [🇺🇸🗣️👑 Senator Slotkin Delivers Speech on Trump's Authoritarian Playbook](./videos/senator-slotkin-delivers-speech-on-trumps-authoritarian-playbook.md)  
 - [✨💻💀🤖 Steve Yegge on productive vibe coding, the death of the IDE, babysitting a fleet of AI coding agents](./videos/steve-yegge-on-productive-vibe-coding-the-death-of-the-ide-babysitting-a-fleet-of-ai-coding-agents.md)  
-- [🧑‍🔬📉🇺🇸🔚 Top researchers consider leaving U.S. amid funding cuts: 'The science world is ending'](./videos/top-researchers-consider-leaving-us-amid-funding-cuts-the-science-world-is-ending.md)  
-- [🇺🇸🛡️💪 Never Give Up A Conversation with Joyce White Vance—«Giving Up Is Unforgivable: A Manual for Keeping a Democracy»](./videos/a-conversation-with-joyce-white-vance-giving-up-is-unforgivable-a-manual-for-keeping-a-democracy.md)  
-- [👨‍💻➡️🤖🧩 Beyond the IDE: Toward Multi-Agent Orchestration](./videos/beyond-the-ide-toward-multi-agent-orchestration.md)  
-- [😎✨💻🔮 Vibe Coding Is The Only Future - Steve Yegge](./videos/vibe-coding-is-the-only-future-steve-yegge.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (82)  
@@ -59,12 +59,12 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [👨‍👩‍👦🧭🤝 Authoritative Parenting](./topics/authoritative-parenting.md)  
   
   
-## [📄  Articles](./articles/index.md) (66)  
+## [📄  Articles](./articles/index.md) (68)  
+- [🗓️🇵🇹💉✅🕊️ 20 years of Portuguese drug policy - developments, challenges and the quest for human rights](./articles/20-years-of-portuguese-drug-policy-developments-challenges-and-the-quest-for-human-rights.md)  
+- [🤖♾️🗂️ Scaling Long Horizon LLM Agent via Context Folding](./articles/scaling-long-horizon-llm-agent-via-context-folding.md)  
 - [🗣️🧠🧑‍💻📚 Relating Natural Language Aptitude to Individual Differences in Learning Programming Languages](./articles/relating-natural-language-aptitude-to-individual-differences-in-learning-programming-languages.md)  
 - [🤖📢❌ Digital Yard Signs: Analysis of an AI Bot Political Influence Campaign on X](./articles/digital-yard-signs-analysis-of-an-ai-bot-political-influence-campaign-on-x.md)  
 - [🤔💭🤔💭 Why We Think](./articles/why-we-think.md)  
-- [♊💻🆚 Gemini CLI + VS Code: Native diffing and context-aware workflows](./articles/gemini-cli-+-vs-code-native-diffing-and-context-aware-workflows.md)  
-- [⚙️🤖📈🤝 Engineering and AI: Advancing the synergy](./articles/engineering-and-ai-advancing-the-synergy.md)  
   
   
 ## [🤖💬 Bot Chats](./bot-chats/index.md) (45)  

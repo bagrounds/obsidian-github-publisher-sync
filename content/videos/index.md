@@ -7,7 +7,7 @@ URL: https://bagrounds.org/videos
 backlinks: false
 ---
 [Home](../index.md)  
-# 📺 Videos (402)  
+# 📺 Videos (403)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
 - [❓💪🔬 12 Questions About Creatine with Stephen Cornish, PhD](./12-questions-about-creatine-w-stephen-cornish-phd.md)  
@@ -269,6 +269,7 @@ backlinks: false
 - [🇺🇸🗣️💥💔 Tamara Keith and Amy Walter on the political response to Charlie Kirk's killing](./tamara-keith-and-amy-walter-on-the-political-response-to-charlie-kirks-killing.md)  
 - [📢👨⚖️🗣️ Tamara Keith and Amy Walter on the public response to Trump's handling of the Epstein case](./tamara-keith-and-amy-walter-on-the-public-response-to-trumps-handling-of-the-epstein-case.md)  
 - [🇺🇸🔄👑😬 Tamara Keith and Amy Walter on Trump flirting with the idea of the 3rd term](./tamara-keith-and-amy-walter-on-trump-flirting-with-the-idea-of-the-3rd-term.md)  
+- [👩‍💼🗣️🇺🇸 Tamara Keith and Amy Walter on what to watch in Tuesday's elections](./tamara-keith-and-amy-walter-on-what-to-watch-in-tuesdays-elections.md)  
 - [💩🍄👶♻️🗑️ Texas startup sells plastic-eating fungi diapers to tackle landfill waste | REUTERS](./texas-startup-sells-plastic-eating-fungi-diapers-to-tackle-landfill-waste-reuters.md)  
 - [⏱️🧠🐘 The 10 Minute memory method](./the-10-minute-memory-method.md)  
 - [The 10 tactics of fascism | Jason Stanley | Big Think](./the-10-tactics-of-fascism-jason-stanley-big-think.md)  

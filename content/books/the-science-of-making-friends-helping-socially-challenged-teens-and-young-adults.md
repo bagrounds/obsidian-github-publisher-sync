@@ -93,7 +93,7 @@ affiliate link: https://amzn.to/47ifd8A
   
 ### 👯 Similar  
 * [🫂🤝🗣️ How To Win Friends And Influence People](./how-to-win-friends-and-influence-people.md) by Dale Carnegie  
-* 🧑‍🏫 The Social Skills Guidebook by Chris MacLeod  
+* 🧑‍🏫 [🧑‍🤝‍🧑🗣️ The Social Skills Guidebook: Manage Shyness, Improve Your Conversations, and Make Friends, Without Giving Up Who You Are](./the-social-skills-guidebook-manage-shyness-improve-your-conversations-and-make-friends-without-giving-up-who-you-are.md) by Chris MacLeod  
 * [🧑‍🤝‍🧑 Platonic: How the Science of Attachment Can Help You Make - and Keep - Friends](./platonic-how-the-science-of-attachment-can-help-you-make-and-keep-friends.md) by Marisa G. Franco  
   
 ### 🆚 Contrasting  

@@ -6,6 +6,8 @@ URL: https://bagrounds.org/books/making-money-work-for-us-how-mmt-can-save-ameri
 share: true
 affiliate link: https://amzn.to/4oIDomB
 CTA: 💰 Empower citizens.
+tags:
+  - MMT
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 💰🇺🇸 Making Money Work for Us: How MMT Can Save America  

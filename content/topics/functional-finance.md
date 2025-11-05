@@ -4,6 +4,8 @@ aliases:
   - 💰🏛️📈 Functional Finance
 title: 💰🏛️📈 Functional Finance
 URL: https://bagrounds.org/topics/functional-finance
+tags:
+  - MMT
 ---
 [Home](../index.md) > [Topics](./index.md) > [Knowledge](./a-hierarchical-view-of-human-knowledge.md) > [Social Sciences](./social-sciences.md) > [Economics](./economics.md) > [Heterodox Economics](./heterodox-economics.md) > [🏦♾️📈💸 Modern Monetary Theory](./modern-monetary-theory.md)  
 # 💰🏛️📈 Functional Finance  

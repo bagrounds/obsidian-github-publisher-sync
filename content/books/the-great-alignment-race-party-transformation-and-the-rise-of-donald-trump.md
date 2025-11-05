@@ -5,9 +5,11 @@ aliases:
 URL: https://bagrounds.org/books/the-great-alignment-race-party-transformation-and-the-rise-of-donald-trump
 share: true
 CTA: 🇺🇸 Understand polarization.
+affiliate link: https://amzn.to/3JKHwU4
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧑‍🤝‍🧑🐘⬆️ The Great Alignment: Race, Party Transformation, and the Rise of Donald Trump  
+[🛒 The Great Alignment: Race, Party Transformation, and the Rise of Donald Trump. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3JKHwU4)  
   
 📊↔️🇺🇸 America's profound political polarization and Donald Trump's rise are rooted in a long-term societal alignment of racial, ideological, religious, and geographic divides, exacerbated by negative partisanship and white racial resentment, rather than solely economic grievances.  
   

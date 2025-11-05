@@ -6,7 +6,9 @@ title: 🌍💰📊 Macroeconomics
 URL: https://bagrounds.org/books/macroeconomics
 Author:
 tags:
+  - MMT
 affiliate link: https://amzn.to/4kKTAlL
+CTA: 🌎 Understand global finance.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🌍💰📊 Macroeconomics  

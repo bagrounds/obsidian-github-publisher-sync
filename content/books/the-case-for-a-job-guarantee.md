@@ -6,6 +6,8 @@ URL: https://bagrounds.org/books/the-case-for-a-job-guarantee
 share: true
 CTA: 🤝 Support employment for all.
 affiliate link: https://amzn.to/47iuypP
+tags:
+  - MMT
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 💼✅ The Case for a Job Guarantee  

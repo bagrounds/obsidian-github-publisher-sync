@@ -6,6 +6,8 @@ URL: https://bagrounds.org/books/keynes-a-very-short-introduction
 share: true
 CTA: 💡 Grasp economics.
 affiliate link: https://amzn.to/4nwiAh6
+tags:
+  - MMT
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 💰 Keynes: A Very Short Introduction  

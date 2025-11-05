@@ -6,6 +6,8 @@ URL: https://bagrounds.org/books/the-general-theory-of-employment-interest-and-m
 share: true
 affiliate link: https://amzn.to/4oEQjpj
 CTA: 💰 Understand economics.
+tags:
+  - MMT
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧑‍💼🏦💸 The General Theory of Employment, Interest, and Money  
@@ -64,7 +66,7 @@ CTA: 💰 Understand economics.
 * 📊 The IS-LM Model (Hicks-Hansen Synthesis)  
 * 📦 Supply-Side Economics  
 * 🎭 Behavioral Economics and its modern interpretation of animal spirits  
-* 🌐 Modern Monetary Theory (MMT)  
+* 🌐 [🏦♾️📈💸 Modern Monetary Theory (MMT)](../topics/modern-monetary-theory.md)  
   
 ## ❓ Frequently Asked Questions (FAQ)  
   

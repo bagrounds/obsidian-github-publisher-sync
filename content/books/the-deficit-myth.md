@@ -6,6 +6,8 @@ URL: https://bagrounds.org/books/the-deficit-myth
 share: true
 CTA: 💸 Dismantle scarcity.
 affiliate link: https://amzn.to/43NOEVV
+tags:
+  - MMT
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 💰📉➡️📈🗳️ The Deficit Myth: Modern Monetary Theory and the Birth of the People's Economy  

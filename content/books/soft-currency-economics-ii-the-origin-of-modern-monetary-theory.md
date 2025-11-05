@@ -6,6 +6,8 @@ URL: https://bagrounds.org/books/soft-currency-economics-ii-the-origin-of-modern
 share: true
 affiliate link: https://amzn.to/4qz8KOa
 CTA: 💡 Understand money.
+tags:
+  - MMT
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 💵🏛️📈 Soft Currency Economics II: The Origin of Modern Monetary Theory  
@@ -24,7 +26,7 @@ CTA: 💡 Understand money.
   
 ### ⚙️ Operational Realities of Modern Monetary Systems  
 * 🏦 **Money Creation Mechanics:** Government spends by crediting bank accounts, creating new money.  
-* резерв **Reserve Management:** Government borrowing removes these excess reserves.  
+* 🏦 **Reserve Management:** Government borrowing removes these excess reserves.  
 * 🛡️ **No Default Risk:** A sovereign government cannot be forced to default on debt denominated in its own currency.  
 * 🔄 **Endogenous Money:** The money supply is largely determined by private sector demand for credit and government spending, not solely by central bank control.  
   

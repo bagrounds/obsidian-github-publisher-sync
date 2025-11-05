@@ -4,6 +4,8 @@ aliases:
   - 🤔🚫➡️📚 Heterodox Economics
 title: 🤔🚫➡️📚 Heterodox Economics
 URL: https://bagrounds.org/topics/heterodox-economics
+tags:
+  - MMT
 ---
 [Home](../index.md) > [Topics](./index.md) > [Knowledge](./a-hierarchical-view-of-human-knowledge.md) > [Social Sciences](./social-sciences.md) > [Economics](./economics.md)  
 # 🤔🚫➡️📚 Heterodox Economics  

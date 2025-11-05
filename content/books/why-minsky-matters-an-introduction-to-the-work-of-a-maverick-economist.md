@@ -6,6 +6,8 @@ URL: https://bagrounds.org/books/why-minsky-matters-an-introduction-to-the-work-
 share: true
 affiliate link: https://amzn.to/3JtS7ml
 CTA: 💸 Confront financial fragility.
+tags:
+  - MMT
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 👨‍🏫❓ Why Minsky Matters: An Introduction to the Work of a Maverick Economist  

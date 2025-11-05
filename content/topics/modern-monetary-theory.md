@@ -4,6 +4,8 @@ aliases:
   - 🏦♾️📈💸 Modern Monetary Theory
 title: 🏦♾️📈💸 Modern Monetary Theory
 URL: https://bagrounds.org/topics/modern-monetary-theory
+tags:
+  - MMT
 ---
 [Home](../index.md) > [Topics](./index.md) > [Knowledge](./a-hierarchical-view-of-human-knowledge.md) > [Social Sciences](./social-sciences.md) > [Economics](./economics.md) > [Heterodox Economics](./heterodox-economics.md)  
 # 🏦♾️📈💸 Modern Monetary Theory  
@@ -24,6 +26,13 @@ Modern Monetary Theory (MMT) is a macroeconomic theory that challenges conventio
 3.  **[💰📈🤔 Understanding Modern Money](../books/understanding-modern-money.md): The Key to Full Employment and Price Stability by L. Randall Wray:** 💡 This book delves deeper into the theoretical underpinnings of MMT, focusing on the nature of money and the role of the state in a monetary economy. It offers a thorough examination of the key concepts and policy proposals associated with MMT. 🧐  
 4.  **[💰🌎🌡️ Can We Afford the Future?: The Economics of a Warming World](../books/can-we-afford-the-future-the-economics-of-a-warming-world.md) by Frank Stilwell:** 🌍 This book puts MMT into the context of environmental concerns, and argues how a sovereign currency can be used to fund a green transition. It gives a modern and critical view of current economic problems. 🌳  
 5.  **[🏛️🔄✊🌍 Reclaiming the State: A Progressive Vision of Sovereignty for a Post-Neoliberal World](../books/reclaiming-the-state.md) by Thomas Fazi and Bill Mitchell:** 🗝️ This book looks at the political implications of MMT, and how it can be used to achieve progressive policy goals. It is a good read for those interested in the interaction between politics and economics. 🗳️  
+6. [💵🏛️📈 Soft Currency Economics II: The Origin of Modern Monetary Theory](../books/soft-currency-economics-ii-the-origin-of-modern-monetary-theory.md)  
+7. [👨‍🏫❓ Why Minsky Matters: An Introduction to the Work of a Maverick Economist](../books/why-minsky-matters-an-introduction-to-the-work-of-a-maverick-economist.md)  
+8. [💼✅ The Case for a Job Guarantee](../books/the-case-for-a-job-guarantee.md)  
+9. [📉📈 Stabilizing an Unstable Economy](../books/stabilizing-an-unstable-economy.md)  
+10. [💰🇺🇸 Making Money Work for Us: How MMT Can Save America](../books/making-money-work-for-us-how-mmt-can-save-america.md)  
+11. [💰 Keynes: A Very Short Introduction](../books/keynes-a-very-short-introduction.md)  
+12. [🧑‍💼🏦💸 The General Theory of Employment, Interest, and Money](../books/the-general-theory-of-employment-interest-and-money.md)  
   
 ## 💬 [Gemini](https://gemini.google.com/app) Prompt  
 > For the category of Modern Monetary Theory, please provide:  

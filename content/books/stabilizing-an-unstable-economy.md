@@ -6,6 +6,8 @@ URL: https://bagrounds.org/books/stabilizing-an-unstable-economy
 share: true
 CTA: ⚖️ Fortify finances.
 affiliate link: https://amzn.to/4qt1iDY
+tags:
+  - MMT
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 📉📈 Stabilizing an Unstable Economy  

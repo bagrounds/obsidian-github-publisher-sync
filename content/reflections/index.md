@@ -7,7 +7,8 @@ URL: https://bagrounds.org/reflections
 backlinks: false
 ---
 [Home](../index.md)  
-# 🪞 Reflections (354)  
+# 🪞 Reflections (355)  
+- [2025-11-04 | 🗳️ Election Day 📚📰📺](./2025-11-04.md)  
 - [2025-11-03 | 🫂 Social Skills | 🗳️ Elections 📚📰](./2025-11-03.md)  
 - [2025-11-02 | 🫂 Friends | 🇺🇸 Nations | 💊 Drugs 📚📄](./2025-11-02.md)  
 - [2025-11-01 | 🗂️ Folding | 🧌 Trolling | 🖇️ Connecting 📄📺📚](./2025-11-01.md)  

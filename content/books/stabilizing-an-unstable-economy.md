@@ -69,7 +69,7 @@ affiliate link: https://amzn.to/4qt1iDY
 ### 🤝 Similar  
 * 📖 This Time Is Different: Eight Centuries of Financial Folly by Carmen M. Reinhart and Kenneth Rogoff  
 * 📖 Manias, Panics, and Crashes: A History of Financial Crises by Charles P. Kindleberger  
-* 📖 Why Minsky Matters: An Introduction to the Work of a Maverick Economist by L. Randall Wray  
+* [👨‍🏫❓ Why Minsky Matters: An Introduction to the Work of a Maverick Economist](./why-minsky-matters-an-introduction-to-the-work-of-a-maverick-economist.md) by L. Randall Wray  
   
 ### 🆚 Contrasting  
 * [🧑‍💼🏦💸 The General Theory of Employment, Interest, and Money](./the-general-theory-of-employment-interest-and-money.md) by John Maynard Keynes (for its foundational role and Minsky's critical extension of it)  

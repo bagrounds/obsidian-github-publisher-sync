@@ -4,6 +4,8 @@ aliases:
   - 🧑‍💼🛡️ Job Guarantee / Employer of Last Resort
 title: 🧑‍💼🛡️ Job Guarantee / Employer of Last Resort
 URL: https://bagrounds.org/topics/job-guarantee-employer-of-last-resort
+tags:
+  - MMT
 ---
 [Home](../index.md) > [Topics](./index.md) > [Knowledge](./a-hierarchical-view-of-human-knowledge.md) > [Social Sciences](./social-sciences.md) > [Economics](./economics.md) > [Heterodox Economics](./heterodox-economics.md) > [🏦♾️📈💸 Modern Monetary Theory](./modern-monetary-theory.md)  
 # 🧑‍💼🛡️ Job Guarantee / Employer of Last Resort  

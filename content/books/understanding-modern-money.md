@@ -4,8 +4,9 @@ aliases:
   - 💰📈🤔 Understanding Modern Money
 title: 💰📈🤔 Understanding Modern Money
 URL: https://bagrounds.org/books/understanding-modern-money
-Author: 
-tags: 
+Author:
+tags:
+  - MMT
 affiliate link: https://amzn.to/4jvn99m
 ---
 [Home](../index.md) > [Books](./index.md)  

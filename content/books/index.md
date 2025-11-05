@@ -7,7 +7,7 @@ URL: https://bagrounds.org/books
 backlinks: false
 ---
 [Home](../index.md)  
-# 📚 Books (730)  
+# 📚 Books (733)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)  
 - [🧑‍🤝‍🧑📈 10 to 25: The Science of Motivating Young People: A Groundbreaking Approach to Leading the Next Generation - And Making Your Own Life Easier](./10-to-25-the-science-of-motivating-young-people-a-groundbreaking-approach-to-leading-the-next-generation-and-making-your-own-life-easier.md)  
@@ -186,6 +186,7 @@ backlinks: false
 - [🌍✍🏿 Everybody Writes: Your Go-To Guide to Creating Ridiculously Good Content](./everybody-writes.md)  
 - [🤝🧘 Everything Is Workable: A Zen Approach to Conflict Resolution](./everything-is-workable.md)  
 - [🏚️💰 Evicted: Poverty and Profit in the American City](./evicted-poverty-and-profit-in-the-american-city.md)  
+- [✅🗓️ Evidence-Based Habit Building: Finally Get Sh*t Done](./evidence-based-habit-building-finally-get-sht-done.md)  
 - [🧠🧩🚧🧑‍🏫👩‍👧‍👦 Executive Function Dysfunction - Strategies for Educators and Parents](./executive-function-dysfunction.md)  
 - [🧠⚙️🐒💡 Executive Functions: What They Are, How They Work, and Why They Evolved](./executive-functions.md)  
 - [🏃😊 Exercise for Mood and Anxiety: Proven Strategies for Overcoming Depression and Enhancing Well-Being](./exercise-for-mood-and-anxiety-proven-strategies-for-overcoming-depression-and-enhancing-well-being.md)  
@@ -288,6 +289,7 @@ Feedback Control of Dynamic Systems]]
 - [ℹ️ Information: A Very Short Introduction](./information.md)  
 - [📰⚔️🧠 Information Wars: How We Lost the Global Battle Against Disinformation and What We Can Do About It](./information-wars.md)  
 - [🏃🤕 Injury-Free Running: Your Illustrated Guide to Biomechanics, Gait Analysis, and Injury Prevention](./injury-free-running-your-illustrated-guide-to-biomechanics-gait-analysis-and-injury-prevention.md)  
+- [🏛️💔 Injustice: How Politics and Fear Vanquished America's Justice Department](./injustice-how-politics-and-fear-vanquished-americas-justice-department.md)  
 - [🧠🏆 Inner Excellence: Train Your Mind for Extraordinary Performance and the Best Possible Life](./inner-excellence-train-your-mind-for-extraordinary-performance-and-the-best-possible-life.md)  
 - [👻🔗 In the Realm of Hungry Ghosts: Close Encounters with Addiction](./in-the-realm-of-hungry-ghosts-close-encounters-with-addiction.md)  
 - [🧠👶📈 Introduction to Developmental Cognitive Neuroscience: An Introduction](./developmental-cognitive-neuroscience.md)  
@@ -559,6 +561,7 @@ Feedback Control of Dynamic Systems]]
 - [🧑‍💼🏦💸 The General Theory of Employment, Interest, and Money](./the-general-theory-of-employment-interest-and-money.md)  
 - [📈⚙️♾️ The Goal: A Process of Ongoing Improvement](./the-goal.md)  
 - [❓✝️ The God Delusion](./the-god-delusion.md)  
+- [🧑‍🤝‍🧑🐘⬆️ The Great Alignment: Race, Party Transformation, and the Rise of Donald Trump](./the-great-alignment-race-party-transformation-and-the-rise-of-donald-trump.md)  
 - [🗳️💰⬇️ The Great Suppression: Voting Rights, Corporate Cash, and the Conservative Assault on Democracy](./the-great-suppression-voting-rights-corporate-cash-and-the-conservative-assault-on-democracy.md)  
 - [🌍🏛️ The Great Transformation: The Political and Economic Origins of Our Time](./the-great-transformation-the-political-and-economic-origins-of-our-time.md)  
 - [👶😊😴 The Happiest Baby on the Block: The New Way to Calm Crying and Help Your Newborn Baby Sleep Longer](./the-happiest-baby-on-the-block.md)  

@@ -6,6 +6,8 @@ URL: https://bagrounds.org/books/modern-money-theory-a-primer-on-macroeconomics-
 share: true
 CTA: 🪙 Empower economies.
 affiliate link: https://amzn.to/3KZBJKR
+tags:
+  - MMT
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 💰🏛️ Modern Money Theory: A Primer on Macroeconomics for Sovereign Monetary Systems  
@@ -27,7 +29,7 @@ affiliate link: https://amzn.to/3KZBJKR
 * 🏦 Government Debt: Viewed as private sector savings, not a burden; transfers wealth to the private sector.  
   
 ### 🧾 Taxation & Spending  
-* 税 Taxes: Drive demand for the currency and control inflation; not primarily for revenue.  
+* 🧾 Taxes: Drive demand for the currency and control inflation; not primarily for revenue.  
 * 💸 Spending: Limited only by available real resources (labor, materials), not by the government's ability to create money.  
   
 ## ⚖️ 🧐 Critical Evaluation  

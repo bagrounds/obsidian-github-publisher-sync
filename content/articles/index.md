@@ -7,7 +7,7 @@ backlinks: false
 URL: https://bagrounds.org/articles
 ---
 [Home](../index.md)  
-# 📄 Articles (68)  
+# 📄 Articles (69)  
 - [🗓️🇵🇹💉✅🕊️ 20 years of Portuguese drug policy - developments, challenges and the quest for human rights](./20-years-of-portuguese-drug-policy-developments-challenges-and-the-quest-for-human-rights.md)  
 - [🦊😈🐾🕵️💸 5 takeaways about NPR's reporting on the whistleblower report about DOGE at the NLRB](./5-takeaways-about-nprs-reporting-on-the-whistleblower-report-about-doge-at-the-nlrb.md)  
 - [🌱🤖⚙️🖐️ 5 tips on getting started with Gems, your custom AI experts](./5-tips-on-getting-started-with-gems-your-custom-ai-experts.md)  
@@ -21,6 +21,7 @@ URL: https://bagrounds.org/articles
 - [👀 Attention Is All You Need](./attention-is-all-you-need.md)  
 - [🧠💪📈 BDNF Response to High Intensity Exercise](./bdnf-response-to-high-intensity-exercise.md)  
 - [🐕🌿⚕️🎗️ Cannabis for Pets With Cancer](./cannabis-for-pets-with-cancer.md)  
+- [🤖🧠📈⚡ Code execution with MCP: Building more efficient agents](./code-execution-with-mcp-building-more-efficient-agents.md)  
 - [🧠📈🔑 Cognitive load is what matters](./cognitive-load-is-what-matters.md)  
 - [🏗️🧩🌍 Context Engineering: An Emerging Concept in the MCP Ecosystem](./context-engineering-an-emerging-concept-in-the-mcp-ecosystem.md)  
 - [💪🧠📉💊🔎 Creatine Supplementation in Depression: A Review of Mechanisms, Efficacy, Clinical Outcomes, and Future Directions](./creatine-supplementation-in-depression-a-review-of-mechanisms-efficacy-clinical-outcomes-and-future-directions.md)  

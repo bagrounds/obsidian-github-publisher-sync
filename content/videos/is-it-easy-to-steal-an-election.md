@@ -4,10 +4,10 @@ aliases:
   - 🗳️🔓🤔 Is it easy to steal an election?
 title: 🗳️🔓🤔 Is it easy to steal an election?
 URL: https://bagrounds.org/videos/is-it-easy-to-steal-an-election
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: Howtown
-tags: 
+tags:
 youtube: https://youtu.be/oa7tcuE2TP0
 ---
 [Home](../index.md) > [Videos](./index.md)  
@@ -33,4 +33,9 @@ This video provides a practical, ground-level perspective on election security b
 * 📚 *The Hacking of the American Mind: The Culture of Control in an Age of Crisis* by Robert Lustig: Delves into how modern technologies and information can be used to manipulate public opinion and behavior.  
 * [🏛️⛓️ Democracy in Chains: The Deep History of the Radical Right's Stealth Plan for America](../books/democracy-in-chains-the-deep-history-of-the-radical-rights-stealth-plan-for-america.md) by Nancy MacLean: Provides a historical perspective on efforts to influence and reshape democratic processes.  
 * [🤔🐇🐢 Thinking, Fast and Slow](../books/thinking-fast-and-slow.md) by Daniel Kahneman: Offers insights into cognitive biases that can make individuals susceptible to misinformation.  
-* [⚠️🥴🕹️🌐 The Fifth Risk](../books/the-fifth-risk.md) by Michael Lewis: Discusses the importance of competent governance and the dangers of undermining public institutions, including those responsible for elections.
+* [⚠️🥴🕹️🌐 The Fifth Risk](../books/the-fifth-risk.md) by Michael Lewis: Discusses the importance of competent governance and the dangers of undermining public institutions, including those responsible for elections.  
+  
+## 🐦 Tweets  
+<blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">🗳️🔓🤔 Is it easy to steal an election?<br><br>🇺🇸 Pennsylvania | 🧑‍💼 Poll Workers | 🆔 Voter ID | ✅ Checks and Balances | 🤥 Misinformation | 😈 Disinformation<a href="https://t.co/vHL7kFohHc">https://t.co/vHL7kFohHc</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/1986479375085441241?ref_src=twsrc%5Etfw">November 6, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>  
+  
+<blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">Stealing an election is extremely difficult due to the decentralized system, many checks &amp; balances, &amp; many people involved in monitoring the process. The biggest threat to democracy is the spread of disinformation that fuels distrust in election results. <a href="https://t.co/vHL7kFohHc">https://t.co/vHL7kFohHc</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/1986475338281730080?ref_src=twsrc%5Etfw">November 6, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

@@ -30,7 +30,7 @@ This video provides a practical, ground-level perspective on election security b
   
 ## 📚 Book Recommendations  
 * 📚 *Cybersecurity and the Future of Elections* by Robert K. Knake: Explores the technological threats to election systems and potential solutions.  
-* 📚 *The Hacking of the American Mind: The Culture of Control in an Age of Crisis* by Robert Lustig: Delves into how modern technologies and information can be used to manipulate public opinion and behavior.  
+* [🧠🧑‍💻 The Hacking of the American Mind: The Science Behind the Corporate Takeover of Our Bodies and Brains](../books/the-hacking-of-the-american-mind-the-science-behind-the-corporate-takeover-of-our-bodies-and-brains.md) by Robert Lustig: Delves into how modern technologies and information can be used to manipulate public opinion and behavior.  
 * [🏛️⛓️ Democracy in Chains: The Deep History of the Radical Right's Stealth Plan for America](../books/democracy-in-chains-the-deep-history-of-the-radical-rights-stealth-plan-for-america.md) by Nancy MacLean: Provides a historical perspective on efforts to influence and reshape democratic processes.  
 * [🤔🐇🐢 Thinking, Fast and Slow](../books/thinking-fast-and-slow.md) by Daniel Kahneman: Offers insights into cognitive biases that can make individuals susceptible to misinformation.  
 * [⚠️🥴🕹️🌐 The Fifth Risk](../books/the-fifth-risk.md) by Michael Lewis: Discusses the importance of competent governance and the dangers of undermining public institutions, including those responsible for elections.  

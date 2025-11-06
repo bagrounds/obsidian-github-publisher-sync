@@ -10,7 +10,7 @@ Channel: The Prof G Pod – Scott Galloway
 tags:
 youtube: https://youtu.be/ieAwLyEDHqE
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](../index.md) > [Videos](./index.md) | [🏛️🇺🇸📖 Heather Cox Richardson](../people/heather-cox-richardson.md)  
 # 🇺🇸🤕📢 America’s Branding Crisis — with Heather Cox Richardson | Prof G Conversations  
 ![America’s Branding Crisis — with Heather Cox Richardson | Prof G Conversations](https://youtu.be/ieAwLyEDHqE)  
   

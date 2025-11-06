@@ -96,7 +96,7 @@ A: ⚔️ Combating computational propaganda requires interdisciplinary research
 ### 📖 Similar Reads  
 * [🤖🏛️ Lie Machines: How to Save Democracy from Troll Armies, Deceitful Robots, Junk News Operations, and Political Operatives](./lie-machines-how-to-save-democracy-from-troll-armies-deceitful-robots-junk-news-operations-and-political-operatives.md) by Philip N. Howard.  
     * 🔍 Expands on the mechanisms and impacts of digital disinformation.  
-* 🧠 The Hacking of the American Mind: The Culture of Control in the Age of Social Media by Robert Lustig.  
+* [🧠🧑‍💻 The Hacking of the American Mind: The Science Behind the Corporate Takeover of Our Bodies and Brains](./the-hacking-of-the-american-mind-the-science-behind-the-corporate-takeover-of-our-bodies-and-brains.md) by Robert Lustig.  
     * 🤯 Examines how tech platforms exploit psychology to manipulate users.  
 * [👁️‍🗨️💰⛓️👤 The Age of Surveillance Capitalism: The Fight for a Human Future at the New Frontier of Power](./the-age-of-surveillance-capitalism.md) by Shoshana Zuboff.  
     * 💰 Investigates how tech giants profit from predicting and modifying human behavior.  

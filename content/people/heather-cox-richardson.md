@@ -15,7 +15,7 @@ URL: https://bagrounds.org/people/heather-cox-richardson
 ✍️ She has authored several award-winning 📚 books, including:  
 * 💰 *The Greatest Nation of the Earth: Republican Economic Policies during the Civil War* (1997)  
 * ✊🏿 *The Death of Reconstruction: Race, Labor, and Politics in the Post-Civil War North, 1865-1901* (2001)  
-* 🇺🇸 *West from Appomattox: The Reconstruction of America After the Civil War* (2007)  
+* [🇺🇸➡️🔨 West from Appomattox: The Reconstruction of America After the Civil War](../books/west-from-appomattox-the-reconstruction-of-america-after-the-civil-war.md) (2007)  
 * 💔 *Wounded Knee: Party Politics and the Road to an American Massacre* (2010)  
 * [🇺🇸⛓️‍💥📜🐘 To Make Men Free: A History of the Republican Party](../books/to-make-men-free-a-history-of-the-republican-party.md) From 1854 To The Present (2014)  
 * [🇺🇲⚔️ How the South Won the Civil War: Oligarchy, Democracy, and the Continuing Fight for the Soul of America](../books/how-the-south-won-the-civil-war-oligarchy-democracy-and-the-continuing-fight-for-the-soul-of-america.md) (2020)  

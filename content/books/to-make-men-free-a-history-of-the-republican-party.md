@@ -7,7 +7,7 @@ share: true
 affiliate link: https://amzn.to/4eajL2q
 CTA: 🇺🇸 Explore liberty's legacy.
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](../index.md) > [Books](./index.md) | [🏛️🇺🇸📖 Heather Cox Richardson](../people/heather-cox-richardson.md)  
 # 🇺🇸⛓️‍💥📜🐘 To Make Men Free: A History of the Republican Party  
 [🛒 To Make Men Free: A History of the Republican Party. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4eajL2q)  
   

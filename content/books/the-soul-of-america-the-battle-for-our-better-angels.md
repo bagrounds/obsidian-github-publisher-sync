@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org/books/the-soul-of-america-the-battle-for-our-better-angels
 share: true
 affiliate link: https://amzn.to/4l8KuiK
-CTA: Embrace hope.
+CTA: 🇺🇸 Reclaim morality.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 👻🇺🇸⚔️🪽 The Soul of America: The Battle for Our Better Angels  
@@ -39,7 +39,7 @@ The book is structured thematically, with chapters focusing on different histori
   
 These books explore similar themes of American history, political ideals, and the ongoing struggle for a more perfect union, often with a focus on specific periods or aspects discussed by Meacham.  
   
-* 📜 **_These Truths: A History of the United States_ by Jill Lepore:** Provides a comprehensive single-volume history of the 🇺🇸 U.S., examining the nation's past through the lens of its foundational ideas and the conflicts they have engendered. Like Meacham, Lepore tackles the disjunct between American ideals and reality.  
+* **[🇺🇸📖 These Truths: A History of the United States](./these-truths-a-history-of-the-united-states.md) by Jill Lepore:** Provides a comprehensive single-volume history of the 🇺🇸 U.S., examining the nation's past through the lens of its foundational ideas and the conflicts they have engendered. Like Meacham, Lepore tackles the disjunct between American ideals and reality.  
 * **[🗳️🏛️☠️ How Democracies Die](./how-democracies-die.md) by Steven Levitsky and Daniel Ziblatt:** While not solely focused on history, this book analyzes the breakdown of democracies in various countries and identifies key indicators, drawing parallels to contemporary political trends in the 🇺🇸 U.S. It echoes Meacham's underlying concern for the health of American democratic institutions.  
 * ✊🏿 **_Stamped from the Beginning: The Definitive History of Racist Ideas in America_ by Ibram X. Kendi:** Offers a history of racist ideas in America and their impact on policy and society. This provides a deeper dive into one of the central struggles Meacham highlights, the ⚔️ battle against racial injustice.  
 * 🌟 **_The Promise of Hope: How We Can Restore the American Dream_ by Joel Touger:** This book, like Meacham's, engages with the concept of 🌟 hope in the American context, although likely with a more contemporary and economically focused perspective.  

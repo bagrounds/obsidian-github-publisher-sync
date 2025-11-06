@@ -7,7 +7,7 @@ share: true
 affiliate link: https://amzn.to/3WDO8qn
 CTA: 🇺🇸 Reclaim our nation.
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](../index.md) > [Books](./index.md) | [🏛️🇺🇸📖 Heather Cox Richardson](../people/heather-cox-richardson.md)  
 # 🇺🇲⚔️ How the South Won the Civil War: Oligarchy, Democracy, and the Continuing Fight for the Soul of America  
 [🛒 How the South Won the Civil War: Oligarchy, Democracy, and the Continuing Fight for the Soul of America. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3WDO8qn)  
   
@@ -68,8 +68,8 @@ CTA: 🇺🇸 Reclaim our nation.
   
 ### 👍 Similar  
 * [🏛️☀️⬆️ Democracy Awakening: 📝 Notes on the State of 🇺🇸 America](./democracy-awakening.md) by Heather Cox Richardson  
-* 📖 [🧑🏿⛓️🙈 The New Jim Crow: Mass Incarceration in the Age of Colorblindness](./the-new-jim-crow-mass-incarceration-in-the-age-of-colorblindness.md) by Michelle Alexander  
-* 📖 These Truths A History of the United States by Jill Lepore  
+* [🧑🏿⛓️🙈 The New Jim Crow: Mass Incarceration in the Age of Colorblindness](./the-new-jim-crow-mass-incarceration-in-the-age-of-colorblindness.md) by Michelle Alexander  
+* [🇺🇸📖 These Truths: A History of the United States](./these-truths-a-history-of-the-united-states.md) by Jill Lepore  
   
 ### 👎 Contrasting  
 * 📖 The Myth of the Lost Cause Why the South Fought the Civil War and Why the North Won by Gary W. Gallagher  

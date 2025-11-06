@@ -13,7 +13,7 @@ CTA: 💥 Challenge the elite.
   
 💰🇺🇸 A small, wealthy elite controls America's economic and political landscape. Advocate for collective action to reclaim democracy and reverse the slide towards authoritarianism.  
   
-## 🏆 🏆 Bernie Sanders' Fight Oligarchy Strategy  
+## 🏆 Bernie Sanders' Fight Oligarchy Strategy  
   
 ### 👑 Oligarchy Defined  
 * 🏛️ **System:** Few wealthy individuals control economic, political, media life.  
@@ -66,7 +66,7 @@ CTA: 💥 Challenge the elite.
 ### 💡 Q: What is oligarchy?  
 ✅ A: Sanders defines oligarchy as a system where a small number of extremely wealthy individuals control the economic, political, and media life of a nation, leaving ordinary people with very little power.  
   
-## 📚 📚 Book Recommendations  
+## 📚 Book Recommendations  
   
 ### 👯 Similar  
 * [🏛️⛓️ Democracy in Chains: The Deep History of the Radical Right's Stealth Plan for America](./democracy-in-chains-the-deep-history-of-the-radical-rights-stealth-plan-for-america.md) by Nancy MacLean  

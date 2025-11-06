@@ -8,7 +8,7 @@ Author:
 tags:
 affiliate link: https://amzn.to/3SzacAq
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](../index.md) > [Books](./index.md) | [🏛️🇺🇸📖 Heather Cox Richardson](../people/heather-cox-richardson.md)  
 # 🏛️☀️⬆️ Democracy Awakening: 📝 Notes on the State of 🇺🇸 America  
 [🛒 Democracy Awakening: 📝 Notes on the State of 🇺🇸 America. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3SzacAq)  
   
@@ -64,7 +64,7 @@ affiliate link: https://amzn.to/3SzacAq
 1. **[🗳️🏛️☠️ How Democracies Die](./how-democracies-die.md)** by Steven Levitsky & Daniel Ziblatt: Analyzes the warning signs of democratic backsliding globally and applies them to the US context, focusing on the erosion of norms.  
 2. 📜 **[On Tyranny: Twenty Lessons from the Twentieth Century](./on-tyranny.md)** by Timothy Snyder: A concise, urgent book drawing lessons from 20th-century European history about resisting authoritarianism.  
 3. 🌇 **[🥀 Twilight of Democracy: 🐍 The Seductive Lure of Authoritarianism](./twilight-of-democracy.md)** by Anne Applebaum: Explores why elites in various democracies have abandoned liberal democratic ideals for authoritarianism, blending personal observation and political analysis.  
-4. 🇺🇸 **These Truths: A History of the United States** by Jill Lepore: A comprehensive single-volume history focusing on the nation's founding principles ("truths") and the struggles to realize them.  
+4. **[🇺🇸📖 These Truths: A History of the United States](./these-truths-a-history-of-the-united-states.md)** by Jill Lepore: A comprehensive single-volume history focusing on the nation's founding principles ("truths") and the struggles to realize them.  
 5. **[🇺🇲⚔️ How the South Won the Civil War: Oligarchy, Democracy, and the Continuing Fight for the Soul of America](./how-the-south-won-the-civil-war-oligarchy-democracy-and-the-continuing-fight-for-the-soul-of-america.md)** by Heather Cox Richardson: Richardson's earlier work exploring how the ideology of the Confederacy influenced the American West and continues to shape national politics.  
 6. ⚠️ **Four Threats: The Recurring Crises of American Democracy** by Suzanne Mettler & Robert C. Lieberman: Identifies four historical threats (political polarization, conflict over belonging, economic inequality, executive power) and argues they are dangerously converging today.  
 7. 🔦 **Prequel: An American Fight Against Fascism** by Rachel Maddow: Uncovers historical instances of fascist movements and plots within the US prior to World War II, drawing parallels to contemporary threats.  

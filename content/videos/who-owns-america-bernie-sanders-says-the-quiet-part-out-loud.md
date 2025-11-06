@@ -74,21 +74,21 @@ youtube: https://youtu.be/cucLZcC0MqQ
   
 ## ❓ Frequently Asked Questions (FAQ)  
   
-### ❓ Q: What is the main driver of 🇺🇸 American inequality?  
+### 🇺🇸 Q: What is the main driver of American inequality?  
   
 A: 💰 The main driver is oligarchy, defined as a small number of people having 🤯 incredible wealth and power, which results in more income and wealth 📉 inequality and concentration of ownership than ever before in the United States \[[10:40](http://www.youtube.com/watch?v=cucLZcC0MqQ&t=640)].  
   
-### ❓ Q: How do 🏢 large corporations control the economy?  
+### 🏙️ Q: How do large corporations control the economy?  
   
 A: 📈 Corporations control what is produced, what workers are paid, and consumer 💸 prices.  
 A: 🏦 They are largely owned by three Wall Street firms: BlackRock, Vanguard, and State Street, which are the dominant stockholders in 95% of American companies.  
   
-### ❓ Q: How can we fight the power of 💸 billionaires?  
+### 💸 Q: How can we fight the power of billionaires?  
   
 A: 🏛️ Key solutions include implementing a strong progressive tax 📜 system to make the wealthy pay their fair share.  
 A: 🗳️ Another is enacting public funding of elections to eliminate super PACs and create a level playing field for working-class 🧑‍⚖️ candidates.  
   
-### ❓ Q: What is the biggest 🤖 threat from AI and robotics?  
+### 🤖 Q: What is the biggest threat from AI and robotics?  
   
 A: 🧑‍🏭 The biggest threats are the mass displacement of millions of workers.  
 A: ⚡ Other concerns include the enormous consumption of energy and 💧 water.  
@@ -97,6 +97,8 @@ A: 🤝 The profound loss of essential human interaction in society is also a si
 ## 📚 Book Recommendations  
   
 ### Similar 🤝 Perspectives  
+  
+- [🇺🇸⚔️💰 Fight Oligarchy](../books/fight-oligarchy.md)  
   
 - [💰📈🌍⏳ Capital in the Twenty-First Century](../books/capital-in-the-twenty-first-century.md) by Thomas Piketty 💰: This book provides an exhaustive, data-driven analysis of wealth and income inequality across centuries, supporting the central claim that return on capital exceeds the rate of economic growth, leading to wealth concentration.  
   

@@ -12,7 +12,8 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 ❔ What do 🫵 _you_ 🤔 think?  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (356)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (357)  
+- [2025-11-06](./reflections/2025-11-06.md)  
 - [2025-11-05 | 💲 Minsky | 🇺🇸 America | 🤖 MCP 📚📄📺](./reflections/2025-11-05.md)  
 - [2025-11-04 | 🗳️ Election Day 📚📰📺](./reflections/2025-11-04.md)  
 - [2025-11-03 | 🫂 Social Skills | 🗳️ Elections 📚📰](./reflections/2025-11-03.md)  
@@ -22,33 +23,32 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [2025-10-30 | 📜🏛️ Sovereign Ledger | 🇺🇸👑📖 Authoritarian Playbook 📺📚💌📊🐦](./reflections/2025-10-30.md)  
 - [2025-10-29 | 💵 Deficits | 🤖 Vibes | 🔬 Science | 🗳️ Democracy 📚📺📰📄](./reflections/2025-10-29.md)  
 - [2025-10-28 | 🧸 Soft Currency | 👽🏥 Undocumented Healthcare | 🥦 SNAP 📚📰📺](./reflections/2025-10-28.md)  
-- [2025-10-27 | 💰🦄 Deficit Myths | 🤖💻 Vibe Coding | 👑 3rd Term 📚📰](./reflections/2025-10-27.md)  
   
   
-## [📚 Books](./books/index.md) (735)  
-- [🏛️☀️⬆️ Democracy Awakening: 📝 Notes on the State of 🇺🇸 America](./books/democracy-awakening.md)  
+## [📚 Books](./books/index.md) (738)  
+- [📱📢🤖 Computational Propaganda: Political Parties, Politicians, and Political Manipulation on Social Media](./books/computational-propaganda-political-parties-politicians-and-political-manipulation-on-social-media.md)  
+- [🧠🧑‍💻 The Hacking of the American Mind: The Science Behind the Corporate Takeover of Our Bodies and Brains](./books/the-hacking-of-the-american-mind-the-science-behind-the-corporate-takeover-of-our-bodies-and-brains.md)  
+- [🇺🇸⚔️💰 Fight Oligarchy](./books/fight-oligarchy.md)  
+- [🇺🇸➡️🔨 West from Appomattox: The Reconstruction of America After the Civil War](./books/west-from-appomattox-the-reconstruction-of-america-after-the-civil-war.md)  
+- [🇺🇸🏛️🚫📜⚖️ Lawless: How the Supreme Court Runs on Conservative Grievance, Fringe Theories, and Bad Vibes](./books/lawless-how-the-supreme-court-runs-on-conservative-grievance-fringe-theories-and-bad-vibes.md)  
+- [👻🇺🇸⚔️🪽 The Soul of America: The Battle for Our Better Angels](./books/the-soul-of-america-the-battle-for-our-better-angels.md)  
 - [🇺🇲⚔️ How the South Won the Civil War: Oligarchy, Democracy, and the Continuing Fight for the Soul of America](./books/how-the-south-won-the-civil-war-oligarchy-democracy-and-the-continuing-fight-for-the-soul-of-america.md)  
-- [💰📈🤔 Understanding Modern Money](./books/understanding-modern-money.md)  
-- [💰🇺🇸 Making Money Work for Us: How MMT Can Save America](./books/making-money-work-for-us-how-mmt-can-save-america.md)  
-- [💼✅ The Case for a Job Guarantee](./books/the-case-for-a-job-guarantee.md)  
-- [💵🏛️📈 Soft Currency Economics II: The Origin of Modern Monetary Theory](./books/soft-currency-economics-ii-the-origin-of-modern-monetary-theory.md)  
-- [💰🏛️ Modern Money Theory: A Primer on Macroeconomics for Sovereign Monetary Systems](./books/modern-money-theory-a-primer-on-macroeconomics-for-sovereign-monetary-systems.md)  
-- [💰 Keynes: A Very Short Introduction](./books/keynes-a-very-short-introduction.md)  
-- [🧑‍💼🏦💸 The General Theory of Employment, Interest, and Money](./books/the-general-theory-of-employment-interest-and-money.md)  
-- [🌍💰📊 Macroeconomics](./books/macroeconomics.md)  
+- [🏛️☀️⬆️ Democracy Awakening: 📝 Notes on the State of 🇺🇸 America](./books/democracy-awakening.md)  
+- [🇺🇸📖 These Truths: A History of the United States](./books/these-truths-a-history-of-the-united-states.md)  
+- [🇺🇸⛓️‍💥📜🐘 To Make Men Free: A History of the Republican Party](./books/to-make-men-free-a-history-of-the-republican-party.md)  
   
   
 ## [📺 Videos](./videos/index.md) (411)  
-- [🏛️🐘⬆️🙏 Heather Cox Richardson on Why She's Still Hopeful Under MAGA and Donald Trump](./videos/heather-cox-richardson-on-why-shes-still-hopeful-under-maga-and-donald-trump.md)  
+- [🗳️🔓🤔 Is it easy to steal an election?](./videos/is-it-easy-to-steal-an-election.md)  
+- [💰🇺🇸❓🗣️ Who Owns America? Bernie Sanders Says the Quiet Part Out Loud](./videos/who-owns-america-bernie-sanders-says-the-quiet-part-out-loud.md)  
 - [🇺🇸🤕📢 America’s Branding Crisis — with Heather Cox Richardson | Prof G Conversations](./videos/americas-branding-crisis-with-heather-cox-richardson-prof-g-conversations.md)  
+- [🏛️🐘⬆️🙏 Heather Cox Richardson on Why She's Still Hopeful Under MAGA and Donald Trump](./videos/heather-cox-richardson-on-why-shes-still-hopeful-under-maga-and-donald-trump.md)  
 - [🇿🇼💸📈⏱️ Zimbabwe hyperinflation explained in 8 minutes ~ Fadhel Kaboub  > MMT](./videos/zimbabwe-hyperinflation-explained-in-8-minutes-fadhel-kaboub-mmt.md)  
 - [🇺🇸🤔❓ What Happened to American Conservatism? — with David Brooks | Prof G Conversations](./videos/what-happened-to-american-conservatism-with-david-brooks-prof-g-conversations.md)  
 - [🗽🏙️🗣️ New York City Mayor-elect Zohran Mamdani Victory Speech](./videos/new-york-city-mayor-elect-zohran-mamdani-victory-speech.md)  
 - [👩‍⚖️🔭⏩ Amy Coney Barrett Is Looking Beyond the Trump Era | Interesting Times with Ross Douthat](./videos/amy-coney-barrett-is-looking-beyond-the-trump-era-interesting-times-with-ross-douthat.md)  
 - [👨‍⚖️🛑🇺🇸🏛️ Injustice explores Trump's decade-long effort to politicize DOJ](./videos/new-book-injustice-explores-trumps-decade-long-effort-to-politicize-doj.md)  
 - [🗳️🎉➡️ Ezra Klein: This Is How Democrats Win](./videos/ezra-klein-this-is-how-democrats-win.md)  
-- [🗳️🇺🇸🔮 Voters cast ballots in elections that could signal future of U.S. politics](./videos/voters-cast-ballots-in-elections-that-could-signal-future-of-us-politics.md)  
-- [👩‍💼🗣️🇺🇸 Tamara Keith and Amy Walter on what to watch in Tuesday's elections](./videos/tamara-keith-and-amy-walter-on-what-to-watch-in-tuesdays-elections.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (82)  

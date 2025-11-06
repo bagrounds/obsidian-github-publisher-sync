@@ -4,7 +4,7 @@ aliases:
   - "🇺🇸🏛️🚫📜⚖️ Lawless: How the Supreme Court Runs on Conservative Grievance, Fringe Theories, and Bad Vibes"
 URL: https://bagrounds.org/books/lawless-how-the-supreme-court-runs-on-conservative-grievance-fringe-theories-and-bad-vibes
 share: true
-CTA: Understand the Supreme Court's descent.
+CTA: 🚨 Unmask the court.
 affiliate link: https://amzn.to/45MWIc7
 ---
 [Home](../index.md) > [Books](./index.md)  
@@ -57,7 +57,7 @@ affiliate link: https://amzn.to/45MWIc7
   
 * **[💰🤫 Dark Money: The Hidden History of the Billionaires Behind the Rise of the Radical Right](./dark-money-the-hidden-history-of-the-billionaires-behind-the-rise-of-the-radical-right.md)** by Jane Mayer  
     * 🕵️‍♀️ While not exclusively about the judiciary, Mayer's investigative work reveals the funding networks and ideological infrastructure supporting the conservative legal movement and the appointment of conservative judges, providing important context for understanding the forces behind the Court Litman describes.  
-* 🇺🇸 **These Truths: A History of the United States** by Jill Lepore  
+* **[🇺🇸📖 These Truths: A History of the United States](./these-truths-a-history-of-the-united-states.md)** by Jill Lepore  
     * 📜 A comprehensive history of the United States, Lepore's book provides a broad historical context for understanding the long-standing debates about the Constitution, the role of the judiciary, and the recurring tensions between different visions of America – issues that form the backdrop of the contemporary Court battles Litman details.  
 * **[🇺🇸📜 The Federalist Papers](./the-federalist-papers.md)** by James Madison, Alexander Hamilton, and John Jay  
     * 🏛️ Reading the arguments of the framers regarding the structure and powers of the U.S. government, including the judiciary, offers essential historical context for evaluating contemporary debates about the Supreme Court's role and the justices' interpretive methodologies.  

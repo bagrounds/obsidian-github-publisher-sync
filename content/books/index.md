@@ -7,7 +7,7 @@ URL: https://bagrounds.org/books
 backlinks: false
 ---
 [Home](../index.md)  
-# 📚 Books (735)  
+# 📚 Books (738)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)  
 - [🧑‍🤝‍🧑📈 10 to 25: The Science of Motivating Young People: A Groundbreaking Approach to Leading the Next Generation - And Making Your Own Life Easier](./10-to-25-the-science-of-motivating-young-people-a-groundbreaking-approach-to-leading-the-next-generation-and-making-your-own-life-easier.md)  
@@ -565,6 +565,7 @@ Feedback Control of Dynamic Systems]]
 - [🧑‍🤝‍🧑🐘⬆️ The Great Alignment: Race, Party Transformation, and the Rise of Donald Trump](./the-great-alignment-race-party-transformation-and-the-rise-of-donald-trump.md)  
 - [🗳️💰⬇️ The Great Suppression: Voting Rights, Corporate Cash, and the Conservative Assault on Democracy](./the-great-suppression-voting-rights-corporate-cash-and-the-conservative-assault-on-democracy.md)  
 - [🌍🏛️ The Great Transformation: The Political and Economic Origins of Our Time](./the-great-transformation-the-political-and-economic-origins-of-our-time.md)  
+- [🧠🧑‍💻 The Hacking of the American Mind: The Science Behind the Corporate Takeover of Our Bodies and Brains](./the-hacking-of-the-american-mind-the-science-behind-the-corporate-takeover-of-our-bodies-and-brains.md)  
 - [👶😊😴 The Happiest Baby on the Block: The New Way to Calm Crying and Help Your Newborn Baby Sleep Longer](./the-happiest-baby-on-the-block.md)  
 - [😀📜 The Happiness Hypothesis: Finding Modern Truth in Ancient Wisdom](./the-happiness-hypothesis-finding-modern-truth-in-ancient-wisdom.md)  
 - [😩😊 The Happiness Trap: How to Stop Struggling and Start Living](./the-happiness-trap-how-to-stop-struggling-and-start-living.md)  
@@ -647,6 +648,7 @@ Feedback Control of Dynamic Systems]]
 - [🤖📈 The Second Machine Age: Work, Progress, and Prosperity in a Time of Brilliant Technologies](./the-second-machine-age-work-progress-and-prosperity-in-a-time-of-brilliant-technologies.md)  
 - [👨‍🚀 The Self-Driven Child: The 🔬 Science and 🤔 Sense of Giving Your Kids More 🕹️ Control Over Their Lives](./the-self-driven-child.md)  
 - [👤🧬 The Selfish Gene](./the-selfish-gene.md)  
+- [🇺🇸📖 These Truths: A History of the United States](./these-truths-a-history-of-the-united-states.md)  
 - [📱🧠 The Shallows: What the Internet Is Doing to Our Brains](./the-shallows-what-the-internet-is-doing-to-our-brains.md)  
 - [😥🏫🇺🇸 The Shame of the Nation: The Restoration of Apartheid Schooling in America](./the-shame-of-the-nation-the-restoration-of-apartheid-schooling-in-america.md)  
 - [📡🌫️🔮🎲 The Signal and the Noise: Why So Many Predictions Fail - but Some Don't](./the-signal-and-the-noise.md)  
@@ -713,6 +715,7 @@ Feedback Control of Dynamic Systems]]
 - [🇷🇺⚔️🇺🇦🇮🇱⚔️🇮🇷🇺🇸⚔️🇺🇸 War](./war.md)  
 - [⚔️🕊️ War and Peace](./war-and-peace.md)  
 - [📊📉🏛️ Weapons of Math Destruction: How Big Data Increases Inequality and Threatens Democracy](./weapons-of-math-destruction-how-big-data-increases-inequality-and-threatens-democracy.md)  
+- [🇺🇸➡️🔨 West from Appomattox: The Reconstruction of America After the Civil War](./west-from-appomattox-the-reconstruction-of-america-after-the-civil-war.md)  
 - [🤕❤️ What if Symptoms Are Your Friend?: An Introduction to BodyMind Bridge and Your Self-Healing Mind](./what-if-symptoms-are-your-friend-an-introduction-to-bodymind-bridge-and-your-self-healing-mind.md)  
 - [🌡️✅🌎 What If We Get It Right?: Visions of Climate Futures](./what-if-we-get-it-right-visions-of-climate-futures.md)  
 - [👶🧠🫨❓ What's Going On in There?: How the Brain and Mind Develop in the First Five Years of Life](./whats-going-on-in-there.md)  

@@ -7,7 +7,7 @@ URL: https://bagrounds.org/books
 backlinks: false
 ---
 [Home](../index.md)  
-# 📚 Books (733)  
+# 📚 Books (735)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)  
 - [🧑‍🤝‍🧑📈 10 to 25: The Science of Motivating Young People: A Groundbreaking Approach to Leading the Next Generation - And Making Your Own Life Easier](./10-to-25-the-science-of-motivating-young-people-a-groundbreaking-approach-to-leading-the-next-generation-and-making-your-own-life-easier.md)  
@@ -258,6 +258,7 @@ Feedback Control of Dynamic Systems]]
 - [🧠📚🍎💡📝 How Learning Works: Eight Research-Based Principles for Smart Teaching](./how-learning-works.md)  
 - [ 🚫❌🧮💭 How Not to Be Wrong: The Power of Mathematical Thinking](./how-not-to-be-wrong.md)  
 - [🌿🔬 How Plants Work: The Science Behind the Amazing Things Plants Do](./how-plants-work.md)  
+- [🇺🇲⚔️ How the South Won the Civil War: Oligarchy, Democracy, and the Continuing Fight for the Soul of America](./how-the-south-won-the-civil-war-oligarchy-democracy-and-the-continuing-fight-for-the-soul-of-america.md)  
 - [💰👑 How to be a Billionaire: Proven Strategies from the Titans of Wealth](./how-to-be-a-billionaire-proven-strategies-from-the-titans-of-wealth.md)  
 - [✊🏿 How to Be An Antiracist](./how-to-be-an-antiracist.md)  
 - [📱💔 How to Break Up with Your Phone: The 30-Day Plan to Take Back Your Life](./how-to-break-up-with-your-phone-the-30-day-plan-to-take-back-your-life.md)  
@@ -727,6 +728,7 @@ Feedback Control of Dynamic Systems]]
 - [🕊️💪 Why Civil Resistance Works: The Strategic Logic of Nonviolent Conflict](./why-civil-resistance-works-the-strategic-logic-of-nonviolent-conflict.md)  
 - [✍🏿🇺🇸💔 Why Didn't We Riot?: A Black Man In Trumpland](./why-didnt-we-riot.md)  
 - [🙋‍♂️🏛️ Why I Am a Liberal: Being Definitions and Personal Confessions of Faith by the Best Minds of the Liberal Party](./why-i-am-a-liberal-being-definitions-and-personal-confessions-of-faith-by-the-best-minds-of-the-liberal-party.md)  
+- [👨‍🏫❓ Why Minsky Matters: An Introduction to the Work of a Maverick Economist](./why-minsky-matters-an-introduction-to-the-work-of-a-maverick-economist.md)  
 - [🌎👎👑💰🏚️ Why Nations Fail: The Origins of Power, Prosperity, and Poverty](./why-nations-fail-the-origins-of-power-prosperity-and-poverty.md)  
 - [📉❓ Why Nothing Works: Who Killed Progress - and How to Bring It Back](./why-nothing-works-who-killed-progress-and-how-to-bring-it-back.md)  
 - [😴💭 Why We Sleep: Unlocking the Power of Sleep and Dreams](./why-we-sleep-unlocking-the-power-of-sleep-and-dreams.md)  

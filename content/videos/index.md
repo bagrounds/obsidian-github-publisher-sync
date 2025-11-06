@@ -7,7 +7,7 @@ URL: https://bagrounds.org/videos
 backlinks: false
 ---
 [Home](../index.md)  
-# 📺 Videos (408)  
+# 📺 Videos (411)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
 - [❓💪🔬 12 Questions About Creatine with Stephen Cornish, PhD](./12-questions-about-creatine-w-stephen-cornish-phd.md)  
@@ -39,6 +39,7 @@ backlinks: false
 - [🏛️⚖️🌍 A look rulings from the Supreme Court term that could have far-reaching consequences](./a-look-rulings-from-the-supreme-court-term-that-could-have-far-reaching-consequences.md)  
 - [🗣️👂🇺🇸 American Conversations: Secretary Pete Buttigieg](./american-conversations-secretary-pete-buttigieg.md)  
 - [🇺🇸🗣️🏛️ American Conversations: Senator Sherrod Brown](./american-conversations-senator-sherrod-brown.md)  
+- [🇺🇸🤕📢 America’s Branding Crisis — with Heather Cox Richardson | Prof G Conversations](./americas-branding-crisis-with-heather-cox-richardson-prof-g-conversations.md)  
 - [👩‍⚖️🔭⏩ Amy Coney Barrett Is Looking Beyond the Trump Era | Interesting Times with Ross Douthat](./amy-coney-barrett-is-looking-beyond-the-trump-era-interesting-times-with-ross-douthat.md)  
 - [🏛️📜💰🚨 Amy Walter and Jasmine Wright on how Senate Republicans feel about Trump's big bill](./amy-walter-and-jasmine-wright-on-how-senate-republicans-feel-about-trumps-big-bill.md)  
 - [🏛️💥📈 Amy Walter and Leigh Ann Caldwell on the rise in political violence](./amy-walter-and-leigh-ann-caldwell-on-the-rise-in-political-violence.md)  
@@ -369,6 +370,7 @@ backlinks: false
 - [What America is losing as President Trump fires independent government watchdogs | 60 Minutes](./what-america-is-losing-as-president-trump-fires-independent-government-watchdogs-60-minutes.md)  
 - [What Are You?](./what-are-you.md)  
 - [What EXACTLY is in the Republican Budget Blueprint?](./what-exactly-is-in-the-republican-budget-blueprint.md)  
+- [🇺🇸🤔❓ What Happened to American Conservatism? — with David Brooks | Prof G Conversations](./what-happened-to-american-conservatism-with-david-brooks-prof-g-conversations.md)  
 - [🥼🦷💧 What happened when Calgary removed fluoride from its water supply](./what-happened-when-calgary-removed-fluoride-from-its-water-supply.md)  
 - [🤔📊📉❓ What happens when no one trusts a country’s economic data](./what-happens-when-no-one-trusts-a-countrys-economic-data.md)  
 - [🧠🗺️💡🔑 What I Learned after 5000 Hours of Mind Mapping](./what-i-learned-after-5000-hours-of-mind-mapping.md)  
@@ -416,4 +418,5 @@ backlinks: false
 - [🧠💡🎯🚫 You're Not Stupid: How To Never Lose Focus Again](./youre-not-stupid-how-to-never-lose-focus-again.md)  
 - [🤕➡️👁️➕ Your reality narrows after trauma — here’s how to expand it | Bessel van der Kolk](./your-reality-narrows-after-trauma-heres-how-to-expand-it-bessel-van-der-kolk.md)  
 - [🔑🖼️🎨👤 Your Theme](./your-theme.md)  
+- [🇿🇼💸📈⏱️ Zimbabwe hyperinflation explained in 8 minutes ~ Fadhel Kaboub  > MMT](./zimbabwe-hyperinflation-explained-in-8-minutes-fadhel-kaboub-mmt.md)  
   

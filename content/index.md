@@ -12,7 +12,8 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 ❔ What do 🫵 _you_ 🤔 think?  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (355)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (356)  
+- [2025-11-05 | 💲 Minsky | 🇺🇸 America | 🤖 MCP 📚📄📺](./reflections/2025-11-05.md)  
 - [2025-11-04 | 🗳️ Election Day 📚📰📺](./reflections/2025-11-04.md)  
 - [2025-11-03 | 🫂 Social Skills | 🗳️ Elections 📚📰](./reflections/2025-11-03.md)  
 - [2025-11-02 | 🫂 Friends | 🇺🇸 Nations | 💊 Drugs 📚📄](./reflections/2025-11-02.md)  
@@ -22,49 +23,48 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [2025-10-29 | 💵 Deficits | 🤖 Vibes | 🔬 Science | 🗳️ Democracy 📚📺📰📄](./reflections/2025-10-29.md)  
 - [2025-10-28 | 🧸 Soft Currency | 👽🏥 Undocumented Healthcare | 🥦 SNAP 📚📰📺](./reflections/2025-10-28.md)  
 - [2025-10-27 | 💰🦄 Deficit Myths | 🤖💻 Vibe Coding | 👑 3rd Term 📚📰](./reflections/2025-10-27.md)  
-- [2025-10-26 | 👹⛓️👧🏼 Sex Trafficking | 🇺🇸🚫📚 Book Bans 📚📰](./reflections/2025-10-26.md)  
   
   
-## [📚 Books](./books/index.md) (733)  
-- [🏛️💔 Injustice: How Politics and Fear Vanquished America's Justice Department](./books/injustice-how-politics-and-fear-vanquished-americas-justice-department.md)  
-- [🧑‍🤝‍🧑🐘⬆️ The Great Alignment: Race, Party Transformation, and the Rise of Donald Trump](./books/the-great-alignment-race-party-transformation-and-the-rise-of-donald-trump.md)  
-- [✅🗓️ Evidence-Based Habit Building: Finally Get Sh*t Done](./books/evidence-based-habit-building-finally-get-sht-done.md)  
-- [🧑‍🤝‍🧑🔬 The Science of Making Friends: Helping Socially Challenged Teens and Young Adults](./books/the-science-of-making-friends-helping-socially-challenged-teens-and-young-adults.md)  
-- [🧑‍🤝‍🧑🗣️ The Social Skills Guidebook: Manage Shyness, Improve Your Conversations, and Make Friends, Without Giving Up Who You Are](./books/the-social-skills-guidebook-manage-shyness-improve-your-conversations-and-make-friends-without-giving-up-who-you-are.md)  
-- [👻🔗 In the Realm of Hungry Ghosts: Close Encounters with Addiction](./books/in-the-realm-of-hungry-ghosts-close-encounters-with-addiction.md)  
-- [🌎👎👑💰🏚️ Why Nations Fail: The Origins of Power, Prosperity, and Poverty](./books/why-nations-fail-the-origins-of-power-prosperity-and-poverty.md)  
-- [↔️🏛️ The Narrow Corridor: States, Societies, and the Fate of Liberty](./books/the-narrow-corridor-states-societies-and-the-fate-of-liberty.md)  
-- [👑😈👎📈 The Dictator's Handbook: Why Bad Behavior Is Almost Always Good Politics](./books/the-dictators-handbook.md)  
-- [🧑‍🤝‍🧑 Platonic: How the Science of Attachment Can Help You Make - and Keep - Friends](./books/platonic-how-the-science-of-attachment-can-help-you-make-and-keep-friends.md)  
+## [📚 Books](./books/index.md) (735)  
+- [🏛️☀️⬆️ Democracy Awakening: 📝 Notes on the State of 🇺🇸 America](./books/democracy-awakening.md)  
+- [🇺🇲⚔️ How the South Won the Civil War: Oligarchy, Democracy, and the Continuing Fight for the Soul of America](./books/how-the-south-won-the-civil-war-oligarchy-democracy-and-the-continuing-fight-for-the-soul-of-america.md)  
+- [💰📈🤔 Understanding Modern Money](./books/understanding-modern-money.md)  
+- [💰🇺🇸 Making Money Work for Us: How MMT Can Save America](./books/making-money-work-for-us-how-mmt-can-save-america.md)  
+- [💼✅ The Case for a Job Guarantee](./books/the-case-for-a-job-guarantee.md)  
+- [💵🏛️📈 Soft Currency Economics II: The Origin of Modern Monetary Theory](./books/soft-currency-economics-ii-the-origin-of-modern-monetary-theory.md)  
+- [💰🏛️ Modern Money Theory: A Primer on Macroeconomics for Sovereign Monetary Systems](./books/modern-money-theory-a-primer-on-macroeconomics-for-sovereign-monetary-systems.md)  
+- [💰 Keynes: A Very Short Introduction](./books/keynes-a-very-short-introduction.md)  
+- [🧑‍💼🏦💸 The General Theory of Employment, Interest, and Money](./books/the-general-theory-of-employment-interest-and-money.md)  
+- [🌍💰📊 Macroeconomics](./books/macroeconomics.md)  
   
   
-## [📺 Videos](./videos/index.md) (408)  
-- [👩‍⚖️🔭⏩ Amy Coney Barrett Is Looking Beyond the Trump Era | Interesting Times with Ross Douthat](./videos/amy-coney-barrett-is-looking-beyond-the-trump-era-interesting-times-with-ross-douthat.md)  
+## [📺 Videos](./videos/index.md) (411)  
+- [🏛️🐘⬆️🙏 Heather Cox Richardson on Why She's Still Hopeful Under MAGA and Donald Trump](./videos/heather-cox-richardson-on-why-shes-still-hopeful-under-maga-and-donald-trump.md)  
+- [🇺🇸🤕📢 America’s Branding Crisis — with Heather Cox Richardson | Prof G Conversations](./videos/americas-branding-crisis-with-heather-cox-richardson-prof-g-conversations.md)  
+- [🇿🇼💸📈⏱️ Zimbabwe hyperinflation explained in 8 minutes ~ Fadhel Kaboub  > MMT](./videos/zimbabwe-hyperinflation-explained-in-8-minutes-fadhel-kaboub-mmt.md)  
+- [🇺🇸🤔❓ What Happened to American Conservatism? — with David Brooks | Prof G Conversations](./videos/what-happened-to-american-conservatism-with-david-brooks-prof-g-conversations.md)  
 - [🗽🏙️🗣️ New York City Mayor-elect Zohran Mamdani Victory Speech](./videos/new-york-city-mayor-elect-zohran-mamdani-victory-speech.md)  
+- [👩‍⚖️🔭⏩ Amy Coney Barrett Is Looking Beyond the Trump Era | Interesting Times with Ross Douthat](./videos/amy-coney-barrett-is-looking-beyond-the-trump-era-interesting-times-with-ross-douthat.md)  
 - [👨‍⚖️🛑🇺🇸🏛️ Injustice explores Trump's decade-long effort to politicize DOJ](./videos/new-book-injustice-explores-trumps-decade-long-effort-to-politicize-doj.md)  
 - [🗳️🎉➡️ Ezra Klein: This Is How Democrats Win](./videos/ezra-klein-this-is-how-democrats-win.md)  
 - [🗳️🇺🇸🔮 Voters cast ballots in elections that could signal future of U.S. politics](./videos/voters-cast-ballots-in-elections-that-could-signal-future-of-us-politics.md)  
 - [👩‍💼🗣️🇺🇸 Tamara Keith and Amy Walter on what to watch in Tuesday's elections](./videos/tamara-keith-and-amy-walter-on-what-to-watch-in-tuesdays-elections.md)  
-- [🏛️👔😡💸 Whitehouse and Murphy Dress Down Republican Tax «Thievery» in Colloquy on Senate Floor](./videos/whitehouse-and-murphy-dress-down-republican-tax-thievery-in-colloquy-on-senate-floor.md)  
-- [🇺🇸👑👎 How the start of Trump’s second term looks like some autocracies](./videos/how-the-start-of-trumps-second-term-looks-like-some-autocracies.md)  
-- [💔🏛️📉❓ The Broken Promise: Democracy, the Economy & What Comes Next with Pete Buttigieg](./videos/the-broken-promise-democracy-the-economy-what-comes-next-with-pete-buttigieg.md)  
-- [🤖🗣️🤝 Stanford Seminar - Beyond «Bots and Trolls» - Understanding Disinformation as Collaborative Work](./videos/stanford-seminar-beyond-bots-and-trolls-understanding-disinformation-as-collaborative-work.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (82)  
+- [🏦♾️📈💸 Modern Monetary Theory](./topics/modern-monetary-theory.md)  
+- [💰🏛️📈 Functional Finance](./topics/functional-finance.md)  
+- [🤔🚫➡️📚 Heterodox Economics](./topics/heterodox-economics.md)  
 - [🗣️📚🧠 Linguistics](./topics/linguistics.md)  
 - [🗣️🗣️ Bilingualism](./topics/bilingualism.md)  
-- [🏦♾️📈💸 Modern Monetary Theory](./topics/modern-monetary-theory.md)  
-- [🤔🚫➡️📚 Heterodox Economics](./topics/heterodox-economics.md)  
-- [👨‍👩‍👦🧭🤝 Authoritative Parenting](./topics/authoritative-parenting.md)  
   
   
-## [📄  Articles](./articles/index.md) (68)  
+## [📄  Articles](./articles/index.md) (69)  
+- [🤖🧠📈⚡ Code execution with MCP: Building more efficient agents](./articles/code-execution-with-mcp-building-more-efficient-agents.md)  
 - [🗓️🇵🇹💉✅🕊️ 20 years of Portuguese drug policy - developments, challenges and the quest for human rights](./articles/20-years-of-portuguese-drug-policy-developments-challenges-and-the-quest-for-human-rights.md)  
 - [🤖♾️🗂️ Scaling Long Horizon LLM Agent via Context Folding](./articles/scaling-long-horizon-llm-agent-via-context-folding.md)  
 - [🗣️🧠🧑‍💻📚 Relating Natural Language Aptitude to Individual Differences in Learning Programming Languages](./articles/relating-natural-language-aptitude-to-individual-differences-in-learning-programming-languages.md)  
 - [🤖📢❌ Digital Yard Signs: Analysis of an AI Bot Political Influence Campaign on X](./articles/digital-yard-signs-analysis-of-an-ai-bot-political-influence-campaign-on-x.md)  
-- [🤔💭🤔💭 Why We Think](./articles/why-we-think.md)  
   
   
 ## [🤖💬 Bot Chats](./bot-chats/index.md) (45)  
@@ -84,9 +84,9 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
   
   
 ## [👥 People](./people/index.md) (15)  
+- [🏛️🇺🇸📖 Heather Cox Richardson](./people/heather-cox-richardson.md)  
 - [🤖🧠💻 Andrej Karpathy](./people/andrej-karpathy.md)  
 - [👨‍🏫📚💻🤔 Cal Newport](./people/cal-newport.md)  
-- [🧠🫀👀🔬 Andrew Huberman](./people/andrew-huberman.md)  
   
   
 ## [🛍️ Products](./products/index.md) (3)  

@@ -54,7 +54,7 @@ The book is structured to explain Amazon's core principles and then illustrate t
   
 ### ⚖️ Contrasting Books (Critiques, Alternative Approaches)  
   
-* 📖 ***The Four: The Hidden DNA of Amazon, Apple, Facebook, and Google*** by Scott Galloway: Critically examines the power and influence of the four major tech companies, including Amazon, offering a less internal and more societal perspective.  
+* 📖 ***The Four: The Hidden DNA of Amazon, Apple, Facebook, and Google*** by [👨‍🏫📈💻 Scott Galloway](../people/scott-galloway.md): Critically examines the power and influence of the four major tech companies, including Amazon, offering a less internal and more societal perspective.  
 * 📚 Books focusing on different organizational structures (e.g., flatter hierarchies, co-operatives) or management philosophies that prioritize different values than Amazon's intense, results-driven culture.  
 * 🌍 Works exploring the social and economic impacts of large e-commerce platforms, providing a counterpoint to the internal business focus of *Working Backwards*.  
   

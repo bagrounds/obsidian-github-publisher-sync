@@ -46,7 +46,7 @@ youtube: https://youtu.be/SNDKvd-gorE
 ## 📚 Book Recommendations  
 * 📚 **Similar Books (Focusing on Power & Society):**  
     * **[💔💻 Burn Book: A Tech Love Story](../books/burn-book-a-tech-love-story.md) by Kara Swisher:** Her memoir details the rise and hubris of the tech oligarchs she covered, focusing on the human consequences of their unchecked power.  
-    * **The Four: The Hidden DNA of Amazon Apple Facebook and Google by Scott Galloway:** A critical examination of how four companies leveraged business and psychology to achieve their current monopoly status and societal power.  
+    * **The Four: The Hidden DNA of Amazon Apple Facebook and Google by [👨‍🏫📈💻 Scott Galloway](../people/scott-galloway.md):** A critical examination of how four companies leveraged business and psychology to achieve their current monopoly status and societal power.  
 * 📖 **Contrasting Books (Focusing on Optimism & Innovation):**  
     * **The Innovators: How a Group of Hackers, Geniuses, and Geeks Created the Digital Revolution by Walter Isaacson:** Offers a historically optimistic perspective on the people who built the digital age, contrasting the current critique of CEOs.  
 * 💡 **Creatively Related Books (Focusing on Political Response & Wealth):**  

@@ -10,7 +10,7 @@ Channel: The Prof G Pod – Scott Galloway
 tags:
 youtube: https://youtu.be/EklEzXBQP9U
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](../index.md) > [Videos](./index.md) | [👨‍🏫📈💻 Scott Galloway](../people/scott-galloway.md)  
 # 💰🤔⚖️ The Most Important Economic Debate of our Lifetime — ft. Justin Wolfers | Prof G Markets  
 ![The Most Important Economic Debate of our Lifetime — ft. Justin Wolfers | Prof G Markets](https://youtu.be/EklEzXBQP9U)  
   

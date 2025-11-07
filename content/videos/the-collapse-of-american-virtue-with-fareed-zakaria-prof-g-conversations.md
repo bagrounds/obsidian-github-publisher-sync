@@ -11,7 +11,7 @@ tags:
 youtube: https://youtu.be/5pFFKiLKFLQ
 CTA: 🇺🇸 Rebuild integrity.
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](../index.md) > [Videos](./index.md) | [👨‍🏫📈💻 Scott Galloway](../people/scott-galloway.md)  
 # 🇺🇸📉💔 The Collapse of American Virtue — with Fareed Zakaria | Prof G Conversations  
 ![The Collapse of American Virtue — with Fareed Zakaria | Prof G Conversations](https://youtu.be/5pFFKiLKFLQ)  
   

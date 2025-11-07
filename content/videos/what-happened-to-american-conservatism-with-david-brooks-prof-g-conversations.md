@@ -10,7 +10,7 @@ Channel: The Prof G Pod – Scott Galloway
 tags:
 youtube: https://youtu.be/pA9Bwd1zYDQ
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](../index.md) > [Videos](./index.md) | [👨‍🏫📈💻 Scott Galloway](../people/scott-galloway.md)  
 # 🇺🇸🤔❓ What Happened to American Conservatism? — with David Brooks | Prof G Conversations  
 ![What Happened to American Conservatism? — with David Brooks | Prof G Conversations](https://youtu.be/pA9Bwd1zYDQ)  
   

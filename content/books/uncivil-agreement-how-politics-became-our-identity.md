@@ -38,7 +38,7 @@ affiliate link: https://amzn.to/42q6IFp
 * 💙❤️ Why We're Polarized by Ezra Klein  
 * [😇🧠 The Righteous Mind: Why Good People Are Divided by Politics and Religion](./the-righteous-mind.md) by Jonathan Haidt  
 * ❓ Identity Crisis: 🇺🇸 The 2016 Presidential Campaign and the Battle for the Meaning of America by John Sides, Michael Tesler, and Lynn Vavreck  
-* 💥 Culture Crash: 💀 The Killing of the Creative Class by Scott Galloway  
+* 💥 Culture Crash: 💀 The Killing of the Creative Class by [👨‍🏫📈💻 Scott Galloway](../people/scott-galloway.md)  
   
 ### ➖ Contrasting Books  
   

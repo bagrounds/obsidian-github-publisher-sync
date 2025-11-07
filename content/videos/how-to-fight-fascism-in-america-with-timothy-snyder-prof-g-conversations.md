@@ -4,13 +4,13 @@ aliases:
   - 👊👹🇺🇸🛡️ How to Fight Fascism in America — with Timothy Snyder | Prof G Conversations
 title: 👊👹🇺🇸🛡️ How to Fight Fascism in America — with Timothy Snyder | Prof G Conversations
 URL: https://bagrounds.org/videos/how-to-fight-fascism-in-america-with-timothy-snyder-prof-g-conversations
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: The Prof G Pod – Scott Galloway
-tags: 
+tags:
 youtube: https://youtu.be/3NIwH4nKaDg
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](../index.md) > [Videos](./index.md) | [👨‍🏫📈💻 Scott Galloway](../people/scott-galloway.md)  
 # 👊👹🇺🇸🛡️ How to Fight Fascism in America — with Timothy Snyder | Prof G Conversations  
 ![How to Fight Fascism in America — with Timothy Snyder | Prof G Conversations](https://youtu.be/3NIwH4nKaDg)  
   

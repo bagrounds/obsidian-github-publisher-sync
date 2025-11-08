@@ -7,7 +7,7 @@ URL: https://bagrounds.org/books
 backlinks: false
 ---
 [Home](../index.md)  
-# 📚 Books (738)  
+# 📚 Books (739)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)  
 - [🧑‍🤝‍🧑📈 10 to 25: The Science of Motivating Young People: A Groundbreaking Approach to Leading the Next Generation - And Making Your Own Life Easier](./10-to-25-the-science-of-motivating-young-people-a-groundbreaking-approach-to-leading-the-next-generation-and-making-your-own-life-easier.md)  
@@ -82,6 +82,7 @@ backlinks: false
 - [❓🏛️👶 Big Ideas for Little Philosophers: Truth with Socrates](./big-ideas-for-little-philosophers-truth-with-socrates.md)  
 - [🪄 Big Magic: Creative Living Beyond Fear](./big-magic.md)  
 - [🐦🕊️ Bird by Bird: Some Instructions on Writing and Life](./bird-by-bird.md)  
+- [🧑🏿‍🤝‍🧑🏿🏛️ Black Reconstruction in America (The Oxford W. E. B. Du Bois): An Essay Toward a History of the Part Which Black Folk Played in the Attempt to Reconstruct Democracy in America, 1860-1880](./black-reconstruction-in-america-the-oxford-w-e-b-du-bois-an-essay-toward-a-history-of-the-part-which-black-folk-played-in-the-attempt-to-reconstruct-democracy-in-america-1860-1880.md)  
 - [⚡🚫💭 Blink: The Power of Thinking Without Thinking](./blink-the-power-of-thinking-without-thinking.md)  
 - [✍️💻💰 Blog, Inc.: Blogging for Passion, Profit, and to Create Community](./blog-inc-blogging-for-passion-profit-and-to-create-community.md)  
 - [🌊📈 Blue Ocean Strategy: How to Create Uncontested Market Space and Make the Competition Irrelevant](./blue-ocean-strategy-how-to-create-uncontested-market-space-and-make-the-competition-irrelevant.md)  

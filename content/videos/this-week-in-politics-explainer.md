@@ -92,4 +92,7 @@ youtube: https://youtu.be/H3f-nnlTwG4
   
 - 🌍 The Great Migration An American Odyssey by Jacob Lawrence. 🚶 Explores the themes of movement, social change, and the search for a better future, connecting to the current crises of migration and the generational political shifts the speaker highlights.  
   
-- 🌱 Silent Spring by Rachel Carson. 🌲 A seminal work that sparked the modern environmental movement, creatively relating to the need for a new vision to deal with the climate change crisis, which the speaker explicitly states must be addressed by new leaders.
+- 🌱 Silent Spring by Rachel Carson. 🌲 A seminal work that sparked the modern environmental movement, creatively relating to the need for a new vision to deal with the climate change crisis, which the speaker explicitly states must be addressed by new leaders.  
+  
+## 🐦 Tweet  
+<blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">📰🗣️❓ This Week in Politics | Explainer<br><br>🇺🇸 Elections | 🏛️ Political Parties | 💸 Economy | ⚖️ Supreme Court | 📢 Voter Concerns<a href="https://twitter.com/HC_Richardson?ref_src=twsrc%5Etfw">@HC_Richardson</a><a href="https://t.co/xnGjUEAr2k">https://t.co/xnGjUEAr2k</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/1987250388379312341?ref_src=twsrc%5Etfw">November 8, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

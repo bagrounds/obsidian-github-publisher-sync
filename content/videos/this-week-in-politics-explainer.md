@@ -64,7 +64,7 @@ youtube: https://youtu.be/H3f-nnlTwG4
   
 🏛️ A: The case is significant because tariffs are the administration's signature economic issue. 📜 The Supreme Court is reviewing whether the President unconstitutionally assumed power, which the Constitution grants solely to Congress, to impose these tariffs under an emergency act. If the Court rules against the administration, it would be a huge blow to its authority and economic policy.  
   
-### 🛠️ Q:  How can citizens maintain political momentum?  
+### 🛠️ Q: How can citizens maintain political momentum?  
   
 🗣️ A: Continue engaging in grassroots efforts, not just focusing on national elections. 🏡 This involves supporting your community, circulating good, factual information to counteract political propaganda, and staying involved at local, state, and national levels to articulate a vision for a more just and healthier future.  
   

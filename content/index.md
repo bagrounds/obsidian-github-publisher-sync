@@ -12,8 +12,10 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 ❔ What do 🫵 _you_ 🤔 think?  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (357)  
-- [2025-11-06](./reflections/2025-11-06.md)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (359)  
+- [2025-11-08](./reflections/2025-11-08.md)  
+- [2025-11-07 | 🏗️ Reconstruction | 👎 Repudiation 📚📺](./reflections/2025-11-07.md)  
+- [2025-11-06 | 📜 History | 💰 Economics | 😇 Virtue 📚📺👥](./reflections/2025-11-06.md)  
 - [2025-11-05 | 💲 Minsky | 🇺🇸 America | 🤖 MCP 📚📄📺](./reflections/2025-11-05.md)  
 - [2025-11-04 | 🗳️ Election Day 📚📰📺](./reflections/2025-11-04.md)  
 - [2025-11-03 | 🫂 Social Skills | 🗳️ Elections 📚📰](./reflections/2025-11-03.md)  
@@ -21,11 +23,12 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [2025-11-01 | 🗂️ Folding | 🧌 Trolling | 🖇️ Connecting 📄📺📚](./reflections/2025-11-01.md)  
 - [2025-10-31 | 🗣️🤖 Ode to Vibe Code 📄📚💌](./reflections/2025-10-31.md)  
 - [2025-10-30 | 📜🏛️ Sovereign Ledger | 🇺🇸👑📖 Authoritarian Playbook 📺📚💌📊🐦](./reflections/2025-10-30.md)  
-- [2025-10-29 | 💵 Deficits | 🤖 Vibes | 🔬 Science | 🗳️ Democracy 📚📺📰📄](./reflections/2025-10-29.md)  
-- [2025-10-28 | 🧸 Soft Currency | 👽🏥 Undocumented Healthcare | 🥦 SNAP 📚📰📺](./reflections/2025-10-28.md)  
   
   
-## [📚 Books](./books/index.md) (738)  
+## [📚 Books](./books/index.md) (739)  
+- [🧑🏿‍🤝‍🧑🏿🏛️ Black Reconstruction in America (The Oxford W. E. B. Du Bois): An Essay Toward a History of the Part Which Black Folk Played in the Attempt to Reconstruct Democracy in America, 1860-1880](./books/black-reconstruction-in-america-the-oxford-w-e-b-du-bois-an-essay-toward-a-history-of-the-part-which-black-folk-played-in-the-attempt-to-reconstruct-democracy-in-america-1860-1880.md)  
+- [💼🔙📦 Working Backwards: Insights, Stories, and Secrets from Inside Amazon](./books/working-backwards-insights-stories-and-secrets-from-inside-amazon.md)  
+- [😠🎭 Uncivil Agreement: How Politics Became Our Identity](./books/uncivil-agreement-how-politics-became-our-identity.md)  
 - [📱📢🤖 Computational Propaganda: Political Parties, Politicians, and Political Manipulation on Social Media](./books/computational-propaganda-political-parties-politicians-and-political-manipulation-on-social-media.md)  
 - [🧠🧑‍💻 The Hacking of the American Mind: The Science Behind the Corporate Takeover of Our Bodies and Brains](./books/the-hacking-of-the-american-mind-the-science-behind-the-corporate-takeover-of-our-bodies-and-brains.md)  
 - [🇺🇸⚔️💰 Fight Oligarchy](./books/fight-oligarchy.md)  
@@ -33,22 +36,19 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [🇺🇸🏛️🚫📜⚖️ Lawless: How the Supreme Court Runs on Conservative Grievance, Fringe Theories, and Bad Vibes](./books/lawless-how-the-supreme-court-runs-on-conservative-grievance-fringe-theories-and-bad-vibes.md)  
 - [👻🇺🇸⚔️🪽 The Soul of America: The Battle for Our Better Angels](./books/the-soul-of-america-the-battle-for-our-better-angels.md)  
 - [🇺🇲⚔️ How the South Won the Civil War: Oligarchy, Democracy, and the Continuing Fight for the Soul of America](./books/how-the-south-won-the-civil-war-oligarchy-democracy-and-the-continuing-fight-for-the-soul-of-america.md)  
-- [🏛️☀️⬆️ Democracy Awakening: 📝 Notes on the State of 🇺🇸 America](./books/democracy-awakening.md)  
-- [🇺🇸📖 These Truths: A History of the United States](./books/these-truths-a-history-of-the-united-states.md)  
-- [🇺🇸⛓️‍💥📜🐘 To Make Men Free: A History of the Republican Party](./books/to-make-men-free-a-history-of-the-republican-party.md)  
   
   
-## [📺 Videos](./videos/index.md) (411)  
-- [🗳️🔓🤔 Is it easy to steal an election?](./videos/is-it-easy-to-steal-an-election.md)  
-- [💰🇺🇸❓🗣️ Who Owns America? Bernie Sanders Says the Quiet Part Out Loud](./videos/who-owns-america-bernie-sanders-says-the-quiet-part-out-loud.md)  
-- [🇺🇸🤕📢 America’s Branding Crisis — with Heather Cox Richardson | Prof G Conversations](./videos/americas-branding-crisis-with-heather-cox-richardson-prof-g-conversations.md)  
-- [🏛️🐘⬆️🙏 Heather Cox Richardson on Why She's Still Hopeful Under MAGA and Donald Trump](./videos/heather-cox-richardson-on-why-shes-still-hopeful-under-maga-and-donald-trump.md)  
-- [🇿🇼💸📈⏱️ Zimbabwe hyperinflation explained in 8 minutes ~ Fadhel Kaboub  > MMT](./videos/zimbabwe-hyperinflation-explained-in-8-minutes-fadhel-kaboub-mmt.md)  
+## [📺 Videos](./videos/index.md) (415)  
+- [📰🗣️❓ This Week in Politics | Explainer](./videos/this-week-in-politics-explainer.md)  
+- [🤖🫧💥📉 The AI Bubble Is Real — Here’s How to Prepare for the Pop | Prof G Markets](./videos/the-ai-bubble-is-real-heres-how-to-prepare-for-the-pop-prof-g-markets.md)  
+- [👊👹🇺🇸🛡️ How to Fight Fascism in America — with Timothy Snyder | Prof G Conversations](./videos/how-to-fight-fascism-in-america-with-timothy-snyder-prof-g-conversations.md)  
+- [👩‍💻👑🦆 Kara Swisher: Tech, Power, and Why You Should Get the F*cking Duck](./videos/kara-swisher-tech-power-and-why-you-should-get-the-fcking-duck.md)  
+- [🇺🇸⚔️🏛️ The Fight to Save American Democracy — with Heather Cox Richardson | Prof G Conversations](./videos/the-fight-to-save-american-democracy-with-heather-cox-richardson-prof-g-conversations.md)  
 - [🇺🇸🤔❓ What Happened to American Conservatism? — with David Brooks | Prof G Conversations](./videos/what-happened-to-american-conservatism-with-david-brooks-prof-g-conversations.md)  
-- [🗽🏙️🗣️ New York City Mayor-elect Zohran Mamdani Victory Speech](./videos/new-york-city-mayor-elect-zohran-mamdani-victory-speech.md)  
-- [👩‍⚖️🔭⏩ Amy Coney Barrett Is Looking Beyond the Trump Era | Interesting Times with Ross Douthat](./videos/amy-coney-barrett-is-looking-beyond-the-trump-era-interesting-times-with-ross-douthat.md)  
-- [👨‍⚖️🛑🇺🇸🏛️ Injustice explores Trump's decade-long effort to politicize DOJ](./videos/new-book-injustice-explores-trumps-decade-long-effort-to-politicize-doj.md)  
-- [🗳️🎉➡️ Ezra Klein: This Is How Democrats Win](./videos/ezra-klein-this-is-how-democrats-win.md)  
+- [🇺🇸🤕📢 America’s Branding Crisis — with Heather Cox Richardson | Prof G Conversations](./videos/americas-branding-crisis-with-heather-cox-richardson-prof-g-conversations.md)  
+- [🇺🇸📉💔 The Collapse of American Virtue — with Fareed Zakaria | Prof G Conversations](./videos/the-collapse-of-american-virtue-with-fareed-zakaria-prof-g-conversations.md)  
+- [💰🤔⚖️ The Most Important Economic Debate of our Lifetime — ft. Justin Wolfers | Prof G Markets](./videos/the-most-important-economic-debate-of-our-lifetime-ft-justin-wolfers-prof-g-markets.md)  
+- [🗳️🔓🤔 Is it easy to steal an election?](./videos/is-it-easy-to-steal-an-election.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (82)  
@@ -83,10 +83,10 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [❓🧪✅🤔 Hypothesis](./software/hypothesis.md)  
   
   
-## [👥 People](./people/index.md) (15)  
+## [👥 People](./people/index.md) (16)  
+- [👨‍🏫📈💻 Scott Galloway](./people/scott-galloway.md)  
 - [🏛️🇺🇸📖 Heather Cox Richardson](./people/heather-cox-richardson.md)  
 - [🤖🧠💻 Andrej Karpathy](./people/andrej-karpathy.md)  
-- [👨‍🏫📚💻🤔 Cal Newport](./people/cal-newport.md)  
   
   
 ## [🛍️ Products](./products/index.md) (3)  

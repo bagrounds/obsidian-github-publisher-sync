@@ -4,9 +4,12 @@ aliases:
   - "🗑️⏱️ Decluttering at the Speed of Life: Winning Your Never-Ending Battle with Stuff"
 URL: https://bagrounds.org/books/decluttering-at-the-speed-of-life-winning-your-never-ending-battle-with-stuff
 share: true
+affiliate link: https://amzn.to/4oZI2wu
+CTA: 🚀 Simplify existence.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🗑️⏱️ Decluttering at the Speed of Life: Winning Your Never-Ending Battle with Stuff  
+[🛒 Decluttering at the Speed of Life: Winning Your Never-Ending Battle with Stuff. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4oZI2wu)  
   
 🏠✨ A practical, shame-free approach to managing clutter by focusing on small, consistent actions and embracing the concept that done is better than perfect for sustainable results.  
   

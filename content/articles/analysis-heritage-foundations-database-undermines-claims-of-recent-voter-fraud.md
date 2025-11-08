@@ -3,12 +3,12 @@ share: true
 aliases:
   - "🏛️🔍❌🗳️ Analysis: Heritage Foundation’s Database Undermines Claims of Recent Voter Fraud"
 title: "🏛️🔍❌🗳️ Analysis: Heritage Foundation’s Database Undermines Claims of Recent Voter Fraud"
-URL: https://bagrounds.org/articles/analysis-heritage-foundation-s-database-undermines-claims-of-recent-voter-fraud
+URL: https://bagrounds.org/articles/analysis-heritage-foundations-database-undermines-claims-of-recent-voter-fraud
 Author:
 tags:
 ---
 [Home](../index.md) > [Articles](./index.md)  
-# 🏛️🔍❌🗳️ Analysis: Heritage Foundation’s Database Undermines Claims of Recent Voter Fraud  
+# [🏛️🔍❌🗳️ Analysis: Heritage Foundation’s Database Undermines Claims of Recent Voter Fraud](https://www.brennancenter.org/our-work/analysis-opinion/analysis-heritage-foundations-database-undermines-claims-recent-voter)  
   
 ## 🤖 AI Summary  
 * 🗳️ The database, used to support claims of widespread voter fraud, actually **undermines** them, confirming fraud is **vanishingly rare**.  

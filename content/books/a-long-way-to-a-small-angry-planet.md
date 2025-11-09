@@ -49,4 +49,4 @@ The book has been widely praised for its optimistic and inclusive vision of scie
   
 #### ☯️ Similar But Different  
 * **[👍🦮🌌 The Hitchhiker's Guide to the Galaxy](./the-hitchhikers-guide-to-the-galaxy.md) by Douglas Adams** 🤣: If you enjoy the crew's dynamic and the playful tone, you might appreciate this classic for its satirical take on a journey through space.  
-* **Dune by Frank Herbert** 🏜️: For readers who want more complex, sprawling world-building with a focus on politics and societal structures, Dune offers a high-concept alternative to the character-driven story.
+* **[🏜️🐛 Dune](./dune.md) by Frank Herbert** 🏜️: For readers who want more complex, sprawling world-building with a focus on politics and societal structures, Dune offers a high-concept alternative to the character-driven story.

@@ -316,7 +316,7 @@ Here's a breakdown:
     * Modern military strategy 💣  
     * **Books that do cover those topics:**  
         * "A Game of Thrones" by George R.R. Martin. (Political intrigue, complex characters) 👑  
-        * "Dune" by Frank Herbert. (Political, ecological, and philosophical themes) 🏜️  
+        * [🏜️🐛 Dune](../books/dune.md) by Frank Herbert. (Political, ecological, and philosophical themes) 🏜️  
         * Historical books on military strategy, such as [🎨⚔️ The Art of War](../books/the-art-of-war.md) by Sun Tzu. 📜  
 * **Books with a Different Perspective:**  
     * "The Once and Future King" by T.H. White. (Retelling of Arthurian legend, more focused on character psychology) 👑  

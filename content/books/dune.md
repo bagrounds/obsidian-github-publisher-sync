@@ -46,7 +46,7 @@ A: 📏 **Dune** is **400 to 500 pages** and its dense content often makes it fe
 ### ❤️ If You Loved This  
   
 * 👑 **A Game of Thrones** by George R.R. Martin: Features similar feudal structure, high-stakes political intrigue, and power struggles.  
-* 🌌 **Foundation** by Isaac Asimov: Foundational sci-fi saga dealing with future humanity and manipulated socio-historical forces.  
+* **[🏗️🧱🌍 Foundation](./Foundation.md)** by Isaac Asimov: Foundational sci-fi saga dealing with future humanity and manipulated socio-historical forces.  
   
 ### ↔️ Similar But Different  
   

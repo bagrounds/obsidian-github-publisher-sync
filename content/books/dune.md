@@ -5,6 +5,7 @@ aliases:
 URL: https://bagrounds.org/books/dune
 share: true
 affiliate link: https://amzn.to/47VKBce
+CTA: 🪱 Command the desert.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🏜️🐛 Dune  

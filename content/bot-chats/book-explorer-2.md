@@ -285,7 +285,7 @@ Let's think of some topics very different from Political Satire/Dystopian Litera
   
 For a book completely dissimilar in topic or perspective from everything we've discussed, how about:  
   
-* *Zen and the Art of Motorcycle Maintenance: An Inquiry into Values* by Robert M. Pirsig. This philosophical novel blends a cross-country motorcycle trip with reflections on metaphysics, technology, and the meaning of quality. It's a personal and introspective journey that contrasts sharply with the political allegory and dystopian themes we've been exploring. 🏍️🧘‍♂️  
+* [🏍️🧘❓ Zen and the Art of Motorcycle Maintenance: An Inquiry into Values](../books/zen-and-the-art-of-motorcycle-maintenance-an-inquiry-into-values.md) by Robert M. Pirsig. This philosophical novel blends a cross-country motorcycle trip with reflections on metaphysics, technology, and the meaning of quality. It's a personal and introspective journey that contrasts sharply with the political allegory and dystopian themes we've been exploring. 🏍️🧘‍♂️  
   
 That was a sobering yet important exploration of *Animal Farm*. What literary landscape shall we venture into next? 🤔  
   

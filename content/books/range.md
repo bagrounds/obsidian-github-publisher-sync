@@ -4,8 +4,8 @@ aliases:
   - "🌐🔭🎨🧩👨‍🎓 Range: Why Generalists Triumph in a Specialized World"
 title: "🌐🔭🎨🧩👨‍🎓 Range: Why Generalists Triumph in a Specialized World"
 URL: https://bagrounds.org/books/range
-Author: 
-tags: 
+Author:
+tags:
 affiliate link: https://amzn.to/4ktRiao
 ---
 [Home](../index.md) > [Books](./index.md)  
@@ -56,9 +56,9 @@ In a complex 🌍 and unpredictable 😵‍💫 world, broad 🌁 experience and
   
 ### 📚 Book Recommendations 📚  
 * ⭐ **Best Alternate Book on the Same Topic:**  
-    * 📖 "[How To Have A Good Day](./how-to-have-a-good-day.md): Harness the Power of Behavioral Science to Transform Your Time at Work and Home" by Caroline Webb. 🧠 This book is about how to improve your life, and work, by using behavioral science. 🤔 It has a lot of similar ideas to Range, but is more focused on daily implementation. 🚀  
+    * [☀️😀👍😊🌻 How to Have a Good Day: Harness the Power of Behavioral Science to Transform Your Working Life](./how-to-have-a-good-day.md) by Caroline Webb. 🧠 This book is about how to improve your life, and work, by using behavioral science. 🤔 It has a lot of similar ideas to Range, but is more focused on daily implementation. 🚀  
 * 💡 **Best Book That Is Tangentially Related:**  
-    * 🧠 "[Thinking, Fast and Slow](./thinking-fast-and-slow.md)" by Daniel Kahneman. 🤔 This book explores the two systems of thinking and how they influence decision-making, which is relevant to the "wicked" learning environments discussed in "Range." 🎯  
+    * [🤔🐇🐢 Thinking, Fast and Slow](./thinking-fast-and-slow.md) by Daniel Kahneman. 🤔 This book explores the two systems of thinking and how they influence decision-making, which is relevant to the "wicked" learning environments discussed in "Range." 🎯  
 * ⚔️ **Best Book That Is Diametrically Opposed:**  
     * 🥇 "Outliers: The Story of Success" by Malcolm Gladwell. ⏳ While Gladwell acknowledges the role of opportunity, he heavily emphasizes the "10,000-hour rule" of deliberate practice, which contrasts with Epstein's emphasis on range. ⏱️  
 * 🧑‍🚀 **Best Fiction Book That Incorporates Related Ideas:**  

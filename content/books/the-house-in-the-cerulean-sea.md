@@ -6,9 +6,12 @@ title: 🏠💙🌈 The House in the Cerulean Sea
 URL: https://bagrounds.org/books/the-house-in-the-cerulean-sea
 Author:
 tags:
+affiliate link: https://amzn.to/3LE4hJX
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🏠💙🌈 The House in the Cerulean Sea  
+[🛒 The House in the Cerulean Sea. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3LE4hJX)  
+  
 ## 🤖 AI Summary  
 💖 A fastidious government worker is sent to a remote, magical orphanage and unexpectedly finds love, a found family, and his place in the world.  
   

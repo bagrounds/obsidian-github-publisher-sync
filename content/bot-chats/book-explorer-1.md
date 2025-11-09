@@ -203,8 +203,8 @@ Here's a breakdown:
     * Detailed political or social commentary (beyond general satire) 🏛️  
     * Traditional philosophical treatises 📜  
     * **Books that do cover those topics:**  
-        * "Foundation" by Isaac Asimov. (Hard science fiction, political themes) 🤖  
-        * "Brave New World" by Aldous Huxley. (Social commentary) 🏛️  
+        * [🏗️🧱🌍 Foundation](../books/Foundation.md) by Isaac Asimov. (Hard science fiction, political themes) 🤖  
+        * Brave New World by Aldous Huxley. (Social commentary) 🏛️  
         * [🤔🧘 Meditations](../books/meditations.md) by Marcus Aurelius. (Traditional philosophy) 📜  
 * **Books with a Different Perspective:**  
     * "Slaughterhouse-Five" by Kurt Vonnegut. (Darkly comedic, anti-war, existential) 💣  

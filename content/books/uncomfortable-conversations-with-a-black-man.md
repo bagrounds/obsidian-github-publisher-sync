@@ -4,13 +4,13 @@ aliases:
   - 😬👨🏿 Uncomfortable Conversations With A Black Man
 title: 😬👨🏿 Uncomfortable Conversations With A Black Man
 URL: https://bagrounds.org/books/uncomfortable-conversations-with-a-black-man
-Author: 
-tags: 
-affiliate link: https://www.amazon.com/dp/1250800463/ref=cm_sw_r_as_gl_apa_gl_i_NMTYY9Y6VW02S0DWD456?linkCode=ml1&tag=bagrounds-20
+Author:
+tags:
+affiliate link: https://amzn.to/3WMLCxX
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 😬👨🏿 Uncomfortable Conversations With A Black Man  
-[🛒 Uncomfortable Conversations With A Black Man. As an Amazon Associate I earn from qualifying purchases.](https://www.amazon.com/dp/1250800463/ref=cm_sw_r_as_gl_apa_gl_i_NMTYY9Y6VW02S0DWD456?linkCode=ml1&tag=bagrounds-20)  
+[🛒 Uncomfortable Conversations With A Black Man. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3WMLCxX)  
   
 ## 📖 Book Report: 🗣️ Uncomfortable Conversations With A Black Man  
   

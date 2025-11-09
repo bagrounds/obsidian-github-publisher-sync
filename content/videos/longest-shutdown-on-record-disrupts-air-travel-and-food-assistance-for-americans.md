@@ -82,4 +82,7 @@ youtube: https://youtu.be/K6LPvk6VF9w
   
 - 📚 Command and Control: Nuclear Weapons, the Damascus Accident, and the Illusion of Safety by Eric Schlosser. 💥 Tangentially relates by illustrating the catastrophic risks and human elements involved in complex, high-stakes technical systems, much like the air traffic control system.  
   
-- 📚 Nickel and Dimed: On (Not) Getting By in America by Barbara Ehrenreich. 🥪 Relates by exploring the struggles of low-wage workers, mirroring the financial precarity of the low-income Americans relying on SNAP benefits that were jeopardized during the shutdown.
+- 📚 Nickel and Dimed: On (Not) Getting By in America by Barbara Ehrenreich. 🥪 Relates by exploring the struggles of low-wage workers, mirroring the financial precarity of the low-income Americans relying on SNAP benefits that were jeopardized during the shutdown.  
+  
+## 🐦 Tweet  
+<blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">🔒✈️🍔 Longest shutdown on record disrupts air travel and food assistance for Americans<br><br>✈️ Air Traffic Control | ⚖️ Supreme Court | 👨‍✈️ Controllers | 🧑‍⚖️ Justice Katanji Brown Jackson | 📉 Reduced Flights | 🍎 SNAP Benefits<a href="https://twitter.com/NewsHour?ref_src=twsrc%5Etfw">@NewsHour</a><a href="https://t.co/9s0QSNlqb8">https://t.co/9s0QSNlqb8</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/1987354778385719594?ref_src=twsrc%5Etfw">November 9, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

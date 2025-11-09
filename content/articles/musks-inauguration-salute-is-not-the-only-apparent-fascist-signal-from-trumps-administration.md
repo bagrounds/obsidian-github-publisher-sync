@@ -1,14 +1,14 @@
 ---
 share: true
 aliases:
-  - 🙋‍♂️🚩🚫Musk’s inauguration salute is not the only apparent fascist signal from Trump’s administration
-title: 🙋‍♂️🚩🚫Musk’s inauguration salute is not the only apparent fascist signal from Trump’s administration
+  - 🙋‍♂️🚩🚫 Musk’s inauguration salute is not the only apparent fascist signal from Trump’s administration
+title: 🙋‍♂️🚩🚫 Musk’s inauguration salute is not the only apparent fascist signal from Trump’s administration
 URL: https://bagrounds.org/articles/musks-inauguration-salute-is-not-the-only-apparent-fascist-signal-from-trumps-administration
 Author:
 tags:
 ---
 [Home](../index.md) > [Articles](./index.md)  
-# 🙋‍♂️🚩🚫Musk’s inauguration salute is not the only apparent fascist signal from Trump’s administration  
+# 🙋‍♂️🚩🚫 Musk’s inauguration salute is not the only apparent fascist signal from Trump’s administration  
   
 ## 🤖 AI Summary Expansion  
 * 📢 **Elon Musk's** salute, performed on January 20, 2025, during the post-inauguration celebration for 🇺🇸 President **Donald Trump**, involved placing his hand on his chest and extending his right arm in an upward diagonal motion, repeated twice.  

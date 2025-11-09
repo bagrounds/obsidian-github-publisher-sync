@@ -41,7 +41,7 @@ A: 🤓 The central conflicts are largely resolved through intellectual, diploma
 ### 📖 Non-Fiction  
 * 📜 The History of the Decline and Fall of the Roman Empire by Edward Gibbon  
 * [📜🌍⏳ Sapiens: A Brief History of Humankind](./sapiens-a-brief-history-of-humankind.md) by Yuval Noah Harari  
-* 🧠 [🔮🤷🏼‍♀️🤪 Predictably Irrational: The Hidden Forces That Shape Our Decisions](./predictably-irrational.md) by Dan Ariely  
+* [🔮🤷🏼‍♀️🤪 Predictably Irrational: The Hidden Forces That Shape Our Decisions](./predictably-irrational.md) by Dan Ariely  
   
 ### ❤️ If You Loved This  
 * [🏜️🐛 Dune](./dune.md) by Frank Herbert (For grand scale, complex politics, and a focus on destiny)  

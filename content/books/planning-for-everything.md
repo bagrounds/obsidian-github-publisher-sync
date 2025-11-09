@@ -14,7 +14,7 @@ CTA: 🧭 Chart your course.
 [🛒 Planning for Everything: The Design of Paths and Goals. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3HsfA5T)  
   
 ## 🤖 AI Summary  
-### TL;DR 🚀  
+  
 ✨ **Planning for Everything** teaches that 🗺️ planning is not a 🧱 rigid blueprint but a 🔄 dynamic, ♻️ iterative design of 🛤️ paths and 🎯 goals— 🦸 empowering you to 🤸 adapt, 🧐 reflect, and 🤝 co-create your 🔮 future through 🤸 flexible, 🧑‍🤝‍🧑 social, ✍️ tangible, and 🏃 agile methods.  
   
 ### ✨ A New & Surprising Perspective 🌟  
@@ -72,18 +72,16 @@ CTA: 🧭 Chart your course.
   - [The Art of Possibility](https://en.wikipedia.org/wiki/The_Art_of_Possibility) by Rosamund Stone Zander and Benjamin Zander, which inspires creative thinking and reimagining possibilities, aligning well with the book’s emphasis on flexible planning. 🎨  
   
 - **Diametrically Opposed:**  
-  - [Antifragile: Things That Gain from Disorder](./antifragile-things-that-gain-from-disorder.md) by Nassim Nicholas Taleb challenges the very idea of over-planning by advocating for systems that benefit from disorder and uncertainty, offering a counterpoint to traditional planning methods. ⚡  
+  - [📉📈🌪️💪 Antifragile: Things That Gain from Disorder](./antifragile-things-that-gain-from-disorder.md) by Nassim Nicholas Taleb challenges the very idea of over-planning by advocating for systems that benefit from disorder and uncertainty, offering a counterpoint to traditional planning methods. ⚡  
   
 - **Fiction Incorporating Related Ideas:**  
-  - [Dune](https://en.wikipedia.org/wiki/Dune_(novel)) by Frank Herbert is a science fiction epic that weaves intricate themes of strategy, foresight, and adaptive planning into its narrative, resonating with the core ideas of designing futures. 🌌  
+  - [🏜️🐛 Dune](./dune.md) by Frank Herbert is a science fiction epic that weaves intricate themes of strategy, foresight, and adaptive planning into its narrative, resonating with the core ideas of designing futures. 🌌  
   
 - **More General or More Specific:**  
-  - [Thinking, Fast and Slow](./thinking-fast-and-slow.md) by Daniel Kahneman provides a broader exploration of human decision-making processes that underpin planning, offering context to why we plan the way we do. 🧠  
+  - [🤔🐇🐢 Thinking, Fast and Slow](./thinking-fast-and-slow.md) by Daniel Kahneman provides a broader exploration of human decision-making processes that underpin planning, offering context to why we plan the way we do. 🧠  
   
 - **More Rigorous or More Accessible:**  
-  - [The Art of Strategy: A Game Theorist's Guide to Success in Business and Life](./the-art-of-strategy-a-game-theorists-guide-to-success-in-business-and-life.md) by Avinash K. Dixit and Barry J. Nalebuff delves into strategic decision-making with academic rigor, ideal for readers seeking a more systematic, analytical approach to planning. 📐  
-  
----  
+  - [♟️🧠📈🎯 The Art of Strategy: A Game Theorist's Guide to Success in Business and Life](./the-art-of-strategy-a-game-theorists-guide-to-success-in-business-and-life.md) by Avinash K. Dixit and Barry J. Nalebuff delves into strategic decision-making with academic rigor, ideal for readers seeking a more systematic, analytical approach to planning. 📐  
   
 Each section of 🗺️ **Planning for Everything** is enriched with 🖼️ illustrative examples, 🤔 reflective questions, and ✅ actionable advice—all of which make it a 🚀 compelling guide for anyone looking to 🧠 master the art of 🗓️ planning in an 🌪️ unpredictable world. 🎉 Happy planning! 😊  
   
@@ -151,4 +149,4 @@ Flipping a coin may help
 Habits bind  
   
 ## Referenced books  
-- [The Art of Fear](./the-art-of-fear.md)  
+- [🎨😨 The Art of Fear: Why Conquering Fear Won't Work and What to Do Instead](./the-art-of-fear.md)  

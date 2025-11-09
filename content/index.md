@@ -13,7 +13,7 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 💬 Comment on any page with your GitHub account.  
   
 ## [🪞 Reflections](./reflections/index.md) ~ Blog (359)  
-- [2025-11-08](./reflections/2025-11-08.md)  
+- [2025-11-08 | 🚮 Decluttering | 🗳️ Voting | 🙋🏼‍♂️ Fascism | 🥦 SNAP 📚📄📰📺](./reflections/2025-11-08.md)  
 - [2025-11-07 | 🏗️ Reconstruction | 👎 Repudiation 📚📺](./reflections/2025-11-07.md)  
 - [2025-11-06 | 📜 History | 💰 Economics | 😇 Virtue 📚📺👥](./reflections/2025-11-06.md)  
 - [2025-11-05 | 💲 Minsky | 🇺🇸 America | 🤖 MCP 📚📄📺](./reflections/2025-11-05.md)  
@@ -25,7 +25,10 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [2025-10-30 | 📜🏛️ Sovereign Ledger | 🇺🇸👑📖 Authoritarian Playbook 📺📚💌📊🐦](./reflections/2025-10-30.md)  
   
   
-## [📚 Books](./books/index.md) (739)  
+## [📚 Books](./books/index.md) (741)  
+- [🗳️🇺🇸 The Right to Vote: The Contested History of Democracy in the United States](./books/the-right-to-vote-the-contested-history-of-democracy-in-the-united-states.md)  
+- [💼✅ The Case for a Job Guarantee](./books/the-case-for-a-job-guarantee.md)  
+- [🗑️⏱️ Decluttering at the Speed of Life: Winning Your Never-Ending Battle with Stuff](./books/decluttering-at-the-speed-of-life-winning-your-never-ending-battle-with-stuff.md)  
 - [🧑🏿‍🤝‍🧑🏿🏛️ Black Reconstruction in America (The Oxford W. E. B. Du Bois): An Essay Toward a History of the Part Which Black Folk Played in the Attempt to Reconstruct Democracy in America, 1860-1880](./books/black-reconstruction-in-america-the-oxford-w-e-b-du-bois-an-essay-toward-a-history-of-the-part-which-black-folk-played-in-the-attempt-to-reconstruct-democracy-in-america-1860-1880.md)  
 - [💼🔙📦 Working Backwards: Insights, Stories, and Secrets from Inside Amazon](./books/working-backwards-insights-stories-and-secrets-from-inside-amazon.md)  
 - [😠🎭 Uncivil Agreement: How Politics Became Our Identity](./books/uncivil-agreement-how-politics-became-our-identity.md)  
@@ -33,12 +36,12 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [🧠🧑‍💻 The Hacking of the American Mind: The Science Behind the Corporate Takeover of Our Bodies and Brains](./books/the-hacking-of-the-american-mind-the-science-behind-the-corporate-takeover-of-our-bodies-and-brains.md)  
 - [🇺🇸⚔️💰 Fight Oligarchy](./books/fight-oligarchy.md)  
 - [🇺🇸➡️🔨 West from Appomattox: The Reconstruction of America After the Civil War](./books/west-from-appomattox-the-reconstruction-of-america-after-the-civil-war.md)  
-- [🇺🇸🏛️🚫📜⚖️ Lawless: How the Supreme Court Runs on Conservative Grievance, Fringe Theories, and Bad Vibes](./books/lawless-how-the-supreme-court-runs-on-conservative-grievance-fringe-theories-and-bad-vibes.md)  
-- [👻🇺🇸⚔️🪽 The Soul of America: The Battle for Our Better Angels](./books/the-soul-of-america-the-battle-for-our-better-angels.md)  
-- [🇺🇲⚔️ How the South Won the Civil War: Oligarchy, Democracy, and the Continuing Fight for the Soul of America](./books/how-the-south-won-the-civil-war-oligarchy-democracy-and-the-continuing-fight-for-the-soul-of-america.md)  
   
   
-## [📺 Videos](./videos/index.md) (415)  
+## [📺 Videos](./videos/index.md) (418)  
+- [👿🏷️📉 The hidden history of demonizing SNAP recipients | Code Switch](./videos/the-hidden-history-of-demonizing-snap-recipients-code-switch.md)  
+- [🔒✈️🍔 Longest shutdown on record disrupts air travel and food assistance for Americans](./videos/longest-shutdown-on-record-disrupts-air-travel-and-food-assistance-for-americans.md)  
+- [📰🕒❓ With government jobs report delayed, what other data reveals about the economy](./videos/with-government-jobs-report-delayed-what-other-data-reveals-about-the-economy.md)  
 - [📰🗣️❓ This Week in Politics | Explainer](./videos/this-week-in-politics-explainer.md)  
 - [🤖🫧💥📉 The AI Bubble Is Real — Here’s How to Prepare for the Pop | Prof G Markets](./videos/the-ai-bubble-is-real-heres-how-to-prepare-for-the-pop-prof-g-markets.md)  
 - [👊👹🇺🇸🛡️ How to Fight Fascism in America — with Timothy Snyder | Prof G Conversations](./videos/how-to-fight-fascism-in-america-with-timothy-snyder-prof-g-conversations.md)  
@@ -46,9 +49,6 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [🇺🇸⚔️🏛️ The Fight to Save American Democracy — with Heather Cox Richardson | Prof G Conversations](./videos/the-fight-to-save-american-democracy-with-heather-cox-richardson-prof-g-conversations.md)  
 - [🇺🇸🤔❓ What Happened to American Conservatism? — with David Brooks | Prof G Conversations](./videos/what-happened-to-american-conservatism-with-david-brooks-prof-g-conversations.md)  
 - [🇺🇸🤕📢 America’s Branding Crisis — with Heather Cox Richardson | Prof G Conversations](./videos/americas-branding-crisis-with-heather-cox-richardson-prof-g-conversations.md)  
-- [🇺🇸📉💔 The Collapse of American Virtue — with Fareed Zakaria | Prof G Conversations](./videos/the-collapse-of-american-virtue-with-fareed-zakaria-prof-g-conversations.md)  
-- [💰🤔⚖️ The Most Important Economic Debate of our Lifetime — ft. Justin Wolfers | Prof G Markets](./videos/the-most-important-economic-debate-of-our-lifetime-ft-justin-wolfers-prof-g-markets.md)  
-- [🗳️🔓🤔 Is it easy to steal an election?](./videos/is-it-easy-to-steal-an-election.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (82)  
@@ -59,12 +59,12 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [🗣️🗣️ Bilingualism](./topics/bilingualism.md)  
   
   
-## [📄  Articles](./articles/index.md) (69)  
+## [📄  Articles](./articles/index.md) (71)  
+- [🙋‍♂️🚩🚫 Musk’s inauguration salute is not the only apparent fascist signal from Trump’s administration](./articles/musks-inauguration-salute-is-not-the-only-apparent-fascist-signal-from-trumps-administration.md)  
+- [🏛️🔍❌🗳️ Analysis: Heritage Foundation’s Database Undermines Claims of Recent Voter Fraud](./articles/analysis-heritage-foundations-database-undermines-claims-of-recent-voter-fraud.md)  
 - [🤖🧠📈⚡ Code execution with MCP: Building more efficient agents](./articles/code-execution-with-mcp-building-more-efficient-agents.md)  
 - [🗓️🇵🇹💉✅🕊️ 20 years of Portuguese drug policy - developments, challenges and the quest for human rights](./articles/20-years-of-portuguese-drug-policy-developments-challenges-and-the-quest-for-human-rights.md)  
 - [🤖♾️🗂️ Scaling Long Horizon LLM Agent via Context Folding](./articles/scaling-long-horizon-llm-agent-via-context-folding.md)  
-- [🗣️🧠🧑‍💻📚 Relating Natural Language Aptitude to Individual Differences in Learning Programming Languages](./articles/relating-natural-language-aptitude-to-individual-differences-in-learning-programming-languages.md)  
-- [🤖📢❌ Digital Yard Signs: Analysis of an AI Bot Political Influence Campaign on X](./articles/digital-yard-signs-analysis-of-an-ai-bot-political-influence-campaign-on-x.md)  
   
   
 ## [🤖💬 Bot Chats](./bot-chats/index.md) (45)  

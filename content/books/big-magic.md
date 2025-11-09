@@ -4,13 +4,13 @@ aliases:
   - "🪄 Big Magic: Creative Living Beyond Fear"
 title: "🪄 Big Magic: Creative Living Beyond Fear"
 URL: https://bagrounds.org/books/big-magic
-Author: 
-tags: 
-affiliate link: https://www.amazon.com/dp/1594634718/ref=cm_sw_r_as_gl_apa_gl_i_7B6KBKPMQ4PY2X9TR118?linkCode=ml1&tag=bagrounds-20
+Author:
+tags:
+affiliate link: https://amzn.to/4842OVY
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🪄 Big Magic: Creative Living Beyond Fear  
-[🛒 Big Magic: Creative Living Beyond Fear. As an Amazon Associate I earn from qualifying purchases.](https://www.amazon.com/dp/1594634718/ref=cm_sw_r_as_gl_apa_gl_i_7B6KBKPMQ4PY2X9TR118?linkCode=ml1&tag=bagrounds-20)  
+[🛒 Big Magic: Creative Living Beyond Fear. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4842OVY)  
   
 ## 📖 Book Report: ✨ Big Magic: Creative Living Beyond Fear by Elizabeth Gilbert  
   

@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org/books/7-rules-of-power
 share: true
 affiliate link: https://amzn.to/43Np5En
-CTA: Seize power.
+CTA: 🚀 Master influence.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 7️⃣📏👑 7 Rules of Power: Surprising - but True - Advice on How to Get Things Done and Advance Your Career  
@@ -62,7 +62,7 @@ Pfeffer outlines seven rules for building and using power:
     * 📚 *Abraham Lincoln: A Life* by Michael Burlingame  
     * 📚 *The Autobiography of Malcolm X* as told to Alex Haley  
 * 🎭 **Fiction Exploring Power Dynamics:** 📖 Novels can vividly illustrate the complexities of power, ambition, and influence.  
-    * 📚 *Dune* by Frank Herbert  
+    * [🏜️🐛 Dune](./dune.md) by Frank Herbert  
     * 📚 *A Song of Ice and Fire* series by George R.R. Martin  
     * 📚 *Macbeth* by William Shakespeare  
     * 📚 *The Broken Earth* trilogy by N.K. Jemisin  

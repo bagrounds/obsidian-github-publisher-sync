@@ -4,8 +4,8 @@ aliases:
   - "🌐🔗🧠📖 Thinking in Systems: A Primer"
 title: "🌐🔗🧠📖 Thinking in Systems: A Primer"
 URL: https://bagrounds.org/books/thinking-in-systems
-Author: 
-tags: 
+Author:
+tags:
 affiliate link: https://amzn.to/4jxdezW
 CTA: 🌐 Understand interactions.
 ---
@@ -61,10 +61,10 @@ Donella Meadows was an environmental scientist and systems thinker with a strong
 * Focus on changing system structures rather than just symptoms. 🛠️  
   
 #### **Book Recommendations 📚**  
-* **Best Alternate Book on the Same Topic:** "[The Fifth Discipline](./the-fifth-discipline.md): The Art & Practice of The Learning Organization" by Peter Senge. This book also explores systems thinking within organizations, providing a more in-depth look at organizational learning. 🏢  
-* **Best Tangentially Related Book:** "[Thinking, Fast and Slow](./thinking-fast-and-slow.md)" by Daniel Kahneman. This book explores the cognitive biases and mental shortcuts that influence our decision-making, which is relevant to understanding how mental models affect systems thinking. 🧠  
+* **Best Alternate Book on the Same Topic:** [🎨🔄🧠🏢 The Fifth Discipline: The Art and Practice of the Learning Organization](./the-fifth-discipline.md) by Peter Senge. This book also explores systems thinking within organizations, providing a more in-depth look at organizational learning. 🏢  
+* **Best Tangentially Related Book:** [🤔🐇🐢 Thinking, Fast and Slow](./thinking-fast-and-slow.md) by Daniel Kahneman. This book explores the cognitive biases and mental shortcuts that influence our decision-making, which is relevant to understanding how mental models affect systems thinking. 🧠  
 * **Best Diametrically Opposed Book:** "The Rational Optimist: How Prosperity Evolves" by Matt Ridley. This book argues for the benefits of free markets and technological progress, offering a more optimistic view of human systems than Meadows' cautionary approach. 📈  
-* **Best Fiction Book That Incorporates Related Ideas:** "Dune" by Frank Herbert. This science fiction classic explores complex ecological and social systems, highlighting the interconnectedness of elements and the consequences of actions within those systems. 🏜️  
+* **Best Fiction Book That Incorporates Related Ideas:** Dune by Frank Herbert. This science fiction classic explores complex ecological and social systems, highlighting the interconnectedness of elements and the consequences of actions within those systems. 🏜️  
 * **More General, More Specific, or More Rigorous:**  
     * **More General:** "A Brief History of Everything" by Ken Wilber. This book takes a broad, integrative approach to understanding the evolution of the universe, life, and consciousness, providing a larger context for systems thinking. 🌌  
     * **More Specific:** "[Business Dynamics](./business-dynamics.md): Systems Thinking and Modeling for a Complex World" by John Sterman. This more academic text dives deeper into the technical aspects of systems dynamics modeling, with a focus on business applications. 📊  

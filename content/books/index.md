@@ -7,7 +7,7 @@ URL: https://bagrounds.org/books
 backlinks: false
 ---
 [Home](../index.md)  
-# 📚 Books (739)  
+# 📚 Books (742)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)  
 - [🧑‍🤝‍🧑📈 10 to 25: The Science of Motivating Young People: A Groundbreaking Approach to Leading the Next Generation - And Making Your Own Life Easier](./10-to-25-the-science-of-motivating-young-people-a-groundbreaking-approach-to-leading-the-next-generation-and-making-your-own-life-easier.md)  
@@ -136,6 +136,7 @@ backlinks: false
 - [🏛️💰 Debt: The First 5,000 Years](./debt-the-first-5000-years.md)  
 - [🐞🔍🤔✅ Debugging: The 9 Indispensable Rules for Finding Even the Most Elusive Software and Hardware Problems](./debugging.md)  
 - [🤔💡⚖️✅ Decisive: How to Make Better Choices in Life and Work](./decisive-how-to-make-better-choices-in-life-and-work.md)  
+- [🗑️⏱️ Decluttering at the Speed of Life: Winning Your Never-Ending Battle with Stuff](./decluttering-at-the-speed-of-life-winning-your-never-ending-battle-with-stuff.md)  
 - [🐈‍⬛❓ Decoding Your Cat: The Ultimate Experts Explain Common Cat Behaviors and Reveal How to Prevent or Change Unwanted Ones](./decoding-your-cat-the-ultimate-experts-explain-common-cat-behaviors-and-reveal-how-to-prevent-or-change-unwanted-ones.md)  
 - [🧠💻🤖 Deep Learning](./deep-learning.md)  
 - [🤿💼 Deep Work: Rules for Focused Success in a Distracted World](./deep-work.md)  
@@ -163,6 +164,7 @@ backlinks: false
 - [🍩🌍 Doughnut Economics: Seven Ways to Think Like a 21st-Century Economist](./doughnut-economics-seven-ways-to-think-like-a-21st-century-economist.md)  
 - [🏎️🦋🐿️✨ Driven to Distraction: Recognizing and Coping with Attention Deficit Disorder from Childhood Through Adulthood](./driven-to-distraction.md)  
 - [🏎️⛽ Drive: The Surprising Truth About What Motivates Us](./drive-the-surprising-truth-about-what-motivates-us.md)  
+- [🏜️🐛 Dune](./dune.md)  
 - [🧠💥📈💡🎆 Dynamical Systems in Neuroscience: The Geometry of Excitability and Bursting](./dynamical-systems-in-neuroscience.md)  
 - [🍎⚡ Eat for Energy: How to Beat Fatigue, Supercharge Your Mitochondria, and Unlock All-Day Energy](./eat-for-energy-how-to-beat-fatigue-supercharge-your-mitochondria-and-unlock-all-day-energy.md)  
 - [🍎🌳 Edible Forest Gardens](./edible-forest-gardens.md)  
@@ -634,6 +636,7 @@ Feedback Control of Dynamic Systems]]
 - [👦🗣️ The Reason I Jump: The Inner Voice of a Thirteen-Year-Old Boy with Autism](./the-reason-i-jump-the-inner-voice-of-a-thirteen-year-old-boy-with-autism.md)  
 - [💰🧔👑🏛️ The Richest Man in Babylon](./the-richest-man-in-babylon.md)  
 - [😇🧠 The Righteous Mind: Why Good People Are Divided by Politics and Religion](./the-righteous-mind.md)  
+- [🗳️🇺🇸 The Right to Vote: The Contested History of Democracy in the United States](./the-right-to-vote-the-contested-history-of-democracy-in-the-united-states.md)  
 - [👨‍👧 The Role of the Father in Child Development](./the-role-of-the-father-in-child-development.md)  
 - [🏛️⚖️ The Rule of Law](./the-rule-of-law.md)  
 - [🧑‍🤝‍🧑🔬 The Science of Making Friends: Helping Socially Challenged Teens and Young Adults](./the-science-of-making-friends-helping-socially-challenged-teens-and-young-adults.md)  

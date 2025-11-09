@@ -88,4 +88,7 @@ youtube: https://youtu.be/7F6fzkAgzqc
   * 📖 White Trash: The 400-Year Untold History of Class in America by Nancy Isenberg  
       * *📚* This historical work provides a deep dive into the concept of the undeserving poor in American history, revealing that the shaming of welfare recipients is part of a long-standing national tradition of classism and eugenics.  
   * [🧑🏿⛓️🙈 The New Jim Crow: Mass Incarceration in the Age of Colorblindness](../books/the-new-jim-crow-mass-incarceration-in-the-age-of-colorblindness.md) by Michelle Alexander  
-      * *📚* This book relates tangentially by exploring how a new system of racial caste was created in the U.S. through the criminal justice system, paralleling the video's theme of how policies, though colorblind on the surface, were rooted in racialized suspicion and fear.
+      * *📚* This book relates tangentially by exploring how a new system of racial caste was created in the U.S. through the criminal justice system, paralleling the video's theme of how policies, though colorblind on the surface, were rooted in racialized suspicion and fear.  
+  
+## 🐦 Tweet  
+<blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">👿🏷️📉 The hidden history of demonizing SNAP recipients | Code Switch<br><br>💸 Welfare Reform | 👸 Welfare Queen Stereotype | 🤥 Linda Taylor | 🎭 Racism | 🏛️ Aid Programs<a href="https://twitter.com/PBS?ref_src=twsrc%5Etfw">@PBS</a><a href="https://t.co/aWixMFlaKN">https://t.co/aWixMFlaKN</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/1987367277185179869?ref_src=twsrc%5Etfw">November 9, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

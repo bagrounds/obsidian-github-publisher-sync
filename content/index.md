@@ -13,7 +13,7 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 💬 Comment on any page with your GitHub account.  
   
 ## [🪞 Reflections](./reflections/index.md) ~ Blog (360)  
-- [2025-11-09](./reflections/2025-11-09.md)  
+- [2025-11-09 | 🌐 Systems | 🗳️ Democracy | 🧸 Play 📚📰📺](./reflections/2025-11-09.md)  
 - [2025-11-08 | 🚮 Decluttering | 🗳️ Voting | 🙋🏼‍♂️ Fascism | 🥦 SNAP 📚📄📰📺](./reflections/2025-11-08.md)  
 - [2025-11-07 | 🏗️ Reconstruction | 👎 Repudiation 📚📺](./reflections/2025-11-07.md)  
 - [2025-11-06 | 📜 History | 💰 Economics | 😇 Virtue 📚📺👥](./reflections/2025-11-06.md)  
@@ -25,20 +25,22 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [2025-10-31 | 🗣️🤖 Ode to Vibe Code 📄📚💌](./reflections/2025-10-31.md)  
   
   
-## [📚 Books](./books/index.md) (742)  
-- [7️⃣📏👑 7 Rules of Power: Surprising - but True - Advice on How to Get Things Done and Advance Your Career](./books/7-rules-of-power.md)  
-- [🗺️🎯🪜🏗️ Planning for Everything: The Design of Paths and Goals](./books/planning-for-everything.md)  
-- [👍🦮🌌 The Hitchhiker's Guide to the Galaxy](./books/the-hitchhikers-guide-to-the-galaxy.md)  
-- [➡️🌌🚀😡 A Long Way to a Small, Angry Planet](./books/a-long-way-to-a-small-angry-planet.md)  
-- [🌐🔗🧠📖 Thinking in Systems: A Primer](./books/thinking-in-systems.md)  
-- [🏜️🐛 Dune](./books/dune.md)  
-- [🗳️🇺🇸 The Right to Vote: The Contested History of Democracy in the United States](./books/the-right-to-vote-the-contested-history-of-democracy-in-the-united-states.md)  
-- [💼✅ The Case for a Job Guarantee](./books/the-case-for-a-job-guarantee.md)  
-- [🗑️⏱️ Decluttering at the Speed of Life: Winning Your Never-Ending Battle with Stuff](./books/decluttering-at-the-speed-of-life-winning-your-never-ending-battle-with-stuff.md)  
-- [🧑🏿‍🤝‍🧑🏿🏛️ Black Reconstruction in America (The Oxford W. E. B. Du Bois): An Essay Toward a History of the Part Which Black Folk Played in the Attempt to Reconstruct Democracy in America, 1860-1880](./books/black-reconstruction-in-america-the-oxford-w-e-b-du-bois-an-essay-toward-a-history-of-the-part-which-black-folk-played-in-the-attempt-to-reconstruct-democracy-in-america-1860-1880.md)  
+## [📚 Books](./books/index.md) (746)  
+- [👶🧸 Playing with Baby: Researched-Based Play to Bond with Your Baby from Birth to Year One](./books/playing-with-baby-researched-based-play-to-bond-with-your-baby-from-birth-to-year-one.md)  
+- [🌍🤝🏛️ A World Safe for Democracy: Liberal Internationalism and the Crises of Global Order](./books/a-world-safe-for-democracy-liberal-internationalism-and-the-crises-of-global-order.md)  
+- [👑⚔️🇺🇸 Autocrats vs Democrats: China, Russia, America, and the New Global Disorder](./books/autocrats-vs-democrats-china-russia-america-and-the-new-global-disorder.md)  
+- [🏗️🧱🌍 Foundation](./books/Foundation.md)  
+- [affiliate-link-missing-index](../affiliate-link-missing-index.md)  
+- [🏛️🛡️ Democracy or Else: How to Save America in 10 Easy Steps](./books/democracy-or-else.md)  
+- [😬👨🏿 Uncomfortable Conversations With A Black Man](./books/uncomfortable-conversations-with-a-black-man.md)  
+- [🍊🤡🤥👹💥🏛️🇺🇸 I Alone Can Fix It: Donald J. Trump's Catastrophic Final Year](./books/i-alone-can-fix-it-donald-j-trumps-catastrophic-final-year.md)  
+- [🦁🫀 Daring Greatly: How the Courage to Be Vulnerable Transforms the Way We Live, Love, Parent, and Lead](./books/daring-greatly-how-the-courage-to-be-vulnerable-transforms-the-way-we-live-love-parent-and-lead.md)  
+- [⚡🚫💭 Blink: The Power of Thinking Without Thinking](./books/blink-the-power-of-thinking-without-thinking.md)  
   
   
-## [📺 Videos](./videos/index.md) (418)  
+## [📺 Videos](./videos/index.md) (420)  
+- [👨‍💼🤖📈⚕️ MIT Economist on AI, Trade-Offs & Healthcare](./videos/mit-economist-on-ai-trade-offs-healthcare.md)  
+- [👑⚔️🏛️ In new book Michael McFaul explores the global fight between autocracy and democracy](./videos/in-new-book-michael-mcfaul-explores-the-global-fight-between-autocracy-and-democracy.md)  
 - [👿🏷️📉 The hidden history of demonizing SNAP recipients | Code Switch](./videos/the-hidden-history-of-demonizing-snap-recipients-code-switch.md)  
 - [🔒✈️🍔 Longest shutdown on record disrupts air travel and food assistance for Americans](./videos/longest-shutdown-on-record-disrupts-air-travel-and-food-assistance-for-americans.md)  
 - [📰🕒❓ With government jobs report delayed, what other data reveals about the economy](./videos/with-government-jobs-report-delayed-what-other-data-reveals-about-the-economy.md)  
@@ -47,8 +49,6 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [👊👹🇺🇸🛡️ How to Fight Fascism in America — with Timothy Snyder | Prof G Conversations](./videos/how-to-fight-fascism-in-america-with-timothy-snyder-prof-g-conversations.md)  
 - [👩‍💻👑🦆 Kara Swisher: Tech, Power, and Why You Should Get the F*cking Duck](./videos/kara-swisher-tech-power-and-why-you-should-get-the-fcking-duck.md)  
 - [🇺🇸⚔️🏛️ The Fight to Save American Democracy — with Heather Cox Richardson | Prof G Conversations](./videos/the-fight-to-save-american-democracy-with-heather-cox-richardson-prof-g-conversations.md)  
-- [🇺🇸🤔❓ What Happened to American Conservatism? — with David Brooks | Prof G Conversations](./videos/what-happened-to-american-conservatism-with-david-brooks-prof-g-conversations.md)  
-- [🇺🇸🤕📢 America’s Branding Crisis — with Heather Cox Richardson | Prof G Conversations](./videos/americas-branding-crisis-with-heather-cox-richardson-prof-g-conversations.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (82)  

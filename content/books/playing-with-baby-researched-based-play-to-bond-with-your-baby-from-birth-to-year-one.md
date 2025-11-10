@@ -91,4 +91,7 @@ affiliate link: https://amzn.to/47x0jLP
   
 ## 🫵 What Do You Think?  
   
-❓ Which play activity resonates most with your parenting philosophy, and why? 👶 What's one new play technique you're excited to try with your baby?
+❓ Which play activity resonates most with your parenting philosophy, and why? 👶 What's one new play technique you're excited to try with your baby?  
+  
+## 🐦 Tweet  
+<blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">👶🧸 Playing with Baby: Researched-Based Play to Bond with Your Baby from Birth to Year One<br><br>🧸 Infant Activities | 🧠 Cognitive Development | 🫂 Attachment Theory | 🗓️ Monthly Milestones | 👪 Parent-Child Relationship<a href="https://t.co/ZoA5BWrHGm">https://t.co/ZoA5BWrHGm</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/1987693450733715696?ref_src=twsrc%5Etfw">November 10, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

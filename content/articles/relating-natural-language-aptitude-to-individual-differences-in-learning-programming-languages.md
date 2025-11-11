@@ -82,7 +82,7 @@ tags:
   
 - 🔢 The Number Sense: How the Mind Creates Mathematics by Stanislas Dehaene provides insight into the cognitive basis of numeracy, contrasting with the study's finding that mathematical ability is a less significant predictor of programming aptitude.  
   
-- 💻 Code Complete: A Practical Handbook of Software Construction by Steve McConnell emphasizes the engineering and structured logic aspects of programming, which can be viewed as more mathematical than linguistic.  
+- [✅💻 Code Complete](../books/code-complete.md): A Practical Handbook of Software Construction by Steve McConnell emphasizes the engineering and structured logic aspects of programming, which can be viewed as more mathematical than linguistic.  
   
 ### 🎨 Creatively Related  
   

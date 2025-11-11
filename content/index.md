@@ -12,7 +12,8 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 ❔ What do 🫵 _you_ 🤔 think?  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (360)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (361)  
+- [2025-11-10 | 🫨 Vibe | ✅ Complete 📚](./reflections/2025-11-10.md)  
 - [2025-11-09 | 🌐 Systems | 🗳️ Democracy | 🧸 Play 📚📰📺](./reflections/2025-11-09.md)  
 - [2025-11-08 | 🚮 Decluttering | 🗳️ Voting | 🙋🏼‍♂️ Fascism | 🥦 SNAP 📚📄📰📺](./reflections/2025-11-08.md)  
 - [2025-11-07 | 🏗️ Reconstruction | 👎 Repudiation 📚📺](./reflections/2025-11-07.md)  
@@ -22,23 +23,23 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [2025-11-03 | 🫂 Social Skills | 🗳️ Elections 📚📰](./reflections/2025-11-03.md)  
 - [2025-11-02 | 🫂 Friends | 🇺🇸 Nations | 💊 Drugs 📚📄](./reflections/2025-11-02.md)  
 - [2025-11-01 | 🗂️ Folding | 🧌 Trolling | 🖇️ Connecting 📄📺📚](./reflections/2025-11-01.md)  
-- [2025-10-31 | 🗣️🤖 Ode to Vibe Code 📄📚💌](./reflections/2025-10-31.md)  
   
   
-## [📚 Books](./books/index.md) (746)  
+## [📚 Books](./books/index.md) (747)  
+- [🖥️🔑 System Design Interview - An Insider's Guide](./books/system-design-interview-an-insiders-guide.md)  
+- [🧼💾 Clean Code: A Handbook of Agile Software Craftsmanship](./books/clean-code.md)  
+- [💻⚙️ Software Engineering at Google: Lessons Learned from Programming Over Time](./books/software-engineering-at-google-lessons-learned-from-programming-over-time.md)  
+- [🐞🔍🤔✅ Debugging: The 9 Indispensable Rules for Finding Even the Most Elusive Software and Hardware Problems](./books/debugging.md)  
+- [🦄👤🗓️ The Mythical Man-Month: Essays on Software Engineering](./books/the-mythical-man-month.md)  
+- [🧑‍💻📈 The Pragmatic Programmer: Your Journey to Mastery](./books/the-pragmatic-programmer-your-journey-to-mastery.md)  
+- [🤖💻 Vibe Coding: Building Production-Grade Software With GenAI, Chat, Agents, and Beyond](./books/vibe-coding-building-production-grade-software-with-genai-chat-agents-and-beyond.md)  
+- [✅💻 Code Complete](./books/code-complete.md)  
 - [👶🧸 Playing with Baby: Researched-Based Play to Bond with Your Baby from Birth to Year One](./books/playing-with-baby-researched-based-play-to-bond-with-your-baby-from-birth-to-year-one.md)  
 - [🌍🤝🏛️ A World Safe for Democracy: Liberal Internationalism and the Crises of Global Order](./books/a-world-safe-for-democracy-liberal-internationalism-and-the-crises-of-global-order.md)  
-- [👑⚔️🇺🇸 Autocrats vs Democrats: China, Russia, America, and the New Global Disorder](./books/autocrats-vs-democrats-china-russia-america-and-the-new-global-disorder.md)  
-- [🏗️🧱🌍 Foundation](./books/Foundation.md)  
-- [affiliate-link-missing-index](../affiliate-link-missing-index.md)  
-- [🏛️🛡️ Democracy or Else: How to Save America in 10 Easy Steps](./books/democracy-or-else.md)  
-- [😬👨🏿 Uncomfortable Conversations With A Black Man](./books/uncomfortable-conversations-with-a-black-man.md)  
-- [🍊🤡🤥👹💥🏛️🇺🇸 I Alone Can Fix It: Donald J. Trump's Catastrophic Final Year](./books/i-alone-can-fix-it-donald-j-trumps-catastrophic-final-year.md)  
-- [🦁🫀 Daring Greatly: How the Courage to Be Vulnerable Transforms the Way We Live, Love, Parent, and Lead](./books/daring-greatly-how-the-courage-to-be-vulnerable-transforms-the-way-we-live-love-parent-and-lead.md)  
-- [⚡🚫💭 Blink: The Power of Thinking Without Thinking](./books/blink-the-power-of-thinking-without-thinking.md)  
   
   
 ## [📺 Videos](./videos/index.md) (420)  
+- [✨💻💀🤖 Steve Yegge on productive vibe coding, the death of the IDE, babysitting a fleet of AI coding agents](./videos/steve-yegge-on-productive-vibe-coding-the-death-of-the-ide-babysitting-a-fleet-of-ai-coding-agents.md)  
 - [👨‍💼🤖📈⚕️ MIT Economist on AI, Trade-Offs & Healthcare](./videos/mit-economist-on-ai-trade-offs-healthcare.md)  
 - [👑⚔️🏛️ In new book Michael McFaul explores the global fight between autocracy and democracy](./videos/in-new-book-michael-mcfaul-explores-the-global-fight-between-autocracy-and-democracy.md)  
 - [👿🏷️📉 The hidden history of demonizing SNAP recipients | Code Switch](./videos/the-hidden-history-of-demonizing-snap-recipients-code-switch.md)  
@@ -48,7 +49,6 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [🤖🫧💥📉 The AI Bubble Is Real — Here’s How to Prepare for the Pop | Prof G Markets](./videos/the-ai-bubble-is-real-heres-how-to-prepare-for-the-pop-prof-g-markets.md)  
 - [👊👹🇺🇸🛡️ How to Fight Fascism in America — with Timothy Snyder | Prof G Conversations](./videos/how-to-fight-fascism-in-america-with-timothy-snyder-prof-g-conversations.md)  
 - [👩‍💻👑🦆 Kara Swisher: Tech, Power, and Why You Should Get the F*cking Duck](./videos/kara-swisher-tech-power-and-why-you-should-get-the-fcking-duck.md)  
-- [🇺🇸⚔️🏛️ The Fight to Save American Democracy — with Heather Cox Richardson | Prof G Conversations](./videos/the-fight-to-save-american-democracy-with-heather-cox-richardson-prof-g-conversations.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (82)  
@@ -60,11 +60,11 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
   
   
 ## [📄  Articles](./articles/index.md) (71)  
+- [🗣️🧠🧑‍💻📚 Relating Natural Language Aptitude to Individual Differences in Learning Programming Languages](./articles/relating-natural-language-aptitude-to-individual-differences-in-learning-programming-languages.md)  
 - [🙋‍♂️🚩🚫 Musk’s inauguration salute is not the only apparent fascist signal from Trump’s administration](./articles/musks-inauguration-salute-is-not-the-only-apparent-fascist-signal-from-trumps-administration.md)  
 - [🏛️🔍❌🗳️ Analysis: Heritage Foundation’s Database Undermines Claims of Recent Voter Fraud](./articles/analysis-heritage-foundations-database-undermines-claims-of-recent-voter-fraud.md)  
 - [🤖🧠📈⚡ Code execution with MCP: Building more efficient agents](./articles/code-execution-with-mcp-building-more-efficient-agents.md)  
 - [🗓️🇵🇹💉✅🕊️ 20 years of Portuguese drug policy - developments, challenges and the quest for human rights](./articles/20-years-of-portuguese-drug-policy-developments-challenges-and-the-quest-for-human-rights.md)  
-- [🤖♾️🗂️ Scaling Long Horizon LLM Agent via Context Folding](./articles/scaling-long-horizon-llm-agent-via-context-folding.md)  
   
   
 ## [🤖💬 Bot Chats](./bot-chats/index.md) (45)  
@@ -76,11 +76,11 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
   
   
 ## [💾 Software](./software/index.md) (29)  
+- [💻🎮🕹️🧠 CodinGame](./software/codingame.md)  
 - [🤖♊ Gemini](./software/gemini.md)  
 - [💎🔬🔍📈 Quartz](./software/quartz.md)  
 - [⛎♉️♊️♋️♌️♍️♎️♏️♐️♑️♒️♓️ Zodios](./software/zodios.md)  
 - [🐍📜🔍✅ Pydantic](./software/pydantic.md)  
-- [❓🧪✅🤔 Hypothesis](./software/hypothesis.md)  
   
   
 ## [👥 People](./people/index.md) (16)  

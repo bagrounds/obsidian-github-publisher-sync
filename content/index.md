@@ -13,7 +13,7 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 💬 Comment on any page with your GitHub account.  
   
 ## [🪞 Reflections](./reflections/index.md) ~ Blog (361)  
-- [2025-11-10 | 🫨 Vibe | ✅ Complete 📚](./reflections/2025-11-10.md)  
+- [2025-11-10 | 🫨 Vibe | ✅ Complete | 🚮 Cave 📚](./reflections/2025-11-10.md)  
 - [2025-11-09 | 🌐 Systems | 🗳️ Democracy | 🧸 Play 📚📰📺](./reflections/2025-11-09.md)  
 - [2025-11-08 | 🚮 Decluttering | 🗳️ Voting | 🙋🏼‍♂️ Fascism | 🥦 SNAP 📚📄📰📺](./reflections/2025-11-08.md)  
 - [2025-11-07 | 🏗️ Reconstruction | 👎 Repudiation 📚📺](./reflections/2025-11-07.md)  
@@ -38,7 +38,9 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [🌍🤝🏛️ A World Safe for Democracy: Liberal Internationalism and the Crises of Global Order](./books/a-world-safe-for-democracy-liberal-internationalism-and-the-crises-of-global-order.md)  
   
   
-## [📺 Videos](./videos/index.md) (420)  
+## [📺 Videos](./videos/index.md) (422)  
+- [😡🏛️🤝 Jon Stewart «Can't F**king Believe» Democrats Caved on the Shutdown | The Daily Show](./videos/jon-stewart-cant-fking-believe-democrats-caved-on-the-shutdown-the-daily-show.md)  
+- [🏛️🛑 Tamara Keith and Amy Walter on the deal to end the government shutdown](./videos/tamara-keith-and-amy-walter-on-the-deal-to-end-the-government-shutdown.md)  
 - [✨💻💀🤖 Steve Yegge on productive vibe coding, the death of the IDE, babysitting a fleet of AI coding agents](./videos/steve-yegge-on-productive-vibe-coding-the-death-of-the-ide-babysitting-a-fleet-of-ai-coding-agents.md)  
 - [👨‍💼🤖📈⚕️ MIT Economist on AI, Trade-Offs & Healthcare](./videos/mit-economist-on-ai-trade-offs-healthcare.md)  
 - [👑⚔️🏛️ In new book Michael McFaul explores the global fight between autocracy and democracy](./videos/in-new-book-michael-mcfaul-explores-the-global-fight-between-autocracy-and-democracy.md)  
@@ -47,8 +49,6 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [📰🕒❓ With government jobs report delayed, what other data reveals about the economy](./videos/with-government-jobs-report-delayed-what-other-data-reveals-about-the-economy.md)  
 - [📰🗣️❓ This Week in Politics | Explainer](./videos/this-week-in-politics-explainer.md)  
 - [🤖🫧💥📉 The AI Bubble Is Real — Here’s How to Prepare for the Pop | Prof G Markets](./videos/the-ai-bubble-is-real-heres-how-to-prepare-for-the-pop-prof-g-markets.md)  
-- [👊👹🇺🇸🛡️ How to Fight Fascism in America — with Timothy Snyder | Prof G Conversations](./videos/how-to-fight-fascism-in-america-with-timothy-snyder-prof-g-conversations.md)  
-- [👩‍💻👑🦆 Kara Swisher: Tech, Power, and Why You Should Get the F*cking Duck](./videos/kara-swisher-tech-power-and-why-you-should-get-the-fcking-duck.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (82)  

@@ -8,7 +8,7 @@ backlinks: false
 ---
 [Home](../index.md)  
 # 🪞 Reflections (361)  
-- [2025-11-10 | 🫨 Vibe | ✅ Complete 📚](./2025-11-10.md)  
+- [2025-11-10 | 🫨 Vibe | ✅ Complete | 🚮 Cave 📚](./2025-11-10.md)  
 - [2025-11-09 | 🌐 Systems | 🗳️ Democracy | 🧸 Play 📚📰📺](./2025-11-09.md)  
 - [2025-11-08 | 🚮 Decluttering | 🗳️ Voting | 🙋🏼‍♂️ Fascism | 🥦 SNAP 📚📄📰📺](./2025-11-08.md)  
 - [2025-11-07 | 🏗️ Reconstruction | 👎 Repudiation 📚📺](./2025-11-07.md)  

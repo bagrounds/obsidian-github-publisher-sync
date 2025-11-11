@@ -76,7 +76,7 @@ affiliate link: https://amzn.to/3JusFxb
 ### 📖 Similar  
 * The Limits to Growth by Donella H. Meadows, Dennis L. Meadows, Jorgen Randers, William W. Behrens III  
 * [🌐🔗🧠📖 Thinking in Systems: A Primer](./thinking-in-systems.md) by Donella H. Meadows  
-* Earth for All: A Survival Guide for Humanity by Sandrine Dixson-Declève, Owen Gaffney, Jayati Ghosh, Jørgen Randers, Johan Rockström  
+* [🌍🆘 Earth for All: A Survival Guide for Humanity](./earth-for-all-a-survival-guide-for-humanity.md) by Sandrine Dixson-Declève, Owen Gaffney, Jayati Ghosh, Jørgen Randers, Johan Rockström  
   
 ### 🆚 Contrasting  
 * The Skeptical Environmentalist by Bjørn Lomborg  

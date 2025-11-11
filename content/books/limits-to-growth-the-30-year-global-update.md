@@ -89,4 +89,7 @@ affiliate link: https://amzn.to/3JusFxb
   
 ## 🫵 What Do You Think?  
   
-🤔 Given the updated findings of *Limits to Growth: The 30-Year Global Update*, what systemic change do you believe is most critical for humanity to implement, and why?
+🤔 Given the updated findings of *Limits to Growth: The 30-Year Global Update*, what systemic change do you believe is most critical for humanity to implement, and why?  
+  
+## 🐦 Tweet  
+<blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">📉🌍⏳ Limits to Growth: The 30-Year Global Update<br><br>🌌 Systems Thinking | 🌍 Planetary Capacity | 📉 Exponential Growth | ♻️ Resource Consumption | 📊 System Dynamics | 🌱 Sustainability | 🎯 Empirical Data | 🚫 Initial Dismissal | 🕰️ Long-Term Horizon<a href="https://t.co/zhYHDlObCd">https://t.co/zhYHDlObCd</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/1988338645368271139?ref_src=twsrc%5Etfw">November 11, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

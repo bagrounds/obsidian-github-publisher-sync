@@ -85,7 +85,7 @@ affiliate link: https://amzn.to/3JusFxb
 ### 🔗 Related  
 * [🍩🌍 Doughnut Economics: Seven Ways to Think Like a 21st-Century Economist](./doughnut-economics-seven-ways-to-think-like-a-21st-century-economist.md) by Kate Raworth  
 * Collapse: How Societies Choose to Fail or Succeed by Jared Diamond  
-* Small Is Beautiful: A Study of Economics As If People Mattered by E. F. Schumacher  
+* [🤏🧑 Small Is Beautiful: Economics as if People Mattered](./small-is-beautiful-economics-as-if-people-mattered.md) by E. F. Schumacher  
   
 ## 🫵 What Do You Think?  
   

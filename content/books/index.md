@@ -7,7 +7,7 @@ URL: https://bagrounds.org/books
 backlinks: false
 ---
 [Home](../index.md)  
-# 📚 Books (747)  
+# 📚 Books (750)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)  
 - [🧑‍🤝‍🧑📈 10 to 25: The Science of Motivating Young People: A Groundbreaking Approach to Leading the Next Generation - And Making Your Own Life Easier](./10-to-25-the-science-of-motivating-young-people-a-groundbreaking-approach-to-leading-the-next-generation-and-making-your-own-life-easier.md)  
@@ -169,6 +169,7 @@ backlinks: false
 - [🏎️⛽ Drive: The Surprising Truth About What Motivates Us](./drive-the-surprising-truth-about-what-motivates-us.md)  
 - [🏜️🐛 Dune](./dune.md)  
 - [🧠💥📈💡🎆 Dynamical Systems in Neuroscience: The Geometry of Excitability and Bursting](./dynamical-systems-in-neuroscience.md)  
+- [🌍🆘 Earth for All: A Survival Guide for Humanity](./earth-for-all-a-survival-guide-for-humanity.md)  
 - [🍎⚡ Eat for Energy: How to Beat Fatigue, Supercharge Your Mitochondria, and Unlock All-Day Energy](./eat-for-energy-how-to-beat-fatigue-supercharge-your-mitochondria-and-unlock-all-day-energy.md)  
 - [🍎🌳 Edible Forest Gardens](./edible-forest-gardens.md)  
 - [⚡🔍👑📖 Elasticsearch: The Definitive Guide](./elasticsearch-the-definitive-guide.md)  
@@ -320,6 +321,7 @@ Feedback Control of Dynamic Systems]]
 - [🧬👥💾 Life 3.0: Being Human in the Age of Artificial Intelligence](./life-3-0.md)  
 - [⏳🙅 Lifespan: Why We Age - and Why We Don't Have To](./lifespan-why-we-age-and-why-we-dont-have-to.md)  
 - [📱⚔️ LikeWar: The Weaponization of Social Media](./likewar-the-weaponization-of-social-media.md)  
+- [📉🌍⏳ Limits to Growth: The 30-Year Global Update](./limits-to-growth-the-30-year-global-update.md)  
 - [🧠🔄 Livewired: The Inside Story of the Ever-Changing Brain](./livewired-the-inside-story-of-the-ever-changing-brain.md)  
 - [🤖🛠️ LLM Engineer's Handbook: Master the art of engineering large language models from concept to production](./llm-engineers-handbook-master-the-art-of-engineering-large-language-models-from-concept-to-production.md)  
 - [🧭🕰️🥇🗺️ Longitude: The True Story of a Lone Genius Who Solved the Greatest Scientific Problem of His Time](./longitude.md)  
@@ -465,6 +467,7 @@ Feedback Control of Dynamic Systems]]
 - [😴🧠 Sleepyhead: The Neuroscience of a Good Night's Rest](./sleepyhead-the-neuroscience-of-a-good-nights-rest.md)  
 - [🐌🎯 Slow Productivity: The Lost Art of Accomplishment Without Burnout](./slow-productivity-the-lost-art-of-accomplishment-without-burnout.md)  
 - [🐕🐈‍⬛🩺❤️‍🩹 Small Animal Internal Medicine](./small-animal-internal-medicine.md)  
+- [🤏🧑 Small Is Beautiful: Economics as if People Mattered](./small-is-beautiful-economics-as-if-people-mattered.md)  
 - [🧠🧩📈🧑‍🏫 Smart but Scattered: The Revolutionary Executive Skills Approach to Helping Kids Reach Their Potential](./smart-but-scattered.md)  
 - [❄️💻💥 Snow Crash](./snow-crash.md)  
 - [🗣️💡🦠 Social Physics: How Good Ideas Spread - The Lessons from a New Science](./social-physics.md)  

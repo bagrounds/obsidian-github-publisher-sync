@@ -42,7 +42,7 @@ affiliate link: https://amzn.to/4ls6Gnm
 ### 🤝 Similar in Spirit: Deepening the Craft  
   
 * **[🧼💾 Clean Code: A Handbook of Agile Software Craftsmanship](./clean-code.md)** by Robert C. Martin: 👯 Often considered a direct companion to *The Pragmatic Programmer*, this book dives into the nitty-gritty details of writing clean, readable, and maintainable code.  
-* 🏗️ **Code Complete: A Practical Handbook of Software Construction** by Steve McConnell: 📖 A comprehensive and detailed guide to all aspects of software construction, from architecture to code formatting.  
+* **[✅💻 Code Complete](./code-complete.md): A Practical Handbook of Software Construction** by Steve McConnell: 📖 A comprehensive and detailed guide to all aspects of software construction, from architecture to code formatting.  
 * **[🗑️✨ Refactoring: Improving the Design of Existing Code](./refactoring-improving-the-design-of-existing-code.md)** by Martin Fowler: 🛠️ This book provides a catalog of techniques to improve the design of existing code without changing its external behavior, a core tenet of pragmatic development.  
 * 💼 **The Passionate Programmer: Creating a Remarkable Career in Software Development** by Chad Fowler: ❤️‍🔥 This book focuses on the career aspects of being a developer, offering advice on how to be more than just a coder but a valued and influential professional.  
   

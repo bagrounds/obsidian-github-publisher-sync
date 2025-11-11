@@ -57,7 +57,7 @@ youtube: https://youtu.be/G7kXuVlo6tU
 * [🤿💼 Deep Work: Rules for Focused Success in a Distracted World](../books/deep-work.md) by Cal Newport provides a strong foundation for understanding the neuroscience and value of the deep focus or flow state that the talk refers to as the vibe.  
   
 ### 🆚 Contrasting  
-* 📗 Code Complete: A Practical Handbook of Software Construction by Steve McConnell is the definitive guide to meticulous, structured code construction, representing the high-level human mastery achieved *within* the highly structured environment that a robust IDE often supports.  
+* [✅💻 Code Complete](../books/code-complete.md): A Practical Handbook of Software Construction by Steve McConnell is the definitive guide to meticulous, structured code construction, representing the high-level human mastery achieved *within* the highly structured environment that a robust IDE often supports.  
 * 📙 The Practice of Programming by Brian Kernighan and Rob Pike advocates for elegant, minimalist programming principles and simple tool use, offering a perspective where mastery over basic tools is prioritized over reliance on complex, feature-rich environments.  
   
 ### 🎨 Creatively Related  

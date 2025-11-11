@@ -46,7 +46,7 @@ Raworth outlines seven key shifts in economic thinking to achieve the goal of li
   
 **🤝 Similar & Complementary Perspectives (Focus on Systemic Change & Well-being):**  
   
-* 🌱 **"Small Is Beautiful: Economics as if People Mattered" by E.F. Schumacher:** A classic critique of Western economics, advocating for smaller-scale, more localized, and human-centered economic systems.  
+* **[🤏🧑 Small Is Beautiful: Economics as if People Mattered](./small-is-beautiful-economics-as-if-people-mattered.md) by E.F. Schumacher:** A classic critique of Western economics, advocating for smaller-scale, more localized, and human-centered economic systems.  
 * ⚡ **"The Great Transition: Shifting from Fossil Fuels to Solar and Wind Energy" by Lester R. Brown, Jeffrey Sachs, et al.:** Though focused on energy, it aligns with the call for systemic shifts towards sustainability and addresses planetary boundaries.  
 * 💰 **"Sacred Economics: Money, Gift, and Society in the Age of Transition" by Charles Eisenstein:** Explores the history and future of money, advocating for a shift towards a gift economy and a deeper connection to community and nature.  
 * 💎 **"The Value of Everything: Making and Taking in the Global Economy" by Mariana Mazzucato:** Critiques how value extraction is often rewarded more than value creation and calls for a reorientation of economic thinking to prioritize public value.  

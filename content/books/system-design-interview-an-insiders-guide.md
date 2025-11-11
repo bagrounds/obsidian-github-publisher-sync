@@ -65,7 +65,7 @@ This book is primarily aimed at software engineers preparing for technical inter
 * 🧩 **Design Patterns: Elements of Reusable Object-Oriented Software by Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides (the "Gang of Four"):** The seminal work on object-oriented design patterns, providing a vocabulary for discussing solutions to common software design problems.  
 * 🧠 **Head First Design Patterns by Eric Freeman and Elisabeth Robson:** A more approachable and visually engaging introduction to design patterns compared to the original GoF book.  
 * **[🧑‍💻📈 The Pragmatic Programmer: Your Journey to Mastery](./the-pragmatic-programmer-your-journey-to-mastery.md) by David Thomas and Andrew Hunt:** Offers a wide range of practical advice on software development, including design, coding, and career development.  
-* 🧑‍💻 **Code Complete: A Practical Handbook of Software Construction by Steve McConnell:** A comprehensive guide to software construction, covering topics like design, coding, debugging, and testing at a detailed level.  
+* **[✅💻 Code Complete](./code-complete.md): A Practical Handbook of Software Construction by Steve McConnell:** A comprehensive guide to software construction, covering topics like design, coding, debugging, and testing at a detailed level.  
   
 ### 💡 Creatively Related Books (Broader Engineering & Problem Solving)  
   

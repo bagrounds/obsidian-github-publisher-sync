@@ -7,7 +7,7 @@ URL: https://bagrounds.org/videos
 backlinks: false
 ---
 [Home](../index.md)  
-# 📺 Videos (420)  
+# 📺 Videos (422)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
 - [❓💪🔬 12 Questions About Creatine with Stephen Cornish, PhD](./12-questions-about-creatine-w-stephen-cornish-phd.md)  
@@ -181,6 +181,7 @@ backlinks: false
 - [🙊🤐👑 Jimmy Kimmel's Suspension Was Always About Censorship (Just Ask Trump) | The Daily Show](./jimmy-kimmels-suspension-was-always-about-censorship-just-ask-trump-the-daily-show.md)  
 - [📺🎤👮‍♂️📰 Jimmy Kimmel & the FCC: Last Week Tonight with John Oliver (HBO)](./jimmy-kimmel-the-fcc-last-week-tonight-with-john-oliver-hbo.md)  
 - [🤖🧑‍💻📈🚧 John Schulman - Reinforcement Learning from Human Feedback: Progress and Challenges](./john-schulman-reinforcement-learning-from-human-feedback-progress-and-challenges.md)  
+- [😡🏛️🤝 Jon Stewart «Can't F**king Believe» Democrats Caved on the Shutdown | The Daily Show](./jon-stewart-cant-fking-believe-democrats-caved-on-the-shutdown-the-daily-show.md)  
 - [🇺🇸😡📺 Jon Stewart on the L.A. ICE Protests and Trump's Escalating Response | The Daily Show](./jon-stewart-on-the-la-ice-protests-and-trumps-escalating-response-the-daily-show.md)  
 - [🤡🗣️📰🇺🇸 Jon Stewart's Post-Kimmel Primer on Free Speech in the Glorious Trump Era | The Daily Show](./jon-stewarts-post-kimmel-primer-on-free-speech-in-the-glorious-trump-era-the-daily-show.md)  
 - [Judea Pearl, 2011 ACM Turing Award Recipient](./judea-pearl-2011-acm-turing-award-recipient.md)  
@@ -274,6 +275,7 @@ backlinks: false
 - [Systems Thinking Course - Lesson 03 - Pillar 2: Communication](./systems-thinking-course-lesson-03-pillar-2-communication.md)  
 - [😴🔄✨ Take a Nap! Change Your Life | Sara Mednick | Talks at Google](./take-a-nap-change-your-life-sara-mednick-talks-at-google.md)  
 - [🗣️📢🚫 Tamara Keith and Amy Walter on millions protesting against Trump’s agenda](./tamara-keith-and-amy-walter-on-millions-protesting-against-trumps-agenda.md)  
+- [🏛️🛑 Tamara Keith and Amy Walter on the deal to end the government shutdown](./tamara-keith-and-amy-walter-on-the-deal-to-end-the-government-shutdown.md)  
 - [🇺🇸🗣️💥💔 Tamara Keith and Amy Walter on the political response to Charlie Kirk's killing](./tamara-keith-and-amy-walter-on-the-political-response-to-charlie-kirks-killing.md)  
 - [📢👨⚖️🗣️ Tamara Keith and Amy Walter on the public response to Trump's handling of the Epstein case](./tamara-keith-and-amy-walter-on-the-public-response-to-trumps-handling-of-the-epstein-case.md)  
 - [🇺🇸🔄👑😬 Tamara Keith and Amy Walter on Trump flirting with the idea of the 3rd term](./tamara-keith-and-amy-walter-on-trump-flirting-with-the-idea-of-the-3rd-term.md)  

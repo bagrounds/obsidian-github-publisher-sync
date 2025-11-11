@@ -48,10 +48,10 @@ affiliate link: https://amzn.to/4knXcKd
 ## 📚 Further Reading Recommendations 📖  
   
 ### 🤝 Similar Perspectives: Systems Thinking and Global Solutions 🌎  
-* 🧠 **[Thinking in Systems](./thinking-in-systems.md): A Primer by Donella H. Meadows:** 📚 A foundational and highly accessible text explaining systems thinking concepts, complementing Fuller's holistic approach. 👩‍🔬 Meadows was a lead author of *Limits to Growth*.  
+* **[🌐🔗🧠📖 Thinking in Systems: A Primer](./thinking-in-systems.md) by Donella H. Meadows:** 📚 A foundational and highly accessible text explaining systems thinking concepts, complementing Fuller's holistic approach. 👩‍🔬 Meadows was a lead author of *Limits to Growth*.  
 * 🔑 **_Critical Path_ by R. Buckminster Fuller:** 💡 A later, more detailed work expanding on Fuller's ideas for global problem-solving, technological evolution, and historical perspectives.  
 * 🤔 **_Utopia or Oblivion: The Prospects for Humanity_ by R. Buckminster Fuller:** 🌍 Another collection of Fuller's essays exploring similar themes of technological potential, design science, and the critical choices facing humanity.  
-* 🌱 **_Small Is Beautiful: Economics as if People Mattered_ by E. F. Schumacher:** 💰 While focused on economics, it shares Fuller's critique of large-scale industrial systems and advocates for human-scale, sustainable technologies.  
+* **[🤏🧑 Small Is Beautiful: Economics as if People Mattered](./small-is-beautiful-economics-as-if-people-mattered.md) by E. F. Schumacher:** 💰 While focused on economics, it shares Fuller's critique of large-scale industrial systems and advocates for human-scale, sustainable technologies.  
 * ♻️ **_Cradle to Cradle: Remaking the Way We Make Things_ by William McDonough & Michael Braungart:** 🛠️ Focuses on practical design principles for a sustainable future, echoing Fuller's call for a design revolution by rethinking materials and industrial processes to eliminate waste.  
   
 ### ⚖️ Contrasting Viewpoints: Critiques and Alternatives 🙅‍♀️  

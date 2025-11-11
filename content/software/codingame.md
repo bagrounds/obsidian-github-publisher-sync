@@ -222,7 +222,7 @@ I told my computer I needed to go to CodinGame to debug my life, but it just gav
   
 ##### More General  
   
-* **"Code Complete" by Steve McConnell** 🧑‍💻: A classic guide to software construction, focusing on fundamental principles of good code.  
+* **[✅💻 Code Complete](../books/code-complete.md) by Steve McConnell** 🧑‍💻: A classic guide to software construction, focusing on fundamental principles of good code.  
 * **[🧼💾 Clean Code: A Handbook of Agile Software Craftsmanship](../books/clean-code.md) by Robert C. Martin** 🧹: Emphasizes writing readable, maintainable, and efficient code, crucial skills for any developer.  
   
 ##### More Specific  

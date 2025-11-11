@@ -4,8 +4,8 @@ aliases:
   - "🦄👤🗓️ The Mythical Man-Month: Essays on Software Engineering"
 title: "🦄👤🗓️ The Mythical Man-Month: Essays on Software Engineering"
 URL: https://bagrounds.org/books/the-mythical-man-month
-Author: 
-tags: 
+Author:
+tags:
 affiliate link: https://amzn.to/4dKRNua
 ---
 [Home](../index.md) > [Books](./index.md)  
@@ -45,7 +45,7 @@ affiliate link: https://amzn.to/4dKRNua
   
 * 🤝 **Peopleware: Productive Projects and Teams** by Tom DeMarco and Timothy Lister: Focuses on the sociological and human aspects of software development, arguing that management issues, not technical ones, are often the biggest hurdles.  
 * 🛠️ **[🧑‍💻📈 The Pragmatic Programmer: Your Journey to Mastery](./the-pragmatic-programmer-your-journey-to-mastery.md)** by Andrew Hunt and David Thomas: A practical guide covering a wide range of software development topics, emphasizing professionalism, craftsmanship, and continuous improvement.  
-* 🏗️ **Code Complete: A Practical Handbook of Software Construction** by Steve McConnell: A comprehensive guide to software construction techniques, bridging the gap between academic knowledge and real-world practice.  
+* **[✅💻 Code Complete](./code-complete.md): A Practical Handbook of Software Construction** by Steve McConnell: A comprehensive guide to software construction techniques, bridging the gap between academic knowledge and real-world practice.  
 * 🚀 **Rapid Development: Taming Wild Software Schedules** by Steve McConnell: Focuses specifically on strategies for achieving faster software development cycles while managing risks.  
 * ✨ **The Design of Design: Essays from a Computer Scientist** by Frederick P. Brooks Jr.: Brooks' later work exploring the nature of design itself, applicable beyond just software.  
   

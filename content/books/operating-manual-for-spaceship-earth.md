@@ -4,8 +4,8 @@ aliases:
   - 📗🚀🌍 Operating Manual for Spaceship Earth
 title: 📗🚀🌍 Operating Manual for Spaceship Earth
 URL: https://bagrounds.org/books/operating-manual-for-spaceship-earth
-Author: 
-tags: 
+Author:
+tags:
 affiliate link: https://amzn.to/4knXcKd
 ---
 [Home](../index.md) > [Books](./index.md)  
@@ -55,14 +55,14 @@ affiliate link: https://amzn.to/4knXcKd
 * ♻️ **_Cradle to Cradle: Remaking the Way We Make Things_ by William McDonough & Michael Braungart:** 🛠️ Focuses on practical design principles for a sustainable future, echoing Fuller's call for a design revolution by rethinking materials and industrial processes to eliminate waste.  
   
 ### ⚖️ Contrasting Viewpoints: Critiques and Alternatives 🙅‍♀️  
-* 📉 **_Limits to Growth_ by Donella H. Meadows, Dennis L. Meadows, Jørgen Randers, and William W. Behrens III:** ⚠️ While sharing concerns about resource limits, this work uses computer modeling to present a potentially more pessimistic outlook based on then-current trends, contrasting with Fuller's technological optimism.  
+* **[📉🌍⏳ Limits to Growth](./limits-to-growth-the-30-year-global-update.md) by Donella H. Meadows, Dennis L. Meadows, Jørgen Randers, and William W. Behrens III:** ⚠️ While sharing concerns about resource limits, this work uses computer modeling to present a potentially more pessimistic outlook based on then-current trends, contrasting with Fuller's technological optimism.  
 * 💻 **_Technopoly: The Surrender of Culture to Technology_ by Neil Postman:** 🤔 Offers a critical perspective on the unquestioned embrace of technology, questioning whether technological progress always leads to human betterment, a counterpoint to Fuller's faith in design science.  
 * 🏚️ **_Collapse: How Societies Choose to Fail or Succeed_ by Jared Diamond:** 📜 Examines historical societal collapses, often linking them to environmental mismanagement and inflexible social structures, providing case studies that challenge purely optimistic or technologically deterministic views of societal survival.  
 * 🔥 **_This Changes Everything: Capitalism vs. The Climate_ by Naomi Klein:** 🌍 Argues that the climate crisis requires fundamental changes to capitalist economic structures, contrasting with Fuller's primary focus on technological and design solutions over political economy.  
   
 ### 🎨 Creatively Related: Expanding the Context 🗺️  
 * 🧑‍🤝‍🧑 **[Sapiens: A Brief History of Humankind](./sapiens-a-brief-history-of-humankind.md) by Yuval Noah Harari:** 📜 Provides a broad historical sweep similar to parts of Fuller's narrative but from an anthropological and historical perspective, exploring humanity's development and its impact on the planet.  
-* 🏍️ **_Zen and the Art of Motorcycle Maintenance_ by Robert M. Pirsig:** ⚙️ Explores themes of technology, quality, and different ways of understanding the world, touching upon the integration of technology and human values, albeit in a more personal, philosophical narrative style.  
+* **[🏍️🧘❓ Zen and the Art of Motorcycle Maintenance: An Inquiry into Values](./zen-and-the-art-of-motorcycle-maintenance-an-inquiry-into-values.md) by Robert M. Pirsig:** ⚙️ Explores themes of technology, quality, and different ways of understanding the world, touching upon the integration of technology and human values, albeit in a more personal, philosophical narrative style.  
 * 🌱 **[🦋 Emergent Strategy: Shaping Change, Changing Worlds](./emergent-strategy.md) by adrienne maree brown:** 🤝 Explores systems thinking through the lens of natural patterns, adaptation, and social justice movements, offering a different, perhaps more organic, approach to large-scale change.  
 * 🚀 **Science Fiction exploring resource management and closed systems:** 👽 Works like Kim Stanley Robinson's *Mars Trilogy* (terraforming and resource management) or Andy Weir's *The Martian* (resourcefulness in a hostile, closed environment) explore fictional scenarios that resonate with the "Spaceship Earth" concept.  
   

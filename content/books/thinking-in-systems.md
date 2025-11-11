@@ -67,7 +67,7 @@ Donella Meadows was an environmental scientist and systems thinker with a strong
 * **Best Fiction Book That Incorporates Related Ideas:** [🏜️🐛 Dune](./dune.md) by Frank Herbert. This science fiction classic explores complex ecological and social systems, highlighting the interconnectedness of elements and the consequences of actions within those systems. 🏜️  
 * **More General, More Specific, or More Rigorous:**  
     * **More General:** "A Brief History of Everything" by Ken Wilber. This book takes a broad, integrative approach to understanding the evolution of the universe, life, and consciousness, providing a larger context for systems thinking. 🌌  
-    * **More Specific:** "[Business Dynamics](./business-dynamics.md): Systems Thinking and Modeling for a Complex World" by John Sterman. This more academic text dives deeper into the technical aspects of systems dynamics modeling, with a focus on business applications. 📊  
+    * **More Specific:** [🌐🔗📈🧩 Business Dynamics: Systems Thinking and Modeling for a Complex World](./business-dynamics.md) by John Sterman. This more academic text dives deeper into the technical aspects of systems dynamics modeling, with a focus on business applications. 📊  
     * **More Rigorous:** "Introduction to Systems Thinking" by Daniel H. Kim. This text provides a more academic and mathematically rigorous approach to systems thinking. ✍️  
   
 #### 💬 [Gemini](https://gemini.google.com) Prompt  

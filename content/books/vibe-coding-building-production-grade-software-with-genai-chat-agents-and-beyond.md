@@ -75,7 +75,7 @@ affiliate link: https://amzn.to/3Lam2Av
   
 ### ➖ Contrasting  
 * [🧼💾 Clean Code: A Handbook of Agile Software Craftsmanship](./clean-code.md) by Robert C. Martin  
-* Code Complete by Steve McConnell  
+* [✅💻 Code Complete](./code-complete.md) by Steve McConnell  
 * [🧱🛠️ Working Effectively with Legacy Code](./working-effectively-with-legacy-code.md) by Michael C. Feathers  
   
 ### 🔗 Related  

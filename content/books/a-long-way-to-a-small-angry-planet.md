@@ -44,7 +44,7 @@ The book has been widely praised for its optimistic and inclusive vision of scie
 * **[🪢🌾 Braiding Sweetgrass: Indigenous Wisdom, Scientific Knowledge, and the Teachings of Plants](./braiding-sweetgrass.md) by Robin Wall Kimmerer** 🌿: This book, like A Long Way to a Small, Angry Planet, explores the interconnectedness of different beings and the importance of relationships in a complex world.  
   
 #### ❤️ If You Loved This  
-* **Project Hail Mary by Andy Weir** 👽: While more plot-driven, this book also features a delightful found family dynamic and a charming, quirky protagonist navigating space.  
+* **[☄️🧑‍🚀🙏🌍 Project Hail Mary](./project-hail-mary.md) by Andy Weir** 👽: While more plot-driven, this book also features a delightful found family dynamic and a charming, quirky protagonist navigating space.  
 * **Gideon the Ninth by Tamsyn Muir** 💀: For readers who love the witty banter and compelling character relationships, this book offers a much darker, gothic sci-fi setting with a similar emphasis on unforgettable duo.  
   
 #### ☯️ Similar But Different  

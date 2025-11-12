@@ -69,19 +69,19 @@ affiliate link: https://amzn.to/4oButnl
 ## 📚 Book Recommendations  
   
 ### 👯 Similar  
-* [🌐🔗🧠📖 Thinking in Systems: A Primer](./thinking-in-systems.md) Donella Meadows  
-* [🎨🔄🧠🏢 The Fifth Discipline: The Art and Practice of the Learning Organization](./the-fifth-discipline.md) Peter Senge  
-* 📖 Seeing the Forest for the Trees Dennis Meadows  
+* [🌐🔗🧠📖 Thinking in Systems: A Primer](./thinking-in-systems.md) by Donella Meadows  
+* [🎨🔄🧠🏢 The Fifth Discipline: The Art and Practice of the Learning Organization](./the-fifth-discipline.md) by Peter Senge  
+* [⚙️🧠 The Systems Thinking Playbook: Exercises to Stretch and Build Learning and Systems Thinking Capabilities](./the-systems-thinking-playbook-exercises-to-stretch-and-build-learning-and-systems-thinking-capabilities.md) by Dennis Meadows  
   
 ### 🆚 Contrasting  
-* [⚫🦢🎲 The Black Swan: The Impact of the Highly Improbable](./the-black-swan-the-impact-of-the-highly-improbable.md) Nassim Nicholas Taleb  
-* [📉📈🌪️💪 Antifragile: Things That Gain from Disorder](./antifragile-things-that-gain-from-disorder.md) Nassim Nicholas Taleb  
-* [🙉📢😵‍💫🔇 Noise: A Flaw in Human Judgment](./noise.md) Daniel Kahneman  
+* [⚫🦢🎲 The Black Swan: The Impact of the Highly Improbable](./the-black-swan-the-impact-of-the-highly-improbable.md) by Nassim Nicholas Taleb  
+* [📉📈🌪️💪 Antifragile: Things That Gain from Disorder](./antifragile-things-that-gain-from-disorder.md) by Nassim Nicholas Taleb  
+* [🙉📢😵‍💫🔇 Noise: A Flaw in Human Judgment](./noise.md) by Daniel Kahneman  
   
 ### 💡 Related  
-* [🤖⚠️📈 Superintelligence: Paths, Dangers, Strategies](./superintelligence-paths-dangers-strategies.md) Nick Bostrom  
-* [🤖🧑‍ Human Compatible: Artificial Intelligence and the Problem of Control](./human-compatible-artificial-intelligence-and-the-problem-of-control.md) Stuart Russell  
-* [⏳🙅 Lifespan: Why We Age - and Why We Don't Have To](./lifespan-why-we-age-and-why-we-dont-have-to.md) David Sinclair  
+* [🤖⚠️📈 Superintelligence: Paths, Dangers, Strategies](./superintelligence-paths-dangers-strategies.md) by Nick Bostrom  
+* [🤖🧑‍ Human Compatible: Artificial Intelligence and the Problem of Control](./human-compatible-artificial-intelligence-and-the-problem-of-control.md) by Stuart Russell  
+* [⏳🙅 Lifespan: Why We Age - and Why We Don't Have To](./lifespan-why-we-age-and-why-we-dont-have-to.md) by David Sinclair  
   
 ## 🫵 What Do You Think?  
 🤔 What systemic connections has AI revealed to you in your domain, and what unexpected challenges or opportunities did that uncover? Share your insights below! 👇

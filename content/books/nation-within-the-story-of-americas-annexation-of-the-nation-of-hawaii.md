@@ -1,14 +1,14 @@
 ---
-title: "🇺🇸👑 Nation Within: The Story of America's Annexation of the Nation of Hawaii"
+title: "🇺🇸👑🌺 Nation Within: The Story of America's Annexation of the Nation of Hawaii"
 aliases:
-  - "🇺🇸👑 Nation Within: The Story of America's Annexation of the Nation of Hawaii"
+  - "🇺🇸👑🌺 Nation Within: The Story of America's Annexation of the Nation of Hawaii"
 URL: https://bagrounds.org/books/nation-within-the-story-of-americas-annexation-of-the-nation-of-hawaii
 share: true
 affiliate link: https://amzn.to/3LAGV83
 CTA: ⚖️ Understand history's impact.
 ---
 [Home](../index.md) > [Books](./index.md)  
-# 🇺🇸👑 Nation Within: The Story of America's Annexation of the Nation of Hawaii  
+# 🇺🇸👑🌺 Nation Within: The Story of America's Annexation of the Nation of Hawaii  
 [🛒 Nation Within: The Story of America's Annexation of the Nation of Hawaii. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3LAGV83)  
   
 👑🌴📜 A history of the 1893 illegal overthrow of Queen Lili'uokalani's government by American interests, the subsequent fervent Native Hawaiian resistance, and the legally contested U.S. annexation of a sovereign nation through political maneuvering, not legitimate treaty.  

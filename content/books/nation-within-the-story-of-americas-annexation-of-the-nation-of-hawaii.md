@@ -76,7 +76,7 @@ CTA: ⚖️ Understand history's impact.
 * 🇺🇸 The Americans in Hawaii: An Annotated Bibliography by William R. Tansil (focuses on American perspectives)  
   
 ### ➕ Related  
-* 🇺🇸 An Indigenous Peoples' History of the United States by Roxanne Dunbar-Ortiz  
+* [🇺🇸🏹 An Indigenous Peoples' History of the United States](./an-indigenous-peoples-history-of-the-united-states.md) by Roxanne Dunbar-Ortiz  
 * 🇵🇭 The Blood of Government: Race, Empire, the United States, & the Philippines by Paul A. Kramer  
 * 🌍 Imperialism: The Highest Stage of Capitalism by V.I. Lenin  
   

@@ -13,7 +13,7 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 💬 Comment on any page with your GitHub account.  
   
 ## [🪞 Reflections](./reflections/index.md) ~ Blog (362)  
-- [2025-11-11 | 🌌 Systems | 💰 Economics | 🗳️ Voting | ✝️ Christianity 📚📺](./reflections/2025-11-11.md)  
+- [2025-11-11 | 🌌 Systems | 💰 Economics | 🗳️ Voting | ✝️ Christianity | 🌺 Hawaii 📚📺](./reflections/2025-11-11.md)  
 - [2025-11-10 | 🫨 Vibe | ✅ Complete | 🚮 Cave 📚](./reflections/2025-11-10.md)  
 - [2025-11-09 | 🌐 Systems | 🗳️ Democracy | 🧸 Play 📚📰📺](./reflections/2025-11-09.md)  
 - [2025-11-08 | 🚮 Decluttering | 🗳️ Voting | 🙋🏼‍♂️ Fascism | 🥦 SNAP 📚📄📰📺](./reflections/2025-11-08.md)  
@@ -25,9 +25,10 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [2025-11-02 | 🫂 Friends | 🇺🇸 Nations | 💊 Drugs 📚📄](./reflections/2025-11-02.md)  
   
   
-## [📚 Books](./books/index.md) (757)  
-- [🗳️💰⬇️ The Great Suppression: Voting Rights, Corporate Cash, and the Conservative Assault on Democracy](./books/the-great-suppression-voting-rights-corporate-cash-and-the-conservative-assault-on-democracy.md)  
+## [📚 Books](./books/index.md) (758)  
+- [🇺🇸👑🌺 Nation Within: The Story of America's Annexation of the Nation of Hawaii](./books/nation-within-the-story-of-americas-annexation-of-the-nation-of-hawaii.md)  
 - [🗳️⬇️🏛️ One Person, No Vote: How Voter Suppression Is Destroying Our Democracy](./books/one-person-no-vote-how-voter-suppression-is-destroying-our-democracy.md)  
+- [🗳️💰⬇️ The Great Suppression: Voting Rights, Corporate Cash, and the Conservative Assault on Democracy](./books/the-great-suppression-voting-rights-corporate-cash-and-the-conservative-assault-on-democracy.md)  
 - [👥✝️ A People's History of Christianity: The Other Side of the Story](./books/a-peoples-history-of-christianity-the-other-side-of-the-story.md)  
 - [🤖🔗👁️ Systems Thinking: An AI’s Guide to 100 Ways to Spot Connections Humans Often Overlook](./books/systems-thinking-an-ais-guide-to-100-ways-to-spot-connections-humans-often-overlook.md)  
 - [⚙️🧠 The Systems Thinking Playbook: Exercises to Stretch and Build Learning and Systems Thinking Capabilities](./books/the-systems-thinking-playbook-exercises-to-stretch-and-build-learning-and-systems-thinking-capabilities.md)  
@@ -35,10 +36,10 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [🧬🕹️ Adaptive Control](./books/adaptive-control.md)  
 - [⚙️🤖🔄🕹️ Automatic Control Systems](./books/automatic-control-systems.md)  
 - [⚠️🤖📈 Out of Control: The New Biology of Machines, Social Systems, and the Economic World](./books/out-of-control-the-new-biology-of-machines-social-systems-and-the-economic-world.md)  
-- [⚙️🔗 Quality Software Management: Systems Thinking](./books/quality-software-management-systems-thinking.md)  
   
   
-## [📺 Videos](./videos/index.md) (424)  
+## [📺 Videos](./videos/index.md) (425)  
+- [🗣️🗓️🇺🇸 Politics Chat, November 11, 2025](./videos/politics-chat-november-11-2025.md)  
 - [🗺️✂️🏛️🗣️ American Conversations: Gerrymandering with Kate Compton Barr and Sam Wang](./videos/american-conversations-gerrymandering-with-kate-compton-barr-and-sam-wang.md)  
 - [🇺🇸🗣️👂 American Conversations: Diana Butler Bass](./videos/american-conversations-diana-butler-bass.md)  
 - [😡🏛️🤝 Jon Stewart «Can't F**king Believe» Democrats Caved on the Shutdown | The Daily Show](./videos/jon-stewart-cant-fking-believe-democrats-caved-on-the-shutdown-the-daily-show.md)  
@@ -48,7 +49,6 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [👑⚔️🏛️ In new book Michael McFaul explores the global fight between autocracy and democracy](./videos/in-new-book-michael-mcfaul-explores-the-global-fight-between-autocracy-and-democracy.md)  
 - [👿🏷️📉 The hidden history of demonizing SNAP recipients | Code Switch](./videos/the-hidden-history-of-demonizing-snap-recipients-code-switch.md)  
 - [🔒✈️🍔 Longest shutdown on record disrupts air travel and food assistance for Americans](./videos/longest-shutdown-on-record-disrupts-air-travel-and-food-assistance-for-americans.md)  
-- [📰🕒❓ With government jobs report delayed, what other data reveals about the economy](./videos/with-government-jobs-report-delayed-what-other-data-reveals-about-the-economy.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (82)  

@@ -7,7 +7,7 @@ URL: https://bagrounds.org/books
 backlinks: false
 ---
 [Home](../index.md)  
-# 📚 Books (754)  
+# 📚 Books (757)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)  
 - [🧑‍🤝‍🧑📈 10 to 25: The Science of Motivating Young People: A Groundbreaking Approach to Leading the Next Generation - And Making Your Own Life Easier](./10-to-25-the-science-of-motivating-young-people-a-groundbreaking-approach-to-leading-the-next-generation-and-making-your-own-life-easier.md)  
@@ -49,6 +49,7 @@ backlinks: false
 - [🙅🗣️💻 Antisocial: Online Extremists, Techno-Utopians, and the Hijacking of the American Conversation](./antisocial-online-extremists-techno-utopians-and-the-hijacking-of-the-american-conversation.md)  
 - [👨‍👩‍👧‍👦🗣️🗣️ A Parents' and Teachers' Guide to Bilingualism](./a-parents-and-teachers-guide-to-bilingualism.md)  
 - [🏘️🧱🏗️ A Pattern Language: Towns, Buildings, Construction](./a-pattern-language-towns-buildings-construction.md)  
+- [👥✝️ A People's History of Christianity: The Other Side of the Story](./a-peoples-history-of-christianity-the-other-side-of-the-story.md)  
 - [🧠🎯👁️💡 Applied Attention Theory](./human-attention.md)  
 - [➡️🌟🗺️ A Promised Land](./a-promised-land.md)  
 - [💔🤝 A Question of Trust: The BBC Reith Lectures 2002](./trust-how-societies-lost-it-and-how-they-might-regain-it.md)  
@@ -377,6 +378,7 @@ backlinks: false
 - [💰🏛️💔🇺🇸 On Corruption in America: And What Is at Stake](./on-corruption-in-america-and-what-is-at-stake.md)  
 - [🏛️🗳️🗣️🤝 On Democracy](./on-democracy.md)  
 - [📢🛡️ On Disinformation: How to Fight for Truth and Protect Democracy](./on-disinformation-how-to-fight-for-truth-and-protect-democracy.md)  
+- [🗳️⬇️🏛️ One Person, No Vote: How Voter Suppression Is Destroying Our Democracy](./one-person-no-vote-how-voter-suppression-is-destroying-our-democracy.md)  
 - [✍️🗽 On Freedom](./on-freedom.md)  
 - [🗣️ On Language](./on-language.md)  
 - [🔄 On Revolution](./on-revolution.md)  
@@ -677,6 +679,7 @@ backlinks: false
 - [⚔️♟️ The Strategy of Conflict](./the-strategy-of-conflict.md)  
 - [🔬🔄 The Structure of Scientific Revolutions](./the-structure-of-scientific-revolutions.md)  
 - [☀️⛓️🕊️ The Sun Does Shine: How I Found Life and Freedom on Death Row](./the-sun-does-shine-how-i-found-life-and-freedom-on-death-row.md)  
+- [⚙️🧠 The Systems Thinking Playbook: Exercises to Stretch and Build Learning and Systems Thinking Capabilities](./the-systems-thinking-playbook-exercises-to-stretch-and-build-learning-and-systems-thinking-capabilities.md)  
 - [👶🌱📈 The Talent Code: Greatness Isn't Born. It's Grown. Here's How.](./the-talent-code.md)  
 - [👴🏽📚 The Teachings of Ptahhotep: The Oldest Book in the World](./the-teachings-of-ptahhotep-the-oldest-book-in-the-world.md)  
 - [⚖️👈 The Tipping Point: How Little Things Can Make a Big Difference](./the-tipping-point.md)  

@@ -25,20 +25,21 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [2025-11-02 | 🫂 Friends | 🇺🇸 Nations | 💊 Drugs 📚📄](./reflections/2025-11-02.md)  
   
   
-## [📚 Books](./books/index.md) (758)  
+## [📚 Books](./books/index.md) (759)  
+- [😥🏫🇺🇸 The Shame of the Nation: The Restoration of Apartheid Schooling in America](./books/the-shame-of-the-nation-the-restoration-of-apartheid-schooling-in-america.md)  
+- [🪢🌾 Braiding Sweetgrass: Indigenous Wisdom, Scientific Knowledge, and the Teachings of Plants](./books/braiding-sweetgrass.md)  
 - [🇺🇸👑🌺 Nation Within: The Story of America's Annexation of the Nation of Hawaii](./books/nation-within-the-story-of-americas-annexation-of-the-nation-of-hawaii.md)  
+- [🇺🇸🏹 An Indigenous Peoples' History of the United States](./books/an-indigenous-peoples-history-of-the-united-states.md)  
 - [🗳️⬇️🏛️ One Person, No Vote: How Voter Suppression Is Destroying Our Democracy](./books/one-person-no-vote-how-voter-suppression-is-destroying-our-democracy.md)  
 - [🗳️💰⬇️ The Great Suppression: Voting Rights, Corporate Cash, and the Conservative Assault on Democracy](./books/the-great-suppression-voting-rights-corporate-cash-and-the-conservative-assault-on-democracy.md)  
 - [👥✝️ A People's History of Christianity: The Other Side of the Story](./books/a-peoples-history-of-christianity-the-other-side-of-the-story.md)  
 - [🤖🔗👁️ Systems Thinking: An AI’s Guide to 100 Ways to Spot Connections Humans Often Overlook](./books/systems-thinking-an-ais-guide-to-100-ways-to-spot-connections-humans-often-overlook.md)  
 - [⚙️🧠 The Systems Thinking Playbook: Exercises to Stretch and Build Learning and Systems Thinking Capabilities](./books/the-systems-thinking-playbook-exercises-to-stretch-and-build-learning-and-systems-thinking-capabilities.md)  
 - [⚙️📈🔄🎯 Feedback Control of Dynamic Systems](./books/feedback-control-of-dynamic-systems.md)  
-- [🧬🕹️ Adaptive Control](./books/adaptive-control.md)  
-- [⚙️🤖🔄🕹️ Automatic Control Systems](./books/automatic-control-systems.md)  
-- [⚠️🤖📈 Out of Control: The New Biology of Machines, Social Systems, and the Economic World](./books/out-of-control-the-new-biology-of-machines-social-systems-and-the-economic-world.md)  
   
   
 ## [📺 Videos](./videos/index.md) (425)  
+- [🇺🇸📚🔄 A look at what's behind the efforts to reshape how American history is taught](./videos/a-look-at-whats-behind-the-efforts-to-reshape-how-american-history-is-taught.md)  
 - [🗣️🗓️🇺🇸 Politics Chat, November 11, 2025](./videos/politics-chat-november-11-2025.md)  
 - [🗺️✂️🏛️🗣️ American Conversations: Gerrymandering with Kate Compton Barr and Sam Wang](./videos/american-conversations-gerrymandering-with-kate-compton-barr-and-sam-wang.md)  
 - [🇺🇸🗣️👂 American Conversations: Diana Butler Bass](./videos/american-conversations-diana-butler-bass.md)  
@@ -48,7 +49,6 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [👨‍💼🤖📈⚕️ MIT Economist on AI, Trade-Offs & Healthcare](./videos/mit-economist-on-ai-trade-offs-healthcare.md)  
 - [👑⚔️🏛️ In new book Michael McFaul explores the global fight between autocracy and democracy](./videos/in-new-book-michael-mcfaul-explores-the-global-fight-between-autocracy-and-democracy.md)  
 - [👿🏷️📉 The hidden history of demonizing SNAP recipients | Code Switch](./videos/the-hidden-history-of-demonizing-snap-recipients-code-switch.md)  
-- [🔒✈️🍔 Longest shutdown on record disrupts air travel and food assistance for Americans](./videos/longest-shutdown-on-record-disrupts-air-travel-and-food-assistance-for-americans.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (82)  

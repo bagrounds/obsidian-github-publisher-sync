@@ -4,8 +4,8 @@ aliases:
   - 🐦‍🔥💻 The Phoenix Project
 title: 🐦‍🔥💻 The Phoenix Project
 URL: https://bagrounds.org/books/the-phoenix-project
-Author: 
-tags: 
+Author:
+tags:
 affiliate link: https://amzn.to/4jzdwqd
 ---
 [Home](../index.md) > [Books](./index.md)  
@@ -73,8 +73,8 @@ affiliate link: https://amzn.to/4jzdwqd
 ### **Book Recommendations 📚**  
 * **Best Alternate Book on the Same Topic:** "[The DevOps Handbook](./the-devops-handbook.md): How to Create World-Class Agility, Reliability, and Security in Technology Organizations" by Gene Kim, Patrick Debois, John Willis, and Jez Humble. This book provides a more detailed and technical explanation of DevOps principles and practices. 📖  
 * **Best Tangentially Related Book:** "[Accelerate](./accelerate.md): The Science of Lean Software and DevOps: Building and Scaling High Performing Technology Organizations" by Nicole Forsgren, Jez Humble, and Gene Kim. This book provides scientific evidence supporting the benefits of DevOps practices. 📊  
-* **Best Diametrically Opposed Book:** [🦄👤🗓️ The Mythical Man-Month: Essays on Software Engineering](./the-mythical-man-month.md) by Frederick P. Brooks Jr. While a classic, it represents a more traditional, waterfall-oriented approach to software development, contrasting with the agile and DevOps principles advocated in "The Phoenix Project." ⏳  
-* **Best Fiction Book That Incorporates Related Ideas:** "Project Hail Mary" by Andy Weir. While not directly about IT, it showcases problem-solving, collaboration, and resource management under extreme pressure, reflecting some core themes of "The Phoenix Project." 🚀  
+* **Best Diametrically Opposed Book:** [🦄👤🗓️ The Mythical Man-Month: Essays on Software Engineering](./the-mythical-man-month.md) by Frederick P. Brooks Jr. While a classic, it represents a more traditional, waterfall-oriented approach to software development, contrasting with the agile and DevOps principles advocated in The Phoenix Project.  
+* **Best Fiction Book That Incorporates Related Ideas:** [☄️🧑‍🚀🙏🌍 Project Hail Mary](./project-hail-mary.md) by Andy Weir. While not directly about IT, it showcases problem-solving, collaboration, and resource management under extreme pressure, reflecting some core themes of "The Phoenix Project." 🚀  
 * **Best Book That Is More General:** "The Goal: A Process of Ongoing Improvement" by Eliyahu M. Goldratt. This is the original book describing the Theory of Constraints, the core of the Phoenix Project. ⛓️  
 * **Best Book That Is More Specific:** "[Site Reliability Engineering](./site-reliability-engineering.md): How Google Runs Production Systems" by Betsy Beyer, Chris Jones, Jennifer Petoff, and Niall Richard Murphy. This book provides a detailed look at how Google implements SRE practices, offering a more specific and technical perspective on IT operations. ⚙️  
 * **Best Book That Is More Rigorous:** "Lean Enterprise: How High-Performance Organizations Innovate at Scale" by Jez Humble, Joanne Molesky, and Barry O'Reilly. This book provides a more rigorous and comprehensive framework for applying Lean principles to enterprise-level software development. 📈  

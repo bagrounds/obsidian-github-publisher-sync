@@ -4,8 +4,8 @@ aliases:
   - 🌅🔪💀 Sunrise On The Reaping
 title: 🌅🔪💀 Sunrise On The Reaping
 URL: https://bagrounds.org/books/sunrise-on-the-reaping
-Author: 
-tags: 
+Author:
+tags:
 affiliate link: https://amzn.to/43MNXfg
 ---
 [Home](../index.md) > [Books](./index.md)  
@@ -58,7 +58,7 @@ Collins' writing remains direct and propulsive, immersing the reader in the visc
     * ***Scythe (Arc of a Scythe, #1)*** **by Neal Shusterman:** In a world where humanity has conquered death, Scythes are the only ones who can randomly "glean" (kill) to control the population. **Justification:** This series shares the young adult dystopian genre, high stakes, and profound moral and ethical questions about life, death, and societal control, much like the life-or-death decisions and oppressive systems explored in *Sunrise on the Reaping*. 💀🌍  
   
 * **Similar But Different:**  
-    * ***Project Hail Mary*** **by Andy Weir:** A lone astronaut wakes up with amnesia on a mission to save humanity, armed only with science and his wits. **Justification:** While this is science fiction rather than dystopian, it features a protagonist facing overwhelming odds and a seemingly impossible task, relying on intelligence and resilience to survive and find solutions, echoing the strategic thinking and survival aspects within the deadly arena of the Hunger Games, but in a vastly different setting and with a more hopeful, problem-solving tone. 🚀🌌  
+    * **[☄️🧑‍🚀🙏🌍 Project Hail Mary](./project-hail-mary.md)** **by Andy Weir:** A lone astronaut wakes up with amnesia on a mission to save humanity, armed only with science and his wits. **Justification:** While this is science fiction rather than dystopian, it features a protagonist facing overwhelming odds and a seemingly impossible task, relying on intelligence and resilience to survive and find solutions, echoing the strategic thinking and survival aspects within the deadly arena of the Hunger Games, but in a vastly different setting and with a more hopeful, problem-solving tone. 🚀🌌  
     * ***The Poppy War*** **by R.F. Kuang:** A dark fantasy novel inspired by mid-20th-century Chinese history, following a war orphan who aces an empire-wide test and gains access to a prestigious military academy, only to discover her shamanic powers and the brutal realities of war. **Justification:** This book shares the themes of a brutal training/competition environment, the horrors of war, and a protagonist grappling with immense power and trauma, similar to Haymitch's journey. However, it's set in a fantasy world with magic, offering a different flavor of grim reality and intense conflict. 🔥🐉  
   
 ## 🐦 Tweet  

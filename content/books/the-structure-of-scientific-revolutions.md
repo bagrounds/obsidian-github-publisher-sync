@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org/books/the-structure-of-scientific-revolutions
 share: true
 affiliate link: https://amzn.to/3Id2s4X
-CTA: Reimagine science.
+CTA: 💡 Comprehend paradigm shifts.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🔬🔄 The Structure of Scientific Revolutions  

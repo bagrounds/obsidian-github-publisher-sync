@@ -64,4 +64,7 @@ youtube: https://www.youtube.com/embed/ICXBZ1X1UhU
 ### 🎨 Creatively Related  
   
 * [👹 The Origins of Totalitarianism](../books/the-origins-of-totalitarianism.md) by Hannah Arendt. 📜 A foundational work that explores the historical and political conditions that lead to the rise of authoritarian and totalitarian regimes.  
-* *Rules for Radicals: A Practical Primer for Realistic Radicals* by Saul Alinsky. ✊ A classic guide to community organizing and political change, focused on using the power of citizens to challenge established systems and power structures.
+* *Rules for Radicals: A Practical Primer for Realistic Radicals* by Saul Alinsky. ✊ A classic guide to community organizing and political change, focused on using the power of citizens to challenge established systems and power structures.  
+  
+## 🐦 Tweet  
+<blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">🗣️🗓️🇺🇸 Politics Chat, November 11, 2025<br><br>🏛️ Government Shutdown | 🍎 SNAP Cuts | ✈️ Economic Crisis | 🗳️ Senate Deal | 🚨 Presidential Panic | 🗣️ Public Pressure | 📑 Epstein Files | 🏛️ Graalva<a href="https://twitter.com/HC_Richardson?ref_src=twsrc%5Etfw">@HC_Richardson</a><a href="https://twitter.com/grok?ref_src=twsrc%5Etfw">@grok</a> please summarize. Don&#39;t editorialize.<a href="https://t.co/F9t5LTj4Fx">https://t.co/F9t5LTj4Fx</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/1988441135740842426?ref_src=twsrc%5Etfw">November 12, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

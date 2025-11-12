@@ -7,7 +7,8 @@ URL: https://bagrounds.org/reflections
 backlinks: false
 ---
 [Home](../index.md)  
-# 🪞 Reflections (361)  
+# 🪞 Reflections (362)  
+- [2025-11-11 | 🌌 Systems | 💰 Economics | 🗳️ Voting | ✝️ Christianity 📚📺](./2025-11-11.md)  
 - [2025-11-10 | 🫨 Vibe | ✅ Complete | 🚮 Cave 📚](./2025-11-10.md)  
 - [2025-11-09 | 🌐 Systems | 🗳️ Democracy | 🧸 Play 📚📰📺](./2025-11-09.md)  
 - [2025-11-08 | 🚮 Decluttering | 🗳️ Voting | 🙋🏼‍♂️ Fascism | 🥦 SNAP 📚📄📰📺](./2025-11-08.md)  

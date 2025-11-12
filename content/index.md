@@ -12,7 +12,8 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 ❔ What do 🫵 _you_ 🤔 think?  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (362)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (363)  
+- [2025-11-12 | ☄️ Hail 🧩 Range 📚](./reflections/2025-11-12.md)  
 - [2025-11-11 | 🌌 Systems | 💰 Economics | 🗳️ Voting | ✝️ Christianity | 🌺 Hawaii 📚📺](./reflections/2025-11-11.md)  
 - [2025-11-10 | 🫨 Vibe | ✅ Complete | 🚮 Cave 📚](./reflections/2025-11-10.md)  
 - [2025-11-09 | 🌐 Systems | 🗳️ Democracy | 🧸 Play 📚📰📺](./reflections/2025-11-09.md)  
@@ -22,20 +23,19 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [2025-11-05 | 💲 Minsky | 🇺🇸 America | 🤖 MCP 📚📄📺](./reflections/2025-11-05.md)  
 - [2025-11-04 | 🗳️ Election Day 📚📰📺](./reflections/2025-11-04.md)  
 - [2025-11-03 | 🫂 Social Skills | 🗳️ Elections 📚📰](./reflections/2025-11-03.md)  
-- [2025-11-02 | 🫂 Friends | 🇺🇸 Nations | 💊 Drugs 📚📄](./reflections/2025-11-02.md)  
   
   
-## [📚 Books](./books/index.md) (759)  
+## [📚 Books](./books/index.md) (760)  
+- [🐦‍🔥💻 The Phoenix Project](./books/the-phoenix-project.md)  
+- [🌅🔪💀 Sunrise On The Reaping](./books/sunrise-on-the-reaping.md)  
+- [🌐🔭🎨🧩👨‍🎓 Range: Why Generalists Triumph in a Specialized World](./books/range.md)  
+- [➡️🌌🚀😡 A Long Way to a Small, Angry Planet](./books/a-long-way-to-a-small-angry-planet.md)  
+- [☄️🧑‍🚀🙏🌍 Project Hail Mary](./books/project-hail-mary.md)  
 - [😥🏫🇺🇸 The Shame of the Nation: The Restoration of Apartheid Schooling in America](./books/the-shame-of-the-nation-the-restoration-of-apartheid-schooling-in-america.md)  
 - [🪢🌾 Braiding Sweetgrass: Indigenous Wisdom, Scientific Knowledge, and the Teachings of Plants](./books/braiding-sweetgrass.md)  
 - [🇺🇸👑🌺 Nation Within: The Story of America's Annexation of the Nation of Hawaii](./books/nation-within-the-story-of-americas-annexation-of-the-nation-of-hawaii.md)  
 - [🇺🇸🏹 An Indigenous Peoples' History of the United States](./books/an-indigenous-peoples-history-of-the-united-states.md)  
 - [🗳️⬇️🏛️ One Person, No Vote: How Voter Suppression Is Destroying Our Democracy](./books/one-person-no-vote-how-voter-suppression-is-destroying-our-democracy.md)  
-- [🗳️💰⬇️ The Great Suppression: Voting Rights, Corporate Cash, and the Conservative Assault on Democracy](./books/the-great-suppression-voting-rights-corporate-cash-and-the-conservative-assault-on-democracy.md)  
-- [👥✝️ A People's History of Christianity: The Other Side of the Story](./books/a-peoples-history-of-christianity-the-other-side-of-the-story.md)  
-- [🤖🔗👁️ Systems Thinking: An AI’s Guide to 100 Ways to Spot Connections Humans Often Overlook](./books/systems-thinking-an-ais-guide-to-100-ways-to-spot-connections-humans-often-overlook.md)  
-- [⚙️🧠 The Systems Thinking Playbook: Exercises to Stretch and Build Learning and Systems Thinking Capabilities](./books/the-systems-thinking-playbook-exercises-to-stretch-and-build-learning-and-systems-thinking-capabilities.md)  
-- [⚙️📈🔄🎯 Feedback Control of Dynamic Systems](./books/feedback-control-of-dynamic-systems.md)  
   
   
 ## [📺 Videos](./videos/index.md) (425)  
@@ -84,9 +84,9 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
   
   
 ## [👥 People](./people/index.md) (16)  
+- [🤖🧠💻 Andrej Karpathy](./people/andrej-karpathy.md)  
 - [👨‍🏫📈💻 Scott Galloway](./people/scott-galloway.md)  
 - [🏛️🇺🇸📖 Heather Cox Richardson](./people/heather-cox-richardson.md)  
-- [🤖🧠💻 Andrej Karpathy](./people/andrej-karpathy.md)  
   
   
 ## [🛍️ Products](./products/index.md) (3)  

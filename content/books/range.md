@@ -62,7 +62,7 @@ In a complex 🌍 and unpredictable 😵‍💫 world, broad 🌁 experience and
 * ⚔️ **Best Book That Is Diametrically Opposed:**  
     * 🥇 "Outliers: The Story of Success" by Malcolm Gladwell. ⏳ While Gladwell acknowledges the role of opportunity, he heavily emphasizes the "10,000-hour rule" of deliberate practice, which contrasts with Epstein's emphasis on range. ⏱️  
 * 🧑‍🚀 **Best Fiction Book That Incorporates Related Ideas:**  
-    * 🚀 "Project Hail Mary" by Andy Weir. 👽 This science fiction novel features a protagonist who uses a wide range of scientific knowledge to solve an existential threat, exemplifying the power of generalist thinking. 🌠  
+    * [☄️🧑‍🚀🙏🌍 Project Hail Mary](./project-hail-mary.md) by Andy Weir. 👽 This science fiction novel features a protagonist who uses a wide range of scientific knowledge to solve an existential threat, exemplifying the power of generalist thinking. 🌠  
 * ⚖️ **Books with varying complexity:**  
     * 👨‍🏫 **More General:** [🎨🤓 The Art Of Learning](./the-art-of-learning.md): An Inner Journey to Optimal Performance by Josh Waitzkin. 🧠 Waitzkin, a chess prodigy and martial arts champion, discusses the principles of effective learning, which can be applied to any field. 🌱  
     * 👨‍💻 **More Specific:** 🧐 "[Deep Work](./deep-work.md): Rules for Focused Success in a Distracted World" by Cal Newport. 🎯 This book focuses on the importance of focused, uninterrupted work, which is a valuable skill for any specialist or generalist. 🤓  

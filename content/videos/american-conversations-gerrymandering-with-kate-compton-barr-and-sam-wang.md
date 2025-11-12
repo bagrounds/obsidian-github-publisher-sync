@@ -60,7 +60,7 @@ The video's central theme, that **partisan gerrymandering** is anti-democratic, 
   
 ### ↔️ Similar  
   
-* One Person, No Vote: How Voter Suppression Is Destroying Our Democracy by Carol Anderson. 📜 This book examines the history of **voter suppression** tactics beyond gerrymandering, detailing how laws and policies have been used to systematically block or dilute the votes of minority groups, which is closely related to the video's theme of **diminishing electoral competition**.  
+* [🗳️⬇️🏛️ One Person, No Vote: How Voter Suppression Is Destroying Our Democracy](../books/one-person-no-vote-how-voter-suppression-is-destroying-our-democracy.md) by Carol Anderson. 📜 This book examines the history of **voter suppression** tactics beyond gerrymandering, detailing how laws and policies have been used to systematically block or dilute the votes of minority groups, which is closely related to the video's theme of **diminishing electoral competition**.  
 * *Partisan Gerrymandering and the Construction of American Democracy* by Erik J. Engstrom. 🏛️ This offers a deep, historical analysis of **congressional redistricting** from the founding of the US up to the 1960s, showing how gerrymandering consistently shaped election outcomes and the partisan control of the House of Representatives.  
 * *Gerrymandering the States: Partisanship, Race, and the Transformation of American Federalism* by Alex Keena, Michael Latner, Anthony J. McGann, and Charles Anthony Smith. ⚖️ This book provides a contemporary analysis of the **redistricting wars** at the state legislative level, focusing on the role of partisanship and race, and is highly relevant to the speakers' concerns about state-level manipulation.  
   

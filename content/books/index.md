@@ -7,7 +7,7 @@ URL: https://bagrounds.org/books
 backlinks: false
 ---
 [Home](../index.md)  
-# 📚 Books (750)  
+# 📚 Books (754)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)  
 - [🧑‍🤝‍🧑📈 10 to 25: The Science of Motivating Young People: A Groundbreaking Approach to Leading the Next Generation - And Making Your Own Life Easier](./10-to-25-the-science-of-motivating-young-people-a-groundbreaking-approach-to-leading-the-next-generation-and-making-your-own-life-easier.md)  
@@ -205,8 +205,7 @@ backlinks: false
 - [👨‍👩‍👧‍👦🇺🇸 Fatherhood in America: Social Work Perspectives on a Changing Society](./fatherhood-in-america-social-work-perspectives-on-a-changing-society.md)  
 - [😩⚕️ Fatigue Science for Human Health](./fatigue-science-for-human-health.md)  
 - [😱🤡🇺🇸 Fear: Trump in the White House](./fear.md)  
-- [[books/feedback-control-of-dynamic-systems.md|⚙️📈🔄🎯   
-Feedback Control of Dynamic Systems]]  
+- [⚙️📈🔄🎯 Feedback Control of Dynamic Systems](./feedback-control-of-dynamic-systems.md)  
 - [😊✅ Feel Good Productivity: How to Do More of What Matters to You](./feel-good-productivity-how-to-do-more-of-what-matters-to-you.md)  
 - [😊👍 Feeling Good: The New Mood Therapy](./feeling-good-the-new-mood-therapy.md)  
 - [🇺🇸⚔️💰 Fight Oligarchy](./fight-oligarchy.md)  
@@ -313,6 +312,7 @@ Feedback Control of Dynamic Systems]]
 - [🇺🇸🏛️🚫📜⚖️ Lawless: How the Supreme Court Runs on Conservative Grievance, Fringe Theories, and Bad Vibes](./lawless-how-the-supreme-court-runs-on-conservative-grievance-fringe-theories-and-bad-vibes.md)  
 - [🧑‍⚖️📚 Law School for Everyone](./law-school-for-everyone.md)  
 - [🧠📐 Laws of UX: Using Psychology to Design Better Products & Services](./laws-of-ux-using-psychology-to-design-better-products-services.md)  
+- [⚙️🧠 Learning Systems Thinking: Essential Nonlinear Skills and Practices for Software Professionals](./learning-systems-thinking-essential-nonlinear-skills-and-practices-for-software-professionals.md)  
 - [🙈👁️💡🤔 Learning to See: Value-Stream Mapping to Add Value and Eliminate MUDA](./learning-to-see.md)  
 - [👨‍🏫🎉👍✨ Learn You a Haskell for Great Good!](./learn-you-a-haskell-for-great-good.md)  
 - [💪🧠 Level-Up Your Self-Discipline: Understand the Neuroscience of Self-Discipline, Control Your Emotions, Overcome Procrastination, and Achieve Your Difficult Goals](./level-up-your-self-discipline-understand-the-neuroscience-of-self-discipline-control-your-emotions-overcome-procrastination-and-achieve-your-difficult-goals.md)  
@@ -390,6 +390,7 @@ Feedback Control of Dynamic Systems]]
 - [🧩⚙️🌱📈 Organize for Complexity: How to Get Life Back Into Work to Build the High-Performance Organization](./organize-for-complexity.md)  
 - [🗓️✅ Organize Your Day: 17 Easy Strategies to Manage Your Day, Improve Productivity and Overcome Procrastination](./organize-your-day-17-easy-strategies-to-manage-your-day-improve-productivity-and-overcome-procrastination.md)  
 - [⏳🔬🎨 Outlive: The Science and Art of Longevity](./outlive.md)  
+- [⚠️🤖📈 Out of Control: The New Biology of Machines, Social Systems, and the Economic World](./out-of-control-the-new-biology-of-machines-social-systems-and-the-economic-world.md)  
 - [📉⬆️ Out Of The Crisis](./out-of-the-crisis.md)  
 - [🧠📈 Outsmart Yourself: Brain-Based Strategies for a Bettery You](./outsmart-yourself-brain-based-strategies-for-a-bettery-you.md)  
 - [🤱🏼🤿🪞🌱 Parenting from the Inside Out: How a Deeper Self-Understanding Can Help You Raise Children Who Thrive](./parenting-from-the-inside-out-how-a-deeper-self-understanding-can-help-you-raise-children-who-thrive.md)  
@@ -424,6 +425,7 @@ Feedback Control of Dynamic Systems]]
 - [🧐🕹️🔁 Psycho-Cybernetics: A New Way to Get More Living Out of Life](./psycho-cybernetics-a-new-way-to-get-more-living-out-of-life.md)  
 - [💰🤔😊 Psychology of Money: Timeless lessons on wealth, greed, and happiness](./the-psychology-of-money.md)  
 - [ 🎯🎭🔗🧭🏆 Purposeful Performance: The Secret Mix of Connecting, Leading, and Succeeding](./purposeful-performance.md)  
+- [⚙️🔗 Quality Software Management: Systems Thinking](./quality-software-management-systems-thinking.md)  
 - [😡🤬 Rage](./rage.md)  
 - [🌱👼🏼 Raising Good Humans: A Mindful Guide to Breaking the Cycle of Reactive Parenting and Raising Kind, Confident Kids](./raising-good-humans-a-mindful-guide-to-breaking-the-cycle-of-reactive-parenting-and-raising-kind-confident-kids.md)  
 - [🌐🔭🎨🧩👨‍🎓 Range: Why Generalists Triumph in a Specialized World](./range.md)  
@@ -495,6 +497,7 @@ Feedback Control of Dynamic Systems]]
 - [🌞🌬️🌊🌋 Sustainable Energy - Without the Hot Air](./sustainable-energy-without-the-hot-air.md)  
 - [💥🌀➡️⏳⚖️🕰️ ️ Sync: How Order Emerges From Chaos In The Universe, Nature, And Daily Life](./sync.md)  
 - [🖥️🔑 System Design Interview - An Insider's Guide](./system-design-interview-an-insiders-guide.md)  
+- [🤖🔗👁️ Systems Thinking: An AI’s Guide to 100 Ways to Spot Connections Humans Often Overlook](./systems-thinking-an-ais-guide-to-100-ways-to-spot-connections-humans-often-overlook.md)  
 - [😴🧠📈 Take a Nap! Change Your Life.: The Scientific Plan to Make You Smarter, Healthier, More Productive](./take-a-nap-change-your-life-the-scientific-plan-to-make-you-smarter-healthier-more-productive.md)  
 - [🧠⬆️💼🏠❤️ Taking Charge of Adult ADHD: Proven Strategies to Succeed at Work, at Home, and in Relationships](./taking-charge-of-adult-adhd.md)  
 - [🗣️👶 Talk to Me, Baby!: How You Can Support Young Children's Language Development](./talk-to-me-baby-how-you-can-support-young-childrens-language-development.md)  

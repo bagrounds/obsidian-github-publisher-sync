@@ -51,7 +51,7 @@ youtube: https://www.youtube.com/embed/JDysBx_wIHc
   
 ### ↔️ Similar  
   
-* 📖 **A People's History of Christianity: The Other Side of the Story** by Diana Butler Bass. 🌎 This book similarly explores the tension between Christianity's imperial, power-seeking side and the subversive, social-ethic tradition that has always existed within the faith.  
+* **[👥✝️ A People's History of Christianity: The Other Side of the Story](../books/a-peoples-history-of-christianity-the-other-side-of-the-story.md)** by Diana Butler Bass. 🌎 This book similarly explores the tension between Christianity's imperial, power-seeking side and the subversive, social-ethic tradition that has always existed within the faith.  
 * 🙌 **Grounded: Finding God in the World—A Spiritual Revolution** by Diana Butler Bass. 🌳 It discusses moving beyond traditional church structures to find a spiritual revolution in the world, connecting with the idea of a faith focused on communal life and the care of neighbors.  
 * ✝️ **God and Empire: Jesus Against Rome, Then and Now** by John Dominic Crossan. ⚔️ This work analyzes how the gospels present a clear, nonviolent alternative to Roman imperial rule, providing detailed historical context for the video's discussion of Rome's conflict with Jesus.  
   

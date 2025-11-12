@@ -7,7 +7,7 @@ URL: https://bagrounds.org/books
 backlinks: false
 ---
 [Home](../index.md)  
-# 📚 Books (759)  
+# 📚 Books (760)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)  
 - [🧑‍🤝‍🧑📈 10 to 25: The Science of Motivating Young People: A Groundbreaking Approach to Leading the Next Generation - And Making Your Own Life Easier](./10-to-25-the-science-of-motivating-young-people-a-groundbreaking-approach-to-leading-the-next-generation-and-making-your-own-life-easier.md)  
@@ -425,6 +425,7 @@ backlinks: false
 - [🧠🤔🧪🔬 Principles of Neuropsychology](./principles-of-neuropsychology.md)  
 - [🎲🧮🧠🤖 Probabilistic Reasoning in Intelligent Systems: Networks of Plausible Inference](./probabilistic-reasoning-in-intelligent-systems.md)  
 - [🎲🧮 Probability Theory: The Logic of Science](./probability-theory.md)  
+- [☄️🧑‍🚀🙏🌍 Project Hail Mary](./project-hail-mary.md)  
 - [⌨️🤖 Prompt Engineering for LLMs: The Art and Science of Building Large Language Model-Based Applications](./prompt-engineering-for-llms-the-art-and-science-of-building-large-language-model-based-applications.md)  
 - [🧐🕹️🔁 Psycho-Cybernetics: A New Way to Get More Living Out of Life](./psycho-cybernetics-a-new-way-to-get-more-living-out-of-life.md)  
 - [💰🤔😊 Psychology of Money: Timeless lessons on wealth, greed, and happiness](./the-psychology-of-money.md)  

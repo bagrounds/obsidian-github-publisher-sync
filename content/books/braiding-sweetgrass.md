@@ -4,8 +4,8 @@ aliases:
   - "🪢🌾 Braiding Sweetgrass: Indigenous Wisdom, Scientific Knowledge, and the Teachings of Plants"
 title: "🪢🌾 Braiding Sweetgrass: Indigenous Wisdom, Scientific Knowledge, and the Teachings of Plants"
 URL: https://bagrounds.org/books/braiding-sweetgrass
-Author: 
-tags: 
+Author:
+tags:
 affiliate link: https://amzn.to/3Ho8r6E
 CTA: Grow honorably.
 ---
@@ -65,7 +65,7 @@ CTA: Grow honorably.
 * 🌳 ***Finding the Mother Tree: Discovering the Wisdom of the Forest*** **by Suzanne Simard:** 🌲 A forest ecologist's research into the complex communication and symbiotic relationships between trees.  
 * **[🍄🌍🧠🔮 Entangled Life: How Fungi Make Our Worlds, Change Our Minds & Shape Our Futures](./entangled-life-how-fungi-make-our-worlds-change-our-minds-shape-our-futures.md)** **by Merlin Sheldrake:** 🌐 Explores the fascinating world of fungi and their essential, often hidden, roles in ecosystems.  
 * 🌍 ***Rooted: Life at the Crossroads of Science, Nature, and Spirit*** **by Lyanda Lynn Haupt:** ✨ Blends science, mysticism, and nature observation to explore deep connections with the wild.  
-* 📜 ***An Indigenous Peoples' History of the United States*** **by Roxanne Dunbar-Ortiz:** 🇺🇸 Provides crucial historical context about the colonization and resilience of Indigenous peoples in the US.  
+* **[🇺🇸🏹 An Indigenous Peoples' History of the United States](./an-indigenous-peoples-history-of-the-united-states.md)** **by Roxanne Dunbar-Ortiz:** 🇺🇸 Provides crucial historical context about the colonization and resilience of Indigenous peoples in the US.  
 * 🌲 ***The Overstory*** **by Richard Powers:** 🏆 A Pulitzer Prize-winning novel where trees are central characters, weaving together human lives and ecological consciousness (Fiction).  
 * 🍃 ***Fresh Banana Leaves: Healing Indigenous Landscapes through Indigenous Science*** **by Jessica Hernandez:** 🌎 Focuses on Indigenous environmental science and conservation practices in Latin America and the US.  
 * ✊ ***As Long as Grass Grows: The Indigenous Fight for Environmental Justice, from Colonization to Standing Rock*** **by Dina Gilio-Whitaker:** ⚖️ Explores the history and ongoing struggle for Indigenous environmental justice.  

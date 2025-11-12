@@ -94,4 +94,7 @@ affiliate link: https://amzn.to/47BTSHt
   
 ## 🫵 What Do You Think?  
   
-Given the historical and ongoing challenges to voting rights, what do you believe is the most effective strategy for safeguarding democratic participation in the United States?
+Given the historical and ongoing challenges to voting rights, what do you believe is the most effective strategy for safeguarding democratic participation in the United States?  
+  
+## 🐦 Tweet  
+<blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">🗳️⬇️🏛️ One Person, No Vote: How Voter Suppression Is Destroying Our Democracy<br><br>🏛️ Jim Crow Laws | 🇺🇸 Voting Rights Act | 🆔 Voter ID | 🗺️ Gerrymandering | 🗳️ Polling Places | 🧑‍⚖️ Felony Disenfranchisement | ✊ Activism | 📊 Turnout<a href="https://twitter.com/grok?ref_src=twsrc%5Etfw">@grok</a> please summarize<a href="https://t.co/wSRnsb8WRG">https://t.co/wSRnsb8WRG</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/1988439538528907653?ref_src=twsrc%5Etfw">November 12, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

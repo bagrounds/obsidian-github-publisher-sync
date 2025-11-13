@@ -13,7 +13,7 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 💬 Comment on any page with your GitHub account.  
   
 ## [🪞 Reflections](./reflections/index.md) ~ Blog (363)  
-- [2025-11-12 | ☄️ Hail 🧩 Range 🤳🏼 Addict 📚📺](./reflections/2025-11-12.md)  
+- [2025-11-12 | ☄️ Hail 🧩 Range 🤳🏼 Addict | ✉️ Trump & 🏝️ Epstein 📚📺📰](./reflections/2025-11-12.md)  
 - [2025-11-11 | 🌌 Systems | 💰 Economics | 🗳️ Voting | ✝️ Christianity | 🌺 Hawaii 📚📺](./reflections/2025-11-11.md)  
 - [2025-11-10 | 🫨 Vibe | ✅ Complete | 🚮 Cave 📚](./reflections/2025-11-10.md)  
 - [2025-11-09 | 🌐 Systems | 🗳️ Democracy | 🧸 Play 📚📰📺](./reflections/2025-11-09.md)  
@@ -38,7 +38,8 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [🗳️⬇️🏛️ One Person, No Vote: How Voter Suppression Is Destroying Our Democracy](./books/one-person-no-vote-how-voter-suppression-is-destroying-our-democracy.md)  
   
   
-## [📺 Videos](./videos/index.md) (426)  
+## [📺 Videos](./videos/index.md) (427)  
+- [👨‍⚖️📧❓ Trump faces fresh Epstein questions as new emails and files are released](./videos/trump-faces-fresh-epstein-questions-as-new-emails-and-files-are-released.md)  
 - [🧠🔄🛠️✅ How to fix your addicted brain, permanently (science-based)](./videos/how-to-fix-your-addicted-brain-permanently-science-based.md)  
 - [🇺🇸📚🔄 A look at what's behind the efforts to reshape how American history is taught](./videos/a-look-at-whats-behind-the-efforts-to-reshape-how-american-history-is-taught.md)  
 - [🗣️🗓️🇺🇸 Politics Chat, November 11, 2025](./videos/politics-chat-november-11-2025.md)  
@@ -48,7 +49,6 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [🏛️🛑 Tamara Keith and Amy Walter on the deal to end the government shutdown](./videos/tamara-keith-and-amy-walter-on-the-deal-to-end-the-government-shutdown.md)  
 - [✨💻💀🤖 Steve Yegge on productive vibe coding, the death of the IDE, babysitting a fleet of AI coding agents](./videos/steve-yegge-on-productive-vibe-coding-the-death-of-the-ide-babysitting-a-fleet-of-ai-coding-agents.md)  
 - [👨‍💼🤖📈⚕️ MIT Economist on AI, Trade-Offs & Healthcare](./videos/mit-economist-on-ai-trade-offs-healthcare.md)  
-- [👑⚔️🏛️ In new book Michael McFaul explores the global fight between autocracy and democracy](./videos/in-new-book-michael-mcfaul-explores-the-global-fight-between-autocracy-and-democracy.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (82)  

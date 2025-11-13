@@ -7,7 +7,7 @@ URL: https://bagrounds.org/videos
 backlinks: false
 ---
 [Home](../index.md)  
-# 📺 Videos (424)  
+# 📺 Videos (426)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
 - [❓💪🔬 12 Questions About Creatine with Stephen Cornish, PhD](./12-questions-about-creatine-w-stephen-cornish-phd.md)  
@@ -141,6 +141,7 @@ backlinks: false
 - [🧠👁️📈✨ How to Expand Your Consciousness | Dr. Christof Koch](./how-to-expand-your-consciousness-dr-christof-koch.md)  
 - [👊👹🇺🇸🛡️ How to Fight Fascism in America — with Timothy Snyder | Prof G Conversations](./how-to-fight-fascism-in-america-with-timothy-snyder-prof-g-conversations.md)  
 - [❓🧭🗺️💡 How To Find Your Life's Purpose](./how-to-find-your-lifes-purpose.md)  
+- [🧠🔄🛠️✅ How to fix your addicted brain, permanently (science-based)](./how-to-fix-your-addicted-brain-permanently-science-based.md)  
 - [🥱💭✂️🎬🫡 How to Force Your Brain To Be Motivated (when you don’t feel like it)](./how-to-force-your-brain-to-be-motivated-when-you-dont-feel-like-it.md)  
 - [🧠💪🧘 How To Force Your Brain To Do Hard Things (Lotus Method)](./how-to-force-your-brain-to-do-hard-things-lotus-method.md)  
 - [🧠🛠️💪📈 How to hack your brain to crave doing hard things](./how-to-hack-your-brain-to-crave-doing-hard-things.md)  
@@ -237,6 +238,7 @@ backlinks: false
 - [🪖🚫📚😠 Pentagon's attempt to ban books from base schools faces backlash from military families](./pentagons-attempt-to-ban-books-from-base-schools-faces-backlash-from-military-families.md)  
 - [💰🌊🚧🏛️🪧🚨 Politics Chat, July 10, 2025](./politics-chat-july-10-2025.md)  
 - [🏛️👹👑📜 Politics Chat, July 1, 2025](./politics-chat-july-1-2025.md)  
+- [🗣️🗓️🇺🇸 Politics Chat, November 11, 2025](./politics-chat-november-11-2025.md)  
 - [🏛️🗣️📅 Politics Chat, October 21, 2025](./politics-chat-october-21-2025.md)  
 - [🏛️🗣️📅 Politics Chat, September 25, 2025](./politics-chat-september-25-2025.md)  
 - [👨‍⚖️🚫👩🏿‍💼 Power to Fire Lisa Cook? | Explainer](./does-trump-have-the-power-to-fire-lisa-cook-explainer.md)  

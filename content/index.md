@@ -38,7 +38,8 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [🗳️⬇️🏛️ One Person, No Vote: How Voter Suppression Is Destroying Our Democracy](./books/one-person-no-vote-how-voter-suppression-is-destroying-our-democracy.md)  
   
   
-## [📺 Videos](./videos/index.md) (427)  
+## [📺 Videos](./videos/index.md) (428)  
+- [🏛️➡️🚪⚠️ Prominent conservative judge resigns, calling Trump 'uniquely dangerous'](./videos/prominent-conservative-judge-resigns-calling-trump-uniquely-dangerous.md)  
 - [👨‍⚖️📧❓ Trump faces fresh Epstein questions as new emails and files are released](./videos/trump-faces-fresh-epstein-questions-as-new-emails-and-files-are-released.md)  
 - [🧠🔄🛠️✅ How to fix your addicted brain, permanently (science-based)](./videos/how-to-fix-your-addicted-brain-permanently-science-based.md)  
 - [🇺🇸📚🔄 A look at what's behind the efforts to reshape how American history is taught](./videos/a-look-at-whats-behind-the-efforts-to-reshape-how-american-history-is-taught.md)  
@@ -48,7 +49,6 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [😡🏛️🤝 Jon Stewart «Can't F**king Believe» Democrats Caved on the Shutdown | The Daily Show](./videos/jon-stewart-cant-fking-believe-democrats-caved-on-the-shutdown-the-daily-show.md)  
 - [🏛️🛑 Tamara Keith and Amy Walter on the deal to end the government shutdown](./videos/tamara-keith-and-amy-walter-on-the-deal-to-end-the-government-shutdown.md)  
 - [✨💻💀🤖 Steve Yegge on productive vibe coding, the death of the IDE, babysitting a fleet of AI coding agents](./videos/steve-yegge-on-productive-vibe-coding-the-death-of-the-ide-babysitting-a-fleet-of-ai-coding-agents.md)  
-- [👨‍💼🤖📈⚕️ MIT Economist on AI, Trade-Offs & Healthcare](./videos/mit-economist-on-ai-trade-offs-healthcare.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (82)  

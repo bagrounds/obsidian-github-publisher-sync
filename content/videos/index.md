@@ -7,7 +7,7 @@ URL: https://bagrounds.org/videos
 backlinks: false
 ---
 [Home](../index.md)  
-# 📺 Videos (427)  
+# 📺 Videos (428)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
 - [❓💪🔬 12 Questions About Creatine with Stephen Cornish, PhD](./12-questions-about-creatine-w-stephen-cornish-phd.md)  
@@ -248,6 +248,7 @@ backlinks: false
 - [📈🪜🚀 Principal Engineer Reveals How To Be Promoted FAST](./principal-engineer-reveals-how-to-be-promoted-fast.md)  
 - [Professor explains why he's leaving Yale for Toronto as colleges react to Trump's threats](./professor-explains-why-hes-leaving-yale-for-toronto-as-colleges-react-to-trumps-threats.md)  
 - [🇺🇸📅👎 Project 2025 Is Here and Americans Hate It | Explainer](./project-2025-is-here-and-americans-hate-it-explainer.md)  
+- [🏛️➡️🚪⚠️ Prominent conservative judge resigns, calling Trump 'uniquely dangerous'](./prominent-conservative-judge-resigns-calling-trump-uniquely-dangerous.md)  
 - [Protestors join more than a thousand rallies across the U.S. against Trump’s policies](./protestors-join-more-than-a-thousand-rallies-across-the-us-against-trumps-policies.md)  
 - [Rep. Aime Wichtendahl testifies as Iowa removes civil rights for trans people (Feb 27, 2025)](./rep-aime-wichtendahl-testifies-as-iowa-removes-civil-rights-for-trans-people-feb-27-2025.md)  
 - [👩‍⚖️📜➡️ Rep. Alexandria Ocasio-Cortez (D-NY) on Resolution Honoring Charlie Kirk](./rep-alexandria-ocasio-cortez-d-ny-on-resolution-honoring-charlie-kirk.md)  

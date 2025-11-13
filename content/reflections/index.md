@@ -8,7 +8,7 @@ backlinks: false
 ---
 [Home](../index.md)  
 # 🪞 Reflections (363)  
-- [2025-11-12 | ☄️ Hail 🧩 Range 📚](./2025-11-12.md)  
+- [2025-11-12 | ☄️ Hail 🧩 Range 🤳🏼 Addict 📚📺](./2025-11-12.md)  
 - [2025-11-11 | 🌌 Systems | 💰 Economics | 🗳️ Voting | ✝️ Christianity | 🌺 Hawaii 📚📺](./2025-11-11.md)  
 - [2025-11-10 | 🫨 Vibe | ✅ Complete | 🚮 Cave 📚](./2025-11-10.md)  
 - [2025-11-09 | 🌐 Systems | 🗳️ Democracy | 🧸 Play 📚📰📺](./2025-11-09.md)  

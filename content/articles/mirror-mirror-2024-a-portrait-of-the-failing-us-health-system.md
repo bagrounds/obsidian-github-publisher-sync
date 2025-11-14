@@ -50,4 +50,7 @@ tags:
   
 ### 🎨 Creatively Related  
 * 🏙️ The Power Broker Robert Moses and the Fall of New York by Robert Caro. 🚧 **It explores how centralized, powerful bureaucratic planning** fundamentally shapes public life and resources, relating tangentially to the political challenges and consolidation issues noted in the report's critique of the U.S. system’s fragmented structure.  
-* [🤔🐇🐢 Thinking, Fast and Slow](../books/thinking-fast-and-slow.md) by Daniel Kahneman. ⚖️ **This book examines cognitive biases and decision-making**, offering a framework for understanding why rational policy choices (like investing in cost-effective primary care) are often overlooked in complex political and economic systems like healthcare.
+* [🤔🐇🐢 Thinking, Fast and Slow](../books/thinking-fast-and-slow.md) by Daniel Kahneman. ⚖️ **This book examines cognitive biases and decision-making**, offering a framework for understanding why rational policy choices (like investing in cost-effective primary care) are often overlooked in complex political and economic systems like healthcare.  
+  
+## 🐦 Tweet  
+<blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">🪞🇺🇸💔 Mirror, Mirror 2024: A Portrait of the Failing U.S. Health System<br><br>The US is unique in its health care underperformance. The other nine countries have found a way to meet their residents&#39; basic health care needs, including universal coverage.<a href="https://t.co/888k9XjpD9">https://t.co/888k9XjpD9</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/1989466560592011275?ref_src=twsrc%5Etfw">November 14, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

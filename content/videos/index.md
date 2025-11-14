@@ -7,7 +7,7 @@ URL: https://bagrounds.org/videos
 backlinks: false
 ---
 [Home](../index.md)  
-# 📺 Videos (428)  
+# 📺 Videos (431)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
 - [❓💪🔬 12 Questions About Creatine with Stephen Cornish, PhD](./12-questions-about-creatine-w-stephen-cornish-phd.md)  
@@ -203,6 +203,7 @@ backlinks: false
 - [📰🌍🏘️ Matryoshka ACL 2025: Hierarchical Level-Wise News Article Clustering via Multilingual Matryoshka Embeddings](./acl-2025-hierarchical-level-wise-news-article-clustering-via-multilingual-matryoshka-embeddings.md)  
 - [Migrants in U.S. legally and with no criminal history caught up in Trump crackdown](./migrants-in-us-legally-and-with-no-criminal-history-caught-up-in-trump-crackdown.md)  
 - [🗣️🤫🐘 Mike Levin Reveals What Republicans Told Him Behind Closed Doors About Big Beautiful Bill](./mike-levin-reveals-what-republicans-told-him-behind-closed-doors-about-big-beautiful-bill.md)  
+- [🪖👨‍⚖️❓ Military personnel seek legal advice on whether Trump-ordered missions are lawful](./military-personnel-seek-legal-advice-on-whether-trump-ordered-missions-are-lawful.md)  
 - [👨‍💼🤖📈⚕️ MIT Economist on AI, Trade-Offs & Healthcare](./mit-economist-on-ai-trade-offs-healthcare.md)  
 - [🗑️👩‍💻👎 Most Tech Interview Prep is GARBAGE](./most-tech-interview-prep-is-garbage-from-a-principal-engineer-at-amazon.md)  
 - [💪🏋️📅 Motoren unseres Lebens - Muskeltraining 2015](./motoren-unseres-lebens-muskeltraining-2015-vortrag-dr-patrick-oconnor.md)  
@@ -239,6 +240,7 @@ backlinks: false
 - [💰🌊🚧🏛️🪧🚨 Politics Chat, July 10, 2025](./politics-chat-july-10-2025.md)  
 - [🏛️👹👑📜 Politics Chat, July 1, 2025](./politics-chat-july-1-2025.md)  
 - [🗣️🗓️🇺🇸 Politics Chat, November 11, 2025](./politics-chat-november-11-2025.md)  
+- [🏛️🗣️🗓️ Politics Chat, November 13, 2025](./politics-chat-november-13-2025.md)  
 - [🏛️🗣️📅 Politics Chat, October 21, 2025](./politics-chat-october-21-2025.md)  
 - [🏛️🗣️📅 Politics Chat, September 25, 2025](./politics-chat-september-25-2025.md)  
 - [👨‍⚖️🚫👩🏿‍💼 Power to Fire Lisa Cook? | Explainer](./does-trump-have-the-power-to-fire-lisa-cook-explainer.md)  
@@ -311,6 +313,7 @@ backlinks: false
 - [🇮🇱⚔️🇮🇷👹☢️⛪🪓🏝️ The Latest on Israel and Iran: Trump, Nukes, and a MAGA Split](./the-latest-on-israel-and-iran-trump-nukes-and-a-maga-split.md)  
 - [🧢🇺🇸📢➡️ The MAGA Ideology That Brought Us to This Moment](./the-maga-ideology-that-brought-us-to-this-moment.md)  
 - [⚡🔋💪 The Mitochondria Protocol: How to Actually Fix Your Energy](./the-mitochondria-protocol-how-to-actually-fix-your-energy.md)  
+- [⚠️🧠⚔️ The Most Dangerous Cognitive Bias](./the-most-dangerous-cognitive-bias.md)  
 - [💰🤔⚖️ The Most Important Economic Debate of our Lifetime — ft. Justin Wolfers | Prof G Markets](./the-most-important-economic-debate-of-our-lifetime-ft-justin-wolfers-prof-g-markets.md)  
 - [The OLDEST websites EVER 👩‍💻](./the-oldest-websites-ever.md)  
 - [⏱️🔋✅ The one productivity system you need: time vs energy management (ep. 1)](./the-one-productivity-system-you-need-time-vs-energy-management-ep-1.md)  

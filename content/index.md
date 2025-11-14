@@ -12,7 +12,8 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 ❔ What do 🫵 _you_ 🤔 think?  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (363)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (364)  
+- [2025-11-13](./reflections/2025-11-13.md)  
 - [2025-11-12 | ☄️ Hail 🧩 Range 🤳🏼 Addict | ✉️ Trump & 🏝️ Epstein 📚📺📰](./reflections/2025-11-12.md)  
 - [2025-11-11 | 🌌 Systems | 💰 Economics | 🗳️ Voting | ✝️ Christianity | 🌺 Hawaii 📚📺](./reflections/2025-11-11.md)  
 - [2025-11-10 | 🫨 Vibe | ✅ Complete | 🚮 Cave 📚](./reflections/2025-11-10.md)  
@@ -22,10 +23,12 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [2025-11-06 | 📜 History | 💰 Economics | 😇 Virtue 📚📺👥](./reflections/2025-11-06.md)  
 - [2025-11-05 | 💲 Minsky | 🇺🇸 America | 🤖 MCP 📚📄📺](./reflections/2025-11-05.md)  
 - [2025-11-04 | 🗳️ Election Day 📚📰📺](./reflections/2025-11-04.md)  
-- [2025-11-03 | 🫂 Social Skills | 🗳️ Elections 📚📰](./reflections/2025-11-03.md)  
   
   
-## [📚 Books](./books/index.md) (760)  
+## [📚 Books](./books/index.md) (763)  
+- [😱🏛️ The Terror Presidency: Law and Judgment Inside the Bush Administration](./books/the-terror-presidency-law-and-judgment-inside-the-bush-administration.md)  
+- [💰🇺🇸 Corruption in America: From Benjamin Franklin's Snuff Box to Citizens United](./books/corruption-in-america-from-benjamin-franklins-snuff-box-to-citizens-united.md)  
+- [🤖📈 The AI Revolution in Project Management: Elevating Productivity with Generative AI](./books/the-ai-revolution-in-project-management-elevating-productivity-with-generative-ai.md)  
 - [🐦‍🔥💻 The Phoenix Project](./books/the-phoenix-project.md)  
 - [🌅🔪💀 Sunrise On The Reaping](./books/sunrise-on-the-reaping.md)  
 - [🌐🔭🎨🧩👨‍🎓 Range: Why Generalists Triumph in a Specialized World](./books/range.md)  
@@ -33,22 +36,19 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [☄️🧑‍🚀🙏🌍 Project Hail Mary](./books/project-hail-mary.md)  
 - [😥🏫🇺🇸 The Shame of the Nation: The Restoration of Apartheid Schooling in America](./books/the-shame-of-the-nation-the-restoration-of-apartheid-schooling-in-america.md)  
 - [🪢🌾 Braiding Sweetgrass: Indigenous Wisdom, Scientific Knowledge, and the Teachings of Plants](./books/braiding-sweetgrass.md)  
-- [🇺🇸👑🌺 Nation Within: The Story of America's Annexation of the Nation of Hawaii](./books/nation-within-the-story-of-americas-annexation-of-the-nation-of-hawaii.md)  
-- [🇺🇸🏹 An Indigenous Peoples' History of the United States](./books/an-indigenous-peoples-history-of-the-united-states.md)  
-- [🗳️⬇️🏛️ One Person, No Vote: How Voter Suppression Is Destroying Our Democracy](./books/one-person-no-vote-how-voter-suppression-is-destroying-our-democracy.md)  
   
   
-## [📺 Videos](./videos/index.md) (428)  
-- [🏛️➡️🚪⚠️ Prominent conservative judge resigns, calling Trump 'uniquely dangerous'](./videos/prominent-conservative-judge-resigns-calling-trump-uniquely-dangerous.md)  
+## [📺 Videos](./videos/index.md) (431)  
+- [⚠️🧠⚔️ The Most Dangerous Cognitive Bias](./videos/the-most-dangerous-cognitive-bias.md)  
+- [🪖👨‍⚖️❓ Military personnel seek legal advice on whether Trump-ordered missions are lawful](./videos/military-personnel-seek-legal-advice-on-whether-trump-ordered-missions-are-lawful.md)  
+- [🏛️🗣️🗓️ Politics Chat, November 13, 2025](./videos/politics-chat-november-13-2025.md)  
+- [🏛️📣👹🤑 Schiff Takes To Senate Floor to Lay Out Trump's 10 Most Corrupt Acts So Far](./videos/schiff-takes-to-senate-floor-to-lay-out-trumps-10-most-corrupt-acts-so-far.md)  
 - [👨‍⚖️📧❓ Trump faces fresh Epstein questions as new emails and files are released](./videos/trump-faces-fresh-epstein-questions-as-new-emails-and-files-are-released.md)  
+- [🏛️➡️🚪⚠️ Prominent conservative judge resigns, calling Trump 'uniquely dangerous'](./videos/prominent-conservative-judge-resigns-calling-trump-uniquely-dangerous.md)  
 - [🧠🔄🛠️✅ How to fix your addicted brain, permanently (science-based)](./videos/how-to-fix-your-addicted-brain-permanently-science-based.md)  
 - [🇺🇸📚🔄 A look at what's behind the efforts to reshape how American history is taught](./videos/a-look-at-whats-behind-the-efforts-to-reshape-how-american-history-is-taught.md)  
 - [🗣️🗓️🇺🇸 Politics Chat, November 11, 2025](./videos/politics-chat-november-11-2025.md)  
 - [🗺️✂️🏛️🗣️ American Conversations: Gerrymandering with Kate Compton Barr and Sam Wang](./videos/american-conversations-gerrymandering-with-kate-compton-barr-and-sam-wang.md)  
-- [🇺🇸🗣️👂 American Conversations: Diana Butler Bass](./videos/american-conversations-diana-butler-bass.md)  
-- [😡🏛️🤝 Jon Stewart «Can't F**king Believe» Democrats Caved on the Shutdown | The Daily Show](./videos/jon-stewart-cant-fking-believe-democrats-caved-on-the-shutdown-the-daily-show.md)  
-- [🏛️🛑 Tamara Keith and Amy Walter on the deal to end the government shutdown](./videos/tamara-keith-and-amy-walter-on-the-deal-to-end-the-government-shutdown.md)  
-- [✨💻💀🤖 Steve Yegge on productive vibe coding, the death of the IDE, babysitting a fleet of AI coding agents](./videos/steve-yegge-on-productive-vibe-coding-the-death-of-the-ide-babysitting-a-fleet-of-ai-coding-agents.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (82)  
@@ -59,12 +59,12 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [🗣️🗣️ Bilingualism](./topics/bilingualism.md)  
   
   
-## [📄  Articles](./articles/index.md) (71)  
+## [📄  Articles](./articles/index.md) (72)  
+- [🧑‍🤝‍🧑🤖🧠 Orchestrating Human AI Teams: The Manager Agent as a Unifying Research Challenge](./articles/orchestrating-human-ai-teams-the-manager-agent-as-a-unifying-research-challenge.md)  
 - [🗣️🧠🧑‍💻📚 Relating Natural Language Aptitude to Individual Differences in Learning Programming Languages](./articles/relating-natural-language-aptitude-to-individual-differences-in-learning-programming-languages.md)  
 - [🙋‍♂️🚩🚫 Musk’s inauguration salute is not the only apparent fascist signal from Trump’s administration](./articles/musks-inauguration-salute-is-not-the-only-apparent-fascist-signal-from-trumps-administration.md)  
 - [🏛️🔍❌🗳️ Analysis: Heritage Foundation’s Database Undermines Claims of Recent Voter Fraud](./articles/analysis-heritage-foundations-database-undermines-claims-of-recent-voter-fraud.md)  
 - [🤖🧠📈⚡ Code execution with MCP: Building more efficient agents](./articles/code-execution-with-mcp-building-more-efficient-agents.md)  
-- [🗓️🇵🇹💉✅🕊️ 20 years of Portuguese drug policy - developments, challenges and the quest for human rights](./articles/20-years-of-portuguese-drug-policy-developments-challenges-and-the-quest-for-human-rights.md)  
   
   
 ## [🤖💬 Bot Chats](./bot-chats/index.md) (45)  

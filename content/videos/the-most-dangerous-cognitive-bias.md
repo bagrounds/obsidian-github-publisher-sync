@@ -54,13 +54,13 @@ A: 📉 The Dunning-Kruger effect is a psychological phenomenon showing that peo
 ## 📚 Book Recommendations  
   
 ### ↔️ Similar  
-* 🧠 Thinking, Fast and Slow by Daniel Kahneman: Details the two systems of thought, fast/intuitive and slow/logical, and how System 1's reliance on heuristics leads directly to cognitive biases like overconfidence.  
-* 🤷 Predictably Irrational by Dan Ariely: Shows through behavioral economics experiments that human decision-making is consistently irrational, offering a deeper look into the consistent errors caused by mental shortcuts.  
+* [🤔🐇🐢 Thinking, Fast and Slow](../books/thinking-fast-and-slow.md) by Daniel Kahneman: Details the two systems of thought, fast/intuitive and slow/logical, and how System 1's reliance on heuristics leads directly to cognitive biases like overconfidence.  
+* [🔮🤷🏼‍♀️🤪 Predictably Irrational: The Hidden Forces That Shape Our Decisions](../books/predictably-irrational.md) by Dan Ariely: Shows through behavioral economics experiments that human decision-making is consistently irrational, offering a deeper look into the consistent errors caused by mental shortcuts.  
   
 ### 🆚 Contrasting  
-* 🎲 The Black Swan The Impact of the Highly Improbable by Nassim Nicholas Taleb: Focuses on the role of extreme, unpredictable events and our collective blindness to them, arguing against the kind of overconfidence that assumes risk can be fully modeled and controlled.  
-* 🌍 Factfulness Ten Reasons We're Wrong About the World – and Why Things Are Better Than You Think by Hans Rosling: Directly challenges human's biased, overconfident, and dramatic worldview by replacing intuition with data, promoting an evidence-based perspective.  
+* [⚫🦢🎲 The Black Swan: The Impact of the Highly Improbable](../books/the-black-swan-the-impact-of-the-highly-improbable.md) by Nassim Nicholas Taleb: Focuses on the role of extreme, unpredictable events and our collective blindness to them, arguing against the kind of overconfidence that assumes risk can be fully modeled and controlled.  
+* [🤔🌍📈✅ Factfulness: Ten Reasons We're Wrong About the World - and Why Things Are Better Than You Think](../books/factfulness.md) by Hans Rosling: Directly challenges human's biased, overconfident, and dramatic worldview by replacing intuition with data, promoting an evidence-based perspective.  
   
 ### 🎨 Creatively Related  
-* 🗄️ The Organized Mind Thinking Straight in the Age of Information Overload by Daniel J. Levitin: Explores how the brain processes information and why modern life causes **information overload**, connecting to the video's point that limited mental capacity and excess data lead to overconfidence.  
+* [🧠🗂️ The Organized Mind: Thinking Straight in the Age of Information Overload](../books/the-organized-mind-thinking-straight-in-the-age-of-information-overload.md) by Daniel J. Levitin: Explores how the brain processes information and why modern life causes **information overload**, connecting to the video's point that limited mental capacity and excess data lead to overconfidence.  
 * 📱 The Attention Merchants The Epic Scramble to Get Inside Our Heads by Tim Wu: Traces the history of businesses designed to capture human attention, providing context for the noisy environment where simple, confident messages are prioritized and believed over complex truth \[[17:53](http://www.youtube.com/watch?v=9M_QK4stCJU&t=1073)].

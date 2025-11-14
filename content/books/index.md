@@ -7,7 +7,7 @@ URL: https://bagrounds.org/books
 backlinks: false
 ---
 [Home](../index.md)  
-# 📚 Books (760)  
+# 📚 Books (763)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)  
 - [🧑‍🤝‍🧑📈 10 to 25: The Science of Motivating Young People: A Groundbreaking Approach to Leading the Next Generation - And Making Your Own Life Easier](./10-to-25-the-science-of-motivating-young-people-a-groundbreaking-approach-to-leading-the-next-generation-and-making-your-own-life-easier.md)  
@@ -130,6 +130,7 @@ backlinks: false
 - [⚙️📈🎯🤖 Control Systems Engineering](./control-systems-engineering.md)  
 - [⛰️⬇️📈 Convex Optimization](./convex-optimization.md)  
 - [💰👑👎🇺🇸 Corruption and Illiberal Politics in the Trump Era](./corruption-and-illiberal-politics-in-the-trump-era.md)  
+- [💰🇺🇸 Corruption in America: From Benjamin Franklin's Snuff Box to Citizens United](./corruption-in-america-from-benjamin-franklins-snuff-box-to-citizens-united.md)  
 - [💪📈 Creatine: A Natural Substance and Its Benefits for Muscle Metabolism, Fitness, Health & Longevity](./creatine-a-natural-substance-and-its-benefits-for-muscle-metabolism-fitness-health-longevity.md)  
 - [👶📊😌 Cribsheet: A Data-Driven Guide to Better, More Relaxed Parenting, from Birth to Preschool](./cribsheet.md)  
 - [🧰💬 Crucial Conversations: Tools for Talking When Stakes Are High](./crucial-conversations-tools-for-talking-when-stakes-are-high.md)  
@@ -520,6 +521,7 @@ backlinks: false
 - [👶🔤 The ABC’s of Language Development: Discover Language with Your Child](./the-abcs-of-language-development-discover-language-with-your-child.md)  
 - [✍️📣 The Adweek Copywriting Handbook: The Ultimate Guide to Writing Powerful Advertising and Marketing Copy from One of America's Top Copywriters](./the-adweek-copywriting-handbook-the-ultimate-guide-to-writing-powerful-advertising-and-marketing-copy-from-one-of-americas-top-copywriters.md)  
 - [👁️‍🗨️💰⛓️👤 The Age of Surveillance Capitalism: The Fight for a Human Future at the New Frontier of Power](./the-age-of-surveillance-capitalism.md)  
+- [🤖📈 The AI Revolution in Project Management: Elevating Productivity with Generative AI](./the-ai-revolution-in-project-management-elevating-productivity-with-generative-ai.md)  
 - [👤💬 The Analects of Confucius](./the-analects-of-confucius.md)  
 - [📱😥 The Anxious Generation: How the Great Rewiring of Childhood Is Causing an Epidemic of Mental Illness](./the-anxious-generation-how-the-great-rewiring-of-childhood-is-causing-an-epidemic-of-mental-illness.md)  
 - [🎨🙏✨ The Artist's Way: A Spiritual Path to Higher Creativity](./the-artists-way.md)  
@@ -685,6 +687,7 @@ backlinks: false
 - [⚙️🧠 The Systems Thinking Playbook: Exercises to Stretch and Build Learning and Systems Thinking Capabilities](./the-systems-thinking-playbook-exercises-to-stretch-and-build-learning-and-systems-thinking-capabilities.md)  
 - [👶🌱📈 The Talent Code: Greatness Isn't Born. It's Grown. Here's How.](./the-talent-code.md)  
 - [👴🏽📚 The Teachings of Ptahhotep: The Oldest Book in the World](./the-teachings-of-ptahhotep-the-oldest-book-in-the-world.md)  
+- [😱🏛️ The Terror Presidency: Law and Judgment Inside the Bush Administration](./the-terror-presidency-law-and-judgment-inside-the-bush-administration.md)  
 - [⚖️👈 The Tipping Point: How Little Things Can Make a Big Difference](./the-tipping-point.md)  
 - [👩🏼‍⚖️💭🧮🏆 The Tools of Argument: How the Best Lawyers Think, Argue, and Win](./the-tools-of-argument-how-the-best-lawyers-think-argue-and-win.md)  
 - [🇯🇵⚙️📈💯 The Toyota Way: 14 Management Principles from the World's Greatest Manufacturer](./the-toyota-way.md)  

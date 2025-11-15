@@ -39,7 +39,7 @@ Marshall Allen was an 🏆 award-winning investigative journalist who focused on
 These books delve into the complexities and issues within the American healthcare system, often from a critical perspective, and provide insights into patient experiences and advocacy.  
   
 * 💸 **The Price We Pay: What Broke American Health Care—and How to Fix It by Marty Makary M.D.** 🧑‍⚕️ Explores the dysfunction of the U.S. healthcare system and proposes solutions.  
-* 🤒 **An American Sickness: How Healthcare Became Big Business and How You Can Take It Back by Elisabeth Rosenthal.** An investigative look at how healthcare became a profit-driven industry and offers ways for patients to regain control.  
+* **[💰⚕️⬆️ An American Sickness: How Healthcare Became Big Business and How You Can Take It Back](./an-american-sickness-how-healthcare-became-big-business-and-how-you-can-take-it-back.md) by Elisabeth Rosenthal.** An investigative look at how healthcare became a profit-driven industry and offers ways for patients to regain control.  
 * 🙈 **Unaccountable: What Hospitals Won't Tell You and How Transparency Can Revolutionize Health Care by Marty Makary M.D.** Focuses on the lack of transparency in hospitals and its impact on patient care and costs.  
 * 🛡️ **What Your Doctor Wants You to Know to Crush Medical Debt: A Health System Insider's 3 Steps to Protect Yourself from America's #1 Cause of Bankruptcy by Virgie Bright Ellington.** Provides guidance from a healthcare insider on avoiding and managing medical debt.  
 * 🔍 **Blind Spots: When Medicine Gets It Wrong, and What It Means for Our Health by Marty Makary M.D.** Examines hidden flaws in the healthcare system affecting patient safety and outcomes.  

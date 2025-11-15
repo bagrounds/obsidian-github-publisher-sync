@@ -45,7 +45,7 @@ The 📰 Washington Post reporter David Aay's explanation provides a nuanced, ev
   
 * 💰 A deeper look into peer-reviewed **health economics research** quantifying the long-term cost savings to taxpayers from offering **preventative care** to the undocumented population versus relying solely on mandatory emergency room visits.  
 * 🇺🇸 Further investigation into the specific structures and outcomes of **state-funded**, Medicaid-like programs in blue states (like California) that cover undocumented residents, including their effect on state budgets and overall **public health metrics**.  
-* 🏭 A review of the American **healthcare system's structure**, where high costs and private insurance dynamics often overshadow the relatively small expenditures on emergency care for the undocumented, as detailed in books like *An American Sickness: How Healthcare Became Big Business and How You Can Take It Back* by Elisabeth Rosenthal.  
+* 🏭 A review of the American **healthcare system's structure**, where high costs and private insurance dynamics often overshadow the relatively small expenditures on emergency care for the undocumented, as detailed in books like [💰⚕️⬆️ An American Sickness: How Healthcare Became Big Business and How You Can Take It Back](../books/an-american-sickness-how-healthcare-became-big-business-and-how-you-can-take-it-back.md) by Elisabeth Rosenthal.  
   
 ## ❓ Frequently Asked Questions (FAQ)  
   

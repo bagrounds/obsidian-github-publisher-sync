@@ -7,8 +7,9 @@ URL: https://bagrounds.org/reflections
 backlinks: false
 ---
 [Home](../index.md)  
-# 🪞 Reflections (364)  
-- [2025-11-13](./2025-11-13.md)  
+# 🪞 Reflections (365)  
+- [2025-11-14 | ❌🇺🇸🏥🤑 Failing US Health System 📚📄](./2025-11-14.md)  
+- [2025-11-13 | 🐍 Corruption | 🪉 Orchestration | 🧠 Bias 📰📚📄📺🐦](./2025-11-13.md)  
 - [2025-11-12 | ☄️ Hail 🧩 Range 🤳🏼 Addict | ✉️ Trump & 🏝️ Epstein 📚📺📰](./2025-11-12.md)  
 - [2025-11-11 | 🌌 Systems | 💰 Economics | 🗳️ Voting | ✝️ Christianity | 🌺 Hawaii 📚📺](./2025-11-11.md)  
 - [2025-11-10 | 🫨 Vibe | ✅ Complete | 🚮 Cave 📚](./2025-11-10.md)  

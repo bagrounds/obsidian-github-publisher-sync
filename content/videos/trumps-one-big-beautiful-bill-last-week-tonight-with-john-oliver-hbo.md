@@ -40,7 +40,7 @@ youtube: https://youtu.be/vjFL-cBcjKc
     * [🧑🏿⛓️🙈 The New Jim Crow: Mass Incarceration in the Age of Colorblindness](../books/the-new-jim-crow-mass-incarceration-in-the-age-of-colorblindness.md) by Michelle Alexander  
 * **📚 For understanding healthcare policy and its effects**:  
     * [⚕️💰🇺🇸 The Healing of America: A Global Quest for Better, Cheaper, and Fairer Health Care](../books/the-healing-of-america-a-global-quest-for-better-cheaper-and-fairer-health-care.md) by T.R. Reid  
-    * *🏥 An American Sickness: How Healthcare Became Big Business and How You Can Take It Back* by Elisabeth Rosenthal  
+    * [💰⚕️⬆️ An American Sickness: How Healthcare Became Big Business and How You Can Take It Back](../books/an-american-sickness-how-healthcare-became-big-business-and-how-you-can-take-it-back.md) by Elisabeth Rosenthal  
 * **📚 For understanding tax policy and economic inequality**:  
     * 💰📈🌍⏳ *[Capital in the Twenty-First Century](../books/capital-in-the-twenty-first-century.md)* by Thomas Piketty  
     * [💰➡️ The Triumph of Injustice: How the Rich Dodge Taxes and How to Make Them Pay](../books/the-triumph-of-injustice-how-the-rich-dodge-taxes-and-how-to-make-them-pay.md) by Emmanuel Saez and Gabriel Zucman  

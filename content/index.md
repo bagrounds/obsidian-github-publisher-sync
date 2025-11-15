@@ -12,8 +12,9 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 ❔ What do 🫵 _you_ 🤔 think?  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (364)  
-- [2025-11-13](./reflections/2025-11-13.md)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (365)  
+- [2025-11-14 | ❌🇺🇸🏥🤑 Failing US Health System 📚📄](./reflections/2025-11-14.md)  
+- [2025-11-13 | 🐍 Corruption | 🪉 Orchestration | 🧠 Bias 📰📚📄📺🐦](./reflections/2025-11-13.md)  
 - [2025-11-12 | ☄️ Hail 🧩 Range 🤳🏼 Addict | ✉️ Trump & 🏝️ Epstein 📚📺📰](./reflections/2025-11-12.md)  
 - [2025-11-11 | 🌌 Systems | 💰 Economics | 🗳️ Voting | ✝️ Christianity | 🌺 Hawaii 📚📺](./reflections/2025-11-11.md)  
 - [2025-11-10 | 🫨 Vibe | ✅ Complete | 🚮 Cave 📚](./reflections/2025-11-10.md)  
@@ -22,33 +23,32 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [2025-11-07 | 🏗️ Reconstruction | 👎 Repudiation 📚📺](./reflections/2025-11-07.md)  
 - [2025-11-06 | 📜 History | 💰 Economics | 😇 Virtue 📚📺👥](./reflections/2025-11-06.md)  
 - [2025-11-05 | 💲 Minsky | 🇺🇸 America | 🤖 MCP 📚📄📺](./reflections/2025-11-05.md)  
-- [2025-11-04 | 🗳️ Election Day 📚📰📺](./reflections/2025-11-04.md)  
   
   
-## [📚 Books](./books/index.md) (763)  
+## [📚 Books](./books/index.md) (764)  
+- [💰⚕️ Making Them Pay: How to Get the Most from Health Insurance and Managed Care](./books/making-them-pay-how-to-get-the-most-from-health-insurance-and-managed-care.md)  
+- [⚕️💰🇺🇸 The Healing of America: A Global Quest for Better, Cheaper, and Fairer Health Care](./books/the-healing-of-america-a-global-quest-for-better-cheaper-and-fairer-health-care.md)  
+- [🙅🏼‍♀️🧾🏥⚔️ Never Pay the First Bill: And Other Ways to Fight the Health Care System and Win](./books/never-pay-the-first-bill-and-other-ways-to-fight-the-health-care-system-and-win.md)  
+- [⚕️💸 Health Insurance in America: A Consumer's Guide](./books/health-insurance-in-america-a-consumers-guide.md)  
+- [💰⚕️⬆️ An American Sickness: How Healthcare Became Big Business and How You Can Take It Back](./books/an-american-sickness-how-healthcare-became-big-business-and-how-you-can-take-it-back.md)  
 - [😱🏛️ The Terror Presidency: Law and Judgment Inside the Bush Administration](./books/the-terror-presidency-law-and-judgment-inside-the-bush-administration.md)  
 - [💰🇺🇸 Corruption in America: From Benjamin Franklin's Snuff Box to Citizens United](./books/corruption-in-america-from-benjamin-franklins-snuff-box-to-citizens-united.md)  
 - [🤖📈 The AI Revolution in Project Management: Elevating Productivity with Generative AI](./books/the-ai-revolution-in-project-management-elevating-productivity-with-generative-ai.md)  
 - [🐦‍🔥💻 The Phoenix Project](./books/the-phoenix-project.md)  
 - [🌅🔪💀 Sunrise On The Reaping](./books/sunrise-on-the-reaping.md)  
-- [🌐🔭🎨🧩👨‍🎓 Range: Why Generalists Triumph in a Specialized World](./books/range.md)  
-- [➡️🌌🚀😡 A Long Way to a Small, Angry Planet](./books/a-long-way-to-a-small-angry-planet.md)  
-- [☄️🧑‍🚀🙏🌍 Project Hail Mary](./books/project-hail-mary.md)  
-- [😥🏫🇺🇸 The Shame of the Nation: The Restoration of Apartheid Schooling in America](./books/the-shame-of-the-nation-the-restoration-of-apartheid-schooling-in-america.md)  
-- [🪢🌾 Braiding Sweetgrass: Indigenous Wisdom, Scientific Knowledge, and the Teachings of Plants](./books/braiding-sweetgrass.md)  
   
   
 ## [📺 Videos](./videos/index.md) (431)  
-- [⚠️🧠⚔️ The Most Dangerous Cognitive Bias](./videos/the-most-dangerous-cognitive-bias.md)  
-- [🪖👨‍⚖️❓ Military personnel seek legal advice on whether Trump-ordered missions are lawful](./videos/military-personnel-seek-legal-advice-on-whether-trump-ordered-missions-are-lawful.md)  
-- [🏛️🗣️🗓️ Politics Chat, November 13, 2025](./videos/politics-chat-november-13-2025.md)  
-- [🏛️📣👹🤑 Schiff Takes To Senate Floor to Lay Out Trump's 10 Most Corrupt Acts So Far](./videos/schiff-takes-to-senate-floor-to-lay-out-trumps-10-most-corrupt-acts-so-far.md)  
-- [👨‍⚖️📧❓ Trump faces fresh Epstein questions as new emails and files are released](./videos/trump-faces-fresh-epstein-questions-as-new-emails-and-files-are-released.md)  
-- [🏛️➡️🚪⚠️ Prominent conservative judge resigns, calling Trump 'uniquely dangerous'](./videos/prominent-conservative-judge-resigns-calling-trump-uniquely-dangerous.md)  
-- [🧠🔄🛠️✅ How to fix your addicted brain, permanently (science-based)](./videos/how-to-fix-your-addicted-brain-permanently-science-based.md)  
-- [🇺🇸📚🔄 A look at what's behind the efforts to reshape how American history is taught](./videos/a-look-at-whats-behind-the-efforts-to-reshape-how-american-history-is-taught.md)  
-- [🗣️🗓️🇺🇸 Politics Chat, November 11, 2025](./videos/politics-chat-november-11-2025.md)  
-- [🗺️✂️🏛️🗣️ American Conversations: Gerrymandering with Kate Compton Barr and Sam Wang](./videos/american-conversations-gerrymandering-with-kate-compton-barr-and-sam-wang.md)  
+- [💰📈🤕 Why millions of Americans are facing a spike in health care costs](./videos/why-millions-of-americans-are-facing-a-spike-in-health-care-costs.md)  
+- [🤡💵📺 Trump’s One Big Beautiful Bill: Last Week Tonight with John Oliver (HBO)](./videos/trumps-one-big-beautiful-bill-last-week-tonight-with-john-oliver-hbo.md)  
+- [💰💣 What Trump’s ‘Big, Beautiful Bill’ Is Really Doing (Part 1) | The Ezra Klein Show](./videos/what-trumps-big-beautiful-bill-is-really-doing-part-1-the-ezra-klein-show.md)  
+- [👹📜🏛️🏠 What's in the version of Trump's bill passed by the Senate and its chances in the House](./videos/whats-in-the-version-of-trumps-bill-passed-by-the-senate-and-its-chances-in-the-house.md)  
+- [🗣️🤫🐘 Mike Levin Reveals What Republicans Told Him Behind Closed Doors About Big Beautiful Bill](./videos/mike-levin-reveals-what-republicans-told-him-behind-closed-doors-about-big-beautiful-bill.md)  
+- [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./videos/10-charts-to-understand-the-900-page-budget-bill.md)  
+- [😵‍💫🇺🇸🐘🚫 Strange cognitive dissonance among the MAGA who are convinced to vote against their own interests](./videos/strange-cognitive-dissonance-among-the-maga-who-are-convinced-to-vote-against-their-own-interests.md)  
+- [🤔➡️💰 Why Republicans once staunchly opposed to Trump's bill changed their minds](./videos/why-republicans-once-staunchly-opposed-to-trumps-bill-changed-their-minds.md)  
+- [👹📜🏛️ Brooks and Capehart on House Republicans passing Trump's legislative agenda](./videos/brooks-and-capehart-on-house-republicans-passing-trumps-legislative-agenda.md)  
+- [❓🏥🛂 Who Pays for Undocumented Migrants’ Healthcare? Reporter Explains | Amanpour and Company](./videos/who-pays-for-undocumented-migrants-healthcare-reporter-explains-amanpour-and-company.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (82)  
@@ -59,12 +59,12 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [🗣️🗣️ Bilingualism](./topics/bilingualism.md)  
   
   
-## [📄  Articles](./articles/index.md) (72)  
+## [📄  Articles](./articles/index.md) (73)  
+- [🪞🇺🇸💔 Mirror, Mirror 2024: A Portrait of the Failing U.S. Health System](./articles/mirror-mirror-2024-a-portrait-of-the-failing-us-health-system.md)  
 - [🧑‍🤝‍🧑🤖🧠 Orchestrating Human AI Teams: The Manager Agent as a Unifying Research Challenge](./articles/orchestrating-human-ai-teams-the-manager-agent-as-a-unifying-research-challenge.md)  
 - [🗣️🧠🧑‍💻📚 Relating Natural Language Aptitude to Individual Differences in Learning Programming Languages](./articles/relating-natural-language-aptitude-to-individual-differences-in-learning-programming-languages.md)  
 - [🙋‍♂️🚩🚫 Musk’s inauguration salute is not the only apparent fascist signal from Trump’s administration](./articles/musks-inauguration-salute-is-not-the-only-apparent-fascist-signal-from-trumps-administration.md)  
 - [🏛️🔍❌🗳️ Analysis: Heritage Foundation’s Database Undermines Claims of Recent Voter Fraud](./articles/analysis-heritage-foundations-database-undermines-claims-of-recent-voter-fraud.md)  
-- [🤖🧠📈⚡ Code execution with MCP: Building more efficient agents](./articles/code-execution-with-mcp-building-more-efficient-agents.md)  
   
   
 ## [🤖💬 Bot Chats](./bot-chats/index.md) (45)  

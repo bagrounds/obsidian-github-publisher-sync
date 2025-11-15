@@ -7,7 +7,7 @@ backlinks: false
 URL: https://bagrounds.org/articles
 ---
 [Home](../index.md)  
-# 📄 Articles (72)  
+# 📄 Articles (73)  
 - [🗓️🇵🇹💉✅🕊️ 20 years of Portuguese drug policy - developments, challenges and the quest for human rights](./20-years-of-portuguese-drug-policy-developments-challenges-and-the-quest-for-human-rights.md)  
 - [🦊😈🐾🕵️💸 5 takeaways about NPR's reporting on the whistleblower report about DOGE at the NLRB](./5-takeaways-about-nprs-reporting-on-the-whistleblower-report-about-doge-at-the-nlrb.md)  
 - [🌱🤖⚙️🖐️ 5 tips on getting started with Gems, your custom AI experts](./5-tips-on-getting-started-with-gems-your-custom-ai-experts.md)  
@@ -50,6 +50,7 @@ URL: https://bagrounds.org/articles
 - [🇷🇺🇺🇸👹🗳️💸 Letters from an American - August 18, 2025](./letters-from-an-american-august-18-2025.md)  
 - [🧲🧑‍💻🤖 Magnetic UI: Towards Human In The Loop Agentic Systems](./magentic-ui-towards-human-in-the-loop-agentic-systems.md)  
 - [⚙️🛡️🐛 Making Reliable Distributed Systems in the Presence of Software Errors](./making-reliable-distributed-systems-in-the-presence-of-software-errors.md)  
+- [🪞🇺🇸💔 Mirror, Mirror 2024: A Portrait of the Failing U.S. Health System](./mirror-mirror-2024-a-portrait-of-the-failing-us-health-system.md)  
 - [🏛️🗞️🦊 More than 50 House Democrats demand answers after whistleblower report on DOGE](./more-than-50-house-democrats-demand-answers-after-whistleblower-report-on-doge.md)  
 - [Mouth And Throat Exercises to Help Stop Snoring and Improve OSA](./mouth-and-throat-exercises-to-help-stop-snoring-and-improve-osa.md)  
 - [🎶👶🧠🗣️ Musical intervention enhances infants’ neural processing of temporal structure in music and speech](./musical-intervention-enhances-infants-neural-processing-of-temporal-structure-in-music-and-speech.md)  

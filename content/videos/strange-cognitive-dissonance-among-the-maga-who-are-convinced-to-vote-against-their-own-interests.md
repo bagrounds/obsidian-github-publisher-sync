@@ -43,7 +43,7 @@ youtube: https://youtu.be/2fUs-YDzZPU
   
 * **⚕️ Healthcare Policy:**  
     * [⚕️💰🇺🇸 The Healing of America: A Global Quest for Better, Cheaper, and Fairer Health Care](../books/the-healing-of-america-a-global-quest-for-better-cheaper-and-fairer-health-care.md) by T.R. Reid  
-    * *An American Sickness: How Healthcare Became Big Business and How You Can Take It Back* by Elisabeth Rosenthal  
+    * [💰⚕️⬆️ An American Sickness: How Healthcare Became Big Business and How You Can Take It Back](../books/an-american-sickness-how-healthcare-became-big-business-and-how-you-can-take-it-back.md) by Elisabeth Rosenthal  
   
 ## 🐦 Tweet  
 <blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">😵‍💫🇺🇸🐘🚫 Strange cognitive dissonance among the MAGA who are convinced to vote against their own interests<br><br>💔 Impact on the Poor | ⚕️📉 Healthcare | 💥 Potential Backlash | 🇺🇸📉 US Global Standing | 🍔📉 Food Stamps | 🤔 Mood in the US<a href="https://t.co/wbePUm7qlz">https://t.co/wbePUm7qlz</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/1941668441422954722?ref_src=twsrc%5Etfw">July 6, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

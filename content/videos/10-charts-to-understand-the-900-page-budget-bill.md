@@ -32,7 +32,7 @@ youtube: https://youtu.be/UtBa6BM-2OE
     * [💰➡️ The Triumph of Injustice: How the Rich Dodge Taxes and How to Make Them Pay](../books/the-triumph-of-injustice-how-the-rich-dodge-taxes-and-how-to-make-them-pay.md) by Emmanuel Saez and Gabriel Zucman  
 * 🩺 **For information on healthcare policy and Medicaid:**  
     * [⚕️💰🇺🇸 The Healing of America: A Global Quest for Better, Cheaper, and Fairer Health Care](../books/the-healing-of-america-a-global-quest-for-better-cheaper-and-fairer-health-care.md) by T.R. Reid  
-    * 📖 "An American Sickness: How Healthcare Became Big Business and How You Can Take It Back" by Elisabeth Rosenthal  
+    * [💰⚕️⬆️ An American Sickness: How Healthcare Became Big Business and How You Can Take It Back](../books/an-american-sickness-how-healthcare-became-big-business-and-how-you-can-take-it-back.md) by Elisabeth Rosenthal  
 * 🧑‍🎓 **For discussions on student loan debt and its economic effects:**  
     * 📖 "The Debt Trap: How Student Loans Became a National Catastrophe" by Josh Mitchell  
     * 📖 "Lower Ed: The Troubling Rise of For-Profit Colleges in the New Economy" by Tressie McMillan Cottom  

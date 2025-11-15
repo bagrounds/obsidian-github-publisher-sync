@@ -42,7 +42,7 @@ tags:
   
 ### ↔️ Similar  
 * [⚕️💰🇺🇸 The Healing of America: A Global Quest for Better, Cheaper, and Fairer Health Care](../books/the-healing-of-america-a-global-quest-for-better-cheaper-and-fairer-health-care.md) by T.R. Reid. 🌍 **This book offers journalistic comparisons** of various international health care systems to the U.S. model, echoing the report's structure and conclusions.  
-* 💡 An American Sickness How America’s Health Care System Became Profiteering and How We Can Fix It by Elisabeth Rosenthal. 📈 **It details the specific financial and administrative incentives** that drive high costs in the U.S., providing an in-depth look at the internal mechanisms that create the inefficiency highlighted in the report.  
+* [💰⚕️⬆️ An American Sickness: How Healthcare Became Big Business and How You Can Take It Back](../books/an-american-sickness-how-healthcare-became-big-business-and-how-you-can-take-it-back.md) by Elisabeth Rosenthal. 📈 **It details the specific financial and administrative incentives** that drive high costs in the U.S., providing an in-depth look at the internal mechanisms that create the inefficiency highlighted in the report.  
   
 ### 🆚 Contrasting  
 * 🛡️ The Patient Will See You Now The Future of Medicine Is in Your Hands by Eric Topol. 🔬 **It focuses on the transformative potential of digital medicine and technology** to personalize care and improve patient outcomes, contrasting the current system's structural failings with a future focused on technological efficiency.  

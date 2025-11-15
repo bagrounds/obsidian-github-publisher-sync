@@ -87,7 +87,7 @@ CTA: 🩺 Examine healthcare.
 ### ➕ Similar  
 * 🎥 SICKO by Michael Moore (documentary, explores similar themes)  
 * 📜 The Social Transformation of American Medicine by Paul Starr  
-* 🤒 An American Sickness: How Healthcare Became Big Business and How You Can Take It Back by Elisabeth Rosenthal  
+* [💰⚕️⬆️ An American Sickness: How Healthcare Became Big Business and How You Can Take It Back](./an-american-sickness-how-healthcare-became-big-business-and-how-you-can-take-it-back.md) by Elisabeth Rosenthal  
   
 ### ➖ Contrasting  
 * 👨‍⚕️ The Patient Will See You Now: The Future of Medicine Is in Your Hands by Eric Topol  

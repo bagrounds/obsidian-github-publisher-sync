@@ -7,7 +7,7 @@ URL: https://bagrounds.org/videos
 backlinks: false
 ---
 [Home](../index.md)  
-# 📺 Videos (431)  
+# 📺 Videos (434)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
 - [❓💪🔬 12 Questions About Creatine with Stephen Cornish, PhD](./12-questions-about-creatine-w-stephen-cornish-phd.md)  
@@ -56,6 +56,7 @@ backlinks: false
 - [🇺🇸⚔️ Are We Headed for a Civil War? | Explainer](./are-we-headed-for-a-civil-war-explainer.md)  
 - [🗣️🛠️☮️ A simple tool for better communication during toxic conflict | Amanda Ripley](./a-simple-tool-for-better-communication-during-toxic-conflict-amanda-ripley.md)  
 - [👶🧩🧠➡️ A Simple Way to Learn Complex Skills](./a-simple-way-to-learn-complex-skills.md)  
+- [🌍🏠📉 Aswath Damodaran Says «There’s No Place to Hide in Stocks» | Prof G Markets](./aswath-damodaran-says-theres-no-place-to-hide-in-stocks-prof-g-markets.md)  
 - [🔬🛡️🤥 Authors of 'Science Under Siege' warn of concerted effort to discredit science](./authors-of-science-under-siege-warn-of-concerted-effort-to-discredit-science.md)  
 - [🧩🗣️👎 Autism advocate calls Trump's statements on the condition 'stigmatizing'](./autism-advocate-calls-trumps-statements-on-the-condition-stigmatizing.md)  
 - [👨‍💻➡️🤖🧩 Beyond the IDE: Toward Multi-Agent Orchestration](./beyond-the-ide-toward-multi-agent-orchestration.md)  
@@ -361,6 +362,7 @@ backlinks: false
 - [Trump administration targets college and university budgets in DEI crackdown](./trump-administration-targets-college-and-university-budgets-in-dei-crackdown.md)  
 - [👹💰🚫👩‍🏫 Trump administration withholds billions in school grants for critical programs](./trump-administration-withholds-billions-in-school-grants-for-critical-programs.md)  
 - [🍊🚫👯‍♀️🏛️ Trump Dodges Ghislaine Maxwell Pardon Q as Bondi Stonewalls Senate | The Daily Show](./trump-dodges-ghislaine-maxwell-pardon-q-as-bondi-stonewalls-senate-the-daily-show.md)  
+- [🍊🤡😈 Trump & Epstein Last Week Tonight](./trump-epstein-last-week-tonight.md)  
 - [👨‍⚖️📧❓ Trump faces fresh Epstein questions as new emails and files are released](./trump-faces-fresh-epstein-questions-as-new-emails-and-files-are-released.md)  
 - [👨‍⚖️💂‍♂️🚨🇺🇸 Trump Orders Another 2,000 Guardsmen, 700 Marines To LA | NPR News Now](./trump-orders-another-2000-guardsmen-700-marines-to-la-npr-news-now.md)  
 - [👹🤡👑📢 Trump’s Distractions Are Part of the Authoritarian Playbook | Explainer](./trumps-distractions-are-part-of-the-authoritarian-playbook-explainer.md)  
@@ -405,6 +407,7 @@ backlinks: false
 - [❓🤯😵‍💫 What the Heck Just Happened | 2025-08-30](./what-the-heck-just-happened-2025-08-30.md)  
 - [❓🤯😵‍💫🤷 What the Heck Just Happened? | 2025-09-27](./what-the-heck-just-happened-2025-09-27.md)  
 - [❓😵🤯 What the Heck Just Happened (2025-10-25)?](./what-the-heck-just-happened-2025-10-25.md)  
+- [❓🤯😵‍💫 What the Heck Just Happened | 2025-11-15](./what-the-heck-just-happened-2025-11-15.md)  
 - [🇺🇸📈💡🔮🚀 What the U.S. has accomplished in 250 years of innovation and what’s next](./what-the-us-has-accomplished-in-250-years-of-innovation-and-whats-next.md)  
 - [💰💣 What Trump’s ‘Big, Beautiful Bill’ Is Really Doing (Part 1) | The Ezra Klein Show](./what-trumps-big-beautiful-bill-is-really-doing-part-1-the-ezra-klein-show.md)  
 - [👹👶🏼💸➡️👴🏻💰 What Trump’s ‘Big, Beautiful Bill’ Is Really Doing (Part 2) | The Ezra Klein Show](./what-trumps-big-beautiful-bill-is-really-doing-part-2-the-ezra-klein-show.md)  

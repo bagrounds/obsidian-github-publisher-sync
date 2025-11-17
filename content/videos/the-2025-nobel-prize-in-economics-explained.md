@@ -55,7 +55,7 @@ A: ⚖️ Optimal policy involves balancing the protection of IP to grant innova
 ## 📚 Book Recommendations  
   
 ### ↔️ Similar  
-* 📚 Prophet of Innovation: Joseph Schumpeter and Creative Destruction by Thomas K. McCraw. 💡 This book provides an essential biography and detailed analysis of the economist who originally coined and championed the concept of creative destruction.  
+* [🧑‍💼💥 Prophet of Innovation: Joseph Schumpeter and Creative Destruction](../books/prophet-of-innovation-joseph-schumpeter-and-creative-destruction.md): Joseph Schumpeter and Creative Destruction by Thomas K. McCraw. 💡 This book provides an essential biography and detailed analysis of the economist who originally coined and championed the concept of creative destruction.  
 * 📚 The Power of Creative Destruction by Philippe Aghion, Céline Antonin, and Simon Bunel. 💡 Written by one of the Nobel laureates, this book further explains their model and directly explores its applications for contemporary economic and policy challenges.  
   
 ### 🆚 Contrasting  

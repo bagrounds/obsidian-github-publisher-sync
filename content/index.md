@@ -12,7 +12,9 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 ❔ What do 🫵 _you_ 🤔 think?  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (365)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (367)  
+- [2025-11-16](./reflections/2025-11-16.md)  
+- [2025-11-15 | 🔭 Range | 💹 Stocks | 🌋 Meltdown 📚📺](./reflections/2025-11-15.md)  
 - [2025-11-14 | ❌🇺🇸🏥🤑 Failing US Health System 📚📄](./reflections/2025-11-14.md)  
 - [2025-11-13 | 🐍 Corruption | 🪉 Orchestration | 🧠 Bias 📰📚📄📺🐦](./reflections/2025-11-13.md)  
 - [2025-11-12 | ☄️ Hail 🧩 Range 🤳🏼 Addict | ✉️ Trump & 🏝️ Epstein 📚📺📰](./reflections/2025-11-12.md)  
@@ -21,11 +23,10 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [2025-11-09 | 🌐 Systems | 🗳️ Democracy | 🧸 Play 📚📰📺](./reflections/2025-11-09.md)  
 - [2025-11-08 | 🚮 Decluttering | 🗳️ Voting | 🙋🏼‍♂️ Fascism | 🥦 SNAP 📚📄📰📺](./reflections/2025-11-08.md)  
 - [2025-11-07 | 🏗️ Reconstruction | 👎 Repudiation 📚📺](./reflections/2025-11-07.md)  
-- [2025-11-06 | 📜 History | 💰 Economics | 😇 Virtue 📚📺👥](./reflections/2025-11-06.md)  
-- [2025-11-05 | 💲 Minsky | 🇺🇸 America | 🤖 MCP 📚📄📺](./reflections/2025-11-05.md)  
   
   
-## [📚 Books](./books/index.md) (764)  
+## [📚 Books](./books/index.md) (765)  
+- [🏦👨‍💼💥 Dark Towers: Deutsche Bank, Donald Trump, and an Epic Trail of Destruction](./books/dark-towers-deutsche-bank-donald-trump-and-an-epic-trail-of-destruction.md)  
 - [💰⚕️ Making Them Pay: How to Get the Most from Health Insurance and Managed Care](./books/making-them-pay-how-to-get-the-most-from-health-insurance-and-managed-care.md)  
 - [⚕️💰🇺🇸 The Healing of America: A Global Quest for Better, Cheaper, and Fairer Health Care](./books/the-healing-of-america-a-global-quest-for-better-cheaper-and-fairer-health-care.md)  
 - [🙅🏼‍♀️🧾🏥⚔️ Never Pay the First Bill: And Other Ways to Fight the Health Care System and Win](./books/never-pay-the-first-bill-and-other-ways-to-fight-the-health-care-system-and-win.md)  
@@ -35,20 +36,19 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [💰🇺🇸 Corruption in America: From Benjamin Franklin's Snuff Box to Citizens United](./books/corruption-in-america-from-benjamin-franklins-snuff-box-to-citizens-united.md)  
 - [🤖📈 The AI Revolution in Project Management: Elevating Productivity with Generative AI](./books/the-ai-revolution-in-project-management-elevating-productivity-with-generative-ai.md)  
 - [🐦‍🔥💻 The Phoenix Project](./books/the-phoenix-project.md)  
-- [🌅🔪💀 Sunrise On The Reaping](./books/sunrise-on-the-reaping.md)  
   
   
-## [📺 Videos](./videos/index.md) (431)  
+## [📺 Videos](./videos/index.md) (434)  
+- [🍊🤡😈 Trump & Epstein Last Week Tonight](./videos/trump-epstein-last-week-tonight.md)  
+- [📢👨⚖️🗣️ Tamara Keith and Amy Walter on the public response to Trump's handling of the Epstein case](./videos/tamara-keith-and-amy-walter-on-the-public-response-to-trumps-handling-of-the-epstein-case.md)  
+- [❓🤯😵‍💫 What the Heck Just Happened | 2025-11-15](./videos/what-the-heck-just-happened-2025-11-15.md)  
+- [🌍🏠📉 Aswath Damodaran Says «There’s No Place to Hide in Stocks» | Prof G Markets](./videos/aswath-damodaran-says-theres-no-place-to-hide-in-stocks-prof-g-markets.md)  
 - [💰📈🤕 Why millions of Americans are facing a spike in health care costs](./videos/why-millions-of-americans-are-facing-a-spike-in-health-care-costs.md)  
 - [🤡💵📺 Trump’s One Big Beautiful Bill: Last Week Tonight with John Oliver (HBO)](./videos/trumps-one-big-beautiful-bill-last-week-tonight-with-john-oliver-hbo.md)  
 - [💰💣 What Trump’s ‘Big, Beautiful Bill’ Is Really Doing (Part 1) | The Ezra Klein Show](./videos/what-trumps-big-beautiful-bill-is-really-doing-part-1-the-ezra-klein-show.md)  
 - [👹📜🏛️🏠 What's in the version of Trump's bill passed by the Senate and its chances in the House](./videos/whats-in-the-version-of-trumps-bill-passed-by-the-senate-and-its-chances-in-the-house.md)  
 - [🗣️🤫🐘 Mike Levin Reveals What Republicans Told Him Behind Closed Doors About Big Beautiful Bill](./videos/mike-levin-reveals-what-republicans-told-him-behind-closed-doors-about-big-beautiful-bill.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./videos/10-charts-to-understand-the-900-page-budget-bill.md)  
-- [😵‍💫🇺🇸🐘🚫 Strange cognitive dissonance among the MAGA who are convinced to vote against their own interests](./videos/strange-cognitive-dissonance-among-the-maga-who-are-convinced-to-vote-against-their-own-interests.md)  
-- [🤔➡️💰 Why Republicans once staunchly opposed to Trump's bill changed their minds](./videos/why-republicans-once-staunchly-opposed-to-trumps-bill-changed-their-minds.md)  
-- [👹📜🏛️ Brooks and Capehart on House Republicans passing Trump's legislative agenda](./videos/brooks-and-capehart-on-house-republicans-passing-trumps-legislative-agenda.md)  
-- [❓🏥🛂 Who Pays for Undocumented Migrants’ Healthcare? Reporter Explains | Amanpour and Company](./videos/who-pays-for-undocumented-migrants-healthcare-reporter-explains-amanpour-and-company.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (82)  

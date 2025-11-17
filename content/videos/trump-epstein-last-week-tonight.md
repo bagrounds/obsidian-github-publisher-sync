@@ -16,12 +16,12 @@ youtube: https://youtube.com/embed/SLVL_wg3Hz0
   
 ## 🤖 AI Summary  
   
-* 🤦‍♂️ Criticism of the Trump-Epstein connection comes even from his base, including the 😡 QAnon shaman who called Trump a "stupid piece of shit" and a "fraud" \[[00:00](http://www.youtube.com/watch?v=SLVL_wg3Hz0&t=0)].  
+* 🤦‍♂️ Criticism of the Trump-Epstein connection comes even from his base, including the 😡 QAnon shaman who posted "Fuck this stupid peice of shit... What a fraud..." \[[00:00](http://www.youtube.com/watch?v=SLVL_wg3Hz0&t=0)].  
 * 🙈 Ignoring the issue 🤨 requires dismissing years of documented association between the two men \[[00:13](http://www.youtube.com/watch?v=SLVL_wg3Hz0&t=13)].  
 * 🤝 Epstein repeatedly visited Trump at Mar-a-Lago, attended his wedding, and was seen at Victoria's Secret fashion shows \[[00:27](http://www.youtube.com/watch?v=SLVL_wg3Hz0&t=27)].  
 * ✈️ Trump flew on Epstein's private plane eight times \[[00:33](http://www.youtube.com/watch?v=SLVL_wg3Hz0&t=33)].  
 * 🗣️ Trump told a reporter he'd known Jeff for 15 years, calling him a terrific guy who likes beautiful women, many of whom are "on the younger side" \[[00:42](http://www.youtube.com/watch?v=SLVL_wg3Hz0&t=42)].  
-* 👸 Trump hosted a calendar girl competition where only he and Epstein were the only guests, aside from the women flown in for entertainment \[[00:49](http://www.youtube.com/watch?v=SLVL_wg3Hz0&t=49)].  
+* 👸 Trump hosted a calendar girl competition where he and Epstein were the only guests, aside from the women flown in for entertainment \[[00:49](http://www.youtube.com/watch?v=SLVL_wg3Hz0&t=49)].  
 * ✋ Separate allegations include Trump bragging about grabbing genitals and being accused by five Miss Teen USA contestants of walking in on them while changing \[[01:00](http://www.youtube.com/watch?v=SLVL_wg3Hz0&t=60)].  
 * ⚖️ A jury previously found Trump liable for sexual abuse \[[01:17](http://www.youtube.com/watch?v=SLVL_wg3Hz0&t=77)].  
 * In a 2010 deposition, Epstein 🤐 invoked his Fifth, Sixth, and Fourteenth Amendment rights when asked if he socialized with Trump around females under 18 \[[01:56](http://www.youtube.com/watch?v=SLVL_wg3Hz0&t=116)].  
@@ -65,4 +65,7 @@ youtube: https://youtube.com/embed/SLVL_wg3Hz0
 ### 🎨 Creatively Related  
   
 * 🎭 Trust by Hernan Diaz: 📚 A fictional exploration of massive wealth, public image, and hidden realities, tangentially relating to power and reputation.  
-* ⚖️ The Power Broker: Robert Moses and the Fall of New York by Robert A. Caro: 🗽 Examines how unchecked power and influence can reshape institutions and public life, an historical parallel to elite accountability.
+* ⚖️ The Power Broker: Robert Moses and the Fall of New York by Robert A. Caro: 🗽 Examines how unchecked power and influence can reshape institutions and public life, an historical parallel to elite accountability.  
+  
+## 🐦 Tweet  
+<blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">Beyond that, though, there&#39;s nothing there... except for a jury finding him liable for sexual abuse, but other than that, there&#39;s nothing to see.<a href="https://twitter.com/LastWeekTonight?ref_src=twsrc%5Etfw">@LastWeekTonight</a><a href="https://t.co/OOE94F6JuT">https://t.co/OOE94F6JuT</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/1990297622796812423?ref_src=twsrc%5Etfw">November 17, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

@@ -79,7 +79,7 @@ affiliate link: https://amzn.to/480Adjd
 ### Similar  
 * 🐜 Journey to the Ants by Bert Hölldobler and Edward O. Wilson  
 * 🌐 The Superorganism: The Beauty, Elegance, and Strangeness of Insect Societies by Bert Hölldobler and Edward O. Wilson  
-* 🐜 Empire of Ants: The Hidden Worlds and Extraordinary Lives of Earth's Tiny Conquerors by Susanne Foitzik and Olaf Fritsche  
+* [🐜👑 Empire of Ants: The Hidden World and Extraordinary Lives of Earth's Tiny Conquerors](./empire-of-ants-the-hidden-world-and-extraordinary-lives-of-earths-tiny-conquerors.md) by Susanne Foitzik and Olaf Fritsche  
 * 🐜 Ants at Work: How an Insect Society is Organized by Deborah M. Gordon  
   
 ### Contrasting (Broader Sociobiology Implications)  

@@ -80,5 +80,5 @@ youtube: https://youtu.be/fdDJub69Hnk
     * 💡 This book describes the mental state of flow, achieved when a challenge perfectly matches one's skill level. The running leap is the child actively managing their environment to enter this optimal state of challenge and competence.  
 * **[🌱🧘🏼‍♀️🏆 Mindset: The New Psychology of Success](../books/mindset.md)** by Carol S. Dweck  
     * 🧠 Dweck's work on fixed versus growth mindsets relates to the video's core idea: by focusing on the process and effort (backing up) rather than the outcome (making the jump), adults help children adopt a growth mindset essential for embracing challenges.  
-* 🗺️ **Free to Learn Why Unleashing the Instinct to Play Will Make Our Children Happier, More Self-Reliant, and Better Students for Life** by Peter Gray  
+* **[🧒🎮 Free to Learn: Why Unleashing the Instinct to Play Will Make Our Children Happier, More Self-Reliant, and Better Students for Life](../books/free-to-learn-why-unleashing-the-instinct-to-play-will-make-our-children-happier-more-self-reliant-and-better-students-for-life.md)** by Peter Gray  
     * 🏞️ This book argues that children are inherently educational and designed to learn through self-directed play, which is the foundational belief supporting the speaker's advice to trust the child's inner process and stay out of their way.

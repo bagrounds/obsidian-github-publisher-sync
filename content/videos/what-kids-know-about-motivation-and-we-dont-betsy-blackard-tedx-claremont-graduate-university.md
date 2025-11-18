@@ -1,8 +1,8 @@
 ---
 share: true
 aliases:
-  - 👶🏆🧠✨ What kids know about motivation (and we don't) | Betsy Blackard | TEDxClaremontGraduateUniversity
-title: 👶🏆🧠✨ What kids know about motivation (and we don't) | Betsy Blackard | TEDxClaremontGraduateUniversity
+  - 👶🏆🧠✨ What kids know about motivation (and we don't) | Betsy Blackard | TEDx Claremont Graduate University
+title: 👶🏆🧠✨ What kids know about motivation (and we don't) | Betsy Blackard | TEDx Claremont Graduate University
 URL: https://bagrounds.org/videos/what-kids-know-about-motivation-and-we-dont-betsy-blackard-tedx-claremont-graduate-university
 Author:
 Platform:
@@ -11,7 +11,7 @@ tags:
 youtube: https://youtu.be/fdDJub69Hnk
 ---
 [Home](../index.md) > [Videos](./index.md)  
-# 👶🏆🧠✨ What kids know about motivation (and we don't) | Betsy Blackard | TEDxClaremontGraduateUniversity  
+# 👶🏆🧠✨ What kids know about motivation (and we don't) | Betsy Blackard | TEDx Claremont Graduate University  
 ![What kids know about motivation (and we don't) | Betsy Blackard | TEDxClaremontGraduateUniversity](https://youtu.be/fdDJub69Hnk)  
   
 ## 🤖 AI Summary  

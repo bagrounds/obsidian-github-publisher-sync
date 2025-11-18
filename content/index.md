@@ -12,8 +12,9 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 ❔ What do 🫵 _you_ 🤔 think?  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (367)  
-- [2025-11-16](./reflections/2025-11-16.md)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (368)  
+- [2025-11-17 | 🧸 Play | 👎 Fail | 🐜 Ants 📚](./reflections/2025-11-17.md)  
+- [2025-11-16 | 🗼 Towers | 🚔 Policing | 📈 Creative Destruction 📚📺](./reflections/2025-11-16.md)  
 - [2025-11-15 | 🔭 Range | 💹 Stocks | 🌋 Meltdown 📚📺](./reflections/2025-11-15.md)  
 - [2025-11-14 | ❌🇺🇸🏥🤑 Failing US Health System 📚📄](./reflections/2025-11-14.md)  
 - [2025-11-13 | 🐍 Corruption | 🪉 Orchestration | 🧠 Bias 📰📚📄📺🐦](./reflections/2025-11-13.md)  
@@ -22,23 +23,25 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [2025-11-10 | 🫨 Vibe | ✅ Complete | 🚮 Cave 📚](./reflections/2025-11-10.md)  
 - [2025-11-09 | 🌐 Systems | 🗳️ Democracy | 🧸 Play 📚📰📺](./reflections/2025-11-09.md)  
 - [2025-11-08 | 🚮 Decluttering | 🗳️ Voting | 🙋🏼‍♂️ Fascism | 🥦 SNAP 📚📄📰📺](./reflections/2025-11-08.md)  
-- [2025-11-07 | 🏗️ Reconstruction | 👎 Repudiation 📚📺](./reflections/2025-11-07.md)  
   
   
-## [📚 Books](./books/index.md) (765)  
+## [📚 Books](./books/index.md) (771)  
+- [🐜 The Ants](./books/the-ants.md)  
+- [🐜👑 Empire of Ants: The Hidden World and Extraordinary Lives of Earth's Tiny Conquerors](./books/empire-of-ants-the-hidden-world-and-extraordinary-lives-of-earths-tiny-conquerors.md)  
+- [📉🏆 How to Fail at Almost Everything and Still Win Big: Kind of the Story of My Life](./books/how-to-fail-at-almost-everything-and-still-win-big-kind-of-the-story-of-my-life.md)  
+- [🧑‍🎓🌱 How Children Succeed: Grit, Curiosity, and the Hidden Power of Character](./books/how-children-succeed-grit-curiosity-and-the-hidden-power-of-character.md)  
+- [🧒🎮 Free to Learn: Why Unleashing the Instinct to Play Will Make Our Children Happier, More Self-Reliant, and Better Students for Life](./books/free-to-learn-why-unleashing-the-instinct-to-play-will-make-our-children-happier-more-self-reliant-and-better-students-for-life.md)  
+- [🧑‍💼💥 Prophet of Innovation: Joseph Schumpeter and Creative Destruction](./books/prophet-of-innovation-joseph-schumpeter-and-creative-destruction.md)  
+- [🛑👮 The End of Policing](./books/the-end-of-policing.md)  
 - [🏦👨‍💼💥 Dark Towers: Deutsche Bank, Donald Trump, and an Epic Trail of Destruction](./books/dark-towers-deutsche-bank-donald-trump-and-an-epic-trail-of-destruction.md)  
 - [💰⚕️ Making Them Pay: How to Get the Most from Health Insurance and Managed Care](./books/making-them-pay-how-to-get-the-most-from-health-insurance-and-managed-care.md)  
 - [⚕️💰🇺🇸 The Healing of America: A Global Quest for Better, Cheaper, and Fairer Health Care](./books/the-healing-of-america-a-global-quest-for-better-cheaper-and-fairer-health-care.md)  
-- [🙅🏼‍♀️🧾🏥⚔️ Never Pay the First Bill: And Other Ways to Fight the Health Care System and Win](./books/never-pay-the-first-bill-and-other-ways-to-fight-the-health-care-system-and-win.md)  
-- [⚕️💸 Health Insurance in America: A Consumer's Guide](./books/health-insurance-in-america-a-consumers-guide.md)  
-- [💰⚕️⬆️ An American Sickness: How Healthcare Became Big Business and How You Can Take It Back](./books/an-american-sickness-how-healthcare-became-big-business-and-how-you-can-take-it-back.md)  
-- [😱🏛️ The Terror Presidency: Law and Judgment Inside the Bush Administration](./books/the-terror-presidency-law-and-judgment-inside-the-bush-administration.md)  
-- [💰🇺🇸 Corruption in America: From Benjamin Franklin's Snuff Box to Citizens United](./books/corruption-in-america-from-benjamin-franklins-snuff-box-to-citizens-united.md)  
-- [🤖📈 The AI Revolution in Project Management: Elevating Productivity with Generative AI](./books/the-ai-revolution-in-project-management-elevating-productivity-with-generative-ai.md)  
-- [🐦‍🔥💻 The Phoenix Project](./books/the-phoenix-project.md)  
   
   
-## [📺 Videos](./videos/index.md) (434)  
+## [📺 Videos](./videos/index.md) (437)  
+- [👶🏆🧠✨ What kids know about motivation (and we don't) | Betsy Blackard | TEDx Claremont Graduate University](./videos/what-kids-know-about-motivation-and-we-dont-betsy-blackard-tedx-claremont-graduate-university.md)  
+- [🥇💰📈🧑‍🏫 The 2025 Nobel Prize in Economics: Explained](./videos/the-2025-nobel-prize-in-economics-explained.md)  
+- [🚨🚓📺🎤 Police Chases: Last Week Tonight with John Oliver (HBO)](./videos/police-chases-last-week-tonight-with-john-oliver-hbo.md)  
 - [🍊🤡😈 Trump & Epstein Last Week Tonight](./videos/trump-epstein-last-week-tonight.md)  
 - [📢👨⚖️🗣️ Tamara Keith and Amy Walter on the public response to Trump's handling of the Epstein case](./videos/tamara-keith-and-amy-walter-on-the-public-response-to-trumps-handling-of-the-epstein-case.md)  
 - [❓🤯😵‍💫 What the Heck Just Happened | 2025-11-15](./videos/what-the-heck-just-happened-2025-11-15.md)  
@@ -46,9 +49,6 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [💰📈🤕 Why millions of Americans are facing a spike in health care costs](./videos/why-millions-of-americans-are-facing-a-spike-in-health-care-costs.md)  
 - [🤡💵📺 Trump’s One Big Beautiful Bill: Last Week Tonight with John Oliver (HBO)](./videos/trumps-one-big-beautiful-bill-last-week-tonight-with-john-oliver-hbo.md)  
 - [💰💣 What Trump’s ‘Big, Beautiful Bill’ Is Really Doing (Part 1) | The Ezra Klein Show](./videos/what-trumps-big-beautiful-bill-is-really-doing-part-1-the-ezra-klein-show.md)  
-- [👹📜🏛️🏠 What's in the version of Trump's bill passed by the Senate and its chances in the House](./videos/whats-in-the-version-of-trumps-bill-passed-by-the-senate-and-its-chances-in-the-house.md)  
-- [🗣️🤫🐘 Mike Levin Reveals What Republicans Told Him Behind Closed Doors About Big Beautiful Bill](./videos/mike-levin-reveals-what-republicans-told-him-behind-closed-doors-about-big-beautiful-bill.md)  
-- [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./videos/10-charts-to-understand-the-900-page-budget-bill.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (82)  

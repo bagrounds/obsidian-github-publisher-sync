@@ -13,7 +13,7 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 💬 Comment on any page with your GitHub account.  
   
 ## [🪞 Reflections](./reflections/index.md) ~ Blog (369)  
-- [2025-11-18](./reflections/2025-11-18.md)  
+- [2025-11-18 | 🌳 Trees | 🐇 Rabbit | ↪️ 180 | 🌠 The Star 📚📺🌌](./reflections/2025-11-18.md)  
 - [2025-11-17 | 🧸 Play | 👎 Fail | 🐜 Ants 📚](./reflections/2025-11-17.md)  
 - [2025-11-16 | 🗼 Towers | 🚔 Policing | 📈 Creative Destruction 📚📺](./reflections/2025-11-16.md)  
 - [2025-11-15 | 🔭 Range | 💹 Stocks | 🌋 Meltdown 📚📺](./reflections/2025-11-15.md)  
@@ -25,7 +25,9 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [2025-11-09 | 🌐 Systems | 🗳️ Democracy | 🧸 Play 📚📰📺](./reflections/2025-11-09.md)  
   
   
-## [📚 Books](./books/index.md) (772)  
+## [📚 Books](./books/index.md) (773)  
+- [⚫🔢 Ten Black Dots](./books/ten-black-dots.md)  
+- [🐰🥕 The Tale of Peter Rabbit](./books/the-tale-of-peter-rabbit.md)  
 - [📚🌿🔬 Encyclopedia of Applied Plant Sciences](./books/encyclopedia-of-applied-plant-sciences.md)  
 - [🍄🌍🧠🔮 Entangled Life: How Fungi Make Our Worlds, Change Our Minds & Shape Our Futures](./books/entangled-life-how-fungi-make-our-worlds-change-our-minds-shape-our-futures.md)  
 - [🪢🌾 Braiding Sweetgrass: Indigenous Wisdom, Scientific Knowledge, and the Teachings of Plants](./books/braiding-sweetgrass.md)  
@@ -34,11 +36,10 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [🐜 The Ants](./books/the-ants.md)  
 - [📉🏆 How to Fail at Almost Everything and Still Win Big: Kind of the Story of My Life](./books/how-to-fail-at-almost-everything-and-still-win-big-kind-of-the-story-of-my-life.md)  
 - [🧑‍🎓🌱 How Children Succeed: Grit, Curiosity, and the Hidden Power of Character](./books/how-children-succeed-grit-curiosity-and-the-hidden-power-of-character.md)  
-- [🧒🎮 Free to Learn: Why Unleashing the Instinct to Play Will Make Our Children Happier, More Self-Reliant, and Better Students for Life](./books/free-to-learn-why-unleashing-the-instinct-to-play-will-make-our-children-happier-more-self-reliant-and-better-students-for-life.md)  
-- [🧑‍💼💥 Prophet of Innovation: Joseph Schumpeter and Creative Destruction](./books/prophet-of-innovation-joseph-schumpeter-and-creative-destruction.md)  
   
   
-## [📺 Videos](./videos/index.md) (437)  
+## [📺 Videos](./videos/index.md) (438)  
+- [🏛️🗣️🗓️ Politics Chat, November 18, 2025](./videos/politics-chat-november-18-2025.md)  
 - [👶🏆🧠✨ What kids know about motivation (and we don't) | Betsy Blackard | TEDx Claremont Graduate University](./videos/what-kids-know-about-motivation-and-we-dont-betsy-blackard-tedx-claremont-graduate-university.md)  
 - [🥇💰📈🧑‍🏫 The 2025 Nobel Prize in Economics: Explained](./videos/the-2025-nobel-prize-in-economics-explained.md)  
 - [🚨🚓📺🎤 Police Chases: Last Week Tonight with John Oliver (HBO)](./videos/police-chases-last-week-tonight-with-john-oliver-hbo.md)  
@@ -48,15 +49,14 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [🌍🏠📉 Aswath Damodaran Says «There’s No Place to Hide in Stocks» | Prof G Markets](./videos/aswath-damodaran-says-theres-no-place-to-hide-in-stocks-prof-g-markets.md)  
 - [💰📈🤕 Why millions of Americans are facing a spike in health care costs](./videos/why-millions-of-americans-are-facing-a-spike-in-health-care-costs.md)  
 - [🤡💵📺 Trump’s One Big Beautiful Bill: Last Week Tonight with John Oliver (HBO)](./videos/trumps-one-big-beautiful-bill-last-week-tonight-with-john-oliver-hbo.md)  
-- [💰💣 What Trump’s ‘Big, Beautiful Bill’ Is Really Doing (Part 1) | The Ezra Klein Show](./videos/what-trumps-big-beautiful-bill-is-really-doing-part-1-the-ezra-klein-show.md)  
   
   
-## [🌌 Topics](./topics/index.md) (82)  
+## [🌌 Topics](./topics/index.md) (83)  
+- [⭐✨🌟💫 The Star](./topics/the-star.md)  
 - [🏦♾️📈💸 Modern Monetary Theory](./topics/modern-monetary-theory.md)  
 - [💰🏛️📈 Functional Finance](./topics/functional-finance.md)  
 - [🤔🚫➡️📚 Heterodox Economics](./topics/heterodox-economics.md)  
 - [🗣️📚🧠 Linguistics](./topics/linguistics.md)  
-- [🗣️🗣️ Bilingualism](./topics/bilingualism.md)  
   
   
 ## [📄  Articles](./articles/index.md) (73)  

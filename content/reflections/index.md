@@ -8,7 +8,7 @@ backlinks: false
 ---
 [Home](../index.md)  
 # 🪞 Reflections (369)  
-- [2025-11-18 | 🌳 Trees | 🐇 Rabbit | ↪️ 180 | 🌠 The Star 📚📺🌌](./2025-11-18.md)  
+- [2025-11-18 | 🌳 Trees | 🐇 Rabbit | ↪️ 180 | 🧠 Intelligences | 🌠 The Star 📚📺🌌](./2025-11-18.md)  
 - [2025-11-17 | 🧸 Play | 👎 Fail | 🐜 Ants 📚](./2025-11-17.md)  
 - [2025-11-16 | 🗼 Towers | 🚔 Policing | 📈 Creative Destruction 📚📺](./2025-11-16.md)  
 - [2025-11-15 | 🔭 Range | 💹 Stocks | 🌋 Meltdown 📚📺](./2025-11-15.md)  

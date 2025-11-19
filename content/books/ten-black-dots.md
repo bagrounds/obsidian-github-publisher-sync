@@ -5,6 +5,7 @@ aliases:
 URL: https://bagrounds.org/books/ten-black-dots
 share: true
 affiliate link: https://amzn.to/4kasfrO
+CTA: ⚫ Imagine possibilities.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ⚫🔢 Ten Black Dots  

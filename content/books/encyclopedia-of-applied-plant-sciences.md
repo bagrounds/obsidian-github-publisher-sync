@@ -4,8 +4,8 @@ aliases:
   - 📚🌿🔬 Encyclopedia of Applied Plant Sciences
 title: 📚🌿🔬 Encyclopedia of Applied Plant Sciences
 URL: https://bagrounds.org/books/encyclopedia-of-applied-plant-sciences
-Author: 
-tags: 
+Author:
+tags:
 affiliate link: https://amzn.to/3ZjA0Ep
 ---
 [Home](../index.md) > [Books](./index.md)  
@@ -54,7 +54,7 @@ affiliate link: https://amzn.to/3ZjA0Ep
   
 ### 💡 Creatively Related Reads (Interdisciplinary & Popular Science)  
 * **[🪢🌾 Braiding Sweetgrass: Indigenous Wisdom, Scientific Knowledge, and the Teachings of Plants](./braiding-sweetgrass.md)** by Robin Wall Kimmerer: 📖 Blends indigenous perspectives, scientific knowledge, and personal reflection, offering a deeply humanistic and ecological view of plants.  
-* 🌲 **The Hidden Life of Trees: What They Feel, How They Communicate** by Peter Wohlleben: 📖 A popular science book exploring the social networks and communication between trees, sparking wonder about plant behavior.  
+* **[🌳🗣️ The Hidden Life of Trees: What They Feel, How They Communicate: Discoveries from a Secret World](./the-hidden-life-of-trees-what-they-feel-how-they-communicate-discoveries-from-a-secret-world.md)** by Peter Wohlleben: 📖 A popular science book exploring the social networks and communication between trees, sparking wonder about plant behavior.  
 * 🍎 **The Botany of Desire: A Plant's-Eye View of the World** by Michael Pollan: 📖 Explores the co-evolutionary relationship between humans and four key plants (apple, tulip, marijuana, potato), focusing on human desires they fulfill.  
 * 🌳 **Finding the Mother Tree: Discovering the Wisdom of the Forest** by Suzanne Simard: 📖 A memoir and scientific exploration of forest ecology, focusing on the interconnectedness and communication within forest ecosystems via mycorrhizal networks.  
 * 🥕 **Edible Plants: A Photographic Survey of the Wild Edible Botanicals of North America** by James Fike: 📖 Connects botany with foraging and survival, highlighting practical uses through photography and botanical information.  

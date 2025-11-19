@@ -58,7 +58,7 @@ URL: https://bagrounds.org/topics/the-star
 ## 📚 Book Recommendations  
   
 ### ↔️ Similar  
-* 🦆 The Tale of Peter Rabbit by Beatrix Potter: Focuses on the natural world and is an enduring work of classic children's literature with simple, memorable language and rhyme.  
+* [🐰🥕 The Tale of Peter Rabbit](../books/the-tale-of-peter-rabbit.md) by Beatrix Potter: Focuses on the natural world and is an enduring work of classic children's literature with simple, memorable language and rhyme.  
 * 🌍 A Child's Garden of Verses by Robert Louis Stevenson: A collection of poetry written from the perspective of a child, exploring imaginative themes related to play, the outdoors, and everyday life.  
   
 ### 🆚 Contrasting  

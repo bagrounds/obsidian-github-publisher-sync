@@ -7,7 +7,7 @@ URL: https://bagrounds.org/topics
 backlinks: false
 ---
 [Home](../index.md)  
-# 🌌 Topics (82)  
+# 🌌 Topics (83)  
 - [⚙️🧠🔄 Adaptive Control](./adaptive-control.md)  
 - [🌲🪜🧠 A Hierarchical View of Human Knowledge](./a-hierarchical-view-of-human-knowledge.md)  
 - [A Method For Estimating Work](./a-method-for-estimating-work.md)  
@@ -81,6 +81,7 @@ backlinks: false
 - [Static APIs](./static-apis.md)  
 - [💾🧱⚡️ Static Site Generation](./static-site-generation.md)  
 - [⚙️💡💻🤖📡 Technology](./technology.md)  
+- [⭐✨🌟💫 The Star](./the-star.md)  
 - [⏳🍽️ Time-Restricted Eating](./time-restricted-eating.md)  
 - [Tree Traversal](./tree-traversal.md)  
 - [💡🔧📏🔮〰️ Understanding and Implementing the Kalman Filter](./understanding-and-implementing-the-kalman-filter.md)  

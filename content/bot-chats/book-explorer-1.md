@@ -216,7 +216,7 @@ Here's a breakdown:
     * "The Rest Is Noise: Listening to the Twentieth Century" by Alex Ross. 🎻  
     * "Mozart: A Life" by Paul Johnson. 🎹  
 * **Topic R (Dissimilar to Both):** Botany and Plant Biology 🌿  
-    * "The Hidden Life of Trees: What They Feel, How They Communicate—Discoveries from a Secret World" by Peter Wohlleben. 🌳  
+    * [🌳🗣️ The Hidden Life of Trees: What They Feel, How They Communicate: Discoveries from a Secret World](../books/the-hidden-life-of-trees-what-they-feel-how-they-communicate-discoveries-from-a-secret-world.md) by Peter Wohlleben. 🌳  
     * [🪢🌾 Braiding Sweetgrass: Indigenous Wisdom, Scientific Knowledge, and the Teachings of Plants](../books/braiding-sweetgrass.md) by Robin Wall Kimmerer. 🌾  
   
 **Meta Global Exploration:**  

@@ -12,7 +12,8 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 ❔ What do 🫵 _you_ 🤔 think?  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (368)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (369)  
+- [2025-11-18](./reflections/2025-11-18.md)  
 - [2025-11-17 | 🧸 Play | 👎 Fail | 🐜 Ants 📚](./reflections/2025-11-17.md)  
 - [2025-11-16 | 🗼 Towers | 🚔 Policing | 📈 Creative Destruction 📚📺](./reflections/2025-11-16.md)  
 - [2025-11-15 | 🔭 Range | 💹 Stocks | 🌋 Meltdown 📚📺](./reflections/2025-11-15.md)  
@@ -22,20 +23,19 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [2025-11-11 | 🌌 Systems | 💰 Economics | 🗳️ Voting | ✝️ Christianity | 🌺 Hawaii 📚📺](./reflections/2025-11-11.md)  
 - [2025-11-10 | 🫨 Vibe | ✅ Complete | 🚮 Cave 📚](./reflections/2025-11-10.md)  
 - [2025-11-09 | 🌐 Systems | 🗳️ Democracy | 🧸 Play 📚📰📺](./reflections/2025-11-09.md)  
-- [2025-11-08 | 🚮 Decluttering | 🗳️ Voting | 🙋🏼‍♂️ Fascism | 🥦 SNAP 📚📄📰📺](./reflections/2025-11-08.md)  
   
   
-## [📚 Books](./books/index.md) (771)  
-- [🐜 The Ants](./books/the-ants.md)  
+## [📚 Books](./books/index.md) (772)  
+- [📚🌿🔬 Encyclopedia of Applied Plant Sciences](./books/encyclopedia-of-applied-plant-sciences.md)  
+- [🍄🌍🧠🔮 Entangled Life: How Fungi Make Our Worlds, Change Our Minds & Shape Our Futures](./books/entangled-life-how-fungi-make-our-worlds-change-our-minds-shape-our-futures.md)  
+- [🪢🌾 Braiding Sweetgrass: Indigenous Wisdom, Scientific Knowledge, and the Teachings of Plants](./books/braiding-sweetgrass.md)  
 - [🐜👑 Empire of Ants: The Hidden World and Extraordinary Lives of Earth's Tiny Conquerors](./books/empire-of-ants-the-hidden-world-and-extraordinary-lives-of-earths-tiny-conquerors.md)  
+- [🌳🗣️ The Hidden Life of Trees: What They Feel, How They Communicate: Discoveries from a Secret World](./books/the-hidden-life-of-trees-what-they-feel-how-they-communicate-discoveries-from-a-secret-world.md)  
+- [🐜 The Ants](./books/the-ants.md)  
 - [📉🏆 How to Fail at Almost Everything and Still Win Big: Kind of the Story of My Life](./books/how-to-fail-at-almost-everything-and-still-win-big-kind-of-the-story-of-my-life.md)  
 - [🧑‍🎓🌱 How Children Succeed: Grit, Curiosity, and the Hidden Power of Character](./books/how-children-succeed-grit-curiosity-and-the-hidden-power-of-character.md)  
 - [🧒🎮 Free to Learn: Why Unleashing the Instinct to Play Will Make Our Children Happier, More Self-Reliant, and Better Students for Life](./books/free-to-learn-why-unleashing-the-instinct-to-play-will-make-our-children-happier-more-self-reliant-and-better-students-for-life.md)  
 - [🧑‍💼💥 Prophet of Innovation: Joseph Schumpeter and Creative Destruction](./books/prophet-of-innovation-joseph-schumpeter-and-creative-destruction.md)  
-- [🛑👮 The End of Policing](./books/the-end-of-policing.md)  
-- [🏦👨‍💼💥 Dark Towers: Deutsche Bank, Donald Trump, and an Epic Trail of Destruction](./books/dark-towers-deutsche-bank-donald-trump-and-an-epic-trail-of-destruction.md)  
-- [💰⚕️ Making Them Pay: How to Get the Most from Health Insurance and Managed Care](./books/making-them-pay-how-to-get-the-most-from-health-insurance-and-managed-care.md)  
-- [⚕️💰🇺🇸 The Healing of America: A Global Quest for Better, Cheaper, and Fairer Health Care](./books/the-healing-of-america-a-global-quest-for-better-cheaper-and-fairer-health-care.md)  
   
   
 ## [📺 Videos](./videos/index.md) (437)  
@@ -68,8 +68,8 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
   
   
 ## [🤖💬 Bot Chats](./bot-chats/index.md) (45)  
-- [🧭 Managing 🕸️ Complexity 🧠](./bot-chats/managing-complexity.md)  
 - [📖 Book 🧭 Explorer 1](./bot-chats/book-explorer-1.md)  
+- [🧭 Managing 🕸️ Complexity 🧠](./bot-chats/managing-complexity.md)  
 - [🤰⏰👶🔮 Forecasting Parenthood](./bot-chats/forecasting-parenthood.md)  
 - [✍️🥇🇺🇸 Creating the Most Popular Title in the Country](./bot-chats/creating-the-most-popular-title-in-the-country.md)  
 - [📈🌐🏆📢 Creating the Most Popular Blog in the World](./bot-chats/creating-the-most-popular-blog-in-the-world.md)  

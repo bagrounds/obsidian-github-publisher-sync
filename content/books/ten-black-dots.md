@@ -5,6 +5,7 @@ aliases:
 URL: https://bagrounds.org/books/ten-black-dots
 share: true
 affiliate link: https://amzn.to/4kasfrO
+CTA: ⚫ Imagine possibilities.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ⚫🔢 Ten Black Dots  
@@ -40,7 +41,7 @@ affiliate link: https://amzn.to/4kasfrO
 ### 🎭 Contrasting Books (Narrative and Different Themes)  
   
 * 🐺 **Where the Wild Things Are by Maurice Sendak:** A classic picture book with a strong narrative arc, focusing on emotions and imagination rather than basic concepts.  
-* 🐰 **The Tale of Peter Rabbit by Beatrix Potter:** A longer story with a clear plot and detailed illustrations, representing a traditional narrative picture book.  
+* **[🐰🥕 The Tale of Peter Rabbit](./the-tale-of-peter-rabbit.md) by Beatrix Potter:** A longer story with a clear plot and detailed illustrations, representing a traditional narrative picture book.  
 * 🌙 **Goodnight Moon by Margaret Wise Brown:** Focuses on a calming bedtime routine with a lyrical text and gentle illustrations, centered on observation rather than explicit counting or concept instruction.  
 * 🧜‍♀️ **Julian Is a Mermaid by Jessica Love:** A story celebrating individuality and self-expression through a narrative and vibrant illustrations, with a focus on social-emotional themes.  
   

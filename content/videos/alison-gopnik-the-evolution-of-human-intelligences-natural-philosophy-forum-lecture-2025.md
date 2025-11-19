@@ -54,6 +54,7 @@ youtube: https://youtu.be/CBmz3pFdK-4
   
 ### ↔️ Similar  
   
+- The Lifecycle of Software Objects  
 * [👶🤔❤️ The Philosophical Baby: What Children's Minds Tell Us About Truth, Love, and the Meaning of Life](../books/the-philosophical-baby-what-childrens-minds-tell-us-about-truth-love-and-the-meaning-of-life.md) by Alison Gopnik: 🧠 Explores how babies and children learn about the world through consciousness, causality, and love, connecting early cognitive development to deep philosophical questions.  
 * 📚 Play by Stuart Brown with Christopher Vaughan: 🧸 Documents the evolutionary importance of play across species and how it fundamentally shapes brain structure, social behavior, and creativity, aligning with the video's exploration theme.  
 * 🧠 The Enigma of Reason by Hugo Mercier and Dan Sperber: 🤔 Discusses the evolutionary function of reason as primarily social and argumentative, complementing the video's idea of intelligence as a socially-distributed, developmental process.  
@@ -68,4 +69,7 @@ youtube: https://youtu.be/CBmz3pFdK-4
   
 * 🌐 Diffusion of Innovations by Everett Rogers: 📣 Provides a social science theory on how new ideas and technology spread, linking the video's exploration/exploitation concepts to the mechanics of social change and adoption rates in a system.  
 * 👨‍👩‍👧 All Our Relations by Sarah Blaffer Hrdy: 🐒 Examines the evolutionary roots of human cooperative breeding and alloparenting (care by non-parents), providing a deep anthropological context for the video's focus on the communal role of caregivers.  
-* [🔬🔄 The Structure of Scientific Revolutions](../books/the-structure-of-scientific-revolutions.md) by Thomas S. Kuhn: 🧪 Explores how scientific understanding changes, shifting from a stable period of exploitation (normal science) to a period of broad exploration (revolutionary science), mirroring the developmental shift discussed in the video.
+* [🔬🔄 The Structure of Scientific Revolutions](../books/the-structure-of-scientific-revolutions.md) by Thomas S. Kuhn: 🧪 Explores how scientific understanding changes, shifting from a stable period of exploitation (normal science) to a period of broad exploration (revolutionary science), mirroring the developmental shift discussed in the video.  
+  
+## 🐦 Tweet  
+<blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">🧠👶🐒 Alison Gopnik, The Evolution of Human Intelligences | Natural Philosophy Forum Lecture 2025<br><br>🧠 Knowledge Acquisition | 👶 Child Development | 🐒 Primate Evolution | 👵 Eldercare | 🤖 Artificial Intelligence<a href="https://twitter.com/AlisonGopnik?ref_src=twsrc%5Etfw">@AlisonGopnik</a><a href="https://t.co/xHajYyEjHU">https://t.co/xHajYyEjHU</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/1991194828894568908?ref_src=twsrc%5Etfw">November 19, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

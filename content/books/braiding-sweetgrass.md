@@ -78,7 +78,7 @@ CTA: Grow honorably.
   
 ### 🎨 Creatively Related  
 * 🔬 ***Lab Girl*** **by Hope Jahren:** 👩‍🔬 A memoir about a woman's life in science (geobiology and paleobotany), sharing a passion for plants and the challenges of scientific work, though with a different tone and focus.  
-* 🌳 ***The Hidden Life of Trees: What They Feel, How They Communicate*** **by Peter Wohlleben:** 🗣️ Popular science book exploring the social networks and communication among trees, echoing Kimmerer's themes of plant intelligence and community.  
+* **[🌳🗣️ The Hidden Life of Trees: What They Feel, How They Communicate: Discoveries from a Secret World](./the-hidden-life-of-trees-what-they-feel-how-they-communicate-discoveries-from-a-secret-world.md)** **by Peter Wohlleben:** 🗣️ Popular science book exploring the social networks and communication among trees, echoing Kimmerer's themes of plant intelligence and community.  
 * 🏞️ ***Walden*** **by Henry David Thoreau:** 🚶 A classic of American nature writing focused on simple living, self-sufficiency, and close observation of nature, albeit from a different cultural perspective.  
 * 🏞️ ***Pilgrim at Tinker Creek*** **by Annie Dillard:** ✨ Pulitzer Prize-winning meditative nature writing, exploring themes of wonder, beauty, and the sometimes-unsettling aspects of the natural world through intense observation.  
 * ✍️ **Poetry by Mary Oliver or Joy Harjo (US Poet Laureate, member of the Muscogee Nation):** 📜 Offers lyrical, insightful reflections on nature, place, and connection.  

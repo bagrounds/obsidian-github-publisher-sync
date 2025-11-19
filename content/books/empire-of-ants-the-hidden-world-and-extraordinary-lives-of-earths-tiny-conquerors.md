@@ -79,7 +79,7 @@ affiliate link: https://amzn.to/3JGkqy9
 * [🌐🔗🧠📖 Thinking in Systems: A Primer](./thinking-in-systems.md) by Donella H. Meadows: Provides a broader framework for understanding complex interconnected systems.  
   
 ### 🔗 🐜 Related  
-* 🌲 🐜 The Hidden Life of Trees by Peter Wohlleben: Reveals the complex communication and social structures in forests.  
+* [🌳🗣️ The Hidden Life of Trees: What They Feel, How They Communicate: Discoveries from a Secret World](./the-hidden-life-of-trees-what-they-feel-how-they-communicate-discoveries-from-a-secret-world.md) by Peter Wohlleben: Reveals the complex communication and social structures in forests.  
 * 🦠 🐜 I Contain Multitudes by Ed Yong: Explores the microbial worlds within and around living beings, including insects.  
 * 🧠 🐜 Other Minds by Peter Godfrey-Smith: Discusses the evolution of intelligence in cephalopods, offering another perspective on non-human cognition.  
   

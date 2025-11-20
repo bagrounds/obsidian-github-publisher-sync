@@ -62,4 +62,7 @@ A: 📊 The United States is a global anomaly, funding its public media at less 
 ### 🎨 Creatively Related  
   
 * *The Master Switch: The Rise and Fall of Information Empires* by Tim Wu. 📱 Details how communication technologies often cycle from open, decentralized systems to centralized, closed monopolies, providing critical context for 🌐 understanding the necessity of an intentionally non-commercial public media option.  
-* *Public Opinion* by Walter Lippmann. 💭 An essential book on the function of journalism in a democracy, analyzing the challenges of creating an informed public and making a case for the need for 🧐 high-quality, objective information to support effective civic life.
+* *Public Opinion* by Walter Lippmann. 💭 An essential book on the function of journalism in a democracy, analyzing the challenges of creating an informed public and making a case for the need for 🧐 high-quality, objective information to support effective civic life.  
+  
+## 🐦 Tweet  
+<blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">📺🎤📰 Public Media: Last Week Tonight with John Oliver<br><br>🏛️ CPB | 💸 Cuts | 📻 Local Stations | 🚨 Community Services | 🎨 Bob Ross | 🗽 Editorial Independence | 🆘 Emergency Alerts | 🇳🇴 Public Broadcasting Systems | 💭 Informed Public<a href="https://twitter.com/LastWeekTonight?ref_src=twsrc%5Etfw">@LastWeekTonight</a><a href="https://t.co/V0sU2heV2J">https://t.co/V0sU2heV2J</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/1991604476441161874?ref_src=twsrc%5Etfw">November 20, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

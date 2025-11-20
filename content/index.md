@@ -12,7 +12,8 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 ❔ What do 🫵 _you_ 🤔 think?  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (369)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (370)  
+- [2025-11-19 | 🇺🇸📺🆘 Public Media 📺📚](./reflections/2025-11-19.md)  
 - [2025-11-18 | 🌳 Trees | 🐇 Rabbit | ↪️ 180 | 🧠 Intelligences | 🌠 The Star 📚📺🌌](./reflections/2025-11-18.md)  
 - [2025-11-17 | 🧸 Play | 👎 Fail | 🐜 Ants 📚](./reflections/2025-11-17.md)  
 - [2025-11-16 | 🗼 Towers | 🚔 Policing | 📈 Creative Destruction 📚📺](./reflections/2025-11-16.md)  
@@ -22,10 +23,10 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [2025-11-12 | ☄️ Hail 🧩 Range 🤳🏼 Addict | ✉️ Trump & 🏝️ Epstein 📚📺📰](./reflections/2025-11-12.md)  
 - [2025-11-11 | 🌌 Systems | 💰 Economics | 🗳️ Voting | ✝️ Christianity | 🌺 Hawaii 📚📺](./reflections/2025-11-11.md)  
 - [2025-11-10 | 🫨 Vibe | ✅ Complete | 🚮 Cave 📚](./reflections/2025-11-10.md)  
-- [2025-11-09 | 🌐 Systems | 🗳️ Democracy | 🧸 Play 📚📰📺](./reflections/2025-11-09.md)  
   
   
-## [📚 Books](./books/index.md) (773)  
+## [📚 Books](./books/index.md) (774)  
+- [🇺🇸📻 Shadow of the New Deal: The Victory of Public Broadcasting](./books/shadow-of-the-new-deal-the-victory-of-public-broadcasting.md)  
 - [⚫🔢 Ten Black Dots](./books/ten-black-dots.md)  
 - [🐰🥕 The Tale of Peter Rabbit](./books/the-tale-of-peter-rabbit.md)  
 - [📚🌿🔬 Encyclopedia of Applied Plant Sciences](./books/encyclopedia-of-applied-plant-sciences.md)  
@@ -35,10 +36,10 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [🌳🗣️ The Hidden Life of Trees: What They Feel, How They Communicate: Discoveries from a Secret World](./books/the-hidden-life-of-trees-what-they-feel-how-they-communicate-discoveries-from-a-secret-world.md)  
 - [🐜 The Ants](./books/the-ants.md)  
 - [📉🏆 How to Fail at Almost Everything and Still Win Big: Kind of the Story of My Life](./books/how-to-fail-at-almost-everything-and-still-win-big-kind-of-the-story-of-my-life.md)  
-- [🧑‍🎓🌱 How Children Succeed: Grit, Curiosity, and the Hidden Power of Character](./books/how-children-succeed-grit-curiosity-and-the-hidden-power-of-character.md)  
   
   
-## [📺 Videos](./videos/index.md) (439)  
+## [📺 Videos](./videos/index.md) (440)  
+- [📺🎤📰 Public Media: Last Week Tonight with John Oliver (HBO)](./videos/public-media-last-week-tonight-with-john-oliver-hbo.md)  
 - [🧠👶🐒 Alison Gopnik, The Evolution of Human Intelligences | Natural Philosophy Forum Lecture 2025](./videos/alison-gopnik-the-evolution-of-human-intelligences-natural-philosophy-forum-lecture-2025.md)  
 - [🏛️🗣️🗓️ Politics Chat, November 18, 2025](./videos/politics-chat-november-18-2025.md)  
 - [👶🏆🧠✨ What kids know about motivation (and we don't) | Betsy Blackard | TEDx Claremont Graduate University](./videos/what-kids-know-about-motivation-and-we-dont-betsy-blackard-tedx-claremont-graduate-university.md)  
@@ -48,7 +49,6 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [📢👨⚖️🗣️ Tamara Keith and Amy Walter on the public response to Trump's handling of the Epstein case](./videos/tamara-keith-and-amy-walter-on-the-public-response-to-trumps-handling-of-the-epstein-case.md)  
 - [❓🤯😵‍💫 What the Heck Just Happened | 2025-11-15](./videos/what-the-heck-just-happened-2025-11-15.md)  
 - [🌍🏠📉 Aswath Damodaran Says «There’s No Place to Hide in Stocks» | Prof G Markets](./videos/aswath-damodaran-says-theres-no-place-to-hide-in-stocks-prof-g-markets.md)  
-- [💰📈🤕 Why millions of Americans are facing a spike in health care costs](./videos/why-millions-of-americans-are-facing-a-spike-in-health-care-costs.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (83)  

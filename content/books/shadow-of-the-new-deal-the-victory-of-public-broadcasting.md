@@ -74,7 +74,7 @@ affiliate link: https://amzn.to/44fHuKX
 ### ↔️ Contrasting  
 * 🏛️ The Politics of Media Policy by Des Freedman: Offers a critical perspective on market principles in media policy, including public broadcasting.  
 * ✍️ Republic of Detours: How the New Deal Paid Broke Writers to Rediscover America by Scott Borchert: Focuses on other cultural aspects of the New Deal, not specifically broadcasting.  
-* 🛡️ Why the New Deal Matters by Eric Rauchway: Provides a broader defense of the New Deal's transformative impact.  
+* [🇺🇸🏛️ Why the New Deal Matters](./why-the-new-deal-matters.md) by Eric Rauchway: Provides a broader defense of the New Deal's transformative impact.  
   
 ### ➕ Related  
 * 🌍 The Handbook of Global Media and Communication Policy edited by Robin Mansell and Marc Raboy: Offers insights into media policy worldwide and new conceptual frameworks.  

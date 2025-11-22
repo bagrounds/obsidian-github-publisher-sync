@@ -7,7 +7,10 @@ URL: https://bagrounds.org/reflections
 backlinks: false
 ---
 [Home](../index.md)  
-# 🪞 Reflections (370)  
+# 🪞 Reflections (373)  
+- [2025-11-22](./2025-11-22.md)  
+- [2025-11-21 | 🏢 Business | ⚙️ Systems 📚](./2025-11-21.md)  
+- [2025-11-20 | 🇺🇸 New Deal | 💸👹Corruption Currency 📚📰](./2025-11-20.md)  
 - [2025-11-19 | 🇺🇸📺🆘 Public Media 📺📚](./2025-11-19.md)  
 - [2025-11-18 | 🌳 Trees | 🐇 Rabbit | ↪️ 180 | 🧠 Intelligences | 🌠 The Star 📚📺🌌](./2025-11-18.md)  
 - [2025-11-17 | 🧸 Play | 👎 Fail | 🐜 Ants 📚](./2025-11-17.md)  

@@ -95,7 +95,7 @@ tags:
 ### Contrasting Books  
 * 🗽 Free to Choose  
 * 🛤️ The Road to Serfdom  
-* 🧑‍🤝‍🧑 Human Action  
+* [🧑‍🤝‍🧑💰 Human Action: A Treatise on Economics](./human-action-a-treatise-on-economics.md)  
   
 ### Related Books  
 * [👉🤏 Nudge: Improving Decisions about Health, Wealth, and Happiness](./nudge.md)  

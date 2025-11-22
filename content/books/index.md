@@ -7,7 +7,7 @@ URL: https://bagrounds.org/books
 backlinks: false
 ---
 [Home](../index.md)  
-# 📚 Books (778)  
+# 📚 Books (780)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)  
 - [🧑‍🤝‍🧑📈 10 to 25: The Science of Motivating Young People: A Groundbreaking Approach to Leading the Next Generation - And Making Your Own Life Easier](./10-to-25-the-science-of-motivating-young-people-a-groundbreaking-approach-to-leading-the-next-generation-and-making-your-own-life-easier.md)  
@@ -290,6 +290,7 @@ backlinks: false
 - [👥⚔️👑 How to Stand Up to a Dictator: The Fight for Our Future](./how-to-stand-up-to-a-dictator.md)  
 - [🏆📰📣 How to Win an Information War: The Propagandist Who Outwitted Hitler](./how-to-win-an-information-war.md)  
 - [🫂🤝🗣️ How To Win Friends And Influence People](./how-to-win-friends-and-influence-people.md)  
+- [🧑‍🤝‍🧑💰 Human Action: A Treatise on Economics](./human-action-a-treatise-on-economics.md)  
 - [🤖🧑‍ Human Compatible: Artificial Intelligence and the Problem of Control](./human-compatible-artificial-intelligence-and-the-problem-of-control.md)  
 - [🧑‍💻🤖 Human-in-the-Loop Machine Learning: Active learning and annotation for human-centered AI](./human-in-the-loop-machine-learning-active-learning-and-annotation-for-human-centered-ai.md)  
 - [🧑‍💻🤖 Human + Machine: Reimagining Work in the Age of AI](./human-machine-reimagining-work-in-the-age-of-ai.md)  
@@ -638,6 +639,7 @@ backlinks: false
 - [🏔️ The Myth of Sisyphus](./the-myth-of-sisyphus.md)  
 - [↔️🏛️ The Narrow Corridor: States, Societies, and the Fate of Liberty](./the-narrow-corridor-states-societies-and-the-fate-of-liberty.md)  
 - [🧠❤️🔄 The Neuroscience of Change: A Compassion-Based Program for Personal Transformation](./the-neuroscience-of-change-a-compassion-based-program-for-personal-transformation.md)  
+- [🇿🇦 The New Apartheid](./the-new-apartheid.md)  
 - [📈🏛️🏫 The New Economics: For Industry, Government, Education](./the-new-economics.md)  
 - [🧑🏿⛓️🙈 The New Jim Crow: Mass Incarceration in the Age of Colorblindness](./the-new-jim-crow-mass-incarceration-in-the-age-of-colorblindness.md)  
 - [☀️📖🌿 The New Sunset Western Garden Book: The Ultimate Gardening Guide](./the-new-sunset-western-garden-book-the-ultimate-gardening-guide.md)  

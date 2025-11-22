@@ -7,7 +7,7 @@ URL: https://bagrounds.org/videos
 backlinks: false
 ---
 [Home](../index.md)  
-# 📺 Videos (440)  
+# 📺 Videos (441)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
 - [❓💪🔬 12 Questions About Creatine with Stephen Cornish, PhD](./12-questions-about-creatine-w-stephen-cornish-phd.md)  
@@ -94,7 +94,7 @@ backlinks: false
 - [🍎➡️🥗💯 Eat your food in the RIGHT ORDER: 75% healthier with this small trick | Episode 6 of 18](./eat-your-food-in-the-right-order-75-healthier-with-this-small-trick-episode-6-of-18.md)  
 - [🏃‍♀️⚕️💪 ECFIT Expert Series - Jay Dicharry](./ecfit-expert-series-jay-dicharry.md)  
 - [🌱⛰️💪 Effective Resistance to Authoritarianism: «The violets in the mountains have broken the rocks»](./effective-resistance-to-authoritarianism-the-violets-in-the-mountains-have-broken-the-rocks.md)  
-- [Elon Musk's Family History in South Africa Reveals Ties to Apartheid & Neo-Nazi Movements](./elon-musks-family-history-in-south-africa-reveals-ties-to-apartheid-neo-nazi-movements.md)  
+- [🇿🇦👨‍👩‍👧‍👦⛓️卐 Elon Musk's Family History in South Africa Reveals Ties to Apartheid & Neo-Nazi Movements](./elon-musks-family-history-in-south-africa-reveals-ties-to-apartheid-neo-nazi-movements.md)  
 - [🧠⬆️🍎🚀 Enhance Your Learning Speed & Health Using Neuroscience Based Protocols | Dr. Poppy Crum](./enhance-your-learning-speed-health-using-neuroscience-based-protocols-dr-poppy-crum.md)  
 - [🐘🔴👴🏿💥 Epstein Is A Real Problem For The GOP | Trump's Creepy Past | Blaming Obama](./epstein-is-a-real-problem-for-the-gop-trumps-creepy-past-blaming-obama.md)  
 - [Ethics expert breaks down Trump administration’s conflicts of interest](./ethics-expert-breaks-down-trump-administrations-conflicts-of-interest.md)  
@@ -369,6 +369,7 @@ backlinks: false
 - [🍊🚫👯‍♀️🏛️ Trump Dodges Ghislaine Maxwell Pardon Q as Bondi Stonewalls Senate | The Daily Show](./trump-dodges-ghislaine-maxwell-pardon-q-as-bondi-stonewalls-senate-the-daily-show.md)  
 - [🍊🤡😈 Trump & Epstein Last Week Tonight](./trump-epstein-last-week-tonight.md)  
 - [👨‍⚖️📧❓ Trump faces fresh Epstein questions as new emails and files are released](./trump-faces-fresh-epstein-questions-as-new-emails-and-files-are-released.md)  
+- [👨‍👩‍👧‍👦🪙🤔⬇️ Trump family’s cryptocurrency ties raise concerns as administration loosens regulations](./trump-familys-cryptocurrency-ties-raise-concerns-as-administration-loosens-regulations.md)  
 - [👨‍⚖️💂‍♂️🚨🇺🇸 Trump Orders Another 2,000 Guardsmen, 700 Marines To LA | NPR News Now](./trump-orders-another-2000-guardsmen-700-marines-to-la-npr-news-now.md)  
 - [👹🤡👑📢 Trump’s Distractions Are Part of the Authoritarian Playbook | Explainer](./trumps-distractions-are-part-of-the-authoritarian-playbook-explainer.md)  
 - [🌪️🇺🇸📉🌍 Trump’s instability and the potential of a post-American world](./trumps-instability-and-the-potential-of-a-post-american-world.md)  

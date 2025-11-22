@@ -25,7 +25,10 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [2025-11-13 | 🐍 Corruption | 🪉 Orchestration | 🧠 Bias 📰📚📄📺🐦](./reflections/2025-11-13.md)  
   
   
-## [📚 Books](./books/index.md) (779)  
+## [📚 Books](./books/index.md) (780)  
+- [🧑‍💼🏦💸 The General Theory of Employment, Interest, and Money](./books/the-general-theory-of-employment-interest-and-money.md)  
+- [💰 Keynes: A Very Short Introduction](./books/keynes-a-very-short-introduction.md)  
+- [🧑‍🤝‍🧑💰 Human Action: A Treatise on Economics](./books/human-action-a-treatise-on-economics.md)  
 - [🇿🇦 The New Apartheid](./books/the-new-apartheid.md)  
 - [⚙️🔢 The Great Mental Models, Volume 3: Systems and Mathematics](./books/the-great-mental-models-volume-3-systems-and-mathematics.md)  
 - [🧠📊 The Model Thinker: What You Need to Know to Make Data Work for You](./books/the-model-thinker-what-you-need-to-know-to-make-data-work-for-you.md)  
@@ -33,9 +36,6 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [🧑‍🤝‍🧑⚙️🧬 Beyond the Science: How People, Process, and Systems Transform the Business of Life Sciences](./books/beyond-the-science-how-people-process-and-systems-transform-the-business-of-life-sciences.md)  
 - [🎨🤓 The Art of Learning: A Journey in the Pursuit of Excellence](./books/the-art-of-learning.md)  
 - [🌐🔭🎨🧩👨‍🎓 Range: Why Generalists Triumph in a Specialized World](./books/range.md)  
-- [🇺🇸📻 Shadow of the New Deal: The Victory of Public Broadcasting](./books/shadow-of-the-new-deal-the-victory-of-public-broadcasting.md)  
-- [🇺🇸🏛️ Why the New Deal Matters](./books/why-the-new-deal-matters.md)  
-- [⚫🔢 Ten Black Dots](./books/ten-black-dots.md)  
   
   
 ## [📺 Videos](./videos/index.md) (441)  
@@ -67,12 +67,12 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [🏛️🔍❌🗳️ Analysis: Heritage Foundation’s Database Undermines Claims of Recent Voter Fraud](./articles/analysis-heritage-foundations-database-undermines-claims-of-recent-voter-fraud.md)  
   
   
-## [🤖💬 Bot Chats](./bot-chats/index.md) (45)  
+## [🤖💬 Bot Chats](./bot-chats/index.md) (46)  
+- [🇦🇹💰🆚📈🖨️ Austrian Economics vs Modern Monetary Theory](./bot-chats/austrian-economics-vs-modern-monetary-theory.md)  
 - [📖 Book 🧭 Explorer 1](./bot-chats/book-explorer-1.md)  
 - [🧭 Managing 🕸️ Complexity 🧠](./bot-chats/managing-complexity.md)  
 - [🤰⏰👶🔮 Forecasting Parenthood](./bot-chats/forecasting-parenthood.md)  
 - [✍️🥇🇺🇸 Creating the Most Popular Title in the Country](./bot-chats/creating-the-most-popular-title-in-the-country.md)  
-- [📈🌐🏆📢 Creating the Most Popular Blog in the World](./bot-chats/creating-the-most-popular-blog-in-the-world.md)  
   
   
 ## [💾 Software](./software/index.md) (29)  

@@ -76,7 +76,7 @@ affiliate link: https://amzn.to/4pigwKS
   
 ### 🧑‍🤝‍🧑 Similar  
 * [🌐🔗🧠📖 Thinking in Systems: A Primer](./thinking-in-systems.md) by Donella H. Meadows  
-* 📘 The Model Thinker by Scott E. Page  
+* [🧠📊 The Model Thinker: What You Need to Know to Make Data Work for You](./the-model-thinker-what-you-need-to-know-to-make-data-work-for-you.md) by Scott E. Page  
 * 📘 Poor Charlie's Almanack by Charlie Munger (collection of his thoughts on mental models)  
   
 ### 🆚 Contrasting  

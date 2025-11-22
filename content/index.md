@@ -12,7 +12,10 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 ❔ What do 🫵 _you_ 🤔 think?  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (370)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (373)  
+- [2025-11-22](./reflections/2025-11-22.md)  
+- [2025-11-21 | 🏢 Business | ⚙️ Systems 📚](./reflections/2025-11-21.md)  
+- [2025-11-20 | 🇺🇸 New Deal | 💸👹Corruption Currency 📚📰](./reflections/2025-11-20.md)  
 - [2025-11-19 | 🇺🇸📺🆘 Public Media 📺📚](./reflections/2025-11-19.md)  
 - [2025-11-18 | 🌳 Trees | 🐇 Rabbit | ↪️ 180 | 🧠 Intelligences | 🌠 The Star 📚📺🌌](./reflections/2025-11-18.md)  
 - [2025-11-17 | 🧸 Play | 👎 Fail | 🐜 Ants 📚](./reflections/2025-11-17.md)  
@@ -20,25 +23,23 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [2025-11-15 | 🔭 Range | 💹 Stocks | 🌋 Meltdown 📚📺](./reflections/2025-11-15.md)  
 - [2025-11-14 | ❌🇺🇸🏥🤑 Failing US Health System 📚📄](./reflections/2025-11-14.md)  
 - [2025-11-13 | 🐍 Corruption | 🪉 Orchestration | 🧠 Bias 📰📚📄📺🐦](./reflections/2025-11-13.md)  
-- [2025-11-12 | ☄️ Hail 🧩 Range 🤳🏼 Addict | ✉️ Trump & 🏝️ Epstein 📚📺📰](./reflections/2025-11-12.md)  
-- [2025-11-11 | 🌌 Systems | 💰 Economics | 🗳️ Voting | ✝️ Christianity | 🌺 Hawaii 📚📺](./reflections/2025-11-11.md)  
-- [2025-11-10 | 🫨 Vibe | ✅ Complete | 🚮 Cave 📚](./reflections/2025-11-10.md)  
   
   
-## [📚 Books](./books/index.md) (774)  
+## [📚 Books](./books/index.md) (778)  
+- [⚙️🔢 The Great Mental Models, Volume 3: Systems and Mathematics](./books/the-great-mental-models-volume-3-systems-and-mathematics.md)  
+- [🧠📊 The Model Thinker: What You Need to Know to Make Data Work for You](./books/the-model-thinker-what-you-need-to-know-to-make-data-work-for-you.md)  
+- [🎨🤔🖼️ The Art of Thinking Clearly](./books/the-art-of-thinking-clearly.md)  
+- [🧑‍🤝‍🧑⚙️🧬 Beyond the Science: How People, Process, and Systems Transform the Business of Life Sciences](./books/beyond-the-science-how-people-process-and-systems-transform-the-business-of-life-sciences.md)  
+- [🎨🤓 The Art of Learning: A Journey in the Pursuit of Excellence](./books/the-art-of-learning.md)  
+- [🌐🔭🎨🧩👨‍🎓 Range: Why Generalists Triumph in a Specialized World](./books/range.md)  
 - [🇺🇸📻 Shadow of the New Deal: The Victory of Public Broadcasting](./books/shadow-of-the-new-deal-the-victory-of-public-broadcasting.md)  
+- [🇺🇸🏛️ Why the New Deal Matters](./books/why-the-new-deal-matters.md)  
 - [⚫🔢 Ten Black Dots](./books/ten-black-dots.md)  
 - [🐰🥕 The Tale of Peter Rabbit](./books/the-tale-of-peter-rabbit.md)  
-- [📚🌿🔬 Encyclopedia of Applied Plant Sciences](./books/encyclopedia-of-applied-plant-sciences.md)  
-- [🍄🌍🧠🔮 Entangled Life: How Fungi Make Our Worlds, Change Our Minds & Shape Our Futures](./books/entangled-life-how-fungi-make-our-worlds-change-our-minds-shape-our-futures.md)  
-- [🪢🌾 Braiding Sweetgrass: Indigenous Wisdom, Scientific Knowledge, and the Teachings of Plants](./books/braiding-sweetgrass.md)  
-- [🐜👑 Empire of Ants: The Hidden World and Extraordinary Lives of Earth's Tiny Conquerors](./books/empire-of-ants-the-hidden-world-and-extraordinary-lives-of-earths-tiny-conquerors.md)  
-- [🌳🗣️ The Hidden Life of Trees: What They Feel, How They Communicate: Discoveries from a Secret World](./books/the-hidden-life-of-trees-what-they-feel-how-they-communicate-discoveries-from-a-secret-world.md)  
-- [🐜 The Ants](./books/the-ants.md)  
-- [📉🏆 How to Fail at Almost Everything and Still Win Big: Kind of the Story of My Life](./books/how-to-fail-at-almost-everything-and-still-win-big-kind-of-the-story-of-my-life.md)  
   
   
-## [📺 Videos](./videos/index.md) (440)  
+## [📺 Videos](./videos/index.md) (441)  
+- [👨‍👩‍👧‍👦🪙🤔⬇️ Trump family’s cryptocurrency ties raise concerns as administration loosens regulations](./videos/trump-familys-cryptocurrency-ties-raise-concerns-as-administration-loosens-regulations.md)  
 - [📺🎤📰 Public Media: Last Week Tonight with John Oliver (HBO)](./videos/public-media-last-week-tonight-with-john-oliver-hbo.md)  
 - [🧠👶🐒 Alison Gopnik, The Evolution of Human Intelligences | Natural Philosophy Forum Lecture 2025](./videos/alison-gopnik-the-evolution-of-human-intelligences-natural-philosophy-forum-lecture-2025.md)  
 - [🏛️🗣️🗓️ Politics Chat, November 18, 2025](./videos/politics-chat-november-18-2025.md)  
@@ -48,7 +49,6 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [🍊🤡😈 Trump & Epstein Last Week Tonight](./videos/trump-epstein-last-week-tonight.md)  
 - [📢👨⚖️🗣️ Tamara Keith and Amy Walter on the public response to Trump's handling of the Epstein case](./videos/tamara-keith-and-amy-walter-on-the-public-response-to-trumps-handling-of-the-epstein-case.md)  
 - [❓🤯😵‍💫 What the Heck Just Happened | 2025-11-15](./videos/what-the-heck-just-happened-2025-11-15.md)  
-- [🌍🏠📉 Aswath Damodaran Says «There’s No Place to Hide in Stocks» | Prof G Markets](./videos/aswath-damodaran-says-theres-no-place-to-hide-in-stocks-prof-g-markets.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (83)  

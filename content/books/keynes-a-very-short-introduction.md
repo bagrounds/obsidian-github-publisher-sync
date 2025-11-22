@@ -70,7 +70,7 @@ Robert Skidelsky's Keynes: A Very Short Introduction presents a comprehensive ov
 * 📊 A Concise Guide to Macroeconomics by David A. Moss  
   
 ### 👎 Contrasting  
-* 🇦🇹 Human Action by Ludwig von Mises  
+* [🧑‍🤝‍🧑💰 Human Action: A Treatise on Economics](./human-action-a-treatise-on-economics.md) by Ludwig von Mises  
 * 🚧 The Road to Serfdom by Friedrich A. Hayek  
 * ✍️ Economics in One Lesson by Henry Hazlitt  
   

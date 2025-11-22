@@ -97,7 +97,7 @@ Our disagreement is specifically on the nature of government bonds. When the �
 MMT, conversely, is less focused on interest rates and tends to view cyclical unemployment as a failure of insufficient aggregate demand, often proposing a counter-cyclical job guarantee. My contention is that the MMT-implied disregard for interest rate signaling means they fail to understand the fundamental cause of the cycle, leading to policy prescriptions that simply delay the necessary liquidation and create a 'boom-bust' cycle of even greater magnitude."  
   
 * ⚙️ **Supporting Evidence (Theoretical):** The **Austrian Theory of the Business Cycle (ABCT)**, linking fractional reserve banking, central bank manipulation of credit, and the intertemporal discoordination of production.  
-* 📚 **Citation:** Mises, L. V. (1949). *Human Action: A Treatise on Economics*. **Yale University Press**. (Especially Part Six, Chapter XX).  
+* 📚 **Citation:** Mises, L. V. (1949). [🧑‍🤝‍🧑💰 Human Action: A Treatise on Economics](../books/human-action-a-treatise-on-economics.md). **Yale University Press**. (Especially Part Six, Chapter XX).  
   
 ---  
   

@@ -25,7 +25,8 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [2025-11-13 | 🐍 Corruption | 🪉 Orchestration | 🧠 Bias 📰📚📄📺🐦](./reflections/2025-11-13.md)  
   
   
-## [📚 Books](./books/index.md) (778)  
+## [📚 Books](./books/index.md) (779)  
+- [🇿🇦 The New Apartheid](./books/the-new-apartheid.md)  
 - [⚙️🔢 The Great Mental Models, Volume 3: Systems and Mathematics](./books/the-great-mental-models-volume-3-systems-and-mathematics.md)  
 - [🧠📊 The Model Thinker: What You Need to Know to Make Data Work for You](./books/the-model-thinker-what-you-need-to-know-to-make-data-work-for-you.md)  
 - [🎨🤔🖼️ The Art of Thinking Clearly](./books/the-art-of-thinking-clearly.md)  
@@ -35,10 +36,10 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [🇺🇸📻 Shadow of the New Deal: The Victory of Public Broadcasting](./books/shadow-of-the-new-deal-the-victory-of-public-broadcasting.md)  
 - [🇺🇸🏛️ Why the New Deal Matters](./books/why-the-new-deal-matters.md)  
 - [⚫🔢 Ten Black Dots](./books/ten-black-dots.md)  
-- [🐰🥕 The Tale of Peter Rabbit](./books/the-tale-of-peter-rabbit.md)  
   
   
 ## [📺 Videos](./videos/index.md) (441)  
+- [🇿🇦👨‍👩‍👧‍👦⛓️卐 Elon Musk's Family History in South Africa Reveals Ties to Apartheid & Neo-Nazi Movements](./videos/elon-musks-family-history-in-south-africa-reveals-ties-to-apartheid-neo-nazi-movements.md)  
 - [👨‍👩‍👧‍👦🪙🤔⬇️ Trump family’s cryptocurrency ties raise concerns as administration loosens regulations](./videos/trump-familys-cryptocurrency-ties-raise-concerns-as-administration-loosens-regulations.md)  
 - [📺🎤📰 Public Media: Last Week Tonight with John Oliver (HBO)](./videos/public-media-last-week-tonight-with-john-oliver-hbo.md)  
 - [🧠👶🐒 Alison Gopnik, The Evolution of Human Intelligences | Natural Philosophy Forum Lecture 2025](./videos/alison-gopnik-the-evolution-of-human-intelligences-natural-philosophy-forum-lecture-2025.md)  
@@ -48,7 +49,6 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [🚨🚓📺🎤 Police Chases: Last Week Tonight with John Oliver (HBO)](./videos/police-chases-last-week-tonight-with-john-oliver-hbo.md)  
 - [🍊🤡😈 Trump & Epstein Last Week Tonight](./videos/trump-epstein-last-week-tonight.md)  
 - [📢👨⚖️🗣️ Tamara Keith and Amy Walter on the public response to Trump's handling of the Epstein case](./videos/tamara-keith-and-amy-walter-on-the-public-response-to-trumps-handling-of-the-epstein-case.md)  
-- [❓🤯😵‍💫 What the Heck Just Happened | 2025-11-15](./videos/what-the-heck-just-happened-2025-11-15.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (83)  

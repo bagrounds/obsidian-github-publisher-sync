@@ -13,7 +13,7 @@ tags:
 # 💼✅ The Case for a Job Guarantee  
 [🛒 The Case for a Job Guarantee. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/47iuypP)  
   
-📢 Persistent unemployment is a policy choice, not an economic necessity,. A 🏦 federally funded, locally administered job guarantee provides a 🔄 permanent counter-cyclical stabilizer and a ⚖️ foundational human right to decent, living-wage work.  
+📢 Persistent unemployment is a policy choice, not an economic necessity. A 🏦 federally funded, locally administered job guarantee provides a 🔄 permanent counter-cyclical stabilizer and a ⚖️ foundational human right to decent, living-wage work.  
   
 ## 📝🐒 Human Notes  
 - [🏦♾️📈💸 Modern Monetary Theory](../topics/modern-monetary-theory.md)  

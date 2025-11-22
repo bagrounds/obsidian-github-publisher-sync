@@ -7,11 +7,12 @@ URL: https://bagrounds.org/bot-chats
 backlinks: false
 ---
 [Home](../index.md)  
-# 🤖💬 Bot Chats (45)  
+# 🤖💬 Bot Chats (46)  
 - [🤖⚙️📈💡 AI Engineering Assistant Technology Recommendations](./ai-engineering-assistant-technology-recommendations.md)  
 - [🌸🌬️🤧🔬📚 Allergy Science Books](./allergy-science-books.md)  
 - [🤖📱🧠 Android Local LLMs](./android-local-llms.md)  
 - [⚛️💡🚀 Atomic Innovation](./atomic-innovation.md)  
+- [🇦🇹💰🆚📈🖨️ Austrian Economics vs Modern Monetary Theory](./austrian-economics-vs-modern-monetary-theory.md)  
 - [🕸️🪵🏅 Blogging Success](./blogging-success.md)  
 - [✍🏼 Blogiversary 🕯️](./blogiversary.md)  
 - [📖 Book 🧭 Explorer 1](./book-explorer-1.md)  

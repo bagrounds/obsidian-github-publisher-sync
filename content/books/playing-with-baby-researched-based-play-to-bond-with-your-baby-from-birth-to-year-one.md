@@ -81,7 +81,7 @@ affiliate link: https://amzn.to/47x0jLP
 * 🤸 Baby Play for Every Day by Charlotte Stirling-Reed: Practical play ideas for baby's first year.  
   
 ### ↔️ Contrasting  
-* 😴 Solve Your Child's Sleep Problems by Richard Ferber: Offers a more structured, parent-led approach to infant routines.  
+* [😴👶  Solve Your Child's Sleep Problems](./solve-your-childs-sleep-problems.md) by Richard Ferber: Offers a more structured, parent-led approach to infant routines.  
 * 🇫🇷 Bringing Up Bébé by Pamela Druckerman: Explores French parenting styles, often contrasting with intensive developmental play.  
   
 ### 🔗 Related  

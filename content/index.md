@@ -13,7 +13,7 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 💬 Comment on any page with your GitHub account.  
   
 ## [🪞 Reflections](./reflections/index.md) ~ Blog (373)  
-- [2025-11-22](./reflections/2025-11-22.md)  
+- [2025-11-22 | 📊 Models | ⛓️ Apartheid | 💰 Economics | 😴 Sleep Training 📚📺🤖💬](./reflections/2025-11-22.md)  
 - [2025-11-21 | 🏢 Business | ⚙️ Systems 📚](./reflections/2025-11-21.md)  
 - [2025-11-20 | 🇺🇸 New Deal | 💸👹Corruption Currency 📚📰](./reflections/2025-11-20.md)  
 - [2025-11-19 | 🇺🇸📺🆘 Public Media 📺📚](./reflections/2025-11-19.md)  
@@ -25,7 +25,10 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [2025-11-13 | 🐍 Corruption | 🪉 Orchestration | 🧠 Bias 📰📚📄📺🐦](./reflections/2025-11-13.md)  
   
   
-## [📚 Books](./books/index.md) (780)  
+## [📚 Books](./books/index.md) (781)  
+- [😴👶  Solve Your Child's Sleep Problems](./books/solve-your-childs-sleep-problems.md)  
+- [🤰👶🔬👩‍⚕️ 🧪 The Science of Mom: A Research-Based Guide to Your Baby's First Year](./books/the-science-of-mom.md)  
+- [👶🧸 Playing with Baby: Researched-Based Play to Bond with Your Baby from Birth to Year One](./books/playing-with-baby-researched-based-play-to-bond-with-your-baby-from-birth-to-year-one.md)  
 - [🧑‍💼🏦💸 The General Theory of Employment, Interest, and Money](./books/the-general-theory-of-employment-interest-and-money.md)  
 - [💰 Keynes: A Very Short Introduction](./books/keynes-a-very-short-introduction.md)  
 - [🧑‍🤝‍🧑💰 Human Action: A Treatise on Economics](./books/human-action-a-treatise-on-economics.md)  
@@ -33,12 +36,10 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [⚙️🔢 The Great Mental Models, Volume 3: Systems and Mathematics](./books/the-great-mental-models-volume-3-systems-and-mathematics.md)  
 - [🧠📊 The Model Thinker: What You Need to Know to Make Data Work for You](./books/the-model-thinker-what-you-need-to-know-to-make-data-work-for-you.md)  
 - [🎨🤔🖼️ The Art of Thinking Clearly](./books/the-art-of-thinking-clearly.md)  
-- [🧑‍🤝‍🧑⚙️🧬 Beyond the Science: How People, Process, and Systems Transform the Business of Life Sciences](./books/beyond-the-science-how-people-process-and-systems-transform-the-business-of-life-sciences.md)  
-- [🎨🤓 The Art of Learning: A Journey in the Pursuit of Excellence](./books/the-art-of-learning.md)  
-- [🌐🔭🎨🧩👨‍🎓 Range: Why Generalists Triumph in a Specialized World](./books/range.md)  
   
   
-## [📺 Videos](./videos/index.md) (441)  
+## [📺 Videos](./videos/index.md) (442)  
+- [👶⏰😴 How to Use the Ferber Method for Sleep Training | The Parents Guide | Parents](./videos/how-to-use-the-ferber-method-for-sleep-training-the-parents-guide-parents.md)  
 - [🇿🇦👨‍👩‍👧‍👦⛓️卐 Elon Musk's Family History in South Africa Reveals Ties to Apartheid & Neo-Nazi Movements](./videos/elon-musks-family-history-in-south-africa-reveals-ties-to-apartheid-neo-nazi-movements.md)  
 - [👨‍👩‍👧‍👦🪙🤔⬇️ Trump family’s cryptocurrency ties raise concerns as administration loosens regulations](./videos/trump-familys-cryptocurrency-ties-raise-concerns-as-administration-loosens-regulations.md)  
 - [📺🎤📰 Public Media: Last Week Tonight with John Oliver (HBO)](./videos/public-media-last-week-tonight-with-john-oliver-hbo.md)  
@@ -48,7 +49,6 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [🥇💰📈🧑‍🏫 The 2025 Nobel Prize in Economics: Explained](./videos/the-2025-nobel-prize-in-economics-explained.md)  
 - [🚨🚓📺🎤 Police Chases: Last Week Tonight with John Oliver (HBO)](./videos/police-chases-last-week-tonight-with-john-oliver-hbo.md)  
 - [🍊🤡😈 Trump & Epstein Last Week Tonight](./videos/trump-epstein-last-week-tonight.md)  
-- [📢👨⚖️🗣️ Tamara Keith and Amy Walter on the public response to Trump's handling of the Epstein case](./videos/tamara-keith-and-amy-walter-on-the-public-response-to-trumps-handling-of-the-epstein-case.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (83)  

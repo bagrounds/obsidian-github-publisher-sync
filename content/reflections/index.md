@@ -8,7 +8,7 @@ backlinks: false
 ---
 [Home](../index.md)  
 # 🪞 Reflections (373)  
-- [2025-11-22](./2025-11-22.md)  
+- [2025-11-22 | 📊 Models | ⛓️ Apartheid | 💰 Economics | 😴 Sleep Training 📚📺🤖💬](./2025-11-22.md)  
 - [2025-11-21 | 🏢 Business | ⚙️ Systems 📚](./2025-11-21.md)  
 - [2025-11-20 | 🇺🇸 New Deal | 💸👹Corruption Currency 📚📰](./2025-11-20.md)  
 - [2025-11-19 | 🇺🇸📺🆘 Public Media 📺📚](./2025-11-19.md)  

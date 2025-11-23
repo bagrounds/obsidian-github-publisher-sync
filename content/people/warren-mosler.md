@@ -3,6 +3,8 @@ aliases:
   - 👨‍🏫📉💵 Warren Mosler
 share: true
 title: 👨‍🏫📉💵 Warren Mosler
+tags:
+  - MMT
 ---
 [Home](../index.md) > [People](./index.md)  
 # 👨‍🏫📉💵 Warren Mosler  

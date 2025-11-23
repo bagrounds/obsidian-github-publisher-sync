@@ -17,18 +17,18 @@ youtube: https://youtu.be/cUTLCDBONok
   
 ## 🤖 AI Summary  
   
-* 💰 The US government, as a sovereign currency issuer with a floating exchange rate, can run unlimited nominal deficits.  
-* 🎯 Full employment can be sustained because the Treasury can sell unlimited securities at interest rates set by the Fed.  
-* 👷 The core policy proposal is a **Job Guarantee** for anyone willing and able to work, assisting the transition to private sector employment.  
-* 🏥 A **Health Care Proposal** suggests providing everyone $5,000 (a nominal starting point) to address healthcare needs.  
-* 🏦 The FDIC Insurance cap should be removed because it favors large banks and supports the unnecessary money market fund industry.  
-* 🛡️ The Fed should provide unsecured Bank liquidity.  
-* 🧍 Economic explanations must be centered in the **individual** (methodological individualism).  
-* 📈 Macroeconomic outcomes must be explained by building up from the **incentives guiding individual behavior** (micro-foundations).  
-* 📉 The **business cycle** is caused by central banks, such as the Federal Reserve, keeping interest rates artificially low.  
-* 🫧 The dot-com bubble (late 90s) was caused by the Greenspan Fed setting artificially low rates, pushing asset prices above their true value.  
-* 🔫 The current monetary system rests on the state's **monopoly on money**, enforced through coercion.  
-* 💡 The focus should be on changing the system away from government monopoly rather than just tweaking current arrangements.  
+* 💰 (MMT) The US government, as a sovereign currency issuer with a floating exchange rate, can run unlimited nominal deficits.  
+* 🎯 (MMT) Full employment can be sustained because the Treasury can sell unlimited securities at interest rates set by the Fed.  
+* 👷 (MMT) The core policy proposal is a **Job Guarantee** for anyone willing and able to work, assisting the transition to private sector employment.  
+* 🏥 (MMT) A **Health Care Proposal** suggests providing everyone $5,000 annually (a nominal starting point) to address healthcare needs.  
+* 🏦 (MMT) The FDIC Insurance cap should be removed because it favors large banks and supports the unnecessary money market fund industry.  
+* 🛡️ (MMT) The Fed should provide unsecured Bank liquidity.  
+* 🧍 (Austrian) Economic explanations must be centered in the **individual** (methodological individualism).  
+* 📈 (Austrian) Macroeconomic outcomes must be explained by building up from the **incentives guiding individual behavior** (micro-foundations).  
+* 📉 (Austrian) The **business cycle** is caused by central banks, such as the Federal Reserve, keeping interest rates artificially low.  
+* 🫧 (Austrian) The dot-com bubble (late 90s) was caused by the Greenspan Fed setting artificially low rates, pushing asset prices above their true value.  
+* 🔫 (MMT) The current monetary system rests on the state's **monopoly on money**, enforced through coercion.  
+* 💡 (Austrian) The focus should be on changing the system away from government monopoly rather than just tweaking current arrangements.  
   
 ## 🤔 Evaluation  
   

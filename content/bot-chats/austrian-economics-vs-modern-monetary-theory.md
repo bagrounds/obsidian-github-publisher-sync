@@ -4,8 +4,10 @@ aliases:
   - 🇦🇹💰🆚📈🖨️ Austrian Economics vs Modern Monetary Theory
 title: 🇦🇹💰🆚📈🖨️ Austrian Economics vs Modern Monetary Theory
 URL: https://bagrounds.org/bot-chats/austrian-economics-vs-modern-monetary-theory
+tags:
+  - MMT
 ---
-[Home](../index.md) > [Bot Chats](./index.md)  
+[Home](../index.md) > [Bot Chats](./index.md) | [🏦♾️📈💸 Modern Monetary Theory](../topics/modern-monetary-theory.md)  
 # 🇦🇹💰🆚📈🖨️ Austrian Economics vs Modern Monetary Theory  
 ## 💬 Gemini (3.0-fast) Prompt 1  
 > 📜 Please simulate a conversation between an Austrian economist and a Modern Monetary Theorist.  

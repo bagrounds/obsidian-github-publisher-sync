@@ -7,7 +7,7 @@ URL: https://bagrounds.org/books
 backlinks: false
 ---
 [Home](../index.md)  
-# 📚 Books (780)  
+# 📚 Books (781)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)  
 - [🧑‍🤝‍🧑📈 10 to 25: The Science of Motivating Young People: A Groundbreaking Approach to Leading the Next Generation - And Making Your Own Life Easier](./10-to-25-the-science-of-motivating-young-people-a-groundbreaking-approach-to-leading-the-next-generation-and-making-your-own-life-easier.md)  
@@ -493,6 +493,7 @@ backlinks: false
 - [💾🔮🤔🎲🎱 Software Estimation: Demystifying the Black Art](./software-estimation.md)  
 - [🧠🔄💡🌱✨ Soft Wired: How the New Science of Brain Plasticity Can Change Your Life](./soft-wired-how-the-new-science-of-brain-plasticity-can-change-your-life.md)  
 - [💪❤️ So Good They Can't Ignore You: Why Skills Trump Passion in the Quest for Work You Love](./so-good-they-cant-ignore-you-why-skills-trump-passion-in-the-quest-for-work-you-love.md)  
+- [😴👶  Solve Your Child's Sleep Problems](./solve-your-childs-sleep-problems.md)  
 - [⚠️👤 Something Happened](./something-happened.md)  
 - [⛲🔌🤔⚙️ Sources of Power: How People Make Decisions](./sources-of-power-how-people-make-decisions.md)  
 - [⚡🧠🏃 Spark: The Revolutionary New Science of Exercise and the Brain](./spark-the-revolutionary-new-science-of-exercise-and-the-brain.md)  

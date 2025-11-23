@@ -11,7 +11,7 @@ tags:
   - MMT
 youtube: https://youtu.be/tF1JIT9kcpw
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](../index.md) > [Videos](./index.md) | [👨‍🏫📉💵 Warren Mosler](../people/warren-mosler.md)  
 # 🇦🇹💰🆚 Modern Monetary Theory Showdown  
 ![The Austrian Economics vs Modern Monetary Theory Showdown | Robert Murphy and Nathan Tankus](https://youtu.be/tF1JIT9kcpw)  
   

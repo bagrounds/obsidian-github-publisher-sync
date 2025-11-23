@@ -7,7 +7,7 @@ URL: https://bagrounds.org/videos
 backlinks: false
 ---
 [Home](../index.md)  
-# 📺 Videos (441)  
+# 📺 Videos (442)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
 - [❓💪🔬 12 Questions About Creatine with Stephen Cornish, PhD](./12-questions-about-creatine-w-stephen-cornish-phd.md)  
@@ -159,6 +159,7 @@ backlinks: false
 - [👑🚫🌍🗣️ How to stop authoritarianism across the globe: a conversation with President Obama](./how-to-stop-authoritarianism-across-the-globe-a-conversation-with-president-obama.md)  
 - [🗣️👽 How to Talk to Aliens](./how-to-talk-to-aliens.md)  
 - [🤔🤯❤️📖 How to Understand Emotions | Dr. Lisa Feldman Barrett](./how-to-understand-emotions-dr-lisa-feldman-barrett.md)  
+- [👶⏰😴 How to Use the Ferber Method for Sleep Training | The Parents Guide | Parents](./how-to-use-the-ferber-method-for-sleep-training-the-parents-guide-parents.md)  
 - [👹🔌🤑 How Trump is using his power to profit and why no one will stop him](./how-trump-is-using-his-power-to-profit-and-why-no-one-will-stop-him.md)  
 - [👮‍♂️💪🚫📜 How Trump’s Bill Creates a Super Police Force](./how-trumps-bill-creates-a-super-police-force.md)  
 - [👨‍🌾🚫💵 How Trump's funding freeze is affecting American farmers](./how-trumps-funding-freeze-is-affecting-american-farmers.md)  

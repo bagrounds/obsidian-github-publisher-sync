@@ -8,6 +8,7 @@ Author:
 Platform:
 Channel: Class Unity
 tags:
+  - MMT
 youtube: https://youtu.be/m2rAkLIyBJg
 ---
 [Home](../index.md) > [Videos](./index.md) | [👨‍🏫📉💵 Warren Mosler](../people/warren-mosler.md)  

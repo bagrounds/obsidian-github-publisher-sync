@@ -10,7 +10,7 @@ Channel: Bard College Berlin
 tags:
 youtube: https://www.youtube.com/watch?v=v14iP_qnlgU
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](../index.md) > [Videos](./index.md) | [👨‍🏫📉💵 Warren Mosler](../people/warren-mosler.md)  
 # 😇😈📉🚫 7️⃣ Deadly Innocent Frauds-A BCB Economics Lecture  
 ![Seven Deadly Innocent Frauds-A BCB Economics Lecture](https://www.youtube.com/watch?v=v14iP_qnlgU)  
   

@@ -76,7 +76,7 @@ tags:
   
 ### 📖 Similar  
 * [💰📉➡️📈🗳️ The Deficit Myth: Modern Monetary Theory and the Birth of the People's Economy](./the-deficit-myth.md) by Stephanie Kelton  
-* Seven Deadly Innocent Frauds of Economic Policy by Warren Mosler  
+* [💸😇 The 7 Deadly Innocent Frauds of Economic Policy](./the-7-deadly-innocent-frauds-of-economic-policy.md) by Warren Mosler  
 * [💰📈🤔 Understanding Modern Money](./understanding-modern-money.md): The Key to Full Employment and Price Stability by L. Randall Wray  
   
 ### 📖 Contrasting  

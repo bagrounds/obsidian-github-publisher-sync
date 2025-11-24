@@ -62,7 +62,7 @@ youtube: https://youtu.be/cUTLCDBONok
   
 ### ↔️ Similar  
   
-* 📚 **Seven Deadly Innocent Frauds of Economic Policy** by Warren Mosler: 💡 This book provides an accessible introduction to MMT's core operational understandings of fiat currency, debt, and taxes, aligning closely with the MMT perspective in the debate.  
+* **[💸😇 The 7 Deadly Innocent Frauds of Economic Policy](../books/the-7-deadly-innocent-frauds-of-economic-policy.md)** by Warren Mosler: 💡 This book provides an accessible introduction to MMT's core operational understandings of fiat currency, debt, and taxes, aligning closely with the MMT perspective in the debate.  
 * **[💰📉➡️📈🗳️ The Deficit Myth: Modern Monetary Theory and the Birth of the People's Economy](../books/the-deficit-myth.md)** by Stephanie Kelton: 🎯 A popular, high-profile explanation of MMT principles, focusing on how governments can leverage their sovereign currency power to fund public goals, similar to the MMT proposals discussed.  
   
 ### 🆚 Contrasting  

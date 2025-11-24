@@ -48,7 +48,7 @@ Modern Monetary Theory (MMT), largely developed by Warren Mosler, presents a fra
   
 ### ↔️ Similar  
   
-* 🗣️ The Seven Deadly Innocent Frauds of Economic Policy by Warren Mosler: **Mosler's foundational text** that clearly outlines the core MMT principles, dismantling common economic misconceptions about deficits, debt, and Social Security.  
+* [💸😇 The 7 Deadly Innocent Frauds of Economic Policy](../books/the-7-deadly-innocent-frauds-of-economic-policy.md) by Warren Mosler: **Mosler's foundational text** that clearly outlines the core MMT principles, dismantling common economic misconceptions about deficits, debt, and Social Security.  
 * [💰📈🤔 Understanding Modern Money](../books/understanding-modern-money.md): The Key to Full Employment and Price Stability by L. Randall Wray: A **detailed academic exploration of MMT** that integrates Mosler's chartalist view of money with concepts like functional finance and the Job Guarantee.  
   
 ### 🆚 Contrasting  

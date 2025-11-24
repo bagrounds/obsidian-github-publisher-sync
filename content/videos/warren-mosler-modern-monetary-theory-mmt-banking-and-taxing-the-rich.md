@@ -48,7 +48,7 @@ youtube: https://youtu.be/m2rAkLIyBJg
 ### ↔️ Similar  
   
 * [💰📉➡️📈🗳️ The Deficit Myth: Modern Monetary Theory and the Birth of the People's Economy](../books/the-deficit-myth.md) by Stephanie Kelton: Explores MMT’s core ideas and applies them to current political issues, arguing for policies like Medicare for All and a Green New Deal by removing the debt constraint fear.  
-* ✍️ Seven Deadly Innocent Frauds of Economic Policy by Warren Mosler: The seminal text from the theory's founder, which lays out the operational realities of fiat currency systems and debunks common economic myths.  
+* [💸😇 The 7 Deadly Innocent Frauds of Economic Policy](../books/the-7-deadly-innocent-frauds-of-economic-policy.md) by Warren Mosler: The seminal text from the theory's founder, which lays out the operational realities of fiat currency systems and debunks common economic myths.  
 * [💰📈🤔 Understanding Modern Money](../books/understanding-modern-money.md): The Key to Full Employment and Price Stability by L. Randall Wray: A comprehensive academic treatment that details the history and mechanics of MMT and its policy proposal for a Job Guarantee.  
   
 ### 🆚 Contrasting  

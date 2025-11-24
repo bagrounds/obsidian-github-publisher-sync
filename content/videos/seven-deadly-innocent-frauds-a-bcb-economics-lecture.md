@@ -45,7 +45,7 @@ youtube: https://www.youtube.com/watch?v=v14iP_qnlgU
 📜 A: MMT is an economic framework asserting that governments issuing their own non-convertible fiat currency face no financial constraint on spending. 💰 They do not need to tax or borrow to fund public works; the only limit to spending is the availability of real resources and the risk of 📈 inflation (Investopedia, What Is Modern Monetary Theory).  
   
 ### 💸 Q: How does government debt affect future generations according to MMT?  
-👶 A: According to MMT, government debt does not burden future generations in real terms 🚫 because future generations will consume what they produce. The debt represents 🏦 net financial savings accumulated by the private sector and is merely a score-keeping mechanism for outstanding currency (The 7 Deadly Innocent Frauds of Economic Policy).  
+👶 A: According to MMT, government debt does not burden future generations in real terms 🚫 because future generations will consume what they produce. The debt represents 🏦 net financial savings accumulated by the private sector and is merely a score-keeping mechanism for outstanding currency ([💸😇 The 7 Deadly Innocent Frauds of Economic Policy](../books/the-7-deadly-innocent-frauds-of-economic-policy.md)).  
   
 ### 🎯 Q: What is the primary purpose of taxation in a sovereign currency system?  
 🛡️ A: The main purpose of taxation is to create demand for the government's currency by imposing a tax liability. 📉 More importantly, taxes manage aggregate demand by reducing private spending to prevent the economy from overheating and causing inflation (Investopedia, What Is Modern Monetary Theory).  

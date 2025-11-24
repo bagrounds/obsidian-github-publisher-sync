@@ -12,7 +12,9 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 ❔ What do 🫵 _you_ 🤔 think?  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (373)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (375)  
+- [2025-11-24](./reflections/2025-11-24.md)  
+- [2025-11-23](./reflections/2025-11-23.md)  
 - [2025-11-22 | 📊 Models | ⛓️ Apartheid | 💰 Economics | 😴 Sleep Training 📚📺🤖💬](./reflections/2025-11-22.md)  
 - [2025-11-21 | 🏢 Business | ⚙️ Systems 📚](./reflections/2025-11-21.md)  
 - [2025-11-20 | 🇺🇸 New Deal | 💸👹Corruption Currency 📚📰](./reflections/2025-11-20.md)  
@@ -21,40 +23,38 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [2025-11-17 | 🧸 Play | 👎 Fail | 🐜 Ants 📚](./reflections/2025-11-17.md)  
 - [2025-11-16 | 🗼 Towers | 🚔 Policing | 📈 Creative Destruction 📚📺](./reflections/2025-11-16.md)  
 - [2025-11-15 | 🔭 Range | 💹 Stocks | 🌋 Meltdown 📚📺](./reflections/2025-11-15.md)  
-- [2025-11-14 | ❌🇺🇸🏥🤑 Failing US Health System 📚📄](./reflections/2025-11-14.md)  
-- [2025-11-13 | 🐍 Corruption | 🪉 Orchestration | 🧠 Bias 📰📚📄📺🐦](./reflections/2025-11-13.md)  
   
   
-## [📚 Books](./books/index.md) (781)  
+## [📚 Books](./books/index.md) (782)  
+- [💰📉➡️📈🗳️ The Deficit Myth: Modern Monetary Theory and the Birth of the People's Economy](./books/the-deficit-myth.md)  
+- [💵🏛️📈 Soft Currency Economics II: The Origin of Modern Monetary Theory](./books/soft-currency-economics-ii-the-origin-of-modern-monetary-theory.md)  
+- [💰🇺🇸 Making Money Work for Us: How MMT Can Save America](./books/making-money-work-for-us-how-mmt-can-save-america.md)  
+- [💸😇 The 7 Deadly Innocent Frauds of Economic Policy](./books/the-7-deadly-innocent-frauds-of-economic-policy.md)  
 - [😴👶  Solve Your Child's Sleep Problems](./books/solve-your-childs-sleep-problems.md)  
 - [🤰👶🔬👩‍⚕️ 🧪 The Science of Mom: A Research-Based Guide to Your Baby's First Year](./books/the-science-of-mom.md)  
 - [👶🧸 Playing with Baby: Researched-Based Play to Bond with Your Baby from Birth to Year One](./books/playing-with-baby-researched-based-play-to-bond-with-your-baby-from-birth-to-year-one.md)  
 - [🧑‍💼🏦💸 The General Theory of Employment, Interest, and Money](./books/the-general-theory-of-employment-interest-and-money.md)  
 - [💰 Keynes: A Very Short Introduction](./books/keynes-a-very-short-introduction.md)  
 - [🧑‍🤝‍🧑💰 Human Action: A Treatise on Economics](./books/human-action-a-treatise-on-economics.md)  
-- [🇿🇦 The New Apartheid](./books/the-new-apartheid.md)  
-- [⚙️🔢 The Great Mental Models, Volume 3: Systems and Mathematics](./books/the-great-mental-models-volume-3-systems-and-mathematics.md)  
-- [🧠📊 The Model Thinker: What You Need to Know to Make Data Work for You](./books/the-model-thinker-what-you-need-to-know-to-make-data-work-for-you.md)  
-- [🎨🤔🖼️ The Art of Thinking Clearly](./books/the-art-of-thinking-clearly.md)  
   
   
-## [📺 Videos](./videos/index.md) (442)  
+## [📺 Videos](./videos/index.md) (448)  
+- [💰🏦📈 Warren Mosler | Modern Monetary Theory (MMT), Banking, and Taxing the Rich](./videos/warren-mosler-modern-monetary-theory-mmt-banking-and-taxing-the-rich.md)  
+- [😇😈📉🚫 7️⃣ Deadly Innocent Frauds-A BCB Economics Lecture](./videos/seven-deadly-innocent-frauds-a-bcb-economics-lecture.md)  
+- [💰🇦🇹🆚📈 MMT vs. Austrian School Debate](./videos/mmt-vs-austrian-school-debate.md)  
+- [🖨️💰♾️ How Much Money Can We Print? - Warren Mosler, Modern Monetary Theory - DSPod  > 251](./videos/how-much-money-can-we-print-warren-mosler-modern-monetary-theory-dspod-251.md)  
+- [❓🪙💡🇺🇸 Unraveling the Mysteries of Modern Monetary Theory with Warren Mosler](./videos/unraveling-the-mysteries-of-modern-monetary-theory-with-warren-mosler.md)  
+- [🇦🇹💰🆚 Modern Monetary Theory Showdown](./videos/the-austrian-economics-vs-modern-monetary-theory-showdown-robert-murphy-and-nathan-tankus.md)  
 - [👶⏰😴 How to Use the Ferber Method for Sleep Training | The Parents Guide | Parents](./videos/how-to-use-the-ferber-method-for-sleep-training-the-parents-guide-parents.md)  
 - [🇿🇦👨‍👩‍👧‍👦⛓️卐 Elon Musk's Family History in South Africa Reveals Ties to Apartheid & Neo-Nazi Movements](./videos/elon-musks-family-history-in-south-africa-reveals-ties-to-apartheid-neo-nazi-movements.md)  
 - [👨‍👩‍👧‍👦🪙🤔⬇️ Trump family’s cryptocurrency ties raise concerns as administration loosens regulations](./videos/trump-familys-cryptocurrency-ties-raise-concerns-as-administration-loosens-regulations.md)  
 - [📺🎤📰 Public Media: Last Week Tonight with John Oliver (HBO)](./videos/public-media-last-week-tonight-with-john-oliver-hbo.md)  
-- [🧠👶🐒 Alison Gopnik, The Evolution of Human Intelligences | Natural Philosophy Forum Lecture 2025](./videos/alison-gopnik-the-evolution-of-human-intelligences-natural-philosophy-forum-lecture-2025.md)  
-- [🏛️🗣️🗓️ Politics Chat, November 18, 2025](./videos/politics-chat-november-18-2025.md)  
-- [👶🏆🧠✨ What kids know about motivation (and we don't) | Betsy Blackard | TEDx Claremont Graduate University](./videos/what-kids-know-about-motivation-and-we-dont-betsy-blackard-tedx-claremont-graduate-university.md)  
-- [🥇💰📈🧑‍🏫 The 2025 Nobel Prize in Economics: Explained](./videos/the-2025-nobel-prize-in-economics-explained.md)  
-- [🚨🚓📺🎤 Police Chases: Last Week Tonight with John Oliver (HBO)](./videos/police-chases-last-week-tonight-with-john-oliver-hbo.md)  
-- [🍊🤡😈 Trump & Epstein Last Week Tonight](./videos/trump-epstein-last-week-tonight.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (83)  
-- [⭐✨🌟💫 The Star](./topics/the-star.md)  
-- [🏦♾️📈💸 Modern Monetary Theory](./topics/modern-monetary-theory.md)  
 - [💰🏛️📈 Functional Finance](./topics/functional-finance.md)  
+- [🏦♾️📈💸 Modern Monetary Theory](./topics/modern-monetary-theory.md)  
+- [⭐✨🌟💫 The Star](./topics/the-star.md)  
 - [🤔🚫➡️📚 Heterodox Economics](./topics/heterodox-economics.md)  
 - [🗣️📚🧠 Linguistics](./topics/linguistics.md)  
   
@@ -83,10 +83,10 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [🐍📜🔍✅ Pydantic](./software/pydantic.md)  
   
   
-## [👥 People](./people/index.md) (16)  
+## [👥 People](./people/index.md) (17)  
+- [👨‍🏫📉💵 Warren Mosler](./people/warren-mosler.md)  
 - [🤖🧠💻 Andrej Karpathy](./people/andrej-karpathy.md)  
 - [👨‍🏫📈💻 Scott Galloway](./people/scott-galloway.md)  
-- [🏛️🇺🇸📖 Heather Cox Richardson](./people/heather-cox-richardson.md)  
   
   
 ## [🛍️ Products](./products/index.md) (3)  

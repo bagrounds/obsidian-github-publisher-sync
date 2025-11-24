@@ -91,7 +91,7 @@ tags:
 * [👨‍🏫❓ Why Minsky Matters: An Introduction to the Work of a Maverick Economist](./why-minsky-matters-an-introduction-to-the-work-of-a-maverick-economist.md) by L. Randall Wray.  
 * [💰🏛️ Modern Money Theory: A Primer on Macroeconomics for Sovereign Monetary Systems](./modern-money-theory-a-primer-on-macroeconomics-for-sovereign-monetary-systems.md) by L. Randall Wray  
 * [💵🏛️📈 Soft Currency Economics II: The Origin of Modern Monetary Theory](./soft-currency-economics-ii-the-origin-of-modern-monetary-theory.md) by Warren Mosler  
-* 🚫 Seven Deadly Innocent Frauds Of Economic Policy by Warren Mosler  
+* [💸😇 The 7 Deadly Innocent Frauds of Economic Policy](./the-7-deadly-innocent-frauds-of-economic-policy.md) by Warren Mosler  
   
 ### 🆚 Contrasting  
 * 👓 Economics in One Lesson by Henry Hazlitt  

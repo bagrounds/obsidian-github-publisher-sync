@@ -10,7 +10,7 @@ Channel: ReSolve Asset Management
 tags:
 youtube: https://youtu.be/C9DJEG4qWKk
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](../index.md) > [Videos](./index.md) | [👨‍🏫📉💵 Warren Mosler](../people/warren-mosler.md)  
 # ❓🪙💡🇺🇸 Unraveling the Mysteries of Modern Monetary Theory with Warren Mosler  
 ![Unraveling the Mysteries of Modern Monetary Theory with Warren Mosler](https://youtu.be/C9DJEG4qWKk)  
   

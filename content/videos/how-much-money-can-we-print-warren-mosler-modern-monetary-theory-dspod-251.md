@@ -11,7 +11,7 @@ tags:
   - MMT
 youtube: https://youtu.be/RC2oLB4Nsw8
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](../index.md) > [Videos](./index.md) | [👨‍🏫📉💵 Warren Mosler](../people/warren-mosler.md)  
 # 🖨️💰♾️ How Much Money Can We Print? - Warren Mosler, Modern Monetary Theory - DSPod #251  
 ![How Much Money Can We Print? - Warren Mosler, Modern Monetary Theory - DSPod #251](https://youtu.be/RC2oLB4Nsw8)  
   

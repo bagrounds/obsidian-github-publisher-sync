@@ -64,5 +64,5 @@ youtube: https://www.youtube.com/watch?v=v14iP_qnlgU
   
 ### 🎨 Creatively Related  
   
-* Mission Economy: A Moonshot Guide to Changing Capitalism by Mariana Mazzucato: 🚀 Focuses on the idea of government proactively using fiscal policy and public investments to shape markets and solve grand societal challenges.  
+* [🚀🌍💰 Mission Economy: A Moonshot Guide to Changing Capitalism](../books/mission-economy-a-moonshot-guide-to-changing-capitalism.md) by Mariana Mazzucato: 🚀 Focuses on the idea of government proactively using fiscal policy and public investments to shape markets and solve grand societal challenges.  
 * [🏛️💰 Debt: The First 5,000 Years](../books/debt-the-first-5000-years.md) by David Graeber: 📜 Explores the historical and anthropological relationship between debt, money, and power, providing crucial context for understanding the social function of currency.

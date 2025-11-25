@@ -7,7 +7,7 @@ backlinks: false
 URL: https://bagrounds.org/people
 ---
 [Home](../index.md)  
-# 👥 People (16)  
+# 👥 People (17)  
 - [🤖🧠💻 Andrej Karpathy](./andrej-karpathy.md)  
 - [🧠🫀👀🔬 Andrew Huberman](./andrew-huberman.md)  
 - [👨‍🏫🤖 Andrew Ng](./andrew-ng.md)  
@@ -22,5 +22,6 @@ URL: https://bagrounds.org/people
 - [😴🧠🌃 Sara C. Mednick](./sara-c-mednick.md)  
 - [👨‍🏫📈💻 Scott Galloway](./scott-galloway.md)  
 - [🕸️🌐👨‍💻 Tim Berners-Lee](./tim-berners-lee.md)  
+- [👨‍🏫📉💵 Warren Mosler](./warren-mosler.md)  
 - [📈📊⚙️🎯 W Edwards Deming](./w-edwards-deming.md)  
   

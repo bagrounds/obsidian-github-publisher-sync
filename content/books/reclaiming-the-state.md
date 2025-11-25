@@ -4,8 +4,8 @@ aliases:
   - "🏛️🔄✊🌍 Reclaiming the State: A Progressive Vision of Sovereignty for a Post-Neoliberal World"
 title: "🏛️🔄✊🌍 Reclaiming the State: A Progressive Vision of Sovereignty for a Post-Neoliberal World"
 URL: https://bagrounds.org/books/reclaiming-the-state
-Author: 
-tags: 
+Author:
+tags:
 affiliate link: https://amzn.to/4dSXFl4
 ---
 [Home](../index.md) > [Books](./index.md)  
@@ -67,7 +67,7 @@ affiliate link: https://amzn.to/4dSXFl4
 * **Best Diametrically Opposed Book:** "Capitalism and Freedom" by Milton Friedman 🗽💰. This classic work defends the principles of free-market capitalism 💰📈 and limited government 🏛️🚫.  
 * **Best Fiction Book (Related Ideas):** "The Ministry for the Future" by Kim Stanley Robinson 🌍🌡️. This novel explores the challenges of climate change 🌡️🔥 and the potential for collective action 🤝👥 to address them.  
 * **Best More General Book:** "[23 Things They Don't Tell You About Capitalism](./23-things-they-dont-tell-you-about-capitalism.md)" by Ha-Joon Chang 📊🤔. This book offers a critical overview 🧐🔍 of capitalism 💰📈 and its limitations 📉🚫.  
-* **Best More Specific Book:** "Mission Economy: A Moonshot Guide to Changing Capitalism" by Mariana Mazzucato 🚀🛠️. This book gives very specific details 📊📈 on how states can create powerful industrial policy 🏭🔧.  
+* **Best More Specific Book:** [🚀🌍💰 Mission Economy: A Moonshot Guide to Changing Capitalism](./mission-economy-a-moonshot-guide-to-changing-capitalism.md) by Mariana Mazzucato 🚀🛠️. This book gives very specific details 📊📈 on how states can create powerful industrial policy 🏭🔧.  
 * **Best More Rigorous Book:** "Political Order and Political Decay: From the Industrial Revolution to the Globalization of Democracy" by Francis Fukuyama 🏛️📜. This book provides a comprehensive historical analysis 📜🕰️ of state-building 🏗️🏛️ and political development 🗳️🤝.  
 * **Best More Accessible Book:** "This Changes Everything: Capitalism vs. The Climate" by Naomi Klein 🌡️📖. This book provides a clear and compelling account 🗣️📖 of the relationship between capitalism 💰📈 and climate change 🌡️🔥.  
   

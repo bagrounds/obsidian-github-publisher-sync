@@ -12,7 +12,8 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 ❔ What do 🫵 _you_ 🤔 think?  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (375)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (376)  
+- [2025-11-25](./reflections/2025-11-25.md)  
 - [2025-11-24 | 😇🤥 Innocent Fraud 📺📚](./reflections/2025-11-24.md)  
 - [2025-11-23 | 👨‍🏫 Warren Mosler & 💲🔬 Modern Monetary Theory 👥📺](./reflections/2025-11-23.md)  
 - [2025-11-22 | 📊 Models | ⛓️ Apartheid | 💰 Economics | 😴 Sleep Training 📚📺🤖💬](./reflections/2025-11-22.md)  
@@ -22,10 +23,12 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [2025-11-18 | 🌳 Trees | 🐇 Rabbit | ↪️ 180 | 🧠 Intelligences | 🌠 The Star 📚📺🌌](./reflections/2025-11-18.md)  
 - [2025-11-17 | 🧸 Play | 👎 Fail | 🐜 Ants 📚](./reflections/2025-11-17.md)  
 - [2025-11-16 | 🗼 Towers | 🚔 Policing | 📈 Creative Destruction 📚📺](./reflections/2025-11-16.md)  
-- [2025-11-15 | 🔭 Range | 💹 Stocks | 🌋 Meltdown 📚📺](./reflections/2025-11-15.md)  
   
   
-## [📚 Books](./books/index.md) (782)  
+## [📚 Books](./books/index.md) (783)  
+- [🏛️🔄✊🌍 Reclaiming the State: A Progressive Vision of Sovereignty for a Post-Neoliberal World](./books/reclaiming-the-state.md)  
+- [🍩🌍 Doughnut Economics: Seven Ways to Think Like a 21st-Century Economist](./books/doughnut-economics-seven-ways-to-think-like-a-21st-century-economist.md)  
+- [🚀🌍💰 Mission Economy: A Moonshot Guide to Changing Capitalism](./books/mission-economy-a-moonshot-guide-to-changing-capitalism.md)  
 - [💰📉➡️📈🗳️ The Deficit Myth: Modern Monetary Theory and the Birth of the People's Economy](./books/the-deficit-myth.md)  
 - [💵🏛️📈 Soft Currency Economics II: The Origin of Modern Monetary Theory](./books/soft-currency-economics-ii-the-origin-of-modern-monetary-theory.md)  
 - [💰🇺🇸 Making Money Work for Us: How MMT Can Save America](./books/making-money-work-for-us-how-mmt-can-save-america.md)  
@@ -33,14 +36,11 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [😴👶  Solve Your Child's Sleep Problems](./books/solve-your-childs-sleep-problems.md)  
 - [🤰👶🔬👩‍⚕️ 🧪 The Science of Mom: A Research-Based Guide to Your Baby's First Year](./books/the-science-of-mom.md)  
 - [👶🧸 Playing with Baby: Researched-Based Play to Bond with Your Baby from Birth to Year One](./books/playing-with-baby-researched-based-play-to-bond-with-your-baby-from-birth-to-year-one.md)  
-- [🧑‍💼🏦💸 The General Theory of Employment, Interest, and Money](./books/the-general-theory-of-employment-interest-and-money.md)  
-- [💰 Keynes: A Very Short Introduction](./books/keynes-a-very-short-introduction.md)  
-- [🧑‍🤝‍🧑💰 Human Action: A Treatise on Economics](./books/human-action-a-treatise-on-economics.md)  
   
   
 ## [📺 Videos](./videos/index.md) (448)  
-- [💰🏦📈 Warren Mosler | Modern Monetary Theory (MMT), Banking, and Taxing the Rich](./videos/warren-mosler-modern-monetary-theory-mmt-banking-and-taxing-the-rich.md)  
 - [😇😈📉🚫 7️⃣ Deadly Innocent Frauds-A BCB Economics Lecture](./videos/seven-deadly-innocent-frauds-a-bcb-economics-lecture.md)  
+- [💰🏦📈 Warren Mosler | Modern Monetary Theory (MMT), Banking, and Taxing the Rich](./videos/warren-mosler-modern-monetary-theory-mmt-banking-and-taxing-the-rich.md)  
 - [💰🇦🇹🆚📈 MMT vs. Austrian School Debate](./videos/mmt-vs-austrian-school-debate.md)  
 - [🖨️💰♾️ How Much Money Can We Print? - Warren Mosler, Modern Monetary Theory - DSPod  > 251](./videos/how-much-money-can-we-print-warren-mosler-modern-monetary-theory-dspod-251.md)  
 - [❓🪙💡🇺🇸 Unraveling the Mysteries of Modern Monetary Theory with Warren Mosler](./videos/unraveling-the-mysteries-of-modern-monetary-theory-with-warren-mosler.md)  

@@ -7,7 +7,7 @@ URL: https://bagrounds.org/books
 backlinks: false
 ---
 [Home](../index.md)  
-# 📚 Books (782)  
+# 📚 Books (783)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)  
 - [🧑‍🤝‍🧑📈 10 to 25: The Science of Motivating Young People: A Groundbreaking Approach to Leading the Next Generation - And Making Your Own Life Easier](./10-to-25-the-science-of-motivating-young-people-a-groundbreaking-approach-to-leading-the-next-generation-and-making-your-own-life-easier.md)  
@@ -360,6 +360,7 @@ backlinks: false
 - [🧠🌱🤔 Mind in Life: Biology, Phenomenology, and the Sciences of Mind](./mind-in-life-biology-phenomenology-and-the-sciences-of-mind.md)  
 - [🌱🧘🏼‍♀️🏆 Mindset: The New Psychology of Success](./mindset.md)  
 - [🤔💸 Misbehaving: The Making of Behavioral Economics](./misbehaving-the-making-of-behavioral-economics.md)  
+- [🚀🌍💰 Mission Economy: A Moonshot Guide to Changing Capitalism](./mission-economy-a-moonshot-guide-to-changing-capitalism.md)  
 - [🔋⚕️⏳ Mitochondria and the Future of Medicine: The Key to Understanding Disease, Chronic Illness, Aging, and Life Itself](./mitochondria-and-the-future-of-medicine-the-key-to-understanding-disease-chronic-illness-aging-and-life-itself.md)  
 - [🤖🔍✅ Model Checking](./model-checking.md)  
 - [🔄📈🧩 Modeling of Dynamic Systems](./modeling-dynamic-systems.md)  

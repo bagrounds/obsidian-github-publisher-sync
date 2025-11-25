@@ -7,7 +7,8 @@ URL: https://bagrounds.org/reflections
 backlinks: false
 ---
 [Home](../index.md)  
-# 🪞 Reflections (375)  
+# 🪞 Reflections (376)  
+- [2025-11-25](./2025-11-25.md)  
 - [2025-11-24 | 😇🤥 Innocent Fraud 📺📚](./2025-11-24.md)  
 - [2025-11-23 | 👨‍🏫 Warren Mosler & 💲🔬 Modern Monetary Theory 👥📺](./2025-11-23.md)  
 - [2025-11-22 | 📊 Models | ⛓️ Apartheid | 💰 Economics | 😴 Sleep Training 📚📺🤖💬](./2025-11-22.md)  

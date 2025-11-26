@@ -66,7 +66,7 @@ The book caters to a diverse audience of "curious minds". It is designed for any
   
 * **[📜🌍⏳ Sapiens: A Brief History of Humankind](./sapiens-a-brief-history-of-humankind.md)** by Yuval Noah Harari: This book provides a sweeping, interdisciplinary account of human history, integrating insights from biology, anthropology, economics, and history to offer a grand narrative of how humanity developed and accumulated knowledge over millennia.  
 * 📖 **How to Be a Stoic: Using Ancient Philosophy to Live a Modern Life** by Massimo Pigliucci: This book encourages a specific intellectual and practical approach to life, emphasizing reason, virtue, and tranquility. It connects to the essence of "essential knowledge" by illustrating how philosophical wisdom can be applied to contemporary existence.  
-* 📖 **Cosmos** by Carl Sagan: Inspiring wonder and curiosity about the universe, this classic book explores astronomy, science, and humanity's place in the cosmos, exemplifying a deep dive into one of the many scientific subjects covered generally in The New York Times Guide.  
+* **[🌌 Cosmos](./cosmos.md)** by Carl Sagan: Inspiring wonder and curiosity about the universe, this classic book explores astronomy, science, and humanity's place in the cosmos, exemplifying a deep dive into one of the many scientific subjects covered generally in The New York Times Guide.  
 * 📖 **A Short History of Nearly Everything** by Bill Bryson: This engaging book humorously and accessibly explains complex scientific and historical topics, fostering a general appreciation for knowledge and the processes of discovery, making it a compelling read for curious minds.  
   
 ## 💬 [Gemini](https://gemini.google.com) Prompt (gemini-2.5-flash)  

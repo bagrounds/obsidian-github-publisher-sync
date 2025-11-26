@@ -4,10 +4,10 @@ aliases:
   - 🧠💪🤯🔄♾️ 15 Books So Hard They’ll Reshape Your Brain Forever
 title: 🧠💪🤯🔄♾️ 15 Books So Hard They’ll Reshape Your Brain Forever
 URL: https://bagrounds.org/videos/15-books-so-hard-theyll-reshape-your-brain-forever
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: Stephen Petro
-tags: 
+tags:
 youtube: https://youtu.be/XxWOZs9v3NM
 ---
 [Home](../index.md) > [Videos](./index.md)  
@@ -50,7 +50,7 @@ While this video provides an excellent introduction to books that foster first p
 ## 📚 Book Recommendations  
 * **[🤔🐇🐢 Thinking, Fast and Slow](../books/thinking-fast-and-slow.md) by Daniel Kahneman**: A classic that explores the two systems that drive the way we think and make decisions, highly relevant to the probability and logic aspects discussed.  
 * 🧘‍♀️ **"The Book of Joy: Lasting Happiness in a Changing World" by Dalai Lama XIV and Desmond Tutu**: Offers a contrasting perspective on truth, meaning, and consciousness through the lens of spiritual wisdom and practical advice.  
-* 🌌 **"Cosmos" by Carl Sagan**: While not strictly philosophical, this book broadens the scope of thinking about the universe and our place in it, touching upon scientific reasoning and the search for truth.  
+* **[🌌 Cosmos](../books/cosmos.md) by Carl Sagan**: While not strictly philosophical, this book broadens the scope of thinking about the universe and our place in it, touching upon scientific reasoning and the search for truth.  
 * 🎨 **"A Whole New Mind: Why Right-Brainers Will Rule the Future" by Daniel H. Pink**: This book offers a creative and contrasting view on thinking skills, emphasizing the importance of creativity, empathy, and meaning in the modern world.  
   
 ## 🐦 Tweet  

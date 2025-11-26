@@ -15,7 +15,7 @@ CTA: 💡 Sharpen judgement.
   
 ### ℹ️ Overview  
   
-* 📖 *The Art of Thinking Clearly* by Rolf Dobelli is a 🧭 guide to recognizing and avoiding common cognitive biases and logical fallacies that lead to poor decision-making. 💡 Based on the author's realization that systematic thinking failures are common, the book 📚 compiles 99 such errors in short, accessible chapters. 👨‍🏫 Dobelli draws on research in behavioral economics, psychology, and neuroscience 🧠 to illustrate these mental shortcuts and their potential pitfalls. The book 🎯 aims to help readers improve their rationality and make better choices in various aspects of life.  
+* A 🧭 guide to recognizing and avoiding common cognitive biases and logical fallacies that lead to poor decision-making. 💡 Based on the author's realization that systematic thinking failures are common, the book 📚 compiles 99 such errors in short, accessible chapters. 👨‍🏫 Dobelli draws on research in behavioral economics, psychology, and neuroscience 🧠 to illustrate these mental shortcuts and their potential pitfalls. The book 🎯 aims to help readers improve their rationality and make better choices in various aspects of life.  
   
 ### 🔑 Key Concepts  
   
@@ -46,6 +46,7 @@ The book is structured into 99 short chapters, each dedicated to a specific thin
 * 😵‍💫 **[Predictably Irrational](./predictably-irrational.md): The Hidden Forces That Shape Our Decisions by Dan Ariely:** Ariely explores the irrationality of human behavior in economic contexts, revealing how systematic errors affect our decisions about everything from finances to relationships.  
 * 🤥 **The (Honest) Truth About Dishonesty by Dan Ariely:** Another by Ariely, this book focuses specifically on the root causes of dishonesty and how people rationalize their unethical behavior.  
 * 🧠 **The Great Mental Models series by Shane Parrish:** This series introduces various mental models from different disciplines to provide frameworks for better decision-making and problem-solving.  
+    * [⚙️🔢 The Great Mental Models, Volume 3: Systems and Mathematics](./the-great-mental-models-volume-3-systems-and-mathematics.md)  
 * 💡 **Clear Thinking: Turning Ordinary Moments into Extraordinary Results by Shane Parrish:** This book offers strategies for improving thinking and achieving better outcomes in everyday life.  
   
 ### 🆚 Contrasting Books (Offering Different Perspectives or Focus)  

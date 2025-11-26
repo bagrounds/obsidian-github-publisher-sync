@@ -12,8 +12,9 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 ❔ What do 🫵 _you_ 🤔 think?  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (376)  
-- [2025-11-25](./reflections/2025-11-25.md)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (377)  
+- [2025-11-26](./reflections/2025-11-26.md)  
+- [2025-11-25 | 🌜 Moonshot | 🌌 Cosmos 📚](./reflections/2025-11-25.md)  
 - [2025-11-24 | 😇🤥 Innocent Fraud 📺📚](./reflections/2025-11-24.md)  
 - [2025-11-23 | 👨‍🏫 Warren Mosler & 💲🔬 Modern Monetary Theory 👥📺](./reflections/2025-11-23.md)  
 - [2025-11-22 | 📊 Models | ⛓️ Apartheid | 💰 Economics | 😴 Sleep Training 📚📺🤖💬](./reflections/2025-11-22.md)  
@@ -22,20 +23,19 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [2025-11-19 | 🇺🇸📺🆘 Public Media 📺📚](./reflections/2025-11-19.md)  
 - [2025-11-18 | 🌳 Trees | 🐇 Rabbit | ↪️ 180 | 🧠 Intelligences | 🌠 The Star 📚📺🌌](./reflections/2025-11-18.md)  
 - [2025-11-17 | 🧸 Play | 👎 Fail | 🐜 Ants 📚](./reflections/2025-11-17.md)  
-- [2025-11-16 | 🗼 Towers | 🚔 Policing | 📈 Creative Destruction 📚📺](./reflections/2025-11-16.md)  
   
   
-## [📚 Books](./books/index.md) (784)  
+## [📚 Books](./books/index.md) (786)  
+- [🚀🌍💰 Mission Economy: A Moonshot Guide to Changing Capitalism](./books/mission-economy-a-moonshot-guide-to-changing-capitalism.md)  
+- [🏛️🏭 The Entrepreneurial State: Debunking Public vs Private Sector Myths](./books/the-entrepreneurial-state-debunking-public-vs-private-sector-myths.md)  
+- [💸🎨 The Great Mental Models, Volume 4: Economics and Art](./books/the-great-mental-models-volume-4-economics-and-art.md)  
+- [⚙️🔢 The Great Mental Models, Volume 3: Systems and Mathematics](./books/the-great-mental-models-volume-3-systems-and-mathematics.md)  
 - [🤏📜⏳ A Brief History of Time](./books/a-brief-history-of-time.md)  
 - [🏃‍♂️⛰️ Born to Run: A Hidden Tribe, Superathletes, and the Greatest Race the World Has Never Seen](./books/born-to-run-a-hidden-tribe-superathletes-and-the-greatest-race-the-world-has-never-seen.md)  
 - [❓✝️ The Dawkins Delusion?: Atheist Fundamentalism and the Denial of the Divine](./books/the-dawkins-delusion-atheist-fundamentalism-and-the-denial-of-the-divine.md)  
 - [❓✝️ The God Delusion](./books/the-god-delusion.md)  
 - [📚🧠 The New York Times Guide to Essential Knowledge: A Desk Reference for the Curious Mind](./books/the-new-york-times-guide-to-essential-knowledge-a-desk-reference-for-the-curious-mind.md)  
 - [🐦➕ In a Flight of Starlings: The Wonders of Complex Systems](./books/in-a-flight-of-starlings-the-wonders-of-complex-systems.md)  
-- [👍🦮🌌 The Hitchhiker's Guide to the Galaxy](./books/the-hitchhikers-guide-to-the-galaxy.md)  
-- [🌌 Cosmos](./books/cosmos.md)  
-- [🏛️🔄✊🌍 Reclaiming the State: A Progressive Vision of Sovereignty for a Post-Neoliberal World](./books/reclaiming-the-state.md)  
-- [🍩🌍 Doughnut Economics: Seven Ways to Think Like a 21st-Century Economist](./books/doughnut-economics-seven-ways-to-think-like-a-21st-century-economist.md)  
   
   
 ## [📺 Videos](./videos/index.md) (448)  

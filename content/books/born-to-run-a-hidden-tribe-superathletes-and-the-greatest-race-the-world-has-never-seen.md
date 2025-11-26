@@ -50,7 +50,7 @@ CTA: 👣 Discover endurance.
   
 ### 🎨 Creatively Related Books  
   
-* 🌌 **Cosmos** by Carl Sagan: This seminal work connects humanity to the vastness of the universe, our evolutionary past, and the sense of wonder in discovery. ✨ It resonates with the primal connection to nature and the profound feeling of being part of something larger, a sentiment often described by runners pushing their limits, similar to the spiritual dimensions of running explored in Born to Run.  
+* **[🌌 Cosmos](./cosmos.md)** by Carl Sagan: This seminal work connects humanity to the vastness of the universe, our evolutionary past, and the sense of wonder in discovery. ✨ It resonates with the primal connection to nature and the profound feeling of being part of something larger, a sentiment often described by runners pushing their limits, similar to the spiritual dimensions of running explored in Born to Run.  
 * 🏡 **Walden** by Henry David Thoreau: A classic exploration of living simply and self-sufficiently in nature 🌲, deliberately detaching from societal conventions to find deeper meaning. 🤔 This echoes McDougall's quest for an authentic, uncomplicated running experience and the Tarahumara's lifestyle, which questions the complexities and perceived necessities of modern life.  
 * 🗺️ **The Alchemist** by Paulo Coelho: This allegorical novel tells the story of a young shepherd boy who journeys to find his "personal legend," encountering challenges and wisdom along the way. 💫 It metaphorically relates to the transformative personal quests undertaken by ultrarunners and McDougall himself, emphasizing intuition, perseverance, and the discovery of profound truths through an arduous journey.  
   

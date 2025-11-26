@@ -4,10 +4,10 @@ aliases:
   - "📰🏛️📉 News Wrap: State Department lays off more than 1,300 in latest cuts to federal workforce"
 title: "📰🏛️📉 News Wrap: State Department lays off more than 1,300 in latest cuts to federal workforce"
 URL: https://bagrounds.org/videos/news-wrap-state-department-lays-off-more-than-1300-in-latest-cuts-to-federal-workforce
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: PBS NewsHour
-tags: 
+tags:
 youtube: https://youtu.be/c-b9F5IZhRs
 ---
 [Home](../index.md) > [Videos](./index.md)  
@@ -43,7 +43,7 @@ youtube: https://youtu.be/c-b9F5IZhRs
     * [🧠📈💰 The Intelligent Investor: The Definitive Book on Value Investing](../books/the-intelligent-investor.md) by Benjamin Graham  
     * *A Random Walk Down Wall Street* by Burton G. Malkiel  
 * **🌌 🌠 On Astronomy and Comets:**  
-    * *Cosmos* by Carl Sagan  
+    * [🌌 Cosmos](../books/cosmos.md) by Carl Sagan  
     * *Comet* by Carl Sagan and Ann Druyan  
   
 ## 🐦 Tweet  

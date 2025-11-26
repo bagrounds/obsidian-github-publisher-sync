@@ -69,7 +69,7 @@ CTA: ✨ Explore emergence.
 * [👤🧬 The Selfish Gene](./the-selfish-gene.md) by Richard Dawkins  
     * 🧬 Explores emergent evolutionary phenomena from individual gene interactions.  
     * 🌱 Focus on bottom-up dynamics in biology.  
-* ➕ Cosmos by Carl Sagan  
+* [🌌 Cosmos](./cosmos.md) by Carl Sagan  
     * 🌠 Connects scientific discovery with human wonder and societal progress.  
     * 🔗 Emphasizes the interconnectedness of all phenomena, from stars to life.  
   

@@ -38,7 +38,7 @@ URL: https://bagrounds.org/topics/the-star
 * 🔬 The poem is pre-scientific, describing the star as a jewel-like object in the sky that acts as a guide.  
 * 🔭 Scientific sources offer a modern, contrasting understanding.  
     * ⚛️ NASA and other astrophysical organizations explain that stars are massive, luminous balls of plasma held together by their own gravity, contrasting the poem's description of a tiny spark.  
-    * 💫 The twinkling (scintillation) described is not an inherent quality of the star but an effect caused by the Earth's atmosphere , according to astronomy texts like Cosmos by Carl Sagan.  
+    * 💫 The twinkling (scintillation) described is not an inherent quality of the star but an effect caused by the Earth's atmosphere , according to astronomy texts like [🌌 Cosmos](../books/cosmos.md) by Carl Sagan.  
 * 💡 Topics to explore for a better understanding include:  
     * ⚓ The history of celestial navigation: How did stars serve as essential guides for travellers and mariners before modern GPS?  
     * 📝 The literary history of children's poetry: What role did Jane Taylor's work play in shaping the genre and its themes of innocence and wonder?  

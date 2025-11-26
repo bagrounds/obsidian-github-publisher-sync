@@ -63,7 +63,7 @@ CTA: 💡 Reconsider belief.
 ✨ These books explore broader themes of belief, meaning, human history, and the search for understanding, offering different lenses through which to consider the questions raised by the science-religion debate:  
   
 * **[📜🌍⏳ Sapiens: A Brief History of Humankind](./sapiens-a-brief-history-of-humankind.md)** by Yuval Noah Harari. ⏳ This book explores the role of shared myths, fictions, and collective beliefs in the development of human societies, providing a fascinating, albeit secular, perspective on the power and function of human constructs, including religion.  
-* 📖 **Cosmos** by Carl Sagan. 🌌 A classic work that celebrates scientific inquiry and the wonders of the universe, often inspiring a naturalistic worldview while also conveying a sense of awe and the human quest for understanding our place in the cosmos.  
+* **[🌌 Cosmos](./cosmos.md)** by Carl Sagan. 🌌 A classic work that celebrates scientific inquiry and the wonders of the universe, often inspiring a naturalistic worldview while also conveying a sense of awe and the human quest for understanding our place in the cosmos.  
 * 📖 **A History of God: The 4,000-Year Quest of Judaism, Christianity and Islam** by Karen Armstrong. 📜 This book offers a comprehensive historical and sociological examination of the evolution of the concept of God within the three major monotheistic traditions, providing a nuanced understanding of religious development often missing from the new atheist discourse.  
   
 ## 💬 [Gemini](https://gemini.google.com) Prompt (gemini-2.5-flash)  

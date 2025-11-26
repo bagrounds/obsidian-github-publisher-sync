@@ -27,6 +27,6 @@ youtube: https://youtu.be/AWX8Xw858Qg
 ## 📚 Book Recommendations  
 * **[🤔🐇🐢 Thinking, Fast and Slow](../books/thinking-fast-and-slow.md) by Daniel Kahneman**: 🧠 Explores the two systems of thought that shape our judgments and decisions, offering a deeper dive into cognitive biases.  
 * **Logic: A Very Short Introduction by Graham Priest**: 🧐 Provides a concise overview of the fundamental principles of logic, essential for rigorous critical thinking.  
-* **Cosmos by Carl Sagan**: 🔭 A broader exploration of science and its place in the universe, building on the themes introduced in *The Demon-Haunted World*.  
+* **[🌌 Cosmos](../books/cosmos.md) by Carl Sagan**: 🔭 A broader exploration of science and its place in the universe, building on the themes introduced in *The Demon-Haunted World*.  
 * **Mistakes Were Made (but Not by Me) by Carol Tavris and Elliot Aronson**: 🤷‍♀️ Delves into the psychology of self-justification and how it prevents us from admitting our errors, complementing *Being Wrong*.  
 * **[🙅‍♀️✂️⚖️ Never Split the Difference: Negotiating As If Your Life Depended On It](../books/never-split-the-difference.md) by Chris Voss**: 🤝 Offers practical strategies for high-stakes negotiations, providing an alternative perspective to the communication skills discussed in *Crucial Conversations*.

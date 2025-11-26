@@ -57,8 +57,8 @@ CTA: 🔭 Explore existence.
   
 **Additional Book Recommendations:**  
   
-* **Best Alternate Book (Same Topic):** "The Universe in a Nutshell" by Stephen Hawking. (Also by Hawking, but more visually descriptive) 🌰  
-* **Best Tangentially Related Book:** "Cosmos" by Carl Sagan. (Explores the universe with a philosophical and poetic touch) 🌌  
+* **Best Alternate Book (Same Topic):** The Universe in a Nutshell by Stephen Hawking. (Also by Hawking, but more visually descriptive) 🌰  
+* **Best Tangentially Related Book:** [🌌 Cosmos](./cosmos.md) by Carl Sagan. (Explores the universe with a philosophical and poetic touch) 🌌  
 * **Best Diametrically Opposed Book:** [🗺️❤️📐 Flatland: A Romance of Many Dimensions](./flatland-a-romance-of-many-dimensions.md) by Edwin Abbott Abbott. (A fictional exploration of dimensions, challenging our assumptions about reality) 📐  
 * **Best Fiction Book with Related Ideas:** "Contact" by Carl Sagan. (Explores the implications of extraterrestrial contact and the vastness of the universe) 👽  
 * **Best More General Book:** [📜🌍⏳ Sapiens: A Brief History of Humankind](./sapiens-a-brief-history-of-humankind.md) by Yuval Noah Harari. (Provides a broad overview of human history and our place in the universe) 🧑‍🤝‍🧑  

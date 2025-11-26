@@ -7,7 +7,7 @@ URL: https://bagrounds.org/books
 backlinks: false
 ---
 [Home](../index.md)  
-# 📚 Books (784)  
+# 📚 Books (786)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)  
 - [🧑‍🤝‍🧑📈 10 to 25: The Science of Motivating Young People: A Groundbreaking Approach to Leading the Next Generation - And Making Your Own Life Easier](./10-to-25-the-science-of-motivating-young-people-a-groundbreaking-approach-to-leading-the-next-generation-and-making-your-own-life-easier.md)  
@@ -587,6 +587,7 @@ backlinks: false
 - [🦢 The Elements of Style](./the-elements-of-style.md)  
 - [🧠🫂 The Embodied Mind: Cognitive Science and Human Experience](./the-embodied-mind-cognitive-science-and-human-experience.md)  
 - [🛑👮 The End of Policing](./the-end-of-policing.md)  
+- [🏛️🏭 The Entrepreneurial State: Debunking Public vs Private Sector Myths](./the-entrepreneurial-state-debunking-public-vs-private-sector-myths.md)  
 - [🙏🏛️ The Establishment Clause: Religion and the First Amendment](./the-establishment-clause-religion-and-the-first-amendment.md)  
 - [👤🤔 The Ethics of Identity](./the-ethics-of-identity.md)  
 - [🧠🌐💡 The Extended Mind: The Power of Thinking Outside the Brain](./the-extended-mind.md)  
@@ -600,6 +601,7 @@ backlinks: false
 - [❓✝️ The God Delusion](./the-god-delusion.md)  
 - [🧑‍🤝‍🧑🐘⬆️ The Great Alignment: Race, Party Transformation, and the Rise of Donald Trump](./the-great-alignment-race-party-transformation-and-the-rise-of-donald-trump.md)  
 - [⚙️🔢 The Great Mental Models, Volume 3: Systems and Mathematics](./the-great-mental-models-volume-3-systems-and-mathematics.md)  
+- [💸🎨 The Great Mental Models, Volume 4: Economics and Art](./the-great-mental-models-volume-4-economics-and-art.md)  
 - [🗳️💰⬇️ The Great Suppression: Voting Rights, Corporate Cash, and the Conservative Assault on Democracy](./the-great-suppression-voting-rights-corporate-cash-and-the-conservative-assault-on-democracy.md)  
 - [🌍🏛️ The Great Transformation: The Political and Economic Origins of Our Time](./the-great-transformation-the-political-and-economic-origins-of-our-time.md)  
 - [🧠🧑‍💻 The Hacking of the American Mind: The Science Behind the Corporate Takeover of Our Bodies and Brains](./the-hacking-of-the-american-mind-the-science-behind-the-corporate-takeover-of-our-bodies-and-brains.md)  

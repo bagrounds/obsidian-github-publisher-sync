@@ -7,7 +7,7 @@ share: true
 CTA: ⚙️ Master complex systems.
 affiliate link: https://amzn.to/4pigwKS
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](../index.md) > [Books](./index.md) | [⏭️ 💸🎨 The Great Mental Models, Volume 4: Economics and Art](./the-great-mental-models-volume-4-economics-and-art.md)  
 # ⚙️🔢 The Great Mental Models, Volume 3: Systems and Mathematics  
 [🛒 The Great Mental Models, Volume 3: Systems and Mathematics. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4pigwKS)  
   

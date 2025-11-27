@@ -2,13 +2,85 @@
 
 ## Current State Analysis
 
-### Build Metrics (Baseline)
+### Build Metrics (Baseline - CI Environment)
 - **1,866 Markdown files**
 - **5,653 total output files** (HTML pages, OG images, assets, etc.)
-- **Total build time: ~5 minutes** (306 seconds)
-- **Parsing phase: ~30 seconds** (32s observed)
-- **Emit phase: ~5 minutes** (the dominant bottleneck)
-- **OG image generation: 1,866 images totaling ~67.5 MB**
+- **Total CI build time: ~12 minutes** (observed from GitHub Actions workflow runs)
+- **Quartz build step: ~11.5 minutes** (20:52:41 to 21:04:20 in recent runs)
+- **OG image generation: 1,866 images totaling ~100MB**
+
+### GitHub Actions Workflow Configuration
+
+**File:** `.github/workflows/deploy.yml`
+
+```yaml
+name: Deploy Quartz site to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    container:
+      image: node:20-bullseye-slim
+    steps:
+      - name: Install git
+        run: |
+          apt-get update
+          apt-get install -y git
+
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # Fetch all history
+
+      - name: Configure Git
+        run: |
+          git config --global --add safe.directory "$GITHUB_WORKSPACE"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "github-actions[bot]"
+
+      - name: Cache Node Modules
+        id: cache
+        uses: actions/cache@v4
+        with:
+          path: node_modules
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+
+      - name: Install Dependencies (if cache is not hit)
+        if: ${{ steps.cache.outputs.cache-hit != 'true' }}
+        run: npm ci
+
+      - name: Build Quartz
+        run: npx quartz build
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: public
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+```
+
+**Key observations:**
+1. Node modules are cached, but the `public/` output folder is NOT cached
+2. The build always regenerates ALL OG images from scratch
+3. The build runs `npx quartz build` which calls `rimraf(path.join(output, "*"))` to delete the entire `public/` directory before building
 
 ### Build Pipeline Overview
 
@@ -16,14 +88,14 @@ The Quartz build process consists of three main phases:
 
 1. **Transpilation** (~3 seconds): Uses esbuild to transpile the Quartz configuration and build scripts
 2. **Markdown Parsing** (~30 seconds): Converts markdown files to HTML AST using unified/remark/rehype pipelines
-3. **Emission** (~5 minutes): Generates output files including HTML pages, OG images, sitemap, RSS, etc.
+3. **Emission** (~11 minutes): Generates output files including HTML pages, OG images, sitemap, RSS, etc.
 
 ### Code Architecture
 
 ```
 quartz/
 ├── cli/handlers.js        # Main entry point for build command
-├── build.ts               # Core build orchestration
+├── build.ts               # Core build orchestration (line 70: rimraf deletes public/)
 ├── processors/
 │   ├── parse.ts          # Markdown parsing with worker threads
 │   ├── filter.ts         # Content filtering
@@ -32,403 +104,392 @@ quartz/
 │   ├── transformers/     # Markdown and HTML transformers
 │   ├── filters/          # Content filters
 │   └── emitters/         # Output generators (ContentPage, OgImages, etc.)
+│       └── ogImage.tsx   # OG image generation (PRIMARY BOTTLENECK)
+├── util/
+│   └── og.tsx            # Font fetching and image template
 └── worker.ts             # Worker thread implementation
+
+.github/workflows/
+└── deploy.yml            # GitHub Actions CI/CD workflow
 ```
 
 ---
 
-## Identified Bottlenecks
+## Identified Bottleneck: OG Image Generation
 
-### 1. OG Image Generation (Major)
 **Location:** `quartz/plugins/emitters/ogImage.tsx`
 
-- Generates 1,866 individual social media preview images using Satori + Sharp
-- Each image requires:
-  - Satori SVG rendering
-  - Sharp WebP conversion
-  - File I/O
-- Processing is **sequential** within the emitter
-- Fetching fonts from Google Fonts (though cached after first build)
+The OG image emitter is the primary build bottleneck, consuming approximately 10+ minutes of the 11.5-minute build:
 
-**Evidence:**
+### How OG Images Are Generated
+
+1. **Font Loading** (`quartz/util/og.tsx:17-66`):
+   - Fonts are fetched from Google Fonts on first run
+   - Fonts are cached locally in `.quartz-cache/fonts/`
+   - Subsequent builds skip font fetching
+
+2. **Image Generation** (`ogImage.tsx:68-101`):
+   ```typescript
+   async function processOgImage(ctx, fileData, fonts, fullOptions) {
+     // Extract content data that affects the image
+     const title = fileData.frontmatter?.title ?? "Untitled"
+     const description = fileData.frontmatter?.description ?? fileData.description
+     
+     // Generate SVG using Satori
+     const stream = await generateSocialImage({title, description, fonts, cfg, fileData}, fullOptions)
+     
+     // Write to public/{slug}-og-image.webp
+     return write({ctx, content: stream, slug: `${slug}-og-image`, ext: ".webp"})
+   }
+   ```
+
+3. **Sequential Processing** (`ogImage.tsx:112-121`):
+   ```typescript
+   async *emit(ctx, content, _resources) {
+     const fonts = await getSatoriFonts(headerFont, bodyFont)
+     
+     for (const [_tree, vfile] of content) {
+       if (vfile.data.frontmatter?.socialImage !== undefined) continue
+       yield processOgImage(ctx, vfile.data, fonts, fullOptions)  // Sequential!
+     }
+   }
+   ```
+
+4. **Image Content Factors** (`quartz/util/og.tsx:173-365`):
+   The OG image template uses these data fields:
+   - `title` - from frontmatter
+   - `description` - from frontmatter or generated
+   - `date` - modified/created date
+   - `readingTime` - calculated from `fileData.text`
+   - `tags` - first 3 tags from frontmatter
+   - Config theme colors (from `quartz.config.ts`)
+   - Site icon (`quartz/static/icon.png`)
+
+### Why Builds Delete Output First
+
+**Location:** `quartz/build.ts:68-71`
 ```typescript
-// ogImage.tsx:112-121
-async *emit(ctx, content, _resources) {
-  // ...
-  for (const [_tree, vfile] of content) {
-    if (vfile.data.frontmatter?.socialImage !== undefined) continue
-    yield processOgImage(ctx, vfile.data, fonts, fullOptions)  // Sequential!
+const release = await mut.acquire()
+perf.addEvent("clean")
+await rimraf(path.join(output, "*"), { glob: true })
+console.log(`Cleaned output directory \`${output}\` in ${perf.timeSince("clean")}`)
+```
+
+This ensures a clean build state but means ALL 1,866 OG images are regenerated every time, even when only 1-2 files changed.
+
+---
+
+## Implementation Plan: OG Image Caching for CI
+
+### Goal
+Reduce CI build time from ~12 minutes to ~2 minutes for typical content updates by caching OG images and only regenerating changed ones.
+
+### How the System Currently Works
+
+1. **CI Trigger:** Push to `main` branch triggers GitHub Actions workflow
+2. **Checkout:** Full git history is fetched (`fetch-depth: 0`)
+3. **Cache Restore:** Node modules are restored from cache if `package-lock.json` unchanged
+4. **Build:**
+   a. `rimraf` deletes entire `public/` directory
+   b. Parse all 1,866 markdown files (~30s)
+   c. Generate all 5,653 output files (~11 minutes)
+   d. OG images are generated sequentially via Satori → Sharp pipeline
+5. **Deploy:** Upload `public/` to GitHub Pages
+
+### How the System Will Work After This Change
+
+1. **CI Trigger:** Push to `main` branch triggers GitHub Actions workflow
+2. **Checkout:** Full git history is fetched
+3. **Cache Restore:** 
+   a. Node modules restored from cache
+   b. **NEW:** OG image cache restored from `.quartz-cache/og-images/`
+4. **Build:**
+   a. `rimraf` deletes `public/` directory (unchanged)
+   b. Parse all markdown files (~30s)
+   c. **NEW:** For each OG image:
+      - Compute content hash from (title, description, date, tags, text-length)
+      - Check if cached image exists with matching hash
+      - If cached: copy from cache to `public/`
+      - If not cached: generate image, save to `public/` AND cache
+   d. Generate other output files
+5. **Cache Save:** **NEW:** Save OG image cache for next build
+6. **Deploy:** Upload `public/` to GitHub Pages
+
+### Detailed Implementation
+
+#### Step 1: Create Cache Key Function
+
+Add to `quartz/plugins/emitters/ogImage.tsx`:
+
+```typescript
+import { createHash } from "crypto"
+
+interface OgImageCacheKey {
+  title: string
+  description: string
+  date: string | null
+  tags: string[]
+  textLength: number
+  configVersion: string  // Hash of theme/typography config
+}
+
+function computeCacheKey(fileData: QuartzPluginData, cfg: GlobalConfiguration): string {
+  const data: OgImageCacheKey = {
+    title: fileData.frontmatter?.title ?? "",
+    description: fileData.frontmatter?.description ?? fileData.description ?? "",
+    date: fileData.dates?.modified?.toISOString() ?? fileData.dates?.created?.toISOString() ?? null,
+    tags: (fileData.frontmatter?.tags ?? []).slice(0, 3),
+    textLength: (fileData.text ?? "").length,
+    configVersion: JSON.stringify({
+      colors: cfg.theme.colors,
+      typography: cfg.theme.typography,
+      baseUrl: cfg.baseUrl,
+    })
   }
+  
+  return createHash("sha256").update(JSON.stringify(data)).digest("hex").slice(0, 16)
 }
 ```
 
-### 2. Content Page Rendering (Moderate)
-**Location:** `quartz/plugins/emitters/contentPage.tsx`
+#### Step 2: Implement Cache Check and Save Logic
 
-- Renders HTML for each page individually
-- Uses Preact render-to-string
-- Includes deep cloning of AST for transclusion support
-- Processing is **sequential** via async generator
+Modify `processOgImage` function:
 
-**Evidence:**
 ```typescript
-// renderPage.tsx:198
-const root = clone(componentData.tree) as Root  // Deep clone for each page
-```
+import path from "path"
+import fs from "node:fs/promises"
+import { QUARTZ } from "../../util/path"
 
-### 3. Sequential Emitter Execution (Moderate)
-**Location:** `quartz/processors/emit.ts`
+const OG_CACHE_DIR = path.join(QUARTZ, ".quartz-cache", "og-images")
 
-- All emitters run in parallel with `Promise.all`, BUT
-- Each emitter internally processes files sequentially via async generators
-- No batch processing or worker pool for emission phase
+async function processOgImage(
+  ctx: BuildCtx,
+  fileData: QuartzPluginData,
+  fonts: SatoriOptions["fonts"],
+  fullOptions: SocialImageOptions,
+) {
+  const cfg = ctx.cfg.configuration
+  const slug = fileData.slug!
+  const outputPath = `${slug}-og-image`
+  
+  // Compute cache key
+  const cacheKey = computeCacheKey(fileData, cfg)
+  const cacheFileName = `${slug.replace(/\//g, "_")}_${cacheKey}.webp`
+  const cachePath = path.join(OG_CACHE_DIR, cacheFileName)
+  
+  // Check if cached version exists
+  try {
+    await fs.access(cachePath)
+    // Cache hit: copy to output
+    const content = await fs.readFile(cachePath)
+    return write({
+      ctx,
+      content,
+      slug: outputPath as FullSlug,
+      ext: ".webp",
+    })
+  } catch {
+    // Cache miss: generate new image
+  }
+  
+  // Generate image (existing logic)
+  const titleSuffix = cfg.pageTitleSuffix ?? ""
+  const title = (fileData.frontmatter?.title ?? i18n(cfg.locale).propertyDefaults.title) + titleSuffix
+  const description =
+    fileData.frontmatter?.socialDescription ??
+    fileData.frontmatter?.description ??
+    unescapeHTML(fileData.description?.trim() ?? i18n(cfg.locale).propertyDefaults.description)
 
-**Evidence:**
-```typescript
-// emit.ts:18-47
-await Promise.all(
-  cfg.plugins.emitters.map(async (emitter) => {
-    // Each emitter yields files one at a time
-    for await (const file of emitted) {
-      emittedFiles++
-    }
+  const stream = await generateSocialImage({title, description, fonts, cfg, fileData}, fullOptions)
+  
+  // Convert stream to buffer for caching
+  const chunks: Buffer[] = []
+  for await (const chunk of stream) {
+    chunks.push(Buffer.from(chunk))
+  }
+  const buffer = Buffer.concat(chunks)
+  
+  // Save to cache
+  await fs.mkdir(OG_CACHE_DIR, { recursive: true })
+  await fs.writeFile(cachePath, buffer)
+  
+  // Write to output
+  return write({
+    ctx,
+    content: buffer,
+    slug: outputPath as FullSlug,
+    ext: ".webp",
   })
-)
+}
 ```
 
-### 4. Parser Concurrency (Minor - Already Optimized)
-**Location:** `quartz/processors/parse.ts`
+#### Step 3: Update GitHub Actions Workflow
 
-- Already uses worker pool for markdown parsing
-- Default concurrency is `clamp(fps.length / 128, 1, 4)` = 4 threads for this repo
-- Chunk size of 128 files per worker
+Modify `.github/workflows/deploy.yml`:
 
----
+```yaml
+name: Deploy Quartz site to GitHub Pages
 
-## Optimization Ideas
+on:
+  push:
+    branches:
+      - main
 
-### Idea 1: Parallelize OG Image Generation Using Worker Pool
+permissions:
+  contents: read
+  pages: write
+  id-token: write
 
-**Description:** Move OG image generation to a worker pool similar to markdown parsing. Each worker would handle a batch of images.
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
 
-**Implementation Approach:**
-1. Create a new worker function for OG image processing
-2. Split content into chunks and distribute to workers
-3. Use `workerpool` (already a dependency) to manage parallelism
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    container:
+      image: node:20-bullseye-slim
+    steps:
+      - name: Install git
+        run: |
+          apt-get update
+          apt-get install -y git
 
-**Effort:** Medium (2-3 days)
-- Requires creating new worker script for image generation
-- Need to handle Satori/Sharp in worker context
-- Must serialize font data to workers
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
-**Complexity:** Medium
-- Satori and Sharp may have thread-safety considerations
-- Font data serialization could be tricky
-- Error handling across workers needs care
+      - name: Configure Git
+        run: |
+          git config --global --add safe.directory "$GITHUB_WORKSPACE"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "github-actions[bot]"
 
-**Payoff:** High
-- Could reduce OG image time from ~4.5 minutes to ~1-1.5 minutes (3-4x speedup)
-- OG images are the dominant bottleneck
+      - name: Cache Node Modules
+        id: cache-node
+        uses: actions/cache@v4
+        with:
+          path: node_modules
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
 
-**Maintainability:** Medium
-- Adds parallel processing complexity
-- But follows existing pattern from parse.ts
+      - name: Cache OG Images
+        id: cache-og
+        uses: actions/cache@v4
+        with:
+          path: quartz/.quartz-cache/og-images
+          key: ${{ runner.os }}-og-images-${{ github.sha }}
+          restore-keys: |
+            ${{ runner.os }}-og-images-
 
-**Confidence:** 75%
-- Similar parallelization works for markdown parsing
-- Sharp is known to work in workers
-- Satori may need careful handling
+      - name: Install Dependencies (if cache is not hit)
+        if: ${{ steps.cache-node.outputs.cache-hit != 'true' }}
+        run: npm ci
 
----
+      - name: Build Quartz
+        run: npx quartz build
 
-### Idea 2: Disable OG Image Generation for Development Builds
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: public
 
-**Description:** Add a flag to skip OG image generation during development/testing builds, only generating them for production.
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+        with:
+          artifact_name: github-pages
+          reporting_interval: 300
+          error_count: 180
+```
 
-**Implementation Approach:**
-1. Add `--skipOgImages` or `--production` CLI flag
-2. Conditionally include/exclude CustomOgImages emitter
-3. Or add environment variable check in the emitter
+### Why This Will Work
 
-**Effort:** Low (1-2 hours)
-- Simple CLI argument addition
-- Conditional plugin loading
+1. **Cache Persistence:** GitHub Actions `actions/cache@v4` persists data across workflow runs. The `restore-keys` pattern allows partial matches, so even if the exact SHA doesn't match, the most recent cache is restored.
 
-**Complexity:** Low
-- Minimal code changes
-- Clear behavior
+2. **Cache Key Stability:** The cache key includes:
+   - Title, description, date, tags (content that appears in the image)
+   - Text length (affects reading time calculation)
+   - Config version (theme colors, fonts)
+   
+   If any of these change, the file gets a new cache key and is regenerated.
 
-**Payoff:** High for development workflow
-- Reduces dev build from 5m to ~30s
-- Doesn't help production builds
+3. **Incremental Updates:** 
+   - First build: ~12 minutes (generates all 1,866 images, saves to cache)
+   - Subsequent builds: ~2 minutes (only regenerates changed images)
+   - Typical edit: 1-10 changed files = 1-10 images regenerated
 
-**Maintainability:** High
-- Simple, clear feature
-- Easy to understand and maintain
+4. **No Public Folder Conflict:** The cache is stored in `.quartz-cache/og-images/`, NOT in `public/`. The `rimraf` of `public/` doesn't affect the cache.
 
-**Confidence:** 95%
-- Straightforward implementation
-- No technical risks
+5. **Automatic Cleanup:** Old cache entries naturally expire (unused entries aren't carried forward). GitHub also has cache size limits that force cleanup.
 
----
+### Potential Issues and Mitigations
 
-### Idea 3: Incremental OG Image Generation with Caching
+| Issue | Mitigation |
+|-------|------------|
+| Cache corruption | Hash-based keys mean corrupted entries are just cache misses |
+| Theme changes invalidate all | `configVersion` in cache key triggers full rebuild |
+| Font changes | Fonts cached separately in `.quartz-cache/fonts/` |
+| Cache too large | GitHub limits to 10GB per repo; 1,866 × 50KB = ~90MB is fine |
+| Stale cache entries | Use `sha` in key for automatic rotation; old keys expire after 7 days |
 
-**Description:** Cache generated OG images and only regenerate when content changes.
+### Testing Plan
 
-**Implementation Approach:**
-1. Hash content (title, description, date) to create cache key
-2. Store generated images in `.quartz-cache/og-images/`
-3. On rebuild, check if cached version matches current content
-4. Copy from cache instead of regenerating
+1. **Local Testing:**
+   ```bash
+   # First run - generates cache
+   rm -rf quartz/.quartz-cache/og-images
+   time npx quartz build
+   
+   # Second run - uses cache
+   rm -rf public
+   time npx quartz build
+   
+   # Modify one file
+   echo "test" >> content/index.md
+   rm -rf public
+   time npx quartz build  # Should only regenerate 1 image
+   ```
 
-**Effort:** Medium (2-3 days)
-- Hash computation for content
-- Cache directory management
-- Cache invalidation logic
+2. **CI Testing (on feature branch):**
+   - Push change to feature branch
+   - First run builds all images
+   - Push second change
+   - Second run should be significantly faster
+   - Compare build times in workflow run summaries
 
-**Complexity:** Medium
-- Need robust content hashing
-- Cache cleanup/invalidation strategy
-- Disk space management considerations
-
-**Payoff:** Very High for incremental builds
-- First build unchanged
-- Subsequent builds: only regenerate changed content
-- Typical edit touches 1-10 files → 5-10 seconds vs 5 minutes
-
-**Maintainability:** Medium
-- Cache invalidation can be tricky
-- Need to handle edge cases (font changes, config changes)
-
-**Confidence:** 85%
-- Standard caching pattern
-- Content hashing is reliable
-- Similar approaches used in many SSGs
-
----
-
-### Idea 4: Use Batch Processing in Content Page Emitter
-
-**Description:** Process multiple pages concurrently within the ContentPage emitter instead of one at a time.
-
-**Implementation Approach:**
-1. Collect all pages to render into batches
-2. Use `Promise.all` with limited concurrency (e.g., p-limit)
-3. Yield results in batches
-
-**Effort:** Low-Medium (1-2 days)
-- Refactor async generator to batch processing
-- Add concurrency limiting
-
-**Complexity:** Low
-- Simple Promise.all pattern
-- No worker threads needed
-
-**Payoff:** Medium
-- HTML rendering is CPU-bound but fast
-- Parallelization might save 30-60 seconds
-- Less impact than OG image optimization
-
-**Maintainability:** High
-- Simple parallel pattern
-- Easy to understand
-
-**Confidence:** 80%
-- Standard parallelization
-- Need to verify no shared state issues
-
----
-
-### Idea 5: Optimize rfdc (Clone) with Faster Alternative
-
-**Description:** Replace `rfdc` deep clone with a faster alternative or avoid cloning entirely.
-
-**Implementation Approach:**
-1. Profile to confirm clone is a bottleneck
-2. Try faster alternatives like `structuredClone` or `lodash.cloneDeep`
-3. Or refactor to avoid deep cloning when possible
-
-**Effort:** Low (1-2 hours for profiling and swap)
-
-**Complexity:** Low
-- Drop-in replacement
-- Test for correctness
-
-**Payoff:** Low-Medium
-- Clone is called per page (1,866 times)
-- rfdc is already quite fast
-- Likely saves only 5-10 seconds
-
-**Maintainability:** High
-- Simple change if switching libraries
-
-**Confidence:** 60%
-- Unclear if clone is a significant bottleneck
-- Need profiling to verify
+3. **Validation:**
+   - Compare generated images before/after to ensure identical output
+   - Verify cache hit/miss logging is working
+   - Check that theme changes trigger full rebuild
 
 ---
 
-### Idea 6: Pre-generate Static Components
+## Summary
 
-**Description:** Cache rendered static components (Header, Footer, etc.) that don't change between pages.
+### Changes Required
 
-**Implementation Approach:**
-1. Identify components that render the same across all pages
-2. Pre-render these components once
-3. Inject pre-rendered HTML into page templates
+1. **`quartz/plugins/emitters/ogImage.tsx`:**
+   - Add `computeCacheKey()` function
+   - Modify `processOgImage()` to check cache before generating
+   - Save generated images to cache directory
 
-**Effort:** Medium (2-3 days)
-- Component analysis
-- Template injection system
-- Cache management
+2. **`.github/workflows/deploy.yml`:**
+   - Add OG image cache step using `actions/cache@v4`
 
-**Complexity:** Medium-High
-- Components may have page-specific variations
-- Need careful analysis of what's truly static
+### Expected Results
 
-**Payoff:** Low-Medium
-- Preact render-to-string is already fast
-- Most components have page-specific data
-- Likely saves 15-30 seconds
+| Metric | Before | After |
+|--------|--------|-------|
+| First CI build | ~12 min | ~12 min |
+| Subsequent CI builds | ~12 min | ~2 min |
+| Build with 1-10 changed files | ~12 min | ~1-2 min |
 
-**Maintainability:** Medium
-- Adds caching complexity
-- Need to invalidate when config changes
+### Confidence Level: 90%
 
-**Confidence:** 50%
-- Uncertain which components are truly static
-- Benefits depend on component structure
-
----
-
-### Idea 7: Lazy Asset Copying with Timestamps
-
-**Description:** Only copy assets that are newer than their destinations.
-
-**Implementation Approach:**
-1. Check file modification times before copying
-2. Skip unchanged files
-
-**Effort:** Low (1-2 hours)
-
-**Complexity:** Low
-- Simple mtime comparison
-- Already exists in many build tools
-
-**Payoff:** Low
-- Assets are ~30MB, mostly images
-- File copying is fast
-- Maybe saves 5-10 seconds on incremental builds
-
-**Maintainability:** High
-- Simple, well-understood pattern
-
-**Confidence:** 90%
-- Standard approach
-- Minimal risk
-
----
-
-### Idea 8: Move to Native Sharp Batch Processing
-
-**Description:** Use Sharp's native batch processing capabilities instead of processing images one at a time.
-
-**Implementation Approach:**
-1. Collect all SVGs from Satori first
-2. Use Sharp's pipeline to process all images concurrently
-3. Sharp internally manages thread pool
-
-**Effort:** Medium (1-2 days)
-
-**Complexity:** Medium
-- Need to restructure emit flow
-- Handle backpressure for large batches
-
-**Payoff:** Medium-High
-- Sharp is highly optimized for batch processing
-- Could reduce image processing time by 50%
-
-**Maintainability:** Medium
-- Different processing pattern
-- Need to handle memory for large batches
-
-**Confidence:** 70%
-- Sharp supports this well
-- Need to verify memory usage with 1,866 images
-
----
-
-## Recommendation
-
-### Primary Recommendation: Implement Ideas 2 + 3 (Combination)
-
-**Phase 1: Quick Win - Idea 2 (Skip OG Images flag)**
-- Immediate development experience improvement
-- 1-2 hours of work
-- Drops dev build from 5m to ~30s
-
-**Phase 2: Production Optimization - Idea 3 (OG Image Caching)**
-- Addresses production build times for incremental updates
-- 2-3 days of work
-- Makes subsequent builds fast while keeping all features
-
-### Secondary Recommendation: Idea 1 (Parallel OG Generation)
-
-If Phase 2 caching isn't sufficient or if full rebuilds are common:
-- Implement worker pool for OG images
-- Higher effort but provides 3-4x speedup for full builds
-
-### Why Not Other Ideas?
-
-- **Idea 4 (Batch ContentPage):** Smaller impact, parsing is already parallelized
-- **Idea 5 (Clone optimization):** Need profiling first, likely minimal impact
-- **Idea 6 (Static components):** Complex with uncertain payoff
-- **Idea 7 (Lazy assets):** Already fast, minimal gain
-- **Idea 8 (Sharp batch):** Good but Idea 1 is more impactful
-
----
-
-## Summary Table
-
-| Idea | Effort | Complexity | Payoff | Maintainability | Confidence |
-|------|--------|------------|--------|-----------------|------------|
-| 1. Parallel OG Workers | Medium | Medium | High | Medium | 75% |
-| 2. Skip OG Flag | Low | Low | High (dev) | High | 95% |
-| 3. OG Image Caching | Medium | Medium | Very High | Medium | 85% |
-| 4. Batch ContentPage | Low-Med | Low | Medium | High | 80% |
-| 5. Faster Clone | Low | Low | Low-Med | High | 60% |
-| 6. Static Components | Medium | Med-High | Low-Med | Medium | 50% |
-| 7. Lazy Asset Copy | Low | Low | Low | High | 90% |
-| 8. Sharp Batch | Medium | Medium | Med-High | Medium | 70% |
-
----
-
-## Code Citations
-
-### OG Image Generation (Primary Bottleneck)
-- `quartz/plugins/emitters/ogImage.tsx:112-121` - Sequential emit loop
-- `quartz/plugins/emitters/ogImage.tsx:28-66` - generateSocialImage function
-- `quartz/util/og.tsx:17-66` - Font fetching (cached)
-
-### Markdown Parsing (Already Parallelized)
-- `quartz/processors/parse.ts:148-222` - parseMarkdown with worker pool
-- `quartz/worker.ts` - Worker thread implementation
-
-### Content Emission
-- `quartz/processors/emit.ts:9-50` - Main emit orchestration
-- `quartz/plugins/emitters/contentPage.tsx:76-119` - ContentPage emitter
-
-### Build Configuration
-- `quartz/cli/args.js` - CLI arguments including `--concurrency`
-- `quartz.config.ts` - Plugin configuration
-
----
-
-## Next Steps
-
-1. **Discuss recommendations** with stakeholders
-2. **Choose approach** based on priorities (dev experience vs production builds)
-3. **Implement selected optimizations** in order of impact
-4. **Measure results** after each change
-5. **Iterate** based on findings
+This approach is low-risk because:
+- Cache misses gracefully fall back to regeneration
+- No changes to build output (images are identical)
+- Uses well-established GitHub Actions caching patterns
+- Similar caching already works for fonts in `.quartz-cache/fonts/`

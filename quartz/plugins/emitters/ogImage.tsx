@@ -6,12 +6,61 @@ import { ImageOptions, SocialImageOptions, defaultImage, getSatoriFonts } from "
 import sharp from "sharp"
 import satori, { SatoriOptions } from "satori"
 import { loadEmoji, getIconCode } from "../../util/emoji"
-import { Readable } from "stream"
 import { write } from "./helpers"
 import { BuildCtx } from "../../util/ctx"
 import { QuartzPluginData } from "../vfile"
 import fs from "node:fs/promises"
+import path from "path"
 import chalk from "chalk"
+import { createHash } from "crypto"
+import { GlobalConfiguration } from "../../cfg"
+
+// OG image cache directory
+const OG_CACHE_DIR = path.join(QUARTZ, ".quartz-cache", "og-images")
+
+/**
+ * Compute a hash of the configuration that affects OG image generation
+ */
+function computeConfigHash(cfg: GlobalConfiguration): string {
+  return createHash("sha256")
+    .update(
+      JSON.stringify({
+        colors: cfg.theme.colors,
+        typography: cfg.theme.typography,
+        baseUrl: cfg.baseUrl,
+      }),
+    )
+    .digest("hex")
+    .slice(0, 8)
+}
+
+/**
+ * Compute a cache key based on content that affects the OG image
+ */
+function computeCacheKey(
+  fileData: QuartzPluginData,
+  cfg: GlobalConfiguration,
+  configHash: string,
+): string {
+  const data = {
+    title: fileData.frontmatter?.title ?? "",
+    description: fileData.frontmatter?.description ?? fileData.description ?? "",
+    date:
+      fileData.dates?.modified?.toISOString() ?? fileData.dates?.created?.toISOString() ?? null,
+    tags: (fileData.frontmatter?.tags ?? []).slice(0, 3),
+    textLength: (fileData.text ?? "").length,
+    configVersion: configHash,
+  }
+
+  return createHash("sha256").update(JSON.stringify(data)).digest("hex").slice(0, 16)
+}
+
+/**
+ * Sanitize slug to create a valid filename using base64url encoding
+ */
+function sanitizeSlug(slug: string): string {
+  return Buffer.from(slug).toString("base64url")
+}
 
 const defaultOptions: SocialImageOptions = {
   colorScheme: "lightMode",
@@ -28,7 +77,7 @@ const defaultOptions: SocialImageOptions = {
 async function generateSocialImage(
   { cfg, description, fonts, title, fileData }: ImageOptions,
   userOpts: SocialImageOptions,
-): Promise<Readable> {
+): Promise<sharp.Sharp> {
   const { width, height } = userOpts
   const iconPath = joinSegments(QUARTZ, "static", "icon.png")
   let iconBase64: string | undefined = undefined
@@ -70,9 +119,31 @@ async function processOgImage(
   fileData: QuartzPluginData,
   fonts: SatoriOptions["fonts"],
   fullOptions: SocialImageOptions,
+  configHash: string,
 ) {
   const cfg = ctx.cfg.configuration
   const slug = fileData.slug!
+  const outputSlug = `${slug}-og-image` as FullSlug
+
+  // Compute cache key and cache path
+  const cacheKey = computeCacheKey(fileData, cfg, configHash)
+  const cacheFileName = `${sanitizeSlug(slug)}_${cacheKey}.webp`
+  const cachePath = path.join(OG_CACHE_DIR, cacheFileName)
+
+  // Check if cached version exists
+  try {
+    await fs.access(cachePath)
+    // Cache hit: copy to output using fs.copyFile
+    const outputPath = path.join(ctx.argv.output, outputSlug + ".webp")
+    await fs.mkdir(path.dirname(outputPath), { recursive: true })
+    await fs.copyFile(cachePath, outputPath)
+    return outputPath
+  } catch {
+    // Cache miss: generate new image
+    console.log(chalk.yellow(`[OG cache miss] ${slug}`))
+  }
+
+  // Generate image
   const titleSuffix = cfg.pageTitleSuffix ?? ""
   const title =
     (fileData.frontmatter?.title ?? i18n(cfg.locale).propertyDefaults.title) + titleSuffix
@@ -92,10 +163,18 @@ async function processOgImage(
     fullOptions,
   )
 
+  // Ensure cache directory exists
+  await fs.mkdir(OG_CACHE_DIR, { recursive: true })
+
+  // Write to cache first
+  const buffer = await stream.toBuffer()
+  await fs.writeFile(cachePath, buffer)
+
+  // Write to output
   return write({
     ctx,
-    content: stream,
-    slug: `${slug}-og-image` as FullSlug,
+    content: buffer,
+    slug: outputSlug,
     ext: ".webp",
   })
 }
@@ -115,9 +194,12 @@ export const CustomOgImages: QuartzEmitterPlugin<Partial<SocialImageOptions>> = 
       const bodyFont = cfg.theme.typography.body
       const fonts = await getSatoriFonts(headerFont, bodyFont)
 
+      // Compute config hash once for all images
+      const configHash = computeConfigHash(cfg)
+
       for (const [_tree, vfile] of content) {
         if (vfile.data.frontmatter?.socialImage !== undefined) continue
-        yield processOgImage(ctx, vfile.data, fonts, fullOptions)
+        yield processOgImage(ctx, vfile.data, fonts, fullOptions, configHash)
       }
     },
     async *partialEmit(ctx, _content, _resources, changeEvents) {
@@ -126,12 +208,15 @@ export const CustomOgImages: QuartzEmitterPlugin<Partial<SocialImageOptions>> = 
       const bodyFont = cfg.theme.typography.body
       const fonts = await getSatoriFonts(headerFont, bodyFont)
 
+      // Compute config hash once for all images
+      const configHash = computeConfigHash(cfg)
+
       // find all slugs that changed or were added
       for (const changeEvent of changeEvents) {
         if (!changeEvent.file) continue
         if (changeEvent.file.data.frontmatter?.socialImage !== undefined) continue
         if (changeEvent.type === "add" || changeEvent.type === "change") {
-          yield processOgImage(ctx, changeEvent.file.data, fonts, fullOptions)
+          yield processOgImage(ctx, changeEvent.file.data, fonts, fullOptions, configHash)
         }
       }
     },

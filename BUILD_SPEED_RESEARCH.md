@@ -264,8 +264,7 @@ Modify `processOgImage` function:
 import path from "path"
 import fs from "node:fs/promises"
 import { QUARTZ } from "../../util/path"
-import { pipeline } from "node:stream/promises"
-import { createWriteStream } from "node:fs"
+import chalk from "chalk"
 
 const OG_CACHE_DIR = path.join(QUARTZ, ".quartz-cache", "og-images")
 
@@ -283,7 +282,7 @@ async function processOgImage(
 ) {
   const cfg = ctx.cfg.configuration
   const slug = fileData.slug!
-  const outputPath = `${slug}-og-image`
+  const outputSlug = `${slug}-og-image` as FullSlug
   
   // Compute cache key
   const cacheKey = computeCacheKey(fileData, cfg, configHash)
@@ -293,16 +292,14 @@ async function processOgImage(
   // Check if cached version exists
   try {
     await fs.access(cachePath)
-    // Cache hit: copy to output
-    const content = await fs.readFile(cachePath)
-    return write({
-      ctx,
-      content,
-      slug: outputPath as FullSlug,
-      ext: ".webp",
-    })
+    // Cache hit: copy to output using fs.copyFile
+    const outputPath = path.join(ctx.argv.output, outputSlug + ".webp")
+    await fs.mkdir(path.dirname(outputPath), { recursive: true })
+    await fs.copyFile(cachePath, outputPath)
+    return outputPath
   } catch {
     // Cache miss: generate new image
+    console.log(chalk.yellow(`[OG cache miss] ${slug}`))
   }
   
   // Generate image (existing logic)
@@ -318,15 +315,15 @@ async function processOgImage(
   // Ensure cache directory exists
   await fs.mkdir(OG_CACHE_DIR, { recursive: true })
   
-  // Write directly to cache file using stream pipeline (memory efficient)
-  await pipeline(stream, createWriteStream(cachePath))
+  // Write to cache first
+  const buffer = await stream.toBuffer()
+  await fs.writeFile(cachePath, buffer)
   
-  // Read from cache and write to output
-  const content = await fs.readFile(cachePath)
+  // Write to output
   return write({
     ctx,
-    content,
-    slug: outputPath as FullSlug,
+    content: buffer,
+    slug: outputSlug,
     ext: ".webp",
   })
 }
@@ -364,6 +361,7 @@ on:
   push:
     branches:
       - main
+      - copilot/exploratory-research-build-speed  # For testing
 
 permissions:
   contents: read

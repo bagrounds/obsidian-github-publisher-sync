@@ -38,7 +38,9 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [❓✝️ The Dawkins Delusion?: Atheist Fundamentalism and the Denial of the Divine](./books/the-dawkins-delusion-atheist-fundamentalism-and-the-denial-of-the-divine.md)  
   
   
-## [📺 Videos](./videos/index.md) (450)  
+## [📺 Videos](./videos/index.md) (452)  
+- [🤰👩‍⚕️👶🍼⏰ 16.7 Professor Helen Ball midwifery hour](./videos/16-7-professor-helen-ball-midwiferyhour.md)  
+- [👶❓😴👩‍⚕️ Baby sleep Q & A with Dr. Sofia Axelrod, PhD](./videos/baby-sleep-q-a-with-dr-sofia-axelrod-phd.md)  
 - [🗣️🇺🇸🤝 A Conversation with Representative Jim Himes | American Conversations](./videos/a-conversation-with-representative-jim-himes-american-conversations.md)  
 - [🚪🏃‍♂️❓ Why Are They Leaving Office? | Explainer](./videos/why-are-they-leaving-office-explainer.md)  
 - [📰🏛️📉 News Wrap: State Department lays off more than 1,300 in latest cuts to federal workforce](./videos/news-wrap-state-department-lays-off-more-than-1300-in-latest-cuts-to-federal-workforce.md)  
@@ -47,8 +49,6 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [😇😈📉🚫 7️⃣ Deadly Innocent Frauds-A BCB Economics Lecture](./videos/seven-deadly-innocent-frauds-a-bcb-economics-lecture.md)  
 - [💰🏦📈 Warren Mosler | Modern Monetary Theory (MMT), Banking, and Taxing the Rich](./videos/warren-mosler-modern-monetary-theory-mmt-banking-and-taxing-the-rich.md)  
 - [💰🇦🇹🆚📈 MMT vs. Austrian School Debate](./videos/mmt-vs-austrian-school-debate.md)  
-- [🖨️💰♾️ How Much Money Can We Print? - Warren Mosler, Modern Monetary Theory - DSPod  > 251](./videos/how-much-money-can-we-print-warren-mosler-modern-monetary-theory-dspod-251.md)  
-- [❓🪙💡🇺🇸 Unraveling the Mysteries of Modern Monetary Theory with Warren Mosler](./videos/unraveling-the-mysteries-of-modern-monetary-theory-with-warren-mosler.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (83)  

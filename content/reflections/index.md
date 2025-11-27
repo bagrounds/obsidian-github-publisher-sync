@@ -9,7 +9,7 @@ backlinks: false
 [Home](../index.md)  
 # 🪞 Reflections (378)  
 - [2025-11-27 | 👶🏼💤 How Babies Sleep 📚](./2025-11-27.md)  
-- [2025-11-26](./2025-11-26.md)  
+- [2025-11-26 | 🧠 Models | 🇺🇸 State | 🐘 Republicans 📚📺](./2025-11-26.md)  
 - [2025-11-25 | 🌜 Moonshot | 🌌 Cosmos 📚](./2025-11-25.md)  
 - [2025-11-24 | 😇🤥 Innocent Fraud 📺📚](./2025-11-24.md)  
 - [2025-11-23 | 👨‍🏫 Warren Mosler & 💲🔬 Modern Monetary Theory 👥📺](./2025-11-23.md)  

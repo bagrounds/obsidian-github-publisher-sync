@@ -4,8 +4,8 @@ aliases:
   - "🎲🧮🧠🤖 Probabilistic Reasoning in Intelligent Systems: Networks of Plausible Inference"
 title: "🎲🧮🧠🤖 Probabilistic Reasoning in Intelligent Systems: Networks of Plausible Inference"
 URL: https://bagrounds.org/books/probabilistic-reasoning-in-intelligent-systems
-Author: 
-tags: 
+Author:
+tags:
 affiliate link: https://amzn.to/4kM6KOF
 ---
 [Home](../index.md) > [Books](./index.md)  
@@ -85,11 +85,11 @@ The book offers a surprising perspective by shifting away from traditional rule-
   
 ### **Book Recommendations 📚**  
 * **Best Alternate Book on the Same Topic:** "Probabilistic Graphical Models: Principles and Techniques" by Daphne Koller and Nir Friedman. This book provides a more modern and comprehensive treatment of probabilistic graphical models.  
-* **Best Tangentially Related Book:** "[Thinking, Fast and Slow](./thinking-fast-and-slow.md)" by Daniel Kahneman. This book explores the cognitive biases and heuristics that affect human judgment and decision-making, which are relevant to understanding the limitations of probabilistic reasoning.  
-* **Best Diametrically Opposed Book:** "[Gödel, Escher, Bach: An Eternal Golden Braid](./godel-escher-bach.md)" by Douglas Hofstadter. This book explores the nature of consciousness and intelligence from a symbolic and recursive perspective, contrasting with the probabilistic approach of Bayesian networks.  
+* **Best Tangentially Related Book:** [🤔🐇🐢 Thinking, Fast and Slow](./thinking-fast-and-slow.md) by Daniel Kahneman. This book explores the cognitive biases and heuristics that affect human judgment and decision-making, which are relevant to understanding the limitations of probabilistic reasoning.  
+* **Best Diametrically Opposed Book:** [♾️📐🎶🥨 Gödel, Escher, Bach: An Eternal Golden Braid](./godel-escher-bach.md) by Douglas Hofstadter. This book explores the nature of consciousness and intelligence from a symbolic and recursive perspective, contrasting with the probabilistic approach of Bayesian networks.  
 * **Best Fiction Book Incorporating Related Ideas:** "The Curious Incident of the Dog in the Night-Time" by Mark Haddon. The protagonist's highly logical and structured thinking reflects the application of systems of logic, even if the logic is not probabilistic.  
-* **Best More General Book:** "Artificial Intelligence: A Modern Approach" by Stuart Russell and Peter Norvig. This textbook provides a broad overview of artificial intelligence, including probabilistic reasoning as a key component.  
-* **Best More Specific Book:** "[Causality](./causality.md): Models, Reasoning, and Inference" by Judea Pearl. This book focuses specifically on the topic of causality and its relationship to probabilistic reasoning.  
+* **Best More General Book:** [🤖🧠 Artificial Intelligence: A Modern Approach](./artificial-intelligence-a-modern-approach.md) by Stuart Russell and Peter Norvig. This textbook provides a broad overview of artificial intelligence, including probabilistic reasoning as a key component.  
+* **Best More Specific Book:** [❓➡️⚙️ Causality: Models, Reasoning, and Inference](./causality.md) by Judea Pearl. This book focuses specifically on the topic of causality and its relationship to probabilistic reasoning.  
 * **Best More Rigorous Book:** "Information Theory, Inference, and Learning Algorithms" by David J.C. MacKay. This book provides a rigorous mathematical treatment of information theory and its applications to machine learning and probabilistic reasoning.  
 * **Best More Accessible Book:** "Bayes' Theorem Examples: A Visual Introduction For Beginners" by Dan Morris. This book gives a very accessible and visual introduction to bayes theorem, which is the base of the work of Pearl.  
   

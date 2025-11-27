@@ -14,7 +14,7 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
   
 ## [🪞 Reflections](./reflections/index.md) ~ Blog (378)  
 - [2025-11-27 | 👶🏼💤 How Babies Sleep 📚](./reflections/2025-11-27.md)  
-- [2025-11-26](./reflections/2025-11-26.md)  
+- [2025-11-26 | 🧠 Models | 🇺🇸 State | 🐘 Republicans 📚📺](./reflections/2025-11-26.md)  
 - [2025-11-25 | 🌜 Moonshot | 🌌 Cosmos 📚](./reflections/2025-11-25.md)  
 - [2025-11-24 | 😇🤥 Innocent Fraud 📺📚](./reflections/2025-11-24.md)  
 - [2025-11-23 | 👨‍🏫 Warren Mosler & 💲🔬 Modern Monetary Theory 👥📺](./reflections/2025-11-23.md)  

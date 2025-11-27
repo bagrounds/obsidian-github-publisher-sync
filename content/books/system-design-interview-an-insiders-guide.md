@@ -5,6 +5,7 @@ aliases:
 URL: https://bagrounds.org/books/system-design-interview-an-insiders-guide
 share: true
 affiliate link: https://amzn.to/43RaTKo
+CTA: 🚀 Master architecture.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🖥️🔑 System Design Interview - An Insider's Guide  

@@ -4,11 +4,11 @@ aliases:
   - "🕵️🌐 The Hidden Psychology of Social Networks: How Brands Create Authentic Engagement by Understanding What Motivates Us"
 title: "🕵️🌐 The Hidden Psychology of Social Networks: How Brands Create Authentic Engagement by Understanding What Motivates Us"
 URL: https://bagrounds.org/books/the-hidden-psychology-of-social-networks
-Author: 
-tags: 
+Author:
+tags:
 affiliate link: https://amzn.to/4mIfzLl
 ---
-[Home](index.md) > [Books](/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🕵️🌐 The Hidden Psychology of Social Networks: How Brands Create Authentic Engagement by Understanding What Motivates Us  
 [🛒 The Hidden Psychology of Social Networks: How Brands Create Authentic Engagement by Understanding What Motivates Us. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4mIfzLl)  
   
@@ -61,18 +61,18 @@ Federer's *The Hidden Psychology of Social Networks* provides a compelling lens 
   
 ### ⚔️ Contrasting Perspectives (Critiques & Alternative Frameworks)  
   
-* 🧠 **The Shallows: What the Internet Is Doing to Our Brains** by Nicholas Carr: Argues that the internet fundamentally changes how we think, potentially reducing deep thought and attention spans—a more critical neurological/cognitive perspective compared to Federer's focus on motivation.  
+* 🧠 **[📱🧠 The Shallows: What the Internet Is Doing to Our Brains](./the-shallows-what-the-internet-is-doing-to-our-brains.md)** by Nicholas Carr: Argues that the internet fundamentally changes how we think, potentially reducing deep thought and attention spans—a more critical neurological/cognitive perspective compared to Federer's focus on motivation.  
 * ❌ **Ten Arguments for Deleting Your Social Media Accounts Right Now** by Jaron Lanier: A strong critique from a tech insider arguing against the manipulative nature and negative societal effects of social media business models.  
 * 🌐 **Networks Without a Cause: A Critique of Social Media** by Geert Lovink: Offers a critical academic perspective on Web 2.0 culture, questioning the celebratory narratives around social media and analyzing corporate control.  
-* 🧘 **[Indistractable](books/indistractable.md): How to Control Your Attention and Choose Your Life** by Nir Eyal: While Eyal also wrote *Hooked* (about building habit-forming products), *Indistractable* focuses on personal strategies to manage distraction in the digital age, offering a counterpoint to immersion by focusing on individual control. Compare with Adam Alter's *Irresistible*, which leans more critical of addictive tech.  
+* 🧘 **[Indistractable](./indistractable.md): How to Control Your Attention and Choose Your Life** by Nir Eyal: While Eyal also wrote *Hooked* (about building habit-forming products), *Indistractable* focuses on personal strategies to manage distraction in the digital age, offering a counterpoint to immersion by focusing on individual control. Compare with Adam Alter's *Irresistible*, which leans more critical of addictive tech.  
   
 ### 🎨 Creative Connections (Related Concepts & Fiction)  
   
-* 🌍 **[Sapiens: A Brief History of Humankind](books/sapiens-a-brief-history-of-humankind.md)** by Yuval Noah Harari: Provides broad context on human social structures, cooperation, and belief systems (shared fictions), which resonates with how online communities form and function.  
-* **[👤🧬 The Selfish Gene](books/the-selfish-gene.md)** by Richard Dawkins: Explains the concept of the "meme" as a unit of cultural transmission, relevant to understanding how ideas and trends spread virally online, a concept Federer touches upon.  
-* 🤖 **[🧬👥💾 Life 3.0: Being Human in the Age of Artificial Intelligence](books/life-3-0.md)** by Max Tegmark: Explores the future possibilities and ethical considerations of advanced AI and digital existence, pushing the boundaries of where social networks might lead.  
-* 👓 **[Snow Crash](books/snow-crash.md)** by Neal Stephenson: A seminal cyberpunk novel that explores virtual reality, avatars, and online societies (the "Metaverse"), offering a fictional parallel to the identity explorations discussed by Federer.  
-* **[😴💭 Why We Sleep: Unlocking the Power of Sleep and Dreams](books/why-we-sleep-unlocking-the-power-of-sleep-and-dreams.md)** by Matthew Walker: While not directly about social media, it highlights a fundamental aspect of human biology and cognition often negatively impacted by digital technology overuse, offering a different angle on well-being in the modern age.  
+* 🌍 **[Sapiens: A Brief History of Humankind](./sapiens-a-brief-history-of-humankind.md)** by Yuval Noah Harari: Provides broad context on human social structures, cooperation, and belief systems (shared fictions), which resonates with how online communities form and function.  
+* **[👤🧬 The Selfish Gene](./the-selfish-gene.md)** by Richard Dawkins: Explains the concept of the "meme" as a unit of cultural transmission, relevant to understanding how ideas and trends spread virally online, a concept Federer touches upon.  
+* 🤖 **[🧬👥💾 Life 3.0: Being Human in the Age of Artificial Intelligence](./life-3-0.md)** by Max Tegmark: Explores the future possibilities and ethical considerations of advanced AI and digital existence, pushing the boundaries of where social networks might lead.  
+* 👓 **[Snow Crash](./snow-crash.md)** by Neal Stephenson: A seminal cyberpunk novel that explores virtual reality, avatars, and online societies (the "Metaverse"), offering a fictional parallel to the identity explorations discussed by Federer.  
+* **[😴💭 Why We Sleep: Unlocking the Power of Sleep and Dreams](./why-we-sleep-unlocking-the-power-of-sleep-and-dreams.md)** by Matthew Walker: While not directly about social media, it highlights a fundamental aspect of human biology and cognition often negatively impacted by digital technology overuse, offering a different angle on well-being in the modern age.  
   
-## 💬 [Gemini](software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
+## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on The Hidden Psychology of Social Networks. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

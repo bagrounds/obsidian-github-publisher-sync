@@ -3,7 +3,7 @@ share: true
 aliases:
   - 👴🚫📈 Why the Trump Administration Is Doubling Down as Momentum Grows Against Them | Explainer
 title: 👴🚫📈 Why the Trump Administration Is Doubling Down as Momentum Grows Against Them | Explainer
-URL: https://bagrounds.org/videos/
+URL: https://bagrounds.org/videos/why-the-trump-administration-is-doubling-down-as-momentum-grows-against-them-explainer
 Author:
 Platform:
 Channel: Heather Cox Richardson

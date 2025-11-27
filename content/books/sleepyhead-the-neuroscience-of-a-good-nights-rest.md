@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org/books/sleepyhead-the-neuroscience-of-a-good-nights-rest
 share: true
 affiliate link: https://amzn.to/3FwiUwm
-CTA: Unlock restful sleep.
+CTA: 😴 Prioritize restorative nights.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 😴🧠 Sleepyhead: The Neuroscience of a Good Night's Rest  
@@ -63,7 +63,7 @@ The book delves into the complex science of sleep, 😴 exploring its fundamenta
     * 💔 *Focus:* While centered on trauma, it explores the profound connection between psychological states and physiological processes, including how trauma can impact sleep and neurological function. 🤕 Relevant for understanding how stress impacts sleep.  
 * **[🧠💡📈🏠🏢🧑‍🎓 Brain Rules: 12 Principles for Surviving and Thriving at Work, Home, and School](./brain-rules-12-principles-for-surviving-and-thriving-at-work-home-and-school.md)** by John Medina  
     * 🧠 *Focus:* General principles of brain function for everyday life, including a dedicated chapter on sleep's importance for cognitive performance. Provides broader context for brain health.  
-* **Breath: The New Science of a Lost Art** by James Nestor  
+* **[🫁🌬️ Breath: The New Science of a Lost Art](./breath-the-new-science-of-a-lost-art.md)** by James Nestor  
     * 🫁 *Focus:* Explores the science and impact of breathing, which is highly relevant to conditions like sleep apnea and overall physiological regulation.  
   
 ### 💡 Creatively Related Reads (Broader Themes of Consciousness, Mind, Time)  

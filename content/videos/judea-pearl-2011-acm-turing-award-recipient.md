@@ -4,10 +4,10 @@ aliases:
   - Judea Pearl, 2011 ACM Turing Award Recipient
 title: Judea Pearl, 2011 ACM Turing Award Recipient
 URL: https://youtu.be/JQr0LFvR1OE
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: Association for Computing Machinery (ACM)
-tags: 
+tags:
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # Judea Pearl, 2011 ACM Turing Award Recipient  
@@ -60,7 +60,7 @@ Pearl's introduction of Bayesian networks and the formalization of causal models
   - *"The Circle"* by Dave Eggers explores themes of technology, data, and their impact on society, reflecting on the ethical dimensions of AI.  
   
 - **Best Resource More General:**  
-  - *"Artificial Intelligence: A Modern Approach"* by Stuart Russell and Peter Norvig provides a comprehensive overview of AI, including sections on probabilistic reasoning.  
+  - [🤖🧠 Artificial Intelligence: A Modern Approach](../books/artificial-intelligence-a-modern-approach.md) by Stuart Russell and Peter Norvig provides a comprehensive overview of AI, including sections on probabilistic reasoning.  
   
 - **Best Resource More Specific:**  
   - *"Bayesian Networks and Decision Graphs"* by Finn V. Jensen offers a focused examination of Bayesian networks and their applications.  

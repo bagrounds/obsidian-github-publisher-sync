@@ -4,8 +4,8 @@ aliases:
   - "📉📈🌪️💪 Antifragile: Things That Gain from Disorder"
 title: "📉📈🌪️💪 Antifragile: Things That Gain from Disorder"
 URL: https://bagrounds.org/books/antifragile-things-that-gain-from-disorder
-Author: 
-tags: 
+Author:
+tags:
 affiliate link: https://amzn.to/45JAVlg
 CTA: 💪 Thrive through chaos.
 ---

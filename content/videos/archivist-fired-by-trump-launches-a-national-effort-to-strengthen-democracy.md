@@ -3,7 +3,7 @@ share: true
 aliases:
   - 🔥🚫🏛️⬆️ Archivist fired by Trump launches a national effort to strengthen democracy
 title: 🔥🚫🏛️⬆️ Archivist fired by Trump launches a national effort to strengthen democracy
-URL: https://bagrounds.org/videos/
+URL: https://bagrounds.org/videos/archivist-fired-by-trump-launches-a-national-effort-to-strengthen-democracy
 Author:
 Platform:
 Channel: PBS NewsHour

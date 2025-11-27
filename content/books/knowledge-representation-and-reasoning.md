@@ -4,8 +4,8 @@ aliases:
   - 🧠🔗🤔💡 Knowledge Representation and Reasoning
 title: 🧠🔗🤔💡 Knowledge Representation and Reasoning
 URL: https://bagrounds.org/books/knowledge-representation-and-reasoning
-Author: 
-tags: 
+Author:
+tags:
 affiliate link: https://amzn.to/4knpJ2j
 ---
 [Home](../index.md) > [Books](./index.md)  
@@ -80,9 +80,9 @@ The book is generally considered a high-quality resource.
   
 #### Additional Book Recommendations 📚  
   
-* **Best Alternate Book on the Same Topic:** "Artificial Intelligence: A Modern Approach" by Stuart Russell and Peter Norvig - covers KR&R in a broader AI context. 🤖  
-* **Best Tangentially Related Book:** "[Gödel, Escher, Bach: An Eternal Golden Braid](./godel-escher-bach.md)" by Douglas Hofstadter - explores the relationship between formal systems, meaning, and consciousness. ♾️  
-* **Best Diametrically Opposed Book:** (Difficult to suggest a truly "diametrically opposed" book, as the core principles are fundamental) Perhaps a book focused solely on deep learning, such as "[Deep Learning](./deep-learning.md)" by Ian Goodfellow, Yoshua Bengio, and Aaron Courville, as it emphasizes learning from data rather than explicit knowledge representation. 🧠  
+* **Best Alternate Book on the Same Topic:** [🤖🧠 Artificial Intelligence: A Modern Approach](./artificial-intelligence-a-modern-approach.md) by Stuart Russell and Peter Norvig - covers KR&R in a broader AI context. 🤖  
+* **Best Tangentially Related Book:** [♾️📐🎶🥨 Gödel, Escher, Bach: An Eternal Golden Braid](./godel-escher-bach.md) by Douglas Hofstadter - explores the relationship between formal systems, meaning, and consciousness. ♾️  
+* **Best Diametrically Opposed Book:** (Difficult to suggest a truly "diametrically opposed" book, as the core principles are fundamental) Perhaps a book focused solely on deep learning, such as [🧠💻🤖 Deep Learning](./deep-learning.md) by Ian Goodfellow, Yoshua Bengio, and Aaron Courville, as it emphasizes learning from data rather than explicit knowledge representation. 🧠  
 * **Best Fiction Book that Incorporates Related Ideas:** "Permutation City" by Greg Egan - explores themes of simulated realities and the nature of consciousness. 🌃  
 * **Best Book that is More General:** "Artificial Intelligence: Structures and Strategies for Complex Problem Solving" by George Luger - provides a broad overview of AI. 🗺️  
 * **Best Book that is More Specific:** Specific research papers on particular KR&R formalisms or applications, such as papers on OWL or specific description logic reasoners. 🔬  

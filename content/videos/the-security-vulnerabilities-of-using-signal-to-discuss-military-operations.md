@@ -4,10 +4,10 @@ aliases:
   - The security vulnerabilities of using Signal to discuss military operations
 title: The security vulnerabilities of using Signal to discuss military operations
 URL: https://youtu.be/X75Trubi3PU
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: PBS NewsHour
-tags: 
+tags:
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # The security vulnerabilities of using Signal to discuss military operations  

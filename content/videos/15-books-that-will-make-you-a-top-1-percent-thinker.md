@@ -4,10 +4,10 @@ aliases:
   - 🧠📈🥇 15 Books That Will Make You a Top 1% Thinker
 title: 🧠📈🥇 15 Books That Will Make You a Top 1% Thinker
 URL: https://bagrounds.org/videos/15-books-that-will-make-you-a-top-1-percent-thinker
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: Stephen Petro
-tags: 
+tags:
 youtube: https://youtu.be/DIs9EaOl0yo
 ---
 [Home](../index.md) > [Videos](./index.md)  
@@ -50,7 +50,7 @@ This content provides a solid foundational list of texts for developing critical
 * [📜🌍⏳ Sapiens: A Brief History of Humankind](../books/sapiens-a-brief-history-of-humankind.md) by Yuval Noah Harari: 🌍 Provides a broad historical and interdisciplinary perspective on human behavior and societal development, offering a macro view that complements the more specific philosophical texts.  
 * [🎨🤔🖼️ The Art of Thinking Clearly](../books/the-art-of-thinking-clearly.md) by Rolf Dobelli: 🤔 A practical guide to common thinking errors and how to avoid them, offering a more accessible approach to critical thinking.  
 * 📖 *Discipline and Punish: The Birth of the Prison* by Michel Foucault: ⛓️ A contrasting perspective on power, knowledge, and social control, offering a critical lens on political theory and human behavior.  
-* 📖 *Zen and the Art of Motorcycle Maintenance: An Inquiry Into Values* by Robert M. Pirsig: 🏍️ A philosophical novel that explores concepts of quality, values, and rationality in a more narrative and introspective manner.  
+* [🏍️🧘❓ Zen and the Art of Motorcycle Maintenance: An Inquiry into Values](../books/zen-and-the-art-of-motorcycle-maintenance-an-inquiry-into-values.md) by Robert M. Pirsig: 🏍️ A philosophical novel that explores concepts of quality, values, and rationality in a more narrative and introspective manner.  
   
 ## 🐦 Tweet  
 <blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">🧠📈🥇 15 Books That Will Make You a Top 1% Thinker<br><br>🧐 Value Theory | 🧠 Epistemology | 🏛️ Political Theory | 🚶 Human Behavior | 📚 Reading | 🤔 Critical Analysis<a href="https://t.co/qZmkTxzwtN">https://t.co/qZmkTxzwtN</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/1945612646931468459?ref_src=twsrc%5Etfw">July 16, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

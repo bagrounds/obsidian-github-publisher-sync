@@ -4,8 +4,8 @@ aliases:
   - "🔮🤷🏼‍♀️🤪 Predictably Irrational: The Hidden Forces That Shape Our Decisions"
 title: "🔮🤷🏼‍♀️🤪 Predictably Irrational: The Hidden Forces That Shape Our Decisions"
 URL: https://bagrounds.org/books/predictably-irrational
-Author: 
-tags: 
+Author:
+tags:
 affiliate link: https://amzn.to/4mRoPwQ
 ---
 [Home](../index.md) > [Books](./index.md)  

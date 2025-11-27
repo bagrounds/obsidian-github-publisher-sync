@@ -4,8 +4,8 @@ aliases:
   - "💥🌀➡️⏳⚖️🕰️ ️ Sync: How Order Emerges From Chaos In The Universe, Nature, And Daily Life"
 title: "💥🌀➡️⏳⚖️🕰️ ️ Sync: How Order Emerges From Chaos In The Universe, Nature, And Daily Life"
 URL: https://bagrounds.org/books/Sync
-Author: 
-tags: 
+Author:
+tags:
 affiliate link: https://amzn.to/4kHe8La
 ---
 [Home](../index.md) > [Books](./index.md)  

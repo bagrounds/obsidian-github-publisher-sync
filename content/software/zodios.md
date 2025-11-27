@@ -1,12 +1,12 @@
 ---
 share: true
 aliases:
-  - Zodios
-title: Zodios
+  - ⛎♉️♊️♋️♌️♍️♎️♏️♐️♑️♒️♓️ Zodios
+title: ⛎♉️♊️♋️♌️♍️♎️♏️♐️♑️♒️♓️ Zodios
 URL: https://bagrounds.org/software/zodios
 ---
 [Home](../index.md) > [Software](./index.md)  
-# Zodios  
+# ⛎♉️♊️♋️♌️♍️♎️♏️♐️♑️♒️♓️ Zodios  
   
 ## 🤖 AI Summary  
 ### 💾 Software Report: Zodios 🚀  

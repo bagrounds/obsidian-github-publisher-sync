@@ -5,7 +5,7 @@ aliases:
 title: "🧩⚙️🌱📈 Organize for Complexity: How to Get Life Back Into Work to Build the High-Performance Organization"
 URL: https://bagrounds.org/books/organize-for-complexity
 Author: "[[Niels Pflaeging]]"
-tags: 
+tags:
 affiliate link: https://amzn.to/43NLf9B
 ---
 [Home](../index.md) > [Books](./index.md)  

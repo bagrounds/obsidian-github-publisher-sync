@@ -233,21 +233,26 @@ interface OgImageCacheKey {
   configVersion: string  // Hash of theme/typography config
 }
 
-function computeCacheKey(fileData: QuartzPluginData, cfg: GlobalConfiguration): string {
+function computeCacheKey(fileData: QuartzPluginData, cfg: GlobalConfiguration, configHash: string): string {
   const data: OgImageCacheKey = {
     title: fileData.frontmatter?.title ?? "",
     description: fileData.frontmatter?.description ?? fileData.description ?? "",
     date: fileData.dates?.modified?.toISOString() ?? fileData.dates?.created?.toISOString() ?? null,
     tags: (fileData.frontmatter?.tags ?? []).slice(0, 3),
     textLength: (fileData.text ?? "").length,
-    configVersion: JSON.stringify({
-      colors: cfg.theme.colors,
-      typography: cfg.theme.typography,
-      baseUrl: cfg.baseUrl,
-    })
+    configVersion: configHash  // Pre-computed once during emit initialization
   }
   
   return createHash("sha256").update(JSON.stringify(data)).digest("hex").slice(0, 16)
+}
+
+// Compute config hash once at emitter initialization
+function computeConfigHash(cfg: GlobalConfiguration): string {
+  return createHash("sha256").update(JSON.stringify({
+    colors: cfg.theme.colors,
+    typography: cfg.theme.typography,
+    baseUrl: cfg.baseUrl,
+  })).digest("hex").slice(0, 8)
 }
 ```
 
@@ -259,22 +264,30 @@ Modify `processOgImage` function:
 import path from "path"
 import fs from "node:fs/promises"
 import { QUARTZ } from "../../util/path"
+import { pipeline } from "node:stream/promises"
+import { createWriteStream } from "node:fs"
 
 const OG_CACHE_DIR = path.join(QUARTZ, ".quartz-cache", "og-images")
+
+// Sanitize slug to create a valid filename
+function sanitizeSlug(slug: string): string {
+  return Buffer.from(slug).toString("base64url")
+}
 
 async function processOgImage(
   ctx: BuildCtx,
   fileData: QuartzPluginData,
   fonts: SatoriOptions["fonts"],
   fullOptions: SocialImageOptions,
+  configHash: string,  // Pre-computed config hash
 ) {
   const cfg = ctx.cfg.configuration
   const slug = fileData.slug!
   const outputPath = `${slug}-og-image`
   
   // Compute cache key
-  const cacheKey = computeCacheKey(fileData, cfg)
-  const cacheFileName = `${slug.replace(/\//g, "_")}_${cacheKey}.webp`
+  const cacheKey = computeCacheKey(fileData, cfg, configHash)
+  const cacheFileName = `${sanitizeSlug(slug)}_${cacheKey}.webp`
   const cachePath = path.join(OG_CACHE_DIR, cacheFileName)
   
   // Check if cached version exists
@@ -302,24 +315,41 @@ async function processOgImage(
 
   const stream = await generateSocialImage({title, description, fonts, cfg, fileData}, fullOptions)
   
-  // Convert stream to buffer for caching
-  const chunks: Buffer[] = []
-  for await (const chunk of stream) {
-    chunks.push(Buffer.from(chunk))
-  }
-  const buffer = Buffer.concat(chunks)
-  
-  // Save to cache
+  // Ensure cache directory exists
   await fs.mkdir(OG_CACHE_DIR, { recursive: true })
-  await fs.writeFile(cachePath, buffer)
   
-  // Write to output
+  // Write directly to cache file using stream pipeline (memory efficient)
+  await pipeline(stream, createWriteStream(cachePath))
+  
+  // Read from cache and write to output
+  const content = await fs.readFile(cachePath)
   return write({
     ctx,
-    content: buffer,
+    content,
     slug: outputPath as FullSlug,
     ext: ".webp",
   })
+}
+```
+
+#### Step 2b: Update Emit Function to Use Config Hash
+
+The `emit` function should compute the config hash once and pass it to each `processOgImage` call:
+
+```typescript
+async *emit(ctx, content, _resources) {
+  const cfg = ctx.cfg.configuration
+  const headerFont = cfg.theme.typography.header
+  const bodyFont = cfg.theme.typography.body
+  const fonts = await getSatoriFonts(headerFont, bodyFont)
+  
+  // Compute config hash once for all images
+  const configHash = computeConfigHash(cfg)
+
+  for (const [_tree, vfile] of content) {
+    if (vfile.data.frontmatter?.socialImage !== undefined) continue
+    yield processOgImage(ctx, vfile.data, fonts, fullOptions, configHash)
+  }
 }
 ```
 
@@ -379,7 +409,9 @@ jobs:
         uses: actions/cache@v4
         with:
           path: quartz/.quartz-cache/og-images
-          key: ${{ runner.os }}-og-images-${{ github.sha }}
+          # Use a stable key - the cache directory contains content-hashed files
+          # so old/stale entries are naturally ignored on cache miss
+          key: ${{ runner.os }}-og-images-v1
           restore-keys: |
             ${{ runner.os }}-og-images-
 

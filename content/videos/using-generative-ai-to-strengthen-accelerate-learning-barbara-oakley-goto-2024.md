@@ -3,11 +3,11 @@ share: true
 aliases:
   - 🤖🧠🚀📈 Using Generative AI to Strengthen & Accelerate Learning • Barbara Oakley • GOTO 2024
 title: 🤖🧠🚀📈 Using Generative AI to Strengthen & Accelerate Learning • Barbara Oakley • GOTO 2024
-URL: https://bagrounds.org/videos/
-Author: 
-Platform: 
+URL: https://bagrounds.org/videos/using-generative-ai-to-strengthen-accelerate-learning-barbara-oakley-goto-2024
+Author:
+Platform:
 Channel: GOTO Conferences
-tags: 
+tags:
 youtube: https://youtu.be/rbTaEsieWsU
 ---
 [Home](../index.md) > [Videos](./index.md)  

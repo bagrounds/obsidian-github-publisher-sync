@@ -55,6 +55,7 @@ A: 🤖 The rapid growth of AI and robotics is expected to transform the world a
 ## 📚 Book Recommendations  
   
 ### Similar Perspectives  
+- [🇺🇸⚔️💰 Fight Oligarchy](../books/fight-oligarchy.md) by Senator Bernie Sanders  
 * **[🏷️🏚️💔🏰 The Price of Inequality: How Today's Divided Society Endangers Our Future](../books/the-price-of-inequality-how-todays-divided-society-endangers-our-future.md)** by Joseph Stiglitz: 💵 **A** deep dive into how growing income inequality is undermining the US economy and democracy, offering policy solutions similar to those advocated in the video.  
 * **Where We Go From Here: Two Years in the Resistance** by Bernie Sanders: 📖 **Written** by the speaker, this book details his political philosophy, his campaign for the presidency, and the need for a political revolution to counter the powerful.  
 * **Inequality: What Can Be Done?** by Anthony B. Atkinson: 📊 **A** comprehensive and detailed proposal for practical policies to tackle inequality, focusing on tax and benefit systems.  

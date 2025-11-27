@@ -10,7 +10,7 @@ Channel: Heather Cox Richardson
 tags:
 youtube: https://youtu.be/13IVUWiuHHI
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](../index.md) > [Videos](./index.md) | [🏛️🇺🇸📖 Heather Cox Richardson](../people/heather-cox-richardson.md)  
 # 🗣️🇺🇸🤝 A Conversation with Representative Jim Himes | American Conversations  
 ![A Conversation with Representative Jim Himes | American Conversations](https://youtu.be/13IVUWiuHHI)  
   

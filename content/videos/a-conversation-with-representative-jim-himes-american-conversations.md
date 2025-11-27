@@ -61,7 +61,7 @@ youtube: https://youtu.be/13IVUWiuHHI
   
 ### ↔️ Similar  
   
-* 🔫 The New American Militarism: How Americans Are Seduced by War by Andrew J. Bacevich. 📖 This book critiques the increasing reliance on military force as the primary instrument of US foreign policy, aligning with the video's theme of performative military action and the erosion of civilian control.  
+* [🇺🇸🪖❤️ The New American Militarism: How Americans Are Seduced by War](../books/the-new-american-militarism-how-americans-are-seduced-by-war.md) by Andrew J. Bacevich. 📖 This book critiques the increasing reliance on military force as the primary instrument of US foreign policy, aligning with the video's theme of performative military action and the erosion of civilian control.  
 * 📜 In the Name of War: Judicial Review and the War Powers since 1918 by Christopher N. May. 📚 This work provides a deep dive into the legal history of presidential war powers and the difficulty the judiciary and Congress have had in containing executive discretion, echoing the conversation about the War Powers Act.  
 * 💀 El Narco: Inside Mexico’s Criminal Insurgency by Ioan Grillo. 🇲🇽 The book offers a firsthand look at the drug cartels, contrasting the complex reality of these criminal enterprises with the simplistic ISIS-like threat model used by the administration to justify military action.  
   

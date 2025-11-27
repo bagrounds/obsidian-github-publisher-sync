@@ -91,7 +91,7 @@ _As an Amazon Associate I earn from qualifying purchases._
   
 #### Premium (\$600+)  
   
-* **[Thule Urban Glide 3](https://amzn.to/42aqUuT)** ⭐  
+* **[👶🏃🌆 Thule Urban Glide 3](../products/thule-urban-glide-3.md)** ⭐  
   
   * ✅ Light, smooth ride, hand brake, sleek fold  
   * ❌ Pricey, 49 lb child max  

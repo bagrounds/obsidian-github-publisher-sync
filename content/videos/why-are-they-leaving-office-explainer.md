@@ -10,7 +10,7 @@ Channel: Heather Cox Richardson
 tags:
 youtube: https://youtu.be/0vohywJZ-Vk
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](../index.md) > [Videos](./index.md) | [🏛️🇺🇸📖 Heather Cox Richardson](../people/heather-cox-richardson.md)  
 # 🚪🏃‍♂️❓ Why Are They Leaving Office? | Explainer  
 ![Why Are They Leaving Office? | Explainer](https://youtu.be/0vohywJZ-Vk)  
   

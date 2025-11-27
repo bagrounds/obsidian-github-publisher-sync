@@ -7,12 +7,13 @@ URL: https://bagrounds.org/videos
 backlinks: false
 ---
 [Home](../index.md)  
-# 📺 Videos (450)  
+# 📺 Videos (452)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
 - [❓💪🔬 12 Questions About Creatine with Stephen Cornish, PhD](./12-questions-about-creatine-w-stephen-cornish-phd.md)  
 - [🧠💪🤯🔄♾️ 15 Books So Hard They’ll Reshape Your Brain Forever](./15-books-so-hard-theyll-reshape-your-brain-forever.md)  
 - [🧠📈🥇 15 Books That Will Make You a Top 1% Thinker](./15-books-that-will-make-you-a-top-1-percent-thinker.md)  
+- [🤰👩‍⚕️👶🍼⏰ 16.7 Professor Helen Ball midwifery hour](./16-7-professor-helen-ball-midwiferyhour.md)  
 - [🤖📅🦢🚲 2025 in LLMs so far, illustrated by Pelicans on Bicycles - Simon Willison](./2025-in-llms-so-far-illustrated-by-pelicans-on-bicycles-simon-willison.md)  
 - [🗓️🎯📈💡 2025 Yearly Themes](./2025-yearly-themes.md)  
 - [📚⏱️💡 21 Life-Changing Books Summarized in 18 Minutes](./21-life-changing-books-summarized-in-18-minutes.md)  
@@ -62,6 +63,7 @@ backlinks: false
 - [🌍🏠📉 Aswath Damodaran Says «There’s No Place to Hide in Stocks» | Prof G Markets](./aswath-damodaran-says-theres-no-place-to-hide-in-stocks-prof-g-markets.md)  
 - [🔬🛡️🤥 Authors of 'Science Under Siege' warn of concerted effort to discredit science](./authors-of-science-under-siege-warn-of-concerted-effort-to-discredit-science.md)  
 - [🧩🗣️👎 Autism advocate calls Trump's statements on the condition 'stigmatizing'](./autism-advocate-calls-trumps-statements-on-the-condition-stigmatizing.md)  
+- [👶❓😴👩‍⚕️ Baby sleep Q & A with Dr. Sofia Axelrod, PhD](./baby-sleep-q-a-with-dr-sofia-axelrod-phd.md)  
 - [👨‍💻➡️🤖🧩 Beyond the IDE: Toward Multi-Agent Orchestration](./beyond-the-ide-toward-multi-agent-orchestration.md)  
 - [🧫❓❌📱 Biomedical Scientist Answers Pseudoscience Questions From Twitter | Tech Support | WIRED](./biomedical-scientist-answers-pseudoscience-questions-from-twitter-tech-support-wired.md)  
 - [🇩🇪⚖️🇺🇸 Blueprint Why Germany's Legacy of Accountability Should Be A Blueprint for America's Moral Reckoning](./why-germanys-legacy-of-accountability-should-be-a-blueprint-for-americas-moral-reckoning.md)  

@@ -7,6 +7,7 @@ URL: https://bagrounds.org/books/uncomfortable-conversations-with-a-black-man
 Author:
 tags:
 affiliate link: https://amzn.to/3WMLCxX
+CTA: ✊ Confront racism.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 😬👨🏿 Uncomfortable Conversations With A Black Man  

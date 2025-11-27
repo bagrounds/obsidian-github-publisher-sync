@@ -4,8 +4,8 @@ aliases:
   - 📈🤖✍️🔄 AI traffic is up 527%. SEO is being rewritten.
 title: 📈🤖✍️🔄 AI traffic is up 527%. SEO is being rewritten.
 URL: https://bagrounds.org/articles/ai-traffic-is-up-527-percent-seo-is-being-rewritten
-Author: 
-tags: 
+Author:
+tags:
 ---
 [Home](../index.md) > [Articles](./index.md)  
 # [📈🤖✍️🔄 AI traffic is up 527%. SEO is being rewritten.](https://searchengineland.com/ai-traffic-up-seo-rewritten-459954)  
@@ -48,7 +48,7 @@ tags:
 * **The Master Algorithm** by Pedro Domingos: An accessible guide to machine learning paradigms and the quest for a unifying algorithm.  
 * **Index, a History of the** by Dennis Duncan: A unique history of the index, providing historical context for how we've always organized information.  
 * **Content Strategy for the Web** by Kristina Halvorson and Melissa Rach: Foundational principles for creating structured, purposeful content, now critical for AI discovery.  
-* **The Shallows: What the Internet Is Doing to Our Brains** by Nicholas Carr: A thought-provoking look at how digital information consumption is reshaping our minds.  
+* **[📱🧠 The Shallows: What the Internet Is Doing to Our Brains](../books/the-shallows-what-the-internet-is-doing-to-our-brains.md)** by Nicholas Carr: A thought-provoking look at how digital information consumption is reshaping our minds.  
   
 ## 🐦 Tweet  
 <blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">📈🤖✍️🔄 AI traffic is up 527%. SEO is being rewritten.<br><br>📈 Traffic Shift | 🤖 LLM Influence | 📝 Content Creation | 🌐 Online Visibility | 🧑‍💻 Marketing Mindset<a href="https://t.co/zR1YpYtQT4">https://t.co/zR1YpYtQT4</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/1953631670982352993?ref_src=twsrc%5Etfw">August 8, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

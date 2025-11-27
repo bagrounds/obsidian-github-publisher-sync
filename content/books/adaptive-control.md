@@ -4,8 +4,8 @@ aliases:
   - 🧬🕹️ Adaptive Control
 title: 🧬🕹️ Adaptive Control
 URL: https://bagrounds.org/books/adaptive-control
-Author: 
-tags: 
+Author:
+tags:
 affiliate link: https://amzn.to/4jrDdsB
 ---
 [Home](../index.md) > [Books](./index.md)  
@@ -65,12 +65,12 @@ This book offers a deep dive 🏊‍♂️ into the mathematical underpinnings o
   
 * **Best Alternate Book on the Same Topic:** "Nonlinear and Adaptive Control Design" by Miroslav Krstic, Jing Sun, and Petar V. Kokotovic. This book provides a more modern and comprehensive treatment of nonlinear and adaptive control. 🔄🆕  
 * **Best Book Tangentially Related:** "Feedback Systems: An Introduction for Scientists and Engineers" by Karl J. Åström and Richard M. Murray. This book provides a broader introduction to feedback control systems, which is essential for understanding adaptive control. 🔗🤝  
-* **Best Book Diametrically Opposed:** "Out of Control: The New Biology of Machines, Social Systems, and the Economic World" by Kevin Kelly. This book explores decentralized and emergent systems, contrasting with the centralized and model-based approach of adaptive control. 🌐🐝  
+* **Best Book Diametrically Opposed:** [⚠️🤖📈 Out of Control: The New Biology of Machines, Social Systems, and the Economic World](./out-of-control-the-new-biology-of-machines-social-systems-and-the-economic-world.md) by Kevin Kelly. This book explores decentralized and emergent systems, contrasting with the centralized and model-based approach of adaptive control. 🌐🐝  
 * **Best Fiction Book Incorporating Related Ideas:** "The Martian" by Andy Weir. This book features a protagonist who uses adaptive problem-solving and control techniques to survive in a challenging environment. 🚀👨‍🚀🪐  
 * **Best Book More General:** "Control System Design" by Graham C. Goodwin, Stefan F. Graebe, and Mario E. Salgado. This book provides a broad overview of control system design principles and techniques. ⚙️📐  
 * **Best Book More Specific:** "Robust Adaptive Control" by Petros Ioannou and Baris Fidan. This book focuses specifically on robust adaptive control techniques. 🛡️🔒  
 * **Best Book More Rigorous:** "Nonlinear Systems" by Hassan K. Khalil. This book provides a very rigorous mathematical treatment of nonlinear systems, including adaptive control. 📈🤯  
-* **Best Book More Accessible:** "[Feedback Control of Dynamic Systems](./feedback-control-of-dynamic-systems.md)" by Gene F. Franklin, J. David Powell, and Abbas Emami-Naeini. This book provides a more accessible introduction to feedback control systems, with less emphasis on mathematical rigor. 📖🤗  
+* **Best Book More Accessible:** [⚙️📈🔄🎯 Feedback Control of Dynamic Systems](./feedback-control-of-dynamic-systems.md) by Gene F. Franklin, J. David Powell, and Abbas Emami-Naeini. This book provides a more accessible introduction to feedback control systems, with less emphasis on mathematical rigor. 📖🤗  
   
 ## 💬 [Gemini](https://gemini.google.com) Prompt  
 > Summarize the book: Adaptive Control. Start with a TL;DR - a single statement that conveys a maximum of the useful information provided in the book. Next, explain how this book may offer a new or surprising perspective. Follow this with a deep dive. Catalogue the topics, methods, and research discussed. Be sure to highlight any significant theories, theses, or mental models proposed. Summarize prominent examples discussed. Emphasize practical takeaways, including detailed, specific, concrete, step-by-step advice, guidance, or techniques discussed. Provide a critical analysis of the quality of the information presented, using scientific backing, author credentials, authoritative reviews, and other markers of high quality information as justification. Make the following additional book recommendations: the best alternate book on the same topic; the best book that is tangentially related; the best book that is diametrically opposed; the best fiction book that incorporates related ideas; the best book that is more general or more specific; and the best book that is more rigorous or more accessible than this book. Format your response as markdown, starting at heading level H3, with inline links, for easy copy paste. Use meaningful emojis generously (at least one per heading, bullet point, and paragraph) to enhance readability. Do not include broken links or links to commercial sites.

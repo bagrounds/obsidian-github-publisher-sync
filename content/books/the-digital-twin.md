@@ -4,8 +4,8 @@ aliases:
   - 👯💻 Digital Twin
 title: 👯💻 Digital Twin
 URL: https://bagrounds.org/books/the-digital-twin
-Author: 
-tags: 
+Author:
+tags:
 affiliate link: https://amzn.to/4kNVbGL
 ---
 [Home](../index.md) > [Books](./index.md)  
@@ -82,7 +82,7 @@ This book is not just a technical manual—it’s a visionary roadmap. By gather
 - **Tangentially Related:**    
   - *The Digital Transformation Playbook* – Explores how digital disruption reshapes business strategy, offering a broader context that complements digital twin implementation. 🌐  
 - **Diametrically Opposed:**    
-  - *The Shallows: What the Internet Is Doing to Our Brains* by Nicholas Carr – Presents a critical perspective on how digital technologies affect human cognition, contrasting with the transformative optimism of digital twins. 🤔    
+  - [📱🧠 The Shallows: What the Internet Is Doing to Our Brains](./the-shallows-what-the-internet-is-doing-to-our-brains.md) by Nicholas Carr – Presents a critical perspective on how digital technologies affect human cognition, contrasting with the transformative optimism of digital twins. 🤔    
     [More on Wikipedia](https://en.wikipedia.org/wiki/The_Shallows)  
 - **Fiction Incorporating Related Ideas:**    
   - *Neuromancer* by William Gibson – A cyberpunk classic that envisions a future where digital and physical realities intertwine in unexpected ways. 💻    

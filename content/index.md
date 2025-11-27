@@ -12,7 +12,8 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 ❔ What do 🫵 _you_ 🤔 think?  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (377)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (378)  
+- [2025-11-27 | 👶🏼💤 How Babies Sleep 📚](./reflections/2025-11-27.md)  
 - [2025-11-26](./reflections/2025-11-26.md)  
 - [2025-11-25 | 🌜 Moonshot | 🌌 Cosmos 📚](./reflections/2025-11-25.md)  
 - [2025-11-24 | 😇🤥 Innocent Fraud 📺📚](./reflections/2025-11-24.md)  
@@ -22,10 +23,12 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [2025-11-20 | 🇺🇸 New Deal | 💸👹Corruption Currency 📚📰](./reflections/2025-11-20.md)  
 - [2025-11-19 | 🇺🇸📺🆘 Public Media 📺📚](./reflections/2025-11-19.md)  
 - [2025-11-18 | 🌳 Trees | 🐇 Rabbit | ↪️ 180 | 🧠 Intelligences | 🌠 The Star 📚📺🌌](./reflections/2025-11-18.md)  
-- [2025-11-17 | 🧸 Play | 👎 Fail | 🐜 Ants 📚](./reflections/2025-11-17.md)  
   
   
-## [📚 Books](./books/index.md) (786)  
+## [📚 Books](./books/index.md) (789)  
+- [👶😴 How Babies Sleep: A Science-Based Guide to the First 365 Days and Nights](./books/how-babies-sleep-a-science-based-guide-to-the-first-365-days-and-nights.md)  
+- [👶😴 How Babies Sleep: The Gentle, Science-Based Method to Help Your Baby Sleep Through the Night](./books/how-babies-sleep-the-gentle-science-based-method-to-help-your-baby-sleep-through-the-night.md)  
+- [🇺🇸🪖❤️ The New American Militarism: How Americans Are Seduced by War](./books/the-new-american-militarism-how-americans-are-seduced-by-war.md)  
 - [🚀🌍💰 Mission Economy: A Moonshot Guide to Changing Capitalism](./books/mission-economy-a-moonshot-guide-to-changing-capitalism.md)  
 - [🏛️🏭 The Entrepreneurial State: Debunking Public vs Private Sector Myths](./books/the-entrepreneurial-state-debunking-public-vs-private-sector-myths.md)  
 - [💸🎨 The Great Mental Models, Volume 4: Economics and Art](./books/the-great-mental-models-volume-4-economics-and-art.md)  
@@ -33,12 +36,11 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [🤏📜⏳ A Brief History of Time](./books/a-brief-history-of-time.md)  
 - [🏃‍♂️⛰️ Born to Run: A Hidden Tribe, Superathletes, and the Greatest Race the World Has Never Seen](./books/born-to-run-a-hidden-tribe-superathletes-and-the-greatest-race-the-world-has-never-seen.md)  
 - [❓✝️ The Dawkins Delusion?: Atheist Fundamentalism and the Denial of the Divine](./books/the-dawkins-delusion-atheist-fundamentalism-and-the-denial-of-the-divine.md)  
-- [❓✝️ The God Delusion](./books/the-god-delusion.md)  
-- [📚🧠 The New York Times Guide to Essential Knowledge: A Desk Reference for the Curious Mind](./books/the-new-york-times-guide-to-essential-knowledge-a-desk-reference-for-the-curious-mind.md)  
-- [🐦➕ In a Flight of Starlings: The Wonders of Complex Systems](./books/in-a-flight-of-starlings-the-wonders-of-complex-systems.md)  
   
   
-## [📺 Videos](./videos/index.md) (448)  
+## [📺 Videos](./videos/index.md) (450)  
+- [🗣️🇺🇸🤝 A Conversation with Representative Jim Himes | American Conversations](./videos/a-conversation-with-representative-jim-himes-american-conversations.md)  
+- [🚪🏃‍♂️❓ Why Are They Leaving Office? | Explainer](./videos/why-are-they-leaving-office-explainer.md)  
 - [📰🏛️📉 News Wrap: State Department lays off more than 1,300 in latest cuts to federal workforce](./videos/news-wrap-state-department-lays-off-more-than-1300-in-latest-cuts-to-federal-workforce.md)  
 - [🧠💪🤯🔄♾️ 15 Books So Hard They’ll Reshape Your Brain Forever](./videos/15-books-so-hard-theyll-reshape-your-brain-forever.md)  
 - [🤔🧐📚💯🏆 Critical Thinking Book Recommendations – My Top 5 Must Reads](./videos/critical-thinking-book-recommendations-my-top-5-must-reads.md)  
@@ -47,8 +49,6 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [💰🇦🇹🆚📈 MMT vs. Austrian School Debate](./videos/mmt-vs-austrian-school-debate.md)  
 - [🖨️💰♾️ How Much Money Can We Print? - Warren Mosler, Modern Monetary Theory - DSPod  > 251](./videos/how-much-money-can-we-print-warren-mosler-modern-monetary-theory-dspod-251.md)  
 - [❓🪙💡🇺🇸 Unraveling the Mysteries of Modern Monetary Theory with Warren Mosler](./videos/unraveling-the-mysteries-of-modern-monetary-theory-with-warren-mosler.md)  
-- [🇦🇹💰🆚 Modern Monetary Theory Showdown](./videos/the-austrian-economics-vs-modern-monetary-theory-showdown-robert-murphy-and-nathan-tankus.md)  
-- [👶⏰😴 How to Use the Ferber Method for Sleep Training | The Parents Guide | Parents](./videos/how-to-use-the-ferber-method-for-sleep-training-the-parents-guide-parents.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (83)  

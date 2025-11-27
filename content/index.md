@@ -38,7 +38,8 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [❓✝️ The Dawkins Delusion?: Atheist Fundamentalism and the Denial of the Divine](./books/the-dawkins-delusion-atheist-fundamentalism-and-the-denial-of-the-divine.md)  
   
   
-## [📺 Videos](./videos/index.md) (452)  
+## [📺 Videos](./videos/index.md) (453)  
+- [😴👶🧪 How Babies Sleep: The Gentle, Science-Based… by Sofia Axelrod · Audiobook preview](./videos/how-babies-sleep-the-gentle-science-based-by-sofia-axelrod-audiobook-preview.md)  
 - [🤰👩‍⚕️👶🍼⏰ 16.7 Professor Helen Ball midwifery hour](./videos/16-7-professor-helen-ball-midwiferyhour.md)  
 - [👶❓😴👩‍⚕️ Baby sleep Q & A with Dr. Sofia Axelrod, PhD](./videos/baby-sleep-q-a-with-dr-sofia-axelrod-phd.md)  
 - [🗣️🇺🇸🤝 A Conversation with Representative Jim Himes | American Conversations](./videos/a-conversation-with-representative-jim-himes-american-conversations.md)  
@@ -48,7 +49,6 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [🤔🧐📚💯🏆 Critical Thinking Book Recommendations – My Top 5 Must Reads](./videos/critical-thinking-book-recommendations-my-top-5-must-reads.md)  
 - [😇😈📉🚫 7️⃣ Deadly Innocent Frauds-A BCB Economics Lecture](./videos/seven-deadly-innocent-frauds-a-bcb-economics-lecture.md)  
 - [💰🏦📈 Warren Mosler | Modern Monetary Theory (MMT), Banking, and Taxing the Rich](./videos/warren-mosler-modern-monetary-theory-mmt-banking-and-taxing-the-rich.md)  
-- [💰🇦🇹🆚📈 MMT vs. Austrian School Debate](./videos/mmt-vs-austrian-school-debate.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (83)  

@@ -7,7 +7,7 @@ URL: https://bagrounds.org/books
 backlinks: false
 ---
 [Home](../index.md)  
-# 📚 Books (786)  
+# 📚 Books (789)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)  
 - [🧑‍🤝‍🧑📈 10 to 25: The Science of Motivating Young People: A Groundbreaking Approach to Leading the Next Generation - And Making Your Own Life Easier](./10-to-25-the-science-of-motivating-young-people-a-groundbreaking-approach-to-leading-the-next-generation-and-making-your-own-life-easier.md)  
@@ -266,6 +266,8 @@ backlinks: false
 - [🫂 Hold Me Tight: Seven Conversations for a Lifetime of Love](./hold-me-tight-seven-conversations-for-a-lifetime-of-love.md)  
 - [🎣📱 Hooked: How to Build Habit-Forming Products](./hooked-how-to-build-habit-forming-products.md)  
 - [🏛️👹🇺🇸🏰👹🇷🇺 House of Trump, House of Putin: The Untold Story of Donald Trump and the Russian Mafia](./house-of-trump-house-of-putin-the-untold-story-of-donald-trump-and-the-russian-mafia.md)  
+- [👶😴 How Babies Sleep: A Science-Based Guide to the First 365 Days and Nights](./how-babies-sleep-a-science-based-guide-to-the-first-365-days-and-nights.md)  
+- [👶😴 How Babies Sleep: The Gentle, Science-Based Method to Help Your Baby Sleep Through the Night](./how-babies-sleep-the-gentle-science-based-method-to-help-your-baby-sleep-through-the-night.md)  
 - [👶🗣️ How Babies Talk: The Magic and Mystery of Language in the First Three Years of Life](./how-babies-talk-the-magic-and-mystery-of-language-in-the-first-three-years-of-life.md)  
 - [🧑‍🎓🌱 How Children Succeed: Grit, Curiosity, and the Hidden Power of Character](./how-children-succeed-grit-curiosity-and-the-hidden-power-of-character.md)  
 - [🗳️🏛️☠️ How Democracies Die](./how-democracies-die.md)  
@@ -645,6 +647,7 @@ backlinks: false
 - [🏔️ The Myth of Sisyphus](./the-myth-of-sisyphus.md)  
 - [↔️🏛️ The Narrow Corridor: States, Societies, and the Fate of Liberty](./the-narrow-corridor-states-societies-and-the-fate-of-liberty.md)  
 - [🧠❤️🔄 The Neuroscience of Change: A Compassion-Based Program for Personal Transformation](./the-neuroscience-of-change-a-compassion-based-program-for-personal-transformation.md)  
+- [🇺🇸🪖❤️ The New American Militarism: How Americans Are Seduced by War](./the-new-american-militarism-how-americans-are-seduced-by-war.md)  
 - [🇿🇦 The New Apartheid](./the-new-apartheid.md)  
 - [📈🏛️🏫 The New Economics: For Industry, Government, Education](./the-new-economics.md)  
 - [🧑🏿⛓️🙈 The New Jim Crow: Mass Incarceration in the Age of Colorblindness](./the-new-jim-crow-mass-incarceration-in-the-age-of-colorblindness.md)  

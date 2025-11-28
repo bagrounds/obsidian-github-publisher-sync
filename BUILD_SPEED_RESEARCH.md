@@ -268,9 +268,9 @@ import chalk from "chalk"
 
 const OG_CACHE_DIR = path.join(QUARTZ, ".quartz-cache", "og-images")
 
-// Sanitize slug to create a valid filename
-function sanitizeSlug(slug: string): string {
-  return Buffer.from(slug).toString("base64url")
+// Create a short hash of the slug for cache filename (avoids ENAMETOOLONG errors)
+function hashSlug(slug: string): string {
+  return createHash("sha256").update(slug).digest("hex").slice(0, 16)
 }
 
 async function processOgImage(
@@ -286,7 +286,7 @@ async function processOgImage(
   
   // Compute cache key
   const cacheKey = computeCacheKey(fileData, cfg, configHash)
-  const cacheFileName = `${sanitizeSlug(slug)}_${cacheKey}.webp`
+  const cacheFileName = `${hashSlug(slug)}_${cacheKey}.webp`
   const cachePath = path.join(OG_CACHE_DIR, cacheFileName)
   
   // Check if cached version exists

@@ -56,10 +56,10 @@ function computeCacheKey(
 }
 
 /**
- * Sanitize slug to create a valid filename using base64url encoding
+ * Create a short hash of the slug for cache filename
  */
-function sanitizeSlug(slug: string): string {
-  return Buffer.from(slug).toString("base64url")
+function hashSlug(slug: string): string {
+  return createHash("sha256").update(slug).digest("hex").slice(0, 16)
 }
 
 const defaultOptions: SocialImageOptions = {
@@ -127,7 +127,7 @@ async function processOgImage(
 
   // Compute cache key and cache path
   const cacheKey = computeCacheKey(fileData, cfg, configHash)
-  const cacheFileName = `${sanitizeSlug(slug)}_${cacheKey}.webp`
+  const cacheFileName = `${hashSlug(slug)}_${cacheKey}.webp`
   const cachePath = path.join(OG_CACHE_DIR, cacheFileName)
 
   // Check if cached version exists

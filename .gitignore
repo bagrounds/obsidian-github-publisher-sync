@@ -2,4 +2,3 @@ node_modules
 .quartz-cache
 *.swp
 public
-tsconfig.tsbuildinfo

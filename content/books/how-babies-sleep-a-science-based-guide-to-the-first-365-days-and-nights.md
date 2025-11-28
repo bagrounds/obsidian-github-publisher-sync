@@ -62,7 +62,7 @@ affiliate link: https://amzn.to/48qs2gx
   
 ### 📖 Similar  
 * The Discontented Little Baby Book by Dr. Pamela Douglas: Offers a responsive, evidence-based approach to infant care, including sleep.  
-* Sweet Sleep: Nighttime and Naptime Strategies for the Breastfeeding Family by La Leche League International: Focuses on biologically normal infant sleep within the context of breastfeeding.  
+* [😴🤱 Sweet Sleep: Nighttime and Naptime Strategies for the Breastfeeding Family](./sweet-sleep-nighttime-and-naptime-strategies-for-the-breastfeeding-family.md) by La Leche League International: Focuses on biologically normal infant sleep within the context of breastfeeding.  
   
 ### ↔️ Contrasting  
 * [😴👶  Solve Your Child's Sleep Problems](./solve-your-childs-sleep-problems.md) by Richard Ferber, M.D.: A classic guide to structured sleep training, often associated with controlled crying methods.  

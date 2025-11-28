@@ -78,7 +78,7 @@ affiliate link: https://amzn.to/3KnIgil
   
 ### Contrasting  
 * 😭 The No-Cry Sleep Solution: Gentle Ways to Help Your Baby Sleep Through the Night by Elizabeth Pantley  
-* 🤱 Sweet Sleep: Nighttime and Naptime Strategies for the Breastfeeding Family by La Leche League International  
+* [😴🤱 Sweet Sleep: Nighttime and Naptime Strategies for the Breastfeeding Family](./sweet-sleep-nighttime-and-naptime-strategies-for-the-breastfeeding-family.md) by La Leche League International  
 * ❤️ Attached at the Heart: Eight Promises to Raise a Securely Attached Child by Barbara Nicholson and Lysa Parker  
   
 ### Related  

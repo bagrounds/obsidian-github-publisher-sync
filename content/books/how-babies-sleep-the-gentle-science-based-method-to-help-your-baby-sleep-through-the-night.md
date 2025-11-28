@@ -72,7 +72,7 @@ affiliate link: https://amzn.to/3KnIgil
   
 ## 📚 Book Recommendations  
 ### Similar  
-* 😴 The Happy Sleeper: The Science-Backed Guide to Helping Your Baby Get a Good Night's Sleep by Heather Turgeon and Julie Wright  
+* [😴 The Happy Sleeper: The Science-Backed Guide to Helping Your Baby Get a Good Night's Sleep - Newborn to School Age](./the-happy-sleeper-the-science-backed-guide-to-helping-your-baby-get-a-good-nights-sleep-newborn-to-school-age.md) by Heather Turgeon and Julie Wright  
 * [😴👶  Solve Your Child's Sleep Problems](./solve-your-childs-sleep-problems.md) by Richard Ferber  
 * 📖 Precious Little Sleep: The Complete Guide to Your Baby and Toddler's Sleep by Alexis Dubief  
   

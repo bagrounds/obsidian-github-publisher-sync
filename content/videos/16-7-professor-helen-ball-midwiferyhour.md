@@ -57,7 +57,7 @@ youtube: https://youtu.be/wo6ehuRWOBY
   
 * [👶😴 How Babies Sleep: A Science-Based Guide to the First 365 Days and Nights](../books/how-babies-sleep-a-science-based-guide-to-the-first-365-days-and-nights.md) by Helen Ball  
 * Three in a Bed: The Benefits of Sharing Your Bed With Your Baby by Deborah Jackson. 📖 Discusses the 🏡 family bed experience, supporting co-sleeping by drawing on anthropological and historical perspectives.  
-* Sweet Sleep: Nighttime and Naptime Strategies for the Breastfeeding Family by La Leche League International. 🌙 Provides practical, evidence-based strategies for optimizing sleep while maintaining 🍼 responsive breastfeeding practices.  
+* [😴🤱 Sweet Sleep: Nighttime and Naptime Strategies for the Breastfeeding Family](../books/sweet-sleep-nighttime-and-naptime-strategies-for-the-breastfeeding-family.md) by La Leche League International. 🌙 Provides practical, evidence-based strategies for optimizing sleep while maintaining 🍼 responsive breastfeeding practices.  
 * The Continuum Concept by Jean Liedloff. 🏞️ Explores the care of indigenous children, emphasizing 🫂 constant physical contact and immediate responsiveness to infant needs to foster secure emotional development.  
   
 ### 🆚 Contrasting  

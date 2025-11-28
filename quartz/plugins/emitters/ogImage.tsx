@@ -15,51 +15,21 @@ import chalk from "chalk"
 import { createHash } from "crypto"
 import { GlobalConfiguration } from "../../cfg"
 
-// OG image cache directory
 const OG_CACHE_DIR = path.join(QUARTZ, ".quartz-cache", "og-images")
 
-/**
- * Compute a hash of the configuration that affects OG image generation
- */
-function computeConfigHash(cfg: GlobalConfiguration): string {
-  return createHash("sha256")
-    .update(
-      JSON.stringify({
-        colors: cfg.theme.colors,
-        typography: cfg.theme.typography,
-        baseUrl: cfg.baseUrl,
-      }),
-    )
-    .digest("hex")
-    .slice(0, 8)
-}
-
-/**
- * Compute a cache key based on content that affects the OG image
- */
-function computeCacheKey(
-  fileData: QuartzPluginData,
-  cfg: GlobalConfiguration,
-  configHash: string,
-): string {
+function computeCacheKey(slug: string, fileData: QuartzPluginData, cfg: GlobalConfiguration): string {
   const data = {
+    slug,
     title: fileData.frontmatter?.title ?? "",
     description: fileData.frontmatter?.description ?? fileData.description ?? "",
-    date:
-      fileData.dates?.modified?.toISOString() ?? fileData.dates?.created?.toISOString() ?? null,
+    date: fileData.dates?.modified?.toISOString() ?? fileData.dates?.created?.toISOString() ?? null,
     tags: (fileData.frontmatter?.tags ?? []).slice(0, 3),
     textLength: (fileData.text ?? "").length,
-    configVersion: configHash,
+    colors: cfg.theme.colors,
+    typography: cfg.theme.typography,
+    baseUrl: cfg.baseUrl,
   }
-
-  return createHash("sha256").update(JSON.stringify(data)).digest("hex").slice(0, 16)
-}
-
-/**
- * Create a short hash of the slug for cache filename
- */
-function hashSlug(slug: string): string {
-  return createHash("sha256").update(slug).digest("hex").slice(0, 16)
+  return createHash("sha256").update(JSON.stringify(data)).digest("hex").slice(0, 24)
 }
 
 const defaultOptions: SocialImageOptions = {
@@ -119,31 +89,23 @@ async function processOgImage(
   fileData: QuartzPluginData,
   fonts: SatoriOptions["fonts"],
   fullOptions: SocialImageOptions,
-  configHash: string,
 ) {
   const cfg = ctx.cfg.configuration
   const slug = fileData.slug!
   const outputSlug = `${slug}-og-image` as FullSlug
+  const cacheKey = computeCacheKey(slug, fileData, cfg)
+  const cachePath = path.join(OG_CACHE_DIR, `${cacheKey}.webp`)
 
-  // Compute cache key and cache path
-  const cacheKey = computeCacheKey(fileData, cfg, configHash)
-  const cacheFileName = `${hashSlug(slug)}_${cacheKey}.webp`
-  const cachePath = path.join(OG_CACHE_DIR, cacheFileName)
-
-  // Check if cached version exists
   try {
     await fs.access(cachePath)
-    // Cache hit: copy to output using fs.copyFile
     const outputPath = path.join(ctx.argv.output, outputSlug + ".webp")
     await fs.mkdir(path.dirname(outputPath), { recursive: true })
     await fs.copyFile(cachePath, outputPath)
     return outputPath
   } catch {
-    // Cache miss: generate new image
     console.log(chalk.yellow(`[OG cache miss] ${slug}`))
   }
 
-  // Generate image
   const titleSuffix = cfg.pageTitleSuffix ?? ""
   const title =
     (fileData.frontmatter?.title ?? i18n(cfg.locale).propertyDefaults.title) + titleSuffix
@@ -163,14 +125,10 @@ async function processOgImage(
     fullOptions,
   )
 
-  // Ensure cache directory exists
   await fs.mkdir(OG_CACHE_DIR, { recursive: true })
-
-  // Write to cache first
   const buffer = await stream.toBuffer()
   await fs.writeFile(cachePath, buffer)
 
-  // Write to output
   return write({
     ctx,
     content: buffer,
@@ -190,33 +148,22 @@ export const CustomOgImages: QuartzEmitterPlugin<Partial<SocialImageOptions>> = 
     },
     async *emit(ctx, content, _resources) {
       const cfg = ctx.cfg.configuration
-      const headerFont = cfg.theme.typography.header
-      const bodyFont = cfg.theme.typography.body
-      const fonts = await getSatoriFonts(headerFont, bodyFont)
-
-      // Compute config hash once for all images
-      const configHash = computeConfigHash(cfg)
+      const fonts = await getSatoriFonts(cfg.theme.typography.header, cfg.theme.typography.body)
 
       for (const [_tree, vfile] of content) {
         if (vfile.data.frontmatter?.socialImage !== undefined) continue
-        yield processOgImage(ctx, vfile.data, fonts, fullOptions, configHash)
+        yield processOgImage(ctx, vfile.data, fonts, fullOptions)
       }
     },
     async *partialEmit(ctx, _content, _resources, changeEvents) {
       const cfg = ctx.cfg.configuration
-      const headerFont = cfg.theme.typography.header
-      const bodyFont = cfg.theme.typography.body
-      const fonts = await getSatoriFonts(headerFont, bodyFont)
+      const fonts = await getSatoriFonts(cfg.theme.typography.header, cfg.theme.typography.body)
 
-      // Compute config hash once for all images
-      const configHash = computeConfigHash(cfg)
-
-      // find all slugs that changed or were added
       for (const changeEvent of changeEvents) {
         if (!changeEvent.file) continue
         if (changeEvent.file.data.frontmatter?.socialImage !== undefined) continue
         if (changeEvent.type === "add" || changeEvent.type === "change") {
-          yield processOgImage(ctx, changeEvent.file.data, fonts, fullOptions, configHash)
+          yield processOgImage(ctx, changeEvent.file.data, fonts, fullOptions)
         }
       }
     },

@@ -60,7 +60,7 @@ A: 🔑 The recommended age window for starting the Ferber sleep training method
 ### 🆚 Contrasting  
   
 * The Gentle Sleep Book by Sarah Ockwell-Smith: 💖 Proposes gentle, **no-cry** approaches to infant sleep that focus on biological norms and secure attachment, offering a direct contrast to Ferber’s timed crying.  
-* Sweet Sleep by La Leche League International: 🤱 Focuses on **attachment parenting** and maximizing breastfeeding, advocating for parental responsiveness to night wakings rather than behavioral protocols.  
+* [😴🤱 Sweet Sleep: Nighttime and Naptime Strategies for the Breastfeeding Family](../books/sweet-sleep-nighttime-and-naptime-strategies-for-the-breastfeeding-family.md) by La Leche League International: 🤱 Focuses on **attachment parenting** and maximizing breastfeeding, advocating for parental responsiveness to night wakings rather than behavioral protocols.  
   
 ### 🎨 Creatively Related  
   

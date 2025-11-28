@@ -57,7 +57,7 @@ youtube: https://youtu.be/qFc7Z0Npa-E
 ### 🆚 Contrasting  
 * The Gentle Sleep Book: For babies and small children by Sarah Ockwell-Smith  
     * 🌙 This book strongly advocates for responsive, attachment-based parenting sleep methods, actively advising against controlled crying techniques and focusing on biological norms for infant sleep.  
-* Sweet Sleep: Nighttime and Naptime Strategies for the Breastfeeding Family by La Leche League International  
+* [😴🤱 Sweet Sleep: Nighttime and Naptime Strategies for the Breastfeeding Family](../books/sweet-sleep-nighttime-and-naptime-strategies-for-the-breastfeeding-family.md) by La Leche League International  
     * 🤱 Provides guidance on infant sleep centered around breastfeeding and maximizing sleep while adhering to biological needs, including advice on safe co-sleeping and feeding on demand, which contrasts with strict scheduling.  
   
 ### 🎨 Creatively Related  

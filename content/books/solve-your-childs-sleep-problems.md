@@ -80,7 +80,7 @@ affiliate link: https://amzn.to/4a5orqs
   
 ### Contrasting Books  
 * 😭 The No-Cry Sleep Solution by Elizabeth Pantley  
-* 😊 The Happy Sleeper by Heather Turgeon and Julie Wright  
+* [😴 The Happy Sleeper: The Science-Backed Guide to Helping Your Baby Get a Good Night's Sleep - Newborn to School Age](./the-happy-sleeper-the-science-backed-guide-to-helping-your-baby-get-a-good-nights-sleep-newborn-to-school-age.md) by Heather Turgeon and Julie Wright  
 * 🧸 The Gentle Sleep Book by Sarah Ockwell-Smith  
   
 ### Related Books  

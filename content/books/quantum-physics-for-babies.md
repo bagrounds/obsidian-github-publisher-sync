@@ -34,7 +34,7 @@ affiliate link: https://amzn.to/4oqrvRs
 * 👨‍🔬 Author Chris Ferrie, a physicist and mathematician, leverages his expertise to simplify complex ideas, making them accessible.  
 * 🎨 The book uses bright pages and simple illustrations, which are effective in capturing babies' attention, even if full comprehension of quantum physics isn't the immediate goal.  
 * 👨‍💻 Critics and reviewers acknowledge that babies won't understand quantum physics in a traditional sense, but the book serves as valuable early exposure to scientific vocabulary and concepts.  
-* 👶 The Baby University series, including this title, is considered age-appropriate and baby-accessible, with simple sentence structures.  
+* 👶 The [👶📚 Baby University series](./baby-university-complete-for-babies-board-book-set.md), including this title, is considered age-appropriate and baby-accessible, with simple sentence structures.  
 * ✨ The book is seen as stimulating for both children and parents, offering adults a basic understanding of the theory.  
 * 🧠 Research on infant cognition suggests that babies organize their search for information to maximize efficient learning, engaging with content that is neither too simple nor too complex.  
 * 🗣️ Early exposure to language and back-and-forth interactions are crucial for bridging the word gap and fostering cognitive development.  

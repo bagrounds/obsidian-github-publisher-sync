@@ -12,8 +12,9 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 ❔ What do 🫵 _you_ 🤔 think?  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (379)  
-- [2025-11-28](./reflections/2025-11-28.md)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (380)  
+- [2025-11-29](./reflections/2025-11-29.md)  
+- [2025-11-28 | 😴 Baby Sleep | 💲 Modern Money | 🤖 Robot Mop 📚📺🛍️](./reflections/2025-11-28.md)  
 - [2025-11-27 | 👶🏼💤 How Babies Sleep 📚](./reflections/2025-11-27.md)  
 - [2025-11-26 | 🧠 Models | 🇺🇸 State | 🐘 Republicans 📚📺](./reflections/2025-11-26.md)  
 - [2025-11-25 | 🌜 Moonshot | 🌌 Cosmos 📚](./reflections/2025-11-25.md)  
@@ -22,7 +23,6 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [2025-11-22 | 📊 Models | ⛓️ Apartheid | 💰 Economics | 😴 Sleep Training 📚📺🤖💬](./reflections/2025-11-22.md)  
 - [2025-11-21 | 🏢 Business | ⚙️ Systems 📚](./reflections/2025-11-21.md)  
 - [2025-11-20 | 🇺🇸 New Deal | 💸👹Corruption Currency 📚📰](./reflections/2025-11-20.md)  
-- [2025-11-19 | 🇺🇸📺🆘 Public Media 📺📚](./reflections/2025-11-19.md)  
   
   
 ## [📚 Books](./books/index.md) (791)  

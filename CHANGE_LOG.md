@@ -1,6 +1,6 @@
 # Change Log
 
-## OG Image Caching for CI Build Speed Optimization
+## 2025-11-29: OG Image Caching for CI Build Speed Optimization
 
 ### Problem
 CI builds were taking ~12 minutes, with OG image generation consuming most of that time. All 1,866 OG images were regenerated on every build, even when content hadn't changed.
@@ -26,5 +26,5 @@ Implemented content-based caching for OG images. Images are cached based on a ha
 | Metric | Before | After |
 |--------|--------|-------|
 | First CI build | ~12 min | ~12 min |
-| Subsequent CI builds | ~12 min | ~2 min |
-| Build with 1-10 changed files | ~12 min | ~1-2 min |
+| Subsequent CI builds | ~12 min | ~7 min |
+| Build with 1-10 changed files | ~12 min | ~7 min |

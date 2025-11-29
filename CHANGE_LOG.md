@@ -11,11 +11,10 @@ Implemented content-based caching for OG images. Images are cached based on a ha
 ### Files Changed
 
 #### `quartz/plugins/emitters/ogImage.tsx`
-- Added `computeCacheKey()` function to generate a hash based on content affecting OG image output (slug, title, description, frontmatter dates, tags, text length, and config)
+- Added `computeCacheKey()` function to generate a hash based on content affecting OG image output (slug, title, description, tags, text length, and config)
 - Modified `processOgImage()` to check for cached images before generating new ones
 - Cache hits copy existing images to output; cache misses generate and store new images
 - Added cache miss logging for troubleshooting
-- Fixed cache key stability: now uses frontmatter dates only (filesystem dates change on every CI checkout causing cache misses)
 
 #### `.github/workflows/deploy.yml`
 - Added OG image cache step using `actions/cache@v4`

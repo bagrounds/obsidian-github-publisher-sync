@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org/products/irobot-roomba-plus-505-combo-robot-vacuum-mop-with-autowash-dock-extending-spinning-mop-pads-self-empties-pad-wash-heated-drying-self-cleaning-recognizes-avoids-obstacles-lidar-navigation
 share: true
 affiliate link: https://amzn.to/3Km3ywO
-CTA:
+CTA: 🤖 Automate your chores.
 ---
 [Home](../index.md) > [Products](./index.md)  
 # 🤖🧹🧼🗺️ iRobot Roomba Plus 505 Combo Robot Vacuum & Mop with AutoWash Dock - Extending Spinning Mop Pads, Self-Empties, Pad Wash & Heated Drying, Self-cleaning, Recognizes & Avoids Obstacles, LiDAR Navigation  
@@ -43,7 +43,7 @@ The AutoWash Dock is the defining feature, providing a hands-off, closed-loop cl
   
 These books explore technology, automation, and the nature of the modern home.  
   
-* 🤖 **The Second Machine Age Work Progress and Prosperity in a Time of Brilliant Technologies:** Examines how digital technology and automation are fundamentally reshaping the economy and society, mirroring the robot's role as a high-tech domestic worker.  
+* **[🤖📈 The Second Machine Age: Work, Progress, and Prosperity in a Time of Brilliant Technologies](../books/the-second-machine-age-work-progress-and-prosperity-in-a-time-of-brilliant-technologies.md):** Examines how digital technology and automation are fundamentally reshaping the economy and society, mirroring the robot's role as a high-tech domestic worker.  
 * 🔒 **The Glass Cage Automation and Us:** A detailed analysis of the subtle ways automation affects human skill, judgment, and engagement, relevant to the hands-off experience of using a fully automated cleaning system.  
 * 🚀 **The Diamond Age or a Young Lady's Illustrated Primer:** A science fiction novel that explores nanotechnology, ubiquitous computing, and personalized learning environments, reflecting a hyper-automated future where technology manages domestic and educational needs.  
   

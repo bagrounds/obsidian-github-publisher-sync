@@ -7,7 +7,9 @@ URL: https://bagrounds.org/reflections
 backlinks: false
 ---
 [Home](../index.md)  
-# 🪞 Reflections (378)  
+# 🪞 Reflections (380)  
+- [2025-11-29](./2025-11-29.md)  
+- [2025-11-28 | 😴 Baby Sleep | 💲 Modern Money | 🤖 Robot Mop 📚📺🛍️](./2025-11-28.md)  
 - [2025-11-27 | 👶🏼💤 How Babies Sleep 📚](./2025-11-27.md)  
 - [2025-11-26 | 🧠 Models | 🇺🇸 State | 🐘 Republicans 📚📺](./2025-11-26.md)  
 - [2025-11-25 | 🌜 Moonshot | 🌌 Cosmos 📚](./2025-11-25.md)  

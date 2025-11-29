@@ -97,16 +97,21 @@ async function processOgImage(
   const cacheKey = computeCacheKey(slug, fileData, cfg)
   const cachePath = path.join(OG_CACHE_DIR, `${cacheKey}.webp`)
 
-  try {
-    await fs.access(cachePath)
+  // Check if cache file exists using stat (explicit check instead of try/catch for flow control)
+  const cacheExists = await fs.stat(cachePath).then(() => true).catch((err) => {
+    if (err.code === 'ENOENT') return false
+    throw err  // Re-throw unexpected errors
+  })
+  
+  if (cacheExists) {
     const outputPath = path.join(ctx.argv.output, outputSlug + ".webp")
     await fs.mkdir(path.dirname(outputPath), { recursive: true })
     await fs.copyFile(cachePath, outputPath)
-    console.log(chalk.green(`[OG cache hit] ${slug}`))
+    console.log(chalk.green(`[OG cache hit] ${slug} -> ${cachePath}`))
     return outputPath
-  } catch {
-    console.log(chalk.yellow(`[OG cache miss] ${slug} (expected at: ${cachePath})`))
   }
+  
+  console.log(chalk.yellow(`[OG cache miss] ${slug} (expected at: ${cachePath})`))
 
   const titleSuffix = cfg.pageTitleSuffix ?? ""
   const title =
@@ -153,12 +158,20 @@ export const CustomOgImages: QuartzEmitterPlugin<Partial<SocialImageOptions>> = 
       const cfg = ctx.cfg.configuration
       const fonts = await getSatoriFonts(cfg.theme.typography.header, cfg.theme.typography.body)
 
-      // Log cache directory status at start
+      // Log cache directory status at start with sample file names
       try {
         const cacheFiles = await fs.readdir(OG_CACHE_DIR)
         console.log(chalk.cyan(`[OG cache init] Found ${cacheFiles.length} cached images in ${OG_CACHE_DIR}`))
-      } catch {
-        console.log(chalk.cyan(`[OG cache init] Cache directory does not exist yet: ${OG_CACHE_DIR}`))
+        if (cacheFiles.length > 0) {
+          const samples = cacheFiles.slice(0, 5)
+          console.log(chalk.cyan(`[OG cache samples] ${samples.join(', ')}`))
+        }
+      } catch (err: unknown) {
+        if (err && typeof err === 'object' && 'code' in err && err.code === 'ENOENT') {
+          console.log(chalk.cyan(`[OG cache init] Cache directory does not exist yet: ${OG_CACHE_DIR}`))
+        } else {
+          throw err
+        }
       }
 
       for (const [_tree, vfile] of content) {

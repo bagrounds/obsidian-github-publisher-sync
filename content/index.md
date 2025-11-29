@@ -25,17 +25,17 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [2025-11-20 | 🇺🇸 New Deal | 💸👹Corruption Currency 📚📰](./reflections/2025-11-20.md)  
   
   
-## [📚 Books](./books/index.md) (791)  
+## [📚 Books](./books/index.md) (795)  
+- [👶🔬 My First 100 Words series set (My First STEAM Words)](./books/my-first-100-words-series-set-my-first-steam-words.md)  
+- [🤔👶😊 Big Ideas for Little Philosophers: Happiness with Aristotle](./books/big-ideas-for-little-philosophers-happiness-with-aristotle.md)  
+- [⚛️👶 Quantum Physics for Babies](./books/quantum-physics-for-babies.md)  
+- [👶📚 Baby University Complete for Babies Board Book Set](./books/baby-university-complete-for-babies-board-book-set.md)  
+- [⏳🔓👑 Buy Back Your Time: Get Unstuck, Reclaim Your Freedom, and Build Your Empire](./books/buy-back-your-time-get-unstuck-reclaim-your-freedom-and-build-your-empire.md)  
 - [😴👶  Solve Your Child's Sleep Problems](./books/solve-your-childs-sleep-problems.md)  
 - [👶😴 How Babies Sleep: The Gentle, Science-Based Method to Help Your Baby Sleep Through the Night](./books/how-babies-sleep-the-gentle-science-based-method-to-help-your-baby-sleep-through-the-night.md)  
 - [😴 The Happy Sleeper: The Science-Backed Guide to Helping Your Baby Get a Good Night's Sleep - Newborn to School Age](./books/the-happy-sleeper-the-science-backed-guide-to-helping-your-baby-get-a-good-nights-sleep-newborn-to-school-age.md)  
 - [👶😴 How Babies Sleep: A Science-Based Guide to the First 365 Days and Nights](./books/how-babies-sleep-a-science-based-guide-to-the-first-365-days-and-nights.md)  
 - [😴🤱 Sweet Sleep: Nighttime and Naptime Strategies for the Breastfeeding Family](./books/sweet-sleep-nighttime-and-naptime-strategies-for-the-breastfeeding-family.md)  
-- [🇺🇸🪖❤️ The New American Militarism: How Americans Are Seduced by War](./books/the-new-american-militarism-how-americans-are-seduced-by-war.md)  
-- [🚀🌍💰 Mission Economy: A Moonshot Guide to Changing Capitalism](./books/mission-economy-a-moonshot-guide-to-changing-capitalism.md)  
-- [🏛️🏭 The Entrepreneurial State: Debunking Public vs Private Sector Myths](./books/the-entrepreneurial-state-debunking-public-vs-private-sector-myths.md)  
-- [💸🎨 The Great Mental Models, Volume 4: Economics and Art](./books/the-great-mental-models-volume-4-economics-and-art.md)  
-- [⚙️🔢 The Great Mental Models, Volume 3: Systems and Mathematics](./books/the-great-mental-models-volume-3-systems-and-mathematics.md)  
   
   
 ## [📺 Videos](./videos/index.md) (456)  
@@ -89,10 +89,10 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [👨‍🏫📈💻 Scott Galloway](./people/scott-galloway.md)  
   
   
-## [🛍️ Products](./products/index.md) (4)  
+## [🛍️ Products](./products/index.md) (5)  
+- [🦈🔦🐈✨🧹 Shark HV322 Rocket Pet Plus Corded Stick Vacuum with LED Headlights, XL Dust Cup, Lightweight, Perfect for Pet Hair Pickup, Converts to a Hand Vacuum, with (2) Pet Attachments, Bordeaux/Silver](../shark-hv322-rocket-pet-plus-corded-stick-vacuum-with-led-headlights-xl-dust-cup-lightweight-perfect-for-pet-hair-pickup-converts-to-a-hand-vacuum-with-2-pet-attachments-bordeaux-silver.md)  
 - [🤖🧹🧼🗺️ iRobot Roomba Plus 505 Combo Robot Vacuum & Mop with AutoWash Dock - Extending Spinning Mop Pads, Self-Empties, Pad Wash & Heated Drying, Self-cleaning, Recognizes & Avoids Obstacles, LiDAR Navigation](./products/irobot-roomba-plus-505-combo-robot-vacuum-mop-with-autowash-dock-extending-spinning-mop-pads-self-empties-pad-wash-heated-drying-self-cleaning-recognizes-avoids-obstacles-lidar-navigation.md)  
 - [👶🌧️💨 Graco Baby Jogging Stroller Universal Rain Cover, Ventilated Weather Shield, Waterproof, Windproof, Versatile Size to Fit Most Jogging Strollers, Vinyl, Clear, Plastic](./products/graco-baby-jogging-stroller-universal-rain-cover-ventilated-weather-shield-waterproof-windproof-versatile-size-to-fit-most-jogging-strollers-vinyl-clear-plastic.md)  
-- [🔥💨🏕️ Coleman Triton 2-Burner Propane Stove, Portable Camping Cooktop with 2 Adjustable Burners & Wind Guards, 22,000 BTUs of Power for Camping, Tailgating, Grilling, BBQ, & More](./products/coleman-triton-2-burner-propane-stove-portable-camping-cooktop-with-2-adjustable-burners-wind-guards-22000-btus-of-power-for-camping-tailgating-grilling-bbq-more.md)  
   
   
 ## 🔗 Profiles  

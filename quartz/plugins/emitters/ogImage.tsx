@@ -28,7 +28,9 @@ function computeCacheKey(slug: string, fileData: QuartzPluginData, cfg: GlobalCo
     typography: cfg.theme.typography,
     baseUrl: cfg.baseUrl,
   }
-  return createHash("sha256").update(JSON.stringify(data)).digest("hex").slice(0, 24)
+  const key = createHash("sha256").update(JSON.stringify(data)).digest("hex").slice(0, 24)
+  console.log(chalk.gray(`[OG cache key] ${slug} -> ${key} (title: ${data.title.slice(0, 30)}, desc: ${data.description.slice(0, 30)}, textLen: ${data.textLength})`))
+  return key
 }
 
 const defaultOptions: SocialImageOptions = {
@@ -100,9 +102,10 @@ async function processOgImage(
     const outputPath = path.join(ctx.argv.output, outputSlug + ".webp")
     await fs.mkdir(path.dirname(outputPath), { recursive: true })
     await fs.copyFile(cachePath, outputPath)
+    console.log(chalk.green(`[OG cache hit] ${slug}`))
     return outputPath
   } catch {
-    console.log(chalk.yellow(`[OG cache miss] ${slug}`))
+    console.log(chalk.yellow(`[OG cache miss] ${slug} (expected at: ${cachePath})`))
   }
 
   const titleSuffix = cfg.pageTitleSuffix ?? ""
@@ -127,6 +130,7 @@ async function processOgImage(
   await fs.mkdir(OG_CACHE_DIR, { recursive: true })
   const buffer = await stream.toBuffer()
   await fs.writeFile(cachePath, buffer)
+  console.log(chalk.blue(`[OG cache write] ${slug} -> ${cachePath}`))
 
   return write({
     ctx,
@@ -148,6 +152,14 @@ export const CustomOgImages: QuartzEmitterPlugin<Partial<SocialImageOptions>> = 
     async *emit(ctx, content, _resources) {
       const cfg = ctx.cfg.configuration
       const fonts = await getSatoriFonts(cfg.theme.typography.header, cfg.theme.typography.body)
+
+      // Log cache directory status at start
+      try {
+        const cacheFiles = await fs.readdir(OG_CACHE_DIR)
+        console.log(chalk.cyan(`[OG cache init] Found ${cacheFiles.length} cached images in ${OG_CACHE_DIR}`))
+      } catch {
+        console.log(chalk.cyan(`[OG cache init] Cache directory does not exist yet: ${OG_CACHE_DIR}`))
+      }
 
       for (const [_tree, vfile] of content) {
         if (vfile.data.frontmatter?.socialImage !== undefined) continue

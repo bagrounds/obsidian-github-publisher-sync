@@ -18,11 +18,18 @@ import { GlobalConfiguration } from "../../cfg"
 const OG_CACHE_DIR = path.join(QUARTZ, ".quartz-cache", "og-images")
 
 function computeCacheKey(slug: string, fileData: QuartzPluginData, cfg: GlobalConfiguration): string {
+  // Use frontmatter dates only for stability (filesystem dates change on every CI checkout)
+  const frontmatterCreated = fileData.frontmatter?.created
+  const frontmatterModified = fileData.frontmatter?.modified
+  const frontmatterPublished = fileData.frontmatter?.published
+  
   const data = {
     slug,
     title: fileData.frontmatter?.title ?? "",
     description: fileData.frontmatter?.description ?? fileData.description ?? "",
-    date: fileData.dates?.modified?.toISOString() ?? fileData.dates?.created?.toISOString() ?? null,
+    frontmatterCreated: frontmatterCreated ?? null,
+    frontmatterModified: frontmatterModified ?? null,
+    frontmatterPublished: frontmatterPublished ?? null,
     tags: (fileData.frontmatter?.tags ?? []).slice(0, 3),
     textLength: (fileData.text ?? "").length,
     colors: cfg.theme.colors,

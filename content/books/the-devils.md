@@ -4,8 +4,8 @@ aliases:
   - 😈🔥👹 The Devils
 title: 😈🔥👹 The Devils
 URL: https://bagrounds.org/books/the-devils
-Author: 
-tags: 
+Author:
+tags:
 affiliate link: https://amzn.to/43OJokB
 ---
 [Home](../index.md) > [Books](./index.md)  
@@ -56,7 +56,7 @@ Abercrombie's writing in *The Devils* is characterized by its gritty, visceral a
 * **The Blacktongue Thief** by Christopher Buehlman: This book offers a similar grimdark fantasy setting with a strong dose of dark humor and a compelling, roguish protagonist. While it shares Abercrombie's gritty tone and character-driven narrative, its unique world-building and specific comedic style provide a fresh, engaging experience. 🗣️💰  
 * **Best Served Cold** by Joe Abercrombie: If you're looking for more of Abercrombie's classic grimdark style, but in a standalone story rather than a new series, this book from *The First Law* world focuses on a brutal tale of revenge. It delves into equally dark themes and features complex, morally compromised characters, but with a slightly more serious tone than *The Devils*. 🥶💔  
   
-## 🐦 Tweets  
+## 🐦 Tweet  
 <blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">😈🔥👹 The Devils<br>By <a href="https://twitter.com/LordGrimdark?ref_src=twsrc%5Etfw">@LordGrimdark</a><br>Read by Steve Pacey <br><br>🎭 Anti-Heroes | ⚔️ Combat | 😈 Morally Ambiguous Characters | 🤣 Dark Humor | 🤝 Unlikely Alliances | 👑 Corruption of Power | ✍️ Gritty Writing | 📖 Grimdark Fantasy | 💿 Audiobook | 🗺️ Adventure<a href="https://t.co/F58xyE4j7T">https://t.co/F58xyE4j7T</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/1931233526302859760?ref_src=twsrc%5Etfw">June 7, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>  
   
 <blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">😈🔥👹 The Devils<br>By <a href="https://twitter.com/LordGrimdark?ref_src=twsrc%5Etfw">@LordGrimdark</a><br>Read by Steven Pacey<br><br>🎭 Anti-Heroes | ⚔️ Combat | 😈 Morally Ambiguous Characters | 🤣 Dark Humor | 🤝 Unlikely Alliances | 👑 Corruption of Power | ✍️ Gritty Writing | 📖 Grimdark Fantasy | 💿 Audiobook | 🗺️ Adventure<a href="https://t.co/F58xyE4j7T">https://t.co/F58xyE4j7T</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/1938628808703451437?ref_src=twsrc%5Etfw">June 27, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

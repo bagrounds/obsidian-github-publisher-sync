@@ -4,10 +4,10 @@ aliases:
   - 🤖⬇️🧠⏳ How ChatGPT Slowly Destroys Your Brain - Science Confirms It
 title: 🤖⬇️🧠⏳ How ChatGPT Slowly Destroys Your Brain - Science Confirms It
 URL: https://bagrounds.org/videos/
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: Justin Sung
-tags: 
+tags:
 youtube: https://youtu.be/6sJ50Ybp44I
 ---
 [Home](../index.md) > [Videos](./index.md) | [🧠👨‍🎓📈 Justin Sung](../people/justin-sung.md)  
@@ -44,5 +44,5 @@ The video's perspective is that 🤖 AI, specifically LLMs, can hinder learning 
 ## 📚 Book Recommendations  
 * [🤔🐇🐢 Thinking, Fast and Slow](../books/thinking-fast-and-slow.md) by Daniel Kahneman: This 📖 book explores the two systems that drive the way we think, which provides a framework for understanding the cognitive processes discussed in the video.  
 * [🧠🔒 Make It Stick: The Science of Successful Learning](../books/make-it-stick.md) by Peter C. Brown, Henry L. Roediger III, and Mark A. McDaniel: This 📚 book offers evidence-based strategies for effective learning, directly contrasting with the passive learning style the video warns against.  
-* The Shallows: What the Internet Is Doing to Our Brains by Nicholas Carr: A creative recommendation that explores how technology, particularly the internet, has rewired our brains, providing a broader context for the video's arguments about AI's impact.  
+* [📱🧠 The Shallows: What the Internet Is Doing to Our Brains](../books/the-shallows-what-the-internet-is-doing-to-our-brains.md) by Nicholas Carr: A creative recommendation that explores how technology, particularly the internet, has rewired our brains, providing a broader context for the video's arguments about AI's impact.  
 * [🧑‍💻🤖 Human + Machine: Reimagining Work in the Age of AI](../books/human-machine-reimagining-work-in-the-age-of-ai.md) by Paul R. Daugherty and H. James Wilson: This 📖 book provides a contrasting, more optimistic view on how humans and AI can work together to create value, highlighting the benefits of collaboration.

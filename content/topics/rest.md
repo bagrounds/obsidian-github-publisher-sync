@@ -3,7 +3,7 @@ share: true
 aliases:
   - 😴🛌🧘 REST
 title: 😴🛌🧘 REST
-URL: https://bagrounds.org/software/rest
+URL: https://bagrounds.org/topics/rest
 ---
 [Home](../index.md) > [Topics](./index.md)  
 # 😴🛌🧘 REST  

@@ -4,8 +4,8 @@ aliases:
   - "👑🚫📜2️⃣0️⃣ On Tyranny: Twenty Lessons from the Twentieth Century"
 title: "👑🚫📜2️⃣0️⃣ On Tyranny: Twenty Lessons from the Twentieth Century"
 URL: https://bagrounds.org/books/on-tyranny
-Author: 
-tags: 
+Author:
+tags:
 affiliate link: https://amzn.to/4jDxSib
 ---
 [Home](../index.md) > [Books](./index.md)  

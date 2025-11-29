@@ -4,8 +4,8 @@ aliases:
   - "👉🤏 Nudge: Improving Decisions about Health, Wealth, and Happiness"
 title: "👉🤏 Nudge: Improving Decisions about Health, Wealth, and Happiness"
 URL: https://bagrounds.org/books/nudge
-Author: 
-tags: 
+Author:
+tags:
 affiliate link: https://amzn.to/3ZLXT7C
 CTA: 🍎 Choose wisely.
 ---

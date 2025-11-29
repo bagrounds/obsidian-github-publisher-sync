@@ -49,7 +49,7 @@ CTA: 🌱 Nurture resilience.
     * 🏢 This sociological study examines how social class influences parenting styles and children's life outcomes, offering a different lens on the structural factors that shape childhood, beyond just individual character traits.  
 * **🤸 Free-Range Kids** by Lenore Skenazy  
     * 🌳 This book advocates for a less supervised and more independent childhood, challenging the idea of "helicopter parenting" and constant adult intervention. 🚫 It offers a contrasting view on the degree of structured guidance children need to develop.  
-* **📚 Free to Learn** by Peter Gray  
+* **[🧒🎮 Free to Learn: Why Unleashing the Instinct to Play Will Make Our Children Happier, More Self-Reliant, and Better Students for Life](./free-to-learn-why-unleashing-the-instinct-to-play-will-make-our-children-happier-more-self-reliant-and-better-students-for-life.md)** by Peter Gray  
     * 🎓 A developmental psychologist argues for the importance of self-directed play and child-led learning in fostering resilience, problem-solving, and emotional well-being, suggesting a less formal approach to character development.  
   
 ### 🎨 Creatively Related Books  

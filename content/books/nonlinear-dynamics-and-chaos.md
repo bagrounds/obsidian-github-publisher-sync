@@ -4,8 +4,8 @@ aliases:
   - "🦋🌀💥🤖 Nonlinear Dynamics and Chaos: With Applications to Physics, Biology, Chemistry, and Engineering"
 title: "🦋🌀💥🤖 Nonlinear Dynamics and Chaos: With Applications to Physics, Biology, Chemistry, and Engineering"
 URL: https://bagrounds.org/books/nonlinear-dynamics-and-chaos
-Author: 
-tags: 
+Author:
+tags:
 affiliate link: https://amzn.to/4ky6Wlc
 ---
 [Home](../index.md) > [Books](./index.md)  

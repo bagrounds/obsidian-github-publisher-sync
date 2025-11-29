@@ -4,10 +4,10 @@ aliases:
   - 📒 Bullet Journal
 title: 📒 Bullet Journal
 URL: https://youtu.be/GfRf43JTqY4
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: Ryder Carroll
-tags: 
+tags:
 ---
 [Home](../index.md) > [Videos](./index.md) | [📓 Theme System Journal](./this-journal-keeps-me-productive-and-maybe-you-too.md)  
 # 📒 Bullet Journal  

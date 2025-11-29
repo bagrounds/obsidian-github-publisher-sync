@@ -67,7 +67,7 @@ affiliate link: https://amzn.to/4puMiEr
 ## 📚 Book Recommendations  
   
 ### ➕ Similar  
-* 🏛️ The Entrepreneurial State by Mariana Mazzucato  
+* [🏛️🏭 The Entrepreneurial State: Debunking Public vs Private Sector Myths](./the-entrepreneurial-state-debunking-public-vs-private-sector-myths.md) by Mariana Mazzucato  
 * [🍩🌍 Doughnut Economics: Seven Ways to Think Like a 21st-Century Economist](./doughnut-economics-seven-ways-to-think-like-a-21st-century-economist.md) by Kate Raworth  
 * ✨ Value(s) by Mark Carney  
   

@@ -7,8 +7,12 @@ URL: https://bagrounds.org/reflections
 backlinks: false
 ---
 [Home](../index.md)  
-# 🪞 Reflections (376)  
-- [2025-11-25](./2025-11-25.md)  
+# 🪞 Reflections (380)  
+- [2025-11-29](./2025-11-29.md)  
+- [2025-11-28 | 😴 Baby Sleep | 💲 Modern Money | 🤖 Robot Mop 📚📺🛍️](./2025-11-28.md)  
+- [2025-11-27 | 👶🏼💤 How Babies Sleep 📚](./2025-11-27.md)  
+- [2025-11-26 | 🧠 Models | 🇺🇸 State | 🐘 Republicans 📚📺](./2025-11-26.md)  
+- [2025-11-25 | 🌜 Moonshot | 🌌 Cosmos 📚](./2025-11-25.md)  
 - [2025-11-24 | 😇🤥 Innocent Fraud 📺📚](./2025-11-24.md)  
 - [2025-11-23 | 👨‍🏫 Warren Mosler & 💲🔬 Modern Monetary Theory 👥📺](./2025-11-23.md)  
 - [2025-11-22 | 📊 Models | ⛓️ Apartheid | 💰 Economics | 😴 Sleep Training 📚📺🤖💬](./2025-11-22.md)  

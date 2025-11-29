@@ -4,10 +4,10 @@ aliases:
   - "🧠💡🎯🚫 You're Not Stupid: How To Never Lose Focus Again"
 title: "🧠💡🎯🚫 You're Not Stupid: How To Never Lose Focus Again"
 URL: https://youtu.be/fDpBqMCugZg
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: Justin Sung
-tags: 
+tags:
 ---
 [Home](../index.md) > [Videos](./index.md) | [🧠👨‍🎓📈 Justin Sung](../people/justin-sung.md)  
 # 🧠💡🎯🚫 You're Not Stupid: How To Never Lose Focus Again  
@@ -68,4 +68,4 @@ Learn how to optimize your focus with practical tips, from managing distractions
 ### 📖 Recommended Books  
 * **[🤿💼 Deep Work: Rules for Focused Success in a Distracted World](../books/deep-work.md)** by Cal Newport 🏆  
 * **[🌊🧘🧠📈 Flow: The Psychology of Optimal Experience](../books/flow-the-psychology-of-optimal-experience.md)** by Mihaly Csikszentmihalyi 🌟  
-* **[🧘 Indistractable: How to Control Your Attention and Choose Your Life](../books/indistractable.md)** by Nir Eyal 📚  
+* **[🧘 Indistractable: How to Control Your Attention and Choose Your Life](../books/indistractable.md)** by Nir Eyal 📚

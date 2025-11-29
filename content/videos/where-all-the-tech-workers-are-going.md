@@ -4,10 +4,10 @@ aliases:
   - 💻🌍🚶‍♀️ Where All the Tech Workers Are Going
 title: 💻🌍🚶‍♀️ Where All the Tech Workers Are Going
 URL: https://bagrounds.org/videos/where-all-the-tech-workers-are-going
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: Economy Media
-tags: 
+tags:
 youtube: https://youtu.be/_wHjDNzjF-k
 ---
 [Home](../index.md) > [Videos](./index.md)  
@@ -82,7 +82,7 @@ By proactively adapting to these shifts, focusing on higher-order thinking, and 
   
 ### On the Future of Work and AI's Impact  
 * **[🧬👥💾 Life 3.0: Being Human in the Age of Artificial Intelligence](../books/life-3-0.md) by Max Tegmark:** Explores the profound implications of AI for humanity, from the near future to the far-reaching possibilities, prompting readers to consider how to steer AI toward a beneficial future.  
-* ***Human + Machine: Reimagining Work in the Age of AI* by Paul R. Daugherty and H. James Wilson:** This book argues for a symbiotic relationship between humans and AI, providing a framework for how businesses and individuals can leverage AI to augment human capabilities rather than replace them.  
+* **[🧑‍💻🤖 Human + Machine: Reimagining Work in the Age of AI](../books/human-machine-reimagining-work-in-the-age-of-ai.md) by Paul R. Daugherty and H. James Wilson:** This book argues for a symbiotic relationship between humans and AI, providing a framework for how businesses and individuals can leverage AI to augment human capabilities rather than replace them.  
 * ***AI Superpowers: China, Silicon Valley, and the New World Order* by Kai-Fu Lee:** Offers a fascinating perspective on the AI race between the US and China, highlighting the strengths of each and the societal implications of widespread AI adoption.  
 * ***The Second Machine Age: Work, Progress, and Prosperity in a Time of Brilliant Technologies* by Erik Brynjolfsson and Andrew McAfee:** Examines how digital technologies, particularly AI and robotics, are transforming the economy and labor market, discussing both the opportunities and challenges.  
 * ***Co-intelligence: Living And Working With Ai* by Ethan Mollick:** Explores how humans and AI can work together more effectively, focusing on practical applications and the emergence of "co-intelligence" in the workplace.  

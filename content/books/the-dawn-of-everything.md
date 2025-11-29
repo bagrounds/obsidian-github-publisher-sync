@@ -4,8 +4,8 @@ aliases:
   - "🌅🧑‍🤝‍🧑🌍 The Dawn of Everything: A New History of Humanity"
 title: "🌅🧑‍🤝‍🧑🌍 The Dawn of Everything: A New History of Humanity"
 URL: https://bagrounds.org/books/the-dawn-of-everything
-Author: 
-tags: 
+Author:
+tags:
 affiliate link: https://amzn.to/3ZRqZ5B
 ---
 [Home](../index.md) > [Books](./index.md)  

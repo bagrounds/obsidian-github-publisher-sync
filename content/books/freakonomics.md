@@ -4,8 +4,8 @@ aliases:
   - "🤓🕵️‍♂️❓ Freakonomics: A Rogue Economist Explores the Hidden Side of Everything"
 title: "🤓🕵️‍♂️❓ Freakonomics: A Rogue Economist Explores the Hidden Side of Everything"
 URL: https://bagrounds.org/books/freakonomics
-Author: 
-tags: 
+Author:
+tags:
 affiliate link: https://amzn.to/3Zf86tf
 CTA: 🧐 Question everything.
 ---

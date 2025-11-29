@@ -4,8 +4,8 @@ aliases:
   - 💰📈🌍⏳ Capital in the Twenty-First Century
 title: 💰📈🌍⏳ Capital in the Twenty-First Century
 URL: https://bagrounds.org/books/capital-in-the-twenty-first-century
-Author: 
-tags: 
+Author:
+tags:
 affiliate link: https://amzn.to/3HjBmbV
 CTA: ⚖️ Understand wealth.
 ---

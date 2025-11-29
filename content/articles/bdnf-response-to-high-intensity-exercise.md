@@ -3,7 +3,7 @@ share: true
 aliases:
   - 🧠💪📈 BDNF Response to High Intensity Exercise
 title: 🧠💪📈 BDNF Response to High Intensity Exercise
-URL: https://bagrounds.org/articles/
+URL: https://bagrounds.org/articles/bdnf-response-to-high-intensity-exercise
 Author:
 tags:
 ---

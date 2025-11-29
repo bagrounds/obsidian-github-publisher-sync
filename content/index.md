@@ -12,7 +12,8 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 ❔ What do 🫵 _you_ 🤔 think?  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (378)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (379)  
+- [2025-11-28](./reflections/2025-11-28.md)  
 - [2025-11-27 | 👶🏼💤 How Babies Sleep 📚](./reflections/2025-11-27.md)  
 - [2025-11-26 | 🧠 Models | 🇺🇸 State | 🐘 Republicans 📚📺](./reflections/2025-11-26.md)  
 - [2025-11-25 | 🌜 Moonshot | 🌌 Cosmos 📚](./reflections/2025-11-25.md)  
@@ -22,33 +23,32 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [2025-11-21 | 🏢 Business | ⚙️ Systems 📚](./reflections/2025-11-21.md)  
 - [2025-11-20 | 🇺🇸 New Deal | 💸👹Corruption Currency 📚📰](./reflections/2025-11-20.md)  
 - [2025-11-19 | 🇺🇸📺🆘 Public Media 📺📚](./reflections/2025-11-19.md)  
-- [2025-11-18 | 🌳 Trees | 🐇 Rabbit | ↪️ 180 | 🧠 Intelligences | 🌠 The Star 📚📺🌌](./reflections/2025-11-18.md)  
   
   
-## [📚 Books](./books/index.md) (789)  
-- [👶😴 How Babies Sleep: A Science-Based Guide to the First 365 Days and Nights](./books/how-babies-sleep-a-science-based-guide-to-the-first-365-days-and-nights.md)  
+## [📚 Books](./books/index.md) (791)  
+- [😴👶  Solve Your Child's Sleep Problems](./books/solve-your-childs-sleep-problems.md)  
 - [👶😴 How Babies Sleep: The Gentle, Science-Based Method to Help Your Baby Sleep Through the Night](./books/how-babies-sleep-the-gentle-science-based-method-to-help-your-baby-sleep-through-the-night.md)  
+- [😴 The Happy Sleeper: The Science-Backed Guide to Helping Your Baby Get a Good Night's Sleep - Newborn to School Age](./books/the-happy-sleeper-the-science-backed-guide-to-helping-your-baby-get-a-good-nights-sleep-newborn-to-school-age.md)  
+- [👶😴 How Babies Sleep: A Science-Based Guide to the First 365 Days and Nights](./books/how-babies-sleep-a-science-based-guide-to-the-first-365-days-and-nights.md)  
+- [😴🤱 Sweet Sleep: Nighttime and Naptime Strategies for the Breastfeeding Family](./books/sweet-sleep-nighttime-and-naptime-strategies-for-the-breastfeeding-family.md)  
 - [🇺🇸🪖❤️ The New American Militarism: How Americans Are Seduced by War](./books/the-new-american-militarism-how-americans-are-seduced-by-war.md)  
 - [🚀🌍💰 Mission Economy: A Moonshot Guide to Changing Capitalism](./books/mission-economy-a-moonshot-guide-to-changing-capitalism.md)  
 - [🏛️🏭 The Entrepreneurial State: Debunking Public vs Private Sector Myths](./books/the-entrepreneurial-state-debunking-public-vs-private-sector-myths.md)  
 - [💸🎨 The Great Mental Models, Volume 4: Economics and Art](./books/the-great-mental-models-volume-4-economics-and-art.md)  
 - [⚙️🔢 The Great Mental Models, Volume 3: Systems and Mathematics](./books/the-great-mental-models-volume-3-systems-and-mathematics.md)  
-- [🤏📜⏳ A Brief History of Time](./books/a-brief-history-of-time.md)  
-- [🏃‍♂️⛰️ Born to Run: A Hidden Tribe, Superathletes, and the Greatest Race the World Has Never Seen](./books/born-to-run-a-hidden-tribe-superathletes-and-the-greatest-race-the-world-has-never-seen.md)  
-- [❓✝️ The Dawkins Delusion?: Atheist Fundamentalism and the Denial of the Divine](./books/the-dawkins-delusion-atheist-fundamentalism-and-the-denial-of-the-divine.md)  
   
   
-## [📺 Videos](./videos/index.md) (453)  
-- [😴👶🧪 How Babies Sleep: The Gentle, Science-Based… by Sofia Axelrod · Audiobook preview](./videos/how-babies-sleep-the-gentle-science-based-by-sofia-axelrod-audiobook-preview.md)  
+## [📺 Videos](./videos/index.md) (456)  
+- [🏦➕➡️🧑‍🎓🎓 L. Randall Wray - Modern Money Theory for Beginners](./videos/l-randall-wray-modern-money-theory-for-beginners.md)  
+- [💰🤫 Modern Monetary Theory: What They Don’t Tell You (Ft. L. Randall Wray)](./videos/modern-monetary-theory-what-they-dont-tell-you-ft-l-randall-wray.md)  
+- [👶⏰😴 How to Use the Ferber Method for Sleep Training | The Parents Guide | Parents](./videos/how-to-use-the-ferber-method-for-sleep-training-the-parents-guide-parents.md)  
 - [🤰👩‍⚕️👶🍼⏰ 16.7 Professor Helen Ball midwifery hour](./videos/16-7-professor-helen-ball-midwiferyhour.md)  
+- [😴👶🧪 How Babies Sleep: The Gentle, Science-Based… by Sofia Axelrod · Audiobook preview](./videos/how-babies-sleep-the-gentle-science-based-by-sofia-axelrod-audiobook-preview.md)  
+- [👶😴👩‍⚕️ Spoil Your Baby Ep 20 - How Babies Sleep with Dr. Helen Ball](./videos/spoil-your-baby-ep-20-how-babies-sleep-with-dr-helen-ball.md)  
 - [👶❓😴👩‍⚕️ Baby sleep Q & A with Dr. Sofia Axelrod, PhD](./videos/baby-sleep-q-a-with-dr-sofia-axelrod-phd.md)  
 - [🗣️🇺🇸🤝 A Conversation with Representative Jim Himes | American Conversations](./videos/a-conversation-with-representative-jim-himes-american-conversations.md)  
 - [🚪🏃‍♂️❓ Why Are They Leaving Office? | Explainer](./videos/why-are-they-leaving-office-explainer.md)  
 - [📰🏛️📉 News Wrap: State Department lays off more than 1,300 in latest cuts to federal workforce](./videos/news-wrap-state-department-lays-off-more-than-1300-in-latest-cuts-to-federal-workforce.md)  
-- [🧠💪🤯🔄♾️ 15 Books So Hard They’ll Reshape Your Brain Forever](./videos/15-books-so-hard-theyll-reshape-your-brain-forever.md)  
-- [🤔🧐📚💯🏆 Critical Thinking Book Recommendations – My Top 5 Must Reads](./videos/critical-thinking-book-recommendations-my-top-5-must-reads.md)  
-- [😇😈📉🚫 7️⃣ Deadly Innocent Frauds-A BCB Economics Lecture](./videos/seven-deadly-innocent-frauds-a-bcb-economics-lecture.md)  
-- [💰🏦📈 Warren Mosler | Modern Monetary Theory (MMT), Banking, and Taxing the Rich](./videos/warren-mosler-modern-monetary-theory-mmt-banking-and-taxing-the-rich.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (83)  
@@ -89,10 +89,10 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [👨‍🏫📈💻 Scott Galloway](./people/scott-galloway.md)  
   
   
-## [🛍️ Products](./products/index.md) (3)  
+## [🛍️ Products](./products/index.md) (4)  
+- [🤖🧹🧼🗺️ iRobot Roomba Plus 505 Combo Robot Vacuum & Mop with AutoWash Dock - Extending Spinning Mop Pads, Self-Empties, Pad Wash & Heated Drying, Self-cleaning, Recognizes & Avoids Obstacles, LiDAR Navigation](./products/irobot-roomba-plus-505-combo-robot-vacuum-mop-with-autowash-dock-extending-spinning-mop-pads-self-empties-pad-wash-heated-drying-self-cleaning-recognizes-avoids-obstacles-lidar-navigation.md)  
 - [👶🌧️💨 Graco Baby Jogging Stroller Universal Rain Cover, Ventilated Weather Shield, Waterproof, Windproof, Versatile Size to Fit Most Jogging Strollers, Vinyl, Clear, Plastic](./products/graco-baby-jogging-stroller-universal-rain-cover-ventilated-weather-shield-waterproof-windproof-versatile-size-to-fit-most-jogging-strollers-vinyl-clear-plastic.md)  
 - [🔥💨🏕️ Coleman Triton 2-Burner Propane Stove, Portable Camping Cooktop with 2 Adjustable Burners & Wind Guards, 22,000 BTUs of Power for Camping, Tailgating, Grilling, BBQ, & More](./products/coleman-triton-2-burner-propane-stove-portable-camping-cooktop-with-2-adjustable-burners-wind-guards-22000-btus-of-power-for-camping-tailgating-grilling-bbq-more.md)  
-- [👶🏃🌆 Thule Urban Glide 3](./products/thule-urban-glide-3.md)  
   
   
 ## 🔗 Profiles  

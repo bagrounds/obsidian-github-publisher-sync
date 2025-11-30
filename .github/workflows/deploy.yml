@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+      - copilot/exploratory-research-build-speed
 
 permissions:
   contents: read
@@ -36,7 +37,7 @@ jobs:
           git config --global user.name "github-actions[bot]"
 
       - name: Cache Node Modules
-        id: cache
+        id: cache-node
         uses: actions/cache@v4
         with:
           path: node_modules
@@ -44,8 +45,20 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-node-
 
+      - name: Cache OG Images
+        id: cache-og
+        uses: actions/cache@v4
+        with:
+          path: quartz/.quartz-cache/og-images
+          # Use a stable key - the cache directory contains content-hashed files
+          # so old/stale entries are naturally ignored on cache miss
+          # v2: Updated cache key format (single hash instead of two-part hash)
+          key: ${{ runner.os }}-og-images-v2
+          restore-keys: |
+            ${{ runner.os }}-og-images-
+
       - name: Install Dependencies (if cache is not hit)
-        if: ${{ steps.cache.outputs.cache-hit != 'true' }}
+        if: ${{ steps.cache-node.outputs.cache-hit != 'true' }}
         run: npm ci
 
       - name: Build Quartz

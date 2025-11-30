@@ -56,7 +56,7 @@ youtube: https://youtu.be/HBluLfX2F_k
   
 ### ↔️ Similar  
 * [⚫🦢🎲 The Black Swan: The Impact of the Highly Improbable](../books/the-black-swan-the-impact-of-the-highly-improbable.md) by Nassim Nicholas Taleb: Focuses on the extreme impact of rare, unpredictable outliers (Black Swans) and critiques the use of normal distribution models for high-impact events.  
-* 📉 Fractals, Chaos, Power Laws: Minutes from an Infinite Paradise by Manfred Schroeder: A detailed technical exploration of fractal geometry and power laws in nature, touching on the mathematical principles behind scale invariance.  
+* [♾️〰️📊 Fractals, Chaos, Power Laws: Minutes from an Infinite Paradise](../books/fractals-chaos-power-laws-minutes-from-an-infinite-paradise.md) by Manfred Schroeder: A detailed technical exploration of fractal geometry and power laws in nature, touching on the mathematical principles behind scale invariance.  
   
 ### 🆚 Contrasting  
 * [💰📈🌍⏳ Capital in the Twenty-First Century](../books/capital-in-the-twenty-first-century.md) by Thomas Piketty: Provides a comprehensive economic argument on wealth distribution, focusing on institutional and policy factors where the rate of return on capital ($r$) exceeds the rate of economic growth ($g$).  

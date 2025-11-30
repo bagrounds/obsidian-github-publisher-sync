@@ -7,7 +7,7 @@ URL: https://bagrounds.org/books
 backlinks: false
 ---
 [Home](../index.md)  
-# 📚 Books (795)  
+# 📚 Books (798)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)  
 - [🧑‍🤝‍🧑📈 10 to 25: The Science of Motivating Young People: A Groundbreaking Approach to Leading the Next Generation - And Making Your Own Life Easier](./10-to-25-the-science-of-motivating-young-people-a-groundbreaking-approach-to-leading-the-next-generation-and-making-your-own-life-easier.md)  
@@ -228,6 +228,7 @@ backlinks: false
 - [🧭🍎 Foraging Theory](./foraging-theory.md)  
 - [🏗️🧱🌍 Foundation](./Foundation.md)  
 - [🧱✅🐛 Foundations of Software Testing](./foundations-of-software-testing.md)  
+- [♾️〰️📊 Fractals, Chaos, Power Laws: Minutes from an Infinite Paradise](./fractals-chaos-power-laws-minutes-from-an-infinite-paradise.md)  
 - [🤓🕵️‍♂️❓ Freakonomics: A Rogue Economist Explores the Hidden Side of Everything](./freakonomics.md)  
 - [🧒🎮 Free to Learn: Why Unleashing the Instinct to Play Will Make Our Children Happier, More Self-Reliant, and Better Students for Life](./free-to-learn-why-unleashing-the-instinct-to-play-will-make-our-children-happier-more-self-reliant-and-better-students-for-life.md)  
 - [🛂⛓️ From Deportation to Prison: The Politics of Immigration Enforcement in Post-Civil Rights America](./from-deportation-to-prison-the-politics-of-immigration-enforcement-in-post-civil-rights-america.md)  
@@ -603,6 +604,7 @@ backlinks: false
 - [🎨🔄🧠🏢 The Fifth Discipline: The Art and Practice of the Learning Organization](./the-fifth-discipline.md)  
 - [⚠️🥴🕹️🌐 The Fifth Risk](./the-fifth-risk.md)  
 - [⏱️🚀 The First 20 Hours: How to Learn Anything... Fast](./the-first-20-hours-how-to-learn-anything-fast.md)  
+- [♾️🌿🔬 The Fractal Geometry of Nature](./the-fractal-geometry-of-nature.md)  
 - [🧑‍💼🏦💸 The General Theory of Employment, Interest, and Money](./the-general-theory-of-employment-interest-and-money.md)  
 - [📈⚙️♾️ The Goal: A Process of Ongoing Improvement](./the-goal.md)  
 - [❓✝️ The God Delusion](./the-god-delusion.md)  
@@ -664,6 +666,7 @@ backlinks: false
 - [⏱️💡📈 The One Hour Content Plan: The Solopreneur's Guide to a Year's Worth of Blog Post Ideas in 60 Minutes and Creating Content That Hooks and Sells](./the-one-hour-content-plan-the-solopreneurs-guide-to-a-years-worth-of-blog-post-ideas-in-60-minutes-and-creating-content-that-hooks-and-sells.md)  
 - [🧠🗂️ The Organized Mind: Thinking Straight in the Age of Information Overload](./the-organized-mind-thinking-straight-in-the-age-of-information-overload.md)  
 - [👹 The Origins of Totalitarianism](./the-origins-of-totalitarianism.md)  
+- [🇺🇸📉🏛️ The Path to Paralysis: How American Politics Became Nasty, Dysfunctional, and a Threat to the Republic](./the-path-to-paralysis-how-american-politics-became-nasty-dysfunctional-and-a-threat-to-the-republic.md)  
 - [🤝🐧🐳 The Penguin and the Leviathan: How Cooperation Triumphs over Self-Interest](./the-penguin-and-the-leviathan-how-cooperation-triumphs-over-self-interest.md)  
 - [👥⚔️🏛️ The People vs. Democracy: Why Our 🗽 Freedom Is in ⚠️ Danger and How to Save It](./the-people-vs-democracy.md)  
 - [👶🤔❤️ The Philosophical Baby: What Children's Minds Tell Us About Truth, Love, and the Meaning of Life](./the-philosophical-baby-what-childrens-minds-tell-us-about-truth-love-and-the-meaning-of-life.md)  

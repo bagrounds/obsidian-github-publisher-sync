@@ -13,7 +13,7 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 💬 Comment on any page with your GitHub account.  
   
 ## [🪞 Reflections](./reflections/index.md) ~ Blog (380)  
-- [2025-11-29](./reflections/2025-11-29.md)  
+- [2025-11-29 | 🏛️ Paralysis | 👶🏼 Science | ⏳ Buy Time | 🔫 Conflict 📚📰📺🛍️](./reflections/2025-11-29.md)  
 - [2025-11-28 | 😴 Baby Sleep | 💲 Modern Money | 🤖 Robot Mop 📚📺🛍️](./reflections/2025-11-28.md)  
 - [2025-11-27 | 👶🏼💤 How Babies Sleep 📚](./reflections/2025-11-27.md)  
 - [2025-11-26 | 🧠 Models | 🇺🇸 State | 🐘 Republicans 📚📺](./reflections/2025-11-26.md)  
@@ -25,30 +25,30 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [2025-11-20 | 🇺🇸 New Deal | 💸👹Corruption Currency 📚📰](./reflections/2025-11-20.md)  
   
   
-## [📚 Books](./books/index.md) (795)  
+## [📚 Books](./books/index.md) (798)  
+- [🌪️💥🦋🆕 Chaos: Making a New Science](./books/chaos.md)  
+- [♾️〰️📊 Fractals, Chaos, Power Laws: Minutes from an Infinite Paradise](./books/fractals-chaos-power-laws-minutes-from-an-infinite-paradise.md)  
+- [♾️🌿🔬 The Fractal Geometry of Nature](./books/the-fractal-geometry-of-nature.md)  
+- [🇺🇸📉🏛️ The Path to Paralysis: How American Politics Became Nasty, Dysfunctional, and a Threat to the Republic](./books/the-path-to-paralysis-how-american-politics-became-nasty-dysfunctional-and-a-threat-to-the-republic.md)  
 - [👶🔬 My First 100 Words series set (My First STEAM Words)](./books/my-first-100-words-series-set-my-first-steam-words.md)  
 - [🤔👶😊 Big Ideas for Little Philosophers: Happiness with Aristotle](./books/big-ideas-for-little-philosophers-happiness-with-aristotle.md)  
 - [⚛️👶 Quantum Physics for Babies](./books/quantum-physics-for-babies.md)  
 - [👶📚 Baby University Complete for Babies Board Book Set](./books/baby-university-complete-for-babies-board-book-set.md)  
 - [⏳🔓👑 Buy Back Your Time: Get Unstuck, Reclaim Your Freedom, and Build Your Empire](./books/buy-back-your-time-get-unstuck-reclaim-your-freedom-and-build-your-empire.md)  
 - [😴👶  Solve Your Child's Sleep Problems](./books/solve-your-childs-sleep-problems.md)  
-- [👶😴 How Babies Sleep: The Gentle, Science-Based Method to Help Your Baby Sleep Through the Night](./books/how-babies-sleep-the-gentle-science-based-method-to-help-your-baby-sleep-through-the-night.md)  
-- [😴 The Happy Sleeper: The Science-Backed Guide to Helping Your Baby Get a Good Night's Sleep - Newborn to School Age](./books/the-happy-sleeper-the-science-backed-guide-to-helping-your-baby-get-a-good-nights-sleep-newborn-to-school-age.md)  
-- [👶😴 How Babies Sleep: A Science-Based Guide to the First 365 Days and Nights](./books/how-babies-sleep-a-science-based-guide-to-the-first-365-days-and-nights.md)  
-- [😴🤱 Sweet Sleep: Nighttime and Naptime Strategies for the Breastfeeding Family](./books/sweet-sleep-nighttime-and-naptime-strategies-for-the-breastfeeding-family.md)  
   
   
-## [📺 Videos](./videos/index.md) (456)  
+## [📺 Videos](./videos/index.md) (460)  
+- [🤔🎬🏆 The Thinking Game | Full documentary | Tribeca Film Festival official selection](./videos/the-thinking-game-full-documentary-tribeca-film-festival-official-selection.md)  
+- [📊👀🌍 This graph will change how you see the world](./videos/this-graph-will-change-how-you-see-the-world.md)  
+- [🤫💰🪙 This Is What They Don't Tell You About Money And Gold | Prof. L. Randall Wray](./videos/this-is-what-they-dont-tell-you-about-money-and-gold-prof-l-randall-wray.md)  
+- [👨‍⚖️🗣️😠🔫 Capehart and Wehner on Trump's reaction to the National Guard shooting](./videos/capehart-and-wehner-on-trumps-reaction-to-the-national-guard-shooting.md)  
 - [🏦➕➡️🧑‍🎓🎓 L. Randall Wray - Modern Money Theory for Beginners](./videos/l-randall-wray-modern-money-theory-for-beginners.md)  
 - [💰🤫 Modern Monetary Theory: What They Don’t Tell You (Ft. L. Randall Wray)](./videos/modern-monetary-theory-what-they-dont-tell-you-ft-l-randall-wray.md)  
 - [👶⏰😴 How to Use the Ferber Method for Sleep Training | The Parents Guide | Parents](./videos/how-to-use-the-ferber-method-for-sleep-training-the-parents-guide-parents.md)  
 - [🤰👩‍⚕️👶🍼⏰ 16.7 Professor Helen Ball midwifery hour](./videos/16-7-professor-helen-ball-midwiferyhour.md)  
 - [😴👶🧪 How Babies Sleep: The Gentle, Science-Based… by Sofia Axelrod · Audiobook preview](./videos/how-babies-sleep-the-gentle-science-based-by-sofia-axelrod-audiobook-preview.md)  
 - [👶😴👩‍⚕️ Spoil Your Baby Ep 20 - How Babies Sleep with Dr. Helen Ball](./videos/spoil-your-baby-ep-20-how-babies-sleep-with-dr-helen-ball.md)  
-- [👶❓😴👩‍⚕️ Baby sleep Q & A with Dr. Sofia Axelrod, PhD](./videos/baby-sleep-q-a-with-dr-sofia-axelrod-phd.md)  
-- [🗣️🇺🇸🤝 A Conversation with Representative Jim Himes | American Conversations](./videos/a-conversation-with-representative-jim-himes-american-conversations.md)  
-- [🚪🏃‍♂️❓ Why Are They Leaving Office? | Explainer](./videos/why-are-they-leaving-office-explainer.md)  
-- [📰🏛️📉 News Wrap: State Department lays off more than 1,300 in latest cuts to federal workforce](./videos/news-wrap-state-department-lays-off-more-than-1300-in-latest-cuts-to-federal-workforce.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (83)  

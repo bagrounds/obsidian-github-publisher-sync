@@ -52,7 +52,8 @@ jobs:
           path: quartz/.quartz-cache/og-images
           # Use a stable key - the cache directory contains content-hashed files
           # so old/stale entries are naturally ignored on cache miss
-          key: ${{ runner.os }}-og-images-v1
+          # v2: Updated cache key format (single hash instead of two-part hash)
+          key: ${{ runner.os }}-og-images-v2
           restore-keys: |
             ${{ runner.os }}-og-images-
 

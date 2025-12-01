@@ -153,7 +153,7 @@ Here's a breakdown:
         * Various books covering the history of specific sciences, like physics, biology, and chemistry. 📚  
 * **Books with a Different Perspective:**  
     * [🔫🦠🔩 Guns, Germs, and Steel: The Fates of Human Societies](../books/guns-germs-and-steel-the-fates-of-human-societies.md) by Jared Diamond. (Geographical and environmental determinism) ⛰️  
-    * [🌅🧑‍🤝‍🧑🌍 The Dawn of Everything: A New History of Humanity](../books/the-dawn-of-everything.md) by David Graeber and David Wengrow. (Challenges conventional narratives of human history) 🌅  
+    * [🌅🧑‍🤝‍🧑 The Dawn of Everything: A New History of Humanity](../books/the-dawn-of-everything-a-new-history-of-humanity.md) by David Graeber and David Wengrow. (Challenges conventional narratives of human history) 🌅  
   
 **Global Exploration:**  
   

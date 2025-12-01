@@ -41,7 +41,7 @@ CTA: 🌍 Explore our origins.
    *Why:* This book examines the long-term decline of violence in human societies and provides insights into the evolution of human behavior, making it a valuable companion to the themes of progress and human organization discussed in *Sapiens*. 🧠  
   
 3. 🥉 **Best Book Diametrically Opposed:** 🙅‍♂️  
-   *The Dawn of Everything: A New History of Humanity* by David Graeber and David Wengrow  
+   [🌅🧑‍🤝‍🧑 The Dawn of Everything: A New History of Humanity](./the-dawn-of-everything-a-new-history-of-humanity.md) by David Graeber and David Wengrow  
    *Why:* This work challenges conventional narratives of human history, questioning the inevitability of hierarchical societies and linear progress. 🔄 It offers a radically different interpretation of early human organization, serving as a counterpoint to Harari’s framework. 🎭  
   
 4. 📖 **Best Fiction Book Incorporating Related Ideas:** ✍️  

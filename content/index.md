@@ -12,7 +12,9 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 ❔ What do 🫵 _you_ 🤔 think?  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (380)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (382)  
+- [2025-12-01](./reflections/2025-12-01.md)  
+- [2025-11-30 | 🧾 Debt 📚](./reflections/2025-11-30.md)  
 - [2025-11-29 | 🏛️ Paralysis | 👶🏼 Science | ⏳ Buy Time | 🔫 Conflict 📚📰📺🛍️](./reflections/2025-11-29.md)  
 - [2025-11-28 | 😴 Baby Sleep | 💲 Modern Money | 🤖 Robot Mop 📚📺🛍️](./reflections/2025-11-28.md)  
 - [2025-11-27 | 👶🏼💤 How Babies Sleep 📚](./reflections/2025-11-27.md)  
@@ -21,8 +23,6 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [2025-11-24 | 😇🤥 Innocent Fraud 📺📚](./reflections/2025-11-24.md)  
 - [2025-11-23 | 👨‍🏫 Warren Mosler & 💲🔬 Modern Monetary Theory 👥📺](./reflections/2025-11-23.md)  
 - [2025-11-22 | 📊 Models | ⛓️ Apartheid | 💰 Economics | 😴 Sleep Training 📚📺🤖💬](./reflections/2025-11-22.md)  
-- [2025-11-21 | 🏢 Business | ⚙️ Systems 📚](./reflections/2025-11-21.md)  
-- [2025-11-20 | 🇺🇸 New Deal | 💸👹Corruption Currency 📚📰](./reflections/2025-11-20.md)  
   
   
 ## [📚 Books](./books/index.md) (798)  

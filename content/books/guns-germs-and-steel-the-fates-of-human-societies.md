@@ -46,7 +46,7 @@ While widely acclaimed, *Guns, Germs, and Steel* has faced criticism. 👎 Some 
   
 * 🇨🇳 ***The Great Divergence: China, Europe, and the Making of the Modern World Economy*** by Kenneth Pomeranz. This work challenges Eurocentric views of economic history, arguing that Europe's rise was not solely due to internal factors but also heavily influenced by resources and opportunities gained from its colonies, offering a different perspective on the "why Europe?" question. ❓  
 * 🇪🇸 ***Seven Myths of the Spanish Conquest*** by Matthew Restall. This book directly challenges common misconceptions about the Spanish conquest of the Americas, arguing against the idea of a simple, inevitable European victory and highlighting the agency and resistance of indigenous peoples. It provides a more nuanced view of the encounters that Diamond discusses. 🌿  
-* **[🌅🧑‍🤝‍🧑🌍 The Dawn of Everything: A New History of Humanity](./the-dawn-of-everything.md)** by David Graeber and David Wengrow. This book offers a radical reinterpretation of early human history, challenging conventional narratives about the origins of agriculture, states, and inequality, and arguing for a greater diversity of social forms in the past. 🕊️  
+* **[🌅🧑‍🤝‍🧑 The Dawn of Everything: A New History of Humanity](./the-dawn-of-everything-a-new-history-of-humanity.md)** by David Graeber and David Wengrow. This book offers a radical reinterpretation of early human history, challenging conventional narratives about the origins of agriculture, states, and inequality, and arguing for a greater diversity of social forms in the past. 🕊️  
   
 ### ✨ Creatively Related Books (Exploring Specific Aspects in More Detail or Different Ways)  
   

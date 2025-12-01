@@ -91,7 +91,7 @@ affiliate link: https://amzn.to/49jmczi
 ### 🔗 Related  
 * [💰📈🌍⏳ Capital in the Twenty-First Century](./capital-in-the-twenty-first-century.md) by Thomas Piketty  
 * [🏚️💰 Evicted: Poverty and Profit in the American City](./evicted-poverty-and-profit-in-the-american-city.md) by Matthew Desmond  
-* [🌅🧑‍🤝‍🧑🌍 The Dawn of Everything: A New History of Humanity](./the-dawn-of-everything.md) by David Graeber and David Wengrow  
+* [🌅🧑‍🤝‍🧑 The Dawn of Everything: A New History of Humanity](./the-dawn-of-everything-a-new-history-of-humanity.md) by David Graeber and David Wengrow  
   
 ## 🫵 What Do You Think?  
   

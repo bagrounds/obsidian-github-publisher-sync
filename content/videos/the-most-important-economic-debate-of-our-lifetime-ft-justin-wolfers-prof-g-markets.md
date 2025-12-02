@@ -73,5 +73,5 @@ youtube: https://youtu.be/EklEzXBQP9U
   
 * *The Grapes of Wrath* by John Steinbeck  
     * 🚜 A classic novel that powerfully illustrates the human and social cost of technological and economic displacement (the Dust Bowl and mechanized farming), relating directly to the fear of a robot-displaced working class.  
-* *The Utopia of Rules: On Technology, Stupidity, and the Secret Joys of Bureaucracy* by David Graeber  
+* [🤖📝😇 The Utopia of Rules: On Technology, Stupidity, and the Secret Joys of Bureaucracy](../books/the-utopia-of-rules-on-technology-stupidity-and-the-secret-joys-of-bureaucracy.md) by David Graeber  
     * 📝 A critique of how modern technology often results in increased bureaucracy and inefficiency rather than liberation, connecting tangentially to the discussion of political distraction and the **competence shock** in economic administration.

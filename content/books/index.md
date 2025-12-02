@@ -7,7 +7,7 @@ URL: https://bagrounds.org/books
 backlinks: false
 ---
 [Home](../index.md)  
-# 📚 Books (798)  
+# 📚 Books (800)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)  
 - [🧑‍🤝‍🧑📈 10 to 25: The Science of Motivating Young People: A Groundbreaking Approach to Leading the Next Generation - And Making Your Own Life Easier](./10-to-25-the-science-of-motivating-young-people-a-groundbreaking-approach-to-leading-the-next-generation-and-making-your-own-life-easier.md)  
@@ -105,6 +105,7 @@ backlinks: false
 - [🤖🧠⚙️💡 Building Agentic AI Systems: Create intelligent, autonomous AI agents that can reason, plan, and adapt](./building-agentic-ai-systems-create-intelligent-autonomous-ai-agents-that-can-reason-plan-and-adapt.md)  
 - [🤖🧠🔗 Building AI Agents with LLMs, RAG, and Knowledge Graphs: A practical guide to autonomous and modern AI agents](./building-ai-agents-with-llms-rag-and-knowledge-graphs-a-practical-guide-to-autonomous-and-modern-ai-agents.md)  
 - [🏃🤸 Built to Move: The Ten Essential Habits to Help You Move Freely and Live Fully](./built-to-move-the-ten-essential-habits-to-help-you-move-freely-and-live-fully.md)  
+- [💩💼 Bullshit Jobs: A Theory](./bullshit-jobs-a-theory.md)  
 - [🏛️⚙️ Bureaucracy: What Government Agencies Do And Why They Do It](./bureaucracy-what-government-agencies-do-and-why-they-do-it.md)  
 - [💔💻 Burn Book: A Tech Love Story](./burn-book-a-tech-love-story.md)  
 - [🥵🔥💨 Burnout: The Secret to Unlocking the Stress Cycle](./burnout-the-secret-to-unlocking-the-stress-cycle.md)  
@@ -581,7 +582,7 @@ backlinks: false
 - [💡🌱♾️ The Creative Habit: Learn It and Use It for Life](./the-creative-habit.md)  
 - [🧘🏼‍♀️📅 The Daily Stoic: 366 Meditations on Wisdom, Perseverance, and the Art of Living](./the-daily-stoic-366-meditations-on-wisdom-perseverance-and-the-art-of-living.md)  
 - [❓✝️ The Dawkins Delusion?: Atheist Fundamentalism and the Denial of the Divine](./the-dawkins-delusion-atheist-fundamentalism-and-the-denial-of-the-divine.md)  
-- [🌅🧑‍🤝‍🧑🌍 The Dawn of Everything: A New History of Humanity](./the-dawn-of-everything.md)  
+- [🌅🧑‍🤝‍🧑 The Dawn of Everything: A New History of Humanity](./the-dawn-of-everything-a-new-history-of-humanity.md)  
 - [💀🇺🇸🏫 The Death and Life of the Great American School System: How Testing and Choice Are Undermining Education](./the-death-and-life-of-the-great-american-school-system-how-testing-and-choice-are-undermining-education.md)  
 - [💀👨‍🏫 The Death of Expertise: The Campaign Against Established Knowledge and Why It Matters](./the-death-of-expertise-the-campaign-against-established-knowledge-and-why-it-matters.md)  
 - [💰📉➡️📈🗳️ The Deficit Myth: Modern Monetary Theory and the Birth of the People's Economy](./the-deficit-myth.md)  
@@ -734,6 +735,7 @@ backlinks: false
 - [⬆️💪 The Upside of Stress: Why Stress Is Good for You, and How to Get Good at It](./the-upside-of-stress-why-stress-is-good-for-you-and-how-to-get-good-at-it.md)  
 - [🤝📈🇺🇸🔁 The Upswing: How America Came Together a Century Ago and How We Can Do It Again](./the-upswing.md)  
 - [🌀⬆️🧠 The Upward Spiral: Using Neuroscience to Reverse the Course of Depression, One Small Change at a Time](./the-upward-spiral-using-neuroscience-to-reverse-the-course-of-depression-one-small-change-at-a-time.md)  
+- [🤖📝😇 The Utopia of Rules: On Technology, Stupidity, and the Secret Joys of Bureaucracy](./the-utopia-of-rules-on-technology-stupidity-and-the-secret-joys-of-bureaucracy.md)  
 - [🐛🍎 The Very Hungry Caterpillar](./the-very-hungry-caterpillar.md)  
 - [🪖🎨 The War of Art: Break Through the Blocks and Win Your Inner Creative Battles](./the-war-of-art.md)  
 - [🚫💰❤️ The Wealth Money Can't Buy: The 8 Hidden Habits to Live Your Richest Life](./the-wealth-money-cant-buy-the-8-hidden-habits-to-live-your-richest-life.md)  

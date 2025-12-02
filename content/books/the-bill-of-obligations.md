@@ -4,8 +4,8 @@ aliases:
   - "📜🤝 The Bill of Obligations: The Ten Habits of Good Citizens"
 title: "📜🤝 The Bill of Obligations: The Ten Habits of Good Citizens"
 URL: https://bagrounds.org/books/the-bill-of-obligations
-Author: 
-tags: 
+Author:
+tags:
 affiliate link: https://amzn.to/3Hlupax
 ---
 [Home](../index.md) > [Books](./index.md)  
@@ -72,7 +72,7 @@ Haass outlines ten habits crucial for good citizenship:
 * **♀️ Carole Pateman - *The Sexual Contract***: A feminist critique arguing that the traditional social contract implicitly established patriarchal power.  
 * **✊🏿 Charles W. Mills - *The Racial Contract***: Argues that the social contract has historically been a racial contract, excluding non-whites from full personhood and citizenship.  
 * **📜 Howard Zinn - *A People's History of the United States***: Presents American history from the perspective of marginalized groups, often highlighting struggles against established power rather than consensus.  
-* **🌍 David Graeber & David Wengrow - *The Dawn of Everything: A New History of Humanity***: Challenges traditional narratives of social evolution and suggests greater diversity and experimentation in historical forms of social organization, questioning linear paths to modern states.  
+* **🌍 David Graeber & David Wengrow - [🌅🧑‍🤝‍🧑 The Dawn of Everything: A New History of Humanity](./the-dawn-of-everything-a-new-history-of-humanity.md)**: Challenges traditional narratives of social evolution and suggests greater diversity and experimentation in historical forms of social organization, questioning linear paths to modern states.  
 * **🎭 Wendy Brown - *Undoing the Demos: Neoliberalism's Stealth Revolution***: Critiques how neoliberal rationality undermines democratic values and citizenship by prioritizing economic metrics.  
   
 ### 🎨 Creatively Related Books (Broader Themes, Philosophy, History)  

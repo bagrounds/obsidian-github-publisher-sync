@@ -8,6 +8,8 @@ affiliate link: https://amzn.to/3T3FwHv
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ⚙️🏢 Hack Your Bureaucracy: Get Things Done No Matter What Your Role on Any Team  
+[🛒 Hack Your Bureaucracy: Get Things Done No Matter What Your Role on Any Team. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3T3FwHv)  
+  
 ## 📚 Book Report: Hack Your Bureaucracy  
   
 ### 💡 Overview  
@@ -57,8 +59,8 @@ This book is aimed at anyone feeling 😩 stuck or frustrated by 🏢 organizati
 ### ⚔️ Contrasting Perspectives (Challenging/Analyzing the System)  
 * **[🏛️⚙️ Bureaucracy: What Government Agencies Do And Why They Do It](./bureaucracy-what-government-agencies-do-and-why-they-do-it.md)** by James Q. Wilson: 🎓 A classic academic analysis of how bureaucracies function, why they behave as they do, and the inherent challenges in their operation, offering a deeper theoretical understanding compared to Nitze and Sinai's practical focus. 🏢 It emphasizes understanding why bureaucracies differ fundamentally from private sector organizations.  
 * **[📖🏛️📉 Seeing Like a State: How Certain Schemes to Improve the Human Condition Have Failed](./seeing-like-a-state-how-certain-schemes-to-improve-the-human-condition-have-failed.md)** by James C. Scott: 🏛️ Critiques large-scale state planning and bureaucratic efforts that ignore local, practical knowledge, offering a cautionary perspective on top-down interventions.  
-* 📜 **The Utopia of Rules: On Technology, Stupidity, and the Secret Joys of Bureaucracy** by David Graeber: 🏛️ An anthropological and critical take on the pervasiveness of rules and bureaucracy in modern life, questioning their origins and effects.  
-* 😫 **Bullshit Jobs: A Theory** by David Graeber: 💼 Explores the phenomenon of meaningless jobs often created and sustained by modern corporate and administrative structures.  
+* **[🤖📝😇 The Utopia of Rules: On Technology, Stupidity, and the Secret Joys of Bureaucracy](./the-utopia-of-rules-on-technology-stupidity-and-the-secret-joys-of-bureaucracy.md)** by David Graeber: 🏛️ An anthropological and critical take on the pervasiveness of rules and bureaucracy in modern life, questioning their origins and effects.  
+* **[💩💼 Bullshit Jobs: A Theory](./bullshit-jobs-a-theory.md)** by David Graeber: 💼 Explores the phenomenon of meaningless jobs often created and sustained by modern corporate and administrative structures.  
 * 🏛️ **Bureaucracy** by Ludwig von Mises: 📊 Contrasts bureaucratic management (following rules and orders) with free-market management (driven by profit and loss), arguing for the superiority of the latter.  
 * 🏛️ **The Case for Bureaucracy: A Public Administration Polemic** by Charles T. Goodsell: 💪 Argues against common negative stereotypes, presenting a defense of public bureaucracy and its necessity, contrasting with works that focus solely on its pathologies.  
   

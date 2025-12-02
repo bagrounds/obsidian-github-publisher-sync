@@ -3,7 +3,7 @@ title: "🏛️💰 Debt: The First 5,000 Years"
 share: true
 aliases:
   - "🏛️💰 Debt: The First 5,000 Years"
-URL: https://bagrounds.org/books/debt-the-first-5-000-years
+URL: https://bagrounds.org/books/debt-the-first-5000-years
 affiliate link: https://amzn.to/3SwYlTh
 CTA: ⚖️ Examine civilization's ledger.
 ---
@@ -70,4 +70,7 @@ CTA: ⚖️ Examine civilization's ledger.
 * ***Walkaway*** **by Cory Doctorow:** A contemporary sci-fi novel imagining people walking away from default society to build decentralized, post-scarcity communities using technology, exploring themes of debt, obligation, and alternative social/economic systems.  
   
 ## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
-> Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Debt: The First 5,000 Years. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.
+> Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Debt: The First 5,000 Years. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.  
+  
+## 🐦 Tweet  
+<blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">🏛️💰 Debt: The First 5,000 Years by David Graeber<br><br>🏛️ Anthropology | 💰 Money | 📜 History | ⚔️ Conflict | 🤝 Social Relationships | 👑 Empires | 😇 Morality<a href="https://t.co/AzXeouFzQP">https://t.co/AzXeouFzQP</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/1995949677427200176?ref_src=twsrc%5Etfw">December 2, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

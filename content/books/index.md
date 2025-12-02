@@ -7,7 +7,7 @@ URL: https://bagrounds.org/books
 backlinks: false
 ---
 [Home](../index.md)  
-# 📚 Books (800)  
+# 📚 Books (801)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)  
 - [🧑‍🤝‍🧑📈 10 to 25: The Science of Motivating Young People: A Groundbreaking Approach to Leading the Next Generation - And Making Your Own Life Easier](./10-to-25-the-science-of-motivating-young-people-a-groundbreaking-approach-to-leading-the-next-generation-and-making-your-own-life-easier.md)  
@@ -125,6 +125,7 @@ backlinks: false
 - [🇷🇺🤫🇺🇸 Collusion: Secret Meetings, Dirty Money, and How Russia Helped Donald Trump Win](./collusion-secret-meetings-dirty-money-and-how-russia-helped-donald-trump-win.md)  
 - [🧠💡 Common Sense](./common-sense.md)  
 - [🌐🧭❓🔍🗺️ Complexity: A Guided Tour](./complexity.md)  
+- [🏢🤖 Compositional Intelligence: Architectural Typology Through Generative AI](./compositional-intelligence-architectural-typology-through-generative-ai.md)  
 - [📱📢🤖 Computational Propaganda: Political Parties, Politicians, and Political Manipulation on Social Media](./computational-propaganda-political-parties-politicians-and-political-manipulation-on-social-media.md)  
 - [⛓️🏕️📜 Concentration Camps: A Short History](./concentration-camps-a-short-history.md)  
 - [👹🐍🛢️🇺🇸 Confidence Man: The Making of Donald Trump and the Breaking of America](./confidence-man-the-making-of-donald-trump-and-the-breaking-of-america.md)  

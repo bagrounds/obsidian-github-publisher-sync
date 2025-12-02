@@ -12,7 +12,8 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 ❔ What do 🫵 _you_ 🤔 think?  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (382)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (383)  
+- [2025-12-02 | 🎼 Compositionality 📺📄📚](./reflections/2025-12-02.md)  
 - [2025-12-01 | 💼 Jobs | 📏 Rules | 🐵 Humanity 📚📺](./reflections/2025-12-01.md)  
 - [2025-11-30 | 🧾 Debt 📚](./reflections/2025-11-30.md)  
 - [2025-11-29 | 🏛️ Paralysis | 👶🏼 Science | ⏳ Buy Time | 🔫 Conflict 📚📰📺🛍️](./reflections/2025-11-29.md)  
@@ -22,10 +23,11 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [2025-11-25 | 🌜 Moonshot | 🌌 Cosmos 📚](./reflections/2025-11-25.md)  
 - [2025-11-24 | 😇🤥 Innocent Fraud 📺📚](./reflections/2025-11-24.md)  
 - [2025-11-23 | 👨‍🏫 Warren Mosler & 💲🔬 Modern Monetary Theory 👥📺](./reflections/2025-11-23.md)  
-- [2025-11-22 | 📊 Models | ⛓️ Apartheid | 💰 Economics | 😴 Sleep Training 📚📺🤖💬](./reflections/2025-11-22.md)  
   
   
-## [📚 Books](./books/index.md) (800)  
+## [📚 Books](./books/index.md) (801)  
+- [🏛️💰 Debt: The First 5,000 Years](./books/debt-the-first-5000-years.md)  
+- [🏢🤖 Compositional Intelligence: Architectural Typology Through Generative AI](./books/compositional-intelligence-architectural-typology-through-generative-ai.md)  
 - [🏛️⚙️ Bureaucracy: What Government Agencies Do And Why They Do It](./books/bureaucracy-what-government-agencies-do-and-why-they-do-it.md)  
 - [⚙️🏢 Hack Your Bureaucracy: Get Things Done No Matter What Your Role on Any Team](./books/hack-your-bureaucracy-get-things-done-no-matter-what-your-role-on-any-team.md)  
 - [🏚️⚠️ The Precariat: The New Dangerous Class](./books/the-precariat-the-new-dangerous-class.md)  
@@ -33,12 +35,11 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [💪😊🎯 From Strength to Strength: Finding Success, Happiness, and Deep Purpose in the Second Half of Life](./books/from-strength-to-strength-finding-success-happiness-and-deep-purpose-in-the-second-half-of-life.md)  
 - [🌴🧘🏼‍♀️ Do Nothing: How to Break Away from Overworking, Overdoing, and Underliving](./books/do-nothing-how-to-break-away-from-overworking-overdoing-and-underliving.md)  
 - [🧑‍🤝‍🧑✅🌍 Full Employment and Social Justice: Solidarity and Sustainability](./books/full-employment-and-social-justice-solidarity-and-sustainability.md)  
-- [🏛️💰 Debt: The First 5,000 Years](./books/debt-the-first-5000-years.md)  
 - [💩💼 Bullshit Jobs: A Theory](./books/bullshit-jobs-a-theory.md)  
-- [📜🤝 The Bill of Obligations: The Ten Habits of Good Citizens](./books/the-bill-of-obligations.md)  
   
   
-## [📺 Videos](./videos/index.md) (461)  
+## [📺 Videos](./videos/index.md) (462)  
+- [🆕🧱🗣️ A New Theory of Compositionality](./videos/a-new-theory-of-compositionality.md)  
 - [💰🤔⚖️ The Most Important Economic Debate of our Lifetime — ft. Justin Wolfers | Prof G Markets](./videos/the-most-important-economic-debate-of-our-lifetime-ft-justin-wolfers-prof-g-markets.md)  
 - [👎💲 Against Economics by David Graeber](./videos/against-economics-by-david-graeber.md)  
 - [🤔🎬🏆 The Thinking Game | Full documentary | Tribeca Film Festival official selection](./videos/the-thinking-game-full-documentary-tribeca-film-festival-official-selection.md)  
@@ -48,7 +49,6 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [🏦➕➡️🧑‍🎓🎓 L. Randall Wray - Modern Money Theory for Beginners](./videos/l-randall-wray-modern-money-theory-for-beginners.md)  
 - [💰🤫 Modern Monetary Theory: What They Don’t Tell You (Ft. L. Randall Wray)](./videos/modern-monetary-theory-what-they-dont-tell-you-ft-l-randall-wray.md)  
 - [👶⏰😴 How to Use the Ferber Method for Sleep Training | The Parents Guide | Parents](./videos/how-to-use-the-ferber-method-for-sleep-training-the-parents-guide-parents.md)  
-- [🤰👩‍⚕️👶🍼⏰ 16.7 Professor Helen Ball midwifery hour](./videos/16-7-professor-helen-ball-midwiferyhour.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (83)  
@@ -59,12 +59,12 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [🗣️📚🧠 Linguistics](./topics/linguistics.md)  
   
   
-## [📄  Articles](./articles/index.md) (73)  
+## [📄  Articles](./articles/index.md) (74)  
+- [🧠🗣️💻 From Frege to ChatGPT: Compositionality in Language, Cognition, and Deep Neural Networks](./articles/from-frege-to-chatgpt-compositionality-in-language-cognition-and-deep-neural-networks.md)  
 - [🪞🇺🇸💔 Mirror, Mirror 2024: A Portrait of the Failing U.S. Health System](./articles/mirror-mirror-2024-a-portrait-of-the-failing-us-health-system.md)  
 - [🧑‍🤝‍🧑🤖🧠 Orchestrating Human AI Teams: The Manager Agent as a Unifying Research Challenge](./articles/orchestrating-human-ai-teams-the-manager-agent-as-a-unifying-research-challenge.md)  
 - [🗣️🧠🧑‍💻📚 Relating Natural Language Aptitude to Individual Differences in Learning Programming Languages](./articles/relating-natural-language-aptitude-to-individual-differences-in-learning-programming-languages.md)  
 - [🙋‍♂️🚩🚫 Musk’s inauguration salute is not the only apparent fascist signal from Trump’s administration](./articles/musks-inauguration-salute-is-not-the-only-apparent-fascist-signal-from-trumps-administration.md)  
-- [🏛️🔍❌🗳️ Analysis: Heritage Foundation’s Database Undermines Claims of Recent Voter Fraud](./articles/analysis-heritage-foundations-database-undermines-claims-of-recent-voter-fraud.md)  
   
   
 ## [🤖💬 Bot Chats](./bot-chats/index.md) (46)  

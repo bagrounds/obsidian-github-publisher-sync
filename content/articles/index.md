@@ -7,7 +7,7 @@ backlinks: false
 URL: https://bagrounds.org/articles
 ---
 [Home](../index.md)  
-# 📄 Articles (73)  
+# 📄 Articles (74)  
 - [🗓️🇵🇹💉✅🕊️ 20 years of Portuguese drug policy - developments, challenges and the quest for human rights](./20-years-of-portuguese-drug-policy-developments-challenges-and-the-quest-for-human-rights.md)  
 - [🦊😈🐾🕵️💸 5 takeaways about NPR's reporting on the whistleblower report about DOGE at the NLRB](./5-takeaways-about-nprs-reporting-on-the-whistleblower-report-about-doge-at-the-nlrb.md)  
 - [🌱🤖⚙️🖐️ 5 tips on getting started with Gems, your custom AI experts](./5-tips-on-getting-started-with-gems-your-custom-ai-experts.md)  
@@ -31,6 +31,7 @@ URL: https://bagrounds.org/articles
 - [⚙️🤖📈🤝 Engineering and AI: Advancing the synergy](./engineering-and-ai-advancing-the-synergy.md)  
 - [🤔⚙️🧩🏗️💡 Everything I know about good system design](./everything-i-know-about-good-system-design.md)  
 - [❓📈🤦 Failing to Understand the Exponential, Again](./failing-to-understand-the-exponential-again.md)  
+- [🧠🗣️💻 From Frege to ChatGPT: Compositionality in Language, Cognition, and Deep Neural Networks](./from-frege-to-chatgpt-compositionality-in-language-cognition-and-deep-neural-networks.md)  
 - [♊💻🆚 Gemini CLI + VS Code: Native diffing and context-aware workflows](./gemini-cli-+-vs-code-native-diffing-and-context-aware-workflows.md)  
 - [⚠️🖇️ Google Cautions Against Using Too Many Internal Links](./google-cautions-against-using-too-many-internal-links.md)  
 - [📚🧩🤖 Guide Comprehensive RAG Implementation Guide](./comprehensive-rag-implementation-guide.md)  

@@ -79,9 +79,9 @@ CTA: ⚠️ Confront insecurity.
   
 ### Similar Books  
 * A Precariat Charter: From Denizens to Citizens by Guy Standing  
-* Bullshit Jobs: A Theory by David Graeber  
+* [💩💼 Bullshit Jobs: A Theory](./bullshit-jobs-a-theory.md) by David Graeber  
 * Automation and the Future of Work by Aaron Benanav  
-* The Utopia of Rules: On Technology, Stupidity, and the Secret Joys of Bureaucracy by David Graeber  
+* [🤖📝😇 The Utopia of Rules: On Technology, Stupidity, and the Secret Joys of Bureaucracy](./the-utopia-of-rules-on-technology-stupidity-and-the-secret-joys-of-bureaucracy.md) by David Graeber  
   
 ### Contrasting Books  
 * The End of Work by Jeremy Rifkin  

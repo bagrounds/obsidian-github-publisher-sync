@@ -13,7 +13,7 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 💬 Comment on any page with your GitHub account.  
   
 ## [🪞 Reflections](./reflections/index.md) ~ Blog (382)  
-- [2025-12-01](./reflections/2025-12-01.md)  
+- [2025-12-01 | 💼 Jobs | 📏 Rules | 🐵 Humanity 📚📺](./reflections/2025-12-01.md)  
 - [2025-11-30 | 🧾 Debt 📚](./reflections/2025-11-30.md)  
 - [2025-11-29 | 🏛️ Paralysis | 👶🏼 Science | ⏳ Buy Time | 🔫 Conflict 📚📰📺🛍️](./reflections/2025-11-29.md)  
 - [2025-11-28 | 😴 Baby Sleep | 💲 Modern Money | 🤖 Robot Mop 📚📺🛍️](./reflections/2025-11-28.md)  
@@ -25,20 +25,22 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [2025-11-22 | 📊 Models | ⛓️ Apartheid | 💰 Economics | 😴 Sleep Training 📚📺🤖💬](./reflections/2025-11-22.md)  
   
   
-## [📚 Books](./books/index.md) (798)  
-- [🌪️💥🦋🆕 Chaos: Making a New Science](./books/chaos.md)  
-- [♾️〰️📊 Fractals, Chaos, Power Laws: Minutes from an Infinite Paradise](./books/fractals-chaos-power-laws-minutes-from-an-infinite-paradise.md)  
-- [♾️🌿🔬 The Fractal Geometry of Nature](./books/the-fractal-geometry-of-nature.md)  
-- [🇺🇸📉🏛️ The Path to Paralysis: How American Politics Became Nasty, Dysfunctional, and a Threat to the Republic](./books/the-path-to-paralysis-how-american-politics-became-nasty-dysfunctional-and-a-threat-to-the-republic.md)  
-- [👶🔬 My First 100 Words series set (My First STEAM Words)](./books/my-first-100-words-series-set-my-first-steam-words.md)  
-- [🤔👶😊 Big Ideas for Little Philosophers: Happiness with Aristotle](./books/big-ideas-for-little-philosophers-happiness-with-aristotle.md)  
-- [⚛️👶 Quantum Physics for Babies](./books/quantum-physics-for-babies.md)  
-- [👶📚 Baby University Complete for Babies Board Book Set](./books/baby-university-complete-for-babies-board-book-set.md)  
-- [⏳🔓👑 Buy Back Your Time: Get Unstuck, Reclaim Your Freedom, and Build Your Empire](./books/buy-back-your-time-get-unstuck-reclaim-your-freedom-and-build-your-empire.md)  
-- [😴👶  Solve Your Child's Sleep Problems](./books/solve-your-childs-sleep-problems.md)  
+## [📚 Books](./books/index.md) (800)  
+- [🏛️⚙️ Bureaucracy: What Government Agencies Do And Why They Do It](./books/bureaucracy-what-government-agencies-do-and-why-they-do-it.md)  
+- [⚙️🏢 Hack Your Bureaucracy: Get Things Done No Matter What Your Role on Any Team](./books/hack-your-bureaucracy-get-things-done-no-matter-what-your-role-on-any-team.md)  
+- [🏚️⚠️ The Precariat: The New Dangerous Class](./books/the-precariat-the-new-dangerous-class.md)  
+- [🤖📝😇 The Utopia of Rules: On Technology, Stupidity, and the Secret Joys of Bureaucracy](./books/the-utopia-of-rules-on-technology-stupidity-and-the-secret-joys-of-bureaucracy.md)  
+- [💪😊🎯 From Strength to Strength: Finding Success, Happiness, and Deep Purpose in the Second Half of Life](./books/from-strength-to-strength-finding-success-happiness-and-deep-purpose-in-the-second-half-of-life.md)  
+- [🌴🧘🏼‍♀️ Do Nothing: How to Break Away from Overworking, Overdoing, and Underliving](./books/do-nothing-how-to-break-away-from-overworking-overdoing-and-underliving.md)  
+- [🧑‍🤝‍🧑✅🌍 Full Employment and Social Justice: Solidarity and Sustainability](./books/full-employment-and-social-justice-solidarity-and-sustainability.md)  
+- [🏛️💰 Debt: The First 5,000 Years](./books/debt-the-first-5000-years.md)  
+- [💩💼 Bullshit Jobs: A Theory](./books/bullshit-jobs-a-theory.md)  
+- [📜🤝 The Bill of Obligations: The Ten Habits of Good Citizens](./books/the-bill-of-obligations.md)  
   
   
-## [📺 Videos](./videos/index.md) (460)  
+## [📺 Videos](./videos/index.md) (461)  
+- [💰🤔⚖️ The Most Important Economic Debate of our Lifetime — ft. Justin Wolfers | Prof G Markets](./videos/the-most-important-economic-debate-of-our-lifetime-ft-justin-wolfers-prof-g-markets.md)  
+- [👎💲 Against Economics by David Graeber](./videos/against-economics-by-david-graeber.md)  
 - [🤔🎬🏆 The Thinking Game | Full documentary | Tribeca Film Festival official selection](./videos/the-thinking-game-full-documentary-tribeca-film-festival-official-selection.md)  
 - [📊👀🌍 This graph will change how you see the world](./videos/this-graph-will-change-how-you-see-the-world.md)  
 - [🤫💰🪙 This Is What They Don't Tell You About Money And Gold | Prof. L. Randall Wray](./videos/this-is-what-they-dont-tell-you-about-money-and-gold-prof-l-randall-wray.md)  
@@ -47,8 +49,6 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [💰🤫 Modern Monetary Theory: What They Don’t Tell You (Ft. L. Randall Wray)](./videos/modern-monetary-theory-what-they-dont-tell-you-ft-l-randall-wray.md)  
 - [👶⏰😴 How to Use the Ferber Method for Sleep Training | The Parents Guide | Parents](./videos/how-to-use-the-ferber-method-for-sleep-training-the-parents-guide-parents.md)  
 - [🤰👩‍⚕️👶🍼⏰ 16.7 Professor Helen Ball midwifery hour](./videos/16-7-professor-helen-ball-midwiferyhour.md)  
-- [😴👶🧪 How Babies Sleep: The Gentle, Science-Based… by Sofia Axelrod · Audiobook preview](./videos/how-babies-sleep-the-gentle-science-based-by-sofia-axelrod-audiobook-preview.md)  
-- [👶😴👩‍⚕️ Spoil Your Baby Ep 20 - How Babies Sleep with Dr. Helen Ball](./videos/spoil-your-baby-ep-20-how-babies-sleep-with-dr-helen-ball.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (83)  
@@ -68,8 +68,8 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
   
   
 ## [🤖💬 Bot Chats](./bot-chats/index.md) (46)  
-- [🇦🇹💰🆚📈🖨️ Austrian Economics vs Modern Monetary Theory](./bot-chats/austrian-economics-vs-modern-monetary-theory.md)  
 - [📖 Book 🧭 Explorer 1](./bot-chats/book-explorer-1.md)  
+- [🇦🇹💰🆚📈🖨️ Austrian Economics vs Modern Monetary Theory](./bot-chats/austrian-economics-vs-modern-monetary-theory.md)  
 - [🧭 Managing 🕸️ Complexity 🧠](./bot-chats/managing-complexity.md)  
 - [🤰⏰👶🔮 Forecasting Parenthood](./bot-chats/forecasting-parenthood.md)  
 - [✍️🥇🇺🇸 Creating the Most Popular Title in the Country](./bot-chats/creating-the-most-popular-title-in-the-country.md)  

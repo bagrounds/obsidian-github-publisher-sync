@@ -44,7 +44,7 @@ by William Mitchell, L. Randall Wray, and Martin Watts
 * **Significant Theories/Theses/Mental Models:**  
     * **[🏦♾️📈💸 Modern Monetary Theory](../topics/modern-monetary-theory.md) (MMT):** The core thesis is that a sovereign government, which issues its own currency, is financially unconstrained and can always afford to purchase anything that is for sale in its own currency. 🔑  
     * **[Functional Finance](../topics/functional-finance.md):** Focuses on achieving macroeconomic goals (e.g., full employment, price stability) through fiscal policy, rather than balancing the budget. 🎯  
-    * **[🧑‍💼🛡️ Job Guarantee / Employer of Last Resort](../topics/job-guarantee-employer-of-last-resort.md):** A policy proposal to ensure full employment by having the government act as the employer of last resort. 🤝  
+    * **[🧑‍💼🛡️ Job Guarantee, Employer of Last Resort](../topics/job-guarantee-employer-of-last-resort.md):** A policy proposal to ensure full employment by having the government act as the employer of last resort. 🤝  
     * **Sectoral Balances:** The relationships between the government, private, and foreign sectors, where one sector's surplus is another's deficit. ⚖️  
 * **Prominent Examples:**  
     * Detailed analysis of the US dollar system and its operational mechanics. 🇺🇸  

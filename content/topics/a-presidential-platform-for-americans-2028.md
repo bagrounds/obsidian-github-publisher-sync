@@ -30,9 +30,11 @@ URL: https://bagrounds.org/topics/a-presidential-platform-for-americans-2028
   
 ### 💼 The Job Guarantee  
 - 🚀 Effective immediately, the federal government guarantees a job to anyone willing to work.  
+    - 📉 Involuntary unemployment goes to zero.  
+    - 💪 Millions of workers mobilize to improve the nation.  
 - 🇺🇸 Make America Great.  
     - 🥇 We will finally step into our oft purported role as the greatest nation on earth by offering the best guaranteed benefits in the world.  
-    - ⚖️ The wages and benefits of the job guarantee immediately become a minimum bar to employing people in America by forcing private businesses to compete with new minimum standards without the need for explicit laws or regulations.  
+- ⚖️ The wages and benefits of the job guarantee immediately become a minimum bar to employing people in America by forcing private businesses to compete with new minimum standards without the need for explicit laws or regulations.  
     - ✅ The benefits  
         - 🍔 Food  
         - 🏠 Housing  
@@ -41,6 +43,12 @@ URL: https://bagrounds.org/topics/a-presidential-platform-for-americans-2028
         - 👶 Childcare  
         - 🌴 Paid leave  
         - 💪 Rehabilitation  
+- 🪏 The work  
+    - 🇺🇸 Support public policy initiatives  
+        - 🏡 Build housing  
+        - 🍎 Plant food  
+        - 👨🏼‍⚕️ Staff clinics  
+    - 🗳️ Implement community led public works projects  
   
 ### 📱 Public Tech  
 #### 🌐 Social Media  
@@ -82,7 +90,7 @@ URL: https://bagrounds.org/topics/a-presidential-platform-for-americans-2028
     - 📈 Measure the change of wealth distribution over time of a business' owners, customers, and surrounding communities to yield insights into exploitative pricing, lasting product and service value, and community impact  
   
 ### 🍎 Food Security  
-- 💸 Money doesn't grow on trees but food does.  
+- 💸 Money doesn't grow on trees, but food does.  
 - 🤝 Give people SNAP benefits; feed them for a political cycle. 🌱 Invest in sustainable micro-agriculture, community gardens, and efficient food supply, distribution, and composting infrastructure and education; feed them for generations.  
   
 ### 🏘️ Housing for All  

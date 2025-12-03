@@ -22,22 +22,22 @@ youtube: https://youtu.be/NcvDcWSXsmI
 * 🚫 Secretary of Defense Pete Hegseth is historically unqualified and 📜 abuses his power to intimidate people \[[04:54](http://www.youtube.com/watch?v=NcvDcWSXsmI&t=294)], \[[05:35](http://www.youtube.com/watch?v=NcvDcWSXsmI&t=335)].  
 * 🚢 Hegseth is reported to have ordered a second strike to kill shipwrecked survivors in the Caribbean \[[05:46](http://www.youtube.com/watch?v=NcvDcWSXsmI&t=346)].  
 * 🐦 An investigation was ordered 📝 via a tweet by the Secretary of Defense, demonstrating a lack of ⚖️ process and accountability \[[05:22](http://www.youtube.com/watch?v=NcvDcWSXsmI&t=322)], \[[15:56](http://www.youtube.com/watch?v=NcvDcWSXsmI&t=956)].  
-* 🤫 This intimidation attempts to tell Americans who are considering speaking up to “keep your mouth shut or else” \[[06:48](http://www.youtube.com/watch?v=NcvDcWSXsmI&t=408)].  
+* 🤫 This intimidation attempts to tell Americans who are considering speaking up to keep your mouth shut or else \[[06:48](http://www.youtube.com/watch?v=NcvDcWSXsmI&t=408)].  
 * 😨 Republican fear of the President means his bad ideas, like 📈 reckless tariffs, go unchallenged, causing Americans to pay more for everything \[[08:18](http://www.youtube.com/watch?v=NcvDcWSXsmI&t=498)], \[[08:50](http://www.youtube.com/watch?v=NcvDcWSXsmI&t=530)].  
 * 🛡️ I will not be intimidated or silenced, having given too much in service to this country to back down \[[10:11](http://www.youtube.com/watch?v=NcvDcWSXsmI&t=611)], \[[10:26](http://www.youtube.com/watch?v=NcvDcWSXsmI&t=626)].  
   
 ## 🤔 Evaluation  
 * ⚖️ The senator’s core claims about intimidation tactics are largely supported by external reporting.  
-* 📰 The Washington Post reported Defense Secretary Hegseth issued a spoken directive to “kill everybody” on a boat, leading an admiral to order a second strike on two survivors, according to What to Know About Admiral Named by Hegseth in Boat Strike Controversy, TIME.  
+* 📰 The Washington Post reported Defense Secretary Hegseth issued a spoken directive to kill everybody on a boat, leading an admiral to order a second strike on two survivors, according to What to Know About Admiral Named by Hegseth in Boat Strike Controversy, TIME.  
 * ❌ Hegseth and the White House press secretary, Karoline Leavitt, confirmed a second strike occurred but asserted Admiral Frank M. Bradley, not the Secretary, gave the final command, with Hegseth later defending Bradley’s decision, according to Trump and Hegseth provide new details on controversial strikes on alleged drug boat, CBS News.  
 * 🚨 International law experts suggest that the intentional killing of shipwrecked survivors, if the reports are accurate, could constitute a war crime, according to What to Know About Admiral Named by Hegseth in Boat Strike Controversy, TIME.  
-* 🇺🇸 President Trump publicly called for the lawmakers to be arrested and shared social media posts suggesting “seditious behavior, punishable by death,” according to Accusations of sedition spark uproar after video on refusing illegal orders, CBS News.  
+* 🇺🇸 President Trump publicly called for the lawmakers to be arrested and shared social media posts suggesting seditious behavior, punishable by death, according to Accusations of sedition spark uproar after video on refusing illegal orders, CBS News.  
 * 🛑 Legal experts note it would be difficult to prosecute the lawmakers for sedition since they did not use force, according to Accusations of sedition spark uproar after video on refusing illegal orders, CBS News.  
   
 * 🔎 Topics to explore for a better understanding include:  
     * ⛓️ The specific chain of command and legal justification cited by the Department of Defense for the controversial second strike order.  
     * 🏛️ The long-term effects of using military tools, like court-martial threats against retired officers who are now political opponents, on constitutional civil-military relations.  
-    * 📜 The interpretation of “illegal orders” under the Uniform Code of Military Justice (UCMJ) in the context of domestic military operations and civilian oversight.  
+    * 📜 The interpretation of illegal orders under the Uniform Code of Military Justice (UCMJ) in the context of domestic military operations and civilian oversight.  
   
 ## ❓ Frequently Asked Questions (FAQ)  
   
@@ -45,7 +45,7 @@ youtube: https://youtu.be/NcvDcWSXsmI
 ✅ A: The video, which sparked the controversy, urged military service members and intelligence community members to uphold the Constitution and refuse illegal orders, confirming the legal principle that no one must carry out orders that violate the law \[[02:03](http://www.youtube.com/watch?v=NcvDcWSXsmI&t=123)].  
   
 ### ❓ Q: Why is Secretary of Defense Pete Hegseth facing legal scrutiny?  
-✅ A: Secretary Hegseth is under scrutiny due to reports that he ordered a military strike to “kill everybody” on a suspected drug boat, which allegedly resulted in a follow-up strike on shipwrecked survivors in the Caribbean \[[05:46](http://www.youtube.com/watch?v=NcvDcWSXsmI&t=346)]. ⚖️ Critics question his professional qualifications and commitment to due process \[[05:35](http://www.youtube.com/watch?v=NcvDcWSXsmI&t=335)].  
+✅ A: Secretary Hegseth is under scrutiny due to reports that he ordered a military strike to kill everybody on a suspected drug boat, which allegedly resulted in a follow-up strike on shipwrecked survivors in the Caribbean \[[05:46](http://www.youtube.com/watch?v=NcvDcWSXsmI&t=346)]. ⚖️ Critics question his professional qualifications and commitment to due process \[[05:35](http://www.youtube.com/watch?v=NcvDcWSXsmI&t=335)].  
   
 ### ❓ Q: What was the political impact of President Trump’s response to the video?  
 ✅ A: President Trump responded by calling for the lawmakers to be arrested, tried, and executed, which the senator and his colleagues condemned as dangerous political intimidation and an 🚫 abuse of executive power \[[02:54](http://www.youtube.com/watch?v=NcvDcWSXsmI&t=174)]. 📈 The senator argues this intimidation silences congressional dissent on issues like tariffs and healthcare \[[08:18](http://www.youtube.com/watch?v=NcvDcWSXsmI&t=498)].  

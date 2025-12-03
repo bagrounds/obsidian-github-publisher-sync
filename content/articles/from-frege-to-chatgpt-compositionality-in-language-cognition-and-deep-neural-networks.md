@@ -52,5 +52,5 @@ tags:
 * ♟️ The Algebraic Mind Integrating Connectionism and Cognitive Science by Gary F Marcus: Argues that connectionist models require innate, symbolic structure to achieve systematic generalization, upholding the necessity of a classical-style approach against pure neural networks.  
   
 ### 🎨 Creatively Related  
-* 🧠 The Computational Brain by Patricia S Churchland: Explores the philosophy of mind and computational neuroscience, providing a biologically grounded framework for understanding how the brain supports complex cognitive functions like language.  
+* [🧠💻 The Computational Brain](../books/the-computational-brain.md) by Patricia S Churchland: Explores the philosophy of mind and computational neuroscience, providing a biologically grounded framework for understanding how the brain supports complex cognitive functions like language.  
 * ✍️ Rethinking Writing Instruction in the Age of AI A Universal Design for Learning Approach by Randy Laist (CAST Professional Publishing): Discusses the practical impact of LLMs on critical thinking and language education, relating the theoretical capabilities of AI to real-world applications in human communication.

@@ -7,7 +7,7 @@ URL: https://bagrounds.org/books
 backlinks: false
 ---
 [Home](../index.md)  
-# 📚 Books (801)  
+# 📚 Books (802)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)  
 - [🧑‍🤝‍🧑📈 10 to 25: The Science of Motivating Young People: A Groundbreaking Approach to Leading the Next Generation - And Making Your Own Life Easier](./10-to-25-the-science-of-motivating-young-people-a-groundbreaking-approach-to-leading-the-next-generation-and-making-your-own-life-easier.md)  
@@ -579,6 +579,7 @@ backlinks: false
 - [📖⏱️🍎 The Complete Guide to Fasting: Heal Your Body Through Intermittent, Alternate-Day, and Extended Fasting](./the-complete-guide-to-fasting-heal-your-body-through-intermittent-alternate-day-and-extended-fasting.md)  
 - [🏃🏆👵 The Complete Guide to Running: How to Be a Champion from 9 to 90](./the-complete-guide-to-running.md)  
 - [📈➕ The Compound Effect](./the-compound-effect.md)  
+- [🧠💻 The Computational Brain](./the-computational-brain.md)  
 - [✨🎭🧘‍♂️🌌 The Creative Act: A Way of Being](./the-creative-act.md)  
 - [💡🌱♾️ The Creative Habit: Learn It and Use It for Life](./the-creative-habit.md)  
 - [🧘🏼‍♀️📅 The Daily Stoic: 366 Meditations on Wisdom, Perseverance, and the Art of Living](./the-daily-stoic-366-meditations-on-wisdom-perseverance-and-the-art-of-living.md)  

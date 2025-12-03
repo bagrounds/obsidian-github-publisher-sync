@@ -62,4 +62,7 @@ youtube: https://youtu.be/NcvDcWSXsmI
   
 ### 🎨 Creatively Related  
 * 🚀 Actors, Athletes, and Astronauts: Political Amateurs in the United States Congress by David T. Canon. 📊 Analyzes the careers and effectiveness of politicians who transition from non-traditional fields, such as astronaut Mark Kelly, into Congress.  
-* 🌌 Space Warfare: Strategy, Principles and Policy by John J. Klein. 🛡️ Given the discussion of the Secretary of Defense's role in the National Command Authority \[[25:08](http://www.youtube.com/watch?v=NcvDcWSXsmI&t=1508)], this book provides tangential context on high-stakes military strategy and command.
+* 🌌 Space Warfare: Strategy, Principles and Policy by John J. Klein. 🛡️ Given the discussion of the Secretary of Defense's role in the National Command Authority \[[25:08](http://www.youtube.com/watch?v=NcvDcWSXsmI&t=1508)], this book provides tangential context on high-stakes military strategy and command.  
+  
+## 🐦 Tweet  
+<blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">😠🗣️👎 WATCH: Sen. Kelly holds a news conference on Trump and Hegseth&#39;s efforts to intimidate him<br><br>🧑‍⚖️ Legal Scrutiny | 🛥️ Boat Strike | ⛓️ Chain of Command | 📜 Military Justice | 🚫 Abuse of Power | 💀 Death Threats | 💥 Political Violence<a href="https://twitter.com/NewsHour?ref_src=twsrc%5Etfw">@NewsHour</a><a href="https://t.co/dKv6DwJZz7">https://t.co/dKv6DwJZz7</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/1996125592740340041?ref_src=twsrc%5Etfw">December 3, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

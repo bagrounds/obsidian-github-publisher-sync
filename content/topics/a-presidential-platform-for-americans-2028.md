@@ -86,8 +86,9 @@ URL: https://bagrounds.org/topics/a-presidential-platform-for-americans-2028
     - 🏛️ enabling tax policies that incentivize patriotism  
     - 🔎 allowing for the study, identification, and regulation of extremely unpatriotic practices  
 - ✅ Examples  
-    - 💰 Measure the Geni coefficient across every employee of a business to see how well thry distribute wealth internally  
+    - 💰 Measure the Geni coefficient across every employee of a business to see how well they distribute wealth internally  
     - 📈 Measure the change of wealth distribution over time of a business' owners, customers, and surrounding communities to yield insights into exploitative pricing, lasting product and service value, and community impact  
+    - 🗳️ Measure elected representatives by their donors and impact of policy positions to unveil deceptive politicians working for private interests.  
   
 ### 🍎 Food Security  
 - 💸 Money doesn't grow on trees, but food does.  

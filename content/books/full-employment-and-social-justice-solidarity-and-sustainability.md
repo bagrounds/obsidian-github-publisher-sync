@@ -79,7 +79,7 @@ CTA: 🤝 Build a fair future.
 ### Contrasting  
 * 💰 Capitalism and Freedom by Milton Friedman (Advocates for free markets and limited government intervention, offering a contrasting view on economic policy and employment).  
 * 👤 Hayek on Liberty by F. A. Hayek (A collection of works emphasizing individual liberty, spontaneous order, and critiques of central planning and intervention).  
-* 🤯 Bullshit Jobs: A Theory by David Graeber (Examines the proliferation of meaningless jobs, offering a different lens on the nature and quality of employment in modern economies).  
+* [💩💼 Bullshit Jobs: A Theory](./bullshit-jobs-a-theory.md) by David Graeber (Examines the proliferation of meaningless jobs, offering a different lens on the nature and quality of employment in modern economies).  
   
 ### Related  
 * [🏛️💰 Debt: The First 5,000 Years](./debt-the-first-5000-years.md) by David Graeber (Explores the historical and anthropological context of debt and economic systems).  

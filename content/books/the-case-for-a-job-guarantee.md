@@ -17,7 +17,7 @@ tags:
   
 ## 📝🐒 Human Notes  
 - [🏦♾️📈💸 Modern Monetary Theory](../topics/modern-monetary-theory.md)  
-- [🧑‍💼🛡️ Job Guarantee / Employer of Last Resort](../topics/job-guarantee-employer-of-last-resort.md)  
+- [🧑‍💼🛡️ Job Guarantee, Employer of Last Resort](../topics/job-guarantee-employer-of-last-resort.md)  
   
 ## 🏆 Pavlina Tcherneva's Job Guarantee Strategy  
   

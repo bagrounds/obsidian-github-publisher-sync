@@ -7,7 +7,7 @@ URL: https://bagrounds.org/videos
 backlinks: false
 ---
 [Home](../index.md)  
-# 📺 Videos (461)  
+# 📺 Videos (463)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
 - [❓💪🔬 12 Questions About Creatine with Stephen Cornish, PhD](./12-questions-about-creatine-w-stephen-cornish-phd.md)  
@@ -53,6 +53,7 @@ backlinks: false
 - [🌪️➡️🕹️ An Attempt to Turn Chaos Into Control | Explainer](./an-attempt-to-turn-chaos-into-control-explainer.md)  
 - [💻🔄💻 Andrej Karpathy: Software Is Changing (Again)](./andrej-karpathy-software-is-changing-again.md)  
 - [🤖🚀📈 Andrew Ng: Building Faster with AI](./andrew-ng-building-faster-with-ai.md)  
+- [🆕🧱🗣️ A New Theory of Compositionality](./a-new-theory-of-compositionality.md)  
 - [🤔🗣️🏛️🇺🇸 A New Way to Think About Religion and Politics with James Talarico | American Conversations](./a-new-way-to-think-about-religion-and-politics-with-james-talarico-american-conversations.md)  
 - [😟🔮 Anne Applebaum: «It Is What I Feared Would Happen»](./anne-applebaum-it-is-what-i-feared-would-happen.md)  
 - [🗣️⭐💼 Answering Behavioral Interview Questions Using the STAR Method](./answering-behavioral-interview-questions-using-the-star-method.md)  
@@ -410,6 +411,7 @@ backlinks: false
 - [🏞️⚕️🛡️🤝 WA OIC can help you with your insurance!](./wa-oic-can-help-you-with-your-insurance.md)  
 - [💰🏦📈 Warren Mosler | Modern Monetary Theory (MMT), Banking, and Taxing the Rich](./warren-mosler-modern-monetary-theory-mmt-banking-and-taxing-the-rich.md)  
 - [📺🪖🇺🇸 WATCH: Hegseth's full remarks on new military directives ending 'politically correct' leadership](./watch-hegseths-full-remarks-on-new-military-directives-ending-politically-correct-leadership.md)  
+- [😠🗣️👎 WATCH: Sen. Kelly holds a news conference on Trump and Hegseth's 'efforts to intimidate him'](./watch-sen-kelly-holds-a-news-conference-on-trump-and-hegseths-efforts-to-intimidate-him.md)  
 - [🗣️⏱️🏛️🛑 WATCH: Sen. Merkley concludes marathon 22-hour speech protesting Trump amid shutdown](./watch-sen-merkley-concludes-marathon-22-hour-speech-protesting-trump-amid-shutdown.md)  
 - [WATCH: 'Whose throat do I get to choke’ if tariff approach fails, Tillis asks trade rep](./watch-whose-throat-do-i-get-to-choke-if-tariff-approach-fails-tillis-asks-trade-rep.md)  
 - [⏳🗳️🙅 We Cannot Wait for the Ballot Box in November 2026 | Explainer](./we-cannot-wait-for-the-ballot-box-in-november-2026-explainer.md)  

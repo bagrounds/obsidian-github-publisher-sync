@@ -101,7 +101,7 @@ URL: https://bagrounds.org/topics/a-presidential-platform-for-americans-2028
   
 ## [🌌 Topics](./index.md)  
 - [🏦♾️📈💸 Modern Monetary Theory](./modern-monetary-theory.md)  
-- [🧑‍💼🛡️ Job Guarantee / Employer of Last Resort](./job-guarantee-employer-of-last-resort.md)  
+- [🧑‍💼🛡️ Job Guarantee, Employer of Last Resort](./job-guarantee-employer-of-last-resort.md)  
   
 ## [📚 Books](../books/index.md)  
 - [💰📉➡️📈🗳️ The Deficit Myth: Modern Monetary Theory and the Birth of the People's Economy](../books/the-deficit-myth.md)  

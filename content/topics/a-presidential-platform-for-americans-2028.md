@@ -13,7 +13,7 @@ URL: https://bagrounds.org/topics/a-presidential-platform-for-americans-2028
     - 🇺🇸 Americans want change  
     - 🏛️ Presidents wield immense power  
 - 💥 As his abuses of power flood the country with violence and corruption, the rising American will for positive change presents a unique opportunity to elect a leader to wield this immense power for good.  
-- 🙏 We need a wise, benevolent leader willing to fight for the people with every available tool.  
+- 🙏 We need a wise, benevolent leader to work for the people with every available tool.  
   
 ## ⚖️ Principles  
 - 💰 Focus on real wealth. Money fails in the absence of real resources.  

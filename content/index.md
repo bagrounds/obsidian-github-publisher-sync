@@ -13,7 +13,7 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 💬 Comment on any page with your GitHub account.  
   
 ## [🪞 Reflections](./reflections/index.md) ~ Blog (383)  
-- [2025-12-02 | 🎼 Compositionality 📺📄📚](./reflections/2025-12-02.md)  
+- [2025-12-02 | 🎼 Compositionality | 👹🪢🇺🇸🏛️ President Intimidates Senators 📺📰📄📚](./reflections/2025-12-02.md)  
 - [2025-12-01 | 💼 Jobs | 📏 Rules | 🐵 Humanity 📚📺](./reflections/2025-12-01.md)  
 - [2025-11-30 | 🧾 Debt 📚](./reflections/2025-11-30.md)  
 - [2025-11-29 | 🏛️ Paralysis | 👶🏼 Science | ⏳ Buy Time | 🔫 Conflict 📚📰📺🛍️](./reflections/2025-11-29.md)  
@@ -25,7 +25,8 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [2025-11-23 | 👨‍🏫 Warren Mosler & 💲🔬 Modern Monetary Theory 👥📺](./reflections/2025-11-23.md)  
   
   
-## [📚 Books](./books/index.md) (801)  
+## [📚 Books](./books/index.md) (802)  
+- [🧠💻 The Computational Brain](./books/the-computational-brain.md)  
 - [🏛️💰 Debt: The First 5,000 Years](./books/debt-the-first-5000-years.md)  
 - [🏢🤖 Compositional Intelligence: Architectural Typology Through Generative AI](./books/compositional-intelligence-architectural-typology-through-generative-ai.md)  
 - [🏛️⚙️ Bureaucracy: What Government Agencies Do And Why They Do It](./books/bureaucracy-what-government-agencies-do-and-why-they-do-it.md)  
@@ -35,10 +36,10 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [💪😊🎯 From Strength to Strength: Finding Success, Happiness, and Deep Purpose in the Second Half of Life](./books/from-strength-to-strength-finding-success-happiness-and-deep-purpose-in-the-second-half-of-life.md)  
 - [🌴🧘🏼‍♀️ Do Nothing: How to Break Away from Overworking, Overdoing, and Underliving](./books/do-nothing-how-to-break-away-from-overworking-overdoing-and-underliving.md)  
 - [🧑‍🤝‍🧑✅🌍 Full Employment and Social Justice: Solidarity and Sustainability](./books/full-employment-and-social-justice-solidarity-and-sustainability.md)  
-- [💩💼 Bullshit Jobs: A Theory](./books/bullshit-jobs-a-theory.md)  
   
   
-## [📺 Videos](./videos/index.md) (462)  
+## [📺 Videos](./videos/index.md) (463)  
+- [😠🗣️👎 WATCH: Sen. Kelly holds a news conference on Trump and Hegseth's 'efforts to intimidate him'](./videos/watch-sen-kelly-holds-a-news-conference-on-trump-and-hegseths-efforts-to-intimidate-him.md)  
 - [🆕🧱🗣️ A New Theory of Compositionality](./videos/a-new-theory-of-compositionality.md)  
 - [💰🤔⚖️ The Most Important Economic Debate of our Lifetime — ft. Justin Wolfers | Prof G Markets](./videos/the-most-important-economic-debate-of-our-lifetime-ft-justin-wolfers-prof-g-markets.md)  
 - [👎💲 Against Economics by David Graeber](./videos/against-economics-by-david-graeber.md)  
@@ -48,7 +49,6 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [👨‍⚖️🗣️😠🔫 Capehart and Wehner on Trump's reaction to the National Guard shooting](./videos/capehart-and-wehner-on-trumps-reaction-to-the-national-guard-shooting.md)  
 - [🏦➕➡️🧑‍🎓🎓 L. Randall Wray - Modern Money Theory for Beginners](./videos/l-randall-wray-modern-money-theory-for-beginners.md)  
 - [💰🤫 Modern Monetary Theory: What They Don’t Tell You (Ft. L. Randall Wray)](./videos/modern-monetary-theory-what-they-dont-tell-you-ft-l-randall-wray.md)  
-- [👶⏰😴 How to Use the Ferber Method for Sleep Training | The Parents Guide | Parents](./videos/how-to-use-the-ferber-method-for-sleep-training-the-parents-guide-parents.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (83)  

@@ -1,12 +1,12 @@
 ---
 share: true
 aliases:
-  - 🧑‍💼🛡️ Job Guarantee / Employer of Last Resort
-title: 🧑‍💼🛡️ Job Guarantee / Employer of Last Resort
+  - 🧑‍💼🛡️ Job Guarantee, Employer of Last Resort
+title: 🧑‍💼🛡️ Job Guarantee, Employer of Last Resort
 URL: https://bagrounds.org/topics/job-guarantee-employer-of-last-resort
 ---
 [Home](../index.md) > [Topics](./index.md) > [Knowledge](./a-hierarchical-view-of-human-knowledge.md) > [Social Sciences](./social-sciences.md) > [Economics](./economics.md) > [Heterodox Economics](./heterodox-economics.md) > [🏦♾️📈💸 Modern Monetary Theory](./modern-monetary-theory.md)  
-# 🧑‍💼🛡️ Job Guarantee / Employer of Last Resort  
+# 🧑‍💼🛡️ Job Guarantee, Employer of Last Resort  
 ## 🤖 AI Summary  
 **High-Level Summary:**  
 The Job Guarantee (JG), also known as Employer of Last Resort (ELR), is an economic policy proposal that aims to eliminate involuntary unemployment by providing a government-funded job to anyone willing and able to work. 🤝 The core principle is that the government acts as the "employer of last resort," guaranteeing employment at a living wage, thus establishing a floor for wages and stabilizing the economy. The goal is to ensure full employment, reduce poverty, and create valuable public goods and services. 🌟 It's significant because it offers a direct solution to unemployment, with potential ripple effects on social welfare, economic equality, and overall economic stability. 📈  

@@ -7,7 +7,7 @@ URL: https://bagrounds.org/books
 backlinks: false
 ---
 [Home](../index.md)  
-# 📚 Books (803)  
+# 📚 Books (805)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)  
 - [🧑‍🤝‍🧑📈 10 to 25: The Science of Motivating Young People: A Groundbreaking Approach to Leading the Next Generation - And Making Your Own Life Easier](./10-to-25-the-science-of-motivating-young-people-a-groundbreaking-approach-to-leading-the-next-generation-and-making-your-own-life-easier.md)  
@@ -662,6 +662,7 @@ backlinks: false
 - [🇿🇦 The New Apartheid](./the-new-apartheid.md)  
 - [📈🏛️🏫 The New Economics: For Industry, Government, Education](./the-new-economics.md)  
 - [🧑🏿⛓️🙈 The New Jim Crow: Mass Incarceration in the Age of Colorblindness](./the-new-jim-crow-mass-incarceration-in-the-age-of-colorblindness.md)  
+- [⚡🌍⚔️ The New Map: Energy, Climate, and the Clash of Nations](./the-new-map-energy-climate-and-the-clash-of-nations.md)  
 - [☀️📖🌿 The New Sunset Western Garden Book: The Ultimate Gardening Guide](./the-new-sunset-western-garden-book-the-ultimate-gardening-guide.md)  
 - [📚🧠 The New York Times Guide to Essential Knowledge: A Desk Reference for the Curious Mind](./the-new-york-times-guide-to-essential-knowledge-a-desk-reference-for-the-curious-mind.md)  
 - [☀️👿 The Noonday Demon: An Atlas of Depression](./the-noonday-demon-an-atlas-of-depression.md)  
@@ -744,6 +745,7 @@ backlinks: false
 - [🚫💰❤️ The Wealth Money Can't Buy: The 8 Hidden Habits to Live Your Richest Life](./the-wealth-money-cant-buy-the-8-hidden-habits-to-live-your-richest-life.md)  
 - [🕳️🧠👶🏽 The Whole-Brain Child: 12 Revolutionary Strategies to Nurture Your Child's Developing Mind](./the-whole-brain-child.md)  
 - [🧘🏋️ The Willpower Instinct: How Self-Control Works, Why It Matters, and What You Can Do to Get More of It](./the-willpower-instinct.md)  
+- [🇨🇳🌍 The World According to China](./the-world-according-to-china.md)  
 - [👍🧠 The Yes Brain: How to Cultivate Courage, Curiosity, and Resilience in Your Child](./the-yes-brain.md)  
 - [🤔🐇🐢 Thinking, Fast and Slow](./thinking-fast-and-slow.md)  
 - [🎲🤔 Thinking in Bets: Making Smarter Decisions When You Don't Have All the Facts](./thinking-in-bets-making-smarter-decisions-when-you-dont-have-all-the-facts.md)  

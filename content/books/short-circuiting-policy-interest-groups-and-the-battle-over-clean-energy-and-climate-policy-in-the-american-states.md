@@ -69,7 +69,7 @@ affiliate link: https://amzn.to/449rDxv
 ## 📚 Book Recommendations  
   
 ### 🤝 Similar  
-* 🔥 The New Climate War by Michael E. Mann: Explores tactics used by fossil fuel interests to delay climate action.  
+* [🔥🌎⚔️ The New Climate War: The Fight to Take Back Our Planet](./the-new-climate-war-the-fight-to-take-back-our-planet.md) by Michael E. Mann: Explores tactics used by fossil fuel interests to delay climate action.  
 * [💰🤥 Merchants of Doubt](./merchants-of-doubt.md) by Naomi Oreskes and Erik M. Conway: Details how a small group of scientists obscured public knowledge on various scientific issues, including climate change.  
   
 ### ↔️ Contrasting  

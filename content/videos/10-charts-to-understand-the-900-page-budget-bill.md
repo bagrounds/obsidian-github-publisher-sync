@@ -3,7 +3,7 @@ share: true
 aliases:
   - 📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill
 title: 📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill
-URL: https://bagrounds.org/videos/
+URL: https://bagrounds.org/videos/10-charts-to-understand-the-900-page-budget-bill
 Author:
 Platform:
 Channel: Hank Green
@@ -25,17 +25,17 @@ youtube: https://youtu.be/UtBa6BM-2OE
   
 ## 📚 Book Recommendations  
 * 💰 **For understanding the national debt and budget deficits:**  
-    * 📖 "The National Debt: A Primer" by William G. Gale  
+    * 📖 The National Debt: A Primer by William G. Gale  
     * [🏛️💰 Debt: The First 5,000 Years](../books/debt-the-first-5000-years.md) by David Graeber  
 * 💸 **For insights into tax policy and its economic impact:**  
-    * 📖 "Taxing the Rich: A History of Fiscal Fairness in the United States" by Kenneth Scheve and David Stasavage  
+    * 📖 Taxing the Rich: A History of Fiscal Fairness in the United States by Kenneth Scheve and David Stasavage  
     * [💰➡️ The Triumph of Injustice: How the Rich Dodge Taxes and How to Make Them Pay](../books/the-triumph-of-injustice-how-the-rich-dodge-taxes-and-how-to-make-them-pay.md) by Emmanuel Saez and Gabriel Zucman  
 * 🩺 **For information on healthcare policy and Medicaid:**  
     * [⚕️💰🇺🇸 The Healing of America: A Global Quest for Better, Cheaper, and Fairer Health Care](../books/the-healing-of-america-a-global-quest-for-better-cheaper-and-fairer-health-care.md) by T.R. Reid  
     * [💰⚕️⬆️ An American Sickness: How Healthcare Became Big Business and How You Can Take It Back](../books/an-american-sickness-how-healthcare-became-big-business-and-how-you-can-take-it-back.md) by Elisabeth Rosenthal  
 * 🧑‍🎓 **For discussions on student loan debt and its economic effects:**  
-    * 📖 "The Debt Trap: How Student Loans Became a National Catastrophe" by Josh Mitchell  
-    * 📖 "Lower Ed: The Troubling Rise of For-Profit Colleges in the New Economy" by Tressie McMillan Cottom  
+    * 📖 The Debt Trap: How Student Loans Became a National Catastrophe by Josh Mitchell  
+    * 📖 Lower Ed: The Troubling Rise of For-Profit Colleges in the New Economy by Tressie McMillan Cottom  
 * 🌎 **For understanding clean energy policy and climate change economics:**  
-    * 📖 "The New Climate War: The Fight to Save the Planet from the Global Warming Deniers, False Solutions, and Extinction" by Michael E. Mann  
-    * 📖 "Shorting the Grid: The Hidden Fragility of Our Electric Grid" by Meredith Angwin
+    * [🔥🌎⚔️ The New Climate War: The Fight to Take Back Our Planet](../books/the-new-climate-war-the-fight-to-take-back-our-planet.md) by Michael E. Mann  
+    * 📖 Shorting the Grid: The Hidden Fragility of Our Electric Grid by Meredith Angwin

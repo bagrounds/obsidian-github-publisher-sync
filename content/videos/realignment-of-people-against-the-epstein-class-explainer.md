@@ -1,9 +1,9 @@
 ---
 share: true
 aliases:
-  - 🧩🔍🌐 There’s a Larger Story Here | Explainer
-title: 🧩🔍🌐 There’s a Larger Story Here | Explainer
-URL: https://bagrounds.org/videos/theres-a-larger-story-here-explainer
+  - 👥➡️⚖️ Realignment of People Against the ‘Epstein Class’ | Explainer
+title: 👥➡️⚖️ Realignment of People Against the ‘Epstein Class’ | Explainer
+URL: https://bagrounds.org/videos/realignment-of-people-against-the-epstein-class-explainer
 Author:
 Platform:
 Channel: Heather Cox Richardson
@@ -11,7 +11,7 @@ tags:
 youtube: https://youtu.be/56BIZkdwp1A
 ---
 [Home](../index.md) > [Videos](./index.md) | [🏛️🇺🇸📖 Heather Cox Richardson](../people/heather-cox-richardson.md)  
-# 🧩🔍🌐 There’s a Larger Story Here | Explainer  
+# 👥➡️⚖️ Realignment of People Against the ‘Epstein Class’ | Explainer  
 ![There’s a Larger Story Here | Explainer](https://youtu.be/56BIZkdwp1A)  
   
 ## 🤖 AI Summary  

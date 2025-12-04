@@ -7,7 +7,7 @@ URL: https://bagrounds.org/books
 backlinks: false
 ---
 [Home](../index.md)  
-# 📚 Books (805)  
+# 📚 Books (806)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)  
 - [🧑‍🤝‍🧑📈 10 to 25: The Science of Motivating Young People: A Groundbreaking Approach to Leading the Next Generation - And Making Your Own Life Easier](./10-to-25-the-science-of-motivating-young-people-a-groundbreaking-approach-to-leading-the-next-generation-and-making-your-own-life-easier.md)  
@@ -487,6 +487,7 @@ backlinks: false
 - [📖🏛️📉 Seeing Like a State: How Certain Schemes to Improve the Human Condition Have Failed](./seeing-like-a-state-how-certain-schemes-to-improve-the-human-condition-have-failed.md)  
 - [👁️🔇 Seeing Voices: A Journey into the World of the Deaf](./seeing-voices-a-journey-into-the-world-of-the-deaf.md)  
 - [🇺🇸📻 Shadow of the New Deal: The Victory of Public Broadcasting](./shadow-of-the-new-deal-the-victory-of-public-broadcasting.md)  
+- [⚡🏛️ Short Circuiting Policy: Interest Groups and the Battle Over Clean Energy and Climate Policy in the American States](./short-circuiting-policy-interest-groups-and-the-battle-over-clean-energy-and-climate-policy-in-the-american-states.md)  
 - [📝🎨🎶 Show Your Work!: 10 Ways to Share Your Creativity and Get Discovered](./show-your-work.md)  
 - [🛡️🌪️🇷🇺🔥 Siege: Trump Under Fire](./siege-trump-under-fire.md)  
 - [💻⚙️🛡️📈 Site Reliability Engineering: How Google Runs Production Systems](./site-reliability-engineering.md)  

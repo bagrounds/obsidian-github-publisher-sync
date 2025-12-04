@@ -7,7 +7,8 @@ URL: https://bagrounds.org/reflections
 backlinks: false
 ---
 [Home](../index.md)  
-# 🪞 Reflections (383)  
+# 🪞 Reflections (384)  
+- [2025-12-03 | 🥇📚 Best Books | 🏚️👥 Homeless | 🚀🚣‍♂️ War Crimes 📺📚🌌](./2025-12-03.md)  
 - [2025-12-02 | 🎼 Compositionality | 👹🪢🇺🇸🏛️ President Intimidates Senators 📺📰📄📚](./2025-12-02.md)  
 - [2025-12-01 | 💼 Jobs | 📏 Rules | 🐵 Humanity 📚📺](./2025-12-01.md)  
 - [2025-11-30 | 🧾 Debt 📚](./2025-11-30.md)  

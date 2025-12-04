@@ -114,7 +114,7 @@ A: The authors argue that politically motivated opposition to science hampers hu
     * 🖐️ **Less** focused on the external forces (the "Five Ps") and more on individual cognitive biases and social dynamics.  
   
 #### 🎨 Creatively Related Books  
-* 🔥 The New Climate War: The Fight to Take Back Our Planet by Michael E. Mann  
+* [🔥🌎⚔️ The New Climate War: The Fight to Take Back Our Planet](./the-new-climate-war-the-fight-to-take-back-our-planet.md) by Michael E. Mann  
     * ✍️ **Authored** by one of Science Under Siege's co-authors, this book specifically details the tactics used to delay climate action.  
     * 🌡️ **Offers** a deep dive into strategies against climate science denial, a core example in Science Under Siege.  
 * 💩 Calling Bullshit: The Art of Skepticism in a Data-Driven World by Carl T. Bergstrom and Jevin D. West  

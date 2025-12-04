@@ -13,7 +13,7 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 💬 Comment on any page with your GitHub account.  
   
 ## [🪞 Reflections](./reflections/index.md) ~ Blog (384)  
-- [2025-12-03 | 🥇📚 Best Books | 🏚️👥 Homeless | 🚀🚣‍♂️ War Crimes 📺📚🌌](./reflections/2025-12-03.md)  
+- [2025-12-03 | 🥇📚 Best Books | 🏚️👥 Homeless | 🚀🚣‍♂️ War Crimes | 🇨🇳 China 📺📚🌌](./reflections/2025-12-03.md)  
 - [2025-12-02 | 🎼 Compositionality | 👹🪢🇺🇸🏛️ President Intimidates Senators 📺📰📄📚](./reflections/2025-12-02.md)  
 - [2025-12-01 | 💼 Jobs | 📏 Rules | 🐵 Humanity 📚📺](./reflections/2025-12-01.md)  
 - [2025-11-30 | 🧾 Debt 📚](./reflections/2025-11-30.md)  
@@ -25,7 +25,9 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [2025-11-24 | 😇🤥 Innocent Fraud 📺📚](./reflections/2025-11-24.md)  
   
   
-## [📚 Books](./books/index.md) (803)  
+## [📚 Books](./books/index.md) (805)  
+- [🇨🇳🌍 The World According to China](./books/the-world-according-to-china.md)  
+- [⚡🌍⚔️ The New Map: Energy, Climate, and the Clash of Nations](./books/the-new-map-energy-climate-and-the-clash-of-nations.md)  
 - [🌍💰📊 Macroeconomics](./books/macroeconomics.md)  
 - [💼✅ The Case for a Job Guarantee](./books/the-case-for-a-job-guarantee.md)  
 - [🏚️🚫 There Is No Place for Us: Working and Homeless in America](./books/there-is-no-place-for-us-working-and-homeless-in-america.md)  
@@ -34,21 +36,19 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [🏢🤖 Compositional Intelligence: Architectural Typology Through Generative AI](./books/compositional-intelligence-architectural-typology-through-generative-ai.md)  
 - [🏛️⚙️ Bureaucracy: What Government Agencies Do And Why They Do It](./books/bureaucracy-what-government-agencies-do-and-why-they-do-it.md)  
 - [⚙️🏢 Hack Your Bureaucracy: Get Things Done No Matter What Your Role on Any Team](./books/hack-your-bureaucracy-get-things-done-no-matter-what-your-role-on-any-team.md)  
-- [🏚️⚠️ The Precariat: The New Dangerous Class](./books/the-precariat-the-new-dangerous-class.md)  
-- [🤖📝😇 The Utopia of Rules: On Technology, Stupidity, and the Secret Joys of Bureaucracy](./books/the-utopia-of-rules-on-technology-stupidity-and-the-secret-joys-of-bureaucracy.md)  
   
   
-## [📺 Videos](./videos/index.md) (465)  
-- [🧩🔍🌐 There’s a Larger Story Here | Explainer](./videos/theres-a-larger-story-here-explainer.md)  
+## [📺 Videos](./videos/index.md) (468)  
+- [🇨🇳🔮❓ Does the Future Belong to China? | Interesting Times with Ross Douthat](./videos/does-the-future-belong-to-china-interesting-times-with-ross-douthat.md)  
+- [🌍⚡️🚫🇺🇸 The Future of Energy Has Arrived - Just Not in the U.S.](./videos/the-future-of-energy-has-arrived-just-not-in-the-us.md)  
+- [🏛️📉🇺🇸 The Democracy Crisis Underneath America’s Affordability Crisis | Zohran Mamdani](./videos/the-democracy-crisis-underneath-americas-affordability-crisis-zohran-mamdani.md)  
+- [👥➡️⚖️ Realignment of People Against the ‘Epstein Class’ | Explainer](./videos/realignment-of-people-against-the-epstein-class-explainer.md)  
 - [💯🥇📚🗓️✨ The 10 Best Books of 2025](./videos/the-10-best-books-of-2025.md)  
 - [😠🗣️👎 WATCH: Sen. Kelly holds a news conference on Trump and Hegseth's 'efforts to intimidate him'](./videos/watch-sen-kelly-holds-a-news-conference-on-trump-and-hegseths-efforts-to-intimidate-him.md)  
 - [🆕🧱🗣️ A New Theory of Compositionality](./videos/a-new-theory-of-compositionality.md)  
 - [💰🤔⚖️ The Most Important Economic Debate of our Lifetime — ft. Justin Wolfers | Prof G Markets](./videos/the-most-important-economic-debate-of-our-lifetime-ft-justin-wolfers-prof-g-markets.md)  
 - [👎💲 Against Economics by David Graeber](./videos/against-economics-by-david-graeber.md)  
 - [🤔🎬🏆 The Thinking Game | Full documentary | Tribeca Film Festival official selection](./videos/the-thinking-game-full-documentary-tribeca-film-festival-official-selection.md)  
-- [📊👀🌍 This graph will change how you see the world](./videos/this-graph-will-change-how-you-see-the-world.md)  
-- [🤫💰🪙 This Is What They Don't Tell You About Money And Gold | Prof. L. Randall Wray](./videos/this-is-what-they-dont-tell-you-about-money-and-gold-prof-l-randall-wray.md)  
-- [👨‍⚖️🗣️😠🔫 Capehart and Wehner on Trump's reaction to the National Guard shooting](./videos/capehart-and-wehner-on-trumps-reaction-to-the-national-guard-shooting.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (84)  

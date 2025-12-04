@@ -25,7 +25,8 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [2025-11-24 | 😇🤥 Innocent Fraud 📺📚](./reflections/2025-11-24.md)  
   
   
-## [📚 Books](./books/index.md) (805)  
+## [📚 Books](./books/index.md) (806)  
+- [⚡🏛️ Short Circuiting Policy: Interest Groups and the Battle Over Clean Energy and Climate Policy in the American States](./books/short-circuiting-policy-interest-groups-and-the-battle-over-clean-energy-and-climate-policy-in-the-american-states.md)  
 - [🇨🇳🌍 The World According to China](./books/the-world-according-to-china.md)  
 - [⚡🌍⚔️ The New Map: Energy, Climate, and the Clash of Nations](./books/the-new-map-energy-climate-and-the-clash-of-nations.md)  
 - [🌍💰📊 Macroeconomics](./books/macroeconomics.md)  
@@ -35,12 +36,12 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [🧠💻 The Computational Brain](./books/the-computational-brain.md)  
 - [🏢🤖 Compositional Intelligence: Architectural Typology Through Generative AI](./books/compositional-intelligence-architectural-typology-through-generative-ai.md)  
 - [🏛️⚙️ Bureaucracy: What Government Agencies Do And Why They Do It](./books/bureaucracy-what-government-agencies-do-and-why-they-do-it.md)  
-- [⚙️🏢 Hack Your Bureaucracy: Get Things Done No Matter What Your Role on Any Team](./books/hack-your-bureaucracy-get-things-done-no-matter-what-your-role-on-any-team.md)  
   
   
-## [📺 Videos](./videos/index.md) (468)  
-- [🇨🇳🔮❓ Does the Future Belong to China? | Interesting Times with Ross Douthat](./videos/does-the-future-belong-to-china-interesting-times-with-ross-douthat.md)  
+## [📺 Videos](./videos/index.md) (469)  
 - [🌍⚡️🚫🇺🇸 The Future of Energy Has Arrived - Just Not in the U.S.](./videos/the-future-of-energy-has-arrived-just-not-in-the-us.md)  
+- [✍️📜🗝️💡 Lessons In Deep Living From Legendary Writers | Cal Newport](./videos/lessons-in-deep-living-from-legendary-writers-cal-newport.md)  
+- [🇨🇳🔮❓ Does the Future Belong to China? | Interesting Times with Ross Douthat](./videos/does-the-future-belong-to-china-interesting-times-with-ross-douthat.md)  
 - [🏛️📉🇺🇸 The Democracy Crisis Underneath America’s Affordability Crisis | Zohran Mamdani](./videos/the-democracy-crisis-underneath-americas-affordability-crisis-zohran-mamdani.md)  
 - [👥➡️⚖️ Realignment of People Against the ‘Epstein Class’ | Explainer](./videos/realignment-of-people-against-the-epstein-class-explainer.md)  
 - [💯🥇📚🗓️✨ The 10 Best Books of 2025](./videos/the-10-best-books-of-2025.md)  
@@ -48,7 +49,6 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [🆕🧱🗣️ A New Theory of Compositionality](./videos/a-new-theory-of-compositionality.md)  
 - [💰🤔⚖️ The Most Important Economic Debate of our Lifetime — ft. Justin Wolfers | Prof G Markets](./videos/the-most-important-economic-debate-of-our-lifetime-ft-justin-wolfers-prof-g-markets.md)  
 - [👎💲 Against Economics by David Graeber](./videos/against-economics-by-david-graeber.md)  
-- [🤔🎬🏆 The Thinking Game | Full documentary | Tribeca Film Festival official selection](./videos/the-thinking-game-full-documentary-tribeca-film-festival-official-selection.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (84)  

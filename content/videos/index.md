@@ -7,7 +7,7 @@ URL: https://bagrounds.org/videos
 backlinks: false
 ---
 [Home](../index.md)  
-# 📺 Videos (468)  
+# 📺 Videos (469)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
 - [❓💪🔬 12 Questions About Creatine with Stephen Cornish, PhD](./12-questions-about-creatine-w-stephen-cornish-phd.md)  
@@ -208,6 +208,7 @@ backlinks: false
 - [🎓🎮🏆✨ Last Lecture Series: How to Design a Winnable Game – Graham Weaver](./last-lecture-series-how-to-design-a-winnable-game-graham-weaver.md)  
 - [🥇🧑‍🏫🏃💨 Learn Any Skill Faster By Copying How Olympic Athletes Train](./learn-any-skill-faster-by-copying-how-olympic-athletes-train.md)  
 - [👶🧠📈🎓 Learn how to boost your baby's brain from a Harvard Professor | UNICEF](./learn-how-to-boost-your-baby-s-brain-from-a-harvard-professor-unicef.md)  
+- [✍️📜🗝️💡 Lessons In Deep Living From Legendary Writers | Cal Newport](./lessons-in-deep-living-from-legendary-writers-cal-newport.md)  
 - [🧠🌱⬆️ Lisa Lawson explores the neuroscience of adolescence in 'Thrive'](./lisa-lawson-explores-the-neuroscience-of-adolescence-in-thrive.md)  
 - [📣👮🏿‍♂️🧑🏿‍🤝‍🧑🏿 LIVE: LAPD press conference after protests in Los Angeles over National Guard deployment](./live-lapd-press-conference-after-protests-in-los-angeles-over-national-guard-deployment.md)  
 - [🔒✈️🍔 Longest shutdown on record disrupts air travel and food assistance for Americans](./longest-shutdown-on-record-disrupts-air-travel-and-food-assistance-for-americans.md)  

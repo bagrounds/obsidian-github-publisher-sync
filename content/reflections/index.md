@@ -7,7 +7,10 @@ URL: https://bagrounds.org/reflections
 backlinks: false
 ---
 [Home](../index.md)  
-# 🪞 Reflections (384)  
+# 🪞 Reflections (387)  
+- [2025-12-06](./2025-12-06.md)  
+- [2025-12-05 | 💳 Credibility | 👑 Autocracy | 🥷 Kleptopia | 🧑‍🧑‍🧒 Parenting 📺📚](./2025-12-05.md)  
+- [2025-12-04 | ⛈️ Climate | 👹 Corruption | ⚠️ Crises | 🏥 Healthcare 📚📺](./2025-12-04.md)  
 - [2025-12-03 | 🥇📚 Best Books | 🏚️👥 Homeless | 🚀🚣‍♂️ War Crimes | 🇨🇳 China 📺📚🌌](./2025-12-03.md)  
 - [2025-12-02 | 🎼 Compositionality | 👹🪢🇺🇸🏛️ President Intimidates Senators 📺📰📄📚](./2025-12-02.md)  
 - [2025-12-01 | 💼 Jobs | 📏 Rules | 🐵 Humanity 📚📺](./2025-12-01.md)  

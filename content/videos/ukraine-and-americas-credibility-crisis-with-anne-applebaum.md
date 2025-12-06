@@ -46,7 +46,7 @@ youtube: https://youtu.be/aAn3B_XNSMs
 ## 📚 Book Recommendations  
   
 ### ↔️ Similar  
-* 📚 Autocracy, Inc The Dictators Who Want to Run the World: Explores how modern authoritarian regimes are connected by networks of kleptocratic finance and propaganda, actively working to undermine democracies worldwide.  
+* [👑🌎 Autocracy, Inc.: The Dictators Who Want to Run the World](../books/autocracy-inc-the-dictators-who-want-to-run-the-world.md): Explores how modern authoritarian regimes are connected by networks of kleptocratic finance and propaganda, actively working to undermine democracies worldwide.  
 * 💰 Kleptopia: How Dirty Money Is Conquering the World: Details through investigative journalism how globalized dirty money from states like Russia and Kazakhstan flows into and corrupts Western financial systems and political elites.  
 * 🗺️ Grand Corruption: Curbing Kleptocracy Globally: A multi-author volume that examines the nature, causes, and consequences of grand corruption, including its assessment, measurement, and legal strategies for attack.  
   

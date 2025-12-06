@@ -10,7 +10,7 @@ Channel: The Prof G Pod – Scott Galloway
 tags:
 youtube: https://youtu.be/aAn3B_XNSMs
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](../index.md) > [Videos](./index.md) | [👨‍🏫📈💻 Scott Galloway](../people/scott-galloway.md)  
 # 🇺🇦🤝🤥 Ukraine and America’s Credibility Crisis - with Anne Applebaum  
 ![Ukraine and America’s Credibility Crisis - with Anne Applebaum](https://youtu.be/aAn3B_XNSMs)  
   
@@ -47,7 +47,7 @@ youtube: https://youtu.be/aAn3B_XNSMs
   
 ### ↔️ Similar  
 * [👑🌎 Autocracy, Inc.: The Dictators Who Want to Run the World](../books/autocracy-inc-the-dictators-who-want-to-run-the-world.md): Explores how modern authoritarian regimes are connected by networks of kleptocratic finance and propaganda, actively working to undermine democracies worldwide.  
-* 💰 Kleptopia: How Dirty Money Is Conquering the World: Details through investigative journalism how globalized dirty money from states like Russia and Kazakhstan flows into and corrupts Western financial systems and political elites.  
+* [💸🌍 Kleptopia: How Dirty Money Is Conquering the World](../books/kleptopia-how-dirty-money-is-conquering-the-world.md): Details through investigative journalism how globalized dirty money from states like Russia and Kazakhstan flows into and corrupts Western financial systems and political elites.  
 * 🗺️ Grand Corruption: Curbing Kleptocracy Globally: A multi-author volume that examines the nature, causes, and consequences of grand corruption, including its assessment, measurement, and legal strategies for attack.  
   
 ### 🆚 Contrasting  

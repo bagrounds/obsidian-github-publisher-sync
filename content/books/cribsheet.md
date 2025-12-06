@@ -4,9 +4,10 @@ aliases:
   - "👶📊😌 Cribsheet: A Data-Driven Guide to Better, More Relaxed Parenting, from Birth to Preschool"
 title: "👶📊😌 Cribsheet: A Data-Driven Guide to Better, More Relaxed Parenting, from Birth to Preschool"
 URL: https://bagrounds.org/books/cribsheet
-Author: 
-tags: 
+Author:
+tags:
 affiliate link: https://amzn.to/43sW41K
+CTA: 👶 Embrace informed parenthood.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 👶📊😌 Cribsheet: A Data-Driven Guide to Better, More Relaxed Parenting, from Birth to Preschool  
@@ -65,7 +66,7 @@ affiliate link: https://amzn.to/43sW41K
   
 **📚 Additional Book Recommendations**  
 1. 🥇 **Best Alternate Book on the Same Topic:**    
-   [The Informed Parent: A Science-Based Resource for Your Child’s First Four Years](./the-informed-parent.md) by Tara Haelle    
+   [🤓👩‍👦 The Informed Parent: A Science-Based Resource for Your Child's First Four Years](./the-informed-parent.md) by Tara Haelle    
    – 📖 This book similarly uses a scientific approach to guide early parenting decisions and provides another evidence-based perspective on child development.  
   
 2. 🤝 **Best Book Tangentially Related to the Topic:**    
@@ -73,7 +74,7 @@ affiliate link: https://amzn.to/43sW41K
    – 📖 While not entirely data-driven, this book offers a culturally contrasting perspective on parenting that complements the empirical approach of *Cribsheet*.  
   
 3. ☯️ **Best Book Diametrically Opposed to the Data-Driven Approach:**    
-   *Unconditional Parenting: Moving from Rewards and Punishments to Love and Reason* by Alfie Kohn    
+   [❤️🧠 Unconditional Parenting: Moving from Rewards and Punishments to Love and Reason](./unconditional-parenting-moving-from-rewards-and-punishments-to-love-and-reason.md) by Alfie Kohn    
    – 📖 Kohn’s work challenges behaviorist, data-driven methods in parenting, advocating instead for an intuitive, unconditional approach that stands in stark contrast to the cost–benefit analysis found in *Cribsheet*.  
   
 4. 🎭 **Best Fiction Book Incorporating Related Ideas:**    

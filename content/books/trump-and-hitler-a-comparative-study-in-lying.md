@@ -56,7 +56,7 @@ By demystifying these figures and analyzing their techniques, the book aims to s
 * 🤯 **The Psychopathic God: Adolf Hitler** by Robert Waite. Explores Hitler's psychology, focusing on potential pathologies and their impact on his political actions.  
 * 🎭 **Dirty Politics: Deception, Distraction, and Democracy** by Kathleen Hall Jamieson. Analyzes deceptive political communication techniques used in democratic campaigns, offering a broader view of how truth is manipulated in politics.  
 * 🌍 **Competitive Authoritarianism: Hybrid Regimes After the Cold War** by Steven Levitsky and Lucan Way. Provides a framework for understanding regimes that combine elements of democracy and authoritarianism, relevant to the discussion of contemporary illiberalism.  
-* 👑 **Autocracy, Inc.: The Dictators Who Want to Run the World** by Anne Applebaum. Examines modern authoritarian regimes and the connections between them, offering a global context for the dangers of strongmen.  
+* **[👑🌎 Autocracy, Inc.: The Dictators Who Want to Run the World](./autocracy-inc-the-dictators-who-want-to-run-the-world.md)** by Anne Applebaum. Examines modern authoritarian regimes and the connections between them, offering a global context for the dangers of strongmen.  
 * 🧪 **Strategic Deception: Rhetoric, Science, and Politics in Missile Defense Advocacy** by Gordon R. Mitchell. Explores the use of deceptive rhetoric in a specific political context (policy debate), highlighting the intersection of language, technical claims, and political maneuvering.  
   
 ## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  

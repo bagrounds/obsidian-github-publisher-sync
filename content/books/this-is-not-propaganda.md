@@ -51,7 +51,7 @@ CTA: 👁️ Question everything.
 * **[🎭🤫 Active Measures: The Secret History of Disinformation and Political Warfare](./active-measures-the-secret-history-of-disinformation-and-political-warfare.md)** by Thomas Rid: Provides a deep historical context for disinformation, tracing its roots through the Cold War and into the digital age.  
 * **[📱⚔️ LikeWar: The Weaponization of Social Media](./likewar-the-weaponization-of-social-media.md)** by P.W. Singer and Emerson T. Brooking: Focuses specifically on how social media platforms have become battlegrounds for information warfare, influencing politics and conflict.  
 * 📢 **[📰⚔️🧠 Information Wars: How We Lost the Global Battle Against Disinformation and What We Can Do About It](./information-wars.md)** by Richard Stengel: A former U.S. Under Secretary of State shares insights into battling state-sponsored disinformation, particularly from ISIS and Russia.  
-* 👑 **Autocracy, Inc.: The Dictators Who Want to Run the World** by Anne Applebaum: Explores the modern networks connecting autocratic regimes and how they collaborate, often using disinformation tactics.  
+* **[👑🌎 Autocracy, Inc.: The Dictators Who Want to Run the World](./autocracy-inc-the-dictators-who-want-to-run-the-world.md)** by Anne Applebaum: Explores the modern networks connecting autocratic regimes and how they collaborate, often using disinformation tactics.  
 * 🛡️ **[🏆📰📣 How to Win an Information War: The Propagandist Who Outwitted Hitler](./how-to-win-an-information-war.md)** by Peter Pomerantsev: Pomerantsev's latest book, looking at historical examples and potential strategies for countering disinformation.  
   
 ### ⚖️ Contrasting Perspectives  

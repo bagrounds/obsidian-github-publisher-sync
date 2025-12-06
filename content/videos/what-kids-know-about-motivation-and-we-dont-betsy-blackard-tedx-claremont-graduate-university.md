@@ -69,7 +69,7 @@ youtube: https://youtu.be/fdDJub69Hnk
   
 * 🐅 **Battle Hymn of the Tiger Mother** by Amy Chua  
     * ⚖️ This book advocates for strict, high-pressure parenting focused on academic achievement and extrinsic measures of success, offering a stark contrast to the video's emphasis on non-interference and intrinsic motivation.  
-* 🤯 **Unconditional Parenting Moving from Rewards and Punishments to Love and Reason** by Alfie Kohn  
+* **[❤️🧠 Unconditional Parenting: Moving from Rewards and Punishments to Love and Reason](../books/unconditional-parenting-moving-from-rewards-and-punishments-to-love-and-reason.md)** by Alfie Kohn  
     * 🗣️ While similar in valuing autonomy, Kohn's work is contrasting in its specific attack on all forms of extrinsic control, including praise and rewards, whereas the video implicitly allows for goal-oriented motivation (finishing math to go play) when driven by the child's end goal.  
 * 🚦 **Setting Limits with Your Child** by Robert J. MacKenzie  
     * 📏 This resource focuses heavily on parental control, discipline, and establishing clear boundaries to manage behavior, which presents a practical, more structured, and less do nothing alternative to the approach presented.  

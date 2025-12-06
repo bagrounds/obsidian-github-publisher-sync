@@ -60,4 +60,4 @@ youtube: https://youtu.be/nM-spMfsJcg
   
 ### 🎨 Creatively Related  
 * 📚 The Longer Game: China's Grand Strategy to Displace American Order by Rush Doshi 🐉 This work offers a detailed view of China's long-term strategy to reshape the American-led global order, which provides context for the video's discussion of Chinese global aspirations.  
-* 📚 Autocracy, Inc. by Anne Applebaum 💰 This book explores how modern autocracies operate as a networked model of power, exporting corruption and propaganda, which relates tangentially to the video's focus on weakening the democratic world.
+* [👑🌎 Autocracy, Inc.: The Dictators Who Want to Run the World](../books/autocracy-inc-the-dictators-who-want-to-run-the-world.md) by Anne Applebaum 💰 This book explores how modern autocracies operate as a networked model of power, exporting corruption and propaganda, which relates tangentially to the video's focus on weakening the democratic world.

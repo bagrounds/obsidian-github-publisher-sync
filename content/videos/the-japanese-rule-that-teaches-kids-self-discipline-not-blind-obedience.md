@@ -59,7 +59,7 @@ youtube: https://youtu.be/qAB_YP_IKo0
   
 ### ↔️ Similar  
   
-* 🧠 Unconditional Parenting by Alfie Kohn. 📚 This book critiques the use of rewards, punishment, and extrinsic motivators, arguing for working with children to foster intrinsic motivation and responsibility, mirroring the video's core theme.  
+* [❤️🧠 Unconditional Parenting: Moving from Rewards and Punishments to Love and Reason](../books/unconditional-parenting-moving-from-rewards-and-punishments-to-love-and-reason.md) by Alfie Kohn. 📚 This book critiques the use of rewards, punishment, and extrinsic motivators, arguing for working with children to foster intrinsic motivation and responsibility, mirroring the video's core theme.  
 * 🤝 Peaceful Parent Happy Kids by Laura Markham. 📚 This resource advocates for connection, coaching, and calm modeling as the foundation for setting limits and promoting self-regulation, aligning with the video's emphasis on modeled calm.  
 * [🕳️🧠👶🏽 The Whole-Brain Child: 12 Revolutionary Strategies to Nurture Your Child's Developing Mind](../books/the-whole-brain-child.md) by Daniel J. Siegel and Tina Payne Bryson. 📚 It offers practical, neuroscience-based strategies for helping children integrate their emotions and develop greater self-control, connecting directly to the video's discussion of the prefrontal cortex.  
   

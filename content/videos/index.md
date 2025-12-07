@@ -7,7 +7,7 @@ URL: https://bagrounds.org/videos
 backlinks: false
 ---
 [Home](../index.md)  
-# 📺 Videos (475)  
+# 📺 Videos (476)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
 - [❓💪🔬 12 Questions About Creatine with Stephen Cornish, PhD](./12-questions-about-creatine-w-stephen-cornish-phd.md)  
@@ -223,6 +223,7 @@ backlinks: false
 - [🗣️🤫🐘 Mike Levin Reveals What Republicans Told Him Behind Closed Doors About Big Beautiful Bill](./mike-levin-reveals-what-republicans-told-him-behind-closed-doors-about-big-beautiful-bill.md)  
 - [🪖👨‍⚖️❓ Military personnel seek legal advice on whether Trump-ordered missions are lawful](./military-personnel-seek-legal-advice-on-whether-trump-ordered-missions-are-lawful.md)  
 - [👨‍💼🤖📈⚕️ MIT Economist on AI, Trade-Offs & Healthcare](./mit-economist-on-ai-trade-offs-healthcare.md)  
+- [🎓🔑🧠🧘 MIT PhD taught me to unlock my brain’s “Sage Mode” - Deep Work (Full Summary)](./mit-phd-taught-me-to-unlock-my-brains-sage-mode-deep-work-full-summary.md)  
 - [💰🇦🇹🆚📈 MMT vs. Austrian School Debate](./mmt-vs-austrian-school-debate.md)  
 - [🇦🇹💰🆚 Modern Monetary Theory Showdown](./the-austrian-economics-vs-modern-monetary-theory-showdown-robert-murphy-and-nathan-tankus.md)  
 - [💰🤫 Modern Monetary Theory: What They Don’t Tell You (Ft. L. Randall Wray)](./modern-monetary-theory-what-they-dont-tell-you-ft-l-randall-wray.md)  

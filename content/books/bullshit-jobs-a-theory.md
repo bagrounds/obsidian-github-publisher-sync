@@ -69,7 +69,7 @@ affiliate link: https://amzn.to/4apTihA
   
 ## 📚 Book Recommendations  
 ### ➕ Similar  
-* ⛓️ Discipline and Punish by Michel Foucault  
+* [⚙️⛓️ Discipline and Punish: The Birth of the Prison](./discipline-and-punish-the-birth-of-the-prison.md) by Michel Foucault  
 * [📜🌍⏳ Sapiens: A Brief History of Humankind](./sapiens-a-brief-history-of-humankind.md) by Yuval Noah Harari  
 * 🛠️ The Problem with Work by Kathi Weeks  
   

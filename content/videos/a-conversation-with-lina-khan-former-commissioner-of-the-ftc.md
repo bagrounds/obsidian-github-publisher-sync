@@ -48,7 +48,7 @@ youtube: https://youtu.be/YdxkifYjBFY
 ## 📚 Book Recommendations  
   
 ### ↔️ Similar  
-* 🗽 Goliath The 100-Year War Between Monopoly Power and Democracy by Matt Stoller explores the continuous fight against concentrated economic power throughout US history, mirroring the video's emphasis on the political origins of anti-monopoly thought.  
+* [👑⚔️🏛️ Goliath: The 100-Year War Between Monopoly Power and Democracy](../books/goliath-the-100-year-war-between-monopoly-power-and-democracy.md) by Matt Stoller explores the continuous fight against concentrated economic power throughout US history, mirroring the video's emphasis on the political origins of anti-monopoly thought.  
 * 🔗 The Curse of Bigness Antitrust in the New Gilded Age by Tim Wu is a concise argument for reinvigorating competition policy to address the concentrated power of modern tech monopolies, aligning with the video's critique of the status quo.  
   
 ### 🆚 Contrasting  

@@ -38,7 +38,8 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [❤️🧠 Unconditional Parenting: Moving from Rewards and Punishments to Love and Reason](./books/unconditional-parenting-moving-from-rewards-and-punishments-to-love-and-reason.md)  
   
   
-## [📺 Videos](./videos/index.md) (476)  
+## [📺 Videos](./videos/index.md) (477)  
+- [🎙️🇺🇸🛥️💥 Brooks and Capehart on the political fallout over Trump's boat strikes](./videos/brooks-and-capehart-on-the-political-fallout-over-trumps-boat-strikes.md)  
 - [🎓🔑🧠🧘 MIT PhD taught me to unlock my brain’s “Sage Mode” - Deep Work (Full Summary)](./videos/mit-phd-taught-me-to-unlock-my-brains-sage-mode-deep-work-full-summary.md)  
 - [🧠📈🥇 15 Books That Will Make You a Top 1% Thinker](./videos/15-books-that-will-make-you-a-top-1-percent-thinker.md)  
 - [🇺🇦🤝🤥 Ukraine and America’s Credibility Crisis - with Anne Applebaum](./videos/ukraine-and-americas-credibility-crisis-with-anne-applebaum.md)  
@@ -48,7 +49,6 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [🏛️🤕❓ Architect of Obamacare: Health Care Is Still a Mess | The David Frum Show](./videos/architect-of-obamacare-health-care-is-still-a-mess-the-david-frum-show.md)  
 - [🗣️🏛️🗓️ Politics Chat, December 4, 2025](./videos/politics-chat-december-4-2025.md)  
 - [🌍❓🤔 Making Sense of a World in Crisis | Yuval Noah Harari](./videos/making-sense-of-a-world-in-crisis-yuval-noah-harari.md)  
-- [🇺🇸🗣️⚖️🗳️ American Conversations: Marc Elias](./videos/american-conversations-marc-elias.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (84)  

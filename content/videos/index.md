@@ -7,7 +7,7 @@ URL: https://bagrounds.org/videos
 backlinks: false
 ---
 [Home](../index.md)  
-# 📺 Videos (476)  
+# 📺 Videos (477)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
 - [❓💪🔬 12 Questions About Creatine with Stephen Cornish, PhD](./12-questions-about-creatine-w-stephen-cornish-phd.md)  
@@ -78,6 +78,7 @@ backlinks: false
 - [👨‍⚖️⬆️🏛️ Brooks and Capehart on the Comey indictment and upending of DOJ norms](./brooks-and-capehart-on-the-comey-indictment-and-upending-of-doj-norms.md)  
 - [💔🏛️💸 Brooks and Capehart on the Democratic division over the stopgap funding bill](./brooks-and-capehart-on-the-democratic-division-over-the-stopgap-funding-bill.md)  
 - [⛈️🇺🇸🗣️💬 Brooks and Capehart on the federal response to the Texas flooding disaster](./brooks-and-capehart-on-the-federal-response-to-the-texas-flooding-disaster.md)  
+- [🎙️🇺🇸🛥️💥 Brooks and Capehart on the political fallout over Trump's boat strikes](./brooks-and-capehart-on-the-political-fallout-over-trumps-boat-strikes.md)  
 - [👨‍💼🛑💰🗣️ Brooks and Capehart on the political reaction to Trump's tariffs](./brooks-and-capehart-on-the-political-reaction-to-trumps-tariffs.md)  
 - [👑🚧📉 Brooks and Capehart on Trump’s tariffs and reaction from the markets](./brooks-and-capehart-on-trumps-tariffs-and-reaction-from-the-markets.md)  
 - [🏗️📈🤝🌍 Building a Better Economy | Alex Pentland | TEDxMIT](./building-a-better-economy-alex-pentland-tedxmit.md)  

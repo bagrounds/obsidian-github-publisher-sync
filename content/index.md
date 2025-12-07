@@ -12,8 +12,9 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 ❔ What do 🫵 _you_ 🤔 think?  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (387)  
-- [2025-12-06](./reflections/2025-12-06.md)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (388)  
+- [2025-12-07](./reflections/2025-12-07.md)  
+- [2025-12-06 | 🧾 Debt | 🎁 Gift 📚](./reflections/2025-12-06.md)  
 - [2025-12-05 | 💳 Credibility | 👑 Autocracy | 🥷 Kleptopia | 🧑‍🧑‍🧒 Parenting 📺📚](./reflections/2025-12-05.md)  
 - [2025-12-04 | ⛈️ Climate | 👹 Corruption | ⚠️ Crises | 🏥 Healthcare 📚📺](./reflections/2025-12-04.md)  
 - [2025-12-03 | 🥇📚 Best Books | 🏚️👥 Homeless | 🚀🚣‍♂️ War Crimes | 🇨🇳 China 📺📚🌌](./reflections/2025-12-03.md)  
@@ -22,33 +23,32 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [2025-11-30 | 🧾 Debt 📚](./reflections/2025-11-30.md)  
 - [2025-11-29 | 🏛️ Paralysis | 👶🏼 Science | ⏳ Buy Time | 🔫 Conflict 📚📰📺🛍️](./reflections/2025-11-29.md)  
 - [2025-11-28 | 😴 Baby Sleep | 💲 Modern Money | 🤖 Robot Mop 📚📺🛍️](./reflections/2025-11-28.md)  
-- [2025-11-27 | 👶🏼💤 How Babies Sleep 📚](./reflections/2025-11-27.md)  
   
   
-## [📚 Books](./books/index.md) (810)  
+## [📚 Books](./books/index.md) (812)  
+- [🤔🔌 Understanding Power: The Indispensable Chomsky](./books/understanding-power-the-indispensable-chomsky.md)  
+- [💡🔬🧑‍🤝‍🧑📈 Enlightenment Now: The Case for Reason, Science, Humanism, and Progress](./books/enlightenment-now-the-case-for-reason-science-humanism-and-progress.md)  
+- [👦🏝️🐷 Lord of the Flies](./books/lord-of-the-flies.md)  
+- [💩💼 Bullshit Jobs: A Theory](./books/bullshit-jobs-a-theory.md)  
+- [🏛️💰 Debt: The First 5,000 Years](./books/debt-the-first-5000-years.md)  
+- [⚙️⛓️ Discipline and Punish: The Birth of the Prison](./books/discipline-and-punish-the-birth-of-the-prison.md)  
+- [🎁🔄 The Gift: The Form and Reason for Exchange in Archaic Societies](./books/the-gift-the-form-and-reason-for-exchange-in-archaic-societies.md)  
 - [👶📊😌 Cribsheet: A Data-Driven Guide to Better, More Relaxed Parenting, from Birth to Preschool](./books/cribsheet.md)  
 - [🧠🧑‍🤝‍🧑 The Developing Mind: How Relationships and the Brain Interact to Shape Who We Are](./books/the-developing-mind-how-relationships-and-the-brain-interact-to-shape-who-we-are.md)  
 - [❤️🧠 Unconditional Parenting: Moving from Rewards and Punishments to Love and Reason](./books/unconditional-parenting-moving-from-rewards-and-punishments-to-love-and-reason.md)  
-- [🏛️👹🇺🇸🏰👹🇷🇺 House of Trump, House of Putin: The Untold Story of Donald Trump and the Russian Mafia](./books/house-of-trump-house-of-putin-the-untold-story-of-donald-trump-and-the-russian-mafia.md)  
-- [🇺🇸💸🧺🌍 American Kleptocracy: How the U.S. Created the World's Greatest Money Laundering Scheme in History](./books/american-kleptocracy-how-the-us-created-the-worlds-greatest-money-laundering-scheme-in-history.md)  
-- [💸🌍 Kleptopia: How Dirty Money Is Conquering the World](./books/kleptopia-how-dirty-money-is-conquering-the-world.md)  
-- [🇺🇸🇩🇪🤥📣 Trump and Hitler: A Comparative Study in Lying](./books/trump-and-hitler-a-comparative-study-in-lying.md)  
-- [🤥📣 This Is Not Propaganda: Adventures in the War Against Reality](./books/this-is-not-propaganda.md)  
-- [👑🌎 Autocracy, Inc.: The Dictators Who Want to Run the World](./books/autocracy-inc-the-dictators-who-want-to-run-the-world.md)  
-- [🔬🛡️ Science Under Siege: How to Fight the Five Most Powerful Forces That Threaten Our World](./books/science-under-siege-how-to-fight-the-five-most-powerful-forces-that-threaten-our-world.md)  
   
   
-## [📺 Videos](./videos/index.md) (475)  
+## [📺 Videos](./videos/index.md) (476)  
+- [🎓🔑🧠🧘 MIT PhD taught me to unlock my brain’s “Sage Mode” - Deep Work (Full Summary)](./videos/mit-phd-taught-me-to-unlock-my-brains-sage-mode-deep-work-full-summary.md)  
+- [🧠📈🥇 15 Books That Will Make You a Top 1% Thinker](./videos/15-books-that-will-make-you-a-top-1-percent-thinker.md)  
+- [🇺🇦🤝🤥 Ukraine and America’s Credibility Crisis - with Anne Applebaum](./videos/ukraine-and-americas-credibility-crisis-with-anne-applebaum.md)  
 - [👶🏆🧠✨ What kids know about motivation (and we don't) | Betsy Blackard | TEDx Claremont Graduate University](./videos/what-kids-know-about-motivation-and-we-dont-betsy-blackard-tedx-claremont-graduate-university.md)  
 - [👧🧠💪🇯🇵 The Japanese Rule That Teaches Kids Self-Discipline (Not Blind Obedience)](./videos/the-japanese-rule-that-teaches-kids-self-discipline-not-blind-obedience.md)  
-- [🇺🇦🤝🤥 Ukraine and America’s Credibility Crisis - with Anne Applebaum](./videos/ukraine-and-americas-credibility-crisis-with-anne-applebaum.md)  
 - [👑⚔️🏛️ In new book Michael McFaul explores the global fight between autocracy and democracy](./videos/in-new-book-michael-mcfaul-explores-the-global-fight-between-autocracy-and-democracy.md)  
 - [🏛️🤕❓ Architect of Obamacare: Health Care Is Still a Mess | The David Frum Show](./videos/architect-of-obamacare-health-care-is-still-a-mess-the-david-frum-show.md)  
 - [🗣️🏛️🗓️ Politics Chat, December 4, 2025](./videos/politics-chat-december-4-2025.md)  
 - [🌍❓🤔 Making Sense of a World in Crisis | Yuval Noah Harari](./videos/making-sense-of-a-world-in-crisis-yuval-noah-harari.md)  
 - [🇺🇸🗣️⚖️🗳️ American Conversations: Marc Elias](./videos/american-conversations-marc-elias.md)  
-- [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./videos/10-charts-to-understand-the-900-page-budget-bill.md)  
-- [🌍⚡️🚫🇺🇸 The Future of Energy Has Arrived - Just Not in the U.S.](./videos/the-future-of-energy-has-arrived-just-not-in-the-us.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (84)  

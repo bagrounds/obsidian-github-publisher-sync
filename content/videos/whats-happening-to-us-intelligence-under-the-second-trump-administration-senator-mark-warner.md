@@ -64,4 +64,7 @@ youtube: https://youtu.be/ecZW7ObacGg
   
 ### 🎨 Creatively Related  
 * 💻 Permanent Record by Edward Snowden: 📱 Relates creatively by focusing on the tension between intelligence collection, technology, and civil liberties, exploring the ethical boundaries that intelligence agencies must navigate in the digital age.  
-* 🇨🇳 AI Superpowers China, Silicon Valley, and the New World Order by Kai-Fu Lee: 🤖 Connects to the theme of technological competition mentioned in the video, providing a detailed assessment of the China-US rivalry in artificial intelligence and its implications for global power and security.
+* 🇨🇳 AI Superpowers China, Silicon Valley, and the New World Order by Kai-Fu Lee: 🤖 Connects to the theme of technological competition mentioned in the video, providing a detailed assessment of the China-US rivalry in artificial intelligence and its implications for global power and security.  
+  
+## 🐦 Tweet  
+<blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">❓🕵️‍♂️🇺🇸📉 What’s Happening to U.S. Intelligence Under the Second Trump Administration? | <a href="https://twitter.com/SenatorWarner?ref_src=twsrc%5Etfw">@SenatorWarner</a> <br><br>🤡 Political Appointments | 🔥 Whistleblower Firings | 🇷🇺 Foreign Adversary Alignment | 📉 International Cooperation | 🔑 Gang of 8<a href="https://twitter.com/HC_Richardson?ref_src=twsrc%5Etfw">@HC_Richardson</a><a href="https://t.co/55jUB4ftcx">https://t.co/55jUB4ftcx</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/1997805726664929767?ref_src=twsrc%5Etfw">December 7, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

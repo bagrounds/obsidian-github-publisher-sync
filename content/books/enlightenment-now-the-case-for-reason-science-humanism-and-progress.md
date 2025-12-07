@@ -68,7 +68,7 @@ affiliate link: https://amzn.to/4mziiGD
   
 * 🤔 **A Brief History of Thought: From Ancient Philosophers to Today's Thinkers** by Luc Ferry  
     * ⚠️ While not directly "anti-Enlightenment," Ferry's work, particularly his examination of Romanticism and post-Enlightenment philosophies, can offer a contrasting perspective on the limits or criticisms of pure rationalism and the emergence of other intellectual currents that challenged Enlightenment ideals.  
-* ⛓️ **Discipline and Punish: The Birth of the Prison** by Michel Foucault  
+* **[⚙️⛓️ Discipline and Punish: The Birth of the Prison](./discipline-and-punish-the-birth-of-the-prison.md)** by Michel Foucault  
     * 🧐 Foucault's work critically examines the historical development of modern institutions, including those emerging from the Enlightenment, arguing that concepts like reason and progress can also be mechanisms of power and social control, offering a stark contrast to Pinker's largely celebratory view.  
 * 🛑 **The End of Progress: How Modern Economics Has Failed Us** by Graeme Maxton and Jorgen Randers  
     * 📉 This book challenges the very idea of continuous, unlimited progress, particularly in economic terms. 🌍 It highlights environmental limits and the potential downsides of unchecked growth, providing a more pessimistic outlook on humanity's trajectory than Pinker's optimistic data-driven narrative.  

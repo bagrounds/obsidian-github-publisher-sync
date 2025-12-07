@@ -7,7 +7,7 @@ URL: https://bagrounds.org/books
 backlinks: false
 ---
 [Home](../index.md)  
-# 📚 Books (810)  
+# 📚 Books (812)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)  
 - [🧑‍🤝‍🧑📈 10 to 25: The Science of Motivating Young People: A Groundbreaking Approach to Leading the Next Generation - And Making Your Own Life Easier](./10-to-25-the-science-of-motivating-young-people-a-groundbreaking-approach-to-leading-the-next-generation-and-making-your-own-life-easier.md)  
@@ -169,6 +169,7 @@ backlinks: false
 - [👯💻 Digital Twin](./the-digital-twin.md)  
 - [🤝🌍 Diplomacy](./diplomacy.md)  
 - [😠🤝 Disagree without Disrespect: How to Respectfully Debate with Those who Think, Believe and Vote Differently from You](./disagree-without-disrespect-how-to-respectfully-debate-with-those-who-think-believe-and-vote-differently-from-you.md)  
+- [⚙️⛓️ Discipline and Punish: The Birth of the Prison](./discipline-and-punish-the-birth-of-the-prison.md)  
 - [🧘🟰🕊️ Discipline Equals Freedom: Field Manual](./discipline-equals-freedom-field-manual.md)  
 - [🌐🔗🤝💻 Distributed Algorithms](./distributed-algorithms.md)  
 - [⚙️🕸️🧩🔑 Distributed Systems: Principles and Paradigms](./distributed-systems.md)  
@@ -612,6 +613,7 @@ backlinks: false
 - [⏱️🚀 The First 20 Hours: How to Learn Anything... Fast](./the-first-20-hours-how-to-learn-anything-fast.md)  
 - [♾️🌿🔬 The Fractal Geometry of Nature](./the-fractal-geometry-of-nature.md)  
 - [🧑‍💼🏦💸 The General Theory of Employment, Interest, and Money](./the-general-theory-of-employment-interest-and-money.md)  
+- [🎁🔄 The Gift: The Form and Reason for Exchange in Archaic Societies](./the-gift-the-form-and-reason-for-exchange-in-archaic-societies.md)  
 - [📈⚙️♾️ The Goal: A Process of Ongoing Improvement](./the-goal.md)  
 - [❓✝️ The God Delusion](./the-god-delusion.md)  
 - [🧑‍🤝‍🧑🐘⬆️ The Great Alignment: Race, Party Transformation, and the Rise of Donald Trump](./the-great-alignment-race-party-transformation-and-the-rise-of-donald-trump.md)  

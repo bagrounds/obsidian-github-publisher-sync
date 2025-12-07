@@ -49,7 +49,7 @@ This content provides a solid foundational list of texts for developing critical
 * [🤔🐇🐢 Thinking, Fast and Slow](../books/thinking-fast-and-slow.md) by Daniel Kahneman: 🧠 Explores the two systems that drive the way we think, offering insights into cognitive biases and decision-making.  
 * [📜🌍⏳ Sapiens: A Brief History of Humankind](../books/sapiens-a-brief-history-of-humankind.md) by Yuval Noah Harari: 🌍 Provides a broad historical and interdisciplinary perspective on human behavior and societal development, offering a macro view that complements the more specific philosophical texts.  
 * [🎨🤔🖼️ The Art of Thinking Clearly](../books/the-art-of-thinking-clearly.md) by Rolf Dobelli: 🤔 A practical guide to common thinking errors and how to avoid them, offering a more accessible approach to critical thinking.  
-* 📖 *Discipline and Punish: The Birth of the Prison* by Michel Foucault: ⛓️ A contrasting perspective on power, knowledge, and social control, offering a critical lens on political theory and human behavior.  
+* [⚙️⛓️ Discipline and Punish: The Birth of the Prison](../books/discipline-and-punish-the-birth-of-the-prison.md) by Michel Foucault: ⛓️ A contrasting perspective on power, knowledge, and social control, offering a critical lens on political theory and human behavior.  
 * [🏍️🧘❓ Zen and the Art of Motorcycle Maintenance: An Inquiry into Values](../books/zen-and-the-art-of-motorcycle-maintenance-an-inquiry-into-values.md) by Robert M. Pirsig: 🏍️ A philosophical novel that explores concepts of quality, values, and rationality in a more narrative and introspective manner.  
   
 ## 🐦 Tweet  

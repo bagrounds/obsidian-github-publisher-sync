@@ -1,15 +1,15 @@
 ---
-title: "🕵️📜CIA Legacy of Ashes: The History of the CIA"
+title: "🕵️📜 Legacy of Ashes: The History of the CIA"
 aliases:
-  - "🕵️📜CIA Legacy of Ashes: The History of the CIA"
+  - "🕵️📜 Legacy of Ashes: The History of the CIA"
 URL: https://bagrounds.org/books/legacy-of-ashes-the-history-of-the-cia
 share: true
 CTA: 🕵️ Uncover clandestine operations.
 affiliate link: https://amzn.to/3KMPDjt
 ---
 [Home](../index.md) > [Books](./index.md)  
-# 🕵️📜CIA Legacy of Ashes: The History of the CIA  
-[🛒 CIA Legacy of Ashes: The History of the CIA. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3KMPDjt)  
+# 🕵️📜 Legacy of Ashes: The History of the CIA  
+[🛒 Legacy of Ashes: The History of the CIA. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3KMPDjt)  
   
 🕵️‍♂️📉🇺🇸 A meticulously researched, yet deeply critical, account exposing decades of the CIA's operational failures, internal mismanagement, and profound impact on U.S. national security, all presented without anonymous sources.  
   

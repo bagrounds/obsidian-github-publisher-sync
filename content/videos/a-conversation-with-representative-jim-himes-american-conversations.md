@@ -73,6 +73,6 @@ youtube: https://youtu.be/13IVUWiuHHI
   
 ### 🎨 Creatively Related  
   
-* [🕵️📜CIA Legacy of Ashes: The History of the CIA](../books/legacy-of-ashes-the-history-of-the-cia.md) by Tim Weiner. 🤫 This history details the CIA's controversial activities in Latin America during the Cold War, providing historical context for the distrust and old school Monroe doctrine stuff that still affects US relations in the region today.  
+* [🕵️📜 Legacy of Ashes: The History of the CIA](../books/legacy-of-ashes-the-history-of-the-cia.md) by Tim Weiner. 🤫 This history details the CIA's controversial activities in Latin America during the Cold War, providing historical context for the distrust and old school Monroe doctrine stuff that still affects US relations in the region today.  
 * 📰 News and the Culture of Disaster: The Tragedy of Flight 103 by Nurith Gertz. 📺 The book explores how media frames complex international events and foreign policy, tangentially relating to the video's discussion of performative politics aimed at generating a public image of strength.  
 * 🤔 The Clash of Civilizations and the Remaking of World Order by Samuel P. Huntington. 🗺️ This influential, though debated, theory on post-Cold War world order provides a theoretical counterpoint to the video's suggestion that the US must adapt to a bipolar or tripolar world by forming robust alliances, by instead focusing on cultural fault lines.

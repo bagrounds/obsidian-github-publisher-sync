@@ -55,7 +55,7 @@ youtube: https://youtu.be/ecZW7ObacGg
 ## 📚 Book Recommendations  
   
 ### ↔️ Similar  
-* [🕵️📜CIA Legacy of Ashes: The History of the CIA](../books/legacy-of-ashes-the-history-of-the-cia.md) by Tim Weiner: 📜 Recommends this book for its comprehensive historical look at the CIA’s operations, internal conflicts, and its long, often fraught relationship with presidential administrations, which mirrors the concerns about politicization.  
+* [🕵️📜 Legacy of Ashes: The History of the CIA](../books/legacy-of-ashes-the-history-of-the-cia.md) by Tim Weiner: 📜 Recommends this book for its comprehensive historical look at the CIA’s operations, internal conflicts, and its long, often fraught relationship with presidential administrations, which mirrors the concerns about politicization.  
 * 🧠 Director A Memoir by David Cohen: 📖 Offers insight from a former Deputy Director of the CIA on the daily challenges and responsibilities of intelligence leadership in a modern, complex geopolitical environment.  
   
 ### 🆚 Contrasting  

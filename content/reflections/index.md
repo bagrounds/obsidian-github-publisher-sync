@@ -7,7 +7,9 @@ URL: https://bagrounds.org/reflections
 backlinks: false
 ---
 [Home](../index.md)  
-# 🪞 Reflections (388)  
+# 🪞 Reflections (390)  
+- [2025-12-09](./2025-12-09.md)  
+- [2025-12-08](./2025-12-08.md)  
 - [2025-12-07](./2025-12-07.md)  
 - [2025-12-06 | 🧾 Debt | 🎁 Gift 📚](./2025-12-06.md)  
 - [2025-12-05 | 💳 Credibility | 👑 Autocracy | 🥷 Kleptopia | 🧑‍🧑‍🧒 Parenting 📺📚](./2025-12-05.md)  

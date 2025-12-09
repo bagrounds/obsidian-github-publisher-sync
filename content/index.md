@@ -12,7 +12,9 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 ❔ What do 🫵 _you_ 🤔 think?  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (388)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (390)  
+- [2025-12-09](./reflections/2025-12-09.md)  
+- [2025-12-08](./reflections/2025-12-08.md)  
 - [2025-12-07](./reflections/2025-12-07.md)  
 - [2025-12-06 | 🧾 Debt | 🎁 Gift 📚](./reflections/2025-12-06.md)  
 - [2025-12-05 | 💳 Credibility | 👑 Autocracy | 🥷 Kleptopia | 🧑‍🧑‍🧒 Parenting 📺📚](./reflections/2025-12-05.md)  
@@ -21,34 +23,32 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [2025-12-02 | 🎼 Compositionality | 👹🪢🇺🇸🏛️ President Intimidates Senators 📺📰📄📚](./reflections/2025-12-02.md)  
 - [2025-12-01 | 💼 Jobs | 📏 Rules | 🐵 Humanity 📚📺](./reflections/2025-12-01.md)  
 - [2025-11-30 | 🧾 Debt 📚](./reflections/2025-11-30.md)  
-- [2025-11-29 | 🏛️ Paralysis | 👶🏼 Science | ⏳ Buy Time | 🔫 Conflict 📚📰📺🛍️](./reflections/2025-11-29.md)  
-- [2025-11-28 | 😴 Baby Sleep | 💲 Modern Money | 🤖 Robot Mop 📚📺🛍️](./reflections/2025-11-28.md)  
   
   
-## [📚 Books](./books/index.md) (812)  
-- [🤔🔌 Understanding Power: The Indispensable Chomsky](./books/understanding-power-the-indispensable-chomsky.md)  
-- [💡🔬🧑‍🤝‍🧑📈 Enlightenment Now: The Case for Reason, Science, Humanism, and Progress](./books/enlightenment-now-the-case-for-reason-science-humanism-and-progress.md)  
-- [👦🏝️🐷 Lord of the Flies](./books/lord-of-the-flies.md)  
-- [💩💼 Bullshit Jobs: A Theory](./books/bullshit-jobs-a-theory.md)  
-- [🏛️💰 Debt: The First 5,000 Years](./books/debt-the-first-5000-years.md)  
-- [⚙️⛓️ Discipline and Punish: The Birth of the Prison](./books/discipline-and-punish-the-birth-of-the-prison.md)  
-- [🎁🔄 The Gift: The Form and Reason for Exchange in Archaic Societies](./books/the-gift-the-form-and-reason-for-exchange-in-archaic-societies.md)  
-- [👶📊😌 Cribsheet: A Data-Driven Guide to Better, More Relaxed Parenting, from Birth to Preschool](./books/cribsheet.md)  
-- [🧠🧑‍🤝‍🧑 The Developing Mind: How Relationships and the Brain Interact to Shape Who We Are](./books/the-developing-mind-how-relationships-and-the-brain-interact-to-shape-who-we-are.md)  
-- [❤️🧠 Unconditional Parenting: Moving from Rewards and Punishments to Love and Reason](./books/unconditional-parenting-moving-from-rewards-and-punishments-to-love-and-reason.md)  
+## [📚 Books](./books/index.md) (820)  
+- [🌐🧭❓🔍🗺️ Complexity: A Guided Tour](./books/complexity.md)  
+- [🧬🎭👁️ The Case Against Reality: Why Evolution Hid the Truth from Our Eyes](./books/the-case-against-reality-why-evolution-hid-the-truth-from-our-eyes.md)  
+- [🧠🧘🏼‍♀️ Neuro-Discipline: Everyday Neuroscience for Self-Discipline, Focus, and Defeating Your Brain's Impulsive and Distracted Nature](./books/neuro-discipline-everyday-neuroscience-for-self-discipline-focus-and-defeating-your-brains-impulsive-and-distracted-nature.md)  
+- [🇯🇵🔑😊💯 Ikigai: The Japanese Secret to a Long and Happy Life](./books/ikigai.md)  
+- [🌊🧘🏼‍♀️🧠📈 Flow: The Psychology of Optimal Experience](./books/flow-the-psychology-of-optimal-experience.md)  
+- [😮😊 Stumbling on Happiness](./books/stumbling-on-happiness.md)  
+- [⚙️🔄 The Nature of Technology: What It Is and How It Evolves](./books/the-nature-of-technology-what-it-is-and-how-it-evolves.md)  
+- [⬇️⬆️🧭🌟 Theory U: Leading from the Future as It Emerges](./books/theory-u-leading-from-the-future-as-it-emerges.md)  
+- [👑⚖️ The Curse of Bigness: Antitrust in the New Gilded Age](./books/the-curse-of-bigness-antitrust-in-the-new-gilded-age.md)  
+- [🇺🇸🕵️💥 Playing to the Edge: American Intelligence in the Age of Terror](./books/playing-to-the-edge-american-intelligence-in-the-age-of-terror.md)  
   
   
-## [📺 Videos](./videos/index.md) (477)  
+## [📺 Videos](./videos/index.md) (484)  
+- [🤖💡🤝🗣️🏛️ AI Can Help Humans Find Common Ground in Democratic Deliberation – MH Tessler | IASEAI 2025](./videos/ai-can-help-humans-find-common-ground-in-democratic-deliberation-mh-tessler-iaseai-2025.md)  
+- [🤔💡🧠🤖 What Is Understanding? – Geoffrey Hinton | IASEAI 2025](./videos/what-is-understanding-geoffrey-hinton-iaseai-2025.md)  
+- [🚫🏢👑🔄👥 Corporate America’s Biggest Enemy Will Now Lead Mamdani’s Transition Team](./videos/corporate-americas-biggest-enemy-will-now-lead-mamdanis-transition-team.md)  
+- [💬⚖️🏛️ A Conversation with Lina Khan, Former Commissioner of the FTC](./videos/a-conversation-with-lina-khan-former-commissioner-of-the-ftc.md)  
+- [❓🕵️‍♂️🇺🇸📉 What’s Happening to U.S. Intelligence Under the Second Trump Administration? | Senator Mark Warner](./videos/whats-happening-to-us-intelligence-under-the-second-trump-administration-senator-mark-warner.md)  
+- [🗣️🇺🇸🤝 A Conversation with Representative Jim Himes | American Conversations](./videos/a-conversation-with-representative-jim-himes-american-conversations.md)  
+- [⚙️🚫🔥 An engineer's guide to preventing burnout | Jacquelyn MacCoon | TEDxUofT](./videos/an-engineers-guide-to-preventing-burnout-jacquelyn-maccoon-tedxuoft.md)  
+- [🎓💰🚀 The 529 Plan Just Got A Big Upgrade](./videos/the-529-plan-just-got-a-big-upgrade.md)  
 - [🎙️🇺🇸🛥️💥 Brooks and Capehart on the political fallout over Trump's boat strikes](./videos/brooks-and-capehart-on-the-political-fallout-over-trumps-boat-strikes.md)  
 - [🎓🔑🧠🧘 MIT PhD taught me to unlock my brain’s “Sage Mode” - Deep Work (Full Summary)](./videos/mit-phd-taught-me-to-unlock-my-brains-sage-mode-deep-work-full-summary.md)  
-- [🧠📈🥇 15 Books That Will Make You a Top 1% Thinker](./videos/15-books-that-will-make-you-a-top-1-percent-thinker.md)  
-- [🇺🇦🤝🤥 Ukraine and America’s Credibility Crisis - with Anne Applebaum](./videos/ukraine-and-americas-credibility-crisis-with-anne-applebaum.md)  
-- [👶🏆🧠✨ What kids know about motivation (and we don't) | Betsy Blackard | TEDx Claremont Graduate University](./videos/what-kids-know-about-motivation-and-we-dont-betsy-blackard-tedx-claremont-graduate-university.md)  
-- [👧🧠💪🇯🇵 The Japanese Rule That Teaches Kids Self-Discipline (Not Blind Obedience)](./videos/the-japanese-rule-that-teaches-kids-self-discipline-not-blind-obedience.md)  
-- [👑⚔️🏛️ In new book Michael McFaul explores the global fight between autocracy and democracy](./videos/in-new-book-michael-mcfaul-explores-the-global-fight-between-autocracy-and-democracy.md)  
-- [🏛️🤕❓ Architect of Obamacare: Health Care Is Still a Mess | The David Frum Show](./videos/architect-of-obamacare-health-care-is-still-a-mess-the-david-frum-show.md)  
-- [🗣️🏛️🗓️ Politics Chat, December 4, 2025](./videos/politics-chat-december-4-2025.md)  
-- [🌍❓🤔 Making Sense of a World in Crisis | Yuval Noah Harari](./videos/making-sense-of-a-world-in-crisis-yuval-noah-harari.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (84)  
@@ -90,7 +90,7 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
   
   
 ## [🛍️ Products](./products/index.md) (5)  
-- [🦈🔦🐈✨🧹 Shark HV322 Rocket Pet Plus Corded Stick Vacuum with LED Headlights, XL Dust Cup, Lightweight, Perfect for Pet Hair Pickup, Converts to a Hand Vacuum, with (2) Pet Attachments, Bordeaux/Silver](../shark-hv322-rocket-pet-plus-corded-stick-vacuum-with-led-headlights-xl-dust-cup-lightweight-perfect-for-pet-hair-pickup-converts-to-a-hand-vacuum-with-2-pet-attachments-bordeaux-silver.md)  
+- [🦈🔦🐈✨🧹 Shark HV322 Rocket Pet Plus Corded Stick Vacuum with LED Headlights, XL Dust Cup, Lightweight, Perfect for Pet Hair Pickup, Converts to a Hand Vacuum, with (2) Pet Attachments, Bordeaux, Silver](./products/shark-hv322-rocket-pet-plus-corded-stick-vacuum-with-led-headlights-xl-dust-cup-lightweight.md)  
 - [🤖🧹🧼🗺️ iRobot Roomba Plus 505 Combo Robot Vacuum & Mop with AutoWash Dock - Extending Spinning Mop Pads, Self-Empties, Pad Wash & Heated Drying, Self-cleaning, Recognizes & Avoids Obstacles, LiDAR Navigation](./products/irobot-roomba-plus-505-combo-robot-vacuum-mop-with-autowash-dock-extending-spinning-mop-pads-self-empties-pad-wash-heated-drying-self-cleaning-recognizes-avoids-obstacles-lidar-navigation.md)  
 - [👶🌧️💨 Graco Baby Jogging Stroller Universal Rain Cover, Ventilated Weather Shield, Waterproof, Windproof, Versatile Size to Fit Most Jogging Strollers, Vinyl, Clear, Plastic](./products/graco-baby-jogging-stroller-universal-rain-cover-ventilated-weather-shield-waterproof-windproof-versatile-size-to-fit-most-jogging-strollers-vinyl-clear-plastic.md)  
   

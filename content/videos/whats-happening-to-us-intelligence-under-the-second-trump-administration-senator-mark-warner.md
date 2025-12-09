@@ -56,7 +56,7 @@ youtube: https://youtu.be/ecZW7ObacGg
   
 ### ↔️ Similar  
 * [🕵️📜 Legacy of Ashes: The History of the CIA](../books/legacy-of-ashes-the-history-of-the-cia.md) by Tim Weiner: 📜 Recommends this book for its comprehensive historical look at the CIA’s operations, internal conflicts, and its long, often fraught relationship with presidential administrations, which mirrors the concerns about politicization.  
-* 🧠 Director A Memoir by David Cohen: 📖 Offers insight from a former Deputy Director of the CIA on the daily challenges and responsibilities of intelligence leadership in a modern, complex geopolitical environment.  
+* [🇺🇸🕵️💥 Playing to the Edge: American Intelligence in the Age of Terror](../books/playing-to-the-edge-american-intelligence-in-the-age-of-terror.md) by Michael V. Hayden: Offers insight from a former Director of the CIA on the daily challenges and ethical responsibilities of intelligence leadership in a modern, complex geopolitical environment defined by the War on Terror.  
   
 ### 🆚 Contrasting  
 * ⚖️ The Constitution and the New Counterterrorism by Robert Chesney and Ashley Deeks: 📚 Provides a legal and structural counterpoint, focusing on how constitutional law frames intelligence collection, oversight, and presidential power in national security, offering a more systemic view than the political critique in the video.  

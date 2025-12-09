@@ -44,7 +44,7 @@ youtube: https://youtube.com/shorts/PU_ItsNyhGA
 ## 📚 Book Recommendations  
   
 ### ↔️ Similar  
-* 📕 The Curse of Bigness: Antitrust in the New Gilded Age by Tim Wu advocates for a return to the older, broader anti-monopoly tradition to curb the power of massive corporations, a key idea of the New Brandeis movement.  
+* [👑⚖️ The Curse of Bigness: Antitrust in the New Gilded Age](../books/the-curse-of-bigness-antitrust-in-the-new-gilded-age.md) by Tim Wu advocates for a return to the older, broader anti-monopoly tradition to curb the power of massive corporations, a key idea of the New Brandeis movement.  
 * 📗 The Antitrust Casebook: Principles and Applications by William E Kovacic and Andrew N Kleit provides a detailed look at contemporary antitrust law, offering a comprehensive framework that aligns with Khan's enforcement efforts against powerful firms.  
   
 ### 🆚 Contrasting  

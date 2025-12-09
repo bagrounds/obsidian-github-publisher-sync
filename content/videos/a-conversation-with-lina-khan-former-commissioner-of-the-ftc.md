@@ -49,7 +49,7 @@ youtube: https://youtu.be/YdxkifYjBFY
   
 ### ↔️ Similar  
 * [👑⚔️🏛️ Goliath: The 100-Year War Between Monopoly Power and Democracy](../books/goliath-the-100-year-war-between-monopoly-power-and-democracy.md) by Matt Stoller explores the continuous fight against concentrated economic power throughout US history, mirroring the video's emphasis on the political origins of anti-monopoly thought.  
-* 🔗 The Curse of Bigness Antitrust in the New Gilded Age by Tim Wu is a concise argument for reinvigorating competition policy to address the concentrated power of modern tech monopolies, aligning with the video's critique of the status quo.  
+* [👑⚖️ The Curse of Bigness: Antitrust in the New Gilded Age](../books/the-curse-of-bigness-antitrust-in-the-new-gilded-age.md) by Tim Wu is a concise argument for reinvigorating competition policy to address the concentrated power of modern tech monopolies, aligning with the video's critique of the status quo.  
   
 ### 🆚 Contrasting  
 * 🧑‍🏫 The Antitrust Paradox by Robert H Bork is the foundational text of the Chicago School, arguing that the only legitimate purpose of antitrust is to maximize efficiency and consumer welfare, the very viewpoint the video's speaker seeks to overturn.  

@@ -8,9 +8,9 @@ backlinks: false
 ---
 [Home](../index.md)  
 # 🪞 Reflections (390)  
-- [2025-12-09](./2025-12-09.md)  
-- [2025-12-08](./2025-12-08.md)  
-- [2025-12-07](./2025-12-07.md)  
+- [2025-12-09 | 💡 Understanding 🌎 Reality 🌌 Beyond ⚙️ Mechanistic 🤔 Deliberation ☑️ Is 📍 Near 📚📺✍️](./2025-12-09.md)  
+- [2025-12-08 | 🏰 Keep 🚧 Stumbling on the 🌿 Nature of 👑 Gilded 😱 Terror 🏫 Theory 📚](./2025-12-08.md)  
+- [2025-12-07 | ⚖️ Lina Khan’s 🤝 Gentle 🧘‍♀️ Sage Mode 🧠 Intelligence 📜 Guide to 🥊 Punishing 👑 Goliath’s 💰 529 🤿 Deep 🏢 Corporate 🤝 Monopoly 🚢 Boat 💥 Strikes 🌊 While 💧 Drowning in 🗳️ Political 🔒 Prison 📚📺📰](./2025-12-07.md)  
 - [2025-12-06 | 🧾 Debt | 🎁 Gift 📚](./2025-12-06.md)  
 - [2025-12-05 | 💳 Credibility | 👑 Autocracy | 🥷 Kleptopia | 🧑‍🧑‍🧒 Parenting 📺📚](./2025-12-05.md)  
 - [2025-12-04 | ⛈️ Climate | 👹 Corruption | ⚠️ Crises | 🏥 Healthcare 📚📺](./2025-12-04.md)  

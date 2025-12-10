@@ -7,7 +7,7 @@ URL: https://bagrounds.org/books
 backlinks: false
 ---
 [Home](../index.md)  
-# 📚 Books (820)  
+# 📚 Books (822)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)  
 - [🧑‍🤝‍🧑📈 10 to 25: The Science of Motivating Young People: A Groundbreaking Approach to Leading the Next Generation - And Making Your Own Life Easier](./10-to-25-the-science-of-motivating-young-people-a-groundbreaking-approach-to-leading-the-next-generation-and-making-your-own-life-easier.md)  
@@ -82,6 +82,7 @@ backlinks: false
 - [👤🧠 Being You: A New Science of Consciousness](./being-you-a-new-science-of-consciousness.md)  
 - [🧑‍🤝‍🧑 Belonging: The Science of Creating Connection and Bridging Divides](./belonging-the-science-of-creating-connection-and-bridging-divides.md)  
 - [📉➡️👍 Better Than Before: What I Learned About Making and Breaking Habits - to Sleep More, Quit Sugar, Procrastinate Less, and Generally Build a Happier Life](./better-than-before.md)  
+- [🧠💰🌍 Beyond Growth: The Economics of Sustainable Development](./beyond-growth-the-economics-of-sustainable-development.md)  
 - [🧑‍🤝‍🧑⚙️🧬 Beyond the Science: How People, Process, and Systems Transform the Business of Life Sciences](./beyond-the-science-how-people-process-and-systems-transform-the-business-of-life-sciences.md)  
 - [🧑‍💻🤖 Beyond Vibe Coding: From Coder to AI-Era Developer](./beyond-vibe-coding-from-coder-to-ai-era-developer.md)  
 - [⚛️🌎 Beyond Weird: Why Everything You Thought You Knew about Quantum Physics Is Different](./beyond-weird.md)  
@@ -726,6 +727,7 @@ backlinks: false
 - [📱🧠 The Shallows: What the Internet Is Doing to Our Brains](./the-shallows-what-the-internet-is-doing-to-our-brains.md)  
 - [😥🏫🇺🇸 The Shame of the Nation: The Restoration of Apartheid Schooling in America](./the-shame-of-the-nation-the-restoration-of-apartheid-schooling-in-america.md)  
 - [📡🌫️🔮🎲 The Signal and the Noise: Why So Many Predictions Fail - but Some Don't](./the-signal-and-the-noise.md)  
+- [🤖🧬⬆️ The Singularity Is Near: When Humans Transcend Biology](./the-singularity-is-near-when-humans-transcend-biology.md)  
 - [💀🌍📉⏳ The Sixth Extinction: An Unnatural History](./the-sixth-extinction.md)  
 - [😴🛠️ The Sleep Solution: Why Your Sleep is Broken and How to Fix It](./the-sleep-solution-why-your-sleep-is-broken-and-how-to-fix-it.md)  
 - [🚩⚖️ The Socialist Manifesto: The Case for Radical Politics in an Era of Extreme Inequality](./the-socialist-manifesto-the-case-for-radical-politics-in-an-era-of-extreme-inequality.md)  

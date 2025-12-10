@@ -52,13 +52,13 @@ youtube: https://youtu.be/lDKhq2ykiZA
 ## 📚 Book Recommendations  
   
 ### ↔️ Similar  
-* 🌎 The Big Ones: How Extraordinary Crises Shaped America - and What We Can Do to Avoid a Repeat by Dr. Lucy Jones. This book explores disaster science and policy, urging proactive preparedness against mega-disasters like this historic flood.  
-* 🧊 A Farewell to Ice: A Report from the Arctic by Peter Wadhams. This work details the mechanics of global warming and arctic ice melt, which are major factors influencing extreme weather events, including intense atmospheric rivers.  
+* 🌎 [🌋🌊🌪️🔥 The Big Ones: How Natural Disasters Have Shaped Us (and What We Can Do About Them)](../books/the-big-ones-how-natural-disasters-have-shaped-us-and-what-we-can-do-about-them.md) by Dr. Lucy Jones explores disaster science and policy, urging proactive preparedness against mega-disasters like this historic flood.  
+* 🧊 A Farewell to Ice: A Report from the Arctic by Peter Wadhams details the mechanics of global warming and arctic ice melt, which are major factors influencing extreme weather events, including intense atmospheric rivers.  
   
 ### 🆚 Contrasting  
-* 🏗️ Cadillac Desert: The American West and Its Disappearing Water by Marc Reisner. This classic contrasts the natural process of water with the politics and massive, often flawed, human infrastructure projects meant to control it throughout the West.  
-* 🏛️ The Power Broker: Robert Moses and the Fall of New York by Robert A. Caro. This book provides a political contrast, showing how non-environmental decisions by powerful figures shape public works and create long-term structural vulnerabilities in urban areas.  
+* 🏗️ Cadillac Desert: The American West and Its Disappearing Water by Marc Reisner contrasts the natural process of water with the politics and massive, often flawed, human infrastructure projects meant to control it throughout the West.  
+* 🏛️ The Power Broker: Robert Moses and the Fall of New York by Robert A. Caro provides a political contrast, showing how non-environmental decisions by powerful figures shape public works and create long-term structural vulnerabilities in urban areas.  
   
 ### 🎨 Creatively Related  
-* 🚣 The Emerald Mile: The Epic Story of the Fastest Ride in History Through the Heart of the Grand Canyon by Kevin Fedarko. This book tangentially relates by describing the raw, awe-inspiring, and deadly power of a major river system during a historic and unprecedented flood.  
-* 🎣 Converging Waters: Managing the Northwest's Public Rivers by Robert H. Becker. This recommendation focuses on the history of resource management, conflicting interests, and the political life of the Pacific Northwest's specific river systems, which are now flooding.
+* 🚣 The Emerald Mile: The Epic Story of the Fastest Ride in History Through the Heart of the Grand Canyon by Kevin Fedarko tangentially relates by describing the raw, awe-inspiring, and deadly power of a major river system during a historic and unprecedented flood.  
+* 🎣 Converging Waters: Managing the Northwest's Public Rivers by Robert H. Becker focuses on the history of resource management, conflicting interests, and the political life of the Pacific Northwest's specific river systems, which are now flooding.

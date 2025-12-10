@@ -13,9 +13,9 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 💬 Comment on any page with your GitHub account.  
   
 ## [🪞 Reflections](./reflections/index.md) ~ Blog (390)  
-- [2025-12-09](./reflections/2025-12-09.md)  
-- [2025-12-08](./reflections/2025-12-08.md)  
-- [2025-12-07](./reflections/2025-12-07.md)  
+- [2025-12-09 | 💡 Understanding 🌎 Reality 🌌 Beyond ⚙️ Mechanistic 🤔 Deliberation ☑️ Is 📍 Near 📚📺✍️](./reflections/2025-12-09.md)  
+- [2025-12-08 | 🏰 Keep 🚧 Stumbling on the 🌿 Nature of 👑 Gilded 😱 Terror 🏫 Theory 📚](./reflections/2025-12-08.md)  
+- [2025-12-07 | ⚖️ Lina Khan’s 🤝 Gentle 🧘‍♀️ Sage Mode 🧠 Intelligence 📜 Guide to 🥊 Punishing 👑 Goliath’s 💰 529 🤿 Deep 🏢 Corporate 🤝 Monopoly 🚢 Boat 💥 Strikes 🌊 While 💧 Drowning in 🗳️ Political 🔒 Prison 📚📺📰](./reflections/2025-12-07.md)  
 - [2025-12-06 | 🧾 Debt | 🎁 Gift 📚](./reflections/2025-12-06.md)  
 - [2025-12-05 | 💳 Credibility | 👑 Autocracy | 🥷 Kleptopia | 🧑‍🧑‍🧒 Parenting 📺📚](./reflections/2025-12-05.md)  
 - [2025-12-04 | ⛈️ Climate | 👹 Corruption | ⚠️ Crises | 🏥 Healthcare 📚📺](./reflections/2025-12-04.md)  
@@ -25,20 +25,21 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [2025-11-30 | 🧾 Debt 📚](./reflections/2025-11-30.md)  
   
   
-## [📚 Books](./books/index.md) (820)  
+## [📚 Books](./books/index.md) (822)  
+- [🧠💰🌍 Beyond Growth: The Economics of Sustainable Development](./books/beyond-growth-the-economics-of-sustainable-development.md)  
+- [📜🎮🏞️ Rules, Games, and Common Pool Resources](./books/rules-games-and-common-pool-resources.md)  
+- [⚙️🕸️🧩🔑 Distributed Systems: Principles and Paradigms](./books/distributed-systems.md)  
+- [🤔💪 Attention and effort](./books/attention.md)  
+- [⚠️🤖📈 Out of Control: The New Biology of Machines, Social Systems, and the Economic World](./books/out-of-control-the-new-biology-of-machines-social-systems-and-the-economic-world.md)  
+- [🤖🧬⬆️ The Singularity Is Near: When Humans Transcend Biology](./books/the-singularity-is-near-when-humans-transcend-biology.md)  
 - [🌐🧭❓🔍🗺️ Complexity: A Guided Tour](./books/complexity.md)  
 - [🧬🎭👁️ The Case Against Reality: Why Evolution Hid the Truth from Our Eyes](./books/the-case-against-reality-why-evolution-hid-the-truth-from-our-eyes.md)  
 - [🧠🧘🏼‍♀️ Neuro-Discipline: Everyday Neuroscience for Self-Discipline, Focus, and Defeating Your Brain's Impulsive and Distracted Nature](./books/neuro-discipline-everyday-neuroscience-for-self-discipline-focus-and-defeating-your-brains-impulsive-and-distracted-nature.md)  
 - [🇯🇵🔑😊💯 Ikigai: The Japanese Secret to a Long and Happy Life](./books/ikigai.md)  
-- [🌊🧘🏼‍♀️🧠📈 Flow: The Psychology of Optimal Experience](./books/flow-the-psychology-of-optimal-experience.md)  
-- [😮😊 Stumbling on Happiness](./books/stumbling-on-happiness.md)  
-- [⚙️🔄 The Nature of Technology: What It Is and How It Evolves](./books/the-nature-of-technology-what-it-is-and-how-it-evolves.md)  
-- [⬇️⬆️🧭🌟 Theory U: Leading from the Future as It Emerges](./books/theory-u-leading-from-the-future-as-it-emerges.md)  
-- [👑⚖️ The Curse of Bigness: Antitrust in the New Gilded Age](./books/the-curse-of-bigness-antitrust-in-the-new-gilded-age.md)  
-- [🇺🇸🕵️💥 Playing to the Edge: American Intelligence in the Age of Terror](./books/playing-to-the-edge-american-intelligence-in-the-age-of-terror.md)  
   
   
-## [📺 Videos](./videos/index.md) (484)  
+## [📺 Videos](./videos/index.md) (485)  
+- [📚🤖⚙️💡 An Introduction to Mechanistic Interpretability – Neel Nanda | IASEAI 2025](./videos/an-introduction-to-mechanistic-interpretability-neel-nanda-iaseai-2025.md)  
 - [🤖💡🤝🗣️🏛️ AI Can Help Humans Find Common Ground in Democratic Deliberation – MH Tessler | IASEAI 2025](./videos/ai-can-help-humans-find-common-ground-in-democratic-deliberation-mh-tessler-iaseai-2025.md)  
 - [🤔💡🧠🤖 What Is Understanding? – Geoffrey Hinton | IASEAI 2025](./videos/what-is-understanding-geoffrey-hinton-iaseai-2025.md)  
 - [🚫🏢👑🔄👥 Corporate America’s Biggest Enemy Will Now Lead Mamdani’s Transition Team](./videos/corporate-americas-biggest-enemy-will-now-lead-mamdanis-transition-team.md)  
@@ -48,7 +49,6 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [⚙️🚫🔥 An engineer's guide to preventing burnout | Jacquelyn MacCoon | TEDxUofT](./videos/an-engineers-guide-to-preventing-burnout-jacquelyn-maccoon-tedxuoft.md)  
 - [🎓💰🚀 The 529 Plan Just Got A Big Upgrade](./videos/the-529-plan-just-got-a-big-upgrade.md)  
 - [🎙️🇺🇸🛥️💥 Brooks and Capehart on the political fallout over Trump's boat strikes](./videos/brooks-and-capehart-on-the-political-fallout-over-trumps-boat-strikes.md)  
-- [🎓🔑🧠🧘 MIT PhD taught me to unlock my brain’s “Sage Mode” - Deep Work (Full Summary)](./videos/mit-phd-taught-me-to-unlock-my-brains-sage-mode-deep-work-full-summary.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (84)  
@@ -60,11 +60,11 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
   
   
 ## [📄  Articles](./articles/index.md) (74)  
+- [❓📈🤦 Failing to Understand the Exponential, Again](./articles/failing-to-understand-the-exponential-again.md)  
 - [🧠🗣️💻 From Frege to ChatGPT: Compositionality in Language, Cognition, and Deep Neural Networks](./articles/from-frege-to-chatgpt-compositionality-in-language-cognition-and-deep-neural-networks.md)  
 - [🪞🇺🇸💔 Mirror, Mirror 2024: A Portrait of the Failing U.S. Health System](./articles/mirror-mirror-2024-a-portrait-of-the-failing-us-health-system.md)  
 - [🧑‍🤝‍🧑🤖🧠 Orchestrating Human AI Teams: The Manager Agent as a Unifying Research Challenge](./articles/orchestrating-human-ai-teams-the-manager-agent-as-a-unifying-research-challenge.md)  
 - [🗣️🧠🧑‍💻📚 Relating Natural Language Aptitude to Individual Differences in Learning Programming Languages](./articles/relating-natural-language-aptitude-to-individual-differences-in-learning-programming-languages.md)  
-- [🙋‍♂️🚩🚫 Musk’s inauguration salute is not the only apparent fascist signal from Trump’s administration](./articles/musks-inauguration-salute-is-not-the-only-apparent-fascist-signal-from-trumps-administration.md)  
   
   
 ## [🤖💬 Bot Chats](./bot-chats/index.md) (46)  

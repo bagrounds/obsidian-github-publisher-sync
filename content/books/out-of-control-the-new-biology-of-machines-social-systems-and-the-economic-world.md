@@ -89,7 +89,7 @@ affiliate link: https://amzn.to/49JB1vh
 ### 🤝 Related  
 * [🌐🔗🧠📖 Thinking in Systems: A Primer](./thinking-in-systems.md) by Donella H. Meadows  
 * 🔮 The Inevitable: Understanding the 12 Technological Forces That Will Shape Our Future by Kevin Kelly  
-* 🚀 The Singularity Is Near by Ray Kurzweil  
+* [🤖🧬⬆️ The Singularity Is Near: When Humans Transcend Biology](./the-singularity-is-near-when-humans-transcend-biology.md) by Ray Kurzweil  
   
 ## 🫵 What Do You Think?  
 Which of Kelly's Nine Laws of God do you find most impactful today? How has the balance between control and emergence shifted in your professional domain since the book's publication?

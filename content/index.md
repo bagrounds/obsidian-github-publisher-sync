@@ -25,7 +25,10 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [2025-12-02 | 🎼 Compositionality | 👹🪢🇺🇸🏛️ President Intimidates Senators 📺📰📄📚](./reflections/2025-12-02.md)  
   
   
-## [📚 Books](./books/index.md) (823)  
+## [📚 Books](./books/index.md) (824)  
+- [🪴🌱 RHS How to Garden When You're New to Gardening: The Basics for Absolute Beginners](./books/rhs-how-to-garden-when-youre-new-to-gardening-the-basics-for-beginners.md)  
+- [🌍🌿 Gaia's Garden: A Guide to Home-Scale Permaculture](./books/gaias-garden.md)  
+- [🌱🟩⬆️ Square Foot Gardening, 4th Edition: The World’s Most Popular Growing Method to Harvest MORE Food from Less Space](./books/square-foot-gardening-4th-edition-the-worlds-most-popular-growing-method-to-harvest-more-food-from-less-space.md)  
 - [🌋🌊🌪️🔥 The Big Ones: How Natural Disasters Have Shaped Us (and What We Can Do About Them)](./books/the-big-ones-how-natural-disasters-have-shaped-us-and-what-we-can-do-about-them.md)  
 - [🧠💰🌍 Beyond Growth: The Economics of Sustainable Development](./books/beyond-growth-the-economics-of-sustainable-development.md)  
 - [📜🎮🏞️ Rules, Games, and Common Pool Resources](./books/rules-games-and-common-pool-resources.md)  
@@ -33,22 +36,19 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [🤔💪 Attention and effort](./books/attention.md)  
 - [⚠️🤖📈 Out of Control: The New Biology of Machines, Social Systems, and the Economic World](./books/out-of-control-the-new-biology-of-machines-social-systems-and-the-economic-world.md)  
 - [🤖🧬⬆️ The Singularity Is Near: When Humans Transcend Biology](./books/the-singularity-is-near-when-humans-transcend-biology.md)  
-- [🌐🧭❓🔍🗺️ Complexity: A Guided Tour](./books/complexity.md)  
-- [🧬🎭👁️ The Case Against Reality: Why Evolution Hid the Truth from Our Eyes](./books/the-case-against-reality-why-evolution-hid-the-truth-from-our-eyes.md)  
-- [🧠🧘🏼‍♀️ Neuro-Discipline: Everyday Neuroscience for Self-Discipline, Focus, and Defeating Your Brain's Impulsive and Distracted Nature](./books/neuro-discipline-everyday-neuroscience-for-self-discipline-focus-and-defeating-your-brains-impulsive-and-distracted-nature.md)  
   
   
-## [📺 Videos](./videos/index.md) (490)  
+## [📺 Videos](./videos/index.md) (494)  
+- [🌱👨‍👩‍👧‍👦🍎 How a 1/8 Acre Garden Feeds a Family of 6 ALL YEAR!](./videos/how-a-1-8-acre-garden-feeds-a-family-of-6-all-year.md)  
+- [✨🧠🧹🗄️ Cleaning And Organizing An ADHD Logjam](./videos/cleaning-and-organizing-an-adhd-logjam.md)  
+- [🧠⚡️👶🏽 5 Tiny Habits That Supercharge Your Child's Brain Development | Dr. Arif Khan](./videos/5-tiny-habits-that-supercharge-your-childs-brain-development-dr-arif-khan.md)  
+- [🧘⏳⏱️ The Korean Method to Calm Tantrums in 60 Seconds](./videos/the-korean-method-to-calm-tantrums-in-60-seconds.md)  
 - [🗳️📉🏛️❌🇺🇸 How Trump’s Plan to Steal the 2026 Elections Could Fail | The David Frum Show](./videos/how-trumps-plan-to-steal-the-2026-elections-could-fail-the-david-frum-show.md)  
 - [🧠💡🧮🧠 Forough Arabshahi: Neuro-Symbolic Learning Algorithms for Automated Reasoning](./videos/forough-arabshahi-neuro-symbolic-learning-algorithms-for-automated-reasoning.md)  
 - [🚢🛢️🇺🇸🇻🇪💥 U.S. seizes oil tanker off the coast of Venezuela, escalating tensions with Maduro](./videos/us-seizes-oil-tanker-off-the-coast-of-venezuela-escalating-tensions-with-maduro.md)  
 - [🌊🚨🇺🇸 Gov. Ferguson Declares Emergency as ‘Historic Flooding’ Hits Washington](./videos/gov-ferguson-declares-emergency-as-historic-flooding-hits-washington.md)  
 - [🧠💡📈🚀 Learning, Reasoning, and Planning with Neuro-Symbolic Concepts–Jiayuan Mao (MIT)](./videos/learning-reasoning-and-planning-with-neuro-symbolic-concepts-jiayuan-mao-mit.md)  
 - [📚🤖⚙️💡 An Introduction to Mechanistic Interpretability – Neel Nanda | IASEAI 2025](./videos/an-introduction-to-mechanistic-interpretability-neel-nanda-iaseai-2025.md)  
-- [🤖💡🤝🗣️🏛️ AI Can Help Humans Find Common Ground in Democratic Deliberation – MH Tessler | IASEAI 2025](./videos/ai-can-help-humans-find-common-ground-in-democratic-deliberation-mh-tessler-iaseai-2025.md)  
-- [🤔💡🧠🤖 What Is Understanding? – Geoffrey Hinton | IASEAI 2025](./videos/what-is-understanding-geoffrey-hinton-iaseai-2025.md)  
-- [🚫🏢👑🔄👥 Corporate America’s Biggest Enemy Will Now Lead Mamdani’s Transition Team](./videos/corporate-americas-biggest-enemy-will-now-lead-mamdanis-transition-team.md)  
-- [💬⚖️🏛️ A Conversation with Lina Khan, Former Commissioner of the FTC](./videos/a-conversation-with-lina-khan-former-commissioner-of-the-ftc.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (84)  

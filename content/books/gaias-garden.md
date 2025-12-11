@@ -61,7 +61,7 @@ CTA: 🌱 Cultivate resilience.
   
 ### ↔️ Contrasting Perspectives (Different Approaches to Food & Land)  
 * 🧑‍🌾 **The Market Gardener** by Jean-Martin Fortier: Focuses on intensive, small-scale *market* gardening using efficient, biointensive methods, which contrasts with the ecosystem-mimicry focus of permaculture, though shares organic principles.  
-* 📏 **Square Foot Gardening** by Mel Bartholomew: A highly structured, space-optimizing method focused on maximizing vegetable yields in small, gridded raised beds, contrasting with permaculture's emphasis on naturalistic design and perennial systems.  
+* **[🌱🟩⬆️ Square Foot Gardening, 4th Edition: The World’s Most Popular Growing Method to Harvest MORE Food from Less Space](./square-foot-gardening-4th-edition-the-worlds-most-popular-growing-method-to-harvest-more-food-from-less-space.md)** by Mel Bartholomew: A highly structured, space-optimizing method focused on maximizing vegetable yields in small, gridded raised beds, contrasting with permaculture's emphasis on naturalistic design and perennial systems.  
 * 🚜 **Books on Conventional/Industrial Agriculture:** While not specific titles from the search, texts focusing on large-scale monocultures, synthetic inputs, and mechanization would offer a stark contrast to Gaia's Garden's principles.  
 * 🤷‍♀️ **Clueless in the Garden** by Yvonne Cunnington: A general beginner's guide covering conventional gardening topics like non-edible plants, lawns, and basic horticulture, contrasting with Gaia's Garden's specialized ecological focus.  
   

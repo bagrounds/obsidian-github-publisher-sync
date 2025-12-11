@@ -49,7 +49,7 @@ affiliate link: https://amzn.to/450yhHJ
 * 📅 **[🗓️🌷 RHS Gardening Through the Year](./rhs-gardening-through-the-year.md) by Ian Spence:** 🗓️ A month-by-month guide, often paired with "How to Garden When You're New," focusing on seasonal tasks.  
 * 🧑‍🌾 **The Old Farmer's Almanac Vegetable Gardener's Handbook:** 🍅 A popular choice focusing specifically on growing vegetables for beginners.  
 * 🌷 **Gardening for Everyone by Julia Watkins:** 📸 Praised for its beautiful photography and simple, practical information and projects.  
-* 📐 **All New Square Foot Gardening (3rd Edition) by Mel Bartholomew:** 📏 Focuses on a specific, space-saving method for vegetable gardening, great for beginners.  
+* **[🌱🟩⬆️ Square Foot Gardening, 4th Edition: The World’s Most Popular Growing Method to Harvest MORE Food from Less Space](./square-foot-gardening-4th-edition-the-worlds-most-popular-growing-method-to-harvest-more-food-from-less-space.md) by Mel Bartholomew:** 📏 Focuses on a specific, space-saving method for vegetable gardening, great for beginners.  
 * 🧱 **Raised-Bed Gardening for Beginners:** 🧑‍🔧 Guides readers specifically on creating and managing raised garden beds.  
 * 🪴 **RHS How to Garden New Edition by Guy Barter:** 🌼 Another RHS title offering a practical introduction, covering essentials from bulbs to borders.  
   

@@ -12,20 +12,21 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 ❔ What do 🫵 _you_ 🤔 think?  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (390)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (392)  
+- [2025-12-11](./reflections/2025-12-11.md)  
+- [2025-12-10 | 🔮 Planning 🚨 Emergency ⚠️ Symbolic 🇻🇪 Venezuela 🚁 Disasters 📺📰📚](./reflections/2025-12-10.md)  
 - [2025-12-09 | 💡 Understanding 🌎 Reality 🌌 Beyond ⚙️ Mechanistic 🤔 Deliberation ☑️ Is 📍 Near 📚📺✍️](./reflections/2025-12-09.md)  
 - [2025-12-08 | 🏰 Keep 🚧 Stumbling on the 🌿 Nature of 👑 Gilded 😱 Terror 🏫 Theory 📚](./reflections/2025-12-08.md)  
-- [2025-12-07 | ⚖️ Lina Khan’s 🤝 Gentle 🧘‍♀️ Sage Mode 🧠 Intelligence 📜 Guide to 🥊 Punishing 👑 Goliath’s 💰 529 🤿 Deep 🏢 Corporate 🤝 Monopoly 🚢 Boat 💥 Strikes 🌊 While 💧 Drowning in 🗳️ Political 🔒 Prison 📚📺📰](./reflections/2025-12-07.md)  
+- [2025-12-07 | ⚖️ Lina Khan’s 🦉 Sage 🧠 Intelligence 📜 Guide to 🥊 Punish 💰 529 👑 Goliath 🏢 Corporate 🚢 Boat 💥 Strikes 🌊 While 💧 Drowning in 🌋 Ashes 📚📺📰](./reflections/2025-12-07.md)  
 - [2025-12-06 | 🧾 Debt | 🎁 Gift 📚](./reflections/2025-12-06.md)  
 - [2025-12-05 | 💳 Credibility | 👑 Autocracy | 🥷 Kleptopia | 🧑‍🧑‍🧒 Parenting 📺📚](./reflections/2025-12-05.md)  
 - [2025-12-04 | ⛈️ Climate | 👹 Corruption | ⚠️ Crises | 🏥 Healthcare 📚📺](./reflections/2025-12-04.md)  
 - [2025-12-03 | 🥇📚 Best Books | 🏚️👥 Homeless | 🚀🚣‍♂️ War Crimes | 🇨🇳 China 📺📚🌌](./reflections/2025-12-03.md)  
 - [2025-12-02 | 🎼 Compositionality | 👹🪢🇺🇸🏛️ President Intimidates Senators 📺📰📄📚](./reflections/2025-12-02.md)  
-- [2025-12-01 | 💼 Jobs | 📏 Rules | 🐵 Humanity 📚📺](./reflections/2025-12-01.md)  
-- [2025-11-30 | 🧾 Debt 📚](./reflections/2025-11-30.md)  
   
   
-## [📚 Books](./books/index.md) (822)  
+## [📚 Books](./books/index.md) (823)  
+- [🌋🌊🌪️🔥 The Big Ones: How Natural Disasters Have Shaped Us (and What We Can Do About Them)](./books/the-big-ones-how-natural-disasters-have-shaped-us-and-what-we-can-do-about-them.md)  
 - [🧠💰🌍 Beyond Growth: The Economics of Sustainable Development](./books/beyond-growth-the-economics-of-sustainable-development.md)  
 - [📜🎮🏞️ Rules, Games, and Common Pool Resources](./books/rules-games-and-common-pool-resources.md)  
 - [⚙️🕸️🧩🔑 Distributed Systems: Principles and Paradigms](./books/distributed-systems.md)  
@@ -35,20 +36,19 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [🌐🧭❓🔍🗺️ Complexity: A Guided Tour](./books/complexity.md)  
 - [🧬🎭👁️ The Case Against Reality: Why Evolution Hid the Truth from Our Eyes](./books/the-case-against-reality-why-evolution-hid-the-truth-from-our-eyes.md)  
 - [🧠🧘🏼‍♀️ Neuro-Discipline: Everyday Neuroscience for Self-Discipline, Focus, and Defeating Your Brain's Impulsive and Distracted Nature](./books/neuro-discipline-everyday-neuroscience-for-self-discipline-focus-and-defeating-your-brains-impulsive-and-distracted-nature.md)  
-- [🇯🇵🔑😊💯 Ikigai: The Japanese Secret to a Long and Happy Life](./books/ikigai.md)  
   
   
-## [📺 Videos](./videos/index.md) (485)  
+## [📺 Videos](./videos/index.md) (490)  
+- [🗳️📉🏛️❌🇺🇸 How Trump’s Plan to Steal the 2026 Elections Could Fail | The David Frum Show](./videos/how-trumps-plan-to-steal-the-2026-elections-could-fail-the-david-frum-show.md)  
+- [🧠💡🧮🧠 Forough Arabshahi: Neuro-Symbolic Learning Algorithms for Automated Reasoning](./videos/forough-arabshahi-neuro-symbolic-learning-algorithms-for-automated-reasoning.md)  
+- [🚢🛢️🇺🇸🇻🇪💥 U.S. seizes oil tanker off the coast of Venezuela, escalating tensions with Maduro](./videos/us-seizes-oil-tanker-off-the-coast-of-venezuela-escalating-tensions-with-maduro.md)  
+- [🌊🚨🇺🇸 Gov. Ferguson Declares Emergency as ‘Historic Flooding’ Hits Washington](./videos/gov-ferguson-declares-emergency-as-historic-flooding-hits-washington.md)  
+- [🧠💡📈🚀 Learning, Reasoning, and Planning with Neuro-Symbolic Concepts–Jiayuan Mao (MIT)](./videos/learning-reasoning-and-planning-with-neuro-symbolic-concepts-jiayuan-mao-mit.md)  
 - [📚🤖⚙️💡 An Introduction to Mechanistic Interpretability – Neel Nanda | IASEAI 2025](./videos/an-introduction-to-mechanistic-interpretability-neel-nanda-iaseai-2025.md)  
 - [🤖💡🤝🗣️🏛️ AI Can Help Humans Find Common Ground in Democratic Deliberation – MH Tessler | IASEAI 2025](./videos/ai-can-help-humans-find-common-ground-in-democratic-deliberation-mh-tessler-iaseai-2025.md)  
 - [🤔💡🧠🤖 What Is Understanding? – Geoffrey Hinton | IASEAI 2025](./videos/what-is-understanding-geoffrey-hinton-iaseai-2025.md)  
 - [🚫🏢👑🔄👥 Corporate America’s Biggest Enemy Will Now Lead Mamdani’s Transition Team](./videos/corporate-americas-biggest-enemy-will-now-lead-mamdanis-transition-team.md)  
 - [💬⚖️🏛️ A Conversation with Lina Khan, Former Commissioner of the FTC](./videos/a-conversation-with-lina-khan-former-commissioner-of-the-ftc.md)  
-- [❓🕵️‍♂️🇺🇸📉 What’s Happening to U.S. Intelligence Under the Second Trump Administration? | Senator Mark Warner](./videos/whats-happening-to-us-intelligence-under-the-second-trump-administration-senator-mark-warner.md)  
-- [🗣️🇺🇸🤝 A Conversation with Representative Jim Himes | American Conversations](./videos/a-conversation-with-representative-jim-himes-american-conversations.md)  
-- [⚙️🚫🔥 An engineer's guide to preventing burnout | Jacquelyn MacCoon | TEDxUofT](./videos/an-engineers-guide-to-preventing-burnout-jacquelyn-maccoon-tedxuoft.md)  
-- [🎓💰🚀 The 529 Plan Just Got A Big Upgrade](./videos/the-529-plan-just-got-a-big-upgrade.md)  
-- [🎙️🇺🇸🛥️💥 Brooks and Capehart on the political fallout over Trump's boat strikes](./videos/brooks-and-capehart-on-the-political-fallout-over-trumps-boat-strikes.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (84)  

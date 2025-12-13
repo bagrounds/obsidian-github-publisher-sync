@@ -12,8 +12,10 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 ❔ What do 🫵 _you_ 🤔 think?  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (392)  
-- [2025-12-11](./reflections/2025-12-11.md)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (394)  
+- [2025-12-13](./reflections/2025-12-13.md)  
+- [2025-12-12 | 🇺🇸 Americans 🚁 Mobilise 💲 Krugman 🔍 Investigation 🐘 Politics 📚📰📺🌌](./reflections/2025-12-12.md)  
+- [2025-12-11 | 🧠 Habits 🧘‍♀️ Calm ⚡️ ADHD 🌎 Wherever 🌱 Gardening 🗓️ Plan 🍽️ Feeds](./reflections/2025-12-11.md)  
 - [2025-12-10 | 🔮 Planning 🚨 Emergency ⚠️ Symbolic 🇻🇪 Venezuela 🚁 Disasters 📺📰📚](./reflections/2025-12-10.md)  
 - [2025-12-09 | 💡 Understanding 🌎 Reality 🌌 Beyond ⚙️ Mechanistic 🤔 Deliberation ☑️ Is 📍 Near 📚📺✍️](./reflections/2025-12-09.md)  
 - [2025-12-08 | 🏰 Keep 🚧 Stumbling on the 🌿 Nature of 👑 Gilded 😱 Terror 🏫 Theory 📚](./reflections/2025-12-08.md)  
@@ -21,11 +23,10 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [2025-12-06 | 🧾 Debt | 🎁 Gift 📚](./reflections/2025-12-06.md)  
 - [2025-12-05 | 💳 Credibility | 👑 Autocracy | 🥷 Kleptopia | 🧑‍🧑‍🧒 Parenting 📺📚](./reflections/2025-12-05.md)  
 - [2025-12-04 | ⛈️ Climate | 👹 Corruption | ⚠️ Crises | 🏥 Healthcare 📚📺](./reflections/2025-12-04.md)  
-- [2025-12-03 | 🥇📚 Best Books | 🏚️👥 Homeless | 🚀🚣‍♂️ War Crimes | 🇨🇳 China 📺📚🌌](./reflections/2025-12-03.md)  
-- [2025-12-02 | 🎼 Compositionality | 👹🪢🇺🇸🏛️ President Intimidates Senators 📺📰📄📚](./reflections/2025-12-02.md)  
   
   
-## [📚 Books](./books/index.md) (824)  
+## [📚 Books](./books/index.md) (825)  
+- [♂️👑✊ Political Masculinity: How Incels, Fundamentalists and Authoritarians Mobilise for Patriarchy](./books/political-masculinity-how-incels-fundamentalists-and-authoritarians-mobilise-for-patriarchy.md)  
 - [🪴🌱 RHS How to Garden When You're New to Gardening: The Basics for Absolute Beginners](./books/rhs-how-to-garden-when-youre-new-to-gardening-the-basics-for-beginners.md)  
 - [🌍🌿 Gaia's Garden: A Guide to Home-Scale Permaculture](./books/gaias-garden.md)  
 - [🌱🟩⬆️ Square Foot Gardening, 4th Edition: The World’s Most Popular Growing Method to Harvest MORE Food from Less Space](./books/square-foot-gardening-4th-edition-the-worlds-most-popular-growing-method-to-harvest-more-food-from-less-space.md)  
@@ -35,27 +36,26 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [⚙️🕸️🧩🔑 Distributed Systems: Principles and Paradigms](./books/distributed-systems.md)  
 - [🤔💪 Attention and effort](./books/attention.md)  
 - [⚠️🤖📈 Out of Control: The New Biology of Machines, Social Systems, and the Economic World](./books/out-of-control-the-new-biology-of-machines-social-systems-and-the-economic-world.md)  
-- [🤖🧬⬆️ The Singularity Is Near: When Humans Transcend Biology](./books/the-singularity-is-near-when-humans-transcend-biology.md)  
   
   
-## [📺 Videos](./videos/index.md) (494)  
+## [📺 Videos](./videos/index.md) (498)  
+- [🤯❓🤷‍♀️ What the Heck Just Happened? | 2025-12-13](./videos/what-the-heck-just-happened-2025-12-13.md)  
+- [🗣️👨‍💼 A Conversation with Paul Krugman](./videos/a-conversation-with-paul-krugman.md)  
+- [🗣️🏛️📈 This Moment in Politics | Explainer](./videos/this-moment-in-politics-explainer.md)  
+- [👑💰👨‍👦‍👦💥 Investigation delves into the Tate brothers and their connection to the Trump family](./videos/investigation-delves-into-the-tate-brothers-and-their-connection-to-the-trump-family.md)  
 - [🌱👨‍👩‍👧‍👦🍎 How a 1/8 Acre Garden Feeds a Family of 6 ALL YEAR!](./videos/how-a-1-8-acre-garden-feeds-a-family-of-6-all-year.md)  
 - [✨🧠🧹🗄️ Cleaning And Organizing An ADHD Logjam](./videos/cleaning-and-organizing-an-adhd-logjam.md)  
 - [🧠⚡️👶🏽 5 Tiny Habits That Supercharge Your Child's Brain Development | Dr. Arif Khan](./videos/5-tiny-habits-that-supercharge-your-childs-brain-development-dr-arif-khan.md)  
 - [🧘⏳⏱️ The Korean Method to Calm Tantrums in 60 Seconds](./videos/the-korean-method-to-calm-tantrums-in-60-seconds.md)  
 - [🗳️📉🏛️❌🇺🇸 How Trump’s Plan to Steal the 2026 Elections Could Fail | The David Frum Show](./videos/how-trumps-plan-to-steal-the-2026-elections-could-fail-the-david-frum-show.md)  
 - [🧠💡🧮🧠 Forough Arabshahi: Neuro-Symbolic Learning Algorithms for Automated Reasoning](./videos/forough-arabshahi-neuro-symbolic-learning-algorithms-for-automated-reasoning.md)  
-- [🚢🛢️🇺🇸🇻🇪💥 U.S. seizes oil tanker off the coast of Venezuela, escalating tensions with Maduro](./videos/us-seizes-oil-tanker-off-the-coast-of-venezuela-escalating-tensions-with-maduro.md)  
-- [🌊🚨🇺🇸 Gov. Ferguson Declares Emergency as ‘Historic Flooding’ Hits Washington](./videos/gov-ferguson-declares-emergency-as-historic-flooding-hits-washington.md)  
-- [🧠💡📈🚀 Learning, Reasoning, and Planning with Neuro-Symbolic Concepts–Jiayuan Mao (MIT)](./videos/learning-reasoning-and-planning-with-neuro-symbolic-concepts-jiayuan-mao-mit.md)  
-- [📚🤖⚙️💡 An Introduction to Mechanistic Interpretability – Neel Nanda | IASEAI 2025](./videos/an-introduction-to-mechanistic-interpretability-neel-nanda-iaseai-2025.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (84)  
+- [🇺🇸🗣️💡🗓️ A Presidential Platform for Americans 2028](./topics/a-presidential-platform-for-americans-2028.md)  
 - [🏦♾️📈💸 Modern Monetary Theory](./topics/modern-monetary-theory.md)  
 - [💰🏛️📈 Functional Finance](./topics/functional-finance.md)  
 - [🧑‍💼🛡️ Job Guarantee, Employer of Last Resort](./topics/job-guarantee-employer-of-last-resort.md)  
-- [🇺🇸🗣️💡🗓️ A Presidential Platform for Americans 2028](./topics/a-presidential-platform-for-americans-2028.md)  
 - [⭐✨🌟💫 The Star](./topics/the-star.md)  
   
   

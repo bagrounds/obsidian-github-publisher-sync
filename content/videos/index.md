@@ -7,7 +7,7 @@ URL: https://bagrounds.org/videos
 backlinks: false
 ---
 [Home](../index.md)  
-# 📺 Videos (498)  
+# 📺 Videos (499)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
 - [❓💪🔬 12 Questions About Creatine with Stephen Cornish, PhD](./12-questions-about-creatine-w-stephen-cornish-phd.md)  
@@ -452,6 +452,7 @@ backlinks: false
 - [What EXACTLY is in the Republican Budget Blueprint?](./what-exactly-is-in-the-republican-budget-blueprint.md)  
 - [🇺🇸🤔❓ What Happened to American Conservatism? — with David Brooks | Prof G Conversations](./what-happened-to-american-conservatism-with-david-brooks-prof-g-conversations.md)  
 - [🥼🦷💧 What happened when Calgary removed fluoride from its water supply](./what-happened-when-calgary-removed-fluoride-from-its-water-supply.md)  
+- [📉🔚🌍 What Happens When Growth Ends? - Kate Raworth, Donut Economics, DSPod  > 252](./what-happens-when-growth-ends-kate-raworth-donut-economics-dspod-252.md)  
 - [🤔📊📉❓ What happens when no one trusts a country’s economic data](./what-happens-when-no-one-trusts-a-countrys-economic-data.md)  
 - [🧠🗺️💡🔑 What I Learned after 5000 Hours of Mind Mapping](./what-i-learned-after-5000-hours-of-mind-mapping.md)  
 - [🤔💡🧠🤖 What Is Understanding? – Geoffrey Hinton | IASEAI 2025](./what-is-understanding-geoffrey-hinton-iaseai-2025.md)  

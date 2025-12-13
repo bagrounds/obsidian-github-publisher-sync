@@ -38,7 +38,8 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [⚠️🤖📈 Out of Control: The New Biology of Machines, Social Systems, and the Economic World](./books/out-of-control-the-new-biology-of-machines-social-systems-and-the-economic-world.md)  
   
   
-## [📺 Videos](./videos/index.md) (498)  
+## [📺 Videos](./videos/index.md) (499)  
+- [📉🔚🌍 What Happens When Growth Ends? - Kate Raworth, Donut Economics, DSPod  > 252](./videos/what-happens-when-growth-ends-kate-raworth-donut-economics-dspod-252.md)  
 - [🤯❓🤷‍♀️ What the Heck Just Happened? | 2025-12-13](./videos/what-the-heck-just-happened-2025-12-13.md)  
 - [🗣️👨‍💼 A Conversation with Paul Krugman](./videos/a-conversation-with-paul-krugman.md)  
 - [🗣️🏛️📈 This Moment in Politics | Explainer](./videos/this-moment-in-politics-explainer.md)  
@@ -48,7 +49,6 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [🧠⚡️👶🏽 5 Tiny Habits That Supercharge Your Child's Brain Development | Dr. Arif Khan](./videos/5-tiny-habits-that-supercharge-your-childs-brain-development-dr-arif-khan.md)  
 - [🧘⏳⏱️ The Korean Method to Calm Tantrums in 60 Seconds](./videos/the-korean-method-to-calm-tantrums-in-60-seconds.md)  
 - [🗳️📉🏛️❌🇺🇸 How Trump’s Plan to Steal the 2026 Elections Could Fail | The David Frum Show](./videos/how-trumps-plan-to-steal-the-2026-elections-could-fail-the-david-frum-show.md)  
-- [🧠💡🧮🧠 Forough Arabshahi: Neuro-Symbolic Learning Algorithms for Automated Reasoning](./videos/forough-arabshahi-neuro-symbolic-learning-algorithms-for-automated-reasoning.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (84)  

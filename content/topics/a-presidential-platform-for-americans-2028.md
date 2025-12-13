@@ -77,6 +77,12 @@ URL: https://bagrounds.org/topics/a-presidential-platform-for-americans-2028
 - ✍️ Allow content creators to publish new material for sale on the platform  
     - ✅ As new material breaches a popularity threshold and passes a quality audit, buy the rights from the author, move it into the public domain, and remove the cost of access  
   
+#### 🤖 Artificial Intelligence and Robotics 🚀  
+- 💰 As private corporations develop increasingly advanced AI and robotics, they wield immense power, accumulate massive profits 💸, and lay off millions of displaced workers 😥.  
+- 🤔 Instead of allowing a few billionaires 🤑 to secure unregulated access to the world's most powerful technologies 💻 with a mandate to maximize shareholder profits, let's ensure that these revolutionary technologies are used carefully 🤝 in order to serve the public interest 🌍 without threatening the livelihoods of workers everywhere 🧑‍🏭.  
+- 🏛️ The federal government will hire the world's best 🔬 scientists and engineers 👩‍💻 to maintain the cutting edge of innovation ✨.  
+- ⚖️ We will continuously evaluate the power of these technologies 📊 and regulate their private use accordingly 📜.  
+  
 ### 📊 Patriot Metrics  
 - 💰 Today we measure, mandate, and reward the hoarding of private profits and generate massive inequality.  
 - ⚖️ In order to balance the scales, let's begin by measuring patriotism.  
@@ -98,6 +104,24 @@ URL: https://bagrounds.org/topics/a-presidential-platform-for-americans-2028
 - 🏗️ Build housing. Lots of it. Everywhere.  
 - 🚫 Ban corporate ownership of housing.  
 - 🏦 Tax land to disincentivize hoarding and inefficient use.  
+  
+### 🌠👶 Universal Childcare  
+- We will support parents and children from birth until they begin public school with  
+    - guaranteed paid parental leave (job guarantee benefits)  
+    - public preschool  
+    - subsidized babysitting (public tech: gig platform)  
+  
+### 🗳️ Dynamic Democratic Policy Proposals  
+- 🗣️ Support policy proposals and debate on public social media.  
+- 🇺🇸 All Americans are free to propose and debate policy ideas.  
+- 🧑‍🔬 Experts employed by the federal government participate in vetting when proposals reach a threshold of popular support.  
+- 💡 Ad-hoc competitions can be sponsored to generate and hone ideas for solutions to the country's most pressing issues.  
+  
+### 📊 Continuous Transparent Public Polling  
+- 📈 Support ad hoc and systematic polling on public social media.  
+- ❤️ Maintain a continuous, accurate pulse 💓 on public sentiment for all aspects of government performance.  
+- 👂 Government monitors sentiment and adjusts operations based on feedback.  
+  
   
 ## [🌌 Topics](./index.md)  
 - [🏦♾️📈💸 Modern Monetary Theory](./modern-monetary-theory.md)  

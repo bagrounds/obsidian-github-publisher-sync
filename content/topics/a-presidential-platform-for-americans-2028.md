@@ -26,6 +26,23 @@ URL: https://bagrounds.org/topics/a-presidential-platform-for-americans-2028
     2. 🗳️ Empower and expand civic participation  
     3. 📢 Fight disinformation  
   
+## 🧩 Problems  
+- 💰 Economy  
+    - 🍎 unaffordable food & 🏠 housing  
+    - 📈 inflation  
+    - 📉 unemployment  
+    - 😥 poverty  
+    - ⛺ homelessness  
+- 🏛️ Democracy  
+    - 💸 corruption  
+    - 📉 loss of trust in institutions  
+    - 🤥 rampant disinformation  
+    - 🤑 government by the wealthy, for the wealthy  
+- 🛡️ Safety  
+    - 💥 political violence  
+    - 🔫 mass shootings  
+    - 🌪️ natural disaster and 🌡️ extreme weather  
+  
 ## 💡 Ideas  
   
 ### 💼 The Job Guarantee  
@@ -106,10 +123,10 @@ URL: https://bagrounds.org/topics/a-presidential-platform-for-americans-2028
 - 🏦 Tax land to disincentivize hoarding and inefficient use.  
   
 ### 🌠👶 Universal Childcare  
-- We will support parents and children from birth until they begin public school with  
-    - guaranteed paid parental leave (job guarantee benefits)  
-    - public preschool  
-    - subsidized babysitting (public tech: gig platform)  
+- 👨‍👩‍👧‍👦 We will support parents and children from birth until they begin public school with  
+    - 🤰 guaranteed paid parental leave (job guarantee benefits)  
+    - 🍎 public preschool  
+    - 👶 subsidized babysitting (public tech: gig platform)  
   
 ### 🗳️ Dynamic Democratic Policy Proposals  
 - 🗣️ Support policy proposals and debate on public social media.  
@@ -129,6 +146,13 @@ URL: https://bagrounds.org/topics/a-presidential-platform-for-americans-2028
 - 🚀 This will lift millions of children 🧒, women 👩, and families 👨‍👩‍👧‍👦 out of poverty, eliminate dependence on various forms of welfare 📉, and empower women.  
 - 🍎 Inflation can be addressed by government programs to expand the supply of food 🍎, housing 🏠, healthcare 🏥, transportation 🚗, and other essential goods mothers are likely to spend their salaries on.  
 - 🌍 This will also significantly reduce extreme wealth inequality.  
+  
+### 💼 4 Day Work Week  
+- 📉 Widespread mass corporate layoffs demonstrate that businesses don't need as much labor as they used to.  
+- ✨ Let's leverage progress in automation and productivity 🤖 to increase the quality of life for all Americans.  
+- 🤝 Allow anyone to voluntarily work in the job guarantee program for pay 💰 on a day off.  
+- 🔄 Allows for variety in work (e.g. an office worker can get regular outdoor exercise working in a community garden or construction project without sacrificing income)  
+- 🏘️ Massively increases participation in community and public focused work.  
   
 ## [🌌 Topics](./index.md)  
 - [🏦♾️📈💸 Modern Monetary Theory](./modern-monetary-theory.md)  

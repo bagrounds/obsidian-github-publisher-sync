@@ -122,6 +122,13 @@ URL: https://bagrounds.org/topics/a-presidential-platform-for-americans-2028
 - ❤️ Maintain a continuous, accurate pulse 💓 on public sentiment for all aspects of government performance.  
 - 👂 Government monitors sentiment and adjusts operations based on feedback.  
   
+### 💲🧑‍🧑‍🧒‍🧒 Pay Mothers  
+- 📈 Estimates suggest that mothers do the equivalent of $170,000 of unpaid labor per year.  
+- 💸 Mainstream economics has nothing to say about the most valuable role in society.  
+- 🏛️ The federal government will pay mothers for the work that markets fail to acknowledge.  
+- 🚀 This will lift millions of children 🧒, women 👩, and families 👨‍👩‍👧‍👦 out of poverty, eliminate dependence on various forms of welfare 📉, and empower women.  
+- 🍎 Inflation can be addressed by government programs to expand the supply of food 🍎, housing 🏠, healthcare 🏥, transportation 🚗, and other essential goods mothers are likely to spend their salaries on.  
+- 🌍 This will also significantly reduce extreme wealth inequality.  
   
 ## [🌌 Topics](./index.md)  
 - [🏦♾️📈💸 Modern Monetary Theory](./modern-monetary-theory.md)  
@@ -129,4 +136,5 @@ URL: https://bagrounds.org/topics/a-presidential-platform-for-americans-2028
   
 ## [📚 Books](../books/index.md)  
 - [💰📉➡️📈🗳️ The Deficit Myth: Modern Monetary Theory and the Birth of the People's Economy](../books/the-deficit-myth.md)  
-- [💼✅ The Case for a Job Guarantee](../books/the-case-for-a-job-guarantee.md)
+- [💼✅ The Case for a Job Guarantee](../books/the-case-for-a-job-guarantee.md)  
+- [🍩🌍⚖️ Doughnut Economics: Seven Ways to Think Like a 21st-Century Economist](../books/doughnut-economics-seven-ways-to-think-like-a-21st-century-economist.md)

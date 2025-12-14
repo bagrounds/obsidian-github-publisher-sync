@@ -13,7 +13,7 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 💬 Comment on any page with your GitHub account.  
   
 ## [🪞 Reflections](./reflections/index.md) ~ Blog (394)  
-- [2025-12-13 | 🇺🇸 Presidential 🍩 Doughnut 📈 Growth 👀Happened 📺📚🌌](./reflections/2025-12-13.md)  
+- [2025-12-13 | 🇺🇸 Presidential 🍩 Doughnut 📈 Growth 👀 Happened 📺📚🌌](./reflections/2025-12-13.md)  
 - [2025-12-12 | 🇺🇸 Americans 🚁 Mobilise 💲 Krugman 🔍 Investigation 🐘 Politics 📚📰📺🌌](./reflections/2025-12-12.md)  
 - [2025-12-11 | 🧠 Habits 🧘‍♀️ Calm ⚡️ ADHD 🌎 Wherever 🌱 Gardening 🗓️ Plan 🍽️ Feeds](./reflections/2025-12-11.md)  
 - [2025-12-10 | 🔮 Planning 🚨 Emergency ⚠️ Symbolic 🇻🇪 Venezuela 🚁 Disasters 📺📰📚](./reflections/2025-12-10.md)  

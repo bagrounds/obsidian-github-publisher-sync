@@ -8,7 +8,7 @@ backlinks: false
 ---
 [Home](../index.md)  
 # 🪞 Reflections (394)  
-- [2025-12-13](./2025-12-13.md)  
+- [2025-12-13 | 🇺🇸 Presidential 🍩 Doughnut 📈 Growth 👀Happened 📺📚🌌](./2025-12-13.md)  
 - [2025-12-12 | 🇺🇸 Americans 🚁 Mobilise 💲 Krugman 🔍 Investigation 🐘 Politics 📚📰📺🌌](./2025-12-12.md)  
 - [2025-12-11 | 🧠 Habits 🧘‍♀️ Calm ⚡️ ADHD 🌎 Wherever 🌱 Gardening 🗓️ Plan 🍽️ Feeds](./2025-12-11.md)  
 - [2025-12-10 | 🔮 Planning 🚨 Emergency ⚠️ Symbolic 🇻🇪 Venezuela 🚁 Disasters 📺📰📚](./2025-12-10.md)  

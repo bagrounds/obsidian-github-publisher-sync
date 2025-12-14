@@ -14,6 +14,9 @@ youtube: https://youtu.be/2uURMKLAPZw
 # 💉👩‍⚕️💻 Doctor Answers Vaccine Questions | Tech Support | WIRED  
 ![Doctor Answers Vaccine Questions | Tech Support | WIRED](https://youtu.be/2uURMKLAPZw)  
   
+## 🗣️ Quotes  
+> RFK Jr. has been a virulent antivaccine activist, science deniialist, and conspiracy theorist for about 20 years. For the last 10 years, he's been paid hundreds of thousands of dollars by an antivaccine group called Children's Health Defense.  
+  
 ## 🤖 AI Summary  
   
 Dr. Paul Offit, a 👨‍⚕️ pediatrician and professor, addressed key public ❓ questions about vaccines.  

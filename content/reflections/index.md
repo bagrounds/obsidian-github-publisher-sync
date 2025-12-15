@@ -7,7 +7,8 @@ URL: https://bagrounds.org/reflections
 backlinks: false
 ---
 [Home](../index.md)  
-# 🪞 Reflections (394)  
+# 🪞 Reflections (395)  
+- [2025-12-14 | 💪 Massive 👶 Toddler 🧠 Intelligence ⚠️ Threatens 🚫 Anti-Vaccine 🇺🇸 Americans 🌌📺📚](./2025-12-14.md)  
 - [2025-12-13 | 🇺🇸 Presidential 🍩 Doughnut 📈 Growth 👀 Happened 📺📚🌌](./2025-12-13.md)  
 - [2025-12-12 | 🇺🇸 Americans 🚁 Mobilise 💲 Krugman 🔍 Investigation 🐘 Politics 📚📰📺🌌](./2025-12-12.md)  
 - [2025-12-11 | 🧠 Habits 🧘‍♀️ Calm ⚡️ ADHD 🌎 Wherever 🌱 Gardening 🗓️ Plan 🍽️ Feeds](./2025-12-11.md)  

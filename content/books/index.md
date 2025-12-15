@@ -7,7 +7,7 @@ URL: https://bagrounds.org/books
 backlinks: false
 ---
 [Home](../index.md)  
-# 📚 Books (824)  
+# 📚 Books (826)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)  
 - [🧑‍🤝‍🧑📈 10 to 25: The Science of Motivating Young People: A Groundbreaking Approach to Leading the Next Generation - And Making Your Own Life Easier](./10-to-25-the-science-of-motivating-young-people-a-groundbreaking-approach-to-leading-the-next-generation-and-making-your-own-life-easier.md)  
@@ -149,6 +149,7 @@ backlinks: false
 - [🦁🫀 Daring Greatly: How the Courage to Be Vulnerable Transforms the Way We Live, Love, Parent, and Lead](./daring-greatly-how-the-courage-to-be-vulnerable-transforms-the-way-we-live-love-parent-and-lead.md)  
 - [💰🤫 Dark Money: The Hidden History of the Billionaires Behind the Rise of the Radical Right](./dark-money-the-hidden-history-of-the-billionaires-behind-the-rise-of-the-radical-right.md)  
 - [🏦👨‍💼💥 Dark Towers: Deutsche Bank, Donald Trump, and an Epic Trail of Destruction](./dark-towers-deutsche-bank-donald-trump-and-an-epic-trail-of-destruction.md)  
+- [💀🚫🦠 Deadly Choices: How the Anti-Vaccine Movement Threatens Us All](./deadly-choices-how-the-anti-vaccine-movement-threatens-us-all.md)  
 - [🏛️💰 Debt: The First 5,000 Years](./debt-the-first-5000-years.md)  
 - [🐞🔍🤔✅ Debugging: The 9 Indispensable Rules for Finding Even the Most Elusive Software and Hardware Problems](./debugging.md)  
 - [🤔💡⚖️✅ Decisive: How to Make Better Choices in Life and Work](./decisive-how-to-make-better-choices-in-life-and-work.md)  
@@ -178,7 +179,7 @@ backlinks: false
 - [🧩🧱⚙️❤️ Domain-Driven Design: Tackling Complexity in the Heart of Software](./domain-driven-design.md)  
 - [🌴🧘🏼‍♀️ Do Nothing: How to Break Away from Overworking, Overdoing, and Underliving](./do-nothing-how-to-break-away-from-overworking-overdoing-and-underliving.md)  
 - [🚫💭🌐 Don't Make Me Think, Revisited: A Common Sense Approach to Web Usability](./dont-make-me-think-revisited.md)  
-- [🍩🌍 Doughnut Economics: Seven Ways to Think Like a 21st-Century Economist](./doughnut-economics-seven-ways-to-think-like-a-21st-century-economist.md)  
+- [🍩🌍⚖️ Doughnut Economics: Seven Ways to Think Like a 21st-Century Economist](./doughnut-economics-seven-ways-to-think-like-a-21st-century-economist.md)  
 - [🏎️🦋🐿️✨ Driven to Distraction: Recognizing and Coping with Attention Deficit Disorder from Childhood Through Adulthood](./driven-to-distraction.md)  
 - [🏎️⛽ Drive: The Surprising Truth About What Motivates Us](./drive-the-surprising-truth-about-what-motivates-us.md)  
 - [🏜️🐛 Dune](./dune.md)  
@@ -439,6 +440,7 @@ backlinks: false
 - [🇺🇸🕵️💥 Playing to the Edge: American Intelligence in the Age of Terror](./playing-to-the-edge-american-intelligence-in-the-age-of-terror.md)  
 - [👶🧸 Playing with Baby: Researched-Based Play to Bond with Your Baby from Birth to Year One](./playing-with-baby-researched-based-play-to-bond-with-your-baby-from-birth-to-year-one.md)  
 - [🏛️🗣️ Polemic for Democracy](./polemic-for-democracy.md)  
+- [♂️👑✊ Political Masculinity: How Incels, Fundamentalists and Authoritarians Mobilise for Patriarchy](./political-masculinity-how-incels-fundamentalists-and-authoritarians-mobilise-for-patriarchy.md)  
 - [🇺🇸💥 Political Violence in America: Historical Flashpoints and Modern-Day Trends](./political-violence-in-america-historical-flashpoints-and-modern-day-trends.md)  
 - [🚫✅🤥 Post-Truth](./post-truth.md)  
 - [👑💪🏽⁉️ Power: Why Some People Have It - and Others Don't](./power-why-some-people-have-it-and-others-dont.md)  

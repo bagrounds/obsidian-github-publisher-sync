@@ -7,12 +7,13 @@ URL: https://bagrounds.org/topics
 backlinks: false
 ---
 [Home](../index.md)  
-# 🌌 Topics (83)  
+# 🌌 Topics (84)  
 - [⚙️🧠🔄 Adaptive Control](./adaptive-control.md)  
 - [🌲🪜🧠 A Hierarchical View of Human Knowledge](./a-hierarchical-view-of-human-knowledge.md)  
 - [A Method For Estimating Work](./a-method-for-estimating-work.md)  
 - [💻🎨⚙️ ANSI escape codes](./ansi-escape-codes.md)  
 - [Applied Arts](./applied-arts.md)  
+- [🇺🇸🗣️💡🗓️ A Presidential Platform for Americans 2028](./a-presidential-platform-for-americans-2028.md)  
 - [Arts](./arts.md)  
 - [🫂💖 Attachment Theory](./attachment-theory.md)  
 - [👨‍👩‍👦🧭🤝 Authoritative Parenting](./authoritative-parenting.md)  
@@ -41,7 +42,7 @@ backlinks: false
 - [🔢💯 Hundred Board](./hundred-board.md)  
 - [iNaturalist](./inaturalist.md)  
 - [Informative Speaking](./informative-speaking.md)  
-- [🧑‍💼🛡️ Job Guarantee / Employer of Last Resort](./job-guarantee-employer-of-last-resort.md)  
+- [🧑‍💼🛡️ Job Guarantee, Employer of Last Resort](./job-guarantee-employer-of-last-resort.md)  
 - [📏🔮〰️ Kalman Filter](./kalman-filter.md)  
 - [🧠🌐 Knowledge Graphs](./knowledge-graphs.md)  
 - [Kuramoto Model](./kuramoto-model.md)  

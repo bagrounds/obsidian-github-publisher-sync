@@ -12,7 +12,8 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 ❔ What do 🫵 _you_ 🤔 think?  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (394)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (395)  
+- [2025-12-14 | 💪 Massive 👶 Toddler 🧠 Intelligence ⚠️ Threatens 🚫 Anti-Vaccine 🇺🇸 Americans 🌌📺📚](./reflections/2025-12-14.md)  
 - [2025-12-13 | 🇺🇸 Presidential 🍩 Doughnut 📈 Growth 👀 Happened 📺📚🌌](./reflections/2025-12-13.md)  
 - [2025-12-12 | 🇺🇸 Americans 🚁 Mobilise 💲 Krugman 🔍 Investigation 🐘 Politics 📚📰📺🌌](./reflections/2025-12-12.md)  
 - [2025-12-11 | 🧠 Habits 🧘‍♀️ Calm ⚡️ ADHD 🌎 Wherever 🌱 Gardening 🗓️ Plan 🍽️ Feeds](./reflections/2025-12-11.md)  
@@ -22,10 +23,10 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [2025-12-07 | ⚖️ Lina Khan’s 🦉 Sage 🧠 Intelligence 📜 Guide to 🥊 Punish 💰 529 👑 Goliath 🏢 Corporate 🚢 Boat 💥 Strikes 🌊 While 💧 Drowning in 🌋 Ashes 📚📺📰](./reflections/2025-12-07.md)  
 - [2025-12-06 | 🧾 Debt | 🎁 Gift 📚](./reflections/2025-12-06.md)  
 - [2025-12-05 | 💳 Credibility | 👑 Autocracy | 🥷 Kleptopia | 🧑‍🧑‍🧒 Parenting 📺📚](./reflections/2025-12-05.md)  
-- [2025-12-04 | ⛈️ Climate | 👹 Corruption | ⚠️ Crises | 🏥 Healthcare 📚📺](./reflections/2025-12-04.md)  
   
   
-## [📚 Books](./books/index.md) (825)  
+## [📚 Books](./books/index.md) (826)  
+- [💀🚫🦠 Deadly Choices: How the Anti-Vaccine Movement Threatens Us All](./books/deadly-choices-how-the-anti-vaccine-movement-threatens-us-all.md)  
 - [🍩🌍⚖️ Doughnut Economics: Seven Ways to Think Like a 21st-Century Economist](./books/doughnut-economics-seven-ways-to-think-like-a-21st-century-economist.md)  
 - [♂️👑✊ Political Masculinity: How Incels, Fundamentalists and Authoritarians Mobilise for Patriarchy](./books/political-masculinity-how-incels-fundamentalists-and-authoritarians-mobilise-for-patriarchy.md)  
 - [🪴🌱 RHS How to Garden When You're New to Gardening: The Basics for Absolute Beginners](./books/rhs-how-to-garden-when-youre-new-to-gardening-the-basics-for-beginners.md)  
@@ -35,20 +36,19 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [🧠💰🌍 Beyond Growth: The Economics of Sustainable Development](./books/beyond-growth-the-economics-of-sustainable-development.md)  
 - [📜🎮🏞️ Rules, Games, and Common Pool Resources](./books/rules-games-and-common-pool-resources.md)  
 - [⚙️🕸️🧩🔑 Distributed Systems: Principles and Paradigms](./books/distributed-systems.md)  
-- [🤔💪 Attention and effort](./books/attention.md)  
   
   
-## [📺 Videos](./videos/index.md) (499)  
+## [📺 Videos](./videos/index.md) (503)  
+- [🧠💡📐🧑‍🏫 The Mathematical Foundations of Intelligence [Professor Yi Ma](./videos/the-mathematical-foundations-of-intelligence-professor-yi-ma.md)]  
+- [💉👩‍⚕️💻 Doctor Answers Vaccine Questions | Tech Support | WIRED](./videos/doctor-answers-vaccine-questions-tech-support-wired.md)  
+- [👨‍⚕️➡️😬💉💥 Former CDC director reacts to RFK Jr.'s firing of entire vaccine advisory panel](./videos/former-cdc-director-reacts-to-rfk-jrs-firing-of-entire-vaccine-advisory-panel.md)  
+- [🗣️🤝🧑‍🤝‍🧑👶🏽 5 Social Skills Every Toddler Needs Before Preschool](./videos/5-social-skills-every-toddler-needs-before-preschool.md)  
+- [🌋☀️🚀 Geothermal energy’s massive leap forward](./videos/geothermal-energys-massive-leap-forward.md)  
 - [📉🔚🌍 What Happens When Growth Ends? - Kate Raworth, Donut Economics, DSPod  > 252](./videos/what-happens-when-growth-ends-kate-raworth-donut-economics-dspod-252.md)  
 - [🤯❓🤷‍♀️ What the Heck Just Happened? | 2025-12-13](./videos/what-the-heck-just-happened-2025-12-13.md)  
 - [🗣️👨‍💼 A Conversation with Paul Krugman](./videos/a-conversation-with-paul-krugman.md)  
 - [🗣️🏛️📈 This Moment in Politics | Explainer](./videos/this-moment-in-politics-explainer.md)  
 - [👑💰👨‍👦‍👦💥 Investigation delves into the Tate brothers and their connection to the Trump family](./videos/investigation-delves-into-the-tate-brothers-and-their-connection-to-the-trump-family.md)  
-- [🌱👨‍👩‍👧‍👦🍎 How a 1/8 Acre Garden Feeds a Family of 6 ALL YEAR!](./videos/how-a-1-8-acre-garden-feeds-a-family-of-6-all-year.md)  
-- [✨🧠🧹🗄️ Cleaning And Organizing An ADHD Logjam](./videos/cleaning-and-organizing-an-adhd-logjam.md)  
-- [🧠⚡️👶🏽 5 Tiny Habits That Supercharge Your Child's Brain Development | Dr. Arif Khan](./videos/5-tiny-habits-that-supercharge-your-childs-brain-development-dr-arif-khan.md)  
-- [🧘⏳⏱️ The Korean Method to Calm Tantrums in 60 Seconds](./videos/the-korean-method-to-calm-tantrums-in-60-seconds.md)  
-- [🗳️📉🏛️❌🇺🇸 How Trump’s Plan to Steal the 2026 Elections Could Fail | The David Frum Show](./videos/how-trumps-plan-to-steal-the-2026-elections-could-fail-the-david-frum-show.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (84)  

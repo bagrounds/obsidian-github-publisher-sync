@@ -39,7 +39,7 @@ affiliate link: https://amzn.to/459bMyS
         - 📝 e.g. no preambles  
     - 🌍 provide sufficient context  
     - 🧠 to restrict model knowledge to context  
-        - ❗ "answer using the only provided context"  
+        - ❗ "answer using only the provided context"  
         - 📚 cite your sources  
     - 🧩 break complex tasks into simpler subtasks  
     - 🧠 Let it think  

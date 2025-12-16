@@ -7,7 +7,7 @@ URL: https://bagrounds.org/books
 backlinks: false
 ---
 [Home](../index.md)  
-# 📚 Books (826)  
+# 📚 Books (827)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)  
 - [🧑‍🤝‍🧑📈 10 to 25: The Science of Motivating Young People: A Groundbreaking Approach to Leading the Next Generation - And Making Your Own Life Easier](./10-to-25-the-science-of-motivating-young-people-a-groundbreaking-approach-to-leading-the-next-generation-and-making-your-own-life-easier.md)  
@@ -287,6 +287,7 @@ backlinks: false
 - [ 🚫❌🧮💭 How Not to Be Wrong: The Power of Mathematical Thinking](./how-not-to-be-wrong.md)  
 - [🌿🔬 How Plants Work: The Science Behind the Amazing Things Plants Do](./how-plants-work.md)  
 - [🇺🇲⚔️ How the South Won the Civil War: Oligarchy, Democracy, and the Continuing Fight for the Soul of America](./how-the-south-won-the-civil-war-oligarchy-democracy-and-the-continuing-fight-for-the-soul-of-america.md)  
+- [🌍🔥💡 How to Avoid a Climate Disaster: The Solutions We Have and the Breakthroughs We Need](./how-to-avoid-a-climate-disaster-the-solutions-we-have-and-the-breakthroughs-we-need.md)  
 - [💰👑 How to be a Billionaire: Proven Strategies from the Titans of Wealth](./how-to-be-a-billionaire-proven-strategies-from-the-titans-of-wealth.md)  
 - [✊🏿 How to Be An Antiracist](./how-to-be-an-antiracist.md)  
 - [📱💔 How to Break Up with Your Phone: The 30-Day Plan to Take Back Your Life](./how-to-break-up-with-your-phone-the-30-day-plan-to-take-back-your-life.md)  

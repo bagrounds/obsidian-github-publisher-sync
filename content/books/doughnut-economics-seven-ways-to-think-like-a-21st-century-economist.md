@@ -13,6 +13,23 @@ affiliate link: https://amzn.to/48Xh4PO
   
 🌍🍩⚖️ Challenge outdated growth-centric economic models with a visual framework where humanity thrives in a safe and just space between social foundations and ecological ceilings, necessitating regenerative and distributive design.  
   
+## 📝🐒 Human Notes  
+- 💸 Neo liberal economics  
+    - 🗓️ 1947, Mont Pelerin Society  
+    - 🚫 Laissez-faire  
+    - 👨‍🏫 Friedrich Hayek  
+    - 🎖️ Milton Friedman  
+    - 🧐 Ludwig von Mises  
+    - 💡 Frank Knight  
+    - ✊ Anti totalitarianism  
+    - 📈 Market fundamentalism  
+    - 💰 Business & Billionaire funding  
+        - 🏫 Funded university professorships & scholarships  
+        - 🏛️ AEI  
+        - 🗽 Cato  
+        - 🇬🇧 IEA, London  
+    - 🇺🇸 Reagan & 🇬🇧 Thatcher  
+  
 ## 🤖 AI Summary  
   
 ### 🍩 Core Philosophy: The Doughnut  

@@ -14,7 +14,17 @@ youtube: https://youtu.be/rmvDxxNubIg
 # 🧠🛠️🕸️🚫🙅‍♂️💼 No Vibes Allowed: Solving Hard Problems in Complex Codebases – Dex Horthy, HumanLayer  
 ![No Vibes Allowed: Solving Hard Problems in Complex Codebases – Dex Horthy, HumanLayer](https://youtu.be/rmvDxxNubIg)  
   
-## 🤖 AI Summary🤖 **Context Engineering & The Dumb Zone**  
+## 📝🐒 Human Notes  
+$$  
+\text{Performance} = \frac{\text{Correctness}^2 \times \text{Completeness}}{\text{Size}}  
+$$  
+- 🚀 To optimize performance  
+    - ✅ 1. Maximize correctness  
+    - 🧩 2.1 Maximize completeness  
+    - 🤏 2.2 Minimize size  
+  
+## 🤖 AI Summary  
+### 🤖 **Context Engineering & The Dumb Zone**  
   
 * 📉 LLMs have a dumb zone - performance degrades significantly when the context window fills up (around 40% capacity).  
 * 🧹 Intentional compaction is required to keep the context window in the smart zone by compressing file contents and conversation history into concise summaries.  

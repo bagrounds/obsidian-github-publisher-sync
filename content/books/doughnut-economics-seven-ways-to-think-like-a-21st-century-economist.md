@@ -78,7 +78,7 @@ affiliate link: https://amzn.to/48Xh4PO
 * **[💰📈🌍⏳ Capital in the Twenty-First Century](./capital-in-the-twenty-first-century.md)** by Thomas Piketty  
   
 ### 🔗 Related  
-* 🌡️ **How to Avoid a Climate Disaster** by Bill Gates  
+* **[🌍🔥💡 How to Avoid a Climate Disaster: The Solutions We Have and the Breakthroughs We Need](./how-to-avoid-a-climate-disaster-the-solutions-we-have-and-the-breakthroughs-we-need.md)** by Bill Gates  
 * **[🦋♟️ Emergent Strategy: Shaping Change, Changing Worlds](./emergent-strategy.md)** by adrienne maree brown  
 * 🌱 **Systems Thinking for Sustainable Development** by Edward Saja Sanneh  
   

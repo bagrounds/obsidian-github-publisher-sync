@@ -116,6 +116,7 @@ URL: https://bagrounds.org/topics/a-presidential-platform-for-americans-2028
 ### 🍎 Food Security  
 - 💸 Money doesn't grow on trees, but food does.  
 - 🤝 Give people SNAP benefits; feed them for a political cycle. 🌱 Invest in sustainable micro-agriculture, community gardens, and efficient food supply, distribution, and composting infrastructure and education; feed them for generations.  
+- [🍎🥛🔬✨ Universal Nutrition System Design](./universal-nutrition-system-design.md)  
   
 ### 🏘️ Housing for All  
 - 🏗️ Build housing. Lots of it. Everywhere.  
@@ -157,6 +158,9 @@ URL: https://bagrounds.org/topics/a-presidential-platform-for-americans-2028
 ## [🌌 Topics](./index.md)  
 - [🏦♾️📈💸 Modern Monetary Theory](./modern-monetary-theory.md)  
 - [🧑‍💼🛡️ Job Guarantee, Employer of Last Resort](./job-guarantee-employer-of-last-resort.md)  
+  
+## 🔮 Designs  
+- [🍎🥛🔬✨ Universal Nutrition System Design](./universal-nutrition-system-design.md)  
   
 ## [📚 Books](../books/index.md)  
 - [💰📉➡️📈🗳️ The Deficit Myth: Modern Monetary Theory and the Birth of the People's Economy](../books/the-deficit-myth.md)  

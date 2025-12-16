@@ -73,7 +73,7 @@ affiliate link: https://amzn.to/449rDxv
 * [💰🤥 Merchants of Doubt](./merchants-of-doubt.md) by Naomi Oreskes and Erik M. Conway: Details how a small group of scientists obscured public knowledge on various scientific issues, including climate change.  
   
 ### ↔️ Contrasting  
-* 💡 How to Avoid a Climate Disaster by Bill Gates: Focuses on technological innovation and policy solutions from a pragmatic perspective.  
+* [🌍🔥💡 How to Avoid a Climate Disaster: The Solutions We Have and the Breakthroughs We Need](./how-to-avoid-a-climate-disaster-the-solutions-we-have-and-the-breakthroughs-we-need.md) by Bill Gates: Focuses on technological innovation and policy solutions from a pragmatic perspective.  
 * ⬇️ Drawdown edited by Paul Hawken: Presents a comprehensive plan of solutions for reversing global warming.  
   
 ### ➕ Related  

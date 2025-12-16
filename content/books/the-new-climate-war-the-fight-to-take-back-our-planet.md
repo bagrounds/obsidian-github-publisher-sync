@@ -79,7 +79,7 @@ affiliate link: https://amzn.to/4rDB1Dz
 * **[💰🤥 Merchants of Doubt](./merchants-of-doubt.md)** by Naomi Oreskes and Erik M. Conway: Exposes how a handful of scientists obscured the truth on issues from tobacco smoke to global warming.  
   
 ### ➖ Contrasting  
-* 🛠️ **How to Avoid a Climate Disaster** by Bill Gates: Focuses on technological innovation and market-based solutions, often more optimistic about carbon capture.  
+* **[🌍🔥💡 How to Avoid a Climate Disaster: The Solutions We Have and the Breakthroughs We Need](./how-to-avoid-a-climate-disaster-the-solutions-we-have-and-the-breakthroughs-we-need.md)** by Bill Gates: Focuses on technological innovation and market-based solutions, often more optimistic about carbon capture.  
 * 🚨 **Apocalypse Never: Why Environmental Alarmism Hurts Us All** by Michael Shellenberger: Argues against climate alarmism and advocates for nuclear power and adaptation.  
   
 ### ♻️ Related  

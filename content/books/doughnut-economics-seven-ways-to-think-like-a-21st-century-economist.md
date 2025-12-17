@@ -85,7 +85,7 @@ affiliate link: https://amzn.to/48Xh4PO
 ## 📚 Book Recommendations  
   
 ### ➕ Similar  
-* ⬇️ **Less is More: How Degrowth Will Save the World** by Jason Hickel  
+* **[📉🌎 Less is More: How Degrowth Will Save the World](./less-is-more-how-degrowth-will-save-the-world.md)** by Jason Hickel  
 * 💰 **The Value of Everything: Making and Taking in the Global Economy** by Mariana Mazzucato  
 * **[🌐🔗🧠📖 Thinking in Systems: A Primer](./thinking-in-systems.md)** by Donella H. Meadows  
   

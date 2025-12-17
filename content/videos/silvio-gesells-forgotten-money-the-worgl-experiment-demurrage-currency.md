@@ -52,7 +52,7 @@ youtube: https://youtu.be/knRng-Znxr0
   
 ### ↔️ Similar  
   
-* 📘 The Natural Economic Order by Silvio Gesell. 📖 This is the 🖋️ foundational text outlining 🌊 Freigeld and 🏞️ Freiland.  
+* [🌿⚙️ The Natural Economic Order](../books/the-natural-economic-order.md) by Silvio Gesell. 📖 This is the 🖋️ foundational text outlining 🌊 Freigeld and 🏞️ Freiland.  
 * 📗 Sacred Economics by Charles Eisenstein. 📖 It explores 💖 gift economies and 📉 negative interest 💸 currencies.  
   
 ### 🆚 Contrasting  

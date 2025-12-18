@@ -12,7 +12,8 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 ❔ What do 🫵 _you_ 🤔 think?  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (397)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (398)  
+- [2025-12-17 | 🏔️ Wörgl 🏛️ Patriarchy 📢 Demanded 🌿 Natural 🍩 Doughnut ⛓️ Constraint 🔬 Decomposition 📈 Progress 📚📺📄](./reflections/2025-12-17.md)  
 - [2025-12-16 | ➕ More 🍩 Doughnut 🛃 Agents 🧾 Prove 💻 Tech 🐘 Politics 🚨 Problems 📚📺](./reflections/2025-12-16.md)  
 - [2025-12-15 | 🌌 Universal 🍩 Doughnut 🌪️ Disaster 📋 Platform 🌌📚](./reflections/2025-12-15.md)  
 - [2025-12-14 | 💪 Massive 👶 Toddler 🧠 Intelligence ⚠️ Threatens 🚫 Anti-Vaccine 🇺🇸 Americans 🌌📺📚](./reflections/2025-12-14.md)  
@@ -22,23 +23,24 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [2025-12-10 | 🔮 Planning 🚨 Emergency ⚠️ Symbolic 🇻🇪 Venezuela 🚁 Disasters 📺📰📚](./reflections/2025-12-10.md)  
 - [2025-12-09 | 💡 Understanding 🌎 Reality 🌌 Beyond ⚙️ Mechanistic 🤔 Deliberation ☑️ Is 📍 Near 📚📺✍️](./reflections/2025-12-09.md)  
 - [2025-12-08 | 🏰 Keep 🚧 Stumbling on the 🌿 Nature of 👑 Gilded 😱 Terror 🏫 Theory 📚](./reflections/2025-12-08.md)  
-- [2025-12-07 | ⚖️ Lina Khan’s 🦉 Sage 🧠 Intelligence 📜 Guide to 🥊 Punish 💰 529 👑 Goliath 🏢 Corporate 🚢 Boat 💥 Strikes 🌊 While 💧 Drowning in 🌋 Ashes 📚📺📰](./reflections/2025-12-07.md)  
   
   
-## [📚 Books](./books/index.md) (828)  
+## [📚 Books](./books/index.md) (832)  
+- [🧩⚙️ Constraint Processing](./books/constraint-processing.md)  
+- [🌿⚙️ The Natural Economic Order](./books/the-natural-economic-order.md)  
+- [📈📉 Progress and Poverty](./books/progress-and-poverty.md)  
+- [♂️💰♀️🚩 Patriarchy of the Wage: Notes on Marx, Gender, and Feminism](./books/patriarchy-of-the-wage-notes-on-marx-gender-and-feminism.md)  
 - [⛔🌎🔚 Not the End of the World: How We Can Be the First Generation to Build a Sustainable Planet](./books/not-the-end-of-the-world.md)  
 - [🍩🌍⚖️ Doughnut Economics: Seven Ways to Think Like a 21st-Century Economist](./books/doughnut-economics-seven-ways-to-think-like-a-21st-century-economist.md)  
 - [✅➕ Abundance](./books/abundance.md)  
 - [🌍🆘 Earth for All: A Survival Guide for Humanity](./books/earth-for-all-a-survival-guide-for-humanity.md)  
 - [📉🌎 Less is More: How Degrowth Will Save the World](./books/less-is-more-how-degrowth-will-save-the-world.md)  
 - [🌞🌬️🌊🌋 Sustainable Energy - Without the Hot Air](./books/sustainable-energy-without-the-hot-air.md)  
-- [🔥🌎⚔️ The New Climate War: The Fight to Take Back Our Planet](./books/the-new-climate-war-the-fight-to-take-back-our-planet.md)  
-- [⚡🏛️ Short Circuiting Policy: Interest Groups and the Battle Over Clean Energy and Climate Policy in the American States](./books/short-circuiting-policy-interest-groups-and-the-battle-over-clean-energy-and-climate-policy-in-the-american-states.md)  
-- [🌍🔥💡 How to Avoid a Climate Disaster: The Solutions We Have and the Breakthroughs We Need](./books/how-to-avoid-a-climate-disaster-the-solutions-we-have-and-the-breakthroughs-we-need.md)  
-- [💀🚫🦠 Deadly Choices: How the Anti-Vaccine Movement Threatens Us All](./books/deadly-choices-how-the-anti-vaccine-movement-threatens-us-all.md)  
   
   
-## [📺 Videos](./videos/index.md) (508)  
+## [📺 Videos](./videos/index.md) (510)  
+- [💰📉🌍 Silvio Gesell's Forgotten Money: The Wörgl Experiment & Demurrage Currency](./videos/silvio-gesells-forgotten-money-the-worgl-experiment-demurrage-currency.md)  
+- [🏠👩‍👧‍👦💸💰 The women who demanded wages for housework - Witness History, BBC World Service](./videos/the-women-who-demanded-wages-for-housework-witness-history-bbc-world-service.md)  
 - [📉🔚🌍 What Happens When Growth Ends? - Kate Raworth, Donut Economics, DSPod  > 252](./videos/what-happens-when-growth-ends-kate-raworth-donut-economics-dspod-252.md)  
 - [🇺🇸💻💰💥 Inside the Tech Company Powering Trump’s Most Controversial Policies](./videos/inside-the-tech-company-powering-trumps-most-controversial-policies.md)  
 - [🗣️💬🗓️ Politics Chat, December 16, 2025](./videos/politics-chat-december-16-2025.md)  
@@ -47,8 +49,6 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [🤖📈 💯📊 👩‍💻👨‍💻 Can you prove AI ROI in Software Eng? (Stanford 120k Devs Study) – Yegor Denisov-Blanch, Stanford](./videos/can-you-prove-ai-roi-in-software-eng-stanford-120k-devs-study-yegor-denisov-blanch-stanford.md)  
 - [🧠💡📐🧑‍🏫 The Mathematical Foundations of Intelligence [Professor Yi Ma](./videos/the-mathematical-foundations-of-intelligence-professor-yi-ma.md)]  
 - [💉👩‍⚕️💻 Doctor Answers Vaccine Questions | Tech Support | WIRED](./videos/doctor-answers-vaccine-questions-tech-support-wired.md)  
-- [👨‍⚕️➡️😬💉💥 Former CDC director reacts to RFK Jr.'s firing of entire vaccine advisory panel](./videos/former-cdc-director-reacts-to-rfk-jrs-firing-of-entire-vaccine-advisory-panel.md)  
-- [🗣️🤝🧑‍🤝‍🧑👶🏽 5 Social Skills Every Toddler Needs Before Preschool](./videos/5-social-skills-every-toddler-needs-before-preschool.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (85)  
@@ -59,12 +59,12 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [🧑‍💼🛡️ Job Guarantee, Employer of Last Resort](./topics/job-guarantee-employer-of-last-resort.md)  
   
   
-## [📄  Articles](./articles/index.md) (74)  
+## [📄  Articles](./articles/index.md) (75)  
+- [🧠🧩🎯⚙️ An Approach for Systematic Decomposition of Complex LLM Tasks](./articles/an-approach-for-systematic-decomposition-of-complex-llm-tasks.md)  
 - [❓📈🤦 Failing to Understand the Exponential, Again](./articles/failing-to-understand-the-exponential-again.md)  
 - [🧠🗣️💻 From Frege to ChatGPT: Compositionality in Language, Cognition, and Deep Neural Networks](./articles/from-frege-to-chatgpt-compositionality-in-language-cognition-and-deep-neural-networks.md)  
 - [🪞🇺🇸💔 Mirror, Mirror 2024: A Portrait of the Failing U.S. Health System](./articles/mirror-mirror-2024-a-portrait-of-the-failing-us-health-system.md)  
 - [🧑‍🤝‍🧑🤖🧠 Orchestrating Human AI Teams: The Manager Agent as a Unifying Research Challenge](./articles/orchestrating-human-ai-teams-the-manager-agent-as-a-unifying-research-challenge.md)  
-- [🗣️🧠🧑‍💻📚 Relating Natural Language Aptitude to Individual Differences in Learning Programming Languages](./articles/relating-natural-language-aptitude-to-individual-differences-in-learning-programming-languages.md)  
   
   
 ## [🤖💬 Bot Chats](./bot-chats/index.md) (46)  

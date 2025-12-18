@@ -7,7 +7,7 @@ backlinks: false
 URL: https://bagrounds.org/articles
 ---
 [Home](../index.md)  
-# 📄 Articles (74)  
+# 📄 Articles (75)  
 - [🗓️🇵🇹💉✅🕊️ 20 years of Portuguese drug policy - developments, challenges and the quest for human rights](./20-years-of-portuguese-drug-policy-developments-challenges-and-the-quest-for-human-rights.md)  
 - [🦊😈🐾🕵️💸 5 takeaways about NPR's reporting on the whistleblower report about DOGE at the NLRB](./5-takeaways-about-nprs-reporting-on-the-whistleblower-report-about-doge-at-the-nlrb.md)  
 - [🌱🤖⚙️🖐️ 5 tips on getting started with Gems, your custom AI experts](./5-tips-on-getting-started-with-gems-your-custom-ai-experts.md)  
@@ -17,6 +17,7 @@ URL: https://bagrounds.org/articles
 - [🧑‍🏫🌍🛠️📈 Agent Skills: Equipping agents for the real world with Agent Skills](./equipping-agents-for-the-real-world-with-agent-skills.md)  
 - [📈🤖✍️🔄 AI traffic is up 527%. SEO is being rewritten.](./ai-traffic-is-up-527-percent-seo-is-being-rewritten.md)  
 - [🏛️🔍❌🗳️ Analysis: Heritage Foundation’s Database Undermines Claims of Recent Voter Fraud](./analysis-heritage-foundations-database-undermines-claims-of-recent-voter-fraud.md)  
+- [🧠🧩🎯⚙️ An Approach for Systematic Decomposition of Complex LLM Tasks](./an-approach-for-systematic-decomposition-of-complex-llm-tasks.md)  
 - [🤖🧱🏗️🧠 An Approach to Building with AI](./an-approach-to-building-with-ai.md)  
 - [🏛️🕸️🧩 Architectural Styles and the Design of Network Based Software Architectures](./architectural-styles-and-the-design-of-network-based-software-architectures.md)  
 - [👀 Attention Is All You Need](./attention-is-all-you-need.md)  

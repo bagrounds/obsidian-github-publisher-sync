@@ -7,7 +7,7 @@ URL: https://bagrounds.org/videos
 backlinks: false
 ---
 [Home](../index.md)  
-# 📺 Videos (508)  
+# 📺 Videos (510)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
 - [❓💪🔬 12 Questions About Creatine with Stephen Cornish, PhD](./12-questions-about-creatine-w-stephen-cornish-phd.md)  
@@ -321,6 +321,7 @@ backlinks: false
 - [🧑‍🤝‍🧑💰⛽ Sen. Whitehouse: «Trump is Moving Money from Pockets of Normal Americans to Fossil Fuel Megadonors»](./sen-whitehouse-trump-is-moving-money-from-pockets-of-normal-americans-to-fossil-fuel-megadonors.md)  
 - [🏃🦵🤕 SHIN SPLINTS for Runners: Challenges, Causes, and Rehab](./shin-splints-for-runners-challenges-causes-and-rehab.md)  
 - [🧑‍💻📈⏩ SIGGRAPH Thesis Fast Forward 2025](./siggraph-thesis-fast-forward-2025.md)  
+- [💰📉🌍 Silvio Gesell's Forgotten Money: The Wörgl Experiment & Demurrage Currency](./silvio-gesells-forgotten-money-the-worgl-experiment-demurrage-currency.md)  
 - [Spaceship You](./spaceship-you.md)  
 - [👶😴👩‍⚕️ Spoil Your Baby Ep 20 - How Babies Sleep with Dr. Helen Ball](./spoil-your-baby-ep-20-how-babies-sleep-with-dr-helen-ball.md)  
 - [🤖🗣️🤝 Stanford Seminar - Beyond «Bots and Trolls» - Understanding Disinformation as Collaborative Work](./stanford-seminar-beyond-bots-and-trolls-understanding-disinformation-as-collaborative-work.md)  
@@ -401,6 +402,7 @@ backlinks: false
 - [🤔🎬🏆 The Thinking Game | Full documentary | Tribeca Film Festival official selection](./the-thinking-game-full-documentary-tribeca-film-festival-official-selection.md)  
 - [🚧⏳ The Unfinished Revolution with Atlantic EIC Jeffrey Goldberg](./the-unfinished-revolution-with-atlantic-eic-jeffrey-goldberg.md)  
 - [📜🇺🇸🏛️⚖️ The United States Constitution | Heather Cox Richardson](./the-united-states-constitution-heather-cox-richardson.md)  
+- [🏠👩‍👧‍👦💸💰 The women who demanded wages for housework - Witness History, BBC World Service](./the-women-who-demanded-wages-for-housework-witness-history-bbc-world-service.md)  
 - [📊👀🌍 This graph will change how you see the world](./this-graph-will-change-how-you-see-the-world.md)  
 - [🤫💰🪙 This Is What They Don't Tell You About Money And Gold | Prof. L. Randall Wray](./this-is-what-they-dont-tell-you-about-money-and-gold-prof-l-randall-wray.md)  
 - [📓 This Journal Keeps Me Productive (& Maybe You Too)](./this-journal-keeps-me-productive-and-maybe-you-too.md)  

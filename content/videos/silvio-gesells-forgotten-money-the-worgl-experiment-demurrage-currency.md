@@ -62,5 +62,5 @@ youtube: https://youtu.be/knRng-Znxr0
   
 ### 🎨 Creatively Related  
   
-* 📗 Progress and Poverty by Henry George. 📖 The 📐 classic work on 🗺️ land value 💵 taxation and ⚖️ economic justice.  
+* [📈📉 Progress and Poverty](../books/progress-and-poverty.md) by Henry George. 📖 The 📐 classic work on 🗺️ land value 💵 taxation and ⚖️ economic justice.  
 * [🏛️💰 Debt: The First 5,000 Years](../books/debt-the-first-5000-years.md) by David Graeber. 📖 An 🏺 anthropological 📜 history of 💳 debt and 💸 money.

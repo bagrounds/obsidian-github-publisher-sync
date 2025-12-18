@@ -69,7 +69,7 @@ affiliate link: https://amzn.to/4p4um35
 ## 📚 Book Recommendations  
   
 ### 📖 Similar  
-* 🌱 Progress and Poverty by Henry George  
+* [📈📉 Progress and Poverty](./progress-and-poverty.md) by Henry George  
 * [🏛️💰 Debt: The First 5,000 Years](./debt-the-first-5000-years.md) by David Graeber  
 * 🌟 Utopia for Realists by Rutger Bregman  
   

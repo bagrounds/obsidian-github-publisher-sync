@@ -7,7 +7,9 @@ URL: https://bagrounds.org/reflections
 backlinks: false
 ---
 [Home](../index.md)  
-# 🪞 Reflections (397)  
+# 🪞 Reflections (399)  
+- [2025-12-18 | ⚡️ Mitochondria 🔋 Optimization 🛠️ Engineers](./2025-12-18.md)  
+- [2025-12-17 | 🏔️ Wörgl 🏛️ Patriarchy 📢 Demanded 🌿 Natural 🍩 Doughnut ⛓️ Constraint 🔬 Decomposition 📈 Progress 📚📺📄](./2025-12-17.md)  
 - [2025-12-16 | ➕ More 🍩 Doughnut 🛃 Agents 🧾 Prove 💻 Tech 🐘 Politics 🚨 Problems 📚📺](./2025-12-16.md)  
 - [2025-12-15 | 🌌 Universal 🍩 Doughnut 🌪️ Disaster 📋 Platform 🌌📚](./2025-12-15.md)  
 - [2025-12-14 | 💪 Massive 👶 Toddler 🧠 Intelligence ⚠️ Threatens 🚫 Anti-Vaccine 🇺🇸 Americans 🌌📺📚](./2025-12-14.md)  

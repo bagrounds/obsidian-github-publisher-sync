@@ -43,6 +43,7 @@ export const sharedPageComponents: SharedLayout = {
       }
     }),
     Component.FixedFooter(),
+    Component.TextToSpeech(),
   ],
   footer: Component.Footer({
     links: {
@@ -62,7 +63,6 @@ export const defaultContentPageLayout: PageLayout = {
     Component.MobileOnly(Component.Spacer()),
     Component.Search(),
     Component.Darkmode(),
-    Component.TextToSpeech(),
     Component.DesktopOnly(Component.TableOfContents()),
   ],
   right: [],
@@ -76,7 +76,6 @@ export const defaultListPageLayout: PageLayout = {
     Component.MobileOnly(Component.Spacer()),
     Component.Search(),
     Component.Darkmode(),
-    Component.TextToSpeech(),
   ],
   right: [],
 }

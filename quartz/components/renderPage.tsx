@@ -263,6 +263,7 @@ export function renderPage(
             <Footer {...componentData} />
           </Body>
         </div>
+        <script src="https://unpkg.com/ttsreader-plugin/main.js" defer></script>
       </body>
       {pageResources.js
         .filter((resource) => resource.loadTime === "afterDOMReady")

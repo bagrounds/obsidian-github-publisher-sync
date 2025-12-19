@@ -12,7 +12,8 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 ❔ What do 🫵 _you_ 🤔 think?  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (398)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (399)  
+- [2025-12-18 | ⚡️ Mitochondria 🔋 Optimization 🛠️ Engineers](./reflections/2025-12-18.md)  
 - [2025-12-17 | 🏔️ Wörgl 🏛️ Patriarchy 📢 Demanded 🌿 Natural 🍩 Doughnut ⛓️ Constraint 🔬 Decomposition 📈 Progress 📚📺📄](./reflections/2025-12-17.md)  
 - [2025-12-16 | ➕ More 🍩 Doughnut 🛃 Agents 🧾 Prove 💻 Tech 🐘 Politics 🚨 Problems 📚📺](./reflections/2025-12-16.md)  
 - [2025-12-15 | 🌌 Universal 🍩 Doughnut 🌪️ Disaster 📋 Platform 🌌📚](./reflections/2025-12-15.md)  
@@ -22,10 +23,10 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [2025-12-11 | 🧠 Habits 🧘‍♀️ Calm ⚡️ ADHD 🌎 Wherever 🌱 Gardening 🗓️ Plan 🍽️ Feeds](./reflections/2025-12-11.md)  
 - [2025-12-10 | 🔮 Planning 🚨 Emergency ⚠️ Symbolic 🇻🇪 Venezuela 🚁 Disasters 📺📰📚](./reflections/2025-12-10.md)  
 - [2025-12-09 | 💡 Understanding 🌎 Reality 🌌 Beyond ⚙️ Mechanistic 🤔 Deliberation ☑️ Is 📍 Near 📚📺✍️](./reflections/2025-12-09.md)  
-- [2025-12-08 | 🏰 Keep 🚧 Stumbling on the 🌿 Nature of 👑 Gilded 😱 Terror 🏫 Theory 📚](./reflections/2025-12-08.md)  
   
   
-## [📚 Books](./books/index.md) (832)  
+## [📚 Books](./books/index.md) (833)  
+- [⚙️🎯 Algorithms for Optimization](./books/algorithms-for-optimization.md)  
 - [🧩⚙️ Constraint Processing](./books/constraint-processing.md)  
 - [🌿⚙️ The Natural Economic Order](./books/the-natural-economic-order.md)  
 - [📈📉 Progress and Poverty](./books/progress-and-poverty.md)  
@@ -35,10 +36,11 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [✅➕ Abundance](./books/abundance.md)  
 - [🌍🆘 Earth for All: A Survival Guide for Humanity](./books/earth-for-all-a-survival-guide-for-humanity.md)  
 - [📉🌎 Less is More: How Degrowth Will Save the World](./books/less-is-more-how-degrowth-will-save-the-world.md)  
-- [🌞🌬️🌊🌋 Sustainable Energy - Without the Hot Air](./books/sustainable-energy-without-the-hot-air.md)  
   
   
-## [📺 Videos](./videos/index.md) (510)  
+## [📺 Videos](./videos/index.md) (512)  
+- [⚡️🔋💪⬆️ Improve Energy & Longevity by Optimizing Mitochondria | Dr. Martin Picard](./videos/improve-energy-longevity-by-optimizing-mitochondria-dr-martin-picard.md)  
+- [💡👨‍🔬🏆🚀🌟 How Engineers Break Into The Top 1% | Michael Novati](./videos/how-engineers-break-into-the-top-1-percent-michael-novati.md)  
 - [💰📉🌍 Silvio Gesell's Forgotten Money: The Wörgl Experiment & Demurrage Currency](./videos/silvio-gesells-forgotten-money-the-worgl-experiment-demurrage-currency.md)  
 - [🏠👩‍👧‍👦💸💰 The women who demanded wages for housework - Witness History, BBC World Service](./videos/the-women-who-demanded-wages-for-housework-witness-history-bbc-world-service.md)  
 - [📉🔚🌍 What Happens When Growth Ends? - Kate Raworth, Donut Economics, DSPod  > 252](./videos/what-happens-when-growth-ends-kate-raworth-donut-economics-dspod-252.md)  
@@ -47,8 +49,6 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [🧠🛠️➡️🤖 Don't Build Agents, Build Skills Instead – Barry Zhang & Mahesh Murag, Anthropic](./videos/dont-build-agents-build-skills-instead-barry-zhang-mahesh-murag-anthropic.md)  
 - [🧠🛠️🕸️🚫🙅‍♂️💼 No Vibes Allowed: Solving Hard Problems in Complex Codebases – Dex Horthy, HumanLayer](./videos/no-vibes-allowed-solving-hard-problems-in-complex-codebases-dex-horthy-humanlayer.md)  
 - [🤖📈 💯📊 👩‍💻👨‍💻 Can you prove AI ROI in Software Eng? (Stanford 120k Devs Study) – Yegor Denisov-Blanch, Stanford](./videos/can-you-prove-ai-roi-in-software-eng-stanford-120k-devs-study-yegor-denisov-blanch-stanford.md)  
-- [🧠💡📐🧑‍🏫 The Mathematical Foundations of Intelligence [Professor Yi Ma](./videos/the-mathematical-foundations-of-intelligence-professor-yi-ma.md)]  
-- [💉👩‍⚕️💻 Doctor Answers Vaccine Questions | Tech Support | WIRED](./videos/doctor-answers-vaccine-questions-tech-support-wired.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (85)  

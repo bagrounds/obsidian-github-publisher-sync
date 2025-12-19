@@ -60,12 +60,6 @@ export function pageResources(
     contentType: "external",
   })
 
-  resources.js.push({
-    src: "https://unpkg.com/ttsreader-plugin@0.1.0/main.js",
-    loadTime: "afterDOMReady",
-    contentType: "external",
-  })
-
   return resources
 }
 

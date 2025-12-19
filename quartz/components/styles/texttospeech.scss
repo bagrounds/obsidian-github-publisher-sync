@@ -198,11 +198,15 @@
   .tts-player {
     right: 10px;
     bottom: 10px;
-    left: 10px;
-    max-width: none;
+    max-width: calc(100vw - 20px);
   }
   
   .tts-controls {
     min-width: auto;
+  }
+  
+  .tts-toggle-btn {
+    width: 48px;
+    height: 48px;
   }
 }

@@ -60,6 +60,12 @@ export function pageResources(
     contentType: "external",
   })
 
+  resources.js.push({
+    src: "https://unpkg.com/ttsreader-plugin/main.js",
+    loadTime: "afterDOMReady",
+    contentType: "external",
+  })
+
   return resources
 }
 
@@ -263,7 +269,6 @@ export function renderPage(
             <Footer {...componentData} />
           </Body>
         </div>
-        <script src="https://unpkg.com/ttsreader-plugin/main.js" defer></script>
       </body>
       {pageResources.js
         .filter((resource) => resource.loadTime === "afterDOMReady")

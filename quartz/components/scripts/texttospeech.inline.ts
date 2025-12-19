@@ -10,11 +10,19 @@ let currentWordIndex = 0
 let currentSpeed = 1.0
 let highlightedElements: HTMLElement[] = []
 
-// Emoji regex pattern to filter out emojis
-const emojiRegex = /[\u{1F300}-\u{1F9FF}\u{1F600}-\u{1F64F}\u{1F680}-\u{1F6FF}\u{2600}-\u{26FF}\u{2700}-\u{27BF}\u{1F900}-\u{1F9FF}\u{1F1E0}-\u{1F1FF}]/gu
+// Emoji regex pattern to filter out emojis - comprehensive pattern
+// Covers all emoji ranges including symbols, flags, and extended pictographs
+const emojiRegex = /[\u{1F000}-\u{1F9FF}\u{1F600}-\u{1F64F}\u{1F680}-\u{1F6FF}\u{2600}-\u{26FF}\u{2700}-\u{27BF}\u{1F900}-\u{1F9FF}\u{1F1E0}-\u{1F1FF}\u{1FA00}-\u{1FAFF}\u{2B50}\u{2B55}\u{2934}-\u{2935}\u{2B05}-\u{2B07}\u{3030}\u{303D}\u{3297}\u{3299}\u{FE0F}\u{200D}]/gu
 
 function removeEmojis(text: string): string {
-  return text.replace(emojiRegex, '').replace(/\s+/g, ' ').trim()
+  // Remove emojis and clean up extra whitespace
+  return text
+    .replace(emojiRegex, '')
+    // Remove zero-width joiners and variation selectors
+    .replace(/[\u200D\uFE0F]/g, '')
+    // Clean up multiple spaces
+    .replace(/\s+/g, ' ')
+    .trim()
 }
 
 function splitIntoWords(text: string): string[] {
@@ -145,6 +153,7 @@ function speakText() {
   
   currentUtterance.onboundary = (event) => {
     if (event.name === 'word') {
+      currentWordIndex = wordBoundaryIndex
       highlightWord(wordBoundaryIndex)
       updateProgress()
       updateTime()
@@ -204,6 +213,18 @@ function startReading() {
   
   // Extract text content, excluding code blocks and other non-readable elements
   const clonedArticle = article.cloneNode(true) as HTMLElement
+  
+  // Skip everything before the first h1 tag
+  const firstH1 = clonedArticle.querySelector('h1')
+  if (firstH1) {
+    // Remove all siblings before the first h1
+    let currentNode = clonedArticle.firstChild
+    while (currentNode && currentNode !== firstH1) {
+      const nextNode = currentNode.nextSibling
+      clonedArticle.removeChild(currentNode)
+      currentNode = nextNode
+    }
+  }
   
   const elementsToRemove = clonedArticle.querySelectorAll(
     'pre, code, script, style, .giscus, .backlinks, button, nav, svg'

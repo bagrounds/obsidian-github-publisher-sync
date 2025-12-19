@@ -18,8 +18,8 @@ function removeEmojis(text: string): string {
 }
 
 function splitIntoWords(text: string): string[] {
-  // Split by whitespace and punctuation, keeping the structure
-  return text.split(/(\s+)/).filter(w => w.trim().length > 0)
+  // Split by whitespace, keeping only non-empty words
+  return text.split(/\s+/).filter(w => w.length > 0)
 }
 
 function updateProgress() {
@@ -141,15 +141,14 @@ function speakText() {
   currentUtterance.volume = 1.0
   
   // Track word boundaries for highlighting
+  let wordBoundaryIndex = currentWordIndex
+  
   currentUtterance.onboundary = (event) => {
     if (event.name === 'word') {
-      currentWordIndex = Math.min(
-        words.length - 1,
-        currentWordIndex + 1
-      )
-      highlightWord(currentWordIndex)
+      highlightWord(wordBoundaryIndex)
       updateProgress()
       updateTime()
+      wordBoundaryIndex++
     }
   }
   
@@ -163,6 +162,8 @@ function speakText() {
   }
   
   currentUtterance.onend = () => {
+    // Update current position to reflect completion
+    currentWordIndex = Math.min(currentWordIndex + words.slice(currentWordIndex).length, words.length)
     stopReading()
   }
   
@@ -178,8 +179,10 @@ function speakText() {
   
   currentUtterance.onerror = (event) => {
     console.error('Speech synthesis error:', event)
-    // Don't stop on interrupted errors (these happen during speed changes)
-    if (event.error !== 'interrupted') {
+    // Handle specific error types
+    const errorEvent = event as SpeechSynthesisErrorEvent
+    // Don't stop on interrupted errors (these happen during speed changes or seeking)
+    if (errorEvent.error && errorEvent.error !== 'interrupted' && errorEvent.error !== 'cancelled') {
       stopReading()
     }
   }
@@ -312,10 +315,17 @@ function updatePlayerUI() {
   }
 }
 
+// Track event handlers to avoid duplicates
+let eventHandlersAttached = false
+
 // Event listeners
 document.addEventListener('nav', () => {
   // Ensure any previous speech is stopped
   stopReading()
+  
+  // Only attach handlers once
+  if (eventHandlersAttached) return
+  eventHandlersAttached = true
   
   // Toggle player visibility
   const toggleBtn = document.getElementById('tts-toggle')
@@ -324,7 +334,6 @@ document.addEventListener('nav', () => {
     player?.classList.toggle('collapsed')
   }
   
-  toggleBtn?.removeEventListener('click', toggleHandler)
   toggleBtn?.addEventListener('click', toggleHandler)
   
   // Play/Pause button
@@ -339,7 +348,6 @@ document.addEventListener('nav', () => {
     }
   }
   
-  playPauseBtn?.removeEventListener('click', playPauseHandler)
   playPauseBtn?.addEventListener('click', playPauseHandler)
   
   // Speed control
@@ -349,7 +357,6 @@ document.addEventListener('nav', () => {
     changeSpeed(newSpeed)
   }
   
-  speedSelect?.removeEventListener('change', speedHandler)
   speedSelect?.addEventListener('change', speedHandler)
   
   // Progress slider - use 'change' event for seeking
@@ -359,7 +366,6 @@ document.addEventListener('nav', () => {
     seekToPosition(percentage)
   }
   
-  progressInput?.removeEventListener('change', progressHandler)
   progressInput?.addEventListener('change', progressHandler)
   
   // Cleanup on navigation

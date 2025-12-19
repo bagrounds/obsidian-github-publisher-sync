@@ -7,7 +7,7 @@ URL: https://bagrounds.org/videos
 backlinks: false
 ---
 [Home](../index.md)  
-# 📺 Videos (510)  
+# 📺 Videos (512)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
 - [❓💪🔬 12 Questions About Creatine with Stephen Cornish, PhD](./12-questions-about-creatine-w-stephen-cornish-phd.md)  
@@ -153,6 +153,7 @@ backlinks: false
 - [👥🌍📢💡 How Common Knowledge Shapes the World | Steven Pinker | TED](./how-common-knowledge-shapes-the-world-steven-pinker-ted.md)  
 - [How “Digital Twins” Could Help Us Predict the Future | Karen Willcox | TED](./how-digital-twins-could-help-us-predict-the-future-karen-willcox-ted.md)  
 - [👴🏃‍♀️📈 How Does Aging Impact Runners? Our Tips for Long-Term Success (from Working with Masters Runners)](./how-does-aging-impact-runners-our-tips-for-long-term-success-from-working-with-masters-runners.md)  
+- [💡👨‍🔬🏆🚀🌟 How Engineers Break Into The Top 1% | Michael Novati](./how-engineers-break-into-the-top-1-percent-michael-novati.md)  
 - [🇺🇸🤯😵‍💫❓ How half the US lost part of their minds](./how-half-the-us-lost-part-of-their-minds.md)  
 - [🕵️🇺🇸💻👁️ How ICE Spies On American Citizens | Incognito Mode | WIRED](./how-ice-spies-on-american-citizens-incognito-mode-wired.md)  
 - [🙋💻❓ How I use LLMs](./how-i-use-llms.md)  
@@ -203,6 +204,7 @@ backlinks: false
 - [🎭🤥👓 Image vs Reality—What the Administration Wants You to Think | Explainer](./image-vs-reality-what-the-administration-wants-you-to-think-explainer.md)  
 - [🛂🛑🇺🇸🎤 Immigration Enforcement: Last Week Tonight with John Oliver (HBO)](./immigration-enforcement-last-week-tonight-with-john-oliver-hbo.md)  
 - [Immigration judge rules Trump administration can deport Columbia protestor Mahmoud Khalil](./immigration-judge-rules-trump-administration-can-deport-columbia-protestor-mahmoud-khalil.md)  
+- [⚡️🔋💪⬆️ Improve Energy & Longevity by Optimizing Mitochondria | Dr. Martin Picard](./improve-energy-longevity-by-optimizing-mitochondria-dr-martin-picard.md)  
 - [🧠💊🎯 Improve Focus with Behavioral Tools & Medication for ADHD | Dr. John Kruse](./improve-focus-with-behavioral-tools-medication-for-adhd-dr-john-kruse.md)  
 - [Infant Cosleeping with James McKenna, PhD](./infant-cosleeping-with-james-mckenna-phd.md)  
 - [👨‍⚖️🛑🇺🇸🏛️ Injustice explores Trump's decade-long effort to politicize DOJ](./new-book-injustice-explores-trumps-decade-long-effort-to-politicize-doj.md)  

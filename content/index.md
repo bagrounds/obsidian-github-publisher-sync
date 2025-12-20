@@ -76,11 +76,11 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
   
   
 ## [💾 Software](./software/index.md) (30)  
-- [💻🔓 OpenCode](./software/opencode.md)  
-- [💻🎮🕹️🧠 CodinGame](./software/codingame.md)  
-- [🤖♊ Gemini](./software/gemini.md)  
-- [💎🔬🔍📈 Quartz](./software/quartz.md)  
-- [⛎♉️♊️♋️♌️♍️♎️♏️♐️♑️♒️♓️ Zodios](./software/zodios.md)  
+- [👽🦺 Zod](./software/zod.md)  
+- [💡🔧📏🔮〰️ Vensim](./software/vensim.md)  
+- [💻📱🛠️ Termux](./software/termux.md)  
+- [✨⚙️ Redis](./software/redis.md)  
+- [⚛️🔄 React](./software/react.md)  
   
   
 ## [👥 People](./people/index.md) (17)  

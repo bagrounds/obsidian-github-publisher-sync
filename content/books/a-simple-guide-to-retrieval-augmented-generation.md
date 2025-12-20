@@ -40,7 +40,7 @@ CTA: 🤖 Master RAG.
 * 🤖 **Retrieval-Augmented Generation (RAG) AI: A Comprehensive Guide to Building and Deploying Intelligent Systems with RAG AI**: 📖 This book offers a comprehensive overview of RAG, covering everything from the basics of retrieval and generative models to fine-tuning and real-world applications.  
 * 🪜 **Evolving RAG Systems for LLMs: A Guide to Naive, Advanced, and Modular RAG**: 🚀 For those looking to move beyond the basics, this guide explores the progression from simple to more sophisticated modular RAG architectures.  
 * 🔗 **LangChain in Action** by Roberto Infante: 🛠️ As LangChain is a key tool mentioned in *A Simple Guide to Retrieval Augmented Generation*, this book provides a hands-on guide to using the framework to build various LLM-driven applications, including RAG systems.  
-* 🐍 **Generative AI with LangChain** by Ben Mann and Krishnaji Godse: 🧑‍💻 This book offers practical guidance on building LLM applications using Python and LangChain, making it a great next step for those who want to expand their practical skills.  
+* **[✨🤖🔗🐍 Generative AI with LangChain: A Hands On Guide to Crafting Scalable, Intelligent Systems and Advanced AI Agents with Python](./generative-ai-with-langchain-a-hands-on-guide-to-crafting-scalable-intelligent-systems-and-advanced-ai-agents-with-python.md)** by Ben Mann and Krishnaji Godse: 🧑‍💻 This book offers practical guidance on building LLM applications using Python and LangChain, making it a great next step for those who want to expand their practical skills.  
   
 ### ⚖️ Contrasting Perspectives (Alternative AI and NLP Approaches)  
   

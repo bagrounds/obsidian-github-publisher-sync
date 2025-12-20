@@ -146,7 +146,7 @@ URL: https://bagrounds.org/software/opencode
   
 ## 📖 Book Recommendations  
   
-* 📚 **Topical:** *Generative AI with LangChain* by Ben Auffarth.  
+* 📚 **Topical:** [✨🤖🔗🐍 Generative AI with LangChain: A Hands On Guide to Crafting Scalable, Intelligent Systems and Advanced AI Agents with Python](../books/generative-ai-with-langchain-a-hands-on-guide-to-crafting-scalable-intelligent-systems-and-advanced-ai-agents-with-python.md) by Ben Auffarth.  
 * 📔 **Tangentially Related:** [🧑‍💻📈 The Pragmatic Programmer: Your Journey to Mastery](../books/the-pragmatic-programmer-your-journey-to-mastery.md) by Andrew Hunt.  
 * 📕 **Topically Opposed:** *No Code: The Book* (General focus on non-technical builders).  
 * 📖 **More General:** [🤖🧠 Artificial Intelligence: A Modern Approach](../books/artificial-intelligence-a-modern-approach.md) by Stuart Russell.  

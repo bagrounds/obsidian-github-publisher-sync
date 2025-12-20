@@ -7,7 +7,7 @@ backlinks: false
 URL: https://bagrounds.org/software
 ---
 [Home](../index.md)  
-# 💾 Software (29)  
+# 💾 Software (30)  
 - [🌐🧱🖥️🎮 Babylon.js](./babylon.md)  
 - [💻🎮🕹️🧠 CodinGame](./codingame.md)  
 - [🤖🖱️📍 Cursor](./cursor.md)  
@@ -25,6 +25,7 @@ URL: https://bagrounds.org/software
 - [Linux](./linux.md)  
 - [💾✍️🌋⚫️ Obsidian](./obsidian.md)  
 - [🦙💬 Ollama](./ollama.md)  
+- [💻🔓 OpenCode](./opencode.md)  
 - [🌐🔓💻 Open WebUI](./open-webui.md)  
 - [🐍📜🔍✅ Pydantic](./pydantic.md)  
 - [🐍💻🐍 Python](./python.md)  

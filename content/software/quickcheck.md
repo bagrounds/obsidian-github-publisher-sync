@@ -1,12 +1,12 @@
 ---
 share: true
 aliases:
-  - QuickCheck
-title: QuickCheck
+  - 🚄🎲✅ QuickCheck
+title: 🚄🎲✅ QuickCheck
 URL: https://bagrounds.org/software/quickcheck
 ---
 [Home](../index.md) > [Software](./index.md)  
-# QuickCheck  
+# 🚄🎲✅ QuickCheck  
   
 ## 🤖 AI Summary  
 ### QuickCheck  

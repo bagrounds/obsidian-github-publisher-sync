@@ -1,12 +1,12 @@
 ---
 share: true
 aliases:
-  - React
-title: React
+  - ⚛️🔄 React
+title: ⚛️🔄 React
 URL: https://bagrounds.org/software/react
 ---
 [Home](../index.md) > [Software](./index.md)  
-# React  
+# ⚛️🔄 React  
   
 ## 🤖 AI Summary  
 ### 👉 What Is It?  

@@ -1,12 +1,12 @@
 ---
 share: true
 aliases:
-  - Termux
-title: Termux
+  - 💻📱🛠️ Termux
+title: 💻📱🛠️ Termux
 URL: https://bagrounds.org/software/termux
 ---
 [Home](../index.md) > [Software](./index.md)  
-# Termux  
+# 💻📱🛠️ Termux  
   
 ## 🤖 AI Summary  
 ### Termux 📱💻  

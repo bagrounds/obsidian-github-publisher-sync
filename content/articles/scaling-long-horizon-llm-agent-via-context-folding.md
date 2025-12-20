@@ -47,7 +47,7 @@ tags:
   
 ### ↔️ Similar  
 * [🤖🏗️ AI Engineering: Building Applications with Foundation Models](../books/ai-engineering-building-applications-with-foundation-models.md) by Chip Huyen: Provides a comprehensive, production-ready guide to building large-scale AI systems, covering current best practices for LLMs, RAG, and scalable infrastructure (from search results).  
-* 🔗 Generative AI with LangChain by Ben Auffarth and Leonid Kuligin: Focuses on building advanced LLM applications, including multi-agent architectures and connecting LLMs to external data and tools, which is highly relevant to agentic design (from search results).  
+* [✨🤖🔗🐍 Generative AI with LangChain: A Hands On Guide to Crafting Scalable, Intelligent Systems and Advanced AI Agents with Python](../books/generative-ai-with-langchain-a-hands-on-guide-to-crafting-scalable-intelligent-systems-and-advanced-ai-agents-with-python.md) by Ben Auffarth and Leonid Kuligin: Focuses on building advanced LLM applications, including multi-agent architectures and connecting LLMs to external data and tools, which is highly relevant to agentic design (from search results).  
   
 ### 🆚 Contrasting  
 * 🧠 Neuro-Symbolic AI: Design transparent and trustworthy systems that understand the world as you do (Packt Publishing): Explores the integration of modern deep learning (sub-symbolic) with older, logic-based, rule-driven Symbolic AI, offering a contrasting perspective on how intelligence can be structured.  

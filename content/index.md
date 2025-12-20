@@ -12,7 +12,8 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 ❔ What do 🫵 _you_ 🤔 think?  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (399)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (400)  
+- [2025-12-19 | 💻 OpenCode 🛠️ Crafting 🍩 Doughnut 👍 Ratings 💾📰📚](./reflections/2025-12-19.md)  
 - [2025-12-18 | ⚡️ Mitochondria 🔋 Optimization 🛠️ Engineers](./reflections/2025-12-18.md)  
 - [2025-12-17 | 🏔️ Wörgl 🏛️ Patriarchy 📢 Demanded 🌿 Natural 🍩 Doughnut ⛓️ Constraint 🔬 Decomposition 📈 Progress 📚📺📄](./reflections/2025-12-17.md)  
 - [2025-12-16 | ➕ More 🍩 Doughnut 🛃 Agents 🧾 Prove 💻 Tech 🐘 Politics 🚨 Problems 📚📺](./reflections/2025-12-16.md)  
@@ -22,10 +23,12 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [2025-12-12 | 🇺🇸 Americans 🚁 Mobilise 💲 Krugman 🔍 Investigation 🐘 Politics 📚📰📺🌌](./reflections/2025-12-12.md)  
 - [2025-12-11 | 🧠 Habits 🧘‍♀️ Calm ⚡️ ADHD 🌎 Wherever 🌱 Gardening 🗓️ Plan 🍽️ Feeds](./reflections/2025-12-11.md)  
 - [2025-12-10 | 🔮 Planning 🚨 Emergency ⚠️ Symbolic 🇻🇪 Venezuela 🚁 Disasters 📺📰📚](./reflections/2025-12-10.md)  
-- [2025-12-09 | 💡 Understanding 🌎 Reality 🌌 Beyond ⚙️ Mechanistic 🤔 Deliberation ☑️ Is 📍 Near 📚📺✍️](./reflections/2025-12-09.md)  
   
   
-## [📚 Books](./books/index.md) (833)  
+## [📚 Books](./books/index.md) (834)  
+- [🤖🧠⚙️💡 Building Agentic AI Systems: Create intelligent, autonomous AI agents that can reason, plan, and adapt](./books/building-agentic-ai-systems-create-intelligent-autonomous-ai-agents-that-can-reason-plan-and-adapt.md)  
+- [❓📚 A Simple Guide to Retrieval Augmented Generation](./books/a-simple-guide-to-retrieval-augmented-generation.md)  
+- [✨🤖🔗🐍 Generative AI with LangChain: A Hands On Guide to Crafting Scalable, Intelligent Systems and Advanced AI Agents with Python](./books/generative-ai-with-langchain-a-hands-on-guide-to-crafting-scalable-intelligent-systems-and-advanced-ai-agents-with-python.md)  
 - [⚙️🎯 Algorithms for Optimization](./books/algorithms-for-optimization.md)  
 - [🧩⚙️ Constraint Processing](./books/constraint-processing.md)  
 - [🌿⚙️ The Natural Economic Order](./books/the-natural-economic-order.md)  
@@ -33,12 +36,10 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [♂️💰♀️🚩 Patriarchy of the Wage: Notes on Marx, Gender, and Feminism](./books/patriarchy-of-the-wage-notes-on-marx-gender-and-feminism.md)  
 - [⛔🌎🔚 Not the End of the World: How We Can Be the First Generation to Build a Sustainable Planet](./books/not-the-end-of-the-world.md)  
 - [🍩🌍⚖️ Doughnut Economics: Seven Ways to Think Like a 21st-Century Economist](./books/doughnut-economics-seven-ways-to-think-like-a-21st-century-economist.md)  
-- [✅➕ Abundance](./books/abundance.md)  
-- [🌍🆘 Earth for All: A Survival Guide for Humanity](./books/earth-for-all-a-survival-guide-for-humanity.md)  
-- [📉🌎 Less is More: How Degrowth Will Save the World](./books/less-is-more-how-degrowth-will-save-the-world.md)  
   
   
-## [📺 Videos](./videos/index.md) (512)  
+## [📺 Videos](./videos/index.md) (513)  
+- [📣📊🧠 Brooks and Capehart on Trump's approval ratings and mental acuity](./videos/brooks-and-capehart-on-trumps-approval-ratings-and-mental-acuity.md)  
 - [⚡️🔋💪⬆️ Improve Energy & Longevity by Optimizing Mitochondria | Dr. Martin Picard](./videos/improve-energy-longevity-by-optimizing-mitochondria-dr-martin-picard.md)  
 - [💡👨‍🔬🏆🚀🌟 How Engineers Break Into The Top 1% | Michael Novati](./videos/how-engineers-break-into-the-top-1-percent-michael-novati.md)  
 - [💰📉🌍 Silvio Gesell's Forgotten Money: The Wörgl Experiment & Demurrage Currency](./videos/silvio-gesells-forgotten-money-the-worgl-experiment-demurrage-currency.md)  
@@ -48,7 +49,6 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [🗣️💬🗓️ Politics Chat, December 16, 2025](./videos/politics-chat-december-16-2025.md)  
 - [🧠🛠️➡️🤖 Don't Build Agents, Build Skills Instead – Barry Zhang & Mahesh Murag, Anthropic](./videos/dont-build-agents-build-skills-instead-barry-zhang-mahesh-murag-anthropic.md)  
 - [🧠🛠️🕸️🚫🙅‍♂️💼 No Vibes Allowed: Solving Hard Problems in Complex Codebases – Dex Horthy, HumanLayer](./videos/no-vibes-allowed-solving-hard-problems-in-complex-codebases-dex-horthy-humanlayer.md)  
-- [🤖📈 💯📊 👩‍💻👨‍💻 Can you prove AI ROI in Software Eng? (Stanford 120k Devs Study) – Yegor Denisov-Blanch, Stanford](./videos/can-you-prove-ai-roi-in-software-eng-stanford-120k-devs-study-yegor-denisov-blanch-stanford.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (85)  
@@ -60,11 +60,11 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
   
   
 ## [📄  Articles](./articles/index.md) (75)  
+- [🤖⚙️🔄🗣️ Agentic Context Engineering: Evolving Contexts for Self Improving Language Models](./articles/agentic-context-engineering-evolving-contexts-for-self-improving-language-models.md)  
+- [🤖♾️🗂️ Scaling Long Horizon LLM Agent via Context Folding](./articles/scaling-long-horizon-llm-agent-via-context-folding.md)  
+- [🤖🧠📈⚡ Code execution with MCP: Building more efficient agents](./articles/code-execution-with-mcp-building-more-efficient-agents.md)  
 - [🧠🧩🎯⚙️ An Approach for Systematic Decomposition of Complex LLM Tasks](./articles/an-approach-for-systematic-decomposition-of-complex-llm-tasks.md)  
 - [❓📈🤦 Failing to Understand the Exponential, Again](./articles/failing-to-understand-the-exponential-again.md)  
-- [🧠🗣️💻 From Frege to ChatGPT: Compositionality in Language, Cognition, and Deep Neural Networks](./articles/from-frege-to-chatgpt-compositionality-in-language-cognition-and-deep-neural-networks.md)  
-- [🪞🇺🇸💔 Mirror, Mirror 2024: A Portrait of the Failing U.S. Health System](./articles/mirror-mirror-2024-a-portrait-of-the-failing-us-health-system.md)  
-- [🧑‍🤝‍🧑🤖🧠 Orchestrating Human AI Teams: The Manager Agent as a Unifying Research Challenge](./articles/orchestrating-human-ai-teams-the-manager-agent-as-a-unifying-research-challenge.md)  
   
   
 ## [🤖💬 Bot Chats](./bot-chats/index.md) (46)  
@@ -75,12 +75,12 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [✍️🥇🇺🇸 Creating the Most Popular Title in the Country](./bot-chats/creating-the-most-popular-title-in-the-country.md)  
   
   
-## [💾 Software](./software/index.md) (29)  
+## [💾 Software](./software/index.md) (30)  
+- [💻🔓 OpenCode](./software/opencode.md)  
 - [💻🎮🕹️🧠 CodinGame](./software/codingame.md)  
 - [🤖♊ Gemini](./software/gemini.md)  
 - [💎🔬🔍📈 Quartz](./software/quartz.md)  
 - [⛎♉️♊️♋️♌️♍️♎️♏️♐️♑️♒️♓️ Zodios](./software/zodios.md)  
-- [🐍📜🔍✅ Pydantic](./software/pydantic.md)  
   
   
 ## [👥 People](./people/index.md) (17)  

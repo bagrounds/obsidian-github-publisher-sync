@@ -52,7 +52,7 @@ tags:
 ### ↔️ Similar  
   
 * [🤖🧠🔗 Building AI Agents with LLMs, RAG, and Knowledge Graphs: A practical guide to autonomous and modern AI agents](../books/building-ai-agents-with-llms-rag-and-knowledge-graphs-a-practical-guide-to-autonomous-and-modern-ai-agents.md): 🧱 This guide provides a practical blueprint for constructing autonomous agents, including the tool integration and advanced architectures similar to the MCP code execution model.  
-* *Generative AI with LangChain*: 🔗 This resource focuses on using a popular framework to connect LLMs with external tools and APIs, directly covering the practical application layer of the problems and solutions addressed by Anthropic's efficiency approach.  
+* [✨🤖🔗🐍 Generative AI with LangChain: A Hands On Guide to Crafting Scalable, Intelligent Systems and Advanced AI Agents with Python](../books/generative-ai-with-langchain-a-hands-on-guide-to-crafting-scalable-intelligent-systems-and-advanced-ai-agents-with-python.md): 🔗 This resource focuses on using a popular framework to connect LLMs with external tools and APIs, directly covering the practical application layer of the problems and solutions addressed by Anthropic's efficiency approach.  
   
 ### 🆚 Contrasting  
   

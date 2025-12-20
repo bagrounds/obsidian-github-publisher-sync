@@ -1,12 +1,12 @@
 ---
 share: true
 aliases:
-  - Vensim
-title: Vensim
+  - 💡🔧📏🔮〰️ Vensim
+title: 💡🔧📏🔮〰️ Vensim
 URL: https://bagrounds.org/software/vensim
 ---
 [Home](../index.md) > [Software](./index.md)  
-# Vensim  
+# 💡🔧📏🔮〰️ Vensim  
   
 ## 🤖 AI Summary  
 ### 💾 Software Report: Vensim 📊  

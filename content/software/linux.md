@@ -1,12 +1,12 @@
 ---
 share: true
 aliases:
-  - Linux
-title: Linux
+  - 🐧💻🚀 Linux
+title: 🐧💻🚀 Linux
 URL: https://bagrounds.org/software/linux
 ---
 [Home](../index.md) > [Software](./index.md)  
-# Linux  
+# 🐧💻🚀 Linux  
   
 ## 🤖 AI Summary  
 ### 🔨 Tool Report: Linux 🐧  

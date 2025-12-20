@@ -1,12 +1,12 @@
 ---
 share: true
 aliases:
-  - Zod
-title: Zod
+  - 👽🦺 Zod
+title: 👽🦺 Zod
 URL: https://bagrounds.org/software/zod
 ---
 [Home](../index.md) > [Software](./index.md)  
-# Zod  
+# 👽🦺 Zod  
   
 ## 🤖 AI Summary  
 ### 💾 Software Report: Zod 🛡️  

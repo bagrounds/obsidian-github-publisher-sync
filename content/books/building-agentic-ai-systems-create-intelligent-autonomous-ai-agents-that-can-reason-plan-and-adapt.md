@@ -44,7 +44,7 @@ CTA: 🤖 Engineer autonomy.
 ### 👯 Similar Books  
   
 * **[🤖🏗️ AI Engineering: Building Applications with Foundation Models](./ai-engineering-building-applications-with-foundation-models.md)** by Chip Huyen: 🏗️ This book offers a broad overview of AI engineering, covering the use of foundation models to build real-world applications.  
-* ⛓️ **Generative AI with LangChain** by Ben Auffarth and Leonid Kuligin: 🐍 This book dives into a popular framework for developing applications powered by large language models.  
+* **[✨🤖🔗🐍 Generative AI with LangChain: A Hands On Guide to Crafting Scalable, Intelligent Systems and Advanced AI Agents with Python](./generative-ai-with-langchain-a-hands-on-guide-to-crafting-scalable-intelligent-systems-and-advanced-ai-agents-with-python.md)** by Ben Auffarth and Leonid Kuligin: 🐍 This book dives into a popular framework for developing applications powered by large language models.  
 * 📖 **The AI Engineering Bible** by various authors: 📖 This guide provides a comprehensive look at building, developing, and scaling production-ready AI systems.  
 * 🤖 **Hands-on AI Agent Development** by Corby Allen: 🧪 A practical guide to designing and building high-performance, intelligent agents for real-world applications.  
   

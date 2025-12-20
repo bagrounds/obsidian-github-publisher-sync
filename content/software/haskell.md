@@ -1,12 +1,12 @@
 ---
 share: true
 aliases:
-  - Haskell
-title: Haskell
+  - 💻🧠📈 Haskell
+title: 💻🧠📈 Haskell
 URL: https://bagrounds.org/software/haskell
 ---
 [Home](../index.md) > [Software](./index.md)  
-# Haskell  
+# 💻🧠📈 Haskell  
   
 ## 🤖 AI Summary  
 ### Haskell  

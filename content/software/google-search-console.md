@@ -1,12 +1,12 @@
 ---
 share: true
 aliases:
-  - Google Search Console
-title: Google Search Console
+  - 📊🔍📈 Google Search Console
+title: 📊🔍📈 Google Search Console
 URL: https://bagrounds.org/software/google-search-console
 ---
 [Home](../index.md) > [Software](./index.md)  
-# Google Search Console  
+# 📊🔍📈 Google Search Console  
   
 ## 🤖 AI Summary  
 ### 🔨 Tool Report: Google Search Console 🔍  

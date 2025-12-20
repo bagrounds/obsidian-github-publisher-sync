@@ -7,7 +7,7 @@ URL: https://bagrounds.org/books
 backlinks: false
 ---
 [Home](../index.md)  
-# 📚 Books (833)  
+# 📚 Books (834)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)  
 - [🧑‍🤝‍🧑📈 10 to 25: The Science of Motivating Young People: A Groundbreaking Approach to Leading the Next Generation - And Making Your Own Life Easier](./10-to-25-the-science-of-motivating-young-people-a-groundbreaking-approach-to-leading-the-next-generation-and-making-your-own-life-easier.md)  
@@ -247,6 +247,7 @@ backlinks: false
 - [💾🏗️ Fundamentals of Data Engineering: Plan and Build Robust Data Systems](./fundamentals-of-data-engineering-plan-and-build-robust-data-systems.md)  
 - [🌍🌿 Gaia's Garden: A Guide to Home-Scale Permaculture](./gaias-garden.md)  
 - [♾️📐🎶🥨 Gödel, Escher, Bach: An Eternal Golden Braid](./godel-escher-bach.md)  
+- [✨🤖🔗🐍 Generative AI with LangChain: A Hands On Guide to Crafting Scalable, Intelligent Systems and Advanced AI Agents with Python](./generative-ai-with-langchain-a-hands-on-guide-to-crafting-scalable-intelligent-systems-and-advanced-ai-agents-with-python.md)  
 - [✅😌 Getting Things Done: The Art of Stress-Free Productivity](./getting-things-done-the-art-of-stress-free-productivity.md)  
 - [👉🤝 Getting to Yes: Negotiating Agreement Without Giving In](./getting-to-yes-negotiating-agreement-without-giving-in.md)  
 - [🎁➡️🏆 Give and Take: A Revolutionary Approach to Success](./give-and-take.md)  

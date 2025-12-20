@@ -7,7 +7,7 @@ URL: https://bagrounds.org/videos
 backlinks: false
 ---
 [Home](../index.md)  
-# 📺 Videos (512)  
+# 📺 Videos (513)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
 - [❓💪🔬 12 Questions About Creatine with Stephen Cornish, PhD](./12-questions-about-creatine-w-stephen-cornish-phd.md)  
@@ -87,6 +87,7 @@ backlinks: false
 - [⛈️🇺🇸🗣️💬 Brooks and Capehart on the federal response to the Texas flooding disaster](./brooks-and-capehart-on-the-federal-response-to-the-texas-flooding-disaster.md)  
 - [🎙️🇺🇸🛥️💥 Brooks and Capehart on the political fallout over Trump's boat strikes](./brooks-and-capehart-on-the-political-fallout-over-trumps-boat-strikes.md)  
 - [👨‍💼🛑💰🗣️ Brooks and Capehart on the political reaction to Trump's tariffs](./brooks-and-capehart-on-the-political-reaction-to-trumps-tariffs.md)  
+- [📣📊🧠 Brooks and Capehart on Trump's approval ratings and mental acuity](./brooks-and-capehart-on-trumps-approval-ratings-and-mental-acuity.md)  
 - [👑🚧📉 Brooks and Capehart on Trump’s tariffs and reaction from the markets](./brooks-and-capehart-on-trumps-tariffs-and-reaction-from-the-markets.md)  
 - [🏗️📈🤝🌍 Building a Better Economy | Alex Pentland | TEDxMIT](./building-a-better-economy-alex-pentland-tedxmit.md)  
 - [📰🤝🗣️ Building a News Community with Jim Acosta | Explainer](./building-a-news-community-with-jim-acosta-explainer.md)  

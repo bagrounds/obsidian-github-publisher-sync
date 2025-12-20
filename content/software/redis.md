@@ -1,12 +1,12 @@
 ---
 share: true
 aliases:
-  - Redis
-title: Redis
+  - ✨⚙️ Redis
+title: ✨⚙️ Redis
 URL: https://bagrounds.org/software/redis
 ---
 [Home](../index.md) > [Software](./index.md)  
-# Redis  
+# ✨⚙️ Redis  
   
 ## 🤖 AI Summary  
 ### 💾 Software Report: Redis 🚀  

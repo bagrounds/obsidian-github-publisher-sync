@@ -7,7 +7,8 @@ URL: https://bagrounds.org/reflections
 backlinks: false
 ---
 [Home](../index.md)  
-# 🪞 Reflections (400)  
+# 🪞 Reflections (401)  
+- [2025-12-20 | 🍩 Doughnut 📉 Optimization](./2025-12-20.md)  
 - [2025-12-19 | 💻 OpenCode 🛠️ Crafting 🍩 Doughnut 👍 Ratings 💾📰📚](./2025-12-19.md)  
 - [2025-12-18 | ⚡️ Mitochondria 🔋 Optimization 🛠️ Engineers](./2025-12-18.md)  
 - [2025-12-17 | 🏔️ Wörgl 🏛️ Patriarchy 📢 Demanded 🌿 Natural 🍩 Doughnut ⛓️ Constraint 🔬 Decomposition 📈 Progress 📚📺📄](./2025-12-17.md)  

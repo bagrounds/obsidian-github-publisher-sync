@@ -12,7 +12,8 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 ❔ What do 🫵 _you_ 🤔 think?  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (400)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (401)  
+- [2025-12-20 | 🍩 Doughnut 📉 Optimization](./reflections/2025-12-20.md)  
 - [2025-12-19 | 💻 OpenCode 🛠️ Crafting 🍩 Doughnut 👍 Ratings 💾📰📚](./reflections/2025-12-19.md)  
 - [2025-12-18 | ⚡️ Mitochondria 🔋 Optimization 🛠️ Engineers](./reflections/2025-12-18.md)  
 - [2025-12-17 | 🏔️ Wörgl 🏛️ Patriarchy 📢 Demanded 🌿 Natural 🍩 Doughnut ⛓️ Constraint 🔬 Decomposition 📈 Progress 📚📺📄](./reflections/2025-12-17.md)  
@@ -22,20 +23,19 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [2025-12-13 | 🇺🇸 Presidential 🍩 Doughnut 📈 Growth 👀 Happened 📺📚🌌](./reflections/2025-12-13.md)  
 - [2025-12-12 | 🇺🇸 Americans 🚁 Mobilise 💲 Krugman 🔍 Investigation 🐘 Politics 📚📰📺🌌](./reflections/2025-12-12.md)  
 - [2025-12-11 | 🧠 Habits 🧘‍♀️ Calm ⚡️ ADHD 🌎 Wherever 🌱 Gardening 🗓️ Plan 🍽️ Feeds](./reflections/2025-12-11.md)  
-- [2025-12-10 | 🔮 Planning 🚨 Emergency ⚠️ Symbolic 🇻🇪 Venezuela 🚁 Disasters 📺📰📚](./reflections/2025-12-10.md)  
   
   
-## [📚 Books](./books/index.md) (834)  
+## [📚 Books](./books/index.md) (835)  
+- [⛰️⬇️📈 Convex Optimization](./books/convex-optimization.md)  
+- [⚙️🎯 Algorithms for Optimization](./books/algorithms-for-optimization.md)  
+- [🔢🎯 Numerical Optimization](./books/numerical-optimization.md)  
+- [🍩🌍⚖️ Doughnut Economics: Seven Ways to Think Like a 21st-Century Economist](./books/doughnut-economics-seven-ways-to-think-like-a-21st-century-economist.md)  
 - [🤖🧠⚙️💡 Building Agentic AI Systems: Create intelligent, autonomous AI agents that can reason, plan, and adapt](./books/building-agentic-ai-systems-create-intelligent-autonomous-ai-agents-that-can-reason-plan-and-adapt.md)  
 - [❓📚 A Simple Guide to Retrieval Augmented Generation](./books/a-simple-guide-to-retrieval-augmented-generation.md)  
 - [✨🤖🔗🐍 Generative AI with LangChain: A Hands On Guide to Crafting Scalable, Intelligent Systems and Advanced AI Agents with Python](./books/generative-ai-with-langchain-a-hands-on-guide-to-crafting-scalable-intelligent-systems-and-advanced-ai-agents-with-python.md)  
-- [⚙️🎯 Algorithms for Optimization](./books/algorithms-for-optimization.md)  
 - [🧩⚙️ Constraint Processing](./books/constraint-processing.md)  
 - [🌿⚙️ The Natural Economic Order](./books/the-natural-economic-order.md)  
 - [📈📉 Progress and Poverty](./books/progress-and-poverty.md)  
-- [♂️💰♀️🚩 Patriarchy of the Wage: Notes on Marx, Gender, and Feminism](./books/patriarchy-of-the-wage-notes-on-marx-gender-and-feminism.md)  
-- [⛔🌎🔚 Not the End of the World: How We Can Be the First Generation to Build a Sustainable Planet](./books/not-the-end-of-the-world.md)  
-- [🍩🌍⚖️ Doughnut Economics: Seven Ways to Think Like a 21st-Century Economist](./books/doughnut-economics-seven-ways-to-think-like-a-21st-century-economist.md)  
   
   
 ## [📺 Videos](./videos/index.md) (513)  

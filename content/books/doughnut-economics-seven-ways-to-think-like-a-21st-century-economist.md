@@ -29,6 +29,10 @@ affiliate link: https://amzn.to/48Xh4PO
         - 🗽 Cato  
         - 🇬🇧 IEA, London  
     - 🇺🇸 Reagan & 🇬🇧 Thatcher  
+- ➿💲 Systems thinking for economics  
+    - 🌳 Healthy hierarchy  
+    - 🤝 Self-organization  
+    - 💪 Resilience  
   
 ## 🤖 AI Summary  
   

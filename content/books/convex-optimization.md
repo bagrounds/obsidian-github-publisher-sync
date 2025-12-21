@@ -4,9 +4,10 @@ aliases:
   - ⛰️⬇️📈 Convex Optimization
 title: ⛰️⬇️📈 Convex Optimization
 URL: https://bagrounds.org/books/convex-optimization
-Author: 
-tags: 
+Author:
+tags:
 affiliate link: https://amzn.to/4564QUI
+CTA: 🔑 Unlock efficient solutions.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ⛰️⬇️📈 Convex Optimization  
@@ -60,7 +61,7 @@ affiliate link: https://amzn.to/4564QUI
   
 **Additional Book Recommendations:** 📚  
   
-* **Best Alternate Book on the Same Topic:** "Numerical Optimization" by Jorge Nocedal and Stephen J. Wright. (More general 🌐, but still contains a lot of convex optimization information ⚖️)  
+* **Best Alternate Book on the Same Topic:** [🔢🎯 Numerical Optimization](./numerical-optimization.md) by Jorge Nocedal and Stephen J. Wright. (More general 🌐, but still contains a lot of convex optimization information ⚖️)  
 * **Best Tangentially Related Book:** "[Deep Learning](./deep-learning.md)" by Ian Goodfellow, Yoshua Bengio, and Aaron Courville. (Deep learning 🧠 relies heavily on optimization techniques 🔄)  
 * **Best Diametrically Opposed Book:** "Nonlinear Programming" by Dimitri P. Bertsekas. (Explores optimization problems that are not necessarily convex 🌀)  
 * **Best Fiction Book That Incorporates Related Ideas:** "[The Goal](./the-goal.md): A Process of Ongoing Improvement" by Eliyahu M. Goldratt. (While a business novel 🏭, it deals with optimization and constraints in a practical setting 💼)  

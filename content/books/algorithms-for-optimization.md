@@ -75,7 +75,7 @@ affiliate link: https://amzn.to/3Y3tZdT
   
 ### 👍 Similar Books  
 * [⛰️⬇️📈 Convex Optimization](./convex-optimization.md) by Stephen Boyd and Lieven Vandenberghe  
-* 📖 Numerical Optimization by Jorge Nocedal and Stephen Wright  
+* [🔢🎯 Numerical Optimization](./numerical-optimization.md) by Jorge Nocedal and Stephen Wright  
 * 📖 Practical Methods of Optimization by R. Fletcher  
   
 ### ↔️ Contrasting Books  

@@ -7,7 +7,7 @@ URL: https://bagrounds.org/books
 backlinks: false
 ---
 [Home](../index.md)  
-# 📚 Books (834)  
+# 📚 Books (835)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)  
 - [🧑‍🤝‍🧑📈 10 to 25: The Science of Motivating Young People: A Groundbreaking Approach to Leading the Next Generation - And Making Your Own Life Easier](./10-to-25-the-science-of-motivating-young-people-a-groundbreaking-approach-to-leading-the-next-generation-and-making-your-own-life-easier.md)  
@@ -406,6 +406,7 @@ backlinks: false
 - [🕊️🤝 Nonviolent Communication: A Language of Life](./nonviolent-communication.md)  
 - [⛔🌎🔚 Not the End of the World: How We Can Be the First Generation to Build a Sustainable Planet](./not-the-end-of-the-world.md)  
 - [👉🤏 Nudge: Improving Decisions about Health, Wealth, and Happiness](./nudge.md)  
+- [🔢🎯 Numerical Optimization](./numerical-optimization.md)  
 - [👨‍🍼🫂 Nurturing Dads: Social Initiatives for Contemporary Fatherhood](./nurturing-dads-social-initiatives-for-contemporary-fatherhood.md)  
 - [💰🏛️💔🇺🇸 On Corruption in America: And What Is at Stake](./on-corruption-in-america-and-what-is-at-stake.md)  
 - [🏛️🗳️🗣️🤝 On Democracy](./on-democracy.md)  

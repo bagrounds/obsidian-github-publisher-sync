@@ -54,7 +54,7 @@ Considering "The Miraculous Journey of Edward Tulane" for its profound themes of
   
 Recommending soothing fiction  
   
-"Goodnight Moon" by Margaret Wise Brown stands out for its rhythmic text and bedtime routines, making it an ideal choice for a fiction book that deals with baby soothing.  
+[🌙🛌 Goodnight Moon](../books/goodnight-moon.md) by Margaret Wise Brown stands out for its rhythmic text and bedtime routines, making it an ideal choice for a fiction book that deals with baby soothing.  
   
 Crafting soothing solutions  
   

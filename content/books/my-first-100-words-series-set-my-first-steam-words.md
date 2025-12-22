@@ -66,7 +66,7 @@ affiliate link: https://amzn.to/48qewcD
 ### Contrasting  
 * 🐻 Brown Bear, Brown Bear, What Do You See? by Bill Martin Jr. and Eric Carle (focuses on color/animal recognition, less explicit STEAM)  
 * 🐶 Where's Spot? by Eric Hill (lift-the-flap, simple narrative, basic concepts)  
-* 🌙 Goodnight Moon by Margaret Wise Brown (focuses on routine and observation)  
+* [🌙🛌 Goodnight Moon](./goodnight-moon.md) by Margaret Wise Brown (focuses on routine and observation)  
   
 ### Related  
 * 👷 Rosie Revere, Engineer by Andrea Beaty (introduces engineering concepts through narrative)  

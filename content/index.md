@@ -12,7 +12,8 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 ❔ What do 🫵 _you_ 🤔 think?  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (401)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (402)  
+- [2025-12-21 | ♾️ Infinite 🌙 Moon 🍩 Doughnut 📺📚](./reflections/2025-12-21.md)  
 - [2025-12-20 | 🍩 Doughnut 📉 Optimization](./reflections/2025-12-20.md)  
 - [2025-12-19 | 💻 OpenCode 🛠️ Crafting 🍩 Doughnut 👍 Ratings 💾📰📚](./reflections/2025-12-19.md)  
 - [2025-12-18 | ⚡️ Mitochondria 🔋 Optimization 🛠️ Engineers](./reflections/2025-12-18.md)  
@@ -22,23 +23,23 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [2025-12-14 | 💪 Massive 👶 Toddler 🧠 Intelligence ⚠️ Threatens 🚫 Anti-Vaccine 🇺🇸 Americans 🌌📺📚](./reflections/2025-12-14.md)  
 - [2025-12-13 | 🇺🇸 Presidential 🍩 Doughnut 📈 Growth 👀 Happened 📺📚🌌](./reflections/2025-12-13.md)  
 - [2025-12-12 | 🇺🇸 Americans 🚁 Mobilise 💲 Krugman 🔍 Investigation 🐘 Politics 📚📰📺🌌](./reflections/2025-12-12.md)  
-- [2025-12-11 | 🧠 Habits 🧘‍♀️ Calm ⚡️ ADHD 🌎 Wherever 🌱 Gardening 🗓️ Plan 🍽️ Feeds](./reflections/2025-12-11.md)  
   
   
-## [📚 Books](./books/index.md) (835)  
+## [📚 Books](./books/index.md) (836)  
+- [👶😊😴 The Happiest Baby on the Block: The New Way to Calm Crying and Help Your Newborn Baby Sleep Longer](./books/the-happiest-baby-on-the-block.md)  
+- [⚫🔢 Ten Black Dots](./books/ten-black-dots.md)  
+- [⚛️👶 Quantum Physics for Babies](./books/quantum-physics-for-babies.md)  
+- [👶🔬 My First 100 Words series set (My First STEAM Words)](./books/my-first-100-words-series-set-my-first-steam-words.md)  
+- [🌙🛌 Goodnight Moon](./books/goodnight-moon.md)  
 - [⛰️⬇️📈 Convex Optimization](./books/convex-optimization.md)  
 - [⚙️🎯 Algorithms for Optimization](./books/algorithms-for-optimization.md)  
 - [🔢🎯 Numerical Optimization](./books/numerical-optimization.md)  
 - [🍩🌍⚖️ Doughnut Economics: Seven Ways to Think Like a 21st-Century Economist](./books/doughnut-economics-seven-ways-to-think-like-a-21st-century-economist.md)  
 - [🤖🧠⚙️💡 Building Agentic AI Systems: Create intelligent, autonomous AI agents that can reason, plan, and adapt](./books/building-agentic-ai-systems-create-intelligent-autonomous-ai-agents-that-can-reason-plan-and-adapt.md)  
-- [❓📚 A Simple Guide to Retrieval Augmented Generation](./books/a-simple-guide-to-retrieval-augmented-generation.md)  
-- [✨🤖🔗🐍 Generative AI with LangChain: A Hands On Guide to Crafting Scalable, Intelligent Systems and Advanced AI Agents with Python](./books/generative-ai-with-langchain-a-hands-on-guide-to-crafting-scalable-intelligent-systems-and-advanced-ai-agents-with-python.md)  
-- [🧩⚙️ Constraint Processing](./books/constraint-processing.md)  
-- [🌿⚙️ The Natural Economic Order](./books/the-natural-economic-order.md)  
-- [📈📉 Progress and Poverty](./books/progress-and-poverty.md)  
   
   
-## [📺 Videos](./videos/index.md) (513)  
+## [📺 Videos](./videos/index.md) (514)  
+- [♾️🐛💻 The Infinite Software Crisis – Jake Nations, Netflix](./videos/the-infinite-software-crisis-jake-nations-netflix.md)  
 - [📣📊🧠 Brooks and Capehart on Trump's approval ratings and mental acuity](./videos/brooks-and-capehart-on-trumps-approval-ratings-and-mental-acuity.md)  
 - [⚡️🔋💪⬆️ Improve Energy & Longevity by Optimizing Mitochondria | Dr. Martin Picard](./videos/improve-energy-longevity-by-optimizing-mitochondria-dr-martin-picard.md)  
 - [💡👨‍🔬🏆🚀🌟 How Engineers Break Into The Top 1% | Michael Novati](./videos/how-engineers-break-into-the-top-1-percent-michael-novati.md)  
@@ -48,7 +49,6 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [🇺🇸💻💰💥 Inside the Tech Company Powering Trump’s Most Controversial Policies](./videos/inside-the-tech-company-powering-trumps-most-controversial-policies.md)  
 - [🗣️💬🗓️ Politics Chat, December 16, 2025](./videos/politics-chat-december-16-2025.md)  
 - [🧠🛠️➡️🤖 Don't Build Agents, Build Skills Instead – Barry Zhang & Mahesh Murag, Anthropic](./videos/dont-build-agents-build-skills-instead-barry-zhang-mahesh-murag-anthropic.md)  
-- [🧠🛠️🕸️🚫🙅‍♂️💼 No Vibes Allowed: Solving Hard Problems in Complex Codebases – Dex Horthy, HumanLayer](./videos/no-vibes-allowed-solving-hard-problems-in-complex-codebases-dex-horthy-humanlayer.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (85)  
@@ -68,11 +68,11 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
   
   
 ## [🤖💬 Bot Chats](./bot-chats/index.md) (46)  
+- [👶😭➡️😊 Summarize The Happiest Baby On The Block](./bot-chats/summarize-the-happiest-baby-on-the-block.md)  
+- [📖 Book 🧭 Explorer 2](./bot-chats/book-explorer-2.md)  
 - [📖 Book 🧭 Explorer 1](./bot-chats/book-explorer-1.md)  
 - [🇦🇹💰🆚📈🖨️ Austrian Economics vs Modern Monetary Theory](./bot-chats/austrian-economics-vs-modern-monetary-theory.md)  
 - [🧭 Managing 🕸️ Complexity 🧠](./bot-chats/managing-complexity.md)  
-- [🤰⏰👶🔮 Forecasting Parenthood](./bot-chats/forecasting-parenthood.md)  
-- [✍️🥇🇺🇸 Creating the Most Popular Title in the Country](./bot-chats/creating-the-most-popular-title-in-the-country.md)  
   
   
 ## [💾 Software](./software/index.md) (30)  

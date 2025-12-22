@@ -452,7 +452,7 @@ Let's think of some topics very different from Postmodern Social Commentary:
   
 For a book completely dissimilar in topic or perspective from everything we've discussed, how about:  
   
-* *Goodnight Moon* by Margaret Wise Brown. This beloved children's book offers a simple and soothing bedtime ritual, a world away from the complex themes and narrative structure of *Infinite Jest*. 🌙🐰🧸  
+* [🌙🛌 Goodnight Moon](../books/goodnight-moon.md) by Margaret Wise Brown. This beloved children's book offers a simple and soothing bedtime ritual, a world away from the complex themes and narrative structure of *Infinite Jest*. 🌙🐰🧸  
   
 That was a deep and challenging dive into the world of *Infinite Jest*! What other literary complexities await our exploration? 🤔📚🎾  
   

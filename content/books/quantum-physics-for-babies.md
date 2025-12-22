@@ -71,7 +71,7 @@ affiliate link: https://amzn.to/4oqrvRs
   
 ### 🆚 Contrasting  
 * 🐈 The Cat in the Hat's Learning Library (series) - Introduces science concepts with narrative and humor for slightly older children.  
-* 🌙 Goodnight Moon by Margaret Wise Brown - A classic, soothing bedtime story with no explicit scientific content.  
+* [🌙🛌 Goodnight Moon](./goodnight-moon.md) by Margaret Wise Brown - A classic, soothing bedtime story with no explicit scientific content.  
   
 ### 🔗 Related  
 * [🌌 Cosmos](./cosmos.md) by Carl Sagan - Explores vast scientific concepts for a general adult audience.  

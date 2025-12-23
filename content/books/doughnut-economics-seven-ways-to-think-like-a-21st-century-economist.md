@@ -90,7 +90,7 @@ affiliate link: https://amzn.to/48Xh4PO
   
 ### ➕ Similar  
 * **[📉🌎 Less is More: How Degrowth Will Save the World](./less-is-more-how-degrowth-will-save-the-world.md)** by Jason Hickel  
-* 💰 **The Value of Everything: Making and Taking in the Global Economy** by Mariana Mazzucato  
+* **[💰🏭🌍 The Value of Everything: Making and Taking in the Global Economy](./the-value-of-everything-making-and-taking-in-the-global-economy.md)** by Mariana Mazzucato  
 * **[🌐🔗🧠📖 Thinking in Systems: A Primer](./thinking-in-systems.md)** by Donella H. Meadows  
   
 ### 🆚 Contrasting  

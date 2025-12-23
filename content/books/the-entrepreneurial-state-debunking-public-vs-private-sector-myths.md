@@ -73,7 +73,7 @@ affiliate link: https://amzn.to/3XkqlMl
   
 ### ➕ Similar  
 * [🚀🌍💰 Mission Economy: A Moonshot Guide to Changing Capitalism](./mission-economy-a-moonshot-guide-to-changing-capitalism.md) by Mariana Mazzucato  
-* 💰 The Value of Everything: Making and Taking in the Global Economy by Mariana Mazzucato  
+* [💰🏭🌍 The Value of Everything: Making and Taking in the Global Economy](./the-value-of-everything-making-and-taking-in-the-global-economy.md) by Mariana Mazzucato  
 * [🍩🌍 Doughnut Economics: Seven Ways to Think Like a 21st-Century Economist](./doughnut-economics-seven-ways-to-think-like-a-21st-century-economist.md) by Kate Raworth  
   
 ### ➖ Contrasting  

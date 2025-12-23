@@ -59,4 +59,4 @@ CTA: 🧐 Question economic orthodoxy.
   
 ### 🎨 Creatively Related 💡  
 * **[🏛️💰 Debt: The First 5,000 Years](../books/debt-the-first-5000-years.md)** by David Graeber is an anthropological work that strongly supports the MMT perspective on the origins of money, arguing that it arose from systems of credit and debt, not barter.  
-* 💰 **The Value of Everything: Making and Taking in the Global Economy** by Mariana Mazzucato explores the concept of value creation, arguing for an active role of government in the economy, which aligns with MMT's view of government as a necessary enabler of economic activity.
+* **[💰🏭🌍 The Value of Everything: Making and Taking in the Global Economy](../books/the-value-of-everything-making-and-taking-in-the-global-economy.md)** by Mariana Mazzucato explores the concept of value creation, arguing for an active role of government in the economy, which aligns with MMT's view of government as a necessary enabler of economic activity.

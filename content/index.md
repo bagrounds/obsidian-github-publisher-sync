@@ -12,7 +12,8 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 ❔ What do 🫵 _you_ 🤔 think?  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (402)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (403)  
+- [2025-12-22 | 🌍 Wherever 🍩 Doughnut 📚](./reflections/2025-12-22.md)  
 - [2025-12-21 | ♾️ Infinite 🌙 Moon 🍩 Doughnut 📺📚](./reflections/2025-12-21.md)  
 - [2025-12-20 | 🍩 Doughnut 📉 Optimization](./reflections/2025-12-20.md)  
 - [2025-12-19 | 💻 OpenCode 🛠️ Crafting 🍩 Doughnut 👍 Ratings 💾📰📚](./reflections/2025-12-19.md)  
@@ -22,7 +23,6 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [2025-12-15 | 🌌 Universal 🍩 Doughnut 🌪️ Disaster 📋 Platform 🌌📚](./reflections/2025-12-15.md)  
 - [2025-12-14 | 💪 Massive 👶 Toddler 🧠 Intelligence ⚠️ Threatens 🚫 Anti-Vaccine 🇺🇸 Americans 🌌📺📚](./reflections/2025-12-14.md)  
 - [2025-12-13 | 🇺🇸 Presidential 🍩 Doughnut 📈 Growth 👀 Happened 📺📚🌌](./reflections/2025-12-13.md)  
-- [2025-12-12 | 🇺🇸 Americans 🚁 Mobilise 💲 Krugman 🔍 Investigation 🐘 Politics 📚📰📺🌌](./reflections/2025-12-12.md)  
   
   
 ## [📚 Books](./books/index.md) (836)  

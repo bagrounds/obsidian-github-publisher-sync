@@ -62,7 +62,7 @@ affiliate link: https://amzn.to/4dSXFl4
 * The author's credentials 🎓🧠, combined with the quality of information provided 📊📈, provide a high level of confidence 👍💯 in the books content.  
   
 **Additional Book Recommendations:** 📚🌟  
-* **Best Alternate Book (Same Topic):** "The Value of Everything: Making and Taking in the Global Economy" by Mariana Mazzucato 📈💰. This book also heavily critiques neoliberalism 📉🚫, and explains the importance of the states role within innovation 💡🚀.  
+* **Best Alternate Book (Same Topic):** [💰🏭🌍 The Value of Everything: Making and Taking in the Global Economy](./the-value-of-everything-making-and-taking-in-the-global-economy.md) by Mariana Mazzucato 📈💰. This book also heavily critiques neoliberalism 📉🚫, and explains the importance of the states role within innovation 💡🚀.  
 * **Best Tangentially Related Book:** [🍩🌍 Doughnut Economics: Seven Ways to Think Like a 21st-Century Economist](./doughnut-economics-seven-ways-to-think-like-a-21st-century-economist.md) by Kate Raworth 🍩🌍. This book offers a compelling vision 🌈🌟 of a sustainable 🌿🌍 and equitable ⚖️🤝 economy.  
 * **Best Diametrically Opposed Book:** "Capitalism and Freedom" by Milton Friedman 🗽💰. This classic work defends the principles of free-market capitalism 💰📈 and limited government 🏛️🚫.  
 * **Best Fiction Book (Related Ideas):** "The Ministry for the Future" by Kim Stanley Robinson 🌍🌡️. This novel explores the challenges of climate change 🌡️🔥 and the potential for collective action 🤝👥 to address them.  

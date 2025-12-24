@@ -84,7 +84,7 @@ affiliate link: https://amzn.to/4avSs34
 * [🚀🌍💰 Mission Economy: A Moonshot Guide to Changing Capitalism](./mission-economy-a-moonshot-guide-to-changing-capitalism.md) by Mariana Mazzucato: Further develops the concept of mission-oriented innovation and purpose-driven economics.  
 * [🍩🌍⚖️ Doughnut Economics: Seven Ways to Think Like a 21st-Century Economist](./doughnut-economics-seven-ways-to-think-like-a-21st-century-economist.md) by Kate Raworth: Advocates for an economic model that meets human needs within ecological limits.  
 * [💩💼 Bullshit Jobs: A Theory](./bullshit-jobs-a-theory.md) by David Graeber: Explores the proliferation of meaningless jobs in modern economies.  
-* 🗺️ The New Geography of Jobs by Enrico Moretti: Discusses the economic challenges and opportunities in a knowledge economy.  
+* [📈💼 The New Geography of Jobs](./the-new-geography-of-jobs.md) by Enrico Moretti: Discusses the economic challenges and opportunities in a knowledge economy.  
   
 ## 🫵 What Do You Think?  
 🤔 How does society defines value, and what implications does this have for equitable wealth distribution? If you could redefine a single economic metric, which would it be and why?

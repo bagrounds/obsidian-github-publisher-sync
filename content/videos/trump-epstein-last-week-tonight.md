@@ -55,7 +55,7 @@ youtube: https://youtube.com/embed/SLVL_wg3Hz0
 ### ↔️ Similar  
   
 * [🏦👨‍💼💥 Dark Towers: Deutsche Bank, Donald Trump, and an Epic Trail of Destruction](../books/dark-towers-deutsche-bank-donald-trump-and-an-epic-trail-of-destruction.md) by David Enrich: 💰 Focuses on the financial scrutiny and powerful connections of Trump, similar to the Epstein controversy.  
-* 🕵️️ Perversion of Justice: The Jeffrey Epstein Story by Julie K. Brown: ⚖️ Details the original Epstein investigation, plea deal, and his powerful network, offering crucial context.  
+* [⚖️😈🔞 Perversion of Justice: The Jeffrey Epstein Story](../books/perversion-of-justice-the-jeffrey-epstein-story.md) by Julie K. Brown: ⚖️ Details the original Epstein investigation, plea deal, and his powerful network, offering crucial context.  
   
 ### 🆚 Contrasting  
   

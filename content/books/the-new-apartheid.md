@@ -4,9 +4,11 @@ aliases:
   - 🇿🇦 The New Apartheid
 URL: https://bagrounds.org/books/the-new-apartheid
 share: true
+affiliate link: https://amzn.to/4pTiAtk
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🇿🇦 The New Apartheid  
+[🛒 The New Apartheid. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4pTiAtk)  
   
 🇿🇦⚖️🌐 Formal apartheid's abolition did not end systemic racial oppression in South Africa, but rather saw it privatized and decentralized across space, law, wealth, technology, and punishment, creating a new apartheid that demands urgent understanding and dismantling.  
   
@@ -64,9 +66,9 @@ share: true
 ## 📚 Book Recommendations  
   
 ### 🤝 Similar  
-* 📚 The New Jim Crow by Michelle Alexander  
-* 📚 Capital in the Twenty-First Century by Thomas Piketty  
-* 📚 Why Nations Fail by Daron Acemoglu and James A. Robinson  
+* [🧑🏿⛓️🙈 The New Jim Crow: Mass Incarceration in the Age of Colorblindness](./the-new-jim-crow-mass-incarceration-in-the-age-of-colorblindness.md) by Michelle Alexander  
+* [💰📈🌍⏳ Capital in the Twenty-First Century](./capital-in-the-twenty-first-century.md) by Thomas Piketty  
+* [🌎👎👑💰🏚️ Why Nations Fail: The Origins of Power, Prosperity, and Poverty](./why-nations-fail-the-origins-of-power-prosperity-and-poverty.md) by Daron Acemoglu and James A. Robinson  
   
 ### ⚔️ Contrasting  
 * 📚 Long Walk to Freedom by Nelson Mandela  
@@ -76,7 +78,7 @@ share: true
 ### 🔗 Related  
 * 📚 Dark Emu by Bruce Pascoe  
 * 📚 The Divide by Jason Hickel  
-* 📚 Evicted: Poverty and Profit in the American City by Matthew Desmond  
+* [🏚️💰 Evicted: Poverty and Profit in the American City](./evicted-poverty-and-profit-in-the-american-city.md) by Matthew Desmond  
   
 ## 🫵 What Do You Think?  
-🤔 How do you perceive the persistence of historical injustices in contemporary societies, and what role do you believe privatization plays in shaping modern inequality? Share your thoughts below!  
+🤔 How do you perceive the persistence of historical injustices in contemporary societies, and what role do you believe privatization plays in shaping modern inequality? Share your thoughts below!

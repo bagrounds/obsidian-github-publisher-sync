@@ -36,8 +36,8 @@ youtube: https://youtu.be/rbTaEsieWsU
   
 ## 📚 Book Recommendations  
 * [🤖🧑‍🏫 Teaching with AI: A Practical Guide to a New Era of Human Learning](../books/teaching-with-ai-a-practical-guide-to-a-new-era-of-human-learning.md)  
-* 🤖 "ChatGPT and the Future of AI" by Terry Sejnowski  
-* 🤝 "Co-Intelligence" by Ethan Mollick  
-* ❓ "The Alignment Problem"  
-* 👀 "The Worlds I See" by Fei-Fei Li  
-* 💪 "AI Superpowers"
+* 🤖 ChatGPT and the Future of AI by Terry Sejnowski  
+* [🧑‍🤝‍🤖 Co-Intelligence: The Definitive, Bestselling Guide to Living and Working with AI](../books/co-intelligence-the-definitive-bestselling-guide-to-living-and-working-with-ai.md) by Ethan Mollick  
+* ❓ The Alignment Problem  
+* 👀 The Worlds I See by Fei-Fei Li  
+* 💪 AI Superpowers

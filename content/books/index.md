@@ -7,7 +7,7 @@ URL: https://bagrounds.org/books
 backlinks: false
 ---
 [Home](../index.md)  
-# 📚 Books (836)  
+# 📚 Books (839)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)  
 - [🧑‍🤝‍🧑📈 10 to 25: The Science of Motivating Young People: A Groundbreaking Approach to Leading the Next Generation - And Making Your Own Life Easier](./10-to-25-the-science-of-motivating-young-people-a-groundbreaking-approach-to-leading-the-next-generation-and-making-your-own-life-easier.md)  
@@ -440,6 +440,7 @@ backlinks: false
 - [⛰️📈🥇 Peak: Secrets from the New Science of Expertise](./peak.md)  
 - [🤖📐 Perceptrons: An Introduction to Computational Geometry](./perceptrons-an-introduction-to-computational-geometry.md)  
 - [⚠️😬😰 Peril](./peril.md)  
+- [⚖️😈🔞 Perversion of Justice: The Jeffrey Epstein Story](./perversion-of-justice-the-jeffrey-epstein-story.md)  
 - [🐈🐕🛋️ Pets on the Couch](./pets-on-the-couch.md)  
 - [➡️ Pivot: The Only Move That Matters Is Your Next One](./pivot-the-only-move-that-matters-is-your-next-one.md)  
 - [🗺️🎯🪜🏗️ Planning for Everything: The Design of Paths and Goals](./planning-for-everything.md)  
@@ -688,6 +689,7 @@ backlinks: false
 - [🇿🇦 The New Apartheid](./the-new-apartheid.md)  
 - [🔥🌎⚔️ The New Climate War: The Fight to Take Back Our Planet](./the-new-climate-war-the-fight-to-take-back-our-planet.md)  
 - [📈🏛️🏫 The New Economics: For Industry, Government, Education](./the-new-economics.md)  
+- [📈💼 The New Geography of Jobs](./the-new-geography-of-jobs.md)  
 - [🧑🏿⛓️🙈 The New Jim Crow: Mass Incarceration in the Age of Colorblindness](./the-new-jim-crow-mass-incarceration-in-the-age-of-colorblindness.md)  
 - [⚡🌍⚔️ The New Map: Energy, Climate, and the Clash of Nations](./the-new-map-energy-climate-and-the-clash-of-nations.md)  
 - [☀️📖🌿 The New Sunset Western Garden Book: The Ultimate Gardening Guide](./the-new-sunset-western-garden-book-the-ultimate-gardening-guide.md)  
@@ -770,6 +772,7 @@ backlinks: false
 - [🤝📈🇺🇸🔁 The Upswing: How America Came Together a Century Ago and How We Can Do It Again](./the-upswing.md)  
 - [🌀⬆️🧠 The Upward Spiral: Using Neuroscience to Reverse the Course of Depression, One Small Change at a Time](./the-upward-spiral-using-neuroscience-to-reverse-the-course-of-depression-one-small-change-at-a-time.md)  
 - [🤖📝😇 The Utopia of Rules: On Technology, Stupidity, and the Secret Joys of Bureaucracy](./the-utopia-of-rules-on-technology-stupidity-and-the-secret-joys-of-bureaucracy.md)  
+- [💰🏭🌍 The Value of Everything: Making and Taking in the Global Economy](./the-value-of-everything-making-and-taking-in-the-global-economy.md)  
 - [🐛🍎 The Very Hungry Caterpillar](./the-very-hungry-caterpillar.md)  
 - [🪖🎨 The War of Art: Break Through the Blocks and Win Your Inner Creative Battles](./the-war-of-art.md)  
 - [🚫💰❤️ The Wealth Money Can't Buy: The 8 Hidden Habits to Live Your Richest Life](./the-wealth-money-cant-buy-the-8-hidden-habits-to-live-your-richest-life.md)  

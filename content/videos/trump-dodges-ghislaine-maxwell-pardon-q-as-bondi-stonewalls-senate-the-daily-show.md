@@ -59,7 +59,7 @@ A: 📅 Speaker Mike Johnson faced criticism for delaying the swearing-in of a n
   
 ### **Contrasting: Serious Investigative Journalism on Power and Corruption**  
   
-- 🔎 Perversion of Justice: The Jeffrey Epstein Story by _Julie K. Brown_. 📑 Provides the essential investigative work on Epstein, which the video's political humor is based upon, offering a starkly serious, journalistic contrast.  
+- [⚖️😈🔞 Perversion of Justice: The Jeffrey Epstein Story](../books/perversion-of-justice-the-jeffrey-epstein-story.md) by _Julie K. Brown_. 📑 Provides the essential investigative work on Epstein, which the video's political humor is based upon, offering a starkly serious, journalistic contrast.  
 - [💰💥📉 The Big Short: Inside the Doomsday Machine](../books/the-big-short-inside-the-doomsday-machine.md) by _Michael Lewis_. 💼 Although focused on finance, it exposes the complex systems, lack of regulation, and moral failures among the powerful elite, a theme that contrasts with the video's light tone but matches its thematic focus on corruption.  
 - [🔥💣💥😡🤬 Fire and Fury: Inside the Trump White House](../books/fire-and-fury-inside-the-trump-white-house.md) by _Michael Wolff_. 🗣️ Offers an insider's account of the Trump administration, providing a journalistic backdrop to the political figures and behaviors satirized in the segment.  
   

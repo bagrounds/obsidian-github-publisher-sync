@@ -49,7 +49,7 @@ youtube: https://youtu.be/BhjxjVfwPiE
   
 ### ↔️ Similar  
   
-* 📖 Perversion of Justice by Julie K. Brown. 📰 This book documents the investigative journalism that reopened the Epstein case.  
+* [⚖️😈🔞 Perversion of Justice: The Jeffrey Epstein Story](../books/perversion-of-justice-the-jeffrey-epstein-story.md) by Julie K. Brown. 📰 This book documents the investigative journalism that reopened the Epstein case.  
 * 📖 Filthy Rich by James Patterson and John Connolly. 🕵️ A detailed look at the lifestyle and crimes of Jeffrey Epstein.  
   
 ### 🆚 Contrasting  

@@ -60,4 +60,7 @@ youtube: https://youtu.be/9ws1r6CaSXs
 ### 🎨 Creatively Related  
   
 * [🧑🏿⛓️🙈 The New Jim Crow: Mass Incarceration in the Age of Colorblindness](../books/the-new-jim-crow-mass-incarceration-in-the-age-of-colorblindness.md) by Michelle Alexander (The New Press) explores how systemic law enforcement tactics create a permanent underclass, similar to the impacts described in the report.  
-* 🚔 Rise of the Warrior Cop by Radley Balko (PublicAffairs) investigates the militarization of local and federal police forces and the resulting erosion of civil liberties.
+* 🚔 Rise of the Warrior Cop by Radley Balko (PublicAffairs) investigates the militarization of local and federal police forces and the resulting erosion of civil liberties.  
+  
+## 🐦 Tweet  
+<blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">🚨🚔🇺🇸👨‍👩‍👧‍👦 Inside an Immigration Raid That Swept Up U.S. Citizens | Visual Investigations<br><br>Is Trump&#39;s ICE agency state sponsored terrorism?<a href="https://t.co/gC59U1NVAm">https://t.co/gC59U1NVAm</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/2004695363975041128?ref_src=twsrc%5Etfw">December 26, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

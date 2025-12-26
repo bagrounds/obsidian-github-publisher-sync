@@ -66,7 +66,7 @@ affiliate link: https://amzn.to/3Njf2Cb
 ## 📚 Book Recommendations  
   
 ### 📖 Similar  
-* 💻 iWoz by Steve Wozniak: An autobiography focusing on early engineering genius and the passion for technology that built Apple's foundations.  
+* 💻 [🧑‍💻🍎🌟😄 iWoz: Computer Geek to Cult Icon: How I Invented the Personal Computer, Co-Founded Apple, and Had Fun Doing It](./iwoz-computer-geek-to-cult-icon-how-i-invented-the-personal-computer-co-founded-apple-and-had-fun-doing-it.md) by Steve Wozniak: An autobiography focusing on early engineering genius and the passion for technology that built Apple's foundations.  
 * 🌐 The Innovators by Walter Isaacson: Explores the history of the digital revolution through the lives of its key figures, including early computer pioneers.  
   
 ### ↔️ Contrasting  

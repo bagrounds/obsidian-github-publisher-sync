@@ -57,7 +57,7 @@ Wilkinson and Pickett posit that the psychological effects of inequality are a k
   
 ### 🎨 Creatively Related Reads: 🎭 Inequality in the Arts and Imagination  
   
-* 🍇 **"The Grapes of Wrath" by John Steinbeck:** 🏜️ The classic novel of the Joad family's struggle during the Great Depression offers a timeless and moving depiction of poverty and social injustice.  
+* **[🍇😡 The Grapes of Wrath](./the-grapes-of-wrath.md) by John Steinbeck:** 🏜️ The classic novel of the Joad family's struggle during the Great Depression offers a timeless and moving depiction of poverty and social injustice.  
 * 👩‍🦰 **"The Handmaid's Tale" by Margaret Atwood:** 🚨 This dystopian novel explores a society with extreme and rigidly enforced social hierarchies, offering a chilling allegory of power and oppression.  
 * 🎬 **"Parasite" (Film, directed by Bong Joon-ho):** 🏆 This Academy Award-winning film is a darkly comedic thriller that masterfully dissects the dynamics of class struggle and the chasm between the rich and the poor in modern South Korea.  
 * 📺 **"The Wire" (Television Series):** 🌆 Set in Baltimore, this critically acclaimed series offers a panoramic and nuanced exploration of the interconnected social and economic problems in an American city, from the drug trade to the failures of the education system and political corruption.  

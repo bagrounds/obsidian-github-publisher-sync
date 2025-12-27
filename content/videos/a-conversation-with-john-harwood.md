@@ -61,5 +61,5 @@ youtube: https://youtu.be/wbCiS39Q6Rw
   
 ### 🎨 Creatively Related  
   
-* 🌊 The Grapes of Wrath by John Steinbeck. 💡 A narrative exploration of how economic hardship drives social division and the search for human dignity.  
+* [🍇😡 The Grapes of Wrath](../books/the-grapes-of-wrath.md) by John Steinbeck. 💡 A narrative exploration of how economic hardship drives social division and the search for human dignity.  
 * [🧠💡 Common Sense](../books/common-sense.md) by Thomas Paine. 💡 A foundational text on the necessity of self-determination and the human right to challenge oppressive rule.

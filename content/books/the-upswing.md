@@ -4,8 +4,8 @@ aliases:
   - "🤝📈🇺🇸🔁 The Upswing: How America Came Together a Century Ago and How We Can Do It Again"
 title: "🤝📈🇺🇸🔁 The Upswing: How America Came Together a Century Ago and How We Can Do It Again"
 URL: https://bagrounds.org/books/the-upswing
-Author: 
-tags: 
+Author:
+tags:
 affiliate link: https://amzn.to/4mMFkKw
 ---
 [Home](../index.md) > [Books](./index.md)  
@@ -58,10 +58,10 @@ Robert Putnam, the author, is a highly respected political scientist and public 
 * **Best Alternate Book on the Same Topic:** "[Bowling Alone](./bowling-alone.md): The Collapse and Revival of American Community" by Robert D. Putnam 🎳 (a precursor to "The Upswing" focusing on the decline of social capital).  
 * **Best Tangentially Related Book:** "Hillbilly Elegy: A Memoir of Family and Culture in Crisis" by J.D. Vance ⛰️ (provides a personal perspective on the social and economic challenges facing working-class Americans).  
 * **Best Diametrically Opposed Book:** "The Virtue of Selfishness" by Ayn Rand 🗽 (advocates for individualism and rational self-interest).  
-* **Best Fiction Book That Incorporates Related Ideas:** "The Grapes of Wrath" by John Steinbeck 🍇 (depicts the social and economic upheaval of the Great Depression).  
-* **Best More General Book:** "[Sapiens: A Brief History of Humankind](./sapiens-a-brief-history-of-humankind.md)" by Yuval Noah Harari 🧑‍🤝‍🧑 (provides a broader historical perspective on the evolution of human societies).  
+* **Best Fiction Book That Incorporates Related Ideas:** [🍇😡 The Grapes of Wrath](./the-grapes-of-wrath.md) by John Steinbeck 🍇 (depicts the social and economic upheaval of the Great Depression).  
+* **Best More General Book:** [📜🌍⏳ Sapiens: A Brief History of Humankind](./sapiens-a-brief-history-of-humankind.md) by Yuval Noah Harari 🧑‍🤝‍🧑 (provides a broader historical perspective on the evolution of human societies).  
 * **Best More Specific Book:** "Our Kids: The American Dream in Crisis" by Robert D. Putnam 🧒 (examines the growing opportunity gap between rich and poor children in America).  
-* **Best More Rigorous Book:** "[Capital in the Twenty First Century](./capital-in-the-twenty-first-century.md)" by Thomas Piketty 💰 (provides a more technical analysis of income inequality).  
+* **Best More Rigorous Book:** [💰📈🌍⏳ Capital in the Twenty-First Century](./capital-in-the-twenty-first-century.md) by Thomas Piketty 💰 (provides a more technical analysis of income inequality).  
 * **Best More Accessible Book:** "Strangers in Their Own Land: Anger and Mourning on the American Right" by Arlie Russell Hochschild 🤝 (offers a more empathetic understanding of political polarization).  
   
 ## 💬 [Gemini](https://gemini.google.com) Prompt  

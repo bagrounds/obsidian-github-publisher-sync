@@ -55,8 +55,8 @@ Reviewers have noted that *The Socialist Manifesto* is an accessible introductio
   
 ### 🎨 Creatively Related Reads (Exploring Relevant Themes in Different Ways)  
   
-* ***The Grapes of Wrath*** by John Steinbeck: A powerful novel 💪 depicting the struggles of a poor farming family 👨‍🌾 during the Great Depression, highlighting themes of class struggle ✊, poverty 🏚️, and the failures of capitalism 😠.  
-* **[👁️ 1984](./1984.md)*l** by George Orwell: A dystopian novel 😥 serving as a cautionary tale against totalitarianism 👮, often interpreted as a critique of authoritarian communism, prompting reflection on the relationship between power 💪 and ideology.  
+* **[🍇😡 The Grapes of Wrath](./the-grapes-of-wrath.md)** by John Steinbeck: A powerful novel 💪 depicting the struggles of a poor farming family 👨‍🌾 during the Great Depression, highlighting themes of class struggle ✊, poverty 🏚️, and the failures of capitalism 😠.  
+* **[👁️ 1984](./1984.md)** by George Orwell: A dystopian novel 😥 serving as a cautionary tale against totalitarianism 👮, often interpreted as a critique of authoritarian communism, prompting reflection on the relationship between power 💪 and ideology.  
 * ***Animal Farm*** by George Orwell: An allegorical novella 🐷 critiquing the corruption of socialist ideals in the Soviet Union under Stalinist rule.  
 * ***The Jungle*** by Upton Sinclair: A novel exposing the harsh conditions and exploitation of immigrant workers 👷 in the American meatpacking industry 🏭, a classic example of literature highlighting capitalist injustices.  
 * ***Looking Backward*** by Edward Bellamy: A utopian science fiction novel 🚀 from the late 19th century envisioning a future socialist society 🌍, offering a historical perspective on socialist aspirations.  

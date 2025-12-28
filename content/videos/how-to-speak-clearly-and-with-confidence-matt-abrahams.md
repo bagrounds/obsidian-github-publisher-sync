@@ -55,7 +55,7 @@ youtube: https://youtu.be/ZtTUfMHuioA
   
 ### ↔️ Similar  
   
-* 📘 Think Faster Talk Smarter by Matt Abrahams offers specific frameworks for managing spontaneous speaking situations and anxiety.  
+* [⚡🗣️ Think Faster, Talk Smarter: How to Speak Successfully When You're Put on the Spot](../books/think-faster-talk-smarter-how-to-speak-successfully-when-youre-put-on-the-spot.md) by Matt Abrahams offers specific frameworks for managing spontaneous speaking situations and anxiety.  
 * 📙 Confident Communication by Stanford University Press details how to structure messages for maximum audience impact and clarity.  
   
 ### 🆚 Contrasting  

@@ -7,7 +7,7 @@ URL: https://bagrounds.org/books
 backlinks: false
 ---
 [Home](../index.md)  
-# 📚 Books (845)  
+# 📚 Books (847)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [💻0️⃣ Source Code: My Beginnings](./source-code-my-beginnings.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)  
@@ -212,6 +212,7 @@ backlinks: false
 - [➖💯 Essentialism: The Disciplined Pursuit of Less](./essentialism-the-disciplined-pursuit-of-less.md)  
 - [💪⚕️ Essentials of Creatine in Sports and Health](./essentials-of-creatine-in-sports-and-health.md)  
 - [🌍✍🏿 Everybody Writes: Your Go-To Guide to Creating Ridiculously Good Content](./everybody-writes.md)  
+- [👣🗺️💥 Everyone Who Is Gone Is Here: The United States, Central America, and the Making of a Crisis](./everyone-who-is-gone-is-here-the-united-states-central-america-and-the-making-of-a-crisis.md)  
 - [🤝🧘 Everything Is Workable: A Zen Approach to Conflict Resolution](./everything-is-workable.md)  
 - [🏚️💰 Evicted: Poverty and Profit in the American City](./evicted-poverty-and-profit-in-the-american-city.md)  
 - [✅🗓️ Evidence-Based Habit Building: Finally Get Sh*t Done](./evidence-based-habit-building-finally-get-sht-done.md)  
@@ -786,6 +787,7 @@ backlinks: false
 - [🧘🏋️ The Willpower Instinct: How Self-Control Works, Why It Matters, and What You Can Do to Get More of It](./the-willpower-instinct.md)  
 - [🇨🇳🌍 The World According to China](./the-world-according-to-china.md)  
 - [👍🧠 The Yes Brain: How to Cultivate Courage, Curiosity, and Resilience in Your Child](./the-yes-brain.md)  
+- [⚡🗣️ Think Faster, Talk Smarter: How to Speak Successfully When You're Put on the Spot](./think-faster-talk-smarter-how-to-speak-successfully-when-youre-put-on-the-spot.md)  
 - [🤔🐇🐢 Thinking, Fast and Slow](./thinking-fast-and-slow.md)  
 - [🎲🤔 Thinking in Bets: Making Smarter Decisions When You Don't Have All the Facts](./thinking-in-bets-making-smarter-decisions-when-you-dont-have-all-the-facts.md)  
 - [🌐🔗🧠📖 Thinking in Systems: A Primer](./thinking-in-systems.md)  

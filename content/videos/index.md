@@ -7,7 +7,7 @@ URL: https://bagrounds.org/videos
 backlinks: false
 ---
 [Home](../index.md)  
-# 📺 Videos (526)  
+# 📺 Videos (528)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
 - [❓💪🔬 12 Questions About Creatine with Stephen Cornish, PhD](./12-questions-about-creatine-w-stephen-cornish-phd.md)  
@@ -192,6 +192,7 @@ backlinks: false
 - [🦴🤕🏃‍♀️🧪 How to Reduce Bone Injury Risks | Running Science](./how-to-reduce-bone-injury-risks-running-science.md)  
 - [🧠🛠️♾️💪 How to reprogram your mind to have infinite resilience](./how-to-reprogram-your-mind-to-have-infinite-resilience.md)  
 - [🤿📚🔬🎓 How to Research Any Topic - Deep-Dive like a PhD Student](./how-to-research-any-topic-deep-dive-like-a-phd-student.md)  
+- [🗣️✨ How to Speak Clearly & With Confidence | Matt Abrahams](./how-to-speak-clearly-and-with-confidence-matt-abrahams.md)  
 - [🤖👀❌📰 How to spot AI and misinformation online](./how-to-spot-ai-and-misinformation-online.md)  
 - [👑🚫🌍🗣️ How to stop authoritarianism across the globe: a conversation with President Obama](./how-to-stop-authoritarianism-across-the-globe-a-conversation-with-president-obama.md)  
 - [🗣️👽 How to Talk to Aliens](./how-to-talk-to-aliens.md)  
@@ -445,6 +446,7 @@ backlinks: false
 - [👨‍⚖️📧❓ Trump faces fresh Epstein questions as new emails and files are released](./trump-faces-fresh-epstein-questions-as-new-emails-and-files-are-released.md)  
 - [👨‍👩‍👧‍👦🪙🤔⬇️ Trump family’s cryptocurrency ties raise concerns as administration loosens regulations](./trump-familys-cryptocurrency-ties-raise-concerns-as-administration-loosens-regulations.md)  
 - [👨‍⚖️💂‍♂️🚨🇺🇸 Trump Orders Another 2,000 Guardsmen, 700 Marines To LA | NPR News Now](./trump-orders-another-2000-guardsmen-700-marines-to-la-npr-news-now.md)  
+- [🚪👥🚫⚖️ Trump Said He’d Deport Millions. What’s Happening on the Ground? | WSJ](./trump-said-hed-deport-millions-whats-happening-on-the-ground-wsj.md)  
 - [👹🤡👑📢 Trump’s Distractions Are Part of the Authoritarian Playbook | Explainer](./trumps-distractions-are-part-of-the-authoritarian-playbook-explainer.md)  
 - [🌪️🇺🇸📉🌍 Trump’s instability and the potential of a post-American world](./trumps-instability-and-the-potential-of-a-post-american-world.md)  
 - [💰🔄 Trump’s mega bill ‘hasn’t even cut taxes, it’s redistributed them’ | Justin Wolfers](./trumps-mega-bill-hasnt-even-cut-taxes-its-redistributed-them-justin-wolfers.md)  

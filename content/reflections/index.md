@@ -7,7 +7,10 @@ URL: https://bagrounds.org/reflections
 backlinks: false
 ---
 [Home](../index.md)  
-# 🪞 Reflections (405)  
+# 🪞 Reflections (408)  
+- [2025-12-27 | 🍇 Grapes 📈 Master 🎤 Karaoke 🗣️ Conversation 📺📚👶🏼](./2025-12-27.md)  
+- [2025-12-26 | 👑 Autocratic 🌎 Immigration 🧪 Invented 🤷🏼‍♀️ Indifference 📠 Machine 👩🏼‍💻 Code 📚📺](./2025-12-26.md)  
+- [2025-12-25 | 🤖🧠 Co-Intelligence 📚](./2025-12-25.md)  
 - [2025-12-24 | 👶 Childhood 💻 Developer ⚖️ Politics 🔬 Research 🕵️ Agent 📢 Reveals 🍩 Doughnut 👮 Justice 📑 Accounts 📺📰📚](./2025-12-24.md)  
 - [2025-12-23 | 💎 Value 🍩 Doughnut 💼 Jobs 🌱 Thrive 📚📺](./2025-12-23.md)  
 - [2025-12-22 | 🌍 Wherever 🍩 Doughnut 📚](./2025-12-22.md)  

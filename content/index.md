@@ -12,7 +12,8 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 ❔ What do 🫵 _you_ 🤔 think?  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (408)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (409)  
+- [2025-12-28 | ✈️ Deport 👨‍👩‍👧‍👦 Everyone ⚡ Faster 🤝 with 😎 Confidence 📺📚](./reflections/2025-12-28.md)  
 - [2025-12-27 | 🍇 Grapes 📈 Master 🎤 Karaoke 🗣️ Conversation 📺📚👶🏼](./reflections/2025-12-27.md)  
 - [2025-12-26 | 👑 Autocratic 🌎 Immigration 🧪 Invented 🤷🏼‍♀️ Indifference 📠 Machine 👩🏼‍💻 Code 📚📺](./reflections/2025-12-26.md)  
 - [2025-12-25 | 🤖🧠 Co-Intelligence 📚](./reflections/2025-12-25.md)  
@@ -22,10 +23,11 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [2025-12-21 | ♾️ Infinite 🌙 Moon 🍩 Doughnut 📺📚](./reflections/2025-12-21.md)  
 - [2025-12-20 | 🍩 Doughnut 📉 Optimization](./reflections/2025-12-20.md)  
 - [2025-12-19 | 💻 OpenCode 🛠️ Crafting 🍩 Doughnut 👍 Ratings 💾📰📚](./reflections/2025-12-19.md)  
-- [2025-12-18 | ⚡️ Mitochondria 🔋 Optimization 🛠️ Engineers](./reflections/2025-12-18.md)  
   
   
-## [📚 Books](./books/index.md) (845)  
+## [📚 Books](./books/index.md) (847)  
+- [👣🗺️💥 Everyone Who Is Gone Is Here: The United States, Central America, and the Making of a Crisis](./books/everyone-who-is-gone-is-here-the-united-states-central-america-and-the-making-of-a-crisis.md)  
+- [⚡🗣️ Think Faster, Talk Smarter: How to Speak Successfully When You're Put on the Spot](./books/think-faster-talk-smarter-how-to-speak-successfully-when-youre-put-on-the-spot.md)  
 - [🤝📈🇺🇸🔁 The Upswing: How America Came Together a Century Ago and How We Can Do It Again](./books/the-upswing.md)  
 - [🫵🤝🌍🏛️ Why You Should Be a Socialist](./books/why-you-should-be-a-socialist.md)  
 - [🚩⚖️ The Socialist Manifesto: The Case for Radical Politics in an Era of Extreme Inequality](./books/the-socialist-manifesto-the-case-for-radical-politics-in-an-era-of-extreme-inequality.md)  
@@ -34,11 +36,12 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [🍇😡 The Grapes of Wrath](./books/the-grapes-of-wrath.md)  
 - [🛂😐🧑🏿🧑🏻⚖️ Bordering on Indifference: Immigration Agents Negotiating Race and Morality](./books/bordering-on-indifference-immigration-agents-negotiating-race-and-morality.md)  
 - [🧠🔌 The Thinking Machine: Jensen Huang, Nvidia, and the World's Most Coveted Microchip](./books/the-thinking-machine-jensen-huang-nvidia-and-the-worlds-most-coveted-microchip.md)  
-- [💻0️⃣ Source Code: My Beginnings](./books/source-code-my-beginnings.md)  
-- [🧑‍💻🍎🌟😄 iWoz: Computer Geek to Cult Icon: How I Invented the Personal Computer, Co-Founded Apple, and Had Fun Doing It](./books/iwoz-computer-geek-to-cult-icon-how-i-invented-the-personal-computer-co-founded-apple-and-had-fun-doing-it.md)  
   
   
-## [📺 Videos](./videos/index.md) (526)  
+## [📺 Videos](./videos/index.md) (528)  
+- [🚪👥🚫⚖️ Trump Said He’d Deport Millions. What’s Happening on the Ground? | WSJ](./videos/trump-said-hed-deport-millions-whats-happening-on-the-ground-wsj.md)  
+- [🏛️👹👑📜 Politics Chat, July 1, 2025](./videos/politics-chat-july-1-2025.md)  
+- [🗣️✨ How to Speak Clearly & With Confidence | Matt Abrahams](./videos/how-to-speak-clearly-and-with-confidence-matt-abrahams.md)  
 - [💡🎨💃 Master the Creative Process | Twyla Tharp](./videos/master-the-creative-process-twyla-tharp.md)  
 - [💰🤔⚖️ The Most Important Economic Debate of our Lifetime — ft. Justin Wolfers | Prof G Markets](./videos/the-most-important-economic-debate-of-our-lifetime-ft-justin-wolfers-prof-g-markets.md)  
 - [🗣️🤝💼 A Conversation with John Harwood](./videos/a-conversation-with-john-harwood.md)  
@@ -46,9 +49,6 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [🚨🚔🇺🇸👨‍👩‍👧‍👦 Inside an Immigration Raid That Swept Up U.S. Citizens | Visual Investigations](./videos/inside-an-immigration-raid-that-swept-up-us-citizens-visual-investigations.md)  
 - [🤖🧠🚀📈 Using Generative AI to Strengthen & Accelerate Learning • Barbara Oakley • GOTO 2024](./videos/using-generative-ai-to-strengthen-accelerate-learning-barbara-oakley-goto-2024.md)  
 - [🍊🚫👯‍♀️🏛️ Trump Dodges Ghislaine Maxwell Pardon Q as Bondi Stonewalls Senate | The Daily Show](./videos/trump-dodges-ghislaine-maxwell-pardon-q-as-bondi-stonewalls-senate-the-daily-show.md)  
-- [🍊🤡😈 Trump & Epstein Last Week Tonight](./videos/trump-epstein-last-week-tonight.md)  
-- [🤫📂📈👹 What the latest Epstein files release reveals, and where Trump is mentioned](./videos/what-the-latest-epstein-files-release-reveals-and-where-trump-is-mentioned.md)  
-- [🤖🧠🚀 Making Codebases Agent Ready – Eno Reyes, Factory AI](./videos/making-codebases-agent-ready-eno-reyes-factory-ai.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (85)  

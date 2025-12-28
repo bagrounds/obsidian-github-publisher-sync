@@ -7,7 +7,8 @@ URL: https://bagrounds.org/reflections
 backlinks: false
 ---
 [Home](../index.md)  
-# 🪞 Reflections (408)  
+# 🪞 Reflections (409)  
+- [2025-12-28 | ✈️ Deport 👨‍👩‍👧‍👦 Everyone ⚡ Faster 🤝 with 😎 Confidence 📺📚](./2025-12-28.md)  
 - [2025-12-27 | 🍇 Grapes 📈 Master 🎤 Karaoke 🗣️ Conversation 📺📚👶🏼](./2025-12-27.md)  
 - [2025-12-26 | 👑 Autocratic 🌎 Immigration 🧪 Invented 🤷🏼‍♀️ Indifference 📠 Machine 👩🏼‍💻 Code 📚📺](./2025-12-26.md)  
 - [2025-12-25 | 🤖🧠 Co-Intelligence 📚](./2025-12-25.md)  

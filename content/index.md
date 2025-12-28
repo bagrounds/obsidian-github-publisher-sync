@@ -12,7 +12,10 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 ❔ What do 🫵 _you_ 🤔 think?  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (405)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (408)  
+- [2025-12-27](./reflections/2025-12-27.md)  
+- [2025-12-26](./reflections/2025-12-26.md)  
+- [2025-12-25 | 🤖🧠 Co-Intelligence 📚](./reflections/2025-12-25.md)  
 - [2025-12-24 | 👶 Childhood 💻 Developer ⚖️ Politics 🔬 Research 🕵️ Agent 📢 Reveals 🍩 Doughnut 👮 Justice 📑 Accounts 📺📰📚](./reflections/2025-12-24.md)  
 - [2025-12-23 | 💎 Value 🍩 Doughnut 💼 Jobs 🌱 Thrive 📚📺](./reflections/2025-12-23.md)  
 - [2025-12-22 | 🌍 Wherever 🍩 Doughnut 📚](./reflections/2025-12-22.md)  
@@ -20,35 +23,32 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [2025-12-20 | 🍩 Doughnut 📉 Optimization](./reflections/2025-12-20.md)  
 - [2025-12-19 | 💻 OpenCode 🛠️ Crafting 🍩 Doughnut 👍 Ratings 💾📰📚](./reflections/2025-12-19.md)  
 - [2025-12-18 | ⚡️ Mitochondria 🔋 Optimization 🛠️ Engineers](./reflections/2025-12-18.md)  
-- [2025-12-17 | 🏔️ Wörgl 🏛️ Patriarchy 📢 Demanded 🌿 Natural 🍩 Doughnut ⛓️ Constraint 🔬 Decomposition 📈 Progress 📚📺📄](./reflections/2025-12-17.md)  
-- [2025-12-16 | ➕ More 🍩 Doughnut 🛃 Agents 🧾 Prove 💻 Tech 🐘 Politics 🚨 Problems 📚📺](./reflections/2025-12-16.md)  
-- [2025-12-15 | 🌌 Universal 🍩 Doughnut 🌪️ Disaster 📋 Platform 🌌📚](./reflections/2025-12-15.md)  
   
   
-## [📚 Books](./books/index.md) (839)  
-- [⚖️😈🔞 Perversion of Justice: The Jeffrey Epstein Story](./books/perversion-of-justice-the-jeffrey-epstein-story.md)  
-- [💰🏭🌍 The Value of Everything: Making and Taking in the Global Economy](./books/the-value-of-everything-making-and-taking-in-the-global-economy.md)  
-- [📈💼 The New Geography of Jobs](./books/the-new-geography-of-jobs.md)  
-- [🏛️🔄✊🌍 Reclaiming the State: A Progressive Vision of Sovereignty for a Post-Neoliberal World](./books/reclaiming-the-state.md)  
-- [🏛️🏭 The Entrepreneurial State: Debunking Public vs Private Sector Myths](./books/the-entrepreneurial-state-debunking-public-vs-private-sector-myths.md)  
-- [🍩🌍⚖️ Doughnut Economics: Seven Ways to Think Like a 21st-Century Economist](./books/doughnut-economics-seven-ways-to-think-like-a-21st-century-economist.md)  
-- [👶😊😴 The Happiest Baby on the Block: The New Way to Calm Crying and Help Your Newborn Baby Sleep Longer](./books/the-happiest-baby-on-the-block.md)  
-- [⚫🔢 Ten Black Dots](./books/ten-black-dots.md)  
-- [⚛️👶 Quantum Physics for Babies](./books/quantum-physics-for-babies.md)  
-- [👶🔬 My First 100 Words series set (My First STEAM Words)](./books/my-first-100-words-series-set-my-first-steam-words.md)  
+## [📚 Books](./books/index.md) (845)  
+- [🤝📈🇺🇸🔁 The Upswing: How America Came Together a Century Ago and How We Can Do It Again](./books/the-upswing.md)  
+- [🫵🤝🌍🏛️ Why You Should Be a Socialist](./books/why-you-should-be-a-socialist.md)  
+- [🚩⚖️ The Socialist Manifesto: The Case for Radical Politics in an Era of Extreme Inequality](./books/the-socialist-manifesto-the-case-for-radical-politics-in-an-era-of-extreme-inequality.md)  
+- [💰📈🌍⏳ Capital in the Twenty-First Century](./books/capital-in-the-twenty-first-century.md)  
+- [⚖️⬆️🤝 The Spirit Level: Why Greater Equality Makes Societies Stronger](./books/the-spirit-level-why-greater-equality-makes-societies-stronger.md)  
+- [🍇😡 The Grapes of Wrath](./books/the-grapes-of-wrath.md)  
+- [🛂😐🧑🏿🧑🏻⚖️ Bordering on Indifference: Immigration Agents Negotiating Race and Morality](./books/bordering-on-indifference-immigration-agents-negotiating-race-and-morality.md)  
+- [🧠🔌 The Thinking Machine: Jensen Huang, Nvidia, and the World's Most Coveted Microchip](./books/the-thinking-machine-jensen-huang-nvidia-and-the-worlds-most-coveted-microchip.md)  
+- [💻0️⃣ Source Code: My Beginnings](./books/source-code-my-beginnings.md)  
+- [🧑‍💻🍎🌟😄 iWoz: Computer Geek to Cult Icon: How I Invented the Personal Computer, Co-Founded Apple, and Had Fun Doing It](./books/iwoz-computer-geek-to-cult-icon-how-i-invented-the-personal-computer-co-founded-apple-and-had-fun-doing-it.md)  
   
   
-## [📺 Videos](./videos/index.md) (522)  
+## [📺 Videos](./videos/index.md) (526)  
+- [💡🎨💃 Master the Creative Process | Twyla Tharp](./videos/master-the-creative-process-twyla-tharp.md)  
+- [💰🤔⚖️ The Most Important Economic Debate of our Lifetime — ft. Justin Wolfers | Prof G Markets](./videos/the-most-important-economic-debate-of-our-lifetime-ft-justin-wolfers-prof-g-markets.md)  
+- [🗣️🤝💼 A Conversation with John Harwood](./videos/a-conversation-with-john-harwood.md)  
+- [👑⚔️🏛️🤔 Anna Gát and Anne Applebaum: The Autocratic Moment: Myth or Reality?](./videos/anna-gat-and-anne-applebaum-the-autocratic-moment-myth-or-reality.md)  
+- [🚨🚔🇺🇸👨‍👩‍👧‍👦 Inside an Immigration Raid That Swept Up U.S. Citizens | Visual Investigations](./videos/inside-an-immigration-raid-that-swept-up-us-citizens-visual-investigations.md)  
+- [🤖🧠🚀📈 Using Generative AI to Strengthen & Accelerate Learning • Barbara Oakley • GOTO 2024](./videos/using-generative-ai-to-strengthen-accelerate-learning-barbara-oakley-goto-2024.md)  
 - [🍊🚫👯‍♀️🏛️ Trump Dodges Ghislaine Maxwell Pardon Q as Bondi Stonewalls Senate | The Daily Show](./videos/trump-dodges-ghislaine-maxwell-pardon-q-as-bondi-stonewalls-senate-the-daily-show.md)  
 - [🍊🤡😈 Trump & Epstein Last Week Tonight](./videos/trump-epstein-last-week-tonight.md)  
 - [🤫📂📈👹 What the latest Epstein files release reveals, and where Trump is mentioned](./videos/what-the-latest-epstein-files-release-reveals-and-where-trump-is-mentioned.md)  
 - [🤖🧠🚀 Making Codebases Agent Ready – Eno Reyes, Factory AI](./videos/making-codebases-agent-ready-eno-reyes-factory-ai.md)  
-- [🤖💻✨ Developer Experience in the Age of AI Coding Agents – Max Kanat-Alexander, Capital One](./videos/developer-experience-in-the-age-of-ai-coding-agents-max-kanat-alexander-capital-one.md)  
-- [🤿📚🔬🎓 How to Research Any Topic - Deep-Dive like a PhD Student](./videos/how-to-research-any-topic-deep-dive-like-a-phd-student.md)  
-- [👶🧠➡️👴🏽🕳️ How childhood wiring impacts adult life, in 90 minutes | Becky Kennedy: Full Interview](./videos/how-childhood-wiring-impacts-adult-life-in-90-minutes-becky-kennedy-full-interview.md)  
-- [💰👶💡 How 'Trump accounts' for children work, and who will benefit most](./videos/how-trump-accounts-for-children-work-and-who-will-benefit-most.md)  
-- [🏛️💬🗓️ Politics Chat, December 23, 2025](./videos/politics-chat-december-23-2025.md)  
-- [🌱📈✅➡️🔄 A healthy economy should be designed to thrive, not grow | Kate Raworth](./videos/a-healthy-economy-should-be-designed-to-thrive-not-grow-kate-raworth.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (85)  
@@ -60,11 +60,11 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
   
   
 ## [📄  Articles](./articles/index.md) (75)  
+- [🤖👨‍💻📈⏳ Learnings from two years of using AI tools for software engineering](./articles/learnings-from-two-years-of-using-ai-tools-for-software-engineering.md)  
 - [🤖⚙️🔄🗣️ Agentic Context Engineering: Evolving Contexts for Self Improving Language Models](./articles/agentic-context-engineering-evolving-contexts-for-self-improving-language-models.md)  
 - [🤖♾️🗂️ Scaling Long Horizon LLM Agent via Context Folding](./articles/scaling-long-horizon-llm-agent-via-context-folding.md)  
 - [🤖🧠📈⚡ Code execution with MCP: Building more efficient agents](./articles/code-execution-with-mcp-building-more-efficient-agents.md)  
 - [🧠🧩🎯⚙️ An Approach for Systematic Decomposition of Complex LLM Tasks](./articles/an-approach-for-systematic-decomposition-of-complex-llm-tasks.md)  
-- [❓📈🤦 Failing to Understand the Exponential, Again](./articles/failing-to-understand-the-exponential-again.md)  
   
   
 ## [🤖💬 Bot Chats](./bot-chats/index.md) (46)  

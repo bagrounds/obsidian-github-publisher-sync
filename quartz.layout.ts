@@ -43,6 +43,7 @@ export const sharedPageComponents: SharedLayout = {
       }
     }),
     Component.FixedFooter(),
+    Component.TextToSpeech(),
   ],
   footer: Component.Footer({
     links: {

@@ -1,15 +1,15 @@
 ---
 share: true
 aliases:
-  - "💰🤔😊 Psychology of Money: Timeless lessons on wealth, greed, and happiness"
-title: "💰🤔😊 Psychology of Money: Timeless lessons on wealth, greed, and happiness"
+  - "💰🤔😊 The Psychology of Money: Timeless lessons on wealth, greed, and happiness"
+title: "💰🤔😊 The Psychology of Money: Timeless lessons on wealth, greed, and happiness"
 URL: https://bagrounds.org/books/the-psychology-of-money
-Author: 
-tags: 
+Author:
+tags:
 affiliate link: https://amzn.to/3HqgnV2
 ---
 [Home](../index.md) > [Books](./index.md)  
-# 💰🤔😊 Psychology of Money: Timeless lessons on wealth, greed, and happiness  
+# 💰🤔😊 The Psychology of Money: Timeless lessons on wealth, greed, and happiness  
 [🛒 Psychology of Money: Timeless lessons on wealth, greed, and happiness. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3HqgnV2)  
   
 ## 🤖 AI Summary  

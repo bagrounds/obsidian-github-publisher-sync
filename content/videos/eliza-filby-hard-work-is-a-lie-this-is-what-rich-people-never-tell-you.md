@@ -48,7 +48,7 @@ youtube: https://youtu.be/nhvL48LgmT8
   
 ### ↔️ Similar  
   
-* 📕 Inheritocracy by Eliza Filby explores how family wealth and inheritance define modern life journeys.  
+* [👨‍👩‍👧‍👦💰 Inheritocracy: It’s Time to Talk About the Bank of Mum and Dad](../books/inheritocracy-its-time-to-talk-about-the-bank-of-mum-and-dad.md) by Eliza Filby explores how family wealth and inheritance define modern life journeys.  
 * 📘 The Whiteness of Wealth by Dorothy A. Brown from Crown Publishing examines how systemic financial structures favor inherited wealth.  
   
 ### 🆚 Contrasting  

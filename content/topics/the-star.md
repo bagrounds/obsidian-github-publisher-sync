@@ -5,7 +5,7 @@ aliases:
 title: ⭐✨🌟💫 The Star
 URL: https://bagrounds.org/topics/the-star
 ---
-[Home](../index.md) > [Topics](./index.md)  
+[Home](../index.md) > [Topics](./index.md) > [🧸🎶🧸 Nursery Rhymes](./nursery-rhymes.md)  
 # ⭐✨🌟💫 The Star  
 - By Jane Taylor (1783–1824)  
 - First published in 1806 in the collection Rhymes for the Nursery, co-authored with her sister, Ann Taylor.  

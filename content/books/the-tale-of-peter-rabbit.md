@@ -82,7 +82,7 @@ affiliate link: https://amzn.to/4ibUNBY
 ### 🔗📚 Related  
 * 🎨👩‍🌾 Beatrix Potter: A Life in Nature by Linda Lear (biography of the author)  
 * 🌳🐸 The Wind in the Willows by Kenneth Grahame (classic anthropomorphic animal tale)  
-* 🕸️🐷 Charlotte's Web by E.B. White (animal friendships, life cycles, profound themes for children)  
+* [🕷️🕸️ Charlotte's Web](./charlottes-web.md) by E.B. White (animal friendships, life cycles, profound themes for children)  
   
 ## 🫵🤔 What Do You Think?  
   

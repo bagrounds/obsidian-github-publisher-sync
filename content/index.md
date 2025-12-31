@@ -13,7 +13,7 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 💬 Comment on any page with your GitHub account.  
   
 ## [🪞 Reflections](./reflections/index.md) ~ Blog (411)  
-- [2025-12-30](./reflections/2025-12-30.md)  
+- [2025-12-30 | 🕷️ Charlotte's 🍼 Little 🧸 Nursery 😈 Devils 📚🌌](./reflections/2025-12-30.md)  
 - [2025-12-29 | The 🧬 Inheritocracy ⚡ Power 🌀 Transforming 👤 Personal 💥 Shock to 📉 Bad 🛠️ Work 🧱 Limits 📚📺📰](./reflections/2025-12-29.md)  
 - [2025-12-28 | ✈️ Deport 👨‍👩‍👧‍👦 Everyone ⚡ Faster 🤝 with 😎 Confidence 📺📚](./reflections/2025-12-28.md)  
 - [2025-12-27 | 🍇 Grapes 📈 Master 🎤 Karaoke 🗣️ Conversation 📺📚👶🏼](./reflections/2025-12-27.md)  
@@ -25,7 +25,9 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [2025-12-21 | ♾️ Infinite 🌙 Moon 🍩 Doughnut 📺📚](./reflections/2025-12-21.md)  
   
   
-## [📚 Books](./books/index.md) (851)  
+## [📚 Books](./books/index.md) (852)  
+- [🐰🥕 The Tale of Peter Rabbit](./books/the-tale-of-peter-rabbit.md)  
+- [🕷️🕸️ Charlotte's Web](./books/charlottes-web.md)  
 - [🏠⬆️ Housing First: Ending Homelessness, Transforming Systems, and Changing Lives](./books/housing-first-ending-homelessness-transforming-systems-and-changing-lives.md)  
 - [🏛️🕊️👑 The Presidential Pardon Power](./books/the-presidential-pardon-power.md)  
 - [👨‍👩‍👧‍👦💰 Inheritocracy: It’s Time to Talk About the Bank of Mum and Dad](./books/inheritocracy-its-time-to-talk-about-the-bank-of-mum-and-dad.md)  
@@ -34,8 +36,6 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [👣🗺️💥 Everyone Who Is Gone Is Here: The United States, Central America, and the Making of a Crisis](./books/everyone-who-is-gone-is-here-the-united-states-central-america-and-the-making-of-a-crisis.md)  
 - [⚡🗣️ Think Faster, Talk Smarter: How to Speak Successfully When You're Put on the Spot](./books/think-faster-talk-smarter-how-to-speak-successfully-when-youre-put-on-the-spot.md)  
 - [🤝📈🇺🇸🔁 The Upswing: How America Came Together a Century Ago and How We Can Do It Again](./books/the-upswing.md)  
-- [🫵🤝🌍🏛️ Why You Should Be a Socialist](./books/why-you-should-be-a-socialist.md)  
-- [🚩⚖️ The Socialist Manifesto: The Case for Radical Politics in an Era of Extreme Inequality](./books/the-socialist-manifesto-the-case-for-radical-politics-in-an-era-of-extreme-inequality.md)  
   
   
 ## [📺 Videos](./videos/index.md) (534)  
@@ -51,12 +51,12 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [💡🎨💃 Master the Creative Process | Twyla Tharp](./videos/master-the-creative-process-twyla-tharp.md)  
   
   
-## [🌌 Topics](./topics/index.md) (85)  
+## [🌌 Topics](./topics/index.md) (87)  
+- [🐑🎀 Mary Had a Little Lamb](./topics/mary-had-a-little-lamb.md)  
+- [🧸🎶🧸 Nursery Rhymes](./topics/nursery-rhymes.md)  
+- [⭐✨🌟💫 The Star](./topics/the-star.md)  
 - [🍎🥛🔬✨ Universal Nutrition System Design](./topics/universal-nutrition-system-design.md)  
 - [🇺🇸🗣️💡🗓️ A Presidential Platform for Americans 2028](./topics/a-presidential-platform-for-americans-2028.md)  
-- [🏦♾️📈💸 Modern Monetary Theory](./topics/modern-monetary-theory.md)  
-- [💰🏛️📈 Functional Finance](./topics/functional-finance.md)  
-- [🧑‍💼🛡️ Job Guarantee, Employer of Last Resort](./topics/job-guarantee-employer-of-last-resort.md)  
   
   
 ## [📄  Articles](./articles/index.md) (75)  

@@ -12,7 +12,9 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 ❔ What do 🫵 _you_ 🤔 think?  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (409)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (411)  
+- [2025-12-30](./reflections/2025-12-30.md)  
+- [2025-12-29 | The 🧬 Inheritocracy ⚡ Power 🌀 Transforming 👤 Personal 💥 Shock to 📉 Bad 🛠️ Work 🧱 Limits 📚📺📰](./reflections/2025-12-29.md)  
 - [2025-12-28 | ✈️ Deport 👨‍👩‍👧‍👦 Everyone ⚡ Faster 🤝 with 😎 Confidence 📺📚](./reflections/2025-12-28.md)  
 - [2025-12-27 | 🍇 Grapes 📈 Master 🎤 Karaoke 🗣️ Conversation 📺📚👶🏼](./reflections/2025-12-27.md)  
 - [2025-12-26 | 👑 Autocratic 🌎 Immigration 🧪 Invented 🤷🏼‍♀️ Indifference 📠 Machine 👩🏼‍💻 Code 📚📺](./reflections/2025-12-26.md)  
@@ -21,34 +23,32 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [2025-12-23 | 💎 Value 🍩 Doughnut 💼 Jobs 🌱 Thrive 📚📺](./reflections/2025-12-23.md)  
 - [2025-12-22 | 🌍 Wherever 🍩 Doughnut 📚](./reflections/2025-12-22.md)  
 - [2025-12-21 | ♾️ Infinite 🌙 Moon 🍩 Doughnut 📺📚](./reflections/2025-12-21.md)  
-- [2025-12-20 | 🍩 Doughnut 📉 Optimization](./reflections/2025-12-20.md)  
-- [2025-12-19 | 💻 OpenCode 🛠️ Crafting 🍩 Doughnut 👍 Ratings 💾📰📚](./reflections/2025-12-19.md)  
   
   
-## [📚 Books](./books/index.md) (847)  
+## [📚 Books](./books/index.md) (851)  
+- [🏠⬆️ Housing First: Ending Homelessness, Transforming Systems, and Changing Lives](./books/housing-first-ending-homelessness-transforming-systems-and-changing-lives.md)  
+- [🏛️🕊️👑 The Presidential Pardon Power](./books/the-presidential-pardon-power.md)  
+- [👨‍👩‍👧‍👦💰 Inheritocracy: It’s Time to Talk About the Bank of Mum and Dad](./books/inheritocracy-its-time-to-talk-about-the-bank-of-mum-and-dad.md)  
+- [💰🤔😊 The Psychology of Money: Timeless lessons on wealth, greed, and happiness](./books/the-psychology-of-money.md)  
+- [🏆🤯💰 The Winner's Curse: Paradoxes and Anomalies of Economic Life](./books/the-winners-curse-paradoxes-and-anomalies-of-economic-life.md)  
 - [👣🗺️💥 Everyone Who Is Gone Is Here: The United States, Central America, and the Making of a Crisis](./books/everyone-who-is-gone-is-here-the-united-states-central-america-and-the-making-of-a-crisis.md)  
 - [⚡🗣️ Think Faster, Talk Smarter: How to Speak Successfully When You're Put on the Spot](./books/think-faster-talk-smarter-how-to-speak-successfully-when-youre-put-on-the-spot.md)  
 - [🤝📈🇺🇸🔁 The Upswing: How America Came Together a Century Ago and How We Can Do It Again](./books/the-upswing.md)  
 - [🫵🤝🌍🏛️ Why You Should Be a Socialist](./books/why-you-should-be-a-socialist.md)  
 - [🚩⚖️ The Socialist Manifesto: The Case for Radical Politics in an Era of Extreme Inequality](./books/the-socialist-manifesto-the-case-for-radical-politics-in-an-era-of-extreme-inequality.md)  
-- [💰📈🌍⏳ Capital in the Twenty-First Century](./books/capital-in-the-twenty-first-century.md)  
-- [⚖️⬆️🤝 The Spirit Level: Why Greater Equality Makes Societies Stronger](./books/the-spirit-level-why-greater-equality-makes-societies-stronger.md)  
-- [🍇😡 The Grapes of Wrath](./books/the-grapes-of-wrath.md)  
-- [🛂😐🧑🏿🧑🏻⚖️ Bordering on Indifference: Immigration Agents Negotiating Race and Morality](./books/bordering-on-indifference-immigration-agents-negotiating-race-and-morality.md)  
-- [🧠🔌 The Thinking Machine: Jensen Huang, Nvidia, and the World's Most Coveted Microchip](./books/the-thinking-machine-jensen-huang-nvidia-and-the-worlds-most-coveted-microchip.md)  
   
   
-## [📺 Videos](./videos/index.md) (528)  
+## [📺 Videos](./videos/index.md) (534)  
+- [⛺➡️🏡🏙️🏠💖 From Encampments to Homes: How Dallas Is Solving Homelessness](./videos/from-encampments-to-homes-how-dallas-is-solving-homelessness.md)  
+- [👨‍⚖️🚫🇺🇸⚖️ Trump’s attempt to pardon Tina Peters runs into constitutional limits](./videos/trumps-attempt-to-pardon-tina-peters-runs-into-constitutional-limits.md)  
+- [🤑🤥💡💰🗣️ Eliza Filby: Hard Work Is a Lie, This Is What Rich People Never Tell You](./videos/eliza-filby-hard-work-is-a-lie-this-is-what-rich-people-never-tell-you.md)  
+- [😩🤯🍼 Dr. Becky: You’re Not a Bad Parent, You’re Overwhelmed](./videos/dr-becky-youre-not-a-bad-parent-youre-overwhelmed.md)  
+- [🛒💲📈 We Had 400 People Shop For Groceries. What We Found Will Shock You.](./videos/we-had-400-people-shop-for-groceries-what-we-found-will-shock-you.md)  
+- [🤖🧠🏠🚀✨ A Deepdive on my Personal AI Infrastructure (PAI v2.0, December 2025)](./videos/a-deepdive-on-my-personal-ai-infrastructure-pai-v2-0-december-2025.md)  
 - [🚪👥🚫⚖️ Trump Said He’d Deport Millions. What’s Happening on the Ground? | WSJ](./videos/trump-said-hed-deport-millions-whats-happening-on-the-ground-wsj.md)  
 - [🏛️👹👑📜 Politics Chat, July 1, 2025](./videos/politics-chat-july-1-2025.md)  
 - [🗣️✨ How to Speak Clearly & With Confidence | Matt Abrahams](./videos/how-to-speak-clearly-and-with-confidence-matt-abrahams.md)  
 - [💡🎨💃 Master the Creative Process | Twyla Tharp](./videos/master-the-creative-process-twyla-tharp.md)  
-- [💰🤔⚖️ The Most Important Economic Debate of our Lifetime — ft. Justin Wolfers | Prof G Markets](./videos/the-most-important-economic-debate-of-our-lifetime-ft-justin-wolfers-prof-g-markets.md)  
-- [🗣️🤝💼 A Conversation with John Harwood](./videos/a-conversation-with-john-harwood.md)  
-- [👑⚔️🏛️🤔 Anna Gát and Anne Applebaum: The Autocratic Moment: Myth or Reality?](./videos/anna-gat-and-anne-applebaum-the-autocratic-moment-myth-or-reality.md)  
-- [🚨🚔🇺🇸👨‍👩‍👧‍👦 Inside an Immigration Raid That Swept Up U.S. Citizens | Visual Investigations](./videos/inside-an-immigration-raid-that-swept-up-us-citizens-visual-investigations.md)  
-- [🤖🧠🚀📈 Using Generative AI to Strengthen & Accelerate Learning • Barbara Oakley • GOTO 2024](./videos/using-generative-ai-to-strengthen-accelerate-learning-barbara-oakley-goto-2024.md)  
-- [🍊🚫👯‍♀️🏛️ Trump Dodges Ghislaine Maxwell Pardon Q as Bondi Stonewalls Senate | The Daily Show](./videos/trump-dodges-ghislaine-maxwell-pardon-q-as-bondi-stonewalls-senate-the-daily-show.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (85)  

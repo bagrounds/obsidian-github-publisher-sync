@@ -7,7 +7,7 @@ URL: https://bagrounds.org/topics
 backlinks: false
 ---
 [Home](../index.md)  
-# 🌌 Topics (85)  
+# 🌌 Topics (87)  
 - [⚙️🧠🔄 Adaptive Control](./adaptive-control.md)  
 - [🌲🪜🧠 A Hierarchical View of Human Knowledge](./a-hierarchical-view-of-human-knowledge.md)  
 - [A Method For Estimating Work](./a-method-for-estimating-work.md)  
@@ -52,6 +52,7 @@ backlinks: false
 - [➕➖🔢📈📚 Linear Systems Theory](./linear-systems-theory.md)  
 - [🗣️📚🧠 Linguistics](./linguistics.md)  
 - [Literary Arts](./literary-arts.md)  
+- [🐑🎀 Mary Had a Little Lamb](./mary-had-a-little-lamb.md)  
 - [Math](./math.md)  
 - [Maximizing AI Leverage](./maximizing-ai-leverage.md)  
 - [Memory](./memory.md)  
@@ -59,6 +60,7 @@ backlinks: false
 - [🏦♾️📈💸 Modern Monetary Theory](./modern-monetary-theory.md)  
 - [❤️‍🩹⚖️🤝👑😇🗽 Moral Foundations Theory](./moral-foundations-theory.md)  
 - [My Resume](./my-resume.md)  
+- [🧸🎶🧸 Nursery Rhymes](./nursery-rhymes.md)  
 - [🌳🗺️🔗🏛️ Ontologies](./ontologies.md)  
 - [Philosophy](./philosophy.md)  
 - [Programming Languages](./programming-languages.md)  

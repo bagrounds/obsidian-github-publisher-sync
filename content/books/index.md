@@ -7,7 +7,7 @@ URL: https://bagrounds.org/books
 backlinks: false
 ---
 [Home](../index.md)  
-# 📚 Books (852)  
+# 📚 Books (853)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [💻0️⃣ Source Code: My Beginnings](./source-code-my-beginnings.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)  
@@ -24,6 +24,7 @@ backlinks: false
 - [🌈🦎 A Color of His Own](./a-color-of-his-own.md)  
 - [🎭🤫 Active Measures: The Secret History of Disinformation and Political Warfare](./active-measures-the-secret-history-of-disinformation-and-political-warfare.md)  
 - [🧬🕹️ Adaptive Control](./adaptive-control.md)  
+- [🧑‍🧒💔🩹 Adult Children of Emotionally Immature Parents: How to Heal from Distant, Rejecting, or Self-Involved Parents](./adult-children-of-emotionally-immature-parents-how-to-heal-from-distant-rejecting-or-self-involved-parents.md)  
 - [🧑‍🌾🌿 A Gardener's Guide to Botany: The Biology Behind the Plants You Love, How They Grow, and What They Need](./a-gardeners-guide-to-botany.md)  
 - [🤖⚙️ Agentic Artificial Intelligence: Harnessing AI Agents to Reinvent Business, Work and Life](./agentic-artificial-intelligence-harnessing-ai-agents-to-reinvent-business-work-and-life.md)  
 - [⬆️🤥🏛️ A Higher Loyalty: Truth, Lies, and Leadership](./a-higher-loyalty-truth-lies-and-leadership.md)  

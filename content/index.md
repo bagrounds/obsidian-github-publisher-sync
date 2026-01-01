@@ -12,7 +12,8 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 ❔ What do 🫵 _you_ 🤔 think?  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (411)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (412)  
+- [2025-12-31 | 👶 Immature 🕵️ Agents 🙅 Defying 🏛️ Politics 📚📺](./reflections/2025-12-31.md)  
 - [2025-12-30 | 🕷️ Charlotte's 🍼 Little 🧸 Nursery 😈 Devils 📚🌌](./reflections/2025-12-30.md)  
 - [2025-12-29 | The 🧬 Inheritocracy ⚡ Power 🌀 Transforming 👤 Personal 💥 Shock to 📉 Bad 🛠️ Work 🧱 Limits 📚📺📰](./reflections/2025-12-29.md)  
 - [2025-12-28 | ✈️ Deport 👨‍👩‍👧‍👦 Everyone ⚡ Faster 🤝 with 😎 Confidence 📺📚](./reflections/2025-12-28.md)  
@@ -22,10 +23,12 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [2025-12-24 | 👶 Childhood 💻 Developer ⚖️ Politics 🔬 Research 🕵️ Agent 📢 Reveals 🍩 Doughnut 👮 Justice 📑 Accounts 📺📰📚](./reflections/2025-12-24.md)  
 - [2025-12-23 | 💎 Value 🍩 Doughnut 💼 Jobs 🌱 Thrive 📚📺](./reflections/2025-12-23.md)  
 - [2025-12-22 | 🌍 Wherever 🍩 Doughnut 📚](./reflections/2025-12-22.md)  
-- [2025-12-21 | ♾️ Infinite 🌙 Moon 🍩 Doughnut 📺📚](./reflections/2025-12-21.md)  
   
   
-## [📚 Books](./books/index.md) (852)  
+## [📚 Books](./books/index.md) (853)  
+- [👩🏼‍❤️‍💋‍👨🏻🔗 Attached: The New Science of Adult Attachment and How It Can Help You Find - and Keep - Love](./books/attached-the-new-science-of-adult-attachment-and-how-it-can-help-you-find-and-keep-love.md)  
+- [😊👍 Feeling Good: The New Mood Therapy](./books/feeling-good-the-new-mood-therapy.md)  
+- [🧑‍🧒💔🩹 Adult Children of Emotionally Immature Parents: How to Heal from Distant, Rejecting, or Self-Involved Parents](./books/adult-children-of-emotionally-immature-parents-how-to-heal-from-distant-rejecting-or-self-involved-parents.md)  
 - [🐰🥕 The Tale of Peter Rabbit](./books/the-tale-of-peter-rabbit.md)  
 - [🕷️🕸️ Charlotte's Web](./books/charlottes-web.md)  
 - [🏠⬆️ Housing First: Ending Homelessness, Transforming Systems, and Changing Lives](./books/housing-first-ending-homelessness-transforming-systems-and-changing-lives.md)  
@@ -33,12 +36,12 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [👨‍👩‍👧‍👦💰 Inheritocracy: It’s Time to Talk About the Bank of Mum and Dad](./books/inheritocracy-its-time-to-talk-about-the-bank-of-mum-and-dad.md)  
 - [💰🤔😊 The Psychology of Money: Timeless lessons on wealth, greed, and happiness](./books/the-psychology-of-money.md)  
 - [🏆🤯💰 The Winner's Curse: Paradoxes and Anomalies of Economic Life](./books/the-winners-curse-paradoxes-and-anomalies-of-economic-life.md)  
-- [👣🗺️💥 Everyone Who Is Gone Is Here: The United States, Central America, and the Making of a Crisis](./books/everyone-who-is-gone-is-here-the-united-states-central-america-and-the-making-of-a-crisis.md)  
-- [⚡🗣️ Think Faster, Talk Smarter: How to Speak Successfully When You're Put on the Spot](./books/think-faster-talk-smarter-how-to-speak-successfully-when-youre-put-on-the-spot.md)  
-- [🤝📈🇺🇸🔁 The Upswing: How America Came Together a Century Ago and How We Can Do It Again](./books/the-upswing.md)  
   
   
-## [📺 Videos](./videos/index.md) (534)  
+## [📺 Videos](./videos/index.md) (537)  
+- [🚀⬆️🌌 Defying Gravity - Kevin Hou, Google DeepMind](./videos/defying-gravity-kevin-hou-google-deepmind.md)  
+- [🤖💡📈 Proactive Agents – Kath Korevec, Google Labs](./videos/proactive-agents-kath-korevec-google-labs.md)  
+- [🗣️🗓️ Politics Chat, December 30, 2025](./videos/politics-chat-december-30-2025.md)  
 - [⛺➡️🏡🏙️🏠💖 From Encampments to Homes: How Dallas Is Solving Homelessness](./videos/from-encampments-to-homes-how-dallas-is-solving-homelessness.md)  
 - [👨‍⚖️🚫🇺🇸⚖️ Trump’s attempt to pardon Tina Peters runs into constitutional limits](./videos/trumps-attempt-to-pardon-tina-peters-runs-into-constitutional-limits.md)  
 - [🤑🤥💡💰🗣️ Eliza Filby: Hard Work Is a Lie, This Is What Rich People Never Tell You](./videos/eliza-filby-hard-work-is-a-lie-this-is-what-rich-people-never-tell-you.md)  
@@ -46,9 +49,6 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [🛒💲📈 We Had 400 People Shop For Groceries. What We Found Will Shock You.](./videos/we-had-400-people-shop-for-groceries-what-we-found-will-shock-you.md)  
 - [🤖🧠🏠🚀✨ A Deepdive on my Personal AI Infrastructure (PAI v2.0, December 2025)](./videos/a-deepdive-on-my-personal-ai-infrastructure-pai-v2-0-december-2025.md)  
 - [🚪👥🚫⚖️ Trump Said He’d Deport Millions. What’s Happening on the Ground? | WSJ](./videos/trump-said-hed-deport-millions-whats-happening-on-the-ground-wsj.md)  
-- [🏛️👹👑📜 Politics Chat, July 1, 2025](./videos/politics-chat-july-1-2025.md)  
-- [🗣️✨ How to Speak Clearly & With Confidence | Matt Abrahams](./videos/how-to-speak-clearly-and-with-confidence-matt-abrahams.md)  
-- [💡🎨💃 Master the Creative Process | Twyla Tharp](./videos/master-the-creative-process-twyla-tharp.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (87)  

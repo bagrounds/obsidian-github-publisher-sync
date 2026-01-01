@@ -7,7 +7,7 @@ URL: https://bagrounds.org/videos
 backlinks: false
 ---
 [Home](../index.md)  
-# 📺 Videos (534)  
+# 📺 Videos (537)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
 - [❓💪🔬 12 Questions About Creatine with Stephen Cornish, PhD](./12-questions-about-creatine-w-stephen-cornish-phd.md)  
@@ -108,6 +108,7 @@ backlinks: false
 - [👶🛏️⚖️ Co-Sleeping With Infants: Science, Public Policy, and Parents Civil Rights, with James McKenna, PhD](./co-sleeping-with-infants-science-public-policy-and-parents-civil-rights-with-james-mckenna-phd.md)  
 - [🤔🧐📚💯🏆 Critical Thinking Book Recommendations – My Top 5 Must Reads](./critical-thinking-book-recommendations-my-top-5-must-reads.md)  
 - [🇺🇸➡️🇨🇦 Dear Americans… we saved you a seat](./dear-americans-we-saved-you-a-seat.md)  
+- [🚀⬆️🌌 Defying Gravity - Kevin Hou, Google DeepMind](./defying-gravity-kevin-hou-google-deepmind.md)  
 - [🏛️⚠️⏳ Democracy Isn’t Dead. Yet. | The Focus Group Podcast](./heather-cox-richardson-democracy-isnt-dead-yet-the-focus-group-podcast.md)  
 - [🤖💻✨ Developer Experience in the Age of AI Coding Agents – Max Kanat-Alexander, Capital One](./developer-experience-in-the-age-of-ai-coding-agents-max-kanat-alexander-capital-one.md)  
 - [💉👩‍⚕️💻 Doctor Answers Vaccine Questions | Tech Support | WIRED](./doctor-answers-vaccine-questions-tech-support-wired.md)  
@@ -302,6 +303,7 @@ backlinks: false
 - [🚨🚓📺🎤 Police Chases: Last Week Tonight with John Oliver (HBO)](./police-chases-last-week-tonight-with-john-oliver-hbo.md)  
 - [🗣️💬🗓️ Politics Chat, December 16, 2025](./politics-chat-december-16-2025.md)  
 - [🏛️💬🗓️ Politics Chat, December 23, 2025](./politics-chat-december-23-2025.md)  
+- [🗣️🗓️ Politics Chat, December 30, 2025](./politics-chat-december-30-2025.md)  
 - [🗣️🏛️🗓️ Politics Chat, December 4, 2025](./politics-chat-december-4-2025.md)  
 - [💰🌊🚧🏛️🪧🚨 Politics Chat, July 10, 2025](./politics-chat-july-10-2025.md)  
 - [🏛️👹👑📜 Politics Chat, July 1, 2025](./politics-chat-july-1-2025.md)  
@@ -315,6 +317,7 @@ backlinks: false
 - [👨🏿🗣️🏛️ President Barack Obama in Conversation with Steve Scully | Jefferson Educational Society](./president-barack-obama-in-conversation-with-steve-scully-jefferson-educational-society.md)  
 - [🏛️😂📺 Presidential Libraries: Last Week Tonight with John Oliver (HBO)](./presidential-libraries-last-week-tonight-with-john-oliver-hbo.md)  
 - [📈🪜🚀 Principal Engineer Reveals How To Be Promoted FAST](./principal-engineer-reveals-how-to-be-promoted-fast.md)  
+- [🤖💡📈 Proactive Agents – Kath Korevec, Google Labs](./proactive-agents-kath-korevec-google-labs.md)  
 - [Professor explains why he's leaving Yale for Toronto as colleges react to Trump's threats](./professor-explains-why-hes-leaving-yale-for-toronto-as-colleges-react-to-trumps-threats.md)  
 - [🇺🇸📅👎 Project 2025 Is Here and Americans Hate It | Explainer](./project-2025-is-here-and-americans-hate-it-explainer.md)  
 - [🏛️➡️🚪⚠️ Prominent conservative judge resigns, calling Trump 'uniquely dangerous'](./prominent-conservative-judge-resigns-calling-trump-uniquely-dangerous.md)  

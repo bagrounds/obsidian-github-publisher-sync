@@ -5,9 +5,12 @@ aliases:
 URL: https://bagrounds.org/books/extreme-ownership-how-u-s-navy-seals-lead-and-win
 share: true
 CTA: 🚀 Seize control.
+affiliate link: https://amzn.to/4bfzKwM
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🫡👑🏆 Extreme Ownership: How U.S. Navy SEALs Lead and Win  
+[🛒 Extreme Ownership: How U.S. Navy SEALs Lead and Win. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4bfzKwM)  
+  
 🤯🚀 True leadership hinges on radical accountability and discipline, transforming challenges into victories in any context, from combat to business.  
   
 ## 🤖 AI Summary  

@@ -12,7 +12,8 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 ❔ What do 🫵 _you_ 🤔 think?  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (413)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (414)  
+- [2026-01-02](./reflections/2026-01-02.md)  
 - [2026-01-01 | 🥱 Tired 🍼 Immature 🛠️ Tools 📺📚](./reflections/2026-01-01.md)  
 - [2025-12-31 | 👶 Immature 🕵️ Agents 🙅 Defying 🏛️ Politics 📚📺](./reflections/2025-12-31.md)  
 - [2025-12-30 | 🕷️ Charlotte's 🍼 Little 🧸 Nursery 😈 Devils 📚🌌](./reflections/2025-12-30.md)  
@@ -22,23 +23,25 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [2025-12-26 | 👑 Autocratic 🌎 Immigration 🧪 Invented 🤷🏼‍♀️ Indifference 📠 Machine 👩🏼‍💻 Code 📚📺](./reflections/2025-12-26.md)  
 - [2025-12-25 | 🤖🧠 Co-Intelligence 📚](./reflections/2025-12-25.md)  
 - [2025-12-24 | 👶 Childhood 💻 Developer ⚖️ Politics 🔬 Research 🕵️ Agent 📢 Reveals 🍩 Doughnut 👮 Justice 📑 Accounts 📺📰📚](./reflections/2025-12-24.md)  
-- [2025-12-23 | 💎 Value 🍩 Doughnut 💼 Jobs 🌱 Thrive 📚📺](./reflections/2025-12-23.md)  
   
   
-## [📚 Books](./books/index.md) (854)  
+## [📚 Books](./books/index.md) (855)  
+- [🧘🟰🕊️ Discipline Equals Freedom: Field Manual](./books/discipline-equals-freedom-field-manual.md)  
+- [🙅‍♀️✂️⚖️ Never Split the Difference: Negotiating As If Your Life Depended On It](./books/never-split-the-difference.md)  
+- [❓🎯 Start with Why: How Great Leaders Inspire Everyone to Take Action](./books/start-with-why-how-great-leaders-inspire-everyone-to-take-action.md)  
+- [😀📜 The Happiness Hypothesis: Finding Modern Truth in Ancient Wisdom](./books/the-happiness-hypothesis-finding-modern-truth-in-ancient-wisdom.md)  
+- [🌴🧘🏼‍♀️ Do Nothing: How to Break Away from Overworking, Overdoing, and Underliving](./books/do-nothing-how-to-break-away-from-overworking-overdoing-and-underliving.md)  
+- [🫡👑🏆 Extreme Ownership: How U.S. Navy SEALs Lead and Win](./books/extreme-ownership-how-us-navy-seals-lead-and-win.md)  
 - [🧑‍🧒💔🩹 Adult Children of Emotionally Immature Parents: How to Heal from Distant, Rejecting, or Self-Involved Parents](./books/adult-children-of-emotionally-immature-parents-how-to-heal-from-distant-rejecting-or-self-involved-parents.md)  
 - [❤️‍🩹👶🚫🌱 Recovering from Emotionally Immature Parents: Practical Tools to Establish Boundaries & Reclaim Your Emotional Autonomy](./books/recovering-from-emotionally-immature-parents-practical-tools-to-establish-boundaries-reclaim-your-emotional-autonomy.md)  
 - [👩🏼‍❤️‍💋‍👨🏻🔗 Attached: The New Science of Adult Attachment and How It Can Help You Find - and Keep - Love](./books/attached-the-new-science-of-adult-attachment-and-how-it-can-help-you-find-and-keep-love.md)  
 - [😊👍 Feeling Good: The New Mood Therapy](./books/feeling-good-the-new-mood-therapy.md)  
-- [🐰🥕 The Tale of Peter Rabbit](./books/the-tale-of-peter-rabbit.md)  
-- [🕷️🕸️ Charlotte's Web](./books/charlottes-web.md)  
-- [🏠⬆️ Housing First: Ending Homelessness, Transforming Systems, and Changing Lives](./books/housing-first-ending-homelessness-transforming-systems-and-changing-lives.md)  
-- [🏛️🕊️👑 The Presidential Pardon Power](./books/the-presidential-pardon-power.md)  
-- [👨‍👩‍👧‍👦💰 Inheritocracy: It’s Time to Talk About the Bank of Mum and Dad](./books/inheritocracy-its-time-to-talk-about-the-bank-of-mum-and-dad.md)  
-- [💰🤔😊 The Psychology of Money: Timeless lessons on wealth, greed, and happiness](./books/the-psychology-of-money.md)  
   
   
-## [📺 Videos](./videos/index.md) (537)  
+## [📺 Videos](./videos/index.md) (540)  
+- [💪🧠⚔️🤝 How to Become Resilient, Forge Your Identity & Lead Others | Jocko Willink](./videos/how-to-become-resilient-forge-your-identity-lead-others-jocko-willink.md)  
+- [💪🧠🔒5️⃣ How To Build Unbreakable Discipline (5 Steps)](./videos/how-to-build-unbreakable-discipline-5-steps.md)  
+- [🪖💪💯 Jocko Willink «GOOD» (Official)](./videos/jocko-willink-good-official.md)  
 - [🚀⬆️🌌 Defying Gravity - Kevin Hou, Google DeepMind](./videos/defying-gravity-kevin-hou-google-deepmind.md)  
 - [🤖💡📈 Proactive Agents – Kath Korevec, Google Labs](./videos/proactive-agents-kath-korevec-google-labs.md)  
 - [🗣️🗓️ Politics Chat, December 30, 2025](./videos/politics-chat-december-30-2025.md)  
@@ -46,9 +49,6 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [👨‍⚖️🚫🇺🇸⚖️ Trump’s attempt to pardon Tina Peters runs into constitutional limits](./videos/trumps-attempt-to-pardon-tina-peters-runs-into-constitutional-limits.md)  
 - [🤑🤥💡💰🗣️ Eliza Filby: Hard Work Is a Lie, This Is What Rich People Never Tell You](./videos/eliza-filby-hard-work-is-a-lie-this-is-what-rich-people-never-tell-you.md)  
 - [😩🤯🍼 Dr. Becky: You’re Not a Bad Parent, You’re Overwhelmed](./videos/dr-becky-youre-not-a-bad-parent-youre-overwhelmed.md)  
-- [🛒💲📈 We Had 400 People Shop For Groceries. What We Found Will Shock You.](./videos/we-had-400-people-shop-for-groceries-what-we-found-will-shock-you.md)  
-- [🤖🧠🏠🚀✨ A Deepdive on my Personal AI Infrastructure (PAI v2.0, December 2025)](./videos/a-deepdive-on-my-personal-ai-infrastructure-pai-v2-0-december-2025.md)  
-- [🚪👥🚫⚖️ Trump Said He’d Deport Millions. What’s Happening on the Ground? | WSJ](./videos/trump-said-hed-deport-millions-whats-happening-on-the-ground-wsj.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (87)  

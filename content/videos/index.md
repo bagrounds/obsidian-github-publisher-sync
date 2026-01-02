@@ -7,7 +7,7 @@ URL: https://bagrounds.org/videos
 backlinks: false
 ---
 [Home](../index.md)  
-# 📺 Videos (537)  
+# 📺 Videos (540)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
 - [❓💪🔬 12 Questions About Creatine with Stephen Cornish, PhD](./12-questions-about-creatine-w-stephen-cornish-phd.md)  
@@ -23,6 +23,7 @@ backlinks: false
 - [🪜📈🏢 3 High Leverage Career Skills (From a Principal At Amazon)](./3-high-leverage-career-skills-from-a-principal-at-amazon.md)  
 - [🧠⏳🚀⚡ 4 ADHD Habits to Make 2025 Hyper Productive](./4-adhd-habits-to-make-2025-hyper-productive.md)  
 - [🎨🧱🔄 513 - Why Creatives Have to Build Habits Differently and How to Do It](./513-why-creatives-have-to-build-habits-differently-and-how-to-do-it.md)  
+- [💪🧠🔒5️⃣ How To Build Unbreakable Discipline (5 Steps)](./how-to-build-unbreakable-discipline-5-steps.md)  
 - [🗣️🤝🧑‍🤝‍🧑👶🏽 5 Social Skills Every Toddler Needs Before Preschool](./5-social-skills-every-toddler-needs-before-preschool.md)  
 - [🧠⚡️👶🏽 5 Tiny Habits That Supercharge Your Child's Brain Development | Dr. Arif Khan](./5-tiny-habits-that-supercharge-your-childs-brain-development-dr-arif-khan.md)  
 - [🧠🪜💡🤔⬆️🎓 6 Levels of Thinking Every Student MUST Master](./6-levels-of-thinking-every-student-must-master.md)  
@@ -178,6 +179,7 @@ backlinks: false
 - [🧑‍🏫🌪️🇺🇸 How the Trump administration is dramatically reshaping education in America](./how-the-trump-administration-is-dramatically-reshaping-education-in-america.md)  
 - [🇺🇸🗳️⚙️🤔 How the Trump administration is trying to change the way people vote](./how-the-trump-administration-is-trying-to-change-the-way-people-vote.md)  
 - [🤓📈📉⚠️ How to Become an Expert in ANYTHING - The Dunning Kruger Effect](./how-to-become-an-expert-in-anything-the-dunning-kruger-effect.md)  
+- [💪🧠⚔️🤝 How to Become Resilient, Forge Your Identity & Lead Others | Jocko Willink](./how-to-become-resilient-forge-your-identity-lead-others-jocko-willink.md)  
 - [🚀📈🤯🚨 How To Be So Productive That It Feels ILLEGAL](./how-to-be-so-productive-that-it-feels-illegal.md)  
 - [🎯🪜🏗️✅ How to Build Systems to Actually Achieve Your Goals](./how-to-build-systems-to-actually-achieve-your-goals.md)  
 - [🚀⏱️💥🏆 How to do more in 90 days than most do in their entire lives](./how-to-do-more-in-90-days-than-most-do-in-their-entire-lives.md)  
@@ -235,6 +237,7 @@ backlinks: false
 - [📢👁️🗣️💡 It's Our Job to Make Sure People Know the Truth](./its-our-job-to-make-sure-people-know-the-truth.md)  
 - [🙊🤐👑 Jimmy Kimmel's Suspension Was Always About Censorship (Just Ask Trump) | The Daily Show](./jimmy-kimmels-suspension-was-always-about-censorship-just-ask-trump-the-daily-show.md)  
 - [📺🎤👮‍♂️📰 Jimmy Kimmel & the FCC: Last Week Tonight with John Oliver (HBO)](./jimmy-kimmel-the-fcc-last-week-tonight-with-john-oliver-hbo.md)  
+- [🪖💪💯 Jocko Willink «GOOD» (Official)](./jocko-willink-good-official.md)  
 - [🤖🧑‍💻📈🚧 John Schulman - Reinforcement Learning from Human Feedback: Progress and Challenges](./john-schulman-reinforcement-learning-from-human-feedback-progress-and-challenges.md)  
 - [😡🏛️🤝 Jon Stewart «Can't F**king Believe» Democrats Caved on the Shutdown | The Daily Show](./jon-stewart-cant-fking-believe-democrats-caved-on-the-shutdown-the-daily-show.md)  
 - [🇺🇸😡📺 Jon Stewart on the L.A. ICE Protests and Trump's Escalating Response | The Daily Show](./jon-stewart-on-the-la-ice-protests-and-trumps-escalating-response-the-daily-show.md)  

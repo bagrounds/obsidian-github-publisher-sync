@@ -12,7 +12,8 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 ❔ What do 🫵 _you_ 🤔 think?  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (412)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (413)  
+- [2026-01-01 | 🥱 Tired 🍼 Immature 🛠️ Tools 📺📚](./reflections/2026-01-01.md)  
 - [2025-12-31 | 👶 Immature 🕵️ Agents 🙅 Defying 🏛️ Politics 📚📺](./reflections/2025-12-31.md)  
 - [2025-12-30 | 🕷️ Charlotte's 🍼 Little 🧸 Nursery 😈 Devils 📚🌌](./reflections/2025-12-30.md)  
 - [2025-12-29 | The 🧬 Inheritocracy ⚡ Power 🌀 Transforming 👤 Personal 💥 Shock to 📉 Bad 🛠️ Work 🧱 Limits 📚📺📰](./reflections/2025-12-29.md)  
@@ -22,20 +23,19 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [2025-12-25 | 🤖🧠 Co-Intelligence 📚](./reflections/2025-12-25.md)  
 - [2025-12-24 | 👶 Childhood 💻 Developer ⚖️ Politics 🔬 Research 🕵️ Agent 📢 Reveals 🍩 Doughnut 👮 Justice 📑 Accounts 📺📰📚](./reflections/2025-12-24.md)  
 - [2025-12-23 | 💎 Value 🍩 Doughnut 💼 Jobs 🌱 Thrive 📚📺](./reflections/2025-12-23.md)  
-- [2025-12-22 | 🌍 Wherever 🍩 Doughnut 📚](./reflections/2025-12-22.md)  
   
   
-## [📚 Books](./books/index.md) (853)  
+## [📚 Books](./books/index.md) (854)  
+- [🧑‍🧒💔🩹 Adult Children of Emotionally Immature Parents: How to Heal from Distant, Rejecting, or Self-Involved Parents](./books/adult-children-of-emotionally-immature-parents-how-to-heal-from-distant-rejecting-or-self-involved-parents.md)  
+- [❤️‍🩹👶🚫🌱 Recovering from Emotionally Immature Parents: Practical Tools to Establish Boundaries & Reclaim Your Emotional Autonomy](./books/recovering-from-emotionally-immature-parents-practical-tools-to-establish-boundaries-reclaim-your-emotional-autonomy.md)  
 - [👩🏼‍❤️‍💋‍👨🏻🔗 Attached: The New Science of Adult Attachment and How It Can Help You Find - and Keep - Love](./books/attached-the-new-science-of-adult-attachment-and-how-it-can-help-you-find-and-keep-love.md)  
 - [😊👍 Feeling Good: The New Mood Therapy](./books/feeling-good-the-new-mood-therapy.md)  
-- [🧑‍🧒💔🩹 Adult Children of Emotionally Immature Parents: How to Heal from Distant, Rejecting, or Self-Involved Parents](./books/adult-children-of-emotionally-immature-parents-how-to-heal-from-distant-rejecting-or-self-involved-parents.md)  
 - [🐰🥕 The Tale of Peter Rabbit](./books/the-tale-of-peter-rabbit.md)  
 - [🕷️🕸️ Charlotte's Web](./books/charlottes-web.md)  
 - [🏠⬆️ Housing First: Ending Homelessness, Transforming Systems, and Changing Lives](./books/housing-first-ending-homelessness-transforming-systems-and-changing-lives.md)  
 - [🏛️🕊️👑 The Presidential Pardon Power](./books/the-presidential-pardon-power.md)  
 - [👨‍👩‍👧‍👦💰 Inheritocracy: It’s Time to Talk About the Bank of Mum and Dad](./books/inheritocracy-its-time-to-talk-about-the-bank-of-mum-and-dad.md)  
 - [💰🤔😊 The Psychology of Money: Timeless lessons on wealth, greed, and happiness](./books/the-psychology-of-money.md)  
-- [🏆🤯💰 The Winner's Curse: Paradoxes and Anomalies of Economic Life](./books/the-winners-curse-paradoxes-and-anomalies-of-economic-life.md)  
   
   
 ## [📺 Videos](./videos/index.md) (537)  

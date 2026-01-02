@@ -87,7 +87,7 @@ affiliate link: https://amzn.to/3YONIOL
   
 ### 👯‍♀️ Similar  
 * 💨 Running on Empty: Overcome Your Childhood Emotional Neglect by Jonice Webb  
-* 🛠️ Recovering from Emotionally Immature Parents: Practical Tools to Establish Boundaries & Reclaim Your Emotional Autonomy by Lindsay C. Gibson  
+* [❤️‍🩹👶🚫🌱 Recovering from Emotionally Immature Parents: Practical Tools to Establish Boundaries & Reclaim Your Emotional Autonomy](./recovering-from-emotionally-immature-parents-practical-tools-to-establish-boundaries-reclaim-your-emotional-autonomy.md) by Lindsay C. Gibson  
 * ☣️ Toxic Parents: Overcoming Their Hurtful Legacy and Reclaiming Your Life by Susan Forward  
 * 🪞 Children of the Self-Absorbed by Nina W. Brown  
   

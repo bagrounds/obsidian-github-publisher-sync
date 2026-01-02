@@ -23,7 +23,7 @@ affiliate link: https://amzn.to/3ZHtmry
 * 🧠 **Mind Control:** 💥 Overcoming weakness, procrastination, fear, and negative self-talk is central. 💫 Motivation is fleeting; ⚙️ discipline is reliable. 🆚 Compete only against yourself.  
 * 🚀 **Action Over Thought:** 💭 While mindset is foundational, the emphasis is on *doing*. 🗓️ Planning and motivation mean nothing without execution.  
 * 🏋️ **Physicality:** 🏋️ Rigorous physical training (including workouts provided for different levels) and proper diet/sleep are presented as essential components of overall discipline and well-being. ⏰ Waking up early is a key tactic.  
-* 🤝 **Ownership:** 🗣️ Echoing themes from *Extreme Ownership*, the individual must take full responsibility for their actions and circumstances.  
+* 🤝 **Ownership:** 🗣️ Echoing themes from [🫡👑🏆 Extreme Ownership: How U.S. Navy SEALs Lead and Win](./extreme-ownership-how-us-navy-seals-lead-and-win.md), the individual must take full responsibility for their actions and circumstances.  
   
 ### 🧱 Structure and Style  
 * ➗ **Two Parts:** The book is divided into "Thoughts" (the philosophy and mindset of discipline) and "Actions" (practical applications including workouts, diet, sleep strategies).  
@@ -45,7 +45,7 @@ affiliate link: https://amzn.to/3ZHtmry
 ## 📚 Book Recommendations  
   
 ### ➕ Similar Books (Focus on Discipline, Mindset, Action)  
-* 🤝 **Extreme Ownership: How U.S. Navy SEALs Lead and Win** by Jocko Willink and Leif Babin: Explores the leadership principles born from Willink's SEAL experience, focusing heavily on accountability.  
+* **[🫡👑🏆 Extreme Ownership: How U.S. Navy SEALs Lead and Win](./extreme-ownership-how-us-navy-seals-lead-and-win.md)** by Jocko Willink and Leif Babin: Explores the leadership principles born from Willink's SEAL experience, focusing heavily on accountability.  
 * 🤕 **Can't Hurt Me: Master Your Mind and Defy the Odds** by David Goggins: An intense memoir focused on developing extreme mental toughness and overcoming immense adversity.  
 * **[⚛️🔄 Atomic Habits](./atomic-habits.md): An Easy & Proven Way to Build Good Habits & Break Bad Ones** by James Clear: Provides a practical, science-backed framework for building small habits that lead to significant results, focusing on systems over willpower alone.  
 * **[🪖🎨 The War of Art](./the-war-of-art.md): Break Through the Blocks and Win Your Inner Creative Battles** by Steven Pressfield: Addresses the concept of "Resistance" – the internal force that prevents creation and action – and how to overcome it through discipline.  

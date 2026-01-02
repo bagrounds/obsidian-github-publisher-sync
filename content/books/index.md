@@ -7,7 +7,7 @@ URL: https://bagrounds.org/books
 backlinks: false
 ---
 [Home](../index.md)  
-# 📚 Books (853)  
+# 📚 Books (855)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [💻0️⃣ Source Code: My Beginnings](./source-code-my-beginnings.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)  
@@ -222,6 +222,7 @@ backlinks: false
 - [🧠⚙️🐒💡 Executive Functions: What They Are, How They Work, and Why They Evolved](./executive-functions.md)  
 - [🏃😊 Exercise for Mood and Anxiety: Proven Strategies for Overcoming Depression and Enhancing Well-Being](./exercise-for-mood-and-anxiety-proven-strategies-for-overcoming-depression-and-enhancing-well-being.md)  
 - [🫄➕ Expecting Better: Why the Conventional Pregnancy Wisdom Is Wrong - and What You Really Need to Know](./expecting-better.md)  
+- [🫡👑🏆 Extreme Ownership: How U.S. Navy SEALs Lead and Win](./extreme-ownership-how-us-navy-seals-lead-and-win.md)  
 - [🤔🌍📈✅ Factfulness: Ten Reasons We're Wrong About the World - and Why Things Are Better Than You Think](./factfulness.md)  
 - [⚖️🎮 Fair Play: A Game-Changing Solution for When You Have Too Much to Do (and More Life to Live)](./fair-play-a-game-changing-solution-for-when-you-have-too-much-to-do-and-more-life-to-live.md)  
 - [🚜🧑‍🌾🌱 Farming for Us All: Practical Agriculture and the Cultivation of Sustainability](./farming-for-us-all-practical-agriculture-and-the-cultivation-of-sustainability.md)  
@@ -485,6 +486,7 @@ backlinks: false
 - [🧠🤔❓ Rationality: What It Is, Why It Seems Scarce, Why It Matters](./rationality.md)  
 - [🧮♻️ Rational Ritual: Culture, Coordination, and Common Knowledge](./rational-ritual.md)  
 - [🏛️🔄✊🌍 Reclaiming the State: A Progressive Vision of Sovereignty for a Post-Neoliberal World](./reclaiming-the-state.md)  
+- [❤️‍🩹👶🚫🌱 Recovering from Emotionally Immature Parents: Practical Tools to Establish Boundaries & Reclaim Your Emotional Autonomy](./recovering-from-emotionally-immature-parents-practical-tools-to-establish-boundaries-reclaim-your-emotional-autonomy.md)  
 - [🤕📈 Recovering from Training: How to Manage Fatigue to Maximize Performance](./recovering-from-training-how-to-manage-fatigue-to-maximize-performance.md)  
 - [🗑️✨ Refactoring: Improving the Design of Existing Code](./refactoring-improving-the-design-of-existing-code.md)  
 - [👑🏫🤥 Reign of Error: The Hoax of the Privatization Movement and the Danger to America's Public Schools](./reign-of-error-the-hoax-of-the-privatization-movement-and-the-danger-to-americas-public-schools.md)  

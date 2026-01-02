@@ -58,7 +58,7 @@ This book is particularly relevant for:
 * 🏃 **[The Lean Startup](./the-lean-startup.md)** by Eric Ries: ⚙️ Focuses on efficiency, rapid iteration, and validated learning in building businesses.  
 * 🏆 **Think and Grow Rich** by Napoleon Hill: 👑 A classic self-help book focused on mindset, ambition, and achieving financial success through persistent effort.  
 * **[❤️‍🔥💪 Grit: The Power of Passion and Perseverance](./grit-the-power-of-passion-and-perseverance.md)** by Angela Duckworth: ❤️ Argues that passion and perseverance, or "grit," are more important predictors of success than talent.  
-* 🥇 **Extreme Ownership: How U.S. Navy SEALs Lead and Win** by Jocko Willink and Leif Babin: 🤝 Emphasizes taking full responsibility and proactive leadership to achieve goals, often requiring intense effort.  
+* **[🫡👑🏆 Extreme Ownership: How U.S. Navy SEALs Lead and Win](./extreme-ownership-how-us-navy-seals-lead-and-win.md)** by Jocko Willink and Leif Babin: 🤝 Emphasizes taking full responsibility and proactive leadership to achieve goals, often requiring intense effort.  
   
 ### 🎨 Creatively Related Books (History, Philosophy, Play, Hobbies)  
 * 🏛️ **Leisure: The Basis of Culture** by Josef Pieper: 🧠 A philosophical and theological exploration of leisure as essential for human flourishing and culture.  
@@ -66,7 +66,7 @@ This book is particularly relevant for:
 * 🕰️ **Of Time, Work, and Leisure** by Sebastian De Grazia: 🗣️ Discusses the nature and changing attitudes towards work and leisure in society.  
 * 🎮 **Man, Play, and Games** by Roger Caillois: 🎭 Analyzes the nature and significance of play and games in human culture.  
 * 🌍 **Work: A History of How We Spend Our Time** by James Suzman: 🧑‍🌾 An anthropological look at the evolution of work from hunter-gatherer societies to the present.  
-* 💩 **Bullshit Jobs: A Theory** by David Graeber: 🧐 Examines the phenomenon of meaningless jobs in the modern economy.  
+* **[💩💼 Bullshit Jobs: A Theory](./bullshit-jobs-a-theory.md)** by David Graeber: 🧐 Examines the phenomenon of meaningless jobs in the modern economy.  
 * 😃 **The Pleasures of Leisure** by Robert Dessaix: 🍷 A witty exploration of the importance of various leisure activities like walking, reading, and doing nothing.  
 * 🗓️ **A Social History of Leisure Since 1600** by Gary S. Cross: ⏳ Traces the historical development of leisure activities and attitudes.  
 * 🇬🇧 **Time, Work and Leisure: Life Changes in England Since 1700** by Hugh Cunningham: 📜 Provides a history of the relationship between work and leisure time in England.  

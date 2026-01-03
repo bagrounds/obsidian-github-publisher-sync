@@ -67,7 +67,7 @@ CTA: ⚖️ Understand history's impact.
 ## 📚 Book Recommendations  
   
 ### 📖 Similar  
-* 🌍 Overthrow: America's Century of Regime Change from Hawaii to Iraq by Stephen Kinzer  
+* [🇺🇸💥🏛️ Overthrow: America's Century of Regime Change from Hawaii to Iraq](./overthrow-americas-century-of-regime-change-from-hawaii-to-iraq.md) by Stephen Kinzer  
 * 👑 Hawaii's Story by Hawaii's Queen Liliuokalani (first-hand account)  
 * 🌺 From a Native Daughter: Colonialism and Sovereignty in Hawaii by Haunani-Kay Trask  
   

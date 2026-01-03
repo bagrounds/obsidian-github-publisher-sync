@@ -7,7 +7,7 @@ URL: https://bagrounds.org/videos
 backlinks: false
 ---
 [Home](../index.md)  
-# 📺 Videos (542)  
+# 📺 Videos (544)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
 - [❓💪🔬 12 Questions About Creatine with Stephen Cornish, PhD](./12-questions-about-creatine-w-stephen-cornish-phd.md)  
@@ -110,6 +110,7 @@ backlinks: false
 - [🤔🧐📚💯🏆 Critical Thinking Book Recommendations – My Top 5 Must Reads](./critical-thinking-book-recommendations-my-top-5-must-reads.md)  
 - [🇺🇸➡️🇨🇦 Dear Americans… we saved you a seat](./dear-americans-we-saved-you-a-seat.md)  
 - [🚀⬆️🌌 Defying Gravity - Kevin Hou, Google DeepMind](./defying-gravity-kevin-hou-google-deepmind.md)  
+- [🏛️❤️🗣️ Democracy and Emotions– A Dialogue with Philosopher Martha C. Nussbaum](./democracy-and-emotions-a-dialogue-with-philosopher-martha-c-nussbaum.md)  
 - [🏛️⚠️⏳ Democracy Isn’t Dead. Yet. | The Focus Group Podcast](./heather-cox-richardson-democracy-isnt-dead-yet-the-focus-group-podcast.md)  
 - [🤖💻✨ Developer Experience in the Age of AI Coding Agents – Max Kanat-Alexander, Capital One](./developer-experience-in-the-age-of-ai-coding-agents-max-kanat-alexander-capital-one.md)  
 - [💉👩‍⚕️💻 Doctor Answers Vaccine Questions | Tech Support | WIRED](./doctor-answers-vaccine-questions-tech-support-wired.md)  
@@ -444,6 +445,7 @@ backlinks: false
 - [📰🗣️❓ This Week in Politics | Explainer](./this-week-in-politics-explainer.md)  
 - [🕸️🛠️🤔 Three decades after inventing the web, Tim Berners-Lee has some ideas on how to fix it](./three-decades-after-inventing-the-web-tim-berners-lee-has-some-ideas-on-how-to-fix-it.md)  
 - [👶🏃‍♀️🏅✅ Thule Urban Glide 3 Full Review | Best Running / Jogging Stroller 2024](./thule-urban-glide-3-full-review-best-running-jogging-stroller-2024.md)  
+- [🇺🇸🚀🇻🇪 Today's News, January 3, 2025](./todays-news-january-3-2025.md)  
 - [🤥📢👨‍💼 Tony Schwartz: The Truth About Trump | Oxford Union Q&A](./tony-schwartz-the-truth-about-trump-oxford-union-q-a.md)  
 - [🧠🎯⬆️ Tools to Enhance Working Memory & Attention](./tools-to-enhance-working-memory-and-attention.md)  
 - [☀️📚😎👍 Top books to read this summer, according to Ann Patchett and Maureen Corrigan](./top-books-to-read-this-summer-according-to-ann-patchett-and-maureen-corrigan.md)  

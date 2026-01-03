@@ -5,9 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
+updated: 2026-01-03T15:28
 ---
 [Home](../index.md)  
-# 📺 Videos (545)  
+# 📺 Videos (548)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
 - [❓💪🔬 12 Questions About Creatine with Stephen Cornish, PhD](./12-questions-about-creatine-w-stephen-cornish-phd.md)  
@@ -83,6 +84,7 @@ backlinks: false
 - [👨‍💻➡️🤖🧩 Beyond the IDE: Toward Multi-Agent Orchestration](./beyond-the-ide-toward-multi-agent-orchestration.md)  
 - [🧫❓❌📱 Biomedical Scientist Answers Pseudoscience Questions From Twitter | Tech Support | WIRED](./biomedical-scientist-answers-pseudoscience-questions-from-twitter-tech-support-wired.md)  
 - [🇩🇪⚖️🇺🇸 Blueprint Why Germany's Legacy of Accountability Should Be A Blueprint for America's Moral Reckoning](./why-germanys-legacy-of-accountability-should-be-a-blueprint-for-americas-moral-reckoning.md)  
+- [🇺🇸🤔🗳️💥 Bonus Episode: How Is Trump Planning to ‘Run’ Venezuela? (With Anne Applebaum) | The David Frum Show](./bonus-episode-how-is-trump-planning-to-run-venezuela-with-anne-applebaum-the-david-frum-show.md)  
 - [🏛️🔨🗑️ Brooks and Atkins Stohr on the East Wing demolition](./brooks-and-atkins-stohr-on-the-east-wing-demolition.md)  
 - [⚠️📉😬 Brooks and Bouie on economic warning signs](./brooks-and-bouie-on-economic-warning-signs.md)  
 - [👹📜🏛️ Brooks and Capehart on House Republicans passing Trump's legislative agenda](./brooks-and-capehart-on-house-republicans-passing-trumps-legislative-agenda.md)  
@@ -453,8 +455,10 @@ backlinks: false
 - [💣✉️📰 Top Trump officials accidentally texted U.S. war plans to journalist Jeffrey Goldberg](./top-trump-officials-accidentally-texted-u-s-war-plans-to-journalist-jeffrey-goldberg.md)  
 - [To Save Democracy, Here’s a Playbook That Works](./to-save-democracy-heres-a-playbook-that-works.md)  
 - [👹🪖🇺🇸🚧✊🏾 Troops deployed in LA as immigration raids stir fear and protests](./troops-deployed-in-la-as-immigration-raids-stir-fear-and-protests.md)  
+- [🇺🇸🗣️💥🇻🇪 Trump Addresses Nation on Venezuela Regime Change Operation](./trump-addresses-nation-on-venezuela-regime-change-operation.md)  
 - [Trump administration targets college and university budgets in DEI crackdown](./trump-administration-targets-college-and-university-budgets-in-dei-crackdown.md)  
 - [👹💰🚫👩‍🏫 Trump administration withholds billions in school grants for critical programs](./trump-administration-withholds-billions-in-school-grants-for-critical-programs.md)  
+- [🇺🇸⚔️🇻🇪👑 Trump Attacks Venezuela and Captures President Maduro](./trump-attacks-venezuela-and-captures-president-maduro.md)  
 - [🍊🚫👯‍♀️🏛️ Trump Dodges Ghislaine Maxwell Pardon Q as Bondi Stonewalls Senate | The Daily Show](./trump-dodges-ghislaine-maxwell-pardon-q-as-bondi-stonewalls-senate-the-daily-show.md)  
 - [🍊🤡😈 Trump & Epstein Last Week Tonight](./trump-epstein-last-week-tonight.md)  
 - [👨‍⚖️📧❓ Trump faces fresh Epstein questions as new emails and files are released](./trump-faces-fresh-epstein-questions-as-new-emails-and-files-are-released.md)  

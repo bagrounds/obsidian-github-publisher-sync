@@ -7,7 +7,7 @@ URL: https://bagrounds.org/books
 backlinks: false
 ---
 [Home](../index.md)  
-# 📚 Books (857)  
+# 📚 Books (859)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [💻0️⃣ Source Code: My Beginnings](./source-code-my-beginnings.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)  
@@ -701,6 +701,7 @@ backlinks: false
 - [🇺🇸🪖❤️ The New American Militarism: How Americans Are Seduced by War](./the-new-american-militarism-how-americans-are-seduced-by-war.md)  
 - [🇿🇦 The New Apartheid](./the-new-apartheid.md)  
 - [🔥🌎⚔️ The New Climate War: The Fight to Take Back Our Planet](./the-new-climate-war-the-fight-to-take-back-our-planet.md)  
+- [🤫💰🕵️ The New Confessions of an Economic Hit Man](./the-new-confessions-of-an-economic-hit-man.md)  
 - [📈🏛️🏫 The New Economics: For Industry, Government, Education](./the-new-economics.md)  
 - [📈💼 The New Geography of Jobs](./the-new-geography-of-jobs.md)  
 - [🧑🏿⛓️🙈 The New Jim Crow: Mass Incarceration in the Age of Colorblindness](./the-new-jim-crow-mass-incarceration-in-the-age-of-colorblindness.md)  
@@ -826,6 +827,7 @@ backlinks: false
 - [💰📈🤔 Understanding Modern Money](./understanding-modern-money.md)  
 - [🤔🔌 Understanding Power: The Indispensable Chomsky](./understanding-power-the-indispensable-chomsky.md)  
 - [🌌📐🧩🗝️ Universal Principles of Design: 200 Ways to Increase Appeal, Enhance Usability, Influence Perception, and Make Better Design Decisions](./universal-principles-of-design.md)  
+- [🤯❤️ Upheavals of Thought: The Intelligence of Emotions](./upheavals-of-thought-the-intelligence-of-emotions.md)  
 - [💻⚙️ Usability Engineering](./usability-engineering.md)  
 - [✅🤔 Useful Not True](./useful-not-true.md)  
 - [🤖💻 Vibe Coding: Building Production-Grade Software With GenAI, Chat, Agents, and Beyond](./vibe-coding-building-production-grade-software-with-genai-chat-agents-and-beyond.md)  

@@ -26,6 +26,7 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
   
   
 ## [📚 Books](./books/index.md) (857)  
+- [🔊🎞️🌱🤯 Resonate: Present Visual Stories that Transform Audiences](./books/resonate.md)  
 - [🌟🔓 Development as Freedom](./books/development-as-freedom.md)  
 - [👤🌱 Creating Capabilities: The Human Development Approach](./books/creating-capabilities-the-human-development-approach.md)  
 - [🤫🤑 23 Things They Don't Tell You About Capitalism](./books/23-things-they-dont-tell-you-about-capitalism.md)  
@@ -35,10 +36,11 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [❓🎯 Start with Why: How Great Leaders Inspire Everyone to Take Action](./books/start-with-why-how-great-leaders-inspire-everyone-to-take-action.md)  
 - [😀📜 The Happiness Hypothesis: Finding Modern Truth in Ancient Wisdom](./books/the-happiness-hypothesis-finding-modern-truth-in-ancient-wisdom.md)  
 - [🌴🧘🏼‍♀️ Do Nothing: How to Break Away from Overworking, Overdoing, and Underliving](./books/do-nothing-how-to-break-away-from-overworking-overdoing-and-underliving.md)  
-- [🧑‍🧒💔🩹 Adult Children of Emotionally Immature Parents: How to Heal from Distant, Rejecting, or Self-Involved Parents](./books/adult-children-of-emotionally-immature-parents-how-to-heal-from-distant-rejecting-or-self-involved-parents.md)  
   
   
-## [📺 Videos](./videos/index.md) (540)  
+## [📺 Videos](./videos/index.md) (542)  
+- [🤖🧠🚀🛠️📏💡🏢 The 7 Essential Skills for Enterprise Architects in an AI World](./videos/the-7-essential-skills-for-enterprise-architects-in-an-ai-world.md)  
+- [💡🔧📏🔮〰️ How to create a capability model](./videos/how-to-create-a-capability-model.md)  
 - [💪🧠⚔️🤝 How to Become Resilient, Forge Your Identity & Lead Others | Jocko Willink](./videos/how-to-become-resilient-forge-your-identity-lead-others-jocko-willink.md)  
 - [💪🧠🔒5️⃣ How To Build Unbreakable Discipline (5 Steps)](./videos/how-to-build-unbreakable-discipline-5-steps.md)  
 - [🪖💪💯 Jocko Willink «GOOD» (Official)](./videos/jocko-willink-good-official.md)  
@@ -47,8 +49,6 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [🗣️🗓️ Politics Chat, December 30, 2025](./videos/politics-chat-december-30-2025.md)  
 - [⛺➡️🏡🏙️🏠💖 From Encampments to Homes: How Dallas Is Solving Homelessness](./videos/from-encampments-to-homes-how-dallas-is-solving-homelessness.md)  
 - [👨‍⚖️🚫🇺🇸⚖️ Trump’s attempt to pardon Tina Peters runs into constitutional limits](./videos/trumps-attempt-to-pardon-tina-peters-runs-into-constitutional-limits.md)  
-- [🤑🤥💡💰🗣️ Eliza Filby: Hard Work Is a Lie, This Is What Rich People Never Tell You](./videos/eliza-filby-hard-work-is-a-lie-this-is-what-rich-people-never-tell-you.md)  
-- [😩🤯🍼 Dr. Becky: You’re Not a Bad Parent, You’re Overwhelmed](./videos/dr-becky-youre-not-a-bad-parent-youre-overwhelmed.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (87)  

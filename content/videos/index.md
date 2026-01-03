@@ -7,7 +7,7 @@ URL: https://bagrounds.org/videos
 backlinks: false
 ---
 [Home](../index.md)  
-# 📺 Videos (540)  
+# 📺 Videos (542)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
 - [❓💪🔬 12 Questions About Creatine with Stephen Cornish, PhD](./12-questions-about-creatine-w-stephen-cornish-phd.md)  
@@ -182,6 +182,7 @@ backlinks: false
 - [💪🧠⚔️🤝 How to Become Resilient, Forge Your Identity & Lead Others | Jocko Willink](./how-to-become-resilient-forge-your-identity-lead-others-jocko-willink.md)  
 - [🚀📈🤯🚨 How To Be So Productive That It Feels ILLEGAL](./how-to-be-so-productive-that-it-feels-illegal.md)  
 - [🎯🪜🏗️✅ How to Build Systems to Actually Achieve Your Goals](./how-to-build-systems-to-actually-achieve-your-goals.md)  
+- [💡🔧📏🔮〰️ How to create a capability model](./how-to-create-a-capability-model.md)  
 - [🚀⏱️💥🏆 How to do more in 90 days than most do in their entire lives](./how-to-do-more-in-90-days-than-most-do-in-their-entire-lives.md)  
 - [🧠👁️📈✨ How to Expand Your Consciousness | Dr. Christof Koch](./how-to-expand-your-consciousness-dr-christof-koch.md)  
 - [👊👹🇺🇸🛡️ How to Fight Fascism in America — with Timothy Snyder | Prof G Conversations](./how-to-fight-fascism-in-america-with-timothy-snyder-prof-g-conversations.md)  
@@ -370,6 +371,7 @@ backlinks: false
 - [The 10 tactics of fascism | Jason Stanley | Big Think](./the-10-tactics-of-fascism-jason-stanley-big-think.md)  
 - [🥇💰📈🧑‍🏫 The 2025 Nobel Prize in Economics: Explained](./the-2025-nobel-prize-in-economics-explained.md)  
 - [🎓💰🚀 The 529 Plan Just Got A Big Upgrade](./the-529-plan-just-got-a-big-upgrade.md)  
+- [🤖🧠🚀🛠️📏💡🏢 The 7 Essential Skills for Enterprise Architects in an AI World](./the-7-essential-skills-for-enterprise-architects-in-an-ai-world.md)  
 - [👶🗣️🔤📢 📖 The ABCs of Language Development: Discover Language With Your Child](./the-abcs-of-language-development-discover-language-with-your-child.md)  
 - [🤖🫧💥📉 The AI Bubble Is Real — Here’s How to Prepare for the Pop | Prof G Markets](./the-ai-bubble-is-real-heres-how-to-prepare-for-the-pop-prof-g-markets.md)  
 - [💥🧠👶 The «Big Bang» in Learning: Brain Changes and Childhood Learning (Full Session)](./the-big-bang-in-learning-brain-changes-and-childhood-learning-full-session.md)  

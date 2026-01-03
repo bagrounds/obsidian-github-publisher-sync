@@ -25,7 +25,9 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [2025-12-25 | 🤖🧠 Co-Intelligence 📚](./reflections/2025-12-25.md)  
   
   
-## [📚 Books](./books/index.md) (858)  
+## [📚 Books](./books/index.md) (859)  
+- [💸🌍 Kleptopia: How Dirty Money Is Conquering the World](./books/kleptopia-how-dirty-money-is-conquering-the-world.md)  
+- [🤫💰🕵️ The New Confessions of an Economic Hit Man](./books/the-new-confessions-of-an-economic-hit-man.md)  
 - [🤯❤️ Upheavals of Thought: The Intelligence of Emotions](./books/upheavals-of-thought-the-intelligence-of-emotions.md)  
 - [🔊🎞️🌱🤯 Resonate: Present Visual Stories that Transform Audiences](./books/resonate.md)  
 - [🌟🔓 Development as Freedom](./books/development-as-freedom.md)  
@@ -34,11 +36,11 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [🫡👑🏆 Extreme Ownership: How U.S. Navy SEALs Lead and Win](./books/extreme-ownership-how-us-navy-seals-lead-and-win.md)  
 - [🧘🟰🕊️ Discipline Equals Freedom: Field Manual](./books/discipline-equals-freedom-field-manual.md)  
 - [🙅‍♀️✂️⚖️ Never Split the Difference: Negotiating As If Your Life Depended On It](./books/never-split-the-difference.md)  
-- [❓🎯 Start with Why: How Great Leaders Inspire Everyone to Take Action](./books/start-with-why-how-great-leaders-inspire-everyone-to-take-action.md)  
-- [😀📜 The Happiness Hypothesis: Finding Modern Truth in Ancient Wisdom](./books/the-happiness-hypothesis-finding-modern-truth-in-ancient-wisdom.md)  
   
   
-## [📺 Videos](./videos/index.md) (544)  
+## [📺 Videos](./videos/index.md) (545)  
+- [💰💣 What Trump’s ‘Big, Beautiful Bill’ Is Really Doing (Part 1) | The Ezra Klein Show](./videos/what-trumps-big-beautiful-bill-is-really-doing-part-1-the-ezra-klein-show.md)  
+- [💰🇺🇸🛢️💵 Trump posts photo of Maduro and says US plans to tap Venezuela's oil reserves](./videos/trump-posts-photo-of-maduro-and-says-us-plans-to-tap-venezuelas-oil-reserves.md)  
 - [🇺🇸🚀🇻🇪 Today's News, January 3, 2025](./videos/todays-news-january-3-2025.md)  
 - [🏛️❤️🗣️ Democracy and Emotions– A Dialogue with Philosopher Martha C. Nussbaum](./videos/democracy-and-emotions-a-dialogue-with-philosopher-martha-c-nussbaum.md)  
 - [🤖🧠🚀🛠️📏💡🏢 The 7 Essential Skills for Enterprise Architects in an AI World](./videos/the-7-essential-skills-for-enterprise-architects-in-an-ai-world.md)  
@@ -47,8 +49,6 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [💪🧠🔒5️⃣ How To Build Unbreakable Discipline (5 Steps)](./videos/how-to-build-unbreakable-discipline-5-steps.md)  
 - [🪖💪💯 Jocko Willink «GOOD» (Official)](./videos/jocko-willink-good-official.md)  
 - [🚀⬆️🌌 Defying Gravity - Kevin Hou, Google DeepMind](./videos/defying-gravity-kevin-hou-google-deepmind.md)  
-- [🤖💡📈 Proactive Agents – Kath Korevec, Google Labs](./videos/proactive-agents-kath-korevec-google-labs.md)  
-- [🗣️🗓️ Politics Chat, December 30, 2025](./videos/politics-chat-december-30-2025.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (87)  

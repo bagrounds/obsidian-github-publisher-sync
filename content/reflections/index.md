@@ -7,7 +7,9 @@ URL: https://bagrounds.org/reflections
 backlinks: false
 ---
 [Home](../index.md)  
-# 🪞 Reflections (413)  
+# 🪞 Reflections (415)  
+- [2026-01-03](./2026-01-03.md)  
+- [2026-01-02 | 😇 Good 🦭 Seals 🛠️ Build 🏗️ Resilient 🗽 Freedom 📺📚](./2026-01-02.md)  
 - [2026-01-01 | 🥱 Tired 🍼 Immature 🛠️ Tools 📺📚](./2026-01-01.md)  
 - [2025-12-31 | 👶 Immature 🕵️ Agents 🙅 Defying 🏛️ Politics 📚📺](./2025-12-31.md)  
 - [2025-12-30 | 🕷️ Charlotte's 🍼 Little 🧸 Nursery 😈 Devils 📚🌌](./2025-12-30.md)  

@@ -30,8 +30,8 @@ The video discusses President Trump's "big beautiful bill," dubbed the "big budg
   
 **📜 On Fiscal Policy, National Debt, and Budgeting:**  
   
-* 📚 "The Deficit Lie: Exposing the False Narrative of the National Debt" by Stephanie Kelton: This book challenges conventional wisdom 🧠 about government debt 🏛️ and provides an alternative perspective 👀 through [🏦♾️📈💸 Modern Monetary Theory](../topics/modern-monetary-theory.md) (MMT).  
-* 📚 "The New Confessions of an Economic Hit Man" by John Perkins: While not directly about national budgeting 💰, this book offers a critical look 🧐 at how economic policies and debt 💸 can be used on an international scale 🌍, providing a broader context 🌐 for understanding financial manipulation 🤹.  
+* 📚 The Deficit Lie: Exposing the False Narrative of the National Debt by Stephanie Kelton: This book challenges conventional wisdom 🧠 about government debt 🏛️ and provides an alternative perspective 👀 through [🏦♾️📈💸 Modern Monetary Theory](../topics/modern-monetary-theory.md) (MMT).  
+* [🤫💰🕵️ The New Confessions of an Economic Hit Man](../books/the-new-confessions-of-an-economic-hit-man.md) by John Perkins: While not directly about national budgeting 💰, this book offers a critical look 🧐 at how economic policies and debt 💸 can be used on an international scale 🌍, providing a broader context 🌐 for understanding financial manipulation 🤹.  
 * 📚 "The National Debt: A Short History" by Robert D. Hormats: For a historical perspective 🕰️ on the U.S. national debt 🇺🇸 and the various approaches taken to manage it 🧑‍💼.  
 * 📚 "The Lords of Finance: The Bankers Who Broke the World" by Liaquat Ahamed: Focuses on the financial decisions 🏦 leading up to the Great Depression 📉, offering insights 💡 into the consequences of fiscal mismanagement 💸 on a large scale 📈.  
   

@@ -25,7 +25,8 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [2025-12-25 | 🤖🧠 Co-Intelligence 📚](./reflections/2025-12-25.md)  
   
   
-## [📚 Books](./books/index.md) (857)  
+## [📚 Books](./books/index.md) (858)  
+- [🤯❤️ Upheavals of Thought: The Intelligence of Emotions](./books/upheavals-of-thought-the-intelligence-of-emotions.md)  
 - [🔊🎞️🌱🤯 Resonate: Present Visual Stories that Transform Audiences](./books/resonate.md)  
 - [🌟🔓 Development as Freedom](./books/development-as-freedom.md)  
 - [👤🌱 Creating Capabilities: The Human Development Approach](./books/creating-capabilities-the-human-development-approach.md)  
@@ -35,10 +36,11 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [🙅‍♀️✂️⚖️ Never Split the Difference: Negotiating As If Your Life Depended On It](./books/never-split-the-difference.md)  
 - [❓🎯 Start with Why: How Great Leaders Inspire Everyone to Take Action](./books/start-with-why-how-great-leaders-inspire-everyone-to-take-action.md)  
 - [😀📜 The Happiness Hypothesis: Finding Modern Truth in Ancient Wisdom](./books/the-happiness-hypothesis-finding-modern-truth-in-ancient-wisdom.md)  
-- [🌴🧘🏼‍♀️ Do Nothing: How to Break Away from Overworking, Overdoing, and Underliving](./books/do-nothing-how-to-break-away-from-overworking-overdoing-and-underliving.md)  
   
   
-## [📺 Videos](./videos/index.md) (542)  
+## [📺 Videos](./videos/index.md) (544)  
+- [🇺🇸🚀🇻🇪 Today's News, January 3, 2025](./videos/todays-news-january-3-2025.md)  
+- [🏛️❤️🗣️ Democracy and Emotions– A Dialogue with Philosopher Martha C. Nussbaum](./videos/democracy-and-emotions-a-dialogue-with-philosopher-martha-c-nussbaum.md)  
 - [🤖🧠🚀🛠️📏💡🏢 The 7 Essential Skills for Enterprise Architects in an AI World](./videos/the-7-essential-skills-for-enterprise-architects-in-an-ai-world.md)  
 - [💡🔧📏🔮〰️ How to create a capability model](./videos/how-to-create-a-capability-model.md)  
 - [💪🧠⚔️🤝 How to Become Resilient, Forge Your Identity & Lead Others | Jocko Willink](./videos/how-to-become-resilient-forge-your-identity-lead-others-jocko-willink.md)  
@@ -47,8 +49,6 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [🚀⬆️🌌 Defying Gravity - Kevin Hou, Google DeepMind](./videos/defying-gravity-kevin-hou-google-deepmind.md)  
 - [🤖💡📈 Proactive Agents – Kath Korevec, Google Labs](./videos/proactive-agents-kath-korevec-google-labs.md)  
 - [🗣️🗓️ Politics Chat, December 30, 2025](./videos/politics-chat-december-30-2025.md)  
-- [⛺➡️🏡🏙️🏠💖 From Encampments to Homes: How Dallas Is Solving Homelessness](./videos/from-encampments-to-homes-how-dallas-is-solving-homelessness.md)  
-- [👨‍⚖️🚫🇺🇸⚖️ Trump’s attempt to pardon Tina Peters runs into constitutional limits](./videos/trumps-attempt-to-pardon-tina-peters-runs-into-constitutional-limits.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (87)  

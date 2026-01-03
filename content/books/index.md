@@ -5,9 +5,10 @@ aliases:
 share: true
 URL: https://bagrounds.org/books
 backlinks: false
+updated: 2026-01-03T15:46:35-08:00
 ---
 [Home](../index.md)  
-# 📚 Books (859)  
+# 📚 Books (860)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [💻0️⃣ Source Code: My Beginnings](./source-code-my-beginnings.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)  
@@ -441,6 +442,7 @@ backlinks: false
 - [⚠️🤖📈 Out of Control: The New Biology of Machines, Social Systems, and the Economic World](./out-of-control-the-new-biology-of-machines-social-systems-and-the-economic-world.md)  
 - [📉⬆️ Out Of The Crisis](./out-of-the-crisis.md)  
 - [🧠📈 Outsmart Yourself: Brain-Based Strategies for a Bettery You](./outsmart-yourself-brain-based-strategies-for-a-bettery-you.md)  
+- [🇺🇸💥🏛️ Overthrow: America's Century of Regime Change from Hawaii to Iraq](./overthrow-americas-century-of-regime-change-from-hawaii-to-iraq.md)  
 - [🤱🏼🤿🪞🌱 Parenting from the Inside Out: How a Deeper Self-Understanding Can Help You Raise Children Who Thrive](./parenting-from-the-inside-out-how-a-deeper-self-understanding-can-help-you-raise-children-who-thrive.md)  
 - [🧑‍⚕️🗣️ Patient Advocacy for Health Care Quality: Strategies for Achieving Patient-Centered Care](./patient-advocacy-for-health-care-quality-strategies-for-achieving-patient-centered-care.md)  
 - [♂️💰♀️🚩 Patriarchy of the Wage: Notes on Marx, Gender, and Feminism](./patriarchy-of-the-wage-notes-on-marx-gender-and-feminism.md)  

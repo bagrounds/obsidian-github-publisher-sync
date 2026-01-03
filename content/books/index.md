@@ -7,7 +7,7 @@ URL: https://bagrounds.org/books
 backlinks: false
 ---
 [Home](../index.md)  
-# 📚 Books (855)  
+# 📚 Books (857)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [💻0️⃣ Source Code: My Beginnings](./source-code-my-beginnings.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)  
@@ -148,6 +148,7 @@ backlinks: false
 - [💰🇺🇸 Corruption in America: From Benjamin Franklin's Snuff Box to Citizens United](./corruption-in-america-from-benjamin-franklins-snuff-box-to-citizens-united.md)  
 - [🌌 Cosmos](./cosmos.md)  
 - [💪📈 Creatine: A Natural Substance and Its Benefits for Muscle Metabolism, Fitness, Health & Longevity](./creatine-a-natural-substance-and-its-benefits-for-muscle-metabolism-fitness-health-longevity.md)  
+- [👤🌱 Creating Capabilities: The Human Development Approach](./creating-capabilities-the-human-development-approach.md)  
 - [👶📊😌 Cribsheet: A Data-Driven Guide to Better, More Relaxed Parenting, from Birth to Preschool](./cribsheet.md)  
 - [🧰💬 Crucial Conversations: Tools for Talking When Stakes Are High](./crucial-conversations-tools-for-talking-when-stakes-are-high.md)  
 - [✝️🗣️ Cultish: The Language of Fanaticism](./cultish-the-language-of-fanaticism.md)  
@@ -173,6 +174,7 @@ backlinks: false
 - [🤖⚙️🔁 Designing Machine Learning Systems: An Iterative Process for Production-Ready Applications](./designing-machine-learning-systems-an-iterative-process-for-production-ready-applications.md)  
 - [🏗️😊🗺️✨ Designing Your Life: How to Build a Well-Lived, Joyful Life](./designing-your-life.md)  
 - [👶🧠📈📚 Developmental Science: An Advanced Textbook](./developmental-science.md)  
+- [🌟🔓 Development as Freedom](./development-as-freedom.md)  
 - [💬😬 Difficult Conversations: How to Discuss What Matters Most](./difficult-conversations-how-to-discuss-what-matters-most.md)  
 - [📱⬇️🧘 Digital Minimalism: Choosing a Focused Life in a Noisy World](./digital-minimalism-choosing-a-focused-life-in-a-noisy-world.md)  
 - [👯💻 Digital Twin](./the-digital-twin.md)  

@@ -12,8 +12,9 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 ❔ What do 🫵 _you_ 🤔 think?  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (414)  
-- [2026-01-02](./reflections/2026-01-02.md)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (415)  
+- [2026-01-03](./reflections/2026-01-03.md)  
+- [2026-01-02 | 😇 Good 🦭 Seals 🛠️ Build 🏗️ Resilient 🗽 Freedom 📺📚](./reflections/2026-01-02.md)  
 - [2026-01-01 | 🥱 Tired 🍼 Immature 🛠️ Tools 📺📚](./reflections/2026-01-01.md)  
 - [2025-12-31 | 👶 Immature 🕵️ Agents 🙅 Defying 🏛️ Politics 📚📺](./reflections/2025-12-31.md)  
 - [2025-12-30 | 🕷️ Charlotte's 🍼 Little 🧸 Nursery 😈 Devils 📚🌌](./reflections/2025-12-30.md)  
@@ -22,20 +23,19 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [2025-12-27 | 🍇 Grapes 📈 Master 🎤 Karaoke 🗣️ Conversation 📺📚👶🏼](./reflections/2025-12-27.md)  
 - [2025-12-26 | 👑 Autocratic 🌎 Immigration 🧪 Invented 🤷🏼‍♀️ Indifference 📠 Machine 👩🏼‍💻 Code 📚📺](./reflections/2025-12-26.md)  
 - [2025-12-25 | 🤖🧠 Co-Intelligence 📚](./reflections/2025-12-25.md)  
-- [2025-12-24 | 👶 Childhood 💻 Developer ⚖️ Politics 🔬 Research 🕵️ Agent 📢 Reveals 🍩 Doughnut 👮 Justice 📑 Accounts 📺📰📚](./reflections/2025-12-24.md)  
   
   
-## [📚 Books](./books/index.md) (855)  
+## [📚 Books](./books/index.md) (857)  
+- [🌟🔓 Development as Freedom](./books/development-as-freedom.md)  
+- [👤🌱 Creating Capabilities: The Human Development Approach](./books/creating-capabilities-the-human-development-approach.md)  
+- [🤫🤑 23 Things They Don't Tell You About Capitalism](./books/23-things-they-dont-tell-you-about-capitalism.md)  
+- [🫡👑🏆 Extreme Ownership: How U.S. Navy SEALs Lead and Win](./books/extreme-ownership-how-us-navy-seals-lead-and-win.md)  
 - [🧘🟰🕊️ Discipline Equals Freedom: Field Manual](./books/discipline-equals-freedom-field-manual.md)  
 - [🙅‍♀️✂️⚖️ Never Split the Difference: Negotiating As If Your Life Depended On It](./books/never-split-the-difference.md)  
 - [❓🎯 Start with Why: How Great Leaders Inspire Everyone to Take Action](./books/start-with-why-how-great-leaders-inspire-everyone-to-take-action.md)  
 - [😀📜 The Happiness Hypothesis: Finding Modern Truth in Ancient Wisdom](./books/the-happiness-hypothesis-finding-modern-truth-in-ancient-wisdom.md)  
 - [🌴🧘🏼‍♀️ Do Nothing: How to Break Away from Overworking, Overdoing, and Underliving](./books/do-nothing-how-to-break-away-from-overworking-overdoing-and-underliving.md)  
-- [🫡👑🏆 Extreme Ownership: How U.S. Navy SEALs Lead and Win](./books/extreme-ownership-how-us-navy-seals-lead-and-win.md)  
 - [🧑‍🧒💔🩹 Adult Children of Emotionally Immature Parents: How to Heal from Distant, Rejecting, or Self-Involved Parents](./books/adult-children-of-emotionally-immature-parents-how-to-heal-from-distant-rejecting-or-self-involved-parents.md)  
-- [❤️‍🩹👶🚫🌱 Recovering from Emotionally Immature Parents: Practical Tools to Establish Boundaries & Reclaim Your Emotional Autonomy](./books/recovering-from-emotionally-immature-parents-practical-tools-to-establish-boundaries-reclaim-your-emotional-autonomy.md)  
-- [👩🏼‍❤️‍💋‍👨🏻🔗 Attached: The New Science of Adult Attachment and How It Can Help You Find - and Keep - Love](./books/attached-the-new-science-of-adult-attachment-and-how-it-can-help-you-find-and-keep-love.md)  
-- [😊👍 Feeling Good: The New Mood Therapy](./books/feeling-good-the-new-mood-therapy.md)  
   
   
 ## [📺 Videos](./videos/index.md) (540)  

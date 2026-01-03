@@ -5,6 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
+updated: 2026-01-03T15:29:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -25,7 +26,9 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [2025-12-25 | 🤖🧠 Co-Intelligence 📚](./reflections/2025-12-25.md)  
   
   
-## [📚 Books](./books/index.md) (859)  
+## [📚 Books](./books/index.md) (860)  
+- [🇺🇸👑🌺 Nation Within: The Story of America's Annexation of the Nation of Hawaii](./books/nation-within-the-story-of-americas-annexation-of-the-nation-of-hawaii.md)  
+- [🇺🇸💥🏛️ Overthrow: America's Century of Regime Change from Hawaii to Iraq](./books/overthrow-americas-century-of-regime-change-from-hawaii-to-iraq.md)  
 - [💸🌍 Kleptopia: How Dirty Money Is Conquering the World](./books/kleptopia-how-dirty-money-is-conquering-the-world.md)  
 - [🤫💰🕵️ The New Confessions of an Economic Hit Man](./books/the-new-confessions-of-an-economic-hit-man.md)  
 - [🤯❤️ Upheavals of Thought: The Intelligence of Emotions](./books/upheavals-of-thought-the-intelligence-of-emotions.md)  
@@ -34,21 +37,19 @@ title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
 - [👤🌱 Creating Capabilities: The Human Development Approach](./books/creating-capabilities-the-human-development-approach.md)  
 - [🤫🤑 23 Things They Don't Tell You About Capitalism](./books/23-things-they-dont-tell-you-about-capitalism.md)  
 - [🫡👑🏆 Extreme Ownership: How U.S. Navy SEALs Lead and Win](./books/extreme-ownership-how-us-navy-seals-lead-and-win.md)  
-- [🧘🟰🕊️ Discipline Equals Freedom: Field Manual](./books/discipline-equals-freedom-field-manual.md)  
-- [🙅‍♀️✂️⚖️ Never Split the Difference: Negotiating As If Your Life Depended On It](./books/never-split-the-difference.md)  
   
   
-## [📺 Videos](./videos/index.md) (545)  
-- [💰💣 What Trump’s ‘Big, Beautiful Bill’ Is Really Doing (Part 1) | The Ezra Klein Show](./videos/what-trumps-big-beautiful-bill-is-really-doing-part-1-the-ezra-klein-show.md)  
+## [📺 Videos](./videos/index.md) (548)  
+- [🇺🇸🤔🗳️💥 Bonus Episode: How Is Trump Planning to ‘Run’ Venezuela? (With Anne Applebaum) | The David Frum Show](./videos/bonus-episode-how-is-trump-planning-to-run-venezuela-with-anne-applebaum-the-david-frum-show.md)  
 - [💰🇺🇸🛢️💵 Trump posts photo of Maduro and says US plans to tap Venezuela's oil reserves](./videos/trump-posts-photo-of-maduro-and-says-us-plans-to-tap-venezuelas-oil-reserves.md)  
+- [🇺🇸🗣️💥🇻🇪 Trump Addresses Nation on Venezuela Regime Change Operation](./videos/trump-addresses-nation-on-venezuela-regime-change-operation.md)  
+- [🇺🇸⚔️🇻🇪👑 Trump Attacks Venezuela and Captures President Maduro](./videos/trump-attacks-venezuela-and-captures-president-maduro.md)  
+- [💰💣 What Trump’s ‘Big, Beautiful Bill’ Is Really Doing (Part 1) | The Ezra Klein Show](./videos/what-trumps-big-beautiful-bill-is-really-doing-part-1-the-ezra-klein-show.md)  
 - [🇺🇸🚀🇻🇪 Today's News, January 3, 2025](./videos/todays-news-january-3-2025.md)  
 - [🏛️❤️🗣️ Democracy and Emotions– A Dialogue with Philosopher Martha C. Nussbaum](./videos/democracy-and-emotions-a-dialogue-with-philosopher-martha-c-nussbaum.md)  
 - [🤖🧠🚀🛠️📏💡🏢 The 7 Essential Skills for Enterprise Architects in an AI World](./videos/the-7-essential-skills-for-enterprise-architects-in-an-ai-world.md)  
 - [💡🔧📏🔮〰️ How to create a capability model](./videos/how-to-create-a-capability-model.md)  
 - [💪🧠⚔️🤝 How to Become Resilient, Forge Your Identity & Lead Others | Jocko Willink](./videos/how-to-become-resilient-forge-your-identity-lead-others-jocko-willink.md)  
-- [💪🧠🔒5️⃣ How To Build Unbreakable Discipline (5 Steps)](./videos/how-to-build-unbreakable-discipline-5-steps.md)  
-- [🪖💪💯 Jocko Willink «GOOD» (Official)](./videos/jocko-willink-good-official.md)  
-- [🚀⬆️🌌 Defying Gravity - Kevin Hou, Google DeepMind](./videos/defying-gravity-kevin-hou-google-deepmind.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (87)  

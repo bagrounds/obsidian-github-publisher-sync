@@ -77,7 +77,7 @@ affiliate link: https://amzn.to/4soSEaE
 ## 📚 Book Recommendations  
   
 ### 🤝 Similar Books  
-* 📖 Creating Capabilities by Martha Nussbaum  
+* [👤🌱 Creating Capabilities: The Human Development Approach](./creating-capabilities-the-human-development-approach.md) by Martha Nussbaum  
 * 📖 The Idea of Justice by Amartya Sen  
 * 📖 Inequality Reexamined by Amartya Sen  
   

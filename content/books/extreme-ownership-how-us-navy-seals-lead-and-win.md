@@ -2,7 +2,7 @@
 title: "🫡👑🏆 Extreme Ownership: How U.S. Navy SEALs Lead and Win"
 aliases:
   - "🫡👑🏆 Extreme Ownership: How U.S. Navy SEALs Lead and Win"
-URL: https://bagrounds.org/books/extreme-ownership-how-u-s-navy-seals-lead-and-win
+URL: https://bagrounds.org/books/extreme-ownership-how-us-navy-seals-lead-and-win
 share: true
 CTA: 🚀 Seize control.
 affiliate link: https://amzn.to/4bfzKwM

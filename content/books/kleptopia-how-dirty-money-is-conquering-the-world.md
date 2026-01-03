@@ -84,7 +84,7 @@ affiliate link: https://amzn.to/48wEJHX
 ### 📖 Related Books  
 * [🏦👨‍💼💥 Dark Towers: Deutsche Bank, Donald Trump, and an Epic Trail of Destruction](./dark-towers-deutsche-bank-donald-trump-and-an-epic-trail-of-destruction.md) by David Enrich  
 * 📰 Panama Papers by Bastian Obermayer and Frederik Obermaier  
-* 🕵️ The New Confessions of an Economic Hit Man by John Perkins  
+* [🤫💰🕵️ The New Confessions of an Economic Hit Man](./the-new-confessions-of-an-economic-hit-man.md) by John Perkins  
   
 ## 🫵 What Do You Think?  
 🤔 What aspects of Kleptopia: How Dirty Money Is Conquering the World resonated most with you? Which strategies do you believe are most effective in combating global kleptocracy, and why? Share your thoughts below!

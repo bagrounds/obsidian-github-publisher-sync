@@ -4,9 +4,10 @@ aliases:
   - "🔊🎞️🌱🤯 Resonate: Present Visual Stories that Transform Audiences"
 title: "🔊🎞️🌱🤯 Resonate: Present Visual Stories that Transform Audiences"
 URL: https://bagrounds.org/books/resonate
-Author: 
-tags: 
+Author:
+tags:
 affiliate link: https://amzn.to/45zltYW
+CTA: 🧠 Reshape perspectives.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🔊🎞️🌱🤯 Resonate: Present Visual Stories that Transform Audiences  

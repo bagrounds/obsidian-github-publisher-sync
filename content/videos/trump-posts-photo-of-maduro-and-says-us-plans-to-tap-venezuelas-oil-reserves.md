@@ -58,4 +58,4 @@ youtube: https://youtu.be/skItByr5YvI
 ### 🎨 Creatively Related  
   
 * 📓 Confessions of an Economic Hit Man by John Perkins details the historical role of corporate interests in developing nations.  
-* 📒 Overthrow by Stephen Kinzer provides a chronological history of United States led regime changes.
+* [🇺🇸💥🏛️ Overthrow: America's Century of Regime Change from Hawaii to Iraq](../books/overthrow-americas-century-of-regime-change-from-hawaii-to-iraq.md) by Stephen Kinzer provides a chronological history of United States led regime changes.

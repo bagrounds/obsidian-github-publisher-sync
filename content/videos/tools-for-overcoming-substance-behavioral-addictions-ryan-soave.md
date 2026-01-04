@@ -10,20 +10,50 @@ Channel: Andrew Huberman
 tags:
 youtube: https://youtu.be/J7yn4tJEmJU
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](../index.md) > [Videos](./index.md) | [🧠🫀👀🔬 Andrew Huberman](../people/andrew-huberman.md)  
 # 💪🧠🚫💊🚀 Tools for Overcoming Substance & Behavioral Addictions | Ryan Soave  
 ![Tools for Overcoming Substance & Behavioral Addictions | Ryan Soave](https://youtu.be/J7yn4tJEmJU)  
   
 ## 🤖 AI Summary  
   
-* 🧠 Addiction functions primarily as a solution to internal pain rather than the root problem. \[[04:04](http://www.youtube.com/watch?v=J7yn4tJEmJU&t=244)]  
-* 🌊 Relief serves as the primary driver for substance use and addictive behaviors. \[[05:50](http://www.youtube.com/watch?v=J7yn4tJEmJU&t=350)]  
-* 🏥 Medical stabilization and detox must precede any psychological or trauma work in acute cases. \[[07:03](http://www.youtube.com/watch?v=J7yn4tJEmJU&t=423)]  
-* 🛑 Determine the severity of the issue by asking whether you have the behavior or it has you. \[[03:51](http://www.youtube.com/watch?v=J7yn4tJEmJU&t=231)]  
-* 🛡️ Childhood adaptations to stress often manifest as survival responses like fight or flight. \[[13:20](http://www.youtube.com/watch?v=J7yn4tJEmJU&t=800)]  
-* 📈 Leverage neuroplasticity to rewire the brain and body for long term recovery. \[[00:54](http://www.youtube.com/watch?v=J7yn4tJEmJU&t=54)]  
-* ⚖️ Capacity for joy is directly proportional to the ability to sit with deep discomfort. \[[12:09](http://www.youtube.com/watch?v=J7yn4tJEmJU&t=729)]  
-* 🛠️ Recovery requires a combination of clinical intervention and social support systems like 12 step programs. \[[01:03](http://www.youtube.com/watch?v=J7yn4tJEmJU&t=63)]  
+- 🧬 Addiction spans substance use and behaviors like gambling or pornography.  
+- 🩹 Compulsion serves as a solution to underlying stressors rather than the root problem.  
+  
+### 🏥 Initial Stages of Recovery  
+- 🩺 Treatment begins with medical detox and physical stabilization for acute cases.  
+- 📋 Understanding individual usage patterns and environments is essential for progress.  
+  
+### ⚖️ Recognizing Addiction  
+- 🛑 Determine if you have the behavior or if it has you.  
+- 📱 Modern dependencies like social media disrupt dopamine and real life engagement.  
+  
+### ✨ The Emotional Core of Addiction  
+- 🌊 People chase a specific feeling of relief or wholeness through their dependency.  
+- 🛐 Users often develop a spiritual relationship with the substance or behavior.  
+  
+### 🗓️ Building a Life Post-Addiction  
+- ⏳ Thirty days of abstinence helps reset the brain for long term recovery.  
+- 📈 The Jellinek Curve provides a framework for understanding the recovery trajectory.  
+  
+### ⛈️ Emotional Regulation and Distress Tolerance  
+- 🌡️ Concepts like the Emotional Weather Forecast and cold plunges build tolerance for discomfort.  
+- 🧘 Facing pain without escape is fundamental to maintaining sobriety.  
+  
+### 🧘 Mind-Body Practices  
+- 🌬️ Yoga Nidra and breathwork facilitate self directed state shifting.  
+- 🧠 Stilling the mind allows individuals to recognize and break stress responses.  
+  
+### 🤝 Specific Addictions and Treatment Options  
+- 🫂 Community support through twelve step programs helps overcome the role of shame.  
+- 🗣️ Addressing alcoholism and stimulants requires navigating social acceptability and support systems.  
+  
+### 🧠 Trauma and Addiction  
+- 🩹 Addiction frequently functions as a coping mechanism for unresolved trauma.  
+- 🔄 Stress cycles and traumatic history drive the continuation of addictive loops.  
+  
+### 🚀 Future Directions and Support  
+- 💊 Emerging treatments include GLP-1 agonists and substances like psilocybin or ibogaine.  
+- 🎁 Practical advice and zero cost resources assist those helping addicted loved ones.  
   
 ## 🤔 Evaluation  
   

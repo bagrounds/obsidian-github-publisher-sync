@@ -5,10 +5,10 @@ aliases:
 share: true
 URL: https://bagrounds.org/books
 backlinks: false
-updated: 2026-01-04T09:41:55-08:00
+updated: 2026-01-04T13:53:02-08:00
 ---
 [Home](../index.md)  
-# 📚 Books (861)  
+# 📚 Books (862)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [💻0️⃣ Source Code: My Beginnings](./source-code-my-beginnings.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)  
@@ -333,6 +333,7 @@ updated: 2026-01-04T09:41:55-08:00
 - [🎭🤫🧠 Incognito: The Secret Lives of the Brain](./incognito.md)  
 - [🧘 Indistractable: How to Control Your Attention and Choose Your Life](./indistractable.md)  
 - [🍃🧠🤝🏼 Influence: The Psychology of Persuasion](./influence.md)  
+- [🦠💀🔎💉 Influenza: The Hundred-Year Hunt to Cure the Deadliest Disease in History](./influenza-the-hundred-year-hunt-to-cure-the-deadliest-disease-in-history.md)  
 - [ℹ️ Information: A Very Short Introduction](./information.md)  
 - [📰⚔️🧠 Information Wars: How We Lost the Global Battle Against Disinformation and What We Can Do About It](./information-wars.md)  
 - [👨‍👩‍👧‍👦💰 Inheritocracy: It’s Time to Talk About the Bank of Mum and Dad](./inheritocracy-its-time-to-talk-about-the-bank-of-mum-and-dad.md)  

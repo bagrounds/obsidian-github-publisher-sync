@@ -58,4 +58,7 @@ youtube: https://youtu.be/skItByr5YvI
 ### 🎨 Creatively Related  
   
 * 📓 Confessions of an Economic Hit Man by John Perkins details the historical role of corporate interests in developing nations.  
-* [🇺🇸💥🏛️ Overthrow: America's Century of Regime Change from Hawaii to Iraq](../books/overthrow-americas-century-of-regime-change-from-hawaii-to-iraq.md) by Stephen Kinzer provides a chronological history of United States led regime changes.
+* [🇺🇸💥🏛️ Overthrow: America's Century of Regime Change from Hawaii to Iraq](../books/overthrow-americas-century-of-regime-change-from-hawaii-to-iraq.md) by Stephen Kinzer provides a chronological history of United States led regime changes.  
+  
+## 🐦 Tweet  
+<blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">💰🇺🇸🛢️💵 Trump posts photo of Maduro and says US plans to tap Venezuela&#39;s oil reserves<br><br>🤦 Worst president in history now runs 2 countries.<a href="https://t.co/3cxGHoGleo">https://t.co/3cxGHoGleo</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/2007631031663489152?ref_src=twsrc%5Etfw">January 4, 2026</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

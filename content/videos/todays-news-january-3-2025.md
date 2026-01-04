@@ -60,4 +60,7 @@ youtube: https://www.youtube.com/embed/7JXQhff9aGc
 ### 🎨 Creatively Related  
   
 * 🏗️ The Shock Doctrine by Naomi Klein examines how leaders use crises and military force to implement radical economic shifts and resource seizures.  
-* [🕵️📜 Legacy of Ashes: The History of the CIA](../books/legacy-of-ashes-the-history-of-the-cia.md) by Tim Weiner details the history of covert operations and the long-term consequences of US interventionism.
+* [🕵️📜 Legacy of Ashes: The History of the CIA](../books/legacy-of-ashes-the-history-of-the-cia.md) by Tim Weiner details the history of covert operations and the long-term consequences of US interventionism.  
+  
+## 🐦 Tweet  
+<blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">🇺🇸🚀🇻🇪 Today&#39;s News, January 3, 2025<br><br>This military action marks a formal departure from the rules-based international order established after World War II to prevent global conflict.<a href="https://twitter.com/HC_Richardson?ref_src=twsrc%5Etfw">@HC_Richardson</a><a href="https://t.co/EVEdPXvQws">https://t.co/EVEdPXvQws</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/2007859232046235799?ref_src=twsrc%5Etfw">January 4, 2026</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

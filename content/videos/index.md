@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-01-04T09:26:04-08:00
+updated: 2026-01-04T09:41:55-08:00
 ---
 [Home](../index.md)  
-# 📺 Videos (551)  
+# 📺 Videos (552)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
 - [❓💪🔬 12 Questions About Creatine with Stephen Cornish, PhD](./12-questions-about-creatine-w-stephen-cornish-phd.md)  
@@ -378,6 +378,7 @@ updated: 2026-01-04T09:26:04-08:00
 - [🤖🧠🚀🛠️📏💡🏢 The 7 Essential Skills for Enterprise Architects in an AI World](./the-7-essential-skills-for-enterprise-architects-in-an-ai-world.md)  
 - [👶🗣️🔤📢 📖 The ABCs of Language Development: Discover Language With Your Child](./the-abcs-of-language-development-discover-language-with-your-child.md)  
 - [🤖🫧💥📉 The AI Bubble Is Real — Here’s How to Prepare for the Pop | Prof G Markets](./the-ai-bubble-is-real-heres-how-to-prepare-for-the-pop-prof-g-markets.md)  
+- [🤖🤖🤖🌳🌎 The Army of Autonomous Robots Restoring Nature | Tom Chi | TED](./the-army-of-autonomous-robots-restoring-nature-tom-chi-ted.md)  
 - [💥🧠👶 The «Big Bang» in Learning: Brain Changes and Childhood Learning (Full Session)](./the-big-bang-in-learning-brain-changes-and-childhood-learning-full-session.md)  
 - [👹👀🇺🇸📉 The Big Short author Michael Lewis on what he thinks happens next with Trump and the USA](./the-big-short-author-michael-lewis-on-what-he-thinks-happens-next-with-trump-and-the-usa.md)  
 - [❓🛠️👨‍🎓 The Black Box Effect: How To Learn ANY Skill Quickly](./the-black-box-effect-how-to-learn-any-skill-quickly.md)  

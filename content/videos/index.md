@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-01-04T09:41:55-08:00
+updated: 2026-01-04T13:53:02-08:00
 ---
 [Home](../index.md)  
-# 📺 Videos (552)  
+# 📺 Videos (553)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
 - [❓💪🔬 12 Questions About Creatine with Stephen Cornish, PhD](./12-questions-about-creatine-w-stephen-cornish-phd.md)  
@@ -545,6 +545,7 @@ updated: 2026-01-04T09:41:55-08:00
 - [👩‍👧‍👦💼⬇️ Why so many mothers with young children are leaving the workforce](./why-so-many-mothers-with-young-children-are-leaving-the-workforce.md)  
 - [📺🚫🗣️ Why some stations won't air Jimmy Kimmel's return to late night](./why-some-stations-wont-air-jimmy-kimmels-return-to-late-night.md)  
 - [✝️🏛️↔️ Why the Constitution Separates Church and State | Explainer](./why-the-constitution-separates-church-and-state-explainer.md)  
+- [🦠🤧😷🤒🤧💪🛡️ Why the flu season is so bad and how you can protect yourself](./why-the-flu-season-is-so-bad-and-how-you-can-protect-yourself.md)  
 - [❓😡🇺🇸🗳️ Why the hell did people vote for Trump? (the answers will shock you)](./why-the-hell-did-people-vote-for-trump-the-answers-will-shock-you.md)  
 - [👴🚫📈 Why the Trump Administration Is Doubling Down as Momentum Grows Against Them | Explainer](./why-the-trump-administration-is-doubling-down-as-momentum-grows-against-them-explainer.md)  
 - [👹⏱️🇺🇸➡️💰 Why the Trump Administration Is Rushing the Budget Reconciliation Bill Through](./why-the-trump-administration-is-rushing-the-budget-reconciliation-bill-through.md)  

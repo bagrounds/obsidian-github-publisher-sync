@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-01-03T22:26:57-08:00
+updated: 2026-01-04T09:26:04-08:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -13,7 +13,8 @@ updated: 2026-01-03T22:26:57-08:00
 ❔ What do 🫵 _you_ 🤔 think?  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (415)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (416)  
+- [2026-01-04](./reflections/2026-01-04.md)  
 - [2026-01-03 | 💉 Addicted to 🩸 Blood for 🛢️ Oil 📚📺📰⌨️](./reflections/2026-01-03.md)  
 - [2026-01-02 | 😇 Good 🦭 Seals 🛠️ Build 🏗️ Resilient 🗽 Freedom 📺📚](./reflections/2026-01-02.md)  
 - [2026-01-01 | 🥱 Tired 🍼 Immature 🛠️ Tools 📺📚](./reflections/2026-01-01.md)  
@@ -23,10 +24,11 @@ updated: 2026-01-03T22:26:57-08:00
 - [2025-12-28 | ✈️ Deport 👨‍👩‍👧‍👦 Everyone ⚡ Faster 🤝 with 😎 Confidence 📺📚](./reflections/2025-12-28.md)  
 - [2025-12-27 | 🍇 Grapes 📈 Master 🎤 Karaoke 🗣️ Conversation 📺📚👶🏼](./reflections/2025-12-27.md)  
 - [2025-12-26 | 👑 Autocratic 🌎 Immigration 🧪 Invented 🤷🏼‍♀️ Indifference 📠 Machine 👩🏼‍💻 Code 📚📺](./reflections/2025-12-26.md)  
-- [2025-12-25 | 🤖🧠 Co-Intelligence 📚](./reflections/2025-12-25.md)  
   
   
-## [📚 Books](./books/index.md) (860)  
+## [📚 Books](./books/index.md) (861)  
+- [🇺🇸🪖❤️ The New American Militarism: How Americans Are Seduced by War](./books/the-new-american-militarism-how-americans-are-seduced-by-war.md)  
+- [⚔️💰 War Is a Racket](./books/war-is-a-racket.md)  
 - [🇺🇸👑🌺 Nation Within: The Story of America's Annexation of the Nation of Hawaii](./books/nation-within-the-story-of-americas-annexation-of-the-nation-of-hawaii.md)  
 - [🇺🇸💥🏛️ Overthrow: America's Century of Regime Change from Hawaii to Iraq](./books/overthrow-americas-century-of-regime-change-from-hawaii-to-iraq.md)  
 - [💸🌍 Kleptopia: How Dirty Money Is Conquering the World](./books/kleptopia-how-dirty-money-is-conquering-the-world.md)  
@@ -35,21 +37,19 @@ updated: 2026-01-03T22:26:57-08:00
 - [🔊🎞️🌱🤯 Resonate: Present Visual Stories that Transform Audiences](./books/resonate.md)  
 - [🌟🔓 Development as Freedom](./books/development-as-freedom.md)  
 - [👤🌱 Creating Capabilities: The Human Development Approach](./books/creating-capabilities-the-human-development-approach.md)  
-- [🤫🤑 23 Things They Don't Tell You About Capitalism](./books/23-things-they-dont-tell-you-about-capitalism.md)  
-- [🫡👑🏆 Extreme Ownership: How U.S. Navy SEALs Lead and Win](./books/extreme-ownership-how-us-navy-seals-lead-and-win.md)  
   
   
-## [📺 Videos](./videos/index.md) (550)  
+## [📺 Videos](./videos/index.md) (551)  
+- [💰💥🇻🇪 Trump’s Attack on Venezuela](./videos/trumps-attack-on-venezuela.md)  
+- [⚠️📉😬 Brooks and Bouie on economic warning signs](./videos/brooks-and-bouie-on-economic-warning-signs.md)  
+- [👹⏱️🇺🇸➡️💰 Why the Trump Administration Is Rushing the Budget Reconciliation Bill Through](./videos/why-the-trump-administration-is-rushing-the-budget-reconciliation-bill-through.md)  
+- [🇺🇸🚀🇻🇪 Today's News, January 3, 2025](./videos/todays-news-january-3-2025.md)  
 - [💪🧠🚫💊🚀 Tools for Overcoming Substance & Behavioral Addictions | Ryan Soave](./videos/tools-for-overcoming-substance-behavioral-addictions-ryan-soave.md)  
 - [🧠⛓️⚖️ Essentials: Understanding & Treating Addiction | Dr. Anna Lembke](./videos/essentials-understanding-treating-addiction-dr-anna-lembke.md)  
 - [💰🇺🇸🛢️💵 Trump posts photo of Maduro and says US plans to tap Venezuela's oil reserves](./videos/trump-posts-photo-of-maduro-and-says-us-plans-to-tap-venezuelas-oil-reserves.md)  
 - [🇺🇸🤔🗳️💥 Bonus Episode: How Is Trump Planning to ‘Run’ Venezuela? (With Anne Applebaum) | The David Frum Show](./videos/bonus-episode-how-is-trump-planning-to-run-venezuela-with-anne-applebaum-the-david-frum-show.md)  
 - [🇺🇸🗣️💥🇻🇪 Trump Addresses Nation on Venezuela Regime Change Operation](./videos/trump-addresses-nation-on-venezuela-regime-change-operation.md)  
 - [🇺🇸⚔️🇻🇪👑 Trump Attacks Venezuela and Captures President Maduro](./videos/trump-attacks-venezuela-and-captures-president-maduro.md)  
-- [💰💣 What Trump’s ‘Big, Beautiful Bill’ Is Really Doing (Part 1) | The Ezra Klein Show](./videos/what-trumps-big-beautiful-bill-is-really-doing-part-1-the-ezra-klein-show.md)  
-- [🇺🇸🚀🇻🇪 Today's News, January 3, 2025](./videos/todays-news-january-3-2025.md)  
-- [🏛️❤️🗣️ Democracy and Emotions– A Dialogue with Philosopher Martha C. Nussbaum](./videos/democracy-and-emotions-a-dialogue-with-philosopher-martha-c-nussbaum.md)  
-- [🤖🧠🚀🛠️📏💡🏢 The 7 Essential Skills for Enterprise Architects in an AI World](./videos/the-7-essential-skills-for-enterprise-architects-in-an-ai-world.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (87)  

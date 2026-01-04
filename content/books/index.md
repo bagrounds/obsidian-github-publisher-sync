@@ -5,10 +5,10 @@ aliases:
 share: true
 URL: https://bagrounds.org/books
 backlinks: false
-updated: 2026-01-03T22:26:57-08:00
+updated: 2026-01-04T09:26:04-08:00
 ---
 [Home](../index.md)  
-# 📚 Books (860)  
+# 📚 Books (861)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [💻0️⃣ Source Code: My Beginnings](./source-code-my-beginnings.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)  
@@ -835,6 +835,7 @@ updated: 2026-01-03T22:26:57-08:00
 - [🤖💻 Vibe Coding: Building Production-Grade Software With GenAI, Chat, Agents, and Beyond](./vibe-coding-building-production-grade-software-with-genai-chat-agents-and-beyond.md)  
 - [🇷🇺⚔️🇺🇦🇮🇱⚔️🇮🇷🇺🇸⚔️🇺🇸 War](./war.md)  
 - [⚔️🕊️ War and Peace](./war-and-peace.md)  
+- [⚔️💰 War Is a Racket](./war-is-a-racket.md)  
 - [📊📉🏛️ Weapons of Math Destruction: How Big Data Increases Inequality and Threatens Democracy](./weapons-of-math-destruction-how-big-data-increases-inequality-and-threatens-democracy.md)  
 - [🇺🇸➡️🔨 West from Appomattox: The Reconstruction of America After the Civil War](./west-from-appomattox-the-reconstruction-of-america-after-the-civil-war.md)  
 - [🤕❤️ What if Symptoms Are Your Friend?: An Introduction to BodyMind Bridge and Your Self-Healing Mind](./what-if-symptoms-are-your-friend-an-introduction-to-bodymind-bridge-and-your-self-healing-mind.md)  

@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-01-03T15:46:35-08:00
+updated: 2026-01-03T21:24:49-08:00
 ---
 [Home](../index.md)  
-# 📺 Videos (548)  
+# 📺 Videos (550)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
 - [❓💪🔬 12 Questions About Creatine with Stephen Cornish, PhD](./12-questions-about-creatine-w-stephen-cornish-phd.md)  
@@ -133,6 +133,7 @@ updated: 2026-01-03T15:46:35-08:00
 - [🇿🇦👨‍👩‍👧‍👦⛓️卐 Elon Musk's Family History in South Africa Reveals Ties to Apartheid & Neo-Nazi Movements](./elon-musks-family-history-in-south-africa-reveals-ties-to-apartheid-neo-nazi-movements.md)  
 - [🧠⬆️🍎🚀 Enhance Your Learning Speed & Health Using Neuroscience Based Protocols | Dr. Poppy Crum](./enhance-your-learning-speed-health-using-neuroscience-based-protocols-dr-poppy-crum.md)  
 - [🐘🔴👴🏿💥 Epstein Is A Real Problem For The GOP | Trump's Creepy Past | Blaming Obama](./epstein-is-a-real-problem-for-the-gop-trumps-creepy-past-blaming-obama.md)  
+- [🧠⛓️⚖️ Essentials: Understanding & Treating Addiction | Dr. Anna Lembke](./essentials-understanding-treating-addiction-dr-anna-lembke.md)  
 - [Ethics expert breaks down Trump administration’s conflicts of interest](./ethics-expert-breaks-down-trump-administrations-conflicts-of-interest.md)  
 - [Experts are STUNNED! Meta's NEW LLM Architecture is a GAME-CHANGER!](./experts-are-stunned-metas-new-llm-architecture-is-a-game-changer.md)  
 - [🏛️👎 Ex-Trump White House attorney calls Comey's indictment 'un-American and despicable'](./ex-trump-white-house-attorney-calls-comeys-indictment-un-american-and-despicable.md)  
@@ -449,6 +450,7 @@ updated: 2026-01-03T15:46:35-08:00
 - [👶🏃‍♀️🏅✅ Thule Urban Glide 3 Full Review | Best Running / Jogging Stroller 2024](./thule-urban-glide-3-full-review-best-running-jogging-stroller-2024.md)  
 - [🇺🇸🚀🇻🇪 Today's News, January 3, 2025](./todays-news-january-3-2025.md)  
 - [🤥📢👨‍💼 Tony Schwartz: The Truth About Trump | Oxford Union Q&A](./tony-schwartz-the-truth-about-trump-oxford-union-q-a.md)  
+- [💪🧠🚫💊🚀 Tools for Overcoming Substance & Behavioral Addictions | Ryan Soave](./tools-for-overcoming-substance-behavioral-addictions-ryan-soave.md)  
 - [🧠🎯⬆️ Tools to Enhance Working Memory & Attention](./tools-to-enhance-working-memory-and-attention.md)  
 - [☀️📚😎👍 Top books to read this summer, according to Ann Patchett and Maureen Corrigan](./top-books-to-read-this-summer-according-to-ann-patchett-and-maureen-corrigan.md)  
 - [🧑‍🔬📉🇺🇸🔚 Top researchers consider leaving U.S. amid funding cuts: 'The science world is ending'](./top-researchers-consider-leaving-us-amid-funding-cuts-the-science-world-is-ending.md)  

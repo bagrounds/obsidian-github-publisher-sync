@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-01-03T15:46:35-08:00
+updated: 2026-01-03T21:24:49-08:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -39,17 +39,17 @@ updated: 2026-01-03T15:46:35-08:00
 - [🫡👑🏆 Extreme Ownership: How U.S. Navy SEALs Lead and Win](./books/extreme-ownership-how-us-navy-seals-lead-and-win.md)  
   
   
-## [📺 Videos](./videos/index.md) (548)  
-- [🇺🇸🤔🗳️💥 Bonus Episode: How Is Trump Planning to ‘Run’ Venezuela? (With Anne Applebaum) | The David Frum Show](./videos/bonus-episode-how-is-trump-planning-to-run-venezuela-with-anne-applebaum-the-david-frum-show.md)  
+## [📺 Videos](./videos/index.md) (550)  
+- [💪🧠🚫💊🚀 Tools for Overcoming Substance & Behavioral Addictions | Ryan Soave](./videos/tools-for-overcoming-substance-behavioral-addictions-ryan-soave.md)  
+- [🧠⛓️⚖️ Essentials: Understanding & Treating Addiction | Dr. Anna Lembke](./videos/essentials-understanding-treating-addiction-dr-anna-lembke.md)  
 - [💰🇺🇸🛢️💵 Trump posts photo of Maduro and says US plans to tap Venezuela's oil reserves](./videos/trump-posts-photo-of-maduro-and-says-us-plans-to-tap-venezuelas-oil-reserves.md)  
+- [🇺🇸🤔🗳️💥 Bonus Episode: How Is Trump Planning to ‘Run’ Venezuela? (With Anne Applebaum) | The David Frum Show](./videos/bonus-episode-how-is-trump-planning-to-run-venezuela-with-anne-applebaum-the-david-frum-show.md)  
 - [🇺🇸🗣️💥🇻🇪 Trump Addresses Nation on Venezuela Regime Change Operation](./videos/trump-addresses-nation-on-venezuela-regime-change-operation.md)  
 - [🇺🇸⚔️🇻🇪👑 Trump Attacks Venezuela and Captures President Maduro](./videos/trump-attacks-venezuela-and-captures-president-maduro.md)  
 - [💰💣 What Trump’s ‘Big, Beautiful Bill’ Is Really Doing (Part 1) | The Ezra Klein Show](./videos/what-trumps-big-beautiful-bill-is-really-doing-part-1-the-ezra-klein-show.md)  
 - [🇺🇸🚀🇻🇪 Today's News, January 3, 2025](./videos/todays-news-january-3-2025.md)  
 - [🏛️❤️🗣️ Democracy and Emotions– A Dialogue with Philosopher Martha C. Nussbaum](./videos/democracy-and-emotions-a-dialogue-with-philosopher-martha-c-nussbaum.md)  
 - [🤖🧠🚀🛠️📏💡🏢 The 7 Essential Skills for Enterprise Architects in an AI World](./videos/the-7-essential-skills-for-enterprise-architects-in-an-ai-world.md)  
-- [💡🔧📏🔮〰️ How to create a capability model](./videos/how-to-create-a-capability-model.md)  
-- [💪🧠⚔️🤝 How to Become Resilient, Forge Your Identity & Lead Others | Jocko Willink](./videos/how-to-become-resilient-forge-your-identity-lead-others-jocko-willink.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (87)  

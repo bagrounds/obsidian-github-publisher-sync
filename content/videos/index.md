@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-01-03T22:26:57-08:00
+updated: 2026-01-04T09:26:04-08:00
 ---
 [Home](../index.md)  
-# 📺 Videos (550)  
+# 📺 Videos (551)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
 - [❓💪🔬 12 Questions About Creatine with Stephen Cornish, PhD](./12-questions-about-creatine-w-stephen-cornish-phd.md)  
@@ -468,6 +468,7 @@ updated: 2026-01-03T22:26:57-08:00
 - [👨‍⚖️💂‍♂️🚨🇺🇸 Trump Orders Another 2,000 Guardsmen, 700 Marines To LA | NPR News Now](./trump-orders-another-2000-guardsmen-700-marines-to-la-npr-news-now.md)  
 - [💰🇺🇸🛢️💵 Trump posts photo of Maduro and says US plans to tap Venezuela's oil reserves](./trump-posts-photo-of-maduro-and-says-us-plans-to-tap-venezuelas-oil-reserves.md)  
 - [🚪👥🚫⚖️ Trump Said He’d Deport Millions. What’s Happening on the Ground? | WSJ](./trump-said-hed-deport-millions-whats-happening-on-the-ground-wsj.md)  
+- [💰💥🇻🇪 Trump’s Attack on Venezuela](./trumps-attack-on-venezuela.md)  
 - [👨‍⚖️🚫🇺🇸⚖️ Trump’s attempt to pardon Tina Peters runs into constitutional limits](./trumps-attempt-to-pardon-tina-peters-runs-into-constitutional-limits.md)  
 - [👹🤡👑📢 Trump’s Distractions Are Part of the Authoritarian Playbook | Explainer](./trumps-distractions-are-part-of-the-authoritarian-playbook-explainer.md)  
 - [🌪️🇺🇸📉🌍 Trump’s instability and the potential of a post-American world](./trumps-instability-and-the-potential-of-a-post-american-world.md)  

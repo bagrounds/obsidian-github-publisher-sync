@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-01-04T09:41:55-08:00
+updated: 2026-01-04T13:53:02-08:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -26,7 +26,8 @@ updated: 2026-01-04T09:41:55-08:00
 - [2025-12-26 | 👑 Autocratic 🌎 Immigration 🧪 Invented 🤷🏼‍♀️ Indifference 📠 Machine 👩🏼‍💻 Code 📚📺](./reflections/2025-12-26.md)  
   
   
-## [📚 Books](./books/index.md) (861)  
+## [📚 Books](./books/index.md) (862)  
+- [🦠💀🔎💉 Influenza: The Hundred-Year Hunt to Cure the Deadliest Disease in History](./books/influenza-the-hundred-year-hunt-to-cure-the-deadliest-disease-in-history.md)  
 - [🇺🇸🪖❤️ The New American Militarism: How Americans Are Seduced by War](./books/the-new-american-militarism-how-americans-are-seduced-by-war.md)  
 - [⚔️💰 War Is a Racket](./books/war-is-a-racket.md)  
 - [🇺🇸👑🌺 Nation Within: The Story of America's Annexation of the Nation of Hawaii](./books/nation-within-the-story-of-americas-annexation-of-the-nation-of-hawaii.md)  
@@ -36,10 +37,10 @@ updated: 2026-01-04T09:41:55-08:00
 - [🤯❤️ Upheavals of Thought: The Intelligence of Emotions](./books/upheavals-of-thought-the-intelligence-of-emotions.md)  
 - [🔊🎞️🌱🤯 Resonate: Present Visual Stories that Transform Audiences](./books/resonate.md)  
 - [🌟🔓 Development as Freedom](./books/development-as-freedom.md)  
-- [👤🌱 Creating Capabilities: The Human Development Approach](./books/creating-capabilities-the-human-development-approach.md)  
   
   
-## [📺 Videos](./videos/index.md) (552)  
+## [📺 Videos](./videos/index.md) (553)  
+- [🦠🤧😷🤒🤧💪🛡️ Why the flu season is so bad and how you can protect yourself](./videos/why-the-flu-season-is-so-bad-and-how-you-can-protect-yourself.md)  
 - [🤖🤖🤖🌳🌎 The Army of Autonomous Robots Restoring Nature | Tom Chi | TED](./videos/the-army-of-autonomous-robots-restoring-nature-tom-chi-ted.md)  
 - [💰💥🇻🇪 Trump’s Attack on Venezuela](./videos/trumps-attack-on-venezuela.md)  
 - [⚠️📉😬 Brooks and Bouie on economic warning signs](./videos/brooks-and-bouie-on-economic-warning-signs.md)  
@@ -49,7 +50,6 @@ updated: 2026-01-04T09:41:55-08:00
 - [🧠⛓️⚖️ Essentials: Understanding & Treating Addiction | Dr. Anna Lembke](./videos/essentials-understanding-treating-addiction-dr-anna-lembke.md)  
 - [💰🇺🇸🛢️💵 Trump posts photo of Maduro and says US plans to tap Venezuela's oil reserves](./videos/trump-posts-photo-of-maduro-and-says-us-plans-to-tap-venezuelas-oil-reserves.md)  
 - [🇺🇸🤔🗳️💥 Bonus Episode: How Is Trump Planning to ‘Run’ Venezuela? (With Anne Applebaum) | The David Frum Show](./videos/bonus-episode-how-is-trump-planning-to-run-venezuela-with-anne-applebaum-the-david-frum-show.md)  
-- [🇺🇸🗣️💥🇻🇪 Trump Addresses Nation on Venezuela Regime Change Operation](./videos/trump-addresses-nation-on-venezuela-regime-change-operation.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (87)  

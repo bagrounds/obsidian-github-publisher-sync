@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-01-04T18:34:52-08:00
+updated: 2026-01-05T10:04:49-08:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -13,7 +13,8 @@ updated: 2026-01-04T18:34:52-08:00
 ❔ What do 🫵 _you_ 🤔 think?  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (416)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (417)  
+- [2026-01-05](./reflections/2026-01-05.md)  
 - [2026-01-04](./reflections/2026-01-04.md)  
 - [2026-01-03 | 💉 Addicted to 🩸 Blood for 🛢️ Oil 📚📺📰⌨️](./reflections/2026-01-03.md)  
 - [2026-01-02 | 😇 Good 🦭 Seals 🛠️ Build 🏗️ Resilient 🗽 Freedom 📺📚](./reflections/2026-01-02.md)  
@@ -23,10 +24,10 @@ updated: 2026-01-04T18:34:52-08:00
 - [2025-12-29 | The 🧬 Inheritocracy ⚡ Power 🌀 Transforming 👤 Personal 💥 Shock to 📉 Bad 🛠️ Work 🧱 Limits 📚📺📰](./reflections/2025-12-29.md)  
 - [2025-12-28 | ✈️ Deport 👨‍👩‍👧‍👦 Everyone ⚡ Faster 🤝 with 😎 Confidence 📺📚](./reflections/2025-12-28.md)  
 - [2025-12-27 | 🍇 Grapes 📈 Master 🎤 Karaoke 🗣️ Conversation 📺📚👶🏼](./reflections/2025-12-27.md)  
-- [2025-12-26 | 👑 Autocratic 🌎 Immigration 🧪 Invented 🤷🏼‍♀️ Indifference 📠 Machine 👩🏼‍💻 Code 📚📺](./reflections/2025-12-26.md)  
   
   
-## [📚 Books](./books/index.md) (864)  
+## [📚 Books](./books/index.md) (865)  
+- [🫂🏙️🗣️ Everything for Everyone: An Oral History of the New York Commune, 2052–2072](./books/everything-for-everyone-an-oral-history-of-the-new-york-commune-2052-2072.md)  
 - [₿📈📉 Number Go Up: Inside Crypto's Wild Rise and Staggering Fall](./books/number-go-up-inside-cryptos-wild-rise-and-staggering-fall.md)  
 - [⚖️🏛️ Prosecuting the President: How Special Prosecutors Hold Presidents Accountable and Protect the Rule of Law](./books/prosecuting-the-president-how-special-prosecutors-hold-presidents-accountable-and-protect-the-rule-of-law.md)  
 - [🦠💀🔎💉 Influenza: The Hundred-Year Hunt to Cure the Deadliest Disease in History](./books/influenza-the-hundred-year-hunt-to-cure-the-deadliest-disease-in-history.md)  
@@ -36,12 +37,12 @@ updated: 2026-01-04T18:34:52-08:00
 - [🇺🇸💥🏛️ Overthrow: America's Century of Regime Change from Hawaii to Iraq](./books/overthrow-americas-century-of-regime-change-from-hawaii-to-iraq.md)  
 - [💸🌍 Kleptopia: How Dirty Money Is Conquering the World](./books/kleptopia-how-dirty-money-is-conquering-the-world.md)  
 - [🤫💰🕵️ The New Confessions of an Economic Hit Man](./books/the-new-confessions-of-an-economic-hit-man.md)  
-- [🤯❤️ Upheavals of Thought: The Intelligence of Emotions](./books/upheavals-of-thought-the-intelligence-of-emotions.md)  
   
   
-## [📺 Videos](./videos/index.md) (558)  
-- [💔➡️🎨🖌️ Transform Pain & Trauma Into Creative Expression | David Choe](./videos/transform-pain-trauma-into-creative-expression-david-choe.md)  
+## [📺 Videos](./videos/index.md) (559)  
+- [⚡🧠🚀✨ ADHD & How Anyone Can Improve Their Focus | Huberman Lab Essentials](./videos/adhd-how-anyone-can-improve-their-focus-huberman-lab-essentials.md)  
 - [🇮🇹💰⬇️🆙 Italy's Radical Solution to Extreme Inequality](./videos/italys-radical-solution-to-extreme-inequality.md)  
+- [💔➡️🎨🖌️ Transform Pain & Trauma Into Creative Expression | David Choe](./videos/transform-pain-trauma-into-creative-expression-david-choe.md)  
 - [🔎💸🕵️‍♂️🏛️🇺🇸🤫💥🤯 We Investigated The Criminals Who Bought Trump: What We Found Will Shock You](./videos/we-investigated-the-criminals-who-bought-trump-what-we-found-will-shock-you.md)  
 - [🤖🧠📈 The future of intelligence | Demis Hassabis (Co-founder and CEO of DeepMind)](./videos/the-future-of-intelligence-demis-hassabis-co-founder-and-ceo-of-deepmind.md)  
 - [📺🔎⚖️🗣️🏛️ Jack Smith's full House Judiciary deposition on investigating and indicting Trump](./videos/jack-smiths-full-house-judiciary-deposition-on-investigating-and-indicting-trump.md)  
@@ -49,7 +50,6 @@ updated: 2026-01-04T18:34:52-08:00
 - [🤖🤖🤖🌳🌎 The Army of Autonomous Robots Restoring Nature | Tom Chi | TED](./videos/the-army-of-autonomous-robots-restoring-nature-tom-chi-ted.md)  
 - [💰💥🇻🇪 Trump’s Attack on Venezuela](./videos/trumps-attack-on-venezuela.md)  
 - [⚠️📉😬 Brooks and Bouie on economic warning signs](./videos/brooks-and-bouie-on-economic-warning-signs.md)  
-- [👹⏱️🇺🇸➡️💰 Why the Trump Administration Is Rushing the Budget Reconciliation Bill Through](./videos/why-the-trump-administration-is-rushing-the-budget-reconciliation-bill-through.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (87)  

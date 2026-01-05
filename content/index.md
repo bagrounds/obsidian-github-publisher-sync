@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-01-04T13:53:02-08:00
+updated: 2026-01-04T16:54:45-08:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -39,7 +39,8 @@ updated: 2026-01-04T13:53:02-08:00
 - [🌟🔓 Development as Freedom](./books/development-as-freedom.md)  
   
   
-## [📺 Videos](./videos/index.md) (553)  
+## [📺 Videos](./videos/index.md) (554)  
+- [📺🔎⚖️🗣️🏛️ Jack Smith's full House Judiciary deposition on investigating and indicting Trump](./videos/jack-smiths-full-house-judiciary-deposition-on-investigating-and-indicting-trump.md)  
 - [🦠🤧😷🤒🤧💪🛡️ Why the flu season is so bad and how you can protect yourself](./videos/why-the-flu-season-is-so-bad-and-how-you-can-protect-yourself.md)  
 - [🤖🤖🤖🌳🌎 The Army of Autonomous Robots Restoring Nature | Tom Chi | TED](./videos/the-army-of-autonomous-robots-restoring-nature-tom-chi-ted.md)  
 - [💰💥🇻🇪 Trump’s Attack on Venezuela](./videos/trumps-attack-on-venezuela.md)  
@@ -49,7 +50,6 @@ updated: 2026-01-04T13:53:02-08:00
 - [💪🧠🚫💊🚀 Tools for Overcoming Substance & Behavioral Addictions | Ryan Soave](./videos/tools-for-overcoming-substance-behavioral-addictions-ryan-soave.md)  
 - [🧠⛓️⚖️ Essentials: Understanding & Treating Addiction | Dr. Anna Lembke](./videos/essentials-understanding-treating-addiction-dr-anna-lembke.md)  
 - [💰🇺🇸🛢️💵 Trump posts photo of Maduro and says US plans to tap Venezuela's oil reserves](./videos/trump-posts-photo-of-maduro-and-says-us-plans-to-tap-venezuelas-oil-reserves.md)  
-- [🇺🇸🤔🗳️💥 Bonus Episode: How Is Trump Planning to ‘Run’ Venezuela? (With Anne Applebaum) | The David Frum Show](./videos/bonus-episode-how-is-trump-planning-to-run-venezuela-with-anne-applebaum-the-david-frum-show.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (87)  

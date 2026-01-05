@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-01-04T13:53:02-08:00
+updated: 2026-01-04T16:54:45-08:00
 ---
 [Home](../index.md)  
-# 📺 Videos (553)  
+# 📺 Videos (554)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
 - [❓💪🔬 12 Questions About Creatine with Stephen Cornish, PhD](./12-questions-about-creatine-w-stephen-cornish-phd.md)  
@@ -240,6 +240,7 @@ updated: 2026-01-04T13:53:02-08:00
 - [🤖🗓️🧑‍🏫 I Tried AI as a Life Coach for 365 Days - Here’s What I Learned](./i-tried-ai-as-a-life-coach-for-365-days-heres-what-i-learned.md)  
 - [📈🚀🏁🏆  It’s actually pretty easy to get ahead of 99% of people](./it-is-actually-pretty-easy-to-get-ahead-of-99-percent-of%20people.md)  
 - [📢👁️🗣️💡 It's Our Job to Make Sure People Know the Truth](./its-our-job-to-make-sure-people-know-the-truth.md)  
+- [📺🔎⚖️🗣️🏛️ Jack Smith's full House Judiciary deposition on investigating and indicting Trump](./jack-smiths-full-house-judiciary-deposition-on-investigating-and-indicting-trump.md)  
 - [🙊🤐👑 Jimmy Kimmel's Suspension Was Always About Censorship (Just Ask Trump) | The Daily Show](./jimmy-kimmels-suspension-was-always-about-censorship-just-ask-trump-the-daily-show.md)  
 - [📺🎤👮‍♂️📰 Jimmy Kimmel & the FCC: Last Week Tonight with John Oliver (HBO)](./jimmy-kimmel-the-fcc-last-week-tonight-with-john-oliver-hbo.md)  
 - [🪖💪💯 Jocko Willink «GOOD» (Official)](./jocko-willink-good-official.md)  

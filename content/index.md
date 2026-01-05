@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-01-04T18:24:47-08:00
+updated: 2026-01-04T18:34:52-08:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -39,7 +39,8 @@ updated: 2026-01-04T18:24:47-08:00
 - [🤯❤️ Upheavals of Thought: The Intelligence of Emotions](./books/upheavals-of-thought-the-intelligence-of-emotions.md)  
   
   
-## [📺 Videos](./videos/index.md) (557)  
+## [📺 Videos](./videos/index.md) (558)  
+- [💔➡️🎨🖌️ Transform Pain & Trauma Into Creative Expression | David Choe](./videos/transform-pain-trauma-into-creative-expression-david-choe.md)  
 - [🇮🇹💰⬇️🆙 Italy's Radical Solution to Extreme Inequality](./videos/italys-radical-solution-to-extreme-inequality.md)  
 - [🔎💸🕵️‍♂️🏛️🇺🇸🤫💥🤯 We Investigated The Criminals Who Bought Trump: What We Found Will Shock You](./videos/we-investigated-the-criminals-who-bought-trump-what-we-found-will-shock-you.md)  
 - [🤖🧠📈 The future of intelligence | Demis Hassabis (Co-founder and CEO of DeepMind)](./videos/the-future-of-intelligence-demis-hassabis-co-founder-and-ceo-of-deepmind.md)  
@@ -49,7 +50,6 @@ updated: 2026-01-04T18:24:47-08:00
 - [💰💥🇻🇪 Trump’s Attack on Venezuela](./videos/trumps-attack-on-venezuela.md)  
 - [⚠️📉😬 Brooks and Bouie on economic warning signs](./videos/brooks-and-bouie-on-economic-warning-signs.md)  
 - [👹⏱️🇺🇸➡️💰 Why the Trump Administration Is Rushing the Budget Reconciliation Bill Through](./videos/why-the-trump-administration-is-rushing-the-budget-reconciliation-bill-through.md)  
-- [🇺🇸🚀🇻🇪 Today's News, January 3, 2025](./videos/todays-news-january-3-2025.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (87)  

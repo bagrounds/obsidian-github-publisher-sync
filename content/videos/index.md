@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-01-04T18:24:47-08:00
+updated: 2026-01-04T18:34:52-08:00
 ---
 [Home](../index.md)  
-# 📺 Videos (557)  
+# 📺 Videos (558)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
 - [❓💪🔬 12 Questions About Creatine with Stephen Cornish, PhD](./12-questions-about-creatine-w-stephen-cornish-phd.md)  
@@ -460,6 +460,7 @@ updated: 2026-01-04T18:24:47-08:00
 - [🧑‍🔬📉🇺🇸🔚 Top researchers consider leaving U.S. amid funding cuts: 'The science world is ending'](./top-researchers-consider-leaving-us-amid-funding-cuts-the-science-world-is-ending.md)  
 - [💣✉️📰 Top Trump officials accidentally texted U.S. war plans to journalist Jeffrey Goldberg](./top-trump-officials-accidentally-texted-u-s-war-plans-to-journalist-jeffrey-goldberg.md)  
 - [To Save Democracy, Here’s a Playbook That Works](./to-save-democracy-heres-a-playbook-that-works.md)  
+- [💔➡️🎨🖌️ Transform Pain & Trauma Into Creative Expression | David Choe](./transform-pain-trauma-into-creative-expression-david-choe.md)  
 - [👹🪖🇺🇸🚧✊🏾 Troops deployed in LA as immigration raids stir fear and protests](./troops-deployed-in-la-as-immigration-raids-stir-fear-and-protests.md)  
 - [🇺🇸🗣️💥🇻🇪 Trump Addresses Nation on Venezuela Regime Change Operation](./trump-addresses-nation-on-venezuela-regime-change-operation.md)  
 - [Trump administration targets college and university budgets in DEI crackdown](./trump-administration-targets-college-and-university-budgets-in-dei-crackdown.md)  

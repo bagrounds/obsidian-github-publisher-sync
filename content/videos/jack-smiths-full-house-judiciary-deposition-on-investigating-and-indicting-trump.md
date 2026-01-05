@@ -47,6 +47,28 @@ youtube: https://youtu.be/gGtlalhdL4c
 - 📜 Prosecutors must avoid the temptation to pick defendants rather than cases to prevent law from becoming a tool of malice.  
 - 📖 Claims that the Special Counsel cooperated with the authors of the book Injustice are categorically false and disputed.  
   
+### 👨‍⚖️ Special Counsel Background  
+  
+* ⚖️ Experience as a career prosecutor spans three decades across local national and international settings.  
+* 🎓 Academic credentials include a juris doctor cum laude from Harvard Law School and an undergraduate degree from the State University of New York at Oneonta.  
+* 🏛️ Previous leadership includes serving as the Chief of the Department of Justice Public Integrity Section where high profile corruption cases were managed.  
+* 🌍 International experience includes serving as the chief prosecutor for the Kosovo Specialist Chambers at The Hague focusing on war crimes.  
+* ⚖️ Professional philosophy is rooted in early career lessons that require legal actions to be based strictly on facts and law rather than political candidacy.  
+* 🎖️ Career achievements have been recognized through multiple honors including the US Attorney General Award for Distinguished Service.  
+* 🛡️ Appointment as Special Counsel in 2022 followed a career dedicated to nonpartisan integrity and the traditions of the Department of Justice.  
+* ⚖️ Philosophical commitment to the rule of law involves a willingness to close investigations without charges if the evidence does not support a conviction.  
+  
+### 🛡️ Threats and Intimidation  
+  
+* 🙊 Gag orders were necessary because public statements by the defendant endangered witnesses and intimidated court staff.  
+* 🧨 The rhetoric used by the former president created a foreseeable risk of violence and harassment against individuals involved in the judicial process.  
+* 🏛️ Court findings in both the District Court and the Court of Appeals confirmed that the defendant's extrajudicial statements posed a real and substantial threat to the administration of justice.  
+* 🛡️ Members of the Special Counsel's own staff were subject to intimidating communications following specific inflammatory social media posts.  
+* ⚖️ Public attacks on the judicial system are intended to undermine confidence in legal institutions and produce a climate of frightened acquiescence.  
+* ⚔️ The phrase if you go after me I am coming after you was cited as evidence of an established practice of issuing threats against perceived obstacles.  
+* 👩‍⚖️ Specific court personnel and potential jurors may reasonably fear becoming the next targets of the defendant's digital attacks.  
+* 🗳️ Intimidation of election workers during the 2024 cycle included social media death threats and doxing fueled by election fraud conspiracy theories.  
+  
 ## 🤔 Evaluation  
   
 - 🤖 This testimony aligns with the final report of the Select Committee to Investigate the January 6th Attack on the United States Capitol published by the US Government Publishing Office.  

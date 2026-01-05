@@ -5,10 +5,10 @@ aliases:
 share: true
 URL: https://bagrounds.org/books
 backlinks: false
-updated: 2026-01-04T18:05:10-08:00
+updated: 2026-01-04T18:12:16-08:00
 ---
 [Home](../index.md)  
-# 📚 Books (863)  
+# 📚 Books (864)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [💻0️⃣ Source Code: My Beginnings](./source-code-my-beginnings.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)  
@@ -421,6 +421,7 @@ updated: 2026-01-04T18:05:10-08:00
 - [🕊️🤝 Nonviolent Communication: A Language of Life](./nonviolent-communication.md)  
 - [⛔🌎🔚 Not the End of the World: How We Can Be the First Generation to Build a Sustainable Planet](./not-the-end-of-the-world.md)  
 - [👉🤏 Nudge: Improving Decisions about Health, Wealth, and Happiness](./nudge.md)  
+- [₿📈📉 Number Go Up: Inside Crypto's Wild Rise and Staggering Fall](./number-go-up-inside-cryptos-wild-rise-and-staggering-fall.md)  
 - [🔢🎯 Numerical Optimization](./numerical-optimization.md)  
 - [👨‍🍼🫂 Nurturing Dads: Social Initiatives for Contemporary Fatherhood](./nurturing-dads-social-initiatives-for-contemporary-fatherhood.md)  
 - [💰🏛️💔🇺🇸 On Corruption in America: And What Is at Stake](./on-corruption-in-america-and-what-is-at-stake.md)  

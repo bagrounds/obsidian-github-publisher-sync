@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-01-04T17:49:22-08:00
+updated: 2026-01-04T18:05:10-08:00
 ---
 [Home](../index.md)  
-# 📺 Videos (554)  
+# 📺 Videos (555)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
 - [❓💪🔬 12 Questions About Creatine with Stephen Cornish, PhD](./12-questions-about-creatine-w-stephen-cornish-phd.md)  
@@ -395,6 +395,7 @@ updated: 2026-01-04T17:49:22-08:00
 - [The far-right Proud Boys’ chilling message for the world | 60 Minutes Australia](./the-far-right-proud-boys-chilling-message-for-the-world-60-minutes-australia.md)  
 - [🇺🇸⚔️🏛️ The Fight to Save American Democracy — with Heather Cox Richardson | Prof G Conversations](./the-fight-to-save-american-democracy-with-heather-cox-richardson-prof-g-conversations.md)  
 - [🌍⚡️🚫🇺🇸 The Future of Energy Has Arrived - Just Not in the U.S.](./the-future-of-energy-has-arrived-just-not-in-the-us.md)  
+- [🤖🧠📈 The future of intelligence | Demis Hassabis (Co-founder and CEO of DeepMind)](./the-future-of-intelligence-demis-hassabis-co-founder-and-ceo-of-deepmind.md)  
 - [🌐🕸️🔮 The Future of the Web • Sir Tim Berners-Lee • GOTO 2018](./the-future-of-the-web-sir-tim-berners-lee-goto-2018.md)  
 - [The Happiest Baby on the Block - Harvey Karp (Summary)](./the-happiest-baby-on-the-block-harvey-karp-summary.md)  
 - [👿🏷️📉 The hidden history of demonizing SNAP recipients | Code Switch](./the-hidden-history-of-demonizing-snap-recipients-code-switch.md)  

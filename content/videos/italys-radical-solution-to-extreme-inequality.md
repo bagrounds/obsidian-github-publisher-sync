@@ -48,7 +48,7 @@ youtube: https://youtu.be/dQMZR64G_eM
   
 ### ↔️ Similar  
   
-* 📚 Everything for Everyone by Nathan Schneider explores the history and modern resurgence of cooperative movements globally.  
+* [🫂🏙️🗣️ Everything for Everyone: An Oral History of the New York Commune, 2052–2072](../books/everything-for-everyone-an-oral-history-of-the-new-york-commune-2052-2072.md) by Nathan Schneider explores the history and modern resurgence of cooperative movements globally.  
 * 📚 Humanizing the Economy by John Restakis examines the success of the Mondragon and Emilia Romagna cooperative clusters.  
   
 ### 🆚 Contrasting  

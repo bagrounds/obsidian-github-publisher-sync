@@ -5,10 +5,10 @@ aliases:
 share: true
 URL: https://bagrounds.org/books
 backlinks: false
-updated: 2026-01-04T18:34:52-08:00
+updated: 2026-01-05T10:04:49-08:00
 ---
 [Home](../index.md)  
-# 📚 Books (864)  
+# 📚 Books (865)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [💻0️⃣ Source Code: My Beginnings](./source-code-my-beginnings.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)  
@@ -218,6 +218,7 @@ updated: 2026-01-04T18:34:52-08:00
 - [💪⚕️ Essentials of Creatine in Sports and Health](./essentials-of-creatine-in-sports-and-health.md)  
 - [🌍✍🏿 Everybody Writes: Your Go-To Guide to Creating Ridiculously Good Content](./everybody-writes.md)  
 - [👣🗺️💥 Everyone Who Is Gone Is Here: The United States, Central America, and the Making of a Crisis](./everyone-who-is-gone-is-here-the-united-states-central-america-and-the-making-of-a-crisis.md)  
+- [🫂🏙️🗣️ Everything for Everyone: An Oral History of the New York Commune, 2052–2072](./everything-for-everyone-an-oral-history-of-the-new-york-commune-2052-2072.md)  
 - [🤝🧘 Everything Is Workable: A Zen Approach to Conflict Resolution](./everything-is-workable.md)  
 - [🏚️💰 Evicted: Poverty and Profit in the American City](./evicted-poverty-and-profit-in-the-american-city.md)  
 - [✅🗓️ Evidence-Based Habit Building: Finally Get Sh*t Done](./evidence-based-habit-building-finally-get-sht-done.md)  

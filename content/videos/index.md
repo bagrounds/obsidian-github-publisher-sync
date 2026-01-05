@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-01-04T18:05:10-08:00
+updated: 2026-01-04T18:12:16-08:00
 ---
 [Home](../index.md)  
-# 📺 Videos (555)  
+# 📺 Videos (556)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
 - [❓💪🔬 12 Questions About Creatine with Stephen Cornish, PhD](./12-questions-about-creatine-w-stephen-cornish-phd.md)  
@@ -502,6 +502,7 @@ updated: 2026-01-04T18:05:10-08:00
 - [WATCH: 'Whose throat do I get to choke’ if tariff approach fails, Tillis asks trade rep](./watch-whose-throat-do-i-get-to-choke-if-tariff-approach-fails-tillis-asks-trade-rep.md)  
 - [⏳🗳️🙅 We Cannot Wait for the Ballot Box in November 2026 | Explainer](./we-cannot-wait-for-the-ballot-box-in-november-2026-explainer.md)  
 - [🛒💲📈 We Had 400 People Shop For Groceries. What We Found Will Shock You.](./we-had-400-people-shop-for-groceries-what-we-found-will-shock-you.md)  
+- [🔎💸🕵️‍♂️🏛️🇺🇸🤫💥🤯 We Investigated The Criminals Who Bought Trump: What We Found Will Shock You](./we-investigated-the-criminals-who-bought-trump-what-we-found-will-shock-you.md)  
 - [What America is losing as President Trump fires independent government watchdogs | 60 Minutes](./what-america-is-losing-as-president-trump-fires-independent-government-watchdogs-60-minutes.md)  
 - [What Are You?](./what-are-you.md)  
 - [What EXACTLY is in the Republican Budget Blueprint?](./what-exactly-is-in-the-republican-budget-blueprint.md)  

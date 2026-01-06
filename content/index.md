@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-01-05T10:04:49-08:00
+updated: 2026-01-05T21:22:16-08:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -39,7 +39,8 @@ updated: 2026-01-05T10:04:49-08:00
 - [🤫💰🕵️ The New Confessions of an Economic Hit Man](./books/the-new-confessions-of-an-economic-hit-man.md)  
   
   
-## [📺 Videos](./videos/index.md) (559)  
+## [📺 Videos](./videos/index.md) (560)  
+- [🇻🇪⚔️💥 Tamara Keith and Amy Walter on the political fallout from military action in Venezuela](./videos/tamara-keith-and-amy-walter-on-the-political-fallout-from-military-action-in-venezuela.md)  
 - [⚡🧠🚀✨ ADHD & How Anyone Can Improve Their Focus | Huberman Lab Essentials](./videos/adhd-how-anyone-can-improve-their-focus-huberman-lab-essentials.md)  
 - [🇮🇹💰⬇️🆙 Italy's Radical Solution to Extreme Inequality](./videos/italys-radical-solution-to-extreme-inequality.md)  
 - [💔➡️🎨🖌️ Transform Pain & Trauma Into Creative Expression | David Choe](./videos/transform-pain-trauma-into-creative-expression-david-choe.md)  
@@ -49,7 +50,6 @@ updated: 2026-01-05T10:04:49-08:00
 - [🦠🤧😷🤒🤧💪🛡️ Why the flu season is so bad and how you can protect yourself](./videos/why-the-flu-season-is-so-bad-and-how-you-can-protect-yourself.md)  
 - [🤖🤖🤖🌳🌎 The Army of Autonomous Robots Restoring Nature | Tom Chi | TED](./videos/the-army-of-autonomous-robots-restoring-nature-tom-chi-ted.md)  
 - [💰💥🇻🇪 Trump’s Attack on Venezuela](./videos/trumps-attack-on-venezuela.md)  
-- [⚠️📉😬 Brooks and Bouie on economic warning signs](./videos/brooks-and-bouie-on-economic-warning-signs.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (87)  

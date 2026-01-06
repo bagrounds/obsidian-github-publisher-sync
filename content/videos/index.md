@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-01-05T10:04:49-08:00
+updated: 2026-01-05T21:22:16-08:00
 ---
 [Home](../index.md)  
-# 📺 Videos (559)  
+# 📺 Videos (560)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
 - [❓💪🔬 12 Questions About Creatine with Stephen Cornish, PhD](./12-questions-about-creatine-w-stephen-cornish-phd.md)  
@@ -368,6 +368,7 @@ updated: 2026-01-05T10:04:49-08:00
 - [😴🔄✨ Take a Nap! Change Your Life | Sara Mednick | Talks at Google](./take-a-nap-change-your-life-sara-mednick-talks-at-google.md)  
 - [🗣️📢🚫 Tamara Keith and Amy Walter on millions protesting against Trump’s agenda](./tamara-keith-and-amy-walter-on-millions-protesting-against-trumps-agenda.md)  
 - [🏛️🛑 Tamara Keith and Amy Walter on the deal to end the government shutdown](./tamara-keith-and-amy-walter-on-the-deal-to-end-the-government-shutdown.md)  
+- [🇻🇪⚔️💥 Tamara Keith and Amy Walter on the political fallout from military action in Venezuela](./tamara-keith-and-amy-walter-on-the-political-fallout-from-military-action-in-venezuela.md)  
 - [🇺🇸🗣️💥💔 Tamara Keith and Amy Walter on the political response to Charlie Kirk's killing](./tamara-keith-and-amy-walter-on-the-political-response-to-charlie-kirks-killing.md)  
 - [📢👨⚖️🗣️ Tamara Keith and Amy Walter on the public response to Trump's handling of the Epstein case](./tamara-keith-and-amy-walter-on-the-public-response-to-trumps-handling-of-the-epstein-case.md)  
 - [🇺🇸🔄👑😬 Tamara Keith and Amy Walter on Trump flirting with the idea of the 3rd term](./tamara-keith-and-amy-walter-on-trump-flirting-with-the-idea-of-the-3rd-term.md)  

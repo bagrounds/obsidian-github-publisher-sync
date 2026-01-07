@@ -5,10 +5,10 @@ aliases:
 share: true
 URL: https://bagrounds.org/books
 backlinks: false
-updated: 2026-01-05T21:22:16-08:00
+updated: 2026-01-06T21:19:29-08:00
 ---
 [Home](../index.md)  
-# 📚 Books (865)  
+# 📚 Books (866)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [💻0️⃣ Source Code: My Beginnings](./source-code-my-beginnings.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)  
@@ -552,6 +552,7 @@ updated: 2026-01-05T21:22:16-08:00
 - [❓🎯 Start with Why: How Great Leaders Inspire Everyone to Take Action](./start-with-why-how-great-leaders-inspire-everyone-to-take-action.md)  
 - [📊📈✅🔍 Statistical Quality Control](./statistical-quality-control.md)  
 - [📊🫠 Statistics for Dummies](./statistics-for-dummies.md)  
+- [⛈️🏛️ Storm at the Capitol: An Oral History of January 6th](./storm-at-the-capitol-an-oral-history-of-january-6th.md)  
 - [📖📊📈 Storytelling with Data: A Data Visualization Guide for Business Professionals](./storytelling-with-data-a-data-visualization-guide-for-business-professionals.md)  
 - [🇮🇹🇩🇪🇱🇾🇷🇺🇺🇸 Strongmen: Mussolini to the Present](./strongmen.md)  
 - [😮😊 Stumbling on Happiness](./stumbling-on-happiness.md)  

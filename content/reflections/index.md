@@ -5,13 +5,13 @@ aliases:
 title: 🪞 Reflections
 URL: https://bagrounds.org/reflections
 backlinks: false
-updated: 2026-01-06T21:56:04-08:00
+updated: 2026-01-06T22:15:21-08:00
 ---
 [Home](../index.md)  
 # 🪞 Reflections (418)  
 - [2026-01-06 | 🗳️🏴‍☠️🪢💩🏛️ Insurrection Day 📚📺](./2026-01-06.md)  
 - [2026-01-05 | 🚼 Immature 🇻🇪Venezuela 👀 Focus 📺📰](./2026-01-05.md)  
-- [2026-01-04](./2026-01-04.md)  
+- [2026-01-04 | 🪖 War 🏴‍☠️ Criminal in 👑 Chief 📺📚📰](./2026-01-04.md)  
 - [2026-01-03 | 💉 Addicted to 🩸 Blood for 🛢️ Oil 📚📺📰⌨️](./2026-01-03.md)  
 - [2026-01-02 | 😇 Good 🦭 Seals 🛠️ Build 🏗️ Resilient 🗽 Freedom 📺📚](./2026-01-02.md)  
 - [2026-01-01 | 🥱 Tired 🍼 Immature 🛠️ Tools 📺📚](./2026-01-01.md)  

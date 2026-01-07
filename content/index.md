@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-01-07T12:12:10-08:00
+updated: 2026-01-07T12:18:26-08:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -39,7 +39,8 @@ updated: 2026-01-07T12:12:10-08:00
 - [💸🌍 Kleptopia: How Dirty Money Is Conquering the World](./books/kleptopia-how-dirty-money-is-conquering-the-world.md)  
   
   
-## [📺 Videos](./videos/index.md) (563)  
+## [📺 Videos](./videos/index.md) (564)  
+- [🤯🔋🚫💪 Emily Nagoski and Amelia Nagoski: The cure for burnout (hint: it isn't self-care) | TED](./videos/emily-nagoski-and-amelia-nagoski-the-cure-for-burnout-hint-it-isnt-self-care-ted.md)  
 - [🏃🤸🧠🏋️‍♂️ Run, Jump, Learn! How Exercise can Transform our Schools: John J. Ratey, MD at TEDxManhattanBeach](./videos/run-jump-learn-how-exercise-can-transform-our-schools-john-j-ratey-md-at-tedxmanhattanbeach.md)  
 - [💡🔄🤖 Build a Prompt Learning Loop - SallyAnn DeLucia & Fuad Ali, Arize](./videos/build-a-prompt-learning-loop-sallyann-delucia-fuad-ali-arize.md)  
 - [🏛️🗣️🗓️ Politics Chat, January 6, 2026](./videos/politics-chat-january-6-2026.md)  
@@ -49,7 +50,6 @@ updated: 2026-01-07T12:12:10-08:00
 - [💔➡️🎨🖌️ Transform Pain & Trauma Into Creative Expression | David Choe](./videos/transform-pain-trauma-into-creative-expression-david-choe.md)  
 - [🔎💸🕵️‍♂️🏛️🇺🇸🤫💥🤯 We Investigated The Criminals Who Bought Trump: What We Found Will Shock You](./videos/we-investigated-the-criminals-who-bought-trump-what-we-found-will-shock-you.md)  
 - [🤖🧠📈 The future of intelligence | Demis Hassabis (Co-founder and CEO of DeepMind)](./videos/the-future-of-intelligence-demis-hassabis-co-founder-and-ceo-of-deepmind.md)  
-- [📺🔎⚖️🗣️🏛️ Jack Smith's full House Judiciary deposition on investigating and indicting Trump](./videos/jack-smiths-full-house-judiciary-deposition-on-investigating-and-indicting-trump.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (87)  

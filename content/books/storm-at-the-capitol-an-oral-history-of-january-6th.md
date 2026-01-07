@@ -82,4 +82,7 @@ affiliate link: https://amzn.to/3LuvUWd
   
 ## 🫵 What Do You Think?  
   
-🤔 Which narrative from January 6th offers the most profound insight into the events, and how do oral histories compare to official reports in shaping our understanding of such critical moments in history?
+🤔 Which narrative from January 6th offers the most profound insight into the events, and how do oral histories compare to official reports in shaping our understanding of such critical moments in history?  
+  
+## 🐦 Tweet  
+<blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">⛈️🏛️ Storm at the Capitol: An Oral History of January 6th<br><br>🗣️ Firsthand Narratives | 🏛️ Attack on Democracy | 📉 Disinformation | 🇺🇸 Transfer of Power | 📱 Social Media&#39;s Role | 💥 Political Violence | 📈 Radicalization | ⚖️ Legal Consequences<a href="https://t.co/UgPjxIsRUK">https://t.co/UgPjxIsRUK</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/2008785365046636891?ref_src=twsrc%5Etfw">January 7, 2026</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

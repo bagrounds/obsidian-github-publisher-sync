@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-01-05T21:22:16-08:00
+updated: 2026-01-06T21:19:29-08:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -13,7 +13,8 @@ updated: 2026-01-05T21:22:16-08:00
 ❔ What do 🫵 _you_ 🤔 think?  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (417)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (418)  
+- [2026-01-06 | 🗳️🏴‍☠️🪢💩🏛️ Insurrection Day 📚📺](./reflections/2026-01-06.md)  
 - [2026-01-05](./reflections/2026-01-05.md)  
 - [2026-01-04](./reflections/2026-01-04.md)  
 - [2026-01-03 | 💉 Addicted to 🩸 Blood for 🛢️ Oil 📚📺📰⌨️](./reflections/2026-01-03.md)  
@@ -23,10 +24,10 @@ updated: 2026-01-05T21:22:16-08:00
 - [2025-12-30 | 🕷️ Charlotte's 🍼 Little 🧸 Nursery 😈 Devils 📚🌌](./reflections/2025-12-30.md)  
 - [2025-12-29 | The 🧬 Inheritocracy ⚡ Power 🌀 Transforming 👤 Personal 💥 Shock to 📉 Bad 🛠️ Work 🧱 Limits 📚📺📰](./reflections/2025-12-29.md)  
 - [2025-12-28 | ✈️ Deport 👨‍👩‍👧‍👦 Everyone ⚡ Faster 🤝 with 😎 Confidence 📺📚](./reflections/2025-12-28.md)  
-- [2025-12-27 | 🍇 Grapes 📈 Master 🎤 Karaoke 🗣️ Conversation 📺📚👶🏼](./reflections/2025-12-27.md)  
   
   
-## [📚 Books](./books/index.md) (865)  
+## [📚 Books](./books/index.md) (866)  
+- [⛈️🏛️ Storm at the Capitol: An Oral History of January 6th](./books/storm-at-the-capitol-an-oral-history-of-january-6th.md)  
 - [🫂🏙️🗣️ Everything for Everyone: An Oral History of the New York Commune, 2052–2072](./books/everything-for-everyone-an-oral-history-of-the-new-york-commune-2052-2072.md)  
 - [₿📈📉 Number Go Up: Inside Crypto's Wild Rise and Staggering Fall](./books/number-go-up-inside-cryptos-wild-rise-and-staggering-fall.md)  
 - [⚖️🏛️ Prosecuting the President: How Special Prosecutors Hold Presidents Accountable and Protect the Rule of Law](./books/prosecuting-the-president-how-special-prosecutors-hold-presidents-accountable-and-protect-the-rule-of-law.md)  
@@ -36,10 +37,10 @@ updated: 2026-01-05T21:22:16-08:00
 - [🇺🇸👑🌺 Nation Within: The Story of America's Annexation of the Nation of Hawaii](./books/nation-within-the-story-of-americas-annexation-of-the-nation-of-hawaii.md)  
 - [🇺🇸💥🏛️ Overthrow: America's Century of Regime Change from Hawaii to Iraq](./books/overthrow-americas-century-of-regime-change-from-hawaii-to-iraq.md)  
 - [💸🌍 Kleptopia: How Dirty Money Is Conquering the World](./books/kleptopia-how-dirty-money-is-conquering-the-world.md)  
-- [🤫💰🕵️ The New Confessions of an Economic Hit Man](./books/the-new-confessions-of-an-economic-hit-man.md)  
   
   
-## [📺 Videos](./videos/index.md) (560)  
+## [📺 Videos](./videos/index.md) (561)  
+- [🏛️🗣️🗓️ Politics Chat, January 6, 2026](./videos/politics-chat-january-6-2026.md)  
 - [🇻🇪⚔️💥 Tamara Keith and Amy Walter on the political fallout from military action in Venezuela](./videos/tamara-keith-and-amy-walter-on-the-political-fallout-from-military-action-in-venezuela.md)  
 - [⚡🧠🚀✨ ADHD & How Anyone Can Improve Their Focus | Huberman Lab Essentials](./videos/adhd-how-anyone-can-improve-their-focus-huberman-lab-essentials.md)  
 - [🇮🇹💰⬇️🆙 Italy's Radical Solution to Extreme Inequality](./videos/italys-radical-solution-to-extreme-inequality.md)  
@@ -49,7 +50,6 @@ updated: 2026-01-05T21:22:16-08:00
 - [📺🔎⚖️🗣️🏛️ Jack Smith's full House Judiciary deposition on investigating and indicting Trump](./videos/jack-smiths-full-house-judiciary-deposition-on-investigating-and-indicting-trump.md)  
 - [🦠🤧😷🤒🤧💪🛡️ Why the flu season is so bad and how you can protect yourself](./videos/why-the-flu-season-is-so-bad-and-how-you-can-protect-yourself.md)  
 - [🤖🤖🤖🌳🌎 The Army of Autonomous Robots Restoring Nature | Tom Chi | TED](./videos/the-army-of-autonomous-robots-restoring-nature-tom-chi-ted.md)  
-- [💰💥🇻🇪 Trump’s Attack on Venezuela](./videos/trumps-attack-on-venezuela.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (87)  

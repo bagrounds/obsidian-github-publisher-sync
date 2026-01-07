@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-01-07T12:18:26-08:00
+updated: 2026-01-07T12:45:15-08:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -26,7 +26,8 @@ updated: 2026-01-07T12:18:26-08:00
 - [2025-12-29 | The 🧬 Inheritocracy ⚡ Power 🌀 Transforming 👤 Personal 💥 Shock to 📉 Bad 🛠️ Work 🧱 Limits 📚📺📰](./reflections/2025-12-29.md)  
   
   
-## [📚 Books](./books/index.md) (866)  
+## [📚 Books](./books/index.md) (867)  
+- [💉👶⚖️ Vaccines and Your Child: Separating Fact from Fiction](./books/vaccines-and-your-child-separating-fact-from-fiction.md)  
 - [⛈️🏛️ Storm at the Capitol: An Oral History of January 6th](./books/storm-at-the-capitol-an-oral-history-of-january-6th.md)  
 - [🫂🏙️🗣️ Everything for Everyone: An Oral History of the New York Commune, 2052–2072](./books/everything-for-everyone-an-oral-history-of-the-new-york-commune-2052-2072.md)  
 - [₿📈📉 Number Go Up: Inside Crypto's Wild Rise and Staggering Fall](./books/number-go-up-inside-cryptos-wild-rise-and-staggering-fall.md)  
@@ -36,10 +37,10 @@ updated: 2026-01-07T12:18:26-08:00
 - [⚔️💰 War Is a Racket](./books/war-is-a-racket.md)  
 - [🇺🇸👑🌺 Nation Within: The Story of America's Annexation of the Nation of Hawaii](./books/nation-within-the-story-of-americas-annexation-of-the-nation-of-hawaii.md)  
 - [🇺🇸💥🏛️ Overthrow: America's Century of Regime Change from Hawaii to Iraq](./books/overthrow-americas-century-of-regime-change-from-hawaii-to-iraq.md)  
-- [💸🌍 Kleptopia: How Dirty Money Is Conquering the World](./books/kleptopia-how-dirty-money-is-conquering-the-world.md)  
   
   
-## [📺 Videos](./videos/index.md) (564)  
+## [📺 Videos](./videos/index.md) (565)  
+- [🥼💉❓🇺🇸 What the overhaul of U.S. vaccine guidance means for public health](./videos/what-the-overhaul-of-u-s-vaccine-guidance-means-for-public-health.md)  
 - [🤯🔋🚫💪 Emily Nagoski and Amelia Nagoski: The cure for burnout (hint: it isn't self-care) | TED](./videos/emily-nagoski-and-amelia-nagoski-the-cure-for-burnout-hint-it-isnt-self-care-ted.md)  
 - [🏃🤸🧠🏋️‍♂️ Run, Jump, Learn! How Exercise can Transform our Schools: John J. Ratey, MD at TEDxManhattanBeach](./videos/run-jump-learn-how-exercise-can-transform-our-schools-john-j-ratey-md-at-tedxmanhattanbeach.md)  
 - [💡🔄🤖 Build a Prompt Learning Loop - SallyAnn DeLucia & Fuad Ali, Arize](./videos/build-a-prompt-learning-loop-sallyann-delucia-fuad-ali-arize.md)  
@@ -49,7 +50,6 @@ updated: 2026-01-07T12:18:26-08:00
 - [🇮🇹💰⬇️🆙 Italy's Radical Solution to Extreme Inequality](./videos/italys-radical-solution-to-extreme-inequality.md)  
 - [💔➡️🎨🖌️ Transform Pain & Trauma Into Creative Expression | David Choe](./videos/transform-pain-trauma-into-creative-expression-david-choe.md)  
 - [🔎💸🕵️‍♂️🏛️🇺🇸🤫💥🤯 We Investigated The Criminals Who Bought Trump: What We Found Will Shock You](./videos/we-investigated-the-criminals-who-bought-trump-what-we-found-will-shock-you.md)  
-- [🤖🧠📈 The future of intelligence | Demis Hassabis (Co-founder and CEO of DeepMind)](./videos/the-future-of-intelligence-demis-hassabis-co-founder-and-ceo-of-deepmind.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (87)  

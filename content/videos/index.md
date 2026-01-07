@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-01-07T12:18:26-08:00
+updated: 2026-01-07T12:45:15-08:00
 ---
 [Home](../index.md)  
-# 📺 Videos (564)  
+# 📺 Videos (565)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
 - [❓💪🔬 12 Questions About Creatine with Stephen Cornish, PhD](./12-questions-about-creatine-w-stephen-cornish-phd.md)  
@@ -537,6 +537,7 @@ updated: 2026-01-07T12:18:26-08:00
 - [❓🤯😵‍💫 What the Heck Just Happened | 2025-11-15](./what-the-heck-just-happened-2025-11-15.md)  
 - [🤯❓🤷‍♀️ What the Heck Just Happened? | 2025-12-13](./what-the-heck-just-happened-2025-12-13.md)  
 - [🤫📂📈👹 What the latest Epstein files release reveals, and where Trump is mentioned](./what-the-latest-epstein-files-release-reveals-and-where-trump-is-mentioned.md)  
+- [🥼💉❓🇺🇸 What the overhaul of U.S. vaccine guidance means for public health](./what-the-overhaul-of-u-s-vaccine-guidance-means-for-public-health.md)  
 - [🇺🇸📈💡🔮🚀 What the U.S. has accomplished in 250 years of innovation and what’s next](./what-the-us-has-accomplished-in-250-years-of-innovation-and-whats-next.md)  
 - [💰💣 What Trump’s ‘Big, Beautiful Bill’ Is Really Doing (Part 1) | The Ezra Klein Show](./what-trumps-big-beautiful-bill-is-really-doing-part-1-the-ezra-klein-show.md)  
 - [👹👶🏼💸➡️👴🏻💰 What Trump’s ‘Big, Beautiful Bill’ Is Really Doing (Part 2) | The Ezra Klein Show](./what-trumps-big-beautiful-bill-is-really-doing-part-2-the-ezra-klein-show.md)  

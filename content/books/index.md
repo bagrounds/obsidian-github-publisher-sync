@@ -5,10 +5,10 @@ aliases:
 share: true
 URL: https://bagrounds.org/books
 backlinks: false
-updated: 2026-01-07T12:18:26-08:00
+updated: 2026-01-07T12:45:15-08:00
 ---
 [Home](../index.md)  
-# 📚 Books (866)  
+# 📚 Books (867)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [💻0️⃣ Source Code: My Beginnings](./source-code-my-beginnings.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)  
@@ -837,6 +837,7 @@ updated: 2026-01-07T12:18:26-08:00
 - [🤯❤️ Upheavals of Thought: The Intelligence of Emotions](./upheavals-of-thought-the-intelligence-of-emotions.md)  
 - [💻⚙️ Usability Engineering](./usability-engineering.md)  
 - [✅🤔 Useful Not True](./useful-not-true.md)  
+- [💉👶⚖️ Vaccines and Your Child: Separating Fact from Fiction](./vaccines-and-your-child-separating-fact-from-fiction.md)  
 - [🤖💻 Vibe Coding: Building Production-Grade Software With GenAI, Chat, Agents, and Beyond](./vibe-coding-building-production-grade-software-with-genai-chat-agents-and-beyond.md)  
 - [🇷🇺⚔️🇺🇦🇮🇱⚔️🇮🇷🇺🇸⚔️🇺🇸 War](./war.md)  
 - [⚔️🕊️ War and Peace](./war-and-peace.md)  

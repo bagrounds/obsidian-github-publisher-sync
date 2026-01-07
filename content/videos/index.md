@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-01-07T12:12:10-08:00
+updated: 2026-01-07T12:18:26-08:00
 ---
 [Home](../index.md)  
-# 📺 Videos (563)  
+# 📺 Videos (564)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
 - [❓💪🔬 12 Questions About Creatine with Stephen Cornish, PhD](./12-questions-about-creatine-w-stephen-cornish-phd.md)  
@@ -133,6 +133,7 @@ updated: 2026-01-07T12:12:10-08:00
 - [🌱⛰️💪 Effective Resistance to Authoritarianism: «The violets in the mountains have broken the rocks»](./effective-resistance-to-authoritarianism-the-violets-in-the-mountains-have-broken-the-rocks.md)  
 - [🤑🤥💡💰🗣️ Eliza Filby: Hard Work Is a Lie, This Is What Rich People Never Tell You](./eliza-filby-hard-work-is-a-lie-this-is-what-rich-people-never-tell-you.md)  
 - [🇿🇦👨‍👩‍👧‍👦⛓️卐 Elon Musk's Family History in South Africa Reveals Ties to Apartheid & Neo-Nazi Movements](./elon-musks-family-history-in-south-africa-reveals-ties-to-apartheid-neo-nazi-movements.md)  
+- [🤯🔋🚫💪 Emily Nagoski and Amelia Nagoski: The cure for burnout (hint: it isn't self-care) | TED](./emily-nagoski-and-amelia-nagoski-the-cure-for-burnout-hint-it-isnt-self-care-ted.md)  
 - [🧠⬆️🍎🚀 Enhance Your Learning Speed & Health Using Neuroscience Based Protocols | Dr. Poppy Crum](./enhance-your-learning-speed-health-using-neuroscience-based-protocols-dr-poppy-crum.md)  
 - [🐘🔴👴🏿💥 Epstein Is A Real Problem For The GOP | Trump's Creepy Past | Blaming Obama](./epstein-is-a-real-problem-for-the-gop-trumps-creepy-past-blaming-obama.md)  
 - [🧠⛓️⚖️ Essentials: Understanding & Treating Addiction | Dr. Anna Lembke](./essentials-understanding-treating-addiction-dr-anna-lembke.md)  

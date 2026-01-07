@@ -5,10 +5,11 @@ aliases:
 title: 🪞 Reflections
 URL: https://bagrounds.org/reflections
 backlinks: false
-updated: 2026-01-05T21:22:16-08:00
+updated: 2026-01-06T21:19:29-08:00
 ---
 [Home](../index.md)  
-# 🪞 Reflections (417)  
+# 🪞 Reflections (418)  
+- [2026-01-06 | 🗳️🏴‍☠️🪢💩🏛️ Insurrection Day 📚📺](./2026-01-06.md)  
 - [2026-01-05](./2026-01-05.md)  
 - [2026-01-04](./2026-01-04.md)  
 - [2026-01-03 | 💉 Addicted to 🩸 Blood for 🛢️ Oil 📚📺📰⌨️](./2026-01-03.md)  

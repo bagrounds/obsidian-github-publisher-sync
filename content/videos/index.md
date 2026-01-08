@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-01-07T13:57:07-08:00
+updated: 2026-01-07T19:19:06-08:00
 ---
 [Home](../index.md)  
-# 📺 Videos (566)  
+# 📺 Videos (567)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
 - [❓💪🔬 12 Questions About Creatine with Stephen Cornish, PhD](./12-questions-about-creatine-w-stephen-cornish-phd.md)  
@@ -276,6 +276,7 @@ updated: 2026-01-07T13:57:07-08:00
 - [Migrants in U.S. legally and with no criminal history caught up in Trump crackdown](./migrants-in-us-legally-and-with-no-criminal-history-caught-up-in-trump-crackdown.md)  
 - [🗣️🤫🐘 Mike Levin Reveals What Republicans Told Him Behind Closed Doors About Big Beautiful Bill](./mike-levin-reveals-what-republicans-told-him-behind-closed-doors-about-big-beautiful-bill.md)  
 - [🪖👨‍⚖️❓ Military personnel seek legal advice on whether Trump-ordered missions are lawful](./military-personnel-seek-legal-advice-on-whether-trump-ordered-missions-are-lawful.md)  
+- [💡🔬🌱 Mindvalley Book of the Week: Anne-Laure Le Cunff's Tiny Experiments](./mindvalley-book-of-the-week-anne-laure-le-cunffs-tiny-experiments.md)  
 - [👨‍💼🤖📈⚕️ MIT Economist on AI, Trade-Offs & Healthcare](./mit-economist-on-ai-trade-offs-healthcare.md)  
 - [🎓🔑🧠🧘 MIT PhD taught me to unlock my brain’s “Sage Mode” - Deep Work (Full Summary)](./mit-phd-taught-me-to-unlock-my-brains-sage-mode-deep-work-full-summary.md)  
 - [💰🇦🇹🆚📈 MMT vs. Austrian School Debate](./mmt-vs-austrian-school-debate.md)  

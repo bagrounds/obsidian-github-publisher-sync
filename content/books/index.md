@@ -5,10 +5,10 @@ aliases:
 share: true
 URL: https://bagrounds.org/books
 backlinks: false
-updated: 2026-01-07T13:57:07-08:00
+updated: 2026-01-07T19:19:06-08:00
 ---
 [Home](../index.md)  
-# 📚 Books (867)  
+# 📚 Books (868)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [💻0️⃣ Source Code: My Beginnings](./source-code-my-beginnings.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)  
@@ -815,6 +815,7 @@ updated: 2026-01-07T13:57:07-08:00
 - [🤥📣 This Is Not Propaganda: Adventures in the War Against Reality](./this-is-not-propaganda.md)  
 - [💭🦠 Thought Contagion: How Belief Spreads Through Society](./thought-contagion.md)  
 - [⏱️🍎 Time Restricted Eating: A Look into the Lifestyle](./time-restricted-eating-a-look-into-the-lifestyle.md)  
+- [🧪🎯🦋 Tiny Experiments: How to Live Freely in a Goal-Obsessed World](./tiny-experiments-how-to-live-freely-in-a-goal-obsessed-world.md)  
 - [🤏♻️ Tiny Habits: The Small Changes That Change Everything](./tiny-habits.md)  
 - [🇺🇸⛓️‍💥📜🐘 To Make Men Free: A History of the Republican Party](./to-make-men-free-a-history-of-the-republican-party.md)  
 - [🐱👑 Total Cat Mojo: The Ultimate Guide to Life with Your Cat](./total-cat-mojo-the-ultimate-guide-to-life-with-your-cat.md)  

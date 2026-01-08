@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-01-07T19:19:06-08:00
+updated: 2026-01-07T19:30:39-08:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -27,6 +27,7 @@ updated: 2026-01-07T19:19:06-08:00
   
   
 ## [📚 Books](./books/index.md) (868)  
+- [⚡🧠🏃 Spark: The Revolutionary New Science of Exercise and the Brain](./books/spark-the-revolutionary-new-science-of-exercise-and-the-brain.md)  
 - [🧠❤️🔄 The Neuroscience of Change: A Compassion-Based Program for Personal Transformation](./books/the-neuroscience-of-change-a-compassion-based-program-for-personal-transformation.md)  
 - [🧪🎯🦋 Tiny Experiments: How to Live Freely in a Goal-Obsessed World](./books/tiny-experiments-how-to-live-freely-in-a-goal-obsessed-world.md)  
 - [💉👶⚖️ Vaccines and Your Child: Separating Fact from Fiction](./books/vaccines-and-your-child-separating-fact-from-fiction.md)  
@@ -36,7 +37,6 @@ updated: 2026-01-07T19:19:06-08:00
 - [⚖️🏛️ Prosecuting the President: How Special Prosecutors Hold Presidents Accountable and Protect the Rule of Law](./books/prosecuting-the-president-how-special-prosecutors-hold-presidents-accountable-and-protect-the-rule-of-law.md)  
 - [🦠💀🔎💉 Influenza: The Hundred-Year Hunt to Cure the Deadliest Disease in History](./books/influenza-the-hundred-year-hunt-to-cure-the-deadliest-disease-in-history.md)  
 - [🇺🇸🪖❤️ The New American Militarism: How Americans Are Seduced by War](./books/the-new-american-militarism-how-americans-are-seduced-by-war.md)  
-- [⚔️💰 War Is a Racket](./books/war-is-a-racket.md)  
   
   
 ## [📺 Videos](./videos/index.md) (567)  
@@ -69,8 +69,8 @@ updated: 2026-01-07T19:19:06-08:00
   
   
 ## [🤖💬 Bot Chats](./bot-chats/index.md) (46)  
-- [👶😭➡️😊 Summarize The Happiest Baby On The Block](./bot-chats/summarize-the-happiest-baby-on-the-block.md)  
 - [📖 Book 🧭 Explorer 2](./bot-chats/book-explorer-2.md)  
+- [👶😭➡️😊 Summarize The Happiest Baby On The Block](./bot-chats/summarize-the-happiest-baby-on-the-block.md)  
 - [📖 Book 🧭 Explorer 1](./bot-chats/book-explorer-1.md)  
 - [🇦🇹💰🆚📈🖨️ Austrian Economics vs Modern Monetary Theory](./bot-chats/austrian-economics-vs-modern-monetary-theory.md)  
 - [🧭 Managing 🕸️ Complexity 🧠](./bot-chats/managing-complexity.md)  

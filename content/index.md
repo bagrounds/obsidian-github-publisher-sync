@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-01-08T09:32:24-08:00
+updated: 2026-01-08T09:44:33-08:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -39,7 +39,8 @@ updated: 2026-01-08T09:32:24-08:00
 - [🦠💀🔎💉 Influenza: The Hundred-Year Hunt to Cure the Deadliest Disease in History](./books/influenza-the-hundred-year-hunt-to-cure-the-deadliest-disease-in-history.md)  
   
   
-## [📺 Videos](./videos/index.md) (568)  
+## [📺 Videos](./videos/index.md) (569)  
+- [🥋🧠💪 Bruce Lee’s 11 Rules for an Unbreakable Mind](./videos/bruce-lees-11-rules-for-an-unbreakable-mind.md)  
 - [🌊🥋🤸💨 Be Like Water - The Philosophy of Bruce Lee](./videos/be-like-water-the-philosophy-of-bruce-lee.md)  
 - [💡🔬🌱 Mindvalley Book of the Week: Anne-Laure Le Cunff's Tiny Experiments](./videos/mindvalley-book-of-the-week-anne-laure-le-cunffs-tiny-experiments.md)  
 - [🚨🚔💥⚰️🇺🇸 Gov. Walz holds briefing after ICE agent shoots and kills woman in Minneapolis](./videos/watch-live-gov-walz-holds-briefing-after-ice-agent-shoots-and-kills-woman-in-minneapolis.md)  
@@ -49,7 +50,6 @@ updated: 2026-01-08T09:32:24-08:00
 - [💡🔄🤖 Build a Prompt Learning Loop - SallyAnn DeLucia & Fuad Ali, Arize](./videos/build-a-prompt-learning-loop-sallyann-delucia-fuad-ali-arize.md)  
 - [🏛️🗣️🗓️ Politics Chat, January 6, 2026](./videos/politics-chat-january-6-2026.md)  
 - [🇻🇪⚔️💥 Tamara Keith and Amy Walter on the political fallout from military action in Venezuela](./videos/tamara-keith-and-amy-walter-on-the-political-fallout-from-military-action-in-venezuela.md)  
-- [⚡🧠🚀✨ ADHD & How Anyone Can Improve Their Focus | Huberman Lab Essentials](./videos/adhd-how-anyone-can-improve-their-focus-huberman-lab-essentials.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (87)  

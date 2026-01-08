@@ -12,34 +12,39 @@ affiliate link: https://amzn.to/43OJokB
 # 😈🔥👹 The Devils  
 [🛒 The Devils. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/43OJokB)  
   
+## 📝🐒 Human Notes  
+> I listen. I understand. I sympathize. I act, in short, with simple grace and good manners and so people are drawn to me...  
+  
+> You need to stop clinging to the notion that there's only one right path. You'll waste half your time panicking you're not on it and the rest backtracking to find it. You know your problem?... You demand everything bend to your will and declare war on whatever doesn't... You should be like water. Take the shape of wherever you are and make the best of what floats past.  
+  
 ## 🤖 AI Summary  
-### Context 📝  
+### 🖼️ Context  
   
 * **Author**: Joe Abercrombie 🇬🇧🖋️  
 * **Genre**: Grimdark Fantasy, Dark Fantasy, Epic Fantasy, Action/Adventure ⚔️🔮  
 * **Series**: *The Devils* is the first book in a brand new series. 📚🆕  
   
-### Highlights ✨  
+### ✨ Highlights  
   
-Prepare for a wild ride with a notorious band of "anti-heroes" on a truly bloody and raucous journey! If you love morally ambiguous characters, dark humor, and relentless action, this book delivers. It's a fresh take on traditional fantasy tropes, blending intense combat with witty dialogue and unexpected turns. You'll find yourself questioning who the real monsters are. 😈🔪  
+Prepare for a wild ride with a notorious band of anti-heroes on a truly bloody and raucous journey! If you love morally ambiguous characters, dark humor, and relentless action, this book delivers. It's a fresh take on traditional fantasy tropes, blending intense combat with witty dialogue and unexpected turns. You'll find yourself questioning who the real monsters are. 😈🔪  
   
-### Common Complaints 😤  
+### 😢 Common Complaints  
   
-Some readers have noted that while the book is action-packed and entertaining, the sheer number of characters can sometimes lead to a lack of deep development for all of them. The humor, while a signature of Abercrombie's style, can feel a bit repetitive or over-the-top for some, leading to a "popcorn flick" feel that might not satisfy those looking for the profound philosophical depth of his earlier works. Additionally, some have found the plot to be somewhat formulaic at times, with episodic encounters during the journey. 🎢😂  
+Some readers have noted that while the book is action-packed and entertaining, the sheer number of characters can sometimes lead to a lack of deep development for all of them. The humor, while a signature of Abercrombie's style, can feel a bit repetitive or over-the-top for some, leading to a popcorn flick feel that might not satisfy those looking for the profound philosophical depth of his earlier works. Additionally, some have found the plot to be somewhat formulaic at times, with episodic encounters during the journey. 🎢😂  
   
-### Themes 🎯  
+### 🎢 Themes  
   
-The novel explores moral ambiguity in religious missions, the nature of unlikely alliances, the corruption of power, and the idea that "holy work sometimes requires unholy deeds."  
+The novel explores moral ambiguity in religious missions, the nature of unlikely alliances, the corruption of power, and the idea that holy work sometimes requires unholy deeds.  
   
-### Writing Style ✍️  
+### ✍️ Writing Style  
   
 Abercrombie's writing in *The Devils* is characterized by its gritty, visceral action scenes, dark and sardonic wit, and a fast-paced, propulsive narrative, often with short, punchy chapters. 💥🏃💨  
   
-### Reception 🏆  
+### 🏆 Reception  
   
-*The Devils* has been a commercial success, hitting bestseller lists in both the UK and US, and is particularly popular as an audiobook. It has been praised for its entertaining and action-packed nature, as well as its memorable characters and Abercrombie's signature humor. While some long-time fans of his "First Law" series found it a slight departure in tone, leaning more towards a darkly comedic romp, many still found it to be a highly enjoyable and compelling read. 👍📈  
+*The Devils* has been a commercial success, hitting bestseller lists in both the UK and US, and is particularly popular as an audiobook. It has been praised for its entertaining and action-packed nature, as well as its memorable characters and Abercrombie's signature humor. While some long-time fans of his First Law series found it a slight departure in tone, leaning more towards a darkly comedic romp, many still found it to be a highly enjoyable and compelling read. 👍📈  
   
-### Recommendations 📚  
+### 📚 Book Recommendations  
   
 #### Non-Fiction 🧠  
   
@@ -49,7 +54,7 @@ Abercrombie's writing in *The Devils* is characterized by its gritty, visceral a
 #### If You Loved This ❤️  
   
 * ***The Lies of Locke Lamora*** by Scott Lynch: If you enjoyed the witty banter, morally ambiguous characters, and clever schemes in *The Devils*, this first book in *The Gentleman Bastard Sequence* is an excellent choice. It follows a group of highly skilled, roguish thieves navigating a dangerous criminal underworld, offering a similar blend of humor and dark fantasy. 🎩 cunning!  
-* ***Kings of the Wyld*** by Nicholas Eames: For more action-packed fantasy with a strong focus on camaraderie and an older, somewhat "washed-up" band of heroes, *Kings of the Wyld* delivers. It has a similar rollicking adventure feel and a cast of memorable characters who might be past their prime but are certainly not out of the fight. 🤘 envejecido pero no vencido!  
+* ***Kings of the Wyld*** by Nicholas Eames: For more action-packed fantasy with a strong focus on camaraderie and an older, somewhat washed-up band of heroes, *Kings of the Wyld* delivers. It has a similar rollicking adventure feel and a cast of memorable characters who might be past their prime but are certainly not out of the fight. 🤘 envejecido pero no vencido!  
   
 #### Similar But Different 🔄  
   

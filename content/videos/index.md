@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-01-07T20:19:34-08:00
+updated: 2026-01-08T09:32:24-08:00
 ---
 [Home](../index.md)  
-# 📺 Videos (567)  
+# 📺 Videos (568)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
 - [❓💪🔬 12 Questions About Creatine with Stephen Cornish, PhD](./12-questions-about-creatine-w-stephen-cornish-phd.md)  
@@ -82,6 +82,7 @@ updated: 2026-01-07T20:19:34-08:00
 - [🔬🛡️🤥 Authors of 'Science Under Siege' warn of concerted effort to discredit science](./authors-of-science-under-siege-warn-of-concerted-effort-to-discredit-science.md)  
 - [🧩🗣️👎 Autism advocate calls Trump's statements on the condition 'stigmatizing'](./autism-advocate-calls-trumps-statements-on-the-condition-stigmatizing.md)  
 - [👶❓😴👩‍⚕️ Baby sleep Q & A with Dr. Sofia Axelrod, PhD](./baby-sleep-q-a-with-dr-sofia-axelrod-phd.md)  
+- [🌊🥋🤸💨 Be Like Water - The Philosophy of Bruce Lee](./be-like-water-the-philosophy-of-bruce-lee.md)  
 - [👨‍💻➡️🤖🧩 Beyond the IDE: Toward Multi-Agent Orchestration](./beyond-the-ide-toward-multi-agent-orchestration.md)  
 - [🧫❓❌📱 Biomedical Scientist Answers Pseudoscience Questions From Twitter | Tech Support | WIRED](./biomedical-scientist-answers-pseudoscience-questions-from-twitter-tech-support-wired.md)  
 - [🇩🇪⚖️🇺🇸 Blueprint Why Germany's Legacy of Accountability Should Be A Blueprint for America's Moral Reckoning](./why-germanys-legacy-of-accountability-should-be-a-blueprint-for-americas-moral-reckoning.md)  

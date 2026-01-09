@@ -72,4 +72,4 @@ youtube: https://youtu.be/TaYZOkiJ6OM
 ### 🎨 Creatively Related  
   
 * [🪖🎨 The War of Art: Break Through the Blocks and Win Your Inner Creative Battles](../books/the-war-of-art.md) by Steven Pressfield identifies resistance as the primary enemy of creativity and prescribes discipline as the cure.  
-* 🎍 Zen in the Art of Archery by Eugen Herrigel discusses the intersection of spiritual practice and technical mastery.Please select some text to emojify.
+* [🧘🏹 Zen in the Art of Archery](../books/zen-in-the-art-of-archery.md) by Eugen Herrigel discusses the intersection of spiritual practice and technical mastery.Please select some text to emojify.

@@ -66,5 +66,5 @@ youtube: https://youtu.be/VP5LRL2coE0
   
 ### 🎨 Creatively Related  
   
-* 🌊 Zen in the Art of Archery by Eugen Herrigel describes the spiritual path of losing the self through repetitive physical practice.  
+* [🧘🏹 Zen in the Art of Archery](../books/zen-in-the-art-of-archery.md) by Eugen Herrigel describes the spiritual path of losing the self through repetitive physical practice.  
 * [🌊🧘🏼‍♀️🧠📈 Flow: The Psychology of Optimal Experience](../books/flow-the-psychology-of-optimal-experience.md) by Mihaly Csikszentmihalyi details the mental state of being fully immersed and energized by an activity.

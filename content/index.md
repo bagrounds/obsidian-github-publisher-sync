@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-01-08T09:44:33-08:00
+updated: 2026-01-08T17:12:20-08:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -26,7 +26,8 @@ updated: 2026-01-08T09:44:33-08:00
 - [2025-12-30 | 🕷️ Charlotte's 🍼 Little 🧸 Nursery 😈 Devils 📚🌌](./reflections/2025-12-30.md)  
   
   
-## [📚 Books](./books/index.md) (868)  
+## [📚 Books](./books/index.md) (869)  
+- [☯️🥋 Tao of Jeet Kune Do](./books/tao-of-jeet-kune-do.md)  
 - [😈🔥👹 The Devils](./books/the-devils.md)  
 - [⚡🧠🏃 Spark: The Revolutionary New Science of Exercise and the Brain](./books/spark-the-revolutionary-new-science-of-exercise-and-the-brain.md)  
 - [🧠❤️🔄 The Neuroscience of Change: A Compassion-Based Program for Personal Transformation](./books/the-neuroscience-of-change-a-compassion-based-program-for-personal-transformation.md)  
@@ -36,12 +37,11 @@ updated: 2026-01-08T09:44:33-08:00
 - [🫂🏙️🗣️ Everything for Everyone: An Oral History of the New York Commune, 2052–2072](./books/everything-for-everyone-an-oral-history-of-the-new-york-commune-2052-2072.md)  
 - [₿📈📉 Number Go Up: Inside Crypto's Wild Rise and Staggering Fall](./books/number-go-up-inside-cryptos-wild-rise-and-staggering-fall.md)  
 - [⚖️🏛️ Prosecuting the President: How Special Prosecutors Hold Presidents Accountable and Protect the Rule of Law](./books/prosecuting-the-president-how-special-prosecutors-hold-presidents-accountable-and-protect-the-rule-of-law.md)  
-- [🦠💀🔎💉 Influenza: The Hundred-Year Hunt to Cure the Deadliest Disease in History](./books/influenza-the-hundred-year-hunt-to-cure-the-deadliest-disease-in-history.md)  
   
   
 ## [📺 Videos](./videos/index.md) (569)  
-- [🥋🧠💪 Bruce Lee’s 11 Rules for an Unbreakable Mind](./videos/bruce-lees-11-rules-for-an-unbreakable-mind.md)  
 - [🌊🥋🤸💨 Be Like Water - The Philosophy of Bruce Lee](./videos/be-like-water-the-philosophy-of-bruce-lee.md)  
+- [🥋🧠💪 Bruce Lee’s 11 Rules for an Unbreakable Mind](./videos/bruce-lees-11-rules-for-an-unbreakable-mind.md)  
 - [💡🔬🌱 Mindvalley Book of the Week: Anne-Laure Le Cunff's Tiny Experiments](./videos/mindvalley-book-of-the-week-anne-laure-le-cunffs-tiny-experiments.md)  
 - [🚨🚔💥⚰️🇺🇸 Gov. Walz holds briefing after ICE agent shoots and kills woman in Minneapolis](./videos/watch-live-gov-walz-holds-briefing-after-ice-agent-shoots-and-kills-woman-in-minneapolis.md)  
 - [🥼💉❓🇺🇸 What the overhaul of U.S. vaccine guidance means for public health](./videos/what-the-overhaul-of-u-s-vaccine-guidance-means-for-public-health.md)  

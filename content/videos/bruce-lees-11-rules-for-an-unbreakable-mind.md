@@ -61,7 +61,7 @@ youtube: https://youtu.be/TaYZOkiJ6OM
   
 ### ↔️ Similar  
   
-* 🥋 Tao of Jeet Kune Do by Bruce Lee explains the philosophical and technical foundations of his personal martial arts expression.  
+* [☯️🥋 Tao of Jeet Kune Do](../books/tao-of-jeet-kune-do.md) by Bruce Lee explains the philosophical and technical foundations of his personal martial arts expression.  
 * ⚔️ The Book of Five Rings by Miyamoto Musashi provides timeless strategy on timing, discipline, and the mindset of a warrior.  
   
 ### 🆚 Contrasting  

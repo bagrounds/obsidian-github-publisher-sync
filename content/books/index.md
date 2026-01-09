@@ -5,10 +5,10 @@ aliases:
 share: true
 URL: https://bagrounds.org/books
 backlinks: false
-updated: 2026-01-08T09:44:33-08:00
+updated: 2026-01-08T17:12:20-08:00
 ---
 [Home](../index.md)  
-# 📚 Books (868)  
+# 📚 Books (869)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [💻0️⃣ Source Code: My Beginnings](./source-code-my-beginnings.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)  
@@ -569,6 +569,7 @@ updated: 2026-01-08T09:44:33-08:00
 - [😴🧠📈 Take a Nap! Change Your Life.: The Scientific Plan to Make You Smarter, Healthier, More Productive](./take-a-nap-change-your-life-the-scientific-plan-to-make-you-smarter-healthier-more-productive.md)  
 - [🧠⬆️💼🏠❤️ Taking Charge of Adult ADHD: Proven Strategies to Succeed at Work, at Home, and in Relationships](./taking-charge-of-adult-adhd.md)  
 - [🗣️👶 Talk to Me, Baby!: How You Can Support Young Children's Language Development](./talk-to-me-baby-how-you-can-support-young-childrens-language-development.md)  
+- [☯️🥋 Tao of Jeet Kune Do](./tao-of-jeet-kune-do.md)  
 - [🤖🧑‍🏫 Teaching with AI: A Practical Guide to a New Era of Human Learning](./teaching-with-ai-a-practical-guide-to-a-new-era-of-human-learning.md)  
 - [🤝🏛️ Team of Rivals: The Political Genius of Abraham Lincoln](./team-of-rivals-the-political-genius-of-abraham-lincoln.md)  
 - [🧑‍🤝‍🧑⚙️➡️ Team Topologies: Organizing Business and Technology Teams for Fast Flow](./team-topologies-organizing-business-and-technology-teams-for-fast-flow.md)  

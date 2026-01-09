@@ -78,7 +78,7 @@ affiliate link: https://amzn.to/4qiWtNe
 * 👊 Wing Chun Kung Fu: Traditional Chinese Kung Fu for Self-Defense and Health by J. Y. Lee  
   
 ### 🔗 Related  
-* 🌊 Be Water, My Friend: The Teachings of Bruce Lee by Shannon Lee  
+* [🌊🥋 Be Water, My Friend: The Teachings of Bruce Lee](./be-water-my-friend-the-teachings-of-bruce-lee.md) by Shannon Lee  
 * 💪 Living with a SEAL: 31 Days Training with the Toughest Man on the Planet by Jesse Itzler  
 * 🎾 The Inner Game of Tennis by W. Timothy Gallwey  
 * [🌱🧘🏼‍♀️🏆 Mindset: The New Psychology of Success](./mindset.md) by Carol S. Dweck  

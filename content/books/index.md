@@ -5,10 +5,10 @@ aliases:
 share: true
 URL: https://bagrounds.org/books
 backlinks: false
-updated: 2026-01-08T17:12:20-08:00
+updated: 2026-01-08T17:26:03-08:00
 ---
 [Home](../index.md)  
-# 📚 Books (869)  
+# 📚 Books (870)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [💻0️⃣ Source Code: My Beginnings](./source-code-my-beginnings.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)  
@@ -876,4 +876,5 @@ updated: 2026-01-08T17:12:20-08:00
 - [✍️🦴 Writing Down the Bones](./writing-down-the-bones.md)  
 - [🫵🚫🦥🧩💩 You Aren't A Lazy Piece of Sh!t: From Procrastination to Productivity](./you-arent-a-lazy-piece-of-sht-from-procrastination-to-productivity.md)  
 - [🏍️🧘❓ Zen and the Art of Motorcycle Maintenance: An Inquiry into Values](./zen-and-the-art-of-motorcycle-maintenance-an-inquiry-into-values.md)  
+- [🧘🏹 Zen in the Art of Archery](./zen-in-the-art-of-archery.md)  
   

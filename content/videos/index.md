@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-01-09T23:27:27-08:00
+updated: 2026-01-10T14:41:02-08:00
 ---
 [Home](../index.md)  
-# 📺 Videos (570)  
+# 📺 Videos (572)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
 - [❓💪🔬 12 Questions About Creatine with Stephen Cornish, PhD](./12-questions-about-creatine-w-stephen-cornish-phd.md)  
@@ -247,6 +247,7 @@ updated: 2026-01-09T23:27:27-08:00
 - [🤖🗓️🧑‍🏫 I Tried AI as a Life Coach for 365 Days - Here’s What I Learned](./i-tried-ai-as-a-life-coach-for-365-days-heres-what-i-learned.md)  
 - [📈🚀🏁🏆  It’s actually pretty easy to get ahead of 99% of people](./it-is-actually-pretty-easy-to-get-ahead-of-99-percent-of%20people.md)  
 - [📢👁️🗣️💡 It's Our Job to Make Sure People Know the Truth](./its-our-job-to-make-sure-people-know-the-truth.md)  
+- [😠✊🇩🇪🇮🇹🇷🇺🇺🇸 It’s Time to Talk About Fascism | Explainer](./its-time-to-talk-about-fascism-explainer.md)  
 - [📺🔎⚖️🗣️🏛️ Jack Smith's full House Judiciary deposition on investigating and indicting Trump](./jack-smiths-full-house-judiciary-deposition-on-investigating-and-indicting-trump.md)  
 - [🙊🤐👑 Jimmy Kimmel's Suspension Was Always About Censorship (Just Ask Trump) | The Daily Show](./jimmy-kimmels-suspension-was-always-about-censorship-just-ask-trump-the-daily-show.md)  
 - [📺🎤👮‍♂️📰 Jimmy Kimmel & the FCC: Last Week Tonight with John Oliver (HBO)](./jimmy-kimmel-the-fcc-last-week-tonight-with-john-oliver-hbo.md)  
@@ -344,6 +345,7 @@ updated: 2026-01-09T23:27:27-08:00
 - [👥➡️⚖️ Realignment of People Against the ‘Epstein Class’ | Explainer](./realignment-of-people-against-the-epstein-class-explainer.md)  
 - [Rep. Aime Wichtendahl testifies as Iowa removes civil rights for trans people (Feb 27, 2025)](./rep-aime-wichtendahl-testifies-as-iowa-removes-civil-rights-for-trans-people-feb-27-2025.md)  
 - [👩‍⚖️📜➡️ Rep. Alexandria Ocasio-Cortez (D-NY) on Resolution Honoring Charlie Kirk](./rep-alexandria-ocasio-cortez-d-ny-on-resolution-honoring-charlie-kirk.md)  
+- [😠🗣️🚫🤬 Republican Thom Tillis' SCATHING message to Stephen Miller](./im-sick-of-stupid-republican-thom-tillis-scathing-message-to-stephen-miller.md)  
 - [👴🏻🪖🇺🇸🤥👹❓ Retired military leaders analyze Trump's deployment of Marines and National Guard in LAW](./retired-military-leaders-analyze-trumps-deployment-of-marines-and-national-guard-in-la.md)  
 - [Robert Putnam reflects on how America became so polarized and what can unify the nation](./robert-putnam-reflects-on-how-america-became-so-polarized-and-what-can-unify-the-nation.md)  
 - [🏃🤸🧠🏋️‍♂️ Run, Jump, Learn! How Exercise can Transform our Schools: John J. Ratey, MD at TEDxManhattanBeach](./run-jump-learn-how-exercise-can-transform-our-schools-john-j-ratey-md-at-tedxmanhattanbeach.md)  

@@ -51,7 +51,7 @@ These books explore technology, automation, and the nature of the modern home.
   
 These books offer a counterbalance by focusing on manual labor, simplicity, or the human connection to physical tasks.  
   
-* 🛠️ **Shop Class as Soulcraft An Inquiry into the Value of Work:** A philosophical meditation that champions the tangible satisfaction and intellectual rewards of skilled manual labor, contrasting sharply with the automated ease of a robot vacuum.  
+* **[🛠️💖 Shop Class as Soulcraft: An Inquiry Into the Value of Work](../books/shop-class-as-soulcraft-an-inquiry-into-the-value-of-work.md):** A philosophical meditation that champions the tangible satisfaction and intellectual rewards of skilled manual labor, contrasting sharply with the automated ease of a robot vacuum.  
 * 🏞️ **Walden:** Henry David Thoreau's classic text emphasizing simple living and self-sufficiency in natural surroundings, a direct philosophical opposite to the pursuit of high-tech, convenience-based home management.  
 * 👩‍🌾 **The Dirty Life A Memoir of Farming Food and Love:** A non-fiction account of farming and the physical, strenuous work required to produce food, highlighting the human effort inherent in tasks that the Roomba is designed to eliminate.  
   

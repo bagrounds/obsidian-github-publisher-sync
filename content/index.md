@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-01-10T14:04:43-08:00
+updated: 2026-01-10T14:41:02-08:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -43,7 +43,8 @@ updated: 2026-01-10T14:04:43-08:00
 - [🧘🏹 Zen in the Art of Archery](./books/zen-in-the-art-of-archery.md)  
   
   
-## [📺 Videos](./videos/index.md) (571)  
+## [📺 Videos](./videos/index.md) (572)  
+- [😠✊🇩🇪🇮🇹🇷🇺🇺🇸 It’s Time to Talk About Fascism | Explainer](./videos/its-time-to-talk-about-fascism-explainer.md)  
 - [😠🗣️🚫🤬 Republican Thom Tillis' SCATHING message to Stephen Miller](./videos/im-sick-of-stupid-republican-thom-tillis-scathing-message-to-stephen-miller.md)  
 - [🏃🤸💃📚 The Kinesthetic Classroom: Teaching and Learning through Movement | Michael Kuczala | TEDxAshburn](./videos/the-kinesthetic-classroom-teaching-and-learning-through-movement-michael-kuczala-tedxashburn.md)  
 - [🇺🇸📉💔 The Collapse of American Virtue — with Fareed Zakaria | Prof G Conversations](./videos/the-collapse-of-american-virtue-with-fareed-zakaria-prof-g-conversations.md)  
@@ -53,7 +54,6 @@ updated: 2026-01-10T14:04:43-08:00
 - [🏃🤸🧠🏋️‍♂️ Run, Jump, Learn! How Exercise can Transform our Schools: John J. Ratey, MD at TEDxManhattanBeach](./videos/run-jump-learn-how-exercise-can-transform-our-schools-john-j-ratey-md-at-tedxmanhattanbeach.md)  
 - [🥋🧠💪 Bruce Lee’s 11 Rules for an Unbreakable Mind](./videos/bruce-lees-11-rules-for-an-unbreakable-mind.md)  
 - [🌊🥋🤸💨 Be Like Water - The Philosophy of Bruce Lee](./videos/be-like-water-the-philosophy-of-bruce-lee.md)  
-- [💡🔬🌱 Mindvalley Book of the Week: Anne-Laure Le Cunff's Tiny Experiments](./videos/mindvalley-book-of-the-week-anne-laure-le-cunffs-tiny-experiments.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (87)  

@@ -13,6 +13,9 @@ CTA: 🧠 Unleash cognitive power.
 # ⚡🧠🏃 Spark: The Revolutionary New Science of Exercise and the Brain  
 [🛒 Spark: The Revolutionary New Science of Exercise and the Brain. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3ZfcoAJ)  
   
+## 📝🐒 Human Notes  
+> Just imagine if they could put exercise in a bottle.  
+  
 ## 🤖 AI Summary  
   
 - 🧬 Exercise improves brain function by regulating the flow of BDNF, a protein that facilitates the growth and survival of new neurons.  

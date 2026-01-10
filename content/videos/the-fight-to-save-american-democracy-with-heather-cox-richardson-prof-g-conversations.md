@@ -71,6 +71,6 @@ youtube: https://youtu.be/qVV1rZUw-jI
   
 ### 🎨 Creatively Related  
   
-- 🛠️ Shop Class as Soulcraft: An Inquiry into the Value of Work by Matthew B. Crawford. This book explores the dignity and intellectual satisfaction of skilled manual labor, tangentially relating to the speaker's discussion about the loss of the cultural value of hard work and the "joy in the work".  
+- [🛠️💖 Shop Class as Soulcraft: An Inquiry Into the Value of Work](../books/shop-class-as-soulcraft-an-inquiry-into-the-value-of-work.md) by Matthew B. Crawford. This book explores the dignity and intellectual satisfaction of skilled manual labor, tangentially relating to the speaker's discussion about the loss of the cultural value of hard work and the "joy in the work".  
 - [🎳🏘️📉📈 Bowling Alone: The Collapse and Revival of American Community](../books/bowling-alone.md) by Robert D. Putnam. This book provides a sociological study of the decline of civic engagement and community life in America, which relates to the video’s theme of national unity and the need for public service to "reclaim" community.  
 - 🚀 The Founders' Fortunes: How Money Shaped the Birth of America by Willis P. Whichard. This book explores the financial and commercial interests of the Founding Fathers, offering a historical context to the modern discussion about the link between wealth, power, and political principles.

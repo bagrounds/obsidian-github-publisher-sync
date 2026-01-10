@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-01-09T00:49:39-08:00
+updated: 2026-01-09T23:27:27-08:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -13,8 +13,9 @@ updated: 2026-01-09T00:49:39-08:00
 ❔ What do 🫵 _you_ 🤔 think?  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (420)  
-- [2026-01-08](./reflections/2026-01-08.md)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (421)  
+- [2026-01-09 | 🤔 How Does 💧 Water 🔨 Work? 📚📺](./reflections/2026-01-09.md)  
+- [2026-01-08 | ☯️ Tao of 💪 Unbreakable 🌊 Water 🏹 Archery 🧮 Calculator 📺📚🧰](./reflections/2026-01-08.md)  
 - [2026-01-07 | 🇺🇸 Collateral 🪦 Damage 📺📰📚](./reflections/2026-01-07.md)  
 - [2026-01-06 | 🗳️🏴‍☠️🪢💩🏛️ Insurrection Day 📚📺](./reflections/2026-01-06.md)  
 - [2026-01-05 | 🚼 Immature 🇻🇪Venezuela 👀 Focus 📺📰](./reflections/2026-01-05.md)  
@@ -23,37 +24,36 @@ updated: 2026-01-09T00:49:39-08:00
 - [2026-01-02 | 😇 Good 🦭 Seals 🛠️ Build 🏗️ Resilient 🗽 Freedom 📺📚](./reflections/2026-01-02.md)  
 - [2026-01-01 | 🥱 Tired 🍼 Immature 🛠️ Tools 📺📚](./reflections/2026-01-01.md)  
 - [2025-12-31 | 👶 Immature 🕵️ Agents 🙅 Defying 🏛️ Politics 📚📺](./reflections/2025-12-31.md)  
-- [2025-12-30 | 🕷️ Charlotte's 🍼 Little 🧸 Nursery 😈 Devils 📚🌌](./reflections/2025-12-30.md)  
   
   
 ## [🧰 Tools](./tools/index.md) (1)  
 - [🧮 Calculator](./tools/calculator.md)  
   
   
-## [📚 Books](./books/index.md) (870)  
+## [📚 Books](./books/index.md) (872)  
+- [🧠🏃 The Psychological Benefits of Exercise and Physical Activity](./books/the-psychological-benefits-of-exercise-and-physical-activity.md)  
+- [🐌🎯 Slow Productivity: The Lost Art of Accomplishment Without Burnout](./books/slow-productivity-the-lost-art-of-accomplishment-without-burnout.md)  
+- [🛠️💖 Shop Class as Soulcraft: An Inquiry Into the Value of Work](./books/shop-class-as-soulcraft-an-inquiry-into-the-value-of-work.md)  
+- [☯️🥋 Tao of Jeet Kune Do](./books/tao-of-jeet-kune-do.md)  
+- [🌊🥋 Be Water, My Friend: The Teachings of Bruce Lee](./books/be-water-my-friend-the-teachings-of-bruce-lee.md)  
 - [🏍️🧘❓ Zen and the Art of Motorcycle Maintenance: An Inquiry into Values](./books/zen-and-the-art-of-motorcycle-maintenance-an-inquiry-into-values.md)  
 - [🧠🏆 Inner Excellence: Train Your Mind for Extraordinary Performance and the Best Possible Life](./books/inner-excellence-train-your-mind-for-extraordinary-performance-and-the-best-possible-life.md)  
-- [☯️🥋 Tao of Jeet Kune Do](./books/tao-of-jeet-kune-do.md)  
 - [🧘🏹 Zen in the Art of Archery](./books/zen-in-the-art-of-archery.md)  
 - [😈🔥👹 The Devils](./books/the-devils.md)  
 - [⚡🧠🏃 Spark: The Revolutionary New Science of Exercise and the Brain](./books/spark-the-revolutionary-new-science-of-exercise-and-the-brain.md)  
-- [🧠❤️🔄 The Neuroscience of Change: A Compassion-Based Program for Personal Transformation](./books/the-neuroscience-of-change-a-compassion-based-program-for-personal-transformation.md)  
-- [🧪🎯🦋 Tiny Experiments: How to Live Freely in a Goal-Obsessed World](./books/tiny-experiments-how-to-live-freely-in-a-goal-obsessed-world.md)  
-- [💉👶⚖️ Vaccines and Your Child: Separating Fact from Fiction](./books/vaccines-and-your-child-separating-fact-from-fiction.md)  
-- [⛈️🏛️ Storm at the Capitol: An Oral History of January 6th](./books/storm-at-the-capitol-an-oral-history-of-january-6th.md)  
   
   
-## [📺 Videos](./videos/index.md) (569)  
+## [📺 Videos](./videos/index.md) (570)  
+- [🏃🤸💃📚 The Kinesthetic Classroom: Teaching and Learning through Movement | Michael Kuczala | TEDxAshburn](./videos/the-kinesthetic-classroom-teaching-and-learning-through-movement-michael-kuczala-tedxashburn.md)  
+- [🇺🇸📉💔 The Collapse of American Virtue — with Fareed Zakaria | Prof G Conversations](./videos/the-collapse-of-american-virtue-with-fareed-zakaria-prof-g-conversations.md)  
+- [🇺🇸🤔❓ What Happened to American Conservatism? — with David Brooks | Prof G Conversations](./videos/what-happened-to-american-conservatism-with-david-brooks-prof-g-conversations.md)  
+- [🇺🇸⚔️🏛️ The Fight to Save American Democracy — with Heather Cox Richardson | Prof G Conversations](./videos/the-fight-to-save-american-democracy-with-heather-cox-richardson-prof-g-conversations.md)  
+- [👧🧠💪🇯🇵 The Japanese Rule That Teaches Kids Self-Discipline (Not Blind Obedience)](./videos/the-japanese-rule-that-teaches-kids-self-discipline-not-blind-obedience.md)  
+- [🏃🤸🧠🏋️‍♂️ Run, Jump, Learn! How Exercise can Transform our Schools: John J. Ratey, MD at TEDxManhattanBeach](./videos/run-jump-learn-how-exercise-can-transform-our-schools-john-j-ratey-md-at-tedxmanhattanbeach.md)  
 - [🥋🧠💪 Bruce Lee’s 11 Rules for an Unbreakable Mind](./videos/bruce-lees-11-rules-for-an-unbreakable-mind.md)  
 - [🌊🥋🤸💨 Be Like Water - The Philosophy of Bruce Lee](./videos/be-like-water-the-philosophy-of-bruce-lee.md)  
 - [💡🔬🌱 Mindvalley Book of the Week: Anne-Laure Le Cunff's Tiny Experiments](./videos/mindvalley-book-of-the-week-anne-laure-le-cunffs-tiny-experiments.md)  
 - [🚨🚔💥⚰️🇺🇸 Gov. Walz holds briefing after ICE agent shoots and kills woman in Minneapolis](./videos/watch-live-gov-walz-holds-briefing-after-ice-agent-shoots-and-kills-woman-in-minneapolis.md)  
-- [🥼💉❓🇺🇸 What the overhaul of U.S. vaccine guidance means for public health](./videos/what-the-overhaul-of-u-s-vaccine-guidance-means-for-public-health.md)  
-- [🤯🔋🚫💪 Emily Nagoski and Amelia Nagoski: The cure for burnout (hint: it isn't self-care) | TED](./videos/emily-nagoski-and-amelia-nagoski-the-cure-for-burnout-hint-it-isnt-self-care-ted.md)  
-- [🏃🤸🧠🏋️‍♂️ Run, Jump, Learn! How Exercise can Transform our Schools: John J. Ratey, MD at TEDxManhattanBeach](./videos/run-jump-learn-how-exercise-can-transform-our-schools-john-j-ratey-md-at-tedxmanhattanbeach.md)  
-- [💡🔄🤖 Build a Prompt Learning Loop - SallyAnn DeLucia & Fuad Ali, Arize](./videos/build-a-prompt-learning-loop-sallyann-delucia-fuad-ali-arize.md)  
-- [🏛️🗣️🗓️ Politics Chat, January 6, 2026](./videos/politics-chat-january-6-2026.md)  
-- [🇻🇪⚔️💥 Tamara Keith and Amy Walter on the political fallout from military action in Venezuela](./videos/tamara-keith-and-amy-walter-on-the-political-fallout-from-military-action-in-venezuela.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (87)  
@@ -95,8 +95,8 @@ updated: 2026-01-09T00:49:39-08:00
   
   
 ## [🛍️ Products](./products/index.md) (5)  
-- [🦈🔦🐈✨🧹 Shark HV322 Rocket Pet Plus Corded Stick Vacuum with LED Headlights, XL Dust Cup, Lightweight, Perfect for Pet Hair Pickup, Converts to a Hand Vacuum, with (2) Pet Attachments, Bordeaux, Silver](./products/shark-hv322-rocket-pet-plus-corded-stick-vacuum-with-led-headlights-xl-dust-cup-lightweight.md)  
 - [🤖🧹🧼🗺️ iRobot Roomba Plus 505 Combo Robot Vacuum & Mop with AutoWash Dock - Extending Spinning Mop Pads, Self-Empties, Pad Wash & Heated Drying, Self-cleaning, Recognizes & Avoids Obstacles, LiDAR Navigation](./products/irobot-roomba-plus-505-combo-robot-vacuum-mop-with-autowash-dock-extending-spinning-mop-pads-self-empties-pad-wash-heated-drying-self-cleaning-recognizes-avoids-obstacles-lidar-navigation.md)  
+- [🦈🔦🐈✨🧹 Shark HV322 Rocket Pet Plus Corded Stick Vacuum with LED Headlights, XL Dust Cup, Lightweight, Perfect for Pet Hair Pickup, Converts to a Hand Vacuum, with (2) Pet Attachments, Bordeaux, Silver](./products/shark-hv322-rocket-pet-plus-corded-stick-vacuum-with-led-headlights-xl-dust-cup-lightweight.md)  
 - [👶🌧️💨 Graco Baby Jogging Stroller Universal Rain Cover, Ventilated Weather Shield, Waterproof, Windproof, Versatile Size to Fit Most Jogging Strollers, Vinyl, Clear, Plastic](./products/graco-baby-jogging-stroller-universal-rain-cover-ventilated-weather-shield-waterproof-windproof-versatile-size-to-fit-most-jogging-strollers-vinyl-clear-plastic.md)  
   
   

@@ -5,10 +5,10 @@ aliases:
 share: true
 URL: https://bagrounds.org/books
 backlinks: false
-updated: 2026-01-09T00:49:39-08:00
+updated: 2026-01-09T23:27:27-08:00
 ---
 [Home](../index.md)  
-# 📚 Books (870)  
+# 📚 Books (872)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [💻0️⃣ Source Code: My Beginnings](./source-code-my-beginnings.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)  
@@ -86,6 +86,7 @@ updated: 2026-01-09T00:49:39-08:00
 - [👤🧠 Being You: A New Science of Consciousness](./being-you-a-new-science-of-consciousness.md)  
 - [🧑‍🤝‍🧑 Belonging: The Science of Creating Connection and Bridging Divides](./belonging-the-science-of-creating-connection-and-bridging-divides.md)  
 - [📉➡️👍 Better Than Before: What I Learned About Making and Breaking Habits - to Sleep More, Quit Sugar, Procrastinate Less, and Generally Build a Happier Life](./better-than-before.md)  
+- [🌊🥋 Be Water, My Friend: The Teachings of Bruce Lee](./be-water-my-friend-the-teachings-of-bruce-lee.md)  
 - [🧠💰🌍 Beyond Growth: The Economics of Sustainable Development](./beyond-growth-the-economics-of-sustainable-development.md)  
 - [🧑‍🤝‍🧑⚙️🧬 Beyond the Science: How People, Process, and Systems Transform the Business of Life Sciences](./beyond-the-science-how-people-process-and-systems-transform-the-business-of-life-sciences.md)  
 - [🧑‍💻🤖 Beyond Vibe Coding: From Coder to AI-Era Developer](./beyond-vibe-coding-from-coder-to-ai-era-developer.md)  
@@ -524,6 +525,7 @@ updated: 2026-01-09T00:49:39-08:00
 - [📖🏛️📉 Seeing Like a State: How Certain Schemes to Improve the Human Condition Have Failed](./seeing-like-a-state-how-certain-schemes-to-improve-the-human-condition-have-failed.md)  
 - [👁️🔇 Seeing Voices: A Journey into the World of the Deaf](./seeing-voices-a-journey-into-the-world-of-the-deaf.md)  
 - [🇺🇸📻 Shadow of the New Deal: The Victory of Public Broadcasting](./shadow-of-the-new-deal-the-victory-of-public-broadcasting.md)  
+- [🛠️💖 Shop Class as Soulcraft: An Inquiry Into the Value of Work](./shop-class-as-soulcraft-an-inquiry-into-the-value-of-work.md)  
 - [⚡🏛️ Short Circuiting Policy: Interest Groups and the Battle Over Clean Energy and Climate Policy in the American States](./short-circuiting-policy-interest-groups-and-the-battle-over-clean-energy-and-climate-policy-in-the-american-states.md)  
 - [📝🎨🎶 Show Your Work!: 10 Ways to Share Your Creativity and Get Discovered](./show-your-work.md)  
 - [🛡️🌪️🇷🇺🔥 Siege: Trump Under Fire](./siege-trump-under-fire.md)  

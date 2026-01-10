@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-01-09T00:49:39-08:00
+updated: 2026-01-09T23:27:27-08:00
 ---
 [Home](../index.md)  
-# 📺 Videos (569)  
+# 📺 Videos (570)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
 - [❓💪🔬 12 Questions About Creatine with Stephen Cornish, PhD](./12-questions-about-creatine-w-stephen-cornish-phd.md)  
@@ -414,6 +414,7 @@ updated: 2026-01-09T00:49:39-08:00
 - [The history of diversity, equity and inclusion efforts in America](./the-history-of-diversity-equity-and-inclusion-efforts-in-america.md)  
 - [♾️🐛💻 The Infinite Software Crisis – Jake Nations, Netflix](./the-infinite-software-crisis-jake-nations-netflix.md)  
 - [👧🧠💪🇯🇵 The Japanese Rule That Teaches Kids Self-Discipline (Not Blind Obedience)](./the-japanese-rule-that-teaches-kids-self-discipline-not-blind-obedience.md)  
+- [🏃🤸💃📚 The Kinesthetic Classroom: Teaching and Learning through Movement | Michael Kuczala | TEDxAshburn](./the-kinesthetic-classroom-teaching-and-learning-through-movement-michael-kuczala-tedxashburn.md)  
 - [🧘⏳⏱️ The Korean Method to Calm Tantrums in 60 Seconds](./the-korean-method-to-calm-tantrums-in-60-seconds.md)  
 - [🇮🇱⚔️🇮🇷👹☢️⛪🪓🏝️ The Latest on Israel and Iran: Trump, Nukes, and a MAGA Split](./the-latest-on-israel-and-iran-trump-nukes-and-a-maga-split.md)  
 - [🧢🇺🇸📢➡️ The MAGA Ideology That Brought Us to This Moment](./the-maga-ideology-that-brought-us-to-this-moment.md)  

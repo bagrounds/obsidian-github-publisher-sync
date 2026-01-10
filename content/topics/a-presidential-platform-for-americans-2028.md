@@ -19,6 +19,18 @@ URL: https://bagrounds.org/topics/a-presidential-platform-for-americans-2028
 - 💰 Focus on real wealth. Money fails in the absence of real resources.  
 - 🚀 Solve problems immediately by any means necessary while building the infrastructure for robust, durable solutions that cannot be revoked by a future administration.  
   
+## 🌍 Foreign Policy  
+- ⚖️ Abide by international laws, treaties, and the rules of war.  
+- 🕊️ Always prefer diplomacy to force.  
+- 🪖 Military force is justified  
+    - 🛡️ in self defense, always  
+    - ⚔️ in offense, only in agreement with broader international communities, e.g. UN, NATO  
+- 🏠 Good neighbors are good for the homeland  
+    - 📉 Want to reduce the influx of refugees fleeing war, terror, despotism, and organized crime?  
+        - 🆘 How can we help our neighbors solve these problems?  
+        - 🗳️ Public approval is required for costly foreign aid.  
+- 🩹 With foreign aid, prefer to help others help themselves. Avoid shifting the burden to the intervener.  
+  
 ## ✅ Priorities  
 1. 🚫 End poverty  
 2. 🇺🇸 Strengthen democracy  

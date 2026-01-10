@@ -85,6 +85,6 @@ CTA: 🇺🇸 Rebuild integrity.
   
 ### 🎨 Creatively Related  
   
-- 🛠️ Shop Class as Soulcraft: An Inquiry into the Value of Work by Matthew B. Crawford. This relates tangentially by focusing on the value of tangible, non-managerial work and the loss of purpose in modern society, speaking directly to the struggles and need for purpose felt by young non-college educated men.  
+- [🛠️💖 Shop Class as Soulcraft: An Inquiry Into the Value of Work](../books/shop-class-as-soulcraft-an-inquiry-into-the-value-of-work.md) by Matthew B. Crawford. This relates tangentially by focusing on the value of tangible, non-managerial work and the loss of purpose in modern society, speaking directly to the struggles and need for purpose felt by young non-college educated men.  
   
 - [📺💀 Amusing Ourselves to Death: Public Discourse in the Age of Show Business](../books/amusing-ourselves-to-death-public-discourse-in-the-age-of-show-business.md) by Neil Postman. This is relevant for its critique of media and culture, suggesting that the idolatry of money and the rise of personality politics is a long-term result of a shift from a print culture to a visual culture that favors superficiality.

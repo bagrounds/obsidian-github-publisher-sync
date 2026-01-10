@@ -69,4 +69,4 @@ youtube: https://youtu.be/hBSVZdTQmDs
 ### 🎨 Creatively Related  
   
 * 🎈 Lifelong Kindergarten by Mitchel Resnick advocates for play and creativity as the foundation of learning.  
-* 🛠️ Shop Class as Soulcraft by Matthew B. Crawford explores the cognitive benefits of manual labor and physical craft.
+* [🛠️💖 Shop Class as Soulcraft: An Inquiry Into the Value of Work](../books/shop-class-as-soulcraft-an-inquiry-into-the-value-of-work.md) by Matthew B. Crawford explores the cognitive benefits of manual labor and physical craft.

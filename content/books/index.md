@@ -5,10 +5,10 @@ aliases:
 share: true
 URL: https://bagrounds.org/books
 backlinks: false
-updated: 2026-01-09T23:27:27-08:00
+updated: 2026-01-10T14:41:02-08:00
 ---
 [Home](../index.md)  
-# 📚 Books (872)  
+# 📚 Books (873)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [💻0️⃣ Source Code: My Beginnings](./source-code-my-beginnings.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)  
@@ -547,6 +547,7 @@ updated: 2026-01-09T23:27:27-08:00
 - [😴👶  Solve Your Child's Sleep Problems](./solve-your-childs-sleep-problems.md)  
 - [⚠️👤 Something Happened](./something-happened.md)  
 - [⛲🔌🤔⚙️ Sources of Power: How People Make Decisions](./sources-of-power-how-people-make-decisions.md)  
+- [🧊💰⛵🏛️ So You Want to Own Greenland?: Lessons from the Vikings to Trump](./so-you-want-to-own-greenland-lessons-from-the-vikings-to-trump.md)  
 - [⚡🧠🏃 Spark: The Revolutionary New Science of Exercise and the Brain](./spark-the-revolutionary-new-science-of-exercise-and-the-brain.md)  
 - [🧪✨🧠 Spellbound: Modern Science, Ancient Magic, and the Hidden Potential of the Unconscious Mind](./spellbound-modern-science-ancient-magic-and-the-hidden-potential-of-the-unconscious-mind.md)  
 - [🌱🟩⬆️ Square Foot Gardening, 4th Edition: The World’s Most Popular Growing Method to Harvest MORE Food from Less Space](./square-foot-gardening-4th-edition-the-worlds-most-popular-growing-method-to-harvest-more-food-from-less-space.md)  

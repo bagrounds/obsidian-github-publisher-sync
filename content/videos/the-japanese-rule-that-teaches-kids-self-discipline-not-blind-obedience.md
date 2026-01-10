@@ -70,5 +70,5 @@ youtube: https://youtu.be/qAB_YP_IKo0
   
 ### 🎨 Creatively Related  
   
-* 🛠️ Shop Class as Soulcraft An Inquiry into the Value of Work by Matthew B. Crawford. 📚 This philosophical inquiry champions the dignity and cognitive benefits of skilled manual labor and competence, connecting to the video's pillar that hands-on responsibility builds internal motivation and self-worth.  
+* [🛠️💖 Shop Class as Soulcraft: An Inquiry Into the Value of Work](../books/shop-class-as-soulcraft-an-inquiry-into-the-value-of-work.md) by Matthew B. Crawford. 📚 This philosophical inquiry champions the dignity and cognitive benefits of skilled manual labor and competence, connecting to the video's pillar that hands-on responsibility builds internal motivation and self-worth.  
 * [👉🤏 Nudge: Improving Decisions about Health, Wealth, and Happiness](../books/nudge.md) by Richard H. Thaler and Cass R. Sunstein. 📚 This book discusses behavioral economics and how subtle cues (like the routine chart) and environmental design can nudge people toward better decisions without restricting their freedom of choice, conceptually linking to how routines act as self-initiated cues.

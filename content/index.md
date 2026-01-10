@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-01-09T23:27:27-08:00
+updated: 2026-01-10T14:04:43-08:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -13,7 +13,8 @@ updated: 2026-01-09T23:27:27-08:00
 ❔ What do 🫵 _you_ 🤔 think?  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (421)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (422)  
+- [2026-01-10](./reflections/2026-01-10.md)  
 - [2026-01-09 | 🤔 How Does 💧 Water 🔨 Work? 📚📺](./reflections/2026-01-09.md)  
 - [2026-01-08 | ☯️ Tao of 💪 Unbreakable 🌊 Water 🏹 Archery 🧮 Calculator 📺📚🧰](./reflections/2026-01-08.md)  
 - [2026-01-07 | 🇺🇸 Collateral 🪦 Damage 📺📰📚](./reflections/2026-01-07.md)  
@@ -23,14 +24,15 @@ updated: 2026-01-09T23:27:27-08:00
 - [2026-01-03 | 💉 Addicted to 🩸 Blood for 🛢️ Oil 📚📺📰⌨️](./reflections/2026-01-03.md)  
 - [2026-01-02 | 😇 Good 🦭 Seals 🛠️ Build 🏗️ Resilient 🗽 Freedom 📺📚](./reflections/2026-01-02.md)  
 - [2026-01-01 | 🥱 Tired 🍼 Immature 🛠️ Tools 📺📚](./reflections/2026-01-01.md)  
-- [2025-12-31 | 👶 Immature 🕵️ Agents 🙅 Defying 🏛️ Politics 📚📺](./reflections/2025-12-31.md)  
   
   
 ## [🧰 Tools](./tools/index.md) (1)  
 - [🧮 Calculator](./tools/calculator.md)  
   
   
-## [📚 Books](./books/index.md) (872)  
+## [📚 Books](./books/index.md) (873)  
+- [🧊💰⛵🏛️ So You Want to Own Greenland?: Lessons from the Vikings to Trump](./books/so-you-want-to-own-greenland-lessons-from-the-vikings-to-trump.md)  
+- [⚡🧠🏃 Spark: The Revolutionary New Science of Exercise and the Brain](./books/spark-the-revolutionary-new-science-of-exercise-and-the-brain.md)  
 - [🧠🏃 The Psychological Benefits of Exercise and Physical Activity](./books/the-psychological-benefits-of-exercise-and-physical-activity.md)  
 - [🐌🎯 Slow Productivity: The Lost Art of Accomplishment Without Burnout](./books/slow-productivity-the-lost-art-of-accomplishment-without-burnout.md)  
 - [🛠️💖 Shop Class as Soulcraft: An Inquiry Into the Value of Work](./books/shop-class-as-soulcraft-an-inquiry-into-the-value-of-work.md)  
@@ -39,11 +41,10 @@ updated: 2026-01-09T23:27:27-08:00
 - [🏍️🧘❓ Zen and the Art of Motorcycle Maintenance: An Inquiry into Values](./books/zen-and-the-art-of-motorcycle-maintenance-an-inquiry-into-values.md)  
 - [🧠🏆 Inner Excellence: Train Your Mind for Extraordinary Performance and the Best Possible Life](./books/inner-excellence-train-your-mind-for-extraordinary-performance-and-the-best-possible-life.md)  
 - [🧘🏹 Zen in the Art of Archery](./books/zen-in-the-art-of-archery.md)  
-- [😈🔥👹 The Devils](./books/the-devils.md)  
-- [⚡🧠🏃 Spark: The Revolutionary New Science of Exercise and the Brain](./books/spark-the-revolutionary-new-science-of-exercise-and-the-brain.md)  
   
   
-## [📺 Videos](./videos/index.md) (570)  
+## [📺 Videos](./videos/index.md) (571)  
+- [😠🗣️🚫🤬 Republican Thom Tillis' SCATHING message to Stephen Miller](./videos/im-sick-of-stupid-republican-thom-tillis-scathing-message-to-stephen-miller.md)  
 - [🏃🤸💃📚 The Kinesthetic Classroom: Teaching and Learning through Movement | Michael Kuczala | TEDxAshburn](./videos/the-kinesthetic-classroom-teaching-and-learning-through-movement-michael-kuczala-tedxashburn.md)  
 - [🇺🇸📉💔 The Collapse of American Virtue — with Fareed Zakaria | Prof G Conversations](./videos/the-collapse-of-american-virtue-with-fareed-zakaria-prof-g-conversations.md)  
 - [🇺🇸🤔❓ What Happened to American Conservatism? — with David Brooks | Prof G Conversations](./videos/what-happened-to-american-conservatism-with-david-brooks-prof-g-conversations.md)  
@@ -53,15 +54,14 @@ updated: 2026-01-09T23:27:27-08:00
 - [🥋🧠💪 Bruce Lee’s 11 Rules for an Unbreakable Mind](./videos/bruce-lees-11-rules-for-an-unbreakable-mind.md)  
 - [🌊🥋🤸💨 Be Like Water - The Philosophy of Bruce Lee](./videos/be-like-water-the-philosophy-of-bruce-lee.md)  
 - [💡🔬🌱 Mindvalley Book of the Week: Anne-Laure Le Cunff's Tiny Experiments](./videos/mindvalley-book-of-the-week-anne-laure-le-cunffs-tiny-experiments.md)  
-- [🚨🚔💥⚰️🇺🇸 Gov. Walz holds briefing after ICE agent shoots and kills woman in Minneapolis](./videos/watch-live-gov-walz-holds-briefing-after-ice-agent-shoots-and-kills-woman-in-minneapolis.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (87)  
+- [🇺🇸🗣️💡🗓️ A Presidential Platform for Americans 2028](./topics/a-presidential-platform-for-americans-2028.md)  
 - [🐑🎀 Mary Had a Little Lamb](./topics/mary-had-a-little-lamb.md)  
 - [🧸🎶🧸 Nursery Rhymes](./topics/nursery-rhymes.md)  
 - [⭐✨🌟💫 The Star](./topics/the-star.md)  
 - [🍎🥛🔬✨ Universal Nutrition System Design](./topics/universal-nutrition-system-design.md)  
-- [🇺🇸🗣️💡🗓️ A Presidential Platform for Americans 2028](./topics/a-presidential-platform-for-americans-2028.md)  
   
   
 ## [📄  Articles](./articles/index.md) (75)  

@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-01-10T14:41:02-08:00
+updated: 2026-01-10T22:27:04-08:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -43,7 +43,9 @@ updated: 2026-01-10T14:41:02-08:00
 - [🧘🏹 Zen in the Art of Archery](./books/zen-in-the-art-of-archery.md)  
   
   
-## [📺 Videos](./videos/index.md) (572)  
+## [📺 Videos](./videos/index.md) (574)  
+- [✨😮🗣️ Something Interesting Happened Today | Explainer](./videos/something-interesting-happened-today-explainer.md)  
+- [🚨🔫🪦 Brooks and Capehart on the response to the Minnesota ICE shooting](./videos/brooks-and-capehart-on-the-response-to-the-minnesota-ice-shooting.md)  
 - [😠✊🇩🇪🇮🇹🇷🇺🇺🇸 It’s Time to Talk About Fascism | Explainer](./videos/its-time-to-talk-about-fascism-explainer.md)  
 - [😠🗣️🚫🤬 Republican Thom Tillis' SCATHING message to Stephen Miller](./videos/im-sick-of-stupid-republican-thom-tillis-scathing-message-to-stephen-miller.md)  
 - [🏃🤸💃📚 The Kinesthetic Classroom: Teaching and Learning through Movement | Michael Kuczala | TEDxAshburn](./videos/the-kinesthetic-classroom-teaching-and-learning-through-movement-michael-kuczala-tedxashburn.md)  
@@ -52,8 +54,6 @@ updated: 2026-01-10T14:41:02-08:00
 - [🇺🇸⚔️🏛️ The Fight to Save American Democracy — with Heather Cox Richardson | Prof G Conversations](./videos/the-fight-to-save-american-democracy-with-heather-cox-richardson-prof-g-conversations.md)  
 - [👧🧠💪🇯🇵 The Japanese Rule That Teaches Kids Self-Discipline (Not Blind Obedience)](./videos/the-japanese-rule-that-teaches-kids-self-discipline-not-blind-obedience.md)  
 - [🏃🤸🧠🏋️‍♂️ Run, Jump, Learn! How Exercise can Transform our Schools: John J. Ratey, MD at TEDxManhattanBeach](./videos/run-jump-learn-how-exercise-can-transform-our-schools-john-j-ratey-md-at-tedxmanhattanbeach.md)  
-- [🥋🧠💪 Bruce Lee’s 11 Rules for an Unbreakable Mind](./videos/bruce-lees-11-rules-for-an-unbreakable-mind.md)  
-- [🌊🥋🤸💨 Be Like Water - The Philosophy of Bruce Lee](./videos/be-like-water-the-philosophy-of-bruce-lee.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (87)  

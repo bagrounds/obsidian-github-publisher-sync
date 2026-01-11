@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-01-10T14:41:02-08:00
+updated: 2026-01-10T22:27:04-08:00
 ---
 [Home](../index.md)  
-# 📺 Videos (572)  
+# 📺 Videos (574)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
 - [❓💪🔬 12 Questions About Creatine with Stephen Cornish, PhD](./12-questions-about-creatine-w-stephen-cornish-phd.md)  
@@ -96,6 +96,7 @@ updated: 2026-01-10T14:41:02-08:00
 - [⛈️🇺🇸🗣️💬 Brooks and Capehart on the federal response to the Texas flooding disaster](./brooks-and-capehart-on-the-federal-response-to-the-texas-flooding-disaster.md)  
 - [🎙️🇺🇸🛥️💥 Brooks and Capehart on the political fallout over Trump's boat strikes](./brooks-and-capehart-on-the-political-fallout-over-trumps-boat-strikes.md)  
 - [👨‍💼🛑💰🗣️ Brooks and Capehart on the political reaction to Trump's tariffs](./brooks-and-capehart-on-the-political-reaction-to-trumps-tariffs.md)  
+- [🚨🔫🪦 Brooks and Capehart on the response to the Minnesota ICE shooting](./brooks-and-capehart-on-the-response-to-the-minnesota-ice-shooting.md)  
 - [📣📊🧠 Brooks and Capehart on Trump's approval ratings and mental acuity](./brooks-and-capehart-on-trumps-approval-ratings-and-mental-acuity.md)  
 - [👑🚧📉 Brooks and Capehart on Trump’s tariffs and reaction from the markets](./brooks-and-capehart-on-trumps-tariffs-and-reaction-from-the-markets.md)  
 - [🥋🧠💪 Bruce Lee’s 11 Rules for an Unbreakable Mind](./bruce-lees-11-rules-for-an-unbreakable-mind.md)  
@@ -365,6 +366,7 @@ updated: 2026-01-10T14:41:02-08:00
 - [🏃🦵🤕 SHIN SPLINTS for Runners: Challenges, Causes, and Rehab](./shin-splints-for-runners-challenges-causes-and-rehab.md)  
 - [🧑‍💻📈⏩ SIGGRAPH Thesis Fast Forward 2025](./siggraph-thesis-fast-forward-2025.md)  
 - [💰📉🌍 Silvio Gesell's Forgotten Money: The Wörgl Experiment & Demurrage Currency](./silvio-gesells-forgotten-money-the-worgl-experiment-demurrage-currency.md)  
+- [✨😮🗣️ Something Interesting Happened Today | Explainer](./something-interesting-happened-today-explainer.md)  
 - [Spaceship You](./spaceship-you.md)  
 - [👶😴👩‍⚕️ Spoil Your Baby Ep 20 - How Babies Sleep with Dr. Helen Ball](./spoil-your-baby-ep-20-how-babies-sleep-with-dr-helen-ball.md)  
 - [🤖🗣️🤝 Stanford Seminar - Beyond «Bots and Trolls» - Understanding Disinformation as Collaborative Work](./stanford-seminar-beyond-bots-and-trolls-understanding-disinformation-as-collaborative-work.md)  

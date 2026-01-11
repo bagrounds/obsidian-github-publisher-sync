@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-01-10T23:32:20-08:00
+updated: 2026-01-11T08:38:56-08:00
 ---
 [Home](../index.md)  
-# 📺 Videos (574)  
+# 📺 Videos (575)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
 - [❓💪🔬 12 Questions About Creatine with Stephen Cornish, PhD](./12-questions-about-creatine-w-stephen-cornish-phd.md)  
@@ -227,6 +227,7 @@ updated: 2026-01-10T23:32:20-08:00
 - [📉🐘🇺🇸😬 Huge Economic Problems Coming for Republicans and the U.S. | Explainer](./huge-economic-problems-coming-for-republicans-and-the-us-explainer.md)  
 - [I Built an AI That Does My Work For Me](./i-built-an-ai-that-does-my-work-for-me.md)  
 - [⚙️💨🧘 I built a system that makes work feel easy](./i-built-a-system-that-makes-work-feel-easy.md)  
+- [🚨🛡️ICE and the National Guard Are Acting with Impunity](./ice-and-the-national-guard-are-acting-with-impunity.md)  
 - [👮🚨🇺🇸 ICE escalates aggressive raids in Chicago as Trump moves to deploy National Guard](./ice-escalates-aggressive-raids-in-chicago-as-trump-moves-to-deploy-national-guard.md)  
 - [🤖🧠👁️ Ilya Sutskever, OpenAI](./ilya-sutskever-openai.md)  
 - [🎭🤥👓 Image vs Reality—What the Administration Wants You to Think | Explainer](./image-vs-reality-what-the-administration-wants-you-to-think-explainer.md)  

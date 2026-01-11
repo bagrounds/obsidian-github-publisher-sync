@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-01-10T23:32:20-08:00
+updated: 2026-01-11T08:38:56-08:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -13,7 +13,8 @@ updated: 2026-01-10T23:32:20-08:00
 ❔ What do 🫵 _you_ 🤔 think?  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (422)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (423)  
+- [2026-01-11](./reflections/2026-01-11.md)  
 - [2026-01-10 | 🧼📰 Public Record 📚🪞🌌📺📰](./reflections/2026-01-10.md)  
 - [2026-01-09 | 🤔 How Does 💧 Water 🔨 Work? 📚📺](./reflections/2026-01-09.md)  
 - [2026-01-08 | ☯️ Tao of 💪 Unbreakable 🌊 Water 🏹 Archery 🧮 Calculator 📺📚🧰](./reflections/2026-01-08.md)  
@@ -23,7 +24,6 @@ updated: 2026-01-10T23:32:20-08:00
 - [2026-01-04 | 🪖 War 🏴‍☠️ Criminal in 👑 Chief 📺📚📰](./reflections/2026-01-04.md)  
 - [2026-01-03 | 💉 Addicted to 🩸 Blood for 🛢️ Oil 📚📺📰⌨️](./reflections/2026-01-03.md)  
 - [2026-01-02 | 😇 Good 🦭 Seals 🛠️ Build 🏗️ Resilient 🗽 Freedom 📺📚](./reflections/2026-01-02.md)  
-- [2026-01-01 | 🥱 Tired 🍼 Immature 🛠️ Tools 📺📚](./reflections/2026-01-01.md)  
   
   
 ## [🧰 Tools](./tools/index.md) (1)  
@@ -43,7 +43,8 @@ updated: 2026-01-10T23:32:20-08:00
 - [🧘🏹 Zen in the Art of Archery](./books/zen-in-the-art-of-archery.md)  
   
   
-## [📺 Videos](./videos/index.md) (574)  
+## [📺 Videos](./videos/index.md) (575)  
+- [🚨🛡️ICE and the National Guard Are Acting with Impunity](./videos/ice-and-the-national-guard-are-acting-with-impunity.md)  
 - [✨😮🗣️ Something Interesting Happened Today | Explainer](./videos/something-interesting-happened-today-explainer.md)  
 - [🚨🔫🪦 Brooks and Capehart on the response to the Minnesota ICE shooting](./videos/brooks-and-capehart-on-the-response-to-the-minnesota-ice-shooting.md)  
 - [😠✊🇩🇪🇮🇹🇷🇺🇺🇸 It’s Time to Talk About Fascism | Explainer](./videos/its-time-to-talk-about-fascism-explainer.md)  
@@ -53,7 +54,6 @@ updated: 2026-01-10T23:32:20-08:00
 - [🇺🇸🤔❓ What Happened to American Conservatism? — with David Brooks | Prof G Conversations](./videos/what-happened-to-american-conservatism-with-david-brooks-prof-g-conversations.md)  
 - [🇺🇸⚔️🏛️ The Fight to Save American Democracy — with Heather Cox Richardson | Prof G Conversations](./videos/the-fight-to-save-american-democracy-with-heather-cox-richardson-prof-g-conversations.md)  
 - [👧🧠💪🇯🇵 The Japanese Rule That Teaches Kids Self-Discipline (Not Blind Obedience)](./videos/the-japanese-rule-that-teaches-kids-self-discipline-not-blind-obedience.md)  
-- [🏃🤸🧠🏋️‍♂️ Run, Jump, Learn! How Exercise can Transform our Schools: John J. Ratey, MD at TEDxManhattanBeach](./videos/run-jump-learn-how-exercise-can-transform-our-schools-john-j-ratey-md-at-tedxmanhattanbeach.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (87)  

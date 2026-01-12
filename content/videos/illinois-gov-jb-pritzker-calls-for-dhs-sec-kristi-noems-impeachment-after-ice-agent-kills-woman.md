@@ -55,4 +55,7 @@ youtube: https://youtu.be/RLh5SXLBXIg
 ### 🎨 Creatively Related  
   
 * 📖 The Devil's Highway by Luis Alberto Urrea tells the harrowing story of a group of immigrants attempting to cross the border, highlighting the dangers and desperation involved.  
-* 📖 American Dirt by Jeanine Cummins is a novel that portrays the journey of a mother and son fleeing violence in Mexico and seeking safety in the United States.
+* 📖 American Dirt by Jeanine Cummins is a novel that portrays the journey of a mother and son fleeing violence in Mexico and seeking safety in the United States.  
+  
+## 🐦 Tweet  
+<blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">🏛️🇺🇸⚖️🗣️👮‍♀️💔 Illinois Gov. JB Pritzker Calls For DHS Sec. Kristi Noem&#39;s Impeachment After ICE Agent Kills Woman<br><br>Impeach Kristi Noem.<a href="https://twitter.com/KristiNoem?ref_src=twsrc%5Etfw">@KristiNoem</a> <a href="https://twitter.com/GovPritzker?ref_src=twsrc%5Etfw">@GovPritzker</a><a href="https://t.co/j8jJWywxkJ">https://t.co/j8jJWywxkJ</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/2010862651937890376?ref_src=twsrc%5Etfw">January 12, 2026</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

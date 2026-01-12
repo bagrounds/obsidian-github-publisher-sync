@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-01-11T17:52:07-08:00
+updated: 2026-01-11T18:48:54-08:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -43,7 +43,8 @@ updated: 2026-01-11T17:52:07-08:00
 - [🧠🏆 Inner Excellence: Train Your Mind for Extraordinary Performance and the Best Possible Life](./books/inner-excellence-train-your-mind-for-extraordinary-performance-and-the-best-possible-life.md)  
   
   
-## [📺 Videos](./videos/index.md) (576)  
+## [📺 Videos](./videos/index.md) (577)  
+- [🕵️‍♂️🤫🚫🗣️🥷 How Governments Spy On Protestors - And How To Avoid It | Incognito Mode | WIRED](./videos/how-governments-spy-on-protestors-and-how-to-avoid-it-incognito-mode-wired.md)  
 - [➡️⚖️💪 Our work continues, without fear or favor](./videos/our-work-continues-without-fear-or-favor.md)  
 - [📺📰👋🔚😢😠 Highlights from PBS News Weekend as show goes off the air](./videos/highlights-from-pbs-news-weekend-as-show-goes-off-the-air.md)  
 - [🚨🛡️ICE and the National Guard Are Acting with Impunity](./videos/ice-and-the-national-guard-are-acting-with-impunity.md)  
@@ -53,7 +54,6 @@ updated: 2026-01-11T17:52:07-08:00
 - [😠🗣️🚫🤬 Republican Thom Tillis' SCATHING message to Stephen Miller](./videos/im-sick-of-stupid-republican-thom-tillis-scathing-message-to-stephen-miller.md)  
 - [🏃🤸💃📚 The Kinesthetic Classroom: Teaching and Learning through Movement | Michael Kuczala | TEDxAshburn](./videos/the-kinesthetic-classroom-teaching-and-learning-through-movement-michael-kuczala-tedxashburn.md)  
 - [🇺🇸📉💔 The Collapse of American Virtue — with Fareed Zakaria | Prof G Conversations](./videos/the-collapse-of-american-virtue-with-fareed-zakaria-prof-g-conversations.md)  
-- [🇺🇸🤔❓ What Happened to American Conservatism? — with David Brooks | Prof G Conversations](./videos/what-happened-to-american-conservatism-with-david-brooks-prof-g-conversations.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (87)  

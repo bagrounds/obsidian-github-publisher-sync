@@ -5,10 +5,10 @@ aliases:
 share: true
 URL: https://bagrounds.org/books
 backlinks: false
-updated: 2026-01-11T08:38:56-08:00
+updated: 2026-01-11T17:52:07-08:00
 ---
 [Home](../index.md)  
-# 📚 Books (873)  
+# 📚 Books (874)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [💻0️⃣ Source Code: My Beginnings](./source-code-my-beginnings.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)  
@@ -485,6 +485,7 @@ updated: 2026-01-11T08:38:56-08:00
 - [🧑‍💼💥 Prophet of Innovation: Joseph Schumpeter and Creative Destruction](./prophet-of-innovation-joseph-schumpeter-and-creative-destruction.md)  
 - [⚖️🏛️ Prosecuting the President: How Special Prosecutors Hold Presidents Accountable and Protect the Rule of Law](./prosecuting-the-president-how-special-prosecutors-hold-presidents-accountable-and-protect-the-rule-of-law.md)  
 - [🧐🕹️🔁 Psycho-Cybernetics: A New Way to Get More Living Out of Life](./psycho-cybernetics-a-new-way-to-get-more-living-out-of-life.md)  
+- [📢💡 Public Broadcasting and the Public Interest](./public-broadcasting-and-the-public-interest.md)  
 - [ 🎯🎭🔗🧭🏆 Purposeful Performance: The Secret Mix of Connecting, Leading, and Succeeding](./purposeful-performance.md)  
 - [⚙️🔗 Quality Software Management: Systems Thinking](./quality-software-management-systems-thinking.md)  
 - [⚛️👶 Quantum Physics for Babies](./quantum-physics-for-babies.md)  

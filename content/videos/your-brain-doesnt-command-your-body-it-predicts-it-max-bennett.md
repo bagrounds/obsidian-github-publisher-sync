@@ -1,8 +1,8 @@
 ---
 share: true
 aliases:
-  - 🧠➡️🤖⚡️ Your Brain Doesn't Command Your Body. It Predicts It. [Max Bennett]
-title: 🧠➡️🤖⚡️ Your Brain Doesn't Command Your Body. It Predicts It. [Max Bennett]
+  - 🧠➡️🤖⚡️ Your Brain Doesn't Command Your Body. It Predicts It. | Max Bennett
+title: 🧠➡️🤖⚡️ Your Brain Doesn't Command Your Body. It Predicts It. | Max Bennett
 URL: https://bagrounds.org/videos/your-brain-doesnt-command-your-body-it-predicts-it-max-bennett
 Author:
 Platform:
@@ -11,7 +11,7 @@ tags:
 youtube: https://youtu.be/RvYSsi6rd4g
 ---
 [Home](../index.md) > [Videos](./index.md)  
-# 🧠➡️🤖⚡️ Your Brain Doesn't Command Your Body. It Predicts It. [Max Bennett]  
+# 🧠➡️🤖⚡️ Your Brain Doesn't Command Your Body. It Predicts It. | Max Bennett  
 ![Your Brain Doesn't Command Your Body. It Predicts It.](https://youtu.be/RvYSsi6rd4g)  
   
 ## 🤖 AI Summary  
@@ -50,7 +50,7 @@ youtube: https://youtu.be/RvYSsi6rd4g
 ### ↔️ Similar  
   
 * 📘 A Brief History of Intelligence by Max Bennett explores the evolutionary milestones that led to human-level cognition.  
-* 📙 [On Intelligence](On%20Intelligence.md) by Jeff Hawkins describes the memory-prediction framework as the core mechanism of the neocortex.  
+* 📙 On Intelligence by Jeff Hawkins describes the memory-prediction framework as the core mechanism of the neocortex.  
   
 ### 🆚 Contrasting  
   

@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-01-11T19:01:22-08:00
+updated: 2026-01-12T09:57:47-08:00
 ---
 [Home](../index.md)  
-# 📺 Videos (578)  
+# 📺 Videos (579)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
 - [❓💪🔬 12 Questions About Creatine with Stephen Cornish, PhD](./12-questions-about-creatine-w-stephen-cornish-phd.md)  
@@ -231,6 +231,7 @@ updated: 2026-01-11T19:01:22-08:00
 - [⚙️💨🧘 I built a system that makes work feel easy](./i-built-a-system-that-makes-work-feel-easy.md)  
 - [🚨🛡️ICE and the National Guard Are Acting with Impunity](./ice-and-the-national-guard-are-acting-with-impunity.md)  
 - [👮🚨🇺🇸 ICE escalates aggressive raids in Chicago as Trump moves to deploy National Guard](./ice-escalates-aggressive-raids-in-chicago-as-trump-moves-to-deploy-national-guard.md)  
+- [🏛️🇺🇸⚖️🗣️👮‍♀️💔 Illinois Gov. JB Pritzker Calls For DHS Sec. Kristi Noem's Impeachment After ICE Agent Kills Woman](./illinois-gov-jb-pritzker-calls-for-dhs-sec-kristi-noems-impeachment-after-ice-agent-kills-woman.md)  
 - [🤖🧠👁️ Ilya Sutskever, OpenAI](./ilya-sutskever-openai.md)  
 - [🎭🤥👓 Image vs Reality—What the Administration Wants You to Think | Explainer](./image-vs-reality-what-the-administration-wants-you-to-think-explainer.md)  
 - [🛂🛑🇺🇸🎤 Immigration Enforcement: Last Week Tonight with John Oliver (HBO)](./immigration-enforcement-last-week-tonight-with-john-oliver-hbo.md)  
@@ -581,7 +582,7 @@ updated: 2026-01-11T19:01:22-08:00
 - [🤯😲😳 You Aren't Going to Believe This](./you-arent-going-to-believe-this.md)  
 - [You Are Two](./you-are-two.md)  
 - [You Don’t Understand How Language Works](./you-dont-understand-how-language-works.md)  
-- [🧠➡️🤖⚡️ Your Brain Doesn't Command Your Body. It Predicts It. [Max Bennett](./your-brain-doesnt-command-your-body-it-predicts-it-max-bennett.md)]  
+- [🧠➡️🤖⚡️ Your Brain Doesn't Command Your Body. It Predicts It. | Max Bennett](./your-brain-doesnt-command-your-body-it-predicts-it-max-bennett.md)  
 - [🧠🚫📚 You’re Not Stupid: How to Learn Anything With Books](./youre-not-stupid-how-to-learn-anything-with-books.md)  
 - [🧠💡🎯🚫 You're Not Stupid: How To Never Lose Focus Again](./youre-not-stupid-how-to-never-lose-focus-again.md)  
 - [🤕➡️👁️➕ Your reality narrows after trauma — here’s how to expand it | Bessel van der Kolk](./your-reality-narrows-after-trauma-heres-how-to-expand-it-bessel-van-der-kolk.md)  

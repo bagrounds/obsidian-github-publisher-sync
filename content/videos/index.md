@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-01-11T17:52:07-08:00
+updated: 2026-01-11T19:01:22-08:00
 ---
 [Home](../index.md)  
-# 📺 Videos (576)  
+# 📺 Videos (578)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
 - [❓💪🔬 12 Questions About Creatine with Stephen Cornish, PhD](./12-questions-about-creatine-w-stephen-cornish-phd.md)  
@@ -178,6 +178,7 @@ updated: 2026-01-11T17:52:07-08:00
 - [How “Digital Twins” Could Help Us Predict the Future | Karen Willcox | TED](./how-digital-twins-could-help-us-predict-the-future-karen-willcox-ted.md)  
 - [👴🏃‍♀️📈 How Does Aging Impact Runners? Our Tips for Long-Term Success (from Working with Masters Runners)](./how-does-aging-impact-runners-our-tips-for-long-term-success-from-working-with-masters-runners.md)  
 - [💡👨‍🔬🏆🚀🌟 How Engineers Break Into The Top 1% | Michael Novati](./how-engineers-break-into-the-top-1-percent-michael-novati.md)  
+- [🕵️‍♂️🤫🚫🗣️🥷 How Governments Spy On Protestors - And How To Avoid It | Incognito Mode | WIRED](./how-governments-spy-on-protestors-and-how-to-avoid-it-incognito-mode-wired.md)  
 - [🇺🇸🤯😵‍💫❓ How half the US lost part of their minds](./how-half-the-us-lost-part-of-their-minds.md)  
 - [🕵️🇺🇸💻👁️ How ICE Spies On American Citizens | Incognito Mode | WIRED](./how-ice-spies-on-american-citizens-incognito-mode-wired.md)  
 - [🙋💻❓ How I use LLMs](./how-i-use-llms.md)  
@@ -580,6 +581,7 @@ updated: 2026-01-11T17:52:07-08:00
 - [🤯😲😳 You Aren't Going to Believe This](./you-arent-going-to-believe-this.md)  
 - [You Are Two](./you-are-two.md)  
 - [You Don’t Understand How Language Works](./you-dont-understand-how-language-works.md)  
+- [🧠➡️🤖⚡️ Your Brain Doesn't Command Your Body. It Predicts It. [Max Bennett](./your-brain-doesnt-command-your-body-it-predicts-it-max-bennett.md)]  
 - [🧠🚫📚 You’re Not Stupid: How to Learn Anything With Books](./youre-not-stupid-how-to-learn-anything-with-books.md)  
 - [🧠💡🎯🚫 You're Not Stupid: How To Never Lose Focus Again](./youre-not-stupid-how-to-never-lose-focus-again.md)  
 - [🤕➡️👁️➕ Your reality narrows after trauma — here’s how to expand it | Bessel van der Kolk](./your-reality-narrows-after-trauma-heres-how-to-expand-it-bessel-van-der-kolk.md)  

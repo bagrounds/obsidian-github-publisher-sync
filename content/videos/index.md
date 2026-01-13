@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-01-12T17:24:08-08:00
+updated: 2026-01-12T18:56:19-08:00
 ---
 [Home](../index.md)  
-# 📺 Videos (583)  
+# 📺 Videos (585)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
 - [❓💪🔬 12 Questions About Creatine with Stephen Cornish, PhD](./12-questions-about-creatine-w-stephen-cornish-phd.md)  
@@ -239,6 +239,7 @@ updated: 2026-01-12T17:24:08-08:00
 - [⚡️🔋💪⬆️ Improve Energy & Longevity by Optimizing Mitochondria | Dr. Martin Picard](./improve-energy-longevity-by-optimizing-mitochondria-dr-martin-picard.md)  
 - [🧠💊🎯 Improve Focus with Behavioral Tools & Medication for ADHD | Dr. John Kruse](./improve-focus-with-behavioral-tools-medication-for-adhd-dr-john-kruse.md)  
 - [Infant Cosleeping with James McKenna, PhD](./infant-cosleeping-with-james-mckenna-phd.md)  
+- [🕵️‍♀️🚫🚗💥🔫 Initially-Secret Report: Customs&Border Patrol Agents Got in Way of Vehicles, Then Used Deadly Force](./initially-secret-report-customs-border-patrol-agents-got-in-way-of-vehicles-then-used-deadly-force.md)  
 - [👨‍⚖️🛑🇺🇸🏛️ Injustice explores Trump's decade-long effort to politicize DOJ](./new-book-injustice-explores-trumps-decade-long-effort-to-politicize-doj.md)  
 - [👑⚔️🏛️ In new book Michael McFaul explores the global fight between autocracy and democracy](./in-new-book-michael-mcfaul-explores-the-global-fight-between-autocracy-and-democracy.md)  
 - [🚨🚔🇺🇸👨‍👩‍👧‍👦 Inside an Immigration Raid That Swept Up U.S. Citizens | Visual Investigations](./inside-an-immigration-raid-that-swept-up-us-citizens-visual-investigations.md)  
@@ -396,6 +397,7 @@ updated: 2026-01-12T17:24:08-08:00
 - [💯🥇📚🗓️✨ The 10 Best Books of 2025](./the-10-best-books-of-2025.md)  
 - [⏱️🧠🐘 The 10 Minute memory method](./the-10-minute-memory-method.md)  
 - [The 10 tactics of fascism | Jason Stanley | Big Think](./the-10-tactics-of-fascism-jason-stanley-big-think.md)  
+- [📈🔋🧘‍♀️ The 1% Health Rule: What People Who Never Burn Out Do Differently](./the-1-percent-health-rule-what-people-who-never-burn-out-do-differently.md)  
 - [🥇💰📈🧑‍🏫 The 2025 Nobel Prize in Economics: Explained](./the-2025-nobel-prize-in-economics-explained.md)  
 - [🎓💰🚀 The 529 Plan Just Got A Big Upgrade](./the-529-plan-just-got-a-big-upgrade.md)  
 - [🤖🧠🚀🛠️📏💡🏢 The 7 Essential Skills for Enterprise Architects in an AI World](./the-7-essential-skills-for-enterprise-architects-in-an-ai-world.md)  

@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-01-12T17:01:55-08:00
+updated: 2026-01-12T17:14:07-08:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -43,7 +43,8 @@ updated: 2026-01-12T17:01:55-08:00
 - [🧠🏆 Inner Excellence: Train Your Mind for Extraordinary Performance and the Best Possible Life](./books/inner-excellence-train-your-mind-for-extraordinary-performance-and-the-best-possible-life.md)  
   
   
-## [📺 Videos](./videos/index.md) (581)  
+## [📺 Videos](./videos/index.md) (582)  
+- [🏛️📰🗣️🇺🇸 Jelani Cobb talks democracy, Trumpism, and the future of journalism | Code Switch](./videos/jelani-cobb-talks-democracy-trumpism-and-the-future-of-journalism-code-switch.md)  
 - [🏦 🇺🇸 📉 🗣️ Tamara Keith and Amy Walter on pushback to Trump's threats to Federal Reserve](./videos/tamara-keith-and-amy-walter-on-pushback-to-trumps-threats-to-federal-reserve.md)  
 - [👨‍⚖️🇺🇸⚖️ Sen. Kelly Sues Secretary Hegseth](./videos/sen-kelly-sues-secretary-hegseth.md)  
 - [🏛️🇺🇸⚖️🗣️👮‍♀️💔 Illinois Gov. JB Pritzker Calls For DHS Sec. Kristi Noem's Impeachment After ICE Agent Kills Woman](./videos/illinois-gov-jb-pritzker-calls-for-dhs-sec-kristi-noems-impeachment-after-ice-agent-kills-woman.md)  
@@ -53,7 +54,6 @@ updated: 2026-01-12T17:01:55-08:00
 - [📺📰👋🔚😢😠 Highlights from PBS News Weekend as show goes off the air](./videos/highlights-from-pbs-news-weekend-as-show-goes-off-the-air.md)  
 - [🚨🛡️ICE and the National Guard Are Acting with Impunity](./videos/ice-and-the-national-guard-are-acting-with-impunity.md)  
 - [✨😮🗣️ Something Interesting Happened Today | Explainer](./videos/something-interesting-happened-today-explainer.md)  
-- [🚨🔫🪦 Brooks and Capehart on the response to the Minnesota ICE shooting](./videos/brooks-and-capehart-on-the-response-to-the-minnesota-ice-shooting.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (87)  

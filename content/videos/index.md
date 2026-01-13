@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-01-12T17:01:55-08:00
+updated: 2026-01-12T17:14:07-08:00
 ---
 [Home](../index.md)  
-# 📺 Videos (581)  
+# 📺 Videos (583)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
 - [❓💪🔬 12 Questions About Creatine with Stephen Cornish, PhD](./12-questions-about-creatine-w-stephen-cornish-phd.md)  
@@ -254,6 +254,7 @@ updated: 2026-01-12T17:01:55-08:00
 - [📢👁️🗣️💡 It's Our Job to Make Sure People Know the Truth](./its-our-job-to-make-sure-people-know-the-truth.md)  
 - [😠✊🇩🇪🇮🇹🇷🇺🇺🇸 It’s Time to Talk About Fascism | Explainer](./its-time-to-talk-about-fascism-explainer.md)  
 - [📺🔎⚖️🗣️🏛️ Jack Smith's full House Judiciary deposition on investigating and indicting Trump](./jack-smiths-full-house-judiciary-deposition-on-investigating-and-indicting-trump.md)  
+- [🏛️📰🗣️🇺🇸 Jelani Cobb talks democracy, Trumpism, and the future of journalism | Code Switch](./jelani-cobb-talks-democracy-trumpism-and-the-future-of-journalism-code-switch.md)  
 - [🙊🤐👑 Jimmy Kimmel's Suspension Was Always About Censorship (Just Ask Trump) | The Daily Show](./jimmy-kimmels-suspension-was-always-about-censorship-just-ask-trump-the-daily-show.md)  
 - [📺🎤👮‍♂️📰 Jimmy Kimmel & the FCC: Last Week Tonight with John Oliver (HBO)](./jimmy-kimmel-the-fcc-last-week-tonight-with-john-oliver-hbo.md)  
 - [🪖💪💯 Jocko Willink «GOOD» (Official)](./jocko-willink-good-official.md)  
@@ -565,6 +566,7 @@ updated: 2026-01-12T17:01:55-08:00
 - [❓🏥🛂 Who Pays for Undocumented Migrants’ Healthcare? Reporter Explains | Amanpour and Company](./who-pays-for-undocumented-migrants-healthcare-reporter-explains-amanpour-and-company.md)  
 - [🚪🏃‍♂️❓ Why Are They Leaving Office? | Explainer](./why-are-they-leaving-office-explainer.md)  
 - [Why Bob Woodward worries about Trump's America](./why-bob-woodward-worries-about-trumps-america.md)  
+- [Why did we stop caring about disinformation? | Skylar Hughes | TEDxDuke](./Why%20did%20we%20stop%20caring%20about%20disinformation%20%20Skylar%20Hughes%20%20TEDxDuke.md)  
 - [Why Do Babies Spit Up So Much?](./why-do-babies-spit-up-so-much.md)  
 - [💰➡️🪖 Why It Matters That Trump Rerouted Money to Pay the Troops | Explainer](./why-it-matters-that-trump-rerouted-money-to-pay-the-troops-explainer.md)  
 - [💰📈🤕 Why millions of Americans are facing a spike in health care costs](./why-millions-of-americans-are-facing-a-spike-in-health-care-costs.md)  

@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-01-12T17:24:08-08:00
+updated: 2026-01-12T18:16:04-08:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -43,7 +43,8 @@ updated: 2026-01-12T17:24:08-08:00
 - [🧠🏆 Inner Excellence: Train Your Mind for Extraordinary Performance and the Best Possible Life](./books/inner-excellence-train-your-mind-for-extraordinary-performance-and-the-best-possible-life.md)  
   
   
-## [📺 Videos](./videos/index.md) (583)  
+## [📺 Videos](./videos/index.md) (584)  
+- [📈🔋🧘‍♀️ The 1% Health Rule: What People Who Never Burn Out Do Differently](./videos/the-1-percent-health-rule-what-people-who-never-burn-out-do-differently.md)  
 - [🤥🗣️📰 Why did we stop caring about disinformation? | Skylar Hughes | TEDxDuke](./videos/why-did-we-stop-caring-about-disinformation-skylar-hughes-tedxduke.md)  
 - [🏛️📰🗣️🇺🇸 Jelani Cobb talks democracy, Trumpism, and the future of journalism | Code Switch](./videos/jelani-cobb-talks-democracy-trumpism-and-the-future-of-journalism-code-switch.md)  
 - [🏦 🇺🇸 📉 🗣️ Tamara Keith and Amy Walter on pushback to Trump's threats to Federal Reserve](./videos/tamara-keith-and-amy-walter-on-pushback-to-trumps-threats-to-federal-reserve.md)  
@@ -53,7 +54,6 @@ updated: 2026-01-12T17:24:08-08:00
 - [🕵️‍♂️🤫🚫🗣️🥷 How Governments Spy On Protestors - And How To Avoid It | Incognito Mode | WIRED](./videos/how-governments-spy-on-protestors-and-how-to-avoid-it-incognito-mode-wired.md)  
 - [➡️⚖️💪 Our work continues, without fear or favor](./videos/our-work-continues-without-fear-or-favor.md)  
 - [📺📰👋🔚😢😠 Highlights from PBS News Weekend as show goes off the air](./videos/highlights-from-pbs-news-weekend-as-show-goes-off-the-air.md)  
-- [🚨🛡️ICE and the National Guard Are Acting with Impunity](./videos/ice-and-the-national-guard-are-acting-with-impunity.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (87)  

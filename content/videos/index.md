@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-01-12T18:56:19-08:00
+updated: 2026-01-12T19:13:11-08:00
 ---
 [Home](../index.md)  
-# 📺 Videos (585)  
+# 📺 Videos (586)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
 - [❓💪🔬 12 Questions About Creatine with Stephen Cornish, PhD](./12-questions-about-creatine-w-stephen-cornish-phd.md)  
@@ -31,6 +31,7 @@ updated: 2026-01-12T18:56:19-08:00
 - [😇😈📉🚫 7️⃣ Deadly Innocent Frauds-A BCB Economics Lecture](./seven-deadly-innocent-frauds-a-bcb-economics-lecture.md)  
 - [👶🧸8️⃣🗓️ Montessori Items For An 8 Month Old Baby](./8-montessori-items-for-an-8-month-old-baby-cc.md)  
 - [🇺🇸🗳️⚠️ A Big-Picture Look at the Threat to Voting Coming From the Trump Administration | Explainer](./a-big-picture-look-at-the-threat-to-voting-coming-from-the-trump-administration-explainer.md)  
+- [🚨🗣️🏛️💔 A Breaking Point: The Minneapolis Police Chief on ICE](./a-breaking-point-the-minneapolis-police-chief-on-ice.md)  
 - [🏛️📉⚠️🎭 A Brittle Administration Inventing a Crime Crisis | Explainer](./a-brittle-administration-inventing-a-crime-crisis-explainer.md)  
 - [🤖📰🧐 [ACL 2025] Large Language Model Agents for Content Analysis](./acl-2025-large-language-model-agents-for-content-analysis.md)  
 - [👨‍⚖️🇺🇸⚔️🛑 ACLU attorney on suing Trump administration for using wartime authority for deportations](./aclu-attorney-on-suing-trump-administration-for-using-wartime-authority-for-deportations.md)  

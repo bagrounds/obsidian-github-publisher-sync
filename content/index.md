@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-01-12T18:56:19-08:00
+updated: 2026-01-12T19:13:11-08:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -30,7 +30,8 @@ updated: 2026-01-12T18:56:19-08:00
 - [🧮 Calculator](./tools/calculator.md)  
   
   
-## [📚 Books](./books/index.md) (874)  
+## [📚 Books](./books/index.md) (875)  
+- [👮‍♀️🪢 Tangled Up in Blue: Policing the American City](./books/tangled-up-in-blue-policing-the-american-city.md)  
 - [📢💡 Public Broadcasting and the Public Interest](./books/public-broadcasting-and-the-public-interest.md)  
 - [🧊💰⛵🏛️ So You Want to Own Greenland?: Lessons from the Vikings to Trump](./books/so-you-want-to-own-greenland-lessons-from-the-vikings-to-trump.md)  
 - [⚡🧠🏃 Spark: The Revolutionary New Science of Exercise and the Brain](./books/spark-the-revolutionary-new-science-of-exercise-and-the-brain.md)  
@@ -40,10 +41,10 @@ updated: 2026-01-12T18:56:19-08:00
 - [☯️🥋 Tao of Jeet Kune Do](./books/tao-of-jeet-kune-do.md)  
 - [🌊🥋 Be Water, My Friend: The Teachings of Bruce Lee](./books/be-water-my-friend-the-teachings-of-bruce-lee.md)  
 - [🏍️🧘❓ Zen and the Art of Motorcycle Maintenance: An Inquiry into Values](./books/zen-and-the-art-of-motorcycle-maintenance-an-inquiry-into-values.md)  
-- [🧠🏆 Inner Excellence: Train Your Mind for Extraordinary Performance and the Best Possible Life](./books/inner-excellence-train-your-mind-for-extraordinary-performance-and-the-best-possible-life.md)  
   
   
-## [📺 Videos](./videos/index.md) (585)  
+## [📺 Videos](./videos/index.md) (586)  
+- [🚨🗣️🏛️💔 A Breaking Point: The Minneapolis Police Chief on ICE](./videos/a-breaking-point-the-minneapolis-police-chief-on-ice.md)  
 - [🕵️‍♀️🚫🚗💥🔫 Initially-Secret Report: Customs&Border Patrol Agents Got in Way of Vehicles, Then Used Deadly Force](./videos/initially-secret-report-customs-border-patrol-agents-got-in-way-of-vehicles-then-used-deadly-force.md)  
 - [📈🔋🧘‍♀️ The 1% Health Rule: What People Who Never Burn Out Do Differently](./videos/the-1-percent-health-rule-what-people-who-never-burn-out-do-differently.md)  
 - [🤥🗣️📰 Why did we stop caring about disinformation? | Skylar Hughes | TEDxDuke](./videos/why-did-we-stop-caring-about-disinformation-skylar-hughes-tedxduke.md)  
@@ -53,7 +54,6 @@ updated: 2026-01-12T18:56:19-08:00
 - [🏛️🇺🇸⚖️🗣️👮‍♀️💔 Illinois Gov. JB Pritzker Calls For DHS Sec. Kristi Noem's Impeachment After ICE Agent Kills Woman](./videos/illinois-gov-jb-pritzker-calls-for-dhs-sec-kristi-noems-impeachment-after-ice-agent-kills-woman.md)  
 - [🧠➡️🤖⚡️ Your Brain Doesn't Command Your Body. It Predicts It. | Max Bennett](./videos/your-brain-doesnt-command-your-body-it-predicts-it-max-bennett.md)  
 - [🕵️‍♂️🤫🚫🗣️🥷 How Governments Spy On Protestors - And How To Avoid It | Incognito Mode | WIRED](./videos/how-governments-spy-on-protestors-and-how-to-avoid-it-incognito-mode-wired.md)  
-- [➡️⚖️💪 Our work continues, without fear or favor](./videos/our-work-continues-without-fear-or-favor.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (87)  

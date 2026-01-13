@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-01-12T19:13:11-08:00
+updated: 2026-01-13T14:25:59-08:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -13,7 +13,8 @@ updated: 2026-01-12T19:13:11-08:00
 ❔ What do 🫵 _you_ 🤔 think?  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (424)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (425)  
+- [2026-01-13](./reflections/2026-01-13.md)  
 - [2026-01-12](./reflections/2026-01-12.md)  
 - [2026-01-11 | 🪦 RIP 📺 PBS 📰 News 🗓️ Weekend 📺📚📰](./reflections/2026-01-11.md)  
 - [2026-01-10 | 🧼📰 Public Record 📚🪞🌌📺📰](./reflections/2026-01-10.md)  
@@ -23,7 +24,6 @@ updated: 2026-01-12T19:13:11-08:00
 - [2026-01-06 | 🗳️🏴‍☠️🪢💩🏛️ Insurrection Day 📚📺](./reflections/2026-01-06.md)  
 - [2026-01-05 | 🚼 Immature 🇻🇪Venezuela 👀 Focus 📺📰](./reflections/2026-01-05.md)  
 - [2026-01-04 | 🪖 War 🏴‍☠️ Criminal in 👑 Chief 📺📚📰](./reflections/2026-01-04.md)  
-- [2026-01-03 | 💉 Addicted to 🩸 Blood for 🛢️ Oil 📚📺📰⌨️](./reflections/2026-01-03.md)  
   
   
 ## [🧰 Tools](./tools/index.md) (1)  
@@ -43,7 +43,8 @@ updated: 2026-01-12T19:13:11-08:00
 - [🏍️🧘❓ Zen and the Art of Motorcycle Maintenance: An Inquiry into Values](./books/zen-and-the-art-of-motorcycle-maintenance-an-inquiry-into-values.md)  
   
   
-## [📺 Videos](./videos/index.md) (586)  
+## [📺 Videos](./videos/index.md) (587)  
+- [❤️⬇️🔬 Lower Your Resting Heart Rate (The Simple Science Most People Miss) | Dr. Andy Galpin 5 Minute Phys](./videos/lower-your-resting-heart-rate-the-simple-science-most-people-miss-dr-andy-galpin-5-minute-phys.md)  
 - [🚨🗣️🏛️💔 A Breaking Point: The Minneapolis Police Chief on ICE](./videos/a-breaking-point-the-minneapolis-police-chief-on-ice.md)  
 - [🕵️‍♀️🚫🚗💥🔫 Initially-Secret Report: Customs&Border Patrol Agents Got in Way of Vehicles, Then Used Deadly Force](./videos/initially-secret-report-customs-border-patrol-agents-got-in-way-of-vehicles-then-used-deadly-force.md)  
 - [📈🔋🧘‍♀️ The 1% Health Rule: What People Who Never Burn Out Do Differently](./videos/the-1-percent-health-rule-what-people-who-never-burn-out-do-differently.md)  
@@ -53,7 +54,6 @@ updated: 2026-01-12T19:13:11-08:00
 - [👨‍⚖️🇺🇸⚖️ Sen. Kelly Sues Secretary Hegseth](./videos/sen-kelly-sues-secretary-hegseth.md)  
 - [🏛️🇺🇸⚖️🗣️👮‍♀️💔 Illinois Gov. JB Pritzker Calls For DHS Sec. Kristi Noem's Impeachment After ICE Agent Kills Woman](./videos/illinois-gov-jb-pritzker-calls-for-dhs-sec-kristi-noems-impeachment-after-ice-agent-kills-woman.md)  
 - [🧠➡️🤖⚡️ Your Brain Doesn't Command Your Body. It Predicts It. | Max Bennett](./videos/your-brain-doesnt-command-your-body-it-predicts-it-max-bennett.md)  
-- [🕵️‍♂️🤫🚫🗣️🥷 How Governments Spy On Protestors - And How To Avoid It | Incognito Mode | WIRED](./videos/how-governments-spy-on-protestors-and-how-to-avoid-it-incognito-mode-wired.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (87)  

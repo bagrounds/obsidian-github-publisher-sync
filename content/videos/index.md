@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-01-12T09:57:47-08:00
+updated: 2026-01-12T16:32:43-08:00
 ---
 [Home](../index.md)  
-# 📺 Videos (579)  
+# 📺 Videos (580)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
 - [❓💪🔬 12 Questions About Creatine with Stephen Cornish, PhD](./12-questions-about-creatine-w-stephen-cornish-phd.md)  
@@ -365,6 +365,7 @@ updated: 2026-01-12T09:57:47-08:00
 - [🚫👑⚡✊ Sen. Bernie Sanders - Harnessing Energy From «No Kings» Rally to «Fight Oligarchy» | The Daily Show](./sen-bernie-sanders-harnessing-energy-from-no-kings-rally-to-fight-oligarchy-the-daily-show.md)  
 - [Sen. Bernie Sanders: NOBODY Should Have Voted for the Terrible CR](./sen-bernie-sanders-nobody-should-have-voted-for-the-terrible-cr.md)  
 - [Sen. Cantwell Speaks on the Senate Floor on the Trade Review Act of 2025](./sen-cantwell-speaks-on-the-senate-floor-on-the-trade-review-act-of-2025.md)  
+- [👨‍⚖️🇺🇸⚖️ Sen. Kelly Sues Secretary Hegseth](./sen-kelly-sues-secretary-hegseth.md)  
 - [🗣️🚪 Sen. Padilla gives remarks after forcible removal from Noem briefing](./watch-sen-padilla-gives-remarks-after-forcible-removal-from-noem-briefing.md)  
 - [🧑‍🤝‍🧑💰⛽ Sen. Whitehouse: «Trump is Moving Money from Pockets of Normal Americans to Fossil Fuel Megadonors»](./sen-whitehouse-trump-is-moving-money-from-pockets-of-normal-americans-to-fossil-fuel-megadonors.md)  
 - [🏃🦵🤕 SHIN SPLINTS for Runners: Challenges, Causes, and Rehab](./shin-splints-for-runners-challenges-causes-and-rehab.md)  

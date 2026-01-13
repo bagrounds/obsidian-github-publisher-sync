@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-01-12T09:57:47-08:00
+updated: 2026-01-12T16:32:43-08:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -43,7 +43,8 @@ updated: 2026-01-12T09:57:47-08:00
 - [🧠🏆 Inner Excellence: Train Your Mind for Extraordinary Performance and the Best Possible Life](./books/inner-excellence-train-your-mind-for-extraordinary-performance-and-the-best-possible-life.md)  
   
   
-## [📺 Videos](./videos/index.md) (579)  
+## [📺 Videos](./videos/index.md) (580)  
+- [👨‍⚖️🇺🇸⚖️ Sen. Kelly Sues Secretary Hegseth](./videos/sen-kelly-sues-secretary-hegseth.md)  
 - [🏛️🇺🇸⚖️🗣️👮‍♀️💔 Illinois Gov. JB Pritzker Calls For DHS Sec. Kristi Noem's Impeachment After ICE Agent Kills Woman](./videos/illinois-gov-jb-pritzker-calls-for-dhs-sec-kristi-noems-impeachment-after-ice-agent-kills-woman.md)  
 - [🧠➡️🤖⚡️ Your Brain Doesn't Command Your Body. It Predicts It. | Max Bennett](./videos/your-brain-doesnt-command-your-body-it-predicts-it-max-bennett.md)  
 - [🕵️‍♂️🤫🚫🗣️🥷 How Governments Spy On Protestors - And How To Avoid It | Incognito Mode | WIRED](./videos/how-governments-spy-on-protestors-and-how-to-avoid-it-incognito-mode-wired.md)  
@@ -53,7 +54,6 @@ updated: 2026-01-12T09:57:47-08:00
 - [✨😮🗣️ Something Interesting Happened Today | Explainer](./videos/something-interesting-happened-today-explainer.md)  
 - [🚨🔫🪦 Brooks and Capehart on the response to the Minnesota ICE shooting](./videos/brooks-and-capehart-on-the-response-to-the-minnesota-ice-shooting.md)  
 - [😠✊🇩🇪🇮🇹🇷🇺🇺🇸 It’s Time to Talk About Fascism | Explainer](./videos/its-time-to-talk-about-fascism-explainer.md)  
-- [😠🗣️🚫🤬 Republican Thom Tillis' SCATHING message to Stephen Miller](./videos/im-sick-of-stupid-republican-thom-tillis-scathing-message-to-stephen-miller.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (87)  

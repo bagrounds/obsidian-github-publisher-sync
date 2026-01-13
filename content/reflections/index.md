@@ -5,12 +5,12 @@ aliases:
 title: 🪞 Reflections
 URL: https://bagrounds.org/reflections
 backlinks: false
-updated: 2026-01-12T16:32:43-08:00
+updated: 2026-01-12T16:50:19-08:00
 ---
 [Home](../index.md)  
 # 🪞 Reflections (424)  
 - [2026-01-12](./2026-01-12.md)  
-- [2026-01-11](./2026-01-11.md)  
+- [2026-01-11 | 🪦 RIP 📺 PBS 📰 News 🗓️ Weekend 📺📚📰](./2026-01-11.md)  
 - [2026-01-10 | 🧼📰 Public Record 📚🪞🌌📺📰](./2026-01-10.md)  
 - [2026-01-09 | 🤔 How Does 💧 Water 🔨 Work? 📚📺](./2026-01-09.md)  
 - [2026-01-08 | ☯️ Tao of 💪 Unbreakable 🌊 Water 🏹 Archery 🧮 Calculator 📺📚🧰](./2026-01-08.md)  

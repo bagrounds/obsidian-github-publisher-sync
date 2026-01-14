@@ -5,10 +5,10 @@ aliases:
 share: true
 URL: https://bagrounds.org/books
 backlinks: false
-updated: 2026-01-13T14:25:59-08:00
+updated: 2026-01-14T11:06:03-08:00
 ---
 [Home](../index.md)  
-# 📚 Books (875)  
+# 📚 Books (877)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [💻0️⃣ Source Code: My Beginnings](./source-code-my-beginnings.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)  
@@ -181,6 +181,7 @@ updated: 2026-01-13T14:25:59-08:00
 - [📱⬇️🧘 Digital Minimalism: Choosing a Focused Life in a Noisy World](./digital-minimalism-choosing-a-focused-life-in-a-noisy-world.md)  
 - [👯💻 Digital Twin](./the-digital-twin.md)  
 - [🤝🌍 Diplomacy](./diplomacy.md)  
+- [😳🧠🤝 Dirty Laundry: Why Adults with ADHD Are So Ashamed and What We Can Do to Help](./dirty-laundry-why-adults-with-adhd-are-so-ashamed-and-what-we-can-do-to-help.md)  
 - [😠🤝 Disagree without Disrespect: How to Respectfully Debate with Those who Think, Believe and Vote Differently from You](./disagree-without-disrespect-how-to-respectfully-debate-with-those-who-think-believe-and-vote-differently-from-you.md)  
 - [⚙️⛓️ Discipline and Punish: The Birth of the Prison](./discipline-and-punish-the-birth-of-the-prison.md)  
 - [🧘🟰🕊️ Discipline Equals Freedom: Field Manual](./discipline-equals-freedom-field-manual.md)  
@@ -558,6 +559,7 @@ updated: 2026-01-13T14:25:59-08:00
 - [📊🫠 Statistics for Dummies](./statistics-for-dummies.md)  
 - [⛈️🏛️ Storm at the Capitol: An Oral History of January 6th](./storm-at-the-capitol-an-oral-history-of-january-6th.md)  
 - [📖📊📈 Storytelling with Data: A Data Visualization Guide for Business Professionals](./storytelling-with-data-a-data-visualization-guide-for-business-professionals.md)  
+- [🦸‍♀️ Strong Female Character](./strong-female-character.md)  
 - [🇮🇹🇩🇪🇱🇾🇷🇺🇺🇸 Strongmen: Mussolini to the Present](./strongmen.md)  
 - [😮😊 Stumbling on Happiness](./stumbling-on-happiness.md)  
 - [🤫🧠 Subliminal: How Your Unconscious Mind Rules Your Behavior](./subliminal-how-your-unconscious-mind-rules-your-behavior.md)  

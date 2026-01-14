@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-01-13T14:25:59-08:00
+updated: 2026-01-14T11:06:03-08:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -13,7 +13,8 @@ updated: 2026-01-13T14:25:59-08:00
 ❔ What do 🫵 _you_ 🤔 think?  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (425)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (426)  
+- [2026-01-14](./reflections/2026-01-14.md)  
 - [2026-01-13](./reflections/2026-01-13.md)  
 - [2026-01-12](./reflections/2026-01-12.md)  
 - [2026-01-11 | 🪦 RIP 📺 PBS 📰 News 🗓️ Weekend 📺📚📰](./reflections/2026-01-11.md)  
@@ -23,14 +24,15 @@ updated: 2026-01-13T14:25:59-08:00
 - [2026-01-07 | 🇺🇸 Collateral 🪦 Damage 📺📰📚](./reflections/2026-01-07.md)  
 - [2026-01-06 | 🗳️🏴‍☠️🪢💩🏛️ Insurrection Day 📚📺](./reflections/2026-01-06.md)  
 - [2026-01-05 | 🚼 Immature 🇻🇪Venezuela 👀 Focus 📺📰](./reflections/2026-01-05.md)  
-- [2026-01-04 | 🪖 War 🏴‍☠️ Criminal in 👑 Chief 📺📚📰](./reflections/2026-01-04.md)  
   
   
 ## [🧰 Tools](./tools/index.md) (1)  
 - [🧮 Calculator](./tools/calculator.md)  
   
   
-## [📚 Books](./books/index.md) (875)  
+## [📚 Books](./books/index.md) (877)  
+- [🦸‍♀️ Strong Female Character](./books/strong-female-character.md)  
+- [😳🧠🤝 Dirty Laundry: Why Adults with ADHD Are So Ashamed and What We Can Do to Help](./books/dirty-laundry-why-adults-with-adhd-are-so-ashamed-and-what-we-can-do-to-help.md)  
 - [👮‍♀️🪢 Tangled Up in Blue: Policing the American City](./books/tangled-up-in-blue-policing-the-american-city.md)  
 - [📢💡 Public Broadcasting and the Public Interest](./books/public-broadcasting-and-the-public-interest.md)  
 - [🧊💰⛵🏛️ So You Want to Own Greenland?: Lessons from the Vikings to Trump](./books/so-you-want-to-own-greenland-lessons-from-the-vikings-to-trump.md)  
@@ -39,11 +41,10 @@ updated: 2026-01-13T14:25:59-08:00
 - [🐌🎯 Slow Productivity: The Lost Art of Accomplishment Without Burnout](./books/slow-productivity-the-lost-art-of-accomplishment-without-burnout.md)  
 - [🛠️💖 Shop Class as Soulcraft: An Inquiry Into the Value of Work](./books/shop-class-as-soulcraft-an-inquiry-into-the-value-of-work.md)  
 - [☯️🥋 Tao of Jeet Kune Do](./books/tao-of-jeet-kune-do.md)  
-- [🌊🥋 Be Water, My Friend: The Teachings of Bruce Lee](./books/be-water-my-friend-the-teachings-of-bruce-lee.md)  
-- [🏍️🧘❓ Zen and the Art of Motorcycle Maintenance: An Inquiry into Values](./books/zen-and-the-art-of-motorcycle-maintenance-an-inquiry-into-values.md)  
   
   
-## [📺 Videos](./videos/index.md) (587)  
+## [📺 Videos](./videos/index.md) (588)  
+- [🧠💥🔄 RUDE AWAKENING: How Rich’s adult autism diagnosis changed everything](./videos/rude-awakening-how-rich-s-adult-autism-diagnosis-changed-everything.md)  
 - [❤️⬇️🔬 Lower Your Resting Heart Rate (The Simple Science Most People Miss) | Dr. Andy Galpin 5 Minute Phys](./videos/lower-your-resting-heart-rate-the-simple-science-most-people-miss-dr-andy-galpin-5-minute-phys.md)  
 - [🚨🗣️🏛️💔 A Breaking Point: The Minneapolis Police Chief on ICE](./videos/a-breaking-point-the-minneapolis-police-chief-on-ice.md)  
 - [🕵️‍♀️🚫🚗💥🔫 Initially-Secret Report: Customs&Border Patrol Agents Got in Way of Vehicles, Then Used Deadly Force](./videos/initially-secret-report-customs-border-patrol-agents-got-in-way-of-vehicles-then-used-deadly-force.md)  
@@ -53,7 +54,6 @@ updated: 2026-01-13T14:25:59-08:00
 - [🏦 🇺🇸 📉 🗣️ Tamara Keith and Amy Walter on pushback to Trump's threats to Federal Reserve](./videos/tamara-keith-and-amy-walter-on-pushback-to-trumps-threats-to-federal-reserve.md)  
 - [👨‍⚖️🇺🇸⚖️ Sen. Kelly Sues Secretary Hegseth](./videos/sen-kelly-sues-secretary-hegseth.md)  
 - [🏛️🇺🇸⚖️🗣️👮‍♀️💔 Illinois Gov. JB Pritzker Calls For DHS Sec. Kristi Noem's Impeachment After ICE Agent Kills Woman](./videos/illinois-gov-jb-pritzker-calls-for-dhs-sec-kristi-noems-impeachment-after-ice-agent-kills-woman.md)  
-- [🧠➡️🤖⚡️ Your Brain Doesn't Command Your Body. It Predicts It. | Max Bennett](./videos/your-brain-doesnt-command-your-body-it-predicts-it-max-bennett.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (87)  

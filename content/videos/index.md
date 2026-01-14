@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-01-13T14:25:59-08:00
+updated: 2026-01-14T11:06:03-08:00
 ---
 [Home](../index.md)  
-# 📺 Videos (587)  
+# 📺 Videos (588)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
 - [❓💪🔬 12 Questions About Creatine with Stephen Cornish, PhD](./12-questions-about-creatine-w-stephen-cornish-phd.md)  
@@ -357,6 +357,7 @@ updated: 2026-01-13T14:25:59-08:00
 - [😠🗣️🚫🤬 Republican Thom Tillis' SCATHING message to Stephen Miller](./im-sick-of-stupid-republican-thom-tillis-scathing-message-to-stephen-miller.md)  
 - [👴🏻🪖🇺🇸🤥👹❓ Retired military leaders analyze Trump's deployment of Marines and National Guard in LAW](./retired-military-leaders-analyze-trumps-deployment-of-marines-and-national-guard-in-la.md)  
 - [Robert Putnam reflects on how America became so polarized and what can unify the nation](./robert-putnam-reflects-on-how-america-became-so-polarized-and-what-can-unify-the-nation.md)  
+- [🧠💥🔄 RUDE AWAKENING: How Rich’s adult autism diagnosis changed everything](./rude-awakening-how-rich-s-adult-autism-diagnosis-changed-everything.md)  
 - [🏃🤸🧠🏋️‍♂️ Run, Jump, Learn! How Exercise can Transform our Schools: John J. Ratey, MD at TEDxManhattanBeach](./run-jump-learn-how-exercise-can-transform-our-schools-john-j-ratey-md-at-tedxmanhattanbeach.md)  
 - [Russell L Ackoff From Mechanistic to Systemic Thinking](./russell-l-ackoff-from-mechanistic-to-systemic-thinking.md)  
 - [👤🎭🏛️ Russell Vought: The Shadow President](./russell-vought-the-shadow-president.md)  

@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-01-14T17:51:42-08:00
+updated: 2026-01-14T18:17:12-08:00
 ---
 [Home](../index.md)  
-# 📺 Videos (588)  
+# 📺 Videos (590)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
 - [❓💪🔬 12 Questions About Creatine with Stephen Cornish, PhD](./12-questions-about-creatine-w-stephen-cornish-phd.md)  
@@ -146,6 +146,7 @@ updated: 2026-01-14T17:51:42-08:00
 - [🏛️👎 Ex-Trump White House attorney calls Comey's indictment 'un-American and despicable'](./ex-trump-white-house-attorney-calls-comeys-indictment-un-american-and-despicable.md)  
 - [🗳️🎉➡️ Ezra Klein: This Is How Democrats Win](./ezra-klein-this-is-how-democrats-win.md)  
 - [Fascist tendencies in Trump: A comparison to Hitler's rise | DW News](./fascist-tendencies-in-trump-a-comparison-to-hitler-s-rise-dw-news.md)  
+- [🔎🏠📰🗣️🇺🇸 FBI searches reporter’s home, raising concerns about intimidation of free press](./fbi-searches-reporters-home-raising-concerns-about-intimidation-of-free-press.md)  
 - [📉❓⬇️💰 Federal Reserve cuts interest rates amid economic uncertainty](./federal-reserve-cuts-interest-rates-amid-economic-uncertainty.md)  
 - [⚠️🌊🏘️❌ FEMA missed major flood risks at Camp Mystic in Texas, new analysis reveals](./fema-missed-major-flood-risks-at-camp-mystic-in-texas-new-analysis-reveals.md)  
 - [💉🚫🌴 Florida to end state vaccine mandates](./florida-to-end-state-vaccine-mandates-reuters.md)  
@@ -256,6 +257,7 @@ updated: 2026-01-14T17:51:42-08:00
 - [📢👁️🗣️💡 It's Our Job to Make Sure People Know the Truth](./its-our-job-to-make-sure-people-know-the-truth.md)  
 - [😠✊🇩🇪🇮🇹🇷🇺🇺🇸 It’s Time to Talk About Fascism | Explainer](./its-time-to-talk-about-fascism-explainer.md)  
 - [📺🔎⚖️🗣️🏛️ Jack Smith's full House Judiciary deposition on investigating and indicting Trump](./jack-smiths-full-house-judiciary-deposition-on-investigating-and-indicting-trump.md)  
+- [🏛️🤬 Jason Crow is really pissed](./jason-crow-is-really-pissed.md)  
 - [🏛️📰🗣️🇺🇸 Jelani Cobb talks democracy, Trumpism, and the future of journalism | Code Switch](./jelani-cobb-talks-democracy-trumpism-and-the-future-of-journalism-code-switch.md)  
 - [🙊🤐👑 Jimmy Kimmel's Suspension Was Always About Censorship (Just Ask Trump) | The Daily Show](./jimmy-kimmels-suspension-was-always-about-censorship-just-ask-trump-the-daily-show.md)  
 - [📺🎤👮‍♂️📰 Jimmy Kimmel & the FCC: Last Week Tonight with John Oliver (HBO)](./jimmy-kimmel-the-fcc-last-week-tonight-with-john-oliver-hbo.md)  

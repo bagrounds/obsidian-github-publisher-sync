@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-01-14T18:17:12-08:00
+updated: 2026-01-14T18:41:58-08:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -30,7 +30,9 @@ updated: 2026-01-14T18:17:12-08:00
 - [🧮 Calculator](./tools/calculator.md)  
   
   
-## [📚 Books](./books/index.md) (879)  
+## [📚 Books](./books/index.md) (880)  
+- [💪📈 Creatine: A Natural Substance and Its Benefits for Muscle Metabolism, Fitness, Health & Longevity](./books/creatine-a-natural-substance-and-its-benefits-for-muscle-metabolism-fitness-health-longevity.md)  
+- [🛡️🥦 In Defense of Food: An Eater's Manifesto](./books/in-defense-of-food-an-eaters-manifesto.md)  
 - [🗽🗣️😠 Freedom for the Thought That We Hate: A Biography of the First Amendment](./books/freedom-for-the-thought-that-we-hate-a-biography-of-the-first-amendment.md)  
 - [🎭🇺🇸💸🏆 The Age of Illusions: How America Squandered Its Cold War Victory](./books/the-age-of-illusions-how-america-squandered-its-cold-war-victory.md)  
 - [🦸‍♀️ Strong Female Character](./books/strong-female-character.md)  
@@ -39,11 +41,12 @@ updated: 2026-01-14T18:17:12-08:00
 - [📢💡 Public Broadcasting and the Public Interest](./books/public-broadcasting-and-the-public-interest.md)  
 - [🧊💰⛵🏛️ So You Want to Own Greenland?: Lessons from the Vikings to Trump](./books/so-you-want-to-own-greenland-lessons-from-the-vikings-to-trump.md)  
 - [⚡🧠🏃 Spark: The Revolutionary New Science of Exercise and the Brain](./books/spark-the-revolutionary-new-science-of-exercise-and-the-brain.md)  
-- [🧠🏃 The Psychological Benefits of Exercise and Physical Activity](./books/the-psychological-benefits-of-exercise-and-physical-activity.md)  
-- [🐌🎯 Slow Productivity: The Lost Art of Accomplishment Without Burnout](./books/slow-productivity-the-lost-art-of-accomplishment-without-burnout.md)  
   
   
-## [📺 Videos](./videos/index.md) (590)  
+## [📺 Videos](./videos/index.md) (591)  
+- [⏰👵🔬 Circadian Code to Extend Longevity | Satchin Panda | TEDxVeniceBeach](./videos/circadian-code-to-extend-longevity-satchin-panda-tedx-venice-beach.md)  
+- [🧠🍎💊📈 Food & Supplements for Brain Health & Cognitive Performance | Huberman Lab Essentials](./videos/food-supplements-for-brain-health-cognitive-performance-huberman-lab-essentials.md)  
+- [🍏🥕🔬🤔❓🤔 Can We Trust The Science Of Nutrition? – A Question of Science with Brian Cox](./videos/can-we-trust-the-science-of-nutrition-a-question-of-science-with-brian-cox.md)  
 - [🔎🏠📰🗣️🇺🇸 FBI searches reporter’s home, raising concerns about intimidation of free press](./videos/fbi-searches-reporters-home-raising-concerns-about-intimidation-of-free-press.md)  
 - [🏛️🤬 Jason Crow is really pissed](./videos/jason-crow-is-really-pissed.md)  
 - [🧠💥🔄 RUDE AWAKENING: How Rich’s adult autism diagnosis changed everything](./videos/rude-awakening-how-rich-s-adult-autism-diagnosis-changed-everything.md)  
@@ -51,9 +54,6 @@ updated: 2026-01-14T18:17:12-08:00
 - [🚨🗣️🏛️💔 A Breaking Point: The Minneapolis Police Chief on ICE](./videos/a-breaking-point-the-minneapolis-police-chief-on-ice.md)  
 - [🕵️‍♀️🚫🚗💥🔫 Initially-Secret Report: Customs&Border Patrol Agents Got in Way of Vehicles, Then Used Deadly Force](./videos/initially-secret-report-customs-border-patrol-agents-got-in-way-of-vehicles-then-used-deadly-force.md)  
 - [📈🔋🧘‍♀️ The 1% Health Rule: What People Who Never Burn Out Do Differently](./videos/the-1-percent-health-rule-what-people-who-never-burn-out-do-differently.md)  
-- [🤥🗣️📰 Why did we stop caring about disinformation? | Skylar Hughes | TEDxDuke](./videos/why-did-we-stop-caring-about-disinformation-skylar-hughes-tedxduke.md)  
-- [🏛️📰🗣️🇺🇸 Jelani Cobb talks democracy, Trumpism, and the future of journalism | Code Switch](./videos/jelani-cobb-talks-democracy-trumpism-and-the-future-of-journalism-code-switch.md)  
-- [🏦 🇺🇸 📉 🗣️ Tamara Keith and Amy Walter on pushback to Trump's threats to Federal Reserve](./videos/tamara-keith-and-amy-walter-on-pushback-to-trumps-threats-to-federal-reserve.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (87)  

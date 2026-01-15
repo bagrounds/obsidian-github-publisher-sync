@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-01-14T17:51:42-08:00
+updated: 2026-01-14T18:17:12-08:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -30,7 +30,9 @@ updated: 2026-01-14T17:51:42-08:00
 - [🧮 Calculator](./tools/calculator.md)  
   
   
-## [📚 Books](./books/index.md) (877)  
+## [📚 Books](./books/index.md) (879)  
+- [🗽🗣️😠 Freedom for the Thought That We Hate: A Biography of the First Amendment](./books/freedom-for-the-thought-that-we-hate-a-biography-of-the-first-amendment.md)  
+- [🎭🇺🇸💸🏆 The Age of Illusions: How America Squandered Its Cold War Victory](./books/the-age-of-illusions-how-america-squandered-its-cold-war-victory.md)  
 - [🦸‍♀️ Strong Female Character](./books/strong-female-character.md)  
 - [😳🧠🤝 Dirty Laundry: Why Adults with ADHD Are So Ashamed and What We Can Do to Help](./books/dirty-laundry-why-adults-with-adhd-are-so-ashamed-and-what-we-can-do-to-help.md)  
 - [👮‍♀️🪢 Tangled Up in Blue: Policing the American City](./books/tangled-up-in-blue-policing-the-american-city.md)  
@@ -39,11 +41,11 @@ updated: 2026-01-14T17:51:42-08:00
 - [⚡🧠🏃 Spark: The Revolutionary New Science of Exercise and the Brain](./books/spark-the-revolutionary-new-science-of-exercise-and-the-brain.md)  
 - [🧠🏃 The Psychological Benefits of Exercise and Physical Activity](./books/the-psychological-benefits-of-exercise-and-physical-activity.md)  
 - [🐌🎯 Slow Productivity: The Lost Art of Accomplishment Without Burnout](./books/slow-productivity-the-lost-art-of-accomplishment-without-burnout.md)  
-- [🛠️💖 Shop Class as Soulcraft: An Inquiry Into the Value of Work](./books/shop-class-as-soulcraft-an-inquiry-into-the-value-of-work.md)  
-- [☯️🥋 Tao of Jeet Kune Do](./books/tao-of-jeet-kune-do.md)  
   
   
-## [📺 Videos](./videos/index.md) (588)  
+## [📺 Videos](./videos/index.md) (590)  
+- [🔎🏠📰🗣️🇺🇸 FBI searches reporter’s home, raising concerns about intimidation of free press](./videos/fbi-searches-reporters-home-raising-concerns-about-intimidation-of-free-press.md)  
+- [🏛️🤬 Jason Crow is really pissed](./videos/jason-crow-is-really-pissed.md)  
 - [🧠💥🔄 RUDE AWAKENING: How Rich’s adult autism diagnosis changed everything](./videos/rude-awakening-how-rich-s-adult-autism-diagnosis-changed-everything.md)  
 - [❤️⬇️🔬 Lower Your Resting Heart Rate (The Simple Science Most People Miss) | Dr. Andy Galpin 5 Minute Phys](./videos/lower-your-resting-heart-rate-the-simple-science-most-people-miss-dr-andy-galpin-5-minute-phys.md)  
 - [🚨🗣️🏛️💔 A Breaking Point: The Minneapolis Police Chief on ICE](./videos/a-breaking-point-the-minneapolis-police-chief-on-ice.md)  
@@ -52,8 +54,6 @@ updated: 2026-01-14T17:51:42-08:00
 - [🤥🗣️📰 Why did we stop caring about disinformation? | Skylar Hughes | TEDxDuke](./videos/why-did-we-stop-caring-about-disinformation-skylar-hughes-tedxduke.md)  
 - [🏛️📰🗣️🇺🇸 Jelani Cobb talks democracy, Trumpism, and the future of journalism | Code Switch](./videos/jelani-cobb-talks-democracy-trumpism-and-the-future-of-journalism-code-switch.md)  
 - [🏦 🇺🇸 📉 🗣️ Tamara Keith and Amy Walter on pushback to Trump's threats to Federal Reserve](./videos/tamara-keith-and-amy-walter-on-pushback-to-trumps-threats-to-federal-reserve.md)  
-- [👨‍⚖️🇺🇸⚖️ Sen. Kelly Sues Secretary Hegseth](./videos/sen-kelly-sues-secretary-hegseth.md)  
-- [🏛️🇺🇸⚖️🗣️👮‍♀️💔 Illinois Gov. JB Pritzker Calls For DHS Sec. Kristi Noem's Impeachment After ICE Agent Kills Woman](./videos/illinois-gov-jb-pritzker-calls-for-dhs-sec-kristi-noems-impeachment-after-ice-agent-kills-woman.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (87)  

@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-01-14T18:17:12-08:00
+updated: 2026-01-14T18:41:58-08:00
 ---
 [Home](../index.md)  
-# 📺 Videos (590)  
+# 📺 Videos (591)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
 - [❓💪🔬 12 Questions About Creatine with Stephen Cornish, PhD](./12-questions-about-creatine-w-stephen-cornish-phd.md)  
@@ -106,6 +106,7 @@ updated: 2026-01-14T18:17:12-08:00
 - [📰🤝🗣️ Building a News Community with Jim Acosta | Explainer](./building-a-news-community-with-jim-acosta-explainer.md)  
 - [📒 Bullet Journal](./bullet-journal.md)  
 - [🇺🇸💔🩹❓ Can a divided America heal? | Jonathan Haidt](./can-a-divided-america-heal-jonathan-haidt.md)  
+- [🍏🥕🔬🤔❓🤔 Can We Trust The Science Of Nutrition? – A Question of Science with Brian Cox](./can-we-trust-the-science-of-nutrition-a-question-of-science-with-brian-cox.md)  
 - [🤖📈 💯📊 👩‍💻👨‍💻 Can you prove AI ROI in Software Eng? (Stanford 120k Devs Study) – Yegor Denisov-Blanch, Stanford](./can-you-prove-ai-roi-in-software-eng-stanford-120k-devs-study-yegor-denisov-blanch-stanford.md)  
 - [👨‍⚖️🗣️😠🔫 Capehart and Wehner on Trump's reaction to the National Guard shooting](./capehart-and-wehner-on-trumps-reaction-to-the-national-guard-shooting.md)  
 - [📺💸❓ CBS says Colbert cancelation was financial decision, but timing raises questions](./cbs-says-colbert-cancelation-was-financial-decision-but-timing-raises-questions.md)  

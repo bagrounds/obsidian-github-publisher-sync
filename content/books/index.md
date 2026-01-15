@@ -5,10 +5,10 @@ aliases:
 share: true
 URL: https://bagrounds.org/books
 backlinks: false
-updated: 2026-01-14T18:17:12-08:00
+updated: 2026-01-14T18:41:58-08:00
 ---
 [Home](../index.md)  
-# 📚 Books (879)  
+# 📚 Books (880)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [💻0️⃣ Source Code: My Beginnings](./source-code-my-beginnings.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)  
@@ -335,6 +335,7 @@ updated: 2026-01-14T18:17:12-08:00
 - [🔒🐦 I Know Why the Caged Bird Sings](./i-know-why-the-caged-bird-sings.md)  
 - [🐦➕ In a Flight of Starlings: The Wonders of Complex Systems](./in-a-flight-of-starlings-the-wonders-of-complex-systems.md)  
 - [🎭🤫🧠 Incognito: The Secret Lives of the Brain](./incognito.md)  
+- [🛡️🥦 In Defense of Food: An Eater's Manifesto](./in-defense-of-food-an-eaters-manifesto.md)  
 - [🧘 Indistractable: How to Control Your Attention and Choose Your Life](./indistractable.md)  
 - [🍃🧠🤝🏼 Influence: The Psychology of Persuasion](./influence.md)  
 - [🦠💀🔎💉 Influenza: The Hundred-Year Hunt to Cure the Deadliest Disease in History](./influenza-the-hundred-year-hunt-to-cure-the-deadliest-disease-in-history.md)  

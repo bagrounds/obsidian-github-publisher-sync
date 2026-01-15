@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-01-14T18:41:58-08:00
+updated: 2026-01-14T19:40:42-08:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -14,7 +14,7 @@ updated: 2026-01-14T18:41:58-08:00
 💬 Comment on any page with your GitHub account.  
   
 ## [🪞 Reflections](./reflections/index.md) ~ Blog (426)  
-- [2026-01-14](./reflections/2026-01-14.md)  
+- [2026-01-14 | 🦸‍♀️ Strong 🧬 Human 🎭 Character 🛡️ Defends 🗽 Freedom 🍽️ In 🌌 Everything 🧪 As 🧬 Science 🗯️ Hates 🧺 Dirty 😈 Devils 📜 Manifesto](./reflections/2026-01-14.md)  
 - [2026-01-13 | 🔥 Devils ⚡ Spark ❤️ Heart 📚📺](./reflections/2026-01-13.md)  
 - [2026-01-12 | ▶️ Initially 🕵️‍♀️ Secret ⚖️ Impeachment 👨‍⚖️ Sues 🏛️ Democracy ⌛ After 💔 Breaking 🧠 Brain 🔋 Burnout 👮‍♀️ Policing ⚠️ Threats 📚📺📰](./reflections/2026-01-12.md)  
 - [2026-01-11 | 🪦 RIP 📺 PBS 📰 News 🗓️ Weekend 📺📚📰](./reflections/2026-01-11.md)  
@@ -43,7 +43,8 @@ updated: 2026-01-14T18:41:58-08:00
 - [⚡🧠🏃 Spark: The Revolutionary New Science of Exercise and the Brain](./books/spark-the-revolutionary-new-science-of-exercise-and-the-brain.md)  
   
   
-## [📺 Videos](./videos/index.md) (591)  
+## [📺 Videos](./videos/index.md) (592)  
+- [🧬🤖❓ Can We Build a Human? – A Question of Science with Professor Brian Cox](./videos/can-we-build-a-human-a-question-of-science-with-professor-brian-cox.md)  
 - [⏰👵🔬 Circadian Code to Extend Longevity | Satchin Panda | TEDxVeniceBeach](./videos/circadian-code-to-extend-longevity-satchin-panda-tedx-venice-beach.md)  
 - [🧠🍎💊📈 Food & Supplements for Brain Health & Cognitive Performance | Huberman Lab Essentials](./videos/food-supplements-for-brain-health-cognitive-performance-huberman-lab-essentials.md)  
 - [🍏🥕🔬🤔❓🤔 Can We Trust The Science Of Nutrition? – A Question of Science with Brian Cox](./videos/can-we-trust-the-science-of-nutrition-a-question-of-science-with-brian-cox.md)  
@@ -53,7 +54,6 @@ updated: 2026-01-14T18:41:58-08:00
 - [❤️⬇️🔬 Lower Your Resting Heart Rate (The Simple Science Most People Miss) | Dr. Andy Galpin 5 Minute Phys](./videos/lower-your-resting-heart-rate-the-simple-science-most-people-miss-dr-andy-galpin-5-minute-phys.md)  
 - [🚨🗣️🏛️💔 A Breaking Point: The Minneapolis Police Chief on ICE](./videos/a-breaking-point-the-minneapolis-police-chief-on-ice.md)  
 - [🕵️‍♀️🚫🚗💥🔫 Initially-Secret Report: Customs&Border Patrol Agents Got in Way of Vehicles, Then Used Deadly Force](./videos/initially-secret-report-customs-border-patrol-agents-got-in-way-of-vehicles-then-used-deadly-force.md)  
-- [📈🔋🧘‍♀️ The 1% Health Rule: What People Who Never Burn Out Do Differently](./videos/the-1-percent-health-rule-what-people-who-never-burn-out-do-differently.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (87)  

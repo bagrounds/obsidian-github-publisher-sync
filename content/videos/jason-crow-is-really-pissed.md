@@ -58,4 +58,7 @@ youtube: https://youtube.com/embed/jEcfW3MIYpI
 ### 🎨 Creatively Related  
   
 * 📖 The Things They Carried by Tim O'Brien provides a visceral look at the personal burdens carried by soldiers in combat.  
-* 📉 Perilous Bounty by Tom Philpott connects global instability to the fragile domestic systems like the ones Crow references.
+* 📉 Perilous Bounty by Tom Philpott connects global instability to the fragile domestic systems like the ones Crow references.  
+  
+## 🐦 Tweet  
+<blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">🏛️🤬 <a href="https://twitter.com/JasonCrowCO?ref_src=twsrc%5Etfw">@JasonCrowCO</a> is really pissed<br><br>🎖️ Military Veteran | 🗳️ Political Criticism | 💣 Foreign Policy | 🧑‍✈️ Military Service | 🌎 Interventionism | 🏠 Domestic Priorities | 💰 War Costs | 🤕 Human Cost | 🧑‍🎓 Youth Burden<a href="https://t.co/LEMxtBuMMK">https://t.co/LEMxtBuMMK</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/2011868797406495001?ref_src=twsrc%5Etfw">January 15, 2026</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

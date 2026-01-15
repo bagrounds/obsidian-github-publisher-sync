@@ -5,10 +5,10 @@ aliases:
 share: true
 URL: https://bagrounds.org/books
 backlinks: false
-updated: 2026-01-14T17:51:42-08:00
+updated: 2026-01-14T18:17:12-08:00
 ---
 [Home](../index.md)  
-# 📚 Books (877)  
+# 📚 Books (879)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [💻0️⃣ Source Code: My Beginnings](./source-code-my-beginnings.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)  
@@ -251,6 +251,7 @@ updated: 2026-01-14T17:51:42-08:00
 - [🧱✅🐛 Foundations of Software Testing](./foundations-of-software-testing.md)  
 - [♾️〰️📊 Fractals, Chaos, Power Laws: Minutes from an Infinite Paradise](./fractals-chaos-power-laws-minutes-from-an-infinite-paradise.md)  
 - [🤓🕵️‍♂️❓ Freakonomics: A Rogue Economist Explores the Hidden Side of Everything](./freakonomics.md)  
+- [🗽🗣️😠 Freedom for the Thought That We Hate: A Biography of the First Amendment](./freedom-for-the-thought-that-we-hate-a-biography-of-the-first-amendment.md)  
 - [🧒🎮 Free to Learn: Why Unleashing the Instinct to Play Will Make Our Children Happier, More Self-Reliant, and Better Students for Life](./free-to-learn-why-unleashing-the-instinct-to-play-will-make-our-children-happier-more-self-reliant-and-better-students-for-life.md)  
 - [🛂⛓️ From Deportation to Prison: The Politics of Immigration Enforcement in Post-Civil Rights America](./from-deportation-to-prison-the-politics-of-immigration-enforcement-in-post-civil-rights-america.md)  
 - [💪😊🎯 From Strength to Strength: Finding Success, Happiness, and Deep Purpose in the Second Half of Life](./from-strength-to-strength-finding-success-happiness-and-deep-purpose-in-the-second-half-of-life.md)  
@@ -591,6 +592,7 @@ updated: 2026-01-14T17:51:42-08:00
 - [💯⬇️⬆️ The 80 20 Principle: The Secret to Achieving More with Less](./the-80-20-principle-the-secret-to-achieving-more-with-less.md)  
 - [👶🔤 The ABC’s of Language Development: Discover Language with Your Child](./the-abcs-of-language-development-discover-language-with-your-child.md)  
 - [✍️📣 The Adweek Copywriting Handbook: The Ultimate Guide to Writing Powerful Advertising and Marketing Copy from One of America's Top Copywriters](./the-adweek-copywriting-handbook-the-ultimate-guide-to-writing-powerful-advertising-and-marketing-copy-from-one-of-americas-top-copywriters.md)  
+- [🎭🇺🇸💸🏆 The Age of Illusions: How America Squandered Its Cold War Victory](./the-age-of-illusions-how-america-squandered-its-cold-war-victory.md)  
 - [👁️‍🗨️💰⛓️👤 The Age of Surveillance Capitalism: The Fight for a Human Future at the New Frontier of Power](./the-age-of-surveillance-capitalism.md)  
 - [🤖📈 The AI Revolution in Project Management: Elevating Productivity with Generative AI](./the-ai-revolution-in-project-management-elevating-productivity-with-generative-ai.md)  
 - [👤💬 The Analects of Confucius](./the-analects-of-confucius.md)  

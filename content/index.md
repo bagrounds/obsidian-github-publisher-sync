@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-01-15T22:50:07-08:00
+updated: 2026-01-16T09:12:12-08:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -13,7 +13,8 @@ updated: 2026-01-15T22:50:07-08:00
 ❔ What do 🫵 _you_ 🤔 think?  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (427)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (428)  
+- [2026-01-16](./reflections/2026-01-16.md)  
 - [2026-01-15 | 🫦 Desire 🤖 Bot 🏆 Wins 🛡️ Immunity 🌌📺📚](./reflections/2026-01-15.md)  
 - [2026-01-14 | 🦸‍♀️ Strong 🧬 Human 🎭 Character 🛡️ Defends 🗽 Freedom 🍽️ In 🌌 Everything 🧪 As 🧬 Science 🗯️ Hates 🧺 Dirty 😈 Devils 📜 Manifesto 📚📺📰⌨️✍🏽](./reflections/2026-01-14.md)  
 - [2026-01-13 | 🔥 Devils ⚡ Spark ❤️ Heart 📚📺](./reflections/2026-01-13.md)  
@@ -23,7 +24,6 @@ updated: 2026-01-15T22:50:07-08:00
 - [2026-01-09 | 🤔 How Does 💧 Water 🔨 Work? 📚📺](./reflections/2026-01-09.md)  
 - [2026-01-08 | ☯️ Tao of 💪 Unbreakable 🌊 Water 🏹 Archery 🧮 Calculator 📺📚🧰](./reflections/2026-01-08.md)  
 - [2026-01-07 | 🇺🇸 Collateral 🪦 Damage 📺📰📚](./reflections/2026-01-07.md)  
-- [2026-01-06 | 🗳️🏴‍☠️🪢💩🏛️ Insurrection Day 📚📺](./reflections/2026-01-06.md)  
   
   
 ## [🧰 Tools](./tools/index.md) (1)  
@@ -43,7 +43,8 @@ updated: 2026-01-15T22:50:07-08:00
 - [🧊💰⛵🏛️ So You Want to Own Greenland?: Lessons from the Vikings to Trump](./books/so-you-want-to-own-greenland-lessons-from-the-vikings-to-trump.md)  
   
   
-## [📺 Videos](./videos/index.md) (594)  
+## [📺 Videos](./videos/index.md) (595)  
+- [🤖💬📈🌍 Build a Real-Time AI Sales Agent - Sarah Chieng & Zhenwei Gao, Cerebras](./videos/build-a-real-time-ai-sales-agent-sarah-chieng-zhenwei-gao-cerebras.md)  
 - [🏛️🛡️ Do ICE Officers Have 'Immunity'?](./videos/do-ice-officers-have-immunity.md)  
 - [🧠⛓️⚖️ Essentials: Understanding & Treating Addiction | Dr. Anna Lembke](./videos/essentials-understanding-treating-addiction-dr-anna-lembke.md)  
 - [💪🧠🚫💊🚀 Tools for Overcoming Substance & Behavioral Addictions | Ryan Soave](./videos/tools-for-overcoming-substance-behavioral-addictions-ryan-soave.md)  
@@ -53,7 +54,6 @@ updated: 2026-01-15T22:50:07-08:00
 - [⏰👵🔬 Circadian Code to Extend Longevity | Satchin Panda | TEDxVeniceBeach](./videos/circadian-code-to-extend-longevity-satchin-panda-tedx-venice-beach.md)  
 - [🧠🍎💊📈 Food & Supplements for Brain Health & Cognitive Performance | Huberman Lab Essentials](./videos/food-supplements-for-brain-health-cognitive-performance-huberman-lab-essentials.md)  
 - [🍏🥕🔬🤔❓🤔 Can We Trust The Science Of Nutrition? – A Question of Science with Brian Cox](./videos/can-we-trust-the-science-of-nutrition-a-question-of-science-with-brian-cox.md)  
-- [🔎🏠📰🗣️🇺🇸 FBI searches reporter’s home, raising concerns about intimidation of free press](./videos/fbi-searches-reporters-home-raising-concerns-about-intimidation-of-free-press.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (88)  

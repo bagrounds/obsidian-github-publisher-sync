@@ -5,10 +5,10 @@ aliases:
 share: true
 URL: https://bagrounds.org/books
 backlinks: false
-updated: 2026-01-16T09:12:12-08:00
+updated: 2026-01-16T10:54:53-08:00
 ---
 [Home](../index.md)  
-# 📚 Books (881)  
+# 📚 Books (882)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [💻0️⃣ Source Code: My Beginnings](./source-code-my-beginnings.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)  
@@ -101,6 +101,7 @@ updated: 2026-01-16T09:12:12-08:00
 - [✍️💻💰 Blog, Inc.: Blogging for Passion, Profit, and to Create Community](./blog-inc-blogging-for-passion-profit-and-to-create-community.md)  
 - [🌊📈 Blue Ocean Strategy: How to Create Uncontested Market Space and Make the Competition Irrelevant](./blue-ocean-strategy-how-to-create-uncontested-market-space-and-make-the-competition-irrelevant.md)  
 - [♟️🧑‍🏫 Bobby Fischer Teaches Chess](./bobby-fischer-teaches-chess.md)  
+- [💉🦠👶 Booster Shots: The Urgent Lessons of Measles and the Uncertain Future of Children's Health](./booster-shots-the-urgent-lessons-of-measles-and-the-uncertain-future-of-childrens-health.md)  
 - [🛂😐🧑🏿🧑🏻⚖️ Bordering on Indifference: Immigration Agents Negotiating Race and Morality](./bordering-on-indifference-immigration-agents-negotiating-race-and-morality.md)  
 - [🥱🤓 Bored and Brilliant: How Spacing Out Can Unlock Your Most Productive and Creative Self](./bored-and-brilliant.md)  
 - [🏃‍♂️⛰️ Born to Run: A Hidden Tribe, Superathletes, and the Greatest Race the World Has Never Seen](./born-to-run-a-hidden-tribe-superathletes-and-the-greatest-race-the-world-has-never-seen.md)  

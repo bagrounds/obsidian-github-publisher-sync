@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-01-16T09:12:12-08:00
+updated: 2026-01-16T10:54:53-08:00
 ---
 [Home](../index.md)  
-# 📺 Videos (595)  
+# 📺 Videos (596)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
 - [❓💪🔬 12 Questions About Creatine with Stephen Cornish, PhD](./12-questions-about-creatine-w-stephen-cornish-phd.md)  
@@ -382,6 +382,7 @@ updated: 2026-01-16T09:12:12-08:00
 - [🏃🦵🤕 SHIN SPLINTS for Runners: Challenges, Causes, and Rehab](./shin-splints-for-runners-challenges-causes-and-rehab.md)  
 - [🧑‍💻📈⏩ SIGGRAPH Thesis Fast Forward 2025](./siggraph-thesis-fast-forward-2025.md)  
 - [💰📉🌍 Silvio Gesell's Forgotten Money: The Wörgl Experiment & Demurrage Currency](./silvio-gesells-forgotten-money-the-worgl-experiment-demurrage-currency.md)  
+- [🦠🤒🏥 Snohomish County sees measles outbreak](./snohomish-county-sees-measles-outbreak.md)  
 - [✨😮🗣️ Something Interesting Happened Today | Explainer](./something-interesting-happened-today-explainer.md)  
 - [Spaceship You](./spaceship-you.md)  
 - [👶😴👩‍⚕️ Spoil Your Baby Ep 20 - How Babies Sleep with Dr. Helen Ball](./spoil-your-baby-ep-20-how-babies-sleep-with-dr-helen-ball.md)  

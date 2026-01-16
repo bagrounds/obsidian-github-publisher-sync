@@ -104,7 +104,7 @@ youtube: https://youtu.be/pailpU1QD3k
 ### 🆚 Contrasting  
   
 * 📘 Punishment and Reward by George Ainslie explores the complex psychological struggles of impulsivity and why humans often choose short-term gratification.  
-* 📘 The Biology of Desire by Marc Lewis argues that addiction is a learned habit rather than a chronic brain disease.  
+* [🧠⛓️🚫 The Biology of Desire: Why Addiction Is Not a Disease](../books/the-biology-of-desire-why-addiction-is-not-a-disease.md) by Marc Lewis argues that addiction is a learned habit rather than a chronic brain disease.  
   
 ### 🎨 Creatively Related  
   

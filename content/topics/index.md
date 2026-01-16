@@ -5,10 +5,10 @@ aliases:
 title: 🌌 Topics
 URL: https://bagrounds.org/topics
 backlinks: false
-updated: 2026-01-14T21:35:30-08:00
+updated: 2026-01-15T16:21:22-08:00
 ---
 [Home](../index.md)  
-# 🌌 Topics (87)  
+# 🌌 Topics (88)  
 - [⚙️🧠🔄 Adaptive Control](./adaptive-control.md)  
 - [🌲🪜🧠 A Hierarchical View of Human Knowledge](./a-hierarchical-view-of-human-knowledge.md)  
 - [A Method For Estimating Work](./a-method-for-estimating-work.md)  
@@ -19,6 +19,7 @@ updated: 2026-01-14T21:35:30-08:00
 - [🫂💖 Attachment Theory](./attachment-theory.md)  
 - [👨‍👩‍👦🧭🤝 Authoritative Parenting](./authoritative-parenting.md)  
 - [🗣️🗣️ Bilingualism](./bilingualism.md)  
+- [✍🏽🤖 Blog Bot](./blog-bot.md)  
 - [Books Removed From Naval Academy Library](./books-removed-from-naval-academy-library.md)  
 - [Code Testing and Validation](./code-testing-and-validation.md)  
 - [♻️🫀🧠💪 Cognitive Behavioral Therapy](./cognitive-behavioral-therapy.md)  

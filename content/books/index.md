@@ -5,10 +5,10 @@ aliases:
 share: true
 URL: https://bagrounds.org/books
 backlinks: false
-updated: 2026-01-15T16:21:22-08:00
+updated: 2026-01-15T16:41:38-08:00
 ---
 [Home](../index.md)  
-# 📚 Books (880)  
+# 📚 Books (881)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [💻0️⃣ Source Code: My Beginnings](./source-code-my-beginnings.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)  
@@ -614,6 +614,7 @@ updated: 2026-01-15T16:21:22-08:00
 - [💰💥📉 The Big Short: Inside the Doomsday Machine](./the-big-short-inside-the-doomsday-machine.md)  
 - [🏘️↔️ The Big Sort: Why the Clustering of Like-Minded America Is Tearing Us Apart](./the-big-sort-why-the-clustering-of-like-minded-america-is-tearing-us-apart.md)  
 - [📜🤝 The Bill of Obligations: The Ten Habits of Good Citizens](./the-bill-of-obligations.md)  
+- [🧠⛓️🚫 The Biology of Desire: Why Addiction Is Not a Disease](./the-biology-of-desire-why-addiction-is-not-a-disease.md)  
 - [⚫🦢🎲 The Black Swan: The Impact of the Highly Improbable](./the-black-swan-the-impact-of-the-highly-improbable.md)  
 - [🗡️🤕 The Blade Itself](./the-blade-itself.md)  
 - [🤕🎼🧠 The Body Keeps the Score: Brain, Mind, and Body in the Healing of Trauma](./the-body-keeps-the-score-brain-mind-and-body-in-the-healing-of-trauma.md)  

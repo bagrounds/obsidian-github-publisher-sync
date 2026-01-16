@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-01-15T16:21:22-08:00
+updated: 2026-01-15T16:41:38-08:00
 ---
 [Home](../index.md)  
-# 📺 Videos (593)  
+# 📺 Videos (594)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
 - [❓💪🔬 12 Questions About Creatine with Stephen Cornish, PhD](./12-questions-about-creatine-w-stephen-cornish-phd.md)  
@@ -126,6 +126,7 @@ updated: 2026-01-15T16:21:22-08:00
 - [💉👩‍⚕️💻 Doctor Answers Vaccine Questions | Tech Support | WIRED](./doctor-answers-vaccine-questions-tech-support-wired.md)  
 - [☕⛓️‍💥🚄❓ Does drinking coffee break your fast? | Satchin Panda](./does-drinking-coffee-break-your-fast-satchin-panda.md)  
 - [🇨🇳🔮❓ Does the Future Belong to China? | Interesting Times with Ross Douthat](./does-the-future-belong-to-china-interesting-times-with-ross-douthat.md)  
+- [🏛️🛡️ Do ICE Officers Have 'Immunity'?](./do-ice-officers-have-immunity.md)  
 - [🧠🛠️➡️🤖 Don't Build Agents, Build Skills Instead – Barry Zhang & Mahesh Murag, Anthropic](./dont-build-agents-build-skills-instead-barry-zhang-mahesh-murag-anthropic.md)  
 - [⬇️⬆️🗣️ Don't Get Down Leveled or How to Tell a Good Story (From a Principal at Amazon)](./dont-get-down-leveled-or-how-to-tell-a-good-story-from-a-principal-at-amazon.md)  
 - [🔑🔓🚀🌟 Dr. Adam Grant: How to Unlock Your Potential, Motivation & Unique Abilities](./dr-adam-grant-how-to-unlock-your-potential-motivation-and-unique-abilities.md)  

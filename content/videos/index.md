@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-01-15T22:50:07-08:00
+updated: 2026-01-16T09:12:12-08:00
 ---
 [Home](../index.md)  
-# 📺 Videos (594)  
+# 📺 Videos (595)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
 - [❓💪🔬 12 Questions About Creatine with Stephen Cornish, PhD](./12-questions-about-creatine-w-stephen-cornish-phd.md)  
@@ -102,6 +102,7 @@ updated: 2026-01-15T22:50:07-08:00
 - [👑🚧📉 Brooks and Capehart on Trump’s tariffs and reaction from the markets](./brooks-and-capehart-on-trumps-tariffs-and-reaction-from-the-markets.md)  
 - [🥋🧠💪 Bruce Lee’s 11 Rules for an Unbreakable Mind](./bruce-lees-11-rules-for-an-unbreakable-mind.md)  
 - [💡🔄🤖 Build a Prompt Learning Loop - SallyAnn DeLucia & Fuad Ali, Arize](./build-a-prompt-learning-loop-sallyann-delucia-fuad-ali-arize.md)  
+- [🤖💬📈🌍 Build a Real-Time AI Sales Agent - Sarah Chieng & Zhenwei Gao, Cerebras](./build-a-real-time-ai-sales-agent-sarah-chieng-zhenwei-gao-cerebras.md)  
 - [🏗️📈🤝🌍 Building a Better Economy | Alex Pentland | TEDxMIT](./building-a-better-economy-alex-pentland-tedxmit.md)  
 - [📰🤝🗣️ Building a News Community with Jim Acosta | Explainer](./building-a-news-community-with-jim-acosta-explainer.md)  
 - [📒 Bullet Journal](./bullet-journal.md)  

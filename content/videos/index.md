@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-01-14T21:35:30-08:00
+updated: 2026-01-15T16:21:22-08:00
 ---
 [Home](../index.md)  
-# 📺 Videos (592)  
+# 📺 Videos (593)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
 - [❓💪🔬 12 Questions About Creatine with Stephen Cornish, PhD](./12-questions-about-creatine-w-stephen-cornish-phd.md)  
@@ -456,6 +456,7 @@ updated: 2026-01-14T21:35:30-08:00
 - [📈🗣️💥😵‍💫 The rise of viral debate videos and their impact on our ability to disagree](./the-rise-of-viral-debate-videos-and-their-impact-on-our-ability-to-disagree.md)  
 - [❤️‍🔥🏋️🏃 The Role of High-Intensity Interval Training and Strength Training in Cardiovascular Health](./the-role-of-high-intensity-interval-training-and-strength-training-in-cardiovascular-health.md)  
 - [🗣️🧠⬆️📈 The Science Behind Dramatically Better Conversations | Charles Duhigg | TED](./the-science-behind-dramatically-better-conversations-charles-duhigg-ted.md)  
+- [📈🤏💡 The science behind small wins](./the-science-behind-small-wins.md)  
 - [😴🧪💯🏆 The scientifically proven best night routine ever](./the-scientifically-proven-best-night-routine-ever.md)  
 - [🤫🌱🗣️ The Secret Form of Resistance No One Talks About](./the-secret-form-of-resistance-no-one-talks-about.md)  
 - [🧪📈✅💡 The secret formula that guarantees success (according to science)](./the-secret-formula-that-guarantees-success-according-to-science.md)  

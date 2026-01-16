@@ -58,7 +58,7 @@ youtube: https://youtu.be/i4gvIeA3RcI
 ### 🆚 Contrasting  
   
 * 📙 Unbroken Brain by Maia Szalavitz argues that addiction is a learning disorder rather than a progressive brain disease.  
-* 📗 The Biology of Desire by Marc Lewis challenges the traditional disease model of addiction by focusing on neuroplasticity and habit formation.  
+* [🧠⛓️🚫 The Biology of Desire: Why Addiction Is Not a Disease](../books/the-biology-of-desire-why-addiction-is-not-a-disease.md) by Marc Lewis challenges the traditional disease model of addiction by focusing on neuroplasticity and habit formation.  
   
 ### 🎨 Creatively Related  
   

@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-01-14T21:35:30-08:00
+updated: 2026-01-15T16:21:22-08:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -13,7 +13,8 @@ updated: 2026-01-14T21:35:30-08:00
 ❔ What do 🫵 _you_ 🤔 think?  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (426)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (427)  
+- [2026-01-15](./reflections/2026-01-15.md)  
 - [2026-01-14 | 🦸‍♀️ Strong 🧬 Human 🎭 Character 🛡️ Defends 🗽 Freedom 🍽️ In 🌌 Everything 🧪 As 🧬 Science 🗯️ Hates 🧺 Dirty 😈 Devils 📜 Manifesto 📚📺📰⌨️✍🏽](./reflections/2026-01-14.md)  
 - [2026-01-13 | 🔥 Devils ⚡ Spark ❤️ Heart 📚📺](./reflections/2026-01-13.md)  
 - [2026-01-12 | ▶️ Initially 🕵️‍♀️ Secret ⚖️ Impeachment 👨‍⚖️ Sues 🏛️ Democracy ⌛ After 💔 Breaking 🧠 Brain 🔋 Burnout 👮‍♀️ Policing ⚠️ Threats 📚📺📰](./reflections/2026-01-12.md)  
@@ -23,7 +24,6 @@ updated: 2026-01-14T21:35:30-08:00
 - [2026-01-08 | ☯️ Tao of 💪 Unbreakable 🌊 Water 🏹 Archery 🧮 Calculator 📺📚🧰](./reflections/2026-01-08.md)  
 - [2026-01-07 | 🇺🇸 Collateral 🪦 Damage 📺📰📚](./reflections/2026-01-07.md)  
 - [2026-01-06 | 🗳️🏴‍☠️🪢💩🏛️ Insurrection Day 📚📺](./reflections/2026-01-06.md)  
-- [2026-01-05 | 🚼 Immature 🇻🇪Venezuela 👀 Focus 📺📰](./reflections/2026-01-05.md)  
   
   
 ## [🧰 Tools](./tools/index.md) (1)  
@@ -43,25 +43,25 @@ updated: 2026-01-14T21:35:30-08:00
 - [⚡🧠🏃 Spark: The Revolutionary New Science of Exercise and the Brain](./books/spark-the-revolutionary-new-science-of-exercise-and-the-brain.md)  
   
   
-## [📺 Videos](./videos/index.md) (592)  
+## [📺 Videos](./videos/index.md) (593)  
+- [📈🤏💡 The science behind small wins](./videos/the-science-behind-small-wins.md)  
+- [🏛️🤬 Jason Crow is really pissed](./videos/jason-crow-is-really-pissed.md)  
 - [🧬🤖❓ Can We Build a Human? – A Question of Science with Professor Brian Cox](./videos/can-we-build-a-human-a-question-of-science-with-professor-brian-cox.md)  
 - [⏰👵🔬 Circadian Code to Extend Longevity | Satchin Panda | TEDxVeniceBeach](./videos/circadian-code-to-extend-longevity-satchin-panda-tedx-venice-beach.md)  
 - [🧠🍎💊📈 Food & Supplements for Brain Health & Cognitive Performance | Huberman Lab Essentials](./videos/food-supplements-for-brain-health-cognitive-performance-huberman-lab-essentials.md)  
 - [🍏🥕🔬🤔❓🤔 Can We Trust The Science Of Nutrition? – A Question of Science with Brian Cox](./videos/can-we-trust-the-science-of-nutrition-a-question-of-science-with-brian-cox.md)  
 - [🔎🏠📰🗣️🇺🇸 FBI searches reporter’s home, raising concerns about intimidation of free press](./videos/fbi-searches-reporters-home-raising-concerns-about-intimidation-of-free-press.md)  
-- [🏛️🤬 Jason Crow is really pissed](./videos/jason-crow-is-really-pissed.md)  
 - [🧠💥🔄 RUDE AWAKENING: How Rich’s adult autism diagnosis changed everything](./videos/rude-awakening-how-rich-s-adult-autism-diagnosis-changed-everything.md)  
 - [❤️⬇️🔬 Lower Your Resting Heart Rate (The Simple Science Most People Miss) | Dr. Andy Galpin 5 Minute Phys](./videos/lower-your-resting-heart-rate-the-simple-science-most-people-miss-dr-andy-galpin-5-minute-phys.md)  
 - [🚨🗣️🏛️💔 A Breaking Point: The Minneapolis Police Chief on ICE](./videos/a-breaking-point-the-minneapolis-police-chief-on-ice.md)  
-- [🕵️‍♀️🚫🚗💥🔫 Initially-Secret Report: Customs&Border Patrol Agents Got in Way of Vehicles, Then Used Deadly Force](./videos/initially-secret-report-customs-border-patrol-agents-got-in-way-of-vehicles-then-used-deadly-force.md)  
   
   
-## [🌌 Topics](./topics/index.md) (87)  
+## [🌌 Topics](./topics/index.md) (88)  
+- [✍🏽🤖 Blog Bot](./topics/blog-bot.md)  
 - [🇺🇸🗣️💡🗓️ A Presidential Platform for Americans 2028](./topics/a-presidential-platform-for-americans-2028.md)  
 - [🐑🎀 Mary Had a Little Lamb](./topics/mary-had-a-little-lamb.md)  
 - [🧸🎶🧸 Nursery Rhymes](./topics/nursery-rhymes.md)  
 - [⭐✨🌟💫 The Star](./topics/the-star.md)  
-- [🍎🥛🔬✨ Universal Nutrition System Design](./topics/universal-nutrition-system-design.md)  
   
   
 ## [📄  Articles](./articles/index.md) (75)  

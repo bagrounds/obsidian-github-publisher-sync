@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-01-15T16:21:22-08:00
+updated: 2026-01-15T16:41:38-08:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -30,7 +30,8 @@ updated: 2026-01-15T16:21:22-08:00
 - [🧮 Calculator](./tools/calculator.md)  
   
   
-## [📚 Books](./books/index.md) (880)  
+## [📚 Books](./books/index.md) (881)  
+- [🧠⛓️🚫 The Biology of Desire: Why Addiction Is Not a Disease](./books/the-biology-of-desire-why-addiction-is-not-a-disease.md)  
 - [💪📈 Creatine: A Natural Substance and Its Benefits for Muscle Metabolism, Fitness, Health & Longevity](./books/creatine-a-natural-substance-and-its-benefits-for-muscle-metabolism-fitness-health-longevity.md)  
 - [🛡️🥦 In Defense of Food: An Eater's Manifesto](./books/in-defense-of-food-an-eaters-manifesto.md)  
 - [🗽🗣️😠 Freedom for the Thought That We Hate: A Biography of the First Amendment](./books/freedom-for-the-thought-that-we-hate-a-biography-of-the-first-amendment.md)  
@@ -40,10 +41,12 @@ updated: 2026-01-15T16:21:22-08:00
 - [👮‍♀️🪢 Tangled Up in Blue: Policing the American City](./books/tangled-up-in-blue-policing-the-american-city.md)  
 - [📢💡 Public Broadcasting and the Public Interest](./books/public-broadcasting-and-the-public-interest.md)  
 - [🧊💰⛵🏛️ So You Want to Own Greenland?: Lessons from the Vikings to Trump](./books/so-you-want-to-own-greenland-lessons-from-the-vikings-to-trump.md)  
-- [⚡🧠🏃 Spark: The Revolutionary New Science of Exercise and the Brain](./books/spark-the-revolutionary-new-science-of-exercise-and-the-brain.md)  
   
   
-## [📺 Videos](./videos/index.md) (593)  
+## [📺 Videos](./videos/index.md) (594)  
+- [🏛️🛡️ Do ICE Officers Have 'Immunity'?](./videos/do-ice-officers-have-immunity.md)  
+- [🧠⛓️⚖️ Essentials: Understanding & Treating Addiction | Dr. Anna Lembke](./videos/essentials-understanding-treating-addiction-dr-anna-lembke.md)  
+- [💪🧠🚫💊🚀 Tools for Overcoming Substance & Behavioral Addictions | Ryan Soave](./videos/tools-for-overcoming-substance-behavioral-addictions-ryan-soave.md)  
 - [📈🤏💡 The science behind small wins](./videos/the-science-behind-small-wins.md)  
 - [🏛️🤬 Jason Crow is really pissed](./videos/jason-crow-is-really-pissed.md)  
 - [🧬🤖❓ Can We Build a Human? – A Question of Science with Professor Brian Cox](./videos/can-we-build-a-human-a-question-of-science-with-professor-brian-cox.md)  
@@ -51,9 +54,6 @@ updated: 2026-01-15T16:21:22-08:00
 - [🧠🍎💊📈 Food & Supplements for Brain Health & Cognitive Performance | Huberman Lab Essentials](./videos/food-supplements-for-brain-health-cognitive-performance-huberman-lab-essentials.md)  
 - [🍏🥕🔬🤔❓🤔 Can We Trust The Science Of Nutrition? – A Question of Science with Brian Cox](./videos/can-we-trust-the-science-of-nutrition-a-question-of-science-with-brian-cox.md)  
 - [🔎🏠📰🗣️🇺🇸 FBI searches reporter’s home, raising concerns about intimidation of free press](./videos/fbi-searches-reporters-home-raising-concerns-about-intimidation-of-free-press.md)  
-- [🧠💥🔄 RUDE AWAKENING: How Rich’s adult autism diagnosis changed everything](./videos/rude-awakening-how-rich-s-adult-autism-diagnosis-changed-everything.md)  
-- [❤️⬇️🔬 Lower Your Resting Heart Rate (The Simple Science Most People Miss) | Dr. Andy Galpin 5 Minute Phys](./videos/lower-your-resting-heart-rate-the-simple-science-most-people-miss-dr-andy-galpin-5-minute-phys.md)  
-- [🚨🗣️🏛️💔 A Breaking Point: The Minneapolis Police Chief on ICE](./videos/a-breaking-point-the-minneapolis-police-chief-on-ice.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (88)  

@@ -58,7 +58,7 @@ youtube: https://youtu.be/J7yn4tJEmJU
 ## 🤔 Evaluation  
   
 - 🤖 The perspective that addiction is a coping mechanism for trauma is widely supported by experts like Dr. Gabor Maté in the book In the Realm of Hungry Ghosts published by North Atlantic Books.  
-- 🔬 However, some biomedical models emphasize genetic predispositions and primary brain disease over environmental trauma, as explored in The Biology of Desire by Marc Lewis and published by PublicAffairs.  
+- 🔬 However, some biomedical models emphasize genetic predispositions and primary brain disease over environmental trauma, as explored in [🧠⛓️🚫 The Biology of Desire: Why Addiction Is Not a Disease](../books/the-biology-of-desire-why-addiction-is-not-a-disease.md) by Marc Lewis and published by PublicAffairs.  
 - 🧭 To gain a better understanding, research the efficacy rates of medication assisted treatment versus abstinence based social models.  
   
 ## ❓ Frequently Asked Questions (FAQ)  
@@ -84,7 +84,7 @@ youtube: https://youtu.be/J7yn4tJEmJU
   
 ### 🆚 Contrasting  
   
-* 📙 The Biology of Desire by Marc Lewis argues that addiction is a learned habit of the brain rather than a chronic disease.  
+* [🧠⛓️🚫 The Biology of Desire: Why Addiction Is Not a Disease](../books/the-biology-of-desire-why-addiction-is-not-a-disease.md) by Marc Lewis argues that addiction is a learned habit of the brain rather than a chronic disease.  
 * 📒 Unbroken Brain by Maia Szalavitz describes addiction as a developmental learning disorder rather than a result of moral failing or trauma alone.  
   
 ### 🎨 Creatively Related  

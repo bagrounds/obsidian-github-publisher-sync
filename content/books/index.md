@@ -5,10 +5,10 @@ aliases:
 share: true
 URL: https://bagrounds.org/books
 backlinks: false
-updated: 2026-01-16T17:55:52-08:00
+updated: 2026-01-17T10:41:45-08:00
 ---
 [Home](../index.md)  
-# 📚 Books (883)  
+# 📚 Books (884)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [💻0️⃣ Source Code: My Beginnings](./source-code-my-beginnings.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)  
@@ -384,6 +384,7 @@ updated: 2026-01-16T17:55:52-08:00
 - [🌍💰📊 Macroeconomics](./macroeconomics.md)  
 - [🧠🌱💀 Made to Stick: Why Some Ideas Survive and Others Die](./made-to-stick.md)  
 - [🤯🐍🏘️🎪💥 Mad House: How Donald Trump, MAGA Mean Girls, a Former Used Car Salesman, a Florida Nepo Baby, and a Man with Rats in His Walls Broke Congress](./mad-house.md)  
+- [📜👶🗽 Magna Carta: The Birth of Liberty](./magna-carta-the-birth-of-liberty.md)  
 - [🧠🔒 Make It Stick: The Science of Successful Learning](./make-it-stick.md)  
 - [💰🇺🇸 Making Money Work for Us: How MMT Can Save America](./making-money-work-for-us-how-mmt-can-save-america.md)  
 - [💰⚕️ Making Them Pay: How to Get the Most from Health Insurance and Managed Care](./making-them-pay-how-to-get-the-most-from-health-insurance-and-managed-care.md)  

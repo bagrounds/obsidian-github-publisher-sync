@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-01-16T17:55:52-08:00
+updated: 2026-01-17T10:41:45-08:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -13,8 +13,9 @@ updated: 2026-01-16T17:55:52-08:00
 ❔ What do 🫵 _you_ 🤔 think?  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (428)  
-- [2026-01-16](./reflections/2026-01-16.md)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (429)  
+- [2026-01-17](./reflections/2026-01-17.md)  
+- [2026-01-16 | 🤖 Agent ❤️ Taught 🦠 Measles 💉 Health 💰 Debt 📜 History 📺📰📚](./reflections/2026-01-16.md)  
 - [2026-01-15 | 🫦 Desire 🤖 Bot 🏆 Wins 🛡️ Immunity 🌌📺📚](./reflections/2026-01-15.md)  
 - [2026-01-14 | 🦸‍♀️ Strong 🧬 Human 🎭 Character 🛡️ Defends 🗽 Freedom 🍽️ In 🌌 Everything 🧪 As 🧬 Science 🗯️ Hates 🧺 Dirty 😈 Devils 📜 Manifesto 📚📺📰⌨️✍🏽](./reflections/2026-01-14.md)  
 - [2026-01-13 | 🔥 Devils ⚡ Spark ❤️ Heart 📚📺](./reflections/2026-01-13.md)  
@@ -23,14 +24,14 @@ updated: 2026-01-16T17:55:52-08:00
 - [2026-01-10 | 🧼📰 Public Record 📚🪞🌌📺📰](./reflections/2026-01-10.md)  
 - [2026-01-09 | 🤔 How Does 💧 Water 🔨 Work? 📚📺](./reflections/2026-01-09.md)  
 - [2026-01-08 | ☯️ Tao of 💪 Unbreakable 🌊 Water 🏹 Archery 🧮 Calculator 📺📚🧰](./reflections/2026-01-08.md)  
-- [2026-01-07 | 🇺🇸 Collateral 🪦 Damage 📺📰📚](./reflections/2026-01-07.md)  
   
   
 ## [🧰 Tools](./tools/index.md) (1)  
 - [🧮 Calculator](./tools/calculator.md)  
   
   
-## [📚 Books](./books/index.md) (883)  
+## [📚 Books](./books/index.md) (884)  
+- [📜👶🗽 Magna Carta: The Birth of Liberty](./books/magna-carta-the-birth-of-liberty.md)  
 - [🌅🧑‍🤝‍🧑 The Dawn of Everything: A New History of Humanity](./books/the-dawn-of-everything-a-new-history-of-humanity.md)  
 - [🏛️💰 Debt: The First 5,000 Years](./books/debt-the-first-5000-years.md)  
 - [📖🏛️📉 Seeing Like a State: How Certain Schemes to Improve the Human Condition Have Failed](./books/seeing-like-a-state-how-certain-schemes-to-improve-the-human-condition-have-failed.md)  
@@ -40,10 +41,12 @@ updated: 2026-01-16T17:55:52-08:00
 - [💪📈 Creatine: A Natural Substance and Its Benefits for Muscle Metabolism, Fitness, Health & Longevity](./books/creatine-a-natural-substance-and-its-benefits-for-muscle-metabolism-fitness-health-longevity.md)  
 - [🛡️🥦 In Defense of Food: An Eater's Manifesto](./books/in-defense-of-food-an-eaters-manifesto.md)  
 - [🗽🗣️😠 Freedom for the Thought That We Hate: A Biography of the First Amendment](./books/freedom-for-the-thought-that-we-hate-a-biography-of-the-first-amendment.md)  
-- [🎭🇺🇸💸🏆 The Age of Illusions: How America Squandered Its Cold War Victory](./books/the-age-of-illusions-how-america-squandered-its-cold-war-victory.md)  
   
   
-## [📺 Videos](./videos/index.md) (597)  
+## [📺 Videos](./videos/index.md) (598)  
+- [😴☕️💡 Why you’re so tired](./videos/why-youre-so-tired.md)  
+- [💰➡️🪖 Why It Matters That Trump Rerouted Money to Pay the Troops | Explainer](./videos/why-it-matters-that-trump-rerouted-money-to-pay-the-troops-explainer.md)  
+- [🗣️🗓️ Politics Chat, December 30, 2025](./videos/politics-chat-december-30-2025.md)  
 - [❤️🧠👨‍👩‍👧‍👦 The crucial emotional skill most adults were never taught | Becky Kennedy](./videos/the-crucial-emotional-skill-most-adults-were-never-taught-becky-kennedy.md)  
 - [💰🤔⚖️ The Most Important Economic Debate of our Lifetime — ft. Justin Wolfers | Prof G Markets](./videos/the-most-important-economic-debate-of-our-lifetime-ft-justin-wolfers-prof-g-markets.md)  
 - [🦠🤒🏥 Snohomish County sees measles outbreak](./videos/snohomish-county-sees-measles-outbreak.md)  
@@ -51,9 +54,6 @@ updated: 2026-01-16T17:55:52-08:00
 - [🏛️🛡️ Do ICE Officers Have 'Immunity'?](./videos/do-ice-officers-have-immunity.md)  
 - [🧠⛓️⚖️ Essentials: Understanding & Treating Addiction | Dr. Anna Lembke](./videos/essentials-understanding-treating-addiction-dr-anna-lembke.md)  
 - [💪🧠🚫💊🚀 Tools for Overcoming Substance & Behavioral Addictions | Ryan Soave](./videos/tools-for-overcoming-substance-behavioral-addictions-ryan-soave.md)  
-- [📈🤏💡 The science behind small wins](./videos/the-science-behind-small-wins.md)  
-- [🏛️🤬 Jason Crow is really pissed](./videos/jason-crow-is-really-pissed.md)  
-- [🧬🤖❓ Can We Build a Human? – A Question of Science with Professor Brian Cox](./videos/can-we-build-a-human-a-question-of-science-with-professor-brian-cox.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (88)  

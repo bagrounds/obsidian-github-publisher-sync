@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-01-17T11:06:21-08:00
+updated: 2026-01-17T11:16:23-08:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -43,7 +43,8 @@ updated: 2026-01-17T11:06:21-08:00
 - [🗽🗣️😠 Freedom for the Thought That We Hate: A Biography of the First Amendment](./books/freedom-for-the-thought-that-we-hate-a-biography-of-the-first-amendment.md)  
   
   
-## [📺 Videos](./videos/index.md) (599)  
+## [📺 Videos](./videos/index.md) (600)  
+- [⚡️🔋💪 How To Have More Energy | Sean Hall | TEDxUNSW](./videos/how-to-have-more-energy-sean-hall-tedxunsw.md)  
 - [😴➡️😩8️⃣💤 Why You Wake Up Exhausted (Even After 8 Hours)](./videos/why-you-wake-up-exhausted-even-after-8-hours.md)  
 - [😴☕️💡 Why you’re so tired](./videos/why-youre-so-tired.md)  
 - [💰➡️🪖 Why It Matters That Trump Rerouted Money to Pay the Troops | Explainer](./videos/why-it-matters-that-trump-rerouted-money-to-pay-the-troops-explainer.md)  
@@ -53,7 +54,6 @@ updated: 2026-01-17T11:06:21-08:00
 - [🦠🤒🏥 Snohomish County sees measles outbreak](./videos/snohomish-county-sees-measles-outbreak.md)  
 - [🤖💬📈🌍 Build a Real-Time AI Sales Agent - Sarah Chieng & Zhenwei Gao, Cerebras](./videos/build-a-real-time-ai-sales-agent-sarah-chieng-zhenwei-gao-cerebras.md)  
 - [🏛️🛡️ Do ICE Officers Have 'Immunity'?](./videos/do-ice-officers-have-immunity.md)  
-- [🧠⛓️⚖️ Essentials: Understanding & Treating Addiction | Dr. Anna Lembke](./videos/essentials-understanding-treating-addiction-dr-anna-lembke.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (88)  

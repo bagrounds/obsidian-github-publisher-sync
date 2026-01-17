@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-01-16T10:54:53-08:00
+updated: 2026-01-16T17:55:52-08:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -30,20 +30,22 @@ updated: 2026-01-16T10:54:53-08:00
 - [🧮 Calculator](./tools/calculator.md)  
   
   
-## [📚 Books](./books/index.md) (882)  
+## [📚 Books](./books/index.md) (883)  
+- [🌅🧑‍🤝‍🧑 The Dawn of Everything: A New History of Humanity](./books/the-dawn-of-everything-a-new-history-of-humanity.md)  
+- [🏛️💰 Debt: The First 5,000 Years](./books/debt-the-first-5000-years.md)  
+- [📖🏛️📉 Seeing Like a State: How Certain Schemes to Improve the Human Condition Have Failed](./books/seeing-like-a-state-how-certain-schemes-to-improve-the-human-condition-have-failed.md)  
+- [🔄📜🏛️ Against the Grain: A Deep History of the Earliest States](./books/against-the-grain-a-deep-history-of-the-earliest-states.md)  
 - [💉🦠👶 Booster Shots: The Urgent Lessons of Measles and the Uncertain Future of Children's Health](./books/booster-shots-the-urgent-lessons-of-measles-and-the-uncertain-future-of-childrens-health.md)  
 - [🧠⛓️🚫 The Biology of Desire: Why Addiction Is Not a Disease](./books/the-biology-of-desire-why-addiction-is-not-a-disease.md)  
 - [💪📈 Creatine: A Natural Substance and Its Benefits for Muscle Metabolism, Fitness, Health & Longevity](./books/creatine-a-natural-substance-and-its-benefits-for-muscle-metabolism-fitness-health-longevity.md)  
 - [🛡️🥦 In Defense of Food: An Eater's Manifesto](./books/in-defense-of-food-an-eaters-manifesto.md)  
 - [🗽🗣️😠 Freedom for the Thought That We Hate: A Biography of the First Amendment](./books/freedom-for-the-thought-that-we-hate-a-biography-of-the-first-amendment.md)  
 - [🎭🇺🇸💸🏆 The Age of Illusions: How America Squandered Its Cold War Victory](./books/the-age-of-illusions-how-america-squandered-its-cold-war-victory.md)  
-- [🦸‍♀️ Strong Female Character](./books/strong-female-character.md)  
-- [😳🧠🤝 Dirty Laundry: Why Adults with ADHD Are So Ashamed and What We Can Do to Help](./books/dirty-laundry-why-adults-with-adhd-are-so-ashamed-and-what-we-can-do-to-help.md)  
-- [👮‍♀️🪢 Tangled Up in Blue: Policing the American City](./books/tangled-up-in-blue-policing-the-american-city.md)  
-- [📢💡 Public Broadcasting and the Public Interest](./books/public-broadcasting-and-the-public-interest.md)  
   
   
-## [📺 Videos](./videos/index.md) (596)  
+## [📺 Videos](./videos/index.md) (597)  
+- [❤️🧠👨‍👩‍👧‍👦 The crucial emotional skill most adults were never taught | Becky Kennedy](./videos/the-crucial-emotional-skill-most-adults-were-never-taught-becky-kennedy.md)  
+- [💰🤔⚖️ The Most Important Economic Debate of our Lifetime — ft. Justin Wolfers | Prof G Markets](./videos/the-most-important-economic-debate-of-our-lifetime-ft-justin-wolfers-prof-g-markets.md)  
 - [🦠🤒🏥 Snohomish County sees measles outbreak](./videos/snohomish-county-sees-measles-outbreak.md)  
 - [🤖💬📈🌍 Build a Real-Time AI Sales Agent - Sarah Chieng & Zhenwei Gao, Cerebras](./videos/build-a-real-time-ai-sales-agent-sarah-chieng-zhenwei-gao-cerebras.md)  
 - [🏛️🛡️ Do ICE Officers Have 'Immunity'?](./videos/do-ice-officers-have-immunity.md)  
@@ -52,8 +54,6 @@ updated: 2026-01-16T10:54:53-08:00
 - [📈🤏💡 The science behind small wins](./videos/the-science-behind-small-wins.md)  
 - [🏛️🤬 Jason Crow is really pissed](./videos/jason-crow-is-really-pissed.md)  
 - [🧬🤖❓ Can We Build a Human? – A Question of Science with Professor Brian Cox](./videos/can-we-build-a-human-a-question-of-science-with-professor-brian-cox.md)  
-- [⏰👵🔬 Circadian Code to Extend Longevity | Satchin Panda | TEDxVeniceBeach](./videos/circadian-code-to-extend-longevity-satchin-panda-tedx-venice-beach.md)  
-- [🧠🍎💊📈 Food & Supplements for Brain Health & Cognitive Performance | Huberman Lab Essentials](./videos/food-supplements-for-brain-health-cognitive-performance-huberman-lab-essentials.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (88)  

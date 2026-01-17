@@ -54,7 +54,7 @@ CTA: Resist simplification.
   
 ### 📖 Similar Reads (Exploring State Power, Planning, Complexity, Unintended Consequences)  
   
-* 👨‍🏫 **Scott, James C. - *Against the Grain: A Deep History of the Earliest States***: 🌾 Explores the origins of agrarian states, arguing they were often fragile and coercive 💪, challenging traditional narratives of progress 🚀. 🏗️ Builds on themes from *Seeing Like a State*.  
+* 👨‍🏫 **Scott, James C. - [🔄📜🏛️ Against the Grain: A Deep History of the Earliest States](./against-the-grain-a-deep-history-of-the-earliest-states.md)**: 🌾 Explores the origins of agrarian states, arguing they were often fragile and coercive 💪, challenging traditional narratives of progress 🚀. 🏗️ Builds on themes from *Seeing Like a State*.  
 * 🏔️ **Scott, James C. - *The Art of Not Being Governed: An Anarchist History of Upland Southeast Asia***: 🏃‍♂️ Examines how societies have historically evaded state control 👑, complementing the critique of state legibility 👁️.  
 * 🔄 **Polanyi, Karl - [🌍🏛️ The Great Transformation: The Political and Economic Origins of Our Time](./the-great-transformation-the-political-and-economic-origins-of-our-time.md)**: 💸 Analyzes the historical imposition of market economies and the societal counter-movements ✊, echoing Scott's theme of imposed systems disrupting organic social orders.  
 * 🤝 **Ostrom, Elinor - *Governing the Commons***: 🏡 Provides counter-examples where local communities successfully manage resources without state control 👑 or privatization 💸, highlighting the effectiveness of local arrangements (*mētis* 🧠).  

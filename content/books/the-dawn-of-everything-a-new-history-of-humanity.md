@@ -76,7 +76,7 @@ affiliate link: https://amzn.to/4pDax3h
 ## 📚 Book Recommendations  
   
 ### 👯 Similar  
-* 🌾 Against the Grain by James C. Scott  
+* [🔄📜🏛️ Against the Grain: A Deep History of the Earliest States](./against-the-grain-a-deep-history-of-the-earliest-states.md) by James C. Scott  
 * [🏛️💰 Debt: The First 5,000 Years](./debt-the-first-5000-years.md) Years by David Graeber  
 * 🛡️ The Art of Not Being Governed by James C. Scott  
   

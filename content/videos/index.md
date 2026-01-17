@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-01-16T10:54:53-08:00
+updated: 2026-01-16T17:55:52-08:00
 ---
 [Home](../index.md)  
-# 📺 Videos (596)  
+# 📺 Videos (597)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
 - [❓💪🔬 12 Questions About Creatine with Stephen Cornish, PhD](./12-questions-about-creatine-w-stephen-cornish-phd.md)  
@@ -422,6 +422,7 @@ updated: 2026-01-16T10:54:53-08:00
 - [🧠🔄♾️💡 The concept that changes how you learn forever](./the-concept-that-changes-how-you-learn-forever.md)  
 - [The conditions inside the infamous El Salvador prison where deported migrants are held](./the-conditions-inside-the-infamous-el-salvador-prison-where-deported-migrants-are-held.md)  
 - [👨🏿🗣️🏛️ The Connecticut Forum: President Barack Obama in Conversation with Heather Cox Richardson](./president-barack-obama-in-conversation-with-heather-cox-richardson-the-connecticut-forum.md)  
+- [❤️🧠👨‍👩‍👧‍👦 The crucial emotional skill most adults were never taught | Becky Kennedy](./the-crucial-emotional-skill-most-adults-were-never-taught-becky-kennedy.md)  
 - [📜🇺🇸🗽➡️ The Declaration of Independence | Journey to American Democracy](./the-declaration-of-independence-journey-to-american-democracy.md)  
 - [🏛️📉🇺🇸 The Democracy Crisis Underneath America’s Affordability Crisis | Zohran Mamdani](./the-democracy-crisis-underneath-americas-affordability-crisis-zohran-mamdani.md)  
 - [🔋📈🧘🗣️ The Energy Project | Tony Schwartz | Talks at Google](./the-energy-project-tony-schwartz-talks-at-google.md)  

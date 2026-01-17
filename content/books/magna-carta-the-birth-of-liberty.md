@@ -88,4 +88,7 @@ affiliate link: https://amzn.to/4pFY8vj
 * 📜 The Bill of Rights: A User's Guide by Akhil Reed Amar (Examines the American Bill of Rights, drawing connections to its historical roots)  
   
 ## 🫵 What Do You Think?  
-🤔 Considering the Magna Carta's journey from a self-serving baronial pact to a global symbol of liberty, which of its enduring principles do you believe holds the most critical importance for contemporary governance?
+🤔 Considering the Magna Carta's journey from a self-serving baronial pact to a global symbol of liberty, which of its enduring principles do you believe holds the most critical importance for contemporary governance?  
+  
+## 📘 Facebook  
+<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fbagrounds%2Fposts%2Fpfbid02hYSxqiuRMK5WNhwU9RH6Gv5R67546aYhYXd5L1Xt1TitW2VafsAK2s4CFXB1EPkel&show_text=true&width=500" width="500" height="519" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>

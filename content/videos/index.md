@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-01-17T11:06:21-08:00
+updated: 2026-01-17T11:16:23-08:00
 ---
 [Home](../index.md)  
-# 📺 Videos (599)  
+# 📺 Videos (600)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
 - [❓💪🔬 12 Questions About Creatine with Stephen Cornish, PhD](./12-questions-about-creatine-w-stephen-cornish-phd.md)  
@@ -212,6 +212,7 @@ updated: 2026-01-17T11:06:21-08:00
 - [🧠💪🧘 How To Force Your Brain To Do Hard Things (Lotus Method)](./how-to-force-your-brain-to-do-hard-things-lotus-method.md)  
 - [🧠🛠️💪📈 How to hack your brain to crave doing hard things](./how-to-hack-your-brain-to-crave-doing-hard-things.md)  
 - [😃☀️👍📈 ️ HOW TO HAVE A GOOD DAY by Caroline Webb | Animated Summary](./how-to-have-a-good-day-by-caroline-webb-animated-summary.md)  
+- [⚡️🔋💪 How To Have More Energy | Sean Hall | TEDxUNSW](./how-to-have-more-energy-sean-hall-tedxunsw.md)  
 - [🧠⏱️⚡️📚 How to learn ANYTHING in less than 24 hours](./how-to-learn-anything-in-less-than-24-hours.md)  
 - [✨🎯🔒✅ How to make your dreams basically inevitable](./how-to-make-your-dreams-basically-inevitable.md)  
 - [🔋⚡😴🌞 How to never be tired again](./how-to-never-be-tired-again.md)  

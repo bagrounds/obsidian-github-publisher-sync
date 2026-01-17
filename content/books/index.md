@@ -5,10 +5,10 @@ aliases:
 share: true
 URL: https://bagrounds.org/books
 backlinks: false
-updated: 2026-01-16T10:54:53-08:00
+updated: 2026-01-16T17:55:52-08:00
 ---
 [Home](../index.md)  
-# 📚 Books (882)  
+# 📚 Books (883)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [💻0️⃣ Source Code: My Beginnings](./source-code-my-beginnings.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)  
@@ -26,6 +26,7 @@ updated: 2026-01-16T10:54:53-08:00
 - [🎭🤫 Active Measures: The Secret History of Disinformation and Political Warfare](./active-measures-the-secret-history-of-disinformation-and-political-warfare.md)  
 - [🧬🕹️ Adaptive Control](./adaptive-control.md)  
 - [🧑‍🧒💔🩹 Adult Children of Emotionally Immature Parents: How to Heal from Distant, Rejecting, or Self-Involved Parents](./adult-children-of-emotionally-immature-parents-how-to-heal-from-distant-rejecting-or-self-involved-parents.md)  
+- [🔄📜🏛️ Against the Grain: A Deep History of the Earliest States](./against-the-grain-a-deep-history-of-the-earliest-states.md)  
 - [🧑‍🌾🌿 A Gardener's Guide to Botany: The Biology Behind the Plants You Love, How They Grow, and What They Need](./a-gardeners-guide-to-botany.md)  
 - [🤖⚙️ Agentic Artificial Intelligence: Harnessing AI Agents to Reinvent Business, Work and Life](./agentic-artificial-intelligence-harnessing-ai-agents-to-reinvent-business-work-and-life.md)  
 - [⬆️🤥🏛️ A Higher Loyalty: Truth, Lies, and Leadership](./a-higher-loyalty-truth-lies-and-leadership.md)  

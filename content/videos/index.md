@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-01-17T10:41:45-08:00
+updated: 2026-01-17T11:06:21-08:00
 ---
 [Home](../index.md)  
-# 📺 Videos (598)  
+# 📺 Videos (599)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
 - [❓💪🔬 12 Questions About Creatine with Stephen Cornish, PhD](./12-questions-about-creatine-w-stephen-cornish-phd.md)  
@@ -30,6 +30,7 @@ updated: 2026-01-17T10:41:45-08:00
 - [🧠🪜💡🤔⬆️🎓 6 Levels of Thinking Every Student MUST Master](./6-levels-of-thinking-every-student-must-master.md)  
 - [😇😈📉🚫 7️⃣ Deadly Innocent Frauds-A BCB Economics Lecture](./seven-deadly-innocent-frauds-a-bcb-economics-lecture.md)  
 - [👶🧸8️⃣🗓️ Montessori Items For An 8 Month Old Baby](./8-montessori-items-for-an-8-month-old-baby-cc.md)  
+- [😴➡️😩8️⃣💤 Why You Wake Up Exhausted (Even After 8 Hours)](./why-you-wake-up-exhausted-even-after-8-hours.md)  
 - [🇺🇸🗳️⚠️ A Big-Picture Look at the Threat to Voting Coming From the Trump Administration | Explainer](./a-big-picture-look-at-the-threat-to-voting-coming-from-the-trump-administration-explainer.md)  
 - [🚨🗣️🏛️💔 A Breaking Point: The Minneapolis Police Chief on ICE](./a-breaking-point-the-minneapolis-police-chief-on-ice.md)  
 - [🏛️📉⚠️🎭 A Brittle Administration Inventing a Crime Crisis | Explainer](./a-brittle-administration-inventing-a-crime-crisis-explainer.md)  

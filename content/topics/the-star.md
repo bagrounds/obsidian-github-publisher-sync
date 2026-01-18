@@ -6,7 +6,7 @@ title: ⭐✨🌟💫 The Star
 URL: https://bagrounds.org/topics/the-star
 ---
 [Home](../index.md) > [Topics](./index.md) > [🧸🎶🧸 Nursery Rhymes](./nursery-rhymes.md)  
-# ⭐✨🌟💫 The Star  
+# [⭐✨🌟💫 The Star](https://www.poetryfoundation.org/poems/45316/the-star-56d224c697fbe)  
 - By Jane Taylor (1783–1824)  
 - First published in 1806 in the collection Rhymes for the Nursery, co-authored with her sister, Ann Taylor.  
 ## 🎶 Lyrics  
@@ -30,8 +30,10 @@ URL: https://bagrounds.org/topics/the-star
 👁️ For you never shut your eye,  
 ☀️ Till the sun is in the sky.  
   
-✨ Twinkle, twinkle, little star,  
-🤔 How I wonder what you are!  
+✨ 'Tis your bright and tiny spark,  
+🔦 Lights the trav'ller in the dark:  
+🤔 Tho' I know not what you are,  
+⭐ Twinkle, twinkle, little star.  
   
 ## 🤔 Evaluation  
 * 👶 The poem's perspective, authored by Jane Taylor, is a child's expression of wonder and awe at a star and its practical purpose.  

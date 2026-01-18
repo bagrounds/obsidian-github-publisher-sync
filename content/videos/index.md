@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-01-17T22:55:27-08:00
+updated: 2026-01-18T08:29:57-08:00
 ---
 [Home](../index.md)  
-# 📺 Videos (600)  
+# 📺 Videos (601)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
 - [❓💪🔬 12 Questions About Creatine with Stephen Cornish, PhD](./12-questions-about-creatine-w-stephen-cornish-phd.md)  
@@ -147,6 +147,7 @@ updated: 2026-01-17T22:55:27-08:00
 - [🐘🔴👴🏿💥 Epstein Is A Real Problem For The GOP | Trump's Creepy Past | Blaming Obama](./epstein-is-a-real-problem-for-the-gop-trumps-creepy-past-blaming-obama.md)  
 - [🧠⛓️⚖️ Essentials: Understanding & Treating Addiction | Dr. Anna Lembke](./essentials-understanding-treating-addiction-dr-anna-lembke.md)  
 - [Ethics expert breaks down Trump administration’s conflicts of interest](./ethics-expert-breaks-down-trump-administrations-conflicts-of-interest.md)  
+- [😴❌💡 Everything You Know About Fatigue is Wrong](./everything-you-know-about-fatigue-is-wrong.md)  
 - [Experts are STUNNED! Meta's NEW LLM Architecture is a GAME-CHANGER!](./experts-are-stunned-metas-new-llm-architecture-is-a-game-changer.md)  
 - [🏛️👎 Ex-Trump White House attorney calls Comey's indictment 'un-American and despicable'](./ex-trump-white-house-attorney-calls-comeys-indictment-un-american-and-despicable.md)  
 - [🗳️🎉➡️ Ezra Klein: This Is How Democrats Win](./ezra-klein-this-is-how-democrats-win.md)  

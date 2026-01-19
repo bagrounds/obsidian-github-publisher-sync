@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-01-19T08:19:38-08:00
+updated: 2026-01-19T15:31:32-08:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -72,12 +72,12 @@ updated: 2026-01-19T08:19:38-08:00
 - [🧠🧩🎯⚙️ An Approach for Systematic Decomposition of Complex LLM Tasks](./articles/an-approach-for-systematic-decomposition-of-complex-llm-tasks.md)  
   
   
-## [🤖💬 Bot Chats](./bot-chats/index.md) (46)  
+## [🤖💬 Bot Chats](./bot-chats/index.md) (47)  
+- [📖 Book 🧭 Explorer 3](./bot-chats/book-explorer-3.md)  
 - [📖 Book 🧭 Explorer 2](./bot-chats/book-explorer-2.md)  
 - [👶😭➡️😊 Summarize The Happiest Baby On The Block](./bot-chats/summarize-the-happiest-baby-on-the-block.md)  
 - [📖 Book 🧭 Explorer 1](./bot-chats/book-explorer-1.md)  
 - [🇦🇹💰🆚📈🖨️ Austrian Economics vs Modern Monetary Theory](./bot-chats/austrian-economics-vs-modern-monetary-theory.md)  
-- [🧭 Managing 🕸️ Complexity 🧠](./bot-chats/managing-complexity.md)  
   
   
 ## [💾 Software](./software/index.md) (30)  
@@ -88,10 +88,10 @@ updated: 2026-01-19T08:19:38-08:00
 - [⚛️🔄 React](./software/react.md)  
   
   
-## [👥 People](./people/index.md) (17)  
+## [👥 People](./people/index.md) (18)  
+- [⚔️🗡️🩸 Joe Abercrombie](./people/joe-abercrombie.md)  
 - [👨‍🏫📉💵 Warren Mosler](./people/warren-mosler.md)  
 - [🤖🧠💻 Andrej Karpathy](./people/andrej-karpathy.md)  
-- [👨‍🏫📈💻 Scott Galloway](./people/scott-galloway.md)  
   
   
 ## [🛍️ Products](./products/index.md) (5)  

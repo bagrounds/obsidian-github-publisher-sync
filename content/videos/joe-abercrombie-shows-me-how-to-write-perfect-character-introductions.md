@@ -10,7 +10,7 @@ Channel: Jed Herne
 tags:
 youtube: https://youtu.be/0k8Lll2QkFc
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](../index.md) > [Videos](./index.md) | [⚔️🗡️🩸 Joe Abercrombie](../people/joe-abercrombie.md)  
 # ✍️🎭🧙‍♂️ Joe Abercrombie Shows Me How to Write PERFECT Character Introductions  
 ![Joe Abercrombie Shows Me How to Write PERFECT Character Introductions](https://youtu.be/0k8Lll2QkFc)  
   

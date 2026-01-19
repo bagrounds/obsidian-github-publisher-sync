@@ -5,7 +5,7 @@ aliases:
 title: "🌱🧘🏼‍♀️🏆 Mindset: The New Psychology of Success"
 URL: https://bagrounds.org/books/Mindset
 Author: "[[Carol Dweck]]"
-tags: 
+tags:
 affiliate link: https://amzn.to/3HAAyQ0
 CTA: 📈 Cultivate growth.
 ---
@@ -80,7 +80,7 @@ Carol Dweck's "Mindset" explores the fundamental difference between a **fixed mi
 * **Best Tangentially Related Book:** "[Thinking, Fast and Slow](./thinking-fast-and-slow.md)" by Daniel Kahneman. This book delves into the cognitive biases that influence our thinking and decision-making, providing a broader understanding of how our minds work. 🧠  
 * **Best Diametrically Opposed Book:** "The Talent Code: Greatness Isn't Born. It's Grown." by Daniel Coyle. While not strictly opposed, it emphasizes deliberate practice and myelination, which could be seen as a more mechanistic view of talent development compared to Dweck’s more psychological approach. 🏗️  
 * **Best Fiction Book That Incorporates Related Ideas:** "Ender's Game" by Orson Scott Card. Ender's journey showcases the development of skills and the importance of adapting to challenges, reflecting growth mindset principles. 🎮  
-* **Random Book That Everyone Should Read:** "The Little Prince" by Antoine de Saint-Exupéry. This timeless novella offers profound insights into human nature, relationships, and the importance of seeing the world with childlike wonder. It encourages reflection and fosters empathy, qualities essential for personal growth and meaningful connections. 🤴  
+* **Random Book That Everyone Should Read:** [🤴 The Little Prince](./the-little-prince.md) by Antoine de Saint-Exupéry. This timeless novella offers profound insights into human nature, relationships, and the importance of seeing the world with childlike wonder. It encourages reflection and fosters empathy, qualities essential for personal growth and meaningful connections. 🤴  
   
 ## 💬 [Gemini](https://gemini.google.com) Prompt  
 > Summarize the book: Mindset. Start the summary with a TLDR - a single statement that conveys a maximum of the useful information provided in the book. Follow this with a deep dive. Catalogue the topics, methods, and research discussed. Be sure to highlight any significant theories, theses, or mental models proposed. Provide a critical analysis of the quality of the information presented, using scientific backing, author credentials, authoritative reviews, and other markers of high quality information as justification. Emphasize practical takeaways. Make the following additional book recommendations: the best alternate book on the same topic; the best book that is tangentially related; the best book that is diametrically opposed; the best fiction book that incorporates related ideas; and a random book that everyone should read (justify your choice). Format your response as markdown, starting at heading level H4, with inline links, for easy copy paste. Use meaningful emojis liberally to enhance readability, especially in headings and as bullets for lists. Do not include broken links or links to commercial sites (e.g. Amazon).

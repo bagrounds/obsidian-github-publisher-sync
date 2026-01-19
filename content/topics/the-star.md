@@ -68,5 +68,5 @@ URL: https://bagrounds.org/topics/the-star
 * 📜 The Norton Anthology of English Literature: Provides a vast collection of more complex and adult English poetry across many centuries, offering a counterpoint to the simplicity of nursery verse.  
   
 ### 🎨 Creatively Related  
-* 🌠 The Little Prince by Antoine de Saint-Exupéry: A philosophical tale where a young prince travels between planets, exploring themes of loneliness, friendship, and the wonder of stars from a humanitarian perspective.  
+* [🤴 The Little Prince](../books/the-little-prince.md) by Antoine de Saint-Exupéry: A philosophical tale where a young prince travels between planets, exploring themes of loneliness, friendship, and the wonder of stars from a humanitarian perspective.  
 * 💡 The History of the Telescope by Henry C. King: Details the evolution of the tool that allowed humanity to move beyond the naked-eye view of the stars described in the poem to a deeper scientific understanding.

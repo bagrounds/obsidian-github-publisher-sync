@@ -5,10 +5,10 @@ aliases:
 share: true
 URL: https://bagrounds.org/books
 backlinks: false
-updated: 2026-01-18T08:29:57-08:00
+updated: 2026-01-18T23:23:09-08:00
 ---
 [Home](../index.md)  
-# 📚 Books (884)  
+# 📚 Books (885)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [💻0️⃣ Source Code: My Beginnings](./source-code-my-beginnings.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)  
@@ -772,6 +772,7 @@ updated: 2026-01-18T08:29:57-08:00
 - [😴🔬 The Science of Sleep: What It Is, How It Works, and Why It Matters](./the-science-of-sleep-what-it-is-how-it-works-and-why-it-matters.md)  
 - [🔬🗣️🎭 The Science of Storytelling: Why Stories Make Us Human and How to Tell Them Better](./the-science-of-storytelling.md)  
 - [🥼🛡️ The Scientific Attitude: Defending Science from Denial, Fraud, and Pseudoscience](./the-scientific-attitude.md)  
+- [🔬🥱 The Scientific Basis of Fatigue](./the-scientific-basis-of-fatigue.md)  
 - [🧪👁️ The Scientific Image](./the-scientific-image.md)  
 - [👶🧠🔬 The Scientist in the Crib: Minds, Brains, And How Children Learn](./the-scientist-in-the-crib-minds-brains-and-how-children-learn.md)  
 - [🤖📈 The Second Machine Age: Work, Progress, and Prosperity in a Time of Brilliant Technologies](./the-second-machine-age-work-progress-and-prosperity-in-a-time-of-brilliant-technologies.md)  

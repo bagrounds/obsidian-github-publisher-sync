@@ -49,7 +49,7 @@ affiliate link: https://amzn.to/3G9KUWP
   
 ### 🎨 Creatively Related Books (Sparking Philosophical Thought Through Story)  
   
-* 👑 ***The Little Prince*** by Antoine de Saint-Exupéry: 🦊 A classic novella rich in philosophical reflections on human nature, truth, and what is essential.  
+* **[🤴 The Little Prince](./the-little-prince.md)** by Antoine de Saint-Exupéry: 🦊 A classic novella rich in philosophical reflections on human nature, truth, and what is essential.  
 * 🐻 ***Winnie-the-Pooh*** by A. A. Milne: 🍯 Contains subtle undercurrents of philosophical and psychological insights within simple narratives.  
 * 🔎 ***Through the Looking-Glass*** by Lewis Carroll: 🐇 Explores logic, language, and perception in a whimsical and mind-bending way.  
 * 🧙 ***The Wizard of Oz*** by L. Frank Baum: 🌈 Offers reflections on courage, wisdom, and the nature of home and desires.  

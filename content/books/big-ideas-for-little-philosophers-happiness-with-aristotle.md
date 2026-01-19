@@ -41,9 +41,9 @@ affiliate link: https://amzn.to/3ZLGBaU
     * [🤔👶💭 Imagination with René Descartes](./big-ideas-for-little-philosophers-imagination-with-rene-descartes.md)  
     * ❤️ *Kindness with Confucius*  
     * 💞 *Love with Plato*  
-* 🦸 **"Ordinary People Change the World" Series by Brad Meltzer:** 📚 While not strictly philosophy, this biography series introduces young readers to historical figures who embodied important virtues and ideas.  
-* ⚛️ **"Baby University" Series by Chris Ferrie:** 🔬 This series introduces complex scientific concepts using simple language and illustrations for babies and toddlers, similar in approach to making "big ideas" accessible.  
-* 😂 **"Plato and the Platypus Walk into a Bar..." by Thomas Cathcart and Daniel Klein (Adapted for Young Readers):** 🤣 While the original is for adults, simplified versions or similar concept books that use humor to introduce philosophical ideas could be a good fit for slightly older children.  
+* 🦸 **Ordinary People Change the World Series by Brad Meltzer:** 📚 While not strictly philosophy, this biography series introduces young readers to historical figures who embodied important virtues and ideas.  
+* **[👶📚 Baby University Series](./baby-university-complete-for-babies-board-book-set.md) by Chris Ferrie:** 🔬 This series introduces complex scientific concepts using simple language and illustrations for babies and toddlers, similar in approach to making "big ideas" accessible.  
+* 😂 **Plato and the Platypus Walk into a Bar... by Thomas Cathcart and Daniel Klein (Adapted for Young Readers):** 🤣 While the original is for adults, simplified versions or similar concept books that use humor to introduce philosophical ideas could be a good fit for slightly older children.  
 * 🤔 **"Big Ideas for Curious Minds: An Introduction to Philosophy" by The School of Life:** 🧑‍🏫 Aimed at slightly older children, this book covers a range of philosophical topics in an engaging way.  
   
 ### 🔄 Contrasting Books (Different Perspectives on Happiness or Related Concepts)  
@@ -69,7 +69,7 @@ affiliate link: https://amzn.to/3ZLGBaU
     * 🌍 Books that encourage curiosity about the world.  
 * 🦊 **Fables and Folktales:** 👵 Many traditional stories offer simple moral lessons and insights into human nature and the consequences of different actions, often touching on themes relevant to living a good life.  
 * 🤝 **Books on Social-Emotional Learning (SEL):** ❤️ These books help children develop self-awareness, self-management, social awareness, relationship skills, and responsible decision-making, all of which contribute to a flourishing life.  
-* 👑 ***The Little Prince* by Antoine de Saint-Exupéry:** 🌟 While for slightly older children (or to be read with adults), this classic is deeply philosophical and touches on themes of friendship, love, and what is truly important in life, resonating with some of Aristotle's ideas on meaningful relationships.  
+* **[🤴 The Little Prince](./the-little-prince.md) by Antoine de Saint-Exupéry:** 🌟 While for slightly older children (or to be read with adults), this classic is deeply philosophical and touches on themes of friendship, love, and what is truly important in life, resonating with some of Aristotle's ideas on meaningful relationships.  
 * 👨‍⚖️ **Books on Ethics for Children:** ✅ More direct introductions to ethical reasoning and making good choices.  
     * 🤔 *Ethics for Kids: 40 Fun Projects That Help You Explore Good and Evil, Right and Wrong, and More* by Sharon Kaye.  
 * 🌟 **Biographies of People Who Lived Virtuous or Meaningful Lives:** 📖 Stories of individuals who exemplified courage, kindness, perseverance, and other virtues.  

@@ -102,7 +102,7 @@ URL: https://bagrounds.org/bot-chats/book-explorer-3
   
 🗺️ Here are four 🌟 recommendations that sit at the 📍 intersection of 🎨 literary beauty and 🧘 profound insight:  
   
-### 🤴 1. *The Little Prince* by Antoine de Saint-Exupéry  
+### 1. [🤴 The Little Prince](../books/the-little-prince.md) by Antoine de Saint-Exupéry  
   
 🌹 Though often shelved with 🧸 children’s books, this is one of the most 🎩 sophisticated works of prose ever written. 👨‍✈️ Saint-Exupéry, a pilot, wrote with a 🌬️ deceptive simplicity that is actually a feat of 🕊️ weightless elegance.  
   
@@ -132,12 +132,12 @@ URL: https://bagrounds.org/bot-chats/book-explorer-3
   
 ### 📊 The Wisdom Matrix  
   
-| 📚 Book | 💡 Core Lesson | 🖋️ Tone of Prose |  
-| --- | --- | --- |  
-| 🤴 ***The Little Prince*** | 💖 Emotional Connection | 🌬️ Deceptively Simple / 📜 Fable-like |  
-| 🌊 ***Siddhartha*** | 🧘 Self-Realization | 🧘 Meditative / 💧 Fluid |  
-| 🐫 ***The Alchemist*** | 🗺️ Pursuing Dreams | 🎯 Direct / 🧿 Symbolic |  
-| 🩺 ***When Breath Becomes Air*** | ✨ Finding Meaning in Time | 🔬 Precise / 🎓 Intellectual / 🎭 Soulful |  
+| 📚 Book                                               | 💡 Core Lesson            | 🖋️ Tone of Prose                         |  
+| ----------------------------------------------------- | ------------------------- | ----------------------------------------- |  
+| **[🤴 The Little Prince](../books/the-little-prince.md)** | 💖 Emotional Connection   | 🌬️ Deceptively Simple / 📜 Fable-like    |  
+| 🌊 ***Siddhartha***                                   | 🧘 Self-Realization       | 🧘 Meditative / 💧 Fluid                  |  
+| 🐫 ***The Alchemist***                                | 🗺️ Pursuing Dreams       | 🎯 Direct / 🧿 Symbolic                   |  
+| 🩺 ***When Breath Becomes Air***                      | ✨ Finding Meaning in Time | 🔬 Precise / 🎓 Intellectual / 🎭 Soulful |  
   
 **❓ Would you like me to 🔍 pull a specific 📜 profound quote from one of these so you can 👁️ see how the author 🧶 weaves the lesson into their 🖋️ writing?**  
   

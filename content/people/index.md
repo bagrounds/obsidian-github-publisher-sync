@@ -5,16 +5,17 @@ aliases:
   - 👥 People
 backlinks: false
 URL: https://bagrounds.org/people
-updated: 2026-01-19T08:19:38-08:00
+updated: 2026-01-19T15:31:32-08:00
 ---
 [Home](../index.md)  
-# 👥 People (17)  
+# 👥 People (18)  
 - [🤖🧠💻 Andrej Karpathy](./andrej-karpathy.md)  
 - [🧠🫀👀🔬 Andrew Huberman](./andrew-huberman.md)  
 - [👨‍🏫🤖 Andrew Ng](./andrew-ng.md)  
 - [👨‍🏫📚💻🤔 Cal Newport](./cal-newport.md)  
 - [🏛️🇺🇸📖 Heather Cox Richardson](./heather-cox-richardson.md)  
 - [👨‍💻☁️🐘 Jay Kreps](./jay-kreps.md)  
+- [⚔️🗡️🩸 Joe Abercrombie](./joe-abercrombie.md)  
 - [🧠🤝🐘 Jonathan Haidt](./jonathan-haidt.md)  
 - [🧠👨‍🎓📈 Justin Sung](./justin-sung.md)  
 - [🧠🔬🧘‍♀️💪📈❤️‍🩹🗣️📚🌟 Kelly McGonigal](./kelly-mcgonigal.md)  

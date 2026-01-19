@@ -59,7 +59,7 @@ affiliate link: https://amzn.to/4egVN5X
 * 🐺 **Where the Wild Things Are** by Maurice Sendak: (A classic picture book exploring imagination, emotions, and the power of play). 🎭  
 * 💥 **Beautiful Oops!** by Barney Saltzberg: (A book that shows how mistakes can be opportunities for creativity and imagination). 💡  
 * 📦 **Not a Box** by Antoinette Portis: (A simple yet profound picture book demonstrating how a box can be anything you imagine it to be). 🎁  
-* 👑 **The Little Prince** by Antoine de Saint-Exupéry: (A novella with philosophical undertones about imagination, friendship, and seeing with the heart, suitable for older children and adults). 🦊  
+* **[🤴 The Little Prince](./the-little-prince.md)** by Antoine de Saint-Exupéry: (A novella with philosophical undertones about imagination, friendship, and seeing with the heart, suitable for older children and adults). 🦊  
 * 🔭 **Zoom** by Istvan Banyai: (A wordless picture book that plays with perspective and challenges the reader's assumptions about what they are seeing, encouraging different ways of thinking). 👀  
   
 ## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  

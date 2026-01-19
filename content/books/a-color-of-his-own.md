@@ -91,7 +91,7 @@ affiliate link: https://amzn.to/4mJOfwg
 * **🌟 Books with Simple, Profound Messages and Distinctive Art:**  
     * 🦁 Other books by Leo Lionni, such as *Frederick*, *Inch by Inch*, and *Alexander and the Wind-Up Mouse* (Share similar themes of identity, friendship, and unique artistic styles).  
     * 🎨 Books by Eric Carle (Known for distinctive collage art and simple, engaging stories about animals and nature).  
-    * 👑 *The Little Prince* by Antoine de Saint-Exupéry (A more complex read, but shares themes of unique perspectives, friendship, and seeing with the heart).  
+    * [🤴 The Little Prince](./the-little-prince.md) by Antoine de Saint-Exupéry (A more complex read, but shares themes of unique perspectives, friendship, and seeing with the heart).  
   
 ## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on A Color of His Own. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

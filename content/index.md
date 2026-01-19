@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-01-18T08:29:57-08:00
+updated: 2026-01-18T23:23:09-08:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -14,7 +14,7 @@ updated: 2026-01-18T08:29:57-08:00
 💬 Comment on any page with your GitHub account.  
   
 ## [🪞 Reflections](./reflections/index.md) ~ Blog (430)  
-- [2026-01-18](./reflections/2026-01-18.md)  
+- [2026-01-18 | 😈 Devils 🛗 Elevate 😴 Fatigue 🔬 Science 📺📚](./reflections/2026-01-18.md)  
 - [2026-01-17 | 🌌 The 😴 Tired 👹 Devils 👶 Birth 📈 Even ➕ More 🏆 Success](./reflections/2026-01-17.md)  
 - [2026-01-16 | 🤖 Agent ❤️ Taught 🦠 Measles 💉 Health 💰 Debt 📜 History 📺📰📚](./reflections/2026-01-16.md)  
 - [2026-01-15 | 🫦 Desire 🤖 Bot 🏆 Wins 🛡️ Immunity 🌌📺📚](./reflections/2026-01-15.md)  
@@ -30,7 +30,9 @@ updated: 2026-01-18T08:29:57-08:00
 - [🧮 Calculator](./tools/calculator.md)  
   
   
-## [📚 Books](./books/index.md) (884)  
+## [📚 Books](./books/index.md) (885)  
+- [😩⚕️ Fatigue Science for Human Health](./books/fatigue-science-for-human-health.md)  
+- [🔬🥱 The Scientific Basis of Fatigue](./books/the-scientific-basis-of-fatigue.md)  
 - [📜👶🗽 Magna Carta: The Birth of Liberty](./books/magna-carta-the-birth-of-liberty.md)  
 - [🌅🧑‍🤝‍🧑 The Dawn of Everything: A New History of Humanity](./books/the-dawn-of-everything-a-new-history-of-humanity.md)  
 - [🏛️💰 Debt: The First 5,000 Years](./books/debt-the-first-5000-years.md)  
@@ -39,8 +41,6 @@ updated: 2026-01-18T08:29:57-08:00
 - [💉🦠👶 Booster Shots: The Urgent Lessons of Measles and the Uncertain Future of Children's Health](./books/booster-shots-the-urgent-lessons-of-measles-and-the-uncertain-future-of-childrens-health.md)  
 - [🧠⛓️🚫 The Biology of Desire: Why Addiction Is Not a Disease](./books/the-biology-of-desire-why-addiction-is-not-a-disease.md)  
 - [💪📈 Creatine: A Natural Substance and Its Benefits for Muscle Metabolism, Fitness, Health & Longevity](./books/creatine-a-natural-substance-and-its-benefits-for-muscle-metabolism-fitness-health-longevity.md)  
-- [🛡️🥦 In Defense of Food: An Eater's Manifesto](./books/in-defense-of-food-an-eaters-manifesto.md)  
-- [🗽🗣️😠 Freedom for the Thought That We Hate: A Biography of the First Amendment](./books/freedom-for-the-thought-that-we-hate-a-biography-of-the-first-amendment.md)  
   
   
 ## [📺 Videos](./videos/index.md) (601)  

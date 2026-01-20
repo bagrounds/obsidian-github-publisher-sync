@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-01-20T09:06:46-08:00
+updated: 2026-01-20T09:29:22-08:00
 ---
 [Home](../index.md)  
-# 📺 Videos (602)  
+# 📺 Videos (604)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
 - [❓💪🔬 12 Questions About Creatine with Stephen Cornish, PhD](./12-questions-about-creatine-w-stephen-cornish-phd.md)  
@@ -126,6 +126,7 @@ updated: 2026-01-20T09:06:46-08:00
 - [🏛️⚠️⏳ Democracy Isn’t Dead. Yet. | The Focus Group Podcast](./heather-cox-richardson-democracy-isnt-dead-yet-the-focus-group-podcast.md)  
 - [🤖💻✨ Developer Experience in the Age of AI Coding Agents – Max Kanat-Alexander, Capital One](./developer-experience-in-the-age-of-ai-coding-agents-max-kanat-alexander-capital-one.md)  
 - [💉👩‍⚕️💻 Doctor Answers Vaccine Questions | Tech Support | WIRED](./doctor-answers-vaccine-questions-tech-support-wired.md)  
+- [📱🧠📉 Doctor on How Screen Time Hurts Kids' Cognitive Development](./doctor-on-how-screen-time-hurts-kids-cognitive-development.md)  
 - [☕⛓️‍💥🚄❓ Does drinking coffee break your fast? | Satchin Panda](./does-drinking-coffee-break-your-fast-satchin-panda.md)  
 - [🇨🇳🔮❓ Does the Future Belong to China? | Interesting Times with Ross Douthat](./does-the-future-belong-to-china-interesting-times-with-ross-douthat.md)  
 - [🏛️🛡️ Do ICE Officers Have 'Immunity'?](./do-ice-officers-have-immunity.md)  
@@ -357,6 +358,7 @@ updated: 2026-01-20T09:06:46-08:00
 - [📈🪜🚀 Principal Engineer Reveals How To Be Promoted FAST](./principal-engineer-reveals-how-to-be-promoted-fast.md)  
 - [🤖💡📈 Proactive Agents – Kath Korevec, Google Labs](./proactive-agents-kath-korevec-google-labs.md)  
 - [Professor explains why he's leaving Yale for Toronto as colleges react to Trump's threats](./professor-explains-why-hes-leaving-yale-for-toronto-as-colleges-react-to-trumps-threats.md)  
+- [👨‍🏫⚖️💻 Professor on Regulating Tech for Kids](./professor-on-regulating-tech-for-kids.md)  
 - [🇺🇸📅👎 Project 2025 Is Here and Americans Hate It | Explainer](./project-2025-is-here-and-americans-hate-it-explainer.md)  
 - [🏛️➡️🚪⚠️ Prominent conservative judge resigns, calling Trump 'uniquely dangerous'](./prominent-conservative-judge-resigns-calling-trump-uniquely-dangerous.md)  
 - [Protestors join more than a thousand rallies across the U.S. against Trump’s policies](./protestors-join-more-than-a-thousand-rallies-across-the-us-against-trumps-policies.md)  

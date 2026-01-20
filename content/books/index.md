@@ -5,10 +5,10 @@ aliases:
 share: true
 URL: https://bagrounds.org/books
 backlinks: false
-updated: 2026-01-19T23:07:27-08:00
+updated: 2026-01-20T08:49:57-08:00
 ---
 [Home](../index.md)  
-# 📚 Books (886)  
+# 📚 Books (887)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [💻0️⃣ Source Code: My Beginnings](./source-code-my-beginnings.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)  
@@ -376,6 +376,7 @@ updated: 2026-01-19T23:07:27-08:00
 - [📉🌍⏳ Limits to Growth: The 30-Year Global Update](./limits-to-growth-the-30-year-global-update.md)  
 - [🧠🔄 Livewired: The Inside Story of the Ever-Changing Brain](./livewired-the-inside-story-of-the-ever-changing-brain.md)  
 - [🤖🛠️ LLM Engineer's Handbook: Master the art of engineering large language models from concept to production](./llm-engineers-handbook-master-the-art-of-engineering-large-language-models-from-concept-to-production.md)  
+- [👧💔🥀 Lolita](./lolita.md)  
 - [🧭🕰️🥇🗺️ Longitude: The True Story of a Lone Genius Who Solved the Greatest Scientific Problem of His Time](./longitude.md)  
 - [🧑🏿⚖️🧑🏻 Long Time Coming: Reckoning With Race In America](./long-time-coming-reckoning-with-race-in-america.md)  
 - [👦🏝️🐷 Lord of the Flies](./lord-of-the-flies.md)  

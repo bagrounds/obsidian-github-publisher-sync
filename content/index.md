@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-01-20T09:06:46-08:00
+updated: 2026-01-20T09:29:22-08:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -43,7 +43,9 @@ updated: 2026-01-20T09:06:46-08:00
 - [😩⚕️ Fatigue Science for Human Health](./books/fatigue-science-for-human-health.md)  
   
   
-## [📺 Videos](./videos/index.md) (602)  
+## [📺 Videos](./videos/index.md) (604)  
+- [👨‍🏫⚖️💻 Professor on Regulating Tech for Kids](./videos/professor-on-regulating-tech-for-kids.md)  
+- [📱🧠📉 Doctor on How Screen Time Hurts Kids' Cognitive Development](./videos/doctor-on-how-screen-time-hurts-kids-cognitive-development.md)  
 - [✍️🎭🧙‍♂️ Joe Abercrombie Shows Me How to Write PERFECT Character Introductions](./videos/joe-abercrombie-shows-me-how-to-write-perfect-character-introductions.md)  
 - [😴❌💡 Everything You Know About Fatigue is Wrong](./videos/everything-you-know-about-fatigue-is-wrong.md)  
 - [⚡️🔋💪 How To Have More Energy | Sean Hall | TEDxUNSW](./videos/how-to-have-more-energy-sean-hall-tedxunsw.md)  
@@ -52,8 +54,6 @@ updated: 2026-01-20T09:06:46-08:00
 - [💰➡️🪖 Why It Matters That Trump Rerouted Money to Pay the Troops | Explainer](./videos/why-it-matters-that-trump-rerouted-money-to-pay-the-troops-explainer.md)  
 - [🗣️🗓️ Politics Chat, December 30, 2025](./videos/politics-chat-december-30-2025.md)  
 - [❤️🧠👨‍👩‍👧‍👦 The crucial emotional skill most adults were never taught | Becky Kennedy](./videos/the-crucial-emotional-skill-most-adults-were-never-taught-becky-kennedy.md)  
-- [💰🤔⚖️ The Most Important Economic Debate of our Lifetime — ft. Justin Wolfers | Prof G Markets](./videos/the-most-important-economic-debate-of-our-lifetime-ft-justin-wolfers-prof-g-markets.md)  
-- [🦠🤒🏥 Snohomish County sees measles outbreak](./videos/snohomish-county-sees-measles-outbreak.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (88)  

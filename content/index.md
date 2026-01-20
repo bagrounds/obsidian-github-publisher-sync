@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-01-19T15:31:32-08:00
+updated: 2026-01-19T16:34:15-08:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -30,17 +30,17 @@ updated: 2026-01-19T15:31:32-08:00
 - [🧮 Calculator](./tools/calculator.md)  
   
   
-## [📚 Books](./books/index.md) (885)  
+## [📚 Books](./books/index.md) (886)  
+- [🤴 The Little Prince](./books/the-little-prince.md)  
+- [❓🏛️👶 Big Ideas for Little Philosophers: Truth with Socrates](./books/big-ideas-for-little-philosophers-truth-with-socrates.md)  
+- [🤔👶💭 Big Ideas for Little Philosophers: Imagination with René Descartes](./books/big-ideas-for-little-philosophers-imagination-with-rene-descartes.md)  
+- [🌈🦎 A Color of His Own](./books/a-color-of-his-own.md)  
+- [☀️⛓️🕊️ The Sun Does Shine: How I Found Life and Freedom on Death Row](./books/the-sun-does-shine-how-i-found-life-and-freedom-on-death-row.md)  
+- [🌱🧘🏼‍♀️🏆 Mindset: The New Psychology of Success](./books/mindset.md)  
+- [🤔👶😊 Big Ideas for Little Philosophers: Happiness with Aristotle](./books/big-ideas-for-little-philosophers-happiness-with-aristotle.md)  
 - [😩⚕️ Fatigue Science for Human Health](./books/fatigue-science-for-human-health.md)  
 - [🔬🥱 The Scientific Basis of Fatigue](./books/the-scientific-basis-of-fatigue.md)  
 - [📜👶🗽 Magna Carta: The Birth of Liberty](./books/magna-carta-the-birth-of-liberty.md)  
-- [🌅🧑‍🤝‍🧑 The Dawn of Everything: A New History of Humanity](./books/the-dawn-of-everything-a-new-history-of-humanity.md)  
-- [🏛️💰 Debt: The First 5,000 Years](./books/debt-the-first-5000-years.md)  
-- [📖🏛️📉 Seeing Like a State: How Certain Schemes to Improve the Human Condition Have Failed](./books/seeing-like-a-state-how-certain-schemes-to-improve-the-human-condition-have-failed.md)  
-- [🔄📜🏛️ Against the Grain: A Deep History of the Earliest States](./books/against-the-grain-a-deep-history-of-the-earliest-states.md)  
-- [💉🦠👶 Booster Shots: The Urgent Lessons of Measles and the Uncertain Future of Children's Health](./books/booster-shots-the-urgent-lessons-of-measles-and-the-uncertain-future-of-childrens-health.md)  
-- [🧠⛓️🚫 The Biology of Desire: Why Addiction Is Not a Disease](./books/the-biology-of-desire-why-addiction-is-not-a-disease.md)  
-- [💪📈 Creatine: A Natural Substance and Its Benefits for Muscle Metabolism, Fitness, Health & Longevity](./books/creatine-a-natural-substance-and-its-benefits-for-muscle-metabolism-fitness-health-longevity.md)  
   
   
 ## [📺 Videos](./videos/index.md) (602)  
@@ -95,9 +95,9 @@ updated: 2026-01-19T15:31:32-08:00
   
   
 ## [🛍️ Products](./products/index.md) (5)  
+- [👶🌧️💨 Graco Baby Jogging Stroller Universal Rain Cover, Ventilated Weather Shield, Waterproof, Windproof, Versatile Size to Fit Most Jogging Strollers, Vinyl, Clear, Plastic](./products/graco-baby-jogging-stroller-universal-rain-cover-ventilated-weather-shield-waterproof-windproof-versatile-size-to-fit-most-jogging-strollers-vinyl-clear-plastic.md)  
 - [🤖🧹🧼🗺️ iRobot Roomba Plus 505 Combo Robot Vacuum & Mop with AutoWash Dock - Extending Spinning Mop Pads, Self-Empties, Pad Wash & Heated Drying, Self-cleaning, Recognizes & Avoids Obstacles, LiDAR Navigation](./products/irobot-roomba-plus-505-combo-robot-vacuum-mop-with-autowash-dock-extending-spinning-mop-pads-self-empties-pad-wash-heated-drying-self-cleaning-recognizes-avoids-obstacles-lidar-navigation.md)  
 - [🦈🔦🐈✨🧹 Shark HV322 Rocket Pet Plus Corded Stick Vacuum with LED Headlights, XL Dust Cup, Lightweight, Perfect for Pet Hair Pickup, Converts to a Hand Vacuum, with (2) Pet Attachments, Bordeaux, Silver](./products/shark-hv322-rocket-pet-plus-corded-stick-vacuum-with-led-headlights-xl-dust-cup-lightweight.md)  
-- [👶🌧️💨 Graco Baby Jogging Stroller Universal Rain Cover, Ventilated Weather Shield, Waterproof, Windproof, Versatile Size to Fit Most Jogging Strollers, Vinyl, Clear, Plastic](./products/graco-baby-jogging-stroller-universal-rain-cover-ventilated-weather-shield-waterproof-windproof-versatile-size-to-fit-most-jogging-strollers-vinyl-clear-plastic.md)  
   
   
 ## 🔗 Profiles  

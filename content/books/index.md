@@ -5,10 +5,10 @@ aliases:
 share: true
 URL: https://bagrounds.org/books
 backlinks: false
-updated: 2026-01-19T15:31:32-08:00
+updated: 2026-01-19T16:34:15-08:00
 ---
 [Home](../index.md)  
-# 📚 Books (885)  
+# 📚 Books (886)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [💻0️⃣ Source Code: My Beginnings](./source-code-my-beginnings.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)  
@@ -705,6 +705,7 @@ updated: 2026-01-19T15:31:32-08:00
 - [📺🌃⚔️ The Late Shift: Letterman, Leno, and the Network Battle for the Night](./the-late-shift-letterman-leno-and-the-network-battle-for-the-night.md)  
 - [📉🧪🚀 The Lean Startup: How Today's Entrepreneurs Use Continuous Innovation to Create Radically Successful Businesses](./the-lean-startup.md)  
 - [🧠📚💡🧩 The Learning Brain](./the-learning-brain.md)  
+- [🤴 The Little Prince](./the-little-prince.md)  
 - [🤔🔬 The Logic of Scientific Discovery](./the-logic-of-scientific-discovery.md)  
 - [🇺🇸💔 The Lost Soul of the American Presidency: The Decline into Demagoguery and the Prospects for Renewal](./the-lost-soul-of-the-american-presidency-the-decline-into-demagoguery-and-the-prospects-for-renewal.md)  
 - [🍬⏳ The Marshmallow Test: Mastering Self-Control](./the-marshmallow-test-mastering-self-control.md)  

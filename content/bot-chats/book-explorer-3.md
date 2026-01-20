@@ -14,7 +14,7 @@ URL: https://bagrounds.org/bot-chats/book-explorer-3
   
 📜 Here are four recommendations across different styles, each widely considered a 🏆 masterpiece of the English language:  
   
-### 1. 🦋 *Lolita* by Vladimir Nabokov  
+### 1. [👧💔🥀 Lolita](../books/lolita.md) by Vladimir Nabokov  
   
 🚀 If you want to see what the English language is truly capable of, start here. 🇷🇺 Nabokov was a Russian emigrant who mastered English later in life, and his writing is often described as 🤸 acrobatic. He uses 🃏 puns, alliteration, and 💎 shimmering imagery to create a style that is simultaneously 🎨 gorgeous and 😟 unsettling.  
   
@@ -224,9 +224,9 @@ URL: https://bagrounds.org/bot-chats/book-explorer-3
   
 ### 📜 A Final Flat List for Your Blog  
   
-📋 As requested, here is the un-sectioned list of every book we have 🤩 marveled at in this journey, 💾 preprocessed for your readers to copy and explore:  
+📋 Here is a list of every book we have 🤩 marveled at in this journey, 💾 preprocessed for your readers to copy and explore:  
   
-* 🦋 *Lolita*  
+* 🦋 [👧💔🥀 Lolita](../books/lolita.md)  
 * 🧺 *The God of Small Things*  
 * 🩸 *Blood Meridian*  
 * 🏡 *Gilead*  

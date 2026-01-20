@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-01-20T09:29:22-08:00
+updated: 2026-01-20T13:08:50-08:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -43,7 +43,8 @@ updated: 2026-01-20T09:29:22-08:00
 - [😩⚕️ Fatigue Science for Human Health](./books/fatigue-science-for-human-health.md)  
   
   
-## [📺 Videos](./videos/index.md) (604)  
+## [📺 Videos](./videos/index.md) (605)  
+- [☀️🏛️⚖️ This morning I introduced Articles of Impeachment against Homeland Security Secretary Kristi Noem](./videos/this-morning-i-introduced-articles-of-impeachment-against-homeland-security-secretary-kristi-noem.md)  
 - [👨‍🏫⚖️💻 Professor on Regulating Tech for Kids](./videos/professor-on-regulating-tech-for-kids.md)  
 - [📱🧠📉 Doctor on How Screen Time Hurts Kids' Cognitive Development](./videos/doctor-on-how-screen-time-hurts-kids-cognitive-development.md)  
 - [✍️🎭🧙‍♂️ Joe Abercrombie Shows Me How to Write PERFECT Character Introductions](./videos/joe-abercrombie-shows-me-how-to-write-perfect-character-introductions.md)  
@@ -53,7 +54,6 @@ updated: 2026-01-20T09:29:22-08:00
 - [😴☕️💡 Why you’re so tired](./videos/why-youre-so-tired.md)  
 - [💰➡️🪖 Why It Matters That Trump Rerouted Money to Pay the Troops | Explainer](./videos/why-it-matters-that-trump-rerouted-money-to-pay-the-troops-explainer.md)  
 - [🗣️🗓️ Politics Chat, December 30, 2025](./videos/politics-chat-december-30-2025.md)  
-- [❤️🧠👨‍👩‍👧‍👦 The crucial emotional skill most adults were never taught | Becky Kennedy](./videos/the-crucial-emotional-skill-most-adults-were-never-taught-becky-kennedy.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (88)  

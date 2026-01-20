@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-01-20T09:29:22-08:00
+updated: 2026-01-20T13:08:50-08:00
 ---
 [Home](../index.md)  
-# 📺 Videos (604)  
+# 📺 Videos (605)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
 - [❓💪🔬 12 Questions About Creatine with Stephen Cornish, PhD](./12-questions-about-creatine-w-stephen-cornish-phd.md)  
@@ -485,6 +485,7 @@ updated: 2026-01-20T09:29:22-08:00
 - [🤫💰🪙 This Is What They Don't Tell You About Money And Gold | Prof. L. Randall Wray](./this-is-what-they-dont-tell-you-about-money-and-gold-prof-l-randall-wray.md)  
 - [📓 This Journal Keeps Me Productive (& Maybe You Too)](./this-journal-keeps-me-productive-and-maybe-you-too.md)  
 - [🗣️🏛️📈 This Moment in Politics | Explainer](./this-moment-in-politics-explainer.md)  
+- [☀️🏛️⚖️ This morning I introduced Articles of Impeachment against Homeland Security Secretary Kristi Noem](./this-morning-i-introduced-articles-of-impeachment-against-homeland-security-secretary-kristi-noem.md)  
 - [🌅🧠🚀♾️ This morning routine is scientifically proven to make you limitless](./this-morning-routine-is-scientifically-proven-to-make-you-limitless.md)  
 - [This Secret Principle Will Transform Your Notes](./this-secret-principle-will-transform-your-notes.md)  
 - [⚙️📈🎓🏆 This simple productivity system got me into Harvard and Yale](./this-simple-productivity-system-got-me-into-harvard-and-yale.md)  

@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-01-20T08:49:57-08:00
+updated: 2026-01-20T09:06:46-08:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -30,7 +30,8 @@ updated: 2026-01-20T08:49:57-08:00
 - [🧮 Calculator](./tools/calculator.md)  
   
   
-## [📚 Books](./books/index.md) (887)  
+## [📚 Books](./books/index.md) (888)  
+- [🌟👁️🔦 All the Light We Cannot See](./books/all-the-light-we-cannot-see.md)  
 - [👧💔🥀 Lolita](./books/lolita.md)  
 - [🤴 The Little Prince](./books/the-little-prince.md)  
 - [❓🏛️👶 Big Ideas for Little Philosophers: Truth with Socrates](./books/big-ideas-for-little-philosophers-truth-with-socrates.md)  
@@ -40,7 +41,6 @@ updated: 2026-01-20T08:49:57-08:00
 - [🌱🧘🏼‍♀️🏆 Mindset: The New Psychology of Success](./books/mindset.md)  
 - [🤔👶😊 Big Ideas for Little Philosophers: Happiness with Aristotle](./books/big-ideas-for-little-philosophers-happiness-with-aristotle.md)  
 - [😩⚕️ Fatigue Science for Human Health](./books/fatigue-science-for-human-health.md)  
-- [🔬🥱 The Scientific Basis of Fatigue](./books/the-scientific-basis-of-fatigue.md)  
   
   
 ## [📺 Videos](./videos/index.md) (602)  
@@ -73,10 +73,10 @@ updated: 2026-01-20T08:49:57-08:00
   
   
 ## [🤖💬 Bot Chats](./bot-chats/index.md) (47)  
-- [📖 Book 🧭 Explorer 3](./bot-chats/book-explorer-3.md)  
 - [📖 Book 🧭 Explorer 2](./bot-chats/book-explorer-2.md)  
-- [👶😭➡️😊 Summarize The Happiest Baby On The Block](./bot-chats/summarize-the-happiest-baby-on-the-block.md)  
 - [📖 Book 🧭 Explorer 1](./bot-chats/book-explorer-1.md)  
+- [📖 Book 🧭 Explorer 3](./bot-chats/book-explorer-3.md)  
+- [👶😭➡️😊 Summarize The Happiest Baby On The Block](./bot-chats/summarize-the-happiest-baby-on-the-block.md)  
 - [🇦🇹💰🆚📈🖨️ Austrian Economics vs Modern Monetary Theory](./bot-chats/austrian-economics-vs-modern-monetary-theory.md)  
   
   

@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-01-19T23:07:27-08:00
+updated: 2026-01-20T08:49:57-08:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -13,7 +13,8 @@ updated: 2026-01-19T23:07:27-08:00
 ❔ What do 🫵 _you_ 🤔 think?  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (431)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (432)  
+- [2026-01-20](./reflections/2026-01-20.md)  
 - [2026-01-19 | 🫅 Prince ⚔️ Joe 🎭 Character 🧭 Explorer 📺👥🤖💬📚](./reflections/2026-01-19.md)  
 - [2026-01-18 | 😈 Devils 🛗 Elevate 😴 Fatigue 🔬 Science 📺📚](./reflections/2026-01-18.md)  
 - [2026-01-17 | 🌌 The 😴 Tired 👹 Devils 👶 Birth 📈 Even ➕ More 🏆 Success](./reflections/2026-01-17.md)  
@@ -23,14 +24,14 @@ updated: 2026-01-19T23:07:27-08:00
 - [2026-01-13 | 🔥 Devils ⚡ Spark ❤️ Heart 📚📺](./reflections/2026-01-13.md)  
 - [2026-01-12 | ▶️ Initially 🕵️‍♀️ Secret ⚖️ Impeachment 👨‍⚖️ Sues 🏛️ Democracy ⌛ After 💔 Breaking 🧠 Brain 🔋 Burnout 👮‍♀️ Policing ⚠️ Threats 📚📺📰](./reflections/2026-01-12.md)  
 - [2026-01-11 | 🪦 RIP 📺 PBS 📰 News 🗓️ Weekend 📺📚📰](./reflections/2026-01-11.md)  
-- [2026-01-10 | 🧼📰 Public Record 📚🪞🌌📺📰](./reflections/2026-01-10.md)  
   
   
 ## [🧰 Tools](./tools/index.md) (1)  
 - [🧮 Calculator](./tools/calculator.md)  
   
   
-## [📚 Books](./books/index.md) (886)  
+## [📚 Books](./books/index.md) (887)  
+- [👧💔🥀 Lolita](./books/lolita.md)  
 - [🤴 The Little Prince](./books/the-little-prince.md)  
 - [❓🏛️👶 Big Ideas for Little Philosophers: Truth with Socrates](./books/big-ideas-for-little-philosophers-truth-with-socrates.md)  
 - [🤔👶💭 Big Ideas for Little Philosophers: Imagination with René Descartes](./books/big-ideas-for-little-philosophers-imagination-with-rene-descartes.md)  
@@ -40,7 +41,6 @@ updated: 2026-01-19T23:07:27-08:00
 - [🤔👶😊 Big Ideas for Little Philosophers: Happiness with Aristotle](./books/big-ideas-for-little-philosophers-happiness-with-aristotle.md)  
 - [😩⚕️ Fatigue Science for Human Health](./books/fatigue-science-for-human-health.md)  
 - [🔬🥱 The Scientific Basis of Fatigue](./books/the-scientific-basis-of-fatigue.md)  
-- [📜👶🗽 Magna Carta: The Birth of Liberty](./books/magna-carta-the-birth-of-liberty.md)  
   
   
 ## [📺 Videos](./videos/index.md) (602)  

@@ -5,10 +5,10 @@ aliases:
 title: 📄 Articles
 backlinks: false
 URL: https://bagrounds.org/articles
-updated: 2026-01-20T21:40:04-08:00
+updated: 2026-01-21T08:57:22-08:00
 ---
 [Home](../index.md)  
-# 📄 Articles (75)  
+# 📄 Articles (76)  
 - [🗓️🇵🇹💉✅🕊️ 20 years of Portuguese drug policy - developments, challenges and the quest for human rights](./20-years-of-portuguese-drug-policy-developments-challenges-and-the-quest-for-human-rights.md)  
 - [🦊😈🐾🕵️💸 5 takeaways about NPR's reporting on the whistleblower report about DOGE at the NLRB](./5-takeaways-about-nprs-reporting-on-the-whistleblower-report-about-doge-at-the-nlrb.md)  
 - [🌱🤖⚙️🖐️ 5 tips on getting started with Gems, your custom AI experts](./5-tips-on-getting-started-with-gems-your-custom-ai-experts.md)  
@@ -80,6 +80,7 @@ updated: 2026-01-20T21:40:04-08:00
 - [🐈‍⬛🧪💊🩺 Treatment of Feline Gastrointestinal Small-Cell Lymphoma With Chlorambucil and Glucocorticoids](./treatment-of-feline-gastrointestinal-small-cell-lymphoma-with-chlorambucil-and-glucocorticoids.md)  
 - [🇺🇸⛰️☀️💉 Washington, Oregon and California will issue their own vaccine recommendations, separate from CDC](./washington-oregon-and-california-will-issue-their-own-vaccine-recommendations-separate-from-cdc.md)  
 - [😨 ‘We are all afraid’: Speaking to Alaska nonprofit leaders, Murkowski gets candid on upheaval in federal government](./we-are-all-afraid-speaking-to-alaska-nonprofit-leaders-murkowski-gets-candid-on-upheaval-in-federal-government.md)  
+- [😴💰🏛️🤑👴🇸🇪 ‘We got lazy and complacent’: Swedish pensioners explain how abolishing the wealth tax changed their country](./we-got-lazy-and-complacent-swedish-pensioners-explain-how-abolishing-the-wealth-tax-changed-their-country.md)  
 - [📜💀⚠️ What the Holocaust Teaches](./what-the-holocaust-teaches-us.md)  
 - [👀👶🏼🏃🏼‍♀️🛣️ What to Look for in a Jogging Stroller](./what-to-look-for-in-a-jogging-stroller.md)  
 - [🤔💭🤔💭 Why We Think](./why-we-think.md)  

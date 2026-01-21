@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-01-21T08:57:22-08:00
+updated: 2026-01-21T09:25:00-08:00
 ---
 [Home](../index.md)  
-# 📺 Videos (605)  
+# 📺 Videos (606)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
 - [❓💪🔬 12 Questions About Creatine with Stephen Cornish, PhD](./12-questions-about-creatine-w-stephen-cornish-phd.md)  
@@ -229,6 +229,7 @@ updated: 2026-01-21T08:57:22-08:00
 - [🗣️👽 How to Talk to Aliens](./how-to-talk-to-aliens.md)  
 - [🤔🤯❤️📖 How to Understand Emotions | Dr. Lisa Feldman Barrett](./how-to-understand-emotions-dr-lisa-feldman-barrett.md)  
 - [👶⏰😴 How to Use the Ferber Method for Sleep Training | The Parents Guide | Parents](./how-to-use-the-ferber-method-for-sleep-training-the-parents-guide-parents.md)  
+- [✍️💡🚀 How to Write Something Truly Useful - Daniel Pink](./how-to-write-something-truly-useful-daniel-pink.md)  
 - [💰👶💡 How 'Trump accounts' for children work, and who will benefit most](./how-trump-accounts-for-children-work-and-who-will-benefit-most.md)  
 - [👹🔌🤑 How Trump is using his power to profit and why no one will stop him](./how-trump-is-using-his-power-to-profit-and-why-no-one-will-stop-him.md)  
 - [👮‍♂️💪🚫📜 How Trump’s Bill Creates a Super Police Force](./how-trumps-bill-creates-a-super-police-force.md)  

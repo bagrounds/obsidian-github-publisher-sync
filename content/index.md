@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-01-20T21:40:04-08:00
+updated: 2026-01-21T08:57:22-08:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -13,7 +13,8 @@ updated: 2026-01-20T21:40:04-08:00
 ❔ What do 🫵 _you_ 🤔 think?  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (432)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (433)  
+- [2026-01-21](./reflections/2026-01-21.md)  
 - [2026-01-20 | 🥀 Lolita 🏛️ Noem 💔 Hurts 🌟 All 📜 The 👶🏽 Kids 📚📺📰](./reflections/2026-01-20.md)  
 - [2026-01-19 | 🫅 Prince ⚔️ Joe 🎭 Character 🧭 Explorer 📺👥🤖💬📚](./reflections/2026-01-19.md)  
 - [2026-01-18 | 😈 Devils 🛗 Elevate 😴 Fatigue 🔬 Science 📺📚](./reflections/2026-01-18.md)  
@@ -23,7 +24,6 @@ updated: 2026-01-20T21:40:04-08:00
 - [2026-01-14 | 🦸‍♀️ Strong 🧬 Human 🎭 Character 🛡️ Defends 🗽 Freedom 🍽️ In 🌌 Everything 🧪 As 🧬 Science 🗯️ Hates 🧺 Dirty 😈 Devils 📜 Manifesto 📚📺📰⌨️✍🏽](./reflections/2026-01-14.md)  
 - [2026-01-13 | 🔥 Devils ⚡ Spark ❤️ Heart 📚📺](./reflections/2026-01-13.md)  
 - [2026-01-12 | ▶️ Initially 🕵️‍♀️ Secret ⚖️ Impeachment 👨‍⚖️ Sues 🏛️ Democracy ⌛ After 💔 Breaking 🧠 Brain 🔋 Burnout 👮‍♀️ Policing ⚠️ Threats 📚📺📰](./reflections/2026-01-12.md)  
-- [2026-01-11 | 🪦 RIP 📺 PBS 📰 News 🗓️ Weekend 📺📚📰](./reflections/2026-01-11.md)  
   
   
 ## [🧰 Tools](./tools/index.md) (1)  
@@ -64,12 +64,12 @@ updated: 2026-01-20T21:40:04-08:00
 - [🧸🎶🧸 Nursery Rhymes](./topics/nursery-rhymes.md)  
   
   
-## [📄  Articles](./articles/index.md) (75)  
+## [📄  Articles](./articles/index.md) (76)  
+- [😴💰🏛️🤑👴🇸🇪 ‘We got lazy and complacent’: Swedish pensioners explain how abolishing the wealth tax changed their country](./articles/we-got-lazy-and-complacent-swedish-pensioners-explain-how-abolishing-the-wealth-tax-changed-their-country.md)  
 - [🤖👨‍💻📈⏳ Learnings from two years of using AI tools for software engineering](./articles/learnings-from-two-years-of-using-ai-tools-for-software-engineering.md)  
 - [🤖⚙️🔄🗣️ Agentic Context Engineering: Evolving Contexts for Self Improving Language Models](./articles/agentic-context-engineering-evolving-contexts-for-self-improving-language-models.md)  
 - [🤖♾️🗂️ Scaling Long Horizon LLM Agent via Context Folding](./articles/scaling-long-horizon-llm-agent-via-context-folding.md)  
 - [🤖🧠📈⚡ Code execution with MCP: Building more efficient agents](./articles/code-execution-with-mcp-building-more-efficient-agents.md)  
-- [🧠🧩🎯⚙️ An Approach for Systematic Decomposition of Complex LLM Tasks](./articles/an-approach-for-systematic-decomposition-of-complex-llm-tasks.md)  
   
   
 ## [🤖💬 Bot Chats](./bot-chats/index.md) (47)  

@@ -5,11 +5,11 @@ aliases:
 title: 🪞 Reflections
 URL: https://bagrounds.org/reflections
 backlinks: false
-updated: 2026-01-20T13:08:50-08:00
+updated: 2026-01-20T21:40:04-08:00
 ---
 [Home](../index.md)  
 # 🪞 Reflections (432)  
-- [2026-01-20](./2026-01-20.md)  
+- [2026-01-20 | 🥀 Lolita 🏛️ Noem 💔 Hurts 🌟 All 📜 The 👶🏽 Kids 📚📺📰](./2026-01-20.md)  
 - [2026-01-19 | 🫅 Prince ⚔️ Joe 🎭 Character 🧭 Explorer 📺👥🤖💬📚](./2026-01-19.md)  
 - [2026-01-18 | 😈 Devils 🛗 Elevate 😴 Fatigue 🔬 Science 📺📚](./2026-01-18.md)  
 - [2026-01-17 | 🌌 The 😴 Tired 👹 Devils 👶 Birth 📈 Even ➕ More 🏆 Success](./2026-01-17.md)  

@@ -63,6 +63,6 @@ A: 🤝🏻 The strategy is to **erode support** by offering a graceful **off-ra
     * [🥀 Twilight of Democracy: 🐍 The Seductive Lure of Authoritarianism](../books/twilight-of-democracy.md) by Anne Applebaum. 🤝🏻 Explores how and why intellectual and political elites become disenchanted with democracy and choose to support authoritarian leaders.  
   
 * **Creatively Related/Inspirational**  
-    * 🌱 The Power of the Powerless by Václav Havel. 📝 An essay that uses the experience of Charter 77 in Czechoslovakia to discuss "living within the truth" as a fundamental form of resistance against post-totalitarian systems.  
+    * [👤✊ The Power of the Powerless](../books/the-power-of-the-powerless.md) by Václav Havel. 📝 An essay that uses the experience of Charter 77 in Czechoslovakia to discuss "living within the truth" as a fundamental form of resistance against post-totalitarian systems.  
     * 📝 March by John Lewis, Andrew Aydin, and Nate Powell. 🎨 A graphic novel memoir chronicling the Civil Rights Movement, illustrating the commitment to nonviolence and mass mobilization in practice.  
     * 🌳 The Dispossessed by Ursula K. Le Guin. 🪐 A science fiction novel that provides a thought experiment on the complexities of different political systems and the struggle for revolutionary change.

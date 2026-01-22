@@ -101,4 +101,4 @@ youtube: https://youtu.be/cZxpMWFJ6w4
   
 * [🇺🇸📜 The Federalist Papers](../books/the-federalist-papers.md) by Alexander Hamilton and James Madison provides the original architectural logic for the American system of checks and balances.  
 * [📜👶🗽 Magna Carta: The Birth of Liberty](../books/magna-carta-the-birth-of-liberty.md) by Dan Jones.  
-* 🕯️ The Power of the Powerless by Václav Havel discusses how individual moral responsibility and community action can resist overbearing political regimes.
+* [👤✊ The Power of the Powerless](../books/the-power-of-the-powerless.md) by Václav Havel discusses how individual moral responsibility and community action can resist overbearing political regimes.

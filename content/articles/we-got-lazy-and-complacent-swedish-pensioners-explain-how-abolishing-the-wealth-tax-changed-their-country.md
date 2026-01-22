@@ -40,7 +40,7 @@ tags:
   
 ### ↔️ Similar  
   
-* 📘 The Leap of Faith The Fiscal Foundations of Successful Government in Europe and America by Sven Steinmo explores the historical development of the Swedish tax state and its reliance on high citizen compliance.  
+* [🚀💰🏛️ The Leap of Faith: The Fiscal Foundations of Successful Government in Europe and America](../books/the-leap-of-faith-the-fiscal-foundations-of-successful-government-in-europe-and-america.md) by Sven Steinmo explores the historical development of the Swedish tax state and its reliance on high citizen compliance.  
 * 📖 Swedish Taxation since 1862 An Overview by Magnus Henrekson and Mikael Stenkula provides a detailed historical account of the evolution of the Swedish tax system and its various reforms.  
   
 ### 🆚 Contrasting  

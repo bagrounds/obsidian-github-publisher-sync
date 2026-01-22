@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-01-21T09:25:00-08:00
+updated: 2026-01-21T16:45:02-08:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -43,7 +43,9 @@ updated: 2026-01-21T09:25:00-08:00
 - [😩⚕️ Fatigue Science for Human Health](./books/fatigue-science-for-human-health.md)  
   
   
-## [📺 Videos](./videos/index.md) (606)  
+## [📺 Videos](./videos/index.md) (607)  
+- [🗣️📰🏛️ This Week in Politics | Explainer](./videos/this-week-in-politics-explainer-january-20-2025.md)  
+- [📚⏱️💡 21 Life-Changing Books Summarized in 18 Minutes](./videos/21-life-changing-books-summarized-in-18-minutes.md)  
 - [✍️💡🚀 How to Write Something Truly Useful - Daniel Pink](./videos/how-to-write-something-truly-useful-daniel-pink.md)  
 - [☀️🏛️⚖️ This morning I introduced Articles of Impeachment against Homeland Security Secretary Kristi Noem](./videos/this-morning-i-introduced-articles-of-impeachment-against-homeland-security-secretary-kristi-noem.md)  
 - [👨‍🏫⚖️💻 Professor on Regulating Tech for Kids](./videos/professor-on-regulating-tech-for-kids.md)  
@@ -52,8 +54,6 @@ updated: 2026-01-21T09:25:00-08:00
 - [😴❌💡 Everything You Know About Fatigue is Wrong](./videos/everything-you-know-about-fatigue-is-wrong.md)  
 - [⚡️🔋💪 How To Have More Energy | Sean Hall | TEDxUNSW](./videos/how-to-have-more-energy-sean-hall-tedxunsw.md)  
 - [😴➡️😩8️⃣💤 Why You Wake Up Exhausted (Even After 8 Hours)](./videos/why-you-wake-up-exhausted-even-after-8-hours.md)  
-- [😴☕️💡 Why you’re so tired](./videos/why-youre-so-tired.md)  
-- [💰➡️🪖 Why It Matters That Trump Rerouted Money to Pay the Troops | Explainer](./videos/why-it-matters-that-trump-rerouted-money-to-pay-the-troops-explainer.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (88)  

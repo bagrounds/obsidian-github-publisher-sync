@@ -5,10 +5,10 @@ aliases:
 share: true
 URL: https://bagrounds.org/books
 backlinks: false
-updated: 2026-01-21T16:45:02-08:00
+updated: 2026-01-21T17:36:34-08:00
 ---
 [Home](../index.md)  
-# 📚 Books (888)  
+# 📚 Books (890)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [💻0️⃣ Source Code: My Beginnings](./source-code-my-beginnings.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)  
@@ -706,6 +706,7 @@ updated: 2026-01-21T16:45:02-08:00
 - [🗣️🧠 The Language Instinct: How the Mind Creates Language](./the-language-instinct-how-the-mind-creates-language.md)  
 - [📺🌃⚔️ The Late Shift: Letterman, Leno, and the Network Battle for the Night](./the-late-shift-letterman-leno-and-the-network-battle-for-the-night.md)  
 - [📉🧪🚀 The Lean Startup: How Today's Entrepreneurs Use Continuous Innovation to Create Radically Successful Businesses](./the-lean-startup.md)  
+- [🚀💰🏛️ The Leap of Faith: The Fiscal Foundations of Successful Government in Europe and America](./the-leap-of-faith-the-fiscal-foundations-of-successful-government-in-europe-and-america.md)  
 - [🧠📚💡🧩 The Learning Brain](./the-learning-brain.md)  
 - [🤴 The Little Prince](./the-little-prince.md)  
 - [🤔🔬 The Logic of Scientific Discovery](./the-logic-of-scientific-discovery.md)  
@@ -751,6 +752,7 @@ updated: 2026-01-21T16:45:02-08:00
 - [💪🧠⏳ The Power of Self-Discipline: 5-Minute Exercises to Build Self-Control, Good Habits, and Keep Going When You Want to Give Up](./the-power-of-self-discipline-5-minute-exercises-to-build-self-control-good-habits-and-keep-going-when-you-want-to-give-up.md)  
 - [🔌👋 The Power of Showing Up: How Parental Presence Shapes Who Our Kids Become and How Their Brains Get Wired](./the-power-of-showing-up.md)  
 - [🔋⬇️⬆️ The Power of the Downstate: Recharge Your Life Using Your Body's Own Restorative Systems](./the-power-of-the-downstate-recharge-your-life-using-your-bodys-own-restorative-systems.md)  
+- [👤✊ The Power of the Powerless](./the-power-of-the-powerless.md)  
 - [💔💪🔗 The Power of Vulnerability: Teachings of Authenticity, Connection, and Courage](./the-power-of-vulnerability-teachings-of-authenticity-connection-and-courage.md)  
 - [🧑‍💻📈 The Pragmatic Programmer: Your Journey to Mastery](./the-pragmatic-programmer-your-journey-to-mastery.md)  
 - [🏚️⚠️ The Precariat: The New Dangerous Class](./the-precariat-the-new-dangerous-class.md)  

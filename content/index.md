@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-01-21T16:45:02-08:00
+updated: 2026-01-21T17:36:34-08:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -14,7 +14,7 @@ updated: 2026-01-21T16:45:02-08:00
 💬 Comment on any page with your GitHub account.  
   
 ## [🪞 Reflections](./reflections/index.md) ~ Blog (433)  
-- [2026-01-21](./reflections/2026-01-21.md)  
+- [2026-01-21 | 💡 Useful 🗣️ Politics 🚀 Foundations 🏛️ Abolishing 👤 Powerless 🗽 Liberty 📄📺📚](./reflections/2026-01-21.md)  
 - [2026-01-20 | 🥀 Lolita 🏛️ Noem 💔 Hurts 🌟 All 📜 The 👶🏽 Kids 📚📺📰](./reflections/2026-01-20.md)  
 - [2026-01-19 | 🫅 Prince ⚔️ Joe 🎭 Character 🧭 Explorer 📺👥🤖💬📚](./reflections/2026-01-19.md)  
 - [2026-01-18 | 😈 Devils 🛗 Elevate 😴 Fatigue 🔬 Science 📺📚](./reflections/2026-01-18.md)  
@@ -30,7 +30,9 @@ updated: 2026-01-21T16:45:02-08:00
 - [🧮 Calculator](./tools/calculator.md)  
   
   
-## [📚 Books](./books/index.md) (888)  
+## [📚 Books](./books/index.md) (890)  
+- [👤✊ The Power of the Powerless](./books/the-power-of-the-powerless.md)  
+- [🚀💰🏛️ The Leap of Faith: The Fiscal Foundations of Successful Government in Europe and America](./books/the-leap-of-faith-the-fiscal-foundations-of-successful-government-in-europe-and-america.md)  
 - [🌟👁️🔦 All the Light We Cannot See](./books/all-the-light-we-cannot-see.md)  
 - [👧💔🥀 Lolita](./books/lolita.md)  
 - [🤴 The Little Prince](./books/the-little-prince.md)  
@@ -39,11 +41,11 @@ updated: 2026-01-21T16:45:02-08:00
 - [🌈🦎 A Color of His Own](./books/a-color-of-his-own.md)  
 - [☀️⛓️🕊️ The Sun Does Shine: How I Found Life and Freedom on Death Row](./books/the-sun-does-shine-how-i-found-life-and-freedom-on-death-row.md)  
 - [🌱🧘🏼‍♀️🏆 Mindset: The New Psychology of Success](./books/mindset.md)  
-- [🤔👶😊 Big Ideas for Little Philosophers: Happiness with Aristotle](./books/big-ideas-for-little-philosophers-happiness-with-aristotle.md)  
-- [😩⚕️ Fatigue Science for Human Health](./books/fatigue-science-for-human-health.md)  
   
   
 ## [📺 Videos](./videos/index.md) (607)  
+- [❓🤯😵‍💫 What the Heck Just Happened | 2025-08-30](./videos/what-the-heck-just-happened-2025-08-30.md)  
+- [🌱⛰️💪 Effective Resistance to Authoritarianism: «The violets in the mountains have broken the rocks»](./videos/effective-resistance-to-authoritarianism-the-violets-in-the-mountains-have-broken-the-rocks.md)  
 - [🗣️📰🏛️ This Week in Politics | Explainer](./videos/this-week-in-politics-explainer-january-20-2025.md)  
 - [📚⏱️💡 21 Life-Changing Books Summarized in 18 Minutes](./videos/21-life-changing-books-summarized-in-18-minutes.md)  
 - [✍️💡🚀 How to Write Something Truly Useful - Daniel Pink](./videos/how-to-write-something-truly-useful-daniel-pink.md)  
@@ -52,8 +54,6 @@ updated: 2026-01-21T16:45:02-08:00
 - [📱🧠📉 Doctor on How Screen Time Hurts Kids' Cognitive Development](./videos/doctor-on-how-screen-time-hurts-kids-cognitive-development.md)  
 - [✍️🎭🧙‍♂️ Joe Abercrombie Shows Me How to Write PERFECT Character Introductions](./videos/joe-abercrombie-shows-me-how-to-write-perfect-character-introductions.md)  
 - [😴❌💡 Everything You Know About Fatigue is Wrong](./videos/everything-you-know-about-fatigue-is-wrong.md)  
-- [⚡️🔋💪 How To Have More Energy | Sean Hall | TEDxUNSW](./videos/how-to-have-more-energy-sean-hall-tedxunsw.md)  
-- [😴➡️😩8️⃣💤 Why You Wake Up Exhausted (Even After 8 Hours)](./videos/why-you-wake-up-exhausted-even-after-8-hours.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (88)  

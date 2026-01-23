@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-01-22T19:58:15-08:00
+updated: 2026-01-22T20:12:43-08:00
 ---
 [Home](../index.md)  
-# 📺 Videos (609)  
+# 📺 Videos (610)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
 - [❓💪🔬 12 Questions About Creatine with Stephen Cornish, PhD](./12-questions-about-creatine-w-stephen-cornish-phd.md)  
@@ -282,6 +282,7 @@ updated: 2026-01-22T19:58:15-08:00
 - [👩‍💻👑🦆 Kara Swisher: Tech, Power, and Why You Should Get the F*cking Duck](./kara-swisher-tech-power-and-why-you-should-get-the-fcking-duck.md)  
 - [🗣️💬🧠 Language Acquisition: Crash Course Linguistics  > 12](./language-acquisition-crash-course-linguistics-12.md)  
 - [🎓🎮🏆✨ Last Lecture Series: How to Design a Winnable Game – Graham Weaver](./last-lecture-series-how-to-design-a-winnable-game-graham-weaver.md)  
+- [⚖️🇺🇸🥶🪦 Lawfare Daily: Can Minnesota Prosecute ICE Agent Jonathan Ross?](./lawfare-daily-can-minnesota-prosecute-ice-agent-jonathan-ross.md)  
 - [🥇🧑‍🏫🏃💨 Learn Any Skill Faster By Copying How Olympic Athletes Train](./learn-any-skill-faster-by-copying-how-olympic-athletes-train.md)  
 - [👶🧠📈🎓 Learn how to boost your baby's brain from a Harvard Professor | UNICEF](./learn-how-to-boost-your-baby-s-brain-from-a-harvard-professor-unicef.md)  
 - [🧠💡📈🚀 Learning, Reasoning, and Planning with Neuro-Symbolic Concepts–Jiayuan Mao (MIT)](./learning-reasoning-and-planning-with-neuro-symbolic-concepts-jiayuan-mao-mit.md)  

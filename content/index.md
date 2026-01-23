@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-01-21T17:36:34-08:00
+updated: 2026-01-22T19:38:41-08:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -13,7 +13,8 @@ updated: 2026-01-21T17:36:34-08:00
 ❔ What do 🫵 _you_ 🤔 think?  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (433)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (434)  
+- [2026-01-22](./reflections/2026-01-22.md)  
 - [2026-01-21 | 💡 Useful 🗣️ Politics 🚀 Foundations 🏛️ Abolishing 👤 Powerless 🗽 Liberty 📄📺📚](./reflections/2026-01-21.md)  
 - [2026-01-20 | 🥀 Lolita 🏛️ Noem 💔 Hurts 🌟 All 📜 The 👶🏽 Kids 📚📺📰](./reflections/2026-01-20.md)  
 - [2026-01-19 | 🫅 Prince ⚔️ Joe 🎭 Character 🧭 Explorer 📺👥🤖💬📚](./reflections/2026-01-19.md)  
@@ -23,7 +24,6 @@ updated: 2026-01-21T17:36:34-08:00
 - [2026-01-15 | 🫦 Desire 🤖 Bot 🏆 Wins 🛡️ Immunity 🌌📺📚](./reflections/2026-01-15.md)  
 - [2026-01-14 | 🦸‍♀️ Strong 🧬 Human 🎭 Character 🛡️ Defends 🗽 Freedom 🍽️ In 🌌 Everything 🧪 As 🧬 Science 🗯️ Hates 🧺 Dirty 😈 Devils 📜 Manifesto 📚📺📰⌨️✍🏽](./reflections/2026-01-14.md)  
 - [2026-01-13 | 🔥 Devils ⚡ Spark ❤️ Heart 📚📺](./reflections/2026-01-13.md)  
-- [2026-01-12 | ▶️ Initially 🕵️‍♀️ Secret ⚖️ Impeachment 👨‍⚖️ Sues 🏛️ Democracy ⌛ After 💔 Breaking 🧠 Brain 🔋 Burnout 👮‍♀️ Policing ⚠️ Threats 📚📺📰](./reflections/2026-01-12.md)  
   
   
 ## [🧰 Tools](./tools/index.md) (1)  
@@ -43,7 +43,8 @@ updated: 2026-01-21T17:36:34-08:00
 - [🌱🧘🏼‍♀️🏆 Mindset: The New Psychology of Success](./books/mindset.md)  
   
   
-## [📺 Videos](./videos/index.md) (607)  
+## [📺 Videos](./videos/index.md) (608)  
+- [🏛️📰📣 Today in Politics | Explainer](./videos/today-in-politics-explainer-january-22-2026.md)  
 - [❓🤯😵‍💫 What the Heck Just Happened | 2025-08-30](./videos/what-the-heck-just-happened-2025-08-30.md)  
 - [🌱⛰️💪 Effective Resistance to Authoritarianism: «The violets in the mountains have broken the rocks»](./videos/effective-resistance-to-authoritarianism-the-violets-in-the-mountains-have-broken-the-rocks.md)  
 - [🗣️📰🏛️ This Week in Politics | Explainer](./videos/this-week-in-politics-explainer-january-20-2025.md)  
@@ -53,7 +54,6 @@ updated: 2026-01-21T17:36:34-08:00
 - [👨‍🏫⚖️💻 Professor on Regulating Tech for Kids](./videos/professor-on-regulating-tech-for-kids.md)  
 - [📱🧠📉 Doctor on How Screen Time Hurts Kids' Cognitive Development](./videos/doctor-on-how-screen-time-hurts-kids-cognitive-development.md)  
 - [✍️🎭🧙‍♂️ Joe Abercrombie Shows Me How to Write PERFECT Character Introductions](./videos/joe-abercrombie-shows-me-how-to-write-perfect-character-introductions.md)  
-- [😴❌💡 Everything You Know About Fatigue is Wrong](./videos/everything-you-know-about-fatigue-is-wrong.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (88)  

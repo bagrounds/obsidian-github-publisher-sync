@@ -4,10 +4,10 @@ aliases:
   - 👑🚧📉 Brooks and Capehart on Trump’s tariffs and reaction from the markets
 title: 👑🚧📉 Brooks and Capehart on Trump’s tariffs and reaction from the markets
 URL: https://youtu.be/diixoCXymYk
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: PBS NewsHour
-tags: 
+tags:
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 👑🚧📉 Brooks and Capehart on Trump’s tariffs and reaction from the markets  
@@ -32,6 +32,6 @@ tags:
 - **For insights into potential corruption and abuse of power:**  
     - [🤡🫨😭🤬😵‍💫🤥👹🇺🇸 A Very Stable Genius: Donald J. Trump's Testing of America](../books/a-very-stable-genius-donald-j-trumps-testing-of-america.md) by Philip Rucker and Carol Leonnig.  
 - **For analysis of immigration policies:**  
-    - _One Mighty and Irresistible Tide: The Epic Struggle Over American Immigration, 1924-1965_ by Jia Lynn Yang.  
+    - [🌊🌎 One Mighty and Irresistible Tide: The Epic Struggle Over American Immigration, 1924-1965](../books/one-mighty-and-irresistible-tide-the-epic-struggle-over-american-immigration-1924-1965.md) by Jia Lynn Yang.  
 - **For a deeper understanding of patrimonialism and its impact on governance:**  
     - [🇮🇹🇩🇪🇱🇾🇷🇺🇺🇸 Strongmen: Mussolini to the Present](../books/strongmen.md) by Ruth Ben-Ghiat.

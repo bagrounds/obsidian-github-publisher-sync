@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-01-22T19:38:41-08:00
+updated: 2026-01-22T19:58:15-08:00
 ---
 [Home](../index.md)  
-# 📺 Videos (608)  
+# 📺 Videos (609)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
 - [❓💪🔬 12 Questions About Creatine with Stephen Cornish, PhD](./12-questions-about-creatine-w-stephen-cornish-phd.md)  
@@ -334,6 +334,7 @@ updated: 2026-01-22T19:38:41-08:00
 - [👩‍⚖️🛑🇺🇸🏛️ Oregon governor calls Trump's actions 'an abuse of power and threat to our democracy'](./oregon-governor-calls-trumps-actions-an-abuse-of-power-and-threat-to-our-democracy.md)  
 - [➡️⚖️💪 Our work continues, without fear or favor](./our-work-continues-without-fear-or-favor.md)  
 - [🗺️♟️🤖🤝 Parables on the Power of Planning in AI: From Poker to Diplomacy: Noam Brown (OpenAI)](./parables-on-the-power-of-planning-in-ai-from-poker-to-diplomacy-noam-brown-openai.md)  
+- [📺📰🗓️ PBS News Hour full episode, Jan. 22, 2026](./pbs-news-hour-full-episode-jan-22-2026.md)  
 - [⚔️💥🏛️🇮🇱🇮🇷🪧🇺🇸🎂 PBS News Weekend full episode, June 14, 2025](./pbs-news-weekend-full-episode-june-14-2025.md)  
 - [🇺🇸📰🗓️ PBS News Weekend full episode, June 22, 2025](./pbs-news-weekend-full-episode-june-22-2025.md)  
 - [PBS News Weekly: A deeper look at Trump's tariff wars, education cuts and more | March 14, 2025](./pbs-news-weekly-a-deeper-look-at-trumps-tariff-wars-education-cuts-and-more-march-14-2025.md)  

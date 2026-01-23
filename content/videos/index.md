@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-01-21T17:36:34-08:00
+updated: 2026-01-22T19:38:41-08:00
 ---
 [Home](../index.md)  
-# 📺 Videos (607)  
+# 📺 Videos (608)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
 - [❓💪🔬 12 Questions About Creatine with Stephen Cornish, PhD](./12-questions-about-creatine-w-stephen-cornish-phd.md)  
@@ -493,10 +493,11 @@ updated: 2026-01-21T17:36:34-08:00
 - [⏱️💰📈 This simple time management system will make you a millionaire](./this-simple-time-management-system-will-make-you-a-millionaire.md)  
 - [This Single Rule Underpins All Of Physics](./this-single-rule-underpins-all-of-physics.md)  
 - [📰🇺🇸❓🏛️ This Week In Politics, A Big-Picture Look at Where We Are Right Now | Explainer](./this-week-in-politics-a-big-picture-look-at-where-we-are-right-now-explainer.md)  
-- [📰🗣️❓ This Week in Politics | Explainer](./this-week-in-politics-explainer.md)  
 - [🗣️📰🏛️ This Week in Politics | Explainer](./this-week-in-politics-explainer-january-20-2025.md)  
+- [📰🗣️❓ This Week in Politics | Explainer](./this-week-in-politics-explainer.md)  
 - [🕸️🛠️🤔 Three decades after inventing the web, Tim Berners-Lee has some ideas on how to fix it](./three-decades-after-inventing-the-web-tim-berners-lee-has-some-ideas-on-how-to-fix-it.md)  
 - [👶🏃‍♀️🏅✅ Thule Urban Glide 3 Full Review | Best Running / Jogging Stroller 2024](./thule-urban-glide-3-full-review-best-running-jogging-stroller-2024.md)  
+- [🏛️📰📣 Today in Politics | Explainer](./today-in-politics-explainer-january-22-2026.md)  
 - [🇺🇸🚀🇻🇪 Today's News, January 3, 2025](./todays-news-january-3-2025.md)  
 - [🤥📢👨‍💼 Tony Schwartz: The Truth About Trump | Oxford Union Q&A](./tony-schwartz-the-truth-about-trump-oxford-union-q-a.md)  
 - [💪🧠🚫💊🚀 Tools for Overcoming Substance & Behavioral Addictions | Ryan Soave](./tools-for-overcoming-substance-behavioral-addictions-ryan-soave.md)  

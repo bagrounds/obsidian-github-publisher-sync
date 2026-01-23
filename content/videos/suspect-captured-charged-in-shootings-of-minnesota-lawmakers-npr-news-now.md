@@ -4,10 +4,10 @@ aliases:
   - 👤💀🏛️🚓 Suspect Captured, Charged In Shootings Of Minnesota Lawmakers | NPR News Now
 title: 👤💀🏛️🚓 Suspect Captured, Charged In Shootings Of Minnesota Lawmakers | NPR News Now
 URL: https://bagrounds.org/videos/suspect-captured-charged-in-shootings-of-minnesota-lawmakers-npr-news-now
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: NPR
-tags: 
+tags:
 youtube: https://youtu.be/1t1KbqguXz8
 ---
 [Home](../index.md) > [Videos](./index.md)  
@@ -43,7 +43,7 @@ youtube: https://youtu.be/1t1KbqguXz8
   
 **On US Immigration Policy and Agricultural Labor:**  
 * 🛂 **"Impossible Subjects: Illegal Aliens and the Making of Modern America"** by Mae M. Ngai: Examines the historical construction of "illegality" in U.S. immigration 🇺🇸.  
-* 🌊 **"One Mighty and Irresistible Tide"** by Jia Lynn Yang: A history of 20th-century American immigration law reform.  
+* **[🌊🌎 One Mighty and Irresistible Tide: The Epic Struggle Over American Immigration, 1924-1965](../books/one-mighty-and-irresistible-tide-the-epic-struggle-over-american-immigration-1924-1965.md)** by Jia Lynn Yang: A history of 20th-century American immigration law reform.  
 * **[🚫📄🇺🇸 The Undocumented Americans](../books/the-undocumented-americans.md)** by Karla Cornejo Villavicencio: Offers personal stories and insights into the lives of undocumented immigrants.  
 * 📖 **"Under the Feet of Jesus"** by Helena María Viramontes: A novel that evokes the physical and emotional experiences of farmworkers 🧑‍🌾.  
 * 📝 **"All They Will Call You"** by Tim Z. Hernandez: Researches and reconstructs the lives of Mexican field workers killed in a 1948 plane crash ✈️. This book is a testament to their lives, giving voice to those often forgotten.  

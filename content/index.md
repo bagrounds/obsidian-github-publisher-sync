@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-01-23T07:27:51-08:00
+updated: 2026-01-23T13:44:50-08:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -14,8 +14,8 @@ updated: 2026-01-23T07:27:51-08:00
 💬 Comment on any page with your GitHub account.  
   
 ## [🪞 Reflections](./reflections/index.md) ~ Blog (435)  
-- [2026-01-23](./reflections/2026-01-23.md)  
-- [2026-01-22](./reflections/2026-01-22.md)  
+- [🗓️ 2026-01-23](./reflections/2026-01-23.md)  
+- [2026-01-22 | ⚖️ Minnesota 🏛️ Politics 🧠 Boost 🌊 Irresistible ☄️ Mary 📜 Birth 📺 News 📚📺📰](./reflections/2026-01-22.md)  
 - [2026-01-21 | 💡 Useful 🗣️ Politics 🚀 Foundations 🏛️ Abolishing 👤 Powerless 🗽 Liberty 📄📺📚](./reflections/2026-01-21.md)  
 - [2026-01-20 | 🥀 Lolita 🏛️ Noem 💔 Hurts 🌟 All 📜 The 👶🏽 Kids 📚📺📰](./reflections/2026-01-20.md)  
 - [2026-01-19 | 🫅 Prince ⚔️ Joe 🎭 Character 🧭 Explorer 📺👥🤖💬📚](./reflections/2026-01-19.md)  
@@ -43,7 +43,8 @@ updated: 2026-01-23T07:27:51-08:00
 - [🌈🦎 A Color of His Own](./books/a-color-of-his-own.md)  
   
   
-## [📺 Videos](./videos/index.md) (611)  
+## [📺 Videos](./videos/index.md) (612)  
+- [🗣️🏛️📰 American Conversations: Carol Leonnig and Aaron C. Davis](./videos/american-conversations-carol-leonnig-and-aaron-c-davis.md)  
 - [🧠💡🧘‍♀️ Essentials: Tools to Boost Attention & Memory | Dr. Wendy Suzuki](./videos/essentials-tools-to-boost-attention-memory-dr-wendy-suzuki.md)  
 - [⚖️🇺🇸🥶🪦 Lawfare Daily: Can Minnesota Prosecute ICE Agent Jonathan Ross?](./videos/lawfare-daily-can-minnesota-prosecute-ice-agent-jonathan-ross.md)  
 - [👑🚧📉 Brooks and Capehart on Trump’s tariffs and reaction from the markets](./videos/brooks-and-capehart-on-trumps-tariffs-and-reaction-from-the-markets.md)  
@@ -53,7 +54,6 @@ updated: 2026-01-23T07:27:51-08:00
 - [🏛️📰📣 Today in Politics | Explainer](./videos/today-in-politics-explainer-january-22-2026.md)  
 - [❓🤯😵‍💫 What the Heck Just Happened | 2025-08-30](./videos/what-the-heck-just-happened-2025-08-30.md)  
 - [🌱⛰️💪 Effective Resistance to Authoritarianism: «The violets in the mountains have broken the rocks»](./videos/effective-resistance-to-authoritarianism-the-violets-in-the-mountains-have-broken-the-rocks.md)  
-- [🗣️📰🏛️ This Week in Politics | Explainer](./videos/this-week-in-politics-explainer-january-20-2025.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (88)  

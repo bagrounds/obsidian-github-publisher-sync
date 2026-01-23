@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-01-22T20:12:43-08:00
+updated: 2026-01-23T07:27:51-08:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -13,7 +13,8 @@ updated: 2026-01-22T20:12:43-08:00
 ❔ What do 🫵 _you_ 🤔 think?  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (434)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (435)  
+- [2026-01-23](./reflections/2026-01-23.md)  
 - [2026-01-22](./reflections/2026-01-22.md)  
 - [2026-01-21 | 💡 Useful 🗣️ Politics 🚀 Foundations 🏛️ Abolishing 👤 Powerless 🗽 Liberty 📄📺📚](./reflections/2026-01-21.md)  
 - [2026-01-20 | 🥀 Lolita 🏛️ Noem 💔 Hurts 🌟 All 📜 The 👶🏽 Kids 📚📺📰](./reflections/2026-01-20.md)  
@@ -23,14 +24,14 @@ updated: 2026-01-22T20:12:43-08:00
 - [2026-01-16 | 🤖 Agent ❤️ Taught 🦠 Measles 💉 Health 💰 Debt 📜 History 📺📰📚](./reflections/2026-01-16.md)  
 - [2026-01-15 | 🫦 Desire 🤖 Bot 🏆 Wins 🛡️ Immunity 🌌📺📚](./reflections/2026-01-15.md)  
 - [2026-01-14 | 🦸‍♀️ Strong 🧬 Human 🎭 Character 🛡️ Defends 🗽 Freedom 🍽️ In 🌌 Everything 🧪 As 🧬 Science 🗯️ Hates 🧺 Dirty 😈 Devils 📜 Manifesto 📚📺📰⌨️✍🏽](./reflections/2026-01-14.md)  
-- [2026-01-13 | 🔥 Devils ⚡ Spark ❤️ Heart 📚📺](./reflections/2026-01-13.md)  
   
   
 ## [🧰 Tools](./tools/index.md) (1)  
 - [🧮 Calculator](./tools/calculator.md)  
   
   
-## [📚 Books](./books/index.md) (891)  
+## [📚 Books](./books/index.md) (892)  
+- [🧠💡😊 Healthy Brain, Happy Life: A Personal Program to Activate Your Brain and Do Everything Better](./books/healthy-brain-happy-life-a-personal-program-to-activate-your-brain-and-do-everything-better.md)  
 - [🌊🌎 One Mighty and Irresistible Tide: The Epic Struggle Over American Immigration, 1924-1965](./books/one-mighty-and-irresistible-tide-the-epic-struggle-over-american-immigration-1924-1965.md)  
 - [👤✊ The Power of the Powerless](./books/the-power-of-the-powerless.md)  
 - [🚀💰🏛️ The Leap of Faith: The Fiscal Foundations of Successful Government in Europe and America](./books/the-leap-of-faith-the-fiscal-foundations-of-successful-government-in-europe-and-america.md)  
@@ -40,10 +41,10 @@ updated: 2026-01-22T20:12:43-08:00
 - [❓🏛️👶 Big Ideas for Little Philosophers: Truth with Socrates](./books/big-ideas-for-little-philosophers-truth-with-socrates.md)  
 - [🤔👶💭 Big Ideas for Little Philosophers: Imagination with René Descartes](./books/big-ideas-for-little-philosophers-imagination-with-rene-descartes.md)  
 - [🌈🦎 A Color of His Own](./books/a-color-of-his-own.md)  
-- [☀️⛓️🕊️ The Sun Does Shine: How I Found Life and Freedom on Death Row](./books/the-sun-does-shine-how-i-found-life-and-freedom-on-death-row.md)  
   
   
-## [📺 Videos](./videos/index.md) (610)  
+## [📺 Videos](./videos/index.md) (611)  
+- [🧠💡🧘‍♀️ Essentials: Tools to Boost Attention & Memory | Dr. Wendy Suzuki](./videos/essentials-tools-to-boost-attention-memory-dr-wendy-suzuki.md)  
 - [⚖️🇺🇸🥶🪦 Lawfare Daily: Can Minnesota Prosecute ICE Agent Jonathan Ross?](./videos/lawfare-daily-can-minnesota-prosecute-ice-agent-jonathan-ross.md)  
 - [👑🚧📉 Brooks and Capehart on Trump’s tariffs and reaction from the markets](./videos/brooks-and-capehart-on-trumps-tariffs-and-reaction-from-the-markets.md)  
 - [👤💀🏛️🚓 Suspect Captured, Charged In Shootings Of Minnesota Lawmakers | NPR News Now](./videos/suspect-captured-charged-in-shootings-of-minnesota-lawmakers-npr-news-now.md)  
@@ -53,7 +54,6 @@ updated: 2026-01-22T20:12:43-08:00
 - [❓🤯😵‍💫 What the Heck Just Happened | 2025-08-30](./videos/what-the-heck-just-happened-2025-08-30.md)  
 - [🌱⛰️💪 Effective Resistance to Authoritarianism: «The violets in the mountains have broken the rocks»](./videos/effective-resistance-to-authoritarianism-the-violets-in-the-mountains-have-broken-the-rocks.md)  
 - [🗣️📰🏛️ This Week in Politics | Explainer](./videos/this-week-in-politics-explainer-january-20-2025.md)  
-- [📚⏱️💡 21 Life-Changing Books Summarized in 18 Minutes](./videos/21-life-changing-books-summarized-in-18-minutes.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (88)  

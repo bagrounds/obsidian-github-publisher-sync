@@ -5,10 +5,10 @@ aliases:
 share: true
 URL: https://bagrounds.org/books
 backlinks: false
-updated: 2026-01-22T20:12:43-08:00
+updated: 2026-01-23T07:27:51-08:00
 ---
 [Home](../index.md)  
-# 📚 Books (891)  
+# 📚 Books (892)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [💻0️⃣ Source Code: My Beginnings](./source-code-my-beginnings.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)  
@@ -291,6 +291,7 @@ updated: 2026-01-22T20:12:43-08:00
 - [🐣🌱👨‍🏫💻 Haskell Programming from First Principles](./haskell-programming-from-first-principles.md)  
 - [🧠🤓📈💡 Head First Statistics: A Brain-Friendly Guide](./head-first-statistics.md)  
 - [⚕️💸 Health Insurance in America: A Consumer's Guide](./health-insurance-in-america-a-consumers-guide.md)  
+- [🧠💡😊 Healthy Brain, Happy Life: A Personal Program to Activate Your Brain and Do Everything Better](./healthy-brain-happy-life-a-personal-program-to-activate-your-brain-and-do-everything-better.md)  
 - [👶🦓🌊 Hello, Ocean Friends: A Black-and-White Board Book for Babies That Helps Visual Development](./hello-ocean-friends-a-black-and-white-board-book-for-babies-that-helps-visual-development.md)  
 - [🙈⚡🔬🌌 Hidden Potential: The Science of Achieving Greater Things](./hidden-potential-the-science-of-achieving-greater-things.md)  
 - [📈🌟 High Performance Habits: How Extraordinary People Become That Way](./high-performance-habits-how-extraordinary-people-become-that-way.md)  

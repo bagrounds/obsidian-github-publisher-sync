@@ -5,10 +5,10 @@ aliases:
 share: true
 URL: https://bagrounds.org/books
 backlinks: false
-updated: 2026-01-22T19:38:41-08:00
+updated: 2026-01-22T19:58:15-08:00
 ---
 [Home](../index.md)  
-# 📚 Books (890)  
+# 📚 Books (891)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [💻0️⃣ Source Code: My Beginnings](./source-code-my-beginnings.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)  
@@ -437,6 +437,7 @@ updated: 2026-01-22T19:38:41-08:00
 - [💰🏛️💔🇺🇸 On Corruption in America: And What Is at Stake](./on-corruption-in-america-and-what-is-at-stake.md)  
 - [🏛️🗳️🗣️🤝 On Democracy](./on-democracy.md)  
 - [📢🛡️ On Disinformation: How to Fight for Truth and Protect Democracy](./on-disinformation-how-to-fight-for-truth-and-protect-democracy.md)  
+- [🌊🌎 One Mighty and Irresistible Tide: The Epic Struggle Over American Immigration, 1924-1965](./one-mighty-and-irresistible-tide-the-epic-struggle-over-american-immigration-1924-1965.md)  
 - [🗳️⬇️🏛️ One Person, No Vote: How Voter Suppression Is Destroying Our Democracy](./one-person-no-vote-how-voter-suppression-is-destroying-our-democracy.md)  
 - [✍️🗽 On Freedom](./on-freedom.md)  
 - [🗣️ On Language](./on-language.md)  

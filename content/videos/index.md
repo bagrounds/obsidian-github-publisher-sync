@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-01-23T07:27:51-08:00
+updated: 2026-01-23T13:44:50-08:00
 ---
 [Home](../index.md)  
-# 📺 Videos (611)  
+# 📺 Videos (612)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
 - [❓💪🔬 12 Questions About Creatine with Stephen Cornish, PhD](./12-questions-about-creatine-w-stephen-cornish-phd.md)  
@@ -55,6 +55,7 @@ updated: 2026-01-23T07:27:51-08:00
 - [📺🏛️💸🎯 A look at the history of public media in the U.S. as Republicans target federal funding](./a-look-at-the-history-of-public-media-in-the-us-as-republicans-target-federal-funding.md)  
 - [🇺🇸📚🔄 A look at what's behind the efforts to reshape how American history is taught](./a-look-at-whats-behind-the-efforts-to-reshape-how-american-history-is-taught.md)  
 - [🏛️⚖️🌍 A look rulings from the Supreme Court term that could have far-reaching consequences](./a-look-rulings-from-the-supreme-court-term-that-could-have-far-reaching-consequences.md)  
+- [🗣️🏛️📰 American Conversations: Carol Leonnig and Aaron C. Davis](./american-conversations-carol-leonnig-and-aaron-c-davis.md)  
 - [🇺🇸🗣️👂 American Conversations: Diana Butler Bass](./american-conversations-diana-butler-bass.md)  
 - [🗺️✂️🏛️🗣️ American Conversations: Gerrymandering with Kate Compton Barr and Sam Wang](./american-conversations-gerrymandering-with-kate-compton-barr-and-sam-wang.md)  
 - [🇺🇸🗣️⚖️🗳️ American Conversations: Marc Elias](./american-conversations-marc-elias.md)  

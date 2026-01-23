@@ -50,6 +50,7 @@ youtube: https://www.youtube.com/embed/WP67hiBqCSY
   
 ### ↔️ Similar  
   
+- [🏛️💔 Injustice: How Politics and Fear Vanquished America's Justice Department](../books/injustice-how-politics-and-fear-vanquished-americas-justice-department.md)  
 * [🍊🤡🤥👹💥🏛️🇺🇸 I Alone Can Fix It: Donald J. Trump's Catastrophic Final Year](../books/i-alone-can-fix-it-donald-j-trumps-catastrophic-final-year.md) by Carol Leonnig and Philip Rucker explores the internal collapse of safeguards during the first Trump administration.  
 * 📖 The Divider: Trump in the White House 2017-2021 by Peter Baker and Susan Glasser details the systematic pressure placed on the Department of Justice.  
   

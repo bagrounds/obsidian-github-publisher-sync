@@ -4,10 +4,10 @@ aliases:
   - 🏛️👹👑📜 Politics Chat, July 1, 2025
 title: 🏛️👹👑📜 Politics Chat, July 1, 2025
 URL: https://bagrounds.org/videos/politics-chat-july-1-2025
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: Heather Cox Richardson
-tags: 
+tags:
 youtube: https://www.youtube.com/live/_bV222ElZMk
 ---
 [Home](../index.md) > [Videos](./index.md)  
@@ -34,10 +34,10 @@ youtube: https://www.youtube.com/live/_bV222ElZMk
 * **[🌍🏛️ The Great Transformation: The Political and Economic Origins of Our Time](../books/the-great-transformation-the-political-and-economic-origins-of-our-time.md) by Karl Polanyi:** While not solely about the U.S., this classic work explores the relationship between economic systems and social structures, offering a broader context for understanding the impact of economic policies.  
   
 ### 🌎 On U.S. Immigration History and Policy  
-* 🚧 **"Impossible Subjects: Illegal Aliens and the Making of Modern America" by Mae M. Ngai:** Explores how the concept of "illegality" in immigration was constructed and its impact on American society.  
-* 🇺🇸 **"One Mighty and Irresistible Tide: The Epic Struggle Over American Immigration, 1924-1965" by Jia Lynn Yang:** A sweeping history of the battles to reform American immigration laws in the 20th century.  
-* 💔 **"Separated: Inside an American Tragedy" by Jacob Soboroff:** A deeply reported account of the family separation crisis at the U.S.-Mexico border.  
-* 🗺️ **"Everyone Who Is Gone Is Here: The United States, Central America, and the Roots of Our Migration Crisis" by Jonathan Blitzer:** Examines the historical roots of the current migration crisis from Central America to the U.S.  
+* 🚧 **Impossible Subjects: Illegal Aliens and the Making of Modern America by Mae M. Ngai:** Explores how the concept of "illegality" in immigration was constructed and its impact on American society.  
+* **[🌊🌎 One Mighty and Irresistible Tide: The Epic Struggle Over American Immigration, 1924-1965](../books/one-mighty-and-irresistible-tide-the-epic-struggle-over-american-immigration-1924-1965.md) by Jia Lynn Yang:** A sweeping history of the battles to reform American immigration laws in the 20th century.  
+* 💔 **Separated: Inside an American Tragedy by Jacob Soboroff:** A deeply reported account of the family separation crisis at the U.S.-Mexico border.  
+* **[👣🗺️💥 Everyone Who Is Gone Is Here: The United States, Central America, and the Making of a Crisis](../books/everyone-who-is-gone-is-here-the-united-states-central-america-and-the-making-of-a-crisis.md) by Jonathan Blitzer:** Examines the historical roots of the current migration crisis from Central America to the U.S.  
   
 ## 🐦 Tweet  
 <blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">🏛️👹👑📜 Politics Chat, July 1, 2025<br>by <a href="https://twitter.com/HC_Richardson?ref_src=twsrc%5Etfw">@HC_Richardson</a><br><br>👨‍⚖️ Presidential Immunity | 💸 Trump Administration Actions | 🧾 Budget Reconciliation Bill | 🛂 Immigration Narrative | 💪 Call to Action | 🇺🇸 Constitution | 💰 Federal Budget | 💔 Family Separation<a href="https://t.co/upMFglAbCX">https://t.co/upMFglAbCX</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/1940247654673653924?ref_src=twsrc%5Etfw">July 2, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

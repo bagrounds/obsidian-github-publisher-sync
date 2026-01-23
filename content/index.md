@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-01-22T19:58:15-08:00
+updated: 2026-01-22T20:12:43-08:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -43,7 +43,8 @@ updated: 2026-01-22T19:58:15-08:00
 - [☀️⛓️🕊️ The Sun Does Shine: How I Found Life and Freedom on Death Row](./books/the-sun-does-shine-how-i-found-life-and-freedom-on-death-row.md)  
   
   
-## [📺 Videos](./videos/index.md) (609)  
+## [📺 Videos](./videos/index.md) (610)  
+- [⚖️🇺🇸🥶🪦 Lawfare Daily: Can Minnesota Prosecute ICE Agent Jonathan Ross?](./videos/lawfare-daily-can-minnesota-prosecute-ice-agent-jonathan-ross.md)  
 - [👑🚧📉 Brooks and Capehart on Trump’s tariffs and reaction from the markets](./videos/brooks-and-capehart-on-trumps-tariffs-and-reaction-from-the-markets.md)  
 - [👤💀🏛️🚓 Suspect Captured, Charged In Shootings Of Minnesota Lawmakers | NPR News Now](./videos/suspect-captured-charged-in-shootings-of-minnesota-lawmakers-npr-news-now.md)  
 - [🏛️👹👑📜 Politics Chat, July 1, 2025](./videos/politics-chat-july-1-2025.md)  
@@ -53,7 +54,6 @@ updated: 2026-01-22T19:58:15-08:00
 - [🌱⛰️💪 Effective Resistance to Authoritarianism: «The violets in the mountains have broken the rocks»](./videos/effective-resistance-to-authoritarianism-the-violets-in-the-mountains-have-broken-the-rocks.md)  
 - [🗣️📰🏛️ This Week in Politics | Explainer](./videos/this-week-in-politics-explainer-january-20-2025.md)  
 - [📚⏱️💡 21 Life-Changing Books Summarized in 18 Minutes](./videos/21-life-changing-books-summarized-in-18-minutes.md)  
-- [✍️💡🚀 How to Write Something Truly Useful - Daniel Pink](./videos/how-to-write-something-truly-useful-daniel-pink.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (88)  

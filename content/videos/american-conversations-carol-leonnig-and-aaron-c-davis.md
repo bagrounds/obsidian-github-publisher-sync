@@ -10,7 +10,7 @@ Channel: Heather Cox Richardson
 tags:
 youtube: https://www.youtube.com/embed/WP67hiBqCSY
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](../index.md) > [Videos](./index.md) | [🏛️🇺🇸📖 Heather Cox Richardson](../people/heather-cox-richardson.md)  
 # 🗣️🏛️📰 American Conversations: Carol Leonnig and Aaron C. Davis  
 ![American Conversations: Carol Leonnig and Aaron C. Davis](https://www.youtube.com/embed/WP67hiBqCSY)  
   

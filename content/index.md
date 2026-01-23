@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-01-22T19:38:41-08:00
+updated: 2026-01-22T19:58:15-08:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -30,7 +30,8 @@ updated: 2026-01-22T19:38:41-08:00
 - [🧮 Calculator](./tools/calculator.md)  
   
   
-## [📚 Books](./books/index.md) (890)  
+## [📚 Books](./books/index.md) (891)  
+- [🌊🌎 One Mighty and Irresistible Tide: The Epic Struggle Over American Immigration, 1924-1965](./books/one-mighty-and-irresistible-tide-the-epic-struggle-over-american-immigration-1924-1965.md)  
 - [👤✊ The Power of the Powerless](./books/the-power-of-the-powerless.md)  
 - [🚀💰🏛️ The Leap of Faith: The Fiscal Foundations of Successful Government in Europe and America](./books/the-leap-of-faith-the-fiscal-foundations-of-successful-government-in-europe-and-america.md)  
 - [🌟👁️🔦 All the Light We Cannot See](./books/all-the-light-we-cannot-see.md)  
@@ -40,20 +41,19 @@ updated: 2026-01-22T19:38:41-08:00
 - [🤔👶💭 Big Ideas for Little Philosophers: Imagination with René Descartes](./books/big-ideas-for-little-philosophers-imagination-with-rene-descartes.md)  
 - [🌈🦎 A Color of His Own](./books/a-color-of-his-own.md)  
 - [☀️⛓️🕊️ The Sun Does Shine: How I Found Life and Freedom on Death Row](./books/the-sun-does-shine-how-i-found-life-and-freedom-on-death-row.md)  
-- [🌱🧘🏼‍♀️🏆 Mindset: The New Psychology of Success](./books/mindset.md)  
   
   
-## [📺 Videos](./videos/index.md) (608)  
+## [📺 Videos](./videos/index.md) (609)  
+- [👑🚧📉 Brooks and Capehart on Trump’s tariffs and reaction from the markets](./videos/brooks-and-capehart-on-trumps-tariffs-and-reaction-from-the-markets.md)  
+- [👤💀🏛️🚓 Suspect Captured, Charged In Shootings Of Minnesota Lawmakers | NPR News Now](./videos/suspect-captured-charged-in-shootings-of-minnesota-lawmakers-npr-news-now.md)  
+- [🏛️👹👑📜 Politics Chat, July 1, 2025](./videos/politics-chat-july-1-2025.md)  
+- [📺📰🗓️ PBS News Hour full episode, Jan. 22, 2026](./videos/pbs-news-hour-full-episode-jan-22-2026.md)  
 - [🏛️📰📣 Today in Politics | Explainer](./videos/today-in-politics-explainer-january-22-2026.md)  
 - [❓🤯😵‍💫 What the Heck Just Happened | 2025-08-30](./videos/what-the-heck-just-happened-2025-08-30.md)  
 - [🌱⛰️💪 Effective Resistance to Authoritarianism: «The violets in the mountains have broken the rocks»](./videos/effective-resistance-to-authoritarianism-the-violets-in-the-mountains-have-broken-the-rocks.md)  
 - [🗣️📰🏛️ This Week in Politics | Explainer](./videos/this-week-in-politics-explainer-january-20-2025.md)  
 - [📚⏱️💡 21 Life-Changing Books Summarized in 18 Minutes](./videos/21-life-changing-books-summarized-in-18-minutes.md)  
 - [✍️💡🚀 How to Write Something Truly Useful - Daniel Pink](./videos/how-to-write-something-truly-useful-daniel-pink.md)  
-- [☀️🏛️⚖️ This morning I introduced Articles of Impeachment against Homeland Security Secretary Kristi Noem](./videos/this-morning-i-introduced-articles-of-impeachment-against-homeland-security-secretary-kristi-noem.md)  
-- [👨‍🏫⚖️💻 Professor on Regulating Tech for Kids](./videos/professor-on-regulating-tech-for-kids.md)  
-- [📱🧠📉 Doctor on How Screen Time Hurts Kids' Cognitive Development](./videos/doctor-on-how-screen-time-hurts-kids-cognitive-development.md)  
-- [✍️🎭🧙‍♂️ Joe Abercrombie Shows Me How to Write PERFECT Character Introductions](./videos/joe-abercrombie-shows-me-how-to-write-perfect-character-introductions.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (88)  

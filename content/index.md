@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-01-23T17:26:54-08:00
+updated: 2026-01-23T17:36:22-08:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -30,7 +30,9 @@ updated: 2026-01-23T17:26:54-08:00
 - [🧮 Calculator](./tools/calculator.md)  
   
   
-## [📚 Books](./books/index.md) (892)  
+## [📚 Books](./books/index.md) (894)  
+- [✅🔬🦠 Crisis Averted: The Hidden Science of Fighting Outbreaks](./books/crisis-averted-the-hidden-science-of-fighting-outbreaks.md)  
+- [🧑🏿⚖️🧑🏻💔 Separate and Unequal: The Kerner Commission and the Unraveling of American Liberalism](./books/separate-and-unequal-the-kerner-commission-and-the-unraveling-of-american-liberalism.md)  
 - [🧠💡😊 Healthy Brain, Happy Life: A Personal Program to Activate Your Brain and Do Everything Better](./books/healthy-brain-happy-life-a-personal-program-to-activate-your-brain-and-do-everything-better.md)  
 - [🌊🌎 One Mighty and Irresistible Tide: The Epic Struggle Over American Immigration, 1924-1965](./books/one-mighty-and-irresistible-tide-the-epic-struggle-over-american-immigration-1924-1965.md)  
 - [👤✊ The Power of the Powerless](./books/the-power-of-the-powerless.md)  
@@ -39,11 +41,10 @@ updated: 2026-01-23T17:26:54-08:00
 - [👧💔🥀 Lolita](./books/lolita.md)  
 - [🤴 The Little Prince](./books/the-little-prince.md)  
 - [❓🏛️👶 Big Ideas for Little Philosophers: Truth with Socrates](./books/big-ideas-for-little-philosophers-truth-with-socrates.md)  
-- [🤔👶💭 Big Ideas for Little Philosophers: Imagination with René Descartes](./books/big-ideas-for-little-philosophers-imagination-with-rene-descartes.md)  
-- [🌈🦎 A Color of His Own](./books/a-color-of-his-own.md)  
   
   
-## [📺 Videos](./videos/index.md) (613)  
+## [📺 Videos](./videos/index.md) (614)  
+- [💉📉🦠📈 Measles cases surged in 2025 as vaccination rates dropped](./videos/measles-cases-surged-in-2025-as-vaccination-rates-dropped.md)  
 - [🏫➡️🧊👨‍👩‍👧‍👦💔 'They are circling our schools,' superintendent says after 5-year-old detained by ICE](./videos/they-are-circling-our-schools-superintendent-says-after-5-year-old-detained-by-ice.md)  
 - [🗣️🏛️📰 American Conversations: Carol Leonnig and Aaron C. Davis](./videos/american-conversations-carol-leonnig-and-aaron-c-davis.md)  
 - [🧠💡🧘‍♀️ Essentials: Tools to Boost Attention & Memory | Dr. Wendy Suzuki](./videos/essentials-tools-to-boost-attention-memory-dr-wendy-suzuki.md)  
@@ -53,7 +54,6 @@ updated: 2026-01-23T17:26:54-08:00
 - [🏛️👹👑📜 Politics Chat, July 1, 2025](./videos/politics-chat-july-1-2025.md)  
 - [📺📰🗓️ PBS News Hour full episode, Jan. 22, 2026](./videos/pbs-news-hour-full-episode-jan-22-2026.md)  
 - [🏛️📰📣 Today in Politics | Explainer](./videos/today-in-politics-explainer-january-22-2026.md)  
-- [❓🤯😵‍💫 What the Heck Just Happened | 2025-08-30](./videos/what-the-heck-just-happened-2025-08-30.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (88)  

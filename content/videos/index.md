@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-01-23T13:44:50-08:00
+updated: 2026-01-23T17:26:54-08:00
 ---
 [Home](../index.md)  
-# 📺 Videos (612)  
+# 📺 Videos (613)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
 - [❓💪🔬 12 Questions About Creatine with Stephen Cornish, PhD](./12-questions-about-creatine-w-stephen-cornish-phd.md)  
@@ -486,6 +486,7 @@ updated: 2026-01-23T13:44:50-08:00
 - [🚧⏳ The Unfinished Revolution with Atlantic EIC Jeffrey Goldberg](./the-unfinished-revolution-with-atlantic-eic-jeffrey-goldberg.md)  
 - [📜🇺🇸🏛️⚖️ The United States Constitution | Heather Cox Richardson](./the-united-states-constitution-heather-cox-richardson.md)  
 - [🏠👩‍👧‍👦💸💰 The women who demanded wages for housework - Witness History, BBC World Service](./the-women-who-demanded-wages-for-housework-witness-history-bbc-world-service.md)  
+- [🏫➡️🧊👨‍👩‍👧‍👦💔 'They are circling our schools,' superintendent says after 5-year-old detained by ICE](./they-are-circling-our-schools-superintendent-says-after-5-year-old-detained-by-ice.md)  
 - [📊👀🌍 This graph will change how you see the world](./this-graph-will-change-how-you-see-the-world.md)  
 - [🤫💰🪙 This Is What They Don't Tell You About Money And Gold | Prof. L. Randall Wray](./this-is-what-they-dont-tell-you-about-money-and-gold-prof-l-randall-wray.md)  
 - [📓 This Journal Keeps Me Productive (& Maybe You Too)](./this-journal-keeps-me-productive-and-maybe-you-too.md)  

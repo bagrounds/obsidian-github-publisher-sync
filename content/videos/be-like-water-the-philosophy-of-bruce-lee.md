@@ -57,7 +57,7 @@ youtube: https://youtu.be/VP5LRL2coE0
 ### ↔️ Similar  
   
 * [☯️🥋 Tao of Jeet Kune Do](../books/tao-of-jeet-kune-do.md) by Bruce Lee explores the philosophical and technical foundations of his personal combat system.  
-* ⚔️ The Book of Five Rings by Miyamoto Musashi provides a classic perspective on strategy and the fluid nature of combat.  
+* [🇯🇵⚔️ A Book of Five Rings: The Classic Guide to Strategy](../books/a-book-of-five-rings-the-classic-guide-to-strategy.md) by Miyamoto Musashi provides a classic perspective on strategy and the fluid nature of combat.  
   
 ### 🆚 Contrasting  
   

@@ -53,7 +53,7 @@ youtube: https://youtu.be/fjWbvlg1-lM
   
 ### ↔️ Similar  
   
-* 📖 Separate and Unequal by Christina A. Samuels examines how federal and state educational policies intersect with immigration enforcement to impact student access to the classroom.  
+* [🧑🏿⚖️🧑🏻💔 Separate and Unequal: The Kerner Commission and the Unraveling of American Liberalism](../books/separate-and-unequal-the-kerner-commission-and-the-unraveling-of-american-liberalism.md) by Christina A. Samuels examines how federal and state educational policies intersect with immigration enforcement to impact student access to the classroom.  
 * 📖 The Shadow of the Wall by Jeremy Slack provides an in-depth look at the social and psychological consequences of detention and deportation on families and border communities.  
   
 ### 🆚 Contrasting  

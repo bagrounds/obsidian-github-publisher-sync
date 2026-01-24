@@ -63,5 +63,5 @@ youtube: https://youtu.be/__RAXBLt1iM
   
 ### 🎨 Creatively Related  
   
-* ⚔️ The Book of Five Rings by Miyamoto Musashi provides ancient wisdom on strategy and conflict from a master swordsman.  
+* [🇯🇵⚔️ A Book of Five Rings: The Classic Guide to Strategy](../books/a-book-of-five-rings-the-classic-guide-to-strategy.md) by Miyamoto Musashi provides ancient wisdom on strategy and conflict from a master swordsman.  
 * [🌊🧘🏼‍♀️🧠📈 Flow: The Psychology of Optimal Experience](../books/flow-the-psychology-of-optimal-experience.md) by Mihaly Csikszentmihalyi examines the state of optimal experience and how focus leads to deep satisfaction.

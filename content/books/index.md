@@ -5,10 +5,10 @@ aliases:
 share: true
 URL: https://bagrounds.org/books
 backlinks: false
-updated: 2026-01-23T17:26:54-08:00
+updated: 2026-01-23T17:36:22-08:00
 ---
 [Home](../index.md)  
-# 📚 Books (892)  
+# 📚 Books (894)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [💻0️⃣ Source Code: My Beginnings](./source-code-my-beginnings.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)  
@@ -155,6 +155,7 @@ updated: 2026-01-23T17:26:54-08:00
 - [💪📈 Creatine: A Natural Substance and Its Benefits for Muscle Metabolism, Fitness, Health & Longevity](./creatine-a-natural-substance-and-its-benefits-for-muscle-metabolism-fitness-health-longevity.md)  
 - [👤🌱 Creating Capabilities: The Human Development Approach](./creating-capabilities-the-human-development-approach.md)  
 - [👶📊😌 Cribsheet: A Data-Driven Guide to Better, More Relaxed Parenting, from Birth to Preschool](./cribsheet.md)  
+- [✅🔬🦠 Crisis Averted: The Hidden Science of Fighting Outbreaks](./crisis-averted-the-hidden-science-of-fighting-outbreaks.md)  
 - [🧰💬 Crucial Conversations: Tools for Talking When Stakes Are High](./crucial-conversations-tools-for-talking-when-stakes-are-high.md)  
 - [✝️🗣️ Cultish: The Language of Fanaticism](./cultish-the-language-of-fanaticism.md)  
 - [🤖🗣️🐒⚙️ Cybernetics: or Control and Communication in the Animal and the Machine](./cybernetics.md)  
@@ -535,6 +536,7 @@ updated: 2026-01-23T17:26:54-08:00
 - [👑🏛️ Second Treatise of Government](./second-treatise-of-government.md)  
 - [📖🏛️📉 Seeing Like a State: How Certain Schemes to Improve the Human Condition Have Failed](./seeing-like-a-state-how-certain-schemes-to-improve-the-human-condition-have-failed.md)  
 - [👁️🔇 Seeing Voices: A Journey into the World of the Deaf](./seeing-voices-a-journey-into-the-world-of-the-deaf.md)  
+- [🧑🏿⚖️🧑🏻💔 Separate and Unequal: The Kerner Commission and the Unraveling of American Liberalism](./separate-and-unequal-the-kerner-commission-and-the-unraveling-of-american-liberalism.md)  
 - [🇺🇸📻 Shadow of the New Deal: The Victory of Public Broadcasting](./shadow-of-the-new-deal-the-victory-of-public-broadcasting.md)  
 - [🛠️💖 Shop Class as Soulcraft: An Inquiry Into the Value of Work](./shop-class-as-soulcraft-an-inquiry-into-the-value-of-work.md)  
 - [⚡🏛️ Short Circuiting Policy: Interest Groups and the Battle Over Clean Energy and Climate Policy in the American States](./short-circuiting-policy-interest-groups-and-the-battle-over-clean-energy-and-climate-policy-in-the-american-states.md)  

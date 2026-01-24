@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-01-23T23:28:17-08:00
+updated: 2026-01-24T09:11:52-08:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -13,7 +13,8 @@ updated: 2026-01-23T23:28:17-08:00
 ❔ What do 🫵 _you_ 🤔 think?  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (435)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (436)  
+- [2026-01-24](./reflections/2026-01-24.md)  
 - [2026-01-23 | 🧠 The Brain, the 🌠 Stars, and the 🇺🇸 State of the Nation](./reflections/2026-01-23.md)  
 - [2026-01-22 | ⚖️ Minnesota 🏛️ Politics 🧠 Boost 🌊 Irresistible ☄️ Mary 📜 Birth 📺 News 📚📺📰](./reflections/2026-01-22.md)  
 - [2026-01-21 | 💡 Useful 🗣️ Politics 🚀 Foundations 🏛️ Abolishing 👤 Powerless 🗽 Liberty 📄📺📚](./reflections/2026-01-21.md)  
@@ -23,7 +24,6 @@ updated: 2026-01-23T23:28:17-08:00
 - [2026-01-17 | 🌌 The 😴 Tired 👹 Devils 👶 Birth 📈 Even ➕ More 🏆 Success](./reflections/2026-01-17.md)  
 - [2026-01-16 | 🤖 Agent ❤️ Taught 🦠 Measles 💉 Health 💰 Debt 📜 History 📺📰📚](./reflections/2026-01-16.md)  
 - [2026-01-15 | 🫦 Desire 🤖 Bot 🏆 Wins 🛡️ Immunity 🌌📺📚](./reflections/2026-01-15.md)  
-- [2026-01-14 | 🦸‍♀️ Strong 🧬 Human 🎭 Character 🛡️ Defends 🗽 Freedom 🍽️ In 🌌 Everything 🧪 As 🧬 Science 🗯️ Hates 🧺 Dirty 😈 Devils 📜 Manifesto 📚📺📰⌨️✍🏽](./reflections/2026-01-14.md)  
   
   
 ## [🧰 Tools](./tools/index.md) (1)  
@@ -43,7 +43,8 @@ updated: 2026-01-23T23:28:17-08:00
 - [❓🏛️👶 Big Ideas for Little Philosophers: Truth with Socrates](./books/big-ideas-for-little-philosophers-truth-with-socrates.md)  
   
   
-## [📺 Videos](./videos/index.md) (616)  
+## [📺 Videos](./videos/index.md) (617)  
+- [🇯🇵🧘🔄✨ The Japanese System for Breaking Bad Habits & Addiction | Kaizen & Ikigai Philosophy](./videos/the-japanese-system-for-breaking-bad-habits-addiction-kaizen-ikigai-philosophy.md)  
 - [🗣️⚔️🏛️ FULL DISCUSSION: Gavin Newsom Slams Trump’s Authoritarianism in Explosive WEF Interview | AC1G](./videos/full-discussion-gavin-newsom-slams-trumps-authoritarianism-in-explosive-wef-interview-ac1g.md)  
 - [🇺🇸🤝🤔 Brooks and Capehart on Trump forcing allies to reevaluate ties with U.S.](./videos/brooks-and-capehart-on-trump-forcing-allies-to-reevaluate-ties-with-us.md)  
 - [💉📉🦠📈 Measles cases surged in 2025 as vaccination rates dropped](./videos/measles-cases-surged-in-2025-as-vaccination-rates-dropped.md)  
@@ -53,7 +54,6 @@ updated: 2026-01-23T23:28:17-08:00
 - [⚖️🇺🇸🥶🪦 Lawfare Daily: Can Minnesota Prosecute ICE Agent Jonathan Ross?](./videos/lawfare-daily-can-minnesota-prosecute-ice-agent-jonathan-ross.md)  
 - [👑🚧📉 Brooks and Capehart on Trump’s tariffs and reaction from the markets](./videos/brooks-and-capehart-on-trumps-tariffs-and-reaction-from-the-markets.md)  
 - [👤💀🏛️🚓 Suspect Captured, Charged In Shootings Of Minnesota Lawmakers | NPR News Now](./videos/suspect-captured-charged-in-shootings-of-minnesota-lawmakers-npr-news-now.md)  
-- [🏛️👹👑📜 Politics Chat, July 1, 2025](./videos/politics-chat-july-1-2025.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (88)  

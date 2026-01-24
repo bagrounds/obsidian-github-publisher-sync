@@ -59,4 +59,4 @@ youtube: https://youtu.be/IHz85fCsJ4g
 ### 🎨 Creatively Related  
   
 * 🍵 Wabi Sabi by Beth Kempton explores the Japanese art of finding beauty in imperfection and the wisdom of accepting things as they are.  
-* 🎋 The Book of Five Rings by Miyamoto Musashi provides a classic perspective on strategy and the importance of timing and rhythm in all pursuits.
+* [🇯🇵⚔️ A Book of Five Rings: The Classic Guide to Strategy](../books/a-book-of-five-rings-the-classic-guide-to-strategy.md) by Miyamoto Musashi provides a classic perspective on strategy and the importance of timing and rhythm in all pursuits.

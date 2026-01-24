@@ -69,7 +69,7 @@ affiliate link: https://amzn.to/4jHtLTS
 ## 📚 Book Recommendations  
 ### 👯 Similar  
 * [☯️🥋 Tao of Jeet Kune Do](./tao-of-jeet-kune-do.md) by Bruce Lee  
-* 📖 The Book of Five Rings by Miyamoto Musashi  
+* [🇯🇵⚔️ A Book of Five Rings: The Classic Guide to Strategy](./a-book-of-five-rings-the-classic-guide-to-strategy.md) by Miyamoto Musashi  
 * [🧘🏹 Zen in the Art of Archery](./zen-in-the-art-of-archery.md) by Eugen Herrigel  
   
 ### ↔️ Contrasting  

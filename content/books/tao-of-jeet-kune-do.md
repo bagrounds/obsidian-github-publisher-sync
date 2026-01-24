@@ -67,7 +67,7 @@ affiliate link: https://amzn.to/4qiWtNe
   
 ## 📚 Book Recommendations  
 ### 🤝 Similar  
-* 🇯🇵 The Book of Five Rings by Miyamoto Musashi  
+* [🇯🇵⚔️ A Book of Five Rings: The Classic Guide to Strategy](./a-book-of-five-rings-the-classic-guide-to-strategy.md) by Miyamoto Musashi  
 * [🎨⚔️ The Art of War](./the-art-of-war.md) by Sun Tzu  
 * [🧘🏹 Zen in the Art of Archery](./zen-in-the-art-of-archery.md) by Eugen Herrigel  
 * 🐉 The Warrior Within: The Philosophies of Bruce Lee by John Little  

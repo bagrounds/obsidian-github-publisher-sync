@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-01-23T17:26:54-08:00
+updated: 2026-01-23T17:36:22-08:00
 ---
 [Home](../index.md)  
-# 📺 Videos (613)  
+# 📺 Videos (614)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
 - [❓💪🔬 12 Questions About Creatine with Stephen Cornish, PhD](./12-questions-about-creatine-w-stephen-cornish-phd.md)  
@@ -300,6 +300,7 @@ updated: 2026-01-23T17:26:54-08:00
 - [Mass firings begin at government health agencies, including FDA, CDC and NIH](./mass-firings-begin-at-government-health-agencies-including-fda-cdc-and-nih.md)  
 - [💡🎨💃 Master the Creative Process | Twyla Tharp](./master-the-creative-process-twyla-tharp.md)  
 - [📰🌍🏘️ Matryoshka ACL 2025: Hierarchical Level-Wise News Article Clustering via Multilingual Matryoshka Embeddings](./acl-2025-hierarchical-level-wise-news-article-clustering-via-multilingual-matryoshka-embeddings.md)  
+- [💉📉🦠📈 Measles cases surged in 2025 as vaccination rates dropped](./measles-cases-surged-in-2025-as-vaccination-rates-dropped.md)  
 - [Migrants in U.S. legally and with no criminal history caught up in Trump crackdown](./migrants-in-us-legally-and-with-no-criminal-history-caught-up-in-trump-crackdown.md)  
 - [🗣️🤫🐘 Mike Levin Reveals What Republicans Told Him Behind Closed Doors About Big Beautiful Bill](./mike-levin-reveals-what-republicans-told-him-behind-closed-doors-about-big-beautiful-bill.md)  
 - [🪖👨‍⚖️❓ Military personnel seek legal advice on whether Trump-ordered missions are lawful](./military-personnel-seek-legal-advice-on-whether-trump-ordered-missions-are-lawful.md)  

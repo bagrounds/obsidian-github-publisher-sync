@@ -79,7 +79,7 @@ CTA: 🧘🏼‍♀️ Master yourself.
 * 👨‍👩‍👧‍👦 **Positive Discipline** by Jane Nelsen (and related works): Focuses on discipline in parenting/education, emphasizing mutual respect, understanding the belief behind behavior, and problem-solving over punitive measures. This contrasts with self-discipline focused solely on internal control.  
 * ⚔️ **Meditations on Self-Discipline and Failure: Stoic Exercises for Mental Fitness** by William Ferraiolo: Applies Stoic (and sometimes Cynic) philosophy to self-discipline, focusing on acceptance, reason, and coping with internal struggles, which can differ from neuroscience-based willpower models.  
 * ⛔ **The Subtle Art of Not Giving a F\*ck: A Counterintuitive Approach to Living a Good Life** by Mark Manson: Argues for choosing what truly matters and accepting negative experiences, contrasting with approaches that aim to eliminate struggle through sheer discipline.  
-* 🥷 **The Book of Five Rings** by Miyamoto Musashi: A classic text on strategy and martial arts that emphasizes discipline, adaptability, and continuous learning from a philosophical and practical warrior perspective, different from modern psychological approaches.  
+* **[🇯🇵⚔️ A Book of Five Rings: The Classic Guide to Strategy](./a-book-of-five-rings-the-classic-guide-to-strategy.md)** by Miyamoto Musashi: A classic text on strategy and martial arts that emphasizes discipline, adaptability, and continuous learning from a philosophical and practical warrior perspective, different from modern psychological approaches.  
   
 ### ✨ Creatively Related (Broader Personal Development & Mind Function)  
   

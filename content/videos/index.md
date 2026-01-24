@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-01-23T17:56:23-08:00
+updated: 2026-01-23T18:28:19-08:00
 ---
 [Home](../index.md)  
-# 📺 Videos (615)  
+# 📺 Videos (616)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
 - [❓💪🔬 12 Questions About Creatine with Stephen Cornish, PhD](./12-questions-about-creatine-w-stephen-cornish-phd.md)  
@@ -168,6 +168,7 @@ updated: 2026-01-23T17:56:23-08:00
 - [🧠💡🧮🧠 Forough Arabshahi: Neuro-Symbolic Learning Algorithms for Automated Reasoning](./forough-arabshahi-neuro-symbolic-learning-algorithms-for-automated-reasoning.md)  
 - [⛺➡️🏡🏙️🏠💖 From Encampments to Homes: How Dallas Is Solving Homelessness](./from-encampments-to-homes-how-dallas-is-solving-homelessness.md)  
 - [FTC commissioner fired by Trump says move threatens agency designed to protect consumers](./ftc-commissioner-fired-by-trump-says-move-threatens-agency-designed-to-protect-consumers.md)  
+- [🗣️⚔️🏛️ FULL DISCUSSION: Gavin Newsom Slams Trump’s Authoritarianism in Explosive WEF Interview | AC1G](./full-discussion-gavin-newsom-slams-trumps-authoritarianism-in-explosive-wef-interview-ac1g.md)  
 - [🌋☀️🚀 Geothermal energy’s massive leap forward](./geothermal-energys-massive-leap-forward.md)  
 - [🇮🇹🏆🗣️ Giorgio Parisi: Nobel Prize Conversations](./giorgio-parisi-nobel-prize-conversations.md)  
 - [🏛️💥🧱🚫 Government barreling toward shutdown with Congress in partisan deadlock](./government-barreling-toward-shutdown-with-congress-in-partisan-deadlock.md)  

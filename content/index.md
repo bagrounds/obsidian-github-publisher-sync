@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-01-23T17:36:22-08:00
+updated: 2026-01-23T18:28:19-08:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -43,7 +43,9 @@ updated: 2026-01-23T17:36:22-08:00
 - [❓🏛️👶 Big Ideas for Little Philosophers: Truth with Socrates](./books/big-ideas-for-little-philosophers-truth-with-socrates.md)  
   
   
-## [📺 Videos](./videos/index.md) (614)  
+## [📺 Videos](./videos/index.md) (616)  
+- [🗣️⚔️🏛️ FULL DISCUSSION: Gavin Newsom Slams Trump’s Authoritarianism in Explosive WEF Interview | AC1G](./videos/full-discussion-gavin-newsom-slams-trumps-authoritarianism-in-explosive-wef-interview-ac1g.md)  
+- [🇺🇸🤝🤔 Brooks and Capehart on Trump forcing allies to reevaluate ties with U.S.](./videos/brooks-and-capehart-on-trump-forcing-allies-to-reevaluate-ties-with-us.md)  
 - [💉📉🦠📈 Measles cases surged in 2025 as vaccination rates dropped](./videos/measles-cases-surged-in-2025-as-vaccination-rates-dropped.md)  
 - [🏫➡️🧊👨‍👩‍👧‍👦💔 'They are circling our schools,' superintendent says after 5-year-old detained by ICE](./videos/they-are-circling-our-schools-superintendent-says-after-5-year-old-detained-by-ice.md)  
 - [🗣️🏛️📰 American Conversations: Carol Leonnig and Aaron C. Davis](./videos/american-conversations-carol-leonnig-and-aaron-c-davis.md)  
@@ -52,8 +54,6 @@ updated: 2026-01-23T17:36:22-08:00
 - [👑🚧📉 Brooks and Capehart on Trump’s tariffs and reaction from the markets](./videos/brooks-and-capehart-on-trumps-tariffs-and-reaction-from-the-markets.md)  
 - [👤💀🏛️🚓 Suspect Captured, Charged In Shootings Of Minnesota Lawmakers | NPR News Now](./videos/suspect-captured-charged-in-shootings-of-minnesota-lawmakers-npr-news-now.md)  
 - [🏛️👹👑📜 Politics Chat, July 1, 2025](./videos/politics-chat-july-1-2025.md)  
-- [📺📰🗓️ PBS News Hour full episode, Jan. 22, 2026](./videos/pbs-news-hour-full-episode-jan-22-2026.md)  
-- [🏛️📰📣 Today in Politics | Explainer](./videos/today-in-politics-explainer-january-22-2026.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (88)  

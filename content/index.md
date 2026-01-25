@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-01-24T17:49:56-08:00
+updated: 2026-01-24T18:21:53-08:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -30,7 +30,8 @@ updated: 2026-01-24T17:49:56-08:00
 - [🧮 Calculator](./tools/calculator.md)  
   
   
-## [📚 Books](./books/index.md) (895)  
+## [📚 Books](./books/index.md) (896)  
+- [🧠🔎 Thought and Knowledge: An Introduction to Critical Thinking](./books/thought-and-knowledge-an-introduction-to-critical-thinking.md)  
 - [🎨⚔️ The Art of War](./books/the-art-of-war.md)  
 - [💪🧠 Level-Up Your Self-Discipline: Understand the Neuroscience of Self-Discipline, Control Your Emotions, Overcome Procrastination, and Achieve Your Difficult Goals](./books/level-up-your-self-discipline-understand-the-neuroscience-of-self-discipline-control-your-emotions-overcome-procrastination-and-achieve-your-difficult-goals.md)  
 - [🌊🥋 Be Water, My Friend: The Teachings of Bruce Lee](./books/be-water-my-friend-the-teachings-of-bruce-lee.md)  
@@ -40,10 +41,10 @@ updated: 2026-01-24T17:49:56-08:00
 - [🧑🏿⚖️🧑🏻💔 Separate and Unequal: The Kerner Commission and the Unraveling of American Liberalism](./books/separate-and-unequal-the-kerner-commission-and-the-unraveling-of-american-liberalism.md)  
 - [🧠💡😊 Healthy Brain, Happy Life: A Personal Program to Activate Your Brain and Do Everything Better](./books/healthy-brain-happy-life-a-personal-program-to-activate-your-brain-and-do-everything-better.md)  
 - [🌊🌎 One Mighty and Irresistible Tide: The Epic Struggle Over American Immigration, 1924-1965](./books/one-mighty-and-irresistible-tide-the-epic-struggle-over-american-immigration-1924-1965.md)  
-- [👤✊ The Power of the Powerless](./books/the-power-of-the-powerless.md)  
   
   
-## [📺 Videos](./videos/index.md) (620)  
+## [📺 Videos](./videos/index.md) (621)  
+- [🧠💡✨ This 1 Book ACTUALLY Teaches You to Think Like a Genius](./videos/this-1-book-actually-teaches-you-to-think-like-a-genius.md)  
 - [🚨🗣️🔥🗳️ Full Briefing: Mayor Frey Addresses Outrage Over ICE Shooting in Minneapolis | DRM News | AC1F](./videos/full-briefing-mayor-frey-addresses-outrage-over-ice-shooting-in-minneapolis-drm-news-ac1f.md)  
 - [🇺🇸🔪💀🅰️ The Killing of Alex Pretti](./videos/the-killing-of-alex-pretti.md)  
 - [💥👥💀🚨 ‘They killed a man, created chaos:’ Gov. Walz on shooting](./videos/they-killed-a-man-created-chaos-gov-walz-on-shooting.md)  
@@ -53,7 +54,6 @@ updated: 2026-01-24T17:49:56-08:00
 - [🇯🇵🧘🔄✨ The Japanese System for Breaking Bad Habits & Addiction | Kaizen & Ikigai Philosophy](./videos/the-japanese-system-for-breaking-bad-habits-addiction-kaizen-ikigai-philosophy.md)  
 - [🗣️⚔️🏛️ FULL DISCUSSION: Gavin Newsom Slams Trump’s Authoritarianism in Explosive WEF Interview | AC1G](./videos/full-discussion-gavin-newsom-slams-trumps-authoritarianism-in-explosive-wef-interview-ac1g.md)  
 - [🇺🇸🤝🤔 Brooks and Capehart on Trump forcing allies to reevaluate ties with U.S.](./videos/brooks-and-capehart-on-trump-forcing-allies-to-reevaluate-ties-with-us.md)  
-- [💉📉🦠📈 Measles cases surged in 2025 as vaccination rates dropped](./videos/measles-cases-surged-in-2025-as-vaccination-rates-dropped.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (88)  

@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-01-24T16:50:47-08:00
+updated: 2026-01-24T17:36:22-08:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -43,7 +43,8 @@ updated: 2026-01-24T16:50:47-08:00
 - [👤✊ The Power of the Powerless](./books/the-power-of-the-powerless.md)  
   
   
-## [📺 Videos](./videos/index.md) (618)  
+## [📺 Videos](./videos/index.md) (619)  
+- [💥👥💀🚨 ‘They killed a man, created chaos:’ Gov. Walz on shooting](./videos/they-killed-a-man-created-chaos-gov-walz-on-shooting.md)  
 - [🇺🇸🔪💀🅰️ The Killing of Alex Pretti](./videos/the-killing-of-alex-pretti.md)  
 - [💪🧠⚔️🤝 How to Become Resilient, Forge Your Identity & Lead Others | Jocko Willink](./videos/how-to-become-resilient-forge-your-identity-lead-others-jocko-willink.md)  
 - [🌊🥋🤸💨 Be Like Water - The Philosophy of Bruce Lee](./videos/be-like-water-the-philosophy-of-bruce-lee.md)  
@@ -53,7 +54,6 @@ updated: 2026-01-24T16:50:47-08:00
 - [🇺🇸🤝🤔 Brooks and Capehart on Trump forcing allies to reevaluate ties with U.S.](./videos/brooks-and-capehart-on-trump-forcing-allies-to-reevaluate-ties-with-us.md)  
 - [💉📉🦠📈 Measles cases surged in 2025 as vaccination rates dropped](./videos/measles-cases-surged-in-2025-as-vaccination-rates-dropped.md)  
 - [🏫➡️🧊👨‍👩‍👧‍👦💔 'They are circling our schools,' superintendent says after 5-year-old detained by ICE](./videos/they-are-circling-our-schools-superintendent-says-after-5-year-old-detained-by-ice.md)  
-- [🗣️🏛️📰 American Conversations: Carol Leonnig and Aaron C. Davis](./videos/american-conversations-carol-leonnig-and-aaron-c-davis.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (88)  

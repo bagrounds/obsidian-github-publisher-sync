@@ -60,4 +60,7 @@ youtube: https://www.youtube.com/embed/_r8fI8DhI0o
 ### 🎨 Creatively Related  
   
 * 🐺 It Can't Happen Here by Sinclair Lewis depicts a fictional rise of a populist dictator in the United States and the resulting erosion of rights.  
-* [👁️ 1984](../books/1984.md) by George Orwell explores the psychological impact of government surveillance and the manipulation of truth in a totalitarian society.
+* [👁️ 1984](../books/1984.md) by George Orwell explores the psychological impact of government surveillance and the manipulation of truth in a totalitarian society.  
+  
+## 🐦 Tweet  
+<blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">🇺🇸🔪💀🅰️ The Killing of Alex Pretti<br><br>🚔 CBP | 🏥 ICU nurse | 🗺️ Minneapolis shooting | ✋ Pepper-sprayed | 🔫 Legal gun owner | 📣 Domestic terrorism label | 🧠 White nationalism | 🗣️ First Amendment | ⚖️ Federal vs. state jurisdiction<a href="https://twitter.com/HC_Richardson?ref_src=twsrc%5Etfw">@HC_Richardson</a><a href="https://t.co/6aWwlWJERI">https://t.co/6aWwlWJERI</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/2015238770191409166?ref_src=twsrc%5Etfw">January 25, 2026</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

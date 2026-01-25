@@ -5,10 +5,10 @@ aliases:
 share: true
 URL: https://bagrounds.org/books
 backlinks: false
-updated: 2026-01-24T17:49:56-08:00
+updated: 2026-01-24T18:21:53-08:00
 ---
 [Home](../index.md)  
-# 📚 Books (895)  
+# 📚 Books (896)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [💻0️⃣ Source Code: My Beginnings](./source-code-my-beginnings.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)  
@@ -839,6 +839,7 @@ updated: 2026-01-24T17:49:56-08:00
 - [🧠📈 Thinking Strategically: The Competitive Edge in Business, Politics and Everyday Life](./thinking-strategically-the-competitive-edge-in-business-politics-and-everyday-life.md)  
 - [🐱👍 Think Like a Cat: How to Raise a Well-Adjusted Cat - Not a Sour Puss](./think-like-a-cat-how-to-raise-a-well-adjusted-cat-not-a-sour-puss.md)  
 - [🤥📣 This Is Not Propaganda: Adventures in the War Against Reality](./this-is-not-propaganda.md)  
+- [🧠🔎 Thought and Knowledge: An Introduction to Critical Thinking](./thought-and-knowledge-an-introduction-to-critical-thinking.md)  
 - [💭🦠 Thought Contagion: How Belief Spreads Through Society](./thought-contagion.md)  
 - [⏱️🍎 Time Restricted Eating: A Look into the Lifestyle](./time-restricted-eating-a-look-into-the-lifestyle.md)  
 - [🧪🎯🦋 Tiny Experiments: How to Live Freely in a Goal-Obsessed World](./tiny-experiments-how-to-live-freely-in-a-goal-obsessed-world.md)  

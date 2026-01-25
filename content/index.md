@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-01-24T09:11:52-08:00
+updated: 2026-01-24T16:50:47-08:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -30,30 +30,30 @@ updated: 2026-01-24T09:11:52-08:00
 - [🧮 Calculator](./tools/calculator.md)  
   
   
-## [📚 Books](./books/index.md) (894)  
+## [📚 Books](./books/index.md) (895)  
+- [🎨⚔️ The Art of War](./books/the-art-of-war.md)  
+- [💪🧠 Level-Up Your Self-Discipline: Understand the Neuroscience of Self-Discipline, Control Your Emotions, Overcome Procrastination, and Achieve Your Difficult Goals](./books/level-up-your-self-discipline-understand-the-neuroscience-of-self-discipline-control-your-emotions-overcome-procrastination-and-achieve-your-difficult-goals.md)  
+- [🌊🥋 Be Water, My Friend: The Teachings of Bruce Lee](./books/be-water-my-friend-the-teachings-of-bruce-lee.md)  
+- [☯️🥋 Tao of Jeet Kune Do](./books/tao-of-jeet-kune-do.md)  
+- [🇯🇵⚔️ A Book of Five Rings: The Classic Guide to Strategy](./books/a-book-of-five-rings-the-classic-guide-to-strategy.md)  
 - [✅🔬🦠 Crisis Averted: The Hidden Science of Fighting Outbreaks](./books/crisis-averted-the-hidden-science-of-fighting-outbreaks.md)  
 - [🧑🏿⚖️🧑🏻💔 Separate and Unequal: The Kerner Commission and the Unraveling of American Liberalism](./books/separate-and-unequal-the-kerner-commission-and-the-unraveling-of-american-liberalism.md)  
 - [🧠💡😊 Healthy Brain, Happy Life: A Personal Program to Activate Your Brain and Do Everything Better](./books/healthy-brain-happy-life-a-personal-program-to-activate-your-brain-and-do-everything-better.md)  
 - [🌊🌎 One Mighty and Irresistible Tide: The Epic Struggle Over American Immigration, 1924-1965](./books/one-mighty-and-irresistible-tide-the-epic-struggle-over-american-immigration-1924-1965.md)  
 - [👤✊ The Power of the Powerless](./books/the-power-of-the-powerless.md)  
-- [🚀💰🏛️ The Leap of Faith: The Fiscal Foundations of Successful Government in Europe and America](./books/the-leap-of-faith-the-fiscal-foundations-of-successful-government-in-europe-and-america.md)  
-- [🌟👁️🔦 All the Light We Cannot See](./books/all-the-light-we-cannot-see.md)  
-- [👧💔🥀 Lolita](./books/lolita.md)  
-- [🤴 The Little Prince](./books/the-little-prince.md)  
-- [❓🏛️👶 Big Ideas for Little Philosophers: Truth with Socrates](./books/big-ideas-for-little-philosophers-truth-with-socrates.md)  
   
   
-## [📺 Videos](./videos/index.md) (617)  
+## [📺 Videos](./videos/index.md) (618)  
+- [🇺🇸🔪💀🅰️ The Killing of Alex Pretti](./videos/the-killing-of-alex-pretti.md)  
+- [💪🧠⚔️🤝 How to Become Resilient, Forge Your Identity & Lead Others | Jocko Willink](./videos/how-to-become-resilient-forge-your-identity-lead-others-jocko-willink.md)  
+- [🌊🥋🤸💨 Be Like Water - The Philosophy of Bruce Lee](./videos/be-like-water-the-philosophy-of-bruce-lee.md)  
+- [🥋🧠💪 Bruce Lee’s 11 Rules for an Unbreakable Mind](./videos/bruce-lees-11-rules-for-an-unbreakable-mind.md)  
 - [🇯🇵🧘🔄✨ The Japanese System for Breaking Bad Habits & Addiction | Kaizen & Ikigai Philosophy](./videos/the-japanese-system-for-breaking-bad-habits-addiction-kaizen-ikigai-philosophy.md)  
 - [🗣️⚔️🏛️ FULL DISCUSSION: Gavin Newsom Slams Trump’s Authoritarianism in Explosive WEF Interview | AC1G](./videos/full-discussion-gavin-newsom-slams-trumps-authoritarianism-in-explosive-wef-interview-ac1g.md)  
 - [🇺🇸🤝🤔 Brooks and Capehart on Trump forcing allies to reevaluate ties with U.S.](./videos/brooks-and-capehart-on-trump-forcing-allies-to-reevaluate-ties-with-us.md)  
 - [💉📉🦠📈 Measles cases surged in 2025 as vaccination rates dropped](./videos/measles-cases-surged-in-2025-as-vaccination-rates-dropped.md)  
 - [🏫➡️🧊👨‍👩‍👧‍👦💔 'They are circling our schools,' superintendent says after 5-year-old detained by ICE](./videos/they-are-circling-our-schools-superintendent-says-after-5-year-old-detained-by-ice.md)  
 - [🗣️🏛️📰 American Conversations: Carol Leonnig and Aaron C. Davis](./videos/american-conversations-carol-leonnig-and-aaron-c-davis.md)  
-- [🧠💡🧘‍♀️ Essentials: Tools to Boost Attention & Memory | Dr. Wendy Suzuki](./videos/essentials-tools-to-boost-attention-memory-dr-wendy-suzuki.md)  
-- [⚖️🇺🇸🥶🪦 Lawfare Daily: Can Minnesota Prosecute ICE Agent Jonathan Ross?](./videos/lawfare-daily-can-minnesota-prosecute-ice-agent-jonathan-ross.md)  
-- [👑🚧📉 Brooks and Capehart on Trump’s tariffs and reaction from the markets](./videos/brooks-and-capehart-on-trumps-tariffs-and-reaction-from-the-markets.md)  
-- [👤💀🏛️🚓 Suspect Captured, Charged In Shootings Of Minnesota Lawmakers | NPR News Now](./videos/suspect-captured-charged-in-shootings-of-minnesota-lawmakers-npr-news-now.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (88)  

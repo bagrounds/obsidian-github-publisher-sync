@@ -5,10 +5,10 @@ aliases:
 share: true
 URL: https://bagrounds.org/books
 backlinks: false
-updated: 2026-01-24T09:11:52-08:00
+updated: 2026-01-24T16:50:47-08:00
 ---
 [Home](../index.md)  
-# 📚 Books (894)  
+# 📚 Books (895)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [💻0️⃣ Source Code: My Beginnings](./source-code-my-beginnings.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)  
@@ -18,6 +18,7 @@ updated: 2026-01-24T09:11:52-08:00
 - [🤫🤑 23 Things They Don't Tell You About Capitalism](./23-things-they-dont-tell-you-about-capitalism.md)  
 - [🗓️➕ 40 Days to Positive Change: Daily Support to Create a New Habit](./40-days-to-positive-change-daily-support-to-create-a-new-habit.md)  
 - [7️⃣📏👑 7 Rules of Power: Surprising - but True - Advice on How to Get Things Done and Advance Your Career](./7-rules-of-power.md)  
+- [🇯🇵⚔️ A Book of Five Rings: The Classic Guide to Strategy](./a-book-of-five-rings-the-classic-guide-to-strategy.md)  
 - [📜🌍👥 A Brief History of Everyone Who Ever Lived](./a-brief-history-of-everyone-who-ever-lived.md)  
 - [🤏📜⏳ A Brief History of Time](./a-brief-history-of-time.md)  
 - [✅➕ Abundance](./abundance.md)  

@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-01-24T18:21:53-08:00
+updated: 2026-01-25T18:17:21-08:00
 ---
 [Home](../index.md)  
-# 📺 Videos (621)  
+# 📺 Videos (622)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
 - [❓💪🔬 12 Questions About Creatine with Stephen Cornish, PhD](./12-questions-about-creatine-w-stephen-cornish-phd.md)  
@@ -300,6 +300,7 @@ updated: 2026-01-24T18:21:53-08:00
 - [🇺🇸💪🏥😂 Make America Healthy Again: Last Week Tonight with John Oliver (HBO)](./make-america-healthy-again-last-week-tonight-with-john-oliver-hbo.md)  
 - [🤖🧠🚀 Making Codebases Agent Ready – Eno Reyes, Factory AI](./making-codebases-agent-ready-eno-reyes-factory-ai.md)  
 - [🌍❓🤔 Making Sense of a World in Crisis | Yuval Noah Harari](./making-sense-of-a-world-in-crisis-yuval-noah-harari.md)  
+- [🐛🐌🐞🌿🏡🦠 Managing Pests & Diseases in Your Backyard: Aphids, Blight, and Slugs - Oh My! Workshop](./managing-pests-diseases-in-your-backyard-aphids-blight-and-slugs-oh-my-workshop.md)  
 - [Mass firings begin at government health agencies, including FDA, CDC and NIH](./mass-firings-begin-at-government-health-agencies-including-fda-cdc-and-nih.md)  
 - [💡🎨💃 Master the Creative Process | Twyla Tharp](./master-the-creative-process-twyla-tharp.md)  
 - [📰🌍🏘️ Matryoshka ACL 2025: Hierarchical Level-Wise News Article Clustering via Multilingual Matryoshka Embeddings](./acl-2025-hierarchical-level-wise-news-article-clustering-via-multilingual-matryoshka-embeddings.md)  

@@ -5,11 +5,12 @@ aliases:
 title: 🪞 Reflections
 URL: https://bagrounds.org/reflections
 backlinks: false
-updated: 2026-01-24T18:21:53-08:00
+updated: 2026-01-25T18:17:21-08:00
 ---
 [Home](../index.md)  
-# 🪞 Reflections (436)  
-- [2026-01-24](./2026-01-24.md)  
+# 🪞 Reflections (437)  
+- [2026-01-25](./2026-01-25.md)  
+- [2026-01-24 | 🇺🇸 The 🧠 Thinking 🇯🇵 System 🧠 Teaches 🚨 Mayor ☄️ Mary 📜 Liberty 💥 Created ⚔️ Strategy](./2026-01-24.md)  
 - [2026-01-23 | 🧠 The Brain, the 🌠 Stars, and the 🇺🇸 State of the Nation](./2026-01-23.md)  
 - [2026-01-22 | ⚖️ Minnesota 🏛️ Politics 🧠 Boost 🌊 Irresistible ☄️ Mary 📜 Birth 📺 News 📚📺📰](./2026-01-22.md)  
 - [2026-01-21 | 💡 Useful 🗣️ Politics 🚀 Foundations 🏛️ Abolishing 👤 Powerless 🗽 Liberty 📄📺📚](./2026-01-21.md)  

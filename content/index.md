@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-01-24T18:21:53-08:00
+updated: 2026-01-25T18:17:21-08:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -13,8 +13,9 @@ updated: 2026-01-24T18:21:53-08:00
 ❔ What do 🫵 _you_ 🤔 think?  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (436)  
-- [2026-01-24](./reflections/2026-01-24.md)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (437)  
+- [2026-01-25](./reflections/2026-01-25.md)  
+- [2026-01-24 | 🇺🇸 The 🧠 Thinking 🇯🇵 System 🧠 Teaches 🚨 Mayor ☄️ Mary 📜 Liberty 💥 Created ⚔️ Strategy](./reflections/2026-01-24.md)  
 - [2026-01-23 | 🧠 The Brain, the 🌠 Stars, and the 🇺🇸 State of the Nation](./reflections/2026-01-23.md)  
 - [2026-01-22 | ⚖️ Minnesota 🏛️ Politics 🧠 Boost 🌊 Irresistible ☄️ Mary 📜 Birth 📺 News 📚📺📰](./reflections/2026-01-22.md)  
 - [2026-01-21 | 💡 Useful 🗣️ Politics 🚀 Foundations 🏛️ Abolishing 👤 Powerless 🗽 Liberty 📄📺📚](./reflections/2026-01-21.md)  
@@ -23,14 +24,14 @@ updated: 2026-01-24T18:21:53-08:00
 - [2026-01-18 | 😈 Devils 🛗 Elevate 😴 Fatigue 🔬 Science 📺📚](./reflections/2026-01-18.md)  
 - [2026-01-17 | 🌌 The 😴 Tired 👹 Devils 👶 Birth 📈 Even ➕ More 🏆 Success](./reflections/2026-01-17.md)  
 - [2026-01-16 | 🤖 Agent ❤️ Taught 🦠 Measles 💉 Health 💰 Debt 📜 History 📺📰📚](./reflections/2026-01-16.md)  
-- [2026-01-15 | 🫦 Desire 🤖 Bot 🏆 Wins 🛡️ Immunity 🌌📺📚](./reflections/2026-01-15.md)  
   
   
 ## [🧰 Tools](./tools/index.md) (1)  
 - [🧮 Calculator](./tools/calculator.md)  
   
   
-## [📚 Books](./books/index.md) (896)  
+## [📚 Books](./books/index.md) (897)  
+- [🌸🐝🦋🛡️ Attracting Native Pollinators: The Xerces Society Guide, Protecting North America's Bees and Butterflies](./books/attracting-native-pollinators-the-xerces-society-guide-protecting-north-americas-bees-and-butterflies.md)  
 - [🧠🔎 Thought and Knowledge: An Introduction to Critical Thinking](./books/thought-and-knowledge-an-introduction-to-critical-thinking.md)  
 - [🎨⚔️ The Art of War](./books/the-art-of-war.md)  
 - [💪🧠 Level-Up Your Self-Discipline: Understand the Neuroscience of Self-Discipline, Control Your Emotions, Overcome Procrastination, and Achieve Your Difficult Goals](./books/level-up-your-self-discipline-understand-the-neuroscience-of-self-discipline-control-your-emotions-overcome-procrastination-and-achieve-your-difficult-goals.md)  
@@ -40,10 +41,10 @@ updated: 2026-01-24T18:21:53-08:00
 - [✅🔬🦠 Crisis Averted: The Hidden Science of Fighting Outbreaks](./books/crisis-averted-the-hidden-science-of-fighting-outbreaks.md)  
 - [🧑🏿⚖️🧑🏻💔 Separate and Unequal: The Kerner Commission and the Unraveling of American Liberalism](./books/separate-and-unequal-the-kerner-commission-and-the-unraveling-of-american-liberalism.md)  
 - [🧠💡😊 Healthy Brain, Happy Life: A Personal Program to Activate Your Brain and Do Everything Better](./books/healthy-brain-happy-life-a-personal-program-to-activate-your-brain-and-do-everything-better.md)  
-- [🌊🌎 One Mighty and Irresistible Tide: The Epic Struggle Over American Immigration, 1924-1965](./books/one-mighty-and-irresistible-tide-the-epic-struggle-over-american-immigration-1924-1965.md)  
   
   
-## [📺 Videos](./videos/index.md) (621)  
+## [📺 Videos](./videos/index.md) (622)  
+- [🐛🐌🐞🌿🏡🦠 Managing Pests & Diseases in Your Backyard: Aphids, Blight, and Slugs - Oh My! Workshop](./videos/managing-pests-diseases-in-your-backyard-aphids-blight-and-slugs-oh-my-workshop.md)  
 - [🧠💡✨ This 1 Book ACTUALLY Teaches You to Think Like a Genius](./videos/this-1-book-actually-teaches-you-to-think-like-a-genius.md)  
 - [🚨🗣️🔥🗳️ Full Briefing: Mayor Frey Addresses Outrage Over ICE Shooting in Minneapolis | DRM News | AC1F](./videos/full-briefing-mayor-frey-addresses-outrage-over-ice-shooting-in-minneapolis-drm-news-ac1f.md)  
 - [🇺🇸🔪💀🅰️ The Killing of Alex Pretti](./videos/the-killing-of-alex-pretti.md)  
@@ -53,7 +54,6 @@ updated: 2026-01-24T18:21:53-08:00
 - [🥋🧠💪 Bruce Lee’s 11 Rules for an Unbreakable Mind](./videos/bruce-lees-11-rules-for-an-unbreakable-mind.md)  
 - [🇯🇵🧘🔄✨ The Japanese System for Breaking Bad Habits & Addiction | Kaizen & Ikigai Philosophy](./videos/the-japanese-system-for-breaking-bad-habits-addiction-kaizen-ikigai-philosophy.md)  
 - [🗣️⚔️🏛️ FULL DISCUSSION: Gavin Newsom Slams Trump’s Authoritarianism in Explosive WEF Interview | AC1G](./videos/full-discussion-gavin-newsom-slams-trumps-authoritarianism-in-explosive-wef-interview-ac1g.md)  
-- [🇺🇸🤝🤔 Brooks and Capehart on Trump forcing allies to reevaluate ties with U.S.](./videos/brooks-and-capehart-on-trump-forcing-allies-to-reevaluate-ties-with-us.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (88)  

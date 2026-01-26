@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-01-25T18:17:21-08:00
+updated: 2026-01-25T18:41:56-08:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -14,7 +14,7 @@ updated: 2026-01-25T18:17:21-08:00
 💬 Comment on any page with your GitHub account.  
   
 ## [🪞 Reflections](./reflections/index.md) ~ Blog (437)  
-- [2026-01-25](./reflections/2026-01-25.md)  
+- [2026-01-25 | 🚀 Project 🏡 Backyard 🦋 Butterflies](./reflections/2026-01-25.md)  
 - [2026-01-24 | 🇺🇸 The 🧠 Thinking 🇯🇵 System 🧠 Teaches 🚨 Mayor ☄️ Mary 📜 Liberty 💥 Created ⚔️ Strategy](./reflections/2026-01-24.md)  
 - [2026-01-23 | 🧠 The Brain, the 🌠 Stars, and the 🇺🇸 State of the Nation](./reflections/2026-01-23.md)  
 - [2026-01-22 | ⚖️ Minnesota 🏛️ Politics 🧠 Boost 🌊 Irresistible ☄️ Mary 📜 Birth 📺 News 📚📺📰](./reflections/2026-01-22.md)  

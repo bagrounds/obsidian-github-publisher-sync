@@ -5,10 +5,10 @@ aliases:
 share: true
 URL: https://bagrounds.org/books
 backlinks: false
-updated: 2026-01-25T18:41:56-08:00
+updated: 2026-01-26T14:12:18-08:00
 ---
 [Home](../index.md)  
-# 📚 Books (897)  
+# 📚 Books (898)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [💻0️⃣ Source Code: My Beginnings](./source-code-my-beginnings.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)  
@@ -804,6 +804,7 @@ updated: 2026-01-25T18:41:56-08:00
 - [⚔️♟️ The Strategy of Conflict](./the-strategy-of-conflict.md)  
 - [🔬🔄 The Structure of Scientific Revolutions](./the-structure-of-scientific-revolutions.md)  
 - [☀️⛓️🕊️ The Sun Does Shine: How I Found Life and Freedom on Death Row](./the-sun-does-shine-how-i-found-life-and-freedom-on-death-row.md)  
+- [🐝🐝🐝 The Swarm](./the-swarm.md)  
 - [⚙️🧠 The Systems Thinking Playbook: Exercises to Stretch and Build Learning and Systems Thinking Capabilities](./the-systems-thinking-playbook-exercises-to-stretch-and-build-learning-and-systems-thinking-capabilities.md)  
 - [👶🌱📈 The Talent Code: Greatness Isn't Born. It's Grown. Here's How.](./the-talent-code.md)  
 - [🐰🥕 The Tale of Peter Rabbit](./the-tale-of-peter-rabbit.md)  

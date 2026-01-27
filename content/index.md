@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-01-26T15:50:27-08:00
+updated: 2026-01-26T17:59:19-08:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -43,7 +43,8 @@ updated: 2026-01-26T15:50:27-08:00
 - [🧑🏿⚖️🧑🏻💔 Separate and Unequal: The Kerner Commission and the Unraveling of American Liberalism](./books/separate-and-unequal-the-kerner-commission-and-the-unraveling-of-american-liberalism.md)  
   
   
-## [📺 Videos](./videos/index.md) (625)  
+## [📺 Videos](./videos/index.md) (626)  
+- [👨‍💼🇺🇸📉🗣️ Tamara Keith and Amy Walter on Trump losing support over his immigration crackdown](./videos/tamara-keith-and-amy-walter-on-trump-losing-support-over-his-immigration-crackdown.md)  
 - [🧠💡📚🦅 Science & Tools of Learning & Memory | Dr. David Eagleman](./videos/science-tools-of-learning-memory-dr-david-eagleman.md)  
 - [🤖🗣️🔮✨ AI Talks | Gen AI 2026: What Will Shape the Future](./videos/ai-talks-gen-ai-2026-what-will-shape-the-future.md)  
 - [⏱️🧠💥🤖 Give Me 18 Minutes and I’ll Make you Dangerously Smart (with AI)](./videos/give-me-18-minutes-and-ill-make-you-dangerously-smart-with-ai.md)  
@@ -53,7 +54,6 @@ updated: 2026-01-26T15:50:27-08:00
 - [🇺🇸🔪💀🅰️ The Killing of Alex Pretti](./videos/the-killing-of-alex-pretti.md)  
 - [💥👥💀🚨 ‘They killed a man, created chaos:’ Gov. Walz on shooting](./videos/they-killed-a-man-created-chaos-gov-walz-on-shooting.md)  
 - [💪🧠⚔️🤝 How to Become Resilient, Forge Your Identity & Lead Others | Jocko Willink](./videos/how-to-become-resilient-forge-your-identity-lead-others-jocko-willink.md)  
-- [🌊🥋🤸💨 Be Like Water - The Philosophy of Bruce Lee](./videos/be-like-water-the-philosophy-of-bruce-lee.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (88)  

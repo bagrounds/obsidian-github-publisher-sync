@@ -4,8 +4,8 @@ aliases:
   - "📉🧪🚀 The Lean Startup: How Today's Entrepreneurs Use Continuous Innovation to Create Radically Successful Businesses"
 title: "📉🧪🚀 The Lean Startup: How Today's Entrepreneurs Use Continuous Innovation to Create Radically Successful Businesses"
 URL: https://bagrounds.org/books/the-lean-startup
-Author: 
-tags: 
+Author:
+tags:
 affiliate link: https://amzn.to/45E1SH5
 ---
 [Home](../index.md) > [Books](./index.md)  
@@ -61,7 +61,7 @@ Eric Ries draws from his experience as a startup founder and software engineer. 
 * **Best Alternate Book on the Same Topic:** "Running Lean" by Ash Maurya. 🏃 This book provides a more step-by-step, practical guide to implementing lean startup principles, with a focus on the Lean Canvas.  
 * **Best Tangentially Related Book:** "[The Innovator's Dilemma](./the-innovators-dilemma.md)" by Clayton M. Christensen. 💡 Explores how disruptive innovations can challenge established companies, providing context for the need for adaptability.  
 * **Best Diametrically Opposed Book:** "[Zero to One](./zero-to-one.md)" by Peter Thiel. 🛡️ While acknowledging the importance of innovation, Thiel emphasizes the value of creating monopolies and having a strong, long-term vision, rather than just iterating.  
-* **Best Fiction Book That Incorporates Related Ideas:** "The Martian" by Andy Weir. 🚀 This book showcases the iterative problem-solving and adaptability required in extreme circumstances, mirroring the Lean Startup's approach.  
+* **Best Fiction Book That Incorporates Related Ideas:** "[👨‍🚀🔴✨ The Martian](./the-martian.md)" by Andy Weir. 🚀 This book showcases the iterative problem-solving and adaptability required in extreme circumstances, mirroring the Lean Startup's approach.  
 * **Best More General Book:** "Good to Great" by Jim Collins. 📈 Focuses on the characteristics of companies that make the leap from good to great, providing a broader perspective on business success.  
 * **Best More Specific Book:** "Lean Analytics" by Alistair Croll and Benjamin Yoskovitz. 📊 Provides detailed guidance on using data and metrics to drive lean startup decisions.  
 * **Best More Rigorous Book:** "Competing Against Luck" by Clayton M. Christensen, Taddy Hall, Karen Dillon, and David S. Duncan. 🔬 Uses the "Jobs to Be Done" framework to understand customer needs and create successful products.  

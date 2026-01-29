@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-01-26T18:58:48-08:00
+updated: 2026-01-28T22:16:02-08:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -13,7 +13,9 @@ updated: 2026-01-26T18:58:48-08:00
 ❔ What do 🫵 _you_ 🤔 think?  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (438)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (440)  
+- [2026-01-28](./reflections/2026-01-28.md)  
+- [2026-01-27 | 🕯️ The Quiet Orbit of Joy](./reflections/2026-01-27.md)  
 - [2026-01-26 | 🧠 Science 🔮 Will 📉 Support ⏱️ Smart 🐝 Swarm ☄️ Project](./reflections/2026-01-26.md)  
 - [2026-01-25 | 🚀 Project 🏡 Backyard 🦋 Butterflies](./reflections/2026-01-25.md)  
 - [2026-01-24 | 🇺🇸 The 🧠 Thinking 🇯🇵 System 🧠 Teaches 🚨 Mayor ☄️ Mary 📜 Liberty 💥 Created ⚔️ Strategy](./reflections/2026-01-24.md)  
@@ -22,28 +24,27 @@ updated: 2026-01-26T18:58:48-08:00
 - [2026-01-21 | 💡 Useful 🗣️ Politics 🚀 Foundations 🏛️ Abolishing 👤 Powerless 🗽 Liberty 📄📺📚](./reflections/2026-01-21.md)  
 - [2026-01-20 | 🥀 Lolita 🏛️ Noem 💔 Hurts 🌟 All 📜 The 👶🏽 Kids 📚📺📰](./reflections/2026-01-20.md)  
 - [2026-01-19 | 🫅 Prince ⚔️ Joe 🎭 Character 🧭 Explorer 📺👥🤖💬📚](./reflections/2026-01-19.md)  
-- [2026-01-18 | 😈 Devils 🛗 Elevate 😴 Fatigue 🔬 Science 📺📚](./reflections/2026-01-18.md)  
-- [2026-01-17 | 🌌 The 😴 Tired 👹 Devils 👶 Birth 📈 Even ➕ More 🏆 Success](./reflections/2026-01-17.md)  
   
   
 ## [🧰 Tools](./tools/index.md) (1)  
 - [🧮 Calculator](./tools/calculator.md)  
   
   
-## [📚 Books](./books/index.md) (898)  
-- [🐝🐝🐝 The Swarm](./books/the-swarm.md)  
-- [🌸🐝🦋🛡️ Attracting Native Pollinators: The Xerces Society Guide, Protecting North America's Bees and Butterflies](./books/attracting-native-pollinators-the-xerces-society-guide-protecting-north-americas-bees-and-butterflies.md)  
-- [🧠🔎 Thought and Knowledge: An Introduction to Critical Thinking](./books/thought-and-knowledge-an-introduction-to-critical-thinking.md)  
-- [🎨⚔️ The Art of War](./books/the-art-of-war.md)  
-- [💪🧠 Level-Up Your Self-Discipline: Understand the Neuroscience of Self-Discipline, Control Your Emotions, Overcome Procrastination, and Achieve Your Difficult Goals](./books/level-up-your-self-discipline-understand-the-neuroscience-of-self-discipline-control-your-emotions-overcome-procrastination-and-achieve-your-difficult-goals.md)  
-- [🌊🥋 Be Water, My Friend: The Teachings of Bruce Lee](./books/be-water-my-friend-the-teachings-of-bruce-lee.md)  
-- [☯️🥋 Tao of Jeet Kune Do](./books/tao-of-jeet-kune-do.md)  
-- [🇯🇵⚔️ A Book of Five Rings: The Classic Guide to Strategy](./books/a-book-of-five-rings-the-classic-guide-to-strategy.md)  
-- [✅🔬🦠 Crisis Averted: The Hidden Science of Fighting Outbreaks](./books/crisis-averted-the-hidden-science-of-fighting-outbreaks.md)  
-- [🧑🏿⚖️🧑🏻💔 Separate and Unequal: The Kerner Commission and the Unraveling of American Liberalism](./books/separate-and-unequal-the-kerner-commission-and-the-unraveling-of-american-liberalism.md)  
+## [📚 Books](./books/index.md) (901)  
+- [💀⭐ The Cruel Stars](./books/the-cruel-stars.md)  
+- [🤖🏛️ Lie Machines: How to Save Democracy from Troll Armies, Deceitful Robots, Junk News Operations, and Political Operatives](./books/lie-machines-how-to-save-democracy-from-troll-armies-deceitful-robots-junk-news-operations-and-political-operatives.md)  
+- [🤖🔗👁️ Systems Thinking: An AI’s Guide to 100 Ways to Spot Connections Humans Often Overlook](./books/systems-thinking-an-ais-guide-to-100-ways-to-spot-connections-humans-often-overlook.md)  
+- [🌌 Cosmos](./books/cosmos.md)  
+- [🏢🤖 Compositional Intelligence: Architectural Typology Through Generative AI](./books/compositional-intelligence-architectural-typology-through-generative-ai.md)  
+- [🤖🧬⬆️ The Singularity Is Near: When Humans Transcend Biology](./books/the-singularity-is-near-when-humans-transcend-biology.md)  
+- [⚠️🤖📈 Out of Control: The New Biology of Machines, Social Systems, and the Economic World](./books/out-of-control-the-new-biology-of-machines-social-systems-and-the-economic-world.md)  
+- [🧩⚙️ Constraint Processing](./books/constraint-processing.md)  
+- [🧑‍🤝‍🤖 Co-Intelligence: The Definitive, Bestselling Guide to Living and Working with AI](./books/co-intelligence-the-definitive-bestselling-guide-to-living-and-working-with-ai.md)  
+- [🧠🔌 The Thinking Machine: Jensen Huang, Nvidia, and the World's Most Coveted Microchip](./books/the-thinking-machine-jensen-huang-nvidia-and-the-worlds-most-coveted-microchip.md)  
   
   
 ## [📺 Videos](./videos/index.md) (626)  
+- [❓🕵️‍♂️🇺🇸📉 What’s Happening to U.S. Intelligence Under the Second Trump Administration? | Senator Mark Warner](./videos/whats-happening-to-us-intelligence-under-the-second-trump-administration-senator-mark-warner.md)  
 - [👨‍💼🇺🇸📉🗣️ Tamara Keith and Amy Walter on Trump losing support over his immigration crackdown](./videos/tamara-keith-and-amy-walter-on-trump-losing-support-over-his-immigration-crackdown.md)  
 - [🧠💡📚🦅 Science & Tools of Learning & Memory | Dr. David Eagleman](./videos/science-tools-of-learning-memory-dr-david-eagleman.md)  
 - [🤖🗣️🔮✨ AI Talks | Gen AI 2026: What Will Shape the Future](./videos/ai-talks-gen-ai-2026-what-will-shape-the-future.md)  
@@ -53,7 +54,6 @@ updated: 2026-01-26T18:58:48-08:00
 - [🚨🗣️🔥🗳️ Full Briefing: Mayor Frey Addresses Outrage Over ICE Shooting in Minneapolis | DRM News | AC1F](./videos/full-briefing-mayor-frey-addresses-outrage-over-ice-shooting-in-minneapolis-drm-news-ac1f.md)  
 - [🇺🇸🔪💀🅰️ The Killing of Alex Pretti](./videos/the-killing-of-alex-pretti.md)  
 - [💥👥💀🚨 ‘They killed a man, created chaos:’ Gov. Walz on shooting](./videos/they-killed-a-man-created-chaos-gov-walz-on-shooting.md)  
-- [💪🧠⚔️🤝 How to Become Resilient, Forge Your Identity & Lead Others | Jocko Willink](./videos/how-to-become-resilient-forge-your-identity-lead-others-jocko-willink.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (88)  

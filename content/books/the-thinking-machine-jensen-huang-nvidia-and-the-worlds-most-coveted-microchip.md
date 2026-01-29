@@ -50,7 +50,7 @@ affiliate link: https://amzn.to/4p93S03
 * 💡 Ethical considerations and societal impact of increasingly powerful, autonomous AI systems driven by advanced microchips.  
 * ⚡ The energy consumption and environmental footprint of large-scale AI training and inference, and sustainable hardware solutions.  
 * 💰 Detailed economic analysis of Nvidia's market power and potential antitrust concerns in the AI hardware sector.  
-* 🌌 The role of neuromorphic and quantum computing in the next generation of AI hardware beyond GPUs.  
+* 🌌 The role of neuromorphic and [⚛️ Quantum Computing](../topics/quantum-computing.md) in the next generation of AI hardware beyond GPUs.  
 * 🔬 Comparison of different AI chip architectures (ASICs, FPGAs, TPUs) and their specific advantages for various AI workloads.  
   
 ## ❓ Frequently Asked Questions (FAQ)  

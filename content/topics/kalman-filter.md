@@ -133,6 +133,6 @@ Rudolf E. Kálmán published his seminal paper describing the filter in 1960. �
 - **Topically Opposed:** "Nonlinear Filtering" by Jitendra R. Raol 🌀  
 - **More General:** "Probability and Random Processes" by Geoffrey Grimmett and David Stirzaker 🎲  
 - **More Specific:** "Kalman Filtering Techniques for Radar Tracking" by Yaakov Bar-Shalom 📡  
-- **Fictional:** "The Martian" by Andy Weir (uses navigation concepts) 🚀  
+- **Fictional:** [👨‍🚀🔴✨ The Martian](../books/the-martian.md) by Andy Weir (uses navigation concepts) 🚀  
 - **Rigorous:** "Stochastic Processes and Filtering Theory" by Arthur H. Jazwinski 🧐  
 - **Accessible:** [💡🔧📏🔮〰️ Understanding and Implementing the Kalman Filter](./understanding-and-implementing-the-kalman-filter.md) by Lionel Garcia 💡

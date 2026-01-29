@@ -71,7 +71,7 @@ affiliate link: https://amzn.to/490VIAY
   
 ### 🔗 Related  
 * **📖 The Important Thing About Margaret Wise Brown by Mac Barnett (a biography about the author)  
-* **🖍️ Harold and the Purple Crayon by Crockett Johnson (explores imagination and bedtime themes)  
+* **[👦🟣🖍️ Harold and the Purple Crayon](./harold-and-the-purple-crayon.md) by Crockett Johnson (explores imagination and bedtime themes)  
 * **🎵 Lullaby and Goodnight by Elizabeth D. Crawford (a collection of classic lullabies)  
   
 ## 🫵 What Do You Think?  

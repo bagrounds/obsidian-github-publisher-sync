@@ -39,7 +39,7 @@ affiliate link: https://amzn.to/3Mwqyd5
 * 🔬 **Nanotechnology:** Self-replicating nanobots for internal body repair, environmental manipulation.  
 * 🧬 **Genetics & Biotechnology:** Gene editing (CRISPR), synthetic biology, organ regeneration, radical life extension.  
 * 🔌 **Brain-Computer Interfaces (BCIs):** Direct connection of human brains to computers.  
-* ⚛️ **Quantum Computing:** Exponential increase in computing power and efficiency.  
+* **[⚛️ Quantum Computing](../topics/quantum-computing.md):** Exponential increase in computing power and efficiency.  
   
 ## ⚖️ Evaluation  
   

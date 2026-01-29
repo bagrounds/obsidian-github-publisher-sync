@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-01-29T09:03:11-08:00
+updated: 2026-01-29T09:36:06-08:00
 ---
 [Home](../index.md)  
-# 📺 Videos (626)  
+# 📺 Videos (627)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
 - [❓💪🔬 12 Questions About Creatine with Stephen Cornish, PhD](./12-questions-about-creatine-w-stephen-cornish-phd.md)  
@@ -45,6 +45,7 @@ updated: 2026-01-29T09:03:11-08:00
 - [🤖🧠🏠🚀✨ A Deepdive on my Personal AI Infrastructure (PAI v2.0, December 2025)](./a-deepdive-on-my-personal-ai-infrastructure-pai-v2-0-december-2025.md)  
 - [🔎🎭🇺🇸 A Deeper Look at Hegseth and Trump’s Performances in Quantico | Explainer](./a-deeper-look-at-hegseth-and-trumps-performances-in-quantico-explainer.md)  
 - [⚡🧠🚀✨ ADHD & How Anyone Can Improve Their Focus | Huberman Lab Essentials](./adhd-how-anyone-can-improve-their-focus-huberman-lab-essentials.md)  
+- [🧠⚡️💻🚀 ADHD & Software Development: Real Practices That Work w/ Paige Watson | Agile Mentors Podcast](./adhd-software-development-real-practices-that-work-w-paige-watson-agile-mentors-podcast.md)  
 - [👎💲 Against Economics by David Graeber](./against-economics-by-david-graeber.md)  
 - [🌱📈✅➡️🔄 A healthy economy should be designed to thrive, not grow | Kate Raworth](./a-healthy-economy-should-be-designed-to-thrive-not-grow-kate-raworth.md)  
 - [🤖💡🤝🗣️🏛️ AI Can Help Humans Find Common Ground in Democratic Deliberation – MH Tessler | IASEAI 2025](./ai-can-help-humans-find-common-ground-in-democratic-deliberation-mh-tessler-iaseai-2025.md)  

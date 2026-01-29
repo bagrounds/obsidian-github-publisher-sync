@@ -50,7 +50,7 @@ affiliate link: https://amzn.to/4oButnl
 * 🤝 Human-AI Teaming and Collaborative Intelligence Frameworks  
 * 📊 The Role of AI in Complex Adaptive Systems Modeling and Simulation  
 * 🌐 Sociotechnical Systems Design for Human-AI Ecosystems  
-* ⚛️ Quantum Computing's Potential for Hyper-Complex Systems Analysis  
+* [⚛️ Quantum Computing](../topics/quantum-computing.md)'s Potential for Hyper-Complex Systems Analysis  
   
 ## ❓ Frequently Asked Questions (FAQ)  
   

@@ -45,7 +45,7 @@ affiliate link: https://amzn.to/4a1DCPT
 * 🚪 **Quantum Gates:** The fundamental operations performed on qubits in quantum computing.  
 * 💻 **Quantum Algorithms:** Examples like Shor's or Grover's algorithm and their potential applications.  
 * 🚧 **Decoherence and Error Correction:** Challenges in maintaining quantum states and building robust quantum computers.  
-* 🏢 **Different Quantum Computing Architectures:** Superconducting qubits, trapped ions, photonic qubits.  
+* 🏢 **Different [⚛️ Quantum Computing](../topics/quantum-computing.md) Architectures:** Superconducting qubits, trapped ions, photonic qubits.  
 * 🤔 **The Measurement Problem:** Philosophical implications of observation in quantum mechanics.  
   
 ## ❓ Frequently Asked Questions (FAQ)  

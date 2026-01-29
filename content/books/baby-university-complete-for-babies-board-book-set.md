@@ -73,6 +73,8 @@ affiliate link: https://amzn.to/3XWJlRj
 * 👶 Baby Loves Science series by Ruth Spiro: Introduces scientific concepts with engaging illustrations and language, often cited as a strong alternative or complement.  
 * 👋 Hello, World! series by Jill McDonald: Offers colorful, simple introductions to various non-fiction topics for babies.  
 * 💯 My First 100 Science Words by Chris Ferrie: Another title by the same author, focusing on vocabulary.  
+* [⚛️👶 Quantum Physics for Babies](./quantum-physics-for-babies.md)  
+* [⚛️ℹ️👶 Quantum Information for Babies](./quantum-information-for-babies.md)  
   
 ### ↔️ Contrasting  
 * 🐻 Brown Bear, Brown Bear, What Do You See? by Bill Martin Jr. and Eric Carle: A classic board book emphasizing rhythm, repetition, and color, focusing on language development and interactive reading rather than scientific concepts.  

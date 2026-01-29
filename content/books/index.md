@@ -5,10 +5,10 @@ aliases:
 share: true
 URL: https://bagrounds.org/books
 backlinks: false
-updated: 2026-01-28T22:16:02-08:00
+updated: 2026-01-29T09:03:11-08:00
 ---
 [Home](../index.md)  
-# 📚 Books (901)  
+# 📚 Books (902)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [💻0️⃣ Source Code: My Beginnings](./source-code-my-beginnings.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)  
@@ -721,6 +721,7 @@ updated: 2026-01-28T22:16:02-08:00
 - [🤔🔬 The Logic of Scientific Discovery](./the-logic-of-scientific-discovery.md)  
 - [🇺🇸💔 The Lost Soul of the American Presidency: The Decline into Demagoguery and the Prospects for Renewal](./the-lost-soul-of-the-american-presidency-the-decline-into-demagoguery-and-the-prospects-for-renewal.md)  
 - [🍬⏳ The Marshmallow Test: Mastering Self-Control](./the-marshmallow-test-mastering-self-control.md)  
+- [👨‍🚀🔴✨ The Martian](./the-martian.md)  
 - [🧘😞➡️ The Mindful Way Through Depression: Freeing Yourself from Chronic Unhappiness](./the-mindful-way-through-depression-freeing-yourself-from-chronic-unhappiness.md)  
 - [🧠📊 The Model Thinker: What You Need to Know to Make Data Work for You](./the-model-thinker-what-you-need-to-know-to-make-data-work-for-you.md)  
 - [⚠️🏛️👹🇺🇸 The Most Dangerous Branch: Inside the Supreme Court in the Age of Trump](./the-most-dangerous-branch-inside-the-supreme-court-in-the-age-of-trump.md)  

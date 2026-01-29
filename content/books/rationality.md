@@ -4,8 +4,8 @@ aliases:
   - "🧠🤔❓ Rationality: What It Is, Why It Seems Scarce, Why It Matters"
 title: "🧠🤔❓ Rationality: What It Is, Why It Seems Scarce, Why It Matters"
 URL: https://bagrounds.org/books/rationality
-Author: 
-tags: 
+Author:
+tags:
 affiliate link: https://amzn.to/3FKe7Y4
 ---
 [Home](../index.md) > [Books](./index.md)  
@@ -115,7 +115,7 @@ Pinker provides actionable advice for improving rationality:
 * 🏆 **Best Alternate Book on the Same Topic:** "[Thinking, Fast and Slow](./thinking-fast-and-slow.md)" by Daniel Kahneman. 🧠 While covering similar ground regarding cognitive biases, Kahneman's book delves deeper into the psychological mechanisms at play. 🧐  
 * 🌍 **Best Book Tangentially Related:** "[Sapiens: A Brief History of Humankind](./sapiens-a-brief-history-of-humankind.md)" by Yuval Noah Harari. 📜 Provides a broad historical and anthropological context for understanding human cognition and behavior.  
 * ⚔️ **Best Book Diametrically Opposed:** "Gut Feelings: The Intelligence of the Unconscious" by Gerd Gigerenzer. 🤔 Argues for the adaptive rationality of heuristics and intuition, challenging the idea that rationality is always superior. 🤯  
-* 🚀 **Best Fiction Book Incorporating Related Ideas:** "The Martian" by Andy Weir. 👨‍🚀 Showcases the power of rational problem-solving and scientific thinking in a life-or-death situation. 🔬  
+* 🚀 **Best Fiction Book Incorporating Related Ideas:** [👨‍🚀🔴✨ The Martian](./the-martian.md) by Andy Weir. 👨‍🚀 Showcases the power of rational problem-solving and scientific thinking in a life-or-death situation. 🔬  
 * 📣 **Best Book More General:** "[Influence](./influence.md): The Psychology of Persuasion" by Robert Cialdini. 🗣️ Explores the principles of persuasion and social influence, which are closely related to cognitive biases and decision-making. 🤝  
 * 📊 **Best Book More Specific:** "Statistics Without Tears: A Primer for Non-Mathematicians" by Derek Rowntree. 🔢 Provides a more detailed and accessible introduction to statistical concepts for those who want to delve deeper into the quantitative aspects of rationality. 📚  
 * 🔬 **Best Book More Rigorous:** [🎲🧮 Probability Theory: The Logic of Science](./probability-theory.md) by E.T. Jaynes. A comprehensive and mathematically rigorous treatment of Bayesian probability and its applications. ✅  

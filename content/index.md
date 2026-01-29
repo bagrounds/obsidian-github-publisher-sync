@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-01-29T09:03:11-08:00
+updated: 2026-01-29T09:36:06-08:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -31,19 +31,20 @@ updated: 2026-01-29T09:03:11-08:00
   
   
 ## [📚 Books](./books/index.md) (902)  
-- [☄️🧑‍🚀🙏🌍 Project Hail Mary](./books/project-hail-mary.md)  
-- [👨‍🚀🔴✨ The Martian](./books/the-martian.md)  
-- [💀⭐ The Cruel Stars](./books/the-cruel-stars.md)  
-- [🤖🏛️ Lie Machines: How to Save Democracy from Troll Armies, Deceitful Robots, Junk News Operations, and Political Operatives](./books/lie-machines-how-to-save-democracy-from-troll-armies-deceitful-robots-junk-news-operations-and-political-operatives.md)  
-- [🤖🔗👁️ Systems Thinking: An AI’s Guide to 100 Ways to Spot Connections Humans Often Overlook](./books/systems-thinking-an-ais-guide-to-100-ways-to-spot-connections-humans-often-overlook.md)  
-- [🌌 Cosmos](./books/cosmos.md)  
-- [🏢🤖 Compositional Intelligence: Architectural Typology Through Generative AI](./books/compositional-intelligence-architectural-typology-through-generative-ai.md)  
-- [🤖🧬⬆️ The Singularity Is Near: When Humans Transcend Biology](./books/the-singularity-is-near-when-humans-transcend-biology.md)  
-- [⚠️🤖📈 Out of Control: The New Biology of Machines, Social Systems, and the Economic World](./books/out-of-control-the-new-biology-of-machines-social-systems-and-the-economic-world.md)  
-- [🧩⚙️ Constraint Processing](./books/constraint-processing.md)  
+- [📉🧪🚀 The Lean Startup: How Today's Entrepreneurs Use Continuous Innovation to Create Radically Successful Businesses](./books/the-lean-startup.md)  
+- [💪📈 Willpower: Rediscovering the Greatest Human Strength](./books/willpower.md)  
+- [📉➡️👍 Better Than Before: What I Learned About Making and Breaking Habits - to Sleep More, Quit Sugar, Procrastinate Less, and Generally Build a Happier Life](./books/better-than-before.md)  
+- [⚙️📈🎯🤖 Control Systems Engineering](./books/control-systems-engineering.md)  
+- [🔄📈🧩 Modeling of Dynamic Systems](./books/modeling-dynamic-systems.md)  
+- [🧠🤔❓ Rationality: What It Is, Why It Seems Scarce, Why It Matters](./books/rationality.md)  
+- [💡🤖💰💥🏢📉 The Innovator's Dilemma: When New Technologies Cause Great Firms to Fail](./books/the-innovators-dilemma.md)  
+- [🐛➡️🦋 How to Change: The Science of Getting from Where You Are to Where You Want to Be](./books/how-to-change.md)  
+- [🤏♻️ Tiny Habits: The Small Changes That Change Everything](./books/tiny-habits.md)  
+- [🧭🍎 Foraging Theory](./books/foraging-theory.md)  
   
   
-## [📺 Videos](./videos/index.md) (626)  
+## [📺 Videos](./videos/index.md) (627)  
+- [🧠⚡️💻🚀 ADHD & Software Development: Real Practices That Work w/ Paige Watson | Agile Mentors Podcast](./videos/adhd-software-development-real-practices-that-work-w-paige-watson-agile-mentors-podcast.md)  
 - [❓🕵️‍♂️🇺🇸📉 What’s Happening to U.S. Intelligence Under the Second Trump Administration? | Senator Mark Warner](./videos/whats-happening-to-us-intelligence-under-the-second-trump-administration-senator-mark-warner.md)  
 - [👨‍💼🇺🇸📉🗣️ Tamara Keith and Amy Walter on Trump losing support over his immigration crackdown](./videos/tamara-keith-and-amy-walter-on-trump-losing-support-over-his-immigration-crackdown.md)  
 - [🧠💡📚🦅 Science & Tools of Learning & Memory | Dr. David Eagleman](./videos/science-tools-of-learning-memory-dr-david-eagleman.md)  
@@ -53,15 +54,14 @@ updated: 2026-01-29T09:03:11-08:00
 - [🧠💡✨ This 1 Book ACTUALLY Teaches You to Think Like a Genius](./videos/this-1-book-actually-teaches-you-to-think-like-a-genius.md)  
 - [🚨🗣️🔥🗳️ Full Briefing: Mayor Frey Addresses Outrage Over ICE Shooting in Minneapolis | DRM News | AC1F](./videos/full-briefing-mayor-frey-addresses-outrage-over-ice-shooting-in-minneapolis-drm-news-ac1f.md)  
 - [🇺🇸🔪💀🅰️ The Killing of Alex Pretti](./videos/the-killing-of-alex-pretti.md)  
-- [💥👥💀🚨 ‘They killed a man, created chaos:’ Gov. Walz on shooting](./videos/they-killed-a-man-created-chaos-gov-walz-on-shooting.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (88)  
+- [📏🔮〰️ Kalman Filter](./topics/kalman-filter.md)  
+- [➕➖🔢📈📚 Linear Systems Theory](./topics/linear-systems-theory.md)  
 - [⭐✨🌟💫 The Star](./topics/the-star.md)  
 - [✍🏽🤖 Blog Bot](./topics/blog-bot.md)  
 - [🇺🇸🗣️💡🗓️ A Presidential Platform for Americans 2028](./topics/a-presidential-platform-for-americans-2028.md)  
-- [🐑🎀 Mary Had a Little Lamb](./topics/mary-had-a-little-lamb.md)  
-- [🧸🎶🧸 Nursery Rhymes](./topics/nursery-rhymes.md)  
   
   
 ## [📄  Articles](./articles/index.md) (76)  
@@ -89,15 +89,15 @@ updated: 2026-01-29T09:03:11-08:00
   
   
 ## [👥 People](./people/index.md) (18)  
+- [🤖🧠💻 Andrej Karpathy](./people/andrej-karpathy.md)  
 - [⚔️🗡️🩸 Joe Abercrombie](./people/joe-abercrombie.md)  
 - [👨‍🏫📉💵 Warren Mosler](./people/warren-mosler.md)  
-- [🤖🧠💻 Andrej Karpathy](./people/andrej-karpathy.md)  
   
   
 ## [🛍️ Products](./products/index.md) (5)  
+- [🔥💨🏕️ Coleman Triton 2-Burner Propane Stove, Portable Camping Cooktop with 2 Adjustable Burners & Wind Guards, 22,000 BTUs of Power for Camping, Tailgating, Grilling, BBQ, & More](./products/coleman-triton-2-burner-propane-stove-portable-camping-cooktop-with-2-adjustable-burners-wind-guards-22000-btus-of-power-for-camping-tailgating-grilling-bbq-more.md)  
 - [👶🌧️💨 Graco Baby Jogging Stroller Universal Rain Cover, Ventilated Weather Shield, Waterproof, Windproof, Versatile Size to Fit Most Jogging Strollers, Vinyl, Clear, Plastic](./products/graco-baby-jogging-stroller-universal-rain-cover-ventilated-weather-shield-waterproof-windproof-versatile-size-to-fit-most-jogging-strollers-vinyl-clear-plastic.md)  
 - [🤖🧹🧼🗺️ iRobot Roomba Plus 505 Combo Robot Vacuum & Mop with AutoWash Dock - Extending Spinning Mop Pads, Self-Empties, Pad Wash & Heated Drying, Self-cleaning, Recognizes & Avoids Obstacles, LiDAR Navigation](./products/irobot-roomba-plus-505-combo-robot-vacuum-mop-with-autowash-dock-extending-spinning-mop-pads-self-empties-pad-wash-heated-drying-self-cleaning-recognizes-avoids-obstacles-lidar-navigation.md)  
-- [🦈🔦🐈✨🧹 Shark HV322 Rocket Pet Plus Corded Stick Vacuum with LED Headlights, XL Dust Cup, Lightweight, Perfect for Pet Hair Pickup, Converts to a Hand Vacuum, with (2) Pet Attachments, Bordeaux, Silver](./products/shark-hv322-rocket-pet-plus-corded-stick-vacuum-with-led-headlights-xl-dust-cup-lightweight.md)  
   
   
 ## 🔗 Profiles  

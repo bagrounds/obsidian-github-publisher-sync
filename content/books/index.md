@@ -5,10 +5,10 @@ aliases:
 share: true
 URL: https://bagrounds.org/books
 backlinks: false
-updated: 2026-01-26T18:58:48-08:00
+updated: 2026-01-28T22:16:02-08:00
 ---
 [Home](../index.md)  
-# 📚 Books (898)  
+# 📚 Books (901)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [💻0️⃣ Source Code: My Beginnings](./source-code-my-beginnings.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)  
@@ -291,6 +291,7 @@ updated: 2026-01-26T18:58:48-08:00
 - [🤖🗣️ Hands-On Large Language Models: Language Understanding and Generation](./hands-on-large-language-models-language-understanding-and-generation.md)  
 - [🇺🇸⚠️ Harbingers: What January 6 and Charlottesville Reveal About Rising Threats to American Democracy](./harbingers-what-january-6-and-charlottesville-reveal-about-rising-threats-to-american-democracy.md)  
 - [🔌😁🧠🔬 Hardwiring Happiness: The New Brain Science of Contentment, Calm, and Confidence](./hardwiring-happiness-the-brain-science-that-changes-everything.md)  
+- [👦🟣🖍️ Harold and the Purple Crayon](./harold-and-the-purple-crayon.md)  
 - [🐣🌱👨‍🏫💻 Haskell Programming from First Principles](./haskell-programming-from-first-principles.md)  
 - [🧠🤓📈💡 Head First Statistics: A Brain-Friendly Guide](./head-first-statistics.md)  
 - [⚕️💸 Health Insurance in America: A Consumer's Guide](./health-insurance-in-america-a-consumers-guide.md)  
@@ -501,6 +502,7 @@ updated: 2026-01-26T18:58:48-08:00
 - [📢💡 Public Broadcasting and the Public Interest](./public-broadcasting-and-the-public-interest.md)  
 - [ 🎯🎭🔗🧭🏆 Purposeful Performance: The Secret Mix of Connecting, Leading, and Succeeding](./purposeful-performance.md)  
 - [⚙️🔗 Quality Software Management: Systems Thinking](./quality-software-management-systems-thinking.md)  
+- [⚛️ℹ️👶 Quantum Information for Babies](./quantum-information-for-babies.md)  
 - [⚛️👶 Quantum Physics for Babies](./quantum-physics-for-babies.md)  
 - [😡🤬 Rage](./rage.md)  
 - [🌱👼🏼 Raising Good Humans: A Mindful Guide to Breaking the Cycle of Reactive Parenting and Raising Kind, Confident Kids](./raising-good-humans-a-mindful-guide-to-breaking-the-cycle-of-reactive-parenting-and-raising-kind-confident-kids.md)  
@@ -647,6 +649,7 @@ updated: 2026-01-26T18:58:48-08:00
 - [🧠💻 The Computational Brain](./the-computational-brain.md)  
 - [✨🎭🧘‍♂️🌌 The Creative Act: A Way of Being](./the-creative-act.md)  
 - [💡🌱♾️ The Creative Habit: Learn It and Use It for Life](./the-creative-habit.md)  
+- [💀⭐ The Cruel Stars](./the-cruel-stars.md)  
 - [👑⚖️ The Curse of Bigness: Antitrust in the New Gilded Age](./the-curse-of-bigness-antitrust-in-the-new-gilded-age.md)  
 - [🧘🏼‍♀️📅 The Daily Stoic: 366 Meditations on Wisdom, Perseverance, and the Art of Living](./the-daily-stoic-366-meditations-on-wisdom-perseverance-and-the-art-of-living.md)  
 - [❓✝️ The Dawkins Delusion?: Atheist Fundamentalism and the Denial of the Divine](./the-dawkins-delusion-atheist-fundamentalism-and-the-denial-of-the-divine.md)  

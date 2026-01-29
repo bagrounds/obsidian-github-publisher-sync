@@ -64,5 +64,5 @@ Here's a summary of his background, career, and impact:
   
 **🚀 Sci-Fi Books (Karpathy also shares his favorite sci-fi):**  
 * 🌌 **"Stories of Your Life and Others" & "Exhalation" by Ted Chiang:** 🧐 Short story collections highly praised for their thought-provoking explorations of AI, language, and the human condition.  
-* 🧑‍🚀 **"The Martian" and [☄️🧑‍🚀🙏🌍 Project Hail Mary](../books/project-hail-mary.md) by Andy Weir:** 🔬 Known for their scientifically accurate and entertaining narratives.  
+* **[👨‍🚀🔴✨ The Martian](../books/the-martian.md) and [☄️🧑‍🚀🙏🌍 Project Hail Mary](../books/project-hail-mary.md) by Andy Weir:** 🔬 Known for their scientifically accurate and entertaining narratives.  
 * 👽 **Books by Stanisław Lem (e.g., "His Master's Voice," "Fiasco," "Solaris"):** 🤯 For their unique and often philosophical takes on alien contact and intelligence.

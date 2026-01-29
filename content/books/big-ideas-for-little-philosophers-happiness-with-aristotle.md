@@ -65,7 +65,7 @@ affiliate link: https://amzn.to/3ZLGBaU
     * 🎁 *The Quiltmaker's Gift* by Jeff Brumbeau (explores the joy of generosity).  
     * 🧑‍🤝‍🧑 Books specifically about friendship and its value.  
 * ❓ **Stories Encouraging Inquiry and Asking Questions:** ❓ Aligned with the idea of children as "little philosophers" who ask big questions.  
-    * 🖍️ *Harold and the Purple Crayon* by Crockett Johnson (explores imagination and creativity).  
+    * [👦🟣🖍️ Harold and the Purple Crayon](./harold-and-the-purple-crayon.md) by Crockett Johnson (explores imagination and creativity).  
     * 🌍 Books that encourage curiosity about the world.  
 * 🦊 **Fables and Folktales:** 👵 Many traditional stories offer simple moral lessons and insights into human nature and the consequences of different actions, often touching on themes relevant to living a good life.  
 * 🤝 **Books on Social-Emotional Learning (SEL):** ❤️ These books help children develop self-awareness, self-management, social awareness, relationship skills, and responsible decision-making, all of which contribute to a flourishing life.  

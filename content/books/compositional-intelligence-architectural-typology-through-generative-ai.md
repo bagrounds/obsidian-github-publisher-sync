@@ -38,7 +38,7 @@ affiliate link: https://amzn.to/4pI6CCn
 ## 🔍 Topics for Further Understanding  
 * 🧑‍⚖️ Ethical frameworks for AI-generated architectural authorship and intellectual property.  
 * 🏘️ The socio-cultural impact of AI-driven urban typologies on human experience and community identity.  
-* ⚛️ Integration of quantum computing with generative AI for exponentially complex architectural simulations.  
+* ⚛️ Integration of [⚛️ Quantum Computing](../topics/quantum-computing.md) with generative AI for exponentially complex architectural simulations.  
 * 🤝 Developing human-AI collaborative design interfaces that prioritize intuition and critical human input.  
 * 💡 The role of explainable AI (XAI) in architectural design decisions and public acceptance.  
 * 🧪 Advanced material science integration with generative AI for optimized performative structures.  

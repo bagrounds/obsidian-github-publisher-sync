@@ -50,7 +50,7 @@ A: 🤓 The book is widely considered accessible due to its strong character voi
 * 🚀 *Packing for Mars: The Curious Science of Life in the Void* by Mary Roach  
   
 ### ❤️ If You Loved This  
-* 🍎 *The Martian* by Andy Weir (Features a similar competence narrative with high-stakes survival)  
+* [👨‍🚀🔴✨ The Martian](./the-martian.md) by Andy Weir (Features a similar competence narrative with high-stakes survival)  
 * 🐜 *Children of Time* by Adrian Tchaikovsky (Explores themes of evolutionary biology and non-human civilization)  
 * 🤖 *We Are Legion (We Are Bob)* by Dennis E. Taylor (Shares the lighthearted first-person narration of a cosmic mission)  
   

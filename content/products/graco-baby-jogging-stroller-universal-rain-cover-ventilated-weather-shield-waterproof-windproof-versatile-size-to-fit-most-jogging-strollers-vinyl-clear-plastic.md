@@ -43,7 +43,7 @@ CTA: 🛡️ Defend precious cargo.
 ### 📚 Book Recommendations  
   
 #### ➕ Similar  
-* 🚀 **The Martian** **by Andy Weir:** 🛡️ This book mirrors the rain cover's function by focusing on creating a sealed, protected habitat for survival against a hostile environment.  
+* **[👨‍🚀🔴✨ The Martian](../books/the-martian.md)** **by Andy Weir:** 🛡️ This book mirrors the rain cover's function by focusing on creating a sealed, protected habitat for survival against a hostile environment.  
 * 🛸 **A Long Way to a Small, Angry Planet** **by Becky Chambers:** A novel about a spaceship crew, the ship itself acts as a weather shield, creating a safe, traveling bubble for its inhabitants against the vacuum of space.  
 * 🚂 **The Boxcar Children** **by Gertrude Chandler Warner:** 🏠 This story highlights resourceful children who create their own shelter, a boxcar, to provide a safe, mobile home, much like the Graco cover creates a safe, mobile space.  
   

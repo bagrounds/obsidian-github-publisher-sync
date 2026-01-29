@@ -47,7 +47,7 @@ affiliate link: https://amzn.to/4hdvb76
 * 🤝 International cooperation frameworks and digital sovereignty in combating cross-border disinformation.  
 * 💰 The economic incentives driving misinformation and the business models of junk news operations.  
 * 📚 Curriculum development for digital literacy and critical thinking in education systems globally.  
-* ⚛️ The impact of quantum computing and advanced AI on the future landscape of disinformation.  
+* ⚛️ The impact of [⚛️ Quantum Computing](../topics/quantum-computing.md) and advanced AI on the future landscape of disinformation.  
 * 🌍 Comparative analysis of misinformation strategies in non-democratic versus democratic regimes.  
   
 ## ❓ Frequently Asked Questions (FAQ)  

@@ -4,8 +4,8 @@ aliases:
   - "💡🤖💰💥🏢📉 The Innovator's Dilemma: When New Technologies Cause Great Firms to Fail"
 title: "💡🤖💰💥🏢📉 The Innovator's Dilemma: When New Technologies Cause Great Firms to Fail"
 URL: https://bagrounds.org/books/the-innovators-dilemma
-Author: 
-tags: 
+Author:
+tags:
 affiliate link: https://amzn.to/443oyiI
 ---
 [Home](../index.md) > [Books](./index.md)  
@@ -64,7 +64,7 @@ affiliate link: https://amzn.to/443oyiI
 * **Best Tangentially Related Book:** "[Zero To One](./zero-to-one.md): Notes on Startups, or How to Build the Future" by Peter Thiel. This book explores how startups 🚀 can create entirely new markets, which is closely related to the concept of disruptive innovation.  
 * **Best Diametrically Opposed Book:** "[Good To Great](./good-to-great.md): Why Some Companies Make the Leap...And Others Don't" by Jim Collins. This book focuses on the importance of disciplined people, disciplined thought, and disciplined action in achieving sustained success, which contrasts with Christensen's emphasis on the limitations of "good management" in the face of disruption. ⚔️  
 * **Best Fiction Books Incorporating Related Ideas:**  
-    * "The Martian" by Andy Weir. This book illustrates how innovative problem-solving 👨‍🚀 and resourcefulness can lead to success in the face of extreme challenges, mirroring the adaptability required for disruptive innovation.  
+    * [👨‍🚀🔴✨ The Martian](./the-martian.md) by Andy Weir. This book illustrates how innovative problem-solving 👨‍🚀 and resourcefulness can lead to success in the face of extreme challenges, mirroring the adaptability required for disruptive innovation.  
     * *The Circle* by Dave Eggers – Explores the impact of technological innovation, surveillance, and disruption on society, focusing on a powerful tech company that shapes the future of communication and privacy.  
 * **Best More General Book:** "Innovation and Its Discontents: How Our Broken Addiction to Innovation Is Endangering Progress and What We Can Do About It" by Calestous Juma. This book takes a broader view of innovation, examining its historical context and societal impact. 🌍  
 * **Best More Specific Book:** "Seeing What's Next: Using the Theories of Innovation to Predict Industry Change" by Clayton M. Christensen, Scott D. Anthony, and Erik A. Roth. This book delves deeper into the practical application of disruptive innovation theory, providing tools and frameworks for predicting industry change. 🔮  

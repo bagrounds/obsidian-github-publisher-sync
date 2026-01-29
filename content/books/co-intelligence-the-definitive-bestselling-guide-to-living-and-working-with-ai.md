@@ -39,7 +39,7 @@ A guide to blend human ingenuity with AI's capabilities to thrive in our rapidly
 * 🧠 Neuro-symbolic AI and Hybrid Intelligence Architectures  
 * 🌱 The Long-term Societal Impact of AI on Human Cognition and Creativity  
 * 🏭 Specific Industry Case Studies of AI Transformation Beyond Generic Examples  
-* ⚛️ The Role of Quantum Computing in Future AI Development  
+* ⚛️ The Role of [⚛️ Quantum Computing](../topics/quantum-computing.md) in Future AI Development  
 * 🧘‍♀️ AI's Impact on Mental Health and Digital Well-being  
   
 ## ❓ Frequently Asked Questions (FAQ)  

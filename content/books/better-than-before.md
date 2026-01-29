@@ -4,8 +4,8 @@ aliases:
   - "📉➡️👍 Better Than Before: What I Learned About Making and Breaking Habits - to Sleep More, Quit Sugar, Procrastinate Less, and Generally Build a Happier Life"
 title: "📉➡️👍 Better Than Before: What I Learned About Making and Breaking Habits - to Sleep More, Quit Sugar, Procrastinate Less, and Generally Build a Happier Life"
 URL: https://bagrounds.org/books/better-than-before
-Author: 
-tags: 
+Author:
+tags:
 affiliate link: https://amzn.to/4556LsH
 ---
 [Home](../index.md) > [Books](./index.md)  
@@ -61,7 +61,7 @@ Gretchen Rubin's book provides a unique perspective by shifting the focus from g
 * **Best Alternate Book on the Same Topic:** "[Atomic Habits](./atomic-habits.md)" by James Clear. This book provides a more scientifically backed and detailed approach to habit formation. ⚛️  
 * **Best Tangentially Related Book:** "[Drive: The Surprising Truth About What Motivates Us](./drive-the-surprising-truth-about-what-motivates-us.md)" by Daniel H. Pink. This book explores the science of motivation, which is closely related to habit formation. 🚗  
 * **Best Diametrically Opposed Book:** "[The Power of Habit](./the-power-of-habit.md)" by Charles Duhigg. While also about habits, it focuses more on the neuroscience of habits and less on individual tendencies. 🧠  
-* **Best Fiction Book Incorporating Related Ideas:** "The Martian" by Andy Weir. This book illustrates how structured routines and problem-solving habits can lead to survival in extreme circumstances. 🚀  
+* **Best Fiction Book Incorporating Related Ideas:** "[👨‍🚀🔴✨ The Martian](./the-martian.md)" by Andy Weir. This book illustrates how structured routines and problem-solving habits can lead to survival in extreme circumstances. 🚀  
 * **Best More General Book:** "The Happiness Project" by Gretchen Rubin. This is a great starting point to learn more about Gretchen Rubin's work, and the foundations of happiness. 😊  
 * **Best More Specific Book:** "[Tiny Habits](./tiny-habits.md): The Small Changes That Change Everything" by BJ Fogg. This book provides a very specific methodology for habit formation. 🤏  
 * **Best More Accessible Book:** "The Little Book of Hygge: Danish Secrets to Happy Living" by Meik Wiking. This book offers a lighthearted and accessible approach to creating a happier life through simple habits and rituals. 🕯️  

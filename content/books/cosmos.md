@@ -42,7 +42,7 @@ A 🔭 profound, beautifully articulated journey through 14 billion years of cos
 * ⚛️ The Standard Model of particle physics and its current challenges.  
 * ⚫ Dark matter and dark energy, and their implications for cosmic evolution.  
 * 🪐 Exoplanetary science advancements and the search for biosignatures.  
-* 💻 Quantum computing and its potential to revolutionize scientific discovery.  
+* [⚛️ Quantum Computing](../topics/quantum-computing.md) and its potential to revolutionize scientific discovery.  
 * 🧠 Neuroscience of consciousness and the origin of intelligence.  
 * 🤖 The ethics of artificial intelligence and its future impact on humanity.  
 * 👽 Advanced concepts in astrobiology beyond simple life detection.  

@@ -51,7 +51,7 @@ affiliate link: https://amzn.to/49JB1vh
 * 🔗 Blockchain Technology and Decentralized Autonomous Organizations (DAOs)  
 * 🗣️ Generative AI and Large Language Models (LLMs)  
 * 🧪 Synthetic Biology and CRISPR Gene Editing  
-* ⚛️ Quantum Computing Implications for Complex Systems  
+* [⚛️ Quantum Computing](../topics/quantum-computing.md) Implications for Complex Systems  
 * 👯 Digital Twins and Mirror Worlds  
 * 🌐 The Internet of Things (IoT) and Edge Computing Architectures  
 * 🤖 Cybernetics 2.0 and Human-AI Symbiosis  

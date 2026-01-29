@@ -144,7 +144,7 @@ Linear systems theory evolved from the study of differential equations and elect
   * Topically Opposed: "Nonlinear Systems" by Hassan K. Khalil 🌀  
   * More General: "[Control Systems Engineering](../books/control-systems-engineering.md)" by Norman S. Nise 🕹️  
   * More Specific: "State-Space and Transfer-Function Methods in Dynamic Systems" by Dean K. Frederick 🗺️  
-  * Fictional: "The Martian" by Andy Weir (for the problem-solving and control aspects, even if it's not explicitly linear systems theory.) 🚀  
+  * Fictional: [👨‍🚀🔴✨ The Martian](../books/the-martian.md) by Andy Weir (for the problem-solving and control aspects, even if it's not explicitly linear systems theory.) 🚀  
   * Rigorous: "Applied Linear Algebra" by Peter J. Olver and Chehrzad Shakiban 🔢  
   * Accessible: "Feedback Systems: An Introduction for Scientists and Engineers" by Karl J. Åström and Richard M. Murray 🤖  
   

@@ -4,8 +4,8 @@ aliases:
   - 🔄📈🧩 Modeling of Dynamic Systems
 title: 🔄📈🧩 Modeling of Dynamic Systems
 URL: https://bagrounds.org/books/modeling-dynamic-systems
-Author: 
-tags: 
+Author:
+tags:
 affiliate link: https://amzn.to/4jAjXsS
 ---
 [Home](../index.md) > [Books](./index.md)  
@@ -61,7 +61,7 @@ This book offers a surprisingly practical and grounded approach to system identi
 * **Best Alternate Book on the Same Topic:** "System Identification: Theory For the User" by Lennart Ljung. This book is also written by Ljung and provides a deeper theoretical treatment.  
 * **Best Tangentially Related Book:** "Feedback Systems: An Introduction for Scientists and Engineers" by Karl J. Åström and Richard M. Murray. This book provides a comprehensive introduction to feedback control systems, which are closely related to dynamic system modeling.  
 * **Best Diametrically Opposed Book:** [⚫🦢🎲 The Black Swan: The Impact of the Highly Improbable](./the-black-swan-the-impact-of-the-highly-improbable.md) by Nassim Nicholas Taleb. While "Modeling Dynamic Systems" focuses on building models based on observed data, "Black Swan" emphasizes the limitations of such models in predicting rare and unpredictable events.  
-* **Best Fiction Book That Incorporates Related Ideas:** "The Martian" by Andy Weir. This book demonstrates the practical application of system modeling and control in a challenging environment. 🚀  
+* **Best Fiction Book That Incorporates Related Ideas:** "[👨‍🚀🔴✨ The Martian](./the-martian.md)" by Andy Weir. This book demonstrates the practical application of system modeling and control in a challenging environment. 🚀  
 * **A Book That Is More General, More Specific, or More Rigorous:**  
     * **More General:** "Nonlinear Systems" by Hassan K. Khalil. This book provides a broader overview of nonlinear systems theory. 🌌  
     * **More Specific:** "Subspace Methods for System Identification" by Tohru Katayama. This book focuses on a specific class of system identification techniques. 🎯  

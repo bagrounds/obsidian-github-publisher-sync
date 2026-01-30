@@ -13,6 +13,11 @@ affiliate link: https://amzn.to/4iGkZES
   
 💪 A practical, actionable approach to mastering self-control through short, daily exercises, emphasizing that discipline is a cultivable skill, not an innate trait.  
   
+## 📝🐒 Human Notes  
+- 🥱 uninspiring  
+- ☝️ moralizing  
+- 🧱 banal  
+  
 ## 🤖 AI Summary  
   
 ### Core Philosophy  

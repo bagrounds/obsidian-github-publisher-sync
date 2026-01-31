@@ -51,7 +51,7 @@ A: 🤓 The book is widely considered accessible due to its strong character voi
   
 ### ❤️ If You Loved This  
 * [👨‍🚀🔴✨ The Martian](./the-martian.md) by Andy Weir (Features a similar competence narrative with high-stakes survival)  
-* 🐜 *Children of Time* by Adrian Tchaikovsky (Explores themes of evolutionary biology and non-human civilization)  
+* [🕷️⏳ Children of Time](./children-of-time.md) by Adrian Tchaikovsky (Explores themes of evolutionary biology and non-human civilization)  
 * 🤖 *We Are Legion (We Are Bob)* by Dennis E. Taylor (Shares the lighthearted first-person narration of a cosmic mission)  
   
 ### ↔️ Similar But Different  

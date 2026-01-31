@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-01-29T22:43:48-08:00
+updated: 2026-01-30T19:18:34-08:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -13,7 +13,8 @@ updated: 2026-01-29T22:43:48-08:00
 ❔ What do 🫵 _you_ 🤔 think?  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (441)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (442)  
+- [2026-01-30](./reflections/2026-01-30.md)  
 - [2026-01-29 | ☄️ Hail 👨‍🚀 Martian 💻 Software 📚📺](./reflections/2026-01-29.md)  
 - [2026-01-28 | 💀 Cruel 👦 Harold ⚛️ And 🧑‍🚀 Quantum 👩‍🚀 Mary 📚](./reflections/2026-01-28.md)  
 - [2026-01-27 | 🕯️ The Quiet Orbit of Joy](./reflections/2026-01-27.md)  
@@ -23,24 +24,23 @@ updated: 2026-01-29T22:43:48-08:00
 - [2026-01-23 | 🧠 The Brain, the 🌠 Stars, and the 🇺🇸 State of the Nation](./reflections/2026-01-23.md)  
 - [2026-01-22 | ⚖️ Minnesota 🏛️ Politics 🧠 Boost 🌊 Irresistible ☄️ Mary 📜 Birth 📺 News 📚📺📰](./reflections/2026-01-22.md)  
 - [2026-01-21 | 💡 Useful 🗣️ Politics 🚀 Foundations 🏛️ Abolishing 👤 Powerless 🗽 Liberty 📄📺📚](./reflections/2026-01-21.md)  
-- [2026-01-20 | 🥀 Lolita 🏛️ Noem 💔 Hurts 🌟 All 📜 The 👶🏽 Kids 📚📺📰](./reflections/2026-01-20.md)  
   
   
 ## [🧰 Tools](./tools/index.md) (1)  
 - [🧮 Calculator](./tools/calculator.md)  
   
   
-## [📚 Books](./books/index.md) (902)  
+## [📚 Books](./books/index.md) (903)  
+- [🏗️🧱🌍 Foundation](./books/Foundation.md)  
+- [☄️🧑‍🚀🙏🌍 Project Hail Mary](./books/project-hail-mary.md)  
+- [🕷️⏳ Children of Time](./books/children-of-time.md)  
+- [💪🧠⏳ The Power of Self-Discipline: 5-Minute Exercises to Build Self-Control, Good Habits, and Keep Going When You Want to Give Up](./books/the-power-of-self-discipline-5-minute-exercises-to-build-self-control-good-habits-and-keep-going-when-you-want-to-give-up.md)  
 - [📉🧪🚀 The Lean Startup: How Today's Entrepreneurs Use Continuous Innovation to Create Radically Successful Businesses](./books/the-lean-startup.md)  
 - [💪📈 Willpower: Rediscovering the Greatest Human Strength](./books/willpower.md)  
 - [📉➡️👍 Better Than Before: What I Learned About Making and Breaking Habits - to Sleep More, Quit Sugar, Procrastinate Less, and Generally Build a Happier Life](./books/better-than-before.md)  
 - [⚙️📈🎯🤖 Control Systems Engineering](./books/control-systems-engineering.md)  
 - [🔄📈🧩 Modeling of Dynamic Systems](./books/modeling-dynamic-systems.md)  
 - [🧠🤔❓ Rationality: What It Is, Why It Seems Scarce, Why It Matters](./books/rationality.md)  
-- [💡🤖💰💥🏢📉 The Innovator's Dilemma: When New Technologies Cause Great Firms to Fail](./books/the-innovators-dilemma.md)  
-- [🐛➡️🦋 How to Change: The Science of Getting from Where You Are to Where You Want to Be](./books/how-to-change.md)  
-- [🤏♻️ Tiny Habits: The Small Changes That Change Everything](./books/tiny-habits.md)  
-- [🧭🍎 Foraging Theory](./books/foraging-theory.md)  
   
   
 ## [📺 Videos](./videos/index.md) (627)  

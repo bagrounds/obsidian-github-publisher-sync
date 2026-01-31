@@ -5,10 +5,10 @@ aliases:
 share: true
 URL: https://bagrounds.org/books
 backlinks: false
-updated: 2026-01-29T22:43:48-08:00
+updated: 2026-01-30T19:18:34-08:00
 ---
 [Home](../index.md)  
-# 📚 Books (902)  
+# 📚 Books (903)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [💻0️⃣ Source Code: My Beginnings](./source-code-my-beginnings.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)  
@@ -132,6 +132,7 @@ updated: 2026-01-29T22:43:48-08:00
 - [❓➡️⚙️ Causality: Models, Reasoning, and Inference](./causality.md)  
 - [🌪️💥🦋🆕 Chaos: Making a New Science](./chaos.md)  
 - [🕷️🕸️ Charlotte's Web](./charlottes-web.md)  
+- [🕷️⏳ Children of Time](./children-of-time.md)  
 - [🇲🇽🇺🇸 Cinco de Mayo: An American Tradition](./cinco-de-mayo-an-american-tradition.md)  
 - [🧼💾 Clean Code: A Handbook of Agile Software Craftsmanship](./clean-code.md)  
 - [✅💻 Code Complete](./code-complete.md)  

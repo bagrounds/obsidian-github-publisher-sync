@@ -13,6 +13,9 @@ affiliate link: https://amzn.to/49ODuEM
 # ☄️🧑‍🚀🙏🌍 Project Hail Mary  
 [🛒 Project Hail Mary. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/49ODuEM)  
   
+## 📝🐒 Human Notes  
+- ♥️💚💜 Love Love Love.  
+  
 ## 🤖 AI Summary  
 🧬 This propulsive space odyssey features a blend of hard science, witty first-person narrative, and a powerful theme of unlikely, cross-species cooperation in the face of planetary crisis.  
   

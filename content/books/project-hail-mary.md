@@ -55,7 +55,7 @@ A: 🤓 The book is widely considered accessible due to its strong character voi
 ### ❤️ If You Loved This  
 * [👨‍🚀🔴✨ The Martian](./the-martian.md) by Andy Weir (Features a similar competence narrative with high-stakes survival)  
 * [🕷️⏳ Children of Time](./children-of-time.md) by Adrian Tchaikovsky (Explores themes of evolutionary biology and non-human civilization)  
-* 🤖 *We Are Legion (We Are Bob)* by Dennis E. Taylor (Shares the lighthearted first-person narration of a cosmic mission)  
+* [🤖🤖🤖 We Are Legion (We Are Bob)](./we-are-legion-we-are-bob.md) by Dennis E. Taylor (Shares the lighthearted first-person narration of a cosmic mission)  
   
 ### ↔️ Similar But Different  
 * ⏳ *The Three-Body Problem* by Cixin Liu (Focuses on global-scale existential threat with a grander, more philosophical scope)  

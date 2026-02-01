@@ -5,10 +5,10 @@ aliases:
 share: true
 URL: https://bagrounds.org/books
 backlinks: false
-updated: 2026-01-31T17:26:47-08:00
+updated: 2026-02-01T14:16:40-08:00
 ---
 [Home](../index.md)  
-# 📚 Books (904)  
+# 📚 Books (905)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [💻0️⃣ Source Code: My Beginnings](./source-code-my-beginnings.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)  
@@ -879,6 +879,7 @@ updated: 2026-01-31T17:26:47-08:00
 - [⚔️🕊️ War and Peace](./war-and-peace.md)  
 - [⚔️💰 War Is a Racket](./war-is-a-racket.md)  
 - [📊📉🏛️ Weapons of Math Destruction: How Big Data Increases Inequality and Threatens Democracy](./weapons-of-math-destruction-how-big-data-increases-inequality-and-threatens-democracy.md)  
+- [🤖🤖🤖 We Are Legion (We Are Bob)](./we-are-legion-we-are-bob.md)  
 - [🇺🇸➡️🔨 West from Appomattox: The Reconstruction of America After the Civil War](./west-from-appomattox-the-reconstruction-of-america-after-the-civil-war.md)  
 - [🤕❤️ What if Symptoms Are Your Friend?: An Introduction to BodyMind Bridge and Your Self-Healing Mind](./what-if-symptoms-are-your-friend-an-introduction-to-bodymind-bridge-and-your-self-healing-mind.md)  
 - [🌡️✅🌎 What If We Get It Right?: Visions of Climate Futures](./what-if-we-get-it-right-visions-of-climate-futures.md)  

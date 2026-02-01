@@ -5,13 +5,13 @@ aliases:
 title: 🪞 Reflections
 URL: https://bagrounds.org/reflections
 backlinks: false
-updated: 2026-02-01T14:16:40-08:00
+updated: 2026-02-01T14:40:57-08:00
 ---
 [Home](../index.md)  
 # 🪞 Reflections (444)  
 - [2026-02-01](./2026-02-01.md)  
-- [2026-01-31](./2026-01-31.md)  
-- [2026-01-30](./2026-01-30.md)  
+- [2026-01-31 | ☄️ Project 👥 Many 📊 Insights 📚🪞](./2026-01-31.md)  
+- [2026-01-30 | 🛠️ Project 🕰️ Time 🧘 Discipline 📚](./2026-01-30.md)  
 - [2026-01-29 | ☄️ Hail 👨‍🚀 Martian 💻 Software 📚📺](./2026-01-29.md)  
 - [2026-01-28 | 💀 Cruel 👦 Harold ⚛️ And 🧑‍🚀 Quantum 👩‍🚀 Mary 📚](./2026-01-28.md)  
 - [2026-01-27 | 🕯️ The Quiet Orbit of Joy](./2026-01-27.md)  

@@ -54,7 +54,7 @@ A: 🤓 The Martian features significant strong language and technical complexit
 ### ❤️ If You Loved This  
   
 * [☄️🧑‍🚀🙏🌍 Project Hail Mary](./project-hail-mary.md) by Andy Weir  
-* 🌌 We Are Legion (We Are Bob) by Dennis E. Taylor  
+* [🤖🤖🤖 We Are Legion (We Are Bob)](./we-are-legion-we-are-bob.md) by Dennis E. Taylor  
   
 ### ↔️ Similar But Different  
   

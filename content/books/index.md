@@ -5,10 +5,10 @@ aliases:
 share: true
 URL: https://bagrounds.org/books
 backlinks: false
-updated: 2026-01-30T19:18:34-08:00
+updated: 2026-01-31T17:26:47-08:00
 ---
 [Home](../index.md)  
-# 📚 Books (903)  
+# 📚 Books (904)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [💻0️⃣ Source Code: My Beginnings](./source-code-my-beginnings.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)  
@@ -834,6 +834,7 @@ updated: 2026-01-30T19:18:34-08:00
 - [🪖🎨 The War of Art: Break Through the Blocks and Win Your Inner Creative Battles](./the-war-of-art.md)  
 - [🚫💰❤️ The Wealth Money Can't Buy: The 8 Hidden Habits to Live Your Richest Life](./the-wealth-money-cant-buy-the-8-hidden-habits-to-live-your-richest-life.md)  
 - [🕳️🧠👶🏽 The Whole-Brain Child: 12 Revolutionary Strategies to Nurture Your Child's Developing Mind](./the-whole-brain-child.md)  
+- [👥⚔️👑 The Will of the Many](./the-will-of-the-many.md)  
 - [🧘🏋️ The Willpower Instinct: How Self-Control Works, Why It Matters, and What You Can Do to Get More of It](./the-willpower-instinct.md)  
 - [🏆🤯💰 The Winner's Curse: Paradoxes and Anomalies of Economic Life](./the-winners-curse-paradoxes-and-anomalies-of-economic-life.md)  
 - [🇨🇳🌍 The World According to China](./the-world-according-to-china.md)  

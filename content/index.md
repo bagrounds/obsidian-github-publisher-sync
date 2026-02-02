@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-02-01T14:40:57-08:00
+updated: 2026-02-01T16:37:00-08:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -13,17 +13,17 @@ updated: 2026-02-01T14:40:57-08:00
 ❔ What do 🫵 _you_ 🤔 think?  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (444)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (445)  
+- [2026-02-02](./reflections/2026-02-02.md)  
 - [2026-02-01](./reflections/2026-02-01.md)  
 - [2026-01-31 | ☄️ Project 👥 Many 📊 Insights 📚🪞](./reflections/2026-01-31.md)  
 - [2026-01-30 | 🛠️ Project 🕰️ Time 🧘 Discipline 📚](./reflections/2026-01-30.md)  
 - [2026-01-29 | ☄️ Hail 👨‍🚀 Martian 💻 Software 📚📺](./reflections/2026-01-29.md)  
 - [2026-01-28 | 💀 Cruel 👦 Harold ⚛️ And 🧑‍🚀 Quantum 👩‍🚀 Mary 📚](./reflections/2026-01-28.md)  
 - [2026-01-27 | 🕯️ The Quiet Orbit of Joy](./reflections/2026-01-27.md)  
-- [2026-01-26 | 🧠 Science 🔮 Will 📉 Support ⏱️ Smart 🐝 Swarm ☄️ Project](./reflections/2026-01-26.md)  
+- [2026-01-26 | 🧠 Science 🔮 Will 📉 Support ⏱️ Smart 🐝 Swarm ☄️ Project 📺📚📰](./reflections/2026-01-26.md)  
 - [2026-01-25 | 🚀 Project 🏡 Backyard 🦋 Butterflies](./reflections/2026-01-25.md)  
 - [2026-01-24 | 🇺🇸 The 🧠 Thinking 🇯🇵 System 🧠 Teaches 🚨 Mayor ☄️ Mary 📜 Liberty 💥 Created ⚔️ Strategy](./reflections/2026-01-24.md)  
-- [2026-01-23 | 🧠 The Brain, the 🌠 Stars, and the 🇺🇸 State of the Nation](./reflections/2026-01-23.md)  
   
   
 ## [🧰 Tools](./tools/index.md) (1)  

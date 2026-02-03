@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-02-01T16:37:00-08:00
+updated: 2026-02-02T16:19:09-08:00
 ---
 [Home](../index.md)  
-# 📺 Videos (627)  
+# 📺 Videos (628)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
 - [❓💪🔬 12 Questions About Creatine with Stephen Cornish, PhD](./12-questions-about-creatine-w-stephen-cornish-phd.md)  
@@ -471,6 +471,7 @@ updated: 2026-02-01T16:37:00-08:00
 - [💰🤔⚖️ The Most Important Economic Debate of our Lifetime — ft. Justin Wolfers | Prof G Markets](./the-most-important-economic-debate-of-our-lifetime-ft-justin-wolfers-prof-g-markets.md)  
 - [The OLDEST websites EVER 👩‍💻](./the-oldest-websites-ever.md)  
 - [⏱️🔋✅ The one productivity system you need: time vs energy management (ep. 1)](./the-one-productivity-system-you-need-time-vs-energy-management-ep-1.md)  
+- [🤖🧠💡 The ONLY skill you need in the AI era](./the-only-skill-you-need-in-the-ai-era.md)  
 - [🤖📈🌟 The Only Trait for Success in the AI Era—How to Build It | Carnegie Mellon University Po-Shen Loh](./the-only-trait-for-success-in-the-ai-era-how-to-build-it-carnegie-mellon-university-po-shen-loh.md)  
 - [🔋🎯💯⚡ THE POWER OF FULL ENGAGEMENT by Jim Loehr and Tony Schwartz | Animated Core Message](./the-power-of-full-engagement-by-jim-loehr-and-tony-schwartz-animated-core-message.md)  
 - [🧠💰⚠️ The price you pay for being smart It's Been a Minute](./the-price-you-pay-for-being-smart-its-been-a-minute.md)  

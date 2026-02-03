@@ -8,7 +8,7 @@ backlinks: false
 updated: 2026-02-02T16:19:09-08:00
 ---
 [Home](../index.md)  
-# 📚 Books (905)  
+# 📚 Books (906)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [💻0️⃣ Source Code: My Beginnings](./source-code-my-beginnings.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)  
@@ -247,6 +247,7 @@ updated: 2026-02-02T16:19:09-08:00
 - [😊✅ Feel Good Productivity: How to Do More of What Matters to You](./feel-good-productivity-how-to-do-more-of-what-matters-to-you.md)  
 - [😊👍 Feeling Good: The New Mood Therapy](./feeling-good-the-new-mood-therapy.md)  
 - [🇺🇸⚔️💰 Fight Oligarchy](./fight-oligarchy.md)  
+- [🎲♾️ Finite and Infinite Games: A Vision of Life as Play and Possibility](./finite-and-infinite-games-a-vision-of-life-as-play-and-possibility.md)  
 - [🔥💣💥😡🤬 Fire and Fury: Inside the Trump White House](./fire-and-fury-inside-the-trump-white-house.md)  
 - [🔥⛈️ Fire Weather: A True Story from a Hotter World](./fire-weather.md)  
 - [🗺️❤️📐 Flatland: A Romance of Many Dimensions](./flatland-a-romance-of-many-dimensions.md)  

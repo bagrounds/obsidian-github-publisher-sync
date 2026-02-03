@@ -30,7 +30,8 @@ updated: 2026-02-02T16:19:09-08:00
 - [🧮 Calculator](./tools/calculator.md)  
   
   
-## [📚 Books](./books/index.md) (905)  
+## [📚 Books](./books/index.md) (906)  
+- [🎲♾️ Finite and Infinite Games: A Vision of Life as Play and Possibility](./books/finite-and-infinite-games-a-vision-of-life-as-play-and-possibility.md)  
 - [🤖⚙️ AI Agents in Action](./books/ai-agents-in-action.md)  
 - [👨‍🚀🔴✨ The Martian](./books/the-martian.md)  
 - [☄️🧑‍🚀🙏🌍 Project Hail Mary](./books/project-hail-mary.md)  
@@ -40,7 +41,6 @@ updated: 2026-02-02T16:19:09-08:00
 - [🕷️⏳ Children of Time](./books/children-of-time.md)  
 - [💪🧠⏳ The Power of Self-Discipline: 5-Minute Exercises to Build Self-Control, Good Habits, and Keep Going When You Want to Give Up](./books/the-power-of-self-discipline-5-minute-exercises-to-build-self-control-good-habits-and-keep-going-when-you-want-to-give-up.md)  
 - [📉🧪🚀 The Lean Startup: How Today's Entrepreneurs Use Continuous Innovation to Create Radically Successful Businesses](./books/the-lean-startup.md)  
-- [💪📈 Willpower: Rediscovering the Greatest Human Strength](./books/willpower.md)  
   
   
 ## [📺 Videos](./videos/index.md) (628)  

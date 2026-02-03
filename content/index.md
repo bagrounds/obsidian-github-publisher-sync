@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-02-01T16:37:00-08:00
+updated: 2026-02-02T16:19:09-08:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -43,7 +43,8 @@ updated: 2026-02-01T16:37:00-08:00
 - [💪📈 Willpower: Rediscovering the Greatest Human Strength](./books/willpower.md)  
   
   
-## [📺 Videos](./videos/index.md) (627)  
+## [📺 Videos](./videos/index.md) (628)  
+- [🤖🧠💡 The ONLY skill you need in the AI era](./videos/the-only-skill-you-need-in-the-ai-era.md)  
 - [🧠⚡️💻🚀 ADHD & Software Development: Real Practices That Work w/ Paige Watson | Agile Mentors Podcast](./videos/adhd-software-development-real-practices-that-work-w-paige-watson-agile-mentors-podcast.md)  
 - [❓🕵️‍♂️🇺🇸📉 What’s Happening to U.S. Intelligence Under the Second Trump Administration? | Senator Mark Warner](./videos/whats-happening-to-us-intelligence-under-the-second-trump-administration-senator-mark-warner.md)  
 - [👨‍💼🇺🇸📉🗣️ Tamara Keith and Amy Walter on Trump losing support over his immigration crackdown](./videos/tamara-keith-and-amy-walter-on-trump-losing-support-over-his-immigration-crackdown.md)  
@@ -53,7 +54,6 @@ updated: 2026-02-01T16:37:00-08:00
 - [🐛🐌🐞🌿🏡🦠 Managing Pests & Diseases in Your Backyard: Aphids, Blight, and Slugs - Oh My! Workshop](./videos/managing-pests-diseases-in-your-backyard-aphids-blight-and-slugs-oh-my-workshop.md)  
 - [🧠💡✨ This 1 Book ACTUALLY Teaches You to Think Like a Genius](./videos/this-1-book-actually-teaches-you-to-think-like-a-genius.md)  
 - [🚨🗣️🔥🗳️ Full Briefing: Mayor Frey Addresses Outrage Over ICE Shooting in Minneapolis | DRM News | AC1F](./videos/full-briefing-mayor-frey-addresses-outrage-over-ice-shooting-in-minneapolis-drm-news-ac1f.md)  
-- [🇺🇸🔪💀🅰️ The Killing of Alex Pretti](./videos/the-killing-of-alex-pretti.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (88)  

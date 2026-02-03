@@ -67,7 +67,7 @@ affiliate link: https://amzn.to/3ZcLiK1
 ### ➕ Similar Books  
 * 💪 A Radical Guide for Women with ADHD by Sari Solden & Michelle Frank: Focuses on self-acceptance and strategies for women with ADHD, addressing self-doubt and burnout.  
 * 💡 You Mean I'm Not Lazy, Stupid or Crazy?! The Classic Self-Help Book for Adults with Attention Deficit Disorder by Kate Kelly & Peggy Ramundo: A foundational resource offering validation and practical advice for adults with ADHD.  
-* 🧠 Your Brain's Not Broken: Strategies for Navigating Your Emotions and Life with ADHD by Dr. Tamara Rosier: Offers tools for managing frustration, rejection sensitivity, and impulsivity.  
+* [🧠🧭⚡ Your Brain's Not Broken: Strategies for Navigating Your Emotions and Life with ADHD](./your-brains-not-broken-strategies-for-navigating-your-emotions-and-life-with-adhd.md) by Dr. Tamara Rosier: Offers tools for managing frustration, rejection sensitivity, and impulsivity.  
   
 ### ↔️ Contrasting Books  
 * [🏎️🦋🐿️✨ Driven to Distraction: Recognizing and Coping with Attention Deficit Disorder from Childhood Through Adulthood](./driven-to-distraction.md) by Edward M. Hallowell, M.D., and John J. Ratey, M.D.: A comprehensive, more clinical overview of ADHD, its varied forms, diagnosis, and treatment options.  

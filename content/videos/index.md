@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-02-02T18:33:24-08:00
+updated: 2026-02-03T12:10:27-08:00
 ---
 [Home](../index.md)  
-# 📺 Videos (629)  
+# 📺 Videos (630)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
 - [❓💪🔬 12 Questions About Creatine with Stephen Cornish, PhD](./12-questions-about-creatine-w-stephen-cornish-phd.md)  
@@ -169,6 +169,7 @@ updated: 2026-02-02T18:33:24-08:00
 - [🏛️🇺🇸⚖️💔 Former Justice Anthony Kennedy on political division and the state of the Supreme Court](./former-justice-anthony-kennedy-on-political-division-and-the-state-of-the-supreme-court.md)  
 - [✊📢✅ Forms of Resistance and Reasons to Believe It’s Working | Explainer](./forms-of-resistance-and-reasons-to-believe-its-working-explainer.md)  
 - [🧠💡🧮🧠 Forough Arabshahi: Neuro-Symbolic Learning Algorithms for Automated Reasoning](./forough-arabshahi-neuro-symbolic-learning-algorithms-for-automated-reasoning.md)  
+- [🧠💡🚀✨ From Distractibility to Creativity with Dr. Ned Hallowell: A Favorite Replay Episode](./from-distractibility-to-creativity-with-dr-ned-hallowell-a-favorite-replay-episode.md)  
 - [⛺➡️🏡🏙️🏠💖 From Encampments to Homes: How Dallas Is Solving Homelessness](./from-encampments-to-homes-how-dallas-is-solving-homelessness.md)  
 - [FTC commissioner fired by Trump says move threatens agency designed to protect consumers](./ftc-commissioner-fired-by-trump-says-move-threatens-agency-designed-to-protect-consumers.md)  
 - [🚨🗣️🔥🗳️ Full Briefing: Mayor Frey Addresses Outrage Over ICE Shooting in Minneapolis | DRM News | AC1F](./full-briefing-mayor-frey-addresses-outrage-over-ice-shooting-in-minneapolis-drm-news-ac1f.md)  

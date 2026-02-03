@@ -23,6 +23,7 @@ export default ((opts?: Options) => {
             </li>
           ))}
         </ul>
+        <p>© {year} Bryan Grounds</p>
       </footer>
     )
   }

@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-02-02T18:33:24-08:00
+updated: 2026-02-03T12:10:27-08:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -13,9 +13,10 @@ updated: 2026-02-02T18:33:24-08:00
 ❔ What do 🫵 _you_ 🤔 think?  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (445)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (446)  
+- [2026-02-03](./reflections/2026-02-03.md)  
 - [2026-02-02](./reflections/2026-02-02.md)  
-- [2026-02-01](./reflections/2026-02-01.md)  
+- [2026-02-01 | ✨ Bob ✍️ Will 📚](./reflections/2026-02-01.md)  
 - [2026-01-31 | ☄️ Project 👥 Many 📊 Insights 📚🪞](./reflections/2026-01-31.md)  
 - [2026-01-30 | 🛠️ Project 🕰️ Time 🧘 Discipline 📚](./reflections/2026-01-30.md)  
 - [2026-01-29 | ☄️ Hail 👨‍🚀 Martian 💻 Software 📚📺](./reflections/2026-01-29.md)  
@@ -23,14 +24,15 @@ updated: 2026-02-02T18:33:24-08:00
 - [2026-01-27 | 🕯️ The Quiet Orbit of Joy](./reflections/2026-01-27.md)  
 - [2026-01-26 | 🧠 Science 🔮 Will 📉 Support ⏱️ Smart 🐝 Swarm ☄️ Project 📺📚📰](./reflections/2026-01-26.md)  
 - [2026-01-25 | 🚀 Project 🏡 Backyard 🦋 Butterflies](./reflections/2026-01-25.md)  
-- [2026-01-24 | 🇺🇸 The 🧠 Thinking 🇯🇵 System 🧠 Teaches 🚨 Mayor ☄️ Mary 📜 Liberty 💥 Created ⚔️ Strategy](./reflections/2026-01-24.md)  
   
   
 ## [🧰 Tools](./tools/index.md) (1)  
 - [🧮 Calculator](./tools/calculator.md)  
   
   
-## [📚 Books](./books/index.md) (906)  
+## [📚 Books](./books/index.md) (907)  
+- [😳🧠🤝 Dirty Laundry: Why Adults with ADHD Are So Ashamed and What We Can Do to Help](./books/dirty-laundry-why-adults-with-adhd-are-so-ashamed-and-what-we-can-do-to-help.md)  
+- [🧠🧭⚡ Your Brain's Not Broken: Strategies for Navigating Your Emotions and Life with ADHD](./books/your-brains-not-broken-strategies-for-navigating-your-emotions-and-life-with-adhd.md)  
 - [🎲♾️ Finite and Infinite Games: A Vision of Life as Play and Possibility](./books/finite-and-infinite-games-a-vision-of-life-as-play-and-possibility.md)  
 - [🤖⚙️ AI Agents in Action](./books/ai-agents-in-action.md)  
 - [👨‍🚀🔴✨ The Martian](./books/the-martian.md)  
@@ -39,11 +41,10 @@ updated: 2026-02-02T18:33:24-08:00
 - [👥⚔️👑 The Will of the Many](./books/the-will-of-the-many.md)  
 - [🏗️🧱🌍 Foundation](./books/Foundation.md)  
 - [🕷️⏳ Children of Time](./books/children-of-time.md)  
-- [💪🧠⏳ The Power of Self-Discipline: 5-Minute Exercises to Build Self-Control, Good Habits, and Keep Going When You Want to Give Up](./books/the-power-of-self-discipline-5-minute-exercises-to-build-self-control-good-habits-and-keep-going-when-you-want-to-give-up.md)  
-- [📉🧪🚀 The Lean Startup: How Today's Entrepreneurs Use Continuous Innovation to Create Radically Successful Businesses](./books/the-lean-startup.md)  
   
   
-## [📺 Videos](./videos/index.md) (629)  
+## [📺 Videos](./videos/index.md) (630)  
+- [🧠💡🚀✨ From Distractibility to Creativity with Dr. Ned Hallowell: A Favorite Replay Episode](./videos/from-distractibility-to-creativity-with-dr-ned-hallowell-a-favorite-replay-episode.md)  
 - [👑〰️📈 Appearance: Evil Dictator Pulling Strings | Reality: Emergent Behavior of System](./videos/appearance-evil-dictator-pulling-strings-reality-emergent-behavior-of-system.md)  
 - [🤖🧠💡 The ONLY skill you need in the AI era](./videos/the-only-skill-you-need-in-the-ai-era.md)  
 - [🧠⚡️💻🚀 ADHD & Software Development: Real Practices That Work w/ Paige Watson | Agile Mentors Podcast](./videos/adhd-software-development-real-practices-that-work-w-paige-watson-agile-mentors-podcast.md)  
@@ -53,7 +54,6 @@ updated: 2026-02-02T18:33:24-08:00
 - [🤖🗣️🔮✨ AI Talks | Gen AI 2026: What Will Shape the Future](./videos/ai-talks-gen-ai-2026-what-will-shape-the-future.md)  
 - [⏱️🧠💥🤖 Give Me 18 Minutes and I’ll Make you Dangerously Smart (with AI)](./videos/give-me-18-minutes-and-ill-make-you-dangerously-smart-with-ai.md)  
 - [🐛🐌🐞🌿🏡🦠 Managing Pests & Diseases in Your Backyard: Aphids, Blight, and Slugs - Oh My! Workshop](./videos/managing-pests-diseases-in-your-backyard-aphids-blight-and-slugs-oh-my-workshop.md)  
-- [🧠💡✨ This 1 Book ACTUALLY Teaches You to Think Like a Genius](./videos/this-1-book-actually-teaches-you-to-think-like-a-genius.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (88)  

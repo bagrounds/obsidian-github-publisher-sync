@@ -5,10 +5,10 @@ aliases:
 share: true
 URL: https://bagrounds.org/books
 backlinks: false
-updated: 2026-02-03T12:10:27-08:00
+updated: 2026-02-03T16:07:16-08:00
 ---
 [Home](../index.md)  
-# 📚 Books (907)  
+# 📚 Books (908)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [💻0️⃣ Source Code: My Beginnings](./source-code-my-beginnings.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)  
@@ -504,6 +504,7 @@ updated: 2026-02-03T12:10:27-08:00
 - [📢💡 Public Broadcasting and the Public Interest](./public-broadcasting-and-the-public-interest.md)  
 - [ 🎯🎭🔗🧭🏆 Purposeful Performance: The Secret Mix of Connecting, Leading, and Succeeding](./purposeful-performance.md)  
 - [⚙️🔗 Quality Software Management: Systems Thinking](./quality-software-management-systems-thinking.md)  
+- [⚛️💻💡 Quantum Computing For Dummies](./quantum-computing-for-dummies.md)  
 - [⚛️ℹ️👶 Quantum Information for Babies](./quantum-information-for-babies.md)  
 - [⚛️👶 Quantum Physics for Babies](./quantum-physics-for-babies.md)  
 - [😡🤬 Rage](./rage.md)  

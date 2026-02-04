@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-02-03T12:10:27-08:00
+updated: 2026-02-03T16:07:16-08:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -30,7 +30,8 @@ updated: 2026-02-03T12:10:27-08:00
 - [🧮 Calculator](./tools/calculator.md)  
   
   
-## [📚 Books](./books/index.md) (907)  
+## [📚 Books](./books/index.md) (908)  
+- [⚛️💻💡 Quantum Computing For Dummies](./books/quantum-computing-for-dummies.md)  
 - [😳🧠🤝 Dirty Laundry: Why Adults with ADHD Are So Ashamed and What We Can Do to Help](./books/dirty-laundry-why-adults-with-adhd-are-so-ashamed-and-what-we-can-do-to-help.md)  
 - [🧠🧭⚡ Your Brain's Not Broken: Strategies for Navigating Your Emotions and Life with ADHD](./books/your-brains-not-broken-strategies-for-navigating-your-emotions-and-life-with-adhd.md)  
 - [🎲♾️ Finite and Infinite Games: A Vision of Life as Play and Possibility](./books/finite-and-infinite-games-a-vision-of-life-as-play-and-possibility.md)  
@@ -40,7 +41,6 @@ updated: 2026-02-03T12:10:27-08:00
 - [🤖🤖🤖 We Are Legion (We Are Bob)](./books/we-are-legion-we-are-bob.md)  
 - [👥⚔️👑 The Will of the Many](./books/the-will-of-the-many.md)  
 - [🏗️🧱🌍 Foundation](./books/Foundation.md)  
-- [🕷️⏳ Children of Time](./books/children-of-time.md)  
   
   
 ## [📺 Videos](./videos/index.md) (630)  
@@ -64,12 +64,12 @@ updated: 2026-02-03T12:10:27-08:00
 - [🇺🇸🗣️💡🗓️ A Presidential Platform for Americans 2028](./topics/a-presidential-platform-for-americans-2028.md)  
   
   
-## [📄  Articles](./articles/index.md) (76)  
+## [📄  Articles](./articles/index.md) (77)  
+- [🤖🧠📈🗣️🧰 Towards a science of scaling agent systems: When and why agent systems work](./articles/towards-a-science-of-scaling-agent-systems-when-and-why-agent-systems-work.md)  
 - [😴💰🏛️🤑👴🇸🇪 ‘We got lazy and complacent’: Swedish pensioners explain how abolishing the wealth tax changed their country](./articles/we-got-lazy-and-complacent-swedish-pensioners-explain-how-abolishing-the-wealth-tax-changed-their-country.md)  
 - [🤖👨‍💻📈⏳ Learnings from two years of using AI tools for software engineering](./articles/learnings-from-two-years-of-using-ai-tools-for-software-engineering.md)  
 - [🤖⚙️🔄🗣️ Agentic Context Engineering: Evolving Contexts for Self Improving Language Models](./articles/agentic-context-engineering-evolving-contexts-for-self-improving-language-models.md)  
 - [🤖♾️🗂️ Scaling Long Horizon LLM Agent via Context Folding](./articles/scaling-long-horizon-llm-agent-via-context-folding.md)  
-- [🤖🧠📈⚡ Code execution with MCP: Building more efficient agents](./articles/code-execution-with-mcp-building-more-efficient-agents.md)  
   
   
 ## [🤖💬 Bot Chats](./bot-chats/index.md) (47)  

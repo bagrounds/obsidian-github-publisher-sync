@@ -80,7 +80,7 @@ Melanie Mitchell is a highly respected computer scientist and complexity researc
     * [🧬🎭👁️ The Case Against Reality: Why Evolution Hid the Truth from Our Eyes](./the-case-against-reality-why-evolution-hid-the-truth-from-our-eyes.md) by Donald D. Hoffman. 👁️‍🗨️  
     * [⚫🦢🎲 The Black Swan: The Impact of the Highly Improbable](./the-black-swan-the-impact-of-the-highly-improbable.md) by Nassim Nicholas Taleb – Challenges the predictability of systems and emphasizes rare, disruptive events over emergent order.  
 * **Best Fiction Books Incorporating Related Ideas:**  
-    * "The Three-Body Problem" by Liu Cixin. 🌌  
+    * [🌌3️⃣⚛️ The Three-Body Problem](./the-three-body-problem.md) by Liu Cixin. 🌌  
     * [❄️💻💥 Snow Crash](./snow-crash.md) by Neal Stephenson – A cyberpunk novel where the interplay of technology, culture, and individuals mirrors complex adaptive systems.  
 * **Best More General Book:** [📜🌍⏳ Sapiens: A Brief History of Humankind](./sapiens-a-brief-history-of-humankind.md) by Yuval Noah Harari. 🧑‍🤝‍🧑  
 * **Best More Specific Book:** "Networks: An Introduction" by Mark Newman. 🕸️  

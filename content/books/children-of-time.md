@@ -74,7 +74,7 @@ A: 🤓 The book features detailed descriptions of multi-legged creatures, which
 ### 🔗 Related  
 * 🌌 **Children of Ruin** by Adrian Tchaikovsky: The direct sequel, expanding the universe with new alien species.  
 * 🌿 **Semiosis** by Sue Burke: First contact and co-evolution with sentient plants on an alien planet.  
-* ⏳ **Remembrance of Earth's Past (The Three-Body Problem series)** by Cixin Liu: Epic scope, cosmic sociology, and humanity's desperate struggle against a superior alien civilization.  
+* ⏳ **Remembrance of Earth's Past - [🌌3️⃣⚛️ The Three-Body Problem](./the-three-body-problem.md) by Cixin Liu: Epic scope, cosmic sociology, and humanity's desperate struggle against a superior alien civilization.  
   
 ## 🫵 What Do You Think?  
 * 🧠 Does the idea of a non-human civilization reaching intelligence excite you or unsettle you?  

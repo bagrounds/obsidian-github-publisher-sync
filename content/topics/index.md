@@ -5,7 +5,7 @@ aliases:
 title: 🌌 Topics
 URL: https://bagrounds.org/topics
 backlinks: false
-updated: 2026-02-05T14:30:05-08:00
+updated: 2026-02-05T14:41:35-08:00
 ---
 [Home](../index.md)  
 # 🌌 Topics (88)  
@@ -77,7 +77,7 @@ updated: 2026-02-05T14:30:05-08:00
 - [Rules](./rules.md)  
 - [Science](./science.md)  
 - [🧠🤖🗣️💡 Self-Aware Learning Chatbot](./self-aware-learning-chatbot.md)  
-- [Self-Organization](./self-organization.md)  
+- [🧩🔄🧠 Self-Organization](./self-organization.md)  
 - [Social Sciences](./social-sciences.md)  
 - [💻⚙️💡💾 Software Development and Coding](./software-development-and-coding.md)  
 - [💻⚙️🧩🏗️ Software Engineering](./software-engineering.md)  

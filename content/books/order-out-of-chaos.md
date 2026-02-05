@@ -4,8 +4,8 @@ aliases:
   - "🌪️✨🕰️ Order Out of Chaos: Man's New Dialogue with Nature"
 title: "🌪️✨🕰️ Order Out of Chaos: Man's New Dialogue with Nature"
 URL: https://bagrounds.org/books/order-out-of-chaos
-Author: 
-tags: 
+Author:
+tags:
 affiliate link: https://amzn.to/4mNJNN0
 ---
 [Home](../index.md) > [Books](./index.md)  
@@ -58,7 +58,7 @@ affiliate link: https://amzn.to/4mNJNN0
 * **Best Alternate Book on the Same Topic:** [🌐🧭❓🔍🗺️ Complexity: A Guided Tour](./complexity.md) by Melanie Mitchell. 🗺️  
 * **Best Tangentially Related Book:** [🌐🔗🧠📖 Thinking in Systems: A Primer](./thinking-in-systems.md) by Donella H. Meadows. ⚙️  
 * **Best Diametrically Opposed Book:** "The Fabric of Reality" by David Deutsch. 🧱  
-* **Best Fiction Book Incorporating Related Ideas:** "The Three-Body Problem" by Liu Cixin. 👽  
+* **Best Fiction Book Incorporating Related Ideas:** [🌌3️⃣⚛️ The Three-Body Problem](./the-three-body-problem.md) by Liu Cixin. 👽  
 * **Best More General Book:** [📜🌍⏳ Sapiens: A Brief History of Humankind](./sapiens-a-brief-history-of-humankind.md) by Yuval Noah Harari. 🧑‍🤝‍🧑  
 * **Best More Specific Book:** "Non-Equilibrium Thermodynamics and Dissipative Structures" by I. Prigogine. 🔬  
 * **Best More Rigorous Book:** [🦋🌀💥🤖 Nonlinear Dynamics and Chaos: With Applications to Physics, Biology, Chemistry, and Engineering](./nonlinear-dynamics-and-chaos.md) by Steven H. Strogatz. 📈  

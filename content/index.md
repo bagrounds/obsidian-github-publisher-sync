@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-02-03T16:07:16-08:00
+updated: 2026-02-04T16:34:56-08:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -13,9 +13,10 @@ updated: 2026-02-03T16:07:16-08:00
 ❔ What do 🫵 _you_ 🤔 think?  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (446)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (447)  
+- [2026-02-04](./reflections/2026-02-04.md)  
 - [2026-02-03](./reflections/2026-02-03.md)  
-- [2026-02-02](./reflections/2026-02-02.md)  
+- [2026-02-02 | 👥 Many 👁️ Reality 🎲 Games 🎯 Need 🗽 Liberty 📚📺](./reflections/2026-02-02.md)  
 - [2026-02-01 | ✨ Bob ✍️ Will 📚](./reflections/2026-02-01.md)  
 - [2026-01-31 | ☄️ Project 👥 Many 📊 Insights 📚🪞](./reflections/2026-01-31.md)  
 - [2026-01-30 | 🛠️ Project 🕰️ Time 🧘 Discipline 📚](./reflections/2026-01-30.md)  
@@ -23,7 +24,6 @@ updated: 2026-02-03T16:07:16-08:00
 - [2026-01-28 | 💀 Cruel 👦 Harold ⚛️ And 🧑‍🚀 Quantum 👩‍🚀 Mary 📚](./reflections/2026-01-28.md)  
 - [2026-01-27 | 🕯️ The Quiet Orbit of Joy](./reflections/2026-01-27.md)  
 - [2026-01-26 | 🧠 Science 🔮 Will 📉 Support ⏱️ Smart 🐝 Swarm ☄️ Project 📺📚📰](./reflections/2026-01-26.md)  
-- [2026-01-25 | 🚀 Project 🏡 Backyard 🦋 Butterflies](./reflections/2026-01-25.md)  
   
   
 ## [🧰 Tools](./tools/index.md) (1)  
@@ -43,7 +43,8 @@ updated: 2026-02-03T16:07:16-08:00
 - [🏗️🧱🌍 Foundation](./books/Foundation.md)  
   
   
-## [📺 Videos](./videos/index.md) (630)  
+## [📺 Videos](./videos/index.md) (631)  
+- [🤖⏱️🧠👨‍💻 OpenClaw's Creator Uses AI to Run His Life in 40 Minutes | Peter Steinberger](./videos/how-openclaws-creator-uses-ai-to-run-his-life-in-40-minutes-peter-steinberger.md)  
 - [🧠💡🚀✨ From Distractibility to Creativity with Dr. Ned Hallowell: A Favorite Replay Episode](./videos/from-distractibility-to-creativity-with-dr-ned-hallowell-a-favorite-replay-episode.md)  
 - [👑〰️📈 Appearance: Evil Dictator Pulling Strings | Reality: Emergent Behavior of System](./videos/appearance-evil-dictator-pulling-strings-reality-emergent-behavior-of-system.md)  
 - [🤖🧠💡 The ONLY skill you need in the AI era](./videos/the-only-skill-you-need-in-the-ai-era.md)  
@@ -53,7 +54,6 @@ updated: 2026-02-03T16:07:16-08:00
 - [🧠💡📚🦅 Science & Tools of Learning & Memory | Dr. David Eagleman](./videos/science-tools-of-learning-memory-dr-david-eagleman.md)  
 - [🤖🗣️🔮✨ AI Talks | Gen AI 2026: What Will Shape the Future](./videos/ai-talks-gen-ai-2026-what-will-shape-the-future.md)  
 - [⏱️🧠💥🤖 Give Me 18 Minutes and I’ll Make you Dangerously Smart (with AI)](./videos/give-me-18-minutes-and-ill-make-you-dangerously-smart-with-ai.md)  
-- [🐛🐌🐞🌿🏡🦠 Managing Pests & Diseases in Your Backyard: Aphids, Blight, and Slugs - Oh My! Workshop](./videos/managing-pests-diseases-in-your-backyard-aphids-blight-and-slugs-oh-my-workshop.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (88)  

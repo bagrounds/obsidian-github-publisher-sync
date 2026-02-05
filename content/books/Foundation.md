@@ -46,11 +46,11 @@ A: 🤓 The central conflicts are largely resolved through intellectual, diploma
 ### ❤️ If You Loved This  
 * [🏜️🐛 Dune](./dune.md) by Frank Herbert (For grand scale, complex politics, and a focus on destiny)  
 * 🚀 Hyperion by Dan Simmons (For episodic storytelling and blending genres in a vast future)  
-* 💫 The Three-Body Problem by Liu Cixin (For big ideas and a massive, universe-scale scope)  
+* [🌌3️⃣⚛️ The Three-Body Problem](./the-three-body-problem.md) by Liu Cixin (For big ideas and a massive, universe-scale scope)  
   
 ### ↔️ Similar But Different  
 * 👮 The Caves of Steel by Isaac Asimov (For a blend of his scientific mind with a detective mystery structure)  
-* 🕰️ Children of Time by Adrian Tchaikovsky (For a long-term look at evolution and civilization building)  
+* [🕷️⏳ Children of Time](./children-of-time.md) by Adrian Tchaikovsky (For a long-term look at evolution and civilization building)  
 * 🌍 A Memory Called Empire by Arkady Martine (For political intrigue within a massive, complex empire)  
   
 ## 🫵 What Do You Think?  

@@ -58,7 +58,7 @@ A: 🤓 The book is widely considered accessible due to its strong character voi
 * [🤖🤖🤖 We Are Legion (We Are Bob)](./we-are-legion-we-are-bob.md) by Dennis E. Taylor (Shares the lighthearted first-person narration of a cosmic mission)  
   
 ### ↔️ Similar But Different  
-* ⏳ *The Three-Body Problem* by Cixin Liu (Focuses on global-scale existential threat with a grander, more philosophical scope)  
+* [🌌3️⃣⚛️ The Three-Body Problem](./the-three-body-problem.md) by Cixin Liu (Focuses on global-scale existential threat with a grander, more philosophical scope)  
 * 🗺️ *Dark Matter* by Blake Crouch (A fast-paced, contemporary thriller exploring complex scientific ideas like the multiverse)  
 * 🛰️ *Gideon the Ninth* by Tamsyn Muir (Features a unique character voice and space setting, but with a tone leaning toward dark fantasy and mystery)  
   

@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-02-05T14:30:05-08:00
+updated: 2026-02-05T14:41:35-08:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -31,16 +31,16 @@ updated: 2026-02-05T14:30:05-08:00
   
   
 ## [📚 Books](./books/index.md) (909)  
+- [💥🌀➡️⏳⚖️🕰️ ️ Sync: How Order Emerges From Chaos In The Universe, Nature, And Daily Life](./books/sync.md)  
+- [🌪️✨🕰️ Order Out of Chaos: Man's New Dialogue with Nature](./books/order-out-of-chaos.md)  
+- [🌐🧭❓🔍🗺️ Complexity: A Guided Tour](./books/complexity.md)  
+- [🕷️⏳ Children of Time](./books/children-of-time.md)  
+- [🏗️🧱🌍 Foundation](./books/Foundation.md)  
 - [☄️🧑‍🚀🙏🌍 Project Hail Mary](./books/project-hail-mary.md)  
 - [🌌3️⃣⚛️ The Three-Body Problem](./books/the-three-body-problem.md)  
 - [⚛️💻💡 Quantum Computing For Dummies](./books/quantum-computing-for-dummies.md)  
 - [😳🧠🤝 Dirty Laundry: Why Adults with ADHD Are So Ashamed and What We Can Do to Help](./books/dirty-laundry-why-adults-with-adhd-are-so-ashamed-and-what-we-can-do-to-help.md)  
 - [🧠🧭⚡ Your Brain's Not Broken: Strategies for Navigating Your Emotions and Life with ADHD](./books/your-brains-not-broken-strategies-for-navigating-your-emotions-and-life-with-adhd.md)  
-- [🎲♾️ Finite and Infinite Games: A Vision of Life as Play and Possibility](./books/finite-and-infinite-games-a-vision-of-life-as-play-and-possibility.md)  
-- [🤖⚙️ AI Agents in Action](./books/ai-agents-in-action.md)  
-- [👨‍🚀🔴✨ The Martian](./books/the-martian.md)  
-- [🤖🤖🤖 We Are Legion (We Are Bob)](./books/we-are-legion-we-are-bob.md)  
-- [👥⚔️👑 The Will of the Many](./books/the-will-of-the-many.md)  
   
   
 ## [📺 Videos](./videos/index.md) (631)  
@@ -57,11 +57,11 @@ updated: 2026-02-05T14:30:05-08:00
   
   
 ## [🌌 Topics](./topics/index.md) (88)  
+- [🧩🔄🧠 Self-Organization](./topics/self-organization.md)  
 - [📏🔮〰️ Kalman Filter](./topics/kalman-filter.md)  
 - [➕➖🔢📈📚 Linear Systems Theory](./topics/linear-systems-theory.md)  
 - [⭐✨🌟💫 The Star](./topics/the-star.md)  
 - [✍🏽🤖 Blog Bot](./topics/blog-bot.md)  
-- [🇺🇸🗣️💡🗓️ A Presidential Platform for Americans 2028](./topics/a-presidential-platform-for-americans-2028.md)  
   
   
 ## [📄  Articles](./articles/index.md) (77)  

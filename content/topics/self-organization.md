@@ -1,12 +1,12 @@
 ---
 share: true
 aliases:
-  - Self-Organization
-title: Self-Organization
+  - 🧩🔄🧠 Self-Organization
+title: 🧩🔄🧠 Self-Organization
 URL: https://bagrounds.org/topics/self-organization
 ---
 [Home](../index.md) > [Topics](./index.md)  
-# Self-Organization  
+# 🧩🔄🧠 Self-Organization  
 ## 🤖 AI Summary  
 ### Self-Organization 🌟  
   
@@ -128,12 +128,12 @@ The concept of self-organization gained prominence in the mid-20th century with 
 📖 **Book Recommendations:**  
   
 * **Topical:** "Self-Organization in Biological Systems" by Scott Camazine 📚  
-* **Tangentially related:** "[Complexity](../books/complexity.md): A Guided Tour" by Melanie Mitchell 📚  
+* **Tangentially related:** [🌐🧭❓🔍🗺️ Complexity: A Guided Tour](../books/complexity.md) by Melanie Mitchell 📚  
 * **Topically opposed:** "The Control Revolution: Technological and Economic Origins of the Information Society" by James R. Beniger 📚  
 * **More general:** "Systems Thinking" by Donella H. Meadows 📚  
 * **More specific:** "Swarm Intelligence" by James Kennedy 📚  
-* **Fictional:** "The Three-Body Problem" by Liu Cixin 📚  
-* **Rigorous:** "[Order Out of Chaos](../books/order-out-of-chaos.md)" by Ilya Prigogine and Isabelle Stengers 📚  
+* **Fictional:** [🌌3️⃣⚛️ The Three-Body Problem](../books/the-three-body-problem.md) by Liu Cixin 📚  
+* **Rigorous:** [🌪️✨🕰️ Order Out of Chaos: Man's New Dialogue with Nature](../books/order-out-of-chaos.md)by Ilya Prigogine and Isabelle Stengers 📚  
 * **Accessible:** "Emergence: The Connected Lives of Ants, Brains, Cities, and Software" by Steven Johnson 📚  
   
 📺 **Links To Relevant YouTube Channels Or Videos:**  

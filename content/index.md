@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-02-04T16:34:56-08:00
+updated: 2026-02-05T14:30:05-08:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -13,7 +13,8 @@ updated: 2026-02-04T16:34:56-08:00
 ❔ What do 🫵 _you_ 🤔 think?  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (447)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (448)  
+- [2026-02-05](./reflections/2026-02-05.md)  
 - [2026-02-04](./reflections/2026-02-04.md)  
 - [2026-02-03](./reflections/2026-02-03.md)  
 - [2026-02-02 | 👥 Many 👁️ Reality 🎲 Games 🎯 Need 🗽 Liberty 📚📺](./reflections/2026-02-02.md)  
@@ -23,24 +24,23 @@ updated: 2026-02-04T16:34:56-08:00
 - [2026-01-29 | ☄️ Hail 👨‍🚀 Martian 💻 Software 📚📺](./reflections/2026-01-29.md)  
 - [2026-01-28 | 💀 Cruel 👦 Harold ⚛️ And 🧑‍🚀 Quantum 👩‍🚀 Mary 📚](./reflections/2026-01-28.md)  
 - [2026-01-27 | 🕯️ The Quiet Orbit of Joy](./reflections/2026-01-27.md)  
-- [2026-01-26 | 🧠 Science 🔮 Will 📉 Support ⏱️ Smart 🐝 Swarm ☄️ Project 📺📚📰](./reflections/2026-01-26.md)  
   
   
 ## [🧰 Tools](./tools/index.md) (1)  
 - [🧮 Calculator](./tools/calculator.md)  
   
   
-## [📚 Books](./books/index.md) (908)  
+## [📚 Books](./books/index.md) (909)  
+- [☄️🧑‍🚀🙏🌍 Project Hail Mary](./books/project-hail-mary.md)  
+- [🌌3️⃣⚛️ The Three-Body Problem](./books/the-three-body-problem.md)  
 - [⚛️💻💡 Quantum Computing For Dummies](./books/quantum-computing-for-dummies.md)  
 - [😳🧠🤝 Dirty Laundry: Why Adults with ADHD Are So Ashamed and What We Can Do to Help](./books/dirty-laundry-why-adults-with-adhd-are-so-ashamed-and-what-we-can-do-to-help.md)  
 - [🧠🧭⚡ Your Brain's Not Broken: Strategies for Navigating Your Emotions and Life with ADHD](./books/your-brains-not-broken-strategies-for-navigating-your-emotions-and-life-with-adhd.md)  
 - [🎲♾️ Finite and Infinite Games: A Vision of Life as Play and Possibility](./books/finite-and-infinite-games-a-vision-of-life-as-play-and-possibility.md)  
 - [🤖⚙️ AI Agents in Action](./books/ai-agents-in-action.md)  
 - [👨‍🚀🔴✨ The Martian](./books/the-martian.md)  
-- [☄️🧑‍🚀🙏🌍 Project Hail Mary](./books/project-hail-mary.md)  
 - [🤖🤖🤖 We Are Legion (We Are Bob)](./books/we-are-legion-we-are-bob.md)  
 - [👥⚔️👑 The Will of the Many](./books/the-will-of-the-many.md)  
-- [🏗️🧱🌍 Foundation](./books/Foundation.md)  
   
   
 ## [📺 Videos](./videos/index.md) (631)  

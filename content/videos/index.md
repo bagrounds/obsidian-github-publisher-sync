@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-02-03T16:07:16-08:00
+updated: 2026-02-04T16:34:56-08:00
 ---
 [Home](../index.md)  
-# 📺 Videos (630)  
+# 📺 Videos (631)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
 - [❓💪🔬 12 Questions About Creatine with Stephen Cornish, PhD](./12-questions-about-creatine-w-stephen-cornish-phd.md)  
@@ -343,6 +343,7 @@ updated: 2026-02-03T16:07:16-08:00
 - [🇺🇸🎂🎉🤔 Okay, But Why Do We Celebrate the 4th of July?](./okay-but-why-do-we-celebrate-the-4th-of-july.md)  
 - [💻🤖🏠📚 Ollama Course – Build AI Apps Locally](./ollama-course-build-ai-apps-locally.md)  
 - [❌🤔💡 On being wrong | Kathryn Schulz](./on-being-wrong-kathryn-schulz.md)  
+- [🤖⏱️🧠👨‍💻 OpenClaw's Creator Uses AI to Run His Life in 40 Minutes | Peter Steinberger](./how-openclaws-creator-uses-ai-to-run-his-life-in-40-minutes-peter-steinberger.md)  
 - [Optimizing Webservers for High Throughput and Low Latency | Dropbox](./optimizing-webservers-for-high-throughput-and-low-latency-dropbox.md)  
 - [👩‍⚖️🛑🇺🇸🏛️ Oregon governor calls Trump's actions 'an abuse of power and threat to our democracy'](./oregon-governor-calls-trumps-actions-an-abuse-of-power-and-threat-to-our-democracy.md)  
 - [➡️⚖️💪 Our work continues, without fear or favor](./our-work-continues-without-fear-or-favor.md)  

@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-02-05T17:47:29-08:00
+updated: 2026-02-05T18:07:14-08:00
 ---
 [Home](../index.md)  
-# 📺 Videos (631)  
+# 📺 Videos (633)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
 - [❓💪🔬 12 Questions About Creatine with Stephen Cornish, PhD](./12-questions-about-creatine-w-stephen-cornish-phd.md)  
@@ -225,6 +225,7 @@ updated: 2026-02-05T17:47:29-08:00
 - [🧠🛠️💪📈 How to hack your brain to crave doing hard things](./how-to-hack-your-brain-to-crave-doing-hard-things.md)  
 - [😃☀️👍📈 ️ HOW TO HAVE A GOOD DAY by Caroline Webb | Animated Summary](./how-to-have-a-good-day-by-caroline-webb-animated-summary.md)  
 - [⚡️🔋💪 How To Have More Energy | Sean Hall | TEDxUNSW](./how-to-have-more-energy-sean-hall-tedxunsw.md)  
+- [⛈️🌊🪢 How to Lead Through Chaos | Jeff Wang (CEO of Windsurf) | Ctrl Alt podcast](./how-to-lead-through-chaos-jeff-wang-ceo-of-windsurf-ctrl-alt-podcast.md)  
 - [🧠⏱️⚡️📚 How to learn ANYTHING in less than 24 hours](./how-to-learn-anything-in-less-than-24-hours.md)  
 - [✨🎯🔒✅ How to make your dreams basically inevitable](./how-to-make-your-dreams-basically-inevitable.md)  
 - [🔋⚡😴🌞 How to never be tired again](./how-to-never-be-tired-again.md)  
@@ -606,6 +607,7 @@ updated: 2026-02-05T17:47:29-08:00
 - [👹👶🏼💸➡️👴🏻💰 What Trump’s ‘Big, Beautiful Bill’ Is Really Doing (Part 2) | The Ezra Klein Show](./what-trumps-big-beautiful-bill-is-really-doing-part-2-the-ezra-klein-show.md)  
 - [👑🏙️🏛️ What Trump’s Threat to ‘Take Over’ Cities Says About Our Democracy](./what-trumps-threat-to-take-over-cities-says-about-our-democracy.md)  
 - [What we know — and don't know — about the U.S. strikes in Yemen](./what-we-know-and-dont-know-about-the-us-strikes-in-yemen.md)  
+- [🤖🧠🚀 What you must know before AGI arrives | Carnegie Mellon University Po-Shen Loh](./what-you-must-know-before-agi-arrives-carnegie-mellon-university-po-shen-loh.md)  
 - [💻🌍🚶‍♀️ Where All the Tech Workers Are Going](./where-all-the-tech-workers-are-going.md)  
 - [🏛️👔😡💸 Whitehouse and Murphy Dress Down Republican Tax «Thievery» in Colloquy on Senate Floor](./whitehouse-and-murphy-dress-down-republican-tax-thievery-in-colloquy-on-senate-floor.md)  
 - [🏛️⚖️🎯💥 Whitehouse Spotlights the Actual Weaponization of the Justice System by Trump's MAGA Cronies](./whitehouse-spotlights-the-actual-weaponization-of-the-justice-system-by-trumps-maga-cronies.md)  

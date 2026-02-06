@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-02-05T18:07:14-08:00
+updated: 2026-02-06T07:12:09-08:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -13,7 +13,8 @@ updated: 2026-02-05T18:07:14-08:00
 ❔ What do 🫵 _you_ 🤔 think?  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (448)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (449)  
+- [2026-02-06](./reflections/2026-02-06.md)  
 - [2026-02-05](./reflections/2026-02-05.md)  
 - [2026-02-04 | ⚛️ Quantum 📜 Will 🛠️ Creator 📚📺](./reflections/2026-02-04.md)  
 - [🎨 Creativity 🧭 Navigating ⚛️ Quantum 📈 Scaling 📚📺📄](./reflections/2026-02-03.md)  
@@ -23,14 +24,15 @@ updated: 2026-02-05T18:07:14-08:00
 - [2026-01-30 | 🛠️ Project 🕰️ Time 🧘 Discipline 📚](./reflections/2026-01-30.md)  
 - [2026-01-29 | ☄️ Hail 👨‍🚀 Martian 💻 Software 📚📺](./reflections/2026-01-29.md)  
 - [2026-01-28 | 💀 Cruel 👦 Harold ⚛️ And 🧑‍🚀 Quantum 👩‍🚀 Mary 📚](./reflections/2026-01-28.md)  
-- [2026-01-27 | 🕯️ The Quiet Orbit of Joy](./reflections/2026-01-27.md)  
   
   
 ## [🧰 Tools](./tools/index.md) (1)  
 - [🧮 Calculator](./tools/calculator.md)  
   
   
-## [📚 Books](./books/index.md) (909)  
+## [📚 Books](./books/index.md) (910)  
+- [🏠🛠️ Home Improvement 1-2-3: Expert Advice from the Home Depot](./books/home-improvement-1-2-3-expert-advice-from-the-home-depot.md)  
+- [👥⚔️👑 The Will of the Many](./books/the-will-of-the-many.md)  
 - [💥🌀➡️⏳⚖️🕰️ ️ Sync: How Order Emerges From Chaos In The Universe, Nature, And Daily Life](./books/sync.md)  
 - [🌪️✨🕰️ Order Out of Chaos: Man's New Dialogue with Nature](./books/order-out-of-chaos.md)  
 - [🌐🧭❓🔍🗺️ Complexity: A Guided Tour](./books/complexity.md)  
@@ -39,11 +41,10 @@ updated: 2026-02-05T18:07:14-08:00
 - [☄️🧑‍🚀🙏🌍 Project Hail Mary](./books/project-hail-mary.md)  
 - [🌌3️⃣⚛️ The Three-Body Problem](./books/the-three-body-problem.md)  
 - [⚛️💻💡 Quantum Computing For Dummies](./books/quantum-computing-for-dummies.md)  
-- [😳🧠🤝 Dirty Laundry: Why Adults with ADHD Are So Ashamed and What We Can Do to Help](./books/dirty-laundry-why-adults-with-adhd-are-so-ashamed-and-what-we-can-do-to-help.md)  
-- [🧠🧭⚡ Your Brain's Not Broken: Strategies for Navigating Your Emotions and Life with ADHD](./books/your-brains-not-broken-strategies-for-navigating-your-emotions-and-life-with-adhd.md)  
   
   
-## [📺 Videos](./videos/index.md) (633)  
+## [📺 Videos](./videos/index.md) (634)  
+- [🔧🚰🛠️ How to Replace the Seats & Springs in a Single Handle Faucet | Repair and Replace](./videos/how-to-replace-the-seats-springs-in-a-single-handle-faucet-repair-and-replace.md)  
 - [🤖🧠🚀 What you must know before AGI arrives | Carnegie Mellon University Po-Shen Loh](./videos/what-you-must-know-before-agi-arrives-carnegie-mellon-university-po-shen-loh.md)  
 - [⛈️🌊🪢 How to Lead Through Chaos | Jeff Wang (CEO of Windsurf) | Ctrl Alt podcast](./videos/how-to-lead-through-chaos-jeff-wang-ceo-of-windsurf-ctrl-alt-podcast.md)  
 - [🤖⏱️🧠👨‍💻 OpenClaw's Creator Uses AI to Run His Life in 40 Minutes | Peter Steinberger](./videos/how-openclaws-creator-uses-ai-to-run-his-life-in-40-minutes-peter-steinberger.md)  
@@ -53,7 +54,6 @@ updated: 2026-02-05T18:07:14-08:00
 - [🧠⚡️💻🚀 ADHD & Software Development: Real Practices That Work w/ Paige Watson | Agile Mentors Podcast](./videos/adhd-software-development-real-practices-that-work-w-paige-watson-agile-mentors-podcast.md)  
 - [❓🕵️‍♂️🇺🇸📉 What’s Happening to U.S. Intelligence Under the Second Trump Administration? | Senator Mark Warner](./videos/whats-happening-to-us-intelligence-under-the-second-trump-administration-senator-mark-warner.md)  
 - [👨‍💼🇺🇸📉🗣️ Tamara Keith and Amy Walter on Trump losing support over his immigration crackdown](./videos/tamara-keith-and-amy-walter-on-trump-losing-support-over-his-immigration-crackdown.md)  
-- [🧠💡📚🦅 Science & Tools of Learning & Memory | Dr. David Eagleman](./videos/science-tools-of-learning-memory-dr-david-eagleman.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (88)  
@@ -94,10 +94,10 @@ updated: 2026-02-05T18:07:14-08:00
 - [👨‍🏫📉💵 Warren Mosler](./people/warren-mosler.md)  
   
   
-## [🛍️ Products](./products/index.md) (5)  
+## [🛍️ Products](./products/index.md) (6)  
+- [🚰💧⚙️🔧 Delta Faucet RP4993 Seats and Springs](./products/delta-faucet-rp4993-seats-and-springs.md)  
 - [🔥💨🏕️ Coleman Triton 2-Burner Propane Stove, Portable Camping Cooktop with 2 Adjustable Burners & Wind Guards, 22,000 BTUs of Power for Camping, Tailgating, Grilling, BBQ, & More](./products/coleman-triton-2-burner-propane-stove-portable-camping-cooktop-with-2-adjustable-burners-wind-guards-22000-btus-of-power-for-camping-tailgating-grilling-bbq-more.md)  
 - [👶🌧️💨 Graco Baby Jogging Stroller Universal Rain Cover, Ventilated Weather Shield, Waterproof, Windproof, Versatile Size to Fit Most Jogging Strollers, Vinyl, Clear, Plastic](./products/graco-baby-jogging-stroller-universal-rain-cover-ventilated-weather-shield-waterproof-windproof-versatile-size-to-fit-most-jogging-strollers-vinyl-clear-plastic.md)  
-- [🤖🧹🧼🗺️ iRobot Roomba Plus 505 Combo Robot Vacuum & Mop with AutoWash Dock - Extending Spinning Mop Pads, Self-Empties, Pad Wash & Heated Drying, Self-cleaning, Recognizes & Avoids Obstacles, LiDAR Navigation](./products/irobot-roomba-plus-505-combo-robot-vacuum-mop-with-autowash-dock-extending-spinning-mop-pads-self-empties-pad-wash-heated-drying-self-cleaning-recognizes-avoids-obstacles-lidar-navigation.md)  
   
   
 ## 🔗 Profiles  

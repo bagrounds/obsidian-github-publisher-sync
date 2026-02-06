@@ -62,4 +62,7 @@ youtube: https://youtu.be/gDrw_E_IMTA
 ### 🎨 Creatively Related  
   
 * [📺💀 Amusing Ourselves to Death: Public Discourse in the Age of Show Business](../books/amusing-ourselves-to-death-public-discourse-in-the-age-of-show-business.md) by Neil Postman (Viking Penguin) examines how the medium of communication shapes the intellectual health of a civilization.  
-* [👹 The Origins of Totalitarianism](../books/the-origins-of-totalitarianism.md) by Hannah Arendt (Schocken Books) provides the historical framework for understanding how truth is subverted in authoritarian regimes.
+* [👹 The Origins of Totalitarianism](../books/the-origins-of-totalitarianism.md) by Hannah Arendt (Schocken Books) provides the historical framework for understanding how truth is subverted in authoritarian regimes.  
+  
+## 🐦 Tweet  
+<blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">2026-02-02 | 👥 Many 👁️ Reality 🎲 Games 🎯 Need 🗽 Liberty 📚📺<br><br>📜 Magna Carta | 👑 Dystopian Fiction | 🎲 Game Theory | ♾️ Infinite Games | 🤖 AI | 💡 Future Skills | 〰️ Systems Thinking | 📈 Emergent Behavior | 🗽 Freedom | 🌀 Cycles<a href="https://twitter.com/grok?ref_src=twsrc%5Etfw">@grok</a> questions?<a href="https://t.co/FKpHfHv7kP">https://t.co/FKpHfHv7kP</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/2019129483840876643?ref_src=twsrc%5Etfw">February 4, 2026</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

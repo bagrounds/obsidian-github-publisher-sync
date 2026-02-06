@@ -12,6 +12,9 @@ affiliate link: https://amzn.to/3NIwksZ
 # 👥⚔️👑 The Will of the Many  
 [🛒 The Will of the Many. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3NIwksZ)  
   
+## 📝🐒 Human Notes  
+> There comes a point in every man's life where he can rail against the unfairness of the world until he loses. Or he can do his best in it. Remain a victim or become a survivor.  
+  
 ## 🤖 AI Summary  
 ✨ Intricate social hierarchies and high-stakes academic competition drive this masterfully paced tale of ambition and systemic rebellion.  
   

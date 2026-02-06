@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-02-05T18:07:14-08:00
+updated: 2026-02-06T07:12:09-08:00
 ---
 [Home](../index.md)  
-# 📺 Videos (633)  
+# 📺 Videos (634)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
 - [❓💪🔬 12 Questions About Creatine with Stephen Cornish, PhD](./12-questions-about-creatine-w-stephen-cornish-phd.md)  
@@ -232,6 +232,7 @@ updated: 2026-02-05T18:07:14-08:00
 - [🧘☮️😌😊 How to Never Get Angry or Bothered by Anyone | MAYA ANGELOU MOTIVATION](./how-to-never-get-angry-or-bothered-by-anyone-maya-angelou-motivation.md)  
 - [🇺🇸🛠️⏱️🏛️ How to Rebuild American Democracy in 20 Minutes](./how-to-rebuild-american-democracy-in-20-minutes.md)  
 - [🦴🤕🏃‍♀️🧪 How to Reduce Bone Injury Risks | Running Science](./how-to-reduce-bone-injury-risks-running-science.md)  
+- [🔧🚰🛠️ How to Replace the Seats & Springs in a Single Handle Faucet | Repair and Replace](./how-to-replace-the-seats-springs-in-a-single-handle-faucet-repair-and-replace.md)  
 - [🧠🛠️♾️💪 How to reprogram your mind to have infinite resilience](./how-to-reprogram-your-mind-to-have-infinite-resilience.md)  
 - [🤿📚🔬🎓 How to Research Any Topic - Deep-Dive like a PhD Student](./how-to-research-any-topic-deep-dive-like-a-phd-student.md)  
 - [🗣️✨ How to Speak Clearly & With Confidence | Matt Abrahams](./how-to-speak-clearly-and-with-confidence-matt-abrahams.md)  

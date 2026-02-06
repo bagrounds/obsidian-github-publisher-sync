@@ -5,10 +5,10 @@ aliases:
 share: true
 URL: https://bagrounds.org/books
 backlinks: false
-updated: 2026-02-05T18:07:14-08:00
+updated: 2026-02-06T07:12:09-08:00
 ---
 [Home](../index.md)  
-# 📚 Books (909)  
+# 📚 Books (910)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [💻0️⃣ Source Code: My Beginnings](./source-code-my-beginnings.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)  
@@ -303,6 +303,7 @@ updated: 2026-02-05T18:07:14-08:00
 - [🙈⚡🔬🌌 Hidden Potential: The Science of Achieving Greater Things](./hidden-potential-the-science-of-achieving-greater-things.md)  
 - [📈🌟 High Performance Habits: How Extraordinary People Become That Way](./high-performance-habits-how-extraordinary-people-become-that-way.md)  
 - [🫂 Hold Me Tight: Seven Conversations for a Lifetime of Love](./hold-me-tight-seven-conversations-for-a-lifetime-of-love.md)  
+- [🏠🛠️ Home Improvement 1-2-3: Expert Advice from the Home Depot](./home-improvement-1-2-3-expert-advice-from-the-home-depot.md)  
 - [🎣📱 Hooked: How to Build Habit-Forming Products](./hooked-how-to-build-habit-forming-products.md)  
 - [🏛️👹🇺🇸🏰👹🇷🇺 House of Trump, House of Putin: The Untold Story of Donald Trump and the Russian Mafia](./house-of-trump-house-of-putin-the-untold-story-of-donald-trump-and-the-russian-mafia.md)  
 - [🏠⬆️ Housing First: Ending Homelessness, Transforming Systems, and Changing Lives](./housing-first-ending-homelessness-transforming-systems-and-changing-lives.md)  

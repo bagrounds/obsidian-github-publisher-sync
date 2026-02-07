@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-02-06T17:12:17-08:00
+updated: 2026-02-06T17:26:02-08:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -30,7 +30,9 @@ updated: 2026-02-06T17:12:17-08:00
 - [🧮 Calculator](./tools/calculator.md)  
   
   
-## [📚 Books](./books/index.md) (912)  
+## [📚 Books](./books/index.md) (913)  
+- [🤖📐 Perceptrons: An Introduction to Computational Geometry](./books/perceptrons-an-introduction-to-computational-geometry.md)  
+- [🧠👥 The Society of Mind](./books/the-society-of-mind.md)  
 - [🔬⚙️ The Sciences of the Artificial](./books/the-sciences-of-the-artificial.md)  
 - [🏠🛠️ Home Improvement 1-2-3: Expert Advice from the Home Depot](./books/home-improvement-1-2-3-expert-advice-from-the-home-depot.md)  
 - [🏠🛠️ Ultimate Guide to Home Repair & Improvement](./books/ultimate-guide-to-home-repair-improvement.md)  
@@ -39,11 +41,10 @@ updated: 2026-02-06T17:12:17-08:00
 - [🌪️✨🕰️ Order Out of Chaos: Man's New Dialogue with Nature](./books/order-out-of-chaos.md)  
 - [🌐🧭❓🔍🗺️ Complexity: A Guided Tour](./books/complexity.md)  
 - [🕷️⏳ Children of Time](./books/children-of-time.md)  
-- [🏗️🧱🌍 Foundation](./books/Foundation.md)  
-- [☄️🧑‍🚀🙏🌍 Project Hail Mary](./books/project-hail-mary.md)  
   
   
-## [📺 Videos](./videos/index.md) (636)  
+## [📺 Videos](./videos/index.md) (637)  
+- [💡🧠🤖📝 Why you should take notes if you use AI](./videos/why-you-should-take-notes-if-you-use-ai.md)  
 - [✨⬆️🗣️👨‍💻 The third golden age of software engineering – thanks to AI, with Grady Booch](./videos/the-third-golden-age-of-software-engineering-thanks-to-ai-with-grady-booch.md)  
 - [🤯🗣️📱📈 “He behaved like a total maniac” Sam Harris on Elon & Big Tech’s turn towards Trump](./videos/he-behaved-like-a-total-maniac-sam-harris-on-elon-big-techs-turn-towards-trump.md)  
 - [🔧🚰🛠️ How to Replace the Seats & Springs in a Single Handle Faucet | Repair and Replace](./videos/how-to-replace-the-seats-springs-in-a-single-handle-faucet-repair-and-replace.md)  
@@ -53,7 +54,6 @@ updated: 2026-02-06T17:12:17-08:00
 - [🧠💡🚀✨ From Distractibility to Creativity with Dr. Ned Hallowell: A Favorite Replay Episode](./videos/from-distractibility-to-creativity-with-dr-ned-hallowell-a-favorite-replay-episode.md)  
 - [👑〰️📈 Appearance: Evil Dictator Pulling Strings | Reality: Emergent Behavior of System](./videos/appearance-evil-dictator-pulling-strings-reality-emergent-behavior-of-system.md)  
 - [🤖🧠💡 The ONLY skill you need in the AI era](./videos/the-only-skill-you-need-in-the-ai-era.md)  
-- [🧠⚡️💻🚀 ADHD & Software Development: Real Practices That Work w/ Paige Watson | Agile Mentors Podcast](./videos/adhd-software-development-real-practices-that-work-w-paige-watson-agile-mentors-podcast.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (88)  

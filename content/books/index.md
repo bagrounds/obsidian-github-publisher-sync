@@ -5,10 +5,10 @@ aliases:
 share: true
 URL: https://bagrounds.org/books
 backlinks: false
-updated: 2026-02-06T17:26:02-08:00
+updated: 2026-02-07T13:58:35-08:00
 ---
 [Home](../index.md)  
-# 📚 Books (913)  
+# 📚 Books (914)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [💻0️⃣ Source Code: My Beginnings](./source-code-my-beginnings.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)  
@@ -614,6 +614,7 @@ updated: 2026-02-06T17:26:02-08:00
 - [🎭🇺🇸💸🏆 The Age of Illusions: How America Squandered Its Cold War Victory](./the-age-of-illusions-how-america-squandered-its-cold-war-victory.md)  
 - [👁️‍🗨️💰⛓️👤 The Age of Surveillance Capitalism: The Fight for a Human Future at the New Frontier of Power](./the-age-of-surveillance-capitalism.md)  
 - [🤖📈 The AI Revolution in Project Management: Elevating Productivity with Generative AI](./the-ai-revolution-in-project-management-elevating-productivity-with-generative-ai.md)  
+- [✨🧙‍♂️⚗️ The Alchemist](./the-alchemist.md)  
 - [👤💬 The Analects of Confucius](./the-analects-of-confucius.md)  
 - [🐜 The Ants](./the-ants.md)  
 - [📱😥 The Anxious Generation: How the Great Rewiring of Childhood Is Causing an Epidemic of Mental Illness](./the-anxious-generation-how-the-great-rewiring-of-childhood-is-causing-an-epidemic-of-mental-illness.md)  

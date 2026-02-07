@@ -53,7 +53,7 @@ affiliate link: https://amzn.to/3HrsgdT
 ### ➖ Contrasting Books  
   
 * 💼 **What Color Is Your Parachute? A Practical Manual for Job-Hunters and Career-Changers** by Richard N. Bolles: This classic career guide, while practical, often starts with self-assessment to identify one's strengths and passions, which aligns more with the "passion hypothesis" that Newport critiques. 🌈  
-* 🌟 **The Alchemist** by Paulo Coelho: A fictional allegorical novel that heavily emphasizes listening to one's heart, following dreams, and pursuing a "Personal Legend" – themes that are in direct contrast to Newport's advice against blindly following passion. ❤️  
+* **[✨🧙‍♂️⚗️ The Alchemist](./the-alchemist.md)** by Paulo Coelho: A fictional allegorical novel that heavily emphasizes listening to one's heart, following dreams, and pursuing a "Personal Legend" – themes that are in direct contrast to Newport's advice against blindly following passion. ❤️  
 * 🎯 **Find Your Why: A Practical Guide for Discovering Purpose for You and Your Team** by Simon Sinek, David Mead, and Peter Docker: Based on Sinek's "start with why" concept, this book encourages individuals to identify their core purpose or passion first, then build their careers around it, a direct counterpoint to Newport's skill-first approach. 🤔  
   
 ### ✨ Creatively Related Books  

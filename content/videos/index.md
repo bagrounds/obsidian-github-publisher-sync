@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-02-06T17:12:17-08:00
+updated: 2026-02-06T17:26:02-08:00
 ---
 [Home](../index.md)  
-# 📺 Videos (636)  
+# 📺 Videos (637)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
 - [❓💪🔬 12 Questions About Creatine with Stephen Cornish, PhD](./12-questions-about-creatine-w-stephen-cornish-phd.md)  
@@ -631,6 +631,7 @@ updated: 2026-02-06T17:12:17-08:00
 - [👴🚫📈 Why the Trump Administration Is Doubling Down as Momentum Grows Against Them | Explainer](./why-the-trump-administration-is-doubling-down-as-momentum-grows-against-them-explainer.md)  
 - [👹⏱️🇺🇸➡️💰 Why the Trump Administration Is Rushing the Budget Reconciliation Bill Through](./why-the-trump-administration-is-rushing-the-budget-reconciliation-bill-through.md)  
 - [😴☕️💡 Why you’re so tired](./why-youre-so-tired.md)  
+- [💡🧠🤖📝 Why you should take notes if you use AI](./why-you-should-take-notes-if-you-use-ai.md)  
 - [🏃🤸🧠💪 Why You Should Train Movement, Not Muscle](./why-you-should-train-movement-not-muscle-with-jay-dicharry.md)  
 - [📰🕒❓ With government jobs report delayed, what other data reveals about the economy](./with-government-jobs-report-delayed-what-other-data-reveals-about-the-economy.md)  
 - [👹🇺🇸📉🔨👁️ With Trump “We Are Watching the Deliberate Dismantling of American Democracy”](./with-trump-we-are-watching-the-deliberate-dismantling-of-american-democracy.md)  

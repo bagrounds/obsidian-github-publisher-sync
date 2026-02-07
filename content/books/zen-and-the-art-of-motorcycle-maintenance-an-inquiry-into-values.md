@@ -39,7 +39,7 @@ CTA: 🏍️ Explore quality.
 * ⛵ **Lila: An Inquiry into Morals** by Robert M. Pirsig. This is the direct sequel to Zen and the Art of Motorcycle Maintenance, continuing the philosophical journey with the narrator Phaedrus, this time on a sailboat, exploring themes of morality.  
 * 🙏 **Siddhartha** by Hermann Hesse. This novel explores a spiritual journey of self-discovery, focusing on a man's quest for meaning and inner peace, akin to the philosophical exploration in Pirsig's work.  
 * 🌳 **Walden** by Henry David Thoreau. Thoreau's memoir of living simply in nature offers a profound reflection on self-reliance, observation, and critical thought, mirroring the deep introspection found in Pirsig's narrative.  
-* 🐑 **The Alchemist** by Paulo Coelho. This allegorical novel follows a shepherd boy on a spiritual journey to find his destiny, sharing a similar narrative structure of a physical journey leading to profound self-discovery and philosophical insights.  
+* **[✨🧙‍♂️⚗️ The Alchemist](./the-alchemist.md)** by Paulo Coelho. This allegorical novel follows a shepherd boy on a spiritual journey to find his destiny, sharing a similar narrative structure of a physical journey leading to profound self-discovery and philosophical insights.  
 * 🦍 **Ishmael: An Adventure of the Mind and Spirit** by Daniel Quinn. This thought-provoking novel explores philosophical discussions about human nature and societal structures through conversations between a man and a telepathic gorilla, challenging readers to rethink humanity's place in the world.  
   
 ### ⚖️ Contrasting Books  

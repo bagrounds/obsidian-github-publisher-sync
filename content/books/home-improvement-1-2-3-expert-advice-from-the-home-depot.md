@@ -77,7 +77,7 @@ affiliate link: https://amzn.to/4cdddRK
 ## 📚 Book Recommendations  
 ### ✨ Similar  
 * 📖 Black & Decker The Book of Home How-to, Updated 3rd Edition: Complete Photo Guide to Home Repair and Improvement  
-* 🛠️ Ultimate Guide to Home Repair and Improvement (Creative Homeowner)  
+* 🛠️ [🏠🛠️ Ultimate Guide to Home Repair & Improvement](./ultimate-guide-to-home-repair-improvement.md) (Creative Homeowner)  
 * 🏘️ Reader's Digest Complete Do-it-yourself Manual  
   
 ### ↔️ Contrasting  

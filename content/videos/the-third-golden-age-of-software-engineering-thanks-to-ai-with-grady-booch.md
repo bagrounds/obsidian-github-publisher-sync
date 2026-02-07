@@ -56,7 +56,7 @@ youtube: https://youtu.be/OfMAtaocvJw
   
 ### ↔️ Similar  
   
-* 🏗️ The Sciences of the Artificial by Herbert Simon explores how we design and understand complex systems in a human-made world.  
+* [🔬⚙️ The Sciences of the Artificial](../books/the-sciences-of-the-artificial.md) by Herbert Simon explores how we design and understand complex systems in a human-made world.  
 * [🦄👤🗓️ The Mythical Man-Month: Essays on Software Engineering](../books/the-mythical-man-month.md) by Frederick Brooks provides timeless insights into the human and organizational complexities of large-scale software projects.  
   
 ### 🆚 Contrasting  

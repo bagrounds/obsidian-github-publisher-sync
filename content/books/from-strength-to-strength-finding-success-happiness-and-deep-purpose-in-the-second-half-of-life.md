@@ -49,8 +49,8 @@ Brooks provides a practical framework for navigating this transition, which he c
   
 ### 🔄 A Different Perspective: Contrasting Reads  
   
-* 🤬 **"The Subtle Art of Not Giving a F\*ck" by Mark Manson:** This book argues against the culture of relentless positivity and instead encourages embracing our limitations and focusing on what truly matters. ✅  
-* 👔 **"Bullshit Jobs: A Theory" by David Graeber:** Graeber provocatively argues that many modern jobs are meaningless and explores the psychological toll this takes. 😔  
+* 🤬 **The Subtle Art of Not Giving a F\*ck by Mark Manson:** This book argues against the culture of relentless positivity and instead encourages embracing our limitations and focusing on what truly matters. ✅  
+* **[💩💼 Bullshit Jobs: A Theory](./bullshit-jobs-a-theory.md) by David Graeber:** Graeber provocatively argues that many modern jobs are meaningless and explores the psychological toll this takes. 😔  
 * **[🌎👎👑💰🏚️ Why Nations Fail: The Origins of Power, Prosperity, and Poverty](./why-nations-fail-the-origins-of-power-prosperity-and-poverty.md) by Daron Acemoglu and James A. Robinson:** This book challenges the idea that success is solely about individual effort, emphasizing the critical role of inclusive institutions. 🏛️  
 * **[🤔🐇🐢 Thinking, Fast and Slow](./thinking-fast-and-slow.md) by Daniel Kahneman:** Nobel laureate Kahneman explains the two systems that drive our thinking, revealing how cognitive biases often lead to irrational decisions, challenging the notion of humans as purely rational beings. 🧐  
   
@@ -60,7 +60,7 @@ Brooks provides a practical framework for navigating this transition, which he c
 * 👨‍🏫 **"Stoner" by John Williams:** This novel tells the story of an ordinary academic's life, finding profound meaning in a life that, on the surface, seems unremarkable. 🌟  
 * 🧘 **"Siddhartha" by Hermann Hesse:** A spiritual journey of self-discovery, this novel parallels the life of the Buddha and explores the path to inner peace. ☮️  
 * 🔄 **"Life After Life" by Kate Atkinson:** This novel follows Ursula Todd as she lives through multiple versions of her life, exploring how small changes can lead to vastly different outcomes. 🦋  
-* 🐑 **"The Alchemist" by Paulo Coelho:** A story about a young shepherd following his dreams, it emphasizes listening to one's heart and embracing the journey of self-discovery to find one's purpose. ❤️  
+* **[✨🧙‍♂️⚗️ The Alchemist](./the-alchemist.md) by Paulo Coelho:** A story about a young shepherd following his dreams, it emphasizes listening to one's heart and embracing the journey of self-discovery to find one's purpose. ❤️  
   
 ## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on From Strength to Strength: Finding Success, Happiness, and Deep Purpose in the Second Half of Life. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

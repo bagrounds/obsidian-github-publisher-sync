@@ -5,10 +5,10 @@ aliases:
 share: true
 URL: https://bagrounds.org/books
 backlinks: false
-updated: 2026-02-06T17:12:17-08:00
+updated: 2026-02-06T17:26:02-08:00
 ---
 [Home](../index.md)  
-# 📚 Books (912)  
+# 📚 Books (913)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [💻0️⃣ Source Code: My Beginnings](./source-code-my-beginnings.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)  
@@ -808,6 +808,7 @@ updated: 2026-02-06T17:12:17-08:00
 - [😴🛠️ The Sleep Solution: Why Your Sleep is Broken and How to Fix It](./the-sleep-solution-why-your-sleep-is-broken-and-how-to-fix-it.md)  
 - [🚩⚖️ The Socialist Manifesto: The Case for Radical Politics in an Era of Extreme Inequality](./the-socialist-manifesto-the-case-for-radical-politics-in-an-era-of-extreme-inequality.md)  
 - [🧑‍🤝‍🧑🗣️ The Social Skills Guidebook: Manage Shyness, Improve Your Conversations, and Make Friends, Without Giving Up Who You Are](./the-social-skills-guidebook-manage-shyness-improve-your-conversations-and-make-friends-without-giving-up-who-you-are.md)  
+- [🧠👥 The Society of Mind](./the-society-of-mind.md)  
 - [👻🇺🇸⚔️🪽 The Soul of America: The Battle for Our Better Angels](./the-soul-of-america-the-battle-for-our-better-angels.md)  
 - [⚖️⬆️🤝 The Spirit Level: Why Greater Equality Makes Societies Stronger](./the-spirit-level-why-greater-equality-makes-societies-stronger.md)  
 - [👶⬆️👨‍💻📈 The Staff Engineer's Path](./the-staff-engineers-path.md)  

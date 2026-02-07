@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-02-06T12:08:18-08:00
+updated: 2026-02-06T17:12:17-08:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -15,7 +15,7 @@ updated: 2026-02-06T12:08:18-08:00
   
 ## [🪞 Reflections](./reflections/index.md) ~ Blog (449)  
 - [2026-02-06](./reflections/2026-02-06.md)  
-- [2026-02-05](./reflections/2026-02-05.md)  
+- [2026-02-05 | 👥 Many ⚔️ Will 🧠 Know 🌪️ Chaos 📚📺](./reflections/2026-02-05.md)  
 - [2026-02-04 | ⚛️ Quantum 📜 Will 🛠️ Creator 📚📺](./reflections/2026-02-04.md)  
 - [🎨 Creativity 🧭 Navigating ⚛️ Quantum 📈 Scaling 📚📺📄](./reflections/2026-02-03.md)  
 - [2026-02-02 | 👥 Many 👁️ Reality 🎲 Games 🎯 Need 🗽 Liberty 📚📺](./reflections/2026-02-02.md)  
@@ -30,8 +30,10 @@ updated: 2026-02-06T12:08:18-08:00
 - [🧮 Calculator](./tools/calculator.md)  
   
   
-## [📚 Books](./books/index.md) (910)  
+## [📚 Books](./books/index.md) (912)  
+- [🔬⚙️ The Sciences of the Artificial](./books/the-sciences-of-the-artificial.md)  
 - [🏠🛠️ Home Improvement 1-2-3: Expert Advice from the Home Depot](./books/home-improvement-1-2-3-expert-advice-from-the-home-depot.md)  
+- [🏠🛠️ Ultimate Guide to Home Repair & Improvement](./books/ultimate-guide-to-home-repair-improvement.md)  
 - [👥⚔️👑 The Will of the Many](./books/the-will-of-the-many.md)  
 - [💥🌀➡️⏳⚖️🕰️ ️ Sync: How Order Emerges From Chaos In The Universe, Nature, And Daily Life](./books/sync.md)  
 - [🌪️✨🕰️ Order Out of Chaos: Man's New Dialogue with Nature](./books/order-out-of-chaos.md)  
@@ -39,8 +41,6 @@ updated: 2026-02-06T12:08:18-08:00
 - [🕷️⏳ Children of Time](./books/children-of-time.md)  
 - [🏗️🧱🌍 Foundation](./books/Foundation.md)  
 - [☄️🧑‍🚀🙏🌍 Project Hail Mary](./books/project-hail-mary.md)  
-- [🌌3️⃣⚛️ The Three-Body Problem](./books/the-three-body-problem.md)  
-- [⚛️💻💡 Quantum Computing For Dummies](./books/quantum-computing-for-dummies.md)  
   
   
 ## [📺 Videos](./videos/index.md) (636)  

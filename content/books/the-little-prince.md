@@ -66,7 +66,7 @@ affiliate link: https://amzn.to/4b9EaWc
   
 ### ↔️ Similar  
 * 📖 Jonathan Livingston Seagull by Richard Bach  
-* 📖 The Alchemist by Paulo Coelho  
+* [✨🧙‍♂️⚗️ The Alchemist](./the-alchemist.md) by Paulo Coelho  
 * 📖 Siddhartha by Hermann Hesse  
   
 ### 🆚 Contrasting  

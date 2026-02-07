@@ -65,7 +65,7 @@ affiliate link: https://amzn.to/46Lws0o
   
 * **[🔦💡 Man's Search for Meaning](./mans-search-for-meaning.md)** by Viktor E. Frankl  
     * 🌟 This classic explores the human search for purpose amidst suffering. 🧠 While Inner Excellence discusses purpose as a driver for performance, Frankl's work delves deeper into finding meaning in all circumstances, even the most dire, connecting to the "best possible life" aspect through existential wisdom.  
-* 🧙 **The Alchemist** by Paulo Coelho  
+* **[✨🧙‍♂️⚗️ The Alchemist](./the-alchemist.md)** by Paulo Coelho  
     * ✨ A philosophical novel about following one's dreams and finding one's "Personal Legend." ❤️‍🔥 It relates to Inner Excellence's theme of connecting with a purpose beyond oneself and daring to pursue one's true path, emphasizing a journey of self-discovery and spiritual awakening.  
 * **[🧘🏹 Zen in the Art of Archery](./zen-in-the-art-of-archery.md)** by Eugen Herrigel  
     * 🧘 This book describes a Westerner's quest to learn Zen through Japanese archery, highlighting the importance of presence, detachment from outcome, and self-mastery through a spiritual discipline. 💫 It beautifully complements Inner Excellence's call for being fully present and focusing on internal harmony rather than mere external achievement.  

@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-02-06T17:26:02-08:00
+updated: 2026-02-07T13:58:35-08:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -13,7 +13,8 @@ updated: 2026-02-06T17:26:02-08:00
 ❔ What do 🫵 _you_ 🤔 think?  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (449)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (450)  
+- [2026-02-07](./reflections/2026-02-07.md)  
 - [2026-02-06](./reflections/2026-02-06.md)  
 - [2026-02-05 | 👥 Many ⚔️ Will 🧠 Know 🌪️ Chaos 📚📺](./reflections/2026-02-05.md)  
 - [2026-02-04 | ⚛️ Quantum 📜 Will 🛠️ Creator 📚📺](./reflections/2026-02-04.md)  
@@ -23,27 +24,28 @@ updated: 2026-02-06T17:26:02-08:00
 - [2026-01-31 | ☄️ Project 👥 Many 📊 Insights 📚🪞](./reflections/2026-01-31.md)  
 - [2026-01-30 | 🛠️ Project 🕰️ Time 🧘 Discipline 📚](./reflections/2026-01-30.md)  
 - [2026-01-29 | ☄️ Hail 👨‍🚀 Martian 💻 Software 📚📺](./reflections/2026-01-29.md)  
-- [2026-01-28 | 💀 Cruel 👦 Harold ⚛️ And 🧑‍🚀 Quantum 👩‍🚀 Mary 📚](./reflections/2026-01-28.md)  
   
   
 ## [🧰 Tools](./tools/index.md) (1)  
 - [🧮 Calculator](./tools/calculator.md)  
   
   
-## [📚 Books](./books/index.md) (913)  
+## [📚 Books](./books/index.md) (914)  
+- [💪❤️ So Good They Can't Ignore You: Why Skills Trump Passion in the Quest for Work You Love](./books/so-good-they-cant-ignore-you-why-skills-trump-passion-in-the-quest-for-work-you-love.md)  
+- [🚫💰❤️ The Wealth Money Can't Buy: The 8 Hidden Habits to Live Your Richest Life](./books/the-wealth-money-cant-buy-the-8-hidden-habits-to-live-your-richest-life.md)  
+- [🏃‍♂️⛰️ Born to Run: A Hidden Tribe, Superathletes, and the Greatest Race the World Has Never Seen](./books/born-to-run-a-hidden-tribe-superathletes-and-the-greatest-race-the-world-has-never-seen.md)  
+- [💪😊🎯 From Strength to Strength: Finding Success, Happiness, and Deep Purpose in the Second Half of Life](./books/from-strength-to-strength-finding-success-happiness-and-deep-purpose-in-the-second-half-of-life.md)  
+- [🧠🏆 Inner Excellence: Train Your Mind for Extraordinary Performance and the Best Possible Life](./books/inner-excellence-train-your-mind-for-extraordinary-performance-and-the-best-possible-life.md)  
+- [🏍️🧘❓ Zen and the Art of Motorcycle Maintenance: An Inquiry into Values](./books/zen-and-the-art-of-motorcycle-maintenance-an-inquiry-into-values.md)  
+- [🤴 The Little Prince](./books/the-little-prince.md)  
+- [✨🧙‍♂️⚗️ The Alchemist](./books/the-alchemist.md)  
 - [🤖📐 Perceptrons: An Introduction to Computational Geometry](./books/perceptrons-an-introduction-to-computational-geometry.md)  
 - [🧠👥 The Society of Mind](./books/the-society-of-mind.md)  
-- [🔬⚙️ The Sciences of the Artificial](./books/the-sciences-of-the-artificial.md)  
-- [🏠🛠️ Home Improvement 1-2-3: Expert Advice from the Home Depot](./books/home-improvement-1-2-3-expert-advice-from-the-home-depot.md)  
-- [🏠🛠️ Ultimate Guide to Home Repair & Improvement](./books/ultimate-guide-to-home-repair-improvement.md)  
-- [👥⚔️👑 The Will of the Many](./books/the-will-of-the-many.md)  
-- [💥🌀➡️⏳⚖️🕰️ ️ Sync: How Order Emerges From Chaos In The Universe, Nature, And Daily Life](./books/sync.md)  
-- [🌪️✨🕰️ Order Out of Chaos: Man's New Dialogue with Nature](./books/order-out-of-chaos.md)  
-- [🌐🧭❓🔍🗺️ Complexity: A Guided Tour](./books/complexity.md)  
-- [🕷️⏳ Children of Time](./books/children-of-time.md)  
   
   
 ## [📺 Videos](./videos/index.md) (637)  
+- [❓🧭🗺️💡 How To Find Your Life's Purpose](./videos/how-to-find-your-lifes-purpose.md)  
+- [✨🎯🔒✅ How to make your dreams basically inevitable](./videos/how-to-make-your-dreams-basically-inevitable.md)  
 - [💡🧠🤖📝 Why you should take notes if you use AI](./videos/why-you-should-take-notes-if-you-use-ai.md)  
 - [✨⬆️🗣️👨‍💻 The third golden age of software engineering – thanks to AI, with Grady Booch](./videos/the-third-golden-age-of-software-engineering-thanks-to-ai-with-grady-booch.md)  
 - [🤯🗣️📱📈 “He behaved like a total maniac” Sam Harris on Elon & Big Tech’s turn towards Trump](./videos/he-behaved-like-a-total-maniac-sam-harris-on-elon-big-techs-turn-towards-trump.md)  
@@ -52,8 +54,6 @@ updated: 2026-02-06T17:26:02-08:00
 - [⛈️🌊🪢 How to Lead Through Chaos | Jeff Wang (CEO of Windsurf) | Ctrl Alt podcast](./videos/how-to-lead-through-chaos-jeff-wang-ceo-of-windsurf-ctrl-alt-podcast.md)  
 - [🤖⏱️🧠👨‍💻 OpenClaw's Creator Uses AI to Run His Life in 40 Minutes | Peter Steinberger](./videos/how-openclaws-creator-uses-ai-to-run-his-life-in-40-minutes-peter-steinberger.md)  
 - [🧠💡🚀✨ From Distractibility to Creativity with Dr. Ned Hallowell: A Favorite Replay Episode](./videos/from-distractibility-to-creativity-with-dr-ned-hallowell-a-favorite-replay-episode.md)  
-- [👑〰️📈 Appearance: Evil Dictator Pulling Strings | Reality: Emergent Behavior of System](./videos/appearance-evil-dictator-pulling-strings-reality-emergent-behavior-of-system.md)  
-- [🤖🧠💡 The ONLY skill you need in the AI era](./videos/the-only-skill-you-need-in-the-ai-era.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (88)  
@@ -73,9 +73,9 @@ updated: 2026-02-06T17:26:02-08:00
   
   
 ## [🤖💬 Bot Chats](./bot-chats/index.md) (47)  
+- [📖 Book 🧭 Explorer 3](./bot-chats/book-explorer-3.md)  
 - [📖 Book 🧭 Explorer 2](./bot-chats/book-explorer-2.md)  
 - [📖 Book 🧭 Explorer 1](./bot-chats/book-explorer-1.md)  
-- [📖 Book 🧭 Explorer 3](./bot-chats/book-explorer-3.md)  
 - [👶😭➡️😊 Summarize The Happiest Baby On The Block](./bot-chats/summarize-the-happiest-baby-on-the-block.md)  
 - [🇦🇹💰🆚📈🖨️ Austrian Economics vs Modern Monetary Theory](./bot-chats/austrian-economics-vs-modern-monetary-theory.md)  
   

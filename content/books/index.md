@@ -5,10 +5,10 @@ aliases:
 share: true
 URL: https://bagrounds.org/books
 backlinks: false
-updated: 2026-02-06T12:08:18-08:00
+updated: 2026-02-06T17:12:17-08:00
 ---
 [Home](../index.md)  
-# 📚 Books (910)  
+# 📚 Books (912)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [💻0️⃣ Source Code: My Beginnings](./source-code-my-beginnings.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)  
@@ -791,6 +791,7 @@ updated: 2026-02-06T12:08:18-08:00
 - [💪🎯🔬 The Science of Self-Discipline: The Willpower, Mental Toughness, and Self-Control to Resist Temptation and Achieve Your Goals](./the-science-of-self-discipline-the-willpower-mental-toughness-and-self-control-to-resist-temptation-and-achieve-your-goals.md)  
 - [😴🔬 The Science of Sleep: What It Is, How It Works, and Why It Matters](./the-science-of-sleep-what-it-is-how-it-works-and-why-it-matters.md)  
 - [🔬🗣️🎭 The Science of Storytelling: Why Stories Make Us Human and How to Tell Them Better](./the-science-of-storytelling.md)  
+- [🔬⚙️ The Sciences of the Artificial](./the-sciences-of-the-artificial.md)  
 - [🥼🛡️ The Scientific Attitude: Defending Science from Denial, Fraud, and Pseudoscience](./the-scientific-attitude.md)  
 - [🔬🥱 The Scientific Basis of Fatigue](./the-scientific-basis-of-fatigue.md)  
 - [🧪👁️ The Scientific Image](./the-scientific-image.md)  
@@ -867,6 +868,7 @@ updated: 2026-02-06T12:08:18-08:00
 - [🤝📜 Trust: A History](./trust-a-history.md)  
 - [🤝😇💰 Trust: The Social Virtues and the Creation of Prosperity](./trust-the-social-virtues-and-the-creation-of-prosperity.md)  
 - [🥀 Twilight of Democracy: 🐍 The Seductive Lure of Authoritarianism](./twilight-of-democracy.md)  
+- [🏠🛠️ Ultimate Guide to Home Repair & Improvement](./ultimate-guide-to-home-repair-improvement.md)  
 - [🚀🧠🏆 Ultralearning: Master Hard Skills, Outsmart the Competition, and Accelerate Your Career](./ultralearning-master-hard-skills-outsmart-the-competition-and-accelerate-your-career.md)  
 - [😠🎭 Uncivil Agreement: How Politics Became Our Identity](./uncivil-agreement-how-politics-became-our-identity.md)  
 - [😬👨🏿 Uncomfortable Conversations With A Black Man](./uncomfortable-conversations-with-a-black-man.md)  

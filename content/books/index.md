@@ -5,10 +5,10 @@ aliases:
 share: true
 URL: https://bagrounds.org/books
 backlinks: false
-updated: 2026-02-07T13:58:35-08:00
+updated: 2026-02-09T13:25:07-08:00
 ---
 [Home](../index.md)  
-# 📚 Books (914)  
+# 📚 Books (915)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [💻0️⃣ Source Code: My Beginnings](./source-code-my-beginnings.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)  
@@ -814,6 +814,7 @@ updated: 2026-02-07T13:58:35-08:00
 - [⚖️⬆️🤝 The Spirit Level: Why Greater Equality Makes Societies Stronger](./the-spirit-level-why-greater-equality-makes-societies-stronger.md)  
 - [👶⬆️👨‍💻📈 The Staff Engineer's Path](./the-staff-engineers-path.md)  
 - [⚔️♟️ The Strategy of Conflict](./the-strategy-of-conflict.md)  
+- [💪👥 The Strength of the Few](./the-strength-of-the-few.md)  
 - [🔬🔄 The Structure of Scientific Revolutions](./the-structure-of-scientific-revolutions.md)  
 - [☀️⛓️🕊️ The Sun Does Shine: How I Found Life and Freedom on Death Row](./the-sun-does-shine-how-i-found-life-and-freedom-on-death-row.md)  
 - [🐝🐝🐝 The Swarm](./the-swarm.md)  

@@ -8,7 +8,7 @@ Author:
 tags:
 affiliate link: https://amzn.to/3NIwksZ
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](../index.md) > [Books](./index.md) | [⏭️ 💪👥 The Strength of the Few](./the-strength-of-the-few.md)  
 # 👥⚔️👑 The Will of the Many  
 [🛒 The Will of the Many. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3NIwksZ)  
   

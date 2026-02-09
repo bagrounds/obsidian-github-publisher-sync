@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-02-07T13:58:35-08:00
+updated: 2026-02-09T13:25:07-08:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -13,7 +13,9 @@ updated: 2026-02-07T13:58:35-08:00
 ❔ What do 🫵 _you_ 🤔 think?  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (450)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (452)  
+- [2026-02-09](./reflections/2026-02-09.md)  
+- [2026-02-08](./reflections/2026-02-08.md)  
 - [2026-02-07](./reflections/2026-02-07.md)  
 - [2026-02-06](./reflections/2026-02-06.md)  
 - [2026-02-05 | 👥 Many ⚔️ Will 🧠 Know 🌪️ Chaos 📚📺](./reflections/2026-02-05.md)  
@@ -22,15 +24,15 @@ updated: 2026-02-07T13:58:35-08:00
 - [2026-02-02 | 👥 Many 👁️ Reality 🎲 Games 🎯 Need 🗽 Liberty 📚📺](./reflections/2026-02-02.md)  
 - [2026-02-01 | ✨ Bob ✍️ Will 📚](./reflections/2026-02-01.md)  
 - [2026-01-31 | ☄️ Project 👥 Many 📊 Insights 📚🪞](./reflections/2026-01-31.md)  
-- [2026-01-30 | 🛠️ Project 🕰️ Time 🧘 Discipline 📚](./reflections/2026-01-30.md)  
-- [2026-01-29 | ☄️ Hail 👨‍🚀 Martian 💻 Software 📚📺](./reflections/2026-01-29.md)  
   
   
 ## [🧰 Tools](./tools/index.md) (1)  
 - [🧮 Calculator](./tools/calculator.md)  
   
   
-## [📚 Books](./books/index.md) (914)  
+## [📚 Books](./books/index.md) (915)  
+- [💪👥 The Strength of the Few](./books/the-strength-of-the-few.md)  
+- [👥⚔️👑 The Will of the Many](./books/the-will-of-the-many.md)  
 - [💪❤️ So Good They Can't Ignore You: Why Skills Trump Passion in the Quest for Work You Love](./books/so-good-they-cant-ignore-you-why-skills-trump-passion-in-the-quest-for-work-you-love.md)  
 - [🚫💰❤️ The Wealth Money Can't Buy: The 8 Hidden Habits to Live Your Richest Life](./books/the-wealth-money-cant-buy-the-8-hidden-habits-to-live-your-richest-life.md)  
 - [🏃‍♂️⛰️ Born to Run: A Hidden Tribe, Superathletes, and the Greatest Race the World Has Never Seen](./books/born-to-run-a-hidden-tribe-superathletes-and-the-greatest-race-the-world-has-never-seen.md)  
@@ -39,8 +41,6 @@ updated: 2026-02-07T13:58:35-08:00
 - [🏍️🧘❓ Zen and the Art of Motorcycle Maintenance: An Inquiry into Values](./books/zen-and-the-art-of-motorcycle-maintenance-an-inquiry-into-values.md)  
 - [🤴 The Little Prince](./books/the-little-prince.md)  
 - [✨🧙‍♂️⚗️ The Alchemist](./books/the-alchemist.md)  
-- [🤖📐 Perceptrons: An Introduction to Computational Geometry](./books/perceptrons-an-introduction-to-computational-geometry.md)  
-- [🧠👥 The Society of Mind](./books/the-society-of-mind.md)  
   
   
 ## [📺 Videos](./videos/index.md) (637)  

@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-02-09T13:25:07-08:00
+updated: 2026-02-10T13:27:43-08:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -13,7 +13,8 @@ updated: 2026-02-09T13:25:07-08:00
 ❔ What do 🫵 _you_ 🤔 think?  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (452)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (453)  
+- [2026-02-10](./reflections/2026-02-10.md)  
 - [2026-02-09](./reflections/2026-02-09.md)  
 - [2026-02-08](./reflections/2026-02-08.md)  
 - [2026-02-07](./reflections/2026-02-07.md)  
@@ -23,14 +24,14 @@ updated: 2026-02-09T13:25:07-08:00
 - [🎨 Creativity 🧭 Navigating ⚛️ Quantum 📈 Scaling 📚📺📄](./reflections/2026-02-03.md)  
 - [2026-02-02 | 👥 Many 👁️ Reality 🎲 Games 🎯 Need 🗽 Liberty 📚📺](./reflections/2026-02-02.md)  
 - [2026-02-01 | ✨ Bob ✍️ Will 📚](./reflections/2026-02-01.md)  
-- [2026-01-31 | ☄️ Project 👥 Many 📊 Insights 📚🪞](./reflections/2026-01-31.md)  
   
   
 ## [🧰 Tools](./tools/index.md) (1)  
 - [🧮 Calculator](./tools/calculator.md)  
   
   
-## [📚 Books](./books/index.md) (915)  
+## [📚 Books](./books/index.md) (916)  
+- [🌱🔢✨ Precursor Math Concepts: The Wonder of Mathematical Worlds With Infants and Toddlers](./books/precursor-math-concepts-the-wonder-of-mathematical-worlds-with-infants-and-toddlers.md)  
 - [💪👥 The Strength of the Few](./books/the-strength-of-the-few.md)  
 - [👥⚔️👑 The Will of the Many](./books/the-will-of-the-many.md)  
 - [💪❤️ So Good They Can't Ignore You: Why Skills Trump Passion in the Quest for Work You Love](./books/so-good-they-cant-ignore-you-why-skills-trump-passion-in-the-quest-for-work-you-love.md)  
@@ -40,7 +41,6 @@ updated: 2026-02-09T13:25:07-08:00
 - [🧠🏆 Inner Excellence: Train Your Mind for Extraordinary Performance and the Best Possible Life](./books/inner-excellence-train-your-mind-for-extraordinary-performance-and-the-best-possible-life.md)  
 - [🏍️🧘❓ Zen and the Art of Motorcycle Maintenance: An Inquiry into Values](./books/zen-and-the-art-of-motorcycle-maintenance-an-inquiry-into-values.md)  
 - [🤴 The Little Prince](./books/the-little-prince.md)  
-- [✨🧙‍♂️⚗️ The Alchemist](./books/the-alchemist.md)  
   
   
 ## [📺 Videos](./videos/index.md) (637)  

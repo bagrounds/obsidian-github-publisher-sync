@@ -77,6 +77,6 @@ youtube: https://youtu.be/rJBQJzjw0WY
     * 🗣️ **The Fabric of the Cosmos** A theoretical physics book that focuses on abstract concepts like string theory and cosmology, representing the kind of highly abstract physics the speaker contrasted with his desire for more communicative and concrete physics \[[18:50](http://www.youtube.com/watch?v=rJBQJzjw0WY&t=1130)].  
   
 * **Creatively Related**  
-    * 🧸 **The Absorbent Mind** The foundational text by Maria Montessori, directly related to the educational philosophy mentioned by the speaker \[[20:37](http://www.youtube.com/watch?v=rJBQJzjw0WY&t=1237)].  
+    * **[🧽🧠 The Absorbent Mind](../books/the-absorbent-mind.md)** The foundational text by Maria Montessori, directly related to the educational philosophy mentioned by the speaker \[[20:37](http://www.youtube.com/watch?v=rJBQJzjw0WY&t=1237)].  
     * 📜 **The Penguin Book of Italian Folk Tales** A collection edited by Italo Calvino, whose work in compiling Italian fairy tales was explicitly referenced by the speaker when discussing communicating values to children \[[23:07](http://www.youtube.com/watch?v=rJBQJzjw0WY&t=1387)].  
     * ⚔️ **A History of the Second World War** Written by Winston Churchill, this is the massive, multi-volume work the speaker mentioned reading in his youth to satisfy his wide-ranging curiosity \[[13:47](http://www.youtube.com/watch?v=rJBQJzjw0WY&t=827)].

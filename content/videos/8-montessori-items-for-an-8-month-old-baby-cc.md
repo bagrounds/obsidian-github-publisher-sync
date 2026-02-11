@@ -72,7 +72,7 @@ youtube: https://youtu.be/YBtpAKmsMR8
 ## 📚 Book Recommendations  
 ### Similar  
 * Montessori: The Science Behind the Genius by Angeline Stoll Lillard. 🧠 This book provides the **academic and psychological research** that validates the concepts discussed, such as the prepared environment and sensitive periods.  
-* The Absorbent Mind by Maria Montessori. 💡 It offers the **foundational philosophy** straight from the originator, explaining the child's unique ability to unconsciously absorb information from the environment.  
+* [🧽🧠 The Absorbent Mind](../books/the-absorbent-mind.md) by Maria Montessori. 💡 It offers the **foundational philosophy** straight from the originator, explaining the child's unique ability to unconsciously absorb information from the environment.  
   
 ### Contrasting  
 * [🕳️🧠👶🏽 The Whole-Brain Child: 12 Revolutionary Strategies to Nurture Your Child's Developing Mind](../books/the-whole-brain-child.md) by Daniel J. Siegel and Tina Payne Bryson. 🧠 This book focuses on **integration and emotional development**, offering a more neuropsychological approach to parenting and discipline that contrasts with Montessori's emphasis on material manipulation and the child's work.  

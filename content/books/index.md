@@ -5,10 +5,10 @@ aliases:
 share: true
 URL: https://bagrounds.org/books
 backlinks: false
-updated: 2026-02-10T21:46:14-08:00
+updated: 2026-02-11T15:55:08-08:00
 ---
 [Home](../index.md)  
-# 📚 Books (917)  
+# 📚 Books (918)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [💻0️⃣ Source Code: My Beginnings](./source-code-my-beginnings.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)  
@@ -849,6 +849,7 @@ updated: 2026-02-10T21:46:14-08:00
 - [🏆🤯💰 The Winner's Curse: Paradoxes and Anomalies of Economic Life](./the-winners-curse-paradoxes-and-anomalies-of-economic-life.md)  
 - [🇨🇳🌍 The World According to China](./the-world-according-to-china.md)  
 - [👍🧠 The Yes Brain: How to Cultivate Courage, Curiosity, and Resilience in Your Child](./the-yes-brain.md)  
+- [🧒🔢 The Young Child and Mathematics](./the-young-child-and-mathematics.md)  
 - [⚡🗣️ Think Faster, Talk Smarter: How to Speak Successfully When You're Put on the Spot](./think-faster-talk-smarter-how-to-speak-successfully-when-youre-put-on-the-spot.md)  
 - [🤔🐇🐢 Thinking, Fast and Slow](./thinking-fast-and-slow.md)  
 - [🎲🤔 Thinking in Bets: Making Smarter Decisions When You Don't Have All the Facts](./thinking-in-bets-making-smarter-decisions-when-you-dont-have-all-the-facts.md)  

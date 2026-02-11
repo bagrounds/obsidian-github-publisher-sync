@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-02-10T13:27:43-08:00
+updated: 2026-02-10T21:46:14-08:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -30,8 +30,9 @@ updated: 2026-02-10T13:27:43-08:00
 - [🧮 Calculator](./tools/calculator.md)  
   
   
-## [📚 Books](./books/index.md) (916)  
+## [📚 Books](./books/index.md) (917)  
 - [🌱🔢✨ Precursor Math Concepts: The Wonder of Mathematical Worlds With Infants and Toddlers](./books/precursor-math-concepts-the-wonder-of-mathematical-worlds-with-infants-and-toddlers.md)  
+- [🧽🧠 The Absorbent Mind](./books/the-absorbent-mind.md)  
 - [💪👥 The Strength of the Few](./books/the-strength-of-the-few.md)  
 - [👥⚔️👑 The Will of the Many](./books/the-will-of-the-many.md)  
 - [💪❤️ So Good They Can't Ignore You: Why Skills Trump Passion in the Quest for Work You Love](./books/so-good-they-cant-ignore-you-why-skills-trump-passion-in-the-quest-for-work-you-love.md)  
@@ -40,10 +41,11 @@ updated: 2026-02-10T13:27:43-08:00
 - [💪😊🎯 From Strength to Strength: Finding Success, Happiness, and Deep Purpose in the Second Half of Life](./books/from-strength-to-strength-finding-success-happiness-and-deep-purpose-in-the-second-half-of-life.md)  
 - [🧠🏆 Inner Excellence: Train Your Mind for Extraordinary Performance and the Best Possible Life](./books/inner-excellence-train-your-mind-for-extraordinary-performance-and-the-best-possible-life.md)  
 - [🏍️🧘❓ Zen and the Art of Motorcycle Maintenance: An Inquiry into Values](./books/zen-and-the-art-of-motorcycle-maintenance-an-inquiry-into-values.md)  
-- [🤴 The Little Prince](./books/the-little-prince.md)  
   
   
 ## [📺 Videos](./videos/index.md) (637)  
+- [🇮🇹🏆🗣️ Giorgio Parisi: Nobel Prize Conversations](./videos/giorgio-parisi-nobel-prize-conversations.md)  
+- [👶🧸8️⃣🗓️ Montessori Items For An 8 Month Old Baby](./videos/8-montessori-items-for-an-8-month-old-baby-cc.md)  
 - [❓🧭🗺️💡 How To Find Your Life's Purpose](./videos/how-to-find-your-lifes-purpose.md)  
 - [✨🎯🔒✅ How to make your dreams basically inevitable](./videos/how-to-make-your-dreams-basically-inevitable.md)  
 - [💡🧠🤖📝 Why you should take notes if you use AI](./videos/why-you-should-take-notes-if-you-use-ai.md)  
@@ -52,8 +54,6 @@ updated: 2026-02-10T13:27:43-08:00
 - [🔧🚰🛠️ How to Replace the Seats & Springs in a Single Handle Faucet | Repair and Replace](./videos/how-to-replace-the-seats-springs-in-a-single-handle-faucet-repair-and-replace.md)  
 - [🤖🧠🚀 What you must know before AGI arrives | Carnegie Mellon University Po-Shen Loh](./videos/what-you-must-know-before-agi-arrives-carnegie-mellon-university-po-shen-loh.md)  
 - [⛈️🌊🪢 How to Lead Through Chaos | Jeff Wang (CEO of Windsurf) | Ctrl Alt podcast](./videos/how-to-lead-through-chaos-jeff-wang-ceo-of-windsurf-ctrl-alt-podcast.md)  
-- [🤖⏱️🧠👨‍💻 OpenClaw's Creator Uses AI to Run His Life in 40 Minutes | Peter Steinberger](./videos/how-openclaws-creator-uses-ai-to-run-his-life-in-40-minutes-peter-steinberger.md)  
-- [🧠💡🚀✨ From Distractibility to Creativity with Dr. Ned Hallowell: A Favorite Replay Episode](./videos/from-distractibility-to-creativity-with-dr-ned-hallowell-a-favorite-replay-episode.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (88)  

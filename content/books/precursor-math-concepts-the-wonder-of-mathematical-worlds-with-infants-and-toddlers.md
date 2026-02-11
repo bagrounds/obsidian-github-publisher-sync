@@ -89,7 +89,7 @@ affiliate link: https://amzn.to/4ceTZeA
 * 📚 Why Johnny Can't Add: The Failure of the New Math by Morris Kline (critique of modern math education, though not specific to early childhood)  
   
 ### ✨ Related  
-* 💡 The Absorbent Mind by Maria Montessori (core philosophy on early childhood learning)  
+* [🧽🧠 The Absorbent Mind](./the-absorbent-mind.md) by Maria Montessori (core philosophy on early childhood learning)  
 * 🗣️ The Hundred Languages of Children by Loris Malaguzzi and the Educators of Reggio Emilia (foundational text on Reggio Emilia approach)  
 * 🌟 [🌱🧘🏼‍♀️🏆 Mindset: The New Psychology of Success](./mindset.md) by Carol S. Dweck (growth mindset, applicable to math learning)  
 * 🎨 Play, Playfulness, Creativity and Creativity in Early Childhood by Jane Hislam (explores the importance of play)  

@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-02-11T15:55:08-08:00
+updated: 2026-02-12T16:09:46-08:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -13,7 +13,8 @@ updated: 2026-02-11T15:55:08-08:00
 ❔ What do 🫵 _you_ 🤔 think?  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (454)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (455)  
+- [2026-02-12](./reflections/2026-02-12.md)  
 - [2026-02-11](./reflections/2026-02-11.md)  
 - [2026-02-10](./reflections/2026-02-10.md)  
 - [2026-02-09](./reflections/2026-02-09.md)  
@@ -23,14 +24,14 @@ updated: 2026-02-11T15:55:08-08:00
 - [2026-02-05 | 👥 Many ⚔️ Will 🧠 Know 🌪️ Chaos 📚📺](./reflections/2026-02-05.md)  
 - [2026-02-04 | ⚛️ Quantum 📜 Will 🛠️ Creator 📚📺](./reflections/2026-02-04.md)  
 - [🎨 Creativity 🧭 Navigating ⚛️ Quantum 📈 Scaling 📚📺📄](./reflections/2026-02-03.md)  
-- [2026-02-02 | 👥 Many 👁️ Reality 🎲 Games 🎯 Need 🗽 Liberty 📚📺](./reflections/2026-02-02.md)  
   
   
 ## [🧰 Tools](./tools/index.md) (1)  
 - [🧮 Calculator](./tools/calculator.md)  
   
   
-## [📚 Books](./books/index.md) (918)  
+## [📚 Books](./books/index.md) (919)  
+- [👶🧠➕ Children are Born Mathematicians: Supporting Mathematical Development, Birth to Age 8](./books/children-are-born-mathematicians-supporting-mathematical-development-birth-to-age-8.md)  
 - [🧒🔢 The Young Child and Mathematics](./books/the-young-child-and-mathematics.md)  
 - [🌱🔢✨ Precursor Math Concepts: The Wonder of Mathematical Worlds With Infants and Toddlers](./books/precursor-math-concepts-the-wonder-of-mathematical-worlds-with-infants-and-toddlers.md)  
 - [🧽🧠 The Absorbent Mind](./books/the-absorbent-mind.md)  
@@ -40,7 +41,6 @@ updated: 2026-02-11T15:55:08-08:00
 - [🚫💰❤️ The Wealth Money Can't Buy: The 8 Hidden Habits to Live Your Richest Life](./books/the-wealth-money-cant-buy-the-8-hidden-habits-to-live-your-richest-life.md)  
 - [🏃‍♂️⛰️ Born to Run: A Hidden Tribe, Superathletes, and the Greatest Race the World Has Never Seen](./books/born-to-run-a-hidden-tribe-superathletes-and-the-greatest-race-the-world-has-never-seen.md)  
 - [💪😊🎯 From Strength to Strength: Finding Success, Happiness, and Deep Purpose in the Second Half of Life](./books/from-strength-to-strength-finding-success-happiness-and-deep-purpose-in-the-second-half-of-life.md)  
-- [🧠🏆 Inner Excellence: Train Your Mind for Extraordinary Performance and the Best Possible Life](./books/inner-excellence-train-your-mind-for-extraordinary-performance-and-the-best-possible-life.md)  
   
   
 ## [📺 Videos](./videos/index.md) (637)  

@@ -73,7 +73,7 @@ affiliate link: https://amzn.to/4rKdfFe
 ### ✨ Similar  
 * 📖 Mathematics Learning in Early Childhood: Paths Toward Excellence and Equity by National Research Council: Comprehensive review of research on early math development and education.  
 * 📚 Learning and Teaching Early Math: The Learning Trajectories Approach by Douglas H. Clements and Julie Sarama: Details the theory and application of learning trajectories in early math education.  
-* 👶 Children are Born Mathematicians: Supporting Mathematical Development, Birth to Age 8 by Eugene Geist: Focuses on how children naturally develop mathematical thinking and how to support it.  
+* [👶🧠➕ Children are Born Mathematicians: Supporting Mathematical Development, Birth to Age 8](./children-are-born-mathematicians-supporting-mathematical-development-birth-to-age-8.md) by Eugene Geist: Focuses on how children naturally develop mathematical thinking and how to support it.  
   
 ### ↔️ Contrasting  
 * 🏫 The Schools We Need and Why We Don't Have Them by E. D. Hirsch Jr.: Argues for a more knowledge-rich, content-specific curriculum, potentially contrasting with purely constructivist or play-based approaches without strong content guidance.  

@@ -50,7 +50,7 @@ A: 🤓 The setting is heavily inspired by the Roman Republic, featuring tiered 
   
 ### 📖 Non-Fiction  
   
-* 🏛️ SPQR: A History of Ancient Rome by Mary Beard  
+* [🏛️📜 SPQR: A History of Ancient Rome](./spqr-a-history-of-ancient-rome.md) by Mary Beard  
 * 🔋 Power and Progress by Daron Acemoglu and Simon Johnson  
   
 ### ❤️ If You Loved This  

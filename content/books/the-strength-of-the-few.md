@@ -45,7 +45,7 @@ A: 🤓 The story features a deeply technical system called Will, which operates
   
 ### 📖 Non-Fiction  
   
-* 🏛️ SPQR: A History of Ancient Rome by Mary Beard  
+* [🏛️📜 SPQR: A History of Ancient Rome](./spqr-a-history-of-ancient-rome.md) by Mary Beard  
 * 🔬 The Hidden Reality: Parallel Universes and the Deep Laws of the Cosmos by Brian Greene  
   
 ### ❤️ If You Loved This  

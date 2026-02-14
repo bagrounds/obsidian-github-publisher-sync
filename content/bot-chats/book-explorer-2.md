@@ -53,7 +53,7 @@ Let's think of some topics very different from Well-being/Holistic Health:
 * **Q: Astrophysics** 🔭 - The study of the physical properties and structure of the universe.  
     * Recommendation: *Astrophysics for People in a Hurry* by Neil deGrasse Tyson. A concise and engaging introduction to the wonders of the cosmos. ✨  
 * **R: Ancient Roman History** 🏛️ - The study of the rise and fall of the Roman Empire and its civilization.  
-    * Recommendation: *SPQR: A History of Ancient Rome* by Mary Beard. A comprehensive and insightful look at Roman history from its mythical beginnings to the reign of Caracalla. 📜  
+    * Recommendation: [🏛️📜 SPQR: A History of Ancient Rome](../books/spqr-a-history-of-ancient-rome.md) by Mary Beard. A comprehensive and insightful look at Roman history from its mythical beginnings to the reign of Caracalla. 📜  
   
 ### Meta Global Exploration: Radically Different Book 🌠  
   

@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+      - copilot/investigate-build-time-optimization  # TEMPORARY: for testing, remove before merge
 
 permissions:
   contents: read
@@ -48,7 +49,27 @@ jobs:
         if: ${{ steps.cache.outputs.cache-hit != 'true' }}
         run: npm ci
 
+      # Cache OG images and manifest across builds for performance. This uses a hybrid approach:
+      # 1. GitHub Actions caches public/ directory (OG images) and .quartz-cache (manifest)
+      # 2. Build-time logic in quartz/plugins/emitters/ogImage.tsx uses manifest to track
+      #    which files have been processed and their source modification dates
+      # 3. Only files with changed source content regenerate their OG images
+      # Note: Manifest is stored in .quartz-cache to survive the public/ directory clean
+      # that happens at build start. This provides per-file granularity without managing
+      # thousands of separate cache entries.
+      - name: Cache OG Images
+        uses: actions/cache@v4
+        with:
+          path: |
+            public
+            .quartz-cache
+          key: og-images-${{ github.sha }}
+          restore-keys: |
+            og-images-
+
       - name: Build Quartz
+        env:
+          SKIP_EXISTING_OG_IMAGES: "true"
         run: npx quartz build
 
       - name: Upload artifact

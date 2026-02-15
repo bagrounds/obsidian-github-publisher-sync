@@ -5,10 +5,10 @@ aliases:
 share: true
 URL: https://bagrounds.org/books
 backlinks: false
-updated: 2026-02-12T16:09:46-08:00
+updated: 2026-02-15T08:33:35-08:00
 ---
 [Home](../index.md)  
-# 📚 Books (919)  
+# 📚 Books (922)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [💻0️⃣ Source Code: My Beginnings](./source-code-my-beginnings.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)  
@@ -574,6 +574,7 @@ updated: 2026-02-12T16:09:46-08:00
 - [🧊💰⛵🏛️ So You Want to Own Greenland?: Lessons from the Vikings to Trump](./so-you-want-to-own-greenland-lessons-from-the-vikings-to-trump.md)  
 - [⚡🧠🏃 Spark: The Revolutionary New Science of Exercise and the Brain](./spark-the-revolutionary-new-science-of-exercise-and-the-brain.md)  
 - [🧪✨🧠 Spellbound: Modern Science, Ancient Magic, and the Hidden Potential of the Unconscious Mind](./spellbound-modern-science-ancient-magic-and-the-hidden-potential-of-the-unconscious-mind.md)  
+- [🏛️📜 SPQR: A History of Ancient Rome](./spqr-a-history-of-ancient-rome.md)  
 - [🌱🟩⬆️ Square Foot Gardening, 4th Edition: The World’s Most Popular Growing Method to Harvest MORE Food from Less Space](./square-foot-gardening-4th-edition-the-worlds-most-popular-growing-method-to-harvest-more-food-from-less-space.md)  
 - [📉📈 Stabilizing an Unstable Economy](./stabilizing-an-unstable-economy.md)  
 - [❓🎯 Start with Why: How Great Leaders Inspire Everyone to Take Action](./start-with-why-how-great-leaders-inspire-everyone-to-take-action.md)  
@@ -685,6 +686,7 @@ updated: 2026-02-12T16:09:46-08:00
 - [🎨🔄🧠🏢 The Fifth Discipline: The Art and Practice of the Learning Organization](./the-fifth-discipline.md)  
 - [⚠️🥴🕹️🌐 The Fifth Risk](./the-fifth-risk.md)  
 - [⏱️🚀 The First 20 Hours: How to Learn Anything... Fast](./the-first-20-hours-how-to-learn-anything-fast.md)  
+- [🔪🗡️ The Folding Knife](./the-folding-knife.md)  
 - [♾️🌿🔬 The Fractal Geometry of Nature](./the-fractal-geometry-of-nature.md)  
 - [🧑‍💼🏦💸 The General Theory of Employment, Interest, and Money](./the-general-theory-of-employment-interest-and-money.md)  
 - [🎁🔄 The Gift: The Form and Reason for Exchange in Archaic Societies](./the-gift-the-form-and-reason-for-exchange-in-archaic-societies.md)  
@@ -787,6 +789,7 @@ updated: 2026-02-12T16:09:46-08:00
 - [😇🧠 The Righteous Mind: Why Good People Are Divided by Politics and Religion](./the-righteous-mind.md)  
 - [🗳️🇺🇸 The Right to Vote: The Contested History of Democracy in the United States](./the-right-to-vote-the-contested-history-of-democracy-in-the-united-states.md)  
 - [👨‍👧 The Role of the Father in Child Development](./the-role-of-the-father-in-child-development.md)  
+- [🥀🏛️ The Ruin of the Roman Empire: A New History](./the-ruin-of-the-roman-empire-a-new-history.md)  
 - [🏛️⚖️ The Rule of Law](./the-rule-of-law.md)  
 - [🧑‍🤝‍🧑🔬 The Science of Making Friends: Helping Socially Challenged Teens and Young Adults](./the-science-of-making-friends-helping-socially-challenged-teens-and-young-adults.md)  
 - [🤰👶🔬👩‍⚕️ 🧪 The Science of Mom: A Research-Based Guide to Your Baby's First Year](./the-science-of-mom.md)  

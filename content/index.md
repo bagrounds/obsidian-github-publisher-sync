@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-02-12T16:09:46-08:00
+updated: 2026-02-15T08:33:35-08:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -13,7 +13,10 @@ updated: 2026-02-12T16:09:46-08:00
 ❔ What do 🫵 _you_ 🤔 think?  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (455)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (458)  
+- [2026-02-15](./reflections/2026-02-15.md)  
+- [2026-02-14](./reflections/2026-02-14.md)  
+- [2026-02-13](./reflections/2026-02-13.md)  
 - [2026-02-12](./reflections/2026-02-12.md)  
 - [2026-02-11](./reflections/2026-02-11.md)  
 - [2026-02-10](./reflections/2026-02-10.md)  
@@ -21,26 +24,23 @@ updated: 2026-02-12T16:09:46-08:00
 - [2026-02-08](./reflections/2026-02-08.md)  
 - [2026-02-07](./reflections/2026-02-07.md)  
 - [2026-02-06](./reflections/2026-02-06.md)  
-- [2026-02-05 | 👥 Many ⚔️ Will 🧠 Know 🌪️ Chaos 📚📺](./reflections/2026-02-05.md)  
-- [2026-02-04 | ⚛️ Quantum 📜 Will 🛠️ Creator 📚📺](./reflections/2026-02-04.md)  
-- [🎨 Creativity 🧭 Navigating ⚛️ Quantum 📈 Scaling 📚📺📄](./reflections/2026-02-03.md)  
   
   
 ## [🧰 Tools](./tools/index.md) (1)  
 - [🧮 Calculator](./tools/calculator.md)  
   
   
-## [📚 Books](./books/index.md) (919)  
+## [📚 Books](./books/index.md) (922)  
+- [🔪🗡️ The Folding Knife](./books/the-folding-knife.md)  
+- [🏛️📜 SPQR: A History of Ancient Rome](./books/spqr-a-history-of-ancient-rome.md)  
+- [🥀🏛️ The Ruin of the Roman Empire: A New History](./books/the-ruin-of-the-roman-empire-a-new-history.md)  
+- [👥⚔️👑 The Will of the Many](./books/the-will-of-the-many.md)  
+- [💪👥 The Strength of the Few](./books/the-strength-of-the-few.md)  
 - [👶🧠➕ Children are Born Mathematicians: Supporting Mathematical Development, Birth to Age 8](./books/children-are-born-mathematicians-supporting-mathematical-development-birth-to-age-8.md)  
 - [🧒🔢 The Young Child and Mathematics](./books/the-young-child-and-mathematics.md)  
 - [🌱🔢✨ Precursor Math Concepts: The Wonder of Mathematical Worlds With Infants and Toddlers](./books/precursor-math-concepts-the-wonder-of-mathematical-worlds-with-infants-and-toddlers.md)  
 - [🧽🧠 The Absorbent Mind](./books/the-absorbent-mind.md)  
-- [💪👥 The Strength of the Few](./books/the-strength-of-the-few.md)  
-- [👥⚔️👑 The Will of the Many](./books/the-will-of-the-many.md)  
 - [💪❤️ So Good They Can't Ignore You: Why Skills Trump Passion in the Quest for Work You Love](./books/so-good-they-cant-ignore-you-why-skills-trump-passion-in-the-quest-for-work-you-love.md)  
-- [🚫💰❤️ The Wealth Money Can't Buy: The 8 Hidden Habits to Live Your Richest Life](./books/the-wealth-money-cant-buy-the-8-hidden-habits-to-live-your-richest-life.md)  
-- [🏃‍♂️⛰️ Born to Run: A Hidden Tribe, Superathletes, and the Greatest Race the World Has Never Seen](./books/born-to-run-a-hidden-tribe-superathletes-and-the-greatest-race-the-world-has-never-seen.md)  
-- [💪😊🎯 From Strength to Strength: Finding Success, Happiness, and Deep Purpose in the Second Half of Life](./books/from-strength-to-strength-finding-success-happiness-and-deep-purpose-in-the-second-half-of-life.md)  
   
   
 ## [📺 Videos](./videos/index.md) (637)  
@@ -73,8 +73,8 @@ updated: 2026-02-12T16:09:46-08:00
   
   
 ## [🤖💬 Bot Chats](./bot-chats/index.md) (47)  
-- [📖 Book 🧭 Explorer 3](./bot-chats/book-explorer-3.md)  
 - [📖 Book 🧭 Explorer 2](./bot-chats/book-explorer-2.md)  
+- [📖 Book 🧭 Explorer 3](./bot-chats/book-explorer-3.md)  
 - [📖 Book 🧭 Explorer 1](./bot-chats/book-explorer-1.md)  
 - [👶😭➡️😊 Summarize The Happiest Baby On The Block](./bot-chats/summarize-the-happiest-baby-on-the-block.md)  
 - [🇦🇹💰🆚📈🖨️ Austrian Economics vs Modern Monetary Theory](./bot-chats/austrian-economics-vs-modern-monetary-theory.md)  

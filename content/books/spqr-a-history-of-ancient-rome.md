@@ -69,7 +69,7 @@ affiliate link: https://amzn.to/3MaZNvf
   
 ## 📚 Book Recommendations  
 ### 🤝 Similar  
-* 📖 The Ruin of the Roman Empire by James J. O'Donnell  
+* [🥀🏛️ The Ruin of the Roman Empire: A New History](./the-ruin-of-the-roman-empire-a-new-history.md) by James J. O'Donnell  
 * 📜 The Histories by Tacitus  
 * 👑 The Twelve Caesars by Suetonius  
   

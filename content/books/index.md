@@ -8,7 +8,7 @@ backlinks: false
 updated: 2026-02-16T13:53:49-08:00
 ---
 [Home](../index.md)  
-# 📚 Books (923)  
+# 📚 Books (924)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [💻0️⃣ Source Code: My Beginnings](./source-code-my-beginnings.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)  
@@ -226,6 +226,7 @@ updated: 2026-02-16T13:53:49-08:00
 - [🇺🇸⚖️ ERISA: Contemporary US Supreme Court Cases](./erisa-contemporary-us-supreme-court-cases.md)  
 - [🇺🇸❓📚 ERISA Law Answer Book](./erisa-law-answer-book.md)  
 - [🏛️💻 ERISA: The Law and the Code](./erisa-the-law-and-the-code.md)  
+- [💥💰🔓 Escape from Capitalism: An Intervention](./escape-from-capitalism-an-intervention.md)  
 - [➖💯 Essentialism: The Disciplined Pursuit of Less](./essentialism-the-disciplined-pursuit-of-less.md)  
 - [💪⚕️ Essentials of Creatine in Sports and Health](./essentials-of-creatine-in-sports-and-health.md)  
 - [🌍✍🏿 Everybody Writes: Your Go-To Guide to Creating Ridiculously Good Content](./everybody-writes.md)  

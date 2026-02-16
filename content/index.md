@@ -30,7 +30,8 @@ updated: 2026-02-16T13:53:49-08:00
 - [🧮 Calculator](./tools/calculator.md)  
   
   
-## [📚 Books](./books/index.md) (923)  
+## [📚 Books](./books/index.md) (924)  
+- [💥💰🔓 Escape from Capitalism: An Intervention](./books/escape-from-capitalism-an-intervention.md)  
 - [🎲🤔 Thinking in Bets: Making Smarter Decisions When You Don't Have All the Facts](./books/thinking-in-bets-making-smarter-decisions-when-you-dont-have-all-the-facts.md)  
 - [🤖🤖🤖 We Are Legion (We Are Bob)](./books/we-are-legion-we-are-bob.md)  
 - [🤖⚙️ AI Agents in Action](./books/ai-agents-in-action.md)  
@@ -40,7 +41,6 @@ updated: 2026-02-16T13:53:49-08:00
 - [🥀🏛️ The Ruin of the Roman Empire: A New History](./books/the-ruin-of-the-roman-empire-a-new-history.md)  
 - [👥⚔️👑 The Will of the Many](./books/the-will-of-the-many.md)  
 - [💪👥 The Strength of the Few](./books/the-strength-of-the-few.md)  
-- [👶🧠➕ Children are Born Mathematicians: Supporting Mathematical Development, Birth to Age 8](./books/children-are-born-mathematicians-supporting-mathematical-development-birth-to-age-8.md)  
   
   
 ## [📺 Videos](./videos/index.md) (638)  

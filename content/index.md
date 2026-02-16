@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-02-16T14:15:54-08:00
+updated: 2026-02-16T15:50:01-08:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -15,13 +15,13 @@ updated: 2026-02-16T14:15:54-08:00
   
 ## [🪞 Reflections](./reflections/index.md) ~ Blog (459)  
 - [2026-02-16](./reflections/2026-02-16.md)  
-- [2026-02-15](./reflections/2026-02-15.md)  
-- [2026-02-14](./reflections/2026-02-14.md)  
-- [2026-02-13](./reflections/2026-02-13.md)  
-- [2026-02-12](./reflections/2026-02-12.md)  
-- [2026-02-11](./reflections/2026-02-11.md)  
-- [2026-02-10](./reflections/2026-02-10.md)  
-- [2026-02-09](./reflections/2026-02-09.md)  
+- [2026-02-15 | 📁 Folding 💪 Strength 📚](./reflections/2026-02-15.md)  
+- [2026-02-14 | 🏛️ Roman 🤏 Few 📚](./reflections/2026-02-14.md)  
+- [2026-02-13 | 📜 Ancient 💪 Strength 📚](./reflections/2026-02-13.md)  
+- [2026-02-12 | 🧮 Mathematical 💪 Strength 📚](./reflections/2026-02-12.md)  
+- [2026-02-11 | 🚼 Child 💪 Strength 📚](./reflections/2026-02-11.md)  
+- [2026-02-10 | 🧽 Absorbent 💪 Strength 📚](./reflections/2026-02-10.md)  
+- [2026-02-09 | 🤏 Few 👶🏼 Toddlers 🧭 Will 📚](./reflections/2026-02-09.md)  
 - [2026-02-08](./reflections/2026-02-08.md)  
 - [2026-02-07](./reflections/2026-02-07.md)  
   

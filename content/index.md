@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-02-16T11:21:45-08:00
+updated: 2026-02-16T13:53:49-08:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -43,7 +43,8 @@ updated: 2026-02-16T11:21:45-08:00
 - [👶🧠➕ Children are Born Mathematicians: Supporting Mathematical Development, Birth to Age 8](./books/children-are-born-mathematicians-supporting-mathematical-development-birth-to-age-8.md)  
   
   
-## [📺 Videos](./videos/index.md) (637)  
+## [📺 Videos](./videos/index.md) (638)  
+- [💰🚫🌍✨ Clara Mattei: capitalism is not natural - it’s enforced](./videos/clara-mattei-capitalism-is-not-natural-its-enforced.md)  
 - [🇮🇹🏆🗣️ Giorgio Parisi: Nobel Prize Conversations](./videos/giorgio-parisi-nobel-prize-conversations.md)  
 - [👶🧸8️⃣🗓️ Montessori Items For An 8 Month Old Baby](./videos/8-montessori-items-for-an-8-month-old-baby-cc.md)  
 - [❓🧭🗺️💡 How To Find Your Life's Purpose](./videos/how-to-find-your-lifes-purpose.md)  
@@ -53,7 +54,6 @@ updated: 2026-02-16T11:21:45-08:00
 - [🤯🗣️📱📈 “He behaved like a total maniac” Sam Harris on Elon & Big Tech’s turn towards Trump](./videos/he-behaved-like-a-total-maniac-sam-harris-on-elon-big-techs-turn-towards-trump.md)  
 - [🔧🚰🛠️ How to Replace the Seats & Springs in a Single Handle Faucet | Repair and Replace](./videos/how-to-replace-the-seats-springs-in-a-single-handle-faucet-repair-and-replace.md)  
 - [🤖🧠🚀 What you must know before AGI arrives | Carnegie Mellon University Po-Shen Loh](./videos/what-you-must-know-before-agi-arrives-carnegie-mellon-university-po-shen-loh.md)  
-- [⛈️🌊🪢 How to Lead Through Chaos | Jeff Wang (CEO of Windsurf) | Ctrl Alt podcast](./videos/how-to-lead-through-chaos-jeff-wang-ceo-of-windsurf-ctrl-alt-podcast.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (88)  

@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-02-15T08:33:35-08:00
+updated: 2026-02-16T11:21:45-08:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -13,7 +13,8 @@ updated: 2026-02-15T08:33:35-08:00
 ❔ What do 🫵 _you_ 🤔 think?  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (458)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (459)  
+- [2026-02-16](./reflections/2026-02-16.md)  
 - [2026-02-15](./reflections/2026-02-15.md)  
 - [2026-02-14](./reflections/2026-02-14.md)  
 - [2026-02-13](./reflections/2026-02-13.md)  
@@ -23,24 +24,23 @@ updated: 2026-02-15T08:33:35-08:00
 - [2026-02-09](./reflections/2026-02-09.md)  
 - [2026-02-08](./reflections/2026-02-08.md)  
 - [2026-02-07](./reflections/2026-02-07.md)  
-- [2026-02-06](./reflections/2026-02-06.md)  
   
   
 ## [🧰 Tools](./tools/index.md) (1)  
 - [🧮 Calculator](./tools/calculator.md)  
   
   
-## [📚 Books](./books/index.md) (922)  
+## [📚 Books](./books/index.md) (923)  
+- [🎲🤔 Thinking in Bets: Making Smarter Decisions When You Don't Have All the Facts](./books/thinking-in-bets-making-smarter-decisions-when-you-dont-have-all-the-facts.md)  
+- [🤖🤖🤖 We Are Legion (We Are Bob)](./books/we-are-legion-we-are-bob.md)  
+- [🤖⚙️ AI Agents in Action](./books/ai-agents-in-action.md)  
+- [🚨🤖💥 All Systems Red](./books/all-systems-red.md)  
 - [🔪🗡️ The Folding Knife](./books/the-folding-knife.md)  
 - [🏛️📜 SPQR: A History of Ancient Rome](./books/spqr-a-history-of-ancient-rome.md)  
 - [🥀🏛️ The Ruin of the Roman Empire: A New History](./books/the-ruin-of-the-roman-empire-a-new-history.md)  
 - [👥⚔️👑 The Will of the Many](./books/the-will-of-the-many.md)  
 - [💪👥 The Strength of the Few](./books/the-strength-of-the-few.md)  
 - [👶🧠➕ Children are Born Mathematicians: Supporting Mathematical Development, Birth to Age 8](./books/children-are-born-mathematicians-supporting-mathematical-development-birth-to-age-8.md)  
-- [🧒🔢 The Young Child and Mathematics](./books/the-young-child-and-mathematics.md)  
-- [🌱🔢✨ Precursor Math Concepts: The Wonder of Mathematical Worlds With Infants and Toddlers](./books/precursor-math-concepts-the-wonder-of-mathematical-worlds-with-infants-and-toddlers.md)  
-- [🧽🧠 The Absorbent Mind](./books/the-absorbent-mind.md)  
-- [💪❤️ So Good They Can't Ignore You: Why Skills Trump Passion in the Quest for Work You Love](./books/so-good-they-cant-ignore-you-why-skills-trump-passion-in-the-quest-for-work-you-love.md)  
   
   
 ## [📺 Videos](./videos/index.md) (637)  

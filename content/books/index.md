@@ -5,10 +5,10 @@ aliases:
 share: true
 URL: https://bagrounds.org/books
 backlinks: false
-updated: 2026-02-15T08:33:35-08:00
+updated: 2026-02-16T11:21:45-08:00
 ---
 [Home](../index.md)  
-# 📚 Books (922)  
+# 📚 Books (923)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [💻0️⃣ Source Code: My Beginnings](./source-code-my-beginnings.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)  
@@ -40,6 +40,7 @@ updated: 2026-02-15T08:33:35-08:00
 - [🇺🇸⚔️ Alexander Hamilton](./alexander-hamilton.md)  
 - [⚙️🎯 Algorithms for Optimization](./algorithms-for-optimization.md)  
 - [🤔💻🧠 Algorithms to Live By: The Computer Science of Human Decisions](./algorithms-to-live-by.md)  
+- [🚨🤖💥 All Systems Red](./all-systems-red.md)  
 - [🌟👁️🔦 All the Light We Cannot See](./all-the-light-we-cannot-see.md)  
 - [➡️🌌🚀😡 A Long Way to a Small, Angry Planet](./a-long-way-to-a-small-angry-planet.md)  
 - [🔬🧘🏼‍♀️🧠 Altered Traits: Science Reveals How Meditation Changes Your Mind, Brain, and Body](./altered-traits-science-reveals-how-meditation-changes-your-mind-brain-and-body.md)  

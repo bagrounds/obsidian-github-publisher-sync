@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-02-16T13:53:49-08:00
+updated: 2026-02-16T14:15:54-08:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -43,7 +43,8 @@ updated: 2026-02-16T13:53:49-08:00
 - [💪👥 The Strength of the Few](./books/the-strength-of-the-few.md)  
   
   
-## [📺 Videos](./videos/index.md) (638)  
+## [📺 Videos](./videos/index.md) (639)  
+- [💰🚫➡️🗺️ Escape from Capitalism | Clara Mattei & Richard Wolff](./videos/escape-from-capitalism-clara-mattei-richard-wolff.md)  
 - [💰🚫🌍✨ Clara Mattei: capitalism is not natural - it’s enforced](./videos/clara-mattei-capitalism-is-not-natural-its-enforced.md)  
 - [🇮🇹🏆🗣️ Giorgio Parisi: Nobel Prize Conversations](./videos/giorgio-parisi-nobel-prize-conversations.md)  
 - [👶🧸8️⃣🗓️ Montessori Items For An 8 Month Old Baby](./videos/8-montessori-items-for-an-8-month-old-baby-cc.md)  
@@ -53,7 +54,6 @@ updated: 2026-02-16T13:53:49-08:00
 - [✨⬆️🗣️👨‍💻 The third golden age of software engineering – thanks to AI, with Grady Booch](./videos/the-third-golden-age-of-software-engineering-thanks-to-ai-with-grady-booch.md)  
 - [🤯🗣️📱📈 “He behaved like a total maniac” Sam Harris on Elon & Big Tech’s turn towards Trump](./videos/he-behaved-like-a-total-maniac-sam-harris-on-elon-big-techs-turn-towards-trump.md)  
 - [🔧🚰🛠️ How to Replace the Seats & Springs in a Single Handle Faucet | Repair and Replace](./videos/how-to-replace-the-seats-springs-in-a-single-handle-faucet-repair-and-replace.md)  
-- [🤖🧠🚀 What you must know before AGI arrives | Carnegie Mellon University Po-Shen Loh](./videos/what-you-must-know-before-agi-arrives-carnegie-mellon-university-po-shen-loh.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (88)  

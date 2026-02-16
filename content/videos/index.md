@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-02-16T13:53:49-08:00
+updated: 2026-02-16T14:15:54-08:00
 ---
 [Home](../index.md)  
-# 📺 Videos (638)  
+# 📺 Videos (639)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
 - [❓💪🔬 12 Questions About Creatine with Stephen Cornish, PhD](./12-questions-about-creatine-w-stephen-cornish-phd.md)  
@@ -152,6 +152,7 @@ updated: 2026-02-16T13:53:49-08:00
 - [🤯🔋🚫💪 Emily Nagoski and Amelia Nagoski: The cure for burnout (hint: it isn't self-care) | TED](./emily-nagoski-and-amelia-nagoski-the-cure-for-burnout-hint-it-isnt-self-care-ted.md)  
 - [🧠⬆️🍎🚀 Enhance Your Learning Speed & Health Using Neuroscience Based Protocols | Dr. Poppy Crum](./enhance-your-learning-speed-health-using-neuroscience-based-protocols-dr-poppy-crum.md)  
 - [🐘🔴👴🏿💥 Epstein Is A Real Problem For The GOP | Trump's Creepy Past | Blaming Obama](./epstein-is-a-real-problem-for-the-gop-trumps-creepy-past-blaming-obama.md)  
+- [💰🚫➡️🗺️ Escape from Capitalism | Clara Mattei & Richard Wolff](./escape-from-capitalism-clara-mattei-richard-wolff.md)  
 - [🧠💡🧘‍♀️ Essentials: Tools to Boost Attention & Memory | Dr. Wendy Suzuki](./essentials-tools-to-boost-attention-memory-dr-wendy-suzuki.md)  
 - [🧠⛓️⚖️ Essentials: Understanding & Treating Addiction | Dr. Anna Lembke](./essentials-understanding-treating-addiction-dr-anna-lembke.md)  
 - [Ethics expert breaks down Trump administration’s conflicts of interest](./ethics-expert-breaks-down-trump-administrations-conflicts-of-interest.md)  

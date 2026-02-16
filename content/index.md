@@ -22,8 +22,8 @@ updated: 2026-02-16T15:50:01-08:00
 - [2026-02-11 | 🚼 Child 💪 Strength 📚](./reflections/2026-02-11.md)  
 - [2026-02-10 | 🧽 Absorbent 💪 Strength 📚](./reflections/2026-02-10.md)  
 - [2026-02-09 | 🤏 Few 👶🏼 Toddlers 🧭 Will 📚](./reflections/2026-02-09.md)  
-- [2026-02-08](./reflections/2026-02-08.md)  
-- [2026-02-07](./reflections/2026-02-07.md)  
+- [2026-02-08 | 🧭 Will 📚](./reflections/2026-02-08.md)  
+- [2026-02-07 | 🧪 Alchemist 🧭 Will 📚](./reflections/2026-02-07.md)  
   
   
 ## [🧰 Tools](./tools/index.md) (1)  

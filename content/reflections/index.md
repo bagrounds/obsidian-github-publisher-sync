@@ -5,21 +5,21 @@ aliases:
 title: 🪞 Reflections
 URL: https://bagrounds.org/reflections
 backlinks: false
-updated: 2026-02-16T14:15:54-08:00
+updated: 2026-02-16T15:50:01-08:00
 ---
 [Home](../index.md)  
 # 🪞 Reflections (459)  
 - [2026-02-16](./2026-02-16.md)  
-- [2026-02-15](./2026-02-15.md)  
-- [2026-02-14](./2026-02-14.md)  
-- [2026-02-13](./2026-02-13.md)  
-- [2026-02-12](./2026-02-12.md)  
-- [2026-02-11](./2026-02-11.md)  
-- [2026-02-10](./2026-02-10.md)  
-- [2026-02-09](./2026-02-09.md)  
+- [2026-02-15 | 📁 Folding 💪 Strength 📚](./2026-02-15.md)  
+- [2026-02-14 | 🏛️ Roman 🤏 Few 📚](./2026-02-14.md)  
+- [2026-02-13 | 📜 Ancient 💪 Strength 📚](./2026-02-13.md)  
+- [2026-02-12 | 🧮 Mathematical 💪 Strength 📚](./2026-02-12.md)  
+- [2026-02-11 | 🚼 Child 💪 Strength 📚](./2026-02-11.md)  
+- [2026-02-10 | 🧽 Absorbent 💪 Strength 📚](./2026-02-10.md)  
+- [2026-02-09 | 🤏 Few 👶🏼 Toddlers 🧭 Will 📚](./2026-02-09.md)  
 - [2026-02-08](./2026-02-08.md)  
 - [2026-02-07](./2026-02-07.md)  
-- [2026-02-06](./2026-02-06.md)  
+- [2026-02-06 | 💤 🔧 🚰 🐉 🤖 The Midnight Engineer’s Guide to Faucets, Fiction, and the Artificial Mind 🪞📚📺🛍️](./2026-02-06.md)  
 - [2026-02-05 | 👥 Many ⚔️ Will 🧠 Know 🌪️ Chaos 📚📺](./2026-02-05.md)  
 - [2026-02-04 | ⚛️ Quantum 📜 Will 🛠️ Creator 📚📺](./2026-02-04.md)  
 - [🎨 Creativity 🧭 Navigating ⚛️ Quantum 📈 Scaling 📚📺📄](./2026-02-03.md)  

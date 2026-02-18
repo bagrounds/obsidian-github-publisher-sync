@@ -9,7 +9,7 @@ tags:
 affiliate link: https://amzn.to/3OLjFFR
 CTA: 🤖 Follow a reluctant protector.
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](../index.md) > [Books](./index.md) | [⏭️ 🤖🧠⚙️ Artificial Condition](./artificial-condition.md)  
 # 🚨🤖💥 All Systems Red  
 [🛒 All Systems Red. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3OLjFFR)  
   
@@ -20,7 +20,7 @@ CTA: 🤖 Follow a reluctant protector.
   
 * ✍️ Author: Martha Wells  
 * 📚 Genre: Science Fiction / Cyberpunk  
-* 📖 Series: The Murderbot Diaries  
+* 📖 Series: The Murderbot Diaries, Book 1  
   
 ## ⭐ Assessment  
   

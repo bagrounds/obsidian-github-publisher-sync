@@ -50,7 +50,7 @@ A: 🤓 The narrative is heavily driven by an irreverent and sarcastic voice tha
 ### ❤️ If You Loved This  
   
 * [☄️🧑‍🚀🙏🌍 Project Hail Mary](./project-hail-mary.md) by Andy Weir  
-* 🤖 All Systems Red by Martha Wells  
+* [🚨🤖💥 All Systems Red](./all-systems-red.md) by Martha Wells  
   
 ### ↔️ Similar But Different  
   

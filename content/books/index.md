@@ -5,10 +5,10 @@ aliases:
 share: true
 URL: https://bagrounds.org/books
 backlinks: false
-updated: 2026-02-17T17:02:24-08:00
+updated: 2026-02-18T07:55:05-08:00
 ---
 [Home](../index.md)  
-# 📚 Books (925)  
+# 📚 Books (926)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [💻0️⃣ Source Code: My Beginnings](./source-code-my-beginnings.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)  
@@ -64,6 +64,7 @@ updated: 2026-02-17T17:02:24-08:00
 - [🧠🎯👁️💡 Applied Attention Theory](./human-attention.md)  
 - [➡️🌟🗺️ A Promised Land](./a-promised-land.md)  
 - [💔🤝 A Question of Trust: The BBC Reith Lectures 2002](./trust-how-societies-lost-it-and-how-they-might-regain-it.md)  
+- [🤖🧠⚙️ Artificial Condition](./artificial-condition.md)  
 - [🤖🧠 Artificial Intelligence: A Modern Approach](./artificial-intelligence-a-modern-approach.md)  
 - [👨‍👩‍👧‍👦🛡️ A Secure Base: Parent-Child Attachment and Healthy Human Development](./a-secure-base-parent-child-attachment-and-healthy-human-development.md)  
 - [❓📚 A Simple Guide to Retrieval Augmented Generation](./a-simple-guide-to-retrieval-augmented-generation.md)  

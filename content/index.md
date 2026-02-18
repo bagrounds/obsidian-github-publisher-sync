@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-02-17T17:02:24-08:00
+updated: 2026-02-18T07:55:05-08:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -13,7 +13,8 @@ updated: 2026-02-17T17:02:24-08:00
 ❔ What do 🫵 _you_ 🤔 think?  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (460)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (461)  
+- [2026-02-18](./reflections/2026-02-18.md)  
 - [2026-02-17](./reflections/2026-02-17.md)  
 - [2026-02-16](./reflections/2026-02-16.md)  
 - [2026-02-15 | 📁 Folding 💪 Strength 📚](./reflections/2026-02-15.md)  
@@ -23,24 +24,23 @@ updated: 2026-02-17T17:02:24-08:00
 - [2026-02-11 | 🚼 Child 💪 Strength 📚](./reflections/2026-02-11.md)  
 - [2026-02-10 | 🧽 Absorbent 💪 Strength 📚](./reflections/2026-02-10.md)  
 - [2026-02-09 | 🤏 Few 👶🏼 Toddlers 🧭 Will 📚](./reflections/2026-02-09.md)  
-- [2026-02-08 | 🧭 Will 📚](./reflections/2026-02-08.md)  
   
   
 ## [🧰 Tools](./tools/index.md) (1)  
 - [🧮 Calculator](./tools/calculator.md)  
   
   
-## [📚 Books](./books/index.md) (925)  
+## [📚 Books](./books/index.md) (926)  
+- [🚨🤖💥 All Systems Red](./books/all-systems-red.md)  
+- [🤖🧠⚙️ Artificial Condition](./books/artificial-condition.md)  
 - [🧱⚔️🚶‍♀️ Border Wars: Inside Trump's Assault on Immigration](./books/border-wars-inside-trumps-assault-on-immigration.md)  
 - [💥💰🔓 Escape from Capitalism: An Intervention](./books/escape-from-capitalism-an-intervention.md)  
 - [🎲🤔 Thinking in Bets: Making Smarter Decisions When You Don't Have All the Facts](./books/thinking-in-bets-making-smarter-decisions-when-you-dont-have-all-the-facts.md)  
 - [🤖🤖🤖 We Are Legion (We Are Bob)](./books/we-are-legion-we-are-bob.md)  
 - [🤖⚙️ AI Agents in Action](./books/ai-agents-in-action.md)  
-- [🚨🤖💥 All Systems Red](./books/all-systems-red.md)  
 - [🔪🗡️ The Folding Knife](./books/the-folding-knife.md)  
 - [🏛️📜 SPQR: A History of Ancient Rome](./books/spqr-a-history-of-ancient-rome.md)  
 - [🥀🏛️ The Ruin of the Roman Empire: A New History](./books/the-ruin-of-the-roman-empire-a-new-history.md)  
-- [👥⚔️👑 The Will of the Many](./books/the-will-of-the-many.md)  
   
   
 ## [📺 Videos](./videos/index.md) (640)  

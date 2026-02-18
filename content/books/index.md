@@ -5,10 +5,10 @@ aliases:
 share: true
 URL: https://bagrounds.org/books
 backlinks: false
-updated: 2026-02-16T15:50:01-08:00
+updated: 2026-02-17T17:02:24-08:00
 ---
 [Home](../index.md)  
-# 📚 Books (924)  
+# 📚 Books (925)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [💻0️⃣ Source Code: My Beginnings](./source-code-my-beginnings.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)  
@@ -109,6 +109,7 @@ updated: 2026-02-16T15:50:01-08:00
 - [♟️🧑‍🏫 Bobby Fischer Teaches Chess](./bobby-fischer-teaches-chess.md)  
 - [💉🦠👶 Booster Shots: The Urgent Lessons of Measles and the Uncertain Future of Children's Health](./booster-shots-the-urgent-lessons-of-measles-and-the-uncertain-future-of-childrens-health.md)  
 - [🛂😐🧑🏿🧑🏻⚖️ Bordering on Indifference: Immigration Agents Negotiating Race and Morality](./bordering-on-indifference-immigration-agents-negotiating-race-and-morality.md)  
+- [🧱⚔️🚶‍♀️ Border Wars: Inside Trump's Assault on Immigration](./border-wars-inside-trumps-assault-on-immigration.md)  
 - [🥱🤓 Bored and Brilliant: How Spacing Out Can Unlock Your Most Productive and Creative Self](./bored-and-brilliant.md)  
 - [🏃‍♂️⛰️ Born to Run: A Hidden Tribe, Superathletes, and the Greatest Race the World Has Never Seen](./born-to-run-a-hidden-tribe-superathletes-and-the-greatest-race-the-world-has-never-seen.md)  
 - [🌿🧑‍🌾 Botany for Gardeners](./botany-for-gardeners.md)  

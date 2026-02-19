@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-02-18T22:27:28-08:00
+updated: 2026-02-19T13:28:10-08:00
 ---
 [Home](../index.md)  
-# 📺 Videos (640)  
+# 📺 Videos (641)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
 - [❓💪🔬 12 Questions About Creatine with Stephen Cornish, PhD](./12-questions-about-creatine-w-stephen-cornish-phd.md)  
@@ -400,6 +400,7 @@ updated: 2026-02-18T22:27:28-08:00
 - [🏛️📣👹🤑 Schiff Takes To Senate Floor to Lay Out Trump's 10 Most Corrupt Acts So Far](./schiff-takes-to-senate-floor-to-lay-out-trumps-10-most-corrupt-acts-so-far.md)  
 - [🧠💡📚🦅 Science & Tools of Learning & Memory | Dr. David Eagleman](./science-tools-of-learning-memory-dr-david-eagleman.md)  
 - [Scientists sound alarm on Trump administration's dismantling of research funding](./scientists-sound-alarm-on-trump-administrations-dismantling-of-research-funding.md)  
+- [💰🚫💻📈 Scott Galloway Is Calling for a Big Tech Boycott - Here’s Why | Amanpour and Company](./scott-galloway-is-calling-for-a-big-tech-boycott-heres-why-amanpour-and-company.md)  
 - [👨‍🦳🆚💰 Senator Bernie Sanders on Fighting the Billionaires](./senator-bernie-sanders-on-fighting-the-billionaires.md)  
 - [🇺🇸🗣️👑 Senator Slotkin Delivers Speech on Trump's Authoritarian Playbook](./senator-slotkin-delivers-speech-on-trumps-authoritarian-playbook.md)  
 - [🚫👑⚡✊ Sen. Bernie Sanders - Harnessing Energy From «No Kings» Rally to «Fight Oligarchy» | The Daily Show](./sen-bernie-sanders-harnessing-energy-from-no-kings-rally-to-fight-oligarchy-the-daily-show.md)  

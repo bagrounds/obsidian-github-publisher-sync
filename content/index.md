@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-02-18T22:27:28-08:00
+updated: 2026-02-19T13:28:10-08:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -13,7 +13,8 @@ updated: 2026-02-18T22:27:28-08:00
 ❔ What do 🫵 _you_ 🤔 think?  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (461)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (462)  
+- [2026-02-19](./reflections/2026-02-19.md)  
 - [2026-02-18](./reflections/2026-02-18.md)  
 - [2026-02-17](./reflections/2026-02-17.md)  
 - [2026-02-16](./reflections/2026-02-16.md)  
@@ -23,7 +24,6 @@ updated: 2026-02-18T22:27:28-08:00
 - [2026-02-12 | 🧮 Mathematical 💪 Strength 📚](./reflections/2026-02-12.md)  
 - [2026-02-11 | 🚼 Child 💪 Strength 📚](./reflections/2026-02-11.md)  
 - [2026-02-10 | 🧽 Absorbent 💪 Strength 📚](./reflections/2026-02-10.md)  
-- [2026-02-09 | 🤏 Few 👶🏼 Toddlers 🧭 Will 📚](./reflections/2026-02-09.md)  
   
   
 ## [🧰 Tools](./tools/index.md) (1)  
@@ -43,7 +43,8 @@ updated: 2026-02-18T22:27:28-08:00
 - [🏛️📜 SPQR: A History of Ancient Rome](./books/spqr-a-history-of-ancient-rome.md)  
   
   
-## [📺 Videos](./videos/index.md) (640)  
+## [📺 Videos](./videos/index.md) (641)  
+- [💰🚫💻📈 Scott Galloway Is Calling for a Big Tech Boycott - Here’s Why | Amanpour and Company](./videos/scott-galloway-is-calling-for-a-big-tech-boycott-heres-why-amanpour-and-company.md)  
 - [🚨🚔🇺🇸👨‍👩‍👧‍👦 Inside an Immigration Raid That Swept Up U.S. Citizens | Visual Investigations](./videos/inside-an-immigration-raid-that-swept-up-us-citizens-visual-investigations.md)  
 - [🚨🚔💥⚰️🇺🇸 Gov. Walz holds briefing after ICE agent shoots and kills woman in Minneapolis](./videos/watch-live-gov-walz-holds-briefing-after-ice-agent-shoots-and-kills-woman-in-minneapolis.md)  
 - [🕵️‍♀️🚫🚗💥🔫 Initially-Secret Report: Customs&Border Patrol Agents Got in Way of Vehicles, Then Used Deadly Force](./videos/initially-secret-report-customs-border-patrol-agents-got-in-way-of-vehicles-then-used-deadly-force.md)  
@@ -53,7 +54,6 @@ updated: 2026-02-18T22:27:28-08:00
 - [🏫➡️🧊👨‍👩‍👧‍👦💔 'They are circling our schools,' superintendent says after 5-year-old detained by ICE](./videos/they-are-circling-our-schools-superintendent-says-after-5-year-old-detained-by-ice.md)  
 - [🛂🇺🇸🤝 ICE & DHS: Last Week Tonight with John Oliver (HBO)](./videos/ice-dhs-last-week-tonight-with-john-oliver-hbo.md)  
 - [💰🚫➡️🗺️ Escape from Capitalism | Clara Mattei & Richard Wolff](./videos/escape-from-capitalism-clara-mattei-richard-wolff.md)  
-- [💰🚫🌍✨ Clara Mattei: capitalism is not natural - it’s enforced](./videos/clara-mattei-capitalism-is-not-natural-its-enforced.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (88)  

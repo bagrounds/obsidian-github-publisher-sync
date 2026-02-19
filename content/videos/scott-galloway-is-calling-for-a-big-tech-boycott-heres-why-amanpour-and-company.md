@@ -15,7 +15,7 @@ youtube: https://youtu.be/atZWEwGk7zY
 ![Scott Galloway Is Calling for a Big Tech Boycott - Here’s Why | Amanpour and Company](https://youtu.be/atZWEwGk7zY)  
   
 👉 [Resist and Unsubscribe](https://www.resistandunsubscribe.com)  
-  
+   
 ## 🤖 AI Summary  
   
 * ✊ Execute a month long national economic strike by cancelling tech subscriptions to attack the market which is the only thing the president responds to \[[00:40](http://www.youtube.com/watch?v=atZWEwGk7zY&t=40)].  

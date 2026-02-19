@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-02-19T15:10:18-08:00
+updated: 2026-02-19T15:30:59-08:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -43,7 +43,8 @@ updated: 2026-02-19T15:10:18-08:00
 - [🏛️📜 SPQR: A History of Ancient Rome](./books/spqr-a-history-of-ancient-rome.md)  
   
   
-## [📺 Videos](./videos/index.md) (642)  
+## [📺 Videos](./videos/index.md) (643)  
+- [🏃💪🧠 How to Build Endurance | Huberman Lab Essentials](./videos/how-to-build-endurance-huberman-lab-essentials.md)  
 - [💪🔬💡🏋️ Essentials: Optimize Your Exercise Program with Science-Based Tools | Jeff Cavaliere](./videos/essentials-optimize-your-exercise-program-with-science-based-tools-jeff-cavaliere.md)  
 - [💰🚫💻📈 Scott Galloway Is Calling for a Big Tech Boycott - Here’s Why | Amanpour and Company](./videos/scott-galloway-is-calling-for-a-big-tech-boycott-heres-why-amanpour-and-company.md)  
 - [🚨🚔🇺🇸👨‍👩‍👧‍👦 Inside an Immigration Raid That Swept Up U.S. Citizens | Visual Investigations](./videos/inside-an-immigration-raid-that-swept-up-us-citizens-visual-investigations.md)  
@@ -53,7 +54,6 @@ updated: 2026-02-19T15:10:18-08:00
 - [☀️🏛️⚖️ This morning I introduced Articles of Impeachment against Homeland Security Secretary Kristi Noem](./videos/this-morning-i-introduced-articles-of-impeachment-against-homeland-security-secretary-kristi-noem.md)  
 - [🏛️📰📣 Today in Politics | Explainer](./videos/today-in-politics-explainer-january-22-2026.md)  
 - [🏫➡️🧊👨‍👩‍👧‍👦💔 'They are circling our schools,' superintendent says after 5-year-old detained by ICE](./videos/they-are-circling-our-schools-superintendent-says-after-5-year-old-detained-by-ice.md)  
-- [🛂🇺🇸🤝 ICE & DHS: Last Week Tonight with John Oliver (HBO)](./videos/ice-dhs-last-week-tonight-with-john-oliver-hbo.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (88)  

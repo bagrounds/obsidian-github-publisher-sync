@@ -8,7 +8,7 @@ Author:
 tags:
 affiliate link: https://amzn.to/46WtZ45
 ---
-[Home](../index.md) > [Books](./index.md) | [⏮️ 🚨🤖💥 All Systems Red](./all-systems-red.md)  
+[Home](../index.md) > [Books](./index.md) | [⏮️ 🚨🤖💥 All Systems Red](./all-systems-red.md) [⏭️ 🕵️‍♀️📜💻 Rogue Protocol](./rogue-protocol.md)  
 # 🤖🧠⚙️ Artificial Condition  
 [🛒 Artificial Condition. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/46WtZ45)  
   

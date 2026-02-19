@@ -5,10 +5,10 @@ aliases:
 share: true
 URL: https://bagrounds.org/books
 backlinks: false
-updated: 2026-02-18T07:55:05-08:00
+updated: 2026-02-18T22:27:28-08:00
 ---
 [Home](../index.md)  
-# 📚 Books (926)  
+# 📚 Books (927)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [💻0️⃣ Source Code: My Beginnings](./source-code-my-beginnings.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)  
@@ -537,6 +537,7 @@ updated: 2026-02-18T07:55:05-08:00
 - [🙏🔄 Ritual Theory, Ritual Practice](./ritual-theory-ritual-practice.md)  
 - [🛐❓ Ritual: What It Is, How It Works, and Why](./ritual-what-it-is-how-it-works-and-why.md)  
 - [🌊🧠🙏⚔️ River of the Gods: Genius, Belief, and Betrayal in the Search for the Source of the Nile](./river-of-the-gods.md)  
+- [🕵️‍♀️📜💻 Rogue Protocol](./rogue-protocol.md)  
 - [📜🎮🏞️ Rules, Games, and Common Pool Resources](./rules-games-and-common-pool-resources.md)  
 - [🏃‍♂️🦴 Running Anatomy](./running-anatomy.md)  
 - [🏃🛠️⚡ Running Rewired: Reinvent Your Run for Stability, Strength, and Speed](./running-rewired-reinvent-your-run-for-stability-strength-and-speed.md)  

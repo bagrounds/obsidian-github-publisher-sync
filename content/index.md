@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-02-18T07:55:05-08:00
+updated: 2026-02-18T22:27:28-08:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -30,9 +30,10 @@ updated: 2026-02-18T07:55:05-08:00
 - [🧮 Calculator](./tools/calculator.md)  
   
   
-## [📚 Books](./books/index.md) (926)  
-- [🚨🤖💥 All Systems Red](./books/all-systems-red.md)  
+## [📚 Books](./books/index.md) (927)  
 - [🤖🧠⚙️ Artificial Condition](./books/artificial-condition.md)  
+- [🕵️‍♀️📜💻 Rogue Protocol](./books/rogue-protocol.md)  
+- [🚨🤖💥 All Systems Red](./books/all-systems-red.md)  
 - [🧱⚔️🚶‍♀️ Border Wars: Inside Trump's Assault on Immigration](./books/border-wars-inside-trumps-assault-on-immigration.md)  
 - [💥💰🔓 Escape from Capitalism: An Intervention](./books/escape-from-capitalism-an-intervention.md)  
 - [🎲🤔 Thinking in Bets: Making Smarter Decisions When You Don't Have All the Facts](./books/thinking-in-bets-making-smarter-decisions-when-you-dont-have-all-the-facts.md)  
@@ -40,7 +41,6 @@ updated: 2026-02-18T07:55:05-08:00
 - [🤖⚙️ AI Agents in Action](./books/ai-agents-in-action.md)  
 - [🔪🗡️ The Folding Knife](./books/the-folding-knife.md)  
 - [🏛️📜 SPQR: A History of Ancient Rome](./books/spqr-a-history-of-ancient-rome.md)  
-- [🥀🏛️ The Ruin of the Roman Empire: A New History](./books/the-ruin-of-the-roman-empire-a-new-history.md)  
   
   
 ## [📺 Videos](./videos/index.md) (640)  

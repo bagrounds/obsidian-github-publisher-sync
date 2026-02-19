@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-02-19T15:10:18-08:00
+updated: 2026-02-19T15:30:59-08:00
 ---
 [Home](../index.md)  
-# 📺 Videos (642)  
+# 📺 Videos (643)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
 - [❓💪🔬 12 Questions About Creatine with Stephen Cornish, PhD](./12-questions-about-creatine-w-stephen-cornish-phd.md)  
@@ -217,6 +217,7 @@ updated: 2026-02-19T15:10:18-08:00
 - [🤓📈📉⚠️ How to Become an Expert in ANYTHING - The Dunning Kruger Effect](./how-to-become-an-expert-in-anything-the-dunning-kruger-effect.md)  
 - [💪🧠⚔️🤝 How to Become Resilient, Forge Your Identity & Lead Others | Jocko Willink](./how-to-become-resilient-forge-your-identity-lead-others-jocko-willink.md)  
 - [🚀📈🤯🚨 How To Be So Productive That It Feels ILLEGAL](./how-to-be-so-productive-that-it-feels-illegal.md)  
+- [🏃💪🧠 How to Build Endurance | Huberman Lab Essentials](./how-to-build-endurance-huberman-lab-essentials.md)  
 - [🎯🪜🏗️✅ How to Build Systems to Actually Achieve Your Goals](./how-to-build-systems-to-actually-achieve-your-goals.md)  
 - [💡🔧📏🔮〰️ How to create a capability model](./how-to-create-a-capability-model.md)  
 - [🚀⏱️💥🏆 How to do more in 90 days than most do in their entire lives](./how-to-do-more-in-90-days-than-most-do-in-their-entire-lives.md)  

@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-02-19T15:30:59-08:00
+updated: 2026-02-19T16:53:15-08:00
 ---
 [Home](../index.md)  
-# 📺 Videos (643)  
+# 📺 Videos (644)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
 - [❓💪🔬 12 Questions About Creatine with Stephen Cornish, PhD](./12-questions-about-creatine-w-stephen-cornish-phd.md)  
@@ -20,6 +20,7 @@ updated: 2026-02-19T15:30:59-08:00
 - [📚⏱️💡 21 Life-Changing Books Summarized in 18 Minutes](./21-life-changing-books-summarized-in-18-minutes.md)  
 - [😴⬇️⚡ 22: The Power of the Downstate, Optimizing Sleep and Recovery | Sara Mednick, PhD](./22-the-power-of-the-downstate-optimizing-sleep-and-recovery-sara-mednick-phd.md)  
 - [2️⃣⬆️🧠👩‍🚀 Double Your Productivity using this ADHD System (Invented by a Space Systems Engineer)](./double-your-productivity-using-this-adhd-system-invented-by-a-space-systems-engineer.md)  
+- [🤖💻📈⬇️2️⃣ The 5 Levels of AI Coding (Why Most of You Won't Make It Past Level 2)](./the-5-levels-of-ai-coding-why-most-of-you-wont-make-it-past-level-2.md)  
 - [🏋️🤕🛑 3 Causes Of Pain In Shoulder Doing Push-ups +Tips To Stop Your Shoulder From Hurting With Push-ups](./3-causes-of-pain-in-shoulder-doing-push-ups-tips-to-stop-your-shoulder-from-hurting-with-push-ups.md)  
 - [🪜📈🏢 3 High Leverage Career Skills (From a Principal At Amazon)](./3-high-leverage-career-skills-from-a-principal-at-amazon.md)  
 - [🧠⏳🚀⚡ 4 ADHD Habits to Make 2025 Hyper Productive](./4-adhd-habits-to-make-2025-hyper-productive.md)  

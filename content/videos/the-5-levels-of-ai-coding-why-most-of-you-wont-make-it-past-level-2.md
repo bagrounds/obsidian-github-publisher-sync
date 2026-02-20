@@ -58,6 +58,7 @@ youtube: https://youtu.be/bDcgHzCBgmQ
   
 ### ↔️ Similar  
   
+- [🤖💻 Vibe Coding: Building Production-Grade Software With GenAI, Chat, Agents, and Beyond](../books/vibe-coding-building-production-grade-software-with-genai-chat-agents-and-beyond.md)  
 * [🧑‍💻📈 The Pragmatic Programmer: Your Journey to Mastery](../books/the-pragmatic-programmer-your-journey-to-mastery.md) by Andrew Hunt and David Thomas explores the foundational discipline and automation mindset necessary for modern software engineering.  
 * [🏎️💾 Accelerate: The Science of Lean Software and DevOps: Building and Scaling High Performing Technology Organizations](../books/accelerate.md) by Nicole Forsgren, Jez Humble, and Gene Kim details the metrics and cultural shifts required for high-performance software delivery teams.  
   

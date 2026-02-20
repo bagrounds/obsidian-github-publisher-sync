@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-02-19T15:30:59-08:00
+updated: 2026-02-19T16:53:15-08:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -43,7 +43,8 @@ updated: 2026-02-19T15:30:59-08:00
 - [🏛️📜 SPQR: A History of Ancient Rome](./books/spqr-a-history-of-ancient-rome.md)  
   
   
-## [📺 Videos](./videos/index.md) (643)  
+## [📺 Videos](./videos/index.md) (644)  
+- [🤖💻📈⬇️2️⃣ The 5 Levels of AI Coding (Why Most of You Won't Make It Past Level 2)](./videos/the-5-levels-of-ai-coding-why-most-of-you-wont-make-it-past-level-2.md)  
 - [🏃💪🧠 How to Build Endurance | Huberman Lab Essentials](./videos/how-to-build-endurance-huberman-lab-essentials.md)  
 - [💪🔬💡🏋️ Essentials: Optimize Your Exercise Program with Science-Based Tools | Jeff Cavaliere](./videos/essentials-optimize-your-exercise-program-with-science-based-tools-jeff-cavaliere.md)  
 - [💰🚫💻📈 Scott Galloway Is Calling for a Big Tech Boycott - Here’s Why | Amanpour and Company](./videos/scott-galloway-is-calling-for-a-big-tech-boycott-heres-why-amanpour-and-company.md)  
@@ -53,7 +54,6 @@ updated: 2026-02-19T15:30:59-08:00
 - [🏛️🛡️ Do ICE Officers Have 'Immunity'?](./videos/do-ice-officers-have-immunity.md)  
 - [☀️🏛️⚖️ This morning I introduced Articles of Impeachment against Homeland Security Secretary Kristi Noem](./videos/this-morning-i-introduced-articles-of-impeachment-against-homeland-security-secretary-kristi-noem.md)  
 - [🏛️📰📣 Today in Politics | Explainer](./videos/today-in-politics-explainer-january-22-2026.md)  
-- [🏫➡️🧊👨‍👩‍👧‍👦💔 'They are circling our schools,' superintendent says after 5-year-old detained by ICE](./videos/they-are-circling-our-schools-superintendent-says-after-5-year-old-detained-by-ice.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (88)  

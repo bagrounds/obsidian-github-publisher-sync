@@ -5,10 +5,10 @@ aliases:
 share: true
 URL: https://bagrounds.org/books
 backlinks: false
-updated: 2026-02-19T16:53:15-08:00
+updated: 2026-02-20T17:51:05-08:00
 ---
 [Home](../index.md)  
-# 📚 Books (927)  
+# 📚 Books (928)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [💻0️⃣ Source Code: My Beginnings](./source-code-my-beginnings.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)  
@@ -240,6 +240,7 @@ updated: 2026-02-19T16:53:15-08:00
 - [🧠🧩🚧🧑‍🏫👩‍👧‍👦 Executive Function Dysfunction - Strategies for Educators and Parents](./executive-function-dysfunction.md)  
 - [🧠⚙️🐒💡 Executive Functions: What They Are, How They Work, and Why They Evolved](./executive-functions.md)  
 - [🏃😊 Exercise for Mood and Anxiety: Proven Strategies for Overcoming Depression and Enhancing Well-Being](./exercise-for-mood-and-anxiety-proven-strategies-for-overcoming-depression-and-enhancing-well-being.md)  
+- [🏃💨🚪 Exit Strategy](./exit-strategy.md)  
 - [🫄➕ Expecting Better: Why the Conventional Pregnancy Wisdom Is Wrong - and What You Really Need to Know](./expecting-better.md)  
 - [🫡👑🏆 Extreme Ownership: How U.S. Navy SEALs Lead and Win](./extreme-ownership-how-us-navy-seals-lead-and-win.md)  
 - [🤔🌍📈✅ Factfulness: Ten Reasons We're Wrong About the World - and Why Things Are Better Than You Think](./factfulness.md)  

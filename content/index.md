@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-02-19T16:53:15-08:00
+updated: 2026-02-20T17:51:05-08:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -13,7 +13,8 @@ updated: 2026-02-19T16:53:15-08:00
 ❔ What do 🫵 _you_ 🤔 think?  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (462)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (463)  
+- [2026-02-20](./reflections/2026-02-20.md)  
 - [2026-02-19](./reflections/2026-02-19.md)  
 - [2026-02-18](./reflections/2026-02-18.md)  
 - [2026-02-17](./reflections/2026-02-17.md)  
@@ -23,16 +24,16 @@ updated: 2026-02-19T16:53:15-08:00
 - [2026-02-13 | 📜 Ancient 💪 Strength 📚](./reflections/2026-02-13.md)  
 - [2026-02-12 | 🧮 Mathematical 💪 Strength 📚](./reflections/2026-02-12.md)  
 - [2026-02-11 | 🚼 Child 💪 Strength 📚](./reflections/2026-02-11.md)  
-- [2026-02-10 | 🧽 Absorbent 💪 Strength 📚](./reflections/2026-02-10.md)  
   
   
 ## [🧰 Tools](./tools/index.md) (1)  
 - [🧮 Calculator](./tools/calculator.md)  
   
   
-## [📚 Books](./books/index.md) (927)  
-- [🤖🧠⚙️ Artificial Condition](./books/artificial-condition.md)  
+## [📚 Books](./books/index.md) (928)  
+- [🏃💨🚪 Exit Strategy](./books/exit-strategy.md)  
 - [🕵️‍♀️📜💻 Rogue Protocol](./books/rogue-protocol.md)  
+- [🤖🧠⚙️ Artificial Condition](./books/artificial-condition.md)  
 - [🚨🤖💥 All Systems Red](./books/all-systems-red.md)  
 - [🧱⚔️🚶‍♀️ Border Wars: Inside Trump's Assault on Immigration](./books/border-wars-inside-trumps-assault-on-immigration.md)  
 - [💥💰🔓 Escape from Capitalism: An Intervention](./books/escape-from-capitalism-an-intervention.md)  
@@ -40,7 +41,6 @@ updated: 2026-02-19T16:53:15-08:00
 - [🤖🤖🤖 We Are Legion (We Are Bob)](./books/we-are-legion-we-are-bob.md)  
 - [🤖⚙️ AI Agents in Action](./books/ai-agents-in-action.md)  
 - [🔪🗡️ The Folding Knife](./books/the-folding-knife.md)  
-- [🏛️📜 SPQR: A History of Ancient Rome](./books/spqr-a-history-of-ancient-rome.md)  
   
   
 ## [📺 Videos](./videos/index.md) (644)  

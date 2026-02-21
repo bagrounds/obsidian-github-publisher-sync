@@ -8,7 +8,7 @@ Author:
 tags:
 affiliate link: https://amzn.to/3OP8qMB
 ---
-[Home](../index.md) > [Books](./index.md) | [⏮️🤖🧠⚙️ Artificial Condition](./artificial-condition.md)  
+[Home](../index.md) > [Books](./index.md) | [⏮️ 🤖🧠⚙️ Artificial Condition](./artificial-condition.md) [⏭️ 🏃💨🚪 Exit Strategy](./exit-strategy.md)  
 # 🕵️‍♀️📜💻 Rogue Protocol  
 [🛒 Rogue Protocol. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3OP8qMB)  
   

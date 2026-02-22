@@ -8,7 +8,7 @@ Author:
 tags:
 affiliate link: https://amzn.to/3ZJoDW9
 ---
-[Home](../index.md) > [Books](./index.md) | [⏮️ 🕵️‍♀️📜💻 Rogue Protocol](./rogue-protocol.md)  
+[Home](../index.md) > [Books](./index.md) | [⏮️ 🕵️‍♀️📜💻 Rogue Protocol](./rogue-protocol.md) [⏭️ 🌐🤖🚀 Network Effect](./network-effect.md)  
 # 🏃💨🚪 Exit Strategy  
 [🛒 Exit Strategy. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3ZJoDW9)  
   

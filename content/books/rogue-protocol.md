@@ -18,7 +18,7 @@ affiliate link: https://amzn.to/3OP8qMB
   
 * ✍️ Author: Martha Wells  
 * 📚 Genre: Science Fiction  
-* 📖 Series: The Murderbot Diaries Book 3  
+* 📖 Series: The Murderbot Diaries, Book 3  
   
 ## ⭐ Assessment  
   

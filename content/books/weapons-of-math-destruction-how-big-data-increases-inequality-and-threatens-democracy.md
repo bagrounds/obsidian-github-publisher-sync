@@ -70,7 +70,7 @@ CTA: ⚖️ Confront algorithmic bias.
 * 🚺 Invisible Women: Data Bias in a World Designed for Men by Caroline Criado Perez  
 ### ☯️ Contrasting  
 * 🧑‍💻 The Ethical Algorithm: The Science of Socially Aware Algorithm Design by Michael Kearns and Aaron Roth  
-* ❓ The Alignment Problem: Machine Learning and Human Values by Brian Christian  
+* [⚖️🤖 The Alignment Problem](./the-alignment-problem.md): Machine Learning and Human Values by Brian Christian  
 ### 🔗 Related  
 * 👋 Hello World: How to be Human in the Age of the Machine by Hannah Fry  
 * [🤖🧑‍ Human Compatible: Artificial Intelligence and the Problem of Control](./human-compatible-artificial-intelligence-and-the-problem-of-control.md) by Stuart Russell  

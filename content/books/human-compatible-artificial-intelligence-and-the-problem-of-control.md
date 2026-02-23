@@ -51,7 +51,7 @@ affiliate link: https://amzn.to/4oMyd5Q
     * 🤝 Like Human Compatible, this book delves into the potential for superintelligent AI and the immense risks it poses if not properly controlled and aligned with human values. 💡 It provides a philosophical and strategic examination of the future of AI.  
 * [🧬👥💾 Life 3.0: Being Human in the Age of Artificial Intelligence](./life-3-0.md) by Max Tegmark  
     * 🌎 Tegmark's book offers a broad overview of AI's potential future, exploring various scenarios, including the challenges of alignment and control, resonating with Russell's concerns about shaping a beneficial AI future.  
-* ❤️‍🩹 The Alignment Problem: Machine Learning and Human Values by Brian Christian  
+* [⚖️🤖 The Alignment Problem](./the-alignment-problem.md): Machine Learning and Human Values by Brian Christian  
     * ✅ This book directly addresses the "alignment problem" from a technical and ethical standpoint, discussing how AI systems learn and the inherent difficulties in ensuring their objectives truly reflect human values and intentions.  
   
 ### 🆚 Contrasting Books  

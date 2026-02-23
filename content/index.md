@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-02-22T16:05:24-08:00
+updated: 2026-02-22T16:41:35-08:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -13,7 +13,8 @@ updated: 2026-02-22T16:05:24-08:00
 ❔ What do 🫵 _you_ 🤔 think?  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (465)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (466)  
+- [2026-02-23](./reflections/2026-02-23.md)  
 - [2026-02-22](./reflections/2026-02-22.md)  
 - [2026-02-21 | 🦹 Rogue 🏃 Exit 🌐 Network 📚](./reflections/2026-02-21.md)  
 - [2026-02-20 | 🕵️‍♀️ Rogue 🚪 Exit 📚](./reflections/2026-02-20.md)  
@@ -23,27 +24,27 @@ updated: 2026-02-22T16:05:24-08:00
 - [2026-02-16 | 🚨 Systems 🚪 Escape 💰 Capitalism 🌍 Natural 📚📺](./reflections/2026-02-16.md)  
 - [2026-02-15 | 📁 Folding 💪 Strength 📚](./reflections/2026-02-15.md)  
 - [2026-02-14 | 🏛️ Roman 🤏 Few 📚](./reflections/2026-02-14.md)  
-- [2026-02-13 | 📜 Ancient 💪 Strength 📚](./reflections/2026-02-13.md)  
   
   
 ## [🧰 Tools](./tools/index.md) (1)  
 - [🧮 Calculator](./tools/calculator.md)  
   
   
-## [📚 Books](./books/index.md) (937)  
+## [📚 Books](./books/index.md) (941)  
+- [🦠🌍💀 The Great Influenza](./books/the-great-influenza.md)  
+- [➡️⛓️ The Road to Serfdom](./books/the-road-to-serfdom.md)  
+- [🐘🧠 The Conservative Sensibility by George F. Will](./books/the-conservative-sensibility.md)  
+- [👑🏙️ The Power Broker](./books/the-power-broker.md)  
 - [💡🎨 Originals: How Non-Conformists Move the World](./books/originals.md)  
 - [🧑‍🤝‍🧑 Belonging: The Science of Creating Connection and Bridging Divides](./books/belonging-the-science-of-creating-connection-and-bridging-divides.md)  
 - [⭐ Outliers](./books/outliers.md)  
 - [📢 Propaganda](./books/propaganda.md)  
 - [💗 Self-Compassion](./books/self-compassion.md)  
 - [🔮🤖 The Age of AI](./books/the-age-of-ai.md)  
-- [⚖️🤖 The Alignment Problem](./books/the-alignment-problem.md)  
-- [💊 Brave New World](./books/brave-new-world.md)  
-- [🌲 Walden](./books/walden.md)  
-- [👨‍👩‍👧‍👦💰 Inheritocracy: It’s Time to Talk About the Bank of Mum and Dad](./books/inheritocracy-its-time-to-talk-about-the-bank-of-mum-and-dad.md)  
   
   
-## [📺 Videos](./videos/index.md) (645)  
+## [📺 Videos](./videos/index.md) (646)  
+- [🧠⚡️😊⬇️⬆️ How Dopamine & Serotonin Shape Decisions, Motivation & Learning | Dr. Read Montague](./videos/how-dopamine-serotonin-shape-decisions-motivation-learning-dr-read-montague.md)  
 - [🤖🧪🚫🛑💥 Anthropic Tested 16 Models. Instructions Didn't Stop Them (When Security is a Structural Failure)](./videos/anthropic-tested-16-models-instructions-didnt-stop-them-when-security-is-a-structural-failure.md)  
 - [🔑🔓🚀🌟 Dr. Adam Grant: How to Unlock Your Potential, Motivation & Unique Abilities](./videos/dr-adam-grant-how-to-unlock-your-potential-motivation-and-unique-abilities.md)  
 - [🇺🇸📈💡🔮🚀 What the U.S. has accomplished in 250 years of innovation and what’s next](./videos/what-the-us-has-accomplished-in-250-years-of-innovation-and-whats-next.md)  
@@ -53,7 +54,6 @@ updated: 2026-02-22T16:05:24-08:00
 - [🗣️👂🇺🇸 American Conversations: Secretary Pete Buttigieg](./videos/american-conversations-secretary-pete-buttigieg.md)  
 - [💻🌍🚶‍♀️ Where All the Tech Workers Are Going](./videos/where-all-the-tech-workers-are-going.md)  
 - [💻🔄💻 Andrej Karpathy: Software Is Changing (Again)](./videos/andrej-karpathy-software-is-changing-again.md)  
-- [🧠📉⚠️ Heather Cox Richardson: Trump Is Mentally Crumbling—But Still Dangerous | The Bulwark Podcast](./videos/heather-cox-richardson-trump-is-mentally-crumbling-but-still-dangerous-the-bulwark-podcast.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (88)  

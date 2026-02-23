@@ -49,9 +49,9 @@ affiliate link: https://amzn.to/46Il4nN
   
 ### ✨ Creatively Related Explorations  
   
-* ❤️ **Klara and the Sun** by Kazuo Ishiguro: This novel offers a poignant and emotionally resonant exploration of artificial consciousness, love, and what it means to be human from the perspective of an "Artificial Friend."  
+* ❤️ Klara and the Sun by Kazuo Ishiguro: This novel offers a poignant and emotionally resonant exploration of artificial consciousness, love, and what it means to be human from the perspective of an "Artificial Friend."  
 * 🤔 **Exhalation: Stories** by Ted Chiang: This collection of science fiction short stories masterfully explores the philosophical and existential questions raised by technological advancements, offering thought-provoking narratives that linger long after reading.  
-* 🌱 **The Ministry for the Future** by Kim Stanley Robinson: While focused on climate change, this novel imagines the complex social, political, and technological transformations required to address a global crisis, offering a hopeful, albeit challenging, vision of the future that resonates with the scale of the dilemmas presented in The Coming Wave.  
+* The Ministry for the Future by Kim Stanley Robinson: While focused on climate change, this novel imagines the complex social, political, and technological transformations required to address a global crisis, offering a hopeful, albeit challenging, vision of the future that resonates with the scale of the dilemmas presented in The Coming Wave.  
   
 ## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on The Coming Wave: Technology, Power, and the 21st Century's Greatest Dilemma. Never put book titles in quotes or italics. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

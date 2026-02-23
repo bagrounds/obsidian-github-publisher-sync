@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-02-22T16:05:24-08:00
+updated: 2026-02-22T16:41:35-08:00
 ---
 [Home](../index.md)  
-# 📺 Videos (645)  
+# 📺 Videos (646)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
 - [❓💪🔬 12 Questions About Creatine with Stephen Cornish, PhD](./12-questions-about-creatine-w-stephen-cornish-phd.md)  
@@ -202,6 +202,7 @@ updated: 2026-02-22T16:05:24-08:00
 - [👥🌍📢💡 How Common Knowledge Shapes the World | Steven Pinker | TED](./how-common-knowledge-shapes-the-world-steven-pinker-ted.md)  
 - [How “Digital Twins” Could Help Us Predict the Future | Karen Willcox | TED](./how-digital-twins-could-help-us-predict-the-future-karen-willcox-ted.md)  
 - [👴🏃‍♀️📈 How Does Aging Impact Runners? Our Tips for Long-Term Success (from Working with Masters Runners)](./how-does-aging-impact-runners-our-tips-for-long-term-success-from-working-with-masters-runners.md)  
+- [🧠⚡️😊⬇️⬆️ How Dopamine & Serotonin Shape Decisions, Motivation & Learning | Dr. Read Montague](./how-dopamine-serotonin-shape-decisions-motivation-learning-dr-read-montague.md)  
 - [💡👨‍🔬🏆🚀🌟 How Engineers Break Into The Top 1% | Michael Novati](./how-engineers-break-into-the-top-1-percent-michael-novati.md)  
 - [🕵️‍♂️🤫🚫🗣️🥷 How Governments Spy On Protestors - And How To Avoid It | Incognito Mode | WIRED](./how-governments-spy-on-protestors-and-how-to-avoid-it-incognito-mode-wired.md)  
 - [🇺🇸🤯😵‍💫❓ How half the US lost part of their minds](./how-half-the-us-lost-part-of-their-minds.md)  

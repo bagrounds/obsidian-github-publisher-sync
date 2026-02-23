@@ -5,10 +5,10 @@ aliases:
 share: true
 URL: https://bagrounds.org/books
 backlinks: false
-updated: 2026-02-22T16:05:24-08:00
+updated: 2026-02-22T16:41:35-08:00
 ---
 [Home](../index.md)  
-# 📚 Books (937)  
+# 📚 Books (941)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [💻0️⃣ Source Code: My Beginnings](./source-code-my-beginnings.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)  
@@ -671,6 +671,7 @@ updated: 2026-02-22T16:05:24-08:00
 - [🏃🏆👵 The Complete Guide to Running: How to Be a Champion from 9 to 90](./the-complete-guide-to-running.md)  
 - [📈➕ The Compound Effect](./the-compound-effect.md)  
 - [🧠💻 The Computational Brain](./the-computational-brain.md)  
+- [🐘🧠 The Conservative Sensibility by George F. Will](./the-conservative-sensibility.md)  
 - [✨🎭🧘‍♂️🌌 The Creative Act: A Way of Being](./the-creative-act.md)  
 - [💡🌱♾️ The Creative Habit: Learn It and Use It for Life](./the-creative-habit.md)  
 - [💀⭐ The Cruel Stars](./the-cruel-stars.md)  
@@ -708,6 +709,7 @@ updated: 2026-02-22T16:05:24-08:00
 - [❓✝️ The God Delusion](./the-god-delusion.md)  
 - [🍇😡 The Grapes of Wrath](./the-grapes-of-wrath.md)  
 - [🧑‍🤝‍🧑🐘⬆️ The Great Alignment: Race, Party Transformation, and the Rise of Donald Trump](./the-great-alignment-race-party-transformation-and-the-rise-of-donald-trump.md)  
+- [🦠🌍💀 The Great Influenza](./the-great-influenza.md)  
 - [⚙️🔢 The Great Mental Models, Volume 3: Systems and Mathematics](./the-great-mental-models-volume-3-systems-and-mathematics.md)  
 - [💸🎨 The Great Mental Models, Volume 4: Economics and Art](./the-great-mental-models-volume-4-economics-and-art.md)  
 - [🗳️💰⬇️ The Great Suppression: Voting Rights, Corporate Cash, and the Conservative Assault on Democracy](./the-great-suppression-voting-rights-corporate-cash-and-the-conservative-assault-on-democracy.md)  
@@ -781,6 +783,7 @@ updated: 2026-02-22T16:05:24-08:00
 - [👶🤔❤️ The Philosophical Baby: What Children's Minds Tell Us About Truth, Love, and the Meaning of Life](./the-philosophical-baby-what-childrens-minds-tell-us-about-truth-love-and-the-meaning-of-life.md)  
 - [🐦‍🔥💻 The Phoenix Project](./the-phoenix-project.md)  
 - [💪🏛️ The Power and Independence of the Federal Reserve](./the-power-and-independence-of-the-federal-reserve.md)  
+- [👑🏙️ The Power Broker](./the-power-broker.md)  
 - [🔋📈 The Power of Full Engagement: Managing Energy, Not Time, Is the Key to High Performance and Personal Renewal](./the-power-of-full-engagement-managing-energy-not-time-is-the-key-to-high-performance-and-personal-renewal.md)  
 - [🔄🧠💪 The Power of Habit: Why We Do What We Do in Life and Business](./the-power-of-habit.md)  
 - [🔑🧭❤️ The Power of Meaning: Crafting a Life That Matters](./the-power-of-meaning.md)  
@@ -802,6 +805,7 @@ updated: 2026-02-22T16:05:24-08:00
 - [💰🧔👑🏛️ The Richest Man in Babylon](./the-richest-man-in-babylon.md)  
 - [😇🧠 The Righteous Mind: Why Good People Are Divided by Politics and Religion](./the-righteous-mind.md)  
 - [🗳️🇺🇸 The Right to Vote: The Contested History of Democracy in the United States](./the-right-to-vote-the-contested-history-of-democracy-in-the-united-states.md)  
+- [➡️⛓️ The Road to Serfdom](./the-road-to-serfdom.md)  
 - [👨‍👧 The Role of the Father in Child Development](./the-role-of-the-father-in-child-development.md)  
 - [🥀🏛️ The Ruin of the Roman Empire: A New History](./the-ruin-of-the-roman-empire-a-new-history.md)  
 - [🏛️⚖️ The Rule of Law](./the-rule-of-law.md)  

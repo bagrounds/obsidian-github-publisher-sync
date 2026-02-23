@@ -147,12 +147,12 @@ URL: https://bagrounds.org/software/gemini
     - [📱⬇️🧘 Digital Minimalism: Choosing a Focused Life in a Noisy World](../books/digital-minimalism-choosing-a-focused-life-in-a-noisy-world.md) by Cal Newport. 📱🚫 - Advocates for a more intentional and selective use of technology, providing a perspective on the potential downsides of excessive reliance on AI-powered tools. 🧘  
 - **More general:**  
     - [🤖🧠 Artificial Intelligence: A Modern Approach](../books/artificial-intelligence-a-modern-approach.md) by Stuart Russell and Peter Norvig. 🤖📚 - A foundational textbook on AI, covering a wide range of topics and providing a comprehensive overview of the field. 🧠  
-    - "AI Superpowers: China, Silicon Valley, and the New World Order" by Kai-Fu Lee. 🌍🤖 - Explores the global competition in AI and its potential impact on the future of work and society. 🌐  
+    - AI Superpowers by Kai-Fu Lee. 🌍🤖 - Explores the global competition in AI and its potential impact on the future of work and society. 🌐  
 - **More specific:**  
     - "Transformers for Natural Language Processing: Deep Learning with BERT, GPT, and other models" by Denis Rothman. ⚡🗣️- A more in depth look into the technology that powers Gemini.  
     - Google Cloud AI and Machine Learning documentation. ☁️🧠 - Detailed technical information on using Google Cloud's AI and machine learning services, including those powered by Gemini. 💻  
 - **Fictional:**  
-    - "Neuromancer" by William Gibson. 🌐💻 - A cyberpunk classic that explores the intersection of AI, virtual reality, and human consciousness. 🤯 It offers a thought-provoking perspective on the potential of advanced technology.  
+    - Neuromancer by William Gibson. 🌐💻 - A cyberpunk classic that explores the intersection of AI, virtual reality, and human consciousness. 🤯 It offers a thought-provoking perspective on the potential of advanced technology.  
     - "Exhalation" by Ted Chiang. 🤯⏳ - A collection of short stories that explore profound questions about consciousness, free will, and the nature of reality, often through the lens of advanced technology. 📖  
 - **Rigorous:**  
     - "Pattern Recognition and Machine Learning" by Christopher M. Bishop. 📊🧠 - A comprehensive textbook on machine learning, covering the theoretical foundations and mathematical concepts. 📚  

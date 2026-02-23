@@ -61,7 +61,7 @@ CTA: 💡 Explore AI's potential.
 * 🤝 **The Age of AI and Our Human Future** by Henry Kissinger, Eric Schmidt, and Daniel Huttenlocher: Explores how AI is transforming society and what it means for humanity, written by prominent figures in technology and policy.  
 * **[🤖🧑‍ Human Compatible: Artificial Intelligence and the Problem of Control](./human-compatible-artificial-intelligence-and-the-problem-of-control.md)** by Stuart Russell: An AI expert discusses the challenge of creating AI systems that are provably beneficial to humans.  
 * **[🌊🤖🤔 The Coming Wave: Technology, Power, and the 21st Century's Greatest Dilemma](./the-coming-wave-technology-power-and-the-21st-centurys-greatest-dilemma.md)** by Mustafa Suleyman (co-founder of DeepMind): Argues AI and synthetic biology represent a coming wave of technology posing immense promise and peril, urging proactive management. 👍 Recommended by Bill Gates as a clear-eyed view of AI's opportunities and risks.  
-* 🇨🇳 **AI Superpowers: China, Silicon Valley, and the New World Order** by Kai-Fu Lee: Analyzes the AI race between the US and China and its global implications.  
+* 🇨🇳 **AI Superpowers** by Kai-Fu Lee: Analyzes the AI race between the US and China and its global implications.  
   
 ### 😠 Contrasting Perspectives and Critiques  
 * 🌎 **The Atlas of AI: Power, Politics, and the Planetary Costs of Artificial Intelligence** by Kate Crawford: Critically examines the hidden environmental, labor, and social costs of AI, arguing it's a technology of extraction that exacerbates inequality. 📍 Offers a less speculative and more grounded critique focused on present-day harms.  
@@ -73,7 +73,7 @@ CTA: 💡 Explore AI's potential.
 ### 🎭 Creatively Related Reads (Fiction & Non-Fiction)  
   
 * 🤖 **Fiction Exploring AI Consciousness & Society:**  
-    * 👧 **Klara and the Sun** by Kazuo Ishiguro: A novel exploring consciousness, connection, and what it means to be human through the eyes of an "Artificial Friend".  
+    * 👧 Klara and the Sun by Kazuo Ishiguro: A novel exploring consciousness, connection, and what it means to be human through the eyes of an "Artificial Friend".  
     * 🤖 **I, Robot** by Isaac Asimov: Classic short stories exploring the ethics and complexities of human-robot relationships, introducing the Three Laws of Robotics.  
     * 🐑 **Do Androids Dream of Electric Sheep?** by Philip K. Dick: The basis for *Blade Runner*, questioning consciousness, empathy, and the definition of humanity.  
     * 🚀 **Ancillary Justice** by Ann Leckie: A space opera featuring a former starship AI trapped in a human body, exploring identity and consciousness.  

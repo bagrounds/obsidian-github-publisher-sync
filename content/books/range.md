@@ -61,7 +61,7 @@ In a complex 🌍 and unpredictable 😵‍💫 world, broad 🌁 experience and
 * 💡 **Best Book That Is Tangentially Related:**  
     * [🤔🐇🐢 Thinking, Fast and Slow](./thinking-fast-and-slow.md) by Daniel Kahneman. 🤔 This book explores the two systems of thinking and how they influence decision-making, which is relevant to the wicked learning environments discussed in Range. 🎯  
 * ⚔️ **Best Book That Is Diametrically Opposed:**  
-    * 🥇 Outliers: The Story of Success by Malcolm Gladwell. ⏳ While Gladwell acknowledges the role of opportunity, he heavily emphasizes the 10,000-hour rule of deliberate practice, which contrasts with Epstein's emphasis on range. ⏱️  
+    * 🥇 [⭐ Outliers](./outliers.md): The Story of Success by Malcolm Gladwell. ⏳ While Gladwell acknowledges the role of opportunity, he heavily emphasizes the 10,000-hour rule of deliberate practice, which contrasts with Epstein's emphasis on range. ⏱️  
 * 🧑‍🚀 **Best Fiction Book That Incorporates Related Ideas:**  
     * [☄️🧑‍🚀🙏🌍 Project Hail Mary](./project-hail-mary.md) by Andy Weir. 👽 This science fiction novel features a protagonist who uses a wide range of scientific knowledge to solve an existential threat, exemplifying the power of generalist thinking. 🌠  
 * ⚖️ **Books with varying complexity:**  

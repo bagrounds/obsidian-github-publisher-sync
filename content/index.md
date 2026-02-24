@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-02-23T18:08:50-08:00
+updated: 2026-02-23T18:28:00-08:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -43,7 +43,8 @@ updated: 2026-02-23T18:08:50-08:00
 - [🔮🤖 The Age of AI](./books/the-age-of-ai.md)  
   
   
-## [📺 Videos](./videos/index.md) (647)  
+## [📺 Videos](./videos/index.md) (648)  
+- [🧠💡🎓🤖 Harvard Thinking: Preserving learning in the age of AI shortcuts](./videos/harvard-thinking-preserving-learning-in-the-age-of-ai-shortcuts.md)  
 - [💰💡🤖🤔🤷 Google's New AI Is Smarter Than Everyone's But It Costs HALF as Much. Here's Why They Don't Care.](./videos/googles-new-ai-is-smarter-than-everyones-but-it-costs-half-as-much-heres-why-they-dont-care.md)  
 - [🧠⚡️😊⬇️⬆️ How Dopamine & Serotonin Shape Decisions, Motivation & Learning | Dr. Read Montague](./videos/how-dopamine-serotonin-shape-decisions-motivation-learning-dr-read-montague.md)  
 - [🤖🧪🚫🛑💥 Anthropic Tested 16 Models. Instructions Didn't Stop Them (When Security is a Structural Failure)](./videos/anthropic-tested-16-models-instructions-didnt-stop-them-when-security-is-a-structural-failure.md)  
@@ -53,7 +54,6 @@ updated: 2026-02-23T18:08:50-08:00
 - [🇩🇪⚖️🇺🇸 Blueprint Why Germany's Legacy of Accountability Should Be A Blueprint for America's Moral Reckoning](./videos/why-germanys-legacy-of-accountability-should-be-a-blueprint-for-americas-moral-reckoning.md)  
 - [🇺🇸📚🔄 A look at what's behind the efforts to reshape how American history is taught](./videos/a-look-at-whats-behind-the-efforts-to-reshape-how-american-history-is-taught.md)  
 - [🗣️👂🇺🇸 American Conversations: Secretary Pete Buttigieg](./videos/american-conversations-secretary-pete-buttigieg.md)  
-- [💻🌍🚶‍♀️ Where All the Tech Workers Are Going](./videos/where-all-the-tech-workers-are-going.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (88)  

@@ -60,7 +60,7 @@ affiliate link: https://amzn.to/43Vx0Rb
 * **Best Alternate Book on the Same Topic:** "Attention" by Harold Pashler. This book also covers a wide range of attentional phenomena but provides a more detailed treatment of specific experimental paradigms. 📖  
 * **Best Tangentially Related Book:** [🤔🐇🐢 Thinking, Fast and Slow](./thinking-fast-and-slow.md) by Daniel Kahneman. This book explores the two systems of thinking and how they relate to attention and decision-making. 🧠  
 * **Best Diametrically Opposed Book:** [📱🧠 The Shallows: What the Internet Is Doing to Our Brains](./the-shallows-what-the-internet-is-doing-to-our-brains.md) by Nicholas Carr. While Wickens focuses on the science of attention, Carr critiques the impact of technology on our attentional abilities. 📱  
-* **Best Fiction Book That Incorporates Related Ideas:** "Flowers for Algernon" by Daniel Keyes. This novel explores the ethical implications of enhancing cognitive abilities, including attention. 🌼  
+* **Best Fiction Book That Incorporates Related Ideas:** Flowers for Algernon by Daniel Keyes. This novel explores the ethical implications of enhancing cognitive abilities, including attention. 🌼  
 * **Best Book That Is More General:** "[Cognitive Psychology and Its Implications](./cognitive-psychology-and-its-implications.md)" by John R. Anderson. A broad overview of cognitive psychology, providing a wider context for understanding attention. 🌐  
 * **Best Book That Is More Specific:** "The Attentional Blink" by Nilli Lavie. This book focuses on a specific phenomenon of attentional limitations. 👁️  
 * **Best Book That Is More Rigorous:** "Foundations of Attention" by Michael I. Posner. A highly technical and detailed exploration of the neural basis of attention. 🧠  

@@ -33,7 +33,7 @@ youtube: https://youtu.be/8jKAT8GNDE0
   
 * 🎯 **Mission:** Solve general intelligence to solve everything else \[[03:44](http://www.youtube.com/watch?v=8jKAT8GNDE0&t=224)].  
 * 🏗️ **Vertical Stack:** Proprietary TPU silicon, cloud infra, and Nobel-winning research \[[07:23](http://www.youtube.com/watch?v=8jKAT8GNDE0&t=443)].  
-* 🧩 **Pure vs. Equipped Reasoning:** Gemini is the strongest "naked" reasoner; Claude 4.6 is the strongest "equipped" tool-user \[[11:24](http://www.youtube.com/watch?v=8jKAT8GNDE0&t=684)].  
+* 🧩 **Pure vs. Equipped Reasoning:** Gemini is the strongest naked reasoner; Claude 4.6 is the strongest equipped tool-user \[[11:24](http://www.youtube.com/watch?v=8jKAT8GNDE0&t=684)].  
 * 📉 **Cost Engineering:** High intelligence at floor pricing ($2/1M input tokens) to commoditize reasoning \[[09:42](http://www.youtube.com/watch?v=8jKAT8GNDE0&t=582)].  
   
 #### 🛠️ Actionable Model Routing  
@@ -55,8 +55,8 @@ youtube: https://youtu.be/8jKAT8GNDE0
 #### 🚀 Career Leverage Steps  
   
 * 🗺️ **Domain Mapping:** Identify specific tasks in your workflow and test model performance per task \[[27:33](http://www.youtube.com/watch?v=8jKAT8GNDE0&t=1653)].  
-* 🚦 **Dynamic Routing:** Direct work based on "dimension of difficulty" rather than using one model for all \[[30:18](http://www.youtube.com/watch?v=8jKAT8GNDE0&t=1818)].  
-* 👅 **Build "Taste":** Cultivate the expertise required to validate and audit high-level AI outputs \[[31:48](http://www.youtube.com/watch?v=8jKAT8GNDE0&t=1908)].  
+* 🚦 **Dynamic Routing:** Direct work based on dimension of difficulty rather than using one model for all \[[30:18](http://www.youtube.com/watch?v=8jKAT8GNDE0&t=1818)].  
+* 👅 **Build Taste:** Cultivate the expertise required to validate and audit high-level AI outputs \[[31:48](http://www.youtube.com/watch?v=8jKAT8GNDE0&t=1908)].  
 * 📈 **Value Migration:** Shift focus toward judgment, ambiguity resolution, and courage as reasoning costs drop \[[30:00](http://www.youtube.com/watch?v=8jKAT8GNDE0&t=1800)].  
   
 ## 🤔 Evaluation  

@@ -27,6 +27,38 @@ youtube: https://youtu.be/8jKAT8GNDE0
 * 🛠️ Work should be decomposed into categories: reasoning, effort, coordination, emotional intelligence, domain expertise, and ambiguity. \[[28:36](http://www.youtube.com/watch?v=8jKAT8GNDE0&t=1716)]  
 * 🛡️ Human value is most durable in dimensions involving courage, political risk, and the resolution of contradictory market signals. \[[29:47](http://www.youtube.com/watch?v=8jKAT8GNDE0&t=1787)]  
   
+### 🏆 Google's Gemini 3.1 Pro & Strategic AI Routing  
+  
+#### 🧠 Core Philosophy: Intelligence First  
+  
+* 🎯 **Mission:** Solve general intelligence to solve everything else \[[03:44](http://www.youtube.com/watch?v=8jKAT8GNDE0&t=224)].  
+* 🏗️ **Vertical Stack:** Proprietary TPU silicon, cloud infra, and Nobel-winning research \[[07:23](http://www.youtube.com/watch?v=8jKAT8GNDE0&t=443)].  
+* 🧩 **Pure vs. Equipped Reasoning:** Gemini is the strongest "naked" reasoner; Claude 4.6 is the strongest "equipped" tool-user \[[11:24](http://www.youtube.com/watch?v=8jKAT8GNDE0&t=684)].  
+* 📉 **Cost Engineering:** High intelligence at floor pricing ($2/1M input tokens) to commoditize reasoning \[[09:42](http://www.youtube.com/watch?v=8jKAT8GNDE0&t=582)].  
+  
+#### 🛠️ Actionable Model Routing  
+  
+* 🧪 **Gemini 3.1 Pro (Max Thinking):** Complex scientific puzzles, multi-step logic, novel math proofs \[[10:30](http://www.youtube.com/watch?v=8jKAT8GNDE0&t=630)].  
+* 💼 **Claude (Opus/4.6):** Agentic workflows, tool orchestration, multi-day autonomous coding \[[11:32](http://www.youtube.com/watch?v=8jKAT8GNDE0&t=692)].  
+* ⚡ **Gemini Flash:** High-speed classification, summarization, and low-cost routine tasks \[[10:16](http://www.youtube.com/watch?v=8jKAT8GNDE0&t=616)].  
+* 💻 **OpenAI (Codex):** Specialized coding pipelines and high-throughput production environments \[[11:47](http://www.youtube.com/watch?v=8jKAT8GNDE0&t=707)].  
+  
+#### 📊 Problem Decomposition Framework  
+  
+* 🤯 **Reasoning Problems:** Hard logic, well-defined inputs, deep deduction (e.g., tax law, fraud tracing) \[[24:22](http://www.youtube.com/watch?v=8jKAT8GNDE0&t=1462)].  
+* 🏗️ **Effort Problems:** Large surface area, straightforward logic (e.g., auditing 3,000 contracts) \[[18:07](http://www.youtube.com/watch?v=8jKAT8GNDE0&t=1087)].  
+* 🤝 **Coordination Problems:** Aligning teams, routing work, organizational awareness \[[18:22](http://www.youtube.com/watch?v=8jKAT8GNDE0&t=1102)].  
+* 🌫️ **Ambiguity Problems:** Defining the question, product sense, strategic intuition \[[22:11](http://www.youtube.com/watch?v=8jKAT8GNDE0&t=1331)].  
+* 🛡️ **Courage/Identity Problems:** Popularity risk, ethical alignment, political will (Human-only) \[[20:48](http://www.youtube.com/watch?v=8jKAT8GNDE0&t=1248)].  
+* ❤️ **Emotional Intelligence:** Tone, timing, navigating human trauma (Human-only) \[[19:40](http://www.youtube.com/watch?v=8jKAT8GNDE0&t=1180)].  
+  
+#### 🚀 Career Leverage Steps  
+  
+* 🗺️ **Domain Mapping:** Identify specific tasks in your workflow and test model performance per task \[[27:33](http://www.youtube.com/watch?v=8jKAT8GNDE0&t=1653)].  
+* 🚦 **Dynamic Routing:** Direct work based on "dimension of difficulty" rather than using one model for all \[[30:18](http://www.youtube.com/watch?v=8jKAT8GNDE0&t=1818)].  
+* 👅 **Build "Taste":** Cultivate the expertise required to validate and audit high-level AI outputs \[[31:48](http://www.youtube.com/watch?v=8jKAT8GNDE0&t=1908)].  
+* 📈 **Value Migration:** Shift focus toward judgment, ambiguity resolution, and courage as reasoning costs drop \[[30:00](http://www.youtube.com/watch?v=8jKAT8GNDE0&t=1800)].  
+  
 ## 🤔 Evaluation  
   
 - 🤖 The speaker emphasizes Google's lack of concern for consumer market share.  

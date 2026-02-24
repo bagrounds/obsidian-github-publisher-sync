@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-02-23T18:08:50-08:00
+updated: 2026-02-23T18:28:00-08:00
 ---
 [Home](../index.md)  
-# 📺 Videos (647)  
+# 📺 Videos (648)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
 - [❓💪🔬 12 Questions About Creatine with Stephen Cornish, PhD](./12-questions-about-creatine-w-stephen-cornish-phd.md)  
@@ -187,6 +187,7 @@ updated: 2026-02-23T18:08:50-08:00
 - [🌊🚨🇺🇸 Gov. Ferguson Declares Emergency as ‘Historic Flooding’ Hits Washington](./gov-ferguson-declares-emergency-as-historic-flooding-hits-washington.md)  
 - [🚨🚔💥⚰️🇺🇸 Gov. Walz holds briefing after ICE agent shoots and kills woman in Minneapolis](./watch-live-gov-walz-holds-briefing-after-ice-agent-shoots-and-kills-woman-in-minneapolis.md)  
 - [🫀💪📈 Guide How to Build a Monster Aerobic System | Your Detailed Guide](./how-to-build-a-monster-aerobic-system-your-detailed-guide.md)  
+- [🧠💡🎓🤖 Harvard Thinking: Preserving learning in the age of AI shortcuts](./harvard-thinking-preserving-learning-in-the-age-of-ai-shortcuts.md)  
 - [⚕️🗣️💊 Health experts respond to Trump's claims linking autism to acetaminophen](./health-experts-respond-to-trumps-claims-linking-autism-to-acetaminophen.md)  
 - [🏛️🐘⬆️🙏 Heather Cox Richardson on Why She's Still Hopeful Under MAGA and Donald Trump](./heather-cox-richardson-on-why-shes-still-hopeful-under-maga-and-donald-trump.md)  
 - [🧠📉⚠️ Heather Cox Richardson: Trump Is Mentally Crumbling—But Still Dangerous | The Bulwark Podcast](./heather-cox-richardson-trump-is-mentally-crumbling-but-still-dangerous-the-bulwark-podcast.md)  

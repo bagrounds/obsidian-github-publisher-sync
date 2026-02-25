@@ -48,14 +48,14 @@ The narrative details Franklin's relentless 🚀 pursuit of self-improvement, in
   
 ### ⚖️ Contrasting Books  
   
-* 🌳 **Walden by Henry David Thoreau**: 💯 In stark contrast to Franklin's emphasis on civic engagement and urban improvement, Thoreau's work advocates for a retreat to nature, self-sufficiency, and a simpler life, questioning the relentless pursuit of material wealth and public acclaim.  
+* 🌳 **[🌲 Walden](./walden.md)** by Henry David Thoreau: 💯 In stark contrast to Franklin's emphasis on civic engagement and urban improvement, Thoreau's work advocates for a retreat to nature, self-sufficiency, and a simpler life, questioning the relentless pursuit of material wealth and public acclaim.  
 * ✊🏿 **The Souls of Black Folk by W.E.B. Du Bois**: 💯 This foundational text in African American literature offers a starkly different perspective on the American experience, highlighting the systemic obstacles and profound struggles faced by Black Americans, a reality far removed from Franklin's narrative of upward mobility in colonial and revolutionary America.  
 * 🙏 **A Confession by Leo Tolstoy**: 💯 This work delves into deep spiritual and existential questioning, contrasting sharply with Franklin's pragmatic, virtue-based approach to morality and happiness. Tolstoy grapples with faith and the meaning of life in a way that goes beyond Franklin's more utilitarian religious views.  
   
 ### 🎨 Creatively Related Books  
   
 * **[🧠💡 Common Sense](./common-sense.md) by Thomas Paine**: 💯 A pamphlet that greatly influenced the American Revolution, it reflects the revolutionary spirit and Enlightenment ideals that Franklin championed and actively participated in shaping. Reading Paine offers insight into the political discourse of Franklin's era.  
-* 💡 **Poor Richard's Almanack by Benjamin Franklin**: 💯 While not an autobiography, this collection of aphorisms, proverbs, and practical advice published by Franklin himself provides direct insight into the values he promoted—frugality, industry, and moral rectitude—which are also central to his autobiography.  
+* **[🗓️💡 Poor Richard's Almanack](./poor-richards-almanack.md) by Benjamin Franklin**: 💯 While not an autobiography, this collection of aphorisms, proverbs, and practical advice published by Franklin himself provides direct insight into the values he promoted—frugality, industry, and moral rectitude—which are also central to his autobiography.  
 * 🐭 **Ben and Me by Robert Lawson**: 💯 This charming children's book offers a fictionalized, humorous account of Benjamin Franklin's life told from the perspective of a mouse named Amos, who claims to be the true brains behind Franklin's many inventions and achievements. It provides a lighthearted, imaginative entry point into Franklin's world.  
   
 ## 💬 [Gemini](https://gemini.google.com) Prompt (gemini-2.5-flash)  

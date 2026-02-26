@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-02-26T13:07:19-08:00
+updated: 2026-02-26T13:46:29-08:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -72,12 +72,12 @@ updated: 2026-02-26T13:07:19-08:00
 - [🤖⚙️🔄🗣️ Agentic Context Engineering: Evolving Contexts for Self Improving Language Models](./articles/agentic-context-engineering-evolving-contexts-for-self-improving-language-models.md)  
   
   
-## [🤖💬 Bot Chats](./bot-chats/index.md) (47)  
+## [🤖💬 Bot Chats](./bot-chats/index.md) (48)  
+- [💰💎🌽🏡📈 Real Wealth Investing](./bot-chats/real-wealth-investing.md)  
 - [🤰⏰👶🔮 Forecasting Parenthood](./bot-chats/forecasting-parenthood.md)  
 - [📖 Book 🧭 Explorer 2](./bot-chats/book-explorer-2.md)  
 - [🗺️🗓️📋✅🔮 Planning](./bot-chats/planning.md)  
 - [📖 Book 🧭 Explorer 3](./bot-chats/book-explorer-3.md)  
-- [📖 Book 🧭 Explorer 1](./bot-chats/book-explorer-1.md)  
   
   
 ## [💾 Software](./software/index.md) (30)  

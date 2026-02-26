@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-02-26T10:31:36-08:00
+updated: 2026-02-26T12:32:04-08:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -14,11 +14,11 @@ updated: 2026-02-26T10:31:36-08:00
 💬 Comment on any page with your GitHub account.  
   
 ## [🪞 Reflections](./reflections/index.md) ~ Blog (469)  
-- [2026-02-26](./reflections/2026-02-26.md)  
-- [2026-02-25](./reflections/2026-02-25.md)  
-- [2026-02-24](./reflections/2026-02-24.md)  
-- [2026-02-23](./reflections/2026-02-23.md)  
-- [2026-02-22](./reflections/2026-02-22.md)  
+- [2026-02-26 | 🌐 Network 🗣️ Prompt 📚📺](./reflections/2026-02-26.md)  
+- [2026-02-25 | 🌐 Network 🗓️ Almanack 📚](./reflections/2026-02-25.md)  
+- [2026-02-24 | 🌐 Network 🤖📚](./reflections/2026-02-24.md)  
+- [2026-02-23 | 🌐 Network 💰 Google 🧠 Harvard 📈 Stocks 📚📺](./reflections/2026-02-23.md)  
+- [2026-02-22 | 🚪 Exit 🌐 Network 🧠💊 Dopamine 📚📺](./reflections/2026-02-22.md)  
 - [2026-02-21 | 🦹 Rogue 🏃 Exit 🌐 Network 📚](./reflections/2026-02-21.md)  
 - [2026-02-20 | 🕵️‍♀️ Rogue 🚪 Exit 📚](./reflections/2026-02-20.md)  
 - [2026-02-19 | 🤖 Artificial 🕵️‍♀️ Rogue 🚫 Boycott 🏋️ Exercise 🏃 Endurance 💻 Coding 📚📺](./reflections/2026-02-19.md)  

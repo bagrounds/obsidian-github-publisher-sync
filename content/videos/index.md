@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-02-26T12:32:04-08:00
+updated: 2026-02-26T13:07:19-08:00
 ---
 [Home](../index.md)  
-# 📺 Videos (650)  
+# 📺 Videos (651)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
 - [❓💪🔬 12 Questions About Creatine with Stephen Cornish, PhD](./12-questions-about-creatine-w-stephen-cornish-phd.md)  
@@ -512,6 +512,7 @@ updated: 2026-02-26T12:32:04-08:00
 - [🫂🔑📈 The Secret Trick to Improve Your Social Connections | Kasley Killam | How to Be a Better Human | TED](./the-secret-trick-to-improve-your-social-connections-kasley-killam-how-to-be-a-better-human-ted.md)  
 - [The security vulnerabilities of using Signal to discuss military operations](./the-security-vulnerabilities-of-using-signal-to-discuss-military-operations.md)  
 - [🛠️⚙️🚀🛡️ The simple system that makes you unstoppable](./the-simple-system-that-makes-you-unstoppable.md)  
+- [🇺🇸🤝🏛️ The State of Our Union](./the-state-of-our-union.md)  
 - [🇺🇸🗣️❓ The State of the United States: A Conversation with Jack Smith](./the-state-of-the-united-states-a-conversation-with-jack-smith.md)  
 - [🤔💡🔄 The surprising habits of original thinkers](./the-surprising-habits-of-original-thinkers-adam-grant-ted.md)  
 - [🤔🎬🏆 The Thinking Game | Full documentary | Tribeca Film Festival official selection](./the-thinking-game-full-documentary-tribeca-film-festival-official-selection.md)  

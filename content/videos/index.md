@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-02-23T18:43:59-08:00
+updated: 2026-02-26T10:31:36-08:00
 ---
 [Home](../index.md)  
-# 📺 Videos (649)  
+# 📺 Videos (650)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
 - [❓💪🔬 12 Questions About Creatine with Stephen Cornish, PhD](./12-questions-about-creatine-w-stephen-cornish-phd.md)  
@@ -390,6 +390,7 @@ updated: 2026-02-23T18:43:59-08:00
 - [👨‍🏫⚖️💻 Professor on Regulating Tech for Kids](./professor-on-regulating-tech-for-kids.md)  
 - [🇺🇸📅👎 Project 2025 Is Here and Americans Hate It | Explainer](./project-2025-is-here-and-americans-hate-it-explainer.md)  
 - [🏛️➡️🚪⚠️ Prominent conservative judge resigns, calling Trump 'uniquely dangerous'](./prominent-conservative-judge-resigns-calling-trump-uniquely-dangerous.md)  
+- [🤖🥀➡️❓🚀 Prompt Engineering Is Dead. Context Engineering Is Dying. What Comes Next Changes Everything.](./prompt-engineering-is-dead-context-engineering-is-dying-what-comes-next-changes-everything.md)  
 - [Protestors join more than a thousand rallies across the U.S. against Trump’s policies](./protestors-join-more-than-a-thousand-rallies-across-the-us-against-trumps-policies.md)  
 - [📺🎤📰 Public Media: Last Week Tonight with John Oliver (HBO)](./public-media-last-week-tonight-with-john-oliver-hbo.md)  
 - [👥➡️⚖️ Realignment of People Against the ‘Epstein Class’ | Explainer](./realignment-of-people-against-the-epstein-class-explainer.md)  

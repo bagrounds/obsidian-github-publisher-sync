@@ -5,10 +5,10 @@ aliases:
 share: true
 URL: https://bagrounds.org/books
 backlinks: false
-updated: 2026-02-23T18:43:59-08:00
+updated: 2026-02-26T10:31:36-08:00
 ---
 [Home](../index.md)  
-# 📚 Books (941)  
+# 📚 Books (942)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [💻0️⃣ Source Code: My Beginnings](./source-code-my-beginnings.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)  
@@ -497,6 +497,7 @@ updated: 2026-02-23T18:43:59-08:00
 - [🏛️🗣️ Polemic for Democracy](./polemic-for-democracy.md)  
 - [♂️👑✊ Political Masculinity: How Incels, Fundamentalists and Authoritarians Mobilise for Patriarchy](./political-masculinity-how-incels-fundamentalists-and-authoritarians-mobilise-for-patriarchy.md)  
 - [🇺🇸💥 Political Violence in America: Historical Flashpoints and Modern-Day Trends](./political-violence-in-america-historical-flashpoints-and-modern-day-trends.md)  
+- [🗓️💡 Poor Richard's Almanack](./poor-richards-almanack.md)  
 - [🚫✅🤥 Post-Truth](./post-truth.md)  
 - [👑💪🏽⁉️ Power: Why Some People Have It - and Others Don't](./power-why-some-people-have-it-and-others-dont.md)  
 - [🧘🏼‍♀️👩🏼‍🏫 Practicing Mindfulness: An Introduction to Meditation](./practicing-mindfulness-an-introduction-to-meditation.md)  

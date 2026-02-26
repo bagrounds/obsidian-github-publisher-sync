@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-02-26T12:32:04-08:00
+updated: 2026-02-26T13:07:19-08:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -43,7 +43,8 @@ updated: 2026-02-26T12:32:04-08:00
 - [📢 Propaganda](./books/propaganda.md)  
   
   
-## [📺 Videos](./videos/index.md) (650)  
+## [📺 Videos](./videos/index.md) (651)  
+- [🇺🇸🤝🏛️ The State of Our Union](./videos/the-state-of-our-union.md)  
 - [🤖🥀➡️❓🚀 Prompt Engineering Is Dead. Context Engineering Is Dying. What Comes Next Changes Everything.](./videos/prompt-engineering-is-dead-context-engineering-is-dying-what-comes-next-changes-everything.md)  
 - [💸📉🇺🇸 Scott Galloway: Why I'm selling my American stocks](./videos/scott-galloway-why-im-selling-my-american-stocks.md)  
 - [🧠💡🎓🤖 Harvard Thinking: Preserving learning in the age of AI shortcuts](./videos/harvard-thinking-preserving-learning-in-the-age-of-ai-shortcuts.md)  
@@ -53,7 +54,6 @@ updated: 2026-02-26T12:32:04-08:00
 - [🔑🔓🚀🌟 Dr. Adam Grant: How to Unlock Your Potential, Motivation & Unique Abilities](./videos/dr-adam-grant-how-to-unlock-your-potential-motivation-and-unique-abilities.md)  
 - [🇺🇸📈💡🔮🚀 What the U.S. has accomplished in 250 years of innovation and what’s next](./videos/what-the-us-has-accomplished-in-250-years-of-innovation-and-whats-next.md)  
 - [✝️🏛️↔️ Why the Constitution Separates Church and State | Explainer](./videos/why-the-constitution-separates-church-and-state-explainer.md)  
-- [🇩🇪⚖️🇺🇸 Blueprint Why Germany's Legacy of Accountability Should Be A Blueprint for America's Moral Reckoning](./videos/why-germanys-legacy-of-accountability-should-be-a-blueprint-for-americas-moral-reckoning.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (88)  

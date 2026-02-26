@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-02-23T18:43:59-08:00
+updated: 2026-02-26T10:31:36-08:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -13,7 +13,10 @@ updated: 2026-02-23T18:43:59-08:00
 ❔ What do 🫵 _you_ 🤔 think?  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (466)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (469)  
+- [2026-02-26](./reflections/2026-02-26.md)  
+- [2026-02-25](./reflections/2026-02-25.md)  
+- [2026-02-24](./reflections/2026-02-24.md)  
 - [2026-02-23](./reflections/2026-02-23.md)  
 - [2026-02-22](./reflections/2026-02-22.md)  
 - [2026-02-21 | 🦹 Rogue 🏃 Exit 🌐 Network 📚](./reflections/2026-02-21.md)  
@@ -21,16 +24,15 @@ updated: 2026-02-23T18:43:59-08:00
 - [2026-02-19 | 🤖 Artificial 🕵️‍♀️ Rogue 🚫 Boycott 🏋️ Exercise 🏃 Endurance 💻 Coding 📚📺](./reflections/2026-02-19.md)  
 - [2026-02-18 | 🤖 Artificial 🕵️‍♀️ Rogue 📚](./reflections/2026-02-18.md)  
 - [2026-02-17 | 🚨 Systems ⚙️ Condition 🧱 Border 🛂 ICE 📚📺](./reflections/2026-02-17.md)  
-- [2026-02-16 | 🚨 Systems 🚪 Escape 💰 Capitalism 🌍 Natural 📚📺](./reflections/2026-02-16.md)  
-- [2026-02-15 | 📁 Folding 💪 Strength 📚](./reflections/2026-02-15.md)  
-- [2026-02-14 | 🏛️ Roman 🤏 Few 📚](./reflections/2026-02-14.md)  
   
   
 ## [🧰 Tools](./tools/index.md) (1)  
 - [🧮 Calculator](./tools/calculator.md)  
   
   
-## [📚 Books](./books/index.md) (941)  
+## [📚 Books](./books/index.md) (942)  
+- [🗓️💡 Poor Richard's Almanack](./books/poor-richards-almanack.md)  
+- [⚡️ The Autobiograpy of Benjamin Franklin](./books/the-autobiography-of-benjamin-franklin.md)  
 - [🦠🌍💀 The Great Influenza](./books/the-great-influenza.md)  
 - [➡️⛓️ The Road to Serfdom](./books/the-road-to-serfdom.md)  
 - [🐘🧠 The Conservative Sensibility by George F. Will](./books/the-conservative-sensibility.md)  
@@ -39,11 +41,10 @@ updated: 2026-02-23T18:43:59-08:00
 - [🧑‍🤝‍🧑 Belonging: The Science of Creating Connection and Bridging Divides](./books/belonging-the-science-of-creating-connection-and-bridging-divides.md)  
 - [⭐ Outliers](./books/outliers.md)  
 - [📢 Propaganda](./books/propaganda.md)  
-- [💗 Self-Compassion](./books/self-compassion.md)  
-- [🔮🤖 The Age of AI](./books/the-age-of-ai.md)  
   
   
-## [📺 Videos](./videos/index.md) (649)  
+## [📺 Videos](./videos/index.md) (650)  
+- [🤖🥀➡️❓🚀 Prompt Engineering Is Dead. Context Engineering Is Dying. What Comes Next Changes Everything.](./videos/prompt-engineering-is-dead-context-engineering-is-dying-what-comes-next-changes-everything.md)  
 - [💸📉🇺🇸 Scott Galloway: Why I'm selling my American stocks](./videos/scott-galloway-why-im-selling-my-american-stocks.md)  
 - [🧠💡🎓🤖 Harvard Thinking: Preserving learning in the age of AI shortcuts](./videos/harvard-thinking-preserving-learning-in-the-age-of-ai-shortcuts.md)  
 - [💰💡🤖🤔🤷 Google's New AI Is Smarter Than Everyone's But It Costs HALF as Much. Here's Why They Don't Care.](./videos/googles-new-ai-is-smarter-than-everyones-but-it-costs-half-as-much-heres-why-they-dont-care.md)  
@@ -53,7 +54,6 @@ updated: 2026-02-23T18:43:59-08:00
 - [🇺🇸📈💡🔮🚀 What the U.S. has accomplished in 250 years of innovation and what’s next](./videos/what-the-us-has-accomplished-in-250-years-of-innovation-and-whats-next.md)  
 - [✝️🏛️↔️ Why the Constitution Separates Church and State | Explainer](./videos/why-the-constitution-separates-church-and-state-explainer.md)  
 - [🇩🇪⚖️🇺🇸 Blueprint Why Germany's Legacy of Accountability Should Be A Blueprint for America's Moral Reckoning](./videos/why-germanys-legacy-of-accountability-should-be-a-blueprint-for-americas-moral-reckoning.md)  
-- [🇺🇸📚🔄 A look at what's behind the efforts to reshape how American history is taught](./videos/a-look-at-whats-behind-the-efforts-to-reshape-how-american-history-is-taught.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (88)  
@@ -73,11 +73,11 @@ updated: 2026-02-23T18:43:59-08:00
   
   
 ## [🤖💬 Bot Chats](./bot-chats/index.md) (47)  
+- [🤰⏰👶🔮 Forecasting Parenthood](./bot-chats/forecasting-parenthood.md)  
 - [📖 Book 🧭 Explorer 2](./bot-chats/book-explorer-2.md)  
 - [🗺️🗓️📋✅🔮 Planning](./bot-chats/planning.md)  
 - [📖 Book 🧭 Explorer 3](./bot-chats/book-explorer-3.md)  
 - [📖 Book 🧭 Explorer 1](./bot-chats/book-explorer-1.md)  
-- [👶😭➡️😊 Summarize The Happiest Baby On The Block](./bot-chats/summarize-the-happiest-baby-on-the-block.md)  
   
   
 ## [💾 Software](./software/index.md) (30)  

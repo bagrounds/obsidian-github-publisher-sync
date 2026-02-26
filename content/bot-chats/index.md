@@ -5,10 +5,10 @@ aliases:
 title: 🤖💬 Bot Chats
 URL: https://bagrounds.org/bot-chats
 backlinks: false
-updated: 2026-02-26T13:07:19-08:00
+updated: 2026-02-26T13:46:29-08:00
 ---
 [Home](../index.md)  
-# 🤖💬 Bot Chats (47)  
+# 🤖💬 Bot Chats (48)  
 - [🤖⚙️📈💡 AI Engineering Assistant Technology Recommendations](./ai-engineering-assistant-technology-recommendations.md)  
 - [🌸🌬️🤧🔬📚 Allergy Science Books](./allergy-science-books.md)  
 - [🤖📱🧠 Android Local LLMs](./android-local-llms.md)  
@@ -49,6 +49,7 @@ updated: 2026-02-26T13:07:19-08:00
 - [🗺️🗓️📋✅🔮 Planning](./planning.md)  
 - [🎯🐜🌍 Purpose Driven Tiny Habits for Systemic Change](./purpose-driven-tiny-habits-for-systemic-change.md)  
 - [📚🤖💬 RAG and Agents](./rag-and-agents.md)  
+- [💰💎🌽🏡📈 Real Wealth Investing](./real-wealth-investing.md)  
 - [✅🔎📰 Reliable News](./reliable-news.md)  
 - [🛐🕯️🔄 Ritual](./ritual.md)  
 - [🦷🔬 Science of Dentistry](./science-of-dentistry.md)  

@@ -54,4 +54,4 @@ youtube: https://youtu.be/W2jOrWChIC8
 ### 🎨 Creatively Related  
   
 * [👑🚫📜2️⃣0️⃣ On Tyranny: Twenty Lessons from the Twentieth Century](../books/on-tyranny.md) by Timothy Snyder offers twenty lessons from the twentieth century on how to recognize and resist the erosion of democratic norms.  
-* 📘 It Can't Happen Here by Sinclair Lewis depicts a fictional account of the rise of authoritarianism within the United States.
+* [🙅‍♀️👹 It Can't Happen Here](../books/it-cant-happen-here.md) by Sinclair Lewis depicts a fictional account of the rise of authoritarianism within the United States.

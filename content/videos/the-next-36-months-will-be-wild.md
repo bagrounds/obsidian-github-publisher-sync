@@ -51,7 +51,7 @@ youtube: https://youtu.be/zeHTTXAWDUA
 - 🤔 The video presents a highly optimistic and accelerationist view of AI development, predicting AGI and ASI within the next 36 months (0:01-1:59).  
 - 🤔 This perspective aligns with certain tech figures like Sam Altman and Jensen Huang (1:04-1:13) but may contrast with more cautious viewpoints from researchers like Geoffrey Hinton or Yoshua Bengio, who emphasize the need to slow down and prioritize safety.  
 - 🤔 The video highlights the rapid progress in AI capabilities, citing metrics like autonomous success rates (2:31-3:49) and advancements in algorithmic research, data generation, and code writing (4:10-7:51).  
-- 🤔 These technical advancements are widely acknowledged within the AI community, but their precise implications and timelines for AGI remain a subject of debate. For example, some argue that current AI progress, while impressive, does not inherently guarantee the swift emergence of AGI, as explained in AI Snake Oil by Arvind Narayanan and Sayash Kapoor.  
+- 🤔 These technical advancements are widely acknowledged within the AI community, but their precise implications and timelines for AGI remain a subject of debate. For example, some argue that current AI progress, while impressive, does not inherently guarantee the swift emergence of AGI, as explained in [🤖🐍🔎 AI Snake Oil](../books/ai-snake-oil.md) by Arvind Narayanan and Sayash Kapoor.  
 - 🤔 The video discusses the industrial siege, driven by competitive race dynamics among companies and nations, leading to an all-in win or lose mentality where pausing is seen as fatal (10:37-13:23).  
 - 🤔 This competitive landscape is indeed a significant factor in AI development, as explored in books like The Coming Wave by Mustafa Suleyman, which addresses the containment problem of rapidly advancing technology. However, external regulatory bodies and international cooperation initiatives, not extensively discussed in the video, also play a role in shaping this race.  
 - 🤔 Bottlenecks like chips and high bandwidth memory are presented as temporary and solvable by market forces (13:27-14:36), while energy is acknowledged as a larger challenge but also with proposed local solutions like microgrids (16:09-17:29).  
@@ -80,7 +80,7 @@ youtube: https://youtu.be/zeHTTXAWDUA
   
 ### 🆚 Contrasting  
   
-- AI Snake Oil by Arvind Narayanan and Sayash Kapoor cuts through the hype surrounding artificial intelligence, revealing its limitations and what it truly can and cannot do.  
+- [🤖🐍🔎 AI Snake Oil](../books/ai-snake-oil.md) by Arvind Narayanan and Sayash Kapoor cuts through the hype surrounding artificial intelligence, revealing its limitations and what it truly can and cannot do.  
 - Artificial Intelligence: A Guide for Thinking Humans by Melanie Mitchell provides an accessible explanation of AI's current capabilities and fundamental limitations.  
   
 ### 🎨 Creatively Related  

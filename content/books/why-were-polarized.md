@@ -66,11 +66,11 @@ affiliate link: https://www.amazon.com/dp/1476700362?tag=bagrounds-20
 ## 📖 Book Recommendations  
 ### ↔️ Similar  
 * [😇🧠 The Righteous Mind](./the-righteous-mind.md) by Jonathan Haidt  
-* 👥 Strangers in Their Own Land by Arlie Russell Hochschild  
+* [🫥🇺🇸😡💔 Strangers in Their Own Land: Anger and Mourning on the American Right](./strangers-in-their-own-land.md) by Arlie Russell Hochschild  
 * 🌐 The Divided Brain and the Making of the Western World by Iain McGilchrist  
   
 ### ⚖️ Contrasting  
-* 📈 The Upswing by Robert D. Putnam and Shaylyn Romney Garrett  
+* [🤝📈🇺🇸🔁 The Upswing: How America Came Together a Century Ago and How We Can Do It Again](./the-upswing.md) by Robert D. Putnam and Shaylyn Romney Garrett  
 * 📉 Coming Apart by Charles Murray  
 * 🚫 Against Empathy by Paul Bloom  
   

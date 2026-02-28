@@ -64,7 +64,7 @@ affiliate link: https://amzn.to/4akoJty
 ## 📚 Book Recommendations  
 ### 🤝 Similar  
 * The Politics Industry: How Political Innovation Can Break Partisan Gridlock and Save Our Democracy by Katherine Gehl and Michael E. Porter  
-* Why We're Polarized by Ezra Klein  
+* [↔️ Why We're Polarized](./why-were-polarized.md) by Ezra Klein  
 * [🏛️⛓️ Democracy in Chains: The Deep History of the Radical Right's Stealth Plan for America](./democracy-in-chains-the-deep-history-of-the-radical-rights-stealth-plan-for-america.md) by Nancy MacLean  
   
 ### ⚔️ Contrasting  

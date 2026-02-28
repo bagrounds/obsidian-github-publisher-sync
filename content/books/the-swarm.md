@@ -77,7 +77,7 @@ affiliate link: https://amzn.to/4q4zg0q
   
 ### ↔️ Contrasting  
 * 🏞️ Ecotopia by Ernest Callenbach: A utopian novel envisioning a sustainable, ecologically sound society in the Pacific Northwest.  
-* 🌲 Walden by Henry David Thoreau: A classic reflection on simple living in natural surroundings, emphasizing self-sufficiency and detachment from industrial society.  
+* [🌲 Walden](./walden.md) by Henry David Thoreau: A classic reflection on simple living in natural surroundings, emphasizing self-sufficiency and detachment from industrial society.  
   
 ### 🔗 Related  
 * 🦍 Devolution by Max Brooks: Humans in an isolated, eco-conscious community face an attack from nature, specifically Bigfoot, after a volcanic eruption.  

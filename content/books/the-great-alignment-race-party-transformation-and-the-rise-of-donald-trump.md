@@ -65,12 +65,12 @@ affiliate link: https://amzn.to/3JKHwU4
 ### 🙅 Contrasting  
 * 📕 The Great Revolt: Inside the Populist Coalition Reshaping American Politics by Salena Zito and Brad Todd  
 * 📕 Culture War? The Myth of a Polarized America by Morris P. Fiorina  
-* 📕 Strangers in Their Own Land: Anger and Mourning on the American Right by Arlie Russell Hochschild  
+* [🫥🇺🇸😡💔 Strangers in Their Own Land: Anger and Mourning on the American Right](./strangers-in-their-own-land.md) by Arlie Russell Hochschild  
   
 ### 🔗 Related  
 * [😇🧠 The Righteous Mind: Why Good People Are Divided by Politics and Religion](./the-righteous-mind.md) by Jonathan Haidt  
 * 📕 White Fragility: Why It's So Hard for White People to Talk About Racism by Robin DiAngelo  
-* 🤖 The Alignment Problem: Machine Learning and Human Values by Brian Christian (While not about politics, it explores the challenge of aligning complex systems with human values, a meta-theme relevant to political alignment)  
+* [⚖️🤖 The Alignment Problem](./the-alignment-problem.md): Machine Learning and Human Values by Brian Christian (While not about politics, it explores the challenge of aligning complex systems with human values, a meta-theme relevant to political alignment)  
   
 ## 🫵 What Do You Think?  
 🤔 Which of Abramowitz's core arguments resonates most with your observations of American politics today, and why? 😠 Do you believe negative partisanship is an enduring feature or a temporary phase?

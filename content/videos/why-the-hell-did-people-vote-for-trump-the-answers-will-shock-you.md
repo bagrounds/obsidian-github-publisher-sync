@@ -43,7 +43,7 @@ This video covers several specific issues related to 🗣️ political polarizat
     * [😇🧠 The Righteous Mind: Why Good People Are Divided by Politics and Religion](../books/the-righteous-mind.md) by Jonathan Haidt (directly mentioned in the video)  
 * **For insights into political polarization and its causes:**  
     * [🏘️↔️ The Big Sort: Why the Clustering of Like-Minded America Is Tearing Us Apart](../books/the-big-sort-why-the-clustering-of-like-minded-america-is-tearing-us-apart.md) by Bill Bishop  
-    * *Strangers in Their Own Land: Anger and Mourning on the American Right* by Arlie Russell Hochschild  
+    * [🫥🇺🇸😡💔 Strangers in Their Own Land](../books/strangers-in-their-own-land.md) by Arlie Russell Hochschild  
 * **For understanding voter behavior and demographics:**  
     * *Identity Crisis: The 2016 Presidential Campaign and the Battle for the Meaning of America* by John Sides, Michael Tesler, and Lynn Vavreck  
 * **For exploring postmaterialism and value shifts:**  

@@ -67,7 +67,7 @@ Factfulness argues that we have a dramatically skewed, pessimistic view of the w
 * **Best Book That Is Diametrically Opposed:**  
     * [💀🌍📉⏳ The Sixth Extinction: An Unnatural History](./the-sixth-extinction.md) by Elizabeth Kolbert. While "Factfulness" emphasizes progress, Kolbert's book highlights the devastating impact of human activity on the planet, offering a starkly different perspective. 🌎  
 * **Best Fiction Book That Incorporates Related Ideas:**  
-    * "The Ministry for the Future" by Kim Stanley Robinson. This novel explores the complexities of climate change and the challenges of achieving global progress, showcasing the interplay between data, politics, and human behavior. 🌍📖  
+    * The Ministry for the Future by Kim Stanley Robinson. This novel explores the complexities of climate change and the challenges of achieving global progress, showcasing the interplay between data, politics, and human behavior. 🌍📖  
 * **Random Book That Everyone Should Read:**  
     * [📜🌍⏳ Sapiens: A Brief History of Humankind](./sapiens-a-brief-history-of-humankind.md) by Yuval Noah Harari. This book provides a broad historical perspective on the development of human civilization, prompting readers to consider the long-term trends shaping our world. It helps put current events into the larger scale context of humanity. 📜  
   

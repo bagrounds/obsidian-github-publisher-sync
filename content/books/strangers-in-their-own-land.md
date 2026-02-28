@@ -7,11 +7,11 @@ URL: https://bagrounds.org/books/strangers-in-their-own-land
 Author:
 tags:
 CTA: 👣 Walk in their shoes.
-affiliate link: https://www.amazon.com/dp/1620972250?tag=bagrounds-20
+affiliate link: https://amzn.to/4r829t3
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🫥🇺🇸😡💔 Strangers in Their Own Land: Anger and Mourning on the American Right  
-[🛒 Strangers in Their Own Land: Anger and Mourning on the American Right. As an Amazon Associate I earn from qualifying purchases.](https://www.amazon.com/dp/1620972250?tag=bagrounds-20)  
+[🛒 Strangers in Their Own Land: Anger and Mourning on the American Right. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4r829t3)  
 🧐 sociological deep dive explores the emotional undercurrents driving right-wing political identification in a Louisiana community.  
   
 ## 🤖 AI Summary  

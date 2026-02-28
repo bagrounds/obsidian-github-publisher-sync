@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-02-27T19:37:53-08:00
+updated: 2026-02-28T10:08:33-08:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -13,8 +13,9 @@ updated: 2026-02-27T19:37:53-08:00
 ❔ What do 🫵 _you_ 🤔 think?  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (470)  
-- [2026-02-27 | 🤖🐍🚫 🐍 AI 🇺🇸 Polarized 🏛️ Brooks 📚📄📺📰](./reflections/2026-02-27.md)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (471)  
+- [2026-02-28](./reflections/2026-02-28.md)  
+- [2026-02-27 | 🤖🐍🚫🐍 AI 🇺🇸 Polarized 🏛️ Brooks 📚📄📺📰](./reflections/2026-02-27.md)  
 - [2026-02-26 | 🌐 Network 🗣️ Prompt 🇺🇸 Union 💰 Wealth 📚📺🤖💬](./reflections/2026-02-26.md)  
 - [2026-02-25 | 🌐 Network 🗓️ Almanack 📚](./reflections/2026-02-25.md)  
 - [2026-02-24 | 🌐 Network 🤖📚](./reflections/2026-02-24.md)  
@@ -23,7 +24,6 @@ updated: 2026-02-27T19:37:53-08:00
 - [2026-02-21 | 🦹 Rogue 🏃 Exit 🌐 Network 📚](./reflections/2026-02-21.md)  
 - [2026-02-20 | 🕵️‍♀️ Rogue 🚪 Exit 📚](./reflections/2026-02-20.md)  
 - [2026-02-19 | 🤖 Artificial 🕵️‍♀️ Rogue 🚫 Boycott 🏋️ Exercise 🏃 Endurance 💻 Coding 📚📺](./reflections/2026-02-19.md)  
-- [2026-02-18 | 🤖 Artificial 🕵️‍♀️ Rogue 📚](./reflections/2026-02-18.md)  
   
   
 ## [🧰 Tools](./tools/index.md) (1)  
@@ -31,19 +31,21 @@ updated: 2026-02-27T19:37:53-08:00
   
   
 ## [📚 Books](./books/index.md) (947)  
-- [🏘️↔️ The Big Sort: Why the Clustering of Like-Minded America Is Tearing Us Apart](./books/the-big-sort-why-the-clustering-of-like-minded-america-is-tearing-us-apart.md)  
-- [🤯🐍🏘️🎪💥 Mad House: How Donald Trump, MAGA Mean Girls, a Former Used Car Salesman, a Florida Nepo Baby, and a Man with Rats in His Walls Broke Congress](./books/mad-house.md)  
-- [😠🤝 Disagree without Disrespect: How to Respectfully Debate with Those who Think, Believe and Vote Differently from You](./books/disagree-without-disrespect-how-to-respectfully-debate-with-those-who-think-believe-and-vote-differently-from-you.md)  
-- [📰⚔️🧠 Information Wars: How We Lost the Global Battle Against Disinformation and What We Can Do About It](./books/information-wars.md)  
-- [😠🎭 Uncivil Agreement: How Politics Became Our Identity](./books/uncivil-agreement-how-politics-became-our-identity.md)  
-- [🇺🇸📉🏛️ The Path to Paralysis: How American Politics Became Nasty, Dysfunctional, and a Threat to the Republic](./books/the-path-to-paralysis-how-american-politics-became-nasty-dysfunctional-and-a-threat-to-the-republic.md)  
-- [⚠️🥴🕹️🌐 The Fifth Risk](./books/the-fifth-risk.md)  
-- [🤖🔮🌍 AI 2041: Ten Visions for Our Future](./books/ai-2041-ten-visions-for-our-future.md)  
-- [🙅‍♀️👹 It Can't Happen Here](./books/it-cant-happen-here.md)  
+- [🇷🇺🪝🇺🇸 American Kompromat: How the KGB Cultivated Donald Trump, and Other Tales of Sex, Greed, Power, and Treachery](./books/american-kompromat-how-the-kgb-cultivated-donald-trump-and-other-tales-of-sex-greed-power-and-treachery.md)  
+- [🤝📈🇺🇸🔁 The Upswing: How America Came Together a Century Ago and How We Can Do It Again](./books/the-upswing.md)  
+- [🧑‍🤝‍🧑🐘⬆️ The Great Alignment: Race, Party Transformation, and the Rise of Donald Trump](./books/the-great-alignment-race-party-transformation-and-the-rise-of-donald-trump.md)  
+- [↔️ Why We're Polarized](./books/why-were-polarized.md)  
 - [🫥🇺🇸😡💔 Strangers in Their Own Land: Anger and Mourning on the American Right](./books/strangers-in-their-own-land.md)  
+- [🧠🔌 The Thinking Machine: Jensen Huang, Nvidia, and the World's Most Coveted Microchip](./books/the-thinking-machine-jensen-huang-nvidia-and-the-worlds-most-coveted-microchip.md)  
+- [🇮🇹🇩🇪🇱🇾🇷🇺🇺🇸 Strongmen: Mussolini to the Present](./books/strongmen.md)  
+- [🗳️🕊️🇺🇸 Democracy in America](./books/democracy-in-america.md)  
+- [🗳️🏛️☠️ How Democracies Die](./books/how-democracies-die.md)  
+- [🙅‍♀️👹 It Can't Happen Here](./books/it-cant-happen-here.md)  
   
   
 ## [📺 Videos](./videos/index.md) (654)  
+- [🤖🗣️🔮✨ AI Talks | Gen AI 2026: What Will Shape the Future](./videos/ai-talks-gen-ai-2026-what-will-shape-the-future.md)  
+- [🏛️🗣️🗓️ Politics Chat, November 13, 2025](./videos/politics-chat-november-13-2025.md)  
 - [⏳📅🗓️🚀 The next 36 months will be WILD](./videos/the-next-36-months-will-be-wild.md)  
 - [🔬🛡️🤥 Authors of 'Science Under Siege' warn of concerted effort to discredit science](./videos/authors-of-science-under-siege-warn-of-concerted-effort-to-discredit-science.md)  
 - [👑⬇️🗣️📺 No Kings Protests Defy GOP Expectations & Jon Gives Trump a Royal Inspection | The Daily Show](./videos/no-kings-protests-defy-gop-expectations-jon-gives-trump-a-royal-inspection-the-daily-show.md)  
@@ -52,8 +54,6 @@ updated: 2026-02-27T19:37:53-08:00
 - [🇺🇸🔪💀🅰️ The Killing of Alex Pretti](./videos/the-killing-of-alex-pretti.md)  
 - [🚨🗣️🔥🗳️ Full Briefing: Mayor Frey Addresses Outrage Over ICE Shooting in Minneapolis | DRM News | AC1F](./videos/full-briefing-mayor-frey-addresses-outrage-over-ice-shooting-in-minneapolis-drm-news-ac1f.md)  
 - [🧢🇺🇸📢➡️ The MAGA Ideology That Brought Us to This Moment](./videos/the-maga-ideology-that-brought-us-to-this-moment.md)  
-- [❓😡🇺🇸🗳️ Why the hell did people vote for Trump? (the answers will shock you)](./videos/why-the-hell-did-people-vote-for-trump-the-answers-will-shock-you.md)  
-- [🇺🇸💔🩹❓ Can a divided America heal? | Jonathan Haidt](./videos/can-a-divided-america-heal-jonathan-haidt.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (88)  
@@ -64,12 +64,12 @@ updated: 2026-02-27T19:37:53-08:00
 - [⭐✨🌟💫 The Star](./topics/the-star.md)  
   
   
-## [📄  Articles](./articles/index.md) (78)  
+## [📄  Articles](./articles/index.md) (79)  
+- [🤖⚙️🧠 Writing about Agentic Engineering Patterns](./articles/writing-about-agentic-engineering-patterns.md)  
 - [🤖🛠️🧠📄 What Fred Brooks Can Teach Us About Writing Specs for AI](./articles/what-fred-brooks-can-teach-us-about-writing-specs-for-ai.md)  
 - [💻💰🤝👹🇺🇸 Tech moguls Altman, Bezos and Zuckerberg donate to Trump's inauguration fund](./articles/tech-moguls-altman-bezos-and-zuckerberg-donate-to-trumps-inauguration-fund.md)  
 - [🤖🧠📈🗣️🧰 Towards a science of scaling agent systems: When and why agent systems work](./articles/towards-a-science-of-scaling-agent-systems-when-and-why-agent-systems-work.md)  
 - [😴💰🏛️🤑👴🇸🇪 ‘We got lazy and complacent’: Swedish pensioners explain how abolishing the wealth tax changed their country](./articles/we-got-lazy-and-complacent-swedish-pensioners-explain-how-abolishing-the-wealth-tax-changed-their-country.md)  
-- [🤖👨‍💻📈⏳ Learnings from two years of using AI tools for software engineering](./articles/learnings-from-two-years-of-using-ai-tools-for-software-engineering.md)  
   
   
 ## [🤖💬 Bot Chats](./bot-chats/index.md) (48)  
@@ -81,11 +81,11 @@ updated: 2026-02-27T19:37:53-08:00
   
   
 ## [💾 Software](./software/index.md) (30)  
+- [💻🔓 OpenCode](./software/opencode.md)  
 - [🤖♊ Gemini](./software/gemini.md)  
 - [👽🦺 Zod](./software/zod.md)  
 - [💡🔧📏🔮〰️ Vensim](./software/vensim.md)  
 - [💻📱🛠️ Termux](./software/termux.md)  
-- [✨⚙️ Redis](./software/redis.md)  
   
   
 ## [👥 People](./people/index.md) (18)  

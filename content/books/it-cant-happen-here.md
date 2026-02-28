@@ -74,13 +74,13 @@ affiliate link: https://www.amazon.com/dp/0451525825?tag=bagrounds-20
   
 ### ↔️ Contrasting  
 * [🇺🇸 Democracy in America](./democracy-in-america.md) by Alexis de Tocqueville  
-* 📜 The Federalist Papers by Alexander Hamilton, James Madison, and John Jay  
-* 📉 Why Nations Fail by Daron Acemoglu and James A. Robinson  
+* [🇺🇸📜 The Federalist Papers](./the-federalist-papers.md) by Alexander Hamilton, James Madison, and John Jay  
+* 📉 [🌎👎👑💰🏚️ Why Nations Fail: The Origins of Power, Prosperity, and Poverty](./why-nations-fail-the-origins-of-power-prosperity-and-poverty.md) by Daron Acemoglu and James A. Robinson  
   
 ### 🔗 Related  
 * 📖 The Rise and Fall of the Third Reich by William L. Shirer  
-* 📖 On Tyranny by Timothy Snyder  
-* 📖 Dark Money by Jane Mayer  
+* 📖 [👑🚫📜2️⃣0️⃣ On Tyranny: Twenty Lessons from the Twentieth Century](./on-tyranny.md) by Timothy Snyder  
+* 📖 [💰🤫 Dark Money: The Hidden History of the Billionaires Behind the Rise of the Radical Right](./dark-money-the-hidden-history-of-the-billionaires-behind-the-rise-of-the-radical-right.md) by Jane Mayer  
   
 ## 🫵 What Do You Think?  
 💭 What aspects of It Can't Happen Here resonate most powerfully with current events, or which character's response to the crisis do you find most compelling or cautionary?  

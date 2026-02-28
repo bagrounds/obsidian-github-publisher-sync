@@ -30,7 +30,7 @@ youtube: https://youtu.be/3wkBjfQ8OJc
   
 * 🔍 The independence of the Federal Reserve is a cornerstone of American economic stability, as detailed in Central Banking 101 by Joseph Wang.  
 * 📜 Presidential authority to fire Federal Reserve governors for policy disagreements is legally contested, a topic explored in The Fed and Maine Street by the Federal Reserve Bank of Kansas City.  
-* 📈 Political polarization often forces parties to prioritize base mobilization over broad consensus, as analyzed in Why We're Polarized by Ezra Klein.  
+* 📈 Political polarization often forces parties to prioritize base mobilization over broad consensus, as analyzed in [↔️ Why We're Polarized](../books/why-were-polarized.md) by Ezra Klein.  
   
 ## ❓ Frequently Asked Questions (FAQ)  
   

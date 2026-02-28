@@ -60,4 +60,4 @@ youtube: https://youtu.be/bHxf4V3r3Ic
 ### 🎨 Creatively Related  
   
 * 📙 The City and the City by China Miéville, published by Del Rey, is a fictional exploration of overlapping jurisdictions and the psychological toll of living in a policed state.  
-* 📙 It Can't Happen Here by Sinclair Lewis, published by Signet, provides a classic literary warning about the erosion of local democratic norms by centralized power.
+* [🙅‍♀️👹 It Can't Happen Here](../books/it-cant-happen-here.md) by Sinclair Lewis, published by Signet, provides a classic literary warning about the erosion of local democratic norms by centralized power.

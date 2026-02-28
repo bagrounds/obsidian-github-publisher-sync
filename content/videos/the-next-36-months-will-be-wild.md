@@ -76,7 +76,7 @@ youtube: https://youtu.be/zeHTTXAWDUA
 ### ↔️ Similar  
   
 - [🌊🤖🤔 The Coming Wave: Technology, Power, and the 21st Century's Greatest Dilemma](../books/the-coming-wave-technology-power-and-the-21st-centurys-greatest-dilemma.md) by Mustafa Suleyman explores the dual nature of AI as a powerful tool and a potential threat, emphasizing the need for control.  
-- AI 2041 by Kai-Fu Lee and Chen Qiufan offers ten fictional stories exploring the near-future impact of artificial intelligence on human life.  
+- [🤖🔮🌍 AI 2041](../books/ai-2041-ten-visions-for-our-future.md) by Kai-Fu Lee and Chen Qiufan offers ten fictional stories exploring the near-future impact of artificial intelligence on human life.  
   
 ### 🆚 Contrasting  
   

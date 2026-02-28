@@ -60,7 +60,7 @@ youtube: https://youtu.be/tjpNG_YXtdU
 ### ↔️ Similar  
   
 - [😇🧠 The Righteous Mind: Why Good People Are Divided by Politics and Religion](../books/the-righteous-mind.md) by Jonathan Haidt explores the psychological foundations of moral and political divisions, reflecting the ideological debates seen in the video's discussion of party primaries.  
-- 📗 Why We're Polarized by Ezra Klein investigates the causes and consequences of political polarization in the United States, a central theme in the video's analysis of both Republican and Democratic internal struggles.  
+- [↔️ Why We're Polarized](../books/why-were-polarized.md) by Ezra Klein investigates the causes and consequences of political polarization in the United States, a central theme in the video's analysis of both Republican and Democratic internal struggles.  
   
 ### 🆚 Contrasting  
   

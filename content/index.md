@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-02-27T17:38:25-08:00
+updated: 2026-02-27T19:37:53-08:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -14,8 +14,8 @@ updated: 2026-02-27T17:38:25-08:00
 💬 Comment on any page with your GitHub account.  
   
 ## [🪞 Reflections](./reflections/index.md) ~ Blog (470)  
-- [2026-02-27](./reflections/2026-02-27.md)  
-- [2026-02-26 | 🌐 Network 🗣️ Prompt 📚📺](./reflections/2026-02-26.md)  
+- [2026-02-27 | 🤖🐍🚫 🐍 AI 🇺🇸 Polarized 🏛️ Brooks 📚📄📺📰](./reflections/2026-02-27.md)  
+- [2026-02-26 | 🌐 Network 🗣️ Prompt 🇺🇸 Union 💰 Wealth 📚📺🤖💬](./reflections/2026-02-26.md)  
 - [2026-02-25 | 🌐 Network 🗓️ Almanack 📚](./reflections/2026-02-25.md)  
 - [2026-02-24 | 🌐 Network 🤖📚](./reflections/2026-02-24.md)  
 - [2026-02-23 | 🌐 Network 💰 Google 🧠 Harvard 📈 Stocks 📚📺](./reflections/2026-02-23.md)  
@@ -30,30 +30,30 @@ updated: 2026-02-27T17:38:25-08:00
 - [🧮 Calculator](./tools/calculator.md)  
   
   
-## [📚 Books](./books/index.md) (942)  
-- [🗓️💡 Poor Richard's Almanack](./books/poor-richards-almanack.md)  
-- [⚡️ The Autobiograpy of Benjamin Franklin](./books/the-autobiography-of-benjamin-franklin.md)  
-- [🦠🌍💀 The Great Influenza](./books/the-great-influenza.md)  
-- [➡️⛓️ The Road to Serfdom](./books/the-road-to-serfdom.md)  
-- [🐘🧠 The Conservative Sensibility by George F. Will](./books/the-conservative-sensibility.md)  
-- [👑🏙️ The Power Broker](./books/the-power-broker.md)  
-- [💡🎨 Originals: How Non-Conformists Move the World](./books/originals.md)  
-- [🧑‍🤝‍🧑 Belonging: The Science of Creating Connection and Bridging Divides](./books/belonging-the-science-of-creating-connection-and-bridging-divides.md)  
-- [⭐ Outliers](./books/outliers.md)  
-- [📢 Propaganda](./books/propaganda.md)  
+## [📚 Books](./books/index.md) (947)  
+- [🏘️↔️ The Big Sort: Why the Clustering of Like-Minded America Is Tearing Us Apart](./books/the-big-sort-why-the-clustering-of-like-minded-america-is-tearing-us-apart.md)  
+- [🤯🐍🏘️🎪💥 Mad House: How Donald Trump, MAGA Mean Girls, a Former Used Car Salesman, a Florida Nepo Baby, and a Man with Rats in His Walls Broke Congress](./books/mad-house.md)  
+- [😠🤝 Disagree without Disrespect: How to Respectfully Debate with Those who Think, Believe and Vote Differently from You](./books/disagree-without-disrespect-how-to-respectfully-debate-with-those-who-think-believe-and-vote-differently-from-you.md)  
+- [📰⚔️🧠 Information Wars: How We Lost the Global Battle Against Disinformation and What We Can Do About It](./books/information-wars.md)  
+- [😠🎭 Uncivil Agreement: How Politics Became Our Identity](./books/uncivil-agreement-how-politics-became-our-identity.md)  
+- [🇺🇸📉🏛️ The Path to Paralysis: How American Politics Became Nasty, Dysfunctional, and a Threat to the Republic](./books/the-path-to-paralysis-how-american-politics-became-nasty-dysfunctional-and-a-threat-to-the-republic.md)  
+- [⚠️🥴🕹️🌐 The Fifth Risk](./books/the-fifth-risk.md)  
+- [🤖🔮🌍 AI 2041: Ten Visions for Our Future](./books/ai-2041-ten-visions-for-our-future.md)  
+- [🙅‍♀️👹 It Can't Happen Here](./books/it-cant-happen-here.md)  
+- [🫥🇺🇸😡💔 Strangers in Their Own Land: Anger and Mourning on the American Right](./books/strangers-in-their-own-land.md)  
   
   
 ## [📺 Videos](./videos/index.md) (654)  
-- [🏛️🗳️🗣️ Brooks and Capehart on the Senate primaries in Texas](./videos/brooks-and-capehart-on-the-senate-primaries-in-texas.md)  
 - [⏳📅🗓️🚀 The next 36 months will be WILD](./videos/the-next-36-months-will-be-wild.md)  
-- [🏆🚀🛠️🤯🚫💻 Stop Competing With 400 Applicants. Build This in One Weekend (Yes, there's a no code option too!)](./videos/stop-competing-with-400-applicants-build-this-in-one-weekend-yes-theres-a-no-code-option-too.md)  
-- [🇺🇸🤝🏛️ The State of Our Union](./videos/the-state-of-our-union.md)  
-- [🤖🥀➡️❓🚀 Prompt Engineering Is Dead. Context Engineering Is Dying. What Comes Next Changes Everything.](./videos/prompt-engineering-is-dead-context-engineering-is-dying-what-comes-next-changes-everything.md)  
-- [💸📉🇺🇸 Scott Galloway: Why I'm selling my American stocks](./videos/scott-galloway-why-im-selling-my-american-stocks.md)  
-- [🧠💡🎓🤖 Harvard Thinking: Preserving learning in the age of AI shortcuts](./videos/harvard-thinking-preserving-learning-in-the-age-of-ai-shortcuts.md)  
-- [💰💡🤖🤔🤷 Google's New AI Is Smarter Than Everyone's But It Costs HALF as Much. Here's Why They Don't Care.](./videos/googles-new-ai-is-smarter-than-everyones-but-it-costs-half-as-much-heres-why-they-dont-care.md)  
-- [🧠⚡️😊⬇️⬆️ How Dopamine & Serotonin Shape Decisions, Motivation & Learning | Dr. Read Montague](./videos/how-dopamine-serotonin-shape-decisions-motivation-learning-dr-read-montague.md)  
-- [🤖🧪🚫🛑💥 Anthropic Tested 16 Models. Instructions Didn't Stop Them (When Security is a Structural Failure)](./videos/anthropic-tested-16-models-instructions-didnt-stop-them-when-security-is-a-structural-failure.md)  
+- [🔬🛡️🤥 Authors of 'Science Under Siege' warn of concerted effort to discredit science](./videos/authors-of-science-under-siege-warn-of-concerted-effort-to-discredit-science.md)  
+- [👑⬇️🗣️📺 No Kings Protests Defy GOP Expectations & Jon Gives Trump a Royal Inspection | The Daily Show](./videos/no-kings-protests-defy-gop-expectations-jon-gives-trump-a-royal-inspection-the-daily-show.md)  
+- [🗣️⚔️🏛️ FULL DISCUSSION: Gavin Newsom Slams Trump’s Authoritarianism in Explosive WEF Interview | AC1G](./videos/full-discussion-gavin-newsom-slams-trumps-authoritarianism-in-explosive-wef-interview-ac1g.md)  
+- [💥👥💀🚨 ‘They killed a man, created chaos:’ Gov. Walz on shooting](./videos/they-killed-a-man-created-chaos-gov-walz-on-shooting.md)  
+- [🇺🇸🔪💀🅰️ The Killing of Alex Pretti](./videos/the-killing-of-alex-pretti.md)  
+- [🚨🗣️🔥🗳️ Full Briefing: Mayor Frey Addresses Outrage Over ICE Shooting in Minneapolis | DRM News | AC1F](./videos/full-briefing-mayor-frey-addresses-outrage-over-ice-shooting-in-minneapolis-drm-news-ac1f.md)  
+- [🧢🇺🇸📢➡️ The MAGA Ideology That Brought Us to This Moment](./videos/the-maga-ideology-that-brought-us-to-this-moment.md)  
+- [❓😡🇺🇸🗳️ Why the hell did people vote for Trump? (the answers will shock you)](./videos/why-the-hell-did-people-vote-for-trump-the-answers-will-shock-you.md)  
+- [🇺🇸💔🩹❓ Can a divided America heal? | Jonathan Haidt](./videos/can-a-divided-america-heal-jonathan-haidt.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (88)  

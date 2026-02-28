@@ -5,10 +5,10 @@ aliases:
 share: true
 URL: https://bagrounds.org/books
 backlinks: false
-updated: 2026-02-27T17:38:25-08:00
+updated: 2026-02-27T19:37:53-08:00
 ---
 [Home](../index.md)  
-# 📚 Books (942)  
+# 📚 Books (947)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [💻0️⃣ Source Code: My Beginnings](./source-code-my-beginnings.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)  
@@ -32,11 +32,13 @@ updated: 2026-02-27T17:38:25-08:00
 - [🧑‍🌾🌿 A Gardener's Guide to Botany: The Biology Behind the Plants You Love, How They Grow, and What They Need](./a-gardeners-guide-to-botany.md)  
 - [🤖⚙️ Agentic Artificial Intelligence: Harnessing AI Agents to Reinvent Business, Work and Life](./agentic-artificial-intelligence-harnessing-ai-agents-to-reinvent-business-work-and-life.md)  
 - [⬆️🤥🏛️ A Higher Loyalty: Truth, Lies, and Leadership](./a-higher-loyalty-truth-lies-and-leadership.md)  
+- [🤖🔮🌍 AI 2041: Ten Visions for Our Future](./ai-2041-ten-visions-for-our-future.md)  
 - [🤖⚙️ AI Agents in Action](./ai-agents-in-action.md)  
 - [🤖🏗️ AI Engineering: Building Applications with Foundation Models](./ai-engineering-building-applications-with-foundation-models.md)  
 - [🤖📈 AI for Marketing and Product Innovation: Powerful New Tools for Predicting Trends, Connecting with Customers, and Closing Sales](./ai-for-marketing-and-product-innovation-powerful-new-tools-for-predicting-trends-connecting-with-customers-and-closing-sales.md)  
 - [🤖🖱️🤝 AI meets UX: Designing the Next Generation of User-Centered Products: Where innovation meets empathy to shape the future of design](./ai-meets-ux-designing-the-next-generation-of-user-centered-products-where-innovation-meets-empathy-to-shape-the-future-of-design.md)  
 - [🤖💻 AI-Powered Developer: Build great software with ChatGPT and Copilot](./ai-powered-developer-build-great-software-with-chatgpt-and-copilot.md)  
+- [🤖🐍🔎 AI Snake Oil: What Artificial Intelligence Can Do, What It Can't, and How to Tell the Difference](./ai-snake-oil.md)  
 - [🇺🇸⚔️ Alexander Hamilton](./alexander-hamilton.md)  
 - [⚙️🎯 Algorithms for Optimization](./algorithms-for-optimization.md)  
 - [🤔💻🧠 Algorithms to Live By: The Computer Science of Human Decisions](./algorithms-to-live-by.md)  
@@ -368,6 +370,7 @@ updated: 2026-02-27T17:38:25-08:00
 - [🧠👶📈 Introduction to Developmental Cognitive Neuroscience: An Introduction](./developmental-cognitive-neuroscience.md)  
 - [👨‍💼➕ Introduction to Employee Benefits Law](./introduction-to-employee-benefits-law.md)  
 - [🌡️⚙️ Inventing Temperature: Measurement and Scientific Progress](./inventing-temperature-measurement-and-scientific-progress.md)  
+- [🙅‍♀️👹 It Can't Happen Here](./it-cant-happen-here.md)  
 - [🧑‍💻🍎🌟😄 iWoz: Computer Geek to Cult Icon: How I Invented the Personal Computer, Co-Founded Apple, and Had Fun Doing It](./iwoz-computer-geek-to-cult-icon-how-i-invented-the-personal-computer-co-founded-apple-and-had-fun-doing-it.md)  
 - [👂🤫 Just Listen: Discover the Secret to Getting Through to Absolutely Anyone](./just-listen.md)  
 - [🧑🏿‍⚖️🔄 Just Mercy: A Story of Justice and Redemption](./just-mercy-a-story-of-justice-and-redemption.md)  
@@ -595,6 +598,7 @@ updated: 2026-02-27T17:38:25-08:00
 - [📊🫠 Statistics for Dummies](./statistics-for-dummies.md)  
 - [⛈️🏛️ Storm at the Capitol: An Oral History of January 6th](./storm-at-the-capitol-an-oral-history-of-january-6th.md)  
 - [📖📊📈 Storytelling with Data: A Data Visualization Guide for Business Professionals](./storytelling-with-data-a-data-visualization-guide-for-business-professionals.md)  
+- [🫥🇺🇸😡💔 Strangers in Their Own Land: Anger and Mourning on the American Right](./strangers-in-their-own-land.md)  
 - [🦸‍♀️ Strong Female Character](./strong-female-character.md)  
 - [🇮🇹🇩🇪🇱🇾🇷🇺🇺🇸 Strongmen: Mussolini to the Present](./strongmen.md)  
 - [😮😊 Stumbling on Happiness](./stumbling-on-happiness.md)  
@@ -936,6 +940,7 @@ updated: 2026-02-27T17:38:25-08:00
 - [🌎👎👑💰🏚️ Why Nations Fail: The Origins of Power, Prosperity, and Poverty](./why-nations-fail-the-origins-of-power-prosperity-and-poverty.md)  
 - [📉❓ Why Nothing Works: Who Killed Progress - and How to Bring It Back](./why-nothing-works-who-killed-progress-and-how-to-bring-it-back.md)  
 - [🇺🇸🏛️ Why the New Deal Matters](./why-the-new-deal-matters.md)  
+- [↔️ Why We're Polarized](./why-were-polarized.md)  
 - [😴💭 Why We Sleep: Unlocking the Power of Sleep and Dreams](./why-we-sleep-unlocking-the-power-of-sleep-and-dreams.md)  
 - [🫵🤝🌍🏛️ Why You Should Be a Socialist](./why-you-should-be-a-socialist.md)  
 - [🦓 Why Zebras Don't Get Ulcers: The Acclaimed Guide to Stress, Stress-Related Disease, and Coping](./why-zebras-dont-get-ulcers.md)  

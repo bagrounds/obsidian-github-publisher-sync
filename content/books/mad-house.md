@@ -4,8 +4,8 @@ aliases:
   - "🤯🐍🏘️🎪💥 Mad House: How Donald Trump, MAGA Mean Girls, a Former Used Car Salesman, a Florida Nepo Baby, and a Man with Rats in His Walls Broke Congress"
 title: "🤯🐍🏘️🎪💥 Mad House: How Donald Trump, MAGA Mean Girls, a Former Used Car Salesman, a Florida Nepo Baby, and a Man with Rats in His Walls Broke Congress"
 URL: https://bagrounds.org/books/mad-house
-Author: 
-tags: 
+Author:
+tags:
 affiliate link: https://amzn.to/3FmLost
 CTA: Expose the madness.
 ---
@@ -76,7 +76,7 @@ By Annie Karni
   
 * 🏆 **Best Alternate Book (Same Topic):** [⚠️😬😰 Peril](./peril.md) by Bob Woodward and Robert Costa. 🇺🇸 This book provides a broader look at the transition of power from Trump to Biden, which is tangentially related to the congressional chaos.  
   
-* 🤝 **Best Tangentially Related Book:** 🤔 "Why We're Polarized" by Ezra Klein. 🤝 This book explores the roots of political polarization in the United States, providing context for the events described in "Mad House." 🇺🇸 📚  
+* 🤝 **Best Tangentially Related Book:** [↔️ Why We're Polarized](./why-were-polarized.md) by Ezra Klein. 🤝 This book explores the roots of political polarization in the United States, providing context for the events described in "Mad House." 🇺🇸 📚  
   
 * ⚔️ **Best Diametrically Opposed Book:** 🇺🇸 "The Case for Trump" by Victor David Hanson. 🛡️ This book offers a defense of Donald Trump and his policies, presenting a contrasting perspective to the critical view in "Mad House." 📰  
   

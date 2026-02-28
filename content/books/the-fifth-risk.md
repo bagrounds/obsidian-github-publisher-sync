@@ -50,7 +50,7 @@ CTA: 🚨 Shield our future.
     * [💀👨‍🏫 The Death of Expertise: The Campaign Against Established Knowledge and Why It Matters](./the-death-of-expertise-the-campaign-against-established-knowledge-and-why-it-matters.md) by Tom Nichols (Explores the societal devaluation of expertise, a theme central to *The Fifth Risk*'s concerns about ignoring career officials).  
     * 🌐 *Recoding America: Why Government is Failing in the Digital Age and How We Can Do Better* by Jennifer Pahlka (Examines the technological and bureaucratic challenges facing government in the 21st century).  
     * [🧑‍🤝‍🧑🧠 The Undoing Project: A Friendship That Changed Our Minds](./the-undoing-project-a-friendship-that-changed-our-minds.md) by Michael Lewis (While not directly about government, it explores the work of behavioral economists Kahneman and Tversky on how humans assess risk and make decisions, providing a psychological backdrop to the challenges Lewis describes).  
-    * 🏛️ *Why We're Polarized* by Ezra Klein (Discusses the political and social forces that have led to deep partisan divisions, which can impact the functioning of government agencies).  
+    * [↔️ Why We're Polarized](./why-were-polarized.md) by Ezra Klein (Discusses the political and social forces that have led to deep partisan divisions, which can impact the functioning of government agencies).  
   
 ### ⚖️ Contrasting Books (Different Perspectives on Government/Risk)  
   

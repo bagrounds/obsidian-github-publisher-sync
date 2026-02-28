@@ -54,7 +54,7 @@ The "💀 death of expertise" carries profound implications for society:
   
 * 🏫 **Democracy and Education** by John Dewey: Dewey's classic work champions a progressive vision of education that emphasizes experiential learning and the development of critical thinking for active participation in a democratic society, providing a philosophical counterpoint to Nichols's critique of higher education.  
 * 🧠 **The Wisdom of Crowds** by James Surowiecki: While Nichols critiques the idea that collective ignorance can rival 👨‍🏫 expertise, Surowiecki explores instances where the aggregation of ℹ️ information in large groups can lead to surprisingly accurate outcomes, offering a different perspective on collective intelligence (though it's important to note the nuances of when "crowds" are wise versus simply misinformed, a distinction Nichols implicitly makes).  
-* ✊ **A People's History of the United States** by Howard Zinn: This book challenges traditional historical narratives, often presented by established 👨‍🏫 experts, by offering perspectives from marginalized groups. It contrasts by suggesting that "established knowledge" can sometimes serve particular interests and encourages questioning dominant narratives.  
+* ✊ A People's History of the United States by Howard Zinn: This book challenges traditional historical narratives, often presented by established 👨‍🏫 experts, by offering perspectives from marginalized groups. It contrasts by suggesting that "established knowledge" can sometimes serve particular interests and encourages questioning dominant narratives.  
   
 ### ✨ Creatively Related Books  
   

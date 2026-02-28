@@ -32,6 +32,6 @@ The video's perspective, rooted in social psychology, suggests that political di
 ## 📚 **Book Recommendations**  
   
 * [😇🧠 The Righteous Mind: Why Good People Are Divided by Politics and Religion](../books/the-righteous-mind.md) by Jonathan Haidt, a perfect companion for a deeper dive into the moral foundations and psychology presented in the video.  
-* Strangers in Their Own Land by Arlie Russell Hochschild, offers a contrasting perspective by exploring the political and emotional landscape of conservatives in a way that builds empathy.  
+* [🫥🇺🇸😡💔 Strangers in Their Own Land](../books/strangers-in-their-own-land.md) by Arlie Russell Hochschild, offers a contrasting perspective by exploring the political and emotional landscape of conservatives in a way that builds empathy.  
 * [🤔🐇🐢 Thinking, Fast and Slow](../books/thinking-fast-and-slow.md) by Daniel Kahneman, provides a broader context for the **intuitive versus rational** mind concept discussed in the video, with a focus on cognitive biases.  
 * [🤕👶 The Coddling of the American Mind: How Good Intentions and Bad Ideas Are Setting Up a Generation for Failure](../books/the-coddling-of-the-american-mind-how-good-intentions-and-bad-ideas-are-setting-up-a-generation-for-failure.md) by Greg Lukianoff and Jonathan Haidt, a creatively related book that applies the principles of moral psychology to understand trends in higher education and mental health.

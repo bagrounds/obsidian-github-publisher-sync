@@ -5,12 +5,12 @@ aliases:
 title: 🪞 Reflections
 URL: https://bagrounds.org/reflections
 backlinks: false
-updated: 2026-02-27T17:38:25-08:00
+updated: 2026-02-27T19:37:53-08:00
 ---
 [Home](../index.md)  
 # 🪞 Reflections (470)  
-- [2026-02-27](./2026-02-27.md)  
-- [2026-02-26 | 🌐 Network 🗣️ Prompt 📚📺](./2026-02-26.md)  
+- [2026-02-27 | 🤖🐍🚫 🐍 AI 🇺🇸 Polarized 🏛️ Brooks 📚📄📺📰](./2026-02-27.md)  
+- [2026-02-26 | 🌐 Network 🗣️ Prompt 🇺🇸 Union 💰 Wealth 📚📺🤖💬](./2026-02-26.md)  
 - [2026-02-25 | 🌐 Network 🗓️ Almanack 📚](./2026-02-25.md)  
 - [2026-02-24 | 🌐 Network 🤖📚](./2026-02-24.md)  
 - [2026-02-23 | 🌐 Network 💰 Google 🧠 Harvard 📈 Stocks 📚📺](./2026-02-23.md)  

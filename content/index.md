@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-02-26T14:05:39-08:00
+updated: 2026-02-27T16:42:46-08:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -13,7 +13,8 @@ updated: 2026-02-26T14:05:39-08:00
 ❔ What do 🫵 _you_ 🤔 think?  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (469)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (470)  
+- [2026-02-27](./reflections/2026-02-27.md)  
 - [2026-02-26 | 🌐 Network 🗣️ Prompt 📚📺](./reflections/2026-02-26.md)  
 - [2026-02-25 | 🌐 Network 🗓️ Almanack 📚](./reflections/2026-02-25.md)  
 - [2026-02-24 | 🌐 Network 🤖📚](./reflections/2026-02-24.md)  
@@ -23,7 +24,6 @@ updated: 2026-02-26T14:05:39-08:00
 - [2026-02-20 | 🕵️‍♀️ Rogue 🚪 Exit 📚](./reflections/2026-02-20.md)  
 - [2026-02-19 | 🤖 Artificial 🕵️‍♀️ Rogue 🚫 Boycott 🏋️ Exercise 🏃 Endurance 💻 Coding 📚📺](./reflections/2026-02-19.md)  
 - [2026-02-18 | 🤖 Artificial 🕵️‍♀️ Rogue 📚](./reflections/2026-02-18.md)  
-- [2026-02-17 | 🚨 Systems ⚙️ Condition 🧱 Border 🛂 ICE 📚📺](./reflections/2026-02-17.md)  
   
   
 ## [🧰 Tools](./tools/index.md) (1)  
@@ -64,12 +64,12 @@ updated: 2026-02-26T14:05:39-08:00
 - [⭐✨🌟💫 The Star](./topics/the-star.md)  
   
   
-## [📄  Articles](./articles/index.md) (77)  
+## [📄  Articles](./articles/index.md) (78)  
+- [🤖🛠️🧠📄 What Fred Brooks Can Teach Us About Writing Specs for AI](./articles/what-fred-brooks-can-teach-us-about-writing-specs-for-ai.md)  
 - [💻💰🤝👹🇺🇸 Tech moguls Altman, Bezos and Zuckerberg donate to Trump's inauguration fund](./articles/tech-moguls-altman-bezos-and-zuckerberg-donate-to-trumps-inauguration-fund.md)  
 - [🤖🧠📈🗣️🧰 Towards a science of scaling agent systems: When and why agent systems work](./articles/towards-a-science-of-scaling-agent-systems-when-and-why-agent-systems-work.md)  
 - [😴💰🏛️🤑👴🇸🇪 ‘We got lazy and complacent’: Swedish pensioners explain how abolishing the wealth tax changed their country](./articles/we-got-lazy-and-complacent-swedish-pensioners-explain-how-abolishing-the-wealth-tax-changed-their-country.md)  
 - [🤖👨‍💻📈⏳ Learnings from two years of using AI tools for software engineering](./articles/learnings-from-two-years-of-using-ai-tools-for-software-engineering.md)  
-- [🤖⚙️🔄🗣️ Agentic Context Engineering: Evolving Contexts for Self Improving Language Models](./articles/agentic-context-engineering-evolving-contexts-for-self-improving-language-models.md)  
   
   
 ## [🤖💬 Bot Chats](./bot-chats/index.md) (48)  

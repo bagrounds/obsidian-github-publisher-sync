@@ -36,7 +36,7 @@ The book presents data 📊 and analysis to support its claims of increasing hom
 ### 🤝 Similar Books (Exploring Political Polarization and Social Divides)  
   
 * **[🎳🏘️📉📈 Bowling Alone: The Collapse and Revival of American Community](./bowling-alone.md) by Robert D. Putnam:** Explores the decline of civic engagement and social capital in America, offering a broader context for the weakening of community ties that *The Big Sort* also addresses.  
-* 🤯 **Why We're Polarized by Ezra Klein:** Delves into the psychological and political forces that have deepened partisan divides in America, offering a complementary perspective on the mechanisms of polarization.  
+* **[↔️ Why We're Polarized](./why-were-polarized.md) by Ezra Klein:** Delves into the psychological and political forces that have deepened partisan divides in America, offering a complementary perspective on the mechanisms of polarization.  
 * **[😇🧠 The Righteous Mind: Why Good People Are Divided by Politics and Religion](./the-righteous-mind.md) by Jonathan Haidt:** Examines the moral and psychological foundations that underlie political and religious differences, helping to explain why people hold such divergent views.  
 * 👨‍👩‍👧‍👦 **Political Tribes: Group Instinct and the Fate of Nations by Amy Chua:** Argues that loyalty to identity groups often trumps ideological alignment in shaping political landscapes, providing another lens through which to view the forces of social sorting.  
 * 🏙️ **The Density Divide: Urbanization, Polarization, and Populist Backlash by Will Wilkinson:** Focuses on the increasing political and cultural divergence between denser urban areas and less dense rural areas, offering a more geographically specific analysis related to Bishop's work.  

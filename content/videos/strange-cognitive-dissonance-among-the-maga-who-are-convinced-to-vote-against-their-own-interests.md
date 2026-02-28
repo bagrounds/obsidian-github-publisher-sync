@@ -29,7 +29,7 @@ youtube: https://youtu.be/2fUs-YDzZPU
 * **🏛️ Political Science & US Politics:**  
     * [🗳️🕊️🇺🇸 Democracy in America](../books/democracy-in-america.md) by Alexis de Tocqueville  
     * *The American Political Tradition* by Richard Hofstadter  
-    * *Strangers in Their Own Land: Anger and Mourning on the American Right* by Arlie Russell Hochschild  
+    * [🫥🇺🇸😡💔 Strangers in Their Own Land](../books/strangers-in-their-own-land.md) by Arlie Russell Hochschild  
     * [😇🧠 The Righteous Mind: Why Good People Are Divided by Politics and Religion](../books/the-righteous-mind.md) by Jonathan Haidt  
   
 * **📊 Economics & Social Welfare:**  

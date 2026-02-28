@@ -48,7 +48,7 @@ youtube: https://www.youtube.com/embed/E-eP-Ac_2Mk
   
 ### ↔️ Similar  
 * [💰🇺🇸 Corruption in America: From Benjamin Franklin's Snuff Box to Citizens United](../books/corruption-in-america-from-benjamin-franklins-snuff-box-to-citizens-united.md) by Zephyr Teachout. 📖 Explores the historical and legal understanding of corruption in US politics, arguing for a broader definition encompassing the undue influence of private interests.  
-* 🎯 Why We're Polarized by Ezra Klein. 🧩 Analyzes how identity and structural forces have driven political division and dysfunction in the US, aligning with the video's theme of cross-partisan tension.  
+* [↔️ Why We're Polarized](../books/why-were-polarized.md) by Ezra Klein. 🧩 Analyzes how identity and structural forces have driven political division and dysfunction in the US, aligning with the video's theme of cross-partisan tension.  
 * 💰 Griftopia Bubble Machines Vampire Squids and the Long Con That Is Breaking America by Matt Taibbi. 🏦 Details institutional corruption and the financialization of the American economy, echoing the video's theme of entitled privilege for a very few.  
   
 ### 🆚 Contrasting  

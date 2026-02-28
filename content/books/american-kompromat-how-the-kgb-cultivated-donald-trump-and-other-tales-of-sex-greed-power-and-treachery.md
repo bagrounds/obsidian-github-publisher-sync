@@ -56,7 +56,7 @@ affiliate link: https://amzn.to/4nNNz9x
   
 * ⛰️ **Hillbilly Elegy: A Memoir of a Family and Culture in Crisis** by J.D. Vance: Provides a look at socioeconomic factors and cultural shifts in the American working class that some argue contributed to the political climate.  
 * 🌊 **The Great Deluge: Hurricane Katrina, New Orleans, and the Mississippis Gulf Coast** by Douglas Brinkley: A historical account focusing on a domestic crisis, offering a different perspective on challenges facing the US.  
-* 🇺🇸 **Strangers in Their Own Land: Anger and Mourning on the American Right** by Arlie Russell Hochschild: Explores the deep-seated beliefs and emotions of a group of conservative Americans, offering insight into political polarization from a sociological perspective.  
+* **[🫥🇺🇸😡💔 Strangers in Their Own Land: Anger and Mourning on the American Right](./strangers-in-their-own-land.md)** by Arlie Russell Hochschild: Explores the deep-seated beliefs and emotions of a group of conservative Americans, offering insight into political polarization from a sociological perspective.  
 * **[🤝🏛️ Team of Rivals: The Political Genius of Abraham Lincoln](./team-of-rivals-the-political-genius-of-abraham-lincoln.md)** by Doris Kearns Goodwin: A historical account of leadership and political maneuvering during a period of national crisis, providing a contrast to contemporary political narratives.  
 * 🏛️ **The Room Where It Happened: A White House Memoir** by John Bolton: Offers an insider's account of the Trump White House, providing a different perspective on the administration's dynamics and foreign policy.  
   

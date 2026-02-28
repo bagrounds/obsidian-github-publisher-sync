@@ -50,7 +50,7 @@ youtube: https://youtu.be/MfDK84LKHjA
 ### ↔️ Similar  
   
 * [👑🚫📜2️⃣0️⃣ On Tyranny: Twenty Lessons from the Twentieth Century](../books/on-tyranny.md) by Timothy Snyder explores how citizens can preserve democracy against modern authoritarian tendencies.  
-* 📉 It Can't Happen Here by Sinclair Lewis provides a fictional but cautionary tale of a populist leader transforming the United States into a totalitarian state.  
+* [🙅‍♀️👹 It Can't Happen Here](../books/it-cant-happen-here.md) by Sinclair Lewis provides a fictional but cautionary tale of a populist leader transforming the United States into a totalitarian state.  
   
 ### 🆚 Contrasting  
   

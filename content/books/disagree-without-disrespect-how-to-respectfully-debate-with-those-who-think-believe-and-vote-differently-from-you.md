@@ -54,7 +54,7 @@ affiliate link: https://amzn.to/3FvRUgu
   
 ### ➖ Contrasting Books (Focus on Political/Ideological Divides, Less Emphasis on Respect)  
   
-* 💔 ***Why We're Polarized*** by Ezra Klein. 🗺️ This book delves into the roots and consequences of political polarization in the United States, offering a detailed analysis of the divide.  
+* **[↔️ Why We're Polarized](./why-were-polarized.md)** by Ezra Klein. 🗺️ This book delves into the roots and consequences of political polarization in the United States, offering a detailed analysis of the divide.  
 * ⚔️ ***High Conflict: Why We Get Trapped and How We Get Out*** by Amanda Ripley. 🔍 Explores the dynamics of intractable conflicts and how individuals and groups can escape them.  
 * **[😠🎭 Uncivil Agreement: How Politics Became Our Identity](./uncivil-agreement-how-politics-became-our-identity.md)** by Lilliana Mason. 🎭 Examines how political polarization has become intertwined with social identity, making disagreements feel more personal and intense.  
 * **[🤕👶 The Coddling of the American Mind: How Good Intentions and Bad Ideas Are Setting Up a Generation for Failure](./the-coddling-of-the-american-mind-how-good-intentions-and-bad-ideas-are-setting-up-a-generation-for-failure.md)** by Greg Lukianoff and Jonathan Haidt. 🎓 Argues that certain trends in safetyism and political correctness on college campuses are hindering open inquiry and robust debate.  

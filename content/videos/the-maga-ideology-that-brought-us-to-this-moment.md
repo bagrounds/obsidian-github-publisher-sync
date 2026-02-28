@@ -4,10 +4,10 @@ aliases:
   - 🧢🇺🇸📢➡️ The MAGA Ideology That Brought Us to This Moment
 title: 🧢🇺🇸📢➡️ The MAGA Ideology That Brought Us to This Moment
 URL: https://bagrounds.org/videos/the-maga-ideology-that-brought-us-to-this-moment
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: Heather Cox Richardson
-tags: 
+tags:
 youtube: https://youtu.be/jIonrnzj_BU
 ---
 [Home](../index.md) > [Videos](./index.md) | [🏛️🇺🇸📖 Heather Cox Richardson](../people/heather-cox-richardson.md)  
@@ -33,7 +33,7 @@ youtube: https://youtu.be/jIonrnzj_BU
       
 - [💰🤫 Dark Money: The Hidden History of the Billionaires Behind the Rise of the Radical Right](../books/dark-money-the-hidden-history-of-the-billionaires-behind-the-rise-of-the-radical-right.md) by Jane Mayer: This book sheds light on the funding of conservative movements, offering context to the forces that might be promoting ideologies that challenge the concept of equality.  
       
-- _Strangers in Their Own Land: Anger and Mourning on the American Right_ by Arlie Russell Hochschild: Provides a sociological perspective on the emotional and cultural roots of conservative political views, which can help understand the appeal of certain ideologies discussed in the video.  
+- [🫥🇺🇸😡💔 Strangers in Their Own Land](../books/strangers-in-their-own-land.md) by Arlie Russell Hochschild: Provides a sociological perspective on the emotional and cultural roots of conservative political views, which can help understand the appeal of certain ideologies discussed in the video.  
       
 - [🗳️🏛️☠️ How Democracies Die](../books/how-democracies-die.md) by Steven Levitsky and Daniel Ziblatt: Examines historical and contemporary examples of democratic backsliding, offering a framework to understand the threats to democratic norms and institutions, relevant to the video's concerns about the direction of American politics.  
       

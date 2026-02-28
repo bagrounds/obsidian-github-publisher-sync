@@ -76,7 +76,7 @@ While acknowledging the difficulties, Stengel outlines potential strategies:
 5. **[🤔🐇🐢 Thinking, Fast and Slow](./thinking-fast-and-slow.md)** by Daniel Kahneman: Explores cognitive biases and the two systems of thought, explaining *why* humans are susceptible to manipulation and misinformation.  
 6. 👨‍🏫 **Media Literacy Education (Various Authors):** Books focused specifically on developing critical media consumption skills (e.g., works by Renee Hobbs, books from the Media Education Lab).  
 7. 🔐 **Cybersecurity Focused Books (e.g., *Spies, Lies, and Algorithms* by Amy B. Zegart):** Books examining the technical and intelligence aspects related to information warfare and digital threats.  
-8. 🤝 **Books on Political Polarization (e.g., *Why We're Polarized* by Ezra Klein):** Analyzing the deep divides in societies that disinformation campaigns often exploit.  
+8. 🤝 **Books on Political Polarization (e.g., [↔️ Why We're Polarized](./why-were-polarized.md) by Ezra Klein):** Analyzing the deep divides in societies that disinformation campaigns often exploit.  
   
 ## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Information Wars How We Lost the Global Battle Against Disinformation and What We Can Do About It. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

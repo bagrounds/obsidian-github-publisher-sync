@@ -153,4 +153,4 @@ URL: https://bagrounds.org/software/opencode
 * 🔬 **More Specific:** *Crafting Interpreters* by Robert Nystrom (for understanding how code is parsed).  
 * 🎨 **Fictional:** Neuromancer by William Gibson.  
 * 🏛️ **Rigorous:** [🧠💻🤖 Deep Learning](../books/deep-learning.md) by Ian Goodfellow.  
-* 📗 **Accessible:** *AI 2041* by Kai-Fu Lee.
+* 📗 **Accessible:** [🤖🔮🌍 AI 2041: Ten Visions for Our Future](../books/ai-2041-ten-visions-for-our-future.md) by Kai-Fu Lee.

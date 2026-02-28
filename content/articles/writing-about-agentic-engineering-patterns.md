@@ -51,7 +51,7 @@ tags:
 ### ↔️ Similar  
   
 - [🤖🏗️ AI Engineering: Building Applications with Foundation Models](../books/ai-engineering-building-applications-with-foundation-models.md)  
-* 🛠️ The Agentic AI Engineer's Handbook by Elvis Albright provides a practical guide to building production-scale agentic systems using workflow architectures.  
+- [🤖⚙️ The Agentic AI Engineer's Handbook](../books/the-agentic-ai-engineers-handbook.md) by Elvis Albright provides a practical guide to building production-scale agentic systems using workflow architectures.  
 * [🤖🧠⚙️💡 Building Agentic AI Systems: Create intelligent, autonomous AI agents that can reason, plan, and adapt](../books/building-agentic-ai-systems-create-intelligent-autonomous-ai-agents-that-can-reason-plan-and-adapt.md) by Anjanava Biswas and Wrick Talukdar explores the core principles of designing autonomous agents that can plan and reason.  
   
 ### 🆚 Contrasting  

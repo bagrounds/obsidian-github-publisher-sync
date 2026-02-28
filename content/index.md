@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-02-27T16:42:46-08:00
+updated: 2026-02-27T17:29:05-08:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -43,7 +43,8 @@ updated: 2026-02-27T16:42:46-08:00
 - [📢 Propaganda](./books/propaganda.md)  
   
   
-## [📺 Videos](./videos/index.md) (652)  
+## [📺 Videos](./videos/index.md) (653)  
+- [⏳📅🗓️🚀 The next 36 months will be WILD](./videos/the-next-36-months-will-be-wild.md)  
 - [🏆🚀🛠️🤯🚫💻 Stop Competing With 400 Applicants. Build This in One Weekend (Yes, there's a no code option too!)](./videos/stop-competing-with-400-applicants-build-this-in-one-weekend-yes-theres-a-no-code-option-too.md)  
 - [🇺🇸🤝🏛️ The State of Our Union](./videos/the-state-of-our-union.md)  
 - [🤖🥀➡️❓🚀 Prompt Engineering Is Dead. Context Engineering Is Dying. What Comes Next Changes Everything.](./videos/prompt-engineering-is-dead-context-engineering-is-dying-what-comes-next-changes-everything.md)  
@@ -53,7 +54,6 @@ updated: 2026-02-27T16:42:46-08:00
 - [🧠⚡️😊⬇️⬆️ How Dopamine & Serotonin Shape Decisions, Motivation & Learning | Dr. Read Montague](./videos/how-dopamine-serotonin-shape-decisions-motivation-learning-dr-read-montague.md)  
 - [🤖🧪🚫🛑💥 Anthropic Tested 16 Models. Instructions Didn't Stop Them (When Security is a Structural Failure)](./videos/anthropic-tested-16-models-instructions-didnt-stop-them-when-security-is-a-structural-failure.md)  
 - [🔑🔓🚀🌟 Dr. Adam Grant: How to Unlock Your Potential, Motivation & Unique Abilities](./videos/dr-adam-grant-how-to-unlock-your-potential-motivation-and-unique-abilities.md)  
-- [🇺🇸📈💡🔮🚀 What the U.S. has accomplished in 250 years of innovation and what’s next](./videos/what-the-us-has-accomplished-in-250-years-of-innovation-and-whats-next.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (88)  

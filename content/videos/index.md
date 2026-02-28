@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-02-27T16:42:46-08:00
+updated: 2026-02-27T17:29:05-08:00
 ---
 [Home](../index.md)  
-# 📺 Videos (652)  
+# 📺 Videos (653)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
 - [❓💪🔬 12 Questions About Creatine with Stephen Cornish, PhD](./12-questions-about-creatine-w-stephen-cornish-phd.md)  
@@ -489,6 +489,7 @@ updated: 2026-02-27T16:42:46-08:00
 - [⚡🔋💪 The Mitochondria Protocol: How to Actually Fix Your Energy](./the-mitochondria-protocol-how-to-actually-fix-your-energy.md)  
 - [⚠️🧠⚔️ The Most Dangerous Cognitive Bias](./the-most-dangerous-cognitive-bias.md)  
 - [💰🤔⚖️ The Most Important Economic Debate of our Lifetime — ft. Justin Wolfers | Prof G Markets](./the-most-important-economic-debate-of-our-lifetime-ft-justin-wolfers-prof-g-markets.md)  
+- [⏳📅🗓️🚀 The next 36 months will be WILD](./the-next-36-months-will-be-wild.md)  
 - [The OLDEST websites EVER 👩‍💻](./the-oldest-websites-ever.md)  
 - [⏱️🔋✅ The one productivity system you need: time vs energy management (ep. 1)](./the-one-productivity-system-you-need-time-vs-energy-management-ep-1.md)  
 - [🤖🧠💡 The ONLY skill you need in the AI era](./the-only-skill-you-need-in-the-ai-era.md)  

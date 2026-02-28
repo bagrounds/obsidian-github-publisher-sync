@@ -82,7 +82,7 @@ affiliate link: https://amzn.to/4p93S03
 ### 🔗 Related  
 * 📜 The Innovators by Walter Isaacson (history of digital revolution)  
 * 🧑‍💻 Becoming Steve Jobs by Brent Schlender and Rick Tetzeli (CEO biography, leadership)  
-* 🔮 AI 2041: Ten Visions for Our Future by Kai-Fu Lee and Chen Qiufan (future AI scenarios)  
+* [🤖🔮🌍 AI 2041: Ten Visions for Our Future](./ai-2041-ten-visions-for-our-future.md) by Kai-Fu Lee and Chen Qiufan (future AI scenarios)  
   
 ## 🫵 What Do You Think?  
 🤔 How will increasing competition in AI hardware impact Nvidia's long-term dominance and innovation strategy?

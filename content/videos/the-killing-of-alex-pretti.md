@@ -59,7 +59,7 @@ youtube: https://www.youtube.com/embed/_r8fI8DhI0o
   
 ### 🎨 Creatively Related  
   
-* 🐺 It Can't Happen Here by Sinclair Lewis depicts a fictional rise of a populist dictator in the United States and the resulting erosion of rights.  
+* [🙅‍♀️👹 It Can't Happen Here](../books/it-cant-happen-here.md) by Sinclair Lewis depicts a fictional rise of a populist dictator in the United States and the resulting erosion of rights.  
 * [👁️ 1984](../books/1984.md) by George Orwell explores the psychological impact of government surveillance and the manipulation of truth in a totalitarian society.  
   
 ## 🐦 Tweet  

@@ -35,7 +35,7 @@ affiliate link: https://amzn.to/42q6IFp
   
 ### ➕ Similar Books  
   
-* 💙❤️ Why We're Polarized by Ezra Klein  
+* [↔️ Why We're Polarized](./why-were-polarized.md) by Ezra Klein  
 * [😇🧠 The Righteous Mind: Why Good People Are Divided by Politics and Religion](./the-righteous-mind.md) by Jonathan Haidt  
 * ❓ Identity Crisis: 🇺🇸 The 2016 Presidential Campaign and the Battle for the Meaning of America by John Sides, Michael Tesler, and Lynn Vavreck  
 * 💥 Culture Crash: 💀 The Killing of the Creative Class by [👨‍🏫📈💻 Scott Galloway](../people/scott-galloway.md)  

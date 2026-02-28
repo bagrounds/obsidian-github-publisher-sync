@@ -58,7 +58,7 @@ CTA: 🤖 Engineer autonomy.
   
   
 * **[♾️📐🎶🥨 Gödel, Escher, Bach: An Eternal Golden Braid](./godel-escher-bach.md)** by Douglas Hofstadter: 🏆 A Pulitzer Prize-winning book that explores the connections between mathematics, art, and music, and what they reveal about the nature of intelligence.  
-* 🤖 **Klara and the Sun** by Kazuo Ishiguro: 💖 A novel told from the perspective of an "Artificial Friend," exploring themes of love, humanity, and consciousness.  
+* 🤖 Klara and the Sun by Kazuo Ishiguro: 💖 A novel told from the perspective of an "Artificial Friend," exploring themes of love, humanity, and consciousness.  
 * 🐑 **Do Androids Dream of Electric Sheep?** by Philip K. Dick: ❓ The science fiction novel that inspired the movie *Blade Runner*, it questions what it truly means to be human in a world with sophisticated androids.  
   
 ## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro)  

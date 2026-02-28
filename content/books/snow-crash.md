@@ -4,8 +4,8 @@ aliases:
   - ❄️💻💥 Snow Crash
 title: ❄️💻💥 Snow Crash
 URL: https://bagrounds.org/books/snow-crash
-Author: 
-tags: 
+Author:
+tags:
 affiliate link: https://amzn.to/4kQEIBO
 ---
 [Home](../index.md) > [Books](./index.md)  
@@ -47,7 +47,7 @@ Stephenson employs a distinctive and often humorous style, blending sharp wit wi
     * "[Sapiens: A Brief History of Humankind](./sapiens-a-brief-history-of-humankind.md)" by Yuval Noah Harari: Given the novel's exploration of language and its impact on human history, this book provides a fascinating anthropological perspective on the development of our species 🐒.  
   
 * **If You Loved This:**  
-    * "Neuromancer" by William Gibson: As another foundational work of cyberpunk, this novel shares similar themes of virtual reality, hacking, and dystopian futures, offering a darker and grittier vision 🕶️.  
+    * Neuromancer by William Gibson: As another foundational work of cyberpunk, this novel shares similar themes of virtual reality, hacking, and dystopian futures, offering a darker and grittier vision 🕶️.  
     * "The Diamond Age: Or, A Young Lady's Illustrated Primer" by Neal Stephenson: If you enjoyed Stephenson's unique blend of technology and societal commentary, this later work offers another intricate and thought-provoking glimpse into a future shaped by nanotech and education 💎.  
   
 * **Similar But Different:**  

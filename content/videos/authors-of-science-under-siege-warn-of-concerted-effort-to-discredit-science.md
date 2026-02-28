@@ -76,7 +76,7 @@ A: ⚖️ The media contributes to the problem in two ways: promoting **propagan
   
 ### **Creatively Related: Political and Societal Context**  
   
-- It Can't Happen Here by Sinclair Lewis  
+- [🙅‍♀️👹 It Can't Happen Here](../books/it-cant-happen-here.md) by Sinclair Lewis  
     - 🗳️ This 1935 novel offers a cautionary tale about the rise of a populist, authoritarian political leader in America, providing a crucial fictional parallel for how political movements can become weaponized against objective reality and institutions.  
   
 - [🔬🔄 The Structure of Scientific Revolutions](../books/the-structure-of-scientific-revolutions.md) by Thomas S. Kuhn  

@@ -78,7 +78,7 @@ A: 💥 Yes, the video 🎥 featured a segment that compared specific actions of
 * **[👁️ 1984](../books/1984.md)** by George Orwell  
     * 📖 A classic dystopian  dystopia warning about a future where a **totalitarian regime** monitors all aspects of life, rewriting history and truth, highly relevant to discussions of **media manipulation** and **government overreach**.  
   
-* **It Can't Happen Here** by Sinclair Lewis  
+* **[🙅‍♀️👹 It Can't Happen Here](../books/it-cant-happen-here.md)** by Sinclair Lewis  
     * 🇺🇸 Written in 1935, this chillingly 🥶 prescient novel imagines the **rise of a populist American dictator** named Buzz Windrip, illustrating how an authoritarian movement could take root in the United States.  
   
 ## 🐦 Tweet  

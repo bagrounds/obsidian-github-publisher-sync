@@ -77,17 +77,17 @@ affiliate link: https://www.amazon.com/dp/B0G2JDBTZP?tag=bagrounds-20
 ## 📚 Book Recommendations  
 ### 📖 Similar  
 * 📖 Designing Autonomous Agents by George F. Luger  
-* 📖 Reinforcement Learning: An Introduction by Richard S. Sutton and Andrew G. Barto  
-* 📖 Artificial Intelligence: A Modern Approach by Stuart Russell and Peter Norvig  
+* [🤖➕🧠➡️ Reinforcement Learning: An Introduction](./reinforcement-learning-an-introduction.md) by Richard S. Sutton and Andrew G. Barto  
+* [🤖🧠 Artificial Intelligence: A Modern Approach](./artificial-intelligence-a-modern-approach.md) by Stuart Russell and Peter Norvig  
   
 ### ↔️ Contrasting  
-* 🙅‍♀️ Deep Learning by Ian Goodfellow, Yoshua Bengio, and Aaron Courville (focuses on foundational models rather than agentic systems)  
-* 🧹 Clean Code: A Handbook of Agile Software Craftsmanship by Robert C. Martin (focuses on general software quality, less on AI specifics)  
+* [🧠💻🤖 Deep Learning](./deep-learning.md) by Ian Goodfellow, Yoshua Bengio, and Aaron Courville (focuses on foundational models rather than agentic systems)  
+* [🧼💾 Clean Code: A Handbook of Agile Software Craftsmanship](./clean-code.md) by Robert C. Martin (focuses on general software quality, less on AI specifics)  
   
 ### 🔗 Related  
-* 🧠 Thinking, Fast and Slow by Daniel Kahneman (human cognitive biases relevant to agent design)  
+* [🤔🐇🐢 Thinking, Fast and Slow](./thinking-fast-and-slow.md) by Daniel Kahneman (human cognitive biases relevant to agent design)  
 * 🤝 Team of Teams by General Stanley McChrystal (decentralized decision-making, applicable to multi-agent systems)  
-* 🎨 The Design of Everyday Things by Don Norman (user experience principles for human-agent interaction)  
+* [💺🚪💡🤔 The Design of Everyday Things](./the-design-of-everyday-things.md) by Don Norman (user experience principles for human-agent interaction)  
   
 ## 🫵 What Do You Think?  
 🤔 What aspects of agentic AI engineering do you find most challenging or most exciting? Which specific architectural patterns do you believe will dominate the future of autonomous systems?  

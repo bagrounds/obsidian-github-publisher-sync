@@ -64,7 +64,7 @@ A guide to blend human ingenuity with AI's capabilities to thrive in our rapidly
 ### Contrasting  
 * [🤖⚠️📈 Superintelligence: Paths, Dangers, Strategies](./superintelligence-paths-dangers-strategies.md) by Nick Bostrom  
 * [🧬👥💾 Life 3.0: Being Human in the Age of Artificial Intelligence](./life-3-0.md) by Max Tegmark  
-* 👴 The Age of AI: And Our Human Future by Henry A. Kissinger, Eric Schmidt, Daniel Huttenlocher  
+* [🔮🤖 The Age of AI](./the-age-of-ai.md): And Our Human Future by Henry A. Kissinger, Eric Schmidt, Daniel Huttenlocher  
   
 ### Related  
 * 🧠 Building a Second Brain by Tiago Forte  

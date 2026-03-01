@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-02-28T10:08:33-08:00
+updated: 2026-02-28T16:58:40-08:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -14,7 +14,7 @@ updated: 2026-02-28T10:08:33-08:00
 💬 Comment on any page with your GitHub account.  
   
 ## [🪞 Reflections](./reflections/index.md) ~ Blog (471)  
-- [2026-02-28](./reflections/2026-02-28.md)  
+- [2026-02-28 | 🤖⚙️🧠 Agentic 📖](./reflections/2026-02-28.md)  
 - [2026-02-27 | 🤖🐍🚫🐍 AI 🇺🇸 Polarized 🏛️ Brooks 📚📄📺📰](./reflections/2026-02-27.md)  
 - [2026-02-26 | 🌐 Network 🗣️ Prompt 🇺🇸 Union 💰 Wealth 📚📺🤖💬](./reflections/2026-02-26.md)  
 - [2026-02-25 | 🌐 Network 🗓️ Almanack 📚](./reflections/2026-02-25.md)  
@@ -30,7 +30,8 @@ updated: 2026-02-28T10:08:33-08:00
 - [🧮 Calculator](./tools/calculator.md)  
   
   
-## [📚 Books](./books/index.md) (947)  
+## [📚 Books](./books/index.md) (948)  
+- [🤖⚙️ The Agentic AI Engineer's Handbook](./books/the-agentic-ai-engineers-handbook.md)  
 - [🇷🇺🪝🇺🇸 American Kompromat: How the KGB Cultivated Donald Trump, and Other Tales of Sex, Greed, Power, and Treachery](./books/american-kompromat-how-the-kgb-cultivated-donald-trump-and-other-tales-of-sex-greed-power-and-treachery.md)  
 - [🤝📈🇺🇸🔁 The Upswing: How America Came Together a Century Ago and How We Can Do It Again](./books/the-upswing.md)  
 - [🧑‍🤝‍🧑🐘⬆️ The Great Alignment: Race, Party Transformation, and the Rise of Donald Trump](./books/the-great-alignment-race-party-transformation-and-the-rise-of-donald-trump.md)  
@@ -40,10 +41,11 @@ updated: 2026-02-28T10:08:33-08:00
 - [🇮🇹🇩🇪🇱🇾🇷🇺🇺🇸 Strongmen: Mussolini to the Present](./books/strongmen.md)  
 - [🗳️🕊️🇺🇸 Democracy in America](./books/democracy-in-america.md)  
 - [🗳️🏛️☠️ How Democracies Die](./books/how-democracies-die.md)  
-- [🙅‍♀️👹 It Can't Happen Here](./books/it-cant-happen-here.md)  
   
   
-## [📺 Videos](./videos/index.md) (654)  
+## [📺 Videos](./videos/index.md) (656)  
+- [🧠🗣️1️⃣➡️3️⃣ 'Prompting' Just Split Into 4 Skills. You Only Know One. Here's Why You Need the Other 3 in 2026.](./videos/prompting-just-split-into-4-skills-you-only-know-one-heres-why-you-need-the-other-3-in-2026.md)  
+- [⚔️🇮🇷📰 War with Iran | PBS News Special Report](./videos/war-with-iran-pbs-news-special-report.md)  
 - [🤖🗣️🔮✨ AI Talks | Gen AI 2026: What Will Shape the Future](./videos/ai-talks-gen-ai-2026-what-will-shape-the-future.md)  
 - [🏛️🗣️🗓️ Politics Chat, November 13, 2025](./videos/politics-chat-november-13-2025.md)  
 - [⏳📅🗓️🚀 The next 36 months will be WILD](./videos/the-next-36-months-will-be-wild.md)  
@@ -52,8 +54,6 @@ updated: 2026-02-28T10:08:33-08:00
 - [🗣️⚔️🏛️ FULL DISCUSSION: Gavin Newsom Slams Trump’s Authoritarianism in Explosive WEF Interview | AC1G](./videos/full-discussion-gavin-newsom-slams-trumps-authoritarianism-in-explosive-wef-interview-ac1g.md)  
 - [💥👥💀🚨 ‘They killed a man, created chaos:’ Gov. Walz on shooting](./videos/they-killed-a-man-created-chaos-gov-walz-on-shooting.md)  
 - [🇺🇸🔪💀🅰️ The Killing of Alex Pretti](./videos/the-killing-of-alex-pretti.md)  
-- [🚨🗣️🔥🗳️ Full Briefing: Mayor Frey Addresses Outrage Over ICE Shooting in Minneapolis | DRM News | AC1F](./videos/full-briefing-mayor-frey-addresses-outrage-over-ice-shooting-in-minneapolis-drm-news-ac1f.md)  
-- [🧢🇺🇸📢➡️ The MAGA Ideology That Brought Us to This Moment](./videos/the-maga-ideology-that-brought-us-to-this-moment.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (88)  

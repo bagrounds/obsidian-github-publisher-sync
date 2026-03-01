@@ -5,13 +5,14 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-02-28T10:08:33-08:00
+updated: 2026-02-28T16:58:40-08:00
 ---
 [Home](../index.md)  
-# 📺 Videos (654)  
+# 📺 Videos (656)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
 - [❓💪🔬 12 Questions About Creatine with Stephen Cornish, PhD](./12-questions-about-creatine-w-stephen-cornish-phd.md)  
+- [🧠🗣️1️⃣➡️3️⃣ 'Prompting' Just Split Into 4 Skills. You Only Know One. Here's Why You Need the Other 3 in 2026.](./prompting-just-split-into-4-skills-you-only-know-one-heres-why-you-need-the-other-3-in-2026.md)  
 - [🧠💪🤯🔄♾️ 15 Books So Hard They’ll Reshape Your Brain Forever](./15-books-so-hard-theyll-reshape-your-brain-forever.md)  
 - [🧠📈🥇 15 Books That Will Make You a Top 1% Thinker](./15-books-that-will-make-you-a-top-1-percent-thinker.md)  
 - [🤰👩‍⚕️👶🍼⏰ 16.7 Professor Helen Ball midwifery hour](./16-7-professor-helen-ball-midwiferyhour.md)  
@@ -588,6 +589,7 @@ updated: 2026-02-28T10:08:33-08:00
 - [🗳️🇺🇸🔮 Voters cast ballots in elections that could signal future of U.S. politics](./voters-cast-ballots-in-elections-that-could-signal-future-of-us-politics.md)  
 - [🏞️⚕️🛡️🤝 WA OIC can help you with your insurance!](./wa-oic-can-help-you-with-your-insurance.md)  
 - [💰🏦📈 Warren Mosler | Modern Monetary Theory (MMT), Banking, and Taxing the Rich](./warren-mosler-modern-monetary-theory-mmt-banking-and-taxing-the-rich.md)  
+- [⚔️🇮🇷📰 War with Iran | PBS News Special Report](./war-with-iran-pbs-news-special-report.md)  
 - [📺🪖🇺🇸 WATCH: Hegseth's full remarks on new military directives ending 'politically correct' leadership](./watch-hegseths-full-remarks-on-new-military-directives-ending-politically-correct-leadership.md)  
 - [😠🗣️👎 WATCH: Sen. Kelly holds a news conference on Trump and Hegseth's 'efforts to intimidate him'](./watch-sen-kelly-holds-a-news-conference-on-trump-and-hegseths-efforts-to-intimidate-him.md)  
 - [🗣️⏱️🏛️🛑 WATCH: Sen. Merkley concludes marathon 22-hour speech protesting Trump amid shutdown](./watch-sen-merkley-concludes-marathon-22-hour-speech-protesting-trump-amid-shutdown.md)  

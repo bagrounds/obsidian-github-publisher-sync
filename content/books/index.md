@@ -5,10 +5,10 @@ aliases:
 share: true
 URL: https://bagrounds.org/books
 backlinks: false
-updated: 2026-02-28T10:08:33-08:00
+updated: 2026-02-28T16:58:40-08:00
 ---
 [Home](../index.md)  
-# 📚 Books (947)  
+# 📚 Books (948)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [💻0️⃣ Source Code: My Beginnings](./source-code-my-beginnings.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)  
@@ -632,6 +632,7 @@ updated: 2026-02-28T10:08:33-08:00
 - [👶🔤 The ABC’s of Language Development: Discover Language with Your Child](./the-abcs-of-language-development-discover-language-with-your-child.md)  
 - [🧽🧠 The Absorbent Mind](./the-absorbent-mind.md)  
 - [✍️📣 The Adweek Copywriting Handbook: The Ultimate Guide to Writing Powerful Advertising and Marketing Copy from One of America's Top Copywriters](./the-adweek-copywriting-handbook-the-ultimate-guide-to-writing-powerful-advertising-and-marketing-copy-from-one-of-americas-top-copywriters.md)  
+- [🤖⚙️ The Agentic AI Engineer's Handbook](./the-agentic-ai-engineers-handbook.md)  
 - [🔮🤖 The Age of AI](./the-age-of-ai.md)  
 - [🎭🇺🇸💸🏆 The Age of Illusions: How America Squandered Its Cold War Victory](./the-age-of-illusions-how-america-squandered-its-cold-war-victory.md)  
 - [👁️‍🗨️💰⛓️👤 The Age of Surveillance Capitalism: The Fight for a Human Future at the New Frontier of Power](./the-age-of-surveillance-capitalism.md)  

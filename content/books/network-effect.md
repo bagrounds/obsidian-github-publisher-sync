@@ -8,7 +8,7 @@ Author:
 tags:
 affiliate link: https://www.amazon.com/dp/1250229863?tag=bagrounds-20
 ---
-[Home](../index.md) > [Books](./index.md) | [⏮️ 🏃💨🚪 Exit Strategy](./exit-strategy.md)  
+[Home](../index.md) > [Books](./index.md) | [⏮️ 🏃💨🚪 Exit Strategy](./exit-strategy.md) [⏭️ 🕵️ Fugitive Telemetry](./fugitive-telemetry.md)  
 # 🌐🤖🚀 Network Effect  
 [🛒 Network Effect. As an Amazon Associate I earn from qualifying purchases.](https://www.amazon.com/dp/1250229863?tag=bagrounds-20)  
   

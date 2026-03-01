@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-02-28T18:03:31-08:00
+updated: 2026-02-28T19:36:19-08:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -30,7 +30,8 @@ updated: 2026-02-28T18:03:31-08:00
 - [🧮 Calculator](./tools/calculator.md)  
   
   
-## [📚 Books](./books/index.md) (948)  
+## [📚 Books](./books/index.md) (949)  
+- [🤟🆎 American Sign Language Dictionary](./books/american-sign-language-dictionary.md)  
 - [🤖⚙️ The Agentic AI Engineer's Handbook](./books/the-agentic-ai-engineers-handbook.md)  
 - [🇷🇺🪝🇺🇸 American Kompromat: How the KGB Cultivated Donald Trump, and Other Tales of Sex, Greed, Power, and Treachery](./books/american-kompromat-how-the-kgb-cultivated-donald-trump-and-other-tales-of-sex-greed-power-and-treachery.md)  
 - [🤝📈🇺🇸🔁 The Upswing: How America Came Together a Century Ago and How We Can Do It Again](./books/the-upswing.md)  
@@ -40,10 +41,10 @@ updated: 2026-02-28T18:03:31-08:00
 - [🧠🔌 The Thinking Machine: Jensen Huang, Nvidia, and the World's Most Coveted Microchip](./books/the-thinking-machine-jensen-huang-nvidia-and-the-worlds-most-coveted-microchip.md)  
 - [🇮🇹🇩🇪🇱🇾🇷🇺🇺🇸 Strongmen: Mussolini to the Present](./books/strongmen.md)  
 - [🗳️🕊️🇺🇸 Democracy in America](./books/democracy-in-america.md)  
-- [🗳️🏛️☠️ How Democracies Die](./books/how-democracies-die.md)  
   
   
-## [📺 Videos](./videos/index.md) (656)  
+## [📺 Videos](./videos/index.md) (657)  
+- [🤟🔤📚 Learn the ASL Alphabet Fast | American Sign Language ABCs](./videos/learn-the-asl-alphabet-fast-american-sign-language-abcs.md)  
 - [🧠🗣️1️⃣➡️3️⃣ 'Prompting' Just Split Into 4 Skills. You Only Know One. Here's Why You Need the Other 3 in 2026.](./videos/prompting-just-split-into-4-skills-you-only-know-one-heres-why-you-need-the-other-3-in-2026.md)  
 - [⚔️🇮🇷📰 War with Iran | PBS News Special Report](./videos/war-with-iran-pbs-news-special-report.md)  
 - [🤖🗣️🔮✨ AI Talks | Gen AI 2026: What Will Shape the Future](./videos/ai-talks-gen-ai-2026-what-will-shape-the-future.md)  
@@ -53,7 +54,6 @@ updated: 2026-02-28T18:03:31-08:00
 - [👑⬇️🗣️📺 No Kings Protests Defy GOP Expectations & Jon Gives Trump a Royal Inspection | The Daily Show](./videos/no-kings-protests-defy-gop-expectations-jon-gives-trump-a-royal-inspection-the-daily-show.md)  
 - [🗣️⚔️🏛️ FULL DISCUSSION: Gavin Newsom Slams Trump’s Authoritarianism in Explosive WEF Interview | AC1G](./videos/full-discussion-gavin-newsom-slams-trumps-authoritarianism-in-explosive-wef-interview-ac1g.md)  
 - [💥👥💀🚨 ‘They killed a man, created chaos:’ Gov. Walz on shooting](./videos/they-killed-a-man-created-chaos-gov-walz-on-shooting.md)  
-- [🇺🇸🔪💀🅰️ The Killing of Alex Pretti](./videos/the-killing-of-alex-pretti.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (88)  

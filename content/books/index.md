@@ -5,10 +5,10 @@ aliases:
 share: true
 URL: https://bagrounds.org/books
 backlinks: false
-updated: 2026-02-28T18:03:31-08:00
+updated: 2026-02-28T19:36:19-08:00
 ---
 [Home](../index.md)  
-# 📚 Books (948)  
+# 📚 Books (949)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [💻0️⃣ Source Code: My Beginnings](./source-code-my-beginnings.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)  
@@ -51,6 +51,7 @@ updated: 2026-02-28T18:03:31-08:00
 - [🇺🇸🔒 American Gulag: Inside U.S. Immigration Prisons](./american-gulag-inside-us-immigration-prisons.md)  
 - [🇺🇸💸🧺🌍 American Kleptocracy: How the U.S. Created the World's Greatest Money Laundering Scheme in History](./american-kleptocracy-how-the-us-created-the-worlds-greatest-money-laundering-scheme-in-history.md)  
 - [🇷🇺🪝🇺🇸 American Kompromat: How the KGB Cultivated Donald Trump, and Other Tales of Sex, Greed, Power, and Treachery](./american-kompromat-how-the-kgb-cultivated-donald-trump-and-other-tales-of-sex-greed-power-and-treachery.md)  
+- [🤟🆎 American Sign Language Dictionary](./american-sign-language-dictionary.md)  
 - [📺💀 Amusing Ourselves to Death: Public Discourse in the Age of Show Business](./amusing-ourselves-to-death-public-discourse-in-the-age-of-show-business.md)  
 - [💰⚕️⬆️ An American Sickness: How Healthcare Became Big Business and How You Can Take It Back](./an-american-sickness-how-healthcare-became-big-business-and-how-you-can-take-it-back.md)  
 - [✍️🗺️🏗️🗳️ An Architect of Democracy: Building a Mosaic of Peace](./an-architect-of-democracy.md)  

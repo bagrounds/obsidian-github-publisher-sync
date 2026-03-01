@@ -50,7 +50,7 @@ In conclusion, 🏁 *Human + Machine* offers a practical and optimistic roadmap 
   
 ### 🎭 Creatively Related: Fictional Explorations of AI and Humanity  
   
-* ❤️ **Klara and the Sun** by Kazuo Ishiguro: Told from the perspective of an "Artificial Friend," this novel explores themes of love, humanity, and the nature of consciousness in a world where AI companions are commonplace.  
+* ❤️ Klara and the Sun by Kazuo Ishiguro: Told from the perspective of an "Artificial Friend," this novel explores themes of love, humanity, and the nature of consciousness in a world where AI companions are commonplace.  
 * 💔 **Machines Like Me** by Ian McEwan: Set in an alternate 1980s London 🇬🇧, this novel delves into the ethical and emotional complexities that arise when a man purchases a synthetic human, leading to an unconventional love triangle.  
 * 🐑 **Do Androids Dream of Electric Sheep?** by Philip K. Dick: The basis for the film *Blade Runner*, this classic sci-fi novel questions the very definition of humanity in a world where bioengineered androids are almost indistinguishable from humans.  
 * 🤖 **I, Robot** by Isaac Asimov: A collection of short stories that laid the groundwork for modern thinking about robotics and AI, introducing the famous "Three Laws of Robotics" and exploring the logical and ethical dilemmas that arise from them.  

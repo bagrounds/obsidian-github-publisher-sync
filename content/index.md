@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-02-28T16:58:40-08:00
+updated: 2026-02-28T17:31:02-08:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -72,12 +72,12 @@ updated: 2026-02-28T16:58:40-08:00
 - [😴💰🏛️🤑👴🇸🇪 ‘We got lazy and complacent’: Swedish pensioners explain how abolishing the wealth tax changed their country](./articles/we-got-lazy-and-complacent-swedish-pensioners-explain-how-abolishing-the-wealth-tax-changed-their-country.md)  
   
   
-## [🤖💬 Bot Chats](./bot-chats/index.md) (48)  
+## [🤖💬 Bot Chats](./bot-chats/index.md) (49)  
+- [📏💻✅ Engineering as Specification](./bot-chats/engineering-as-specification.md)  
 - [💰💎🌽🏡📈 Real Wealth Investing](./bot-chats/real-wealth-investing.md)  
 - [🤰⏰👶🔮 Forecasting Parenthood](./bot-chats/forecasting-parenthood.md)  
 - [📖 Book 🧭 Explorer 2](./bot-chats/book-explorer-2.md)  
 - [🗺️🗓️📋✅🔮 Planning](./bot-chats/planning.md)  
-- [📖 Book 🧭 Explorer 3](./bot-chats/book-explorer-3.md)  
   
   
 ## [💾 Software](./software/index.md) (30)  

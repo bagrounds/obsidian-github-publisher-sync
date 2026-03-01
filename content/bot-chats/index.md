@@ -5,10 +5,10 @@ aliases:
 title: 🤖💬 Bot Chats
 URL: https://bagrounds.org/bot-chats
 backlinks: false
-updated: 2026-02-28T16:58:40-08:00
+updated: 2026-02-28T17:31:02-08:00
 ---
 [Home](../index.md)  
-# 🤖💬 Bot Chats (48)  
+# 🤖💬 Bot Chats (49)  
 - [🤖⚙️📈💡 AI Engineering Assistant Technology Recommendations](./ai-engineering-assistant-technology-recommendations.md)  
 - [🌸🌬️🤧🔬📚 Allergy Science Books](./allergy-science-books.md)  
 - [🤖📱🧠 Android Local LLMs](./android-local-llms.md)  
@@ -27,6 +27,7 @@ updated: 2026-02-28T16:58:40-08:00
 - [✍️🥇🇺🇸 Creating the Most Popular Title in the Country](./creating-the-most-popular-title-in-the-country.md)  
 - [🧩🏢🤖 Domain Driven AI Product Development](./domain-driven-ai-product-development.md)  
 - [💭🚫➡️💡 Effective Thought-Action Defusion Techniques](./effective-thought-action-defusion-techniques.md)  
+- [📏💻✅ Engineering as Specification](./engineering-as-specification.md)  
 - [👨‍👧‍👦👔🎁 Fathers Day](./fathers-day.md)  
 - [🤰⏰👶🔮 Forecasting Parenthood](./forecasting-parenthood.md)  
 - [⛽ Fueling a 👥 Movement to ⚔️ Fight 👹 Tyranny and 💪 Strengthen 🗳️ Democracy](./fueling-a-movement-to-fight-tyranny-and-strengthen-democracy.md)  

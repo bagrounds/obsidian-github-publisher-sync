@@ -21,10 +21,10 @@ URL: https://bagrounds.org/bot-chats/engineering-as-specification
 > 🎓 How do we systematically develop and improve 🛠️ relevant competencies in this new world?  
 >  
 > ❓ What questions should we 🔭 ask next?  
->  
-> 🏗️ The idea that software engineering is evolving into the 📜 specification of principles across 🕸️ nested scopes is a 🧠 profound and 🎯 highly accurate way to frame the current 🔄 paradigm shift. It represents the 🪜 next logical leap up the abstraction ladder: ⚙️ just as compilers abstracted away machine code, 🤖 AI agents are beginning to abstract away ⌨️ boilerplate syntax, leaving the 👷 engineer to define the 📐 rules, constraints, and 🏛️ architecture.  
->  
-> 🔍 Here is a breakdown of this concept, an 📊 analysis of recent field data, and a 🔭 systematic look at what this means for the 🚀 future of our industry.  
+  
+🏗️ The idea that software engineering is evolving into the 📜 specification of principles across 🕸️ nested scopes is a 🧠 profound and 🎯 highly accurate way to frame the current 🔄 paradigm shift. It represents the 🪜 next logical leap up the abstraction ladder: ⚙️ just as compilers abstracted away machine code, 🤖 AI agents are beginning to abstract away ⌨️ boilerplate syntax, leaving the 👷 engineer to define the 📐 rules, constraints, and 🏛️ architecture.  
+  
+🔍 Here is a breakdown of this concept, an 📊 analysis of recent field data, and a 🔭 systematic look at what this means for the 🚀 future of our industry.  
   
 ### 📦 1. Unpacking the Idea: Engineering as Nested Principles  
   

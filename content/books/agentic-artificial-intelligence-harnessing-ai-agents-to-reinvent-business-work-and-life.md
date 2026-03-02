@@ -5,6 +5,8 @@ aliases:
 URL: https://bagrounds.org/books/agentic-artificial-intelligence-harnessing-ai-agents-to-reinvent-business-work-and-life
 share: true
 affiliate link: https://amzn.to/45e9rCD
+tags:
+  - AIEngineering
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🤖⚙️ Agentic Artificial Intelligence: Harnessing AI Agents to Reinvent Business, Work and Life  
@@ -45,7 +47,7 @@ affiliate link: https://amzn.to/45e9rCD
 ### ✨ Creative Connections  
   
 * **[🧬👥💾 Life 3.0: Being Human in the Age of Artificial Intelligence](./life-3-0.md)** by Max Tegmark: 🌌 This book explores a wide range of possible futures with AI, from the beneficial to the catastrophic, sparking imaginative thinking about the long-term trajectory of the technologies discussed in *Agentic Artificial Intelligence*.  
-* 💔 **Klara and the Sun** by Kazuo Ishiguro: 🫂 This novel offers a fictional exploration of the emotional and relational aspects of artificial companions, providing a thought-provoking narrative lens through which to consider the human-agent interaction themes of *Agentic Artificial Intelligence*.  
+* 💔 Klara and the Sun by Kazuo Ishiguro: 🫂 This novel offers a fictional exploration of the emotional and relational aspects of artificial companions, providing a thought-provoking narrative lens through which to consider the human-agent interaction themes of *Agentic Artificial Intelligence*.  
 * ✍️ **Exhalation: Stories** by Ted Chiang: 📜 A collection of science fiction short stories that masterfully explore the philosophical implications of technology and consciousness, offering a creative and humanistic perspective on the concepts of artificial intelligence.  
   
 ## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro)  

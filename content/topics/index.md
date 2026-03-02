@@ -5,11 +5,12 @@ aliases:
 title: 🌌 Topics
 URL: https://bagrounds.org/topics
 backlinks: false
-updated: 2026-03-01T23:27:26-08:00
+updated: 2026-03-02T11:24:46-08:00
 ---
 [Home](../index.md)  
-# 🌌 Topics (88)  
+# 🌌 Topics (90)  
 - [⚙️🧠🔄 Adaptive Control](./adaptive-control.md)  
+- [🤖🧭 Agentic Software Engineering](./agentic-software-engineering.md)  
 - [🌲🪜🧠 A Hierarchical View of Human Knowledge](./a-hierarchical-view-of-human-knowledge.md)  
 - [A Method For Estimating Work](./a-method-for-estimating-work.md)  
 - [💻🎨⚙️ ANSI escape codes](./ansi-escape-codes.md)  
@@ -21,6 +22,7 @@ updated: 2026-03-01T23:27:26-08:00
 - [🗣️🗣️ Bilingualism](./bilingualism.md)  
 - [✍🏽🤖 Blog Bot](./blog-bot.md)  
 - [Books Removed From Naval Academy Library](./books-removed-from-naval-academy-library.md)  
+- [🚀 CI-Driven Publishing](./ci-driven-publishing.md)  
 - [Code Testing and Validation](./code-testing-and-validation.md)  
 - [♻️🫀🧠💪 Cognitive Behavioral Therapy](./cognitive-behavioral-therapy.md)  
 - [Communication Studies](./communication-studies.md)  

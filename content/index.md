@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-03-01T23:27:26-08:00
+updated: 2026-03-02T11:24:46-08:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -13,7 +13,8 @@ updated: 2026-03-01T23:27:26-08:00
 ❔ What do 🫵 _you_ 🤔 think?  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (472)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (473)  
+- [2026-03-02 | 🕵️ Fugitive 🚀 Build 📚](./reflections/2026-03-02.md)  
 - [2026-03-01 | 🕵️ Fugitive 🌐 Network 🚀 Build 🐦 Twitter 🤖 Agent 📚](./reflections/2026-03-01.md)  
 - [2026-02-28 | 🤖⚙️🧠 Agentic 📖](./reflections/2026-02-28.md)  
 - [2026-02-27 | 🤖🐍🚫🐍 AI 🇺🇸 Polarized 🏛️ Brooks 📚📄📺📰](./reflections/2026-02-27.md)  
@@ -23,7 +24,6 @@ updated: 2026-03-01T23:27:26-08:00
 - [2026-02-23 | 🌐 Network 💰 Google 🧠 Harvard 📈 Stocks 📚📺](./reflections/2026-02-23.md)  
 - [2026-02-22 | 🚪 Exit 🌐 Network 🧠💊 Dopamine 📚📺](./reflections/2026-02-22.md)  
 - [2026-02-21 | 🦹 Rogue 🏃 Exit 🌐 Network 📚](./reflections/2026-02-21.md)  
-- [2026-02-20 | 🕵️‍♀️ Rogue 🚪 Exit 📚](./reflections/2026-02-20.md)  
   
   
 ## [🧰 Tools](./tools/index.md) (1)  
@@ -56,12 +56,12 @@ updated: 2026-03-01T23:27:26-08:00
 - [💥👥💀🚨 ‘They killed a man, created chaos:’ Gov. Walz on shooting](./videos/they-killed-a-man-created-chaos-gov-walz-on-shooting.md)  
   
   
-## [🌌 Topics](./topics/index.md) (88)  
+## [🌌 Topics](./topics/index.md) (90)  
+- [🚀 CI-Driven Publishing](./topics/ci-driven-publishing.md)  
+- [🤖🧭 Agentic Software Engineering](./topics/agentic-software-engineering.md)  
 - [💻🎨⚙️ ANSI escape codes](./topics/ansi-escape-codes.md)  
 - [🧩🔄🧠 Self-Organization](./topics/self-organization.md)  
 - [📏🔮〰️ Kalman Filter](./topics/kalman-filter.md)  
-- [➕➖🔢📈📚 Linear Systems Theory](./topics/linear-systems-theory.md)  
-- [⭐✨🌟💫 The Star](./topics/the-star.md)  
   
   
 ## [📄  Articles](./articles/index.md) (79)  
@@ -98,6 +98,11 @@ updated: 2026-03-01T23:27:26-08:00
 - [🚰💧⚙️🔧 Delta Faucet RP4993 Seats and Springs](./products/delta-faucet-rp4993-seats-and-springs.md)  
 - [🔥💨🏕️ Coleman Triton 2-Burner Propane Stove, Portable Camping Cooktop with 2 Adjustable Burners & Wind Guards, 22,000 BTUs of Power for Camping, Tailgating, Grilling, BBQ, & More](./products/coleman-triton-2-burner-propane-stove-portable-camping-cooktop-with-2-adjustable-burners-wind-guards-22000-btus-of-power-for-camping-tailgating-grilling-bbq-more.md)  
 - [👶🌧️💨 Graco Baby Jogging Stroller Universal Rain Cover, Ventilated Weather Shield, Waterproof, Windproof, Versatile Size to Fit Most Jogging Strollers, Vinyl, Clear, Plastic](./products/graco-baby-jogging-stroller-universal-rain-cover-ventilated-weather-shield-waterproof-windproof-versatile-size-to-fit-most-jogging-strollers-vinyl-clear-plastic.md)  
+  
+  
+## [🎤 Presentations](./presentations/index.md) (2)  
+- [🤝 Generating Reliable Systems](./presentations/generating-reliable-systems.md)  
+- [🤖 Agentic Software Engineering](./presentations/agentic-software-engineering.md)  
   
   
 ## 🔗 Profiles  

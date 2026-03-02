@@ -122,7 +122,7 @@ async function processOgImage(
   fileData: QuartzPluginData,
   fonts: SatoriOptions["fonts"],
   fullOptions: SocialImageOptions,
-): Promise<FilePath> {
+): Promise<{ path: FilePath; cacheHit: boolean }> {
   const cfg = ctx.cfg.configuration
   const slug = fileData.slug!
   const titleSuffix = cfg.pageTitleSuffix ?? ""
@@ -152,12 +152,13 @@ async function processOgImage(
     await fs.access(cachePath)
     // Cache hit — copy to output
     const cached = await fs.readFile(cachePath)
-    return write({
+    const filePath = await write({
       ctx,
       content: cached,
       slug: outputSlug,
       ext: ".webp",
     })
+    return { path: filePath, cacheHit: true }
   } catch {
     // Cache miss — generate
   }
@@ -177,12 +178,65 @@ async function processOgImage(
   await fs.mkdir(OG_CACHE_DIR, { recursive: true })
   await fs.writeFile(cachePath, imageBuffer)
 
-  return write({
+  const filePath = await write({
     ctx,
     content: imageBuffer,
     slug: outputSlug,
     ext: ".webp",
   })
+  return { path: filePath, cacheHit: false }
+}
+
+/**
+ * Run tasks with a concurrency limit using a semaphore pattern.
+ * Each time a task finishes, another starts immediately (up to the limit).
+ */
+async function* runWithConcurrency<T>(
+  tasks: (() => Promise<T>)[],
+  concurrency: number,
+): AsyncGenerator<T> {
+  const results: { value: T; index: number }[] = []
+  let nextIndex = 0
+  let resolveReady: (() => void) | null = null
+
+  const running = new Set<Promise<void>>()
+
+  function startNext() {
+    if (nextIndex >= tasks.length) return
+    const index = nextIndex++
+    const task = tasks[index]
+    const promise = task().then((value) => {
+      results.push({ value, index })
+      running.delete(promise)
+      if (resolveReady) {
+        resolveReady()
+        resolveReady = null
+      }
+      startNext()
+    })
+    running.add(promise)
+  }
+
+  // Start initial batch
+  const initialCount = Math.min(concurrency, tasks.length)
+  for (let i = 0; i < initialCount; i++) {
+    startNext()
+  }
+
+  // Yield results as they become available
+  let yielded = 0
+  while (yielded < tasks.length) {
+    if (results.length === 0) {
+      await new Promise<void>((resolve) => {
+        resolveReady = resolve
+      })
+    }
+    while (results.length > 0) {
+      const result = results.shift()!
+      yield result.value
+      yielded++
+    }
+  }
 }
 
 export const CustomOgImagesEmitterName = "CustomOgImages"
@@ -200,20 +254,34 @@ export const CustomOgImages: QuartzEmitterPlugin<Partial<SocialImageOptions>> = 
       const bodyFont = cfg.theme.typography.body
       const fonts = await getSatoriFonts(headerFont, bodyFont)
 
-      // Process OG images in parallel batches for better throughput
       const items = content.filter(
         ([_tree, vfile]) => vfile.data.frontmatter?.socialImage === undefined,
       )
 
-      for (let i = 0; i < items.length; i += OG_CONCURRENCY) {
-        const batch = items.slice(i, i + OG_CONCURRENCY)
-        const results = await Promise.all(
-          batch.map(([_tree, vfile]) => processOgImage(ctx, vfile.data, fonts, fullOptions)),
-        )
-        for (const result of results) {
-          yield result
-        }
+      let cacheHits = 0
+      let cacheMisses = 0
+      const startTime = performance.now()
+
+      // Use semaphore-based concurrency: up to OG_CONCURRENCY tasks run at once,
+      // each finishing task immediately allows the next to start
+      const tasks = items.map(
+        ([_tree, vfile]) => () => processOgImage(ctx, vfile.data, fonts, fullOptions),
+      )
+
+      for await (const result of runWithConcurrency(tasks, OG_CONCURRENCY)) {
+        if (result.cacheHit) cacheHits++
+        else cacheMisses++
+        yield result.path
       }
+
+      const elapsed = ((performance.now() - startTime) / 1000).toFixed(1)
+      const total = cacheHits + cacheMisses
+      const hitRate = total > 0 ? ((cacheHits / total) * 100).toFixed(1) : "0"
+      console.log(
+        `  ${chalk.cyan("OG Images")}: ${total} images in ${chalk.yellow(`${elapsed}s`)} ` +
+          `(cache: ${chalk.green(`${cacheHits} hits`)}/${chalk.red(`${cacheMisses} misses`)}, ` +
+          `${chalk.yellow(`${hitRate}%`)} hit rate, concurrency: ${OG_CONCURRENCY})`,
+      )
     },
     async *partialEmit(ctx, _content, _resources, changeEvents) {
       const cfg = ctx.cfg.configuration
@@ -221,7 +289,6 @@ export const CustomOgImages: QuartzEmitterPlugin<Partial<SocialImageOptions>> = 
       const bodyFont = cfg.theme.typography.body
       const fonts = await getSatoriFonts(headerFont, bodyFont)
 
-      // find all slugs that changed or were added
       const items = changeEvents.filter(
         (e) =>
           e.file &&
@@ -229,17 +296,29 @@ export const CustomOgImages: QuartzEmitterPlugin<Partial<SocialImageOptions>> = 
           (e.type === "add" || e.type === "change"),
       )
 
-      for (let i = 0; i < items.length; i += OG_CONCURRENCY) {
-        const batch = items.slice(i, i + OG_CONCURRENCY)
-        const results = await Promise.all(
-          batch.map((changeEvent) =>
-            processOgImage(ctx, changeEvent.file!.data, fonts, fullOptions),
-          ),
-        )
-        for (const result of results) {
-          yield result
-        }
+      let cacheHits = 0
+      let cacheMisses = 0
+      const startTime = performance.now()
+
+      const tasks = items.map(
+        (changeEvent) => () =>
+          processOgImage(ctx, changeEvent.file!.data, fonts, fullOptions),
+      )
+
+      for await (const result of runWithConcurrency(tasks, OG_CONCURRENCY)) {
+        if (result.cacheHit) cacheHits++
+        else cacheMisses++
+        yield result.path
       }
+
+      const elapsed = ((performance.now() - startTime) / 1000).toFixed(1)
+      const total = cacheHits + cacheMisses
+      const hitRate = total > 0 ? ((cacheHits / total) * 100).toFixed(1) : "0"
+      console.log(
+        `  ${chalk.cyan("OG Images (partial)")}: ${total} images in ${chalk.yellow(`${elapsed}s`)} ` +
+          `(cache: ${chalk.green(`${cacheHits} hits`)}/${chalk.red(`${cacheMisses} misses`)}, ` +
+          `${chalk.yellow(`${hitRate}%`)} hit rate)`,
+      )
     },
     externalResources: (ctx) => {
       if (!ctx.cfg.configuration.baseUrl) {

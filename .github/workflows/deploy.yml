@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+      - copilot/optimize-ci-build-times
 
 permissions:
   contents: read
@@ -17,21 +18,17 @@ concurrency:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    container:
-      image: node:20-bullseye-slim
     steps:
-      - name: Install git
-        run: |
-          apt-get update
-          apt-get install -y git
-
       - uses: actions/checkout@v4
         with:
-          fetch-depth: 0 # Fetch all history
+          fetch-depth: 0 # Fetch all history for git dates
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
 
       - name: Configure Git
         run: |
-          git config --global --add safe.directory "$GITHUB_WORKSPACE"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git config --global user.name "github-actions[bot]"
 
@@ -60,11 +57,13 @@ jobs:
         run: npx quartz build
 
       - name: Upload artifact
+        if: github.ref == 'refs/heads/main'
         uses: actions/upload-pages-artifact@v3
         with:
           path: public
 
       - name: Deploy to GitHub Pages
+        if: github.ref == 'refs/heads/main'
         id: deployment
         uses: actions/deploy-pages@v4
         with:

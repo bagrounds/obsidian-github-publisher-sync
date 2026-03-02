@@ -6,6 +6,8 @@ URL: https://bagrounds.org/books/vibe-coding-building-production-grade-software-
 share: true
 CTA: 🤖 Create intelligent agents.
 affiliate link: https://amzn.to/3Lam2Av
+tags:
+  - AIEngineering
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🤖💻 Vibe Coding: Building Production-Grade Software With GenAI, Chat, Agents, and Beyond  

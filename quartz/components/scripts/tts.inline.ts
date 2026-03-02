@@ -213,8 +213,8 @@ document.addEventListener("nav", () => {
     if (sentences.length === 0) return // nothing to read
 
     if (playing) {
-      // Pause
-      synth.cancel() // SpeechSynthesis has no real "pause" across utterances, cancel is reliable
+      // Pause — using cancel() instead of pause() for more reliable behavior across utterances
+      synth.cancel()
       playing = false
       stopTick()
       showPlay()

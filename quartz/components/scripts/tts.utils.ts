@@ -62,15 +62,12 @@ export function sentenceIndexForTime(
   rate: number,
 ): number {
   const targetWords = targetSec * WPS * rate
-  let idx = 0
   for (let i = 0; i < cumulativeWords.length; i++) {
     if (cumulativeWords[i] >= targetWords) {
-      idx = i
-      return idx
+      return i
     }
-    idx = i + 1
   }
-  return Math.min(idx, Math.max(cumulativeWords.length - 1, 0))
+  return Math.max(cumulativeWords.length - 1, 0)
 }
 
 /**

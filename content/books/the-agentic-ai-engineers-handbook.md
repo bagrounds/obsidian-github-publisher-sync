@@ -6,6 +6,7 @@ title: 🤖⚙️ The Agentic AI Engineer's Handbook
 URL: https://bagrounds.org/books/the-agentic-ai-engineers-handbook
 Author:
 tags:
+  - AIEngineering
 CTA: ⚙️ Build autons.
 affiliate link: https://www.amazon.com/dp/B0G2JDBTZP?tag=bagrounds-20
 ---

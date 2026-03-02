@@ -3,6 +3,8 @@ share: true
 aliases:
   - 🤖🧭 Agentic Software Engineering
 title: 🤖🧭 Agentic Software Engineering
+tags:
+  - AIEngineering
 ---
 [Home](../index.md) > [Topics](./index.md) > [Software Development and Coding](./software-development-and-coding.md)  
 # 🤖🧭 Agentic Software Engineering  
@@ -266,6 +268,28 @@ title: 🤖🧭 Agentic Software Engineering
   
 ## 📖 Bibliography & References  
   
+### 📚 Books in This Vault  
+  
+* [🤖⚙️ The Agentic AI Engineer's Handbook](../books/the-agentic-ai-engineers-handbook.md) - Distills essential principles and actionable methodologies for designing, developing, and deploying robust agentic AI systems.  
+* [🤖⚙️ Agentic Artificial Intelligence](../books/agentic-artificial-intelligence-harnessing-ai-agents-to-reinvent-business-work-and-life.md) - Argues agentic AI is the most significant tech revolution since the GUI, with early adopters gaining compounding intelligence advantages.  
+* [🤖🧠⚙️💡 Building Agentic AI Systems](../books/building-agentic-ai-systems-create-intelligent-autonomous-ai-agents-that-can-reason-plan-and-adapt.md) - Provides a roadmap for developing AI agents that operate independently, make decisions, and adapt to dynamic environments.  
+* [🤖🏗️ AI Engineering: Building Applications with Foundation Models](../books/ai-engineering-building-applications-with-foundation-models.md) - Comprehensive guide focusing on practical application of pre-trained models to build real-world AI products.  
+* [🤖💻 Vibe Coding](../books/vibe-coding-building-production-grade-software-with-genai-chat-agents-and-beyond.md) - The definitive manifesto for building production-grade software with GenAI, shifting developer focus from syntax to intent.  
+* [🤖⚙️ AI Agents in Action](../books/ai-agents-in-action.md) - Provides a proven framework for developing practical agents that handle real-world business and personal tasks.  
+* [✨🤖🔗🐍 Generative AI with LangChain](../books/generative-ai-with-langchain-a-hands-on-guide-to-crafting-scalable-intelligent-systems-and-advanced-ai-agents-with-python.md) - Hands-on guide to building LLM applications and multi-agent orchestration using Python and LangGraph.  
+* [💻✍️ The Art of Prompt Engineering with ChatGPT](../books/the-art-of-prompt-engineering-with-chatgpt-a-hands-on-guide.md) - Accessible practical introduction to prompt engineering for ChatGPT, moving beyond simple queries.  
+* [⌨️🤖 Prompt Engineering for LLMs](../books/prompt-engineering-for-llms-the-art-and-science-of-building-large-language-model-based-applications.md) - Technical frameworks for structuring effective AI inputs to get the best results from LLMs.  
+  
+### 📺 Videos in This Vault  
+  
+* [🤖🗣️🔮✨ AI Talks: Gen AI 2026](../videos/ai-talks-gen-ai-2026-what-will-shape-the-future.md) - Covers the shift from basic code completion to agentic engineering, targeting 30-70% efficiency gains.  
+* [🤖💻📈⬇️2️⃣ The 5 Levels of AI Coding](../videos/the-5-levels-of-ai-coding-why-most-of-you-wont-make-it-past-level-2.md) - Explains the five levels of AI coding capability, from autocomplete to fully autonomous agents.  
+* [👨‍💻➡️🤖🧩 Beyond the IDE](../videos/beyond-the-ide-toward-multi-agent-orchestration.md) - Argues that merging becomes the bottleneck when coding is automated, requiring new coordination patterns.  
+* [🖼️🤔🛠️🤖 Context Engineering for Agents](../videos/context-engineering-for-agents.md) - Categorizes context into instructions, memories, few-shot examples, tools, knowledge, and environmental feedback.  
+* [🤖🔗⬆️✅ 12-Factor Agents](../videos/12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md) - Draws parallels between reliable agent design and the original 12-factor app methodology.  
+* [🧠🛠️🕸️🚫 No Vibes Allowed](../videos/no-vibes-allowed-solving-hard-problems-in-complex-codebases-dex-horthy-humanlayer.md) - Emphasizes the RPI (Research, Plan, Implement) workflow to enforce deliberate System 2 thinking in agents.  
+* [🤖🧠⚙️👩‍💻 AI Engineering with Chip Huyen](../videos/ai-engineering-with-chip-huyen.md) - Argues AI engineering focuses on product development leveraging existing capabilities through APIs rather than building models.  
+  
 ### 🔬 Research Papers  
   
 * [Agentic Software Engineering: Foundational Pillars and a Research Roadmap](https://arxiv.org/abs/2509.06216)  
@@ -321,5 +345,5 @@ title: 🤖🧭 Agentic Software Engineering
   
 ---  
   
-* 🗓️ Last Updated: 2026-03-01  
+* 🗓️ Last Updated: 2026-03-02  
 * 🔄 Research in Progress - This topic is actively being developed  

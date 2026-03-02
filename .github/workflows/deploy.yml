@@ -4,7 +4,6 @@ on:
   push:
     branches:
       - main
-      - copilot/optimize-ci-build-times
 
 permissions:
   contents: read

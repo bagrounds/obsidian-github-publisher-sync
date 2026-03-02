@@ -77,15 +77,29 @@ export const ContentPage: QuartzEmitterPlugin<Partial<FullPageLayout>> = (userOp
       const allFiles = content.map((c) => c[1].data)
       let containsIndex = false
 
+      // Collect items to process, filtering out index/tag pages
+      const items: [typeof content[0][0], typeof content[0][1]][] = []
       for (const [tree, file] of content) {
         const slug = file.data.slug!
         if (slug === "index") {
           containsIndex = true
         }
-
-        // only process home page, non-tag pages, and non-index pages
         if (slug.endsWith("/index") || slug.startsWith("tags/")) continue
-        yield processContent(ctx, tree, file.data, allFiles, opts, resources)
+        items.push([tree, file])
+      }
+
+      // Process in parallel batches for better I/O throughput
+      const BATCH_SIZE = 50
+      for (let i = 0; i < items.length; i += BATCH_SIZE) {
+        const batch = items.slice(i, i + BATCH_SIZE)
+        const results = await Promise.all(
+          batch.map(([tree, file]) =>
+            processContent(ctx, tree, file.data, allFiles, opts, resources),
+          ),
+        )
+        for (const result of results) {
+          yield result
+        }
       }
 
       if (!containsIndex) {

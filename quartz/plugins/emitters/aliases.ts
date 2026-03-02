@@ -1,4 +1,4 @@
-import { FullSlug, isRelativeURL, resolveRelative, simplifySlug } from "../../util/path"
+import { FilePath, FullSlug, isRelativeURL, resolveRelative, simplifySlug } from "../../util/path"
 import { QuartzEmitterPlugin } from "../types"
 import { write } from "./helpers"
 import { BuildCtx } from "../../util/ctx"
@@ -39,8 +39,48 @@ async function* processFile(ctx: BuildCtx, file: VFile) {
 export const AliasRedirects: QuartzEmitterPlugin = () => ({
   name: "AliasRedirects",
   async *emit(ctx, content) {
+    // Collect all alias write tasks first
+    const tasks: Promise<FilePath>[] = []
     for (const [_tree, file] of content) {
-      yield* processFile(ctx, file)
+      const ogSlug = simplifySlug(file.data.slug!)
+      for (const aliasTarget of file.data.aliases ?? []) {
+        const aliasTargetSlug = (
+          isRelativeURL(aliasTarget)
+            ? path.normalize(path.join(ogSlug, "..", aliasTarget))
+            : aliasTarget
+        ) as FullSlug
+
+        const redirUrl = resolveRelative(aliasTargetSlug, ogSlug)
+        tasks.push(
+          write({
+            ctx,
+            content: `
+            <!DOCTYPE html>
+            <html lang="en-us">
+            <head>
+            <title>${ogSlug}</title>
+            <link rel="canonical" href="${redirUrl}">
+            <meta name="robots" content="noindex">
+            <meta charset="utf-8">
+            <meta http-equiv="refresh" content="0; url=${redirUrl}">
+            </head>
+            </html>
+            `,
+            slug: aliasTargetSlug,
+            ext: ".html",
+          }),
+        )
+      }
+    }
+
+    // Process in parallel batches for better I/O throughput
+    const BATCH_SIZE = 100
+    for (let i = 0; i < tasks.length; i += BATCH_SIZE) {
+      const batch = tasks.slice(i, i + BATCH_SIZE)
+      const results = await Promise.all(batch)
+      for (const result of results) {
+        yield result
+      }
     }
   },
   async *partialEmit(ctx, _content, _resources, changeEvents) {

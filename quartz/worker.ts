@@ -35,3 +35,17 @@ export function processHtml(
   }
   return createMarkdownParser(ctx, mds)(createHtmlProcessor(ctx))
 }
+
+// Combined single-pass: text -> markdown -> HTML in one worker call
+// Eliminates intermediate AST serialization between main thread and workers
+export async function parseAndProcessMarkdown(
+  partialCtx: WorkerSerializableBuildCtx,
+  fps: FilePath[],
+): Promise<ProcessedContent[]> {
+  const ctx: BuildCtx = {
+    ...partialCtx,
+    cfg,
+  }
+  const mdContent = await createFileParser(ctx, fps)(createMdProcessor(ctx))
+  return createMarkdownParser(ctx, mdContent)(createHtmlProcessor(ctx))
+}

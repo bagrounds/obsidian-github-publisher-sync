@@ -1,8 +1,9 @@
 #!/usr/bin/env node
 import workerpool from "workerpool"
 const cacheFile = "./.quartz-cache/transpiled-worker.mjs"
-const { parseMarkdown, processHtml } = await import(cacheFile)
+const { parseMarkdown, processHtml, parseAndProcessMarkdown } = await import(cacheFile)
 workerpool.worker({
   parseMarkdown,
   processHtml,
+  parseAndProcessMarkdown,
 })

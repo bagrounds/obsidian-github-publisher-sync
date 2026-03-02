@@ -105,19 +105,20 @@ async function buildQuartz(argv: Argv, mut: Mutex, clientRefresh: () => void) {
   await rimraf(path.join(output, "*"), { glob: true })
   console.log(`Cleaned output directory \`${output}\` in ${perf.timeSince("clean")}`)
 
+  // Run glob and git date computation in parallel since they're independent
   perf.addEvent("glob")
-  const allFiles = await glob("**/*.*", argv.directory, cfg.configuration.ignorePatterns)
+  const [allFiles, gitModifiedDates] = await Promise.all([
+    glob("**/*.*", argv.directory, cfg.configuration.ignorePatterns),
+    Promise.resolve(precomputeGitDates(argv.directory)),
+  ])
   const markdownPaths = allFiles.filter((fp) => fp.endsWith(".md")).sort()
   console.log(
     `Found ${markdownPaths.length} input files from \`${argv.directory}\` in ${perf.timeSince("glob")}`,
   )
 
-  // Pre-compute git dates in bulk (single git log traversal instead of per-file lookups)
-  perf.addEvent("gitDates")
-  const gitModifiedDates = precomputeGitDates(argv.directory)
   const gitDateCount = Object.keys(gitModifiedDates).length
   console.log(
-    `Pre-computed git dates for ${gitDateCount} files in ${perf.timeSince("gitDates")}`,
+    `Pre-computed git dates for ${gitDateCount} files in ${perf.timeSince("glob")}`,
   )
   ctx.gitModifiedDates = gitModifiedDates
 

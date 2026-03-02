@@ -63,7 +63,6 @@ jobs:
           path: public
 
   deploy:
-    if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/copilot/add-audio-player-to-webpages'
     needs: build
     runs-on: ubuntu-latest
     environment:

@@ -26,6 +26,9 @@ const defaultOptions: SocialImageOptions = {
 const OG_CACHE_DIR = path.join(QUARTZ, ".quartz-cache", "og-images")
 const OG_CONCURRENCY = 20
 
+// Increment this when the image generation logic changes to invalidate cached images
+const OG_IMAGE_CACHE_VERSION = 1
+
 /**
  * Compute a content hash for cache keying of OG images.
  * Captures all inputs that affect the generated image.
@@ -41,13 +44,23 @@ function computeOgHash(
 ): string {
   const hash = createHash("sha256")
   hash.update(
-    JSON.stringify({ title, description, tags, date, colorScheme, width, height, version: 1 }),
+    JSON.stringify({
+      title,
+      description,
+      tags,
+      date,
+      colorScheme,
+      width,
+      height,
+      version: OG_IMAGE_CACHE_VERSION,
+    }),
   )
   return hash.digest("hex").slice(0, 16)
 }
 
 /**
- * Load the icon file once and cache it in memory
+ * Load the icon file once and cache it in memory.
+ * Uses null as sentinel for "not yet loaded", undefined for "loaded but not found".
  */
 let cachedIconBase64: string | undefined | null = null
 async function getIconBase64(): Promise<string | undefined> {
@@ -57,7 +70,11 @@ async function getIconBase64(): Promise<string | undefined> {
     const iconData = await fs.readFile(iconPath)
     cachedIconBase64 = `data:image/png;base64,${iconData.toString("base64")}`
   } catch (err) {
-    console.warn(chalk.yellow(`Warning: Could not find icon at ${iconPath}`))
+    console.warn(
+      chalk.yellow(
+        `Warning: Could not find icon at ${iconPath}. OG images will be generated without an icon.`,
+      ),
+    )
     cachedIconBase64 = undefined
   }
   return cachedIconBase64

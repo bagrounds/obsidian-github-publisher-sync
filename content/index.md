@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-03-02T14:40:04-08:00
+updated: 2026-03-02T15:24:03-08:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -43,7 +43,9 @@ updated: 2026-03-02T14:40:04-08:00
 - [🫥🇺🇸😡💔 Strangers in Their Own Land: Anger and Mourning on the American Right](./books/strangers-in-their-own-land.md)  
   
   
-## [📺 Videos](./videos/index.md) (658)  
+## [📺 Videos](./videos/index.md) (660)  
+- [🤖🗣️🏛️⚔️📰 Full interview: Anthropic CEO responds to Trump order, Pentagon clash](./videos/full-interview-anthropic-ceo-responds-to-trump-order-pentagon-clash.md)  
+- [🏛️⚔️🤖 Why the Trump administration is clashing with AI-firm Anthropic](./videos/why-the-trump-administration-is-clashing-with-ai-firm-anthropic.md)  
 - [👧✨🧠🔢✋📈 My 10-Year-Old Vibe Codes. She Also Does Math by Hand. Why That's the Only Strategy That Works.](./videos/my-10-year-old-vibe-codes-she-also-does-math-by-hand-why-thats-the-only-strategy-that-works.md)  
 - [✨💻💀🤖 Steve Yegge on productive vibe coding, the death of the IDE, babysitting a fleet of AI coding agents](./videos/steve-yegge-on-productive-vibe-coding-the-death-of-the-ide-babysitting-a-fleet-of-ai-coding-agents.md)  
 - [🤖🧠⚙️👩‍💻 AI Engineering with Chip Huyen](./videos/ai-engineering-with-chip-huyen.md)  
@@ -52,8 +54,6 @@ updated: 2026-03-02T14:40:04-08:00
 - [🖼️🤔🛠️🤖 Context Engineering for Agents](./videos/context-engineering-for-agents.md)  
 - [👨‍💻➡️🤖🧩 Beyond the IDE: Toward Multi-Agent Orchestration](./videos/beyond-the-ide-toward-multi-agent-orchestration.md)  
 - [🤖💻📈⬇️2️⃣ The 5 Levels of AI Coding (Why Most of You Won't Make It Past Level 2)](./videos/the-5-levels-of-ai-coding-why-most-of-you-wont-make-it-past-level-2.md)  
-- [🧠🗣️1️⃣➡️3️⃣ 'Prompting' Just Split Into 4 Skills. You Only Know One. Here's Why You Need the Other 3 in 2026.](./videos/prompting-just-split-into-4-skills-you-only-know-one-heres-why-you-need-the-other-3-in-2026.md)  
-- [🤖🗣️🔮✨ AI Talks | Gen AI 2026: What Will Shape the Future](./videos/ai-talks-gen-ai-2026-what-will-shape-the-future.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  

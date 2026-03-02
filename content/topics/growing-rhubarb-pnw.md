@@ -35,8 +35,6 @@ The Pacific Northwest's maritime climate provides ideal conditions for rhubarb:
 * ❄️ **Winter chill**: Required dormancy period (below 40°F) is naturally provided  
 * ☁️ **Shelter**: Cloudy days and moderate summer heat prevent bolting  
   
----  
-  
 ## 🏡 Site Selection & Soil Preparation  
   
 ### Choosing the Right Location  
@@ -58,8 +56,6 @@ WSU Extension's Dr. Linda Chalker-Scott emphasizes that rhubarb thrives in soil 
   
 > 💡 **Pro Tip**: Prepare your rhubarb bed the season before planting. This allows organic matter to decompose and soil to settle.  
   
----  
-  
 ## 🌿 Planting & Initial Establishment  
   
 ### When to Plant  
@@ -71,8 +67,6 @@ WSU Extension's Dr. Linda Chalker-Scott emphasizes that rhubarb thrives in soil 
 ### Planting Depth  
   
 According to OSU Extension, crown buds should be planted **1-2 inches below the soil surface**. Planting too deep encourages rot; too shallow exposes crowns to winter damage.  
-  
----  
   
 ## 🛠️ Maintaining Century-Old Plants  
   
@@ -106,8 +100,6 @@ For plants that are decades old:
 3. ✂️ Remove all diseased portions  
 4. 🌱 Replant healthy outer sections only  
 5. ⏳ Allow one growing season before harvesting  
-  
----  
   
 ## 🍂 Seasonal Care Calendar (PNW)  
   
@@ -224,6 +216,19 @@ Consider creating a record of your centenarian rhubarb:
 * *Grow Great Grub* by Gayla Trail  
 * *The Old Farmer's Almanac* - [Rhubarb Growing Guide](https://www.almanac.com/plant/rhubarb)  
   
----  
+* 🗓️ Last Updated: 2026-03-02  
   
-* 🗓️ Last Updated: 2026-03-02
+## References (selected high-quality sources)  
+- OSU Grow Your Own Rhubarb: https://extension.oregonstate.edu/catalog/ec-797-grow-your-own-rhubarb  
+- OSU Rhubarb PDF: https://extension.oregonstate.edu/sites/extd8/files/documents/ec797.pdf  
+- Rural Sprout: How & When To Divide Rhubarb: https://www.ruralsprout.com/divide-rhubarb/  
+- WSU: Growing Rhubarb in Home Gardens: https://pubs.extension.wsu.edu/growing-rhubarb-in-home-gardens  
+- MSU: Renewing old rhubarb plants: https://www.canr.msu.edu/news/renewing_old_rhubarb_plants  
+- Ohio State Hyg-1631: https://ohioline.osu.edu/factsheet/hyg-1631  
+- Plantura: Propagating rhubarb: https://plantura.garden/uk/vegetables/rhubarb/propagating-rhubarb  
+- Gardening Know How: Dividing Rhubarb: https://www.gardeningknowhow.com/edible/vegetables/rhubarb/dividing-rhubarb-plants.htm  
+- Almanac: Rhubarb: https://www.almanac.com/plant/rhubarb  
+- Joybilee Farm: How to Grow Rhubarb: https://joybileefarm.com/grow-rhubarb/  
+- Oregon OSU: Rhubarb (Oregon Vegetables): https://horticulture.oregonstate.edu/oregon-vegetables/rhubarb-0  
+- Rhubarb Compendium: http://www.rhubarbinfo.com/  
+- Rhubarb Compendium: http://www.rhubarbinfo.com/  

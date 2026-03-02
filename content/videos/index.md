@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-03-02T14:40:04-08:00
+updated: 2026-03-02T15:24:03-08:00
 ---
 [Home](../index.md)  
-# 📺 Videos (658)  
+# 📺 Videos (660)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
 - [❓💪🔬 12 Questions About Creatine with Stephen Cornish, PhD](./12-questions-about-creatine-w-stephen-cornish-phd.md)  
@@ -181,6 +181,7 @@ updated: 2026-03-02T14:40:04-08:00
 - [FTC commissioner fired by Trump says move threatens agency designed to protect consumers](./ftc-commissioner-fired-by-trump-says-move-threatens-agency-designed-to-protect-consumers.md)  
 - [🚨🗣️🔥🗳️ Full Briefing: Mayor Frey Addresses Outrage Over ICE Shooting in Minneapolis | DRM News | AC1F](./full-briefing-mayor-frey-addresses-outrage-over-ice-shooting-in-minneapolis-drm-news-ac1f.md)  
 - [🗣️⚔️🏛️ FULL DISCUSSION: Gavin Newsom Slams Trump’s Authoritarianism in Explosive WEF Interview | AC1G](./full-discussion-gavin-newsom-slams-trumps-authoritarianism-in-explosive-wef-interview-ac1g.md)  
+- [🤖🗣️🏛️⚔️📰 Full interview: Anthropic CEO responds to Trump order, Pentagon clash](./full-interview-anthropic-ceo-responds-to-trump-order-pentagon-clash.md)  
 - [🌋☀️🚀 Geothermal energy’s massive leap forward](./geothermal-energys-massive-leap-forward.md)  
 - [🇮🇹🏆🗣️ Giorgio Parisi: Nobel Prize Conversations](./giorgio-parisi-nobel-prize-conversations.md)  
 - [⏱️🧠💥🤖 Give Me 18 Minutes and I’ll Make you Dangerously Smart (with AI)](./give-me-18-minutes-and-ill-make-you-dangerously-smart-with-ai.md)  
@@ -649,6 +650,7 @@ updated: 2026-03-02T14:40:04-08:00
 - [✝️🏛️↔️ Why the Constitution Separates Church and State | Explainer](./why-the-constitution-separates-church-and-state-explainer.md)  
 - [🦠🤧😷🤒🤧💪🛡️ Why the flu season is so bad and how you can protect yourself](./why-the-flu-season-is-so-bad-and-how-you-can-protect-yourself.md)  
 - [❓😡🇺🇸🗳️ Why the hell did people vote for Trump? (the answers will shock you)](./why-the-hell-did-people-vote-for-trump-the-answers-will-shock-you.md)  
+- [🏛️⚔️🤖 Why the Trump administration is clashing with AI-firm Anthropic](./why-the-trump-administration-is-clashing-with-ai-firm-anthropic.md)  
 - [👴🚫📈 Why the Trump Administration Is Doubling Down as Momentum Grows Against Them | Explainer](./why-the-trump-administration-is-doubling-down-as-momentum-grows-against-them-explainer.md)  
 - [👹⏱️🇺🇸➡️💰 Why the Trump Administration Is Rushing the Budget Reconciliation Bill Through](./why-the-trump-administration-is-rushing-the-budget-reconciliation-bill-through.md)  
 - [😴☕️💡 Why you’re so tired](./why-youre-so-tired.md)  

@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+      - copilot/add-audio-player-to-webpages
 
 permissions:
   contents: read
@@ -56,13 +57,13 @@ jobs:
         run: npx quartz build
 
       - name: Upload artifact
-        if: github.ref == 'refs/heads/main'
+        if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/copilot/add-audio-player-to-webpages'
         uses: actions/upload-pages-artifact@v3
         with:
           path: public
 
   deploy:
-    if: github.ref == 'refs/heads/main'
+    if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/copilot/add-audio-player-to-webpages'
     needs: build
     runs-on: ubuntu-latest
     environment:

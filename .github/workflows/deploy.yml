@@ -11,27 +11,23 @@ permissions:
   id-token: write
 
 concurrency:
-  group: "pages"
+  group: "pages-${{ github.ref }}"
   cancel-in-progress: true
 
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
-    container:
-      image: node:20-bullseye-slim
     steps:
-      - name: Install git
-        run: |
-          apt-get update
-          apt-get install -y git
-
       - uses: actions/checkout@v4
         with:
-          fetch-depth: 0 # Fetch all history
+          fetch-depth: 0 # Fetch all history for git dates
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
 
       - name: Configure Git
         run: |
-          git config --global --add safe.directory "$GITHUB_WORKSPACE"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git config --global user.name "github-actions[bot]"
 
@@ -40,9 +36,9 @@ jobs:
         uses: actions/cache@v4
         with:
           path: node_modules
-          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          key: v2-${{ runner.os }}-node20-${{ hashFiles('**/package-lock.json') }}
           restore-keys: |
-            ${{ runner.os }}-node-
+            v2-${{ runner.os }}-node20-
 
       - name: Cache OG Images
         uses: actions/cache@v4
@@ -60,10 +56,18 @@ jobs:
         run: npx quartz build
 
       - name: Upload artifact
+        if: github.ref == 'refs/heads/main'
         uses: actions/upload-pages-artifact@v3
         with:
           path: public
 
+  deploy:
+    if: github.ref == 'refs/heads/main'
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+    steps:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4

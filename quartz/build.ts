@@ -21,6 +21,7 @@ import { getStaticResourcesFromPlugins } from "./plugins"
 import { randomIdNonSecure } from "./util/random"
 import { ChangeEvent } from "./plugins/types"
 import { minimatch } from "minimatch"
+import { execSync } from "child_process"
 
 type ContentMap = Map<
   FilePath,
@@ -40,6 +41,40 @@ type BuildData = {
   contentMap: ContentMap
   changesSinceLastBuild: Record<FilePath, ChangeEvent["type"]>
   lastBuildMs: number
+}
+
+/**
+ * Pre-compute git modified dates for all files in a single bulk operation.
+ * This replaces per-file git lookups (2,348 individual calls) with a single
+ * `git log` traversal, dramatically reducing I/O in CI environments.
+ * Returns a map of relativePath -> epoch milliseconds.
+ */
+function precomputeGitDates(directory: string): Record<string, number> {
+  const dates: Record<string, number> = {}
+  try {
+    const output = execSync('git log --format="COMMIT %ct" --name-only', {
+      cwd: directory,
+      encoding: "utf-8",
+      maxBuffer: 100 * 1024 * 1024,
+    })
+
+    let currentTimestamp = 0
+    for (const line of output.split("\n")) {
+      if (line.startsWith("COMMIT ")) {
+        const parsed = parseInt(line.slice(7), 10)
+        if (!isNaN(parsed)) currentTimestamp = parsed
+      } else if (line.trim() && currentTimestamp) {
+        const filePath = line.trim()
+        if (!(filePath in dates)) {
+          // First occurrence = latest modification (git log is reverse chronological)
+          dates[filePath] = currentTimestamp * 1000 // convert to epoch ms
+        }
+      }
+    }
+  } catch (err) {
+    console.warn(chalk.yellow(`Warning: Could not pre-compute git dates: ${err}`))
+  }
+  return dates
 }
 
 async function buildQuartz(argv: Argv, mut: Mutex, clientRefresh: () => void) {
@@ -76,6 +111,15 @@ async function buildQuartz(argv: Argv, mut: Mutex, clientRefresh: () => void) {
   console.log(
     `Found ${markdownPaths.length} input files from \`${argv.directory}\` in ${perf.timeSince("glob")}`,
   )
+
+  // Pre-compute git dates in bulk (single git log traversal instead of per-file lookups)
+  perf.addEvent("gitDates")
+  const gitModifiedDates = precomputeGitDates(argv.directory)
+  const gitDateCount = Object.keys(gitModifiedDates).length
+  console.log(
+    `Pre-computed git dates for ${gitDateCount} files in ${perf.timeSince("gitDates")}`,
+  )
+  ctx.gitModifiedDates = gitModifiedDates
 
   const filePaths = markdownPaths.map((fp) => joinSegments(argv.directory, fp) as FilePath)
   ctx.allFiles = allFiles

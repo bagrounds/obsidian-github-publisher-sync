@@ -34,9 +34,14 @@ export const CreatedModifiedDate: QuartzTransformerPlugin<Partial<Options>> = (u
     markdownPlugins(ctx) {
       return [
         () => {
+          // Use pre-computed git dates when available (bulk operation from build.ts)
+          // to avoid per-file git lookups which are extremely slow in CI
+          const precomputedDates = ctx.gitModifiedDates
+
+          // Only initialize the git repo if we don't have pre-computed dates
           let repo: Repository | undefined = undefined
           let repositoryWorkdir: string
-          if (opts.priority.includes("git")) {
+          if (opts.priority.includes("git") && !precomputedDates) {
             try {
               repo = Repository.discover(ctx.argv.directory)
               repositoryWorkdir = repo.workdir() ?? ctx.argv.directory
@@ -63,16 +68,21 @@ export const CreatedModifiedDate: QuartzTransformerPlugin<Partial<Options>> = (u
                 created ||= file.data.frontmatter.created as MaybeDate
                 modified ||= file.data.frontmatter.modified as MaybeDate
                 published ||= file.data.frontmatter.published as MaybeDate
-              } else if (source === "git" && repo) {
-                try {
-                  const relativePath = path.relative(repositoryWorkdir, fullFp)
-                  modified ||= await repo.getFileLatestModifiedDateAsync(relativePath)
-                } catch {
-                  console.log(
-                    chalk.yellow(
-                      `\nWarning: ${file.data.filePath!} isn't yet tracked by git, dates will be inaccurate`,
-                    ),
-                  )
+              } else if (source === "git") {
+                // Use pre-computed dates (bulk git log) when available
+                if (precomputedDates && fp in precomputedDates) {
+                  modified ||= precomputedDates[fp]
+                } else if (repo) {
+                  try {
+                    const relativePath = path.relative(repositoryWorkdir, fullFp)
+                    modified ||= await repo.getFileLatestModifiedDateAsync(relativePath)
+                  } catch {
+                    console.log(
+                      chalk.yellow(
+                        `\nWarning: ${file.data.filePath!} isn't yet tracked by git, dates will be inaccurate`,
+                      ),
+                    )
+                  }
                 }
               }
             }

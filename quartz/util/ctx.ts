@@ -29,6 +29,8 @@ export interface BuildCtx {
   allFiles: FilePath[]
   trie?: FileTrieNode<BuildTimeTrieData>
   incremental: boolean
+  /** Pre-computed git modified dates: relativePath -> epoch ms */
+  gitModifiedDates?: Record<string, number>
 }
 
 export function trieFromAllFiles(allFiles: QuartzPluginData[]): FileTrieNode<BuildTimeTrieData> {

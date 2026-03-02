@@ -44,7 +44,7 @@ jobs:
         uses: actions/cache@v4
         with:
           path: quartz/.quartz-cache
-          key: quartz-cache-${{ hashFiles('content/**/*.md') }}
+          key: quartz-cache-${{ hashFiles('content/**/*.md', 'quartz.config.ts', 'quartz/**/*.ts', 'quartz/**/*.tsx') }}
           restore-keys: |
             quartz-cache-
 

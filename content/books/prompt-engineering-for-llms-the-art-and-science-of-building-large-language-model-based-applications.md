@@ -6,6 +6,8 @@ URL: https://bagrounds.org/books/prompt-engineering-for-llms-the-art-and-science
 share: true
 CTA: 🤖 Design intelligent apps.
 affiliate link: https://amzn.to/3J6B21F
+tags:
+  - AIEngineering
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ⌨️🤖 Prompt Engineering for LLMs: The Art and Science of Building Large Language Model-Based Applications  

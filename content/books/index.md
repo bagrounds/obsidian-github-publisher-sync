@@ -5,10 +5,10 @@ aliases:
 share: true
 URL: https://bagrounds.org/books
 backlinks: false
-updated: 2026-02-28T19:36:19-08:00
+updated: 2026-03-01T23:13:27-08:00
 ---
 [Home](../index.md)  
-# 📚 Books (949)  
+# 📚 Books (950)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [💻0️⃣ Source Code: My Beginnings](./source-code-my-beginnings.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)  
@@ -275,6 +275,7 @@ updated: 2026-02-28T19:36:19-08:00
 - [🛂⛓️ From Deportation to Prison: The Politics of Immigration Enforcement in Post-Civil Rights America](./from-deportation-to-prison-the-politics-of-immigration-enforcement-in-post-civil-rights-america.md)  
 - [💪😊🎯 From Strength to Strength: Finding Success, Happiness, and Deep Purpose in the Second Half of Life](./from-strength-to-strength-finding-success-happiness-and-deep-purpose-in-the-second-half-of-life.md)  
 - [🌳🍎🍽️ From Tree to Table: Growing Backyard Fruit Trees in the Pacific Maritime Climate](./from-tree-to-table-growing-backyard-fruit-trees-in-the-pacific-maritime-climate.md)  
+- [🕵️ Fugitive Telemetry](./fugitive-telemetry.md)  
 - [🌪️🧘🏼‍♀️ Full Catastrophe Living: Using the Wisdom of Your Body and Mind to Face Stress, Pain, and Illness](./full-catastrophe-living.md)  
 - [🧑‍🤝‍🧑✅🌍 Full Employment and Social Justice: Solidarity and Sustainability](./full-employment-and-social-justice-solidarity-and-sustainability.md)  
 - [💾🏗️ Fundamentals of Data Engineering: Plan and Build Robust Data Systems](./fundamentals-of-data-engineering-plan-and-build-robust-data-systems.md)  

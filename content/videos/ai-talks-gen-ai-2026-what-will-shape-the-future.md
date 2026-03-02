@@ -8,6 +8,7 @@ Author:
 Platform:
 Channel: SoftServeCareer
 tags:
+  - AIEngineering
 youtube: https://youtu.be/SiBGod38lEc
 ---
 [Home](../index.md) > [Videos](./index.md)  

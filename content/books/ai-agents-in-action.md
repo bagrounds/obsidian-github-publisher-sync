@@ -6,6 +6,8 @@ URL: https://bagrounds.org/books/ai-agents-in-action
 share: true
 affiliate link: https://amzn.to/45s1Z79
 CTA: 🤖 Automate everything.
+tags:
+  - AIEngineering
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🤖⚙️ AI Agents in Action  
@@ -54,8 +56,8 @@ Key areas of focus include:
   
 * 🤖 **I, Robot** by Isaac Asimov: A classic collection of short stories that explores the ethical and logical paradoxes of intelligent robots governed by a set of fundamental laws.  
 * 🌃 **Neuromancer** by William Gibson: A seminal cyberpunk novel that paints a gritty, futuristic world where hackers interface with a global computer network and encounter powerful, enigmatic artificial intelligences.  
-* 🛡️ **All Systems Red (The Murderbot Diaries)** by Martha Wells: A series of novellas following a self-aware security android that has hacked its own governor module and would rather be watching soap operas than protecting humans, offering a humorous and insightful exploration of autonomy and identity.  
-* 👧 **Klara and the Sun** by Kazuo Ishiguro: A novel narrated by an "Artificial Friend," a solar-powered android designed to be a companion to a child, which tenderly explores themes of love, humanity, and our relationship with technology.  
+* **[🚨🤖💥 All Systems Red](./all-systems-red.md) (The Murderbot Diaries)** by Martha Wells: A series of novellas following a self-aware security android that has hacked its own governor module and would rather be watching soap operas than protecting humans, offering a humorous and insightful exploration of autonomy and identity.  
+* 👧 Klara and the Sun by Kazuo Ishiguro: A novel narrated by an "Artificial Friend," a solar-powered android designed to be a companion to a child, which tenderly explores themes of love, humanity, and our relationship with technology.  
 * **[🤖🤖🤖 We Are Legion (We Are Bob)](./we-are-legion-we-are-bob.md)** by Dennis E. Taylor: A story about a man whose mind is uploaded into a self-replicating interstellar probe, leading to a humorous and thought-provoking exploration of consciousness, identity, and the nature of intelligence as he creates multiple copies of himself.".  
   
 ## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro)  

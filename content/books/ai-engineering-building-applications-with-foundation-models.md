@@ -6,6 +6,8 @@ URL: https://bagrounds.org/books/ai-engineering-building-applications-with-found
 share: true
 CTA: 🤖 Construct intelligent tools.
 affiliate link: https://amzn.to/459bMyS
+tags:
+  - AIEngineering
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🤖🏗️ AI Engineering: Building Applications with Foundation Models  

@@ -8,6 +8,7 @@ Author:
 Platform:
 Channel: LangChain
 tags:
+  - AIEngineering
 youtube: https://youtu.be/4GiqzUHD5AA
 ---
 [Home](../index.md) > [Videos](./index.md)  

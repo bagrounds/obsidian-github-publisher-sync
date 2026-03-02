@@ -6,6 +6,8 @@ URL: https://bagrounds.org/books/the-art-of-prompt-engineering-with-chatgpt-a-ha
 share: true
 affiliate link: https://amzn.to/40LrCON
 CTA: 🤖 Master ChatGPT.
+tags:
+  - AIEngineering
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 💻✍️ The Art of Prompt Engineering with ChatGPT: A Hands-On Guide  
@@ -38,7 +40,7 @@ The book systematically guides the reader from foundational concepts to more adv
 ### 🆚 Contrasting Books on AI and its Implications  
   
 * **[🤖⚠️📈 Superintelligence: Paths, Dangers, Strategies](./superintelligence-paths-dangers-strategies.md)** by Nick Bostrom: A foundational text that delves into the potential risks and long-term challenges posed by advanced artificial intelligence.  
-* 🌍 **AI Superpowers: China, Silicon Valley, and the New World Order** by Kai-Fu Lee: This book offers a geopolitical analysis of the race for AI dominance between the US and China and its implications for innovation and society.  
+* 🌍 **AI Superpowers** by Kai-Fu Lee: This book offers a geopolitical analysis of the race for AI dominance between the US and China and its implications for innovation and society.  
 * 🤖 **The Age of Spiritual Machines: When Computers Exceed Human Intelligence** by Ray Kurzweil: A visionary and often debated look at the future of AI, predicting a merger of human and machine intelligence.  
 * 🛡️ **Responsible Artificial Intelligence: How to Develop and Use AI in a Responsible Way** by Virginia Dignum: This book focuses on the crucial ethical considerations surrounding the development and deployment of AI systems.  
   

@@ -8,6 +8,7 @@ Author:
 Platform:
 Channel: IT Revolution
 tags:
+  - AIEngineering
 youtube: https://youtu.be/D0cG4GLuzgM
 ---
 [Home](../index.md) > [Videos](./index.md)  

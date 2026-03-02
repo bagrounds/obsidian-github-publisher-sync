@@ -1,13 +1,14 @@
 ---
 share: true
 aliases:
-  - "🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer"
-title: "🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer"
+  - "🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer"
+title: "🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer"
 URL: https://bagrounds.org/videos/12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: AI Engineer
-tags: 
+tags:
+  - AIEngineering
 youtube: https://youtu.be/8kMaTybvDUw
 ---
 [Home](../index.md) > [Videos](./index.md)  

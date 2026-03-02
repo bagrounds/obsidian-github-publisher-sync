@@ -4,10 +4,11 @@ aliases:
   - 🤖🧠⚙️👩‍💻 AI Engineering with Chip Huyen
 title: 🤖🧠⚙️👩‍💻 AI Engineering with Chip Huyen
 URL: https://bagrounds.org/videos/ai-engineering-with-chip-huyen
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: The Pragmatic Engineer
-tags: 
+tags:
+  - AIEngineering
 youtube: https://youtu.be/98o_L3jlixw
 ---
 [Home](../index.md) > [Videos](./index.md) | [🤖🏗️ AI Engineering: Building Applications with Foundation Models](../books/ai-engineering-building-applications-with-foundation-models.md)  

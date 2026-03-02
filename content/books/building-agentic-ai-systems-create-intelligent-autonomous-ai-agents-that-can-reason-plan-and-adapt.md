@@ -6,6 +6,8 @@ URL: https://bagrounds.org/books/building-agentic-ai-systems-create-intelligent-
 share: true
 affiliate link: https://amzn.to/3UdszvC
 CTA: 🤖 Engineer autonomy.
+tags:
+  - AIEngineering
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🤖🧠⚙️💡 Building Agentic AI Systems: Create intelligent, autonomous AI agents that can reason, plan, and adapt  

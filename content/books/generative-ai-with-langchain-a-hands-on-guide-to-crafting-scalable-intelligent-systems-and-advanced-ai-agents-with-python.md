@@ -6,6 +6,8 @@ URL: https://bagrounds.org/books/generative-ai-with-langchain-a-hands-on-guide-t
 share: true
 CTA: 🚀 Build intelligent systems.
 affiliate link: https://amzn.to/4janMqg
+tags:
+  - AIEngineering
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ✨🤖🔗🐍 Generative AI with LangChain: A Hands On Guide to Crafting Scalable, Intelligent Systems and Advanced AI Agents with Python  

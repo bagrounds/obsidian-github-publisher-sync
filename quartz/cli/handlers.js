@@ -308,11 +308,45 @@ export async function handleBuild(argv) {
       await cleanupBuild()
     }
 
-    const result = await ctx.rebuild().catch((err) => {
-      console.error(`${chalk.red("Couldn't parse Quartz configuration:")} ${fp}`)
-      console.log(`Reason: ${chalk.grey(err)}`)
-      process.exit(1)
+    // Pre-transpile worker script in parallel with the main build
+    // This saves time by having it ready when parseMarkdown needs it
+    const workerCacheFile = "./quartz/.quartz-cache/transpiled-worker.mjs"
+    const workerFp = "./quartz/worker.ts"
+    const workerTranspilePromise = esbuild.build({
+      entryPoints: [workerFp],
+      outfile: workerCacheFile,
+      bundle: true,
+      keepNames: true,
+      platform: "node",
+      format: "esm",
+      packages: "external",
+      sourcemap: true,
+      sourcesContent: false,
+      plugins: [
+        {
+          name: "css-and-scripts-as-text",
+          setup(build) {
+            build.onLoad({ filter: /\.scss$/ }, (_) => ({
+              contents: "",
+              loader: "text",
+            }))
+            build.onLoad({ filter: /\.inline\.(ts|js)$/ }, (_) => ({
+              contents: "",
+              loader: "text",
+            }))
+          },
+        },
+      ],
     })
+
+    const [result] = await Promise.all([
+      ctx.rebuild().catch((err) => {
+        console.error(`${chalk.red("Couldn't parse Quartz configuration:")} ${fp}`)
+        console.log(`Reason: ${chalk.grey(err)}`)
+        process.exit(1)
+      }),
+      workerTranspilePromise,
+    ])
     release()
 
     if (argv.bundleInfo) {

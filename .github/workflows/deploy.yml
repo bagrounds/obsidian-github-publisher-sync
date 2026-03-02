@@ -24,7 +24,7 @@ jobs:
 
       - uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 22
 
       - name: Configure Git
         run: |
@@ -36,17 +36,17 @@ jobs:
         uses: actions/cache@v4
         with:
           path: node_modules
-          key: v2-${{ runner.os }}-node20-${{ hashFiles('**/package-lock.json') }}
+          key: v3-${{ runner.os }}-node22-${{ hashFiles('**/package-lock.json') }}
           restore-keys: |
-            v2-${{ runner.os }}-node20-
+            v3-${{ runner.os }}-node22-
 
-      - name: Cache OG Images
+      - name: Cache Quartz Build
         uses: actions/cache@v4
         with:
-          path: quartz/.quartz-cache/og-images
-          key: og-images-${{ hashFiles('content/**/*.md') }}
+          path: quartz/.quartz-cache
+          key: quartz-cache-${{ hashFiles('content/**/*.md') }}
           restore-keys: |
-            og-images-
+            quartz-cache-
 
       - name: Install Dependencies (if cache is not hit)
         if: ${{ steps.cache.outputs.cache-hit != 'true' }}

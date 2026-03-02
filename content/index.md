@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-03-02T11:24:46-08:00
+updated: 2026-03-02T14:40:04-08:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -31,37 +31,37 @@ updated: 2026-03-02T11:24:46-08:00
   
   
 ## [📚 Books](./books/index.md) (950)  
-- [🫥🇺🇸😡💔 Strangers in Their Own Land: Anger and Mourning on the American Right](./books/strangers-in-their-own-land.md)  
-- [🌐🤖🚀 Network Effect](./books/network-effect.md)  
-- [🕵️ Fugitive Telemetry](./books/fugitive-telemetry.md)  
-- [🤟🆎 American Sign Language Dictionary](./books/american-sign-language-dictionary.md)  
+- [⌨️🤖 Prompt Engineering for LLMs: The Art and Science of Building Large Language Model-Based Applications](./books/prompt-engineering-for-llms-the-art-and-science-of-building-large-language-model-based-applications.md)  
+- [💻✍️ The Art of Prompt Engineering with ChatGPT: A Hands-On Guide](./books/the-art-of-prompt-engineering-with-chatgpt-a-hands-on-guide.md)  
+- [✨🤖🔗🐍 Generative AI with LangChain: A Hands On Guide to Crafting Scalable, Intelligent Systems and Advanced AI Agents with Python](./books/generative-ai-with-langchain-a-hands-on-guide-to-crafting-scalable-intelligent-systems-and-advanced-ai-agents-with-python.md)  
+- [🤖⚙️ AI Agents in Action](./books/ai-agents-in-action.md)  
+- [🤖💻 Vibe Coding: Building Production-Grade Software With GenAI, Chat, Agents, and Beyond](./books/vibe-coding-building-production-grade-software-with-genai-chat-agents-and-beyond.md)  
+- [🤖🏗️ AI Engineering: Building Applications with Foundation Models](./books/ai-engineering-building-applications-with-foundation-models.md)  
+- [🤖🧠⚙️💡 Building Agentic AI Systems: Create intelligent, autonomous AI agents that can reason, plan, and adapt](./books/building-agentic-ai-systems-create-intelligent-autonomous-ai-agents-that-can-reason-plan-and-adapt.md)  
+- [🤖⚙️ Agentic Artificial Intelligence: Harnessing AI Agents to Reinvent Business, Work and Life](./books/agentic-artificial-intelligence-harnessing-ai-agents-to-reinvent-business-work-and-life.md)  
 - [🤖⚙️ The Agentic AI Engineer's Handbook](./books/the-agentic-ai-engineers-handbook.md)  
-- [🇷🇺🪝🇺🇸 American Kompromat: How the KGB Cultivated Donald Trump, and Other Tales of Sex, Greed, Power, and Treachery](./books/american-kompromat-how-the-kgb-cultivated-donald-trump-and-other-tales-of-sex-greed-power-and-treachery.md)  
-- [🤝📈🇺🇸🔁 The Upswing: How America Came Together a Century Ago and How We Can Do It Again](./books/the-upswing.md)  
-- [🧑‍🤝‍🧑🐘⬆️ The Great Alignment: Race, Party Transformation, and the Rise of Donald Trump](./books/the-great-alignment-race-party-transformation-and-the-rise-of-donald-trump.md)  
-- [↔️ Why We're Polarized](./books/why-were-polarized.md)  
-- [🧠🔌 The Thinking Machine: Jensen Huang, Nvidia, and the World's Most Coveted Microchip](./books/the-thinking-machine-jensen-huang-nvidia-and-the-worlds-most-coveted-microchip.md)  
+- [🫥🇺🇸😡💔 Strangers in Their Own Land: Anger and Mourning on the American Right](./books/strangers-in-their-own-land.md)  
   
   
-## [📺 Videos](./videos/index.md) (657)  
-- [🤟🔤📚 Learn the ASL Alphabet Fast | American Sign Language ABCs](./videos/learn-the-asl-alphabet-fast-american-sign-language-abcs.md)  
+## [📺 Videos](./videos/index.md) (658)  
+- [👧✨🧠🔢✋📈 My 10-Year-Old Vibe Codes. She Also Does Math by Hand. Why That's the Only Strategy That Works.](./videos/my-10-year-old-vibe-codes-she-also-does-math-by-hand-why-thats-the-only-strategy-that-works.md)  
+- [✨💻💀🤖 Steve Yegge on productive vibe coding, the death of the IDE, babysitting a fleet of AI coding agents](./videos/steve-yegge-on-productive-vibe-coding-the-death-of-the-ide-babysitting-a-fleet-of-ai-coding-agents.md)  
+- [🤖🧠⚙️👩‍💻 AI Engineering with Chip Huyen](./videos/ai-engineering-with-chip-huyen.md)  
+- [🧠🛠️🕸️🚫🙅‍♂️💼 No Vibes Allowed: Solving Hard Problems in Complex Codebases – Dex Horthy, HumanLayer](./videos/no-vibes-allowed-solving-hard-problems-in-complex-codebases-dex-horthy-humanlayer.md)  
+- [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./videos/12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
+- [🖼️🤔🛠️🤖 Context Engineering for Agents](./videos/context-engineering-for-agents.md)  
+- [👨‍💻➡️🤖🧩 Beyond the IDE: Toward Multi-Agent Orchestration](./videos/beyond-the-ide-toward-multi-agent-orchestration.md)  
+- [🤖💻📈⬇️2️⃣ The 5 Levels of AI Coding (Why Most of You Won't Make It Past Level 2)](./videos/the-5-levels-of-ai-coding-why-most-of-you-wont-make-it-past-level-2.md)  
 - [🧠🗣️1️⃣➡️3️⃣ 'Prompting' Just Split Into 4 Skills. You Only Know One. Here's Why You Need the Other 3 in 2026.](./videos/prompting-just-split-into-4-skills-you-only-know-one-heres-why-you-need-the-other-3-in-2026.md)  
-- [⚔️🇮🇷📰 War with Iran | PBS News Special Report](./videos/war-with-iran-pbs-news-special-report.md)  
 - [🤖🗣️🔮✨ AI Talks | Gen AI 2026: What Will Shape the Future](./videos/ai-talks-gen-ai-2026-what-will-shape-the-future.md)  
-- [🏛️🗣️🗓️ Politics Chat, November 13, 2025](./videos/politics-chat-november-13-2025.md)  
-- [⏳📅🗓️🚀 The next 36 months will be WILD](./videos/the-next-36-months-will-be-wild.md)  
-- [🔬🛡️🤥 Authors of 'Science Under Siege' warn of concerted effort to discredit science](./videos/authors-of-science-under-siege-warn-of-concerted-effort-to-discredit-science.md)  
-- [👑⬇️🗣️📺 No Kings Protests Defy GOP Expectations & Jon Gives Trump a Royal Inspection | The Daily Show](./videos/no-kings-protests-defy-gop-expectations-jon-gives-trump-a-royal-inspection-the-daily-show.md)  
-- [🗣️⚔️🏛️ FULL DISCUSSION: Gavin Newsom Slams Trump’s Authoritarianism in Explosive WEF Interview | AC1G](./videos/full-discussion-gavin-newsom-slams-trumps-authoritarianism-in-explosive-wef-interview-ac1g.md)  
-- [💥👥💀🚨 ‘They killed a man, created chaos:’ Gov. Walz on shooting](./videos/they-killed-a-man-created-chaos-gov-walz-on-shooting.md)  
   
   
-## [🌌 Topics](./topics/index.md) (90)  
-- [🚀 CI-Driven Publishing](./topics/ci-driven-publishing.md)  
+## [🌌 Topics](./topics/index.md) (91)  
+- [🌿🐚 Growing Centenarian Rhubarb in the PNW](./topics/growing-rhubarb-pnw.md)  
 - [🤖🧭 Agentic Software Engineering](./topics/agentic-software-engineering.md)  
+- [🚀 CI-Driven Publishing](./topics/ci-driven-publishing.md)  
 - [💻🎨⚙️ ANSI escape codes](./topics/ansi-escape-codes.md)  
 - [🧩🔄🧠 Self-Organization](./topics/self-organization.md)  
-- [📏🔮〰️ Kalman Filter](./topics/kalman-filter.md)  
   
   
 ## [📄  Articles](./articles/index.md) (79)  

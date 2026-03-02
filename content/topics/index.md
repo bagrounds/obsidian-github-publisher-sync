@@ -5,10 +5,10 @@ aliases:
 title: 🌌 Topics
 URL: https://bagrounds.org/topics
 backlinks: false
-updated: 2026-03-02T11:24:46-08:00
+updated: 2026-03-02T14:40:04-08:00
 ---
 [Home](../index.md)  
-# 🌌 Topics (90)  
+# 🌌 Topics (91)  
 - [⚙️🧠🔄 Adaptive Control](./adaptive-control.md)  
 - [🤖🧭 Agentic Software Engineering](./agentic-software-engineering.md)  
 - [🌲🪜🧠 A Hierarchical View of Human Knowledge](./a-hierarchical-view-of-human-knowledge.md)  
@@ -41,6 +41,7 @@ updated: 2026-03-02T11:24:46-08:00
 - [Functional Languages](./functional-languages.md)  
 - [🤖🕸️💸🔎 Google Search Crawl Budget](./google-search-crawl-budget.md)  
 - [Graphic Design](./graphic-design.md)  
+- [🌿🐚 Growing Centenarian Rhubarb in the PNW](./growing-rhubarb-pnw.md)  
 - [🤔🚫➡️📚 Heterodox Economics](./heterodox-economics.md)  
 - [Humanities](./humanities.md)  
 - [🔢💯 Hundred Board](./hundred-board.md)  

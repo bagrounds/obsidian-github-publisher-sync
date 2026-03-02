@@ -138,8 +138,6 @@ For plants that are decades old:
 * 🐛 Apply slug bait before rains  
 * 🌾 Mulch for winter protection  
   
----  
-  
 ## 🌸 Recommended Varieties for the PNW  
   
 ### Heritage Varieties (Best for Long-Term Legacy)  
@@ -157,8 +155,6 @@ For plants that are decades old:
 * 🤝 Ask neighbors with old patches - they've likely been dividing for decades  
 * 🌱 Seed swaps and master gardener plant sales  
 * 📞 Contact [WSU Master Gardeners](https://extension.wsu.edu/master-gardener-program/) for local sources  
-  
----  
   
 ## 🐛 Troubleshooting  
   
@@ -190,8 +186,6 @@ Rhubarb is remarkably pest-resistant in the PNW. Main concerns:
   
 > ⚠️ **Never use pesticides on rhubarb** - the stalks absorb chemicals. Use organic methods only.  
   
----  
-  
 ## 🌿 The Legacy Aspect  
   
 ### Why 100 Years Matters  
@@ -209,8 +203,6 @@ Consider creating a record of your centenarian rhubarb:
 * 📝 Growing notes and harvest dates  
 * 📅 Date of original planting (if known)  
 * 🌱 Any division/renewal history  
-  
----  
   
 ## 📚 Resources  
   
@@ -234,13 +226,4 @@ Consider creating a record of your centenarian rhubarb:
   
 ---  
   
-## 🔗 Related Topics  
-  
-* [Gardening](topics/gardening.md)  
-* [Permaculture](topics/permaculture.md)  
-* [Urban Homesteading](topics/urban-homesteading.md)  
-  
----  
-  
-* 🗓️ Last Updated: 2026-03-02  
-* 🌱 Growing in Progress - This topic is actively being developed  
+* 🗓️ Last Updated: 2026-03-02

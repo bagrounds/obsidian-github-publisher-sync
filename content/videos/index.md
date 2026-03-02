@@ -5,12 +5,12 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-03-02T11:24:46-08:00
+updated: 2026-03-02T14:40:04-08:00
 ---
 [Home](../index.md)  
-# 📺 Videos (657)  
+# 📺 Videos (658)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
-- [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
+- [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
 - [❓💪🔬 12 Questions About Creatine with Stephen Cornish, PhD](./12-questions-about-creatine-w-stephen-cornish-phd.md)  
 - [🧠🗣️1️⃣➡️3️⃣ 'Prompting' Just Split Into 4 Skills. You Only Know One. Here's Why You Need the Other 3 in 2026.](./prompting-just-split-into-4-skills-you-only-know-one-heres-why-you-need-the-other-3-in-2026.md)  
 - [🧠💪🤯🔄♾️ 15 Books So Hard They’ll Reshape Your Brain Forever](./15-books-so-hard-theyll-reshape-your-brain-forever.md)  
@@ -340,6 +340,7 @@ updated: 2026-03-02T11:24:46-08:00
 - [🇺🇸👑🗣️ Murphy Floor Speech on Trump's Authoritarian Takeover](./murphy-floor-speech-on-trumps-authoritarian-takeover.md)  
 - [Murphy: Six Weeks In, This White House Is On Its Way To Being The Most Corrupt In U.S. History](./murphy-six-weeks-in-this-white-house-is-on-its-way-to-being-the-most-corrupt-in-u-s-history.md)  
 - [Murphy: Trump Is Dismantling Our Democracy. We Must Come Together And Act Before It’s Too Late.](./murphy-trump-is-dismantling-our-democracy-we-must-come-together-and-act-before-its-too-late.md)  
+- [👧✨🧠🔢✋📈 My 10-Year-Old Vibe Codes. She Also Does Math by Hand. Why That's the Only Strategy That Works.](./my-10-year-old-vibe-codes-she-also-does-math-by-hand-why-thats-the-only-strategy-that-works.md)  
 - [🧠💾⚡️ My system for memorizing everything INSTANTLY](./my-system-for-memorizing-everything-instantly.md)  
 - [🇮🇱🎤📺 Netanyahu: Last Week Tonight with John Oliver (HBO)](./netanyahu-last-week-tonight-with-john-oliver-hbo.md)  
 - [🇺🇸🛡️💪 Never Give Up A Conversation with Joyce White Vance—«Giving Up Is Unforgivable: A Manual for Keeping a Democracy»](./a-conversation-with-joyce-white-vance-giving-up-is-unforgivable-a-manual-for-keeping-a-democracy.md)  

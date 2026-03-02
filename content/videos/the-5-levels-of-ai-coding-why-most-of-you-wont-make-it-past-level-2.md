@@ -8,6 +8,7 @@ Author:
 Platform:
 Channel: AI News & Strategy Daily | Nate B Jones
 tags:
+  - AIEngineering
 youtube: https://youtu.be/bDcgHzCBgmQ
 ---
 [Home](../index.md) > [Videos](./index.md)  

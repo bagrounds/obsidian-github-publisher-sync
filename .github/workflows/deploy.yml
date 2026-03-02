@@ -57,7 +57,6 @@ jobs:
         run: npx quartz build
 
       - name: Upload artifact
-        if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/copilot/add-audio-player-to-webpages'
         uses: actions/upload-pages-artifact@v3
         with:
           path: public

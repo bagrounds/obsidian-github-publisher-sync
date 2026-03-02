@@ -59,7 +59,7 @@ async function transpileWorkerScript() {
   const cacheFile = "./.quartz-cache/transpiled-worker.mjs"
   const outfile = path.join(QUARTZ, cacheFile)
   try {
-    await import("fs").then((fs) => fs.promises.access(outfile))
+    await fs.promises.access(outfile)
     return // already transpiled
   } catch {
     // file doesn't exist, transpile it
@@ -286,9 +286,7 @@ export async function parseMarkdown(ctx: BuildCtx, fps: FilePath[]): Promise<Pro
       const [_tree, file] = result
       const fp = file.data.filePath as FilePath
       const cacheKey = fileHashes.get(fp)
-      if (cacheKey) {
-        return saveCachedResult(cacheKey, result)
-      }
+      return cacheKey ? saveCachedResult(cacheKey, result) : Promise.resolve()
     })
     Promise.all(savePromises).catch(() => {}) // fire-and-forget
 

@@ -44,6 +44,14 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-node-
 
+      - name: Cache OG Images
+        uses: actions/cache@v4
+        with:
+          path: quartz/.quartz-cache/og-images
+          key: og-images-${{ hashFiles('content/**/*.md') }}
+          restore-keys: |
+            og-images-
+
       - name: Install Dependencies (if cache is not hit)
         if: ${{ steps.cache.outputs.cache-hit != 'true' }}
         run: npm ci

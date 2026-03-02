@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-02-28T19:36:19-08:00
+updated: 2026-03-01T23:13:27-08:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -13,7 +13,8 @@ updated: 2026-02-28T19:36:19-08:00
 ❔ What do 🫵 _you_ 🤔 think?  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (471)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (472)  
+- [2026-03-01 | 🕵️ Fugitive 📖 Network 📚](./reflections/2026-03-01.md)  
 - [2026-02-28 | 🤖⚙️🧠 Agentic 📖](./reflections/2026-02-28.md)  
 - [2026-02-27 | 🤖🐍🚫🐍 AI 🇺🇸 Polarized 🏛️ Brooks 📚📄📺📰](./reflections/2026-02-27.md)  
 - [2026-02-26 | 🌐 Network 🗣️ Prompt 🇺🇸 Union 💰 Wealth 📚📺🤖💬](./reflections/2026-02-26.md)  
@@ -23,24 +24,23 @@ updated: 2026-02-28T19:36:19-08:00
 - [2026-02-22 | 🚪 Exit 🌐 Network 🧠💊 Dopamine 📚📺](./reflections/2026-02-22.md)  
 - [2026-02-21 | 🦹 Rogue 🏃 Exit 🌐 Network 📚](./reflections/2026-02-21.md)  
 - [2026-02-20 | 🕵️‍♀️ Rogue 🚪 Exit 📚](./reflections/2026-02-20.md)  
-- [2026-02-19 | 🤖 Artificial 🕵️‍♀️ Rogue 🚫 Boycott 🏋️ Exercise 🏃 Endurance 💻 Coding 📚📺](./reflections/2026-02-19.md)  
   
   
 ## [🧰 Tools](./tools/index.md) (1)  
 - [🧮 Calculator](./tools/calculator.md)  
   
   
-## [📚 Books](./books/index.md) (949)  
+## [📚 Books](./books/index.md) (950)  
+- [🫥🇺🇸😡💔 Strangers in Their Own Land: Anger and Mourning on the American Right](./books/strangers-in-their-own-land.md)  
+- [🌐🤖🚀 Network Effect](./books/network-effect.md)  
+- [🕵️ Fugitive Telemetry](./books/fugitive-telemetry.md)  
 - [🤟🆎 American Sign Language Dictionary](./books/american-sign-language-dictionary.md)  
 - [🤖⚙️ The Agentic AI Engineer's Handbook](./books/the-agentic-ai-engineers-handbook.md)  
 - [🇷🇺🪝🇺🇸 American Kompromat: How the KGB Cultivated Donald Trump, and Other Tales of Sex, Greed, Power, and Treachery](./books/american-kompromat-how-the-kgb-cultivated-donald-trump-and-other-tales-of-sex-greed-power-and-treachery.md)  
 - [🤝📈🇺🇸🔁 The Upswing: How America Came Together a Century Ago and How We Can Do It Again](./books/the-upswing.md)  
 - [🧑‍🤝‍🧑🐘⬆️ The Great Alignment: Race, Party Transformation, and the Rise of Donald Trump](./books/the-great-alignment-race-party-transformation-and-the-rise-of-donald-trump.md)  
 - [↔️ Why We're Polarized](./books/why-were-polarized.md)  
-- [🫥🇺🇸😡💔 Strangers in Their Own Land: Anger and Mourning on the American Right](./books/strangers-in-their-own-land.md)  
 - [🧠🔌 The Thinking Machine: Jensen Huang, Nvidia, and the World's Most Coveted Microchip](./books/the-thinking-machine-jensen-huang-nvidia-and-the-worlds-most-coveted-microchip.md)  
-- [🇮🇹🇩🇪🇱🇾🇷🇺🇺🇸 Strongmen: Mussolini to the Present](./books/strongmen.md)  
-- [🗳️🕊️🇺🇸 Democracy in America](./books/democracy-in-america.md)  
   
   
 ## [📺 Videos](./videos/index.md) (657)  

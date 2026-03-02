@@ -61,7 +61,8 @@ function precomputeGitDates(directory: string): Record<string, number> {
     let currentTimestamp = 0
     for (const line of output.split("\n")) {
       if (line.startsWith("COMMIT ")) {
-        currentTimestamp = parseInt(line.slice(7), 10)
+        const parsed = parseInt(line.slice(7), 10)
+        if (!isNaN(parsed)) currentTimestamp = parsed
       } else if (line.trim() && currentTimestamp) {
         const filePath = line.trim()
         if (!(filePath in dates)) {

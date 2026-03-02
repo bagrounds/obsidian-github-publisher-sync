@@ -37,9 +37,9 @@ jobs:
         uses: actions/cache@v4
         with:
           path: node_modules
-          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          key: v2-${{ runner.os }}-node20-${{ hashFiles('**/package-lock.json') }}
           restore-keys: |
-            ${{ runner.os }}-node-
+            v2-${{ runner.os }}-node20-
 
       - name: Cache OG Images
         uses: actions/cache@v4

@@ -195,7 +195,7 @@ async function* runWithConcurrency<T>(
   tasks: (() => Promise<T>)[],
   concurrency: number,
 ): AsyncGenerator<T> {
-  const results: { value: T; index: number }[] = []
+  const results: T[] = []
   let nextIndex = 0
   let resolveReady: (() => void) | null = null
 
@@ -206,7 +206,7 @@ async function* runWithConcurrency<T>(
     const index = nextIndex++
     const task = tasks[index]
     const promise = task().then((value) => {
-      results.push({ value, index })
+      results.push(value)
       running.delete(promise)
       if (resolveReady) {
         resolveReady()
@@ -233,7 +233,7 @@ async function* runWithConcurrency<T>(
     }
     while (results.length > 0) {
       const result = results.shift()!
-      yield result.value
+      yield result
       yielded++
     }
   }

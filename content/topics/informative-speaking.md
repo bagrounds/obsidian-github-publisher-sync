@@ -1,12 +1,12 @@
 ---
 share: true
 aliases:
-  - Informative Speaking
-title: Informative Speaking
+  - 📢🎓 Informative Speaking
+title: 📢🎓 Informative Speaking
 URL: https://bagrounds.org/topics/informative-speaking
 ---
 [Home](../index.md) > [Topics](./index.md) > [Knowledge](./a-hierarchical-view-of-human-knowledge.md) > [Social Sciences](./social-sciences.md) > [Communication Studies](./communication-studies.md) > [Public Speaking and Rhetoric](./public-speaking-and-rhetoric.md)  
-# Informative Speaking  
+# 📢🎓 Informative Speaking  
 ## 🤖 AI Summary  
 **🌟 High-Level Summary:**  
   

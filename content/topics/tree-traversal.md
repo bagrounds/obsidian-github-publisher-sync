@@ -1,11 +1,11 @@
 ---
 share: true
 aliases:
-  - Tree Traversal
-title: Tree Traversal
+  - 🌳➡️ Tree Traversal
+title: 🌳➡️ Tree Traversal
 ---
 [Home](../index.md) > [Topics](./index.md)  
-# Tree Traversal  
+# 🌳➡️ Tree Traversal  
 From Wikipedia: [Tree traversal](https://wikipedia.org/wiki/Tree_traversal)  
 - In-order, pre-order, and post-order are 3 common forms of depth-first tree traversal.  
 - While traversing a non-linear data structure (such as a tree) we have choices for which node to visit next.  

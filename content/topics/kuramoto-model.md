@@ -1,12 +1,12 @@
 ---
 share: true
 aliases:
-  - Kuramoto Model
-title: Kuramoto Model
+  - 🔄🎯 Kuramoto Model
+title: 🔄🎯 Kuramoto Model
 URL: https://bagrounds.org/topics/kuramoto-model
 ---
 [Home](../index.md) > [Topics](./index.md)  
-# Kuramoto Model  
+# 🔄🎯 Kuramoto Model  
 ## 🤖 AI Summary  
 Alright, buckle up, buttercup, it's time for the 🔨 Tool Report 🔨 on the fascinating Kuramoto model! 🤩  
   

@@ -1,12 +1,12 @@
 ---
 share: true
 aliases:
-  - Applied Arts
-title: Applied Arts
+  - 🎨🛠️ Applied Arts
+title: 🎨🛠️ Applied Arts
 URL: https://bagrounds.org/topics/applied-arts
 ---
 [Home](../index.md) > [Topics](./index.md) > [Knowledge](./a-hierarchical-view-of-human-knowledge.md) > [Arts](./arts.md)  
-# Applied Arts  
+# 🎨🛠️ Applied Arts  
 ## 🤖 AI Summary  
 **🎨 High-Level Summary:**  
   

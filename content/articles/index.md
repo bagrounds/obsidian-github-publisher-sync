@@ -5,7 +5,7 @@ aliases:
 title: 📄 Articles
 backlinks: false
 URL: https://bagrounds.org/articles
-updated: 2026-03-02T15:24:03-08:00
+updated: 2026-03-02T16:20:43-08:00
 ---
 [Home](../index.md)  
 # 📄 Articles (79)  
@@ -55,7 +55,7 @@ updated: 2026-03-02T15:24:03-08:00
 - [⚙️🛡️🐛 Making Reliable Distributed Systems in the Presence of Software Errors](./making-reliable-distributed-systems-in-the-presence-of-software-errors.md)  
 - [🪞🇺🇸💔 Mirror, Mirror 2024: A Portrait of the Failing U.S. Health System](./mirror-mirror-2024-a-portrait-of-the-failing-us-health-system.md)  
 - [🏛️🗞️🦊 More than 50 House Democrats demand answers after whistleblower report on DOGE](./more-than-50-house-democrats-demand-answers-after-whistleblower-report-on-doge.md)  
-- [Mouth And Throat Exercises to Help Stop Snoring and Improve OSA](./mouth-and-throat-exercises-to-help-stop-snoring-and-improve-osa.md)  
+- [😴👄🧘 Mouth And Throat Exercises to Help Stop Snoring and Improve OSA](./mouth-and-throat-exercises-to-help-stop-snoring-and-improve-osa.md)  
 - [🎶👶🧠🗣️ Musical intervention enhances infants’ neural processing of temporal structure in music and speech](./musical-intervention-enhances-infants-neural-processing-of-temporal-structure-in-music-and-speech.md)  
 - [🙋‍♂️🚩🚫 Musk’s inauguration salute is not the only apparent fascist signal from Trump’s administration](./musks-inauguration-salute-is-not-the-only-apparent-fascist-signal-from-trumps-administration.md)  
 - [📚🔥 Naval Academy removes nearly 400 books from library in new DEI purge ordered by Hegseth’s office](./naval-academy-removes-nearly-400-books-from-library-in-new-dei-purge-ordered-by-hegseths-office.md)  

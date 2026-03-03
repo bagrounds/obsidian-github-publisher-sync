@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-03-02T15:24:03-08:00
+updated: 2026-03-02T16:20:43-08:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -31,19 +31,20 @@ updated: 2026-03-02T15:24:03-08:00
   
   
 ## [📚 Books](./books/index.md) (950)  
+- [ℹ️🌱 The Informed Gardener](./books/the-informed-gardener.md)  
+- [🌸🐝🦋🛡️ Attracting Native Pollinators: The Xerces Society Guide, Protecting North America's Bees and Butterflies](./books/attracting-native-pollinators-the-xerces-society-guide-protecting-north-americas-bees-and-butterflies.md)  
+- [🗓️🌷 RHS Gardening Through the Year](./books/rhs-gardening-through-the-year.md)  
+- [☀️📖🌿 The New Sunset Western Garden Book: The Ultimate Gardening Guide](./books/the-new-sunset-western-garden-book-the-ultimate-gardening-guide.md)  
+- [🌱🟩⬆️ Square Foot Gardening, 4th Edition: The World’s Most Popular Growing Method to Harvest MORE Food from Less Space](./books/square-foot-gardening-4th-edition-the-worlds-most-popular-growing-method-to-harvest-more-food-from-less-space.md)  
+- [🪴🌱 RHS How to Garden When You're New to Gardening: The Basics for Absolute Beginners](./books/rhs-how-to-garden-when-youre-new-to-gardening-the-basics-for-beginners.md)  
 - [⌨️🤖 Prompt Engineering for LLMs: The Art and Science of Building Large Language Model-Based Applications](./books/prompt-engineering-for-llms-the-art-and-science-of-building-large-language-model-based-applications.md)  
 - [💻✍️ The Art of Prompt Engineering with ChatGPT: A Hands-On Guide](./books/the-art-of-prompt-engineering-with-chatgpt-a-hands-on-guide.md)  
 - [✨🤖🔗🐍 Generative AI with LangChain: A Hands On Guide to Crafting Scalable, Intelligent Systems and Advanced AI Agents with Python](./books/generative-ai-with-langchain-a-hands-on-guide-to-crafting-scalable-intelligent-systems-and-advanced-ai-agents-with-python.md)  
 - [🤖⚙️ AI Agents in Action](./books/ai-agents-in-action.md)  
-- [🤖💻 Vibe Coding: Building Production-Grade Software With GenAI, Chat, Agents, and Beyond](./books/vibe-coding-building-production-grade-software-with-genai-chat-agents-and-beyond.md)  
-- [🤖🏗️ AI Engineering: Building Applications with Foundation Models](./books/ai-engineering-building-applications-with-foundation-models.md)  
-- [🤖🧠⚙️💡 Building Agentic AI Systems: Create intelligent, autonomous AI agents that can reason, plan, and adapt](./books/building-agentic-ai-systems-create-intelligent-autonomous-ai-agents-that-can-reason-plan-and-adapt.md)  
-- [🤖⚙️ Agentic Artificial Intelligence: Harnessing AI Agents to Reinvent Business, Work and Life](./books/agentic-artificial-intelligence-harnessing-ai-agents-to-reinvent-business-work-and-life.md)  
-- [🤖⚙️ The Agentic AI Engineer's Handbook](./books/the-agentic-ai-engineers-handbook.md)  
-- [🫥🇺🇸😡💔 Strangers in Their Own Land: Anger and Mourning on the American Right](./books/strangers-in-their-own-land.md)  
   
   
 ## [📺 Videos](./videos/index.md) (660)  
+- [🐛🐌🐞🌿🏡🦠 Managing Pests & Diseases in Your Backyard: Aphids, Blight, and Slugs - Oh My! Workshop](./videos/managing-pests-diseases-in-your-backyard-aphids-blight-and-slugs-oh-my-workshop.md)  
 - [🤖🗣️🏛️⚔️📰 Full interview: Anthropic CEO responds to Trump order, Pentagon clash](./videos/full-interview-anthropic-ceo-responds-to-trump-order-pentagon-clash.md)  
 - [🏛️⚔️🤖 Why the Trump administration is clashing with AI-firm Anthropic](./videos/why-the-trump-administration-is-clashing-with-ai-firm-anthropic.md)  
 - [👧✨🧠🔢✋📈 My 10-Year-Old Vibe Codes. She Also Does Math by Hand. Why That's the Only Strategy That Works.](./videos/my-10-year-old-vibe-codes-she-also-does-math-by-hand-why-thats-the-only-strategy-that-works.md)  
@@ -53,23 +54,22 @@ updated: 2026-03-02T15:24:03-08:00
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./videos/12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
 - [🖼️🤔🛠️🤖 Context Engineering for Agents](./videos/context-engineering-for-agents.md)  
 - [👨‍💻➡️🤖🧩 Beyond the IDE: Toward Multi-Agent Orchestration](./videos/beyond-the-ide-toward-multi-agent-orchestration.md)  
-- [🤖💻📈⬇️2️⃣ The 5 Levels of AI Coding (Why Most of You Won't Make It Past Level 2)](./videos/the-5-levels-of-ai-coding-why-most-of-you-wont-make-it-past-level-2.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  
-- [🌿🐚 Growing Centenarian Rhubarb in the PNW](./topics/growing-rhubarb-pnw.md)  
-- [🤖🧭 Agentic Software Engineering](./topics/agentic-software-engineering.md)  
-- [🚀 CI-Driven Publishing](./topics/ci-driven-publishing.md)  
-- [💻🎨⚙️ ANSI escape codes](./topics/ansi-escape-codes.md)  
-- [🧩🔄🧠 Self-Organization](./topics/self-organization.md)  
+- [📄👔 My Resume](./topics/my-resume.md)  
+- [🐱💔 Feline GI Lymphoma](./topics/feline-gi-lymphoma.md)  
+- [🔢➕➕ 3 Sum](./topics/programming-problems/3-sum.md)  
+- [🔢➕ 2 Sum](./topics/programming-problems/2-sum.md)  
+- [🌳➡️ Tree Traversal](./topics/tree-traversal.md)  
   
   
 ## [📄  Articles](./articles/index.md) (79)  
+- [😴👄🧘 Mouth And Throat Exercises to Help Stop Snoring and Improve OSA](./articles/mouth-and-throat-exercises-to-help-stop-snoring-and-improve-osa.md)  
 - [🤖⚙️🧠 Writing about Agentic Engineering Patterns](./articles/writing-about-agentic-engineering-patterns.md)  
 - [🤖🛠️🧠📄 What Fred Brooks Can Teach Us About Writing Specs for AI](./articles/what-fred-brooks-can-teach-us-about-writing-specs-for-ai.md)  
 - [💻💰🤝👹🇺🇸 Tech moguls Altman, Bezos and Zuckerberg donate to Trump's inauguration fund](./articles/tech-moguls-altman-bezos-and-zuckerberg-donate-to-trumps-inauguration-fund.md)  
 - [🤖🧠📈🗣️🧰 Towards a science of scaling agent systems: When and why agent systems work](./articles/towards-a-science-of-scaling-agent-systems-when-and-why-agent-systems-work.md)  
-- [😴💰🏛️🤑👴🇸🇪 ‘We got lazy and complacent’: Swedish pensioners explain how abolishing the wealth tax changed their country](./articles/we-got-lazy-and-complacent-swedish-pensioners-explain-how-abolishing-the-wealth-tax-changed-their-country.md)  
   
   
 ## [🤖💬 Bot Chats](./bot-chats/index.md) (49)  
@@ -80,12 +80,12 @@ updated: 2026-03-02T15:24:03-08:00
 - [🗺️🗓️📋✅🔮 Planning](./bot-chats/planning.md)  
   
   
-## [💾 Software](./software/index.md) (30)  
+## [💾 Software](./software/index.md) (31)  
+- [☁️🛡️ Cloudflare Tunnel (cloudflared)](./software/cloudflare-tunnel.md)  
 - [💻🔓 OpenCode](./software/opencode.md)  
 - [🤖♊ Gemini](./software/gemini.md)  
 - [👽🦺 Zod](./software/zod.md)  
 - [💡🔧📏🔮〰️ Vensim](./software/vensim.md)  
-- [💻📱🛠️ Termux](./software/termux.md)  
   
   
 ## [👥 People](./people/index.md) (18)  

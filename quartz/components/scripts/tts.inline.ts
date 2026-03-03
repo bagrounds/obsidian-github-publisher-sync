@@ -6,8 +6,11 @@
  *  - Skip ±30 s (approximated via word-count chunking)
  *  - Playback speed 0.5×–2×
  *  - Seek bar with elapsed / total time estimates
+ *  - Sentence highlighting & auto-scroll
+ *  - Floating (fixed) player during playback
  *
  * Only reads the article content – no navigation, menus, or markup.
+ * Emojis are stripped so the synthesiser reads clean prose.
  */
 
 import {
@@ -20,28 +23,101 @@ import {
   sentenceIndexForTime,
   cleanText,
   SELECTORS_TO_REMOVE,
+  INLINE_SELECTORS_TO_REMOVE,
+  BLOCK_SELECTORS,
 } from "./tts.utils"
 
 // ---------------------------------------------------------------------------
-// Text extraction (DOM-dependent)
+// Block-aware text extraction with DOM element mapping
 // ---------------------------------------------------------------------------
 
+interface TextBlock {
+  element: Element
+  text: string
+  charStart: number
+  charEnd: number
+}
+
 /**
- * Extract readable text from the page article, stripping navigation, menus,
- * code blocks, and residual Markdown / HTML artefacts.
+ * Check whether a block element should be skipped because it (or an ancestor
+ * below the article root) matches a removal selector.
  */
-function extractArticleText(): string {
+function shouldSkipBlock(el: Element, article: Element): boolean {
+  let current: Element | null = el
+  while (current && current !== article) {
+    for (const sel of SELECTORS_TO_REMOVE) {
+      try {
+        if (current.matches(sel)) return true
+      } catch {
+        /* invalid selector – skip */
+      }
+    }
+    current = current.parentElement
+  }
+  return false
+}
+
+/**
+ * Walk the article's block-level text elements and build a parallel
+ * structure of cleaned text + DOM references.  Returns the concatenated
+ * full text and an array of TextBlock descriptors.
+ */
+function extractArticleBlocks(): { text: string; blocks: TextBlock[] } {
   const article = document.querySelector("article")
-  if (!article) return ""
+  if (!article) return { text: "", blocks: [] }
 
-  // Clone so we can remove unwanted nodes without mutating the DOM.
-  const clone = article.cloneNode(true) as HTMLElement
+  const blocks: TextBlock[] = []
+  const blockElements = article.querySelectorAll(BLOCK_SELECTORS)
+  let offset = 0
 
-  for (const sel of SELECTORS_TO_REMOVE) {
-    clone.querySelectorAll(sel).forEach((el) => el.remove())
+  for (const el of blockElements) {
+    if (shouldSkipBlock(el, article)) continue
+
+    // Clone to strip inline junk without mutating the real DOM
+    const clone = el.cloneNode(true) as HTMLElement
+    for (const sel of INLINE_SELECTORS_TO_REMOVE) {
+      clone.querySelectorAll(sel).forEach((e) => e.remove())
+    }
+
+    const text = cleanText(clone.textContent ?? "")
+    if (!text) continue
+
+    blocks.push({ element: el, text, charStart: offset, charEnd: offset + text.length })
+    offset += text.length + 1 // +1 for the joining space
   }
 
-  return cleanText(clone.textContent ?? "")
+  const fullText = blocks.map((b) => b.text).join(" ")
+  return { text: fullText, blocks }
+}
+
+/**
+ * Map each sentence index to the index of the TextBlock that contains
+ * the start of that sentence.
+ */
+function buildSentenceBlockMap(sentences: string[], fullText: string, blocks: TextBlock[]): number[] {
+  const map: number[] = []
+  let searchPos = 0
+  for (const sentence of sentences) {
+    const pos = fullText.indexOf(sentence, searchPos)
+    if (pos >= 0) {
+      let blockIdx = blocks.length > 0 ? blocks.length - 1 : 0
+      for (let i = 0; i < blocks.length; i++) {
+        if (pos >= blocks[i].charStart && pos < blocks[i].charEnd) {
+          blockIdx = i
+          break
+        }
+        if (pos < blocks[i].charStart) {
+          blockIdx = i
+          break
+        }
+      }
+      map.push(blockIdx)
+      searchPos = pos + sentence.length
+    } else {
+      map.push(map.length > 0 ? map[map.length - 1] : 0)
+    }
+  }
+  return map
 }
 
 // ---------------------------------------------------------------------------
@@ -58,7 +134,8 @@ document.addEventListener("nav", () => {
 
   const synth = window.speechSynthesis
 
-  // DOM handles --
+  // DOM handles
+  const container = document.getElementById("tts-container")
   const playBtn = document.getElementById("tts-play") as HTMLButtonElement | null
   const playIcon = document.getElementById("tts-play-icon") as HTMLElement | null
   const pauseIcon = document.getElementById("tts-pause-icon") as HTMLElement | null
@@ -69,25 +146,30 @@ document.addEventListener("nav", () => {
   const currentTimeEl = document.getElementById("tts-current-time")
   const totalTimeEl = document.getElementById("tts-total-time")
 
-  if (!playBtn) return // component not on page
+  if (!playBtn || !container) return
 
   // ---- State ----
   let sentences: string[] = []
-  let wordCounts: number[] = [] // per-sentence word counts
-  let cumulativeWords: number[] = [] // running total of words up to (and including) each sentence
+  let wordCounts: number[] = []
+  let cumulativeWords: number[] = []
   let totalWords = 0
-  let currentIdx = 0 // index of the sentence currently being spoken
+  let currentIdx = 0
   let playing = false
   let rate = 1
-  let totalDuration = 0 // estimated total seconds at current rate
+  let totalDuration = 0
   let tickTimer: ReturnType<typeof setInterval> | null = null
-  let sentenceStartTime = 0 // wall-clock time when current sentence started
+  let sentenceStartTime = 0
+  let blocks: TextBlock[] = []
+  let sentenceBlockMap: number[] = []
+  let prevHighlightEl: Element | null = null
 
   // ---- Helpers ----
 
   function prepare() {
-    const text = extractArticleText()
-    sentences = splitIntoSentences(text)
+    const result = extractArticleBlocks()
+    blocks = result.blocks
+    sentences = splitIntoSentences(result.text)
+    sentenceBlockMap = buildSentenceBlockMap(sentences, result.text, blocks)
     wordCounts = sentences.map(wordCount)
     cumulativeWords = buildCumulativeWords(wordCounts)
     totalWords = cumulativeWords.length > 0 ? cumulativeWords[cumulativeWords.length - 1] : 0
@@ -115,6 +197,53 @@ document.addEventListener("nav", () => {
     if (currentTimeEl) currentTimeEl.textContent = formatTime(elapsed)
     if (seekBar) seekBar.value = String(totalDuration > 0 ? (elapsed / totalDuration) * 100 : 0)
   }
+
+  // ---- Highlight & scroll ----
+
+  function highlightCurrentSentence() {
+    // Remove previous highlight
+    if (prevHighlightEl) {
+      prevHighlightEl.classList.remove("tts-highlight")
+      prevHighlightEl = null
+    }
+
+    if (currentIdx >= sentenceBlockMap.length) return
+    const blockIdx = sentenceBlockMap[currentIdx]
+    if (blockIdx >= blocks.length) return
+
+    const el = blocks[blockIdx].element
+    el.classList.add("tts-highlight")
+    prevHighlightEl = el
+
+    // Auto-scroll to keep the highlighted element visible
+    el.scrollIntoView({ behavior: "smooth", block: "center" })
+  }
+
+  function clearHighlight() {
+    if (prevHighlightEl) {
+      prevHighlightEl.classList.remove("tts-highlight")
+      prevHighlightEl = null
+    }
+  }
+
+  // ---- Floating player ----
+
+  function floatPlayer() {
+    container!.classList.add("tts-fixed")
+    // Account for FixedFooter if present
+    const fixedFooter = document.querySelector(".fixed-cta-footer") as HTMLElement | null
+    if (fixedFooter) {
+      const footerHeight = fixedFooter.getBoundingClientRect().height
+      container!.style.bottom = `${footerHeight}px`
+    }
+  }
+
+  function unfloatPlayer() {
+    container!.classList.remove("tts-fixed")
+    container!.style.bottom = ""
+  }
+
+  // ---- Play / Pause UI ----
 
   function showPlay() {
     if (playIcon) playIcon.style.display = ""
@@ -145,7 +274,7 @@ document.addEventListener("nav", () => {
   // ---- Core speech logic ----
 
   function speakFrom(idx: number) {
-    synth.cancel() // stop anything in progress
+    synth.cancel()
     if (idx < 0) idx = 0
     if (idx >= sentences.length) {
       stop()
@@ -155,7 +284,9 @@ document.addEventListener("nav", () => {
     currentIdx = idx
     playing = true
     showPause()
+    floatPlayer()
     startTick()
+    highlightCurrentSentence()
     speakCurrent()
   }
 
@@ -170,18 +301,18 @@ document.addEventListener("nav", () => {
     utterance.onend = () => {
       currentIdx++
       if (currentIdx < sentences.length && playing) {
+        highlightCurrentSentence()
         speakCurrent()
       } else if (currentIdx >= sentences.length) {
         stop()
       }
     }
     utterance.onerror = (e) => {
-      // "interrupted" and "canceled" are expected when we call synth.cancel()
       if (e.error !== "interrupted" && e.error !== "canceled") {
         console.warn("[TTS] utterance error", e.error)
-        // Try to continue with the next sentence
         currentIdx++
         if (currentIdx < sentences.length && playing) {
+          highlightCurrentSentence()
           speakCurrent()
         } else {
           stop()
@@ -197,12 +328,8 @@ document.addEventListener("nav", () => {
     playing = false
     stopTick()
     showPlay()
-    updateUI()
-  }
-
-  function reset() {
-    stop()
-    currentIdx = 0
+    clearHighlight()
+    unfloatPlayer()
     updateUI()
   }
 
@@ -210,7 +337,7 @@ document.addEventListener("nav", () => {
 
   function onPlay() {
     if (sentences.length === 0) prepare()
-    if (sentences.length === 0) return // nothing to read
+    if (sentences.length === 0) return
 
     if (playing) {
       // Pause — using cancel() instead of pause() for more reliable behavior across utterances
@@ -218,9 +345,9 @@ document.addEventListener("nav", () => {
       playing = false
       stopTick()
       showPlay()
+      // Keep highlight and float while paused so user sees where they are
       updateUI()
     } else {
-      // Resume / start
       if (currentIdx >= sentences.length) currentIdx = 0
       speakFrom(currentIdx)
     }
@@ -249,6 +376,7 @@ document.addEventListener("nav", () => {
       speakFrom(idx)
     } else {
       currentIdx = idx
+      highlightCurrentSentence()
       updateUI()
     }
   }
@@ -266,7 +394,6 @@ document.addEventListener("nav", () => {
     if (totalTimeEl) totalTimeEl.textContent = formatTime(totalDuration)
 
     if (playing) {
-      // Restart current sentence at new speed
       speakFrom(currentIdx)
     } else {
       updateUI()

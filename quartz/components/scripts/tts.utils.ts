@@ -10,14 +10,31 @@ export const AVG_WPM = 150
 export const WPS = AVG_WPM / 60
 
 /**
+ * Strip emoji characters from text, including variation selectors and
+ * zero-width joiners used in compound emoji sequences.
+ */
+export function stripEmojis(text: string): string {
+  return text
+    .replace(/\p{Extended_Pictographic}/gu, "")
+    .replace(/[\u{FE00}-\u{FE0F}\u{200D}]/gu, "")
+}
+
+/**
  * Split text into sentences (rough heuristic). Keeps the delimiter
- * attached so speech sounds natural.
+ * attached so speech sounds natural. Captures trailing text that
+ * lacks sentence-ending punctuation.
  */
 export function splitIntoSentences(text: string): string[] {
   if (!text) return []
   const raw = text.match(/[^.!?]*[.!?]+[\s]*/g)
   if (!raw) return text.length > 0 ? [text] : []
-  return raw.map((s) => s.trim()).filter((s) => s.length > 0)
+  const matched = raw.join("")
+  const trailing = text.slice(matched.length).trim()
+  const result = raw.map((s) => s.trim()).filter((s) => s.length > 0)
+  if (trailing.length > 0) {
+    result.push(trailing)
+  }
+  return result
 }
 
 /** Count words in a string. */
@@ -71,17 +88,17 @@ export function sentenceIndexForTime(
 }
 
 /**
- * Clean raw text by collapsing whitespace and stripping residual
- * Markdown / markup characters.
+ * Clean raw text by collapsing whitespace, stripping residual
+ * Markdown / markup characters, and removing emoji.
  */
 export function cleanText(text: string): string {
-  return text
+  return stripEmojis(text)
     .replace(/\s+/g, " ")
     .replace(/[#*_`~\[\](){}<>|]/g, "")
     .trim()
 }
 
-/** Selectors for elements that should be removed before text extraction. */
+/** Selectors for block-level containers that should be skipped entirely. */
 export const SELECTORS_TO_REMOVE = [
   "nav",
   "header",
@@ -93,7 +110,6 @@ export const SELECTORS_TO_REMOVE = [
   ".explorer",
   ".search",
   "pre",
-  "code",
   "script",
   "style",
   "svg",
@@ -102,4 +118,19 @@ export const SELECTORS_TO_REMOVE = [
   ".callout-title-inner",
   ".external-icon",
   "button",
+  ".tts-container",
 ]
+
+/** Inline selectors to remove within block elements during text extraction. */
+export const INLINE_SELECTORS_TO_REMOVE = [
+  "code",
+  "svg",
+  ".katex",
+  ".mermaid",
+  "button",
+  ".external-icon",
+]
+
+/** Block-level selectors for text content elements. */
+export const BLOCK_SELECTORS =
+  "p, li, h1, h2, h3, h4, h5, h6, td, th, dd, dt, figcaption, summary"

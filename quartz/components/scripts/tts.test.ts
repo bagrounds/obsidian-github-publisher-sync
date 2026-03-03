@@ -3,6 +3,7 @@ import assert from "node:assert"
 import {
   AVG_WPM,
   WPS,
+  stripEmojis,
   splitIntoSentences,
   wordCount,
   estimateDuration,
@@ -11,6 +12,8 @@ import {
   sentenceIndexForTime,
   cleanText,
   SELECTORS_TO_REMOVE,
+  INLINE_SELECTORS_TO_REMOVE,
+  BLOCK_SELECTORS,
 } from "./tts.utils"
 
 // ---------------------------------------------------------------------------
@@ -33,6 +36,67 @@ describe("TTS constants", () => {
       assert.strictEqual(typeof sel, "string")
     }
   })
+
+  test("INLINE_SELECTORS_TO_REMOVE is a non-empty array of strings", () => {
+    assert.ok(Array.isArray(INLINE_SELECTORS_TO_REMOVE))
+    assert.ok(INLINE_SELECTORS_TO_REMOVE.length > 0)
+  })
+
+  test("BLOCK_SELECTORS is a non-empty string", () => {
+    assert.strictEqual(typeof BLOCK_SELECTORS, "string")
+    assert.ok(BLOCK_SELECTORS.length > 0)
+  })
+})
+
+// ---------------------------------------------------------------------------
+// stripEmojis
+// ---------------------------------------------------------------------------
+describe("stripEmojis", () => {
+  test("returns empty string for empty input", () => {
+    assert.strictEqual(stripEmojis(""), "")
+  })
+
+  test("strips common emoji", () => {
+    assert.strictEqual(stripEmojis("Hello 🌍 World"), "Hello  World")
+  })
+
+  test("strips multiple emoji", () => {
+    assert.strictEqual(stripEmojis("🏡 Home 📚 Books 🎤 Talks"), " Home  Books  Talks")
+  })
+
+  test("strips compound emoji (ZWJ sequences)", () => {
+    const result = stripEmojis("Family: 👨‍👩‍👧‍👦 here")
+    assert.ok(!result.includes("👨"))
+    assert.ok(!result.includes("👩"))
+    assert.ok(result.includes("Family"))
+    assert.ok(result.includes("here"))
+  })
+
+  test("preserves normal text", () => {
+    assert.strictEqual(stripEmojis("Hello World"), "Hello World")
+  })
+
+  test("preserves numbers and punctuation", () => {
+    assert.strictEqual(stripEmojis("Price: $9.99! (50% off)"), "Price: $9.99! (50% off)")
+  })
+
+  test("preserves accented characters", () => {
+    assert.strictEqual(stripEmojis("café résumé naïve"), "café résumé naïve")
+  })
+
+  test("handles emoji-only string", () => {
+    const result = stripEmojis("🎉🎊🎈")
+    assert.strictEqual(result.trim(), "")
+  })
+
+  test("handles text with emoji variation selectors", () => {
+    // Variation selector U+FE0F forces emoji presentation
+    const result = stripEmojis("star\u2B50\uFE0F here")
+    assert.ok(!result.includes("\u2B50"))
+    assert.ok(!result.includes("\uFE0F"))
+    assert.ok(result.includes("star"))
+    assert.ok(result.includes("here"))
+  })
 })
 
 // ---------------------------------------------------------------------------
@@ -44,7 +108,6 @@ describe("splitIntoSentences", () => {
   })
 
   test("returns empty array for undefined-ish falsy input", () => {
-    // The function accepts a string, but "" is falsy
     assert.deepStrictEqual(splitIntoSentences(""), [])
   })
 
@@ -85,7 +148,6 @@ describe("splitIntoSentences", () => {
 
   test("handles multiple periods in a row (e.g. ellipsis)", () => {
     const result = splitIntoSentences("Wait... What happened? I see.")
-    // The ellipsis may split oddly, but we should get something reasonable
     assert.ok(result.length >= 2)
   })
 
@@ -103,9 +165,20 @@ describe("splitIntoSentences", () => {
   })
 
   test("handles abbreviations (Mr. Mrs.) without perfect splitting", () => {
-    // This is a known limitation — just verify it doesn't crash
     const result = splitIntoSentences("Mr. Smith went home. He was tired.")
     assert.ok(result.length >= 1)
+  })
+
+  test("captures trailing text without punctuation", () => {
+    const result = splitIntoSentences("First sentence. Trailing text")
+    assert.strictEqual(result.length, 2)
+    assert.ok(result[0].includes("First sentence"))
+    assert.strictEqual(result[1], "Trailing text")
+  })
+
+  test("does not duplicate when text ends with punctuation", () => {
+    const result = splitIntoSentences("One. Two. Three.")
+    assert.strictEqual(result.length, 3)
   })
 })
 
@@ -149,7 +222,6 @@ describe("estimateDuration", () => {
   test("returns positive duration for positive words", () => {
     const dur = estimateDuration(150, 1)
     assert.ok(dur > 0)
-    // 150 words at 150 WPM = 60 seconds
     assert.strictEqual(dur, 60)
   })
 
@@ -169,7 +241,7 @@ describe("estimateDuration", () => {
 
   test("handles fractional word counts", () => {
     const dur = estimateDuration(75, 1)
-    assert.strictEqual(dur, 30) // half of 60s
+    assert.strictEqual(dur, 30)
   })
 })
 
@@ -251,12 +323,6 @@ describe("buildCumulativeWords", () => {
 // sentenceIndexForTime
 // ---------------------------------------------------------------------------
 describe("sentenceIndexForTime", () => {
-  // Setup: 4 sentences with 10 words each = 40 total words
-  // At rate 1, WPS=2.5, so 40 words = 16 seconds total
-  // Sentence 0: words 0-10, cumulative [10]
-  // Sentence 1: words 10-20, cumulative [10, 20]
-  // Sentence 2: words 20-30, cumulative [10, 20, 30]
-  // Sentence 3: words 30-40, cumulative [10, 20, 30, 40]
   const cumWords = [10, 20, 30, 40]
 
   test("returns 0 for time 0", () => {
@@ -264,27 +330,21 @@ describe("sentenceIndexForTime", () => {
   })
 
   test("returns correct index for middle of text", () => {
-    // 8 seconds at rate 1 = 8 * 2.5 = 20 target words
-    // cumWords[1] = 20, so index 1
     const idx = sentenceIndexForTime(8, cumWords, 1)
     assert.strictEqual(idx, 1)
   })
 
   test("returns last index for time at end", () => {
-    // 16 seconds = 40 target words, cumWords[3] = 40, so index 3
     const idx = sentenceIndexForTime(16, cumWords, 1)
     assert.strictEqual(idx, 3)
   })
 
   test("returns last valid index for time beyond total", () => {
-    // 20 seconds > total 16s: should clamp to last valid index
     const idx = sentenceIndexForTime(20, cumWords, 1)
-    // The function returns min(length, last matching + 1), clamped by caller
     assert.ok(idx >= cumWords.length - 1)
   })
 
   test("accounts for playback rate", () => {
-    // At rate 2, 4 seconds = 4 * 2.5 * 2 = 20 target words
     const idx = sentenceIndexForTime(4, cumWords, 2)
     assert.strictEqual(idx, 1)
   })
@@ -364,6 +424,24 @@ describe("cleanText", () => {
     assert.ok(result.includes("Bold"))
     assert.ok(result.includes("italic"))
   })
+
+  test("strips emoji from text", () => {
+    const result = cleanText("🏡 Home 📚 Books")
+    assert.ok(!result.includes("🏡"))
+    assert.ok(!result.includes("📚"))
+    assert.ok(result.includes("Home"))
+    assert.ok(result.includes("Books"))
+  })
+
+  test("strips emoji mixed with markdown", () => {
+    const result = cleanText("## 🌌 Topics **🎤 Talks**")
+    assert.ok(!result.includes("🌌"))
+    assert.ok(!result.includes("🎤"))
+    assert.ok(!result.includes("#"))
+    assert.ok(!result.includes("*"))
+    assert.ok(result.includes("Topics"))
+    assert.ok(result.includes("Talks"))
+  })
 })
 
 // ---------------------------------------------------------------------------
@@ -388,11 +466,9 @@ describe("TTS pipeline integration", () => {
     const timeStr = formatTime(duration)
     assert.ok(timeStr.includes(":"))
 
-    // Seeking to 0 should give first sentence
     const idx0 = sentenceIndexForTime(0, cumulative, 1)
     assert.strictEqual(idx0, 0)
 
-    // Seeking to end should give last sentence
     const idxEnd = sentenceIndexForTime(duration, cumulative, 1)
     assert.ok(idxEnd >= sentences.length - 1)
   })
@@ -402,7 +478,6 @@ describe("TTS pipeline integration", () => {
     const cleaned = cleanText(dirty)
     const sentences = splitIntoSentences(cleaned)
     assert.ok(sentences.length >= 3)
-    // No markdown chars in any sentence
     for (const s of sentences) {
       assert.ok(!s.includes("#"))
       assert.ok(!s.includes("**"))
@@ -411,22 +486,37 @@ describe("TTS pipeline integration", () => {
   })
 
   test("speed changes correctly scale duration", () => {
-    const words = 300 // 2 minutes at 1x
+    const words = 300
     const dur1x = estimateDuration(words, 1)
     const dur2x = estimateDuration(words, 2)
     const dur05x = estimateDuration(words, 0.5)
 
-    assert.strictEqual(dur1x, 120) // 300 words / 2.5 WPS = 120s
-    assert.strictEqual(dur2x, 60) // half the time
-    assert.strictEqual(dur05x, 240) // double the time
+    assert.strictEqual(dur1x, 120)
+    assert.strictEqual(dur2x, 60)
+    assert.strictEqual(dur05x, 240)
   })
 
   test("seek position is consistent across speed changes", () => {
     const cumWords = [50, 100, 150, 200]
-    // At rate 1, halfway (100 words) = 100/2.5 = 40s
-    // At rate 2, halfway (100 words) = 100/5 = 20s
     const idx1x = sentenceIndexForTime(40, cumWords, 1)
     const idx2x = sentenceIndexForTime(20, cumWords, 2)
-    assert.strictEqual(idx1x, idx2x) // same sentence
+    assert.strictEqual(idx1x, idx2x)
+  })
+
+  test("emoji-heavy text is cleaned and split correctly", () => {
+    const input = "🏡 Home sweet home. 📚 Read all the books! 🎤 Give a talk?"
+    const cleaned = cleanText(input)
+    assert.ok(!cleaned.includes("🏡"))
+    assert.ok(!cleaned.includes("📚"))
+    assert.ok(!cleaned.includes("🎤"))
+    const sentences = splitIntoSentences(cleaned)
+    assert.ok(sentences.length >= 3)
+  })
+
+  test("trailing text without punctuation is captured in pipeline", () => {
+    const text = "First part. Second part without ending"
+    const sentences = splitIntoSentences(text)
+    assert.strictEqual(sentences.length, 2)
+    assert.ok(sentences[1].includes("Second part without ending"))
   })
 })

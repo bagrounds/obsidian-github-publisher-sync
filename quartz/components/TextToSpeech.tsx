@@ -6,6 +6,12 @@ import ttsStyle from "./styles/tts.scss"
 const TextToSpeech: QuartzComponent = ({ displayClass }: QuartzComponentProps) => {
   return (
     <div class={`tts-wrapper ${displayClass ?? ""}`} id="tts-wrapper">
+      {/* Toggle tab — sits above the player panel, right-aligned */}
+      <button class="tts-tab" id="tts-toggle" aria-label="Toggle player" title="Toggle player">
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+          <path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3A4.5 4.5 0 0 0 14 8.5v7a4.47 4.47 0 0 0 2.5-3.5z" />
+        </svg>
+      </button>
       {/* Main player panel */}
       <div class="tts-container" id="tts-container">
         <div class="tts-controls">
@@ -76,12 +82,6 @@ const TextToSpeech: QuartzComponent = ({ displayClass }: QuartzComponentProps) =
           </span>
         </div>
       </div>
-      {/* Toggle tab — rightmost edge, always visible */}
-      <button class="tts-tab" id="tts-toggle" aria-label="Toggle player" title="Toggle player">
-        <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
-          <path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3A4.5 4.5 0 0 0 14 8.5v7a4.47 4.47 0 0 0 2.5-3.5z" />
-        </svg>
-      </button>
     </div>
   )
 }

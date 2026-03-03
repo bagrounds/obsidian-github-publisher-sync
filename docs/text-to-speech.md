@@ -16,10 +16,10 @@ A browser-native Text-to-Speech player embedded on every page, powered by the
 
 ### Always-Fixed Collapsible Player
 The player is permanently fixed at the bottom-right corner of the viewport.
-A small **🔊 toggle tab** sits to the left of the panel. Tapping the tab slides
-the player panel in from the right; tapping again hides it. When collapsed,
-only the tab remains visible against the right edge. If a `FixedFooter` element
-is present on the page, the player positions itself above it automatically.
+A small **🔊 toggle tab** sits above the player panel. Tapping the tab slides
+the player panel down out of view; tapping again brings it back. When collapsed,
+only the tab remains visible at the bottom-right corner. If a `FixedFooter`
+element is present on the page, the player positions itself above it automatically.
 
 ### Text Extraction
 The player reads only the `<article>` content. The following are stripped:

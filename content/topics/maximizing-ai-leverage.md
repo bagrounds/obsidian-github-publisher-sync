@@ -1,11 +1,11 @@
 ---
 share: true
 aliases:
-  - Maximizing AI Leverage
-title: Maximizing AI Leverage
+  - 🤖📈 Maximizing AI Leverage
+title: 🤖📈 Maximizing AI Leverage
 ---
 [Home](../index.md) > [Topics](./index.md)  
-# Maximizing AI Leverage  
+# 🤖📈 Maximizing AI Leverage  
 ## 🖼️ Background  
 - [LLMs](./large-language-models.md) are all the rage now.  
 - I think it's been a year or two since I first used a chatbot to write a release email for me at work.  

@@ -1,11 +1,11 @@
 ---
 share: true
 aliases:
-  - Rules
-title: Rules
+  - 📋⚖️ Rules
+title: 📋⚖️ Rules
 ---
 [Home](../index.md) > [Topics](./index.md)  
-# Rules  
+# 📋⚖️ Rules  
 ## Why do we make rules?  
 - Life is complicated and full of decisions to make.  
 - When should I eat, sleep, work, play, speak, act, plan?  

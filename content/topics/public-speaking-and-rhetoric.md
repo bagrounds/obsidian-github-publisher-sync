@@ -1,12 +1,12 @@
 ---
 share: true
 aliases:
-  - Public Speaking and Rhetoric
-title: Public Speaking and Rhetoric
+  - 🎤🗣️ Public Speaking and Rhetoric
+title: 🎤🗣️ Public Speaking and Rhetoric
 URL: https://bagrounds.org/topics/public-speaking-and-rhetoric
 ---
 [Home](../index.md) > [Topics](./index.md) > [Knowledge](./a-hierarchical-view-of-human-knowledge.md) > [Social Sciences](./social-sciences.md) > [Communication Studies](./communication-studies.md)  
-# Public Speaking and Rhetoric  
+# 🎤🗣️ Public Speaking and Rhetoric  
 ## 🤖 AI Summary  
 **🗣️ High-Level Summary:**  
   

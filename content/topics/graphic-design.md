@@ -1,12 +1,12 @@
 ---
 share: true
 aliases:
-  - Graphic Design
-title: Graphic Design
+  - 🎨✏️ Graphic Design
+title: 🎨✏️ Graphic Design
 URL: https://bagrounds.org/topics/graphic-design
 ---
 [Home](../index.md) > [Topics](./index.md) > [Knowledge](./a-hierarchical-view-of-human-knowledge.md) > [Arts](./arts.md) > [Applied Arts](./applied-arts.md)  
-# Graphic Design  
+# 🎨✏️ Graphic Design  
 ## 🤖 AI Summary  
 **🎨 High-Level Summary:**  
   

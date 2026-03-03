@@ -1,12 +1,12 @@
 ---
 share: true
 aliases:
-  - Communication Studies
-title: Communication Studies
+  - 🗣️📢 Communication Studies
+title: 🗣️📢 Communication Studies
 URL: https://bagrounds.org/topics/communication-studies
 ---
 [Home](../index.md) > [Topics](./index.md) > [Knowledge](./a-hierarchical-view-of-human-knowledge.md) > [Social Sciences](./social-sciences.md)  
-# Communication Studies  
+# 🗣️📢 Communication Studies  
 ## 🤖 AI Summary  
 **🗣️ High-Level Summary:**  
   

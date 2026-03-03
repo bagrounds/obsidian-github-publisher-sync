@@ -1,12 +1,12 @@
 ---
 share: true
 aliases:
-  - Literary Arts
-title: Literary Arts
+  - 📚✍️ Literary Arts
+title: 📚✍️ Literary Arts
 URL: https://bagrounds.org/topics/literary-arts
 ---
 [Home](../index.md) > [Topics](./index.md) > [Knowledge](./a-hierarchical-view-of-human-knowledge.md) > [Arts](./arts.md)  
-# Literary Arts  
+# 📚✍️ Literary Arts  
 ## 🤖 AI Summary  
 **📚 High-Level Summary: The Literary Arts Adventure! 🚀✨**  
   

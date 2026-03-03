@@ -1,12 +1,12 @@
 ---
 share: true
 aliases:
-  - Arts
-title: Arts
+  - 🎨🖼️ Arts
+title: 🎨🖼️ Arts
 URL: https://bagrounds.org/topics/arts
 ---
 [Home](../index.md) > [Topics](./index.md) > [Knowledge](./a-hierarchical-view-of-human-knowledge.md)  
-# Arts  
+# 🎨🖼️ Arts  
 ## 🤖 AI Summary  
 **🎨 High-Level Summary:**  
   

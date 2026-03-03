@@ -1,12 +1,12 @@
 ---
 share: true
 aliases:
-  - Books Removed From Naval Academy Library
-title: Books Removed From Naval Academy Library
+  - 📚⚓ Books Removed From Naval Academy Library
+title: 📚⚓ Books Removed From Naval Academy Library
 URL: https://bagrounds.org/topics/books-removed-from-naval-academy-library
 ---
 [Home](../index.md) > [Topics](./index.md)  
-# Books Removed From Naval Academy Library  
+# 📚⚓ Books Removed From Naval Academy Library  
 - https://www.navy.mil/Press-Office/Press-Releases/display-pressreleases/Article/4146516/list-of-books-removed-from-usna-library  
   
 ## Page 1 of 19  

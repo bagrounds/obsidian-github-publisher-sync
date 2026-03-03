@@ -1,11 +1,11 @@
 ---
 share: true
 aliases:
-  - A Method For Estimating Work
-title: A Method For Estimating Work
+  - ⏱️📊 A Method For Estimating Work
+title: ⏱️📊 A Method For Estimating Work
 ---
 [Home](../index.md) > [Topics](./index.md)  
-# A Method For Estimating Work  
+# ⏱️📊 A Method For Estimating Work  
 ## Method  
 For each task, record a P5 and a P95 estimate for how much time you'd expect to pass before the work is done if it were yours to complete.  
   

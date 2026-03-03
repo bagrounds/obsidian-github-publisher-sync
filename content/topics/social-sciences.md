@@ -1,12 +1,12 @@
 ---
 share: true
 aliases:
-  - Social Sciences
-title: Social Sciences
+  - 🏛️📊 Social Sciences
+title: 🏛️📊 Social Sciences
 URL: https://bagrounds.org/topics/social-sciences
 ---
 [Home](../index.md) > [Topics](./index.md) > [Knowledge](./a-hierarchical-view-of-human-knowledge.md)  
-# Social Sciences  
+# 🏛️📊 Social Sciences  
 ## 🤖 AI Summary  
 **High-Level Summary:**  
 Social Sciences are the fields of scholarly study that examine society and the relationships among individuals within those societies. 🤝 They aim to understand how people interact, behave, and organize themselves, using empirical methods and critical analysis. The goal is to gain insights into social structures, cultural norms, human behavior, and the dynamics of societies to improve our understanding of the world and potentially solve societal problems. 💡 Social Sciences are vital for shaping policies, fostering social awareness, and promoting a more just and equitable world. 🌈  

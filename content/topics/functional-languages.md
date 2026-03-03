@@ -1,12 +1,12 @@
 ---
 share: true
 aliases:
-  - Functional Languages
-title: Functional Languages
+  - 🧮💻 Functional Languages
+title: 🧮💻 Functional Languages
 URL: https://bagrounds.org/topics/functional-languages
 ---
 [Home](../index.md) > [Topics](./index.md)  
-# Functional Languages  
+# 🧮💻 Functional Languages  
 ## 🤖 AI Summary  
 **High-Level Summary:**  
 Functional programming is a paradigm built around the concept of **functions as first-class citizens**. 🧑‍🏫 It emphasizes immutability (data that cannot be changed after creation), pure functions (functions with no side effects, always producing the same output for the same input), and declarative programming (focusing on *what* to compute rather than *how*). 🌟 The goals are to enhance code clarity, reduce bugs, improve maintainability, and facilitate parallel processing. 💻 Functional languages promote a mathematical approach to programming, making it easier to reason about code and verify its correctness. ✅ They are particularly useful for complex computations, data transformations, and concurrent systems. 🧠  

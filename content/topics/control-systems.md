@@ -1,12 +1,12 @@
 ---
 share: true
 aliases:
-  - Control Systems
-title: Control Systems
+  - ⚙️🎛️ Control Systems
+title: ⚙️🎛️ Control Systems
 URL: https://bagrounds.org/topics/control-systems
 ---
 [Home](../index.md) > [Topics](./index.md) > [Knowledge](./a-hierarchical-view-of-human-knowledge.md) > [Engineering](./engineering.md) > [Electrical Engineering](./electrical-engineering.md)  
-# Control Systems  
+# ⚙️🎛️ Control Systems  
 ## 🤖 AI Summary  
 **High-Level Summary:**  
   

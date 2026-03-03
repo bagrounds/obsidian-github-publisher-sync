@@ -1,11 +1,11 @@
 ---
 share: true
 aliases:
-  - Property Based Testing
-title: Property Based Testing
+  - 🎲🧪 Property Based Testing
+title: 🎲🧪 Property Based Testing
 ---
 [Home](../index.md) > [Topics](./index.md)  
-# 🎉 Property Based Testing: A Comprehensive Overview  
+# 🎲🧪 Property Based Testing: A Comprehensive Overview  
 _Note: this article was AI generated and lightly edited, mostly to fix and remove broken links_  
   
 ## 🤔 Introduction to Property Based Testing  

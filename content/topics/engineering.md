@@ -1,12 +1,12 @@
 ---
 share: true
 aliases:
-  - Engineering
-title: Engineering
+  - 🏗️🔧 Engineering
+title: 🏗️🔧 Engineering
 URL: https://bagrounds.org/topics/engineering
 ---
 [Home](../index.md) > [Topics](./index.md) > [Knowledge](./a-hierarchical-view-of-human-knowledge.md)  
-# Engineering  
+# 🏗️🔧 Engineering  
 ## 🤖 AI Summary  
 **High-Level Summary:**  
 Engineering is the application of scientific and mathematical principles to design, build, and maintain structures, machines, devices, systems, and processes.1 It's about problem-solving, innovation, and creating solutions that improve our lives and address societal needs. Engineers are the creators and implementers of the built world, using their knowledge to transform ideas into reality. 🏗️🔧💡  

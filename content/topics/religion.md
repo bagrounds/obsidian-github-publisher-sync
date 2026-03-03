@@ -1,12 +1,12 @@
 ---
 share: true
 aliases:
-  - Religion
-title: Religion
+  - 🕊️⛪ Religion
+title: 🕊️⛪ Religion
 URL: https://bagrounds.org/topics/religion
 ---
 [Home](../index.md) > [Topics](./index.md) > [Knowledge](./a-hierarchical-view-of-human-knowledge.md)  
-# Religion  
+# 🕊️⛪ Religion  
 ## 🤖 AI Summary  
 **🕊️ High-Level Summary:**  
   

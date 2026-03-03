@@ -100,16 +100,23 @@ function buildSentenceBlockMap(sentences: string[], fullText: string, blocks: Te
   for (const sentence of sentences) {
     const pos = fullText.indexOf(sentence, searchPos)
     if (pos >= 0) {
-      let blockIdx = blocks.length > 0 ? blocks.length - 1 : 0
+      let blockIdx = 0
+      let found = false
       for (let i = 0; i < blocks.length; i++) {
         if (pos >= blocks[i].charStart && pos < blocks[i].charEnd) {
           blockIdx = i
+          found = true
           break
         }
         if (pos < blocks[i].charStart) {
           blockIdx = i
+          found = true
           break
         }
+      }
+      // If not found inside any block, default to the last block
+      if (!found && blocks.length > 0) {
+        blockIdx = blocks.length - 1
       }
       map.push(blockIdx)
       searchPos = pos + sentence.length
@@ -345,7 +352,7 @@ document.addEventListener("nav", () => {
       playing = false
       stopTick()
       showPlay()
-      // Keep highlight and float while paused so user sees where they are
+      // Keep highlight and float while paused so the user sees where they are
       updateUI()
     } else {
       if (currentIdx >= sentences.length) currentIdx = 0

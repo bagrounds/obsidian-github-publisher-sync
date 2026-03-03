@@ -1,12 +1,12 @@
 ---
 share: true
 aliases:
-  - Electrical Engineering
-title: Electrical Engineering
+  - ⚡🔌 Electrical Engineering
+title: ⚡🔌 Electrical Engineering
 URL: https://bagrounds.org/topics/electrical-engineering
 ---
 [Home](../index.md) > [Topics](./index.md) > [Knowledge](./a-hierarchical-view-of-human-knowledge.md) > [Engineering](./engineering.md)  
-# Electrical Engineering  
+# ⚡🔌 Electrical Engineering  
 ## 🤖 AI Summary  
 **High-Level Summary:**  
 Electrical Engineering is the branch of engineering concerned with the study, design, and application of electrical systems, devices, and equipment. It encompasses a vast range of technologies, from power generation and distribution to electronics, telecommunications, and control systems. The core principles revolve around understanding and manipulating electrical phenomena to create innovative solutions that improve our lives. The goal is to design, develop, and maintain electrical systems that are efficient, reliable, safe, and sustainable. Essentially, Electrical Engineers power our modern world! 💡🔌  

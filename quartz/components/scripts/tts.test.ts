@@ -556,3 +556,209 @@ describe("TTS pipeline integration", () => {
     assert.ok(sentences[1].includes("Second part without ending"))
   })
 })
+
+// ---------------------------------------------------------------------------
+// Property-based tests
+//
+// These use randomised inputs to check invariants that must hold for *any*
+// input, not just hand-picked examples.
+// ---------------------------------------------------------------------------
+
+/** Simple PRNG-style random string generators for property tests. */
+function randomAlphaNum(len: number): string {
+  const chars = "abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+  let out = ""
+  for (let i = 0; i < len; i++) out += chars[Math.floor(Math.random() * chars.length)]
+  return out
+}
+
+function randomSentences(count: number): string {
+  const delimiters = [".", "!", "?"]
+  return Array.from({ length: count }, () => {
+    const words = Math.floor(Math.random() * 10) + 1
+    const text = Array.from({ length: words }, () => randomAlphaNum(Math.floor(Math.random() * 8) + 1)).join(" ")
+    return text + delimiters[Math.floor(Math.random() * delimiters.length)]
+  }).join(" ")
+}
+
+const PROPERTY_ITERATIONS = 50
+
+describe("Property-based: stripEmojis", () => {
+  test("never increases string length", () => {
+    for (let i = 0; i < PROPERTY_ITERATIONS; i++) {
+      const input = randomAlphaNum(20) + "🎉🇺🇸👋🏽" + randomAlphaNum(20)
+      assert.ok(stripEmojis(input).length <= input.length)
+    }
+  })
+
+  test("ASCII-only input is returned unchanged", () => {
+    for (let i = 0; i < PROPERTY_ITERATIONS; i++) {
+      const input = randomAlphaNum(Math.floor(Math.random() * 100))
+      assert.strictEqual(stripEmojis(input), input)
+    }
+  })
+
+  test("output never contains Extended_Pictographic codepoints", () => {
+    const emojiSamples = ["😀", "🌍", "🏡", "📚", "🎤", "❤️", "🇫🇷", "👨‍👩‍👧"]
+    for (let i = 0; i < PROPERTY_ITERATIONS; i++) {
+      const emoji = emojiSamples[Math.floor(Math.random() * emojiSamples.length)]
+      const input = randomAlphaNum(10) + emoji + randomAlphaNum(10)
+      const output = stripEmojis(input)
+      assert.ok(!/\p{Extended_Pictographic}/u.test(output), `Found emoji in output: "${output}"`)
+    }
+  })
+})
+
+describe("Property-based: splitIntoSentences", () => {
+  test("joining split sentences reconstructs the original words", () => {
+    for (let i = 0; i < PROPERTY_ITERATIONS; i++) {
+      const count = Math.floor(Math.random() * 5) + 1
+      const input = randomSentences(count)
+      const sentences = splitIntoSentences(input)
+      const rejoined = sentences.join(" ")
+      // Every word from the original must appear in the rejoined result
+      for (const word of input.split(/\s+/).filter(Boolean)) {
+        const stripped = word.replace(/[.!?]/g, "")
+        if (stripped) {
+          assert.ok(rejoined.includes(stripped), `Lost word "${stripped}" from "${input}"`)
+        }
+      }
+    }
+  })
+
+  test("never returns empty strings", () => {
+    for (let i = 0; i < PROPERTY_ITERATIONS; i++) {
+      const input = randomSentences(Math.floor(Math.random() * 5) + 1)
+      const sentences = splitIntoSentences(input)
+      for (const s of sentences) {
+        assert.ok(s.length > 0, `Empty string in result for input "${input}"`)
+      }
+    }
+  })
+})
+
+describe("Property-based: wordCount", () => {
+  test("non-negative for any input", () => {
+    for (let i = 0; i < PROPERTY_ITERATIONS; i++) {
+      const input = randomAlphaNum(Math.floor(Math.random() * 100))
+      assert.ok(wordCount(input) >= 0)
+    }
+  })
+
+  test("single word gives count 1", () => {
+    for (let i = 0; i < PROPERTY_ITERATIONS; i++) {
+      const word = randomAlphaNum(Math.floor(Math.random() * 10) + 1).replace(/\s/g, "x")
+      if (word.trim()) {
+        assert.strictEqual(wordCount(word), 1)
+      }
+    }
+  })
+})
+
+describe("Property-based: estimateDuration + formatTime", () => {
+  test("duration is non-negative for non-negative words and positive rate", () => {
+    for (let i = 0; i < PROPERTY_ITERATIONS; i++) {
+      const words = Math.floor(Math.random() * 1000)
+      const rate = 0.5 + Math.random() * 1.5
+      const dur = estimateDuration(words, rate)
+      assert.ok(dur >= 0, `Negative duration for words=${words}, rate=${rate}`)
+    }
+  })
+
+  test("formatTime always matches m:ss pattern", () => {
+    for (let i = 0; i < PROPERTY_ITERATIONS; i++) {
+      const sec = Math.random() * 7200
+      const result = formatTime(sec)
+      assert.ok(/^\d+:\d{2}$/.test(result), `Bad format: "${result}" for sec=${sec}`)
+    }
+  })
+
+  test("doubling rate halves duration", () => {
+    for (let i = 0; i < PROPERTY_ITERATIONS; i++) {
+      const words = Math.floor(Math.random() * 500) + 1
+      const rate = 0.5 + Math.random() * 1.5
+      const dur1 = estimateDuration(words, rate)
+      const dur2 = estimateDuration(words, rate * 2)
+      assert.ok(Math.abs(dur1 / 2 - dur2) < 0.001, `Half invariant failed: ${dur1} / 2 ≠ ${dur2}`)
+    }
+  })
+})
+
+describe("Property-based: buildCumulativeWords", () => {
+  test("output length equals input length", () => {
+    for (let i = 0; i < PROPERTY_ITERATIONS; i++) {
+      const len = Math.floor(Math.random() * 20)
+      const input = Array.from({ length: len }, () => Math.floor(Math.random() * 50))
+      assert.strictEqual(buildCumulativeWords(input).length, len)
+    }
+  })
+
+  test("values are monotonically non-decreasing", () => {
+    for (let i = 0; i < PROPERTY_ITERATIONS; i++) {
+      const input = Array.from({ length: Math.floor(Math.random() * 20) + 1 }, () =>
+        Math.floor(Math.random() * 50),
+      )
+      const cum = buildCumulativeWords(input)
+      for (let j = 1; j < cum.length; j++) {
+        assert.ok(cum[j] >= cum[j - 1], `Not monotonic at index ${j}: ${cum[j - 1]} > ${cum[j]}`)
+      }
+    }
+  })
+
+  test("last element equals sum of inputs", () => {
+    for (let i = 0; i < PROPERTY_ITERATIONS; i++) {
+      const input = Array.from({ length: Math.floor(Math.random() * 20) + 1 }, () =>
+        Math.floor(Math.random() * 50),
+      )
+      const cum = buildCumulativeWords(input)
+      const total = input.reduce((a, b) => a + b, 0)
+      assert.strictEqual(cum[cum.length - 1], total)
+    }
+  })
+})
+
+describe("Property-based: sentenceIndexForTime", () => {
+  test("always returns a valid index for non-empty cumulative arrays", () => {
+    for (let i = 0; i < PROPERTY_ITERATIONS; i++) {
+      const len = Math.floor(Math.random() * 10) + 1
+      const counts = Array.from({ length: len }, () => Math.floor(Math.random() * 50) + 1)
+      const cum = buildCumulativeWords(counts)
+      const totalDur = estimateDuration(cum[cum.length - 1], 1)
+      const targetSec = Math.random() * totalDur * 1.5 // sometimes beyond end
+      const idx = sentenceIndexForTime(targetSec, cum, 1)
+      assert.ok(idx >= 0, `Negative index for targetSec=${targetSec}`)
+      assert.ok(idx < cum.length, `Index ${idx} out of bounds (len=${cum.length})`)
+    }
+  })
+
+  test("higher time never gives a lower index", () => {
+    for (let i = 0; i < PROPERTY_ITERATIONS; i++) {
+      const len = Math.floor(Math.random() * 10) + 1
+      const counts = Array.from({ length: len }, () => Math.floor(Math.random() * 50) + 1)
+      const cum = buildCumulativeWords(counts)
+      const t1 = Math.random() * 60
+      const t2 = t1 + Math.random() * 60
+      const idx1 = sentenceIndexForTime(t1, cum, 1)
+      const idx2 = sentenceIndexForTime(t2, cum, 1)
+      assert.ok(idx2 >= idx1, `Monotonicity violated: idx(${t1})=${idx1} > idx(${t2})=${idx2}`)
+    }
+  })
+})
+
+describe("Property-based: cleanText", () => {
+  test("output length never exceeds input length", () => {
+    for (let i = 0; i < PROPERTY_ITERATIONS; i++) {
+      const input = randomAlphaNum(Math.floor(Math.random() * 100))
+      assert.ok(cleanText(input).length <= input.length)
+    }
+  })
+
+  test("output never contains markdown characters", () => {
+    const mdChars = /[#*_`~\[\](){}<>|]/
+    for (let i = 0; i < PROPERTY_ITERATIONS; i++) {
+      const input = "## " + randomAlphaNum(30) + " **bold** _italic_ `code`"
+      const output = cleanText(input)
+      assert.ok(!mdChars.test(output), `Markdown chars in output: "${output}"`)
+    }
+  })
+})

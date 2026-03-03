@@ -1,0 +1,173 @@
+/* Outer wrapper — fixed at the bottom-right, stacked vertically */
+.tts-wrapper {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  transition: transform 0.3s ease;
+}
+
+/* When collapsed, slide the panel off-screen below but keep the tab visible */
+.tts-wrapper.tts-collapsed .tts-container {
+  transform: translateY(100%);
+  pointer-events: none;
+  opacity: 0;
+  max-height: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+/* Toggle tab — sits above the player panel, right-aligned */
+.tts-tab {
+  background: var(--lightgray);
+  border: 1px solid var(--gray);
+  border-bottom: none;
+  border-radius: 6px 6px 0 0;
+  padding: 0.35rem 0.5rem;
+  cursor: pointer;
+  color: var(--darkgray);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: background-color 0.15s, color 0.15s;
+
+  &:hover {
+    background: var(--gray);
+    color: var(--dark);
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--secondary);
+    outline-offset: 2px;
+  }
+}
+
+/* Main player panel */
+.tts-container {
+  background: var(--light);
+  padding: 0.5rem 0.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.15);
+  border-left: 1px solid var(--gray);
+  border-top: 1px solid var(--gray);
+  border-radius: 8px 0 0 0;
+  transition: transform 0.3s ease, opacity 0.3s ease, max-height 0.3s ease;
+  min-width: 280px;
+}
+
+.tts-controls {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.tts-btn {
+  background: none;
+  border: 1px solid var(--gray);
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.35rem;
+  color: var(--darkgray);
+  transition: background-color 0.15s, color 0.15s;
+
+  &:hover {
+    background: var(--gray);
+    color: var(--dark);
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--secondary);
+    outline-offset: 2px;
+  }
+}
+
+.tts-play-btn {
+  width: 38px;
+  height: 38px;
+  padding: 0;
+}
+
+.tts-speed {
+  background: var(--light);
+  border: 1px solid var(--gray);
+  border-radius: 4px;
+  padding: 0.2rem 0.35rem;
+  font-size: 0.8rem;
+  color: var(--darkgray);
+  cursor: pointer;
+  font-family: inherit;
+
+  &:focus-visible {
+    outline: 2px solid var(--secondary);
+    outline-offset: 2px;
+  }
+}
+
+.tts-seek-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.tts-time {
+  font-size: 0.75rem;
+  color: var(--darkgray);
+  min-width: 2.5em;
+  text-align: center;
+  font-variant-numeric: tabular-nums;
+}
+
+.tts-seek {
+  flex: 1;
+  height: 4px;
+  -webkit-appearance: none;
+  appearance: none;
+  background: var(--gray);
+  border-radius: 2px;
+  outline: none;
+  cursor: pointer;
+
+  &::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: var(--secondary);
+    cursor: pointer;
+    border: none;
+  }
+
+  &::-moz-range-thumb {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: var(--secondary);
+    cursor: pointer;
+    border: none;
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--secondary);
+    outline-offset: 2px;
+  }
+}
+
+/* Sentence highlight applied to the block element being read */
+.tts-highlight {
+  background-color: var(--highlight);
+  border-radius: 4px;
+  transition: background-color 0.25s ease;
+  scroll-margin-top: 4rem;
+  scroll-margin-bottom: 6rem;
+}

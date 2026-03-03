@@ -10,13 +10,17 @@ export const AVG_WPM = 150
 export const WPS = AVG_WPM / 60
 
 /**
- * Strip emoji characters from text, including variation selectors and
- * zero-width joiners used in compound emoji sequences.
+ * Strip emoji characters from text, including skin-tone modifiers,
+ * variation selectors, zero-width joiners, regional indicators (flags),
+ * and tag characters used in compound emoji sequences.
  */
 export function stripEmojis(text: string): string {
   return text
     .replace(/\p{Extended_Pictographic}/gu, "")
-    .replace(/[\u{FE00}-\u{FE0F}\u{200D}]/gu, "")
+    .replace(
+      /[\u{FE00}-\u{FE0F}\u{200D}\u{1F3FB}-\u{1F3FF}\u{1F1E0}-\u{1F1FF}\u{E0020}-\u{E007F}\u{20E3}]/gu,
+      "",
+    )
 }
 
 /**

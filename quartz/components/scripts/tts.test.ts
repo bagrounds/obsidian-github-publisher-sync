@@ -97,6 +97,42 @@ describe("stripEmojis", () => {
     assert.ok(result.includes("star"))
     assert.ok(result.includes("here"))
   })
+
+  test("strips skin tone modifiers", () => {
+    // 👋🏽 = U+1F44B U+1F3FD (wave + medium skin tone)
+    const result = stripEmojis("Hello 👋🏽 there")
+    assert.ok(!result.includes("👋"))
+    assert.ok(!result.includes("\u{1F3FD}"))
+    assert.ok(result.includes("Hello"))
+    assert.ok(result.includes("there"))
+  })
+
+  test("strips all skin tone variants", () => {
+    // Light, medium-light, medium, medium-dark, dark
+    const tones = "\u{1F3FB}\u{1F3FC}\u{1F3FD}\u{1F3FE}\u{1F3FF}"
+    const result = stripEmojis(`before ${tones} after`)
+    assert.ok(!result.includes("\u{1F3FB}"))
+    assert.ok(!result.includes("\u{1F3FF}"))
+    assert.ok(result.includes("before"))
+    assert.ok(result.includes("after"))
+  })
+
+  test("strips flag emoji (regional indicators)", () => {
+    // 🇺🇸 = U+1F1FA U+1F1F8
+    const result = stripEmojis("USA 🇺🇸 flag")
+    assert.ok(!result.includes("\u{1F1FA}"))
+    assert.ok(!result.includes("\u{1F1F8}"))
+    assert.ok(result.includes("USA"))
+    assert.ok(result.includes("flag"))
+  })
+
+  test("strips keycap emoji", () => {
+    // Keycap: 1️⃣ = 0031 FE0F 20E3
+    const result = stripEmojis("press 1\uFE0F\u20E3 now")
+    assert.ok(!result.includes("\u20E3"))
+    assert.ok(result.includes("press"))
+    assert.ok(result.includes("now"))
+  })
 })
 
 // ---------------------------------------------------------------------------

@@ -7,7 +7,7 @@
  *  - Playback speed 0.5×–2×
  *  - Seek bar with elapsed / total time estimates
  *  - Sentence highlighting & auto-scroll
- *  - Floating (fixed) player during playback
+ *  - Always-fixed player with collapsible toggle
  *
  * Only reads the article content – no navigation, menus, or markup.
  * Emojis are stripped so the synthesiser reads clean prose.
@@ -61,6 +61,9 @@ function shouldSkipBlock(el: Element, article: Element): boolean {
  * Walk the article's block-level text elements and build a parallel
  * structure of cleaned text + DOM references.  Returns the concatenated
  * full text and an array of TextBlock descriptors.
+ *
+ * Skips parent block elements that contain nested block children to avoid
+ * reading the same content twice (e.g. <li> containing <p>).
  */
 function extractArticleBlocks(): { text: string; blocks: TextBlock[] } {
   const article = document.querySelector("article")
@@ -72,6 +75,10 @@ function extractArticleBlocks(): { text: string; blocks: TextBlock[] } {
 
   for (const el of blockElements) {
     if (shouldSkipBlock(el, article)) continue
+
+    // Skip parent blocks that contain nested block children to avoid
+    // reading the same content twice (e.g. <li> wrapping a <p>).
+    if (el.querySelector(BLOCK_SELECTORS)) continue
 
     // Clone to strip inline junk without mutating the real DOM
     const clone = el.cloneNode(true) as HTMLElement
@@ -94,7 +101,11 @@ function extractArticleBlocks(): { text: string; blocks: TextBlock[] } {
  * Map each sentence index to the index of the TextBlock that contains
  * the start of that sentence.
  */
-function buildSentenceBlockMap(sentences: string[], fullText: string, blocks: TextBlock[]): number[] {
+function buildSentenceBlockMap(
+  sentences: string[],
+  fullText: string,
+  blocks: TextBlock[],
+): number[] {
   const map: number[] = []
   let searchPos = 0
   for (const sentence of sentences) {
@@ -134,14 +145,15 @@ function buildSentenceBlockMap(sentences: string[], fullText: string, blocks: Te
 document.addEventListener("nav", () => {
   // Bail out if the browser doesn't support speech synthesis.
   if (!("speechSynthesis" in window)) {
-    const container = document.getElementById("tts-container")
-    if (container) container.style.display = "none"
+    const wrapper = document.getElementById("tts-wrapper")
+    if (wrapper) wrapper.style.display = "none"
     return
   }
 
   const synth = window.speechSynthesis
 
   // DOM handles
+  const wrapper = document.getElementById("tts-wrapper")
   const container = document.getElementById("tts-container")
   const playBtn = document.getElementById("tts-play") as HTMLButtonElement | null
   const playIcon = document.getElementById("tts-play-icon") as HTMLElement | null
@@ -152,8 +164,9 @@ document.addEventListener("nav", () => {
   const seekBar = document.getElementById("tts-seek") as HTMLInputElement | null
   const currentTimeEl = document.getElementById("tts-current-time")
   const totalTimeEl = document.getElementById("tts-total-time")
+  const toggleBtn = document.getElementById("tts-toggle") as HTMLButtonElement | null
 
-  if (!playBtn || !container) return
+  if (!playBtn || !container || !wrapper) return
 
   // ---- State ----
   let sentences: string[] = []
@@ -162,13 +175,33 @@ document.addEventListener("nav", () => {
   let totalWords = 0
   let currentIdx = 0
   let playing = false
-  let rate = 1
+  // Read speed from the selector (persists across SPA navigations)
+  let rate = speedSel ? Number(speedSel.value) || 1 : 1
   let totalDuration = 0
   let tickTimer: ReturnType<typeof setInterval> | null = null
   let sentenceStartTime = 0
   let blocks: TextBlock[] = []
   let sentenceBlockMap: number[] = []
   let prevHighlightEl: Element | null = null
+
+  // ---- Toggle collapse/expand ----
+
+  function onToggle() {
+    wrapper!.classList.toggle("tts-collapsed")
+  }
+
+  // Position player above FixedFooter if present
+  function adjustForFooter() {
+    const fixedFooter = document.querySelector(".fixed-cta-footer") as HTMLElement | null
+    if (fixedFooter) {
+      const footerHeight = fixedFooter.getBoundingClientRect().height
+      wrapper!.style.bottom = `${footerHeight}px`
+    } else {
+      wrapper!.style.bottom = ""
+    }
+  }
+
+  adjustForFooter()
 
   // ---- Helpers ----
 
@@ -233,23 +266,6 @@ document.addEventListener("nav", () => {
     }
   }
 
-  // ---- Floating player ----
-
-  function floatPlayer() {
-    container!.classList.add("tts-fixed")
-    // Account for FixedFooter if present
-    const fixedFooter = document.querySelector(".fixed-cta-footer") as HTMLElement | null
-    if (fixedFooter) {
-      const footerHeight = fixedFooter.getBoundingClientRect().height
-      container!.style.bottom = `${footerHeight}px`
-    }
-  }
-
-  function unfloatPlayer() {
-    container!.classList.remove("tts-fixed")
-    container!.style.bottom = ""
-  }
-
   // ---- Play / Pause UI ----
 
   function showPlay() {
@@ -291,7 +307,6 @@ document.addEventListener("nav", () => {
     currentIdx = idx
     playing = true
     showPause()
-    floatPlayer()
     startTick()
     highlightCurrentSentence()
     speakCurrent()
@@ -336,7 +351,6 @@ document.addEventListener("nav", () => {
     stopTick()
     showPlay()
     clearHighlight()
-    unfloatPlayer()
     updateUI()
   }
 
@@ -347,12 +361,12 @@ document.addEventListener("nav", () => {
     if (sentences.length === 0) return
 
     if (playing) {
-      // Pause — using cancel() instead of pause() for more reliable behavior across utterances
+      // Pause — using cancel() for reliable cross-utterance behaviour
       synth.cancel()
       playing = false
       stopTick()
       showPlay()
-      // Keep highlight and float while paused so the user sees where they are
+      // Keep highlight while paused so the user sees where they are
       updateUI()
     } else {
       if (currentIdx >= sentences.length) currentIdx = 0
@@ -400,11 +414,9 @@ document.addEventListener("nav", () => {
     totalDuration = estimateDuration(totalWords, rate)
     if (totalTimeEl) totalTimeEl.textContent = formatTime(totalDuration)
 
-    if (playing) {
-      speakFrom(currentIdx)
-    } else {
-      updateUI()
-    }
+    // Don't restart the current sentence — let it finish at the old rate.
+    // The new rate will apply to the next utterance automatically.
+    updateUI()
   }
 
   // ---- Bind events ----
@@ -413,6 +425,7 @@ document.addEventListener("nav", () => {
   forwardBtn?.addEventListener("click", onForward)
   seekBar?.addEventListener("input", onSeek)
   speedSel?.addEventListener("change", onSpeedChange)
+  toggleBtn?.addEventListener("click", onToggle)
 
   // ---- Cleanup on SPA navigation ----
   window.addCleanup(() => {
@@ -422,6 +435,7 @@ document.addEventListener("nav", () => {
     forwardBtn?.removeEventListener("click", onForward)
     seekBar?.removeEventListener("input", onSeek)
     speedSel?.removeEventListener("change", onSpeedChange)
+    toggleBtn?.removeEventListener("click", onToggle)
   })
 
   // Initial prepare so the total time is shown

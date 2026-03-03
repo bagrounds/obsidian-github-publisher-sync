@@ -1,11 +1,11 @@
 ---
 share: true
 aliases:
-  - iNaturalist
-title: iNaturalist
+  - 🔭🌿 iNaturalist
+title: 🔭🌿 iNaturalist
 ---
 [Home](../index.md) > [Topics](./index.md)  
-# Inaturalist  
+# 🔭🌿 iNaturalist  
 ## 🔗 Links  
 - https://www.inaturalist.org  
 - https://github.com/inaturalist/inaturalist  

@@ -1,11 +1,11 @@
----  
-share: true  
-title: 2 Sum  
-aliases:  
-  - 2 Sum  
----  
+---
+share: true
+title: 🔢➕ 2 Sum
+aliases:
+  - 🔢➕ 2 Sum
+---
 [Home](../../index.md) > [Topics](../index.md) > [Programming Problems](./index.md)  
-# 2 Sum  
+# 🔢➕ 2 Sum  
 ## Problem Statement  
 Given an array of integers, return 2 integers that sum to zero if possible.  
   

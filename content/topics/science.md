@@ -1,12 +1,12 @@
 ---
 share: true
 aliases:
-  - Science
-title: Science
+  - 🧪🔬🔭 Science
+title: 🧪🔬🔭 Science
 URL: https://bagrounds.org/topics/science
 ---
 [Home](../index.md) > [Topics](./index.md) > [Knowledge](./a-hierarchical-view-of-human-knowledge.md)  
-# Science  
+# 🧪🔬🔭 Science  
 ## 🤖 AI Summary  
 **Science** 🧪🔬🔭  
 * **High-Level Summary:**  

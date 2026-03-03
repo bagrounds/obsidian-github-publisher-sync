@@ -564,11 +564,12 @@ describe("TTS pipeline integration", () => {
 // input, not just hand-picked examples.
 // ---------------------------------------------------------------------------
 
+const ALPHANUMERIC_CHARS = "abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+
 /** Simple PRNG-style random string generators for property tests. */
 function randomAlphaNum(len: number): string {
-  const chars = "abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
   let out = ""
-  for (let i = 0; i < len; i++) out += chars[Math.floor(Math.random() * chars.length)]
+  for (let i = 0; i < len; i++) out += ALPHANUMERIC_CHARS[Math.floor(Math.random() * ALPHANUMERIC_CHARS.length)]
   return out
 }
 
@@ -581,6 +582,7 @@ function randomSentences(count: number): string {
   }).join(" ")
 }
 
+// 50 iterations balances meaningful coverage with fast execution (~300 ms total).
 const PROPERTY_ITERATIONS = 50
 
 describe("Property-based: stripEmojis", () => {

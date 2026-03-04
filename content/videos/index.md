@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-03-03T18:53:10-08:00
+updated: 2026-03-03T18:57:20-08:00
 ---
 [Home](../index.md)  
-# 📺 Videos (664)  
+# 📺 Videos (665)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
 - [❓💪🔬 12 Questions About Creatine with Stephen Cornish, PhD](./12-questions-about-creatine-w-stephen-cornish-phd.md)  
@@ -453,6 +453,7 @@ updated: 2026-03-03T18:53:10-08:00
 - [🇺🇸🔄👑😬 Tamara Keith and Amy Walter on Trump flirting with the idea of the 3rd term](./tamara-keith-and-amy-walter-on-trump-flirting-with-the-idea-of-the-3rd-term.md)  
 - [👨‍💼🇺🇸📉🗣️ Tamara Keith and Amy Walter on Trump losing support over his immigration crackdown](./tamara-keith-and-amy-walter-on-trump-losing-support-over-his-immigration-crackdown.md)  
 - [👩‍💼🗣️🇺🇸 Tamara Keith and Amy Walter on what to watch in Tuesday's elections](./tamara-keith-and-amy-walter-on-what-to-watch-in-tuesdays-elections.md)  
+- [🎤✨🗣️ TED's secret to great public speaking | Chris Anderson | TED](./teds-secret-to-great-public-speaking-chris-anderson-ted.md)  
 - [💩🍄👶♻️🗑️ Texas startup sells plastic-eating fungi diapers to tackle landfill waste | REUTERS](./texas-startup-sells-plastic-eating-fungi-diapers-to-tackle-landfill-waste-reuters.md)  
 - [💯🥇📚🗓️✨ The 10 Best Books of 2025](./the-10-best-books-of-2025.md)  
 - [⏱️🧠🐘 The 10 Minute memory method](./the-10-minute-memory-method.md)  

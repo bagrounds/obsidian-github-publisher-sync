@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-03-03T18:53:10-08:00
+updated: 2026-03-03T18:57:20-08:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -43,7 +43,8 @@ updated: 2026-03-03T18:53:10-08:00
 - [🤖⚙️ AI Agents in Action](./books/ai-agents-in-action.md)  
   
   
-## [📺 Videos](./videos/index.md) (664)  
+## [📺 Videos](./videos/index.md) (665)  
+- [🎤✨🗣️ TED's secret to great public speaking | Chris Anderson | TED](./videos/teds-secret-to-great-public-speaking-chris-anderson-ted.md)  
 - [💰➡️🌍📉 Lecture 03: Externalities in Theory & Practice](./videos/lecture-03-externalities-in-theory-practice.md)  
 - [💰📉🌎 Lecture 02: Externalities in Theory](./videos/lecture-02-externalities-in-theory.md)  
 - [🏛️💰❓ Lecture 01: Why Study Public Finance?](./videos/lecture-01-why-study-public-finance.md)  
@@ -53,7 +54,6 @@ updated: 2026-03-03T18:53:10-08:00
 - [🏛️⚔️🤖 Why the Trump administration is clashing with AI-firm Anthropic](./videos/why-the-trump-administration-is-clashing-with-ai-firm-anthropic.md)  
 - [👧✨🧠🔢✋📈 My 10-Year-Old Vibe Codes. She Also Does Math by Hand. Why That's the Only Strategy That Works.](./videos/my-10-year-old-vibe-codes-she-also-does-math-by-hand-why-thats-the-only-strategy-that-works.md)  
 - [✨💻💀🤖 Steve Yegge on productive vibe coding, the death of the IDE, babysitting a fleet of AI coding agents](./videos/steve-yegge-on-productive-vibe-coding-the-death-of-the-ide-babysitting-a-fleet-of-ai-coding-agents.md)  
-- [🤖🧠⚙️👩‍💻 AI Engineering with Chip Huyen](./videos/ai-engineering-with-chip-huyen.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  

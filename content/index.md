@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-03-03T17:37:58-08:00
+updated: 2026-03-03T18:14:34-08:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -30,7 +30,7 @@ updated: 2026-03-03T17:37:58-08:00
 - [🧮 Calculator](./tools/calculator.md)  
   
   
-## [📚 Books](./books/index.md) (950)  
+## [📚 Books](./books/index.md) (949)  
 - [ℹ️🌱 The Informed Gardener](./books/the-informed-gardener.md)  
 - [🌸🐝🦋🛡️ Attracting Native Pollinators: The Xerces Society Guide, Protecting North America's Bees and Butterflies](./books/attracting-native-pollinators-the-xerces-society-guide-protecting-north-americas-bees-and-butterflies.md)  
 - [🗓️🌷 RHS Gardening Through the Year](./books/rhs-gardening-through-the-year.md)  
@@ -43,7 +43,8 @@ updated: 2026-03-03T17:37:58-08:00
 - [🤖⚙️ AI Agents in Action](./books/ai-agents-in-action.md)  
   
   
-## [📺 Videos](./videos/index.md) (661)  
+## [📺 Videos](./videos/index.md) (662)  
+- [🏛️💰❓ Lecture 01: Why Study Public Finance?](./videos/lecture-01-why-study-public-finance.md)  
 - [💰🏛️📈 Lecture 22: Wealth Taxation](./videos/lecture-22-wealth-taxation.md)  
 - [🐛🐌🐞🌿🏡🦠 Managing Pests & Diseases in Your Backyard: Aphids, Blight, and Slugs - Oh My! Workshop](./videos/managing-pests-diseases-in-your-backyard-aphids-blight-and-slugs-oh-my-workshop.md)  
 - [🤖🗣️🏛️⚔️📰 Full interview: Anthropic CEO responds to Trump order, Pentagon clash](./videos/full-interview-anthropic-ceo-responds-to-trump-order-pentagon-clash.md)  
@@ -53,7 +54,6 @@ updated: 2026-03-03T17:37:58-08:00
 - [🤖🧠⚙️👩‍💻 AI Engineering with Chip Huyen](./videos/ai-engineering-with-chip-huyen.md)  
 - [🧠🛠️🕸️🚫🙅‍♂️💼 No Vibes Allowed: Solving Hard Problems in Complex Codebases – Dex Horthy, HumanLayer](./videos/no-vibes-allowed-solving-hard-problems-in-complex-codebases-dex-horthy-humanlayer.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./videos/12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
-- [🖼️🤔🛠️🤖 Context Engineering for Agents](./videos/context-engineering-for-agents.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  

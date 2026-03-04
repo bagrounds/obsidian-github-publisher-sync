@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-03-03T18:57:20-08:00
+updated: 2026-03-04T13:23:45-08:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -13,7 +13,8 @@ updated: 2026-03-03T18:57:20-08:00
 ❔ What do 🫵 _you_ 🤔 think?  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (474)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (475)  
+- [2026-03-04](./reflections/2026-03-04.md)  
 - [2026-03-03](./reflections/2026-03-03.md)  
 - [2026-03-02 | 🤖 Agentic 📖 Fugitive ☁️ Tunnel 🌿 Rhubarb 😴 Snoring 📚🎤💻📰🌌](./reflections/2026-03-02.md)  
 - [2026-03-01 | 🕵️ Fugitive 🌐 Network 🚀 Build 🐦 Twitter 🤖 Agent 📚](./reflections/2026-03-01.md)  
@@ -23,7 +24,6 @@ updated: 2026-03-03T18:57:20-08:00
 - [2026-02-25 | 🌐 Network 🗓️ Almanack 📚](./reflections/2026-02-25.md)  
 - [2026-02-24 | 🌐 Network 🤖📚](./reflections/2026-02-24.md)  
 - [2026-02-23 | 🌐 Network 💰 Google 🧠 Harvard 📈 Stocks 📚📺](./reflections/2026-02-23.md)  
-- [2026-02-22 | 🚪 Exit 🌐 Network 🧠💊 Dopamine 📚📺](./reflections/2026-02-22.md)  
   
   
 ## [🧰 Tools](./tools/index.md) (1)  
@@ -64,12 +64,12 @@ updated: 2026-03-03T18:57:20-08:00
 - [🌳➡️ Tree Traversal](./topics/tree-traversal.md)  
   
   
-## [📄  Articles](./articles/index.md) (79)  
+## [📄  Articles](./articles/index.md) (80)  
+- [🤖⚙️🛠️ Agentic Engineering Patterns](./articles/agentic-engineering-patterns.md)  
 - [😴👄🧘 Mouth And Throat Exercises to Help Stop Snoring and Improve OSA](./articles/mouth-and-throat-exercises-to-help-stop-snoring-and-improve-osa.md)  
 - [🤖⚙️🧠 Writing about Agentic Engineering Patterns](./articles/writing-about-agentic-engineering-patterns.md)  
 - [🤖🛠️🧠📄 What Fred Brooks Can Teach Us About Writing Specs for AI](./articles/what-fred-brooks-can-teach-us-about-writing-specs-for-ai.md)  
 - [💻💰🤝👹🇺🇸 Tech moguls Altman, Bezos and Zuckerberg donate to Trump's inauguration fund](./articles/tech-moguls-altman-bezos-and-zuckerberg-donate-to-trumps-inauguration-fund.md)  
-- [🤖🧠📈🗣️🧰 Towards a science of scaling agent systems: When and why agent systems work](./articles/towards-a-science-of-scaling-agent-systems-when-and-why-agent-systems-work.md)  
   
   
 ## [🤖💬 Bot Chats](./bot-chats/index.md) (49)  

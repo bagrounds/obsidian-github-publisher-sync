@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-03-04T13:23:45-08:00
+updated: 2026-03-04T14:18:06-08:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -43,7 +43,8 @@ updated: 2026-03-04T13:23:45-08:00
 - [🤖⚙️ AI Agents in Action](./books/ai-agents-in-action.md)  
   
   
-## [📺 Videos](./videos/index.md) (665)  
+## [📺 Videos](./videos/index.md) (666)  
+- [🤯➡️🗣️👥➡️🤖 Everyone You Know Is About to Try Claude (I Showed 3 People for 5 Minutes - All 3 Switched)](./videos/everyone-you-know-is-about-to-try-claude-i-showed-3-people-for-5-minutes-all-3-switched.md)  
 - [🎤✨🗣️ TED's secret to great public speaking | Chris Anderson | TED](./videos/teds-secret-to-great-public-speaking-chris-anderson-ted.md)  
 - [💰➡️🌍📉 Lecture 03: Externalities in Theory & Practice](./videos/lecture-03-externalities-in-theory-practice.md)  
 - [💰📉🌎 Lecture 02: Externalities in Theory](./videos/lecture-02-externalities-in-theory.md)  
@@ -53,7 +54,6 @@ updated: 2026-03-04T13:23:45-08:00
 - [🤖🗣️🏛️⚔️📰 Full interview: Anthropic CEO responds to Trump order, Pentagon clash](./videos/full-interview-anthropic-ceo-responds-to-trump-order-pentagon-clash.md)  
 - [🏛️⚔️🤖 Why the Trump administration is clashing with AI-firm Anthropic](./videos/why-the-trump-administration-is-clashing-with-ai-firm-anthropic.md)  
 - [👧✨🧠🔢✋📈 My 10-Year-Old Vibe Codes. She Also Does Math by Hand. Why That's the Only Strategy That Works.](./videos/my-10-year-old-vibe-codes-she-also-does-math-by-hand-why-thats-the-only-strategy-that-works.md)  
-- [✨💻💀🤖 Steve Yegge on productive vibe coding, the death of the IDE, babysitting a fleet of AI coding agents](./videos/steve-yegge-on-productive-vibe-coding-the-death-of-the-ide-babysitting-a-fleet-of-ai-coding-agents.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  

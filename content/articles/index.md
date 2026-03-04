@@ -5,15 +5,16 @@ aliases:
 title: 📄 Articles
 backlinks: false
 URL: https://bagrounds.org/articles
-updated: 2026-03-03T18:57:20-08:00
+updated: 2026-03-04T13:23:45-08:00
 ---
 [Home](../index.md)  
-# 📄 Articles (79)  
+# 📄 Articles (80)  
 - [🗓️🇵🇹💉✅🕊️ 20 years of Portuguese drug policy - developments, challenges and the quest for human rights](./20-years-of-portuguese-drug-policy-developments-challenges-and-the-quest-for-human-rights.md)  
 - [🦊😈🐾🕵️💸 5 takeaways about NPR's reporting on the whistleblower report about DOGE at the NLRB](./5-takeaways-about-nprs-reporting-on-the-whistleblower-report-about-doge-at-the-nlrb.md)  
 - [🌱🤖⚙️🖐️ 5 tips on getting started with Gems, your custom AI experts](./5-tips-on-getting-started-with-gems-your-custom-ai-experts.md)  
 - [⏱️⚔️🏛️ '60 Minutes' chief resigns, saying show's independence was compromised](./60-minutes-chief-resigns-saying-shows-independence-was-compromised.md)  
 - [🤖⚙️🔄🗣️ Agentic Context Engineering: Evolving Contexts for Self Improving Language Models](./agentic-context-engineering-evolving-contexts-for-self-improving-language-models.md)  
+- [🤖⚙️🛠️ Agentic Engineering Patterns](./agentic-engineering-patterns.md)  
 - [🕵️‍♀️💼👥 Agents](./agents.md)  
 - [🧑‍🏫🌍🛠️📈 Agent Skills: Equipping agents for the real world with Agent Skills](./equipping-agents-for-the-real-world-with-agent-skills.md)  
 - [📈🤖✍️🔄 AI traffic is up 527%. SEO is being rewritten.](./ai-traffic-is-up-527-percent-seo-is-being-rewritten.md)  

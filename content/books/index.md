@@ -5,10 +5,10 @@ aliases:
 share: true
 URL: https://bagrounds.org/books
 backlinks: false
-updated: 2026-03-03T17:37:58-08:00
+updated: 2026-03-03T18:14:34-08:00
 ---
 [Home](../index.md)  
-# 📚 Books (950)  
+# 📚 Books (949)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [💻0️⃣ Source Code: My Beginnings](./source-code-my-beginnings.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)  
@@ -813,7 +813,6 @@ updated: 2026-03-03T17:37:58-08:00
 - [💰🧔👑🏛️ The Richest Man in Babylon](./the-richest-man-in-babylon.md)  
 - [😇🧠 The Righteous Mind: Why Good People Are Divided by Politics and Religion](./the-righteous-mind.md)  
 - [🗳️🇺🇸 The Right to Vote: The Contested History of Democracy in the United States](./the-right-to-vote-the-contested-history-of-democracy-in-the-united-states.md)  
-- [➡️⛓️ The Road to Serfdom](./the-road-to-serfdom.md)  
 - [👨‍👧 The Role of the Father in Child Development](./the-role-of-the-father-in-child-development.md)  
 - [🥀🏛️ The Ruin of the Roman Empire: A New History](./the-ruin-of-the-roman-empire-a-new-history.md)  
 - [🏛️⚖️ The Rule of Law](./the-rule-of-law.md)  

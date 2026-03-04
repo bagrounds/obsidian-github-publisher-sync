@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-03-02T16:20:43-08:00
+updated: 2026-03-03T17:37:58-08:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -13,8 +13,9 @@ updated: 2026-03-02T16:20:43-08:00
 ❔ What do 🫵 _you_ 🤔 think?  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (473)  
-- [2026-03-02 | 🕵️ Fugitive 🚀 Build 📚](./reflections/2026-03-02.md)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (474)  
+- [2026-03-03](./reflections/2026-03-03.md)  
+- [2026-03-02 | 🤖 Agentic 📖 Fugitive ☁️ Tunnel 🌿 Rhubarb 😴 Snoring 📚🎤💻📰🌌](./reflections/2026-03-02.md)  
 - [2026-03-01 | 🕵️ Fugitive 🌐 Network 🚀 Build 🐦 Twitter 🤖 Agent 📚](./reflections/2026-03-01.md)  
 - [2026-02-28 | 🤖⚙️🧠 Agentic 📖](./reflections/2026-02-28.md)  
 - [2026-02-27 | 🤖🐍🚫🐍 AI 🇺🇸 Polarized 🏛️ Brooks 📚📄📺📰](./reflections/2026-02-27.md)  
@@ -23,7 +24,6 @@ updated: 2026-03-02T16:20:43-08:00
 - [2026-02-24 | 🌐 Network 🤖📚](./reflections/2026-02-24.md)  
 - [2026-02-23 | 🌐 Network 💰 Google 🧠 Harvard 📈 Stocks 📚📺](./reflections/2026-02-23.md)  
 - [2026-02-22 | 🚪 Exit 🌐 Network 🧠💊 Dopamine 📚📺](./reflections/2026-02-22.md)  
-- [2026-02-21 | 🦹 Rogue 🏃 Exit 🌐 Network 📚](./reflections/2026-02-21.md)  
   
   
 ## [🧰 Tools](./tools/index.md) (1)  
@@ -43,7 +43,8 @@ updated: 2026-03-02T16:20:43-08:00
 - [🤖⚙️ AI Agents in Action](./books/ai-agents-in-action.md)  
   
   
-## [📺 Videos](./videos/index.md) (660)  
+## [📺 Videos](./videos/index.md) (661)  
+- [💰🏛️📈 Lecture 22: Wealth Taxation](./videos/lecture-22-wealth-taxation.md)  
 - [🐛🐌🐞🌿🏡🦠 Managing Pests & Diseases in Your Backyard: Aphids, Blight, and Slugs - Oh My! Workshop](./videos/managing-pests-diseases-in-your-backyard-aphids-blight-and-slugs-oh-my-workshop.md)  
 - [🤖🗣️🏛️⚔️📰 Full interview: Anthropic CEO responds to Trump order, Pentagon clash](./videos/full-interview-anthropic-ceo-responds-to-trump-order-pentagon-clash.md)  
 - [🏛️⚔️🤖 Why the Trump administration is clashing with AI-firm Anthropic](./videos/why-the-trump-administration-is-clashing-with-ai-firm-anthropic.md)  
@@ -53,7 +54,6 @@ updated: 2026-03-02T16:20:43-08:00
 - [🧠🛠️🕸️🚫🙅‍♂️💼 No Vibes Allowed: Solving Hard Problems in Complex Codebases – Dex Horthy, HumanLayer](./videos/no-vibes-allowed-solving-hard-problems-in-complex-codebases-dex-horthy-humanlayer.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./videos/12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
 - [🖼️🤔🛠️🤖 Context Engineering for Agents](./videos/context-engineering-for-agents.md)  
-- [👨‍💻➡️🤖🧩 Beyond the IDE: Toward Multi-Agent Orchestration](./videos/beyond-the-ide-toward-multi-agent-orchestration.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  

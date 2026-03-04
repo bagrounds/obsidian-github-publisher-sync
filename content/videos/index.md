@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-03-02T16:20:43-08:00
+updated: 2026-03-03T17:37:58-08:00
 ---
 [Home](../index.md)  
-# 📺 Videos (660)  
+# 📺 Videos (661)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
 - [❓💪🔬 12 Questions About Creatine with Stephen Cornish, PhD](./12-questions-about-creatine-w-stephen-cornish-phd.md)  
@@ -313,6 +313,7 @@ updated: 2026-03-02T16:20:43-08:00
 - [👶🧠📈🎓 Learn how to boost your baby's brain from a Harvard Professor | UNICEF](./learn-how-to-boost-your-baby-s-brain-from-a-harvard-professor-unicef.md)  
 - [🧠💡📈🚀 Learning, Reasoning, and Planning with Neuro-Symbolic Concepts–Jiayuan Mao (MIT)](./learning-reasoning-and-planning-with-neuro-symbolic-concepts-jiayuan-mao-mit.md)  
 - [🤟🔤📚 Learn the ASL Alphabet Fast | American Sign Language ABCs](./learn-the-asl-alphabet-fast-american-sign-language-abcs.md)  
+- [💰🏛️📈 Lecture 22: Wealth Taxation](./lecture-22-wealth-taxation.md)  
 - [✍️📜🗝️💡 Lessons In Deep Living From Legendary Writers | Cal Newport](./lessons-in-deep-living-from-legendary-writers-cal-newport.md)  
 - [🧠🌱⬆️ Lisa Lawson explores the neuroscience of adolescence in 'Thrive'](./lisa-lawson-explores-the-neuroscience-of-adolescence-in-thrive.md)  
 - [📣👮🏿‍♂️🧑🏿‍🤝‍🧑🏿 LIVE: LAPD press conference after protests in Los Angeles over National Guard deployment](./live-lapd-press-conference-after-protests-in-los-angeles-over-national-guard-deployment.md)  

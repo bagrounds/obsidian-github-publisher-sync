@@ -92,7 +92,7 @@ affiliate link: https://amzn.to/4oDqFSv
 * 🌐 The World Is Flat by Thomas L. Friedman  
   
 ### 🔗 Related  
-* 🌲 Walden by Henry David Thoreau  
+* [🌲 Walden](./walden.md) by Henry David Thoreau  
 * ⚠️ Silent Spring by Rachel Carson  
 * 🧑‍🤝‍🧑 The Human Condition by Hannah Arendt  
   

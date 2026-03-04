@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-03-04T13:23:45-08:00
+updated: 2026-03-04T14:18:06-08:00
 ---
 [Home](../index.md)  
-# 📺 Videos (665)  
+# 📺 Videos (666)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
 - [❓💪🔬 12 Questions About Creatine with Stephen Cornish, PhD](./12-questions-about-creatine-w-stephen-cornish-phd.md)  
@@ -161,6 +161,7 @@ updated: 2026-03-04T13:23:45-08:00
 - [🧠💡🧘‍♀️ Essentials: Tools to Boost Attention & Memory | Dr. Wendy Suzuki](./essentials-tools-to-boost-attention-memory-dr-wendy-suzuki.md)  
 - [🧠⛓️⚖️ Essentials: Understanding & Treating Addiction | Dr. Anna Lembke](./essentials-understanding-treating-addiction-dr-anna-lembke.md)  
 - [Ethics expert breaks down Trump administration’s conflicts of interest](./ethics-expert-breaks-down-trump-administrations-conflicts-of-interest.md)  
+- [🤯➡️🗣️👥➡️🤖 Everyone You Know Is About to Try Claude (I Showed 3 People for 5 Minutes - All 3 Switched)](./everyone-you-know-is-about-to-try-claude-i-showed-3-people-for-5-minutes-all-3-switched.md)  
 - [😴❌💡 Everything You Know About Fatigue is Wrong](./everything-you-know-about-fatigue-is-wrong.md)  
 - [Experts are STUNNED! Meta's NEW LLM Architecture is a GAME-CHANGER!](./experts-are-stunned-metas-new-llm-architecture-is-a-game-changer.md)  
 - [🏛️👎 Ex-Trump White House attorney calls Comey's indictment 'un-American and despicable'](./ex-trump-white-house-attorney-calls-comeys-indictment-un-american-and-despicable.md)  

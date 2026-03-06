@@ -58,7 +58,7 @@ affiliate link: https://amzn.to/3FkgmkX
 * ✅ **Getting Things Done: The Art of Stress-Free Productivity** by David Allen: A classic productivity guide focused on external systems for managing tasks and commitments to reduce mental overload, contrasting with *Burnout*'s focus on internal physiological cycles and societal factors.  
 * 💔 **Work Won't Love You Back: How Devotion to Our Jobs Keeps Us Exploited, Exhausted, and Alone** by Sarah Jaffe: Critiques the modern pressure to find deep purpose and love in one's job, arguing this devotion contributes to burnout and exploitation, focusing more on labor critique than physiological cycles.  
 * 🧘‍♀️ **Niksen: The Dutch Art of Doing Nothing** by Annette Lavrijsen: Advocates for intentional idleness as an antidote to stress and burnout, contrasting with the active stress-cycle completion methods in *Burnout*.  
-* ⏳ **Four Thousand Weeks: Time Management for Mortals** by Oliver Burkeman: Challenges conventional productivity wisdom by focusing on accepting our finite time, contrasting with specific stress-cycle techniques by focusing on existential limitations.  
+* ⏳ Four Thousand Weeks by Oliver Burkeman: Challenges conventional productivity wisdom by focusing on accepting our finite time, contrasting with specific stress-cycle techniques by focusing on existential limitations.  
   
 ### ✨ Creatively Related Reads (Exploring Themes via Fiction or Related Concepts)  
 * 😥 **Fed Up: Emotional Labor, Women, and the Way Forward** by Gemma Hartley: Directly addresses the concept of emotional labor – the often invisible, uncompensated mental and emotional work disproportionately carried by women – a key contributing factor to the burnout described by the Nagoskis.  

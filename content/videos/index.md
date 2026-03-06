@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-03-04T14:18:06-08:00
+updated: 2026-03-05T10:25:02-08:00
 ---
 [Home](../index.md)  
-# 📺 Videos (666)  
+# 📺 Videos (667)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
 - [❓💪🔬 12 Questions About Creatine with Stephen Cornish, PhD](./12-questions-about-creatine-w-stephen-cornish-phd.md)  
@@ -402,6 +402,7 @@ updated: 2026-03-04T14:18:06-08:00
 - [🏛️➡️🚪⚠️ Prominent conservative judge resigns, calling Trump 'uniquely dangerous'](./prominent-conservative-judge-resigns-calling-trump-uniquely-dangerous.md)  
 - [🤖🥀➡️❓🚀 Prompt Engineering Is Dead. Context Engineering Is Dying. What Comes Next Changes Everything.](./prompt-engineering-is-dead-context-engineering-is-dying-what-comes-next-changes-everything.md)  
 - [Protestors join more than a thousand rallies across the U.S. against Trump’s policies](./protestors-join-more-than-a-thousand-rallies-across-the-us-against-trumps-policies.md)  
+- [😴🧠👨‍⚕️ Psychiatrist Explains Why You Feel Tired All The Time (No Matter What You Do...)](./psychiatrist-explains-why-you-feel-tired-all-the-time-no-matter-what-you-do.md)  
 - [📺🎤📰 Public Media: Last Week Tonight with John Oliver (HBO)](./public-media-last-week-tonight-with-john-oliver-hbo.md)  
 - [👥➡️⚖️ Realignment of People Against the ‘Epstein Class’ | Explainer](./realignment-of-people-against-the-epstein-class-explainer.md)  
 - [Rep. Aime Wichtendahl testifies as Iowa removes civil rights for trans people (Feb 27, 2025)](./rep-aime-wichtendahl-testifies-as-iowa-removes-civil-rights-for-trans-people-feb-27-2025.md)  

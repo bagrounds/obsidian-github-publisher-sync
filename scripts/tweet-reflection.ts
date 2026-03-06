@@ -396,10 +396,15 @@ export async function getEmbedHtml(
 // --- File Update Operations ---
 
 /**
- * Build the tweet section content to append.
+ * Build the tweet section content to append to a note.
+ * Handles separator logic: ensures a blank line before the section.
  */
-export function buildTweetSection(embedHtml: string): string {
-  return `\n${TWEET_SECTION_HEADER}  \n${embedHtml}`;
+export function buildTweetSection(
+  existingContent: string,
+  embedHtml: string,
+): string {
+  const separator = existingContent.endsWith("\n") ? "\n" : "\n\n";
+  return `${separator}${TWEET_SECTION_HEADER}  \n${embedHtml}`;
 }
 
 /**
@@ -413,11 +418,7 @@ export function appendTweetSection(filePath: string, embedHtml: string): void {
     return;
   }
 
-  // Ensure there's a blank line before the new section
-  const separator = content.endsWith("\n") ? "\n" : "\n\n";
-  const tweetSection = `${separator}${TWEET_SECTION_HEADER}  \n${embedHtml}`;
-
-  fs.writeFileSync(filePath, content + tweetSection, "utf-8");
+  fs.writeFileSync(filePath, content + buildTweetSection(content, embedHtml), "utf-8");
 }
 
 // --- Obsidian Local REST API Integration ---
@@ -493,9 +494,7 @@ export async function appendTweetToObsidianNote(
     return;
   }
 
-  const separator = content.endsWith("\n") ? "\n" : "\n\n";
-  const updatedContent =
-    content + `${separator}${TWEET_SECTION_HEADER}  \n${embedHtml}`;
+  const updatedContent = content + buildTweetSection(content, embedHtml);
 
   await writeObsidianNote(notePath, updatedContent, credentials);
 }

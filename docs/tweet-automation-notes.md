@@ -110,7 +110,8 @@ code is structurally identical to what oEmbed returns.
 
 The workflow runs at 18:00 UTC. "Today" is determined by UTC date at execution time.
 This means:
-- For US Pacific time, the tweet is posted at 10:00 AM / 11:00 AM
+- For US Pacific time, the tweet is posted at 10:00 AM PST or 11:00 AM PDT
+  (varies by daylight saving time)
 - The reflection should already exist by this time
 - If no reflection exists, the workflow exits gracefully
 

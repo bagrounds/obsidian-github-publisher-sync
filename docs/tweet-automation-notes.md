@@ -11,10 +11,15 @@
 - The site is built with TypeScript/esbuild and deployed via GitHub Pages
 - Existing CI/CD: push to `main` → build Quartz → deploy to GitHub Pages
 
-**Key Insight:** The "Obsidian vault" in the problem statement refers to the `content/`
-directory in this repository. Since the workflow runs in GitHub Actions, we access the vault
-by checking out the repository — no Obsidian REST API needed. The GitHub Publisher plugin
-syncs changes from Obsidian to this repo, and our workflow operates on the same files.
+**Key Insight:** The Enveloppe plugin performs **one-way sync** from the user's Obsidian
+vault to this GitHub repository. Any changes committed directly to the repo would be
+overwritten on the next Enveloppe publish. Therefore, to persist changes to a note, we must
+write to the **Obsidian vault** (via the Local REST API), not to the git repository.
+
+**Read vs Write paths:**
+- **Reading**: We read the reflection from the checked-out repo (it's the published copy)
+- **Writing**: We write the tweet embed to the Obsidian vault via the Local REST API
+- The user reviews the change in Obsidian and publishes it to GitHub via Enveloppe
 
 ### 2. Analyzing Existing Tweet Embeds
 
@@ -40,26 +45,31 @@ https://t.co/mXLn8dlc56</p>&mdash; Bryan Grounds (@bagrounds)
 ### 3. API Selection Decisions
 
 #### Twitter/X API
-- **Choice:** `twitter-api-v2` npm package with OAuth 1.0a
+- **Choice:** [`twitter-api-v2`](https://github.com/PLhery/node-twitter-api-v2) npm package with OAuth 1.0a
 - **Rationale:** OAuth 1.0a is simpler for single-user bot scenarios (no PKCE flow needed).
   The `twitter-api-v2` package is the most popular Node.js Twitter library with full v2 support.
 - **Alternative considered:** Tweepy (Python) — rejected because the project is TypeScript
+- **Docs:** [API examples](https://github.com/PLhery/node-twitter-api-v2/blob/master/doc/examples.md)
 
 #### Google Gemini API
-- **Choice:** `@google/generative-ai` official SDK
+- **Choice:** [`@google/generative-ai`](https://github.com/google-gemini/generative-ai-js) official SDK
 - **Rationale:** Official Google SDK, well-maintained, TypeScript types included
 - **Model:** `gemini-2.0-flash` — fast and cost-effective for short text generation
 - **Alternative considered:** OpenAI GPT — rejected because user specified Gemini
+- **Docs:** [Gemini API docs](https://ai.google.dev/gemini-api/docs)
 
 #### Tweet Embed Code
 - **Choice:** Twitter oEmbed API (`publish.twitter.com/oembed`)
 - **Rationale:** No authentication required, returns ready-to-use HTML, official endpoint
 - **Fallback:** Generate embed code locally from tweet data (in case oEmbed is unavailable)
+- **Docs:** [oEmbed API](https://developer.x.com/en/docs/twitter-for-websites/oembed-api)
 
-#### File Operations
-- **Choice:** Direct filesystem access via `node:fs`
-- **Rationale:** The workflow runs in GitHub Actions with the repo checked out.
-  No need for Obsidian REST API since we're operating on the same markdown files.
+#### Vault Write Operations
+- **Choice:** [Obsidian Local REST API](https://github.com/coddingtonbear/obsidian-local-rest-api) plugin
+- **Rationale:** Only way to write to the Obsidian vault from an external process. The
+  Enveloppe plugin does one-way sync (Obsidian → GitHub), so git commits would be overwritten.
+- **Requirements:** Obsidian desktop must be running with the plugin, exposed via a tunnel
+- **Docs:** [Interactive API docs](https://coddingtonbear.github.io/obsidian-local-rest-api/)
 
 ### 4. Architecture Decisions
 
@@ -68,8 +78,12 @@ https://t.co/mXLn8dlc56</p>&mdash; Bryan Grounds (@bagrounds)
 - Functions are modular and independently testable
 - The script is invoked by the GitHub Actions workflow via `npx tsx`
 
+**Yesterday's Reflection:**
+- We post the previous day's reflection to ensure the note is finalized
+- The user may still be editing today's note, so posting yesterday is safer
+
 **Idempotency:**
-- The script checks if a `## 🐦 Tweet` section already exists
+- The script checks if a `## 🐦 Tweet` section already exists (both in repo and Obsidian)
 - If it does, the script skips gracefully (safe to re-run)
 
 **Error Propagation:**
@@ -106,43 +120,62 @@ Solution: We first try the oEmbed API, then fall back to generating the embed co
 ourselves using the tweet ID, text, and author information. The locally-generated
 code is structurally identical to what oEmbed returns.
 
-### Challenge: Date Handling
+### Challenge: Date Handling & Schedule
 
-The workflow runs at 18:00 UTC. "Today" is determined by UTC date at execution time.
-This means:
-- For US Pacific time, the tweet is posted at 10:00 AM PST or 11:00 AM PDT
-  (varies by daylight saving time)
-- The reflection should already exist by this time
-- If no reflection exists, the workflow exits gracefully
+The workflow runs at 17:00 UTC and posts the **previous day's** reflection.
+- 17:00 UTC = 9:00 AM PST (Nov–Mar) or 10:00 AM PDT (Mar–Nov)
+- GitHub Actions cron is UTC-only; Pacific time varies with daylight saving
+- Morning Pacific time is good for tweet visibility
+- Posting yesterday's note ensures it's finalized
 
-### Challenge: Git Commit from Actions
+### Challenge: Obsidian API Accessibility
 
-The workflow must push changes back to the repository. This requires:
-- `contents: write` permission on the workflow
-- Git configuration with bot identity
-- The default `GITHUB_TOKEN` is sufficient (no PAT needed)
-- Commits from the bot don't trigger other workflows (prevents loops)
+The Obsidian Local REST API runs on the user's desktop machine. For GitHub Actions to
+reach it, the user must expose it via a tunnel service:
+- **Cloudflare Tunnel** (free): `cloudflared tunnel` maps a public URL to localhost:27124
+- **ngrok** (free tier): `ngrok http 27124` creates a public URL
+- **Tailscale Funnel**: If using Tailscale VPN, expose via `tailscale funnel`
 
-Wait — actually, we DO want the deploy workflow to trigger. Using the default
-`GITHUB_TOKEN` for commits means the deploy workflow won't auto-trigger. We have
-two options:
-1. Use a PAT instead of `GITHUB_TOKEN` (triggers downstream workflows)
-2. Have the tweet workflow also build and deploy
+The user saves the public URL as `OBSIDIAN_API_URL` in GitHub Actions secrets.
+Obsidian desktop must be running when the workflow executes (daily at ~9 AM Pacific).
 
-For simplicity, we use the default `GITHUB_TOKEN` and note that the user may want to
-switch to a PAT if they want the tweet commit to trigger automatic deployment. For now,
-the next regular push to `main` will pick up the tweet embed change.
+### Challenge: One-Way Sync (Enveloppe)
 
-**Update:** Using `stefanzweifel/git-auto-commit-action` handles the commit/push cleanly,
-and by default it uses the workflow's GITHUB_TOKEN. The deploy workflow will be triggered
-on the next push to main (from the next Obsidian sync or manual push).
+The Enveloppe plugin syncs Obsidian → GitHub only. Writing directly to the repo would
+cause the changes to be overwritten on the next publish. By writing to the Obsidian vault
+via the Local REST API, the tweet embed becomes part of the canonical source and flows
+through the normal Enveloppe publish pipeline when the user next publishes.
+
+### Twitter OAuth 1.0a Credentials
+
+The X Developer Portal shows multiple credential types that can be confusing:
+
+| Portal Section | Credential | Our Secret Name | Used? |
+|---|---|---|---|
+| Consumer Keys | API Key | `TWITTER_API_KEY` | ✅ Yes |
+| Consumer Keys | API Key Secret | `TWITTER_API_SECRET` | ✅ Yes |
+| Authentication Tokens | Access Token | `TWITTER_ACCESS_TOKEN` | ✅ Yes |
+| Authentication Tokens | Access Token Secret | `TWITTER_ACCESS_SECRET` | ✅ Yes |
+| OAuth 2.0 | Client ID | — | ❌ Not used |
+| OAuth 2.0 | Client Secret | — | ❌ Not used |
+| Bearer Token | Bearer Token | — | ❌ Not used |
+
+The `twitter-api-v2` package maps these as:
+```typescript
+new TwitterApi({
+  appKey: TWITTER_API_KEY,        // Consumer Key
+  appSecret: TWITTER_API_SECRET,  // Consumer Secret
+  accessToken: TWITTER_ACCESS_TOKEN,
+  accessSecret: TWITTER_ACCESS_SECRET,
+})
+```
 
 ## Lessons Learned
 
 ### 1. Vault Access Pattern
-The "Obsidian API" in the problem statement maps to direct filesystem access in GitHub Actions.
-The Obsidian Local REST API is for local desktop automation, not CI/CD pipelines. The key insight
-is that the GitHub Publisher plugin already syncs the vault to this repository.
+The Enveloppe plugin performs one-way sync (Obsidian → GitHub). To persist changes to notes,
+we must write to the Obsidian vault via the Local REST API, not commit to git. The repo copy
+is read-only for our purposes.
 
 ### 2. Tweet Embed Consistency
 All 80+ existing tweet embeds follow an identical format. The oEmbed API returns this exact

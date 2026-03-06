@@ -2,12 +2,13 @@ name: Tweet Daily Reflection
 
 on:
   schedule:
-    # Run daily at 6:00 PM UTC
-    - cron: "0 18 * * *"
+    # Run daily at 5:00 PM UTC (9:00 AM PST / 10:00 AM PDT)
+    # Posts the previous day's reflection to ensure the note is finalized.
+    - cron: "0 17 * * *"
   workflow_dispatch:
     inputs:
       date:
-        description: "Reflection date (YYYY-MM-DD). Defaults to today."
+        description: "Reflection date (YYYY-MM-DD). Defaults to yesterday."
         required: false
         type: string
       dry_run:
@@ -17,7 +18,7 @@ on:
         default: false
 
 permissions:
-  contents: write
+  contents: read
 
 jobs:
   tweet:
@@ -51,6 +52,8 @@ jobs:
           TWITTER_ACCESS_TOKEN: ${{ secrets.TWITTER_ACCESS_TOKEN }}
           TWITTER_ACCESS_SECRET: ${{ secrets.TWITTER_ACCESS_SECRET }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          OBSIDIAN_API_URL: ${{ secrets.OBSIDIAN_API_URL }}
+          OBSIDIAN_API_KEY: ${{ secrets.OBSIDIAN_API_KEY }}
         run: |
           ARGS=""
           if [ -n "${{ github.event.inputs.date }}" ]; then
@@ -60,10 +63,3 @@ jobs:
             ARGS="$ARGS --dry-run"
           fi
           npx tsx scripts/tweet-reflection.ts $ARGS
-
-      - name: Commit and Push Changes
-        if: ${{ github.event.inputs.dry_run != 'true' }}
-        uses: stefanzweifel/git-auto-commit-action@v5
-        with:
-          commit_message: "🐦 Add tweet embed for daily reflection"
-          file_pattern: "content/reflections/*.md"

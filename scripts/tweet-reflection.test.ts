@@ -12,7 +12,7 @@ import {
   buildGeminiPrompt,
   generateLocalEmbed,
   appendTweetSection,
-  getTodayDate,
+  getYesterdayDate,
   validateEnvironment,
   type ReflectionData,
 } from "./tweet-reflection.ts";
@@ -400,16 +400,22 @@ describe("appendTweetSection", () => {
   });
 });
 
-describe("getTodayDate", () => {
+describe("getYesterdayDate", () => {
   test("returns date in YYYY-MM-DD format", () => {
-    const date = getTodayDate();
+    const date = getYesterdayDate();
     assert.match(date, /^\d{4}-\d{2}-\d{2}$/);
   });
 
   test("returns a valid date", () => {
-    const date = getTodayDate();
+    const date = getYesterdayDate();
     const parsed = new Date(date + "T00:00:00Z");
     assert.ok(!isNaN(parsed.getTime()));
+  });
+
+  test("returns a date before today", () => {
+    const yesterday = getYesterdayDate();
+    const today = new Date().toISOString().split("T")[0] as string;
+    assert.ok(yesterday < today, `${yesterday} should be before ${today}`);
   });
 });
 
@@ -432,6 +438,8 @@ describe("validateEnvironment", () => {
     delete process.env.TWITTER_ACCESS_TOKEN;
     delete process.env.TWITTER_ACCESS_SECRET;
     delete process.env.GEMINI_API_KEY;
+    delete process.env.OBSIDIAN_API_URL;
+    delete process.env.OBSIDIAN_API_KEY;
 
     assert.throws(
       () => validateEnvironment(),
@@ -445,6 +453,8 @@ describe("validateEnvironment", () => {
     process.env.TWITTER_ACCESS_TOKEN = "test-token";
     process.env.TWITTER_ACCESS_SECRET = "test-access-secret";
     process.env.GEMINI_API_KEY = "test-gemini-key";
+    process.env.OBSIDIAN_API_URL = "https://obsidian.example.com:27124";
+    process.env.OBSIDIAN_API_KEY = "test-obsidian-key";
 
     const env = validateEnvironment();
     assert.equal(env.twitter.apiKey, "test-key");
@@ -452,6 +462,21 @@ describe("validateEnvironment", () => {
     assert.equal(env.twitter.accessToken, "test-token");
     assert.equal(env.twitter.accessSecret, "test-access-secret");
     assert.equal(env.gemini.apiKey, "test-gemini-key");
+    assert.equal(env.obsidian.apiUrl, "https://obsidian.example.com:27124");
+    assert.equal(env.obsidian.apiKey, "test-obsidian-key");
+  });
+
+  test("strips trailing slashes from Obsidian API URL", () => {
+    process.env.TWITTER_API_KEY = "k";
+    process.env.TWITTER_API_SECRET = "s";
+    process.env.TWITTER_ACCESS_TOKEN = "t";
+    process.env.TWITTER_ACCESS_SECRET = "as";
+    process.env.GEMINI_API_KEY = "g";
+    process.env.OBSIDIAN_API_URL = "https://obsidian.example.com:27124///";
+    process.env.OBSIDIAN_API_KEY = "ok";
+
+    const env = validateEnvironment();
+    assert.equal(env.obsidian.apiUrl, "https://obsidian.example.com:27124");
   });
 
   test("reports specific missing variables", () => {
@@ -460,6 +485,8 @@ describe("validateEnvironment", () => {
     delete process.env.TWITTER_ACCESS_TOKEN;
     process.env.TWITTER_ACCESS_SECRET = "set";
     delete process.env.GEMINI_API_KEY;
+    process.env.OBSIDIAN_API_URL = "set";
+    delete process.env.OBSIDIAN_API_KEY;
 
     try {
       validateEnvironment();
@@ -469,7 +496,9 @@ describe("validateEnvironment", () => {
       assert.ok(msg.includes("TWITTER_API_SECRET"));
       assert.ok(msg.includes("TWITTER_ACCESS_TOKEN"));
       assert.ok(msg.includes("GEMINI_API_KEY"));
+      assert.ok(msg.includes("OBSIDIAN_API_KEY"));
       assert.ok(!msg.includes("TWITTER_API_KEY"));
+      assert.ok(!msg.includes("OBSIDIAN_API_URL"));
     }
   });
 });

@@ -1,15 +1,29 @@
 /**
  * Tweet Reflection Automation Script
  *
- * Reads today's reflection, generates a tweet via Gemini, posts it to Twitter,
- * fetches the embed code, and updates the reflection file.
+ * Reads yesterday's reflection from the repo, generates a tweet via Gemini,
+ * posts it to Twitter, fetches the embed code, and writes the updated note
+ * back to the Obsidian vault via the Obsidian Local REST API.
+ *
+ * The user reviews the change in Obsidian and publishes it to this repo
+ * via the Enveloppe plugin (one-way sync: Obsidian → GitHub).
  *
  * Usage:
  *   npx tsx scripts/tweet-reflection.ts [--date YYYY-MM-DD] [--dry-run]
  *
  * Environment variables:
- *   TWITTER_API_KEY, TWITTER_API_SECRET, TWITTER_ACCESS_TOKEN, TWITTER_ACCESS_SECRET
- *   GEMINI_API_KEY
+ *   TWITTER_API_KEY      - OAuth 1.0a Consumer Key (from X Developer Portal → Keys and Tokens)
+ *   TWITTER_API_SECRET   - OAuth 1.0a Consumer Secret
+ *   TWITTER_ACCESS_TOKEN - OAuth 1.0a Access Token (generated with Read+Write permissions)
+ *   TWITTER_ACCESS_SECRET - OAuth 1.0a Access Token Secret
+ *   GEMINI_API_KEY       - Google Gemini API key (from Google AI Studio)
+ *   OBSIDIAN_API_URL     - Obsidian Local REST API base URL (e.g. https://your-tunnel.example.com:27124)
+ *   OBSIDIAN_API_KEY     - Obsidian Local REST API key (from plugin settings)
+ *
+ * @see https://github.com/PLhery/node-twitter-api-v2 — twitter-api-v2 docs
+ * @see https://ai.google.dev/gemini-api/docs — Google Gemini API docs
+ * @see https://github.com/coddingtonbear/obsidian-local-rest-api — Obsidian Local REST API
+ * @see https://developer.x.com/en/docs/twitter-api — X/Twitter API v2 docs
  */
 
 import fs from "node:fs";
@@ -382,7 +396,14 @@ export async function getEmbedHtml(
 // --- File Update Operations ---
 
 /**
- * Append the tweet section to a reflection file.
+ * Build the tweet section content to append.
+ */
+export function buildTweetSection(embedHtml: string): string {
+  return `\n${TWEET_SECTION_HEADER}  \n${embedHtml}`;
+}
+
+/**
+ * Append the tweet section to a local reflection file (used in tests).
  */
 export function appendTweetSection(filePath: string, embedHtml: string): void {
   const content = fs.readFileSync(filePath, "utf-8");
@@ -399,13 +420,95 @@ export function appendTweetSection(filePath: string, embedHtml: string): void {
   fs.writeFileSync(filePath, content + tweetSection, "utf-8");
 }
 
+// --- Obsidian Local REST API Integration ---
+
+/**
+ * Read a note from the Obsidian vault via the Local REST API.
+ *
+ * @see https://coddingtonbear.github.io/obsidian-local-rest-api/
+ */
+export async function readObsidianNote(
+  notePath: string,
+  credentials: { apiUrl: string; apiKey: string },
+): Promise<string> {
+  const url = `${credentials.apiUrl}/vault/${encodeURIComponent(notePath)}`;
+  const response = await fetch(url, {
+    headers: {
+      Authorization: `Bearer ${credentials.apiKey}`,
+      Accept: "text/markdown",
+    },
+  });
+
+  if (!response.ok) {
+    throw new Error(
+      `Obsidian API GET ${notePath} returned ${response.status}: ${response.statusText}`,
+    );
+  }
+
+  return response.text();
+}
+
+/**
+ * Write (replace) a note in the Obsidian vault via the Local REST API.
+ *
+ * @see https://coddingtonbear.github.io/obsidian-local-rest-api/
+ */
+export async function writeObsidianNote(
+  notePath: string,
+  content: string,
+  credentials: { apiUrl: string; apiKey: string },
+): Promise<void> {
+  const url = `${credentials.apiUrl}/vault/${encodeURIComponent(notePath)}`;
+  const response = await fetch(url, {
+    method: "PUT",
+    headers: {
+      Authorization: `Bearer ${credentials.apiKey}`,
+      "Content-Type": "text/markdown",
+    },
+    body: content,
+  });
+
+  if (!response.ok) {
+    throw new Error(
+      `Obsidian API PUT ${notePath} returned ${response.status}: ${response.statusText}`,
+    );
+  }
+}
+
+/**
+ * Append the tweet section to a note in the Obsidian vault.
+ * Reads the current content, checks idempotency, and writes back with the tweet section.
+ */
+export async function appendTweetToObsidianNote(
+  notePath: string,
+  embedHtml: string,
+  credentials: { apiUrl: string; apiKey: string },
+): Promise<void> {
+  const content = await readObsidianNote(notePath, credentials);
+
+  if (content.includes(TWEET_SECTION_HEADER)) {
+    console.log(
+      "Tweet section already exists in Obsidian note, skipping update",
+    );
+    return;
+  }
+
+  const separator = content.endsWith("\n") ? "\n" : "\n\n";
+  const updatedContent =
+    content + `${separator}${TWEET_SECTION_HEADER}  \n${embedHtml}`;
+
+  await writeObsidianNote(notePath, updatedContent, credentials);
+}
+
 // --- Main Pipeline ---
 
 /**
- * Get today's date in YYYY-MM-DD format (UTC).
+ * Get yesterday's date in YYYY-MM-DD format (UTC).
+ * We post the previous day's reflection to ensure the note is finalized.
  */
-export function getTodayDate(): string {
+export function getYesterdayDate(): string {
   const now = new Date();
+  now.setUTCDate(now.getUTCDate() - 1);
   return now.toISOString().split("T")[0] as string;
 }
 
@@ -414,7 +517,7 @@ export function getTodayDate(): string {
  */
 function parseArgs(): { date: string; dryRun: boolean } {
   const args = process.argv.slice(2);
-  let date = getTodayDate();
+  let date = getYesterdayDate();
   let dryRun = false;
 
   for (let i = 0; i < args.length; i++) {
@@ -440,6 +543,7 @@ export function validateEnvironment(): {
     accessSecret: string;
   };
   gemini: { apiKey: string };
+  obsidian: { apiUrl: string; apiKey: string };
 } {
   const required = [
     "TWITTER_API_KEY",
@@ -447,6 +551,8 @@ export function validateEnvironment(): {
     "TWITTER_ACCESS_TOKEN",
     "TWITTER_ACCESS_SECRET",
     "GEMINI_API_KEY",
+    "OBSIDIAN_API_URL",
+    "OBSIDIAN_API_KEY",
   ];
 
   const missing = required.filter((key) => !process.env[key]);
@@ -464,6 +570,10 @@ export function validateEnvironment(): {
       accessSecret: process.env.TWITTER_ACCESS_SECRET as string,
     },
     gemini: { apiKey: process.env.GEMINI_API_KEY as string },
+    obsidian: {
+      apiUrl: (process.env.OBSIDIAN_API_URL as string).replace(/\/+$/, ""),
+      apiKey: process.env.OBSIDIAN_API_KEY as string,
+    },
   };
 }
 
@@ -475,7 +585,7 @@ export async function main(options?: {
   dryRun?: boolean;
   contentDir?: string;
 }): Promise<void> {
-  const date = options?.date || getTodayDate();
+  const date = options?.date || getYesterdayDate();
   const dryRun = options?.dryRun || false;
   const contentDir = options?.contentDir || CONTENT_DIR;
 
@@ -483,7 +593,7 @@ export async function main(options?: {
     `📅 Processing reflection for ${date}${dryRun ? " (DRY RUN)" : ""}`,
   );
 
-  // Step 1: Read today's reflection
+  // Step 1: Read the reflection from the repo (checked out by GitHub Actions)
   const reflection = readReflection(date, contentDir);
   if (!reflection) {
     console.log(`ℹ️  No reflection found for ${date}, exiting`);
@@ -528,12 +638,13 @@ export async function main(options?: {
   const embedHtml = await getEmbedHtml(tweet.id, tweet.text, date);
   console.log(`📋 Got embed HTML (${embedHtml.length} chars)`);
 
-  // Step 6: Update reflection file
-  console.log(`📝 Updating reflection file...`);
-  appendTweetSection(reflection.filePath, embedHtml);
-  console.log(`✅ Reflection updated: ${reflection.filePath}`);
+  // Step 6: Write tweet section to Obsidian vault via Local REST API
+  const obsidianNotePath = `reflections/${date}.md`;
+  console.log(`📝 Writing tweet section to Obsidian note: ${obsidianNotePath}`);
+  await appendTweetToObsidianNote(obsidianNotePath, embedHtml, env.obsidian);
+  console.log(`✅ Obsidian note updated (review in Obsidian and publish)`);
 
-  console.log(`🎉 Done! Tweet posted and reflection updated for ${date}`);
+  console.log(`🎉 Done! Tweet posted and Obsidian note updated for ${date}`);
 }
 
 // Run if executed directly

@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-03-05T10:25:02-08:00
+updated: 2026-03-06T15:46:30-08:00
 ---
 [Home](../index.md)  
-# 📺 Videos (667)  
+# 📺 Videos (668)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
 - [❓💪🔬 12 Questions About Creatine with Stephen Cornish, PhD](./12-questions-about-creatine-w-stephen-cornish-phd.md)  
@@ -124,6 +124,7 @@ updated: 2026-03-05T10:25:02-08:00
 - [📺💸❓ CBS says Colbert cancelation was financial decision, but timing raises questions](./cbs-says-colbert-cancelation-was-financial-decision-but-timing-raises-questions.md)  
 - [⏰👵🔬 Circadian Code to Extend Longevity | Satchin Panda | TEDxVeniceBeach](./circadian-code-to-extend-longevity-satchin-panda-tedx-venice-beach.md)  
 - [💰🚫🌍✨ Clara Mattei: capitalism is not natural - it’s enforced](./clara-mattei-capitalism-is-not-natural-its-enforced.md)  
+- [🤖🆚🧠⏳📉🔊 Claude Code vs Codex: The Decision That Compounds Every Week You Delay That Nobody Is Talking About](./claude-code-vs-codex-the-decision-that-compounds-every-week-you-delay-that-nobody-is-talking-about.md)  
 - [✨🧠🧹🗄️ Cleaning And Organizing An ADHD Logjam](./cleaning-and-organizing-an-adhd-logjam.md)  
 - [🖼️🤔🛠️🤖 Context Engineering for Agents](./context-engineering-for-agents.md)  
 - [🧠🎯🏆😌 Controlling Your Dopamine for Motivation, Focus & Satisfaction | Huberman Lab Essentials](./controlling-your-dopamine-for-motivation-focus-satisfaction-huberman-lab-essentials.md)  

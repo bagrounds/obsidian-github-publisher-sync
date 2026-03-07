@@ -98,6 +98,17 @@ const TWITTER_URL_LENGTH = 23;
 const TWITTER_MAX_LENGTH = 280;
 /** Bluesky has a 300-character limit for post text */
 const BLUESKY_MAX_LENGTH = 300;
+/** Delay before first Bluesky oEmbed attempt to allow post propagation */
+const BLUESKY_OEMBED_INITIAL_DELAY_MS = 3_000;
+/** Delay before retrying Bluesky oEmbed on 404 */
+const BLUESKY_OEMBED_RETRY_DELAY_MS = 5_000;
+
+/** Section data for writing embeds to Obsidian notes */
+export interface EmbedSection {
+  header: string;
+  embedHtml: string;
+  buildSection: (content: string, html: string) => string;
+}
 /** Default Gemini model — Gemma 3 27B has a generous free tier (14,400 RPD) */
 const DEFAULT_GEMINI_MODEL = "gemma-3-27b-it";
 
@@ -720,11 +731,13 @@ export async function getBlueskyEmbedHtml(
   const postId = extractBlueskyPostId(uri);
   const postUrl = buildBlueskyPostUrl(did, postId);
 
-  // Try oEmbed with a short delay to allow propagation, retry once on 404
-  for (let attempt = 0; attempt < 2; attempt++) {
+  const maxAttempts = 2;
+  for (let attempt = 0; attempt < maxAttempts; attempt++) {
     try {
       // Wait before oEmbed attempt to allow post propagation
-      const delayMs = attempt === 0 ? 3_000 : 5_000;
+      const delayMs = attempt === 0
+        ? BLUESKY_OEMBED_INITIAL_DELAY_MS
+        : BLUESKY_OEMBED_RETRY_DELAY_MS;
       console.log(`  ⏳ Waiting ${delayMs / 1000}s for Bluesky post propagation...`);
       await new Promise((resolve) => setTimeout(resolve, delayMs));
 
@@ -732,16 +745,15 @@ export async function getBlueskyEmbedHtml(
       return html;
     } catch (error) {
       const is404 = error instanceof Error && error.message.includes("404");
-      if (is404 && attempt < 1) {
+      if (is404 && attempt < maxAttempts - 1) {
         console.warn(`  ⚠️ Bluesky oEmbed returned 404 (propagation delay), retrying...`);
         continue;
       }
       console.warn(`Bluesky oEmbed API failed, using local embed generation: ${error}`);
-      return generateLocalBlueskyEmbed(uri, postText, date, cid);
+      break;
     }
   }
 
-  /* istanbul ignore next — unreachable but satisfies TypeScript */
   return generateLocalBlueskyEmbed(uri, postText, date, cid);
 }
 
@@ -920,11 +932,7 @@ export async function pushObsidianVault(
  */
 export async function appendEmbedsToObsidianNote(
   notePath: string,
-  sections: Array<{
-    header: string;
-    embedHtml: string;
-    buildSection: (content: string, html: string) => string;
-  }>,
+  sections: EmbedSection[],
   credentials: {
     authToken: string;
     vaultName: string;
@@ -1139,15 +1147,9 @@ export async function main(options?: {
   }
 
   // Collect embed sections to write to Obsidian
-  const embedSections: Array<{
-    header: string;
-    embedHtml: string;
-    buildSection: (content: string, html: string) => string;
-  }> = [];
+  const embedSections: EmbedSection[] = [];
 
   // Step 4: Post to social platforms in parallel (both non-fatal)
-  type EmbedSection = typeof embedSections[number];
-
   const postingTasks: Array<Promise<EmbedSection | null>> = [];
 
   // Twitter posting task

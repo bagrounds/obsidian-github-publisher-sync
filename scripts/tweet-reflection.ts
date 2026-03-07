@@ -310,8 +310,67 @@ export async function withRetry<T>(
 // --- Twitter Integration ---
 
 /**
+ * Log verbose details from a twitter-api-v2 error for diagnostics.
+ */
+function logTwitterError(label: string, err: unknown): void {
+  const e = err as {
+    code?: number;
+    data?: unknown;
+    headers?: Record<string, string>;
+    rateLimit?: unknown;
+    message?: string;
+    stack?: string;
+    type?: string;
+  };
+  console.error(`🔍 [${label}] Twitter API error details:`);
+  console.error(`  HTTP status: ${e.code ?? "unknown"}`);
+  console.error(`  Error type:  ${e.type ?? "unknown"}`);
+  console.error(`  Message:     ${e.message ?? "none"}`);
+  console.error(`  Response data: ${JSON.stringify(e.data ?? null, null, 2)}`);
+  console.error(`  Rate limit:  ${JSON.stringify(e.rateLimit ?? null, null, 2)}`);
+  if (e.headers) {
+    // Log a subset of useful headers
+    const useful = [
+      "x-rate-limit-limit",
+      "x-rate-limit-remaining",
+      "x-rate-limit-reset",
+      "content-type",
+      "x-connection-hash",
+      "api-version",
+      "server",
+      "retry-after",
+    ];
+    const filtered: Record<string, string> = {};
+    for (const h of useful) {
+      if (e.headers[h]) filtered[h] = e.headers[h];
+    }
+    console.error(`  Response headers (subset): ${JSON.stringify(filtered, null, 2)}`);
+  }
+  if (e.stack) {
+    console.error(`  Stack trace:\n${e.stack}`);
+  }
+}
+
+/**
+ * The default twitter-api-v2 v1.29 uses api.x.com. If that returns 503,
+ * fall back to the original api.twitter.com domain as it may be more stable.
+ */
+const TWITTER_API_PREFIXES = [
+  "https://api.x.com/2/",
+  "https://api.twitter.com/2/",
+];
+
+/**
  * Post a tweet using the Twitter API v2.
- * Retries on transient HTTP errors (429, 502, 503, 504) with exponential backoff.
+ *
+ * Strategy for handling the known X platform 503 issue:
+ * 1. Try posting with the default api.x.com endpoint.
+ * 2. If 503, log full error details and fall back to api.twitter.com.
+ * 3. On 429 (rate limit), retry with exponential backoff.
+ * 4. Do NOT blindly retry 503 on the same endpoint — the tweet may
+ *    have been posted despite the error ("ghost tweet" issue).
+ *
+ * @see https://github.com/PLhery/node-twitter-api-v2/issues/499
  */
 export async function postTweet(
   text: string,
@@ -330,19 +389,54 @@ export async function postTweet(
     accessSecret: credentials.accessSecret,
   });
 
-  const { data } = await withRetry(() => client.v2.tweet(text), {
-    onRetry: (err, attempt, delayMs) => {
-      const code = (err as { code?: number }).code;
-      console.warn(
-        `⚠️ Twitter API returned ${code}, retry ${attempt}/3 after ${delayMs}ms...`,
-      );
-    },
-  });
+  let lastError: unknown;
 
-  return {
-    id: data.id,
-    text: data.text ?? text,
-  };
+  for (const prefix of TWITTER_API_PREFIXES) {
+    try {
+      console.log(`  📡 Trying POST ${prefix}tweets`);
+      const { data } = await withRetry(
+        () => client.v2.post("tweets", { text }, { prefix }),
+        {
+          maxRetries: 2,
+          baseDelayMs: 2000,
+          onRetry: (err, attempt, delayMs) => {
+            const code = (err as { code?: number }).code;
+            console.warn(
+              `  ⚠️ Twitter API returned ${code}, retry ${attempt}/2 after ${delayMs}ms...`,
+            );
+            logTwitterError(`retry ${attempt}`, err);
+          },
+        },
+      );
+
+      return {
+        id: (data as { id: string }).id,
+        text: (data as { text?: string }).text ?? text,
+      };
+    } catch (err: unknown) {
+      lastError = err;
+      const code =
+        typeof err === "object" && err !== null && "code" in err
+          ? (err as { code: number }).code
+          : undefined;
+
+      logTwitterError(`POST ${prefix}tweets failed`, err);
+
+      // Only fall back to next prefix on server errors (5xx)
+      if (code !== undefined && code >= 500 && code < 600) {
+        console.warn(
+          `  ⚠️ Server error ${code} from ${prefix}, trying next endpoint...`,
+        );
+        continue;
+      }
+
+      // For non-server errors (auth, bad request, etc.), fail immediately
+      throw err;
+    }
+  }
+
+  // All endpoints exhausted
+  throw lastError;
 }
 
 /**
@@ -791,6 +885,14 @@ if (isMainModule) {
     console.error(
       `❌ Error: ${error instanceof Error ? error.message : error}`,
     );
+    if (error instanceof Error && error.stack) {
+      console.error(`Stack trace:\n${error.stack}`);
+    }
+    // Log extra fields from twitter-api-v2 ApiResponseError
+    const e = error as { code?: number; data?: unknown; rateLimit?: unknown };
+    if (e.code) console.error(`HTTP status code: ${e.code}`);
+    if (e.data) console.error(`Response data: ${JSON.stringify(e.data, null, 2)}`);
+    if (e.rateLimit) console.error(`Rate limit: ${JSON.stringify(e.rateLimit, null, 2)}`);
     process.exit(1);
   });
 }

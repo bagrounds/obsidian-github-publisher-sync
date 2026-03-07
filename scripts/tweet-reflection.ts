@@ -352,24 +352,21 @@ function logTwitterError(label: string, err: unknown): void {
 }
 
 /**
- * The default twitter-api-v2 v1.29 uses api.x.com. If that returns 503,
- * fall back to the original api.twitter.com domain as it may be more stable.
- */
-const TWITTER_API_PREFIXES = [
-  "https://api.x.com/2/",
-  "https://api.twitter.com/2/",
-];
-
-/**
- * Post a tweet using the Twitter API v2.
+ * Post a tweet, trying API v2 first, then falling back to v1.1.
  *
- * Strategy for handling the known X platform 503 issue:
- * 1. Try posting with the default api.x.com endpoint.
- * 2. If 503, log full error details and fall back to api.twitter.com.
- * 3. On 429 (rate limit), retry with exponential backoff.
- * 4. Do NOT blindly retry 503 on the same endpoint — the tweet may
- *    have been posted despite the error ("ghost tweet" issue).
+ * The X platform free tier frequently returns persistent 503 errors on
+ * the v2 POST /2/tweets endpoint. The v1.1 POST /1.1/statuses/update.json
+ * endpoint hits a different backend path and may still work with the same
+ * OAuth 1.0a credentials.
  *
+ * Strategy:
+ * 1. Try v2 `POST /2/tweets` (modern endpoint, recommended by X).
+ * 2. If v2 fails with 5xx, fall back to v1.1 `POST /1.1/statuses/update.json`.
+ * 3. On 429 (rate limit), retry with exponential backoff on each attempt.
+ * 4. Non-server errors (auth, bad request) fail immediately.
+ *
+ * @see https://developer.x.com/en/docs/twitter-api/tweets/manage-tweets/api-reference/post-tweets
+ * @see https://developer.x.com/en/docs/twitter-api/v1/tweets/post-and-engage/api-reference/post-statuses-update
  * @see https://github.com/PLhery/node-twitter-api-v2/issues/499
  */
 export async function postTweet(
@@ -389,58 +386,76 @@ export async function postTweet(
     accessSecret: credentials.accessSecret,
   });
 
-  let lastError: unknown;
-
-  for (const prefix of TWITTER_API_PREFIXES) {
-    try {
-      console.log(`  📡 Trying POST ${prefix}tweets`);
-      const { data } = await withRetry(
-        () => client.v2.post("tweets", { text }, { prefix }),
-        {
-          maxRetries: 2,
-          baseDelayMs: 2000,
-          onRetry: (err, attempt, delayMs) => {
-            const code = (err as { code?: number }).code;
-            console.warn(
-              `  ⚠️ Twitter API returned ${code}, retry ${attempt}/2 after ${delayMs}ms...`,
-            );
-            logTwitterError(`retry ${attempt}`, err);
-          },
+  // --- Attempt 1: API v2 ---
+  try {
+    console.log(`  📡 Trying v2: POST /2/tweets`);
+    const { data } = await withRetry(
+      () => client.v2.tweet(text),
+      {
+        maxRetries: 2,
+        baseDelayMs: 2000,
+        onRetry: (err, attempt, delayMs) => {
+          const code = (err as { code?: number }).code;
+          console.warn(
+            `  ⚠️ v2 returned ${code}, retry ${attempt}/2 after ${delayMs}ms...`,
+          );
+          logTwitterError(`v2 retry ${attempt}`, err);
         },
-      );
+      },
+    );
 
-      return {
-        id: (data as { id: string }).id,
-        text: (data as { text?: string }).text ?? text,
-      };
-    } catch (err: unknown) {
-      lastError = err;
-      const code =
-        typeof err === "object" && err !== null && "code" in err
-          ? (err as { code: number }).code
-          : undefined;
+    return {
+      id: data.id,
+      text: data.text ?? text,
+    };
+  } catch (err: unknown) {
+    const code =
+      typeof err === "object" && err !== null && "code" in err
+        ? (err as { code: number }).code
+        : undefined;
 
-      logTwitterError(`POST ${prefix}tweets failed`, err);
+    logTwitterError("v2 POST /2/tweets failed", err);
 
-      // Only fall back to next prefix on server errors (5xx)
-      if (code !== undefined && code >= 500 && code < 600) {
-        console.warn(
-          `  ⚠️ Server error ${code} from ${prefix}, trying next endpoint...`,
-        );
-        continue;
-      }
-
-      // For non-server errors (auth, bad request, etc.), fail immediately
+    // Only fall back on server errors (5xx); auth/client errors fail immediately
+    if (code === undefined || code < 500 || code >= 600) {
       throw err;
     }
+    console.warn(
+      `  ⚠️ v2 returned ${code}. Falling back to v1.1 statuses/update...`,
+    );
   }
 
-  // All endpoints exhausted
-  throw lastError;
+  // --- Attempt 2: API v1.1 fallback ---
+  try {
+    console.log(`  📡 Trying v1.1: POST /1.1/statuses/update.json`);
+    const v1Result = await withRetry(
+      () => client.v1.tweet(text),
+      {
+        maxRetries: 2,
+        baseDelayMs: 2000,
+        onRetry: (err, attempt, delayMs) => {
+          const code = (err as { code?: number }).code;
+          console.warn(
+            `  ⚠️ v1.1 returned ${code}, retry ${attempt}/2 after ${delayMs}ms...`,
+          );
+          logTwitterError(`v1.1 retry ${attempt}`, err);
+        },
+      },
+    );
+
+    return {
+      id: v1Result.id_str,
+      text: v1Result.full_text ?? v1Result.text ?? text,
+    };
+  } catch (err: unknown) {
+    logTwitterError("v1.1 POST /1.1/statuses/update.json failed", err);
+    throw err;
+  }
 }
 
 /**
  * Delete a tweet (used for test cleanup).
+ * Tries v2 first, falls back to v1.1.
  */
 export async function deleteTweet(
   tweetId: string,
@@ -459,7 +474,20 @@ export async function deleteTweet(
     accessSecret: credentials.accessSecret,
   });
 
-  await client.v2.deleteTweet(tweetId);
+  try {
+    await client.v2.deleteTweet(tweetId);
+  } catch (err: unknown) {
+    const code =
+      typeof err === "object" && err !== null && "code" in err
+        ? (err as { code: number }).code
+        : undefined;
+    if (code !== undefined && code >= 500 && code < 600) {
+      console.warn(`  ⚠️ v2 deleteTweet returned ${code}, trying v1.1...`);
+      await client.v1.deleteTweet(tweetId);
+    } else {
+      throw err;
+    }
+  }
 }
 
 // --- oEmbed Integration ---

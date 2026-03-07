@@ -248,7 +248,7 @@ The embed code follows the exact pattern used in existing reflection files:
 | No reflection for yesterday | Exit gracefully with info log |
 | Reflection already has tweet section | Skip (idempotent) |
 | Gemini API failure | Exit with error, no tweet posted |
-| Twitter API 5xx (e.g. 503) | Log full error details (data, headers, rate limits, stack trace), fall back from `api.x.com` to `api.twitter.com`, retry with exponential backoff |
+| Twitter API 5xx (e.g. 503) | Log full error details (data, headers, rate limits, stack trace), fall back from v2 `POST /2/tweets` to v1.1 `POST /1.1/statuses/update.json`, retry with exponential backoff |
 | Twitter API 4xx (auth/bad request) | Exit with error immediately, no retry |
 | oEmbed API failure | Fall back to locally generated embed code |
 | Obsidian Sync failure | Exit with error (tweet is already posted; re-run will skip posting and retry sync) |

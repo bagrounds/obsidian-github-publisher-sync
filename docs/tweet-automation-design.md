@@ -295,13 +295,41 @@ The Bluesky embed code follows the pattern used in existing content:
 | No reflection for yesterday | Exit gracefully with info log |
 | Reflection already has both embed sections | Skip (idempotent) |
 | Gemini API failure | Exit with error, no posts made |
-| Twitter API 5xx (e.g. 503) | Log error (non-fatal), retry v2 up to 5× with exponential backoff using `X-Idempotency-Key`, continue to Bluesky |
+| Twitter API 5xx (e.g. 503) | Log error (non-fatal), retry v2 up to 3× with 1s exponential backoff using `X-Idempotency-Key`, continue to Bluesky |
 | Twitter API 4xx (auth/bad request) | Log error (non-fatal), no retry, continue to Bluesky |
 | Twitter credentials not configured | Skip Twitter, continue to Bluesky |
 | Bluesky API failure | Log error (non-fatal), continue |
 | Bluesky credentials not configured | Skip Bluesky, continue |
+| Bluesky oEmbed 404 on fresh post | Wait 3s for propagation, retry once after 5s, fall back to local embed |
 | oEmbed API failure (either platform) | Fall back to locally generated embed code |
+| Obsidian Sync "already running" lock | Remove stale `.sync.lock` before push, retry |
 | Obsidian Sync failure | Exit with error (posts already made; re-run will skip posting and retry sync) |
+
+### Architecture: Parallel Platform Posting
+
+Social platform posts (Twitter + Bluesky) run in **parallel** using `Promise.allSettled`.
+Each platform's posting task includes the API post call and embed HTML generation.
+Failures on one platform don't affect the other. Results are collected after all tasks settle.
+
+### 5 Whys: Bluesky oEmbed 404 on Fresh Posts
+
+1. **Why did oEmbed return 404?** The Bluesky oEmbed API at `embed.bsky.app/oembed` didn't recognize the post URL.
+2. **Why wasn't the post recognized?** Bluesky uses a decentralized architecture (AT Protocol); freshly created posts need time to propagate to the public embedding service.
+3. **Why does propagation take time?** Read-after-write consistency isn't guaranteed across federated services — the post exists on the PDS but the oEmbed indexer hasn't processed it yet.
+4. **Why didn't we account for this?** The oEmbed call was made immediately after posting, with no delay for propagation.
+5. **Why was the fallback embed slightly different?** The local embed generator didn't include the `data-bluesky-cid` attribute present in oEmbed responses.
+
+**Fix:** Added a 3-second delay before the first oEmbed attempt, retry after 5s on 404, and improved local embed generation to include the CID attribute from the post response. The local fallback now closely matches the format used in existing content files.
+
+### 5 Whys: Obsidian Sync "Another Instance Already Running"
+
+1. **Why did the push fail?** The `ob sync` command reported "Another sync instance is already running for this vault."
+2. **Why did it think another instance was running?** A `.sync.lock` directory exists inside `.obsidian/` in the vault directory.
+3. **Why was the lock still present?** The previous `ob sync` (pull operation) created the lock and didn't clean it up properly after completing.
+4. **Why didn't the first sync clean up?** The `ob sync` command creates a lock to prevent concurrent syncs, but in CI where we do pull → modify → push as separate `ob sync` invocations, the lock from the first invocation blocks the second.
+5. **Why are we calling `ob sync` twice?** We need to pull the latest vault content first, modify a file, then push the changes back — this requires two separate sync operations.
+
+**Fix:** Added `removeSyncLock()` that deletes `.obsidian/.sync.lock` before the push operation. This is safe in CI because we control the vault directory exclusively — there's no actual concurrent sync to protect against. See [obsidianmd/obsidian-headless#4](https://github.com/obsidianmd/obsidian-headless/issues/4).
 
 ## Testing Strategy
 

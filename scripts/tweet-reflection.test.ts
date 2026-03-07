@@ -722,6 +722,21 @@ describe("generateLocalBlueskyEmbed", () => {
     assert.ok(html.includes("March 5, 2026"));
   });
 
+  test("includes CID attribute when provided", () => {
+    const uri = "at://did:plc:i4yli6h7x2uoj7acxunww2fc/app.bsky.feed.post/3ltxsqnjf6s2b";
+    const cid = "bafyreiadbkurhsz5y7pahts54w63ofclzwu7ea6d6pbvbep3sjmhkcitxq";
+    const html = generateLocalBlueskyEmbed(uri, "test", "2026-03-05", cid);
+
+    assert.ok(html.includes(`data-bluesky-cid="${cid}"`));
+  });
+
+  test("omits CID attribute when not provided", () => {
+    const uri = "at://did:plc:test/app.bsky.feed.post/abc123";
+    const html = generateLocalBlueskyEmbed(uri, "test", "2026-03-05");
+
+    assert.ok(!html.includes("data-bluesky-cid"));
+  });
+
   test("HTML-encodes special characters", () => {
     const uri = "at://did:plc:test/app.bsky.feed.post/abc123";
     const text = '<script>alert("xss")</script>';

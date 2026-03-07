@@ -438,8 +438,8 @@ describe("validateEnvironment", () => {
     delete process.env.TWITTER_ACCESS_TOKEN;
     delete process.env.TWITTER_ACCESS_SECRET;
     delete process.env.GEMINI_API_KEY;
-    delete process.env.OBSIDIAN_API_URL;
-    delete process.env.OBSIDIAN_API_KEY;
+    delete process.env.OBSIDIAN_AUTH_TOKEN;
+    delete process.env.OBSIDIAN_VAULT_NAME;
 
     assert.throws(
       () => validateEnvironment(),
@@ -453,8 +453,8 @@ describe("validateEnvironment", () => {
     process.env.TWITTER_ACCESS_TOKEN = "test-token";
     process.env.TWITTER_ACCESS_SECRET = "test-access-secret";
     process.env.GEMINI_API_KEY = "test-gemini-key";
-    process.env.OBSIDIAN_API_URL = "https://obsidian.example.com:27124";
-    process.env.OBSIDIAN_API_KEY = "test-obsidian-key";
+    process.env.OBSIDIAN_AUTH_TOKEN = "test-auth-token";
+    process.env.OBSIDIAN_VAULT_NAME = "My Vault";
 
     const env = validateEnvironment();
     assert.equal(env.twitter.apiKey, "test-key");
@@ -462,21 +462,23 @@ describe("validateEnvironment", () => {
     assert.equal(env.twitter.accessToken, "test-token");
     assert.equal(env.twitter.accessSecret, "test-access-secret");
     assert.equal(env.gemini.apiKey, "test-gemini-key");
-    assert.equal(env.obsidian.apiUrl, "https://obsidian.example.com:27124");
-    assert.equal(env.obsidian.apiKey, "test-obsidian-key");
+    assert.equal(env.obsidian.authToken, "test-auth-token");
+    assert.equal(env.obsidian.vaultName, "My Vault");
+    assert.equal(env.obsidian.vaultPassword, undefined);
   });
 
-  test("strips trailing slashes from Obsidian API URL", () => {
+  test("includes optional vault password when set", () => {
     process.env.TWITTER_API_KEY = "k";
     process.env.TWITTER_API_SECRET = "s";
     process.env.TWITTER_ACCESS_TOKEN = "t";
     process.env.TWITTER_ACCESS_SECRET = "as";
     process.env.GEMINI_API_KEY = "g";
-    process.env.OBSIDIAN_API_URL = "https://obsidian.example.com:27124///";
-    process.env.OBSIDIAN_API_KEY = "ok";
+    process.env.OBSIDIAN_AUTH_TOKEN = "token";
+    process.env.OBSIDIAN_VAULT_NAME = "vault";
+    process.env.OBSIDIAN_VAULT_PASSWORD = "my-secret-password";
 
     const env = validateEnvironment();
-    assert.equal(env.obsidian.apiUrl, "https://obsidian.example.com:27124");
+    assert.equal(env.obsidian.vaultPassword, "my-secret-password");
   });
 
   test("reports specific missing variables", () => {
@@ -485,8 +487,8 @@ describe("validateEnvironment", () => {
     delete process.env.TWITTER_ACCESS_TOKEN;
     process.env.TWITTER_ACCESS_SECRET = "set";
     delete process.env.GEMINI_API_KEY;
-    process.env.OBSIDIAN_API_URL = "set";
-    delete process.env.OBSIDIAN_API_KEY;
+    process.env.OBSIDIAN_AUTH_TOKEN = "set";
+    delete process.env.OBSIDIAN_VAULT_NAME;
 
     try {
       validateEnvironment();
@@ -496,9 +498,9 @@ describe("validateEnvironment", () => {
       assert.ok(msg.includes("TWITTER_API_SECRET"));
       assert.ok(msg.includes("TWITTER_ACCESS_TOKEN"));
       assert.ok(msg.includes("GEMINI_API_KEY"));
-      assert.ok(msg.includes("OBSIDIAN_API_KEY"));
+      assert.ok(msg.includes("OBSIDIAN_VAULT_NAME"));
       assert.ok(!msg.includes("TWITTER_API_KEY"));
-      assert.ok(!msg.includes("OBSIDIAN_API_URL"));
+      assert.ok(!msg.includes("OBSIDIAN_AUTH_TOKEN"));
     }
   });
 });

@@ -14,11 +14,11 @@
 **Key Insight:** The Enveloppe plugin performs **one-way sync** from the user's Obsidian
 vault to this GitHub repository. Any changes committed directly to the repo would be
 overwritten on the next Enveloppe publish. Therefore, to persist changes to a note, we must
-write to the **Obsidian vault** (via the Local REST API), not to the git repository.
+write to the **Obsidian vault**, not to the git repository.
 
 **Read vs Write paths:**
 - **Reading**: We read the reflection from the checked-out repo (it's the published copy)
-- **Writing**: We write the tweet embed to the Obsidian vault via the Local REST API
+- **Writing**: We write the tweet embed to the Obsidian vault via Headless Sync
 - The user reviews the change in Obsidian and publishes it to GitHub via Enveloppe
 
 ### 2. Analyzing Existing Tweet Embeds
@@ -65,11 +65,15 @@ https://t.co/mXLn8dlc56</p>&mdash; Bryan Grounds (@bagrounds)
 - **Docs:** [oEmbed API](https://developer.x.com/en/docs/twitter-for-websites/oembed-api)
 
 #### Vault Write Operations
-- **Choice:** [Obsidian Local REST API](https://github.com/coddingtonbear/obsidian-local-rest-api) plugin
-- **Rationale:** Only way to write to the Obsidian vault from an external process. The
-  Enveloppe plugin does one-way sync (Obsidian → GitHub), so git commits would be overwritten.
-- **Requirements:** Obsidian desktop must be running with the plugin, exposed via a tunnel
-- **Docs:** [Interactive API docs](https://coddingtonbear.github.io/obsidian-local-rest-api/)
+- **Choice:** [Obsidian Headless Sync](https://help.obsidian.md/sync/headless) via
+  [`obsidian-headless`](https://github.com/obsidianmd/obsidian-headless) CLI
+- **Rationale:** Official, server-side approach. No dependency on the Obsidian desktop app being
+  open or a tunnel/proxy from a laptop. Works reliably from CI/CD.
+- **Alternative considered:** Obsidian Local REST API — rejected because it requires the
+  desktop app running with a tunnel (fragile: laptop could be off, asleep, unplugged)
+- **Requirements:** Active Obsidian Sync subscription, Node.js 22+
+- **Docs:** [Headless Sync guide](https://help.obsidian.md/sync/headless),
+  [GitHub README](https://github.com/obsidianmd/obsidian-headless)
 
 ### 4. Architecture Decisions
 
@@ -128,23 +132,36 @@ The workflow runs at 17:00 UTC and posts the **previous day's** reflection.
 - Morning Pacific time is good for tweet visibility
 - Posting yesterday's note ensures it's finalized
 
-### Challenge: Obsidian API Accessibility
+### Challenge: Obsidian Vault Access — Evolution of Approach
 
-The Obsidian Local REST API runs on the user's desktop machine. For GitHub Actions to
-reach it, the user must expose it via a tunnel service:
-- **Cloudflare Tunnel** (free): `cloudflared tunnel` maps a public URL to localhost:27124
-- **ngrok** (free tier): `ngrok http 27124` creates a public URL
-- **Tailscale Funnel**: If using Tailscale VPN, expose via `tailscale funnel`
+**v1: Direct git commit** (rejected)
+The initial approach was to modify the file in the checked-out repo and commit via
+`stefanzweifel/git-auto-commit-action`. However, the Enveloppe plugin does one-way sync
+(Obsidian → GitHub), so the commit would be overwritten on the next publish.
 
-The user saves the public URL as `OBSIDIAN_API_URL` in GitHub Actions secrets.
-Obsidian desktop must be running when the workflow executes (daily at ~9 AM Pacific).
+**v2: Obsidian Local REST API** (rejected)
+The second approach used the [Local REST API](https://github.com/coddingtonbear/obsidian-local-rest-api)
+plugin. This required the Obsidian desktop app to be running, exposed via a tunnel (ngrok,
+Cloudflare Tunnel). Fragile: the laptop could be unplugged, restarted, or sleeping when the
+workflow fires at 9 AM.
+
+**v3: Obsidian Headless Sync** (current)
+The official [`obsidian-headless`](https://github.com/obsidianmd/obsidian-headless) CLI
+syncs vaults from the command line. The workflow:
+1. Installs `obsidian-headless` globally
+2. Uses `OBSIDIAN_AUTH_TOKEN` for non-interactive authentication
+3. Runs `ob sync-setup` to connect to the remote vault
+4. Runs `ob sync` to pull the vault to a temp directory
+5. Modifies the file locally
+6. Runs `ob sync` again to push the change
+No dependency on a running desktop app or tunnel. Requires an Obsidian Sync subscription.
 
 ### Challenge: One-Way Sync (Enveloppe)
 
 The Enveloppe plugin syncs Obsidian → GitHub only. Writing directly to the repo would
 cause the changes to be overwritten on the next publish. By writing to the Obsidian vault
-via the Local REST API, the tweet embed becomes part of the canonical source and flows
-through the normal Enveloppe publish pipeline when the user next publishes.
+via Headless Sync, the tweet embed becomes part of the canonical source and flows through
+the normal Enveloppe publish pipeline when the user next publishes.
 
 ### Twitter OAuth 1.0a Credentials
 
@@ -170,12 +187,33 @@ new TwitterApi({
 })
 ```
 
+### Obsidian Headless Sync in CI
+
+The `obsidian-headless` package uses the `OBSIDIAN_AUTH_TOKEN` environment variable for
+non-interactive authentication. To obtain the token:
+
+1. Run `ob login` on a machine with a terminal
+2. Extract the token from `~/.config/obsidian-headless/` or keychain
+3. Save it as a GitHub Actions secret
+
+For E2EE vaults, the vault password must also be provided via `OBSIDIAN_VAULT_PASSWORD`.
+
+The sync flow in CI:
+```shell
+npm install -g obsidian-headless
+ob sync-setup --vault "$OBSIDIAN_VAULT_NAME" --path /tmp/vault
+ob sync --path /tmp/vault      # Pull
+# ... modify files ...
+ob sync --path /tmp/vault      # Push
+```
+
 ## Lessons Learned
 
 ### 1. Vault Access Pattern
 The Enveloppe plugin performs one-way sync (Obsidian → GitHub). To persist changes to notes,
-we must write to the Obsidian vault via the Local REST API, not commit to git. The repo copy
-is read-only for our purposes.
+we must write to the Obsidian vault, not commit to git. The officially supported approach is
+[Obsidian Headless Sync](https://help.obsidian.md/sync/headless), which works reliably from
+CI without depending on a running desktop app.
 
 ### 2. Tweet Embed Consistency
 All 80+ existing tweet embeds follow an identical format. The oEmbed API returns this exact

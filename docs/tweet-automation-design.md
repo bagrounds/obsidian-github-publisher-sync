@@ -5,7 +5,8 @@
 Automated daily tweet publishing system for the bagrounds.org digital garden. A GitHub Actions
 workflow runs on a cron schedule each morning, reads **yesterday's** reflection note from the
 repo, uses Google Gemini to generate a tweet, posts it via the Twitter/X API, fetches the embed
-HTML, and writes the updated note back to the **Obsidian vault** via the Obsidian Local REST API.
+HTML, and writes the updated note back to the **Obsidian vault** via
+[Obsidian Headless Sync](https://help.obsidian.md/sync/headless).
 
 The user reviews the change in Obsidian (e.g. on their phone) and publishes it to this repo via
 the Enveloppe plugin, at which point the deploy workflow rebuilds and publishes the site.
@@ -21,9 +22,10 @@ the Enveloppe plugin, at which point the deploy workflow rebuilds and publishes 
                                                                          │
                         ┌──────────────┐     ┌──────────────┐           │
                         │  Obsidian    │◀────│  oEmbed API  │◀──────────┘
-                        │  Local REST  │     │  Get Embed   │
-                        │  API: Update │     │  HTML        │
-                        │  Note        │     └──────────────┘
+                        │  Headless    │     │  Get Embed   │
+                        │  Sync: Pull, │     │  HTML        │
+                        │  Update,     │     └──────────────┘
+                        │  Push        │
                         └──────┬───────┘
                                │
                         ┌──────▼───────┐     ┌──────────────┐
@@ -74,17 +76,26 @@ the Enveloppe plugin, at which point the deploy workflow rebuilds and publishes 
 - Returns HTML blockquote embed code
 - Falls back to generating embed code locally if oEmbed API is unavailable
 
-### Step 6: Update Note in Obsidian Vault
+### Step 6: Update Note in Obsidian Vault via Headless Sync
 
-- Reads the current note from the Obsidian vault via the **Local REST API**
+- Installs [`obsidian-headless`](https://github.com/obsidianmd/obsidian-headless) globally
+- Authenticates using `OBSIDIAN_AUTH_TOKEN` environment variable
+- Runs `ob sync-setup` to connect to the remote vault
+- Runs `ob sync` to pull the latest vault content to a temp directory
+- Reads the reflection note from the synced vault
 - Appends `## 🐦 Tweet` section at the end of the note
-- Writes the updated note back to Obsidian
-- The user reviews the change in Obsidian and publishes to GitHub via Enveloppe
+- Runs `ob sync` again to push the change back to Obsidian Sync
+- The user sees the update on their phone (or any Obsidian device) and reviews it
 
-**Why Obsidian API instead of git commit?** The Enveloppe plugin performs one-way sync from
-Obsidian → GitHub. If we committed directly to the repo, the next Enveloppe publish would
-overwrite our changes. By writing to the Obsidian vault, the change becomes part of the
-canonical source and flows through the normal publish pipeline.
+**Why Obsidian Headless Sync instead of git commit?** The Enveloppe plugin performs one-way
+sync from Obsidian → GitHub. If we committed directly to the repo, the next Enveloppe publish
+would overwrite our changes. By writing to the Obsidian vault via Headless Sync, the change
+becomes part of the canonical source and flows through the normal publish pipeline.
+
+**Why Headless Sync instead of the Local REST API?** The Local REST API requires the Obsidian
+desktop app to be running with a tunnel (ngrok/Cloudflare) — fragile if the laptop is
+unplugged, restarted, etc. Headless Sync is the official, server-side approach that works
+reliably from CI without any dependency on a running desktop machine.
 
 ## File Structure
 
@@ -111,8 +122,14 @@ docs/
 | `TWITTER_ACCESS_TOKEN` | OAuth 1.0a **Access Token** | X Developer Portal → App → Keys and Tokens → Authentication Tokens → Access Token |
 | `TWITTER_ACCESS_SECRET` | OAuth 1.0a **Access Token Secret** | X Developer Portal → App → Keys and Tokens → Authentication Tokens → Access Token Secret |
 | `GEMINI_API_KEY` | Google Gemini API Key | Google AI Studio → API Keys |
-| `OBSIDIAN_API_URL` | Obsidian Local REST API base URL | Plugin settings (e.g. `https://your-tunnel.example.com:27124`) |
-| `OBSIDIAN_API_KEY` | Obsidian Local REST API key | Plugin settings → Copy API Key |
+| `OBSIDIAN_AUTH_TOKEN` | Obsidian account auth token | Run `ob login` locally, then extract from credentials file |
+| `OBSIDIAN_VAULT_NAME` | Remote vault name or ID | Run `ob sync-list-remote` to see vault names |
+
+### Optional Secrets
+
+| Secret Name | Description | When Needed |
+|---|---|---|
+| `OBSIDIAN_VAULT_PASSWORD` | E2EE vault password | Only if vault uses end-to-end encryption |
 
 ### How to Set GitHub Actions Secrets
 
@@ -152,17 +169,30 @@ docs/
 4. Select or create a Google Cloud project
 5. Copy the generated key → save as `GEMINI_API_KEY`
 
-#### Obsidian Local REST API
+#### Obsidian Headless Sync Credentials
 
-1. In Obsidian desktop, install the **Local REST API** community plugin
-   ([GitHub](https://github.com/coddingtonbear/obsidian-local-rest-api))
-2. Enable the plugin in Settings → Community Plugins
-3. In the plugin settings, copy the **API Key** → save as `OBSIDIAN_API_KEY`
-4. The default URL is `https://127.0.0.1:27124`
-5. To make it accessible from GitHub Actions, expose it via a tunnel service
-   (e.g. Cloudflare Tunnel, ngrok, or Tailscale Funnel)
-6. Save the public tunnel URL as `OBSIDIAN_API_URL` (e.g. `https://obsidian.your-domain.com`)
-7. Ensure Obsidian desktop is running with the plugin enabled when the workflow executes
+> **Prerequisite:** You need an active [Obsidian Sync subscription](https://obsidian.md/sync).
+
+1. Install obsidian-headless:
+   ```shell
+   npm install -g obsidian-headless
+   ```
+2. Log in to your Obsidian account:
+   ```shell
+   ob login
+   ```
+3. List your remote vaults to get the vault name:
+   ```shell
+   ob sync-list-remote
+   ```
+   Save the vault name as `OBSIDIAN_VAULT_NAME`
+4. Extract your auth token. After `ob login`, the token is stored locally.
+   Check `~/.config/obsidian-headless/` for a credentials file containing the token.
+   Save the token value as `OBSIDIAN_AUTH_TOKEN`
+5. If your vault uses end-to-end encryption, save the password as `OBSIDIAN_VAULT_PASSWORD`
+
+For more details see the [Obsidian Headless docs](https://help.obsidian.md/headless) and
+the [Headless Sync guide](https://help.obsidian.md/sync/headless).
 
 ## Tweet Format
 
@@ -201,7 +231,7 @@ The embed code follows the exact pattern used in existing reflection files:
 | Gemini API failure | Exit with error, no tweet posted |
 | Twitter API failure | Exit with error, no Obsidian update |
 | oEmbed API failure | Fall back to locally generated embed code |
-| Obsidian API unreachable | Exit with error (tweet is already posted; re-run will skip posting and retry Obsidian write) |
+| Obsidian Sync failure | Exit with error (tweet is already posted; re-run will skip posting and retry sync) |
 
 ## Testing Strategy
 
@@ -227,7 +257,6 @@ The embed code follows the exact pattern used in existing reflection files:
 - **Gemini integration**: Send prompt, verify response format
 - **Twitter integration**: Post and delete test tweet
 - **oEmbed integration**: Fetch embed for known tweet
-- **Obsidian integration**: Read and write a test note (if Obsidian API available)
 
 Integration tests are gated behind the `RUN_INTEGRATION_TESTS` environment variable
 and clean up all created resources (tweets, file modifications) after completion.
@@ -250,10 +279,11 @@ varies: 9:00 AM PST (Nov–Mar) or 10:00 AM PDT (Mar–Nov).
 
 - All API credentials stored as GitHub Actions secrets (encrypted at rest)
 - Secrets never logged or exposed in workflow output
-- The workflow only needs `contents: read` permission (no write — Obsidian handles updates)
+- The workflow only needs `contents: read` permission (no git write)
 - Twitter OAuth 1.0a tokens are scoped to the specific user account
 - Gemini API key has no billing by default (free tier)
-- Obsidian API key should be kept secret; the tunnel should use HTTPS
+- Obsidian auth token grants access to vault content — keep it secret
+- `OBSIDIAN_VAULT_PASSWORD` (if used) protects E2EE vault decryption
 
 ## Libraries & Services Reference
 
@@ -273,12 +303,16 @@ varies: 9:00 AM PST (Nov–Mar) or 10:00 AM PDT (Mar–Nov).
 - **Purpose**: Generate tweet text from reflection content using Gemini 2.0 Flash
 - **Key methods**: `genAI.getGenerativeModel()`, `model.generateContent()`
 
-### Obsidian Local REST API (plugin)
+### obsidian-headless (npm)
 
-- **Plugin**: [obsidian-local-rest-api](https://github.com/coddingtonbear/obsidian-local-rest-api)
-- **API Docs**: [Interactive API Documentation](https://coddingtonbear.github.io/obsidian-local-rest-api/)
-- **Purpose**: Read and write notes in the Obsidian vault from external scripts
-- **Key endpoints**: `GET /vault/{path}`, `PUT /vault/{path}`
+- **Package**: [`obsidian-headless`](https://www.npmjs.com/package/obsidian-headless)
+- **GitHub**: [obsidianmd/obsidian-headless](https://github.com/obsidianmd/obsidian-headless)
+- **Docs**: [Headless Sync guide](https://help.obsidian.md/sync/headless),
+  [Obsidian Headless overview](https://help.obsidian.md/headless)
+- **Purpose**: Sync vault content from the command line without the desktop app
+- **Key commands**: `ob login`, `ob sync-setup`, `ob sync`, `ob sync-list-remote`
+- **Auth**: `OBSIDIAN_AUTH_TOKEN` env var for non-interactive CI use
+- **Requires**: Node.js 22+, active [Obsidian Sync](https://obsidian.md/sync) subscription
 
 ### Twitter oEmbed API
 
@@ -297,3 +331,9 @@ varies: 9:00 AM PST (Nov–Mar) or 10:00 AM PDT (Mar–Nov).
 - **GitHub**: [Enveloppe/obsidian-enveloppe](https://github.com/Enveloppe/obsidian-enveloppe)
 - **Purpose**: One-way sync from Obsidian vault → this GitHub repository
 - **Note**: This is why we write to Obsidian (not to git) — Enveloppe would overwrite git changes
+
+### Obsidian Sync
+
+- **Docs**: [Obsidian Sync](https://help.obsidian.md/obsidian-sync/introduction)
+- **Pricing**: [Plans and storage limits](https://help.obsidian.md/plans-and-billing/plans-and-storage-limits)
+- **Purpose**: Cloud sync service that powers both the desktop app and Headless Sync

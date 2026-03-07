@@ -3,7 +3,7 @@
  *
  * Reads yesterday's reflection from the repo, generates a tweet via Gemini,
  * posts it to Twitter, fetches the embed code, and writes the updated note
- * back to the Obsidian vault via the Obsidian Local REST API.
+ * back to the Obsidian vault via Obsidian Headless Sync.
  *
  * The user reviews the change in Obsidian and publishes it to this repo
  * via the Enveloppe plugin (one-way sync: Obsidian → GitHub).
@@ -12,22 +12,25 @@
  *   npx tsx scripts/tweet-reflection.ts [--date YYYY-MM-DD] [--dry-run]
  *
  * Environment variables:
- *   TWITTER_API_KEY      - OAuth 1.0a Consumer Key (from X Developer Portal → Keys and Tokens)
- *   TWITTER_API_SECRET   - OAuth 1.0a Consumer Secret
- *   TWITTER_ACCESS_TOKEN - OAuth 1.0a Access Token (generated with Read+Write permissions)
+ *   TWITTER_API_KEY       - OAuth 1.0a Consumer Key (from X Developer Portal → Keys and Tokens)
+ *   TWITTER_API_SECRET    - OAuth 1.0a Consumer Secret
+ *   TWITTER_ACCESS_TOKEN  - OAuth 1.0a Access Token (generated with Read+Write permissions)
  *   TWITTER_ACCESS_SECRET - OAuth 1.0a Access Token Secret
- *   GEMINI_API_KEY       - Google Gemini API key (from Google AI Studio)
- *   OBSIDIAN_API_URL     - Obsidian Local REST API base URL (e.g. https://your-tunnel.example.com:27124)
- *   OBSIDIAN_API_KEY     - Obsidian Local REST API key (from plugin settings)
+ *   GEMINI_API_KEY        - Google Gemini API key (from Google AI Studio)
+ *   OBSIDIAN_AUTH_TOKEN   - Obsidian account auth token (from `ob login`)
+ *   OBSIDIAN_VAULT_NAME   - Remote vault name or ID in Obsidian Sync
+ *   OBSIDIAN_VAULT_PASSWORD - (Optional) E2EE vault password, if vault uses end-to-end encryption
  *
  * @see https://github.com/PLhery/node-twitter-api-v2 — twitter-api-v2 docs
  * @see https://ai.google.dev/gemini-api/docs — Google Gemini API docs
- * @see https://github.com/coddingtonbear/obsidian-local-rest-api — Obsidian Local REST API
+ * @see https://help.obsidian.md/sync/headless — Obsidian Headless Sync docs
+ * @see https://github.com/obsidianmd/obsidian-headless — obsidian-headless CLI
  * @see https://developer.x.com/en/docs/twitter-api — X/Twitter API v2 docs
  */
 
 import fs from "node:fs";
 import path from "node:path";
+import { execFile } from "node:child_process";
 
 // --- Types ---
 
@@ -421,71 +424,118 @@ export function appendTweetSection(filePath: string, embedHtml: string): void {
   fs.writeFileSync(filePath, content + buildTweetSection(content, embedHtml), "utf-8");
 }
 
-// --- Obsidian Local REST API Integration ---
+// --- Obsidian Headless Sync Integration ---
 
 /**
- * Read a note from the Obsidian vault via the Local REST API.
+ * Run the `ob` CLI command with arguments.
+ * Uses OBSIDIAN_AUTH_TOKEN for non-interactive authentication.
  *
- * @see https://coddingtonbear.github.io/obsidian-local-rest-api/
+ * @see https://help.obsidian.md/sync/headless
+ * @see https://github.com/obsidianmd/obsidian-headless
  */
-export async function readObsidianNote(
-  notePath: string,
-  credentials: { apiUrl: string; apiKey: string },
-): Promise<string> {
-  const url = `${credentials.apiUrl}/vault/${encodeURIComponent(notePath)}`;
-  const response = await fetch(url, {
-    headers: {
-      Authorization: `Bearer ${credentials.apiKey}`,
-      Accept: "text/markdown",
-    },
+export function runObCommand(
+  args: string[],
+  options: { cwd?: string; env?: Record<string, string> } = {},
+): Promise<{ stdout: string; stderr: string }> {
+  return new Promise((resolve, reject) => {
+    const env = { ...process.env, ...options.env };
+    execFile("ob", args, { cwd: options.cwd, env }, (error, stdout, stderr) => {
+      if (error) {
+        reject(
+          new Error(
+            `ob ${args.join(" ")} failed: ${error.message}\nstdout: ${stdout}\nstderr: ${stderr}`,
+          ),
+        );
+        return;
+      }
+      resolve({ stdout, stderr });
+    });
   });
-
-  if (!response.ok) {
-    throw new Error(
-      `Obsidian API GET ${notePath} returned ${response.status}: ${response.statusText}`,
-    );
-  }
-
-  return response.text();
 }
 
 /**
- * Write (replace) a note in the Obsidian vault via the Local REST API.
+ * Set up and sync an Obsidian vault to a local directory using Headless Sync.
+ * Pulls the latest vault content from Obsidian Sync.
  *
- * @see https://coddingtonbear.github.io/obsidian-local-rest-api/
+ * @returns The local vault path where files were synced
  */
-export async function writeObsidianNote(
-  notePath: string,
-  content: string,
-  credentials: { apiUrl: string; apiKey: string },
+export async function syncObsidianVault(credentials: {
+  authToken: string;
+  vaultName: string;
+  vaultPassword?: string;
+}): Promise<string> {
+  const vaultDir = path.join(
+    process.env.RUNNER_TEMP || "/tmp",
+    "obsidian-vault",
+  );
+  fs.mkdirSync(vaultDir, { recursive: true });
+
+  const env: Record<string, string> = {
+    OBSIDIAN_AUTH_TOKEN: credentials.authToken,
+  };
+
+  // Set up the vault for syncing
+  const setupArgs = [
+    "sync-setup",
+    "--vault",
+    credentials.vaultName,
+    "--path",
+    vaultDir,
+  ];
+  if (credentials.vaultPassword) {
+    setupArgs.push("--password", credentials.vaultPassword);
+  }
+
+  console.log(`🔧 Setting up Obsidian Sync for vault: ${credentials.vaultName}`);
+  await runObCommand(setupArgs, { env });
+
+  // Pull latest content
+  console.log(`📥 Pulling latest vault content...`);
+  await runObCommand(["sync", "--path", vaultDir], { env });
+
+  return vaultDir;
+}
+
+/**
+ * Push local changes back to the Obsidian vault via Headless Sync.
+ */
+export async function pushObsidianVault(
+  vaultDir: string,
+  credentials: { authToken: string },
 ): Promise<void> {
-  const url = `${credentials.apiUrl}/vault/${encodeURIComponent(notePath)}`;
-  const response = await fetch(url, {
-    method: "PUT",
-    headers: {
-      Authorization: `Bearer ${credentials.apiKey}`,
-      "Content-Type": "text/markdown",
-    },
-    body: content,
-  });
+  const env: Record<string, string> = {
+    OBSIDIAN_AUTH_TOKEN: credentials.authToken,
+  };
 
-  if (!response.ok) {
-    throw new Error(
-      `Obsidian API PUT ${notePath} returned ${response.status}: ${response.statusText}`,
-    );
-  }
+  console.log(`📤 Pushing changes to Obsidian Sync...`);
+  await runObCommand(["sync", "--path", vaultDir], { env });
 }
 
 /**
- * Append the tweet section to a note in the Obsidian vault.
- * Reads the current content, checks idempotency, and writes back with the tweet section.
+ * Update a note in the Obsidian vault via Headless Sync.
+ * Pulls vault → modifies file → pushes back.
  */
 export async function appendTweetToObsidianNote(
   notePath: string,
   embedHtml: string,
-  credentials: { apiUrl: string; apiKey: string },
+  credentials: {
+    authToken: string;
+    vaultName: string;
+    vaultPassword?: string;
+  },
 ): Promise<void> {
-  const content = await readObsidianNote(notePath, credentials);
+  // Pull vault
+  const vaultDir = await syncObsidianVault(credentials);
+
+  // Read note from synced vault
+  const filePath = path.join(vaultDir, notePath);
+  if (!fs.existsSync(filePath)) {
+    throw new Error(
+      `Note not found in Obsidian vault: ${notePath} (looked at ${filePath})`,
+    );
+  }
+
+  const content = fs.readFileSync(filePath, "utf-8");
 
   if (content.includes(TWEET_SECTION_HEADER)) {
     console.log(
@@ -494,9 +544,17 @@ export async function appendTweetToObsidianNote(
     return;
   }
 
-  const updatedContent = content + buildTweetSection(content, embedHtml);
+  // Update the file
+  fs.writeFileSync(
+    filePath,
+    content + buildTweetSection(content, embedHtml),
+    "utf-8",
+  );
 
-  await writeObsidianNote(notePath, updatedContent, credentials);
+  // Push changes back
+  await pushObsidianVault(vaultDir, {
+    authToken: credentials.authToken,
+  });
 }
 
 // --- Main Pipeline ---
@@ -542,7 +600,11 @@ export function validateEnvironment(): {
     accessSecret: string;
   };
   gemini: { apiKey: string };
-  obsidian: { apiUrl: string; apiKey: string };
+  obsidian: {
+    authToken: string;
+    vaultName: string;
+    vaultPassword?: string;
+  };
 } {
   const required = [
     "TWITTER_API_KEY",
@@ -550,8 +612,8 @@ export function validateEnvironment(): {
     "TWITTER_ACCESS_TOKEN",
     "TWITTER_ACCESS_SECRET",
     "GEMINI_API_KEY",
-    "OBSIDIAN_API_URL",
-    "OBSIDIAN_API_KEY",
+    "OBSIDIAN_AUTH_TOKEN",
+    "OBSIDIAN_VAULT_NAME",
   ];
 
   const missing = required.filter((key) => !process.env[key]);
@@ -570,8 +632,9 @@ export function validateEnvironment(): {
     },
     gemini: { apiKey: process.env.GEMINI_API_KEY as string },
     obsidian: {
-      apiUrl: (process.env.OBSIDIAN_API_URL as string).replace(/\/+$/, ""),
-      apiKey: process.env.OBSIDIAN_API_KEY as string,
+      authToken: process.env.OBSIDIAN_AUTH_TOKEN as string,
+      vaultName: process.env.OBSIDIAN_VAULT_NAME as string,
+      vaultPassword: process.env.OBSIDIAN_VAULT_PASSWORD || undefined,
     },
   };
 }
@@ -637,11 +700,11 @@ export async function main(options?: {
   const embedHtml = await getEmbedHtml(tweet.id, tweet.text, date);
   console.log(`📋 Got embed HTML (${embedHtml.length} chars)`);
 
-  // Step 6: Write tweet section to Obsidian vault via Local REST API
+  // Step 6: Write tweet section to Obsidian vault via Headless Sync
   const obsidianNotePath = `reflections/${date}.md`;
   console.log(`📝 Writing tweet section to Obsidian note: ${obsidianNotePath}`);
   await appendTweetToObsidianNote(obsidianNotePath, embedHtml, env.obsidian);
-  console.log(`✅ Obsidian note updated (review in Obsidian and publish)`);
+  console.log(`✅ Obsidian vault updated via Headless Sync (review in Obsidian and publish)`);
 
   console.log(`🎉 Done! Tweet posted and Obsidian note updated for ${date}`);
 }

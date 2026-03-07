@@ -262,10 +262,56 @@ export async function generateTweetWithGemini(
   return text;
 }
 
+// --- Retry Utility ---
+
+/** HTTP status codes that indicate a transient server error worth retrying. */
+const TRANSIENT_HTTP_CODES = new Set([429, 502, 503, 504]);
+
+/**
+ * Retry an async operation with exponential backoff for transient errors.
+ * Only retries when the error has an HTTP `code` in TRANSIENT_HTTP_CODES.
+ */
+export async function withRetry<T>(
+  fn: () => Promise<T>,
+  {
+    maxRetries = 3,
+    baseDelayMs = 1000,
+    onRetry,
+  }: {
+    maxRetries?: number;
+    baseDelayMs?: number;
+    onRetry?: (error: unknown, attempt: number, delayMs: number) => void;
+  } = {},
+): Promise<T> {
+  let lastError: unknown;
+  for (let attempt = 0; attempt <= maxRetries; attempt++) {
+    try {
+      return await fn();
+    } catch (err: unknown) {
+      lastError = err;
+      const code =
+        typeof err === "object" && err !== null && "code" in err
+          ? (err as { code: number }).code
+          : undefined;
+
+      if (attempt < maxRetries && code !== undefined && TRANSIENT_HTTP_CODES.has(code)) {
+        const delayMs = baseDelayMs * 2 ** attempt;
+        onRetry?.(err, attempt + 1, delayMs);
+        await new Promise((resolve) => setTimeout(resolve, delayMs));
+      } else {
+        throw err;
+      }
+    }
+  }
+  /* istanbul ignore next — unreachable, but satisfies TypeScript */
+  throw lastError;
+}
+
 // --- Twitter Integration ---
 
 /**
  * Post a tweet using the Twitter API v2.
+ * Retries on transient HTTP errors (429, 502, 503, 504) with exponential backoff.
  */
 export async function postTweet(
   text: string,
@@ -284,7 +330,14 @@ export async function postTweet(
     accessSecret: credentials.accessSecret,
   });
 
-  const { data } = await client.v2.tweet(text);
+  const { data } = await withRetry(() => client.v2.tweet(text), {
+    onRetry: (err, attempt, delayMs) => {
+      const code = (err as { code?: number }).code;
+      console.warn(
+        `⚠️ Twitter API returned ${code}, retry ${attempt}/3 after ${delayMs}ms...`,
+      );
+    },
+  });
 
   return {
     id: data.id,

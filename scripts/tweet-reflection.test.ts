@@ -14,6 +14,7 @@ import {
   appendTweetSection,
   getYesterdayDate,
   validateEnvironment,
+  withRetry,
   type ReflectionData,
 } from "./tweet-reflection.ts";
 
@@ -517,6 +518,140 @@ describe("validateEnvironment", () => {
       assert.ok(!msg.includes("TWITTER_API_KEY"));
       assert.ok(!msg.includes("OBSIDIAN_AUTH_TOKEN"));
     }
+  });
+});
+
+// --- Retry Logic Tests ---
+
+describe("withRetry", () => {
+  test("returns result on first success", async () => {
+    const result = await withRetry(() => Promise.resolve("ok"));
+    assert.equal(result, "ok");
+  });
+
+  test("retries on transient HTTP 503 and succeeds", async () => {
+    let calls = 0;
+    const result = await withRetry(
+      () => {
+        calls++;
+        if (calls < 3) {
+          const err = new Error("Service Unavailable") as Error & {
+            code: number;
+          };
+          err.code = 503;
+          throw err;
+        }
+        return Promise.resolve("recovered");
+      },
+      { baseDelayMs: 1 },
+    );
+    assert.equal(result, "recovered");
+    assert.equal(calls, 3);
+  });
+
+  test("retries on transient HTTP 429 (rate limit)", async () => {
+    let calls = 0;
+    const result = await withRetry(
+      () => {
+        calls++;
+        if (calls === 1) {
+          const err = new Error("Too Many Requests") as Error & {
+            code: number;
+          };
+          err.code = 429;
+          throw err;
+        }
+        return Promise.resolve("ok");
+      },
+      { baseDelayMs: 1 },
+    );
+    assert.equal(result, "ok");
+    assert.equal(calls, 2);
+  });
+
+  test("does not retry on non-transient HTTP errors", async () => {
+    let calls = 0;
+    await assert.rejects(
+      () =>
+        withRetry(
+          () => {
+            calls++;
+            const err = new Error("Forbidden") as Error & { code: number };
+            err.code = 403;
+            throw err;
+          },
+          { baseDelayMs: 1 },
+        ),
+      (err: Error & { code?: number }) => {
+        assert.equal(err.code, 403);
+        return true;
+      },
+    );
+    assert.equal(calls, 1);
+  });
+
+  test("does not retry errors without a code", async () => {
+    let calls = 0;
+    await assert.rejects(
+      () =>
+        withRetry(
+          () => {
+            calls++;
+            throw new Error("random failure");
+          },
+          { baseDelayMs: 1 },
+        ),
+      { message: "random failure" },
+    );
+    assert.equal(calls, 1);
+  });
+
+  test("gives up after maxRetries", async () => {
+    let calls = 0;
+    await assert.rejects(
+      () =>
+        withRetry(
+          () => {
+            calls++;
+            const err = new Error("Service Unavailable") as Error & {
+              code: number;
+            };
+            err.code = 503;
+            throw err;
+          },
+          { maxRetries: 2, baseDelayMs: 1 },
+        ),
+      (err: Error & { code?: number }) => {
+        assert.equal(err.code, 503);
+        return true;
+      },
+    );
+    assert.equal(calls, 3); // initial + 2 retries
+  });
+
+  test("calls onRetry callback", async () => {
+    const retries: { attempt: number; delayMs: number }[] = [];
+    let calls = 0;
+    await withRetry(
+      () => {
+        calls++;
+        if (calls < 3) {
+          const err = new Error("Bad Gateway") as Error & { code: number };
+          err.code = 502;
+          throw err;
+        }
+        return Promise.resolve("ok");
+      },
+      {
+        baseDelayMs: 1,
+        onRetry: (_err, attempt, delayMs) => {
+          retries.push({ attempt, delayMs });
+        },
+      },
+    );
+    assert.equal(retries.length, 2);
+    assert.equal(retries[0]?.attempt, 1);
+    assert.equal(retries[1]?.attempt, 2);
   });
 });
 

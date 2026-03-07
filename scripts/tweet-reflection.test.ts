@@ -462,9 +462,24 @@ describe("validateEnvironment", () => {
     assert.equal(env.twitter.accessToken, "test-token");
     assert.equal(env.twitter.accessSecret, "test-access-secret");
     assert.equal(env.gemini.apiKey, "test-gemini-key");
+    assert.equal(env.gemini.model, "gemma-3-27b-it");
     assert.equal(env.obsidian.authToken, "test-auth-token");
     assert.equal(env.obsidian.vaultName, "My Vault");
     assert.equal(env.obsidian.vaultPassword, undefined);
+  });
+
+  test("uses custom model when GEMINI_MODEL is set", () => {
+    process.env.TWITTER_API_KEY = "k";
+    process.env.TWITTER_API_SECRET = "s";
+    process.env.TWITTER_ACCESS_TOKEN = "t";
+    process.env.TWITTER_ACCESS_SECRET = "as";
+    process.env.GEMINI_API_KEY = "g";
+    process.env.OBSIDIAN_AUTH_TOKEN = "token";
+    process.env.OBSIDIAN_VAULT_NAME = "vault";
+    process.env.GEMINI_MODEL = "gemini-2.0-flash";
+
+    const env = validateEnvironment();
+    assert.equal(env.gemini.model, "gemini-2.0-flash");
   });
 
   test("includes optional vault password when set", () => {

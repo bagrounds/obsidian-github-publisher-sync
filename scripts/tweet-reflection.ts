@@ -17,6 +17,7 @@
  *   TWITTER_ACCESS_TOKEN  - OAuth 1.0a Access Token (generated with Read+Write permissions)
  *   TWITTER_ACCESS_SECRET - OAuth 1.0a Access Token Secret
  *   GEMINI_API_KEY        - Google Gemini API key (from Google AI Studio)
+ *   GEMINI_MODEL          - (Optional) Gemini model name, defaults to gemma-3-27b-it
  *   OBSIDIAN_AUTH_TOKEN   - Obsidian account auth token (from `ob login`)
  *   OBSIDIAN_VAULT_NAME   - Remote vault name or ID in Obsidian Sync
  *   OBSIDIAN_VAULT_PASSWORD - (Optional) E2EE vault password, if vault uses end-to-end encryption
@@ -73,6 +74,8 @@ const TWEET_SECTION_HEADER = "## 🐦 Tweet";
 /** Twitter counts all URLs as 23 characters */
 const TWITTER_URL_LENGTH = 23;
 const TWITTER_MAX_LENGTH = 280;
+/** Default Gemini model — Gemma 3 27B has a generous free tier (14,400 RPD) */
+const DEFAULT_GEMINI_MODEL = "gemma-3-27b-it";
 
 // --- Reflection File Operations ---
 
@@ -227,11 +230,12 @@ ${reflection.body.slice(0, 1500)}`;
 export async function generateTweetWithGemini(
   reflection: ReflectionData,
   apiKey: string,
+  modelName: string = DEFAULT_GEMINI_MODEL,
 ): Promise<string> {
   const { GoogleGenerativeAI } = await import("@google/generative-ai");
   const genAI = new GoogleGenerativeAI(apiKey);
   const model = genAI.getGenerativeModel({
-    model: "gemini-2.0-flash",
+    model: modelName,
   });
 
   const prompt = buildGeminiPrompt(reflection);
@@ -608,7 +612,7 @@ export function validateEnvironment(): {
     accessToken: string;
     accessSecret: string;
   };
-  gemini: { apiKey: string };
+  gemini: { apiKey: string; model: string };
   obsidian: {
     authToken: string;
     vaultName: string;
@@ -639,7 +643,10 @@ export function validateEnvironment(): {
       accessToken: process.env.TWITTER_ACCESS_TOKEN as string,
       accessSecret: process.env.TWITTER_ACCESS_SECRET as string,
     },
-    gemini: { apiKey: process.env.GEMINI_API_KEY as string },
+    gemini: {
+      apiKey: process.env.GEMINI_API_KEY as string,
+      model: process.env.GEMINI_MODEL || DEFAULT_GEMINI_MODEL,
+    },
     obsidian: {
       authToken: process.env.OBSIDIAN_AUTH_TOKEN as string,
       vaultName: process.env.OBSIDIAN_VAULT_NAME as string,
@@ -683,10 +690,11 @@ export async function main(options?: {
   const env = validateEnvironment();
 
   // Step 3: Generate tweet text with Gemini
-  console.log(`🤖 Generating tweet with Gemini...`);
+  console.log(`🤖 Generating tweet with ${env.gemini.model}...`);
   const tweetText = await generateTweetWithGemini(
     reflection,
     env.gemini.apiKey,
+    env.gemini.model,
   );
   console.log(
     `📝 Generated tweet (${calculateTweetLength(tweetText)} chars):\n${tweetText}`,

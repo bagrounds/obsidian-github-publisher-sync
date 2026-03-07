@@ -61,7 +61,7 @@ the Enveloppe plugin, at which point the deploy workflow rebuilds and publishes 
   - Includes the reflection URL
   - Stays within Twitter's 280-character limit
   - Matches the style of existing tweets (title on first line, tags on second, URL last)
-- Model: `gemini-2.0-flash` (fast, cost-effective)
+- Model: configurable via `GEMINI_MODEL` env var (default: `gemma-3-27b-it` — generous free tier)
 
 ### Step 4: Post Tweet via Twitter API
 
@@ -130,6 +130,14 @@ docs/
 | Secret Name | Description | When Needed |
 |---|---|---|
 | `OBSIDIAN_VAULT_PASSWORD` | E2EE vault password | Only if vault uses end-to-end encryption |
+
+### Optional Environment Variables
+
+These are non-secret configuration values. Set them as **repository variables** (Settings → Secrets and variables → Actions → Variables tab).
+
+| Variable Name | Description | Default |
+|---|---|---|
+| `GEMINI_MODEL` | Google AI model name | `gemma-3-27b-it` |
 
 ### How to Set GitHub Actions Secrets
 

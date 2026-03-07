@@ -1,9 +1,13 @@
 /**
- * Tweet Reflection Automation Script
+ * Social Post Reflection Automation Script
  *
- * Reads yesterday's reflection from the repo, generates a tweet via Gemini,
- * posts it to Twitter, fetches the embed code, and writes the updated note
- * back to the Obsidian vault via Obsidian Headless Sync.
+ * Reads yesterday's reflection from the repo, generates a post via Gemini,
+ * posts it to Twitter and Bluesky, fetches the embed code, and writes the
+ * updated note back to the Obsidian vault via Obsidian Headless Sync.
+ *
+ * Twitter and Bluesky are both optional — the script posts to whichever
+ * platforms have credentials configured. Platform failures are logged but
+ * don't crash the pipeline.
  *
  * The user reviews the change in Obsidian and publishes it to this repo
  * via the Enveloppe plugin (one-way sync: Obsidian → GitHub).
@@ -12,10 +16,12 @@
  *   npx tsx scripts/tweet-reflection.ts [--date YYYY-MM-DD] [--dry-run]
  *
  * Environment variables:
- *   TWITTER_API_KEY       - OAuth 1.0a Consumer Key (from X Developer Portal → Keys and Tokens)
- *   TWITTER_API_SECRET    - OAuth 1.0a Consumer Secret
- *   TWITTER_ACCESS_TOKEN  - OAuth 1.0a Access Token (generated with Read+Write permissions)
- *   TWITTER_ACCESS_SECRET - OAuth 1.0a Access Token Secret
+ *   TWITTER_API_KEY       - (Optional) OAuth 1.0a Consumer Key (from X Developer Portal → Keys and Tokens)
+ *   TWITTER_API_SECRET    - (Optional) OAuth 1.0a Consumer Secret
+ *   TWITTER_ACCESS_TOKEN  - (Optional) OAuth 1.0a Access Token (generated with Read+Write permissions)
+ *   TWITTER_ACCESS_SECRET - (Optional) OAuth 1.0a Access Token Secret
+ *   BLUESKY_IDENTIFIER    - (Optional) Bluesky handle (e.g. "bagrounds.bsky.social") or DID
+ *   BLUESKY_APP_PASSWORD  - (Optional) Bluesky App Password (from Settings → App Passwords)
  *   GEMINI_API_KEY        - Google Gemini API key (from Google AI Studio)
  *   GEMINI_MODEL          - (Optional) Gemini model name, defaults to gemma-3-27b-it
  *   OBSIDIAN_AUTH_TOKEN   - Obsidian account auth token (from `ob login`)
@@ -23,6 +29,7 @@
  *   OBSIDIAN_VAULT_PASSWORD - (Optional) E2EE vault password, if vault uses end-to-end encryption
  *
  * @see https://github.com/PLhery/node-twitter-api-v2 — twitter-api-v2 docs
+ * @see https://docs.bsky.app/ — Bluesky/AT Protocol API docs
  * @see https://ai.google.dev/gemini-api/docs — Google Gemini API docs
  * @see https://help.obsidian.md/sync/headless — Obsidian Headless Sync docs
  * @see https://github.com/obsidianmd/obsidian-headless — obsidian-headless CLI
@@ -52,12 +59,23 @@ export interface ReflectionData {
   filePath: string;
   /** Whether a tweet section already exists */
   hasTweetSection: boolean;
+  /** Whether a Bluesky section already exists */
+  hasBlueskySection: boolean;
 }
 
 export interface TweetResult {
   /** Tweet ID returned by Twitter */
   id: string;
   /** Full tweet text that was posted */
+  text: string;
+}
+
+export interface BlueskyPostResult {
+  /** Post URI (at:// protocol) */
+  uri: string;
+  /** Post CID (content identifier) */
+  cid: string;
+  /** Full post text that was posted */
   text: string;
 }
 
@@ -71,10 +89,15 @@ export interface EmbedResult {
 const CONTENT_DIR = path.join(process.cwd(), "content", "reflections");
 const TWITTER_HANDLE = "bagrounds";
 const TWITTER_DISPLAY_NAME = "Bryan Grounds";
+const BLUESKY_HANDLE = "bagrounds.bsky.social";
+const BLUESKY_DISPLAY_NAME = "Bryan Grounds";
 const TWEET_SECTION_HEADER = "## 🐦 Tweet";
+const BLUESKY_SECTION_HEADER = "## 🦋 Bluesky";
 /** Twitter counts all URLs as 23 characters */
 const TWITTER_URL_LENGTH = 23;
 const TWITTER_MAX_LENGTH = 280;
+/** Bluesky has a 300-character limit for post text */
+const BLUESKY_MAX_LENGTH = 300;
 /** Default Gemini model — Gemma 3 27B has a generous free tier (14,400 RPD) */
 const DEFAULT_GEMINI_MODEL = "gemma-3-27b-it";
 
@@ -146,6 +169,7 @@ export function readReflection(
     body,
     filePath,
     hasTweetSection: content.includes(TWEET_SECTION_HEADER),
+    hasBlueskySection: content.includes(BLUESKY_SECTION_HEADER),
   };
 }
 
@@ -533,6 +557,170 @@ export async function getEmbedHtml(
   }
 }
 
+// --- Bluesky Integration ---
+
+/**
+ * Post to Bluesky using the AT Protocol API.
+ *
+ * Uses app password authentication (simpler than OAuth for single-user bots).
+ * The `@atproto/api` package handles AT Protocol session management.
+ *
+ * @see https://docs.bsky.app/docs/api/app/bsky/feed/post
+ * @see https://atproto.com/guides/bot-tutorial
+ */
+export async function postToBluesky(
+  text: string,
+  credentials: {
+    identifier: string;
+    password: string;
+  },
+): Promise<BlueskyPostResult> {
+  const { AtpAgent } = await import("@atproto/api");
+  const agent = new AtpAgent({ service: "https://bsky.social" });
+
+  await agent.login({
+    identifier: credentials.identifier,
+    password: credentials.password,
+  });
+
+  console.log(`  📡 Bluesky: creating post...`);
+
+  const response = await agent.post({ text });
+
+  return {
+    uri: response.uri,
+    cid: response.cid,
+    text,
+  };
+}
+
+/**
+ * Delete a Bluesky post (used for test cleanup).
+ */
+export async function deleteBlueskyPost(
+  uri: string,
+  credentials: {
+    identifier: string;
+    password: string;
+  },
+): Promise<void> {
+  const { AtpAgent } = await import("@atproto/api");
+  const agent = new AtpAgent({ service: "https://bsky.social" });
+
+  await agent.login({
+    identifier: credentials.identifier,
+    password: credentials.password,
+  });
+
+  await agent.deletePost(uri);
+}
+
+/**
+ * Extract the post ID (rkey) from a Bluesky AT URI.
+ * e.g. "at://did:plc:abc123/app.bsky.feed.post/3ltxsqnjf6s2b" → "3ltxsqnjf6s2b"
+ */
+export function extractBlueskyPostId(uri: string): string {
+  const parts = uri.split("/");
+  return parts[parts.length - 1] as string;
+}
+
+/**
+ * Extract the DID from a Bluesky AT URI.
+ * e.g. "at://did:plc:abc123/app.bsky.feed.post/3ltxsqnjf6s2b" → "did:plc:abc123"
+ */
+export function extractBlueskyDid(uri: string): string {
+  const match = uri.match(/at:\/\/(did:[^/]+)/);
+  return match ? match[1] : "";
+}
+
+/**
+ * Build a Bluesky post URL from a DID and post ID.
+ */
+export function buildBlueskyPostUrl(did: string, postId: string): string {
+  return `https://bsky.app/profile/${did}/post/${postId}`;
+}
+
+/**
+ * Fetch Bluesky post embed HTML from the oEmbed API.
+ *
+ * @see https://docs.bsky.app/docs/advanced-guides/oembed
+ */
+export async function fetchBlueskyOEmbed(postUrl: string): Promise<EmbedResult> {
+  const params = new URLSearchParams({ url: postUrl, format: "json" });
+  const response = await fetch(`https://embed.bsky.app/oembed?${params}`);
+
+  if (!response.ok) {
+    throw new Error(
+      `Bluesky oEmbed API returned ${response.status}: ${response.statusText}`,
+    );
+  }
+
+  const data = (await response.json()) as { html: string };
+  return { html: data.html };
+}
+
+/**
+ * Generate Bluesky embed HTML locally as a fallback when oEmbed is unavailable.
+ * Matches the format used in existing Bluesky embeds in the content.
+ */
+export function generateLocalBlueskyEmbed(
+  uri: string,
+  postText: string,
+  date: string,
+): string {
+  const did = extractBlueskyDid(uri);
+  const postId = extractBlueskyPostId(uri);
+  const postUrl = buildBlueskyPostUrl(did, postId);
+
+  // HTML-encode the post text
+  const htmlText = postText
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#39;")
+    .replace(/\n/g, "<br>");
+
+  // Format the date for display
+  const dateObj = new Date(date + "T00:00:00Z");
+  const monthNames = [
+    "January", "February", "March", "April", "May", "June",
+    "July", "August", "September", "October", "November", "December",
+  ];
+  const displayDate = `${monthNames[dateObj.getUTCMonth()]} ${dateObj.getUTCDate()}, ${dateObj.getUTCFullYear()}`;
+
+  return (
+    `<blockquote class="bluesky-embed" data-bluesky-uri="${uri}" data-bluesky-embed-color-mode="system">` +
+    `<p lang="en">${htmlText}</p>` +
+    `&mdash; ${BLUESKY_DISPLAY_NAME} ` +
+    `(<a href="https://bsky.app/profile/${did}?ref_src=embed">@${BLUESKY_HANDLE}</a>) ` +
+    `<a href="${postUrl}?ref_src=embed">${displayDate}</a>` +
+    `</blockquote>` +
+    `<script async src="https://embed.bsky.app/static/embed.js" charset="utf-8"></script>`
+  );
+}
+
+/**
+ * Get Bluesky embed HTML, trying oEmbed first, then falling back to local generation.
+ */
+export async function getBlueskyEmbedHtml(
+  uri: string,
+  postText: string,
+  date: string,
+): Promise<string> {
+  const did = extractBlueskyDid(uri);
+  const postId = extractBlueskyPostId(uri);
+  const postUrl = buildBlueskyPostUrl(did, postId);
+
+  try {
+    const { html } = await fetchBlueskyOEmbed(postUrl);
+    return html;
+  } catch (error) {
+    console.warn(`Bluesky oEmbed API failed, using local embed generation: ${error}`);
+    return generateLocalBlueskyEmbed(uri, postText, date);
+  }
+}
+
 // --- File Update Operations ---
 
 /**
@@ -559,6 +747,32 @@ export function appendTweetSection(filePath: string, embedHtml: string): void {
   }
 
   fs.writeFileSync(filePath, content + buildTweetSection(content, embedHtml), "utf-8");
+}
+
+/**
+ * Build the Bluesky section content to append to a note.
+ * Handles separator logic: ensures a blank line before the section.
+ */
+export function buildBlueskySection(
+  existingContent: string,
+  embedHtml: string,
+): string {
+  const separator = existingContent.endsWith("\n") ? "\n" : "\n\n";
+  return `${separator}${BLUESKY_SECTION_HEADER}  \n${embedHtml}`;
+}
+
+/**
+ * Append the Bluesky section to a local reflection file (used in tests).
+ */
+export function appendBlueskySection(filePath: string, embedHtml: string): void {
+  const content = fs.readFileSync(filePath, "utf-8");
+
+  if (content.includes(BLUESKY_SECTION_HEADER)) {
+    console.log("Bluesky section already exists, skipping update");
+    return;
+  }
+
+  fs.writeFileSync(filePath, content + buildBlueskySection(content, embedHtml), "utf-8");
 }
 
 // --- Obsidian Headless Sync Integration ---
@@ -657,10 +871,16 @@ export async function pushObsidianVault(
 /**
  * Update a note in the Obsidian vault via Headless Sync.
  * Pulls vault → modifies file → pushes back.
+ *
+ * Appends one or more embed sections (tweet, Bluesky) if they don't already exist.
  */
-export async function appendTweetToObsidianNote(
+export async function appendEmbedsToObsidianNote(
   notePath: string,
-  embedHtml: string,
+  sections: Array<{
+    header: string;
+    embedHtml: string;
+    buildSection: (content: string, html: string) => string;
+  }>,
   credentials: {
     authToken: string;
     vaultName: string;
@@ -678,21 +898,25 @@ export async function appendTweetToObsidianNote(
     );
   }
 
-  const content = fs.readFileSync(filePath, "utf-8");
+  let content = fs.readFileSync(filePath, "utf-8");
+  let modified = false;
 
-  if (content.includes(TWEET_SECTION_HEADER)) {
-    console.log(
-      "Tweet section already exists in Obsidian note, skipping update",
-    );
+  for (const section of sections) {
+    if (!content.includes(section.header)) {
+      content = content + section.buildSection(content, section.embedHtml);
+      modified = true;
+    } else {
+      console.log(`${section.header} already exists in Obsidian note, skipping`);
+    }
+  }
+
+  if (!modified) {
+    console.log("No new sections to add to Obsidian note");
     return;
   }
 
-  // Update the file
-  fs.writeFileSync(
-    filePath,
-    content + buildTweetSection(content, embedHtml),
-    "utf-8",
-  );
+  // Write updated content
+  fs.writeFileSync(filePath, content, "utf-8");
 
   // Push changes back
   await pushObsidianVault(vaultDir, {
@@ -734,6 +958,8 @@ function parseArgs(): { date: string; dryRun: boolean } {
 
 /**
  * Validate that all required environment variables are set.
+ * Twitter and Bluesky credentials are optional — the script will attempt
+ * each platform only if its credentials are present.
  */
 export function validateEnvironment(): {
   twitter: {
@@ -741,7 +967,11 @@ export function validateEnvironment(): {
     apiSecret: string;
     accessToken: string;
     accessSecret: string;
-  };
+  } | null;
+  bluesky: {
+    identifier: string;
+    password: string;
+  } | null;
   gemini: { apiKey: string; model: string };
   obsidian: {
     authToken: string;
@@ -750,10 +980,6 @@ export function validateEnvironment(): {
   };
 } {
   const required = [
-    "TWITTER_API_KEY",
-    "TWITTER_API_SECRET",
-    "TWITTER_ACCESS_TOKEN",
-    "TWITTER_ACCESS_SECRET",
     "GEMINI_API_KEY",
     "OBSIDIAN_AUTH_TOKEN",
     "OBSIDIAN_VAULT_NAME",
@@ -766,13 +992,36 @@ export function validateEnvironment(): {
     );
   }
 
+  // Twitter credentials are optional — all 4 must be present to enable
+  const twitterKeys = [
+    "TWITTER_API_KEY",
+    "TWITTER_API_SECRET",
+    "TWITTER_ACCESS_TOKEN",
+    "TWITTER_ACCESS_SECRET",
+  ];
+  const hasTwitter = twitterKeys.every((key) => process.env[key]);
+  const twitter = hasTwitter
+    ? {
+        apiKey: process.env.TWITTER_API_KEY as string,
+        apiSecret: process.env.TWITTER_API_SECRET as string,
+        accessToken: process.env.TWITTER_ACCESS_TOKEN as string,
+        accessSecret: process.env.TWITTER_ACCESS_SECRET as string,
+      }
+    : null;
+
+  // Bluesky credentials are optional — both must be present to enable
+  const hasBluesky =
+    !!process.env.BLUESKY_IDENTIFIER && !!process.env.BLUESKY_APP_PASSWORD;
+  const bluesky = hasBluesky
+    ? {
+        identifier: process.env.BLUESKY_IDENTIFIER as string,
+        password: process.env.BLUESKY_APP_PASSWORD as string,
+      }
+    : null;
+
   return {
-    twitter: {
-      apiKey: process.env.TWITTER_API_KEY as string,
-      apiSecret: process.env.TWITTER_API_SECRET as string,
-      accessToken: process.env.TWITTER_ACCESS_TOKEN as string,
-      accessSecret: process.env.TWITTER_ACCESS_SECRET as string,
-    },
+    twitter,
+    bluesky,
     gemini: {
       apiKey: process.env.GEMINI_API_KEY as string,
       model: process.env.GEMINI_MODEL || DEFAULT_GEMINI_MODEL,
@@ -786,7 +1035,13 @@ export function validateEnvironment(): {
 }
 
 /**
- * Main entry point for the tweet reflection pipeline.
+ * Main entry point for the social posting pipeline.
+ *
+ * Posts to both Twitter and Bluesky (if credentials are configured).
+ * Twitter failures are logged but don't crash the pipeline.
+ * Bluesky failures are also logged but don't crash.
+ * The pipeline continues as long as at least one platform succeeds,
+ * or if only dry-run/generation is requested.
  */
 export async function main(options?: {
   date?: string;
@@ -810,50 +1065,114 @@ export async function main(options?: {
 
   console.log(`📄 Found reflection: ${reflection.title}`);
 
-  // Check idempotency
-  if (reflection.hasTweetSection) {
-    console.log(`ℹ️  Reflection already has a tweet section, skipping`);
+  // Check idempotency — skip if both sections already exist
+  if (reflection.hasTweetSection && reflection.hasBlueskySection) {
+    console.log(`ℹ️  Reflection already has both tweet and Bluesky sections, skipping`);
     return;
   }
 
   // Step 2: Validate credentials
   const env = validateEnvironment();
 
-  // Step 3: Generate tweet text with Gemini
-  console.log(`🤖 Generating tweet with ${env.gemini.model}...`);
-  const tweetText = await generateTweetWithGemini(
+  if (!env.twitter && !env.bluesky) {
+    console.warn(`⚠️  No social platform credentials configured. Set TWITTER_* or BLUESKY_* env vars.`);
+  }
+
+  // Step 3: Generate post text with Gemini
+  console.log(`🤖 Generating post with ${env.gemini.model}...`);
+  const postText = await generateTweetWithGemini(
     reflection,
     env.gemini.apiKey,
     env.gemini.model,
   );
   console.log(
-    `📝 Generated tweet (${calculateTweetLength(tweetText)} chars):\n${tweetText}`,
+    `📝 Generated post (${calculateTweetLength(postText)} chars):\n${postText}`,
   );
 
   if (dryRun) {
-    console.log(`🏁 Dry run complete, would have posted the above tweet`);
+    console.log(`🏁 Dry run complete, would have posted the above`);
     return;
   }
 
-  // Step 4: Post tweet to Twitter
-  console.log(`🐦 Posting tweet to Twitter...`);
-  const tweet = await postTweet(tweetText, env.twitter);
-  console.log(
-    `✅ Tweet posted: https://twitter.com/${TWITTER_HANDLE}/status/${tweet.id}`,
-  );
+  // Collect embed sections to write to Obsidian
+  const embedSections: Array<{
+    header: string;
+    embedHtml: string;
+    buildSection: (content: string, html: string) => string;
+  }> = [];
 
-  // Step 5: Get embed HTML
-  console.log(`🔗 Fetching embed code...`);
-  const embedHtml = await getEmbedHtml(tweet.id, tweet.text, date);
-  console.log(`📋 Got embed HTML (${embedHtml.length} chars)`);
+  // Step 4a: Post to Twitter (non-fatal)
+  if (env.twitter && !reflection.hasTweetSection) {
+    try {
+      console.log(`🐦 Posting tweet to Twitter...`);
+      const tweet = await postTweet(postText, env.twitter);
+      console.log(
+        `✅ Tweet posted: https://twitter.com/${TWITTER_HANDLE}/status/${tweet.id}`,
+      );
 
-  // Step 6: Write tweet section to Obsidian vault via Headless Sync
-  const obsidianNotePath = `reflections/${date}.md`;
-  console.log(`📝 Writing tweet section to Obsidian note: ${obsidianNotePath}`);
-  await appendTweetToObsidianNote(obsidianNotePath, embedHtml, env.obsidian);
-  console.log(`✅ Obsidian vault updated via Headless Sync (review in Obsidian and publish)`);
+      console.log(`🔗 Fetching tweet embed code...`);
+      const tweetEmbedHtml = await getEmbedHtml(tweet.id, tweet.text, date);
+      console.log(`📋 Got tweet embed HTML (${tweetEmbedHtml.length} chars)`);
 
-  console.log(`🎉 Done! Tweet posted and Obsidian note updated for ${date}`);
+      embedSections.push({
+        header: TWEET_SECTION_HEADER,
+        embedHtml: tweetEmbedHtml,
+        buildSection: buildTweetSection,
+      });
+    } catch (error) {
+      console.error(`⚠️  Twitter posting failed (non-fatal):`);
+      console.error(`   ${error instanceof Error ? error.message : error}`);
+      if (error instanceof Error && error.stack) {
+        console.error(`   Stack: ${error.stack.split("\n").slice(0, 3).join("\n   ")}`);
+      }
+      logTwitterError("Twitter post failed", error);
+    }
+  } else if (!env.twitter) {
+    console.log(`ℹ️  Twitter credentials not configured, skipping`);
+  }
+
+  // Step 4b: Post to Bluesky (non-fatal)
+  if (env.bluesky && !reflection.hasBlueskySection) {
+    try {
+      console.log(`🦋 Posting to Bluesky...`);
+      const bskyPost = await postToBluesky(postText, env.bluesky);
+      const did = extractBlueskyDid(bskyPost.uri);
+      const postId = extractBlueskyPostId(bskyPost.uri);
+      console.log(
+        `✅ Bluesky post created: ${buildBlueskyPostUrl(did, postId)}`,
+      );
+
+      console.log(`🔗 Fetching Bluesky embed code...`);
+      const bskyEmbedHtml = await getBlueskyEmbedHtml(bskyPost.uri, bskyPost.text, date);
+      console.log(`📋 Got Bluesky embed HTML (${bskyEmbedHtml.length} chars)`);
+
+      embedSections.push({
+        header: BLUESKY_SECTION_HEADER,
+        embedHtml: bskyEmbedHtml,
+        buildSection: buildBlueskySection,
+      });
+    } catch (error) {
+      console.error(`⚠️  Bluesky posting failed (non-fatal):`);
+      console.error(`   ${error instanceof Error ? error.message : error}`);
+      if (error instanceof Error && error.stack) {
+        console.error(`   Stack: ${error.stack.split("\n").slice(0, 3).join("\n   ")}`);
+      }
+    }
+  } else if (!env.bluesky) {
+    console.log(`ℹ️  Bluesky credentials not configured, skipping`);
+  }
+
+  // Step 5: Write embed sections to Obsidian vault via Headless Sync
+  if (embedSections.length > 0) {
+    const obsidianNotePath = `reflections/${date}.md`;
+    console.log(`📝 Writing ${embedSections.length} embed section(s) to Obsidian note: ${obsidianNotePath}`);
+    await appendEmbedsToObsidianNote(obsidianNotePath, embedSections, env.obsidian);
+    console.log(`✅ Obsidian vault updated via Headless Sync (review in Obsidian and publish)`);
+  } else {
+    console.log(`ℹ️  No successful posts to embed`);
+  }
+
+  console.log(`🎉 Done processing reflection for ${date}`);
 }
 
 // Run if executed directly
@@ -867,7 +1186,7 @@ if (isMainModule) {
     if (error instanceof Error && error.stack) {
       console.error(`Stack trace:\n${error.stack}`);
     }
-    // Log extra fields from twitter-api-v2 ApiResponseError
+    // Log extra fields from API errors
     const e = error as { code?: number; data?: unknown; rateLimit?: unknown };
     if (e.code) console.error(`HTTP status code: ${e.code}`);
     if (e.data) console.error(`Response data: ${JSON.stringify(e.data, null, 2)}`);

@@ -11,7 +11,13 @@ import {
   validateTweetLength,
   buildGeminiPrompt,
   generateLocalEmbed,
+  generateLocalBlueskyEmbed,
+  extractBlueskyPostId,
+  extractBlueskyDid,
+  buildBlueskyPostUrl,
   appendTweetSection,
+  appendBlueskySection,
+  buildBlueskySection,
   getYesterdayDate,
   validateEnvironment,
   withRetry,
@@ -153,6 +159,7 @@ describe("readReflection", () => {
     assert.equal(result.title, "2026-03-01 | 🧪 Test Reflection 📚");
     assert.equal(result.url, "https://bagrounds.org/reflections/2026-03-01");
     assert.equal(result.hasTweetSection, false);
+    assert.equal(result.hasBlueskySection, false);
   });
 
   test("detects existing tweet section", () => {
@@ -171,6 +178,7 @@ describe("readReflection", () => {
     assert.ok(result !== null);
     assert.equal(result.title, "2026-03-06");
     assert.equal(result.hasTweetSection, false);
+    assert.equal(result.hasBlueskySection, false);
   });
 });
 
@@ -247,6 +255,7 @@ describe("buildGeminiPrompt", () => {
       body: "Some content here",
       filePath: "/path/to/file.md",
       hasTweetSection: false,
+      hasBlueskySection: false,
     };
     const { system, user } = buildGeminiPrompt(reflection);
     assert.ok(system.includes(reflection.title));
@@ -265,6 +274,7 @@ describe("buildGeminiPrompt", () => {
       body: "",
       filePath: "",
       hasTweetSection: false,
+      hasBlueskySection: false,
     };
     const { system } = buildGeminiPrompt(reflection);
     assert.ok(system.includes("280"));
@@ -280,6 +290,7 @@ describe("buildGeminiPrompt", () => {
       body: longBody,
       filePath: "",
       hasTweetSection: false,
+      hasBlueskySection: false,
     };
     const { user } = buildGeminiPrompt(reflection);
     assert.ok(user.length < longBody.length);
@@ -453,15 +464,21 @@ describe("validateEnvironment", () => {
     process.env.TWITTER_API_SECRET = "test-secret";
     process.env.TWITTER_ACCESS_TOKEN = "test-token";
     process.env.TWITTER_ACCESS_SECRET = "test-access-secret";
+    process.env.BLUESKY_IDENTIFIER = "test.bsky.social";
+    process.env.BLUESKY_APP_PASSWORD = "test-bsky-password";
     process.env.GEMINI_API_KEY = "test-gemini-key";
     process.env.OBSIDIAN_AUTH_TOKEN = "test-auth-token";
     process.env.OBSIDIAN_VAULT_NAME = "My Vault";
 
     const env = validateEnvironment();
+    assert.ok(env.twitter);
     assert.equal(env.twitter.apiKey, "test-key");
     assert.equal(env.twitter.apiSecret, "test-secret");
     assert.equal(env.twitter.accessToken, "test-token");
     assert.equal(env.twitter.accessSecret, "test-access-secret");
+    assert.ok(env.bluesky);
+    assert.equal(env.bluesky.identifier, "test.bsky.social");
+    assert.equal(env.bluesky.password, "test-bsky-password");
     assert.equal(env.gemini.apiKey, "test-gemini-key");
     assert.equal(env.gemini.model, "gemma-3-27b-it");
     assert.equal(env.obsidian.authToken, "test-auth-token");
@@ -470,10 +487,6 @@ describe("validateEnvironment", () => {
   });
 
   test("uses custom model when GEMINI_MODEL is set", () => {
-    process.env.TWITTER_API_KEY = "k";
-    process.env.TWITTER_API_SECRET = "s";
-    process.env.TWITTER_ACCESS_TOKEN = "t";
-    process.env.TWITTER_ACCESS_SECRET = "as";
     process.env.GEMINI_API_KEY = "g";
     process.env.OBSIDIAN_AUTH_TOKEN = "token";
     process.env.OBSIDIAN_VAULT_NAME = "vault";
@@ -484,10 +497,6 @@ describe("validateEnvironment", () => {
   });
 
   test("includes optional vault password when set", () => {
-    process.env.TWITTER_API_KEY = "k";
-    process.env.TWITTER_API_SECRET = "s";
-    process.env.TWITTER_ACCESS_TOKEN = "t";
-    process.env.TWITTER_ACCESS_SECRET = "as";
     process.env.GEMINI_API_KEY = "g";
     process.env.OBSIDIAN_AUTH_TOKEN = "token";
     process.env.OBSIDIAN_VAULT_NAME = "vault";
@@ -498,10 +507,6 @@ describe("validateEnvironment", () => {
   });
 
   test("reports specific missing variables", () => {
-    process.env.TWITTER_API_KEY = "set";
-    delete process.env.TWITTER_API_SECRET;
-    delete process.env.TWITTER_ACCESS_TOKEN;
-    process.env.TWITTER_ACCESS_SECRET = "set";
     delete process.env.GEMINI_API_KEY;
     process.env.OBSIDIAN_AUTH_TOKEN = "set";
     delete process.env.OBSIDIAN_VAULT_NAME;
@@ -511,13 +516,34 @@ describe("validateEnvironment", () => {
       assert.fail("Should have thrown");
     } catch (e) {
       const msg = (e as Error).message;
-      assert.ok(msg.includes("TWITTER_API_SECRET"));
-      assert.ok(msg.includes("TWITTER_ACCESS_TOKEN"));
       assert.ok(msg.includes("GEMINI_API_KEY"));
       assert.ok(msg.includes("OBSIDIAN_VAULT_NAME"));
-      assert.ok(!msg.includes("TWITTER_API_KEY"));
       assert.ok(!msg.includes("OBSIDIAN_AUTH_TOKEN"));
     }
+  });
+
+  test("returns null twitter when twitter credentials are missing", () => {
+    delete process.env.TWITTER_API_KEY;
+    delete process.env.TWITTER_API_SECRET;
+    delete process.env.TWITTER_ACCESS_TOKEN;
+    delete process.env.TWITTER_ACCESS_SECRET;
+    process.env.GEMINI_API_KEY = "g";
+    process.env.OBSIDIAN_AUTH_TOKEN = "token";
+    process.env.OBSIDIAN_VAULT_NAME = "vault";
+
+    const env = validateEnvironment();
+    assert.equal(env.twitter, null);
+  });
+
+  test("returns null bluesky when bluesky credentials are missing", () => {
+    delete process.env.BLUESKY_IDENTIFIER;
+    delete process.env.BLUESKY_APP_PASSWORD;
+    process.env.GEMINI_API_KEY = "g";
+    process.env.OBSIDIAN_AUTH_TOKEN = "token";
+    process.env.OBSIDIAN_VAULT_NAME = "vault";
+
+    const env = validateEnvironment();
+    assert.equal(env.bluesky, null);
   });
 });
 
@@ -655,6 +681,99 @@ describe("withRetry", () => {
   });
 });
 
+// --- Bluesky Tests ---
+
+describe("extractBlueskyPostId", () => {
+  test("extracts post ID from AT URI", () => {
+    const uri = "at://did:plc:i4yli6h7x2uoj7acxunww2fc/app.bsky.feed.post/3ltxsqnjf6s2b";
+    assert.equal(extractBlueskyPostId(uri), "3ltxsqnjf6s2b");
+  });
+});
+
+describe("extractBlueskyDid", () => {
+  test("extracts DID from AT URI", () => {
+    const uri = "at://did:plc:i4yli6h7x2uoj7acxunww2fc/app.bsky.feed.post/3ltxsqnjf6s2b";
+    assert.equal(extractBlueskyDid(uri), "did:plc:i4yli6h7x2uoj7acxunww2fc");
+  });
+
+  test("returns empty string for invalid URI", () => {
+    assert.equal(extractBlueskyDid("invalid-uri"), "");
+  });
+});
+
+describe("buildBlueskyPostUrl", () => {
+  test("builds correct Bluesky post URL", () => {
+    const url = buildBlueskyPostUrl("did:plc:abc123", "3ltxsqnjf6s2b");
+    assert.equal(url, "https://bsky.app/profile/did:plc:abc123/post/3ltxsqnjf6s2b");
+  });
+});
+
+describe("generateLocalBlueskyEmbed", () => {
+  test("generates valid Bluesky embed HTML", () => {
+    const uri = "at://did:plc:i4yli6h7x2uoj7acxunww2fc/app.bsky.feed.post/3ltxsqnjf6s2b";
+    const text = "Hello from Bluesky!";
+    const html = generateLocalBlueskyEmbed(uri, text, "2026-03-05");
+
+    assert.ok(html.includes('class="bluesky-embed"'));
+    assert.ok(html.includes(`data-bluesky-uri="${uri}"`));
+    assert.ok(html.includes("Hello from Bluesky!"));
+    assert.ok(html.includes("@bagrounds.bsky.social"));
+    assert.ok(html.includes("embed.bsky.app/static/embed.js"));
+    assert.ok(html.includes("March 5, 2026"));
+  });
+
+  test("HTML-encodes special characters", () => {
+    const uri = "at://did:plc:test/app.bsky.feed.post/abc123";
+    const text = '<script>alert("xss")</script>';
+    const html = generateLocalBlueskyEmbed(uri, text, "2026-01-01");
+
+    assert.ok(!html.includes("<script>alert"));
+    assert.ok(html.includes("&lt;script&gt;"));
+  });
+});
+
+describe("buildBlueskySection", () => {
+  test("builds section with correct header", () => {
+    const section = buildBlueskySection("existing content\n", "<blockquote>test</blockquote>");
+    assert.ok(section.includes("## 🦋 Bluesky"));
+    assert.ok(section.includes("<blockquote>test</blockquote>"));
+  });
+});
+
+describe("appendBlueskySection", () => {
+  let tempDir: string;
+
+  beforeEach(() => {
+    tempDir = fs.mkdtempSync(path.join(os.tmpdir(), "bsky-test-"));
+  });
+
+  afterEach(() => {
+    fs.rmSync(tempDir, { recursive: true, force: true });
+  });
+
+  test("appends Bluesky section to file", () => {
+    const filePath = path.join(tempDir, "test.md");
+    fs.writeFileSync(filePath, "# Test\nSome content\n");
+
+    appendBlueskySection(filePath, '<blockquote class="bluesky-embed">test</blockquote>');
+
+    const updated = fs.readFileSync(filePath, "utf-8");
+    assert.ok(updated.includes("## 🦋 Bluesky"));
+    assert.ok(updated.includes("bluesky-embed"));
+  });
+
+  test("does not duplicate Bluesky section", () => {
+    const filePath = path.join(tempDir, "test.md");
+    fs.writeFileSync(filePath, "# Test\n\n## 🦋 Bluesky  \nexisting embed\n");
+
+    appendBlueskySection(filePath, "<blockquote>new</blockquote>");
+
+    const content = fs.readFileSync(filePath, "utf-8");
+    const matches = content.match(/## 🦋 Bluesky/g);
+    assert.equal(matches?.length, 1);
+  });
+});
+
 // --- Property-Based Tests ---
 
 describe("property-based tests", () => {
@@ -754,6 +873,7 @@ describe(
         body: "## 📚 Books\n- Testing a book\n\n## 📺 Videos\n- Testing a video",
         filePath: "",
         hasTweetSection: false,
+        hasBlueskySection: false,
       };
 
       const tweet = await generateTweetWithGemini(reflection, apiKey);

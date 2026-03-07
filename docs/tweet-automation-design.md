@@ -1,12 +1,15 @@
-# Tweet Automation Design Document
+# Social Post Automation Design Document
 
 ## Overview
 
-Automated daily tweet publishing system for the bagrounds.org digital garden. A GitHub Actions
+Automated daily social posting system for the bagrounds.org digital garden. A GitHub Actions
 workflow runs on a cron schedule each morning, reads **yesterday's** reflection note from the
-repo, uses Google Gemini to generate a tweet, posts it via the Twitter/X API, fetches the embed
-HTML, and writes the updated note back to the **Obsidian vault** via
+repo, uses Google Gemini to generate a post, publishes it to **Twitter/X** and **Bluesky**,
+fetches the embed HTML, and writes the updated note back to the **Obsidian vault** via
 [Obsidian Headless Sync](https://help.obsidian.md/sync/headless).
+
+Both social platforms are optional — the script posts to whichever platforms have credentials
+configured. Platform failures are logged but don't crash the pipeline.
 
 The user reviews the change in Obsidian (e.g. on their phone) and publishes it to this repo via
 the Enveloppe plugin, at which point the deploy workflow rebuilds and publishes the site.
@@ -63,18 +66,26 @@ the Enveloppe plugin, at which point the deploy workflow rebuilds and publishes 
   - Matches the style of existing tweets (title on first line, tags on second, URL last)
 - Model: configurable via `GEMINI_MODEL` env var (default: `gemma-3-27b-it` — generous free tier)
 
-### Step 4: Post Tweet via Twitter API
+### Step 4a: Post Tweet via Twitter API (optional)
 
 - Uses Twitter API v2 with OAuth 1.0a authentication
-- Posts the generated tweet text
+- Posts the generated text
 - Returns the tweet ID from the response
+- **Non-fatal**: If Twitter fails (e.g. persistent 503), logs the error and continues
+- Uses `X-Idempotency-Key` header for safe retries on 503
+
+### Step 4b: Post to Bluesky via AT Protocol API (optional)
+
+- Uses the `@atproto/api` package with app password authentication
+- Posts the same generated text to Bluesky
+- Returns the post URI and CID from the response
+- **Non-fatal**: If Bluesky fails, logs the error and continues
 
 ### Step 5: Get Embed HTML
 
-- Calls Twitter's oEmbed endpoint: `https://publish.twitter.com/oembed`
-- Parameters: tweet URL, dark theme
-- Returns HTML blockquote embed code
-- Falls back to generating embed code locally if oEmbed API is unavailable
+- For successful Twitter posts: calls Twitter's oEmbed endpoint `https://publish.twitter.com/oembed`
+- For successful Bluesky posts: calls Bluesky's oEmbed endpoint `https://embed.bsky.app/oembed`
+- Falls back to generating embed code locally if oEmbed APIs are unavailable
 
 ### Step 6: Update Note in Obsidian Vault via Headless Sync
 
@@ -83,7 +94,7 @@ the Enveloppe plugin, at which point the deploy workflow rebuilds and publishes 
 - Runs `ob sync-setup` to connect to the remote vault
 - Runs `ob sync` to pull the latest vault content to a temp directory
 - Reads the reflection note from the synced vault
-- Appends `## 🐦 Tweet` section at the end of the note
+- Appends `## 🐦 Tweet` section (if Twitter succeeded) and/or `## 🦋 Bluesky` section (if Bluesky succeeded)
 - Runs `ob sync` again to push the change back to Obsidian Sync
 - The user sees the update on their phone (or any Obsidian device) and reviews it
 
@@ -117,13 +128,22 @@ docs/
 
 | Secret Name | Description | How to Obtain |
 |---|---|---|
+| `GEMINI_API_KEY` | Google Gemini API Key | Google AI Studio → API Keys |
+| `OBSIDIAN_AUTH_TOKEN` | Obsidian account auth token | Run `ob login` locally, then extract from credentials file |
+| `OBSIDIAN_VAULT_NAME` | Remote vault name or ID | Run `ob sync-list-remote` to see vault names |
+
+### Optional Secrets (Social Platforms)
+
+At least one social platform should be configured. Each platform requires all of its secrets to be set.
+
+| Secret Name | Description | How to Obtain |
+|---|---|---|
 | `TWITTER_API_KEY` | OAuth 1.0a **Consumer Key** | X Developer Portal → App → Keys and Tokens → Consumer Keys → API Key |
 | `TWITTER_API_SECRET` | OAuth 1.0a **Consumer Secret** | X Developer Portal → App → Keys and Tokens → Consumer Keys → API Secret |
 | `TWITTER_ACCESS_TOKEN` | OAuth 1.0a **Access Token** | X Developer Portal → App → Keys and Tokens → Authentication Tokens → Access Token |
 | `TWITTER_ACCESS_SECRET` | OAuth 1.0a **Access Token Secret** | X Developer Portal → App → Keys and Tokens → Authentication Tokens → Access Token Secret |
-| `GEMINI_API_KEY` | Google Gemini API Key | Google AI Studio → API Keys |
-| `OBSIDIAN_AUTH_TOKEN` | Obsidian account auth token | Run `ob login` locally, then extract from credentials file |
-| `OBSIDIAN_VAULT_NAME` | Remote vault name or ID | Run `ob sync-list-remote` to see vault names |
+| `BLUESKY_IDENTIFIER` | Bluesky handle or DID | Your Bluesky handle (e.g. `bagrounds.bsky.social`) |
+| `BLUESKY_APP_PASSWORD` | Bluesky App Password | Bluesky Settings → App Passwords → Add App Password |
 
 ### Optional Secrets
 
@@ -184,6 +204,22 @@ The dashboard's **OAuth 1.0 Keys** section shows two entries — **Consumer Key*
 4. Select or create a Google Cloud project
 5. Copy the generated key → save as `GEMINI_API_KEY`
 
+#### Bluesky Credentials (App Password)
+
+> **Note:** Bluesky uses app passwords for API access — simpler than OAuth. No developer
+> portal or app registration needed.
+
+1. Log in to [bsky.app](https://bsky.app/) with your account
+2. Go to **Settings** → **Privacy and Security** → **App Passwords**
+3. Click **Add App Password**
+4. Give it a name (e.g. "GitHub Actions Bot")
+5. Copy the generated password → save as `BLUESKY_APP_PASSWORD`
+6. Your handle (e.g. `bagrounds.bsky.social`) → save as `BLUESKY_IDENTIFIER`
+
+> **Why app passwords?** App passwords are scoped credentials that can be revoked
+> independently without affecting your main account password. They're the recommended
+> approach for bots and automation on Bluesky.
+
 #### Obsidian Headless Sync Credentials
 
 > **Prerequisites:**
@@ -234,6 +270,8 @@ https://bagrounds.org/reflections/2026-03-05
 
 ## Embed Code Format
 
+### Twitter Embed
+
 The embed code follows the exact pattern used in existing reflection files:
 
 ```html
@@ -241,17 +279,29 @@ The embed code follows the exact pattern used in existing reflection files:
 <blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">{tweet text with HTML entities}</p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/{tweet_id}?ref_src=twsrc%5Etfw">{date}</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 ```
 
+### Bluesky Embed
+
+The Bluesky embed code follows the pattern used in existing content:
+
+```html
+## 🦋 Bluesky
+<blockquote class="bluesky-embed" data-bluesky-uri="at://{did}/app.bsky.feed.post/{post_id}" data-bluesky-embed-color-mode="system"><p lang="en">{post text}</p>&mdash; Bryan Grounds (<a href="https://bsky.app/profile/{did}?ref_src=embed">@bagrounds.bsky.social</a>) <a href="https://bsky.app/profile/{did}/post/{post_id}?ref_src=embed">{date}</a></blockquote><script async src="https://embed.bsky.app/static/embed.js" charset="utf-8"></script>
+```
+
 ## Error Handling
 
 | Scenario | Behavior |
 |---|---|
 | No reflection for yesterday | Exit gracefully with info log |
-| Reflection already has tweet section | Skip (idempotent) |
-| Gemini API failure | Exit with error, no tweet posted |
-| Twitter API 5xx (e.g. 503) | Log full error details, retry v2 up to 5× with exponential backoff (10s base, ~5 min total) using `X-Idempotency-Key` to prevent ghost-tweet duplicates. v1.1 is NOT available on the free tier. |
-| Twitter API 4xx (auth/bad request) | Exit with error immediately, no retry |
-| oEmbed API failure | Fall back to locally generated embed code |
-| Obsidian Sync failure | Exit with error (tweet is already posted; re-run will skip posting and retry sync) |
+| Reflection already has both embed sections | Skip (idempotent) |
+| Gemini API failure | Exit with error, no posts made |
+| Twitter API 5xx (e.g. 503) | Log error (non-fatal), retry v2 up to 5× with exponential backoff using `X-Idempotency-Key`, continue to Bluesky |
+| Twitter API 4xx (auth/bad request) | Log error (non-fatal), no retry, continue to Bluesky |
+| Twitter credentials not configured | Skip Twitter, continue to Bluesky |
+| Bluesky API failure | Log error (non-fatal), continue |
+| Bluesky credentials not configured | Skip Bluesky, continue |
+| oEmbed API failure (either platform) | Fall back to locally generated embed code |
+| Obsidian Sync failure | Exit with error (posts already made; re-run will skip posting and retry sync) |
 
 ## Testing Strategy
 
@@ -307,6 +357,14 @@ varies: 9:00 AM PST (Nov–Mar) or 10:00 AM PDT (Mar–Nov).
 
 ## Libraries & Services Reference
 
+### @atproto/api (npm)
+
+- **Package**: [`@atproto/api`](https://www.npmjs.com/package/@atproto/api)
+- **GitHub**: [bluesky-social/atproto](https://github.com/bluesky-social/atproto)
+- **Docs**: [AT Protocol docs](https://atproto.com/), [Bluesky API docs](https://docs.bsky.app/)
+- **Purpose**: Post to Bluesky via the AT Protocol API using app password authentication
+- **Key methods**: `agent.login()`, `agent.post({ text })`, `agent.deletePost(uri)`
+
 ### twitter-api-v2 (npm)
 
 - **Package**: [`twitter-api-v2`](https://www.npmjs.com/package/twitter-api-v2)
@@ -333,6 +391,12 @@ varies: 9:00 AM PST (Nov–Mar) or 10:00 AM PDT (Mar–Nov).
 - **Key commands**: `ob login`, `ob sync-setup`, `ob sync`, `ob sync-list-remote`
 - **Auth**: `OBSIDIAN_AUTH_TOKEN` env var for non-interactive CI use
 - **Requires**: Node.js 22+, active [Obsidian Sync](https://obsidian.md/sync) subscription
+
+### Bluesky oEmbed API
+
+- **Endpoint**: `https://embed.bsky.app/oembed?url={post_url}`
+- **Docs**: [Bluesky oEmbed](https://docs.bsky.app/docs/advanced-guides/oembed)
+- **Purpose**: Fetch official embed HTML for a posted Bluesky post (no authentication required)
 
 ### Twitter oEmbed API
 

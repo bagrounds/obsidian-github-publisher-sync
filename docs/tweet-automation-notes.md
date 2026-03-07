@@ -54,7 +54,7 @@ https://t.co/mXLn8dlc56</p>&mdash; Bryan Grounds (@bagrounds)
 #### Google Gemini API
 - **Choice:** [`@google/generative-ai`](https://github.com/google-gemini/generative-ai-js) official SDK
 - **Rationale:** Official Google SDK, well-maintained, TypeScript types included
-- **Model:** configurable via `GEMINI_MODEL` env var, defaults to `gemma-3-27b-it` — generous free tier (14,400 RPD)
+- **Model:** configurable via `GEMINI_MODEL` env var, defaults to `gemini-2.0-flash` — fast, supports system instructions
 - **Alternative considered:** OpenAI GPT — rejected because user specified Gemini
 - **Docs:** [Gemini API docs](https://ai.google.dev/gemini-api/docs)
 

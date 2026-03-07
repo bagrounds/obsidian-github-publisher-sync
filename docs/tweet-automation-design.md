@@ -61,7 +61,7 @@ the Enveloppe plugin, at which point the deploy workflow rebuilds and publishes 
   - Includes the reflection URL
   - Stays within Twitter's 280-character limit
   - Matches the style of existing tweets (title on first line, tags on second, URL last)
-- Model: configurable via `GEMINI_MODEL` env var (default: `gemma-3-27b-it` — generous free tier)
+- Model: configurable via `GEMINI_MODEL` env var (default: `gemini-2.0-flash` — fast, supports system instructions)
 
 ### Step 4: Post Tweet via Twitter API
 
@@ -137,7 +137,7 @@ These are non-secret configuration values. Set them as **repository variables** 
 
 | Variable Name | Description | Default |
 |---|---|---|
-| `GEMINI_MODEL` | Google AI model name | `gemma-3-27b-it` |
+| `GEMINI_MODEL` | Google AI model name | `gemini-2.0-flash` |
 
 ### How to Set GitHub Actions Secrets
 

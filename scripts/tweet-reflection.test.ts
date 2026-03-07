@@ -462,7 +462,7 @@ describe("validateEnvironment", () => {
     assert.equal(env.twitter.accessToken, "test-token");
     assert.equal(env.twitter.accessSecret, "test-access-secret");
     assert.equal(env.gemini.apiKey, "test-gemini-key");
-    assert.equal(env.gemini.model, "gemma-3-27b-it");
+    assert.equal(env.gemini.model, "gemini-2.0-flash");
     assert.equal(env.obsidian.authToken, "test-auth-token");
     assert.equal(env.obsidian.vaultName, "My Vault");
     assert.equal(env.obsidian.vaultPassword, undefined);

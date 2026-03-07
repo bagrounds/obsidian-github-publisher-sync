@@ -39,10 +39,11 @@
 import { randomUUID } from "node:crypto";
 import fs from "node:fs";
 import path from "node:path";
-import { execFile as execFileCb } from "node:child_process";
+import { execFile as execFileCb, exec as execCb } from "node:child_process";
 import { promisify } from "node:util";
 
 const execFileAsync = promisify(execFileCb);
+const execAsync = promisify(execCb);
 
 // --- Types ---
 
@@ -559,7 +560,13 @@ export async function getEmbedHtml(
  * Uses app password authentication (simpler than OAuth for single-user bots).
  * The `@atproto/api` package handles AT Protocol session management.
  *
+ * When a link card (external embed) is provided, Bluesky renders a website
+ * preview card below the post text — similar to what happens when you paste
+ * a URL in the Bluesky app. Bluesky does NOT auto-fetch OpenGraph metadata;
+ * the caller must supply the title, description, and URI explicitly.
+ *
  * @see https://docs.bsky.app/docs/api/app/bsky/feed/post
+ * @see https://docs.bsky.app/docs/advanced-guides/posts#website-card-embeds
  * @see https://atproto.com/guides/bot-tutorial
  */
 export async function postToBluesky(
@@ -567,6 +574,11 @@ export async function postToBluesky(
   credentials: {
     identifier: string;
     password: string;
+  },
+  linkCard?: {
+    uri: string;
+    title: string;
+    description: string;
   },
 ): Promise<BlueskyPostResult> {
   const { AtpAgent } = await import("@atproto/api");
@@ -584,10 +596,26 @@ export async function postToBluesky(
   const rt = new RichText({ text });
   await rt.detectFacets(agent);
 
-  const response = await agent.post({
+  // Build the post record
+  const postRecord: Record<string, unknown> = {
     text: rt.text,
     facets: rt.facets,
-  });
+  };
+
+  // Add external embed (website card) if provided
+  if (linkCard) {
+    postRecord.embed = {
+      $type: "app.bsky.embed.external",
+      external: {
+        uri: linkCard.uri,
+        title: linkCard.title,
+        description: linkCard.description,
+      },
+    };
+    console.log(`  🔗 Bluesky: attaching link card for ${linkCard.uri}`);
+  }
+
+  const response = await agent.post(postRecord);
 
   return {
     uri: response.uri,
@@ -875,12 +903,10 @@ export async function syncObsidianVault(credentials: {
   console.log(`🔧 Setting up Obsidian Sync for vault: ${credentials.vaultName}`);
   await runObCommand(setupArgs, { env });
 
-  // Remove stale sync lock left by sync-setup or a previous interrupted run.
-  // The `ob sync` command creates `.obsidian/.sync.lock` to prevent concurrent
-  // syncs. In CI, this lock can be left behind if a previous workflow run was
-  // interrupted or if `sync-setup` itself creates the lock.
+  // Kill lingering processes and remove stale lock left by sync-setup.
+  // sync-setup may leave orphan child processes that hold the lock.
   // @see https://github.com/obsidianmd/obsidian-headless/issues/4
-  removeSyncLock(vaultDir);
+  await ensureSyncClean(vaultDir);
 
   // Pull latest content (retry once if lock contention occurs)
   console.log(`📥 Pulling latest vault content...`);
@@ -889,9 +915,8 @@ export async function syncObsidianVault(credentials: {
   } catch (error) {
     const msg = error instanceof Error ? error.message : String(error);
     if (msg.includes("Another sync instance")) {
-      console.warn(`  ⚠️ Sync lock contention on pull, removing lock and retrying in 5s...`);
-      removeSyncLock(vaultDir);
-      await new Promise((resolve) => setTimeout(resolve, 5_000));
+      console.warn(`  ⚠️ Sync lock contention on pull, cleaning up and retrying...`);
+      await ensureSyncClean(vaultDir);
       await runObCommand(["sync", "--path", vaultDir], { env });
     } else {
       throw error;
@@ -919,6 +944,82 @@ function removeSyncLock(vaultDir: string): void {
 }
 
 /**
+ * Kill any lingering `ob` processes that may be holding the sync lock.
+ *
+ * The `ob sync-setup` and `ob sync` commands can leave orphan child processes
+ * that hold the `.sync.lock` even after the parent process exits. Removing the
+ * lock file alone doesn't help because the running process recreates it or
+ * detects the running instance via other means (e.g. PID file, socket).
+ *
+ * This function finds all `ob` processes (except the current one) and sends
+ * SIGTERM to each, then waits briefly for them to exit.
+ *
+ * ## 5 Whys — Obsidian sync lock failure
+ *
+ * 1. **Why does "Another sync instance is already running" persist after
+ *    removing `.sync.lock`?**
+ *    Because the `ob` CLI checks for a running process, not just a lock file.
+ *    A lingering `ob` process from `sync-setup` or a previous `sync` still
+ *    holds the lock at the OS level.
+ *
+ * 2. **Why is there a lingering `ob` process?**
+ *    `ob sync-setup` may spawn background workers or keep a file watcher
+ *    alive. When called via Node's `execFile`, the parent resolves after
+ *    stdout/stderr close, but child processes may linger.
+ *
+ * 3. **Why doesn't `execFile` kill child processes on completion?**
+ *    `execFile` only waits for the main process; it doesn't track or kill
+ *    grandchild/orphan processes. The `ob` tool's internal architecture
+ *    may fork workers that outlive the main CLI process.
+ *
+ * 4. **Why does the retry-after-5s approach also fail?**
+ *    The 5s delay doesn't kill the lingering process — it just waits.
+ *    The process is still alive and still holding the lock when the retry
+ *    fires.
+ *
+ * 5. **What is the root fix?**
+ *    Kill all `ob` processes between operations. This ensures no orphan
+ *    process holds the lock when the next `ob sync` starts. Combined
+ *    with lock file removal, this handles both file-based and process-based
+ *    lock mechanisms.
+ *
+ * @see https://github.com/obsidianmd/obsidian-headless/issues/4
+ * @see https://help.obsidian.md/sync/headless
+ */
+async function killObProcesses(): Promise<void> {
+  try {
+    // Find all 'ob' process PIDs (exclude grep itself)
+    const { stdout } = await execAsync(
+      "ps aux | grep '[o]b ' | grep -v grep | awk '{print $2}'",
+    );
+    const pids = stdout.trim().split("\n").filter(Boolean);
+    if (pids.length > 0) {
+      console.log(`🔪 Killing ${pids.length} lingering ob process(es): ${pids.join(", ")}`);
+      for (const pid of pids) {
+        try {
+          process.kill(parseInt(pid, 10), "SIGTERM");
+        } catch {
+          // Process may have already exited — ignore
+        }
+      }
+      // Wait briefly for processes to terminate
+      await new Promise((resolve) => setTimeout(resolve, 1_000));
+    }
+  } catch {
+    // ps/grep may fail if no processes found — that's fine
+  }
+}
+
+/**
+ * Ensure no sync lock or lingering process blocks the next `ob sync`.
+ * Combines lock file removal with process cleanup for maximum reliability.
+ */
+async function ensureSyncClean(vaultDir: string): Promise<void> {
+  await killObProcesses();
+  removeSyncLock(vaultDir);
+}
+
+/**
  * Push local changes back to the Obsidian vault via Headless Sync.
  */
 export async function pushObsidianVault(
@@ -929,8 +1030,8 @@ export async function pushObsidianVault(
     OBSIDIAN_AUTH_TOKEN: credentials.authToken,
   };
 
-  // Remove stale sync lock left by the pull operation
-  removeSyncLock(vaultDir);
+  // Kill lingering processes and remove stale lock left by pull
+  await ensureSyncClean(vaultDir);
 
   console.log(`📤 Pushing changes to Obsidian Sync...`);
   try {
@@ -938,9 +1039,8 @@ export async function pushObsidianVault(
   } catch (error) {
     const msg = error instanceof Error ? error.message : String(error);
     if (msg.includes("Another sync instance")) {
-      console.warn(`  ⚠️ Sync lock contention on push, removing lock and retrying in 5s...`);
-      removeSyncLock(vaultDir);
-      await new Promise((resolve) => setTimeout(resolve, 5_000));
+      console.warn(`  ⚠️ Sync lock contention on push, cleaning up and retrying...`);
+      await ensureSyncClean(vaultDir);
       await runObCommand(["sync", "--path", vaultDir], { env });
     } else {
       throw error;
@@ -1213,7 +1313,17 @@ export async function main(options?: {
       (async (): Promise<EmbedSection | null> => {
         try {
           console.log(`🦋 Posting to Bluesky...`);
-          const bskyPost = await postToBluesky(postText, env.bluesky!);
+
+          // Build link card for the reflection URL so Bluesky renders a website preview.
+          // Bluesky does NOT auto-fetch OpenGraph metadata; we must supply it explicitly.
+          // @see https://docs.bsky.app/docs/advanced-guides/posts#website-card-embeds
+          const linkCard = {
+            uri: reflection.url,
+            title: reflection.title,
+            description: `Daily reflection from bagrounds.org — ${reflection.date}`,
+          };
+
+          const bskyPost = await postToBluesky(postText, env.bluesky!, linkCard);
           const did = extractBlueskyDid(bskyPost.uri);
           const postId = extractBlueskyPostId(bskyPost.uri);
           console.log(

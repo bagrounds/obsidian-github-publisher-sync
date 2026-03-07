@@ -79,6 +79,7 @@ the Enveloppe plugin, at which point the deploy workflow rebuilds and publishes 
 - Uses the `@atproto/api` package with app password authentication
 - Posts the same generated text to Bluesky
 - Uses `RichText.detectFacets()` to auto-detect URLs and mentions in the text, generating proper facet annotations so links are rendered as clickable hyperlinks in Bluesky clients
+- Attaches an `app.bsky.embed.external` embed (link card) with the reflection's URL, title, and description so Bluesky renders a website preview card below the post
 - Returns the post URI and CID from the response
 - **Non-fatal**: If Bluesky fails, logs the error and continues
 
@@ -93,9 +94,11 @@ the Enveloppe plugin, at which point the deploy workflow rebuilds and publishes 
 - Installs [`obsidian-headless`](https://github.com/obsidianmd/obsidian-headless) globally
 - Authenticates using `OBSIDIAN_AUTH_TOKEN` environment variable
 - Runs `ob sync-setup` to connect to the remote vault
+- Kills any lingering `ob` processes and removes stale `.sync.lock` (prevents "Another sync instance" errors)
 - Runs `ob sync` to pull the latest vault content to a temp directory
 - Reads the reflection note from the synced vault
 - Appends `## 🐦 Tweet` section (if Twitter succeeded) and/or `## 🦋 Bluesky` section (if Bluesky succeeded)
+- Kills lingering processes and removes lock again before push
 - Runs `ob sync` again to push the change back to Obsidian Sync
 - The user sees the update on their phone (or any Obsidian device) and reviews it
 
@@ -303,7 +306,7 @@ The Bluesky embed code follows the pattern used in existing content:
 | Bluesky credentials not configured | Skip Bluesky, continue |
 | Bluesky oEmbed 404 on fresh post | Wait 3s for propagation, retry once after 5s, fall back to local embed |
 | oEmbed API failure (either platform) | Fall back to locally generated embed code |
-| Obsidian Sync "already running" lock | Remove stale `.sync.lock` before pull and push, retry with 5s delay on lock contention |
+| Obsidian Sync "already running" lock | Kill lingering `ob` processes + remove `.sync.lock` before each sync, retry on lock contention |
 | Obsidian Sync failure | Exit with error (posts already made; re-run will skip posting and retry sync) |
 
 ### Architecture: Parallel Platform Posting
@@ -325,12 +328,17 @@ Failures on one platform don't affect the other. Results are collected after all
 ### 5 Whys: Obsidian Sync "Another Instance Already Running"
 
 1. **Why did the sync fail?** The `ob sync` command reported "Another sync instance is already running for this vault."
-2. **Why did it think another instance was running?** A `.sync.lock` directory exists inside `.obsidian/` in the vault directory. This lock is created by both `ob sync-setup` and `ob sync`.
-3. **Why was the lock still present?** The `ob sync-setup` command creates the lock during vault initialization, and the subsequent `ob sync` (pull) finds it already present. Additionally, if a previous workflow run was interrupted (e.g. the push step failed), the lock from that run's pull operation may persist until the `ob sync` process exits cleanly.
-4. **Why doesn't the lock self-expire?** The `.sync.lock` is not self-expiring; it's only removed on clean process exit (SIGTERM), not on crashes or hard kills (SIGKILL). In CI, if any step fails, the lock is left behind for subsequent operations.
-5. **Why are we calling `ob sync` multiple times?** We need to: (1) set up the vault connection (`sync-setup`), (2) pull the latest content (`sync`), (3) modify the file, and (4) push changes back (`sync`). Each `ob sync` invocation may create or check for the lock.
+2. **Why did it think another instance was running?** The `ob` CLI checks for both a `.sync.lock` file/directory AND running `ob` processes. Even after removing the lock file, a lingering process from `sync-setup` or a previous `sync` still holds the lock at the OS level.
+3. **Why is there a lingering `ob` process?** `ob sync-setup` and `ob sync` may spawn background workers or keep file watchers alive. When called via Node's `execFile`, the parent resolves after stdout/stderr close, but child/grandchild processes may linger as orphans.
+4. **Why doesn't `execFile` kill child processes on completion?** `execFile` only waits for the main process; it doesn't track or kill grandchild/orphan processes. The `ob` tool's internal architecture may fork workers that outlive the main CLI process.
+5. **Why did the retry-after-5s approach also fail?** The 5s delay removed the lock file but didn't kill the lingering process. The orphaned `ob` process was still alive and still holding the lock when the retry fired. Simply removing the file was necessary but not sufficient.
 
-**Fix:** Added `removeSyncLock()` before BOTH pull and push operations (not just push). Also added retry-with-delay logic: on "Another sync instance" errors, the lock is removed and the operation retries after 5 seconds. This handles three cases: (a) lock left by `sync-setup`, (b) lock left by previous pull, (c) lock from a previous interrupted workflow run. See [obsidianmd/obsidian-headless#4](https://github.com/obsidianmd/obsidian-headless/issues/4).
+**Fix:** Added `ensureSyncClean()` which combines two cleanup strategies: (a) `killObProcesses()` finds and terminates all lingering `ob` processes via `process.kill(pid, SIGTERM)`, and (b) `removeSyncLock()` removes the `.sync.lock` file/directory. This is called before BOTH pull and push operations, and again on retry after lock contention errors. The dual approach handles both file-based locks and process-based locks. See [obsidianmd/obsidian-headless#4](https://github.com/obsidianmd/obsidian-headless/issues/4).
+
+**Research sources:**
+- [Obsidian Headless Sync docs](https://help.obsidian.md/sync/headless) — `ob sync` is one-shot by default; `--continuous` keeps running
+- [obsidianmd/obsidian-headless#4](https://github.com/obsidianmd/obsidian-headless/issues/4) — stale `.sync.lock` after hard kill blocks future syncs
+- [Obsidian Forum: Use sync from a headless server](https://forum.obsidian.md/t/use-sync-from-a-headless-server/75006) — community advice on serializing sync and managing locks
 
 ### 5 Whys: Bluesky Links Not Rendered as Hyperlinks
 
@@ -341,6 +349,16 @@ Failures on one platform don't affect the other. Results are collected after all
 5. **Why didn't we notice earlier?** The post text was correct and the oEmbed embed displayed fine, but the actual Bluesky post (viewed on bsky.app) showed the URL as non-clickable plain text.
 
 **Fix:** Added `RichText` from `@atproto/api` to detect facets before posting. The `detectFacets()` method scans the text for URLs and mentions, generating the correct byte-offset facet annotations that Bluesky clients need to render clickable links. See [Bluesky Rich Text docs](https://docs.bsky.app/docs/advanced-guides/post-richtext).
+
+### 5 Whys: Bluesky Posts Missing Website Preview Card
+
+1. **Why didn't the post show a website preview (link card)?** Bluesky displayed the URL as a text link but no preview card with title/description.
+2. **Why didn't Bluesky auto-generate a preview?** Unlike Twitter, Bluesky does NOT auto-fetch OpenGraph metadata from URLs. The AT Protocol requires the client to explicitly provide link card data as an `app.bsky.embed.external` embed.
+3. **Why doesn't Bluesky auto-fetch metadata?** This is a deliberate design decision for privacy and security reasons — Bluesky avoids making server-side requests to arbitrary URLs. The poster is responsible for supplying preview metadata.
+4. **Why weren't we sending an embed?** The `agent.post()` call only included `text` and `facets` (for clickable links) but not the `embed` field needed for website card previews.
+5. **Why does the external embed require title/description?** The `app.bsky.embed.external` schema requires `uri`, `title`, and `description` fields; `thumb` (image) is optional. This gives the poster full control over what appears in the card.
+
+**Fix:** Added a `linkCard` parameter to `postToBluesky()` that creates an `app.bsky.embed.external` embed with the reflection's URL, title, and a description. This is constructed from the `ReflectionData` we already have (no need to fetch the page). The embed is passed to `agent.post()` alongside the text and facets. See [Bluesky Website Card Embeds](https://docs.bsky.app/docs/advanced-guides/posts#website-card-embeds).
 
 ## Testing Strategy
 

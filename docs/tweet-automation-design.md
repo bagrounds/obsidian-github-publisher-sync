@@ -78,6 +78,7 @@ the Enveloppe plugin, at which point the deploy workflow rebuilds and publishes 
 
 - Uses the `@atproto/api` package with app password authentication
 - Posts the same generated text to Bluesky
+- Uses `RichText.detectFacets()` to auto-detect URLs and mentions in the text, generating proper facet annotations so links are rendered as clickable hyperlinks in Bluesky clients
 - Returns the post URI and CID from the response
 - **Non-fatal**: If Bluesky fails, logs the error and continues
 
@@ -302,7 +303,7 @@ The Bluesky embed code follows the pattern used in existing content:
 | Bluesky credentials not configured | Skip Bluesky, continue |
 | Bluesky oEmbed 404 on fresh post | Wait 3s for propagation, retry once after 5s, fall back to local embed |
 | oEmbed API failure (either platform) | Fall back to locally generated embed code |
-| Obsidian Sync "already running" lock | Remove stale `.sync.lock` before push, retry |
+| Obsidian Sync "already running" lock | Remove stale `.sync.lock` before pull and push, retry with 5s delay on lock contention |
 | Obsidian Sync failure | Exit with error (posts already made; re-run will skip posting and retry sync) |
 
 ### Architecture: Parallel Platform Posting
@@ -323,13 +324,23 @@ Failures on one platform don't affect the other. Results are collected after all
 
 ### 5 Whys: Obsidian Sync "Another Instance Already Running"
 
-1. **Why did the push fail?** The `ob sync` command reported "Another sync instance is already running for this vault."
-2. **Why did it think another instance was running?** A `.sync.lock` directory exists inside `.obsidian/` in the vault directory.
-3. **Why was the lock still present?** The previous `ob sync` (pull operation) created the lock and didn't clean it up properly after completing.
-4. **Why didn't the first sync clean up?** The `ob sync` command creates a lock to prevent concurrent syncs, but in CI where we do pull → modify → push as separate `ob sync` invocations, the lock from the first invocation blocks the second.
-5. **Why are we calling `ob sync` twice?** We need to pull the latest vault content first, modify a file, then push the changes back — this requires two separate sync operations.
+1. **Why did the sync fail?** The `ob sync` command reported "Another sync instance is already running for this vault."
+2. **Why did it think another instance was running?** A `.sync.lock` directory exists inside `.obsidian/` in the vault directory. This lock is created by both `ob sync-setup` and `ob sync`.
+3. **Why was the lock still present?** The `ob sync-setup` command creates the lock during vault initialization, and the subsequent `ob sync` (pull) finds it already present. Additionally, if a previous workflow run was interrupted (e.g. the push step failed), the lock from that run's pull operation may persist until the `ob sync` process exits cleanly.
+4. **Why doesn't the lock self-expire?** The `.sync.lock` is not self-expiring; it's only removed on clean process exit (SIGTERM), not on crashes or hard kills (SIGKILL). In CI, if any step fails, the lock is left behind for subsequent operations.
+5. **Why are we calling `ob sync` multiple times?** We need to: (1) set up the vault connection (`sync-setup`), (2) pull the latest content (`sync`), (3) modify the file, and (4) push changes back (`sync`). Each `ob sync` invocation may create or check for the lock.
 
-**Fix:** Added `removeSyncLock()` that deletes `.obsidian/.sync.lock` before the push operation. This is safe in CI because we control the vault directory exclusively — there's no actual concurrent sync to protect against. See [obsidianmd/obsidian-headless#4](https://github.com/obsidianmd/obsidian-headless/issues/4).
+**Fix:** Added `removeSyncLock()` before BOTH pull and push operations (not just push). Also added retry-with-delay logic: on "Another sync instance" errors, the lock is removed and the operation retries after 5 seconds. This handles three cases: (a) lock left by `sync-setup`, (b) lock left by previous pull, (c) lock from a previous interrupted workflow run. See [obsidianmd/obsidian-headless#4](https://github.com/obsidianmd/obsidian-headless/issues/4).
+
+### 5 Whys: Bluesky Links Not Rendered as Hyperlinks
+
+1. **Why weren't URLs clickable in Bluesky posts?** The Bluesky client rendered them as plain text, not hyperlinks.
+2. **Why does Bluesky not auto-detect links in plain text?** Unlike Twitter, Bluesky uses the AT Protocol's rich text model where links must be explicitly declared as "facets" (metadata marking substring ranges as links).
+3. **Why weren't we sending facets?** The `agent.post({ text })` call only sent plain text without any facet annotations.
+4. **Why does the AT Protocol require explicit facets?** The protocol separates content (text) from presentation (facets) to support structured, verifiable rich text across federated servers — there's no server-side link detection.
+5. **Why didn't we notice earlier?** The post text was correct and the oEmbed embed displayed fine, but the actual Bluesky post (viewed on bsky.app) showed the URL as non-clickable plain text.
+
+**Fix:** Added `RichText` from `@atproto/api` to detect facets before posting. The `detectFacets()` method scans the text for URLs and mentions, generating the correct byte-offset facet annotations that Bluesky clients need to render clickable links. See [Bluesky Rich Text docs](https://docs.bsky.app/docs/advanced-guides/post-richtext).
 
 ## Testing Strategy
 

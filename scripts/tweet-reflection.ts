@@ -347,7 +347,7 @@ export async function withRetry<T>(
 /**
  * Log verbose details from a twitter-api-v2 error for diagnostics.
  */
-function logTwitterError(label: string, err: unknown): void {
+function logTwitterError(label: string, err: unknown, verbose = false): void {
   const e = err as {
     code?: number;
     data?: unknown;
@@ -357,32 +357,16 @@ function logTwitterError(label: string, err: unknown): void {
     stack?: string;
     type?: string;
   };
-  console.error(`🔍 [${label}] Twitter API error details:`);
-  console.error(`  HTTP status: ${e.code ?? "unknown"}`);
-  console.error(`  Error type:  ${e.type ?? "unknown"}`);
-  console.error(`  Message:     ${e.message ?? "none"}`);
-  console.error(`  Response data: ${JSON.stringify(e.data ?? null, null, 2)}`);
-  console.error(`  Rate limit:  ${JSON.stringify(e.rateLimit ?? null, null, 2)}`);
-  if (e.headers) {
-    // Log a subset of useful headers
-    const useful = [
-      "x-rate-limit-limit",
-      "x-rate-limit-remaining",
-      "x-rate-limit-reset",
-      "content-type",
-      "x-connection-hash",
-      "api-version",
-      "server",
-      "retry-after",
-    ];
-    const filtered: Record<string, string> = {};
-    for (const h of useful) {
-      if (e.headers[h]) filtered[h] = e.headers[h];
-    }
-    console.error(`  Response headers (subset): ${JSON.stringify(filtered, null, 2)}`);
-  }
+  // One-line summary (always shown)
+  console.error(`  ⚠️ [${label}] ${e.code ?? "?"} ${e.message ?? "unknown error"}`);
+  // Verbose details only on final failure
+  if (!verbose) return;
+  console.error(`🔍 Twitter API error details:`);
+  console.error(`  HTTP status: ${e.code ?? "unknown"}, type: ${e.type ?? "unknown"}`);
+  if (e.data) console.error(`  Response data: ${JSON.stringify(e.data, null, 2)}`);
+  if (e.rateLimit) console.error(`  Rate limit: ${JSON.stringify(e.rateLimit, null, 2)}`);
   if (e.stack) {
-    console.error(`  Stack trace:\n${e.stack}`);
+    console.error(`  Stack trace:\n${e.stack.split("\n").slice(0, 4).join("\n")}`);
   }
 }
 
@@ -595,7 +579,15 @@ export async function postToBluesky(
 
   console.log(`  📡 Bluesky: creating post...`);
 
-  const response = await agent.post({ text });
+  // Use RichText to detect facets (links, mentions) so URLs are clickable
+  const { RichText } = await import("@atproto/api");
+  const rt = new RichText({ text });
+  await rt.detectFacets(agent);
+
+  const response = await agent.post({
+    text: rt.text,
+    facets: rt.facets,
+  });
 
   return {
     uri: response.uri,
@@ -883,9 +875,28 @@ export async function syncObsidianVault(credentials: {
   console.log(`🔧 Setting up Obsidian Sync for vault: ${credentials.vaultName}`);
   await runObCommand(setupArgs, { env });
 
-  // Pull latest content
+  // Remove stale sync lock left by sync-setup or a previous interrupted run.
+  // The `ob sync` command creates `.obsidian/.sync.lock` to prevent concurrent
+  // syncs. In CI, this lock can be left behind if a previous workflow run was
+  // interrupted or if `sync-setup` itself creates the lock.
+  // @see https://github.com/obsidianmd/obsidian-headless/issues/4
+  removeSyncLock(vaultDir);
+
+  // Pull latest content (retry once if lock contention occurs)
   console.log(`📥 Pulling latest vault content...`);
-  await runObCommand(["sync", "--path", vaultDir], { env });
+  try {
+    await runObCommand(["sync", "--path", vaultDir], { env });
+  } catch (error) {
+    const msg = error instanceof Error ? error.message : String(error);
+    if (msg.includes("Another sync instance")) {
+      console.warn(`  ⚠️ Sync lock contention on pull, removing lock and retrying in 5s...`);
+      removeSyncLock(vaultDir);
+      await new Promise((resolve) => setTimeout(resolve, 5_000));
+      await runObCommand(["sync", "--path", vaultDir], { env });
+    } else {
+      throw error;
+    }
+  }
 
   return vaultDir;
 }
@@ -922,7 +933,19 @@ export async function pushObsidianVault(
   removeSyncLock(vaultDir);
 
   console.log(`📤 Pushing changes to Obsidian Sync...`);
-  await runObCommand(["sync", "--path", vaultDir], { env });
+  try {
+    await runObCommand(["sync", "--path", vaultDir], { env });
+  } catch (error) {
+    const msg = error instanceof Error ? error.message : String(error);
+    if (msg.includes("Another sync instance")) {
+      console.warn(`  ⚠️ Sync lock contention on push, removing lock and retrying in 5s...`);
+      removeSyncLock(vaultDir);
+      await new Promise((resolve) => setTimeout(resolve, 5_000));
+      await runObCommand(["sync", "--path", vaultDir], { env });
+    } else {
+      throw error;
+    }
+  }
 }
 
 /**
@@ -1174,12 +1197,8 @@ export async function main(options?: {
             buildSection: buildTweetSection,
           };
         } catch (error) {
-          console.error(`⚠️  Twitter posting failed (non-fatal):`);
-          console.error(`   ${error instanceof Error ? error.message : error}`);
-          if (error instanceof Error && error.stack) {
-            console.error(`   Stack: ${error.stack.split("\n").slice(0, 3).join("\n   ")}`);
-          }
-          logTwitterError("Twitter post failed", error);
+          console.error(`⚠️  Twitter posting failed (non-fatal)`);
+          logTwitterError("final", error, true);
           return null;
         }
       })(),

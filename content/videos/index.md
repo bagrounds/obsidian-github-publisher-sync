@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-03-06T15:46:30-08:00
+updated: 2026-03-07T11:48:02-08:00
 ---
 [Home](../index.md)  
-# 📺 Videos (668)  
+# 📺 Videos (669)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
 - [❓💪🔬 12 Questions About Creatine with Stephen Cornish, PhD](./12-questions-about-creatine-w-stephen-cornish-phd.md)  
@@ -109,6 +109,7 @@ updated: 2026-03-06T15:46:30-08:00
 - [🏛️🗳️🗣️ Brooks and Capehart on the Senate primaries in Texas](./brooks-and-capehart-on-the-senate-primaries-in-texas.md)  
 - [🇺🇸🤝🤔 Brooks and Capehart on Trump forcing allies to reevaluate ties with U.S.](./brooks-and-capehart-on-trump-forcing-allies-to-reevaluate-ties-with-us.md)  
 - [📣📊🧠 Brooks and Capehart on Trump's approval ratings and mental acuity](./brooks-and-capehart-on-trumps-approval-ratings-and-mental-acuity.md)  
+- [💥💣🇺🇸🇮🇷 Brooks and Capehart on Trump's decision to launch strikes on Iran](./brooks-and-capehart-on-trumps-decision-to-launch-strikes-on-iran.md)  
 - [👑🚧📉 Brooks and Capehart on Trump’s tariffs and reaction from the markets](./brooks-and-capehart-on-trumps-tariffs-and-reaction-from-the-markets.md)  
 - [🥋🧠💪 Bruce Lee’s 11 Rules for an Unbreakable Mind](./bruce-lees-11-rules-for-an-unbreakable-mind.md)  
 - [💡🔄🤖 Build a Prompt Learning Loop - SallyAnn DeLucia & Fuad Ali, Arize](./build-a-prompt-learning-loop-sallyann-delucia-fuad-ali-arize.md)  

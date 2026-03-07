@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-03-06T15:46:30-08:00
+updated: 2026-03-07T11:48:02-08:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -13,8 +13,9 @@ updated: 2026-03-06T15:46:30-08:00
 ❔ What do 🫵 _you_ 🤔 think?  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (477)  
-- [2026-03-06](./reflections/2026-03-06.md)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (478)  
+- [2026-03-07](./reflections/2026-03-07.md)  
+- [2026-03-06 | 🤖🆚🧠 Code 🤖 Choice 📺](./reflections/2026-03-06.md)  
 - [2026-03-05 | 😴🧠💤 Tired 🤖 Murderbot 📺](./reflections/2026-03-05.md)  
 - [2026-03-04 | 🤖⚙️ Claude 👥 Everyone 🤖](./reflections/2026-03-04.md)  
 - [2026-03-03 | 💰🏛️📈 Wealth 📊 Public Finance 🤖](./reflections/2026-03-03.md)  
@@ -23,14 +24,14 @@ updated: 2026-03-06T15:46:30-08:00
 - [2026-02-28 | 🤖⚙️🧠 Agentic 📖](./reflections/2026-02-28.md)  
 - [2026-02-27 | 🤖🐍🚫🐍 AI 🇺🇸 Polarized 🏛️ Brooks 📚📄📺📰](./reflections/2026-02-27.md)  
 - [2026-02-26 | 🌐 Network 🗣️ Prompt 🇺🇸 Union 💰 Wealth 📚📺🤖💬](./reflections/2026-02-26.md)  
-- [2026-02-25 | 🌐 Network 🗓️ Almanack 📚](./reflections/2026-02-25.md)  
   
   
 ## [🧰 Tools](./tools/index.md) (1)  
 - [🧮 Calculator](./tools/calculator.md)  
   
   
-## [📚 Books](./books/index.md) (949)  
+## [📚 Books](./books/index.md) (950)  
+- [⚔️🤫 The Twilight War: The Secret History of America's Thirty-Year Conflict with Iran](./books/the-twilight-war-the-secret-history-of-americas-thirty-year-conflict-with-iran.md)  
 - [ℹ️🌱 The Informed Gardener](./books/the-informed-gardener.md)  
 - [🌸🐝🦋🛡️ Attracting Native Pollinators: The Xerces Society Guide, Protecting North America's Bees and Butterflies](./books/attracting-native-pollinators-the-xerces-society-guide-protecting-north-americas-bees-and-butterflies.md)  
 - [🗓️🌷 RHS Gardening Through the Year](./books/rhs-gardening-through-the-year.md)  
@@ -40,10 +41,10 @@ updated: 2026-03-06T15:46:30-08:00
 - [⌨️🤖 Prompt Engineering for LLMs: The Art and Science of Building Large Language Model-Based Applications](./books/prompt-engineering-for-llms-the-art-and-science-of-building-large-language-model-based-applications.md)  
 - [💻✍️ The Art of Prompt Engineering with ChatGPT: A Hands-On Guide](./books/the-art-of-prompt-engineering-with-chatgpt-a-hands-on-guide.md)  
 - [✨🤖🔗🐍 Generative AI with LangChain: A Hands On Guide to Crafting Scalable, Intelligent Systems and Advanced AI Agents with Python](./books/generative-ai-with-langchain-a-hands-on-guide-to-crafting-scalable-intelligent-systems-and-advanced-ai-agents-with-python.md)  
-- [🤖⚙️ AI Agents in Action](./books/ai-agents-in-action.md)  
   
   
-## [📺 Videos](./videos/index.md) (668)  
+## [📺 Videos](./videos/index.md) (669)  
+- [💥💣🇺🇸🇮🇷 Brooks and Capehart on Trump's decision to launch strikes on Iran](./videos/brooks-and-capehart-on-trumps-decision-to-launch-strikes-on-iran.md)  
 - [🤖🆚🧠⏳📉🔊 Claude Code vs Codex: The Decision That Compounds Every Week You Delay That Nobody Is Talking About](./videos/claude-code-vs-codex-the-decision-that-compounds-every-week-you-delay-that-nobody-is-talking-about.md)  
 - [😴🧠👨‍⚕️ Psychiatrist Explains Why You Feel Tired All The Time (No Matter What You Do...)](./videos/psychiatrist-explains-why-you-feel-tired-all-the-time-no-matter-what-you-do.md)  
 - [🤯➡️🗣️👥➡️🤖 Everyone You Know Is About to Try Claude (I Showed 3 People for 5 Minutes - All 3 Switched)](./videos/everyone-you-know-is-about-to-try-claude-i-showed-3-people-for-5-minutes-all-3-switched.md)  
@@ -53,7 +54,6 @@ updated: 2026-03-06T15:46:30-08:00
 - [🏛️💰❓ Lecture 01: Why Study Public Finance?](./videos/lecture-01-why-study-public-finance.md)  
 - [💰🏛️📈 Lecture 22: Wealth Taxation](./videos/lecture-22-wealth-taxation.md)  
 - [🐛🐌🐞🌿🏡🦠 Managing Pests & Diseases in Your Backyard: Aphids, Blight, and Slugs - Oh My! Workshop](./videos/managing-pests-diseases-in-your-backyard-aphids-blight-and-slugs-oh-my-workshop.md)  
-- [🤖🗣️🏛️⚔️📰 Full interview: Anthropic CEO responds to Trump order, Pentagon clash](./videos/full-interview-anthropic-ceo-responds-to-trump-order-pentagon-clash.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  

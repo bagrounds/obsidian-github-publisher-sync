@@ -17,7 +17,7 @@
  *   TWITTER_ACCESS_TOKEN  - OAuth 1.0a Access Token (generated with Read+Write permissions)
  *   TWITTER_ACCESS_SECRET - OAuth 1.0a Access Token Secret
  *   GEMINI_API_KEY        - Google Gemini API key (from Google AI Studio)
- *   GEMINI_MODEL          - (Optional) Gemini model name, defaults to gemini-2.0-flash
+ *   GEMINI_MODEL          - (Optional) Gemini model name, defaults to gemma-3-27b-it
  *   OBSIDIAN_AUTH_TOKEN   - Obsidian account auth token (from `ob login`)
  *   OBSIDIAN_VAULT_NAME   - Remote vault name or ID in Obsidian Sync
  *   OBSIDIAN_VAULT_PASSWORD - (Optional) E2EE vault password, if vault uses end-to-end encryption
@@ -74,8 +74,8 @@ const TWEET_SECTION_HEADER = "## 🐦 Tweet";
 /** Twitter counts all URLs as 23 characters */
 const TWITTER_URL_LENGTH = 23;
 const TWITTER_MAX_LENGTH = 280;
-/** Default Gemini model — Flash is fast, cheap, and supports system instructions */
-const DEFAULT_GEMINI_MODEL = "gemini-2.0-flash";
+/** Default Gemini model — Gemma 3 27B has a generous free tier (14,400 RPD) */
+const DEFAULT_GEMINI_MODEL = "gemma-3-27b-it";
 
 // --- Reflection File Operations ---
 
@@ -240,30 +240,14 @@ export async function generateTweetWithGemini(
 
   const prompt = buildGeminiPrompt(reflection);
 
-  let result;
-  try {
-    result = await model.generateContent({
-      contents: [{ role: "user", parts: [{ text: prompt.user }] }],
-      systemInstruction: { role: "model", parts: [{ text: prompt.system }] },
-    });
-  } catch (err: unknown) {
-    const message = err instanceof Error ? err.message : String(err);
-    if (message.includes("Developer instruction is not enabled")) {
-      console.warn(
-        `⚠️ Model ${modelName} does not support system instructions, retrying with inline prompt`,
-      );
-      result = await model.generateContent({
-        contents: [
-          {
-            role: "user",
-            parts: [{ text: `${prompt.system}\n\n${prompt.user}` }],
-          },
-        ],
-      });
-    } else {
-      throw err;
-    }
-  }
+  const result = await model.generateContent({
+    contents: [
+      {
+        role: "user",
+        parts: [{ text: `${prompt.system}\n\n${prompt.user}` }],
+      },
+    ],
+  });
 
   const text = result.response.text().trim();
 

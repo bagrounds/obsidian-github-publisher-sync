@@ -586,23 +586,26 @@ export async function fetchOgMetadata(url: string): Promise<OgMetadata> {
     const html = await response.text();
     const metadata: OgMetadata = {};
 
-    // Parse og:title
-    const titleMatch = html.match(
-      /<meta\s+property=["']og:title["']\s+content=["']([^"']+)["']/i,
-    );
-    if (titleMatch) metadata.title = titleMatch[1];
+    // Helper to extract OG property values. Handles both attribute orders:
+    //   <meta property="og:X" content="value">
+    //   <meta content="value" property="og:X">
+    const extractOg = (property: string): string | undefined => {
+      const propFirst = html.match(
+        new RegExp(`<meta\\s+property=["']${property}["']\\s+content=["']([^"']+)["']`, "i"),
+      );
+      if (propFirst) return propFirst[1];
 
-    // Parse og:description
-    const descMatch = html.match(
-      /<meta\s+property=["']og:description["']\s+content=["']([^"']+)["']/i,
-    );
-    if (descMatch) metadata.description = descMatch[1];
+      const contentFirst = html.match(
+        new RegExp(`<meta\\s+content=["']([^"']+)["']\\s+property=["']${property}["']`, "i"),
+      );
+      if (contentFirst) return contentFirst[1];
 
-    // Parse og:image
-    const imageMatch = html.match(
-      /<meta\s+property=["']og:image["']\s+content=["']([^"']+)["']/i,
-    );
-    if (imageMatch) metadata.imageUrl = imageMatch[1];
+      return undefined;
+    };
+
+    metadata.title = extractOg("og:title");
+    metadata.description = extractOg("og:description");
+    metadata.imageUrl = extractOg("og:image");
 
     return metadata;
   } catch (error) {
@@ -629,7 +632,7 @@ export async function fetchImageAsBuffer(
     }
 
     const contentType = response.headers.get("content-type") || "image/jpeg";
-    const mimeType = contentType.split(";")[0]!.trim();
+    const mimeType = (contentType.split(";")[0] || "image/jpeg").trim();
     const arrayBuffer = await response.arrayBuffer();
     return { data: new Uint8Array(arrayBuffer), mimeType };
   } catch (error) {

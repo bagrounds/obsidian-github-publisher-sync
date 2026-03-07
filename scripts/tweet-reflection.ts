@@ -988,9 +988,11 @@ function removeSyncLock(vaultDir: string): void {
  */
 async function killObProcesses(): Promise<void> {
   try {
-    // Find all 'ob' process PIDs (exclude grep itself)
+    // Find 'ob' processes owned by the current user.
+    // Uses `ps -u $(id -u)` to scope to current user (avoids killing other users'
+    // processes in multi-user CI environments) and matches the 'ob' command name.
     const { stdout } = await execAsync(
-      "ps aux | grep '[o]b ' | grep -v grep | awk '{print $2}'",
+      "ps -u $(id -u) -o pid,comm | grep '[o]b$' | awk '{print $1}'",
     );
     const pids = stdout.trim().split("\n").filter(Boolean);
     if (pids.length > 0) {
@@ -998,12 +1000,16 @@ async function killObProcesses(): Promise<void> {
       for (const pid of pids) {
         try {
           process.kill(parseInt(pid, 10), "SIGTERM");
-        } catch {
-          // Process may have already exited — ignore
+        } catch (err) {
+          // ESRCH = process already exited — expected and safe to ignore
+          if ((err as NodeJS.ErrnoException).code !== "ESRCH") {
+            console.warn(`  ⚠️ Could not kill PID ${pid}: ${(err as Error).message}`);
+          }
         }
       }
-      // Wait briefly for processes to terminate
-      await new Promise((resolve) => setTimeout(resolve, 1_000));
+      // Wait for processes to terminate. The `ob` CLI handles SIGTERM gracefully
+      // and cleans up within ~1s based on observed behavior in CI.
+      await new Promise((resolve) => setTimeout(resolve, 2_000));
     }
   } catch {
     // ps/grep may fail if no processes found — that's fine

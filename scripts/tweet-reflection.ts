@@ -30,7 +30,10 @@
 
 import fs from "node:fs";
 import path from "node:path";
-import { execFile } from "node:child_process";
+import { execFile as execFileCb } from "node:child_process";
+import { promisify } from "node:util";
+
+const execFileAsync = promisify(execFileCb);
 
 // --- Types ---
 
@@ -433,24 +436,30 @@ export function appendTweetSection(filePath: string, embedHtml: string): void {
  * @see https://help.obsidian.md/sync/headless
  * @see https://github.com/obsidianmd/obsidian-headless
  */
-export function runObCommand(
+export async function runObCommand(
   args: string[],
   options: { cwd?: string; env?: Record<string, string> } = {},
 ): Promise<{ stdout: string; stderr: string }> {
-  return new Promise((resolve, reject) => {
-    const env = { ...process.env, ...options.env };
-    execFile("ob", args, { cwd: options.cwd, env }, (error, stdout, stderr) => {
-      if (error) {
-        reject(
-          new Error(
-            `ob ${args.join(" ")} failed: ${error.message}\nstdout: ${stdout}\nstderr: ${stderr}`,
-          ),
-        );
-        return;
-      }
-      resolve({ stdout, stderr });
+  const env = { ...process.env, ...options.env };
+  try {
+    const { stdout, stderr } = await execFileAsync("ob", args, {
+      cwd: options.cwd,
+      env,
     });
-  });
+    return { stdout, stderr };
+  } catch (error) {
+    const err = error as Error & { stdout?: string; stderr?: string };
+    throw new Error(
+      [
+        `Command: ob ${args.join(" ")}`,
+        `Error: ${err.message}`,
+        err.stdout ? `Stdout: ${err.stdout}` : null,
+        err.stderr ? `Stderr: ${err.stderr}` : null,
+      ]
+        .filter(Boolean)
+        .join("\n"),
+    );
+  }
 }
 
 /**
@@ -466,7 +475,7 @@ export async function syncObsidianVault(credentials: {
 }): Promise<string> {
   const vaultDir = path.join(
     process.env.RUNNER_TEMP || "/tmp",
-    "obsidian-vault",
+    `obsidian-vault-${process.pid}-${Date.now()}`,
   );
   fs.mkdirSync(vaultDir, { recursive: true });
 

@@ -171,7 +171,9 @@ docs/
 
 #### Obsidian Headless Sync Credentials
 
-> **Prerequisite:** You need an active [Obsidian Sync subscription](https://obsidian.md/sync).
+> **Prerequisites:**
+> - An active [Obsidian Sync subscription](https://obsidian.md/sync)
+> - Node.js **22 or later** (required by obsidian-headless)
 
 1. Install obsidian-headless:
    ```shell
@@ -186,9 +188,11 @@ docs/
    ob sync-list-remote
    ```
    Save the vault name as `OBSIDIAN_VAULT_NAME`
-4. Extract your auth token. After `ob login`, the token is stored locally.
-   Check `~/.config/obsidian-headless/` for a credentials file containing the token.
-   Save the token value as `OBSIDIAN_AUTH_TOKEN`
+4. Extract your auth token. After `ob login`, the token is stored in your system keychain
+   or in `~/.config/obsidian-headless/`. You can also use the `OBSIDIAN_AUTH_TOKEN`
+   environment variable — run `ob login` interactively once, then check the
+   [Obsidian forum thread on extracting the token](https://forum.obsidian.md/t/headless-sync-how-to-get-obsidian-auth-token-variable/111740)
+   for the exact steps for your OS. Save the token value as `OBSIDIAN_AUTH_TOKEN`
 5. If your vault uses end-to-end encryption, save the password as `OBSIDIAN_VAULT_PASSWORD`
 
 For more details see the [Obsidian Headless docs](https://help.obsidian.md/headless) and

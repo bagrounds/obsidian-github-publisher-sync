@@ -712,7 +712,7 @@ describe("generateLocalBlueskyEmbed", () => {
   test("generates valid Bluesky embed HTML", () => {
     const uri = "at://did:plc:i4yli6h7x2uoj7acxunww2fc/app.bsky.feed.post/3ltxsqnjf6s2b";
     const text = "Hello from Bluesky!";
-    const html = generateLocalBlueskyEmbed(uri, text, "2026-03-05");
+    const html = generateLocalBlueskyEmbed(uri, text, "2026-03-05", "bagrounds.bsky.social");
 
     assert.ok(html.includes('class="bluesky-embed"'));
     assert.ok(html.includes(`data-bluesky-uri="${uri}"`));
@@ -725,14 +725,14 @@ describe("generateLocalBlueskyEmbed", () => {
   test("includes CID attribute when provided", () => {
     const uri = "at://did:plc:i4yli6h7x2uoj7acxunww2fc/app.bsky.feed.post/3ltxsqnjf6s2b";
     const cid = "bafyreiadbkurhsz5y7pahts54w63ofclzwu7ea6d6pbvbep3sjmhkcitxq";
-    const html = generateLocalBlueskyEmbed(uri, "test", "2026-03-05", cid);
+    const html = generateLocalBlueskyEmbed(uri, "test", "2026-03-05", "test.bsky.social", cid);
 
     assert.ok(html.includes(`data-bluesky-cid="${cid}"`));
   });
 
   test("omits CID attribute when not provided", () => {
     const uri = "at://did:plc:test/app.bsky.feed.post/abc123";
-    const html = generateLocalBlueskyEmbed(uri, "test", "2026-03-05");
+    const html = generateLocalBlueskyEmbed(uri, "test", "2026-03-05", "test.bsky.social");
 
     assert.ok(!html.includes("data-bluesky-cid"));
   });
@@ -740,10 +740,17 @@ describe("generateLocalBlueskyEmbed", () => {
   test("HTML-encodes special characters", () => {
     const uri = "at://did:plc:test/app.bsky.feed.post/abc123";
     const text = '<script>alert("xss")</script>';
-    const html = generateLocalBlueskyEmbed(uri, text, "2026-01-01");
+    const html = generateLocalBlueskyEmbed(uri, text, "2026-01-01", "test.bsky.social");
 
     assert.ok(!html.includes("<script>alert"));
     assert.ok(html.includes("&lt;script&gt;"));
+  });
+
+  test("uses provided handle in embed link", () => {
+    const uri = "at://did:plc:test/app.bsky.feed.post/abc123";
+    const html = generateLocalBlueskyEmbed(uri, "test", "2026-01-01", "custom.bsky.social");
+
+    assert.ok(html.includes("@custom.bsky.social"));
   });
 });
 

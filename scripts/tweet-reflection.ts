@@ -89,7 +89,6 @@ export interface EmbedResult {
 const CONTENT_DIR = path.join(process.cwd(), "content", "reflections");
 const TWITTER_HANDLE = "bagrounds";
 const TWITTER_DISPLAY_NAME = "Bryan Grounds";
-const BLUESKY_HANDLE = "bagrounds.bsky.social";
 const BLUESKY_DISPLAY_NAME = "Bryan Grounds";
 const TWEET_SECTION_HEADER = "## 🐦 Tweet";
 const BLUESKY_SECTION_HEADER = "## 🦋 Bluesky";
@@ -678,6 +677,7 @@ export function generateLocalBlueskyEmbed(
   uri: string,
   postText: string,
   date: string,
+  handle: string,
   cid?: string,
 ): string {
   const did = extractBlueskyDid(uri);
@@ -707,7 +707,7 @@ export function generateLocalBlueskyEmbed(
     `<blockquote class="bluesky-embed" data-bluesky-uri="${uri}"${cidAttr} data-bluesky-embed-color-mode="system">` +
     `<p lang="en">${htmlText}</p>` +
     `&mdash; ${BLUESKY_DISPLAY_NAME} ` +
-    `(<a href="https://bsky.app/profile/${did}?ref_src=embed">@${BLUESKY_HANDLE}</a>) ` +
+    `(<a href="https://bsky.app/profile/${did}?ref_src=embed">@${handle}</a>) ` +
     `<a href="${postUrl}?ref_src=embed">${displayDate}</a>` +
     `</blockquote>` +
     `<script async src="https://embed.bsky.app/static/embed.js" charset="utf-8"></script>`
@@ -725,6 +725,7 @@ export async function getBlueskyEmbedHtml(
   uri: string,
   postText: string,
   date: string,
+  handle: string,
   cid?: string,
 ): Promise<string> {
   const did = extractBlueskyDid(uri);
@@ -754,7 +755,7 @@ export async function getBlueskyEmbedHtml(
     }
   }
 
-  return generateLocalBlueskyEmbed(uri, postText, date, cid);
+  return generateLocalBlueskyEmbed(uri, postText, date, handle, cid);
 }
 
 // --- File Update Operations ---
@@ -1202,7 +1203,7 @@ export async function main(options?: {
 
           console.log(`🔗 Fetching Bluesky embed code...`);
           const bskyEmbedHtml = await getBlueskyEmbedHtml(
-            bskyPost.uri, bskyPost.text, date, bskyPost.cid,
+            bskyPost.uri, bskyPost.text, date, env.bluesky!.identifier, bskyPost.cid,
           );
           console.log(`📋 Got Bluesky embed HTML (${bskyEmbedHtml.length} chars)`);
 

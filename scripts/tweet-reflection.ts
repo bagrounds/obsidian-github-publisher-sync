@@ -552,6 +552,92 @@ export async function getEmbedHtml(
   }
 }
 
+// --- OpenGraph Metadata ---
+
+/**
+ * Parsed OpenGraph metadata from a web page.
+ */
+export interface OgMetadata {
+  title?: string;
+  description?: string;
+  imageUrl?: string;
+}
+
+/**
+ * Fetch OpenGraph metadata from a URL by parsing <meta property="og:*"> tags.
+ *
+ * Used to get the real og:description and og:image for Bluesky link card embeds,
+ * since Bluesky does NOT auto-fetch OpenGraph metadata.
+ *
+ * Returns whatever OG tags are found; fields may be undefined if not present.
+ */
+export async function fetchOgMetadata(url: string): Promise<OgMetadata> {
+  try {
+    const response = await fetch(url, {
+      headers: { "User-Agent": "BlueskyBot/1.0 (OG metadata fetcher)" },
+      signal: AbortSignal.timeout(10_000),
+    });
+
+    if (!response.ok) {
+      console.warn(`  ⚠️ OG fetch: HTTP ${response.status} for ${url}`);
+      return {};
+    }
+
+    const html = await response.text();
+    const metadata: OgMetadata = {};
+
+    // Parse og:title
+    const titleMatch = html.match(
+      /<meta\s+property=["']og:title["']\s+content=["']([^"']+)["']/i,
+    );
+    if (titleMatch) metadata.title = titleMatch[1];
+
+    // Parse og:description
+    const descMatch = html.match(
+      /<meta\s+property=["']og:description["']\s+content=["']([^"']+)["']/i,
+    );
+    if (descMatch) metadata.description = descMatch[1];
+
+    // Parse og:image
+    const imageMatch = html.match(
+      /<meta\s+property=["']og:image["']\s+content=["']([^"']+)["']/i,
+    );
+    if (imageMatch) metadata.imageUrl = imageMatch[1];
+
+    return metadata;
+  } catch (error) {
+    console.warn(`  ⚠️ OG fetch failed for ${url}: ${error instanceof Error ? error.message : error}`);
+    return {};
+  }
+}
+
+/**
+ * Fetch an image from a URL and return it as a Uint8Array with its MIME type.
+ * Used to download OG images for uploading as Bluesky blobs.
+ */
+export async function fetchImageAsBuffer(
+  imageUrl: string,
+): Promise<{ data: Uint8Array; mimeType: string } | null> {
+  try {
+    const response = await fetch(imageUrl, {
+      signal: AbortSignal.timeout(10_000),
+    });
+
+    if (!response.ok) {
+      console.warn(`  ⚠️ Image fetch: HTTP ${response.status} for ${imageUrl}`);
+      return null;
+    }
+
+    const contentType = response.headers.get("content-type") || "image/jpeg";
+    const mimeType = contentType.split(";")[0]!.trim();
+    const arrayBuffer = await response.arrayBuffer();
+    return { data: new Uint8Array(arrayBuffer), mimeType };
+  } catch (error) {
+    console.warn(`  ⚠️ Image fetch failed: ${error instanceof Error ? error.message : error}`);
+    return null;
+  }
+}
+
 // --- Bluesky Integration ---
 
 /**
@@ -564,6 +650,8 @@ export async function getEmbedHtml(
  * preview card below the post text — similar to what happens when you paste
  * a URL in the Bluesky app. Bluesky does NOT auto-fetch OpenGraph metadata;
  * the caller must supply the title, description, and URI explicitly.
+ * If a thumbnail image URL is provided, the image is fetched, uploaded as a
+ * blob to Bluesky, and attached to the link card for a richer preview.
  *
  * @see https://docs.bsky.app/docs/api/app/bsky/feed/post
  * @see https://docs.bsky.app/docs/advanced-guides/posts#website-card-embeds
@@ -579,6 +667,7 @@ export async function postToBluesky(
     uri: string;
     title: string;
     description: string;
+    thumbUrl?: string;
   },
 ): Promise<BlueskyPostResult> {
   const { AtpAgent } = await import("@atproto/api");
@@ -604,13 +693,29 @@ export async function postToBluesky(
 
   // Add external embed (website card) if provided
   if (linkCard) {
+    const external: Record<string, unknown> = {
+      uri: linkCard.uri,
+      title: linkCard.title,
+      description: linkCard.description,
+    };
+
+    // Upload thumbnail image if provided
+    if (linkCard.thumbUrl) {
+      console.log(`  🖼️ Bluesky: fetching thumbnail from ${linkCard.thumbUrl}`);
+      const imageData = await fetchImageAsBuffer(linkCard.thumbUrl);
+      if (imageData) {
+        console.log(`  📤 Bluesky: uploading thumbnail (${imageData.data.length} bytes, ${imageData.mimeType})...`);
+        const uploadResponse = await agent.uploadBlob(imageData.data, {
+          encoding: imageData.mimeType,
+        });
+        external.thumb = uploadResponse.data.blob;
+        console.log(`  ✅ Bluesky: thumbnail uploaded`);
+      }
+    }
+
     postRecord.embed = {
       $type: "app.bsky.embed.external",
-      external: {
-        uri: linkCard.uri,
-        title: linkCard.title,
-        description: linkCard.description,
-      },
+      external,
     };
     console.log(`  🔗 Bluesky: attaching link card for ${linkCard.uri}`);
   }
@@ -726,7 +831,7 @@ export function generateLocalBlueskyEmbed(
   return (
     `<blockquote class="bluesky-embed" data-bluesky-uri="${uri}"${cidAttr} data-bluesky-embed-color-mode="system">` +
     `<p lang="en">${htmlText}</p>` +
-    `&mdash; ${BLUESKY_DISPLAY_NAME} ` +
+    `\n&mdash; ${BLUESKY_DISPLAY_NAME} ` +
     `(<a href="https://bsky.app/profile/${did}?ref_src=embed">@${handle}</a>) ` +
     `<a href="${postUrl}?ref_src=embed">${displayDate}</a>` +
     `</blockquote>` +
@@ -1320,14 +1425,25 @@ export async function main(options?: {
         try {
           console.log(`🦋 Posting to Bluesky...`);
 
-          // Build link card for the reflection URL so Bluesky renders a website preview.
+          // Fetch OG metadata from the reflection URL for a richer link card.
           // Bluesky does NOT auto-fetch OpenGraph metadata; we must supply it explicitly.
           // @see https://docs.bsky.app/docs/advanced-guides/posts#website-card-embeds
+          console.log(`  🔍 Fetching OG metadata from ${reflection.url}...`);
+          const ogMeta = await fetchOgMetadata(reflection.url);
+
           const linkCard = {
             uri: reflection.url,
-            title: reflection.title,
-            description: `Daily reflection from bagrounds.org — ${reflection.date}`,
+            title: ogMeta.title || reflection.title,
+            description: ogMeta.description || `Daily reflection from bagrounds.org — ${reflection.date}`,
+            thumbUrl: ogMeta.imageUrl,
           };
+
+          if (ogMeta.description) {
+            console.log(`  📋 OG description: ${ogMeta.description.slice(0, 80)}...`);
+          }
+          if (ogMeta.imageUrl) {
+            console.log(`  🖼️ OG image found: ${ogMeta.imageUrl}`);
+          }
 
           const bskyPost = await postToBluesky(postText, env.bluesky!, linkCard);
           const did = extractBlueskyDid(bskyPost.uri);

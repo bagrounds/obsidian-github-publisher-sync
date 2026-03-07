@@ -358,7 +358,7 @@ Failures on one platform don't affect the other. Results are collected after all
 4. **Why weren't we sending an embed?** The `agent.post()` call only included `text` and `facets` (for clickable links) but not the `embed` field needed for website card previews.
 5. **Why does the external embed require title/description?** The `app.bsky.embed.external` schema requires `uri`, `title`, and `description` fields; `thumb` (image) is optional. This gives the poster full control over what appears in the card.
 
-**Fix:** Added a `linkCard` parameter to `postToBluesky()` that creates an `app.bsky.embed.external` embed with the reflection's URL, title, and a description. This is constructed from the `ReflectionData` we already have (no need to fetch the page). The embed is passed to `agent.post()` alongside the text and facets. See [Bluesky Website Card Embeds](https://docs.bsky.app/docs/advanced-guides/posts#website-card-embeds).
+**Fix:** Added a `linkCard` parameter to `postToBluesky()` that creates an `app.bsky.embed.external` embed with the reflection's URL, title, and a description. The link card is now populated from the page's actual OpenGraph metadata via `fetchOgMetadata()` — this fetches `og:title`, `og:description`, and `og:image` from the reflection URL. If an `og:image` exists, it's downloaded, uploaded as a blob via `agent.uploadBlob()`, and included as the `thumb` field for a richer preview card with a thumbnail image. Falls back to reflection data if OG fetch fails. See [Bluesky Website Card Embeds](https://docs.bsky.app/docs/advanced-guides/posts#website-card-embeds).
 
 ## Testing Strategy
 

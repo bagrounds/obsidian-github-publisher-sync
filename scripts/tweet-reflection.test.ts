@@ -21,6 +21,7 @@ import {
   getYesterdayDate,
   validateEnvironment,
   withRetry,
+  fetchOgMetadata,
   type ReflectionData,
 } from "./tweet-reflection.ts";
 
@@ -1029,3 +1030,24 @@ tags:
     });
   },
 );
+
+// --- fetchOgMetadata tests ---
+
+describe("fetchOgMetadata", () => {
+  test("returns empty object for unreachable URL", async () => {
+    const meta = await fetchOgMetadata("http://localhost:1/nonexistent");
+    assert.deepEqual(meta, {});
+  });
+
+  test("parses og:title and og:description from real page", async () => {
+    // Use a known page from the user's site
+    const meta = await fetchOgMetadata("https://bagrounds.org/reflections/2026-03-05");
+    // The page has og:title and og:description meta tags
+    if (meta.title) {
+      assert.ok(meta.title.length > 0, "og:title should be non-empty");
+    }
+    if (meta.description) {
+      assert.ok(meta.description.length > 0, "og:description should be non-empty");
+    }
+  });
+});

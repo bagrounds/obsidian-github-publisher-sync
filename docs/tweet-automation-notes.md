@@ -165,17 +165,24 @@ the normal Enveloppe publish pipeline when the user next publishes.
 
 ### Twitter OAuth 1.0a Credentials
 
-The X Developer Portal shows multiple credential types that can be confusing:
+The X Developer Portal's **OAuth 1.0 Keys** section shows two entries — **Consumer Key** and
+**Access Token** — but each is actually a **pair** (key + secret). When you click
+**Regenerate**, the dashboard reveals both values in a dialog. You need all **4 values** total:
 
-| Portal Section | Credential | Our Secret Name | Used? |
+| Dashboard Entry | Revealed Values | Our Secret Name | Used? |
 |---|---|---|---|
-| Consumer Keys | API Key | `TWITTER_API_KEY` | ✅ Yes |
-| Consumer Keys | API Key Secret | `TWITTER_API_SECRET` | ✅ Yes |
-| Authentication Tokens | Access Token | `TWITTER_ACCESS_TOKEN` | ✅ Yes |
-| Authentication Tokens | Access Token Secret | `TWITTER_ACCESS_SECRET` | ✅ Yes |
+| Consumer Key → Regenerate | API Key | `TWITTER_API_KEY` | ✅ Yes |
+| Consumer Key → Regenerate | API Key Secret | `TWITTER_API_SECRET` | ✅ Yes |
+| Access Token → Regenerate | Access Token | `TWITTER_ACCESS_TOKEN` | ✅ Yes |
+| Access Token → Regenerate | Access Token Secret | `TWITTER_ACCESS_SECRET` | ✅ Yes |
 | OAuth 2.0 | Client ID | — | ❌ Not used |
 | OAuth 2.0 | Client Secret | — | ❌ Not used |
-| Bearer Token | Bearer Token | — | ❌ Not used |
+| App-Only Authentication | Bearer Token | — | ❌ Not used |
+
+> **Why 4 secrets from 2 dashboard entries?** OAuth 1.0a requires two credential pairs:
+> the *app credentials* (Consumer Key + Secret identify your app) and the *user credentials*
+> (Access Token + Secret authorize acting as `@bagrounds`). The dashboard groups them into
+> 2 entries but each Regenerate dialog reveals 2 values.
 
 The `twitter-api-v2` package maps these as:
 ```typescript

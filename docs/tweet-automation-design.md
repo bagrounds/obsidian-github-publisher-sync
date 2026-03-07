@@ -147,19 +147,26 @@ docs/
 > **Important:** We use OAuth **1.0a** credentials — NOT OAuth 2.0, and NOT the Bearer Token.
 > The X Developer Portal shows multiple credential types; make sure you use the right ones.
 
+The dashboard's **OAuth 1.0 Keys** section shows two entries — **Consumer Key** and
+**Access Token** — but each is actually a **pair** (key + secret). When you click
+**Regenerate**, the dashboard reveals both values. You need all **4 values** total:
+
 1. Go to [developer.x.com](https://developer.x.com/) and sign in with the `@bagrounds` account
-2. Create a new Project and App (or use existing)
-3. Set App permissions to **Read and Write**
-4. Under the **Keys and Tokens** tab:
-   - **Consumer Keys** section:
-     - Copy **API Key** → save as `TWITTER_API_KEY`
-     - Copy **API Key Secret** → save as `TWITTER_API_SECRET`
-   - **Authentication Tokens** section:
-     - Click **Generate** under Access Token and Secret (ensure Read+Write permissions)
-     - Copy **Access Token** → save as `TWITTER_ACCESS_TOKEN`
-     - Copy **Access Token Secret** → save as `TWITTER_ACCESS_SECRET`
-5. **Do NOT use** the OAuth 2.0 Client ID/Secret or the Bearer Token — those are for different
+2. Navigate to your App → **Keys and Tokens** tab
+3. Under **OAuth 1.0 Keys**:
+   - **Consumer Key** — click **Regenerate**. The dialog shows two values:
+     - **API Key** → save as `TWITTER_API_KEY`
+     - **API Key Secret** → save as `TWITTER_API_SECRET`
+   - **Access Token** — click **Regenerate** (ensure Read+Write permissions first). The dialog shows two values:
+     - **Access Token** → save as `TWITTER_ACCESS_TOKEN`
+     - **Access Token Secret** → save as `TWITTER_ACCESS_SECRET`
+4. **Do NOT use** the OAuth 2.0 Client ID/Secret or the Bearer Token — those are for different
    authentication flows and won't work for posting tweets
+
+> **Why 4 secrets?** OAuth 1.0a requires two credential pairs: the *app credentials*
+> (Consumer Key + Secret identify your app) and the *user credentials* (Access Token + Secret
+> authorize acting as `@bagrounds`). The `twitter-api-v2` library needs all four to sign
+> requests. The dashboard groups them into 2 entries but each contains 2 values.
 
 #### Google Gemini API Key
 

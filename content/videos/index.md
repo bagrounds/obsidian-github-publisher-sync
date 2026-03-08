@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-03-07T11:48:02-08:00
+updated: 2026-03-07T16:41:33-08:00
 ---
 [Home](../index.md)  
-# 📺 Videos (669)  
+# 📺 Videos (671)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
 - [❓💪🔬 12 Questions About Creatine with Stephen Cornish, PhD](./12-questions-about-creatine-w-stephen-cornish-phd.md)  
@@ -29,6 +29,7 @@ updated: 2026-03-07T11:48:02-08:00
 - [💪🧠🔒5️⃣ How To Build Unbreakable Discipline (5 Steps)](./how-to-build-unbreakable-discipline-5-steps.md)  
 - [🗣️🤝🧑‍🤝‍🧑👶🏽 5 Social Skills Every Toddler Needs Before Preschool](./5-social-skills-every-toddler-needs-before-preschool.md)  
 - [🧠⚡️👶🏽 5 Tiny Habits That Supercharge Your Child's Brain Development | Dr. Arif Khan](./5-tiny-habits-that-supercharge-your-childs-brain-development-dr-arif-khan.md)  
+- [🚀📈📰 5 Ways To Promote And Grow Your Blog](./5-ways-to-promote-and-grow-your-blog.md)  
 - [🧠🪜💡🤔⬆️🎓 6 Levels of Thinking Every Student MUST Master](./6-levels-of-thinking-every-student-must-master.md)  
 - [😇😈📉🚫 7️⃣ Deadly Innocent Frauds-A BCB Economics Lecture](./seven-deadly-innocent-frauds-a-bcb-economics-lecture.md)  
 - [👶🧸8️⃣🗓️ Montessori Items For An 8 Month Old Baby](./8-montessori-items-for-an-8-month-old-baby-cc.md)  
@@ -552,6 +553,7 @@ updated: 2026-03-07T11:48:02-08:00
 - [📰🇺🇸❓🏛️ This Week In Politics, A Big-Picture Look at Where We Are Right Now | Explainer](./this-week-in-politics-a-big-picture-look-at-where-we-are-right-now-explainer.md)  
 - [🗣️📰🏛️ This Week in Politics | Explainer](./this-week-in-politics-explainer-january-20-2025.md)  
 - [📰🗣️❓ This Week in Politics | Explainer](./this-week-in-politics-explainer.md)  
+- [🏛️🗣️📰 This Week in Politics | Explainer](./this-week-in-politics-explainer-march-6-2026.md)  
 - [🕸️🛠️🤔 Three decades after inventing the web, Tim Berners-Lee has some ideas on how to fix it](./three-decades-after-inventing-the-web-tim-berners-lee-has-some-ideas-on-how-to-fix-it.md)  
 - [👶🏃‍♀️🏅✅ Thule Urban Glide 3 Full Review | Best Running / Jogging Stroller 2024](./thule-urban-glide-3-full-review-best-running-jogging-stroller-2024.md)  
 - [🏛️📰📣 Today in Politics | Explainer](./today-in-politics-explainer-january-22-2026.md)  

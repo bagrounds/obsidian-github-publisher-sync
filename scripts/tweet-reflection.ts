@@ -1080,22 +1080,45 @@ export async function syncObsidianVault(credentials: {
   // @see https://github.com/obsidianmd/obsidian-headless/issues/4
   await ensureSyncClean(vaultDir);
 
-  // Pull latest content (retry once if lock contention occurs)
+  // Pull latest content with retry on lock contention.
+  // Uses exponential backoff: 1s, 2s, 4s between retries.
   console.log(`📥 Pulling latest vault content...`);
-  try {
-    await runObCommand(["sync", "--path", vaultDir], { env });
-  } catch (error) {
-    const msg = error instanceof Error ? error.message : String(error);
-    if (msg.includes("Another sync instance")) {
-      console.warn(`  ⚠️ Sync lock contention on pull, cleaning up and retrying...`);
-      await ensureSyncClean(vaultDir);
-      await runObCommand(["sync", "--path", vaultDir], { env });
-    } else {
-      throw error;
-    }
-  }
+  await runObSyncWithRetry(["sync", "--path", vaultDir], { env }, vaultDir);
 
   return vaultDir;
+}
+
+/**
+ * Run an `ob sync` command with retry logic for lock contention.
+ * Retries up to 3 times with exponential backoff (1s, 2s, 4s) when
+ * "Another sync instance is already running" is detected.
+ * Each retry cleans up lingering processes and removes the lock file.
+ */
+async function runObSyncWithRetry(
+  args: string[],
+  options: { env?: Record<string, string> },
+  vaultDir: string,
+  maxRetries = 3,
+): Promise<void> {
+  for (let attempt = 0; attempt <= maxRetries; attempt++) {
+    try {
+      await runObCommand(args, options);
+      return;
+    } catch (error) {
+      const msg = error instanceof Error ? error.message : String(error);
+      if (msg.includes("Another sync instance") && attempt < maxRetries) {
+        const delayMs = 1000 * 2 ** attempt; // 1s, 2s, 4s
+        console.warn(
+          `  ⚠️ Sync lock contention (retry ${attempt + 1}/${maxRetries}), ` +
+          `cleaning up and retrying in ${delayMs / 1000}s...`,
+        );
+        await ensureSyncClean(vaultDir);
+        await new Promise((resolve) => setTimeout(resolve, delayMs));
+      } else {
+        throw error;
+      }
+    }
+  }
 }
 
 /**
@@ -1116,73 +1139,102 @@ function removeSyncLock(vaultDir: string): void {
 }
 
 /**
- * Kill any lingering `ob` processes that may be holding the sync lock.
+ * Kill any lingering `ob` (obsidian-headless) processes that may be holding
+ * the sync lock.
  *
  * The `ob sync-setup` and `ob sync` commands can leave orphan child processes
  * that hold the `.sync.lock` even after the parent process exits. Removing the
  * lock file alone doesn't help because the running process recreates it or
  * detects the running instance via other means (e.g. PID file, socket).
  *
- * This function finds all `ob` processes (except the current one) and sends
- * SIGTERM to each, then waits briefly for them to exit.
+ * This function finds all obsidian-headless processes and sends SIGTERM to
+ * each, waits for them to exit, then escalates to SIGKILL if needed.
  *
- * ## 5 Whys — Obsidian sync lock failure
+ * ## 5 Whys — Obsidian sync lock failure (2nd investigation, 2026-03-08)
  *
- * 1. **Why does "Another sync instance is already running" persist after
- *    removing `.sync.lock`?**
- *    Because the `ob` CLI checks for a running process, not just a lock file.
- *    A lingering `ob` process from `sync-setup` or a previous `sync` still
- *    holds the lock at the OS level.
+ * 1. **Why does "Another sync instance is already running" persist even
+ *    after `ensureSyncClean` (kill + remove lock)?**
+ *    Because `killObProcesses` silently found zero processes to kill.
+ *    The lingering `ob` process was invisible to the grep pattern.
  *
- * 2. **Why is there a lingering `ob` process?**
- *    `ob sync-setup` may spawn background workers or keep a file watcher
- *    alive. When called via Node's `execFile`, the parent resolves after
- *    stdout/stderr close, but child processes may linger.
+ * 2. **Why did `killObProcesses` find zero processes?**
+ *    It used `ps -o pid,comm | grep '[o]b$'` which matches the COMMAND
+ *    column (short process name). But `ob` is a Node.js script
+ *    (`#!/usr/bin/env node`), so the process name in `comm` is `node`
+ *    (or `MainThread` on some Linux kernels), NOT `ob`.
  *
- * 3. **Why doesn't `execFile` kill child processes on completion?**
- *    `execFile` only waits for the main process; it doesn't track or kill
- *    grandchild/orphan processes. The `ob` tool's internal architecture
- *    may fork workers that outlive the main CLI process.
+ * 3. **Why does the process appear as `node` instead of `ob`?**
+ *    obsidian-headless is installed via npm as a global package. The `ob`
+ *    binary is a symlink to `cli.js` with a `#!/usr/bin/env node` shebang.
+ *    The OS kernel runs `node /path/to/cli.js`, so `ps -o comm` reports
+ *    `node` (the interpreter), not `ob` (the script name).
  *
- * 4. **Why does the retry-after-5s approach also fail?**
- *    The 5s delay doesn't kill the lingering process — it just waits.
- *    The process is still alive and still holding the lock when the retry
- *    fires.
+ * 4. **Why doesn't `node` match the grep pattern `[o]b$`?**
+ *    `[o]b$` matches strings ending with "ob". "node" doesn't end with
+ *    "ob". The pattern was designed assuming `ob` would appear as the
+ *    command name, which is only true for compiled binaries.
  *
  * 5. **What is the root fix?**
- *    Kill all `ob` processes between operations. This ensures no orphan
- *    process holds the lock when the next `ob sync` starts. Combined
- *    with lock file removal, this handles both file-based and process-based
- *    lock mechanisms.
+ *    Use `ps -o pid,args` (full command line) instead of `ps -o pid,comm`
+ *    (short name). The `args` column contains the full invocation path,
+ *    e.g. `node /path/to/obsidian-headless/cli.js sync ...`, which we
+ *    can match on `obsidian-headless`. Also escalate to SIGKILL if
+ *    SIGTERM doesn't terminate the process within 1 second.
  *
  * @see https://github.com/obsidianmd/obsidian-headless/issues/4
  * @see https://help.obsidian.md/sync/headless
  */
 async function killObProcesses(): Promise<void> {
   try {
-    // Find 'ob' processes owned by the current user.
-    // Uses `ps -u $(id -u)` to scope to current user (avoids killing other users'
-    // processes in multi-user CI environments) and matches the 'ob' command name.
+    // Find obsidian-headless processes owned by the current user.
+    // Uses `ps -o pid,args` to get the FULL command line (not just the short
+    // command name). This correctly identifies `ob` processes even though they
+    // run as `node /path/to/obsidian-headless/cli.js ...`.
     const { stdout } = await execAsync(
-      "ps -u $(id -u) -o pid,comm | grep '[o]b$' | awk '{print $1}'",
+      "ps -u $(id -u) -o pid,args | grep 'obsidian-headless' | grep -v grep | awk '{print $1}'",
     );
     const pids = stdout.trim().split("\n").filter(Boolean);
-    if (pids.length > 0) {
-      console.log(`🔪 Killing ${pids.length} lingering ob process(es): ${pids.join(", ")}`);
-      for (const pid of pids) {
-        try {
-          process.kill(parseInt(pid, 10), "SIGTERM");
-        } catch (err) {
-          // ESRCH = process already exited — expected and safe to ignore
-          if ((err as NodeJS.ErrnoException).code !== "ESRCH") {
-            console.warn(`  ⚠️ Could not kill PID ${pid}: ${(err as Error).message}`);
-          }
+    if (pids.length === 0) return;
+
+    console.log(`🔪 Killing ${pids.length} lingering ob process(es): ${pids.join(", ")}`);
+
+    // Phase 1: SIGTERM — graceful shutdown
+    for (const pid of pids) {
+      try {
+        process.kill(parseInt(pid, 10), "SIGTERM");
+      } catch (err) {
+        if ((err as NodeJS.ErrnoException).code !== "ESRCH") {
+          console.warn(`  ⚠️ Could not SIGTERM PID ${pid}: ${(err as Error).message}`);
         }
       }
-      // Wait for processes to terminate. The `ob` CLI handles SIGTERM gracefully
-      // and cleans up within ~500ms based on observed behavior in CI.
-      await new Promise((resolve) => setTimeout(resolve, 500));
     }
+
+    // Wait up to 1s for graceful termination, checking every 200ms
+    for (let i = 0; i < 5; i++) {
+      await new Promise((resolve) => setTimeout(resolve, 200));
+      const allDead = pids.every((pid) => {
+        try {
+          process.kill(parseInt(pid, 10), 0); // signal 0 = test if alive
+          return false; // still alive
+        } catch {
+          return true; // dead
+        }
+      });
+      if (allDead) return;
+    }
+
+    // Phase 2: SIGKILL — force kill any survivors
+    for (const pid of pids) {
+      try {
+        process.kill(parseInt(pid, 10), 0); // test if still alive
+        console.warn(`  ⚠️ PID ${pid} survived SIGTERM, sending SIGKILL`);
+        process.kill(parseInt(pid, 10), "SIGKILL");
+      } catch {
+        // already dead — good
+      }
+    }
+    // Brief wait for SIGKILL to take effect
+    await new Promise((resolve) => setTimeout(resolve, 200));
   } catch {
     // ps/grep may fail if no processes found — that's fine
   }
@@ -1212,18 +1264,7 @@ export async function pushObsidianVault(
   await ensureSyncClean(vaultDir);
 
   console.log(`📤 Pushing changes to Obsidian Sync...`);
-  try {
-    await runObCommand(["sync", "--path", vaultDir], { env });
-  } catch (error) {
-    const msg = error instanceof Error ? error.message : String(error);
-    if (msg.includes("Another sync instance")) {
-      console.warn(`  ⚠️ Sync lock contention on push, cleaning up and retrying...`);
-      await ensureSyncClean(vaultDir);
-      await runObCommand(["sync", "--path", vaultDir], { env });
-    } else {
-      throw error;
-    }
-  }
+  await runObSyncWithRetry(["sync", "--path", vaultDir], { env }, vaultDir);
 }
 
 /**

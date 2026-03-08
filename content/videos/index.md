@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-03-07T16:47:46-08:00
+updated: 2026-03-07T17:25:33-08:00
 ---
 [Home](../index.md)  
-# 📺 Videos (672)  
+# 📺 Videos (673)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
 - [❓💪🔬 12 Questions About Creatine with Stephen Cornish, PhD](./12-questions-about-creatine-w-stephen-cornish-phd.md)  
@@ -409,6 +409,7 @@ updated: 2026-03-07T16:47:46-08:00
 - [😴🧠👨‍⚕️ Psychiatrist Explains Why You Feel Tired All The Time (No Matter What You Do...)](./psychiatrist-explains-why-you-feel-tired-all-the-time-no-matter-what-you-do.md)  
 - [📺🎤📰 Public Media: Last Week Tonight with John Oliver (HBO)](./public-media-last-week-tonight-with-john-oliver-hbo.md)  
 - [👥➡️⚖️ Realignment of People Against the ‘Epstein Class’ | Explainer](./realignment-of-people-against-the-epstein-class-explainer.md)  
+- [🗣️🇺🇸⚔️👤 Rebecca Solnit Says Trump's Strongest Foil Has Been Here All Along | The Interview](./rebecca-solnit-says-trumps-strongest-foil-has-been-here-all-along-the-interview.md)  
 - [Rep. Aime Wichtendahl testifies as Iowa removes civil rights for trans people (Feb 27, 2025)](./rep-aime-wichtendahl-testifies-as-iowa-removes-civil-rights-for-trans-people-feb-27-2025.md)  
 - [👩‍⚖️📜➡️ Rep. Alexandria Ocasio-Cortez (D-NY) on Resolution Honoring Charlie Kirk](./rep-alexandria-ocasio-cortez-d-ny-on-resolution-honoring-charlie-kirk.md)  
 - [😠🗣️🚫🤬 Republican Thom Tillis' SCATHING message to Stephen Miller](./im-sick-of-stupid-republican-thom-tillis-scathing-message-to-stephen-miller.md)  

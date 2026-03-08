@@ -23,7 +23,7 @@ The Humanities are the study of what makes us human. 🧠 They explore the human
 * **Archaeology:** (⛏️) The study of past human societies through the analysis of material remains, such as artifacts and structures. It provides insights into the lives of past peoples.  
   
 **Book Recommendations:**  
-1.  **"Sophie's World" by Jostein Gaarder:** (📖) A novel that serves as an accessible introduction to the history of Western philosophy. It weaves philosophical concepts into a captivating story.  
+1.  **[🤔🌍 Sophie’s World](../books/sophies-world.md) by Jostein Gaarder:** (📖) A novel that serves as an accessible introduction to the history of Western philosophy. It weaves philosophical concepts into a captivating story.  
 2.  **"A Short History of Nearly Everything" by Bill Bryson:** (🌐) While technically a science book, it offers a broad historical context, and touches on many humanities related subjects, in an engaging and easy to understand way.  
 3.  **"The Norton Anthology of World Literature" (Various Editions):** (🌍) A comprehensive collection of literary works from around the world, providing a broad overview of diverse literary traditions. It is a great way to explore literature.  
 4.  **"[Sapiens: A Brief History of Humankind](../books/sapiens-a-brief-history-of-humankind.md)" by Yuval Noah Harari:** (🧍) An exploration of the history of humankind from its earliest beginnings to the present day, touching on anthropology, history, and philosophy.  

@@ -51,6 +51,8 @@ jobs:
       # Cache the Obsidian vault between runs for incremental sync.
       # Cold sync downloads the entire vault (~7 min). With a warm cache,
       # `ob sync` only pulls changes since the last run (seconds).
+      # Key uses run_id so each run saves its updated vault state.
+      # restore-keys prefix ensures the previous run's cache is restored.
       - name: Cache Obsidian Vault
         uses: actions/cache@v4
         with:

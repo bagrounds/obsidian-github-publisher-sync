@@ -1638,7 +1638,9 @@ export async function main(options?: {
     }
     // If vault pull was started but no embeds succeeded, suppress the unused promise.
     // The pull result is not needed, so we catch to prevent unhandled rejection.
-    vaultPullPromise?.catch(() => {});
+    vaultPullPromise?.catch((err) => {
+      console.warn(`⚠️  Vault pull failed (unused — no embeds to write): ${err instanceof Error ? err.message : err}`);
+    });
   }
 
   console.log(`🎉 Done processing reflection for ${date}`);

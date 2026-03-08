@@ -207,7 +207,7 @@ Here are some subtopics of Philosophical Humor/Satirical Science Fiction that ar
 * **Political Satire in Science Fiction**: 🏛️ While bureaucracy is lampooned, a direct and pointed critique of specific political systems isn't the primary focus.  
     * Recommendation: *Animal Farm* by George Orwell. A satirical allegory of political revolution and its aftermath, using animal characters. 🐷🐴  
 * **Social Commentary through Dystopian Science Fiction**: 😔 While absurdities of society are highlighted, the book doesn't present a bleak, controlling future in the traditional dystopian sense.  
-    * Recommendation: *Brave New World* by Aldous Huxley. A classic dystopian novel that satirizes a future society based on genetic engineering and social conditioning. 🧪👶  
+    * Recommendation: Brave New World by Aldous Huxley. A classic dystopian novel that satirizes a future society based on genetic engineering and social conditioning. 🧪👶  
 * **More Serious Philosophical Exploration in Science Fiction**: 🤔 While philosophical questions are raised, the tone remains largely comedic rather than deeply introspective or academic.  
     * Recommendation: *Solaris* by Stanisław Lem. A science fiction novel that delves into the profound and often unsettling nature of communication and consciousness when humanity encounters an alien intelligence beyond comprehension. 👽🌊  
   
@@ -265,7 +265,7 @@ Here are some subtopics of Political Satire/Dystopian Literature that are *not* 
 * **Environmental Dystopia**: 🌎 The setting is a farm, and the issues are primarily socio-political, not ecological collapse.  
     * Recommendation: *The Handmaid's Tale* by Margaret Atwood. While also a social and political dystopia, it touches upon environmental degradation as a contributing factor to the societal upheaval. 🤰🌍  
 * **Satire of Contemporary Media and Consumerism**: 📺🛒 *Animal Farm*'s satire is aimed at political systems, not modern media or consumer culture.  
-    * Recommendation: *Brave New World* by Aldous Huxley (again!). This novel satirizes a future society obsessed with pleasure and consumption, controlled through genetic engineering and psychological conditioning. 👶💊  
+    * Recommendation: Brave New World by Aldous Huxley (again!). This novel satirizes a future society obsessed with pleasure and consumption, controlled through genetic engineering and psychological conditioning. 👶💊  
   
 Here are some books that cover similar topics to *Animal Farm* but from a slightly **different perspective**:  
   
@@ -323,10 +323,10 @@ Here are some subtopics of Philosophy of Value/Existential Philosophy that are *
 * **Aesthetics (beyond the art in the title)**: 🎨 While the book touches on artistic appreciation, it doesn't offer a systematic exploration of aesthetic theory.  
     * Recommendation: *Ways of Seeing* by John Berger. A seminal work that critically examines visual culture and how we perceive art. 🖼️👀  
   
-Here are some books that cover similar topics to *Zen and the Art of Motorcycle Maintenance* but from a slightly **different perspective**:  
+Here are some books that cover similar topics to [🏍️🧘❓ Zen and the Art of Motorcycle Maintenance: An Inquiry into Values](../books/zen-and-the-art-of-motorcycle-maintenance-an-inquiry-into-values.md) but from a slightly **different perspective**:  
   
-* **More purely philosophical explorations of similar themes**: *Sophie's World: A Novel About the History of Philosophy* by Jostein Gaarder. This novel weaves philosophical concepts into a fictional narrative, offering a more structured overview of Western thought. 🤔👧  
-* **Other introspective journeys blending personal narrative and philosophical reflection**: *Walden* by Henry David Thoreau. This classic work details Thoreau's experiment in simple living in nature and his reflections on society and self-reliance. 🌲✍️  
+* **More purely philosophical explorations of similar themes**: [🤔🌍 Sophie’s World](../books/sophies-world.md): A Novel About the History of Philosophy by Jostein Gaarder. This novel weaves philosophical concepts into a fictional narrative, offering a more structured overview of Western thought. 🤔👧  
+* **Other introspective journeys blending personal narrative and philosophical reflection**: Walden by Henry David Thoreau. This classic work details Thoreau's experiment in simple living in nature and his reflections on society and self-reliance. 🌲✍️  
   
 ### Global Exploration: Dissimilar Topics 🌌  
   
@@ -428,11 +428,11 @@ The parent topic for Paradox of Connection and Isolation could be considered **C
 Here are some subtopics of Contemporary Social Commentary/Postmodernism that are *not* explicitly covered (or are explored with a different emphasis) in *Infinite Jest*:  
   
 * **Technological Utopianism/Dystopianism (beyond entertainment)**: 🤖 While technology is present, the focus isn't on a technologically controlled utopia or dystopia in the traditional sense.  
-    * Recommendation: *Neuromancer* by William Gibson. A seminal work of cyberpunk that explores the social and psychological impact of advanced technology and cyberspace. 💻🌃  
+    * Recommendation: Neuromancer by William Gibson. A seminal work of cyberpunk that explores the social and psychological impact of advanced technology and cyberspace. 💻🌃  
 * **Direct Political Satire (beyond societal structures)**: 🏛️ While societal structures are examined, the book doesn't engage in direct satire of specific political figures or events.  
     * Recommendation: *The Bonfire of the Vanities* by Tom Wolfe. A satirical novel that sharply critiques the social and political landscape of 1980s New York. 🗽💰  
 * **Environmental Concerns and Their Social Impact**: 🌎 The near-future setting has some changes, but environmental collapse isn't a central theme.  
-    * Recommendation: *The Ministry for the Future* by Kim Stanley Robinson. A contemporary novel that directly addresses the climate crisis and its profound social and political ramifications. 🌡️🌍  
+    * Recommendation: The Ministry for the Future by Kim Stanley Robinson. A contemporary novel that directly addresses the climate crisis and its profound social and political ramifications. 🌡️🌍  
   
 Here are some books that cover similar topics to *Infinite Jest* but from a slightly **different perspective**:  
   

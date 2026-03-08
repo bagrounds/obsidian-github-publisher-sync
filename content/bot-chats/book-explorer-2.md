@@ -292,7 +292,7 @@ That was a sobering yet important exploration of *Animal Farm*. What literary la
 ## 💬 Prompt 6  
 > Zen and the Art of Motorcycle Maintenance: An Inquiry into Values  
   
-📚 Ah, *Zen and the Art of Motorcycle Maintenance*! A truly unique and thought-provoking journey! Let's embark on this philosophical ride! 🏍️🧘‍♂️🛣️  
+📚 Ah, [🏍️🧘❓ Zen and the Art of Motorcycle Maintenance: An Inquiry into Values](../books/zen-and-the-art-of-motorcycle-maintenance-an-inquiry-into-values.md)! A truly unique and thought-provoking journey! Let's embark on this philosophical ride! 🏍️🧘‍♂️🛣️  
   
 ### Topics and Perspectives 🏍️🧠✨  
   
@@ -314,7 +314,7 @@ The unifying thematic topic that tightly encompasses all of these areas is the *
   
 The parent topic for Search for Quality and Meaning could be considered **Philosophy of Value** or **Existential Philosophy**.  
   
-Here are some subtopics of Philosophy of Value/Existential Philosophy that are *not* explicitly covered (or are explored with a different emphasis) in *Zen and the Art of Motorcycle Maintenance*:  
+Here are some subtopics of Philosophy of Value/Existential Philosophy that are *not* explicitly covered (or are explored with a different emphasis) in [🏍️🧘❓ Zen and the Art of Motorcycle Maintenance: An Inquiry into Values](../books/zen-and-the-art-of-motorcycle-maintenance-an-inquiry-into-values.md):  
   
 * **Ethics and Morality**: ⚖️ While value is central, the book doesn't delve into specific ethical frameworks or moral dilemmas in a traditional sense.  
     * Recommendation: *Ethics* by Peter Singer. A comprehensive exploration of various ethical theories and their applications to contemporary issues. 🌍🧑‍🤝‍🧑  

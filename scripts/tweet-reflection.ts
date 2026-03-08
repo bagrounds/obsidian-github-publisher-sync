@@ -45,6 +45,55 @@ import { promisify } from "node:util";
 const execFileAsync = promisify(execFileCb);
 const execAsync = promisify(execCb);
 
+// --- Timing Instrumentation ---
+
+/**
+ * Lightweight timer for profiling pipeline phases.
+ * Records start/end of named phases and prints a summary table.
+ */
+export class PipelineTimer {
+  private entries: Array<{ name: string; startMs: number; endMs?: number }> = [];
+  private pipelineStartMs = Date.now();
+
+  /** Start timing a named phase. */
+  start(name: string): void {
+    this.entries.push({ name, startMs: Date.now() });
+  }
+
+  /** End timing a named phase. */
+  end(name: string): void {
+    const entry = this.entries.find((e) => e.name === name && !e.endMs);
+    if (entry) entry.endMs = Date.now();
+  }
+
+  /** Time an async operation, returning its result. */
+  async time<T>(name: string, fn: () => Promise<T>): Promise<T> {
+    this.start(name);
+    try {
+      return await fn();
+    } finally {
+      this.end(name);
+    }
+  }
+
+  /** Print a summary of all recorded phases. */
+  printSummary(): void {
+    const totalMs = Date.now() - this.pipelineStartMs;
+    console.log(`\n⏱️  Pipeline Timing Summary:`);
+    console.log(`${"─".repeat(52)}`);
+    for (const entry of this.entries) {
+      const durationMs = (entry.endMs ?? Date.now()) - entry.startMs;
+      const pct = totalMs > 0 ? ((durationMs / totalMs) * 100).toFixed(1) : "0.0";
+      const status = entry.endMs ? "✅" : "⏳";
+      console.log(
+        `  ${status} ${entry.name.padEnd(30)} ${(durationMs / 1000).toFixed(1).padStart(7)}s  (${pct.padStart(5)}%)`,
+      );
+    }
+    console.log(`${"─".repeat(52)}`);
+    console.log(`  🏁 Total pipeline time${" ".repeat(13)} ${(totalMs / 1000).toFixed(1)}s`);
+  }
+}
+
 // --- Types ---
 
 export interface ReflectionData {
@@ -98,10 +147,12 @@ const TWITTER_URL_LENGTH = 23;
 const TWITTER_MAX_LENGTH = 280;
 /** Bluesky has a 300-character limit for post text */
 const BLUESKY_MAX_LENGTH = 300;
-/** Delay before first Bluesky oEmbed attempt to allow post propagation */
-const BLUESKY_OEMBED_INITIAL_DELAY_MS = 3_000;
-/** Delay before retrying Bluesky oEmbed on 404 */
-const BLUESKY_OEMBED_RETRY_DELAY_MS = 5_000;
+/** Delay before first Bluesky oEmbed attempt to allow post propagation.
+ * Reduced from 3s → 0s: local embed generation is reliable and instant.
+ * oEmbed is attempted immediately as a best-effort upgrade. */
+const BLUESKY_OEMBED_INITIAL_DELAY_MS = 0;
+/** Delay before retrying Bluesky oEmbed on 404. Reduced from 5s → 2s. */
+const BLUESKY_OEMBED_RETRY_DELAY_MS = 2_000;
 
 /** Section data for writing embeds to Obsidian notes */
 export interface EmbedSection {
@@ -863,12 +914,14 @@ export async function getBlueskyEmbedHtml(
   const maxAttempts = 2;
   for (let attempt = 0; attempt < maxAttempts; attempt++) {
     try {
-      // Wait before oEmbed attempt to allow post propagation
+      // Wait before oEmbed attempt to allow post propagation (skip if 0)
       const delayMs = attempt === 0
         ? BLUESKY_OEMBED_INITIAL_DELAY_MS
         : BLUESKY_OEMBED_RETRY_DELAY_MS;
-      console.log(`  ⏳ Waiting ${delayMs / 1000}s for Bluesky post propagation...`);
-      await new Promise((resolve) => setTimeout(resolve, delayMs));
+      if (delayMs > 0) {
+        console.log(`  ⏳ Waiting ${delayMs / 1000}s for Bluesky post propagation...`);
+        await new Promise((resolve) => setTimeout(resolve, delayMs));
+      }
 
       const { html } = await fetchBlueskyOEmbed(postUrl);
       return html;
@@ -979,6 +1032,10 @@ export async function runObCommand(
  * Set up and sync an Obsidian vault to a local directory using Headless Sync.
  * Pulls the latest vault content from Obsidian Sync.
  *
+ * When `OBSIDIAN_VAULT_CACHE_DIR` is set, re-uses an existing vault directory
+ * for incremental sync (only downloads changes since last cache). This can
+ * reduce pull time from ~7 minutes (cold) to seconds (warm cache).
+ *
  * @returns The local vault path where files were synced
  */
 export async function syncObsidianVault(credentials: {
@@ -986,11 +1043,18 @@ export async function syncObsidianVault(credentials: {
   vaultName: string;
   vaultPassword?: string;
 }): Promise<string> {
-  const vaultDir = path.join(
+  const cacheDir = process.env.OBSIDIAN_VAULT_CACHE_DIR;
+  const vaultDir = cacheDir || path.join(
     process.env.RUNNER_TEMP || "/tmp",
     `obsidian-vault-${process.pid}-${Date.now()}`,
   );
+
+  const isWarmCache = cacheDir && fs.existsSync(path.join(vaultDir, ".obsidian"));
   fs.mkdirSync(vaultDir, { recursive: true });
+
+  if (isWarmCache) {
+    console.log(`♻️  Re-using cached vault at ${vaultDir} (incremental sync)`);
+  }
 
   const env: Record<string, string> = {
     OBSIDIAN_AUTH_TOKEN: credentials.authToken,
@@ -1016,22 +1080,45 @@ export async function syncObsidianVault(credentials: {
   // @see https://github.com/obsidianmd/obsidian-headless/issues/4
   await ensureSyncClean(vaultDir);
 
-  // Pull latest content (retry once if lock contention occurs)
+  // Pull latest content with retry on lock contention.
+  // Uses exponential backoff: 1s, 2s, 4s between retries.
   console.log(`📥 Pulling latest vault content...`);
-  try {
-    await runObCommand(["sync", "--path", vaultDir], { env });
-  } catch (error) {
-    const msg = error instanceof Error ? error.message : String(error);
-    if (msg.includes("Another sync instance")) {
-      console.warn(`  ⚠️ Sync lock contention on pull, cleaning up and retrying...`);
-      await ensureSyncClean(vaultDir);
-      await runObCommand(["sync", "--path", vaultDir], { env });
-    } else {
-      throw error;
-    }
-  }
+  await runObSyncWithRetry(["sync", "--path", vaultDir], { env }, vaultDir);
 
   return vaultDir;
+}
+
+/**
+ * Run an `ob sync` command with retry logic for lock contention.
+ * Retries up to 3 times with exponential backoff (1s, 2s, 4s) when
+ * "Another sync instance is already running" is detected.
+ * Each retry cleans up lingering processes and removes the lock file.
+ */
+async function runObSyncWithRetry(
+  args: string[],
+  options: { env?: Record<string, string> },
+  vaultDir: string,
+  maxRetries = 3,
+): Promise<void> {
+  for (let attempt = 0; attempt <= maxRetries; attempt++) {
+    try {
+      await runObCommand(args, options);
+      return;
+    } catch (error) {
+      const msg = error instanceof Error ? error.message : String(error);
+      if (msg.includes("Another sync instance") && attempt < maxRetries) {
+        const delayMs = 1000 * 2 ** attempt; // 1s, 2s, 4s
+        console.warn(
+          `  ⚠️ Sync lock contention (retry ${attempt + 1}/${maxRetries}), ` +
+          `cleaning up and retrying in ${delayMs / 1000}s...`,
+        );
+        await ensureSyncClean(vaultDir);
+        await new Promise((resolve) => setTimeout(resolve, delayMs));
+      } else {
+        throw error;
+      }
+    }
+  }
 }
 
 /**
@@ -1052,73 +1139,102 @@ function removeSyncLock(vaultDir: string): void {
 }
 
 /**
- * Kill any lingering `ob` processes that may be holding the sync lock.
+ * Kill any lingering `ob` (obsidian-headless) processes that may be holding
+ * the sync lock.
  *
  * The `ob sync-setup` and `ob sync` commands can leave orphan child processes
  * that hold the `.sync.lock` even after the parent process exits. Removing the
  * lock file alone doesn't help because the running process recreates it or
  * detects the running instance via other means (e.g. PID file, socket).
  *
- * This function finds all `ob` processes (except the current one) and sends
- * SIGTERM to each, then waits briefly for them to exit.
+ * This function finds all obsidian-headless processes and sends SIGTERM to
+ * each, waits for them to exit, then escalates to SIGKILL if needed.
  *
- * ## 5 Whys — Obsidian sync lock failure
+ * ## 5 Whys — Obsidian sync lock failure (2nd investigation, 2026-03-08)
  *
- * 1. **Why does "Another sync instance is already running" persist after
- *    removing `.sync.lock`?**
- *    Because the `ob` CLI checks for a running process, not just a lock file.
- *    A lingering `ob` process from `sync-setup` or a previous `sync` still
- *    holds the lock at the OS level.
+ * 1. **Why does "Another sync instance is already running" persist even
+ *    after `ensureSyncClean` (kill + remove lock)?**
+ *    Because `killObProcesses` silently found zero processes to kill.
+ *    The lingering `ob` process was invisible to the grep pattern.
  *
- * 2. **Why is there a lingering `ob` process?**
- *    `ob sync-setup` may spawn background workers or keep a file watcher
- *    alive. When called via Node's `execFile`, the parent resolves after
- *    stdout/stderr close, but child processes may linger.
+ * 2. **Why did `killObProcesses` find zero processes?**
+ *    It used `ps -o pid,comm | grep '[o]b$'` which matches the COMMAND
+ *    column (short process name). But `ob` is a Node.js script
+ *    (`#!/usr/bin/env node`), so the process name in `comm` is `node`
+ *    (or `MainThread` on some Linux kernels), NOT `ob`.
  *
- * 3. **Why doesn't `execFile` kill child processes on completion?**
- *    `execFile` only waits for the main process; it doesn't track or kill
- *    grandchild/orphan processes. The `ob` tool's internal architecture
- *    may fork workers that outlive the main CLI process.
+ * 3. **Why does the process appear as `node` instead of `ob`?**
+ *    obsidian-headless is installed via npm as a global package. The `ob`
+ *    binary is a symlink to `cli.js` with a `#!/usr/bin/env node` shebang.
+ *    The OS kernel runs `node /path/to/cli.js`, so `ps -o comm` reports
+ *    `node` (the interpreter), not `ob` (the script name).
  *
- * 4. **Why does the retry-after-5s approach also fail?**
- *    The 5s delay doesn't kill the lingering process — it just waits.
- *    The process is still alive and still holding the lock when the retry
- *    fires.
+ * 4. **Why doesn't `node` match the grep pattern `[o]b$`?**
+ *    `[o]b$` matches strings ending with "ob". "node" doesn't end with
+ *    "ob". The pattern was designed assuming `ob` would appear as the
+ *    command name, which is only true for compiled binaries.
  *
  * 5. **What is the root fix?**
- *    Kill all `ob` processes between operations. This ensures no orphan
- *    process holds the lock when the next `ob sync` starts. Combined
- *    with lock file removal, this handles both file-based and process-based
- *    lock mechanisms.
+ *    Use `ps -o pid,args` (full command line) instead of `ps -o pid,comm`
+ *    (short name). The `args` column contains the full invocation path,
+ *    e.g. `node /path/to/obsidian-headless/cli.js sync ...`, which we
+ *    can match on `obsidian-headless`. Also escalate to SIGKILL if
+ *    SIGTERM doesn't terminate the process within 1 second.
  *
  * @see https://github.com/obsidianmd/obsidian-headless/issues/4
  * @see https://help.obsidian.md/sync/headless
  */
 async function killObProcesses(): Promise<void> {
   try {
-    // Find 'ob' processes owned by the current user.
-    // Uses `ps -u $(id -u)` to scope to current user (avoids killing other users'
-    // processes in multi-user CI environments) and matches the 'ob' command name.
+    // Find obsidian-headless processes owned by the current user.
+    // Uses `ps -o pid,args` to get the FULL command line (not just the short
+    // command name). This correctly identifies `ob` processes even though they
+    // run as `node /path/to/obsidian-headless/cli.js ...`.
     const { stdout } = await execAsync(
-      "ps -u $(id -u) -o pid,comm | grep '[o]b$' | awk '{print $1}'",
+      "ps -u $(id -u) -o pid,args | grep 'obsidian-headless' | grep -v grep | awk '{print $1}'",
     );
     const pids = stdout.trim().split("\n").filter(Boolean);
-    if (pids.length > 0) {
-      console.log(`🔪 Killing ${pids.length} lingering ob process(es): ${pids.join(", ")}`);
-      for (const pid of pids) {
-        try {
-          process.kill(parseInt(pid, 10), "SIGTERM");
-        } catch (err) {
-          // ESRCH = process already exited — expected and safe to ignore
-          if ((err as NodeJS.ErrnoException).code !== "ESRCH") {
-            console.warn(`  ⚠️ Could not kill PID ${pid}: ${(err as Error).message}`);
-          }
+    if (pids.length === 0) return;
+
+    console.log(`🔪 Killing ${pids.length} lingering ob process(es): ${pids.join(", ")}`);
+
+    // Phase 1: SIGTERM — graceful shutdown
+    for (const pid of pids) {
+      try {
+        process.kill(parseInt(pid, 10), "SIGTERM");
+      } catch (err) {
+        if ((err as NodeJS.ErrnoException).code !== "ESRCH") {
+          console.warn(`  ⚠️ Could not SIGTERM PID ${pid}: ${(err as Error).message}`);
         }
       }
-      // Wait for processes to terminate. The `ob` CLI handles SIGTERM gracefully
-      // and cleans up within ~1s based on observed behavior in CI.
-      await new Promise((resolve) => setTimeout(resolve, 2_000));
     }
+
+    // Wait up to 1s for graceful termination, checking every 200ms
+    for (let i = 0; i < 5; i++) {
+      await new Promise((resolve) => setTimeout(resolve, 200));
+      const allDead = pids.every((pid) => {
+        try {
+          process.kill(parseInt(pid, 10), 0); // signal 0 = test if alive
+          return false; // still alive
+        } catch {
+          return true; // dead
+        }
+      });
+      if (allDead) return;
+    }
+
+    // Phase 2: SIGKILL — force kill any survivors
+    for (const pid of pids) {
+      try {
+        process.kill(parseInt(pid, 10), 0); // test if still alive
+        console.warn(`  ⚠️ PID ${pid} survived SIGTERM, sending SIGKILL`);
+        process.kill(parseInt(pid, 10), "SIGKILL");
+      } catch {
+        // already dead — good
+      }
+    }
+    // Brief wait for SIGKILL to take effect
+    await new Promise((resolve) => setTimeout(resolve, 200));
   } catch {
     // ps/grep may fail if no processes found — that's fine
   }
@@ -1148,18 +1264,7 @@ export async function pushObsidianVault(
   await ensureSyncClean(vaultDir);
 
   console.log(`📤 Pushing changes to Obsidian Sync...`);
-  try {
-    await runObCommand(["sync", "--path", vaultDir], { env });
-  } catch (error) {
-    const msg = error instanceof Error ? error.message : String(error);
-    if (msg.includes("Another sync instance")) {
-      console.warn(`  ⚠️ Sync lock contention on push, cleaning up and retrying...`);
-      await ensureSyncClean(vaultDir);
-      await runObCommand(["sync", "--path", vaultDir], { env });
-    } else {
-      throw error;
-    }
-  }
+  await runObSyncWithRetry(["sync", "--path", vaultDir], { env }, vaultDir);
 }
 
 /**
@@ -1332,12 +1437,27 @@ export function validateEnvironment(): {
  * Bluesky failures are also logged but don't crash.
  * The pipeline continues as long as at least one platform succeeds,
  * or if only dry-run/generation is requested.
+ *
+ * ## Performance: Parallel Vault Pull
+ *
+ * The Obsidian vault pull is the slowest operation (~4-7 minutes for a cold
+ * cache). To minimize wall-clock time, we start the pull in the background
+ * immediately after validating credentials, and run Gemini generation + social
+ * posting concurrently. The pull result is awaited only when we need to write.
+ *
+ * Timeline (before):
+ *   generate(3s) → post(10s) → pull(~7min) → push(1.5s) = ~7min 15s
+ *
+ * Timeline (after):
+ *   pull(~7min, background) ─────────────────────────┐
+ *   generate(3s) → post(10s) → await pull → push(1.5s) = ~7min 1.5s
  */
 export async function main(options?: {
   date?: string;
   dryRun?: boolean;
   contentDir?: string;
 }): Promise<void> {
+  const timer = new PipelineTimer();
   const date = options?.date || getYesterdayDate();
   const dryRun = options?.dryRun || false;
   const contentDir = options?.contentDir || CONTENT_DIR;
@@ -1368,16 +1488,35 @@ export async function main(options?: {
     console.warn(`⚠️  No social platform credentials configured. Set TWITTER_* or BLUESKY_* env vars.`);
   }
 
-  // Step 3: Generate post text with Gemini
-  console.log(`🤖 Generating post with ${env.gemini.model}...`);
-  const postText = await generateTweetWithGemini(
-    reflection,
-    env.gemini.apiKey,
-    env.gemini.model,
-  );
-  console.log(
-    `📝 Generated post (${calculateTweetLength(postText)} chars):\n${postText}`,
-  );
+  // Step 3: Start vault pull in background (overlaps with Gemini + posting).
+  // The pull doesn't depend on post text — it only needs Obsidian credentials.
+  // We await the result later, just before we need to write to the vault.
+  let vaultPullPromise: Promise<string> | null = null;
+  if (!dryRun && (env.twitter || env.bluesky)) {
+    timer.start("obsidian-pull");
+    console.log(`📥 Starting Obsidian vault pull in background...`);
+    vaultPullPromise = syncObsidianVault(env.obsidian).then((dir) => {
+      timer.end("obsidian-pull");
+      return dir;
+    }).catch((err) => {
+      timer.end("obsidian-pull");
+      throw err;
+    });
+  }
+
+  // Step 4: Generate post text with Gemini
+  const postText = await timer.time("gemini-generate", async () => {
+    console.log(`🤖 Generating post with ${env.gemini.model}...`);
+    const text = await generateTweetWithGemini(
+      reflection,
+      env.gemini.apiKey,
+      env.gemini.model,
+    );
+    console.log(
+      `📝 Generated post (${calculateTweetLength(text)} chars):\n${text}`,
+    );
+    return text;
+  });
 
   if (dryRun) {
     console.log(`🏁 Dry run complete, would have posted the above`);
@@ -1387,121 +1526,166 @@ export async function main(options?: {
   // Collect embed sections to write to Obsidian
   const embedSections: EmbedSection[] = [];
 
-  // Step 4: Post to social platforms in parallel (both non-fatal)
-  const postingTasks: Array<Promise<EmbedSection | null>> = [];
+  // Step 5: Post to social platforms in parallel (both non-fatal)
+  await timer.time("social-posting", async () => {
+    const postingTasks: Array<Promise<EmbedSection | null>> = [];
 
-  // Twitter posting task
-  if (env.twitter && !reflection.hasTweetSection) {
-    postingTasks.push(
-      (async (): Promise<EmbedSection | null> => {
-        try {
-          console.log(`🐦 Posting tweet to Twitter...`);
-          const tweet = await postTweet(postText, env.twitter!);
-          console.log(
-            `✅ Tweet posted: https://twitter.com/${TWITTER_HANDLE}/status/${tweet.id}`,
-          );
+    // Twitter posting task
+    if (env.twitter && !reflection.hasTweetSection) {
+      postingTasks.push(
+        (async (): Promise<EmbedSection | null> => {
+          try {
+            console.log(`🐦 Posting tweet to Twitter...`);
+            const tweet = await postTweet(postText, env.twitter!);
+            console.log(
+              `✅ Tweet posted: https://twitter.com/${TWITTER_HANDLE}/status/${tweet.id}`,
+            );
 
-          console.log(`🔗 Fetching tweet embed code...`);
-          const tweetEmbedHtml = await getEmbedHtml(tweet.id, tweet.text, date);
-          console.log(`📋 Got tweet embed HTML (${tweetEmbedHtml.length} chars)`);
+            console.log(`🔗 Fetching tweet embed code...`);
+            const tweetEmbedHtml = await getEmbedHtml(tweet.id, tweet.text, date);
+            console.log(`📋 Got tweet embed HTML (${tweetEmbedHtml.length} chars)`);
 
-          return {
-            header: TWEET_SECTION_HEADER,
-            embedHtml: tweetEmbedHtml,
-            buildSection: buildTweetSection,
-          };
-        } catch (error) {
-          console.error(`⚠️  Twitter posting failed (non-fatal)`);
-          logTwitterError("final", error, true);
-          return null;
+            return {
+              header: TWEET_SECTION_HEADER,
+              embedHtml: tweetEmbedHtml,
+              buildSection: buildTweetSection,
+            };
+          } catch (error) {
+            console.error(`⚠️  Twitter posting failed (non-fatal)`);
+            logTwitterError("final", error, true);
+            return null;
+          }
+        })(),
+      );
+    } else if (!env.twitter) {
+      console.log(`ℹ️  Twitter credentials not configured, skipping`);
+    }
+
+    // Bluesky posting task
+    if (env.bluesky && !reflection.hasBlueskySection) {
+      postingTasks.push(
+        (async (): Promise<EmbedSection | null> => {
+          try {
+            console.log(`🦋 Posting to Bluesky...`);
+
+            // Fetch OG metadata from the reflection URL for a richer link card.
+            // Bluesky does NOT auto-fetch OpenGraph metadata; we must supply it explicitly.
+            // @see https://docs.bsky.app/docs/advanced-guides/posts#website-card-embeds
+            console.log(`  🔍 Fetching OG metadata from ${reflection.url}...`);
+            const ogMeta = await fetchOgMetadata(reflection.url);
+
+            const linkCard = {
+              uri: reflection.url,
+              title: ogMeta.title || reflection.title,
+              description: ogMeta.description || `Daily reflection from bagrounds.org — ${reflection.date}`,
+              thumbUrl: ogMeta.imageUrl,
+            };
+
+            if (ogMeta.description) {
+              console.log(`  📋 OG description: ${ogMeta.description.slice(0, 80)}...`);
+            }
+            if (ogMeta.imageUrl) {
+              console.log(`  🖼️ OG image found: ${ogMeta.imageUrl}`);
+            }
+
+            const bskyPost = await postToBluesky(postText, env.bluesky!, linkCard);
+            const did = extractBlueskyDid(bskyPost.uri);
+            const postId = extractBlueskyPostId(bskyPost.uri);
+            console.log(
+              `✅ Bluesky post created: ${buildBlueskyPostUrl(did, postId)}`,
+            );
+
+            console.log(`🔗 Fetching Bluesky embed code...`);
+            const bskyEmbedHtml = await getBlueskyEmbedHtml(
+              bskyPost.uri, bskyPost.text, date, env.bluesky!.identifier, bskyPost.cid,
+            );
+            console.log(`📋 Got Bluesky embed HTML (${bskyEmbedHtml.length} chars)`);
+
+            return {
+              header: BLUESKY_SECTION_HEADER,
+              embedHtml: bskyEmbedHtml,
+              buildSection: buildBlueskySection,
+            };
+          } catch (error) {
+            console.error(`⚠️  Bluesky posting failed (non-fatal):`);
+            console.error(`   ${error instanceof Error ? error.message : error}`);
+            if (error instanceof Error && error.stack) {
+              console.error(`   Stack: ${error.stack.split("\n").slice(0, 3).join("\n   ")}`);
+            }
+            return null;
+          }
+        })(),
+      );
+    } else if (!env.bluesky) {
+      console.log(`ℹ️  Bluesky credentials not configured, skipping`);
+    }
+
+    // Wait for all posting tasks to complete
+    if (postingTasks.length > 0) {
+      console.log(`📡 Posting to ${postingTasks.length} platform(s) in parallel...`);
+      const results = await Promise.allSettled(postingTasks);
+      for (const result of results) {
+        if (result.status === "fulfilled" && result.value) {
+          embedSections.push(result.value);
         }
-      })(),
-    );
-  } else if (!env.twitter) {
-    console.log(`ℹ️  Twitter credentials not configured, skipping`);
-  }
-
-  // Bluesky posting task
-  if (env.bluesky && !reflection.hasBlueskySection) {
-    postingTasks.push(
-      (async (): Promise<EmbedSection | null> => {
-        try {
-          console.log(`🦋 Posting to Bluesky...`);
-
-          // Fetch OG metadata from the reflection URL for a richer link card.
-          // Bluesky does NOT auto-fetch OpenGraph metadata; we must supply it explicitly.
-          // @see https://docs.bsky.app/docs/advanced-guides/posts#website-card-embeds
-          console.log(`  🔍 Fetching OG metadata from ${reflection.url}...`);
-          const ogMeta = await fetchOgMetadata(reflection.url);
-
-          const linkCard = {
-            uri: reflection.url,
-            title: ogMeta.title || reflection.title,
-            description: ogMeta.description || `Daily reflection from bagrounds.org — ${reflection.date}`,
-            thumbUrl: ogMeta.imageUrl,
-          };
-
-          if (ogMeta.description) {
-            console.log(`  📋 OG description: ${ogMeta.description.slice(0, 80)}...`);
-          }
-          if (ogMeta.imageUrl) {
-            console.log(`  🖼️ OG image found: ${ogMeta.imageUrl}`);
-          }
-
-          const bskyPost = await postToBluesky(postText, env.bluesky!, linkCard);
-          const did = extractBlueskyDid(bskyPost.uri);
-          const postId = extractBlueskyPostId(bskyPost.uri);
-          console.log(
-            `✅ Bluesky post created: ${buildBlueskyPostUrl(did, postId)}`,
-          );
-
-          console.log(`🔗 Fetching Bluesky embed code...`);
-          const bskyEmbedHtml = await getBlueskyEmbedHtml(
-            bskyPost.uri, bskyPost.text, date, env.bluesky!.identifier, bskyPost.cid,
-          );
-          console.log(`📋 Got Bluesky embed HTML (${bskyEmbedHtml.length} chars)`);
-
-          return {
-            header: BLUESKY_SECTION_HEADER,
-            embedHtml: bskyEmbedHtml,
-            buildSection: buildBlueskySection,
-          };
-        } catch (error) {
-          console.error(`⚠️  Bluesky posting failed (non-fatal):`);
-          console.error(`   ${error instanceof Error ? error.message : error}`);
-          if (error instanceof Error && error.stack) {
-            console.error(`   Stack: ${error.stack.split("\n").slice(0, 3).join("\n   ")}`);
-          }
-          return null;
-        }
-      })(),
-    );
-  } else if (!env.bluesky) {
-    console.log(`ℹ️  Bluesky credentials not configured, skipping`);
-  }
-
-  // Wait for all posting tasks to complete
-  if (postingTasks.length > 0) {
-    console.log(`📡 Posting to ${postingTasks.length} platform(s) in parallel...`);
-    const results = await Promise.allSettled(postingTasks);
-    for (const result of results) {
-      if (result.status === "fulfilled" && result.value) {
-        embedSections.push(result.value);
       }
     }
-  }
+  });
 
-  // Step 5: Write embed sections to Obsidian vault via Headless Sync
-  if (embedSections.length > 0) {
+  // Step 6: Write embed sections to Obsidian vault via Headless Sync
+  if (embedSections.length > 0 && vaultPullPromise) {
     const obsidianNotePath = `reflections/${date}.md`;
     console.log(`📝 Writing ${embedSections.length} embed section(s) to Obsidian note: ${obsidianNotePath}`);
-    await appendEmbedsToObsidianNote(obsidianNotePath, embedSections, env.obsidian);
+
+    // Await the vault pull that was running in parallel with social posting.
+    // This measures how long we had to wait AFTER posting completed.
+    console.log(`⏳ Waiting for Obsidian vault pull to complete...`);
+    timer.start("obsidian-await-pull");
+    const vaultDir = await vaultPullPromise;
+    timer.end("obsidian-await-pull");
+
+    await timer.time("obsidian-write-push", async () => {
+      // Read note from synced vault
+      const filePath = path.join(vaultDir, obsidianNotePath);
+      if (!fs.existsSync(filePath)) {
+        throw new Error(
+          `Note not found in Obsidian vault: ${obsidianNotePath} (looked at ${filePath})`,
+        );
+      }
+
+      let content = fs.readFileSync(filePath, "utf-8");
+      let modified = false;
+
+      for (const section of embedSections) {
+        if (!content.includes(section.header)) {
+          content = content + section.buildSection(content, section.embedHtml);
+          modified = true;
+        } else {
+          console.log(`${section.header} already exists in Obsidian note, skipping`);
+        }
+      }
+
+      if (modified) {
+        fs.writeFileSync(filePath, content, "utf-8");
+        await pushObsidianVault(vaultDir, { authToken: env.obsidian.authToken });
+      } else {
+        console.log("No new sections to add to Obsidian note");
+      }
+    });
     console.log(`✅ Obsidian vault updated via Headless Sync (review in Obsidian and publish)`);
   } else {
-    console.log(`ℹ️  No successful posts to embed`);
+    if (embedSections.length === 0) {
+      console.log(`ℹ️  No successful posts to embed`);
+    }
+    // If vault pull was started but no embeds succeeded, suppress the unused promise.
+    // The pull result is not needed, so we catch to prevent unhandled rejection.
+    vaultPullPromise?.catch((err) => {
+      console.warn(`⚠️  Vault pull failed (unused — no embeds to write): ${err instanceof Error ? err.message : err}`);
+    });
   }
 
   console.log(`🎉 Done processing reflection for ${date}`);
+  timer.printSummary();
 }
 
 // Run if executed directly

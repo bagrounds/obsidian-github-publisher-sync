@@ -22,6 +22,7 @@ import {
   validateEnvironment,
   withRetry,
   fetchOgMetadata,
+  PipelineTimer,
   type ReflectionData,
 } from "./tweet-reflection.ts";
 
@@ -1049,5 +1050,59 @@ describe("fetchOgMetadata", () => {
     if (meta.description) {
       assert.ok(meta.description.length > 0, "og:description should be non-empty");
     }
+  });
+});
+
+// --- PipelineTimer Tests ---
+
+describe("PipelineTimer", () => {
+  test("records and reports phase durations", async () => {
+    const timer = new PipelineTimer();
+    timer.start("test-phase");
+    await new Promise((resolve) => setTimeout(resolve, 10));
+    timer.end("test-phase");
+
+    // Verify no errors from printSummary
+    const logs: string[] = [];
+    const origLog = console.log;
+    console.log = (...args: unknown[]) => logs.push(args.join(" "));
+    timer.printSummary();
+    console.log = origLog;
+
+    assert.ok(logs.some((l) => l.includes("test-phase")), "summary should include phase name");
+    assert.ok(logs.some((l) => l.includes("Pipeline Timing Summary")), "summary should have header");
+  });
+
+  test("time() wraps async functions and returns result", async () => {
+    const timer = new PipelineTimer();
+    const result = await timer.time("wrapped", async () => {
+      return 42;
+    });
+    assert.equal(result, 42);
+  });
+
+  test("time() propagates errors", async () => {
+    const timer = new PipelineTimer();
+    await assert.rejects(
+      () => timer.time("failing", async () => { throw new Error("boom"); }),
+      { message: "boom" },
+    );
+  });
+
+  test("handles multiple phases", () => {
+    const timer = new PipelineTimer();
+    timer.start("a");
+    timer.end("a");
+    timer.start("b");
+    timer.end("b");
+
+    const logs: string[] = [];
+    const origLog = console.log;
+    console.log = (...args: unknown[]) => logs.push(args.join(" "));
+    timer.printSummary();
+    console.log = origLog;
+
+    assert.ok(logs.some((l) => l.includes("a")));
+    assert.ok(logs.some((l) => l.includes("b")));
   });
 });

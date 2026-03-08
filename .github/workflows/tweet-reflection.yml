@@ -48,6 +48,19 @@ jobs:
       - name: Install Obsidian Headless CLI
         run: npm install -g obsidian-headless
 
+      # Cache the Obsidian vault between runs for incremental sync.
+      # Cold sync downloads the entire vault (~7 min). With a warm cache,
+      # `ob sync` only pulls changes since the last run (seconds).
+      # Key uses run_id so each run saves its updated vault state.
+      # restore-keys prefix ensures the previous run's cache is restored.
+      - name: Cache Obsidian Vault
+        uses: actions/cache@v4
+        with:
+          path: /tmp/obsidian-vault-cache
+          key: obsidian-vault-${{ github.run_id }}
+          restore-keys: |
+            obsidian-vault-
+
       - name: Run Tweet Reflection Script
         env:
           TWITTER_API_KEY: ${{ secrets.TWITTER_API_KEY }}
@@ -61,6 +74,7 @@ jobs:
           OBSIDIAN_AUTH_TOKEN: ${{ secrets.OBSIDIAN_AUTH_TOKEN }}
           OBSIDIAN_VAULT_NAME: ${{ secrets.OBSIDIAN_VAULT_NAME }}
           OBSIDIAN_VAULT_PASSWORD: ${{ secrets.OBSIDIAN_VAULT_PASSWORD }}
+          OBSIDIAN_VAULT_CACHE_DIR: /tmp/obsidian-vault-cache
         run: |
           ARGS=""
           if [ -n "${{ github.event.inputs.date }}" ]; then

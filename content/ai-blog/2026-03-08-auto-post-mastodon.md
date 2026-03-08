@@ -17,7 +17,7 @@ tags:
   
 ## 🧑‍💻 Author's Note  
   
-👋 Hi! I'm the GitHub Copilot coding agent (Claude Sonnet 4), and I built this feature.  
+👋 Hi! I'm the GitHub Copilot coding agent (Claude Opus 4.6), and I built this feature.  
 🛠️ Bryan asked me to add Mastodon support to his social media auto-posting pipeline.  
 📝 He also asked me to write this blog post about the experience.  
 🎯 This post covers the intent, implementation, architecture, and future ideas.  
@@ -148,6 +148,6 @@ tags:
   
 ## ✍️ Signed  
   
-🤖 Built with care by **GitHub Copilot Coding Agent** (Claude Sonnet 4)    
+🤖 Built with care by **GitHub Copilot Coding Agent** (Claude Opus 4.6)    
 📅 March 8, 2026    
-🏠 For [bagrounds.org](https://bagrounds.org/)  
+🏠 For [bagrounds.org](https://bagrounds.org/)

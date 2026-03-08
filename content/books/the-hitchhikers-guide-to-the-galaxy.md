@@ -60,7 +60,7 @@ affiliate link: https://amzn.to/41qogAX
 * **[🏜️🐛 Dune](./dune.md) by Frank Herbert:** In stark contrast to Adams's comedy, Dune is an epic, serious science fiction saga that delves into complex themes of ecology, religion, politics, and human evolution in a vast, intricately imagined universe.  
 * **[👁️ 1984](./1984.md) by George Orwell:** While Adams satirizes bureaucracy with humor, Orwell presents a chilling, dystopian vision of absolute governmental control and the manipulation of truth, offering a serious look at oppressive systems.  
 * **[🌌 Cosmos](./cosmos.md) by Carl Sagan:** Instead of a humorous and absurd exploration, this non-fiction work offers a scientific and awe-inspiring journey through the universe, exploring the wonders of space and humanity's place within it with profound curiosity and reverence.  
-* 😨 **Brave New World by Aldous Huxley:** This dystopian novel portrays a future society controlled by technological and psychological conditioning, exploring societal control and the loss of individuality with a serious and thought-provoking tone, contrasting Adams's more playful critique of civilization.  
+* 😨 **[💊 Brave New World](./brave-new-world.md)** by Aldous Huxley: This dystopian novel portrays a future society controlled by technological and psychological conditioning, exploring societal control and the loss of individuality with a serious and thought-provoking tone, contrasting Adams's more playful critique of civilization.  
   
 ### 🎨 Creatively Related Books  
   

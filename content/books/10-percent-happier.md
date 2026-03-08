@@ -58,7 +58,7 @@ CTA: 🧘‍♀️ Cultivate inner peace.
 ### 💡 Creatively Related: Exploring Related Concepts  
   
 * 📖 **Waking Up: A Guide to Spirituality Without Religion** by Sam Harris (no relation to Dan Harris): Explores consciousness, meditation, and the possibility of a spiritual life free from religious dogma. 🌅  
-* 📖 **Four Thousand Weeks: Time Management for Mortals** by Oliver Burkeman: Challenges conventional ideas of productivity and time management, encouraging a more mindful approach to our limited time, which aligns with the focus on the present moment in mindfulness. ⏳  
+* 📖 Four Thousand Weeks by Oliver Burkeman: Challenges conventional ideas of productivity and time management, encouraging a more mindful approach to our limited time, which aligns with the focus on the present moment in mindfulness. ⏳  
 * 📖 **Build the Life You Want** by Arthur C. Brooks and Oprah Winfrey: Discusses the science of happiness and provides strategies for building a more fulfilling life. 🏗️  
 * 📖 **The Power of Now** by Eckhart Tolle: A widely popular book on living in the present moment and transcending the ego, a concept also addressed by Harris. 💫  
   

@@ -5,11 +5,11 @@ aliases:
 title: 🪞 Reflections
 URL: https://bagrounds.org/reflections
 backlinks: false
-updated: 2026-03-07T16:41:33-08:00
+updated: 2026-03-07T16:47:46-08:00
 ---
 [Home](../index.md)  
 # 🪞 Reflections (478)  
-- [2026-03-07 | 💥 Strikes ⚔️ Conflict 🤖 Agent](./2026-03-07.md)  
+- [2026-03-07 | 💥 Strikes ⚔️ Conflict 🤖 Agent 📰📚📺](./2026-03-07.md)  
 - [2026-03-06 | 🤖🆚🧠 Code 🤖 Choice 📺](./2026-03-06.md)  
 - [2026-03-05 | 😴🧠💤 Tired 🤖 Murderbot 📺](./2026-03-05.md)  
 - [2026-03-04 | 🤖⚙️ Claude 👥 Everyone 🤖](./2026-03-04.md)  

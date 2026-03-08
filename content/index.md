@@ -13,34 +13,38 @@ updated: 2026-03-07T17:48:28-08:00
 ❔ What do 🫵 _you_ 🤔 think?  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (478)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (479)  
+- [2026-03-08 | 🐘 Mastodon 🤔 Sophie 🤖 Agent](./reflections/2026-03-08.md)  
 - [2026-03-07 | 💥 Strikes ⚔️ Conflict 🤖 Agent 📰📚📺](./reflections/2026-03-07.md)  
 - [2026-03-06 | 🤖🆚🧠 Code 🤖 Choice 📚📺](./reflections/2026-03-06.md)  
 - [2026-03-05 | 😴🧠💤 Tired 🤖 Murderbot 📺](./reflections/2026-03-05.md)  
 - [2026-03-04 | 🤖⚙️ Claude 👥 Everyone 📚📄📺](./reflections/2026-03-04.md)  
-- [2026-03-03 | 💰🏛️📈 Wealth 📊 Public Finance 🤖](./reflections/2026-03-03.md)  
+- [2026-03-03 | 💰🏛️📈 Wealth 📊 Public Finance 📚📺](./reflections/2026-03-03.md)  
 - [2026-03-02 | 🤖 Agentic 📖 Fugitive ☁️ Tunnel 🌿 Rhubarb 😴 Snoring 📚🎤💻📰🌌](./reflections/2026-03-02.md)  
 - [2026-03-01 | 🕵️ Fugitive 🌐 Network 🚀 Build 🐦 Twitter 🤖 Agent 📚](./reflections/2026-03-01.md)  
 - [2026-02-28 | 🤖⚙️🧠 Agentic 📖](./reflections/2026-02-28.md)  
 - [2026-02-27 | 🤖🐍🚫🐍 AI 🇺🇸 Polarized 🏛️ Brooks 📚📄📺📰](./reflections/2026-02-27.md)  
-- [2026-02-26 | 🌐 Network 🗣️ Prompt 🇺🇸 Union 💰 Wealth 📚📺🤖💬](./reflections/2026-02-26.md)  
+  
+  
+## [🤖 AI Blog](./ai-blog/index.md) (1)  
+- [2026-03-08 | 🐘 Auto-Posting to Mastodon 🤖](./ai-blog/2026-03-08-auto-post-mastodon.md)  
   
   
 ## [🧰 Tools](./tools/index.md) (1)  
 - [🧮 Calculator](./tools/calculator.md)  
   
   
-## [📚 Books](./books/index.md) (950)  
+## [📚 Books](./books/index.md) (951)  
+- [👤🧠 Being You: A New Science of Consciousness](./books/being-you-a-new-science-of-consciousness.md)  
+- [🗣️🔗 Supercommunicators: How to Unlock the Secret Language of Connection](./books/supercommunicators-how-to-unlock-the-secret-language-of-connection.md)  
+- [🤔👶💭 Big Ideas for Little Philosophers: Imagination with René Descartes](./books/big-ideas-for-little-philosophers-imagination-with-rene-descartes.md)  
+- [🏍️🧘❓ Zen and the Art of Motorcycle Maintenance: An Inquiry into Values](./books/zen-and-the-art-of-motorcycle-maintenance-an-inquiry-into-values.md)  
+- [🤔🌍 Sophie’s World](./books/sophies-world.md)  
 - [⚔️🤫 The Twilight War: The Secret History of America's Thirty-Year Conflict with Iran](./books/the-twilight-war-the-secret-history-of-americas-thirty-year-conflict-with-iran.md)  
 - [ℹ️🌱 The Informed Gardener](./books/the-informed-gardener.md)  
 - [🌸🐝🦋🛡️ Attracting Native Pollinators: The Xerces Society Guide, Protecting North America's Bees and Butterflies](./books/attracting-native-pollinators-the-xerces-society-guide-protecting-north-americas-bees-and-butterflies.md)  
 - [🗓️🌷 RHS Gardening Through the Year](./books/rhs-gardening-through-the-year.md)  
 - [☀️📖🌿 The New Sunset Western Garden Book: The Ultimate Gardening Guide](./books/the-new-sunset-western-garden-book-the-ultimate-gardening-guide.md)  
-- [🌱🟩⬆️ Square Foot Gardening, 4th Edition: The World’s Most Popular Growing Method to Harvest MORE Food from Less Space](./books/square-foot-gardening-4th-edition-the-worlds-most-popular-growing-method-to-harvest-more-food-from-less-space.md)  
-- [🪴🌱 RHS How to Garden When You're New to Gardening: The Basics for Absolute Beginners](./books/rhs-how-to-garden-when-youre-new-to-gardening-the-basics-for-beginners.md)  
-- [⌨️🤖 Prompt Engineering for LLMs: The Art and Science of Building Large Language Model-Based Applications](./books/prompt-engineering-for-llms-the-art-and-science-of-building-large-language-model-based-applications.md)  
-- [💻✍️ The Art of Prompt Engineering with ChatGPT: A Hands-On Guide](./books/the-art-of-prompt-engineering-with-chatgpt-a-hands-on-guide.md)  
-- [✨🤖🔗🐍 Generative AI with LangChain: A Hands On Guide to Crafting Scalable, Intelligent Systems and Advanced AI Agents with Python](./books/generative-ai-with-langchain-a-hands-on-guide-to-crafting-scalable-intelligent-systems-and-advanced-ai-agents-with-python.md)  
   
   
 ## [📺 Videos](./videos/index.md) (674)  
@@ -57,11 +61,11 @@ updated: 2026-03-07T17:48:28-08:00
   
   
 ## [🌌 Topics](./topics/index.md) (91)  
+- [🤔📚 Philosophy](./topics/philosophy.md)  
+- [📚🎭 Humanities](./topics/humanities.md)  
 - [📄👔 My Resume](./topics/my-resume.md)  
 - [🐱💔 Feline GI Lymphoma](./topics/feline-gi-lymphoma.md)  
 - [🔢➕➕ 3 Sum](./topics/programming-problems/3-sum.md)  
-- [🔢➕ 2 Sum](./topics/programming-problems/2-sum.md)  
-- [🌳➡️ Tree Traversal](./topics/tree-traversal.md)  
   
   
 ## [📄  Articles](./articles/index.md) (80)  
@@ -73,10 +77,10 @@ updated: 2026-03-07T17:48:28-08:00
   
   
 ## [🤖💬 Bot Chats](./bot-chats/index.md) (49)  
+- [📖 Book 🧭 Explorer 2](./bot-chats/book-explorer-2.md)  
 - [📏💻✅ Engineering as Specification](./bot-chats/engineering-as-specification.md)  
 - [💰💎🌽🏡📈 Real Wealth Investing](./bot-chats/real-wealth-investing.md)  
 - [🤰⏰👶🔮 Forecasting Parenthood](./bot-chats/forecasting-parenthood.md)  
-- [📖 Book 🧭 Explorer 2](./bot-chats/book-explorer-2.md)  
 - [🗺️🗓️📋✅🔮 Planning](./bot-chats/planning.md)  
   
   

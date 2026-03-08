@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-03-07T17:25:33-08:00
+updated: 2026-03-07T17:48:28-08:00
 ---
 [Home](../index.md)  
-# 📺 Videos (673)  
+# 📺 Videos (674)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
 - [❓💪🔬 12 Questions About Creatine with Stephen Cornish, PhD](./12-questions-about-creatine-w-stephen-cornish-phd.md)  
@@ -216,6 +216,7 @@ updated: 2026-03-07T17:25:33-08:00
 - [🕵️‍♂️🤫🚫🗣️🥷 How Governments Spy On Protestors - And How To Avoid It | Incognito Mode | WIRED](./how-governments-spy-on-protestors-and-how-to-avoid-it-incognito-mode-wired.md)  
 - [🇺🇸🤯😵‍💫❓ How half the US lost part of their minds](./how-half-the-us-lost-part-of-their-minds.md)  
 - [🕵️🇺🇸💻👁️ How ICE Spies On American Citizens | Incognito Mode | WIRED](./how-ice-spies-on-american-citizens-incognito-mode-wired.md)  
+- [💪🛠️🧠 How I trained myself to crave hard work](./how-i-trained-myself-to-crave-hard-work.md)  
 - [🙋💻❓ How I use LLMs](./how-i-use-llms.md)  
 - [🖨️💰♾️ How Much Money Can We Print? - Warren Mosler, Modern Monetary Theory - DSPod  > 251](./how-much-money-can-we-print-warren-mosler-modern-monetary-theory-dspod-251.md)  
 - [How new job cuts at the nation’s leading health agency affect Americans](./how-new-job-cuts-at-the-nations-leading-health-agency-affect-americans.md)  

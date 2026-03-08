@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-03-07T17:25:33-08:00
+updated: 2026-03-07T17:48:28-08:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -15,9 +15,9 @@ updated: 2026-03-07T17:25:33-08:00
   
 ## [🪞 Reflections](./reflections/index.md) ~ Blog (478)  
 - [2026-03-07 | 💥 Strikes ⚔️ Conflict 🤖 Agent 📰📚📺](./reflections/2026-03-07.md)  
-- [2026-03-06 | 🤖🆚🧠 Code 🤖 Choice 📺](./reflections/2026-03-06.md)  
+- [2026-03-06 | 🤖🆚🧠 Code 🤖 Choice 📚📺](./reflections/2026-03-06.md)  
 - [2026-03-05 | 😴🧠💤 Tired 🤖 Murderbot 📺](./reflections/2026-03-05.md)  
-- [2026-03-04 | 🤖⚙️ Claude 👥 Everyone 🤖](./reflections/2026-03-04.md)  
+- [2026-03-04 | 🤖⚙️ Claude 👥 Everyone 📚📄📺](./reflections/2026-03-04.md)  
 - [2026-03-03 | 💰🏛️📈 Wealth 📊 Public Finance 🤖](./reflections/2026-03-03.md)  
 - [2026-03-02 | 🤖 Agentic 📖 Fugitive ☁️ Tunnel 🌿 Rhubarb 😴 Snoring 📚🎤💻📰🌌](./reflections/2026-03-02.md)  
 - [2026-03-01 | 🕵️ Fugitive 🌐 Network 🚀 Build 🐦 Twitter 🤖 Agent 📚](./reflections/2026-03-01.md)  
@@ -43,7 +43,8 @@ updated: 2026-03-07T17:25:33-08:00
 - [✨🤖🔗🐍 Generative AI with LangChain: A Hands On Guide to Crafting Scalable, Intelligent Systems and Advanced AI Agents with Python](./books/generative-ai-with-langchain-a-hands-on-guide-to-crafting-scalable-intelligent-systems-and-advanced-ai-agents-with-python.md)  
   
   
-## [📺 Videos](./videos/index.md) (673)  
+## [📺 Videos](./videos/index.md) (674)  
+- [💪🛠️🧠 How I trained myself to crave hard work](./videos/how-i-trained-myself-to-crave-hard-work.md)  
 - [🗣️🇺🇸⚔️👤 Rebecca Solnit Says Trump's Strongest Foil Has Been Here All Along | The Interview](./videos/rebecca-solnit-says-trumps-strongest-foil-has-been-here-all-along-the-interview.md)  
 - [🏛️🗣️📰 This Week in Politics | Explainer](./videos/this-week-in-politics-explainer-march-6-2026.md)  
 - [💥🇮🇷💰 Justin Wolfers Breaks Down the Potential Economic Consequences of War With Iran](./videos/justin-wolfers-breaks-down-the-potential-economic-consequences-of-war-with-iran.md)  
@@ -53,7 +54,6 @@ updated: 2026-03-07T17:25:33-08:00
 - [😴🧠👨‍⚕️ Psychiatrist Explains Why You Feel Tired All The Time (No Matter What You Do...)](./videos/psychiatrist-explains-why-you-feel-tired-all-the-time-no-matter-what-you-do.md)  
 - [🤯➡️🗣️👥➡️🤖 Everyone You Know Is About to Try Claude (I Showed 3 People for 5 Minutes - All 3 Switched)](./videos/everyone-you-know-is-about-to-try-claude-i-showed-3-people-for-5-minutes-all-3-switched.md)  
 - [🎤✨🗣️ TED's secret to great public speaking | Chris Anderson | TED](./videos/teds-secret-to-great-public-speaking-chris-anderson-ted.md)  
-- [💰➡️🌍📉 Lecture 03: Externalities in Theory & Practice](./videos/lecture-03-externalities-in-theory-practice.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  

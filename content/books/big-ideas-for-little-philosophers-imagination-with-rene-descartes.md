@@ -44,7 +44,7 @@ affiliate link: https://amzn.to/4egVN5X
     * 📖 *Love with Plato*  
     * (These books follow a similar format, introducing another philosopher and their key idea in a simple, accessible way for young children). 👶  
 * 😂 **Plato and the Platypus Walk Into a Bar...: Understanding Philosophy Through Jokes** by Thomas Cathcart and Daniel Klein: (While for an older audience, this book also makes philosophy accessible, using humor to explain complex ideas). 😆  
-* 🌍 **Sophie's World** by Jostein Gaarder: (A young adult novel that provides a comprehensive history of philosophy through a narrative, suitable for older children and teens). 🧑‍🎓  
+* **[🤔🌍 Sophie’s World](./sophies-world.md)** by Jostein Gaarder: (A young adult novel that provides a comprehensive history of philosophy through a narrative, suitable for older children and teens). 🧑‍🎓  
 * ❓ **Philosophy for Kids: 40 Fun Questions That Help You Explore Big Ideas** by David White: (An activity-based book for middle-grade readers that encourages critical thinking through questions and exercises). 🤔  
   
 ### ⚖️ Contrasting Books (More Complex Philosophical Ideas or Different Formats)  

@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-03-07T11:48:02-08:00
+updated: 2026-03-07T16:41:33-08:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -14,7 +14,7 @@ updated: 2026-03-07T11:48:02-08:00
 💬 Comment on any page with your GitHub account.  
   
 ## [🪞 Reflections](./reflections/index.md) ~ Blog (478)  
-- [2026-03-07](./reflections/2026-03-07.md)  
+- [2026-03-07 | 💥 Strikes ⚔️ Conflict 🤖 Agent](./reflections/2026-03-07.md)  
 - [2026-03-06 | 🤖🆚🧠 Code 🤖 Choice 📺](./reflections/2026-03-06.md)  
 - [2026-03-05 | 😴🧠💤 Tired 🤖 Murderbot 📺](./reflections/2026-03-05.md)  
 - [2026-03-04 | 🤖⚙️ Claude 👥 Everyone 🤖](./reflections/2026-03-04.md)  
@@ -43,7 +43,9 @@ updated: 2026-03-07T11:48:02-08:00
 - [✨🤖🔗🐍 Generative AI with LangChain: A Hands On Guide to Crafting Scalable, Intelligent Systems and Advanced AI Agents with Python](./books/generative-ai-with-langchain-a-hands-on-guide-to-crafting-scalable-intelligent-systems-and-advanced-ai-agents-with-python.md)  
   
   
-## [📺 Videos](./videos/index.md) (669)  
+## [📺 Videos](./videos/index.md) (671)  
+- [🏛️🗣️📰 This Week in Politics | Explainer](./videos/this-week-in-politics-explainer-march-6-2026.md)  
+- [🚀📈📰 5 Ways To Promote And Grow Your Blog](./videos/5-ways-to-promote-and-grow-your-blog.md)  
 - [💥💣🇺🇸🇮🇷 Brooks and Capehart on Trump's decision to launch strikes on Iran](./videos/brooks-and-capehart-on-trumps-decision-to-launch-strikes-on-iran.md)  
 - [🤖🆚🧠⏳📉🔊 Claude Code vs Codex: The Decision That Compounds Every Week You Delay That Nobody Is Talking About](./videos/claude-code-vs-codex-the-decision-that-compounds-every-week-you-delay-that-nobody-is-talking-about.md)  
 - [😴🧠👨‍⚕️ Psychiatrist Explains Why You Feel Tired All The Time (No Matter What You Do...)](./videos/psychiatrist-explains-why-you-feel-tired-all-the-time-no-matter-what-you-do.md)  
@@ -52,8 +54,6 @@ updated: 2026-03-07T11:48:02-08:00
 - [💰➡️🌍📉 Lecture 03: Externalities in Theory & Practice](./videos/lecture-03-externalities-in-theory-practice.md)  
 - [💰📉🌎 Lecture 02: Externalities in Theory](./videos/lecture-02-externalities-in-theory.md)  
 - [🏛️💰❓ Lecture 01: Why Study Public Finance?](./videos/lecture-01-why-study-public-finance.md)  
-- [💰🏛️📈 Lecture 22: Wealth Taxation](./videos/lecture-22-wealth-taxation.md)  
-- [🐛🐌🐞🌿🏡🦠 Managing Pests & Diseases in Your Backyard: Aphids, Blight, and Slugs - Oh My! Workshop](./videos/managing-pests-diseases-in-your-backyard-aphids-blight-and-slugs-oh-my-workshop.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  

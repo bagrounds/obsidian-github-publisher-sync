@@ -2,10 +2,10 @@
  * Social Post Reflection Automation Script
  *
  * Reads yesterday's reflection from the repo, generates a post via Gemini,
- * posts it to Twitter and Bluesky, fetches the embed code, and writes the
- * updated note back to the Obsidian vault via Obsidian Headless Sync.
+ * posts it to Twitter, Bluesky, and Mastodon, fetches the embed code, and
+ * writes the updated note back to the Obsidian vault via Obsidian Headless Sync.
  *
- * Twitter and Bluesky are both optional — the script posts to whichever
+ * Twitter, Bluesky, and Mastodon are all optional — the script posts to whichever
  * platforms have credentials configured. Platform failures are logged but
  * don't crash the pipeline.
  *
@@ -22,6 +22,8 @@
  *   TWITTER_ACCESS_SECRET - (Optional) OAuth 1.0a Access Token Secret
  *   BLUESKY_IDENTIFIER    - (Optional) Bluesky handle (e.g. "bagrounds.bsky.social") or DID
  *   BLUESKY_APP_PASSWORD  - (Optional) Bluesky App Password (from Settings → App Passwords)
+ *   MASTODON_INSTANCE_URL - (Optional) Mastodon instance URL (e.g. "https://mastodon.social")
+ *   MASTODON_ACCESS_TOKEN - (Optional) Mastodon access token (from Settings → Development → Your Application)
  *   GEMINI_API_KEY        - Google Gemini API key (from Google AI Studio)
  *   GEMINI_MODEL          - (Optional) Gemini model name, defaults to gemma-3-27b-it
  *   OBSIDIAN_AUTH_TOKEN   - Obsidian account auth token (from `ob login`)
@@ -30,6 +32,7 @@
  *
  * @see https://github.com/PLhery/node-twitter-api-v2 — twitter-api-v2 docs
  * @see https://docs.bsky.app/ — Bluesky/AT Protocol API docs
+ * @see https://docs.joinmastodon.org/methods/statuses/ — Mastodon API docs
  * @see https://ai.google.dev/gemini-api/docs — Google Gemini API docs
  * @see https://help.obsidian.md/sync/headless — Obsidian Headless Sync docs
  * @see https://github.com/obsidianmd/obsidian-headless — obsidian-headless CLI
@@ -111,6 +114,8 @@ export interface ReflectionData {
   hasTweetSection: boolean;
   /** Whether a Bluesky section already exists */
   hasBlueskySection: boolean;
+  /** Whether a Mastodon section already exists */
+  hasMastodonSection: boolean;
 }
 
 export interface TweetResult {
@@ -129,6 +134,15 @@ export interface BlueskyPostResult {
   text: string;
 }
 
+export interface MastodonPostResult {
+  /** Status ID from Mastodon */
+  id: string;
+  /** Full URL of the posted status */
+  url: string;
+  /** Full post text that was posted */
+  text: string;
+}
+
 export interface EmbedResult {
   /** HTML embed code */
   html: string;
@@ -142,11 +156,15 @@ const TWITTER_DISPLAY_NAME = "Bryan Grounds";
 const BLUESKY_DISPLAY_NAME = "Bryan Grounds";
 const TWEET_SECTION_HEADER = "## 🐦 Tweet";
 const BLUESKY_SECTION_HEADER = "## 🦋 Bluesky";
+const MASTODON_SECTION_HEADER = "## 🐘 Mastodon";
 /** Twitter counts all URLs as 23 characters */
 const TWITTER_URL_LENGTH = 23;
 const TWITTER_MAX_LENGTH = 280;
 /** Bluesky has a 300-character limit for post text */
 const BLUESKY_MAX_LENGTH = 300;
+/** Mastodon default character limit is 500 (instance-configurable) */
+const MASTODON_MAX_LENGTH = 500;
+const MASTODON_DISPLAY_NAME = "Bryan Grounds";
 /** Delay before first Bluesky oEmbed attempt to allow post propagation.
  * Reduced from 3s → 0s: local embed generation is reliable and instant.
  * oEmbed is attempted immediately as a best-effort upgrade. */
@@ -232,6 +250,7 @@ export function readReflection(
     filePath,
     hasTweetSection: content.includes(TWEET_SECTION_HEADER),
     hasBlueskySection: content.includes(BLUESKY_SECTION_HEADER),
+    hasMastodonSection: content.includes(MASTODON_SECTION_HEADER),
   };
 }
 
@@ -939,6 +958,182 @@ export async function getBlueskyEmbedHtml(
   return generateLocalBlueskyEmbed(uri, postText, date, handle, cid);
 }
 
+// --- Mastodon Integration ---
+
+/**
+ * Post to Mastodon using the REST API.
+ *
+ * Uses a personal access token for authentication (simplest for single-user bots).
+ * The `masto` package handles Mastodon API interactions.
+ *
+ * Mastodon supports the `Idempotency-Key` header to prevent duplicate posts
+ * on retries. The default character limit is 500 (instance-configurable).
+ *
+ * @see https://docs.joinmastodon.org/methods/statuses/
+ * @see https://github.com/neet/masto.js
+ */
+export async function postToMastodon(
+  text: string,
+  credentials: {
+    instanceUrl: string;
+    accessToken: string;
+  },
+): Promise<MastodonPostResult> {
+  const { createRestAPIClient } = await import("masto");
+  const client = createRestAPIClient({
+    url: credentials.instanceUrl,
+    accessToken: credentials.accessToken,
+  });
+
+  console.log(`  📡 Mastodon: creating post on ${credentials.instanceUrl}...`);
+
+  const status = await client.v1.statuses.create({
+    status: text,
+    visibility: "public",
+    language: "en",
+  });
+
+  return {
+    id: status.id,
+    url: status.url ?? `${credentials.instanceUrl}/@user/${status.id}`,
+    text,
+  };
+}
+
+/**
+ * Delete a Mastodon post (used for test cleanup).
+ */
+export async function deleteMastodonPost(
+  statusId: string,
+  credentials: {
+    instanceUrl: string;
+    accessToken: string;
+  },
+): Promise<void> {
+  const { createRestAPIClient } = await import("masto");
+  const client = createRestAPIClient({
+    url: credentials.instanceUrl,
+    accessToken: credentials.accessToken,
+  });
+
+  await client.v1.statuses.$select(statusId).remove();
+}
+
+/**
+ * Extract the Mastodon instance URL from a post URL.
+ * e.g. "https://mastodon.social/@user/123456789" → "https://mastodon.social"
+ */
+export function extractMastodonInstanceUrl(postUrl: string): string {
+  try {
+    const url = new URL(postUrl);
+    return `${url.protocol}//${url.host}`;
+  } catch {
+    return "";
+  }
+}
+
+/**
+ * Extract the status ID from a Mastodon post URL.
+ * e.g. "https://mastodon.social/@user/123456789" → "123456789"
+ */
+export function extractMastodonStatusId(postUrl: string): string {
+  const parts = postUrl.split("/");
+  return parts[parts.length - 1] || "";
+}
+
+/**
+ * Extract the username from a Mastodon post URL.
+ * e.g. "https://mastodon.social/@user/123456789" → "user"
+ */
+export function extractMastodonUsername(postUrl: string): string {
+  const match = postUrl.match(/@([^/]+)/);
+  return match ? match[1] : "";
+}
+
+/**
+ * Fetch Mastodon post embed HTML from the instance's oEmbed API.
+ *
+ * Each Mastodon instance hosts its own oEmbed endpoint at /api/oembed.
+ *
+ * @see https://docs.joinmastodon.org/methods/oembed/
+ */
+export async function fetchMastodonOEmbed(postUrl: string): Promise<EmbedResult> {
+  const instanceUrl = extractMastodonInstanceUrl(postUrl);
+  if (!instanceUrl) {
+    throw new Error(`Could not extract instance URL from: ${postUrl}`);
+  }
+
+  const params = new URLSearchParams({ url: postUrl });
+  const response = await fetch(`${instanceUrl}/api/oembed?${params}`);
+
+  if (!response.ok) {
+    throw new Error(
+      `Mastodon oEmbed API returned ${response.status}: ${response.statusText}`,
+    );
+  }
+
+  const data = (await response.json()) as { html: string };
+  return { html: data.html };
+}
+
+/**
+ * Generate Mastodon embed HTML locally as a fallback when oEmbed is unavailable.
+ * Uses an iframe embed format consistent with Mastodon's standard embed output.
+ */
+export function generateLocalMastodonEmbed(
+  postUrl: string,
+  postText: string,
+  date: string,
+): string {
+  const instanceUrl = extractMastodonInstanceUrl(postUrl);
+  const statusId = extractMastodonStatusId(postUrl);
+  const username = extractMastodonUsername(postUrl);
+
+  // HTML-encode the post text
+  const htmlText = postText
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#39;")
+    .replace(/\n/g, "<br>");
+
+  // Format the date for display
+  const dateObj = new Date(date + "T00:00:00Z");
+  const monthNames = [
+    "January", "February", "March", "April", "May", "June",
+    "July", "August", "September", "October", "November", "December",
+  ];
+  const displayDate = `${monthNames[dateObj.getUTCMonth()]} ${dateObj.getUTCDate()}, ${dateObj.getUTCFullYear()}`;
+
+  return (
+    `<iframe src="${postUrl}/embed" class="mastodon-embed" ` +
+    `style="max-width: 100%; border: 0" width="400" allowfullscreen="allowfullscreen"></iframe>` +
+    `<script src="${instanceUrl}/embed.js" async="async"></script>`
+  );
+}
+
+/**
+ * Get Mastodon embed HTML, trying oEmbed first, then falling back to local generation.
+ *
+ * Unlike Bluesky, Mastodon posts are generally available via oEmbed immediately
+ * since the instance handles the request directly (no federation propagation delay
+ * for same-instance requests).
+ */
+export async function getMastodonEmbedHtml(
+  postUrl: string,
+  postText: string,
+  date: string,
+): Promise<string> {
+  try {
+    const { html } = await fetchMastodonOEmbed(postUrl);
+    return html;
+  } catch (error) {
+    console.warn(`Mastodon oEmbed API failed, using local embed generation: ${error}`);
+    return generateLocalMastodonEmbed(postUrl, postText, date);
+  }
+}
+
 // --- File Update Operations ---
 
 /**
@@ -991,6 +1186,32 @@ export function appendBlueskySection(filePath: string, embedHtml: string): void 
   }
 
   fs.writeFileSync(filePath, content + buildBlueskySection(content, embedHtml), "utf-8");
+}
+
+/**
+ * Build the Mastodon section content to append to a note.
+ * Handles separator logic: ensures a blank line before the section.
+ */
+export function buildMastodonSection(
+  existingContent: string,
+  embedHtml: string,
+): string {
+  const separator = existingContent.endsWith("\n") ? "\n" : "\n\n";
+  return `${separator}${MASTODON_SECTION_HEADER}  \n${embedHtml}`;
+}
+
+/**
+ * Append the Mastodon section to a local reflection file (used in tests).
+ */
+export function appendMastodonSection(filePath: string, embedHtml: string): void {
+  const content = fs.readFileSync(filePath, "utf-8");
+
+  if (content.includes(MASTODON_SECTION_HEADER)) {
+    console.log("Mastodon section already exists, skipping update");
+    return;
+  }
+
+  fs.writeFileSync(filePath, content + buildMastodonSection(content, embedHtml), "utf-8");
 }
 
 // --- Obsidian Headless Sync Integration ---
@@ -1353,7 +1574,7 @@ function parseArgs(): { date: string; dryRun: boolean } {
 
 /**
  * Validate that all required environment variables are set.
- * Twitter and Bluesky credentials are optional — the script will attempt
+ * Twitter, Bluesky, and Mastodon credentials are optional — the script will attempt
  * each platform only if its credentials are present.
  */
 export function validateEnvironment(): {
@@ -1366,6 +1587,10 @@ export function validateEnvironment(): {
   bluesky: {
     identifier: string;
     password: string;
+  } | null;
+  mastodon: {
+    instanceUrl: string;
+    accessToken: string;
   } | null;
   gemini: { apiKey: string; model: string };
   obsidian: {
@@ -1414,9 +1639,20 @@ export function validateEnvironment(): {
       }
     : null;
 
+  // Mastodon credentials are optional — both must be present to enable
+  const hasMastodon =
+    !!process.env.MASTODON_INSTANCE_URL && !!process.env.MASTODON_ACCESS_TOKEN;
+  const mastodon = hasMastodon
+    ? {
+        instanceUrl: process.env.MASTODON_INSTANCE_URL as string,
+        accessToken: process.env.MASTODON_ACCESS_TOKEN as string,
+      }
+    : null;
+
   return {
     twitter,
     bluesky,
+    mastodon,
     gemini: {
       apiKey: process.env.GEMINI_API_KEY as string,
       model: process.env.GEMINI_MODEL || DEFAULT_GEMINI_MODEL,
@@ -1432,9 +1668,8 @@ export function validateEnvironment(): {
 /**
  * Main entry point for the social posting pipeline.
  *
- * Posts to both Twitter and Bluesky (if credentials are configured).
- * Twitter failures are logged but don't crash the pipeline.
- * Bluesky failures are also logged but don't crash.
+ * Posts to Twitter, Bluesky, and Mastodon (if credentials are configured).
+ * Platform failures are logged but don't crash the pipeline.
  * The pipeline continues as long as at least one platform succeeds,
  * or if only dry-run/generation is requested.
  *
@@ -1475,24 +1710,24 @@ export async function main(options?: {
 
   console.log(`📄 Found reflection: ${reflection.title}`);
 
-  // Check idempotency — skip if both sections already exist
-  if (reflection.hasTweetSection && reflection.hasBlueskySection) {
-    console.log(`ℹ️  Reflection already has both tweet and Bluesky sections, skipping`);
+  // Check idempotency — skip if all sections already exist
+  if (reflection.hasTweetSection && reflection.hasBlueskySection && reflection.hasMastodonSection) {
+    console.log(`ℹ️  Reflection already has all social platform sections, skipping`);
     return;
   }
 
   // Step 2: Validate credentials
   const env = validateEnvironment();
 
-  if (!env.twitter && !env.bluesky) {
-    console.warn(`⚠️  No social platform credentials configured. Set TWITTER_* or BLUESKY_* env vars.`);
+  if (!env.twitter && !env.bluesky && !env.mastodon) {
+    console.warn(`⚠️  No social platform credentials configured. Set TWITTER_*, BLUESKY_*, or MASTODON_* env vars.`);
   }
 
   // Step 3: Start vault pull in background (overlaps with Gemini + posting).
   // The pull doesn't depend on post text — it only needs Obsidian credentials.
   // We await the result later, just before we need to write to the vault.
   let vaultPullPromise: Promise<string> | null = null;
-  if (!dryRun && (env.twitter || env.bluesky)) {
+  if (!dryRun && (env.twitter || env.bluesky || env.mastodon)) {
     timer.start("obsidian-pull");
     console.log(`📥 Starting Obsidian vault pull in background...`);
     vaultPullPromise = syncObsidianVault(env.obsidian).then((dir) => {
@@ -1618,6 +1853,43 @@ export async function main(options?: {
       );
     } else if (!env.bluesky) {
       console.log(`ℹ️  Bluesky credentials not configured, skipping`);
+    }
+
+    // Mastodon posting task
+    if (env.mastodon && !reflection.hasMastodonSection) {
+      postingTasks.push(
+        (async (): Promise<EmbedSection | null> => {
+          try {
+            console.log(`🐘 Posting to Mastodon...`);
+
+            const mastodonPost = await postToMastodon(postText, env.mastodon!);
+            console.log(
+              `✅ Mastodon post created: ${mastodonPost.url}`,
+            );
+
+            console.log(`🔗 Fetching Mastodon embed code...`);
+            const mastodonEmbedHtml = await getMastodonEmbedHtml(
+              mastodonPost.url, mastodonPost.text, date,
+            );
+            console.log(`📋 Got Mastodon embed HTML (${mastodonEmbedHtml.length} chars)`);
+
+            return {
+              header: MASTODON_SECTION_HEADER,
+              embedHtml: mastodonEmbedHtml,
+              buildSection: buildMastodonSection,
+            };
+          } catch (error) {
+            console.error(`⚠️  Mastodon posting failed (non-fatal):`);
+            console.error(`   ${error instanceof Error ? error.message : error}`);
+            if (error instanceof Error && error.stack) {
+              console.error(`   Stack: ${error.stack.split("\n").slice(0, 3).join("\n   ")}`);
+            }
+            return null;
+          }
+        })(),
+      );
+    } else if (!env.mastodon) {
+      console.log(`ℹ️  Mastodon credentials not configured, skipping`);
     }
 
     // Wait for all posting tasks to complete

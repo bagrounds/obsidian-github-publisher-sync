@@ -18,6 +18,12 @@ import {
   appendTweetSection,
   appendBlueskySection,
   buildBlueskySection,
+  generateLocalMastodonEmbed,
+  extractMastodonInstanceUrl,
+  extractMastodonStatusId,
+  extractMastodonUsername,
+  buildMastodonSection,
+  appendMastodonSection,
   getYesterdayDate,
   validateEnvironment,
   withRetry,
@@ -162,6 +168,7 @@ describe("readReflection", () => {
     assert.equal(result.url, "https://bagrounds.org/reflections/2026-03-01");
     assert.equal(result.hasTweetSection, false);
     assert.equal(result.hasBlueskySection, false);
+    assert.equal(result.hasMastodonSection, false);
   });
 
   test("detects existing tweet section", () => {
@@ -181,6 +188,7 @@ describe("readReflection", () => {
     assert.equal(result.title, "2026-03-06");
     assert.equal(result.hasTweetSection, false);
     assert.equal(result.hasBlueskySection, false);
+    assert.equal(result.hasMastodonSection, false);
   });
 });
 
@@ -547,6 +555,30 @@ describe("validateEnvironment", () => {
     const env = validateEnvironment();
     assert.equal(env.bluesky, null);
   });
+
+  test("returns null mastodon when mastodon credentials are missing", () => {
+    delete process.env.MASTODON_INSTANCE_URL;
+    delete process.env.MASTODON_ACCESS_TOKEN;
+    process.env.GEMINI_API_KEY = "g";
+    process.env.OBSIDIAN_AUTH_TOKEN = "token";
+    process.env.OBSIDIAN_VAULT_NAME = "vault";
+
+    const env = validateEnvironment();
+    assert.equal(env.mastodon, null);
+  });
+
+  test("returns mastodon credentials when set", () => {
+    process.env.GEMINI_API_KEY = "g";
+    process.env.OBSIDIAN_AUTH_TOKEN = "token";
+    process.env.OBSIDIAN_VAULT_NAME = "vault";
+    process.env.MASTODON_INSTANCE_URL = "https://mastodon.social";
+    process.env.MASTODON_ACCESS_TOKEN = "test-mastodon-token";
+
+    const env = validateEnvironment();
+    assert.ok(env.mastodon);
+    assert.equal(env.mastodon.instanceUrl, "https://mastodon.social");
+    assert.equal(env.mastodon.accessToken, "test-mastodon-token");
+  });
 });
 
 // --- Retry Logic Tests ---
@@ -798,6 +830,170 @@ describe("appendBlueskySection", () => {
   });
 });
 
+// --- Mastodon Tests ---
+
+describe("extractMastodonInstanceUrl", () => {
+  test("extracts instance URL from post URL", () => {
+    assert.equal(
+      extractMastodonInstanceUrl("https://mastodon.social/@user/123456789"),
+      "https://mastodon.social",
+    );
+  });
+
+  test("handles different instances", () => {
+    assert.equal(
+      extractMastodonInstanceUrl("https://fosstodon.org/@dev/987654321"),
+      "https://fosstodon.org",
+    );
+  });
+
+  test("returns empty string for invalid URL", () => {
+    assert.equal(extractMastodonInstanceUrl("not-a-url"), "");
+  });
+});
+
+describe("extractMastodonStatusId", () => {
+  test("extracts status ID from post URL", () => {
+    assert.equal(
+      extractMastodonStatusId("https://mastodon.social/@user/123456789"),
+      "123456789",
+    );
+  });
+});
+
+describe("extractMastodonUsername", () => {
+  test("extracts username from post URL", () => {
+    assert.equal(
+      extractMastodonUsername("https://mastodon.social/@bagrounds/123456789"),
+      "bagrounds",
+    );
+  });
+
+  test("returns empty string when no @ found", () => {
+    assert.equal(extractMastodonUsername("https://example.com/page"), "");
+  });
+});
+
+describe("generateLocalMastodonEmbed", () => {
+  test("generates valid Mastodon embed HTML", () => {
+    const postUrl = "https://mastodon.social/@testuser/123456789";
+    const text = "Hello from Mastodon!";
+    const html = generateLocalMastodonEmbed(postUrl, text, "2026-03-08");
+
+    assert.ok(html.includes('class="mastodon-embed"'));
+    assert.ok(html.includes("123456789/embed"));
+    assert.ok(html.includes("mastodon.social/embed.js"));
+  });
+
+  test("uses correct instance URL for embed script", () => {
+    const postUrl = "https://fosstodon.org/@dev/987654321";
+    const html = generateLocalMastodonEmbed(postUrl, "test", "2026-03-08");
+
+    assert.ok(html.includes("fosstodon.org/embed.js"));
+    assert.ok(html.includes("987654321/embed"));
+  });
+
+  test("generates iframe-based embed", () => {
+    const postUrl = "https://mastodon.social/@user/12345";
+    const html = generateLocalMastodonEmbed(postUrl, "test", "2026-01-01");
+
+    assert.ok(html.includes("<iframe"));
+    assert.ok(html.includes("</iframe>"));
+    assert.ok(html.includes('width="400"'));
+    assert.ok(html.includes('allowfullscreen="allowfullscreen"'));
+  });
+});
+
+describe("buildMastodonSection", () => {
+  test("builds section with correct header", () => {
+    const section = buildMastodonSection("existing content\n", "<iframe>test</iframe>");
+    assert.ok(section.includes("## 🐘 Mastodon"));
+    assert.ok(section.includes("<iframe>test</iframe>"));
+  });
+
+  test("adds proper separator when content ends with newline", () => {
+    const section = buildMastodonSection("content\n", "<iframe>embed</iframe>");
+    assert.ok(section.startsWith("\n"));
+  });
+
+  test("adds double newline separator when content doesn't end with newline", () => {
+    const section = buildMastodonSection("content", "<iframe>embed</iframe>");
+    assert.ok(section.startsWith("\n\n"));
+  });
+});
+
+describe("appendMastodonSection", () => {
+  let tempDir: string;
+
+  beforeEach(() => {
+    tempDir = fs.mkdtempSync(path.join(os.tmpdir(), "mastodon-test-"));
+  });
+
+  afterEach(() => {
+    fs.rmSync(tempDir, { recursive: true, force: true });
+  });
+
+  test("appends Mastodon section to file", () => {
+    const filePath = path.join(tempDir, "test.md");
+    fs.writeFileSync(filePath, "# Test\nSome content\n");
+
+    appendMastodonSection(filePath, '<iframe class="mastodon-embed">test</iframe>');
+
+    const updated = fs.readFileSync(filePath, "utf-8");
+    assert.ok(updated.includes("## 🐘 Mastodon"));
+    assert.ok(updated.includes("mastodon-embed"));
+  });
+
+  test("does not duplicate Mastodon section", () => {
+    const filePath = path.join(tempDir, "test.md");
+    fs.writeFileSync(filePath, "# Test\n\n## 🐘 Mastodon  \nexisting embed\n");
+
+    appendMastodonSection(filePath, "<iframe>new</iframe>");
+
+    const content = fs.readFileSync(filePath, "utf-8");
+    const matches = content.match(/## 🐘 Mastodon/g);
+    assert.equal(matches?.length, 1);
+  });
+});
+
+describe("readReflection detects Mastodon section", () => {
+  let tempDir: string;
+
+  beforeEach(() => {
+    tempDir = createTempDir();
+  });
+
+  afterEach(() => {
+    cleanupTempDir(tempDir);
+  });
+
+  test("detects existing Mastodon section", () => {
+    const content = `---
+share: true
+title: 2026-03-08 | 🐘 Mastodon Test
+URL: https://bagrounds.org/reflections/2026-03-08
+Author: "[[bryan-grounds]]"
+tags:
+---
+# 2026-03-08 | 🐘 Mastodon Test  
+
+## 🐘 Mastodon  
+<iframe src="https://mastodon.social/@test/123/embed" class="mastodon-embed"></iframe>`;
+
+    fs.writeFileSync(path.join(tempDir, "2026-03-08.md"), content);
+    const result = readReflection("2026-03-08", tempDir);
+    assert.ok(result !== null);
+    assert.equal(result.hasMastodonSection, true);
+  });
+
+  test("returns false when no Mastodon section exists", () => {
+    fs.writeFileSync(path.join(tempDir, "2026-03-01.md"), SAMPLE_REFLECTION);
+    const result = readReflection("2026-03-01", tempDir);
+    assert.ok(result !== null);
+    assert.equal(result.hasMastodonSection, false);
+  });
+});
+
 // --- Property-Based Tests ---
 
 describe("property-based tests", () => {
@@ -874,6 +1070,37 @@ describe("property-based tests", () => {
       const result = parseFrontmatter(content);
       assert.ok(typeof result.body === "string");
       assert.ok(typeof result.frontmatter === "object");
+    }
+  });
+
+  test("generateLocalMastodonEmbed always produces valid HTML structure (50 iterations)", () => {
+    const instances = ["mastodon.social", "fosstodon.org", "hachyderm.io", "infosec.exchange"];
+    for (let i = 0; i < 50; i++) {
+      const instance = instances[Math.floor(Math.random() * instances.length)] as string;
+      const statusId = String(Math.floor(Math.random() * 1e18));
+      const username = randomString(5 + Math.floor(Math.random() * 10)).replace(/\s/g, "");
+      const text = randomString(10 + Math.floor(Math.random() * 200));
+      const date = randomDate();
+      const postUrl = `https://${instance}/@${username}/${statusId}`;
+
+      const html = generateLocalMastodonEmbed(postUrl, text, date);
+
+      assert.ok(
+        html.includes('class="mastodon-embed"'),
+        `Missing mastodon-embed class for iteration ${i}`,
+      );
+      assert.ok(
+        html.includes("<iframe"),
+        `Missing iframe for iteration ${i}`,
+      );
+      assert.ok(
+        html.includes(`${instance}/embed.js`),
+        `Missing embed.js for iteration ${i}`,
+      );
+      assert.ok(
+        html.includes(`${statusId}/embed`),
+        `Missing status embed URL for iteration ${i}`,
+      );
     }
   });
 });

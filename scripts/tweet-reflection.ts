@@ -165,6 +165,11 @@ const BLUESKY_MAX_LENGTH = 300;
 /** Mastodon default character limit is 500 (instance-configurable) */
 const MASTODON_MAX_LENGTH = 500;
 const MASTODON_DISPLAY_NAME = "Bryan Grounds";
+/** Shared month names for date formatting in embed HTML */
+const MONTH_NAMES = [
+  "January", "February", "March", "April", "May", "June",
+  "July", "August", "September", "October", "November", "December",
+];
 /** Delay before first Bluesky oEmbed attempt to allow post propagation.
  * Reduced from 3s → 0s: local embed generation is reliable and instant.
  * oEmbed is attempted immediately as a best-effort upgrade. */
@@ -577,21 +582,7 @@ export function generateLocalEmbed(
 
   // Format the date for display
   const dateObj = new Date(date + "T00:00:00Z");
-  const monthNames = [
-    "January",
-    "February",
-    "March",
-    "April",
-    "May",
-    "June",
-    "July",
-    "August",
-    "September",
-    "October",
-    "November",
-    "December",
-  ];
-  const displayDate = `${monthNames[dateObj.getUTCMonth()]} ${dateObj.getUTCDate()}, ${dateObj.getUTCFullYear()}`;
+  const displayDate = `${MONTH_NAMES[dateObj.getUTCMonth()]} ${dateObj.getUTCDate()}, ${dateObj.getUTCFullYear()}`;
 
   return (
     `<blockquote class="twitter-tweet" data-theme="dark">` +
@@ -893,11 +884,7 @@ export function generateLocalBlueskyEmbed(
 
   // Format the date for display
   const dateObj = new Date(date + "T00:00:00Z");
-  const monthNames = [
-    "January", "February", "March", "April", "May", "June",
-    "July", "August", "September", "October", "November", "December",
-  ];
-  const displayDate = `${monthNames[dateObj.getUTCMonth()]} ${dateObj.getUTCDate()}, ${dateObj.getUTCFullYear()}`;
+  const displayDate = `${MONTH_NAMES[dateObj.getUTCMonth()]} ${dateObj.getUTCDate()}, ${dateObj.getUTCFullYear()}`;
 
   const cidAttr = cid ? ` data-bluesky-cid="${cid}"` : "";
 
@@ -995,7 +982,7 @@ export async function postToMastodon(
 
   return {
     id: status.id,
-    url: status.url ?? `${credentials.instanceUrl}/@user/${status.id}`,
+    url: status.url ?? `${credentials.instanceUrl}/@${status.account?.acct ?? "unknown"}/${status.id}`,
     text,
   };
 }
@@ -1100,11 +1087,7 @@ export function generateLocalMastodonEmbed(
 
   // Format the date for display
   const dateObj = new Date(date + "T00:00:00Z");
-  const monthNames = [
-    "January", "February", "March", "April", "May", "June",
-    "July", "August", "September", "October", "November", "December",
-  ];
-  const displayDate = `${monthNames[dateObj.getUTCMonth()]} ${dateObj.getUTCDate()}, ${dateObj.getUTCFullYear()}`;
+  const displayDate = `${MONTH_NAMES[dateObj.getUTCMonth()]} ${dateObj.getUTCDate()}, ${dateObj.getUTCFullYear()}`;
 
   return (
     `<iframe src="${postUrl}/embed" class="mastodon-embed" ` +

@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-03-07T16:41:33-08:00
+updated: 2026-03-07T16:47:46-08:00
 ---
 [Home](../index.md)  
-# 📺 Videos (671)  
+# 📺 Videos (672)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
 - [❓💪🔬 12 Questions About Creatine with Stephen Cornish, PhD](./12-questions-about-creatine-w-stephen-cornish-phd.md)  
@@ -308,6 +308,7 @@ updated: 2026-03-07T16:41:33-08:00
 - [🤡🗣️📰🇺🇸 Jon Stewart's Post-Kimmel Primer on Free Speech in the Glorious Trump Era | The Daily Show](./jon-stewarts-post-kimmel-primer-on-free-speech-in-the-glorious-trump-era-the-daily-show.md)  
 - [Judea Pearl, 2011 ACM Turing Award Recipient](./judea-pearl-2011-acm-turing-award-recipient.md)  
 - [⚙️❓🤖 Judea Pearl, 2012 ACM A.M. Turing Award Lecture «The Mechanization of Causal Inference»](./judea-pearl-2012-acm-a-m-turing-award-lecture-the-mechanization-of-causal-inference.md)  
+- [💥🇮🇷💰 Justin Wolfers Breaks Down the Potential Economic Consequences of War With Iran](./justin-wolfers-breaks-down-the-potential-economic-consequences-of-war-with-iran.md)  
 - [Just the Facts About the US Federal Budget: Steve Ballmer Talks Through the Numbers](./just-the-facts-about-the-us-federal-budget-steve-ballmer-talks-through-the-numbers.md)  
 - [👩‍💻👑🦆 Kara Swisher: Tech, Power, and Why You Should Get the F*cking Duck](./kara-swisher-tech-power-and-why-you-should-get-the-fcking-duck.md)  
 - [🗣️💬🧠 Language Acquisition: Crash Course Linguistics  > 12](./language-acquisition-crash-course-linguistics-12.md)  

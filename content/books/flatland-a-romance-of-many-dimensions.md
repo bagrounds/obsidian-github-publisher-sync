@@ -45,7 +45,7 @@ affiliate link: https://amzn.to/45SL4Mu
 ### ➖ Contrasting Books  
   
 * 🐛 **The Metamorphosis** by Franz Kafka: While Flatland uses abstract dimensions and social satire, The Metamorphosis grounds its unsettling premise in a hyper-realistic, albeit surreal, physical transformation within a fixed three-dimensional space. 👽 It contrasts Flatland's allegorical societal critique with a deeply personal and psychological exploration of alienation, family dysfunction, and the bizarre within the mundane.  
-* 🧠 **Flowers for Algernon** by Daniel Keyes: Flatland focuses on intellectual and dimensional enlightenment through abstract geometric principles. 😭 In contrast, Flowers for Algernon explores the complexities of intelligence and perception through the deeply human, emotional, and cognitive journey of Charlie Gordon, whose intellectual abilities rapidly increase and then decline. 💡 This offers a profound contrast to Flatland's abstract, almost detached, intellectual awakening.  
+* 🧠 Flowers for Algernon by Daniel Keyes: Flatland focuses on intellectual and dimensional enlightenment through abstract geometric principles. 😭 In contrast, Flowers for Algernon explores the complexities of intelligence and perception through the deeply human, emotional, and cognitive journey of Charlie Gordon, whose intellectual abilities rapidly increase and then decline. 💡 This offers a profound contrast to Flatland's abstract, almost detached, intellectual awakening.  
   
 ### 💡 Creatively Related Books  
   

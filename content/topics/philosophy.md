@@ -27,7 +27,7 @@ Here are some major subcategories of Philosophy:
 **Book Recommendations:**  
 Here are some influential and accessible books to get you started on your philosophical journey:  
   
-1.  **"Sophie's World" by Jostein Gaarder:** A novel that introduces the history of philosophy through a young girl's correspondence with a mysterious philosopher. It's a fantastic and engaging way to learn about key philosophical concepts and figures. 📖✨  
+1.  **[🤔🌍 Sophie’s World](../books/sophies-world.md) by Jostein Gaarder:** A novel that introduces the history of philosophy through a young girl's correspondence with a mysterious philosopher. It's a fantastic and engaging way to learn about key philosophical concepts and figures. 📖✨  
 2.  **[🤔🧘 Meditations](../books/meditations.md) by Marcus Aurelius:** A collection of personal reflections by the Roman emperor and Stoic philosopher. It offers timeless wisdom on how to live a virtuous and meaningful life. 🏛️📜  
 3.  **"Think: A Compelling Introduction to Philosophy" by Simon Blackburn:** A clear and comprehensive introduction to the major areas of philosophy, covering topics like knowledge, mind, free will, and ethics. 🧠🤔  
 4.  **"What Does It All Mean? A Very Short Introduction to Philosophy" by Thomas Nagel:** A concise and accessible overview of some of the central problems of philosophy, written in a clear and engaging style. ❓💡  

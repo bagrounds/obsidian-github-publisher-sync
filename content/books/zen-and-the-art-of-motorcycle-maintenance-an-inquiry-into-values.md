@@ -51,7 +51,7 @@ CTA: 🏍️ Explore quality.
 ### 💡 Creatively Related Books  
   
 * **[🧘🏹 Zen in the Art of Archery](./zen-in-the-art-of-archery.md)** by Eugen Herrigel. This classic work explores the philosophy of Zen Buddhism through the disciplined practice of Japanese archery, illustrating how dedication to a craft can lead to profound spiritual insights, resonating with Pirsig's use of motorcycle maintenance.  
-* 👧 **Sophie's World** by Jostein Gaarder. This novel blends a coming-of-age mystery with a comprehensive introduction to Western philosophy, making complex ideas accessible through a narrative, similar to how Pirsig presents philosophical concepts within a personal story.  
+* **[🤔🌍 Sophie’s World](./sophies-world.md)** by Jostein Gaarder. This novel blends a coming-of-age mystery with a comprehensive introduction to Western philosophy, making complex ideas accessible through a narrative, similar to how Pirsig presents philosophical concepts within a personal story.  
 * **[🔦💡 Man's Search for Meaning](./mans-search-for-meaning.md)** by Viktor Frankl. Frankl's memoir of his experiences in Nazi concentration camps explores the human capacity to find meaning even in suffering. While different in setting and tone, it shares with Pirsig's work a deep inquiry into the fundamental purpose of life and the human spirit's resilience.  
 * 🐻 **The Tao of Pooh** by Benjamin Hoff. This book offers a whimsical and accessible introduction to Taoist philosophy using the characters from Winnie the Pooh. Its lighthearted approach to profound concepts connects to Pirsig's aim of making philosophy relevant to everyday life, though with a different stylistic execution.  
   

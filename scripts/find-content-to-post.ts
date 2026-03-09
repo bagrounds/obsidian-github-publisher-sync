@@ -170,7 +170,12 @@ export function extractMarkdownLinks(
   }
 
   // 2. Obsidian wiki links: [[path]] or [[path|display text]] or [[path#heading]]
-  // The path portion comes before any # (heading) or | (display text).
+  // Regex breakdown:
+  //   \[\[           — opening [[
+  //   ([^\]|#]+)     — capture group 1: the link path (everything before #, |, or ]])
+  //   (?:#[^\]|]*)?  — optional heading anchor (after #, before | or ]])
+  //   (?:\|[^\]]+)?  — optional display text (after |, before ]])
+  //   \]\]           — closing ]]
   const wikiLinkRegex = /\[\[([^\]|#]+)(?:#[^\]|]*)?(?:\|[^\]]+)?\]\]/g;
   while ((match = wikiLinkRegex.exec(body)) !== null) {
     let target = (match[1] as string).trim();
@@ -413,7 +418,7 @@ export function bfsContentDiscovery(
   const queue: string[] = [...allReflections];
   const results: ContentToPost[] = [];
 
-  console.log(`🔍 Starting BFS from ${allReflections.length} reflections (most recent: ${allReflections[0]})`);
+  console.log(`🔍 Starting BFS from ${allReflections.length} reflections (most recent: ${allReflections[0] ?? "none"})`);
   console.log(
     `📋 Looking for content for: ${[...platformsNeedingContent].join(", ")}`,
   );

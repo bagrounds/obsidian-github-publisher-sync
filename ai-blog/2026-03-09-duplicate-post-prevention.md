@@ -121,29 +121,31 @@ This is a classic [distributed systems](https://en.wikipedia.org/wiki/Distribute
 
 ### Strategy: Use the Vault for Everything  
 
-The solution is simple: **don't read stale data**. The Obsidian vault is the single source of truth — so read all note content from it. Pull the vault once, use it for BFS discovery *and* posting decisions, then write back.  
+The solution has two parts:  
 
-The GitHub repo's `content/` directory is a one-way snapshot from Obsidian publishing — the pipeline never reads from it.  
+1. **Don't read stale data.** The Obsidian vault is the single source of truth — read all note content from it. The GitHub repo's `content/` directory is a one-way snapshot from Obsidian publishing — the pipeline never reads from it.  
+
+2. **Don't start from a single point.** The BFS content discovery was starting from just the most recent reflection. If that reflection was too recent to post or its links didn't resolve, the BFS terminated immediately — missing hundreds of unposted notes reachable from older reflections.  
 
 ### Before (Buggy Pipeline)  
 
 ```
-BFS reads repo → read repo → generate post → POST → await vault → write to vault  
-       ↑              ↑  
-    Both used stale repo data  
+BFS from 1 reflection → reads repo (markdown links only) → POST → write to vault  
+       ↑                        ↑  
+    Single entry point     Stale data + no wiki links  
 ```
 
 ### After (Fixed Pipeline)  
 
 ```
-vault pull → BFS reads vault → read note from vault → generate → POST → write to vault + push  
-                  ↑                     ↑  
-             Single source of truth  
+vault pull → BFS from ALL reflections (wiki + markdown links) → POST → write + push  
+                        ↑                        ↑  
+               Multiple entry points     Single source of truth  
 ```
 
-### The Key Insight  
+### The Key Insights  
 
-No merge logic is needed. No OR operators. No reconciliation of two sources. Just read from the right place. The vault pull is shared between BFS discovery (`auto-post.ts`) and posting (`tweet-reflection.ts`):  
+**Insight 1 — Single source of truth:** No merge logic is needed. No OR operators. No reconciliation of two sources. Just read from the vault. The vault pull is shared between BFS discovery (`auto-post.ts`) and posting (`tweet-reflection.ts`):  
 
 ```typescript
 // auto-post.ts: Pull vault once, use for everything
@@ -156,7 +158,25 @@ const contentToPost = discoverContentToPost({ contentDir: vaultDir, ... });
 await main({ note: notePath, vaultDir });
 ```
 
+**Insight 2 — Wiki link support:** The vault uses Obsidian's native `[[path]]` wiki links. The Enveloppe plugin converts these to `[text](path.md)` when publishing to the repo. The BFS now extracts *both* formats:  
+
+```typescript
+// Standard markdown links: [text](../path/to/file.md)
+const markdownLinkRegex = /\]\(([^)]+\.md)\)/g;
+
+// Obsidian wiki links: [[path]], [[path|text]], [[path#heading]]
+const wikiLinkRegex = /\[\[([^\]|#]+)(?:#[^\]|]*)?(?:\|[^\]]+)?\]\]/g;
+```
+
+**Insight 3 — Multiple BFS seeds:** Seeding from all reflections (sorted most recent first) means every reflection is a potential entry point into the content graph. Each reflection links to different books, videos, articles — so hundreds of notes become reachable instead of just one:  
+
+```typescript
+const allReflections = findAllReflections(contentDir);  // sorted most recent first
+const queue: string[] = [...allReflections];  // seed BFS with all of them
+```
+
 > 🧮 *The simplest fix for stale data is to stop reading stale data.*  
+> 🗺️ *The simplest fix for incomplete traversal is to start from more places.*  
 
 ## 🎯 Three Hypotheses  
 
@@ -182,7 +202,7 @@ Await the vault pull before posting, read vault content, OR-merge section flags 
 
 ## 🧪 Testing  
 
-8 new tests added (198 total, all passing):  
+23 new tests added (213 total, all passing):  
 
 📊 Test categories:  
 
@@ -190,17 +210,23 @@ Await the vault pull before posting, read vault content, OR-merge section flags 
 |----------|-------|-------------------|
 | Vault-only `readNote()` | 6 | Section detection, paths, missing files, field preservation |
 | Vault-repo divergence integration | 2 | The exact scenario that caused the duplicates |
+| Wiki link extraction | 8 | Path-based, display text, heading anchors, mixed formats, dedup |
+| `findAllReflections` | 4 | Sorted order, empty/missing directory, non-date file filtering |
+| Multi-reflection BFS | 3 | Multi-seed discovery, vault-format wiki links, posted-note traversal |
 
-🐛 The integration test titled **"stale repo misses vault sections — demonstrates the pre-fix bug"** explicitly demonstrates the bug — reading from the repo misses sections that the vault has.  
+🐛 The integration test titled **"stale repo misses vault sections — demonstrates the pre-fix bug"** explicitly demonstrates the original bug — reading from the repo misses sections that the vault has.  
+
+🔗 The multi-reflection seeding test verifies that unposted content reachable *only* from older reflections is discovered — the exact scenario the user reported.  
 
 > 🧪 *The most valuable test is the one that fails when the bug is present.*  
 
 ## 🛡️ Recommendations for Prevention  
 
 1. **📖 Single source of truth** — the pipeline now reads from the vault exclusively. Maintain this invariant for any future changes.  
-2. **🪵 Posting log** — maintain a separate JSON record of posts (platform, timestamp, note path) in the vault, independent of section headers.  
-3. **🚨 Divergence alerting** — if the vault write says "already exists" but the posting step just created new posts, that's a bug signal. Alert on it.  
-4. **🧪 Multi-run simulation tests** — test scenarios where the pipeline runs multiple times to catch regressions early.  
+2. **🗺️ Thorough traversal** — BFS seeds from all reflections and follows both markdown and wiki links. Any new link format should be added to `extractMarkdownLinks`.  
+3. **🪵 Posting log** — maintain a separate JSON record of posts (platform, timestamp, note path) in the vault, independent of section headers.  
+4. **🚨 Divergence alerting** — if the vault write says "already exists" but the posting step just created new posts, that's a bug signal. Alert on it.  
+5. **🧪 Multi-run simulation tests** — test scenarios where the pipeline runs multiple times to catch regressions early.  
 
 ## 🌐 Relevant Systems & Services  
 

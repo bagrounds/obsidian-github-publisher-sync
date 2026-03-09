@@ -1301,6 +1301,14 @@ export async function syncObsidianVault(credentials: {
     OBSIDIAN_AUTH_TOKEN: credentials.authToken,
   };
 
+  // ── Pre-setup cleanup ──────────────────────────────────────────────
+  // Kill any lingering processes and remove stale lock BEFORE sync-setup.
+  // Previous push (or a previous post's sync) may have left a daemon or
+  // lock. Cleaning before setup prevents sync-setup from conflicting
+  // with stale state.
+  // @see https://github.com/obsidianmd/obsidian-headless/issues/4
+  await ensureSyncClean(vaultDir);
+
   // Set up the vault for syncing
   const setupArgs = [
     "sync-setup",
@@ -1316,13 +1324,13 @@ export async function syncObsidianVault(credentials: {
   console.log(`🔧 Setting up Obsidian Sync for vault: ${credentials.vaultName}`);
   await runObCommand(setupArgs, { env });
 
-  // Kill lingering processes and remove stale lock left by sync-setup.
-  // sync-setup may leave orphan child processes that hold the lock.
-  // @see https://github.com/obsidianmd/obsidian-headless/issues/4
-  await ensureSyncClean(vaultDir);
+  // NOTE: Do NOT call ensureSyncClean between sync-setup and sync.
+  // sync-setup may spawn a daemon that `ob sync` needs to communicate with.
+  // Killing it here would cause "Another sync instance" on the next sync.
+  // The pre-setup cleanup above handles stale state from previous runs.
 
   // Pull latest content with retry on lock contention.
-  // Uses exponential backoff: 1s, 2s, 4s between retries.
+  // Uses exponential backoff: 2s, 4s, 8s, 16s, 32s between retries.
   console.log(`📥 Pulling latest vault content...`);
   await runObSyncWithRetry(["sync", "--path", vaultDir], { env }, vaultDir);
 
@@ -1331,15 +1339,19 @@ export async function syncObsidianVault(credentials: {
 
 /**
  * Run an `ob sync` command with retry logic for lock contention.
- * Retries up to 3 times with exponential backoff (1s, 2s, 4s) when
+ * Retries up to 5 times with exponential backoff (2s, 4s, 8s, 16s, 32s) when
  * "Another sync instance is already running" is detected.
  * Each retry cleans up lingering processes and removes the lock file.
+ *
+ * The generous retry budget accounts for the intermittent nature of the
+ * lock contention: `ob` child processes may take variable time to fully
+ * release the lock after termination, especially under CI load.
  */
-async function runObSyncWithRetry(
+export async function runObSyncWithRetry(
   args: string[],
   options: { env?: Record<string, string> },
   vaultDir: string,
-  maxRetries = 3,
+  maxRetries = 5,
 ): Promise<void> {
   for (let attempt = 0; attempt <= maxRetries; attempt++) {
     try {
@@ -1348,7 +1360,7 @@ async function runObSyncWithRetry(
     } catch (error) {
       const msg = error instanceof Error ? error.message : String(error);
       if (msg.includes("Another sync instance") && attempt < maxRetries) {
-        const delayMs = 1000 * 2 ** attempt; // 1s, 2s, 4s
+        const delayMs = 2000 * 2 ** attempt; // 2s, 4s, 8s, 16s, 32s
         console.warn(
           `  ⚠️ Sync lock contention (retry ${attempt + 1}/${maxRetries}), ` +
           `cleaning up and retrying in ${delayMs / 1000}s...`,
@@ -1371,7 +1383,7 @@ async function runObSyncWithRetry(
  *
  * @see https://github.com/obsidianmd/obsidian-headless/issues/4
  */
-function removeSyncLock(vaultDir: string): void {
+export function removeSyncLock(vaultDir: string): void {
   const lockPath = path.join(vaultDir, ".obsidian", ".sync.lock");
   if (fs.existsSync(lockPath)) {
     console.log(`🔓 Removing stale .sync.lock from vault`);
@@ -1422,19 +1434,61 @@ function removeSyncLock(vaultDir: string): void {
  *    can match on `obsidian-headless`. Also escalate to SIGKILL if
  *    SIGTERM doesn't terminate the process within 1 second.
  *
+ * ## 5 Whys — Obsidian sync lock failure (3rd investigation, 2026-03-09)
+ *
+ * 1. **Why does the error still occur intermittently despite the 2nd fix?**
+ *    When auto-post processes multiple posts, each `main()` call runs
+ *    `sync-setup` → `sync` (pull) → post → `sync` (push). The push
+ *    from post N may leave a daemon/lock, and post N+1 starts immediately.
+ *
+ * 2. **Why doesn't `ensureSyncClean` between sync-setup and sync help?**
+ *    Because it was placed AFTER `sync-setup`, which spawns a daemon that
+ *    `sync` needs. Killing that daemon (or disturbing its lock state)
+ *    between setup and sync creates the very error we're trying to prevent.
+ *
+ * 3. **Why is it intermittent (works sometimes, fails other times)?**
+ *    Race condition: timing determines whether the daemon has fully
+ *    started when cleanup runs. Under CI load, timing varies per run.
+ *
+ * 4. **Why didn't broader process detection solve it?**
+ *    The daemon may use a process name that doesn't match `obsidian-headless`
+ *    (e.g., `MainThread`, bare `node`, or a detached worker).
+ *
+ * 5. **What is the root fix?**
+ *    (a) Move cleanup to BEFORE sync-setup (not after) so the daemon
+ *        sync-setup creates is preserved for sync to use.
+ *    (b) Add post-push cleanup with settling delay so the next post
+ *        starts with clean vault state.
+ *    (c) Broaden process detection to also match vault paths.
+ *    (d) Increase retry budget (5 retries, 2–32s backoff) for resilience.
+ *
  * @see https://github.com/obsidianmd/obsidian-headless/issues/4
  * @see https://help.obsidian.md/sync/headless
  */
-async function killObProcesses(): Promise<void> {
+export async function killObProcesses(vaultDir?: string): Promise<void> {
   try {
     // Find obsidian-headless processes owned by the current user.
     // Uses `ps -o pid,args` to get the FULL command line (not just the short
     // command name). This correctly identifies `ob` processes even though they
     // run as `node /path/to/obsidian-headless/cli.js ...`.
+    //
+    // We match multiple patterns to catch different process incarnations:
+    //   - `obsidian-headless`: the npm package name in the script path
+    //   - vault path: any process operating on our specific vault directory
+    // This handles cases where daemon children use unexpected process names.
+    const patterns = ["obsidian-headless"];
+    if (vaultDir) {
+      // Escape all regex-special characters for grep -E
+      patterns.push(vaultDir.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"));
+    }
+    const grepPattern = patterns.join("|");
     const { stdout } = await execAsync(
-      "ps -u $(id -u) -o pid,args | grep 'obsidian-headless' | grep -v grep | awk '{print $1}'",
+      `ps -u $(id -u) -o pid,args | grep -E '${grepPattern}' | grep -v grep | grep -v $$ | awk '{print $1}'`,
     );
-    const pids = stdout.trim().split("\n").filter(Boolean);
+    const pids = stdout.trim().split("\n").filter(Boolean).filter(
+      // Exclude our own process
+      (pid) => parseInt(pid, 10) !== process.pid,
+    );
     if (pids.length === 0) return;
 
     console.log(`🔪 Killing ${pids.length} lingering ob process(es): ${pids.join(", ")}`);
@@ -1450,8 +1504,8 @@ async function killObProcesses(): Promise<void> {
       }
     }
 
-    // Wait up to 1s for graceful termination, checking every 200ms
-    for (let i = 0; i < 5; i++) {
+    // Wait up to 2s for graceful termination, checking every 200ms
+    for (let i = 0; i < 10; i++) {
       await new Promise((resolve) => setTimeout(resolve, 200));
       const allDead = pids.every((pid) => {
         try {
@@ -1475,7 +1529,7 @@ async function killObProcesses(): Promise<void> {
       }
     }
     // Brief wait for SIGKILL to take effect
-    await new Promise((resolve) => setTimeout(resolve, 200));
+    await new Promise((resolve) => setTimeout(resolve, 500));
   } catch {
     // ps/grep may fail if no processes found — that's fine
   }
@@ -1485,13 +1539,14 @@ async function killObProcesses(): Promise<void> {
  * Ensure no sync lock or lingering process blocks the next `ob sync`.
  * Combines lock file removal with process cleanup for maximum reliability.
  */
-async function ensureSyncClean(vaultDir: string): Promise<void> {
-  await killObProcesses();
+export async function ensureSyncClean(vaultDir: string): Promise<void> {
+  await killObProcesses(vaultDir);
   removeSyncLock(vaultDir);
 }
 
 /**
  * Push local changes back to the Obsidian vault via Headless Sync.
+ * Includes post-push cleanup to prevent lock contention for subsequent syncs.
  */
 export async function pushObsidianVault(
   vaultDir: string,
@@ -1506,6 +1561,13 @@ export async function pushObsidianVault(
 
   console.log(`📤 Pushing changes to Obsidian Sync...`);
   await runObSyncWithRetry(["sync", "--path", vaultDir], { env }, vaultDir);
+
+  // Post-push cleanup: the `ob sync` push may leave daemon processes that
+  // hold the lock. Clean up immediately so the next pipeline iteration
+  // (if auto-post is processing multiple items) starts with a clean slate.
+  // The settling delay gives child processes time to fully exit.
+  await new Promise((resolve) => setTimeout(resolve, 1000));
+  await ensureSyncClean(vaultDir);
 }
 
 /**

@@ -18,7 +18,6 @@ import {
   readContentNote,
   isPostableContent,
   findMostRecentReflection,
-  findAllReflections,
   getPriorDayReflectionIfNeeded,
   bfsContentDiscovery,
   discoverContentToPost,
@@ -503,51 +502,6 @@ describe("findMostRecentReflection", () => {
   });
 });
 
-describe("findAllReflections", () => {
-  let tempDir: string;
-
-  beforeEach(() => {
-    tempDir = createTempDir();
-  });
-
-  afterEach(() => {
-    cleanupTempDir(tempDir);
-  });
-
-  test("returns all reflections sorted most recent first", () => {
-    writeNote(tempDir, "reflections/2026-03-06.md", "---\ntitle: A\n---\nContent.");
-    writeNote(tempDir, "reflections/2026-03-08.md", "---\ntitle: C\n---\nContent.");
-    writeNote(tempDir, "reflections/2026-03-07.md", "---\ntitle: B\n---\nContent.");
-
-    const result = findAllReflections(tempDir);
-    assert.equal(result.length, 3);
-    assert.equal(result[0], "reflections/2026-03-08.md");
-    assert.equal(result[1], "reflections/2026-03-07.md");
-    assert.equal(result[2], "reflections/2026-03-06.md");
-  });
-
-  test("returns empty array when no reflections exist", () => {
-    fs.mkdirSync(path.join(tempDir, "reflections"), { recursive: true });
-    const result = findAllReflections(tempDir);
-    assert.equal(result.length, 0);
-  });
-
-  test("returns empty array when reflections directory doesn't exist", () => {
-    const result = findAllReflections(tempDir);
-    assert.equal(result.length, 0);
-  });
-
-  test("ignores non-date files", () => {
-    writeNote(tempDir, "reflections/index.md", "---\ntitle: Index\n---\nIndex.");
-    writeNote(tempDir, "reflections/2026-03-06.md", "---\ntitle: A\n---\nContent.");
-    writeNote(tempDir, "reflections/notes.md", "---\ntitle: Notes\n---\nNotes.");
-
-    const result = findAllReflections(tempDir);
-    assert.equal(result.length, 1);
-    assert.equal(result[0], "reflections/2026-03-06.md");
-  });
-});
-
 describe("getPriorDayReflectionIfNeeded", () => {
   let tempDir: string;
 
@@ -913,15 +867,17 @@ A book that is linked from today's reflection and has plenty of content.`);
     assert.equal(results[0]!.platform, "twitter");
   });
 
-  test("seeds BFS from all reflections, not just the most recent", () => {
-    // Most recent reflection links to book-a (already posted)
+  test("traverses reflection linked list via wiki links to find unposted content", () => {
+    // Most recent reflection links to previous via wiki link (doubly linked list).
+    // The previous reflection links to an unposted book.
+    // BFS should follow the chain: 2026-03-08 → 2026-03-07 → 2026-03-06 → book-b
     writeNote(tempDir, "reflections/2026-03-08.md", `---
 title: 2026-03-08 | Recent
 URL: https://bagrounds.org/reflections/2026-03-08
 ---
-[Home](../index.md)
 # 2026-03-08 | Recent Reflection
-Content with a link to [Book A](../books/book-a.md).
+Content with a link to [[books/book-a|Book A]].
+Navigation: [[reflections/2026-03-07|⏮️]]
 
 ## 🐦 Tweet
 <blockquote>tweet</blockquote>
@@ -936,7 +892,6 @@ Content with a link to [Book A](../books/book-a.md).
 title: Book A
 URL: https://bagrounds.org/books/book-a
 ---
-[Home](../index.md)
 # Book A
 A book that has been posted everywhere already.
 
@@ -949,14 +904,29 @@ A book that has been posted everywhere already.
 ## 🐘 Mastodon
 <iframe>embed</iframe>`);
 
-    // Older reflection links to book-b (NOT posted)
+    writeNote(tempDir, "reflections/2026-03-07.md", `---
+title: 2026-03-07 | Middle
+URL: https://bagrounds.org/reflections/2026-03-07
+---
+# 2026-03-07 | Middle Reflection
+Navigation: [[reflections/2026-03-08|⏭️]] [[reflections/2026-03-06|⏮️]]
+
+## 🐦 Tweet
+<blockquote>tweet</blockquote>
+
+## 🦋 Bluesky
+<blockquote>post</blockquote>
+
+## 🐘 Mastodon
+<iframe>embed</iframe>`);
+
     writeNote(tempDir, "reflections/2026-03-06.md", `---
 title: 2026-03-06 | Older
 URL: https://bagrounds.org/reflections/2026-03-06
 ---
-[Home](../index.md)
 # 2026-03-06 | Older Reflection
-Content with a link to [Book B](../books/book-b.md).
+Content with a link to [[books/book-b|Book B]].
+Navigation: [[reflections/2026-03-07|⏭️]]
 
 ## 🐦 Tweet
 <blockquote>tweet</blockquote>
@@ -971,9 +941,8 @@ Content with a link to [Book B](../books/book-b.md).
 title: Book B
 URL: https://bagrounds.org/books/book-b
 ---
-[Home](../index.md)
 # Book B
-An unposted book only reachable from an older reflection with great content.`);
+An unposted book only reachable by traversing the reflection linked list.`);
 
     const config: FindContentConfig = {
       contentDir: tempDir,
@@ -982,8 +951,7 @@ An unposted book only reachable from an older reflection with great content.`);
     };
 
     const results = bfsContentDiscovery(config);
-    // Book B is only reachable from the older reflection.
-    // With multi-reflection seeding, BFS should find it.
+    // BFS starts at 2026-03-08 → follows wiki link to 2026-03-07 → follows to 2026-03-06 → finds book-b
     assert.equal(results.length, 1);
     assert.equal(results[0]!.note.relativePath, "books/book-b.md");
   });

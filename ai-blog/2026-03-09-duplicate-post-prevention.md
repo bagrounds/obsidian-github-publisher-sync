@@ -125,7 +125,7 @@ The solution has two parts:
 
 1. **Don't read stale data.** The Obsidian vault is the single source of truth — read all note content from it. The GitHub repo's `content/` directory is a one-way snapshot from Obsidian publishing — the pipeline never reads from it.  
 
-2. **Don't start from a single point.** The BFS content discovery was starting from just the most recent reflection. If that reflection was too recent to post or its links didn't resolve, the BFS terminated immediately — missing hundreds of unposted notes reachable from older reflections.  
+2. **Follow wiki links.** The BFS couldn't follow links in vault content because it only matched `[text](path.md)` markdown links. The vault uses Obsidian's native `[[path]]` wiki links. Adding wiki link support lets the BFS traverse the full content graph — including the doubly linked list of reflections that connects all content.  
 
 ### Before (Buggy Pipeline)  
 
@@ -138,9 +138,9 @@ BFS from 1 reflection → reads repo (markdown links only) → POST → write to
 ### After (Fixed Pipeline)  
 
 ```
-vault pull → BFS from ALL reflections (wiki + markdown links) → POST → write + push  
-                        ↑                        ↑  
-               Multiple entry points     Single source of truth  
+vault pull → BFS from most recent reflection (wiki + markdown links) → POST → write + push  
+                        ↑                            ↑  
+              Follows linked list          Single source of truth  
 ```
 
 ### The Key Insights  
@@ -168,15 +168,16 @@ const markdownLinkRegex = /\]\(([^)]+\.md)\)/g;
 const wikiLinkRegex = /\[\[([^\]|#]+)(?:#[^\]|]*)?(?:\|[^\]]+)?\]\]/g;
 ```
 
-**Insight 3 — Multiple BFS seeds:** Seeding from all reflections (sorted most recent first) means every reflection is a potential entry point into the content graph. Each reflection links to different books, videos, articles — so hundreds of notes become reachable instead of just one:  
+**Insight 3 — Reflections form a doubly linked list.** Each reflection links to the previous and next day via wiki links (`[[2026-03-07|⏮️]]`, `[[2026-03-09|⏭️]]`). Once the BFS can follow wiki links, starting from a single reflection is sufficient — the BFS naturally traverses the full chain and discovers all content linked from any reflection:  
 
-```typescript
-const allReflections = findAllReflections(contentDir);  // sorted most recent first
-const queue: string[] = [...allReflections];  // seed BFS with all of them
+```
+2026-03-09 ←→ 2026-03-08 ←→ 2026-03-07 ←→ ... ←→ 2024-12-01
+     ↓              ↓              ↓                    ↓
+  books/...      books/...     videos/...           articles/...
 ```
 
 > 🧮 *The simplest fix for stale data is to stop reading stale data.*  
-> 🗺️ *The simplest fix for incomplete traversal is to start from more places.*  
+> 🔗 *The simplest fix for incomplete traversal is to follow all the links.*  
 
 ## 🎯 Three Hypotheses  
 
@@ -202,7 +203,7 @@ Await the vault pull before posting, read vault content, OR-merge section flags 
 
 ## 🧪 Testing  
 
-23 new tests added (213 total, all passing):  
+19 new tests added (209 total, all passing):  
 
 📊 Test categories:  
 
@@ -211,19 +212,18 @@ Await the vault pull before posting, read vault content, OR-merge section flags 
 | Vault-only `readNote()` | 6 | Section detection, paths, missing files, field preservation |
 | Vault-repo divergence integration | 2 | The exact scenario that caused the duplicates |
 | Wiki link extraction | 8 | Path-based, display text, heading anchors, mixed formats, dedup |
-| `findAllReflections` | 4 | Sorted order, empty/missing directory, non-date file filtering |
-| Multi-reflection BFS | 3 | Multi-seed discovery, vault-format wiki links, posted-note traversal |
+| BFS linked-list traversal | 3 | Wiki-link chain traversal, vault format discovery, posted-note link following |
 
 🐛 The integration test titled **"stale repo misses vault sections — demonstrates the pre-fix bug"** explicitly demonstrates the original bug — reading from the repo misses sections that the vault has.  
 
-🔗 The multi-reflection seeding test verifies that unposted content reachable *only* from older reflections is discovered — the exact scenario the user reported.  
+🔗 The linked-list traversal test verifies that unposted content reachable through the reflection chain (via wiki links) is discovered from a single seed — the exact architecture that makes multi-seeding unnecessary.  
 
 > 🧪 *The most valuable test is the one that fails when the bug is present.*  
 
 ## 🛡️ Recommendations for Prevention  
 
 1. **📖 Single source of truth** — the pipeline now reads from the vault exclusively. Maintain this invariant for any future changes.  
-2. **🗺️ Thorough traversal** — BFS seeds from all reflections and follows both markdown and wiki links. Any new link format should be added to `extractMarkdownLinks`.  
+2. **🔗 Link format support** — BFS follows both markdown and wiki links. Reflections form a doubly linked list, so a single seed reaches the full content graph. Any new link format should be added to `extractMarkdownLinks`.  
 3. **🪵 Posting log** — maintain a separate JSON record of posts (platform, timestamp, note path) in the vault, independent of section headers.  
 4. **🚨 Divergence alerting** — if the vault write says "already exists" but the posting step just created new posts, that's a bug signal. Alert on it.  
 5. **🧪 Multi-run simulation tests** — test scenarios where the pipeline runs multiple times to catch regressions early.  

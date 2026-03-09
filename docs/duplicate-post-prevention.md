@@ -62,39 +62,29 @@ BFS reads repo (single reflection) → read repo → generate post → POST → 
 ### After (Fixed)
 
 ```
-vault pull → BFS from ALL reflections → read note from vault → generate → POST → write + push
-                  ↑                            ↑
-        wiki + markdown links       Single source of truth
+vault pull → BFS from most recent reflection (wiki + markdown links) → POST → write + push
+                        ↑                            ↑
+              Follows linked list          Single source of truth
 ```
 
-### BFS Improvements
+### BFS Improvement: Wiki Link Support
 
-The BFS was visiting only 1 note because:
+The BFS was visiting only 1 note because it couldn't follow links in vault content.
+The vault (Obsidian's native format) uses `[[path]]` wiki links, but the BFS regex
+only matched `[text](path.md)` markdown links (the Enveloppe-published format).
 
-1. **Single-reflection seed:** It started from only the most recent reflection.
-   If that reflection was too recent to post (time guard) and had no resolvable
-   outgoing links, the BFS terminated immediately — missing hundreds of unposted notes
-   reachable from older reflections.
+**Fix:** Extract both `[text](path.md)` markdown links AND `[[path]]`, `[[path|text]]`,
+`[[path#heading]]` Obsidian wiki links.
 
-2. **No wiki link support:** The vault (Obsidian's native format) uses `[[path]]` wiki links.
-   The Enveloppe plugin converts these to `[text](path.md)` when publishing to the repo.
-   The BFS regex only matched markdown links, so it couldn't follow links in vault content.
-
-**Fixes:**
-- Seed the BFS queue with **all reflections** (sorted most recent first).
-  Each reflection links to different content, so multiple entry points
-  ensure thorough coverage of the content graph.
-- Extract both `[text](path.md)` markdown links AND `[[path]]`, `[[path|text]]`,
-  `[[path#heading]]` Obsidian wiki links.
+Since reflections form a doubly linked list (each links to previous/next via wiki links),
+BFS from the most recent reflection naturally traverses the full chain and reaches all
+content linked from any reflection. No multi-seed strategy is needed.
 
 ### Performance
 
 The vault pull is done once in `auto-post.ts` and shared with `main()` via the
 `vaultDir` parameter. This avoids redundant pulls when processing multiple notes.
 When `tweet-reflection.ts` is invoked directly, it pulls the vault itself.
-
-The BFS stops as soon as one unposted note is found per platform, so seeding from
-all reflections has minimal performance impact — the BFS terminates early.
 
 ## Hypotheses Considered
 
@@ -134,7 +124,7 @@ truth, just read from it directly.
 
 ## Testing
 
-213 tests total (all passing):
+209 tests total (all passing):
 
 ### Vault-only reading (8 tests)
 - 6 unit tests for `readNote()` with vault dir — section detection,
@@ -142,11 +132,10 @@ truth, just read from it directly.
 - 1 integration test demonstrating the pre-fix bug (stale repo misses vault sections)
 - 1 integration test for partial vault sections (only posted platforms detected)
 
-### BFS discovery improvements (15 new tests)
+### BFS discovery improvements (11 new tests)
 - 8 wiki link extraction tests — path-based, display text, heading anchors,
   `.md` extension handling, filename-only, mixed formats, deduplication
-- 4 `findAllReflections` tests — sorted order, empty directory, no directory, non-date files
-- 3 BFS multi-reflection and wiki-link content tests — multi-reflection seeding,
+- 3 BFS wiki-link content tests — linked-list traversal through reflections,
   vault format discovery, posted-note link traversal
 
 ## Recommendations for Future Prevention

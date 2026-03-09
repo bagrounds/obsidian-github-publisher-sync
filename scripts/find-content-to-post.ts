@@ -10,10 +10,14 @@
  * - Unix philosophy: one module, one job (find content to post)
  * - Domain-driven: models the note graph as a domain concept
  *
- * The BFS starts at the most recent reflection and follows markdown links
- * to discover connected notes. It skips index pages and the home page,
- * only returning pages with actual content that are missing social media
- * embeds for at least one configured platform.
+ * The BFS starts at the most recent reflection and follows both standard
+ * markdown links and Obsidian wiki links. Since reflections form a doubly
+ * linked list (each links to previous/next), the BFS naturally traverses
+ * the full chain of reflections and all content linked from them.
+ *
+ * It skips index pages and the home page, only returning pages with actual
+ * content that are missing social media embeds for at least one configured
+ * platform.
  *
  * @module find-content-to-post
  */
@@ -274,38 +278,29 @@ export function isPostableContent(note: ContentNote): boolean {
 /**
  * Find the most recent reflection file by scanning the reflections directory
  * for date-named files and returning the latest one.
+ *
+ * This is the single BFS seed — reflections form a doubly linked list
+ * (each links to previous/next via wiki links), so starting from the
+ * most recent reflection and following links eventually reaches all
+ * reflections and all content linked from them.
  */
 export function findMostRecentReflection(
   contentDir: string,
 ): string | null {
-  const all = findAllReflections(contentDir);
-  return all.length > 0 ? all[0]! : null;
-}
-
-/**
- * Find ALL reflection files in the reflections directory.
- * Returns date-named reflection paths sorted most recent first.
- *
- * Used to seed the BFS with multiple entry points into the content graph,
- * ensuring thorough discovery even when the most recent reflection has
- * limited outgoing links.
- */
-export function findAllReflections(
-  contentDir: string,
-): readonly string[] {
   const reflectionsDir = path.join(contentDir, "reflections");
 
   if (!fs.existsSync(reflectionsDir)) {
-    return [];
+    return null;
   }
 
   const datePattern = /^\d{4}-\d{2}-\d{2}\.md$/;
-  return fs
+  const files = fs
     .readdirSync(reflectionsDir)
     .filter((f) => datePattern.test(f))
     .sort()
-    .reverse()
-    .map((f) => `reflections/${f}`);
+    .reverse();
+
+  return files.length > 0 ? `reflections/${files[0]}` : null;
 }
 
 /**
@@ -377,10 +372,11 @@ export function getPriorDayReflectionIfNeeded(
  * Breadth-first search across the content graph to find notes that
  * haven't been posted to all configured platforms.
  *
- * Seeds the BFS from ALL reflections (sorted most recent first) to ensure
- * thorough coverage of the content graph. Each reflection links to different
- * content (books, videos, articles, etc.), so using all reflections as entry
- * points maximizes the chance of discovering unposted content.
+ * Seeds the BFS from the most recent reflection. Since reflections form
+ * a doubly linked list (each links to previous/next via wiki links),
+ * the BFS naturally traverses the full chain. Each reflection also links
+ * to the content consumed that day (books, videos, articles, etc.),
+ * so the BFS covers the full content graph from a single entry point.
  *
  * The BFS follows both standard markdown links and Obsidian wiki links,
  * ensuring it works whether reading from the vault (wiki links) or the
@@ -400,12 +396,12 @@ export function bfsContentDiscovery(
   const { contentDir, platforms } = config;
   const postingHourUTC = config.postingHourUTC ?? 17;
 
-  // Seed from ALL reflections (sorted most recent first) for thorough coverage.
-  // Starting from just the most recent reflection misses content linked only
-  // from older reflections. Each reflection links to the content consumed that
-  // day, so seeding all reflections covers the full content graph.
-  const allReflections = findAllReflections(contentDir);
-  if (allReflections.length === 0) {
+  // Seed from the most recent reflection.
+  // Reflections form a doubly linked list (each links to previous/next),
+  // so starting from the most recent and following wiki links reaches
+  // all reflections and all content linked from them.
+  const startPath = findMostRecentReflection(contentDir);
+  if (!startPath) {
     console.log("📭 No reflections found to start BFS from");
     return [];
   }
@@ -413,12 +409,12 @@ export function bfsContentDiscovery(
   // Track which platforms still need a post
   const platformsNeedingContent = new Set<Platform>(platforms);
 
-  // BFS state — seed the queue with all reflections
+  // BFS state
   const visited = new Set<string>();
-  const queue: string[] = [...allReflections];
+  const queue: string[] = [startPath];
   const results: ContentToPost[] = [];
 
-  console.log(`🔍 Starting BFS from ${allReflections.length} reflections (most recent: ${allReflections[0] ?? "none"})`);
+  console.log(`🔍 Starting BFS from: ${startPath}`);
   console.log(
     `📋 Looking for content for: ${[...platformsNeedingContent].join(", ")}`,
   );
@@ -494,6 +490,7 @@ export function bfsContentDiscovery(
  * Strategy:
  * 1. If the prior day's reflection hasn't been posted, return that for all platforms.
  * 2. Otherwise, use BFS from the most recent reflection to find unposted content.
+ *    (Reflections form a doubly linked list, so BFS from the latest reaches all content.)
  * 3. Returns at most one note per platform.
  *
  * @param config - Content directory and platforms to discover for

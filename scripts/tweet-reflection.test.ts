@@ -34,6 +34,7 @@ import {
   killObProcesses,
   ensureSyncClean,
   runObSyncWithRetry,
+  isPlatformDisabled,
   type ReflectionData,
 } from "./tweet-reflection.ts";
 
@@ -664,6 +665,186 @@ describe("validateEnvironment", () => {
     assert.ok(env.mastodon);
     assert.equal(env.mastodon.instanceUrl, "https://mastodon.social");
     assert.equal(env.mastodon.accessToken, "test-mastodon-token");
+  });
+
+  test("returns null twitter when DISABLE_TWITTER is set to 'true'", () => {
+    process.env.TWITTER_API_KEY = "test-key";
+    process.env.TWITTER_API_SECRET = "test-secret";
+    process.env.TWITTER_ACCESS_TOKEN = "test-token";
+    process.env.TWITTER_ACCESS_SECRET = "test-access-secret";
+    process.env.GEMINI_API_KEY = "g";
+    process.env.OBSIDIAN_AUTH_TOKEN = "token";
+    process.env.OBSIDIAN_VAULT_NAME = "vault";
+    process.env.DISABLE_TWITTER = "true";
+
+    const env = validateEnvironment();
+    assert.equal(env.twitter, null);
+  });
+
+  test("returns null bluesky when DISABLE_BLUESKY is set to '1'", () => {
+    process.env.BLUESKY_IDENTIFIER = "test.bsky.social";
+    process.env.BLUESKY_APP_PASSWORD = "test-bsky-password";
+    process.env.GEMINI_API_KEY = "g";
+    process.env.OBSIDIAN_AUTH_TOKEN = "token";
+    process.env.OBSIDIAN_VAULT_NAME = "vault";
+    process.env.DISABLE_BLUESKY = "1";
+
+    const env = validateEnvironment();
+    assert.equal(env.bluesky, null);
+  });
+
+  test("returns null mastodon when DISABLE_MASTODON is set to 'yes'", () => {
+    process.env.MASTODON_INSTANCE_URL = "https://mastodon.social";
+    process.env.MASTODON_ACCESS_TOKEN = "test-mastodon-token";
+    process.env.GEMINI_API_KEY = "g";
+    process.env.OBSIDIAN_AUTH_TOKEN = "token";
+    process.env.OBSIDIAN_VAULT_NAME = "vault";
+    process.env.DISABLE_MASTODON = "yes";
+
+    const env = validateEnvironment();
+    assert.equal(env.mastodon, null);
+  });
+
+  test("does not disable platform when DISABLE_ var is empty string", () => {
+    process.env.TWITTER_API_KEY = "test-key";
+    process.env.TWITTER_API_SECRET = "test-secret";
+    process.env.TWITTER_ACCESS_TOKEN = "test-token";
+    process.env.TWITTER_ACCESS_SECRET = "test-access-secret";
+    process.env.GEMINI_API_KEY = "g";
+    process.env.OBSIDIAN_AUTH_TOKEN = "token";
+    process.env.OBSIDIAN_VAULT_NAME = "vault";
+    process.env.DISABLE_TWITTER = "";
+
+    const env = validateEnvironment();
+    assert.ok(env.twitter);
+    assert.equal(env.twitter.apiKey, "test-key");
+  });
+
+  test("does not disable platform when DISABLE_ var is 'false'", () => {
+    process.env.BLUESKY_IDENTIFIER = "test.bsky.social";
+    process.env.BLUESKY_APP_PASSWORD = "test-bsky-password";
+    process.env.GEMINI_API_KEY = "g";
+    process.env.OBSIDIAN_AUTH_TOKEN = "token";
+    process.env.OBSIDIAN_VAULT_NAME = "vault";
+    process.env.DISABLE_BLUESKY = "false";
+
+    const env = validateEnvironment();
+    assert.ok(env.bluesky);
+    assert.equal(env.bluesky.identifier, "test.bsky.social");
+  });
+
+  test("DISABLE_ var is case-insensitive", () => {
+    process.env.MASTODON_INSTANCE_URL = "https://mastodon.social";
+    process.env.MASTODON_ACCESS_TOKEN = "test-mastodon-token";
+    process.env.GEMINI_API_KEY = "g";
+    process.env.OBSIDIAN_AUTH_TOKEN = "token";
+    process.env.OBSIDIAN_VAULT_NAME = "vault";
+    process.env.DISABLE_MASTODON = "TRUE";
+
+    const env = validateEnvironment();
+    assert.equal(env.mastodon, null);
+  });
+
+  test("can disable all platforms simultaneously", () => {
+    process.env.TWITTER_API_KEY = "test-key";
+    process.env.TWITTER_API_SECRET = "test-secret";
+    process.env.TWITTER_ACCESS_TOKEN = "test-token";
+    process.env.TWITTER_ACCESS_SECRET = "test-access-secret";
+    process.env.BLUESKY_IDENTIFIER = "test.bsky.social";
+    process.env.BLUESKY_APP_PASSWORD = "test-bsky-password";
+    process.env.MASTODON_INSTANCE_URL = "https://mastodon.social";
+    process.env.MASTODON_ACCESS_TOKEN = "test-mastodon-token";
+    process.env.GEMINI_API_KEY = "g";
+    process.env.OBSIDIAN_AUTH_TOKEN = "token";
+    process.env.OBSIDIAN_VAULT_NAME = "vault";
+    process.env.DISABLE_TWITTER = "true";
+    process.env.DISABLE_BLUESKY = "true";
+    process.env.DISABLE_MASTODON = "true";
+
+    const env = validateEnvironment();
+    assert.equal(env.twitter, null);
+    assert.equal(env.bluesky, null);
+    assert.equal(env.mastodon, null);
+  });
+});
+
+// --- isPlatformDisabled Tests ---
+
+describe("isPlatformDisabled", () => {
+  const originalEnv = { ...process.env };
+
+  afterEach(() => {
+    for (const key of Object.keys(process.env)) {
+      if (!(key in originalEnv)) {
+        delete process.env[key];
+      }
+    }
+    Object.assign(process.env, originalEnv);
+  });
+
+  test("returns false when env var is not set", () => {
+    delete process.env.DISABLE_TWITTER;
+    assert.equal(isPlatformDisabled("DISABLE_TWITTER"), false);
+  });
+
+  test("returns false when env var is empty string", () => {
+    process.env.DISABLE_TWITTER = "";
+    assert.equal(isPlatformDisabled("DISABLE_TWITTER"), false);
+  });
+
+  test("returns true for 'true'", () => {
+    process.env.DISABLE_TWITTER = "true";
+    assert.equal(isPlatformDisabled("DISABLE_TWITTER"), true);
+  });
+
+  test("returns true for 'TRUE'", () => {
+    process.env.DISABLE_TWITTER = "TRUE";
+    assert.equal(isPlatformDisabled("DISABLE_TWITTER"), true);
+  });
+
+  test("returns true for 'True'", () => {
+    process.env.DISABLE_TWITTER = "True";
+    assert.equal(isPlatformDisabled("DISABLE_TWITTER"), true);
+  });
+
+  test("returns true for '1'", () => {
+    process.env.DISABLE_BLUESKY = "1";
+    assert.equal(isPlatformDisabled("DISABLE_BLUESKY"), true);
+  });
+
+  test("returns true for 'yes'", () => {
+    process.env.DISABLE_MASTODON = "yes";
+    assert.equal(isPlatformDisabled("DISABLE_MASTODON"), true);
+  });
+
+  test("returns true for 'YES'", () => {
+    process.env.DISABLE_MASTODON = "YES";
+    assert.equal(isPlatformDisabled("DISABLE_MASTODON"), true);
+  });
+
+  test("returns true for ' true ' (with whitespace)", () => {
+    process.env.DISABLE_TWITTER = " true ";
+    assert.equal(isPlatformDisabled("DISABLE_TWITTER"), true);
+  });
+
+  test("returns false for 'false'", () => {
+    process.env.DISABLE_TWITTER = "false";
+    assert.equal(isPlatformDisabled("DISABLE_TWITTER"), false);
+  });
+
+  test("returns false for '0'", () => {
+    process.env.DISABLE_TWITTER = "0";
+    assert.equal(isPlatformDisabled("DISABLE_TWITTER"), false);
+  });
+
+  test("returns false for 'no'", () => {
+    process.env.DISABLE_TWITTER = "no";
+    assert.equal(isPlatformDisabled("DISABLE_TWITTER"), false);
+  });
+
+  test("returns false for random string", () => {
+    process.env.DISABLE_TWITTER = "maybe";
+    assert.equal(isPlatformDisabled("DISABLE_TWITTER"), false);
   });
 });
 

@@ -80,6 +80,9 @@ jobs:
           OBSIDIAN_VAULT_NAME: ${{ secrets.OBSIDIAN_VAULT_NAME }}
           OBSIDIAN_VAULT_PASSWORD: ${{ secrets.OBSIDIAN_VAULT_PASSWORD }}
           OBSIDIAN_VAULT_CACHE_DIR: /tmp/obsidian-vault-cache
+          DISABLE_TWITTER: ${{ vars.DISABLE_TWITTER || '' }}
+          DISABLE_BLUESKY: ${{ vars.DISABLE_BLUESKY || '' }}
+          DISABLE_MASTODON: ${{ vars.DISABLE_MASTODON || '' }}
         run: |
           # If a specific note or date was provided via manual trigger, use tweet-reflection.ts directly
           if [ -n "${{ github.event.inputs.note }}" ] || [ -n "${{ github.event.inputs.date }}" ]; then

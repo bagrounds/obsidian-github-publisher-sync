@@ -433,14 +433,15 @@ export function fitPostToLimit(text: string, maxGraphemes: number): string {
   }
 
   // Strategy 3: Truncate content before URL
-  const urlWithNewline = "\n" + urlLine;
-  const urlGraphemes = countGraphemes(urlWithNewline);
-  const available = maxGraphemes - urlGraphemes;
+  // Reserve space for the newline separator and URL line
+  const separatorAndUrl = "\n" + urlLine;
+  const reservedGraphemes = countGraphemes(separatorAndUrl);
+  const available = maxGraphemes - reservedGraphemes;
 
   if (available > 1) {
     const contentText = contentLines.join("\n");
     const truncatedContent = truncateToGraphemeLimit(contentText, available);
-    return truncatedContent + "\n" + urlLine;
+    return truncatedContent + separatorAndUrl;
   }
 
   // Absolute last resort: truncate entire text

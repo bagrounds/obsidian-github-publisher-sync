@@ -498,7 +498,7 @@ describe("fitPostToLimit", () => {
 
   test("does not modify text that is exactly at the limit", () => {
     const url = "https://example.com";
-    const padding = "a".repeat(300 - countGraphemes(url) - 1); // -1 for newline
+    const padding = "a".repeat(300 - countGraphemes(url) - countGraphemes("\n"));
     const post = `${padding}\n${url}`;
     assert.equal(countGraphemes(post), 300);
     assert.equal(fitPostToLimit(post, 300), post);

@@ -1659,9 +1659,23 @@ function parseArgs(): { date: string; dryRun: boolean; note?: string } {
 }
 
 /**
+ * Check if a platform is explicitly disabled via an environment variable.
+ * Accepted truthy values: "true", "1", "yes" (case-insensitive).
+ */
+export function isPlatformDisabled(envVar: string): boolean {
+  const value = process.env[envVar]?.toLowerCase()?.trim();
+  return value === "true" || value === "1" || value === "yes";
+}
+
+/**
  * Validate that all required environment variables are set.
  * Twitter, Bluesky, and Mastodon credentials are optional — the script will attempt
- * each platform only if its credentials are present.
+ * each platform only if its credentials are present and the platform is not disabled.
+ *
+ * Platforms can be explicitly disabled via environment variables:
+ * - DISABLE_TWITTER=true  — skip Twitter even if credentials are set
+ * - DISABLE_BLUESKY=true  — skip Bluesky even if credentials are set
+ * - DISABLE_MASTODON=true — skip Mastodon even if credentials are set
  */
 export function validateEnvironment(): {
   twitter: {
@@ -1699,13 +1713,15 @@ export function validateEnvironment(): {
   }
 
   // Twitter credentials are optional — all 4 must be present to enable
+  // Can be explicitly disabled via DISABLE_TWITTER env var
   const twitterKeys = [
     "TWITTER_API_KEY",
     "TWITTER_API_SECRET",
     "TWITTER_ACCESS_TOKEN",
     "TWITTER_ACCESS_SECRET",
   ];
-  const hasTwitter = twitterKeys.every((key) => process.env[key]);
+  const twitterDisabled = isPlatformDisabled("DISABLE_TWITTER");
+  const hasTwitter = !twitterDisabled && twitterKeys.every((key) => process.env[key]);
   const twitter = hasTwitter
     ? {
         apiKey: process.env.TWITTER_API_KEY as string,
@@ -1714,26 +1730,39 @@ export function validateEnvironment(): {
         accessSecret: process.env.TWITTER_ACCESS_SECRET as string,
       }
     : null;
+  if (twitterDisabled) {
+    console.log(`🚫 Twitter disabled via DISABLE_TWITTER env var`);
+  }
 
   // Bluesky credentials are optional — both must be present to enable
+  // Can be explicitly disabled via DISABLE_BLUESKY env var
+  const blueskyDisabled = isPlatformDisabled("DISABLE_BLUESKY");
   const hasBluesky =
-    !!process.env.BLUESKY_IDENTIFIER && !!process.env.BLUESKY_APP_PASSWORD;
+    !blueskyDisabled && !!process.env.BLUESKY_IDENTIFIER && !!process.env.BLUESKY_APP_PASSWORD;
   const bluesky = hasBluesky
     ? {
         identifier: process.env.BLUESKY_IDENTIFIER as string,
         password: process.env.BLUESKY_APP_PASSWORD as string,
       }
     : null;
+  if (blueskyDisabled) {
+    console.log(`🚫 Bluesky disabled via DISABLE_BLUESKY env var`);
+  }
 
   // Mastodon credentials are optional — both must be present to enable
+  // Can be explicitly disabled via DISABLE_MASTODON env var
+  const mastodonDisabled = isPlatformDisabled("DISABLE_MASTODON");
   const hasMastodon =
-    !!process.env.MASTODON_INSTANCE_URL && !!process.env.MASTODON_ACCESS_TOKEN;
+    !mastodonDisabled && !!process.env.MASTODON_INSTANCE_URL && !!process.env.MASTODON_ACCESS_TOKEN;
   const mastodon = hasMastodon
     ? {
         instanceUrl: process.env.MASTODON_INSTANCE_URL as string,
         accessToken: process.env.MASTODON_ACCESS_TOKEN as string,
       }
     : null;
+  if (mastodonDisabled) {
+    console.log(`🚫 Mastodon disabled via DISABLE_MASTODON env var`);
+  }
 
   return {
     twitter,

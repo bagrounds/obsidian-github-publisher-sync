@@ -122,9 +122,15 @@ export function isIndexOrHomePage(relativePath: string): boolean {
 }
 
 /**
- * Extract markdown link targets from note content.
- * Matches patterns like [text](../path/to/file.md) and returns
- * the resolved relative paths from the content root.
+ * Extract link targets from note content.
+ *
+ * Handles two link formats:
+ * 1. Standard markdown links: `[text](../path/to/file.md)` — resolved relative to the current file
+ * 2. Obsidian wiki links: `[[path/to/file]]` or `[[path/to/file|display text]]` — resolved from vault root
+ *
+ * The Obsidian vault (source of truth) uses wiki links natively.
+ * The GitHub repo (published via Enveloppe) converts them to markdown links.
+ * Supporting both formats ensures the BFS works regardless of which source is read.
  *
  * Only follows internal .md links; external URLs are ignored.
  */
@@ -133,15 +139,23 @@ export function extractMarkdownLinks(
   noteRelativePath: string,
   contentDir: string,
 ): readonly string[] {
-  const linkRegex = /\]\(([^)]+\.md)\)/g;
   const noteDir = path.dirname(
     path.join(contentDir, noteRelativePath),
   );
   const links: string[] = [];
   const seen = new Set<string>();
 
+  function addLink(relativePath: string): void {
+    if (!relativePath.startsWith("..") && !seen.has(relativePath)) {
+      seen.add(relativePath);
+      links.push(relativePath);
+    }
+  }
+
+  // 1. Standard markdown links: [text](path.md)
+  const markdownLinkRegex = /\]\(([^)]+\.md)\)/g;
   let match: RegExpExecArray | null;
-  while ((match = linkRegex.exec(body)) !== null) {
+  while ((match = markdownLinkRegex.exec(body)) !== null) {
     const target = match[1] as string;
 
     // Skip external URLs
@@ -152,15 +166,30 @@ export function extractMarkdownLinks(
     // Resolve relative path to absolute, then back to content-relative
     const absoluteTarget = path.resolve(noteDir, target);
     const relativePath = path.relative(contentDir, absoluteTarget);
+    addLink(relativePath);
+  }
 
-    // Skip paths that resolve outside the content directory
-    if (relativePath.startsWith("..")) {
-      continue;
+  // 2. Obsidian wiki links: [[path]] or [[path|display text]] or [[path#heading]]
+  // The path portion comes before any # (heading) or | (display text).
+  const wikiLinkRegex = /\[\[([^\]|#]+)(?:#[^\]|]*)?(?:\|[^\]]+)?\]\]/g;
+  while ((match = wikiLinkRegex.exec(body)) !== null) {
+    let target = (match[1] as string).trim();
+
+    // Add .md extension if not present
+    if (!target.endsWith(".md")) {
+      target = target + ".md";
     }
 
-    if (!seen.has(relativePath)) {
-      seen.add(relativePath);
-      links.push(relativePath);
+    // Wiki links in Obsidian are typically relative to vault root.
+    // If the target has a directory separator, treat as vault-root-relative.
+    // If it's just a filename, try resolving relative to the current file's directory.
+    if (target.includes("/")) {
+      addLink(target);
+    } else {
+      // Filename-only wiki link — resolve relative to current file's directory
+      const absoluteTarget = path.resolve(noteDir, target);
+      const relativePath = path.relative(contentDir, absoluteTarget);
+      addLink(relativePath);
     }
   }
 
@@ -244,24 +273,34 @@ export function isPostableContent(note: ContentNote): boolean {
 export function findMostRecentReflection(
   contentDir: string,
 ): string | null {
+  const all = findAllReflections(contentDir);
+  return all.length > 0 ? all[0]! : null;
+}
+
+/**
+ * Find ALL reflection files in the reflections directory.
+ * Returns date-named reflection paths sorted most recent first.
+ *
+ * Used to seed the BFS with multiple entry points into the content graph,
+ * ensuring thorough discovery even when the most recent reflection has
+ * limited outgoing links.
+ */
+export function findAllReflections(
+  contentDir: string,
+): readonly string[] {
   const reflectionsDir = path.join(contentDir, "reflections");
 
   if (!fs.existsSync(reflectionsDir)) {
-    return null;
+    return [];
   }
 
   const datePattern = /^\d{4}-\d{2}-\d{2}\.md$/;
-  const reflectionFiles = fs
+  return fs
     .readdirSync(reflectionsDir)
     .filter((f) => datePattern.test(f))
     .sort()
-    .reverse();
-
-  if (reflectionFiles.length === 0) {
-    return null;
-  }
-
-  return `reflections/${reflectionFiles[0]}`;
+    .reverse()
+    .map((f) => `reflections/${f}`);
 }
 
 /**
@@ -333,7 +372,15 @@ export function getPriorDayReflectionIfNeeded(
  * Breadth-first search across the content graph to find notes that
  * haven't been posted to all configured platforms.
  *
- * Starts from the most recent reflection and follows markdown links.
+ * Seeds the BFS from ALL reflections (sorted most recent first) to ensure
+ * thorough coverage of the content graph. Each reflection links to different
+ * content (books, videos, articles, etc.), so using all reflections as entry
+ * points maximizes the chance of discovering unposted content.
+ *
+ * The BFS follows both standard markdown links and Obsidian wiki links,
+ * ensuring it works whether reading from the vault (wiki links) or the
+ * repo (markdown links).
+ *
  * Skips index/home pages and reflections that are too recent to post.
  * Returns up to one note per platform that still needs posting.
  *
@@ -348,9 +395,12 @@ export function bfsContentDiscovery(
   const { contentDir, platforms } = config;
   const postingHourUTC = config.postingHourUTC ?? 17;
 
-  // Find starting point
-  const startPath = findMostRecentReflection(contentDir);
-  if (!startPath) {
+  // Seed from ALL reflections (sorted most recent first) for thorough coverage.
+  // Starting from just the most recent reflection misses content linked only
+  // from older reflections. Each reflection links to the content consumed that
+  // day, so seeding all reflections covers the full content graph.
+  const allReflections = findAllReflections(contentDir);
+  if (allReflections.length === 0) {
     console.log("📭 No reflections found to start BFS from");
     return [];
   }
@@ -358,12 +408,12 @@ export function bfsContentDiscovery(
   // Track which platforms still need a post
   const platformsNeedingContent = new Set<Platform>(platforms);
 
-  // BFS state
+  // BFS state — seed the queue with all reflections
   const visited = new Set<string>();
-  const queue: string[] = [startPath];
+  const queue: string[] = [...allReflections];
   const results: ContentToPost[] = [];
 
-  console.log(`🔍 Starting BFS from: ${startPath}`);
+  console.log(`🔍 Starting BFS from ${allReflections.length} reflections (most recent: ${allReflections[0]})`);
   console.log(
     `📋 Looking for content for: ${[...platformsNeedingContent].join(", ")}`,
   );

@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-03-09T03:56:32-07:00
+updated: 2026-03-09T04:57:02-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -14,7 +14,7 @@ updated: 2026-03-09T03:56:32-07:00
 💬 Comment on any page with your GitHub account.  
   
 ## [🪞 Reflections](./reflections/index.md) ~ Blog (480)  
-- [2026-03-09 | 🔒 Lock 🫂 Hold 🤖 Sync](./reflections/2026-03-09.md)  
+- [2026-03-09 | 🚫🧬 Lock 🫂 Hold 🤖 Sync](./reflections/2026-03-09.md)  
 - [2026-03-08 | 🧶 Maze 🐘 Mastodon 🤔 Sophie 🤖 Agent 📚📺](./reflections/2026-03-08.md)  
 - [2026-03-07 | 💥 Strikes ⚔️ Conflict 🤖 Agent 📰📚📺](./reflections/2026-03-07.md)  
 - [2026-03-06 | 🤖🆚🧠 Code 🤖 Choice 📚📺](./reflections/2026-03-06.md)  
@@ -26,7 +26,8 @@ updated: 2026-03-09T03:56:32-07:00
 - [2026-02-28 | 🤖⚙️🧠 Agentic 📖](./reflections/2026-02-28.md)  
   
   
-## [🤖 AI Blog](./ai-blog/index.md) (3)  
+## [🤖 AI Blog](./ai-blog/index.md) (4)  
+- [2026-03-09 | 🚫 Platform Kill Switches for Social Media Auto-Posting 🤖](./ai-blog/2026-03-09-platform-disable-env-vars.md)  
 - [2026-03-09 | 🔒 Obsidian Sync Lock Resilience 🤖](./ai-blog/2026-03-09-obsidian-sync-lock-resilience.md)  
 - [2026-03-09 | 🔍 BFS Content Discovery for Social Media Auto-Posting 🤖](./ai-blog/2026-03-09-bfs-content-discovery.md)  
 - [2026-03-08 | 🐘 Auto-Posting to Mastodon 🤖](./ai-blog/2026-03-08-auto-post-mastodon.md)  
@@ -37,6 +38,7 @@ updated: 2026-03-09T03:56:32-07:00
   
   
 ## [📚 Books](./books/index.md) (951)  
+- [🫂 Hold Me Tight: Seven Conversations for a Lifetime of Love](./books/hold-me-tight-seven-conversations-for-a-lifetime-of-love.md)  
 - [🤔🌍 Sophie’s World](./books/sophies-world.md)  
 - [🌐🔗🧠📖 Thinking in Systems: A Primer](./books/thinking-in-systems.md)  
 - [👤🧠 Being You: A New Science of Consciousness](./books/being-you-a-new-science-of-consciousness.md)  
@@ -46,7 +48,6 @@ updated: 2026-03-09T03:56:32-07:00
 - [⚔️🤫 The Twilight War: The Secret History of America's Thirty-Year Conflict with Iran](./books/the-twilight-war-the-secret-history-of-americas-thirty-year-conflict-with-iran.md)  
 - [ℹ️🌱 The Informed Gardener](./books/the-informed-gardener.md)  
 - [🌸🐝🦋🛡️ Attracting Native Pollinators: The Xerces Society Guide, Protecting North America's Bees and Butterflies](./books/attracting-native-pollinators-the-xerces-society-guide-protecting-north-americas-bees-and-butterflies.md)  
-- [🗓️🌷 RHS Gardening Through the Year](./books/rhs-gardening-through-the-year.md)  
   
   
 ## [📺 Videos](./videos/index.md) (675)  

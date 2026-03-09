@@ -13,7 +13,7 @@
  * via the Enveloppe plugin (one-way sync: Obsidian → GitHub).
  *
  * Usage:
- *   npx tsx scripts/tweet-reflection.ts [--date YYYY-MM-DD] [--dry-run]
+ *   npx tsx scripts/tweet-reflection.ts [--date YYYY-MM-DD]
  *
  * Environment variables:
  *   TWITTER_API_KEY       - (Optional) OAuth 1.0a Consumer Key (from X Developer Portal → Keys and Tokens)
@@ -150,7 +150,6 @@ export interface EmbedResult {
 
 // --- Constants ---
 
-const CONTENT_DIR = path.join(process.cwd(), "content", "reflections");
 const TWITTER_HANDLE = "bagrounds";
 const TWITTER_DISPLAY_NAME = "Bryan Grounds";
 const BLUESKY_DISPLAY_NAME = "Bryan Grounds";
@@ -193,7 +192,7 @@ const DEFAULT_GEMINI_MODEL = "gemma-3-27b-it";
  */
 export function getReflectionPath(
   date: string,
-  contentDir: string = CONTENT_DIR,
+  contentDir: string,
 ): string {
   return path.join(contentDir, `${date}.md`);
 }
@@ -236,7 +235,7 @@ export function parseFrontmatter(content: string): {
  */
 export function readReflection(
   date: string,
-  contentDir: string = CONTENT_DIR,
+  contentDir: string,
 ): ReflectionData | null {
   const filePath = getReflectionPath(date, contentDir);
 
@@ -265,7 +264,7 @@ export function readReflection(
  */
 export function readNote(
   relativePath: string,
-  contentDir: string = path.join(process.cwd(), "content"),
+  contentDir: string,
 ): ReflectionData | null {
   const filePath = path.join(contentDir, relativePath);
 
@@ -1637,25 +1636,22 @@ export function getYesterdayDate(): string {
 /**
  * Parse command line arguments.
  */
-function parseArgs(): { date: string; dryRun: boolean; note?: string } {
+function parseArgs(): { date: string; note?: string } {
   const args = process.argv.slice(2);
   let date = getYesterdayDate();
-  let dryRun = false;
   let note: string | undefined;
 
   for (let i = 0; i < args.length; i++) {
     if (args[i] === "--date" && args[i + 1]) {
       date = args[i + 1] as string;
       i++;
-    } else if (args[i] === "--dry-run") {
-      dryRun = true;
     } else if (args[i] === "--note" && args[i + 1]) {
       note = args[i + 1] as string;
       i++;
     }
   }
 
-  return { date, dryRun, note };
+  return { date, note };
 }
 
 /**
@@ -1785,8 +1781,7 @@ export function validateEnvironment(): {
  *
  * Posts to Twitter, Bluesky, and Mastodon (if credentials are configured).
  * Platform failures are logged but don't crash the pipeline.
- * The pipeline continues as long as at least one platform succeeds,
- * or if only dry-run/generation is requested.
+ * The pipeline continues as long as at least one platform succeeds.
  *
  * ## Source of Truth: Obsidian Vault
  *
@@ -1796,22 +1791,23 @@ export function validateEnvironment(): {
  * the vault ensures we always see the latest social media embed sections,
  * preventing duplicate posts across pipeline runs.
  *
+ * If a `vaultDir` is provided (pre-pulled by auto-post.ts), it is reused
+ * instead of pulling the vault again.
+ *
  * Timeline:
  *   pull(~7min) → read note → generate(3s) → post(10s) → push(1.5s)
  */
 export async function main(options?: {
   date?: string;
-  dryRun?: boolean;
-  contentDir?: string;
   note?: string;
+  vaultDir?: string;
 }): Promise<void> {
   const timer = new PipelineTimer();
   const date = options?.date || getYesterdayDate();
-  const dryRun = options?.dryRun || false;
   const notePath = options?.note;
   const obsidianNotePath = notePath || `reflections/${date}.md`;
 
-  console.log(`📄 Processing: ${obsidianNotePath}${dryRun ? " (DRY RUN)" : ""}`);
+  console.log(`📄 Processing: ${obsidianNotePath}`);
 
   // Step 1: Validate credentials
   const env = validateEnvironment();
@@ -1820,40 +1816,22 @@ export async function main(options?: {
     console.warn(`⚠️  No social platform credentials configured. Set TWITTER_*, BLUESKY_*, or MASTODON_* env vars.`);
   }
 
-  // Step 2: Pull the Obsidian vault — the single source of truth.
-  // We read all note content from the vault, not from the GitHub repo's
-  // content/ directory, because the repo may be stale (not yet published
-  // from Obsidian). This prevents duplicate posts across pipeline runs.
-  let vaultDir: string | null = null;
-  if (!dryRun && (env.twitter || env.bluesky || env.mastodon)) {
+  // Step 2: Get the Obsidian vault — the single source of truth.
+  // If a pre-pulled vault dir is provided (e.g. from auto-post.ts),
+  // reuse it to avoid a redundant pull. Otherwise, pull fresh.
+  let vaultDir = options?.vaultDir || null;
+  if (!vaultDir) {
     console.log(`📥 Pulling Obsidian vault (source of truth)...`);
     vaultDir = await timer.time("obsidian-pull", () =>
       syncObsidianVault(env.obsidian),
     );
   }
 
-  // Step 3: Read the note from the vault (or fall back to repo for dry runs)
-  let reflection: ReflectionData | null;
-
-  if (vaultDir) {
-    // Read from vault (authoritative source)
-    reflection = readNote(obsidianNotePath, vaultDir);
-    if (!reflection) {
-      console.log(`ℹ️  Note not found in Obsidian vault: ${obsidianNotePath}, exiting`);
-      return;
-    }
-  } else {
-    // Dry run or no platforms configured — read from repo as fallback
-    const contentDir = options?.contentDir || CONTENT_DIR;
-    if (notePath) {
-      reflection = readNote(notePath, path.dirname(contentDir));
-    } else {
-      reflection = readReflection(date, contentDir);
-    }
-    if (!reflection) {
-      console.log(`ℹ️  No note found at ${obsidianNotePath}, exiting`);
-      return;
-    }
+  // Step 3: Read the note from the vault
+  const reflection = readNote(obsidianNotePath, vaultDir);
+  if (!reflection) {
+    console.log(`ℹ️  Note not found in Obsidian vault: ${obsidianNotePath}, exiting`);
+    return;
   }
 
   console.log(`📄 Found: ${reflection.title}`);
@@ -1878,11 +1856,6 @@ export async function main(options?: {
     );
     return text;
   });
-
-  if (dryRun) {
-    console.log(`🏁 Dry run complete, would have posted the above`);
-    return;
-  }
 
   // Collect embed sections to write to Obsidian
   const embedSections: EmbedSection[] = [];
@@ -2076,8 +2049,8 @@ export async function main(options?: {
 // Run if executed directly
 const isMainModule = process.argv[1]?.endsWith("tweet-reflection.ts");
 if (isMainModule) {
-  const { date, dryRun, note } = parseArgs();
-  main({ date, dryRun, note }).catch((error) => {
+  const { date, note } = parseArgs();
+  main({ date, note }).catch((error) => {
     console.error(
       `❌ Error: ${error instanceof Error ? error.message : error}`,
     );

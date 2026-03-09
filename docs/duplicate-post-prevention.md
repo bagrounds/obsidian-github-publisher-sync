@@ -1,4 +1,4 @@
-# Duplicate Post Prevention: Vault-Repo Divergence Fix
+# Duplicate Post Prevention: Vault-Only Architecture
 
 ## Problem
 
@@ -36,107 +36,54 @@ appeared in CI logs). But it detected too late — after the social media posts 
    **after** social posting. The "already posted" check happened before the vault was
    available, using the stale GitHub repo content as the source of truth.
 
-## Two Sources of Truth
-
-The pipeline had two copies of each note, and they could diverge:
-
-| Source | Updated When | Used For |
-|--------|-------------|----------|
-| GitHub repo (`content/`) | User publishes from Obsidian (manual) | BFS discovery + posting decision |
-| Obsidian vault (via `ob sync`) | After each pipeline run (automatic) | Writing embed sections |
-
-The **vault** was the authoritative source, but the **repo** was used for the critical
-"should we post?" decision.
-
-## Timeline
-
-```
-Run 43 (12:11 UTC) — FIRST POST
-├─ BFS reads content/ (GitHub repo) → no sections found
-├─ Posts to Bluesky + Mastodon ✅
-├─ Writes sections to Obsidian vault ✅
-└─ Vault now has sections; GitHub repo does NOT
-
-Run 44 (14:20 UTC) — DUPLICATE
-├─ BFS reads content/ (GitHub repo) → STILL no sections (stale)
-├─ Posts to Bluesky + Mastodon AGAIN ❌ (duplicate!)
-├─ Attempts vault write → "already exists, skipping"
-└─ Vault already had sections from run 43
-
-Run 45 (16:21 UTC) — DUPLICATE
-├─ BFS reads content/ (GitHub repo) → STILL no sections (stale)
-├─ Posts to Bluesky + Mastodon AGAIN ❌ (duplicate!)
-├─ Attempts vault write → "already exists, skipping"
-└─ Vault already had sections from run 43
-```
-
-## Fix: Read from the Vault, Not the Repo
+## Fix: Use the Vault for Everything
 
 ### Change Summary
 
-Eliminated the stale repo read entirely. `main()` now reads note content exclusively
-from the Obsidian vault (the single source of truth). The GitHub repo's `content/`
-directory is no longer used for posting decisions.
+Eliminated all stale repo reads. The entire pipeline now reads from the Obsidian vault:
+
+- **`auto-post.ts`** pulls the vault once and passes it to BFS discovery (`find-content-to-post.ts`)
+  and to the posting pipeline (`tweet-reflection.ts`).
+- **`main()` in `tweet-reflection.ts`** accepts a `vaultDir` parameter. If provided (from auto-post),
+  it reuses the pre-pulled vault. If not (direct invocation), it pulls fresh.
+- **`find-content-to-post.ts`** is unchanged — it's already parameterized by `contentDir`.
+  It now receives the vault dir instead of `content/`.
+- The GitHub repo's `content/` directory is **never read** for posting decisions.
+- Dry-run mode has been removed — the pipeline always posts.
 
 ### Before (Buggy)
 
 ```
-read note from repo → generate post → POST → await vault pull → write to vault
-                                        ↑
-                               Uses stale repo data
+BFS reads repo → read repo → generate post → POST → await vault → write to vault
+       ↑              ↑
+    Both used stale repo data
 ```
 
 ### After (Fixed)
 
 ```
-await vault pull → read note from vault → generate post → POST → write to vault + push
-                            ↑
-                   Single source of truth
+vault pull → BFS reads vault → read note from vault → generate → POST → write to vault + push
+                  ↑                     ↑
+             Single source of truth
 ```
 
-### Code Change
+### Performance
 
-In `main()`, the vault is now pulled first, and the note is read directly from it:
-
-```typescript
-// Step 2: Pull the Obsidian vault — the single source of truth.
-vaultDir = await timer.time("obsidian-pull", () =>
-  syncObsidianVault(env.obsidian),
-);
-
-// Step 3: Read the note from the vault (authoritative source)
-reflection = readNote(obsidianNotePath, vaultDir);
-
-// Idempotency check uses vault data — no merge needed
-if (reflection.hasTweetSection && reflection.hasBlueskySection && reflection.hasMastodonSection) {
-  console.log(`ℹ️  Note already has all social platform sections, skipping`);
-  return;
-}
-```
-
-The `mergeVaultSectionFlags()` function was removed — it's unnecessary when there's
-only one source of truth. Dry runs fall back to reading from the repo since the vault
-pull is skipped.
-
-### Performance Impact
-
-The vault pull now runs sequentially before Gemini generation (previously it ran in
-parallel). With a warm cache (incremental sync), this adds negligible latency. With
-a cold cache (~7 min), this increases wall-clock time slightly — but correctness is
-more important than speed, and the vault pull was already the pipeline bottleneck.
+The vault pull is done once in `auto-post.ts` and shared with `main()` via the
+`vaultDir` parameter. This avoids redundant pulls when processing multiple notes.
+When `tweet-reflection.ts` is invoked directly, it pulls the vault itself.
 
 ## Hypotheses Considered
 
-### Hypothesis 1: Read from Obsidian vault instead of GitHub repo (CHOSEN)
+### Hypothesis 1: Use the vault for everything (CHOSEN)
 
-Read note content exclusively from the Obsidian vault — the single source of truth.
-Pull the vault before any posting decisions.
+Pull the vault once, use it for BFS discovery *and* posting decisions. The repo's
+`content/` directory is never read.
 
-**Pros:** Single source of truth. No merge logic needed. Simplest conceptual model.
-**Cons:** Vault pull adds latency before Gemini generation (can't parallelize).
+**Pros:** Single source of truth everywhere. No merge logic. Vault pull is shared.
+**Cons:** Vault pull adds latency before BFS discovery.
 
 **Verdict:** Cleanest fix. Eliminates the two-source-of-truth problem entirely.
-Correctness is more important than speed.
 
 ### Hypothesis 2: Commit embed sections to the GitHub repo after posting
 
@@ -164,28 +111,22 @@ truth, just read from it directly.
 
 ## Testing
 
-8 new tests added:
+8 vault-only reading tests validate the core fix:
 
-- 6 unit tests for vault-only reading via `readNote()` — section detection,
+- 6 unit tests for `readNote()` with vault dir — section detection,
   arbitrary content paths, missing files, field preservation
 - 1 integration test demonstrating the pre-fix bug (stale repo misses vault sections)
 - 1 integration test for partial vault sections (only posted platforms detected)
 
-All 198 tests pass (190 existing + 8 new).
-
 ## Recommendations for Future Prevention
 
-1. **Single source of truth:** The pipeline now reads from the vault exclusively for
-   posting decisions. This principle should be maintained for any future changes.
+1. **Single source of truth:** The pipeline reads from the vault exclusively.
+   This principle should be maintained for any future changes.
 
 2. **Idempotency tokens:** Instead of relying on section header presence to detect
    prior posts, consider maintaining a separate posting log (e.g., a JSON file in the
    vault) that records which notes have been posted to which platforms.
 
-3. **Integration tests with time progression:** Create tests that simulate multiple
-   pipeline runs with divergent sources, to catch "stale read" bugs before they reach
-   production.
-
-4. **CI log analysis:** The "already exists in Obsidian note, skipping" messages in
+3. **CI log analysis:** The "already exists in Obsidian note, skipping" messages in
    runs 44 and 45 were a clear signal. Consider adding alerting for this pattern —
    if we're skipping vault writes but still making social posts, something is wrong.

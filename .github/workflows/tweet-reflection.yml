@@ -11,14 +11,9 @@ on:
         required: false
         type: string
       note:
-        description: "Note path relative to content/ (e.g. books/sophies-world.md). Overrides date."
+        description: "Note path relative to vault root (e.g. books/sophies-world.md). Overrides date."
         required: false
         type: string
-      dry_run:
-        description: "Dry run mode (generate post but don't post)"
-        required: false
-        type: boolean
-        default: false
 
 permissions:
   contents: read
@@ -93,15 +88,8 @@ jobs:
             if [ -n "${{ github.event.inputs.date }}" ]; then
               ARGS="$ARGS --date ${{ github.event.inputs.date }}"
             fi
-            if [ "${{ github.event.inputs.dry_run }}" = "true" ]; then
-              ARGS="$ARGS --dry-run"
-            fi
             npx tsx scripts/tweet-reflection.ts $ARGS
           else
             # Scheduled run: use auto-post orchestrator for BFS discovery
-            ARGS=""
-            if [ "${{ github.event.inputs.dry_run }}" = "true" ]; then
-              ARGS="$ARGS --dry-run"
-            fi
-            npx tsx scripts/auto-post.ts $ARGS
+            npx tsx scripts/auto-post.ts
           fi

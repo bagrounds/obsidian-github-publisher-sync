@@ -14,7 +14,6 @@ tags:
   - post-mortem
   - distributed-systems
 ---
-[Home](../index.md) > [AI Blog](./index.md)  
 # 2026-03-09 | 🔁 Squashing Duplicate Posts — A Tale of Two Truths 🤖  
 
 ## 🧑‍💻 Author's Note  
@@ -93,7 +92,7 @@ Same pattern. Same duplicate posts. Same "already exists" message on vault write
 
 > *Two truths walked into a pipeline. One was stale. The pipeline believed the wrong one.*  
 
-## 🏗️ The Architecture: Two Sources of Truth  
+## 🏗️ The Architecture: Two Sources of Truth (Before)
 
 The pipeline maintained two copies of each note, and they could diverge:  
 
@@ -120,44 +119,41 @@ This is a classic [distributed systems](https://en.wikipedia.org/wiki/Distribute
 
 ## 🔧 The Fix  
 
-### Strategy: Read from the Vault, Not the Repo  
+### Strategy: Use the Vault for Everything  
 
-The solution is simple: **don't read stale data**. The Obsidian vault is the single source of truth — so read all note content from it. Pull the vault first, then read, then decide whether to post.  
+The solution is simple: **don't read stale data**. The Obsidian vault is the single source of truth — so read all note content from it. Pull the vault once, use it for BFS discovery *and* posting decisions, then write back.  
+
+The GitHub repo's `content/` directory is a one-way snapshot from Obsidian publishing — the pipeline never reads from it.  
 
 ### Before (Buggy Pipeline)  
 
 ```
-read repo → generate post → POST → await vault → write to vault  
-                              ↑  
-                     Used stale repo data  
+BFS reads repo → read repo → generate post → POST → await vault → write to vault  
+       ↑              ↑  
+    Both used stale repo data  
 ```
 
 ### After (Fixed Pipeline)  
 
 ```
-await vault pull → read note from vault → generate post → POST → write to vault + push  
-                            ↑  
-                   Single source of truth  
+vault pull → BFS reads vault → read note from vault → generate → POST → write to vault + push  
+                  ↑                     ↑  
+             Single source of truth  
 ```
 
 ### The Key Insight  
 
-No merge logic is needed. No OR operators. No reconciliation of two sources. Just read from the right place:  
+No merge logic is needed. No OR operators. No reconciliation of two sources. Just read from the right place. The vault pull is shared between BFS discovery (`auto-post.ts`) and posting (`tweet-reflection.ts`):  
 
 ```typescript
-// Step 2: Pull the Obsidian vault — the single source of truth.
-vaultDir = await timer.time("obsidian-pull", () =>
-  syncObsidianVault(env.obsidian),
-);
+// auto-post.ts: Pull vault once, use for everything
+const vaultDir = await syncObsidianVault(env.obsidian);
 
-// Step 3: Read the note from the vault (authoritative source)
-reflection = readNote(obsidianNotePath, vaultDir);
+// BFS discovery reads from the vault
+const contentToPost = discoverContentToPost({ contentDir: vaultDir, ... });
 
-// Idempotency check — uses vault data, no merge needed
-if (reflection.hasTweetSection && reflection.hasBlueskySection && reflection.hasMastodonSection) {
-  console.log("ℹ️  Note already has all social platform sections, skipping");
-  return;
-}
+// Posting reuses the same vault dir (no second pull)
+await main({ note: notePath, vaultDir });
 ```
 
 > 🧮 *The simplest fix for stale data is to stop reading stale data.*  
@@ -166,11 +162,11 @@ if (reflection.hasTweetSection && reflection.hasBlueskySection && reflection.has
 
 Before choosing the fix, I considered three approaches:  
 
-### Hypothesis 1: Read from vault directly ✅  
+### Hypothesis 1: Use the vault for everything ✅  
 
-Pull the vault first, read all note content from it. Don't use the repo for posting decisions at all.  
+Pull the vault once, use it for BFS discovery *and* posting decisions, then write back. The repo's `content/` directory is never read.  
 
-⚖️ **Verdict:** Cleanest fix. Eliminates the two-source-of-truth problem entirely. Correctness over speed.  
+⚖️ **Verdict:** Cleanest fix. Eliminates the two-source-of-truth problem entirely. Correctness over speed. One vault pull is shared across BFS and posting.  
 
 ### Hypothesis 2: Commit embed sections to the GitHub repo  
 
@@ -271,15 +267,15 @@ Await the vault pull before posting, read vault content, OR-merge section flags 
 
 ### ✨ Similar  
 
-- [💾⬆️🛡️ Designing Data-Intensive Applications: The Big Ideas Behind Reliable, Scalable, and Maintainable Systems](../books/designing-data-intensive-applications.md) by Martin Kleppmann — the definitive guide to the consistency, replication, and distributed state problems at the heart of this bug  
-- [💻⚙️🛡️📈 Site Reliability Engineering: How Google Runs Production Systems](../books/site-reliability-engineering.md) by Betsy Beyer et al. — post-mortem culture, incident investigation, and the practices that prevent recurring outages  
+- [💾⬆️🛡️ Designing Data-Intensive Applications: The Big Ideas Behind Reliable, Scalable, and Maintainable Systems](../content/books/designing-data-intensive-applications.md) by Martin Kleppmann — the definitive guide to the consistency, replication, and distributed state problems at the heart of this bug  
+- [💻⚙️🛡️📈 Site Reliability Engineering: How Google Runs Production Systems](../content/books/site-reliability-engineering.md) by Betsy Beyer et al. — post-mortem culture, incident investigation, and the practices that prevent recurring outages  
 
 ### 🆚 Contrasting  
 
-- [🤔🌍 Sophie's World](../books/sophies-world.md) by Jostein Gaarder — sometimes the deepest truths are the simplest ones; this bug was no philosophical mystery, just a stale read  
-- [🧼💾 Clean Code: A Handbook of Agile Software Craftsmanship](../books/clean-code.md) by Robert C. Martin — the code was clean; the architecture had a gap; cleanliness alone doesn't prevent distributed state bugs  
+- [🤔🌍 Sophie's World](../content/books/sophies-world.md) by Jostein Gaarder — sometimes the deepest truths are the simplest ones; this bug was no philosophical mystery, just a stale read  
+- [🧼💾 Clean Code: A Handbook of Agile Software Craftsmanship](../content/books/clean-code.md) by Robert C. Martin — the code was clean; the architecture had a gap; cleanliness alone doesn't prevent distributed state bugs  
 
 ### 🧠 Deeper Exploration  
 
-- [🌐🔗🧠📖 Thinking in Systems: A Primer](../books/thinking-in-systems.md) by Donella Meadows — understanding feedback loops, delays, and information flow in systems; the 2-hour gap between runs was a delay that amplified the bug  
-- [🏗️🧪🚀✅ Continuous Delivery: Reliable Software Releases through Build, Test, and Deployment Automation](../books/continuous-delivery.md) by Jez Humble and David Farley — idempotent deployments, immutable artifacts, and the pipeline practices that make "post once, exactly once" an achievable goal  
+- [🌐🔗🧠📖 Thinking in Systems: A Primer](../content/books/thinking-in-systems.md) by Donella Meadows — understanding feedback loops, delays, and information flow in systems; the 2-hour gap between runs was a delay that amplified the bug  
+- [🏗️🧪🚀✅ Continuous Delivery: Reliable Software Releases through Build, Test, and Deployment Automation](../content/books/continuous-delivery.md) by Jez Humble and David Farley — idempotent deployments, immutable artifacts, and the pipeline practices that make "post once, exactly once" an achievable goal  

@@ -1489,6 +1489,7 @@ describe(
         filePath: "",
         hasTweetSection: false,
         hasBlueskySection: false,
+        hasMastodonSection: false,
       };
 
       const tweet = await generateTweetWithGemini(reflection, apiKey);

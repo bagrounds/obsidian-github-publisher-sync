@@ -10,6 +10,9 @@ import {
   readNote,
   calculateTweetLength,
   validateTweetLength,
+  countGraphemes,
+  truncateToGraphemeLimit,
+  fitPostToLimit,
   buildGeminiPrompt,
   generateLocalEmbed,
   generateLocalBlueskyEmbed,
@@ -344,6 +347,174 @@ describe("validateTweetLength", () => {
   });
 });
 
+// --- Platform-Aware Length Enforcement Tests ---
+
+describe("countGraphemes", () => {
+  test("counts ASCII text correctly", () => {
+    assert.equal(countGraphemes("Hello world"), 11);
+  });
+
+  test("counts empty string as 0", () => {
+    assert.equal(countGraphemes(""), 0);
+  });
+
+  test("counts single emoji as 1 grapheme", () => {
+    assert.equal(countGraphemes("📚"), 1);
+  });
+
+  test("counts multi-codepoint emoji as 1 grapheme", () => {
+    // Family emoji (ZWJ sequence) = 1 grapheme
+    assert.equal(countGraphemes("👨‍👩‍👧‍👦"), 1);
+  });
+
+  test("counts flag emoji as 1 grapheme", () => {
+    assert.equal(countGraphemes("🇺🇸"), 1);
+  });
+
+  test("counts mixed ASCII and emoji correctly", () => {
+    // "Hi 👋" = H, i, ' ', 👋 = 4 graphemes
+    assert.equal(countGraphemes("Hi 👋"), 4);
+  });
+
+  test("counts newlines as graphemes", () => {
+    assert.equal(countGraphemes("a\nb\nc"), 5);
+  });
+
+  test("counts a typical Bluesky post", () => {
+    const post = `2026-03-08 | 📖 Attached 💕 Love 🧠 Science 📚
+
+📚 Books | 💕 Relationships | 🧠 Psychology
+https://bagrounds.org/reflections/2026-03-08`;
+    const count = countGraphemes(post);
+    assert.ok(count > 0, "count should be positive");
+    // Each emoji is 1 grapheme, each ASCII char is 1 grapheme
+    assert.ok(count <= 300, `typical post should fit Bluesky limit, got ${count}`);
+  });
+});
+
+describe("truncateToGraphemeLimit", () => {
+  test("returns text unchanged when within limit", () => {
+    assert.equal(truncateToGraphemeLimit("Hello", 10), "Hello");
+  });
+
+  test("returns text unchanged when exactly at limit", () => {
+    assert.equal(truncateToGraphemeLimit("Hello", 5), "Hello");
+  });
+
+  test("truncates with ellipsis when over limit", () => {
+    const result = truncateToGraphemeLimit("Hello world", 8);
+    assert.equal(result, "Hello w…");
+    assert.equal(countGraphemes(result), 8);
+  });
+
+  test("truncates emoji text correctly", () => {
+    const text = "📚📖🧠💕🎉";
+    const result = truncateToGraphemeLimit(text, 3);
+    assert.equal(result, "📚📖…");
+    assert.equal(countGraphemes(result), 3);
+  });
+
+  test("handles limit of 1", () => {
+    const result = truncateToGraphemeLimit("Hello", 1);
+    assert.equal(result, "…");
+  });
+
+  test("handles empty string", () => {
+    assert.equal(truncateToGraphemeLimit("", 10), "");
+  });
+});
+
+describe("fitPostToLimit", () => {
+  const SHORT_URL = "https://bagrounds.org/reflections/2026-03-08";
+  const LONG_URL = "https://bagrounds.org/books/attached-the-new-science-of-adult-attachment-and-how-it-can-help-you-find-and-keep-love";
+
+  test("returns text unchanged when within limit", () => {
+    const post = `2026-03-08 | 📖 Test 📚\n\n📚 Books | 🧠 Learning\n${SHORT_URL}`;
+    assert.equal(fitPostToLimit(post, 300), post);
+  });
+
+  test("removes topic tags from right to fit", () => {
+    const post = `Title Line\n\n📚 Tag1 | 💕 Tag2 | 🧠 Tag3 | 🎉 Tag4 | 🌟 Tag5\n${SHORT_URL}`;
+    const limit = countGraphemes(post) - 5; // need to shorten by ~5 graphemes
+    const result = fitPostToLimit(post, limit);
+    assert.ok(countGraphemes(result) <= limit, `result should fit within limit: ${countGraphemes(result)} <= ${limit}`);
+    assert.ok(result.includes("📚 Tag1"), "should preserve first tag");
+    assert.ok(result.includes(SHORT_URL), "should preserve URL");
+    assert.ok(!result.includes("🌟 Tag5"), "should have removed last tag");
+  });
+
+  test("removes entire topic line when tags alone are insufficient", () => {
+    // Create a post where even removing tags isn't enough
+    const title = "A".repeat(200);
+    const post = `${title}\n\n📚 VeryLongTag1 | 📖 VeryLongTag2\n${SHORT_URL}`;
+    const limit = countGraphemes(title) + 1 + countGraphemes(SHORT_URL) + 2; // tight: just title + \n + URL + 2
+    const result = fitPostToLimit(post, limit);
+    assert.ok(countGraphemes(result) <= limit, `should fit: ${countGraphemes(result)} <= ${limit}`);
+    assert.ok(result.includes(SHORT_URL), "should preserve URL");
+  });
+
+  test("truncates content as last resort", () => {
+    const title = "A".repeat(280);
+    const post = `${title}\n${SHORT_URL}`;
+    const result = fitPostToLimit(post, 100);
+    assert.ok(countGraphemes(result) <= 100);
+    assert.ok(result.includes(SHORT_URL), "should preserve URL");
+    assert.ok(result.includes("…"), "should have ellipsis");
+  });
+
+  test("handles the actual failing case: long book URL", () => {
+    // Reproduce the exact scenario from the bug report
+    const post = `2026-03-08 | 📖 Attached 💕 Love 🧠 Science 📚\n\n📚 Books | 💕 Relationships | 🧠 Psychology | 🔗 Attachment Theory | 🧬 Neuroscience\n${LONG_URL}`;
+    const result = fitPostToLimit(post, 300);
+    assert.ok(
+      countGraphemes(result) <= 300,
+      `Bluesky post must be ≤300 graphemes, got ${countGraphemes(result)}`,
+    );
+    assert.ok(result.includes(LONG_URL), "URL must be preserved");
+    assert.ok(result.includes("📖 Attached"), "title should be preserved");
+  });
+
+  test("handles post with no URL", () => {
+    const text = "A".repeat(400);
+    const result = fitPostToLimit(text, 300);
+    assert.ok(countGraphemes(result) <= 300);
+    assert.ok(result.endsWith("…"));
+  });
+
+  test("handles post already within limit even with long URL", () => {
+    const post = `Short\n\n📚 A\n${LONG_URL}`;
+    if (countGraphemes(post) <= 300) {
+      assert.equal(fitPostToLimit(post, 300), post);
+    }
+  });
+
+  test("preserves URL when content must be truncated heavily", () => {
+    const longTitle = "X".repeat(250);
+    const post = `${longTitle}\n\n📚 A | 📖 B\n${LONG_URL}`;
+    const result = fitPostToLimit(post, 300);
+    assert.ok(countGraphemes(result) <= 300);
+    assert.ok(result.includes(LONG_URL), "URL must always be preserved");
+  });
+
+  test("does not modify text that is exactly at the limit", () => {
+    const url = "https://example.com";
+    const padding = "a".repeat(300 - countGraphemes(url) - 1); // -1 for newline
+    const post = `${padding}\n${url}`;
+    assert.equal(countGraphemes(post), 300);
+    assert.equal(fitPostToLimit(post, 300), post);
+  });
+
+  test("removes blank line when removing topic line", () => {
+    const post = `Title\n\n📚 Tag1 | 📖 Tag2\n${SHORT_URL}`;
+    // Set limit to just title + URL + newline
+    const limit = countGraphemes(`Title\n${SHORT_URL}`);
+    const result = fitPostToLimit(post, limit);
+    assert.ok(countGraphemes(result) <= limit);
+    assert.ok(!result.includes("\n\n"), "blank line should be removed with topic line");
+  });
+
+});
+
 describe("buildGeminiPrompt", () => {
   test("includes reflection title in system prompt", () => {
     const reflection: ReflectionData = {
@@ -377,6 +548,8 @@ describe("buildGeminiPrompt", () => {
     const { system } = buildGeminiPrompt(reflection);
     assert.ok(system.includes("280"));
     assert.ok(system.includes("23 characters"));
+    assert.ok(system.includes("300"), "should mention Bluesky 300-char limit");
+    assert.ok(system.includes("Bluesky"), "should mention Bluesky by name");
   });
 
   test("truncates long body content", () => {
@@ -1368,6 +1541,37 @@ describe("property-based tests", () => {
       assert.ok(
         html.includes(`${statusId}/embed`),
         `Missing status embed URL for iteration ${i}`,
+      );
+    }
+  });
+
+  test("countGraphemes is always >= 0 (50 iterations)", () => {
+    for (let i = 0; i < 50; i++) {
+      const text = randomString(Math.floor(Math.random() * 500));
+      const count = countGraphemes(text);
+      assert.ok(count >= 0, `Negative count for iteration ${i}: ${count}`);
+    }
+  });
+
+  test("fitPostToLimit always produces output within limit (50 iterations)", () => {
+    const urls = [
+      "https://bagrounds.org/reflections/2026-03-08",
+      "https://bagrounds.org/books/attached-the-new-science-of-adult-attachment-and-how-it-can-help-you-find-and-keep-love",
+      "https://example.com/very/long/path/that/goes/on/and/on/and/on/forever/and/ever",
+    ];
+    for (let i = 0; i < 50; i++) {
+      const title = randomString(20 + Math.floor(Math.random() * 40));
+      const tags = Array.from(
+        { length: 2 + Math.floor(Math.random() * 5) },
+        () => `📚 ${randomString(5 + Math.floor(Math.random() * 15))}`,
+      ).join(" | ");
+      const url = urls[Math.floor(Math.random() * urls.length)] as string;
+      const post = `${title}\n\n${tags}\n${url}`;
+      const limit = 200 + Math.floor(Math.random() * 150);
+      const result = fitPostToLimit(post, limit);
+      assert.ok(
+        countGraphemes(result) <= limit,
+        `Iteration ${i}: ${countGraphemes(result)} > ${limit}`,
       );
     }
   });

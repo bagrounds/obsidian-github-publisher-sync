@@ -260,6 +260,43 @@ export function readReflection(
 }
 
 /**
+ * Read and parse an arbitrary content note (not just reflections by date).
+ * Works for any .md file under the content directory.
+ */
+export function readNote(
+  relativePath: string,
+  contentDir: string = path.join(process.cwd(), "content"),
+): ReflectionData | null {
+  const filePath = path.join(contentDir, relativePath);
+
+  if (!fs.existsSync(filePath)) {
+    return null;
+  }
+
+  const content = fs.readFileSync(filePath, "utf-8");
+  const { frontmatter, body } = parseFrontmatter(content);
+
+  // Extract date from filename if it's a reflection, otherwise use today
+  const dateMatch = path.basename(relativePath).match(/^(\d{4}-\d{2}-\d{2})/);
+  const date = dateMatch ? dateMatch[1] as string : new Date().toISOString().split("T")[0] as string;
+
+  // Derive URL from frontmatter or from relative path
+  const slug = relativePath.replace(/\.md$/, "");
+  const url = frontmatter["URL"] || `https://bagrounds.org/${slug}`;
+
+  return {
+    date,
+    title: frontmatter["title"] || path.basename(relativePath, ".md"),
+    url,
+    body,
+    filePath,
+    hasTweetSection: content.includes(TWEET_SECTION_HEADER),
+    hasBlueskySection: content.includes(BLUESKY_SECTION_HEADER),
+    hasMastodonSection: content.includes(MASTODON_SECTION_HEADER),
+  };
+}
+
+/**
  * Calculate effective tweet length accounting for Twitter's t.co URL shortening.
  * URLs are always counted as 23 characters by Twitter.
  */
@@ -1538,10 +1575,11 @@ export function getYesterdayDate(): string {
 /**
  * Parse command line arguments.
  */
-function parseArgs(): { date: string; dryRun: boolean } {
+function parseArgs(): { date: string; dryRun: boolean; note?: string } {
   const args = process.argv.slice(2);
   let date = getYesterdayDate();
   let dryRun = false;
+  let note: string | undefined;
 
   for (let i = 0; i < args.length; i++) {
     if (args[i] === "--date" && args[i + 1]) {
@@ -1549,10 +1587,13 @@ function parseArgs(): { date: string; dryRun: boolean } {
       i++;
     } else if (args[i] === "--dry-run") {
       dryRun = true;
+    } else if (args[i] === "--note" && args[i + 1]) {
+      note = args[i + 1] as string;
+      i++;
     }
   }
 
-  return { date, dryRun };
+  return { date, dryRun, note };
 }
 
 /**
@@ -1674,24 +1715,38 @@ export async function main(options?: {
   date?: string;
   dryRun?: boolean;
   contentDir?: string;
+  note?: string;
 }): Promise<void> {
   const timer = new PipelineTimer();
   const date = options?.date || getYesterdayDate();
   const dryRun = options?.dryRun || false;
   const contentDir = options?.contentDir || CONTENT_DIR;
+  const notePath = options?.note;
 
-  console.log(
-    `📅 Processing reflection for ${date}${dryRun ? " (DRY RUN)" : ""}`,
-  );
+  // Step 1: Read the note to post
+  let reflection: ReflectionData | null;
 
-  // Step 1: Read the reflection from the repo (checked out by GitHub Actions)
-  const reflection = readReflection(date, contentDir);
-  if (!reflection) {
-    console.log(`ℹ️  No reflection found for ${date}, exiting`);
-    return;
+  if (notePath) {
+    // Read arbitrary note (BFS-discovered or manually specified)
+    console.log(`📄 Processing note: ${notePath}${dryRun ? " (DRY RUN)" : ""}`);
+    reflection = readNote(notePath, path.dirname(contentDir));
+    if (!reflection) {
+      console.log(`ℹ️  No note found at ${notePath}, exiting`);
+      return;
+    }
+  } else {
+    // Default: read reflection by date
+    console.log(
+      `📅 Processing reflection for ${date}${dryRun ? " (DRY RUN)" : ""}`,
+    );
+    reflection = readReflection(date, contentDir);
+    if (!reflection) {
+      console.log(`ℹ️  No reflection found for ${date}, exiting`);
+      return;
+    }
   }
 
-  console.log(`📄 Found reflection: ${reflection.title}`);
+  console.log(`📄 Found: ${reflection.title}`);
 
   // Check idempotency — skip if all sections already exist
   if (reflection.hasTweetSection && reflection.hasBlueskySection && reflection.hasMastodonSection) {
@@ -1889,7 +1944,10 @@ export async function main(options?: {
 
   // Step 6: Write embed sections to Obsidian vault via Headless Sync
   if (embedSections.length > 0 && vaultPullPromise) {
-    const obsidianNotePath = `reflections/${date}.md`;
+    // Derive the note path in the vault:
+    // For reflections: reflections/{date}.md
+    // For arbitrary notes: use the relative path from the note option
+    const obsidianNotePath = notePath || `reflections/${date}.md`;
     console.log(`📝 Writing ${embedSections.length} embed section(s) to Obsidian note: ${obsidianNotePath}`);
 
     // Await the vault pull that was running in parallel with social posting.
@@ -1939,15 +1997,15 @@ export async function main(options?: {
     });
   }
 
-  console.log(`🎉 Done processing reflection for ${date}`);
+  console.log(`🎉 Done processing ${notePath || `reflection for ${date}`}`);
   timer.printSummary();
 }
 
 // Run if executed directly
 const isMainModule = process.argv[1]?.endsWith("tweet-reflection.ts");
 if (isMainModule) {
-  const { date, dryRun } = parseArgs();
-  main({ date, dryRun }).catch((error) => {
+  const { date, dryRun, note } = parseArgs();
+  main({ date, dryRun, note }).catch((error) => {
     console.error(
       `❌ Error: ${error instanceof Error ? error.message : error}`,
     );

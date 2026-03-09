@@ -47,16 +47,13 @@ Error: Another sync instance is already running for this vault.
   
 ### 🤔 Why Does the Lock Persist?  
   
-The lock file is being removed, but something recreates it immediately.  
-And the process killer finds nothing to kill. What's going on?  
+🔒 The lock file is being removed, but something recreates it immediately. 👻 And the process killer finds nothing to kill. 🤔 What's going on?  
   
 ## 🔍 5 Whys Root Cause Analysis  
   
 ### 1️⃣ Why does the error occur after multiple posts?  
   
-When auto-post discovers items for 3 platforms, it processes them  
-sequentially. Each calls `syncObsidianVault()` → post → `pushObsidianVault()`.  
-Post N's push leaves state that conflicts with post N+1's pull.  
+⏩ When auto-post discovers items for 3 platforms, it processes them sequentially. 🖥️ Each calls `syncObsidianVault()` → post → `pushObsidianVault()`. ⚠️ Post N's push leaves state that conflicts with post N+1's pull.  
   
 ### 2️⃣ Why doesn't `ensureSyncClean` fix it?  
   
@@ -74,9 +71,7 @@ runs depends on timing, which varies under CI load.
   
 ### 4️⃣ Why does `killObProcesses` find zero processes?  
   
-The daemon may use a process name that doesn't match `obsidian-headless`  
-(e.g., bare `node`, `MainThread`, or a detached worker). The grep  
-pattern was too narrow.  
+🤖 The daemon may use a process name that doesn't match `obsidian-headless` (e.g., bare `node`, `MainThread`, or a detached worker). 🔍 The grep pattern was too narrow.  
   
 ### 5️⃣ What's the root fix?  
   
@@ -110,7 +105,7 @@ This ensures the next pipeline iteration starts with a clean slate.
   
 `killObProcesses` now matches both:  
 - `obsidian-headless` - the npm package name  
-- The vault directory path - catches any process operating on our vault  
+- 📂 The vault directory path - catches any process operating on our vault  
   
 This catches daemon children with unexpected names.  
   
@@ -127,13 +122,9 @@ This catches daemon children with unexpected names.
 🎯 **Don't kill what you just created.**  
   
 The cleanup code (`ensureSyncClean`) was placed between `sync-setup` and  
-`sync`, where it could kill the very daemon that `sync-setup` had just  
-spawned. This is a classic race condition where cleanup interferes with  
-initialization.  
+`sync`, where it could kill the very daemon that `sync-setup` had just spawned. ⚠️ This is a classic race condition where cleanup interferes with initialization.  
   
-The fix: move cleanup to a **boundary** between operations - before  
-setup starts, or after push completes - not in the middle of a  
-setup → sync pair.  
+🎯 The fix: move cleanup to a **boundary** between operations - before setup starts, or after push completes - not in the middle of a setup → sync pair.  
   
 ## 🧪 Testing  
   
@@ -166,12 +157,9 @@ setup → sync pair.
 1. 🔍 **Read CI logs carefully** - the absence of "Killing N processes" messages  
    was the first clue that something was wrong with the approach, not just timing.  
   
-2. 🧩 **Intermittent bugs need multi-pronged fixes** - a single change rarely  
-   eliminates a race condition. Defense in depth (cleanup placement + post-push  
-   cleanup + broader detection + more retries) provides robustness.  
+2. 🧩 **Intermittent bugs need multi-pronged fixes** - a single change rarely eliminates a race condition. 🛡️ Defense in depth (cleanup placement + post-push cleanup + broader detection + more retries) provides robustness.  
   
-3. 🔄 **Order of operations matters** - cleanup between init and use is a  
-   classic anti-pattern. Always clean at boundaries.  
+3. 🔄 **Order of operations matters** - cleanup between init and use is a classic anti-pattern. 🧹 Always clean at boundaries.  
   
 4. 📈 **Generous retries are cheap insurance** - exponential backoff up to 32s  
    costs nothing in the happy path and saves the whole pipeline in edge cases.  

@@ -48,6 +48,9 @@ function parseArgs(): AutoPostConfig {
       dryRun = true;
     } else if (args[i] === "--posting-hour" && args[i + 1]) {
       postingHourUTC = parseInt(args[i + 1] as string, 10);
+      if (postingHourUTC < 0 || postingHourUTC > 23 || Number.isNaN(postingHourUTC)) {
+        throw new Error(`Invalid posting hour: ${args[i + 1]} (must be 0-23)`);
+      }
       i++;
     }
   }

@@ -332,7 +332,8 @@ export function bfsContentDiscovery(
   );
 
   while (queue.length > 0 && platformsNeedingContent.size > 0) {
-    const currentPath = queue.shift()!;
+    const currentPath = queue.shift();
+    if (!currentPath) continue;
 
     if (visited.has(currentPath)) {
       continue;

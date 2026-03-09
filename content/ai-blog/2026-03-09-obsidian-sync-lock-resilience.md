@@ -182,6 +182,21 @@ setup → sync pair.
 - [Obsidian Headless Sync docs](https://help.obsidian.md/sync/headless)  
 - [obsidian-headless CLI](https://github.com/obsidianmd/obsidian-headless)  
   
+## 📚 Book Recommendations  
+  
+### ✨ Similar  
+- [🧑‍💻📈 The Pragmatic Programmer: Your Journey to Mastery](../books/the-pragmatic-programmer-your-journey-to-mastery.md) by Andrew Hunt and David Thomas — timeless advice on debugging, resilience, and craftsmanship.  
+- [🧼💾 Clean Code: A Handbook of Agile Software Craftsmanship](../books/clean-code.md) by Robert C. Martin — principles for writing maintainable code that is easier to debug.  
+- 🏗️🧱 Clean Architecture: A Craftsman's Guide to Software Structure and Design by Robert C. Martin — designing systems that are resilient to change and easier to reason about.  
+  
+### 🔄 Contrasting  
+- [🤔🌍 Sophie's World](../books/sophies-world.md) by Jostein Gaarder — a philosophical journey through the history of ideas, contrasting the technical world of debugging.  
+- [🧘‍♂️☀️ Meditations](../books/meditations.md) by Marcus Aurelius — Stoic philosophy on mental resilience, offering a different perspective on dealing with "intermittent failures" in life.  
+  
+### 🧠 Deeper Exploration  
+- [🦄👤🗓️ The Mythical Man-Month: Essays on Software Engineering](../books/the-mythical-man-month.md) by Frederick Brooks — essays on software engineering, exploring the nature of complex systems and why bugs persist.  
+- [⚙️🚀🛡️ The DevOps Handbook: How to Create World-Class Agility, Reliability, & Security in Technology Organizations](../books/the-devops-handbook.md) by Gene Kim, Jez Humble, and Patrick Debois — how to build high-velocity technology organizations that excel at debugging and resilience.  
+  
 ## 🦋 Bluesky    
 <blockquote class="bluesky-embed" data-bluesky-uri="at://did:plc:i4yli6h7x2uoj7acxunww2fc/app.bsky.feed.post/3mgmqkg5a3l27" data-bluesky-cid="bafyreifvjcg4bzbsb4t2dkw2rminoilsusx24wejk6xseptavmzw3drqcu" data-bluesky-embed-color-mode="system"><p lang="en">2026-03-09 | 🔒 Obsidian Sync Lock Resilience 🤖<br><br>🤖 | 🐛 Debugging | 🕵️‍♂️ Root Cause Analysis | 🛠️ CI/CD | 🤖 Automation <br>https://bagrounds.org/ai-blog/2026-03-09-obsidian-sync-lock-resilience</p>  
 &mdash; Bryan Grounds (<a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc?ref_src=embed">@bagrounds.bsky.social</a>) <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc/post/3mgmqkg5a3l27?ref_src=embed">March 8, 2026</a></blockquote><script async src="https://embed.bsky.app/static/embed.js" charset="utf-8"></script>  

@@ -1300,15 +1300,63 @@ export async function syncObsidianVault(credentials: {
     OBSIDIAN_AUTH_TOKEN: credentials.authToken,
   };
 
-  // ── Pre-setup cleanup ──────────────────────────────────────────────
-  // Kill any lingering processes and remove stale lock BEFORE sync-setup.
-  // Previous push (or a previous post's sync) may have left a daemon or
-  // lock. Cleaning before setup prevents sync-setup from conflicting
-  // with stale state.
+  // ── Pre-sync cleanup ──────────────────────────────────────────────
+  // Kill any lingering processes and remove stale lock.
   // @see https://github.com/obsidianmd/obsidian-headless/issues/4
   await ensureSyncClean(vaultDir);
 
-  // Set up the vault for syncing
+  // ── Warm cache fast path ──────────────────────────────────────────
+  // For warm caches (vault already configured from a previous run), try
+  // `ob sync` directly WITHOUT running `sync-setup` first. This avoids
+  // the lock contention that occurs when `sync-setup` is called on an
+  // already-configured vault: `sync-setup` may leave filesystem state
+  // (config writes, directory mtime updates) that causes the subsequent
+  // `ob sync` lock acquisition to fail its verify() step.
+  //
+  // ## 5 Whys — Obsidian sync lock failure (4th investigation, 2026-03-09)
+  //
+  // 1. Why does "Another sync instance" occur immediately after sync-setup?
+  //    `ob sync` creates `.sync.lock` dir, then verify() fails, throwing
+  //    the lock error. The lock dir is NOT released on acquire() failure.
+  //
+  // 2. Why does verify() fail?
+  //    The lock class sets mtime via utimesSync, reads it back via statSync.
+  //    On warm cache vaults, the mtime round-trip may lose precision due to
+  //    filesystem state from the cache restoration (tar extraction).
+  //
+  // 3. Why do retries keep failing after removing the lock?
+  //    Each `ob sync` attempt creates a fresh lock dir, fails verify(),
+  //    and exits without releasing the lock. The retry removes it, but the
+  //    next attempt recreates it and fails the same way.
+  //
+  // 4. Why didn't process-killing help?
+  //    There IS no lingering process — `sync-setup` doesn't spawn daemons.
+  //    The issue is entirely in `ob sync`'s own lock acquisition failing.
+  //
+  // 5. What is the root fix?
+  //    Skip `sync-setup` for warm caches. The vault config persists in the
+  //    cache, so `ob sync` can run directly. Only fall back to `sync-setup`
+  //    if `ob sync` reports missing configuration.
+
+  if (isWarmCache) {
+    console.log(`📥 Pulling latest vault content (warm cache fast path)...`);
+    try {
+      await runObSyncWithRetry(["sync", "--path", vaultDir], { env }, vaultDir);
+      return vaultDir;
+    } catch (error) {
+      const msg = error instanceof Error ? error.message : String(error);
+      // Exit code 3 = "No sync configuration found" → needs sync-setup
+      // Exit code 2 = "Encryption key not found" → needs sync-setup
+      if (msg.includes("No sync configuration") || msg.includes("Encryption key not found") || msg.includes("Run") && msg.includes("sync-setup")) {
+        console.log(`⚠️  Warm cache missing config, falling back to sync-setup...`);
+        await ensureSyncClean(vaultDir);
+      } else {
+        throw error;
+      }
+    }
+  }
+
+  // ── Cold cache / fallback: full sync-setup + sync ─────────────────
   const setupArgs = [
     "sync-setup",
     "--vault",
@@ -1323,13 +1371,12 @@ export async function syncObsidianVault(credentials: {
   console.log(`🔧 Setting up Obsidian Sync for vault: ${credentials.vaultName}`);
   await runObCommand(setupArgs, { env });
 
-  // NOTE: Do NOT call ensureSyncClean between sync-setup and sync.
-  // sync-setup may spawn a daemon that `ob sync` needs to communicate with.
-  // Killing it here would cause "Another sync instance" on the next sync.
-  // The pre-setup cleanup above handles stale state from previous runs.
+  // Remove any lock that sync-setup's config writes may have indirectly
+  // triggered (e.g., by updating .obsidian directory mtime). We only
+  // remove the lock file — we do NOT kill processes, since sync-setup
+  // does not spawn daemons.
+  removeSyncLock(vaultDir);
 
-  // Pull latest content with retry on lock contention.
-  // Uses exponential backoff: 2s, 4s, 8s, 16s, 32s between retries.
   console.log(`📥 Pulling latest vault content...`);
   await runObSyncWithRetry(["sync", "--path", vaultDir], { env }, vaultDir);
 
@@ -1364,12 +1411,50 @@ export async function runObSyncWithRetry(
           `  ⚠️ Sync lock contention (retry ${attempt + 1}/${maxRetries}), ` +
           `cleaning up and retrying in ${delayMs / 1000}s...`,
         );
+        // Diagnostic: log lock state and running processes for debugging
+        await logSyncDiagnostics(vaultDir);
         await ensureSyncClean(vaultDir);
         await new Promise((resolve) => setTimeout(resolve, delayMs));
       } else {
         throw error;
       }
     }
+  }
+}
+
+/**
+ * Log diagnostic information about the sync lock state and running processes.
+ * This helps debug intermittent lock contention issues in CI.
+ */
+export async function logSyncDiagnostics(vaultDir: string): Promise<void> {
+  const lockPath = path.join(vaultDir, ".obsidian", ".sync.lock");
+  try {
+    if (fs.existsSync(lockPath)) {
+      const stat = fs.statSync(lockPath);
+      const lockAgeMs = Date.now() - stat.mtimeMs;
+      console.log(
+        `  🔍 Lock exists: mtime=${stat.mtimeMs.toFixed(3)}, age=${lockAgeMs}ms, ` +
+        `isDir=${stat.isDirectory()}`,
+      );
+    } else {
+      console.log(`  🔍 Lock does not exist at ${lockPath}`);
+    }
+  } catch (err) {
+    console.log(`  🔍 Lock stat error: ${(err as Error).message}`);
+  }
+
+  // Log any processes related to obsidian or the vault
+  try {
+    const { stdout } = await execAsync(
+      `ps -u $(id -u) -o pid,args 2>/dev/null | grep -iE 'obsidian|ob |${vaultDir.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}' | grep -v grep || true`,
+    );
+    if (stdout.trim()) {
+      console.log(`  🔍 Related processes:\n${stdout.trim().split("\n").map(line => `    ${line.trim()}`).join("\n")}`);
+    } else {
+      console.log(`  🔍 No related processes found`);
+    }
+  } catch {
+    // ps/grep may fail — not critical
   }
 }
 
@@ -1461,6 +1546,39 @@ export function removeSyncLock(vaultDir: string): void {
  *    (c) Broaden process detection to also match vault paths.
  *    (d) Increase retry budget (5 retries, 2–32s backoff) for resilience.
  *
+ * ## 5 Whys — Obsidian sync lock failure (4th investigation, 2026-03-09)
+ *
+ * 1. **Why does "Another sync instance" occur immediately after sync-setup
+ *    even though sync-setup doesn't create the lock?**
+ *    Analysis of the obsidian-headless source revealed: sync-setup does NOT
+ *    create locks or spawn daemons. It only writes config files. The lock
+ *    error comes from `ob sync`'s OWN `acquire()` method failing internally.
+ *
+ * 2. **Why does `ob sync`'s acquire() fail on a freshly created lock?**
+ *    The lock class creates a `.sync.lock` directory, sets its mtime via
+ *    `utimesSync`, reads it back with `statSync`, and compares. If the
+ *    round-trip mtime doesn't match (`verify()` fails), it throws the
+ *    lock error. The lock directory is NOT cleaned up when acquire fails.
+ *
+ * 3. **Why does the mtime round-trip fail?**
+ *    On warm cache vaults restored from GitHub Actions cache (tar extraction),
+ *    filesystem metadata state may affect `utimesSync` → `statSync` precision.
+ *    The 5-second staleness window in the lock class also means any lock
+ *    created in the last 5 seconds blocks a new sync, even from the same process.
+ *
+ * 4. **Why do retries keep failing after removing the lock?**
+ *    Each `ob sync` attempt creates a fresh lock dir, fails verify(), and
+ *    exits without releasing it (release is only in the inner try-finally,
+ *    but acquire failure is caught by the outer catch). The retry removes
+ *    it, but the next attempt recreates it and fails the same way.
+ *
+ * 5. **What is the root fix?**
+ *    (a) Skip `sync-setup` for warm caches — the config persists in cache,
+ *        so `ob sync` can run directly without setup.
+ *    (b) Remove lock after sync-setup when full setup is needed.
+ *    (c) Add diagnostic logging (lock state, processes) for debugging.
+ *    (d) Verify lock removal in ensureSyncClean.
+ *
  * @see https://github.com/obsidianmd/obsidian-headless/issues/4
  * @see https://help.obsidian.md/sync/headless
  */
@@ -1537,10 +1655,19 @@ export async function killObProcesses(vaultDir?: string): Promise<void> {
 /**
  * Ensure no sync lock or lingering process blocks the next `ob sync`.
  * Combines lock file removal with process cleanup for maximum reliability.
+ * Verifies the lock is actually gone after removal.
  */
 export async function ensureSyncClean(vaultDir: string): Promise<void> {
   await killObProcesses(vaultDir);
   removeSyncLock(vaultDir);
+
+  // Verify lock is actually gone — belt and suspenders.
+  // A running process could recreate it between removal and verification.
+  const lockPath = path.join(vaultDir, ".obsidian", ".sync.lock");
+  if (fs.existsSync(lockPath)) {
+    console.warn(`  ⚠️ Lock still exists after cleanup, removing again`);
+    fs.rmSync(lockPath, { recursive: true, force: true });
+  }
 }
 
 /**

@@ -72,6 +72,8 @@ export interface FindContentConfig {
   readonly contentDir: string;
   /** Platforms to find content for (only those with configured credentials) */
   readonly platforms: readonly Platform[];
+  /** UTC hour at which reflections become eligible for posting the next day (default: 17 = 9 AM PST) */
+  readonly postingHourUTC?: number;
 }
 
 // --- Pure Functions ---
@@ -272,6 +274,37 @@ export function getYesterdayDate(): string {
 }
 
 /**
+ * Check if a reflection file is eligible for posting based on its date.
+ *
+ * A reflection from date D should not be posted until postingHourUTC on D+1.
+ * For example, a reflection from 2026-03-08 with postingHourUTC=17 (9 AM PST)
+ * is not eligible until 2026-03-09 at 17:00 UTC.
+ *
+ * Non-reflection files are always eligible (returns true).
+ *
+ * @param relativePath - Path relative to content root (e.g. "reflections/2026-03-08.md")
+ * @param postingHourUTC - UTC hour when reflections become eligible (default: 17)
+ * @param now - Current time (default: new Date(), injectable for testing)
+ * @returns true if the note is eligible for posting
+ */
+export function isReflectionEligibleForPosting(
+  relativePath: string,
+  postingHourUTC: number = 17,
+  now: Date = new Date(),
+): boolean {
+  const match = relativePath.match(/^reflections\/(\d{4}-\d{2}-\d{2})\.md$/);
+  if (!match) return true; // Not a reflection — always eligible
+
+  const reflectionDate = match[1]!;
+  // A reflection from date D should not be posted until postingHourUTC on D+1
+  const eligibleAfter = new Date(reflectionDate + "T00:00:00Z");
+  eligibleAfter.setUTCDate(eligibleAfter.getUTCDate() + 1);
+  eligibleAfter.setUTCHours(postingHourUTC, 0, 0, 0);
+
+  return now >= eligibleAfter;
+}
+
+/**
  * Check if the prior day's reflection still needs posting on any of the
  * given platforms.
  *
@@ -301,8 +334,11 @@ export function getPriorDayReflectionIfNeeded(
  * haven't been posted to all configured platforms.
  *
  * Starts from the most recent reflection and follows markdown links.
- * Skips index/home pages and returns up to one note per platform
- * that still needs posting.
+ * Skips index/home pages and reflections that are too recent to post.
+ * Returns up to one note per platform that still needs posting.
+ *
+ * A reflection from date D is not eligible for posting until
+ * postingHourUTC on D+1 (e.g., 9 AM Pacific the next day).
  *
  * @returns Array of content-to-post items, at most one per platform.
  */
@@ -310,6 +346,7 @@ export function bfsContentDiscovery(
   config: FindContentConfig,
 ): readonly ContentToPost[] {
   const { contentDir, platforms } = config;
+  const postingHourUTC = config.postingHourUTC ?? 17;
 
   // Find starting point
   const startPath = findMostRecentReflection(contentDir);
@@ -347,19 +384,33 @@ export function bfsContentDiscovery(
 
     // Check if this note is postable content (not an index page)
     if (isPostableContent(note)) {
-      // Check each platform that still needs content
-      for (const platform of [...platformsNeedingContent]) {
-        if (!note.postedPlatforms.has(platform)) {
-          results.push({ platform, note });
-          platformsNeedingContent.delete(platform);
-          console.log(
-            `✅ Found content for ${platform}: ${note.title} (${note.relativePath})`,
-          );
+      // Skip reflections that are too recent to post (must wait until 9am next day)
+      if (!isReflectionEligibleForPosting(note.relativePath, postingHourUTC)) {
+        const dateMatch = note.relativePath.match(/(\d{4}-\d{2}-\d{2})/);
+        const eligibleDate = dateMatch ? (() => {
+          const d = new Date(dateMatch[1] + "T00:00:00Z");
+          d.setUTCDate(d.getUTCDate() + 1);
+          return d.toISOString().split("T")[0];
+        })() : "the next day";
+        console.log(
+          `⏳ Reflection too recent to post: ${note.relativePath} (eligible after ${eligibleDate} ${postingHourUTC}:00 UTC)`,
+        );
+      } else {
+        // Check each platform that still needs content
+        for (const platform of [...platformsNeedingContent]) {
+          if (!note.postedPlatforms.has(platform)) {
+            results.push({ platform, note });
+            platformsNeedingContent.delete(platform);
+            console.log(
+              `✅ Found content for ${platform}: ${note.title} (${note.relativePath})`,
+            );
+          }
         }
       }
     }
 
-    // Enqueue linked notes (BFS expansion)
+    // Enqueue linked notes (BFS expansion) — always follow links,
+    // even from reflections that are too recent to post
     for (const linkedPath of note.linkedNotePaths) {
       if (!visited.has(linkedPath)) {
         queue.push(linkedPath);

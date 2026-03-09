@@ -132,6 +132,7 @@ async function autoPost(): Promise<void> {
   const findConfig: FindContentConfig = {
     contentDir: config.contentDir,
     platforms,
+    postingHourUTC: config.postingHourUTC,
   };
 
   const contentToPost = discoverContentToPost(findConfig, pastPostingHour);

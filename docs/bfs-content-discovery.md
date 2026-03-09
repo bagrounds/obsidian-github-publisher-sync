@@ -59,6 +59,7 @@ Pure BFS content discovery module. Key exports:
 | `discoverContentToPost(config, isPastPostingHour)` | Main entry point — returns content to post |
 | `bfsContentDiscovery(config)` | BFS across linked notes |
 | `getPriorDayReflectionIfNeeded(config)` | Check if yesterday's reflection needs posting |
+| `isReflectionEligibleForPosting(path, hour, now)` | Check if a reflection is old enough to post |
 | `readContentNote(path, contentDir)` | Read and parse any content note |
 | `extractMarkdownLinks(body, notePath, contentDir)` | Parse `[text](path.md)` links |
 | `detectPostedPlatforms(content)` | Check for `## 🐦 Tweet` etc. sections |
@@ -97,10 +98,22 @@ Starting from the most recent reflection:
 2. Add linked notes to the BFS queue
 3. For each visited note:
    - Skip if it's an index page (`index.md`) or home page
+   - Skip if it's a reflection that is too recent to post (must wait until 9 AM the next day)
    - Skip if it has too little content (<50 chars after headers)
    - Check which platforms still need a post
    - If the note is missing an embed for a needed platform, select it
 4. Return at most **one note per platform** per run
+
+**Note:** Even when a reflection is too recent to post, BFS still follows its
+links to discover other content. This ensures that today's reflection can serve
+as the BFS starting point without being posted prematurely.
+
+### Reflection Posting Time Guard
+
+A reflection from date D is never posted until the posting hour on D+1.
+For example, with the default posting hour of 17:00 UTC (9 AM PST):
+- A reflection from 2026-03-08 is not eligible until 2026-03-09 at 17:00 UTC.
+- This prevents posting today's reflection until 9 AM the next day.
 
 ### Content Exclusions
 
@@ -139,7 +152,7 @@ workflow_dispatch:
 
 ### BFS Module Tests (`find-content-to-post.test.ts`)
 
-58 tests covering:
+68 tests covering:
 - Frontmatter parsing
 - Index/home page detection
 - Markdown link extraction
@@ -148,7 +161,8 @@ workflow_dispatch:
 - Postable content filtering
 - Most recent reflection finding
 - Prior day reflection checking
-- BFS content discovery
+- Reflection posting eligibility (time guard)
+- BFS content discovery (including today's reflection skipping)
 - Content discovery orchestration
 - Time-of-day checking
 - Property-based tests (50 iterations each)

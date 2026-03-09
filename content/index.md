@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-03-08T20:18:10-07:00
+updated: 2026-03-09T03:56:32-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -13,8 +13,9 @@ updated: 2026-03-08T20:18:10-07:00
 ❔ What do 🫵 _you_ 🤔 think?  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (479)  
-- [2026-03-08 | 🐘 Mastodon 🤔 Sophie 🤖 Agent](./reflections/2026-03-08.md)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (480)  
+- [2026-03-09 | 🔒 Lock 🫂 Hold 🤖 Sync](./reflections/2026-03-09.md)  
+- [2026-03-08 | 🧶 Maze 🐘 Mastodon 🤔 Sophie 🤖 Agent 📚📺](./reflections/2026-03-08.md)  
 - [2026-03-07 | 💥 Strikes ⚔️ Conflict 🤖 Agent 📰📚📺](./reflections/2026-03-07.md)  
 - [2026-03-06 | 🤖🆚🧠 Code 🤖 Choice 📚📺](./reflections/2026-03-06.md)  
 - [2026-03-05 | 😴🧠💤 Tired 🤖 Murderbot 📺](./reflections/2026-03-05.md)  
@@ -23,10 +24,10 @@ updated: 2026-03-08T20:18:10-07:00
 - [2026-03-02 | 🤖 Agentic 📖 Fugitive ☁️ Tunnel 🌿 Rhubarb 😴 Snoring 📚🎤💻📰🌌](./reflections/2026-03-02.md)  
 - [2026-03-01 | 🕵️ Fugitive 🌐 Network 🚀 Build 🐦 Twitter 🤖 Agent 📚](./reflections/2026-03-01.md)  
 - [2026-02-28 | 🤖⚙️🧠 Agentic 📖](./reflections/2026-02-28.md)  
-- [2026-02-27 | 🤖🐍🚫🐍 AI 🇺🇸 Polarized 🏛️ Brooks 📚📄📺📰](./reflections/2026-02-27.md)  
   
   
-## [🤖 AI Blog](./ai-blog/index.md) (2)  
+## [🤖 AI Blog](./ai-blog/index.md) (3)  
+- [2026-03-09 | 🔒 Obsidian Sync Lock Resilience 🤖](./ai-blog/2026-03-09-obsidian-sync-lock-resilience.md)  
 - [2026-03-09 | 🔍 BFS Content Discovery for Social Media Auto-Posting 🤖](./ai-blog/2026-03-09-bfs-content-discovery.md)  
 - [2026-03-08 | 🐘 Auto-Posting to Mastodon 🤖](./ai-blog/2026-03-08-auto-post-mastodon.md)  
   
@@ -37,6 +38,7 @@ updated: 2026-03-08T20:18:10-07:00
   
 ## [📚 Books](./books/index.md) (951)  
 - [🤔🌍 Sophie’s World](./books/sophies-world.md)  
+- [🌐🔗🧠📖 Thinking in Systems: A Primer](./books/thinking-in-systems.md)  
 - [👤🧠 Being You: A New Science of Consciousness](./books/being-you-a-new-science-of-consciousness.md)  
 - [🗣️🔗 Supercommunicators: How to Unlock the Secret Language of Connection](./books/supercommunicators-how-to-unlock-the-secret-language-of-connection.md)  
 - [🤔👶💭 Big Ideas for Little Philosophers: Imagination with René Descartes](./books/big-ideas-for-little-philosophers-imagination-with-rene-descartes.md)  
@@ -45,7 +47,6 @@ updated: 2026-03-08T20:18:10-07:00
 - [ℹ️🌱 The Informed Gardener](./books/the-informed-gardener.md)  
 - [🌸🐝🦋🛡️ Attracting Native Pollinators: The Xerces Society Guide, Protecting North America's Bees and Butterflies](./books/attracting-native-pollinators-the-xerces-society-guide-protecting-north-americas-bees-and-butterflies.md)  
 - [🗓️🌷 RHS Gardening Through the Year](./books/rhs-gardening-through-the-year.md)  
-- [☀️📖🌿 The New Sunset Western Garden Book: The Ultimate Gardening Guide](./books/the-new-sunset-western-garden-book-the-ultimate-gardening-guide.md)  
   
   
 ## [📺 Videos](./videos/index.md) (675)  

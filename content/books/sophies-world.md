@@ -2,7 +2,7 @@
 title: 🤔🌍 Sophie’s World
 aliases:
   - 🤔🌍 Sophie’s World
-URL: https://bagrounds.org/books/sophie-s-world
+URL: https://bagrounds.org/books/sophies-world
 share: true
 CTA: 💡 Uncover wisdom.
 affiliate link: https://amzn.to/4bc7idt

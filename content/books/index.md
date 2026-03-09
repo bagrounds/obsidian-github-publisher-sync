@@ -5,10 +5,10 @@ aliases:
 share: true
 URL: https://bagrounds.org/books
 backlinks: false
-updated: 2026-03-07T17:48:28-08:00
+updated: 2026-03-08T20:18:10-07:00
 ---
 [Home](../index.md)  
-# 📚 Books (950)  
+# 📚 Books (951)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [💻0️⃣ Source Code: My Beginnings](./source-code-my-beginnings.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)  
@@ -588,6 +588,7 @@ updated: 2026-03-07T17:48:28-08:00
 - [💪❤️ So Good They Can't Ignore You: Why Skills Trump Passion in the Quest for Work You Love](./so-good-they-cant-ignore-you-why-skills-trump-passion-in-the-quest-for-work-you-love.md)  
 - [😴👶  Solve Your Child's Sleep Problems](./solve-your-childs-sleep-problems.md)  
 - [⚠️👤 Something Happened](./something-happened.md)  
+- [🤔🌍 Sophie’s World](./sophies-world.md)  
 - [⛲🔌🤔⚙️ Sources of Power: How People Make Decisions](./sources-of-power-how-people-make-decisions.md)  
 - [🧊💰⛵🏛️ So You Want to Own Greenland?: Lessons from the Vikings to Trump](./so-you-want-to-own-greenland-lessons-from-the-vikings-to-trump.md)  
 - [⚡🧠🏃 Spark: The Revolutionary New Science of Exercise and the Brain](./spark-the-revolutionary-new-science-of-exercise-and-the-brain.md)  

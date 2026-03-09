@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-03-09T04:57:02-07:00
+updated: 2026-03-09T16:00:24-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -14,7 +14,7 @@ updated: 2026-03-09T04:57:02-07:00
 💬 Comment on any page with your GitHub account.  
   
 ## [🪞 Reflections](./reflections/index.md) ~ Blog (480)  
-- [2026-03-09 | 🚫🧬 Lock 🫂 Hold 🤖 Sync](./reflections/2026-03-09.md)  
+- [2026-03-09 | 🔁🚫🧬 Lock 🫂 Hold 🤖 Sync](./reflections/2026-03-09.md)  
 - [2026-03-08 | 🧶 Maze 🐘 Mastodon 🤔 Sophie 🤖 Agent 📚📺](./reflections/2026-03-08.md)  
 - [2026-03-07 | 💥 Strikes ⚔️ Conflict 🤖 Agent 📰📚📺](./reflections/2026-03-07.md)  
 - [2026-03-06 | 🤖🆚🧠 Code 🤖 Choice 📚📺](./reflections/2026-03-06.md)  
@@ -26,9 +26,13 @@ updated: 2026-03-09T04:57:02-07:00
 - [2026-02-28 | 🤖⚙️🧠 Agentic 📖](./reflections/2026-02-28.md)  
   
   
-## [🤖 AI Blog](./ai-blog/index.md) (4)  
+## [🤖 AI Blog](./ai-blog/index.md) (8)  
+- [2026-03-09 | 📏 Platform Post Length Enforcement: Counting Graphemes, Not Characters 🤖](./ai-blog/2026-03-09-platform-post-length-enforcement.md)  
 - [2026-03-09 | 🚫 Platform Kill Switches for Social Media Auto-Posting 🤖](./ai-blog/2026-03-09-platform-disable-env-vars.md)  
+- [2026-03-09 | 🔒 Obsidian Sync Lock Resilience (V2) 🤖](./ai-blog/2026-03-09-obsidian-sync-lock-resilience-v2.md)  
+- [2026-03-09 | 🔒 Obsidian Sync Lock Resilience (V1) 🤖](./ai-blog/2026-03-09-obsidian-sync-lock-resilience-v1.md)  
 - [2026-03-09 | 🔒 Obsidian Sync Lock Resilience 🤖](./ai-blog/2026-03-09-obsidian-sync-lock-resilience.md)  
+- [2026-03-09 | 🔁 Squashing Duplicate Posts - A Tale of Two Truths 🤖](./ai-blog/2026-03-09-duplicate-post-prevention.md)  
 - [2026-03-09 | 🔍 BFS Content Discovery for Social Media Auto-Posting 🤖](./ai-blog/2026-03-09-bfs-content-discovery.md)  
 - [2026-03-08 | 🐘 Auto-Posting to Mastodon 🤖](./ai-blog/2026-03-08-auto-post-mastodon.md)  
   
@@ -38,6 +42,8 @@ updated: 2026-03-09T04:57:02-07:00
   
   
 ## [📚 Books](./books/index.md) (951)  
+- [👩🏼‍❤️‍💋‍👨🏻🔗 Attached: The New Science of Adult Attachment and How It Can Help You Find - and Keep - Love](./books/attached-the-new-science-of-adult-attachment-and-how-it-can-help-you-find-and-keep-love.md)  
+- [❤️🧠 Love Sense: The Revolutionary New Science of Romantic Relationships](./books/love-sense-the-revolutionary-new-science-of-romantic-relationships.md)  
 - [🫂 Hold Me Tight: Seven Conversations for a Lifetime of Love](./books/hold-me-tight-seven-conversations-for-a-lifetime-of-love.md)  
 - [🤔🌍 Sophie’s World](./books/sophies-world.md)  
 - [🌐🔗🧠📖 Thinking in Systems: A Primer](./books/thinking-in-systems.md)  
@@ -46,8 +52,6 @@ updated: 2026-03-09T04:57:02-07:00
 - [🤔👶💭 Big Ideas for Little Philosophers: Imagination with René Descartes](./books/big-ideas-for-little-philosophers-imagination-with-rene-descartes.md)  
 - [🏍️🧘❓ Zen and the Art of Motorcycle Maintenance: An Inquiry into Values](./books/zen-and-the-art-of-motorcycle-maintenance-an-inquiry-into-values.md)  
 - [⚔️🤫 The Twilight War: The Secret History of America's Thirty-Year Conflict with Iran](./books/the-twilight-war-the-secret-history-of-americas-thirty-year-conflict-with-iran.md)  
-- [ℹ️🌱 The Informed Gardener](./books/the-informed-gardener.md)  
-- [🌸🐝🦋🛡️ Attracting Native Pollinators: The Xerces Society Guide, Protecting North America's Bees and Butterflies](./books/attracting-native-pollinators-the-xerces-society-guide-protecting-north-americas-bees-and-butterflies.md)  
   
   
 ## [📺 Videos](./videos/index.md) (675)  
@@ -64,11 +68,11 @@ updated: 2026-03-09T04:57:02-07:00
   
   
 ## [🌌 Topics](./topics/index.md) (91)  
+- [🫂💖 Attachment Theory](./topics/attachment-theory.md)  
 - [🤔📚 Philosophy](./topics/philosophy.md)  
 - [📚🎭 Humanities](./topics/humanities.md)  
 - [📄👔 My Resume](./topics/my-resume.md)  
 - [🐱💔 Feline GI Lymphoma](./topics/feline-gi-lymphoma.md)  
-- [🔢➕➕ 3 Sum](./topics/programming-problems/3-sum.md)  
   
   
 ## [📄  Articles](./articles/index.md) (80)  
@@ -88,9 +92,9 @@ updated: 2026-03-09T04:57:02-07:00
   
   
 ## [💾 Software](./software/index.md) (31)  
+- [🤖♊ Gemini](./software/gemini.md)  
 - [☁️🛡️ Cloudflare Tunnel (cloudflared)](./software/cloudflare-tunnel.md)  
 - [💻🔓 OpenCode](./software/opencode.md)  
-- [🤖♊ Gemini](./software/gemini.md)  
 - [👽🦺 Zod](./software/zod.md)  
 - [💡🔧📏🔮〰️ Vensim](./software/vensim.md)  
   

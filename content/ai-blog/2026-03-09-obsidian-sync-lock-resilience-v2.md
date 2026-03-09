@@ -43,7 +43,7 @@ Error: Another sync instance is already running for this vault.
 | 2nd | Invisible process | Kill via `ps -o args` grep | ❌ Daemon name mismatch |  
 | 3rd | Daemon from sync-setup | Move cleanup before setup, post-push cleanup | ❌ Still fails |  
   
-Each fix addressed the symptoms but not the root cause. The 3rd fix's mental model was wrong: **`sync-setup` does NOT spawn daemons**.  
+⚠️ Each fix addressed the symptoms but not the root cause. The 3rd fix's mental model was wrong: **`sync-setup` does NOT spawn daemons**.  
   
 ### 📋 4th Investigation — Decompiling the Lock  
   
@@ -72,23 +72,23 @@ class Ce {
   
 ### 1️⃣ Why does "Another sync instance" occur immediately after sync-setup?  
   
-`sync-setup` does NOT create locks or spawn daemons — it only writes config files. The error comes from `ob sync`'s own `acquire()` failing internally.  
+`sync-setup` does NOT create locks or spawn daemons — it only writes config files. ❌ The error comes from `ob sync`'s own `acquire()` failing internally.  
   
 ### 2️⃣ Why does acquire() fail on a freshly created lock?  
   
-The lock class sets mtime via `utimesSync`, reads it back with `statSync`, and compares. If the round-trip mtime doesn't match, it throws the error. The lock directory persists because `release()` is never called on failure.  
+🔐 The lock class sets mtime via `utimesSync`, reads it back with `statSync`, and compares. ⚠️ If the round-trip mtime doesn't match, it throws the error. 🗂️ The lock directory persists because `release()` is never called on failure.  
   
 ### 3️⃣ Why does the mtime round-trip fail?  
   
-On warm cache vaults restored from GitHub Actions cache (tar extraction), filesystem metadata state may affect `utimesSync` → `statSync` precision. The interaction between `sync-setup`'s config writes to `.obsidian/` and the subsequent lock acquisition may also trigger the issue.  
+💾 On warm cache vaults restored from GitHub Actions cache (tar extraction), filesystem metadata state may affect `utimesSync` → `statSync` precision. 🔗 The interaction between `sync-setup`'s config writes to `.obsidian/` and the subsequent lock acquisition may also trigger the issue.  
   
 ### 4️⃣ Why do retries keep failing after removing the lock?  
   
-Each `ob sync` attempt creates a fresh lock dir, fails `verify()`, and exits without releasing it. Retries remove it, but the next attempt recreates it and fails identically — a repeating cycle.  
+🔄 Each `ob sync` attempt creates a fresh lock dir, fails `verify()`, and exits without releasing it. ♻️ Retries remove it, but the next attempt recreates it and fails identically — a repeating cycle.  
   
 ### 5️⃣ What's the root fix?  
   
-🎯 **Skip `sync-setup` for warm caches.** The vault configuration persists in the GitHub Actions cache, so `ob sync` can run directly without setup. This eliminates whatever interaction triggers the verify failure.  
+🎯 **Skip `sync-setup` for warm caches.** 💾 The vault configuration persists in the GitHub Actions cache, so `ob sync` can run directly without setup. 🛠️ This eliminates whatever interaction triggers the verify failure.  
   
 ## 🛠️ The Fix  
   
@@ -106,7 +106,7 @@ Each `ob sync` attempt creates a fresh lock dir, fails `verify()`, and exits wit
   └───────────────────┘  
 ```  
   
-For warm caches (the common CI case), `ob sync` runs directly without `sync-setup`. If it reports missing config, it falls back to full setup.  
+🚀 For warm caches (the common CI case), `ob sync` runs directly without `sync-setup`. 🔄 If it reports missing config, it falls back to full setup.  
   
 ### 🔍 Diagnostic Logging  
   
@@ -126,10 +126,9 @@ When full setup is needed, `removeSyncLock()` runs after `sync-setup` to clean u
   
 ### 🔬 Read the Source Code  
   
-Three investigations built theories about daemons and race conditions. The 4th investigation **read the actual lock mechanism** and discovered:  
-- `sync-setup` doesn't spawn daemons  
-- The lock error is `ob sync`'s own `verify()` failing  
-- The lock directory leaks when `acquire()` fails  
+🔬 Three investigations built theories about daemons and race conditions. 🕵️ The 4th investigation **read the actual lock mechanism** and discovered: 🔗 `sync-setup` doesn't spawn daemons  
+- 🔗 The lock error is `ob sync`'s own `verify()` failing  
+- 🗂️ The lock directory leaks when `acquire()` fails  
   
 ### 🚫 Stop Doing What Doesn't Work  
   
@@ -137,7 +136,7 @@ Investigations 1–3 added more complexity: process killing, broader grep patter
   
 ### 📦 Cache Persistence is Powerful  
   
-The vault configuration from `sync-setup` persists in the GitHub Actions cache. By recognizing this, we can skip setup entirely for warm caches — eliminating the problematic code path completely.  
+💾 The vault configuration from `sync-setup` persists in the GitHub Actions cache. 🧠 By recognizing this, we can skip setup entirely for warm caches — eliminating the problematic code path completely.  
   
 ## 🧪 Testing  
   
@@ -155,7 +154,7 @@ The vault configuration from `sync-setup` persists in the GitHub Actions cache. 
   
 3. 📋 **Log what you find (and don't find)** — the diagnostic logging shows exactly what state exists during retries, making future investigations faster.  
   
-4. 🔄 **Mental models can be wrong** — three investigations assumed `sync-setup` spawns daemons. It doesn't. Always verify assumptions.  
+4. 🔄 **Mental models can be wrong** — three investigations assumed `sync-setup` spawns daemons. ❌ It doesn't. ✅ Always verify assumptions.  
   
 ## 🔗 References  
   

@@ -14,7 +14,7 @@ CTA: 🌐 Understand interactions.
 [🛒 Thinking in Systems: A Primer. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4jxdezW)  
   
 ## 🤖 AI Summaries  
-#### **TLDR**  
+  
 Systems thinking provides a framework for understanding complex, interconnected problems by focusing on relationships, feedback loops, and emergent behaviors, rather than isolated events.  
   
 #### **A New Perspective 🧐**  

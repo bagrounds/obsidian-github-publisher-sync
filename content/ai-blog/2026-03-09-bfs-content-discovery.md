@@ -259,7 +259,7 @@ main({ note: "reflections/2026-03-08.md" })
 🏛️ In 1736, [Leonhard Euler](https://en.wikipedia.org/wiki/Leonhard_Euler) proved that it was impossible to walk through the city of [Königsberg](https://en.wikipedia.org/wiki/Seven_Bridges_of_K%C3%B6nigsberg) crossing each of its seven bridges exactly once.    
 🧮 This proof is considered the birth of **graph theory** — the mathematical foundation for BFS, DFS, Dijkstra's algorithm, and every other graph traversal.    
 🌐 Today, graph algorithms power everything from social networks to GPS navigation to... auto-posting blog posts to social media.    
-🦆 Euler would probably be amused that his bridge problem now helps a digital garden share notes about [Sophie's World](../books/sophies-world.md) on Mastodon.    
+🦆 Euler would probably be amused that his bridge problem now helps a digital garden share notes about [🤔🌍 Sophie’s World](../books/sophies-world.md) on Mastodon.    
   
 > 🌉 *From bridges to bytes, from Königsberg to the cloud — the graph connects all things.*    
   
@@ -306,4 +306,4 @@ main({ note: "reflections/2026-03-08.md" })
 ### 🧠 Deeper Exploration  
   
 - 📘 Introduction to Algorithms by Cormen, Leiserson, Rivest, and Stein — the definitive reference for BFS, DFS, and graph algorithms    
-- 🌐 Gödel, Escher, Bach by Douglas Hofstadter — recursive structures, self-reference, and the strange loops that connect mathematics, art, and computation    
+- [♾️📐🎶🥨 Gödel, Escher, Bach: An Eternal Golden Braid](../books/godel-escher-bach.md) by Douglas Hofstadter — recursive structures, self-reference, and the strange loops that connect mathematics, art, and computation    

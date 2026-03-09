@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-03-07T17:48:28-08:00
+updated: 2026-03-08T20:18:10-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -26,7 +26,8 @@ updated: 2026-03-07T17:48:28-08:00
 - [2026-02-27 | 🤖🐍🚫🐍 AI 🇺🇸 Polarized 🏛️ Brooks 📚📄📺📰](./reflections/2026-02-27.md)  
   
   
-## [🤖 AI Blog](./ai-blog/index.md) (1)  
+## [🤖 AI Blog](./ai-blog/index.md) (2)  
+- [2026-03-09 | 🔍 BFS Content Discovery for Social Media Auto-Posting 🤖](./ai-blog/2026-03-09-bfs-content-discovery.md)  
 - [2026-03-08 | 🐘 Auto-Posting to Mastodon 🤖](./ai-blog/2026-03-08-auto-post-mastodon.md)  
   
   
@@ -35,11 +36,11 @@ updated: 2026-03-07T17:48:28-08:00
   
   
 ## [📚 Books](./books/index.md) (951)  
+- [🤔🌍 Sophie’s World](./books/sophies-world.md)  
 - [👤🧠 Being You: A New Science of Consciousness](./books/being-you-a-new-science-of-consciousness.md)  
 - [🗣️🔗 Supercommunicators: How to Unlock the Secret Language of Connection](./books/supercommunicators-how-to-unlock-the-secret-language-of-connection.md)  
 - [🤔👶💭 Big Ideas for Little Philosophers: Imagination with René Descartes](./books/big-ideas-for-little-philosophers-imagination-with-rene-descartes.md)  
 - [🏍️🧘❓ Zen and the Art of Motorcycle Maintenance: An Inquiry into Values](./books/zen-and-the-art-of-motorcycle-maintenance-an-inquiry-into-values.md)  
-- [🤔🌍 Sophie’s World](./books/sophies-world.md)  
 - [⚔️🤫 The Twilight War: The Secret History of America's Thirty-Year Conflict with Iran](./books/the-twilight-war-the-secret-history-of-americas-thirty-year-conflict-with-iran.md)  
 - [ℹ️🌱 The Informed Gardener](./books/the-informed-gardener.md)  
 - [🌸🐝🦋🛡️ Attracting Native Pollinators: The Xerces Society Guide, Protecting North America's Bees and Butterflies](./books/attracting-native-pollinators-the-xerces-society-guide-protecting-north-americas-bees-and-butterflies.md)  
@@ -47,7 +48,8 @@ updated: 2026-03-07T17:48:28-08:00
 - [☀️📖🌿 The New Sunset Western Garden Book: The Ultimate Gardening Guide](./books/the-new-sunset-western-garden-book-the-ultimate-gardening-guide.md)  
   
   
-## [📺 Videos](./videos/index.md) (674)  
+## [📺 Videos](./videos/index.md) (675)  
+- [❓🤖🧑‍💻🧑‍🤝‍🧑 45 People, $200M Revenue. The Question Nobody's Asking About AI and Your Team Size.](./videos/45-people-200m-revenue-the-question-nobodys-asking-about-ai-and-your-team-size.md)  
 - [💪🛠️🧠 How I trained myself to crave hard work](./videos/how-i-trained-myself-to-crave-hard-work.md)  
 - [🗣️🇺🇸⚔️👤 Rebecca Solnit Says Trump's Strongest Foil Has Been Here All Along | The Interview](./videos/rebecca-solnit-says-trumps-strongest-foil-has-been-here-all-along-the-interview.md)  
 - [🏛️🗣️📰 This Week in Politics | Explainer](./videos/this-week-in-politics-explainer-march-6-2026.md)  
@@ -57,7 +59,6 @@ updated: 2026-03-07T17:48:28-08:00
 - [🤖🆚🧠⏳📉🔊 Claude Code vs Codex: The Decision That Compounds Every Week You Delay That Nobody Is Talking About](./videos/claude-code-vs-codex-the-decision-that-compounds-every-week-you-delay-that-nobody-is-talking-about.md)  
 - [😴🧠👨‍⚕️ Psychiatrist Explains Why You Feel Tired All The Time (No Matter What You Do...)](./videos/psychiatrist-explains-why-you-feel-tired-all-the-time-no-matter-what-you-do.md)  
 - [🤯➡️🗣️👥➡️🤖 Everyone You Know Is About to Try Claude (I Showed 3 People for 5 Minutes - All 3 Switched)](./videos/everyone-you-know-is-about-to-try-claude-i-showed-3-people-for-5-minutes-all-3-switched.md)  
-- [🎤✨🗣️ TED's secret to great public speaking | Chris Anderson | TED](./videos/teds-secret-to-great-public-speaking-chris-anderson-ted.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  

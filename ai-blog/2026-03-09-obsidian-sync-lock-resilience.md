@@ -142,7 +142,7 @@ setup → sync pair.
 - `killObProcesses` — graceful no-op behavior
 - `runObSyncWithRetry` — export verification
 
-📊 102 total tests passing (93 existing + 9 new).
+📊 170 total tests passing across tweet-reflection (102) and BFS discovery (68).
 
 ## 🏗️ Architecture Diagram
 

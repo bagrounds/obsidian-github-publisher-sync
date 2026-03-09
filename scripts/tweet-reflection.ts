@@ -1483,7 +1483,7 @@ export async function killObProcesses(vaultDir?: string): Promise<void> {
     }
     const grepPattern = patterns.join("|");
     const { stdout } = await execAsync(
-      `ps -u $(id -u) -o pid,args | grep -E '${grepPattern}' | grep -v grep | grep -v $$  | awk '{print $1}'`,
+      `ps -u $(id -u) -o pid,args | grep -E '${grepPattern}' | grep -v grep | grep -v $$ | awk '{print $1}'`,
     );
     const pids = stdout.trim().split("\n").filter(Boolean).filter(
       // Exclude our own process

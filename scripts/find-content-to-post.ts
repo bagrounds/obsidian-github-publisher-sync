@@ -386,8 +386,14 @@ export function bfsContentDiscovery(
     if (isPostableContent(note)) {
       // Skip reflections that are too recent to post (must wait until 9am next day)
       if (!isReflectionEligibleForPosting(note.relativePath, postingHourUTC)) {
+        const dateMatch = note.relativePath.match(/(\d{4}-\d{2}-\d{2})/);
+        const eligibleDate = dateMatch ? (() => {
+          const d = new Date(dateMatch[1] + "T00:00:00Z");
+          d.setUTCDate(d.getUTCDate() + 1);
+          return d.toISOString().split("T")[0];
+        })() : "the next day";
         console.log(
-          `⏳ Reflection too recent to post: ${note.relativePath} (eligible after ${postingHourUTC}:00 UTC tomorrow)`,
+          `⏳ Reflection too recent to post: ${note.relativePath} (eligible after ${eligibleDate} ${postingHourUTC}:00 UTC)`,
         );
       } else {
         // Check each platform that still needs content

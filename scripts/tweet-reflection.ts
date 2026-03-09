@@ -189,26 +189,6 @@ const DEFAULT_GEMINI_MODEL = "gemma-3-27b-it";
 // --- Reflection File Operations ---
 
 /**
- * Merge social media section flags from the Obsidian vault (authoritative source)
- * into the ReflectionData read from the GitHub repo.
- *
- * The GitHub repo content may be stale (not yet published from Obsidian), so we
- * check the vault content as well. If EITHER source has a section, we treat it
- * as already posted to prevent duplicate posts.
- */
-export function mergeVaultSectionFlags(
-  reflection: ReflectionData,
-  vaultContent: string,
-): ReflectionData {
-  return {
-    ...reflection,
-    hasTweetSection: reflection.hasTweetSection || vaultContent.includes(TWEET_SECTION_HEADER),
-    hasBlueskySection: reflection.hasBlueskySection || vaultContent.includes(BLUESKY_SECTION_HEADER),
-    hasMastodonSection: reflection.hasMastodonSection || vaultContent.includes(MASTODON_SECTION_HEADER),
-  };
-}
-
-/**
  * Get the file path for a reflection by date.
  */
 export function getReflectionPath(
@@ -1808,24 +1788,16 @@ export function validateEnvironment(): {
  * The pipeline continues as long as at least one platform succeeds,
  * or if only dry-run/generation is requested.
  *
- * ## Performance: Parallel Vault Pull
+ * ## Source of Truth: Obsidian Vault
  *
- * The Obsidian vault pull is the slowest operation (~4-7 minutes for a cold
- * cache). To minimize wall-clock time, we start the pull in the background
- * immediately after validating credentials, and run Gemini generation + social
- * posting concurrently. The pull result is awaited only when we need to write.
+ * All note content is read from the Obsidian vault (the authoritative source),
+ * not from the GitHub repo's content/ directory. The repo content is stale —
+ * it only updates when the user manually publishes from Obsidian. Reading from
+ * the vault ensures we always see the latest social media embed sections,
+ * preventing duplicate posts across pipeline runs.
  *
- * Timeline (before):
- *   generate(3s) → post(10s) → pull(~7min) → push(1.5s) = ~7min 15s
- *
- * Timeline (after):
- *   pull(~7min, background) ──────────────────────────────┐
- *   generate(3s) → await pull → re-check → post(10s) → push(1.5s) = ~7min 14.5s
- *
- * The vault pull is awaited BEFORE posting, not after. This ensures we check
- * the vault (authoritative source) for existing social media sections before
- * posting, preventing duplicate posts when the GitHub repo content hasn't been
- * updated yet (e.g. between Obsidian sync and the user publishing to GitHub).
+ * Timeline:
+ *   pull(~7min) → read note → generate(3s) → post(10s) → push(1.5s)
  */
 export async function main(options?: {
   date?: string;
@@ -1836,28 +1808,50 @@ export async function main(options?: {
   const timer = new PipelineTimer();
   const date = options?.date || getYesterdayDate();
   const dryRun = options?.dryRun || false;
-  const contentDir = options?.contentDir || CONTENT_DIR;
   const notePath = options?.note;
+  const obsidianNotePath = notePath || `reflections/${date}.md`;
 
-  // Step 1: Read the note to post
+  console.log(`📄 Processing: ${obsidianNotePath}${dryRun ? " (DRY RUN)" : ""}`);
+
+  // Step 1: Validate credentials
+  const env = validateEnvironment();
+
+  if (!env.twitter && !env.bluesky && !env.mastodon) {
+    console.warn(`⚠️  No social platform credentials configured. Set TWITTER_*, BLUESKY_*, or MASTODON_* env vars.`);
+  }
+
+  // Step 2: Pull the Obsidian vault — the single source of truth.
+  // We read all note content from the vault, not from the GitHub repo's
+  // content/ directory, because the repo may be stale (not yet published
+  // from Obsidian). This prevents duplicate posts across pipeline runs.
+  let vaultDir: string | null = null;
+  if (!dryRun && (env.twitter || env.bluesky || env.mastodon)) {
+    console.log(`📥 Pulling Obsidian vault (source of truth)...`);
+    vaultDir = await timer.time("obsidian-pull", () =>
+      syncObsidianVault(env.obsidian),
+    );
+  }
+
+  // Step 3: Read the note from the vault (or fall back to repo for dry runs)
   let reflection: ReflectionData | null;
 
-  if (notePath) {
-    // Read arbitrary note (BFS-discovered or manually specified)
-    console.log(`📄 Processing note: ${notePath}${dryRun ? " (DRY RUN)" : ""}`);
-    reflection = readNote(notePath, path.dirname(contentDir));
+  if (vaultDir) {
+    // Read from vault (authoritative source)
+    reflection = readNote(obsidianNotePath, vaultDir);
     if (!reflection) {
-      console.log(`ℹ️  No note found at ${notePath}, exiting`);
+      console.log(`ℹ️  Note not found in Obsidian vault: ${obsidianNotePath}, exiting`);
       return;
     }
   } else {
-    // Default: read reflection by date
-    console.log(
-      `📅 Processing reflection for ${date}${dryRun ? " (DRY RUN)" : ""}`,
-    );
-    reflection = readReflection(date, contentDir);
+    // Dry run or no platforms configured — read from repo as fallback
+    const contentDir = options?.contentDir || CONTENT_DIR;
+    if (notePath) {
+      reflection = readNote(notePath, path.dirname(contentDir));
+    } else {
+      reflection = readReflection(date, contentDir);
+    }
     if (!reflection) {
-      console.log(`ℹ️  No reflection found for ${date}, exiting`);
+      console.log(`ℹ️  No note found at ${obsidianNotePath}, exiting`);
       return;
     }
   }
@@ -1866,32 +1860,10 @@ export async function main(options?: {
 
   // Check idempotency — skip if all sections already exist
   if (reflection.hasTweetSection && reflection.hasBlueskySection && reflection.hasMastodonSection) {
-    console.log(`ℹ️  Reflection already has all social platform sections, skipping`);
+    console.log(`ℹ️  Note already has all social platform sections, skipping`);
     return;
   }
-
-  // Step 2: Validate credentials
-  const env = validateEnvironment();
-
-  if (!env.twitter && !env.bluesky && !env.mastodon) {
-    console.warn(`⚠️  No social platform credentials configured. Set TWITTER_*, BLUESKY_*, or MASTODON_* env vars.`);
-  }
-
-  // Step 3: Start vault pull in background (overlaps with Gemini + posting).
-  // The pull doesn't depend on post text — it only needs Obsidian credentials.
-  // We await the result later, just before we need to write to the vault.
-  let vaultPullPromise: Promise<string> | null = null;
-  if (!dryRun && (env.twitter || env.bluesky || env.mastodon)) {
-    timer.start("obsidian-pull");
-    console.log(`📥 Starting Obsidian vault pull in background...`);
-    vaultPullPromise = syncObsidianVault(env.obsidian).then((dir) => {
-      timer.end("obsidian-pull");
-      return dir;
-    }).catch((err) => {
-      timer.end("obsidian-pull");
-      throw err;
-    });
-  }
+  console.log(`🔍 Section check — tweet: ${reflection.hasTweetSection}, bluesky: ${reflection.hasBlueskySection}, mastodon: ${reflection.hasMastodonSection}`);
 
   // Step 4: Generate post text with Gemini
   const postText = await timer.time("gemini-generate", async () => {
@@ -1912,37 +1884,10 @@ export async function main(options?: {
     return;
   }
 
-  // Step 5: Await vault pull and re-check for existing sections.
-  // The vault is the authoritative source — it may already contain sections from a prior run
-  // that haven't been published back to GitHub yet. Without this check, we'd re-post content
-  // that was already posted in a previous pipeline run.
-  let vaultDir: string | null = null;
-  const obsidianNotePath = notePath || `reflections/${date}.md`;
-  if (vaultPullPromise) {
-    console.log(`⏳ Waiting for Obsidian vault pull to complete...`);
-    timer.start("obsidian-await-pull");
-    vaultDir = await vaultPullPromise;
-    timer.end("obsidian-await-pull");
-
-    const vaultFilePath = path.join(vaultDir, obsidianNotePath);
-    if (fs.existsSync(vaultFilePath)) {
-      const vaultContent = fs.readFileSync(vaultFilePath, "utf-8");
-      // Merge: if EITHER the repo or vault has the section, treat it as posted
-      reflection = mergeVaultSectionFlags(reflection, vaultContent);
-      console.log(`🔍 Vault section check — tweet: ${reflection.hasTweetSection}, bluesky: ${reflection.hasBlueskySection}, mastodon: ${reflection.hasMastodonSection}`);
-
-      // Re-check idempotency with vault data
-      if (reflection.hasTweetSection && reflection.hasBlueskySection && reflection.hasMastodonSection) {
-        console.log(`ℹ️  Vault already has all social platform sections, skipping posting`);
-        return;
-      }
-    }
-  }
-
   // Collect embed sections to write to Obsidian
   const embedSections: EmbedSection[] = [];
 
-  // Step 6: Post to social platforms in parallel (both non-fatal)
+  // Step 5: Post to social platforms in parallel (both non-fatal)
   await timer.time("social-posting", async () => {
     const postingTasks: Array<Promise<EmbedSection | null>> = [];
 
@@ -2085,12 +2030,12 @@ export async function main(options?: {
     }
   });
 
-  // Step 7: Write embed sections to Obsidian vault via Headless Sync
+  // Step 6: Write embed sections to Obsidian vault via Headless Sync
   if (embedSections.length > 0 && vaultDir) {
     console.log(`📝 Writing ${embedSections.length} embed section(s) to Obsidian note: ${obsidianNotePath}`);
 
     await timer.time("obsidian-write-push", async () => {
-      // Read note from synced vault (already pulled in step 5)
+      // Read note from synced vault (already pulled in step 2)
       const filePath = path.join(vaultDir!, obsidianNotePath);
       if (!fs.existsSync(filePath)) {
         throw new Error(

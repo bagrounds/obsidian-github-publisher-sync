@@ -35,7 +35,6 @@ import {
   ensureSyncClean,
   runObSyncWithRetry,
   isPlatformDisabled,
-  mergeVaultSectionFlags,
   type ReflectionData,
 } from "./tweet-reflection.ts";
 
@@ -1699,131 +1698,22 @@ describe("PipelineTimer", () => {
   });
 });
 
-// --- Vault Section Merge Tests (duplicate post prevention) ---
+// --- Vault-Only Reading Tests (duplicate post prevention) ---
+// The pipeline reads note content exclusively from the Obsidian vault (the single
+// source of truth), not from the GitHub repo's content/ directory. The repo content
+// may be stale since it only updates when the user manually publishes from Obsidian.
+// readNote() is the function used to read from the vault — it works with any base
+// directory. These tests verify that reading from a vault directory correctly detects
+// social media sections, preventing duplicate posts.
 
-describe("mergeVaultSectionFlags", () => {
-  function makeReflection(overrides: Partial<ReflectionData> = {}): ReflectionData {
-    return {
-      date: "2026-03-09",
-      title: "Test Reflection",
-      url: "https://bagrounds.org/reflections/2026-03-09",
-      body: "Some content",
-      filePath: "/test/reflections/2026-03-09.md",
-      hasTweetSection: false,
-      hasBlueskySection: false,
-      hasMastodonSection: false,
-      ...overrides,
-    };
-  }
-
-  test("detects tweet section in vault when repo has none", () => {
-    const repoReflection = makeReflection({ hasTweetSection: false });
-    const vaultContent = "# Test\nSome content\n\n## 🐦 Tweet\n<blockquote>tweet</blockquote>";
-
-    const merged = mergeVaultSectionFlags(repoReflection, vaultContent);
-    assert.equal(merged.hasTweetSection, true);
-    assert.equal(merged.hasBlueskySection, false);
-    assert.equal(merged.hasMastodonSection, false);
-  });
-
-  test("detects bluesky section in vault when repo has none", () => {
-    const repoReflection = makeReflection({ hasBlueskySection: false });
-    const vaultContent = "# Test\nSome content\n\n## 🦋 Bluesky\n<blockquote>post</blockquote>";
-
-    const merged = mergeVaultSectionFlags(repoReflection, vaultContent);
-    assert.equal(merged.hasTweetSection, false);
-    assert.equal(merged.hasBlueskySection, true);
-    assert.equal(merged.hasMastodonSection, false);
-  });
-
-  test("detects mastodon section in vault when repo has none", () => {
-    const repoReflection = makeReflection({ hasMastodonSection: false });
-    const vaultContent = "# Test\nSome content\n\n## 🐘 Mastodon\n<iframe>embed</iframe>";
-
-    const merged = mergeVaultSectionFlags(repoReflection, vaultContent);
-    assert.equal(merged.hasTweetSection, false);
-    assert.equal(merged.hasBlueskySection, false);
-    assert.equal(merged.hasMastodonSection, true);
-  });
-
-  test("detects all platform sections in vault when repo has none", () => {
-    const repoReflection = makeReflection();
-    const vaultContent = `# Test\nSome content\n\n## 🐦 Tweet\n<blockquote>tweet</blockquote>\n\n## 🦋 Bluesky\n<blockquote>post</blockquote>\n\n## 🐘 Mastodon\n<iframe>embed</iframe>`;
-
-    const merged = mergeVaultSectionFlags(repoReflection, vaultContent);
-    assert.equal(merged.hasTweetSection, true);
-    assert.equal(merged.hasBlueskySection, true);
-    assert.equal(merged.hasMastodonSection, true);
-  });
-
-  test("preserves repo section flags when vault has none", () => {
-    const repoReflection = makeReflection({
-      hasTweetSection: true,
-      hasBlueskySection: true,
-    });
-    const vaultContent = "# Test\nSome content\n";
-
-    const merged = mergeVaultSectionFlags(repoReflection, vaultContent);
-    assert.equal(merged.hasTweetSection, true);
-    assert.equal(merged.hasBlueskySection, true);
-    assert.equal(merged.hasMastodonSection, false);
-  });
-
-  test("merges repo and vault flags (repo has tweet, vault has bluesky)", () => {
-    const repoReflection = makeReflection({ hasTweetSection: true });
-    const vaultContent = "# Test\nSome content\n\n## 🦋 Bluesky\n<blockquote>post</blockquote>";
-
-    const merged = mergeVaultSectionFlags(repoReflection, vaultContent);
-    assert.equal(merged.hasTweetSection, true);
-    assert.equal(merged.hasBlueskySection, true);
-    assert.equal(merged.hasMastodonSection, false);
-  });
-
-  test("no false positives for fresh content in both repo and vault", () => {
-    const repoReflection = makeReflection();
-    const vaultContent = "# Test\nSome content\n";
-
-    const merged = mergeVaultSectionFlags(repoReflection, vaultContent);
-    assert.equal(merged.hasTweetSection, false);
-    assert.equal(merged.hasBlueskySection, false);
-    assert.equal(merged.hasMastodonSection, false);
-  });
-
-  test("preserves non-section fields from reflection", () => {
-    const repoReflection = makeReflection({
-      date: "2026-03-08",
-      title: "Special Title",
-      url: "https://bagrounds.org/special",
-      body: "Special body content",
-    });
-    const vaultContent = "# Test\n## 🐦 Tweet\n<blockquote>tweet</blockquote>";
-
-    const merged = mergeVaultSectionFlags(repoReflection, vaultContent);
-    assert.equal(merged.date, "2026-03-08");
-    assert.equal(merged.title, "Special Title");
-    assert.equal(merged.url, "https://bagrounds.org/special");
-    assert.equal(merged.body, "Special body content");
-  });
-});
-
-// --- Duplicate Post Prevention Integration Test ---
-// This test simulates the exact scenario that caused duplicate posts:
-// 1. GitHub repo content has no social media sections
-// 2. Obsidian vault content has sections from a previous pipeline run
-// 3. Without the fix, readNote would not detect the vault sections
-// 4. With the fix, mergeVaultSectionFlags detects vault sections before posting
-
-describe("duplicate post prevention (vault-repo divergence)", () => {
-  let repoDir: string;
+describe("vault-only reading (duplicate post prevention)", () => {
   let vaultDir: string;
 
   beforeEach(() => {
-    repoDir = createTempDir();
     vaultDir = createTempDir();
   });
 
   afterEach(() => {
-    cleanupTempDir(repoDir);
     cleanupTempDir(vaultDir);
   });
 
@@ -1849,48 +1739,104 @@ Some content here for testing.
 ## 🐘 Mastodon
 <iframe src="https://mastodon.social/@test/123">Previous post</iframe>`;
 
-  test("readNote from repo does NOT detect vault-only sections (demonstrates pre-fix bug)", () => {
-    // Setup: repo has fresh note, vault has note with sections
-    fs.mkdirSync(path.join(repoDir, "reflections"), { recursive: true });
-    fs.writeFileSync(path.join(repoDir, "reflections", "2026-03-09.md"), FRESH_NOTE);
+  const NOTE_WITH_ALL_SECTIONS = `---
+share: true
+title: 2026-03-09 | Test Note
+URL: https://bagrounds.org/reflections/2026-03-09
+---
+# 2026-03-09 | Test Note
+Some content here for testing.
+
+## 🐦 Tweet
+<blockquote class="twitter-tweet">tweet</blockquote>
+
+## 🦋 Bluesky
+<blockquote class="bluesky-embed">post</blockquote>
+
+## 🐘 Mastodon
+<iframe src="https://mastodon.social/@test/123">embed</iframe>`;
+
+  test("readNote from vault detects no sections for fresh content", () => {
     fs.mkdirSync(path.join(vaultDir, "reflections"), { recursive: true });
-    fs.writeFileSync(path.join(vaultDir, "reflections", "2026-03-09.md"), NOTE_WITH_BLUESKY_AND_MASTODON);
+    fs.writeFileSync(path.join(vaultDir, "reflections", "2026-03-09.md"), FRESH_NOTE);
 
-    // Reading from repo (what the old code did) — no sections detected
-    const repoReflection = readNote("reflections/2026-03-09.md", repoDir);
-    assert.ok(repoReflection !== null);
-    assert.equal(repoReflection.hasTweetSection, false);
-    assert.equal(repoReflection.hasBlueskySection, false, "Repo should NOT have bluesky section");
-    assert.equal(repoReflection.hasMastodonSection, false, "Repo should NOT have mastodon section");
-
-    // BUG: Old code would proceed to post here because repo says no sections exist
-    // This is the exact scenario that caused 3 duplicate posts in CI
+    const note = readNote("reflections/2026-03-09.md", vaultDir);
+    assert.ok(note !== null);
+    assert.equal(note.hasTweetSection, false);
+    assert.equal(note.hasBlueskySection, false);
+    assert.equal(note.hasMastodonSection, false);
   });
 
-  test("mergeVaultSectionFlags detects vault sections that repo misses (the fix)", () => {
-    // Setup: repo has fresh note, vault has note with sections
+  test("readNote from vault detects bluesky and mastodon sections", () => {
+    fs.mkdirSync(path.join(vaultDir, "reflections"), { recursive: true });
+    fs.writeFileSync(path.join(vaultDir, "reflections", "2026-03-09.md"), NOTE_WITH_BLUESKY_AND_MASTODON);
+
+    const note = readNote("reflections/2026-03-09.md", vaultDir);
+    assert.ok(note !== null);
+    assert.equal(note.hasTweetSection, false, "No tweet section");
+    assert.equal(note.hasBlueskySection, true, "Should detect bluesky");
+    assert.equal(note.hasMastodonSection, true, "Should detect mastodon");
+  });
+
+  test("readNote from vault detects all sections", () => {
+    fs.mkdirSync(path.join(vaultDir, "reflections"), { recursive: true });
+    fs.writeFileSync(path.join(vaultDir, "reflections", "2026-03-09.md"), NOTE_WITH_ALL_SECTIONS);
+
+    const note = readNote("reflections/2026-03-09.md", vaultDir);
+    assert.ok(note !== null);
+    assert.equal(note.hasTweetSection, true);
+    assert.equal(note.hasBlueskySection, true);
+    assert.equal(note.hasMastodonSection, true);
+  });
+
+  test("readNote from vault works for arbitrary content paths", () => {
+    fs.mkdirSync(path.join(vaultDir, "ai-blog"), { recursive: true });
+    fs.writeFileSync(path.join(vaultDir, "ai-blog", "2026-03-09-test.md"), NOTE_WITH_BLUESKY_AND_MASTODON);
+
+    const note = readNote("ai-blog/2026-03-09-test.md", vaultDir);
+    assert.ok(note !== null);
+    assert.equal(note.hasBlueskySection, true);
+    assert.equal(note.hasMastodonSection, true);
+  });
+
+  test("readNote from vault returns null for missing files", () => {
+    const note = readNote("reflections/nonexistent.md", vaultDir);
+    assert.equal(note, null);
+  });
+
+  test("readNote from vault preserves title, URL, date, and body", () => {
+    fs.mkdirSync(path.join(vaultDir, "reflections"), { recursive: true });
+    fs.writeFileSync(path.join(vaultDir, "reflections", "2026-03-09.md"), FRESH_NOTE);
+
+    const note = readNote("reflections/2026-03-09.md", vaultDir);
+    assert.ok(note !== null);
+    assert.equal(note.date, "2026-03-09");
+    assert.equal(note.title, "2026-03-09 | Test Note");
+    assert.equal(note.url, "https://bagrounds.org/reflections/2026-03-09");
+    assert.ok(note.body.includes("Some content here for testing"));
+  });
+
+  test("stale repo misses vault sections — demonstrates the pre-fix bug", () => {
+    // Setup: simulate repo with fresh note, vault with sections from prior posting
+    const repoDir = createTempDir();
     fs.mkdirSync(path.join(repoDir, "reflections"), { recursive: true });
     fs.writeFileSync(path.join(repoDir, "reflections", "2026-03-09.md"), FRESH_NOTE);
     fs.mkdirSync(path.join(vaultDir, "reflections"), { recursive: true });
     fs.writeFileSync(path.join(vaultDir, "reflections", "2026-03-09.md"), NOTE_WITH_BLUESKY_AND_MASTODON);
 
-    // Step 1: Read from repo (stale) — no sections detected
-    const repoReflection = readNote("reflections/2026-03-09.md", repoDir);
-    assert.ok(repoReflection !== null);
-    assert.equal(repoReflection.hasBlueskySection, false);
-    assert.equal(repoReflection.hasMastodonSection, false);
+    // Reading from repo (old buggy approach) — misses sections
+    const repoNote = readNote("reflections/2026-03-09.md", repoDir);
+    assert.ok(repoNote !== null);
+    assert.equal(repoNote.hasBlueskySection, false, "Repo is stale — no bluesky section");
+    assert.equal(repoNote.hasMastodonSection, false, "Repo is stale — no mastodon section");
 
-    // Step 2: Read vault content and merge flags (the fix)
-    const vaultContent = fs.readFileSync(
-      path.join(vaultDir, "reflections", "2026-03-09.md"),
-      "utf-8",
-    );
-    const merged = mergeVaultSectionFlags(repoReflection, vaultContent);
+    // Reading from vault (fixed approach) — detects sections
+    const vaultNote = readNote("reflections/2026-03-09.md", vaultDir);
+    assert.ok(vaultNote !== null);
+    assert.equal(vaultNote.hasBlueskySection, true, "Vault has bluesky section");
+    assert.equal(vaultNote.hasMastodonSection, true, "Vault has mastodon section");
 
-    // FIX: Vault sections are now detected, preventing duplicate posts
-    assert.equal(merged.hasBlueskySection, true, "Should detect bluesky from vault");
-    assert.equal(merged.hasMastodonSection, true, "Should detect mastodon from vault");
-    assert.equal(merged.hasTweetSection, false, "Should not detect tweet (neither repo nor vault has it)");
+    cleanupTempDir(repoDir);
   });
 
   test("partial vault sections: only posted platforms are detected", () => {
@@ -1905,23 +1851,13 @@ Some content here for testing.
 ## 🐘 Mastodon
 <iframe src="https://mastodon.social/@test/123">Previous post</iframe>`;
 
-    fs.mkdirSync(path.join(repoDir, "reflections"), { recursive: true });
-    fs.writeFileSync(path.join(repoDir, "reflections", "2026-03-09.md"), FRESH_NOTE);
     fs.mkdirSync(path.join(vaultDir, "reflections"), { recursive: true });
     fs.writeFileSync(path.join(vaultDir, "reflections", "2026-03-09.md"), noteWithOnlyMastodon);
 
-    const repoReflection = readNote("reflections/2026-03-09.md", repoDir);
-    assert.ok(repoReflection !== null);
-
-    const vaultContent = fs.readFileSync(
-      path.join(vaultDir, "reflections", "2026-03-09.md"),
-      "utf-8",
-    );
-    const merged = mergeVaultSectionFlags(repoReflection, vaultContent);
-
-    // Only mastodon was posted — bluesky and twitter should still be eligible
-    assert.equal(merged.hasMastodonSection, true, "Should detect mastodon from vault");
-    assert.equal(merged.hasBlueskySection, false, "Bluesky not yet posted");
-    assert.equal(merged.hasTweetSection, false, "Twitter not yet posted");
+    const note = readNote("reflections/2026-03-09.md", vaultDir);
+    assert.ok(note !== null);
+    assert.equal(note.hasMastodonSection, true, "Should detect mastodon");
+    assert.equal(note.hasBlueskySection, false, "Bluesky not yet posted");
+    assert.equal(note.hasTweetSection, false, "Twitter not yet posted");
   });
 });

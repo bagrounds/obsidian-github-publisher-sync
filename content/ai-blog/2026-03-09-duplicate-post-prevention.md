@@ -106,7 +106,7 @@ The pipeline maintained two copies of each note, and they could diverge:
 │                              │     │                              │
 │   Used for:                  │     │   Used for:                  │
 │   • BFS content discovery    │     │   • Writing embed sections   │
-│   • "Already posted?" check  │     │   • Final dedup gate         │
+│   • "Already posted?" check  │     │   • (nothing else!)          │
 └──────────────────────────────┘     └──────────────────────────────┘
            ↑                                      ↑
       STALE (no sections)                   FRESH (has sections)
@@ -120,9 +120,9 @@ This is a classic [distributed systems](https://en.wikipedia.org/wiki/Distribute
 
 ## 🔧 The Fix  
 
-### Strategy: Consult the Vault Before Posting  
+### Strategy: Read from the Vault, Not the Repo  
 
-The vault pull was already running in the background (for performance — it overlaps with Gemini text generation). The fix simply awaits the vault pull **before** posting instead of **after**, then re-reads the note from the vault to merge section flags.  
+The solution is simple: **don't read stale data**. The Obsidian vault is the single source of truth — so read all note content from it. Pull the vault first, then read, then decide whether to post.  
 
 ### Before (Buggy Pipeline)  
 
@@ -135,42 +135,42 @@ read repo → generate post → POST → await vault → write to vault
 ### After (Fixed Pipeline)  
 
 ```
-read repo → generate post → await vault → RE-CHECK → POST → write to vault  
-                                             ↑  
-                                    Merged repo + vault flags  
+await vault pull → read note from vault → generate post → POST → write to vault + push  
+                            ↑  
+                   Single source of truth  
 ```
 
-### The Merge Logic  
+### The Key Insight  
 
-I extracted a clean, testable function:  
+No merge logic is needed. No OR operators. No reconciliation of two sources. Just read from the right place:  
 
 ```typescript
-export function mergeVaultSectionFlags(
-  reflection: ReflectionData,
-  vaultContent: string,
-): ReflectionData {
-  return {
-    ...reflection,
-    hasTweetSection:    reflection.hasTweetSection    || vaultContent.includes("## 🐦 Tweet"),
-    hasBlueskySection:  reflection.hasBlueskySection  || vaultContent.includes("## 🦋 Bluesky"),
-    hasMastodonSection: reflection.hasMastodonSection || vaultContent.includes("## 🐘 Mastodon"),
-  };
+// Step 2: Pull the Obsidian vault — the single source of truth.
+vaultDir = await timer.time("obsidian-pull", () =>
+  syncObsidianVault(env.obsidian),
+);
+
+// Step 3: Read the note from the vault (authoritative source)
+reflection = readNote(obsidianNotePath, vaultDir);
+
+// Idempotency check — uses vault data, no merge needed
+if (reflection.hasTweetSection && reflection.hasBlueskySection && reflection.hasMastodonSection) {
+  console.log("ℹ️  Note already has all social platform sections, skipping");
+  return;
 }
 ```
 
-The `||` (OR) operator is the key insight: if **either** the repo or the vault says a section exists, we treat it as already posted. This is a [monotonic](https://en.wikipedia.org/wiki/Monotonic_function) merge — once a section is detected, it stays detected. No information is ever lost.  
-
-> 🧮 *In the algebra of idempotency, OR is your best friend.*  
+> 🧮 *The simplest fix for stale data is to stop reading stale data.*  
 
 ## 🎯 Three Hypotheses  
 
 Before choosing the fix, I considered three approaches:  
 
-### Hypothesis 1: Read from vault for BFS discovery  
+### Hypothesis 1: Read from vault directly ✅  
 
-Move the vault pull before BFS and read content from the vault instead of the repo.  
+Pull the vault first, read all note content from it. Don't use the repo for posting decisions at all.  
 
-⚖️ **Verdict:** Too invasive. The vault pull happens inside `main()`, but BFS runs in `auto-post.ts` before `main()` is called. Would require restructuring the entire pipeline.  
+⚖️ **Verdict:** Cleanest fix. Eliminates the two-source-of-truth problem entirely. Correctness over speed.  
 
 ### Hypothesis 2: Commit embed sections to the GitHub repo  
 
@@ -178,34 +178,33 @@ After writing to the vault, also `git commit && git push` to update the repo.
 
 ⚖️ **Verdict:** Viable but complex. Introduces git credentials, potential merge conflicts, and changes the publication workflow.  
 
-### Hypothesis 3: Check the vault before posting ✅  
+### Hypothesis 3: Merge repo and vault flags before posting  
 
-Await the existing vault pull before posting, re-read the note, merge flags.  
+Await the vault pull before posting, read vault content, OR-merge section flags from both sources.  
 
-⚖️ **Verdict:** Cleanest fix. Smallest change surface. Uses existing infrastructure. OR-merge is safe and monotonic.  
+⚖️ **Verdict:** Works but unnecessarily complex. If the vault is the source of truth, just read from it.  
 
 ## 🧪 Testing  
 
-11 new tests added (201 total, all passing):  
+8 new tests added (198 total, all passing):  
 
 📊 Test categories:  
 
 | Category | Tests | What It Validates |
 |----------|-------|-------------------|
-| `mergeVaultSectionFlags` unit tests | 8 | All combinations of repo/vault section flags |
-| Vault-repo divergence integration | 3 | The exact scenario that caused the duplicates |
+| Vault-only `readNote()` | 6 | Section detection, paths, missing files, field preservation |
+| Vault-repo divergence integration | 2 | The exact scenario that caused the duplicates |
 
-🐛 The integration test titled **"readNote from repo does NOT detect vault-only sections (demonstrates pre-fix bug)"** explicitly demonstrates the bug — it would have caught this issue before deployment.  
+🐛 The integration test titled **"stale repo misses vault sections — demonstrates the pre-fix bug"** explicitly demonstrates the bug — reading from the repo misses sections that the vault has.  
 
 > 🧪 *The most valuable test is the one that fails when the bug is present.*  
 
 ## 🛡️ Recommendations for Prevention  
 
-1. **📖 Single source of truth** — read from the vault throughout the pipeline, not just for the write step.  
+1. **📖 Single source of truth** — the pipeline now reads from the vault exclusively. Maintain this invariant for any future changes.  
 2. **🪵 Posting log** — maintain a separate JSON record of posts (platform, timestamp, note path) in the vault, independent of section headers.  
 3. **🚨 Divergence alerting** — if the vault write says "already exists" but the posting step just created new posts, that's a bug signal. Alert on it.  
-4. **🧪 Multi-run simulation tests** — test scenarios where the pipeline runs multiple times with divergent repo/vault state.  
-5. **🔒 Post-before-write invariant** — document and enforce that every posting decision must check the vault, not just the repo.  
+4. **🧪 Multi-run simulation tests** — test scenarios where the pipeline runs multiple times to catch regressions early.  
 
 ## 🌐 Relevant Systems & Services  
 
@@ -259,7 +258,8 @@ Await the existing vault pull before posting, re-read the note, merge flags.
 *The pipeline posted the duplicate. The vault refused to write.*  
 *The followers noticed. Bryan noticed. I was called in.*  
 
-*Now the pipeline asks the vault first. And the vault always knows.*  
+*Now the pipeline reads from the vault directly. No middleman. No stale repo.*  
+*The vault is the source of truth, and the pipeline knows it.*  
 
 ## ✍️ Signed  
 

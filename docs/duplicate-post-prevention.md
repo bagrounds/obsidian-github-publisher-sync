@@ -70,13 +70,13 @@ Run 45 (16:21 UTC) — DUPLICATE
 └─ Vault already had sections from run 43
 ```
 
-## Fix: Check the Vault Before Posting
+## Fix: Read from the Vault, Not the Repo
 
 ### Change Summary
 
-Moved the vault pull await from **after posting** to **before posting**. After the vault
-pull completes, re-read the note from the vault and merge section flags with the repo data
-using OR logic. If EITHER source has a section, treat it as already posted.
+Eliminated the stale repo read entirely. `main()` now reads note content exclusively
+from the Obsidian vault (the single source of truth). The GitHub repo's `content/`
+directory is no longer used for posting decisions.
 
 ### Before (Buggy)
 
@@ -89,67 +89,54 @@ read note from repo → generate post → POST → await vault pull → write to
 ### After (Fixed)
 
 ```
-read note from repo → generate post → await vault pull → RE-CHECK vault → POST → write to vault
-                                                           ↑
-                                                  Uses authoritative vault data
+await vault pull → read note from vault → generate post → POST → write to vault + push
+                            ↑
+                   Single source of truth
 ```
 
 ### Code Change
 
-Extracted `mergeVaultSectionFlags()` for clean testability:
+In `main()`, the vault is now pulled first, and the note is read directly from it:
 
 ```typescript
-export function mergeVaultSectionFlags(
-  reflection: ReflectionData,
-  vaultContent: string,
-): ReflectionData {
-  return {
-    ...reflection,
-    hasTweetSection: reflection.hasTweetSection || vaultContent.includes(TWEET_SECTION_HEADER),
-    hasBlueskySection: reflection.hasBlueskySection || vaultContent.includes(BLUESKY_SECTION_HEADER),
-    hasMastodonSection: reflection.hasMastodonSection || vaultContent.includes(MASTODON_SECTION_HEADER),
-  };
+// Step 2: Pull the Obsidian vault — the single source of truth.
+vaultDir = await timer.time("obsidian-pull", () =>
+  syncObsidianVault(env.obsidian),
+);
+
+// Step 3: Read the note from the vault (authoritative source)
+reflection = readNote(obsidianNotePath, vaultDir);
+
+// Idempotency check uses vault data — no merge needed
+if (reflection.hasTweetSection && reflection.hasBlueskySection && reflection.hasMastodonSection) {
+  console.log(`ℹ️  Note already has all social platform sections, skipping`);
+  return;
 }
 ```
 
-In `main()`, the vault pull is now awaited before posting:
-
-```typescript
-// Step 5: Await vault pull and re-check for existing sections
-if (vaultPullPromise) {
-  vaultDir = await vaultPullPromise;
-  const vaultContent = fs.readFileSync(vaultFilePath, "utf-8");
-  reflection = mergeVaultSectionFlags(reflection, vaultContent);
-
-  if (reflection.hasTweetSection && reflection.hasBlueskySection && reflection.hasMastodonSection) {
-    console.log(`ℹ️  Vault already has all social platform sections, skipping posting`);
-    return;
-  }
-}
-
-// Step 6: Post to social platforms (now uses merged flags)
-```
+The `mergeVaultSectionFlags()` function was removed — it's unnecessary when there's
+only one source of truth. Dry runs fall back to reading from the repo since the vault
+pull is skipped.
 
 ### Performance Impact
 
-The vault pull is still started in the background during Gemini generation (step 4).
-The only change is that we now await it before posting instead of after. With a warm
-cache (incremental sync), this adds negligible latency. With a cold cache (~7 min),
-posting waits for the pull — but correctness is more important than speed.
+The vault pull now runs sequentially before Gemini generation (previously it ran in
+parallel). With a warm cache (incremental sync), this adds negligible latency. With
+a cold cache (~7 min), this increases wall-clock time slightly — but correctness is
+more important than speed, and the vault pull was already the pipeline bottleneck.
 
 ## Hypotheses Considered
 
-### Hypothesis 1: Read from Obsidian vault instead of GitHub repo for BFS discovery
+### Hypothesis 1: Read from Obsidian vault instead of GitHub repo (CHOSEN)
 
-Move the vault pull to before BFS discovery and read content from the vault instead
-of the GitHub repo.
+Read note content exclusively from the Obsidian vault — the single source of truth.
+Pull the vault before any posting decisions.
 
-**Pros:** Single source of truth for all decisions.
-**Cons:** Adds vault pull latency before discovery; complex restructuring of the
-pipeline; BFS currently runs in `auto-post.ts` before `main()` is called.
+**Pros:** Single source of truth. No merge logic needed. Simplest conceptual model.
+**Cons:** Vault pull adds latency before Gemini generation (can't parallelize).
 
-**Verdict:** Too invasive. The vault pull happens inside `main()`, so moving it
-before BFS would require restructuring the entire pipeline.
+**Verdict:** Cleanest fix. Eliminates the two-source-of-truth problem entirely.
+Correctness is more important than speed.
 
 ### Hypothesis 2: Commit embed sections to the GitHub repo after posting
 
@@ -163,47 +150,42 @@ with user commits; changes the publication flow.
 **Verdict:** Viable but introduces new complexity and changes the workflow
 semantics (the pipeline would modify the repo it runs from).
 
-### Hypothesis 3: Check the vault before posting (CHOSEN)
+### Hypothesis 3: Merge repo and vault flags before posting
 
-Await the vault pull before posting, re-read the note from the vault, and merge
-section flags before making posting decisions.
+Await the vault pull before posting, read the vault note, and OR-merge
+section flags from both sources before making posting decisions.
 
-**Pros:** Minimal change; uses the existing vault pull; OR-merge is safe
-(never loses information); extracted function is testable.
-**Cons:** Minor performance trade-off (await before posting instead of after).
+**Pros:** Minimal code change; uses existing vault pull; OR-merge is safe.
+**Cons:** Still reads from two sources; more complex than necessary; leaves
+stale repo reads in the pipeline.
 
-**Verdict:** Cleanest fix. Smallest change surface. Correctness preserved.
+**Verdict:** Works but unnecessarily complex. If the vault is the source of
+truth, just read from it directly.
 
 ## Testing
 
-11 new tests added:
+8 new tests added:
 
-- 8 unit tests for `mergeVaultSectionFlags()` — all combinations of repo/vault flags
-- 3 integration tests for the vault-repo divergence scenario:
-  - Demonstrates the pre-fix bug (readNote from repo misses vault sections)
-  - Demonstrates the fix (mergeVaultSectionFlags detects vault sections)
-  - Partial vault sections (only posted platforms are detected)
+- 6 unit tests for vault-only reading via `readNote()` — section detection,
+  arbitrary content paths, missing files, field preservation
+- 1 integration test demonstrating the pre-fix bug (stale repo misses vault sections)
+- 1 integration test for partial vault sections (only posted platforms detected)
 
-All 201 tests pass (190 existing + 11 new).
+All 198 tests pass (190 existing + 8 new).
 
 ## Recommendations for Future Prevention
 
-1. **Single source of truth:** The pipeline should ideally use one authoritative copy
-   of each note. Consider reading from the vault throughout the pipeline, not just for
-   the write step.
+1. **Single source of truth:** The pipeline now reads from the vault exclusively for
+   posting decisions. This principle should be maintained for any future changes.
 
 2. **Idempotency tokens:** Instead of relying on section header presence to detect
    prior posts, consider maintaining a separate posting log (e.g., a JSON file in the
    vault) that records which notes have been posted to which platforms.
 
-3. **Pre-posting validation:** Before posting to any platform, check the vault content
-   as a final gate. This is what the fix implements — but it should be a documented
-   invariant, not just an implementation detail.
-
-4. **Integration tests with time progression:** Create tests that simulate multiple
+3. **Integration tests with time progression:** Create tests that simulate multiple
    pipeline runs with divergent sources, to catch "stale read" bugs before they reach
    production.
 
-5. **CI log analysis:** The "already exists in Obsidian note, skipping" messages in
+4. **CI log analysis:** The "already exists in Obsidian note, skipping" messages in
    runs 44 and 45 were a clear signal. Consider adding alerting for this pattern —
    if we're skipping vault writes but still making social posts, something is wrong.

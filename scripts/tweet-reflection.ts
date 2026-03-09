@@ -189,6 +189,26 @@ const DEFAULT_GEMINI_MODEL = "gemma-3-27b-it";
 // --- Reflection File Operations ---
 
 /**
+ * Merge social media section flags from the Obsidian vault (authoritative source)
+ * into the ReflectionData read from the GitHub repo.
+ *
+ * The GitHub repo content may be stale (not yet published from Obsidian), so we
+ * check the vault content as well. If EITHER source has a section, we treat it
+ * as already posted to prevent duplicate posts.
+ */
+export function mergeVaultSectionFlags(
+  reflection: ReflectionData,
+  vaultContent: string,
+): ReflectionData {
+  return {
+    ...reflection,
+    hasTweetSection: reflection.hasTweetSection || vaultContent.includes(TWEET_SECTION_HEADER),
+    hasBlueskySection: reflection.hasBlueskySection || vaultContent.includes(BLUESKY_SECTION_HEADER),
+    hasMastodonSection: reflection.hasMastodonSection || vaultContent.includes(MASTODON_SECTION_HEADER),
+  };
+}
+
+/**
  * Get the file path for a reflection by date.
  */
 export function getReflectionPath(
@@ -1799,8 +1819,13 @@ export function validateEnvironment(): {
  *   generate(3s) → post(10s) → pull(~7min) → push(1.5s) = ~7min 15s
  *
  * Timeline (after):
- *   pull(~7min, background) ─────────────────────────┐
- *   generate(3s) → post(10s) → await pull → push(1.5s) = ~7min 1.5s
+ *   pull(~7min, background) ──────────────────────────────┐
+ *   generate(3s) → await pull → re-check → post(10s) → push(1.5s) = ~7min 14.5s
+ *
+ * The vault pull is awaited BEFORE posting, not after. This ensures we check
+ * the vault (authoritative source) for existing social media sections before
+ * posting, preventing duplicate posts when the GitHub repo content hasn't been
+ * updated yet (e.g. between Obsidian sync and the user publishing to GitHub).
  */
 export async function main(options?: {
   date?: string;
@@ -1887,10 +1912,37 @@ export async function main(options?: {
     return;
   }
 
+  // Step 5: Await vault pull and re-check for existing sections.
+  // The vault is the authoritative source — it may already contain sections from a prior run
+  // that haven't been published back to GitHub yet. Without this check, we'd re-post content
+  // that was already posted in a previous pipeline run.
+  let vaultDir: string | null = null;
+  const obsidianNotePath = notePath || `reflections/${date}.md`;
+  if (vaultPullPromise) {
+    console.log(`⏳ Waiting for Obsidian vault pull to complete...`);
+    timer.start("obsidian-await-pull");
+    vaultDir = await vaultPullPromise;
+    timer.end("obsidian-await-pull");
+
+    const vaultFilePath = path.join(vaultDir, obsidianNotePath);
+    if (fs.existsSync(vaultFilePath)) {
+      const vaultContent = fs.readFileSync(vaultFilePath, "utf-8");
+      // Merge: if EITHER the repo or vault has the section, treat it as posted
+      reflection = mergeVaultSectionFlags(reflection, vaultContent);
+      console.log(`🔍 Vault section check — tweet: ${reflection.hasTweetSection}, bluesky: ${reflection.hasBlueskySection}, mastodon: ${reflection.hasMastodonSection}`);
+
+      // Re-check idempotency with vault data
+      if (reflection.hasTweetSection && reflection.hasBlueskySection && reflection.hasMastodonSection) {
+        console.log(`ℹ️  Vault already has all social platform sections, skipping posting`);
+        return;
+      }
+    }
+  }
+
   // Collect embed sections to write to Obsidian
   const embedSections: EmbedSection[] = [];
 
-  // Step 5: Post to social platforms in parallel (both non-fatal)
+  // Step 6: Post to social platforms in parallel (both non-fatal)
   await timer.time("social-posting", async () => {
     const postingTasks: Array<Promise<EmbedSection | null>> = [];
 
@@ -2033,24 +2085,13 @@ export async function main(options?: {
     }
   });
 
-  // Step 6: Write embed sections to Obsidian vault via Headless Sync
-  if (embedSections.length > 0 && vaultPullPromise) {
-    // Derive the note path in the vault:
-    // For reflections: reflections/{date}.md
-    // For arbitrary notes: use the relative path from the note option
-    const obsidianNotePath = notePath || `reflections/${date}.md`;
+  // Step 7: Write embed sections to Obsidian vault via Headless Sync
+  if (embedSections.length > 0 && vaultDir) {
     console.log(`📝 Writing ${embedSections.length} embed section(s) to Obsidian note: ${obsidianNotePath}`);
 
-    // Await the vault pull that was running in parallel with social posting.
-    // This measures how long we had to wait AFTER posting completed.
-    console.log(`⏳ Waiting for Obsidian vault pull to complete...`);
-    timer.start("obsidian-await-pull");
-    const vaultDir = await vaultPullPromise;
-    timer.end("obsidian-await-pull");
-
     await timer.time("obsidian-write-push", async () => {
-      // Read note from synced vault
-      const filePath = path.join(vaultDir, obsidianNotePath);
+      // Read note from synced vault (already pulled in step 5)
+      const filePath = path.join(vaultDir!, obsidianNotePath);
       if (!fs.existsSync(filePath)) {
         throw new Error(
           `Note not found in Obsidian vault: ${obsidianNotePath} (looked at ${filePath})`,
@@ -2071,7 +2112,7 @@ export async function main(options?: {
 
       if (modified) {
         fs.writeFileSync(filePath, content, "utf-8");
-        await pushObsidianVault(vaultDir, { authToken: env.obsidian.authToken });
+        await pushObsidianVault(vaultDir!, { authToken: env.obsidian.authToken });
       } else {
         console.log("No new sections to add to Obsidian note");
       }
@@ -2081,11 +2122,6 @@ export async function main(options?: {
     if (embedSections.length === 0) {
       console.log(`ℹ️  No successful posts to embed`);
     }
-    // If vault pull was started but no embeds succeeded, suppress the unused promise.
-    // The pull result is not needed, so we catch to prevent unhandled rejection.
-    vaultPullPromise?.catch((err) => {
-      console.warn(`⚠️  Vault pull failed (unused — no embeds to write): ${err instanceof Error ? err.message : err}`);
-    });
   }
 
   console.log(`🎉 Done processing ${notePath || `reflection for ${date}`}`);

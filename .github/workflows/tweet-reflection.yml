@@ -1,18 +1,21 @@
-name: Tweet Daily Reflection
+name: Auto Post to Social Media
 
 on:
   schedule:
-    # Run daily at 5:00 PM UTC (9:00 AM PST / 10:00 AM PDT)
-    # Posts the previous day's reflection to ensure the note is finalized.
-    - cron: "0 17 * * *"
+    # Run every 2 hours
+    - cron: "0 */2 * * *"
   workflow_dispatch:
     inputs:
       date:
         description: "Reflection date (YYYY-MM-DD). Defaults to yesterday."
         required: false
         type: string
+      note:
+        description: "Note path relative to content/ (e.g. books/sophies-world.md). Overrides date."
+        required: false
+        type: string
       dry_run:
-        description: "Dry run mode (generate tweet but don't post)"
+        description: "Dry run mode (generate post but don't post)"
         required: false
         type: boolean
         default: false
@@ -61,7 +64,7 @@ jobs:
           restore-keys: |
             obsidian-vault-
 
-      - name: Run Tweet Reflection Script
+      - name: Run Social Posting Script
         env:
           TWITTER_API_KEY: ${{ secrets.TWITTER_API_KEY }}
           TWITTER_API_SECRET: ${{ secrets.TWITTER_API_SECRET }}
@@ -78,11 +81,24 @@ jobs:
           OBSIDIAN_VAULT_PASSWORD: ${{ secrets.OBSIDIAN_VAULT_PASSWORD }}
           OBSIDIAN_VAULT_CACHE_DIR: /tmp/obsidian-vault-cache
         run: |
-          ARGS=""
-          if [ -n "${{ github.event.inputs.date }}" ]; then
-            ARGS="$ARGS --date ${{ github.event.inputs.date }}"
+          # If a specific note or date was provided via manual trigger, use tweet-reflection.ts directly
+          if [ -n "${{ github.event.inputs.note }}" ] || [ -n "${{ github.event.inputs.date }}" ]; then
+            ARGS=""
+            if [ -n "${{ github.event.inputs.note }}" ]; then
+              ARGS="$ARGS --note ${{ github.event.inputs.note }}"
+            fi
+            if [ -n "${{ github.event.inputs.date }}" ]; then
+              ARGS="$ARGS --date ${{ github.event.inputs.date }}"
+            fi
+            if [ "${{ github.event.inputs.dry_run }}" = "true" ]; then
+              ARGS="$ARGS --dry-run"
+            fi
+            npx tsx scripts/tweet-reflection.ts $ARGS
+          else
+            # Scheduled run: use auto-post orchestrator for BFS discovery
+            ARGS=""
+            if [ "${{ github.event.inputs.dry_run }}" = "true" ]; then
+              ARGS="$ARGS --dry-run"
+            fi
+            npx tsx scripts/auto-post.ts $ARGS
           fi
-          if [ "${{ github.event.inputs.dry_run }}" = "true" ]; then
-            ARGS="$ARGS --dry-run"
-          fi
-          npx tsx scripts/tweet-reflection.ts $ARGS

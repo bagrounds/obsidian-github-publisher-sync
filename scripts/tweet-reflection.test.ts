@@ -7,6 +7,7 @@ import {
   getReflectionPath,
   parseFrontmatter,
   readReflection,
+  readNote,
   calculateTweetLength,
   validateTweetLength,
   buildGeminiPrompt,
@@ -188,6 +189,87 @@ describe("readReflection", () => {
     assert.equal(result.title, "2026-03-06");
     assert.equal(result.hasTweetSection, false);
     assert.equal(result.hasBlueskySection, false);
+    assert.equal(result.hasMastodonSection, false);
+  });
+});
+
+describe("readNote", () => {
+  let tempDir: string;
+
+  beforeEach(() => {
+    tempDir = createTempDir();
+    fs.mkdirSync(path.join(tempDir, "content", "books"), { recursive: true });
+    fs.mkdirSync(path.join(tempDir, "content", "reflections"), { recursive: true });
+  });
+
+  afterEach(() => {
+    cleanupTempDir(tempDir);
+  });
+
+  test("reads an arbitrary content note by relative path", () => {
+    const bookContent = `---
+share: true
+title: "🤔🌍 Sophie's World"
+URL: https://bagrounds.org/books/sophies-world
+---
+[Home](../index.md) > [Books](./index.md)
+# 🤔🌍 Sophie's World
+A wonderful introduction to philosophy through narrative.`;
+    fs.writeFileSync(
+      path.join(tempDir, "content", "books", "sophies-world.md"),
+      bookContent,
+    );
+    const contentDir = path.join(tempDir, "content");
+    const result = readNote("books/sophies-world.md", contentDir);
+    assert.ok(result !== null);
+    assert.equal(result.title, "🤔🌍 Sophie's World");
+    assert.equal(result.url, "https://bagrounds.org/books/sophies-world");
+  });
+
+  test("returns null for non-existent note", () => {
+    const contentDir = path.join(tempDir, "content");
+    const result = readNote("books/nonexistent.md", contentDir);
+    assert.equal(result, null);
+  });
+
+  test("extracts date from reflection filename", () => {
+    const reflContent = `---
+title: 2026-03-08 | Test
+URL: https://bagrounds.org/reflections/2026-03-08
+---
+# Test`;
+    fs.writeFileSync(
+      path.join(tempDir, "content", "reflections", "2026-03-08.md"),
+      reflContent,
+    );
+    const contentDir = path.join(tempDir, "content");
+    const result = readNote("reflections/2026-03-08.md", contentDir);
+    assert.ok(result !== null);
+    assert.equal(result.date, "2026-03-08");
+  });
+
+  test("detects existing social media sections", () => {
+    const content = `---
+title: Posted Book
+URL: https://bagrounds.org/books/posted
+---
+# Posted Book
+Content.
+
+## 🐦 Tweet
+<blockquote>tweet</blockquote>
+
+## 🦋 Bluesky
+<blockquote>post</blockquote>`;
+    fs.writeFileSync(
+      path.join(tempDir, "content", "books", "posted.md"),
+      content,
+    );
+    const contentDir = path.join(tempDir, "content");
+    const result = readNote("books/posted.md", contentDir);
+    assert.ok(result !== null);
+    assert.equal(result.hasTweetSection, true);
+    assert.equal(result.hasBlueskySection, true);
     assert.equal(result.hasMastodonSection, false);
   });
 });

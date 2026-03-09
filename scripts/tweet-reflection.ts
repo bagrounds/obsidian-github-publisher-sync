@@ -1431,9 +1431,9 @@ export async function logSyncDiagnostics(vaultDir: string): Promise<void> {
   try {
     if (fs.existsSync(lockPath)) {
       const stat = fs.statSync(lockPath);
-      const ageMs = Date.now() - stat.mtimeMs;
+      const lockAgeMs = Date.now() - stat.mtimeMs;
       console.log(
-        `  🔍 Lock exists: mtime=${stat.mtimeMs.toFixed(3)}, age=${ageMs}ms, ` +
+        `  🔍 Lock exists: mtime=${stat.mtimeMs.toFixed(3)}, age=${lockAgeMs}ms, ` +
         `isDir=${stat.isDirectory()}`,
       );
     } else {
@@ -1449,7 +1449,7 @@ export async function logSyncDiagnostics(vaultDir: string): Promise<void> {
       `ps -u $(id -u) -o pid,args 2>/dev/null | grep -iE 'obsidian|ob |${vaultDir.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}' | grep -v grep || true`,
     );
     if (stdout.trim()) {
-      console.log(`  🔍 Related processes:\n${stdout.trim().split("\n").map(l => `    ${l.trim()}`).join("\n")}`);
+      console.log(`  🔍 Related processes:\n${stdout.trim().split("\n").map(line => `    ${line.trim()}`).join("\n")}`);
     } else {
       console.log(`  🔍 No related processes found`);
     }

@@ -71,7 +71,8 @@ acquire() {
   if (EEXIST && age < 5s) throw Q   // Lock held by another process
   lockTime = Date.now()
   utimesSync(lockPath, lockTime)     // Set mtime
-  if (get() % 1000 === 0) isMs = false  // Check ms precision
+  // If mtime reads back as exact seconds (ms=0), filesystem lacks ms precision
+  if (get() % 1000 === 0) isMs = false
   lockTime = Date.now()              // Update to current time
   utimesSync(lockPath, lockTime)     // Set mtime again
   if (lockTime !== statSync().mtime) throw Q  // verify() fails!

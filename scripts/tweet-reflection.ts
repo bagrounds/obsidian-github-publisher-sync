@@ -324,6 +324,154 @@ export function validateTweetLength(text: string): {
   return { valid: length <= TWITTER_MAX_LENGTH, length };
 }
 
+// --- Platform-Aware Length Enforcement ---
+
+/**
+ * Count Unicode grapheme clusters in text.
+ * Bluesky enforces a 300-grapheme limit (not characters or bytes).
+ * Graphemes represent user-perceived characters — e.g. 👨‍💻 is one grapheme
+ * despite being multiple code points.
+ *
+ * @see https://docs.bsky.app/docs/api/app.bsky.feed.post
+ * @see https://unicode.org/reports/tr29/#Grapheme_Cluster_Boundaries
+ */
+export function countGraphemes(text: string): number {
+  const segmenter = new Intl.Segmenter("en", { granularity: "grapheme" });
+  let count = 0;
+  for (const _ of segmenter.segment(text)) {
+    count++;
+  }
+  return count;
+}
+
+/**
+ * Truncate text to a grapheme limit, appending "…" if truncated.
+ * Returns the original text unchanged if already within the limit.
+ */
+export function truncateToGraphemeLimit(
+  text: string,
+  maxGraphemes: number,
+): string {
+  const segmenter = new Intl.Segmenter("en", { granularity: "grapheme" });
+  const segments = [...segmenter.segment(text)];
+  if (segments.length <= maxGraphemes) return text;
+
+  // Reserve 1 grapheme for the ellipsis
+  const truncated = segments
+    .slice(0, maxGraphemes - 1)
+    .map((s) => s.segment)
+    .join("");
+  return truncated + "…";
+}
+
+/**
+ * Fit post text to a platform's grapheme limit by progressively removing
+ * content in order of decreasing expendability:
+ *
+ * 1. Remove pipe-separated topic tags from right to left
+ * 2. Remove the entire topic line (and preceding blank line)
+ * 3. Truncate remaining content with "…"
+ *
+ * The URL line is always preserved — it's essential for link previews
+ * and facet detection.
+ *
+ * Post format (from Gemini prompt):
+ *   Line 1: {date} | {emoji} Title Words {emoji}
+ *   Line 2: (blank)
+ *   Line 3: {emoji} Tag | {emoji} Tag | ...
+ *   Line 4: https://bagrounds.org/...
+ */
+export function fitPostToLimit(text: string, maxGraphemes: number): string {
+  if (countGraphemes(text) <= maxGraphemes) return text;
+
+  const lines = text.split("\n");
+
+  // Find the URL line — always preserved
+  const urlLineIndex = findLastIndex(lines, (l) => /^https?:\/\//.test(l));
+
+  if (urlLineIndex < 0) {
+    // No URL found — fall back to simple truncation
+    return truncateToGraphemeLimit(text, maxGraphemes);
+  }
+
+  const urlLine = lines[urlLineIndex] as string;
+  const contentLines = lines.slice(0, urlLineIndex);
+  const trailingLines = lines.slice(urlLineIndex + 1);
+
+  // Find the topic line: last content line containing " | " that isn't line 0
+  const topicIndex = findLastIndex(
+    contentLines,
+    (l, i) => i > 0 && l.includes(" | "),
+  );
+
+  // Strategy 1: Remove topic tags from right to left
+  if (topicIndex >= 0) {
+    const topicLine = contentLines[topicIndex] as string;
+    const tags = topicLine.split(" | ");
+
+    while (tags.length > 1) {
+      tags.pop();
+      const candidate = rebuildPost(
+        contentLines,
+        topicIndex,
+        tags.join(" | "),
+        urlLine,
+        trailingLines,
+      );
+      if (countGraphemes(candidate) <= maxGraphemes) return candidate;
+    }
+
+    // Strategy 2: Remove topic line entirely (and preceding blank line)
+    const trimmedContent = [...contentLines];
+    trimmedContent.splice(topicIndex, 1);
+    if (topicIndex > 0 && trimmedContent[topicIndex - 1] === "") {
+      trimmedContent.splice(topicIndex - 1, 1);
+    }
+
+    const candidate = [...trimmedContent, urlLine, ...trailingLines].join("\n");
+    if (countGraphemes(candidate) <= maxGraphemes) return candidate;
+  }
+
+  // Strategy 3: Truncate content before URL
+  // Reserve space for the newline separator and URL line
+  const separatorAndUrl = "\n" + urlLine;
+  const reservedGraphemes = countGraphemes(separatorAndUrl);
+  const available = maxGraphemes - reservedGraphemes;
+
+  if (available > 1) {
+    const contentText = contentLines.join("\n");
+    const truncatedContent = truncateToGraphemeLimit(contentText, available);
+    return truncatedContent + separatorAndUrl;
+  }
+
+  // Absolute last resort: truncate entire text
+  return truncateToGraphemeLimit(text, maxGraphemes);
+}
+
+/** Rebuild post text with a modified topic line. */
+function rebuildPost(
+  contentLines: readonly string[],
+  topicIndex: number,
+  newTopicLine: string,
+  urlLine: string,
+  trailingLines: readonly string[],
+): string {
+  const updated = [...contentLines];
+  updated[topicIndex] = newTopicLine;
+  return [...updated, urlLine, ...trailingLines].join("\n");
+}
+
+/** Array.findLastIndex polyfill for readability. */
+function findLastIndex<T>(
+  arr: readonly T[],
+  predicate: (value: T, index: number) => boolean,
+): number {
+  for (let i = arr.length - 1; i >= 0; i--) {
+    if (predicate(arr[i] as T, i)) return i;
+  }
+  return -1;
+}
+
 // --- Gemini Integration ---
 
 /**
@@ -342,7 +490,8 @@ Rules:
 - The third line should have emoji-prefixed topic tags separated by " | " (e.g. "📚 Books | 🤖 AI | 🧠 Learning")
 - Extract the topic tags from the content of the reflection (books being read, videos watched, topics explored)
 - The last line should be the URL: ${reflection.url}
-- Keep the total tweet under 280 characters (URLs count as 23 characters)
+- Keep the total tweet under 280 characters (URLs count as 23 characters on Twitter)
+- IMPORTANT: The entire post including the full URL must fit in 300 characters for Bluesky. Keep the topic tags line short — use 2–4 concise tags.
 - Do NOT use hashtags (use emoji tags instead)
 - Do NOT add any commentary, just the formatted tweet
 - Match the style of these examples:
@@ -2049,7 +2198,15 @@ export async function main(options?: {
               console.log(`  🖼️ OG image found: ${ogMeta.imageUrl}`);
             }
 
-            const bskyPost = await postToBluesky(postText, env.bluesky!, linkCard);
+            // Enforce Bluesky's 300-grapheme limit — the AI targets Twitter's
+            // 280-char limit (with URL shortening), so the actual text with full
+            // URLs can exceed 300 graphemes for long URLs.
+            const blueskyText = fitPostToLimit(postText, BLUESKY_MAX_LENGTH);
+            if (blueskyText !== postText) {
+              console.log(`  ✂️ Bluesky: trimmed post from ${countGraphemes(postText)} to ${countGraphemes(blueskyText)} graphemes`);
+            }
+
+            const bskyPost = await postToBluesky(blueskyText, env.bluesky!, linkCard);
             const did = extractBlueskyDid(bskyPost.uri);
             const postId = extractBlueskyPostId(bskyPost.uri);
             console.log(
@@ -2088,7 +2245,12 @@ export async function main(options?: {
           try {
             console.log(`🐘 Posting to Mastodon...`);
 
-            const mastodonPost = await postToMastodon(postText, env.mastodon!);
+            const mastodonText = fitPostToLimit(postText, MASTODON_MAX_LENGTH);
+            if (mastodonText !== postText) {
+              console.log(`  ✂️ Mastodon: trimmed post from ${countGraphemes(postText)} to ${countGraphemes(mastodonText)} graphemes`);
+            }
+
+            const mastodonPost = await postToMastodon(mastodonText, env.mastodon!);
             console.log(
               `✅ Mastodon post created: ${mastodonPost.url}`,
             );

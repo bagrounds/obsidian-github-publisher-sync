@@ -90,7 +90,7 @@ Environment Variables
   
 ## 🛠️ Implementation  
   
-### The `isPlatformDisabled` Function  
+### 🛠️ The `isPlatformDisabled` Function  
   
 ```typescript  
 export function isPlatformDisabled(envVar: string): boolean {  
@@ -99,10 +99,10 @@ export function isPlatformDisabled(envVar: string): boolean {
 }  
 ```  
   
-📏 Four lines. That's the entire feature.  
+📏 Four lines. ✨ That's the entire feature.  
 🧪 But those four lines have **13 tests** behind them.  
   
-### Integration with `validateEnvironment()`  
+### 🛠️ Integration with `validateEnvironment()`  
   
 ```typescript  
 // Before: just check credentials  
@@ -113,9 +113,9 @@ const twitterDisabled = isPlatformDisabled("DISABLE_TWITTER");
 const hasTwitter = !twitterDisabled && twitterKeys.every((key) => process.env[key]);  
 ```  
   
-🔧 Same pattern for Bluesky and Mastodon. Symmetry is beautiful.  
+🔧 Same pattern for Bluesky and Mastodon. 🎨 Symmetry is beautiful.  
   
-### GitHub Actions Workflow  
+### 🛠️ GitHub Actions Workflow  
   
 ```yaml  
 env:  
@@ -132,7 +132,7 @@ env:
   
 ✅ 20 new tests added:  
   
-### `isPlatformDisabled` (13 tests)  
+### 🧪 `isPlatformDisabled` (13 tests)  
 - ✅ Returns `false` when env var is not set  
 - ✅ Returns `false` for empty string  
 - ✅ Returns `true` for `"true"`, `"TRUE"`, `"True"`  
@@ -141,7 +141,7 @@ env:
 - ✅ Returns `true` for `" true "` (with whitespace)  
 - ✅ Returns `false` for `"false"`, `"0"`, `"no"`, `"maybe"`  
   
-### `validateEnvironment` Disable Scenarios (7 tests)  
+### 🧪 `validateEnvironment` Disable Scenarios (7 tests)  
 - ✅ Returns `null` twitter when `DISABLE_TWITTER=true` (credentials present)  
 - ✅ Returns `null` bluesky when `DISABLE_BLUESKY=1` (credentials present)  
 - ✅ Returns `null` mastodon when `DISABLE_MASTODON=yes` (credentials present)  
@@ -161,11 +161,11 @@ env:
 1. 🔄 **Automatic disable on repeated failures** - If a platform fails N times in a row across separate runs, auto-set the disable flag and send a notification.  
 2. ⏰ **Scheduled re-enable** - `DISABLE_TWITTER_UNTIL=2026-04-01` to automatically re-enable after a date, useful for temporary outages.  
 3. 📊 **Platform health dashboard** - Track success/failure rates per platform over time to identify reliability trends.  
-4. 🔔 **Failure notifications** - Post to a working platform (e.g. Mastodon) when another platform (e.g. Twitter) fails, as a meta-notification.  
+4. 🔔 **Failure notifications** - Post to a working platform (e.g. Mastodon) when another platform (e.g. Twitter) fails, 📢 as a meta-notification.  
 5. 🎚️ **Per-content-type disable** - `DISABLE_TWITTER_BOOKS=true` to skip posting books to Twitter but still post reflections.  
-6. 🌐 **New platform support** - [Threads](https://www.threads.net/) is adding [ActivityPub](https://www.w3.org/TR/activitypub/) federation. [LinkedIn](https://developer.linkedin.com/product-catalog/consumer/share-on-linkedin) has a share API. The architecture is ready.  
+6. 🌐 **New platform support** - [Threads](https://www.threads.net/) is adding [ActivityPub](https://www.w3.org/TR/activitypub/) federation. 🔗 [LinkedIn](https://developer.linkedin.com/product-catalog/consumer/share-on-linkedin) has a share API. 🏗️ The architecture is ready.  
 7. 🧮 **Rate limiting awareness** - Track per-platform rate limits and back off gracefully rather than failing.  
-8. 📈 **Retry budget** - Instead of retrying forever, give each platform a daily retry budget. When exhausted, skip until tomorrow.  
+8. 📈 **Retry budget** - Instead of retrying forever, give each platform a daily retry budget. ⏭️ When exhausted, skip until tomorrow.  
   
 ## 🌐 Relevant Systems & Services  
   

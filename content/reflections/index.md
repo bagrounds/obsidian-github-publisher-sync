@@ -5,15 +5,16 @@ aliases:
 title: 🪞 Reflections
 URL: https://bagrounds.org/reflections
 backlinks: false
-updated: 2026-03-07T17:48:28-08:00
+updated: 2026-03-08T20:18:10-07:00
 ---
 [Home](../index.md)  
-# 🪞 Reflections (478)  
+# 🪞 Reflections (479)  
+- [2026-03-08 | 🐘 Mastodon 🤔 Sophie 🤖 Agent](./2026-03-08.md)  
 - [2026-03-07 | 💥 Strikes ⚔️ Conflict 🤖 Agent 📰📚📺](./2026-03-07.md)  
 - [2026-03-06 | 🤖🆚🧠 Code 🤖 Choice 📚📺](./2026-03-06.md)  
 - [2026-03-05 | 😴🧠💤 Tired 🤖 Murderbot 📺](./2026-03-05.md)  
 - [2026-03-04 | 🤖⚙️ Claude 👥 Everyone 📚📄📺](./2026-03-04.md)  
-- [2026-03-03 | 💰🏛️📈 Wealth 📊 Public Finance 🤖](./2026-03-03.md)  
+- [2026-03-03 | 💰🏛️📈 Wealth 📊 Public Finance 📚📺](./2026-03-03.md)  
 - [2026-03-02 | 🤖 Agentic 📖 Fugitive ☁️ Tunnel 🌿 Rhubarb 😴 Snoring 📚🎤💻📰🌌](./2026-03-02.md)  
 - [2026-03-01 | 🕵️ Fugitive 🌐 Network 🚀 Build 🐦 Twitter 🤖 Agent 📚](./2026-03-01.md)  
 - [2026-02-28 | 🤖⚙️🧠 Agentic 📖](./2026-02-28.md)  

@@ -2,15 +2,17 @@
  * Social Media Auto-Posting Orchestrator
  *
  * Discovers content that hasn't been posted to social media and posts it.
+ * All content is read from the Obsidian vault — the single source of truth.
  *
  * Strategy:
- * 1. If past the posting hour and yesterday's reflection hasn't been posted, post that.
- * 2. Otherwise, use BFS from the most recent reflection to find unposted content.
- * 3. Post at most 1 item per platform per run.
- * 4. If all content has been posted everywhere, log a success message.
+ * 1. Pull the Obsidian vault (shared across BFS discovery and posting).
+ * 2. If past the posting hour and yesterday's reflection hasn't been posted, post that.
+ * 3. Otherwise, use BFS from the most recent reflection to find unposted content.
+ * 4. Post at most 1 item per platform per run.
+ * 5. If all content has been posted everywhere, log a success message.
  *
  * Usage:
- *   npx tsx scripts/auto-post.ts [--dry-run] [--posting-hour 17]
+ *   npx tsx scripts/auto-post.ts [--posting-hour 17]
  *
  * This script is the entry point for the scheduled GitHub Action.
  * It delegates actual posting to tweet-reflection.ts via the main() function.
@@ -18,7 +20,6 @@
  * @module auto-post
  */
 
-import path from "node:path";
 import {
   discoverContentToPost,
   isPastPostingHourUTC,
@@ -26,27 +27,22 @@ import {
   type FindContentConfig,
   type ContentToPost,
 } from "./find-content-to-post.ts";
-import { main, validateEnvironment } from "./tweet-reflection.ts";
+import { main, validateEnvironment, syncObsidianVault } from "./tweet-reflection.ts";
 
 // --- Types ---
 
 interface AutoPostConfig {
-  readonly dryRun: boolean;
   readonly postingHourUTC: number;
-  readonly contentDir: string;
 }
 
 // --- Argument Parsing ---
 
 function parseArgs(): AutoPostConfig {
   const args = process.argv.slice(2);
-  let dryRun = false;
   let postingHourUTC = 17; // 5 PM UTC = 9 AM PST / 10 AM PDT
 
   for (let i = 0; i < args.length; i++) {
-    if (args[i] === "--dry-run") {
-      dryRun = true;
-    } else if (args[i] === "--posting-hour" && args[i + 1]) {
+    if (args[i] === "--posting-hour" && args[i + 1]) {
       postingHourUTC = parseInt(args[i + 1] as string, 10);
       if (postingHourUTC < 0 || postingHourUTC > 23 || Number.isNaN(postingHourUTC)) {
         throw new Error(`Invalid posting hour: ${args[i + 1]} (must be 0-23)`);
@@ -55,11 +51,7 @@ function parseArgs(): AutoPostConfig {
     }
   }
 
-  return {
-    dryRun,
-    postingHourUTC,
-    contentDir: path.join(process.cwd(), "content"),
-  };
+  return { postingHourUTC };
 }
 
 // --- Platform Detection ---
@@ -101,8 +93,9 @@ function groupByNote(
 /**
  * Main auto-post orchestration.
  *
- * Discovers what to post, then delegates to tweet-reflection.ts main()
- * for each unique note that needs posting.
+ * Pulls the Obsidian vault once, then discovers what to post (BFS reads from
+ * the vault), and delegates posting to tweet-reflection.ts main() — passing
+ * the pre-pulled vault dir so it doesn't pull again.
  */
 async function autoPost(): Promise<void> {
   const config = parseArgs();
@@ -110,7 +103,6 @@ async function autoPost(): Promise<void> {
   console.log(`🤖 Auto-Post Orchestrator`);
   console.log(`📅 ${new Date().toISOString()}`);
   console.log(`⏰ Posting hour (UTC): ${config.postingHourUTC}`);
-  console.log(`🔧 Dry run: ${config.dryRun}`);
   console.log();
 
   // Determine which platforms have credentials
@@ -121,6 +113,12 @@ async function autoPost(): Promise<void> {
   }
   console.log(`📡 Configured platforms: ${platforms.join(", ")}`);
 
+  // Pull the Obsidian vault — shared across BFS discovery and posting.
+  // This is the single source of truth for all content.
+  const env = validateEnvironment();
+  console.log(`📥 Pulling Obsidian vault (source of truth)...`);
+  const vaultDir = await syncObsidianVault(env.obsidian);
+
   // Check if we're past the posting hour
   const pastPostingHour = isPastPostingHourUTC(config.postingHourUTC);
   console.log(
@@ -128,9 +126,9 @@ async function autoPost(): Promise<void> {
   );
   console.log();
 
-  // Discover what to post
+  // Discover what to post — BFS reads from the vault
   const findConfig: FindContentConfig = {
-    contentDir: config.contentDir,
+    contentDir: vaultDir,
     platforms,
     postingHourUTC: config.postingHourUTC,
   };
@@ -167,7 +165,7 @@ async function autoPost(): Promise<void> {
     try {
       await main({
         note: notePath,
-        dryRun: config.dryRun,
+        vaultDir,
       });
     } catch (error) {
       console.error(

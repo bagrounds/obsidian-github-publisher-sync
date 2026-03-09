@@ -253,6 +253,59 @@ describe("extractMarkdownLinks", () => {
     );
     assert.ok(links.includes("books/some-book.md"));
   });
+
+  // --- Obsidian Wiki Link Tests ---
+
+  test("extracts Obsidian wiki links with path", () => {
+    const body = `Some text with [[books/sophies-world]] and [[topics/philosophy]].`;
+    const links = extractMarkdownLinks(body, "reflections/test.md", "/content");
+    assert.ok(links.includes("books/sophies-world.md"));
+    assert.ok(links.includes("topics/philosophy.md"));
+  });
+
+  test("extracts wiki links with display text", () => {
+    const body = `Check out [[books/sophies-world|🤔🌍 Sophie's World]] for more.`;
+    const links = extractMarkdownLinks(body, "reflections/test.md", "/content");
+    assert.ok(links.includes("books/sophies-world.md"));
+  });
+
+  test("extracts wiki links with heading anchor", () => {
+    const body = `See [[books/sophies-world#related]] section.`;
+    const links = extractMarkdownLinks(body, "reflections/test.md", "/content");
+    assert.ok(links.includes("books/sophies-world.md"));
+  });
+
+  test("extracts wiki links with heading and display text", () => {
+    const body = `Read [[books/sophies-world#chapter-1|Chapter 1]] next.`;
+    const links = extractMarkdownLinks(body, "reflections/test.md", "/content");
+    assert.ok(links.includes("books/sophies-world.md"));
+  });
+
+  test("handles wiki links with .md extension already present", () => {
+    const body = `Link to [[books/sophies-world.md]].`;
+    const links = extractMarkdownLinks(body, "reflections/test.md", "/content");
+    assert.ok(links.includes("books/sophies-world.md"));
+  });
+
+  test("resolves filename-only wiki links relative to current file", () => {
+    const body = `Link to [[2026-03-07]] in the same directory.`;
+    const links = extractMarkdownLinks(body, "reflections/test.md", "/content");
+    assert.ok(links.includes("reflections/2026-03-07.md"));
+  });
+
+  test("handles mixed markdown and wiki links", () => {
+    const body = `[Standard](../books/book-a.md) and [[books/book-b]] together.`;
+    const links = extractMarkdownLinks(body, "reflections/test.md", "/content");
+    assert.ok(links.includes("books/book-a.md"));
+    assert.ok(links.includes("books/book-b.md"));
+  });
+
+  test("deduplicates across markdown and wiki links", () => {
+    const body = `[Book](../books/sophies-world.md) and [[books/sophies-world]].`;
+    const links = extractMarkdownLinks(body, "reflections/test.md", "/content");
+    const matches = links.filter((l) => l === "books/sophies-world.md");
+    assert.equal(matches.length, 1);
+  });
 });
 
 describe("detectPostedPlatforms", () => {
@@ -812,6 +865,182 @@ A book that is linked from today's reflection and has plenty of content.`);
     assert.equal(results.length, 1);
     assert.equal(results[0]!.note.relativePath, "books/linked-book.md");
     assert.equal(results[0]!.platform, "twitter");
+  });
+
+  test("traverses reflection linked list via wiki links to find unposted content", () => {
+    // Most recent reflection links to previous via wiki link (doubly linked list).
+    // The previous reflection links to an unposted book.
+    // BFS should follow the chain: 2026-03-08 → 2026-03-07 → 2026-03-06 → book-b
+    writeNote(tempDir, "reflections/2026-03-08.md", `---
+title: 2026-03-08 | Recent
+URL: https://bagrounds.org/reflections/2026-03-08
+---
+# 2026-03-08 | Recent Reflection
+Content with a link to [[books/book-a|Book A]].
+Navigation: [[reflections/2026-03-07|⏮️]]
+
+## 🐦 Tweet
+<blockquote>tweet</blockquote>
+
+## 🦋 Bluesky
+<blockquote>post</blockquote>
+
+## 🐘 Mastodon
+<iframe>embed</iframe>`);
+
+    writeNote(tempDir, "books/book-a.md", `---
+title: Book A
+URL: https://bagrounds.org/books/book-a
+---
+# Book A
+A book that has been posted everywhere already.
+
+## 🐦 Tweet
+<blockquote>tweet</blockquote>
+
+## 🦋 Bluesky
+<blockquote>post</blockquote>
+
+## 🐘 Mastodon
+<iframe>embed</iframe>`);
+
+    writeNote(tempDir, "reflections/2026-03-07.md", `---
+title: 2026-03-07 | Middle
+URL: https://bagrounds.org/reflections/2026-03-07
+---
+# 2026-03-07 | Middle Reflection
+Navigation: [[reflections/2026-03-08|⏭️]] [[reflections/2026-03-06|⏮️]]
+
+## 🐦 Tweet
+<blockquote>tweet</blockquote>
+
+## 🦋 Bluesky
+<blockquote>post</blockquote>
+
+## 🐘 Mastodon
+<iframe>embed</iframe>`);
+
+    writeNote(tempDir, "reflections/2026-03-06.md", `---
+title: 2026-03-06 | Older
+URL: https://bagrounds.org/reflections/2026-03-06
+---
+# 2026-03-06 | Older Reflection
+Content with a link to [[books/book-b|Book B]].
+Navigation: [[reflections/2026-03-07|⏭️]]
+
+## 🐦 Tweet
+<blockquote>tweet</blockquote>
+
+## 🦋 Bluesky
+<blockquote>post</blockquote>
+
+## 🐘 Mastodon
+<iframe>embed</iframe>`);
+
+    writeNote(tempDir, "books/book-b.md", `---
+title: Book B
+URL: https://bagrounds.org/books/book-b
+---
+# Book B
+An unposted book only reachable by traversing the reflection linked list.`);
+
+    const config: FindContentConfig = {
+      contentDir: tempDir,
+      platforms: ["twitter"],
+      postingHourUTC: 0,
+    };
+
+    const results = bfsContentDiscovery(config);
+    // BFS starts at 2026-03-08 → follows wiki link to 2026-03-07 → follows to 2026-03-06 → finds book-b
+    assert.equal(results.length, 1);
+    assert.equal(results[0]!.note.relativePath, "books/book-b.md");
+  });
+
+  test("discovers content via Obsidian wiki links (vault format)", () => {
+    // Simulate vault content with wiki links (not markdown links)
+    writeNote(tempDir, "reflections/2026-03-08.md", `---
+title: 2026-03-08 | Wiki Link Reflection
+URL: https://bagrounds.org/reflections/2026-03-08
+---
+# 2026-03-08 | Wiki Link Reflection
+This reflection uses wiki links like Obsidian does.
+- [[books/sophies-world|🤔🌍 Sophie's World]]
+- [[topics/philosophy]]`);
+
+    writeNote(tempDir, "books/sophies-world.md", `---
+title: Sophie's World
+URL: https://bagrounds.org/books/sophies-world
+---
+# Sophie's World
+A wonderful book about philosophy with rich content worth sharing.`);
+
+    writeNote(tempDir, "topics/philosophy.md", `---
+title: Philosophy
+URL: https://bagrounds.org/topics/philosophy
+---
+# Philosophy
+An overview of Western philosophical traditions and their key thinkers.`);
+
+    const config: FindContentConfig = {
+      contentDir: tempDir,
+      platforms: ["bluesky"],
+      postingHourUTC: 0,
+    };
+
+    const results = bfsContentDiscovery(config);
+    assert.ok(results.length > 0, "Should find content via wiki links");
+    // BFS should find the reflection itself (unposted on bluesky) as first result
+    assert.equal(results[0]!.platform, "bluesky");
+  });
+
+  test("handles vault with only wiki links and no markdown links", () => {
+    // Reflection has only wiki links, no markdown links
+    writeNote(tempDir, "reflections/2026-03-08.md", `---
+title: 2026-03-08 | Vault Format
+URL: https://bagrounds.org/reflections/2026-03-08
+---
+# Vault Format Reflection
+Content with wiki links only.
+References [[books/test-book]] and [[2026-03-07]].
+
+## 🐦 Tweet
+<blockquote>tweet</blockquote>
+
+## 🦋 Bluesky
+<blockquote>post</blockquote>
+
+## 🐘 Mastodon
+<iframe>embed</iframe>`);
+
+    writeNote(tempDir, "reflections/2026-03-07.md", `---
+title: 2026-03-07 | Older
+URL: https://bagrounds.org/reflections/2026-03-07
+---
+# 2026-03-07 | Older reflection
+Some older reflection content that is worth sharing on social media.`);
+
+    writeNote(tempDir, "books/test-book.md", `---
+title: Test Book
+URL: https://bagrounds.org/books/test-book
+---
+# Test Book
+A test book with enough content for a social media post about its themes.`);
+
+    const config: FindContentConfig = {
+      contentDir: tempDir,
+      platforms: ["twitter"],
+      postingHourUTC: 0,
+    };
+
+    const results = bfsContentDiscovery(config);
+    // The most recent reflection is fully posted, but its wiki links should be followed
+    assert.ok(results.length > 0, "Should find content via wiki links from posted note");
+    // Should find either the book or the older reflection
+    const foundPaths = results.map((r) => r.note.relativePath);
+    assert.ok(
+      foundPaths.includes("books/test-book.md") || foundPaths.includes("reflections/2026-03-07.md"),
+      `Expected to find book or older reflection, got: ${foundPaths.join(", ")}`,
+    );
   });
 });
 

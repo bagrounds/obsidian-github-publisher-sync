@@ -10,10 +10,14 @@
  * - Unix philosophy: one module, one job (find content to post)
  * - Domain-driven: models the note graph as a domain concept
  *
- * The BFS starts at the most recent reflection and follows markdown links
- * to discover connected notes. It skips index pages and the home page,
- * only returning pages with actual content that are missing social media
- * embeds for at least one configured platform.
+ * The BFS starts at the most recent reflection and follows both standard
+ * markdown links and Obsidian wiki links. Since reflections form a doubly
+ * linked list (each links to previous/next), the BFS naturally traverses
+ * the full chain of reflections and all content linked from them.
+ *
+ * It skips index pages and the home page, only returning pages with actual
+ * content that are missing social media embeds for at least one configured
+ * platform.
  *
  * @module find-content-to-post
  */
@@ -122,9 +126,15 @@ export function isIndexOrHomePage(relativePath: string): boolean {
 }
 
 /**
- * Extract markdown link targets from note content.
- * Matches patterns like [text](../path/to/file.md) and returns
- * the resolved relative paths from the content root.
+ * Extract link targets from note content.
+ *
+ * Handles two link formats:
+ * 1. Standard markdown links: `[text](../path/to/file.md)` — resolved relative to the current file
+ * 2. Obsidian wiki links: `[[path/to/file]]` or `[[path/to/file|display text]]` — resolved from vault root
+ *
+ * The Obsidian vault (source of truth) uses wiki links natively.
+ * The GitHub repo (published via Enveloppe) converts them to markdown links.
+ * Supporting both formats ensures the BFS works regardless of which source is read.
  *
  * Only follows internal .md links; external URLs are ignored.
  */
@@ -133,15 +143,23 @@ export function extractMarkdownLinks(
   noteRelativePath: string,
   contentDir: string,
 ): readonly string[] {
-  const linkRegex = /\]\(([^)]+\.md)\)/g;
   const noteDir = path.dirname(
     path.join(contentDir, noteRelativePath),
   );
   const links: string[] = [];
   const seen = new Set<string>();
 
+  function addLink(relativePath: string): void {
+    if (!relativePath.startsWith("..") && !seen.has(relativePath)) {
+      seen.add(relativePath);
+      links.push(relativePath);
+    }
+  }
+
+  // 1. Standard markdown links: [text](path.md)
+  const markdownLinkRegex = /\]\(([^)]+\.md)\)/g;
   let match: RegExpExecArray | null;
-  while ((match = linkRegex.exec(body)) !== null) {
+  while ((match = markdownLinkRegex.exec(body)) !== null) {
     const target = match[1] as string;
 
     // Skip external URLs
@@ -152,15 +170,35 @@ export function extractMarkdownLinks(
     // Resolve relative path to absolute, then back to content-relative
     const absoluteTarget = path.resolve(noteDir, target);
     const relativePath = path.relative(contentDir, absoluteTarget);
+    addLink(relativePath);
+  }
 
-    // Skip paths that resolve outside the content directory
-    if (relativePath.startsWith("..")) {
-      continue;
+  // 2. Obsidian wiki links: [[path]] or [[path|display text]] or [[path#heading]]
+  // Regex breakdown:
+  //   \[\[           — opening [[
+  //   ([^\]|#]+)     — capture group 1: the link path (everything before #, |, or ]])
+  //   (?:#[^\]|]*)?  — optional heading anchor (after #, before | or ]])
+  //   (?:\|[^\]]+)?  — optional display text (after |, before ]])
+  //   \]\]           — closing ]]
+  const wikiLinkRegex = /\[\[([^\]|#]+)(?:#[^\]|]*)?(?:\|[^\]]+)?\]\]/g;
+  while ((match = wikiLinkRegex.exec(body)) !== null) {
+    let target = (match[1] as string).trim();
+
+    // Add .md extension if not present
+    if (!target.endsWith(".md")) {
+      target = target + ".md";
     }
 
-    if (!seen.has(relativePath)) {
-      seen.add(relativePath);
-      links.push(relativePath);
+    // Wiki links in Obsidian are typically relative to vault root.
+    // If the target has a directory separator, treat as vault-root-relative.
+    // If it's just a filename, try resolving relative to the current file's directory.
+    if (target.includes("/")) {
+      addLink(target);
+    } else {
+      // Filename-only wiki link — resolve relative to current file's directory
+      const absoluteTarget = path.resolve(noteDir, target);
+      const relativePath = path.relative(contentDir, absoluteTarget);
+      addLink(relativePath);
     }
   }
 
@@ -240,6 +278,11 @@ export function isPostableContent(note: ContentNote): boolean {
 /**
  * Find the most recent reflection file by scanning the reflections directory
  * for date-named files and returning the latest one.
+ *
+ * This is the single BFS seed — reflections form a doubly linked list
+ * (each links to previous/next via wiki links), so starting from the
+ * most recent reflection and following links eventually reaches all
+ * reflections and all content linked from them.
  */
 export function findMostRecentReflection(
   contentDir: string,
@@ -251,17 +294,13 @@ export function findMostRecentReflection(
   }
 
   const datePattern = /^\d{4}-\d{2}-\d{2}\.md$/;
-  const reflectionFiles = fs
+  const files = fs
     .readdirSync(reflectionsDir)
     .filter((f) => datePattern.test(f))
     .sort()
     .reverse();
 
-  if (reflectionFiles.length === 0) {
-    return null;
-  }
-
-  return `reflections/${reflectionFiles[0]}`;
+  return files.length > 0 ? `reflections/${files[0]}` : null;
 }
 
 /**
@@ -333,7 +372,16 @@ export function getPriorDayReflectionIfNeeded(
  * Breadth-first search across the content graph to find notes that
  * haven't been posted to all configured platforms.
  *
- * Starts from the most recent reflection and follows markdown links.
+ * Seeds the BFS from the most recent reflection. Since reflections form
+ * a doubly linked list (each links to previous/next via wiki links),
+ * the BFS naturally traverses the full chain. Each reflection also links
+ * to the content consumed that day (books, videos, articles, etc.),
+ * so the BFS covers the full content graph from a single entry point.
+ *
+ * The BFS follows both standard markdown links and Obsidian wiki links,
+ * ensuring it works whether reading from the vault (wiki links) or the
+ * repo (markdown links).
+ *
  * Skips index/home pages and reflections that are too recent to post.
  * Returns up to one note per platform that still needs posting.
  *
@@ -348,7 +396,10 @@ export function bfsContentDiscovery(
   const { contentDir, platforms } = config;
   const postingHourUTC = config.postingHourUTC ?? 17;
 
-  // Find starting point
+  // Seed from the most recent reflection.
+  // Reflections form a doubly linked list (each links to previous/next),
+  // so starting from the most recent and following wiki links reaches
+  // all reflections and all content linked from them.
   const startPath = findMostRecentReflection(contentDir);
   if (!startPath) {
     console.log("📭 No reflections found to start BFS from");
@@ -439,6 +490,7 @@ export function bfsContentDiscovery(
  * Strategy:
  * 1. If the prior day's reflection hasn't been posted, return that for all platforms.
  * 2. Otherwise, use BFS from the most recent reflection to find unposted content.
+ *    (Reflections form a doubly linked list, so BFS from the latest reaches all content.)
  * 3. Returns at most one note per platform.
  *
  * @param config - Content directory and platforms to discover for

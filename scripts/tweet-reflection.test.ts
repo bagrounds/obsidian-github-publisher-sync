@@ -1489,6 +1489,7 @@ describe(
         filePath: "",
         hasTweetSection: false,
         hasBlueskySection: false,
+        hasMastodonSection: false,
       };
 
       const tweet = await generateTweetWithGemini(reflection, apiKey);
@@ -1695,5 +1696,169 @@ describe("PipelineTimer", () => {
 
     assert.ok(logs.some((l) => l.includes("a")));
     assert.ok(logs.some((l) => l.includes("b")));
+  });
+});
+
+// --- Vault-Only Reading Tests (duplicate post prevention) ---
+// The pipeline reads note content exclusively from the Obsidian vault (the single
+// source of truth), not from the GitHub repo's content/ directory. The repo content
+// may be stale since it only updates when the user manually publishes from Obsidian.
+// readNote() is the function used to read from the vault — it works with any base
+// directory. These tests verify that reading from a vault directory correctly detects
+// social media sections, preventing duplicate posts.
+
+describe("vault-only reading (duplicate post prevention)", () => {
+  let vaultDir: string;
+
+  beforeEach(() => {
+    vaultDir = createTempDir();
+  });
+
+  afterEach(() => {
+    cleanupTempDir(vaultDir);
+  });
+
+  const FRESH_NOTE = `---
+share: true
+title: 2026-03-09 | Test Note
+URL: https://bagrounds.org/reflections/2026-03-09
+---
+# 2026-03-09 | Test Note
+Some content here for testing.`;
+
+  const NOTE_WITH_BLUESKY_AND_MASTODON = `---
+share: true
+title: 2026-03-09 | Test Note
+URL: https://bagrounds.org/reflections/2026-03-09
+---
+# 2026-03-09 | Test Note
+Some content here for testing.
+
+## 🦋 Bluesky
+<blockquote class="bluesky-embed">Previous post</blockquote>
+
+## 🐘 Mastodon
+<iframe src="https://mastodon.social/@test/123">Previous post</iframe>`;
+
+  const NOTE_WITH_ALL_SECTIONS = `---
+share: true
+title: 2026-03-09 | Test Note
+URL: https://bagrounds.org/reflections/2026-03-09
+---
+# 2026-03-09 | Test Note
+Some content here for testing.
+
+## 🐦 Tweet
+<blockquote class="twitter-tweet">tweet</blockquote>
+
+## 🦋 Bluesky
+<blockquote class="bluesky-embed">post</blockquote>
+
+## 🐘 Mastodon
+<iframe src="https://mastodon.social/@test/123">embed</iframe>`;
+
+  test("readNote from vault detects no sections for fresh content", () => {
+    fs.mkdirSync(path.join(vaultDir, "reflections"), { recursive: true });
+    fs.writeFileSync(path.join(vaultDir, "reflections", "2026-03-09.md"), FRESH_NOTE);
+
+    const note = readNote("reflections/2026-03-09.md", vaultDir);
+    assert.ok(note !== null);
+    assert.equal(note.hasTweetSection, false);
+    assert.equal(note.hasBlueskySection, false);
+    assert.equal(note.hasMastodonSection, false);
+  });
+
+  test("readNote from vault detects bluesky and mastodon sections", () => {
+    fs.mkdirSync(path.join(vaultDir, "reflections"), { recursive: true });
+    fs.writeFileSync(path.join(vaultDir, "reflections", "2026-03-09.md"), NOTE_WITH_BLUESKY_AND_MASTODON);
+
+    const note = readNote("reflections/2026-03-09.md", vaultDir);
+    assert.ok(note !== null);
+    assert.equal(note.hasTweetSection, false, "No tweet section");
+    assert.equal(note.hasBlueskySection, true, "Should detect bluesky");
+    assert.equal(note.hasMastodonSection, true, "Should detect mastodon");
+  });
+
+  test("readNote from vault detects all sections", () => {
+    fs.mkdirSync(path.join(vaultDir, "reflections"), { recursive: true });
+    fs.writeFileSync(path.join(vaultDir, "reflections", "2026-03-09.md"), NOTE_WITH_ALL_SECTIONS);
+
+    const note = readNote("reflections/2026-03-09.md", vaultDir);
+    assert.ok(note !== null);
+    assert.equal(note.hasTweetSection, true);
+    assert.equal(note.hasBlueskySection, true);
+    assert.equal(note.hasMastodonSection, true);
+  });
+
+  test("readNote from vault works for arbitrary content paths", () => {
+    fs.mkdirSync(path.join(vaultDir, "ai-blog"), { recursive: true });
+    fs.writeFileSync(path.join(vaultDir, "ai-blog", "2026-03-09-test.md"), NOTE_WITH_BLUESKY_AND_MASTODON);
+
+    const note = readNote("ai-blog/2026-03-09-test.md", vaultDir);
+    assert.ok(note !== null);
+    assert.equal(note.hasBlueskySection, true);
+    assert.equal(note.hasMastodonSection, true);
+  });
+
+  test("readNote from vault returns null for missing files", () => {
+    const note = readNote("reflections/nonexistent.md", vaultDir);
+    assert.equal(note, null);
+  });
+
+  test("readNote from vault preserves title, URL, date, and body", () => {
+    fs.mkdirSync(path.join(vaultDir, "reflections"), { recursive: true });
+    fs.writeFileSync(path.join(vaultDir, "reflections", "2026-03-09.md"), FRESH_NOTE);
+
+    const note = readNote("reflections/2026-03-09.md", vaultDir);
+    assert.ok(note !== null);
+    assert.equal(note.date, "2026-03-09");
+    assert.equal(note.title, "2026-03-09 | Test Note");
+    assert.equal(note.url, "https://bagrounds.org/reflections/2026-03-09");
+    assert.ok(note.body.includes("Some content here for testing"));
+  });
+
+  test("stale repo misses vault sections — demonstrates the pre-fix bug", () => {
+    // Setup: simulate repo with fresh note, vault with sections from prior posting
+    const repoDir = createTempDir();
+    fs.mkdirSync(path.join(repoDir, "reflections"), { recursive: true });
+    fs.writeFileSync(path.join(repoDir, "reflections", "2026-03-09.md"), FRESH_NOTE);
+    fs.mkdirSync(path.join(vaultDir, "reflections"), { recursive: true });
+    fs.writeFileSync(path.join(vaultDir, "reflections", "2026-03-09.md"), NOTE_WITH_BLUESKY_AND_MASTODON);
+
+    // Reading from repo (old buggy approach) — misses sections
+    const repoNote = readNote("reflections/2026-03-09.md", repoDir);
+    assert.ok(repoNote !== null);
+    assert.equal(repoNote.hasBlueskySection, false, "Repo is stale — no bluesky section");
+    assert.equal(repoNote.hasMastodonSection, false, "Repo is stale — no mastodon section");
+
+    // Reading from vault (fixed approach) — detects sections
+    const vaultNote = readNote("reflections/2026-03-09.md", vaultDir);
+    assert.ok(vaultNote !== null);
+    assert.equal(vaultNote.hasBlueskySection, true, "Vault has bluesky section");
+    assert.equal(vaultNote.hasMastodonSection, true, "Vault has mastodon section");
+
+    cleanupTempDir(repoDir);
+  });
+
+  test("partial vault sections: only posted platforms are detected", () => {
+    const noteWithOnlyMastodon = `---
+share: true
+title: 2026-03-09 | Test Note
+URL: https://bagrounds.org/reflections/2026-03-09
+---
+# 2026-03-09 | Test Note
+Some content here for testing.
+
+## 🐘 Mastodon
+<iframe src="https://mastodon.social/@test/123">Previous post</iframe>`;
+
+    fs.mkdirSync(path.join(vaultDir, "reflections"), { recursive: true });
+    fs.writeFileSync(path.join(vaultDir, "reflections", "2026-03-09.md"), noteWithOnlyMastodon);
+
+    const note = readNote("reflections/2026-03-09.md", vaultDir);
+    assert.ok(note !== null);
+    assert.equal(note.hasMastodonSection, true, "Should detect mastodon");
+    assert.equal(note.hasBlueskySection, false, "Bluesky not yet posted");
+    assert.equal(note.hasTweetSection, false, "Twitter not yet posted");
   });
 });

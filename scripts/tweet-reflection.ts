@@ -13,7 +13,7 @@
  * via the Enveloppe plugin (one-way sync: Obsidian → GitHub).
  *
  * Usage:
- *   npx tsx scripts/tweet-reflection.ts [--date YYYY-MM-DD] [--dry-run]
+ *   npx tsx scripts/tweet-reflection.ts [--date YYYY-MM-DD]
  *
  * Environment variables:
  *   TWITTER_API_KEY       - (Optional) OAuth 1.0a Consumer Key (from X Developer Portal → Keys and Tokens)
@@ -150,7 +150,6 @@ export interface EmbedResult {
 
 // --- Constants ---
 
-const CONTENT_DIR = path.join(process.cwd(), "content", "reflections");
 const TWITTER_HANDLE = "bagrounds";
 const TWITTER_DISPLAY_NAME = "Bryan Grounds";
 const BLUESKY_DISPLAY_NAME = "Bryan Grounds";
@@ -193,7 +192,7 @@ const DEFAULT_GEMINI_MODEL = "gemma-3-27b-it";
  */
 export function getReflectionPath(
   date: string,
-  contentDir: string = CONTENT_DIR,
+  contentDir: string,
 ): string {
   return path.join(contentDir, `${date}.md`);
 }
@@ -236,7 +235,7 @@ export function parseFrontmatter(content: string): {
  */
 export function readReflection(
   date: string,
-  contentDir: string = CONTENT_DIR,
+  contentDir: string,
 ): ReflectionData | null {
   const filePath = getReflectionPath(date, contentDir);
 
@@ -265,7 +264,7 @@ export function readReflection(
  */
 export function readNote(
   relativePath: string,
-  contentDir: string = path.join(process.cwd(), "content"),
+  contentDir: string,
 ): ReflectionData | null {
   const filePath = path.join(contentDir, relativePath);
 
@@ -1637,25 +1636,22 @@ export function getYesterdayDate(): string {
 /**
  * Parse command line arguments.
  */
-function parseArgs(): { date: string; dryRun: boolean; note?: string } {
+function parseArgs(): { date: string; note?: string } {
   const args = process.argv.slice(2);
   let date = getYesterdayDate();
-  let dryRun = false;
   let note: string | undefined;
 
   for (let i = 0; i < args.length; i++) {
     if (args[i] === "--date" && args[i + 1]) {
       date = args[i + 1] as string;
       i++;
-    } else if (args[i] === "--dry-run") {
-      dryRun = true;
     } else if (args[i] === "--note" && args[i + 1]) {
       note = args[i + 1] as string;
       i++;
     }
   }
 
-  return { date, dryRun, note };
+  return { date, note };
 }
 
 /**
@@ -1785,88 +1781,67 @@ export function validateEnvironment(): {
  *
  * Posts to Twitter, Bluesky, and Mastodon (if credentials are configured).
  * Platform failures are logged but don't crash the pipeline.
- * The pipeline continues as long as at least one platform succeeds,
- * or if only dry-run/generation is requested.
+ * The pipeline continues as long as at least one platform succeeds.
  *
- * ## Performance: Parallel Vault Pull
+ * ## Source of Truth: Obsidian Vault
  *
- * The Obsidian vault pull is the slowest operation (~4-7 minutes for a cold
- * cache). To minimize wall-clock time, we start the pull in the background
- * immediately after validating credentials, and run Gemini generation + social
- * posting concurrently. The pull result is awaited only when we need to write.
+ * All note content is read from the Obsidian vault (the authoritative source),
+ * not from the GitHub repo's content/ directory. The repo content is stale —
+ * it only updates when the user manually publishes from Obsidian. Reading from
+ * the vault ensures we always see the latest social media embed sections,
+ * preventing duplicate posts across pipeline runs.
  *
- * Timeline (before):
- *   generate(3s) → post(10s) → pull(~7min) → push(1.5s) = ~7min 15s
+ * If a `vaultDir` is provided (pre-pulled by auto-post.ts), it is reused
+ * instead of pulling the vault again.
  *
- * Timeline (after):
- *   pull(~7min, background) ─────────────────────────┐
- *   generate(3s) → post(10s) → await pull → push(1.5s) = ~7min 1.5s
+ * Timeline:
+ *   pull(~7min) → read note → generate(3s) → post(10s) → push(1.5s)
  */
 export async function main(options?: {
   date?: string;
-  dryRun?: boolean;
-  contentDir?: string;
   note?: string;
+  vaultDir?: string;
 }): Promise<void> {
   const timer = new PipelineTimer();
   const date = options?.date || getYesterdayDate();
-  const dryRun = options?.dryRun || false;
-  const contentDir = options?.contentDir || CONTENT_DIR;
   const notePath = options?.note;
+  const obsidianNotePath = notePath || `reflections/${date}.md`;
 
-  // Step 1: Read the note to post
-  let reflection: ReflectionData | null;
+  console.log(`📄 Processing: ${obsidianNotePath}`);
 
-  if (notePath) {
-    // Read arbitrary note (BFS-discovered or manually specified)
-    console.log(`📄 Processing note: ${notePath}${dryRun ? " (DRY RUN)" : ""}`);
-    reflection = readNote(notePath, path.dirname(contentDir));
-    if (!reflection) {
-      console.log(`ℹ️  No note found at ${notePath}, exiting`);
-      return;
-    }
-  } else {
-    // Default: read reflection by date
-    console.log(
-      `📅 Processing reflection for ${date}${dryRun ? " (DRY RUN)" : ""}`,
-    );
-    reflection = readReflection(date, contentDir);
-    if (!reflection) {
-      console.log(`ℹ️  No reflection found for ${date}, exiting`);
-      return;
-    }
-  }
-
-  console.log(`📄 Found: ${reflection.title}`);
-
-  // Check idempotency — skip if all sections already exist
-  if (reflection.hasTweetSection && reflection.hasBlueskySection && reflection.hasMastodonSection) {
-    console.log(`ℹ️  Reflection already has all social platform sections, skipping`);
-    return;
-  }
-
-  // Step 2: Validate credentials
+  // Step 1: Validate credentials
   const env = validateEnvironment();
 
   if (!env.twitter && !env.bluesky && !env.mastodon) {
     console.warn(`⚠️  No social platform credentials configured. Set TWITTER_*, BLUESKY_*, or MASTODON_* env vars.`);
   }
 
-  // Step 3: Start vault pull in background (overlaps with Gemini + posting).
-  // The pull doesn't depend on post text — it only needs Obsidian credentials.
-  // We await the result later, just before we need to write to the vault.
-  let vaultPullPromise: Promise<string> | null = null;
-  if (!dryRun && (env.twitter || env.bluesky || env.mastodon)) {
-    timer.start("obsidian-pull");
-    console.log(`📥 Starting Obsidian vault pull in background...`);
-    vaultPullPromise = syncObsidianVault(env.obsidian).then((dir) => {
-      timer.end("obsidian-pull");
-      return dir;
-    }).catch((err) => {
-      timer.end("obsidian-pull");
-      throw err;
-    });
+  // Step 2: Get the Obsidian vault — the single source of truth.
+  // If a pre-pulled vault dir is provided (e.g. from auto-post.ts),
+  // reuse it to avoid a redundant pull. Otherwise, pull fresh.
+  let vaultDir = options?.vaultDir || null;
+  if (!vaultDir) {
+    console.log(`📥 Pulling Obsidian vault (source of truth)...`);
+    vaultDir = await timer.time("obsidian-pull", () =>
+      syncObsidianVault(env.obsidian),
+    );
   }
+
+  // Step 3: Read the note from the vault
+  const reflection = readNote(obsidianNotePath, vaultDir);
+  if (!reflection) {
+    console.log(`ℹ️  Note not found in Obsidian vault: ${obsidianNotePath}, exiting`);
+    return;
+  }
+
+  console.log(`📄 Found: ${reflection.title}`);
+
+  // Check idempotency — skip if all sections already exist
+  if (reflection.hasTweetSection && reflection.hasBlueskySection && reflection.hasMastodonSection) {
+    console.log(`ℹ️  Note already has all social platform sections, skipping`);
+    return;
+  }
+  console.log(`🔍 Section check — tweet: ${reflection.hasTweetSection}, bluesky: ${reflection.hasBlueskySection}, mastodon: ${reflection.hasMastodonSection}`);
 
   // Step 4: Generate post text with Gemini
   const postText = await timer.time("gemini-generate", async () => {
@@ -1881,11 +1856,6 @@ export async function main(options?: {
     );
     return text;
   });
-
-  if (dryRun) {
-    console.log(`🏁 Dry run complete, would have posted the above`);
-    return;
-  }
 
   // Collect embed sections to write to Obsidian
   const embedSections: EmbedSection[] = [];
@@ -2034,23 +2004,12 @@ export async function main(options?: {
   });
 
   // Step 6: Write embed sections to Obsidian vault via Headless Sync
-  if (embedSections.length > 0 && vaultPullPromise) {
-    // Derive the note path in the vault:
-    // For reflections: reflections/{date}.md
-    // For arbitrary notes: use the relative path from the note option
-    const obsidianNotePath = notePath || `reflections/${date}.md`;
+  if (embedSections.length > 0 && vaultDir) {
     console.log(`📝 Writing ${embedSections.length} embed section(s) to Obsidian note: ${obsidianNotePath}`);
 
-    // Await the vault pull that was running in parallel with social posting.
-    // This measures how long we had to wait AFTER posting completed.
-    console.log(`⏳ Waiting for Obsidian vault pull to complete...`);
-    timer.start("obsidian-await-pull");
-    const vaultDir = await vaultPullPromise;
-    timer.end("obsidian-await-pull");
-
     await timer.time("obsidian-write-push", async () => {
-      // Read note from synced vault
-      const filePath = path.join(vaultDir, obsidianNotePath);
+      // Read note from synced vault (already pulled in step 2)
+      const filePath = path.join(vaultDir!, obsidianNotePath);
       if (!fs.existsSync(filePath)) {
         throw new Error(
           `Note not found in Obsidian vault: ${obsidianNotePath} (looked at ${filePath})`,
@@ -2071,7 +2030,7 @@ export async function main(options?: {
 
       if (modified) {
         fs.writeFileSync(filePath, content, "utf-8");
-        await pushObsidianVault(vaultDir, { authToken: env.obsidian.authToken });
+        await pushObsidianVault(vaultDir!, { authToken: env.obsidian.authToken });
       } else {
         console.log("No new sections to add to Obsidian note");
       }
@@ -2081,11 +2040,6 @@ export async function main(options?: {
     if (embedSections.length === 0) {
       console.log(`ℹ️  No successful posts to embed`);
     }
-    // If vault pull was started but no embeds succeeded, suppress the unused promise.
-    // The pull result is not needed, so we catch to prevent unhandled rejection.
-    vaultPullPromise?.catch((err) => {
-      console.warn(`⚠️  Vault pull failed (unused — no embeds to write): ${err instanceof Error ? err.message : err}`);
-    });
   }
 
   console.log(`🎉 Done processing ${notePath || `reflection for ${date}`}`);
@@ -2095,8 +2049,8 @@ export async function main(options?: {
 // Run if executed directly
 const isMainModule = process.argv[1]?.endsWith("tweet-reflection.ts");
 if (isMainModule) {
-  const { date, dryRun, note } = parseArgs();
-  main({ date, dryRun, note }).catch((error) => {
+  const { date, note } = parseArgs();
+  main({ date, note }).catch((error) => {
     console.error(
       `❌ Error: ${error instanceof Error ? error.message : error}`,
     );

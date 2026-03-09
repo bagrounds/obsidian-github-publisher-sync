@@ -22,6 +22,7 @@ import {
   bfsContentDiscovery,
   discoverContentToPost,
   isPastPostingHourUTC,
+  isReflectionEligibleForPosting,
   getYesterdayDate,
   PLATFORM_SECTION_HEADERS,
   ALL_PLATFORMS,
@@ -600,6 +601,7 @@ This is a reflection with links to index pages only and enough content.`);
     const config: FindContentConfig = {
       contentDir: tempDir,
       platforms: ["twitter"],
+      postingHourUTC: 0, // ensure reflection is eligible regardless of current time
     };
 
     const results = bfsContentDiscovery(config);
@@ -763,6 +765,7 @@ A book about things that matter. With enough content for social media.
     const config: FindContentConfig = {
       contentDir: tempDir,
       platforms: ["twitter", "bluesky"],
+      postingHourUTC: 0, // ensure reflection is eligible regardless of current time
     };
 
     const results = bfsContentDiscovery(config);
@@ -775,6 +778,40 @@ A book about things that matter. With enough content for social media.
     assert.ok(blueskyResult !== undefined);
     assert.equal(twitterResult.note.relativePath, "books/book.md");
     assert.equal(blueskyResult.note.relativePath, "reflections/2026-03-08.md");
+  });
+
+  test("skips today's reflection but follows its links", () => {
+    // Use today's date for the reflection
+    const today = new Date().toISOString().split("T")[0]!;
+    writeNote(tempDir, `reflections/${today}.md`, `---
+title: ${today} | Today's Reflection
+URL: https://bagrounds.org/reflections/${today}
+---
+[Home](../index.md)
+# ${today} | Today's Reflection
+This is today's reflection with enough content for a social media post.
+Links to [Book](../books/linked-book.md).`);
+
+    writeNote(tempDir, "books/linked-book.md", `---
+title: Linked Book
+URL: https://bagrounds.org/books/linked-book
+---
+[Home](../index.md) > [Books](./index.md)
+# Linked Book
+A book that is linked from today's reflection and has plenty of content.`);
+
+    const config: FindContentConfig = {
+      contentDir: tempDir,
+      platforms: ["twitter"],
+      // Default postingHourUTC: 17 — today's reflection should NOT be eligible
+    };
+
+    const results = bfsContentDiscovery(config);
+    // Today's reflection should be skipped (too recent to post)
+    // But its linked book should still be found
+    assert.equal(results.length, 1);
+    assert.equal(results[0]!.note.relativePath, "books/linked-book.md");
+    assert.equal(results[0]!.platform, "twitter");
   });
 });
 
@@ -959,6 +996,74 @@ describe("getYesterdayDate", () => {
     const yesterday = getYesterdayDate();
     const today = new Date().toISOString().split("T")[0]!;
     assert.ok(yesterday < today);
+  });
+});
+
+describe("isReflectionEligibleForPosting", () => {
+  test("non-reflection files are always eligible", () => {
+    const now = new Date("2026-03-08T12:00:00Z");
+    assert.ok(isReflectionEligibleForPosting("books/sophies-world.md", 17, now));
+    assert.ok(isReflectionEligibleForPosting("topics/philosophy.md", 17, now));
+    assert.ok(isReflectionEligibleForPosting("ai-blog/2026-03-08-post.md", 17, now));
+  });
+
+  test("yesterday's reflection is eligible after posting hour", () => {
+    // It's March 9 at 18:00 UTC (past 17:00 UTC posting hour)
+    const now = new Date("2026-03-09T18:00:00Z");
+    assert.ok(isReflectionEligibleForPosting("reflections/2026-03-08.md", 17, now));
+  });
+
+  test("yesterday's reflection is not eligible before posting hour", () => {
+    // It's March 9 at 10:00 UTC (before 17:00 UTC posting hour)
+    const now = new Date("2026-03-09T10:00:00Z");
+    assert.ok(!isReflectionEligibleForPosting("reflections/2026-03-08.md", 17, now));
+  });
+
+  test("today's reflection is never eligible (same day)", () => {
+    // It's March 8 at 23:59 UTC — reflection from March 8 not eligible until March 9 at 17:00
+    const now = new Date("2026-03-08T23:59:00Z");
+    assert.ok(!isReflectionEligibleForPosting("reflections/2026-03-08.md", 17, now));
+  });
+
+  test("today's reflection becomes eligible at posting hour next day", () => {
+    // It's March 9 at exactly 17:00 UTC — reflection from March 8 is now eligible
+    const now = new Date("2026-03-09T17:00:00Z");
+    assert.ok(isReflectionEligibleForPosting("reflections/2026-03-08.md", 17, now));
+  });
+
+  test("old reflections are always eligible", () => {
+    const now = new Date("2026-03-08T00:00:00Z");
+    assert.ok(isReflectionEligibleForPosting("reflections/2020-01-01.md", 17, now));
+    assert.ok(isReflectionEligibleForPosting("reflections/2025-12-31.md", 17, now));
+  });
+
+  test("respects custom posting hour", () => {
+    // Posting hour is 14:00 UTC. Reflection from March 8.
+    // March 9 at 13:59 UTC → not eligible
+    assert.ok(!isReflectionEligibleForPosting(
+      "reflections/2026-03-08.md", 14, new Date("2026-03-09T13:59:00Z"),
+    ));
+    // March 9 at 14:00 UTC → eligible
+    assert.ok(isReflectionEligibleForPosting(
+      "reflections/2026-03-08.md", 14, new Date("2026-03-09T14:00:00Z"),
+    ));
+  });
+
+  test("posting hour 0 means eligible at midnight the next day", () => {
+    // Reflection from March 8, posting hour 0
+    // March 9 at 00:00 UTC → eligible
+    assert.ok(isReflectionEligibleForPosting(
+      "reflections/2026-03-08.md", 0, new Date("2026-03-09T00:00:00Z"),
+    ));
+    // March 8 at 23:59 UTC → not eligible
+    assert.ok(!isReflectionEligibleForPosting(
+      "reflections/2026-03-08.md", 0, new Date("2026-03-08T23:59:00Z"),
+    ));
+  });
+
+  test("uses current time by default when now is not provided", () => {
+    // A very old reflection should always be eligible
+    assert.ok(isReflectionEligibleForPosting("reflections/2020-01-01.md"));
   });
 });
 

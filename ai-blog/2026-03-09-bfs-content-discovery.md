@@ -32,6 +32,7 @@ tags:
 ⏰ Run every **2 hours** instead of once per day.  
 📅 If it's past 9 AM Pacific and yesterday's reflection isn't posted, prioritize that.  
 🔍 Otherwise, use **breadth-first search** across linked notes to discover unposted content.  
+⏳ **Never** post a reflection until 9 AM the next day — even if BFS discovers it.  
 🛑 Post at most **1 item per platform per run** — no spamming.  
 🎉 If every reachable note has been posted everywhere, log a cheerful message and exit.  
 
@@ -69,6 +70,7 @@ tags:
 │  │   Start: most recent reflection                      │
 │  │   Follow: markdown links [text](path.md)             │
 │  │   Skip: index pages, home page, short notes          │
+│  │   Skip: reflections too recent (wait until 9am next day) │
 │  │   Find: 1 unposted note per platform                 │
 │  └─ Post each discovered note via main()                │
 └─────────────────────────────────────────────────────────┘
@@ -105,14 +107,17 @@ function bfsContentDiscovery(config):
     visited.add(note)
 
     if isPostableContent(note):
-      for each platform in platformsNeedingContent:
-        if note not posted on platform:
-          results.add({ platform, note })
-          platformsNeedingContent.remove(platform)
+      if isReflection(note) AND notEligibleYet(note):
+        skip posting (wait until 9am next day)
+      else:
+        for each platform in platformsNeedingContent:
+          if note not posted on platform:
+            results.add({ platform, note })
+            platformsNeedingContent.remove(platform)
 
     for each link in note.linkedNotePaths:
       if link not in visited:
-        queue.enqueue(link)
+        queue.enqueue(link)  // always follow links
 
   return results
 ```
@@ -128,6 +133,7 @@ function bfsContentDiscovery(config):
 | Notes < 50 chars | Not enough substance for a social post |
 | Already-posted notes | Idempotency — no double-posting |
 | External URLs | Only internal `.md` links are followed |
+| Recent reflections | A reflection from day D waits until 9 AM on D+1 |
 
 ## 🧩 Domain-Driven Design
 
@@ -176,9 +182,9 @@ main({ note: "reflections/2026-03-08.md" })
 
 ## 🧪 Testing: TDD in Practice
 
-✅ 58 new tests for the BFS module.  
+✅ 68 new tests for the BFS module.  
 ✅ 4 new tests for `readNote` in the existing test suite.  
-✅ All 151 tests pass (93 existing + 58 new).  
+✅ All 161 tests pass (93 existing + 68 new).  
 
 📋 Test categories:  
 - 🔤 **Frontmatter parsing** — YAML extraction, quote stripping  
@@ -188,6 +194,7 @@ main({ note: "reflections/2026-03-08.md" })
 - 📖 **Content reading** — file I/O, URL derivation, date extraction  
 - ✂️ **Content filtering** — postable content heuristics  
 - 📅 **Reflection finding** — date-sorted directory scanning  
+- ⏳ **Reflection eligibility** — time guard preventing premature posting  
 - 🔍 **BFS traversal** — graph exploration, platform-specific results  
 - 🎼 **Orchestration** — priority logic, fallback behavior  
 - 🎲 **Property-based tests** — 50 random iterations per property  

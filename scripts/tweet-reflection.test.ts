@@ -34,6 +34,7 @@ import {
   killObProcesses,
   ensureSyncClean,
   runObSyncWithRetry,
+  logSyncDiagnostics,
   isPlatformDisabled,
   type ReflectionData,
 } from "./tweet-reflection.ts";
@@ -1466,6 +1467,72 @@ describe("runObSyncWithRetry", () => {
 
   test("is exported and callable", () => {
     assert.ok(typeof runObSyncWithRetry === "function");
+  });
+});
+
+describe("logSyncDiagnostics", () => {
+  let tempDir: string;
+
+  beforeEach(() => {
+    tempDir = createTempDir();
+  });
+
+  afterEach(() => {
+    cleanupTempDir(tempDir);
+  });
+
+  test("is exported and callable", () => {
+    assert.ok(typeof logSyncDiagnostics === "function");
+  });
+
+  test("logs lock state when lock exists", async () => {
+    const lockDir = path.join(tempDir, ".obsidian", ".sync.lock");
+    fs.mkdirSync(lockDir, { recursive: true });
+
+    // Should not throw
+    await logSyncDiagnostics(tempDir);
+  });
+
+  test("logs when lock does not exist", async () => {
+    fs.mkdirSync(path.join(tempDir, ".obsidian"), { recursive: true });
+
+    // Should not throw
+    await logSyncDiagnostics(tempDir);
+  });
+
+  test("handles missing .obsidian directory gracefully", async () => {
+    // Should not throw even if .obsidian doesn't exist
+    await logSyncDiagnostics(tempDir);
+  });
+});
+
+describe("ensureSyncClean — verified removal", () => {
+  let tempDir: string;
+
+  beforeEach(() => {
+    tempDir = createTempDir();
+  });
+
+  afterEach(() => {
+    cleanupTempDir(tempDir);
+  });
+
+  test("verifies lock is gone after removal", async () => {
+    const lockDir = path.join(tempDir, ".obsidian", ".sync.lock");
+    fs.mkdirSync(lockDir, { recursive: true });
+    fs.writeFileSync(path.join(lockDir, "pid"), "12345");
+
+    await ensureSyncClean(tempDir);
+    assert.ok(!fs.existsSync(lockDir), "Lock should be removed and verified gone");
+  });
+
+  test("handles nested lock contents", async () => {
+    const lockDir = path.join(tempDir, ".obsidian", ".sync.lock");
+    fs.mkdirSync(path.join(lockDir, "subdir"), { recursive: true });
+    fs.writeFileSync(path.join(lockDir, "subdir", "data"), "test");
+
+    await ensureSyncClean(tempDir);
+    assert.ok(!fs.existsSync(lockDir), "Nested lock contents should be removed");
   });
 });
 

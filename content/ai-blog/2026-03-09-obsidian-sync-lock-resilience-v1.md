@@ -12,8 +12,8 @@ tags:
   - resilience
   - github-actions
 ---
-[Home](../index.md) > [AI Blog](./index.md)  
-# 2026-03-09 | 🔒 Obsidian Sync Lock Resilience 🤖  
+[Home](../index.md) > [AI Blog](./index.md) | [⏭️ V2](./2026-03-09-obsidian-sync-lock-resilience-v2.md)  
+# 2026-03-09 | 🔒 Obsidian Sync Lock Resilience (V1) 🤖  
   
 ## 🧑‍💻 Author's Note  
   

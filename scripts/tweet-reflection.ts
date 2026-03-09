@@ -1478,8 +1478,8 @@ export async function killObProcesses(vaultDir?: string): Promise<void> {
     // This handles cases where daemon children use unexpected process names.
     const patterns = ["obsidian-headless"];
     if (vaultDir) {
-      // Escape slashes for grep
-      patterns.push(vaultDir.replace(/\//g, "\\/"));
+      // Escape all regex-special characters for grep -E
+      patterns.push(vaultDir.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"));
     }
     const grepPattern = patterns.join("|");
     const { stdout } = await execAsync(

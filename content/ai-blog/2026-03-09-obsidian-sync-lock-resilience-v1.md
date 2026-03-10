@@ -11,7 +11,7 @@ tags:
   - debugging
   - resilience
   - github-actions
-updated: 2026-03-10T01:05:06.770Z
+updated: 2026-03-10T08:12:01.544Z
 ---
 [Home](../index.md) > [AI Blog](./index.md) | [⏮️ 2026-03-09 | 🔍 BFS Content Discovery for Social Media Auto-Posting 🤖](./2026-03-09-bfs-content-discovery.md) [⏭️ 2026-03-09 | 🚫 Platform Kill Switches for Social Media Auto-Posting 🤖](./2026-03-09-platform-disable-env-vars.md)  
 # 2026-03-09 | 🔒 Obsidian Sync Lock Resilience (V1) 🤖  

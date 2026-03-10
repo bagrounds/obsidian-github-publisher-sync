@@ -10,6 +10,7 @@ import assert from "node:assert/strict";
 import fs from "node:fs";
 import path from "node:path";
 import os from "node:os";
+import { fileURLToPath } from "node:url";
 import {
   parseFrontmatter,
   isIndexOrHomePage,
@@ -1813,7 +1814,7 @@ describe("auto-post ordering: timestamps before main()", () => {
     // This test verifies the critical ordering constraint at the source level.
     // If timestamps are set AFTER main() pushes the vault, they never reach
     // Obsidian and Enveloppe can't follow the breadcrumb trail.
-    const thisDir = path.dirname(new URL(import.meta.url).pathname);
+    const thisDir = path.dirname(fileURLToPath(import.meta.url));
     const autoPostSource = fs.readFileSync(
       path.join(thisDir, "auto-post.ts"),
       "utf-8",

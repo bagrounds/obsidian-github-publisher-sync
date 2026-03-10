@@ -100,20 +100,21 @@ reconstructPath("target") → ["root", "A", "B", "target"]
 
 ### Integration in auto-post.ts
 
-After `main()` successfully posts a note, `auto-post.ts` calls
-`updatePathTimestamps()` with the longest path from the grouped content items.
-This ensures all intermediate files are touched:
+Before posting, `auto-post.ts` calls `updatePathTimestamps()` with the longest
+path from the grouped content items. This ensures all intermediate files have
+their timestamps set **before** `main()` pushes the vault:
 
 ```typescript
-await main({ note: notePath, vaultDir });
-
-// Update timestamps along the BFS path
+// Update timestamps along the BFS path BEFORE posting
 const longestPath = items.reduce(...);
 updatePathTimestamps(longestPath, vaultDir);
+
+await main({ note: notePath, vaultDir });
 ```
 
-The timestamps are written to the same vault directory that `main()` uses,
-so the subsequent Obsidian Headless push includes these changes.
+The timestamps must be written before `main()` because `main()` pushes the
+vault to Obsidian Sync after writing embed sections. If timestamps were set
+after the push, they would only exist locally and never reach Obsidian.
 
 ## Data Flow
 
@@ -123,8 +124,8 @@ auto-post.ts
   ├─ BFS content discovery (tracks parent pointers)  ← NEW
   │   └─ Returns ContentToPost[] with pathFromRoot    ← NEW
   ├─ For each note to post:
-  │   ├─ main() — post to social, write embeds, push vault
-  │   └─ updatePathTimestamps() — touch intermediates ← NEW
+  │   ├─ updatePathTimestamps() — touch intermediates ← NEW (must be BEFORE push)
+  │   └─ main() — post to social, write embeds, push vault
   └─ Done
 ```
 
@@ -138,7 +139,7 @@ auto-post.ts
 
 ## Testing
 
-16 new tests added (257 total, all passing):
+18 new tests added (259 total, all passing):
 
 | Category | Tests | What It Validates |
 |----------|-------|-------------------|

@@ -164,15 +164,11 @@ async function autoPost(): Promise<void> {
     console.log(`${"═".repeat(60)}\n`);
 
     try {
-      await main({
-        note: notePath,
-        vaultDir,
-      });
-
-      // Update "updated" frontmatter timestamp along the BFS path.
-      // This creates a trail of modified files from the daily reflection
-      // to the posted note, so Enveloppe (running from Obsidian mobile)
-      // follows the chain when publishing.
+      // Update "updated" frontmatter timestamp along the BFS path BEFORE
+      // posting. main() pushes the vault after writing embed sections, so
+      // the timestamps must already be on disk when that push happens.
+      // Otherwise the timestamps are set after the push and never reach
+      // Obsidian — which is exactly the bug this ordering fixes.
       const allPaths = items.map((i) => i.pathFromRoot);
       const longestPath = allPaths.reduce(
         (longest, p) => (p.length > longest.length ? p : longest),
@@ -182,6 +178,11 @@ async function autoPost(): Promise<void> {
         console.log(`🗺️ Updating "updated" timestamps along path (${longestPath.length} files):`);
         updatePathTimestamps(longestPath, vaultDir);
       }
+
+      await main({
+        note: notePath,
+        vaultDir,
+      });
     } catch (error) {
       console.error(
         `❌ Failed to post ${notePath}: ${error instanceof Error ? error.message : error}`,

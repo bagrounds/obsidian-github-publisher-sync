@@ -133,20 +133,20 @@ The function preserves all existing content — no accidental mutations.
 
 ### 🎼 Orchestration  
 
-In `auto-post.ts`, after a successful post:  
+In `auto-post.ts`, timestamps are updated **before** posting:  
 
 ```typescript
-await main({ note: notePath, vaultDir });
-
-// Leave breadcrumbs along the BFS path
+// Leave breadcrumbs along the BFS path BEFORE posting
 const longestPath = items.reduce(
   (longest, p) => (p.length > longest.length ? p : longest),
   [] as readonly string[],
 );
 updatePathTimestamps(longestPath, vaultDir);
+
+await main({ note: notePath, vaultDir });
 ```
 
-The timestamps are written to the same vault directory that `main()` pushes back via Obsidian Headless Sync. One push, all changes included.  
+The timestamps must be on disk **before** `main()` runs because `main()` pushes the vault after writing embed sections. If timestamps were set after the push, they'd only exist locally and never reach Obsidian.  
 
 ## 📊 Data Flow: Before and After  
 
@@ -164,9 +164,8 @@ auto-post.ts
 ```
 auto-post.ts
   ├─ BFS with parent pointers → find unposted note + shortest path
-  ├─ main() → post to social, write embeds to note
   ├─ updatePathTimestamps() → touch all files along the path 🍞
-  └─ Push vault (includes breadcrumbs + embeds)
+  ├─ main() → post to social, write embeds to note, push vault (includes breadcrumbs + embeds)
   └─ Enveloppe follows the trail 🎉
 ```
 

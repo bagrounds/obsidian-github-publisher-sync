@@ -68,6 +68,16 @@ export interface ContentToPost {
   readonly platform: Platform;
   /** The note to post */
   readonly note: ContentNote;
+  /**
+   * Shortest path from the BFS root (most recent reflection) to this note.
+   * Each element is a relative path (e.g. "reflections/2026-03-08.md").
+   * The first element is the BFS root, the last is this note.
+   *
+   * Used to update the "updated" frontmatter timestamp along the path,
+   * creating a trail of modified files that Enveloppe can follow when
+   * publishing from Obsidian mobile.
+   */
+  readonly pathFromRoot: readonly string[];
 }
 
 /** Configuration for the BFS content finder */
@@ -369,6 +379,114 @@ export function getPriorDayReflectionIfNeeded(
 }
 
 /**
+ * Reconstruct the shortest path from the BFS root to a target node
+ * using the parent map built during BFS traversal.
+ *
+ * @param target - The target node's relative path
+ * @param parentMap - Map from each visited node to its parent (null for root)
+ * @returns Array of relative paths from root to target, inclusive
+ */
+export function reconstructPath(
+  target: string,
+  parentMap: ReadonlyMap<string, string | null>,
+): readonly string[] {
+  const path: string[] = [];
+  let current: string | null = target;
+
+  while (current !== null) {
+    path.unshift(current);
+    const parent = parentMap.get(current);
+    if (parent === undefined) break; // not in map — shouldn't happen
+    current = parent;
+  }
+
+  return path;
+}
+
+/**
+ * Update the "updated" property in the frontmatter of a markdown file.
+ *
+ * This sets the "updated" field to the given ISO 8601 timestamp, creating
+ * the field if it doesn't exist. If the file has no frontmatter block,
+ * one is added.
+ *
+ * Used to create a trail of modified files along the BFS path so that
+ * Enveloppe (running from Obsidian mobile) follows the chain of modified
+ * files when publishing the daily reflection.
+ *
+ * @param filePath - Absolute path to the markdown file
+ * @param timestamp - ISO 8601 timestamp string (e.g. "2026-03-10T00:01:08.852Z")
+ */
+export function updateFrontmatterTimestamp(
+  filePath: string,
+  timestamp: string,
+): void {
+  if (!fs.existsSync(filePath)) {
+    return;
+  }
+
+  let content = fs.readFileSync(filePath, "utf-8");
+  const lines = content.split("\n");
+
+  if (lines[0]?.trim() === "---") {
+    // File has frontmatter — find the closing ---
+    let endIndex = -1;
+    let updatedLineIndex = -1;
+
+    for (let i = 1; i < lines.length; i++) {
+      if (lines[i]?.trim() === "---") {
+        endIndex = i;
+        break;
+      }
+      if (lines[i]?.match(/^updated:\s/)) {
+        updatedLineIndex = i;
+      }
+    }
+
+    if (endIndex >= 0) {
+      if (updatedLineIndex >= 0) {
+        // Replace existing "updated" line
+        lines[updatedLineIndex] = `updated: ${timestamp}`;
+      } else {
+        // Insert "updated" before the closing ---
+        lines.splice(endIndex, 0, `updated: ${timestamp}`);
+      }
+      content = lines.join("\n");
+    }
+  } else {
+    // No frontmatter — add a minimal block
+    content = `---\nupdated: ${timestamp}\n---\n${content}`;
+  }
+
+  fs.writeFileSync(filePath, content, "utf-8");
+}
+
+/**
+ * Update the "updated" frontmatter timestamp for all files along a BFS path.
+ *
+ * This creates a trail of modified files from the daily reflection to the
+ * note that was posted to social media. When the user publishes the daily
+ * reflection from Obsidian mobile via Enveloppe, the plugin's BFS will
+ * follow the chain of files with recently modified "updated" timestamps
+ * and ultimately reach the posted note with its new embeds.
+ *
+ * @param pathFromRoot - Array of relative paths from root to target (from reconstructPath)
+ * @param contentDir - Root content directory (absolute path)
+ * @param timestamp - ISO 8601 timestamp to set (default: current time)
+ */
+export function updatePathTimestamps(
+  pathFromRoot: readonly string[],
+  contentDir: string,
+  timestamp: string = new Date().toISOString(),
+): void {
+  for (const relativePath of pathFromRoot) {
+    const filePath = path.join(contentDir, relativePath);
+    updateFrontmatterTimestamp(filePath, timestamp);
+    console.log(`🕐 Updated "updated" timestamp: ${relativePath}`);
+  }
+}
+
+/**
  * Breadth-first search across the content graph to find notes that
  * haven't been posted to all configured platforms.
  *
@@ -387,6 +505,11 @@ export function getPriorDayReflectionIfNeeded(
  *
  * A reflection from date D is not eligible for posting until
  * postingHourUTC on D+1 (e.g., 9 AM Pacific the next day).
+ *
+ * Tracks parent pointers to reconstruct the shortest path from the BFS
+ * root to each discovered note. This path is included in the results so
+ * that callers can update the "updated" frontmatter timestamp along the
+ * path, creating a trail for Enveloppe to follow.
  *
  * @returns Array of content-to-post items, at most one per platform.
  */
@@ -413,6 +536,11 @@ export function bfsContentDiscovery(
   const visited = new Set<string>();
   const queue: string[] = [startPath];
   const results: ContentToPost[] = [];
+
+  // Parent map for shortest-path reconstruction.
+  // Maps each visited node to its BFS parent (null for root).
+  const parentMap = new Map<string, string | null>();
+  parentMap.set(startPath, null);
 
   console.log(`🔍 Starting BFS from: ${startPath}`);
   console.log(
@@ -450,10 +578,14 @@ export function bfsContentDiscovery(
         // Check each platform that still needs content
         for (const platform of [...platformsNeedingContent]) {
           if (!note.postedPlatforms.has(platform)) {
-            results.push({ platform, note });
+            const pathFromRoot = reconstructPath(note.relativePath, parentMap);
+            results.push({ platform, note, pathFromRoot });
             platformsNeedingContent.delete(platform);
             console.log(
               `✅ Found content for ${platform}: ${note.title} (${note.relativePath})`,
+            );
+            console.log(
+              `  🗺️ Path from root (${pathFromRoot.length} hops): ${pathFromRoot.join(" → ")}`,
             );
           }
         }
@@ -464,6 +596,11 @@ export function bfsContentDiscovery(
     // even from reflections that are too recent to post
     for (const linkedPath of note.linkedNotePaths) {
       if (!visited.has(linkedPath)) {
+        // Record parent pointer only for the first time we see this path
+        // (BFS guarantees shortest path for unweighted graphs)
+        if (!parentMap.has(linkedPath)) {
+          parentMap.set(linkedPath, currentPath);
+        }
         queue.push(linkedPath);
       }
     }
@@ -515,10 +652,12 @@ export function discoverContentToPost(
       console.log(
         `📅 Prior day's reflection needs posting: ${priorDayReflection.title}`,
       );
-      // Return this note for all platforms that haven't posted it yet
+      // Return this note for all platforms that haven't posted it yet.
+      // The path is just the reflection itself (it's the root).
+      const pathFromRoot = [priorDayReflection.relativePath];
       return platforms
         .filter((p) => !priorDayReflection.postedPlatforms.has(p))
-        .map((platform) => ({ platform, note: priorDayReflection }));
+        .map((platform) => ({ platform, note: priorDayReflection, pathFromRoot }));
     }
     console.log(`✅ Prior day's reflection already posted on all platforms`);
   }

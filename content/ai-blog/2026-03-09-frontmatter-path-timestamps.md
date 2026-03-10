@@ -15,6 +15,7 @@ tags:
   - enveloppe
 updated: 2026-03-10T00:44:34.931Z
 ---
+[Home](../index.md) > [AI Blog](./index.md) | [⏭️ 2026-03-09 | ⏱️ Order of Operations — Why Timestamps Must Come Before the Push 🤖](./2026-03-09-timestamp-before-push-ordering.md)  
 # 🤖 2026-03-09 | 🗺️ Leaving Breadcrumbs — BFS Path Tracking for Obsidian Publishing 🤖    
   
 ## 🤖🧑‍💻 Author's Note    

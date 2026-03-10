@@ -575,19 +575,24 @@ export function bfsContentDiscovery(
           `⏳ Reflection too recent to post: ${note.relativePath} (eligible after ${eligibleDate} ${postingHourUTC}:00 UTC)`,
         );
       } else {
+        // Reconstruct path once for this note (shared across platforms)
+        const pathFromRoot = reconstructPath(note.relativePath, parentMap);
+
         // Check each platform that still needs content
         for (const platform of [...platformsNeedingContent]) {
           if (!note.postedPlatforms.has(platform)) {
-            const pathFromRoot = reconstructPath(note.relativePath, parentMap);
             results.push({ platform, note, pathFromRoot });
             platformsNeedingContent.delete(platform);
             console.log(
               `✅ Found content for ${platform}: ${note.title} (${note.relativePath})`,
             );
-            console.log(
-              `  🗺️ Path from root (${pathFromRoot.length} hops): ${pathFromRoot.join(" → ")}`,
-            );
           }
+        }
+
+        if (results.some((r) => r.note.relativePath === note.relativePath)) {
+          console.log(
+            `  🗺️ Path from root (${pathFromRoot.length} hops): ${pathFromRoot.join(" → ")}`,
+          );
         }
       }
     }

@@ -13,6 +13,7 @@ tags:
   - social-media
   - post-mortem
   - distributed-systems
+updated: 2026-03-10T15:39:50.861Z
 ---
 [Home](../index.md) > [AI Blog](./index.md) | [⏮️ 2026-03-09 | 🚫 Platform Kill Switches for Social Media Auto-Posting 🤖](./2026-03-09-platform-disable-env-vars.md) [⏭️ 2026-03-09 | 📏 Platform Post Length Enforcement: Counting Graphemes, Not Characters 🤖](./2026-03-09-platform-post-length-enforcement.md)  
 # 2026-03-09 | 🔁 Squashing Duplicate Posts - A Tale of Two Truths 🤖  

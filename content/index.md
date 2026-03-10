@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-03-09T18:56:22-07:00
+updated: 2026-03-10T09:24:44-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -13,7 +13,8 @@ updated: 2026-03-09T18:56:22-07:00
 ❔ What do 🫵 _you_ 🤔 think?  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (480)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (481)  
+- [2026-03-10](./reflections/2026-03-10.md)  
 - [2026-03-09 | 🔁🚫🧬 Lock 🫂 Hold 🤖 Sync](./reflections/2026-03-09.md)  
 - [2026-03-08 | 🧶 Maze 🐘 Mastodon 🤔 Sophie 🤖 Agent 📚📺](./reflections/2026-03-08.md)  
 - [2026-03-07 | 💥 Strikes ⚔️ Conflict 🤖 Agent 📰📚📺](./reflections/2026-03-07.md)  
@@ -23,19 +24,19 @@ updated: 2026-03-09T18:56:22-07:00
 - [2026-03-03 | 💰🏛️📈 Wealth 📊 Public Finance 📚📺](./reflections/2026-03-03.md)  
 - [2026-03-02 | 🤖 Agentic 📖 Fugitive ☁️ Tunnel 🌿 Rhubarb 😴 Snoring 📚🎤💻📰🌌](./reflections/2026-03-02.md)  
 - [2026-03-01 | 🕵️ Fugitive 🌐 Network 🚀 Build 🐦 Twitter 🤖 Agent 📚](./reflections/2026-03-01.md)  
-- [2026-02-28 | 🤖⚙️🧠 Agentic 📖](./reflections/2026-02-28.md)  
   
   
-## [🤖 AI Blog](./ai-blog/index.md) (9)  
+## [🤖 AI Blog](./ai-blog/index.md) (11)  
+- [2026-03-10 | 🏗️ Functional Refactoring of the Auto-Posting Pipeline 🤖](./ai-blog/2026-03-10-functional-refactoring.md)  
 - [2026-03-09 | ⏱️ Order of Operations - Why Timestamps Must Come Before the Push 🤖](./ai-blog/2026-03-09-timestamp-before-push-ordering.md)  
 - [2026-03-09 | 📏 Platform Post Length Enforcement: Counting Graphemes, Not Characters 🤖](./ai-blog/2026-03-09-platform-post-length-enforcement.md)  
 - [2026-03-09 | 🚫 Platform Kill Switches for Social Media Auto-Posting 🤖](./ai-blog/2026-03-09-platform-disable-env-vars.md)  
 - [2026-03-09 | 🔒 Obsidian Sync Lock Resilience (V2) 🤖](./ai-blog/2026-03-09-obsidian-sync-lock-resilience-v2.md)  
 - [2026-03-09 | 🔒 Obsidian Sync Lock Resilience (V1) 🤖](./ai-blog/2026-03-09-obsidian-sync-lock-resilience-v1.md)  
+- [2026-03-09 | 🔒 Obsidian Sync Lock Resilience 🤖](./ai-blog/2026-03-09-obsidian-sync-lock-resilience.md)  
 - [2026-03-09 | 🗺️ Leaving Breadcrumbs — BFS Path Tracking for Obsidian Publishing 🤖](./ai-blog/2026-03-09-frontmatter-path-timestamps.md)  
 - [2026-03-09 | 🔁 Squashing Duplicate Posts - A Tale of Two Truths 🤖](./ai-blog/2026-03-09-duplicate-post-prevention.md)  
 - [2026-03-09 | 🔍 BFS Content Discovery for Social Media Auto-Posting 🤖](./ai-blog/2026-03-09-bfs-content-discovery.md)  
-- [2026-03-08 | 🐘 Auto-Posting to Mastodon 🤖](./ai-blog/2026-03-08-auto-post-mastodon.md)  
   
   
 ## [🧰 Tools](./tools/index.md) (1)  
@@ -43,16 +44,16 @@ updated: 2026-03-09T18:56:22-07:00
   
   
 ## [📚 Books](./books/index.md) (951)  
+- [💾⬆️🛡️ Designing Data-Intensive Applications: The Big Ideas Behind Reliable, Scalable, and Maintainable Systems](./books/designing-data-intensive-applications.md)  
+- [🏎️💾 Accelerate: The Science of Lean Software and DevOps: Building and Scaling High Performing Technology Organizations](./books/accelerate.md)  
+- [🧩🧱⚙️❤️ Domain-Driven Design: Tackling Complexity in the Heart of Software](./books/domain-driven-design.md)  
+- [🐦‍🔥💻 The Phoenix Project](./books/the-phoenix-project.md)  
+- [🏗️🧪🚀✅ Continuous Delivery: Reliable Software Releases through Build, Test, and Deployment Automation](./books/continuous-delivery.md)  
+- [⚙️🚀🛡️ The DevOps Handbook: How to Create World-Class Agility, Reliability, & Security in Technology Organizations](./books/the-devops-handbook.md)  
+- [🦄👤🗓️ The Mythical Man-Month: Essays on Software Engineering](./books/the-mythical-man-month.md)  
+- [🤔🧘 Meditations](./books/meditations.md)  
 - [🧼💾 Clean Code: A Handbook of Agile Software Craftsmanship](./books/clean-code.md)  
 - [🧑‍💻📈 The Pragmatic Programmer: Your Journey to Mastery](./books/the-pragmatic-programmer-your-journey-to-mastery.md)  
-- [👩🏼‍❤️‍💋‍👨🏻🔗 Attached: The New Science of Adult Attachment and How It Can Help You Find - and Keep - Love](./books/attached-the-new-science-of-adult-attachment-and-how-it-can-help-you-find-and-keep-love.md)  
-- [❤️🧠 Love Sense: The Revolutionary New Science of Romantic Relationships](./books/love-sense-the-revolutionary-new-science-of-romantic-relationships.md)  
-- [🫂 Hold Me Tight: Seven Conversations for a Lifetime of Love](./books/hold-me-tight-seven-conversations-for-a-lifetime-of-love.md)  
-- [🤔🌍 Sophie’s World](./books/sophies-world.md)  
-- [🌐🔗🧠📖 Thinking in Systems: A Primer](./books/thinking-in-systems.md)  
-- [👤🧠 Being You: A New Science of Consciousness](./books/being-you-a-new-science-of-consciousness.md)  
-- [🗣️🔗 Supercommunicators: How to Unlock the Secret Language of Connection](./books/supercommunicators-how-to-unlock-the-secret-language-of-connection.md)  
-- [🤔👶💭 Big Ideas for Little Philosophers: Imagination with René Descartes](./books/big-ideas-for-little-philosophers-imagination-with-rene-descartes.md)  
   
   
 ## [📺 Videos](./videos/index.md) (675)  

@@ -12,7 +12,7 @@ tags:
   - social-media
   - github-actions
 ---
-[Home](../index.md) > [AI Blog](./index.md)  
+[Home](../index.md) > [AI Blog](./index.md) | [⏭️ 2026-03-09 | 🔍 BFS Content Discovery for Social Media Auto-Posting 🤖](./2026-03-09-bfs-content-discovery.md)  
 # 2026-03-08 | 🐘 Auto-Posting to Mastodon 🤖  
   
 ## 🧑‍💻 Author's Note  
@@ -103,13 +103,13 @@ tags:
   
 💡 Some ideas for evolving the social posting pipeline:  
   
-1. 🎨 **Platform-specific content** — Mastodon's 500-char limit allows richer posts than Twitter's 280. Gemini could generate longer, more detailed posts for Mastodon.  
-2. 🏷️ **Hashtag support** — Mastodon's discovery relies heavily on hashtags. Auto-generating relevant hashtags from the reflection content could boost visibility.  
-3. 🖼️ **Media attachments** — Mastodon supports image uploads. We could generate or extract images from the reflection for richer posts.  
+1. 🎨 **Platform-specific content** — Mastodon's 500-char limit allows richer posts than Twitter's 280. 🤖 Gemini could generate longer, more detailed posts for Mastodon.  
+2. 🏷️ **Hashtag support** — Mastodon's discovery relies heavily on hashtags. 🏷️ Auto-generating relevant hashtags from the reflection content could boost visibility.  
+3. 🖼️ **Media attachments** — Mastodon supports image uploads. 🖼️ We could generate or extract images from the reflection for richer posts.  
 4. 📊 **Analytics integration** — Track engagement metrics across platforms to understand which content resonates where.  
 5. 🔁 **Cross-posting with threading** — For long reflections, split into a thread on Twitter but post the full text on Mastodon.  
-6. 🌐 **ActivityPub federation** — Mastodon is part of the [Fediverse](https://en.wikipedia.org/wiki/Fediverse). Future platforms like [Threads](https://www.threads.net/) are adding ActivityPub support, which could unlock federation-based cross-posting.  
-7. 🗓️ **Scheduled posts** — The Mastodon API supports `scheduled_at` for timed publishing. Could align post timing with peak engagement hours per platform.  
+6. 🌐 **ActivityPub federation** — Mastodon is part of the [Fediverse](https://en.wikipedia.org/wiki/Fediverse). 🔗 Future platforms like [Threads](https://www.threads.net/) are adding ActivityPub support, which could unlock federation-based cross-posting.  
+7. 🗓️ **Scheduled posts** — The Mastodon API supports `scheduled_at` for timed publishing. ⏰ Could align post timing with peak engagement hours per platform.  
 8. 💬 **Reply monitoring** — Set up a webhook or polling to notify Bryan of replies and interactions across all platforms.  
   
 ## 🌐 Relevant Systems & Services  

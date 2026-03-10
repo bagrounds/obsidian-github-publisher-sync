@@ -1805,3 +1805,81 @@ Content for yesterday's reflection that has enough substance for posting.`);
     assert.deepEqual(results[0]!.pathFromRoot, [`reflections/${yesterday}.md`]);
   });
 });
+
+// --- Ordering Constraint: timestamps before push ---
+
+describe("auto-post ordering: timestamps before main()", () => {
+  test("auto-post.ts calls updatePathTimestamps before main()", () => {
+    // This test verifies the critical ordering constraint at the source level.
+    // If timestamps are set AFTER main() pushes the vault, they never reach
+    // Obsidian and Enveloppe can't follow the breadcrumb trail.
+    const thisDir = path.dirname(new URL(import.meta.url).pathname);
+    const autoPostSource = fs.readFileSync(
+      path.join(thisDir, "auto-post.ts"),
+      "utf-8",
+    );
+
+    const timestampCallIndex = autoPostSource.indexOf("updatePathTimestamps(");
+    const mainCallIndex = autoPostSource.indexOf(
+      "await main(",
+      // Start searching after the timestamp call to find the main() that
+      // follows it — not an earlier reference
+      timestampCallIndex,
+    );
+
+    assert.ok(timestampCallIndex > 0, "updatePathTimestamps call should exist");
+    assert.ok(mainCallIndex > 0, "main() call should exist after timestamps");
+    assert.ok(
+      timestampCallIndex < mainCallIndex,
+      `updatePathTimestamps (index ${timestampCallIndex}) must come BEFORE main() ` +
+        `(index ${mainCallIndex}) so timestamps are included in the vault push`,
+    );
+  });
+
+  test("timestamps are on disk before simulated push", () => {
+    // Simulate the auto-post flow: timestamps first, then read files
+    // (mimicking what push would see)
+    const tempDir = createTempDir();
+    try {
+      const dir = path.join(tempDir, "reflections");
+      fs.mkdirSync(dir, { recursive: true });
+      fs.writeFileSync(
+        path.join(dir, "2026-03-08.md"),
+        `---\ntitle: Reflection\n---\n# Reflection\nContent.`,
+      );
+      fs.mkdirSync(path.join(tempDir, "books"), { recursive: true });
+      fs.writeFileSync(
+        path.join(tempDir, "books/test.md"),
+        `---\ntitle: Test Book\n---\n# Test\nContent.`,
+      );
+
+      const pathFromRoot = ["reflections/2026-03-08.md", "books/test.md"];
+      const timestamp = "2026-03-10T12:00:00.000Z";
+
+      // Step 1: Update timestamps (BEFORE push)
+      updatePathTimestamps(pathFromRoot, tempDir, timestamp);
+
+      // Step 2: Read files as push would see them
+      const reflectionContent = fs.readFileSync(
+        path.join(tempDir, "reflections/2026-03-08.md"),
+        "utf-8",
+      );
+      const bookContent = fs.readFileSync(
+        path.join(tempDir, "books/test.md"),
+        "utf-8",
+      );
+
+      // Both files should have timestamps at push time
+      assert.ok(
+        reflectionContent.includes(`updated: ${timestamp}`),
+        "Reflection should have timestamp when push reads it",
+      );
+      assert.ok(
+        bookContent.includes(`updated: ${timestamp}`),
+        "Book should have timestamp when push reads it",
+      );
+    } finally {
+      cleanupTempDir(tempDir);
+    }
+  });
+});

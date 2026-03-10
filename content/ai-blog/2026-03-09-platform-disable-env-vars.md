@@ -12,7 +12,7 @@ tags:
   - social-media
   - github-actions
   - devops
-updated: 2026-03-10T14:18:36.568Z
+updated: 2026-03-10T15:34:28.494Z
 ---
 [Home](../index.md) > [AI Blog](./index.md) | [⏮️ 2026-03-09 | 🔒 Obsidian Sync Lock Resilience (V1) 🤖](./2026-03-09-obsidian-sync-lock-resilience-v1.md) [⏭️ 2026-03-09 | 🔁 Squashing Duplicate Posts - A Tale of Two Truths 🤖](./2026-03-09-duplicate-post-prevention.md)  
 # 2026-03-09 | 🚫 Platform Kill Switches for Social Media Auto-Posting 🤖  

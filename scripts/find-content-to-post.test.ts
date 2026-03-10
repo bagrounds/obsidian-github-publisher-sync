@@ -24,6 +24,9 @@ import {
   isPastPostingHourUTC,
   isReflectionEligibleForPosting,
   getYesterdayDate,
+  reconstructPath,
+  updateFrontmatterTimestamp,
+  updatePathTimestamps,
   PLATFORM_SECTION_HEADERS,
   ALL_PLATFORMS,
   type Platform,
@@ -1344,5 +1347,461 @@ describe("property-based tests", () => {
         assert.ok(ALL_PLATFORMS.includes(p));
       }
     }
+  });
+});
+
+// --- Path Reconstruction Tests ---
+
+describe("reconstructPath", () => {
+  test("reconstructs a simple root-only path", () => {
+    const parentMap = new Map<string, string | null>([
+      ["reflections/2026-03-08.md", null],
+    ]);
+    const result = reconstructPath("reflections/2026-03-08.md", parentMap);
+    assert.deepEqual(result, ["reflections/2026-03-08.md"]);
+  });
+
+  test("reconstructs a two-hop path", () => {
+    const parentMap = new Map<string, string | null>([
+      ["reflections/2026-03-08.md", null],
+      ["books/sophies-world.md", "reflections/2026-03-08.md"],
+    ]);
+    const result = reconstructPath("books/sophies-world.md", parentMap);
+    assert.deepEqual(result, ["reflections/2026-03-08.md", "books/sophies-world.md"]);
+  });
+
+  test("reconstructs a multi-hop path", () => {
+    const parentMap = new Map<string, string | null>([
+      ["reflections/2026-03-08.md", null],
+      ["reflections/2026-03-07.md", "reflections/2026-03-08.md"],
+      ["reflections/2026-03-06.md", "reflections/2026-03-07.md"],
+      ["books/deep-book.md", "reflections/2026-03-06.md"],
+    ]);
+    const result = reconstructPath("books/deep-book.md", parentMap);
+    assert.deepEqual(result, [
+      "reflections/2026-03-08.md",
+      "reflections/2026-03-07.md",
+      "reflections/2026-03-06.md",
+      "books/deep-book.md",
+    ]);
+  });
+
+  test("handles target not in parent map gracefully", () => {
+    const parentMap = new Map<string, string | null>();
+    const result = reconstructPath("unknown.md", parentMap);
+    assert.deepEqual(result, ["unknown.md"]);
+  });
+});
+
+// --- Frontmatter Timestamp Update Tests ---
+
+describe("updateFrontmatterTimestamp", () => {
+  let tempDir: string;
+
+  beforeEach(() => {
+    tempDir = createTempDir();
+  });
+
+  afterEach(() => {
+    cleanupTempDir(tempDir);
+  });
+
+  test("adds updated field to existing frontmatter", () => {
+    const content = `---
+share: true
+title: Test Note
+---
+# Test Note
+Content here.`;
+    const filePath = path.join(tempDir, "test.md");
+    fs.writeFileSync(filePath, content, "utf-8");
+
+    updateFrontmatterTimestamp(filePath, "2026-03-10T00:00:00.000Z");
+
+    const result = fs.readFileSync(filePath, "utf-8");
+    assert.ok(result.includes("updated: 2026-03-10T00:00:00.000Z"));
+    assert.ok(result.includes("share: true"));
+    assert.ok(result.includes("title: Test Note"));
+    assert.ok(result.includes("# Test Note"));
+  });
+
+  test("replaces existing updated field", () => {
+    const content = `---
+share: true
+title: Test Note
+updated: 2026-03-01T00:00:00.000Z
+---
+# Test Note
+Content here.`;
+    const filePath = path.join(tempDir, "test.md");
+    fs.writeFileSync(filePath, content, "utf-8");
+
+    updateFrontmatterTimestamp(filePath, "2026-03-10T12:00:00.000Z");
+
+    const result = fs.readFileSync(filePath, "utf-8");
+    assert.ok(result.includes("updated: 2026-03-10T12:00:00.000Z"));
+    assert.ok(!result.includes("2026-03-01T00:00:00.000Z"));
+  });
+
+  test("creates frontmatter block when none exists", () => {
+    const content = `# No Frontmatter
+Just content.`;
+    const filePath = path.join(tempDir, "no-fm.md");
+    fs.writeFileSync(filePath, content, "utf-8");
+
+    updateFrontmatterTimestamp(filePath, "2026-03-10T00:00:00.000Z");
+
+    const result = fs.readFileSync(filePath, "utf-8");
+    assert.ok(result.startsWith("---\nupdated: 2026-03-10T00:00:00.000Z\n---\n"));
+    assert.ok(result.includes("# No Frontmatter"));
+  });
+
+  test("does nothing for non-existent file", () => {
+    const filePath = path.join(tempDir, "nonexistent.md");
+    // Should not throw
+    updateFrontmatterTimestamp(filePath, "2026-03-10T00:00:00.000Z");
+    assert.ok(!fs.existsSync(filePath));
+  });
+
+  test("preserves body content after frontmatter update", () => {
+    const content = `---
+title: Preserve Body
+---
+# Heading
+
+Paragraph 1.
+
+## Section 2
+
+Paragraph 2 with [a link](./other.md).`;
+    const filePath = path.join(tempDir, "body.md");
+    fs.writeFileSync(filePath, content, "utf-8");
+
+    updateFrontmatterTimestamp(filePath, "2026-03-10T00:00:00.000Z");
+
+    const result = fs.readFileSync(filePath, "utf-8");
+    assert.ok(result.includes("Paragraph 1."));
+    assert.ok(result.includes("## Section 2"));
+    assert.ok(result.includes("[a link](./other.md)"));
+  });
+});
+
+// --- Path Timestamp Update Tests ---
+
+describe("updatePathTimestamps", () => {
+  let tempDir: string;
+
+  beforeEach(() => {
+    tempDir = createTempDir();
+  });
+
+  afterEach(() => {
+    cleanupTempDir(tempDir);
+  });
+
+  test("updates timestamps for all files along a path", () => {
+    writeNote(tempDir, "reflections/2026-03-08.md", `---
+title: Reflection
+---
+# Reflection
+Content.`);
+    writeNote(tempDir, "books/sophies-world.md", `---
+title: Sophie's World
+---
+# Sophie's World
+Content about philosophy.`);
+
+    const pathFromRoot = ["reflections/2026-03-08.md", "books/sophies-world.md"];
+    const timestamp = "2026-03-10T00:00:00.000Z";
+    updatePathTimestamps(pathFromRoot, tempDir, timestamp);
+
+    const reflection = fs.readFileSync(
+      path.join(tempDir, "reflections/2026-03-08.md"), "utf-8",
+    );
+    const book = fs.readFileSync(
+      path.join(tempDir, "books/sophies-world.md"), "utf-8",
+    );
+
+    assert.ok(reflection.includes(`updated: ${timestamp}`));
+    assert.ok(book.includes(`updated: ${timestamp}`));
+  });
+
+  test("skips non-existent files in path without error", () => {
+    writeNote(tempDir, "reflections/2026-03-08.md", `---
+title: Reflection
+---
+# Reflection
+Content.`);
+
+    const pathFromRoot = [
+      "reflections/2026-03-08.md",
+      "books/missing-book.md",  // doesn't exist
+    ];
+    const timestamp = "2026-03-10T00:00:00.000Z";
+
+    // Should not throw
+    updatePathTimestamps(pathFromRoot, tempDir, timestamp);
+
+    const reflection = fs.readFileSync(
+      path.join(tempDir, "reflections/2026-03-08.md"), "utf-8",
+    );
+    assert.ok(reflection.includes(`updated: ${timestamp}`));
+  });
+});
+
+// --- BFS Path Tracking Integration Tests ---
+
+describe("bfsContentDiscovery path tracking", () => {
+  let tempDir: string;
+
+  beforeEach(() => {
+    tempDir = createTempDir();
+  });
+
+  afterEach(() => {
+    cleanupTempDir(tempDir);
+  });
+
+  test("includes pathFromRoot for directly linked content (1 hop)", () => {
+    writeNote(tempDir, "reflections/2026-03-08.md", `---
+title: 2026-03-08 | Reflection
+URL: https://bagrounds.org/reflections/2026-03-08
+---
+# 2026-03-08 | Reflection
+Content with a link to [[books/direct-book|Direct Book]].
+
+## 🐦 Tweet
+<blockquote>tweet</blockquote>
+
+## 🦋 Bluesky
+<blockquote>post</blockquote>
+
+## 🐘 Mastodon
+<iframe>embed</iframe>`);
+
+    writeNote(tempDir, "books/direct-book.md", `---
+title: Direct Book
+URL: https://bagrounds.org/books/direct-book
+---
+# Direct Book
+A book directly linked from the reflection with enough content.`);
+
+    const config: FindContentConfig = {
+      contentDir: tempDir,
+      platforms: ["twitter"],
+      postingHourUTC: 0,
+    };
+
+    const results = bfsContentDiscovery(config);
+    assert.equal(results.length, 1);
+    assert.equal(results[0]!.note.relativePath, "books/direct-book.md");
+    assert.deepEqual(results[0]!.pathFromRoot, [
+      "reflections/2026-03-08.md",
+      "books/direct-book.md",
+    ]);
+  });
+
+  test("includes pathFromRoot for deeply linked content (3 hops)", () => {
+    // Build chain: reflection → 2026-03-07 → 2026-03-06 → deep-book
+    writeNote(tempDir, "reflections/2026-03-08.md", `---
+title: 2026-03-08 | Recent
+URL: https://bagrounds.org/reflections/2026-03-08
+---
+# 2026-03-08 | Recent
+Navigation: [[reflections/2026-03-07|⏮️]]
+
+## 🐦 Tweet
+<blockquote>tweet</blockquote>
+
+## 🦋 Bluesky
+<blockquote>post</blockquote>
+
+## 🐘 Mastodon
+<iframe>embed</iframe>`);
+
+    writeNote(tempDir, "reflections/2026-03-07.md", `---
+title: 2026-03-07 | Middle
+URL: https://bagrounds.org/reflections/2026-03-07
+---
+# 2026-03-07 | Middle
+Navigation: [[reflections/2026-03-08|⏭️]] [[reflections/2026-03-06|⏮️]]
+
+## 🐦 Tweet
+<blockquote>tweet</blockquote>
+
+## 🦋 Bluesky
+<blockquote>post</blockquote>
+
+## 🐘 Mastodon
+<iframe>embed</iframe>`);
+
+    writeNote(tempDir, "reflections/2026-03-06.md", `---
+title: 2026-03-06 | Older
+URL: https://bagrounds.org/reflections/2026-03-06
+---
+# 2026-03-06 | Older
+Link to [[books/deep-book|Deep Book]].
+Navigation: [[reflections/2026-03-07|⏭️]]
+
+## 🐦 Tweet
+<blockquote>tweet</blockquote>
+
+## 🦋 Bluesky
+<blockquote>post</blockquote>
+
+## 🐘 Mastodon
+<iframe>embed</iframe>`);
+
+    writeNote(tempDir, "books/deep-book.md", `---
+title: Deep Book
+URL: https://bagrounds.org/books/deep-book
+---
+# Deep Book
+A book only reachable 3 hops deep. This has plenty of content for posting.`);
+
+    const config: FindContentConfig = {
+      contentDir: tempDir,
+      platforms: ["twitter"],
+      postingHourUTC: 0,
+    };
+
+    const results = bfsContentDiscovery(config);
+    assert.equal(results.length, 1);
+    assert.equal(results[0]!.note.relativePath, "books/deep-book.md");
+    assert.deepEqual(results[0]!.pathFromRoot, [
+      "reflections/2026-03-08.md",
+      "reflections/2026-03-07.md",
+      "reflections/2026-03-06.md",
+      "books/deep-book.md",
+    ]);
+  });
+
+  test("pathFromRoot for root node is just the root itself", () => {
+    writeNote(tempDir, "reflections/2026-03-08.md", `---
+title: 2026-03-08 | Reflection
+URL: https://bagrounds.org/reflections/2026-03-08
+---
+# 2026-03-08 | Reflection
+Content with enough substance for a social media post about this day.`);
+
+    const config: FindContentConfig = {
+      contentDir: tempDir,
+      platforms: ["twitter"],
+      postingHourUTC: 0,
+    };
+
+    const results = bfsContentDiscovery(config);
+    assert.equal(results.length, 1);
+    assert.deepEqual(results[0]!.pathFromRoot, ["reflections/2026-03-08.md"]);
+  });
+
+  test("pathFromRoot uses shortest path when multiple routes exist", () => {
+    // Create a diamond graph: reflection → bookA → bookC
+    //                         reflection → bookB → bookC
+    // Since bookA and bookB are both 1 hop from reflection,
+    // bookC should be 2 hops via whichever was discovered first.
+    writeNote(tempDir, "reflections/2026-03-08.md", `---
+title: 2026-03-08 | Reflection
+URL: https://bagrounds.org/reflections/2026-03-08
+---
+# 2026-03-08 | Reflection
+Links to [[books/book-a|Book A]] and [[books/book-b|Book B]].
+
+## 🐦 Tweet
+<blockquote>tweet</blockquote>
+
+## 🦋 Bluesky
+<blockquote>post</blockquote>
+
+## 🐘 Mastodon
+<iframe>embed</iframe>`);
+
+    writeNote(tempDir, "books/book-a.md", `---
+title: Book A
+URL: https://bagrounds.org/books/book-a
+---
+# Book A
+Book A links to [[books/book-c|Book C]]. Lots of interesting content here.
+
+## 🐦 Tweet
+<blockquote>tweet</blockquote>
+
+## 🦋 Bluesky
+<blockquote>post</blockquote>
+
+## 🐘 Mastodon
+<iframe>embed</iframe>`);
+
+    writeNote(tempDir, "books/book-b.md", `---
+title: Book B
+URL: https://bagrounds.org/books/book-b
+---
+# Book B
+Book B also links to [[books/book-c|Book C]]. More great content here.
+
+## 🐦 Tweet
+<blockquote>tweet</blockquote>
+
+## 🦋 Bluesky
+<blockquote>post</blockquote>
+
+## 🐘 Mastodon
+<iframe>embed</iframe>`);
+
+    writeNote(tempDir, "books/book-c.md", `---
+title: Book C
+URL: https://bagrounds.org/books/book-c
+---
+# Book C
+The target book reachable via two routes. Should have a 2-hop shortest path.`);
+
+    const config: FindContentConfig = {
+      contentDir: tempDir,
+      platforms: ["twitter"],
+      postingHourUTC: 0,
+    };
+
+    const results = bfsContentDiscovery(config);
+    assert.equal(results.length, 1);
+    assert.equal(results[0]!.note.relativePath, "books/book-c.md");
+    // Path should be 3 elements: reflection → one intermediate → book-c
+    assert.equal(results[0]!.pathFromRoot.length, 3);
+    assert.equal(results[0]!.pathFromRoot[0], "reflections/2026-03-08.md");
+    assert.equal(results[0]!.pathFromRoot[2], "books/book-c.md");
+  });
+});
+
+// --- discoverContentToPost path tracking ---
+
+describe("discoverContentToPost path tracking", () => {
+  let tempDir: string;
+
+  beforeEach(() => {
+    tempDir = createTempDir();
+  });
+
+  afterEach(() => {
+    cleanupTempDir(tempDir);
+  });
+
+  test("prior day reflection has single-element pathFromRoot", () => {
+    const yesterday = getYesterdayDate();
+    writeNote(tempDir, `reflections/${yesterday}.md`, `---
+share: true
+title: ${yesterday} | Yesterday's Reflection
+URL: https://bagrounds.org/reflections/${yesterday}
+---
+[Home](../index.md)
+# ${yesterday} | Yesterday's Reflection
+Content for yesterday's reflection that has enough substance for posting.`);
+
+    const config: FindContentConfig = {
+      contentDir: tempDir,
+      platforms: ["twitter"],
+    };
+
+    const results = discoverContentToPost(config, true);
+    assert.ok(results.length > 0);
+    assert.deepEqual(results[0]!.pathFromRoot, [`reflections/${yesterday}.md`]);
   });
 });

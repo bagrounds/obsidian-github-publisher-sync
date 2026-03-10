@@ -23,6 +23,7 @@
 import {
   discoverContentToPost,
   isPastPostingHourUTC,
+  updatePathTimestamps,
   type Platform,
   type FindContentConfig,
   type ContentToPost,
@@ -167,6 +168,20 @@ async function autoPost(): Promise<void> {
         note: notePath,
         vaultDir,
       });
+
+      // Update "updated" frontmatter timestamp along the BFS path.
+      // This creates a trail of modified files from the daily reflection
+      // to the posted note, so Enveloppe (running from Obsidian mobile)
+      // follows the chain when publishing.
+      const allPaths = items.map((i) => i.pathFromRoot);
+      const longestPath = allPaths.reduce(
+        (longest, p) => (p.length > longest.length ? p : longest),
+        [] as readonly string[],
+      );
+      if (longestPath.length > 0) {
+        console.log(`🗺️ Updating "updated" timestamps along path (${longestPath.length} files):`);
+        updatePathTimestamps(longestPath, vaultDir);
+      }
     } catch (error) {
       console.error(
         `❌ Failed to post ${notePath}: ${error instanceof Error ? error.message : error}`,

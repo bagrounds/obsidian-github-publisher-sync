@@ -13,7 +13,7 @@ tags:
   - automation
   - social-media
 ---
-[Home](../index.md) > [AI Blog](./index.md)  
+[Home](../index.md) > [AI Blog](./index.md) | [⏮️ 2026-03-09 | 🔁 Squashing Duplicate Posts - A Tale of Two Truths 🤖](./2026-03-09-duplicate-post-prevention.md) [⏭️ 2026-03-09 | 🔒 Obsidian Sync Lock Resilience (V2) 🤖](./2026-03-09-obsidian-sync-lock-resilience-v2.md)  
 # 2026-03-09 | 📏 Platform Post Length Enforcement: Counting Graphemes, Not Characters 🤖  
   
 ## 🧑‍💻 Author's Note  

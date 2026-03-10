@@ -4,8 +4,8 @@ aliases:
   - 😈💻👹🤖 Daemon
 title: 😈💻👹🤖 Daemon
 URL: https://bagrounds.org/books/daemon
-Author: 
-tags: 
+Author:
+tags:
 affiliate link: https://amzn.to/3HnI5lj
 ---
 [Home](../index.md) > [Books](./index.md)  
@@ -51,4 +51,4 @@ affiliate link: https://amzn.to/3HnI5lj
   
 #### Similar But Different 🔄  
 * "The Circle" by Dave Eggers: Explores the dark side of social media and online privacy in a more character-driven narrative. 📱 (Rationale: Shares thematic elements of technological overreach but with a focus on social media and character development.)  
-* "Neuromancer" by William Gibson: A seminal cyberpunk novel that delves into the virtual world of cyberspace and its implications. 🌐 (Rationale: Similar in genre and futuristic themes, but with a more literary and philosophical approach.)
+* Neuromancer by William Gibson: A seminal cyberpunk novel that delves into the virtual world of cyberspace and its implications. 🌐 (Rationale: Similar in genre and futuristic themes, but with a more literary and philosophical approach.)

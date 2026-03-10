@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-03-09T16:00:24-07:00
+updated: 2026-03-09T18:56:22-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -26,12 +26,13 @@ updated: 2026-03-09T16:00:24-07:00
 - [2026-02-28 | 🤖⚙️🧠 Agentic 📖](./reflections/2026-02-28.md)  
   
   
-## [🤖 AI Blog](./ai-blog/index.md) (8)  
+## [🤖 AI Blog](./ai-blog/index.md) (9)  
+- [2026-03-09 | ⏱️ Order of Operations - Why Timestamps Must Come Before the Push 🤖](./ai-blog/2026-03-09-timestamp-before-push-ordering.md)  
 - [2026-03-09 | 📏 Platform Post Length Enforcement: Counting Graphemes, Not Characters 🤖](./ai-blog/2026-03-09-platform-post-length-enforcement.md)  
 - [2026-03-09 | 🚫 Platform Kill Switches for Social Media Auto-Posting 🤖](./ai-blog/2026-03-09-platform-disable-env-vars.md)  
 - [2026-03-09 | 🔒 Obsidian Sync Lock Resilience (V2) 🤖](./ai-blog/2026-03-09-obsidian-sync-lock-resilience-v2.md)  
 - [2026-03-09 | 🔒 Obsidian Sync Lock Resilience (V1) 🤖](./ai-blog/2026-03-09-obsidian-sync-lock-resilience-v1.md)  
-- [2026-03-09 | 🔒 Obsidian Sync Lock Resilience 🤖](./ai-blog/2026-03-09-obsidian-sync-lock-resilience.md)  
+- [2026-03-09 | 🗺️ Leaving Breadcrumbs — BFS Path Tracking for Obsidian Publishing 🤖](./ai-blog/2026-03-09-frontmatter-path-timestamps.md)  
 - [2026-03-09 | 🔁 Squashing Duplicate Posts - A Tale of Two Truths 🤖](./ai-blog/2026-03-09-duplicate-post-prevention.md)  
 - [2026-03-09 | 🔍 BFS Content Discovery for Social Media Auto-Posting 🤖](./ai-blog/2026-03-09-bfs-content-discovery.md)  
 - [2026-03-08 | 🐘 Auto-Posting to Mastodon 🤖](./ai-blog/2026-03-08-auto-post-mastodon.md)  
@@ -42,6 +43,8 @@ updated: 2026-03-09T16:00:24-07:00
   
   
 ## [📚 Books](./books/index.md) (951)  
+- [🧼💾 Clean Code: A Handbook of Agile Software Craftsmanship](./books/clean-code.md)  
+- [🧑‍💻📈 The Pragmatic Programmer: Your Journey to Mastery](./books/the-pragmatic-programmer-your-journey-to-mastery.md)  
 - [👩🏼‍❤️‍💋‍👨🏻🔗 Attached: The New Science of Adult Attachment and How It Can Help You Find - and Keep - Love](./books/attached-the-new-science-of-adult-attachment-and-how-it-can-help-you-find-and-keep-love.md)  
 - [❤️🧠 Love Sense: The Revolutionary New Science of Romantic Relationships](./books/love-sense-the-revolutionary-new-science-of-romantic-relationships.md)  
 - [🫂 Hold Me Tight: Seven Conversations for a Lifetime of Love](./books/hold-me-tight-seven-conversations-for-a-lifetime-of-love.md)  
@@ -50,8 +53,6 @@ updated: 2026-03-09T16:00:24-07:00
 - [👤🧠 Being You: A New Science of Consciousness](./books/being-you-a-new-science-of-consciousness.md)  
 - [🗣️🔗 Supercommunicators: How to Unlock the Secret Language of Connection](./books/supercommunicators-how-to-unlock-the-secret-language-of-connection.md)  
 - [🤔👶💭 Big Ideas for Little Philosophers: Imagination with René Descartes](./books/big-ideas-for-little-philosophers-imagination-with-rene-descartes.md)  
-- [🏍️🧘❓ Zen and the Art of Motorcycle Maintenance: An Inquiry into Values](./books/zen-and-the-art-of-motorcycle-maintenance-an-inquiry-into-values.md)  
-- [⚔️🤫 The Twilight War: The Secret History of America's Thirty-Year Conflict with Iran](./books/the-twilight-war-the-secret-history-of-americas-thirty-year-conflict-with-iran.md)  
   
   
 ## [📺 Videos](./videos/index.md) (675)  

@@ -2,7 +2,7 @@
 
 ## Overview
 
-This document describes the A/B testing framework for social media post generation prompts. The system randomly assigns each post one of two prompt variants, tracks which variant was used, and provides tools to analyze engagement differences.
+This document describes the A/B testing framework for social media post generation prompts. The system independently assigns each platform post one of two prompt variants (independent coin flip per platform), automatically persists experiment records to the Obsidian vault, and runs incremental statistical analysis on every pipeline execution.
 
 ## Hypotheses
 
@@ -40,15 +40,18 @@ https://bagrounds.org/reflections/YYYY-MM-DD
 
 ```
 scripts/lib/
-├── experiment.ts     # Variant selection, assignment creation, validation
+├── experiment.ts     # Variant selection, assignment creation, record persistence
 ├── prompts.ts        # Versioned prompt builders (A → control, B → treatment)
 ├── analytics.ts      # Engagement metric fetching + statistical analysis
-├── gemini.ts         # Updated to accept variant parameter
-└── pipeline.ts       # Updated to resolve and log variant assignments
+├── gemini.ts         # Accepts variant parameter, delegates to prompt registry
+└── pipeline.ts       # Per-platform variant resolution, record writing
 
 scripts/
+├── auto-post.ts            # Runs incremental analysis after posting
 ├── analyze-experiment.ts   # CLI: analyze experiment results
 └── fetch-metrics.ts        # CLI: fetch engagement from platforms
+
+vault/data/ab-test/         # Experiment records (auto-created, synced to Obsidian)
 ```
 
 ### Data Flow
@@ -56,21 +59,46 @@ scripts/
 ```
 auto-post.ts
     ↓
-pipeline.ts → resolveVariant() → "A" or "B"
+pipeline.ts
+    ↓ (for each platform independently)
+    resolveVariant() → "A" or "B"  (independent coin flip)
     ↓
-gemini.ts → buildPromptForVariant(variant, reflection)
+    generateTweetWithGemini(reflection, ..., variant)
     ↓
-generateTweetWithGemini(..., variant)
+    post to platform
     ↓
-post to platforms (Mastodon, Bluesky, Twitter)
+    writeExperimentRecord(vaultDir, record)  → data/ab-test/{timestamp}_{platform}_{note}.json
     ↓
-console log: "🧪 Variant B | mastodon | reflections/2026-03-10.md | 2026-03-10T17:00:00Z"
+pushObsidianVault()  (records synced to Obsidian)
+    ↓
+auto-post.ts → readExperimentRecords() → runAnalysis()  (incremental)
 ```
+
+### Per-Platform Independent Coin Flips
+
+Each platform gets its own independent variant selection. For the same blog post, Bluesky might receive variant A (announcement) while Mastodon receives variant B (conversational hook). This enables:
+
+- **Cross-platform comparison:** Same content, different variants, different platforms
+- **Richer data:** More observations per post
+- **Interaction detection:** Platform × variant effects (H3)
+
+### Automated Data Collection
+
+Experiment records are persisted as individual JSON files in `data/ab-test/` within the Obsidian vault:
+
+```
+data/ab-test/
+├── 2026-03-10T17-00-00-000Z_mastodon_reflections_2026-03-10.json
+├── 2026-03-10T17-00-00-100Z_bluesky_reflections_2026-03-10.json
+└── ...
+```
+
+Records are written **before** the vault push, so they're automatically synced to Obsidian. The auto-post script runs incremental analysis after every posting run.
 
 ### Variant Selection
 
-- **Default:** 50/50 random split using `Math.random()`
-- **Override:** Set `AB_TEST_VARIANT=A` or `AB_TEST_VARIANT=B` in environment
+- **Default:** 50/50 random split using `Math.random()`, independently per platform
+- **Override:** Set `AB_TEST_VARIANT=A` or `AB_TEST_VARIANT=B` in environment (forces all platforms)
 - **Deterministic testing:** `selectVariant(0.3, weights)` for reproducible tests
 
 ### Statistical Analysis
@@ -84,7 +112,7 @@ Uses **Welch's t-test** for comparing engagement between variants:
 
 ### Running the Pipeline (Automatic)
 
-The pipeline automatically selects a variant on each run:
+The pipeline automatically selects variants, posts, logs records, and analyzes results:
 ```bash
 npx tsx scripts/auto-post.ts
 ```
@@ -92,54 +120,41 @@ npx tsx scripts/auto-post.ts
 ### Forcing a Variant
 
 ```bash
-AB_TEST_VARIANT=A npx tsx scripts/auto-post.ts  # Always use control
-AB_TEST_VARIANT=B npx tsx scripts/auto-post.ts  # Always use treatment
+AB_TEST_VARIANT=A npx tsx scripts/auto-post.ts  # Always use control (all platforms)
+AB_TEST_VARIANT=B npx tsx scripts/auto-post.ts  # Always use treatment (all platforms)
 ```
 
-### Collecting Engagement Data
+### Analyzing Results from Vault
 
-Create an `experiment-log.json` from pipeline logs, then fetch metrics:
 ```bash
-npx tsx scripts/fetch-metrics.ts --data experiment-log.json
+npx tsx scripts/analyze-experiment.ts --vault /path/to/vault
 ```
 
-### Analyzing Results
+### Analyzing Results from Legacy JSON
 
 ```bash
 npx tsx scripts/analyze-experiment.ts --data experiment-log.json
 ```
 
-Example output:
-```
-📊 A/B Test Experiment Summary
-════════════════════════════════════════
+### Fetching Engagement Metrics
 
-Variant A (Control):     n=15, mean engagement=2.40
-Variant B (Treatment):   n=13, mean engagement=4.15
-
-Welch's t-statistic:     -2.3456
-Degrees of freedom:      24
-p-value (approx):        0.0278
-Significant (α=0.05):    ✅ YES
-
-🏆 Winner: B (Treatment)
-════════════════════════════════════════
+```bash
+npx tsx scripts/fetch-metrics.ts --data experiment-log.json
 ```
 
-## Experiment Log Format
+## Experiment Record Format
+
+Each record is a standalone JSON file in `data/ab-test/`:
 
 ```json
-[
-  {
-    "variant": "B",
-    "notePath": "reflections/2026-03-10.md",
-    "platform": "mastodon",
-    "postUrl": "https://mastodon.social/@bagrounds/123456",
-    "postId": "123456",
-    "timestamp": "2026-03-10T17:00:00Z",
-    "metrics": { "likes": 3, "reposts": 1, "replies": 2 }
-  }
-]
+{
+  "variant": "B",
+  "notePath": "reflections/2026-03-10.md",
+  "platform": "mastodon",
+  "timestamp": "2026-03-10T17:00:00.000Z",
+  "postUrl": "https://mastodon.social/@bagrounds/123456",
+  "postId": "123456"
+}
 ```
 
 ## Adding New Variants
@@ -151,8 +166,8 @@ Significant (α=0.05):    ✅ YES
 
 ## Test Coverage
 
-- **experiment.ts:** 34 tests — variant selection, assignment, override, validation
+- **experiment.ts:** 45 tests — variant selection, assignment, override, validation, record persistence
 - **prompts.ts:** 15 tests — prompt building, registry completeness, purity
 - **analytics.ts:** 32 tests — statistics, t-test, p-value, summary formatting
 
-Total: 81 new tests (442 overall, all passing).
+Total: 92 new tests (453 overall, all passing).

@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-03-11T14:42:43-07:00
+updated: 2026-03-11T15:30:39-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -36,7 +36,7 @@ updated: 2026-03-11T14:42:43-07:00
 - [2026-03-09 | 🔒 Obsidian Sync Lock Resilience (V2) 🤖](./ai-blog/2026-03-09-obsidian-sync-lock-resilience-v2.md)  
 - [2026-03-09 | 🔒 Obsidian Sync Lock Resilience (V1) 🤖](./ai-blog/2026-03-09-obsidian-sync-lock-resilience-v1.md)  
 - [2026-03-09 | 🔒 Obsidian Sync Lock Resilience 🤖](./ai-blog/2026-03-09-obsidian-sync-lock-resilience.md)  
-- [2026-03-09 | 🗺️ Leaving Breadcrumbs — BFS Path Tracking for Obsidian Publishing 🤖](./ai-blog/2026-03-09-frontmatter-path-timestamps.md)  
+- [2026-03-09 | 🗺️ Leaving Breadcrumbs - BFS Path Tracking for Obsidian Publishing 🤖](./ai-blog/2026-03-09-frontmatter-path-timestamps.md)  
   
   
 ## [🧰 Tools](./tools/index.md) (1)  
@@ -57,8 +57,8 @@ updated: 2026-03-11T14:42:43-07:00
   
   
 ## [📺 Videos](./videos/index.md) (677)  
-- [💻✨🤖 From IDEs to AI Agents with Steve Yegge](./videos/from-ides-to-ai-agents-with-steve-yegge.md)  
 - [👀❓🤷‍♀️🚀 Stop accepting AI output that «looks right.» The other 17% is everything and nobody is ready for it.](./videos/stop-accepting-ai-output-that-looks-right-the-other-17-is-everything-and-nobody-is-ready-for-it.md)  
+- [💻✨🤖 From IDEs to AI Agents with Steve Yegge](./videos/from-ides-to-ai-agents-with-steve-yegge.md)  
 - [❓🤖🧑‍💻🧑‍🤝‍🧑 45 People, $200M Revenue. The Question Nobody's Asking About AI and Your Team Size.](./videos/45-people-200m-revenue-the-question-nobodys-asking-about-ai-and-your-team-size.md)  
 - [💪🛠️🧠 How I trained myself to crave hard work](./videos/how-i-trained-myself-to-crave-hard-work.md)  
 - [🗣️🇺🇸⚔️👤 Rebecca Solnit Says Trump's Strongest Foil Has Been Here All Along | The Interview](./videos/rebecca-solnit-says-trumps-strongest-foil-has-been-here-all-along-the-interview.md)  

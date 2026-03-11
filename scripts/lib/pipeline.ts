@@ -30,6 +30,8 @@ import { PipelineTimer } from "./timer.ts";
 import { calculateTweetLength, countGraphemes, fitPostToLimit } from "./text.ts";
 import { readNote } from "./frontmatter.ts";
 import { generateTweetWithGemini } from "./gemini.ts";
+import { resolveVariant, createAssignment, formatAssignment } from "./experiment.ts";
+import type { VariantId } from "./experiment.ts";
 import { validateEnvironment, getYesterdayDate } from "./env.ts";
 import { buildTweetSection, buildBlueskySection, buildMastodonSection } from "./embed-section.ts";
 import { syncObsidianVault, pushObsidianVault } from "./obsidian-sync.ts";
@@ -331,10 +333,14 @@ export async function main(options?: {
   }
   console.log(`🔍 Section check — tweet: ${reflection.hasTweetSection}, bluesky: ${reflection.hasBlueskySection}, mastodon: ${reflection.hasMastodonSection}`);
 
+  const variant: VariantId = resolveVariant();
+  const assignment = createAssignment(variant, obsidianNotePath, "all");
+  console.log(formatAssignment(assignment));
+
   const postText = await timer.time("gemini-generate", async () => {
-    console.log(`🤖 Generating post with ${env.gemini.model}...`);
-    const text = await generateTweetWithGemini(reflection, env.gemini.apiKey, env.gemini.model);
-    console.log(`📝 Generated post (${calculateTweetLength(text)} chars):\n${text}`);
+    console.log(`🤖 Generating post with ${env.gemini.model} (variant ${variant})...`);
+    const text = await generateTweetWithGemini(reflection, env.gemini.apiKey, env.gemini.model, variant);
+    console.log(`📝 Generated post (${calculateTweetLength(text)} chars, variant ${variant}):\n${text}`);
     return text;
   });
 

@@ -86,6 +86,42 @@ export {
 
 // --- Re-exports: Gemini ---
 export { buildGeminiPrompt, generateTweetWithGemini } from "./lib/gemini.ts";
+export type { GenerateResult } from "./lib/gemini.ts";
+
+// --- Re-exports: A/B Testing Experiment ---
+export type { VariantId, VariantWeight, ExperimentAssignment, EngagementMetrics, ExperimentObservation } from "./lib/experiment.ts";
+export {
+  VARIANT_IDS,
+  DEFAULT_WEIGHTS,
+  selectVariant,
+  randomVariant,
+  createAssignment,
+  getVariantOverride,
+  resolveVariant,
+  formatAssignment,
+  validateWeights,
+  isVariantId,
+} from "./lib/experiment.ts";
+
+// --- Re-exports: Versioned Prompts ---
+export type { PromptPair, PromptBuilder } from "./lib/prompts.ts";
+export { PROMPT_VARIANTS, getPromptBuilder, buildPromptForVariant } from "./lib/prompts.ts";
+
+// --- Re-exports: Analytics ---
+export {
+  fetchMastodonMetrics,
+  fetchBlueskyMetrics,
+  totalEngagement,
+  engagementRate,
+  mean,
+  variance,
+  standardDeviation,
+  welchTTest,
+  approximatePValue,
+  analyzeExperiment,
+  formatExperimentSummary,
+} from "./lib/analytics.ts";
+export type { ExperimentSummary } from "./lib/analytics.ts";
 
 // --- Re-exports: Environment ---
 export { isPlatformDisabled, validateEnvironment, getYesterdayDate } from "./lib/env.ts";

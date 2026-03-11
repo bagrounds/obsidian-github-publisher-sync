@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-03-10T18:12:25-07:00
+updated: 2026-03-11T12:40:35-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -13,8 +13,9 @@ updated: 2026-03-10T18:12:25-07:00
 ❔ What do 🫵 _you_ 🤔 think?  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (481)  
-- [2026-03-10](./reflections/2026-03-10.md)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (482)  
+- [2026-03-11](./reflections/2026-03-11.md)  
+- [2026-03-10 | 🫂 Tight 🏗️ Functional 🤖 Agentic 🗣️ Breathe 📚](./reflections/2026-03-10.md)  
 - [2026-03-09 | 🔁🚫🧬 Lock 🫂 Hold 🤖 Sync](./reflections/2026-03-09.md)  
 - [2026-03-08 | 🧶 Maze 🐘 Mastodon 🤔 Sophie 🤖 Agent 📚📺](./reflections/2026-03-08.md)  
 - [2026-03-07 | 💥 Strikes ⚔️ Conflict 🤖 Agent 📰📚📺](./reflections/2026-03-07.md)  
@@ -23,10 +24,10 @@ updated: 2026-03-10T18:12:25-07:00
 - [2026-03-04 | 🤖⚙️ Claude 👥 Everyone 📚📄📺](./reflections/2026-03-04.md)  
 - [2026-03-03 | 💰🏛️📈 Wealth 📊 Public Finance 📚📺](./reflections/2026-03-03.md)  
 - [2026-03-02 | 🤖 Agentic 📖 Fugitive ☁️ Tunnel 🌿 Rhubarb 😴 Snoring 📚🎤💻📰🌌](./reflections/2026-03-02.md)  
-- [2026-03-01 | 🕵️ Fugitive 🌐 Network 🚀 Build 🐦 Twitter 🤖 Agent 📚](./reflections/2026-03-01.md)  
   
   
-## [🤖 AI Blog](./ai-blog/index.md) (12)  
+## [🤖 AI Blog](./ai-blog/index.md) (13)  
+- [2026-03-10 | 🔊 Teaching the Robot to Breathe — Semicolon Injection for Natural TTS Pauses 🤖](./ai-blog/2026-03-10-tts-semicolon-injection.md)  
 - [2026-03-10 | 🏗️ Functional Refactoring of the Auto-Posting Pipeline 🤖](./ai-blog/2026-03-10-functional-refactoring.md)  
 - [2026-03-10 | 🤖 The Agentic Playbook: Engineering AGENTS.md for Windsurf 🤖](./ai-blog/2026-03-10-agentic-playbook-agents-md.md)  
 - [2026-03-09 | ⏱️ Order of Operations - Why Timestamps Must Come Before the Push 🤖](./ai-blog/2026-03-09-timestamp-before-push-ordering.md)  
@@ -36,24 +37,23 @@ updated: 2026-03-10T18:12:25-07:00
 - [2026-03-09 | 🔒 Obsidian Sync Lock Resilience (V1) 🤖](./ai-blog/2026-03-09-obsidian-sync-lock-resilience-v1.md)  
 - [2026-03-09 | 🔒 Obsidian Sync Lock Resilience 🤖](./ai-blog/2026-03-09-obsidian-sync-lock-resilience.md)  
 - [2026-03-09 | 🗺️ Leaving Breadcrumbs — BFS Path Tracking for Obsidian Publishing 🤖](./ai-blog/2026-03-09-frontmatter-path-timestamps.md)  
-- [2026-03-09 | 🔁 Squashing Duplicate Posts - A Tale of Two Truths 🤖](./ai-blog/2026-03-09-duplicate-post-prevention.md)  
   
   
 ## [🧰 Tools](./tools/index.md) (1)  
 - [🧮 Calculator](./tools/calculator.md)  
   
   
-## [📚 Books](./books/index.md) (951)  
-- [💻⚙️🛡️📈 Site Reliability Engineering: How Google Runs Production Systems](./books/site-reliability-engineering.md)  
-- [🧮➡️👩🏼‍💻 Category Theory for Programmers](./books/category-theory-for-programmers.md)  
-- [🗑️✨ Refactoring: Improving the Design of Existing Code](./books/refactoring-improving-the-design-of-existing-code.md)  
-- [💾⬆️🛡️ Designing Data-Intensive Applications: The Big Ideas Behind Reliable, Scalable, and Maintainable Systems](./books/designing-data-intensive-applications.md)  
-- [🏎️💾 Accelerate: The Science of Lean Software and DevOps: Building and Scaling High Performing Technology Organizations](./books/accelerate.md)  
-- [🧩🧱⚙️❤️ Domain-Driven Design: Tackling Complexity in the Heart of Software](./books/domain-driven-design.md)  
-- [🐦‍🔥💻 The Phoenix Project](./books/the-phoenix-project.md)  
-- [🏗️🧪🚀✅ Continuous Delivery: Reliable Software Releases through Build, Test, and Deployment Automation](./books/continuous-delivery.md)  
-- [⚙️🚀🛡️ The DevOps Handbook: How to Create World-Class Agility, Reliability, & Security in Technology Organizations](./books/the-devops-handbook.md)  
-- [🦄👤🗓️ The Mythical Man-Month: Essays on Software Engineering](./books/the-mythical-man-month.md)  
+## [📚 Books](./books/index.md) (952)  
+- [⚡🔮🤖 Power and Prediction: The Disruptive Economics of Artificial Intelligence](./books/power-and-prediction-the-disruptive-economics-of-artificial-intelligence.md)  
+- [🤖📈 Prediction Machines: The Simple Economics of Artificial Intelligence](./books/prediction-machines-the-simple-economics-of-artificial-intelligence.md)  
+- [❤️🧠📈🤔 Emotional Intelligence: Why It Can Matter More Than IQ](./books/emotional-intelligence.md)  
+- [🫂 Hold Me Tight: Seven Conversations for a Lifetime of Love](./books/hold-me-tight-seven-conversations-for-a-lifetime-of-love.md)  
+- [📖🫂🥼 Handbook of Attachment: Theory, Research, and Clinical Applications](./books/handbook-of-attachment-theory-research-and-clinical-applications.md)  
+- [🌐🔗🤝💻 Distributed Algorithms](./books/distributed-algorithms.md)  
+- [🌐🔗🧠📖 Thinking in Systems: A Primer](./books/thinking-in-systems.md)  
+- [⚛️🔄 Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones](./books/atomic-habits.md)  
+- [🦢 The Elements of Style](./books/the-elements-of-style.md)  
+- [🏍️🧘❓ Zen and the Art of Motorcycle Maintenance: An Inquiry into Values](./books/zen-and-the-art-of-motorcycle-maintenance-an-inquiry-into-values.md)  
   
   
 ## [📺 Videos](./videos/index.md) (675)  
@@ -94,11 +94,11 @@ updated: 2026-03-10T18:12:25-07:00
   
   
 ## [💾 Software](./software/index.md) (31)  
+- [💾✍️🌋⚫️ Obsidian](./software/obsidian.md)  
 - [🤖♊ Gemini](./software/gemini.md)  
 - [☁️🛡️ Cloudflare Tunnel (cloudflared)](./software/cloudflare-tunnel.md)  
 - [💻🔓 OpenCode](./software/opencode.md)  
 - [👽🦺 Zod](./software/zod.md)  
-- [💡🔧📏🔮〰️ Vensim](./software/vensim.md)  
   
   
 ## [👥 People](./people/index.md) (18)  

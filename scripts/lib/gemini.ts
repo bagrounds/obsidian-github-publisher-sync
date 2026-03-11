@@ -28,7 +28,6 @@ export function buildGeminiPrompt(reflection: ReflectionData): PromptPair {
   return buildPromptForVariant("A", reflection);
 }
 
-
 /**
  * Generate post text using Google Gemini API.
  * Returns validated text within Twitter's character limit.

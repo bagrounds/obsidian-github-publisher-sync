@@ -84,9 +84,9 @@ describe("buildPromptForVariant", () => {
     assertValidPrompt(prompt, testReflection);
   });
 
-  it("variant A system prompt mentions tweet writer", () => {
+  it("variant A system prompt mentions social media writer", () => {
     const prompt = buildPromptForVariant("A", testReflection);
-    assert.ok(prompt.system.includes("tweet writer"), "variant A should mention tweet writer");
+    assert.ok(prompt.system.includes("social media writer"), "variant A should mention social media writer");
   });
 
   it("variant B system prompt mentions conversation or thoughtful", () => {

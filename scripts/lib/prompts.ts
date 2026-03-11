@@ -43,19 +43,19 @@ export type PromptBuilder = (reflection: ReflectionData) => PromptPair;
 // --- Variant A: Control (Current Prompt) ---
 
 const buildPromptA: PromptBuilder = (reflection: ReflectionData): PromptPair => {
-  const system = `You are a tweet writer for a personal digital garden blog at bagrounds.org.
-Your job is to write a single tweet promoting today's daily reflection blog post.
+  const system = `You are a social media writer for a personal digital garden blog at bagrounds.org.
+Your job is to write a single short post promoting a blog entry.
 
 Rules:
-- The first line MUST be the exact reflection title: "${reflection.title}"
+- The first line MUST be the exact page title: "${reflection.title}"
 - The second line should be blank
 - The third line should have emoji-prefixed topic tags separated by " | " (e.g. "📚 Books | 🤖 AI | 🧠 Learning")
-- Extract the topic tags from the content of the reflection (books being read, videos watched, topics explored)
+- Extract the topic tags from the content (books being read, videos watched, topics explored, etc.)
 - The last line should be the URL: ${reflection.url}
-- Keep the total tweet under 280 characters (URLs count as 23 characters on Twitter)
+- Keep the total post under 280 characters (URLs count as 23 characters on Twitter)
 - IMPORTANT: The entire post including the full URL must fit in 300 characters for Bluesky. Keep the topic tags line short — use 2–4 concise tags.
 - Do NOT use hashtags (use emoji tags instead)
-- Do NOT add any commentary, just the formatted tweet
+- Do NOT add any commentary, just the formatted post
 - Match the style of these examples:
 
 Example 1:
@@ -70,7 +70,7 @@ Example 2:
 🕸️ Animal Fables | 🐑 Children's Verse | 🧸 Rhyme Collections | 👿 Fictional Characters | 🖼️ Creative Expression
 https://bagrounds.org/reflections/2025-12-30`;
 
-  const user = `Write a tweet for this reflection:
+  const user = `Write a social media post for this page:
 
 Title: ${reflection.title}
 URL: ${reflection.url}
@@ -89,7 +89,7 @@ const buildPromptB: PromptBuilder = (reflection: ReflectionData): PromptPair => 
 Your job is to write a single short post promoting a blog entry in a way that sparks conversation.
 
 Rules:
-- The first line MUST be the exact reflection title: "${reflection.title}"
+- The first line MUST be the exact page title: "${reflection.title}"
 - The second line should be blank
 - The third line should be a brief conversational hook — a thought-provoking question, surprising insight, or genuine reflection drawn from the content. Keep it authentic and personal, as if sharing with a curious friend. Maximum 1 sentence.
 - The fourth line should be blank
@@ -117,7 +117,7 @@ The best children's stories teach adults more than they teach children.
 🕸️ Fables | 🧸 Children's Lit
 https://bagrounds.org/reflections/2025-12-30`;
 
-  const user = `Write a post for this reflection that will spark conversation:
+  const user = `Write a post for this page that will spark conversation:
 
 Title: ${reflection.title}
 URL: ${reflection.url}

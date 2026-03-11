@@ -88,10 +88,11 @@ export {
 export { buildGeminiPrompt, generateTweetWithGemini } from "./lib/gemini.ts";
 
 // --- Re-exports: A/B Testing Experiment ---
-export type { VariantId, VariantWeight, ExperimentAssignment, EngagementMetrics, ExperimentObservation } from "./lib/experiment.ts";
+export type { VariantId, VariantWeight, ExperimentAssignment, ExperimentRecord, EngagementMetrics, ExperimentObservation } from "./lib/experiment.ts";
 export {
   VARIANT_IDS,
   DEFAULT_WEIGHTS,
+  EXPERIMENT_DATA_DIR,
   selectVariant,
   randomVariant,
   createAssignment,
@@ -100,6 +101,9 @@ export {
   formatAssignment,
   validateWeights,
   isVariantId,
+  buildRecordFileName,
+  writeExperimentRecord,
+  readExperimentRecords,
 } from "./lib/experiment.ts";
 
 // --- Re-exports: Versioned Prompts ---

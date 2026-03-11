@@ -1,60 +1,43 @@
 /**
  * A/B test experiment analysis CLI.
  *
- * Fetches engagement metrics from Mastodon and Bluesky for posts
- * that participated in the A/B test, then computes statistical
+ * Reads experiment records from the vault's data/ab-test directory
+ * (written by the posting pipeline), then computes statistical
  * analysis to determine if a variant is outperforming.
  *
  * Usage:
+ *   npx tsx scripts/analyze-experiment.ts --vault /path/to/vault
  *   npx tsx scripts/analyze-experiment.ts --data experiment-log.json
  *   npx tsx scripts/analyze-experiment.ts --help
- *
- * The experiment log is a JSON file with an array of experiment records:
- * [
- *   {
- *     "variant": "A",
- *     "notePath": "reflections/2026-03-10.md",
- *     "platform": "mastodon",
- *     "postUrl": "https://mastodon.social/@user/123",
- *     "postId": "123",
- *     "timestamp": "2026-03-10T17:00:00Z"
- *   },
- *   ...
- * ]
  *
  * @module analyze-experiment
  */
 
 import fs from "node:fs";
 
-import type { VariantId } from "./lib/experiment.ts";
-import { isVariantId } from "./lib/experiment.ts";
+import {
+  readExperimentRecords,
+  isVariantId,
+} from "./lib/experiment.ts";
+import type { ExperimentRecord } from "./lib/experiment.ts";
 import {
   totalEngagement,
   analyzeExperiment,
   formatExperimentSummary,
 } from "./lib/analytics.ts";
-import type { EngagementMetrics } from "./lib/experiment.ts";
-
-// --- Experiment Log Types ---
-
-interface ExperimentRecord {
-  readonly variant: VariantId;
-  readonly notePath: string;
-  readonly platform: "mastodon" | "bluesky";
-  readonly postUrl: string;
-  readonly postId: string;
-  readonly timestamp: string;
-  readonly metrics?: EngagementMetrics;
-}
 
 // --- CLI Argument Parsing ---
 
-const parseAnalysisArgs = (): { dataFile: string } => {
+const parseAnalysisArgs = (): { vaultDir?: string; dataFile?: string } => {
   const args = process.argv.slice(2);
-  let dataFile = "experiment-log.json";
+  let vaultDir: string | undefined;
+  let dataFile: string | undefined;
 
   for (let i = 0; i < args.length; i++) {
+    if (args[i] === "--vault" && args[i + 1]) {
+      vaultDir = args[i + 1] as string;
+      i++;
+    }
     if (args[i] === "--data" && args[i + 1]) {
       dataFile = args[i + 1] as string;
       i++;
@@ -64,49 +47,54 @@ const parseAnalysisArgs = (): { dataFile: string } => {
 Usage: npx tsx scripts/analyze-experiment.ts [options]
 
 Options:
-  --data <file>    Path to experiment log JSON file (default: experiment-log.json)
+  --vault <dir>    Path to Obsidian vault (reads from data/ab-test/)
+  --data <file>    Path to experiment log JSON file (legacy, array of records)
   --help           Show this help message
 
-The experiment log should be a JSON array of records with:
-  variant, notePath, platform, postUrl, postId, timestamp, metrics?
+Reads experiment records from the vault's data/ab-test/ directory.
+Each record is a JSON file written by the posting pipeline.
 `);
       process.exit(0);
     }
   }
 
-  return { dataFile };
+  return { vaultDir, dataFile };
 };
 
 // --- Analysis ---
 
 /**
- * Load and validate experiment records from a JSON file.
+ * Load experiment records from vault directory or legacy JSON file.
  */
-const loadExperimentLog = (filePath: string): readonly ExperimentRecord[] => {
-  if (!fs.existsSync(filePath)) {
-    console.error(`❌ Experiment log not found: ${filePath}`);
-    console.log(`\nTo start collecting data, create a JSON file with experiment records.`);
-    console.log(`The pipeline logs variant assignments — collect these into a JSON array.`);
-    process.exit(1);
+const loadRecords = (vaultDir?: string, dataFile?: string): readonly ExperimentRecord[] => {
+  if (vaultDir) {
+    const records = readExperimentRecords(vaultDir);
+    console.log(`📂 Loaded ${records.length} experiment records from vault`);
+    return records;
   }
 
-  const raw = JSON.parse(fs.readFileSync(filePath, "utf-8")) as unknown[];
+  if (dataFile) {
+    if (!fs.existsSync(dataFile)) {
+      console.error(`❌ Experiment log not found: ${dataFile}`);
+      process.exit(1);
+    }
+    const raw = JSON.parse(fs.readFileSync(dataFile, "utf-8")) as unknown[];
+    const records = raw.filter((record): record is ExperimentRecord => {
+      const r = record as Record<string, unknown>;
+      return typeof r.variant === "string" && isVariantId(r.variant);
+    });
+    console.log(`📂 Loaded ${records.length} experiment records from ${dataFile}`);
+    return records;
+  }
 
-  return raw.filter((record): record is ExperimentRecord => {
-    const r = record as Record<string, unknown>;
-    return (
-      typeof r.variant === "string" &&
-      isVariantId(r.variant) &&
-      typeof r.platform === "string" &&
-      typeof r.postUrl === "string"
-    );
-  });
+  console.error(`❌ Specify --vault or --data`);
+  process.exit(1);
 };
 
 /**
  * Group experiment records by variant and compute engagement totals.
  */
-const groupByVariant = (
+export const groupByVariant = (
   records: readonly ExperimentRecord[],
 ): { a: readonly number[]; b: readonly number[] } => {
   const a: number[] = [];
@@ -139,14 +127,10 @@ const printDetailReport = (records: readonly ExperimentRecord[]): void => {
   }
 };
 
-// --- Main ---
-
-const main = (): void => {
-  const { dataFile } = parseAnalysisArgs();
-  const records = loadExperimentLog(dataFile);
-
-  console.log(`📂 Loaded ${records.length} experiment records from ${dataFile}`);
-
+/**
+ * Run analysis and print results. Exported for pipeline integration.
+ */
+export const runAnalysis = (records: readonly ExperimentRecord[]): void => {
   printDetailReport(records);
 
   const recordsWithMetrics = records.filter((r) => r.metrics !== undefined);
@@ -168,10 +152,16 @@ const main = (): void => {
   console.log(`\n${formatExperimentSummary(summary)}`);
 };
 
+// --- Main ---
+
+const main = (): void => {
+  const { vaultDir, dataFile } = parseAnalysisArgs();
+  const records = loadRecords(vaultDir, dataFile);
+  runAnalysis(records);
+};
+
 // Entry point guard
 const isMainModule = process.argv[1]?.endsWith("analyze-experiment.ts");
 if (isMainModule) {
   main();
 }
-
-export { loadExperimentLog, groupByVariant, type ExperimentRecord };

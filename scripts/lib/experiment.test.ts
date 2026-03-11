@@ -2,11 +2,14 @@
  * Tests for scripts/lib/experiment.ts — A/B testing framework.
  *
  * Covers variant selection (deterministic and random), assignment creation,
- * environment override, weight validation, and formatting.
+ * environment override, weight validation, formatting, and record persistence.
  */
 
 import { describe, it } from "node:test";
 import assert from "node:assert/strict";
+import fs from "node:fs";
+import os from "node:os";
+import path from "node:path";
 
 import {
   selectVariant,
@@ -19,8 +22,12 @@ import {
   isVariantId,
   DEFAULT_WEIGHTS,
   VARIANT_IDS,
+  EXPERIMENT_DATA_DIR,
+  buildRecordFileName,
+  writeExperimentRecord,
+  readExperimentRecords,
 } from "./experiment.ts";
-import type { VariantWeight } from "./experiment.ts";
+import type { VariantWeight, ExperimentRecord } from "./experiment.ts";
 
 // --- selectVariant ---
 
@@ -258,5 +265,172 @@ describe("isVariantId", () => {
 describe("VARIANT_IDS", () => {
   it("contains exactly A and B", () => {
     assert.deepEqual([...VARIANT_IDS], ["A", "B"]);
+  });
+});
+
+// --- buildRecordFileName ---
+
+describe("buildRecordFileName", () => {
+  it("encodes notePath slashes to underscores", () => {
+    const name = buildRecordFileName("reflections/2026-03-10.md", "mastodon", "2026-03-10T12:00:00.000Z");
+    assert.ok(!name.includes("/"), "should not contain slashes");
+    assert.ok(name.includes("mastodon"), "should contain platform");
+    assert.ok(name.endsWith(".json"), "should end with .json");
+  });
+
+  it("strips .md extension from notePath", () => {
+    const name = buildRecordFileName("books/some-book.md", "bluesky", "2026-03-10T12:00:00.000Z");
+    assert.ok(!name.includes(".md.json"), "should not have .md before .json");
+  });
+
+  it("encodes colons and dots from timestamp", () => {
+    const name = buildRecordFileName("test.md", "twitter", "2026-03-10T12:30:45.123Z");
+    assert.ok(!name.includes(":"), "should not contain colons");
+  });
+
+  it("produces unique names for different platforms", () => {
+    const ts = "2026-03-10T12:00:00.000Z";
+    const a = buildRecordFileName("test.md", "mastodon", ts);
+    const b = buildRecordFileName("test.md", "bluesky", ts);
+    assert.notEqual(a, b, "different platforms should produce different filenames");
+  });
+});
+
+// --- writeExperimentRecord / readExperimentRecords ---
+
+describe("experiment record persistence", () => {
+  const createTempDir = (): string => {
+    const dir = fs.mkdtempSync(path.join(os.tmpdir(), "experiment-test-"));
+    return dir;
+  };
+
+  it("writes and reads back a single record", () => {
+    const vaultDir = createTempDir();
+    const record: ExperimentRecord = {
+      variant: "A",
+      notePath: "reflections/2026-03-10.md",
+      platform: "mastodon",
+      timestamp: "2026-03-10T12:00:00.000Z",
+      postUrl: "https://mastodon.social/@test/123",
+      postId: "123",
+    };
+
+    writeExperimentRecord(vaultDir, record);
+    const records = readExperimentRecords(vaultDir);
+
+    assert.equal(records.length, 1);
+    assert.equal(records[0]!.variant, "A");
+    assert.equal(records[0]!.platform, "mastodon");
+    assert.equal(records[0]!.notePath, "reflections/2026-03-10.md");
+    assert.equal(records[0]!.postId, "123");
+
+    fs.rmSync(vaultDir, { recursive: true });
+  });
+
+  it("writes multiple records for different platforms", () => {
+    const vaultDir = createTempDir();
+    const ts = "2026-03-10T12:00:00.000Z";
+
+    writeExperimentRecord(vaultDir, {
+      variant: "A",
+      notePath: "test.md",
+      platform: "mastodon",
+      timestamp: ts,
+      postId: "m1",
+    });
+    writeExperimentRecord(vaultDir, {
+      variant: "B",
+      notePath: "test.md",
+      platform: "bluesky",
+      timestamp: ts,
+      postId: "b1",
+    });
+
+    const records = readExperimentRecords(vaultDir);
+    assert.equal(records.length, 2);
+
+    const platforms = records.map((r) => r.platform).sort();
+    assert.deepEqual(platforms, ["bluesky", "mastodon"]);
+
+    // Independent coin flips: different variants for same note
+    const variants = records.map((r) => r.variant).sort();
+    assert.deepEqual(variants, ["A", "B"]);
+
+    fs.rmSync(vaultDir, { recursive: true });
+  });
+
+  it("creates the data/ab-test directory if it doesn't exist", () => {
+    const vaultDir = createTempDir();
+    const dataDir = path.join(vaultDir, EXPERIMENT_DATA_DIR);
+
+    assert.equal(fs.existsSync(dataDir), false);
+    writeExperimentRecord(vaultDir, {
+      variant: "A",
+      notePath: "test.md",
+      platform: "twitter",
+      timestamp: "2026-03-10T12:00:00.000Z",
+    });
+    assert.equal(fs.existsSync(dataDir), true);
+
+    fs.rmSync(vaultDir, { recursive: true });
+  });
+
+  it("returns empty array for non-existent vault dir", () => {
+    const records = readExperimentRecords("/tmp/nonexistent-vault-dir-12345");
+    assert.equal(records.length, 0);
+  });
+
+  it("preserves metrics in records", () => {
+    const vaultDir = createTempDir();
+    const record: ExperimentRecord = {
+      variant: "B",
+      notePath: "test.md",
+      platform: "bluesky",
+      timestamp: "2026-03-10T12:00:00.000Z",
+      metrics: { likes: 5, reposts: 2, replies: 1 },
+    };
+
+    writeExperimentRecord(vaultDir, record);
+    const records = readExperimentRecords(vaultDir);
+    assert.deepEqual(records[0]!.metrics, { likes: 5, reposts: 2, replies: 1 });
+
+    fs.rmSync(vaultDir, { recursive: true });
+  });
+
+  it("returns file path from writeExperimentRecord", () => {
+    const vaultDir = createTempDir();
+    const filePath = writeExperimentRecord(vaultDir, {
+      variant: "A",
+      notePath: "test.md",
+      platform: "mastodon",
+      timestamp: "2026-03-10T12:00:00.000Z",
+    });
+
+    assert.ok(filePath.endsWith(".json"));
+    assert.ok(fs.existsSync(filePath));
+
+    fs.rmSync(vaultDir, { recursive: true });
+  });
+
+  it("skips malformed JSON files gracefully", () => {
+    const vaultDir = createTempDir();
+    const dataDir = path.join(vaultDir, EXPERIMENT_DATA_DIR);
+    fs.mkdirSync(dataDir, { recursive: true });
+
+    // Write a valid record
+    writeExperimentRecord(vaultDir, {
+      variant: "A",
+      notePath: "test.md",
+      platform: "mastodon",
+      timestamp: "2026-03-10T12:00:00.000Z",
+    });
+
+    // Write a malformed file
+    fs.writeFileSync(path.join(dataDir, "bad.json"), "not valid json", "utf-8");
+
+    const records = readExperimentRecords(vaultDir);
+    assert.equal(records.length, 1, "should skip malformed files");
+
+    fs.rmSync(vaultDir, { recursive: true });
   });
 });

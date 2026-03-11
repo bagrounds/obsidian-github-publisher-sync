@@ -33,12 +33,27 @@ export const DEFAULT_WEIGHTS: readonly VariantWeight[] = [
   { variant: "B", weight: 0.5 },
 ] as const;
 
-/** Immutable record of a variant assignment for a single post. */
+/** Immutable record of a variant assignment for a single post on a single platform. */
 export interface ExperimentAssignment {
   readonly variant: VariantId;
   readonly timestamp: string;
   readonly notePath: string;
   readonly platform: string;
+}
+
+/**
+ * A persisted experiment record — an assignment enriched with post identifiers
+ * so we can later fetch engagement metrics and run analysis.
+ */
+export interface ExperimentRecord {
+  readonly variant: VariantId;
+  readonly notePath: string;
+  readonly platform: string;
+  readonly timestamp: string;
+  readonly postUrl?: string;
+  readonly postId?: string;
+  readonly postUri?: string;
+  readonly metrics?: EngagementMetrics;
 }
 
 /** Engagement metrics fetched from a social platform. */
@@ -157,3 +172,72 @@ export const validateWeights = (
  */
 export const isVariantId = (value: string): value is VariantId =>
   value === "A" || value === "B";
+
+// --- Experiment Log Persistence ---
+
+import fs from "node:fs";
+import path from "node:path";
+
+/** Directory within the vault for experiment data. */
+export const EXPERIMENT_DATA_DIR = "data/ab-test";
+
+/**
+ * Build the file path for an experiment record within the vault.
+ * Each record gets its own JSON file named by timestamp + platform.
+ */
+export const buildRecordFileName = (
+  notePath: string,
+  platform: string,
+  timestamp: string,
+): string => {
+  const safePath = notePath.replace(/[/\\]/g, "_").replace(/\.md$/, "");
+  const safeTime = timestamp.replace(/[:.]/g, "-");
+  return `${safeTime}_${platform}_${safePath}.json`;
+};
+
+/**
+ * Write an experiment record to the vault's data directory.
+ * Creates the directory if it doesn't exist.
+ * This is called during the posting pipeline, BEFORE pushing the vault.
+ */
+export const writeExperimentRecord = (
+  vaultDir: string,
+  record: ExperimentRecord,
+): string => {
+  const dir = path.join(vaultDir, EXPERIMENT_DATA_DIR);
+  fs.mkdirSync(dir, { recursive: true });
+
+  const fileName = buildRecordFileName(
+    record.notePath,
+    record.platform,
+    record.timestamp,
+  );
+  const filePath = path.join(dir, fileName);
+  fs.writeFileSync(filePath, JSON.stringify(record, null, 2), "utf-8");
+
+  return filePath;
+};
+
+/**
+ * Read all experiment records from the vault's data directory.
+ * Returns an empty array if the directory doesn't exist.
+ */
+export const readExperimentRecords = (
+  vaultDir: string,
+): readonly ExperimentRecord[] => {
+  const dir = path.join(vaultDir, EXPERIMENT_DATA_DIR);
+  if (!fs.existsSync(dir)) return [];
+
+  return fs
+    .readdirSync(dir)
+    .filter((f) => f.endsWith(".json"))
+    .map((f) => {
+      try {
+        const content = fs.readFileSync(path.join(dir, f), "utf-8");
+        return JSON.parse(content) as ExperimentRecord;
+      } catch {
+        return null;
+      }
+    })
+    .filter((r): r is ExperimentRecord => r !== null);
+};

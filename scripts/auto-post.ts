@@ -29,6 +29,8 @@ import {
   type ContentToPost,
 } from "./find-content-to-post.ts";
 import { main, validateEnvironment, syncObsidianVault } from "./tweet-reflection.ts";
+import { readExperimentRecords } from "./lib/experiment.ts";
+import { runAnalysis } from "./analyze-experiment.ts";
 
 // --- Types ---
 
@@ -192,6 +194,15 @@ async function autoPost(): Promise<void> {
   }
 
   console.log(`\n🏁 Auto-post complete!`);
+
+  // Run incremental A/B test analysis on accumulated experiment records
+  console.log(`\n📊 Running incremental A/B test analysis...`);
+  const experimentRecords = readExperimentRecords(vaultDir);
+  if (experimentRecords.length > 0) {
+    runAnalysis(experimentRecords);
+  } else {
+    console.log(`   No experiment records yet — analysis will begin after the first post.`);
+  }
 }
 
 // --- Entry Point ---

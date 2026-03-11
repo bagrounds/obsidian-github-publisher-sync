@@ -69,6 +69,15 @@ same text twice — the `<li>`'s full text and then the `<p>`'s identical text.
 The player detects this with `el.querySelector(BLOCK_SELECTORS)` and only
 reads the innermost leaf blocks.
 
+### Block Pause Injection
+After cleaning each block's text, the player calls `injectBlockPauses()` to
+append a semicolon (`;`) to any block that doesn't already end with
+pause-producing punctuation (`.`, `!`, `?`, `;`, `:`). This causes the
+speech synthesiser to insert a brief pause between headings, list items,
+table cells, and other block-level elements that would otherwise run
+together without a break. See [tts-semicolon-injection.md](tts-semicolon-injection.md)
+for the full design document.
+
 ### Speed Persistence
 When navigating between pages in the SPA, the speed `<select>` element's DOM
 value is preserved by the framework. On each `nav` event, the player reads
@@ -91,7 +100,7 @@ from the same sentence index.
 |------|------|
 | `quartz/components/TextToSpeech.tsx` | Preact component rendering the player HTML. Registered in both content and list page layouts via `quartz.layout.ts`. |
 | `quartz/components/scripts/tts.inline.ts` | Client-side player logic. Runs on every SPA navigation (`nav` event). Handles text extraction, speech synthesis, highlighting, autoscroll, seek, speed, and toggle. Cleans up via `addCleanup`. |
-| `quartz/components/scripts/tts.utils.ts` | Pure utility functions (no DOM dependency). Includes `stripEmojis`, `cleanText`, `splitIntoSentences`, `wordCount`, `estimateDuration`, `formatTime`, `buildCumulativeWords`, `sentenceIndexForTime`, and selector constants. |
+| `quartz/components/scripts/tts.utils.ts` | Pure utility functions (no DOM dependency). Includes `stripEmojis`, `cleanText`, `injectBlockPauses`, `splitIntoSentences`, `wordCount`, `estimateDuration`, `formatTime`, `buildCumulativeWords`, `sentenceIndexForTime`, and selector constants. |
 | `quartz/components/scripts/tts.test.ts` | Unit and property-based tests for all utility functions. |
 | `quartz/components/styles/tts.scss` | Styles for the player wrapper, tab, container, controls, and sentence highlight. Uses Quartz CSS variables for theming. |
 
@@ -100,6 +109,8 @@ from the same sentence index.
 ```
 nav event
   → extractArticleBlocks()     // walk <article> block elements, clone + clean
+    → cleanText()              // collapse whitespace, strip markdown/emoji
+    → injectBlockPauses()      // append ";" if no terminal punctuation
   → splitIntoSentences()       // split cleaned text into sentence chunks
   → buildSentenceBlockMap()    // map each sentence → its source DOM block
   → buildCumulativeWords()     // prefix-sum word counts for time estimation
@@ -125,9 +136,9 @@ the current sentence using wall-clock time.
 
 ## Tests
 
-The test suite (`tts.test.ts`) contains **100 tests** across 17 describe blocks:
+The test suite (`tts.test.ts`) contains **118 tests** across 19 describe blocks:
 
-### Unit Tests (83 tests)
+### Unit Tests (97 tests)
 - **Constants** — `AVG_WPM`, `WPS`, selector arrays
 - **stripEmojis** — common emoji, ZWJ sequences, skin tones, flags, keycaps, variation selectors
 - **splitIntoSentences** — periods, exclamation/question marks, ellipsis, trailing text, long input, empty strings
@@ -137,9 +148,10 @@ The test suite (`tts.test.ts`) contains **100 tests** across 17 describe blocks:
 - **buildCumulativeWords** — empty, single, accumulation, zeros
 - **sentenceIndexForTime** — boundaries, middle, end, beyond-end, rate, empty, single
 - **cleanText** — whitespace collapsing, markdown stripping, emoji removal, mixed content
-- **Integration** — full pipeline, speed scaling, seek consistency, emoji-heavy text
+- **injectBlockPauses** — empty input, plain text, headings, all punctuation types, list items, numbers, parentheses
+- **Integration** — full pipeline, speed scaling, seek consistency, emoji-heavy text, block pause injection
 
-### Property-Based Tests (17 tests)
+### Property-Based Tests (21 tests)
 Randomised inputs over 50 iterations per test to verify invariants:
 - **stripEmojis** — never increases length, preserves ASCII, no pictographic in output
 - **splitIntoSentences** — no lost words, no empty strings
@@ -148,6 +160,7 @@ Randomised inputs over 50 iterations per test to verify invariants:
 - **buildCumulativeWords** — length preserved, monotonically non-decreasing, last = sum
 - **sentenceIndexForTime** — valid index, monotonic with time
 - **cleanText** — never increases length, strips markdown characters
+- **injectBlockPauses** — output ≥ input length, always ends with punctuation, idempotent, preserves existing punctuation
 
 ## Browser Compatibility
 

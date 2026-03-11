@@ -55,13 +55,13 @@ affiliate link: https://amzn.to/4h2i3Sm
 ### 🌍 V. Societal Considerations  
 * 🏛️ **Policy Challenge**: Maximize AI benefits while mitigating risks.  
 * 🤝 **Distribution of Benefits**: Ensure equitable distribution of AI's economic gains.  
-* 🎓 **New Skills**: Increased demand for "reward function engineering" and judgment skills.  
+* 🎓 **New Skills**: Increased demand for reward function engineering and judgment skills.  
   
 ## ❓Frequently Asked Questions (FAQ)  
   
 ### 🤖 **Q: What is the main argument or core idea of *Prediction Machines*?**  
   
-**A:** 💡 The main argument is that the current wave of Artificial Intelligence is best understood as a **dramatic drop in the cost of prediction**. 📉 By recasting AI as cheap prediction, rather than as "magical" human-like general intelligence, the authors provide a practical economic framework for understanding and strategizing around its impact on business, society, and the workforce.  
+**A:** 💡 The main argument is that the current wave of Artificial Intelligence is best understood as a **dramatic drop in the cost of prediction**. 📉 By recasting AI as cheap prediction, rather than as magical human-like general intelligence, the authors provide a practical economic framework for understanding and strategizing around its impact on business, society, and the workforce.  
   
 ### ✍️ **Q: Who are the authors of *Prediction Machines*?**  
   
@@ -98,17 +98,17 @@ affiliate link: https://amzn.to/4h2i3Sm
   
 ### 🏢 **Q: What new types of business models might cheap prediction enable?**  
   
-**A:** 🏭 Cheap prediction enables a shift from a **"make-then-sell" to a "sell-then-make"** or even a **"make-before-you-order"** model. 📦 The most famous example is **"anticipatory shipping,"** where a company ships products before they are ordered because the prediction of the customer's need is so accurate. ✨ It encourages services that **pre-empt** customer needs based on accurate forecasts.  
+**A:** 🏭 Cheap prediction enables a shift from a **make-then-sell to a sell-then-make** or even a **make-before-you-order** model. 📦 The most famous example is **anticipatory shipping,** where a company ships products before they are ordered because the prediction of the customer's need is so accurate. ✨ It encourages services that **pre-empt** customer needs based on accurate forecasts.  
   
 ### 🧑‍💼 **Q: How does the concept of 'Prediction Machines' help a manager make a business decision?**  
   
-**A:** 🛠️ It instructs a manager to **decompose every task and decision** using the **"AI Canvas"** framework (Prediction, Judgment, Action, Data). 🧩 By isolating the "prediction" step, a manager can identify how much of that step a machine can take over and, critically, how that cheaper/better prediction will **increase the value** of the complementary human 👤 **judgment** and 🦾 **action** required to complete the task.  
+**A:** 🛠️ It instructs a manager to **decompose every task and decision** using the **AI Canvas** framework (Prediction, Judgment, Action, Data). 🧩 By isolating the prediction step, a manager can identify how much of that step a machine can take over and, critically, how that cheaper/better prediction will **increase the value** of the complementary human 👤 **judgment** and 🦾 **action** required to complete the task.  
   
 ### 🤔 **Q: What is the difference between Prediction and Judgment in the book's framework?**  
   
 **A:** 🔮 **Prediction** is the forecast of a likely outcome, reducing ❓ **uncertainty** (e.g., *If we do X, Y will happen*). 👤 **Judgment** is the human skill of **determining the payoff** or the relative value of different outcomes, even when that value cannot be easily quantified (e.g., *Is outcome Y good or bad for the company?*). 🤖 AI excels at prediction; humans retain the unique comparative advantage in judgment.  
   
-### 🚀 **Q: What is an "AI-First" strategy, and why do companies adopt it?**  
+### 🚀 **Q: What is an AI-First strategy, and why do companies adopt it?**  
   
 **A:** 🎯 An **AI-First strategy** is a corporate approach that prioritizes the improvement of the prediction machine (maximizing data collection and accuracy) even at the expense of short-term customer satisfaction or operational efficiency. 💰 Companies adopt it because the economics of AI favor scale and learning, creating a **virtuous cycle** where early, accurate predictions attract more users and data, leading to a competitive lock-in.  
   
@@ -128,14 +128,14 @@ affiliate link: https://amzn.to/4h2i3Sm
   
 **A:** 😔 Airport lounges exist as an organizational solution to **poor prediction** (uncertainty). 😌 They are complementary assets built to manage customer **judgment** (frustration) resulting from unpredictable delays. 🔮 If highly accurate prediction eliminated most flight delays, **the value of the airport lounge (the complementary investment in managing uncertainty) would decrease or even vanish.**  
   
-### 🎯 **Q: What is "Reward Function Engineering," and why is it a key new skill in the AI era?**  
+### 🎯 **Q: What is Reward Function Engineering, and why is it a key new skill in the AI era?**  
   
 **A:** ⚙️ **Reward Function Engineering** is the critical human task of **specifying the objective** and the **payoff** that an AI system should pursue. 🤖 Because the AI will optimize ruthlessly for the defined reward (e.g., maximizing profit vs. minimizing risk), the human skill of 👤 **Judgment**—ensuring the objective aligns with ethical, legal, and strategic goals—becomes more valuable and requires specialized expertise.  
   
 ## 📚 Book Recommendations  
   
 ### ➕ Similar & Complementary Reads  
-* 📘 **Power and Prediction: The Disruptive Economics of Artificial Intelligence**: Agrawal, Gans, Goldfarb's sequel, focusing on how AI impacts decision-making and identifying disruptive opportunities.  
+* **[⚡🔮🤖 Power and Prediction: The Disruptive Economics of Artificial Intelligence](./power-and-prediction-the-disruptive-economics-of-artificial-intelligence.md)**: Agrawal, Gans, Goldfarb's sequel, focusing on how AI impacts decision-making and identifying disruptive opportunities.  
 * **[🤖📈 The Second Machine Age: Work, Progress, and Prosperity in a Time of Brilliant Technologies](./the-second-machine-age-work-progress-and-prosperity-in-a-time-of-brilliant-technologies.md)**: Erik Brynjolfsson and Andrew McAfee. Explores the broader economic implications of digital technologies and AI.  
 * **[🧑‍💻🤖 Human + Machine: Reimagining Work in the Age of AI](./human-machine-reimagining-work-in-the-age-of-ai.md)**: Paul R. Daugherty and H. James Wilson. Focuses on collaborative intelligence between humans and AI.  
 * 📘 **Competing in the Age of AI: Strategy and Leadership When Algorithms and Networks Run the World**: Marco Iansiti and Karim R. Lakhani. Examines how AI fundamentally alters business models and strategy.  

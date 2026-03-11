@@ -4,6 +4,7 @@ aliases:
   - 💾✍️🌋⚫️ Obsidian
 title: 💾✍️🌋⚫️ Obsidian
 URL: https://bagrounds.org/software/obsidian
+updated: 2026-03-11T14:59:59.847Z
 ---
 [Home](../index.md) > [Software](./index.md)  
 # 💾✍️🌋⚫️ Obsidian  
@@ -122,4 +123,4 @@ Obsidian was developed by Erica Xu and Shida Li, released in 2020. It was design
 ### Official and Supportive Documentation 📄  
   
 * Obsidian Help: [https://help.obsidian.md/](https://help.obsidian.md/) 📖  
-* Obsidian Official Website: [https://obsidian.md/](https://obsidian.md/) 🌐  
+* Obsidian Official Website: [https://obsidian.md/](https://obsidian.md/) 🌐

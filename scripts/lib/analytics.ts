@@ -167,9 +167,14 @@ export const welchTTest = (
  * Approximate p-value for a two-tailed t-test using the normal distribution
  * approximation (valid for df > 30, reasonable for df > 10).
  *
+ * Uses a normal approximation rather than the Student's t CDF.
  * For small samples, this is a conservative approximation.
  * A proper implementation would use the Student's t CDF, but for a
  * first-pass experiment analysis, this is sufficient.
+ *
+ * Note: degrees of freedom is accepted but unused — the normal approximation
+ * does not depend on df. A future upgrade to a proper t-distribution CDF
+ * would use it.
  */
 export const approximatePValue = (t: number, _df: number): number => {
   // Use the complementary error function approximation

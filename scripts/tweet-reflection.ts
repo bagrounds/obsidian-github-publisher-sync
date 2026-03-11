@@ -86,7 +86,6 @@ export {
 
 // --- Re-exports: Gemini ---
 export { buildGeminiPrompt, generateTweetWithGemini } from "./lib/gemini.ts";
-export type { GenerateResult } from "./lib/gemini.ts";
 
 // --- Re-exports: A/B Testing Experiment ---
 export type { VariantId, VariantWeight, ExperimentAssignment, EngagementMetrics, ExperimentObservation } from "./lib/experiment.ts";

@@ -28,11 +28,6 @@ export function buildGeminiPrompt(reflection: ReflectionData): PromptPair {
   return buildPromptForVariant("A", reflection);
 }
 
-/** Result of generating post text, including which variant was used. */
-export interface GenerateResult {
-  readonly text: string;
-  readonly variant: VariantId;
-}
 
 /**
  * Generate post text using Google Gemini API.

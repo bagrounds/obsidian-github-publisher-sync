@@ -21,6 +21,7 @@ import fs from "node:fs";
 
 import { fetchMastodonMetrics, fetchBlueskyMetrics } from "./lib/analytics.ts";
 import type { MastodonCredentials, BlueskyCredentials } from "./lib/types.ts";
+import type { EngagementMetrics } from "./lib/experiment.ts";
 
 // --- Types ---
 
@@ -32,7 +33,7 @@ interface ExperimentRecord {
   readonly postId: string;
   readonly postUri?: string;
   readonly timestamp: string;
-  metrics?: { likes: number; reposts: number; replies: number };
+  metrics?: EngagementMetrics;
 }
 
 // --- Credential Resolution ---

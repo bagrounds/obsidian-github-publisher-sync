@@ -22,6 +22,7 @@ import {
   buildCumulativeWords,
   sentenceIndexForTime,
   cleanText,
+  injectBlockPauses,
   SELECTORS_TO_REMOVE,
   INLINE_SELECTORS_TO_REMOVE,
   BLOCK_SELECTORS,
@@ -86,7 +87,7 @@ function extractArticleBlocks(): { text: string; blocks: TextBlock[] } {
       clone.querySelectorAll(sel).forEach((e) => e.remove())
     }
 
-    const text = cleanText(clone.textContent ?? "")
+    const text = injectBlockPauses(cleanText(clone.textContent ?? ""))
     if (!text) continue
 
     blocks.push({ element: el, text, charStart: offset, charEnd: offset + text.length })

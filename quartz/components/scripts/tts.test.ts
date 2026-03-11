@@ -11,6 +11,7 @@ import {
   buildCumulativeWords,
   sentenceIndexForTime,
   cleanText,
+  injectBlockPauses,
   SELECTORS_TO_REMOVE,
   INLINE_SELECTORS_TO_REMOVE,
   BLOCK_SELECTORS,
@@ -481,6 +482,59 @@ describe("cleanText", () => {
 })
 
 // ---------------------------------------------------------------------------
+// injectBlockPauses
+// ---------------------------------------------------------------------------
+describe("injectBlockPauses", () => {
+  test("returns empty string for empty input", () => {
+    assert.strictEqual(injectBlockPauses(""), "")
+  })
+
+  test("appends semicolon to plain text", () => {
+    assert.strictEqual(injectBlockPauses("Introduction"), "Introduction;")
+  })
+
+  test("appends semicolon to a heading-like block", () => {
+    assert.strictEqual(injectBlockPauses("Getting Started"), "Getting Started;")
+  })
+
+  test("does not add semicolon when text ends with period", () => {
+    assert.strictEqual(injectBlockPauses("This is a sentence."), "This is a sentence.")
+  })
+
+  test("does not add semicolon when text ends with exclamation mark", () => {
+    assert.strictEqual(injectBlockPauses("Wow!"), "Wow!")
+  })
+
+  test("does not add semicolon when text ends with question mark", () => {
+    assert.strictEqual(injectBlockPauses("How are you?"), "How are you?")
+  })
+
+  test("does not add semicolon when text ends with semicolon", () => {
+    assert.strictEqual(injectBlockPauses("already paused;"), "already paused;")
+  })
+
+  test("does not add semicolon when text ends with colon", () => {
+    assert.strictEqual(injectBlockPauses("Note:"), "Note:")
+  })
+
+  test("appends semicolon to list item text", () => {
+    assert.strictEqual(injectBlockPauses("Install dependencies"), "Install dependencies;")
+  })
+
+  test("appends semicolon to text ending with a number", () => {
+    assert.strictEqual(injectBlockPauses("Chapter 3"), "Chapter 3;")
+  })
+
+  test("appends semicolon to text ending with a closing parenthesis", () => {
+    assert.strictEqual(injectBlockPauses("see above)"), "see above);")
+  })
+
+  test("handles single word", () => {
+    assert.strictEqual(injectBlockPauses("Overview"), "Overview;")
+  })
+})
+
+// ---------------------------------------------------------------------------
 // Integration: full pipeline
 // ---------------------------------------------------------------------------
 describe("TTS pipeline integration", () => {
@@ -554,6 +608,38 @@ describe("TTS pipeline integration", () => {
     const sentences = splitIntoSentences(text)
     assert.strictEqual(sentences.length, 2)
     assert.ok(sentences[1].includes("Second part without ending"))
+  })
+
+  test("block pauses are injected before sentence splitting", () => {
+    // Simulates the pipeline: cleanText → injectBlockPauses → join → splitIntoSentences
+    const blocks = ["Introduction", "First sentence.", "Key takeaway"]
+    const processed = blocks.map((b) => injectBlockPauses(cleanText(b)))
+    assert.strictEqual(processed[0], "Introduction;")
+    assert.strictEqual(processed[1], "First sentence.")
+    assert.strictEqual(processed[2], "Key takeaway;")
+
+    const fullText = processed.join(" ")
+    const sentences = splitIntoSentences(fullText)
+    // The semicolons don't split sentences (only .!? do), but they
+    // still cause the synthesiser to insert a pause.
+    assert.ok(sentences.length >= 1)
+  })
+
+  test("block pauses create natural breaks for headings and list items", () => {
+    // Typical page structure: heading, paragraph, list items
+    const blocks = [
+      "Getting Started",         // heading — no punctuation
+      "This guide walks you through setup.", // paragraph — has period
+      "Install Node.js",         // list item — no punctuation
+      "Run npm install",         // list item — no punctuation
+      "Open the browser",        // list item — no punctuation
+    ]
+    const processed = blocks.map((b) => injectBlockPauses(cleanText(b)))
+    assert.strictEqual(processed[0], "Getting Started;")
+    assert.strictEqual(processed[1], "This guide walks you through setup.")
+    assert.strictEqual(processed[2], "Install Node.js;")
+    assert.strictEqual(processed[3], "Run npm install;")
+    assert.strictEqual(processed[4], "Open the browser;")
   })
 })
 
@@ -761,6 +847,56 @@ describe("Property-based: cleanText", () => {
       const input = "## " + randomAlphaNum(30) + " **bold** _italic_ `code`"
       const output = cleanText(input)
       assert.ok(!mdChars.test(output), `Markdown chars in output: "${output}"`)
+    }
+  })
+})
+
+describe("Property-based: injectBlockPauses", () => {
+  test("output length is never less than input length", () => {
+    for (let i = 0; i < PROPERTY_ITERATIONS; i++) {
+      const input = randomAlphaNum(Math.floor(Math.random() * 50) + 1).trim()
+      if (!input) continue
+      assert.ok(
+        injectBlockPauses(input).length >= input.length,
+        `Output shorter than input for "${input}"`,
+      )
+    }
+  })
+
+  test("output always ends with punctuation", () => {
+    for (let i = 0; i < PROPERTY_ITERATIONS; i++) {
+      const input = randomAlphaNum(Math.floor(Math.random() * 50) + 1).trim()
+      if (!input) continue
+      const output = injectBlockPauses(input)
+      assert.ok(
+        /[.!?;:]$/.test(output),
+        `Output "${output}" does not end with pause-producing punctuation`,
+      )
+    }
+  })
+
+  test("idempotent — applying twice gives same result as once", () => {
+    for (let i = 0; i < PROPERTY_ITERATIONS; i++) {
+      const input = randomAlphaNum(Math.floor(Math.random() * 50) + 1).trim()
+      if (!input) continue
+      const once = injectBlockPauses(input)
+      const twice = injectBlockPauses(once)
+      assert.strictEqual(once, twice, `Not idempotent for "${input}": "${once}" → "${twice}"`)
+    }
+  })
+
+  test("text already ending with punctuation is unchanged", () => {
+    const endings = [".", "!", "?", ";", ":"]
+    for (let i = 0; i < PROPERTY_ITERATIONS; i++) {
+      const base = randomAlphaNum(Math.floor(Math.random() * 30) + 1).trim()
+      if (!base) continue
+      const ending = endings[Math.floor(Math.random() * endings.length)]
+      const input = base + ending
+      assert.strictEqual(
+        injectBlockPauses(input),
+        input,
+        `Unexpected modification of "${input}"`,
+      )
     }
   })
 })

@@ -5,10 +5,10 @@ aliases:
 share: true
 URL: https://bagrounds.org/books
 backlinks: false
-updated: 2026-03-10T18:12:25-07:00
+updated: 2026-03-11T12:40:35-07:00
 ---
 [Home](../index.md)  
-# 📚 Books (951)  
+# 📚 Books (952)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [💻0️⃣ Source Code: My Beginnings](./source-code-my-beginnings.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)  
@@ -504,6 +504,7 @@ updated: 2026-03-10T18:12:25-07:00
 - [🇺🇸💥 Political Violence in America: Historical Flashpoints and Modern-Day Trends](./political-violence-in-america-historical-flashpoints-and-modern-day-trends.md)  
 - [🗓️💡 Poor Richard's Almanack](./poor-richards-almanack.md)  
 - [🚫✅🤥 Post-Truth](./post-truth.md)  
+- [⚡🔮🤖 Power and Prediction: The Disruptive Economics of Artificial Intelligence](./power-and-prediction-the-disruptive-economics-of-artificial-intelligence.md)  
 - [👑💪🏽⁉️ Power: Why Some People Have It - and Others Don't](./power-why-some-people-have-it-and-others-dont.md)  
 - [🧘🏼‍♀️👩🏼‍🏫 Practicing Mindfulness: An Introduction to Meditation](./practicing-mindfulness-an-introduction-to-meditation.md)  
 - [🌱🔢✨ Precursor Math Concepts: The Wonder of Mathematical Worlds With Infants and Toddlers](./precursor-math-concepts-the-wonder-of-mathematical-worlds-with-infants-and-toddlers.md)  

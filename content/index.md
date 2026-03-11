@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-03-11T15:30:39-07:00
+updated: 2026-03-11T15:35:43-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -27,7 +27,7 @@ updated: 2026-03-11T15:30:39-07:00
   
   
 ## [🤖 AI Blog](./ai-blog/index.md) (13)  
-- [2026-03-10 | 🔊 Teaching the Robot to Breathe — Semicolon Injection for Natural TTS Pauses 🤖](./ai-blog/2026-03-10-tts-semicolon-injection.md)  
+- [2026-03-10 | 🔊 Teaching the Robot to Breathe - Semicolon Injection for Natural TTS Pauses 🤖](./ai-blog/2026-03-10-tts-semicolon-injection.md)  
 - [2026-03-10 | 🏗️ Functional Refactoring of the Auto-Posting Pipeline 🤖](./ai-blog/2026-03-10-functional-refactoring.md)  
 - [2026-03-10 | 🤖 The Agentic Playbook: Engineering AGENTS.md for Windsurf 🤖](./ai-blog/2026-03-10-agentic-playbook-agents-md.md)  
 - [2026-03-09 | ⏱️ Order of Operations - Why Timestamps Must Come Before the Push 🤖](./ai-blog/2026-03-09-timestamp-before-push-ordering.md)  

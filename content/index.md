@@ -44,6 +44,9 @@ updated: 2026-03-10T09:24:44-07:00
   
   
 ## [📚 Books](./books/index.md) (951)  
+- [💻⚙️🛡️📈 Site Reliability Engineering: How Google Runs Production Systems](./books/site-reliability-engineering.md)  
+- [🧮➡️👩🏼‍💻 Category Theory for Programmers](./books/category-theory-for-programmers.md)  
+- [🗑️✨ Refactoring: Improving the Design of Existing Code](./books/refactoring-improving-the-design-of-existing-code.md)  
 - [💾⬆️🛡️ Designing Data-Intensive Applications: The Big Ideas Behind Reliable, Scalable, and Maintainable Systems](./books/designing-data-intensive-applications.md)  
 - [🏎️💾 Accelerate: The Science of Lean Software and DevOps: Building and Scaling High Performing Technology Organizations](./books/accelerate.md)  
 - [🧩🧱⚙️❤️ Domain-Driven Design: Tackling Complexity in the Heart of Software](./books/domain-driven-design.md)  
@@ -51,9 +54,6 @@ updated: 2026-03-10T09:24:44-07:00
 - [🏗️🧪🚀✅ Continuous Delivery: Reliable Software Releases through Build, Test, and Deployment Automation](./books/continuous-delivery.md)  
 - [⚙️🚀🛡️ The DevOps Handbook: How to Create World-Class Agility, Reliability, & Security in Technology Organizations](./books/the-devops-handbook.md)  
 - [🦄👤🗓️ The Mythical Man-Month: Essays on Software Engineering](./books/the-mythical-man-month.md)  
-- [🤔🧘 Meditations](./books/meditations.md)  
-- [🧼💾 Clean Code: A Handbook of Agile Software Craftsmanship](./books/clean-code.md)  
-- [🧑‍💻📈 The Pragmatic Programmer: Your Journey to Mastery](./books/the-pragmatic-programmer-your-journey-to-mastery.md)  
   
   
 ## [📺 Videos](./videos/index.md) (675)  
@@ -120,6 +120,7 @@ updated: 2026-03-10T09:24:44-07:00
   
 ## 🔗 Profiles  
 - [📄 My resume](./topics/my-resume.md)  
+- <a href="https://bsky.app/profile/bagrounds.bsky.social"><img style="height:1em; margin:0;" src="https://simpleicons.org/icons/bluesky.svg"/> Bluesky</a>  
 - <a href="https://codepen.io/bagrounds"><img style="height:1em; margin:0;" src="https://simpleicons.org/icons/codepen.svg"/> Codepen</a>  
 - <a href="https://www.codewars.com/users/bagrounds"><img style="height:1em; margin:0;" src="https://raw.githubusercontent.com/bagrounds/icons/master/codewars.svg"/> Codewars</a>  
 - <a href="https://www.codingame.com/profile/0d172b10ecb72b81c2bb2646e8be9d8a8930706"><img style="height:1em; margin:0;" src="https://simpleicons.org/icons/codingame.svg"/> CodinGame</a>  
@@ -130,8 +131,8 @@ updated: 2026-03-10T09:24:44-07:00
 - <a href="https://www.inaturalist.org/people/8822063"><img style="height:1em; margin:0;" src="https://www.svgrepo.com/show/517036/inaturalist.svg"/> iNaturalist</a>  
 - <a href="https://leetcode.com/u/bagrounds"><img style="height:1em; margin:0;" src="https://simpleicons.org/icons/leetcode.svg"/> LeetCode</a>  
 - <a href="https://linkedin.com/in/bagrounds"><img style="height:1em; margin:0;" src="https://www.svgrepo.com/show/157006/linkedin.svg"/> LinkedIn</a>  
+- [🐘 Mastodon](https://mastodon.social/@bagrounds)  
 - <a href="https://www.npmjs.com/~bagrounds"><img style="height:1em; margin:0;" src="https://raw.githubusercontent.com/bagrounds/icons/master/npm.svg"/> npm</a>  
 - <a href="https://www.quora.com/profile/Bryan-Grounds"><img style="height:1em; margin:0;" src="https://simpleicons.org/icons/quora.svg"/> Quora</a>  
 - <a href="http://stackoverflow.com/users/2081363/bagrounds"><img style="height:1em; margin:0;" src="https://simpleicons.org/icons/stackoverflow.svg"/> StackOverflow</a>  
-- <a href="https://twitter.com/bagrounds"><img style="height:1em; margin:0;" src="https://simpleicons.org/icons/x.svg"/> X (Formerly Twitter)</a>  
-- <a href="https://bsky.app/profile/bagrounds.bsky.social"><img style="height:1em; margin:0;" src="https://simpleicons.org/icons/bluesky.svg"/> Bluesky</a>
+- <a href="https://twitter.com/bagrounds"><img style="height:1em; margin:0;" src="https://simpleicons.org/icons/x.svg"/> X (Formerly Twitter)</a>

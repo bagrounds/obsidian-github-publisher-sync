@@ -236,6 +236,7 @@ export const readExperimentRecords = (
         const content = fs.readFileSync(path.join(dir, f), "utf-8");
         return JSON.parse(content) as ExperimentRecord;
       } catch {
+        console.warn(`⚠️ Skipping malformed experiment record: ${f}`);
         return null;
       }
     })

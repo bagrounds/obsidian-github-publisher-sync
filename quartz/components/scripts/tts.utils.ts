@@ -102,6 +102,21 @@ export function cleanText(text: string): string {
     .trim()
 }
 
+/**
+ * Append a semicolon to block text that doesn't already end with
+ * sentence-ending punctuation. This gives the speech synthesiser a
+ * pause between headings, list items, table cells, and other
+ * block-level elements that would otherwise run together.
+ *
+ * Text that already ends with `.`, `!`, `?`, `:`, or `;` is
+ * returned unchanged — those characters already produce natural pauses.
+ */
+export function injectBlockPauses(text: string): string {
+  if (!text) return text
+  if (/[.!?;:]$/.test(text)) return text
+  return text + ";"
+}
+
 /** Selectors for block-level containers that should be skipped entirely. */
 export const SELECTORS_TO_REMOVE = [
   "nav",

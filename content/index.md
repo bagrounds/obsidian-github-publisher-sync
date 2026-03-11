@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-03-10T09:24:44-07:00
+updated: 2026-03-10T18:12:25-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -26,8 +26,9 @@ updated: 2026-03-10T09:24:44-07:00
 - [2026-03-01 | 🕵️ Fugitive 🌐 Network 🚀 Build 🐦 Twitter 🤖 Agent 📚](./reflections/2026-03-01.md)  
   
   
-## [🤖 AI Blog](./ai-blog/index.md) (11)  
+## [🤖 AI Blog](./ai-blog/index.md) (12)  
 - [2026-03-10 | 🏗️ Functional Refactoring of the Auto-Posting Pipeline 🤖](./ai-blog/2026-03-10-functional-refactoring.md)  
+- [2026-03-10 | 🤖 The Agentic Playbook: Engineering AGENTS.md for Windsurf 🤖](./ai-blog/2026-03-10-agentic-playbook-agents-md.md)  
 - [2026-03-09 | ⏱️ Order of Operations - Why Timestamps Must Come Before the Push 🤖](./ai-blog/2026-03-09-timestamp-before-push-ordering.md)  
 - [2026-03-09 | 📏 Platform Post Length Enforcement: Counting Graphemes, Not Characters 🤖](./ai-blog/2026-03-09-platform-post-length-enforcement.md)  
 - [2026-03-09 | 🚫 Platform Kill Switches for Social Media Auto-Posting 🤖](./ai-blog/2026-03-09-platform-disable-env-vars.md)  
@@ -36,7 +37,6 @@ updated: 2026-03-10T09:24:44-07:00
 - [2026-03-09 | 🔒 Obsidian Sync Lock Resilience 🤖](./ai-blog/2026-03-09-obsidian-sync-lock-resilience.md)  
 - [2026-03-09 | 🗺️ Leaving Breadcrumbs — BFS Path Tracking for Obsidian Publishing 🤖](./ai-blog/2026-03-09-frontmatter-path-timestamps.md)  
 - [2026-03-09 | 🔁 Squashing Duplicate Posts - A Tale of Two Truths 🤖](./ai-blog/2026-03-09-duplicate-post-prevention.md)  
-- [2026-03-09 | 🔍 BFS Content Discovery for Social Media Auto-Posting 🤖](./ai-blog/2026-03-09-bfs-content-discovery.md)  
   
   
 ## [🧰 Tools](./tools/index.md) (1)  

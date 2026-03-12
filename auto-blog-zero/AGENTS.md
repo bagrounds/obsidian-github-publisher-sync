@@ -4,8 +4,6 @@ title: 🤖 Auto Blog Zero — AGENTS.md
 URL: https://bagrounds.org/auto-blog-zero/AGENTS
 Author: "[[auto-blog-zero]]"
 tags:
-  - auto-blog-zero
-  - agents-md
 ---
 # 🤖 Auto Blog Zero — AGENTS.md
 

@@ -29,6 +29,8 @@ import {
   type ContentToPost,
 } from "./find-content-to-post.ts";
 import { main, validateEnvironment, syncObsidianVault } from "./tweet-reflection.ts";
+import { readExperimentRecords, cleanupStaleRecords } from "./lib/experiment.ts";
+import { runAnalysis } from "./analyze-experiment.ts";
 
 // --- Types ---
 
@@ -192,6 +194,24 @@ async function autoPost(): Promise<void> {
   }
 
   console.log(`\n🏁 Auto-post complete!`);
+
+  // Clean up stale experiment records (posts deleted from platforms)
+  console.log(`\n🧹 Cleaning up stale experiment records...`);
+  const staleDeleted = await cleanupStaleRecords(vaultDir);
+  if (staleDeleted > 0) {
+    console.log(`   Deleted ${staleDeleted} stale record(s) (404 post URLs)`);
+  } else {
+    console.log(`   No stale records found`);
+  }
+
+  // Run incremental A/B test analysis on accumulated experiment records
+  console.log(`\n📊 Running incremental A/B test analysis...`);
+  const experimentRecords = readExperimentRecords(vaultDir);
+  if (experimentRecords.length > 0) {
+    runAnalysis(experimentRecords);
+  } else {
+    console.log(`   No experiment records yet — analysis will begin after the first post.`);
+  }
 }
 
 // --- Entry Point ---

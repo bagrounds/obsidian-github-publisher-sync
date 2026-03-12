@@ -42,6 +42,7 @@ export {
   BLUESKY_MAX_LENGTH,
   MASTODON_MAX_LENGTH,
   DEFAULT_GEMINI_MODEL,
+  DEFAULT_QUESTION_MODEL,
   BLUESKY_OEMBED_INITIAL_DELAY_MS,
   BLUESKY_OEMBED_RETRY_DELAY_MS,
 } from "./lib/types.ts";
@@ -85,7 +86,47 @@ export {
 } from "./lib/embed-section.ts";
 
 // --- Re-exports: Gemini ---
-export { buildGeminiPrompt, generateTweetWithGemini } from "./lib/gemini.ts";
+export { buildGeminiPrompt, generateTweetWithGemini, parseRetryDelay, isRateLimitError } from "./lib/gemini.ts";
+
+// --- Re-exports: A/B Testing Experiment ---
+export type { VariantId, VariantWeight, ExperimentAssignment, ExperimentRecord, EngagementMetrics, ExperimentObservation } from "./lib/experiment.ts";
+export {
+  VARIANT_IDS,
+  DEFAULT_WEIGHTS,
+  EXPERIMENT_DATA_DIR,
+  selectVariant,
+  randomVariant,
+  createAssignment,
+  getVariantOverride,
+  resolveVariant,
+  formatAssignment,
+  validateWeights,
+  isVariantId,
+  buildRecordFileName,
+  writeExperimentRecord,
+  readExperimentRecords,
+  migrateExperimentRecords,
+} from "./lib/experiment.ts";
+
+// --- Re-exports: Versioned Prompts ---
+export type { PromptPair, PromptBuilder, PostAssembler, VariantConfig } from "./lib/prompts.ts";
+export { VARIANT_CONFIGS, PROMPT_VARIANTS, getPromptBuilder, getPostAssembler, buildPromptForVariant, assemblePostForVariant, parseVariantBOutput } from "./lib/prompts.ts";
+
+// --- Re-exports: Analytics ---
+export {
+  fetchMastodonMetrics,
+  fetchBlueskyMetrics,
+  totalEngagement,
+  engagementRate,
+  mean,
+  variance,
+  standardDeviation,
+  welchTTest,
+  approximatePValue,
+  analyzeExperiment,
+  formatExperimentSummary,
+} from "./lib/analytics.ts";
+export type { ExperimentSummary } from "./lib/analytics.ts";
 
 // --- Re-exports: Environment ---
 export { isPlatformDisabled, validateEnvironment, getYesterdayDate } from "./lib/env.ts";

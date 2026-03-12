@@ -75,6 +75,8 @@ export interface MastodonCredentials {
 export interface GeminiConfig {
   readonly apiKey: string;
   readonly model: string;
+  /** Model for generating discussion questions (variant B). Falls back to `model` if not set. */
+  readonly questionModel: string;
 }
 
 export interface ObsidianCredentials {
@@ -117,6 +119,7 @@ export const BLUESKY_MAX_LENGTH = 300;
 export const MASTODON_MAX_LENGTH = 500;
 
 export const DEFAULT_GEMINI_MODEL = "gemma-3-27b-it";
+export const DEFAULT_QUESTION_MODEL = "gemini-3.1-flash-lite-preview";
 
 export const BLUESKY_OEMBED_INITIAL_DELAY_MS = 0;
 export const BLUESKY_OEMBED_RETRY_DELAY_MS = 2_000;

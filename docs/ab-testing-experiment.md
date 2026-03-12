@@ -1,0 +1,255 @@
+# A/B Testing Social Media Post Prompts
+
+## Overview
+
+This document describes the A/B testing framework for social media post generation prompts. The system independently assigns each platform post one of two prompt variants (independent coin flip per platform), automatically persists experiment records to the Obsidian vault, and runs incremental statistical analysis on every pipeline execution.
+
+## Hypotheses
+
+Based on research into social media engagement on decentralized platforms (Mastodon, Bluesky):
+
+1. **H1 (Replies):** Posts with a concise discussion question will receive more replies than pure announcement-style posts.
+2. **H2 (Likes):** Posts with a discussion question will receive more likes/favorites than announcement posts.
+3. **H3 (Platform Effect):** The discussion question effect will be stronger on Mastodon (community-driven culture) than on Bluesky (broadcast-oriented).
+
+## Prompt Variants
+
+### Variant A (Control)
+The existing prompt style. Produces posts in this format:
+```
+Title with emojis
+
+📚 Topic1 | 🤖 Topic2 | 🧠 Topic3
+https://bagrounds.org/reflections/YYYY-MM-DD
+```
+
+### Variant B (Treatment)
+Adds a concise AI-generated discussion question — always a 2nd-person question designed to spark engagement. Never a statement, insight, or reflection:
+```
+Title with emojis
+
+#AI Q: 🤔 Ever trusted a machine more than your gut?
+
+📚 Topic1 | 🤖 Topic2
+https://bagrounds.org/reflections/YYYY-MM-DD
+```
+
+The `#AI Q: ` prefix is deliberately short (7 chars vs the original `🤖❓ AI Discussion Prompt: ` at 27 chars) to maximize the character budget for the actual question — every character counts on Bluesky's strict 300-grapheme limit.
+
+The question follows Strunk & White principles: minimal word count, no fake personality, no personal pronouns, no quotation marks or hyphens. It should be relatable, easy to answer with an opinion, and appropriate for a public forum.
+
+## Architecture
+
+### Module Structure
+
+```
+scripts/lib/
+├── experiment.ts     # Variant selection, assignment creation, record persistence
+├── prompts.ts        # Prompt builders + deterministic post assemblers per variant
+├── analytics.ts      # Engagement metric fetching + statistical analysis
+├── gemini.ts         # Dual-model AI calls + rate limit retry + deterministic assembly
+└── pipeline.ts       # Per-platform variant resolution, record writing
+
+scripts/
+├── auto-post.ts            # Runs incremental analysis after posting
+├── analyze-experiment.ts   # CLI: analyze experiment results
+└── fetch-metrics.ts        # CLI: fetch engagement from platforms
+
+vault/data/ab-test/         # Experiment records (auto-created, synced to Obsidian)
+```
+
+### Data Flow
+
+```
+auto-post.ts
+    ↓
+pipeline.ts
+    ↓ (for each platform independently)
+    resolveVariant() → "A" or "B"  (independent coin flip)
+    ↓
+    generateTweetWithGemini(reflection, ..., variant, questionModel)
+      ↓ Variant A: one model call (Gemma) → prompt A → tags
+      ↓ Variant B: two parallel model calls:
+      │   • Gemma → prompt A → tags (identical to A)
+      │   • Gemini 3.1 Flash Lite → prompt B → question
+      ↓ assemblePostForVariant() → deterministic template: title + creative + URL
+    ↓
+    post to platform (with fitPostToLimit per platform)
+    ↓
+    writeExperimentRecord(vaultDir, record)  → data/ab-test/{timestamp}_{platform}_{note}.json.md
+    ↓
+pushObsidianVault()  (records synced to Obsidian)
+    ↓
+auto-post.ts → readExperimentRecords() → runAnalysis()  (incremental)
+```
+
+### Dual-Model Architecture
+
+Different models are used for different creative tasks:
+
+| Task | Model | Rationale |
+|------|-------|-----------|
+| Topic tags (prompt A) | Gemma (`gemma-3-27b-it`) | Smaller, faster, sufficient for tag generation |
+| Discussion question (prompt B) | Gemini 3.1 Flash Lite (`gemini-3.1-flash-lite-preview`) | Higher rate limits, better question quality |
+
+**Configuration:**
+- `GEMINI_MODEL` — Model for tag generation (default: `gemma-3-27b-it`)
+- `GEMINI_QUESTION_MODEL` — Model for question generation (default: `gemini-3.1-flash-lite-preview`)
+
+Both use the same API key (`GEMINI_API_KEY`).
+
+### Rate Limit Handling
+
+When the API returns 429 (RESOURCE_EXHAUSTED), the retry logic:
+1. Parses the `retryDelay` from the error details (e.g. `"14s"`)
+2. Waits the specified duration before retrying
+3. Falls back to exponential backoff if no explicit delay is provided
+4. Retries up to 3 times per call
+
+This is especially important for the Gemma model which has lower rate limits.
+
+### Deterministic Post Assembly
+
+The model generates ONLY creative content. Everything deterministic is handled in code:
+
+| Component | Source | Variant A | Variant B |
+|-----------|--------|-----------|-----------|
+| Title | Code (from note metadata) | ✅ | ✅ |
+| Question | Model (prompt B, question-only) | — | ✅ (with `#AI Q: ` prefix added by code) |
+| Topic tags | Model (prompt A, reused for both) | ✅ | ✅ |
+| URL | Code (from note metadata) | ✅ | ✅ |
+| Formatting | Code (template string) | ✅ | ✅ |
+
+**Key design:** Variant B reuses prompt A for topic tags. This means when comparing A vs B for the same content, the only difference is the additional discussion question. Tags are identical.
+
+### Per-Platform Independent Coin Flips
+
+Each platform gets its own independent variant selection. For the same blog post, Bluesky might receive variant A (announcement) while Mastodon receives variant B (discussion question). This enables:
+
+- **Cross-platform comparison:** Same content, different variants, different platforms
+- **Richer data:** More observations per post
+- **Interaction detection:** Platform × variant effects (H3)
+
+### Automated Data Collection
+
+Experiment records are persisted as individual JSON files in `data/ab-test/` within the Obsidian vault. Files use `.json.md` extension so Obsidian sync handles them:
+
+```
+data/ab-test/
+├── 2026-03-10T17-00-00-000Z_mastodon_reflections_2026-03-10.json.md
+├── 2026-03-10T17-00-00-100Z_bluesky_reflections_2026-03-10.json.md
+└── ...
+```
+
+Records are written **before** the vault push, so they're automatically synced to Obsidian. Legacy `.json` files are automatically migrated to `.json.md` on the next pipeline run. The auto-post script runs incremental analysis after every posting run.
+
+### Platform Length Limits
+
+Each platform enforces its own character/grapheme limits via `fitPostToLimit()`:
+- **Twitter:** 280 characters (via `calculateTweetLength`)
+- **Bluesky:** 300 graphemes (via `countGraphemes`)
+- **Mastodon:** 500 characters
+
+Posts that exceed a platform's limit are progressively truncated through 5 strategies (in order):
+
+1. **Remove topic tags** from right to left (least expendable last)
+2. **Remove entire topic line** (and preceding blank line)
+3. **Strip subtitle from title** — remove everything after the first colon (e.g. "Prediction Machines: The Simple Economics of AI" → "Prediction Machines")
+4. **Remove title entirely** — the title appears in the URL preview and link card, so it's redundant
+5. **Truncate remaining content** with "…" as a last resort
+
+### Dynamic Character Budget
+
+Before asking the LLM to generate a discussion question, the prompt calculates how many characters are available given the title, URL, prefix, and tag overhead. This budget is communicated to the LLM in the prompt:
+
+```
+IMPORTANT: The question MUST be at most {maxChars} characters total (including the leading emoji). Keep it short!
+```
+
+If the assembled post still exceeds the strictest platform limit (Bluesky's 300 graphemes) after generation, the question is sent back to the LLM with an explicit request to shorten it by the required amount. This is a last-resort fallback — the character budget in the prompt should prevent most overages.
+
+### Stale Record Cleanup
+
+After each posting run, `cleanupStaleRecords()` checks each experiment record's `postUrl` for HTTP 404 status. Records whose posts have been deleted from the platform are automatically removed from the vault. This prevents stale records from polluting the experiment analysis.
+
+Only true 404s trigger deletion — network errors, timeouts, and other failures are treated conservatively (record kept).
+
+### Variant Selection
+
+- **Default:** 50/50 random split using `Math.random()`, independently per platform
+- **Override:** Set `AB_TEST_VARIANT=A` or `AB_TEST_VARIANT=B` in environment (forces all platforms)
+- **Deterministic testing:** `selectVariant(0.3, weights)` for reproducible tests
+
+### Statistical Analysis
+
+Uses **Welch's t-test** for comparing engagement between variants:
+- Handles unequal sample sizes and variances
+- Reports t-statistic, degrees of freedom, approximate p-value
+- Significance threshold: α = 0.05
+
+## Usage
+
+### Running the Pipeline (Automatic)
+
+The pipeline automatically selects variants, posts, logs records, and analyzes results:
+```bash
+npx tsx scripts/auto-post.ts
+```
+
+### Forcing a Variant
+
+```bash
+AB_TEST_VARIANT=A npx tsx scripts/auto-post.ts  # Always use control (all platforms)
+AB_TEST_VARIANT=B npx tsx scripts/auto-post.ts  # Always use treatment (all platforms)
+```
+
+### Analyzing Results from Vault
+
+```bash
+npx tsx scripts/analyze-experiment.ts --vault /path/to/vault
+```
+
+### Analyzing Results from Legacy JSON
+
+```bash
+npx tsx scripts/analyze-experiment.ts --data experiment-log.json
+```
+
+### Fetching Engagement Metrics
+
+```bash
+npx tsx scripts/fetch-metrics.ts --data experiment-log.json
+```
+
+## Experiment Record Format
+
+Each record is a standalone JSON file in `data/ab-test/`:
+
+```json
+{
+  "variant": "B",
+  "notePath": "reflections/2026-03-10.md",
+  "platform": "mastodon",
+  "timestamp": "2026-03-10T17:00:00.000Z",
+  "postUrl": "https://mastodon.social/@bagrounds/123456",
+  "postId": "123456"
+}
+```
+
+## Adding New Variants
+
+1. Define a new `PromptBuilder` and `PostAssembler` function in `prompts.ts`
+2. Add the variant to `VARIANT_CONFIGS` with a new key
+3. Update `VariantId` type in `experiment.ts` to include the new key
+4. Update `VARIANT_IDS` and `DEFAULT_WEIGHTS` accordingly
+
+## Test Coverage
+
+- **experiment.ts:** 57 tests — variant selection, assignment, override, validation, record persistence, migration (.json → .json.md), backward-compat reading, stale record cleanup (isUrl404, cleanupStaleRecords)
+- **prompts.ts:** 55 tests — prompt building, deterministic assembly, question-only prompt B, tag reuse, parser, registry completeness, purity, calculateQuestionBudget, stripSubtitle, buildShortenQuestionPrompt, AI_QUESTION_PREFIX
+- **text.ts:** 15 tests — grapheme counting, truncation, tweet length, progressive post fitting with 5 strategies (tag removal, topic line removal, subtitle stripping, title removal, content truncation)
+- **analytics.ts:** 32 tests — statistics, t-test, p-value, summary formatting
+- **gemini.ts:** 24 tests — parseRetryDelay (9 formats), isRateLimitError (8 cases), buildGeminiPrompt compat, dual-model config verification
+- **env.ts:** 2 tests — default question model, custom GEMINI_QUESTION_MODEL
+
+Total: 171 new tests (533 overall, all passing).

@@ -9,7 +9,7 @@
  */
 
 import type { EnvironmentConfig } from "./types.ts";
-import { DEFAULT_GEMINI_MODEL } from "./types.ts";
+import { DEFAULT_GEMINI_MODEL, DEFAULT_QUESTION_MODEL } from "./types.ts";
 
 /**
  * Check if a platform is explicitly disabled via an environment variable.
@@ -93,6 +93,7 @@ export function validateEnvironment(): EnvironmentConfig {
     gemini: {
       apiKey: process.env.GEMINI_API_KEY as string,
       model: process.env.GEMINI_MODEL || DEFAULT_GEMINI_MODEL,
+      questionModel: process.env.GEMINI_QUESTION_MODEL || DEFAULT_QUESTION_MODEL,
     },
     obsidian: {
       authToken: process.env.OBSIDIAN_AUTH_TOKEN as string,

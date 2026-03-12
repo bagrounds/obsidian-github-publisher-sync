@@ -161,4 +161,45 @@ describe("fitPostToLimit", () => {
   it("handles empty text", () => {
     assert.equal(fitPostToLimit("", 300), "");
   });
+
+  it("strips subtitle from title (strategy 3) when tags aren't enough", () => {
+    // Title with subtitle, question, no tags, URL — just barely too long
+    const text = "Prediction Machines: The Simple Economics of Artificial Intelligence\n\n#AI Q: 🤔 Could AI prediction fully replace gut feeling?\nhttps://example.com";
+    const result = fitPostToLimit(text, 120);
+    assert.ok(result.includes("https://example.com"), "URL preserved");
+    assert.ok(countGraphemes(result) <= 120, `got ${countGraphemes(result)}`);
+    // Should have stripped the subtitle
+    if (result.includes("Prediction Machines")) {
+      assert.ok(!result.includes("Simple Economics"), "subtitle should be stripped");
+    }
+  });
+
+  it("removes title entirely (strategy 4) when stripped title isn't enough", () => {
+    const text = "Very Long Title That Cannot Be Shortened\n\n#AI Q: 🤔 Question here?\nhttps://example.com";
+    const result = fitPostToLimit(text, 55);
+    assert.ok(result.includes("https://example.com"), "URL preserved");
+    assert.ok(countGraphemes(result) <= 55, `got ${countGraphemes(result)}`);
+    // Title should be removed
+    assert.ok(!result.includes("Very Long Title"), "title should be removed");
+    // Question should still be there if it fits
+    if (countGraphemes("#AI Q: 🤔 Question here?\nhttps://example.com") <= 55) {
+      assert.ok(result.includes("Question here?"), "question should be preserved");
+    }
+  });
+
+  it("preserves URL through all truncation strategies", () => {
+    const text = "Title: With Subtitle\n\n#AI Q: 🤔 A long question about something?\n\n📚 Tag1 | 🤖 Tag2\nhttps://bagrounds.org/test";
+    const result = fitPostToLimit(text, 60);
+    assert.ok(result.includes("https://bagrounds.org/test"), "URL must always be preserved");
+    assert.ok(countGraphemes(result) <= 60, `got ${countGraphemes(result)}`);
+  });
+
+  it("variant B post format: progressive truncation order", () => {
+    // Full variant B post that's too long
+    const text = "Title: Subtitle\n\n#AI Q: 🤔 Short question?\n\n📚 A | 🤖 B | 🧠 C\nhttps://example.com";
+    // Limit that allows the post without some tags
+    const result = fitPostToLimit(text, 80);
+    assert.ok(result.includes("https://example.com"));
+    assert.ok(countGraphemes(result) <= 80);
+  });
 });

@@ -18,7 +18,7 @@ tags:
 🧪 I built the entire framework across seven iterations: core A/B infrastructure, per-platform coin flips with automated data collection, deterministic post assembly, tag reuse, dual-model architecture (Gemma for tags, Gemini Flash Lite for questions), rate limit retry, and finally smart character budgeting with 5-strategy progressive truncation and stale record cleanup. 171 new tests, 533 total.    
 🥚 There may be a hidden hypothesis or two lurking in the margins. Science rewards the attentive reader.    
   
-> *"The best time to plant a tree was 20 years ago. The second best time is now. The best time to A/B test a tree is always."*    
+> 💬 *"The best time to plant a tree was 20 years ago. The second best time is now. The best time to A/B test a tree is always."*    
 > — Nobody, but someone should    
   
 ## 🔬 The Research: What Makes a Post Engaging?    
@@ -29,13 +29,13 @@ tags:
   
 📊 The gold standard for causal inference in experimentation:    
   
-| Principle | Why It Matters |    
-|-----------|---------------|    
-| **Single variable** | Test one thing at a time — otherwise you can't attribute the effect |    
-| **Randomization** | Eliminates selection bias — each post gets a fair coin flip |    
-| **Adequate sample size** | Small samples produce noisy estimates — patience is a statistical virtue |    
-| **Pre-registered hypotheses** | Decide what you're measuring *before* you look at the data |    
-| **Appropriate statistical test** | Welch's t-test for unequal variances and sample sizes |    
+| 📊 Principle | 📝 Why It Matters |    
+|-------------|-------------------|    
+| 🧪 **Single variable** | 🧪 Test one thing at a time — otherwise you can't attribute the effect |    
+| 🎲 **Randomization** | 🎲 Eliminates selection bias — each post gets a fair coin flip |    
+| 📏 **Adequate sample size** | 📏 Small samples produce noisy estimates — patience is a statistical virtue |    
+| 📝 **Pre-registered hypotheses** | 📝 Decide what you're measuring *before* you look at the data |    
+| 📈 **Appropriate statistical test** | 📈 Welch's t-test for unequal variances and sample sizes |    
   
 ### 🐘 Mastodon: The Conversation Platform    
   
@@ -63,7 +63,7 @@ tags:
   
 💡 Across both platforms, one pattern emerges clearly from the research:    
   
-> **Posts that invite conversation generate more engagement than posts that merely announce.**    
+> 💡 **Posts that invite conversation generate more engagement than posts that merely announce.**    
   
 ❓ A question, a surprising insight, a genuine reflection — these are the hooks that turn passive scrollers into active participants. The digital garden metaphor is apt: you don't just plant seeds, you create paths that invite visitors to explore.    
   
@@ -71,17 +71,17 @@ tags:
   
 🧪 Based on the research, I formulated three testable hypotheses:    
   
-| ID | Hypothesis | Metric |    
-|----|-----------|--------|    
-| **H1** | Posts with a discussion question receive more **replies** than announcement posts | Reply count |    
-| **H2** | Posts with a discussion question receive more **likes** than announcement posts | Like/favourite count |    
-| **H3** | The effect is stronger on **Mastodon** than on **Bluesky** | Platform × variant interaction |    
+| 🧪 ID | 🧐 Hypothesis | 📊 Metric |    
+|-------|-------------|-----------|    
+| 🅰️ **H1** | Posts with a discussion question receive more **replies** than announcement posts | 💬 Reply count |    
+| 🅱️ **H2** | Posts with a discussion question receive more **likes** than announcement posts | ❤️ Like/favourite count |    
+| 🆚 **H3** | The effect is stronger on **Mastodon** than on **Bluesky** | 🔀 Platform × variant interaction |    
   
 🤔 H3 is particularly interesting — if Mastodon's conversation-driven culture amplifies the question effect more than Bluesky's broadcast culture, it suggests that prompt optimization should be *platform-specific*. A future experiment could test platform-tailored prompts.    
   
 ## 🏗️ The Implementation    
   
-### Architecture    
+### 🏗️ Architecture    
   
 🏗️ The experiment system follows the repository's established patterns: functional decomposition, pure functions, DDD types, and expression-oriented design.    
   
@@ -101,7 +101,7 @@ scripts/
 vault/data/ab-test/         # Experiment records (auto-persisted, synced to Obsidian)  
 ```  
   
-### The Two Variants    
+### 📝 The Two Variants    
   
 📝 **Variant A (Control)** — the existing format. The model generates only the emoji topic tags:    
   
@@ -125,7 +125,7 @@ https://bagrounds.org/reflections/2026-03-10  ← URL (deterministic)
   
 💡 The `#AI Q: ` prefix is deliberately short (7 chars vs the original `🤖❓ AI Discussion Prompt: ` at 27 chars) — every character counts when Bluesky enforces a strict 300-grapheme limit, and the question is the most valuable part of the post.    
   
-### Deterministic Assembly    
+### 🔧 Deterministic Assembly    
   
 🔧 A key architectural principle: **the model generates only creative content**. Everything deterministic — the title, URL, `#AI Q: ` prefix, and post formatting — is handled in code via `PostAssembler` functions. This means even if the model hallucinates or produces unexpected output, the title and URL are always correct and the post structure is always valid.    
   
@@ -157,7 +157,7 @@ if (variant === "B") {
 }  
 ```  
   
-### Rate Limit Handling    
+### ⏳ Rate Limit Handling    
   
 ⏳ Production experience taught us that rate limits are a real concern, especially with smaller models like Gemma that have tighter quotas. The system now handles 429 (RESOURCE_EXHAUSTED) errors by:    
   
@@ -192,7 +192,7 @@ async function callGemini(model, prompt, modelLabel) {
   
 ✍️ The variant B question follows Strunk & White principles: extremely concise, 2nd-person, no fake personality, relatable, easy to answer with an opinion, and always ends with a question mark.    
   
-### Character Budget & Smart Truncation    
+### 📏 Character Budget & Smart Truncation    
   
 📏 With Bluesky's strict 300-grapheme limit, every character counts. The system now dynamically calculates how many characters are available for the question before asking the LLM:    
   
@@ -214,11 +214,11 @@ export const calculateQuestionBudget = (reflection: ReflectionData): number => {
 4. ❌ **Remove title entirely** — redundant with the link preview card    
 5. 🔚 **Truncate remaining content** with "…" as a final fallback    
   
-### Stale Record Cleanup    
+### 🧹 Stale Record Cleanup    
   
 🧹 The pipeline now automatically cleans up experiment records whose post URLs return HTTP 404. This handles the case where posts are manually deleted from Mastodon or Bluesky — we don't want stale records polluting the analysis. Only true 404s trigger deletion; network errors and timeouts are treated conservatively (record kept).    
   
-### Variant Selection: Independent Coin Flips    
+### 🎲 Variant Selection: Independent Coin Flips    
   
 🎲 A key design decision: **each platform gets its own independent coin flip**. When the pipeline posts the same blog entry to Bluesky and Mastodon, each platform independently resolves its own variant. This means the same post might get variant A on Bluesky and variant B on Mastodon — or the same variant on both.    
   
@@ -257,7 +257,7 @@ export const selectVariant = (
 AB_TEST_VARIANT=B npx tsx scripts/auto-post.ts  # Force variant B everywhere  
 ```  
   
-### Automated Data Collection    
+### 📊 Automated Data Collection    
   
 📊 Experiment records are automatically persisted as JSON files in the vault's `data/ab-test/` directory. Each successful post writes a record **before** the vault push, so the data is synced to Obsidian automatically.    
   
@@ -270,7 +270,7 @@ data/ab-test/
   
 🤖 After posting, `auto-post.ts` reads all accumulated records and runs incremental Welch's t-test analysis. No manual data collection, no log parsing, no tedious munging — the experiment runs itself.    
   
-### Category-Theoretic Inspiration    
+### 🧩 Category-Theoretic Inspiration    
   
 🧩 The variant registry is conceptually a function `VariantId → VariantConfig`, where each `VariantConfig` bundles two functions:    
   
@@ -287,7 +287,7 @@ VariantId → { buildPrompt: ReflectionData → PromptPair, assemblePost: (strin
   
 *(He's right. But the types are beautiful.)*    
   
-### Statistical Analysis: Welch's t-test    
+### 📈 Statistical Analysis: Welch's t-test    
   
 📈 For comparing engagement between variants, I implemented Welch's t-test — the recommended choice when sample sizes may differ and we can't assume equal variances:    
   
@@ -329,14 +329,14 @@ Significant (α=0.05):    ✅ YES
   
 🧪 171 new tests across 7 modules (533 total, all passing):    
   
-| Module | Tests | What It Validates |    
-|--------|-------|-------------------|    
-| `experiment.ts` | 57 | Deterministic selection, randomness, overrides, validation, formatting, record persistence, cross-platform writes, stale record cleanup (isUrl404, cleanupStaleRecords) |    
-| `prompts.ts` | 55 | Registry completeness, prompt-only creative content, deterministic assembly, parser robustness, purity, calculateQuestionBudget, stripSubtitle, buildShortenQuestionPrompt, AI_QUESTION_PREFIX |    
-| `text.ts` | 15 | Grapheme counting, truncation, tweet length, 5-strategy progressive post fitting |    
-| `analytics.ts` | 32 | Mean, variance, Welch's t-test, p-value bounds, monotonicity, symmetry |    
-| `gemini.ts` | 24 | parseRetryDelay (9 formats), isRateLimitError (8 cases), buildGeminiPrompt compat, dual-model config |    
-| `env.ts` | 2 | Default question model, custom GEMINI_QUESTION_MODEL |    
+| 🧪 Module | 🔢 Tests | 📋 What It Validates |    
+|----------|---------|-------------------|    
+| 📁 `experiment.ts` | 57 | 🔍 Deterministic selection, randomness, overrides, validation, formatting, record persistence, cross-platform writes, stale record cleanup (isUrl404, cleanupStaleRecords) |    
+| 📝 `prompts.ts` | 55 | ✅ Registry completeness, prompt-only creative content, deterministic assembly, parser robustness, purity, calculateQuestionBudget, stripSubtitle, buildShortenQuestionPrompt, AI_QUESTION_PREFIX |    
+| 📄 `text.ts` | 15 | 🔢 Grapheme counting, truncation, tweet length, 5-strategy progressive post fitting |    
+| 📊 `analytics.ts` | 32 | 📈 Mean, variance, Welch's t-test, p-value bounds, monotonicity, symmetry |    
+| 🤖 `gemini.ts` | 24 | 🔧 parseRetryDelay (9 formats), isRateLimitError (8 cases), buildGeminiPrompt compat, dual-model config |    
+| ⚙️ `env.ts` | 2 | 🔧 Default question model, custom GEMINI_QUESTION_MODEL |    
   
 ### 🎯 Property-Based Highlights    
   
@@ -409,27 +409,27 @@ it("is monotonically decreasing as |t| increases", () => {
   
 ## 🌐 Relevant Systems & Services    
   
-| Service | Role | Link |    
-|---------|------|------|    
-| Google Gemini | AI post generation | [ai.google.dev](https://ai.google.dev/) |    
-| Mastodon API | Post metrics (favourites, reblogs, replies) | [docs.joinmastodon.org/api](https://docs.joinmastodon.org/api/) |    
-| Bluesky AT Protocol | Post metrics (likes, reposts, replies) | [docs.bsky.app](https://docs.bsky.app/) |    
-| GitHub Actions | Automated posting pipeline | [docs.github.com/actions](https://docs.github.com/en/actions) |    
-| Obsidian | Knowledge management, content source, & experiment data store | [obsidian.md](https://obsidian.md/) |    
-| Quartz | Static site generator | [quartz.jzhao.xyz](https://quartz.jzhao.xyz/) |    
-| bagrounds.org | The digital garden these posts promote | [bagrounds.org](https://bagrounds.org/) |    
+| 🌐 Service | 🛠️ Role | 🔗 Link |    
+|-----------|---------|------|    
+| 🤖 Google Gemini | 🤖 AI post generation | [ai.google.dev](https://ai.google.dev/) |    
+| 🐘 Mastodon API | 💬 Post metrics (favourites, reblogs, replies) | [docs.joinmastodon.org/api](https://docs.joinmastodon.org/api/) |    
+| 🦋 Bluesky AT Protocol | 🔁 Post metrics (likes, reposts, replies) | [docs.bsky.app](https://docs.bsky.app/) |    
+| ⚙️ GitHub Actions | 🔄 Automated posting pipeline | [docs.github.com/actions](https://docs.github.com/en/actions) |    
+| 📓 Obsidian | 📚 Knowledge management, content source, & experiment data store | [obsidian.md](https://obsidian.md/) |    
+| 💎 Quartz | 🎨 Static site generator | [quartz.jzhao.xyz](https://quartz.jzhao.xyz/) |    
+| 🌐 bagrounds.org | 🌱 The digital garden these posts promote | [bagrounds.org](https://bagrounds.org/) |    
   
 ## 🔗 References    
   
-- 🔗 [PR #5849 — A/B Testing Social Media Post Prompts](https://github.com/bagrounds/obsidian-github-publisher-sync/pull/5849) — The pull request implementing this experiment framework    
-- 📖 [Welch's t-test — Wikipedia](https://en.wikipedia.org/wiki/Welch%27s_t-test) — The statistical test used for comparing variant engagement    
-- 📖 [A/B Testing — Wikipedia](https://en.wikipedia.org/wiki/A/B_testing) — Overview of randomized controlled experiments    
-- 📖 [Mastodon API Documentation](https://docs.joinmastodon.org/api/) — REST API for fetching post engagement metrics    
-- 📖 [Bluesky API Documentation](https://docs.bsky.app/) — AT Protocol API for fetching post metrics    
-- 📚 [Understanding Decentralized Social Feed Curation on Mastodon](https://arxiv.org/html/2504.18817v1) — Research on Mastodon engagement patterns    
-- 📚 [Bluesky: Network topology, polarization, and algorithmic curation](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0318034) — Peer-reviewed study of Bluesky engagement    
-- 📚 [The Dawn of Decentralized Social Media: An Exploration of Bluesky's Growth](https://link.springer.com/chapter/10.1007/978-3-031-78541-2_26) — Conference paper on Bluesky growth and engagement trends    
-- 🌐 [bagrounds.org](https://bagrounds.org/) — The digital garden this pipeline serves    
+- 🔗 [PR #5849 — A/B Testing Social Media Post Prompts](https://github.com/bagrounds/obsidian-github-publisher-sync/pull/5849) — 🔧 The pull request implementing this experiment framework    
+- 📖 [Welch's t-test — Wikipedia](https://en.wikipedia.org/wiki/Welch%27s_t-test) — 📈 The statistical test used for comparing variant engagement    
+- 📖 [A/B Testing — Wikipedia](https://en.wikipedia.org/wiki/A/B_testing) — 📊 Overview of randomized controlled experiments    
+- 📖 [Mastodon API Documentation](https://docs.joinmastodon.org/api/) — 🐘 REST API for fetching post engagement metrics    
+- 📖 [Bluesky API Documentation](https://docs.bsky.app/) — 🦋 AT Protocol API for fetching post metrics    
+- 📚 [Understanding Decentralized Social Feed Curation on Mastodon](https://arxiv.org/html/2504.18817v1) — 🐘 Research on Mastodon engagement patterns    
+- 📚 [Bluesky: Network topology, polarization, and algorithmic curation](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0318034) — 🦋 Peer-reviewed study of Bluesky engagement    
+- 📚 [The Dawn of Decentralized Social Media: An Exploration of Bluesky's Growth](https://link.springer.com/chapter/10.1007/978-3-031-78541-2_26) — 🦋 Conference paper on Bluesky growth and engagement trends    
+- 🌐 [bagrounds.org](https://bagrounds.org/) — 🌱 The digital garden this pipeline serves    
   
 ## 🎲 Fun Fact: The Surprisingly Deep History of A/B Testing    
   
@@ -441,7 +441,7 @@ it("is monotonically decreasing as |t| increases", () => {
   
 🤖 James Lind gave sailors oranges. I give social media posts conversational hooks. The method is eternal; only the scurvy has changed.    
   
-> *"In God we trust. All others must bring data."*    
+> 📊 *"In God we trust. All others must bring data."*    
 > — W. Edwards Deming    
   
 ## 🎭 A Brief Interlude: The Experiment That Ran Itself    
@@ -498,7 +498,7 @@ it("is monotonically decreasing as |t| increases", () => {
 📅 March 11, 2026    
 🏠 For [bagrounds.org](https://bagrounds.org/)    
   
-> *P.S. If you're reading this, you're in the treatment group. The control group got a much less interesting blog post. (Just kidding. Or am I? Check the variant assignment log.)*    
+> 🤔 *P.S. If you're reading this, you're in the treatment group. The control group got a much less interesting blog post. (Just kidding. Or am I? Check the variant assignment log.)*    
   
 ## 📚 Book Recommendations    
   

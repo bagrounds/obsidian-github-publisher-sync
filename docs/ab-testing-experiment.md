@@ -43,9 +43,9 @@ The question follows Strunk & White principles: minimal word count, no fake pers
 ```
 scripts/lib/
 ├── experiment.ts     # Variant selection, assignment creation, record persistence
-├── prompts.ts        # Versioned prompt builders (A → control, B → treatment)
+├── prompts.ts        # Prompt builders + deterministic post assemblers per variant
 ├── analytics.ts      # Engagement metric fetching + statistical analysis
-├── gemini.ts         # Accepts variant parameter, delegates to prompt registry
+├── gemini.ts         # Calls model for creative parts, then assembles post deterministically
 └── pipeline.ts       # Per-platform variant resolution, record writing
 
 scripts/
@@ -66,6 +66,9 @@ pipeline.ts
     resolveVariant() → "A" or "B"  (independent coin flip)
     ↓
     generateTweetWithGemini(reflection, ..., variant)
+      ↓ buildPromptForVariant() → asks model for ONLY creative parts
+      ↓ model returns: tags (A) or question + tags (B)
+      ↓ assemblePostForVariant() → deterministic template: title + creative + URL
     ↓
     post to platform
     ↓
@@ -75,6 +78,18 @@ pushObsidianVault()  (records synced to Obsidian)
     ↓
 auto-post.ts → readExperimentRecords() → runAnalysis()  (incremental)
 ```
+
+### Deterministic Post Assembly
+
+The model generates ONLY creative content. Everything deterministic is handled in code:
+
+| Component | Source | Variant A | Variant B |
+|-----------|--------|-----------|-----------|
+| Title | Code (from note metadata) | ✅ | ✅ |
+| Question | Model output | — | ✅ (with `🤖❓` prefix added by code) |
+| Topic tags | Model output | ✅ | ✅ |
+| URL | Code (from note metadata) | ✅ | ✅ |
+| Formatting | Code (template string) | ✅ | ✅ |
 
 ### Per-Platform Independent Coin Flips
 
@@ -161,15 +176,15 @@ Each record is a standalone JSON file in `data/ab-test/`:
 
 ## Adding New Variants
 
-1. Define a new `PromptBuilder` function in `prompts.ts`
-2. Add the variant to `PROMPT_VARIANTS` with a new key
+1. Define a new `PromptBuilder` and `PostAssembler` function in `prompts.ts`
+2. Add the variant to `VARIANT_CONFIGS` with a new key
 3. Update `VariantId` type in `experiment.ts` to include the new key
 4. Update `VARIANT_IDS` and `DEFAULT_WEIGHTS` accordingly
 
 ## Test Coverage
 
 - **experiment.ts:** 45 tests — variant selection, assignment, override, validation, record persistence
-- **prompts.ts:** 18 tests — prompt building, registry completeness, question format, topic tag quality, purity
+- **prompts.ts:** 35 tests — prompt building, deterministic assembly, parser, registry completeness, purity
 - **analytics.ts:** 32 tests — statistics, t-test, p-value, summary formatting
 
-Total: 95 new tests (458 overall, all passing).
+Total: 112 new tests (475 overall, all passing).

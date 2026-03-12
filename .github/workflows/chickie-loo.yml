@@ -5,6 +5,9 @@ on:
     - cron: "0 15 * * *"
   workflow_dispatch: {}
 
+env:
+  TZ: America/Los_Angeles
+
 permissions:
   contents: read
   discussions: read
@@ -55,7 +58,7 @@ jobs:
           OBSIDIAN_VAULT_NAME: ${{ secrets.OBSIDIAN_VAULT_NAME }}
           OBSIDIAN_VAULT_CACHE_DIR: /tmp/obsidian-vault-cache
         run: |
-          POST=$(ls -1 chickie-loo/$(TZ=America/Los_Angeles date +%Y-%m-%d)*.md 2>/dev/null | head -1)
+          POST=$(ls -1 chickie-loo/$(date +%Y-%m-%d)*.md 2>/dev/null | head -1)
           if [ -n "$POST" ]; then
             npx tsx scripts/sync-file-to-obsidian.ts "$POST" "$POST"
           else

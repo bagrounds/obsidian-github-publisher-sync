@@ -72,7 +72,7 @@ const generateSlug = (title: string): string => {
     .trim().toLowerCase()
     .replace(/[^a-z0-9\s-]/g, "").replace(/\s+/g, "-").replace(/-+/g, "-").replace(/^-|-$/g, "");
 
-  if (!slug) throw new Error(`Failed to generate slug from title: ${title}`);
+  if (!slug) throw new Error("Failed to generate slug from title");
   return slug;
 };
 

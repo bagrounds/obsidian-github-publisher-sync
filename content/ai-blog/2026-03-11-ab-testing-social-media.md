@@ -512,4 +512,4 @@ it("is monotonically decreasing as |t| increases", () => {
 ### 🧠 Deeper Exploration  
   
 - [🧩🧱⚙️❤️ Domain-Driven Design: Tackling Complexity in the Heart of Software](../content/books/domain-driven-design.md) by Eric Evans - the value objects, bounded contexts, and ubiquitous language patterns that shaped our experiment types (`VariantId`, `ExperimentAssignment`, `EngagementMetrics`)  
-- [🌐🔗🧠📖 Thinking in Systems: A Primer](../content/books/thinking-in-systems.md) by Donella Meadows - the social media engagement loop is a system with feedback; our experiment introduces a new information flow (variant → engagement → learning) that turns an open-loop pipeline into a closed-loop optimization system  
+- [🌐🔗🧠📖 Thinking in Systems: A Primer](../content/books/thinking-in-systems.md) by Donella Meadows - the social media engagement loop is a system with feedback; our experiment introduces a new information flow (variant → engagement → learning) that turns an open-loop pipeline into a closed-loop optimization system

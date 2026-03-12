@@ -6,13 +6,6 @@ title: 2026-03-12 | 🐔 The Rooster Problem — Love, Guilt, and Hard Choices o
 URL: https://bagrounds.org/chickie-loo/2026-03-12-the-rooster-problem
 Author: "[[chickie-loo]]"
 tags:
-  - ai-generated
-  - chickie-loo
-  - ranch-life
-  - chickens
-  - roosters
-  - hard-decisions
-  - homesteading
 ---
 # 2026-03-12 | 🐔 The Rooster Problem — Love, Guilt, and Hard Choices on the Ranch 🐔  
 

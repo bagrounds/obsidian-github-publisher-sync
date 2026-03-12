@@ -3,9 +3,13 @@
  *
  * Each variant defines two pure functions:
  * 1. A prompt builder that asks the AI for ONLY the creative parts
- *    (topic tags, and for variant B also a discussion question).
+ *    (topic tags for variant A; question only for variant B).
  * 2. A post assembler that deterministically injects the creative
  *    output into a template string alongside the title and URL.
+ *
+ * Variant B reuses prompt A for tags — the model is called twice:
+ * once for tags (prompt A) and once for question (prompt B).
+ * This ensures the only difference between A and B is the question.
  *
  * This separation ensures reliability: the title, URL, and structural
  * formatting are never left to the model — only the creative content.
@@ -126,51 +130,49 @@ const assemblePostA: PostAssembler = (modelOutput: string, reflection: Reflectio
 // --- Variant B: Treatment (Discussion Question) ---
 
 /**
- * Variant B prompt: asks the model for a discussion question AND emoji topic tags.
- * Returns two lines: the question, then the tags. Title and URL are NOT generated.
+ * Variant B prompt: asks the model for ONLY a discussion question.
+ * Tags are generated separately using prompt A (reused), ensuring the
+ * only difference between A and B posts is the additional question.
+ *
+ * Returns a SINGLE line: the question. No tags, no title, no URL.
  */
 const buildPromptB: PromptBuilder = (reflection: ReflectionData): PromptPair => {
-  const system = `You generate two components for a social media post about a blog entry from bagrounds.org.
-Return ONLY two lines. Nothing else — no title, no URL, no commentary, no labels.
+  const system = `You generate a discussion question for a social media post about a blog entry from bagrounds.org.
+Return ONLY a single line — the question. Nothing else — no title, no URL, no commentary, no tags, no labels.
 
-LINE 1 — DISCUSSION QUESTION:
 Write a single, extremely concise question. Do not use any personal pronouns — the brief question should be 100% 2nd person. The goal of the question is to attract discussion engagement on a social media post about this content. It should be relatable and easy to answer with an opinion. Minimize word count and don't try to fake personality. Think Strunk and White for concision. Use fewer words. Never explicitly ask what's obvious implicitly (e.g. we are asking what they think, so we don't have to use the words "what do you think"). Never use quotation marks or hyphens. Be careful not to ask questions that are too personal. People should want to answer the question in a public forum. Also, the question should try to be relevant to the content but novel and interesting. Start the question with a single emoji. The question MUST end with a question mark.
 
-LINE 2 — EMOJI TOPIC TAGS:
-${TOPIC_TAGS_INSTRUCTIONS}
-
-Example output (exactly 2 lines):
+Example output (exactly 1 line):
 🤔 Ever trusted a machine more than your gut?
-📚 Sci-Fi | 🤖 AGI | 🌌 Futures
 
 Another example:
-📖 Best book from childhood still worth rereading?
-🕸️ Fables | 🧸 Children's Lit`;
+📖 Best book from childhood still worth rereading?`;
 
-  const user = `Generate a discussion question and emoji topic tags for this page:
+  const user = `Generate a discussion question for this page:
 
 Title: ${reflection.title}
 URL: ${reflection.url}
 Date: ${reflection.date}
 
 Content:
-${reflection.body.slice(0, 1500)}`;
+${reflection.body}`;
 
   return { system, user };
 };
 
 /**
- * Parse the model's two-line output into question and tags.
+ * Parse the model's output for variant B.
+ * Now expects a single line (question only) since tags come from prompt A.
  * Robust: handles extra whitespace, blank lines, and edge cases.
  */
 export const parseVariantBOutput = (modelOutput: string): { question: string; tags: string } => {
   const lines = modelOutput.trim().split("\n").filter((l) => l.trim().length > 0);
 
   if (lines.length >= 2) {
+    // Backward compat: if model returns two lines, first is question, second is tags
     return { question: lines[0]!.trim(), tags: lines[1]!.trim() };
   }
   if (lines.length === 1) {
-    // Only got one line — treat as question with fallback tags
     return { question: lines[0]!.trim(), tags: "" };
   }
   return { question: "", tags: "" };

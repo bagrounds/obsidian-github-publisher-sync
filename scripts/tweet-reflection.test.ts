@@ -551,7 +551,7 @@ describe("buildGeminiPrompt", () => {
     assert.ok(system.includes("300"), "should mention 300-char constraint for keeping tags short");
   });
 
-  test("truncates long body content", () => {
+  test("passes full body content without truncation", () => {
     const longBody = "x".repeat(5000);
     const reflection: ReflectionData = {
       date: "2026-03-01",
@@ -563,7 +563,7 @@ describe("buildGeminiPrompt", () => {
       hasBlueskySection: false,
     };
     const { user } = buildGeminiPrompt(reflection);
-    assert.ok(user.length < longBody.length);
+    assert.ok(user.includes(longBody), "should include full body content");
   });
 });
 

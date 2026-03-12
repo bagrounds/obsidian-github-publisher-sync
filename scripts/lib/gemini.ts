@@ -5,6 +5,11 @@
  * Deterministic parts (title, URL, formatting) are assembled in code via
  * the variant's PostAssembler from prompts.ts.
  *
+ * For variant B, two model calls are made:
+ * 1. Tags via prompt A (reused — ensures same tags for both variants)
+ * 2. Question via prompt B (question-only)
+ * This guarantees the only difference between A and B is the added question.
+ *
  * Supports A/B testing via variant-aware prompt selection:
  * the prompt is determined by a VariantId, looked up from
  * the versioned prompt registry in prompts.ts.
@@ -30,11 +35,35 @@ export function buildGeminiPrompt(reflection: ReflectionData): PromptPair {
 }
 
 /**
+ * Call the Gemini model with a prompt and return the trimmed text output.
+ * Pure helper — no assembly or validation.
+ */
+async function callGemini(
+  model: { generateContent: (req: unknown) => Promise<{ response: { text: () => string } }> },
+  prompt: PromptPair,
+): Promise<string> {
+  const result = await model.generateContent({
+    contents: [
+      {
+        role: "user",
+        parts: [{ text: `${prompt.system}\n\n${prompt.user}` }],
+      },
+    ],
+  });
+  return result.response.text().trim();
+}
+
+/**
  * Generate post text using Google Gemini API.
  *
  * The model generates ONLY creative parts (topic tags, question).
  * The assembler deterministically injects them into the final post
  * alongside the title and URL.
+ *
+ * For variant B, two calls are made:
+ * 1. Tags via prompt A (same tags as an A post would get)
+ * 2. Question via prompt B (question-only)
+ * The outputs are combined for the assembler.
  *
  * Returns validated text within Twitter's character limit.
  */
@@ -48,18 +77,25 @@ export async function generateTweetWithGemini(
   const genAI = new GoogleGenerativeAI(apiKey);
   const model = genAI.getGenerativeModel({ model: modelName });
 
-  const prompt = buildPromptForVariant(variant, reflection);
+  let modelOutput: string;
 
-  const result = await model.generateContent({
-    contents: [
-      {
-        role: "user",
-        parts: [{ text: `${prompt.system}\n\n${prompt.user}` }],
-      },
-    ],
-  });
+  if (variant === "B") {
+    // Variant B: two calls — reuse prompt A for tags, prompt B for question only
+    const tagsPrompt = buildPromptForVariant("A", reflection);
+    const questionPrompt = buildPromptForVariant("B", reflection);
 
-  const modelOutput = result.response.text().trim();
+    const [tags, question] = await Promise.all([
+      callGemini(model, tagsPrompt),
+      callGemini(model, questionPrompt),
+    ]);
+
+    // Combine as "question\ntags" for the assembler's parseVariantBOutput
+    modelOutput = `${question}\n${tags}`;
+  } else {
+    // Variant A: single call for tags
+    const prompt = buildPromptForVariant(variant, reflection);
+    modelOutput = await callGemini(model, prompt);
+  }
 
   // Assemble the final post deterministically from creative parts + title/URL
   const text = assemblePostForVariant(variant, modelOutput, reflection);

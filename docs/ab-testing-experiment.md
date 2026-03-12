@@ -66,8 +66,8 @@ pipeline.ts
     resolveVariant() → "A" or "B"  (independent coin flip)
     ↓
     generateTweetWithGemini(reflection, ..., variant)
-      ↓ buildPromptForVariant() → asks model for ONLY creative parts
-      ↓ model returns: tags (A) or question + tags (B)
+      ↓ Variant A: one model call → prompt A → tags
+      ↓ Variant B: two model calls → prompt A → tags, prompt B → question
       ↓ assemblePostForVariant() → deterministic template: title + creative + URL
     ↓
     post to platform
@@ -86,10 +86,12 @@ The model generates ONLY creative content. Everything deterministic is handled i
 | Component | Source | Variant A | Variant B |
 |-----------|--------|-----------|-----------|
 | Title | Code (from note metadata) | ✅ | ✅ |
-| Question | Model output | — | ✅ (with `🤖❓` prefix added by code) |
-| Topic tags | Model output | ✅ | ✅ |
+| Question | Model (prompt B, question-only) | — | ✅ (with `🤖❓` prefix added by code) |
+| Topic tags | Model (prompt A, reused for both) | ✅ | ✅ |
 | URL | Code (from note metadata) | ✅ | ✅ |
 | Formatting | Code (template string) | ✅ | ✅ |
+
+**Key design:** Variant B reuses prompt A for topic tags. This means when comparing A vs B for the same content, the only difference is the additional discussion question. Tags are identical.
 
 ### Per-Platform Independent Coin Flips
 
@@ -184,7 +186,7 @@ Each record is a standalone JSON file in `data/ab-test/`:
 ## Test Coverage
 
 - **experiment.ts:** 45 tests — variant selection, assignment, override, validation, record persistence
-- **prompts.ts:** 35 tests — prompt building, deterministic assembly, parser, registry completeness, purity
+- **prompts.ts:** 36 tests — prompt building, deterministic assembly, question-only prompt B, tag reuse, parser, registry completeness, purity
 - **analytics.ts:** 32 tests — statistics, t-test, p-value, summary formatting
 
-Total: 112 new tests (475 overall, all passing).
+Total: 113 new tests (476 overall, all passing).

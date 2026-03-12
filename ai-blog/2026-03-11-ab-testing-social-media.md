@@ -82,11 +82,11 @@ Based on the research, I formulated three testable hypotheses:
 
 | ID | Hypothesis | Metric |  
 |----|-----------|--------|  
-| **H1** | Posts with a conversational hook receive more **replies** than announcement posts | Reply count |  
-| **H2** | Posts with a conversational hook receive more **likes** than announcement posts | Like/favourite count |  
+| **H1** | Posts with a discussion question receive more **replies** than announcement posts | Reply count |  
+| **H2** | Posts with a discussion question receive more **likes** than announcement posts | Like/favourite count |  
 | **H3** | The effect is stronger on **Mastodon** than on **Bluesky** | Platform × variant interaction |  
 
-H3 is particularly interesting — if Mastodon's conversation-driven culture amplifies the hook effect more than Bluesky's broadcast culture, it suggests that prompt optimization should be *platform-specific*. A future experiment could test platform-tailored prompts.  
+H3 is particularly interesting — if Mastodon's conversation-driven culture amplifies the question effect more than Bluesky's broadcast culture, it suggests that prompt optimization should be *platform-specific*. A future experiment could test platform-tailored prompts.  
 
 ## 🏗️ The Implementation  
 
@@ -121,18 +121,18 @@ vault/data/ab-test/         # Experiment records (auto-persisted, synced to Obsi
 https://bagrounds.org/reflections/2026-03-10
 ```
 
-**Variant B (Treatment)** — adds a conversational hook:  
+**Variant B (Treatment)** — adds a concise AI-generated discussion question (always a question, never a statement or insight):  
 
 ```
 2026-03-10 | 🧪 Test Reflection 📚
 
-What happens when you A/B test the voice of a robot?
+🤖❓ AI Discussion Prompt: 🤔 Ever A/B tested the voice of a robot?
 
 📚 Books | 🤖 AI
 https://bagrounds.org/reflections/2026-03-10
 ```
 
-The key difference: Variant B instructs the AI to generate a brief, thought-provoking question or insight drawn from the content. It's authentic, specific, and conversation-starting — exactly what the research says works on decentralized platforms.  
+The key difference: Variant B instructs the AI to generate a single, extremely concise 2nd-person question drawn from the content. The question follows Strunk & White principles — minimal word count, no fake personality, relatable, and easy to answer with an opinion. It's prefixed with `🤖❓ AI Discussion Prompt:` to signal its AI-generated nature transparently.  
 
 ### Variant Selection: Independent Coin Flips  
 

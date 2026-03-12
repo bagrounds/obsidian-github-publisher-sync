@@ -107,8 +107,8 @@ export {
 } from "./lib/experiment.ts";
 
 // --- Re-exports: Versioned Prompts ---
-export type { PromptPair, PromptBuilder } from "./lib/prompts.ts";
-export { PROMPT_VARIANTS, getPromptBuilder, buildPromptForVariant } from "./lib/prompts.ts";
+export type { PromptPair, PromptBuilder, PostAssembler, VariantConfig } from "./lib/prompts.ts";
+export { VARIANT_CONFIGS, PROMPT_VARIANTS, getPromptBuilder, getPostAssembler, buildPromptForVariant, assemblePostForVariant, parseVariantBOutput } from "./lib/prompts.ts";
 
 // --- Re-exports: Analytics ---
 export {

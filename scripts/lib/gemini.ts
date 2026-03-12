@@ -1,8 +1,9 @@
 /**
  * AI text generation via Google Gemini.
  *
- * Encapsulates the prompt construction and API interaction
- * for generating social media post text.
+ * The model generates ONLY creative content (topic tags, discussion questions).
+ * Deterministic parts (title, URL, formatting) are assembled in code via
+ * the variant's PostAssembler from prompts.ts.
  *
  * Supports A/B testing via variant-aware prompt selection:
  * the prompt is determined by a VariantId, looked up from
@@ -15,7 +16,7 @@ import type { ReflectionData } from "./types.ts";
 import type { VariantId } from "./experiment.ts";
 import { validateTweetLength } from "./text.ts";
 import { DEFAULT_GEMINI_MODEL } from "./types.ts";
-import { buildPromptForVariant, type PromptPair } from "./prompts.ts";
+import { buildPromptForVariant, assemblePostForVariant, type PromptPair } from "./prompts.ts";
 
 /**
  * Build the prompt for Gemini to generate a social media post.
@@ -30,10 +31,12 @@ export function buildGeminiPrompt(reflection: ReflectionData): PromptPair {
 
 /**
  * Generate post text using Google Gemini API.
- * Returns validated text within Twitter's character limit.
  *
- * When a variant is specified, uses the corresponding prompt from the
- * versioned prompt registry. Defaults to variant "A" (the control).
+ * The model generates ONLY creative parts (topic tags, question).
+ * The assembler deterministically injects them into the final post
+ * alongside the title and URL.
+ *
+ * Returns validated text within Twitter's character limit.
  */
 export async function generateTweetWithGemini(
   reflection: ReflectionData,
@@ -56,7 +59,10 @@ export async function generateTweetWithGemini(
     ],
   });
 
-  const text = result.response.text().trim();
+  const modelOutput = result.response.text().trim();
+
+  // Assemble the final post deterministically from creative parts + title/URL
+  const text = assemblePostForVariant(variant, modelOutput, reflection);
 
   const { valid, length } = validateTweetLength(text);
   if (!valid) {

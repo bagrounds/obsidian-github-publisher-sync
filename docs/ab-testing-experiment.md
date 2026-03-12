@@ -8,9 +8,9 @@ This document describes the A/B testing framework for social media post generati
 
 Based on research into social media engagement on decentralized platforms (Mastodon, Bluesky):
 
-1. **H1 (Replies):** Posts with a conversational hook (question or insight) will receive more replies than pure announcement-style posts.
-2. **H2 (Likes):** Posts with a conversational hook will receive more likes/favorites than announcement posts.
-3. **H3 (Platform Effect):** The conversational hook effect will be stronger on Mastodon (community-driven culture) than on Bluesky (broadcast-oriented).
+1. **H1 (Replies):** Posts with a concise discussion question will receive more replies than pure announcement-style posts.
+2. **H2 (Likes):** Posts with a discussion question will receive more likes/favorites than announcement posts.
+3. **H3 (Platform Effect):** The discussion question effect will be stronger on Mastodon (community-driven culture) than on Bluesky (broadcast-oriented).
 
 ## Prompt Variants
 
@@ -24,15 +24,17 @@ https://bagrounds.org/reflections/YYYY-MM-DD
 ```
 
 ### Variant B (Treatment)
-Adds a conversational hook — a thought-provoking question or genuine insight drawn from the content:
+Adds a concise AI-generated discussion question — always a 2nd-person question designed to spark engagement. Never a statement, insight, or reflection:
 ```
 Title with emojis
 
-What happens when an AI learns to lie about its own existence?
+🤖❓ AI Discussion Prompt: 🤔 Ever trusted a machine more than your gut?
 
 📚 Topic1 | 🤖 Topic2
 https://bagrounds.org/reflections/YYYY-MM-DD
 ```
+
+The question follows Strunk & White principles: minimal word count, no fake personality, no personal pronouns, no quotation marks or hyphens. It should be relatable, easy to answer with an opinion, and appropriate for a public forum.
 
 ## Architecture
 
@@ -76,7 +78,7 @@ auto-post.ts → readExperimentRecords() → runAnalysis()  (incremental)
 
 ### Per-Platform Independent Coin Flips
 
-Each platform gets its own independent variant selection. For the same blog post, Bluesky might receive variant A (announcement) while Mastodon receives variant B (conversational hook). This enables:
+Each platform gets its own independent variant selection. For the same blog post, Bluesky might receive variant A (announcement) while Mastodon receives variant B (discussion question). This enables:
 
 - **Cross-platform comparison:** Same content, different variants, different platforms
 - **Richer data:** More observations per post
@@ -167,7 +169,7 @@ Each record is a standalone JSON file in `data/ab-test/`:
 ## Test Coverage
 
 - **experiment.ts:** 45 tests — variant selection, assignment, override, validation, record persistence
-- **prompts.ts:** 15 tests — prompt building, registry completeness, purity
+- **prompts.ts:** 18 tests — prompt building, registry completeness, question format, topic tag quality, purity
 - **analytics.ts:** 32 tests — statistics, t-test, p-value, summary formatting
 
-Total: 92 new tests (453 overall, all passing).
+Total: 95 new tests (458 overall, all passing).

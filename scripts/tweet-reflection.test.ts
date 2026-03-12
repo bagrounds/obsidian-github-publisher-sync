@@ -516,7 +516,7 @@ describe("fitPostToLimit", () => {
 });
 
 describe("buildGeminiPrompt", () => {
-  test("includes reflection title in system prompt", () => {
+  test("includes reflection context in user prompt", () => {
     const reflection: ReflectionData = {
       date: "2026-03-01",
       title: "2026-03-01 | 🧪 Test Reflection 📚",
@@ -527,15 +527,15 @@ describe("buildGeminiPrompt", () => {
       hasBlueskySection: false,
     };
     const { system, user } = buildGeminiPrompt(reflection);
-    assert.ok(system.includes(reflection.title));
-    assert.ok(system.includes(reflection.url));
-    assert.ok(user.includes(reflection.title));
-    assert.ok(user.includes(reflection.url));
+    // The model is now asked for ONLY creative parts (tags) — title/URL come from the assembler
+    assert.ok(system.length > 0, "system prompt should not be empty");
+    assert.ok(user.includes(reflection.title), "user prompt provides title as context");
+    assert.ok(user.includes(reflection.url), "user prompt provides URL as context");
     assert.ok(user.includes(reflection.date));
     assert.ok(user.includes("Some content here"));
   });
 
-  test("includes character limit instructions", () => {
+  test("includes topic tag formatting instructions", () => {
     const reflection: ReflectionData = {
       date: "2026-03-01",
       title: "Test",
@@ -546,10 +546,9 @@ describe("buildGeminiPrompt", () => {
       hasBlueskySection: false,
     };
     const { system } = buildGeminiPrompt(reflection);
-    assert.ok(system.includes("280"));
-    assert.ok(system.includes("23 characters"));
-    assert.ok(system.includes("300"), "should mention Bluesky 300-char limit");
-    assert.ok(system.includes("Bluesky"), "should mention Bluesky by name");
+    // buildGeminiPrompt uses variant A which asks for ONLY topic tags
+    assert.ok(system.includes("topic tag"), "should include topic tag instructions");
+    assert.ok(system.includes("300"), "should mention 300-char constraint for keeping tags short");
   });
 
   test("truncates long body content", () => {

@@ -26,6 +26,7 @@ import {
   buildRecordFileName,
   writeExperimentRecord,
   readExperimentRecords,
+  migrateExperimentRecords,
 } from "./experiment.ts";
 import type { VariantWeight, ExperimentRecord } from "./experiment.ts";
 
@@ -275,12 +276,12 @@ describe("buildRecordFileName", () => {
     const name = buildRecordFileName("reflections/2026-03-10.md", "mastodon", "2026-03-10T12:00:00.000Z");
     assert.ok(!name.includes("/"), "should not contain slashes");
     assert.ok(name.includes("mastodon"), "should contain platform");
-    assert.ok(name.endsWith(".json"), "should end with .json");
+    assert.ok(name.endsWith(".json.md"), "should end with .json.md");
   });
 
-  it("strips .md extension from notePath", () => {
+  it("strips .md extension from notePath before adding .json.md", () => {
     const name = buildRecordFileName("books/some-book.md", "bluesky", "2026-03-10T12:00:00.000Z");
-    assert.ok(!name.includes(".md.json"), "should not have .md before .json");
+    assert.ok(!name.includes("some-book.json.md.json.md"), "should not double-extend");
   });
 
   it("encodes colons and dots from timestamp", () => {
@@ -406,7 +407,7 @@ describe("experiment record persistence", () => {
       timestamp: "2026-03-10T12:00:00.000Z",
     });
 
-    assert.ok(filePath.endsWith(".json"));
+    assert.ok(filePath.endsWith(".json.md"));
     assert.ok(fs.existsSync(filePath));
 
     fs.rmSync(vaultDir, { recursive: true });
@@ -425,11 +426,108 @@ describe("experiment record persistence", () => {
       timestamp: "2026-03-10T12:00:00.000Z",
     });
 
-    // Write a malformed file
-    fs.writeFileSync(path.join(dataDir, "bad.json"), "not valid json", "utf-8");
+    // Write malformed files with both extensions
+    fs.writeFileSync(path.join(dataDir, "bad.json.md"), "not valid json", "utf-8");
+    fs.writeFileSync(path.join(dataDir, "bad-legacy.json"), "not valid json", "utf-8");
 
     const records = readExperimentRecords(vaultDir);
     assert.equal(records.length, 1, "should skip malformed files");
+
+    fs.rmSync(vaultDir, { recursive: true });
+  });
+
+  it("reads legacy .json files alongside new .json.md files", () => {
+    const vaultDir = createTempDir();
+    const dataDir = path.join(vaultDir, EXPERIMENT_DATA_DIR);
+    fs.mkdirSync(dataDir, { recursive: true });
+
+    // Write a legacy .json file
+    const legacyRecord: ExperimentRecord = {
+      variant: "A",
+      notePath: "test.md",
+      platform: "mastodon",
+      timestamp: "2026-03-10T12:00:00.000Z",
+    };
+    fs.writeFileSync(path.join(dataDir, "legacy.json"), JSON.stringify(legacyRecord), "utf-8");
+
+    // Write a new .json.md file
+    writeExperimentRecord(vaultDir, {
+      variant: "B",
+      notePath: "test.md",
+      platform: "bluesky",
+      timestamp: "2026-03-10T12:01:00.000Z",
+    });
+
+    const records = readExperimentRecords(vaultDir);
+    assert.equal(records.length, 2, "should read both .json and .json.md files");
+
+    fs.rmSync(vaultDir, { recursive: true });
+  });
+});
+
+// --- migrateExperimentRecords ---
+
+describe("migrateExperimentRecords", () => {
+  const createTempDir = (): string => fs.mkdtempSync(path.join(os.tmpdir(), "migrate-test-"));
+
+  it("renames .json files to .json.md", () => {
+    const vaultDir = createTempDir();
+    const dataDir = path.join(vaultDir, EXPERIMENT_DATA_DIR);
+    fs.mkdirSync(dataDir, { recursive: true });
+
+    const record: ExperimentRecord = {
+      variant: "A",
+      notePath: "test.md",
+      platform: "mastodon",
+      timestamp: "2026-03-10T12:00:00.000Z",
+    };
+    fs.writeFileSync(path.join(dataDir, "test.json"), JSON.stringify(record), "utf-8");
+
+    const migrated = migrateExperimentRecords(vaultDir);
+    assert.equal(migrated, 1);
+    assert.ok(fs.existsSync(path.join(dataDir, "test.json.md")));
+    assert.equal(fs.existsSync(path.join(dataDir, "test.json")), false);
+
+    // Verify the content is still valid JSON
+    const content = fs.readFileSync(path.join(dataDir, "test.json.md"), "utf-8");
+    const parsed = JSON.parse(content) as ExperimentRecord;
+    assert.equal(parsed.variant, "A");
+
+    fs.rmSync(vaultDir, { recursive: true });
+  });
+
+  it("does not rename .json.md files", () => {
+    const vaultDir = createTempDir();
+    const dataDir = path.join(vaultDir, EXPERIMENT_DATA_DIR);
+    fs.mkdirSync(dataDir, { recursive: true });
+
+    fs.writeFileSync(path.join(dataDir, "already.json.md"), "{}", "utf-8");
+
+    const migrated = migrateExperimentRecords(vaultDir);
+    assert.equal(migrated, 0);
+    assert.ok(fs.existsSync(path.join(dataDir, "already.json.md")));
+
+    fs.rmSync(vaultDir, { recursive: true });
+  });
+
+  it("returns 0 for non-existent directory", () => {
+    assert.equal(migrateExperimentRecords("/tmp/nonexistent-vault-dir-99999"), 0);
+  });
+
+  it("migrates multiple files at once", () => {
+    const vaultDir = createTempDir();
+    const dataDir = path.join(vaultDir, EXPERIMENT_DATA_DIR);
+    fs.mkdirSync(dataDir, { recursive: true });
+
+    fs.writeFileSync(path.join(dataDir, "a.json"), "{}", "utf-8");
+    fs.writeFileSync(path.join(dataDir, "b.json"), "{}", "utf-8");
+    fs.writeFileSync(path.join(dataDir, "c.json.md"), "{}", "utf-8");
+
+    const migrated = migrateExperimentRecords(vaultDir);
+    assert.equal(migrated, 2);
+    assert.ok(fs.existsSync(path.join(dataDir, "a.json.md")));
+    assert.ok(fs.existsSync(path.join(dataDir, "b.json.md")));
+    assert.ok(fs.existsSync(path.join(dataDir, "c.json.md")));
 
     fs.rmSync(vaultDir, { recursive: true });
   });

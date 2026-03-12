@@ -103,16 +103,25 @@ Each platform gets its own independent variant selection. For the same blog post
 
 ### Automated Data Collection
 
-Experiment records are persisted as individual JSON files in `data/ab-test/` within the Obsidian vault:
+Experiment records are persisted as individual JSON files in `data/ab-test/` within the Obsidian vault. Files use `.json.md` extension so Obsidian sync handles them:
 
 ```
 data/ab-test/
-├── 2026-03-10T17-00-00-000Z_mastodon_reflections_2026-03-10.json
-├── 2026-03-10T17-00-00-100Z_bluesky_reflections_2026-03-10.json
+├── 2026-03-10T17-00-00-000Z_mastodon_reflections_2026-03-10.json.md
+├── 2026-03-10T17-00-00-100Z_bluesky_reflections_2026-03-10.json.md
 └── ...
 ```
 
-Records are written **before** the vault push, so they're automatically synced to Obsidian. The auto-post script runs incremental analysis after every posting run.
+Records are written **before** the vault push, so they're automatically synced to Obsidian. Legacy `.json` files are automatically migrated to `.json.md` on the next pipeline run. The auto-post script runs incremental analysis after every posting run.
+
+### Platform Length Limits
+
+Each platform enforces its own character/grapheme limits via `fitPostToLimit()`:
+- **Twitter:** 280 characters (via `calculateTweetLength`)
+- **Bluesky:** 300 graphemes (via `countGraphemes`)
+- **Mastodon:** 500 characters
+
+Posts that exceed a platform's limit are progressively truncated — first removing topic tags, then the topic line, then content. This happens in each platform's posting task, not during generation.
 
 ### Variant Selection
 
@@ -185,8 +194,8 @@ Each record is a standalone JSON file in `data/ab-test/`:
 
 ## Test Coverage
 
-- **experiment.ts:** 45 tests — variant selection, assignment, override, validation, record persistence
+- **experiment.ts:** 50 tests — variant selection, assignment, override, validation, record persistence, migration (.json → .json.md), backward-compat reading
 - **prompts.ts:** 36 tests — prompt building, deterministic assembly, question-only prompt B, tag reuse, parser, registry completeness, purity
 - **analytics.ts:** 32 tests — statistics, t-test, p-value, summary formatting
 
-Total: 113 new tests (476 overall, all passing).
+Total: 118 new tests (482 overall, all passing).

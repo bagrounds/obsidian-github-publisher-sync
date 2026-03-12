@@ -25,6 +25,7 @@ import {
   BLUESKY_MAX_LENGTH,
   MASTODON_SECTION_HEADER,
   MASTODON_MAX_LENGTH,
+  TWITTER_MAX_LENGTH,
 } from "./types.ts";
 import { PipelineTimer } from "./timer.ts";
 import { calculateTweetLength, countGraphemes, fitPostToLimit } from "./text.ts";
@@ -35,6 +36,7 @@ import {
   createAssignment,
   formatAssignment,
   writeExperimentRecord,
+  migrateExperimentRecords,
 } from "./experiment.ts";
 import type { VariantId, ExperimentRecord } from "./experiment.ts";
 import { validateEnvironment, getYesterdayDate } from "./env.ts";
@@ -76,8 +78,13 @@ const createTwitterTask = (
     const postText = await generateTweetWithGemini(reflection, env.gemini.apiKey, env.gemini.model, variant);
     console.log(`📝 Twitter post (${calculateTweetLength(postText)} chars, variant ${variant}):\n${postText}`);
 
+    const twitterText = fitPostToLimit(postText, TWITTER_MAX_LENGTH);
+    if (twitterText !== postText) {
+      console.log(`  ✂️ Twitter: trimmed post from ${countGraphemes(postText)} to ${countGraphemes(twitterText)} graphemes`);
+    }
+
     console.log(`🐦 Posting tweet to Twitter...`);
-    const tweet = await postTweet(postText, env.twitter!);
+    const tweet = await postTweet(twitterText, env.twitter!);
     console.log(`✅ Tweet posted: https://twitter.com/${TWITTER_HANDLE}/status/${tweet.id}`);
 
     console.log(`🔗 Fetching tweet embed code...`);
@@ -417,6 +424,12 @@ export async function main(options?: {
 
   // Write experiment records to vault BEFORE pushing (so they get synced)
   if (postingResults.length > 0 && vaultDir) {
+    // Migrate any legacy .json records to .json.md before writing new ones
+    const migrated = migrateExperimentRecords(vaultDir);
+    if (migrated > 0) {
+      console.log(`🔄 Migrated ${migrated} experiment record(s) from .json to .json.md`);
+    }
+
     for (const result of postingResults) {
       const filePath = writeExperimentRecord(vaultDir, result.experimentRecord);
       console.log(`🧪 Experiment record written: ${filePath}`);

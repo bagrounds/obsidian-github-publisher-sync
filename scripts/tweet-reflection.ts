@@ -104,6 +104,7 @@ export {
   buildRecordFileName,
   writeExperimentRecord,
   readExperimentRecords,
+  migrateExperimentRecords,
 } from "./lib/experiment.ts";
 
 // --- Re-exports: Versioned Prompts ---

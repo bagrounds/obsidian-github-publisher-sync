@@ -19,7 +19,6 @@
 
 import type { ReflectionData } from "./types.ts";
 import type { VariantId } from "./experiment.ts";
-import { validateTweetLength } from "./text.ts";
 import { DEFAULT_GEMINI_MODEL } from "./types.ts";
 import { buildPromptForVariant, assemblePostForVariant, type PromptPair } from "./prompts.ts";
 
@@ -65,7 +64,8 @@ async function callGemini(
  * 2. Question via prompt B (question-only)
  * The outputs are combined for the assembler.
  *
- * Returns validated text within Twitter's character limit.
+ * Platform-specific length limits are enforced by each platform's
+ * posting task via fitPostToLimit(), not here.
  */
 export async function generateTweetWithGemini(
   reflection: ReflectionData,
@@ -99,13 +99,6 @@ export async function generateTweetWithGemini(
 
   // Assemble the final post deterministically from creative parts + title/URL
   const text = assemblePostForVariant(variant, modelOutput, reflection);
-
-  const { valid, length } = validateTweetLength(text);
-  if (!valid) {
-    throw new Error(
-      `Generated tweet exceeds 280 characters (${length} effective chars). Tweet: ${text}`,
-    );
-  }
 
   return text;
 }

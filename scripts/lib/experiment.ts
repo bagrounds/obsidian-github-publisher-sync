@@ -183,7 +183,8 @@ export const EXPERIMENT_DATA_DIR = "data/ab-test";
 
 /**
  * Build the file path for an experiment record within the vault.
- * Each record gets its own JSON file named by timestamp + platform.
+ * Each record gets its own file named by timestamp + platform.
+ * Uses .json.md extension so Obsidian sync handles the files.
  */
 export const buildRecordFileName = (
   notePath: string,
@@ -192,7 +193,7 @@ export const buildRecordFileName = (
 ): string => {
   const safePath = notePath.replace(/[/\\]/g, "_").replace(/\.md$/, "");
   const safeTime = timestamp.replace(/[:.]/g, "-");
-  return `${safeTime}_${platform}_${safePath}.json`;
+  return `${safeTime}_${platform}_${safePath}.json.md`;
 };
 
 /**
@@ -219,7 +220,28 @@ export const writeExperimentRecord = (
 };
 
 /**
+ * Migrate existing .json experiment records to .json.md so Obsidian sync handles them.
+ * Renames files in-place. Idempotent — skips files that already have .json.md extension.
+ */
+export const migrateExperimentRecords = (vaultDir: string): number => {
+  const dir = path.join(vaultDir, EXPERIMENT_DATA_DIR);
+  if (!fs.existsSync(dir)) return 0;
+
+  let migrated = 0;
+  for (const f of fs.readdirSync(dir)) {
+    if (f.endsWith(".json") && !f.endsWith(".json.md")) {
+      const oldPath = path.join(dir, f);
+      const newPath = path.join(dir, `${f}.md`);
+      fs.renameSync(oldPath, newPath);
+      migrated++;
+    }
+  }
+  return migrated;
+};
+
+/**
  * Read all experiment records from the vault's data directory.
+ * Reads both .json.md (current) and .json (legacy) files.
  * Returns an empty array if the directory doesn't exist.
  */
 export const readExperimentRecords = (
@@ -230,7 +252,7 @@ export const readExperimentRecords = (
 
   return fs
     .readdirSync(dir)
-    .filter((f) => f.endsWith(".json"))
+    .filter((f) => f.endsWith(".json.md") || f.endsWith(".json"))
     .map((f) => {
       try {
         const content = fs.readFileSync(path.join(dir, f), "utf-8");

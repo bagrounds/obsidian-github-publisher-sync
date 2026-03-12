@@ -28,11 +28,13 @@ Adds a concise AI-generated discussion question — always a 2nd-person question
 ```
 Title with emojis
 
-🤖❓ AI Discussion Prompt: 🤔 Ever trusted a machine more than your gut?
+#AI Q: 🤔 Ever trusted a machine more than your gut?
 
 📚 Topic1 | 🤖 Topic2
 https://bagrounds.org/reflections/YYYY-MM-DD
 ```
+
+The `#AI Q: ` prefix is deliberately short (7 chars vs the original `🤖❓ AI Discussion Prompt: ` at 27 chars) to maximize the character budget for the actual question — every character counts on Bluesky's strict 300-grapheme limit.
 
 The question follows Strunk & White principles: minimal word count, no fake personality, no personal pronouns, no quotation marks or hyphens. It should be relatable, easy to answer with an opinion, and appropriate for a public forum.
 
@@ -113,7 +115,7 @@ The model generates ONLY creative content. Everything deterministic is handled i
 | Component | Source | Variant A | Variant B |
 |-----------|--------|-----------|-----------|
 | Title | Code (from note metadata) | ✅ | ✅ |
-| Question | Model (prompt B, question-only) | — | ✅ (with `🤖❓` prefix added by code) |
+| Question | Model (prompt B, question-only) | — | ✅ (with `#AI Q: ` prefix added by code) |
 | Topic tags | Model (prompt A, reused for both) | ✅ | ✅ |
 | URL | Code (from note metadata) | ✅ | ✅ |
 | Formatting | Code (template string) | ✅ | ✅ |
@@ -148,7 +150,29 @@ Each platform enforces its own character/grapheme limits via `fitPostToLimit()`:
 - **Bluesky:** 300 graphemes (via `countGraphemes`)
 - **Mastodon:** 500 characters
 
-Posts that exceed a platform's limit are progressively truncated — first removing topic tags, then the topic line, then content. This happens in each platform's posting task, not during generation.
+Posts that exceed a platform's limit are progressively truncated through 5 strategies (in order):
+
+1. **Remove topic tags** from right to left (least expendable last)
+2. **Remove entire topic line** (and preceding blank line)
+3. **Strip subtitle from title** — remove everything after the first colon (e.g. "Prediction Machines: The Simple Economics of AI" → "Prediction Machines")
+4. **Remove title entirely** — the title appears in the URL preview and link card, so it's redundant
+5. **Truncate remaining content** with "…" as a last resort
+
+### Dynamic Character Budget
+
+Before asking the LLM to generate a discussion question, the prompt calculates how many characters are available given the title, URL, prefix, and tag overhead. This budget is communicated to the LLM in the prompt:
+
+```
+IMPORTANT: The question MUST be at most {maxChars} characters total (including the leading emoji). Keep it short!
+```
+
+If the assembled post still exceeds the strictest platform limit (Bluesky's 300 graphemes) after generation, the question is sent back to the LLM with an explicit request to shorten it by the required amount. This is a last-resort fallback — the character budget in the prompt should prevent most overages.
+
+### Stale Record Cleanup
+
+After each posting run, `cleanupStaleRecords()` checks each experiment record's `postUrl` for HTTP 404 status. Records whose posts have been deleted from the platform are automatically removed from the vault. This prevents stale records from polluting the experiment analysis.
+
+Only true 404s trigger deletion — network errors, timeouts, and other failures are treated conservatively (record kept).
 
 ### Variant Selection
 
@@ -221,10 +245,11 @@ Each record is a standalone JSON file in `data/ab-test/`:
 
 ## Test Coverage
 
-- **experiment.ts:** 50 tests — variant selection, assignment, override, validation, record persistence, migration (.json → .json.md), backward-compat reading
-- **prompts.ts:** 36 tests — prompt building, deterministic assembly, question-only prompt B, tag reuse, parser, registry completeness, purity
+- **experiment.ts:** 57 tests — variant selection, assignment, override, validation, record persistence, migration (.json → .json.md), backward-compat reading, stale record cleanup (isUrl404, cleanupStaleRecords)
+- **prompts.ts:** 55 tests — prompt building, deterministic assembly, question-only prompt B, tag reuse, parser, registry completeness, purity, calculateQuestionBudget, stripSubtitle, buildShortenQuestionPrompt, AI_QUESTION_PREFIX
+- **text.ts:** 15 tests — grapheme counting, truncation, tweet length, progressive post fitting with 5 strategies (tag removal, topic line removal, subtitle stripping, title removal, content truncation)
 - **analytics.ts:** 32 tests — statistics, t-test, p-value, summary formatting
 - **gemini.ts:** 24 tests — parseRetryDelay (9 formats), isRateLimitError (8 cases), buildGeminiPrompt compat, dual-model config verification
-- **env.ts:** 2 new tests — default question model, custom GEMINI_QUESTION_MODEL
+- **env.ts:** 2 tests — default question model, custom GEMINI_QUESTION_MODEL
 
-Total: 144 new tests (506 overall, all passing).
+Total: 171 new tests (533 overall, all passing).

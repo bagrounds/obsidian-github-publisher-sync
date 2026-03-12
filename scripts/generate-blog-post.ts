@@ -138,7 +138,7 @@ async function generate(): Promise<void> {
   }
 
   const series = BLOG_SERIES.get(config.series)!;
-  const repoRoot = path.resolve(import.meta.dirname, "../..");
+  const repoRoot = path.resolve(import.meta.dirname, "..");
   const today = new Date().toISOString().split("T")[0] as string;
 
   console.log(`📝 Generating blog post for: ${series.icon} ${series.name}`);

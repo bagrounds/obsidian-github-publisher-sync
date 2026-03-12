@@ -6,7 +6,7 @@ URL: https://bagrounds.org/books/power-and-prediction-the-disruptive-economics-o
 share: true
 CTA: 🧠 Master the future.
 affiliate link: https://amzn.to/4lu2zZK
-updated: 2026-03-11T20:09:29.407Z
+updated: 2026-03-12T02:24:07.362Z
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ⚡🔮🤖 Power and Prediction: The Disruptive Economics of Artificial Intelligence  

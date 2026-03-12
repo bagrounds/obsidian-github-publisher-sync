@@ -9,7 +9,7 @@ Platform:
 Channel: AI News & Strategy Daily | Nate B Jones
 tags:
 youtube: https://youtu.be/-FhtPUkXKO4
-updated: 2026-03-11T22:07:04.845Z
+updated: 2026-03-12T04:13:03.963Z
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 👀❓🤷‍♀️🚀 Stop accepting AI output that «looks right.» The other 17% is everything and nobody is ready for it.  

@@ -99,7 +99,7 @@ const TOPIC_TAGS_INSTRUCTIONS = `\
  * - AI question prefix + newline
  * - Blank line
  * - URL line
- * - A generous tag allowance (60 chars)
+ * - Tag allowance (60 chars — typical for 2-3 emoji+label tags like "📚 Books | 🤖 AI")
  *
  * This budget is communicated to the LLM in the prompt so it generates
  * questions that fit without needing post-hoc truncation.
@@ -108,12 +108,10 @@ export const calculateQuestionBudget = (reflection: ReflectionData): number => {
   const titleLength = reflection.title.length;
   const urlLength = reflection.url.length;
   const prefixLength = AI_QUESTION_PREFIX.length;
-  // Template overhead: title + \n\n + prefix + question + \n\n + tags + \n + url
-  // title\n\n = titleLength + 2
-  // prefix + question\n\n = prefixLength + question + 2
-  // tags\n = 60 (generous allowance) + 1
-  // url = urlLength
-  const fixedOverhead = titleLength + 2 + prefixLength + 2 + 60 + 1 + urlLength;
+  // Template: title\n\n + prefix + question + \n\n + tags\n + url
+  // Typical tag line: "📚 Books | 🤖 AI | 🧠 Learning" ≈ 40-60 chars
+  const TAG_LINE_ALLOWANCE = 60;
+  const fixedOverhead = titleLength + 2 + prefixLength + 2 + TAG_LINE_ALLOWANCE + 1 + urlLength;
   // Use Bluesky limit (the strictest) as the total budget
   const budget = BLUESKY_MAX_LENGTH - fixedOverhead;
   // Ensure at least 30 chars for a meaningful question

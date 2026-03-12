@@ -214,9 +214,11 @@ export async function generateTweetWithGemini(
     const overage = countGraphemes(text) - BLUESKY_MAX_LENGTH;
 
     if (overage > 0) {
-      // The question is too long — ask the LLM to shorten it
+      // The question is too long — ask the LLM to shorten it.
+      // Add a safety buffer so the LLM doesn't land right at the edge.
+      const SHORTEN_SAFETY_BUFFER = 10;
       console.log(`  ✂️ Post exceeds Bluesky limit by ${overage} graphemes — asking LLM to shorten question...`);
-      const shortenPrompt = buildShortenQuestionPrompt(question, overage + 10); // +10 buffer
+      const shortenPrompt = buildShortenQuestionPrompt(question, overage + SHORTEN_SAFETY_BUFFER);
       const shortenedQuestion = await callGemini(questionModel, shortenPrompt, `shorten/${questionModelName}`);
       const shortenedOutput = `${shortenedQuestion.trim()}\n${tags}`;
       text = assemblePostForVariant(variant, shortenedOutput, reflection);

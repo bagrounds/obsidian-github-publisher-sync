@@ -267,6 +267,9 @@ export const readExperimentRecords = (
 
 // --- Stale Record Cleanup ---
 
+/** Timeout for URL health checks during stale record cleanup (ms). */
+const URL_CHECK_TIMEOUT_MS = 10_000;
+
 /**
  * Check if a URL returns a 404 (Not Found) status.
  * Returns true if the URL is reachable but returns 404.
@@ -277,7 +280,7 @@ export const isUrl404 = async (url: string): Promise<boolean> => {
   try {
     const response = await fetch(url, {
       method: "HEAD",
-      signal: AbortSignal.timeout(10_000),
+      signal: AbortSignal.timeout(URL_CHECK_TIMEOUT_MS),
     });
     return response.status === 404;
   } catch {

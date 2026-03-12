@@ -18,6 +18,10 @@ import {
   buildPromptForVariant,
   assemblePostForVariant,
   parseVariantBOutput,
+  AI_QUESTION_PREFIX,
+  calculateQuestionBudget,
+  stripSubtitle,
+  buildShortenQuestionPrompt,
 } from "./prompts.ts";
 import type { PromptPair, PostAssembler } from "./prompts.ts";
 import { VARIANT_IDS } from "./experiment.ts";
@@ -251,7 +255,7 @@ describe("assemblePostForVariant", () => {
     const modelOutput = "🤔 Ever trusted a machine more than your gut?\n📚 Sci-Fi | 🤖 AGI";
     const post = assemblePostForVariant("B", modelOutput, testReflection);
     assert.ok(post.startsWith(testReflection.title), "should start with title");
-    assert.ok(post.includes("🤖❓ AI Discussion Prompt:"), "should include discussion prompt prefix");
+    assert.ok(post.includes("#AI Q:"), "should include AI question prefix");
     assert.ok(post.includes("Ever trusted a machine"), "should include question");
     assert.ok(post.includes("📚 Sci-Fi | 🤖 AGI"), "should include tags");
     assert.ok(post.endsWith(testReflection.url), "should end with URL");
@@ -263,7 +267,7 @@ describe("assemblePostForVariant", () => {
     const lines = post.split("\n");
     assert.equal(lines[0], testReflection.title, "line 0 = title");
     assert.equal(lines[1], "", "line 1 = blank");
-    assert.equal(lines[2], "🤖❓ AI Discussion Prompt: 🤔 Question here?", "line 2 = question with prefix");
+    assert.equal(lines[2], `${AI_QUESTION_PREFIX}🤔 Question here?`, "line 2 = question with prefix");
     assert.equal(lines[3], "", "line 3 = blank");
     assert.equal(lines[4], "📚 Books | 🤖 AI", "line 4 = tags");
     assert.equal(lines[5], testReflection.url, "line 5 = URL");
@@ -296,7 +300,7 @@ describe("assemblePostForVariant", () => {
   it("variant B: handles model output with extra blank lines", () => {
     const modelOutput = "\n🤔 Question here?\n\n📚 Books | 🤖 AI\n\n";
     const post = assemblePostForVariant("B", modelOutput, testReflection);
-    assert.ok(post.includes("🤖❓ AI Discussion Prompt: 🤔 Question here?"), "should parse question");
+    assert.ok(post.includes(`${AI_QUESTION_PREFIX}🤔 Question here?`), "should parse question");
     assert.ok(post.includes("📚 Books | 🤖 AI"), "should parse tags");
   });
 });
@@ -332,5 +336,129 @@ describe("parseVariantBOutput", () => {
     const { question, tags } = parseVariantBOutput("  🤔 Question?  \n  📚 Books  ");
     assert.equal(question, "🤔 Question?");
     assert.equal(tags, "📚 Books");
+  });
+});
+
+// --- calculateQuestionBudget ---
+
+describe("calculateQuestionBudget", () => {
+  it("returns a positive budget for typical reflection", () => {
+    const budget = calculateQuestionBudget(testReflection);
+    assert.ok(budget > 0, `budget should be positive, got ${budget}`);
+  });
+
+  it("returns at least 30 characters", () => {
+    const budget = calculateQuestionBudget(testReflection);
+    assert.ok(budget >= 30, `budget should be >= 30, got ${budget}`);
+  });
+
+  it("returns smaller budget for longer titles", () => {
+    const longTitleReflection: ReflectionData = {
+      ...testReflection,
+      title: "x".repeat(200),
+    };
+    const shortBudget = calculateQuestionBudget(longTitleReflection);
+    const normalBudget = calculateQuestionBudget(testReflection);
+    assert.ok(shortBudget < normalBudget, "longer title should reduce budget");
+  });
+
+  it("returns smaller budget for longer URLs", () => {
+    const longUrlReflection: ReflectionData = {
+      ...testReflection,
+      url: "https://bagrounds.org/" + "x".repeat(150),
+    };
+    const shortBudget = calculateQuestionBudget(longUrlReflection);
+    const normalBudget = calculateQuestionBudget(testReflection);
+    assert.ok(shortBudget < normalBudget, "longer URL should reduce budget");
+  });
+
+  it("never returns less than 30", () => {
+    const hugeReflection: ReflectionData = {
+      ...testReflection,
+      title: "x".repeat(300),
+      url: "https://bagrounds.org/" + "y".repeat(300),
+    };
+    const budget = calculateQuestionBudget(hugeReflection);
+    assert.equal(budget, 30, "should clamp to minimum 30");
+  });
+
+  it("variant B prompt includes max character count", () => {
+    const prompt = buildPromptForVariant("B", testReflection);
+    assert.ok(prompt.system.includes("at most"), "should include character limit");
+    assert.ok(prompt.system.includes("characters"), "should mention characters");
+  });
+});
+
+// --- stripSubtitle ---
+
+describe("stripSubtitle", () => {
+  it("strips subtitle after colon", () => {
+    assert.equal(
+      stripSubtitle("Prediction Machines: The Simple Economics of AI"),
+      "Prediction Machines",
+    );
+  });
+
+  it("returns original title if no colon", () => {
+    assert.equal(stripSubtitle("Just a Title"), "Just a Title");
+  });
+
+  it("strips at first colon only", () => {
+    assert.equal(
+      stripSubtitle("Part 1: Section A: Detail"),
+      "Part 1",
+    );
+  });
+
+  it("returns original title if colon is at start", () => {
+    assert.equal(stripSubtitle(": Empty Before"), ": Empty Before");
+  });
+
+  it("trims whitespace from shortened title", () => {
+    assert.equal(
+      stripSubtitle("Title With Space : Subtitle"),
+      "Title With Space",
+    );
+  });
+});
+
+// --- buildShortenQuestionPrompt ---
+
+describe("buildShortenQuestionPrompt", () => {
+  it("returns a valid prompt pair", () => {
+    const prompt = buildShortenQuestionPrompt("🤔 Some long question?", 10);
+    assert.ok(prompt.system.length > 0, "system prompt should not be empty");
+    assert.ok(prompt.user.length > 0, "user prompt should not be empty");
+  });
+
+  it("includes the overage in the user prompt", () => {
+    const prompt = buildShortenQuestionPrompt("🤔 Some long question?", 15);
+    assert.ok(prompt.user.includes("15"), "should include the overage");
+  });
+
+  it("includes target length in the user prompt", () => {
+    const question = "🤔 Some long question?";
+    const prompt = buildShortenQuestionPrompt(question, 10);
+    assert.ok(
+      prompt.user.includes(`${question.length - 10}`),
+      "should include target length",
+    );
+  });
+
+  it("instructs to keep the question mark", () => {
+    const prompt = buildShortenQuestionPrompt("🤔 Q?", 2);
+    assert.ok(prompt.system.includes("question mark"), "should mention question mark");
+  });
+});
+
+// --- AI_QUESTION_PREFIX ---
+
+describe("AI_QUESTION_PREFIX", () => {
+  it("is shorter than the old prefix for character savings", () => {
+    assert.ok(AI_QUESTION_PREFIX.length < 25, `prefix should be short, got ${AI_QUESTION_PREFIX.length}`);
+  });
+
+  it("starts with #AI", () => {
+    assert.ok(AI_QUESTION_PREFIX.startsWith("#AI"), "should start with #AI");
   });
 });

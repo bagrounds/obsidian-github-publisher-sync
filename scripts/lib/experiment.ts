@@ -264,3 +264,66 @@ export const readExperimentRecords = (
     })
     .filter((r): r is ExperimentRecord => r !== null);
 };
+
+// --- Stale Record Cleanup ---
+
+/**
+ * Check if a URL returns a 404 (Not Found) status.
+ * Returns true if the URL is reachable but returns 404.
+ * Returns false for all other cases (success, network error, timeout, etc.)
+ * to avoid accidentally deleting valid records.
+ */
+export const isUrl404 = async (url: string): Promise<boolean> => {
+  try {
+    const response = await fetch(url, {
+      method: "HEAD",
+      signal: AbortSignal.timeout(10_000),
+    });
+    return response.status === 404;
+  } catch {
+    // Network error, timeout, etc. — don't delete the record
+    return false;
+  }
+};
+
+/**
+ * Clean up stale experiment records by checking post URLs for 404.
+ *
+ * Reads all records from the vault, HEAD-requests each post URL,
+ * and deletes records whose URLs return 404. This handles the case
+ * where posts are deleted from the platform (e.g. manually removed
+ * from Mastodon/Bluesky) — we don't want to keep stale records
+ * that would pollute the experiment analysis.
+ *
+ * Returns the number of records deleted.
+ */
+export const cleanupStaleRecords = async (vaultDir: string): Promise<number> => {
+  const dir = path.join(vaultDir, EXPERIMENT_DATA_DIR);
+  if (!fs.existsSync(dir)) return 0;
+
+  const files = fs.readdirSync(dir)
+    .filter((f) => f.endsWith(".json.md") || f.endsWith(".json"));
+
+  let deleted = 0;
+
+  for (const f of files) {
+    const filePath = path.join(dir, f);
+    try {
+      const content = fs.readFileSync(filePath, "utf-8");
+      const record = JSON.parse(content) as ExperimentRecord;
+
+      if (record.postUrl) {
+        const is404 = await isUrl404(record.postUrl);
+        if (is404) {
+          fs.unlinkSync(filePath);
+          console.log(`🗑️ Deleted stale record (404): ${f} → ${record.postUrl}`);
+          deleted++;
+        }
+      }
+    } catch {
+      // Skip malformed records — they'll be caught by readExperimentRecords
+    }
+  }
+
+  return deleted;
+};

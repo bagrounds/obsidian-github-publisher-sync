@@ -103,16 +103,20 @@ const rebuildPost = (
  *
  * 1. Remove pipe-separated topic tags from right to left
  * 2. Remove the entire topic line (and preceding blank line)
- * 3. Truncate remaining content with "…"
+ * 3. Strip subtitle from title (remove everything after the first colon)
+ * 4. Remove the title entirely (and following blank line)
+ * 5. Truncate remaining content with "…"
  *
  * The URL line is always preserved — it's essential for link previews
  * and facet detection.
  *
- * Post format:
- *   Line 1: {date} | {emoji} Title Words {emoji}
- *   Line 2: (blank)
- *   Line 3: {emoji} Tag | {emoji} Tag | ...
- *   Line 4: https://bagrounds.org/...
+ * Post format (variant B):
+ *   Line 0: Title
+ *   Line 1: (blank)
+ *   Line 2: #AI Q: Question?
+ *   Line 3: (blank)
+ *   Line 4: {emoji} Tag | {emoji} Tag | ...
+ *   Line 5: https://bagrounds.org/...
  */
 export const fitPostToLimit = (text: string, maxGraphemes: number): string => {
   if (countGraphemes(text) <= maxGraphemes) return text;
@@ -152,7 +156,42 @@ export const fitPostToLimit = (text: string, maxGraphemes: number): string => {
     if (countGraphemes(candidate) <= maxGraphemes) return candidate;
   }
 
-  // Strategy 3: Truncate content before URL
+  // Strategy 3: Strip subtitle from title (remove after first colon)
+  {
+    const workingLines = topicIndex >= 0
+      ? (() => {
+          const cl = [...contentLines];
+          cl.splice(topicIndex, 1);
+          if (topicIndex > 0 && cl[topicIndex - 1] === "") cl.splice(topicIndex - 1, 1);
+          return cl;
+        })()
+      : [...contentLines];
+
+    const titleLine = workingLines[0] ?? "";
+    const colonIndex = titleLine.indexOf(":");
+    if (colonIndex > 0) {
+      const shortTitle = titleLine.slice(0, colonIndex).trim();
+      if (shortTitle.length > 0) {
+        workingLines[0] = shortTitle;
+        const candidate = [...workingLines, urlLine, ...trailingLines].join("\n");
+        if (countGraphemes(candidate) <= maxGraphemes) return candidate;
+      }
+    }
+
+    // Strategy 4: Remove title entirely (and following blank line)
+    if (workingLines.length > 0) {
+      const noTitle = [...workingLines];
+      noTitle.splice(0, 1);
+      // Remove the blank line that was after the title
+      if (noTitle.length > 0 && noTitle[0] === "") {
+        noTitle.splice(0, 1);
+      }
+      const candidate = [...noTitle, urlLine, ...trailingLines].join("\n");
+      if (countGraphemes(candidate) <= maxGraphemes) return candidate;
+    }
+  }
+
+  // Strategy 5: Truncate content before URL
   const separatorAndUrl = "\n" + urlLine;
   const reservedGraphemes = countGraphemes(separatorAndUrl);
   const available = maxGraphemes - reservedGraphemes;

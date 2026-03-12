@@ -24,8 +24,16 @@
 
 import type { ReflectionData } from "./types.ts";
 import type { VariantId } from "./experiment.ts";
-import { DEFAULT_GEMINI_MODEL, DEFAULT_QUESTION_MODEL } from "./types.ts";
-import { buildPromptForVariant, assemblePostForVariant, type PromptPair } from "./prompts.ts";
+import { DEFAULT_GEMINI_MODEL, DEFAULT_QUESTION_MODEL, BLUESKY_MAX_LENGTH } from "./types.ts";
+import {
+  buildPromptForVariant,
+  assemblePostForVariant,
+  buildShortenQuestionPrompt,
+  parseVariantBOutput,
+  AI_QUESTION_PREFIX,
+  type PromptPair,
+} from "./prompts.ts";
+import { countGraphemes } from "./text.ts";
 
 /** Maximum number of retries for rate-limited requests. */
 const MAX_RETRIES = 3;
@@ -200,6 +208,22 @@ export async function generateTweetWithGemini(
 
     // Combine as "question\ntags" for the assembler's parseVariantBOutput
     modelOutput = `${question}\n${tags}`;
+
+    // Assemble the post and check if it fits the strictest platform limit
+    let text = assemblePostForVariant(variant, modelOutput, reflection);
+    const overage = countGraphemes(text) - BLUESKY_MAX_LENGTH;
+
+    if (overage > 0) {
+      // The question is too long — ask the LLM to shorten it
+      console.log(`  ✂️ Post exceeds Bluesky limit by ${overage} graphemes — asking LLM to shorten question...`);
+      const shortenPrompt = buildShortenQuestionPrompt(question, overage + 10); // +10 buffer
+      const shortenedQuestion = await callGemini(questionModel, shortenPrompt, `shorten/${questionModelName}`);
+      const shortenedOutput = `${shortenedQuestion.trim()}\n${tags}`;
+      text = assemblePostForVariant(variant, shortenedOutput, reflection);
+      console.log(`  ✅ Shortened: ${countGraphemes(text)} graphemes (was ${countGraphemes(assemblePostForVariant(variant, modelOutput, reflection))})`);
+    }
+
+    return text;
   } else {
     // Variant A: single call for tags using primary model
     const model = genAI.getGenerativeModel({ model: tagsModelName });

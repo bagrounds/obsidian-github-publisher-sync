@@ -27,6 +27,8 @@ import {
   writeExperimentRecord,
   readExperimentRecords,
   migrateExperimentRecords,
+  isUrl404,
+  cleanupStaleRecords,
 } from "./experiment.ts";
 import type { VariantWeight, ExperimentRecord } from "./experiment.ts";
 
@@ -529,6 +531,73 @@ describe("migrateExperimentRecords", () => {
     assert.ok(fs.existsSync(path.join(dataDir, "b.json.md")));
     assert.ok(fs.existsSync(path.join(dataDir, "c.json.md")));
 
+    fs.rmSync(vaultDir, { recursive: true });
+  });
+});
+
+// --- isUrl404 ---
+
+describe("isUrl404", () => {
+  it("returns false for network errors (no accidental deletion)", async () => {
+    // This URL will fail to connect — should NOT be treated as 404
+    const result = await isUrl404("http://localhost:1/nonexistent");
+    assert.equal(result, false, "network error should not be treated as 404");
+  });
+
+  it("returns false for invalid URLs", async () => {
+    const result = await isUrl404("not-a-url");
+    assert.equal(result, false, "invalid URL should not be treated as 404");
+  });
+});
+
+// --- cleanupStaleRecords ---
+
+describe("cleanupStaleRecords", () => {
+  it("returns 0 when directory does not exist", async () => {
+    const vaultDir = fs.mkdtempSync(path.join(os.tmpdir(), "cleanup-test-"));
+    const deleted = await cleanupStaleRecords(vaultDir);
+    assert.equal(deleted, 0);
+    fs.rmSync(vaultDir, { recursive: true });
+  });
+
+  it("returns 0 when directory is empty", async () => {
+    const vaultDir = fs.mkdtempSync(path.join(os.tmpdir(), "cleanup-test-"));
+    fs.mkdirSync(path.join(vaultDir, EXPERIMENT_DATA_DIR), { recursive: true });
+    const deleted = await cleanupStaleRecords(vaultDir);
+    assert.equal(deleted, 0);
+    fs.rmSync(vaultDir, { recursive: true });
+  });
+
+  it("does not delete records with unreachable URLs", async () => {
+    const vaultDir = fs.mkdtempSync(path.join(os.tmpdir(), "cleanup-test-"));
+    const dataDir = path.join(vaultDir, EXPERIMENT_DATA_DIR);
+    fs.mkdirSync(dataDir, { recursive: true });
+
+    const record = {
+      variant: "A",
+      notePath: "test.md",
+      platform: "mastodon",
+      timestamp: new Date().toISOString(),
+      postUrl: "http://localhost:1/unreachable",
+    };
+    fs.writeFileSync(path.join(dataDir, "test.json.md"), JSON.stringify(record));
+
+    const deleted = await cleanupStaleRecords(vaultDir);
+    assert.equal(deleted, 0, "should not delete records with network errors");
+    assert.ok(fs.existsSync(path.join(dataDir, "test.json.md")), "record should still exist");
+    fs.rmSync(vaultDir, { recursive: true });
+  });
+
+  it("handles records without postUrl gracefully", async () => {
+    const vaultDir = fs.mkdtempSync(path.join(os.tmpdir(), "cleanup-test-"));
+    const dataDir = path.join(vaultDir, EXPERIMENT_DATA_DIR);
+    fs.mkdirSync(dataDir, { recursive: true });
+
+    const record = { variant: "A", notePath: "test.md", platform: "bluesky", timestamp: new Date().toISOString() };
+    fs.writeFileSync(path.join(dataDir, "no-url.json.md"), JSON.stringify(record));
+
+    const deleted = await cleanupStaleRecords(vaultDir);
+    assert.equal(deleted, 0, "should not delete records without postUrl");
     fs.rmSync(vaultDir, { recursive: true });
   });
 });

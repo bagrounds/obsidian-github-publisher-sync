@@ -39,6 +39,7 @@
 
 import type { ReflectionData } from "./types.ts";
 import type { VariantId } from "./experiment.ts";
+import { BLUESKY_MAX_LENGTH } from "./types.ts";
 
 // --- Prompt Builder Type ---
 
@@ -65,6 +66,14 @@ export interface VariantConfig {
   readonly assemblePost: PostAssembler;
 }
 
+// --- Shared Constants ---
+
+/**
+ * Prefix for AI-generated discussion questions in variant B posts.
+ * Short to maximize character budget for the actual question.
+ */
+export const AI_QUESTION_PREFIX = "#AI Q: ";
+
 // --- Shared Prompt Components ---
 
 /**
@@ -79,6 +88,51 @@ const TOPIC_TAGS_INSTRUCTIONS = `\
 - Extract topics from the content (books, videos, concepts, themes, etc.)
 - Use 2–4 concise tags
 - IMPORTANT: Keep the total tags line short — it must fit in a post under 300 characters`;
+
+/**
+ * Calculate the maximum character budget for the AI discussion question.
+ *
+ * The tightest platform constraint is Bluesky (300 graphemes). We calculate
+ * how many characters are available for the question after accounting for:
+ * - Title line + newline
+ * - Blank line
+ * - AI question prefix + newline
+ * - Blank line
+ * - URL line
+ * - A generous tag allowance (60 chars)
+ *
+ * This budget is communicated to the LLM in the prompt so it generates
+ * questions that fit without needing post-hoc truncation.
+ */
+export const calculateQuestionBudget = (reflection: ReflectionData): number => {
+  const titleLength = reflection.title.length;
+  const urlLength = reflection.url.length;
+  const prefixLength = AI_QUESTION_PREFIX.length;
+  // Template overhead: title + \n\n + prefix + question + \n\n + tags + \n + url
+  // title\n\n = titleLength + 2
+  // prefix + question\n\n = prefixLength + question + 2
+  // tags\n = 60 (generous allowance) + 1
+  // url = urlLength
+  const fixedOverhead = titleLength + 2 + prefixLength + 2 + 60 + 1 + urlLength;
+  // Use Bluesky limit (the strictest) as the total budget
+  const budget = BLUESKY_MAX_LENGTH - fixedOverhead;
+  // Ensure at least 30 chars for a meaningful question
+  return Math.max(30, budget);
+};
+
+// --- Title Shortening ---
+
+/**
+ * Strip the subtitle from a title by removing everything after the first colon.
+ * e.g. "Prediction Machines: The Simple Economics of AI" → "Prediction Machines"
+ * Returns the original title if no colon is found.
+ */
+export const stripSubtitle = (title: string): string => {
+  const colonIndex = title.indexOf(":");
+  if (colonIndex < 0) return title;
+  const shortened = title.slice(0, colonIndex).trim();
+  return shortened.length > 0 ? shortened : title;
+};
 
 // --- Variant A: Control (Current Prompt) ---
 
@@ -137,10 +191,14 @@ const assemblePostA: PostAssembler = (modelOutput: string, reflection: Reflectio
  * Returns a SINGLE line: the question. No tags, no title, no URL.
  */
 const buildPromptB: PromptBuilder = (reflection: ReflectionData): PromptPair => {
+  const maxChars = calculateQuestionBudget(reflection);
+
   const system = `You generate a discussion question for a social media post about a blog entry from bagrounds.org.
 Return ONLY a single line — the question. Nothing else — no title, no URL, no commentary, no tags, no labels.
 
 Write a single, extremely concise question. Do not use any personal pronouns — the brief question should be 100% 2nd person. The goal of the question is to attract discussion engagement on a social media post about this content. It should be relatable and easy to answer with an opinion. Minimize word count and don't try to fake personality. Think Strunk and White for concision. Use fewer words. Never explicitly ask what's obvious implicitly (e.g. we are asking what they think, so we don't have to use the words "what do you think"). Never use quotation marks or hyphens. Be careful not to ask questions that are too personal. People should want to answer the question in a public forum. Also, the question should try to be relevant to the content but novel and interesting. Start the question with a single emoji. The question MUST end with a question mark.
+
+IMPORTANT: The question MUST be at most ${maxChars} characters total (including the leading emoji). Keep it short!
 
 Example output (exactly 1 line):
 🤔 Ever trusted a machine more than your gut?
@@ -148,7 +206,7 @@ Example output (exactly 1 line):
 Another example:
 📖 Best book from childhood still worth rereading?`;
 
-  const user = `Generate a discussion question for this page:
+  const user = `Generate a discussion question for this page (max ${maxChars} characters):
 
 Title: ${reflection.title}
 URL: ${reflection.url}
@@ -180,13 +238,13 @@ export const parseVariantBOutput = (modelOutput: string): { question: string; ta
 };
 
 /**
- * Variant B assembler: title + AI Discussion Prompt question + tags + URL.
+ * Variant B assembler: title + AI question + tags + URL.
  *
  * Template:
  * ```
  * $Title
  *
- * 🤖❓ AI Discussion Prompt: $Question
+ * #AI Q: $Question
  *
  * $Tags
  * $URL
@@ -196,7 +254,7 @@ const assemblePostB: PostAssembler = (modelOutput: string, reflection: Reflectio
   const { question, tags } = parseVariantBOutput(modelOutput);
   const parts = [reflection.title, ""];
   if (question) {
-    parts.push(`🤖❓ AI Discussion Prompt: ${question}`, "");
+    parts.push(`${AI_QUESTION_PREFIX}${question}`, "");
   }
   if (tags) {
     parts.push(tags);
@@ -262,3 +320,24 @@ export const assemblePostForVariant = (
   modelOutput: string,
   reflection: ReflectionData,
 ): string => getPostAssembler(variant)(modelOutput, reflection);
+
+// --- Question Shortening Prompt ---
+
+/**
+ * Build a prompt that asks the LLM to shorten a question by a specific amount.
+ * Used as a last resort when the assembled post exceeds platform limits
+ * even after all progressive truncation strategies have been applied.
+ *
+ * The prompt is context-free (no previous conversation) to avoid confusion.
+ */
+export const buildShortenQuestionPrompt = (
+  question: string,
+  overage: number,
+): PromptPair => ({
+  system: `You shorten social media discussion questions. Return ONLY the shortened question — nothing else.
+Keep the same meaning, tone, and emoji prefix. The question MUST end with a question mark.
+Remove unnecessary words. Think Strunk and White for concision.`,
+  user: `Shorten this question by at least ${overage} characters. Current length: ${question.length} characters. Target: at most ${question.length - overage} characters.
+
+Question: ${question}`,
+});

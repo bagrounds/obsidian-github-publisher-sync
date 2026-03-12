@@ -87,6 +87,7 @@ const TOPIC_TAGS_INSTRUCTIONS = `\
 - Do NOT output bare emojis separated by pipes — every tag needs a text label after the emoji
 - Extract topics from the content (books, videos, concepts, themes, etc.)
 - Use 2–4 concise tags
+- Avoid using words that are in the title
 - IMPORTANT: Keep the total tags line short — it must fit in a post under 300 characters`;
 
 /**

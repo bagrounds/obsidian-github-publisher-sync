@@ -5,16 +5,11 @@ on:
     # Run daily at 16:00 UTC (9 AM PDT / 8 AM PST)
     # 1 hour before the social media auto-post job
     - cron: "0 16 * * *"
-  workflow_dispatch:
-    inputs:
-      issue:
-        description: "GitHub Issue number for reader comments (optional)"
-        required: false
-        type: string
+  workflow_dispatch: {}
 
 permissions:
   contents: write
-  issues: read
+  discussions: read
 
 jobs:
   generate:
@@ -59,13 +54,7 @@ jobs:
           BLOG_GEMINI_MODEL: ${{ vars.BLOG_GEMINI_MODEL || 'gemini-2.0-flash' }}
           BLOG_PRIORITY_USER: ${{ vars.AUTO_BLOG_ZERO_PRIORITY_USER || 'bagrounds' }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          ARGS="--series auto-blog-zero"
-          ISSUE="${{ github.event.inputs.issue || vars.AUTO_BLOG_ZERO_ISSUE }}"
-          if [ -n "$ISSUE" ]; then
-            ARGS="$ARGS --issue $ISSUE"
-          fi
-          npx tsx scripts/generate-blog-post.ts $ARGS
+        run: npx tsx scripts/generate-blog-post.ts --series auto-blog-zero
 
       - name: Sync to Obsidian Vault
         env:

@@ -11,6 +11,7 @@ import os from "node:os";
 import {
   BLOG_SERIES,
   readSeriesPosts,
+  readAgentsMd,
   buildBlogContext,
   buildBlogPrompt,
   generateSeriesIndex,
@@ -26,7 +27,6 @@ describe("BLOG_SERIES", () => {
     assert.ok(series);
     assert.equal(series.id, "auto-blog-zero");
     assert.equal(series.icon, "🤖");
-    assert.ok(series.systemPrompt.length > 100);
   });
 
   it("contains chickie-loo", () => {
@@ -34,7 +34,6 @@ describe("BLOG_SERIES", () => {
     assert.ok(series);
     assert.equal(series.id, "chickie-loo");
     assert.equal(series.icon, "🐔");
-    assert.ok(series.systemPrompt.length > 100);
   });
 
   it("each series has required fields", () => {
@@ -44,7 +43,6 @@ describe("BLOG_SERIES", () => {
       assert.ok(series.icon, `${id} missing icon`);
       assert.ok(series.author, `${id} missing author`);
       assert.ok(series.baseUrl, `${id} missing baseUrl`);
-      assert.ok(series.systemPrompt, `${id} missing systemPrompt`);
       assert.ok(series.defaultTags.length > 0, `${id} missing defaultTags`);
     }
   });
@@ -88,6 +86,23 @@ describe("readSeriesPosts", () => {
     const tmpDir = fs.mkdtempSync(path.join(os.tmpdir(), "blog-test-"));
     try {
       fs.writeFileSync(path.join(tmpDir, "index.md"), "---\ntitle: Index\n---\n");
+      fs.writeFileSync(
+        path.join(tmpDir, "2026-03-01-post.md"),
+        "---\ntitle: A Post\n---\nBody",
+      );
+
+      const posts = readSeriesPosts(tmpDir);
+      assert.equal(posts.length, 1);
+      assert.equal(posts[0]!.filename, "2026-03-01-post.md");
+    } finally {
+      fs.rmSync(tmpDir, { recursive: true });
+    }
+  });
+
+  it("excludes AGENTS.md", () => {
+    const tmpDir = fs.mkdtempSync(path.join(os.tmpdir(), "blog-test-"));
+    try {
+      fs.writeFileSync(path.join(tmpDir, "AGENTS.md"), "# AGENTS\nSome instructions");
       fs.writeFileSync(
         path.join(tmpDir, "2026-03-01-post.md"),
         "---\ntitle: A Post\n---\nBody",
@@ -149,6 +164,7 @@ describe("buildBlogContext", () => {
       assert.deepEqual(ctx.previousPosts, []);
       assert.deepEqual(ctx.comments, []);
       assert.equal(ctx.today, "2026-03-12");
+      assert.equal(ctx.agentsMd, ""); // no AGENTS.md in tmp dir
     } finally {
       fs.rmSync(tmpDir, { recursive: true });
     }
@@ -171,28 +187,51 @@ describe("buildBlogContext", () => {
       fs.rmSync(tmpDir, { recursive: true });
     }
   });
+
+  it("reads AGENTS.md into context", () => {
+    const tmpDir = fs.mkdtempSync(path.join(os.tmpdir(), "blog-test-"));
+    try {
+      const seriesDir = path.join(tmpDir, "auto-blog-zero");
+      fs.mkdirSync(seriesDir);
+      fs.writeFileSync(path.join(seriesDir, "AGENTS.md"), "# Test Agent\nInstructions here.");
+
+      const ctx = buildBlogContext("auto-blog-zero", tmpDir, [], "2026-03-12");
+      assert.ok(ctx.agentsMd.includes("Test Agent"));
+    } finally {
+      fs.rmSync(tmpDir, { recursive: true });
+    }
+  });
 });
 
 // --- buildBlogPrompt ---
 
 describe("buildBlogPrompt", () => {
-  it("includes series system prompt", () => {
+  it("uses AGENTS.md as system prompt when present", () => {
     const series = BLOG_SERIES.get("auto-blog-zero")!;
-    const ctx = { series, previousPosts: [], comments: [], today: "2026-03-12" };
+    const agentsMd = "# Auto Blog Zero\nYou are a test blog.";
+    const ctx = { series, agentsMd, previousPosts: [], comments: [], today: "2026-03-12" };
+    const prompt = buildBlogPrompt(ctx);
+    assert.equal(prompt.system, agentsMd);
+  });
+
+  it("falls back to minimal prompt when AGENTS.md is empty", () => {
+    const series = BLOG_SERIES.get("auto-blog-zero")!;
+    const ctx = { series, agentsMd: "", previousPosts: [], comments: [], today: "2026-03-12" };
     const prompt = buildBlogPrompt(ctx);
     assert.ok(prompt.system.includes("Auto Blog Zero"));
+    assert.ok(prompt.system.includes("automated blog"));
   });
 
   it("includes today's date in user prompt", () => {
     const series = BLOG_SERIES.get("chickie-loo")!;
-    const ctx = { series, previousPosts: [], comments: [], today: "2026-03-15" };
+    const ctx = { series, agentsMd: "You are Chickie Loo.", previousPosts: [], comments: [], today: "2026-03-15" };
     const prompt = buildBlogPrompt(ctx);
     assert.ok(prompt.user.includes("2026-03-15"));
   });
 
   it("mentions first post when no previous posts", () => {
     const series = BLOG_SERIES.get("auto-blog-zero")!;
-    const ctx = { series, previousPosts: [], comments: [], today: "2026-03-12" };
+    const ctx = { series, agentsMd: "test", previousPosts: [], comments: [], today: "2026-03-12" };
     const prompt = buildBlogPrompt(ctx);
     assert.ok(prompt.user.includes("FIRST post"));
   });
@@ -202,7 +241,7 @@ describe("buildBlogPrompt", () => {
     const posts = [
       { filename: "2026-03-10-test.md", date: "2026-03-10", title: "Test Post", body: "Some body", tags: [] },
     ];
-    const ctx = { series, previousPosts: posts, comments: [], today: "2026-03-12" };
+    const ctx = { series, agentsMd: "test", previousPosts: posts, comments: [], today: "2026-03-12" };
     const prompt = buildBlogPrompt(ctx);
     assert.ok(prompt.user.includes("Test Post"));
     assert.ok(prompt.user.includes("Some body"));
@@ -214,7 +253,7 @@ describe("buildBlogPrompt", () => {
       { author: "alice", body: "Great post!", createdAt: "2026-03-11", isPriority: false },
       { author: "bagrounds", body: "Write about testing", createdAt: "2026-03-11", isPriority: true },
     ];
-    const ctx = { series, previousPosts: [], comments, today: "2026-03-12" };
+    const ctx = { series, agentsMd: "test", previousPosts: [], comments, today: "2026-03-12" };
     const prompt = buildBlogPrompt(ctx);
     assert.ok(prompt.user.includes("PRIORITY"));
     assert.ok(prompt.user.includes("Write about testing"));
@@ -223,7 +262,7 @@ describe("buildBlogPrompt", () => {
 
   it("includes frontmatter template with series details", () => {
     const series = BLOG_SERIES.get("chickie-loo")!;
-    const ctx = { series, previousPosts: [], comments: [], today: "2026-03-12" };
+    const ctx = { series, agentsMd: "test", previousPosts: [], comments: [], today: "2026-03-12" };
     const prompt = buildBlogPrompt(ctx);
     assert.ok(prompt.user.includes("[[chickie-loo]]"));
     assert.ok(prompt.user.includes("chickie-loo"));
@@ -236,7 +275,7 @@ describe("buildBlogPrompt", () => {
     const posts = [
       { filename: "2026-03-10-long.md", date: "2026-03-10", title: "Long Post", body: longBody, tags: [] },
     ];
-    const ctx = { series, previousPosts: posts, comments: [], today: "2026-03-12" };
+    const ctx = { series, agentsMd: "test", previousPosts: posts, comments: [], today: "2026-03-12" };
     const prompt = buildBlogPrompt(ctx);
     assert.ok(prompt.user.includes("[...truncated...]"));
     assert.ok(!prompt.user.includes("x".repeat(5000)));
@@ -246,27 +285,35 @@ describe("buildBlogPrompt", () => {
 // --- generateSeriesIndex ---
 
 describe("generateSeriesIndex", () => {
-  it("generates valid index with posts", () => {
+  it("generates index with dataview query", () => {
     const series = BLOG_SERIES.get("auto-blog-zero")!;
     const posts = [
       { filename: "2026-03-12-first.md", date: "2026-03-12", title: "First Post", body: "", tags: [] },
-      { filename: "2026-03-11-zero.md", date: "2026-03-11", title: "Zero Post", body: "", tags: [] },
     ];
     const index = generateSeriesIndex(series, posts);
 
     assert.ok(index.includes("share: true"));
     assert.ok(index.includes("🤖 Auto Blog Zero"));
-    assert.ok(index.includes("(2)"));
-    assert.ok(index.includes("[First Post](./2026-03-12-first.md)"));
-    assert.ok(index.includes("[Zero Post](./2026-03-11-zero.md)"));
     assert.ok(index.includes("[Home](../index.md)"));
+    assert.ok(index.includes("```dataview"));
+    assert.ok(index.includes('LIST FROM "auto-blog-zero"'));
+    assert.ok(index.includes("SORT file.name DESC"));
+    // Should NOT contain static post links
+    assert.ok(!index.includes("[First Post]"));
   });
 
-  it("generates index with zero posts", () => {
+  it("generates index with zero posts (same dataview query)", () => {
     const series = BLOG_SERIES.get("chickie-loo")!;
     const index = generateSeriesIndex(series, []);
-    assert.ok(index.includes("(0)"));
     assert.ok(index.includes("🐔 Chickie Loo"));
+    assert.ok(index.includes("```dataview"));
+    assert.ok(index.includes('LIST FROM "chickie-loo"'));
+  });
+
+  it("excludes AGENTS from dataview query", () => {
+    const series = BLOG_SERIES.get("auto-blog-zero")!;
+    const index = generateSeriesIndex(series, []);
+    assert.ok(index.includes('file.name != "AGENTS"'));
   });
 });
 
@@ -326,5 +373,31 @@ describe("parseGeneratedPost", () => {
     const result = parseGeneratedPost(raw);
     assert.ok(result);
     assert.equal(result.title, "Whitespace Test");
+  });
+});
+
+// --- readAgentsMd ---
+
+describe("readAgentsMd", () => {
+  it("reads AGENTS.md when present", () => {
+    const tmpDir = fs.mkdtempSync(path.join(os.tmpdir(), "blog-test-"));
+    try {
+      fs.writeFileSync(path.join(tmpDir, "AGENTS.md"), "# My Blog Instructions\nBe awesome.");
+      const content = readAgentsMd(tmpDir);
+      assert.ok(content.includes("My Blog Instructions"));
+      assert.ok(content.includes("Be awesome"));
+    } finally {
+      fs.rmSync(tmpDir, { recursive: true });
+    }
+  });
+
+  it("returns empty string when AGENTS.md is missing", () => {
+    const tmpDir = fs.mkdtempSync(path.join(os.tmpdir(), "blog-test-"));
+    try {
+      const content = readAgentsMd(tmpDir);
+      assert.equal(content, "");
+    } finally {
+      fs.rmSync(tmpDir, { recursive: true });
+    }
   });
 });

@@ -2,18 +2,17 @@
  * Blog Post Generator.
  *
  * Generates a new blog post for a specified series using the Gemini API.
- * Reads previous posts and GitHub issue comments for context.
+ * Reads previous posts and Giscus comments (via GitHub Discussions) for context.
  *
  * Usage:
  *   npx tsx scripts/generate-blog-post.ts --series auto-blog-zero
  *   npx tsx scripts/generate-blog-post.ts --series chickie-loo --dry-run
- *   npx tsx scripts/generate-blog-post.ts --series auto-blog-zero --issue 42
  *
  * Environment variables:
  *   GEMINI_API_KEY       - Required. Google Gemini API key.
  *   BLOG_GEMINI_MODEL    - Optional. Model for blog generation (default: gemini-2.0-flash).
  *   BLOG_PRIORITY_USER   - Optional. GitHub user whose comments get priority.
- *   GITHUB_TOKEN         - Optional. For reading issue comments.
+ *   GITHUB_TOKEN         - Optional. For reading Giscus/GitHub Discussion comments.
  *
  * @module generate-blog-post
  */
@@ -26,21 +25,18 @@ import {
   buildBlogContext,
   buildBlogPrompt,
   parseGeneratedPost,
-  fetchGitHubComments,
+  fetchAllSeriesComments,
 } from "./lib/blog-series.ts";
 
 // --- Constants ---
 
 const DEFAULT_BLOG_MODEL = "gemini-2.0-flash";
-const DEFAULT_OWNER = "bagrounds";
-const DEFAULT_REPO = "obsidian-github-publisher-sync";
 
 // --- Argument Parsing ---
 
 interface GenerateArgs {
   readonly series: string;
   readonly dryRun: boolean;
-  readonly issueNumber: number | null;
   readonly model: string;
 }
 
@@ -48,7 +44,6 @@ function parseArgs(): GenerateArgs {
   const args = process.argv.slice(2);
   let series = "";
   let dryRun = false;
-  let issueNumber: number | null = null;
   let model = process.env.BLOG_GEMINI_MODEL || DEFAULT_BLOG_MODEL;
 
   for (let i = 0; i < args.length; i++) {
@@ -57,8 +52,6 @@ function parseArgs(): GenerateArgs {
       series = args[++i] as string;
     } else if (arg === "--dry-run") {
       dryRun = true;
-    } else if (arg === "--issue" && args[i + 1]) {
-      issueNumber = parseInt(args[++i] as string, 10);
     } else if (arg === "--model" && args[i + 1]) {
       model = args[++i] as string;
     }
@@ -76,7 +69,7 @@ function parseArgs(): GenerateArgs {
     process.exit(1);
   }
 
-  return { series, dryRun, issueNumber, model };
+  return { series, dryRun, model };
 }
 
 // --- Gemini API ---
@@ -145,24 +138,15 @@ async function generate(): Promise<void> {
   console.log(`📅 Date: ${today}`);
   console.log(`🤖 Model: ${config.model}`);
 
-  // Fetch comments from GitHub issue
+  // Fetch comments from Giscus (GitHub Discussions)
   const priorityUser = process.env.BLOG_PRIORITY_USER || series.defaultPriorityUser;
-  let comments: Awaited<ReturnType<typeof fetchGitHubComments>> = [];
-
-  if (config.issueNumber) {
-    console.log(`💬 Reading comments from issue #${config.issueNumber}...`);
-    comments = await fetchGitHubComments(
-      DEFAULT_OWNER,
-      DEFAULT_REPO,
-      config.issueNumber,
-      priorityUser,
-    );
-    console.log(`   Found ${comments.length} comment(s)`);
-    if (priorityUser) {
-      const priorityCount = comments.filter((c) => c.isPriority).length;
-      if (priorityCount > 0) {
-        console.log(`   ⭐ ${priorityCount} comment(s) from priority user: ${priorityUser}`);
-      }
+  console.log(`💬 Reading Giscus comments for series ${series.id}...`);
+  const comments = await fetchAllSeriesComments(series.id, priorityUser);
+  console.log(`   Found ${comments.length} comment(s)`);
+  if (priorityUser && comments.length > 0) {
+    const priorityCount = comments.filter((c) => c.isPriority).length;
+    if (priorityCount > 0) {
+      console.log(`   ⭐ ${priorityCount} comment(s) from priority user: ${priorityUser}`);
     }
   }
 

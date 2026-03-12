@@ -184,6 +184,16 @@ export function syncSeries(
     }
   }
 
+  // Sync AGENTS.md if it exists
+  const agentsPath = path.join(repoSeriesDir, "AGENTS.md");
+  if (fs.existsSync(agentsPath)) {
+    const written = copyFileToVault(agentsPath, `${series.id}/AGENTS.md`, vaultDir);
+    if (written) {
+      console.log(`  📋 AGENTS.md`);
+      filesWritten++;
+    }
+  }
+
   // Generate/update the index file
   const indexContent = generateSeriesIndex(series, posts);
   const indexPath = path.join(vaultSeriesDir, "index.md");

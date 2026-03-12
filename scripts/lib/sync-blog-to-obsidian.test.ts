@@ -133,12 +133,12 @@ describe("syncSeries", () => {
       const postPath = path.join(vaultDir, "auto-blog-zero/2026-03-12-test.md");
       assert.ok(fs.existsSync(postPath));
 
-      // Check index exists and contains the post
+      // Check index exists and contains dataview query
       const indexPath = path.join(vaultDir, "auto-blog-zero/index.md");
       assert.ok(fs.existsSync(indexPath));
       const indexContent = fs.readFileSync(indexPath, "utf-8");
-      assert.ok(indexContent.includes("Test Post"));
-      assert.ok(indexContent.includes("(1)"));
+      assert.ok(indexContent.includes("```dataview"));
+      assert.ok(indexContent.includes("auto-blog-zero"));
     } finally {
       fs.rmSync(tmpDir, { recursive: true });
       fs.rmSync(vaultDir, { recursive: true });

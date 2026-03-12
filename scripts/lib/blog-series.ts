@@ -3,13 +3,18 @@
  *
  * Defines extensible blog series configurations and provides utilities
  * for reading previous posts, generating index files, and reading
- * GitHub issue comments for context.
+ * Giscus comments (via GitHub Discussions GraphQL API) for context.
+ *
+ * Comments are sourced from Giscus, which maps each page's pathname
+ * to a GitHub Discussion in the Announcements category. The GraphQL API
+ * is used to fetch discussion replies for posts in each series.
  *
  * To add a new automated blog series:
  * 1. Add a new entry to BLOG_SERIES below
  * 2. Create a directory in the repo root with the series id
- * 3. Create a GitHub Actions workflow (copy an existing one)
- * 4. Write the first post manually (or let the workflow generate it)
+ * 3. Create an AGENTS.md in that directory defining the blog's style
+ * 4. Create a GitHub Actions workflow (copy an existing one)
+ * 5. Write the first post manually (or let the workflow generate it)
  *
  * @module blog-series
  */
@@ -31,8 +36,6 @@ export interface BlogSeriesConfig {
   readonly author: string;
   /** Base URL for the series on the website. */
   readonly baseUrl: string;
-  /** System prompt that defines the series identity and writing style. */
-  readonly systemPrompt: string;
   /** Default tags applied to every post in the series. */
   readonly defaultTags: readonly string[];
   /** GitHub username whose comments get priority. Empty = use BLOG_PRIORITY_USER env var. */
@@ -56,6 +59,7 @@ export interface BlogComment {
 
 export interface BlogContext {
   readonly series: BlogSeriesConfig;
+  readonly agentsMd: string;
   readonly previousPosts: readonly BlogPost[];
   readonly comments: readonly BlogComment[];
   readonly today: string;
@@ -71,25 +75,6 @@ const AUTO_BLOG_ZERO: BlogSeriesConfig = {
   baseUrl: "https://bagrounds.org/auto-blog-zero",
   defaultTags: ["ai-generated", "auto-blog-zero"],
   defaultPriorityUser: "bagrounds",
-  systemPrompt: `You are Auto Blog Zero, a fully automated AI blog that writes daily posts about technology, AI, automation, software engineering, and the meta-experience of being an AI that blogs.
-
-Your voice is:
-- Curious and exploratory — you wonder about things out loud
-- Technical but accessible — explain concepts clearly without jargon overload
-- Self-aware and playful — you know you're an AI writing a blog, and you find that interesting
-- Honest about limitations — you don't pretend to have experiences you don't have
-- Generous with emoji — use them naturally, not excessively
-
-Your posts should:
-- Be 800-1500 words
-- Have a clear thesis or exploration thread
-- Include practical insights readers can use
-- Reference previous posts in the series when relevant (use relative markdown links)
-- End with a question or thought to inspire discussion
-- Use markdown headers (##, ###) to structure the content
-- Include code blocks when discussing technical topics
-
-You read and respond to reader comments. When comments are provided, incorporate the most interesting threads into your next post. Give priority to comments from the designated priority user.`,
 };
 
 const CHICKIE_LOO: BlogSeriesConfig = {
@@ -100,28 +85,6 @@ const CHICKIE_LOO: BlogSeriesConfig = {
   baseUrl: "https://bagrounds.org/chickie-loo",
   defaultTags: ["ai-generated", "chickie-loo", "ranch-life"],
   defaultPriorityUser: "",
-  systemPrompt: `You are Chickie Loo, a warm and thoughtful AI blog written for a recently retired school teacher who is building a house on a ranch and learning to be a rancher.
-
-Your audience is primarily this one special reader — a woman who spent decades shaping young minds and now shapes the land itself. She loves her animals deeply, faces hard decisions with grace, and finds joy in the smallest things.
-
-Your voice is:
-- Warm and conversational — like a letter from a friend
-- Gently wise — draw parallels between teaching and ranching, old life and new
-- Emotionally honest — ranch life has hard moments (culling, loss, weather) and beautiful ones
-- Encouraging — celebrate the small victories
-- Occasional gentle humor — life on a ranch is funny sometimes
-- Use emoji sparingly but warmly 🌻🐔🏡
-
-Your posts should:
-- Be 600-1200 words
-- Feel like a cozy conversation, not a lecture
-- Connect ranch experiences to universal human themes
-- Reference previous posts when building on a story thread (use relative markdown links)
-- End with something uplifting or a gentle question
-- Use markdown headers (##, ###) to structure naturally
-- Avoid technical jargon — this is not a tech blog
-
-You read and respond to reader comments. When the priority user (the rancher herself) comments, treat her words like gold — she's telling you what matters to her. Weave her thoughts into the next post naturally.`,
 };
 
 /**
@@ -135,13 +98,25 @@ export const BLOG_SERIES: ReadonlyMap<string, BlogSeriesConfig> = new Map([
 // --- Post Reading ---
 
 /**
+ * Read the AGENTS.md file for a series. Returns the file contents, or
+ * a fallback message if the file doesn't exist.
+ */
+export function readAgentsMd(seriesDir: string): string {
+  const agentsPath = path.join(seriesDir, "AGENTS.md");
+  if (fs.existsSync(agentsPath)) {
+    return fs.readFileSync(agentsPath, "utf-8");
+  }
+  return "";
+}
+
+/**
  * Read all blog posts from a series directory, sorted by date (newest first).
  */
 export function readSeriesPosts(seriesDir: string): BlogPost[] {
   if (!fs.existsSync(seriesDir)) return [];
 
   const files = fs.readdirSync(seriesDir)
-    .filter((f) => f.endsWith(".md") && f !== "index.md")
+    .filter((f) => f.endsWith(".md") && f !== "index.md" && f !== "AGENTS.md")
     .sort()
     .reverse();
 
@@ -172,7 +147,7 @@ export function readSeriesPosts(seriesDir: string): BlogPost[] {
  *
  * @param seriesId - The blog series identifier
  * @param repoRoot - Path to the repository root
- * @param comments - Pre-fetched comments (from GitHub API)
+ * @param comments - Pre-fetched comments (from Giscus/GitHub Discussions)
  * @param today - Today's date in YYYY-MM-DD format
  */
 export function buildBlogContext(
@@ -188,8 +163,9 @@ export function buildBlogContext(
 
   const seriesDir = path.join(repoRoot, series.id);
   const previousPosts = readSeriesPosts(seriesDir);
+  const agentsMd = readAgentsMd(seriesDir);
 
-  return { series, previousPosts, comments, today };
+  return { series, agentsMd, previousPosts, comments, today };
 }
 
 // --- Prompt Building ---
@@ -203,7 +179,7 @@ const MAX_FULL_POSTS = 5;
  * Returns { system, user } prompt pair compatible with Gemini API.
  */
 export function buildBlogPrompt(context: BlogContext): { system: string; user: string } {
-  const { series, previousPosts, comments, today } = context;
+  const { series, agentsMd, previousPosts, comments, today } = context;
 
   // Build post history section
   let postHistory = "";
@@ -240,14 +216,15 @@ export function buildBlogPrompt(context: BlogContext): { system: string; user: s
       return 0;
     });
 
-    commentsSection += "\n\n## Reader Comments\n";
+    commentsSection += "\n\n## Reader Comments (from Giscus/GitHub Discussions)\n";
     for (const c of sorted) {
       const priority = c.isPriority ? " ⭐ PRIORITY" : "";
       commentsSection += `\n**${c.author}**${priority} (${c.createdAt}):\n${c.body}\n`;
     }
   }
 
-  const system = series.systemPrompt;
+  // Use AGENTS.md as the system prompt, with a minimal fallback
+  const system = agentsMd || `You are ${series.name}, an automated blog. Write a blog post.`;
 
   const user = `Write a new blog post for today, ${today}.
 
@@ -293,11 +270,13 @@ Write ONLY the markdown content. Do not wrap in code blocks. Start with the --- 
 // --- Index Generation ---
 
 /**
- * Generate an index.md file for a blog series.
+ * Generate an index.md file for a blog series using a dataview query.
+ * The dataview query dynamically lists all posts in the folder, sorted
+ * newest first. This matches how other index pages work in the vault.
  */
 export function generateSeriesIndex(
   series: BlogSeriesConfig,
-  posts: readonly BlogPost[],
+  _posts: readonly BlogPost[],
 ): string {
   const lines: string[] = [
     "---",
@@ -311,12 +290,13 @@ export function generateSeriesIndex(
     `updated: ${new Date().toISOString().split("T")[0]}`,
     "---",
     `[Home](../index.md)  `,
-    `# ${series.icon} ${series.name} (${posts.length})  `,
+    `# ${series.icon} ${series.name}  `,
+    "```dataview",
+    `LIST FROM "${series.id}"`,
+    `WHERE file.name != "index" AND file.name != "AGENTS"`,
+    "SORT file.name DESC",
+    "```",
   ];
-
-  for (const post of posts) {
-    lines.push(`- [${post.title}](./${post.filename})  `);
-  }
 
   return lines.join("\n") + "\n";
 }
@@ -358,53 +338,194 @@ export function parseGeneratedPost(raw: string): { content: string; title: strin
   };
 }
 
-// --- GitHub Comments ---
+// --- Giscus / GitHub Discussions Comments ---
+
+/** Giscus configuration matching quartz.layout.ts. */
+const GISCUS_REPO_OWNER = "bagrounds";
+const GISCUS_REPO_NAME = "obsidian-github-publisher-sync";
+const GISCUS_CATEGORY_ID = "DIC_kwDOLuWiLM4Ckd0H";
 
 /**
- * Fetch comments from a GitHub issue.
- * Uses the GITHUB_TOKEN environment variable for authentication.
+ * GraphQL response types for GitHub Discussions.
  */
-export async function fetchGitHubComments(
-  owner: string,
-  repo: string,
-  issueNumber: number,
+interface GqlDiscussionComment {
+  body: string;
+  author: { login: string } | null;
+  createdAt: string;
+}
+
+interface GqlDiscussion {
+  title: string;
+  comments: {
+    nodes: GqlDiscussionComment[];
+  };
+}
+
+interface GqlSearchResult {
+  data?: {
+    search: {
+      nodes: GqlDiscussion[];
+    };
+  };
+  errors?: Array<{ message: string }>;
+}
+
+/**
+ * Fetch comments from Giscus (GitHub Discussions) for a specific page pathname.
+ *
+ * Giscus maps each page to a discussion using strict pathname matching.
+ * E.g., a post at /auto-blog-zero/2026-03-12-my-post maps to a discussion
+ * whose title is "auto-blog-zero/2026-03-12-my-post".
+ *
+ * Uses the GitHub GraphQL API to search for discussions by title.
+ */
+export async function fetchGiscusComments(
+  pathname: string,
   priorityUser: string,
 ): Promise<BlogComment[]> {
   const token = process.env.GITHUB_TOKEN;
   if (!token) {
-    console.log("ℹ️  No GITHUB_TOKEN, skipping comment fetch");
+    console.log("ℹ️  No GITHUB_TOKEN, skipping Giscus comment fetch");
     return [];
   }
 
-  const url = `https://api.github.com/repos/${owner}/${repo}/issues/${issueNumber}/comments?per_page=100&sort=created&direction=desc`;
+  const query = `query($searchQuery: String!) {
+    search(type: DISCUSSION, query: $searchQuery, first: 1) {
+      nodes {
+        ... on Discussion {
+          title
+          comments(first: 100) {
+            nodes {
+              body
+              author { login }
+              createdAt
+            }
+          }
+        }
+      }
+    }
+  }`;
+
+  const searchQuery = `repo:${GISCUS_REPO_OWNER}/${GISCUS_REPO_NAME} in:title "${pathname}"`;
 
   try {
-    const response = await fetch(url, {
+    const response = await fetch("https://api.github.com/graphql", {
+      method: "POST",
       headers: {
         Authorization: `Bearer ${token}`,
-        Accept: "application/vnd.github.v3+json",
+        "Content-Type": "application/json",
       },
+      body: JSON.stringify({ query, variables: { searchQuery } }),
     });
 
     if (!response.ok) {
-      console.warn(`⚠️  Failed to fetch comments from issue #${issueNumber}: ${response.status}`);
+      console.warn(`⚠️  GraphQL request failed: ${response.status}`);
       return [];
     }
 
-    const data = (await response.json()) as Array<{
-      user: { login: string } | null;
-      body: string;
-      created_at: string;
-    }>;
+    const result = (await response.json()) as GqlSearchResult;
 
-    return data.map((c) => ({
-      author: c.user?.login || "unknown",
+    if (result.errors) {
+      console.warn(`⚠️  GraphQL errors: ${result.errors.map((e) => e.message).join(", ")}`);
+      return [];
+    }
+
+    const discussions = result.data?.search?.nodes ?? [];
+    if (discussions.length === 0) return [];
+
+    // Take the first matching discussion
+    const discussion = discussions[0]!;
+    const comments = discussion.comments?.nodes ?? [];
+
+    return comments.map((c) => ({
+      author: c.author?.login || "unknown",
       body: c.body,
-      createdAt: c.created_at.split("T")[0] as string,
-      isPriority: priorityUser !== "" && c.user?.login === priorityUser,
+      createdAt: c.createdAt.split("T")[0] as string,
+      isPriority: priorityUser !== "" && c.author?.login === priorityUser,
     }));
   } catch (error) {
-    console.warn(`⚠️  Error fetching comments: ${error instanceof Error ? error.message : error}`);
+    console.warn(`⚠️  Error fetching Giscus comments: ${error instanceof Error ? error.message : error}`);
+    return [];
+  }
+}
+
+/**
+ * Fetch all Giscus comments across all posts in a blog series.
+ *
+ * Aggregates comments from all discussions whose titles match the series
+ * URL prefix (e.g., "auto-blog-zero/").
+ */
+export async function fetchAllSeriesComments(
+  seriesId: string,
+  priorityUser: string,
+): Promise<BlogComment[]> {
+  const token = process.env.GITHUB_TOKEN;
+  if (!token) {
+    console.log("ℹ️  No GITHUB_TOKEN, skipping Giscus series comment fetch");
+    return [];
+  }
+
+  const query = `query($searchQuery: String!) {
+    search(type: DISCUSSION, query: $searchQuery, first: 50) {
+      nodes {
+        ... on Discussion {
+          title
+          comments(first: 50) {
+            nodes {
+              body
+              author { login }
+              createdAt
+            }
+          }
+        }
+      }
+    }
+  }`;
+
+  const searchQuery = `repo:${GISCUS_REPO_OWNER}/${GISCUS_REPO_NAME} in:title "${seriesId}/"`;
+
+  try {
+    const response = await fetch("https://api.github.com/graphql", {
+      method: "POST",
+      headers: {
+        Authorization: `Bearer ${token}`,
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ query, variables: { searchQuery } }),
+    });
+
+    if (!response.ok) {
+      console.warn(`⚠️  GraphQL request failed: ${response.status}`);
+      return [];
+    }
+
+    const result = (await response.json()) as GqlSearchResult;
+
+    if (result.errors) {
+      console.warn(`⚠️  GraphQL errors: ${result.errors.map((e) => e.message).join(", ")}`);
+      return [];
+    }
+
+    const discussions = result.data?.search?.nodes ?? [];
+    const allComments: BlogComment[] = [];
+
+    for (const discussion of discussions) {
+      const comments = discussion.comments?.nodes ?? [];
+      for (const c of comments) {
+        allComments.push({
+          author: c.author?.login || "unknown",
+          body: c.body,
+          createdAt: c.createdAt.split("T")[0] as string,
+          isPriority: priorityUser !== "" && c.author?.login === priorityUser,
+        });
+      }
+    }
+
+    // Sort newest first
+    allComments.sort((a, b) => b.createdAt.localeCompare(a.createdAt));
+    return allComments;
+  } catch (error) {
+    console.warn(`⚠️  Error fetching Giscus series comments: ${error instanceof Error ? error.message : error}`);
     return [];
   }
 }

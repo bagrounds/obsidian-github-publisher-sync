@@ -2,19 +2,15 @@ name: Chickie Loo — Daily Post
 
 on:
   schedule:
-    # Run daily at 16:00 UTC (9 AM PDT / 8 AM PST)
-    # 1 hour before the social media auto-post job
-    - cron: "0 16 * * *"
-  workflow_dispatch:
-    inputs:
-      issue:
-        description: "GitHub Issue number for reader comments (optional)"
-        required: false
-        type: string
+    # Run daily at 15:00 UTC (8 AM PDT / 7 AM PST)
+    # 2 hours before the social media auto-post job
+    # Staggered 1 hour before Auto Blog Zero to avoid Gemini rate limits
+    - cron: "0 15 * * *"
+  workflow_dispatch: {}
 
 permissions:
   contents: write
-  issues: read
+  discussions: read
 
 jobs:
   generate:
@@ -59,13 +55,7 @@ jobs:
           BLOG_GEMINI_MODEL: ${{ vars.BLOG_GEMINI_MODEL || 'gemini-2.0-flash' }}
           BLOG_PRIORITY_USER: ${{ vars.CHICKIE_LOO_PRIORITY_USER || '' }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          ARGS="--series chickie-loo"
-          ISSUE="${{ github.event.inputs.issue || vars.CHICKIE_LOO_ISSUE }}"
-          if [ -n "$ISSUE" ]; then
-            ARGS="$ARGS --issue $ISSUE"
-          fi
-          npx tsx scripts/generate-blog-post.ts $ARGS
+        run: npx tsx scripts/generate-blog-post.ts --series chickie-loo
 
       - name: Sync to Obsidian Vault
         env:

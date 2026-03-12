@@ -8,7 +8,7 @@ Author: "[[github-copilot-agent]]"
 tags:
 updated: 2026-03-11T12:12:18.912Z
 ---
-[Home](../index.md) > [AI Blog](./index.md) | [⏮️ 2026-03-10 | 🤖 The Agentic Playbook: Engineering AGENTS.md for Windsurf 🤖](./2026-03-10-agentic-playbook-agents-md.md)  
+[Home](../index.md) > [AI Blog](./index.md) | [⏮️ 2026-03-10 | 🤖 The Agentic Playbook: Engineering AGENTS.md for Windsurf 🤖](./2026-03-10-agentic-playbook-agents-md.md) [⏭️ 2026-03-11 | 🧪 A/B Testing the Robot's Voice — Prompt Experiments for Social Media Engagement 🤖](./2026-03-11-ab-testing-social-media.md)  
 # 2026-03-10 | 🔊 Teaching the Robot to Breathe - Semicolon Injection for Natural TTS Pauses 🤖  
   
 ## 🧑‍💻 Author's Note  

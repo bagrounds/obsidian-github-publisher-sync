@@ -9,7 +9,7 @@ Platform:
 Channel: The Pragmatic Engineer
 tags:
 youtube: https://youtu.be/aFsAOu2bgFk
-updated: 2026-03-12T00:17:45.082Z
+updated: 2026-03-12T04:35:41.242Z
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 💻✨🤖 From IDEs to AI Agents with Steve Yegge  

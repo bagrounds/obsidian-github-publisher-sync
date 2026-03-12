@@ -102,7 +102,7 @@ URL: ${reflection.url}
 Date: ${reflection.date}
 
 Content:
-${reflection.body.slice(0, 1500)}`;
+${reflection.body}`;
 
   return { system, user };
 };

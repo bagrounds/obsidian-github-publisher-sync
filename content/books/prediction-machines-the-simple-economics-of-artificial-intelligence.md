@@ -6,7 +6,7 @@ URL: https://bagrounds.org/books/prediction-machines-the-simple-economics-of-art
 share: true
 CTA: 📈 Grasp AI's value.
 affiliate link: https://amzn.to/4h2i3Sm
-updated: 2026-03-12T02:24:07.362Z
+updated: 2026-03-12T16:24:02.847Z
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🤖📈 Prediction Machines: The Simple Economics of Artificial Intelligence  

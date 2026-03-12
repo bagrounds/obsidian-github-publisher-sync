@@ -5,6 +5,7 @@ aliases:
 URL: https://bagrounds.org/books/love-sense-the-revolutionary-new-science-of-romantic-relationships
 share: true
 affiliate link: https://amzn.to/4ktDD3c
+updated: 2026-03-12T14:19:45.210Z
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ❤️🧠 Love Sense: The Revolutionary New Science of Romantic Relationships  

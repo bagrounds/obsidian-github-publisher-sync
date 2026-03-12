@@ -292,6 +292,7 @@ export function generateSeriesIndex(
     `[Home](../index.md)  `,
     `# ${series.icon} ${series.name}  `,
     "```dataview",
+    // file.name in dataview is the stem without .md extension
     `LIST FROM "${series.id}"`,
     `WHERE file.name != "index" AND file.name != "AGENTS"`,
     "SORT file.name DESC",
@@ -434,7 +435,8 @@ export async function fetchGiscusComments(
     if (discussions.length === 0) return [];
 
     // Take the first matching discussion
-    const discussion = discussions[0]!;
+    const discussion = discussions[0];
+    if (!discussion) return [];
     const comments = discussion.comments?.nodes ?? [];
 
     return comments.map((c) => ({

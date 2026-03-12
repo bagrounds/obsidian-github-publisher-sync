@@ -173,6 +173,7 @@ export const parseVariantBOutput = (modelOutput: string): { question: string; ta
     return { question: lines[0]!.trim(), tags: lines[1]!.trim() };
   }
   if (lines.length === 1) {
+    // Expected path for prompt B's question-only output — tags come from a separate prompt A call
     return { question: lines[0]!.trim(), tags: "" };
   }
   return { question: "", tags: "" };

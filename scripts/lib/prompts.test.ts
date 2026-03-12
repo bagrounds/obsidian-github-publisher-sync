@@ -168,6 +168,16 @@ describe("buildPromptForVariant", () => {
     assert.equal(bodyInPrompt.length, 3000, "body should be passed in full");
   });
 
+  it("variant B passes full body content without truncation", () => {
+    const longReflection: ReflectionData = {
+      ...testReflection,
+      body: "y".repeat(3000),
+    };
+    const prompt = buildPromptForVariant("B", longReflection);
+    const bodyInPrompt = prompt.user.split("Content:\n")[1] ?? "";
+    assert.equal(bodyInPrompt.length, 3000, "body should be passed in full");
+  });
+
   it("variant B instructs 2nd person and concision", () => {
     const prompt = buildPromptForVariant("B", testReflection);
     assert.ok(prompt.system.includes("2nd person"), "should instruct 2nd person");

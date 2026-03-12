@@ -42,6 +42,7 @@ export {
   BLUESKY_MAX_LENGTH,
   MASTODON_MAX_LENGTH,
   DEFAULT_GEMINI_MODEL,
+  DEFAULT_QUESTION_MODEL,
   BLUESKY_OEMBED_INITIAL_DELAY_MS,
   BLUESKY_OEMBED_RETRY_DELAY_MS,
 } from "./lib/types.ts";
@@ -85,7 +86,7 @@ export {
 } from "./lib/embed-section.ts";
 
 // --- Re-exports: Gemini ---
-export { buildGeminiPrompt, generateTweetWithGemini } from "./lib/gemini.ts";
+export { buildGeminiPrompt, generateTweetWithGemini, parseRetryDelay, isRateLimitError } from "./lib/gemini.ts";
 
 // --- Re-exports: A/B Testing Experiment ---
 export type { VariantId, VariantWeight, ExperimentAssignment, ExperimentRecord, EngagementMetrics, ExperimentObservation } from "./lib/experiment.ts";

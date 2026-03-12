@@ -45,7 +45,7 @@ scripts/lib/
 ├── experiment.ts     # Variant selection, assignment creation, record persistence
 ├── prompts.ts        # Prompt builders + deterministic post assemblers per variant
 ├── analytics.ts      # Engagement metric fetching + statistical analysis
-├── gemini.ts         # Calls model for creative parts, then assembles post deterministically
+├── gemini.ts         # Dual-model AI calls + rate limit retry + deterministic assembly
 └── pipeline.ts       # Per-platform variant resolution, record writing
 
 scripts/
@@ -65,19 +65,46 @@ pipeline.ts
     ↓ (for each platform independently)
     resolveVariant() → "A" or "B"  (independent coin flip)
     ↓
-    generateTweetWithGemini(reflection, ..., variant)
-      ↓ Variant A: one model call → prompt A → tags
-      ↓ Variant B: two model calls → prompt A → tags, prompt B → question
+    generateTweetWithGemini(reflection, ..., variant, questionModel)
+      ↓ Variant A: one model call (Gemma) → prompt A → tags
+      ↓ Variant B: two parallel model calls:
+      │   • Gemma → prompt A → tags (identical to A)
+      │   • Gemini 3.1 Flash Lite → prompt B → question
       ↓ assemblePostForVariant() → deterministic template: title + creative + URL
     ↓
-    post to platform
+    post to platform (with fitPostToLimit per platform)
     ↓
-    writeExperimentRecord(vaultDir, record)  → data/ab-test/{timestamp}_{platform}_{note}.json
+    writeExperimentRecord(vaultDir, record)  → data/ab-test/{timestamp}_{platform}_{note}.json.md
     ↓
 pushObsidianVault()  (records synced to Obsidian)
     ↓
 auto-post.ts → readExperimentRecords() → runAnalysis()  (incremental)
 ```
+
+### Dual-Model Architecture
+
+Different models are used for different creative tasks:
+
+| Task | Model | Rationale |
+|------|-------|-----------|
+| Topic tags (prompt A) | Gemma (`gemma-3-27b-it`) | Smaller, faster, sufficient for tag generation |
+| Discussion question (prompt B) | Gemini 3.1 Flash Lite (`gemini-3.1-flash-lite-preview`) | Higher rate limits, better question quality |
+
+**Configuration:**
+- `GEMINI_MODEL` — Model for tag generation (default: `gemma-3-27b-it`)
+- `GEMINI_QUESTION_MODEL` — Model for question generation (default: `gemini-3.1-flash-lite-preview`)
+
+Both use the same API key (`GEMINI_API_KEY`).
+
+### Rate Limit Handling
+
+When the API returns 429 (RESOURCE_EXHAUSTED), the retry logic:
+1. Parses the `retryDelay` from the error details (e.g. `"14s"`)
+2. Waits the specified duration before retrying
+3. Falls back to exponential backoff if no explicit delay is provided
+4. Retries up to 3 times per call
+
+This is especially important for the Gemma model which has lower rate limits.
 
 ### Deterministic Post Assembly
 
@@ -197,5 +224,7 @@ Each record is a standalone JSON file in `data/ab-test/`:
 - **experiment.ts:** 50 tests — variant selection, assignment, override, validation, record persistence, migration (.json → .json.md), backward-compat reading
 - **prompts.ts:** 36 tests — prompt building, deterministic assembly, question-only prompt B, tag reuse, parser, registry completeness, purity
 - **analytics.ts:** 32 tests — statistics, t-test, p-value, summary formatting
+- **gemini.ts:** 24 tests — parseRetryDelay (9 formats), isRateLimitError (8 cases), buildGeminiPrompt compat, dual-model config verification
+- **env.ts:** 2 new tests — default question model, custom GEMINI_QUESTION_MODEL
 
-Total: 118 new tests (482 overall, all passing).
+Total: 144 new tests (506 overall, all passing).

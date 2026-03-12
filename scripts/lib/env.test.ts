@@ -73,7 +73,7 @@ describe("validateEnvironment", () => {
       "BLUESKY_IDENTIFIER", "BLUESKY_APP_PASSWORD",
       "MASTODON_INSTANCE_URL", "MASTODON_ACCESS_TOKEN",
       "DISABLE_TWITTER", "DISABLE_BLUESKY", "DISABLE_MASTODON",
-      "GEMINI_MODEL",
+      "GEMINI_MODEL", "GEMINI_QUESTION_MODEL",
     ]) {
       savedEnv[key] = process.env[key];
       delete process.env[key];
@@ -106,6 +106,17 @@ describe("validateEnvironment", () => {
     const env = validateEnvironment();
     assert.equal(env.gemini.apiKey, "test-GEMINI_API_KEY");
     assert.equal(env.gemini.model, "gemma-3-27b-it");
+  });
+
+  it("returns gemini config with default question model", () => {
+    const env = validateEnvironment();
+    assert.equal(env.gemini.questionModel, "gemini-3.1-flash-lite-preview");
+  });
+
+  it("uses custom question model when GEMINI_QUESTION_MODEL is set", () => {
+    process.env.GEMINI_QUESTION_MODEL = "gemini-custom-model";
+    const env = validateEnvironment();
+    assert.equal(env.gemini.questionModel, "gemini-custom-model");
   });
 
   it("returns Twitter credentials when all 4 are set", () => {

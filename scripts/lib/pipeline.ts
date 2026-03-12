@@ -75,7 +75,7 @@ const createTwitterTask = (
     console.log(formatAssignment(assignment));
 
     console.log(`🤖 Generating Twitter post (variant ${variant})...`);
-    const postText = await generateTweetWithGemini(reflection, env.gemini.apiKey, env.gemini.model, variant);
+    const postText = await generateTweetWithGemini(reflection, env.gemini.apiKey, env.gemini.model, variant, env.gemini.questionModel);
     console.log(`📝 Twitter post (${calculateTweetLength(postText)} chars, variant ${variant}):\n${postText}`);
 
     const twitterText = fitPostToLimit(postText, TWITTER_MAX_LENGTH);
@@ -129,7 +129,7 @@ const createBlueskyTask = (
     console.log(formatAssignment(assignment));
 
     console.log(`🤖 Generating Bluesky post (variant ${variant})...`);
-    const postText = await generateTweetWithGemini(reflection, env.gemini.apiKey, env.gemini.model, variant);
+    const postText = await generateTweetWithGemini(reflection, env.gemini.apiKey, env.gemini.model, variant, env.gemini.questionModel);
     console.log(`📝 Bluesky post (${calculateTweetLength(postText)} chars, variant ${variant}):\n${postText}`);
 
     console.log(`🦋 Posting to Bluesky...`);
@@ -203,7 +203,7 @@ const createMastodonTask = (
     console.log(formatAssignment(assignment));
 
     console.log(`🤖 Generating Mastodon post (variant ${variant})...`);
-    const postText = await generateTweetWithGemini(reflection, env.gemini.apiKey, env.gemini.model, variant);
+    const postText = await generateTweetWithGemini(reflection, env.gemini.apiKey, env.gemini.model, variant, env.gemini.questionModel);
     console.log(`📝 Mastodon post (${calculateTweetLength(postText)} chars, variant ${variant}):\n${postText}`);
 
     console.log(`🐘 Posting to Mastodon...`);

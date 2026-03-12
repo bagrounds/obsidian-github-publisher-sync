@@ -69,7 +69,7 @@ export interface VariantConfig {
  * Each tag MUST be "emoji Topic Label" — never bare emojis or bare pipes.
  */
 const TOPIC_TAGS_INSTRUCTIONS = `\
-- Each topic tag MUST be an emoji followed by a space and a short topic label (e.g. "📚 Books" or "🤖 AI")
+- Each topic tag MUST be an emoji followed by a space and a short topic label (e.g. 🌐 Systems Thinking or 🤖 AI)
 - Separate tags with " | "
 - Do NOT output bare emojis separated by pipes — every tag needs a text label after the emoji
 - Extract topics from the content (books, videos, concepts, themes, etc.)

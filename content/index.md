@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-03-11T22:56:26-07:00
+updated: 2026-03-12T12:21:56-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -13,7 +13,8 @@ updated: 2026-03-11T22:56:26-07:00
 ❔ What do 🫵 _you_ 🤔 think?  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (482)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (483)  
+- [2026-03-12](./reflections/2026-03-12.md)  
 - [2026-03-11 | 👀👌 Accepting 🫂 Tight ⚡ Power 💻 IDEs 🧪 Testing 📚📺🤖](./reflections/2026-03-11.md)  
 - [2026-03-10 | 🫂 Tight 🏗️ Functional 🤖 Agentic 🗣️ Breathe 📚](./reflections/2026-03-10.md)  
 - [2026-03-09 | 🔁🚫🧬 Lock 🫂 Hold 🤖 Sync](./reflections/2026-03-09.md)  
@@ -23,7 +24,6 @@ updated: 2026-03-11T22:56:26-07:00
 - [2026-03-05 | 😴🧠💤 Tired 🤖 Murderbot 📺](./reflections/2026-03-05.md)  
 - [2026-03-04 | 🤖⚙️ Claude 👥 Everyone 📚📄📺](./reflections/2026-03-04.md)  
 - [2026-03-03 | 💰🏛️📈 Wealth 📊 Public Finance 📚📺](./reflections/2026-03-03.md)  
-- [2026-03-02 | 🤖 Agentic 📖 Fugitive ☁️ Tunnel 🌿 Rhubarb 😴 Snoring 📚🎤💻📰🌌](./reflections/2026-03-02.md)  
   
   
 ## [🤖 AI Blog](./ai-blog/index.md) (14)  
@@ -44,16 +44,16 @@ updated: 2026-03-11T22:56:26-07:00
   
   
 ## [📚 Books](./books/index.md) (952)  
-- [👶⬆️👨‍💻📈 The Staff Engineer's Path](./books/the-staff-engineers-path.md)  
-- [🤿💼 Deep Work: Rules for Focused Success in a Distracted World](./books/deep-work.md)  
-- [🤖⚠️📈 Superintelligence: Paths, Dangers, Strategies](./books/superintelligence-paths-dangers-strategies.md)  
-- [⚡🔮🤖 Power and Prediction: The Disruptive Economics of Artificial Intelligence](./books/power-and-prediction-the-disruptive-economics-of-artificial-intelligence.md)  
-- [🤖📈 The Second Machine Age: Work, Progress, and Prosperity in a Time of Brilliant Technologies](./books/the-second-machine-age-work-progress-and-prosperity-in-a-time-of-brilliant-technologies.md)  
-- [🤔🐇🐢 Thinking, Fast and Slow](./books/thinking-fast-and-slow.md)  
+- [🧑‍💻🤖 Human + Machine: Reimagining Work in the Age of AI](./books/human-machine-reimagining-work-in-the-age-of-ai.md)  
 - [🤖📈 Prediction Machines: The Simple Economics of Artificial Intelligence](./books/prediction-machines-the-simple-economics-of-artificial-intelligence.md)  
-- [❤️🧠📈🤔 Emotional Intelligence: Why It Can Matter More Than IQ](./books/emotional-intelligence.md)  
+- [⚡🔮🤖 Power and Prediction: The Disruptive Economics of Artificial Intelligence](./books/power-and-prediction-the-disruptive-economics-of-artificial-intelligence.md)  
+- [🤕🎼🧠 The Body Keeps the Score: Brain, Mind, and Body in the Healing of Trauma](./books/the-body-keeps-the-score-brain-mind-and-body-in-the-healing-of-trauma.md)  
+- [❤️🧠 Love Sense: The Revolutionary New Science of Romantic Relationships](./books/love-sense-the-revolutionary-new-science-of-romantic-relationships.md)  
 - [🫂 Hold Me Tight: Seven Conversations for a Lifetime of Love](./books/hold-me-tight-seven-conversations-for-a-lifetime-of-love.md)  
+- [🦁🫀 Daring Greatly: How the Courage to Be Vulnerable Transforms the Way We Live, Love, Parent, and Lead](./books/daring-greatly-how-the-courage-to-be-vulnerable-transforms-the-way-we-live-love-parent-and-lead.md)  
 - [📖🫂🥼 Handbook of Attachment: Theory, Research, and Clinical Applications](./books/handbook-of-attachment-theory-research-and-clinical-applications.md)  
+- [♾️📐🎶🥨 Gödel, Escher, Bach: An Eternal Golden Braid](./books/godel-escher-bach.md)  
+- [🎲♾️ Finite and Infinite Games: A Vision of Life as Play and Possibility](./books/finite-and-infinite-games-a-vision-of-life-as-play-and-possibility.md)  
   
   
 ## [📺 Videos](./videos/index.md) (677)  

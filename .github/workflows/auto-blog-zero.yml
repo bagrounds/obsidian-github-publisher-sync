@@ -2,23 +2,18 @@ name: Auto Blog Zero — Daily Post
 
 on:
   schedule:
-    # Run daily at 16:00 UTC (9 AM PDT / 8 AM PST)
-    # 1 hour before the social media auto-post job
     - cron: "0 16 * * *"
   workflow_dispatch: {}
 
 permissions:
-  contents: write
+  contents: read
   discussions: read
 
 jobs:
-  generate:
+  generate-and-sync:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-          token: ${{ secrets.GITHUB_TOKEN }}
 
       - uses: actions/setup-node@v4
         with:
@@ -30,8 +25,7 @@ jobs:
         with:
           path: node_modules
           key: v3-${{ runner.os }}-node22-${{ hashFiles('**/package-lock.json') }}
-          restore-keys: |
-            v3-${{ runner.os }}-node22-
+          restore-keys: v3-${{ runner.os }}-node22-
 
       - name: Install Dependencies
         if: ${{ steps.cache.outputs.cache-hit != 'true' }}
@@ -45,33 +39,25 @@ jobs:
         with:
           path: /tmp/obsidian-vault-cache
           key: obsidian-vault-${{ github.run_id }}
-          restore-keys: |
-            obsidian-vault-
+          restore-keys: obsidian-vault-
 
       - name: Generate Blog Post
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-          BLOG_GEMINI_MODEL: ${{ vars.BLOG_GEMINI_MODEL || 'gemini-2.0-flash' }}
+          BLOG_GEMINI_MODEL: ${{ vars.BLOG_GEMINI_MODEL || 'gemini-3.1-flash-lite-preview' }}
           BLOG_PRIORITY_USER: ${{ vars.AUTO_BLOG_ZERO_PRIORITY_USER || 'bagrounds' }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: npx tsx scripts/generate-blog-post.ts --series auto-blog-zero
 
-      - name: Sync to Obsidian Vault
+      - name: Sync Post to Obsidian Vault
         env:
           OBSIDIAN_AUTH_TOKEN: ${{ secrets.OBSIDIAN_AUTH_TOKEN }}
           OBSIDIAN_VAULT_NAME: ${{ secrets.OBSIDIAN_VAULT_NAME }}
-          OBSIDIAN_VAULT_PASSWORD: ${{ secrets.OBSIDIAN_VAULT_PASSWORD }}
           OBSIDIAN_VAULT_CACHE_DIR: /tmp/obsidian-vault-cache
-        run: npx tsx scripts/sync-blog-to-obsidian.ts --series auto-blog-zero
-
-      - name: Commit and Push
         run: |
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git config --global user.name "github-actions[bot]"
-          git add auto-blog-zero/
-          if git diff --cached --quiet; then
-            echo "No new posts to commit"
+          POST=$(ls -1 auto-blog-zero/$(TZ=America/Los_Angeles date +%Y-%m-%d)*.md 2>/dev/null | head -1)
+          if [ -n "$POST" ]; then
+            npx tsx scripts/sync-file-to-obsidian.ts "$POST" "$POST"
           else
-            git commit -m "🤖 Auto Blog Zero: daily post for $(date -u +%Y-%m-%d)"
-            git push
+            echo "No new post generated today"
           fi

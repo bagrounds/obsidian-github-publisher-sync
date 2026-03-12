@@ -1,38 +1,21 @@
+#!/usr/bin/env npx tsx
 /**
- * Blog Post Generator.
- *
- * Generates a new blog post for a specified series using the Gemini API.
- * Reads previous posts and Giscus comments (via GitHub Discussions) for context.
- *
- * Usage:
- *   npx tsx scripts/generate-blog-post.ts --series auto-blog-zero
- *   npx tsx scripts/generate-blog-post.ts --series chickie-loo --dry-run
- *
- * Environment variables:
- *   GEMINI_API_KEY       - Required. Google Gemini API key.
- *   BLOG_GEMINI_MODEL    - Optional. Model for blog generation (default: gemini-2.0-flash).
- *   BLOG_PRIORITY_USER   - Optional. GitHub user whose comments get priority.
- *   GITHUB_TOKEN         - Optional. For reading Giscus/GitHub Discussion comments.
- *
+ * Generates a daily blog post for a specified series using the Gemini API.
  * @module generate-blog-post
  */
 
 import fs from "node:fs";
 import path from "node:path";
-
 import {
   BLOG_SERIES,
   buildBlogContext,
   buildBlogPrompt,
   parseGeneratedPost,
   fetchAllSeriesComments,
+  todayPacific,
 } from "./lib/blog-series.ts";
 
-// --- Constants ---
-
-const DEFAULT_BLOG_MODEL = "gemini-2.0-flash";
-
-// --- Argument Parsing ---
+const DEFAULT_BLOG_MODEL = "gemini-3.1-flash-lite-preview";
 
 interface GenerateArgs {
   readonly series: string;
@@ -40,183 +23,121 @@ interface GenerateArgs {
   readonly model: string;
 }
 
-function parseArgs(): GenerateArgs {
-  const args = process.argv.slice(2);
-  let series = "";
-  let dryRun = false;
-  let model = process.env.BLOG_GEMINI_MODEL || DEFAULT_BLOG_MODEL;
+const log = (data: Record<string, unknown>): void =>
+  console.log(JSON.stringify({ timestamp: new Date().toISOString(), ...data }));
 
-  for (let i = 0; i < args.length; i++) {
-    const arg = args[i];
-    if (arg === "--series" && args[i + 1]) {
-      series = args[++i] as string;
-    } else if (arg === "--dry-run") {
-      dryRun = true;
-    } else if (arg === "--model" && args[i + 1]) {
-      model = args[++i] as string;
-    }
-  }
+const parseArgs = (argv: readonly string[]): GenerateArgs => {
+  const args = argv.slice(2);
+  const flagValue = (flag: string): string | undefined => {
+    const idx = args.indexOf(flag);
+    return idx >= 0 && idx + 1 < args.length ? (args[idx + 1] as string) : undefined;
+  };
 
-  if (!series) {
+  const series = flagValue("--series") ?? "";
+  const model = flagValue("--model") ?? process.env.BLOG_GEMINI_MODEL ?? DEFAULT_BLOG_MODEL;
+  const dryRun = args.includes("--dry-run");
+
+  if (!series || !BLOG_SERIES.has(series)) {
     const available = [...BLOG_SERIES.keys()].join(", ");
     console.error(`❌ --series is required. Available: ${available}`);
     process.exit(1);
   }
 
-  if (!BLOG_SERIES.has(series)) {
-    const available = [...BLOG_SERIES.keys()].join(", ");
-    console.error(`❌ Unknown series: ${series}. Available: ${available}`);
-    process.exit(1);
-  }
-
   return { series, dryRun, model };
-}
+};
 
-// --- Gemini API ---
-
-async function callGeminiBlog(
+const callGemini = async (
   apiKey: string,
   model: string,
   prompt: { system: string; user: string },
-): Promise<string> {
+): Promise<string> => {
   const { GoogleGenerativeAI } = await import("@google/generative-ai");
-  const genAI = new GoogleGenerativeAI(apiKey);
-  const genModel = genAI.getGenerativeModel({ model });
-
-  console.log(`🤖 Calling Gemini (${model})...`);
+  const genModel = new GoogleGenerativeAI(apiKey).getGenerativeModel({ model });
+  log({ event: "gemini_call", model, systemLength: prompt.system.length, userLength: prompt.user.length });
 
   const result = await genModel.generateContent({
-    contents: [
-      {
-        role: "user",
-        parts: [{ text: `${prompt.system}\n\n${prompt.user}` }],
-      },
-    ],
-    generationConfig: {
-      maxOutputTokens: 4096,
-      temperature: 0.9,
-    },
+    contents: [{ role: "user", parts: [{ text: `${prompt.system}\n\n${prompt.user}` }] }],
+    generationConfig: { maxOutputTokens: 4096, temperature: 0.9 },
   });
 
-  return result.response.text().trim();
-}
+  const text = result.response.text().trim();
+  log({ event: "gemini_response", model, responseLength: text.length });
+  return text;
+};
 
-// --- Slug Generation ---
+const generateSlug = (title: string): string => {
+  const slug = title
+    .replace(/^\d{4}-\d{2}-\d{2}\s*\|\s*/, "")
+    .replace(/[\p{Emoji_Presentation}\p{Emoji}\u200d\ufe0f]/gu, "")
+    .trim().toLowerCase()
+    .replace(/[^a-z0-9\s-]/g, "").replace(/\s+/g, "-").replace(/-+/g, "-").replace(/^-|-$/g, "");
 
-function generateSlug(title: string): string {
-  // Extract the part after the date and icon prefix
-  // e.g., "2026-03-12 | 🤖 Some Title 🤖" → "some-title"
-  const cleaned = title
-    .replace(/^\d{4}-\d{2}-\d{2}\s*\|\s*/, "") // Remove date prefix
-    .replace(/[\p{Emoji_Presentation}\p{Emoji}\u200d\ufe0f]/gu, "") // Remove emoji
-    .trim()
-    .toLowerCase()
-    .replace(/[^a-z0-9\s-]/g, "") // Remove special chars
-    .replace(/\s+/g, "-") // Spaces to hyphens
-    .replace(/-+/g, "-") // Collapse hyphens
-    .replace(/^-|-$/g, ""); // Trim hyphens
+  if (!slug) throw new Error(`Failed to generate slug from title: ${title}`);
+  return slug;
+};
 
-  return cleaned || "untitled";
-}
+const stripCodeFences = (raw: string): string =>
+  raw.replace(/^```(?:markdown|md)?\s*\n/, "").replace(/\n```\s*$/, "");
 
-// --- Main ---
-
-async function generate(): Promise<void> {
-  const config = parseArgs();
+const generate = async (): Promise<void> => {
+  const config = parseArgs(process.argv);
   const apiKey = process.env.GEMINI_API_KEY;
+  if (!apiKey) { console.error("❌ GEMINI_API_KEY is required"); process.exit(1); }
 
-  if (!apiKey) {
-    console.error("❌ GEMINI_API_KEY environment variable is required");
-    process.exit(1);
-  }
+  const series = BLOG_SERIES.get(config.series);
+  if (!series) { console.error("❌ Series not found"); process.exit(1); }
 
-  const series = BLOG_SERIES.get(config.series)!;
   const repoRoot = path.resolve(import.meta.dirname, "..");
-  const today = new Date().toISOString().split("T")[0] as string;
+  const today = todayPacific();
 
-  console.log(`📝 Generating blog post for: ${series.icon} ${series.name}`);
-  console.log(`📅 Date: ${today}`);
-  console.log(`🤖 Model: ${config.model}`);
+  log({ event: "generate_start", series: series.id, seriesName: series.name, today, model: config.model });
 
-  // Fetch comments from Giscus (GitHub Discussions)
-  const priorityUser = process.env.BLOG_PRIORITY_USER || series.defaultPriorityUser;
-  console.log(`💬 Reading Giscus comments for series ${series.id}...`);
-  const comments = await fetchAllSeriesComments(series.id, priorityUser);
-  console.log(`   Found ${comments.length} comment(s)`);
-  if (priorityUser && comments.length > 0) {
-    const priorityCount = comments.filter((c) => c.isPriority).length;
-    if (priorityCount > 0) {
-      console.log(`   ⭐ ${priorityCount} comment(s) from priority user: ${priorityUser}`);
-    }
+  const seriesDir = path.join(repoRoot, series.id);
+  const existingPost = fs.existsSync(seriesDir) && fs.readdirSync(seriesDir).find((f) => f.startsWith(today));
+  if (existingPost) {
+    log({ event: "skip_duplicate", today, existingPost });
+    return;
   }
 
-  // Build context from previous posts and comments
-  const context = buildBlogContext(config.series, repoRoot, comments, today);
-  console.log(`📚 Previous posts: ${context.previousPosts.length}`);
+  const priorityUser = process.env.BLOG_PRIORITY_USER ?? series.defaultPriorityUser;
+  const comments = await fetchAllSeriesComments(series.id, priorityUser);
+  const priorityCount = comments.filter((c) => c.isPriority).length;
+  log({ event: "comments_fetched", total: comments.length, priority: priorityCount, priorityUser });
 
-  // Build the prompt
+  const context = buildBlogContext(config.series, repoRoot, comments, today);
+  log({ event: "context_built", previousPosts: context.previousPosts.length, hasAgentsMd: context.agentsMd.length > 0 });
+
   const prompt = buildBlogPrompt(context);
 
   if (config.dryRun) {
-    console.log("\n--- DRY RUN: Prompt ---");
-    console.log("System:", prompt.system.slice(0, 200) + "...");
-    console.log("User:", prompt.user.slice(0, 500) + "...");
-    console.log("--- END DRY RUN ---\n");
+    log({ event: "dry_run", systemPreview: prompt.system.slice(0, 200), userPreview: prompt.user.slice(0, 500) });
     return;
   }
 
-  // Generate the blog post
-  const raw = await callGeminiBlog(apiKey, config.model, prompt);
-
-  // Strip markdown code fences if the model wrapped the output
-  const cleaned = raw.replace(/^```(?:markdown|md)?\s*\n/, "").replace(/\n```\s*$/, "");
-
-  // Validate the generated post
-  const parsed = parseGeneratedPost(cleaned);
+  const raw = await callGemini(apiKey, config.model, prompt);
+  const parsed = parseGeneratedPost(stripCodeFences(raw));
   if (!parsed) {
-    console.error("❌ Generated post is malformed. Raw output:");
-    console.error(cleaned.slice(0, 1000));
+    log({ event: "generation_failed", rawPreview: raw.slice(0, 500) });
     process.exit(1);
   }
 
-  console.log(`✅ Generated: ${parsed.title}`);
-  console.log(`📏 Length: ${parsed.content.length} characters`);
-
-  // Extract slug and write file
   const slug = generateSlug(parsed.title);
   const filename = `${today}-${slug}.md`;
-  const seriesDir = path.join(repoRoot, series.id);
-
-  // Ensure directory exists
   fs.mkdirSync(seriesDir, { recursive: true });
+  fs.writeFileSync(path.join(seriesDir, filename), parsed.content + "\n", "utf-8");
 
-  const filePath = path.join(seriesDir, filename);
+  log({ event: "post_written", filename, title: parsed.title, contentLength: parsed.content.length });
+};
 
-  // Check if a post for today already exists
-  const existing = fs.readdirSync(seriesDir).find((f) => f.startsWith(today));
-  if (existing) {
-    console.log(`⚠️  A post for ${today} already exists: ${existing}`);
-    console.log(`   Skipping to avoid duplicate. Delete the existing post to regenerate.`);
-    return;
-  }
-
-  fs.writeFileSync(filePath, parsed.content + "\n", "utf-8");
-  console.log(`💾 Written: ${filePath}`);
-  console.log(`\n🎉 Blog post generated successfully!`);
-  console.log(`📂 File: ${series.id}/${filename}`);
-}
-
-// --- Entry Point ---
-
-const isMainModule = process.argv[1]?.endsWith("generate-blog-post.ts");
-if (isMainModule) {
+if (process.argv[1]?.endsWith("generate-blog-post.ts")) {
   generate().catch((error) => {
-    console.error(`❌ Fatal error: ${error instanceof Error ? error.message : error}`);
-    if (error instanceof Error && error.stack) {
-      console.error(error.stack);
-    }
+    console.error(JSON.stringify({
+      event: "fatal_error",
+      message: error instanceof Error ? error.message : String(error),
+      stack: error instanceof Error ? error.stack : undefined,
+    }));
     process.exit(1);
   });
 }
 
-export { generate, generateSlug, callGeminiBlog };
+export { generate, generateSlug, callGemini };

@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-03-11T22:39:17-07:00
+updated: 2026-03-11T22:56:26-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -14,7 +14,7 @@ updated: 2026-03-11T22:39:17-07:00
 💬 Comment on any page with your GitHub account.  
   
 ## [🪞 Reflections](./reflections/index.md) ~ Blog (482)  
-- [2026-03-11](./reflections/2026-03-11.md)  
+- [2026-03-11 | 👀👌 Accepting 🫂 Tight ⚡ Power 💻 IDEs 🧪 Testing 📚📺🤖](./reflections/2026-03-11.md)  
 - [2026-03-10 | 🫂 Tight 🏗️ Functional 🤖 Agentic 🗣️ Breathe 📚](./reflections/2026-03-10.md)  
 - [2026-03-09 | 🔁🚫🧬 Lock 🫂 Hold 🤖 Sync](./reflections/2026-03-09.md)  
 - [2026-03-08 | 🧶 Maze 🐘 Mastodon 🤔 Sophie 🤖 Agent 📚📺](./reflections/2026-03-08.md)  
@@ -27,7 +27,7 @@ updated: 2026-03-11T22:39:17-07:00
   
   
 ## [🤖 AI Blog](./ai-blog/index.md) (14)  
-- [2026-03-11 | 🧪 A/B Testing the Robot's Voice - Prompt Experiments for Social Media Engagement 🤖](./ai-blog/2026-03-11-ab-testing-social-media.md)  
+- [2026-03-11 | 🧪 AB Testing the Robot's Voice - Prompt Experiments for Social Media Engagement 🤖](./ai-blog/2026-03-11-ab-testing-social-media.md)  
 - [2026-03-10 | 🔊 Teaching the Robot to Breathe - Semicolon Injection for Natural TTS Pauses 🤖](./ai-blog/2026-03-10-tts-semicolon-injection.md)  
 - [2026-03-10 | 🏗️ Functional Refactoring of the Auto-Posting Pipeline 🤖](./ai-blog/2026-03-10-functional-refactoring.md)  
 - [2026-03-10 | 🤖 The Agentic Playbook: Engineering AGENTS.md for Windsurf 🤖](./ai-blog/2026-03-10-agentic-playbook-agents-md.md)  

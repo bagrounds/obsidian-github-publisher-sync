@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-03-13T04:48:49-07:00
+updated: 2026-03-13T06:47:17-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -46,16 +46,16 @@ updated: 2026-03-13T04:48:49-07:00
   
   
 ## [📚 Books](./books/index.md) (952)  
+- [🧬👥💾 Life 3.0: Being Human in the Age of Artificial Intelligence](./books/life-3-0.md)  
+- [🤖📈 The Second Machine Age: Work, Progress, and Prosperity in a Time of Brilliant Technologies](./books/the-second-machine-age-work-progress-and-prosperity-in-a-time-of-brilliant-technologies.md)  
+- [⚡🔮🤖 Power and Prediction: The Disruptive Economics of Artificial Intelligence](./books/power-and-prediction-the-disruptive-economics-of-artificial-intelligence.md)  
 - [💡🤖💰💥🏢📉 The Innovator's Dilemma: When New Technologies Cause Great Firms to Fail](./books/the-innovators-dilemma.md)  
 - [🤖📈 Prediction Machines: The Simple Economics of Artificial Intelligence](./books/prediction-machines-the-simple-economics-of-artificial-intelligence.md)  
-- [⚡🔮🤖 Power and Prediction: The Disruptive Economics of Artificial Intelligence](./books/power-and-prediction-the-disruptive-economics-of-artificial-intelligence.md)  
 - [🤖🧑‍ Human Compatible: Artificial Intelligence and the Problem of Control](./books/human-compatible-artificial-intelligence-and-the-problem-of-control.md)  
 - [📊📉🏛️ Weapons of Math Destruction: How Big Data Increases Inequality and Threatens Democracy](./books/weapons-of-math-destruction-how-big-data-increases-inequality-and-threatens-democracy.md)  
 - [🔮🎨🔬 Superforecasting: The Art and Science of Prediction](./books/superforecasting-the-art-and-science-of-prediction.md)  
 - [🧑‍💻🤖 Human + Machine: Reimagining Work in the Age of AI](./books/human-machine-reimagining-work-in-the-age-of-ai.md)  
 - [🤕🎼🧠 The Body Keeps the Score: Brain, Mind, and Body in the Healing of Trauma](./books/the-body-keeps-the-score-brain-mind-and-body-in-the-healing-of-trauma.md)  
-- [❤️🧠 Love Sense: The Revolutionary New Science of Romantic Relationships](./books/love-sense-the-revolutionary-new-science-of-romantic-relationships.md)  
-- [🫂 Hold Me Tight: Seven Conversations for a Lifetime of Love](./books/hold-me-tight-seven-conversations-for-a-lifetime-of-love.md)  
   
   
 ## [📺 Videos](./videos/index.md) (677)  

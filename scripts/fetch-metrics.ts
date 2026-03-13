@@ -112,7 +112,7 @@ const main = async (): Promise<void> => {
     process.exit(1);
   }
 
-  const records: Array<ExperimentRecord & { metrics?: EngagementMetrics }> = JSON.parse(
+  const records: ExperimentRecord[] = JSON.parse(
     fs.readFileSync(dataFile, "utf-8"),
   );
 

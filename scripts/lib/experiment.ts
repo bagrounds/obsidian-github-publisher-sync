@@ -380,8 +380,8 @@ export const fetchAndUpdateVaultMetrics = async (
       const updatedRecord: ExperimentRecord = { ...record, metrics };
       fs.writeFileSync(filePath, JSON.stringify(updatedRecord, null, 2), "utf-8");
       updated++;
-    } catch {
-      // Skip malformed records
+    } catch (error) {
+      console.warn(`⚠️ Skipping record ${f}: ${error instanceof Error ? error.message : error}`);
     }
   }
 

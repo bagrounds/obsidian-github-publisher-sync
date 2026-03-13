@@ -3,11 +3,12 @@ share: true
 aliases:
   - "🧬👥💾 Life 3.0: Being Human in the Age of Artificial Intelligence"
 title: "🧬👥💾 Life 3.0: Being Human in the Age of Artificial Intelligence"
-URL: https://bagrounds.org/books/life-3-0-being-human-in-the-age-of-artificial-intelligence
+URL: https://bagrounds.org/books/life-3-0
 Author:
 tags:
 affiliate link: https://amzn.to/4kmDGNV
 CTA: 💡 Explore AI's potential.
+updated: 2026-03-13T12:11:17.327Z
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧬👥💾 Life 3.0: Being Human in the Age of Artificial Intelligence  

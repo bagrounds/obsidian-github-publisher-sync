@@ -6,7 +6,7 @@ URL: https://bagrounds.org/books/the-second-machine-age-work-progress-and-prospe
 share: true
 affiliate link: https://amzn.to/4oz7eui
 CTA: 🤖 Prepare for tomorrow.
-updated: 2026-03-12T03:17:46.316Z
+updated: 2026-03-13T12:11:17.327Z
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🤖📈 The Second Machine Age: Work, Progress, and Prosperity in a Time of Brilliant Technologies  

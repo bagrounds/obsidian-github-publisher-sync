@@ -1,8 +1,4 @@
 #!/usr/bin/env npx tsx
-/**
- * Generates a daily blog post for a specified series using the Gemini API.
- * @module generate-blog-post
- */
 
 import fs from "node:fs";
 import path from "node:path";
@@ -10,6 +6,7 @@ import {
   BLOG_SERIES,
   buildBlogContext,
   buildBlogPrompt,
+  assembleFrontmatter,
   parseGeneratedPost,
   fetchAllSeriesComments,
   todayPacific,
@@ -55,9 +52,10 @@ const callGemini = async (
   const genModel = new GoogleGenerativeAI(apiKey).getGenerativeModel({ model });
   log({ event: "gemini_call", model, systemLength: prompt.system.length, userLength: prompt.user.length });
 
+  const maxOutputTokens = parseInt(process.env.BLOG_MAX_OUTPUT_TOKENS ?? "4096", 10);
   const result = await genModel.generateContent({
     contents: [{ role: "user", parts: [{ text: `${prompt.system}\n\n${prompt.user}` }] }],
-    generationConfig: { maxOutputTokens: 4096, temperature: 0.9 },
+    generationConfig: { maxOutputTokens, temperature: 0.9 },
   });
 
   const text = result.response.text().trim();
@@ -65,9 +63,8 @@ const callGemini = async (
   return text;
 };
 
-const generateSlug = (title: string): string => {
+export const generateSlug = (title: string): string => {
   const slug = title
-    .replace(/^\d{4}-\d{2}-\d{2}\s*\|\s*/, "")
     .replace(/[\p{Emoji_Presentation}\p{Emoji}\u200d\ufe0f]/gu, "")
     .trim().toLowerCase()
     .replace(/[^a-z0-9\s-]/g, "").replace(/\s+/g, "-").replace(/-+/g, "-").replace(/^-|-$/g, "");
@@ -99,7 +96,7 @@ const generate = async (): Promise<void> => {
     return;
   }
 
-  const priorityUser = process.env.BLOG_PRIORITY_USER ?? series.defaultPriorityUser;
+  const priorityUser = process.env.BLOG_PRIORITY_USER ?? series.priorityUser;
   const comments = await fetchAllSeriesComments(series.id, priorityUser);
   const priorityCount = comments.filter((c) => c.isPriority).length;
   log({ event: "comments_fetched", total: comments.length, priority: priorityCount, priorityUser });
@@ -122,11 +119,12 @@ const generate = async (): Promise<void> => {
   }
 
   const slug = generateSlug(parsed.title);
+  const frontmatter = assembleFrontmatter(series, today, parsed.title, slug);
   const filename = `${today}-${slug}.md`;
   fs.mkdirSync(seriesDir, { recursive: true });
-  fs.writeFileSync(path.join(seriesDir, filename), parsed.content + "\n", "utf-8");
+  fs.writeFileSync(path.join(seriesDir, filename), frontmatter + parsed.body + "\n", "utf-8");
 
-  log({ event: "post_written", filename, title: parsed.title, contentLength: parsed.content.length });
+  log({ event: "post_written", filename, title: parsed.title, contentLength: parsed.body.length });
 };
 
 if (process.argv[1]?.endsWith("generate-blog-post.ts")) {
@@ -140,4 +138,4 @@ if (process.argv[1]?.endsWith("generate-blog-post.ts")) {
   });
 }
 
-export { generate, generateSlug, callGemini };
+export { generate, callGemini };

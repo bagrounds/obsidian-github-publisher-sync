@@ -14,9 +14,8 @@ import {
   extractSlug,
   parseGeneratedPost,
   todayPacific,
+  assembleFrontmatter,
 } from "./blog-series.ts";
-
-// --- readSeriesPosts ---
 
 describe("readSeriesPosts", () => {
   it("returns empty array for non-existent directory", () => {
@@ -66,8 +65,6 @@ describe("readSeriesPosts", () => {
   });
 });
 
-// --- readAgentsMd ---
-
 describe("readAgentsMd", () => {
   it("reads AGENTS.md when present", () => {
     const tmpDir = fs.mkdtempSync(path.join(os.tmpdir(), "blog-test-"));
@@ -88,8 +85,6 @@ describe("readAgentsMd", () => {
     }
   });
 });
-
-// --- buildBlogContext ---
 
 describe("buildBlogContext", () => {
   it("throws for unknown series", () => {
@@ -114,8 +109,6 @@ describe("buildBlogContext", () => {
   });
 });
 
-// --- buildBlogPrompt ---
-
 describe("buildBlogPrompt", () => {
   const series = BLOG_SERIES.get("auto-blog-zero")!;
 
@@ -130,7 +123,7 @@ describe("buildBlogPrompt", () => {
   });
 
   it("includes previous posts and comments in user prompt", () => {
-    const posts = [{ filename: "2026-03-10-test.md", date: "2026-03-10", title: "Test Post", body: "Body text", tags: [] }];
+    const posts = [{ filename: "2026-03-10-test.md", date: "2026-03-10", title: "Test Post", body: "Body text" }];
     const comments = [{ author: "bagrounds", body: "Write about testing", createdAt: "2026-03-11", isPriority: true }];
     const prompt = buildBlogPrompt({ series, agentsMd: "test", previousPosts: posts, comments, today: "2026-03-12" });
     assert.ok(prompt.user.includes("Test Post"));
@@ -138,14 +131,52 @@ describe("buildBlogPrompt", () => {
     assert.ok(prompt.user.includes("Write about testing"));
   });
 
-  it("truncates very long post bodies", () => {
-    const posts = [{ filename: "2026-03-10-long.md", date: "2026-03-10", title: "Long", body: "x".repeat(5000), tags: [] }];
+  it("tells AI to generate only body, not frontmatter", () => {
+    const prompt = buildBlogPrompt({ series, agentsMd: "test", previousPosts: [], comments: [], today: "2026-03-12" });
+    assert.ok(prompt.user.includes("Generate ONLY the blog post body"));
+    assert.ok(prompt.user.includes("Do NOT generate frontmatter"));
+  });
+
+  it("instructs weekly recap on Sundays", () => {
+    const prompt = buildBlogPrompt({ series, agentsMd: "test", previousPosts: [], comments: [], today: "2026-03-15" });
+    assert.ok(prompt.user.includes("Weekly Recap"));
+  });
+
+  it("instructs monthly recap on last day of month", () => {
+    const prompt = buildBlogPrompt({ series, agentsMd: "test", previousPosts: [], comments: [], today: "2026-04-30" });
+    assert.ok(prompt.user.includes("Monthly Recap"));
+  });
+
+  it("instructs quarterly recap on last day of quarter", () => {
+    const prompt = buildBlogPrompt({ series, agentsMd: "test", previousPosts: [], comments: [], today: "2026-03-31" });
+    assert.ok(prompt.user.includes("Quarterly Recap"));
+  });
+
+  it("notes sparse comment traffic when no comments", () => {
+    const prompt = buildBlogPrompt({ series, agentsMd: "test", previousPosts: [], comments: [], today: "2026-03-12" });
+    assert.ok(prompt.user.includes("comments are very rare"));
+  });
+
+  it("uses wikilinks format for internal references", () => {
+    const posts = [{ filename: "2026-03-10-test.md", date: "2026-03-10", title: "Test Post", body: "Body text" }];
     const prompt = buildBlogPrompt({ series, agentsMd: "test", previousPosts: posts, comments: [], today: "2026-03-12" });
-    assert.ok(prompt.user.includes("[...truncated...]"));
+    assert.ok(prompt.user.includes("wikilinks"));
+    assert.ok(prompt.user.includes("[[auto-blog-zero/"));
   });
 });
 
-// --- generateSeriesIndex ---
+describe("assembleFrontmatter", () => {
+  const series = BLOG_SERIES.get("auto-blog-zero")!;
+
+  it("generates deterministic frontmatter with title and slug", () => {
+    const fm = assembleFrontmatter(series, "2026-03-12", "My Great Post", "my-great-post");
+    assert.ok(fm.includes("share: true"));
+    assert.ok(fm.includes("2026-03-12 | 🤖 My Great Post 🤖"));
+    assert.ok(fm.includes("URL: https://bagrounds.org/auto-blog-zero/2026-03-12-my-great-post"));
+    assert.ok(fm.includes('Author: "[[auto-blog-zero]]"'));
+    assert.ok(!fm.includes("[Your Title Here]"));
+  });
+});
 
 describe("generateSeriesIndex", () => {
   it("generates dataview index excluding AGENTS and IDEAS", () => {
@@ -159,30 +190,23 @@ describe("generateSeriesIndex", () => {
   });
 });
 
-// --- extractSlug ---
-
 describe("extractSlug", () => {
   it("extracts slug from dated filename", () => assert.equal(extractSlug("2026-03-12-my-post.md"), "my-post"));
   it("handles filename without date", () => assert.equal(extractSlug("just-a-name.md"), "just-a-name"));
   it("handles date-only filename", () => assert.equal(extractSlug("2026-03-12.md"), ""));
 });
 
-// --- parseGeneratedPost ---
-
 describe("parseGeneratedPost", () => {
-  it("parses valid post", () => {
-    const raw = `---\ntitle: My Title\n---\n# My Title\n\n${"Lorem ipsum ".repeat(50)}`;
+  it("parses valid post with markdown heading", () => {
+    const raw = `## Hello World\n\n${"Lorem ipsum ".repeat(20)}`;
     const result = parseGeneratedPost(raw);
     assert.ok(result);
-    assert.equal(result.title, "My Title");
+    assert.equal(result.title, "Hello World");
   });
 
-  it("rejects post without frontmatter", () => assert.equal(parseGeneratedPost("# No FM\nBody"), null));
-  it("rejects post without title", () => assert.equal(parseGeneratedPost(`---\nnotitle: x\n---\n${"x".repeat(600)}`), null));
-  it("rejects too-short post", () => assert.equal(parseGeneratedPost("---\ntitle: S\n---\nShort"), null));
+  it("rejects post without heading", () => assert.equal(parseGeneratedPost("Just some body text here."), null));
+  it("rejects too-short post", () => assert.equal(parseGeneratedPost("## Title\nShort"), null));
 });
-
-// --- todayPacific ---
 
 describe("todayPacific", () => {
   it("returns YYYY-MM-DD format", () => {

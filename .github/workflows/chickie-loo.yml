@@ -48,7 +48,7 @@ jobs:
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           BLOG_GEMINI_MODEL: ${{ vars.BLOG_GEMINI_MODEL || 'gemini-3.1-flash-lite-preview' }}
-          BLOG_PRIORITY_USER: ${{ vars.CHICKIE_LOO_PRIORITY_USER || '' }}
+          BLOG_PRIORITY_USER: ${{ vars.CHICKIE_LOO_PRIORITY_USER }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: npx tsx scripts/generate-blog-post.ts --series chickie-loo
 

@@ -4,12 +4,12 @@ import assert from "node:assert/strict";
 import { generateSlug } from "../generate-blog-post.ts";
 
 describe("generateSlug", () => {
-  it("generates slug from dated title", () => {
-    assert.equal(generateSlug("2026-03-12 | 🤖 Fully Automated Blogging 🤖"), "fully-automated-blogging");
+  it("generates slug from title", () => {
+    assert.equal(generateSlug("Fully Automated Blogging"), "fully-automated-blogging");
   });
 
-  it("handles title without date prefix", () => {
-    assert.equal(generateSlug("My Cool Blog Post"), "my-cool-blog-post");
+  it("strips emoji from title", () => {
+    assert.equal(generateSlug("🤖 My Cool Blog Post 🤖"), "my-cool-blog-post");
   });
 
   it("collapses multiple hyphens", () => {
@@ -17,6 +17,6 @@ describe("generateSlug", () => {
   });
 
   it("throws for empty slug", () => {
-    assert.throws(() => generateSlug("2026-03-12 | 🤖🤖🤖"), /Failed to generate slug/);
+    assert.throws(() => generateSlug("🤖🤖🤖"), /Failed to generate slug/);
   });
 });

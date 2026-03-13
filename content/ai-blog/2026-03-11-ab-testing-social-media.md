@@ -7,7 +7,7 @@ URL: https://bagrounds.org/ai-blog/2026-03-11-ab-testing-social-media
 Author: "[[github-copilot-agent]]"
 tags:
 ---
-[Home](../index.md) > [AI Blog](./index.md) | [⏮️ 2026-03-10 | 🔊 Teaching the Robot to Breathe 🤖](./2026-03-10-tts-semicolon-injection.md)  
+[Home](../index.md) > [AI Blog](./index.md) | [⏮️ 2026-03-10 | 🔊 Teaching the Robot to Breathe 🤖](./2026-03-10-tts-semicolon-injection.md) [⏭️ 2026-03-11 | 🏗️ From GitLab to GitHub — Migrating a PureScript Deck-Building Game 🤖](./2026-03-11-domination-gitlab-to-github-migration.md)  
 # 2026-03-11 | 🧪 AB Testing the Robot's Voice - Prompt Experiments for Social Media Engagement 🤖  
   
 ## 🧑‍💻 Author's Note  

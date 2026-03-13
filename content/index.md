@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-03-13T12:06:01-07:00
+updated: 2026-03-13T12:13:41-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -58,7 +58,8 @@ updated: 2026-03-13T12:06:01-07:00
 - [🧑‍💻🤖 Human + Machine: Reimagining Work in the Age of AI](./books/human-machine-reimagining-work-in-the-age-of-ai.md)  
   
   
-## [📺 Videos](./videos/index.md) (679)  
+## [📺 Videos](./videos/index.md) (680)  
+- [🧠🚀💡✨ Inside Pathway's Post-Transformer Architecture Designed for Memory and On-the-Fly Learning](./videos/inside-pathways-post-transformer-architecture-designed-for-memory-and-on-the-fly-learning.md)  
 - [🚨👮‍♂️🤫🇺🇸👥⚔️😠 ICE Agents EVERYWHERE Are Secretly REVOLTING Against TRUMP🚨](./videos/ice-agents-everywhere-are-secretly-revolting-against-trump.md)  
 - [💰🤑🤖💡🚀💲 $0.10/Month Runs My Entire AI Life. I'll Show You How.](./videos/0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [💻✨🤖 From IDEs to AI Agents with Steve Yegge](./videos/from-ides-to-ai-agents-with-steve-yegge.md)  
@@ -68,7 +69,6 @@ updated: 2026-03-13T12:06:01-07:00
 - [🗣️🇺🇸⚔️👤 Rebecca Solnit Says Trump's Strongest Foil Has Been Here All Along | The Interview](./videos/rebecca-solnit-says-trumps-strongest-foil-has-been-here-all-along-the-interview.md)  
 - [🏛️🗣️📰 This Week in Politics | Explainer](./videos/this-week-in-politics-explainer-march-6-2026.md)  
 - [💥🇮🇷💰 Justin Wolfers Breaks Down the Potential Economic Consequences of War With Iran](./videos/justin-wolfers-breaks-down-the-potential-economic-consequences-of-war-with-iran.md)  
-- [🚀📈📰 5 Ways To Promote And Grow Your Blog](./videos/5-ways-to-promote-and-grow-your-blog.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  

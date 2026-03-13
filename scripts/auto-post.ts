@@ -29,7 +29,9 @@ import {
   type ContentToPost,
 } from "./find-content-to-post.ts";
 import { main, validateEnvironment, syncObsidianVault } from "./tweet-reflection.ts";
-import { readExperimentRecords, cleanupStaleRecords } from "./lib/experiment.ts";
+import { readExperimentRecords, cleanupStaleRecords, fetchAndUpdateVaultMetrics } from "./lib/experiment.ts";
+import type { ExperimentRecord, EngagementMetrics } from "./lib/experiment.ts";
+import { fetchMastodonMetrics, fetchBlueskyMetrics } from "./lib/analytics.ts";
 import { runAnalysis } from "./analyze-experiment.ts";
 
 // --- Types ---
@@ -72,6 +74,23 @@ function getConfiguredPlatforms(): readonly Platform[] {
 
   return platforms;
 }
+
+// --- Metric Fetching ---
+
+/**
+ * Build a metric fetcher that dispatches to the appropriate platform API
+ * based on the record's platform field and available credentials.
+ */
+const createPlatformFetcher = (env: ReturnType<typeof validateEnvironment>) =>
+  async (record: ExperimentRecord): Promise<EngagementMetrics | undefined> => {
+    if (record.platform === "mastodon" && env.mastodon && record.postId) {
+      return fetchMastodonMetrics(record.postId, env.mastodon);
+    }
+    if (record.platform === "bluesky" && env.bluesky && record.postUri) {
+      return fetchBlueskyMetrics(record.postUri, env.bluesky);
+    }
+    return undefined;
+  };
 
 // --- Main Orchestration ---
 
@@ -202,6 +221,15 @@ async function autoPost(): Promise<void> {
     console.log(`   Deleted ${staleDeleted} stale record(s) (404 post URLs)`);
   } else {
     console.log(`   No stale records found`);
+  }
+
+  // Fetch engagement metrics from platform APIs before analysis
+  console.log(`\n📈 Fetching engagement metrics from platform APIs...`);
+  const metricsUpdated = await fetchAndUpdateVaultMetrics(vaultDir, createPlatformFetcher(env));
+  if (metricsUpdated > 0) {
+    console.log(`   Updated ${metricsUpdated} record(s) with fresh metrics`);
+  } else {
+    console.log(`   No new metrics to fetch`);
   }
 
   // Run incremental A/B test analysis on accumulated experiment records

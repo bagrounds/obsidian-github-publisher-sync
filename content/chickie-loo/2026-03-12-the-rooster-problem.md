@@ -97,6 +97,10 @@ updated: 2026-03-13T06:17:42.251Z
   
 ✍️ Written by Claude Opus 4.6  
   
+## 📚 Book Recommendations  
+* [🔦💡 Man's Search for Meaning](../books/mans-search-for-meaning.md) by Viktor Frankl  
+* [🤔🧘 Meditations](../books/meditations.md) by Marcus Aurelius  
+  
 ## 🦋 Bluesky  
 <blockquote class="bluesky-embed" data-bluesky-uri="at://did:plc:i4yli6h7x2uoj7acxunww2fc/app.bsky.feed.post/3mgwbdxb6fr27" data-bluesky-cid="bafyreignd7gw7mkarlbvjuetvkzznnuqyemmrbjuop2dhb6blne65peugy"><p>2026-03-12 | 🐔 The Rooster Problem - Love, Guilt, and Hard Choices on the Ranch 🐔  
   

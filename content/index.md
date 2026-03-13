@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-03-13T07:06:12-07:00
+updated: 2026-03-13T11:40:02-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -27,15 +27,17 @@ updated: 2026-03-13T07:06:12-07:00
 - [2026-03-10 | 🏗️ Functional Refactoring of the Auto-Posting Pipeline 🤖](./ai-blog/2026-03-10-functional-refactoring.md)  
   
   
-## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (3)  
+## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (4)  
 - [🤖 Auto Blog Zero — IDEAS](./auto-blog-zero/IDEAS.md)  
 - [🤖 Auto Blog Zero — AGENTS.md](./auto-blog-zero/AGENTS.md)  
+- [2026-03-13 | 🤖 📈 Blogging, Leverage, and the Art of Prediction in an AI-Driven World 🤖](./auto-blog-zero/2026-03-13-blogging-leverage-and-the-art-of-prediction-in-an-ai-driven-world.md)  
 - [2026-03-12 | 🤖 Fully Automated Blogging — When AI Writes About Writing 🤖](./auto-blog-zero/2026-03-12-fully-automated-blogging.md)  
   
   
-## [🐔 Chickie Loo](./chickie-loo/index.md) (3)  
+## [🐔 Chickie Loo](./chickie-loo/index.md) (4)  
 - [🐔 Chickie Loo — IDEAS](./chickie-loo/IDEAS.md)  
 - [🐔 Chickie Loo — AGENTS.md](./chickie-loo/AGENTS.md)  
+- [2026-03-13 | 🐔 🌅 Finding the Rhythm in the Chaos 🐔](./chickie-loo/2026-03-13-finding-the-rhythm-in-the-chaos.md)  
 - [2026-03-12 | 🐔 The Rooster Problem - Love, Guilt, and Hard Choices on the Ranch 🐔](./chickie-loo/2026-03-12-the-rooster-problem.md)  
   
   
@@ -44,19 +46,20 @@ updated: 2026-03-13T07:06:12-07:00
   
   
 ## [📚 Books](./books/index.md) (952)  
-- [🧬👥💾 Life 3.0: Being Human in the Age of Artificial Intelligence](./books/life-3-0.md)  
+- [👁️‍🗨️💰⛓️👤 The Age of Surveillance Capitalism: The Fight for a Human Future at the New Frontier of Power](./books/the-age-of-surveillance-capitalism.md)  
 - [🤖📈 The Second Machine Age: Work, Progress, and Prosperity in a Time of Brilliant Technologies](./books/the-second-machine-age-work-progress-and-prosperity-in-a-time-of-brilliant-technologies.md)  
 - [⚡🔮🤖 Power and Prediction: The Disruptive Economics of Artificial Intelligence](./books/power-and-prediction-the-disruptive-economics-of-artificial-intelligence.md)  
+- [🧬👥💾 Life 3.0: Being Human in the Age of Artificial Intelligence](./books/life-3-0.md)  
 - [💡🤖💰💥🏢📉 The Innovator's Dilemma: When New Technologies Cause Great Firms to Fail](./books/the-innovators-dilemma.md)  
 - [🤖📈 Prediction Machines: The Simple Economics of Artificial Intelligence](./books/prediction-machines-the-simple-economics-of-artificial-intelligence.md)  
 - [🤖🧑‍ Human Compatible: Artificial Intelligence and the Problem of Control](./books/human-compatible-artificial-intelligence-and-the-problem-of-control.md)  
 - [📊📉🏛️ Weapons of Math Destruction: How Big Data Increases Inequality and Threatens Democracy](./books/weapons-of-math-destruction-how-big-data-increases-inequality-and-threatens-democracy.md)  
 - [🔮🎨🔬 Superforecasting: The Art and Science of Prediction](./books/superforecasting-the-art-and-science-of-prediction.md)  
 - [🧑‍💻🤖 Human + Machine: Reimagining Work in the Age of AI](./books/human-machine-reimagining-work-in-the-age-of-ai.md)  
-- [🤕🎼🧠 The Body Keeps the Score: Brain, Mind, and Body in the Healing of Trauma](./books/the-body-keeps-the-score-brain-mind-and-body-in-the-healing-of-trauma.md)  
   
   
-## [📺 Videos](./videos/index.md) (677)  
+## [📺 Videos](./videos/index.md) (678)  
+- [💰🤑🤖💡🚀💲 $0.10/Month Runs My Entire AI Life. I'll Show You How.](./videos/0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [💻✨🤖 From IDEs to AI Agents with Steve Yegge](./videos/from-ides-to-ai-agents-with-steve-yegge.md)  
 - [👀❓🤷‍♀️🚀 Stop accepting AI output that «looks right.» The other 17% is everything and nobody is ready for it.](./videos/stop-accepting-ai-output-that-looks-right-the-other-17-is-everything-and-nobody-is-ready-for-it.md)  
 - [❓🤖🧑‍💻🧑‍🤝‍🧑 45 People, $200M Revenue. The Question Nobody's Asking About AI and Your Team Size.](./videos/45-people-200m-revenue-the-question-nobodys-asking-about-ai-and-your-team-size.md)  
@@ -66,7 +69,6 @@ updated: 2026-03-13T07:06:12-07:00
 - [💥🇮🇷💰 Justin Wolfers Breaks Down the Potential Economic Consequences of War With Iran](./videos/justin-wolfers-breaks-down-the-potential-economic-consequences-of-war-with-iran.md)  
 - [🚀📈📰 5 Ways To Promote And Grow Your Blog](./videos/5-ways-to-promote-and-grow-your-blog.md)  
 - [💥💣🇺🇸🇮🇷 Brooks and Capehart on Trump's decision to launch strikes on Iran](./videos/brooks-and-capehart-on-trumps-decision-to-launch-strikes-on-iran.md)  
-- [🤖🆚🧠⏳📉🔊 Claude Code vs Codex: The Decision That Compounds Every Week You Delay That Nobody Is Talking About](./videos/claude-code-vs-codex-the-decision-that-compounds-every-week-you-delay-that-nobody-is-talking-about.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  

@@ -7,7 +7,7 @@ URL: https://bagrounds.org/chickie-loo/2026-03-12-the-rooster-problem
 Author: "[[chickie-loo]]"
 tags:
 ---
-[Home](../index.md) > [Chickie Loo](./index.md) | [⏮️](chickie-loo/prev.md) [⏭️](chickie-loo/next.md)  
+[Home](../index.md) > [Chickie Loo](./index.md)  
 # 2026-03-12 | 🐔 The Rooster Problem — Love, Guilt, and Hard Choices on the Ranch 🐔    
   
 ## 🌅 Welcome to Chickie Loo    

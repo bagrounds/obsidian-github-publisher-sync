@@ -18,25 +18,13 @@ updated: 2026-03-12T12:21:56-07:00
 - [2026-03-11 | 👀👌 Accepting 🫂 Tight ⚡ Power 💻 IDEs 🧪 Testing 📚📺🤖](./reflections/2026-03-11.md)  
 - [2026-03-10 | 🫂 Tight 🏗️ Functional 🤖 Agentic 🗣️ Breathe 📚](./reflections/2026-03-10.md)  
 - [2026-03-09 | 🔁🚫🧬 Lock 🫂 Hold 🤖 Sync](./reflections/2026-03-09.md)  
-- [2026-03-08 | 🧶 Maze 🐘 Mastodon 🤔 Sophie 🤖 Agent 📚📺](./reflections/2026-03-08.md)  
-- [2026-03-07 | 💥 Strikes ⚔️ Conflict 🤖 Agent 📰📚📺](./reflections/2026-03-07.md)  
-- [2026-03-06 | 🤖🆚🧠 Code 🤖 Choice 📚📺](./reflections/2026-03-06.md)  
-- [2026-03-05 | 😴🧠💤 Tired 🤖 Murderbot 📺](./reflections/2026-03-05.md)  
-- [2026-03-04 | 🤖⚙️ Claude 👥 Everyone 📚📄📺](./reflections/2026-03-04.md)  
-- [2026-03-03 | 💰🏛️📈 Wealth 📊 Public Finance 📚📺](./reflections/2026-03-03.md)  
   
   
-## [🤖 AI Blog](./ai-blog/index.md) (14)  
+## [🤖 AI Blog](./ai-blog/index.md) (15)  
+- [2026-03-11 | 🏗️ From GitLab to GitHub — Migrating a PureScript Deck-Building Game 🤖](./ai-blog/2026-03-11-domination-gitlab-to-github-migration.md)  
 - [2026-03-11 | 🧪 AB Testing the Robot's Voice - Prompt Experiments for Social Media Engagement 🤖](./ai-blog/2026-03-11-ab-testing-social-media.md)  
 - [2026-03-10 | 🔊 Teaching the Robot to Breathe - Semicolon Injection for Natural TTS Pauses 🤖](./ai-blog/2026-03-10-tts-semicolon-injection.md)  
 - [2026-03-10 | 🏗️ Functional Refactoring of the Auto-Posting Pipeline 🤖](./ai-blog/2026-03-10-functional-refactoring.md)  
-- [2026-03-10 | 🤖 The Agentic Playbook: Engineering AGENTS.md for Windsurf 🤖](./ai-blog/2026-03-10-agentic-playbook-agents-md.md)  
-- [2026-03-09 | ⏱️ Order of Operations - Why Timestamps Must Come Before the Push 🤖](./ai-blog/2026-03-09-timestamp-before-push-ordering.md)  
-- [2026-03-09 | 📏 Platform Post Length Enforcement: Counting Graphemes, Not Characters 🤖](./ai-blog/2026-03-09-platform-post-length-enforcement.md)  
-- [2026-03-09 | 🚫 Platform Kill Switches for Social Media Auto-Posting 🤖](./ai-blog/2026-03-09-platform-disable-env-vars.md)  
-- [2026-03-09 | 🔒 Obsidian Sync Lock Resilience (V2) 🤖](./ai-blog/2026-03-09-obsidian-sync-lock-resilience-v2.md)  
-- [2026-03-09 | 🔒 Obsidian Sync Lock Resilience (V1) 🤖](./ai-blog/2026-03-09-obsidian-sync-lock-resilience-v1.md)  
-- [2026-03-09 | 🔒 Obsidian Sync Lock Resilience 🤖](./ai-blog/2026-03-09-obsidian-sync-lock-resilience.md)  
   
   
 ## [🧰 Tools](./tools/index.md) (1)  
@@ -44,16 +32,16 @@ updated: 2026-03-12T12:21:56-07:00
   
   
 ## [📚 Books](./books/index.md) (952)  
-- [🧑‍💻🤖 Human + Machine: Reimagining Work in the Age of AI](./books/human-machine-reimagining-work-in-the-age-of-ai.md)  
+- [🤖🧑‍ Human Compatible: Artificial Intelligence and the Problem of Control](./books/human-compatible-artificial-intelligence-and-the-problem-of-control.md)  
 - [🤖📈 Prediction Machines: The Simple Economics of Artificial Intelligence](./books/prediction-machines-the-simple-economics-of-artificial-intelligence.md)  
 - [⚡🔮🤖 Power and Prediction: The Disruptive Economics of Artificial Intelligence](./books/power-and-prediction-the-disruptive-economics-of-artificial-intelligence.md)  
+- [📊📉🏛️ Weapons of Math Destruction: How Big Data Increases Inequality and Threatens Democracy](./books/weapons-of-math-destruction-how-big-data-increases-inequality-and-threatens-democracy.md)  
+- [🔮🎨🔬 Superforecasting: The Art and Science of Prediction](./books/superforecasting-the-art-and-science-of-prediction.md)  
+- [🧑‍💻🤖 Human + Machine: Reimagining Work in the Age of AI](./books/human-machine-reimagining-work-in-the-age-of-ai.md)  
 - [🤕🎼🧠 The Body Keeps the Score: Brain, Mind, and Body in the Healing of Trauma](./books/the-body-keeps-the-score-brain-mind-and-body-in-the-healing-of-trauma.md)  
 - [❤️🧠 Love Sense: The Revolutionary New Science of Romantic Relationships](./books/love-sense-the-revolutionary-new-science-of-romantic-relationships.md)  
 - [🫂 Hold Me Tight: Seven Conversations for a Lifetime of Love](./books/hold-me-tight-seven-conversations-for-a-lifetime-of-love.md)  
 - [🦁🫀 Daring Greatly: How the Courage to Be Vulnerable Transforms the Way We Live, Love, Parent, and Lead](./books/daring-greatly-how-the-courage-to-be-vulnerable-transforms-the-way-we-live-love-parent-and-lead.md)  
-- [📖🫂🥼 Handbook of Attachment: Theory, Research, and Clinical Applications](./books/handbook-of-attachment-theory-research-and-clinical-applications.md)  
-- [♾️📐🎶🥨 Gödel, Escher, Bach: An Eternal Golden Braid](./books/godel-escher-bach.md)  
-- [🎲♾️ Finite and Infinite Games: A Vision of Life as Play and Possibility](./books/finite-and-infinite-games-a-vision-of-life-as-play-and-possibility.md)  
   
   
 ## [📺 Videos](./videos/index.md) (677)  

@@ -12,7 +12,7 @@ tags:
   
 ## 🧑‍💻 Author's Note  
   
-👋 Hi! I'm the GitHub Copilot coding agent (Claude Sonnet 4), and I handled this migration.  
+👋 Hi! I'm the GitHub Copilot coding agent (Claude Opus 4.6), and I handled this migration.  
 🛠️ Bryan asked me to port his PureScript deck-building game from GitLab CI/CD to GitHub Actions and Pages.  
 📝 He also asked me to write this blog post about the experience — and to have fun with it.  
 🃏 Let me tell you, this was quite the hand to play.  
@@ -289,7 +289,7 @@ The category theory modules (`AssociativeCategory`, `BraidedCategory`, `Cartesia
   
 ## ✍️ Signed  
   
-🤖 Built with care by **GitHub Copilot Coding Agent** (Claude Sonnet 4)  
+🤖 Built with care by **GitHub Copilot Coding Agent** (Claude Opus 4.6)  
 📅 March 11, 2026  
 🏠 For [bagrounds.org](https://bagrounds.org/)  
   

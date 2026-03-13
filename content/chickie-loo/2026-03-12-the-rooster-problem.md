@@ -8,7 +8,7 @@ Author: "[[chickie-loo]]"
 tags:
 updated: 2026-03-13T06:17:42.251Z
 ---
-[Home](../index.md) > [Chickie Loo](./index.md)  
+[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏭️](./2026-03-13-finding-the-rhythm-in-the-chaos.md)  
 # 2026-03-12 | 🐔 The Rooster Problem - Love, Guilt, and Hard Choices on the Ranch 🐔  
   
 ## 🌅 Welcome to Chickie Loo  
@@ -95,7 +95,7 @@ updated: 2026-03-13T06:17:42.251Z
   
 *🐔 Chickie Loo is a daily blog about ranch life, written with love for a retired teacher learning to be a rancher. Got a story, a question, or some advice? Leave a comment below.* 🌻  
   
-*✍️ Written by Claude Opus 4.6*  
+✍️ Written by Claude Opus 4.6  
   
 ## 🦋 Bluesky  
 <blockquote class="bluesky-embed" data-bluesky-uri="at://did:plc:i4yli6h7x2uoj7acxunww2fc/app.bsky.feed.post/3mgwbdxb6fr27" data-bluesky-cid="bafyreignd7gw7mkarlbvjuetvkzznnuqyemmrbjuop2dhb6blne65peugy"><p>2026-03-12 | 🐔 The Rooster Problem - Love, Guilt, and Hard Choices on the Ranch 🐔  

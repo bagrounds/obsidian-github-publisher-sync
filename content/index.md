@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-03-12T20:02:39-07:00
+updated: 2026-03-13T04:48:49-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -13,11 +13,11 @@ updated: 2026-03-12T20:02:39-07:00
 ❔ What do 🫵 _you_ 🤔 think?  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (483)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (484)  
+- [2026-03-13](./reflections/2026-03-13.md)  
 - [2026-03-12](./reflections/2026-03-12.md)  
 - [2026-03-11 | 👀👌 Accepting 🫂 Tight ⚡ Power 💻 IDEs 🧪 Testing 📚📺🤖](./reflections/2026-03-11.md)  
 - [2026-03-10 | 🫂 Tight 🏗️ Functional 🤖 Agentic 🗣️ Breathe 📚](./reflections/2026-03-10.md)  
-- [2026-03-09 | 🔁🚫🧬 Lock 🫂 Hold 🤖 Sync](./reflections/2026-03-09.md)  
   
   
 ## [🤖 AI Blog](./ai-blog/index.md) (15)  
@@ -46,16 +46,16 @@ updated: 2026-03-12T20:02:39-07:00
   
   
 ## [📚 Books](./books/index.md) (952)  
-- [🤖🧑‍ Human Compatible: Artificial Intelligence and the Problem of Control](./books/human-compatible-artificial-intelligence-and-the-problem-of-control.md)  
+- [💡🤖💰💥🏢📉 The Innovator's Dilemma: When New Technologies Cause Great Firms to Fail](./books/the-innovators-dilemma.md)  
 - [🤖📈 Prediction Machines: The Simple Economics of Artificial Intelligence](./books/prediction-machines-the-simple-economics-of-artificial-intelligence.md)  
 - [⚡🔮🤖 Power and Prediction: The Disruptive Economics of Artificial Intelligence](./books/power-and-prediction-the-disruptive-economics-of-artificial-intelligence.md)  
+- [🤖🧑‍ Human Compatible: Artificial Intelligence and the Problem of Control](./books/human-compatible-artificial-intelligence-and-the-problem-of-control.md)  
 - [📊📉🏛️ Weapons of Math Destruction: How Big Data Increases Inequality and Threatens Democracy](./books/weapons-of-math-destruction-how-big-data-increases-inequality-and-threatens-democracy.md)  
 - [🔮🎨🔬 Superforecasting: The Art and Science of Prediction](./books/superforecasting-the-art-and-science-of-prediction.md)  
 - [🧑‍💻🤖 Human + Machine: Reimagining Work in the Age of AI](./books/human-machine-reimagining-work-in-the-age-of-ai.md)  
 - [🤕🎼🧠 The Body Keeps the Score: Brain, Mind, and Body in the Healing of Trauma](./books/the-body-keeps-the-score-brain-mind-and-body-in-the-healing-of-trauma.md)  
 - [❤️🧠 Love Sense: The Revolutionary New Science of Romantic Relationships](./books/love-sense-the-revolutionary-new-science-of-romantic-relationships.md)  
 - [🫂 Hold Me Tight: Seven Conversations for a Lifetime of Love](./books/hold-me-tight-seven-conversations-for-a-lifetime-of-love.md)  
-- [🦁🫀 Daring Greatly: How the Courage to Be Vulnerable Transforms the Way We Live, Love, Parent, and Lead](./books/daring-greatly-how-the-courage-to-be-vulnerable-transforms-the-way-we-live-love-parent-and-lead.md)  
   
   
 ## [📺 Videos](./videos/index.md) (677)  

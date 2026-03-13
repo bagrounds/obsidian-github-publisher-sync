@@ -330,3 +330,60 @@ export const cleanupStaleRecords = async (vaultDir: string): Promise<number> => 
 
   return deleted;
 };
+
+// --- Vault Metric Fetching ---
+
+/**
+ * A platform-specific metric fetcher: given a record, returns engagement metrics.
+ * Returns undefined if the record's platform is unsupported or credentials are unavailable.
+ */
+export type MetricFetcher = (record: ExperimentRecord) => Promise<EngagementMetrics | undefined>;
+
+/**
+ * Fetch and update engagement metrics for all experiment records in the vault.
+ *
+ * Reads each record from the vault's data/ab-test directory. For records
+ * that have a postId but no metrics yet, calls the provided fetcher to
+ * retrieve current engagement metrics from the platform API, then writes
+ * the updated record back to disk.
+ *
+ * This bridges the gap between the posting pipeline (which creates records
+ * without metrics) and the analysis pipeline (which needs metrics to compute
+ * statistics).
+ *
+ * Returns the number of records updated.
+ */
+export const fetchAndUpdateVaultMetrics = async (
+  vaultDir: string,
+  fetcher: MetricFetcher,
+): Promise<number> => {
+  const dir = path.join(vaultDir, EXPERIMENT_DATA_DIR);
+  if (!fs.existsSync(dir)) return 0;
+
+  const files = fs.readdirSync(dir)
+    .filter((f) => f.endsWith(".json.md") || f.endsWith(".json"));
+
+  let updated = 0;
+
+  for (const f of files) {
+    const filePath = path.join(dir, f);
+    try {
+      const content = fs.readFileSync(filePath, "utf-8");
+      const record = JSON.parse(content) as ExperimentRecord;
+
+      if (record.metrics) continue;
+      if (!record.postId && !record.postUri) continue;
+
+      const metrics = await fetcher(record);
+      if (!metrics) continue;
+
+      const updatedRecord: ExperimentRecord = { ...record, metrics };
+      fs.writeFileSync(filePath, JSON.stringify(updatedRecord, null, 2), "utf-8");
+      updated++;
+    } catch (error) {
+      console.warn(`⚠️ Skipping record ${f}: ${error instanceof Error ? error.message : error}`);
+    }
+  }
+
+  return updated;
+};

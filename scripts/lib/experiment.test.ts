@@ -29,8 +29,9 @@ import {
   migrateExperimentRecords,
   isUrl404,
   cleanupStaleRecords,
+  fetchAndUpdateVaultMetrics,
 } from "./experiment.ts";
-import type { VariantWeight, ExperimentRecord } from "./experiment.ts";
+import type { VariantWeight, ExperimentRecord, EngagementMetrics } from "./experiment.ts";
 
 // --- selectVariant ---
 
@@ -598,6 +599,204 @@ describe("cleanupStaleRecords", () => {
 
     const deleted = await cleanupStaleRecords(vaultDir);
     assert.equal(deleted, 0, "should not delete records without postUrl");
+    fs.rmSync(vaultDir, { recursive: true });
+  });
+});
+
+// --- fetchAndUpdateVaultMetrics ---
+
+describe("fetchAndUpdateVaultMetrics", () => {
+  const createTempDir = (): string => fs.mkdtempSync(path.join(os.tmpdir(), "metrics-test-"));
+
+  it("returns 0 when directory does not exist", async () => {
+    const vaultDir = createTempDir();
+    const fetcher = async () => ({ likes: 1, reposts: 0, replies: 0 });
+    const updated = await fetchAndUpdateVaultMetrics(vaultDir, fetcher);
+    assert.equal(updated, 0);
+    fs.rmSync(vaultDir, { recursive: true });
+  });
+
+  it("fetches metrics for records without metrics", async () => {
+    const vaultDir = createTempDir();
+    const record: ExperimentRecord = {
+      variant: "A",
+      notePath: "test.md",
+      platform: "mastodon",
+      timestamp: "2026-03-10T12:00:00.000Z",
+      postUrl: "https://mastodon.social/@test/123",
+      postId: "123",
+    };
+
+    writeExperimentRecord(vaultDir, record);
+
+    const expectedMetrics: EngagementMetrics = { likes: 5, reposts: 2, replies: 1 };
+    const fetcher = async () => expectedMetrics;
+
+    const updated = await fetchAndUpdateVaultMetrics(vaultDir, fetcher);
+    assert.equal(updated, 1);
+
+    const records = readExperimentRecords(vaultDir);
+    assert.deepEqual(records[0]!.metrics, expectedMetrics);
+
+    fs.rmSync(vaultDir, { recursive: true });
+  });
+
+  it("skips records that already have metrics", async () => {
+    const vaultDir = createTempDir();
+    const existingMetrics: EngagementMetrics = { likes: 10, reposts: 5, replies: 3 };
+    const record: ExperimentRecord = {
+      variant: "B",
+      notePath: "test.md",
+      platform: "mastodon",
+      timestamp: "2026-03-10T12:00:00.000Z",
+      postId: "456",
+      metrics: existingMetrics,
+    };
+
+    writeExperimentRecord(vaultDir, record);
+
+    const newMetrics: EngagementMetrics = { likes: 99, reposts: 99, replies: 99 };
+    const fetcher = async () => newMetrics;
+
+    const updated = await fetchAndUpdateVaultMetrics(vaultDir, fetcher);
+    assert.equal(updated, 0, "should not update records that already have metrics");
+
+    const records = readExperimentRecords(vaultDir);
+    assert.deepEqual(records[0]!.metrics, existingMetrics, "original metrics should be preserved");
+
+    fs.rmSync(vaultDir, { recursive: true });
+  });
+
+  it("skips records without postId or postUri", async () => {
+    const vaultDir = createTempDir();
+    const record: ExperimentRecord = {
+      variant: "A",
+      notePath: "test.md",
+      platform: "mastodon",
+      timestamp: "2026-03-10T12:00:00.000Z",
+    };
+
+    writeExperimentRecord(vaultDir, record);
+
+    const fetcher = async () => ({ likes: 1, reposts: 0, replies: 0 });
+    const updated = await fetchAndUpdateVaultMetrics(vaultDir, fetcher);
+    assert.equal(updated, 0, "should skip records without postId or postUri");
+
+    fs.rmSync(vaultDir, { recursive: true });
+  });
+
+  it("handles fetcher returning undefined (unsupported platform)", async () => {
+    const vaultDir = createTempDir();
+    const record: ExperimentRecord = {
+      variant: "A",
+      notePath: "test.md",
+      platform: "twitter",
+      timestamp: "2026-03-10T12:00:00.000Z",
+      postId: "789",
+    };
+
+    writeExperimentRecord(vaultDir, record);
+
+    const fetcher = async () => undefined;
+    const updated = await fetchAndUpdateVaultMetrics(vaultDir, fetcher);
+    assert.equal(updated, 0, "should not update when fetcher returns undefined");
+
+    const records = readExperimentRecords(vaultDir);
+    assert.equal(records[0]!.metrics, undefined, "metrics should remain undefined");
+
+    fs.rmSync(vaultDir, { recursive: true });
+  });
+
+  it("handles fetcher errors gracefully", async () => {
+    const vaultDir = createTempDir();
+    const record: ExperimentRecord = {
+      variant: "A",
+      notePath: "test.md",
+      platform: "mastodon",
+      timestamp: "2026-03-10T12:00:00.000Z",
+      postId: "123",
+    };
+
+    writeExperimentRecord(vaultDir, record);
+
+    const fetcher = async (): Promise<EngagementMetrics | undefined> => { throw new Error("API rate limited"); };
+    const updated = await fetchAndUpdateVaultMetrics(vaultDir, fetcher);
+    assert.equal(updated, 0, "should handle errors gracefully");
+
+    const records = readExperimentRecords(vaultDir);
+    assert.equal(records[0]!.metrics, undefined, "metrics should remain undefined after error");
+
+    fs.rmSync(vaultDir, { recursive: true });
+  });
+
+  it("updates multiple records in the same vault", async () => {
+    const vaultDir = createTempDir();
+
+    writeExperimentRecord(vaultDir, {
+      variant: "A",
+      notePath: "post-1.md",
+      platform: "mastodon",
+      timestamp: "2026-03-10T12:00:00.000Z",
+      postId: "111",
+    });
+
+    writeExperimentRecord(vaultDir, {
+      variant: "B",
+      notePath: "post-2.md",
+      platform: "mastodon",
+      timestamp: "2026-03-10T13:00:00.000Z",
+      postId: "222",
+    });
+
+    const fetcher = async (record: ExperimentRecord) => ({
+      likes: record.postId === "111" ? 3 : 7,
+      reposts: 1,
+      replies: 0,
+    });
+
+    const updated = await fetchAndUpdateVaultMetrics(vaultDir, fetcher);
+    assert.equal(updated, 2);
+
+    const records = readExperimentRecords(vaultDir);
+    const sorted = [...records].sort((a, b) => a.notePath.localeCompare(b.notePath));
+    assert.equal(sorted[0]!.metrics!.likes, 3);
+    assert.equal(sorted[1]!.metrics!.likes, 7);
+
+    fs.rmSync(vaultDir, { recursive: true });
+  });
+
+  it("only updates records without metrics, preserving ones with metrics", async () => {
+    const vaultDir = createTempDir();
+
+    writeExperimentRecord(vaultDir, {
+      variant: "A",
+      notePath: "has-metrics.md",
+      platform: "mastodon",
+      timestamp: "2026-03-10T12:00:00.000Z",
+      postId: "111",
+      metrics: { likes: 10, reposts: 5, replies: 2 },
+    });
+
+    writeExperimentRecord(vaultDir, {
+      variant: "B",
+      notePath: "needs-metrics.md",
+      platform: "mastodon",
+      timestamp: "2026-03-10T13:00:00.000Z",
+      postId: "222",
+    });
+
+    const fetcher = async () => ({ likes: 99, reposts: 99, replies: 99 });
+
+    const updated = await fetchAndUpdateVaultMetrics(vaultDir, fetcher);
+    assert.equal(updated, 1, "should only update the record without metrics");
+
+    const records = readExperimentRecords(vaultDir);
+    const withMetrics = records.find((r) => r.notePath === "has-metrics.md");
+    const nowUpdated = records.find((r) => r.notePath === "needs-metrics.md");
+
+    assert.deepEqual(withMetrics!.metrics, { likes: 10, reposts: 5, replies: 2 }, "existing metrics preserved");
+    assert.deepEqual(nowUpdated!.metrics, { likes: 99, reposts: 99, replies: 99 }, "new metrics applied");
+
     fs.rmSync(vaultDir, { recursive: true });
   });
 });

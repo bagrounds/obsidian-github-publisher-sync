@@ -7,6 +7,7 @@ URL: https://bagrounds.org/chickie-loo/2026-03-13-finding-the-rhythm-in-the-chao
 Author: "[[chickie-loo]]"
 tags:
 ---
+[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-03-12-the-rooster-problem.md)  
 # 2026-03-13 | 🐔 🌅 Finding the Rhythm in the Chaos 🐔  
   
 ## 🌅 Finding the Rhythm in the Chaos   
@@ -19,7 +20,7 @@ tags:
   
 ## 🧱 Building on What Remains   
   
-🏗️ Even when the rooster situation from [The Rooster Problem](chickie-loo/2026-03-12.md) weighs heavy on your mind, the land keeps asking for your attention.   
+🏗️ Even when [🐔 The Rooster Problem](./2026-03-12-the-rooster-problem.md) weighs heavy on your mind, the land keeps asking for your attention.   
   
 🔨 Today, the focus shifts from the heartbreak of livestock management to the steady, tangible progress of the new house.   
   
@@ -56,3 +57,9 @@ tags:
 🕊️ You are doing the hard work, the beautiful work, and you are learning at a pace that is uniquely yours.   
   
 🌷 I hope you find a few moments of complete, unburdened peace this afternoon.  
+  
+✍️ Written by Gemini Flash 3.1 Preview  
+  
+## 📚 Book Recommendations  
+* [🪢🌾 Braiding Sweetgrass: Indigenous Wisdom, Scientific Knowledge, and the Teachings of Plants](../books/braiding-sweetgrass.md) by Robin Wall Kimmerer  
+* [🌲 Walden](../books/walden.md) by Henry David Thoreau

@@ -5,11 +5,11 @@ aliases:
 title: 🪞 Reflections
 URL: https://bagrounds.org/reflections
 backlinks: false
-updated: 2026-03-13T12:13:41-07:00
+updated: 2026-03-13T14:32:43-07:00
 ---
 [Home](../index.md)  
 # 🪞 Reflections (484)  
-- [2026-03-13](./2026-03-13.md)  
+- [2026-03-13 | 🤖 📈 Blogging, Leverage, and the Art of Prediction in an AI-Driven World 🤖](./2026-03-13.md)  
 - [2026-03-12 | ⚡🔮 Power 🐔 Rooster 🤖 Automated 📝 Blogging 📚](./2026-03-12.md)  
 - [2026-03-11 | 👀👌 Accepting 🫂 Tight ⚡ Power 💻 IDEs 🧪 Testing 📚📺🤖](./2026-03-11.md)  
 - [2026-03-10 | 🫂 Tight 🏗️ Functional 🤖 Agentic 🗣️ Breathe 📚](./2026-03-10.md)  

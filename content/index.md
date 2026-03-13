@@ -27,6 +27,14 @@ updated: 2026-03-12T12:21:56-07:00
 - [2026-03-10 | 🏗️ Functional Refactoring of the Auto-Posting Pipeline 🤖](./ai-blog/2026-03-10-functional-refactoring.md)  
   
   
+## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (1)  
+- [2026-03-12 | 🤖 Fully Automated Blogging — When AI Writes About Writing 🤖](./auto-blog-zero/2026-03-12-fully-automated-blogging.md)  
+  
+  
+## [🐔 Chickie Loo](./chickie-loo/index.md) (1)  
+- [2026-03-12 | 🐔 The Rooster Problem — Love, Guilt, and Hard Choices on the Ranch 🐔](./chickie-loo/2026-03-12-the-rooster-problem.md)  
+  
+  
 ## [🧰 Tools](./tools/index.md) (1)  
 - [🧮 Calculator](./tools/calculator.md)  
   

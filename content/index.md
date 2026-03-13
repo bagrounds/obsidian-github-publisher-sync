@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-03-13T12:13:41-07:00
+updated: 2026-03-13T14:32:43-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -14,17 +14,17 @@ updated: 2026-03-13T12:13:41-07:00
 💬 Comment on any page with your GitHub account.  
   
 ## [🪞 Reflections](./reflections/index.md) ~ Blog (484)  
-- [2026-03-13](./reflections/2026-03-13.md)  
+- [2026-03-13 | 🤖 📈 Blogging, Leverage, and the Art of Prediction in an AI-Driven World 🤖](./reflections/2026-03-13.md)  
 - [2026-03-12 | ⚡🔮 Power 🐔 Rooster 🤖 Automated 📝 Blogging 📚](./reflections/2026-03-12.md)  
 - [2026-03-11 | 👀👌 Accepting 🫂 Tight ⚡ Power 💻 IDEs 🧪 Testing 📚📺🤖](./reflections/2026-03-11.md)  
 - [2026-03-10 | 🫂 Tight 🏗️ Functional 🤖 Agentic 🗣️ Breathe 📚](./reflections/2026-03-10.md)  
   
   
-## [🤖 AI Blog](./ai-blog/index.md) (15)  
+## [🤖 AI Blog](./ai-blog/index.md) (16)  
+- [2026-03-13 | 🔬 The Experiment That Forgot to Observe - Fixing A/B Test Metrics Collection 🤖](./ai-blog/2026-03-13-ab-test-metrics-the-experiment-that-forgot-to-observe.md)  
 - [2026-03-11 | 🏗️ From GitLab to GitHub — Migrating a PureScript Deck-Building Game 🤖](./ai-blog/2026-03-11-domination-gitlab-to-github-migration.md)  
 - [2026-03-11 | 🧪 AB Testing the Robot's Voice - Prompt Experiments for Social Media Engagement 🤖](./ai-blog/2026-03-11-ab-testing-social-media.md)  
 - [2026-03-10 | 🔊 Teaching the Robot to Breathe - Semicolon Injection for Natural TTS Pauses 🤖](./ai-blog/2026-03-10-tts-semicolon-injection.md)  
-- [2026-03-10 | 🏗️ Functional Refactoring of the Auto-Posting Pipeline 🤖](./ai-blog/2026-03-10-functional-refactoring.md)  
   
   
 ## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (4)  
@@ -59,9 +59,9 @@ updated: 2026-03-13T12:13:41-07:00
   
   
 ## [📺 Videos](./videos/index.md) (680)  
-- [🧠🚀💡✨ Inside Pathway's Post-Transformer Architecture Designed for Memory and On-the-Fly Learning](./videos/inside-pathways-post-transformer-architecture-designed-for-memory-and-on-the-fly-learning.md)  
 - [🚨👮‍♂️🤫🇺🇸👥⚔️😠 ICE Agents EVERYWHERE Are Secretly REVOLTING Against TRUMP🚨](./videos/ice-agents-everywhere-are-secretly-revolting-against-trump.md)  
 - [💰🤑🤖💡🚀💲 $0.10/Month Runs My Entire AI Life. I'll Show You How.](./videos/0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
+- [🧠🚀💡✨ Inside Pathway's Post-Transformer Architecture Designed for Memory and On-the-Fly Learning](./videos/inside-pathways-post-transformer-architecture-designed-for-memory-and-on-the-fly-learning.md)  
 - [💻✨🤖 From IDEs to AI Agents with Steve Yegge](./videos/from-ides-to-ai-agents-with-steve-yegge.md)  
 - [👀❓🤷‍♀️🚀 Stop accepting AI output that «looks right.» The other 17% is everything and nobody is ready for it.](./videos/stop-accepting-ai-output-that-looks-right-the-other-17-is-everything-and-nobody-is-ready-for-it.md)  
 - [❓🤖🧑‍💻🧑‍🤝‍🧑 45 People, $200M Revenue. The Question Nobody's Asking About AI and Your Team Size.](./videos/45-people-200m-revenue-the-question-nobodys-asking-about-ai-and-your-team-size.md)  

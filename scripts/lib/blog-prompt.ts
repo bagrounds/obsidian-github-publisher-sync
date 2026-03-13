@@ -15,11 +15,10 @@ const MAX_POST_BODY_LENGTH = 3000;
 const dayOfWeek = (dateStr: string): number => new Date(dateStr + "T12:00:00").getDay();
 const isSunday = (dateStr: string): boolean => dayOfWeek(dateStr) === 0;
 
+const RECAP_KEYWORDS = ["weekly recap", "monthly recap", "quarterly recap", "annual recap"] as const;
+
 const isRecapPost = (post: BlogPost): boolean =>
-  post.title.toLowerCase().includes("weekly recap") ||
-  post.title.toLowerCase().includes("monthly recap") ||
-  post.title.toLowerCase().includes("quarterly recap") ||
-  post.title.toLowerCase().includes("annual recap");
+  RECAP_KEYWORDS.some((keyword) => post.title.toLowerCase().includes(keyword));
 
 const postsSinceLastRecap = (posts: readonly BlogPost[], today: string): readonly BlogPost[] => {
   const todayDow = dayOfWeek(today);

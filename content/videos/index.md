@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-03-13T11:40:02-07:00
+updated: 2026-03-13T12:06:01-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (678)  
+# 📺 Videos (679)  
 - [💰🤑🤖💡🚀💲 $0.10/Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
@@ -273,6 +273,7 @@ updated: 2026-03-13T11:40:02-07:00
 - [📉🐘🇺🇸😬 Huge Economic Problems Coming for Republicans and the U.S. | Explainer](./huge-economic-problems-coming-for-republicans-and-the-us-explainer.md)  
 - [I Built an AI That Does My Work For Me](./i-built-an-ai-that-does-my-work-for-me.md)  
 - [⚙️💨🧘 I built a system that makes work feel easy](./i-built-a-system-that-makes-work-feel-easy.md)  
+- [🚨👮‍♂️🤫🇺🇸👥⚔️😠 ICE Agents EVERYWHERE Are Secretly REVOLTING Against TRUMP🚨](./ice-agents-everywhere-are-secretly-revolting-against-trump.md)  
 - [🚨🛡️ICE and the National Guard Are Acting with Impunity](./ice-and-the-national-guard-are-acting-with-impunity.md)  
 - [🛂🇺🇸🤝 ICE & DHS: Last Week Tonight with John Oliver (HBO)](./ice-dhs-last-week-tonight-with-john-oliver-hbo.md)  
 - [👮🚨🇺🇸 ICE escalates aggressive raids in Chicago as Trump moves to deploy National Guard](./ice-escalates-aggressive-raids-in-chicago-as-trump-moves-to-deploy-national-guard.md)  

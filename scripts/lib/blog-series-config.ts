@@ -5,6 +5,7 @@ export interface BlogSeriesConfig {
   readonly author: string;
   readonly baseUrl: string;
   readonly priorityUser: string | undefined;
+  readonly navLink: string;
 }
 
 const AUTO_BLOG_ZERO: BlogSeriesConfig = {
@@ -14,6 +15,7 @@ const AUTO_BLOG_ZERO: BlogSeriesConfig = {
   author: "[[auto-blog-zero]]",
   baseUrl: "https://bagrounds.org/auto-blog-zero",
   priorityUser: "bagrounds",
+  navLink: "[[index|Home]] > [[auto-blog-zero/index|🤖 Auto Blog Zero]]",
 };
 
 const CHICKIE_LOO: BlogSeriesConfig = {
@@ -23,6 +25,7 @@ const CHICKIE_LOO: BlogSeriesConfig = {
   author: "[[chickie-loo]]",
   baseUrl: "https://bagrounds.org/chickie-loo",
   priorityUser: undefined,
+  navLink: "[[index|Home]] > [[chickie-loo/index|🐔 Chickie Loo]]",
 };
 
 export const BLOG_SERIES: ReadonlyMap<string, BlogSeriesConfig> = new Map([

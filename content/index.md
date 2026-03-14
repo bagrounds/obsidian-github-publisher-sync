@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-03-13T18:31:42-07:00
+updated: 2026-03-14T00:39:41-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -13,18 +13,18 @@ updated: 2026-03-13T18:31:42-07:00
 ❔ What do 🫵 _you_ 🤔 think?  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (484)  
-- [2026-03-13 | 🤖 📈 Blogging, Leverage, and the Art of Prediction in an AI-Driven World 🤖](./reflections/2026-03-13.md)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (485)  
+- [2026-03-14](./reflections/2026-03-14.md)  
+- [2026-03-13 | 🤖💰💡 Power, Leverage, Testing, Rhythm, Experiment 📚🤖🐔📺](./reflections/2026-03-13.md)  
 - [2026-03-12 | ⚡🔮 Power 🐔 Rooster 🤖 Automated 📝 Blogging 📚](./reflections/2026-03-12.md)  
 - [2026-03-11 | 👀👌 Accepting 🫂 Tight ⚡ Power 💻 IDEs 🧪 Testing 📚📺🤖](./reflections/2026-03-11.md)  
-- [2026-03-10 | 🫂 Tight 🏗️ Functional 🤖 Agentic 🗣️ Breathe 📚](./reflections/2026-03-10.md)  
   
   
-## [🤖 AI Blog](./ai-blog/index.md) (17)  
+## [🤖 AI Blog](./ai-blog/index.md) (18)  
+- [2026-03-14 | 🕵️ The SPA That Cried 404 - Why Bluesky Ate Our Experiment Records 🤖](./ai-blog/2026-03-14-the-spa-that-cried-404.md)  
 - [2026-03-13 | 🧪 Building a Safety Net - Comprehensive Testing for a PureScript Card Game 🤖](./ai-blog/2026-03-13-building-a-safety-net-comprehensive-testing-for-domination.md)  
 - [2026-03-13 | 🔬 The Experiment That Forgot to Observe - Fixing A/B Test Metrics Collection 🤖](./ai-blog/2026-03-13-ab-test-metrics-the-experiment-that-forgot-to-observe.md)  
 - [2026-03-11 | 🏗️ From GitLab to GitHub — Migrating a PureScript Deck-Building Game 🤖](./ai-blog/2026-03-11-domination-gitlab-to-github-migration.md)  
-- [2026-03-11 | 🧪 AB Testing the Robot's Voice - Prompt Experiments for Social Media Engagement 🤖](./ai-blog/2026-03-11-ab-testing-social-media.md)  
   
   
 ## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (4)  
@@ -46,6 +46,8 @@ updated: 2026-03-13T18:31:42-07:00
   
   
 ## [📚 Books](./books/index.md) (952)  
+- [💀🇺🇸🏫 The Death and Life of the Great American School System: How Testing and Choice Are Undermining Education](./books/the-death-and-life-of-the-great-american-school-system-how-testing-and-choice-are-undermining-education.md)  
+- [🧱✅🐛 Foundations of Software Testing](./books/foundations-of-software-testing.md)  
 - [👁️‍🗨️💰⛓️👤 The Age of Surveillance Capitalism: The Fight for a Human Future at the New Frontier of Power](./books/the-age-of-surveillance-capitalism.md)  
 - [🤖📈 The Second Machine Age: Work, Progress, and Prosperity in a Time of Brilliant Technologies](./books/the-second-machine-age-work-progress-and-prosperity-in-a-time-of-brilliant-technologies.md)  
 - [⚡🔮🤖 Power and Prediction: The Disruptive Economics of Artificial Intelligence](./books/power-and-prediction-the-disruptive-economics-of-artificial-intelligence.md)  
@@ -54,8 +56,6 @@ updated: 2026-03-13T18:31:42-07:00
 - [🤖📈 Prediction Machines: The Simple Economics of Artificial Intelligence](./books/prediction-machines-the-simple-economics-of-artificial-intelligence.md)  
 - [🤖🧑‍ Human Compatible: Artificial Intelligence and the Problem of Control](./books/human-compatible-artificial-intelligence-and-the-problem-of-control.md)  
 - [📊📉🏛️ Weapons of Math Destruction: How Big Data Increases Inequality and Threatens Democracy](./books/weapons-of-math-destruction-how-big-data-increases-inequality-and-threatens-democracy.md)  
-- [🔮🎨🔬 Superforecasting: The Art and Science of Prediction](./books/superforecasting-the-art-and-science-of-prediction.md)  
-- [🧑‍💻🤖 Human + Machine: Reimagining Work in the Age of AI](./books/human-machine-reimagining-work-in-the-age-of-ai.md)  
   
   
 ## [📺 Videos](./videos/index.md) (682)  

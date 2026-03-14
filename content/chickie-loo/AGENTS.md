@@ -13,7 +13,7 @@ tags:
   
 ## 👩‍🌾 Audience  
   
-🌻 Your primary reader is one special person — a woman who spent decades shaping young minds and now shapes the land itself.  
+🌻 Your primary reader is one special person (with the GitHub username ChickieLoo ) — a woman who spent decades shaping young minds and now shapes the land itself.  
 💕 She loves her animals deeply, faces hard decisions with grace, and finds joy in the smallest things.  
   
 ## ✍️ Voice and Style  

@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-03-14T11:33:28-07:00
+updated: 2026-03-14T14:35:00-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -20,11 +20,11 @@ updated: 2026-03-14T11:33:28-07:00
 - [2026-03-11 | 👀👌 Accepting 🫂 Tight ⚡ Power 💻 IDEs 🧪 Testing 📚📺🤖](./reflections/2026-03-11.md)  
   
   
-## [🤖 AI Blog](./ai-blog/index.md) (19)  
+## [🤖 AI Blog](./ai-blog/index.md) (20)  
 - [2026-03-14 | 🕵️ The SPA That Cried 404 - Why Bluesky Ate Our Experiment Records 🤖](./ai-blog/2026-03-14-the-spa-that-cried-404.md)  
-- [2026-03-14 | 🏆 Strategy B Wins — A/B Test Results 🤖](./ai-blog/2026-03-14-strategy-b-wins-ab-test-results.md)  
+- [2026-03-14 | 🏆 Strategy B Wins — AB Test Results 🤖](./ai-blog/2026-03-14-strategy-b-wins-ab-test-results.md)  
+- [2026-03-14 | 🐔 Giving Chickie Loo a Voice - Priority User Configuration 🤖](./ai-blog/2026-03-14-chickie-loo-priority-user.md)  
 - [2026-03-13 | 🧪 Building a Safety Net - Comprehensive Testing for a PureScript Card Game 🤖](./ai-blog/2026-03-13-building-a-safety-net-comprehensive-testing-for-domination.md)  
-- [2026-03-13 | 🔬 The Experiment That Forgot to Observe - Fixing A/B Test Metrics Collection 🤖](./ai-blog/2026-03-13-ab-test-metrics-the-experiment-that-forgot-to-observe.md)  
   
   
 ## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (5)  
@@ -46,6 +46,7 @@ updated: 2026-03-14T11:33:28-07:00
   
   
 ## [📚 Books](./books/index.md) (952)  
+- [🌲 Walden](./books/walden.md)  
 - [🪢🌾 Braiding Sweetgrass: Indigenous Wisdom, Scientific Knowledge, and the Teachings of Plants](./books/braiding-sweetgrass.md)  
 - [👨‍🏫🎉👍✨ Learn You a Haskell for Great Good!](./books/learn-you-a-haskell-for-great-good.md)  
 - [✅💻 Code Complete](./books/code-complete.md)  
@@ -55,7 +56,6 @@ updated: 2026-03-14T11:33:28-07:00
 - [🧱✅🐛 Foundations of Software Testing](./books/foundations-of-software-testing.md)  
 - [👁️‍🗨️💰⛓️👤 The Age of Surveillance Capitalism: The Fight for a Human Future at the New Frontier of Power](./books/the-age-of-surveillance-capitalism.md)  
 - [🤖📈 The Second Machine Age: Work, Progress, and Prosperity in a Time of Brilliant Technologies](./books/the-second-machine-age-work-progress-and-prosperity-in-a-time-of-brilliant-technologies.md)  
-- [⚡🔮🤖 Power and Prediction: The Disruptive Economics of Artificial Intelligence](./books/power-and-prediction-the-disruptive-economics-of-artificial-intelligence.md)  
   
   
 ## [📺 Videos](./videos/index.md) (682)  

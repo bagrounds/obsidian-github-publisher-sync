@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-03-13T18:06:57-07:00
+updated: 2026-03-13T18:31:42-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (681)  
+# 📺 Videos (682)  
 - [💰🤑🤖💡🚀💲 $0.10/Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
@@ -166,6 +166,7 @@ updated: 2026-03-13T18:06:57-07:00
 - [🧠💡🧘‍♀️ Essentials: Tools to Boost Attention & Memory | Dr. Wendy Suzuki](./essentials-tools-to-boost-attention-memory-dr-wendy-suzuki.md)  
 - [🧠⛓️⚖️ Essentials: Understanding & Treating Addiction | Dr. Anna Lembke](./essentials-understanding-treating-addiction-dr-anna-lembke.md)  
 - [Ethics expert breaks down Trump administration’s conflicts of interest](./ethics-expert-breaks-down-trump-administrations-conflicts-of-interest.md)  
+- [🤖💬🧑 Every Claude Code Concept Explained for Normal People](./every-claude-code-concept-explained-for-normal-people.md)  
 - [🤯➡️🗣️👥➡️🤖 Everyone You Know Is About to Try Claude (I Showed 3 People for 5 Minutes - All 3 Switched)](./everyone-you-know-is-about-to-try-claude-i-showed-3-people-for-5-minutes-all-3-switched.md)  
 - [😴❌💡 Everything You Know About Fatigue is Wrong](./everything-you-know-about-fatigue-is-wrong.md)  
 - [Experts are STUNNED! Meta's NEW LLM Architecture is a GAME-CHANGER!](./experts-are-stunned-metas-new-llm-architecture-is-a-game-changer.md)  

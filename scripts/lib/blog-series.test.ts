@@ -191,6 +191,16 @@ describe("assembleFrontmatter", () => {
   });
 });
 
+describe("BLOG_SERIES priorityUser config", () => {
+  it("auto-blog-zero has bagrounds as priority user", () => {
+    assert.equal(BLOG_SERIES.get("auto-blog-zero")?.priorityUser, "bagrounds");
+  });
+
+  it("chickie-loo has ChickieLoo as priority user", () => {
+    assert.equal(BLOG_SERIES.get("chickie-loo")?.priorityUser, "ChickieLoo");
+  });
+});
+
 describe("generateSeriesIndex", () => {
   it("generates dataview index excluding AGENTS and IDEAS", () => {
     const series = BLOG_SERIES.get("auto-blog-zero")!;

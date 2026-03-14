@@ -270,16 +270,22 @@ export const readExperimentRecords = (
 /** Timeout for URL health checks during stale record cleanup (ms). */
 const URL_CHECK_TIMEOUT_MS = 10_000;
 
+/** Bluesky public API endpoint for fetching posts without authentication. */
+const BLUESKY_PUBLIC_API = "https://public.api.bsky.app/xrpc/app.bsky.feed.getPosts";
+
 /**
- * Check if a URL returns a 404 (Not Found) status.
+ * Check if a URL returns a 404 (Not Found) status via GET request.
  * Returns true if the URL is reachable but returns 404.
  * Returns false for all other cases (success, network error, timeout, etc.)
  * to avoid accidentally deleting valid records.
+ *
+ * Uses GET instead of HEAD because some platforms (SPAs, CDNs) don't
+ * support HEAD method on client-side routes.
  */
 export const isUrl404 = async (url: string): Promise<boolean> => {
   try {
     const response = await fetch(url, {
-      method: "HEAD",
+      method: "GET",
       signal: AbortSignal.timeout(URL_CHECK_TIMEOUT_MS),
     });
     return response.status === 404;
@@ -290,13 +296,54 @@ export const isUrl404 = async (url: string): Promise<boolean> => {
 };
 
 /**
- * Clean up stale experiment records by checking post URLs for 404.
+ * Check if a Bluesky post has been deleted using the public AT Protocol API.
  *
- * Reads all records from the vault, HEAD-requests each post URL,
- * and deletes records whose URLs return 404. This handles the case
- * where posts are deleted from the platform (e.g. manually removed
- * from Mastodon/Bluesky) — we don't want to keep stale records
- * that would pollute the experiment analysis.
+ * bsky.app is an SPA that returns 200 for all GET requests and 404 for all
+ * HEAD requests regardless of whether the post exists — HTTP status codes
+ * are unreliable. Instead, we query the public API which returns an empty
+ * posts array when a post doesn't exist.
+ *
+ * Returns true only when the API confirms the post is gone.
+ * Returns false for network errors, API failures, etc. (conservative).
+ */
+export const isBlueskyPostDeleted = async (postUri: string): Promise<boolean> => {
+  try {
+    const url = `${BLUESKY_PUBLIC_API}?uris=${encodeURIComponent(postUri)}`;
+    const response = await fetch(url, {
+      signal: AbortSignal.timeout(URL_CHECK_TIMEOUT_MS),
+    });
+    if (!response.ok) return false;
+    const data = await response.json() as { posts: readonly unknown[] };
+    return data.posts.length === 0;
+  } catch {
+    return false;
+  }
+};
+
+/**
+ * Determine whether an experiment record's post has been deleted from its platform.
+ *
+ * Platform-aware: Bluesky posts are checked via the AT Protocol public API
+ * (because bsky.app is an SPA where HTTP status codes are unreliable),
+ * while other platforms use standard HTTP GET status checks.
+ *
+ * Returns true only when deletion is positively confirmed.
+ * Returns false for network errors, missing identifiers, etc. (conservative).
+ */
+export const isPostDeleted = async (record: ExperimentRecord): Promise<boolean> =>
+  record.platform === "bluesky" && record.postUri
+    ? isBlueskyPostDeleted(record.postUri)
+    : record.postUrl
+      ? isUrl404(record.postUrl)
+      : false;
+
+/**
+ * Clean up stale experiment records by checking whether posts still exist.
+ *
+ * Reads all records from the vault, checks each post via platform-appropriate
+ * methods, and deletes records whose posts have been confirmed deleted.
+ * Bluesky posts are checked via the public AT Protocol API (HTTP status codes
+ * are unreliable for SPAs), while other platforms use HTTP GET status checks.
  *
  * Returns the number of records deleted.
  */
@@ -315,13 +362,11 @@ export const cleanupStaleRecords = async (vaultDir: string): Promise<number> => 
       const content = fs.readFileSync(filePath, "utf-8");
       const record = JSON.parse(content) as ExperimentRecord;
 
-      if (record.postUrl) {
-        const is404 = await isUrl404(record.postUrl);
-        if (is404) {
-          fs.unlinkSync(filePath);
-          console.log(`🗑️ Deleted stale record (404): ${f} → ${record.postUrl}`);
-          deleted++;
-        }
+      const isGone = await isPostDeleted(record);
+      if (isGone) {
+        fs.unlinkSync(filePath);
+        console.log(`🗑️ Deleted stale record (deleted): ${f} → ${record.postUrl ?? record.postUri}`);
+        deleted++;
       }
     } catch {
       // Skip malformed records — they'll be caught by readExperimentRecords

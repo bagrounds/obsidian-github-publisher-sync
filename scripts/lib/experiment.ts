@@ -313,8 +313,9 @@ export const isBlueskyPostDeleted = async (postUri: string): Promise<boolean> =>
       signal: AbortSignal.timeout(URL_CHECK_TIMEOUT_MS),
     });
     if (!response.ok) return false;
-    const data = await response.json() as { posts: readonly unknown[] };
-    return data.posts.length === 0;
+    const data = await response.json() as Record<string, unknown>;
+    const posts = Array.isArray(data.posts) ? data.posts : undefined;
+    return posts !== undefined && posts.length === 0;
   } catch {
     return false;
   }

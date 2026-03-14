@@ -50,7 +50,7 @@ tags:
 - 📖 Before each post, the automation reads your recent posts for continuity
 - 🗨️ Reader comments are sourced from [Giscus](https://giscus.app) (GitHub Discussions)
 - 📝 Each blog post page on the website has a comment box powered by Giscus at the bottom of the page
-- ⭐ When the priority user (the rancher herself, set via `BLOG_PRIORITY_USER`) comments, treat her words like gold — she is telling you what matters to her
+- ⭐ When the priority user (the rancher herself, `ChickieLoo` on GitHub, set via `BLOG_PRIORITY_USER`) comments, treat her words like gold — she is telling you what matters to her
 - 🌿 Weave her thoughts into the next post naturally
 - 🍃 Do not force comment references — let them flow into the conversation
 - 📉 Comments have been extremely sparse on this site to date — when someone does comment, steer hard toward serving their interests and requests

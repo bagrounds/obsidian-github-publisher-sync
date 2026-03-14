@@ -24,7 +24,7 @@ const CHICKIE_LOO: BlogSeriesConfig = {
   icon: "🐔",
   author: "[[chickie-loo]]",
   baseUrl: "https://bagrounds.org/chickie-loo",
-  priorityUser: undefined,
+  priorityUser: "ChickieLoo",
   navLink: "[[index|Home]] > [[chickie-loo/index|🐔 Chickie Loo]]",
 };
 

@@ -10,6 +10,7 @@ import {
   parseGeneratedPost,
   fetchAllSeriesComments,
   todayPacific,
+  appendModelSignature,
 } from "./lib/blog-series.ts";
 
 const DEFAULT_BLOG_MODEL = "gemini-3.1-flash-lite-preview";
@@ -120,9 +121,10 @@ const generate = async (): Promise<void> => {
 
   const slug = generateSlug(parsed.title);
   const frontmatter = assembleFrontmatter(series, today, parsed.title, slug);
+  const bodyWithSignature = appendModelSignature(parsed.body, config.model);
   const filename = `${today}-${slug}.md`;
   fs.mkdirSync(seriesDir, { recursive: true });
-  fs.writeFileSync(path.join(seriesDir, filename), frontmatter + parsed.body + "\n", "utf-8");
+  fs.writeFileSync(path.join(seriesDir, filename), frontmatter + bodyWithSignature + "\n", "utf-8");
 
   log({ event: "post_written", filename, title: parsed.title, contentLength: parsed.body.length });
 };

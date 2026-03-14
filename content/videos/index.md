@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-03-13T17:41:50-07:00
+updated: 2026-03-13T18:06:57-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (680)  
+# 📺 Videos (681)  
 - [💰🤑🤖💡🚀💲 $0.10/Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
@@ -351,6 +351,7 @@ updated: 2026-03-13T17:41:50-07:00
 - [💰🇦🇹🆚📈 MMT vs. Austrian School Debate](./mmt-vs-austrian-school-debate.md)  
 - [🇦🇹💰🆚 Modern Monetary Theory Showdown](./the-austrian-economics-vs-modern-monetary-theory-showdown-robert-murphy-and-nathan-tankus.md)  
 - [💰🤫 Modern Monetary Theory: What They Don’t Tell You (Ft. L. Randall Wray)](./modern-monetary-theory-what-they-dont-tell-you-ft-l-randall-wray.md)  
+- [📦⬅️🌯⬅️🧱 Monadic Parsers at the Input Boundary](./monadic-parsers-at-the-input-boundary.md)  
 - [🗑️👩‍💻👎 Most Tech Interview Prep is GARBAGE](./most-tech-interview-prep-is-garbage-from-a-principal-engineer-at-amazon.md)  
 - [💪🏋️📅 Motoren unseres Lebens - Muskeltraining 2015](./motoren-unseres-lebens-muskeltraining-2015-vortrag-dr-patrick-oconnor.md)  
 - [🇺🇸👑🗣️ Murphy Floor Speech on Trump's Authoritarian Takeover](./murphy-floor-speech-on-trumps-authoritarian-takeover.md)  

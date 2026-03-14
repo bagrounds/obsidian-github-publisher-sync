@@ -101,6 +101,7 @@ URL: ${series.baseUrl}/${today}-${slug}
 Author: "${series.author}"
 tags:
 ---
+${series.navLink}
 # ${today} | ${series.icon} ${title} ${series.icon}
 
 `;

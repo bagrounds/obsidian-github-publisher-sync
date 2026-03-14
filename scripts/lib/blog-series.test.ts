@@ -175,6 +175,18 @@ describe("assembleFrontmatter", () => {
     assert.ok(fm.includes("URL: https://bagrounds.org/auto-blog-zero/2026-03-12-my-great-post"));
     assert.ok(fm.includes('Author: "[[auto-blog-zero]]"'));
     assert.ok(!fm.includes("[Your Title Here]"));
+    assert.ok(fm.includes("[[index|Home]] > [[auto-blog-zero/index|🤖 Auto Blog Zero]]"));
+  });
+
+  it("includes correct nav link for auto-blog-zero", () => {
+    const fm = assembleFrontmatter(series, "2026-03-12", "My Great Post", "my-great-post");
+    assert.ok(fm.includes("[[index|Home]] > [[auto-blog-zero/index|🤖 Auto Blog Zero]]"));
+  });
+
+  it("includes correct nav link for chickie-loo", () => {
+    const chickieSeries = BLOG_SERIES.get("chickie-loo")!;
+    const fm = assembleFrontmatter(chickieSeries, "2026-03-12", "My Great Post", "my-great-post");
+    assert.ok(fm.includes("[[index|Home]] > [[chickie-loo/index|🐔 Chickie Loo]]"));
   });
 });
 

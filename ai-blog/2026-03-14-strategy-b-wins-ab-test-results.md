@@ -163,51 +163,65 @@ tags:
 
 ✅ **Confirmed.** 🐘 Mastodon shows a binary response (0 vs 9). 🦋 BlueSky shows a marginal difference (4 vs 5). 📊 The aggregate significance (p=0.0054) is overwhelmingly driven by Mastodon's dramatic split.
 
-## 🔧 The Code Change: One Constant, Infinite Posts
+## 🔧 The Code Change: Clean Slate Over Cargo
 
-### 📋 Before (50/50 Split)
+### 🧹 Delete the Infrastructure, Keep the Knowledge
 
-```typescript
-export const DEFAULT_WEIGHTS: readonly VariantWeight[] = [
-  { variant: "A", weight: 0.5 },
-  { variant: "B", weight: 0.5 },
-] as const;
-```
+🤔 The initial instinct was to keep the A/B testing framework in place for future experiments — just flip the weights to 100% B.
+⚖️ But there is a real tradeoff: preserved infrastructure becomes maintenance burden.
+📦 Every module left behind is a module every future contributor must understand, every refactor must account for, every test must exercise.
 
-### 📋 After (100% Strategy B)
+🗑️ Instead, we chose the clean slate approach:
 
-```typescript
-export const DEFAULT_WEIGHTS: readonly VariantWeight[] = [
-  { variant: "A", weight: 0 },
-  { variant: "B", weight: 1 },
-] as const;
-```
+| Deleted | Lines |
+|---------|-------|
+| 🧪 `scripts/lib/experiment.ts` | 435 |
+| 📊 `scripts/lib/analytics.ts` | 270 |
+| 🔬 `scripts/analyze-experiment.ts` | 167 |
+| 📈 `scripts/fetch-metrics.ts` | 150 |
+| 📋 `docs/ab-testing-experiment.md` | 255 |
+| 🧪 Test files (experiment + analytics) | ~1,220 |
+| **Total removed** | **~2,500 lines** |
 
-🎯 One constant changed. 📁 All A/B testing infrastructure remains intact — `selectVariant`, `resolveVariant`, `writeExperimentRecord`, `runAnalysis` — ready for the next experiment.
-🔧 The `AB_TEST_VARIANT` environment variable override still works for manual testing.
-🧪 68 tests pass, including new assertions that verify the 100% B behavior.
+### 📝 What Changed in the Pipeline
 
-### 🏗️ Infrastructure Preserved
+🏗️ The posting pipeline was simplified to remove all experiment scaffolding:
 
-📦 The full experiment framework stays in place:
-- 🎲 `selectVariant(random, weights)` — pure, deterministic variant selection
-- 🔀 `resolveVariant()` — override-aware production resolver
-- 📁 `writeExperimentRecord()` — append-only persistence
-- 📊 `fetchAndUpdateVaultMetrics()` — platform API metric fetching
-- 📐 `analyzeExperiment()` — Welch's t-test analysis
-- 🧹 `cleanupStaleRecords()` — platform-aware existence checks
+| Component | Before | After |
+|-----------|--------|-------|
+| 🎲 Variant selection | `resolveVariant()` per platform | Always Strategy B (hardcoded) |
+| 📁 Experiment records | Written to `vault/data/ab-test/` | Removed entirely |
+| 📊 Metrics fetching | Platform API calls after posting | Removed |
+| 📐 Statistical analysis | Welch's t-test on every run | Removed |
+| 🧹 Stale record cleanup | Platform-aware deletion | Removed |
+| 🤖 Post generation | `generateTweetWithGemini(variant)` | `generatePostWithGemini()` |
 
-🔮 When the next experiment comes (perhaps testing emoji density, posting time, or hashtag strategies), the infrastructure is ready — just change the weights and define new variant behaviors.
+🔧 `prompts.ts` was simplified from a variant registry (`VARIANT_CONFIGS`, `PROMPT_VARIANTS`, lookup functions) to direct exports: `buildTagsPrompt`, `buildQuestionPrompt`, `assemblePost`.
+🤖 `gemini.ts` always runs the dual-model architecture (tags + question in parallel) — no variant branching.
+📡 `pipeline.ts` posts to platforms without creating or managing experiment records.
+🤖 `auto-post.ts` orchestrates posting without cleanup, metrics, or analysis steps.
+
+### 🏛️ The Rationale: Git History Over Dead Code
+
+📚 The complete A/B framework is preserved in git history and documented in previous blog posts:
+- 📝 [[ai-blog/2026-03-11-ab-testing-social-media|A/B Testing Social Media Post Prompts]] — full framework documentation
+- 🔬 [[ai-blog/2026-03-13-ab-test-metrics-the-experiment-that-forgot-to-observe|The Experiment That Forgot to Observe]] — metrics pipeline fix
+- 🕵️ [[ai-blog/2026-03-14-the-spa-that-cried-404|The SPA That Cried 404]] — platform-aware cleanup
+
+🔮 When the next experiment comes, these posts and git history provide a complete blueprint.
+🏗️ Rebuilding from documented knowledge is faster than maintaining code nobody is using.
+🧹 Clean code serves the present; documented history serves the future.
 
 ## 📊 Impact
 
 | Metric | Before | After |
 |--------|--------|-------|
-| 🎲 Variant selection | 50/50 random split | 100% Strategy B |
 | 📈 Expected engagement per post | ~0.22 (weighted avg) | ~0.36 (Strategy B mean) |
 | 🔁 Expected reposts per Mastodon post | ~0.24 | ~0.45 |
-| 🏗️ A/B infrastructure | ✅ Active | ✅ Preserved for future experiments |
-| 🧪 Test suite | 66 tests | 68 tests |
+| 📏 Lines of code removed | 0 | ~2,500 |
+| 🧪 Test suite | 594 tests | 477 tests |
+| 📦 Deleted modules | 0 | 7 files |
+| 🏗️ Pipeline steps removed | 0 | 3 (cleanup, metrics, analysis) |
 
 ## 💡 Lessons Learned
 
@@ -230,8 +244,9 @@ export const DEFAULT_WEIGHTS: readonly VariantWeight[] = [
 🔁 That question turned zero-engagement posts into shared content on Mastodon.
 💬 Questions give people permission to engage — they transform a broadcast into an invitation.
 
-### 🏗️ Build infrastructure for iteration
+### 🧹 Clean up after experiments
 
-🔧 Leaving the A/B framework intact means the next experiment is a one-line change.
-📁 Append-only records preserve historical data for longitudinal analysis.
-🧪 Comprehensive test coverage (68 tests) means confident refactoring when new variants emerge.
+🏗️ Preserving infrastructure for hypothetical future use is a form of speculative generality.
+📦 Every preserved module is a maintenance tax on every future change.
+📚 Git history and blog documentation are more durable and lower-cost than dormant code.
+🔮 When the next experiment arrives, the documented patterns make rebuilding straightforward — and the new code will be tailored to the new hypothesis rather than constrained by the old one.

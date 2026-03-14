@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-03-13T18:06:57-07:00
+updated: 2026-03-13T18:31:42-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -58,7 +58,8 @@ updated: 2026-03-13T18:06:57-07:00
 - [🧑‍💻🤖 Human + Machine: Reimagining Work in the Age of AI](./books/human-machine-reimagining-work-in-the-age-of-ai.md)  
   
   
-## [📺 Videos](./videos/index.md) (681)  
+## [📺 Videos](./videos/index.md) (682)  
+- [🤖💬🧑 Every Claude Code Concept Explained for Normal People](./videos/every-claude-code-concept-explained-for-normal-people.md)  
 - [📦⬅️🌯⬅️🧱 Monadic Parsers at the Input Boundary](./videos/monadic-parsers-at-the-input-boundary.md)  
 - [🧠🚀💡✨ Inside Pathway's Post-Transformer Architecture Designed for Memory and On-the-Fly Learning](./videos/inside-pathways-post-transformer-architecture-designed-for-memory-and-on-the-fly-learning.md)  
 - [🚨👮‍♂️🤫🇺🇸👥⚔️😠 ICE Agents EVERYWHERE Are Secretly REVOLTING Against TRUMP🚨](./videos/ice-agents-everywhere-are-secretly-revolting-against-trump.md)  
@@ -68,7 +69,6 @@ updated: 2026-03-13T18:06:57-07:00
 - [❓🤖🧑‍💻🧑‍🤝‍🧑 45 People, $200M Revenue. The Question Nobody's Asking About AI and Your Team Size.](./videos/45-people-200m-revenue-the-question-nobodys-asking-about-ai-and-your-team-size.md)  
 - [💪🛠️🧠 How I trained myself to crave hard work](./videos/how-i-trained-myself-to-crave-hard-work.md)  
 - [🗣️🇺🇸⚔️👤 Rebecca Solnit Says Trump's Strongest Foil Has Been Here All Along | The Interview](./videos/rebecca-solnit-says-trumps-strongest-foil-has-been-here-all-along-the-interview.md)  
-- [🏛️🗣️📰 This Week in Politics | Explainer](./videos/this-week-in-politics-explainer-march-6-2026.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  

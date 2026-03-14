@@ -13,6 +13,7 @@ import {
   generateSeriesIndex,
   extractSlug,
   parseGeneratedPost,
+  appendModelSignature,
   todayPacific,
   assembleFrontmatter,
 } from "./blog-series.ts";
@@ -218,6 +219,20 @@ describe("parseGeneratedPost", () => {
 
   it("rejects post without heading", () => assert.equal(parseGeneratedPost("Just some body text here."), null));
   it("rejects too-short post", () => assert.equal(parseGeneratedPost("## Title\nShort"), null));
+});
+
+describe("appendModelSignature", () => {
+  it("appends model signature with placeholder", () => {
+    const body = "## My Post\n\nThis is content.";
+    const result = appendModelSignature(body, "gemini-3.1-flash");
+    assert.equal(result, "## My Post\n\nThis is content.\n✍️ Written by gemini-3.1-flash");
+  });
+
+  it("works with different model names", () => {
+    const body = "## Post\n\nContent here.";
+    const result = appendModelSignature(body, "claude-3-opus");
+    assert.ok(result.includes("✍️ Written by claude-3-opus"));
+  });
 });
 
 describe("todayPacific", () => {

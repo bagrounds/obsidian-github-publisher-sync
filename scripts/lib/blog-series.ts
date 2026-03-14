@@ -44,3 +44,6 @@ export const parseGeneratedPost = (raw: string): { body: string; title: string }
   if (!titleMatch?.[1]) return null;
   return { body: trimmed, title: titleMatch[1].trim() };
 };
+
+export const appendModelSignature = (body: string, model: string): string =>
+  `${body}\n✍️ Written by ${model}`;

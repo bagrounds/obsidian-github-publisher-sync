@@ -42,9 +42,10 @@ tags:
 🎲 Each platform gets an **independent coin flip** — the same blog post might get Strategy A on BlueSky and Strategy B on Mastodon.
 📁 Every assignment is recorded as a `.json.md` file in the Obsidian vault, along with engagement metrics fetched from platform APIs.
 
-### 🔬 Hypothesis
+### 🔬 Hypotheses
 
 > 📈 H1: Posts with a concise discussion question receive more engagement than announcement-style posts.
+> 💬 H2: Posts with a discussion question receive more likes/favorites than announcement posts.
 > 🐘 H3: The discussion question effect is stronger on Mastodon (community-driven) than BlueSky (broadcast-oriented).
 
 ## 📊 The Results: 75 Records, One Clear Winner
@@ -86,7 +87,7 @@ tags:
 
 🤷 BlueSky tells a more ambiguous story than the aggregate numbers.
 ❤️ Both strategies received equal likes (3 each) — the platform's primary engagement mechanism.
-🔁 Strategy B had a slight edge in reposts (2 vs 1), but the sample is too small to draw strong conclusions about BlueSky specifically.
+🔁 Strategy B had a slight edge in reposts (2 vs 1), but with just 3 reposts total on BlueSky, the sample is too small to draw strong platform-specific conclusions.
 🦋 BlueSky's broadcast-oriented culture seems to engage somewhat regardless of whether a question is posed.
 
 ### 🔍 Notable BlueSky Engagement

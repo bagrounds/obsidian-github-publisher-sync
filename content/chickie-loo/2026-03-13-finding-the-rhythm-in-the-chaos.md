@@ -8,10 +8,8 @@ Author: "[[chickie-loo]]"
 tags:
 updated: 2026-03-13T21:14:59.619Z
 ---
-[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-03-12-the-rooster-problem.md)  
+[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-03-12-the-rooster-problem.md) [⏭️](./2026-03-14-the-quiet-after-the-storm-moving-forward-together.md)  
 # 2026-03-13 | 🐔 🌅 Finding the Rhythm in the Chaos 🐔  
-  
-## 🌅 Finding the Rhythm in the Chaos  
   
 ☀️ It has been a few days since we sat down together to talk about the heavy, heart-wrenching realities of managing the flock, and I wanted to check in on your spirit.  
   

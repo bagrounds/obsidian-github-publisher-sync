@@ -30,20 +30,11 @@ import {
 import { PipelineTimer } from "./timer.ts";
 import { calculateTweetLength, countGraphemes, fitPostToLimit } from "./text.ts";
 import { readNote } from "./frontmatter.ts";
-import { generateTweetWithGemini } from "./gemini.ts";
-import {
-  resolveVariant,
-  createAssignment,
-  formatAssignment,
-  writeExperimentRecord,
-  migrateExperimentRecords,
-} from "./experiment.ts";
-import type { VariantId, ExperimentRecord } from "./experiment.ts";
+import { generatePostWithGemini } from "./gemini.ts";
 import { validateEnvironment, getYesterdayDate } from "./env.ts";
 import { buildTweetSection, buildBlueskySection, buildMastodonSection } from "./embed-section.ts";
 import { syncObsidianVault, pushObsidianVault } from "./obsidian-sync.ts";
 
-// Platform imports
 import { postTweet, getEmbedHtml } from "./platforms/twitter.ts";
 import {
   postToBluesky,
@@ -55,13 +46,7 @@ import { fetchOgMetadata } from "./platforms/og-metadata.ts";
 
 // --- Platform Posting Tasks ---
 
-/** Result of a successful platform post, including the experiment record. */
-interface PostingResult {
-  readonly embedSection: EmbedSection;
-  readonly experimentRecord: ExperimentRecord;
-}
-
-type PostingTask = () => Promise<PostingResult | null>;
+type PostingTask = () => Promise<EmbedSection | null>;
 
 const createTwitterTask = (
   env: EnvironmentConfig,
@@ -70,13 +55,9 @@ const createTwitterTask = (
   date: string,
 ): PostingTask => async () => {
   try {
-    const variant: VariantId = resolveVariant();
-    const assignment = createAssignment(variant, obsidianNotePath, "twitter");
-    console.log(formatAssignment(assignment));
-
-    console.log(`🤖 Generating Twitter post (variant ${variant})...`);
-    const postText = await generateTweetWithGemini(reflection, env.gemini.apiKey, env.gemini.model, variant, env.gemini.questionModel);
-    console.log(`📝 Twitter post (${calculateTweetLength(postText)} chars, variant ${variant}):\n${postText}`);
+    console.log(`🤖 Generating Twitter post...`);
+    const postText = await generatePostWithGemini(reflection, env.gemini.apiKey, env.gemini.model, env.gemini.questionModel);
+    console.log(`📝 Twitter post (${calculateTweetLength(postText)} chars):\n${postText}`);
 
     const twitterText = fitPostToLimit(postText, TWITTER_MAX_LENGTH);
     if (twitterText !== postText) {
@@ -91,19 +72,7 @@ const createTwitterTask = (
     const embedHtml = await getEmbedHtml(tweet.id, tweet.text, date);
     console.log(`📋 Got tweet embed HTML (${embedHtml.length} chars)`);
 
-    const record: ExperimentRecord = {
-      variant,
-      notePath: obsidianNotePath,
-      platform: "twitter",
-      timestamp: assignment.timestamp,
-      postUrl: `https://twitter.com/${TWITTER_HANDLE}/status/${tweet.id}`,
-      postId: tweet.id,
-    };
-
-    return {
-      embedSection: { header: TWEET_SECTION_HEADER, embedHtml, buildSection: buildTweetSection },
-      experimentRecord: record,
-    };
+    return { header: TWEET_SECTION_HEADER, embedHtml, buildSection: buildTweetSection };
   } catch (error) {
     console.error(`⚠️  Twitter posting failed (non-fatal)`);
     const e = error as { code?: number; data?: unknown; rateLimit?: unknown; message?: string; stack?: string; type?: string };
@@ -124,13 +93,9 @@ const createBlueskyTask = (
   date: string,
 ): PostingTask => async () => {
   try {
-    const variant: VariantId = resolveVariant();
-    const assignment = createAssignment(variant, obsidianNotePath, "bluesky");
-    console.log(formatAssignment(assignment));
-
-    console.log(`🤖 Generating Bluesky post (variant ${variant})...`);
-    const postText = await generateTweetWithGemini(reflection, env.gemini.apiKey, env.gemini.model, variant, env.gemini.questionModel);
-    console.log(`📝 Bluesky post (${calculateTweetLength(postText)} chars, variant ${variant}):\n${postText}`);
+    console.log(`🤖 Generating Bluesky post...`);
+    const postText = await generatePostWithGemini(reflection, env.gemini.apiKey, env.gemini.model, env.gemini.questionModel);
+    console.log(`📝 Bluesky post (${calculateTweetLength(postText)} chars):\n${postText}`);
 
     console.log(`🦋 Posting to Bluesky...`);
 
@@ -167,20 +132,7 @@ const createBlueskyTask = (
     );
     console.log(`📋 Got Bluesky embed HTML (${embedHtml.length} chars)`);
 
-    const record: ExperimentRecord = {
-      variant,
-      notePath: obsidianNotePath,
-      platform: "bluesky",
-      timestamp: assignment.timestamp,
-      postUrl: buildBlueskyPostUrl(did, postId),
-      postId,
-      postUri: bskyPost.uri,
-    };
-
-    return {
-      embedSection: { header: BLUESKY_SECTION_HEADER, embedHtml, buildSection: buildBlueskySection },
-      experimentRecord: record,
-    };
+    return { header: BLUESKY_SECTION_HEADER, embedHtml, buildSection: buildBlueskySection };
   } catch (error) {
     console.error(`⚠️  Bluesky posting failed (non-fatal):`);
     console.error(`   ${error instanceof Error ? error.message : error}`);
@@ -198,13 +150,9 @@ const createMastodonTask = (
   date: string,
 ): PostingTask => async () => {
   try {
-    const variant: VariantId = resolveVariant();
-    const assignment = createAssignment(variant, obsidianNotePath, "mastodon");
-    console.log(formatAssignment(assignment));
-
-    console.log(`🤖 Generating Mastodon post (variant ${variant})...`);
-    const postText = await generateTweetWithGemini(reflection, env.gemini.apiKey, env.gemini.model, variant, env.gemini.questionModel);
-    console.log(`📝 Mastodon post (${calculateTweetLength(postText)} chars, variant ${variant}):\n${postText}`);
+    console.log(`🤖 Generating Mastodon post...`);
+    const postText = await generatePostWithGemini(reflection, env.gemini.apiKey, env.gemini.model, env.gemini.questionModel);
+    console.log(`📝 Mastodon post (${calculateTweetLength(postText)} chars):\n${postText}`);
 
     console.log(`🐘 Posting to Mastodon...`);
 
@@ -220,19 +168,7 @@ const createMastodonTask = (
     const embedHtml = await getMastodonEmbedHtml(mastodonPost.url, mastodonPost.text, date);
     console.log(`📋 Got Mastodon embed HTML (${embedHtml.length} chars)`);
 
-    const record: ExperimentRecord = {
-      variant,
-      notePath: obsidianNotePath,
-      platform: "mastodon",
-      timestamp: assignment.timestamp,
-      postUrl: mastodonPost.url,
-      postId: mastodonPost.id,
-    };
-
-    return {
-      embedSection: { header: MASTODON_SECTION_HEADER, embedHtml, buildSection: buildMastodonSection },
-      experimentRecord: record,
-    };
+    return { header: MASTODON_SECTION_HEADER, embedHtml, buildSection: buildMastodonSection };
   } catch (error) {
     console.error(`⚠️  Mastodon posting failed (non-fatal):`);
     console.error(`   ${error instanceof Error ? error.message : error}`);
@@ -243,13 +179,6 @@ const createMastodonTask = (
   }
 };
 
-/**
- * Collect posting tasks for all configured platforms that haven't been posted yet.
- *
- * Each task independently selects its own A/B test variant and generates
- * its own post text. This means Bluesky might get variant A while Mastodon
- * gets variant B for the same note — enabling cross-platform comparison.
- */
 const collectPostingTasks = (
   env: EnvironmentConfig,
   reflection: ReflectionData,
@@ -293,25 +222,18 @@ const collectPostingTasks = (
     .map(({ createTask }) => createTask());
 };
 
-/**
- * Execute posting tasks in parallel and collect successful results.
- * Each result includes both the embed section and the experiment record.
- */
-const executePostingTasks = async (tasks: PostingTask[]): Promise<PostingResult[]> => {
+const executePostingTasks = async (tasks: PostingTask[]): Promise<EmbedSection[]> => {
   if (tasks.length === 0) return [];
 
   console.log(`📡 Posting to ${tasks.length} platform(s) in parallel...`);
   const results = await Promise.allSettled(tasks.map((task) => task()));
 
   return results
-    .filter((r): r is PromiseFulfilledResult<PostingResult | null> => r.status === "fulfilled")
+    .filter((r): r is PromiseFulfilledResult<EmbedSection | null> => r.status === "fulfilled")
     .map((r) => r.value)
-    .filter((v): v is PostingResult => v !== null);
+    .filter((v): v is EmbedSection => v !== null);
 };
 
-/**
- * Write embed sections to a note file and push the vault.
- */
 const writeEmbedsAndPush = async (
   vaultDir: string,
   notePath: string,
@@ -365,17 +287,6 @@ function parseArgs(): { date: string; note?: string } {
 
 // --- Main Pipeline ---
 
-/**
- * Main entry point for the social posting pipeline.
- *
- * The pipeline is composed of discrete, independent phases:
- * 1. Validate environment → typed config
- * 2. Sync vault → local directory
- * 3. Read note → ReflectionData
- * 4. Generate text → post string
- * 5. Post to platforms → EmbedSection[]
- * 6. Write embeds + push vault
- */
 export async function main(options?: {
   date?: string;
   note?: string;
@@ -415,26 +326,10 @@ export async function main(options?: {
   }
   console.log(`🔍 Section check — tweet: ${reflection.hasTweetSection}, bluesky: ${reflection.hasBlueskySection}, mastodon: ${reflection.hasMastodonSection}`);
 
-  const postingResults = await timer.time("social-posting", async () => {
+  const embedSections = await timer.time("social-posting", async () => {
     const tasks = collectPostingTasks(env, reflection, obsidianNotePath, date);
     return executePostingTasks(tasks);
   });
-
-  const embedSections = postingResults.map((r) => r.embedSection);
-
-  // Write experiment records to vault BEFORE pushing (so they get synced)
-  if (postingResults.length > 0 && vaultDir) {
-    // Migrate any legacy .json records to .json.md before writing new ones
-    const migrated = migrateExperimentRecords(vaultDir);
-    if (migrated > 0) {
-      console.log(`🔄 Migrated ${migrated} experiment record(s) from .json to .json.md`);
-    }
-
-    for (const result of postingResults) {
-      const filePath = writeExperimentRecord(vaultDir, result.experimentRecord);
-      console.log(`🧪 Experiment record written: ${filePath}`);
-    }
-  }
 
   if (embedSections.length > 0 && vaultDir) {
     console.log(`📝 Writing ${embedSections.length} embed section(s) to Obsidian note: ${obsidianNotePath}`);

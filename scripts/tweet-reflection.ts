@@ -86,47 +86,11 @@ export {
 } from "./lib/embed-section.ts";
 
 // --- Re-exports: Gemini ---
-export { buildGeminiPrompt, generateTweetWithGemini, parseRetryDelay, isRateLimitError } from "./lib/gemini.ts";
+export { buildGeminiPrompt, generatePostWithGemini, parseRetryDelay, isRateLimitError } from "./lib/gemini.ts";
 
-// --- Re-exports: A/B Testing Experiment ---
-export type { VariantId, VariantWeight, ExperimentAssignment, ExperimentRecord, EngagementMetrics, ExperimentObservation } from "./lib/experiment.ts";
-export {
-  VARIANT_IDS,
-  DEFAULT_WEIGHTS,
-  EXPERIMENT_DATA_DIR,
-  selectVariant,
-  randomVariant,
-  createAssignment,
-  getVariantOverride,
-  resolveVariant,
-  formatAssignment,
-  validateWeights,
-  isVariantId,
-  buildRecordFileName,
-  writeExperimentRecord,
-  readExperimentRecords,
-  migrateExperimentRecords,
-} from "./lib/experiment.ts";
-
-// --- Re-exports: Versioned Prompts ---
-export type { PromptPair, PromptBuilder, PostAssembler, VariantConfig } from "./lib/prompts.ts";
-export { VARIANT_CONFIGS, PROMPT_VARIANTS, getPromptBuilder, getPostAssembler, buildPromptForVariant, assemblePostForVariant, parseVariantBOutput } from "./lib/prompts.ts";
-
-// --- Re-exports: Analytics ---
-export {
-  fetchMastodonMetrics,
-  fetchBlueskyMetrics,
-  totalEngagement,
-  engagementRate,
-  mean,
-  variance,
-  standardDeviation,
-  welchTTest,
-  approximatePValue,
-  analyzeExperiment,
-  formatExperimentSummary,
-} from "./lib/analytics.ts";
-export type { ExperimentSummary } from "./lib/analytics.ts";
+// --- Re-exports: Prompts ---
+export type { PromptPair, PromptBuilder, PostAssembler } from "./lib/prompts.ts";
+export { buildTagsPrompt, buildQuestionPrompt, assemblePost, parseQuestionAndTags, AI_QUESTION_PREFIX, calculateQuestionBudget, stripSubtitle, buildShortenQuestionPrompt } from "./lib/prompts.ts";
 
 // --- Re-exports: Environment ---
 export { isPlatformDisabled, validateEnvironment, getYesterdayDate } from "./lib/env.ts";

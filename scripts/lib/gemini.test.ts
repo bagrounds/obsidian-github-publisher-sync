@@ -5,7 +5,7 @@
  * - parseRetryDelay: extracting retry delays from various error formats
  * - isRateLimitError: detecting 429 / RESOURCE_EXHAUSTED errors
  * - buildGeminiPrompt: backward-compat shim
- * - generateTweetWithGemini: dual-model variant B, single-model variant A
+ * - dual-model architecture verification
  */
 
 import { describe, it } from "node:test";
@@ -67,7 +67,6 @@ describe("parseRetryDelay", () => {
       message: 'retryDelay "5s"',
       headers: { "retry-after": "30" },
     };
-    // Message-embedded delay takes priority
     assert.equal(parseRetryDelay(error), 5_000);
   });
 
@@ -139,9 +138,8 @@ describe("buildGeminiPrompt", () => {
     assert.ok(prompt.user.length > 0);
   });
 
-  it("builds variant A prompt (backward compat)", () => {
+  it("builds the tags prompt (backward compat)", () => {
     const prompt = buildGeminiPrompt(reflection);
-    // Should be the tags prompt (variant A)
     assert.ok(prompt.system.includes("topic tags") || prompt.system.includes("social media"));
   });
 });
@@ -157,7 +155,6 @@ describe("dual-model architecture", () => {
   });
 
   it("GeminiConfig includes questionModel field", async () => {
-    // Verify the type exists by checking validateEnvironment returns it
     const { validateEnvironment } = await import("./env.ts");
     const saved = {
       GEMINI_API_KEY: process.env.GEMINI_API_KEY,

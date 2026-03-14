@@ -38,20 +38,32 @@ import type { VariantWeight, ExperimentRecord, EngagementMetrics } from "./exper
 // --- selectVariant ---
 
 describe("selectVariant", () => {
-  it("selects variant A when random < 0.5 with default weights", () => {
-    assert.equal(selectVariant(0.0, DEFAULT_WEIGHTS), "A");
-    assert.equal(selectVariant(0.25, DEFAULT_WEIGHTS), "A");
-    assert.equal(selectVariant(0.49, DEFAULT_WEIGHTS), "A");
-  });
+  const EVEN_WEIGHTS: VariantWeight[] = [
+    { variant: "A", weight: 0.5 },
+    { variant: "B", weight: 0.5 },
+  ];
 
-  it("selects variant B when random >= 0.5 with default weights", () => {
+  it("always selects variant B with default weights (100% B)", () => {
+    assert.equal(selectVariant(0.0, DEFAULT_WEIGHTS), "B");
+    assert.equal(selectVariant(0.25, DEFAULT_WEIGHTS), "B");
     assert.equal(selectVariant(0.5, DEFAULT_WEIGHTS), "B");
-    assert.equal(selectVariant(0.75, DEFAULT_WEIGHTS), "B");
     assert.equal(selectVariant(0.99, DEFAULT_WEIGHTS), "B");
   });
 
-  it("handles boundary at exactly 0.5", () => {
-    assert.equal(selectVariant(0.5, DEFAULT_WEIGHTS), "B");
+  it("selects variant A when random < 0.5 with even weights", () => {
+    assert.equal(selectVariant(0.0, EVEN_WEIGHTS), "A");
+    assert.equal(selectVariant(0.25, EVEN_WEIGHTS), "A");
+    assert.equal(selectVariant(0.49, EVEN_WEIGHTS), "A");
+  });
+
+  it("selects variant B when random >= 0.5 with even weights", () => {
+    assert.equal(selectVariant(0.5, EVEN_WEIGHTS), "B");
+    assert.equal(selectVariant(0.75, EVEN_WEIGHTS), "B");
+    assert.equal(selectVariant(0.99, EVEN_WEIGHTS), "B");
+  });
+
+  it("handles boundary at exactly 0.5 with even weights", () => {
+    assert.equal(selectVariant(0.5, EVEN_WEIGHTS), "B");
   });
 
   it("handles custom weights: 80/20 split", () => {
@@ -65,12 +77,11 @@ describe("selectVariant", () => {
     assert.equal(selectVariant(0.99, weights), "B");
   });
 
-  it("handles edge case: random = 0", () => {
-    assert.equal(selectVariant(0, DEFAULT_WEIGHTS), "A");
+  it("handles edge case: random = 0 with even weights", () => {
+    assert.equal(selectVariant(0, EVEN_WEIGHTS), "A");
   });
 
   it("handles edge case: floating-point near 1.0", () => {
-    // Should fall back to last variant
     const result = selectVariant(1.0, DEFAULT_WEIGHTS);
     assert.equal(result, "B");
   });
@@ -94,10 +105,23 @@ describe("randomVariant", () => {
     }
   });
 
-  it("produces both variants over many trials (statistical)", () => {
+  it("always produces variant B with default 100% B weights", () => {
     const results = new Set<string>();
     for (let i = 0; i < 100; i++) {
       results.add(randomVariant());
+    }
+    assert.ok(results.has("B"), "Should produce variant B");
+    assert.ok(!results.has("A"), "Should not produce variant A with 100% B weights");
+  });
+
+  it("produces both variants with even weights (statistical)", () => {
+    const evenWeights: VariantWeight[] = [
+      { variant: "A", weight: 0.5 },
+      { variant: "B", weight: 0.5 },
+    ];
+    const results = new Set<string>();
+    for (let i = 0; i < 100; i++) {
+      results.add(randomVariant(evenWeights));
     }
     assert.ok(results.has("A"), "Should produce variant A");
     assert.ok(results.has("B"), "Should produce variant B");
@@ -181,11 +205,11 @@ describe("resolveVariant", () => {
     else delete process.env.AB_TEST_VARIANT;
   });
 
-  it("falls back to random when no override", () => {
+  it("falls back to variant B with default weights when no override", () => {
     const original = process.env.AB_TEST_VARIANT;
     delete process.env.AB_TEST_VARIANT;
     const result = resolveVariant();
-    assert.ok(result === "A" || result === "B");
+    assert.equal(result, "B");
     if (original !== undefined) process.env.AB_TEST_VARIANT = original;
   });
 });

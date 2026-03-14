@@ -27,10 +27,10 @@ export interface VariantWeight {
   readonly weight: number;
 }
 
-/** Default: equal 50/50 split. */
+/** Default: 100% variant B (discussion question) — winner of the 2026-03 experiment. */
 export const DEFAULT_WEIGHTS: readonly VariantWeight[] = [
-  { variant: "A", weight: 0.5 },
-  { variant: "B", weight: 0.5 },
+  { variant: "A", weight: 0 },
+  { variant: "B", weight: 1 },
 ] as const;
 
 /** Immutable record of a variant assignment for a single post on a single platform. */
@@ -82,8 +82,8 @@ export interface ExperimentObservation {
  * variant weights, then returns whichever interval contains the random value.
  *
  * @example
- * selectVariant(0.3, DEFAULT_WEIGHTS) // => "A" (0.3 < 0.5)
- * selectVariant(0.7, DEFAULT_WEIGHTS) // => "B" (0.7 >= 0.5)
+ * selectVariant(0.3, DEFAULT_WEIGHTS) // => "B" (100% B after experiment)
+ * selectVariant(0.7, DEFAULT_WEIGHTS) // => "B" (100% B after experiment)
  */
 export const selectVariant = (
   random: number,

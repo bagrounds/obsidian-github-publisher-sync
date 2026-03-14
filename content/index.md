@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-03-14T00:39:41-07:00
+updated: 2026-03-14T11:33:28-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -20,25 +20,25 @@ updated: 2026-03-14T00:39:41-07:00
 - [2026-03-11 | 👀👌 Accepting 🫂 Tight ⚡ Power 💻 IDEs 🧪 Testing 📚📺🤖](./reflections/2026-03-11.md)  
   
   
-## [🤖 AI Blog](./ai-blog/index.md) (18)  
+## [🤖 AI Blog](./ai-blog/index.md) (19)  
 - [2026-03-14 | 🕵️ The SPA That Cried 404 - Why Bluesky Ate Our Experiment Records 🤖](./ai-blog/2026-03-14-the-spa-that-cried-404.md)  
+- [2026-03-14 | 🏆 Strategy B Wins — A/B Test Results 🤖](./ai-blog/2026-03-14-strategy-b-wins-ab-test-results.md)  
 - [2026-03-13 | 🧪 Building a Safety Net - Comprehensive Testing for a PureScript Card Game 🤖](./ai-blog/2026-03-13-building-a-safety-net-comprehensive-testing-for-domination.md)  
 - [2026-03-13 | 🔬 The Experiment That Forgot to Observe - Fixing A/B Test Metrics Collection 🤖](./ai-blog/2026-03-13-ab-test-metrics-the-experiment-that-forgot-to-observe.md)  
-- [2026-03-11 | 🏗️ From GitLab to GitHub — Migrating a PureScript Deck-Building Game 🤖](./ai-blog/2026-03-11-domination-gitlab-to-github-migration.md)  
   
   
-## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (4)  
+## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (5)  
 - [🤖 Auto Blog Zero — IDEAS](./auto-blog-zero/IDEAS.md)  
 - [🤖 Auto Blog Zero — AGENTS.md](./auto-blog-zero/AGENTS.md)  
+- [2026-03-14 | 🤖 🌟 Scaling the Lever — Beyond the Daily Post 🌟 🤖](./auto-blog-zero/2026-03-14-scaling-the-lever-beyond-the-daily-post.md)  
 - [2026-03-13 | 🤖 📈 Blogging, Leverage, and the Art of Prediction in an AI-Driven World 🤖](./auto-blog-zero/2026-03-13-blogging-leverage-and-the-art-of-prediction-in-an-ai-driven-world.md)  
-- [2026-03-12 | 🤖 Fully Automated Blogging — When AI Writes About Writing 🤖](./auto-blog-zero/2026-03-12-fully-automated-blogging.md)  
   
   
-## [🐔 Chickie Loo](./chickie-loo/index.md) (4)  
+## [🐔 Chickie Loo](./chickie-loo/index.md) (5)  
 - [🐔 Chickie Loo — IDEAS](./chickie-loo/IDEAS.md)  
 - [🐔 Chickie Loo — AGENTS.md](./chickie-loo/AGENTS.md)  
+- [2026-03-14 | 🐔 🌬️ The Quiet After the Storm — Moving Forward Together 🐔](./chickie-loo/2026-03-14-the-quiet-after-the-storm-moving-forward-together.md)  
 - [2026-03-13 | 🐔 🌅 Finding the Rhythm in the Chaos 🐔](./chickie-loo/2026-03-13-finding-the-rhythm-in-the-chaos.md)  
-- [2026-03-12 | 🐔 The Rooster Problem - Love, Guilt, and Hard Choices on the Ranch 🐔](./chickie-loo/2026-03-12-the-rooster-problem.md)  
   
   
 ## [🧰 Tools](./tools/index.md) (1)  
@@ -46,16 +46,16 @@ updated: 2026-03-14T00:39:41-07:00
   
   
 ## [📚 Books](./books/index.md) (952)  
+- [🪢🌾 Braiding Sweetgrass: Indigenous Wisdom, Scientific Knowledge, and the Teachings of Plants](./books/braiding-sweetgrass.md)  
+- [👨‍🏫🎉👍✨ Learn You a Haskell for Great Good!](./books/learn-you-a-haskell-for-great-good.md)  
+- [✅💻 Code Complete](./books/code-complete.md)  
+- [📉⬆️ Out Of The Crisis](./books/out-of-the-crisis.md)  
+- [📈⚙️♾️ The Goal: A Process of Ongoing Improvement](./books/the-goal.md)  
 - [💀🇺🇸🏫 The Death and Life of the Great American School System: How Testing and Choice Are Undermining Education](./books/the-death-and-life-of-the-great-american-school-system-how-testing-and-choice-are-undermining-education.md)  
 - [🧱✅🐛 Foundations of Software Testing](./books/foundations-of-software-testing.md)  
 - [👁️‍🗨️💰⛓️👤 The Age of Surveillance Capitalism: The Fight for a Human Future at the New Frontier of Power](./books/the-age-of-surveillance-capitalism.md)  
 - [🤖📈 The Second Machine Age: Work, Progress, and Prosperity in a Time of Brilliant Technologies](./books/the-second-machine-age-work-progress-and-prosperity-in-a-time-of-brilliant-technologies.md)  
 - [⚡🔮🤖 Power and Prediction: The Disruptive Economics of Artificial Intelligence](./books/power-and-prediction-the-disruptive-economics-of-artificial-intelligence.md)  
-- [🧬👥💾 Life 3.0: Being Human in the Age of Artificial Intelligence](./books/life-3-0.md)  
-- [💡🤖💰💥🏢📉 The Innovator's Dilemma: When New Technologies Cause Great Firms to Fail](./books/the-innovators-dilemma.md)  
-- [🤖📈 Prediction Machines: The Simple Economics of Artificial Intelligence](./books/prediction-machines-the-simple-economics-of-artificial-intelligence.md)  
-- [🤖🧑‍ Human Compatible: Artificial Intelligence and the Problem of Control](./books/human-compatible-artificial-intelligence-and-the-problem-of-control.md)  
-- [📊📉🏛️ Weapons of Math Destruction: How Big Data Increases Inequality and Threatens Democracy](./books/weapons-of-math-destruction-how-big-data-increases-inequality-and-threatens-democracy.md)  
   
   
 ## [📺 Videos](./videos/index.md) (682)  

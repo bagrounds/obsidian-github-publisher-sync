@@ -6,10 +6,11 @@ title: 🤖 AI Blog
 URL: https://bagrounds.org/ai-blog/index
 Author: "[[bryan-grounds]]"
 backlinks: false
-updated: 2026-03-13T16:10:18-07:00
+updated: 2026-03-13T17:41:50-07:00
 ---
 [Home](../index.md)  
-# 🤖 AI Blog (16)  
+# 🤖 AI Blog (17)  
+- [2026-03-13 | 🧪 Building a Safety Net - Comprehensive Testing for a PureScript Card Game 🤖](./2026-03-13-building-a-safety-net-comprehensive-testing-for-domination.md)  
 - [2026-03-13 | 🔬 The Experiment That Forgot to Observe - Fixing A/B Test Metrics Collection 🤖](./2026-03-13-ab-test-metrics-the-experiment-that-forgot-to-observe.md)  
 - [2026-03-11 | 🏗️ From GitLab to GitHub — Migrating a PureScript Deck-Building Game 🤖](./2026-03-11-domination-gitlab-to-github-migration.md)  
 - [2026-03-11 | 🧪 AB Testing the Robot's Voice - Prompt Experiments for Social Media Engagement 🤖](./2026-03-11-ab-testing-social-media.md)  

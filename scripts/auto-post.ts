@@ -29,10 +29,6 @@ import {
   type ContentToPost,
 } from "./find-content-to-post.ts";
 import { main, validateEnvironment, syncObsidianVault } from "./tweet-reflection.ts";
-import { readExperimentRecords, cleanupStaleRecords, fetchAndUpdateVaultMetrics } from "./lib/experiment.ts";
-import type { ExperimentRecord, EngagementMetrics } from "./lib/experiment.ts";
-import { fetchMastodonMetrics, fetchBlueskyMetrics } from "./lib/analytics.ts";
-import { runAnalysis } from "./analyze-experiment.ts";
 
 // --- Types ---
 
@@ -61,9 +57,6 @@ function parseArgs(): AutoPostConfig {
 
 // --- Platform Detection ---
 
-/**
- * Determine which platforms have credentials configured.
- */
 function getConfiguredPlatforms(): readonly Platform[] {
   const env = validateEnvironment();
   const platforms: Platform[] = [];
@@ -75,30 +68,8 @@ function getConfiguredPlatforms(): readonly Platform[] {
   return platforms;
 }
 
-// --- Metric Fetching ---
-
-/**
- * Build a metric fetcher that dispatches to the appropriate platform API
- * based on the record's platform field and available credentials.
- */
-const createPlatformFetcher = (env: ReturnType<typeof validateEnvironment>) =>
-  async (record: ExperimentRecord): Promise<EngagementMetrics | undefined> => {
-    if (record.platform === "mastodon" && env.mastodon && record.postId) {
-      return fetchMastodonMetrics(record.postId, env.mastodon);
-    }
-    if (record.platform === "bluesky" && env.bluesky && record.postUri) {
-      return fetchBlueskyMetrics(record.postUri, env.bluesky);
-    }
-    return undefined;
-  };
-
 // --- Main Orchestration ---
 
-/**
- * Group content-to-post items by note path.
- * When the same note needs posting to multiple platforms, we only
- * call main() once for that note (it handles all platforms internally).
- */
 function groupByNote(
   items: readonly ContentToPost[],
 ): Map<string, ContentToPost[]> {
@@ -112,13 +83,6 @@ function groupByNote(
   return groups;
 }
 
-/**
- * Main auto-post orchestration.
- *
- * Pulls the Obsidian vault once, then discovers what to post (BFS reads from
- * the vault), and delegates posting to tweet-reflection.ts main() — passing
- * the pre-pulled vault dir so it doesn't pull again.
- */
 async function autoPost(): Promise<void> {
   const config = parseArgs();
 
@@ -127,7 +91,6 @@ async function autoPost(): Promise<void> {
   console.log(`⏰ Posting hour (UTC): ${config.postingHourUTC}`);
   console.log();
 
-  // Determine which platforms have credentials
   const platforms = getConfiguredPlatforms();
   if (platforms.length === 0) {
     console.warn("⚠️  No social platform credentials configured. Exiting.");
@@ -135,20 +98,16 @@ async function autoPost(): Promise<void> {
   }
   console.log(`📡 Configured platforms: ${platforms.join(", ")}`);
 
-  // Pull the Obsidian vault — shared across BFS discovery and posting.
-  // This is the single source of truth for all content.
   const env = validateEnvironment();
   console.log(`📥 Pulling Obsidian vault (source of truth)...`);
   const vaultDir = await syncObsidianVault(env.obsidian);
 
-  // Check if we're past the posting hour
   const pastPostingHour = isPastPostingHourUTC(config.postingHourUTC);
   console.log(
     `⏰ Past posting hour (${config.postingHourUTC}:00 UTC): ${pastPostingHour}`,
   );
   console.log();
 
-  // Discover what to post — BFS reads from the vault
   const findConfig: FindContentConfig = {
     contentDir: vaultDir,
     platforms,
@@ -173,7 +132,6 @@ async function autoPost(): Promise<void> {
   }
   console.log();
 
-  // Group by note — each unique note only needs one main() call
   const grouped = groupByNote(contentToPost);
 
   for (const [notePath, items] of grouped) {
@@ -185,11 +143,6 @@ async function autoPost(): Promise<void> {
     console.log(`${"═".repeat(60)}\n`);
 
     try {
-      // Update "updated" frontmatter timestamp along the BFS path BEFORE
-      // posting. main() pushes the vault after writing embed sections, so
-      // the timestamps must already be on disk when that push happens.
-      // Otherwise the timestamps are set after the push and never reach
-      // Obsidian — which is exactly the bug this ordering fixes.
       const allPaths = items.map((i) => i.pathFromRoot);
       const longestPath = allPaths.reduce(
         (longest, p) => (p.length > longest.length ? p : longest),
@@ -208,38 +161,10 @@ async function autoPost(): Promise<void> {
       console.error(
         `❌ Failed to post ${notePath}: ${error instanceof Error ? error.message : error}`,
       );
-      // Continue with other notes — don't let one failure stop everything
     }
   }
 
   console.log(`\n🏁 Auto-post complete!`);
-
-  // Clean up stale experiment records (posts deleted from platforms)
-  console.log(`\n🧹 Cleaning up stale experiment records...`);
-  const staleDeleted = await cleanupStaleRecords(vaultDir);
-  if (staleDeleted > 0) {
-    console.log(`   Deleted ${staleDeleted} stale record(s) (404 post URLs)`);
-  } else {
-    console.log(`   No stale records found`);
-  }
-
-  // Fetch engagement metrics from platform APIs before analysis
-  console.log(`\n📈 Fetching engagement metrics from platform APIs...`);
-  const metricsUpdated = await fetchAndUpdateVaultMetrics(vaultDir, createPlatformFetcher(env));
-  if (metricsUpdated > 0) {
-    console.log(`   Updated ${metricsUpdated} record(s) with fresh metrics`);
-  } else {
-    console.log(`   No new metrics to fetch`);
-  }
-
-  // Run incremental A/B test analysis on accumulated experiment records
-  console.log(`\n📊 Running incremental A/B test analysis...`);
-  const experimentRecords = readExperimentRecords(vaultDir);
-  if (experimentRecords.length > 0) {
-    runAnalysis(experimentRecords);
-  } else {
-    console.log(`   No experiment records yet — analysis will begin after the first post.`);
-  }
 }
 
 // --- Entry Point ---

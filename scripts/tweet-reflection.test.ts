@@ -1752,7 +1752,7 @@ describe(
       const apiKey = process.env.GEMINI_API_KEY;
       assert.ok(apiKey, "GEMINI_API_KEY must be set");
 
-      const { generateTweetWithGemini } = await import("./tweet-reflection.ts");
+      const { generatePostWithGemini } = await import("./tweet-reflection.ts");
       const reflection: ReflectionData = {
         date: "2026-03-01",
         title: "2026-03-01 | 🧪 Integration Test 📚",
@@ -1764,7 +1764,7 @@ describe(
         hasMastodonSection: false,
       };
 
-      const tweet = await generateTweetWithGemini(reflection, apiKey);
+      const tweet = await generatePostWithGemini(reflection, apiKey);
       assert.ok(tweet.length > 0, "Tweet should not be empty");
       assert.ok(tweet.includes(reflection.url), "Tweet should include URL");
       const { valid } = validateTweetLength(tweet);
@@ -1847,7 +1847,7 @@ tags:
         // Run the pipeline
         const {
           readReflection,
-          generateTweetWithGemini,
+          generatePostWithGemini,
           postTweet,
           getEmbedHtml,
           appendTweetSection,
@@ -1859,7 +1859,7 @@ tags:
         assert.equal(reflection.hasTweetSection, false);
 
         const geminiKey = process.env.GEMINI_API_KEY as string;
-        const tweetText = await generateTweetWithGemini(reflection, geminiKey);
+        const tweetText = await generatePostWithGemini(reflection, geminiKey);
         assert.ok(tweetText.length > 0);
 
         const twitterCreds = {

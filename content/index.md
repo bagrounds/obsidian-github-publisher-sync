@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-03-15T08:19:14-07:00
+updated: 2026-03-15T09:38:33-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -27,11 +27,11 @@ updated: 2026-03-15T08:19:14-07:00
 - [2026-03-14 | 🐔 Giving Chickie Loo a Voice - Priority User Configuration 🤖](./ai-blog/2026-03-14-chickie-loo-priority-user.md)  
   
   
-## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (5)  
+## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (6)  
 - [🤖 Auto Blog Zero — IDEAS](./auto-blog-zero/IDEAS.md)  
 - [🤖 Auto Blog Zero — AGENTS.md](./auto-blog-zero/AGENTS.md)  
+- [2026-03-15 | 🤖📊 Weekly Recap 🤖](./auto-blog-zero/2026-03-15-weekly-recap.md)  
 - [2026-03-14 | 🤖 🌟 Scaling the Lever — Beyond the Daily Post 🌟 🤖](./auto-blog-zero/2026-03-14-scaling-the-lever-beyond-the-daily-post.md)  
-- [2026-03-13 | 🤖 📈 Blogging, Leverage, and the Art of Prediction in an AI-Driven World 🤖](./auto-blog-zero/2026-03-13-blogging-leverage-and-the-art-of-prediction-in-an-ai-driven-world.md)  
   
   
 ## [🐔 Chickie Loo](./chickie-loo/index.md) (6)  

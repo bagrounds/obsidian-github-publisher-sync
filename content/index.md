@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-03-14T14:35:00-07:00
+updated: 2026-03-14T23:17:52-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -20,11 +20,11 @@ updated: 2026-03-14T14:35:00-07:00
 - [2026-03-11 | 👀👌 Accepting 🫂 Tight ⚡ Power 💻 IDEs 🧪 Testing 📚📺🤖](./reflections/2026-03-11.md)  
   
   
-## [🤖 AI Blog](./ai-blog/index.md) (20)  
+## [🤖 AI Blog](./ai-blog/index.md) (21)  
 - [2026-03-14 | 🕵️ The SPA That Cried 404 - Why Bluesky Ate Our Experiment Records 🤖](./ai-blog/2026-03-14-the-spa-that-cried-404.md)  
 - [2026-03-14 | 🏆 Strategy B Wins — AB Test Results 🤖](./ai-blog/2026-03-14-strategy-b-wins-ab-test-results.md)  
+- [2026-03-14 | 🃏 Porting the Reaction System - Reviving a Two-Year-Old Branch 🤖](./ai-blog/2026-03-14-porting-the-reaction-system.md)  
 - [2026-03-14 | 🐔 Giving Chickie Loo a Voice - Priority User Configuration 🤖](./ai-blog/2026-03-14-chickie-loo-priority-user.md)  
-- [2026-03-13 | 🧪 Building a Safety Net - Comprehensive Testing for a PureScript Card Game 🤖](./ai-blog/2026-03-13-building-a-safety-net-comprehensive-testing-for-domination.md)  
   
   
 ## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (5)  
@@ -46,6 +46,8 @@ updated: 2026-03-14T14:35:00-07:00
   
   
 ## [📚 Books](./books/index.md) (952)  
+- [📊🤥 How to Lie with Statistics](./books/how-to-lie-with-statistics.md)  
+- [📱⬇️🧘 Digital Minimalism: Choosing a Focused Life in a Noisy World](./books/digital-minimalism-choosing-a-focused-life-in-a-noisy-world.md)  
 - [🌲 Walden](./books/walden.md)  
 - [🪢🌾 Braiding Sweetgrass: Indigenous Wisdom, Scientific Knowledge, and the Teachings of Plants](./books/braiding-sweetgrass.md)  
 - [👨‍🏫🎉👍✨ Learn You a Haskell for Great Good!](./books/learn-you-a-haskell-for-great-good.md)  
@@ -54,16 +56,14 @@ updated: 2026-03-14T14:35:00-07:00
 - [📈⚙️♾️ The Goal: A Process of Ongoing Improvement](./books/the-goal.md)  
 - [💀🇺🇸🏫 The Death and Life of the Great American School System: How Testing and Choice Are Undermining Education](./books/the-death-and-life-of-the-great-american-school-system-how-testing-and-choice-are-undermining-education.md)  
 - [🧱✅🐛 Foundations of Software Testing](./books/foundations-of-software-testing.md)  
-- [👁️‍🗨️💰⛓️👤 The Age of Surveillance Capitalism: The Fight for a Human Future at the New Frontier of Power](./books/the-age-of-surveillance-capitalism.md)  
-- [🤖📈 The Second Machine Age: Work, Progress, and Prosperity in a Time of Brilliant Technologies](./books/the-second-machine-age-work-progress-and-prosperity-in-a-time-of-brilliant-technologies.md)  
   
   
 ## [📺 Videos](./videos/index.md) (682)  
+- [💰🤑🤖💡🚀💲 $0.10/Month Runs My Entire AI Life. I'll Show You How.](./videos/0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [🤖💬🧑 Every Claude Code Concept Explained for Normal People](./videos/every-claude-code-concept-explained-for-normal-people.md)  
 - [📦⬅️🌯⬅️🧱 Monadic Parsers at the Input Boundary](./videos/monadic-parsers-at-the-input-boundary.md)  
 - [🧠🚀💡✨ Inside Pathway's Post-Transformer Architecture Designed for Memory and On-the-Fly Learning](./videos/inside-pathways-post-transformer-architecture-designed-for-memory-and-on-the-fly-learning.md)  
 - [🚨👮‍♂️🤫🇺🇸👥⚔️😠 ICE Agents EVERYWHERE Are Secretly REVOLTING Against TRUMP🚨](./videos/ice-agents-everywhere-are-secretly-revolting-against-trump.md)  
-- [💰🤑🤖💡🚀💲 $0.10/Month Runs My Entire AI Life. I'll Show You How.](./videos/0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [💻✨🤖 From IDEs to AI Agents with Steve Yegge](./videos/from-ides-to-ai-agents-with-steve-yegge.md)  
 - [👀❓🤷‍♀️🚀 Stop accepting AI output that «looks right.» The other 17% is everything and nobody is ready for it.](./videos/stop-accepting-ai-output-that-looks-right-the-other-17-is-everything-and-nobody-is-ready-for-it.md)  
 - [❓🤖🧑‍💻🧑‍🤝‍🧑 45 People, $200M Revenue. The Question Nobody's Asking About AI and Your Team Size.](./videos/45-people-200m-revenue-the-question-nobodys-asking-about-ai-and-your-team-size.md)  

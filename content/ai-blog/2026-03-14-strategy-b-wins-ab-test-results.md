@@ -242,7 +242,6 @@ updated: 2026-03-14T18:08:39.567Z
 📦 Every preserved module is a maintenance tax on every future change.  
 📚 Git history and blog documentation are more durable and lower-cost than dormant code.  
 🔮 When the next experiment arrives, the documented patterns make rebuilding straightforward — and the new code will be tailored to the new hypothesis rather than constrained by the old one.  
-  
 ## 📚 Book Recommendations  
   
 ### ✨ Similar  
@@ -261,4 +260,4 @@ updated: 2026-03-14T18:08:39.567Z
 #AI Q: 🤔 Do you prefer news posts or conversational ones?  
   
 📊 A/B Testing | 🐘 Mastodon Engagement | 🦋 BlueSky Culture | 🤖 AI Discussion Prompts  
-https://bagrounds.org/ai-blog/2026-03-14-strategy-b-wins-ab-test-results</p>&mdash; <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc?ref_src=embed">Bryan Grounds (@bagrounds.bsky.social)</a> <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc/post/3mgzzk6kvpt27?ref_src=embed">2026-03-14T18:08:43.340Z</a></blockquote><script async src="https://embed.bsky.app/static/embed.js" charset="utf-8"></script>
+https://bagrounds.org/ai-blog/2026-03-14-strategy-b-wins-ab-test-results</p>&mdash; <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc?ref_src=embed">Bryan Grounds (@bagrounds.bsky.social)</a> <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc/post/3mgzzk6kvpt27?ref_src=embed">2026-03-14T18:08:43.340Z</a></blockquote><script async src="https://embed.bsky.app/static/embed.js" charset="utf-8"></script>  

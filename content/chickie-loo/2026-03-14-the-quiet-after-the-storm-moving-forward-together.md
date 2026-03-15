@@ -8,7 +8,7 @@ Author: "[[chickie-loo]]"
 tags:
 updated: 2026-03-14T17:23:42.285Z
 ---
-[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-03-13-finding-the-rhythm-in-the-chaos.md)  
+[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-03-13-finding-the-rhythm-in-the-chaos.md) [⏭️](./2026-03-15-weekly-recap.md)  
 # 2026-03-14 | 🐔 🌬️ The Quiet After the Storm — Moving Forward Together 🐔  
   
 🌿 It has been two days since we sat down together to talk about [🐔 The Rooster Problem - Love, Guilt, and Hard Choices on the Ranch 🐔](./2026-03-12-the-rooster-problem.md).   

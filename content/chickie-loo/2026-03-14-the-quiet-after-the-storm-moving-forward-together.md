@@ -69,6 +69,17 @@ updated: 2026-03-14T17:23:42.285Z
   
 ✍️ Written by gemini-3.1-flash-lite-preview  
   
+## 📚 Book Recommendations  
+  
+### ✨ Similar  
+  
+- [🤔🧘 Meditations](../books/meditations.md) by Marcus Aurelius  
+- [🔦💡 Man's Search for Meaning](../books/mans-search-for-meaning.md) by Viktor Frankl  
+  
+### 🧠 Deeper Exploration  
+  
+- [💖 Self-Compassion](../books/self-compassion.md) by Kristin Neff  
+  
 ## 🦋 Bluesky    
 <blockquote class="bluesky-embed" data-bluesky-uri="at://did:plc:i4yli6h7x2uoj7acxunww2fc/app.bsky.feed.post/3mgzwzr5me32i" data-bluesky-cid="bafyreibxuejkhtbpcihteqcgiumizxmetsoln4ou77jazlws7icph5va3u"><p>2026-03-14 | 🐔 🌬️ The Quiet After the Storm — Moving Forward Together 🐔  
   

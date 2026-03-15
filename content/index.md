@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-03-15T15:06:39-07:00
+updated: 2026-03-15T15:17:26-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -58,7 +58,8 @@ updated: 2026-03-15T15:06:39-07:00
 - [👨‍🏫🎉👍✨ Learn You a Haskell for Great Good!](./books/learn-you-a-haskell-for-great-good.md)  
   
   
-## [📺 Videos](./videos/index.md) (685)  
+## [📺 Videos](./videos/index.md) (686)  
+- [⚖️🏛️🗣️ Antitrust and The Rule of Law: A Conversation with Former FTC Chair Lina Khan](./videos/antitrust-and-the-rule-of-law-a-conversation-with-former-ftc-chair-lina-khan.md)  
 - [🏆💡🤔 Turing Award Winner On Thinking Clearly, Paxos vs Raft, Working With Dijkstra | Leslie Lamport](./videos/turing-award-winner-on-thinking-clearly-paxos-vs-raft-working-with-dijkstra-leslie-lamport.md)  
 - [🪖❓🇺🇸 Brooks and Capehart on Trump's mixed signals on the Iran war](./videos/brooks-and-capehart-on-trumps-mixed-signals-on-the-iran-war.md)  
 - [👋👩‍💻🤖🚀 She quit, picked up AI, and shipped in 30 days what her team planned for Q3.](./videos/she-quit-picked-up-ai-and-shipped-in-30-days-what-her-team-planned-for-q3.md)  
@@ -68,7 +69,6 @@ updated: 2026-03-15T15:06:39-07:00
 - [💰🤑🤖💡🚀💲 $0.10/Month Runs My Entire AI Life. I'll Show You How.](./videos/0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [🤖💬🧑 Every Claude Code Concept Explained for Normal People](./videos/every-claude-code-concept-explained-for-normal-people.md)  
 - [💻✨🤖 From IDEs to AI Agents with Steve Yegge](./videos/from-ides-to-ai-agents-with-steve-yegge.md)  
-- [👀❓🤷‍♀️🚀 Stop accepting AI output that «looks right.» The other 17% is everything and nobody is ready for it.](./videos/stop-accepting-ai-output-that-looks-right-the-other-17-is-everything-and-nobody-is-ready-for-it.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  

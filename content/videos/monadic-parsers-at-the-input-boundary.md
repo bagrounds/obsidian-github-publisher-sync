@@ -9,7 +9,7 @@ Platform:
 Channel: Hasgeek TV
 tags:
 youtube: https://youtu.be/LLkbzt4ms6M
-updated: 2026-03-14T04:34:37.121Z
+updated: 2026-03-15T14:10:58.318Z
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 📦⬅️🌯⬅️🧱 Monadic Parsers at the Input Boundary  

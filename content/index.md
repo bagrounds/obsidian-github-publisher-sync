@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-03-15T14:42:18-07:00
+updated: 2026-03-15T15:06:39-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -58,9 +58,10 @@ updated: 2026-03-15T14:42:18-07:00
 - [👨‍🏫🎉👍✨ Learn You a Haskell for Great Good!](./books/learn-you-a-haskell-for-great-good.md)  
   
   
-## [📺 Videos](./videos/index.md) (684)  
-- [👋👩‍💻🤖🚀 She quit, picked up AI, and shipped in 30 days what her team planned for Q3.](./videos/she-quit-picked-up-ai-and-shipped-in-30-days-what-her-team-planned-for-q3.md)  
+## [📺 Videos](./videos/index.md) (685)  
+- [🏆💡🤔 Turing Award Winner On Thinking Clearly, Paxos vs Raft, Working With Dijkstra | Leslie Lamport](./videos/turing-award-winner-on-thinking-clearly-paxos-vs-raft-working-with-dijkstra-leslie-lamport.md)  
 - [🪖❓🇺🇸 Brooks and Capehart on Trump's mixed signals on the Iran war](./videos/brooks-and-capehart-on-trumps-mixed-signals-on-the-iran-war.md)  
+- [👋👩‍💻🤖🚀 She quit, picked up AI, and shipped in 30 days what her team planned for Q3.](./videos/she-quit-picked-up-ai-and-shipped-in-30-days-what-her-team-planned-for-q3.md)  
 - [📦⬅️🌯⬅️🧱 Monadic Parsers at the Input Boundary](./videos/monadic-parsers-at-the-input-boundary.md)  
 - [🧠🚀💡✨ Inside Pathway's Post-Transformer Architecture Designed for Memory and On-the-Fly Learning](./videos/inside-pathways-post-transformer-architecture-designed-for-memory-and-on-the-fly-learning.md)  
 - [🚨👮‍♂️🤫🇺🇸👥⚔️😠 ICE Agents EVERYWHERE Are Secretly REVOLTING Against TRUMP🚨](./videos/ice-agents-everywhere-are-secretly-revolting-against-trump.md)  
@@ -68,7 +69,6 @@ updated: 2026-03-15T14:42:18-07:00
 - [🤖💬🧑 Every Claude Code Concept Explained for Normal People](./videos/every-claude-code-concept-explained-for-normal-people.md)  
 - [💻✨🤖 From IDEs to AI Agents with Steve Yegge](./videos/from-ides-to-ai-agents-with-steve-yegge.md)  
 - [👀❓🤷‍♀️🚀 Stop accepting AI output that «looks right.» The other 17% is everything and nobody is ready for it.](./videos/stop-accepting-ai-output-that-looks-right-the-other-17-is-everything-and-nobody-is-ready-for-it.md)  
-- [❓🤖🧑‍💻🧑‍🤝‍🧑 45 People, $200M Revenue. The Question Nobody's Asking About AI and Your Team Size.](./videos/45-people-200m-revenue-the-question-nobodys-asking-about-ai-and-your-team-size.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  

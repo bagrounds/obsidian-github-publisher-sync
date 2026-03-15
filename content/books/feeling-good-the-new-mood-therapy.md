@@ -55,7 +55,7 @@ affiliate link: https://amzn.to/3Hvk2B0
   
 ### 🎨 Creatively Related Books (Exploring Related Concepts or Complementary Practices)  
   
-* 📖 **Self-Compassion: The Proven Power of Being Kind to Yourself by Kristin Neff:** 🥰 Focuses specifically on developing self-compassion as a means of improving emotional resilience, a concept that complements the self-esteem building discussed in *Feeling Good*.  
+* 📖 **[💗 Self-Compassion](./self-compassion.md):** The Proven Power of Being Kind to Yourself by Kristin Neff: 🥰 Focuses specifically on developing self-compassion as a means of improving emotional resilience, a concept that complements the self-esteem building discussed in *Feeling Good*.  
 * **[🫂🤝🗣️ How To Win Friends And Influence People](./how-to-win-friends-and-influence-people.md) by Dale Carnegie:** 🤝 A classic in interpersonal skills and communication, offering practical advice on building relationships that can support overall well-being, an area touched upon in *Feeling Good* in the context of handling criticism.  
 * 📖 **Creative Approaches to CBT by Lina A. Sherwood:** 🖍️ Provides therapists with ways to incorporate creative activities and exercises, such as art therapy techniques, into CBT sessions, suggesting a more experiential dimension to the cognitive work.  
 * 📖 **The Creative Cognitive Therapy Method: Combining Traditional CBT with Art Therapy for Real Change by Pamela Hayes Malkoff:** 🎨 Directly integrates art therapy with traditional CBT, offering a hands-on, creative approach to identifying and changing negative thought patterns.  

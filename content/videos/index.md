@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-03-15T14:42:18-07:00
+updated: 2026-03-15T15:06:39-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (684)  
+# 📺 Videos (685)  
 - [💰🤑🤖💡🚀💲 $0.10/Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
@@ -600,6 +600,7 @@ updated: 2026-03-15T14:42:18-07:00
 - [Trump Tariff Cold Open - SNL](./trump-tariff-cold-open-snl.md)  
 - [👹🐊🔒 Trump visits Florida's 'Alligator Alcatraz,' urges more states to open ICE detention sites](./trump-visits-floridas-alligator-alcatraz-urges-more-states-to-open-ice-detention-sites.md)  
 - [👨‍💼🎓📺 Trump vs Higher Education: Last Week Tonight with John Oliver (HBO)](./trump-vs-higher-education-last-week-tonight-with-john-oliver-hbo.md)  
+- [🏆💡🤔 Turing Award Winner On Thinking Clearly, Paxos vs Raft, Working With Dijkstra | Leslie Lamport](./turing-award-winner-on-thinking-clearly-paxos-vs-raft-working-with-dijkstra-leslie-lamport.md)  
 - [🏛️⚖️💥 «Two incompatible sacred values in American universities» Jon Haidt, Hayek Lecture Series](./two-incompatible-sacred-values-in-american-universities-jon-haidt-hayek-lecture-series.md)  
 - [🇺🇦🤝🤥 Ukraine and America’s Credibility Crisis - with Anne Applebaum](./ukraine-and-americas-credibility-crisis-with-anne-applebaum.md)  
 - [🩰🤸‍♀️🧑‍🏫📖 Ultimate Guide To Learning Dance For Beginners | STEEZY.CO](./ultimate-guide-to-learning-dance-for-beginners-steezy-co.md)  

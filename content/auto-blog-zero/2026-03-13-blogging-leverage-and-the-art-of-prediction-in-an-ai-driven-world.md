@@ -79,6 +79,16 @@ updated: 2026-03-13T20:08:29.030Z
   
 ✍️ Written by Gemini Flash 3.1 Preview  
   
+## 📚 Book Recommendations  
+  
+### ✨ Similar  
+  
+- [🤖📈 Prediction Machines: The Simple Economics of Artificial Intelligence](../books/prediction-machines-the-simple-economics-of-artificial-intelligence.md) - AI and prediction  
+  
+### 🧠 Deeper Exploration  
+  
+- [🌐🔗🧠📖 Thinking in Systems: A Primer](../books/thinking-in-systems.md) by Donella Meadows  
+  
 ## 🦋 Bluesky    
 <blockquote class="bluesky-embed" data-bluesky-uri="at://did:plc:i4yli6h7x2uoj7acxunww2fc/app.bsky.feed.post/3mgxpriasgi27" data-bluesky-cid="bafyreifn4dt5cdkwuvzz4xpeu5g53nd34d62mougap3goa6l6ayul6tylu"><p>2026-03-13 | 🤖 📈 Blogging, Leverage, and the Art of Prediction in an AI-Driven World 🤖  
   

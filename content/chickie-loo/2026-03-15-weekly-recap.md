@@ -42,6 +42,17 @@ updated: 2026-03-15T16:07:59.713Z
   
 ✍️ Written by gemini-3.1-flash-lite-preview  
   
+## 📚 Book Recommendations  
+  
+### ✨ Similar  
+  
+- [🪢🌾 Braiding Sweetgrass](../books/braiding-sweetgrass.md) by Robin Wall Kimmerer  
+- [🌲 Walden](../books/walden.md) by Henry David Thoreau  
+  
+### 🧠 Deeper Exploration  
+  
+- 🏡 The Ranch - practical guides for homesteading  
+  
 ## 🦋 Bluesky    
 <blockquote class="bluesky-embed" data-bluesky-uri="at://did:plc:i4yli6h7x2uoj7acxunww2fc/app.bsky.feed.post/3mh4dbdwe3z27" data-bluesky-cid="bafyreihe3ro4sutvnlk75pmfgxzbxzqbnu3b6v72uyav4233msesxpxwzi" data-bluesky-embed-color-mode="system"><p lang="en">2026-03-15 | 🐔📊 Weekly Recap 🐔<br><br>#AI Q: 🌿 What is one small win from this week worth celebrating?<br><br>🌱 Ranching Tips | 📝 Journaling | 💔 Difficult Choices | 🏡 Building Dreams<br>https://bagrounds.org/chickie-loo/2026-03-15-weekly-recap</p>  
 &mdash; Bryan Grounds (<a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc?ref_src=embed">@bagrounds.bsky.social</a>) <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc/post/3mh4dbdwe3z27?ref_src=embed">March 14, 2026</a></blockquote><script async src="https://embed.bsky.app/static/embed.js" charset="utf-8"></script>  

@@ -79,6 +79,18 @@ updated: 2026-03-14T17:49:20.784Z
   
 ✍️ Written by gemini-3.1-flash-lite-preview  
   
+## 📚 Book Recommendations  
+  
+### ✨ Similar  
+  
+- [🌐🔗🧠📖 Thinking in Systems: A Primer](../books/thinking-in-systems.md) by Donella Meadows  
+- [🤖🏗️ AI Engineering: Building Applications with Foundation Models](../books/ai-engineering-building-applications-with-foundation-models.md)  
+- [🤖💻 Vibe Coding: Building Production-Grade Software With GenAI, Chat, Agents, and Beyond](../books/vibe-coding-building-production-grade-software-with-genai-chat-agents-and-beyond.md)  
+  
+### 🧠 Deeper Exploration  
+  
+- [🤖➕🧠➡️ Reinforcement Learning: An Introduction](../books/reinforcement-learning-an-introduction.md) - AI and prediction systems  
+  
 ## 🦋 Bluesky    
 <blockquote class="bluesky-embed" data-bluesky-uri="at://did:plc:i4yli6h7x2uoj7acxunww2fc/app.bsky.feed.post/3mgzyhnf2g325" data-bluesky-cid="bafyreidyjoddrtr3x4luonhudy4dwlww7pw5fdude5jj42w6egikm34ub4" data-bluesky-embed-color-mode="system"><p lang="en">2026-03-14 | 🤖 🌟 Scaling the Lever — Beyond the Daily Post 🌟 🤖<br><br>#AI Q: 🤖 What task will you automate this week?<br><br>⚙️ Systems Design | 🔮 Predictive Models | 🚀 Automation Workflows | 📚 Emergent Intelligence<br>https://bagrounds.org/auto-blog-zero/2026-03-14-scaling-the-lever-beyond-the-daily-post</p>  
 &mdash; Bryan Grounds (<a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc?ref_src=embed">@bagrounds.bsky.social</a>) <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc/post/3mgzyhnf2g325?ref_src=embed">March 13, 2026</a></blockquote><script async src="https://embed.bsky.app/static/embed.js" charset="utf-8"></script>  

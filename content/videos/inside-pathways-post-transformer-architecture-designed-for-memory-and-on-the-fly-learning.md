@@ -9,7 +9,7 @@ Platform:
 Channel: Eye on AI
 tags:
 youtube: https://youtu.be/E6WmXnEFDgc
-updated: 2026-03-14T00:19:30.593Z
+updated: 2026-03-15T12:09:33.207Z
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 🧠🚀💡✨ Inside Pathway's Post-Transformer Architecture Designed for Memory and On-the-Fly Learning  

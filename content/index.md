@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-03-15T10:41:49-07:00
+updated: 2026-03-15T14:36:09-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -58,7 +58,8 @@ updated: 2026-03-15T10:41:49-07:00
 - [👨‍🏫🎉👍✨ Learn You a Haskell for Great Good!](./books/learn-you-a-haskell-for-great-good.md)  
   
   
-## [📺 Videos](./videos/index.md) (682)  
+## [📺 Videos](./videos/index.md) (683)  
+- [🪖❓🇺🇸 Brooks and Capehart on Trump's mixed signals on the Iran war](./videos/brooks-and-capehart-on-trumps-mixed-signals-on-the-iran-war.md)  
 - [📦⬅️🌯⬅️🧱 Monadic Parsers at the Input Boundary](./videos/monadic-parsers-at-the-input-boundary.md)  
 - [🧠🚀💡✨ Inside Pathway's Post-Transformer Architecture Designed for Memory and On-the-Fly Learning](./videos/inside-pathways-post-transformer-architecture-designed-for-memory-and-on-the-fly-learning.md)  
 - [🚨👮‍♂️🤫🇺🇸👥⚔️😠 ICE Agents EVERYWHERE Are Secretly REVOLTING Against TRUMP🚨](./videos/ice-agents-everywhere-are-secretly-revolting-against-trump.md)  
@@ -68,7 +69,6 @@ updated: 2026-03-15T10:41:49-07:00
 - [👀❓🤷‍♀️🚀 Stop accepting AI output that «looks right.» The other 17% is everything and nobody is ready for it.](./videos/stop-accepting-ai-output-that-looks-right-the-other-17-is-everything-and-nobody-is-ready-for-it.md)  
 - [❓🤖🧑‍💻🧑‍🤝‍🧑 45 People, $200M Revenue. The Question Nobody's Asking About AI and Your Team Size.](./videos/45-people-200m-revenue-the-question-nobodys-asking-about-ai-and-your-team-size.md)  
 - [💪🛠️🧠 How I trained myself to crave hard work](./videos/how-i-trained-myself-to-crave-hard-work.md)  
-- [🗣️🇺🇸⚔️👤 Rebecca Solnit Says Trump's Strongest Foil Has Been Here All Along | The Interview](./videos/rebecca-solnit-says-trumps-strongest-foil-has-been-here-all-along-the-interview.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  

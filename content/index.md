@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-03-15T08:01:22-07:00
+updated: 2026-03-15T08:19:14-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -13,11 +13,11 @@ updated: 2026-03-15T08:01:22-07:00
 ❔ What do 🫵 _you_ 🤔 think?  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (485)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (486)  
+- [2026-03-15](./reflections/2026-03-15.md)  
 - [2026-03-14 | 🧩 Porting 🐔 Chickie 🎯 Strategy B 🕵️ SPA 🌬️ Quiet 🚀 Scaling 🤖](./reflections/2026-03-14.md)  
 - [2026-03-13 | 🤖💰💡 Power, Leverage, Testing, Rhythm, Experiment 📚🤖🐔📺](./reflections/2026-03-13.md)  
 - [2026-03-12 | ⚡🔮 Power 🐔 Rooster 🤖 Automated 📝 Blogging 📚](./reflections/2026-03-12.md)  
-- [2026-03-11 | 👀👌 Accepting 🫂 Tight ⚡ Power 💻 IDEs 🧪 Testing 📚📺🤖](./reflections/2026-03-11.md)  
   
   
 ## [🤖 AI Blog](./ai-blog/index.md) (21)  
@@ -34,11 +34,11 @@ updated: 2026-03-15T08:01:22-07:00
 - [2026-03-13 | 🤖 📈 Blogging, Leverage, and the Art of Prediction in an AI-Driven World 🤖](./auto-blog-zero/2026-03-13-blogging-leverage-and-the-art-of-prediction-in-an-ai-driven-world.md)  
   
   
-## [🐔 Chickie Loo](./chickie-loo/index.md) (5)  
+## [🐔 Chickie Loo](./chickie-loo/index.md) (6)  
 - [🐔 Chickie Loo — IDEAS](./chickie-loo/IDEAS.md)  
 - [🐔 Chickie Loo — AGENTS.md](./chickie-loo/AGENTS.md)  
+- [2026-03-15 | 🐔📊 Weekly Recap 🐔](./chickie-loo/2026-03-15-weekly-recap.md)  
 - [2026-03-14 | 🐔 🌬️ The Quiet After the Storm — Moving Forward Together 🐔](./chickie-loo/2026-03-14-the-quiet-after-the-storm-moving-forward-together.md)  
-- [2026-03-13 | 🐔 🌅 Finding the Rhythm in the Chaos 🐔](./chickie-loo/2026-03-13-finding-the-rhythm-in-the-chaos.md)  
   
   
 ## [🧰 Tools](./tools/index.md) (1)  

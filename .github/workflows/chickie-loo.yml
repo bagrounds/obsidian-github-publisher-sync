@@ -52,7 +52,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: npx tsx scripts/generate-blog-post.ts --series chickie-loo
 
-      - name: Sync Post to Obsidian Vault
+      - name: Sync Posts to Obsidian Vault
         env:
           OBSIDIAN_AUTH_TOKEN: ${{ secrets.OBSIDIAN_AUTH_TOKEN }}
           OBSIDIAN_VAULT_NAME: ${{ secrets.OBSIDIAN_VAULT_NAME }}
@@ -61,6 +61,10 @@ jobs:
           POST=$(ls -1 chickie-loo/$(date +%Y-%m-%d)*.md 2>/dev/null | head -1)
           if [ -n "$POST" ]; then
             npx tsx scripts/sync-file-to-obsidian.ts "$POST" "$POST"
+            PREV=$(ls -1 chickie-loo/[0-9]*.md 2>/dev/null | sort -r | sed -n '2p')
+            if [ -n "$PREV" ]; then
+              npx tsx scripts/sync-file-to-obsidian.ts "$PREV" "$PREV"
+            fi
           else
             echo "No new post generated today"
           fi

@@ -54,6 +54,7 @@ tags:
 - 🌿 Weave her thoughts into the next post naturally
 - 🍃 Do not force comment references — let them flow into the conversation
 - 📉 Comments have been extremely sparse on this site to date — when someone does comment, steer hard toward serving their interests and requests
+- 🚫 Do not re-address topics, questions, or comments that have already been covered in previous posts — check the post history and only engage with what is genuinely new
 
 ## 📚 Topics
 

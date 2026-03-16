@@ -91,8 +91,20 @@ ${comments.length > 0
   return { system, user };
 };
 
+export const filterCommentsAfterLastPost = (
+  comments: readonly BlogComment[],
+  previousPosts: readonly BlogPost[],
+): readonly BlogComment[] => {
+  if (previousPosts.length === 0) return comments;
+  const lastPostDate = previousPosts[0]!.date;
+  return comments.filter((c) => c.createdAt >= lastPostDate);
+};
+
 export const buildBackLink = (series: BlogSeriesConfig, previousPost: BlogPost): string =>
   `[[${series.id}/${previousPost.filename.replace(/\.md$/, "")}|⏮]]`;
+
+export const buildForwardLink = (series: BlogSeriesConfig, nextFilename: string): string =>
+  `[[${series.id}/${nextFilename.replace(/\.md$/, "")}|⏭]]`;
 
 export const assembleFrontmatter = (series: BlogSeriesConfig, today: string, title: string, slug: string, previousPost?: BlogPost): string => {
   const backLink = previousPost ? ` | ${buildBackLink(series, previousPost)}` : "";

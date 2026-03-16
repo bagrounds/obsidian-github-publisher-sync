@@ -1,14 +1,16 @@
 export { type BlogSeriesConfig, BLOG_SERIES, lookupSeries } from "./blog-series-config.ts";
 export { type BlogPost, readSeriesPosts, readAgentsMd } from "./blog-posts.ts";
 export { type BlogComment, fetchGiscusComments, fetchAllSeriesComments } from "./blog-comments.ts";
-export { type BlogContext, buildBlogPrompt, assembleFrontmatter, buildBackLink, todayPacific } from "./blog-prompt.ts";
+export { type BlogContext, buildBlogPrompt, assembleFrontmatter, buildBackLink, buildForwardLink, filterCommentsAfterLastPost, todayPacific } from "./blog-prompt.ts";
 
+import fs from "node:fs";
 import path from "node:path";
 import type { BlogSeriesConfig } from "./blog-series-config.ts";
 import type { BlogPost } from "./blog-posts.ts";
 import type { BlogComment } from "./blog-comments.ts";
 import { readAgentsMd, readSeriesPosts } from "./blog-posts.ts";
 import { lookupSeries } from "./blog-series-config.ts";
+import { filterCommentsAfterLastPost, buildForwardLink } from "./blog-prompt.ts";
 
 export const buildBlogContext = (
   seriesId: string,
@@ -18,7 +20,8 @@ export const buildBlogContext = (
 ): { series: BlogSeriesConfig; agentsMd: string; previousPosts: readonly BlogPost[]; comments: readonly BlogComment[]; today: string } => {
   const series = lookupSeries(seriesId);
   const seriesDir = path.join(repoRoot, series.id);
-  return { series, agentsMd: readAgentsMd(seriesDir), previousPosts: readSeriesPosts(seriesDir), comments, today };
+  const previousPosts = readSeriesPosts(seriesDir);
+  return { series, agentsMd: readAgentsMd(seriesDir), previousPosts, comments: filterCommentsAfterLastPost(comments, previousPosts), today };
 };
 
 export const generateSeriesIndex = (series: BlogSeriesConfig, _posts: readonly BlogPost[]): string =>
@@ -47,3 +50,19 @@ export const parseGeneratedPost = (raw: string): { body: string; title: string }
 
 export const appendModelSignature = (body: string, model: string): string =>
   `${body}\n\n✍️ Written by ${model}`;
+
+export const updatePreviousPost = (
+  seriesDir: string,
+  previousPost: BlogPost,
+  series: BlogSeriesConfig,
+  nextFilename: string,
+): void => {
+  const filePath = path.join(seriesDir, previousPost.filename);
+  if (!fs.existsSync(filePath)) return;
+  const content = fs.readFileSync(filePath, "utf-8");
+  const forwardLink = buildForwardLink(series, nextFilename);
+  const updated = content.split("\n").map((line) =>
+    line.startsWith(series.navLink) && !line.includes("⏭") ? `${line} | ${forwardLink}` : line
+  ).join("\n");
+  if (updated !== content) fs.writeFileSync(filePath, updated, "utf-8");
+};

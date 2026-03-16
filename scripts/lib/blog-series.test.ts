@@ -17,6 +17,9 @@ import {
   todayPacific,
   assembleFrontmatter,
   buildBackLink,
+  buildForwardLink,
+  filterCommentsAfterLastPost,
+  updatePreviousPost,
 } from "./blog-series.ts";
 
 describe("readSeriesPosts", () => {
@@ -258,10 +261,10 @@ describe("parseGeneratedPost", () => {
 });
 
 describe("appendModelSignature", () => {
-  it("appends model signature with placeholder", () => {
+  it("appends model signature with blank line before it", () => {
     const body = "## My Post\n\nThis is content.";
     const result = appendModelSignature(body, "gemini-3.1-flash");
-    assert.equal(result, "## My Post\n\nThis is content.\n✍️ Written by gemini-3.1-flash");
+    assert.equal(result, "## My Post\n\nThis is content.\n\n✍️ Written by gemini-3.1-flash");
   });
 
   it("works with different model names", () => {
@@ -274,5 +277,87 @@ describe("appendModelSignature", () => {
 describe("todayPacific", () => {
   it("returns YYYY-MM-DD format", () => {
     assert.match(todayPacific(), /^\d{4}-\d{2}-\d{2}$/);
+  });
+});
+
+describe("filterCommentsAfterLastPost", () => {
+  type C = { author: string; body: string; createdAt: string; isPriority: boolean };
+  type P = { filename: string; date: string; title: string; body: string };
+  const makeComment = (date: string): C => ({ author: "test", body: "hi", createdAt: date, isPriority: false });
+  const makePost = (date: string): P => ({ filename: `${date}-post.md`, date, title: "Post", body: "" });
+
+  it("returns all comments when no previous posts", () => {
+    const comments = [makeComment("2026-03-10"), makeComment("2026-03-12")];
+    assert.equal(filterCommentsAfterLastPost(comments, []).length, 2);
+  });
+
+  it("filters out comments older than the most recent post", () => {
+    const comments = [makeComment("2026-03-10"), makeComment("2026-03-14")];
+    const filtered = filterCommentsAfterLastPost(comments, [makePost("2026-03-13")]);
+    assert.equal(filtered.length, 1);
+    assert.equal(filtered[0]!.createdAt, "2026-03-14");
+  });
+
+  it("includes comments on the same day as the most recent post", () => {
+    const comments = [makeComment("2026-03-12"), makeComment("2026-03-13"), makeComment("2026-03-14")];
+    const filtered = filterCommentsAfterLastPost(comments, [makePost("2026-03-13")]);
+    assert.equal(filtered.length, 2);
+    assert.ok(filtered.some((c) => c.createdAt === "2026-03-13"));
+    assert.ok(filtered.some((c) => c.createdAt === "2026-03-14"));
+  });
+});
+
+describe("buildForwardLink", () => {
+  const series = BLOG_SERIES.get("auto-blog-zero")!;
+
+  it("builds a wikilink to the next post using its filename", () => {
+    assert.equal(buildForwardLink(series, "2026-03-14-my-post.md"), "[[auto-blog-zero/2026-03-14-my-post|⏭]]");
+  });
+
+  it("strips .md extension from filename", () => {
+    assert.ok(!buildForwardLink(series, "2026-03-14-my-post.md").includes(".md"));
+  });
+
+  it("uses the series id as the path prefix", () => {
+    const chickieSeries = BLOG_SERIES.get("chickie-loo")!;
+    assert.ok(buildForwardLink(chickieSeries, "2026-03-14-hello.md").startsWith("[[chickie-loo/"));
+  });
+});
+
+describe("updatePreviousPost", () => {
+  const series = BLOG_SERIES.get("auto-blog-zero")!;
+
+  it("adds a forward link to the nav line of the previous post", () => {
+    const tmpDir = fs.mkdtempSync(path.join(os.tmpdir(), "blog-test-"));
+    try {
+      fs.writeFileSync(path.join(tmpDir, "2026-03-10-test.md"),
+        `---\nshare: true\n---\n${series.navLink}\n## Test\n\nBody.\n`);
+      const prev = { filename: "2026-03-10-test.md", date: "2026-03-10", title: "Test", body: "" };
+      updatePreviousPost(tmpDir, prev, series, "2026-03-11-new-post.md");
+      const updated = fs.readFileSync(path.join(tmpDir, "2026-03-10-test.md"), "utf-8");
+      const navLine = updated.split("\n").find((line) => line.startsWith(series.navLink));
+      assert.ok(navLine?.includes("[[auto-blog-zero/2026-03-11-new-post|⏭]]"));
+    } finally {
+      fs.rmSync(tmpDir, { recursive: true });
+    }
+  });
+
+  it("does not add a duplicate forward link if already present", () => {
+    const tmpDir = fs.mkdtempSync(path.join(os.tmpdir(), "blog-test-"));
+    try {
+      fs.writeFileSync(path.join(tmpDir, "2026-03-10-test.md"),
+        `---\nshare: true\n---\n${series.navLink} | [[auto-blog-zero/2026-03-11-new-post|⏭]]\n## Test\n\nBody.\n`);
+      const prev = { filename: "2026-03-10-test.md", date: "2026-03-10", title: "Test", body: "" };
+      updatePreviousPost(tmpDir, prev, series, "2026-03-11-new-post.md");
+      const updated = fs.readFileSync(path.join(tmpDir, "2026-03-10-test.md"), "utf-8");
+      assert.equal((updated.match(/⏭/g) ?? []).length, 1);
+    } finally {
+      fs.rmSync(tmpDir, { recursive: true });
+    }
+  });
+
+  it("does nothing when the previous post file does not exist", () => {
+    const prev = { filename: "nonexistent.md", date: "2026-03-10", title: "Test", body: "" };
+    assert.doesNotThrow(() => updatePreviousPost("/tmp/nonexistent-dir", prev, series, "2026-03-11-new.md"));
   });
 });

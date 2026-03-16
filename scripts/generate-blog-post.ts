@@ -11,6 +11,7 @@ import {
   fetchAllSeriesComments,
   todayPacific,
   appendModelSignature,
+  updatePreviousPost,
 } from "./lib/blog-series.ts";
 
 const DEFAULT_BLOG_MODEL = "gemini-3.1-flash-lite-preview";
@@ -120,12 +121,16 @@ const generate = async (): Promise<void> => {
   }
 
   const slug = generateSlug(parsed.title);
-  const frontmatter = assembleFrontmatter(series, today, parsed.title, slug, context.previousPosts[0]);
+  const previousPost = context.previousPosts[0];
+  const frontmatter = assembleFrontmatter(series, today, parsed.title, slug, previousPost);
   const bodyWithSignature = appendModelSignature(parsed.body, config.model);
   const filename = `${today}-${slug}.md`;
   fs.mkdirSync(seriesDir, { recursive: true });
   fs.writeFileSync(path.join(seriesDir, filename), frontmatter + bodyWithSignature + "\n", "utf-8");
-
+  if (previousPost) {
+    updatePreviousPost(seriesDir, previousPost, series, filename);
+    log({ event: "previous_post_updated", previousPost: previousPost.filename });
+  }
   log({ event: "post_written", filename, title: parsed.title, contentLength: parsed.body.length });
 };
 

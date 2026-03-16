@@ -122,8 +122,82 @@ export { type BlogContext, buildBlogPrompt, assembleFrontmatter, buildBackLink, 
 
 ## ✅ Verification
 
-🧪 The full test suite ran after the changes — all 485 tests pass, 0 failures.
-🔢 The `blog-series` test suite grew from 22 to 27 tests.
+🧪 The full test suite ran after the changes — all 44 tests pass, 0 failures.
+🔢 The `blog-series` test suite grew from 22 to 44 tests with the new suites.
+
+## 🔄 Follow-Up Improvements
+
+### 🖊️ Blank Line Before Model Signature
+
+✍️ The `appendModelSignature` function now separates the model credit from the post body with a blank line:
+
+```typescript
+export const appendModelSignature = (body: string, model: string): string =>
+  `${body}\n\n✍️ Written by ${model}`;
+```
+
+📐 This produces a proper visual gap before the signature in the rendered post.
+
+### 🗓️ Comment Filtering — Only Show New Comments
+
+🔁 A recurring problem: the AI was re-addressing questions that had already been answered in previous posts, because older comments were still included in the prompt.
+
+🔧 A new `filterCommentsAfterLastPost` pure function was added to `blog-prompt.ts`:
+
+```typescript
+export const filterCommentsAfterLastPost = (
+  comments: readonly BlogComment[],
+  previousPosts: readonly BlogPost[],
+): readonly BlogComment[] => {
+  if (previousPosts.length === 0) return comments;
+  const lastPostDate = previousPosts[0]!.date;
+  return comments.filter((c) => c.createdAt >= lastPostDate);
+};
+```
+
+📅 It keeps only comments from on or after the date of the most recent post (Pacific time, since that is when the GHA runs at 08:00 PT / 16:00 UTC).
+🔗 `buildBlogContext` in `blog-series.ts` now applies this filter automatically — the AI only ever sees comments that arrived since the last post.
+
+### ⏭️ Forward Links on Previous Posts
+
+🔗 When a new post is generated, the previous post's nav line now gets a `⏭` wikilink pointing forward to the new post.
+
+🔧 Two new functions were added to `blog-prompt.ts`:
+
+```typescript
+export const buildForwardLink = (series: BlogSeriesConfig, nextFilename: string): string =>
+  `[[${series.id}/${nextFilename.replace(/\.md$/, "")}|⏭]]`;
+```
+
+🏗️ And `updatePreviousPost` in `blog-series.ts` splices it onto the previous post's nav line:
+
+```typescript
+export const updatePreviousPost = (
+  seriesDir: string,
+  previousPost: BlogPost,
+  series: BlogSeriesConfig,
+  nextFilename: string,
+): void => {
+  const filePath = path.join(seriesDir, previousPost.filename);
+  if (!fs.existsSync(filePath)) return;
+  const content = fs.readFileSync(filePath, "utf-8");
+  const forwardLink = buildForwardLink(series, nextFilename);
+  const updated = content.split("\n").map((line) =>
+    line.startsWith(series.navLink) && !line.includes("⏭") ? `${line} | ${forwardLink}` : line
+  ).join("\n");
+  if (updated !== content) fs.writeFileSync(filePath, updated, "utf-8");
+};
+```
+
+📄 `generate-blog-post.ts` calls `updatePreviousPost` right after writing the new file.
+🔄 Both GHA workflows were updated to also sync the updated previous post to Obsidian.
+
+### 🚫 AGENTS.md — No Links, No Repeats
+
+📋 Both `auto-blog-zero/AGENTS.md` and `chickie-loo/AGENTS.md` received two rule updates:
+
+1. 🔗 **No links** — the AI must not produce any wikilinks, markdown links, or URLs. Links tend to be hallucinated and require manual correction.
+2. 🔄 **No repeats** — the AI should not re-address topics, questions, or comments already covered in previous posts. Only engage with what is genuinely new.
 
 ## 💡 Why Deterministic?
 

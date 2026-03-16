@@ -1,5 +1,5 @@
 export { type BlogSeriesConfig, BLOG_SERIES, lookupSeries } from "./blog-series-config.ts";
-export { type BlogPost, readSeriesPosts, readAgentsMd, readIdeasMd } from "./blog-posts.ts";
+export { type BlogPost, readSeriesPosts, readAgentsMd } from "./blog-posts.ts";
 export { type BlogComment, fetchGiscusComments, fetchAllSeriesComments } from "./blog-comments.ts";
 export { type BlogContext, buildBlogPrompt, assembleFrontmatter, todayPacific } from "./blog-prompt.ts";
 
@@ -30,7 +30,7 @@ export const generateSeriesIndex = (series: BlogSeriesConfig, _posts: readonly B
     "---", `[Home](../index.md)  `, `# ${series.icon} ${series.name}  `,
     "```dataview",
     `LIST FROM "${series.id}"`,
-    `WHERE file.name != "index" AND file.name != "AGENTS" AND file.name != "IDEAS"`,
+    `WHERE file.name != "index" AND file.name != "AGENTS"`,
     "SORT file.name DESC", "```",
   ].join("\n") + "\n";
 

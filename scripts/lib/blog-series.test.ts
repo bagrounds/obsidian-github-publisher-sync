@@ -39,12 +39,11 @@ describe("readSeriesPosts", () => {
     }
   });
 
-  it("excludes index.md, AGENTS.md, and IDEAS.md", () => {
+  it("excludes index.md and AGENTS.md", () => {
     const tmpDir = fs.mkdtempSync(path.join(os.tmpdir(), "blog-test-"));
     try {
       fs.writeFileSync(path.join(tmpDir, "index.md"), "---\ntitle: Index\n---\n");
       fs.writeFileSync(path.join(tmpDir, "AGENTS.md"), "# AGENTS");
-      fs.writeFileSync(path.join(tmpDir, "IDEAS.md"), "# IDEAS");
       fs.writeFileSync(path.join(tmpDir, "2026-03-01-post.md"), "---\ntitle: A Post\n---\nBody");
 
       assert.equal(readSeriesPosts(tmpDir).length, 1);
@@ -202,13 +201,13 @@ describe("BLOG_SERIES priorityUser config", () => {
 });
 
 describe("generateSeriesIndex", () => {
-  it("generates dataview index excluding AGENTS and IDEAS", () => {
+  it("generates dataview index excluding AGENTS", () => {
     const series = BLOG_SERIES.get("auto-blog-zero")!;
     const index = generateSeriesIndex(series, []);
     assert.ok(index.includes("```dataview"));
     assert.ok(index.includes('LIST FROM "auto-blog-zero"'));
     assert.ok(index.includes('file.name != "AGENTS"'));
-    assert.ok(index.includes('file.name != "IDEAS"'));
+    assert.ok(!index.includes('file.name != "IDEAS"'));
     assert.ok(index.includes("SORT file.name DESC"));
   });
 });

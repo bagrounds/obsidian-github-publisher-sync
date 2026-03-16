@@ -27,7 +27,7 @@ tags:
 🔙 The request was to extend this nav line with a wikilink back to the immediately preceding post in the series, so it becomes:
 
 ```
-[[index|Home]] > [[auto-blog-zero/index|🤖 Auto Blog Zero]] | [[auto-blog-zero/2026-03-12-fully-automated-blogging|⏮]]
+[[index|Home]] > [[auto-blog-zero/index|🤖 Auto Blog Zero]] | [[auto-blog-zero/2026-03-12-fully-automated-blogging|⏮️]]
 ```
 
 ## 🔍 Where the Nav Line Lives
@@ -60,10 +60,10 @@ ${series.navLink}
 
 ```typescript
 export const buildBackLink = (series: BlogSeriesConfig, previousPost: BlogPost): string =>
-  `[[${series.id}/${previousPost.filename.replace(/\.md$/, "")}|⏮]]`;
+  `[[${series.id}/${previousPost.filename.replace(/\.md$/, "")}|⏮️]]`;
 ```
 
-🧩 It strips the `.md` extension from the filename (Obsidian wikilinks don't include it) and uses `⏮` as the display text — a navigation emoji consistent with the site's style.
+🧩 It strips the `.md` extension from the filename (Obsidian wikilinks don't include it) and uses `⏮️` as the display text — a navigation emoji consistent with the site's style.
 
 ### 🔧 Updated `assembleFrontmatter`
 
@@ -112,12 +112,12 @@ export { type BlogContext, buildBlogPrompt, assembleFrontmatter, buildBackLink, 
 📋 New test cases were added to `blog-series.test.ts`:
 
 ### `buildBackLink` suite (3 tests)
-- ✅ Builds the correct wikilink from filename using `⏮` as display text
+- ✅ Builds the correct wikilink from filename using `⏮️` as display text
 - ✅ Strips `.md` extension from filename
 - ✅ Uses the series id as the path prefix
 
 ### `assembleFrontmatter` additions (consolidated)
-- ✅ Deterministic frontmatter test now also asserts no `⏮` when no previous post
+- ✅ Deterministic frontmatter test now also asserts no `⏮️` when no previous post
 - ✅ Combined test: back link appears on the nav line with the correct wikilink when a previous post is provided
 
 ## ✅ Verification
@@ -160,13 +160,13 @@ export const filterCommentsAfterLastPost = (
 
 ### ⏭️ Forward Links on Previous Posts
 
-🔗 When a new post is generated, the previous post's nav line now gets a `⏭` wikilink pointing forward to the new post.
+🔗 When a new post is generated, the previous post's nav line now gets a `⏭️` wikilink pointing forward to the new post.
 
 🔧 Two new functions were added to `blog-prompt.ts`:
 
 ```typescript
 export const buildForwardLink = (series: BlogSeriesConfig, nextFilename: string): string =>
-  `[[${series.id}/${nextFilename.replace(/\.md$/, "")}|⏭]]`;
+  `[[${series.id}/${nextFilename.replace(/\.md$/, "")}|⏭️]]`;
 ```
 
 🏗️ And `updatePreviousPost` in `blog-series.ts` splices it onto the previous post's nav line:
@@ -183,7 +183,7 @@ export const updatePreviousPost = (
   const content = fs.readFileSync(filePath, "utf-8");
   const forwardLink = buildForwardLink(series, nextFilename);
   const updated = content.split("\n").map((line) =>
-    line.startsWith(series.navLink) && !line.includes("⏭") ? `${line} | ${forwardLink}` : line
+    line.startsWith(series.navLink) && !line.includes("⏭") ? `${line} ${forwardLink}` : line
   ).join("\n");
   if (updated !== content) fs.writeFileSync(filePath, updated, "utf-8");
 };
@@ -192,12 +192,30 @@ export const updatePreviousPost = (
 📄 `generate-blog-post.ts` calls `updatePreviousPost` right after writing the new file.
 🔄 Both GHA workflows were updated to also sync the updated previous post to Obsidian.
 
-### 🚫 AGENTS.md — No Links, No Repeats
+### 🐛 Bug Fix — Persisting Posts to the Repo
 
-📋 Both `auto-blog-zero/AGENTS.md` and `chickie-loo/AGENTS.md` received two rule updates:
+📂 Generated posts were being synced to Obsidian but not committed back to the git repo.
+🔁 This meant every GHA run checked out the repo and only found the very first post, so:
+- ⏮️ The back link always pointed to the first post
+- 📅 The comment cutoff date was always the first post's date
+- ⏭️ The forward link was always added to the first post
 
-1. 🔗 **No links** — the AI must not produce any wikilinks, markdown links, or URLs. Links tend to be hallucinated and require manual correction.
-2. 🔄 **No repeats** — the AI should not re-address topics, questions, or comments already covered in previous posts. Only engage with what is genuinely new.
+🔧 Both workflows now commit generated posts back to the repo after syncing to Obsidian.
+✅ This ensures `readSeriesPosts` sees all previous posts on the next run.
+
+### 📊 Improved GHA Logging
+
+🔍 Added detailed structured logging throughout the generation pipeline so GHA logs show:
+- 📋 The newest post filename and date found in the series
+- 🔢 The filtered comment count (after removing stale comments)
+- ⏮️ Which post the back link targets
+- ⏭️ Which post receives the forward link
+
+### 🚫 AGENTS.md — No Links
+
+📋 Both `auto-blog-zero/AGENTS.md` and `chickie-loo/AGENTS.md` ban AI-generated links.
+🔗 The no-links rule prevents hallucinated link targets.
+📝 The no-repeat AGENTS.md instruction was removed — old comment filtering is handled entirely in code via `filterCommentsAfterLastPost`, so the instruction was redundant.
 
 ## 💡 Why Deterministic?
 

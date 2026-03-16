@@ -9,7 +9,7 @@ env:
   TZ: America/Los_Angeles
 
 permissions:
-  contents: read
+  contents: write
   discussions: read
 
 jobs:
@@ -68,3 +68,11 @@ jobs:
           else
             echo "No new post generated today"
           fi
+
+      - name: Commit Generated Posts
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add auto-blog-zero/
+          git diff --cached --quiet && echo "Nothing to commit" || git commit -m "🤖 auto-blog-zero: $(date +%Y-%m-%d) daily post"
+          git push

@@ -101,10 +101,10 @@ export const filterCommentsAfterLastPost = (
 };
 
 export const buildBackLink = (series: BlogSeriesConfig, previousPost: BlogPost): string =>
-  `[[${series.id}/${previousPost.filename.replace(/\.md$/, "")}|⏮]]`;
+  `[[${series.id}/${previousPost.filename.replace(/\.md$/, "")}|⏮️]]`;
 
 export const buildForwardLink = (series: BlogSeriesConfig, nextFilename: string): string =>
-  `[[${series.id}/${nextFilename.replace(/\.md$/, "")}|⏭]]`;
+  `[[${series.id}/${nextFilename.replace(/\.md$/, "")}|⏭️]]`;
 
 export const assembleFrontmatter = (series: BlogSeriesConfig, today: string, title: string, slug: string, previousPost?: BlogPost): string => {
   const backLink = previousPost ? ` | ${buildBackLink(series, previousPost)}` : "";

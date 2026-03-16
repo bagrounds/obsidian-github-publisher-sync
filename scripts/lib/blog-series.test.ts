@@ -175,7 +175,7 @@ describe("buildBackLink", () => {
   it("builds a wikilink to the previous post using its filename", () => {
     const prev = { filename: "2026-03-12-fully-automated-blogging.md", date: "2026-03-12", title: "2026-03-12 | 🤖 Fully Automated Blogging 🤖", body: "" };
     const link = buildBackLink(series, prev);
-    assert.equal(link, "[[auto-blog-zero/2026-03-12-fully-automated-blogging|⏮]]");
+    assert.equal(link, "[[auto-blog-zero/2026-03-12-fully-automated-blogging|⏮️]]");
   });
 
   it("strips .md extension from filename", () => {
@@ -204,6 +204,7 @@ describe("assembleFrontmatter", () => {
     assert.ok(!fm.includes("[Your Title Here]"));
     assert.ok(fm.includes("[[index|Home]] > [[auto-blog-zero/index|🤖 Auto Blog Zero]]"));
     assert.ok(!fm.includes("⏮"));
+    assert.ok(!fm.includes("⏮️"));
   });
 
   it("includes correct nav link for chickie-loo", () => {
@@ -216,7 +217,7 @@ describe("assembleFrontmatter", () => {
     const prev = { filename: "2026-03-11-previous-post.md", date: "2026-03-11", title: "Previous Post Title", body: "" };
     const navLine = assembleFrontmatter(series, "2026-03-12", "My Great Post", "my-great-post", prev)
       .split("\n").find((line) => line.includes("[[index|Home]]"));
-    assert.ok(navLine?.includes("[[auto-blog-zero/2026-03-11-previous-post|⏮]]"));
+    assert.ok(navLine?.includes("[[auto-blog-zero/2026-03-11-previous-post|⏮️]]"));
   });
 });
 
@@ -311,7 +312,7 @@ describe("buildForwardLink", () => {
   const series = BLOG_SERIES.get("auto-blog-zero")!;
 
   it("builds a wikilink to the next post using its filename", () => {
-    assert.equal(buildForwardLink(series, "2026-03-14-my-post.md"), "[[auto-blog-zero/2026-03-14-my-post|⏭]]");
+    assert.equal(buildForwardLink(series, "2026-03-14-my-post.md"), "[[auto-blog-zero/2026-03-14-my-post|⏭️]]");
   });
 
   it("strips .md extension from filename", () => {
@@ -336,7 +337,7 @@ describe("updatePreviousPost", () => {
       updatePreviousPost(tmpDir, prev, series, "2026-03-11-new-post.md");
       const updated = fs.readFileSync(path.join(tmpDir, "2026-03-10-test.md"), "utf-8");
       const navLine = updated.split("\n").find((line) => line.startsWith(series.navLink));
-      assert.ok(navLine?.includes("[[auto-blog-zero/2026-03-11-new-post|⏭]]"));
+      assert.ok(navLine?.includes("[[auto-blog-zero/2026-03-11-new-post|⏭️]]"));
     } finally {
       fs.rmSync(tmpDir, { recursive: true });
     }
@@ -346,7 +347,7 @@ describe("updatePreviousPost", () => {
     const tmpDir = fs.mkdtempSync(path.join(os.tmpdir(), "blog-test-"));
     try {
       fs.writeFileSync(path.join(tmpDir, "2026-03-10-test.md"),
-        `---\nshare: true\n---\n${series.navLink} | [[auto-blog-zero/2026-03-11-new-post|⏭]]\n## Test\n\nBody.\n`);
+        `---\nshare: true\n---\n${series.navLink} | [[auto-blog-zero/2026-03-11-new-post|⏭️]]\n## Test\n\nBody.\n`);
       const prev = { filename: "2026-03-10-test.md", date: "2026-03-10", title: "Test", body: "" };
       updatePreviousPost(tmpDir, prev, series, "2026-03-11-new-post.md");
       const updated = fs.readFileSync(path.join(tmpDir, "2026-03-10-test.md"), "utf-8");

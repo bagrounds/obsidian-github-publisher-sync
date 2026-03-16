@@ -104,7 +104,14 @@ const generate = async (): Promise<void> => {
   log({ event: "comments_fetched", total: comments.length, priority: priorityCount, priorityUser });
 
   const context = buildBlogContext(config.series, repoRoot, comments, today);
-  log({ event: "context_built", previousPosts: context.previousPosts.length, hasAgentsMd: context.agentsMd.length > 0 });
+  log({
+    event: "context_built",
+    previousPostCount: context.previousPosts.length,
+    newestPost: context.previousPosts[0]?.filename,
+    newestPostDate: context.previousPosts[0]?.date,
+    filteredCommentCount: context.comments.length,
+    hasAgentsMd: context.agentsMd.length > 0,
+  });
 
   const prompt = buildBlogPrompt(context);
 
@@ -127,11 +134,14 @@ const generate = async (): Promise<void> => {
   const filename = `${today}-${slug}.md`;
   fs.mkdirSync(seriesDir, { recursive: true });
   fs.writeFileSync(path.join(seriesDir, filename), frontmatter + bodyWithSignature + "\n", "utf-8");
+  log({ event: "post_written", filename, title: parsed.title, contentLength: parsed.body.length, slug });
   if (previousPost) {
     updatePreviousPost(seriesDir, previousPost, series, filename);
-    log({ event: "previous_post_updated", previousPost: previousPost.filename });
+    log({ event: "previous_post_updated", previousPost: previousPost.filename, forwardLinkTarget: filename });
+  } else {
+    log({ event: "no_previous_post", reason: "first post in series" });
   }
-  log({ event: "post_written", filename, title: parsed.title, contentLength: parsed.body.length });
+  log({ event: "generate_complete", series: series.id, filename, backLinkTarget: previousPost?.filename });
 };
 
 if (process.argv[1]?.endsWith("generate-blog-post.ts")) {

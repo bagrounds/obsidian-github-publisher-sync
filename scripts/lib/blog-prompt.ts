@@ -78,7 +78,7 @@ ${buildPostHistory(previousPosts, today)}${buildCommentsSection(comments)}${reca
 ## Instructions
 
 Generate ONLY the blog post body in markdown.
-Do NOT start with a top-level heading (# ) — the title heading is added automatically.
+Do NOT start with a top-level heading (#) — the title heading is added automatically.
 Start directly with a ## subheading or introductory paragraph.
 Do NOT generate frontmatter — it will be added automatically.
 Do NOT wrap your output in code fences.

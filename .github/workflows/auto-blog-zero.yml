@@ -58,9 +58,9 @@ jobs:
           OBSIDIAN_VAULT_NAME: ${{ secrets.OBSIDIAN_VAULT_NAME }}
           OBSIDIAN_VAULT_CACHE_DIR: /tmp/obsidian-vault-cache
         run: |
-          for POST in auto-blog-zero/$(date +%Y-%m-%d)*.md; do
-            [ -f "$POST" ] && npx tsx scripts/sync-file-to-obsidian.ts "$POST" "$POST"
-          done
-          for PREV in auto-blog-zero/*.md; do
-            [ -f "$PREV" ] && [[ ! "$PREV" =~ $(date +%Y-%m-%d) ]] && [[ "$PREV" != *AGENTS.md ]] && npx tsx scripts/sync-file-to-obsidian.ts "$PREV" "$PREV"
+          TODAY=$(date +%Y-%m-%d)
+          for FILE in auto-blog-zero/*.md; do
+            [ -f "$FILE" ] || continue
+            [[ "$(basename "$FILE")" == "AGENTS.md" ]] && continue
+            npx tsx scripts/sync-file-to-obsidian.ts "$FILE" "$FILE"
           done

@@ -66,7 +66,8 @@ export const addNextLinkToContent = (content: string, seriesId: string, newFilen
 export const readPreviousPostContent = (repoRoot: string, seriesId: string, filename: string): string | undefined => {
   const rootPath = path.join(repoRoot, seriesId, filename);
   const contentPath = path.join(repoRoot, "content", seriesId, filename);
-  const filePath = fs.existsSync(rootPath) ? rootPath : fs.existsSync(contentPath) ? contentPath : undefined;
+  const candidates = [rootPath, contentPath];
+  const filePath = candidates.find((p) => fs.existsSync(p));
   return filePath ? fs.readFileSync(filePath, "utf-8") : undefined;
 };
 

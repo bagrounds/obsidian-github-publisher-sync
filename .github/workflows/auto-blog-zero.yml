@@ -51,14 +51,14 @@ jobs:
           OBSIDIAN_VAULT_NAME: ${{ secrets.OBSIDIAN_VAULT_NAME }}
           OBSIDIAN_VAULT_CACHE_DIR: /tmp/obsidian-vault-cache
         run: |
-          npx tsx -e "
+          npx tsx -e "(async () => {
             const { syncObsidianVault } = await import('./scripts/lib/obsidian-sync.ts');
             const vaultDir = await syncObsidianVault({
               authToken: process.env.OBSIDIAN_AUTH_TOKEN,
               vaultName: process.env.OBSIDIAN_VAULT_NAME,
             });
             console.log(vaultDir);
-          " > /tmp/vault-dir.txt
+          })()" > /tmp/vault-dir.txt
           echo "dir=$(cat /tmp/vault-dir.txt | tail -1)" >> "$GITHUB_OUTPUT"
 
       - name: Generate Blog Post

@@ -149,3 +149,33 @@ export const filterCommentsAfterLastPost = (
 📝 The Obsidian vault is the source of truth for published posts, not the git repo.
 🔒 Reading the previous post from the vault before updating it preserves manual edits that would otherwise be lost.
 🏗️ This pattern — pull before write — is essential for any system where humans and automation both modify the same data.
+
+## 🔍 5 Whys — Rate Limit Root Cause Analysis
+
+🛑 During this PR, the coding agent hit a rate limit and stopped mid-work, leaving dead code and an untested CI-breaking change.
+
+### ❓ Why did the CI workflow fail?
+
+🔧 The `npx tsx -e` inline script used top-level `await`, which esbuild rejects when targeting CJS output format.
+
+### ❓ Why was the code using top-level await?
+
+📝 The vault-pull step was written as a bare `await import()` and `await syncObsidianVault()` without wrapping in an async IIFE.
+
+### ❓ Why wasn't it wrapped in an async IIFE?
+
+🧪 The agent didn't test the workflow locally — it assumed `npx tsx -e` would handle top-level await the same way `npx tsx <file>` does.
+
+### ❓ Why didn't the agent test the workflow?
+
+⏱️ The agent was processing multiple concerns simultaneously — dead code cleanup, vault-safe sync, comment filtering, and nav links — and hit a rate limit before reaching the validation step.
+
+### ❓ Why did the agent hit a rate limit?
+
+📏 The scope of changes was too large for a single iteration: 4 new features + workflow changes + blog post + tests, all addressed in one pass without incremental testing.
+
+### 🎯 Root Cause
+
+📦 Batching too many changes into a single iteration without incremental testing.
+✅ The fix: smaller PRs, test each change in isolation, and validate CI-critical changes (like workflow syntax) before moving on.
+🔄 Wrapping the inline script in `(async () => { ... })()` resolves the esbuild CJS limitation.

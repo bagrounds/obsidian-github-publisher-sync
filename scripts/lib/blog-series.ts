@@ -46,4 +46,4 @@ export const parseGeneratedPost = (raw: string): { body: string; title: string }
 };
 
 export const appendModelSignature = (body: string, model: string): string =>
-  `${body}\n✍️ Written by ${model}`;
+  `${body}\n\n✍️ Written by ${model}`;

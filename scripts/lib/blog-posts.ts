@@ -9,7 +9,7 @@ export interface BlogPost {
   readonly body: string;
 }
 
-const EXCLUDED_FILES = new Set(["index.md", "AGENTS.md", "IDEAS.md"]);
+const EXCLUDED_FILES = new Set(["index.md", "AGENTS.md"]);
 
 const isPostFile = (filename: string): boolean =>
   filename.endsWith(".md") && !EXCLUDED_FILES.has(filename);
@@ -33,9 +33,4 @@ export const readSeriesPosts = (seriesDir: string): readonly BlogPost[] =>
 export const readAgentsMd = (seriesDir: string): string => {
   const agentsPath = path.join(seriesDir, "AGENTS.md");
   return fs.existsSync(agentsPath) ? fs.readFileSync(agentsPath, "utf-8") : "";
-};
-
-export const readIdeasMd = (seriesDir: string): string => {
-  const ideasPath = path.join(seriesDir, "IDEAS.md");
-  return fs.existsSync(ideasPath) ? fs.readFileSync(ideasPath, "utf-8") : "";
 };

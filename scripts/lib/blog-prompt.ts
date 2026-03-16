@@ -82,7 +82,7 @@ Do NOT wrap your output in code fences.
 
 ${previousPosts.length === 0
     ? "This is the FIRST post in the series. Introduce yourself and set the tone."
-    : `Continue the series naturally. Reference previous posts where relevant using wikilinks like [[${series.id}/filename|title]].`}
+    : `Continue the series naturally.`}
 
 ${comments.length > 0
     ? "Address reader comments naturally in your post. Only incorporate what fits."

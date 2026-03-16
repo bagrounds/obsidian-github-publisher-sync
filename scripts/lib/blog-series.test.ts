@@ -158,11 +158,11 @@ describe("buildBlogPrompt", () => {
     assert.ok(prompt.user.includes("comments are very rare"));
   });
 
-  it("uses wikilinks format for internal references", () => {
+  it("tells AI to continue the series naturally without link instructions", () => {
     const posts = [{ filename: "2026-03-10-test.md", date: "2026-03-10", title: "Test Post", body: "Body text" }];
     const prompt = buildBlogPrompt({ series, agentsMd: "test", previousPosts: posts, comments: [], today: "2026-03-12" });
-    assert.ok(prompt.user.includes("wikilinks"));
-    assert.ok(prompt.user.includes("[[auto-blog-zero/"));
+    assert.ok(prompt.user.includes("Continue the series naturally"));
+    assert.ok(!prompt.user.includes("wikilinks"));
   });
 });
 

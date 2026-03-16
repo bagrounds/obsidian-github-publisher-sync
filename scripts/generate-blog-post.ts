@@ -120,7 +120,7 @@ const generate = async (): Promise<void> => {
   }
 
   const slug = generateSlug(parsed.title);
-  const frontmatter = assembleFrontmatter(series, today, parsed.title, slug);
+  const frontmatter = assembleFrontmatter(series, today, parsed.title, slug, context.previousPosts[0]);
   const bodyWithSignature = appendModelSignature(parsed.body, config.model);
   const filename = `${today}-${slug}.md`;
   fs.mkdirSync(seriesDir, { recursive: true });

@@ -1,7 +1,7 @@
 export { type BlogSeriesConfig, BLOG_SERIES, lookupSeries } from "./blog-series-config.ts";
 export { type BlogPost, readSeriesPosts, readAgentsMd } from "./blog-posts.ts";
 export { type BlogComment, fetchGiscusComments, fetchAllSeriesComments } from "./blog-comments.ts";
-export { type BlogContext, buildBlogPrompt, assembleFrontmatter, todayPacific } from "./blog-prompt.ts";
+export { type BlogContext, buildBlogPrompt, assembleFrontmatter, buildBackLink, todayPacific } from "./blog-prompt.ts";
 
 import path from "node:path";
 import type { BlogSeriesConfig } from "./blog-series-config.ts";

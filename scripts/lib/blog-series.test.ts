@@ -16,6 +16,7 @@ import {
   appendModelSignature,
   todayPacific,
   assembleFrontmatter,
+  buildBackLink,
 } from "./blog-series.ts";
 
 describe("readSeriesPosts", () => {
@@ -165,6 +166,29 @@ describe("buildBlogPrompt", () => {
   });
 });
 
+describe("buildBackLink", () => {
+  const series = BLOG_SERIES.get("auto-blog-zero")!;
+
+  it("builds a wikilink to the previous post using its filename and title", () => {
+    const prev = { filename: "2026-03-12-fully-automated-blogging.md", date: "2026-03-12", title: "2026-03-12 | 🤖 Fully Automated Blogging 🤖", body: "" };
+    const link = buildBackLink(series, prev);
+    assert.equal(link, "[[auto-blog-zero/2026-03-12-fully-automated-blogging|2026-03-12 | 🤖 Fully Automated Blogging 🤖]]");
+  });
+
+  it("strips .md extension from filename", () => {
+    const prev = { filename: "2026-03-15-weekly-recap.md", date: "2026-03-15", title: "Weekly Recap", body: "" };
+    const link = buildBackLink(series, prev);
+    assert.ok(!link.includes(".md"));
+  });
+
+  it("uses the series id as the path prefix", () => {
+    const chickieSeries = BLOG_SERIES.get("chickie-loo")!;
+    const prev = { filename: "2026-03-10-hello.md", date: "2026-03-10", title: "Hello", body: "" };
+    const link = buildBackLink(chickieSeries, prev);
+    assert.ok(link.startsWith("[[chickie-loo/"));
+  });
+});
+
 describe("assembleFrontmatter", () => {
   const series = BLOG_SERIES.get("auto-blog-zero")!;
 
@@ -187,6 +211,25 @@ describe("assembleFrontmatter", () => {
     const chickieSeries = BLOG_SERIES.get("chickie-loo")!;
     const fm = assembleFrontmatter(chickieSeries, "2026-03-12", "My Great Post", "my-great-post");
     assert.ok(fm.includes("[[index|Home]] > [[chickie-loo/index|🐔 Chickie Loo]]"));
+  });
+
+  it("omits back link when no previous post", () => {
+    const fm = assembleFrontmatter(series, "2026-03-12", "My Great Post", "my-great-post");
+    assert.ok(!fm.includes("⬅️"));
+  });
+
+  it("appends wikilink back to previous post when provided", () => {
+    const prev = { filename: "2026-03-11-previous-post.md", date: "2026-03-11", title: "Previous Post Title", body: "" };
+    const fm = assembleFrontmatter(series, "2026-03-12", "My Great Post", "my-great-post", prev);
+    assert.ok(fm.includes("⬅️ [[auto-blog-zero/2026-03-11-previous-post|Previous Post Title]]"));
+  });
+
+  it("places the back link on the same nav line as the series breadcrumb", () => {
+    const prev = { filename: "2026-03-11-previous-post.md", date: "2026-03-11", title: "Previous Post Title", body: "" };
+    const fm = assembleFrontmatter(series, "2026-03-12", "My Great Post", "my-great-post", prev);
+    const navLine = fm.split("\n").find((line) => line.includes("[[index|Home]]"));
+    assert.ok(navLine?.includes("⬅️"));
+    assert.ok(navLine?.includes("auto-blog-zero/2026-03-11-previous-post"));
   });
 });
 

@@ -91,8 +91,12 @@ ${comments.length > 0
   return { system, user };
 };
 
-export const assembleFrontmatter = (series: BlogSeriesConfig, today: string, title: string, slug: string): string =>
-  `---
+export const buildBackLink = (series: BlogSeriesConfig, previousPost: BlogPost): string =>
+  `[[${series.id}/${previousPost.filename.replace(/\.md$/, "")}|${previousPost.title}]]`;
+
+export const assembleFrontmatter = (series: BlogSeriesConfig, today: string, title: string, slug: string, previousPost?: BlogPost): string => {
+  const backLink = previousPost ? ` | ⬅️ ${buildBackLink(series, previousPost)}` : "";
+  return `---
 share: true
 aliases:
   - ${today} | ${series.icon} ${title} ${series.icon}
@@ -101,10 +105,11 @@ URL: ${series.baseUrl}/${today}-${slug}
 Author: "${series.author}"
 tags:
 ---
-${series.navLink}
+${series.navLink}${backLink}
 # ${today} | ${series.icon} ${title} ${series.icon}
 
 `;
+};
 
 export const todayPacific = (): string =>
   new Date().toLocaleDateString("en-CA", { timeZone: "America/Los_Angeles" });

@@ -192,16 +192,16 @@ export const updatePreviousPost = (
 📄 `generate-blog-post.ts` calls `updatePreviousPost` right after writing the new file.
 🔄 Both GHA workflows were updated to also sync the updated previous post to Obsidian.
 
-### 🐛 Bug Fix — Persisting Posts to the Repo
+### 🐛 Bug Fix — Reading Posts from Obsidian Vault
 
-📂 Generated posts were being synced to Obsidian but not committed back to the git repo.
-🔁 This meant every GHA run checked out the repo and only found the very first post, so:
+📂 Generated posts live in the Obsidian vault, not in the git repo.
+🔁 Without reading from the vault, every GHA run only saw the initial repo post, so:
 - ⏮️ The back link always pointed to the first post
 - 📅 The comment cutoff date was always the first post's date
 - ⏭️ The forward link was always added to the first post
 
-🔧 Both workflows now commit generated posts back to the repo after syncing to Obsidian.
-✅ This ensures `readSeriesPosts` sees all previous posts on the next run.
+🔧 Both workflows now pull the vault and copy date-prefixed posts into the local checkout before generation.
+✅ This ensures `readSeriesPosts` sees all previous posts from the vault on every run.
 
 ### 📊 Improved GHA Logging
 

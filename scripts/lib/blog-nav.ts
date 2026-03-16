@@ -76,8 +76,11 @@ export const updatePreviousPost = (
   seriesId: string,
   previousFilename: string,
   newFilename: string,
+  vaultDir: string | undefined,
 ): string | undefined => {
-  const content = readPreviousPostContent(repoRoot, seriesId, previousFilename);
+  const vaultPath = vaultDir ? path.join(vaultDir, seriesId, previousFilename) : undefined;
+  const vaultContent = vaultPath && fs.existsSync(vaultPath) ? fs.readFileSync(vaultPath, "utf-8") : undefined;
+  const content = vaultContent ?? readPreviousPostContent(repoRoot, seriesId, previousFilename);
   if (!content) return undefined;
   const updated = addNextLinkToContent(content, seriesId, newFilename);
   if (!updated) return undefined;

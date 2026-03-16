@@ -182,7 +182,7 @@ describe("updatePreviousPost", () => {
       ].join("\n");
       fs.writeFileSync(path.join(seriesDir, "2026-03-15-test.md"), prevContent);
 
-      const result = updatePreviousPost(tmpDir, "auto-blog-zero", "2026-03-15-test.md", "2026-03-16-new.md");
+      const result = updatePreviousPost(tmpDir, "auto-blog-zero", "2026-03-15-test.md", "2026-03-16-new.md", undefined);
       assert.ok(result);
       const updated = fs.readFileSync(result, "utf-8");
       assert.ok(updated.includes("[[auto-blog-zero/2026-03-16-new|⏭️]]"));
@@ -207,7 +207,7 @@ describe("updatePreviousPost", () => {
       const rootDir = path.join(tmpDir, "auto-blog-zero");
       fs.mkdirSync(rootDir, { recursive: true });
 
-      const result = updatePreviousPost(tmpDir, "auto-blog-zero", "2026-03-15-test.md", "2026-03-16-new.md");
+      const result = updatePreviousPost(tmpDir, "auto-blog-zero", "2026-03-15-test.md", "2026-03-16-new.md", undefined);
       assert.ok(result);
       const updated = fs.readFileSync(result, "utf-8");
       assert.ok(updated.includes("[⏭️](./2026-03-16-new.md)"));
@@ -219,10 +219,46 @@ describe("updatePreviousPost", () => {
   it("returns undefined when previous post not found", () => {
     const tmpDir = fs.mkdtempSync(path.join(os.tmpdir(), "nav-test-"));
     try {
-      const result = updatePreviousPost(tmpDir, "auto-blog-zero", "nonexistent.md", "2026-03-16-new.md");
+      const result = updatePreviousPost(tmpDir, "auto-blog-zero", "nonexistent.md", "2026-03-16-new.md", undefined);
       assert.equal(result, undefined);
     } finally {
       fs.rmSync(tmpDir, { recursive: true });
+    }
+  });
+
+  it("prefers vault content over repo content", () => {
+    const tmpDir = fs.mkdtempSync(path.join(os.tmpdir(), "nav-test-"));
+    const vaultDir = fs.mkdtempSync(path.join(os.tmpdir(), "vault-test-"));
+    try {
+      const repoSeriesDir = path.join(tmpDir, "auto-blog-zero");
+      fs.mkdirSync(repoSeriesDir);
+      const repoContent = [
+        "---", "share: true", "title: Stale Repo", "---",
+        "[[index|Home]] > [[auto-blog-zero/index|🤖 Auto Blog Zero]]",
+        "# 2026-03-15 | 🤖 Stale 🤖",
+        "", "## Stale body from repo",
+      ].join("\n");
+      fs.writeFileSync(path.join(repoSeriesDir, "2026-03-15-test.md"), repoContent);
+
+      const vaultSeriesDir = path.join(vaultDir, "auto-blog-zero");
+      fs.mkdirSync(vaultSeriesDir);
+      const vaultContent = [
+        "---", "share: true", "title: Manually Edited", "---",
+        "[[index|Home]] > [[auto-blog-zero/index|🤖 Auto Blog Zero]]",
+        "# 2026-03-15 | 🤖 Manually Edited 🤖",
+        "", "## Body with manual edits preserved",
+      ].join("\n");
+      fs.writeFileSync(path.join(vaultSeriesDir, "2026-03-15-test.md"), vaultContent);
+
+      const result = updatePreviousPost(tmpDir, "auto-blog-zero", "2026-03-15-test.md", "2026-03-16-new.md", vaultDir);
+      assert.ok(result);
+      const updated = fs.readFileSync(result, "utf-8");
+      assert.ok(updated.includes("Manually Edited"));
+      assert.ok(updated.includes("manual edits preserved"));
+      assert.ok(updated.includes("[[auto-blog-zero/2026-03-16-new|⏭️]]"));
+    } finally {
+      fs.rmSync(tmpDir, { recursive: true });
+      fs.rmSync(vaultDir, { recursive: true });
     }
   });
 });

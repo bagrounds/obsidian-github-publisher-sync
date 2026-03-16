@@ -15,6 +15,7 @@ import {
   buildNavLine,
   updatePreviousPost,
   stripRedundantFirstHeading,
+  filterCommentsAfterLastPost,
 } from "./lib/blog-series.ts";
 
 const DEFAULT_BLOG_MODEL = "gemini-3.1-flash-lite-preview";
@@ -23,6 +24,7 @@ interface GenerateArgs {
   readonly series: string;
   readonly dryRun: boolean;
   readonly model: string;
+  readonly vaultDir: string | undefined;
 }
 
 const log = (data: Record<string, unknown>): void =>
@@ -37,6 +39,7 @@ const parseArgs = (argv: readonly string[]): GenerateArgs => {
 
   const series = flagValue("--series") ?? "";
   const model = flagValue("--model") ?? process.env.BLOG_GEMINI_MODEL ?? DEFAULT_BLOG_MODEL;
+  const vaultDir = flagValue("--vault-dir");
   const dryRun = args.includes("--dry-run");
 
   if (!series || !BLOG_SERIES.has(series)) {
@@ -45,7 +48,7 @@ const parseArgs = (argv: readonly string[]): GenerateArgs => {
     process.exit(1);
   }
 
-  return { series, dryRun, model };
+  return { series, dryRun, model, vaultDir };
 };
 
 const callGemini = async (
@@ -102,14 +105,15 @@ const generate = async (): Promise<void> => {
   }
 
   const priorityUser = process.env.BLOG_PRIORITY_USER ?? series.priorityUser;
-  const comments = await fetchAllSeriesComments(series.id, priorityUser);
-  const priorityCount = comments.filter((c) => c.isPriority).length;
-  log({ event: "comments_fetched", total: comments.length, priority: priorityCount, priorityUser });
+  const allComments = await fetchAllSeriesComments(series.id, priorityUser);
+  const priorityCount = allComments.filter((c) => c.isPriority).length;
+  log({ event: "comments_fetched", total: allComments.length, priority: priorityCount, priorityUser });
 
-  const context = buildBlogContext(config.series, repoRoot, comments, today);
-  log({ event: "context_built", previousPosts: context.previousPosts.length, hasAgentsMd: context.agentsMd.length > 0 });
+  const context = buildBlogContext(config.series, repoRoot, allComments, today);
+  const comments = filterCommentsAfterLastPost(allComments, context.previousPosts);
+  log({ event: "context_built", previousPosts: context.previousPosts.length, hasAgentsMd: context.agentsMd.length > 0, filteredComments: comments.length });
 
-  const prompt = buildBlogPrompt(context);
+  const prompt = buildBlogPrompt({ ...context, comments });
 
   if (config.dryRun) {
     log({ event: "dry_run", systemPreview: prompt.system.slice(0, 200), userPreview: prompt.user.slice(0, 500) });
@@ -136,7 +140,7 @@ const generate = async (): Promise<void> => {
   log({ event: "post_written", filename, title: parsed.title, contentLength: cleanBody.length, previousFilename });
 
   if (previousFilename) {
-    const updatedPath = updatePreviousPost(repoRoot, series.id, previousFilename, filename);
+    const updatedPath = updatePreviousPost(repoRoot, series.id, previousFilename, filename, config.vaultDir);
     log({ event: updatedPath ? "previous_post_updated" : "previous_post_unchanged", previousFilename });
   }
 };

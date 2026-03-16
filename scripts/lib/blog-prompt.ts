@@ -8,7 +8,6 @@ export interface BlogContext {
   readonly previousPosts: readonly BlogPost[];
   readonly comments: readonly BlogComment[];
   readonly today: string;
-  readonly bookRecommendationsPrompt: string;
 }
 
 const MAX_POST_BODY_LENGTH = 3000;
@@ -68,8 +67,18 @@ const recapInstructions = (today: string): string => {
   return "";
 };
 
+export const filterCommentsAfterLastPost = (
+  comments: readonly BlogComment[],
+  posts: readonly BlogPost[],
+): readonly BlogComment[] => {
+  const lastPostDate = posts[0]?.date;
+  return lastPostDate
+    ? comments.filter((c) => c.createdAt > lastPostDate)
+    : comments;
+};
+
 export const buildBlogPrompt = (context: BlogContext): { system: string; user: string } => {
-  const { series, agentsMd, previousPosts, comments, today, bookRecommendationsPrompt } = context;
+  const { series, agentsMd, previousPosts, comments, today } = context;
 
   const system = agentsMd || `You are ${series.name}, an automated blog. Write a blog post.`;
   const user = `Write a new blog post for today, ${today}.
@@ -82,14 +91,15 @@ Do NOT start with a top-level heading (#) — the title heading is added automat
 Start directly with a ## subheading or introductory paragraph.
 Do NOT generate frontmatter — it will be added automatically.
 Do NOT wrap your output in code fences.
+Do NOT include any links — no markdown links, no wikilinks, no URLs. Navigation and cross-references are added automatically.
 
 ${previousPosts.length === 0
     ? "This is the FIRST post in the series. Introduce yourself and set the tone."
-    : `Continue the series naturally. Reference previous posts where relevant using wikilinks like [[${series.id}/filename|title]].`}
+    : "Continue the series naturally. You may mention previous posts by title, but do NOT link to them."}
 
 ${comments.length > 0
     ? "Address reader comments naturally in your post. Only incorporate what fits."
-    : ""}${bookRecommendationsPrompt}`;
+    : ""}`;
 
   return { system, user };
 };

@@ -16,6 +16,7 @@ import {
   appendModelSignature,
   todayPacific,
   assembleFrontmatter,
+  filterCommentsAfterLastPost,
 } from "./blog-series.ts";
 import { stripRedundantFirstHeading } from "./blog-series.ts";
 
@@ -114,61 +115,60 @@ describe("buildBlogPrompt", () => {
   const series = BLOG_SERIES.get("auto-blog-zero")!;
 
   it("uses AGENTS.md as system prompt", () => {
-    const prompt = buildBlogPrompt({ series, agentsMd: "You are a test blog.", previousPosts: [], comments: [], today: "2026-03-12", bookRecommendationsPrompt: "" });
+    const prompt = buildBlogPrompt({ series, agentsMd: "You are a test blog.", previousPosts: [], comments: [], today: "2026-03-12" });
     assert.equal(prompt.system, "You are a test blog.");
   });
 
   it("falls back when AGENTS.md is empty", () => {
-    const prompt = buildBlogPrompt({ series, agentsMd: "", previousPosts: [], comments: [], today: "2026-03-12", bookRecommendationsPrompt: "" });
+    const prompt = buildBlogPrompt({ series, agentsMd: "", previousPosts: [], comments: [], today: "2026-03-12" });
     assert.ok(prompt.system.includes("Auto Blog Zero"));
   });
 
   it("includes previous posts and comments in user prompt", () => {
     const posts = [{ filename: "2026-03-10-test.md", date: "2026-03-10", title: "Test Post", body: "Body text" }];
     const comments = [{ author: "bagrounds", body: "Write about testing", createdAt: "2026-03-11", isPriority: true }];
-    const prompt = buildBlogPrompt({ series, agentsMd: "test", previousPosts: posts, comments, today: "2026-03-12", bookRecommendationsPrompt: "" });
+    const prompt = buildBlogPrompt({ series, agentsMd: "test", previousPosts: posts, comments, today: "2026-03-12" });
     assert.ok(prompt.user.includes("Test Post"));
     assert.ok(prompt.user.includes("PRIORITY"));
     assert.ok(prompt.user.includes("Write about testing"));
   });
 
   it("tells AI to generate only body, not frontmatter", () => {
-    const prompt = buildBlogPrompt({ series, agentsMd: "test", previousPosts: [], comments: [], today: "2026-03-12", bookRecommendationsPrompt: "" });
+    const prompt = buildBlogPrompt({ series, agentsMd: "test", previousPosts: [], comments: [], today: "2026-03-12" });
     assert.ok(prompt.user.includes("Generate ONLY the blog post body"));
     assert.ok(prompt.user.includes("Do NOT generate frontmatter"));
   });
 
+  it("tells AI not to include links", () => {
+    const prompt = buildBlogPrompt({ series, agentsMd: "test", previousPosts: [], comments: [], today: "2026-03-12" });
+    assert.ok(prompt.user.includes("Do NOT include any links"));
+  });
+
   it("instructs weekly recap on Sundays", () => {
-    const prompt = buildBlogPrompt({ series, agentsMd: "test", previousPosts: [], comments: [], today: "2026-03-15", bookRecommendationsPrompt: "" });
+    const prompt = buildBlogPrompt({ series, agentsMd: "test", previousPosts: [], comments: [], today: "2026-03-15" });
     assert.ok(prompt.user.includes("Weekly Recap"));
   });
 
   it("instructs monthly recap on last day of month", () => {
-    const prompt = buildBlogPrompt({ series, agentsMd: "test", previousPosts: [], comments: [], today: "2026-04-30", bookRecommendationsPrompt: "" });
+    const prompt = buildBlogPrompt({ series, agentsMd: "test", previousPosts: [], comments: [], today: "2026-04-30" });
     assert.ok(prompt.user.includes("Monthly Recap"));
   });
 
   it("instructs quarterly recap on last day of quarter", () => {
-    const prompt = buildBlogPrompt({ series, agentsMd: "test", previousPosts: [], comments: [], today: "2026-03-31", bookRecommendationsPrompt: "" });
+    const prompt = buildBlogPrompt({ series, agentsMd: "test", previousPosts: [], comments: [], today: "2026-03-31" });
     assert.ok(prompt.user.includes("Quarterly Recap"));
   });
 
   it("notes sparse comment traffic when no comments", () => {
-    const prompt = buildBlogPrompt({ series, agentsMd: "test", previousPosts: [], comments: [], today: "2026-03-12", bookRecommendationsPrompt: "" });
+    const prompt = buildBlogPrompt({ series, agentsMd: "test", previousPosts: [], comments: [], today: "2026-03-12" });
     assert.ok(prompt.user.includes("comments are very rare"));
   });
 
-  it("uses wikilinks format for internal references", () => {
+  it("tells AI not to include links or wikilinks", () => {
     const posts = [{ filename: "2026-03-10-test.md", date: "2026-03-10", title: "Test Post", body: "Body text" }];
-    const prompt = buildBlogPrompt({ series, agentsMd: "test", previousPosts: posts, comments: [], today: "2026-03-12", bookRecommendationsPrompt: "" });
-    assert.ok(prompt.user.includes("wikilinks"));
-    assert.ok(prompt.user.includes("[[auto-blog-zero/"));
-  });
-
-  it("includes book recommendations when catalog is provided", () => {
-    const bookPrompt = "\n\n## 📚 Book Recommendations Instructions\nPick 3-5 books...";
-    const prompt = buildBlogPrompt({ series, agentsMd: "test", previousPosts: [], comments: [], today: "2026-03-12", bookRecommendationsPrompt: bookPrompt });
-    assert.ok(prompt.user.includes("Book Recommendations Instructions"));
+    const prompt = buildBlogPrompt({ series, agentsMd: "test", previousPosts: posts, comments: [], today: "2026-03-12" });
+    assert.ok(prompt.user.includes("Do NOT include any links"));
+    assert.ok(!prompt.user.includes("Reference previous posts"));
   });
 });
 
@@ -293,5 +293,43 @@ describe("stripRedundantFirstHeading", () => {
     const body = "## My Great Post  \n\n## Content\n\nBody.";
     const result = stripRedundantFirstHeading(body, "My Great Post");
     assert.ok(result.startsWith("## Content"));
+  });
+});
+
+describe("filterCommentsAfterLastPost", () => {
+  it("returns all comments when no posts exist", () => {
+    const comments = [
+      { author: "a", body: "hi", createdAt: "2026-03-10", isPriority: false },
+    ];
+    const result = filterCommentsAfterLastPost(comments, []);
+    assert.equal(result.length, 1);
+  });
+
+  it("filters out comments older than or equal to last post date", () => {
+    const posts = [
+      { filename: "2026-03-12-post.md", date: "2026-03-12", title: "Post", body: "Body" },
+    ];
+    const comments = [
+      { author: "a", body: "old", createdAt: "2026-03-10", isPriority: false },
+      { author: "b", body: "same day", createdAt: "2026-03-12", isPriority: false },
+      { author: "c", body: "new", createdAt: "2026-03-13", isPriority: true },
+    ];
+    const result = filterCommentsAfterLastPost(comments, posts);
+    assert.equal(result.length, 1);
+    assert.equal(result[0]?.author, "c");
+  });
+
+  it("uses the most recent post (first in array) for cutoff", () => {
+    const posts = [
+      { filename: "2026-03-14-newer.md", date: "2026-03-14", title: "Newer", body: "" },
+      { filename: "2026-03-12-older.md", date: "2026-03-12", title: "Older", body: "" },
+    ];
+    const comments = [
+      { author: "a", body: "after older", createdAt: "2026-03-13", isPriority: false },
+      { author: "b", body: "after newer", createdAt: "2026-03-15", isPriority: false },
+    ];
+    const result = filterCommentsAfterLastPost(comments, posts);
+    assert.equal(result.length, 1);
+    assert.equal(result[0]?.author, "b");
   });
 });

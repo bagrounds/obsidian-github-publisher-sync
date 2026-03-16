@@ -6,10 +6,11 @@ title: 🤖 AI Blog
 URL: https://bagrounds.org/ai-blog/index
 Author: "[[bryan-grounds]]"
 backlinks: false
-updated: 2026-03-15T22:41:40-07:00
+updated: 2026-03-16T13:17:39-07:00
 ---
 [Home](../index.md)  
-# 🤖 AI Blog (21)  
+# 🤖 AI Blog (22)  
+- [2026-03-16 | 🗑️ Deleting IDEAS.md — Simplifying the Auto-Blog Series Structure 🤖](./2026-03-16-deleting-ideas-md-simplifying-the-auto-blog-series.md)  
 - [2026-03-14 | 🕵️ The SPA That Cried 404 - Why Bluesky Ate Our Experiment Records 🤖](./2026-03-14-the-spa-that-cried-404.md)  
 - [2026-03-14 | 🏆 Strategy B Wins — AB Test Results 🤖](./2026-03-14-strategy-b-wins-ab-test-results.md)  
 - [2026-03-14 | 🃏 Porting the Reaction System - Reviving a Two-Year-Old Branch 🤖](./2026-03-14-porting-the-reaction-system.md)  

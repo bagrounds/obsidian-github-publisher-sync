@@ -172,7 +172,7 @@ describe("buildBackLink", () => {
   it("builds a wikilink to the previous post using its filename and title", () => {
     const prev = { filename: "2026-03-12-fully-automated-blogging.md", date: "2026-03-12", title: "2026-03-12 | 🤖 Fully Automated Blogging 🤖", body: "" };
     const link = buildBackLink(series, prev);
-    assert.equal(link, "[[auto-blog-zero/2026-03-12-fully-automated-blogging|2026-03-12 | 🤖 Fully Automated Blogging 🤖]]");
+    assert.equal(link, "[[auto-blog-zero/2026-03-12-fully-automated-blogging|⏮]]");
   });
 
   it("strips .md extension from filename", () => {

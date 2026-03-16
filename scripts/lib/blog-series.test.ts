@@ -228,7 +228,7 @@ describe("assembleFrontmatter", () => {
     const prev = { filename: "2026-03-11-previous-post.md", date: "2026-03-11", title: "Previous Post Title", body: "" };
     const fm = assembleFrontmatter(series, "2026-03-12", "My Great Post", "my-great-post", prev);
     const navLine = fm.split("\n").find((line) => line.includes("[[index|Home]]"));
-    assert.ok(navLine?.includes("⬅️"));
+    assert.ok(navLine?.includes("⏮"));
     assert.ok(navLine?.includes("auto-blog-zero/2026-03-11-previous-post"));
   });
 });

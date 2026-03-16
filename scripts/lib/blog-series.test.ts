@@ -215,7 +215,7 @@ describe("assembleFrontmatter", () => {
 
   it("omits back link when no previous post", () => {
     const fm = assembleFrontmatter(series, "2026-03-12", "My Great Post", "my-great-post");
-    assert.ok(!fm.includes("⬅️"));
+    assert.ok(!fm.includes("⏮"));
   });
 
   it("appends wikilink back to previous post when provided", () => {

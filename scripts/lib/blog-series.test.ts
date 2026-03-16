@@ -169,7 +169,7 @@ describe("buildBlogPrompt", () => {
 describe("buildBackLink", () => {
   const series = BLOG_SERIES.get("auto-blog-zero")!;
 
-  it("builds a wikilink to the previous post using its filename and title", () => {
+  it("builds a wikilink to the previous post using its filename", () => {
     const prev = { filename: "2026-03-12-fully-automated-blogging.md", date: "2026-03-12", title: "2026-03-12 | 🤖 Fully Automated Blogging 🤖", body: "" };
     const link = buildBackLink(series, prev);
     assert.equal(link, "[[auto-blog-zero/2026-03-12-fully-automated-blogging|⏮]]");
@@ -200,11 +200,7 @@ describe("assembleFrontmatter", () => {
     assert.ok(fm.includes('Author: "[[auto-blog-zero]]"'));
     assert.ok(!fm.includes("[Your Title Here]"));
     assert.ok(fm.includes("[[index|Home]] > [[auto-blog-zero/index|🤖 Auto Blog Zero]]"));
-  });
-
-  it("includes correct nav link for auto-blog-zero", () => {
-    const fm = assembleFrontmatter(series, "2026-03-12", "My Great Post", "my-great-post");
-    assert.ok(fm.includes("[[index|Home]] > [[auto-blog-zero/index|🤖 Auto Blog Zero]]"));
+    assert.ok(!fm.includes("⏮"));
   });
 
   it("includes correct nav link for chickie-loo", () => {
@@ -213,23 +209,11 @@ describe("assembleFrontmatter", () => {
     assert.ok(fm.includes("[[index|Home]] > [[chickie-loo/index|🐔 Chickie Loo]]"));
   });
 
-  it("omits back link when no previous post", () => {
-    const fm = assembleFrontmatter(series, "2026-03-12", "My Great Post", "my-great-post");
-    assert.ok(!fm.includes("⏮"));
-  });
-
-  it("appends wikilink back to previous post when provided", () => {
+  it("appends back link on nav line when previous post provided", () => {
     const prev = { filename: "2026-03-11-previous-post.md", date: "2026-03-11", title: "Previous Post Title", body: "" };
-    const fm = assembleFrontmatter(series, "2026-03-12", "My Great Post", "my-great-post", prev);
-    assert.ok(fm.includes("[[auto-blog-zero/2026-03-11-previous-post|⏮]]"));
-  });
-
-  it("places the back link on the same nav line as the series breadcrumb", () => {
-    const prev = { filename: "2026-03-11-previous-post.md", date: "2026-03-11", title: "Previous Post Title", body: "" };
-    const fm = assembleFrontmatter(series, "2026-03-12", "My Great Post", "my-great-post", prev);
-    const navLine = fm.split("\n").find((line) => line.includes("[[index|Home]]"));
-    assert.ok(navLine?.includes("⏮"));
-    assert.ok(navLine?.includes("auto-blog-zero/2026-03-11-previous-post"));
+    const navLine = assembleFrontmatter(series, "2026-03-12", "My Great Post", "my-great-post", prev)
+      .split("\n").find((line) => line.includes("[[index|Home]]"));
+    assert.ok(navLine?.includes("[[auto-blog-zero/2026-03-11-previous-post|⏮]]"));
   });
 });
 

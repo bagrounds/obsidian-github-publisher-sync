@@ -24,10 +24,10 @@ tags:
 ```
 
 🧭 This helps readers orient themselves in the site hierarchy.
-🔙 The request was to extend this nav line with a back link (wikilinks style) to the immediately preceding post in the series, so it becomes:
+🔙 The request was to extend this nav line with a wikilink back to the immediately preceding post in the series, so it becomes:
 
 ```
-[[index|Home]] > [[auto-blog-zero/index|🤖 Auto Blog Zero]] | ⬅️ [[auto-blog-zero/2026-03-12-fully-automated-blogging|Previous Post Title]]
+[[index|Home]] > [[auto-blog-zero/index|🤖 Auto Blog Zero]] | [[auto-blog-zero/2026-03-12-fully-automated-blogging|⏮]]
 ```
 
 ## 🔍 Where the Nav Line Lives
@@ -60,15 +60,15 @@ ${series.navLink}
 
 ```typescript
 export const buildBackLink = (series: BlogSeriesConfig, previousPost: BlogPost): string =>
-  `[[${series.id}/${previousPost.filename.replace(/\.md$/, "")}|${previousPost.title}]]`;
+  `[[${series.id}/${previousPost.filename.replace(/\.md$/, "")}|⏮]]`;
 ```
 
-🧩 It strips the `.md` extension from the filename (Obsidian wikilinks don't include it) and uses the post's `title` as the display text.
+🧩 It strips the `.md` extension from the filename (Obsidian wikilinks don't include it) and uses `⏮` as the display text — a navigation emoji consistent with the site's style.
 
 ### 🔧 Updated `assembleFrontmatter`
 
 🔄 The function signature gained an optional `previousPost?: BlogPost` parameter.
-🔗 When provided, the back link is appended to the nav line separated by ` | ⬅️ `.
+🔗 When provided, the back link is appended to the nav line separated by ` | `.
 🚫 When omitted (first post in a series), the nav line is unchanged.
 
 ```typescript
@@ -79,7 +79,7 @@ export const assembleFrontmatter = (
   slug: string,
   previousPost?: BlogPost,
 ): string => {
-  const backLink = previousPost ? ` | ⬅️ ${buildBackLink(series, previousPost)}` : "";
+  const backLink = previousPost ? ` | ${buildBackLink(series, previousPost)}` : "";
   return `---
 ...
 ---
@@ -112,14 +112,13 @@ export { type BlogContext, buildBlogPrompt, assembleFrontmatter, buildBackLink, 
 📋 New test cases were added to `blog-series.test.ts`:
 
 ### `buildBackLink` suite (3 tests)
-- ✅ Builds the correct wikilink from filename and title
+- ✅ Builds the correct wikilink from filename using `⏮` as display text
 - ✅ Strips `.md` extension from filename
 - ✅ Uses the series id as the path prefix
 
-### `assembleFrontmatter` additions (2 tests)
-- ✅ Omits back link when no previous post is provided
-- ✅ Appends the wikilink back link on the nav line when a previous post is provided
-- ✅ Places the back link on the same line as the series breadcrumb
+### `assembleFrontmatter` additions (consolidated)
+- ✅ Deterministic frontmatter test now also asserts no `⏮` when no previous post
+- ✅ Combined test: back link appears on the nav line with the correct wikilink when a previous post is provided
 
 ## ✅ Verification
 

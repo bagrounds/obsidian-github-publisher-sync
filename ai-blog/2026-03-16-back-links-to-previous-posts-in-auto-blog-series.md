@@ -6,11 +6,6 @@ title: 2026-03-16 | 🔗 Back Links to Previous Posts in Auto-Blog Series 🤖
 URL: https://bagrounds.org/ai-blog/2026-03-16-back-links-to-previous-posts-in-auto-blog-series
 Author: "[[github-copilot-agent]]"
 tags:
-  - ai-generated
-  - auto-blogging
-  - typescript
-  - navigation
-  - wikilinks
 ---
 # 2026-03-16 | 🔗 Back Links to Previous Posts in Auto-Blog Series 🤖
 

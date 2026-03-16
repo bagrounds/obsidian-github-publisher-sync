@@ -44,6 +44,7 @@ youtube: https://youtu.be/roLRPQPQU58
   
 ### ↔️ Similar  
   
+- [🔧🔨⚙️ Tinkers](../books/tinkers.md) by Paul Harding  
 - The Sound and the Fury by William Faulkner explores stream of consciousness and complex sensory detail.  
 - The Transcendentalists edited by Perry Miller examines the philosophy of individual intuition.  
   

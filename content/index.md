@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-03-15T22:41:40-07:00
+updated: 2026-03-16T13:17:39-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -13,32 +13,32 @@ updated: 2026-03-15T22:41:40-07:00
 ❔ What do 🫵 _you_ 🤔 think?  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (486)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (487)  
+- [2026-03-16](./reflections/2026-03-16.md)  
 - [2026-03-15 | 🕵️ Fugitive 📊 Recap 🏆 Turing ⚖️ Antitrust ✍️ Pulitzer 📚🐔🤖📰📺](./reflections/2026-03-15.md)  
 - [2026-03-14 | 🧩 Porting 🐔 Chickie 🎯 Strategy B 🕵️ SPA 🌬️ Quiet 🚀 Scaling 🤖](./reflections/2026-03-14.md)  
 - [2026-03-13 | 🤖💰💡 Power, Leverage, Testing, Rhythm, Experiment 📚🤖🐔📺](./reflections/2026-03-13.md)  
-- [2026-03-12 | ⚡🔮 Power 🐔 Rooster 🤖 Automated 📝 Blogging 📚](./reflections/2026-03-12.md)  
   
   
-## [🤖 AI Blog](./ai-blog/index.md) (21)  
+## [🤖 AI Blog](./ai-blog/index.md) (22)  
+- [2026-03-16 | 🗑️ Deleting IDEAS.md — Simplifying the Auto-Blog Series Structure 🤖](./ai-blog/2026-03-16-deleting-ideas-md-simplifying-the-auto-blog-series.md)  
 - [2026-03-14 | 🕵️ The SPA That Cried 404 - Why Bluesky Ate Our Experiment Records 🤖](./ai-blog/2026-03-14-the-spa-that-cried-404.md)  
 - [2026-03-14 | 🏆 Strategy B Wins — AB Test Results 🤖](./ai-blog/2026-03-14-strategy-b-wins-ab-test-results.md)  
 - [2026-03-14 | 🃏 Porting the Reaction System - Reviving a Two-Year-Old Branch 🤖](./ai-blog/2026-03-14-porting-the-reaction-system.md)  
-- [2026-03-14 | 🐔 Giving Chickie Loo a Voice - Priority User Configuration 🤖](./ai-blog/2026-03-14-chickie-loo-priority-user.md)  
   
   
-## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (6)  
-- [🤖 Auto Blog Zero — IDEAS](./auto-blog-zero/IDEAS.md)  
+## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (5)  
 - [🤖 Auto Blog Zero — AGENTS.md](./auto-blog-zero/AGENTS.md)  
 - [2026-03-15 | 🤖📊 Weekly Recap 🤖](./auto-blog-zero/2026-03-15-weekly-recap.md)  
 - [2026-03-14 | 🤖 🌟 Scaling the Lever — Beyond the Daily Post 🌟 🤖](./auto-blog-zero/2026-03-14-scaling-the-lever-beyond-the-daily-post.md)  
+- [2026-03-13 | 🤖 📈 Blogging, Leverage, and the Art of Prediction in an AI-Driven World 🤖](./auto-blog-zero/2026-03-13-blogging-leverage-and-the-art-of-prediction-in-an-ai-driven-world.md)  
   
   
-## [🐔 Chickie Loo](./chickie-loo/index.md) (6)  
-- [🐔 Chickie Loo — IDEAS](./chickie-loo/IDEAS.md)  
+## [🐔 Chickie Loo](./chickie-loo/index.md) (5)  
 - [🐔 Chickie Loo — AGENTS.md](./chickie-loo/AGENTS.md)  
 - [2026-03-15 | 🐔📊 Weekly Recap 🐔](./chickie-loo/2026-03-15-weekly-recap.md)  
 - [2026-03-14 | 🐔 🌬️ The Quiet After the Storm — Moving Forward Together 🐔](./chickie-loo/2026-03-14-the-quiet-after-the-storm-moving-forward-together.md)  
+- [2026-03-13 | 🐔 🌅 Finding the Rhythm in the Chaos 🐔](./chickie-loo/2026-03-13-finding-the-rhythm-in-the-chaos.md)  
   
   
 ## [🧰 Tools](./tools/index.md) (1)  
@@ -46,6 +46,9 @@ updated: 2026-03-15T22:41:40-07:00
   
   
 ## [📚 Books](./books/index.md) (953)  
+- [📱🧠 The Shallows: What the Internet Is Doing to Our Brains](./books/the-shallows-what-the-internet-is-doing-to-our-brains.md)  
+- [🕵️ Fugitive Telemetry](./books/fugitive-telemetry.md)  
+- [🌐🤖🚀 Network Effect](./books/network-effect.md)  
 - [🔧🔨⚙️ Tinkers](./books/tinkers.md)  
 - [🐣🌱👨‍🏫💻 Haskell Programming from First Principles](./books/haskell-programming-from-first-principles.md)  
 - [🧠💻🤖 Deep Learning](./books/deep-learning.md)  
@@ -53,22 +56,19 @@ updated: 2026-03-15T22:41:40-07:00
 - [🧱⚔️🚶‍♀️ Border Wars: Inside Trump's Assault on Immigration](./books/border-wars-inside-trumps-assault-on-immigration.md)  
 - [💺🚪💡🤔 The Design of Everyday Things](./books/the-design-of-everyday-things.md)  
 - [📊🤥 How to Lie with Statistics](./books/how-to-lie-with-statistics.md)  
-- [📱⬇️🧘 Digital Minimalism: Choosing a Focused Life in a Noisy World](./books/digital-minimalism-choosing-a-focused-life-in-a-noisy-world.md)  
-- [🌲 Walden](./books/walden.md)  
-- [🪢🌾 Braiding Sweetgrass: Indigenous Wisdom, Scientific Knowledge, and the Teachings of Plants](./books/braiding-sweetgrass.md)  
   
   
-## [📺 Videos](./videos/index.md) (688)  
+## [📺 Videos](./videos/index.md) (689)  
+- [🧠✨💫 The Development of Imagination](./videos/the-development-of-imagination.md)  
 - [✍️🤯📝 How to Write Freakishly Well - Paul Harding](./videos/how-to-write-freakishly-well-paul-harding.md)  
+- [💭🧠💥 George Saunders Says Breaking These 3 Delusions Can Save You | The Interview](./videos/george-saunders-says-breaking-these-3-delusions-can-save-you-the-interview.md)  
 - [⚖️🏛️🗣️ Antitrust and The Rule of Law: A Conversation with Former FTC Chair Lina Khan](./videos/antitrust-and-the-rule-of-law-a-conversation-with-former-ftc-chair-lina-khan.md)  
 - [🏆💡🤔 Turing Award Winner On Thinking Clearly, Paxos vs Raft, Working With Dijkstra | Leslie Lamport](./videos/turing-award-winner-on-thinking-clearly-paxos-vs-raft-working-with-dijkstra-leslie-lamport.md)  
 - [👋👩‍💻🤖🚀 She quit, picked up AI, and shipped in 30 days what her team planned for Q3.](./videos/she-quit-picked-up-ai-and-shipped-in-30-days-what-her-team-planned-for-q3.md)  
-- [💭🧠💥 George Saunders Says Breaking These 3 Delusions Can Save You | The Interview](./videos/george-saunders-says-breaking-these-3-delusions-can-save-you-the-interview.md)  
 - [🪖❓🇺🇸 Brooks and Capehart on Trump's mixed signals on the Iran war](./videos/brooks-and-capehart-on-trumps-mixed-signals-on-the-iran-war.md)  
 - [📦⬅️🌯⬅️🧱 Monadic Parsers at the Input Boundary](./videos/monadic-parsers-at-the-input-boundary.md)  
 - [🧠🚀💡✨ Inside Pathway's Post-Transformer Architecture Designed for Memory and On-the-Fly Learning](./videos/inside-pathways-post-transformer-architecture-designed-for-memory-and-on-the-fly-learning.md)  
 - [🚨👮‍♂️🤫🇺🇸👥⚔️😠 ICE Agents EVERYWHERE Are Secretly REVOLTING Against TRUMP🚨](./videos/ice-agents-everywhere-are-secretly-revolting-against-trump.md)  
-- [💰🤑🤖💡🚀💲 $0.10/Month Runs My Entire AI Life. I'll Show You How.](./videos/0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  

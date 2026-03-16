@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-03-15T22:41:40-07:00
+updated: 2026-03-16T13:17:39-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (688)  
+# 📺 Videos (689)  
 - [💰🤑🤖💡🚀💲 $0.10/Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
@@ -497,6 +497,7 @@ updated: 2026-03-15T22:41:40-07:00
 - [❤️🧠👨‍👩‍👧‍👦 The crucial emotional skill most adults were never taught | Becky Kennedy](./the-crucial-emotional-skill-most-adults-were-never-taught-becky-kennedy.md)  
 - [📜🇺🇸🗽➡️ The Declaration of Independence | Journey to American Democracy](./the-declaration-of-independence-journey-to-american-democracy.md)  
 - [🏛️📉🇺🇸 The Democracy Crisis Underneath America’s Affordability Crisis | Zohran Mamdani](./the-democracy-crisis-underneath-americas-affordability-crisis-zohran-mamdani.md)  
+- [🧠✨💫 The Development of Imagination](./the-development-of-imagination.md)  
 - [🔋📈🧘🗣️ The Energy Project | Tony Schwartz | Talks at Google](./the-energy-project-tony-schwartz-talks-at-google.md)  
 - [✏️🗂️⏱️✨ The Excalidraw Obsidian Showcase 57 key features in just 17 minutes](../the-excalidraw-obsidian-showcase-57-key-features-in-just-17-minutes.md)  
 - [The far-right Proud Boys’ chilling message for the world | 60 Minutes Australia](./the-far-right-proud-boys-chilling-message-for-the-world-60-minutes-australia.md)  

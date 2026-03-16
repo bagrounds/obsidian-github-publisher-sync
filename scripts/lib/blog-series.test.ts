@@ -221,7 +221,7 @@ describe("assembleFrontmatter", () => {
   it("appends wikilink back to previous post when provided", () => {
     const prev = { filename: "2026-03-11-previous-post.md", date: "2026-03-11", title: "Previous Post Title", body: "" };
     const fm = assembleFrontmatter(series, "2026-03-12", "My Great Post", "my-great-post", prev);
-    assert.ok(fm.includes("⬅️ [[auto-blog-zero/2026-03-11-previous-post|Previous Post Title]]"));
+    assert.ok(fm.includes("[[auto-blog-zero/2026-03-11-previous-post|⏮]]"));
   });
 
   it("places the back link on the same nav line as the series breadcrumb", () => {

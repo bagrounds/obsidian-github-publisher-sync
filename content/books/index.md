@@ -5,10 +5,10 @@ aliases:
 share: true
 URL: https://bagrounds.org/books
 backlinks: false
-updated: 2026-03-15T21:45:42-07:00
+updated: 2026-03-15T22:41:40-07:00
 ---
 [Home](../index.md)  
-# 📚 Books (952)  
+# 📚 Books (953)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [💻0️⃣ Source Code: My Beginnings](./source-code-my-beginnings.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)  
@@ -893,6 +893,7 @@ updated: 2026-03-15T21:45:42-07:00
 - [🧠🔎 Thought and Knowledge: An Introduction to Critical Thinking](./thought-and-knowledge-an-introduction-to-critical-thinking.md)  
 - [💭🦠 Thought Contagion: How Belief Spreads Through Society](./thought-contagion.md)  
 - [⏱️🍎 Time Restricted Eating: A Look into the Lifestyle](./time-restricted-eating-a-look-into-the-lifestyle.md)  
+- [🔧🔨⚙️ Tinkers](./tinkers.md)  
 - [🧪🎯🦋 Tiny Experiments: How to Live Freely in a Goal-Obsessed World](./tiny-experiments-how-to-live-freely-in-a-goal-obsessed-world.md)  
 - [🤏♻️ Tiny Habits: The Small Changes That Change Everything](./tiny-habits.md)  
 - [🇺🇸⛓️‍💥📜🐘 To Make Men Free: A History of the Republican Party](./to-make-men-free-a-history-of-the-republican-party.md)  

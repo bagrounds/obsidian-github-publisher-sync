@@ -284,27 +284,39 @@ describe("todayPacific", () => {
 describe("filterCommentsAfterLastPost", () => {
   type C = { author: string; body: string; createdAt: string; isPriority: boolean };
   type P = { filename: string; date: string; title: string; body: string };
-  const makeComment = (date: string): C => ({ author: "test", body: "hi", createdAt: date, isPriority: false });
+  const makeComment = (iso: string): C => ({ author: "test", body: "hi", createdAt: iso, isPriority: false });
   const makePost = (date: string): P => ({ filename: `${date}-post.md`, date, title: "Post", body: "" });
 
   it("returns all comments when no previous posts", () => {
-    const comments = [makeComment("2026-03-10"), makeComment("2026-03-12")];
-    assert.equal(filterCommentsAfterLastPost(comments, []).length, 2);
+    const comments = [makeComment("2026-03-10T12:00:00Z"), makeComment("2026-03-12T14:00:00Z")];
+    assert.equal(filterCommentsAfterLastPost(comments, [], "16:00").length, 2);
   });
 
-  it("filters out comments older than the most recent post", () => {
-    const comments = [makeComment("2026-03-10"), makeComment("2026-03-14")];
-    const filtered = filterCommentsAfterLastPost(comments, [makePost("2026-03-13")]);
+  it("filters out comments older than the exact post time", () => {
+    const comments = [makeComment("2026-03-13T15:45:00Z"), makeComment("2026-03-13T16:30:00Z")];
+    const filtered = filterCommentsAfterLastPost(comments, [makePost("2026-03-13")], "16:00");
     assert.equal(filtered.length, 1);
-    assert.equal(filtered[0]!.createdAt, "2026-03-14");
+    assert.equal(filtered[0]!.createdAt, "2026-03-13T16:30:00Z");
   });
 
-  it("includes comments on the same day as the most recent post", () => {
-    const comments = [makeComment("2026-03-12"), makeComment("2026-03-13"), makeComment("2026-03-14")];
-    const filtered = filterCommentsAfterLastPost(comments, [makePost("2026-03-13")]);
+  it("excludes comments written minutes before the scheduled post time", () => {
+    const comments = [makeComment("2026-03-14T15:45:00Z"), makeComment("2026-03-14T16:05:00Z")];
+    const filtered = filterCommentsAfterLastPost(comments, [makePost("2026-03-14")], "16:00");
+    assert.equal(filtered.length, 1);
+    assert.equal(filtered[0]!.createdAt, "2026-03-14T16:05:00Z");
+  });
+
+  it("uses the correct post time for different series", () => {
+    const comments = [makeComment("2026-03-14T14:50:00Z"), makeComment("2026-03-14T15:10:00Z")];
+    const filtered = filterCommentsAfterLastPost(comments, [makePost("2026-03-14")], "15:00");
+    assert.equal(filtered.length, 1);
+    assert.equal(filtered[0]!.createdAt, "2026-03-14T15:10:00Z");
+  });
+
+  it("includes all comments from days after the last post", () => {
+    const comments = [makeComment("2026-03-15T08:00:00Z"), makeComment("2026-03-16T10:00:00Z")];
+    const filtered = filterCommentsAfterLastPost(comments, [makePost("2026-03-14")], "16:00");
     assert.equal(filtered.length, 2);
-    assert.ok(filtered.some((c) => c.createdAt === "2026-03-13"));
-    assert.ok(filtered.some((c) => c.createdAt === "2026-03-14"));
   });
 });
 

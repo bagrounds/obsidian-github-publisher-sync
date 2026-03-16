@@ -94,10 +94,12 @@ ${comments.length > 0
 export const filterCommentsAfterLastPost = (
   comments: readonly BlogComment[],
   previousPosts: readonly BlogPost[],
+  postTimeUtc: string,
 ): readonly BlogComment[] => {
   if (previousPosts.length === 0) return comments;
   const lastPostDate = previousPosts[0]!.date;
-  return comments.filter((c) => c.createdAt >= lastPostDate);
+  const cutoff = `${lastPostDate}T${postTimeUtc}:00Z`;
+  return comments.filter((c) => c.createdAt >= cutoff);
 };
 
 export const buildBackLink = (series: BlogSeriesConfig, previousPost: BlogPost): string =>

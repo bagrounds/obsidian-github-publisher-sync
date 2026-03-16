@@ -104,11 +104,16 @@ const generate = async (): Promise<void> => {
   log({ event: "comments_fetched", total: comments.length, priority: priorityCount, priorityUser });
 
   const context = buildBlogContext(config.series, repoRoot, comments, today);
+  const commentCutoff = context.previousPosts.length > 0
+    ? `${context.previousPosts[0]!.date}T${series.postTimeUtc}:00Z`
+    : undefined;
   log({
     event: "context_built",
     previousPostCount: context.previousPosts.length,
     newestPost: context.previousPosts[0]?.filename,
     newestPostDate: context.previousPosts[0]?.date,
+    commentCutoff,
+    rawCommentCount: comments.length,
     filteredCommentCount: context.comments.length,
     hasAgentsMd: context.agentsMd.length > 0,
   });
@@ -137,6 +142,8 @@ const generate = async (): Promise<void> => {
   log({ event: "post_written", filename, title: parsed.title, contentLength: parsed.body.length, slug });
   if (previousPost) {
     updatePreviousPost(seriesDir, previousPost, series, filename);
+    const metadataPath = path.join(seriesDir, ".last-generate-metadata.json");
+    fs.writeFileSync(metadataPath, JSON.stringify({ previousPostFilename: previousPost.filename, newPostFilename: filename }), "utf-8");
     log({ event: "previous_post_updated", previousPost: previousPost.filename, forwardLinkTarget: filename });
   } else {
     log({ event: "no_previous_post", reason: "first post in series" });

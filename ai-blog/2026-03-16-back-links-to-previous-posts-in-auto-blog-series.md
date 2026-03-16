@@ -138,25 +138,31 @@ export const appendModelSignature = (body: string, model: string): string =>
 
 📐 This produces a proper visual gap before the signature in the rendered post.
 
-### 🗓️ Comment Filtering — Only Show New Comments
+### 🗓️ Comment Filtering — Exact UTC Time Cutoff
 
 🔁 A recurring problem: the AI was re-addressing questions that had already been answered in previous posts, because older comments were still included in the prompt.
 
-🔧 A new `filterCommentsAfterLastPost` pure function was added to `blog-prompt.ts`:
+🔧 The root cause was twofold: comment timestamps were truncated to date-only, and the cutoff used date-level comparison. A comment written 15 minutes before the scheduled post time would still pass the filter because it shared the same date.
+
+📐 The fix uses exact UTC timestamps throughout the pipeline:
+1. 🕐 `BlogComment.createdAt` now retains the full ISO timestamp from the GitHub API
+2. ⏰ Each `BlogSeriesConfig` declares its `postTimeUtc` (auto-blog-zero: `16:00`, chickie-loo: `15:00`)
+3. 🔪 `filterCommentsAfterLastPost` constructs the exact cutoff as `{lastPostDate}T{postTimeUtc}:00Z` and compares against full ISO timestamps
 
 ```typescript
 export const filterCommentsAfterLastPost = (
   comments: readonly BlogComment[],
   previousPosts: readonly BlogPost[],
+  postTimeUtc: string,
 ): readonly BlogComment[] => {
   if (previousPosts.length === 0) return comments;
   const lastPostDate = previousPosts[0]!.date;
-  return comments.filter((c) => c.createdAt >= lastPostDate);
+  const cutoff = `${lastPostDate}T${postTimeUtc}:00Z`;
+  return comments.filter((c) => c.createdAt >= cutoff);
 };
 ```
 
-📅 It keeps only comments from on or after the date of the most recent post (Pacific time, since that is when the GHA runs at 08:00 PT / 16:00 UTC).
-🔗 `buildBlogContext` in `blog-series.ts` now applies this filter automatically — the AI only ever sees comments that arrived since the last post.
+📅 `buildBlogContext` passes `series.postTimeUtc` automatically — the AI only ever sees comments that arrived after the previous post was published.
 
 ### ⏭️ Forward Links on Previous Posts
 
@@ -189,8 +195,8 @@ export const updatePreviousPost = (
 };
 ```
 
-📄 `generate-blog-post.ts` calls `updatePreviousPost` right after writing the new file.
-🔄 Both GHA workflows were updated to also sync the updated previous post to Obsidian.
+📄 `generate-blog-post.ts` calls `updatePreviousPost` right after writing the new file and writes a `.last-generate-metadata.json` file recording the previous and new post filenames.
+🔄 Both GHA workflows read the metadata file to reliably identify the previous post when syncing back to the vault.
 
 ### 🐛 Bug Fix — Reading Posts from Obsidian Vault
 
@@ -207,9 +213,11 @@ export const updatePreviousPost = (
 
 🔍 Added detailed structured logging throughout the generation pipeline so GHA logs show:
 - 📋 The newest post filename and date found in the series
-- 🔢 The filtered comment count (after removing stale comments)
+- ⏰ The exact UTC timestamp cutoff for comment filtering
+- 🔢 Raw and filtered comment counts
 - ⏮️ Which post the back link targets
-- ⏭️ Which post receives the forward link
+- ⏭️ Which post receives the forward link (with nav-line-found and already-has-forward diagnostics)
+- 📝 Metadata file written for the sync step to use
 
 ### 🚫 AGENTS.md — No Links
 

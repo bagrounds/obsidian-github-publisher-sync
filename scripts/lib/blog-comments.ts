@@ -26,7 +26,7 @@ interface GqlSearchResult {
 const toComment = (priorityUser: string | undefined) => (c: GqlDiscussionComment): BlogComment => ({
   author: c.author?.login ?? "unknown",
   body: c.body,
-  createdAt: c.createdAt.split("T")[0] as string,
+  createdAt: c.createdAt,
   isPriority: priorityUser !== undefined && c.author?.login === priorityUser,
 });
 

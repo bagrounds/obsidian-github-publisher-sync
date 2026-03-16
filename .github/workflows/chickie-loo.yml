@@ -85,12 +85,23 @@ jobs:
           OBSIDIAN_VAULT_NAME: ${{ secrets.OBSIDIAN_VAULT_NAME }}
           OBSIDIAN_VAULT_CACHE_DIR: /tmp/obsidian-vault-cache
         run: |
-          POST=$(ls -1 chickie-loo/$(date +%Y-%m-%d)*.md 2>/dev/null | head -1)
+          SERIES="chickie-loo"
+          POST=$(ls -1 ${SERIES}/$(date +%Y-%m-%d)*.md 2>/dev/null | head -1)
           if [ -n "$POST" ]; then
+            echo "📝 Syncing new post: $POST"
             npx tsx scripts/sync-file-to-obsidian.ts "$POST" "$POST"
-            PREV=$(ls -1 chickie-loo/[0-9]*.md 2>/dev/null | sort -r | sed -n '2p')
-            if [ -n "$PREV" ]; then
-              npx tsx scripts/sync-file-to-obsidian.ts "$PREV" "$PREV"
+            META="${SERIES}/.last-generate-metadata.json"
+            if [ -f "$META" ]; then
+              PREV_FILE=$(node -e "console.log(JSON.parse(require('fs').readFileSync('$META','utf-8')).previousPostFilename)")
+              PREV="${SERIES}/${PREV_FILE}"
+              echo "📝 Syncing updated previous post: $PREV"
+              if [ -f "$PREV" ]; then
+                npx tsx scripts/sync-file-to-obsidian.ts "$PREV" "$PREV"
+              else
+                echo "⚠️ Previous post file not found: $PREV"
+              fi
+            else
+              echo "ℹ️ No metadata file — first post in series"
             fi
           else
             echo "No new post generated today"

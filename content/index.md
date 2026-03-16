@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-03-15T15:59:11-07:00
+updated: 2026-03-15T21:45:42-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -58,17 +58,17 @@ updated: 2026-03-15T15:59:11-07:00
 - [👨‍🏫🎉👍✨ Learn You a Haskell for Great Good!](./books/learn-you-a-haskell-for-great-good.md)  
   
   
-## [📺 Videos](./videos/index.md) (687)  
+## [📺 Videos](./videos/index.md) (688)  
+- [✍️🤯📝 How to Write Freakishly Well - Paul Harding](./videos/how-to-write-freakishly-well-paul-harding.md)  
+- [🏆💡🤔 Turing Award Winner On Thinking Clearly, Paxos vs Raft, Working With Dijkstra | Leslie Lamport](./videos/turing-award-winner-on-thinking-clearly-paxos-vs-raft-working-with-dijkstra-leslie-lamport.md)  
+- [👋👩‍💻🤖🚀 She quit, picked up AI, and shipped in 30 days what her team planned for Q3.](./videos/she-quit-picked-up-ai-and-shipped-in-30-days-what-her-team-planned-for-q3.md)  
 - [💭🧠💥 George Saunders Says Breaking These 3 Delusions Can Save You | The Interview](./videos/george-saunders-says-breaking-these-3-delusions-can-save-you-the-interview.md)  
 - [⚖️🏛️🗣️ Antitrust and The Rule of Law: A Conversation with Former FTC Chair Lina Khan](./videos/antitrust-and-the-rule-of-law-a-conversation-with-former-ftc-chair-lina-khan.md)  
-- [🏆💡🤔 Turing Award Winner On Thinking Clearly, Paxos vs Raft, Working With Dijkstra | Leslie Lamport](./videos/turing-award-winner-on-thinking-clearly-paxos-vs-raft-working-with-dijkstra-leslie-lamport.md)  
 - [🪖❓🇺🇸 Brooks and Capehart on Trump's mixed signals on the Iran war](./videos/brooks-and-capehart-on-trumps-mixed-signals-on-the-iran-war.md)  
-- [👋👩‍💻🤖🚀 She quit, picked up AI, and shipped in 30 days what her team planned for Q3.](./videos/she-quit-picked-up-ai-and-shipped-in-30-days-what-her-team-planned-for-q3.md)  
 - [📦⬅️🌯⬅️🧱 Monadic Parsers at the Input Boundary](./videos/monadic-parsers-at-the-input-boundary.md)  
 - [🧠🚀💡✨ Inside Pathway's Post-Transformer Architecture Designed for Memory and On-the-Fly Learning](./videos/inside-pathways-post-transformer-architecture-designed-for-memory-and-on-the-fly-learning.md)  
 - [🚨👮‍♂️🤫🇺🇸👥⚔️😠 ICE Agents EVERYWHERE Are Secretly REVOLTING Against TRUMP🚨](./videos/ice-agents-everywhere-are-secretly-revolting-against-trump.md)  
 - [💰🤑🤖💡🚀💲 $0.10/Month Runs My Entire AI Life. I'll Show You How.](./videos/0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
-- [🤖💬🧑 Every Claude Code Concept Explained for Normal People](./videos/every-claude-code-concept-explained-for-normal-people.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  

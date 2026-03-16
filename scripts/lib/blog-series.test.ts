@@ -17,6 +17,7 @@ import {
   todayPacific,
   assembleFrontmatter,
 } from "./blog-series.ts";
+import { stripRedundantFirstHeading } from "./blog-series.ts";
 
 describe("readSeriesPosts", () => {
   it("returns empty array for non-existent directory", () => {
@@ -113,55 +114,61 @@ describe("buildBlogPrompt", () => {
   const series = BLOG_SERIES.get("auto-blog-zero")!;
 
   it("uses AGENTS.md as system prompt", () => {
-    const prompt = buildBlogPrompt({ series, agentsMd: "You are a test blog.", previousPosts: [], comments: [], today: "2026-03-12" });
+    const prompt = buildBlogPrompt({ series, agentsMd: "You are a test blog.", previousPosts: [], comments: [], today: "2026-03-12", bookRecommendationsPrompt: "" });
     assert.equal(prompt.system, "You are a test blog.");
   });
 
   it("falls back when AGENTS.md is empty", () => {
-    const prompt = buildBlogPrompt({ series, agentsMd: "", previousPosts: [], comments: [], today: "2026-03-12" });
+    const prompt = buildBlogPrompt({ series, agentsMd: "", previousPosts: [], comments: [], today: "2026-03-12", bookRecommendationsPrompt: "" });
     assert.ok(prompt.system.includes("Auto Blog Zero"));
   });
 
   it("includes previous posts and comments in user prompt", () => {
     const posts = [{ filename: "2026-03-10-test.md", date: "2026-03-10", title: "Test Post", body: "Body text" }];
     const comments = [{ author: "bagrounds", body: "Write about testing", createdAt: "2026-03-11", isPriority: true }];
-    const prompt = buildBlogPrompt({ series, agentsMd: "test", previousPosts: posts, comments, today: "2026-03-12" });
+    const prompt = buildBlogPrompt({ series, agentsMd: "test", previousPosts: posts, comments, today: "2026-03-12", bookRecommendationsPrompt: "" });
     assert.ok(prompt.user.includes("Test Post"));
     assert.ok(prompt.user.includes("PRIORITY"));
     assert.ok(prompt.user.includes("Write about testing"));
   });
 
   it("tells AI to generate only body, not frontmatter", () => {
-    const prompt = buildBlogPrompt({ series, agentsMd: "test", previousPosts: [], comments: [], today: "2026-03-12" });
+    const prompt = buildBlogPrompt({ series, agentsMd: "test", previousPosts: [], comments: [], today: "2026-03-12", bookRecommendationsPrompt: "" });
     assert.ok(prompt.user.includes("Generate ONLY the blog post body"));
     assert.ok(prompt.user.includes("Do NOT generate frontmatter"));
   });
 
   it("instructs weekly recap on Sundays", () => {
-    const prompt = buildBlogPrompt({ series, agentsMd: "test", previousPosts: [], comments: [], today: "2026-03-15" });
+    const prompt = buildBlogPrompt({ series, agentsMd: "test", previousPosts: [], comments: [], today: "2026-03-15", bookRecommendationsPrompt: "" });
     assert.ok(prompt.user.includes("Weekly Recap"));
   });
 
   it("instructs monthly recap on last day of month", () => {
-    const prompt = buildBlogPrompt({ series, agentsMd: "test", previousPosts: [], comments: [], today: "2026-04-30" });
+    const prompt = buildBlogPrompt({ series, agentsMd: "test", previousPosts: [], comments: [], today: "2026-04-30", bookRecommendationsPrompt: "" });
     assert.ok(prompt.user.includes("Monthly Recap"));
   });
 
   it("instructs quarterly recap on last day of quarter", () => {
-    const prompt = buildBlogPrompt({ series, agentsMd: "test", previousPosts: [], comments: [], today: "2026-03-31" });
+    const prompt = buildBlogPrompt({ series, agentsMd: "test", previousPosts: [], comments: [], today: "2026-03-31", bookRecommendationsPrompt: "" });
     assert.ok(prompt.user.includes("Quarterly Recap"));
   });
 
   it("notes sparse comment traffic when no comments", () => {
-    const prompt = buildBlogPrompt({ series, agentsMd: "test", previousPosts: [], comments: [], today: "2026-03-12" });
+    const prompt = buildBlogPrompt({ series, agentsMd: "test", previousPosts: [], comments: [], today: "2026-03-12", bookRecommendationsPrompt: "" });
     assert.ok(prompt.user.includes("comments are very rare"));
   });
 
   it("uses wikilinks format for internal references", () => {
     const posts = [{ filename: "2026-03-10-test.md", date: "2026-03-10", title: "Test Post", body: "Body text" }];
-    const prompt = buildBlogPrompt({ series, agentsMd: "test", previousPosts: posts, comments: [], today: "2026-03-12" });
+    const prompt = buildBlogPrompt({ series, agentsMd: "test", previousPosts: posts, comments: [], today: "2026-03-12", bookRecommendationsPrompt: "" });
     assert.ok(prompt.user.includes("wikilinks"));
     assert.ok(prompt.user.includes("[[auto-blog-zero/"));
+  });
+
+  it("includes book recommendations when catalog is provided", () => {
+    const bookPrompt = "\n\n## 📚 Book Recommendations Instructions\nPick 3-5 books...";
+    const prompt = buildBlogPrompt({ series, agentsMd: "test", previousPosts: [], comments: [], today: "2026-03-12", bookRecommendationsPrompt: bookPrompt });
+    assert.ok(prompt.user.includes("Book Recommendations Instructions"));
   });
 });
 
@@ -169,7 +176,7 @@ describe("assembleFrontmatter", () => {
   const series = BLOG_SERIES.get("auto-blog-zero")!;
 
   it("generates deterministic frontmatter with title and slug", () => {
-    const fm = assembleFrontmatter(series, "2026-03-12", "My Great Post", "my-great-post");
+    const fm = assembleFrontmatter(series, "2026-03-12", "My Great Post", "my-great-post", series.navLink);
     assert.ok(fm.includes("share: true"));
     assert.ok(fm.includes("2026-03-12 | 🤖 My Great Post 🤖"));
     assert.ok(fm.includes("URL: https://bagrounds.org/auto-blog-zero/2026-03-12-my-great-post"));
@@ -179,14 +186,20 @@ describe("assembleFrontmatter", () => {
   });
 
   it("includes correct nav link for auto-blog-zero", () => {
-    const fm = assembleFrontmatter(series, "2026-03-12", "My Great Post", "my-great-post");
+    const fm = assembleFrontmatter(series, "2026-03-12", "My Great Post", "my-great-post", series.navLink);
     assert.ok(fm.includes("[[index|Home]] > [[auto-blog-zero/index|🤖 Auto Blog Zero]]"));
   });
 
   it("includes correct nav link for chickie-loo", () => {
     const chickieSeries = BLOG_SERIES.get("chickie-loo")!;
-    const fm = assembleFrontmatter(chickieSeries, "2026-03-12", "My Great Post", "my-great-post");
+    const fm = assembleFrontmatter(chickieSeries, "2026-03-12", "My Great Post", "my-great-post", chickieSeries.navLink);
     assert.ok(fm.includes("[[index|Home]] > [[chickie-loo/index|🐔 Chickie Loo]]"));
+  });
+
+  it("includes custom nav line with prev link", () => {
+    const navLine = "[[index|Home]] > [[auto-blog-zero/index|🤖 Auto Blog Zero]] | [[auto-blog-zero/2026-03-11-prev|⏮️]]";
+    const fm = assembleFrontmatter(series, "2026-03-12", "My Great Post", "my-great-post", navLine);
+    assert.ok(fm.includes("[[auto-blog-zero/2026-03-11-prev|⏮️]]"));
   });
 });
 
@@ -247,5 +260,38 @@ describe("appendModelSignature", () => {
 describe("todayPacific", () => {
   it("returns YYYY-MM-DD format", () => {
     assert.match(todayPacific(), /^\d{4}-\d{2}-\d{2}$/);
+  });
+});
+
+describe("stripRedundantFirstHeading", () => {
+  it("strips H2 that matches the extracted title", () => {
+    const body = "## My Great Post\n\n## Real Content\n\nBody text here.";
+    const result = stripRedundantFirstHeading(body, "My Great Post");
+    assert.ok(result.startsWith("## Real Content"));
+    assert.ok(!result.includes("## My Great Post"));
+  });
+
+  it("strips H1 that matches the extracted title", () => {
+    const body = "# My Great Post\n\n## Real Content\n\nBody text here.";
+    const result = stripRedundantFirstHeading(body, "My Great Post");
+    assert.ok(result.startsWith("## Real Content"));
+  });
+
+  it("preserves body when first heading differs from title", () => {
+    const body = "## Hello World\n\n## More Content\n\nBody text here.";
+    const result = stripRedundantFirstHeading(body, "Different Title");
+    assert.equal(result, body);
+  });
+
+  it("preserves body when no heading found", () => {
+    const body = "Just some text without headings.";
+    const result = stripRedundantFirstHeading(body, "Some Title");
+    assert.equal(result, body);
+  });
+
+  it("strips heading with trailing whitespace", () => {
+    const body = "## My Great Post  \n\n## Content\n\nBody.";
+    const result = stripRedundantFirstHeading(body, "My Great Post");
+    assert.ok(result.startsWith("## Content"));
   });
 });

@@ -52,15 +52,15 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: npx tsx scripts/generate-blog-post.ts --series auto-blog-zero
 
-      - name: Sync Post to Obsidian Vault
+      - name: Sync Posts to Obsidian Vault
         env:
           OBSIDIAN_AUTH_TOKEN: ${{ secrets.OBSIDIAN_AUTH_TOKEN }}
           OBSIDIAN_VAULT_NAME: ${{ secrets.OBSIDIAN_VAULT_NAME }}
           OBSIDIAN_VAULT_CACHE_DIR: /tmp/obsidian-vault-cache
         run: |
-          POST=$(ls -1 auto-blog-zero/$(date +%Y-%m-%d)*.md 2>/dev/null | head -1)
-          if [ -n "$POST" ]; then
-            npx tsx scripts/sync-file-to-obsidian.ts "$POST" "$POST"
-          else
-            echo "No new post generated today"
-          fi
+          for POST in auto-blog-zero/$(date +%Y-%m-%d)*.md; do
+            [ -f "$POST" ] && npx tsx scripts/sync-file-to-obsidian.ts "$POST" "$POST"
+          done
+          for PREV in auto-blog-zero/*.md; do
+            [ -f "$PREV" ] && [[ ! "$PREV" =~ $(date +%Y-%m-%d) ]] && [[ "$PREV" != *AGENTS.md ]] && npx tsx scripts/sync-file-to-obsidian.ts "$PREV" "$PREV"
+          done

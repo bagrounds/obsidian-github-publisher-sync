@@ -11,6 +11,10 @@ import {
   fetchAllSeriesComments,
   todayPacific,
   appendModelSignature,
+  findMostRecentPost,
+  buildNavLine,
+  updatePreviousPost,
+  stripRedundantFirstHeading,
 } from "./lib/blog-series.ts";
 
 const DEFAULT_BLOG_MODEL = "gemini-3.1-flash-lite-preview";
@@ -120,13 +124,21 @@ const generate = async (): Promise<void> => {
   }
 
   const slug = generateSlug(parsed.title);
-  const frontmatter = assembleFrontmatter(series, today, parsed.title, slug);
-  const bodyWithSignature = appendModelSignature(parsed.body, config.model);
+  const previousFilename = findMostRecentPost(repoRoot, series.id);
+  const navLine = buildNavLine(series.id, series.navLink, previousFilename);
+  const frontmatter = assembleFrontmatter(series, today, parsed.title, slug, navLine);
+  const cleanBody = stripRedundantFirstHeading(parsed.body, parsed.title);
+  const bodyWithSignature = appendModelSignature(cleanBody, config.model);
   const filename = `${today}-${slug}.md`;
   fs.mkdirSync(seriesDir, { recursive: true });
   fs.writeFileSync(path.join(seriesDir, filename), frontmatter + bodyWithSignature + "\n", "utf-8");
 
-  log({ event: "post_written", filename, title: parsed.title, contentLength: parsed.body.length });
+  log({ event: "post_written", filename, title: parsed.title, contentLength: cleanBody.length, previousFilename });
+
+  if (previousFilename) {
+    const updatedPath = updatePreviousPost(repoRoot, series.id, previousFilename, filename);
+    log({ event: updatedPath ? "previous_post_updated" : "previous_post_unchanged", previousFilename });
+  }
 };
 
 if (process.argv[1]?.endsWith("generate-blog-post.ts")) {

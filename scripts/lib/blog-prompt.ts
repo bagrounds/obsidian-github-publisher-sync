@@ -8,6 +8,7 @@ export interface BlogContext {
   readonly previousPosts: readonly BlogPost[];
   readonly comments: readonly BlogComment[];
   readonly today: string;
+  readonly bookRecommendationsPrompt: string;
 }
 
 const MAX_POST_BODY_LENGTH = 3000;
@@ -68,7 +69,7 @@ const recapInstructions = (today: string): string => {
 };
 
 export const buildBlogPrompt = (context: BlogContext): { system: string; user: string } => {
-  const { series, agentsMd, previousPosts, comments, today } = context;
+  const { series, agentsMd, previousPosts, comments, today, bookRecommendationsPrompt } = context;
 
   const system = agentsMd || `You are ${series.name}, an automated blog. Write a blog post.`;
   const user = `Write a new blog post for today, ${today}.
@@ -76,7 +77,9 @@ ${buildPostHistory(previousPosts, today)}${buildCommentsSection(comments)}${reca
 
 ## Instructions
 
-Generate ONLY the blog post body in markdown (starting with a ## heading).
+Generate ONLY the blog post body in markdown.
+Do NOT start with a top-level heading (# ) — the title heading is added automatically.
+Start directly with a ## subheading or introductory paragraph.
 Do NOT generate frontmatter — it will be added automatically.
 Do NOT wrap your output in code fences.
 
@@ -86,12 +89,12 @@ ${previousPosts.length === 0
 
 ${comments.length > 0
     ? "Address reader comments naturally in your post. Only incorporate what fits."
-    : ""}`;
+    : ""}${bookRecommendationsPrompt}`;
 
   return { system, user };
 };
 
-export const assembleFrontmatter = (series: BlogSeriesConfig, today: string, title: string, slug: string): string =>
+export const assembleFrontmatter = (series: BlogSeriesConfig, today: string, title: string, slug: string, navLine: string): string =>
   `---
 share: true
 aliases:
@@ -101,7 +104,7 @@ URL: ${series.baseUrl}/${today}-${slug}
 Author: "${series.author}"
 tags:
 ---
-${series.navLink}
+${navLine}
 # ${today} | ${series.icon} ${title} ${series.icon}
 
 `;

@@ -95,7 +95,7 @@ export const buildBackLink = (series: BlogSeriesConfig, previousPost: BlogPost):
   `[[${series.id}/${previousPost.filename.replace(/\.md$/, "")}|⏮]]`;
 
 export const assembleFrontmatter = (series: BlogSeriesConfig, today: string, title: string, slug: string, previousPost?: BlogPost): string => {
-  const backLink = previousPost ? ` | ⬅️ ${buildBackLink(series, previousPost)}` : "";
+  const backLink = previousPost ? ` | ${buildBackLink(series, previousPost)}` : "";
   return `---
 share: true
 aliases:

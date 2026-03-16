@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-03-15T21:45:42-07:00
+updated: 2026-03-15T22:41:40-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -14,7 +14,7 @@ updated: 2026-03-15T21:45:42-07:00
 💬 Comment on any page with your GitHub account.  
   
 ## [🪞 Reflections](./reflections/index.md) ~ Blog (486)  
-- [2026-03-15](./reflections/2026-03-15.md)  
+- [2026-03-15 | 🕵️ Fugitive 📊 Recap 🏆 Turing ⚖️ Antitrust ✍️ Pulitzer 📚🐔🤖📰📺](./reflections/2026-03-15.md)  
 - [2026-03-14 | 🧩 Porting 🐔 Chickie 🎯 Strategy B 🕵️ SPA 🌬️ Quiet 🚀 Scaling 🤖](./reflections/2026-03-14.md)  
 - [2026-03-13 | 🤖💰💡 Power, Leverage, Testing, Rhythm, Experiment 📚🤖🐔📺](./reflections/2026-03-13.md)  
 - [2026-03-12 | ⚡🔮 Power 🐔 Rooster 🤖 Automated 📝 Blogging 📚](./reflections/2026-03-12.md)  
@@ -45,7 +45,8 @@ updated: 2026-03-15T21:45:42-07:00
 - [🧮 Calculator](./tools/calculator.md)  
   
   
-## [📚 Books](./books/index.md) (952)  
+## [📚 Books](./books/index.md) (953)  
+- [🔧🔨⚙️ Tinkers](./books/tinkers.md)  
 - [🐣🌱👨‍🏫💻 Haskell Programming from First Principles](./books/haskell-programming-from-first-principles.md)  
 - [🧠💻🤖 Deep Learning](./books/deep-learning.md)  
 - [⚠️🥴🕹️🌐 The Fifth Risk](./books/the-fifth-risk.md)  
@@ -55,15 +56,14 @@ updated: 2026-03-15T21:45:42-07:00
 - [📱⬇️🧘 Digital Minimalism: Choosing a Focused Life in a Noisy World](./books/digital-minimalism-choosing-a-focused-life-in-a-noisy-world.md)  
 - [🌲 Walden](./books/walden.md)  
 - [🪢🌾 Braiding Sweetgrass: Indigenous Wisdom, Scientific Knowledge, and the Teachings of Plants](./books/braiding-sweetgrass.md)  
-- [👨‍🏫🎉👍✨ Learn You a Haskell for Great Good!](./books/learn-you-a-haskell-for-great-good.md)  
   
   
 ## [📺 Videos](./videos/index.md) (688)  
 - [✍️🤯📝 How to Write Freakishly Well - Paul Harding](./videos/how-to-write-freakishly-well-paul-harding.md)  
+- [⚖️🏛️🗣️ Antitrust and The Rule of Law: A Conversation with Former FTC Chair Lina Khan](./videos/antitrust-and-the-rule-of-law-a-conversation-with-former-ftc-chair-lina-khan.md)  
 - [🏆💡🤔 Turing Award Winner On Thinking Clearly, Paxos vs Raft, Working With Dijkstra | Leslie Lamport](./videos/turing-award-winner-on-thinking-clearly-paxos-vs-raft-working-with-dijkstra-leslie-lamport.md)  
 - [👋👩‍💻🤖🚀 She quit, picked up AI, and shipped in 30 days what her team planned for Q3.](./videos/she-quit-picked-up-ai-and-shipped-in-30-days-what-her-team-planned-for-q3.md)  
 - [💭🧠💥 George Saunders Says Breaking These 3 Delusions Can Save You | The Interview](./videos/george-saunders-says-breaking-these-3-delusions-can-save-you-the-interview.md)  
-- [⚖️🏛️🗣️ Antitrust and The Rule of Law: A Conversation with Former FTC Chair Lina Khan](./videos/antitrust-and-the-rule-of-law-a-conversation-with-former-ftc-chair-lina-khan.md)  
 - [🪖❓🇺🇸 Brooks and Capehart on Trump's mixed signals on the Iran war](./videos/brooks-and-capehart-on-trumps-mixed-signals-on-the-iran-war.md)  
 - [📦⬅️🌯⬅️🧱 Monadic Parsers at the Input Boundary](./videos/monadic-parsers-at-the-input-boundary.md)  
 - [🧠🚀💡✨ Inside Pathway's Post-Transformer Architecture Designed for Memory and On-the-Fly Learning](./videos/inside-pathways-post-transformer-architecture-designed-for-memory-and-on-the-fly-learning.md)  

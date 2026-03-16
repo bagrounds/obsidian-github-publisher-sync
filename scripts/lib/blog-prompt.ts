@@ -92,7 +92,7 @@ ${comments.length > 0
 };
 
 export const buildBackLink = (series: BlogSeriesConfig, previousPost: BlogPost): string =>
-  `[[${series.id}/${previousPost.filename.replace(/\.md$/, "")}|${previousPost.title}]]`;
+  `[[${series.id}/${previousPost.filename.replace(/\.md$/, "")}|⏮]]`;
 
 export const assembleFrontmatter = (series: BlogSeriesConfig, today: string, title: string, slug: string, previousPost?: BlogPost): string => {
   const backLink = previousPost ? ` | ⬅️ ${buildBackLink(series, previousPost)}` : "";

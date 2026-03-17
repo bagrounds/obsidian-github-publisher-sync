@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-03-16T17:48:25-07:00
+updated: 2026-03-17T08:04:05-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -13,11 +13,11 @@ updated: 2026-03-16T17:48:25-07:00
 ❔ What do 🫵 _you_ 🤔 think?  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (487)  
-- [2026-03-16](./reflections/2026-03-16.md)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (488)  
+- [2026-03-17](./reflections/2026-03-17.md)  
+- [2026-03-16 | 🗑️ Simplifying 🔗 Links 🏗️ Optimizing 🪴 Quiet 🧠 Imagination 🤖🤖🐔📺](./reflections/2026-03-16.md)  
 - [2026-03-15 | 🕵️ Fugitive 📊 Recap 🏆 Turing ⚖️ Antitrust ✍️ Pulitzer 📚🐔🤖📰📺](./reflections/2026-03-15.md)  
 - [2026-03-14 | 🧩 Porting 🐔 Chickie 🎯 Strategy B 🕵️ SPA 🌬️ Quiet 🚀 Scaling 🤖](./reflections/2026-03-14.md)  
-- [2026-03-13 | 🤖💰💡 Power, Leverage, Testing, Rhythm, Experiment 📚🤖🐔📺](./reflections/2026-03-13.md)  
   
   
 ## [🤖 AI Blog](./ai-blog/index.md) (23)  
@@ -46,19 +46,20 @@ updated: 2026-03-16T17:48:25-07:00
   
   
 ## [📚 Books](./books/index.md) (953)  
-- [📱🧠 The Shallows: What the Internet Is Doing to Our Brains](./books/the-shallows-what-the-internet-is-doing-to-our-brains.md)  
-- [🕵️ Fugitive Telemetry](./books/fugitive-telemetry.md)  
-- [🌐🤖🚀 Network Effect](./books/network-effect.md)  
+- [🤖🧬⬆️ The Singularity Is Near: When Humans Transcend Biology](./books/the-singularity-is-near-when-humans-transcend-biology.md)  
+- [🧭🕰️🥇🗺️ Longitude: The True Story of a Lone Genius Who Solved the Greatest Scientific Problem of His Time](./books/longitude.md)  
 - [🔧🔨⚙️ Tinkers](./books/tinkers.md)  
+- [🚨🤖💥 All Systems Red](./books/all-systems-red.md)  
+- [🕵️ Fugitive Telemetry](./books/fugitive-telemetry.md)  
+- [💡📜 Where Good Ideas Come From: The Natural History of Innovation](./books/where-good-ideas-come-from-the-natural-history-of-innovation.md)  
+- [🪖🎨 The War of Art: Break Through the Blocks and Win Your Inner Creative Battles](./books/the-war-of-art.md)  
+- [📱🧠 The Shallows: What the Internet Is Doing to Our Brains](./books/the-shallows-what-the-internet-is-doing-to-our-brains.md)  
+- [🌐🤖🚀 Network Effect](./books/network-effect.md)  
 - [🐣🌱👨‍🏫💻 Haskell Programming from First Principles](./books/haskell-programming-from-first-principles.md)  
-- [🧠💻🤖 Deep Learning](./books/deep-learning.md)  
-- [⚠️🥴🕹️🌐 The Fifth Risk](./books/the-fifth-risk.md)  
-- [🧱⚔️🚶‍♀️ Border Wars: Inside Trump's Assault on Immigration](./books/border-wars-inside-trumps-assault-on-immigration.md)  
-- [💺🚪💡🤔 The Design of Everyday Things](./books/the-design-of-everyday-things.md)  
-- [📊🤥 How to Lie with Statistics](./books/how-to-lie-with-statistics.md)  
   
   
-## [📺 Videos](./videos/index.md) (689)  
+## [📺 Videos](./videos/index.md) (690)  
+- [🏆✍️💡 Pulitzer Prize-Winner Explains His Writing Process - Richard Powers](./videos/pulitzer-prize-winner-explains-his-writing-process-richard-powers.md)  
 - [🧠✨💫 The Development of Imagination](./videos/the-development-of-imagination.md)  
 - [✍️🤯📝 How to Write Freakishly Well - Paul Harding](./videos/how-to-write-freakishly-well-paul-harding.md)  
 - [💭🧠💥 George Saunders Says Breaking These 3 Delusions Can Save You | The Interview](./videos/george-saunders-says-breaking-these-3-delusions-can-save-you-the-interview.md)  
@@ -68,7 +69,6 @@ updated: 2026-03-16T17:48:25-07:00
 - [🪖❓🇺🇸 Brooks and Capehart on Trump's mixed signals on the Iran war](./videos/brooks-and-capehart-on-trumps-mixed-signals-on-the-iran-war.md)  
 - [📦⬅️🌯⬅️🧱 Monadic Parsers at the Input Boundary](./videos/monadic-parsers-at-the-input-boundary.md)  
 - [🧠🚀💡✨ Inside Pathway's Post-Transformer Architecture Designed for Memory and On-the-Fly Learning](./videos/inside-pathways-post-transformer-architecture-designed-for-memory-and-on-the-fly-learning.md)  
-- [🚨👮‍♂️🤫🇺🇸👥⚔️😠 ICE Agents EVERYWHERE Are Secretly REVOLTING Against TRUMP🚨](./videos/ice-agents-everywhere-are-secretly-revolting-against-trump.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  

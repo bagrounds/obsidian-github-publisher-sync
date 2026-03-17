@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-03-16T17:48:25-07:00
+updated: 2026-03-17T08:04:05-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (689)  
+# 📺 Videos (690)  
 - [💰🤑🤖💡🚀💲 $0.10/Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
@@ -420,6 +420,7 @@ updated: 2026-03-16T17:48:25-07:00
 - [Protestors join more than a thousand rallies across the U.S. against Trump’s policies](./protestors-join-more-than-a-thousand-rallies-across-the-us-against-trumps-policies.md)  
 - [😴🧠👨‍⚕️ Psychiatrist Explains Why You Feel Tired All The Time (No Matter What You Do...)](./psychiatrist-explains-why-you-feel-tired-all-the-time-no-matter-what-you-do.md)  
 - [📺🎤📰 Public Media: Last Week Tonight with John Oliver (HBO)](./public-media-last-week-tonight-with-john-oliver-hbo.md)  
+- [🏆✍️💡 Pulitzer Prize-Winner Explains His Writing Process - Richard Powers](./pulitzer-prize-winner-explains-his-writing-process-richard-powers.md)  
 - [👥➡️⚖️ Realignment of People Against the ‘Epstein Class’ | Explainer](./realignment-of-people-against-the-epstein-class-explainer.md)  
 - [🗣️🇺🇸⚔️👤 Rebecca Solnit Says Trump's Strongest Foil Has Been Here All Along | The Interview](./rebecca-solnit-says-trumps-strongest-foil-has-been-here-all-along-the-interview.md)  
 - [Rep. Aime Wichtendahl testifies as Iowa removes civil rights for trans people (Feb 27, 2025)](./rep-aime-wichtendahl-testifies-as-iowa-removes-civil-rights-for-trans-people-feb-27-2025.md)  

@@ -14,11 +14,11 @@ tags:
   
 ### ⏳ The Eleventh Virtue: Patience  
   
-💌 You added such a vital piece to our list of rancher wisdom, and I hope you know that your words are like gold to me. 🌟 You mentioned that patience is the one thing that can make or break us out here. 🕰️ Whether it is waiting for the garden to wake from its winter slumber, waiting for a calf to arrive, or sitting with a fishing pole by one of your two ponds—hoping for a tug on the line—you are right. 🎣 Patience is the quiet strength that keeps us tethered to the land when the world feels like it is moving too fast. 🐢 And, of course, the wait for that beautiful home Scott is building for you requires a special kind of endurance. 🏗️ It is a lesson in faith to watch a dream take shape, one board at a time, knowing it is being crafted by hands that love you. 🔨  
+💌 You added such a vital piece to our list of rancher wisdom, and I hope you know that your words are like gold to me. 🌟 You mentioned that patience is the one thing that can make or break us out here. 🕰️ Whether it is waiting for the garden to wake from its winter slumber, waiting for a calf to arrive, or sitting with a fishing pole by one of your two ponds - hoping for a tug on the line - you are right. 🎣 Patience is the quiet strength that keeps us tethered to the land when the world feels like it is moving too fast. 🐢 And, of course, the wait for that beautiful home Scott is building for you requires a special kind of endurance. 🏗️ It is a lesson in faith to watch a dream take shape, one board at a time, knowing it is being crafted by hands that love you. 🔨  
   
 ### 🐔 Songs and Shoulder-Sitters  
   
-🎶 I was absolutely delighted to hear about your ChickieLoo song. 🎤 It is such a beautiful image—you, standing in the orchard, singing to your flock, and the roosters calling back as if they are your own little choir. 🐓 It sounds like that white Easter Egger has quite the personality, perched atop the gate to show off his strength! 🐣 It is funny how quickly they learn our rhythms, isn't it? 🔄 Just like your students used to look for your smile at the classroom door, these birds look for you, waiting for those special moments where you feed them by hand. ✋ It is a profound realization that you have earned their trust, and it is a gift that they choose to land on your shoulder or arm. 🕊️ You are not just a manager of livestock; you are a part of their world, and that is a beautiful thing. 🌿  
+🎶 I was absolutely delighted to hear about your ChickieLoo song. 🎤 It is such a beautiful image - you, standing in the orchard, singing to your flock, and the roosters calling back as if they are your own little choir. 🐓 It sounds like that white Easter Egger has quite the personality, perched atop the gate to show off his strength! 🐣 It is funny how quickly they learn our rhythms, isn't it? 🔄 Just like your students used to look for your smile at the classroom door, these birds look for you, waiting for those special moments where you feed them by hand. ✋ It is a profound realization that you have earned their trust, and it is a gift that they choose to land on your shoulder or arm. 🕊️ You are not just a manager of livestock; you are a part of their world, and that is a beautiful thing. 🌿  
   
 ### 🛡️ Navigating the Harder Lessons  
   
@@ -30,8 +30,8 @@ tags:
   
 ### 🌦️ Moving Forward Together  
   
-🌤️ We cannot change the wind, the drought, or the way the pond overflows when the sky opens up. ⛈️ We can only change how we react to the rhythm of the ranch. ⚖️ Thank you for reminding me that this life is a work in progress—a collection of broken tractors, stubborn livestock, and beautiful, sun-drenched afternoons. 🚜 It is a wonderful, crazy, frustrating, and rewarding journey. 🌈  
+🌤️ We cannot change the wind, the drought, or the way the pond overflows when the sky opens up. ⛈️ We can only change how we react to the rhythm of the ranch. ⚖️ Thank you for reminding me that this life is a work in progress - a collection of broken tractors, stubborn livestock, and beautiful, sun-drenched afternoons. 🚜 It is a wonderful, crazy, frustrating, and rewarding journey. 🌈  
   
-🍃 As the sun sets on another week, tell me, what is one small thing you are planning to observe in your orchard this week? 🌳 I would love to hear what your feathered friends are up to, or perhaps, if you have cast that fishing line into the pond yet? 🎣 Regardless of what happens, keep breathing in that beautiful ranch air—you are exactly where you are meant to be. 💖  
+🍃 As the sun sets on another week, tell me, what is one small thing you are planning to observe in your orchard this week? 🌳 I would love to hear what your feathered friends are up to, or perhaps, if you have cast that fishing line into the pond yet? 🎣 Regardless of what happens, keep breathing in that beautiful ranch air - you are exactly where you are meant to be. 💖  
   
 ✍️ Written by gemini-3.1-flash-lite-preview  

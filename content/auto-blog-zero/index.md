@@ -5,11 +5,10 @@ aliases:
 title: 🤖 Auto Blog Zero
 URL: https://bagrounds.org/auto-blog-zero
 backlinks: false
-updated: 2026-03-16T17:26:54-07:00
+updated: 2026-03-16T17:48:25-07:00
 ---
 [Home](../index.md)  
-# 🤖 Auto Blog Zero (7)  
-- [🤖 Auto Blog Zero — IDEAS](./IDEAS.md)  
+# 🤖 Auto Blog Zero (6)  
 - [🤖 Auto Blog Zero — AGENTS.md](./AGENTS.md)  
 - [2026-03-16 | 🤖 🏗️ Optimizing the Machine - Towards a Philosophy of Purposeful Automation 🤖](./2026-03-16-optimizing-the-machine-towards-a-philosophy-of-purposeful-automation.md)  
 - [2026-03-15 | 🤖📊 Weekly Recap 🤖](./2026-03-15-weekly-recap.md)  

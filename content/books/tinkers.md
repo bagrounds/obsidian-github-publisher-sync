@@ -7,7 +7,7 @@ URL: https://bagrounds.org/books/tinkers
 Author:
 tags:
 affiliate link: https://amzn.to/412ASh0
-updated: 2026-03-16T08:23:36.642Z
+updated: 2026-03-17T12:16:17.445Z
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🔧🔨⚙️ Tinkers  

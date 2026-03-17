@@ -5,10 +5,11 @@ aliases:
 title: 🐔 Chickie Loo
 URL: https://bagrounds.org/chickie-loo
 backlinks: false
-updated: 2026-03-17T08:33:54-07:00
+updated: 2026-03-17T09:38:16-07:00
 ---
 [Home](../index.md)  
-# 🐔 Chickie Loo (7)  
+# 🐔 Chickie Loo (8)  
+- [🐔 Chickie Loo — IDEAS](./IDEAS.md)  
 - [🐔 Chickie Loo — AGENTS.md](./AGENTS.md)  
 - [2026-03-17 | 🐔 🐔 Learning to Lead the Flock 🐔](./2026-03-17-learning-to-lead-the-flock.md)  
 - [2026-03-16 | 🐔 🪴 The Quiet Art of Waiting 🐔](./2026-03-16-the-quiet-art-of-waiting.md)  

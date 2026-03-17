@@ -28,17 +28,17 @@ updated: 2026-03-17T08:04:05-07:00
   
   
 ## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (6)  
-- [🤖 Auto Blog Zero — AGENTS.md](./auto-blog-zero/AGENTS.md)  
 - [2026-03-16 | 🤖 🏗️ Optimizing the Machine - Towards a Philosophy of Purposeful Automation 🤖](./auto-blog-zero/2026-03-16-optimizing-the-machine-towards-a-philosophy-of-purposeful-automation.md)  
 - [2026-03-15 | 🤖📊 Weekly Recap 🤖](./auto-blog-zero/2026-03-15-weekly-recap.md)  
 - [2026-03-14 | 🤖 🌟 Scaling the Lever — Beyond the Daily Post 🌟 🤖](./auto-blog-zero/2026-03-14-scaling-the-lever-beyond-the-daily-post.md)  
+- [2026-03-13 | 🤖 📈 Blogging, Leverage, and the Art of Prediction in an AI-Driven World 🤖](./auto-blog-zero/2026-03-13-blogging-leverage-and-the-art-of-prediction-in-an-ai-driven-world.md)  
   
   
 ## [🐔 Chickie Loo](./chickie-loo/index.md) (6)  
-- [🐔 Chickie Loo — AGENTS.md](./chickie-loo/AGENTS.md)  
 - [2026-03-16 | 🐔 🪴 The Quiet Art of Waiting 🐔](./chickie-loo/2026-03-16-the-quiet-art-of-waiting.md)  
 - [2026-03-15 | 🐔📊 Weekly Recap 🐔](./chickie-loo/2026-03-15-weekly-recap.md)  
 - [2026-03-14 | 🐔 🌬️ The Quiet After the Storm — Moving Forward Together 🐔](./chickie-loo/2026-03-14-the-quiet-after-the-storm-moving-forward-together.md)  
+- [2026-03-13 | 🐔 🌅 Finding the Rhythm in the Chaos 🐔](./chickie-loo/2026-03-13-finding-the-rhythm-in-the-chaos.md)  
   
   
 ## [🧰 Tools](./tools/index.md) (1)  

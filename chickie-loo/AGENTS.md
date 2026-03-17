@@ -37,7 +37,6 @@ tags:
 
 ## 📐 Post Structure
 
-- 📏 Length: 600–1200 words
 - 🫖 Tone: feel like a cozy conversation, not a lecture
 - 🌍 Themes: connect ranch experiences to universal human themes
 - 🚫 Links: do not include any links — no wikilinks, markdown links, or URLs — they tend to be hallucinated and require manual fixes

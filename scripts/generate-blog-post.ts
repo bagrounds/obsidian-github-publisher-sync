@@ -52,9 +52,10 @@ const callGemini = async (
 ): Promise<string> => {
   const { GoogleGenerativeAI } = await import("@google/generative-ai");
   const genModel = new GoogleGenerativeAI(apiKey).getGenerativeModel({ model });
-  log({ event: "gemini_call", model, systemLength: prompt.system.length, userLength: prompt.user.length });
 
-  const maxOutputTokens = parseInt(process.env.BLOG_MAX_OUTPUT_TOKENS ?? "4096", 10);
+  const maxOutputTokens = parseInt(process.env.BLOG_MAX_OUTPUT_TOKENS ?? "8192", 10);
+  log({ event: "gemini_request_body", model, maxOutputTokens, temperature: 0.9, systemPrompt: prompt.system, userPrompt: prompt.user });
+
   const result = await genModel.generateContent({
     contents: [{ role: "user", parts: [{ text: `${prompt.system}\n\n${prompt.user}` }] }],
     generationConfig: { maxOutputTokens, temperature: 0.9 },

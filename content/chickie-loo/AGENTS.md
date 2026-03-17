@@ -37,7 +37,6 @@ tags:
   
 ## 📐 Post Structure  
   
-- 📏 Length: 600–1200 words  
 - 🫖 Tone: feel like a cozy conversation, not a lecture  
 - 🌍 Themes: connect ranch experiences to universal human themes  
 - 🔗 Links: reference previous posts using wikilinks like `[[chickie-loo/filename|title]]`  

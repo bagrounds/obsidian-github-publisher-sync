@@ -16,6 +16,10 @@ import {
   appendModelSignature,
   todayPacific,
   assembleFrontmatter,
+  buildBackLink,
+  buildForwardLink,
+  filterCommentsAfterLastPost,
+  updatePreviousPost,
 } from "./blog-series.ts";
 
 describe("readSeriesPosts", () => {
@@ -157,11 +161,34 @@ describe("buildBlogPrompt", () => {
     assert.ok(prompt.user.includes("comments are very rare"));
   });
 
-  it("uses wikilinks format for internal references", () => {
+  it("tells AI to continue the series naturally without link instructions", () => {
     const posts = [{ filename: "2026-03-10-test.md", date: "2026-03-10", title: "Test Post", body: "Body text" }];
     const prompt = buildBlogPrompt({ series, agentsMd: "test", previousPosts: posts, comments: [], today: "2026-03-12" });
-    assert.ok(prompt.user.includes("wikilinks"));
-    assert.ok(prompt.user.includes("[[auto-blog-zero/"));
+    assert.ok(prompt.user.includes("Continue the series naturally"));
+    assert.ok(!prompt.user.includes("wikilinks"));
+  });
+});
+
+describe("buildBackLink", () => {
+  const series = BLOG_SERIES.get("auto-blog-zero")!;
+
+  it("builds a wikilink to the previous post using its filename", () => {
+    const prev = { filename: "2026-03-12-fully-automated-blogging.md", date: "2026-03-12", title: "2026-03-12 | 🤖 Fully Automated Blogging 🤖", body: "" };
+    const link = buildBackLink(series, prev);
+    assert.equal(link, "[[auto-blog-zero/2026-03-12-fully-automated-blogging|⏮️]]");
+  });
+
+  it("strips .md extension from filename", () => {
+    const prev = { filename: "2026-03-15-weekly-recap.md", date: "2026-03-15", title: "Weekly Recap", body: "" };
+    const link = buildBackLink(series, prev);
+    assert.ok(!link.includes(".md"));
+  });
+
+  it("uses the series id as the path prefix", () => {
+    const chickieSeries = BLOG_SERIES.get("chickie-loo")!;
+    const prev = { filename: "2026-03-10-hello.md", date: "2026-03-10", title: "Hello", body: "" };
+    const link = buildBackLink(chickieSeries, prev);
+    assert.ok(link.startsWith("[[chickie-loo/"));
   });
 });
 
@@ -176,17 +203,21 @@ describe("assembleFrontmatter", () => {
     assert.ok(fm.includes('Author: "[[auto-blog-zero]]"'));
     assert.ok(!fm.includes("[Your Title Here]"));
     assert.ok(fm.includes("[[index|Home]] > [[auto-blog-zero/index|🤖 Auto Blog Zero]]"));
-  });
-
-  it("includes correct nav link for auto-blog-zero", () => {
-    const fm = assembleFrontmatter(series, "2026-03-12", "My Great Post", "my-great-post");
-    assert.ok(fm.includes("[[index|Home]] > [[auto-blog-zero/index|🤖 Auto Blog Zero]]"));
+    assert.ok(!fm.includes("⏮"));
+    assert.ok(!fm.includes("⏮️"));
   });
 
   it("includes correct nav link for chickie-loo", () => {
     const chickieSeries = BLOG_SERIES.get("chickie-loo")!;
     const fm = assembleFrontmatter(chickieSeries, "2026-03-12", "My Great Post", "my-great-post");
     assert.ok(fm.includes("[[index|Home]] > [[chickie-loo/index|🐔 Chickie Loo]]"));
+  });
+
+  it("appends back link on nav line when previous post provided", () => {
+    const prev = { filename: "2026-03-11-previous-post.md", date: "2026-03-11", title: "Previous Post Title", body: "" };
+    const navLine = assembleFrontmatter(series, "2026-03-12", "My Great Post", "my-great-post", prev)
+      .split("\n").find((line) => line.includes("[[index|Home]]"));
+    assert.ok(navLine?.includes("[[auto-blog-zero/2026-03-11-previous-post|⏮️]]"));
   });
 });
 
@@ -231,10 +262,10 @@ describe("parseGeneratedPost", () => {
 });
 
 describe("appendModelSignature", () => {
-  it("appends model signature with placeholder", () => {
+  it("appends model signature with blank line before it", () => {
     const body = "## My Post\n\nThis is content.";
     const result = appendModelSignature(body, "gemini-3.1-flash");
-    assert.equal(result, "## My Post\n\nThis is content.\n✍️ Written by gemini-3.1-flash");
+    assert.equal(result, "## My Post\n\nThis is content.\n\n✍️ Written by gemini-3.1-flash");
   });
 
   it("works with different model names", () => {
@@ -247,5 +278,99 @@ describe("appendModelSignature", () => {
 describe("todayPacific", () => {
   it("returns YYYY-MM-DD format", () => {
     assert.match(todayPacific(), /^\d{4}-\d{2}-\d{2}$/);
+  });
+});
+
+describe("filterCommentsAfterLastPost", () => {
+  type C = { author: string; body: string; createdAt: string; isPriority: boolean };
+  type P = { filename: string; date: string; title: string; body: string };
+  const makeComment = (iso: string): C => ({ author: "test", body: "hi", createdAt: iso, isPriority: false });
+  const makePost = (date: string): P => ({ filename: `${date}-post.md`, date, title: "Post", body: "" });
+
+  it("returns all comments when no previous posts", () => {
+    const comments = [makeComment("2026-03-10T12:00:00Z"), makeComment("2026-03-12T14:00:00Z")];
+    assert.equal(filterCommentsAfterLastPost(comments, [], "16:00").length, 2);
+  });
+
+  it("filters out comments older than the exact post time", () => {
+    const comments = [makeComment("2026-03-13T15:45:00Z"), makeComment("2026-03-13T16:30:00Z")];
+    const filtered = filterCommentsAfterLastPost(comments, [makePost("2026-03-13")], "16:00");
+    assert.equal(filtered.length, 1);
+    assert.equal(filtered[0]!.createdAt, "2026-03-13T16:30:00Z");
+  });
+
+  it("excludes comments written minutes before the scheduled post time", () => {
+    const comments = [makeComment("2026-03-14T15:45:00Z"), makeComment("2026-03-14T16:05:00Z")];
+    const filtered = filterCommentsAfterLastPost(comments, [makePost("2026-03-14")], "16:00");
+    assert.equal(filtered.length, 1);
+    assert.equal(filtered[0]!.createdAt, "2026-03-14T16:05:00Z");
+  });
+
+  it("uses the correct post time for different series", () => {
+    const comments = [makeComment("2026-03-14T14:50:00Z"), makeComment("2026-03-14T15:10:00Z")];
+    const filtered = filterCommentsAfterLastPost(comments, [makePost("2026-03-14")], "15:00");
+    assert.equal(filtered.length, 1);
+    assert.equal(filtered[0]!.createdAt, "2026-03-14T15:10:00Z");
+  });
+
+  it("includes all comments from days after the last post", () => {
+    const comments = [makeComment("2026-03-15T08:00:00Z"), makeComment("2026-03-16T10:00:00Z")];
+    const filtered = filterCommentsAfterLastPost(comments, [makePost("2026-03-14")], "16:00");
+    assert.equal(filtered.length, 2);
+  });
+});
+
+describe("buildForwardLink", () => {
+  const series = BLOG_SERIES.get("auto-blog-zero")!;
+
+  it("builds a wikilink to the next post using its filename", () => {
+    assert.equal(buildForwardLink(series, "2026-03-14-my-post.md"), "[[auto-blog-zero/2026-03-14-my-post|⏭️]]");
+  });
+
+  it("strips .md extension from filename", () => {
+    assert.ok(!buildForwardLink(series, "2026-03-14-my-post.md").includes(".md"));
+  });
+
+  it("uses the series id as the path prefix", () => {
+    const chickieSeries = BLOG_SERIES.get("chickie-loo")!;
+    assert.ok(buildForwardLink(chickieSeries, "2026-03-14-hello.md").startsWith("[[chickie-loo/"));
+  });
+});
+
+describe("updatePreviousPost", () => {
+  const series = BLOG_SERIES.get("auto-blog-zero")!;
+
+  it("adds a forward link to the nav line of the previous post", () => {
+    const tmpDir = fs.mkdtempSync(path.join(os.tmpdir(), "blog-test-"));
+    try {
+      fs.writeFileSync(path.join(tmpDir, "2026-03-10-test.md"),
+        `---\nshare: true\n---\n${series.navLink}\n## Test\n\nBody.\n`);
+      const prev = { filename: "2026-03-10-test.md", date: "2026-03-10", title: "Test", body: "" };
+      updatePreviousPost(tmpDir, prev, series, "2026-03-11-new-post.md");
+      const updated = fs.readFileSync(path.join(tmpDir, "2026-03-10-test.md"), "utf-8");
+      const navLine = updated.split("\n").find((line) => line.startsWith(series.navLink));
+      assert.ok(navLine?.includes("[[auto-blog-zero/2026-03-11-new-post|⏭️]]"));
+    } finally {
+      fs.rmSync(tmpDir, { recursive: true });
+    }
+  });
+
+  it("does not add a duplicate forward link if already present", () => {
+    const tmpDir = fs.mkdtempSync(path.join(os.tmpdir(), "blog-test-"));
+    try {
+      fs.writeFileSync(path.join(tmpDir, "2026-03-10-test.md"),
+        `---\nshare: true\n---\n${series.navLink} | [[auto-blog-zero/2026-03-11-new-post|⏭️]]\n## Test\n\nBody.\n`);
+      const prev = { filename: "2026-03-10-test.md", date: "2026-03-10", title: "Test", body: "" };
+      updatePreviousPost(tmpDir, prev, series, "2026-03-11-new-post.md");
+      const updated = fs.readFileSync(path.join(tmpDir, "2026-03-10-test.md"), "utf-8");
+      assert.equal((updated.match(/⏭/g) ?? []).length, 1);
+    } finally {
+      fs.rmSync(tmpDir, { recursive: true });
+    }
+  });
+
+  it("does nothing when the previous post file does not exist", () => {
+    const prev = { filename: "nonexistent.md", date: "2026-03-10", title: "Test", body: "" };
+    assert.doesNotThrow(() => updatePreviousPost("/tmp/nonexistent-dir", prev, series, "2026-03-11-new.md"));
   });
 });

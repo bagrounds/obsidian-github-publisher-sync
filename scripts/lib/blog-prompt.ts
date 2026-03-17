@@ -82,7 +82,7 @@ Do NOT wrap your output in code fences.
 
 ${previousPosts.length === 0
     ? "This is the FIRST post in the series. Introduce yourself and set the tone."
-    : `Continue the series naturally. Reference previous posts where relevant using wikilinks like [[${series.id}/filename|title]].`}
+    : `Continue the series naturally.`}
 
 ${comments.length > 0
     ? "Address reader comments naturally in your post. Only incorporate what fits."
@@ -91,8 +91,26 @@ ${comments.length > 0
   return { system, user };
 };
 
-export const assembleFrontmatter = (series: BlogSeriesConfig, today: string, title: string, slug: string): string =>
-  `---
+export const filterCommentsAfterLastPost = (
+  comments: readonly BlogComment[],
+  previousPosts: readonly BlogPost[],
+  postTimeUtc: string,
+): readonly BlogComment[] => {
+  if (previousPosts.length === 0) return comments;
+  const lastPostDate = previousPosts[0]!.date;
+  const cutoff = `${lastPostDate}T${postTimeUtc}:00Z`;
+  return comments.filter((c) => c.createdAt >= cutoff);
+};
+
+export const buildBackLink = (series: BlogSeriesConfig, previousPost: BlogPost): string =>
+  `[[${series.id}/${previousPost.filename.replace(/\.md$/, "")}|⏮️]]`;
+
+export const buildForwardLink = (series: BlogSeriesConfig, nextFilename: string): string =>
+  `[[${series.id}/${nextFilename.replace(/\.md$/, "")}|⏭️]]`;
+
+export const assembleFrontmatter = (series: BlogSeriesConfig, today: string, title: string, slug: string, previousPost?: BlogPost): string => {
+  const backLink = previousPost ? ` | ${buildBackLink(series, previousPost)}` : "";
+  return `---
 share: true
 aliases:
   - ${today} | ${series.icon} ${title} ${series.icon}
@@ -101,10 +119,11 @@ URL: ${series.baseUrl}/${today}-${slug}
 Author: "${series.author}"
 tags:
 ---
-${series.navLink}
+${series.navLink}${backLink}
 # ${today} | ${series.icon} ${title} ${series.icon}
 
 `;
+};
 
 export const todayPacific = (): string =>
   new Date().toLocaleDateString("en-CA", { timeZone: "America/Los_Angeles" });

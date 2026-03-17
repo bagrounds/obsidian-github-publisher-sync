@@ -24,8 +24,8 @@ tags:
 - 🎉 Encouraging — celebrate the small victories
 - 😊 Occasional gentle humor — life on a ranch is funny sometimes
 - 🎨 Generous with emoji — 1 emoji at the beginning of every heading, subheading, sentence, and list item
-- 🚫 Never use quotation marks — rephrase instead of quoting
-- 🔗 Always reference other internal pages using wikilinks: `[[path/to/file|Display Text]]`
+- 🚫 Never use quotation marks
+- 🚫 Never include any links — no wikilinks, markdown links, or URLs — links tend to be hallucinated and require manual fixes
 
 ## 📅 Periodic Recaps
 
@@ -40,7 +40,7 @@ tags:
 - 📏 Length: 600–1200 words
 - 🫖 Tone: feel like a cozy conversation, not a lecture
 - 🌍 Themes: connect ranch experiences to universal human themes
-- 🔗 Links: reference previous posts using wikilinks like `[[chickie-loo/filename|title]]`
+- 🚫 Links: do not include any links — no wikilinks, markdown links, or URLs — they tend to be hallucinated and require manual fixes
 - 📑 Structure: use markdown headers (`##`, `###`) naturally, not rigidly
 - 🔚 Ending: close with something uplifting or a gentle question
 - 🚫 Avoid: technical jargon — this is not a tech blog

@@ -11,6 +11,7 @@ import {
   fetchAllSeriesComments,
   todayPacific,
   appendModelSignature,
+  updatePreviousPost,
 } from "./lib/blog-series.ts";
 
 const DEFAULT_BLOG_MODEL = "gemini-3.1-flash-lite-preview";
@@ -103,7 +104,19 @@ const generate = async (): Promise<void> => {
   log({ event: "comments_fetched", total: comments.length, priority: priorityCount, priorityUser });
 
   const context = buildBlogContext(config.series, repoRoot, comments, today);
-  log({ event: "context_built", previousPosts: context.previousPosts.length, hasAgentsMd: context.agentsMd.length > 0 });
+  const commentCutoff = context.previousPosts.length > 0
+    ? `${context.previousPosts[0]!.date}T${series.postTimeUtc}:00Z`
+    : undefined;
+  log({
+    event: "context_built",
+    previousPostCount: context.previousPosts.length,
+    newestPost: context.previousPosts[0]?.filename,
+    newestPostDate: context.previousPosts[0]?.date,
+    commentCutoff,
+    rawCommentCount: comments.length,
+    filteredCommentCount: context.comments.length,
+    hasAgentsMd: context.agentsMd.length > 0,
+  });
 
   const prompt = buildBlogPrompt(context);
 
@@ -120,13 +133,22 @@ const generate = async (): Promise<void> => {
   }
 
   const slug = generateSlug(parsed.title);
-  const frontmatter = assembleFrontmatter(series, today, parsed.title, slug);
+  const previousPost = context.previousPosts[0];
+  const frontmatter = assembleFrontmatter(series, today, parsed.title, slug, previousPost);
   const bodyWithSignature = appendModelSignature(parsed.body, config.model);
   const filename = `${today}-${slug}.md`;
   fs.mkdirSync(seriesDir, { recursive: true });
   fs.writeFileSync(path.join(seriesDir, filename), frontmatter + bodyWithSignature + "\n", "utf-8");
-
-  log({ event: "post_written", filename, title: parsed.title, contentLength: parsed.body.length });
+  log({ event: "post_written", filename, title: parsed.title, contentLength: parsed.body.length, slug });
+  if (previousPost) {
+    updatePreviousPost(seriesDir, previousPost, series, filename);
+    const metadataPath = path.join(seriesDir, ".last-generate-metadata.json");
+    fs.writeFileSync(metadataPath, JSON.stringify({ previousPostFilename: previousPost.filename, newPostFilename: filename }), "utf-8");
+    log({ event: "previous_post_updated", previousPost: previousPost.filename, forwardLinkTarget: filename });
+  } else {
+    log({ event: "no_previous_post", reason: "first post in series" });
+  }
+  log({ event: "generate_complete", series: series.id, filename, backLinkTarget: previousPost?.filename });
 };
 
 if (process.argv[1]?.endsWith("generate-blog-post.ts")) {

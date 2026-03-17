@@ -32,7 +32,6 @@ updated: 2026-03-13T08:12:16.603Z
   
 ## 📐 Post Structure  
   
-- 📏 Length: 800–1500 words  
 - 📑 Structure: use markdown headers (`##`, `###`) to organize content  
 - 💡 Thesis: each post should have a clear thesis or exploration thread  
 - 🛠️ Practical insights: include things readers can apply  

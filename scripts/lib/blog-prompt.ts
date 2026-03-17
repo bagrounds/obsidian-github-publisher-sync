@@ -10,8 +10,6 @@ export interface BlogContext {
   readonly today: string;
 }
 
-const MAX_POST_BODY_LENGTH = 3000;
-
 const dayOfWeek = (dateStr: string): number => new Date(dateStr + "T12:00:00").getDay();
 const isSunday = (dateStr: string): boolean => dayOfWeek(dateStr) === 0;
 
@@ -28,12 +26,8 @@ const postsSinceLastRecap = (posts: readonly BlogPost[], today: string): readonl
   return postsSinceRecap.slice(0, 7);
 };
 
-const formatFullPost = (post: BlogPost): string => {
-  const body = post.body.length > MAX_POST_BODY_LENGTH
-    ? post.body.slice(0, MAX_POST_BODY_LENGTH) + "\n\n[...truncated...]"
-    : post.body;
-  return `\n### ${post.title} (${post.date})\n${body}\n`;
-};
+const formatFullPost = (post: BlogPost): string =>
+  `\n### ${post.title} (${post.date})\n${post.body}\n`;
 
 const buildPostHistory = (posts: readonly BlogPost[], today: string): string => {
   if (posts.length === 0) return "";

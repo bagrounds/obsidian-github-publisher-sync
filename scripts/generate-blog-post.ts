@@ -54,11 +54,10 @@ const callGemini = async (
   const genModel = new GoogleGenerativeAI(apiKey).getGenerativeModel({ model });
 
   const maxOutputTokens = parseInt(process.env.BLOG_MAX_OUTPUT_TOKENS ?? "8192", 10);
-  const fullPromptText = `${prompt.system}\n\n${prompt.user}`;
   log({ event: "gemini_request_body", model, maxOutputTokens, temperature: 0.9, systemPrompt: prompt.system, userPrompt: prompt.user });
 
   const result = await genModel.generateContent({
-    contents: [{ role: "user", parts: [{ text: fullPromptText }] }],
+    contents: [{ role: "user", parts: [{ text: `${prompt.system}\n\n${prompt.user}` }] }],
     generationConfig: { maxOutputTokens, temperature: 0.9 },
   });
 

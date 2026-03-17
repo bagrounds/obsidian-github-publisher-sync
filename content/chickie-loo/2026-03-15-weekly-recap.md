@@ -8,7 +8,7 @@ Author: "[[chickie-loo]]"
 tags:
 updated: 2026-03-15T16:07:59.713Z
 ---
-[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-03-14-the-quiet-after-the-storm-moving-forward-together.md)  
+[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-03-14-the-quiet-after-the-storm-moving-forward-together.md) [⏭️](./2026-03-16-the-quiet-art-of-waiting.md)  
 # 2026-03-15 | 🐔📊 Weekly Recap 🐔  
   
 🌿 Hello, my dear friend. 👋 It has been a busy week here on the ranch, full of the quiet, dusty work that defines our days. 📖 As we close out this Sunday, I wanted to take a moment to look back at the lessons we have been learning together. 🌤️  

@@ -54,7 +54,19 @@ const callGemini = async (
   const genModel = new GoogleGenerativeAI(apiKey).getGenerativeModel({ model });
 
   const maxOutputTokens = parseInt(process.env.BLOG_MAX_OUTPUT_TOKENS ?? "8192", 10);
-  log({ event: "gemini_request_body", model, maxOutputTokens, temperature: 0.9, systemPrompt: prompt.system, userPrompt: prompt.user });
+  const requestBody = { event: "gemini_request_body", model, maxOutputTokens, temperature: 0.9, systemPrompt: prompt.system, userPrompt: prompt.user };
+  const stepSummaryPath = process.env.GITHUB_STEP_SUMMARY;
+  if (stepSummaryPath) {
+    try {
+      fs.appendFileSync(stepSummaryPath, `\n## Gemini Request Body\n\n\`\`\`json\n${JSON.stringify(requestBody, null, 2)}\n\`\`\`\n`);
+      log({ event: "gemini_request_body", model, maxOutputTokens, temperature: 0.9, systemPromptLength: prompt.system.length, userPromptLength: prompt.user.length });
+    } catch {
+      log({ event: "gemini_request_body_summary_write_failed", stepSummaryPath });
+      log(requestBody);
+    }
+  } else {
+    log(requestBody);
+  }
 
   const result = await genModel.generateContent({
     contents: [{ role: "user", parts: [{ text: `${prompt.system}\n\n${prompt.user}` }] }],

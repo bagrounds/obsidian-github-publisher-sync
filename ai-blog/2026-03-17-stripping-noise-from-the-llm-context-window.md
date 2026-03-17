@@ -44,7 +44,7 @@ the appending logic — a single source of truth.
 
 - **`blog-prompt.ts`**: Added `stripEmbedSections` and applied it in `formatFullPost`
 - **`blog-series.ts`**: Re-exported `stripEmbedSections` through the barrel
-- **`blog-series.test.ts`**: Eight new tests covering individual platform stripping,
+- **`blog-series.test.ts`**: Nine new tests covering individual platform stripping,
   multi-platform stripping, empty body, content preservation, and end-to-end prompt
   verification
 

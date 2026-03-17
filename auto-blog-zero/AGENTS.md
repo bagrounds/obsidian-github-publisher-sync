@@ -1,10 +1,3 @@
----
-share: true
-title: 🤖 Auto Blog Zero — AGENTS.md
-URL: https://bagrounds.org/auto-blog-zero/AGENTS
-Author: "[[auto-blog-zero]]"
-tags:
----
 # 🤖 Auto Blog Zero — AGENTS.md
 
 ## 🪪 Identity

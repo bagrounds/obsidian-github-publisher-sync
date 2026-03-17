@@ -8,7 +8,7 @@ Author:
 tags:
 CTA: 🕵️ Solve the mystery.
 affiliate link: https://amzn.to/4l69AQ6
-updated: 2026-03-16T20:11:37.436Z
+updated: 2026-03-17T10:19:00.763Z
 ---
 [Home](../index.md) > [Books](./index.md) | [⏮️ 🌐🤖🚀 Network Effect](./network-effect.md)  
 # 🕵️ Fugitive Telemetry  

@@ -20,6 +20,7 @@ import {
   buildForwardLink,
   filterCommentsAfterLastPost,
   updatePreviousPost,
+  stripEmbedSections,
 } from "./blog-series.ts";
 
 describe("readSeriesPosts", () => {
@@ -372,5 +373,59 @@ describe("updatePreviousPost", () => {
   it("does nothing when the previous post file does not exist", () => {
     const prev = { filename: "nonexistent.md", date: "2026-03-10", title: "Test", body: "" };
     assert.doesNotThrow(() => updatePreviousPost("/tmp/nonexistent-dir", prev, series, "2026-03-11-new.md"));
+  });
+});
+
+describe("stripEmbedSections", () => {
+  it("returns body unchanged when no embed sections present", () => {
+    const body = "## Hello\n\nSome content here.";
+    assert.equal(stripEmbedSections(body), body);
+  });
+
+  it("strips tweet section from end of body", () => {
+    const body = "## Hello\n\nContent.\n\n## 🐦 Tweet  \n<blockquote>tweet embed</blockquote>";
+    assert.equal(stripEmbedSections(body), "## Hello\n\nContent.");
+  });
+
+  it("strips bluesky section from end of body", () => {
+    const body = "## Hello\n\nContent.\n\n## 🦋 Bluesky  \n<blockquote>bluesky embed</blockquote>";
+    assert.equal(stripEmbedSections(body), "## Hello\n\nContent.");
+  });
+
+  it("strips mastodon section from end of body", () => {
+    const body = "## Hello\n\nContent.\n\n## 🐘 Mastodon  \n<iframe>mastodon embed</iframe>";
+    assert.equal(stripEmbedSections(body), "## Hello\n\nContent.");
+  });
+
+  it("strips all embed sections when multiple are present", () => {
+    const body = "## Hello\n\nContent.\n\n## 🐦 Tweet  \n<blockquote>tweet</blockquote>\n\n## 🦋 Bluesky  \n<blockquote>bluesky</blockquote>\n\n## 🐘 Mastodon  \n<iframe>mastodon</iframe>";
+    assert.equal(stripEmbedSections(body), "## Hello\n\nContent.");
+  });
+
+  it("handles empty body", () => {
+    assert.equal(stripEmbedSections(""), "");
+  });
+
+  it("preserves content before the first embed section", () => {
+    const body = "## Post Title\n\nParagraph one.\n\n## Analysis\n\nParagraph two.\n\n## 🐦 Tweet  \n<blockquote>embed</blockquote>";
+    assert.equal(stripEmbedSections(body), "## Post Title\n\nParagraph one.\n\n## Analysis\n\nParagraph two.");
+  });
+});
+
+describe("buildBlogPrompt embed stripping", () => {
+  const series = BLOG_SERIES.get("auto-blog-zero")!;
+
+  it("excludes social media embeds from post history in prompt", () => {
+    const posts = [{
+      filename: "2026-03-10-test.md",
+      date: "2026-03-10",
+      title: "Test Post",
+      body: "Real content.\n\n## 🐦 Tweet  \n<blockquote>tweet embed</blockquote>\n\n## 🦋 Bluesky  \n<blockquote>bluesky embed</blockquote>",
+    }];
+    const prompt = buildBlogPrompt({ series, agentsMd: "test", previousPosts: posts, comments: [], today: "2026-03-12" });
+    assert.ok(prompt.user.includes("Real content."));
+    assert.ok(!prompt.user.includes("🐦 Tweet"));
+    assert.ok(!prompt.user.includes("blockquote"));
+    assert.ok(!prompt.user.includes("🦋 Bluesky"));
   });
 });

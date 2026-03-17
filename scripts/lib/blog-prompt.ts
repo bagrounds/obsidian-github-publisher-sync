@@ -1,6 +1,11 @@
 import type { BlogSeriesConfig } from "./blog-series-config.ts";
 import type { BlogPost } from "./blog-posts.ts";
 import type { BlogComment } from "./blog-comments.ts";
+import {
+  TWEET_SECTION_HEADER,
+  BLUESKY_SECTION_HEADER,
+  MASTODON_SECTION_HEADER,
+} from "./types.ts";
 
 export interface BlogContext {
   readonly series: BlogSeriesConfig;
@@ -26,8 +31,18 @@ const postsSinceLastRecap = (posts: readonly BlogPost[], today: string): readonl
   return postsSinceRecap.slice(0, 7);
 };
 
+const EMBED_HEADERS = [TWEET_SECTION_HEADER, BLUESKY_SECTION_HEADER, MASTODON_SECTION_HEADER] as const;
+
+export const stripEmbedSections = (body: string): string => {
+  const firstEmbedIndex = EMBED_HEADERS
+    .map((header) => body.indexOf(header))
+    .filter((index) => index >= 0)
+    .reduce((min, index) => Math.min(min, index), body.length);
+  return body.slice(0, firstEmbedIndex).trimEnd();
+};
+
 const formatFullPost = (post: BlogPost): string =>
-  `\n### ${post.title} (${post.date})\n${post.body}\n`;
+  `\n### ${post.title} (${post.date})\n${stripEmbedSections(post.body)}\n`;
 
 const buildPostHistory = (posts: readonly BlogPost[], today: string): string => {
   if (posts.length === 0) return "";

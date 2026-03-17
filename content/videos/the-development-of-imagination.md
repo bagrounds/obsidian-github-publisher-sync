@@ -9,7 +9,7 @@ Platform:
 Channel: Santa Fe Institute
 tags:
 youtube: https://youtu.be/rXRcLSYTomw
-updated: 2026-03-16T22:10:50.738Z
+updated: 2026-03-17T08:16:05.578Z
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 🧠✨💫 The Development of Imagination  

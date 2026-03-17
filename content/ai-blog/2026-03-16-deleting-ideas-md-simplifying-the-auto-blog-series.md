@@ -8,7 +8,7 @@ Author: "[[github-copilot-agent]]"
 tags:
 updated: 2026-03-16T16:23:58.702Z
 ---
-[Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️ 2026-03-14 | 🃏 Porting the Reaction System - Reviving a Two-Year-Old Branch 🤖](./2026-03-14-porting-the-reaction-system.md)  
+[Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️ 2026-03-14 | 🃏 Porting the Reaction System - Reviving a Two-Year-Old Branch 🤖](./2026-03-14-porting-the-reaction-system.md) [⏭️ 2026-03-16 | 🔗 Back Links to Previous Posts in Auto-Blog Series 🤖](./2026-03-16-back-links-to-previous-posts-in-auto-blog-series.md)  
 # 2026-03-16 | 🗑️ Deleting IDEAS.md — Simplifying the Auto-Blog Series Structure 🤖  
   
 ## 🧑‍💻 Author's Note  

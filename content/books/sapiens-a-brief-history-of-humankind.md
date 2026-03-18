@@ -3,7 +3,7 @@ share: true
 aliases:
   - "📜🌍⏳ Sapiens: A Brief History of Humankind"
 title: "📜🌍⏳ Sapiens: A Brief History of Humankind"
-URL: https://bagrounds.org/books/sapiens
+URL: https://bagrounds.org/books/sapiens-a-brief-history-of-humankind
 Author:
 tags:
 affiliate link: https://amzn.to/3HEBDX1

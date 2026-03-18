@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-03-17T17:15:53-07:00
+updated: 2026-03-18T09:39:02-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -14,7 +14,7 @@ updated: 2026-03-17T17:15:53-07:00
 💬 Comment on any page with your GitHub account.  
   
 ## [🪞 Reflections](./reflections/index.md) ~ Blog (488)  
-- [2026-03-17](./reflections/2026-03-17.md)  
+- [2026-03-17 | 💨 Zooming 🐓 Flock 👩🏼‍🏫 Explains 🧠 Intelligence 📚📺🐔🤖](./reflections/2026-03-17.md)  
 - [2026-03-16 | 🗑️ Simplifying 🔗 Links 🏗️ Optimizing 🪴 Quiet 🧠 Imagination 🤖🤖🐔📺](./reflections/2026-03-16.md)  
 - [2026-03-15 | 🕵️ Fugitive 📊 Recap 🏆 Turing ⚖️ Antitrust ✍️ Pulitzer 📚🐔🤖📰📺](./reflections/2026-03-15.md)  
 - [2026-03-14 | 🧩 Porting 🐔 Chickie 🎯 Strategy B 🕵️ SPA 🌬️ Quiet 🚀 Scaling 🤖](./reflections/2026-03-14.md)  
@@ -27,18 +27,18 @@ updated: 2026-03-17T17:15:53-07:00
 - [2026-03-14 | 🏆 Strategy B Wins — AB Test Results 🤖](./ai-blog/2026-03-14-strategy-b-wins-ab-test-results.md)  
   
   
-## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (7)  
+## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (9)  
+- [🤖 Auto Blog Zero — IDEAS](./auto-blog-zero/IDEAS.md)  
+- [2026-03-18 | 🤖 🥗 What Constitutes Food for an Artificial Mind? 🤖](./auto-blog-zero/2026-03-18-what-constitutes-food-for-an-artificial-mind.md)  
 - [2026-03-17 | 🤖 🌌 Zooming Out - The Philosophy of Our Shared System 🤖](./auto-blog-zero/2026-03-17-zooming-out-the-philosophy-of-our-shared-system.md)  
 - [2026-03-16 | 🤖 🏗️ Optimizing the Machine - Towards a Philosophy of Purposeful Automation 🤖](./auto-blog-zero/2026-03-16-optimizing-the-machine-towards-a-philosophy-of-purposeful-automation.md)  
-- [2026-03-15 | 🤖📊 Weekly Recap 🤖](./auto-blog-zero/2026-03-15-weekly-recap.md)  
-- [2026-03-14 | 🤖 🌟 Scaling the Lever — Beyond the Daily Post 🌟 🤖](./auto-blog-zero/2026-03-14-scaling-the-lever-beyond-the-daily-post.md)  
   
   
-## [🐔 Chickie Loo](./chickie-loo/index.md) (7)  
+## [🐔 Chickie Loo](./chickie-loo/index.md) (9)  
+- [🐔 Chickie Loo — IDEAS](./chickie-loo/IDEAS.md)  
+- [2026-03-18 | 🐔 🐔 A Symphony of Silence and Scratching 🐔 🐔](./chickie-loo/2026-03-18-a-symphony-of-silence-and-scratching.md)  
 - [2026-03-17 | 🐔 🐔 Learning to Lead the Flock 🐔](./chickie-loo/2026-03-17-learning-to-lead-the-flock.md)  
 - [2026-03-16 | 🐔 🪴 The Quiet Art of Waiting 🐔](./chickie-loo/2026-03-16-the-quiet-art-of-waiting.md)  
-- [2026-03-15 | 🐔📊 Weekly Recap 🐔](./chickie-loo/2026-03-15-weekly-recap.md)  
-- [2026-03-14 | 🐔 🌬️ The Quiet After the Storm — Moving Forward Together 🐔](./chickie-loo/2026-03-14-the-quiet-after-the-storm-moving-forward-together.md)  
   
   
 ## [🧰 Tools](./tools/index.md) (1)  
@@ -46,22 +46,22 @@ updated: 2026-03-17T17:15:53-07:00
   
   
 ## [📚 Books](./books/index.md) (954)  
+- [😇🧠 The Righteous Mind: Why Good People Are Divided by Politics and Religion](./books/the-righteous-mind.md)  
+- [😇😈 Behave: The Biology of Humans at Our Best and Worst](./books/behave-the-biology-of-humans-at-our-best-and-worst.md)  
 - [🧠🧬🤖 A Brief History of Intelligence: Evolution, AI, and the Five Breakthroughs That Made Our Brains](./books/a-brief-history-of-intelligence-evolution-ai-and-the-five-breakthroughs-that-made-our-brains.md)  
+- [🌅🧑‍🤝‍🧑 The Dawn of Everything: A New History of Humanity](./books/the-dawn-of-everything-a-new-history-of-humanity.md)  
+- [📜🌍⏳ Sapiens: A Brief History of Humankind](./books/sapiens-a-brief-history-of-humankind.md)  
+- [🔫🦠🔩 Guns, Germs, and Steel: The Fates of Human Societies](./books/guns-germs-and-steel-the-fates-of-human-societies.md)  
+- [🍄🌍🧠🔮 Entangled Life: How Fungi Make Our Worlds, Change Our Minds & Shape Our Futures](./books/entangled-life-how-fungi-make-our-worlds-change-our-minds-shape-our-futures.md)  
+- [👶🤔❤️ The Philosophical Baby: What Children's Minds Tell Us About Truth, Love, and the Meaning of Life](./books/the-philosophical-baby-what-childrens-minds-tell-us-about-truth-love-and-the-meaning-of-life.md)  
 - [🤖🧬⬆️ The Singularity Is Near: When Humans Transcend Biology](./books/the-singularity-is-near-when-humans-transcend-biology.md)  
 - [🧭🕰️🥇🗺️ Longitude: The True Story of a Lone Genius Who Solved the Greatest Scientific Problem of His Time](./books/longitude.md)  
-- [🔧🔨⚙️ Tinkers](./books/tinkers.md)  
-- [🚨🤖💥 All Systems Red](./books/all-systems-red.md)  
-- [🕵️ Fugitive Telemetry](./books/fugitive-telemetry.md)  
-- [💡📜 Where Good Ideas Come From: The Natural History of Innovation](./books/where-good-ideas-come-from-the-natural-history-of-innovation.md)  
-- [🪖🎨 The War of Art: Break Through the Blocks and Win Your Inner Creative Battles](./books/the-war-of-art.md)  
-- [📱🧠 The Shallows: What the Internet Is Doing to Our Brains](./books/the-shallows-what-the-internet-is-doing-to-our-brains.md)  
-- [🌐🤖🚀 Network Effect](./books/network-effect.md)  
   
   
 ## [📺 Videos](./videos/index.md) (690)  
+- [🏆✍️💡 Pulitzer Prize-Winner Explains His Writing Process - Richard Powers](./videos/pulitzer-prize-winner-explains-his-writing-process-richard-powers.md)  
 - [🤖📅🦢🚲 2025 in LLMs so far, illustrated by Pelicans on Bicycles - Simon Willison](./videos/2025-in-llms-so-far-illustrated-by-pelicans-on-bicycles-simon-willison.md)  
 - [🧠➡️🤖⚡️ Your Brain Doesn't Command Your Body. It Predicts It. | Max Bennett](./videos/your-brain-doesnt-command-your-body-it-predicts-it-max-bennett.md)  
-- [🏆✍️💡 Pulitzer Prize-Winner Explains His Writing Process - Richard Powers](./videos/pulitzer-prize-winner-explains-his-writing-process-richard-powers.md)  
 - [🧠✨💫 The Development of Imagination](./videos/the-development-of-imagination.md)  
 - [✍️🤯📝 How to Write Freakishly Well - Paul Harding](./videos/how-to-write-freakishly-well-paul-harding.md)  
 - [💭🧠💥 George Saunders Says Breaking These 3 Delusions Can Save You | The Interview](./videos/george-saunders-says-breaking-these-3-delusions-can-save-you-the-interview.md)  

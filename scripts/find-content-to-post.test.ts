@@ -28,9 +28,11 @@ import {
   reconstructPath,
   updateFrontmatterTimestamp,
   updatePathTimestamps,
+  checkUrlPublished,
   PLATFORM_SECTION_HEADERS,
   ALL_PLATFORMS,
   type Platform,
+  type PublicationChecker,
   type ContentNote,
   type FindContentConfig,
 } from "./find-content-to-post.ts";
@@ -613,7 +615,7 @@ describe("bfsContentDiscovery", () => {
     cleanupTempDir(tempDir);
   });
 
-  test("discovers unposted content via BFS", () => {
+  test("discovers unposted content via BFS", async () => {
     // Create a small graph: reflection -> book -> topic
     writeNote(tempDir, "reflections/2026-03-08.md", REFLECTION_NOTE);
     writeNote(tempDir, "books/sophies-world.md", BOOK_NOTE);
@@ -636,7 +638,7 @@ This is a detailed technical blog post about auto-posting to Mastodon.`,
       platforms: ["twitter", "bluesky", "mastodon"],
     };
 
-    const results = bfsContentDiscovery(config);
+    const results = await bfsContentDiscovery(config);
     assert.ok(results.length > 0);
     // Should find content for each platform
     const platforms = results.map((r) => r.platform);
@@ -645,7 +647,7 @@ This is a detailed technical blog post about auto-posting to Mastodon.`,
     assert.ok(platforms.includes("mastodon"));
   });
 
-  test("skips index pages in BFS", () => {
+  test("skips index pages in BFS", async () => {
     writeNote(tempDir, "reflections/2026-03-08.md", `---
 title: Reflection
 URL: https://bagrounds.org/reflections/2026-03-08
@@ -661,13 +663,13 @@ This is a reflection with links to index pages only and enough content.`);
       postingHourUTC: 0, // ensure reflection is eligible regardless of current time
     };
 
-    const results = bfsContentDiscovery(config);
+    const results = await bfsContentDiscovery(config);
     // The reflection itself should be found (it's not an index)
     assert.ok(results.length > 0);
     assert.ok(results.every((r) => !isIndexOrHomePage(r.note.relativePath)));
   });
 
-  test("returns at most one result per platform", () => {
+  test("returns at most one result per platform", async () => {
     // Create multiple unposted notes
     writeNote(tempDir, "reflections/2026-03-08.md", REFLECTION_NOTE);
     writeNote(tempDir, "books/sophies-world.md", BOOK_NOTE);
@@ -678,12 +680,12 @@ This is a reflection with links to index pages only and enough content.`);
       platforms: ["twitter"],
     };
 
-    const results = bfsContentDiscovery(config);
+    const results = await bfsContentDiscovery(config);
     const twitterResults = results.filter((r) => r.platform === "twitter");
     assert.equal(twitterResults.length, 1);
   });
 
-  test("skips notes already posted on a platform", () => {
+  test("skips notes already posted on a platform", async () => {
     writeNote(tempDir, "reflections/2026-03-08.md", `---
 title: 2026-03-08 | Test
 URL: https://bagrounds.org/reflections/2026-03-08
@@ -703,13 +705,13 @@ Links: [Book](../books/unposted-book.md)`);
       platforms: ["twitter"],
     };
 
-    const results = bfsContentDiscovery(config);
+    const results = await bfsContentDiscovery(config);
     // Should find the book (not the reflection, which already has a tweet)
     assert.ok(results.length === 1);
     assert.ok(results[0]!.note.relativePath.includes("sophies-world") || results[0]!.note.relativePath.includes("unposted-book"));
   });
 
-  test("returns empty array when no reflections exist", () => {
+  test("returns empty array when no reflections exist", async () => {
     fs.mkdirSync(path.join(tempDir, "reflections"), { recursive: true });
 
     const config: FindContentConfig = {
@@ -717,11 +719,11 @@ Links: [Book](../books/unposted-book.md)`);
       platforms: ["twitter"],
     };
 
-    const results = bfsContentDiscovery(config);
+    const results = await bfsContentDiscovery(config);
     assert.equal(results.length, 0);
   });
 
-  test("handles all content already posted gracefully", () => {
+  test("handles all content already posted gracefully", async () => {
     writeNote(tempDir, "reflections/2026-03-08.md", `---
 title: 2026-03-08 | Already Posted
 URL: https://bagrounds.org/reflections/2026-03-08
@@ -744,11 +746,11 @@ Content that is long enough for a social media post about testing.
       platforms: ["twitter", "bluesky", "mastodon"],
     };
 
-    const results = bfsContentDiscovery(config);
+    const results = await bfsContentDiscovery(config);
     assert.equal(results.length, 0);
   });
 
-  test("BFS follows links breadth-first", () => {
+  test("BFS follows links breadth-first", async () => {
     // Build a graph: reflection -> bookA -> bookB
     // bookA is posted, bookB is not
     writeNote(tempDir, "reflections/2026-03-08.md", `---
@@ -787,13 +789,13 @@ This book has not been posted to any platform yet. It has great content.`);
       platforms: ["twitter"],
     };
 
-    const results = bfsContentDiscovery(config);
+    const results = await bfsContentDiscovery(config);
     assert.equal(results.length, 1);
     assert.equal(results[0]!.note.relativePath, "books/book-b.md");
     assert.equal(results[0]!.platform, "twitter");
   });
 
-  test("different platforms can find different notes", () => {
+  test("different platforms can find different notes", async () => {
     // Reflection: tweeted but not on bluesky
     // Book: on bluesky but not tweeted
     writeNote(tempDir, "reflections/2026-03-08.md", `---
@@ -825,7 +827,7 @@ A book about things that matter. With enough content for social media.
       postingHourUTC: 0, // ensure reflection is eligible regardless of current time
     };
 
-    const results = bfsContentDiscovery(config);
+    const results = await bfsContentDiscovery(config);
     // twitter should find the book (reflection already tweeted)
     // bluesky should find the reflection (book already on bluesky)
     assert.equal(results.length, 2);
@@ -837,7 +839,7 @@ A book about things that matter. With enough content for social media.
     assert.equal(blueskyResult.note.relativePath, "reflections/2026-03-08.md");
   });
 
-  test("skips today's reflection but follows its links", () => {
+  test("skips today's reflection but follows its links", async () => {
     // Use today's date for the reflection
     const today = new Date().toISOString().split("T")[0]!;
     writeNote(tempDir, `reflections/${today}.md`, `---
@@ -863,7 +865,7 @@ A book that is linked from today's reflection and has plenty of content.`);
       // Default postingHourUTC: 17 — today's reflection should NOT be eligible
     };
 
-    const results = bfsContentDiscovery(config);
+    const results = await bfsContentDiscovery(config);
     // Today's reflection should be skipped (too recent to post)
     // But its linked book should still be found
     assert.equal(results.length, 1);
@@ -871,7 +873,7 @@ A book that is linked from today's reflection and has plenty of content.`);
     assert.equal(results[0]!.platform, "twitter");
   });
 
-  test("traverses reflection linked list via wiki links to find unposted content", () => {
+  test("traverses reflection linked list via wiki links to find unposted content", async () => {
     // Most recent reflection links to previous via wiki link (doubly linked list).
     // The previous reflection links to an unposted book.
     // BFS should follow the chain: 2026-03-08 → 2026-03-07 → 2026-03-06 → book-b
@@ -954,13 +956,13 @@ An unposted book only reachable by traversing the reflection linked list.`);
       postingHourUTC: 0,
     };
 
-    const results = bfsContentDiscovery(config);
+    const results = await bfsContentDiscovery(config);
     // BFS starts at 2026-03-08 → follows wiki link to 2026-03-07 → follows to 2026-03-06 → finds book-b
     assert.equal(results.length, 1);
     assert.equal(results[0]!.note.relativePath, "books/book-b.md");
   });
 
-  test("discovers content via Obsidian wiki links (vault format)", () => {
+  test("discovers content via Obsidian wiki links (vault format)", async () => {
     // Simulate vault content with wiki links (not markdown links)
     writeNote(tempDir, "reflections/2026-03-08.md", `---
 title: 2026-03-08 | Wiki Link Reflection
@@ -991,13 +993,13 @@ An overview of Western philosophical traditions and their key thinkers.`);
       postingHourUTC: 0,
     };
 
-    const results = bfsContentDiscovery(config);
+    const results = await bfsContentDiscovery(config);
     assert.ok(results.length > 0, "Should find content via wiki links");
     // BFS should find the reflection itself (unposted on bluesky) as first result
     assert.equal(results[0]!.platform, "bluesky");
   });
 
-  test("handles vault with only wiki links and no markdown links", () => {
+  test("handles vault with only wiki links and no markdown links", async () => {
     // Reflection has only wiki links, no markdown links
     writeNote(tempDir, "reflections/2026-03-08.md", `---
 title: 2026-03-08 | Vault Format
@@ -1036,7 +1038,7 @@ A test book with enough content for a social media post about its themes.`);
       postingHourUTC: 0,
     };
 
-    const results = bfsContentDiscovery(config);
+    const results = await bfsContentDiscovery(config);
     // The most recent reflection is fully posted, but its wiki links should be followed
     assert.ok(results.length > 0, "Should find content via wiki links from posted note");
     // Should find either the book or the older reflection
@@ -1059,7 +1061,7 @@ describe("discoverContentToPost", () => {
     cleanupTempDir(tempDir);
   });
 
-  test("prioritizes prior day reflection when past posting hour", () => {
+  test("prioritizes prior day reflection when past posting hour", async () => {
     const yesterday = getYesterdayDate();
     writeNote(tempDir, `reflections/${yesterday}.md`, `---
 share: true
@@ -1083,7 +1085,7 @@ Some old content that might be found by BFS if not for the priority.`);
       platforms: ["twitter", "bluesky"],
     };
 
-    const results = discoverContentToPost(config, true); // past posting hour
+    const results = await discoverContentToPost(config, true); // past posting hour
     assert.ok(results.length > 0);
     // All results should be yesterday's reflection
     for (const result of results) {
@@ -1091,7 +1093,7 @@ Some old content that might be found by BFS if not for the priority.`);
     }
   });
 
-  test("falls back to BFS when prior day reflection already posted", () => {
+  test("falls back to BFS when prior day reflection already posted", async () => {
     const yesterday = getYesterdayDate();
     writeNote(tempDir, `reflections/${yesterday}.md`, `---
 share: true
@@ -1122,11 +1124,11 @@ A book that hasn't been posted to any platform yet. Lots of content here.`);
       platforms: ["twitter", "bluesky"],
     };
 
-    const results = discoverContentToPost(config, true);
+    const results = await discoverContentToPost(config, true);
     assert.ok(results.length > 0);
   });
 
-  test("uses BFS when not past posting hour", () => {
+  test("uses BFS when not past posting hour", async () => {
     const yesterday = getYesterdayDate();
     // Create yesterday's reflection (not posted)
     writeNote(tempDir, `reflections/${yesterday}.md`, `---
@@ -1142,22 +1144,22 @@ Content.`);
     };
 
     // Not past posting hour — should use BFS, not prior-day priority
-    const results = discoverContentToPost(config, false);
+    const results = await discoverContentToPost(config, false);
     // BFS should still find the reflection since it's the most recent
     assert.ok(results.length >= 0); // may or may not find content depending on BFS
   });
 
-  test("returns empty array when no platforms configured", () => {
+  test("returns empty array when no platforms configured", async () => {
     const config: FindContentConfig = {
       contentDir: tempDir,
       platforms: [],
     };
 
-    const results = discoverContentToPost(config, true);
+    const results = await discoverContentToPost(config, true);
     assert.equal(results.length, 0);
   });
 
-  test("handles all content posted gracefully", () => {
+  test("handles all content posted gracefully", async () => {
     const yesterday = getYesterdayDate();
     writeNote(tempDir, `reflections/${yesterday}.md`, `---
 title: ${yesterday} | Posted
@@ -1178,7 +1180,7 @@ Everything posted. All content for a great reflection post.
       platforms: ["twitter", "bluesky"],
     };
 
-    const results = discoverContentToPost(config, true);
+    const results = await discoverContentToPost(config, true);
     // Prior day reflection is fully posted, BFS should find the same
     assert.equal(results.length, 0);
   });
@@ -1563,7 +1565,7 @@ describe("bfsContentDiscovery path tracking", () => {
     cleanupTempDir(tempDir);
   });
 
-  test("includes pathFromRoot for directly linked content (1 hop)", () => {
+  test("includes pathFromRoot for directly linked content (1 hop)", async () => {
     writeNote(tempDir, "reflections/2026-03-08.md", `---
 title: 2026-03-08 | Reflection
 URL: https://bagrounds.org/reflections/2026-03-08
@@ -1593,7 +1595,7 @@ A book directly linked from the reflection with enough content.`);
       postingHourUTC: 0,
     };
 
-    const results = bfsContentDiscovery(config);
+    const results = await bfsContentDiscovery(config);
     assert.equal(results.length, 1);
     assert.equal(results[0]!.note.relativePath, "books/direct-book.md");
     assert.deepEqual(results[0]!.pathFromRoot, [
@@ -1602,7 +1604,7 @@ A book directly linked from the reflection with enough content.`);
     ]);
   });
 
-  test("includes pathFromRoot for deeply linked content (3 hops)", () => {
+  test("includes pathFromRoot for deeply linked content (3 hops)", async () => {
     // Build chain: reflection → 2026-03-07 → 2026-03-06 → deep-book
     writeNote(tempDir, "reflections/2026-03-08.md", `---
 title: 2026-03-08 | Recent
@@ -1666,7 +1668,7 @@ A book only reachable 3 hops deep. This has plenty of content for posting.`);
       postingHourUTC: 0,
     };
 
-    const results = bfsContentDiscovery(config);
+    const results = await bfsContentDiscovery(config);
     assert.equal(results.length, 1);
     assert.equal(results[0]!.note.relativePath, "books/deep-book.md");
     assert.deepEqual(results[0]!.pathFromRoot, [
@@ -1677,7 +1679,7 @@ A book only reachable 3 hops deep. This has plenty of content for posting.`);
     ]);
   });
 
-  test("pathFromRoot for root node is just the root itself", () => {
+  test("pathFromRoot for root node is just the root itself", async () => {
     writeNote(tempDir, "reflections/2026-03-08.md", `---
 title: 2026-03-08 | Reflection
 URL: https://bagrounds.org/reflections/2026-03-08
@@ -1691,12 +1693,12 @@ Content with enough substance for a social media post about this day.`);
       postingHourUTC: 0,
     };
 
-    const results = bfsContentDiscovery(config);
+    const results = await bfsContentDiscovery(config);
     assert.equal(results.length, 1);
     assert.deepEqual(results[0]!.pathFromRoot, ["reflections/2026-03-08.md"]);
   });
 
-  test("pathFromRoot uses shortest path when multiple routes exist", () => {
+  test("pathFromRoot uses shortest path when multiple routes exist", async () => {
     // Create a diamond graph: reflection → bookA → bookC
     //                         reflection → bookB → bookC
     // Since bookA and bookB are both 1 hop from reflection,
@@ -1762,7 +1764,7 @@ The target book reachable via two routes. Should have a 2-hop shortest path.`);
       postingHourUTC: 0,
     };
 
-    const results = bfsContentDiscovery(config);
+    const results = await bfsContentDiscovery(config);
     assert.equal(results.length, 1);
     assert.equal(results[0]!.note.relativePath, "books/book-c.md");
     // Path should be 3 elements: reflection → one intermediate → book-c
@@ -1785,7 +1787,7 @@ describe("discoverContentToPost path tracking", () => {
     cleanupTempDir(tempDir);
   });
 
-  test("prior day reflection has single-element pathFromRoot", () => {
+  test("prior day reflection has single-element pathFromRoot", async () => {
     const yesterday = getYesterdayDate();
     writeNote(tempDir, `reflections/${yesterday}.md`, `---
 share: true
@@ -1801,7 +1803,7 @@ Content for yesterday's reflection that has enough substance for posting.`);
       platforms: ["twitter"],
     };
 
-    const results = discoverContentToPost(config, true);
+    const results = await discoverContentToPost(config, true);
     assert.ok(results.length > 0);
     assert.deepEqual(results[0]!.pathFromRoot, [`reflections/${yesterday}.md`]);
   });

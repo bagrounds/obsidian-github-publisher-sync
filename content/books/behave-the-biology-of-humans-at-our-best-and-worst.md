@@ -6,7 +6,7 @@ URL: https://bagrounds.org/books/behave-the-biology-of-humans-at-our-best-and-wo
 share: true
 CTA: 🧠 Grasp human behavior.
 affiliate link: https://amzn.to/4fVyAa2
-updated: 2026-03-18T14:30:36.764Z
+updated: 2026-03-18T22:45:25.162Z
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 😇😈 Behave: The Biology of Humans at Our Best and Worst  

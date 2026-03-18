@@ -1,0 +1,71 @@
+name: Transform Vault Content
+
+on:
+  push:
+    paths: ['vault/**']
+  workflow_dispatch:
+    inputs:
+      compare_only:
+        description: 'Only compare (do not overwrite content/)'
+        required: false
+        default: 'true'
+        type: choice
+        options:
+          - 'true'
+          - 'false'
+
+permissions:
+  contents: write
+
+jobs:
+  transform:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Cache node_modules
+        uses: actions/cache@v4
+        id: cache-deps
+        with:
+          path: node_modules
+          key: v3-${{ runner.os }}-node22-${{ hashFiles('package-lock.json') }}
+
+      - name: Install dependencies
+        if: steps.cache-deps.outputs.cache-hit != 'true'
+        run: npm ci
+
+      - name: Transform vault content
+        run: |
+          npx tsx scripts/transform-vault.ts \
+            --vault vault/ \
+            --output content-ci/
+
+      - name: Compare with existing content
+        id: compare
+        continue-on-error: true
+        run: |
+          npx tsx scripts/compare-content.ts \
+            --dir1 content/ \
+            --dir2 content-ci/
+
+      - name: Copy transformed content (Phase 4+)
+        if: >
+          github.event_name == 'workflow_dispatch' &&
+          github.event.inputs.compare_only == 'false' &&
+          steps.compare.outcome == 'success'
+        run: |
+          echo "🚀 Overwriting content/ with CI-transformed vault content"
+          rsync -av --delete content-ci/ content/
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add content/
+          git commit -m "chore: update content from vault transformation" || echo "No changes"
+          git push

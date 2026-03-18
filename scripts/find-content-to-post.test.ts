@@ -1886,3 +1886,337 @@ describe("auto-post ordering: timestamps before main()", () => {
     }
   });
 });
+
+// --- Publication Checker Tests ---
+
+describe("checkUrlPublished", () => {
+  test("is a function", () => {
+    assert.equal(typeof checkUrlPublished, "function");
+  });
+});
+
+describe("bfsContentDiscovery with isPublished checker", () => {
+  let tempDir: string;
+
+  beforeEach(() => {
+    tempDir = createTempDir();
+  });
+
+  afterEach(() => {
+    cleanupTempDir(tempDir);
+  });
+
+  test("skips unpublished content (404) and continues BFS to find published content", async () => {
+    // Graph: reflection (already posted) -> unpublished-book, published-topic
+    writeNote(tempDir, "reflections/2026-03-08.md", `---
+title: Reflection
+URL: https://bagrounds.org/reflections/2026-03-08
+---
+[Home](../index.md) | [⏮️](./2026-03-07.md)
+# Reflection
+
+## Books
+- [Unpublished Book](../books/unpublished.md)
+
+## Topics
+- [Published Topic](../topics/published-topic.md)
+
+## 🐦 Tweet
+<blockquote class="twitter-tweet"><p>Already tweeted</p></blockquote>
+`);
+    writeNote(tempDir, "books/unpublished.md", `---
+title: Unpublished Book
+URL: https://bagrounds.org/books/unpublished
+---
+[Home](../index.md) > [Books](./index.md)
+# Unpublished Book
+
+This book page is not yet live on the website. It has enough content to be postable.
+`);
+    writeNote(tempDir, "topics/published-topic.md", `---
+title: Published Topic
+URL: https://bagrounds.org/topics/published-topic
+---
+[Home](../index.md) > [Topics](./index.md)
+# Published Topic
+
+This topic is live on the website and has plenty of content for social media posting.
+`);
+
+    const publishedUrls = new Set([
+      "https://bagrounds.org/reflections/2026-03-08",
+      "https://bagrounds.org/topics/published-topic",
+    ]);
+
+    const mockChecker: PublicationChecker = async (url) => publishedUrls.has(url);
+
+    const config: FindContentConfig = {
+      contentDir: tempDir,
+      platforms: ["twitter"],
+      isPublished: mockChecker,
+    };
+
+    const results = await bfsContentDiscovery(config);
+    assert.equal(results.length, 1);
+    assert.equal(results[0]!.note.title, "Published Topic");
+    assert.equal(results[0]!.platform, "twitter");
+  });
+
+  test("posts content when all candidates are published", async () => {
+    writeNote(tempDir, "reflections/2026-03-08.md", `---
+title: Reflection
+URL: https://bagrounds.org/reflections/2026-03-08
+---
+[Home](../index.md) | [⏮️](./2026-03-07.md)
+# Reflection
+
+## Books
+- [Good Book](../books/good-book.md)
+`);
+    writeNote(tempDir, "books/good-book.md", `---
+title: Good Book
+URL: https://bagrounds.org/books/good-book
+---
+[Home](../index.md) > [Books](./index.md)
+# Good Book
+
+A wonderful book with lots of interesting content about functional programming.
+`);
+
+    const mockChecker: PublicationChecker = async () => true;
+
+    const config: FindContentConfig = {
+      contentDir: tempDir,
+      platforms: ["twitter"],
+      isPublished: mockChecker,
+    };
+
+    const results = await bfsContentDiscovery(config);
+    assert.equal(results.length, 1);
+    assert.equal(results[0]!.note.title, "Good Book");
+  });
+
+  test("returns empty when all reachable content is unpublished", async () => {
+    writeNote(tempDir, "reflections/2026-03-08.md", `---
+title: Reflection
+URL: https://bagrounds.org/reflections/2026-03-08
+---
+[Home](../index.md) | [⏮️](./2026-03-07.md)
+# Reflection
+
+## Books
+- [Unpublished Book](../books/unpublished.md)
+`);
+    writeNote(tempDir, "books/unpublished.md", `---
+title: Unpublished Book
+URL: https://bagrounds.org/books/unpublished
+---
+[Home](../index.md) > [Books](./index.md)
+# Unpublished Book
+
+This book page is not yet live on the website but has enough content.
+`);
+
+    const mockChecker: PublicationChecker = async () => false;
+
+    const config: FindContentConfig = {
+      contentDir: tempDir,
+      platforms: ["twitter", "bluesky"],
+      isPublished: mockChecker,
+    };
+
+    const results = await bfsContentDiscovery(config);
+    assert.equal(results.length, 0);
+  });
+
+  test("without isPublished checker, all content is accepted (backward compatible)", async () => {
+    writeNote(tempDir, "reflections/2026-03-08.md", `---
+title: Reflection
+URL: https://bagrounds.org/reflections/2026-03-08
+---
+[Home](../index.md) | [⏮️](./2026-03-07.md)
+# Reflection
+
+## Books
+- [A Book](../books/some-book.md)
+`);
+    writeNote(tempDir, "books/some-book.md", `---
+title: Some Book
+URL: https://bagrounds.org/books/some-book
+---
+[Home](../index.md) > [Books](./index.md)
+# Some Book
+
+A book that would be a 404 on the real site but no checker is configured.
+`);
+
+    const config: FindContentConfig = {
+      contentDir: tempDir,
+      platforms: ["twitter"],
+      // no isPublished — backward compatible
+    };
+
+    const results = await bfsContentDiscovery(config);
+    assert.equal(results.length, 1);
+    assert.equal(results[0]!.note.title, "Some Book");
+  });
+
+  test("skips unpublished content but still follows its links", async () => {
+    // Graph: reflection -> unpublished-book -> deep-topic (published)
+    // The BFS should skip the book but still follow its links to find the topic
+    writeNote(tempDir, "reflections/2026-03-08.md", `---
+title: Reflection
+URL: https://bagrounds.org/reflections/2026-03-08
+---
+[Home](../index.md) | [⏮️](./2026-03-07.md)
+# Reflection
+
+- [Unpublished Book](../books/unpublished.md)
+`);
+    writeNote(tempDir, "books/unpublished.md", `---
+title: Unpublished Book
+URL: https://bagrounds.org/books/unpublished
+---
+[Home](../index.md) > [Books](./index.md)
+# Unpublished Book
+
+This book is not live yet. It has enough content and links to a deeper topic.
+
+- [Deep Topic](../topics/deep-topic.md)
+`);
+    writeNote(tempDir, "topics/deep-topic.md", `---
+title: Deep Topic
+URL: https://bagrounds.org/topics/deep-topic
+---
+[Home](../index.md) > [Topics](./index.md)
+# Deep Topic
+
+A topic only reachable through the unpublished book. Should still be found.
+`);
+
+    const publishedUrls = new Set([
+      "https://bagrounds.org/reflections/2026-03-08",
+      "https://bagrounds.org/topics/deep-topic",
+    ]);
+
+    const mockChecker: PublicationChecker = async (url) => publishedUrls.has(url);
+
+    const config: FindContentConfig = {
+      contentDir: tempDir,
+      platforms: ["twitter"],
+      isPublished: mockChecker,
+    };
+
+    const results = await bfsContentDiscovery(config);
+    assert.equal(results.length, 1);
+    assert.equal(results[0]!.note.title, "Deep Topic");
+  });
+
+  test("checker is called once per candidate note, not per platform", async () => {
+    const checkedUrls: string[] = [];
+    const mockChecker: PublicationChecker = async (url) => {
+      checkedUrls.push(url);
+      return true;
+    };
+
+    writeNote(tempDir, "reflections/2026-03-08.md", `---
+title: Reflection
+URL: https://bagrounds.org/reflections/2026-03-08
+---
+[Home](../index.md) | [⏮️](./2026-03-07.md)
+# Reflection
+
+Nothing else linked here. Just the reflection itself with enough body content.
+`);
+
+    const config: FindContentConfig = {
+      contentDir: tempDir,
+      platforms: ["twitter", "bluesky", "mastodon"],
+      isPublished: mockChecker,
+    };
+
+    await bfsContentDiscovery(config);
+    // The reflection URL should be checked exactly once (not once per platform)
+    const reflectionChecks = checkedUrls.filter(
+      (u) => u === "https://bagrounds.org/reflections/2026-03-08",
+    );
+    assert.equal(reflectionChecks.length, 1);
+  });
+});
+
+describe("discoverContentToPost with isPublished checker", () => {
+  let tempDir: string;
+
+  beforeEach(() => {
+    tempDir = createTempDir();
+  });
+
+  afterEach(() => {
+    cleanupTempDir(tempDir);
+  });
+
+  test("skips unpublished prior day reflection and falls back to BFS", async () => {
+    const yesterday = getYesterdayDate();
+    writeNote(tempDir, `reflections/${yesterday}.md`, `---
+title: Yesterday's Reflection
+URL: https://bagrounds.org/reflections/${yesterday}
+---
+[Home](../index.md)
+# Yesterday's Reflection
+
+This reflection hasn't been published to the website yet but has enough content.
+- [Published Book](../books/published.md)
+`);
+    writeNote(tempDir, "books/published.md", `---
+title: Published Book
+URL: https://bagrounds.org/books/published
+---
+[Home](../index.md) > [Books](./index.md)
+# Published Book
+
+A book that is live on the website with plenty of content for social media posting.
+`);
+
+    const publishedUrls = new Set([
+      "https://bagrounds.org/books/published",
+    ]);
+
+    const mockChecker: PublicationChecker = async (url) => publishedUrls.has(url);
+
+    const config: FindContentConfig = {
+      contentDir: tempDir,
+      platforms: ["twitter"],
+      isPublished: mockChecker,
+    };
+
+    const results = await discoverContentToPost(config, true);
+    // Should skip the unpublished reflection and find the published book via BFS
+    assert.equal(results.length, 1);
+    assert.equal(results[0]!.note.title, "Published Book");
+  });
+
+  test("posts published prior day reflection normally", async () => {
+    const yesterday = getYesterdayDate();
+    writeNote(tempDir, `reflections/${yesterday}.md`, `---
+title: Yesterday's Reflection
+URL: https://bagrounds.org/reflections/${yesterday}
+---
+[Home](../index.md)
+# Yesterday's Reflection
+
+This reflection is live on the website with enough content to share on social media.
+`);
+
+    const mockChecker: PublicationChecker = async () => true;
+
+    const config: FindContentConfig = {
+      contentDir: tempDir,
+      platforms: ["twitter"],
+      isPublished: mockChecker,
+    };
+
+    const results = await discoverContentToPost(config, true);
+    assert.equal(results.length, 1);
+    assert.equal(results[0]!.note.title, "Yesterday's Reflection");
+  });
+});

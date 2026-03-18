@@ -44,7 +44,7 @@ Channel: DRM News
 ## 📚 Book Recommendations  
   
 ### ↔️ Similar  
-* 📘 The Triangle of Power by Alexander Stubb explores how a values-based realism can help rebalance the new world order among competing global powers.  
+* [🔺⚡🔄🌍 The Triangle of Power: Rebalancing the New World Order](../books/the-triangle-of-power-rebalancing-the-new-world-order.md) by Alexander Stubb explores how a values-based realism can help rebalance the new world order among competing global powers.  
 * 📗 The End of the World is Just the Beginning by Peter Zeihan examines the collapse of globalization and the resulting shift toward regional security and economic blocs.  
   
 ### 🆚 Contrasting  

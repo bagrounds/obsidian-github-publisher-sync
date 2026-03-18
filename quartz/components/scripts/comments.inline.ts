@@ -86,6 +86,18 @@ document.addEventListener("nav", () => {
 
   giscusContainer.appendChild(giscusScript)
 
+  // Swap static comments for live Giscus iframe when it loads
+  const hideStaticComments = (event: MessageEvent) => {
+    if (event.origin !== "https://giscus.app") return
+    const staticComments = document.querySelector("[data-static-giscus]")
+    if (staticComments instanceof HTMLElement) {
+      staticComments.remove()
+    }
+    window.removeEventListener("message", hideStaticComments)
+  }
+  window.addEventListener("message", hideStaticComments)
+  window.addCleanup(() => window.removeEventListener("message", hideStaticComments))
+
   document.addEventListener("themechange", changeTheme)
   window.addCleanup(() => document.removeEventListener("themechange", changeTheme))
 })

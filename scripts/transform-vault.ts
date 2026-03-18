@@ -58,8 +58,28 @@ const findMarkdownFiles = (dir: string, base: string = dir): string[] =>
 interface TransformResult {
   readonly transformed: number;
   readonly skipped: number;
-  readonly errors: number;
 }
+
+type FileOutcome = "transformed" | "skipped";
+
+const processFile = (
+  relativePath: string,
+  vaultDir: string,
+  outputDir: string,
+): FileOutcome => {
+  const sourcePath = path.join(vaultDir, relativePath);
+  const content = fs.readFileSync(sourcePath, "utf-8");
+  const posixPath = relativePath.split(path.sep).join(path.posix.sep);
+  const result = transformFile(content, posixPath);
+
+  if (result === null) return "skipped";
+
+  const outputPath = path.join(outputDir, relativePath);
+  fs.mkdirSync(path.dirname(outputPath), { recursive: true });
+  fs.writeFileSync(outputPath, result, "utf-8");
+  console.log(`  ✅ ${relativePath}`);
+  return "transformed";
+};
 
 const transformVault = (options: TransformOptions): TransformResult => {
   const { vaultDir, outputDir } = options;
@@ -72,37 +92,14 @@ const transformVault = (options: TransformOptions): TransformResult => {
   const files = findMarkdownFiles(vaultDir);
   console.log(`Found ${files.length} markdown files in ${vaultDir}`);
 
-  let transformed = 0;
-  let skipped = 0;
-  let errors = 0;
-
-  files.forEach((relativePath) => {
-    const sourcePath = path.join(vaultDir, relativePath);
-    const content = fs.readFileSync(sourcePath, "utf-8");
-
-    // Use posix path for the transformation (consistent slash direction)
-    const posixPath = relativePath.split(path.sep).join(path.posix.sep);
-
-    const result = transformFile(content, posixPath);
-
-    if (result === null) {
-      skipped++;
-      return;
-    }
-
-    const outputPath = path.join(outputDir, relativePath);
-    const outputDirPath = path.dirname(outputPath);
-
-    fs.mkdirSync(outputDirPath, { recursive: true });
-    fs.writeFileSync(outputPath, result, "utf-8");
-    transformed++;
-    console.log(`  ✅ ${relativePath}`);
-  });
+  const outcomes = files.map((f) => processFile(f, vaultDir, outputDir));
+  const transformed = outcomes.filter((o) => o === "transformed").length;
+  const skipped = outcomes.filter((o) => o === "skipped").length;
 
   console.log(
-    `\nDone: ${transformed} transformed, ${skipped} skipped (no share: true), ${errors} errors`,
+    `\nDone: ${transformed} transformed, ${skipped} skipped (no share: true)`,
   );
-  return { transformed, skipped, errors };
+  return { transformed, skipped };
 };
 
 // --- Entry Point ---

@@ -56,10 +56,10 @@ const findFirstDiff = (
   lines2: readonly string[],
 ): number => {
   const maxLen = Math.max(lines1.length, lines2.length);
-  for (let i = 0; i < maxLen; i++) {
-    if (lines1[i] !== lines2[i]) return i + 1;
-  }
-  return -1;
+  const diffIndex = Array.from({ length: maxLen }, (_, i) => i).findIndex(
+    (i) => lines1[i] !== lines2[i],
+  );
+  return diffIndex >= 0 ? diffIndex + 1 : -1;
 };
 
 const compareFiles = (

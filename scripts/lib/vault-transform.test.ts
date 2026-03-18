@@ -921,3 +921,145 @@ describe("integration: code block protection", () => {
     assert.ok(result.includes("[another link](./other.md)"));
   });
 });
+
+// --- Property-Based Invariant Tests ---
+
+describe("property: resolveRelativePath", () => {
+  const directories = [
+    ".",
+    "reflections",
+    "books",
+    "topics/programming-problems",
+    "ai-blog",
+  ];
+  const targets = [
+    "index",
+    "reflections/2024-04-21",
+    "books/dune",
+    "topics/ai",
+    "/index",
+  ];
+
+  directories.forEach((dir) => {
+    targets.forEach((target) => {
+      it(`${target} from ${dir} starts with ./ or ../`, () => {
+        const result = resolveRelativePath(target, dir);
+        assert.ok(
+          result.startsWith("./") || result.startsWith("../"),
+          `Expected relative prefix, got: "${result}"`,
+        );
+      });
+
+      it(`${target} from ${dir} ends with .md`, () => {
+        const result = resolveRelativePath(target, dir);
+        assert.ok(
+          result.endsWith(".md"),
+          `Expected .md extension, got: "${result}"`,
+        );
+      });
+    });
+  });
+});
+
+describe("property: convertWikilink always removes [[", () => {
+  const wikilinks = [
+    "[[note]]",
+    "[[folder/note|Alias]]",
+    "[[note#heading]]",
+    "[[note#heading|Alias]]",
+    "[[/absolute|Home]]",
+    "[[deep/path/note|Display]]",
+    "[[note#Emoji 🎉 Heading|Text]]",
+  ];
+
+  wikilinks.forEach((wl) => {
+    it(`${wl} produces no [[ in output`, () => {
+      const result = convertWikilink(wl, "reflections");
+      assert.ok(
+        !result.includes("[["),
+        `Output still contains [[: "${result}"`,
+      );
+    });
+
+    it(`${wl} produces valid markdown link`, () => {
+      const result = convertWikilink(wl, "reflections");
+      assert.ok(
+        /\[.*\]\(.*\)/.test(result),
+        `Not a valid markdown link: "${result}"`,
+      );
+    });
+  });
+});
+
+describe("property: transformFile preserves frontmatter", () => {
+  const frontmatters = [
+    "---\nshare: true\ntitle: Test\n---",
+    '---\nshare: true\nAuthor: "[[someone]]"\ntags:\n  - a\n  - b\n---',
+    "---\nshare: true\nURL: https://example.com\naliases:\n  - Alias\n---",
+  ];
+
+  frontmatters.forEach((fm, i) => {
+    it(`frontmatter variant ${i + 1} is preserved exactly`, () => {
+      const content = `${fm}\n[[note|Link]]`;
+      const result = transformFile(content, "test.md");
+      assert.ok(result);
+      assert.ok(
+        result.startsWith(fm),
+        `Frontmatter was modified: "${result.slice(0, fm.length)}"`,
+      );
+    });
+  });
+});
+
+describe("property: transformFile body has no wikilinks", () => {
+  const bodies = [
+    "[[a]] and [[b|B]] and [[c#d|E]]",
+    "Mixed [[link]] and [md](url) content",
+    "Nested [[dir/file|text]] paths [[other/dir/deep|deep]]",
+    "```\n[[code block]]\n```\n[[outside]]",
+  ];
+
+  bodies.forEach((body, i) => {
+    it(`body variant ${i + 1} has all wikilinks converted (outside code blocks)`, () => {
+      const content = `---\nshare: true\n---\n${body}`;
+      const result = transformFile(content, "test.md");
+      assert.ok(result);
+      const { body: resultBody } = splitFrontmatter(result);
+
+      let inCode = false;
+      resultBody.split("\n").forEach((line) => {
+        if (line.trimStart().startsWith("```")) {
+          inCode = !inCode;
+          return;
+        }
+        if (!inCode) {
+          assert.ok(
+            !line.includes("[["),
+            `Unconverted wikilink on line: "${line}"`,
+          );
+        }
+      });
+    });
+  });
+});
+
+describe("property: addHardBreaks output lines end with two spaces", () => {
+  const inputs = [
+    "Single line",
+    "Line 1\nLine 2\nLine 3",
+    "With\n\nBlank lines",
+    "Already trailing  \nMixed",
+  ];
+
+  inputs.forEach((input, i) => {
+    it(`input variant ${i + 1}: every line ends with two spaces`, () => {
+      const result = addHardBreaks(input);
+      result.split("\n").forEach((line) => {
+        assert.ok(
+          line.endsWith("  "),
+          `Line doesn't end with two spaces: "${line}"`,
+        );
+      });
+    });
+  });
+});

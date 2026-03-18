@@ -9,7 +9,7 @@ Platform:
 Channel: David Perell
 tags:
 youtube: https://youtu.be/QUDlpMN-f5w
-updated: 2026-03-17T16:26:49.687Z
+updated: 2026-03-18T08:14:56.817Z
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 🏆✍️💡 Pulitzer Prize-Winner Explains His Writing Process - Richard Powers  

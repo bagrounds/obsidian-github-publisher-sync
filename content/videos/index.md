@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-03-18T09:39:02-07:00
+updated: 2026-03-18T15:40:26-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (690)  
+# 📺 Videos (691)  
 - [💰🤑🤖💡🚀💲 $0.10/Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
@@ -178,6 +178,7 @@ updated: 2026-03-18T09:39:02-07:00
 - [🔎🏠📰🗣️🇺🇸 FBI searches reporter’s home, raising concerns about intimidation of free press](./fbi-searches-reporters-home-raising-concerns-about-intimidation-of-free-press.md)  
 - [📉❓⬇️💰 Federal Reserve cuts interest rates amid economic uncertainty](./federal-reserve-cuts-interest-rates-amid-economic-uncertainty.md)  
 - [⚠️🌊🏘️❌ FEMA missed major flood risks at Camp Mystic in Texas, new analysis reveals](./fema-missed-major-flood-risks-at-camp-mystic-in-texas-new-analysis-reveals.md)  
+- [🇫🇮🇺🇸🗣️👑📢 Finnish President Stubb on Trump, MAGA, JD Vance Speech, Rubio & US Foreign Policy | AC1G](./finnish-president-stubb-on-trump-maga-jd-vance-speech-rubio-us-foreign-policy-ac1g.md)  
 - [💉🚫🌴 Florida to end state vaccine mandates](./florida-to-end-state-vaccine-mandates-reuters.md)  
 - [🧠🍎💊📈 Food & Supplements for Brain Health & Cognitive Performance | Huberman Lab Essentials](./food-supplements-for-brain-health-cognitive-performance-huberman-lab-essentials.md)  
 - [👨‍⚕️➡️😬💉💥 Former CDC director reacts to RFK Jr.'s firing of entire vaccine advisory panel](./former-cdc-director-reacts-to-rfk-jrs-firing-of-entire-vaccine-advisory-panel.md)  

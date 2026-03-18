@@ -5,11 +5,11 @@ aliases:
 title: 🪞 Reflections
 URL: https://bagrounds.org/reflections
 backlinks: false
-updated: 2026-03-17T17:15:53-07:00
+updated: 2026-03-18T09:39:02-07:00
 ---
 [Home](../index.md)  
 # 🪞 Reflections (488)  
-- [2026-03-17](./2026-03-17.md)  
+- [2026-03-17 | 💨 Zooming 🐓 Flock 👩🏼‍🏫 Explains 🧠 Intelligence 📚📺🐔🤖](./2026-03-17.md)  
 - [2026-03-16 | 🗑️ Simplifying 🔗 Links 🏗️ Optimizing 🪴 Quiet 🧠 Imagination 🤖🤖🐔📺](./2026-03-16.md)  
 - [2026-03-15 | 🕵️ Fugitive 📊 Recap 🏆 Turing ⚖️ Antitrust ✍️ Pulitzer 📚🐔🤖📰📺](./2026-03-15.md)  
 - [2026-03-14 | 🧩 Porting 🐔 Chickie 🎯 Strategy B 🕵️ SPA 🌬️ Quiet 🚀 Scaling 🤖](./2026-03-14.md)  

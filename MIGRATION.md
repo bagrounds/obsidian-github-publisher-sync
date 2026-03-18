@@ -149,9 +149,8 @@ For deeper validation, build both content directories with Quartz and diff the H
 npx quartz build
 mv public/ public-old/
 
-# Build CI-transformed content (point Quartz at content-ci/)
-# Update quartz.config.ts contentDir temporarily
-npx quartz build
+# Build CI-transformed content
+npx quartz build --directory content-ci
 diff -r public-old/ public/
 ```
 

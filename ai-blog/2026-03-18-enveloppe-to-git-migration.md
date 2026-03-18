@@ -49,7 +49,7 @@ tags:
 10. 📝 **Folder notes**: renaming to `index.md`
 11. 🖼️ **Attachment handling**: images, PDFs, and assets uploaded alongside notes
 
-⚠️ The CI transformer currently handles items 1, 2, 5, and 6. Items 3, 4, and 7–11 will be needed for 100% parity and will be implemented iteratively during Phase 3 as we compare real vault output against existing content.
+⚠️ The CI transformer currently handles wikilink conversion, internal link resolution, hard line breaks, and frontmatter filtering. The remaining features (dataview, embeds, tags, text replacement, folder notes, attachments) will be implemented iteratively during Phase 3 as we compare real vault output against existing content.
 
 ## 🏗️ Architecture
 

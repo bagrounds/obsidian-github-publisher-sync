@@ -2,11 +2,19 @@
  * Vault content transformation.
  *
  * Transforms raw Obsidian vault markdown files into the format expected
- * by this repository's Quartz build, replicating Enveloppe's conversion:
+ * by this repository's Quartz build. Currently implements a subset of
+ * Enveloppe's conversion pipeline:
  *
  * - [[wikilinks]] → [markdown](links)
  * - Hard line breaks (trailing two spaces on every line)
  * - Filter by share: true frontmatter
+ *
+ * Not yet implemented (see MIGRATION.md for full Enveloppe feature list):
+ * - Dataview query rendering
+ * - Embed baking (transclusion inlining)
+ * - Inline tag → frontmatter promotion
+ * - Text replacements
+ * - Folder note renaming
  *
  * All exported functions are pure (no I/O side effects).
  *

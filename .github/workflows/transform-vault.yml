@@ -2,20 +2,11 @@ name: Transform Vault Content
 
 on:
   push:
-    paths: ['vault/**']
+    paths: ["vault/**"]
   workflow_dispatch:
-    inputs:
-      compare_only:
-        description: 'Only compare (do not overwrite content/)'
-        required: false
-        default: 'true'
-        type: choice
-        options:
-          - 'true'
-          - 'false'
 
 permissions:
-  contents: write
+  contents: read
 
 jobs:
   transform:
@@ -49,23 +40,4 @@ jobs:
             --output content-ci/
 
       - name: Compare with existing content
-        id: compare
-        continue-on-error: true
-        run: |
-          npx tsx scripts/compare-content.ts \
-            --dir1 content/ \
-            --dir2 content-ci/
-
-      - name: Copy transformed content (Phase 4+)
-        if: >
-          github.event_name == 'workflow_dispatch' &&
-          github.event.inputs.compare_only == 'false' &&
-          steps.compare.outcome == 'success'
-        run: |
-          echo "🚀 Overwriting content/ with CI-transformed vault content"
-          rsync -av --delete content-ci/ content/
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add content/
-          git commit -m "chore: update content from vault transformation" || echo "No changes"
-          git push
+        run: diff -r content/ content-ci/

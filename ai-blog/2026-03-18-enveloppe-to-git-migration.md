@@ -12,6 +12,7 @@ tags:
   - obsidian
   - migration
 ---
+
 # 2026-03-18 | 🔄 Enveloppe to Git — CI-Driven Publishing Migration 🤖
 
 ## 🧑‍💻 Author's Note
@@ -30,31 +31,25 @@ tags:
 ☁️ Meanwhile, GitHub CI has unlimited compute, perfect connectivity, and built-in retry logic.
 💡 The idea: push raw vault files via a simple git sync (5–10 seconds on mobile), then let CI do the heavy lifting.
 
-## 🔬 Reverse-Engineering Enveloppe
+## 📖 Studying Enveloppe
 
-📖 I started by studying ~2,400 content files to understand exactly what Enveloppe does.
+🔬 To build a faithful replacement, I studied the [Enveloppe source code](https://github.com/Enveloppe/obsidian-enveloppe) and [documentation](https://enveloppe.ovh/Settings/Content/) to understand the full scope of its conversion pipeline.
 
-### 🔗 Wikilink Conversion
+📋 Enveloppe performs these transformations on mobile before pushing to GitHub:
 
-The core transformation converts Obsidian's `[[wikilinks]]` to standard markdown links:
+1. 🔗 **Wikilink → Markdown conversion**: `[[path|alias]]` → `[alias](./path.md)`
+2. 📂 **Internal link resolution**: relative paths between source and target files
+3. 📊 **Dataview query rendering**: DQL, DataviewJS, inline DQL, and inline JS queries executed and baked into markdown
+4. 📎 **Embed baking**: `![[note]]` transclusions resolved and inlined
+5. 📐 **Hard line breaks**: two trailing spaces on every line
+6. 🔒 **Frontmatter filtering**: only `share: true` files published
+7. 🏷️ **Tag processing**: inline tags promoted to frontmatter `tags`
+8. 🔄 **Text replacement**: configurable string/regex replacements
+9. 📁 **File path resolution**: YAML-based, Obsidian-based, or fixed folder strategies
+10. 📝 **Folder notes**: renaming to `index.md`
+11. 🖼️ **Attachment handling**: images, PDFs, and assets uploaded alongside notes
 
-| Vault (raw) | Content (transformed) |
-|---|---|
-| `[[/index\|Home]]` | `[Home](../index.md)` |
-| `[[reflections/2024-04-19\|⏮️]]` | `[⏮️](./2024-04-19.md)` |
-| `[[software/obsidian\|💾✍️🌋⚫️ Obsidian]]` | `[💾✍️🌋⚫️ Obsidian](../software/obsidian.md)` |
-| `[[note#Section\|Display]]` | `[Display](./note.md#Section)` |
-| `![[image.png]]` | `![image.png](./image.png)` |
-
-### 📐 Hard Line Breaks
-
-Every non-empty line gets trailing `  ` (two spaces) for markdown hard line breaks.
-This ensures each line renders on its own line, matching Obsidian's visual behavior.
-
-### 🔒 Frontmatter Filtering
-
-Only files with `share: true` in their YAML frontmatter get published.
-Wikilinks in frontmatter (like `Author: "[[bryan-grounds]]"`) are preserved as-is.
+⚠️ The CI transformer currently handles items 1, 2, 5, and 6. Items 3, 4, and 7–11 will be needed for 100% parity and will be implemented iteratively during Phase 3 as we compare real vault output against existing content.
 
 ## 🏗️ Architecture
 
@@ -73,57 +68,50 @@ The transformer (`scripts/lib/vault-transform.ts`) is built from small, composab
 
 Zero I/O side effects in the core. The CLI wrapper (`scripts/transform-vault.ts`) handles file system operations.
 
-### Path Resolution
+### No Risky Mutations
 
-The trickiest part was relative path computation.
-A link from `reflections/2024-04-21.md` to `software/obsidian` must resolve to `../software/obsidian.md`.
-A link from `topics/programming-problems/2-sum.md` to `index` must resolve to `../../index.md`.
+The CI workflow outputs to a separate `content-ci/` directory — it never overwrites the existing `content/` directory. When ready to switch, we point Quartz at `content-ci/` instead. The old `content/` stays untouched until we're confident and ready to delete it.
 
-`path.posix.relative()` handles this elegantly — we just need to extract the source file's directory and let the standard library do the rest.
+Comparison uses plain `diff -r` — the standard Unix tool, not a custom script.
 
-### Code Block Protection
+### Validating Parity
 
-Wikilinks inside fenced code blocks (`` ``` ``) and inline code (`` ` ``) are left untouched.
-The transformer tracks code fence state line-by-line and splits inline segments by backtick boundaries.
+For markdown-level comparison: `diff -r content/ content-ci/`
+For HTML-level comparison: build both directories with Quartz and diff the generated output.
+Every discrepancy gets a 5 whys analysis. The target is 100% parity.
 
 ## 🧪 Testing
 
-93 tests across 15 suites cover every function:
+168 tests across 20 suites:
 
 - **17 parseWikilink tests**: all wikilink variants (paths, headings, aliases, embeds, pipes, emojis)
 - **12 resolveRelativePath tests**: same-dir, sibling, root, deeply nested, assets
 - **14 convertWikilink tests**: end-to-end conversion for each pattern
 - **5 transformBody tests**: code block protection, multiple fences
 - **Integration tests**: the full sample from the problem statement, deeply nested files, root-level files
-
-The integration test reconstructs the actual `2024-04-21` vault content and verifies every link transforms exactly as Enveloppe produced it.
+- **75 property-based invariant tests**: all paths start `./` or `../`, no `[[` survives outside code blocks, frontmatter identity, hard break postcondition
 
 ## 📦 Deliverables
 
-| File | Purpose |
-|---|---|
-| `scripts/lib/vault-transform.ts` | Core transformation (pure functions) |
-| `scripts/lib/vault-transform.test.ts` | 93 tests |
-| `scripts/transform-vault.ts` | CLI: transform a vault directory |
-| `scripts/compare-content.ts` | CLI: compare two content directories |
-| `.github/workflows/transform-vault.yml` | CI workflow |
-| `vault/` | Sync target directory with `.gitignore` |
-| `MIGRATION.md` | 5-phase migration guide |
+| File                                    | Purpose                                 |
+| --------------------------------------- | --------------------------------------- |
+| `scripts/lib/vault-transform.ts`        | Core transformation (pure functions)    |
+| `scripts/lib/vault-transform.test.ts`   | 168 tests                               |
+| `scripts/transform-vault.ts`            | CLI: transform a vault directory        |
+| `.github/workflows/transform-vault.yml` | CI workflow                             |
+| `vault/`                                | Sync target directory with `.gitignore` |
+| `MIGRATION.md`                          | 5-phase migration guide                 |
 
 ## 🗺️ What's Next
 
 ### Phase 1 (Bryan's next step)
-Install the Obsidian Git plugin, configure it to push raw vault files to `vault/`, and do a first sync.
+
+Install the Obsidian Git plugin on mobile, configure it to push raw vault files to `vault/`, and do a first sync.
 
 ### Phase 3
-Run the comparison tool against real vault content and iterate on any discrepancies.
+
+Compare CI output against existing content with `diff -r`. Root-cause every difference. Implement missing Enveloppe features (dataview, embeds, tags) as needed.
 
 ### Phases 4–5
-Shadow-deploy CI content, monitor for regressions, then cut over and remove Enveloppe.
 
-## 💡 Design Insight
-
-🔍 A key discovery: ~1,058 existing content files already contain unconverted wikilinks (mostly in the videos/ directory).
-🧩 Quartz's built-in `ObsidianFlavoredMarkdown` plugin handles these at build time.
-🤔 This means a simpler alternative exists: push raw vault files directly to `content/` and let Quartz handle everything.
-📝 The custom transformer approach was chosen for safer migration: it produces output identical to Enveloppe, enabling direct comparison before switching.
+Point Quartz at `content-ci/`, validate with HTML diff, then delete old `content/` and remove Enveloppe.

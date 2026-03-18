@@ -19,14 +19,16 @@ BEFORE (Enveloppe)                    AFTER (Git Sync + CI)
 │ Enveloppe    │                      │ Git commit   │
 │ transforms:  │                      │ & push       │
 │ • wikilinks  │                      │ (5-10 sec)   │
-│ • hard breaks│                      └──────┬───────┘
-│ • filter     │                             │
-│ (30-60 sec)  │                             ↓
-└──────┬───────┘                      ┌──────────────┐
-       │                              │ GitHub CI    │
-       ↓                              │              │
-┌──────────────┐                      │ Transform:   │
-│ GitHub       │                      │ • wikilinks  │
+│ • dataview   │                      └──────┬───────┘
+│ • embeds     │                             │
+│ • hard breaks│                             ↓
+│ • filter     │                      ┌──────────────┐
+│ (30-60 sec)  │                      │ GitHub CI    │
+└──────┬───────┘                      │              │
+       │                              │ Transform:   │
+       ↓                              │ • wikilinks  │
+┌──────────────┐                      │ • dataview   │
+│ GitHub       │                      │ • embeds     │
 │ content/     │                      │ • hard breaks│
 │              │                      │ • filter     │
 │ Quartz build │                      │      ↓       │
@@ -38,40 +40,65 @@ BEFORE (Enveloppe)                    AFTER (Git Sync + CI)
 
 ---
 
+## What Enveloppe Does
+
+Based on the [Enveloppe source code](https://github.com/Enveloppe/obsidian-enveloppe) and
+[documentation](https://enveloppe.ovh/Settings/Content/), these are all the transformations
+Enveloppe performs on mobile before pushing to GitHub:
+
+1. **Wikilink → Markdown conversion**: `[[path|alias]]` → `[alias](./path.md)`
+2. **Internal link resolution**: Relative paths computed between source and target files
+3. **Dataview query rendering**: DQL, DataviewJS, inline DQL, and inline JS queries are
+   executed and their computed output is baked into the markdown
+4. **Embed baking**: `![[note]]` transclusions are resolved and the referenced content is
+   inlined into the document
+5. **Hard line breaks**: Two trailing spaces added to every line
+6. **Frontmatter filtering**: Only `share: true` files are published
+7. **Tag processing**: Inline tags (e.g., `#tag/subtag`) promoted to frontmatter `tags`
+   field with `/` → `_` conversion
+8. **Text replacement**: Configurable string/regex replacements
+9. **File path resolution**: Supports YAML-based, Obsidian-based, or fixed folder strategies
+10. **Folder notes**: Renaming to `index.md` for web compatibility
+11. **Attachment handling**: Images, PDFs, and other assets are uploaded alongside notes
+
+### Current Transformer Scope
+
+The CI transformer (`scripts/lib/vault-transform.ts`) currently handles:
+
+- ✅ Wikilink → Markdown conversion
+- ✅ Internal link resolution (relative paths)
+- ✅ Hard line breaks
+- ✅ Frontmatter filtering (`share: true`)
+- ✅ Code block protection (wikilinks in code blocks preserved)
+
+Not yet implemented (will be needed for 100% parity):
+
+- ❌ Dataview query rendering
+- ❌ Embed baking (transclusion inlining)
+- ❌ Tag processing (inline → frontmatter)
+- ❌ Text replacements
+- ❌ Folder note renaming
+
+---
+
 ## Phase 1: Set Up Git Sync (Your Next Step)
 
 ### 1.1 Install the Obsidian Git Plugin
 
-1. In Obsidian: **Settings → Community plugins → Browse**
+1. In Obsidian mobile: **Settings → Community plugins → Browse**
 2. Search for **"Git"** (by Vinzent03)
 3. Install and enable
 
 ### 1.2 Configure the Plugin
 
-**Option A: Sync entire vault to `vault/` subdirectory** (recommended)
+In the Obsidian Git plugin settings:
 
-This keeps raw vault files separate from the existing transformed content:
+- **Authentication**: Paste your GitHub Personal Access Token (PAT)
+- **Auto commit-and-sync interval**: 10 minutes (or your preference)
+- **Pull on startup**: enabled
+- **Push on commit-and-sync**: enabled
 
-1. Clone this repository to your computer (if not already):
-
-   ```bash
-   git clone https://github.com/bagrounds/obsidian-github-publisher-sync.git
-   ```
-
-2. Set up a symlink or configure Obsidian Git to push to the `vault/` directory:
-   - In the Git plugin settings, set **Custom base path**: `vault/`
-   - Or configure a separate branch and merge strategy
-
-**Option B: Use a separate branch**
-
-Push raw vault content to a `vault-raw` branch:
-
-1. In Git plugin settings:
-   - **Branch**: `vault-raw`
-   - **Auto commit-and-sync interval**: 10 minutes (or your preference)
-   - **Pull on startup**: enabled
-
-The CI workflow will read from this branch.
+The plugin handles clone, commit, pull, and push entirely within Obsidian mobile.
 
 ### 1.3 Configure `.gitignore` in Your Vault
 
@@ -87,7 +114,7 @@ Add any personal exclusions as needed.
 
 ### 1.4 First Sync
 
-1. Open Obsidian
+1. Open Obsidian mobile
 2. Use the command palette: **Git: Commit all and push**
 3. Verify files appear in `vault/` on GitHub
 
@@ -101,94 +128,68 @@ The CI transformation pipeline is already implemented:
 - **CLI**: `scripts/transform-vault.ts` — processes all vault files
 - **Workflow**: `.github/workflows/transform-vault.yml` — runs on push to `vault/`
 
-### What the Transformer Does
-
-| Vault (raw)                             | Content (transformed)                                             |
-| --------------------------------------- | ----------------------------------------------------------------- |
-| `[[note\|Display]]`                     | `[Display](./note.md)`                                            |
-| `[[folder/note\|Text]]`                 | `[Text](../folder/note.md)` (relative path)                       |
-| `[[/index\|Home]]`                      | `[Home](../index.md)` (absolute → relative)                       |
-| `[[note#Heading\|Text]]`                | `[Text](./note.md#Heading)`                                       |
-| `[[note#Heading With Spaces]]`          | `[note > Heading With Spaces](./note.md#Heading%20With%20Spaces)` |
-| `![[image.png]]`                        | `![image.png](./image.png)`                                       |
-| `![[image.png\|Alt Text]]`              | `![Alt Text](./image.png)`                                        |
-| Lines without trailing spaces           | Lines with `  ` (hard breaks)                                     |
-| Files with `share: false` or no `share` | Excluded                                                          |
-| Frontmatter `Author: "[[name]]"`        | Preserved as-is (wikilinks in frontmatter stay)                   |
-| Standard markdown links `[text](url)`   | Preserved as-is                                                   |
-| Code blocks with `[[wikilinks]]`        | Preserved as-is (not transformed)                                 |
-
-### Test Locally
-
-```bash
-# Transform vault files
-npx tsx scripts/transform-vault.ts --vault vault/ --output /tmp/content-ci/
-
-# Compare with existing content
-npx tsx scripts/compare-content.ts --dir1 content/ --dir2 /tmp/content-ci/
-```
+The workflow transforms vault files to `content-ci/` and runs `diff -r content/ content-ci/`
+to compare with the existing Enveloppe-produced content.
 
 ---
 
-## Phase 3: Compare & Validate
+## Phase 3: Compare & Achieve 100% Parity
 
-Once you have vault files synced and CI transforming them:
+### 3.1 Automated Comparison
 
-### 3.1 Run the Comparison
+The CI workflow runs `diff -r` automatically on every push to `vault/`.
+Check the workflow output for any differences.
 
-The comparison tool runs automatically in CI, or locally:
+### 3.2 HTML Comparison
+
+For deeper validation, build both content directories with Quartz and diff the HTML:
 
 ```bash
-npx tsx scripts/compare-content.ts --dir1 content/ --dir2 content-ci/
+# Build existing content
+npx quartz build
+mv public/ public-old/
+
+# Build CI-transformed content (point Quartz at content-ci/)
+# Update quartz.config.ts contentDir temporarily
+npx quartz build
+diff -r public-old/ public/
 ```
 
-It reports:
+### 3.3 Root Cause Every Difference
 
-- **Matching files**: identical content ✅
-- **Only in dir1**: files Enveloppe published but vault doesn't have
-- **Only in dir2**: files in vault but not published by Enveloppe
-- **Differing**: files that exist in both but have different content
+For every discrepancy, perform a 5 whys analysis:
 
-### 3.2 Investigate Differences
+1. What is different?
+2. Why is it different?
+3. Is it a transformer bug, an Enveloppe feature we haven't replicated, or intentional?
+4. Can we fix it?
+5. If we can't achieve parity, is the difference acceptable?
 
-Common expected differences:
-
-- **Auto-blog files**: generated by CI, not from vault
-- **Social embed sections**: added by the social posting pipeline
-- **Trailing whitespace**: Enveloppe may handle slightly differently
-- **Broken links**: Enveloppe has known bugs (e.g., `../../tower-of-hanoi.md`)
-
-### 3.3 Iterate
-
-Adjust the transformer to match Enveloppe's output. Run the comparison again.
-Aim for >95% parity before proceeding.
+Goal: **100% parity**. Compromise only after thorough investigation.
 
 ---
 
 ## Phase 4: Switch to CI Content
 
-### 4.1 Shadow Deploy
+### 4.1 Point Quartz at the New Directory
 
-1. In the workflow, set `compare_only: false`
-2. The CI will overwrite `content/` with transformed vault content
-3. The Quartz build will use the CI-transformed files
-4. Monitor the site for visual regressions
+When CI-transformed content achieves parity, update `quartz.config.ts` (or the
+build command) to read from `content-ci/` instead of `content/`:
 
-### 4.2 Run Both Systems in Parallel
+```bash
+npx quartz build --directory content-ci
+```
 
-Keep Enveloppe running for 1 week:
+This avoids any risky mutation of the existing `content/` directory.
 
-- Enveloppe pushes to `content/`
-- CI transforms `vault/` to `content-ci/`
-- Compare regularly
+### 4.2 Validate the Deployed Site
 
-### 4.3 Switch
+After deploying with CI content, diff the generated HTML output against the
+previous deployment to confirm no regressions:
 
-Once confident:
-
-1. Manually trigger the workflow with `compare_only: false`
-2. Verify the site looks correct
-3. Proceed to Phase 5
+```bash
+diff -r public-old/ public/
+```
 
 ---
 
@@ -196,18 +197,8 @@ Once confident:
 
 1. **Disable Enveloppe** on your mobile device
 2. **Remove Enveloppe plugin** from Obsidian
-3. **Update deploy.yml** to include vault transformation before Quartz build:
-
-```yaml
-# In deploy.yml, add before the Quartz build step:
-- name: Transform vault content
-  run: |
-    npx tsx scripts/transform-vault.ts \
-      --vault vault/ \
-      --output content/
-```
-
-4. **Clean up**: Remove `content-ci/` directory references
+3. **Delete the old `content/` directory** once confident in CI content
+4. **Rename `content-ci/` to `content/`** (or update Quartz config permanently)
 5. **Update README** with new workflow documentation
 
 ---
@@ -217,7 +208,7 @@ Once confident:
 At any phase, you can roll back:
 
 1. **Re-enable Enveloppe** on mobile
-2. **Revert CI changes** (git revert)
+2. **Point Quartz back at `content/`** (the old directory is untouched)
 3. **No data loss**: All content is version-controlled in git
 
 ---
@@ -243,9 +234,8 @@ This approach is viable for Phase 5+ once you're confident the site works correc
 | File                                    | Purpose                                         |
 | --------------------------------------- | ----------------------------------------------- |
 | `scripts/lib/vault-transform.ts`        | Core transformation functions (pure, tested)    |
-| `scripts/lib/vault-transform.test.ts`   | 93 tests covering all transformation rules      |
+| `scripts/lib/vault-transform.test.ts`   | 168 tests covering all transformation rules     |
 | `scripts/transform-vault.ts`            | CLI to transform a vault directory              |
-| `scripts/compare-content.ts`            | CLI to compare two content directories          |
 | `.github/workflows/transform-vault.yml` | CI workflow for automatic transformation        |
 | `vault/.gitkeep`                        | Placeholder for the vault sync directory        |
 | `vault/.gitignore`                      | Excludes .obsidian/ and other non-content files |

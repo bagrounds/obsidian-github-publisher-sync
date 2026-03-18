@@ -5,10 +5,10 @@ aliases:
 share: true
 URL: https://bagrounds.org/books
 backlinks: false
-updated: 2026-03-17T09:38:16-07:00
+updated: 2026-03-17T17:15:53-07:00
 ---
 [Home](../index.md)  
-# 📚 Books (953)  
+# 📚 Books (954)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [💻0️⃣ Source Code: My Beginnings](./source-code-my-beginnings.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)  
@@ -21,6 +21,7 @@ updated: 2026-03-17T09:38:16-07:00
 - [7️⃣📏👑 7 Rules of Power: Surprising - but True - Advice on How to Get Things Done and Advance Your Career](./7-rules-of-power.md)  
 - [🇯🇵⚔️ A Book of Five Rings: The Classic Guide to Strategy](./a-book-of-five-rings-the-classic-guide-to-strategy.md)  
 - [📜🌍👥 A Brief History of Everyone Who Ever Lived](./a-brief-history-of-everyone-who-ever-lived.md)  
+- [🧠🧬🤖 A Brief History of Intelligence: Evolution, AI, and the Five Breakthroughs That Made Our Brains](./a-brief-history-of-intelligence-evolution-ai-and-the-five-breakthroughs-that-made-our-brains.md)  
 - [🤏📜⏳ A Brief History of Time](./a-brief-history-of-time.md)  
 - [✅➕ Abundance](./abundance.md)  
 - [🏎️💾 Accelerate: The Science of Lean Software and DevOps: Building and Scaling High Performing Technology Organizations](./accelerate.md)  

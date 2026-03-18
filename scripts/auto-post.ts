@@ -24,6 +24,7 @@ import {
   discoverContentToPost,
   isPastPostingHourUTC,
   updatePathTimestamps,
+  checkUrlPublished,
   type Platform,
   type FindContentConfig,
   type ContentToPost,
@@ -112,9 +113,10 @@ async function autoPost(): Promise<void> {
     contentDir: vaultDir,
     platforms,
     postingHourUTC: config.postingHourUTC,
+    isPublished: checkUrlPublished,
   };
 
-  const contentToPost = discoverContentToPost(findConfig, pastPostingHour);
+  const contentToPost = await discoverContentToPost(findConfig, pastPostingHour);
 
   if (contentToPost.length === 0) {
     console.log();

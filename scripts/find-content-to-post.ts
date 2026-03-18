@@ -80,6 +80,28 @@ export interface ContentToPost {
   readonly pathFromRoot: readonly string[];
 }
 
+/**
+ * Async predicate that checks whether a URL is live (not a 404).
+ * Injected into the BFS so production can HTTP HEAD the real site
+ * while tests supply a deterministic stub.
+ */
+export type PublicationChecker = (url: string) => Promise<boolean>;
+
+/**
+ * Default publication checker that performs an HTTP HEAD request.
+ * Returns true when the server responds with a 2xx status code.
+ */
+export const checkUrlPublished: PublicationChecker = async (
+  url: string,
+): Promise<boolean> => {
+  try {
+    const response = await fetch(url, { method: "HEAD", redirect: "follow" });
+    return response.ok;
+  } catch {
+    return false;
+  }
+};
+
 /** Configuration for the BFS content finder */
 export interface FindContentConfig {
   /** Root content directory (absolute path) */
@@ -88,6 +110,8 @@ export interface FindContentConfig {
   readonly platforms: readonly Platform[];
   /** UTC hour at which reflections become eligible for posting the next day (default: 17 = 9 AM PST) */
   readonly postingHourUTC?: number;
+  /** Optional checker that verifies a note's URL is live before selecting it for posting */
+  readonly isPublished?: PublicationChecker;
 }
 
 // --- Pure Functions ---
@@ -513,10 +537,10 @@ export function updatePathTimestamps(
  *
  * @returns Array of content-to-post items, at most one per platform.
  */
-export function bfsContentDiscovery(
+export async function bfsContentDiscovery(
   config: FindContentConfig,
-): readonly ContentToPost[] {
-  const { contentDir, platforms } = config;
+): Promise<readonly ContentToPost[]> {
+  const { contentDir, platforms, isPublished } = config;
   const postingHourUTC = config.postingHourUTC ?? 17;
 
   // Seed from the most recent reflection.
@@ -575,24 +599,32 @@ export function bfsContentDiscovery(
           `⏳ Reflection too recent to post: ${note.relativePath} (eligible after ${eligibleDate} ${postingHourUTC}:00 UTC)`,
         );
       } else {
-        // Reconstruct path once for this note (shared across platforms)
-        const pathFromRoot = reconstructPath(note.relativePath, parentMap);
+        // If a publication checker is configured, verify the URL is live
+        if (isPublished && !(await isPublished(note.url))) {
+          console.log(
+            `🚫 Skipping unpublished content (404): ${note.title} (${note.url})`,
+          );
+          // Still enqueue linked notes below — they may be published
+        } else {
+          // Reconstruct path once for this note (shared across platforms)
+          const pathFromRoot = reconstructPath(note.relativePath, parentMap);
 
-        // Check each platform that still needs content
-        for (const platform of [...platformsNeedingContent]) {
-          if (!note.postedPlatforms.has(platform)) {
-            results.push({ platform, note, pathFromRoot });
-            platformsNeedingContent.delete(platform);
+          // Check each platform that still needs content
+          for (const platform of [...platformsNeedingContent]) {
+            if (!note.postedPlatforms.has(platform)) {
+              results.push({ platform, note, pathFromRoot });
+              platformsNeedingContent.delete(platform);
+              console.log(
+                `✅ Found content for ${platform}: ${note.title} (${note.relativePath})`,
+              );
+            }
+          }
+
+          if (results.some((r) => r.note.relativePath === note.relativePath)) {
             console.log(
-              `✅ Found content for ${platform}: ${note.title} (${note.relativePath})`,
+              `  🗺️ Path from root (${pathFromRoot.length} hops): ${pathFromRoot.join(" → ")}`,
             );
           }
-        }
-
-        if (results.some((r) => r.note.relativePath === note.relativePath)) {
-          console.log(
-            `  🗺️ Path from root (${pathFromRoot.length} hops): ${pathFromRoot.join(" → ")}`,
-          );
         }
       }
     }
@@ -639,11 +671,11 @@ export function bfsContentDiscovery(
  * @param isPastPostingHour - Whether we're past the daily reflection posting hour (e.g. 9am)
  * @returns Array of content items to post, at most one per platform
  */
-export function discoverContentToPost(
+export async function discoverContentToPost(
   config: FindContentConfig,
   isPastPostingHour: boolean,
-): readonly ContentToPost[] {
-  const { platforms } = config;
+): Promise<readonly ContentToPost[]> {
+  const { platforms, isPublished } = config;
 
   if (platforms.length === 0) {
     console.log("⚠️ No platforms configured, nothing to discover");
@@ -654,15 +686,22 @@ export function discoverContentToPost(
   if (isPastPostingHour) {
     const priorDayReflection = getPriorDayReflectionIfNeeded(config);
     if (priorDayReflection) {
-      console.log(
-        `📅 Prior day's reflection needs posting: ${priorDayReflection.title}`,
-      );
-      // Return this note for all platforms that haven't posted it yet.
-      // The path is just the reflection itself (it's the root).
-      const pathFromRoot = [priorDayReflection.relativePath];
-      return platforms
-        .filter((p) => !priorDayReflection.postedPlatforms.has(p))
-        .map((platform) => ({ platform, note: priorDayReflection, pathFromRoot }));
+      // Verify the reflection is actually published before promoting it
+      if (isPublished && !(await isPublished(priorDayReflection.url))) {
+        console.log(
+          `🚫 Prior day's reflection not yet published (404): ${priorDayReflection.title} (${priorDayReflection.url})`,
+        );
+      } else {
+        console.log(
+          `📅 Prior day's reflection needs posting: ${priorDayReflection.title}`,
+        );
+        // Return this note for all platforms that haven't posted it yet.
+        // The path is just the reflection itself (it's the root).
+        const pathFromRoot = [priorDayReflection.relativePath];
+        return platforms
+          .filter((p) => !priorDayReflection.postedPlatforms.has(p))
+          .map((platform) => ({ platform, note: priorDayReflection, pathFromRoot }));
+      }
     }
     console.log(`✅ Prior day's reflection already posted on all platforms`);
   }

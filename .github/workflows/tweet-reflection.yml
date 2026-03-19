@@ -62,6 +62,7 @@ jobs:
       - name: Check Gemini Quota (before)
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GCP_SERVICE_ACCOUNT_KEY: ${{ secrets.GCP_SERVICE_ACCOUNT_KEY }}
         run: npx tsx scripts/check-gemini-quota.ts --label "before social posting"
 
       - name: Run Social Posting Script
@@ -103,4 +104,5 @@ jobs:
         if: always()
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GCP_SERVICE_ACCOUNT_KEY: ${{ secrets.GCP_SERVICE_ACCOUNT_KEY }}
         run: npx tsx scripts/check-gemini-quota.ts --label "after social posting"

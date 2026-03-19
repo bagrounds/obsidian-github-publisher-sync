@@ -12,6 +12,7 @@ tags:
   - observability
   - github-actions
   - api
+  - gcp
 ---
 
 # 🔭 Knowing What You've Got — Gemini Quota Observability
@@ -22,47 +23,59 @@ Free tiers are a gift, but gifts you can't measure are gifts you can't use well.
 
 Bryan's automation pipeline runs three Gemini-powered workflows daily: two AI blog series and a social media auto-poster. Each one consumes a sliver of Google's generative AI quota — requests per minute, tokens per day, grounding calls. But until now, no one was watching the meter. The workflows would either succeed or, occasionally, hit a 429 wall and fall back gracefully. That's resilient engineering, but it's not *informed* engineering.
 
-The question Bryan asked was deceptively simple: **can we see our Gemini quota in real time?**
+The question Bryan asked was deceptively simple: **can we see our Gemini quota in real time, like the dashboard at `aistudio.google.com/rate-limit`?**
 
-## What the API Actually Tells You
+## Peeling Back the Layers
 
-The Gemini REST API exposes a `models.list` endpoint at `generativelanguage.googleapis.com/v1beta/models` that returns metadata for every model available to your API key. Each model comes with:
+The answer turns out to live across three distinct Google APIs, each requiring different authentication and offering different levels of detail:
 
-- **Token limits** — `inputTokenLimit` and `outputTokenLimit` defining the context window
-- **Supported generation methods** — `generateContent`, `embedContent`, `countTokens`, etc.
-- **Sampling defaults** — temperature, topP, topK values
+**Layer 1: The Gemini Model Catalog** — The REST endpoint at `generativelanguage.googleapis.com/v1beta/models` returns metadata for every model your API key can access: token limits, supported generation methods, sampling defaults. Authentication is just your Gemini API key as a query parameter. This tells you *what exists* but not *how much you've used*.
 
-What the API *doesn't* give you (at least not through the AI Studio key path) is a direct "remaining requests today" counter. That kind of real-time consumption data lives in Google Cloud Monitoring — a separate, heavier infrastructure designed for projects with billing accounts and dashboards. For a free-tier setup with an AI Studio API key, the closest we get is the model catalog itself: knowing which models exist, what they can do, and what their limits are.
+**Layer 2: The Service Usage API** — Google Cloud's `serviceusage.googleapis.com/v1beta1` exposes the actual quota configuration: per-model rate limits (RPM, TPM, RPD) with both effective limits and default limits. This is the data behind the AI Studio rate-limit page. But it requires OAuth2 authentication via a GCP service account — your Gemini API key alone won't cut it.
 
-But that's still enormously valuable. Consider: if your workflow hardcodes `gemini-3.1-flash-lite-preview` and that model gets deprecated tomorrow, your first signal would be a cryptic error in CI. With quota observability, you'd see the model vanish from the catalog *before* it breaks your pipeline.
+**Layer 3: Cloud Monitoring** — The `monitoring.googleapis.com/v3` time series API provides real-time consumption data. Metric type `serviceruntime.googleapis.com/quota/rate/net_usage` filtered to `generativelanguage.googleapis.com` gives you actual requests-per-minute flowing through your project. This is the "usage" half of the rate-limit dashboard, and it also requires service account credentials.
 
-## The Architecture of a Quota Check
+## Zero New Dependencies
 
-The solution is a TypeScript module (`scripts/lib/gemini-quota.ts`) built on three functional layers:
+The implementation uses Node.js built-in `crypto` to sign RS256 JWTs for the Google OAuth2 token exchange — no `googleapis` SDK, no `google-auth-library`, no new npm packages. The authentication flow is straightforward:
 
-**Data acquisition**: A paginated fetch loop that walks the REST API's model list, accumulating `GeminiModelInfo` records. Pure async I/O, no SDK dependency — just `fetch` against the REST endpoint. This sidesteps the SDK's type narrowing and captures every field the API returns.
+1. Parse the service account JSON key to extract `client_email` and `private_key`
+2. Build a JWT assertion with the `cloud-platform` scope
+3. Sign it with RS256 using `crypto.createSign`
+4. POST to `oauth2.googleapis.com/token` to exchange for an access token
+5. Use that Bearer token for the Service Usage and Monitoring API calls
 
-**Filtering**: A `generativeModels` function that separates content-generation models (the ones that actually consume quota for our workflows) from embedding models, counting models, and other infrastructure. This is a simple predicate filter — the kind of one-liner that makes functional programming feel inevitable.
+This keeps the dependency footprint unchanged while adding GCP API access.
 
-**Formatting**: A `formatQuotaReport` function that renders the data into human-readable output with emoji headers, padded columns, and summary statistics. Because CI logs are for humans too.
+## Graceful Degradation
 
-The CLI wrapper (`scripts/check-gemini-quota.ts`) is minimal: read the API key, accept a `--label` flag for context ("before blog generation", "after social posting"), and pipe the report to stdout. A `--json` flag provides machine-readable output for future automation.
+The script works in two modes: with or without GCP credentials. If you only have `GEMINI_API_KEY`, you get the model catalog — which models exist, what they support, their context windows. Add `GCP_SERVICE_ACCOUNT_KEY` and you unlock the full picture: actual quota limits per metric and real-time usage data.
+
+Both GCP API calls (`fetchQuotaLimits` and `fetchUsageMetrics`) catch errors independently and warn rather than fail. If the service account lacks Monitoring permissions, you still get quota limits. If the Service Usage API returns an error, you still get the model catalog. The system degrades to whatever data is available.
+
+## What You Need to Set Up
+
+To get the full quota reporting, Bryan needs to:
+
+1. **Create a GCP service account** in the same project that owns the Gemini API key
+2. **Grant two IAM roles**: `Service Usage Consumer` (for quota limits) and `Monitoring Viewer` (for usage metrics)
+3. **Download the JSON key** and store it as a GitHub secret named `GCP_SERVICE_ACCOUNT_KEY`
+
+The script extracts the project ID from the service account JSON automatically.
 
 ## Wrapping Every Workflow
 
-Each of the three Gemini workflows now sandwiches its core step between two quota checks:
+Each of the three Gemini workflows now sandwiches its core step between two quota checks with full credentials:
 
 ```
 Check Gemini Quota (before) → Generate Content → Check Gemini Quota (after)
 ```
 
-The "after" step runs with `if: always()`, so it executes even when the generation step fails. This is the key design choice: when a workflow *does* hit a 429, the post-failure quota report becomes the forensic evidence. You can see exactly which models were available and infer where the rate limit boundary lies.
+The "after" step runs with `if: always()`, so it executes even when the generation step fails — the post-failure quota report becomes forensic evidence when hitting 429s.
 
-## Twelve Tests for a Humble Report
+## Thirty-One Tests, No Network Required
 
-The test suite (`scripts/lib/gemini-quota.test.ts`) covers the formatting and filtering logic with twelve assertions. The API interaction layer is intentionally untested in the unit suite — it makes real HTTP calls to Google's servers, which makes it a poor candidate for deterministic tests. The formatting functions, however, are pure: given a list of model records, they always produce the same report. These are the functions worth testing rigorously.
-
-Tests verify that generative models are correctly separated from embedding models, that token limits render with locale-aware formatting, that the summary counts match, and that edge cases (empty model lists, all-embedding inputs) produce sensible output.
+The test suite covers all the pure logic: JWT header encoding, claims serialization, service account key parsing, quota limit formatting, usage metric display, model filtering, report building. The GCP auth tests generate real RSA key pairs via `crypto.generateKeyPairSync` to verify JWT structure without hitting any external endpoints.
 
 ## Brainstorming: What Could We Do with Spare Quota?
 
@@ -70,20 +83,18 @@ Bryan mentioned a future vision: automatically consuming remaining daily quota o
 
 **Speculative pre-generation**: Generate tomorrow's blog post drafts during today's spare quota window. If the daily run succeeds, discard the drafts. If it hits quota limits, promote a pre-generated draft. This turns waste into resilience.
 
-**Content enrichment**: Take existing blog posts and generate supplementary materials — TL;DR summaries, alt-text for any images, related topic suggestions, or translation drafts into other languages. Low-stakes, high-value work that improves accessibility.
+**Content enrichment**: Take existing blog posts and generate supplementary materials — TL;DR summaries, alt-text for any images, related topic suggestions, or translation drafts into other languages.
 
-**Vault analysis**: Run Gemini over the Obsidian vault to identify broken links, suggest cross-references between notes, detect duplicate content, or generate a knowledge graph. The vault is a living dataset that benefits from periodic automated review.
+**Vault analysis**: Run Gemini over the Obsidian vault to identify broken links, suggest cross-references between notes, detect duplicate content, or generate a knowledge graph.
 
-**Prompt optimization**: Use spare quota to A/B test prompt variations against a fixed evaluation rubric. Systematically discover which system prompts produce the most engaging blog posts or most effective social media copy.
+**Prompt optimization**: Use spare quota to A/B test prompt variations against a fixed evaluation rubric. Systematically discover which system prompts produce the most engaging blog posts.
 
-**Discussion seeding**: Generate thoughtful comments on existing blog posts to seed Giscus discussions. Readers are more likely to engage when there's already a conversation happening — the empty room problem is real.
+**Discussion seeding**: Generate thoughtful comments on existing blog posts to seed Giscus discussions. Readers are more likely to engage when there's already a conversation happening.
 
-**Code documentation**: Point Gemini at the repository's TypeScript files and generate JSDoc annotations, architecture decision records, or onboarding guides. The codebase is well-structured but light on prose documentation.
+**Code documentation**: Point Gemini at the repository's TypeScript files and generate JSDoc annotations, architecture decision records, or onboarding guides.
 
-Each of these tasks is independently valuable, parallelizable across models, and gracefully degradable — if quota runs out mid-task, whatever was completed still has value. That's the hallmark of a good quota-consumption strategy: never let a half-finished batch become worthless.
+Each of these tasks is independently valuable, parallelizable across models, and gracefully degradable — if quota runs out mid-task, whatever was completed still has value.
 
 ## The Measurement Reflex
 
-Instrumenting your resources before optimizing them is the engineering equivalent of checking your bank balance before planning a vacation. It seems obvious in retrospect, but many automation pipelines operate for months on implicit assumptions about their resource constraints.
-
-With quota observability in place, the next steps become clearer: track the numbers over time, identify patterns, and eventually let the pipeline itself decide how to spend its remaining daily budget.
+Instrumenting your resources before optimizing them is the engineering equivalent of checking your bank balance before planning a vacation. With quota observability in place — from model catalog through quota limits to real-time usage — the next steps become clearer: track the numbers over time, identify patterns, and eventually let the pipeline itself decide how to spend its remaining daily budget.

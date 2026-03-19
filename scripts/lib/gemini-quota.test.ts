@@ -7,9 +7,14 @@ import assert from "node:assert/strict";
 
 import {
   type GeminiModelInfo,
+  type QuotaLimit,
+  type UsageMetric,
+  safeInt,
   generativeModels,
   buildQuotaReport,
   formatQuotaReport,
+  formatQuotaLimitLine,
+  formatUsageLine,
 } from "./gemini-quota.ts";
 
 // ---------------------------------------------------------------------------
@@ -48,6 +53,41 @@ const liteModel: GeminiModelInfo = {
 };
 
 const allModels = [flashModel, embeddingModel, liteModel] as const;
+
+const sampleQuotaLimit: QuotaLimit = {
+  metric: "generativelanguage.googleapis.com/generate_content_requests",
+  displayName: "Generate content requests per minute per project",
+  unit: "1/min/{project}",
+  effectiveLimit: 15,
+  defaultLimit: 15,
+};
+
+const sampleUsage: UsageMetric = {
+  metric: "serviceruntime.googleapis.com/quota/rate/net_usage",
+  value: 3,
+  timestamp: "2026-03-19T20:00:00Z",
+};
+
+// ---------------------------------------------------------------------------
+// safeInt
+// ---------------------------------------------------------------------------
+
+describe("safeInt", () => {
+  it("converts valid numbers", () => {
+    assert.equal(safeInt(42, 0), 42);
+    assert.equal(safeInt("100", 0), 100);
+  });
+
+  it("returns fallback for NaN", () => {
+    assert.equal(safeInt("not-a-number", 0), 0);
+    assert.equal(safeInt(undefined, 99), 99);
+  });
+
+  it("returns fallback for Infinity", () => {
+    assert.equal(safeInt(Infinity, 0), 0);
+    assert.equal(safeInt(-Infinity, 0), 0);
+  });
+});
 
 // ---------------------------------------------------------------------------
 // generativeModels
@@ -88,6 +128,44 @@ describe("buildQuotaReport", () => {
   it("includes ISO timestamp", () => {
     const report = buildQuotaReport([], "test");
     assert.match(report.timestamp, /^\d{4}-\d{2}-\d{2}T/);
+  });
+
+  it("defaults to empty quota limits and usage", () => {
+    const report = buildQuotaReport([], "test");
+    assert.deepEqual(report.quotaLimits, []);
+    assert.deepEqual(report.usage, []);
+  });
+
+  it("includes quota limits when provided", () => {
+    const report = buildQuotaReport([], "test", [sampleQuotaLimit]);
+    assert.equal(report.quotaLimits.length, 1);
+    assert.equal(report.quotaLimits[0]?.effectiveLimit, 15);
+  });
+
+  it("includes usage when provided", () => {
+    const report = buildQuotaReport([], "test", [], [sampleUsage]);
+    assert.equal(report.usage.length, 1);
+    assert.equal(report.usage[0]?.value, 3);
+  });
+});
+
+// ---------------------------------------------------------------------------
+// formatQuotaLimitLine / formatUsageLine
+// ---------------------------------------------------------------------------
+
+describe("formatQuotaLimitLine", () => {
+  it("includes display name and effective limit", () => {
+    const line = formatQuotaLimitLine(sampleQuotaLimit);
+    assert.ok(line.includes("Generate content requests per minute per project"));
+    assert.ok(line.includes("15"));
+  });
+});
+
+describe("formatUsageLine", () => {
+  it("includes metric and value", () => {
+    const line = formatUsageLine(sampleUsage);
+    assert.ok(line.includes("quota/rate/net_usage"));
+    assert.ok(line.includes("3"));
   });
 });
 
@@ -135,5 +213,27 @@ describe("formatQuotaReport", () => {
     const output = formatQuotaReport(report);
     assert.ok(output.includes("0 total models"));
     assert.ok(output.includes("0 generative"));
+  });
+
+  it("includes quota limits section when present", () => {
+    const report = buildQuotaReport([], "test", [sampleQuotaLimit]);
+    const output = formatQuotaReport(report);
+    assert.ok(output.includes("Quota Limits (1 metrics)"));
+    assert.ok(output.includes("1 quota metrics"));
+  });
+
+  it("includes usage section when present", () => {
+    const report = buildQuotaReport([], "test", [], [sampleUsage]);
+    const output = formatQuotaReport(report);
+    assert.ok(output.includes("Recent Usage"));
+    assert.ok(output.includes("1 usage data points"));
+  });
+
+  it("omits quota and usage sections when empty", () => {
+    const report = buildQuotaReport([], "test");
+    const output = formatQuotaReport(report);
+    assert.ok(!output.includes("Quota Limits"));
+    assert.ok(!output.includes("Recent Usage"));
+    assert.ok(output.includes("0 quota metrics"));
   });
 });

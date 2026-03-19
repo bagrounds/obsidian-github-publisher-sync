@@ -1,0 +1,168 @@
+name: Backfill Blog Images
+
+on:
+  schedule:
+    - cron: "0 6 * * *" # 10 PM Pacific = 6 AM UTC next day
+  workflow_dispatch: {}
+
+env:
+  TZ: America/Los_Angeles
+
+permissions:
+  contents: write
+
+jobs:
+  backfill-images:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Cache Node Modules
+        id: cache
+        uses: actions/cache@v4
+        with:
+          path: node_modules
+          key: v3-${{ runner.os }}-node22-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: v3-${{ runner.os }}-node22-
+
+      - name: Install Dependencies
+        if: ${{ steps.cache.outputs.cache-hit != 'true' }}
+        run: npm ci
+
+      - name: Install Obsidian Headless CLI
+        run: npm install -g obsidian-headless
+
+      - name: Cache Obsidian Vault
+        uses: actions/cache@v4
+        with:
+          path: /tmp/obsidian-vault-cache
+          key: obsidian-vault-${{ github.run_id }}
+          restore-keys: obsidian-vault-
+
+      - name: Pull Vault Reflections
+        env:
+          OBSIDIAN_AUTH_TOKEN: ${{ secrets.OBSIDIAN_AUTH_TOKEN }}
+          OBSIDIAN_VAULT_NAME: ${{ secrets.OBSIDIAN_VAULT_NAME }}
+          OBSIDIAN_VAULT_CACHE_DIR: /tmp/obsidian-vault-cache
+        run: |
+          npx tsx -e "(async () => {
+            const { syncObsidianVault } = await import('./scripts/lib/obsidian-sync.ts');
+            const fs = await import('fs');
+            const path = await import('path');
+            const vaultDir = await syncObsidianVault({
+              authToken: process.env.OBSIDIAN_AUTH_TOKEN,
+              vaultName: process.env.OBSIDIAN_VAULT_NAME,
+            });
+
+            const copySeriesPosts = (seriesId) => {
+              const vaultSeries = path.join(vaultDir, seriesId);
+              if (fs.existsSync(vaultSeries)) {
+                const posts = fs.readdirSync(vaultSeries).filter(f => f.match(/^\d{4}-\d{2}-\d{2}.*\.md$/));
+                console.log(JSON.stringify({ event: 'vault_posts_found', series: seriesId, count: posts.length }));
+                fs.mkdirSync(seriesId, { recursive: true });
+                posts.forEach(f => fs.copyFileSync(path.join(vaultSeries, f), path.join(seriesId, f)));
+              }
+            };
+
+            copySeriesPosts('auto-blog-zero');
+            copySeriesPosts('chickie-loo');
+            copySeriesPosts('ai-blog');
+          })()"
+
+      - name: Check Gemini Quota (before)
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GCP_SERVICE_ACCOUNT_KEY: ${{ secrets.GCP_SERVICE_ACCOUNT_KEY }}
+        run: npx tsx scripts/check-gemini-quota.ts --label "before image backfill"
+
+      - name: Backfill Blog Images
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          IMAGE_GEMINI_MODEL: ${{ vars.IMAGE_GEMINI_MODEL || 'imagen-3.0-generate-002' }}
+        run: npx tsx scripts/backfill-blog-images.ts
+
+      - name: Check Gemini Quota (after)
+        if: always()
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GCP_SERVICE_ACCOUNT_KEY: ${{ secrets.GCP_SERVICE_ACCOUNT_KEY }}
+        run: npx tsx scripts/check-gemini-quota.ts --label "after image backfill"
+
+      - name: Sync Changes to Obsidian Vault
+        env:
+          OBSIDIAN_AUTH_TOKEN: ${{ secrets.OBSIDIAN_AUTH_TOKEN }}
+          OBSIDIAN_VAULT_NAME: ${{ secrets.OBSIDIAN_VAULT_NAME }}
+          OBSIDIAN_VAULT_CACHE_DIR: /tmp/obsidian-vault-cache
+        run: |
+          npx tsx -e "(async () => {
+            const { syncObsidianVault, pushObsidianVault } = await import('./scripts/lib/obsidian-sync.ts');
+            const fs = await import('fs');
+            const path = await import('path');
+            const vaultDir = await syncObsidianVault({
+              authToken: process.env.OBSIDIAN_AUTH_TOKEN,
+              vaultName: process.env.OBSIDIAN_VAULT_NAME,
+            });
+
+            const syncDir = (localDir, vaultSubdir) => {
+              const localPath = path.resolve(localDir);
+              const vaultPath = path.join(vaultDir, vaultSubdir);
+              if (!fs.existsSync(localPath)) return;
+              fs.mkdirSync(vaultPath, { recursive: true });
+              const files = fs.readdirSync(localPath).filter(f => f.endsWith('.md'));
+              let synced = 0;
+              files.forEach(f => {
+                const src = path.join(localPath, f);
+                const dst = path.join(vaultPath, f);
+                const srcContent = fs.readFileSync(src, 'utf-8');
+                const dstContent = fs.existsSync(dst) ? fs.readFileSync(dst, 'utf-8') : '';
+                if (srcContent !== dstContent) {
+                  fs.copyFileSync(src, dst);
+                  synced++;
+                }
+              });
+              if (synced > 0) console.log(JSON.stringify({ event: 'files_synced', dir: vaultSubdir, count: synced }));
+            };
+
+            const syncAttachments = () => {
+              const localAttachments = path.resolve('content/attachments');
+              const vaultAttachments = path.join(vaultDir, 'attachments');
+              if (!fs.existsSync(localAttachments)) return;
+              fs.mkdirSync(vaultAttachments, { recursive: true });
+              const files = fs.readdirSync(localAttachments);
+              let synced = 0;
+              files.forEach(f => {
+                const src = path.join(localAttachments, f);
+                const dst = path.join(vaultAttachments, f);
+                if (!fs.existsSync(dst)) {
+                  fs.copyFileSync(src, dst);
+                  synced++;
+                }
+              });
+              if (synced > 0) console.log(JSON.stringify({ event: 'attachments_synced', count: synced }));
+            };
+
+            syncDir('content/reflections', 'reflections');
+            syncDir('ai-blog', 'ai-blog');
+            syncDir('auto-blog-zero', 'auto-blog-zero');
+            syncDir('chickie-loo', 'chickie-loo');
+            syncAttachments();
+
+            await pushObsidianVault(vaultDir, process.env.OBSIDIAN_AUTH_TOKEN);
+            console.log(JSON.stringify({ event: 'vault_pushed' }));
+          })()"
+
+      - name: Commit Changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "🖼️ Backfill blog images [automated]"
+            git push
+          fi

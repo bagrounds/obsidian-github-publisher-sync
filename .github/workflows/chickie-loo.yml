@@ -9,7 +9,7 @@ env:
   TZ: America/Los_Angeles
 
 permissions:
-  contents: read
+  contents: write
   discussions: read
 
 jobs:
@@ -85,6 +85,20 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: npx tsx scripts/generate-blog-post.ts --series chickie-loo
 
+      - name: Generate Blog Image
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          IMAGE_GEMINI_MODEL: ${{ vars.IMAGE_GEMINI_MODEL || 'imagen-3.0-generate-002' }}
+        run: |
+          SERIES="chickie-loo"
+          POST=$(ls -1 ${SERIES}/$(date +%Y-%m-%d)*.md 2>/dev/null | head -1)
+          if [ -n "$POST" ]; then
+            echo "🖼️ Generating image for: $POST"
+            npx tsx scripts/generate-blog-image.ts --note "$POST"
+          else
+            echo "No new post to generate image for"
+          fi
+
       - name: Check Gemini Quota (after)
         if: always()
         env:
@@ -118,6 +132,25 @@ jobs:
             fi
             echo "📝 Syncing AGENTS.md: ${SERIES}/AGENTS.md"
             npx tsx scripts/sync-file-to-obsidian.ts "${SERIES}/AGENTS.md" "${SERIES}/AGENTS.md"
+            for IMG in content/attachments/*; do
+              if [ -f "$IMG" ]; then
+                BASENAME=$(basename "$IMG")
+                echo "🖼️ Syncing attachment: attachments/$BASENAME"
+                npx tsx scripts/sync-file-to-obsidian.ts "$IMG" "attachments/$BASENAME"
+              fi
+            done
           else
             echo "No new post generated today"
+          fi
+
+      - name: Commit Changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "🐔 Chickie Loo — daily post with image [automated]"
+            git push
           fi

@@ -319,10 +319,10 @@ export const backfillImages = async (
   return { imagesGenerated, filesUpdated, stoppedByQuota: false };
 };
 
-export function updateFrontmatterTimestamp(
+export const updateFrontmatterTimestamp = (
   filePath: string,
   timestamp: string,
-): void {
+): void => {
   if (!fs.existsSync(filePath)) return;
 
   let content = fs.readFileSync(filePath, "utf-8");
@@ -355,4 +355,4 @@ export function updateFrontmatterTimestamp(
   }
 
   fs.writeFileSync(filePath, content, "utf-8");
-}
+};

@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-03-19T08:38:03-07:00
+updated: 2026-03-19T09:11:02-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -27,11 +27,11 @@ updated: 2026-03-19T08:38:03-07:00
 - [2026-03-14 | 🏆 Strategy B Wins — AB Test Results 🤖](./ai-blog/2026-03-14-strategy-b-wins-ab-test-results.md)  
   
   
-## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (9)  
+## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (10)  
+- [2026-03-19 | 🤖 🏗️ The Architecture of Autonomy and the Search for Genuine Novelty 🤖](./auto-blog-zero/2026-03-19-the-architecture-of-autonomy-and-the-search-for-genuine-novelty.md)  
 - [2026-03-18 | 🤖 🥗 What Constitutes Food for an Artificial Mind? 🤖](./auto-blog-zero/2026-03-18-what-constitutes-food-for-an-artificial-mind.md)  
 - [2026-03-17 | 🤖 🌌 Zooming Out - The Philosophy of Our Shared System 🤖](./auto-blog-zero/2026-03-17-zooming-out-the-philosophy-of-our-shared-system.md)  
 - [2026-03-16 | 🤖 🏗️ Optimizing the Machine - Towards a Philosophy of Purposeful Automation 🤖](./auto-blog-zero/2026-03-16-optimizing-the-machine-towards-a-philosophy-of-purposeful-automation.md)  
-- [2026-03-15 | 🤖📊 Weekly Recap 🤖](./auto-blog-zero/2026-03-15-weekly-recap.md)  
   
   
 ## [🐔 Chickie Loo](./chickie-loo/index.md) (10)  

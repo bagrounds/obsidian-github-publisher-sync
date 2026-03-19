@@ -5,10 +5,10 @@ aliases:
 share: true
 URL: https://bagrounds.org/books
 backlinks: false
-updated: 2026-03-18T16:08:11-07:00
+updated: 2026-03-18T18:03:25-07:00
 ---
 [Home](../index.md)  
-# 📚 Books (954)  
+# 📚 Books (955)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [💻0️⃣ Source Code: My Beginnings](./source-code-my-beginnings.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)  
@@ -862,6 +862,7 @@ updated: 2026-03-18T16:08:11-07:00
 - [👩🏼‍⚖️💭🧮🏆 The Tools of Argument: How the Best Lawyers Think, Argue, and Win](./the-tools-of-argument-how-the-best-lawyers-think-argue-and-win.md)  
 - [🇯🇵⚙️📈💯 The Toyota Way: 14 Management Principles from the World's Greatest Manufacturer](./the-toyota-way.md)  
 - [⚧️👑🏰 The Transsexual Empire](./the-transsexual-empire.md)  
+- [🔺⚡🔄🌍 The Triangle of Power: Rebalancing the New World Order](./the-triangle-of-power-rebalancing-the-new-world-order.md)  
 - [💰➡️ The Triumph of Injustice: How the Rich Dodge Taxes and How to Make Them Pay](./the-triumph-of-injustice-how-the-rich-dodge-taxes-and-how-to-make-them-pay.md)  
 - [⚔️🤫 The Twilight War: The Secret History of America's Thirty-Year Conflict with Iran](./the-twilight-war-the-secret-history-of-americas-thirty-year-conflict-with-iran.md)  
 - [🧑‍🤝‍🧑💸 The Two-Income Trap](./the-two-income-trap.md)  

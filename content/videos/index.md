@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-03-18T18:03:25-07:00
+updated: 2026-03-18T18:10:21-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (693)  
+# 📺 Videos (695)  
 - [💰🤑🤖💡🚀💲 $0.10/Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
@@ -310,6 +310,7 @@ updated: 2026-03-18T18:03:25-07:00
 - [😠✊🇩🇪🇮🇹🇷🇺🇺🇸 It’s Time to Talk About Fascism | Explainer](./its-time-to-talk-about-fascism-explainer.md)  
 - [📺🔎⚖️🗣️🏛️ Jack Smith's full House Judiciary deposition on investigating and indicting Trump](./jack-smiths-full-house-judiciary-deposition-on-investigating-and-indicting-trump.md)  
 - [🏛️🤬 Jason Crow is really pissed](./jason-crow-is-really-pissed.md)  
+- [📺🎤🗣️ J.D. Vance: Last Week Tonight with John Oliver (HBO)](./jd-vance-last-week-tonight-with-john-oliver-hbo.md)  
 - [🏛️📰🗣️🇺🇸 Jelani Cobb talks democracy, Trumpism, and the future of journalism | Code Switch](./jelani-cobb-talks-democracy-trumpism-and-the-future-of-journalism-code-switch.md)  
 - [🙊🤐👑 Jimmy Kimmel's Suspension Was Always About Censorship (Just Ask Trump) | The Daily Show](./jimmy-kimmels-suspension-was-always-about-censorship-just-ask-trump-the-daily-show.md)  
 - [📺🎤👮‍♂️📰 Jimmy Kimmel & the FCC: Last Week Tonight with John Oliver (HBO)](./jimmy-kimmel-the-fcc-last-week-tonight-with-john-oliver-hbo.md)  
@@ -616,6 +617,7 @@ updated: 2026-03-18T18:03:25-07:00
 - [❓🪙💡🇺🇸 Unraveling the Mysteries of Modern Monetary Theory with Warren Mosler](./unraveling-the-mysteries-of-modern-monetary-theory-with-warren-mosler.md)  
 - [🌊🏄‍♂️✋🧠 Urge Surfing Demonstration and Explanation by a Therapist | Effectively manage cravings and urges](./urge-surfing-demonstration-and-explanation-by-a-therapist-effectively-manage-cravings-and-urges.md)  
 - [🇺🇸🚫⛑️ USAID closes its doors after six decades](./usaid-closes-its-doors-after-six-decades.md)  
+- [📈🗣️📺 USAID: Last Week Tonight with John Oliver (HBO)](./usaid-last-week-tonight-with-john-oliver-hbo.md)  
 - [US deportees in El Salvador stuck in legal limbo, lawyers say | REUTERS](./us-deportees-in-el-salvador-stuck-in-legal-limbo-lawyers-say-reuters.md)  
 - [✔️✔️✔️🧠 Use the Triple Check Method to jumpstart your brain | Anne-Laure Le Cunff](./use-the-triple-check-method-to-jumpstart-your-brain-anne-laure-le-cunff.md)  
 - [🤖🧠🚀📈 Using Generative AI to Strengthen & Accelerate Learning • Barbara Oakley • GOTO 2024](./using-generative-ai-to-strengthen-accelerate-learning-barbara-oakley-goto-2024.md)  

@@ -1,7 +1,7 @@
 /**
  * Tests for scripts/lib/static-giscus.ts — Static Giscus comment rendering and injection.
  *
- * Tests cover pure functions only: normalizePathname, slugToPathname,
+ * Tests cover pure functions only: normalizePathname, slugToPathname, titleToPathname,
  * buildCommentsMap, renderStaticCommentsHtml, extractSlug, injectStaticComments.
  */
 
@@ -11,6 +11,7 @@ import assert from "node:assert/strict";
 import {
   normalizePathname,
   slugToPathname,
+  titleToPathname,
   buildCommentsMap,
   renderStaticCommentsHtml,
   extractSlug,
@@ -72,6 +73,30 @@ describe("slugToPathname", () => {
 
   it("prepends slash to simple slug", () => {
     assert.equal(slugToPathname("about"), "/about");
+  });
+});
+
+// --- titleToPathname ---
+
+describe("titleToPathname", () => {
+  it("prepends slash when missing", () => {
+    assert.equal(titleToPathname("reflections/2024-11-20"), "/reflections/2024-11-20");
+  });
+
+  it("preserves existing leading slash", () => {
+    assert.equal(titleToPathname("/topics/javascript"), "/topics/javascript");
+  });
+
+  it("handles empty string", () => {
+    assert.equal(titleToPathname(""), "/");
+  });
+
+  it("handles root slash", () => {
+    assert.equal(titleToPathname("/"), "/");
+  });
+
+  it("handles simple title", () => {
+    assert.equal(titleToPathname("about"), "/about");
   });
 });
 
@@ -177,6 +202,26 @@ describe("buildCommentsMap", () => {
     assert.equal(Object.keys(result).length, 2);
     assert.equal(result["/page-a"]?.[0]?.author, "a");
     assert.equal(result["/page-b"]?.[0]?.author, "b");
+  });
+
+  it("normalizes titles without leading slash to match slug-derived pathnames", () => {
+    const discussions: readonly GqlDiscussion[] = [
+      {
+        title: "reflections/2024-11-20",
+        comments: {
+          nodes: [
+            {
+              bodyHTML: "<p>Nice reflection</p>",
+              author: { login: "reader", url: "https://github.com/reader" },
+              createdAt: "2024-11-20T12:00:00Z",
+            },
+          ],
+        },
+      },
+    ];
+    const result = buildCommentsMap(discussions);
+    assert.ok(result["/reflections/2024-11-20"], "should have leading slash");
+    assert.equal(result["reflections/2024-11-20"], undefined, "should not have key without slash");
   });
 });
 
@@ -433,5 +478,27 @@ describe("injectStaticComments", () => {
     noSlugHtmls.forEach((html) => {
       assert.equal(injectStaticComments(html, map), html);
     });
+  });
+
+  it("matches when discussion title lacks leading slash (real giscus format)", () => {
+    const html = `<html><body data-slug="reflections/2024-11-20"><div class="giscus" data-repo="test"></div></body></html>`;
+    const discussions: readonly GqlDiscussion[] = [
+      {
+        title: "reflections/2024-11-20",
+        comments: {
+          nodes: [
+            {
+              bodyHTML: "<p>Great reflection!</p>",
+              author: { login: "reader", url: "https://github.com/reader" },
+              createdAt: "2024-11-20T12:00:00Z",
+            },
+          ],
+        },
+      },
+    ];
+    const commentsMap = buildCommentsMap(discussions);
+    const result = injectStaticComments(html, commentsMap);
+    assert.ok(result.includes("data-static-giscus"), "should inject static comments");
+    assert.ok(result.includes("Great reflection!"), "should include comment body");
   });
 });

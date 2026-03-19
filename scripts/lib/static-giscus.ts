@@ -67,6 +67,9 @@ export const normalizePathname = (p: string): string =>
 export const slugToPathname = (slug: string): string =>
   slug === "index" ? "/" : `/${slug}`;
 
+export const titleToPathname = (title: string): string =>
+  title.startsWith("/") ? title : `/${title}`;
+
 const toStaticComment = (c: GqlComment): StaticComment => ({
   author: c.author?.login ?? "unknown",
   authorUrl: c.author?.url ?? "https://github.com",
@@ -77,7 +80,7 @@ const toStaticComment = (c: GqlComment): StaticComment => ({
 export const buildCommentsMap = (discussions: readonly GqlDiscussion[]): CommentsMap =>
   Object.fromEntries(
     discussions
-      .map((d) => [normalizePathname(d.title), d.comments.nodes.map(toStaticComment)] as const)
+      .map((d) => [normalizePathname(titleToPathname(d.title)), d.comments.nodes.map(toStaticComment)] as const)
       .filter(([, comments]) => comments.length > 0),
   );
 

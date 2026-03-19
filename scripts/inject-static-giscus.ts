@@ -57,7 +57,7 @@ const main = async (): Promise<void> => {
 
   const commentsMap = buildCommentsMap(discussions);
   const pathnames = Object.keys(commentsMap);
-  console.log(JSON.stringify({ event: "static_giscus_mapped", pathnames: pathnames.length }));
+  console.log(JSON.stringify({ event: "static_giscus_mapped", pathnames: pathnames.length, sample: pathnames.slice(0, 5) }));
 
   const publicDir = process.argv[2] ?? join(process.cwd(), "public");
   const injected = injectCommentsIntoFiles(publicDir, commentsMap);

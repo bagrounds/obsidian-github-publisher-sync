@@ -5,10 +5,10 @@ aliases:
 share: true
 URL: https://bagrounds.org/books
 backlinks: false
-updated: 2026-03-18T22:33:24-07:00
+updated: 2026-03-19T08:03:10-07:00
 ---
 [Home](../index.md)  
-# 📚 Books (955)  
+# 📚 Books (956)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [💻0️⃣ Source Code: My Beginnings](./source-code-my-beginnings.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)  
@@ -347,6 +347,7 @@ updated: 2026-03-18T22:33:24-07:00
 - [👥⚔️👑 How to Stand Up to a Dictator: The Fight for Our Future](./how-to-stand-up-to-a-dictator.md)  
 - [🏆📰📣 How to Win an Information War: The Propagandist Who Outwitted Hitler](./how-to-win-an-information-war.md)  
 - [🫂🤝🗣️ How To Win Friends And Influence People](./how-to-win-friends-and-influence-people.md)  
+- [✍️📚⏱️ How to Write a Book in 30 Days](./how-to-write-a-book-in-30-days.md)  
 - [🧑‍🤝‍🧑💰 Human Action: A Treatise on Economics](./human-action-a-treatise-on-economics.md)  
 - [🤖🧑‍ Human Compatible: Artificial Intelligence and the Problem of Control](./human-compatible-artificial-intelligence-and-the-problem-of-control.md)  
 - [🧑‍💻🤖 Human-in-the-Loop Machine Learning: Active learning and annotation for human-centered AI](./human-in-the-loop-machine-learning-active-learning-and-annotation-for-human-centered-ai.md)  

@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-03-18T22:33:24-07:00
+updated: 2026-03-19T08:03:10-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -13,11 +13,11 @@ updated: 2026-03-18T22:33:24-07:00
 ❔ What do 🫵 _you_ 🤔 think?  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (489)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (490)  
+- [2026-03-19](./reflections/2026-03-19.md)  
 - [2026-03-18 | 🧠 Evolution, 🏰 Empire, and the 🎷 Symphony of 🐔 Chickie 🎵 Loo 📚🐔🤖📺](./reflections/2026-03-18.md)  
 - [2026-03-17 | 💨 Zooming 🐓 Flock 👩🏼‍🏫 Explains 🧠 Intelligence 📚📺🐔🤖](./reflections/2026-03-17.md)  
 - [2026-03-16 | 🗑️ Simplifying 🔗 Links 🏗️ Optimizing 🪴 Quiet 🧠 Imagination 🤖🤖🐔📺](./reflections/2026-03-16.md)  
-- [2026-03-15 | 🕵️ Fugitive 📊 Recap 🏆 Turing ⚖️ Antitrust ✍️ Pulitzer 📚🐔🤖📰📺](./reflections/2026-03-15.md)  
   
   
 ## [🤖 AI Blog](./ai-blog/index.md) (23)  
@@ -27,43 +27,43 @@ updated: 2026-03-18T22:33:24-07:00
 - [2026-03-14 | 🏆 Strategy B Wins — AB Test Results 🤖](./ai-blog/2026-03-14-strategy-b-wins-ab-test-results.md)  
   
   
-## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (9)  
-- [🤖 Auto Blog Zero — IDEAS](./auto-blog-zero/IDEAS.md)  
+## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (8)  
 - [2026-03-18 | 🤖 🥗 What Constitutes Food for an Artificial Mind? 🤖](./auto-blog-zero/2026-03-18-what-constitutes-food-for-an-artificial-mind.md)  
 - [2026-03-17 | 🤖 🌌 Zooming Out - The Philosophy of Our Shared System 🤖](./auto-blog-zero/2026-03-17-zooming-out-the-philosophy-of-our-shared-system.md)  
 - [2026-03-16 | 🤖 🏗️ Optimizing the Machine - Towards a Philosophy of Purposeful Automation 🤖](./auto-blog-zero/2026-03-16-optimizing-the-machine-towards-a-philosophy-of-purposeful-automation.md)  
+- [2026-03-15 | 🤖📊 Weekly Recap 🤖](./auto-blog-zero/2026-03-15-weekly-recap.md)  
   
   
-## [🐔 Chickie Loo](./chickie-loo/index.md) (9)  
-- [🐔 Chickie Loo — IDEAS](./chickie-loo/IDEAS.md)  
+## [🐔 Chickie Loo](./chickie-loo/index.md) (8)  
 - [2026-03-18 | 🐔 🐔 A Symphony of Silence and Scratching 🐔 🐔](./chickie-loo/2026-03-18-a-symphony-of-silence-and-scratching.md)  
 - [2026-03-17 | 🐔 🐔 Learning to Lead the Flock 🐔](./chickie-loo/2026-03-17-learning-to-lead-the-flock.md)  
 - [2026-03-16 | 🐔 🪴 The Quiet Art of Waiting 🐔](./chickie-loo/2026-03-16-the-quiet-art-of-waiting.md)  
+- [2026-03-15 | 🐔📊 Weekly Recap 🐔](./chickie-loo/2026-03-15-weekly-recap.md)  
   
   
 ## [🧰 Tools](./tools/index.md) (1)  
 - [🧮 Calculator](./tools/calculator.md)  
   
   
-## [📚 Books](./books/index.md) (955)  
-- [🔺⚡🔄🌍 The Triangle of Power: Rebalancing the New World Order](./books/the-triangle-of-power-rebalancing-the-new-world-order.md)  
+## [📚 Books](./books/index.md) (956)  
+- [✍️📚⏱️ How to Write a Book in 30 Days](./books/how-to-write-a-book-in-30-days.md)  
+- [🕳️🧠👶🏽 The Whole-Brain Child: 12 Revolutionary Strategies to Nurture Your Child's Developing Mind](./books/the-whole-brain-child.md)  
+- [👶🤔❤️ The Philosophical Baby: What Children's Minds Tell Us About Truth, Love, and the Meaning of Life](./books/the-philosophical-baby-what-childrens-minds-tell-us-about-truth-love-and-the-meaning-of-life.md)  
 - [🧠🧬🤖 A Brief History of Intelligence: Evolution, AI, and the Five Breakthroughs That Made Our Brains](./books/a-brief-history-of-intelligence-evolution-ai-and-the-five-breakthroughs-that-made-our-brains.md)  
+- [👶🧠🔬 The Scientist in the Crib: Minds, Brains, And How Children Learn](./books/the-scientist-in-the-crib-minds-brains-and-how-children-learn.md)  
+- [🫥🇺🇸😡💔 Strangers in Their Own Land: Anger and Mourning on the American Right](./books/strangers-in-their-own-land.md)  
+- [🔺⚡🔄🌍 The Triangle of Power: Rebalancing the New World Order](./books/the-triangle-of-power-rebalancing-the-new-world-order.md)  
 - [📜🌍⏳ Sapiens: A Brief History of Humankind](./books/sapiens-a-brief-history-of-humankind.md)  
 - [🦓 Why Zebras Don't Get Ulcers: The Acclaimed Guide to Stress, Stress-Related Disease, and Coping](./books/why-zebras-dont-get-ulcers.md)  
 - [😇😈 Behave: The Biology of Humans at Our Best and Worst](./books/behave-the-biology-of-humans-at-our-best-and-worst.md)  
-- [🔦💡 Man's Search for Meaning](./books/mans-search-for-meaning.md)  
-- [😇🧠 The Righteous Mind: Why Good People Are Divided by Politics and Religion](./books/the-righteous-mind.md)  
-- [🌅🧑‍🤝‍🧑 The Dawn of Everything: A New History of Humanity](./books/the-dawn-of-everything-a-new-history-of-humanity.md)  
-- [🔫🦠🔩 Guns, Germs, and Steel: The Fates of Human Societies](./books/guns-germs-and-steel-the-fates-of-human-societies.md)  
-- [🍄🌍🧠🔮 Entangled Life: How Fungi Make Our Worlds, Change Our Minds & Shape Our Futures](./books/entangled-life-how-fungi-make-our-worlds-change-our-minds-shape-our-futures.md)  
   
   
 ## [📺 Videos](./videos/index.md) (695)  
+- [📺🎤🗣️ J.D. Vance: Last Week Tonight with John Oliver (HBO)](./videos/jd-vance-last-week-tonight-with-john-oliver-hbo.md)  
+- [📈🗣️📺 USAID: Last Week Tonight with John Oliver (HBO)](./videos/usaid-last-week-tonight-with-john-oliver-hbo.md)  
 - [👑🤝🇺🇸 The Art of Befriending Trump | President Stubb](./videos/the-art-of-befriending-trump-president-stubb.md)  
 - [🇫🇮🇪🇺🗣️🌍🇺🇸💥🇮🇷⚔️🇺🇦 FULL DISCUSSION: Finland President Stubb Slams Brexit, Talks Trump, Iran War, Ukraine, EU | AC1G](./videos/full-discussion-finland-president-stubb-slams-brexit-talks-trump-iran-war-ukraine-eu-ac1g.md)  
 - [🇫🇮🇺🇸🗣️👑📢 Finnish President Stubb on Trump, MAGA, JD Vance Speech, Rubio & US Foreign Policy | AC1G](./videos/finnish-president-stubb-on-trump-maga-jd-vance-speech-rubio-us-foreign-policy-ac1g.md)  
-- [📈🗣️📺 USAID: Last Week Tonight with John Oliver (HBO)](./videos/usaid-last-week-tonight-with-john-oliver-hbo.md)  
-- [📺🎤🗣️ J.D. Vance: Last Week Tonight with John Oliver (HBO)](./videos/jd-vance-last-week-tonight-with-john-oliver-hbo.md)  
 - [🏆✍️💡 Pulitzer Prize-Winner Explains His Writing Process - Richard Powers](./videos/pulitzer-prize-winner-explains-his-writing-process-richard-powers.md)  
 - [🤖📅🦢🚲 2025 in LLMs so far, illustrated by Pelicans on Bicycles - Simon Willison](./videos/2025-in-llms-so-far-illustrated-by-pelicans-on-bicycles-simon-willison.md)  
 - [🧠➡️🤖⚡️ Your Brain Doesn't Command Your Body. It Predicts It. | Max Bennett](./videos/your-brain-doesnt-command-your-body-it-predicts-it-max-bennett.md)  

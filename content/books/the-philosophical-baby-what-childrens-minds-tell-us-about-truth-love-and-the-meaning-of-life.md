@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org/books/the-philosophical-baby-what-childrens-minds-tell-us-about-truth-love-and-the-meaning-of-life
 share: true
 affiliate link: https://amzn.to/3HNVMKl
-updated: 2026-03-19T12:12:15.854Z
+updated: 2026-03-19T14:20:32.763Z
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 👶🤔❤️ The Philosophical Baby: What Children's Minds Tell Us About Truth, Love, and the Meaning of Life  

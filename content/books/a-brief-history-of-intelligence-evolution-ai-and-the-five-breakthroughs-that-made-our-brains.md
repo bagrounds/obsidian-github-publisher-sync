@@ -6,7 +6,7 @@ URL: https://bagrounds.org/books/a-brief-history-of-intelligence-evolution-ai-an
 share: true
 CTA: 💡 Uncover the origins of thought.
 affiliate link: https://amzn.to/4dslDFu
-updated: 2026-03-19T12:12:15.854Z
+updated: 2026-03-19T14:20:32.763Z
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧠🧬🤖 A Brief History of Intelligence: Evolution, AI, and the Five Breakthroughs That Made Our Brains  

@@ -32,5 +32,8 @@ export const readSeriesPosts = (seriesDir: string): readonly BlogPost[] =>
 
 export const readAgentsMd = (seriesDir: string): string => {
   const agentsPath = path.join(seriesDir, "AGENTS.md");
-  return fs.existsSync(agentsPath) ? fs.readFileSync(agentsPath, "utf-8") : "";
+  if (!fs.existsSync(agentsPath)) return "";
+  const raw = fs.readFileSync(agentsPath, "utf-8");
+  const { body } = parseFrontmatter(raw);
+  return body.trim();
 };

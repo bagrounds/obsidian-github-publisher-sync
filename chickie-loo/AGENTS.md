@@ -1,3 +1,11 @@
+---
+share: true
+no_social: true
+title: 🐔 Chickie Loo — AGENTS.md
+URL: https://bagrounds.org/chickie-loo/AGENTS
+Author: "[[chickie-loo]]"
+tags:
+---
 # 🐔 Chickie Loo — AGENTS.md
 
 ## 🪪 Identity

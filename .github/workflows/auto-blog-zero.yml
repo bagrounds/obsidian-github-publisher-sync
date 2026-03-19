@@ -103,6 +103,8 @@ jobs:
             else
               echo "ℹ️ No metadata file — first post in series"
             fi
+            echo "📝 Syncing AGENTS.md: ${SERIES}/AGENTS.md"
+            npx tsx scripts/sync-file-to-obsidian.ts "${SERIES}/AGENTS.md" "${SERIES}/AGENTS.md"
           else
             echo "No new post generated today"
           fi

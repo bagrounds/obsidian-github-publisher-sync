@@ -50,18 +50,21 @@ const callGemini = async (
   model: string,
   prompt: { system: string; user: string },
 ): Promise<string> => {
-  const { GoogleGenerativeAI } = await import("@google/generative-ai");
-  const genModel = new GoogleGenerativeAI(apiKey).getGenerativeModel({ model });
+  const { GoogleGenAI } = await import("@google/genai");
+  const ai = new GoogleGenAI({ apiKey });
 
-  const maxOutputTokens = parseInt(process.env.BLOG_MAX_OUTPUT_TOKENS ?? "8192", 10);
-  log({ event: "gemini_request_body", model, maxOutputTokens, temperature: 0.9, systemPrompt: prompt.system, userPrompt: prompt.user });
+  const useGrounding = process.env.BLOG_ENABLE_GROUNDING !== "false";
+  const tools = useGrounding ? [{ googleSearch: {} }] : undefined;
 
-  const result = await genModel.generateContent({
+  log({ event: "gemini_request_body", model, temperature: 0.9, grounding: useGrounding, systemPrompt: prompt.system, userPrompt: prompt.user });
+
+  const result = await ai.models.generateContent({
+    model,
     contents: [{ role: "user", parts: [{ text: `${prompt.system}\n\n${prompt.user}` }] }],
-    generationConfig: { maxOutputTokens, temperature: 0.9 },
+    config: { temperature: 0.9, tools },
   });
 
-  const text = result.response.text().trim();
+  const text = (result.text ?? "").trim();
   log({ event: "gemini_response", model, responseLength: text.length });
   return text;
 };

@@ -166,6 +166,19 @@ URL: https://bagrounds.org/short
 Hi.
 `;
 
+const NO_SOCIAL_NOTE = `---
+share: true
+no_social: true
+title: 🤖 Auto Blog Zero — AGENTS.md
+URL: https://bagrounds.org/auto-blog-zero/AGENTS
+---
+# 🤖 Auto Blog Zero — AGENTS.md
+
+This is the AGENTS.md file for Auto Blog Zero.
+It contains instructions for the AI blog generation pipeline.
+This content should not be posted to social media platforms.
+`;
+
 // --- Unit Tests ---
 
 describe("parseFrontmatter", () => {
@@ -461,6 +474,42 @@ describe("isPostableContent", () => {
     writeNote(tempDir, "topics/philosophy.md", TOPIC_NOTE);
     const note = readContentNote("topics/philosophy.md", tempDir)!;
     assert.ok(isPostableContent(note));
+  });
+
+  test("returns false for notes with no_social frontmatter", () => {
+    writeNote(tempDir, "auto-blog-zero/AGENTS.md", NO_SOCIAL_NOTE);
+    const note = readContentNote("auto-blog-zero/AGENTS.md", tempDir)!;
+    assert.ok(!isPostableContent(note));
+  });
+});
+
+describe("readContentNote — noSocial", () => {
+  let tempDir: string;
+
+  beforeEach(() => {
+    tempDir = createTempDir();
+  });
+
+  afterEach(() => {
+    cleanupTempDir(tempDir);
+  });
+
+  test("noSocial is true when no_social frontmatter is true", () => {
+    writeNote(tempDir, "agents.md", NO_SOCIAL_NOTE);
+    const note = readContentNote("agents.md", tempDir)!;
+    assert.equal(note.noSocial, true);
+  });
+
+  test("noSocial is false when no_social frontmatter is absent", () => {
+    writeNote(tempDir, "books/sophies-world.md", BOOK_NOTE);
+    const note = readContentNote("books/sophies-world.md", tempDir)!;
+    assert.equal(note.noSocial, false);
+  });
+
+  test("noSocial is false for regular reflection notes", () => {
+    writeNote(tempDir, "reflections/2026-03-08.md", REFLECTION_NOTE);
+    const note = readContentNote("reflections/2026-03-08.md", tempDir)!;
+    assert.equal(note.noSocial, false);
   });
 });
 

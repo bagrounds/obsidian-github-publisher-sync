@@ -41,19 +41,24 @@ interface RawModelResponse {
 // API interaction
 // ---------------------------------------------------------------------------
 
+const safeInt = (value: unknown, fallback: number): number => {
+  const n = Number(value);
+  return Number.isFinite(n) ? n : fallback;
+};
+
 const parseModel = (raw: Record<string, unknown>): GeminiModelInfo => ({
   name: String(raw.name ?? ""),
   displayName: String(raw.displayName ?? ""),
   description: String(raw.description ?? ""),
-  inputTokenLimit: Number(raw.inputTokenLimit ?? 0),
-  outputTokenLimit: Number(raw.outputTokenLimit ?? 0),
+  inputTokenLimit: safeInt(raw.inputTokenLimit, 0),
+  outputTokenLimit: safeInt(raw.outputTokenLimit, 0),
   supportedGenerationMethods: Array.isArray(raw.supportedGenerationMethods)
-    ? (raw.supportedGenerationMethods as string[])
+    ? raw.supportedGenerationMethods.filter((x): x is string => typeof x === "string")
     : [],
-  ...(raw.temperature != null ? { temperature: Number(raw.temperature) } : {}),
-  ...(raw.maxTemperature != null ? { maxTemperature: Number(raw.maxTemperature) } : {}),
-  ...(raw.topP != null ? { topP: Number(raw.topP) } : {}),
-  ...(raw.topK != null ? { topK: Number(raw.topK) } : {}),
+  ...(raw.temperature != null ? { temperature: safeInt(raw.temperature, 0) } : {}),
+  ...(raw.maxTemperature != null ? { maxTemperature: safeInt(raw.maxTemperature, 0) } : {}),
+  ...(raw.topP != null ? { topP: safeInt(raw.topP, 0) } : {}),
+  ...(raw.topK != null ? { topK: safeInt(raw.topK, 0) } : {}),
 });
 
 const fetchPage = async (

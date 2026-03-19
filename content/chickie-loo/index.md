@@ -5,11 +5,12 @@ aliases:
 title: 🐔 Chickie Loo
 URL: https://bagrounds.org/chickie-loo
 backlinks: false
-updated: 2026-03-19T08:03:10-07:00
+updated: 2026-03-19T08:38:03-07:00
 ---
 [Home](../index.md)  
-# 🐔 Chickie Loo (8)  
+# 🐔 Chickie Loo (10)  
 - [🐔 Chickie Loo — AGENTS.md](./AGENTS.md)  
+- [2026-03-19 | 🐔 🐔 A Bass in the Hand and a Heart Full of Home 🐔 🐔](./2026-03-19-a-bass-in-the-hand-and-a-heart-full-of-home.md)  
 - [2026-03-18 | 🐔 🐔 A Symphony of Silence and Scratching 🐔 🐔](./2026-03-18-a-symphony-of-silence-and-scratching.md)  
 - [2026-03-17 | 🐔 🐔 Learning to Lead the Flock 🐔](./2026-03-17-learning-to-lead-the-flock.md)  
 - [2026-03-16 | 🐔 🪴 The Quiet Art of Waiting 🐔](./2026-03-16-the-quiet-art-of-waiting.md)  

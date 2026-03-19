@@ -76,7 +76,7 @@ export const parseServiceAccountKey = (raw: string): ServiceAccountKey => {
 // ---------------------------------------------------------------------------
 
 const TOKEN_ENDPOINT = "https://oauth2.googleapis.com/token";
-const TOKEN_LIFETIME_SECONDS = 3600;
+const JWT_EXPIRATION_SECONDS = 3600;
 const CLOUD_PLATFORM_SCOPE = "https://www.googleapis.com/auth/cloud-platform";
 
 export const getAccessToken = async (
@@ -88,7 +88,7 @@ export const getAccessToken = async (
     scope: CLOUD_PLATFORM_SCOPE,
     aud: TOKEN_ENDPOINT,
     iat: now,
-    exp: now + TOKEN_LIFETIME_SECONDS,
+    exp: now + JWT_EXPIRATION_SECONDS,
   };
 
   const jwt = createJwt(claims, serviceAccount.private_key);

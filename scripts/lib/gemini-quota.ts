@@ -230,12 +230,15 @@ const parseUsageMetrics = (series: RawTimeSeries): readonly UsageMetric[] =>
     timestamp: String(point.interval?.endTime ?? ""),
   }));
 
+const ONE_HOUR_MS = 60 * 60 * 1000;
+const ALIGNMENT_PERIOD = "60s";
+
 export const fetchUsageMetrics = async (
   accessToken: string,
   projectId: string,
 ): Promise<readonly UsageMetric[]> => {
   const now = new Date();
-  const oneHourAgo = new Date(now.getTime() - 60 * 60 * 1000);
+  const oneHourAgo = new Date(now.getTime() - ONE_HOUR_MS);
 
   const filter = [
     `metric.type = "serviceruntime.googleapis.com/quota/rate/net_usage"`,
@@ -246,10 +249,7 @@ export const fetchUsageMetrics = async (
   url.searchParams.set("filter", filter);
   url.searchParams.set("interval.startTime", oneHourAgo.toISOString());
   url.searchParams.set("interval.endTime", now.toISOString());
-  url.searchParams.set(
-    "aggregation.alignmentPeriod",
-    "60s",
-  );
+  url.searchParams.set("aggregation.alignmentPeriod", ALIGNMENT_PERIOD);
   url.searchParams.set(
     "aggregation.perSeriesAligner",
     "ALIGN_RATE",
@@ -363,6 +363,9 @@ export interface QuotaFetchConfig {
   readonly projectId?: string;
 }
 
+const errorMessage = (err: unknown): string =>
+  err instanceof Error ? err.message : String(err);
+
 export const fetchFullQuotaReport = async (
   config: QuotaFetchConfig,
 ): Promise<QuotaReport> => {
@@ -374,11 +377,11 @@ export const fetchFullQuotaReport = async (
   if (config.accessToken && config.projectId) {
     const [limits, metrics] = await Promise.all([
       fetchQuotaLimits(config.accessToken, config.projectId).catch((err) => {
-        console.warn(`⚠️ Service Usage API error (quota limits): ${err instanceof Error ? err.message : err}`);
+        console.warn(`⚠️ Service Usage API error (quota limits): ${errorMessage(err)}`);
         return [] as readonly QuotaLimit[];
       }),
       fetchUsageMetrics(config.accessToken, config.projectId).catch((err) => {
-        console.warn(`⚠️ Cloud Monitoring API error (usage metrics): ${err instanceof Error ? err.message : err}`);
+        console.warn(`⚠️ Cloud Monitoring API error (usage metrics): ${errorMessage(err)}`);
         return [] as readonly UsageMetric[];
       }),
     ]);

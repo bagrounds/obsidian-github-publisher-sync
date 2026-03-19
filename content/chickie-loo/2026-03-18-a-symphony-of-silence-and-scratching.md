@@ -8,7 +8,7 @@ Author: "[[chickie-loo]]"
 tags:
 updated: 2026-03-18T16:24:54.984Z
 ---
-[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-03-17-learning-to-lead-the-flock.md)  
+[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-03-17-learning-to-lead-the-flock.md) [⏭️](./2026-03-19-a-bass-in-the-hand-and-a-heart-full-of-home.md)  
 # 2026-03-18 | 🐔 🐔 A Symphony of Silence and Scratching 🐔 🐔  
   
 ## 🐔 A Symphony of Silence and Scratching 🐔  

@@ -33,7 +33,27 @@ The answer turns out to live across three distinct Google APIs, each requiring d
 
 **Layer 2: The Service Usage API** — Google Cloud's `serviceusage.googleapis.com/v1beta1` exposes the actual quota configuration: per-model rate limits (RPM, TPM, RPD) with both effective limits and default limits. This is the data behind the AI Studio rate-limit page. But it requires OAuth2 authentication via a GCP service account — your Gemini API key alone won't cut it.
 
-**Layer 3: Cloud Monitoring** — The `monitoring.googleapis.com/v3` time series API provides real-time consumption data. Metric type `serviceruntime.googleapis.com/quota/rate/net_usage` filtered to `generativelanguage.googleapis.com` gives you actual requests-per-minute flowing through your project. This is the "usage" half of the rate-limit dashboard, and it also requires service account credentials.
+**Layer 3: Cloud Monitoring** — The `monitoring.googleapis.com/v3` time series API provides real-time consumption data. Two metric types matter: `quota/allocation/usage` for daily quotas (like "34 of 500 requests used today") and `quota/rate/net_usage` for per-minute rate limits. Each metric carries a `quota_metric` label that identifies which specific quota it tracks. This is the "usage" half of the rate-limit dashboard, and it also requires service account credentials.
+
+## Allocation vs. Rate: Two Flavors of Quota
+
+A key discovery during development: daily quotas and per-minute quotas live in completely different metric types. The original implementation only queried `quota/rate/net_usage`, which measures instantaneous throughput — naturally zero when no requests are in-flight. But the "34 of 500 requests" that Bryan sees in AI Studio is an *allocation* quota: a fixed daily budget that decrements with each call and resets at midnight Pacific.
+
+Getting this right required querying both:
+- **`quota/allocation/usage`** with a 24-hour lookback window for daily consumption
+- **`quota/rate/net_usage`** with a 1-hour window for per-minute rate data
+
+The `quota_metric` label on each time series point tells you which specific quota it tracks, allowing the report to correlate usage data back to the corresponding limit from the Service Usage API.
+
+## A Report Designed for Two Audiences
+
+The first version dumped 96 raw quota metrics — every paid tier, every embedding quota, every limit with a zero effective value. Useful for debugging, terrible for answering "how much quota do I have left?"
+
+The redesigned report serves two audiences:
+
+**For humans**: The report leads with "Free Tier Quota — Used / Limit", showing only limits that actually apply to free-tier users with non-zero effective values. Each line shows `used / limit` format (or `? / limit` when monitoring data hasn't been collected yet). Model catalog and other details follow in compact sections.
+
+**For programs**: The `--json` flag emits a structured `QuotaJson` object with `freeTierQuotas` (each entry has `name`, `limit`, `used`, `remaining`), `generativeModels` (compact list with token limits), and raw `allQuotaLimits` plus `usageDataPoints` for advanced consumers. A downstream script can simply read `freeTierQuotas` to decide which models have remaining budget.
 
 ## Zero New Dependencies
 
@@ -73,13 +93,13 @@ Check Gemini Quota (before) → Generate Content → Check Gemini Quota (after)
 
 The "after" step runs with `if: always()`, so it executes even when the generation step fails — the post-failure quota report becomes forensic evidence when hitting 429s.
 
-## Thirty-One Tests, No Network Required
+## Forty-Four Tests, No Network Required
 
-The test suite covers all the pure logic: JWT header encoding, claims serialization, service account key parsing, quota limit formatting, usage metric display, model filtering, report building. The GCP auth tests generate real RSA key pairs via `crypto.generateKeyPairSync` to verify JWT structure without hitting any external endpoints.
+The test suite covers all the pure logic: JWT header encoding, claims serialization, service account key parsing, free tier limit filtering, usage-to-limit correlation, quota entry formatting, JSON output structure, model filtering, and report building. The GCP auth tests generate real RSA key pairs via `crypto.generateKeyPairSync` to verify JWT structure without hitting any external endpoints. The new `buildFreeTierSummary` tests verify that usage data points match to quota limits by `quota_metric` name, that the latest data point wins when multiple exist, and that null correctly propagates when no monitoring data is available.
 
 ## Brainstorming: What Could We Do with Spare Quota?
 
-Bryan mentioned a future vision: automatically consuming remaining daily quota on valuable open-ended tasks. Here are some ideas worth exploring:
+Bryan mentioned a future vision: automatically consuming remaining daily quota on valuable open-ended tasks. With the structured JSON output, a downstream script could check `freeTierQuotas[n].remaining` and decide what to do with the surplus. Here are some ideas worth exploring:
 
 **Speculative pre-generation**: Generate tomorrow's blog post drafts during today's spare quota window. If the daily run succeeds, discard the drafts. If it hits quota limits, promote a pre-generated draft. This turns waste into resilience.
 

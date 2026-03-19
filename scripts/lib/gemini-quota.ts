@@ -43,10 +43,20 @@ export interface QuotaLimit {
   readonly defaultLimit: number;
 }
 
-export interface UsageMetric {
-  readonly metric: string;
+export interface UsageDataPoint {
+  readonly quotaMetric: string;
   readonly value: number;
   readonly timestamp: string;
+  readonly metricType: string;
+}
+
+export interface QuotaEntry {
+  readonly name: string;
+  readonly displayName: string;
+  readonly unit: string;
+  readonly limit: number;
+  readonly used: number | null;
+  readonly remaining: number | null;
 }
 
 export interface QuotaReport {
@@ -54,7 +64,8 @@ export interface QuotaReport {
   readonly timestamp: string;
   readonly models: readonly GeminiModelInfo[];
   readonly quotaLimits: readonly QuotaLimit[];
-  readonly usage: readonly UsageMetric[];
+  readonly usage: readonly UsageDataPoint[];
+  readonly freeTierSummary: readonly QuotaEntry[];
 }
 
 interface RawModelResponse {
@@ -70,6 +81,9 @@ export const safeInt = (value: unknown, fallback: number): number => {
   const n = Number(value);
   return Number.isFinite(n) ? n : fallback;
 };
+
+const errorMessage = (err: unknown): string =>
+  err instanceof Error ? err.message : String(err);
 
 // ---------------------------------------------------------------------------
 // 1. Gemini model catalog (API key auth)
@@ -212,6 +226,9 @@ interface RawTimeSeries {
     readonly type?: string;
     readonly labels?: Record<string, string>;
   };
+  readonly resource?: {
+    readonly labels?: Record<string, string>;
+  };
   readonly points?: readonly RawPoint[];
 }
 
@@ -220,9 +237,10 @@ interface RawTimeSeriesResponse {
   readonly nextPageToken?: string;
 }
 
-const parseUsageMetrics = (series: RawTimeSeries): readonly UsageMetric[] =>
+const parseUsageDataPoints = (series: RawTimeSeries): readonly UsageDataPoint[] =>
   (series.points ?? []).map((point) => ({
-    metric: String(series.metric?.type ?? ""),
+    quotaMetric: String(series.metric?.labels?.quota_metric ?? ""),
+    metricType: String(series.metric?.type ?? ""),
     value: safeInt(
       point.value?.int64Value ?? point.value?.doubleValue,
       0,
@@ -231,29 +249,26 @@ const parseUsageMetrics = (series: RawTimeSeries): readonly UsageMetric[] =>
   }));
 
 const ONE_HOUR_MS = 60 * 60 * 1000;
-const ALIGNMENT_PERIOD = "60s";
+const ONE_DAY_MS = 24 * ONE_HOUR_MS;
 
-export const fetchUsageMetrics = async (
+const fetchMonitoringTimeSeries = async (
   accessToken: string,
   projectId: string,
-): Promise<readonly UsageMetric[]> => {
+  metricType: string,
+  intervalMs: number,
+): Promise<readonly RawTimeSeries[]> => {
   const now = new Date();
-  const oneHourAgo = new Date(now.getTime() - ONE_HOUR_MS);
+  const start = new Date(now.getTime() - intervalMs);
 
   const filter = [
-    `metric.type = "serviceruntime.googleapis.com/quota/rate/net_usage"`,
+    `metric.type = "${metricType}"`,
     `resource.labels.service = "${GEMINI_SERVICE}"`,
   ].join(" AND ");
 
   const url = new URL(`${MONITORING_BASE}/projects/${projectId}/timeSeries`);
   url.searchParams.set("filter", filter);
-  url.searchParams.set("interval.startTime", oneHourAgo.toISOString());
+  url.searchParams.set("interval.startTime", start.toISOString());
   url.searchParams.set("interval.endTime", now.toISOString());
-  url.searchParams.set("aggregation.alignmentPeriod", ALIGNMENT_PERIOD);
-  url.searchParams.set(
-    "aggregation.perSeriesAligner",
-    "ALIGN_RATE",
-  );
 
   const response = await fetch(url.toString(), {
     headers: { Authorization: `Bearer ${accessToken}` },
@@ -265,7 +280,32 @@ export const fetchUsageMetrics = async (
   }
 
   const data = (await response.json()) as RawTimeSeriesResponse;
-  return (data.timeSeries ?? []).flatMap(parseUsageMetrics);
+  return data.timeSeries ?? [];
+};
+
+export const fetchUsageMetrics = async (
+  accessToken: string,
+  projectId: string,
+): Promise<readonly UsageDataPoint[]> => {
+  const [allocationSeries, rateSeries] = await Promise.all([
+    fetchMonitoringTimeSeries(
+      accessToken,
+      projectId,
+      "serviceruntime.googleapis.com/quota/allocation/usage",
+      ONE_DAY_MS,
+    ),
+    fetchMonitoringTimeSeries(
+      accessToken,
+      projectId,
+      "serviceruntime.googleapis.com/quota/rate/net_usage",
+      ONE_HOUR_MS,
+    ),
+  ]);
+
+  return [
+    ...allocationSeries.flatMap(parseUsageDataPoints),
+    ...rateSeries.flatMap(parseUsageDataPoints),
+  ];
 };
 
 // ---------------------------------------------------------------------------
@@ -279,6 +319,49 @@ export const generativeModels = (
     m.supportedGenerationMethods.includes("generateContent"),
   );
 
+const isFreeTierLimit = (q: QuotaLimit): boolean =>
+  q.displayName.toLowerCase().includes("free tier") && q.effectiveLimit > 0;
+
+export const freeTierLimits = (limits: readonly QuotaLimit[]): readonly QuotaLimit[] =>
+  limits.filter(isFreeTierLimit);
+
+// ---------------------------------------------------------------------------
+// Usage → limit correlation
+// ---------------------------------------------------------------------------
+
+const latestValueByQuotaMetric = (
+  usage: readonly UsageDataPoint[],
+): ReadonlyMap<string, number> => {
+  const map = new Map<string, { value: number; timestamp: string }>();
+  usage.forEach((point) => {
+    const existing = map.get(point.quotaMetric);
+    if (!existing || point.timestamp > existing.timestamp) {
+      map.set(point.quotaMetric, { value: point.value, timestamp: point.timestamp });
+    }
+  });
+  return new Map([...map.entries()].map(([k, v]) => [k, v.value]));
+};
+
+export const buildFreeTierSummary = (
+  limits: readonly QuotaLimit[],
+  usage: readonly UsageDataPoint[],
+): readonly QuotaEntry[] => {
+  const usageByMetric = latestValueByQuotaMetric(usage);
+  return freeTierLimits(limits).map((q) => {
+    const used = usageByMetric.get(q.metric) ?? null;
+    return {
+      name: q.metric,
+      displayName: q.displayName,
+      unit: q.unit,
+      limit: q.effectiveLimit,
+      used,
+      remaining: used !== null && q.effectiveLimit > 0
+        ? q.effectiveLimit - used
+        : null,
+    };
+  });
+};
+
 // ---------------------------------------------------------------------------
 // Report building
 // ---------------------------------------------------------------------------
@@ -287,70 +370,107 @@ export const buildQuotaReport = (
   models: readonly GeminiModelInfo[],
   label: string,
   quotaLimits: readonly QuotaLimit[] = [],
-  usage: readonly UsageMetric[] = [],
+  usage: readonly UsageDataPoint[] = [],
 ): QuotaReport => ({
   label,
   timestamp: new Date().toISOString(),
   models,
   quotaLimits,
   usage,
+  freeTierSummary: buildFreeTierSummary(quotaLimits, usage),
 });
 
 // ---------------------------------------------------------------------------
-// Formatting
+// Formatting — human-readable report
 // ---------------------------------------------------------------------------
 
-const formatTokenLimits = (m: GeminiModelInfo): string =>
-  `in=${m.inputTokenLimit.toLocaleString()} out=${m.outputTokenLimit.toLocaleString()}`;
+const formatModelLine = (m: GeminiModelInfo): string => {
+  const inTok = m.inputTokenLimit.toLocaleString();
+  const outTok = m.outputTokenLimit.toLocaleString();
+  return `  ${m.name.padEnd(52)} in=${inTok.padStart(10)}  out=${outTok.padStart(8)}`;
+};
 
-const formatModelLine = (m: GeminiModelInfo): string =>
-  `  ${m.name.padEnd(45)} ${formatTokenLimits(m).padEnd(28)} [${m.supportedGenerationMethods.join(", ")}]`;
+const formatUsedOfLimit = (used: number | null, limit: number): string =>
+  used !== null ? `${used} / ${limit}` : `? / ${limit}`;
 
-export const formatQuotaLimitLine = (q: QuotaLimit): string =>
-  `  ${q.displayName.padEnd(55)} ${String(q.effectiveLimit).padStart(12)} ${q.unit}`;
-
-export const formatUsageLine = (u: UsageMetric): string =>
-  `  ${u.metric.padEnd(70)} ${String(u.value).padStart(8)} @ ${u.timestamp}`;
+export const formatQuotaEntry = (q: QuotaEntry): string => {
+  const usage = formatUsedOfLimit(q.used, q.limit);
+  return `  ${q.displayName.padEnd(68)} ${usage.padStart(14)}  ${q.unit}`;
+};
 
 export const formatQuotaReport = (report: QuotaReport): string => {
   const header = `\n🔍 Gemini Quota Report — ${report.label}\n⏰ ${report.timestamp}`;
-  const divider = "─".repeat(100);
 
   const gen = generativeModels(report.models);
   const other = report.models.filter(
     (m) => !m.supportedGenerationMethods.includes("generateContent"),
   );
 
+  // --- Free tier summary (the main useful section) ---
+  const freeTierSection = report.freeTierSummary.length > 0
+    ? [
+        `\n📊 Free Tier Quota — Used / Limit`,
+        "─".repeat(100),
+        ...report.freeTierSummary.map(formatQuotaEntry),
+      ]
+    : report.quotaLimits.length > 0
+      ? [`\n📊 Free Tier Quota: no free tier limits found in ${report.quotaLimits.length} quota metrics`]
+      : [];
+
+  // --- Usage data diagnostics ---
+  const usageNote = report.usage.length > 0
+    ? [`\n📈 ${report.usage.length} usage data points from Cloud Monitoring`]
+    : report.quotaLimits.length > 0
+      ? [`\n📈 Usage: no data points from Cloud Monitoring (usage may take a few minutes to appear)`]
+      : [];
+
+  // --- Model catalog (compact) ---
   const genSection = gen.length > 0
-    ? [`\n📝 Content-generation models (${gen.length}):`, divider, ...gen.map(formatModelLine)]
+    ? [`\n📝 Content-generation models (${gen.length}):`, "─".repeat(100), ...gen.map(formatModelLine)]
     : [];
 
   const otherSection = other.length > 0
-    ? [`\n🔧 Other models (${other.length}):`, divider, ...other.map(formatModelLine)]
-    : [];
-
-  const quotaSection = report.quotaLimits.length > 0
-    ? [
-        `\n📋 Quota Limits (${report.quotaLimits.length} metrics):`,
-        divider,
-        ...report.quotaLimits.map(formatQuotaLimitLine),
-      ]
-    : [];
-
-  const usageSection = report.usage.length > 0
-    ? [
-        `\n📈 Recent Usage (last hour, ${report.usage.length} data points):`,
-        divider,
-        ...report.usage.map(formatUsageLine),
-      ]
+    ? [`\n🔧 Other models (${other.length}):`, "─".repeat(100), ...other.map(formatModelLine)]
     : [];
 
   const summary = [
-    `\n📊 Summary: ${report.models.length} total models, ${gen.length} generative, ${report.quotaLimits.length} quota metrics, ${report.usage.length} usage data points`,
+    `\n📋 Summary: ${report.models.length} models (${gen.length} generative), ${report.freeTierSummary.length} free tier quotas tracked, ${report.usage.length} usage data points`,
   ];
 
-  return [header, ...genSection, ...otherSection, ...quotaSection, ...usageSection, ...summary, ""].join("\n");
+  return [header, ...freeTierSection, ...usageNote, ...genSection, ...otherSection, ...summary, ""].join("\n");
 };
+
+// ---------------------------------------------------------------------------
+// JSON output — structured for programmatic use
+// ---------------------------------------------------------------------------
+
+export interface QuotaJson {
+  readonly label: string;
+  readonly timestamp: string;
+  readonly freeTierQuotas: readonly QuotaEntry[];
+  readonly generativeModels: readonly {
+    readonly name: string;
+    readonly displayName: string;
+    readonly inputTokenLimit: number;
+    readonly outputTokenLimit: number;
+  }[];
+  readonly allQuotaLimits: readonly QuotaLimit[];
+  readonly usageDataPoints: readonly UsageDataPoint[];
+}
+
+export const toQuotaJson = (report: QuotaReport): QuotaJson => ({
+  label: report.label,
+  timestamp: report.timestamp,
+  freeTierQuotas: report.freeTierSummary,
+  generativeModels: generativeModels(report.models).map((m) => ({
+    name: m.name,
+    displayName: m.displayName,
+    inputTokenLimit: m.inputTokenLimit,
+    outputTokenLimit: m.outputTokenLimit,
+  })),
+  allQuotaLimits: report.quotaLimits,
+  usageDataPoints: report.usage,
+});
 
 // ---------------------------------------------------------------------------
 // Orchestrator — fetch everything available
@@ -363,16 +483,13 @@ export interface QuotaFetchConfig {
   readonly projectId?: string;
 }
 
-const errorMessage = (err: unknown): string =>
-  err instanceof Error ? err.message : String(err);
-
 export const fetchFullQuotaReport = async (
   config: QuotaFetchConfig,
 ): Promise<QuotaReport> => {
   const models = await fetchModels(config.apiKey);
 
   let quotaLimits: readonly QuotaLimit[] = [];
-  let usage: readonly UsageMetric[] = [];
+  let usage: readonly UsageDataPoint[] = [];
 
   if (config.accessToken && config.projectId) {
     const [limits, metrics] = await Promise.all([
@@ -382,7 +499,7 @@ export const fetchFullQuotaReport = async (
       }),
       fetchUsageMetrics(config.accessToken, config.projectId).catch((err) => {
         console.warn(`⚠️ Cloud Monitoring API error (usage metrics): ${errorMessage(err)}`);
-        return [] as readonly UsageMetric[];
+        return [] as readonly UsageDataPoint[];
       }),
     ]);
     quotaLimits = limits;

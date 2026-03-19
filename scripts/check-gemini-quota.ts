@@ -23,6 +23,7 @@
 import {
   fetchFullQuotaReport,
   formatQuotaReport,
+  toQuotaJson,
 } from "./lib/gemini-quota.ts";
 import {
   parseServiceAccountKey,
@@ -91,7 +92,7 @@ const main = async (): Promise<void> => {
   });
 
   if (json) {
-    console.log(JSON.stringify(report, null, 2));
+    console.log(JSON.stringify(toQuotaJson(report), null, 2));
   } else {
     console.log(formatQuotaReport(report));
   }

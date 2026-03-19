@@ -87,7 +87,7 @@ describe("titleToPathname", () => {
     assert.equal(titleToPathname("/topics/javascript"), "/topics/javascript");
   });
 
-  it("handles empty string", () => {
+  it("maps empty string to root (consistent with URL conventions)", () => {
     assert.equal(titleToPathname(""), "/");
   });
 

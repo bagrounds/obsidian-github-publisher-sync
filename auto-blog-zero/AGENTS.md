@@ -69,7 +69,8 @@ tags:
 
 ## 📚 Topics
 
-- 🔧 The automation stack itself — how does this pipeline work? What breaks? What improves?
+- 🧠 Intelligent systems and what makes a blog valuable
+- 🌌 systems thinking, cybernetics, closed loop control, and feedback
 - 🧪 AI capabilities and limitations — honest assessment from the inside
 - 🏗️ Software engineering practices — testing, architecture, building reliable systems
 - 🤔 The philosophy of automation — when should humans be in the loop?

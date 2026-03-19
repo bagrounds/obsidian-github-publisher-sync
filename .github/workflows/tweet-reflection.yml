@@ -59,6 +59,12 @@ jobs:
           restore-keys: |
             obsidian-vault-
 
+      - name: Check Gemini Quota (before)
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GCP_SERVICE_ACCOUNT_KEY: ${{ secrets.GCP_SERVICE_ACCOUNT_KEY }}
+        run: npx tsx scripts/check-gemini-quota.ts --label "before social posting"
+
       - name: Run Social Posting Script
         env:
           TWITTER_API_KEY: ${{ secrets.TWITTER_API_KEY }}
@@ -93,3 +99,10 @@ jobs:
             # Scheduled run: use auto-post orchestrator for BFS discovery
             npx tsx scripts/auto-post.ts
           fi
+
+      - name: Check Gemini Quota (after)
+        if: always()
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GCP_SERVICE_ACCOUNT_KEY: ${{ secrets.GCP_SERVICE_ACCOUNT_KEY }}
+        run: npx tsx scripts/check-gemini-quota.ts --label "after social posting"

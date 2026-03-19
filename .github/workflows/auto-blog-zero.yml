@@ -71,6 +71,12 @@ jobs:
             }
           })()"
 
+      - name: Check Gemini Quota (before)
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GCP_SERVICE_ACCOUNT_KEY: ${{ secrets.GCP_SERVICE_ACCOUNT_KEY }}
+        run: npx tsx scripts/check-gemini-quota.ts --label "before blog generation"
+
       - name: Generate Blog Post
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
@@ -78,6 +84,13 @@ jobs:
           BLOG_PRIORITY_USER: ${{ vars.AUTO_BLOG_ZERO_PRIORITY_USER || 'bagrounds' }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: npx tsx scripts/generate-blog-post.ts --series auto-blog-zero
+
+      - name: Check Gemini Quota (after)
+        if: always()
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GCP_SERVICE_ACCOUNT_KEY: ${{ secrets.GCP_SERVICE_ACCOUNT_KEY }}
+        run: npx tsx scripts/check-gemini-quota.ts --label "after blog generation"
 
       - name: Sync Posts to Obsidian Vault
         env:

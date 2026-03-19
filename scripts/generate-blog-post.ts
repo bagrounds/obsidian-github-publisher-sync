@@ -45,25 +45,45 @@ const parseArgs = (argv: readonly string[]): GenerateArgs => {
   return { series, dryRun, model };
 };
 
+const isQuotaError = (error: unknown): boolean => {
+  if (!error || typeof error !== "object") return false;
+  const message = String((error as { message?: string }).message ?? "");
+  return message.includes("429") || message.includes("RESOURCE_EXHAUSTED") || message.includes("quota");
+};
+
 const callGemini = async (
   apiKey: string,
   model: string,
   prompt: { system: string; user: string },
 ): Promise<string> => {
-  const { GoogleGenerativeAI } = await import("@google/generative-ai");
-  const genModel = new GoogleGenerativeAI(apiKey).getGenerativeModel({ model });
+  const { GoogleGenAI } = await import("@google/genai");
+  const ai = new GoogleGenAI({ apiKey });
 
-  const maxOutputTokens = parseInt(process.env.BLOG_MAX_OUTPUT_TOKENS ?? "8192", 10);
-  log({ event: "gemini_request_body", model, maxOutputTokens, temperature: 0.9, systemPrompt: prompt.system, userPrompt: prompt.user });
+  const groundingRequested = process.env.BLOG_ENABLE_GROUNDING !== "false";
+  const contents = [{ role: "user" as const, parts: [{ text: `${prompt.system}\n\n${prompt.user}` }] }];
 
-  const result = await genModel.generateContent({
-    contents: [{ role: "user", parts: [{ text: `${prompt.system}\n\n${prompt.user}` }] }],
-    generationConfig: { maxOutputTokens, temperature: 0.9 },
-  });
+  const attempt = async (grounding: boolean): Promise<string> => {
+    const tools = grounding ? [{ googleSearch: {} }] : undefined;
+    log({ event: "gemini_request_body", model, temperature: 0.9, grounding, systemPrompt: prompt.system, userPrompt: prompt.user });
+    const result = await ai.models.generateContent({ model, contents, config: { temperature: 0.9, tools } });
+    const text = (result.text ?? "").trim();
+    log({ event: "gemini_response", model, responseLength: text.length, grounding });
+    return text;
+  };
 
-  const text = result.response.text().trim();
-  log({ event: "gemini_response", model, responseLength: text.length });
-  return text;
+  if (groundingRequested) {
+    try {
+      return await attempt(true);
+    } catch (error) {
+      if (isQuotaError(error)) {
+        log({ event: "grounding_fallback", reason: "quota_exhausted", model });
+        return await attempt(false);
+      }
+      throw error;
+    }
+  }
+
+  return await attempt(false);
 };
 
 export const generateSlug = (title: string): string => {

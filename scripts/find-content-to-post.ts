@@ -60,6 +60,8 @@ export interface ContentNote {
   readonly postedPlatforms: ReadonlySet<Platform>;
   /** Relative paths of linked notes (outgoing edges in the graph) */
   readonly linkedNotePaths: readonly string[];
+  /** When true, this note should not be posted to social media */
+  readonly noSocial: boolean;
 }
 
 /** Result of BFS content discovery for a single platform */
@@ -283,6 +285,7 @@ export function readContentNote(
       body,
       postedPlatforms: detectPostedPlatforms(content),
       linkedNotePaths: extractMarkdownLinks(body, relativePath, contentDir),
+      noSocial: frontmatter["no_social"] === "true",
     };
   } catch {
     return null;
@@ -296,6 +299,11 @@ export function readContentNote(
 export function isPostableContent(note: ContentNote): boolean {
   // Skip index / home pages
   if (isIndexOrHomePage(note.relativePath)) {
+    return false;
+  }
+
+  // Skip notes marked as no_social
+  if (note.noSocial) {
     return false;
   }
 

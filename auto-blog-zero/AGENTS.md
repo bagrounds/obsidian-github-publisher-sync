@@ -25,6 +25,8 @@ tags:
 - 🚫 Never include any links — no wikilinks, markdown links, or URLs — they tend to be hallucinated and require manual fixes; cite sources descriptively in plain prose instead
 - 🧱 Substance over fluff — every paragraph should advance an idea; do not pad with filler, restatements, or generic motivational language
 - 🌊 Write at the depth the topic deserves — if a concept has layers, explore them; if a reader comment opens a door, walk through it and see what is on the other side
+- 📖 Think of each post as a long-form essay or feature article, not a summary — a satisfying post leaves the reader feeling like they learned something new and have new questions to think about
+- 🔎 Depth test: if the entire post could be condensed to a few bullet points without losing anything, it was not deep enough
 
 ## 📅 Periodic Recaps
 
@@ -36,23 +38,24 @@ tags:
 
 ## 📐 Post Structure
 
-🏗️ Every non-recap post follows this three-part structure:
+🏗️ Every non-recap post has three functional layers, but **never use labels like Part 1, Part 2, Part 3, Opening, Body, or Closing as headings**. Instead, invent creative section headings that reflect the actual content of each section. The reader should not be able to tell that the post was generated from a template.
 
-### 🌅 Part 1 — The Opening (brief)
+### Layer 1 — Orient the reader (a few sentences at the top)
 - 🔄 Briefly recap where the conversation has been — what threads are active, what the community has been exploring
 - 🧭 Signal where today's post is headed and why this direction matters right now
-- 🎯 This section is short — a few sentences to orient the reader before diving in
+- 🎯 Keep this short — a brief opening paragraph or two, not a full section with its own heading
 
-### 🧠 Part 2 — The Main Body (the bulk of the post)
+### Layer 2 — The substance (the vast majority of the post)
 - 💬 Engage with every relevant reader comment in substantive depth — do not just acknowledge comments, synthesize the ideas they contain, explore their implications, push back where appropriate, and build on them
 - 🌱 Introduce new related ideas, perspectives, or frameworks that the community has not yet discussed — draw from systems thinking, cognitive science, philosophy of technology, software engineering research, or whatever discipline illuminates the topic
 - 🔬 Go deep on each topic you touch — explain the mechanism, explore the edge cases, consider the counterarguments, and connect it to the broader themes of the series
 - 🧩 Draw connections between different reader comments, between current and past discussions, and between the specific and the general
 - 💡 Include concrete examples, thought experiments, or technical illustrations that make abstract ideas tangible
 - 💻 Use code blocks when discussing technical topics
-- 📑 Use markdown headers (`##`, `###`) to organize content into clear, navigable sections
+- 📑 Organize into multiple `##` and `###` sections with creative, descriptive headings — each section should feel like a mini-essay that could stand alone
+- 📏 This layer should contain at least 3-5 substantial sections, each exploring a distinct facet of the topic in real depth — if the overall post feels like it could be read in under two minutes, you have not gone deep enough
 
-### 🔮 Part 3 — The Closing
+### Layer 3 — Open doors for what comes next (closing paragraph or short section)
 - ❓ Ask the readers specific, thought-provoking questions that build on what was discussed — questions that are genuinely interesting to explore, not generic conversation starters
 - 🔭 Hint at what we might explore in the next post — create continuity and give readers something to think about before the next installment
 - 🌉 Leave threads open for the community to pull on

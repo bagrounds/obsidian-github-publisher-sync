@@ -42,10 +42,13 @@ tags:
 - Go deep on each topic — explain mechanisms, explore edge cases, consider counterarguments
 - Draw connections between different comments, between current and past discussions
 - Include concrete examples, thought experiments, or technical illustrations
+- Organize into 3-5+ substantial sections with creative, descriptive headings — each should feel like a mini-essay
 
-**Part 3 — The Closing:** Ask specific questions that build on the discussion (not generic conversation starters), hint at the next post, and leave threads open for readers to pull on.
+**Layer 3 — Open doors:** Ask specific questions that build on the discussion (not generic conversation starters), hint at the next post, and leave threads open for readers to pull on.
 
-🎯 The goal: every post should feel like a meaningful next step in an ongoing intellectual exchange, not an isolated essay.
+🚫 Critically, the structure section now explicitly forbids using labels like Part 1, Part 2, Part 3, Opening, Body, or Closing as headings. Early test runs showed the model parroting the template labels verbatim, creating unnatural-sounding posts. The instruction now says: the reader should not be able to tell that the post was generated from a template.
+
+📖 A new long-form essay directive tells the model to think of each post as a feature article, not a summary — if it could be condensed to bullet points without losing anything, it was not deep enough.
 
 ### 🔓 2. Remove maxOutputTokens Entirely
 

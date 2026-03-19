@@ -203,6 +203,13 @@ describe("buildFreeTierSummary", () => {
     assert.equal(summary[0]?.limit, 1500);
   });
 
+  it("caps remaining at zero when usage exceeds limit", () => {
+    const overUsage: UsageDataPoint = { ...sampleUsage, value: 2000 };
+    const summary = buildFreeTierSummary([freeTierRequestLimit], [overUsage]);
+    assert.equal(summary[0]?.used, 2000);
+    assert.equal(summary[0]?.remaining, 0);
+  });
+
   it("handles multiple limits with mixed usage", () => {
     const summary = buildFreeTierSummary(
       [freeTierRequestLimit, freeTierRpmLimit],

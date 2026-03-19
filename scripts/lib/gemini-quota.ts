@@ -356,7 +356,7 @@ export const buildFreeTierSummary = (
       limit: q.effectiveLimit,
       used,
       remaining: used !== null && q.effectiveLimit > 0
-        ? q.effectiveLimit - used
+        ? Math.max(0, q.effectiveLimit - used)
         : null,
     };
   });

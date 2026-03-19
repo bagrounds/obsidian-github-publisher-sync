@@ -8,6 +8,7 @@ on:
 
 permissions:
   contents: read
+  discussions: read
   pages: write
   id-token: write
 
@@ -55,6 +56,11 @@ jobs:
 
       - name: Build Quartz
         run: npx quartz build
+
+      - name: Inject static Giscus comments
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: npx tsx scripts/inject-static-giscus.ts
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

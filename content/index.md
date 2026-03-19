@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-03-18T16:08:11-07:00
+updated: 2026-03-18T18:03:25-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -45,7 +45,8 @@ updated: 2026-03-18T16:08:11-07:00
 - [🧮 Calculator](./tools/calculator.md)  
   
   
-## [📚 Books](./books/index.md) (954)  
+## [📚 Books](./books/index.md) (955)  
+- [🔺⚡🔄🌍 The Triangle of Power: Rebalancing the New World Order](./books/the-triangle-of-power-rebalancing-the-new-world-order.md)  
 - [🧠🧬🤖 A Brief History of Intelligence: Evolution, AI, and the Five Breakthroughs That Made Our Brains](./books/a-brief-history-of-intelligence-evolution-ai-and-the-five-breakthroughs-that-made-our-brains.md)  
 - [📜🌍⏳ Sapiens: A Brief History of Humankind](./books/sapiens-a-brief-history-of-humankind.md)  
 - [🦓 Why Zebras Don't Get Ulcers: The Acclaimed Guide to Stress, Stress-Related Disease, and Coping](./books/why-zebras-dont-get-ulcers.md)  
@@ -55,10 +56,10 @@ updated: 2026-03-18T16:08:11-07:00
 - [🌅🧑‍🤝‍🧑 The Dawn of Everything: A New History of Humanity](./books/the-dawn-of-everything-a-new-history-of-humanity.md)  
 - [🔫🦠🔩 Guns, Germs, and Steel: The Fates of Human Societies](./books/guns-germs-and-steel-the-fates-of-human-societies.md)  
 - [🍄🌍🧠🔮 Entangled Life: How Fungi Make Our Worlds, Change Our Minds & Shape Our Futures](./books/entangled-life-how-fungi-make-our-worlds-change-our-minds-shape-our-futures.md)  
-- [👶🤔❤️ The Philosophical Baby: What Children's Minds Tell Us About Truth, Love, and the Meaning of Life](./books/the-philosophical-baby-what-childrens-minds-tell-us-about-truth-love-and-the-meaning-of-life.md)  
   
   
-## [📺 Videos](./videos/index.md) (692)  
+## [📺 Videos](./videos/index.md) (693)  
+- [👑🤝🇺🇸 The Art of Befriending Trump | President Stubb](./videos/the-art-of-befriending-trump-president-stubb.md)  
 - [🇫🇮🇪🇺🗣️🌍🇺🇸💥🇮🇷⚔️🇺🇦 FULL DISCUSSION: Finland President Stubb Slams Brexit, Talks Trump, Iran War, Ukraine, EU | AC1G](./videos/full-discussion-finland-president-stubb-slams-brexit-talks-trump-iran-war-ukraine-eu-ac1g.md)  
 - [🇫🇮🇺🇸🗣️👑📢 Finnish President Stubb on Trump, MAGA, JD Vance Speech, Rubio & US Foreign Policy | AC1G](./videos/finnish-president-stubb-on-trump-maga-jd-vance-speech-rubio-us-foreign-policy-ac1g.md)  
 - [🏆✍️💡 Pulitzer Prize-Winner Explains His Writing Process - Richard Powers](./videos/pulitzer-prize-winner-explains-his-writing-process-richard-powers.md)  
@@ -68,7 +69,6 @@ updated: 2026-03-18T16:08:11-07:00
 - [✍️🤯📝 How to Write Freakishly Well - Paul Harding](./videos/how-to-write-freakishly-well-paul-harding.md)  
 - [💭🧠💥 George Saunders Says Breaking These 3 Delusions Can Save You | The Interview](./videos/george-saunders-says-breaking-these-3-delusions-can-save-you-the-interview.md)  
 - [⚖️🏛️🗣️ Antitrust and The Rule of Law: A Conversation with Former FTC Chair Lina Khan](./videos/antitrust-and-the-rule-of-law-a-conversation-with-former-ftc-chair-lina-khan.md)  
-- [🏆💡🤔 Turing Award Winner On Thinking Clearly, Paxos vs Raft, Working With Dijkstra | Leslie Lamport](./videos/turing-award-winner-on-thinking-clearly-paxos-vs-raft-working-with-dijkstra-leslie-lamport.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  

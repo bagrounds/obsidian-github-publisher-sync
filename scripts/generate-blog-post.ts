@@ -45,6 +45,12 @@ const parseArgs = (argv: readonly string[]): GenerateArgs => {
   return { series, dryRun, model };
 };
 
+const isQuotaError = (error: unknown): boolean => {
+  if (!error || typeof error !== "object") return false;
+  const message = String((error as { message?: string }).message ?? "");
+  return message.includes("429") || message.includes("RESOURCE_EXHAUSTED") || message.includes("quota");
+};
+
 const callGemini = async (
   apiKey: string,
   model: string,
@@ -53,20 +59,31 @@ const callGemini = async (
   const { GoogleGenAI } = await import("@google/genai");
   const ai = new GoogleGenAI({ apiKey });
 
-  const useGrounding = process.env.BLOG_ENABLE_GROUNDING !== "false";
-  const tools = useGrounding ? [{ googleSearch: {} }] : undefined;
+  const groundingRequested = process.env.BLOG_ENABLE_GROUNDING !== "false";
+  const contents = [{ role: "user" as const, parts: [{ text: `${prompt.system}\n\n${prompt.user}` }] }];
 
-  log({ event: "gemini_request_body", model, temperature: 0.9, grounding: useGrounding, systemPrompt: prompt.system, userPrompt: prompt.user });
+  const attempt = async (grounding: boolean): Promise<string> => {
+    const tools = grounding ? [{ googleSearch: {} }] : undefined;
+    log({ event: "gemini_request_body", model, temperature: 0.9, grounding, systemPrompt: prompt.system, userPrompt: prompt.user });
+    const result = await ai.models.generateContent({ model, contents, config: { temperature: 0.9, tools } });
+    const text = (result.text ?? "").trim();
+    log({ event: "gemini_response", model, responseLength: text.length, grounding });
+    return text;
+  };
 
-  const result = await ai.models.generateContent({
-    model,
-    contents: [{ role: "user", parts: [{ text: `${prompt.system}\n\n${prompt.user}` }] }],
-    config: { temperature: 0.9, tools },
-  });
+  if (groundingRequested) {
+    try {
+      return await attempt(true);
+    } catch (error) {
+      if (isQuotaError(error)) {
+        log({ event: "grounding_fallback", reason: "quota_exhausted", model });
+        return await attempt(false);
+      }
+      throw error;
+    }
+  }
 
-  const text = (result.text ?? "").trim();
-  log({ event: "gemini_response", model, responseLength: text.length });
-  return text;
+  return await attempt(false);
 };
 
 export const generateSlug = (title: string): string => {

@@ -88,6 +88,22 @@ const result = await ai.models.generateContent({
 🌐 The AGENTS.md now tells the model it has access to Google Search and instructs it to use it for enriching posts with recent research and developments — but never to fabricate sources and never to include links (which could be hallucinated or broken).
 🎛️ Grounding can be disabled via `BLOG_ENABLE_GROUNDING=false` if needed.
 
+⚠️ **Grounding fallback**: Preview models (like `gemini-3.1-flash-lite-preview`) may not have grounding quota on the free tier. The implementation uses a try-with-fallback pattern: attempt with grounding first, and if the API returns a 429/RESOURCE_EXHAUSTED error, automatically retry without grounding. This makes search grounding best-effort rather than blocking.
+
+```typescript
+if (groundingRequested) {
+  try {
+    return await attempt(true);
+  } catch (error) {
+    if (isQuotaError(error)) {
+      log({ event: "grounding_fallback", reason: "quota_exhausted", model });
+      return await attempt(false);
+    }
+    throw error;
+  }
+}
+```
+
 ### 🚫 4. no_social Frontmatter Property
 
 🏷️ A new `no_social: true` frontmatter property tells the BFS content discovery system to skip a note during social media posting.

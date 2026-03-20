@@ -18,6 +18,8 @@ import {
   listNotesNewestFirst,
   backfillImages,
   updateFrontmatterTimestamp,
+  syncMarkdownDir,
+  syncAttachmentsDir,
   type ImageGenerator,
 } from "./blog-image.ts";
 
@@ -682,5 +684,132 @@ describe("updateFrontmatterTimestamp", () => {
     assert.doesNotThrow(() => {
       updateFrontmatterTimestamp("/nonexistent/file.md", "2026-03-19T12:00:00Z");
     });
+  });
+});
+
+describe("syncMarkdownDir", () => {
+  let tempDir: string;
+
+  beforeEach(() => {
+    tempDir = fs.mkdtempSync(path.join(os.tmpdir(), "sync-md-test-"));
+  });
+
+  afterEach(() => {
+    fs.rmSync(tempDir, { recursive: true, force: true });
+  });
+
+  it("copies new markdown files to vault", () => {
+    const localDir = path.join(tempDir, "local");
+    const vaultDir = path.join(tempDir, "vault");
+    fs.mkdirSync(localDir);
+    fs.mkdirSync(vaultDir);
+    fs.writeFileSync(path.join(localDir, "post.md"), "# Post\nBody\n");
+
+    const synced = syncMarkdownDir(localDir, "series", vaultDir);
+    assert.equal(synced, 1);
+    assert.ok(fs.existsSync(path.join(vaultDir, "series", "post.md")));
+  });
+
+  it("skips files already in sync", () => {
+    const localDir = path.join(tempDir, "local");
+    const vaultDir = path.join(tempDir, "vault");
+    const vaultSeries = path.join(vaultDir, "series");
+    fs.mkdirSync(localDir);
+    fs.mkdirSync(vaultSeries, { recursive: true });
+    fs.writeFileSync(path.join(localDir, "post.md"), "# Same\n");
+    fs.writeFileSync(path.join(vaultSeries, "post.md"), "# Same\n");
+
+    const synced = syncMarkdownDir(localDir, "series", vaultDir);
+    assert.equal(synced, 0);
+  });
+
+  it("overwrites changed markdown files", () => {
+    const localDir = path.join(tempDir, "local");
+    const vaultDir = path.join(tempDir, "vault");
+    const vaultSeries = path.join(vaultDir, "series");
+    fs.mkdirSync(localDir);
+    fs.mkdirSync(vaultSeries, { recursive: true });
+    fs.writeFileSync(path.join(localDir, "post.md"), "# Updated\n");
+    fs.writeFileSync(path.join(vaultSeries, "post.md"), "# Old\n");
+
+    const synced = syncMarkdownDir(localDir, "series", vaultDir);
+    assert.equal(synced, 1);
+    assert.equal(
+      fs.readFileSync(path.join(vaultSeries, "post.md"), "utf-8"),
+      "# Updated\n",
+    );
+  });
+
+  it("ignores non-markdown files", () => {
+    const localDir = path.join(tempDir, "local");
+    const vaultDir = path.join(tempDir, "vault");
+    fs.mkdirSync(localDir);
+    fs.mkdirSync(vaultDir);
+    fs.writeFileSync(path.join(localDir, "image.jpg"), "binary");
+
+    const synced = syncMarkdownDir(localDir, "series", vaultDir);
+    assert.equal(synced, 0);
+  });
+
+  it("returns 0 for nonexistent local dir", () => {
+    const vaultDir = path.join(tempDir, "vault");
+    fs.mkdirSync(vaultDir);
+    const synced = syncMarkdownDir("/nonexistent/dir", "series", vaultDir);
+    assert.equal(synced, 0);
+  });
+});
+
+describe("syncAttachmentsDir", () => {
+  let tempDir: string;
+
+  beforeEach(() => {
+    tempDir = fs.mkdtempSync(path.join(os.tmpdir(), "sync-attach-test-"));
+  });
+
+  afterEach(() => {
+    fs.rmSync(tempDir, { recursive: true, force: true });
+  });
+
+  it("copies new attachment files to vault", () => {
+    const localDir = path.join(tempDir, "attachments");
+    const vaultDir = path.join(tempDir, "vault");
+    fs.mkdirSync(localDir);
+    fs.mkdirSync(vaultDir);
+    fs.writeFileSync(path.join(localDir, "image.jpg"), "fake-image-data");
+
+    const synced = syncAttachmentsDir(localDir, vaultDir);
+    assert.equal(synced, 1);
+    assert.ok(fs.existsSync(path.join(vaultDir, "attachments", "image.jpg")));
+  });
+
+  it("skips files already in vault", () => {
+    const localDir = path.join(tempDir, "attachments");
+    const vaultDir = path.join(tempDir, "vault");
+    const vaultAttach = path.join(vaultDir, "attachments");
+    fs.mkdirSync(localDir);
+    fs.mkdirSync(vaultAttach, { recursive: true });
+    fs.writeFileSync(path.join(localDir, "image.jpg"), "data");
+    fs.writeFileSync(path.join(vaultAttach, "image.jpg"), "data");
+
+    const synced = syncAttachmentsDir(localDir, vaultDir);
+    assert.equal(synced, 0);
+  });
+
+  it("returns 0 for nonexistent dir", () => {
+    const vaultDir = path.join(tempDir, "vault");
+    fs.mkdirSync(vaultDir);
+    const synced = syncAttachmentsDir("/nonexistent/dir", vaultDir);
+    assert.equal(synced, 0);
+  });
+
+  it("creates vault attachments directory if missing", () => {
+    const localDir = path.join(tempDir, "attachments");
+    const vaultDir = path.join(tempDir, "vault");
+    fs.mkdirSync(localDir);
+    fs.mkdirSync(vaultDir);
+    fs.writeFileSync(path.join(localDir, "img.png"), "png-data");
+
+    syncAttachmentsDir(localDir, vaultDir);
+    assert.ok(fs.existsSync(path.join(vaultDir, "attachments", "img.png")));
   });
 });

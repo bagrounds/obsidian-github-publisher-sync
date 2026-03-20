@@ -9,7 +9,7 @@ env:
   TZ: America/Los_Angeles
 
 permissions:
-  contents: write
+  contents: read
   discussions: read
 
 jobs:
@@ -132,25 +132,14 @@ jobs:
             fi
             echo "📝 Syncing AGENTS.md: ${SERIES}/AGENTS.md"
             npx tsx scripts/sync-file-to-obsidian.ts "${SERIES}/AGENTS.md" "${SERIES}/AGENTS.md"
-            for IMG in content/attachments/*; do
-              if [ -f "$IMG" ]; then
-                BASENAME=$(basename "$IMG")
-                echo "🖼️ Syncing attachment: attachments/$BASENAME"
-                npx tsx scripts/sync-file-to-obsidian.ts "$IMG" "attachments/$BASENAME"
-              fi
-            done
           else
             echo "No new post generated today"
           fi
 
-      - name: Commit Changes
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add -A
-          if git diff --cached --quiet; then
-            echo "No changes to commit"
-          else
-            git commit -m "🐔 Chickie Loo — daily post with image [automated]"
-            git push
-          fi
+      - name: Sync Image to Obsidian Vault
+        if: ${{ success() }}
+        env:
+          OBSIDIAN_AUTH_TOKEN: ${{ secrets.OBSIDIAN_AUTH_TOKEN }}
+          OBSIDIAN_VAULT_NAME: ${{ secrets.OBSIDIAN_VAULT_NAME }}
+          OBSIDIAN_VAULT_CACHE_DIR: /tmp/obsidian-vault-cache
+        run: npx tsx scripts/sync-attachments-to-vault.ts content/attachments

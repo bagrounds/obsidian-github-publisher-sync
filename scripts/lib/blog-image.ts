@@ -356,3 +356,53 @@ export const updateFrontmatterTimestamp = (
 
   fs.writeFileSync(filePath, content, "utf-8");
 };
+
+export const syncMarkdownDir = (
+  localDir: string,
+  vaultSubdir: string,
+  vaultDir: string,
+): number => {
+  const localPath = path.resolve(localDir);
+  const vaultPath = path.join(vaultDir, vaultSubdir);
+
+  if (!fs.existsSync(localPath)) return 0;
+
+  fs.mkdirSync(vaultPath, { recursive: true });
+  const files = fs.readdirSync(localPath).filter((f) => f.endsWith(".md"));
+
+  return files.reduce((synced, f) => {
+    const src = path.join(localPath, f);
+    const dst = path.join(vaultPath, f);
+    const srcContent = fs.readFileSync(src, "utf-8");
+    const dstContent = fs.existsSync(dst)
+      ? fs.readFileSync(dst, "utf-8")
+      : "";
+
+    if (srcContent !== dstContent) {
+      fs.copyFileSync(src, dst);
+      return synced + 1;
+    }
+    return synced;
+  }, 0);
+};
+
+export const syncAttachmentsDir = (
+  localAttachmentsDir: string,
+  vaultDir: string,
+): number => {
+  if (!fs.existsSync(localAttachmentsDir)) return 0;
+
+  const vaultAttachments = path.join(vaultDir, "attachments");
+  fs.mkdirSync(vaultAttachments, { recursive: true });
+  const files = fs.readdirSync(localAttachmentsDir);
+
+  return files.reduce((synced, f) => {
+    const src = path.join(localAttachmentsDir, f);
+    const dst = path.join(vaultAttachments, f);
+    if (!fs.existsSync(dst)) {
+      fs.copyFileSync(src, dst);
+      return synced + 1;
+    }
+    return synced;
+  }, 0);
+};

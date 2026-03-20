@@ -1,6 +1,12 @@
 ## PR Blogs
 - With every PR, please generate a blog post describing your work in the ai-blog directory at the root of the repo. See some posts in https://bagrounds.org/ai-blog for prior examples.
 
+## Obsidian Vault is the Source of Truth
+- The `content/` directory is a **read-only one-way sync** from the Obsidian vault on the user's phone. Never write to `content/` from GitHub Actions or scripts.
+- Never commit to the git repo from a GHA workflow. There is no reason to do this today.
+- All generated content (blog posts, images, attachments, updated frontmatter) must be persisted by syncing to the Obsidian vault using `scripts/sync-file-to-obsidian.ts` or `scripts/lib/obsidian-sync.ts`.
+- GHA workflows should use `contents: read` permissions — never `contents: write`.
+
 ## Engineering Excellence
 - Strong static types - inspiration from Haskell
 - Thorough test coverage, ideally with property based tests

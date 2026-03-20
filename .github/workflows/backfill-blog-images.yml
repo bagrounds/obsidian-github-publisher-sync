@@ -9,7 +9,7 @@ env:
   TZ: America/Los_Angeles
 
 permissions:
-  contents: write
+  contents: read
 
 jobs:
   backfill-images:
@@ -97,72 +97,4 @@ jobs:
           OBSIDIAN_AUTH_TOKEN: ${{ secrets.OBSIDIAN_AUTH_TOKEN }}
           OBSIDIAN_VAULT_NAME: ${{ secrets.OBSIDIAN_VAULT_NAME }}
           OBSIDIAN_VAULT_CACHE_DIR: /tmp/obsidian-vault-cache
-        run: |
-          npx tsx -e "(async () => {
-            const { syncObsidianVault, pushObsidianVault } = await import('./scripts/lib/obsidian-sync.ts');
-            const fs = await import('fs');
-            const path = await import('path');
-            const vaultDir = await syncObsidianVault({
-              authToken: process.env.OBSIDIAN_AUTH_TOKEN,
-              vaultName: process.env.OBSIDIAN_VAULT_NAME,
-            });
-
-            const syncDir = (localDir, vaultSubdir) => {
-              const localPath = path.resolve(localDir);
-              const vaultPath = path.join(vaultDir, vaultSubdir);
-              if (!fs.existsSync(localPath)) return;
-              fs.mkdirSync(vaultPath, { recursive: true });
-              const files = fs.readdirSync(localPath).filter(f => f.endsWith('.md'));
-              let synced = 0;
-              files.forEach(f => {
-                const src = path.join(localPath, f);
-                const dst = path.join(vaultPath, f);
-                const srcContent = fs.readFileSync(src, 'utf-8');
-                const dstContent = fs.existsSync(dst) ? fs.readFileSync(dst, 'utf-8') : '';
-                if (srcContent !== dstContent) {
-                  fs.copyFileSync(src, dst);
-                  synced++;
-                }
-              });
-              if (synced > 0) console.log(JSON.stringify({ event: 'files_synced', dir: vaultSubdir, count: synced }));
-            };
-
-            const syncAttachments = () => {
-              const localAttachments = path.resolve('content/attachments');
-              const vaultAttachments = path.join(vaultDir, 'attachments');
-              if (!fs.existsSync(localAttachments)) return;
-              fs.mkdirSync(vaultAttachments, { recursive: true });
-              const files = fs.readdirSync(localAttachments);
-              let synced = 0;
-              files.forEach(f => {
-                const src = path.join(localAttachments, f);
-                const dst = path.join(vaultAttachments, f);
-                if (!fs.existsSync(dst)) {
-                  fs.copyFileSync(src, dst);
-                  synced++;
-                }
-              });
-              if (synced > 0) console.log(JSON.stringify({ event: 'attachments_synced', count: synced }));
-            };
-
-            syncDir('content/reflections', 'reflections');
-            syncDir('ai-blog', 'ai-blog');
-            syncDir('auto-blog-zero', 'auto-blog-zero');
-            syncDir('chickie-loo', 'chickie-loo');
-            syncAttachments();
-
-            await pushObsidianVault(vaultDir, process.env.OBSIDIAN_AUTH_TOKEN);
-            console.log(JSON.stringify({ event: 'vault_pushed' }));
-          })()"
-
-      - name: Commit Changes
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add -A
-          if git diff --cached --quiet; then
-            echo "No changes to commit"
-          else
-            git commit -m "🖼️ Backfill blog images [automated]"
-            git push
-          fi
+        run: npx tsx scripts/sync-backfill-to-vault.ts

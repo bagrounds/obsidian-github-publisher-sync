@@ -9,7 +9,7 @@ Platform:
 Channel: BBC Politics
 tags:
 youtube: https://youtu.be/C7N6oG_85ME
-updated: 2026-03-20T00:21:31.561Z
+updated: 2026-03-20T08:12:44.055Z
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 😠🗣️🔥🌍🗣️🧖 Alexander Stubb on «difficult» conversations with Trump, global «disorder» and sauna diplomacy  

@@ -8,7 +8,7 @@ Author:
 tags:
 CTA: 👣 Walk in their shoes.
 affiliate link: https://amzn.to/4r829t3
-updated: 2026-03-19T10:15:18.609Z
+updated: 2026-03-20T12:11:10.857Z
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🫥🇺🇸😡💔 Strangers in Their Own Land: Anger and Mourning on the American Right  

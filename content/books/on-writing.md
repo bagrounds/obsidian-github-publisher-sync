@@ -7,7 +7,7 @@ URL: https://bagrounds.org/books/on-writing
 Author:
 tags:
 affiliate link: https://amzn.to/4kM2OO4
-updated: 2026-03-19T21:54:13.253Z
+updated: 2026-03-20T02:59:18.498Z
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 📜 On Writing: A Memoir of the Craft  

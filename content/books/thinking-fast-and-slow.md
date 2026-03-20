@@ -8,7 +8,7 @@ Author:
 tags:
 affiliate link: https://amzn.to/4jQ0Tax
 CTA: 🧠 Understand your mind.
-updated: 2026-03-12T02:59:42.237Z
+updated: 2026-03-20T08:12:44.055Z
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🤔🐇🐢 Thinking, Fast and Slow  

@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-03-19T17:02:51-07:00
+updated: 2026-03-20T07:10:59-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -14,7 +14,7 @@ updated: 2026-03-19T17:02:51-07:00
 💬 Comment on any page with your GitHub account.  
   
 ## [🪞 Reflections](./reflections/index.md) ~ Blog (490)  
-- [2026-03-19](./reflections/2026-03-19.md)  
+- [2026-03-19 | 🧖🏼‍♀️ Sauna 🎣 Bass 🤖 Autonomy 📖 Book 📚🐔🤖📺](./reflections/2026-03-19.md)  
 - [2026-03-18 | 🧠 Evolution, 🏰 Empire, and the 🎷 Symphony of 🐔 Chickie 🎵 Loo 📚🐔🤖📺](./reflections/2026-03-18.md)  
 - [2026-03-17 | 💨 Zooming 🐓 Flock 👩🏼‍🏫 Explains 🧠 Intelligence 📚📺🐔🤖](./reflections/2026-03-17.md)  
 - [2026-03-16 | 🗑️ Simplifying 🔗 Links 🏗️ Optimizing 🪴 Quiet 🧠 Imagination 🤖🤖🐔📺](./reflections/2026-03-16.md)  
@@ -46,21 +46,21 @@ updated: 2026-03-19T17:02:51-07:00
   
   
 ## [📚 Books](./books/index.md) (956)  
+- [🏚️💰 Evicted: Poverty and Profit in the American City](./books/evicted-poverty-and-profit-in-the-american-city.md)  
+- [🫥🇺🇸😡💔 Strangers in Their Own Land: Anger and Mourning on the American Right](./books/strangers-in-their-own-land.md)  
+- [🗳️🕊️🇺🇸 Democracy in America](./books/democracy-in-america.md)  
+- [🔁🤪 Catch-22](./books/catch-22.md)  
+- [🤔🐇🐢 Thinking, Fast and Slow](./books/thinking-fast-and-slow.md)  
+- [⚡🚫💭 Blink: The Power of Thinking Without Thinking](./books/blink-the-power-of-thinking-without-thinking.md)  
+- [🔮🤷🏼‍♀️🤪 Predictably Irrational: The Hidden Forces That Shape Our Decisions](./books/predictably-irrational.md)  
 - [🌍✍🏿 Everybody Writes: Your Go-To Guide to Creating Ridiculously Good Content](./books/everybody-writes.md)  
-- [🎨🙏✨ The Artist's Way: A Spiritual Path to Higher Creativity](./books/the-artists-way.md)  
-- [🐦🕊️ Bird by Bird: Some Instructions on Writing and Life](./books/bird-by-bird.md)  
-- [✍️📚⏱️ How to Write a Book in 30 Days](./books/how-to-write-a-book-in-30-days.md)  
-- [🪄 Big Magic: Creative Living Beyond Fear](./books/big-magic.md)  
-- [✍️🦴 Writing Down the Bones](./books/writing-down-the-bones.md)  
 - [📜 On Writing: A Memoir of the Craft](./books/on-writing.md)  
-- [🕳️🧠👶🏽 The Whole-Brain Child: 12 Revolutionary Strategies to Nurture Your Child's Developing Mind](./books/the-whole-brain-child.md)  
-- [👶🤔❤️ The Philosophical Baby: What Children's Minds Tell Us About Truth, Love, and the Meaning of Life](./books/the-philosophical-baby-what-childrens-minds-tell-us-about-truth-love-and-the-meaning-of-life.md)  
-- [🧠🧬🤖 A Brief History of Intelligence: Evolution, AI, and the Five Breakthroughs That Made Our Brains](./books/a-brief-history-of-intelligence-evolution-ai-and-the-five-breakthroughs-that-made-our-brains.md)  
+- [✍️📚⏱️ How to Write a Book in 30 Days](./books/how-to-write-a-book-in-30-days.md)  
   
   
 ## [📺 Videos](./videos/index.md) (696)  
-- [😠🗣️🔥🌍🗣️🧖 Alexander Stubb on «difficult» conversations with Trump, global «disorder» and sauna diplomacy](./videos/alexander-stubb-on-difficult-conversations-with-trump-global-disorder-and-sauna-diplomacy.md)  
 - [📺🎤🗣️ J.D. Vance: Last Week Tonight with John Oliver (HBO)](./videos/jd-vance-last-week-tonight-with-john-oliver-hbo.md)  
+- [😠🗣️🔥🌍🗣️🧖 Alexander Stubb on «difficult» conversations with Trump, global «disorder» and sauna diplomacy](./videos/alexander-stubb-on-difficult-conversations-with-trump-global-disorder-and-sauna-diplomacy.md)  
 - [📈🗣️📺 USAID: Last Week Tonight with John Oliver (HBO)](./videos/usaid-last-week-tonight-with-john-oliver-hbo.md)  
 - [👑🤝🇺🇸 The Art of Befriending Trump | President Stubb](./videos/the-art-of-befriending-trump-president-stubb.md)  
 - [🇫🇮🇪🇺🗣️🌍🇺🇸💥🇮🇷⚔️🇺🇦 FULL DISCUSSION: Finland President Stubb Slams Brexit, Talks Trump, Iran War, Ukraine, EU | AC1G](./videos/full-discussion-finland-president-stubb-slams-brexit-talks-trump-iran-war-ukraine-eu-ac1g.md)  

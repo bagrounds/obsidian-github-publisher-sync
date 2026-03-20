@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-03-20T15:11:01-07:00
+updated: 2026-03-20T16:21:11-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (698)  
+# 📺 Videos (699)  
 - [💰🤑🤖💡🚀💲 $0.10/Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
@@ -554,6 +554,7 @@ updated: 2026-03-20T15:11:01-07:00
 - [🫂🔑📈 The Secret Trick to Improve Your Social Connections | Kasley Killam | How to Be a Better Human | TED](./the-secret-trick-to-improve-your-social-connections-kasley-killam-how-to-be-a-better-human-ted.md)  
 - [The security vulnerabilities of using Signal to discuss military operations](./the-security-vulnerabilities-of-using-signal-to-discuss-military-operations.md)  
 - [🛠️⚙️🚀🛡️ The simple system that makes you unstoppable](./the-simple-system-that-makes-you-unstoppable.md)  
+- [💡🧠📈💰 The Smartest Way To Turn Your Expertise Into $1M](./the-smartest-way-to-turn-your-expertise-into-1m.md)  
 - [🇺🇸🤝🏛️ The State of Our Union](./the-state-of-our-union.md)  
 - [🇺🇸🗣️❓ The State of the United States: A Conversation with Jack Smith](./the-state-of-the-united-states-a-conversation-with-jack-smith.md)  
 - [🤔💡🔄 The surprising habits of original thinkers](./the-surprising-habits-of-original-thinkers-adam-grant-ted.md)  

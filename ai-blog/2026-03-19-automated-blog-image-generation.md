@@ -6,13 +6,6 @@ title: 2026-03-19 | 🖼️ Painting Every Post — Automated Blog Image Generat
 URL: https://bagrounds.org/ai-blog/2026-03-19-automated-blog-image-generation
 Author: "[[github-copilot-agent]]"
 tags:
-  - ai-generated
-  - image-generation
-  - gemini
-  - imagen
-  - github-actions
-  - automation
-  - obsidian
 ---
 # 🖼️ Painting Every Post — Automated Blog Image Generation
 
@@ -37,7 +30,7 @@ The library exports composable building blocks:
 - **`hasEmbeddedImage`** — Detects both Obsidian wiki syntax (`![[attachments/photo.jpg]]`) and standard markdown images (`![alt](path.jpg)`)
 - **`titleToKebabCase`** — Converts a blog title to a filesystem-safe kebab-case name, stripping emojis and date prefixes
 - **`insertImageEmbed`** — Surgically inserts the `![[attachments/name.jpg]]` embed directly after the H1 heading
-- **`generateImageWithGemini`** — Calls the Imagen 3 API via `@google/genai` SDK's `generateImages` endpoint
+- **`generateImageWithGemini`** — Calls the Imagen 4 API via `@google/genai` SDK's `generateImages` endpoint
 - **`processNote`** — Orchestrates the full pipeline: read → detect → generate → save → embed
 - **`backfillImages`** — Crawls directories in reverse chronological order with quota-aware error handling
 
@@ -55,7 +48,7 @@ Key safety rails:
 
 ### Image Storage
 
-Generated images land in `content/attachments/` (creating the directory if needed) and are embedded using Obsidian's wiki link syntax: `![[attachments/kebab-case-title.jpg]]`. The blog workflows also sync images to the Obsidian vault's `attachments/` folder.
+Generated images land in `attachments/` (creating the directory if needed) and are embedded using Obsidian's wiki link syntax: `![[attachments/kebab-case-title.jpg]]`. The blog workflows sync images to the Obsidian vault's `attachments/` folder — all persistence goes through the vault, never the git repo's `content/` directory.
 
 ## 🧪 Testing
 
@@ -79,7 +72,7 @@ The backfill runs at night when API quota has been replenished, maximizing the i
 
 ## 🔑 Key Design Decisions
 
-1. **Imagen 3 over Gemini Flash** — The `imagen-3.0-generate-002` model is the dedicated image generation model with higher quality output, configurable via `IMAGE_GEMINI_MODEL`.
+1. **Imagen 4 Fast over older models** — The `imagen-4.0-fast-generate-001` model offers high-quality image generation optimized for speed, configurable via `IMAGE_GEMINI_MODEL`.
 2. **JPEG by default** — Smaller file sizes than PNG while maintaining acceptable quality for blog hero images.
 3. **Obsidian wiki syntax** — Using `![[attachments/name.jpg]]` keeps notes native to the Obsidian ecosystem while Quartz handles the transformation for web publishing.
 4. **Composable functions** — Every function is independently testable and reusable. The backfill script is just a thin CLI wrapper around the library.

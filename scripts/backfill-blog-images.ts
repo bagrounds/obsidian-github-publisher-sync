@@ -3,7 +3,7 @@
 import path from "node:path";
 import { backfillImages } from "./lib/blog-image.ts";
 
-const DEFAULT_IMAGE_MODEL = "imagen-3.0-generate-002";
+const DEFAULT_IMAGE_MODEL = "imagen-4.0-fast-generate-001";
 
 const log = (data: Record<string, unknown>): void =>
   console.log(JSON.stringify({ timestamp: new Date().toISOString(), ...data }));
@@ -18,11 +18,10 @@ const main = async (): Promise<void> => {
   const model = process.env.IMAGE_GEMINI_MODEL ?? DEFAULT_IMAGE_MODEL;
   const repoRoot = path.resolve(import.meta.dirname, "..");
   const attachmentsDir =
-    process.env.ATTACHMENTS_DIR ??
-    path.join(repoRoot, "content", "attachments");
+    process.env.ATTACHMENTS_DIR ?? path.join(repoRoot, "attachments");
 
   const directories = [
-    { path: path.join(repoRoot, "content", "reflections"), id: "reflections" },
+    { path: path.join(repoRoot, "reflections"), id: "reflections" },
     { path: path.join(repoRoot, "ai-blog"), id: "ai-blog" },
     { path: path.join(repoRoot, "auto-blog-zero"), id: "auto-blog-zero" },
     { path: path.join(repoRoot, "chickie-loo"), id: "chickie-loo" },

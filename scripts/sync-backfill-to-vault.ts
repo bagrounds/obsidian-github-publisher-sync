@@ -36,7 +36,7 @@ const main = async (): Promise<void> => {
   log({ event: "vault_pulled", vaultDir });
 
   const dirs: readonly SyncPair[] = [
-    { localDir: path.join(repoRoot, "content", "reflections"), vaultSubdir: "reflections" },
+    { localDir: path.join(repoRoot, "reflections"), vaultSubdir: "reflections" },
     { localDir: path.join(repoRoot, "ai-blog"), vaultSubdir: "ai-blog" },
     { localDir: path.join(repoRoot, "auto-blog-zero"), vaultSubdir: "auto-blog-zero" },
     { localDir: path.join(repoRoot, "chickie-loo"), vaultSubdir: "chickie-loo" },
@@ -49,7 +49,7 @@ const main = async (): Promise<void> => {
     }
   }
 
-  const localAttachments = path.join(repoRoot, "content", "attachments");
+  const localAttachments = path.join(repoRoot, "attachments");
   const attachmentsSynced = syncAttachmentsDir(localAttachments, vaultDir);
   if (attachmentsSynced > 0) {
     log({ event: "attachments_synced", count: attachmentsSynced });

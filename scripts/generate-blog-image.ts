@@ -6,7 +6,7 @@ import {
   generateImageWithGemini,
 } from "./lib/blog-image.ts";
 
-const DEFAULT_IMAGE_MODEL = "imagen-3.0-generate-002";
+const DEFAULT_IMAGE_MODEL = "imagen-4.0-fast-generate-001";
 
 const log = (data: Record<string, unknown>): void =>
   console.log(JSON.stringify({ timestamp: new Date().toISOString(), ...data }));
@@ -47,7 +47,7 @@ const main = async (): Promise<void> => {
 
   const repoRoot = path.resolve(import.meta.dirname, "..");
   const attachmentsDir =
-    process.env.ATTACHMENTS_DIR ?? path.join(repoRoot, "content", "attachments");
+    process.env.ATTACHMENTS_DIR ?? path.join(repoRoot, "attachments");
 
   const notePath = path.isAbsolute(config.notePath)
     ? config.notePath

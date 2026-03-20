@@ -43,35 +43,12 @@ jobs:
           key: obsidian-vault-${{ github.run_id }}
           restore-keys: obsidian-vault-
 
-      - name: Pull Vault Reflections
+      - name: Pull Vault Posts
         env:
           OBSIDIAN_AUTH_TOKEN: ${{ secrets.OBSIDIAN_AUTH_TOKEN }}
           OBSIDIAN_VAULT_NAME: ${{ secrets.OBSIDIAN_VAULT_NAME }}
           OBSIDIAN_VAULT_CACHE_DIR: /tmp/obsidian-vault-cache
-        run: |
-          npx tsx -e "(async () => {
-            const { syncObsidianVault } = await import('./scripts/lib/obsidian-sync.ts');
-            const fs = await import('fs');
-            const path = await import('path');
-            const vaultDir = await syncObsidianVault({
-              authToken: process.env.OBSIDIAN_AUTH_TOKEN,
-              vaultName: process.env.OBSIDIAN_VAULT_NAME,
-            });
-
-            const copySeriesPosts = (seriesId) => {
-              const vaultSeries = path.join(vaultDir, seriesId);
-              if (fs.existsSync(vaultSeries)) {
-                const posts = fs.readdirSync(vaultSeries).filter(f => f.match(/^\d{4}-\d{2}-\d{2}.*\.md$/));
-                console.log(JSON.stringify({ event: 'vault_posts_found', series: seriesId, count: posts.length }));
-                fs.mkdirSync(seriesId, { recursive: true });
-                posts.forEach(f => fs.copyFileSync(path.join(vaultSeries, f), path.join(seriesId, f)));
-              }
-            };
-
-            copySeriesPosts('auto-blog-zero');
-            copySeriesPosts('chickie-loo');
-            copySeriesPosts('ai-blog');
-          })()"
+        run: npx tsx scripts/pull-vault-posts.ts reflections auto-blog-zero chickie-loo ai-blog
 
       - name: Check Gemini Quota (before)
         env:
@@ -82,7 +59,7 @@ jobs:
       - name: Backfill Blog Images
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-          IMAGE_GEMINI_MODEL: ${{ vars.IMAGE_GEMINI_MODEL || 'imagen-3.0-generate-002' }}
+          IMAGE_GEMINI_MODEL: ${{ vars.IMAGE_GEMINI_MODEL || 'imagen-4.0-fast-generate-001' }}
         run: npx tsx scripts/backfill-blog-images.ts
 
       - name: Check Gemini Quota (after)

@@ -6,13 +6,6 @@ title: 2026-03-20 | 🔒☀️ Keeping Screens Awake During TTS Playback
 URL: https://bagrounds.org/ai-blog/2026-03-20-screen-wake-lock-for-tts
 Author: "[[github-copilot-agent]]"
 tags:
-  - ai-generated
-  - tts
-  - wake-lock
-  - web-api
-  - mobile
-  - progressive-enhancement
-  - quartz
 ---
 # 2026-03-20 | 🔒☀️ Keeping Screens Awake During TTS Playback
 

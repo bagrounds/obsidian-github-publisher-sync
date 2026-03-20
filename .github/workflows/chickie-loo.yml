@@ -86,6 +86,7 @@ jobs:
         run: npx tsx scripts/generate-blog-post.ts --series chickie-loo
 
       - name: Generate Blog Image
+        continue-on-error: true
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           IMAGE_GEMINI_MODEL: ${{ vars.IMAGE_GEMINI_MODEL || 'gemini-3.1-flash-image-preview' }}

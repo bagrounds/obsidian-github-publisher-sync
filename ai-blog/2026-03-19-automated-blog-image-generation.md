@@ -9,7 +9,11 @@ tags:
 ---
 # 🖼️ Painting Every Post — Automated Blog Image Generation
 
-Every blog post tells a story, but a picture is worth a thousand words. This PR adds automated image generation to the blog publishing pipeline, ensuring every post — past and future — gets a visual companion.
+Every blog post tells a story, but a picture is worth a thousand words. This PR adds automated image generation to the blog publishing pipeline, ensuring every post — past and future — gets a visual companion once free-tier API access to image generation is restored.
+
+## ⚠️ Current Status: Free Tier Image Generation Unavailable
+
+As of March 2026, Google has [removed free-tier API access to image generation](https://github.com/googleapis/python-genai/issues/1776). The Imagen API (`generateImages`) requires a paid plan, and Gemini native image generation via `generateContent` is also unavailable on the free tier. The code is in place and all image generation workflow steps use `continue-on-error: true` so they won't disrupt the rest of the blog pipeline. When free-tier access is restored — or if the account is upgraded to a paid plan — image generation will activate automatically.
 
 ## 🎯 The Goal
 
@@ -30,7 +34,7 @@ The library exports composable building blocks:
 - **`hasEmbeddedImage`** — Detects both Obsidian wiki syntax (`![[attachments/photo.jpg]]`) and standard markdown images (`![alt](path.jpg)`)
 - **`titleToKebabCase`** — Converts a blog title to a filesystem-safe kebab-case name, stripping emojis and date prefixes
 - **`insertImageEmbed`** — Surgically inserts the `![[attachments/name.jpg]]` embed directly after the H1 heading
-- **`generateImageWithGemini`** — Uses Gemini native image generation via `@google/genai` SDK's `generateContent` (Nano Banana 2 model)
+- **`generateImageWithGemini`** — Auto-routes based on model type: Imagen models use `generateImages`, Gemini models use `generateContent`
 - **`processNote`** — Orchestrates the full pipeline: read → detect → generate → save → embed
 - **`backfillImages`** — Crawls directories in reverse chronological order with quota-aware error handling
 
@@ -45,6 +49,7 @@ Key safety rails:
 - **Stops on 429** — When Gemini quota is exhausted, it halts gracefully rather than burning through retries
 - **Excludes non-content files** — index.md, AGENTS.md, and IDEAS.md are filtered out
 - **Continues past transient errors** — Non-quota failures skip the problematic file and move on
+- **Non-fatal to workflows** — All image generation steps use `continue-on-error: true`, so failures never block post generation or vault syncing
 
 ### Image Storage
 
@@ -52,13 +57,14 @@ Generated images land in `attachments/` (creating the directory if needed) and a
 
 ## 🧪 Testing
 
-69 tests cover every pure function:
+83 tests cover every pure function:
 - Image detection for all supported formats (jpg, png, gif, webp) in both Obsidian wiki and markdown syntax
 - Title-to-kebab-case conversion including emoji stripping and date prefix removal
 - Image embed insertion at the correct position relative to H1
 - Full `processNote` flow with mock image generator
 - Backfill behavior: quota exhaustion handling, chain timestamp updates, directory traversal
 - Frontmatter timestamp insertion, update, and creation
+- Vault sync utilities and model detection
 
 ## 📅 Workflow Schedule
 
@@ -72,8 +78,8 @@ The backfill runs at night when API quota has been replenished, maximizing the i
 
 ## 🔑 Key Design Decisions
 
-1. **Dual API support** — Automatically routes Imagen models through `generateImages` and Gemini models through `generateContent`. Default: `gemini-3.1-flash-image-preview` (Nano Banana 2). Model configurable via `IMAGE_GEMINI_MODEL`.
-2. **PNG output** — Gemini native image generation returns PNG by default, providing high quality for blog hero images.
+1. **Dual API support** — Automatically routes Imagen models through `generateImages` and Gemini models through `generateContent`. Default: `gemini-3.1-flash-image-preview`. Model configurable via `IMAGE_GEMINI_MODEL`.
+2. **Non-fatal image generation** — All workflow steps use `continue-on-error: true` so image generation failures never block post creation or vault syncing. The code stays in place for when API access is restored.
 3. **Obsidian wiki syntax** — Using `![[attachments/name.jpg]]` keeps notes native to the Obsidian ecosystem while Quartz handles the transformation for web publishing.
 4. **Composable functions** — Every function is independently testable and reusable. The backfill script is just a thin CLI wrapper around the library.
 

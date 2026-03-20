@@ -85,6 +85,21 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: npx tsx scripts/generate-blog-post.ts --series auto-blog-zero
 
+      - name: Generate Blog Image
+        continue-on-error: true
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          IMAGE_GEMINI_MODEL: ${{ vars.IMAGE_GEMINI_MODEL || 'gemini-3.1-flash-image-preview' }}
+        run: |
+          SERIES="auto-blog-zero"
+          POST=$(ls -1 ${SERIES}/$(date +%Y-%m-%d)*.md 2>/dev/null | head -1)
+          if [ -n "$POST" ]; then
+            echo "🖼️ Generating image for: $POST"
+            npx tsx scripts/generate-blog-image.ts --note "$POST"
+          else
+            echo "No new post to generate image for"
+          fi
+
       - name: Check Gemini Quota (after)
         if: always()
         env:
@@ -121,3 +136,11 @@ jobs:
           else
             echo "No new post generated today"
           fi
+
+      - name: Sync Image to Obsidian Vault
+        if: ${{ success() }}
+        env:
+          OBSIDIAN_AUTH_TOKEN: ${{ secrets.OBSIDIAN_AUTH_TOKEN }}
+          OBSIDIAN_VAULT_NAME: ${{ secrets.OBSIDIAN_VAULT_NAME }}
+          OBSIDIAN_VAULT_CACHE_DIR: /tmp/obsidian-vault-cache
+        run: npx tsx scripts/sync-attachments-to-vault.ts attachments

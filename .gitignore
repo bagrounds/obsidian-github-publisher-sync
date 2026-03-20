@@ -4,3 +4,5 @@ node_modules
 public
 tsconfig.tsbuildinfo
 .last-generate-metadata.json
+attachments
+reflections

@@ -3,7 +3,7 @@
 import path from "node:path";
 import { backfillImages } from "./lib/blog-image.ts";
 
-const DEFAULT_IMAGE_MODEL = "imagen-4.0-generate-001";
+const DEFAULT_IMAGE_MODEL = "gemini-3.1-flash-image-preview";
 
 const log = (data: Record<string, unknown>): void =>
   console.log(JSON.stringify({ timestamp: new Date().toISOString(), ...data }));

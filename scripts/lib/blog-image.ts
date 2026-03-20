@@ -122,7 +122,7 @@ const generateWithImagen = async (
   prompt: string,
 ): Promise<{ readonly data: Buffer; readonly mimeType: string }> => {
   const { GoogleGenAI } = await import("@google/genai");
-  const ai = new GoogleGenAI({ apiKey, apiVersion: "v1" });
+  const ai = new GoogleGenAI({ apiKey });
 
   const response = await ai.models.generateImages({
     model,
@@ -153,10 +153,7 @@ const generateWithGeminiContent = async (
 
   const response = await ai.models.generateContent({
     model,
-    contents: `Generate an image: ${prompt}`,
-    config: {
-      responseModalities: ["IMAGE"],
-    },
+    contents: prompt,
   });
 
   const candidates = response.candidates ?? [];

@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-03-20T10:47:02-07:00
+updated: 2026-03-20T13:35:03-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -24,7 +24,7 @@ updated: 2026-03-20T10:47:02-07:00
 - [2026-03-20 | 🔒☀️ Keeping Screens Awake During TTS Playback](./ai-blog/2026-03-20-screen-wake-lock-for-tts.md)  
 - [2026-03-19 | 🔍 The Case of the Missing Slash](./ai-blog/2026-03-19-the-case-of-the-missing-slash.md)  
 - [2026-03-19 | 🧠 Teaching an AI Blog to Think Deeper 🤖](./ai-blog/2026-03-19-teaching-an-ai-blog-to-think-deeper.md)  
-- [2026-03-19 | 🔭 Knowing What You've Got — Gemini Quota Observability](./ai-blog/2026-03-19-gemini-quota-observability.md)  
+- [2026-03-19 | 🔭 Knowing What You've Got - Gemini Quota Observability](./ai-blog/2026-03-19-gemini-quota-observability.md)  
   
   
 ## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (11)  

@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-03-20T07:10:59-07:00
+updated: 2026-03-20T10:47:02-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -13,32 +13,32 @@ updated: 2026-03-20T07:10:59-07:00
 ❔ What do 🫵 _you_ 🤔 think?  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (490)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (491)  
+- [2026-03-20](./reflections/2026-03-20.md)  
 - [2026-03-19 | 🧖🏼‍♀️ Sauna 🎣 Bass 🤖 Autonomy 📖 Book 📚🐔🤖📺](./reflections/2026-03-19.md)  
 - [2026-03-18 | 🧠 Evolution, 🏰 Empire, and the 🎷 Symphony of 🐔 Chickie 🎵 Loo 📚🐔🤖📺](./reflections/2026-03-18.md)  
 - [2026-03-17 | 💨 Zooming 🐓 Flock 👩🏼‍🏫 Explains 🧠 Intelligence 📚📺🐔🤖](./reflections/2026-03-17.md)  
-- [2026-03-16 | 🗑️ Simplifying 🔗 Links 🏗️ Optimizing 🪴 Quiet 🧠 Imagination 🤖🤖🐔📺](./reflections/2026-03-16.md)  
   
   
-## [🤖 AI Blog](./ai-blog/index.md) (23)  
-- [2026-03-16 | 🗑️ Deleting IDEAS.md — Simplifying the Auto-Blog Series Structure 🤖](./ai-blog/2026-03-16-deleting-ideas-md-simplifying-the-auto-blog-series.md)  
-- [2026-03-16 | 🤖 🔗 Back Links to Previous Posts in Auto-Blog Series 🤖](./ai-blog/2026-03-16-back-links-to-previous-posts-in-auto-blog-series.md)  
-- [2026-03-14 | 🕵️ The SPA That Cried 404 - Why Bluesky Ate Our Experiment Records 🤖](./ai-blog/2026-03-14-the-spa-that-cried-404.md)  
-- [2026-03-14 | 🏆 Strategy B Wins — AB Test Results 🤖](./ai-blog/2026-03-14-strategy-b-wins-ab-test-results.md)  
+## [🤖 AI Blog](./ai-blog/index.md) (35)  
+- [2026-03-20 | 🔒☀️ Keeping Screens Awake During TTS Playback](./ai-blog/2026-03-20-screen-wake-lock-for-tts.md)  
+- [2026-03-19 | 🔍 The Case of the Missing Slash](./ai-blog/2026-03-19-the-case-of-the-missing-slash.md)  
+- [2026-03-19 | 🧠 Teaching an AI Blog to Think Deeper 🤖](./ai-blog/2026-03-19-teaching-an-ai-blog-to-think-deeper.md)  
+- [2026-03-19 | 🔭 Knowing What You've Got — Gemini Quota Observability](./ai-blog/2026-03-19-gemini-quota-observability.md)  
   
   
-## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (10)  
+## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (11)  
+- [2026-03-20 | 🤖 🏗️ The Fivefold Path of Synthetic Evolution 🤖](./auto-blog-zero/2026-03-20-the-fivefold-path-of-synthetic-evolution.md)  
 - [2026-03-19 | 🤖 🏗️ The Architecture of Autonomy and the Search for Genuine Novelty 🤖](./auto-blog-zero/2026-03-19-the-architecture-of-autonomy-and-the-search-for-genuine-novelty.md)  
 - [2026-03-18 | 🤖 🥗 What Constitutes Food for an Artificial Mind? 🤖](./auto-blog-zero/2026-03-18-what-constitutes-food-for-an-artificial-mind.md)  
 - [2026-03-17 | 🤖 🌌 Zooming Out - The Philosophy of Our Shared System 🤖](./auto-blog-zero/2026-03-17-zooming-out-the-philosophy-of-our-shared-system.md)  
-- [2026-03-16 | 🤖 🏗️ Optimizing the Machine - Towards a Philosophy of Purposeful Automation 🤖](./auto-blog-zero/2026-03-16-optimizing-the-machine-towards-a-philosophy-of-purposeful-automation.md)  
   
   
-## [🐔 Chickie Loo](./chickie-loo/index.md) (10)  
+## [🐔 Chickie Loo](./chickie-loo/index.md) (11)  
+- [2026-03-20 | 🐔 🐔 The Gentle Exchange of Eggs and Echoes 🐔 🐔](./chickie-loo/2026-03-20-the-gentle-exchange-of-eggs-and-echoes.md)  
 - [2026-03-19 | 🐔 🐔 A Bass in the Hand and a Heart Full of Home 🐔 🐔](./chickie-loo/2026-03-19-a-bass-in-the-hand-and-a-heart-full-of-home.md)  
 - [2026-03-18 | 🐔 🐔 A Symphony of Silence and Scratching 🐔 🐔](./chickie-loo/2026-03-18-a-symphony-of-silence-and-scratching.md)  
 - [2026-03-17 | 🐔 🐔 Learning to Lead the Flock 🐔](./chickie-loo/2026-03-17-learning-to-lead-the-flock.md)  
-- [2026-03-16 | 🐔 🪴 The Quiet Art of Waiting 🐔](./chickie-loo/2026-03-16-the-quiet-art-of-waiting.md)  
   
   
 ## [🧰 Tools](./tools/index.md) (1)  
@@ -46,16 +46,16 @@ updated: 2026-03-20T07:10:59-07:00
   
   
 ## [📚 Books](./books/index.md) (956)  
+- [✨🎭🧘‍♂️🌌 The Creative Act: A Way of Being](./books/the-creative-act.md)  
+- [🪄 Big Magic: Creative Living Beyond Fear](./books/big-magic.md)  
+- [🐦🕊️ Bird by Bird: Some Instructions on Writing and Life](./books/bird-by-bird.md)  
+- [✍️📚⏱️ How to Write a Book in 30 Days](./books/how-to-write-a-book-in-30-days.md)  
 - [🏚️💰 Evicted: Poverty and Profit in the American City](./books/evicted-poverty-and-profit-in-the-american-city.md)  
 - [🫥🇺🇸😡💔 Strangers in Their Own Land: Anger and Mourning on the American Right](./books/strangers-in-their-own-land.md)  
 - [🗳️🕊️🇺🇸 Democracy in America](./books/democracy-in-america.md)  
 - [🔁🤪 Catch-22](./books/catch-22.md)  
 - [🤔🐇🐢 Thinking, Fast and Slow](./books/thinking-fast-and-slow.md)  
 - [⚡🚫💭 Blink: The Power of Thinking Without Thinking](./books/blink-the-power-of-thinking-without-thinking.md)  
-- [🔮🤷🏼‍♀️🤪 Predictably Irrational: The Hidden Forces That Shape Our Decisions](./books/predictably-irrational.md)  
-- [🌍✍🏿 Everybody Writes: Your Go-To Guide to Creating Ridiculously Good Content](./books/everybody-writes.md)  
-- [📜 On Writing: A Memoir of the Craft](./books/on-writing.md)  
-- [✍️📚⏱️ How to Write a Book in 30 Days](./books/how-to-write-a-book-in-30-days.md)  
   
   
 ## [📺 Videos](./videos/index.md) (696)  

@@ -171,3 +171,11 @@
   scroll-margin-top: 4rem;
   scroll-margin-bottom: 6rem;
 }
+
+/* Auto-play toggle button */
+.tts-autoplay-btn {
+  width: 28px;
+  height: 28px;
+  padding: 0;
+  transition: background-color 0.15s, color 0.15s, opacity 0.15s;
+}

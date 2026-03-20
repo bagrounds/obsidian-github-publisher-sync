@@ -29,6 +29,18 @@ import {
   BLOCK_SELECTORS,
 } from "./tts.utils"
 
+import {
+  AUTOPLAY_READ_KEY,
+  AUTOPLAY_ENABLED_KEY,
+  AUTOPLAY_PENDING_KEY,
+  extractNavLinks,
+  urlToSlug,
+  decodeReadPages,
+  encodeReadPages,
+  resolveNextUrl,
+  type LinkInfo,
+} from "./tts.autoplay"
+
 // ---------------------------------------------------------------------------
 // Block-aware text extraction with DOM element mapping
 // ---------------------------------------------------------------------------
@@ -167,6 +179,8 @@ document.addEventListener("nav", () => {
   const currentTimeEl = document.getElementById("tts-current-time")
   const totalTimeEl = document.getElementById("tts-total-time")
   const toggleBtn = document.getElementById("tts-toggle") as HTMLButtonElement | null
+  const autoplayBtn = document.getElementById("tts-autoplay") as HTMLButtonElement | null
+  const autoplayIcon = document.getElementById("tts-autoplay-icon") as HTMLElement | null
 
   if (!playBtn || !container || !wrapper) return
 
@@ -237,6 +251,62 @@ document.addEventListener("nav", () => {
   }
 
   adjustForFooter()
+
+  // ---- Auto-play ----
+
+  let autoplayEnabled = localStorage.getItem(AUTOPLAY_ENABLED_KEY) === "true"
+
+  function syncAutoplayUI() {
+    if (autoplayIcon) {
+      autoplayIcon.style.opacity = autoplayEnabled ? "1" : "0.4"
+    }
+    if (autoplayBtn) {
+      autoplayBtn.setAttribute("aria-label", autoplayEnabled ? "Auto-play on" : "Auto-play off")
+      autoplayBtn.title = autoplayEnabled ? "Auto-play on" : "Auto-play off"
+    }
+  }
+
+  syncAutoplayUI()
+
+  function onAutoplayToggle() {
+    autoplayEnabled = !autoplayEnabled
+    localStorage.setItem(AUTOPLAY_ENABLED_KEY, String(autoplayEnabled))
+    syncAutoplayUI()
+  }
+
+  function markCurrentPageRead() {
+    const slug = urlToSlug(window.location.pathname)
+    const readPages = decodeReadPages(localStorage.getItem(AUTOPLAY_READ_KEY))
+    readPages.add(slug)
+    localStorage.setItem(AUTOPLAY_READ_KEY, encodeReadPages(readPages))
+  }
+
+  function collectArticleLinks(): LinkInfo[] {
+    const article = document.querySelector("article")
+    if (!article) return []
+    return Array.from(article.querySelectorAll("a"))
+      .filter((a) => {
+        try {
+          return a.href && new URL(a.href).origin === window.location.origin
+        } catch {
+          return false
+        }
+      })
+      .map((a) => ({ text: a.textContent ?? "", href: a.href }))
+  }
+
+  function navigateToNextAutoPlay() {
+    const links = collectArticleLinks()
+    const navLinks = extractNavLinks(links)
+    const readPages = decodeReadPages(localStorage.getItem(AUTOPLAY_READ_KEY))
+    const articleHrefs = links.map((l) => l.href)
+    const nextUrl = resolveNextUrl(navLinks, articleHrefs, readPages)
+
+    if (nextUrl) {
+      localStorage.setItem(AUTOPLAY_PENDING_KEY, "true")
+      window.spaNavigate(new URL(nextUrl, window.location.origin), false)
+    }
+  }
 
   // ---- Helpers ----
 
@@ -350,7 +420,7 @@ document.addEventListener("nav", () => {
 
   function speakCurrent() {
     if (currentIdx >= sentences.length) {
-      stop()
+      stop(true)
       return
     }
 
@@ -362,7 +432,7 @@ document.addEventListener("nav", () => {
         highlightCurrentSentence()
         speakCurrent()
       } else if (currentIdx >= sentences.length) {
-        stop()
+        stop(true)
       }
     }
     utterance.onerror = (e) => {
@@ -373,7 +443,7 @@ document.addEventListener("nav", () => {
           highlightCurrentSentence()
           speakCurrent()
         } else {
-          stop()
+          stop(true)
         }
       }
     }
@@ -381,7 +451,7 @@ document.addEventListener("nav", () => {
     synth.speak(utterance)
   }
 
-  function stop() {
+  function stop(reachedEnd: boolean = false) {
     synth.cancel()
     playing = false
     stopTick()
@@ -389,6 +459,11 @@ document.addEventListener("nav", () => {
     clearHighlight()
     releaseWakeLock()
     updateUI()
+
+    if (reachedEnd && autoplayEnabled) {
+      markCurrentPageRead()
+      navigateToNextAutoPlay()
+    }
   }
 
   // ---- Event handlers ----
@@ -464,6 +539,7 @@ document.addEventListener("nav", () => {
   seekBar?.addEventListener("input", onSeek)
   speedSel?.addEventListener("change", onSpeedChange)
   toggleBtn?.addEventListener("click", onToggle)
+  autoplayBtn?.addEventListener("click", onAutoplayToggle)
 
   // ---- Cleanup on SPA navigation ----
   window.addCleanup(() => {
@@ -475,9 +551,18 @@ document.addEventListener("nav", () => {
     seekBar?.removeEventListener("input", onSeek)
     speedSel?.removeEventListener("change", onSpeedChange)
     toggleBtn?.removeEventListener("click", onToggle)
+    autoplayBtn?.removeEventListener("click", onAutoplayToggle)
   })
 
   // Initial prepare so the total time is shown
   prepare()
   updateUI()
+
+  // ---- Auto-start if pending from previous page ----
+  if (localStorage.getItem(AUTOPLAY_PENDING_KEY) === "true") {
+    localStorage.removeItem(AUTOPLAY_PENDING_KEY)
+    if (autoplayEnabled && sentences.length > 0) {
+      speakFrom(0)
+    }
+  }
 })

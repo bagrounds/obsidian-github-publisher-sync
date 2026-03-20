@@ -62,6 +62,11 @@ const TextToSpeech: QuartzComponent = ({ displayClass }: QuartzComponentProps) =
             <option value="1.75">1.75×</option>
             <option value="2">2×</option>
           </select>
+          <button class="tts-btn tts-autoplay-btn" id="tts-autoplay" aria-label="Auto-play off" title="Auto-play off">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" id="tts-autoplay-icon" style="opacity:0.4">
+              <path d="M6 18l8.5-6L6 6v12zm2-8.14L11.03 12 8 14.14V9.86zM16 6h2v12h-2z" />
+            </svg>
+          </button>
         </div>
         <div class="tts-seek-row">
           <span class="tts-time" id="tts-current-time">

@@ -468,7 +468,6 @@ document.addEventListener("nav", () => {
   // ---- Cleanup on SPA navigation ----
   window.addCleanup(() => {
     stop()
-    releaseWakeLock()
     document.removeEventListener("visibilitychange", onVisibilityChange)
     playBtn.removeEventListener("click", onPlay)
     backBtn?.removeEventListener("click", onBack)

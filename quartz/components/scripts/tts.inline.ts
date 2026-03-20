@@ -8,6 +8,7 @@
  *  - Seek bar with elapsed / total time estimates
  *  - Sentence highlighting & auto-scroll
  *  - Always-fixed player with collapsible toggle
+ *  - Screen Wake Lock to prevent screen sleep during playback
  *
  * Only reads the article content – no navigation, menus, or markup.
  * Emojis are stripped so the synthesiser reads clean prose.
@@ -184,6 +185,39 @@ document.addEventListener("nav", () => {
   let blocks: TextBlock[] = []
   let sentenceBlockMap: number[] = []
   let prevHighlightEl: Element | null = null
+  let wakeLockSentinel: WakeLockSentinel | null = null
+
+  // ---- Wake Lock (prevent screen from sleeping during playback) ----
+
+  async function acquireWakeLock() {
+    if (!("wakeLock" in navigator)) return
+    try {
+      wakeLockSentinel = await navigator.wakeLock.request("screen")
+      wakeLockSentinel.addEventListener("release", () => {
+        wakeLockSentinel = null
+      })
+    } catch {
+      /* Wake lock denied (low battery, permissions policy, etc.) */
+    }
+  }
+
+  async function releaseWakeLock() {
+    if (!wakeLockSentinel) return
+    try {
+      await wakeLockSentinel.release()
+    } catch {
+      /* already released */
+    }
+    wakeLockSentinel = null
+  }
+
+  function onVisibilityChange() {
+    if (document.visibilityState === "visible" && playing) {
+      acquireWakeLock()
+    }
+  }
+
+  document.addEventListener("visibilitychange", onVisibilityChange)
 
   // ---- Toggle collapse/expand ----
 
@@ -310,6 +344,7 @@ document.addEventListener("nav", () => {
     showPause()
     startTick()
     highlightCurrentSentence()
+    acquireWakeLock()
     speakCurrent()
   }
 
@@ -352,6 +387,7 @@ document.addEventListener("nav", () => {
     stopTick()
     showPlay()
     clearHighlight()
+    releaseWakeLock()
     updateUI()
   }
 
@@ -367,6 +403,7 @@ document.addEventListener("nav", () => {
       playing = false
       stopTick()
       showPlay()
+      releaseWakeLock()
       // Keep highlight while paused so the user sees where they are
       updateUI()
     } else {
@@ -431,6 +468,8 @@ document.addEventListener("nav", () => {
   // ---- Cleanup on SPA navigation ----
   window.addCleanup(() => {
     stop()
+    releaseWakeLock()
+    document.removeEventListener("visibilitychange", onVisibilityChange)
     playBtn.removeEventListener("click", onPlay)
     backBtn?.removeEventListener("click", onBack)
     forwardBtn?.removeEventListener("click", onForward)

@@ -72,7 +72,7 @@ The backfill runs at night when API quota has been replenished, maximizing the i
 
 ## 🔑 Key Design Decisions
 
-1. **Gemini native image generation** — Uses `gemini-2.0-flash-preview-image-generation` via `generateContent` with `responseModalities: ["IMAGE"]`. Available on the free tier, unlike the Imagen API (`generateImages`) which requires a paid plan. Model configurable via `IMAGE_GEMINI_MODEL`.
+1. **Gemini native image generation** — Uses `gemini-2.0-flash-exp` via `generateContent` with `responseModalities: ["IMAGE"]`. Available on the free tier, unlike the Imagen API (`generateImages`) which requires a paid plan. Model configurable via `IMAGE_GEMINI_MODEL`. Alternative models: `gemini-2.5-flash-image`, `gemini-3.1-flash-image-preview`.
 2. **PNG output** — Gemini native image generation returns PNG by default, providing high quality for blog hero images.
 3. **Obsidian wiki syntax** — Using `![[attachments/name.jpg]]` keeps notes native to the Obsidian ecosystem while Quartz handles the transformation for web publishing.
 4. **Composable functions** — Every function is independently testable and reusable. The backfill script is just a thin CLI wrapper around the library.

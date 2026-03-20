@@ -88,7 +88,7 @@ jobs:
       - name: Generate Blog Image
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-          IMAGE_GEMINI_MODEL: ${{ vars.IMAGE_GEMINI_MODEL || 'gemini-2.0-flash-preview-image-generation' }}
+          IMAGE_GEMINI_MODEL: ${{ vars.IMAGE_GEMINI_MODEL || 'gemini-2.0-flash-exp' }}
         run: |
           SERIES="chickie-loo"
           POST=$(ls -1 ${SERIES}/$(date +%Y-%m-%d)*.md 2>/dev/null | head -1)

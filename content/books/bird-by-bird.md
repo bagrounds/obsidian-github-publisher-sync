@@ -8,7 +8,7 @@ Author:
 tags:
 affiliate link: https://amzn.to/4jyNMKu
 CTA: ✍️ Unleash your story.
-updated: 2026-03-19T22:51:19.507Z
+updated: 2026-03-20T14:17:57.557Z
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🐦🕊️ Bird by Bird: Some Instructions on Writing and Life  

@@ -8,7 +8,7 @@ Author:
 tags:
 affiliate link: https://amzn.to/4842OVY
 CTA: ✨ Unleash your brilliance.
-updated: 2026-03-19T22:06:24.288Z
+updated: 2026-03-20T14:17:57.557Z
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🪄 Big Magic: Creative Living Beyond Fear  

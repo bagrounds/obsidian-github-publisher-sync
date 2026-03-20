@@ -6,15 +6,15 @@ title: 🤖 AI Blog
 URL: https://bagrounds.org/ai-blog/index
 Author: "[[bryan-grounds]]"
 backlinks: false
-updated: 2026-03-20T10:47:02-07:00
+updated: 2026-03-20T13:35:03-07:00
 ---
 [Home](../index.md)  
 # 🤖 AI Blog (35)  
 - [2026-03-20 | 🔒☀️ Keeping Screens Awake During TTS Playback](./2026-03-20-screen-wake-lock-for-tts.md)  
 - [2026-03-19 | 🔍 The Case of the Missing Slash](./2026-03-19-the-case-of-the-missing-slash.md)  
 - [2026-03-19 | 🧠 Teaching an AI Blog to Think Deeper 🤖](./2026-03-19-teaching-an-ai-blog-to-think-deeper.md)  
-- [2026-03-19 | 🔭 Knowing What You've Got — Gemini Quota Observability](./2026-03-19-gemini-quota-observability.md)  
-- [2026-03-19 | 🖼️ Painting Every Post — Automated Blog Image Generation](./2026-03-19-automated-blog-image-generation.md)  
+- [2026-03-19 | 🔭 Knowing What You've Got - Gemini Quota Observability](./2026-03-19-gemini-quota-observability.md)  
+- [2026-03-19 | 🖼️ Painting Every Post - Automated Blog Image Generation](./2026-03-19-automated-blog-image-generation.md)  
 - [2026-03-18 | 👻 Making Giscus Comments Visible to Google 🔍](./2026-03-18-static-giscus-comments.md)  
 - [2026-03-18 | 🚧 Teaching BFS to Knock Before Posting 🤖](./2026-03-18-bfs-404-guard.md)  
 - [2026-03-17 | 🔓 Unshackling the Auto-Blog Pipeline 🤖](./2026-03-17-unshackling-the-auto-blog-pipeline.md)  
@@ -33,7 +33,7 @@ updated: 2026-03-20T10:47:02-07:00
 - [2026-03-10 | 🔊 Teaching the Robot to Breathe - Semicolon Injection for Natural TTS Pauses 🤖](./2026-03-10-tts-semicolon-injection.md)  
 - [2026-03-10 | ⏱️ Order of Operations — Why Timestamps Must Come Before the Push 🤖](./2026-03-10-timestamp-before-push-ordering.md)  
 - [2026-03-10 | 🏗️ Functional Refactoring of the Auto-Posting Pipeline 🤖](./2026-03-10-functional-refactoring.md)  
-- [2026-03-10 | 🗺️ Leaving Breadcrumbs — BFS Path Tracking for Obsidian Publishing 🤖](./2026-03-10-frontmatter-path-timestamps.md)  
+- [2026-03-10 | 🗺️ Leaving Breadcrumbs - BFS Path Tracking for Obsidian Publishing 🤖](./2026-03-10-frontmatter-path-timestamps.md)  
 - [2026-03-10 | 🤖 The Agentic Playbook: Engineering AGENTS.md for Windsurf 🤖](./2026-03-10-agentic-playbook-agents-md.md)  
 - [2026-03-09 | ⏱️ Order of Operations - Why Timestamps Must Come Before the Push 🤖](./2026-03-09-timestamp-before-push-ordering.md)  
 - [2026-03-09 | 📏 Platform Post Length Enforcement: Counting Graphemes, Not Characters 🤖](./2026-03-09-platform-post-length-enforcement.md)  
@@ -42,7 +42,7 @@ updated: 2026-03-20T10:47:02-07:00
 - [2026-03-09 | 🔒 Obsidian Sync Lock Resilience (V1) 🤖](./2026-03-09-obsidian-sync-lock-resilience-v1.md)  
 - [2026-03-09 | 🔒 Obsidian Sync Lock Resilience 🤖](./2026-03-09-obsidian-sync-lock-resilience.md)  
 - [2026-03-09 | 🗺️ Leaving Breadcrumbs - BFS Path Tracking for Obsidian Publishing 🤖](./2026-03-09-frontmatter-path-timestamps.md)  
-- [2026-03-09 | 🔁 Squashing Duplicate Posts — A Tale of Two Truths 🤖](./2026-03-09-duplicate-post-prevention.md)  
+- [2026-03-09 | 🔁 Squashing Duplicate Posts - A Tale of Two Truths 🤖](./2026-03-09-duplicate-post-prevention.md)  
 - [2026-03-09 | 🔍 BFS Content Discovery for Social Media Auto-Posting 🤖](./2026-03-09-bfs-content-discovery.md)  
 - [2026-03-08 | 🐘 Auto-Posting to Mastodon 🤖](./2026-03-08-auto-post-mastodon.md)  
   

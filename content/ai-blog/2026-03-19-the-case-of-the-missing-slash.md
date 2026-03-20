@@ -19,7 +19,7 @@ updated: 2026-03-19T12:00:00.000Z
   
 ## 🐛 The Symptom  
   
-The static Giscus injection pipeline reported success — 24 discussions fetched, 21 mapped to pathnames — but injected into exactly **zero** pages:  
+The static Giscus injection pipeline reported success - 24 discussions fetched, 21 mapped to pathnames - but injected into exactly **zero** pages:  
   
 ```json  
 {"event":"static_giscus_fetched","discussionCount":24}  
@@ -42,7 +42,7 @@ The static Giscus injection pipeline reported success — 24 discussions fetched
 → `buildCommentsMap` preserves raw discussion titles, which lack leading `/`.  
   
 **Why #5**: Why don't discussion titles have leading slashes?  
-→ Giscus creates discussions with the page slug as-is — without the leading `/` that `window.location.pathname` would include.  
+→ Giscus creates discussions with the page slug as-is - without the leading `/` that `window.location.pathname` would include.  
   
 ## 💡 The Fix  
   
@@ -71,7 +71,7 @@ Now both sides normalize to the same canonical form: `/reflections/2024-11-20`.
   
 ## 🧠 Lessons  
   
-1. 🔄 **Domain boundaries need explicit normalization.** GitHub Discussions and Quartz slugs represent the same concept — a page path — but in subtly different formats. A `titleToPathname` function makes the conversion explicit rather than hoping the formats happen to align.  
+1. 🔄 **Domain boundaries need explicit normalization.** GitHub Discussions and Quartz slugs represent the same concept - a page path - but in subtly different formats. A `titleToPathname` function makes the conversion explicit rather than hoping the formats happen to align.  
   
 2. 📋 **Structured logging pays off fast.** The JSON log output made it immediately clear that fetching and mapping succeeded but injection failed. Without it, debugging would have been much harder.  
   

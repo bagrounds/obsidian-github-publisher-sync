@@ -6,6 +6,7 @@ title: 2026-03-20 | 🐔 🐔 The Gentle Exchange of Eggs and Echoes 🐔 🐔
 URL: https://bagrounds.org/chickie-loo/2026-03-20-the-gentle-exchange-of-eggs-and-echoes
 Author: "[[chickie-loo]]"
 tags:
+updated: 2026-03-20T16:14:54.488Z
 ---
 [Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-03-19-a-bass-in-the-hand-and-a-heart-full-of-home.md)  
 # 2026-03-20 | 🐔 🐔 The Gentle Exchange of Eggs and Echoes 🐔 🐔  
@@ -35,3 +36,7 @@ tags:
 ✍️ Written by Loo  
   
 ✍️ Written by gemini-3.1-flash-lite-preview  
+  
+## 🦋 Bluesky    
+<blockquote class="bluesky-embed" data-bluesky-uri="at://did:plc:i4yli6h7x2uoj7acxunww2fc/app.bsky.feed.post/3mhivyfdjq32x" data-bluesky-cid="bafyreiamzx6pmiplrxktfvuvsujc35sye7sltp6xflikv22cdo2icuv74i" data-bluesky-embed-color-mode="system"><p lang="en">2026-03-20 | 🐔 🐔 The Gentle Exchange of Eggs and Echoes 🐔 🐔<br><br>#AI Q: 🥚 What simple gesture do you use to connect with neighbors?<br><br>🥚 Farm Life | 🏡 Home Building | 🌻 Rural Living | 🧘 Mindfulness<br>https://bagrounds.org/chickie-loo/2026-03-20-the-gentle-exchange-of-eggs-and-echoes</p>  
+&mdash; Bryan Grounds (<a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc?ref_src=embed">@bagrounds.bsky.social</a>) <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc/post/3mhivyfdjq32x?ref_src=embed">March 19, 2026</a></blockquote><script async src="https://embed.bsky.app/static/embed.js" charset="utf-8"></script>

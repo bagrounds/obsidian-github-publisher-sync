@@ -15,7 +15,7 @@ export const AUTOPLAY_READ_KEY = "tts-autoplay-read"
 export const AUTOPLAY_ENABLED_KEY = "tts-autoplay-enabled"
 export const AUTOPLAY_PENDING_KEY = "tts-autoplay-pending"
 
-/** Unicode codepoints used to identify forward / back nav links. */
+/** Emoji markers used to identify forward / back nav links. */
 export const NEXT_MARKER = "⏭"
 export const BACK_MARKER = "⏮"
 

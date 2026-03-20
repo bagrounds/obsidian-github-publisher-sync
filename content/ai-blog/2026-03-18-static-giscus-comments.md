@@ -42,16 +42,16 @@ This gives us the best of both worlds: SEO-friendly static content for crawlers,
 GitHub GraphQL API  
         │  
         ▼  
-fetchAllDiscussions()   ─── Paginated fetching with cursor-based pagination  
+fetchAllDiscussions() ─── Paginated fetching with cursor-based pagination  
         │  
         ▼  
-buildCommentsMap()      ─── Map<pathname, StaticComment[]>  
+buildCommentsMap() ─── Map<pathname, StaticComment[]>  
         │  
         ▼  
-injectStaticComments()  ─── HTML string transformation per page  
+injectStaticComments() ─── HTML string transformation per page  
         │  
         ▼  
-writeFileSync()         ─── Updated HTML files in public/  
+writeFileSync() ─── Updated HTML files in public/  
 ```  
   
 ### Key Design Decisions  
@@ -153,7 +153,7 @@ Graceful degradation: if `GITHUB_TOKEN` is not available, the script skips silen
   
 ## 📐 Design Principles  
   
-- 🪵 **Unix Philosophy**: The injection script is a standalone pipeline stage — it reads files, transforms them, writes them back. Composable with any SSG.  
+- 🪵 **Unix Philosophy**: The injection script is a standalone pipeline stage - it reads files, transforms them, writes them back. Composable with any SSG.  
 - 🧊 **Functional Programming**: All core logic is pure functions. Side effects (fetch, read, write) are isolated at the edges.  
 - 📈 **Progressive Enhancement**: Pages work without static comments. They're an enhancement for SEO and initial load, not a requirement.  
 - 🔀 **Separation of Concerns**: The build system doesn't know about comments. The comment system doesn't know about the build. They compose via the HTML file format.  

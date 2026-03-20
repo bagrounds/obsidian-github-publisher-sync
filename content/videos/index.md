@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-03-19T09:11:02-07:00
+updated: 2026-03-19T17:02:51-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (695)  
+# 📺 Videos (696)  
 - [💰🤑🤖💡🚀💲 $0.10/Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
@@ -57,6 +57,7 @@ updated: 2026-03-19T09:11:02-07:00
 - [🤖🗣️⚠️😵‍💫 AI content supercharges confusion and spreads misleading information, critics warn](./ai-content-supercharges-confusion-and-spreads-misleading-information-critics-warn.md)  
 - [🤖🧠⚙️👩‍💻 AI Engineering with Chip Huyen](./ai-engineering-with-chip-huyen.md)  
 - [🤖🗣️🔮✨ AI Talks | Gen AI 2026: What Will Shape the Future](./ai-talks-gen-ai-2026-what-will-shape-the-future.md)  
+- [😠🗣️🔥🌍🗣️🧖 Alexander Stubb on «difficult» conversations with Trump, global «disorder» and sauna diplomacy](./alexander-stubb-on-difficult-conversations-with-trump-global-disorder-and-sauna-diplomacy.md)  
 - [🧠👶🐒 Alison Gopnik, The Evolution of Human Intelligences | Natural Philosophy Forum Lecture 2025](./alison-gopnik-the-evolution-of-human-intelligences-natural-philosophy-forum-lecture-2025.md)  
 - [📺🕰️📰🎂🎉 A look at 50 years of the News Hour](./a-look-at-50-years-of-the-news-hour.md)  
 - [📺🏛️💸🎯 A look at the history of public media in the U.S. as Republicans target federal funding](./a-look-at-the-history-of-public-media-in-the-us-as-republicans-target-federal-funding.md)  

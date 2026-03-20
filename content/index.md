@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-03-19T09:11:02-07:00
+updated: 2026-03-19T17:02:51-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -46,19 +46,20 @@ updated: 2026-03-19T09:11:02-07:00
   
   
 ## [📚 Books](./books/index.md) (956)  
+- [🌍✍🏿 Everybody Writes: Your Go-To Guide to Creating Ridiculously Good Content](./books/everybody-writes.md)  
+- [🎨🙏✨ The Artist's Way: A Spiritual Path to Higher Creativity](./books/the-artists-way.md)  
+- [🐦🕊️ Bird by Bird: Some Instructions on Writing and Life](./books/bird-by-bird.md)  
 - [✍️📚⏱️ How to Write a Book in 30 Days](./books/how-to-write-a-book-in-30-days.md)  
+- [🪄 Big Magic: Creative Living Beyond Fear](./books/big-magic.md)  
+- [✍️🦴 Writing Down the Bones](./books/writing-down-the-bones.md)  
+- [📜 On Writing: A Memoir of the Craft](./books/on-writing.md)  
 - [🕳️🧠👶🏽 The Whole-Brain Child: 12 Revolutionary Strategies to Nurture Your Child's Developing Mind](./books/the-whole-brain-child.md)  
 - [👶🤔❤️ The Philosophical Baby: What Children's Minds Tell Us About Truth, Love, and the Meaning of Life](./books/the-philosophical-baby-what-childrens-minds-tell-us-about-truth-love-and-the-meaning-of-life.md)  
 - [🧠🧬🤖 A Brief History of Intelligence: Evolution, AI, and the Five Breakthroughs That Made Our Brains](./books/a-brief-history-of-intelligence-evolution-ai-and-the-five-breakthroughs-that-made-our-brains.md)  
-- [👶🧠🔬 The Scientist in the Crib: Minds, Brains, And How Children Learn](./books/the-scientist-in-the-crib-minds-brains-and-how-children-learn.md)  
-- [🫥🇺🇸😡💔 Strangers in Their Own Land: Anger and Mourning on the American Right](./books/strangers-in-their-own-land.md)  
-- [🔺⚡🔄🌍 The Triangle of Power: Rebalancing the New World Order](./books/the-triangle-of-power-rebalancing-the-new-world-order.md)  
-- [📜🌍⏳ Sapiens: A Brief History of Humankind](./books/sapiens-a-brief-history-of-humankind.md)  
-- [🦓 Why Zebras Don't Get Ulcers: The Acclaimed Guide to Stress, Stress-Related Disease, and Coping](./books/why-zebras-dont-get-ulcers.md)  
-- [😇😈 Behave: The Biology of Humans at Our Best and Worst](./books/behave-the-biology-of-humans-at-our-best-and-worst.md)  
   
   
-## [📺 Videos](./videos/index.md) (695)  
+## [📺 Videos](./videos/index.md) (696)  
+- [😠🗣️🔥🌍🗣️🧖 Alexander Stubb on «difficult» conversations with Trump, global «disorder» and sauna diplomacy](./videos/alexander-stubb-on-difficult-conversations-with-trump-global-disorder-and-sauna-diplomacy.md)  
 - [📺🎤🗣️ J.D. Vance: Last Week Tonight with John Oliver (HBO)](./videos/jd-vance-last-week-tonight-with-john-oliver-hbo.md)  
 - [📈🗣️📺 USAID: Last Week Tonight with John Oliver (HBO)](./videos/usaid-last-week-tonight-with-john-oliver-hbo.md)  
 - [👑🤝🇺🇸 The Art of Befriending Trump | President Stubb](./videos/the-art-of-befriending-trump-president-stubb.md)  
@@ -68,7 +69,6 @@ updated: 2026-03-19T09:11:02-07:00
 - [🤖📅🦢🚲 2025 in LLMs so far, illustrated by Pelicans on Bicycles - Simon Willison](./videos/2025-in-llms-so-far-illustrated-by-pelicans-on-bicycles-simon-willison.md)  
 - [🧠➡️🤖⚡️ Your Brain Doesn't Command Your Body. It Predicts It. | Max Bennett](./videos/your-brain-doesnt-command-your-body-it-predicts-it-max-bennett.md)  
 - [🧠✨💫 The Development of Imagination](./videos/the-development-of-imagination.md)  
-- [✍️🤯📝 How to Write Freakishly Well - Paul Harding](./videos/how-to-write-freakishly-well-paul-harding.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  

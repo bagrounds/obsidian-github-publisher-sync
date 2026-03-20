@@ -30,7 +30,7 @@ The library exports composable building blocks:
 - **`hasEmbeddedImage`** — Detects both Obsidian wiki syntax (`![[attachments/photo.jpg]]`) and standard markdown images (`![alt](path.jpg)`)
 - **`titleToKebabCase`** — Converts a blog title to a filesystem-safe kebab-case name, stripping emojis and date prefixes
 - **`insertImageEmbed`** — Surgically inserts the `![[attachments/name.jpg]]` embed directly after the H1 heading
-- **`generateImageWithGemini`** — Uses Gemini native image generation via `@google/genai` SDK's `generateContent` with `responseModalities: ["IMAGE"]`
+- **`generateImageWithGemini`** — Uses Gemini native image generation via `@google/genai` SDK's `generateContent` (Nano Banana 2 model)
 - **`processNote`** — Orchestrates the full pipeline: read → detect → generate → save → embed
 - **`backfillImages`** — Crawls directories in reverse chronological order with quota-aware error handling
 
@@ -72,7 +72,7 @@ The backfill runs at night when API quota has been replenished, maximizing the i
 
 ## 🔑 Key Design Decisions
 
-1. **Dual API support** — Automatically routes Imagen models (e.g. `imagen-4.0-generate-001`) through `generateImages` with API v1, and Gemini models through `generateContent` with `responseModalities: ["IMAGE"]`. Default: `imagen-4.0-generate-001`. Model configurable via `IMAGE_GEMINI_MODEL`.
+1. **Dual API support** — Automatically routes Imagen models through `generateImages` and Gemini models through `generateContent`. Default: `gemini-3.1-flash-image-preview` (Nano Banana 2). Model configurable via `IMAGE_GEMINI_MODEL`.
 2. **PNG output** — Gemini native image generation returns PNG by default, providing high quality for blog hero images.
 3. **Obsidian wiki syntax** — Using `![[attachments/name.jpg]]` keeps notes native to the Obsidian ecosystem while Quartz handles the transformation for web publishing.
 4. **Composable functions** — Every function is independently testable and reusable. The backfill script is just a thin CLI wrapper around the library.

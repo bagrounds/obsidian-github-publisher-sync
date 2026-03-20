@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-03-20T13:35:03-07:00
+updated: 2026-03-20T13:51:14-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (696)  
+# 📺 Videos (697)  
 - [💰🤑🤖💡🚀💲 $0.10/Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
@@ -53,6 +53,7 @@ updated: 2026-03-20T13:35:03-07:00
 - [🧠⚡️💻🚀 ADHD & Software Development: Real Practices That Work w/ Paige Watson | Agile Mentors Podcast](./adhd-software-development-real-practices-that-work-w-paige-watson-agile-mentors-podcast.md)  
 - [👎💲 Against Economics by David Graeber](./against-economics-by-david-graeber.md)  
 - [🌱📈✅➡️🔄 A healthy economy should be designed to thrive, not grow | Kate Raworth](./a-healthy-economy-should-be-designed-to-thrive-not-grow-kate-raworth.md)  
+- [🤖🤝🏛️ AI and Democracy (Chris Bail at Lake Como Lectures on Democracy)](./ai-and-democracy-chris-bail-at-lake-como-lectures-on-democracy.md)  
 - [🤖💡🤝🗣️🏛️ AI Can Help Humans Find Common Ground in Democratic Deliberation – MH Tessler | IASEAI 2025](./ai-can-help-humans-find-common-ground-in-democratic-deliberation-mh-tessler-iaseai-2025.md)  
 - [🤖🗣️⚠️😵‍💫 AI content supercharges confusion and spreads misleading information, critics warn](./ai-content-supercharges-confusion-and-spreads-misleading-information-critics-warn.md)  
 - [🤖🧠⚙️👩‍💻 AI Engineering with Chip Huyen](./ai-engineering-with-chip-huyen.md)  

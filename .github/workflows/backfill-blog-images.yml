@@ -59,7 +59,7 @@ jobs:
       - name: Backfill Blog Images
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-          IMAGE_GEMINI_MODEL: ${{ vars.IMAGE_GEMINI_MODEL || 'imagen-4.0-fast-generate-001' }}
+          IMAGE_GEMINI_MODEL: ${{ vars.IMAGE_GEMINI_MODEL || 'gemini-2.0-flash-preview-image-generation' }}
         run: npx tsx scripts/backfill-blog-images.ts
 
       - name: Check Gemini Quota (after)

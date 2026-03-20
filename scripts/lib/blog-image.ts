@@ -111,27 +111,26 @@ export const generateImageWithGemini: ImageGenerator = async (
   const { GoogleGenAI } = await import("@google/genai");
   const ai = new GoogleGenAI({ apiKey });
 
-  const response = await ai.models.generateImages({
+  const response = await ai.models.generateContent({
     model,
-    prompt,
+    contents: `Generate an image: ${prompt}`,
     config: {
-      numberOfImages: 1,
-      outputMimeType: "image/jpeg",
+      responseModalities: ["IMAGE"],
     },
   });
 
-  const image = response.generatedImages?.[0];
-  if (!image?.image?.imageBytes) {
-    throw new Error(
-      image?.raiFilteredReason
-        ? `Image filtered: ${image.raiFilteredReason}`
-        : "No image generated",
-    );
+  const imagePart = response.candidates?.[0]?.content?.parts?.find(
+    (part: { inlineData?: unknown }) => part.inlineData,
+  );
+
+  const inlineData = (imagePart as { inlineData?: { data?: string; mimeType?: string } })?.inlineData;
+  if (!inlineData?.data) {
+    throw new Error("No image generated");
   }
 
   return {
-    data: Buffer.from(image.image.imageBytes, "base64"),
-    mimeType: image.image.mimeType ?? "image/jpeg",
+    data: Buffer.from(inlineData.data, "base64"),
+    mimeType: inlineData.mimeType ?? "image/png",
   };
 };
 

@@ -30,7 +30,7 @@ The library exports composable building blocks:
 - **`hasEmbeddedImage`** — Detects both Obsidian wiki syntax (`![[attachments/photo.jpg]]`) and standard markdown images (`![alt](path.jpg)`)
 - **`titleToKebabCase`** — Converts a blog title to a filesystem-safe kebab-case name, stripping emojis and date prefixes
 - **`insertImageEmbed`** — Surgically inserts the `![[attachments/name.jpg]]` embed directly after the H1 heading
-- **`generateImageWithGemini`** — Calls the Imagen 4 API via `@google/genai` SDK's `generateImages` endpoint
+- **`generateImageWithGemini`** — Uses Gemini native image generation via `@google/genai` SDK's `generateContent` with `responseModalities: ["IMAGE"]`
 - **`processNote`** — Orchestrates the full pipeline: read → detect → generate → save → embed
 - **`backfillImages`** — Crawls directories in reverse chronological order with quota-aware error handling
 
@@ -72,8 +72,8 @@ The backfill runs at night when API quota has been replenished, maximizing the i
 
 ## 🔑 Key Design Decisions
 
-1. **Imagen 4 Fast over older models** — The `imagen-4.0-fast-generate-001` model offers high-quality image generation optimized for speed, configurable via `IMAGE_GEMINI_MODEL`.
-2. **JPEG by default** — Smaller file sizes than PNG while maintaining acceptable quality for blog hero images.
+1. **Gemini native image generation** — Uses `gemini-2.0-flash-preview-image-generation` via `generateContent` with `responseModalities: ["IMAGE"]`, available on the free tier. The Imagen API (`generateImages`) requires a paid plan, so we use Gemini's built-in image output instead. Model configurable via `IMAGE_GEMINI_MODEL`.
+2. **PNG output** — Gemini native image generation returns PNG by default, providing high quality for blog hero images.
 3. **Obsidian wiki syntax** — Using `![[attachments/name.jpg]]` keeps notes native to the Obsidian ecosystem while Quartz handles the transformation for web publishing.
 4. **Composable functions** — Every function is independently testable and reusable. The backfill script is just a thin CLI wrapper around the library.
 

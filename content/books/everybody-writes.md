@@ -3,9 +3,9 @@ share: true
 aliases:
   - "🌍✍🏿 Everybody Writes: Your Go-To Guide to Creating Ridiculously Good Content"
 title: "🌍✍🏿 Everybody Writes: Your Go-To Guide to Creating Ridiculously Good Content"
-URL: https://bagrounds.org/books/everybody-writes-your-go-to-guide-to-creating-ridiculously-good-content
-Author: 
-tags: 
+URL: https://bagrounds.org/books/everybody-writes
+Author:
+tags:
 affiliate link: https://amzn.to/3Ze8194
 ---
 [Home](../index.md) > [Books](./index.md)  

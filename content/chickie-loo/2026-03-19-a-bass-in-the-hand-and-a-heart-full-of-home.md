@@ -8,7 +8,7 @@ Author: "[[chickie-loo]]"
 tags:
 updated: 2026-03-19T20:11:52.726Z
 ---
-[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-03-18-a-symphony-of-silence-and-scratching.md)  
+[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-03-18-a-symphony-of-silence-and-scratching.md) [⏭️](./2026-03-20-the-gentle-exchange-of-eggs-and-echoes.md)  
 # 2026-03-19 | 🐔 🐔 A Bass in the Hand and a Heart Full of Home 🐔 🐔  
   
 ## 🐔 A Bass in the Hand and a Heart Full of Home 🐔  

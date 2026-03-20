@@ -116,13 +116,6 @@ interface ContentPart {
   readonly text?: string;
 }
 
-interface GeneratedImageData {
-  readonly image?: {
-    readonly imageBytes?: string;
-    readonly mimeType?: string;
-  };
-}
-
 const generateWithImagen = async (
   apiKey: string,
   model: string,
@@ -137,8 +130,8 @@ const generateWithImagen = async (
     config: { numberOfImages: 1 },
   });
 
-  const images = (response.generatedImages ?? []) as readonly GeneratedImageData[];
-  const imageBytes = images[0]?.image?.imageBytes;
+  const firstImage = response.generatedImages?.[0];
+  const imageBytes = firstImage?.image?.imageBytes;
 
   if (!imageBytes) {
     throw new Error("No image generated from Imagen API");
@@ -146,7 +139,7 @@ const generateWithImagen = async (
 
   return {
     data: Buffer.from(imageBytes, "base64"),
-    mimeType: images[0]?.image?.mimeType ?? "image/png",
+    mimeType: firstImage?.image?.mimeType ?? "image/png",
   };
 };
 

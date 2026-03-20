@@ -103,6 +103,9 @@ export const isQuotaError = (error: unknown): boolean => {
   );
 };
 
+export const isImagenModel = (model: string): boolean =>
+  model.startsWith("imagen-");
+
 interface InlineImageData {
   readonly data?: string;
   readonly mimeType?: string;
@@ -113,11 +116,45 @@ interface ContentPart {
   readonly text?: string;
 }
 
-export const generateImageWithGemini: ImageGenerator = async (
-  apiKey,
-  model,
-  prompt,
-) => {
+interface GeneratedImageData {
+  readonly image?: {
+    readonly imageBytes?: string;
+    readonly mimeType?: string;
+  };
+}
+
+const generateWithImagen = async (
+  apiKey: string,
+  model: string,
+  prompt: string,
+): Promise<{ readonly data: Buffer; readonly mimeType: string }> => {
+  const { GoogleGenAI } = await import("@google/genai");
+  const ai = new GoogleGenAI({ apiKey, apiVersion: "v1" });
+
+  const response = await ai.models.generateImages({
+    model,
+    prompt,
+    config: { numberOfImages: 1 },
+  });
+
+  const images = (response.generatedImages ?? []) as readonly GeneratedImageData[];
+  const imageBytes = images[0]?.image?.imageBytes;
+
+  if (!imageBytes) {
+    throw new Error("No image generated from Imagen API");
+  }
+
+  return {
+    data: Buffer.from(imageBytes, "base64"),
+    mimeType: images[0]?.image?.mimeType ?? "image/png",
+  };
+};
+
+const generateWithGeminiContent = async (
+  apiKey: string,
+  model: string,
+  prompt: string,
+): Promise<{ readonly data: Buffer; readonly mimeType: string }> => {
   const { GoogleGenAI } = await import("@google/genai");
   const ai = new GoogleGenAI({ apiKey });
 
@@ -146,6 +183,15 @@ export const generateImageWithGemini: ImageGenerator = async (
     mimeType: imagePart.inlineData.mimeType ?? "image/png",
   };
 };
+
+export const generateImageWithGemini: ImageGenerator = async (
+  apiKey,
+  model,
+  prompt,
+) =>
+  isImagenModel(model)
+    ? generateWithImagen(apiKey, model, prompt)
+    : generateWithGeminiContent(apiKey, model, prompt);
 
 export const processNote = async (
   notePath: string,

@@ -6,7 +6,7 @@ import {
   generateImageWithGemini,
 } from "./lib/blog-image.ts";
 
-const DEFAULT_IMAGE_MODEL = "gemini-2.0-flash-exp";
+const DEFAULT_IMAGE_MODEL = "imagen-4.0-generate-001";
 
 const log = (data: Record<string, unknown>): void =>
   console.log(JSON.stringify({ timestamp: new Date().toISOString(), ...data }));

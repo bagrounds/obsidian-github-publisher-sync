@@ -20,6 +20,7 @@ import {
   updateFrontmatterTimestamp,
   syncMarkdownDir,
   syncAttachmentsDir,
+  isImagenModel,
   type ImageGenerator,
 } from "./blog-image.ts";
 
@@ -261,6 +262,28 @@ describe("isQuotaError", () => {
 
   it("returns false for non-object", () => {
     assert.equal(isQuotaError("string error"), false);
+  });
+});
+
+describe("isImagenModel", () => {
+  it("returns true for imagen-4.0-generate-001", () => {
+    assert.equal(isImagenModel("imagen-4.0-generate-001"), true);
+  });
+
+  it("returns true for imagen-4.0-fast-generate-001", () => {
+    assert.equal(isImagenModel("imagen-4.0-fast-generate-001"), true);
+  });
+
+  it("returns true for imagen-4.0-ultra-generate-001", () => {
+    assert.equal(isImagenModel("imagen-4.0-ultra-generate-001"), true);
+  });
+
+  it("returns false for gemini models", () => {
+    assert.equal(isImagenModel("gemini-2.0-flash-exp"), false);
+  });
+
+  it("returns false for empty string", () => {
+    assert.equal(isImagenModel(""), false);
   });
 });
 

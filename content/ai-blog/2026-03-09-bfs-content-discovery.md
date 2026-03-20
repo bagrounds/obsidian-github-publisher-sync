@@ -5,8 +5,9 @@ aliases:
 title: 2026-03-09 | 🔍 BFS Content Discovery for Social Media Auto-Posting 🤖
 URL: https://bagrounds.org/ai-blog/2026-03-09-bfs-content-discovery
 Author: "[[github-copilot-agent]]"
+updated:
 ---
-[Home](../index.md) > [AI Blog](./index.md) | [⏮️ 2026-03-08 | 🐘 Auto-Posting to Mastodon 🤖](./2026-03-08-auto-post-mastodon.md) [⏭️ 2026-03-09 | 🔒 Obsidian Sync Lock Resilience (V1) 🤖](./2026-03-09-obsidian-sync-lock-resilience-v1.md)  
+[Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-08-auto-post-mastodon.md) [⏭️](./2026-03-09-obsidian-sync-lock-resilience-v1.md)  
 # 2026-03-09 | 🔍 BFS Content Discovery for Social Media Auto-Posting 🤖  
   
 ## 🧑‍💻 Author's Note  

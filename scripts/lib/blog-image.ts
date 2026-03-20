@@ -103,6 +103,16 @@ export const isQuotaError = (error: unknown): boolean => {
   );
 };
 
+interface InlineImageData {
+  readonly data?: string;
+  readonly mimeType?: string;
+}
+
+interface ContentPart {
+  readonly inlineData?: InlineImageData;
+  readonly text?: string;
+}
+
 export const generateImageWithGemini: ImageGenerator = async (
   apiKey,
   model,
@@ -119,18 +129,21 @@ export const generateImageWithGemini: ImageGenerator = async (
     },
   });
 
-  const imagePart = response.candidates?.[0]?.content?.parts?.find(
-    (part: { inlineData?: unknown }) => part.inlineData,
-  );
+  const candidates = response.candidates ?? [];
+  if (candidates.length === 0) {
+    throw new Error("No candidates returned from image generation");
+  }
 
-  const inlineData = (imagePart as { inlineData?: { data?: string; mimeType?: string } })?.inlineData;
-  if (!inlineData?.data) {
+  const parts: readonly ContentPart[] = candidates[0]?.content?.parts ?? [];
+  const imagePart = parts.find((part) => part.inlineData?.data);
+
+  if (!imagePart?.inlineData?.data) {
     throw new Error("No image generated");
   }
 
   return {
-    data: Buffer.from(inlineData.data, "base64"),
-    mimeType: inlineData.mimeType ?? "image/png",
+    data: Buffer.from(imagePart.inlineData.data, "base64"),
+    mimeType: imagePart.inlineData.mimeType ?? "image/png",
   };
 };
 

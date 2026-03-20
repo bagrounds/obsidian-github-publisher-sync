@@ -25,7 +25,7 @@ mechanism in the `obsidian-headless` source code.
 ```  
 Error: Another sync instance is already running for this vault.  
 ```  
-⏰ It happens intermittently — some runs succeed, others fail.  
+⏰ It happens intermittently - some runs succeed, others fail.  
 🤔 The error occurs in `ob sync` (Obsidian Headless CLI) when pulling vault content.  
   
 ## 🔬 Investigation Timeline  
@@ -41,7 +41,7 @@ Error: Another sync instance is already running for this vault.
 Each fix addressed the symptoms but not the root cause. The 3rd fix's mental  
 model was wrong: **`sync-setup` does NOT spawn daemons**.  
   
-### 📋 4th Investigation — Decompiling the Lock  
+### 📋 4th Investigation - Decompiling the Lock  
   
 🔍 I decompiled the minified `obsidian-headless` source to understand the lock:  
   
@@ -49,15 +49,15 @@ model was wrong: **`sync-setup` does NOT spawn daemons**.
 // The actual lock class (decompiled from cli.js)  
 class Ce {  
   acquire() {  
-    mkdirSync(lockPath)           // Create .sync.lock directory  
-    if (EEXIST && age < 5s)       // Lock held → throw error  
+    mkdirSync(lockPath) // Create .sync.lock directory  
+    if (EEXIST && age < 5s) // Lock held → throw error  
       throw new Q()  
     lockTime = Date.now()  
     utimesSync(lockPath, lockTime) // Set mtime  
-    lockTime = Date.now()          // Update to current time  
+    lockTime = Date.now() // Update to current time  
     utimesSync(lockPath, lockTime) // Set mtime again  
-    if (lockTime !== stat().mtime) // verify() — FAILS HERE  
-      throw new Q()               // Lock dir NOT cleaned up!  
+    if (lockTime !== stat().mtime) // verify() - FAILS HERE  
+      throw new Q() // Lock dir NOT cleaned up!  
   }  
 }  
 ```  
@@ -70,7 +70,7 @@ try-finally scope that only runs after successful acquisition.
   
 ### 1️⃣ Why does "Another sync instance" occur immediately after sync-setup?  
   
-`sync-setup` does NOT create locks or spawn daemons — it only writes config  
+`sync-setup` does NOT create locks or spawn daemons - it only writes config  
 files. The error comes from `ob sync`'s own `acquire()` failing internally.  
   
 ### 2️⃣ Why does acquire() fail on a freshly created lock?  
@@ -90,7 +90,7 @@ the subsequent lock acquisition may also trigger the issue.
   
 Each `ob sync` attempt creates a fresh lock dir, fails `verify()`, and  
 exits without releasing it. Retries remove it, but the next attempt  
-recreates it and fails identically — a repeating cycle.  
+recreates it and fails identically - a repeating cycle.  
   
 ### 5️⃣ What's the root fix?  
   
@@ -103,14 +103,14 @@ This eliminates whatever interaction triggers the verify failure.
 ### 🚀 Warm Cache Fast Path  
   
 ```  
-  Warm Cache (common)              Cold Cache (first run)  
-  ┌───────────────────┐            ┌───────────────────┐  
-  │ 🧹 ensureSyncClean│            │ 🧹 ensureSyncClean│  
-  │ 📥 ob sync       │ ←DIRECT!   │ 🔧 sync-setup    │  
-  │                   │            │ 🔓 removeSyncLock │ ←NEW  
-  │ If config missing:│            │ 📥 ob sync       │  
-  │   🔧 sync-setup  │            └───────────────────┘  
-  │   📥 ob sync     │  
+  Warm Cache (common) Cold Cache (first run)  
+  ┌───────────────────┐ ┌───────────────────┐  
+  │ 🧹 ensureSyncClean│ │ 🧹 ensureSyncClean│  
+  │ 📥 ob sync │ ←DIRECT! │ 🔧 sync-setup │  
+  │ │ │ 🔓 removeSyncLock │ ←NEW  
+  │ If config missing:│ │ 📥 ob sync │  
+  │ 🔧 sync-setup │ └───────────────────┘  
+  │ 📥 ob sync │  
   └───────────────────┘  
 ```  
   
@@ -126,7 +126,7 @@ New `logSyncDiagnostics()` function runs on each retry:
 ### ✅ Verified Lock Removal  
   
 `ensureSyncClean()` now double-checks that the lock is actually gone  
-after removal — catching cases where a process recreates it immediately.  
+after removal - catching cases where a process recreates it immediately.  
   
 ### 🔓 Post-Setup Lock Removal  
   
@@ -152,34 +152,34 @@ patterns, more retries, settling delays. The real fix was simpler:
 ### 📦 Cache Persistence is Powerful  
   
 The vault configuration from `sync-setup` persists in the GitHub Actions  
-cache. By recognizing this, we can skip setup entirely for warm caches —  
+cache. By recognizing this, we can skip setup entirely for warm caches -   
 eliminating the problematic code path completely.  
   
 ## 🧪 Testing  
   
 ✅ 6 new unit tests covering:  
-- `logSyncDiagnostics` — lock exists, lock missing, no .obsidian dir  
-- `ensureSyncClean` — verified removal, nested contents  
+- `logSyncDiagnostics` - lock exists, lock missing, no .obsidian dir  
+- `ensureSyncClean` - verified removal, nested contents  
   
 📊 215 total tests passing: 136 tweet-reflection + 79 BFS discovery.  
   
 ## 📚 Lessons Learned  
   
-1. 🔍 **Decompile when necessary** — understanding the actual lock mechanism  
+1. 🔍 **Decompile when necessary** - understanding the actual lock mechanism  
    (5-second staleness, mtime verify, missing release on failure) was only  
    possible by reading the minified source.  
   
-2. 🧹 **Subtraction > Addition** — removing `sync-setup` from the warm cache  
+2. 🧹 **Subtraction > Addition** - removing `sync-setup` from the warm cache  
    path was more effective than adding more cleanup, retries, and process killing.  
   
-3. 📋 **Log what you find (and don't find)** — the diagnostic logging shows  
+3. 📋 **Log what you find (and don't find)** - the diagnostic logging shows  
    exactly what state exists during retries, making future investigations faster.  
   
-4. 🔄 **Mental models can be wrong** — three investigations assumed `sync-setup`  
+4. 🔄 **Mental models can be wrong** - three investigations assumed `sync-setup`  
    spawns daemons. It doesn't. Always verify assumptions.  
   
 ## 🔗 References  
   
-- [obsidian-headless issue #4](https://github.com/obsidianmd/obsidian-headless/issues/4) — Stale `.sync.lock` after hard kill  
+- [obsidian-headless issue #4](https://github.com/obsidianmd/obsidian-headless/issues/4) - Stale `.sync.lock` after hard kill  
 - [Obsidian Headless Sync docs](https://help.obsidian.md/sync/headless)  
 - [obsidian-headless CLI](https://github.com/obsidianmd/obsidian-headless)  

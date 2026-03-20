@@ -9,7 +9,7 @@ Platform:
 Channel: LastWeekTonight
 tags:
 youtube: https://youtu.be/NtRPLCso0Sw
-updated: 2026-03-19T10:15:18.609Z
+updated: 2026-03-20T12:11:10.857Z
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 📺🎤🗣️ J.D. Vance: Last Week Tonight with John Oliver (HBO)  

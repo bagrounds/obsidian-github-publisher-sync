@@ -31,7 +31,7 @@ affiliate link: https://amzn.to/4qauY7F
   
 ### ❓ Q: Is Children of Time part of a series?  
   
-A: 🤓 Children of Time is the first installment in a series that continues with Children of Ruin and Children of Memory.  
+A: 🤓 Children of Time is the first installment in a series that continues with Children of Ruin and [🧠📖✨ Children of Memory](./children-of-memory.md).  
   
 ### ❓ Q: What is the main theme of Children of Time?  
   

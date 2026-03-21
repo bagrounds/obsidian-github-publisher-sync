@@ -4,8 +4,9 @@ aliases:
   - ℹ️🌱 The Informed Gardener
 title: ℹ️🌱 The Informed Gardener
 URL: https://bagrounds.org/books/the-informed-gardener
-Author: 
-tags: 
+Author:
+tags:
+  - gardening
 affiliate link: https://amzn.to/3Sum6eP
 ---
 [Home](../index.md) > [Books](./index.md)  

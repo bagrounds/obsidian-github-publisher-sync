@@ -59,7 +59,7 @@ youtube: https://youtu.be/fjWbvlg1-lM
 ### 🆚 Contrasting  
   
 * 📖 Exceptional People by Ian Goldin argues for the necessity of organized migration systems and explores the long-term economic advantages of global labor mobility.  
-* 📖 Border Wars by Julie Hirschfeld Davis and Michael D. Shear documents the internal political maneuvers and policy shifts that led to increased federal enforcement measures at the U.S. border.  
+* [🧱⚔️🚶‍♀️ Border Wars: Inside Trump's Assault on Immigration](../books/border-wars-inside-trumps-assault-on-immigration.md) by Julie Hirschfeld Davis and Michael D. Shear documents the internal political maneuvers and policy shifts that led to increased federal enforcement measures at the U.S. border.  
   
 ### 🎨 Creatively Related  
   

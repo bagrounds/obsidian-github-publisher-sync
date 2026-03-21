@@ -44,7 +44,7 @@ youtube: https://youtu.be/sAJecmnE0ec
 ## 📚 Book Recommendations  
   
 ### ↔️ Similar  
-* 🌱 **Less is More: How Degrowth Will Save the World** by Jason Hickel: Offers a strong argument for degrowth, directly supporting the Donut's growth-agnostic stance and challenging the core tenets of capitalist expansion.  
+* **[📉🌎 Less is More: How Degrowth Will Save the World](../books/less-is-more-how-degrowth-will-save-the-world.md)** by Jason Hickel: Offers a strong argument for degrowth, directly supporting the Donut's growth-agnostic stance and challenging the core tenets of capitalist expansion.  
 * 🌲 **Prosperity Without Growth: Economics for a Finite Planet** by Tim Jackson: A foundational text that systematically details the ecological and social limits of perpetual economic growth, proposing a framework for sustainable prosperity.  
   
 ### 🆚 Contrasting  

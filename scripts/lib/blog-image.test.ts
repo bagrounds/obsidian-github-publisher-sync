@@ -21,6 +21,8 @@ import {
   syncMarkdownDir,
   syncAttachmentsDir,
   isImagenModel,
+  resolveImageProvider,
+  makeCloudflareGenerator,
   type ImageGenerator,
 } from "./blog-image.ts";
 
@@ -834,5 +836,84 @@ describe("syncAttachmentsDir", () => {
 
     syncAttachmentsDir(localDir, vaultDir);
     assert.ok(fs.existsSync(path.join(vaultDir, "attachments", "img.png")));
+  });
+});
+
+describe("resolveImageProvider", () => {
+  it("selects Cloudflare when CLOUDFLARE_API_TOKEN and CLOUDFLARE_ACCOUNT_ID are set", () => {
+    const env = {
+      CLOUDFLARE_API_TOKEN: "cf-token-123",
+      CLOUDFLARE_ACCOUNT_ID: "cf-account-456",
+    };
+    const provider = resolveImageProvider(env);
+    assert.equal(provider.apiKey, "cf-token-123");
+    assert.equal(provider.model, "@cf/black-forest-labs/flux-1-schnell");
+    assert.equal(typeof provider.generator, "function");
+  });
+
+  it("uses custom Cloudflare model when CLOUDFLARE_IMAGE_MODEL is set", () => {
+    const env = {
+      CLOUDFLARE_API_TOKEN: "cf-token",
+      CLOUDFLARE_ACCOUNT_ID: "cf-account",
+      CLOUDFLARE_IMAGE_MODEL: "@cf/stabilityai/stable-diffusion-xl-base-1.0",
+    };
+    const provider = resolveImageProvider(env);
+    assert.equal(provider.model, "@cf/stabilityai/stable-diffusion-xl-base-1.0");
+  });
+
+  it("falls back to Gemini when only GEMINI_API_KEY is set", () => {
+    const env = {
+      GEMINI_API_KEY: "gemini-key-abc",
+    };
+    const provider = resolveImageProvider(env);
+    assert.equal(provider.apiKey, "gemini-key-abc");
+    assert.equal(provider.model, "gemini-3.1-flash-image-preview");
+  });
+
+  it("uses custom Gemini model when IMAGE_GEMINI_MODEL is set", () => {
+    const env = {
+      GEMINI_API_KEY: "gemini-key",
+      IMAGE_GEMINI_MODEL: "imagen-4.0-generate-001",
+    };
+    const provider = resolveImageProvider(env);
+    assert.equal(provider.model, "imagen-4.0-generate-001");
+  });
+
+  it("prefers Cloudflare over Gemini when both are available", () => {
+    const env = {
+      CLOUDFLARE_API_TOKEN: "cf-token",
+      CLOUDFLARE_ACCOUNT_ID: "cf-account",
+      GEMINI_API_KEY: "gemini-key",
+    };
+    const provider = resolveImageProvider(env);
+    assert.equal(provider.apiKey, "cf-token");
+    assert.ok(provider.model.includes("flux"));
+  });
+
+  it("throws when no credentials are available", () => {
+    assert.throws(
+      () => resolveImageProvider({}),
+      /No image generation credentials found/,
+    );
+  });
+
+  it("throws when only CLOUDFLARE_API_TOKEN is set without account ID", () => {
+    const env = { CLOUDFLARE_API_TOKEN: "cf-token" };
+    assert.throws(
+      () => resolveImageProvider(env),
+      /No image generation credentials found/,
+    );
+  });
+});
+
+describe("makeCloudflareGenerator", () => {
+  it("returns an ImageGenerator function", () => {
+    const generator = makeCloudflareGenerator("account-123");
+    assert.equal(typeof generator, "function");
+  });
+
+  it("uses default model when none specified", () => {
+    const generator = makeCloudflareGenerator("account-123");
+    assert.equal(typeof generator, "function");
   });
 });

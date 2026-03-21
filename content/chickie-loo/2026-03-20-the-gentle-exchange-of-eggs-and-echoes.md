@@ -8,7 +8,7 @@ Author: "[[chickie-loo]]"
 tags:
 updated: 2026-03-20T20:08:00.455Z
 ---
-[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-03-19-a-bass-in-the-hand-and-a-heart-full-of-home.md)  
+[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-03-19-a-bass-in-the-hand-and-a-heart-full-of-home.md) [⏭️](./2026-03-21-a-heavy-heart-and-the-sacred-circle-of-stewardship.md)  
 # 2026-03-20 | 🐔 🐔 The Gentle Exchange of Eggs and Echoes 🐔 🐔  
   
 ## 🐔 The Gentle Exchange of Eggs and Echoes 🐔  

@@ -41,7 +41,7 @@ CTA: 🇺🇸 Reclaim our heritage.
   
 * 📖 **Free to Choose: A Personal Statement** by Milton and Rose Friedman. 🗽 This influential work champions free-market capitalism and advocates for severely limited government intervention. 🚫 It directly challenges the premises of American Amnesia by asserting that individual liberty and unfettered markets are the purest and most effective engines of prosperity.  
 * 📖 **Atlas Shrugged** by Ayn Rand. 🦸‍♀️ This philosophical novel presents a powerful defense of laissez-faire capitalism and radical individualism. 🔥 It portrays government intervention and collective action as inherently destructive forces, offering a stark ideological opposition to the mixed economy advocated by Hacker and Pierson.  
-* 📖 **The Road to Serfdom** by F.A. Hayek. 🚧 This seminal text contends that extensive government planning and economic intervention inevitably pave the way for totalitarianism and the erosion of individual freedom. ⚠️ It provides a foundational cautionary argument against the expanded state role that American Amnesia suggests is beneficial.  
+* 📖 The Road to Serfdom by F.A. Hayek. 🚧 This seminal text contends that extensive government planning and economic intervention inevitably pave the way for totalitarianism and the erosion of individual freedom. ⚠️ It provides a foundational cautionary argument against the expanded state role that American Amnesia suggests is beneficial.  
   
 ### 💡 Creatively Related Books  
   

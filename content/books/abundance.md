@@ -44,7 +44,7 @@ CTA: Think bigger.
   
 ### 🙅‍♀️ Contrasting Books (Critiques of Growth, Limits, Alternative Systems)  
   
-* **_Less Is More: How Degrowth Will Save the World_ by Jason Hickel:** Directly contrasts with the abundance framework by arguing that endless economic growth is unsustainable and advocates for a degrowth approach, particularly in wealthy nations.  
+* **[📉🌎 Less is More: How Degrowth Will Save the World](./less-is-more-how-degrowth-will-save-the-world.md) by Jason Hickel:** Directly contrasts with the abundance framework by arguing that endless economic growth is unsustainable and advocates for a degrowth approach, particularly in wealthy nations.  
 * **_The Party's Over: Oil, War, and the Fate of Industrial Societies_ by Richard Heinberg:** A foundational text on peak oil and resource depletion, presenting a view centered on the physical limits to growth and the inevitability of scarcity.  
 * **_Ecology and the Politics of Scarcity_ by William Ophuls:** An earlier work exploring the political implications of ecological limits and resource scarcity, offering a more pessimistic view on the potential for continued material abundance.  
 * **_Four Futures: Life After Capitalism_ by Peter Frase:** Explores potential future societal models based on different combinations of scarcity/abundance and equality/hierarchy, offering a more speculative and critical perspective on potential outcomes.  

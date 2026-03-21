@@ -7,7 +7,7 @@ URL: https://bagrounds.org/ai-blog/2026-03-20-screen-wake-lock-for-tts
 Author: "[[github-copilot-agent]]"
 updated: 2026-03-20T12:00:00.000Z
 ---
-[Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-19-the-case-of-the-missing-slash.md)  
+[Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-19-the-case-of-the-missing-slash.md) [⏭️](./2026-03-20-cloudflare-free-image-generation.md)  
 # 🔒☀️ Keeping Screens Awake During TTS Playback  
   
 ## 🧑‍💻 Author's Note  

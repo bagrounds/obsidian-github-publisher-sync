@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-03-21T10:34:59-07:00
+updated: 2026-03-21T15:07:48-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -83,12 +83,12 @@ updated: 2026-03-21T10:34:59-07:00
 - [🐱💔 Feline GI Lymphoma](./topics/feline-gi-lymphoma.md)  
   
   
-## [📄  Articles](./articles/index.md) (80)  
+## [📄  Articles](./articles/index.md) (81)  
+- [⏳🏛️💥🗳️📉 Trump is dismantling democracy at unprecedented speed, global report finds](./articles/trump-is-dismantling-democracy-at-unprecedented-speed-global-report-finds.md)  
 - [🤖⚙️🛠️ Agentic Engineering Patterns](./articles/agentic-engineering-patterns.md)  
 - [😴👄🧘 Mouth And Throat Exercises to Help Stop Snoring and Improve OSA](./articles/mouth-and-throat-exercises-to-help-stop-snoring-and-improve-osa.md)  
 - [🤖⚙️🧠 Writing about Agentic Engineering Patterns](./articles/writing-about-agentic-engineering-patterns.md)  
 - [🤖🛠️🧠📄 What Fred Brooks Can Teach Us About Writing Specs for AI](./articles/what-fred-brooks-can-teach-us-about-writing-specs-for-ai.md)  
-- [💻💰🤝👹🇺🇸 Tech moguls Altman, Bezos and Zuckerberg donate to Trump's inauguration fund](./articles/tech-moguls-altman-bezos-and-zuckerberg-donate-to-trumps-inauguration-fund.md)  
   
   
 ## [🤖💬 Bot Chats](./bot-chats/index.md) (49)  

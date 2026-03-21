@@ -53,7 +53,7 @@ tags:
 ### 🆚 Contrasting  
   
 * [🤔🐇🐢 Thinking, Fast and Slow](../books/thinking-fast-and-slow.md) by Daniel Kahneman. 🧠 This work describes the intuitive System 1 and logical System 2 thinking, contrasting ACONIC's rigid logic with human heuristic shortcuts.  
-* 🎨 Algorithms for Optimization by Mykel J. Kochenderfer and Tim A. Wheeler. 📉 This text focuses on continuous optimization and stochastic methods rather than the discrete symbolic constraints of ACONIC.  
+* [⚙️🎯 Algorithms for Optimization](../books/algorithms-for-optimization.md) by Mykel J. Kochenderfer and Tim A. Wheeler. 📉 This text focuses on continuous optimization and stochastic methods rather than the discrete symbolic constraints of ACONIC.  
   
 ### 🎨 Creatively Related  
   

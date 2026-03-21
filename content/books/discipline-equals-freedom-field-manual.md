@@ -56,7 +56,7 @@ affiliate link: https://amzn.to/3ZHtmry
 * 🫂 **Self-Compassion: The Proven Power of Being Kind to Yourself** by Kristin Neff: Advocates for self-kindness and understanding as a path to well-being, contrasting with a more harsh, purely discipline-focused approach.  
 * 🤷 **The Subtle Art of Not Giving a F*ck: A Counterintuitive Approach to Living a Good Life** by Mark Manson: Argues for choosing what truly matters and accepting imperfection, offering a different lens on freedom than relentless self-optimization.  
 * **[🦁🫀 Daring Greatly: How the Courage to Be Vulnerable Transforms the Way We Live, Love, Parent, and Lead](./daring-greatly-how-the-courage-to-be-vulnerable-transforms-the-way-we-live-love-parent-and-lead.md)** by Brené Brown: Emphasizes vulnerability, empathy, and courage as strengths, a different perspective than pure toughness.  
-* ⏳ **Four Thousand Weeks: Time Management for Mortals** by Oliver Burkeman: Encourages accepting our finite time and limitations, questioning the relentless pursuit of productivity and "getting everything done."  
+* ⏳ Four Thousand Weeks by Oliver Burkeman: Encourages accepting our finite time and limitations, questioning the relentless pursuit of productivity and "getting everything done."  
 * **[🕊️🤝 Nonviolent Communication: A Language of Life](./nonviolent-communication.md)** by Marshall Rosenberg: Focuses on compassionate communication and understanding needs (yours and others') as a path to connection and resolving conflict, contrasting with a purely self-focused discipline model.  
   
 ### 🚀 Creatively Related Books (Themes of Stoicism, Routine, Freedom)  

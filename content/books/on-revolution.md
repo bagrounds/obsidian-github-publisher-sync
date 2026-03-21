@@ -50,7 +50,7 @@ affiliate link: https://amzn.to/45qFakd
   
 * 📖 **Citizens: A Chronicle of the French Revolution** by Simon Schama: 🇫🇷 This narrative history offers a more sympathetic and nuanced account of the French Revolution, emphasizing the revolutionary fervor and popular participation that Arendt tends to downplay.  
 * 📖 **The Wretched of the Earth** by Frantz Fanon: 🌍 Fanon provides a powerful counterpoint to Arendt's focus on the "political," arguing for the necessity of revolutionary violence in the face of colonial oppression and the importance of addressing the psychological and social wounds of colonization.  
-* 📖 **A People's History of the United States** by Howard Zinn: 🇺🇸 Zinn's work offers a bottom-up perspective on American history, highlighting the experiences of marginalized groups and challenging the celebratory narrative of the American founding that Arendt, at times, seems to endorse.  
+* A People's History of the United States by Howard Zinn: 🇺🇸 Zinn's work offers a bottom-up perspective on American history, highlighting the experiences of marginalized groups and challenging the celebratory narrative of the American founding that Arendt, at times, seems to endorse.  
 * 📖 **The State and Revolution** by Vladimir Lenin: ☭ This classic Marxist text presents a starkly different vision of revolution, one focused on the seizure of state power by the proletariat and the establishment of a socialist society, a perspective Arendt vehemently critiques.  
   
 ### 🎭 Creative Connections: The Spirit of Revolution in Fiction  

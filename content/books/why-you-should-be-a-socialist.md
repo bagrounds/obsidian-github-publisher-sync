@@ -45,11 +45,11 @@ Robinson's approach is characterized by its direct address to skeptics 🗣️ a
 * ✍️ **An Inheritance for Our Times: Principles and Politics of Democratic Socialism** edited by Gregory Smulewicz-Zucker and Michael J. Thompson: A collection of essays from various writers discussing the principles and politics of democratic socialism today 🌍.  
 * 📈 **Economic Democracy: A Viable Alternative to Capitalism** by David Schweickart: Presents a model of market socialism based on worker self-management and social control of investment 💰.  
 * 📕 **Socialism** by Michael Harrington: Provides a broad overview of the socialist movement's history, triumphs 🏆, and tragedies 🎭, focusing on democratic socialism.  
-* 📜 **A People's History of the United States** by Howard Zinn: Chronicles American history from the perspective of marginalized groups and social movements ✊🏿, often highlighting class conflict ⚔️ and critiques of the status quo 🛡️.  
+* A People's History of the United States by Howard Zinn: Chronicles American history from the perspective of marginalized groups and social movements ✊🏿, often highlighting class conflict ⚔️ and critiques of the status quo 🛡️.  
   
 ### 🆚 Contrasting Books (Critiquing Socialism/Advocating Capitalism/Right Perspectives)  
   
-* 📕 **The Road to Serfdom** by F.A. Hayek: Argues that central planning and socialist policies inevitably lead to totalitarianism ⛓️ and the loss of individual freedom 🕊️.  
+* 📕 The Road to Serfdom by F.A. Hayek: Argues that central planning and socialist policies inevitably lead to totalitarianism ⛓️ and the loss of individual freedom 🕊️.  
 * 📕 **Socialism: An Economic and Sociological Analysis** by Ludwig von Mises: A comprehensive critique arguing that socialist economies are inherently inefficient 📉 due to the impossibility of economic calculation without market prices 💲.  
 * 📕 **Capitalism and Freedom** by Milton Friedman: Advocates for free markets 📈 and limited government intervention as the basis for economic prosperity 💰 and individual liberty 🕊️.  
 * 📜 **The Wealth of Nations** by Adam Smith: A foundational text of classical economics, arguing that individual self-interest in a free market benefits society as a whole 👍.  

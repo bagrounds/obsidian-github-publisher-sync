@@ -183,6 +183,91 @@ export const generateImageWithGemini: ImageGenerator = async (
     ? generateWithImagen(apiKey, model, prompt)
     : generateWithGeminiContent(apiKey, model, prompt);
 
+interface CloudflareApiResponse {
+  readonly result?: { readonly image?: string };
+  readonly success: boolean;
+  readonly errors?: readonly { readonly message: string }[];
+}
+
+export const generateWithCloudflare = async (
+  apiToken: string,
+  accountId: string,
+  prompt: string,
+  model: string = "@cf/black-forest-labs/flux-1-schnell",
+  steps: number = 4,
+): Promise<{ readonly data: Buffer; readonly mimeType: string }> => {
+  const url = `https://api.cloudflare.com/client/v4/accounts/${accountId}/ai/run/${model}`;
+
+  const response = await fetch(url, {
+    method: "POST",
+    headers: {
+      Authorization: `Bearer ${apiToken}`,
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({ prompt, steps }),
+  });
+
+  if (!response.ok) {
+    const text = await response.text();
+    throw new Error(
+      `Cloudflare API error ${response.status}: ${text}`,
+    );
+  }
+
+  const json = (await response.json()) as CloudflareApiResponse;
+
+  if (!json.success || !json.result?.image) {
+    const errorMsg = json.errors?.map((e) => e.message).join("; ") ?? "Unknown error";
+    throw new Error(`Cloudflare image generation failed: ${errorMsg}`);
+  }
+
+  return {
+    data: Buffer.from(json.result.image, "base64"),
+    mimeType: "image/jpeg",
+  };
+};
+
+export const makeCloudflareGenerator = (
+  accountId: string,
+  model: string = "@cf/black-forest-labs/flux-1-schnell",
+): ImageGenerator => async (apiToken, _model, prompt) =>
+  generateWithCloudflare(apiToken, accountId, prompt, model);
+
+export interface ImageProviderConfig {
+  readonly apiKey: string;
+  readonly model: string;
+  readonly generator: ImageGenerator;
+}
+
+export const resolveImageProvider = (env: Record<string, string | undefined>): ImageProviderConfig => {
+  const cfToken = env.CLOUDFLARE_API_TOKEN;
+  const cfAccountId = env.CLOUDFLARE_ACCOUNT_ID;
+  const cfModel = env.CLOUDFLARE_IMAGE_MODEL ?? "@cf/black-forest-labs/flux-1-schnell";
+
+  if (cfToken && cfAccountId) {
+    return {
+      apiKey: cfToken,
+      model: cfModel,
+      generator: makeCloudflareGenerator(cfAccountId, cfModel),
+    };
+  }
+
+  const geminiKey = env.GEMINI_API_KEY;
+  const geminiModel = env.IMAGE_GEMINI_MODEL ?? "gemini-3.1-flash-image-preview";
+
+  if (geminiKey) {
+    return {
+      apiKey: geminiKey,
+      model: geminiModel,
+      generator: generateImageWithGemini,
+    };
+  }
+
+  throw new Error(
+    "No image generation credentials found. Set CLOUDFLARE_API_TOKEN + CLOUDFLARE_ACCOUNT_ID, or GEMINI_API_KEY.",
+  );
+};
+
 export const processNote = async (
   notePath: string,
   attachmentsDir: string,

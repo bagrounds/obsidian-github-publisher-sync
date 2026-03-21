@@ -1,21 +1,14 @@
 #!/usr/bin/env npx tsx
 
 import path from "node:path";
-import { backfillImages } from "./lib/blog-image.ts";
-
-const DEFAULT_IMAGE_MODEL = "gemini-3.1-flash-image-preview";
+import { backfillImages, resolveImageProvider } from "./lib/blog-image.ts";
 
 const log = (data: Record<string, unknown>): void =>
   console.log(JSON.stringify({ timestamp: new Date().toISOString(), ...data }));
 
 const main = async (): Promise<void> => {
-  const apiKey = process.env.GEMINI_API_KEY;
-  if (!apiKey) {
-    console.error("❌ GEMINI_API_KEY is required");
-    process.exit(1);
-  }
+  const provider = resolveImageProvider(process.env as Record<string, string | undefined>);
 
-  const model = process.env.IMAGE_GEMINI_MODEL ?? DEFAULT_IMAGE_MODEL;
   const repoRoot = path.resolve(import.meta.dirname, "..");
   const attachmentsDir =
     process.env.ATTACHMENTS_DIR ?? path.join(repoRoot, "attachments");
@@ -29,7 +22,7 @@ const main = async (): Promise<void> => {
 
   log({
     event: "backfill_start",
-    model,
+    model: provider.model,
     attachmentsDir,
     directories: directories.map((d) => d.id),
   });
@@ -37,8 +30,9 @@ const main = async (): Promise<void> => {
   const result = await backfillImages({
     directories,
     attachmentsDir,
-    apiKey,
-    model,
+    apiKey: provider.apiKey,
+    model: provider.model,
+    generate: provider.generator,
     onProgress: log,
   });
 

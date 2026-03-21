@@ -3,17 +3,15 @@
 import path from "node:path";
 import {
   processNote,
-  generateImageWithGemini,
+  resolveImageProvider,
 } from "./lib/blog-image.ts";
-
-const DEFAULT_IMAGE_MODEL = "gemini-3.1-flash-image-preview";
 
 const log = (data: Record<string, unknown>): void =>
   console.log(JSON.stringify({ timestamp: new Date().toISOString(), ...data }));
 
 const parseArgs = (
   argv: readonly string[],
-): { notePath: string; model: string } => {
+): { notePath: string } => {
   const args = argv.slice(2);
   const flagValue = (flag: string): string | undefined => {
     const idx = args.indexOf(flag);
@@ -23,27 +21,18 @@ const parseArgs = (
   };
 
   const notePath = flagValue("--note") ?? args.find((a) => !a.startsWith("--")) ?? "";
-  const model =
-    flagValue("--model") ??
-    process.env.IMAGE_GEMINI_MODEL ??
-    DEFAULT_IMAGE_MODEL;
 
   if (!notePath) {
-    console.error("Usage: generate-blog-image.ts --note <path> [--model <model>]");
+    console.error("Usage: generate-blog-image.ts --note <path>");
     process.exit(1);
   }
 
-  return { notePath, model };
+  return { notePath };
 };
 
 const main = async (): Promise<void> => {
   const config = parseArgs(process.argv);
-  const apiKey = process.env.GEMINI_API_KEY;
-
-  if (!apiKey) {
-    console.error("❌ GEMINI_API_KEY is required");
-    process.exit(1);
-  }
+  const provider = resolveImageProvider(process.env as Record<string, string | undefined>);
 
   const repoRoot = path.resolve(import.meta.dirname, "..");
   const attachmentsDir =
@@ -56,16 +45,16 @@ const main = async (): Promise<void> => {
   log({
     event: "generate_image_start",
     notePath,
-    model: config.model,
+    model: provider.model,
     attachmentsDir,
   });
 
   const result = await processNote(
     notePath,
     attachmentsDir,
-    apiKey,
-    config.model,
-    generateImageWithGemini,
+    provider.apiKey,
+    provider.model,
+    provider.generator,
   );
 
   if (result.skipped) {

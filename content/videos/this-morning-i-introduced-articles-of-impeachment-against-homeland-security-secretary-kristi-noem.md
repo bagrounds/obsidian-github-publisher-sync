@@ -45,7 +45,7 @@ youtube: https://youtu.be/1cUALRGN_d0
 ### ↔️ Similar  
   
 * 📑 Immigration Enforcement and the Constitution by Gabriel J. Chin examines the legal boundaries and frequent oversteps of federal agencies.  
-* 🚔 Border Wars by Julie Hirschfeld Davis and Michael D. Shear provides a detailed look at the political maneuvering behind recent aggressive immigration policies.  
+* [🧱⚔️🚶‍♀️ Border Wars: Inside Trump's Assault on Immigration](../books/border-wars-inside-trumps-assault-on-immigration.md) by Julie Hirschfeld Davis and Michael D. Shear provides a detailed look at the political maneuvering behind recent aggressive immigration policies.  
   
 ### 🆚 Contrasting  
   

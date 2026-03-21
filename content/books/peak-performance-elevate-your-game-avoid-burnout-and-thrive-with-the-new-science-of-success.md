@@ -58,7 +58,7 @@ CTA: 🚀 Maximize potential.
   
 ### ➖ Contrasting Perspectives (Alternative Views on Success & Work)  
 * **[😴📈 Rest: Why You Get More Done When You Work Less](./rest-why-you-get-more-done-when-you-work-less.md)** by Alex Soojung-Kim Pang: Argues for the strategic importance of rest, challenging the idea that relentless work is the key to productivity.  
-* ⏳ **Four Thousand Weeks: Time Management for Mortals** by Oliver Burkeman: Critiques the productivity-obsession culture and encourages embracing limitations for a more meaningful life.  
+* ⏳ Four Thousand Weeks by Oliver Burkeman: Critiques the productivity-obsession culture and encourages embracing limitations for a more meaningful life.  
 * 🦥 **Laziness Does Not Exist** by Devon Price: Challenges conventional notions of productivity and laziness, arguing for self-compassion and understanding systemic barriers.  
 * **[📵 How to Do Nothing: Resisting the Attention Economy](./how-to-do-nothing-resisting-the-attention-economy.md)** by Jenny Odell: Advocates for disengagement from the attention economy and reclaiming focus for deeper connection and observation.  
   

@@ -82,7 +82,7 @@ affiliate link: https://amzn.to/4hdvb76
 ### Related  
 * [🤔🐇🐢 Thinking, Fast and Slow](./thinking-fast-and-slow.md) by Daniel Kahneman  
 * [📱🧠 The Shallows: What the Internet Is Doing to Our Brains](./the-shallows-what-the-internet-is-doing-to-our-brains.md) by Nicholas Carr  
-* 📣 Propaganda by Edward Bernays  
+* [📢 Propaganda](./propaganda.md) by Edward Bernays  
   
 ## 🫵 What Do You Think?  
 ❓ What single aspect of "lie machines" do you find most concerning for the future of democracy, and what individual action do you believe is most effective in combating digital misinformation? Share your thoughts below!

@@ -4,10 +4,10 @@ aliases:
   - 👹⏱️🇺🇸➡️💰 Why the Trump Administration Is Rushing the Budget Reconciliation Bill Through
 title: 👹⏱️🇺🇸➡️💰 Why the Trump Administration Is Rushing the Budget Reconciliation Bill Through
 URL: https://bagrounds.org/videos/why-the-trump-administration-is-rushing-the-budget-reconciliation-bill-through
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: Heather Cox Richardson
-tags: 
+tags:
 youtube: https://youtu.be/NpLB33tBsZU
 ---
 [Home](../index.md) > [Videos](./index.md) | [🏛️🇺🇸📖 Heather Cox Richardson](../people/heather-cox-richardson.md)  
@@ -34,6 +34,6 @@ youtube: https://youtu.be/NpLB33tBsZU
 * 🛂 **Borderlands/La Frontera: The New Mestiza** by Gloria Anzaldúa. Explores physical and psychological borders, particularly the U.S.-Mexico border. Offers a multifaceted perspective on identity, culture, and the lived experience in border regions, directly addressing immigration themes.  
 * **[🚫📄🇺🇸 The Undocumented Americans](../books/the-undocumented-americans.md)** by Karla Cornejo Villavicencio. Provides intimate, humanizing portrayals of undocumented immigrants' lives across the U.S. Offers personal stories that contextualize abstract policy discussions on immigration enforcement.  
 * 🛤️ **American Dirt** by Jeanine Cummins. A widely read novel about a family fleeing cartel violence and seeking asylum. While debated, it dramatically depicts the perilous journey many migrants face and sparked critical conversations about migration narratives.  
-* 💰 **War Is a Racket** by Smedley D. Butler. A critical exposé by a decorated Marine general on the profit motives behind wars. Directly questions the economic underpinnings of military actions and spending.  
+* **[⚔️💰 War Is a Racket](../books/war-is-a-racket.md)** by Smedley D. Butler. A critical exposé by a decorated Marine general on the profit motives behind wars. Directly questions the economic underpinnings of military actions and spending.  
 * ⚙️ **The Military-Industrial Complex** by Alex Roland. Examines President Eisenhower's farewell address and its warning about the military-industrial complex. Delves into the historical development and implications of the powerful nexus between the military and defense industries, providing context for large military budgets.  
 * 🛡️ **National Insecurity: The Cost of American Militarism** by Melvin A. Goodman. Critiques the growth of U.S. military spending and its impact on national security and foreign policy. An insider's perspective on military budget decisions and their consequences.

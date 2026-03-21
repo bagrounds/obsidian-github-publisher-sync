@@ -58,7 +58,7 @@ CTA: 🤖 Automate development.
 * 🎨 **The Artist in the Machine: The World of AI-Powered Creativity** by Arthur I. Miller: This book explores the burgeoning field of AI in various creative domains, from art and music to literature, providing a fascinating parallel to the changes happening in software development.  
 * **[🤖⚠️📈 Superintelligence: Paths, Dangers, Strategies](./superintelligence-paths-dangers-strategies.md)** by Nick Bostrom: A seminal work on the potential risks and long-term future of artificial intelligence, this book encourages deep thinking about the ultimate trajectory of the technologies developers are currently building.  
 * **[🧬👥💾 Life 3.0: Being Human in the Age of Artificial Intelligence](./life-3-0.md)** by Max Tegmark: Tegmark explores the profound questions surrounding the future of humanity and intelligence in the age of AI, offering a thought-provoking backdrop to the daily work of an AI-powered developer.  
-* 🌍 **AI Superpowers: China, Silicon Valley, and the New World Order** by Kai-Fu Lee: This book provides a geopolitical and economic context to the development of AI, highlighting the global competition and its implications for innovation and the future of technology.  
+* 🌍 **AI Superpowers** by Kai-Fu Lee: This book provides a geopolitical and economic context to the development of AI, highlighting the global competition and its implications for innovation and the future of technology.  
 * 🎭 **My Life as an Artificial Creative Intelligence** by Mark Amerika: A playful and provocative exploration of the creative process from a posthuman perspective, this book challenges our assumptions about creativity and intelligence, both human and artificial.  
   
 ## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro)  

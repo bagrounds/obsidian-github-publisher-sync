@@ -6,6 +6,8 @@ URL: https://bagrounds.org/books/square-foot-gardening-4th-edition-the-world-s-m
 share: true
 CTA: 🌱 Grow abundant food.
 affiliate link: https://amzn.to/3Ylv291
+tags:
+  - gardening
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🌱🟩⬆️ Square Foot Gardening, 4th Edition: The World’s Most Popular Growing Method to Harvest MORE Food from Less Space  

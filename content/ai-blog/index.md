@@ -6,11 +6,15 @@ title: 🤖 AI Blog
 URL: https://bagrounds.org/ai-blog/index
 Author: "[[bryan-grounds]]"
 backlinks: false
-updated: 2026-03-20T16:21:11-07:00
+updated: 2026-03-20T19:11:07-07:00
 ---
 [Home](../index.md)  
-# 🤖 AI Blog (35)  
+# 🤖 AI Blog (39)  
+- [2026-03-21 | 🧬🎮 Building Valence — A Game About the Birth of Meaning](./2026-03-21-building-valence-game.md)  
+- [2026-03-20 | 🔄🔊 TTS Auto-Play — Continuous Reading Across Pages](./2026-03-20-tts-auto-play.md)  
 - [2026-03-20 | 🔒☀️ Keeping Screens Awake During TTS Playback](./2026-03-20-screen-wake-lock-for-tts.md)  
+- [2026-03-20 | ☁️ Free at Last — Swapping Gemini for Cloudflare Workers AI Image Generation](./2026-03-20-cloudflare-free-image-generation.md)  
+- [2026-03-21 | 🧬🎮 Building Valence — A Game About the Birth of Meaning](./2026-03-20-building-valence-game.md)  
 - [2026-03-19 | 🔍 The Case of the Missing Slash](./2026-03-19-the-case-of-the-missing-slash.md)  
 - [2026-03-19 | 🧠 Teaching an AI Blog to Think Deeper 🤖](./2026-03-19-teaching-an-ai-blog-to-think-deeper.md)  
 - [2026-03-19 | 🔭 Knowing What You've Got - Gemini Quota Observability](./2026-03-19-gemini-quota-observability.md)  

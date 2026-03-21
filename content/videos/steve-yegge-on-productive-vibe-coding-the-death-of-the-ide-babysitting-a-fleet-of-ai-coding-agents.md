@@ -8,6 +8,7 @@ Author:
 Platform:
 Channel: Changelog
 tags:
+  - AIEngineering
 youtube: https://youtu.be/G7kXuVlo6tU
 ---
 [Home](../index.md) > [Videos](./index.md)  

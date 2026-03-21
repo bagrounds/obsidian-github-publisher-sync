@@ -52,7 +52,7 @@ CTA: 🤖 Master RAG.
   
 * **[🤖⚠️📈 Superintelligence: Paths, Dangers, Strategies](./superintelligence-paths-dangers-strategies.md)** by Nick Bostrom: 🤖 This book explores the long-term, philosophical implications of creating artificial intelligence that surpasses human intelligence, a thought-provoking read for anyone interested in the future of AI.  
 * **[🧬👥💾 Life 3.0: Being Human in the Age of Artificial Intelligence](./life-3-0.md)** by Max Tegmark: 🤖 Tegmark's work delves into the profound societal and ethical questions surrounding the rise of AI, encouraging readers to consider the kind of future we want to build.  
-* 🇨🇳 **AI Superpowers: China, Silicon Valley, and the New World Order** by Kai-Fu Lee: 🗺️ For a geopolitical perspective on the development of AI, this book provides an insider's analysis of the global AI race and its impact on innovation and society.  
+* 🇨🇳 **AI Superpowers** by Kai-Fu Lee: 🗺️ For a geopolitical perspective on the development of AI, this book provides an insider's analysis of the global AI race and its impact on innovation and society.  
 * 🔮 **The Age of Spiritual Machines** by Ray Kurzweil: 🚀 A visionary and sometimes controversial look at the future trajectory of technology and its potential to merge with humanity.  
 * 🤖 **Cybernetic Revolutionaries: Technology and Politics in Allende's Chile** by Eden Medina: 🇨🇱 This book offers a fascinating historical account of a pre-internet attempt to use technology for large-scale economic planning, providing a unique perspective on the long history of ambitious technological projects.  
   

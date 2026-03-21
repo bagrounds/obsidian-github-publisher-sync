@@ -49,7 +49,7 @@ youtube: https://youtu.be/9ws1r6CaSXs
   
 ### ↔️ Similar  
   
-* 🌵 Border Wars by Julie Hirschfeld Davis and Michael D. Shear (Simon & Schuster) details the political shifts and internal battles within the Trump administration regarding immigration enforcement.  
+* [🧱⚔️🚶‍♀️ Border Wars: Inside Trump's Assault on Immigration](../books/border-wars-inside-trumps-assault-on-immigration.md) by Julie Hirschfeld Davis and Michael D. Shear (Simon & Schuster) details the political shifts and internal battles within the Trump administration regarding immigration enforcement.  
 * 🏜️ The Line Becomes a River by Francisco Cantú (Riverhead Books) provides an intimate look at the dehumanizing nature of the enforcement system.  
   
 ### 🆚 Contrasting  

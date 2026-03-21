@@ -74,7 +74,7 @@ affiliate link: https://amzn.to/4b9c7Wz
   
 ### ↔️ Contrasting  
 * 📖 The Millionaire Next Door by Thomas J. Stanley and William D. Danko  
-* 📖 Outliers: The Story of Success by Malcolm Gladwell  
+* 📖 [⭐ Outliers](./outliers.md): The Story of Success by Malcolm Gladwell  
   
 ### 🔗 Related  
 * 📖 The Price of Privilege by Madeline Levine  

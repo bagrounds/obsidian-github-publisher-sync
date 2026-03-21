@@ -82,7 +82,7 @@ affiliate link: https://amzn.to/48UVuwS
 ### 🆚 Contrasting  
 * 📖 Austerity: The History of a Dangerous Idea by Mark Blyth  
 * 📖 Capitalism and Freedom by Milton Friedman  
-* 📖 Road to Serfdom by F.A. Hayek  
+* 📖 The Road to Serfdom by F.A. Hayek  
   
 ### ➕ Related  
 * 📖 The Deluge: The Great War, America and the Remaking of the Global Order, 1916-1931 by Adam Tooze  

@@ -75,7 +75,7 @@ affiliate link: https://amzn.to/4p3Q9bL
 ### Similar  
 * Washington Rules: America's Path to Permanent War by Andrew Bacevich  
 * The Limits of Power: The End of American Exceptionalism by Andrew Bacevich  
-* War Is a Racket by Smedley D. Butler  
+* [⚔️💰 War Is a Racket](./war-is-a-racket.md) by Smedley D. Butler  
   
 ### Contrasting  
 * The Grand Chessboard: American Primacy and Its Geostrategic Imperatives by Zbigniew Brzezinski  

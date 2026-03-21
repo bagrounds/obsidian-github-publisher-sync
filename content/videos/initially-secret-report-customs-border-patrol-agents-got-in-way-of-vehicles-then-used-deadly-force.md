@@ -47,7 +47,7 @@ youtube: https://youtu.be/izonttr5Tp4
   
 ### ↔️ Similar  
   
-* 🛡️ Border Wars by Julie Hirschfeld Davis and Michael D. Shear explores the internal politics and enforcement tactics of modern border agencies.  
+* [🧱⚔️🚶‍♀️ Border Wars: Inside Trump's Assault on Immigration](../books/border-wars-inside-trumps-assault-on-immigration.md) by Julie Hirschfeld Davis and Michael D. Shear explores the internal politics and enforcement tactics of modern border agencies.  
 * 🌵 The Line Becomes a River by Francisco Cantú provides a firsthand look at the culture and moral complexities of serving in the Border Patrol.  
   
 ### 🆚 Contrasting  

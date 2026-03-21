@@ -57,7 +57,7 @@ youtube: https://youtu.be/bQiccw_xCq0
 ### 🆚 Contrasting  
   
 * ⚖️ The Case for Trump by Victor Davis Hanson provides a defense of the Trump administration's policies and political strategy from a conservative viewpoint.  
-* 🛂 Border Wars by Julie Hirschfeld Davis and Michael D. Shear examines the internal pressures and policy debates that shaped immigration enforcement during the Trump era.  
+* [🧱⚔️🚶‍♀️ Border Wars: Inside Trump's Assault on Immigration](../books/border-wars-inside-trumps-assault-on-immigration.md) by Julie Hirschfeld Davis and Michael D. Shear examines the internal pressures and policy debates that shaped immigration enforcement during the Trump era.  
   
 ### 🎨 Creatively Related  
   

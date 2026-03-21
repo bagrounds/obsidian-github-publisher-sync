@@ -4,10 +4,10 @@ aliases:
   - ➡️⚖️💪 Our work continues, without fear or favor
 title: ➡️⚖️💪 Our work continues, without fear or favor
 URL: https://bagrounds.org/videos/our-work-continues-without-fear-or-favor
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: PBS NewsHour
-tags: 
+tags:
 youtube: https://youtu.be/xijHdKwWv3I
 ---
 [Home](../index.md) > [Videos](./index.md)  
@@ -25,7 +25,7 @@ This video presents a singular perspective from The NewsHour, directly impacted 
 * **Public Opinion:** 📊 What is the broader public sentiment regarding federal funding for public broadcasting, and how does it vary across different demographics?  
   
 ## 📚 Book Recommendations  
-* Public Broadcasting and the Public Interest 📖: Explores the history and mission of public broadcasting in the United States.  
-* The Business of News 📰: Discusses various funding models and challenges faced by news organizations, including non-profit and public media.  
+* [📢💡 Public Broadcasting and the Public Interest](../books/public-broadcasting-and-the-public-interest.md) explores the history and mission of public broadcasting in the United States.  
+* The Business of News 📰 discusses various funding models and challenges faced by news organizations, including non-profit and public media.  
 * Democracy's Discontent: America in Search of a Public Philosophy 🇺🇸: Examines the role of institutions like public broadcasting in a democratic society.  
 * Rural America in the 21st Century 🌾: Provides context on the challenges and unique needs of rural communities, which are mentioned as being particularly affected by the funding cuts.

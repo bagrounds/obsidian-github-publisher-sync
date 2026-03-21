@@ -167,7 +167,7 @@ Parenting is an ongoing process of forecasting and adapting.
 By adopting "Forecasting Parenthood," you'll move beyond rigid, one-size-fits-all solutions to become a more responsive, effective, and ultimately, a more confident parent, equipped to guide your child through their unique and wonderful journey of development.  
   
 ## 💬 Prompt 5  
-> ✨ Distill this advice into a Poor Richard's Almanack style aphorism.  
+> ✨ Distill this advice into a [🗓️💡 Poor Richard's Almanack](../books/poor-richards-almanack.md) style aphorism.  
   
 **👵 A wise parent, like a good gardener, tends the soil not by rigid rule, but by ever-watching needs.**  
   

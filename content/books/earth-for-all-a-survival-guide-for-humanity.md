@@ -75,7 +75,7 @@ affiliate link: https://amzn.to/4qSCw0f
 ### 🤝 Similar  
 * 🌱 [📉🌍⏳ Limits to Growth: The 30-Year Global Update](./limits-to-growth-the-30-year-global-update.md) by Donella H. Meadows, Dennis L. Meadows, Jørgen Randers, William W. Behrens III (foundational work)  
 * [🍩🌍 Doughnut Economics: Seven Ways to Think Like a 21st-Century Economist](./doughnut-economics-seven-ways-to-think-like-a-21st-century-economist.md) by Kate Raworth (redefining economic goals)  
-* ⬇️ Less Is More: How Degrowth Will Save the World by Jason Hickel (critique of growth and alternative models)  
+* [📉🌎 Less is More: How Degrowth Will Save the World](./less-is-more-how-degrowth-will-save-the-world.md) by Jason Hickel (critique of growth and alternative models)  
   
 ### ⚔️ Contrasting  
 * [💡🔬🧑‍🤝‍🧑📈 Enlightenment Now: The Case for Reason, Science, Humanism, and Progress](./enlightenment-now-the-case-for-reason-science-humanism-and-progress.md) by Steven Pinker (argues for significant human progress and technological optimism)  

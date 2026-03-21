@@ -59,7 +59,7 @@ A: 💡 *Romanticizing* the past and glorifying eras of *violence* and *injustic
   
 ### Contrasting Books (Alternative Historical Perspectives)  
   
-* 📚 **A People's History of the United States** by Howard Zinn. This classic work offers a contrasting perspective by telling American history from the viewpoint of marginalized peoples, rather than the political or military elite, challenging the *glorified* national narrative \[[18:58](http://www.youtube.com/watch?v=NntPWHpkPqQ&t=1138)].  
+* 📚 A People's History of the United States by Howard Zinn. This classic work offers a contrasting perspective by telling American history from the viewpoint of marginalized peoples, rather than the political or military elite, challenging the *glorified* national narrative \[[18:58](http://www.youtube.com/watch?v=NntPWHpkPqQ&t=1138)].  
 * 📚 **The Rediscovery of America** by Ned Blackhawk. This book provides a major reinterpretation of US history by focusing on the deep significance of *Indigenous history* and *settler colonial systems*, broadening the scope of the harm discussed in the video.  
 * 📚 **Appalachian Reckoning** edited by Meredith McCarroll and others. A collection of essays and creative work that responds to the simplistic narratives of the region, it challenges a one-dimensional view of the white working class, which is often a key demographic in contemporary political narratives of *resistance* \[[00:30](http://www.youtube.com/watch?v=NntPWHpkPqQ&t=30)].  
   

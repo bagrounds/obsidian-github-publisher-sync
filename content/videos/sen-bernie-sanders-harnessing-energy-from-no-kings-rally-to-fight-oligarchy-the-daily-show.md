@@ -63,7 +63,7 @@ A: 🤖 The rapid growth of AI and robotics is expected to transform the world a
 ### Contrasting Perspectives  
 * **Basic Economics** by Thomas Sowell: 📈 **A** classic text that provides a lucid explanation of free-market principles, arguing that many government interventions and regulations can lead to unintended, negative economic consequences.  
 * **Capitalism and Freedom** by Milton Friedman: 🛡️ **A** foundational defense of *laissez-faire* capitalism, arguing that economic freedom is a prerequisite for political freedom, directly contrasting the video's critique of corporate power.  
-* **The Road to Serfdom** by F.A. Hayek: ⛔️ **Argues** that government control over economic planning and resources, often stemming from well-intentioned policy, inevitably leads to a loss of individual liberty and authoritarianism.  
+* The Road to Serfdom by F.A. Hayek: ⛔️ **Argues** that government control over economic planning and resources, often stemming from well-intentioned policy, inevitably leads to a loss of individual liberty and authoritarianism.  
   
 ### Creatively Related  
 * **The New Jim Code: Technology, Race, and Social Justice** by Ruha Benjamin: 💻 Explores how new technologies, including AI, can reinforce social hierarchies and deepen inequality, providing context for the video's concerns about AI's effect on the working class.  

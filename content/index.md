@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-03-21T09:47:30-07:00
+updated: 2026-03-21T10:34:59-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -49,7 +49,9 @@ updated: 2026-03-21T09:47:30-07:00
 - [🧬 Valence](./games/valence.md)  
   
   
-## [📚 Books](./books/index.md) (956)  
+## [📚 Books](./books/index.md) (957)  
+- [🧠📖✨ Children of Memory](./books/children-of-memory.md)  
+- [🕷️⏳ Children of Time](./books/children-of-time.md)  
 - [✨🎭🧘‍♂️🌌 The Creative Act: A Way of Being](./books/the-creative-act.md)  
 - [🪄 Big Magic: Creative Living Beyond Fear](./books/big-magic.md)  
 - [🐦🕊️ Bird by Bird: Some Instructions on Writing and Life](./books/bird-by-bird.md)  
@@ -58,8 +60,6 @@ updated: 2026-03-21T09:47:30-07:00
 - [🫥🇺🇸😡💔 Strangers in Their Own Land: Anger and Mourning on the American Right](./books/strangers-in-their-own-land.md)  
 - [🗳️🕊️🇺🇸 Democracy in America](./books/democracy-in-america.md)  
 - [🔁🤪 Catch-22](./books/catch-22.md)  
-- [🤔🐇🐢 Thinking, Fast and Slow](./books/thinking-fast-and-slow.md)  
-- [⚡🚫💭 Blink: The Power of Thinking Without Thinking](./books/blink-the-power-of-thinking-without-thinking.md)  
   
   
 ## [📺 Videos](./videos/index.md) (699)  

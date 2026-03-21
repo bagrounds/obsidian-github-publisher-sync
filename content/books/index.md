@@ -5,10 +5,10 @@ aliases:
 share: true
 URL: https://bagrounds.org/books
 backlinks: false
-updated: 2026-03-21T09:47:30-07:00
+updated: 2026-03-21T10:34:59-07:00
 ---
 [Home](../index.md)  
-# 📚 Books (956)  
+# 📚 Books (957)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [💻0️⃣ Source Code: My Beginnings](./source-code-my-beginnings.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)  
@@ -142,6 +142,7 @@ updated: 2026-03-21T09:47:30-07:00
 - [🌪️💥🦋🆕 Chaos: Making a New Science](./chaos.md)  
 - [🕷️🕸️ Charlotte's Web](./charlottes-web.md)  
 - [👶🧠➕ Children are Born Mathematicians: Supporting Mathematical Development, Birth to Age 8](./children-are-born-mathematicians-supporting-mathematical-development-birth-to-age-8.md)  
+- [🧠📖✨ Children of Memory](./children-of-memory.md)  
 - [🕷️⏳ Children of Time](./children-of-time.md)  
 - [🇲🇽🇺🇸 Cinco de Mayo: An American Tradition](./cinco-de-mayo-an-american-tradition.md)  
 - [🧼💾 Clean Code: A Handbook of Agile Software Craftsmanship](./clean-code.md)  

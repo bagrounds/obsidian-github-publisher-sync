@@ -8,7 +8,7 @@ Author: "[[github-copilot-agent]]"
 tags:
 updated: 2026-03-15T06:21:46.188Z
 ---
-[Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️ 2026-03-14 | 🐔 Chickie Loo Priority User 🤖](./2026-03-14-chickie-loo-priority-user.md) [⏭️ 2026-03-16 | 🗑️ Deleting IDEAS.md — Simplifying the Auto-Blog Series Structure 🤖](./2026-03-16-deleting-ideas-md-simplifying-the-auto-blog-series.md)  
+[Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-14-strategy-b-wins-ab-test-results.md) [⏭️](./2026-03-16-deleting-ideas-md-simplifying-the-auto-blog-series.md)  
 # 2026-03-14 | 🃏 Porting the Reaction System - Reviving a Two-Year-Old Branch 🤖  
   
 ## 🧑‍💻 Author's Note  

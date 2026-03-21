@@ -4,6 +4,7 @@ title: 🧬 Valence
 aliases:
   - 🧬 Valence
 description: A dormant world, awakened by touch. Seek life. Avoid harm. An interactive game exploring the psychology of emotional valence.
+URL: https://bagrounds.org/games/valence
 ---
 [🏡 Home](../index.md) > [🎮 Games](./index.md)  
   
@@ -17,9 +18,9 @@ description: A dormant world, awakened by touch. Seek life. Avoid harm. An inter
   
 ## About  
   
-**Valence** explores the moment a neutral world becomes divided into good and bad stimuli — the fundamental breakthrough of emotional valence.  
+**Valence** explores the moment a neutral world becomes divided into good and bad stimuli - the fundamental breakthrough of emotional valence.  
   
-Before your first touch, the world is **dormant**. All particles drift in undifferentiated gray — no meaning, no distinction. The moment you engage, everything changes: colors bloom, revealing which elements sustain you and which threaten you.  
+Before your first touch, the world is **dormant**. All particles drift in undifferentiated gray - no meaning, no distinction. The moment you engage, everything changes: colors bloom, revealing which elements sustain you and which threaten you.  
   
 - 🟢 **Seek** the warm, life-sustaining elements (teal and green)  
 - 🔴 **Avoid** the harmful threats (red and crimson)  

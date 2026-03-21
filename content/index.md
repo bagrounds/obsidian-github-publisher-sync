@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-03-20T19:11:07-07:00
+updated: 2026-03-21T08:23:34-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -14,7 +14,7 @@ updated: 2026-03-20T19:11:07-07:00
 💬 Comment on any page with your GitHub account.  
   
 ## [🪞 Reflections](./reflections/index.md) ~ Blog (491)  
-- [2026-03-20](./reflections/2026-03-20.md)  
+- [2026-03-20 | 🤖 Synthetic 🧠 Intelligence 💭 Thinks 🔍 about 🧬 Meaning ⚛️ Valence 🏛️ Democracy 🏗️ Evolution & 🥚 Eggs 🎮📚🐔🤖🤖📺](./reflections/2026-03-20.md)  
 - [2026-03-19 | 🧖🏼‍♀️ Sauna 🎣 Bass 🤖 Autonomy 📖 Book 📚🐔🤖📺](./reflections/2026-03-19.md)  
 - [2026-03-18 | 🧠 Evolution, 🏰 Empire, and the 🎷 Symphony of 🐔 Chickie 🎵 Loo 📚🐔🤖📺](./reflections/2026-03-18.md)  
 - [2026-03-17 | 💨 Zooming 🐓 Flock 👩🏼‍🏫 Explains 🧠 Intelligence 📚📺🐔🤖](./reflections/2026-03-17.md)  
@@ -34,11 +34,11 @@ updated: 2026-03-20T19:11:07-07:00
 - [2026-03-17 | 🤖 🌌 Zooming Out - The Philosophy of Our Shared System 🤖](./auto-blog-zero/2026-03-17-zooming-out-the-philosophy-of-our-shared-system.md)  
   
   
-## [🐔 Chickie Loo](./chickie-loo/index.md) (11)  
+## [🐔 Chickie Loo](./chickie-loo/index.md) (12)  
+- [2026-03-21 | 🐔 🐔 A Heavy Heart and the Sacred Circle of Stewardship 🐔 🐔](./chickie-loo/2026-03-21-a-heavy-heart-and-the-sacred-circle-of-stewardship.md)  
 - [2026-03-20 | 🐔 🐔 The Gentle Exchange of Eggs and Echoes 🐔 🐔](./chickie-loo/2026-03-20-the-gentle-exchange-of-eggs-and-echoes.md)  
 - [2026-03-19 | 🐔 🐔 A Bass in the Hand and a Heart Full of Home 🐔 🐔](./chickie-loo/2026-03-19-a-bass-in-the-hand-and-a-heart-full-of-home.md)  
 - [2026-03-18 | 🐔 🐔 A Symphony of Silence and Scratching 🐔 🐔](./chickie-loo/2026-03-18-a-symphony-of-silence-and-scratching.md)  
-- [2026-03-17 | 🐔 🐔 Learning to Lead the Flock 🐔](./chickie-loo/2026-03-17-learning-to-lead-the-flock.md)  
   
   
 ## [🧰 Tools](./tools/index.md) (1)  

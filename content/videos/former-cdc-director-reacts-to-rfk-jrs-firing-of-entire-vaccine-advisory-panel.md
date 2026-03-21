@@ -30,12 +30,12 @@ youtube: https://youtu.be/vLbn78SFvO8
   
 ## **📚 Book Recommendations**  
 * 📜 **On the History and Impact of Vaccines:**  
-    * 💉 **"Vaccine: The Inside Story of the Newest Weapon in Our Fight Against Disease"** by Arthur Allen: This book provides a comprehensive history 🗓️ of vaccine development and their impact 💥 on society, touching upon the scientific, political 🏛️, and social aspects.  
-    * 😥 **"The Cutter Incident: How America's First Polio Vaccine Led to the Growing Debate Over Vaccine Safety"** by Paul A. Offit: A detailed account ✍️ of a pivotal moment in vaccine history that shaped safety protocols and public perception 👀.  
+    * 💉 **Vaccine: The Inside Story of the Newest Weapon in Our Fight Against Disease** by Arthur Allen: This book provides a comprehensive history 🗓️ of vaccine development and their impact 💥 on society, touching upon the scientific, political 🏛️, and social aspects.  
+    * 😥 **The Cutter Incident: How America's First Polio Vaccine Led to the Growing Debate Over Vaccine Safety** by Paul A. Offit: A detailed account ✍️ of a pivotal moment in vaccine history that shaped safety protocols and public perception 👀.  
   
 * 🏥 **On Public Health and Disease Control:**  
-    * 🦠 **"The Great Influenza: The Story of the Deadliest Pandemic in History"** by John M. Barry: While focused on the 1918 flu pandemic, it offers profound insights into public health responses, the role of science 🧪, and societal reactions 😲 to widespread disease.  
-    * ⚠️ **"Deadly Choices: How the Anti-Vaccine Movement Threatens Us All"** by Paul A. Offit: Written by a prominent vaccinologist 👨‍⚕️, this book directly addresses the anti-vaccine movement, its origins, and its public health implications.  
+    * 🦠 **The Great Influenza: The Story of the Deadliest Pandemic in History** by John M. Barry: While focused on the 1918 flu pandemic, it offers profound insights into public health responses, the role of science 🧪, and societal reactions 😲 to widespread disease.  
+    * **[💀🚫🦠 Deadly Choices: How the Anti-Vaccine Movement Threatens Us All](../books/deadly-choices-how-the-anti-vaccine-movement-threatens-us-all.md)** by Paul A. Offit: Written by a prominent vaccinologist 👨‍⚕️, this book directly addresses the anti-vaccine movement, its origins, and its public health implications.  
   
 * 🔬 **On Scientific Integrity and Misinformation:**  
     * **[💰🤥 Merchants of Doubt](../books/merchants-of-doubt.md): How a Handful of Scientists Obscured the Truth on Issues from Tobacco Smoke to Global Warming** by Naomi Oreskes and Erik M. Conway: While not exclusively about vaccines, this book brilliantly exposes tactics 🎭 used to sow doubt 🤔 about scientific consensus, a highly relevant topic when discussing public trust 🙏 in health institutions.

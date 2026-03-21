@@ -81,7 +81,7 @@ affiliate link: https://amzn.to/4onq5YS
   
 ### 🔗 Related Books  
 * [🕊️🤝 Nonviolent Communication: A Language of Life](./nonviolent-communication.md) by Marshall B. Rosenberg  
-* 💡 Originals by Adam Grant  
+* [💡🎨 Originals](./originals.md) by Adam Grant  
 * 📣 [🍃🧠🤝🏼 Influence: The Psychology of Persuasion](./influence.md) and Pre-Suasion by Robert B. Cialdini  
 * 🧠 [🤔🐇🐢 Thinking, Fast and Slow](./thinking-fast-and-slow.md) by Daniel Kahneman  
   

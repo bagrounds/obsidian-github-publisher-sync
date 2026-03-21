@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-03-21T15:07:48-07:00
+updated: 2026-03-21T15:28:38-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (699)  
+# 📺 Videos (700)  
 - [💰🤑🤖💡🚀💲 $0.10/Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
@@ -118,6 +118,7 @@ updated: 2026-03-21T15:07:48-07:00
 - [💥💣🇺🇸🇮🇷 Brooks and Capehart on Trump's decision to launch strikes on Iran](./brooks-and-capehart-on-trumps-decision-to-launch-strikes-on-iran.md)  
 - [🪖❓🇺🇸 Brooks and Capehart on Trump's mixed signals on the Iran war](./brooks-and-capehart-on-trumps-mixed-signals-on-the-iran-war.md)  
 - [👑🚧📉 Brooks and Capehart on Trump’s tariffs and reaction from the markets](./brooks-and-capehart-on-trumps-tariffs-and-reaction-from-the-markets.md)  
+- [💰💥🇮🇷🇺🇸 Brooks and Capehart on Trump struggling to contain economic fallout of Iran war](./brooks-and-capehart-on-trump-struggling-to-contain-economic-fallout-of-iran-war.md)  
 - [🥋🧠💪 Bruce Lee’s 11 Rules for an Unbreakable Mind](./bruce-lees-11-rules-for-an-unbreakable-mind.md)  
 - [💡🔄🤖 Build a Prompt Learning Loop - SallyAnn DeLucia & Fuad Ali, Arize](./build-a-prompt-learning-loop-sallyann-delucia-fuad-ali-arize.md)  
 - [🤖💬📈🌍 Build a Real-Time AI Sales Agent - Sarah Chieng & Zhenwei Gao, Cerebras](./build-a-real-time-ai-sales-agent-sarah-chieng-zhenwei-gao-cerebras.md)  

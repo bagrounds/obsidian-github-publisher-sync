@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-03-21T15:07:48-07:00
+updated: 2026-03-21T15:28:38-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -62,7 +62,8 @@ updated: 2026-03-21T15:07:48-07:00
 - [🔁🤪 Catch-22](./books/catch-22.md)  
   
   
-## [📺 Videos](./videos/index.md) (699)  
+## [📺 Videos](./videos/index.md) (700)  
+- [💰💥🇮🇷🇺🇸 Brooks and Capehart on Trump struggling to contain economic fallout of Iran war](./videos/brooks-and-capehart-on-trump-struggling-to-contain-economic-fallout-of-iran-war.md)  
 - [💡🧠📈💰 The Smartest Way To Turn Your Expertise Into $1M](./videos/the-smartest-way-to-turn-your-expertise-into-1m.md)  
 - [🧠💰📈 The psychology of making money](./videos/the-psychology-of-making-money.md)  
 - [🤖🤝🏛️ AI and Democracy (Chris Bail at Lake Como Lectures on Democracy)](./videos/ai-and-democracy-chris-bail-at-lake-como-lectures-on-democracy.md)  
@@ -72,7 +73,6 @@ updated: 2026-03-21T15:07:48-07:00
 - [👑🤝🇺🇸 The Art of Befriending Trump | President Stubb](./videos/the-art-of-befriending-trump-president-stubb.md)  
 - [🇫🇮🇪🇺🗣️🌍🇺🇸💥🇮🇷⚔️🇺🇦 FULL DISCUSSION: Finland President Stubb Slams Brexit, Talks Trump, Iran War, Ukraine, EU | AC1G](./videos/full-discussion-finland-president-stubb-slams-brexit-talks-trump-iran-war-ukraine-eu-ac1g.md)  
 - [🇫🇮🇺🇸🗣️👑📢 Finnish President Stubb on Trump, MAGA, JD Vance Speech, Rubio & US Foreign Policy | AC1G](./videos/finnish-president-stubb-on-trump-maga-jd-vance-speech-rubio-us-foreign-policy-ac1g.md)  
-- [🏆✍️💡 Pulitzer Prize-Winner Explains His Writing Process - Richard Powers](./videos/pulitzer-prize-winner-explains-his-writing-process-richard-powers.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  

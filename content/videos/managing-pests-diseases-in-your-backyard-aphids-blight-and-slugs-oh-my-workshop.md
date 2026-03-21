@@ -8,6 +8,7 @@ Author:
 Platform:
 Channel: WSU Extension Clark County Master Gardener Program
 tags:
+  - gardening
 youtube: https://youtu.be/dKm4fHubK_I
 ---
 [Home](../index.md) > [Videos](./index.md)  

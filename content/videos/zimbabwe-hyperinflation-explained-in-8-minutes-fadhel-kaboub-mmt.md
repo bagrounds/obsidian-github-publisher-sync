@@ -57,7 +57,7 @@ youtube: https://youtu.be/Lyy1jgpTTc0
   
 ### 🆚 Contrasting  
   
-* 💵 **The Road to Serfdom** by F. A. Hayek. 🧑‍⚖️ A classic work of classical liberal thought that contrasts sharply with MMT by arguing that government control and intervention (like the land redistribution or state spending in Zimbabwe) inevitably leads to economic mismanagement and loss of freedom.  
+* 💵 The Road to Serfdom by F. A. Hayek. 🧑‍⚖️ A classic work of classical liberal thought that contrasts sharply with MMT by arguing that government control and intervention (like the land redistribution or state spending in Zimbabwe) inevitably leads to economic mismanagement and loss of freedom.  
 * 📈 **The Mystery of Capital: Why Capitalism Triumphs in the West and Fails Everywhere Else** by Hernando de Soto. 🧑‍💼 Explores the importance of **property rights and rule of law** 📜 as a foundation for a functioning economy. This directly contrasts with the events in Zimbabwe, where the initial disruption was caused by the seizure and redistribution of land \[[00:18](http://www.youtube.com/watch?v=Lyy1jgpTTc0&t=18)].  
   
 ### 🎨 Creatively Related  

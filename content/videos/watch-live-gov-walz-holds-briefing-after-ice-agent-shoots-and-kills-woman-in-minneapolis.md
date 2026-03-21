@@ -60,7 +60,7 @@ youtube: https://www.youtube.com/embed/56RrBpetDLA
 ### 🆚 Contrasting  
   
 * 🛡️ In Defense of Public Order by Richard Manning argues for the necessity of robust federal law enforcement to maintain national security and legal integrity.  
-* 🧱 Border Wars by Julie Hirschfeld Davis and Michael D. Shear provides an inside look at the political strategies behind aggressive immigration policy implementation.  
+* [🧱⚔️🚶‍♀️ Border Wars: Inside Trump's Assault on Immigration](../books/border-wars-inside-trumps-assault-on-immigration.md) by Julie Hirschfeld Davis and Michael D. Shear provides an inside look at the political strategies behind aggressive immigration policy implementation.  
   
 ### 🎨 Creatively Related  
   

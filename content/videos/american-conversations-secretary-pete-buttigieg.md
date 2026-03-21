@@ -4,10 +4,10 @@ aliases:
   - "🗣️👂🇺🇸 American Conversations: Secretary Pete Buttigieg"
 title: "🗣️👂🇺🇸 American Conversations: Secretary Pete Buttigieg"
 URL: https://bagrounds.org/videos/american-conversations-secretary-pete-buttigieg
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: Heather Cox Richardson
-tags: 
+tags:
 youtube: https://youtu.be/4diHMLyJPx0
 ---
 [Home](../index.md) > [Videos](./index.md) | [🏛️🇺🇸📖 Heather Cox Richardson](../people/heather-cox-richardson.md)  
@@ -37,7 +37,7 @@ youtube: https://youtu.be/4diHMLyJPx0
 * 🔄🇺🇸 **Reimagining the American Union** by Stephen Legomsky: Discusses potential structural changes to the American political system, including electoral reform and federalism.  
 * ✨🇺🇸 **American Democracy: A Great Leap of Faith** by National Museum of American History: Explores the history and ongoing evolution of American democracy, including its challenges and enduring principles.  
 * 🤖📈 **Atlas of AI: Power, Politics, and the Planetary Costs of Artificial Intelligence** by Kate Crawford: Examines the hidden costs and ethical implications of artificial intelligence, from labor and data extraction to environmental impact.  
-* 💻🌏 **AI Superpowers: China, Silicon Valley, and the New World Order** by Kai-Fu Lee: Provides an insider's perspective on the AI revolution, particularly the competition between the U.S. and China, and its potential societal impact.  
+* 💻🌏 **AI Superpowers** by Kai-Fu Lee: Provides an insider's perspective on the AI revolution, particularly the competition between the U.S. and China, and its potential societal impact.  
 * 👨‍👩‍👧‍👦⚖️ **Parental Rights in the Face of Government Interference** edited by Louis Bray: A collection of essays exploring the legal and philosophical underpinnings of parental rights and the balance with state authority.  
 * 👪📉 **The Two-Parent Privilege: How Americans Stopped Getting Married and Started Falling Behind** by Melissa S. Kearney: Investigates the changing family structures in America and their implications for economic mobility and social well-being.  
 * 🤝💡 **The Consensus Building Handbook** by Lawrence E. Susskind, Sarah McKearnen, and Jennifer Thomas-Lamar: Offers practical strategies and case studies for achieving consensus in complex, multi-party negotiations and public disputes.  

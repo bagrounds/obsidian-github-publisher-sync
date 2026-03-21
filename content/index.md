@@ -45,6 +45,10 @@ updated: 2026-03-20T16:21:11-07:00
 - [🧮 Calculator](./tools/calculator.md)  
   
   
+## [🎮 Games](./games/index.md) (1)  
+- [🧬 Valence](./games/valence.md)  
+  
+  
 ## [📚 Books](./books/index.md) (956)  
 - [✨🎭🧘‍♂️🌌 The Creative Act: A Way of Being](./books/the-creative-act.md)  
 - [🪄 Big Magic: Creative Living Beyond Fear](./books/big-magic.md)  

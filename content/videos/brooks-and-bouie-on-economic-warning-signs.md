@@ -25,7 +25,7 @@ This segment offers a 🧠 snapshot of political and economic topics from a spec
   
 ## 📚 Book Recommendations  
 - **The Lords of Easy Money** by Christopher Leonard. 💰 A critical look at the Federal Reserve's policies, arguing they led to greater wealth inequality.  
-- **War Is a Racket** by Smedley D. Butler. ⚔️ A classic indictment of war for profit, written by a decorated Marine general.  
+- **[⚔️💰 War Is a Racket](../books/war-is-a-racket.md)** by Smedley D. Butler. ⚔️ A classic indictment of war for profit, written by a decorated Marine general.  
 - **Rules for Radicals** by Saul Alinsky. ✊ A foundational text on political strategy and community organizing.  
 - **The New Class War** by Thomas Piketty. 📖 Argues that political conflict is now between educated elites and business leaders, not the traditional left and right.  
 - **The End of the World is Just the Beginning** by Peter Zeihan. 🗺️ A geopolitical forecast on the end of the post-WWII global order and its military implications.  

@@ -33,6 +33,7 @@ const main = async (): Promise<void> => {
     apiKey: provider.apiKey,
     model: provider.model,
     generate: provider.generator,
+    describePrompt: provider.describePrompt,
     onProgress: log,
   });
 

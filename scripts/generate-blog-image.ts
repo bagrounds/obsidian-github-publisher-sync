@@ -55,6 +55,7 @@ const main = async (): Promise<void> => {
     provider.apiKey,
     provider.model,
     provider.generator,
+    provider.describePrompt,
   );
 
   if (result.skipped) {

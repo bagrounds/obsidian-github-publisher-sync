@@ -23,7 +23,14 @@ import {
   isImagenModel,
   resolveImageProvider,
   makeCloudflareGenerator,
+  extractFrontmatterValue,
+  shouldRegenerateImage,
+  removeImageEmbed,
+  quoteYamlValue,
+  updateFrontmatterFields,
+  makeGeminiDescriber,
   type ImageGenerator,
+  type PromptDescriber,
 } from "./blog-image.ts";
 
 describe("hasEmbeddedImage", () => {
@@ -915,5 +922,376 @@ describe("makeCloudflareGenerator", () => {
   it("uses default model when none specified", () => {
     const generator = makeCloudflareGenerator("account-123");
     assert.equal(typeof generator, "function");
+  });
+});
+
+describe("extractFrontmatterValue", () => {
+  it("extracts a string value from frontmatter", () => {
+    const content = "---\ntitle: My Post\nshare: true\n---\n# My Post\n";
+    assert.equal(extractFrontmatterValue(content, "title"), "My Post");
+  });
+
+  it("extracts a quoted value", () => {
+    const content = '---\ntitle: "Quoted Title"\n---\nBody';
+    assert.equal(extractFrontmatterValue(content, "title"), "Quoted Title");
+  });
+
+  it("returns undefined for missing key", () => {
+    const content = "---\ntitle: Test\n---\nBody";
+    assert.equal(extractFrontmatterValue(content, "missing"), undefined);
+  });
+
+  it("returns undefined when no frontmatter", () => {
+    const content = "# Title\nBody text";
+    assert.equal(extractFrontmatterValue(content, "title"), undefined);
+  });
+
+  it("extracts boolean-like values as strings", () => {
+    const content = "---\nregenerate_image: true\n---\nBody";
+    assert.equal(extractFrontmatterValue(content, "regenerate_image"), "true");
+  });
+});
+
+describe("shouldRegenerateImage", () => {
+  it("returns true when regenerate_image is true", () => {
+    const content = "---\ntitle: Test\nregenerate_image: true\n---\n# Test\n";
+    assert.equal(shouldRegenerateImage(content), true);
+  });
+
+  it("returns false when regenerate_image is false", () => {
+    const content = "---\ntitle: Test\nregenerate_image: false\n---\n# Test\n";
+    assert.equal(shouldRegenerateImage(content), false);
+  });
+
+  it("returns false when regenerate_image is absent", () => {
+    const content = "---\ntitle: Test\n---\n# Test\n";
+    assert.equal(shouldRegenerateImage(content), false);
+  });
+
+  it("returns false when no frontmatter", () => {
+    const content = "# Test\nBody text";
+    assert.equal(shouldRegenerateImage(content), false);
+  });
+});
+
+describe("removeImageEmbed", () => {
+  it("removes Obsidian wiki image embed", () => {
+    const content = "# Title\n![[attachments/hero.jpg]]\nBody text";
+    const result = removeImageEmbed(content);
+    assert.equal(result.imageName, "hero.jpg");
+    assert.ok(!result.content.includes("![["));
+    assert.ok(result.content.includes("Body text"));
+  });
+
+  it("removes wiki embed without attachments prefix", () => {
+    const content = "# Title\n![[photo.png]]\nBody";
+    const result = removeImageEmbed(content);
+    assert.equal(result.imageName, "photo.png");
+    assert.ok(!result.content.includes("![["));
+  });
+
+  it("returns unchanged content when no image embed", () => {
+    const content = "# Title\nBody text";
+    const result = removeImageEmbed(content);
+    assert.equal(result.content, content);
+    assert.equal(result.imageName, undefined);
+  });
+
+  it("collapses triple newlines after removal", () => {
+    const content = "# Title\n\n![[attachments/img.jpg]]\n\nBody";
+    const result = removeImageEmbed(content);
+    assert.ok(!result.content.includes("\n\n\n"));
+  });
+});
+
+describe("quoteYamlValue", () => {
+  it("returns simple values unquoted", () => {
+    assert.equal(quoteYamlValue("simple value"), "simple value");
+  });
+
+  it("quotes values with colons", () => {
+    assert.equal(quoteYamlValue("key: value"), '"key: value"');
+  });
+
+  it("quotes values with at signs", () => {
+    const result = quoteYamlValue("@cf/model/name");
+    assert.equal(result, '"@cf/model/name"');
+  });
+
+  it("escapes internal double quotes", () => {
+    const result = quoteYamlValue('said "hello"');
+    assert.equal(result, '"said \\"hello\\""');
+  });
+
+  it("collapses newlines into spaces", () => {
+    const result = quoteYamlValue("line one\nline two");
+    assert.equal(result, "line one line two");
+  });
+});
+
+describe("updateFrontmatterFields", () => {
+  it("adds fields to existing frontmatter", () => {
+    const content = "---\ntitle: Test\n---\nBody";
+    const result = updateFrontmatterFields(content, {
+      image_date: "2026-03-21",
+      image_model: "test-model",
+    });
+    assert.ok(result.includes("image_date: 2026-03-21"));
+    assert.ok(result.includes("image_model: test-model"));
+    assert.ok(result.includes("title: Test"));
+  });
+
+  it("updates existing fields", () => {
+    const content = "---\ntitle: Test\nimage_date: old\n---\nBody";
+    const result = updateFrontmatterFields(content, {
+      image_date: "new",
+    });
+    assert.ok(result.includes("image_date: new"));
+    assert.ok(!result.includes("image_date: old"));
+  });
+
+  it("creates frontmatter when none exists", () => {
+    const content = "# Title\nBody";
+    const result = updateFrontmatterFields(content, {
+      image_model: "test-model",
+    });
+    assert.ok(result.startsWith("---\nimage_model: test-model\n---"));
+  });
+
+  it("quotes values with special YAML characters", () => {
+    const content = "---\ntitle: Test\n---\nBody";
+    const result = updateFrontmatterFields(content, {
+      image_model: "@cf/black-forest-labs/flux-1-schnell",
+    });
+    assert.ok(result.includes('"@cf/black-forest-labs/flux-1-schnell"'));
+  });
+
+  it("sets regenerate_image to false", () => {
+    const content = "---\ntitle: Test\nregenerate_image: true\n---\nBody";
+    const result = updateFrontmatterFields(content, {
+      regenerate_image: "false",
+    });
+    assert.ok(result.includes("regenerate_image: false"));
+    assert.ok(!result.includes("regenerate_image: true"));
+  });
+});
+
+describe("processNote with regeneration", () => {
+  let tempDir: string;
+  let attachmentsDir: string;
+
+  const mockGenerate: ImageGenerator = async () => ({
+    data: Buffer.from("fake-image-data"),
+    mimeType: "image/jpeg",
+  });
+
+  beforeEach(() => {
+    tempDir = fs.mkdtempSync(path.join(os.tmpdir(), "regen-test-"));
+    attachmentsDir = path.join(tempDir, "attachments");
+  });
+
+  afterEach(() => {
+    fs.rmSync(tempDir, { recursive: true, force: true });
+  });
+
+  it("regenerates image when regenerate_image is true", async () => {
+    const notePath = path.join(tempDir, "test.md");
+    fs.mkdirSync(attachmentsDir, { recursive: true });
+    fs.writeFileSync(
+      path.join(attachmentsDir, "old-image.jpg"),
+      "old-image-data",
+    );
+    fs.writeFileSync(
+      notePath,
+      "---\ntitle: Test Post\nregenerate_image: true\n---\n# Test Post\n![[attachments/old-image.jpg]]\nBody\n",
+    );
+
+    const result = await processNote(
+      notePath,
+      attachmentsDir,
+      "fake-key",
+      "fake-model",
+      mockGenerate,
+    );
+
+    assert.equal(result.skipped, false);
+    assert.equal(result.imageName, "test-post.jpg");
+
+    const updated = fs.readFileSync(notePath, "utf-8");
+    assert.ok(updated.includes("![[attachments/test-post.jpg]]"));
+    assert.ok(updated.includes("regenerate_image: false"));
+    assert.ok(!fs.existsSync(path.join(attachmentsDir, "old-image.jpg")));
+  });
+
+  it("skips note with image when regenerate_image is not set", async () => {
+    const notePath = path.join(tempDir, "test.md");
+    fs.writeFileSync(
+      notePath,
+      "---\ntitle: Test Post\n---\n# Test Post\n![[attachments/existing.jpg]]\nBody\n",
+    );
+
+    const result = await processNote(
+      notePath,
+      attachmentsDir,
+      "fake-key",
+      "fake-model",
+      mockGenerate,
+    );
+
+    assert.equal(result.skipped, true);
+  });
+
+  it("writes image metadata to frontmatter", async () => {
+    const notePath = path.join(tempDir, "test.md");
+    fs.writeFileSync(
+      notePath,
+      "---\ntitle: Test Post\n---\n# Test Post\nBody text\n",
+    );
+
+    await processNote(
+      notePath,
+      attachmentsDir,
+      "fake-key",
+      "fake-model",
+      mockGenerate,
+    );
+
+    const updated = fs.readFileSync(notePath, "utf-8");
+    assert.ok(updated.includes("image_date:"));
+    assert.ok(updated.includes("image_model: fake-model"));
+    assert.ok(updated.includes("image_prompt:"));
+  });
+
+  it("uses prompt describer when provided", async () => {
+    const notePath = path.join(tempDir, "test.md");
+    fs.writeFileSync(
+      notePath,
+      "---\ntitle: Test Post\n---\n# Test Post\nBody text\n",
+    );
+
+    const mockDescriber: PromptDescriber = async () =>
+      "A colorful abstract painting of technology";
+
+    const result = await processNote(
+      notePath,
+      attachmentsDir,
+      "fake-key",
+      "fake-model",
+      mockGenerate,
+      mockDescriber,
+    );
+
+    assert.equal(result.skipped, false);
+    assert.equal(result.imagePrompt, "A colorful abstract painting of technology");
+
+    const updated = fs.readFileSync(notePath, "utf-8");
+    assert.ok(updated.includes("A colorful abstract painting of technology"));
+  });
+});
+
+describe("backfillImages with regeneration", () => {
+  let tempDir: string;
+  let attachmentsDir: string;
+
+  const mockGenerate: ImageGenerator = async () => ({
+    data: Buffer.from("fake-image-data"),
+    mimeType: "image/jpeg",
+  });
+
+  beforeEach(() => {
+    tempDir = fs.mkdtempSync(path.join(os.tmpdir(), "backfill-regen-"));
+    attachmentsDir = path.join(tempDir, "attachments");
+  });
+
+  afterEach(() => {
+    fs.rmSync(tempDir, { recursive: true, force: true });
+  });
+
+  it("regenerates images for notes with regenerate_image flag", async () => {
+    const dir = path.join(tempDir, "series");
+    fs.mkdirSync(dir);
+    fs.mkdirSync(attachmentsDir, { recursive: true });
+    fs.writeFileSync(
+      path.join(attachmentsDir, "old.jpg"),
+      "old-data",
+    );
+    fs.writeFileSync(
+      path.join(dir, "2026-03-10-post.md"),
+      "---\ntitle: Post\nregenerate_image: true\n---\n# Post\n![[attachments/old.jpg]]\nBody\n",
+    );
+
+    const events: Record<string, unknown>[] = [];
+    const result = await backfillImages({
+      directories: [{ path: dir, id: "series" }],
+      attachmentsDir,
+      apiKey: "key",
+      model: "model",
+      generate: mockGenerate,
+      onProgress: (e) => events.push(e),
+    });
+
+    assert.equal(result.imagesGenerated, 1);
+    assert.ok(events.some((e) => e["event"] === "regenerating_image"));
+  });
+
+  it("passes describePrompt through to processNote", async () => {
+    const dir = path.join(tempDir, "series");
+    fs.mkdirSync(dir);
+    fs.writeFileSync(
+      path.join(dir, "2026-03-10-post.md"),
+      "---\ntitle: Post\n---\n# Post\nBody\n",
+    );
+
+    let describerCalled = false;
+    const mockDescriber: PromptDescriber = async () => {
+      describerCalled = true;
+      return "described image prompt";
+    };
+
+    await backfillImages({
+      directories: [{ path: dir, id: "series" }],
+      attachmentsDir,
+      apiKey: "key",
+      model: "model",
+      generate: mockGenerate,
+      describePrompt: mockDescriber,
+    });
+
+    assert.ok(describerCalled);
+  });
+});
+
+describe("resolveImageProvider with describer", () => {
+  it("creates describePrompt when GEMINI_API_KEY is set with Cloudflare", () => {
+    const env = {
+      CLOUDFLARE_API_TOKEN: "cf-token",
+      CLOUDFLARE_ACCOUNT_ID: "cf-account",
+      GEMINI_API_KEY: "gemini-key",
+    };
+    const provider = resolveImageProvider(env);
+    assert.ok(provider.describePrompt !== undefined);
+    assert.equal(typeof provider.describePrompt, "function");
+  });
+
+  it("creates describePrompt when only GEMINI_API_KEY is set", () => {
+    const env = { GEMINI_API_KEY: "gemini-key" };
+    const provider = resolveImageProvider(env);
+    assert.ok(provider.describePrompt !== undefined);
+  });
+
+  it("has no describePrompt when GEMINI_API_KEY is missing", () => {
+    const env = {
+      CLOUDFLARE_API_TOKEN: "cf-token",
+      CLOUDFLARE_ACCOUNT_ID: "cf-account",
+    };
+    const provider = resolveImageProvider(env);
+    assert.equal(provider.describePrompt, undefined);
+  });
+});
+
+describe("makeGeminiDescriber", () => {
+  it("returns a PromptDescriber function", () => {
+    const describer = makeGeminiDescriber("fake-key");
+    assert.equal(typeof describer, "function");
   });
 });

@@ -11,7 +11,10 @@ export interface ImageGenerationResult {
   readonly skipped: boolean;
   readonly imagePath?: string;
   readonly imageName?: string;
+  readonly imagePrompt?: string;
 }
+
+export type PromptDescriber = (content: string) => Promise<string>;
 
 export interface NoteInfo {
   readonly filePath: string;
@@ -77,6 +80,88 @@ export const insertImageEmbed = (
 
   const embed = `![[attachments/${imageName}]]`;
   lines.splice(h1Index + 1, 0, embed);
+  return lines.join("\n");
+};
+
+export const extractFrontmatterValue = (
+  content: string,
+  key: string,
+): string | undefined => {
+  const lines = content.split("\n");
+  if (lines[0]?.trim() !== "---") return undefined;
+
+  for (let i = 1; i < lines.length; i++) {
+    if (lines[i]?.trim() === "---") break;
+    const match = lines[i]?.match(new RegExp(`^${key}:\\s*(.+)$`));
+    if (match) return (match[1] as string).replace(/^["']|["']$/g, "").trim();
+  }
+  return undefined;
+};
+
+export const shouldRegenerateImage = (content: string): boolean =>
+  extractFrontmatterValue(content, "regenerate_image") === "true";
+
+const OBSIDIAN_IMAGE_EMBED_LINE =
+  /^!\[\[(?:attachments\/)?([^\]]+\.(jpg|jpeg|png|gif|webp))\]\]$/im;
+
+export const removeImageEmbed = (
+  content: string,
+): { readonly content: string; readonly imageName: string | undefined } => {
+  const match = content.match(OBSIDIAN_IMAGE_EMBED_LINE);
+  if (!match) return { content, imageName: undefined };
+
+  const imageName = match[1] as string;
+  const cleaned = content
+    .replace(match[0], "")
+    .replace(/\n{3,}/g, "\n\n");
+  return { content: cleaned, imageName: imageName.replace(/^attachments\//, "") };
+};
+
+export const quoteYamlValue = (value: string): string => {
+  const oneLine = value.replace(/\n/g, " ").replace(/\s+/g, " ").trim();
+  return /[:#{}\[\]&*!|>'"@`,]/.test(oneLine)
+    ? `"${oneLine.replace(/\\/g, "\\\\").replace(/"/g, '\\"')}"`
+    : oneLine;
+};
+
+export const updateFrontmatterFields = (
+  content: string,
+  fields: Record<string, string>,
+): string => {
+  const lines = content.split("\n");
+
+  if (lines[0]?.trim() !== "---") {
+    const entries = Object.entries(fields)
+      .map(([k, v]) => `${k}: ${quoteYamlValue(v)}`)
+      .join("\n");
+    return `---\n${entries}\n---\n${content}`;
+  }
+
+  let endIndex = -1;
+  for (let i = 1; i < lines.length; i++) {
+    if (lines[i]?.trim() === "---") {
+      endIndex = i;
+      break;
+    }
+  }
+
+  if (endIndex < 0) return content;
+
+  for (const [key, value] of Object.entries(fields)) {
+    let found = false;
+    for (let i = 1; i < endIndex; i++) {
+      if (lines[i]?.match(new RegExp(`^${key}:\\s`))) {
+        lines[i] = `${key}: ${quoteYamlValue(value)}`;
+        found = true;
+        break;
+      }
+    }
+    if (!found) {
+      lines.splice(endIndex, 0, `${key}: ${quoteYamlValue(value)}`);
+      endIndex++;
+    }
+  }
+
   return lines.join("\n");
 };
 
@@ -183,6 +268,37 @@ export const generateImageWithGemini: ImageGenerator = async (
     ? generateWithImagen(apiKey, model, prompt)
     : generateWithGeminiContent(apiKey, model, prompt);
 
+const IMAGE_DESCRIPTION_SYSTEM_PROMPT = [
+  "Describe a cover image for the following blog post.",
+  "Focus on visual elements that would make an appealing illustration.",
+  "Be concise — respond in under 150 words.",
+  "Do not include any text or words in the image.",
+  "Respond with only the image description, no preamble.",
+].join(" ");
+
+export const describeImageWithGemini = async (
+  apiKey: string,
+  content: string,
+  model: string = "gemini-2.5-flash",
+): Promise<string> => {
+  const { GoogleGenAI } = await import("@google/genai");
+  const ai = new GoogleGenAI({ apiKey });
+
+  const response = await ai.models.generateContent({
+    model,
+    contents: `${IMAGE_DESCRIPTION_SYSTEM_PROMPT}\n\n${content}`,
+  });
+
+  const text = response.text ?? "";
+  return text.trim();
+};
+
+export const makeGeminiDescriber = (
+  apiKey: string,
+  model: string = "gemini-2.5-flash",
+): PromptDescriber =>
+  (content: string) => describeImageWithGemini(apiKey, content, model);
+
 interface CloudflareApiResponse {
   readonly result?: { readonly image?: string };
   readonly success: boolean;
@@ -237,6 +353,7 @@ export interface ImageProviderConfig {
   readonly apiKey: string;
   readonly model: string;
   readonly generator: ImageGenerator;
+  readonly describePrompt?: PromptDescriber;
 }
 
 export const resolveImageProvider = (env: Record<string, string | undefined>): ImageProviderConfig => {
@@ -244,15 +361,20 @@ export const resolveImageProvider = (env: Record<string, string | undefined>): I
   const cfAccountId = env.CLOUDFLARE_ACCOUNT_ID;
   const cfModel = env.CLOUDFLARE_IMAGE_MODEL ?? "@cf/black-forest-labs/flux-1-schnell";
 
+  const geminiKey = env.GEMINI_API_KEY;
+  const describePrompt = geminiKey
+    ? makeGeminiDescriber(geminiKey)
+    : undefined;
+
   if (cfToken && cfAccountId) {
     return {
       apiKey: cfToken,
       model: cfModel,
       generator: makeCloudflareGenerator(cfAccountId, cfModel),
+      describePrompt,
     };
   }
 
-  const geminiKey = env.GEMINI_API_KEY;
   const geminiModel = env.IMAGE_GEMINI_MODEL ?? "gemini-3.1-flash-image-preview";
 
   if (geminiKey) {
@@ -260,6 +382,7 @@ export const resolveImageProvider = (env: Record<string, string | undefined>): I
       apiKey: geminiKey,
       model: geminiModel,
       generator: generateImageWithGemini,
+      describePrompt,
     };
   }
 
@@ -274,8 +397,21 @@ export const processNote = async (
   apiKey: string,
   model: string,
   generate: ImageGenerator = generateImageWithGemini,
+  describePrompt?: PromptDescriber,
 ): Promise<ImageGenerationResult> => {
-  const content = fs.readFileSync(notePath, "utf-8");
+  let content = fs.readFileSync(notePath, "utf-8");
+
+  if (shouldRegenerateImage(content)) {
+    const { content: cleaned, imageName: oldImage } = removeImageEmbed(content);
+    content = updateFrontmatterFields(cleaned, { regenerate_image: "false" });
+
+    if (oldImage) {
+      const oldPath = path.join(attachmentsDir, oldImage);
+      if (fs.existsSync(oldPath)) fs.unlinkSync(oldPath);
+    }
+
+    fs.writeFileSync(notePath, content, "utf-8");
+  }
 
   if (hasEmbeddedImage(content)) {
     return { skipped: true };
@@ -291,7 +427,9 @@ export const processNote = async (
     return { skipped: true };
   }
 
-  const prompt = buildImagePrompt(content);
+  const prompt = describePrompt
+    ? await describePrompt(content)
+    : buildImagePrompt(content);
   const { data, mimeType } = await generate(apiKey, model, prompt);
 
   const extension = mimeTypeToExtension(mimeType);
@@ -301,10 +439,15 @@ export const processNote = async (
   fs.mkdirSync(attachmentsDir, { recursive: true });
   fs.writeFileSync(imagePath, data);
 
-  const updatedContent = insertImageEmbed(content, imageName);
+  let updatedContent = insertImageEmbed(content, imageName);
+  updatedContent = updateFrontmatterFields(updatedContent, {
+    image_date: new Date().toISOString(),
+    image_model: model,
+    image_prompt: prompt,
+  });
   fs.writeFileSync(notePath, updatedContent, "utf-8");
 
-  return { skipped: false, imagePath, imageName };
+  return { skipped: false, imagePath, imageName, imagePrompt: prompt };
 };
 
 export const isPostFile = (filename: string): boolean =>
@@ -349,6 +492,7 @@ export interface BackfillConfig {
   readonly apiKey: string;
   readonly model: string;
   readonly generate?: ImageGenerator;
+  readonly describePrompt?: PromptDescriber;
   readonly onProgress?: (event: Record<string, unknown>) => void;
 }
 
@@ -361,6 +505,7 @@ export const backfillImages = async (
     apiKey,
     model,
     generate = generateImageWithGemini,
+    describePrompt,
     onProgress = () => {},
   } = config;
 
@@ -389,13 +534,14 @@ export const backfillImages = async (
       chain.push(filePath);
 
       const content = fs.readFileSync(filePath, "utf-8");
-      if (hasEmbeddedImage(content)) {
+      const needsRegeneration = shouldRegenerateImage(content);
+      if (hasEmbeddedImage(content) && !needsRegeneration) {
         onProgress({ event: "already_has_image", directory: id, filename });
         continue;
       }
 
       onProgress({
-        event: "generating_image",
+        event: needsRegeneration ? "regenerating_image" : "generating_image",
         directory: id,
         filename,
       });
@@ -407,6 +553,7 @@ export const backfillImages = async (
           apiKey,
           model,
           generate,
+          describePrompt,
         );
 
         if (!result.skipped) {

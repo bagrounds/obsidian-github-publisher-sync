@@ -8,7 +8,7 @@
 ## Engineering Excellence
 - 🏗️ Strong static types - inspiration from Haskell
 - 🧪 Thorough test coverage, ideally with property based tests
-- 🧩 Functional declarative programming patterns. Avoid for loops and conditional logic in favor of principled functional abstractions.
+- 🧩 Functional declarative programming patterns. Avoid for loops and conditional logic in favor of principled functional abstractions. Prefer map, reduce, filter, flatMap, and forEach to for and while loops. Never use mutable variables (const > let). Leverage function composition and expression oriented programming.
 - 🔬 Prefer principled abstractions. Good ideas often come from category theory
 - 🔧 Unix Philosophy & Modularity
 - 📐 Domain Driven Design

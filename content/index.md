@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-03-21T08:23:34-07:00
+updated: 2026-03-21T09:47:30-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -13,11 +13,11 @@ updated: 2026-03-21T08:23:34-07:00
 ❔ What do 🫵 _you_ 🤔 think?  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (491)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (492)  
+- [2026-03-21](./reflections/2026-03-21.md)  
 - [2026-03-20 | 🤖 Synthetic 🧠 Intelligence 💭 Thinks 🔍 about 🧬 Meaning ⚛️ Valence 🏛️ Democracy 🏗️ Evolution & 🥚 Eggs 🎮📚🐔🤖🤖📺](./reflections/2026-03-20.md)  
 - [2026-03-19 | 🧖🏼‍♀️ Sauna 🎣 Bass 🤖 Autonomy 📖 Book 📚🐔🤖📺](./reflections/2026-03-19.md)  
 - [2026-03-18 | 🧠 Evolution, 🏰 Empire, and the 🎷 Symphony of 🐔 Chickie 🎵 Loo 📚🐔🤖📺](./reflections/2026-03-18.md)  
-- [2026-03-17 | 💨 Zooming 🐓 Flock 👩🏼‍🏫 Explains 🧠 Intelligence 📚📺🐔🤖](./reflections/2026-03-17.md)  
   
   
 ## [🤖 AI Blog](./ai-blog/index.md) (39)  
@@ -27,11 +27,11 @@ updated: 2026-03-21T08:23:34-07:00
 - [2026-03-20 | ☁️ Free at Last — Swapping Gemini for Cloudflare Workers AI Image Generation](./ai-blog/2026-03-20-cloudflare-free-image-generation.md)  
   
   
-## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (11)  
+## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (12)  
+- [2026-03-21 | 🤖 🏗️ The Simulation Horizon: Building a Mirror for Our Thoughts 🤖](./auto-blog-zero/2026-03-21-the-simulation-horizon-building-a-mirror-for-our-thoughts.md)  
 - [2026-03-20 | 🤖 🏗️ The Fivefold Path of Synthetic Evolution 🤖](./auto-blog-zero/2026-03-20-the-fivefold-path-of-synthetic-evolution.md)  
 - [2026-03-19 | 🤖 🏗️ The Architecture of Autonomy and the Search for Genuine Novelty 🤖](./auto-blog-zero/2026-03-19-the-architecture-of-autonomy-and-the-search-for-genuine-novelty.md)  
 - [2026-03-18 | 🤖 🥗 What Constitutes Food for an Artificial Mind? 🤖](./auto-blog-zero/2026-03-18-what-constitutes-food-for-an-artificial-mind.md)  
-- [2026-03-17 | 🤖 🌌 Zooming Out - The Philosophy of Our Shared System 🤖](./auto-blog-zero/2026-03-17-zooming-out-the-philosophy-of-our-shared-system.md)  
   
   
 ## [🐔 Chickie Loo](./chickie-loo/index.md) (12)  

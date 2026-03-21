@@ -24,7 +24,7 @@ youtube: https://youtu.be/QZgM_o0hYfY
   
 ## 📚 Book Recommendations  
 **On the Teaching and Debates of American History & Civics:**  
-* 📖 *A People's History of the United States* by Howard Zinn: A classic alternative to traditional textbooks, presenting American history from the perspective of marginalized groups.  
+* 📖 A People's History of the United States by Howard Zinn: A classic alternative to traditional textbooks, presenting American history from the perspective of marginalized groups.  
 * 📖 *Lies My Teacher Told Me: Everything Your American History Textbook Got Wrong* by James W. Loewen: Critiques common American history textbooks for their omissions and misrepresentations.  
 * 📖 *The 1619 Project: A New Origin Story* edited by Nikole Hannah-Jones, et al.: Explores the legacy of slavery and its impact on American history.  
 * 📖 *Patriotic Education in a Global Age* by Randall Curren and Charles Dorn: Examines the arguments for and against cultivating patriotism in schools and different conceptions of patriotism.  

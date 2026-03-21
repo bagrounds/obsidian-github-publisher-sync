@@ -49,7 +49,7 @@ youtube: https://youtu.be/RvYSsi6rd4g
   
 ### ↔️ Similar  
   
-* 📘 A Brief History of Intelligence by Max Bennett explores the evolutionary milestones that led to human-level cognition.  
+* [🧠🧬🤖 A Brief History of Intelligence: Evolution, AI, and the Five Breakthroughs That Made Our Brains](../books/a-brief-history-of-intelligence-evolution-ai-and-the-five-breakthroughs-that-made-our-brains.md) by Max Bennett explores the evolutionary milestones that led to human-level cognition.  
 * 📙 On Intelligence by Jeff Hawkins describes the memory-prediction framework as the core mechanism of the neocortex.  
   
 ### 🆚 Contrasting  

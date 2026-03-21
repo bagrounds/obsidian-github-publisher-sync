@@ -64,4 +64,4 @@ youtube: https://www.youtube.com/embed/BKByo3FKiI8
 ### 🎨 Creatively Related  
   
 * 🛰️ The Star Wars Archives by Paul Duncan provides context for the starship metaphors used by accelerationist thinkers to describe rapid political destruction and rebuilding. \[[33:06](http://www.youtube.com/watch?v=BKByo3FKiI8&t=1986)]  
-* 🏰 The Magna Carta by Dan Jones: A history of the foundational document that first established that no leader, not even a king, is above the law. \[[41:56](http://www.youtube.com/watch?v=BKByo3FKiI8&t=2516)]
+* [📜👶🗽 Magna Carta: The Birth of Liberty](../books/magna-carta-the-birth-of-liberty.md) by Dan Jones: A history of the foundational document that first established that no leader, not even a king, is above the law. \[[41:56](http://www.youtube.com/watch?v=BKByo3FKiI8&t=2516)]

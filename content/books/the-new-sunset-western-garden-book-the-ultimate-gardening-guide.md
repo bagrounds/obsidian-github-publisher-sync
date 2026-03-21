@@ -6,7 +6,8 @@ URL: https://bagrounds.org/books/the-new-sunset-western-garden-book-the-ultimate
 share: true
 CTA: 🌱 Grow your dream garden.
 affiliate link: https://amzn.to/4lpccrr
-tags: 
+tags:
+  - gardening
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ☀️📖🌿 The New Sunset Western Garden Book: The Ultimate Gardening Guide  

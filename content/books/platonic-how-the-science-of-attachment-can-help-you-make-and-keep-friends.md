@@ -73,7 +73,7 @@ CTA: 🫂 Cultivate connection.
 ### ☯️ Contrasting  
 * Solitude: A Return to the Self by Anthony Storr  
 * The Comfort Book by Matt Haig  
-* Walden by Henry David Thoreau  
+* [🌲 Walden](./walden.md) by Henry David Thoreau  
   
 ### ➕ Related  
 * Quiet: The Power of Introverts in a World That Can't Stop Talking by Susan Cain  

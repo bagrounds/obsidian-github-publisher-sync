@@ -93,6 +93,7 @@ jobs:
           CLOUDFLARE_IMAGE_MODEL: ${{ vars.CLOUDFLARE_IMAGE_MODEL || '@cf/black-forest-labs/flux-1-schnell' }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           IMAGE_GEMINI_MODEL: ${{ vars.IMAGE_GEMINI_MODEL || 'gemini-3.1-flash-image-preview' }}
+          PROMPT_DESCRIBER_MODEL: ${{ vars.PROMPT_DESCRIBER_MODEL || 'gemini-3.1-flash-lite-preview' }}
         run: |
           SERIES="auto-blog-zero"
           POST=$(ls -1 ${SERIES}/$(date +%Y-%m-%d)*.md 2>/dev/null | head -1)

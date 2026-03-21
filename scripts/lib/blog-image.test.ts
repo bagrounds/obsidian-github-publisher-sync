@@ -10,6 +10,8 @@ import {
   extractTitle,
   insertImageEmbed,
   buildImagePrompt,
+  cleanContentForPrompt,
+  DEFAULT_DESCRIBER_MODEL,
   mimeTypeToExtension,
   isQuotaError,
   processNote,
@@ -224,13 +226,77 @@ describe("insertImageEmbed", () => {
   });
 });
 
+describe("cleanContentForPrompt", () => {
+  it("strips frontmatter from content", () => {
+    const content = "---\ntitle: Test Post\nshare: true\n---\n# Title\nBody text";
+    const result = cleanContentForPrompt(content);
+    assert.ok(!result.includes("title:"));
+    assert.ok(!result.includes("---"));
+    assert.ok(result.includes("Body text"));
+  });
+
+  it("strips social media embed sections", () => {
+    const content = "# Title\nBody text\n## 🐦 Tweet\nSome tweet\n## 🦋 Bluesky\nSome post";
+    const result = cleanContentForPrompt(content);
+    assert.ok(result.includes("Body text"));
+    assert.ok(!result.includes("Tweet"));
+    assert.ok(!result.includes("Bluesky"));
+  });
+
+  it("strips markdown heading syntax", () => {
+    const content = "## Heading Two\n### Heading Three\nBody";
+    const result = cleanContentForPrompt(content);
+    assert.ok(result.includes("Heading Two"));
+    assert.ok(!result.startsWith("##"));
+  });
+
+  it("strips code blocks", () => {
+    const content = "Body\n```typescript\nconst x = 1;\n```\nMore text";
+    const result = cleanContentForPrompt(content);
+    assert.ok(!result.includes("const x = 1"));
+    assert.ok(result.includes("More text"));
+  });
+
+  it("strips image embeds", () => {
+    const content = "Body\n![[attachments/img.jpg]]\nMore text";
+    const result = cleanContentForPrompt(content);
+    assert.ok(!result.includes("![["));
+    assert.ok(result.includes("More text"));
+  });
+
+  it("strips inline markdown formatting", () => {
+    const content = "**bold** and *italic* and ~~strike~~";
+    const result = cleanContentForPrompt(content);
+    assert.ok(result.includes("bold"));
+    assert.ok(!result.includes("**"));
+    assert.ok(!result.includes("~~"));
+  });
+});
+
 describe("buildImagePrompt", () => {
-  it("wraps content in image generation prompt", () => {
+  it("wraps cleaned content in image generation prompt", () => {
     const result = buildImagePrompt("Hello world post");
-    assert.equal(
-      result,
-      "generate an image to illustrate the following blog post: Hello world post",
-    );
+    assert.ok(result.startsWith("generate an image to illustrate the following blog post: "));
+    assert.ok(result.includes("Hello world post"));
+  });
+
+  it("strips frontmatter from prompt", () => {
+    const content = "---\ntitle: Test\nshare: true\n---\n# Title\nBody text";
+    const result = buildImagePrompt(content);
+    assert.ok(!result.includes("title: Test"));
+    assert.ok(result.includes("Body text"));
+  });
+
+  it("truncates to fit within prompt limit", () => {
+    const longContent = "A".repeat(3000);
+    const result = buildImagePrompt(longContent);
+    assert.ok(result.length <= 2048);
+    assert.ok(result.endsWith("…"));
+  });
+
+  it("does not truncate short content", () => {
+    const result = buildImagePrompt("Short post about coding");
+    assert.ok(!result.endsWith("…"));
   });
 });
 
@@ -1291,7 +1357,13 @@ describe("resolveImageProvider with describer", () => {
 
 describe("makeGeminiDescriber", () => {
   it("returns a PromptDescriber function", () => {
-    const describer = makeGeminiDescriber("fake-key");
+    const describer = makeGeminiDescriber("fake-key", DEFAULT_DESCRIBER_MODEL);
     assert.equal(typeof describer, "function");
+  });
+});
+
+describe("DEFAULT_DESCRIBER_MODEL", () => {
+  it("uses gemini-3.1-flash-lite-preview", () => {
+    assert.equal(DEFAULT_DESCRIBER_MODEL, "gemini-3.1-flash-lite-preview");
   });
 });

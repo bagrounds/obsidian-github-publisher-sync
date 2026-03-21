@@ -1,11 +1,17 @@
 import fs from "node:fs";
 import path from "node:path";
 
+import { parseFrontmatter } from "./frontmatter.ts";
+import { stripEmbedSections } from "./blog-prompt.ts";
+
 const IMAGE_EXTENSIONS = /\.(jpg|jpeg|png|gif|webp)$/i;
 const OBSIDIAN_IMAGE_EMBED = /!\[\[(?:attachments\/)?[^\]]+\.(jpg|jpeg|png|gif|webp)\]\]/i;
 const MARKDOWN_IMAGE_EMBED = /!\[[^\]]*\]\([^)]+\.(jpg|jpeg|png|gif|webp)\)/i;
 const EXCLUDED_FILES = new Set(["index.md", "AGENTS.md", "IDEAS.md"]);
 const DATE_FILENAME_PATTERN = /^(\d{4}-\d{2}-\d{2})/;
+
+export const DEFAULT_DESCRIBER_MODEL = "gemini-3.1-flash-lite-preview";
+const CLOUDFLARE_PROMPT_MAX_LENGTH = 2048;
 
 export interface ImageGenerationResult {
   readonly skipped: boolean;
@@ -137,36 +143,65 @@ export const updateFrontmatterFields = (
     return `---\n${entries}\n---\n${content}`;
   }
 
-  let endIndex = -1;
-  for (let i = 1; i < lines.length; i++) {
-    if (lines[i]?.trim() === "---") {
-      endIndex = i;
-      break;
-    }
-  }
-
+  const endIndex = lines.findIndex((line, i) => i > 0 && line.trim() === "---");
   if (endIndex < 0) return content;
 
-  for (const [key, value] of Object.entries(fields)) {
-    let found = false;
-    for (let i = 1; i < endIndex; i++) {
-      if (lines[i]?.match(new RegExp(`^${key}:\\s`))) {
-        lines[i] = `${key}: ${quoteYamlValue(value)}`;
-        found = true;
-        break;
-      }
-    }
-    if (!found) {
-      lines.splice(endIndex, 0, `${key}: ${quoteYamlValue(value)}`);
-      endIndex++;
-    }
-  }
+  const frontmatterLines = lines.slice(1, endIndex);
+  const beforeFrontmatter = lines.slice(0, 1);
+  const afterFrontmatter = lines.slice(endIndex);
 
-  return lines.join("\n");
+  const updatedFrontmatter = Object.entries(fields).reduce(
+    (acc, [key, value]) => {
+      const existingIndex = acc.findIndex((line) =>
+        new RegExp(`^${key}:\\s`).test(line),
+      );
+      return existingIndex >= 0
+        ? acc.map((line, i) =>
+            i === existingIndex ? `${key}: ${quoteYamlValue(value)}` : line,
+          )
+        : [...acc, `${key}: ${quoteYamlValue(value)}`];
+    },
+    frontmatterLines,
+  );
+
+  return [...beforeFrontmatter, ...updatedFrontmatter, ...afterFrontmatter].join(
+    "\n",
+  );
 };
 
-export const buildImagePrompt = (postContent: string): string =>
-  `generate an image to illustrate the following blog post: ${postContent}`;
+const stripMarkdownSyntax = (text: string): string =>
+  text
+    .replace(/^#{1,6}\s+/gm, "")
+    .replace(/!\[\[[^\]]*\]\]/g, "")
+    .replace(/!\[[^\]]*\]\([^)]*\)/g, "")
+    .replace(/\[[^\]]*\]\([^)]*\)/g, (m) => m.replace(/\[([^\]]*)\]\([^)]*\)/, "$1"))
+    .replace(/```[\s\S]*?```/g, "")
+    .replace(/`[^`]*`/g, "")
+    .replace(/[*_~]{1,3}/g, "")
+    .replace(/^[-*+]\s+/gm, "")
+    .replace(/^\d+\.\s+/gm, "")
+    .replace(/^>\s+/gm, "")
+    .replace(/\|[^|\n]*\|/g, "")
+    .replace(/^[-|:\s]+$/gm, "")
+    .replace(/\n{3,}/g, "\n\n")
+    .trim();
+
+export const cleanContentForPrompt = (rawContent: string): string => {
+  const { body } = parseFrontmatter(rawContent);
+  const withoutEmbeds = stripEmbedSections(body);
+  return stripMarkdownSyntax(withoutEmbeds);
+};
+
+export const buildImagePrompt = (postContent: string): string => {
+  const cleaned = cleanContentForPrompt(postContent);
+  const prefix = "generate an image to illustrate the following blog post: ";
+  const maxContentLength = CLOUDFLARE_PROMPT_MAX_LENGTH - prefix.length;
+  const truncated =
+    cleaned.length > maxContentLength
+      ? cleaned.slice(0, maxContentLength - 1) + "…"
+      : cleaned;
+  return `${prefix}${truncated}`;
+};
 
 export const mimeTypeToExtension = (mimeType: string): string => {
   const extensions: Record<string, string> = {
@@ -279,7 +314,7 @@ const IMAGE_DESCRIPTION_SYSTEM_PROMPT = [
 export const describeImageWithGemini = async (
   apiKey: string,
   content: string,
-  model: string = "gemini-2.5-flash",
+  model: string,
 ): Promise<string> => {
   const { GoogleGenAI } = await import("@google/genai");
   const ai = new GoogleGenAI({ apiKey });
@@ -295,7 +330,7 @@ export const describeImageWithGemini = async (
 
 export const makeGeminiDescriber = (
   apiKey: string,
-  model: string = "gemini-2.5-flash",
+  model: string,
 ): PromptDescriber =>
   (content: string) => describeImageWithGemini(apiKey, content, model);
 
@@ -362,8 +397,9 @@ export const resolveImageProvider = (env: Record<string, string | undefined>): I
   const cfModel = env.CLOUDFLARE_IMAGE_MODEL ?? "@cf/black-forest-labs/flux-1-schnell";
 
   const geminiKey = env.GEMINI_API_KEY;
+  const describerModel = env.PROMPT_DESCRIBER_MODEL ?? DEFAULT_DESCRIBER_MODEL;
   const describePrompt = geminiKey
-    ? makeGeminiDescriber(geminiKey)
+    ? makeGeminiDescriber(geminiKey, describerModel)
     : undefined;
 
   if (cfToken && cfAccountId) {

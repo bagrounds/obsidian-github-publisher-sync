@@ -84,7 +84,7 @@ youtube: https://youtu.be/cIla9axQRyM
 - 🍎 **The Dorito Effect** by Mark Schatzker: Explores how modern food science has decoupled the reward of flavor from actual nutritional content, which relates to the video's discussion of taste, dopamine, and food seeking.  
   
 ### Contrasting  
-- 🥗 **In Defense of Food** by Michael Pollan: Advocates for a whole-food, reductionist approach ("Eat food. Not too much. Mostly plants."), cautioning against over-reliance on isolated "nutrients" and the concept of "nutritionism," which contrasts the video's focus on supplements.  
+- **[🛡️🥦 In Defense of Food: An Eater's Manifesto](../books/in-defense-of-food-an-eaters-manifesto.md)** by Michael Pollan: Advocates for a whole-food, reductionist approach ("Eat food. Not too much. Mostly plants."), cautioning against over-reliance on isolated "nutrients" and the concept of "nutritionism," which contrasts the video's focus on supplements.  
 - 📜 **Nourishing Traditions** by Sally Fallon Morell: Promotes a nutrient-dense diet based on traditional food preparation and consumption methods, contrasting the modern, high-tech approach to supplementation.  
   
 ### Creatively Related  

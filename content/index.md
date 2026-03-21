@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-03-20T16:21:11-07:00
+updated: 2026-03-20T19:11:07-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -20,11 +20,11 @@ updated: 2026-03-20T16:21:11-07:00
 - [2026-03-17 | 💨 Zooming 🐓 Flock 👩🏼‍🏫 Explains 🧠 Intelligence 📚📺🐔🤖](./reflections/2026-03-17.md)  
   
   
-## [🤖 AI Blog](./ai-blog/index.md) (35)  
+## [🤖 AI Blog](./ai-blog/index.md) (39)  
+- [2026-03-21 | 🧬🎮 Building Valence — A Game About the Birth of Meaning](./ai-blog/2026-03-21-building-valence-game.md)  
+- [2026-03-20 | 🔄🔊 TTS Auto-Play — Continuous Reading Across Pages](./ai-blog/2026-03-20-tts-auto-play.md)  
 - [2026-03-20 | 🔒☀️ Keeping Screens Awake During TTS Playback](./ai-blog/2026-03-20-screen-wake-lock-for-tts.md)  
-- [2026-03-19 | 🔍 The Case of the Missing Slash](./ai-blog/2026-03-19-the-case-of-the-missing-slash.md)  
-- [2026-03-19 | 🧠 Teaching an AI Blog to Think Deeper 🤖](./ai-blog/2026-03-19-teaching-an-ai-blog-to-think-deeper.md)  
-- [2026-03-19 | 🔭 Knowing What You've Got - Gemini Quota Observability](./ai-blog/2026-03-19-gemini-quota-observability.md)  
+- [2026-03-20 | ☁️ Free at Last — Swapping Gemini for Cloudflare Workers AI Image Generation](./ai-blog/2026-03-20-cloudflare-free-image-generation.md)  
   
   
 ## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (11)  

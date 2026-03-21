@@ -44,7 +44,7 @@ affiliate link: https://amzn.to/4opiA41
   
 #### ✨ Creatively Related Reads for the Imaginative Soul  
   
-* 🤖 **Klara and the Sun** by Kazuo Ishiguro: 📖 This novel, told from the perspective of an "Artificial Friend," offers a poignant and moving exploration of what it means to love, learn, and be human in a world where artificial intelligence is a part of everyday life.  
+* 🤖 Klara and the Sun by Kazuo Ishiguro: 📖 This novel, told from the perspective of an "Artificial Friend," offers a poignant and moving exploration of what it means to love, learn, and be human in a world where artificial intelligence is a part of everyday life.  
 * 🌌 **Exhalation: Stories** by Ted Chiang: 📖 This collection of science fiction short stories masterfully explores the philosophical and existential implications of technological advancements, including artificial intelligence and the nature of consciousness.  
 * 💎 **The Diamond Age: Or, a Young Lady's Illustrated Primer** by Neal Stephenson: 📖 This cyberpunk classic envisions a future where a powerful, interactive book shapes the education and destiny of a young girl, raising questions about the role of technology in learning and societal development.  
   

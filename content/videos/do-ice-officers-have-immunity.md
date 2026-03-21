@@ -54,7 +54,7 @@ youtube: https://youtu.be/KCFbXjqq0U4
 ### ↔️ Similar  
   
 * 📖 Autocracy in America by Anne Applebaum explores how democratic institutions are weakened from within by political actors.  
-* 📖 Border Wars by Julie Hirschfeld Davis and Michael D. Shear from Simon and Schuster detail the internal battles over immigration policy.  
+* [🧱⚔️🚶‍♀️ Border Wars: Inside Trump's Assault on Immigration](../books/border-wars-inside-trumps-assault-on-immigration.md) by Julie Hirschfeld Davis and Michael D. Shear from Simon and Schuster detail the internal battles over immigration policy.  
   
 ### 🆚 Contrasting  
   

@@ -4,10 +4,10 @@ aliases:
   - 🇺🇸📈💡🔮🚀 What the U.S. has accomplished in 250 years of innovation and what’s next
 title: 🇺🇸📈💡🔮🚀 What the U.S. has accomplished in 250 years of innovation and what’s next
 URL: https://bagrounds.org/videos/what-the-us-has-accomplished-in-250-years-of-innovation-and-whats-next
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: PBS NewsHour
-tags: 
+tags:
 youtube: https://youtu.be/Keytao-qAWI
 ---
 [Home](../index.md) > [Videos](./index.md)  
@@ -36,7 +36,7 @@ youtube: https://youtu.be/Keytao-qAWI
     * "Albion's Seed: Four British Folkways in America" by David Hackett Fischer  
     * "The American Character" by Denis Brogan  
 * **For the idea of 🇺🇸 as a "work in progress" and civic engagement:**  
-    * "A People's History of the United States" by Howard Zinn  
+    * A People's History of the United States by Howard Zinn  
     * [👻🇺🇸⚔️🪽 The Soul of America: The Battle for Our Better Angels](../books/the-soul-of-america-the-battle-for-our-better-angels.md) by Jon Meacham.  
   
 ## 🐦 Tweet  

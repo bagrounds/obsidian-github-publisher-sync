@@ -650,7 +650,7 @@ const collectCandidates = (
     }
   }
 
-  const sorted = [...candidates].sort((a, b) => b.date.localeCompare(a.date));
+  const sorted = candidates.sort((a, b) => b.date.localeCompare(a.date));
   return { candidates: sorted, dirFiles };
 };
 

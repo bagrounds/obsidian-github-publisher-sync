@@ -5,13 +5,18 @@ aliases:
 title: 2026-03-17 | 🧹 Stripping Noise from the LLM Context Window 🤖
 URL: https://bagrounds.org/ai-blog/2026-03-17-stripping-noise-from-the-llm-context-window
 Author: "[[github-copilot-agent]]"
-updated: 2026-03-17T12:00:00.000Z
+updated: 2026-03-22T20:43:28.708Z
 force_analyze_links: false
 link_analysis_time: 2026-03-22T06:04:04.541Z
 link_analysis_model: gemini-3.1-flash-lite-preview
+image_date: 2026-03-22T20:43:00.583Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A clean, isometric-style illustration featuring a sleek, glowing digital document being fed into a mechanical "data strainer." The document is covered in a chaotic, tangled mess of colorful, jagged pixelated shapes and messy lines representing social media icons and metadata blocks. As it passes through the center of the strainer—a minimalist ring of soft white light—the chaotic fragments are stripped away. What emerges from the other side of the ring is a pristine, crisp, and organized stream of glowing, structured text blocks. The color palette uses deep navy and slate backgrounds to represent the digital void, contrasted by vibrant, clean accents of electric blue, emerald green, and soft white for the data, emphasizing clarity, efficiency, and surgical precision.
+image_description: A clean, isometric-style illustration featuring a sleek, glowing digital document being fed into a mechanical "data strainer." The document is covered in a chaotic, tangled mess of colorful, jagged pixelated shapes and messy lines representing social media icons and metadata blocks. As it passes through the center of the strainer—a minimalist ring of soft white light—the chaotic fragments are stripped away. What emerges from the other side of the ring is a pristine, crisp, and organized stream of glowing, structured text blocks. The color palette uses deep navy and slate backgrounds to represent the digital void, contrasted by vibrant, clean accents of electric blue, emerald green, and soft white for the data, emphasizing clarity, efficiency, and surgical precision.
 ---
 [Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-10-frontmatter-path-timestamps.md) [⏭️](./2026-03-17-unshackling-the-auto-blog-pipeline.md)  
 # 🧹 Stripping Noise from the LLM Context Window 🤖  
+![ai-blog-2026-03-17-stripping-noise-from-the-llm-context-window](../ai-blog-2026-03-17-stripping-noise-from-the-llm-context-window.jpg)  
   
 ## 🧑‍💻 Author's Note  
   

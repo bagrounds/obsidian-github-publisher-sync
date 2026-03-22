@@ -32,7 +32,6 @@ import {
   extractFrontmatterValue,
   shouldRegenerateImage,
   removeImageEmbed,
-  quoteYamlValue,
   sanitizeForYaml,
   updateFrontmatterFields,
   makeGeminiDescriber,
@@ -1258,31 +1257,6 @@ describe("sanitizeForYaml", () => {
   });
 });
 
-describe("quoteYamlValue", () => {
-  it("returns simple values unquoted", () => {
-    assert.equal(quoteYamlValue("simple value"), "simple value");
-  });
-
-  it("quotes values with colons", () => {
-    assert.equal(quoteYamlValue("key: value"), '"key: value"');
-  });
-
-  it("quotes values with at signs", () => {
-    const result = quoteYamlValue("@cf/model/name");
-    assert.equal(result, '"@cf/model/name"');
-  });
-
-  it("escapes internal double quotes", () => {
-    const result = quoteYamlValue('said "hello"');
-    assert.equal(result, '"said \\"hello\\""');
-  });
-
-  it("collapses newlines into spaces", () => {
-    const result = quoteYamlValue("line one\nline two");
-    assert.equal(result, "line one line two");
-  });
-});
-
 describe("updateFrontmatterFields", () => {
   it("adds fields to existing frontmatter", () => {
     const content = "---\ntitle: Test\n---\nBody";
@@ -1312,7 +1286,7 @@ describe("updateFrontmatterFields", () => {
     assert.ok(result.startsWith("---\nimage_model: test-model\n---"));
   });
 
-  it("quotes values with special YAML characters", () => {
+  it("quotes values with special YAML characters via js-yaml", () => {
     const content = "---\ntitle: Test\n---\nBody";
     const result = updateFrontmatterFields(content, {
       image_model: "@cf/black-forest-labs/flux-1-schnell",
@@ -1325,7 +1299,7 @@ describe("updateFrontmatterFields", () => {
     const result = updateFrontmatterFields(content, {
       regenerate_image: "false",
     });
-    assert.ok(result.includes("regenerate_image: false"));
+    assert.ok(result.includes("regenerate_image: \"false\"") || result.includes("regenerate_image: 'false'"));
     assert.ok(!result.includes("regenerate_image: true"));
   });
 
@@ -1337,6 +1311,37 @@ describe("updateFrontmatterFields", () => {
     assert.ok(result.includes("image_prompt: new value"));
     const promptCount = (result.match(/^image_prompt:/gm) ?? []).length;
     assert.equal(promptCount, 1, "should have exactly one image_prompt field");
+  });
+
+  it("preserves arrays in frontmatter", () => {
+    const content = "---\ntitle: Test\naliases:\n  - alias1\n  - alias2\n---\nBody";
+    const result = updateFrontmatterFields(content, {
+      image_model: "test-model",
+    });
+    assert.ok(result.includes("alias1"));
+    assert.ok(result.includes("alias2"));
+    assert.ok(result.includes("image_model: test-model"));
+  });
+
+  it("preserves empty tags field", () => {
+    const content = "---\ntitle: Test\ntags:\n---\nBody";
+    const result = updateFrontmatterFields(content, {
+      updated: "2026-03-22",
+    });
+    assert.ok(result.includes("tags:"));
+    assert.ok(result.includes("updated:"));
+    assert.ok(result.includes("2026-03-22"));
+    const tagsCount = (result.match(/^tags:/gm) ?? []).length;
+    assert.equal(tagsCount, 1, "should have exactly one tags field");
+  });
+
+  it("handles colons in values via proper YAML serialization", () => {
+    const content = "---\ntitle: Test\n---\nBody";
+    const result = updateFrontmatterFields(content, {
+      image_prompt: "A sunset: golden light over mountains",
+    });
+    assert.ok(result.includes("image_prompt:"));
+    assert.ok(result.includes("A sunset: golden light over mountains"));
   });
 });
 
@@ -1386,7 +1391,7 @@ describe("processNote with regeneration", () => {
 
     const updated = fs.readFileSync(notePath, "utf-8");
     assert.ok(updated.includes("![[attachments/chickie-loo-2026-03-22-test-post.jpg]]"));
-    assert.ok(updated.includes("regenerate_image: false"));
+    assert.equal(shouldRegenerateImage(updated), false);
     assert.ok(!fs.existsSync(path.join(attachmentsDir, "old-image.jpg")));
   });
 

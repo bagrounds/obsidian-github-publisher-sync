@@ -1,6 +1,8 @@
 import fs from "node:fs";
 import path from "node:path";
 
+import yaml from "js-yaml";
+
 import { parseFrontmatter } from "./frontmatter.ts";
 import { stripEmbedSections } from "./blog-prompt.ts";
 
@@ -115,19 +117,53 @@ export const insertImageEmbed = (
   return lines.join("\n");
 };
 
+const splitFrontmatter = (
+  content: string,
+): {
+  readonly yamlBlock: string;
+  readonly body: string;
+  readonly hasFrontmatter: boolean;
+} => {
+  const lines = content.split("\n");
+  if (lines[0]?.trim() !== "---") {
+    return { yamlBlock: "", body: content, hasFrontmatter: false };
+  }
+
+  const endIndex = lines.findIndex((line, i) => i > 0 && line.trim() === "---");
+  if (endIndex < 0) {
+    return { yamlBlock: "", body: content, hasFrontmatter: false };
+  }
+
+  return {
+    yamlBlock: lines.slice(1, endIndex).join("\n"),
+    body: lines.slice(endIndex + 1).join("\n"),
+    hasFrontmatter: true,
+  };
+};
+
+const YAML_OPTS: yaml.DumpOptions & yaml.LoadOptions = {
+  lineWidth: -1,
+  quotingType: '"',
+  forceQuotes: false,
+  schema: yaml.JSON_SCHEMA,
+};
+
+const dumpYaml = (doc: Record<string, unknown>): string =>
+  yaml
+    .dump(doc, YAML_OPTS)
+    .trim()
+    .replace(/^(\S+): null$/gm, "$1:");
+
 export const extractFrontmatterValue = (
   content: string,
   key: string,
 ): string | undefined => {
-  const lines = content.split("\n");
-  if (lines[0]?.trim() !== "---") return undefined;
+  const { yamlBlock, hasFrontmatter } = splitFrontmatter(content);
+  if (!hasFrontmatter) return undefined;
 
-  for (let i = 1; i < lines.length; i++) {
-    if (lines[i]?.trim() === "---") break;
-    const match = lines[i]?.match(new RegExp(`^${key}:\\s*(.+)$`));
-    if (match) return (match[1] as string).replace(/^["']|["']$/g, "").trim();
-  }
-  return undefined;
+  const doc = yaml.load(yamlBlock, YAML_OPTS) as Record<string, unknown> | null;
+  const value = doc?.[key];
+  return value != null ? String(value) : undefined;
 };
 
 export const shouldRegenerateImage = (content: string): boolean =>
@@ -156,50 +192,18 @@ export const sanitizeForYaml = (value: string): string =>
     .replace(/["'\\`]/g, "")
     .trim();
 
-export const quoteYamlValue = (value: string): string => {
-  const oneLine = value.replace(/\n/g, " ").replace(/\s+/g, " ").trim();
-  return /[:#{}\[\]&*!|>'"@`,]/.test(oneLine)
-    ? `"${oneLine.replace(/\\/g, "\\\\").replace(/"/g, '\\"')}"`
-    : oneLine;
-};
-
 export const updateFrontmatterFields = (
   content: string,
   fields: Record<string, string>,
 ): string => {
-  const lines = content.split("\n");
+  const { yamlBlock, body, hasFrontmatter } = splitFrontmatter(content);
 
-  if (lines[0]?.trim() !== "---") {
-    const entries = Object.entries(fields)
-      .map(([k, v]) => `${k}: ${quoteYamlValue(v)}`)
-      .join("\n");
-    return `---\n${entries}\n---\n${content}`;
-  }
+  const doc = hasFrontmatter
+    ? ((yaml.load(yamlBlock, YAML_OPTS) as Record<string, unknown> | null) ?? {})
+    : {};
 
-  const endIndex = lines.findIndex((line, i) => i > 0 && line.trim() === "---");
-  if (endIndex < 0) return content;
-
-  const frontmatterLines = lines.slice(1, endIndex);
-  const beforeFrontmatter = lines.slice(0, 1);
-  const afterFrontmatter = lines.slice(endIndex);
-
-  const updatedFrontmatter = Object.entries(fields).reduce(
-    (acc, [key, value]) => {
-      const existingIndex = acc.findIndex((line) =>
-        new RegExp(`^${key}:(\\s|$)`).test(line),
-      );
-      return existingIndex >= 0
-        ? acc.map((line, i) =>
-            i === existingIndex ? `${key}: ${quoteYamlValue(value)}` : line,
-          )
-        : [...acc, `${key}: ${quoteYamlValue(value)}`];
-    },
-    frontmatterLines,
-  );
-
-  return [...beforeFrontmatter, ...updatedFrontmatter, ...afterFrontmatter].join(
-    "\n",
-  );
+  const merged = { ...doc, ...fields };
+  return `---\n${dumpYaml(merged)}\n---\n${body}`;
 };
 
 const stripMarkdownSyntax = (text: string): string =>
@@ -801,36 +805,9 @@ export const updateFrontmatterTimestamp = (
 ): void => {
   if (!fs.existsSync(filePath)) return;
 
-  let content = fs.readFileSync(filePath, "utf-8");
-  const lines = content.split("\n");
-
-  if (lines[0]?.trim() === "---") {
-    let endIndex = -1;
-    let updatedLineIndex = -1;
-
-    for (let i = 1; i < lines.length; i++) {
-      if (lines[i]?.trim() === "---") {
-        endIndex = i;
-        break;
-      }
-      if (lines[i]?.match(/^updated:(\s|$)/)) {
-        updatedLineIndex = i;
-      }
-    }
-
-    if (endIndex >= 0) {
-      if (updatedLineIndex >= 0) {
-        lines[updatedLineIndex] = `updated: ${timestamp}`;
-      } else {
-        lines.splice(endIndex, 0, `updated: ${timestamp}`);
-      }
-      content = lines.join("\n");
-    }
-  } else {
-    content = `---\nupdated: ${timestamp}\n---\n${content}`;
-  }
-
-  fs.writeFileSync(filePath, content, "utf-8");
+  const content = fs.readFileSync(filePath, "utf-8");
+  const updated = updateFrontmatterFields(content, { updated: timestamp });
+  fs.writeFileSync(filePath, updated, "utf-8");
 };
 
 export const syncMarkdownDir = (

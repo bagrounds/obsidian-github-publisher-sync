@@ -5,9 +5,12 @@ aliases:
 title: "🍃🧠🤝🏼 Influence: The Psychology of Persuasion"
 URL: https://bagrounds.org/books/Influence
 Author: "[[Robert Cialdini]]"
-tags: 
+tags:
 affiliate link: https://amzn.to/4dJSMul
 CTA: 🤝 Master persuasion.
+force_analyze_links: false
+link_analysis_time: 2026-03-22T23:36:07.355Z
+link_analysis_model: gemini-3.1-flash-lite-preview
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🍃🧠🤝🏼 Influence: The Psychology of Persuasion  

@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-03-21T15:28:38-07:00
+updated: 2026-03-21T23:34:05-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -14,17 +14,17 @@ updated: 2026-03-21T15:28:38-07:00
 💬 Comment on any page with your GitHub account.  
   
 ## [🪞 Reflections](./reflections/index.md) ~ Blog (492)  
-- [2026-03-21](./reflections/2026-03-21.md)  
+- [2026-03-21 | 🕷️⏳ Children 🧠 Memory 🐔 Heavy 💔 Stewardship 📚🐔🤖📄📰](./reflections/2026-03-21.md)  
 - [2026-03-20 | 🤖 Synthetic 🧠 Intelligence 💭 Thinks 🔍 about 🧬 Meaning ⚛️ Valence 🏛️ Democracy 🏗️ Evolution & 🥚 Eggs 🎮📚🐔🤖🤖📺](./reflections/2026-03-20.md)  
 - [2026-03-19 | 🧖🏼‍♀️ Sauna 🎣 Bass 🤖 Autonomy 📖 Book 📚🐔🤖📺](./reflections/2026-03-19.md)  
 - [2026-03-18 | 🧠 Evolution, 🏰 Empire, and the 🎷 Symphony of 🐔 Chickie 🎵 Loo 📚🐔🤖📺](./reflections/2026-03-18.md)  
   
   
-## [🤖 AI Blog](./ai-blog/index.md) (39)  
+## [🤖 AI Blog](./ai-blog/index.md) (41)  
+- [2026-03-21 | 🎨 Smarter Image Generation — Gemini Descriptions, Regeneration, and Model Research](./ai-blog/2026-03-21-smarter-image-generation.md)  
+- [🔗🧠 Internal Linking: Teaching a Knowledge Base to Weave Its Own Web](./ai-blog/2026-03-21-internal-linking-bfs-wikilinks.md)  
 - [2026-03-21 | 🧬🎮 Building Valence — A Game About the Birth of Meaning](./ai-blog/2026-03-21-building-valence-game.md)  
 - [2026-03-20 | 🔄🔊 TTS Auto-Play — Continuous Reading Across Pages](./ai-blog/2026-03-20-tts-auto-play.md)  
-- [2026-03-20 | 🔒☀️ Keeping Screens Awake During TTS Playback](./ai-blog/2026-03-20-screen-wake-lock-for-tts.md)  
-- [2026-03-20 | ☁️ Free at Last — Swapping Gemini for Cloudflare Workers AI Image Generation](./ai-blog/2026-03-20-cloudflare-free-image-generation.md)  
   
   
 ## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (12)  
@@ -50,25 +50,25 @@ updated: 2026-03-21T15:28:38-07:00
   
   
 ## [📚 Books](./books/index.md) (957)  
-- [🧠📖✨ Children of Memory](./books/children-of-memory.md)  
-- [🕷️⏳ Children of Time](./books/children-of-time.md)  
-- [✨🎭🧘‍♂️🌌 The Creative Act: A Way of Being](./books/the-creative-act.md)  
-- [🪄 Big Magic: Creative Living Beyond Fear](./books/big-magic.md)  
-- [🐦🕊️ Bird by Bird: Some Instructions on Writing and Life](./books/bird-by-bird.md)  
+- [💾⬆️🛡️ Designing Data-Intensive Applications: The Big Ideas Behind Reliable, Scalable, and Maintainable Systems](./books/designing-data-intensive-applications.md)  
+- [👶🤔❤️ The Philosophical Baby: What Children's Minds Tell Us About Truth, Love, and the Meaning of Life](./books/the-philosophical-baby-what-childrens-minds-tell-us-about-truth-love-and-the-meaning-of-life.md)  
+- [😇😈 Behave: The Biology of Humans at Our Best and Worst](./books/behave-the-biology-of-humans-at-our-best-and-worst.md)  
+- [📜🌍⏳ Sapiens: A Brief History of Humankind](./books/sapiens-a-brief-history-of-humankind.md)  
 - [✍️📚⏱️ How to Write a Book in 30 Days](./books/how-to-write-a-book-in-30-days.md)  
-- [🏚️💰 Evicted: Poverty and Profit in the American City](./books/evicted-poverty-and-profit-in-the-american-city.md)  
-- [🫥🇺🇸😡💔 Strangers in Their Own Land: Anger and Mourning on the American Right](./books/strangers-in-their-own-land.md)  
-- [🗳️🕊️🇺🇸 Democracy in America](./books/democracy-in-america.md)  
-- [🔁🤪 Catch-22](./books/catch-22.md)  
+- [⚔️🤫 The Twilight War: The Secret History of America's Thirty-Year Conflict with Iran](./books/the-twilight-war-the-secret-history-of-americas-thirty-year-conflict-with-iran.md)  
+- [🥀 Twilight of Democracy: 🐍 The Seductive Lure of Authoritarianism](./books/twilight-of-democracy.md)  
+- [🙅‍♀️👹 It Can't Happen Here](./books/it-cant-happen-here.md)  
+- [👑🚫📜2️⃣0️⃣ On Tyranny: Twenty Lessons from the Twentieth Century](./books/on-tyranny.md)  
+- [🗳️🏛️☠️ How Democracies Die](./books/how-democracies-die.md)  
   
   
 ## [📺 Videos](./videos/index.md) (700)  
 - [💰💥🇮🇷🇺🇸 Brooks and Capehart on Trump struggling to contain economic fallout of Iran war](./videos/brooks-and-capehart-on-trump-struggling-to-contain-economic-fallout-of-iran-war.md)  
+- [😠🗣️🔥🌍🗣️🧖 Alexander Stubb on «difficult» conversations with Trump, global «disorder» and sauna diplomacy](./videos/alexander-stubb-on-difficult-conversations-with-trump-global-disorder-and-sauna-diplomacy.md)  
 - [💡🧠📈💰 The Smartest Way To Turn Your Expertise Into $1M](./videos/the-smartest-way-to-turn-your-expertise-into-1m.md)  
 - [🧠💰📈 The psychology of making money](./videos/the-psychology-of-making-money.md)  
 - [🤖🤝🏛️ AI and Democracy (Chris Bail at Lake Como Lectures on Democracy)](./videos/ai-and-democracy-chris-bail-at-lake-como-lectures-on-democracy.md)  
 - [📺🎤🗣️ J.D. Vance: Last Week Tonight with John Oliver (HBO)](./videos/jd-vance-last-week-tonight-with-john-oliver-hbo.md)  
-- [😠🗣️🔥🌍🗣️🧖 Alexander Stubb on «difficult» conversations with Trump, global «disorder» and sauna diplomacy](./videos/alexander-stubb-on-difficult-conversations-with-trump-global-disorder-and-sauna-diplomacy.md)  
 - [📈🗣️📺 USAID: Last Week Tonight with John Oliver (HBO)](./videos/usaid-last-week-tonight-with-john-oliver-hbo.md)  
 - [👑🤝🇺🇸 The Art of Befriending Trump | President Stubb](./videos/the-art-of-befriending-trump-president-stubb.md)  
 - [🇫🇮🇪🇺🗣️🌍🇺🇸💥🇮🇷⚔️🇺🇦 FULL DISCUSSION: Finland President Stubb Slams Brexit, Talks Trump, Iran War, Ukraine, EU | AC1G](./videos/full-discussion-finland-president-stubb-slams-brexit-talks-trump-iran-war-ukraine-eu-ac1g.md)  

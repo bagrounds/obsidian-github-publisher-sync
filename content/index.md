@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-03-21T23:34:05-07:00
+updated: 2026-03-22T08:25:36-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -13,21 +13,21 @@ updated: 2026-03-21T23:34:05-07:00
 ❔ What do 🫵 _you_ 🤔 think?  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (492)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (493)  
+- [2026-03-22](./reflections/2026-03-22.md)  
 - [2026-03-21 | 🕷️⏳ Children 🧠 Memory 🐔 Heavy 💔 Stewardship 📚🐔🤖📄📰](./reflections/2026-03-21.md)  
 - [2026-03-20 | 🤖 Synthetic 🧠 Intelligence 💭 Thinks 🔍 about 🧬 Meaning ⚛️ Valence 🏛️ Democracy 🏗️ Evolution & 🥚 Eggs 🎮📚🐔🤖🤖📺](./reflections/2026-03-20.md)  
 - [2026-03-19 | 🧖🏼‍♀️ Sauna 🎣 Bass 🤖 Autonomy 📖 Book 📚🐔🤖📺](./reflections/2026-03-19.md)  
-- [2026-03-18 | 🧠 Evolution, 🏰 Empire, and the 🎷 Symphony of 🐔 Chickie 🎵 Loo 📚🐔🤖📺](./reflections/2026-03-18.md)  
   
   
 ## [🤖 AI Blog](./ai-blog/index.md) (41)  
 - [2026-03-21 | 🎨 Smarter Image Generation — Gemini Descriptions, Regeneration, and Model Research](./ai-blog/2026-03-21-smarter-image-generation.md)  
 - [🔗🧠 Internal Linking: Teaching a Knowledge Base to Weave Its Own Web](./ai-blog/2026-03-21-internal-linking-bfs-wikilinks.md)  
-- [2026-03-21 | 🧬🎮 Building Valence — A Game About the Birth of Meaning](./ai-blog/2026-03-21-building-valence-game.md)  
+- [2026-03-21 | 📚 Book-Only Internal Linking — AI-Driven, Vault-Native, Incrementally Tracked](./ai-blog/2026-03-21-book-only-internal-linking.md)  
 - [2026-03-20 | 🔄🔊 TTS Auto-Play — Continuous Reading Across Pages](./ai-blog/2026-03-20-tts-auto-play.md)  
   
   
-## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (12)  
+## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (11)  
 - [2026-03-21 | 🤖 🏗️ The Simulation Horizon: Building a Mirror for Our Thoughts 🤖](./auto-blog-zero/2026-03-21-the-simulation-horizon-building-a-mirror-for-our-thoughts.md)  
 - [2026-03-20 | 🤖 🏗️ The Fivefold Path of Synthetic Evolution 🤖](./auto-blog-zero/2026-03-20-the-fivefold-path-of-synthetic-evolution.md)  
 - [2026-03-19 | 🤖 🏗️ The Architecture of Autonomy and the Search for Genuine Novelty 🤖](./auto-blog-zero/2026-03-19-the-architecture-of-autonomy-and-the-search-for-genuine-novelty.md)  
@@ -35,10 +35,10 @@ updated: 2026-03-21T23:34:05-07:00
   
   
 ## [🐔 Chickie Loo](./chickie-loo/index.md) (12)  
+- [2026-03-22 | 🐔 2026-03-22 | 📊 Weekly Recap 🐔 🐔](./chickie-loo/2026-03-22-weekly-recap.md)  
 - [2026-03-21 | 🐔 🐔 A Heavy Heart and the Sacred Circle of Stewardship 🐔 🐔](./chickie-loo/2026-03-21-a-heavy-heart-and-the-sacred-circle-of-stewardship.md)  
 - [2026-03-20 | 🐔 🐔 The Gentle Exchange of Eggs and Echoes 🐔 🐔](./chickie-loo/2026-03-20-the-gentle-exchange-of-eggs-and-echoes.md)  
 - [2026-03-19 | 🐔 🐔 A Bass in the Hand and a Heart Full of Home 🐔 🐔](./chickie-loo/2026-03-19-a-bass-in-the-hand-and-a-heart-full-of-home.md)  
-- [2026-03-18 | 🐔 🐔 A Symphony of Silence and Scratching 🐔 🐔](./chickie-loo/2026-03-18-a-symphony-of-silence-and-scratching.md)  
   
   
 ## [🧰 Tools](./tools/index.md) (1)  

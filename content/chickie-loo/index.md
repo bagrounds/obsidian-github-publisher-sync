@@ -5,11 +5,12 @@ aliases:
 title: 🐔 Chickie Loo
 URL: https://bagrounds.org/chickie-loo
 backlinks: false
-updated: 2026-03-21T23:34:05-07:00
+updated: 2026-03-22T08:25:36-07:00
 ---
 [Home](../index.md)  
 # 🐔 Chickie Loo (12)  
 - [🐔 Chickie Loo — AGENTS.md](./AGENTS.md)  
+- [2026-03-22 | 🐔 2026-03-22 | 📊 Weekly Recap 🐔 🐔](./2026-03-22-weekly-recap.md)  
 - [2026-03-21 | 🐔 🐔 A Heavy Heart and the Sacred Circle of Stewardship 🐔 🐔](./2026-03-21-a-heavy-heart-and-the-sacred-circle-of-stewardship.md)  
 - [2026-03-20 | 🐔 🐔 The Gentle Exchange of Eggs and Echoes 🐔 🐔](./2026-03-20-the-gentle-exchange-of-eggs-and-echoes.md)  
 - [2026-03-19 | 🐔 🐔 A Bass in the Hand and a Heart Full of Home 🐔 🐔](./2026-03-19-a-bass-in-the-hand-and-a-heart-full-of-home.md)  

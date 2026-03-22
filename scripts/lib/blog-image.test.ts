@@ -33,6 +33,7 @@ import {
   shouldRegenerateImage,
   removeImageEmbed,
   quoteYamlValue,
+  sanitizeForYaml,
   updateFrontmatterFields,
   makeGeminiDescriber,
   type ImageGenerator,
@@ -924,6 +925,18 @@ describe("updateFrontmatterTimestamp", () => {
       updateFrontmatterTimestamp("/nonexistent/file.md", "2026-03-19T12:00:00Z");
     });
   });
+
+  it("updates empty updated field without creating duplicate", () => {
+    const filePath = path.join(tempDir, "test.md");
+    fs.writeFileSync(filePath, "---\ntitle: Test\nupdated:\n---\nBody\n");
+
+    updateFrontmatterTimestamp(filePath, "2026-03-19T12:00:00Z");
+
+    const content = fs.readFileSync(filePath, "utf-8");
+    assert.ok(content.includes("updated: 2026-03-19T12:00:00Z"));
+    const updatedCount = (content.match(/^updated:/gm) ?? []).length;
+    assert.equal(updatedCount, 1, "should have exactly one updated field");
+  });
 });
 
 describe("syncMarkdownDir", () => {
@@ -1211,6 +1224,40 @@ describe("removeImageEmbed", () => {
   });
 });
 
+describe("sanitizeForYaml", () => {
+  it("removes double quotes", () => {
+    assert.equal(sanitizeForYaml('A "magical" sunset'), "A magical sunset");
+  });
+
+  it("removes single quotes", () => {
+    assert.equal(sanitizeForYaml("A 'golden' sunset"), "A golden sunset");
+  });
+
+  it("removes backslashes", () => {
+    assert.equal(sanitizeForYaml("bright\\colors"), "brightcolors");
+  });
+
+  it("removes backticks", () => {
+    assert.equal(sanitizeForYaml("a `code` block"), "a code block");
+  });
+
+  it("collapses newlines into spaces", () => {
+    assert.equal(sanitizeForYaml("line one\nline two"), "line one line two");
+  });
+
+  it("collapses multiple spaces", () => {
+    assert.equal(sanitizeForYaml("too   many   spaces"), "too many spaces");
+  });
+
+  it("trims leading and trailing whitespace", () => {
+    assert.equal(sanitizeForYaml("  hello world  "), "hello world");
+  });
+
+  it("leaves clean text unchanged", () => {
+    assert.equal(sanitizeForYaml("A vibrant sunset over mountains"), "A vibrant sunset over mountains");
+  });
+});
+
 describe("quoteYamlValue", () => {
   it("returns simple values unquoted", () => {
     assert.equal(quoteYamlValue("simple value"), "simple value");
@@ -1280,6 +1327,16 @@ describe("updateFrontmatterFields", () => {
     });
     assert.ok(result.includes("regenerate_image: false"));
     assert.ok(!result.includes("regenerate_image: true"));
+  });
+
+  it("updates field that has no value (key with no space after colon)", () => {
+    const content = "---\ntitle: Test\nimage_prompt:\n---\nBody";
+    const result = updateFrontmatterFields(content, {
+      image_prompt: "new value",
+    });
+    assert.ok(result.includes("image_prompt: new value"));
+    const promptCount = (result.match(/^image_prompt:/gm) ?? []).length;
+    assert.equal(promptCount, 1, "should have exactly one image_prompt field");
   });
 });
 
@@ -1566,7 +1623,7 @@ describe("parseRetryDelay", () => {
   });
 });
 
-describe("processNote with cached image_description", () => {
+describe("processNote with cached image_prompt", () => {
   let tempDir: string;
   let blogDir: string;
   let attachmentsDir: string;
@@ -1587,11 +1644,11 @@ describe("processNote with cached image_description", () => {
     fs.rmSync(tempDir, { recursive: true, force: true });
   });
 
-  it("uses cached image_description instead of calling describer", async () => {
+  it("uses cached image_prompt instead of calling describer", async () => {
     const notePath = path.join(blogDir, "2026-03-22-test.md");
     fs.writeFileSync(
       notePath,
-      "---\ntitle: Test Post\nimage_description: A beautiful sunset over mountains\n---\n# Test Post\nBody text\n",
+      "---\ntitle: Test Post\nimage_prompt: A beautiful sunset over mountains\n---\n# Test Post\nBody text\n",
     );
 
     let describerCalled = false;
@@ -1614,7 +1671,7 @@ describe("processNote with cached image_description", () => {
     assert.equal(result.imagePrompt, "A beautiful sunset over mountains");
   });
 
-  it("calls describer when no cached description exists and stores it", async () => {
+  it("calls describer when no cached prompt exists", async () => {
     const notePath = path.join(blogDir, "2026-03-22-test.md");
     fs.writeFileSync(
       notePath,
@@ -1636,17 +1693,17 @@ describe("processNote with cached image_description", () => {
     assert.equal(result.imagePrompt, "A freshly generated description");
 
     const updated = fs.readFileSync(notePath, "utf-8");
-    assert.ok(updated.includes("image_description:"));
-    assert.ok(updated.includes("A freshly generated description"));
+    assert.ok(updated.includes("image_prompt:"));
+    assert.ok(!updated.includes("image_description:"));
   });
 
-  it("uses cached description even during image regeneration", async () => {
+  it("uses cached prompt even during image regeneration", async () => {
     const notePath = path.join(blogDir, "2026-03-22-test.md");
     fs.mkdirSync(attachmentsDir, { recursive: true });
     fs.writeFileSync(path.join(attachmentsDir, "old.jpg"), "old");
     fs.writeFileSync(
       notePath,
-      "---\ntitle: Test Post\nregenerate_image: true\nimage_description: Cached description from before\n---\n# Test Post\n![[attachments/old.jpg]]\nBody\n",
+      "---\ntitle: Test Post\nregenerate_image: true\nimage_prompt: Cached description from before\n---\n# Test Post\n![[attachments/old.jpg]]\nBody\n",
     );
 
     let describerCalled = false;
@@ -1669,23 +1726,30 @@ describe("processNote with cached image_description", () => {
     assert.equal(result.imagePrompt, "Cached description from before");
   });
 
-  it("does not store image_description when no describer is provided", async () => {
+  it("sanitizes describer output to remove quotes and special chars", async () => {
     const notePath = path.join(blogDir, "2026-03-22-test.md");
     fs.writeFileSync(
       notePath,
       "---\ntitle: Test Post\n---\n# Test Post\nBody text\n",
     );
 
-    await processNote(
+    const mockDescriber: PromptDescriber = async () =>
+      'A "magical" sunset with \'golden\' rays and \\bright\\ colors';
+
+    const result = await processNote(
       notePath,
       attachmentsDir,
       "fake-key",
       "fake-model",
       mockGenerate,
+      mockDescriber,
     );
 
-    const updated = fs.readFileSync(notePath, "utf-8");
-    assert.ok(!updated.includes("image_description:"));
+    assert.equal(result.skipped, false);
+    assert.ok(!result.imagePrompt?.includes('"'));
+    assert.ok(!result.imagePrompt?.includes("'"));
+    assert.ok(!result.imagePrompt?.includes("\\"));
+    assert.equal(result.imagePrompt, "A magical sunset with golden rays and bright colors");
   });
 });
 

@@ -62,8 +62,8 @@
    └─ found → Continue
 5. 🏷️ Derive image base name from file path
 6. 💭 Generate prompt
-   ├─ Cached image_description in frontmatter? → Use it (no API call)
-   ├─ describePrompt available? → Call Gemini describer → Cache in frontmatter
+   ├─ Cached image_prompt in frontmatter? → Use it (no API call)
+   ├─ describePrompt available? → Call Gemini describer → Sanitize → Store as image_prompt
    └─ Neither → Build prompt from post content directly
 7. 🎨 Generate image via provider (Cloudflare or Gemini)
 8. 💾 Save image to attachments directory
@@ -113,24 +113,31 @@
 |-------|------|-------------|------------|
 | `image_date` | 📅 ISO 8601 timestamp | When the image was generated | `processNote` |
 | `image_model` | 🤖 String | Model used for generation | `processNote` |
-| `image_prompt` | 💬 String | Prompt sent to image generator | `processNote` |
-| `image_description` | 📝 String | Cached Gemini-generated visual description | `processNote` (only when describer used) |
+| `image_prompt` | 💬 String | Prompt/description sent to image generator (doubles as description cache) | `processNote` |
 | `regenerate_image` | ✅ Boolean | Flag to force image regeneration | User (manual), cleared by `processNote` |
 | `updated` | 📅 ISO 8601 timestamp | Last modification time | `backfillImages` (chain update) |
 
 ### 💾 Description Caching Strategy
 
-🧠 The `image_description` field decouples description generation from image generation:
+🧠 The `image_prompt` field serves double duty — it stores the prompt used for image generation AND acts as the cached description for subsequent runs:
 
 - 💰 Description generation uses **Gemini text inference** quota
 - 🎨 Image generation uses **Cloudflare/Gemini image** quota
 - 🔄 These are independent rate-limited resources
 
 📋 Behavior:
-1. ✅ If `image_description` exists in frontmatter → use it directly (zero API calls for description)
-2. 🆕 If no `image_description` and describer available → call Gemini, cache result in frontmatter
-3. 📝 If no describer → build prompt from content directly (no `image_description` stored)
-4. ♻️ On image regeneration: reuse cached description, only regenerate the image itself
+1. ✅ If `image_prompt` exists in frontmatter → use it directly (zero API calls for description)
+2. 🆕 If no `image_prompt` and describer available → call Gemini, sanitize output, store as `image_prompt`
+3. 📝 If no describer → build prompt from content directly
+4. ♻️ On image regeneration: reuse cached `image_prompt`, only regenerate the image itself
+
+### 🧹 Description Sanitization
+
+🛡️ Gemini-generated descriptions are sanitized before storage via `sanitizeForYaml`:
+- 🚫 Removes double quotes, single quotes, backslashes, and backticks
+- 📏 Collapses newlines and multiple spaces into single spaces
+- ✂️ Trims leading/trailing whitespace
+- 🎯 This prevents YAML parsing issues in Obsidian's frontmatter parser
 
 ---
 
@@ -262,7 +269,7 @@ Image name: chickie-loo-2026-03-22-weekly-recap.jpg
 
 ### 3️⃣ extractFrontmatterValue Limited to Simple Single-Line Values
 
-📍 `extractFrontmatterValue` uses regex `^${key}:\s(.+)$` which only captures single-line values. YAML multiline strings, flow sequences, or deeply nested values would be missed.
+📍 `extractFrontmatterValue` uses regex `^${key}:\s*(.+)$` which only captures single-line values. YAML multiline strings, flow sequences, or deeply nested values would be missed.
 
 🎯 Impact: Low — all image-related frontmatter values are single-line strings.
 
@@ -286,17 +293,45 @@ Image name: chickie-loo-2026-03-22-weekly-recap.jpg
 
 ---
 
+## ✅ Fixed Bugs
+
+### 🔧 Duplicate `updated:` Field on Empty Values (Fixed)
+
+📍 `updateFrontmatterTimestamp` and `updateFrontmatterFields` used regex `^key:\s` which requires a space after the colon. Frontmatter with `updated:` (no value/space) would not be matched, causing a duplicate line to be inserted.
+
+🔍 Root cause: The YAML spec allows `key:` with no value (interpreted as `null`). The regex `\s` requires at least one whitespace character after the colon.
+
+✅ Fix: Changed regex to `^key:(\s|$)` which matches both `key: value` and `key:` (end of line).
+
+### 🔧 Redundant `image_description` Field (Fixed)
+
+📍 The `image_description` frontmatter field was a redundant copy of `image_prompt`. Both contained identical content — the Gemini-generated visual description.
+
+🔍 Root cause: The caching logic added a new field instead of recognizing that `image_prompt` already served as the cache.
+
+✅ Fix: Removed `image_description` entirely. `image_prompt` now serves as both the prompt sent to the image generator and the cached description for subsequent runs.
+
+### 🔧 Unquoted Special Characters in Descriptions (Fixed)
+
+📍 Gemini-generated descriptions could contain quotes, backslashes, and other YAML-breaking characters.
+
+🔍 Root cause: Descriptions were stored directly from Gemini's response without sanitization.
+
+✅ Fix: Added `sanitizeForYaml` that strips quotes, backslashes, backticks, and collapses whitespace before storage.
+
+---
+
 ## 🧪 Testing Strategy
 
-### 📊 Test Coverage (172 tests, 36 suites)
+### 📊 Test Coverage (182 tests, 37 suites)
 
 | Category | Tests | Description |
 |----------|-------|-------------|
 | 🔍 Image detection | 11 | Obsidian wiki, Markdown, various formats |
 | 🏷️ Name generation | 16 | Kebab-case, path-based, conflict resolution |
 | 📝 Content processing | 10 | Frontmatter stripping, embed removal, syntax cleaning |
-| 📋 Frontmatter operations | 21 | Extraction, quoting, updates, regeneration |
-| 🖼️ processNote | 11 | Generation, skipping, metadata, describer, description caching |
+| 📋 Frontmatter operations | 24 | Extraction, quoting, updates, regeneration, sanitization, empty value handling |
+| 🖼️ processNote | 11 | Generation, skipping, metadata, describer, prompt caching, sanitization |
 | 📦 backfillImages | 14 | Chain updates, missing dirs, errors, prioritization, rate limits |
 | 🔌 Provider resolution | 10 | Cloudflare, Gemini, Imagen, describer |
 | ⏱️ Rate limiting | 12 | isDailyQuotaError, parseRetryDelay, retry logic, proactive delays |

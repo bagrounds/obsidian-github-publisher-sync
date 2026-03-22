@@ -149,6 +149,13 @@ export const removeImageEmbed = (
   return { content: cleaned, imageName: imageName.replace(/^attachments\//, "") };
 };
 
+export const sanitizeForYaml = (value: string): string =>
+  value
+    .replace(/\n/g, " ")
+    .replace(/\s+/g, " ")
+    .replace(/["'\\`]/g, "")
+    .trim();
+
 export const quoteYamlValue = (value: string): string => {
   const oneLine = value.replace(/\n/g, " ").replace(/\s+/g, " ").trim();
   return /[:#{}\[\]&*!|>'"@`,]/.test(oneLine)
@@ -179,7 +186,7 @@ export const updateFrontmatterFields = (
   const updatedFrontmatter = Object.entries(fields).reduce(
     (acc, [key, value]) => {
       const existingIndex = acc.findIndex((line) =>
-        new RegExp(`^${key}:\\s`).test(line),
+        new RegExp(`^${key}:(\\s|$)`).test(line),
       );
       return existingIndex >= 0
         ? acc.map((line, i) =>
@@ -518,11 +525,11 @@ export const processNote = async (
     return { skipped: true };
   }
 
-  const cachedDescription = extractFrontmatterValue(content, "image_description");
-  const prompt = cachedDescription
-    ? cachedDescription
+  const cachedPrompt = extractFrontmatterValue(content, "image_prompt");
+  const prompt = cachedPrompt
+    ? cachedPrompt
     : describePrompt
-      ? await describePrompt(content)
+      ? sanitizeForYaml(await describePrompt(content))
       : buildImagePrompt(content);
   const { data, mimeType } = await generate(apiKey, model, prompt);
 
@@ -533,17 +540,12 @@ export const processNote = async (
   fs.mkdirSync(attachmentsDir, { recursive: true });
   fs.writeFileSync(imagePath, data);
 
-  const metadata: Record<string, string> = {
+  let updatedContent = insertImageEmbed(content, imageName);
+  updatedContent = updateFrontmatterFields(updatedContent, {
     image_date: new Date().toISOString(),
     image_model: model,
     image_prompt: prompt,
-  };
-  if (!cachedDescription && describePrompt) {
-    metadata.image_description = prompt;
-  }
-
-  let updatedContent = insertImageEmbed(content, imageName);
-  updatedContent = updateFrontmatterFields(updatedContent, metadata);
+  });
   fs.writeFileSync(notePath, updatedContent, "utf-8");
 
   return { skipped: false, imagePath, imageName, imagePrompt: prompt };
@@ -811,7 +813,7 @@ export const updateFrontmatterTimestamp = (
         endIndex = i;
         break;
       }
-      if (lines[i]?.match(/^updated:\s/)) {
+      if (lines[i]?.match(/^updated:(\s|$)/)) {
         updatedLineIndex = i;
       }
     }

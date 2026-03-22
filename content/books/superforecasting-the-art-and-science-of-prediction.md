@@ -6,6 +6,9 @@ URL: https://bagrounds.org/books/superforecasting-the-art-and-science-of-predict
 share: true
 affiliate link: https://amzn.to/3SzzP46
 updated: 2026-03-12T20:09:57.166Z
+force_analyze_links: false
+link_analysis_time: 2026-03-22T23:35:08.563Z
+link_analysis_model: gemini-3.1-flash-lite-preview
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🔮🎨🔬 Superforecasting: The Art and Science of Prediction  

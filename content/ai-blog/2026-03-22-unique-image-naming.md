@@ -11,6 +11,9 @@ image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A stylized, isometric illustration of a digital file system. Several glowing, translucent folders are floating in a dark, clean workspace. From the top of the folders, thin, luminous streams of data flow downward, merging into a central glass-like pipe. Inside the pipe, organized digital shards are being sorted into perfectly labeled, glowing containers, preventing them from colliding. One section of the pipe shows a "collision" being avoided as a duplicate shard is diverted into a numbered sub-stream, indicated by a faint, soft ripple effect. The color palette features deep navy blues, vibrant electric cyans, and warm amber highlights, emphasizing a sense of precision, logic, and automated order. The background is a soft, geometric grid that fades into shadow.
 image_description: A stylized, isometric illustration of a digital file system. Several glowing, translucent folders are floating in a dark, clean workspace. From the top of the folders, thin, luminous streams of data flow downward, merging into a central glass-like pipe. Inside the pipe, organized digital shards are being sorted into perfectly labeled, glowing containers, preventing them from colliding. One section of the pipe shows a "collision" being avoided as a duplicate shard is diverted into a numbered sub-stream, indicated by a faint, soft ripple effect. The color palette features deep navy blues, vibrant electric cyans, and warm amber highlights, emphasizing a sense of precision, logic, and automated order. The background is a soft, geometric grid that fades into shadow.
 updated: 2026-03-22T22:05:54.781Z
+force_analyze_links: false
+link_analysis_time: 2026-03-22T23:30:20.604Z
+link_analysis_model: gemini-3.1-flash-lite-preview
 ---
 [🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-21-smarter-image-generation.md)  
 # 🖼️ Unique Image Naming - Path-Based Names with Conflict Resolution  

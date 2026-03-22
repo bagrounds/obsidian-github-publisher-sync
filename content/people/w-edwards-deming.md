@@ -3,6 +3,9 @@ share: true
 title: 📈📊⚙️🎯 W Edwards Deming
 aliases:
   - 📈📊⚙️🎯 W Edwards Deming
+force_analyze_links: false
+link_analysis_time: 2026-03-22T23:32:08.286Z
+link_analysis_model: gemini-3.1-flash-lite-preview
 ---
 [Home](../index.md) > [People](./index.md)  
 # 📈📊⚙️🎯 W Edwards Deming  

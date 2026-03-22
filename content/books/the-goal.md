@@ -8,6 +8,9 @@ Author:
 tags:
 affiliate link: https://amzn.to/459fwBT
 updated: 2026-03-14T10:07:37.575Z
+force_analyze_links: false
+link_analysis_time: 2026-03-22T23:38:05.312Z
+link_analysis_model: gemini-3.1-flash-lite-preview
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 📈⚙️♾️ The Goal: A Process of Ongoing Improvement  

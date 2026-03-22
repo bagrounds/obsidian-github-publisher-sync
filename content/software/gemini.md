@@ -4,6 +4,9 @@ aliases:
   - 🤖♊ Gemini
 title: 🤖♊ Gemini
 URL: https://bagrounds.org/software/gemini
+force_analyze_links: false
+link_analysis_time: 2026-03-22T23:34:08.832Z
+link_analysis_model: gemini-3.1-flash-lite-preview
 ---
 [Home](../index.md) > [Software](./index.md)  
 # 🤖♊ Gemini  

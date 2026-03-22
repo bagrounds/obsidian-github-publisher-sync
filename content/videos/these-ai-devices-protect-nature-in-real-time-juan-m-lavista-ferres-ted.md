@@ -9,6 +9,9 @@ Platform:
 Channel: TED
 tags:
 youtube: https://youtu.be/STUwbUCEtUw
+force_analyze_links: false
+link_analysis_time: 2026-03-22T23:30:21.879Z
+link_analysis_model: gemini-3.1-flash-lite-preview
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 🌿🤖🛰️ These AI Devices Protect Nature in Real Time | Juan M. Lavista Ferres | TED  
@@ -55,5 +58,5 @@ youtube: https://youtu.be/STUwbUCEtUw
   
 ### 🎨 Creatively Related  
   
-* 🧩 The Design of Everyday Things by Don Norman provides foundational insights into the philosophy of simplicity and user centered design mentioned by the speaker.  
+* 🧩 [💺🚪💡🤔 The Design of Everyday Things](../books/the-design-of-everyday-things.md) by Don Norman provides foundational insights into the philosophy of simplicity and user centered design mentioned by the speaker.  
 * 🛰️ Satellite Technology by Andrew K. Maina offers a technical look at the communication infrastructure that enables remote data transmission from deep wilderness.

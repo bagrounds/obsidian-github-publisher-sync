@@ -7,6 +7,9 @@ share: true
 affiliate link: https://amzn.to/4oaLcO6
 CTA: ⚖️ Confront algorithmic bias.
 updated: 2026-03-12T22:09:26.935Z
+force_analyze_links: false
+link_analysis_time: 2026-03-22T23:35:09.818Z
+link_analysis_model: gemini-3.1-flash-lite-preview
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 📊📉🏛️ Weapons of Math Destruction: How Big Data Increases Inequality and Threatens Democracy  

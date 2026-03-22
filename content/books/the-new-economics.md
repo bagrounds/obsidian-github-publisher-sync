@@ -4,9 +4,12 @@ aliases:
   - "📈🏛️🏫 The New Economics: For Industry, Government, Education"
 title: "📈🏛️🏫 The New Economics: For Industry, Government, Education"
 URL: https://bagrounds.org/books/the-new-economics
-Author: 
-tags: 
+Author:
+tags:
 affiliate link: https://amzn.to/45aOdam
+force_analyze_links: false
+link_analysis_time: 2026-03-22T23:38:02.592Z
+link_analysis_model: gemini-3.1-flash-lite-preview
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 📈🏛️🏫 The New Economics: For Industry, Government, Education  
@@ -93,7 +96,7 @@ affiliate link: https://amzn.to/45aOdam
 * **Best Alternate Book on the Same Topic:** "[Out Of The Crisis](./out-of-the-crisis.md)" by W. Edwards Deming. This book provides a more in-depth explanation of Deming's 14 Points and his philosophy. 📖  
 * **Best Tangentially Related Book:** "[The Lean Startup](./the-lean-startup.md)" by Eric Ries. Focuses on rapid iteration and customer feedback, which aligns with Deming's emphasis on continuous improvement. 🚀  
 * **Best Diametrically Opposed Book:** "The Goal" by Eliyahu M. Goldratt. While it advocates for improvement, it focuses on constraints and throughput, which differs from Deming's emphasis on variation and quality. 🎯  
-* **Best Fiction Book That Incorporates Related Ideas:** "The Phoenix Project" by Gene Kim, Kevin Behr, and George Spafford. Uses a fictional story to illustrate the principles of Lean and DevOps, which share similarities with Deming's approach. 💻  
+* **Best Fiction Book That Incorporates Related Ideas:** "[🐦‍🔥💻 The Phoenix Project](./the-phoenix-project.md)" by Gene Kim, Kevin Behr, and George Spafford. Uses a fictional story to illustrate the principles of Lean and DevOps, which share similarities with Deming's approach. 💻  
 * **Best More General Book:** "[Thinking in Systems](./thinking-in-systems.md)" by Donella H. Meadows. This book offers a comprehensive introduction to systems thinking, which is a key component of Deming's philosophy. 🌐  
 * **Best More Specific Book:** "Understanding Variation: The Key to Managing Chaos" by Donald J. Wheeler. This book focuses specifically on the statistical aspects of variation and how to control it. 📊  
 * **Best More Rigorous Book:** "[Statistical Quality Control](./statistical-quality-control.md)" by Eugene L. Grant and Richard S. Leavenworth. This classic textbook provides a detailed explanation of statistical quality control methods. 📈  

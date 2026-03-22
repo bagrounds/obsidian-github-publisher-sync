@@ -9,6 +9,9 @@ tags:
 affiliate link: https://amzn.to/3ZjED17
 CTA: Rebuild your organization.
 updated: 2026-03-14T12:09:36.809Z
+force_analyze_links: false
+link_analysis_time: 2026-03-22T23:38:01.263Z
+link_analysis_model: gemini-3.1-flash-lite-preview
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 📉⬆️ Out Of The Crisis  
@@ -57,7 +60,7 @@ Deming's work is highly regarded for its practical application and statistical r
 * **Best Alternate Book on the Same Topic:** "[The New Economics](./the-new-economics.md) for Industry, Government, Education" by W. Edwards Deming. (More refined and updated version of Deming's philosophies.) 🔄  
 * **Best Tangentially Related Book:** "The Goal" by Eliyahu M. Goldratt. (Focuses on the theory of constraints, another systems-thinking approach.) 🏭  
 * **Best Diametrically Opposed Book:** "Good to Great" by Jim Collins. (Focuses on identifying exceptional companies and their characteristics, contrasting with Deming's emphasis on systems.) 📈  
-* **Best Fiction Book Incorporating Related Ideas:** "The Phoenix Project" by Gene Kim, Kevin Behr, and George Spafford. (Applies Deming's principles to IT and software development in a fictional narrative.) 💻  
+* **Best Fiction Book Incorporating Related Ideas:** "[🐦‍🔥💻 The Phoenix Project](./the-phoenix-project.md)" by Gene Kim, Kevin Behr, and George Spafford. (Applies Deming's principles to IT and software development in a fictional narrative.) 💻  
 * **Best More General Book:** "[Thinking in Systems](./thinking-in-systems.md)" by Donella H. Meadows. (Provides a broader understanding of systems thinking.) 🌐  
 * **Best More Specific Book:** "Statistical Process Control" by Eugene L. Grant and Richard S. Leavenworth. (Provides in depth analysis of the statistical tools Deming uses.) 🔢  
 * **Best More Rigorous Book:** "Understanding Variation: The Key to Managing Chaos" by Donald J. Wheeler. (Provides deeper statistical basis for understanding and managing variation.) 📐  

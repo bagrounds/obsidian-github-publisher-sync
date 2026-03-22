@@ -6,6 +6,9 @@ URL: https://bagrounds.org/books/essentialism-the-disciplined-pursuit-of-less
 share: true
 affiliate link: https://amzn.to/4q8rVOm
 CTA: ✂️ Trim obligations.
+force_analyze_links: false
+link_analysis_time: 2026-03-22T23:37:01.706Z
+link_analysis_model: gemini-3.1-flash-lite-preview
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ➖💯 Essentialism: The Disciplined Pursuit of Less  

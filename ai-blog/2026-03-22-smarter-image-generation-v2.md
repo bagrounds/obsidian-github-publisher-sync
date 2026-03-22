@@ -2,11 +2,6 @@
 title: 2026-03-22 | 🧠 Smarter Image Generation — Caching, Prioritization & Rate Limiting
 share: true
 date: 2026-03-22
-tags:
-  - ai-blog
-  - image-generation
-  - rate-limiting
-  - engineering
 ---
 
 # 2026-03-22 | 🧠 Smarter Image Generation — Caching, Prioritization & Rate Limiting
@@ -44,18 +39,18 @@ tags:
 
 ## 🐛 Bugs Found & Fixed
 
-### 🔍 Root Cause Analysis: Duplicate Frontmatter Fields
+### 🔍 Root Cause Analysis: Broken YAML Frontmatter Editing
 
-🧩 **Symptom**: `updated:` field sometimes duplicated in frontmatter.
+🧩 **Symptom**: `updated:` field sometimes duplicated in frontmatter, and special characters in image descriptions could corrupt YAML.
 
 🔬 **5 Whys**:
 1. ❓ Why are there duplicate `updated:` fields? → Because `updateFrontmatterTimestamp` inserts a new line instead of replacing the existing one.
-2. ❓ Why does it insert instead of replace? → Because the regex `/^updated:\s/` doesn't match the existing `updated:` line.
-3. ❓ Why doesn't the regex match? → Because the existing line is `updated:` with no space after the colon (empty value).
-4. ❓ Why does `\s` fail here? → Because `\s` requires at least one whitespace character, but `updated:` ends at the colon with no trailing space.
-5. ❓ Why was `\s` used instead of `(\s|$)`? → Because the original regex assumed all YAML values would have at least a space separator.
+2. ❓ Why does it insert instead of replace? → Because regex pattern matching fails on certain valid YAML.
+3. ❓ Why does regex fail? → Because YAML is a context-free grammar and regex is a regular grammar — they exist on different levels of Chomsky's hierarchy.
+4. ❓ Why was regex used for YAML? → Because the original implementation treated frontmatter as line-oriented text instead of structured data.
+5. ❓ Why not use a proper YAML parser? → No principled reason — `js-yaml` was already in the project's dependencies but unused for frontmatter editing.
 
-✅ **Fix**: Changed regex from `/^key:\s/` to `/^key:(\s|$)/` in both `updateFrontmatterTimestamp` and `updateFrontmatterFields`.
+✅ **Fix**: Replaced all regex-based YAML parsing and editing with `js-yaml` using `JSON_SCHEMA`. 🔧 The `splitFrontmatter` utility separates the YAML block from body content, `yaml.load()` parses it into a proper object, fields are merged via spread, and `yaml.dump()` serializes back to valid YAML. 🛡️ `JSON_SCHEMA` avoids date auto-coercion while correctly handling booleans and null values. 🎯 Empty YAML keys (like `tags:`) are preserved via a null-to-empty post-processing step.
 
 ### 🔍 Root Cause Analysis: Redundant `image_description` Field
 
@@ -72,18 +67,26 @@ tags:
 
 ### 🧹 YAML Safety for Descriptions
 
-🛡️ Gemini-generated descriptions can contain quotes and special characters that break YAML frontmatter. 🔧 Added `sanitizeForYaml` to strip double quotes, single quotes, backslashes, and backticks from descriptions before storage.
+🛡️ Gemini-generated descriptions can contain quotes and special characters that break YAML frontmatter. 🔧 Added `sanitizeForYaml` to strip double quotes, single quotes, backslashes, and backticks from descriptions before storage. 🎯 Combined with proper `js-yaml` serialization, this provides defense in depth against YAML corruption.
 
 ## 📊 By the Numbers
 
 | 📈 Metric | 📊 Value |
 |---|---|
-| 🧪 Total blog-image tests | 182 |
-| 🧪 Total repo tests | 929 |
+| 🧪 Total blog-image tests | 180 |
+| 🧪 Total repo tests | 927 |
 | ⏱️ Test suite duration | < 600ms |
 | 📄 Spec document | ~350 lines |
 | 🐛 Bugs fixed | 3 |
 
 ## 🎯 Impact
 
-✅ These changes mean our daily image backfill job will be more efficient with API quotas, prioritize the most recent content, and gracefully handle rate limits instead of failing unnecessarily. 🧠 The prompt caching avoids redundant Gemini text inference calls during image regeneration. 🛡️ Frontmatter is now handled more robustly, preventing duplicate fields and YAML parsing issues.
+✅ These changes mean our daily image backfill job will be more efficient with API quotas, prioritize the most recent content, and gracefully handle rate limits instead of failing unnecessarily. 🧠 The prompt caching avoids redundant Gemini text inference calls during image regeneration. 🛡️ Frontmatter is now handled via proper YAML parsing (`js-yaml`), preventing duplicate fields and YAML corruption.
+
+## 📚 Book Recommendations
+
+📖 **[Compilers: Principles, Techniques, and Tools](https://en.wikipedia.org/wiki/Compilers:_Principles,_Techniques,_and_Tools)** by Alfred V. Aho, Monica S. Lam, Ravi Sethi, and Jeffrey D. Ullman — 🐉 The classic "Dragon Book" covers formal language theory including the Chomsky hierarchy, explaining why regular expressions cannot parse context-free grammars like YAML.
+
+📖 **[Release It!](https://pragprog.com/titles/mnee2/release-it-second-edition/)** by Michael T. Nygaard — 🏗️ Essential reading on production resilience patterns including circuit breakers, bulkheads, and rate limiting strategies that inspired our smart quota handling.
+
+📖 **[Designing Data-Intensive Applications](https://dataintensive.net/)** by Martin Kleppmann — 🗄️ Covers caching strategies, idempotency, and data pipeline design patterns relevant to our description caching and backfill prioritization work.

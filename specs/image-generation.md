@@ -267,11 +267,11 @@ Image name: chickie-loo-2026-03-22-weekly-recap.jpg
 
 🎯 Impact: Medium — increased sync bandwidth and potential write amplification on the Obsidian vault.
 
-### 3️⃣ extractFrontmatterValue Limited to Simple Single-Line Values
+### 3️⃣ ~~extractFrontmatterValue Limited to Simple Single-Line Values~~ (Fixed)
 
-📍 `extractFrontmatterValue` uses regex `^${key}:\s*(.+)$` which only captures single-line values. YAML multiline strings, flow sequences, or deeply nested values would be missed.
+📍 Previously used regex to parse and edit YAML, which exists on a different level of Chomsky's hierarchy (YAML is context-free, regex is regular).
 
-🎯 Impact: Low — all image-related frontmatter values are single-line strings.
+✅ Fix: Replaced all regex-based YAML handling with `js-yaml` library using `JSON_SCHEMA`. See Fixed Bugs below.
 
 ### 4️⃣ Future Reflection Filtering Only Applies to Reflections Directory
 
@@ -295,13 +295,18 @@ Image name: chickie-loo-2026-03-22-weekly-recap.jpg
 
 ## ✅ Fixed Bugs
 
-### 🔧 Duplicate `updated:` Field on Empty Values (Fixed)
+### 🔧 Regex-Based YAML Parsing Replaced with `js-yaml` (Fixed)
 
-📍 `updateFrontmatterTimestamp` and `updateFrontmatterFields` used regex `^key:\s` which requires a space after the colon. Frontmatter with `updated:` (no value/space) would not be matched, causing a duplicate line to be inserted.
+📍 All frontmatter functions (`extractFrontmatterValue`, `updateFrontmatterFields`, `updateFrontmatterTimestamp`) used regex patterns to parse and edit YAML. This was fundamentally incorrect — YAML is a context-free grammar while regex is a regular grammar (different levels of Chomsky's hierarchy). This caused duplicate fields, mishandled empty values, and fragile special character handling.
 
-🔍 Root cause: The YAML spec allows `key:` with no value (interpreted as `null`). The regex `\s` requires at least one whitespace character after the colon.
+🔍 Root cause: The original implementation treated frontmatter as line-oriented text instead of structured data, despite `js-yaml` already being in the project's dependencies.
 
-✅ Fix: Changed regex to `^key:(\s|$)` which matches both `key: value` and `key:` (end of line).
+✅ Fix: Replaced all regex-based YAML handling with `js-yaml` using `JSON_SCHEMA`:
+- 📋 `splitFrontmatter` separates the YAML block from body content
+- 📖 `yaml.load()` with `JSON_SCHEMA` parses into a proper object (avoids date auto-coercion)
+- ✏️ Fields are merged via object spread (`{ ...doc, ...fields }`)
+- 💾 `yaml.dump()` with `JSON_SCHEMA` serializes back to valid YAML
+- 🔄 Null values converted to empty YAML keys for Obsidian compatibility (`tags:` instead of `tags: null`)
 
 ### 🔧 Redundant `image_description` Field (Fixed)
 
@@ -317,20 +322,20 @@ Image name: chickie-loo-2026-03-22-weekly-recap.jpg
 
 🔍 Root cause: Descriptions were stored directly from Gemini's response without sanitization.
 
-✅ Fix: Added `sanitizeForYaml` that strips quotes, backslashes, backticks, and collapses whitespace before storage.
+✅ Fix: Added `sanitizeForYaml` that strips quotes, backslashes, backticks, and collapses whitespace before storage. Combined with proper `js-yaml` serialization, this provides defense in depth.
 
 ---
 
 ## 🧪 Testing Strategy
 
-### 📊 Test Coverage (182 tests, 37 suites)
+### 📊 Test Coverage (180 tests, 36 suites)
 
 | Category | Tests | Description |
 |----------|-------|-------------|
 | 🔍 Image detection | 11 | Obsidian wiki, Markdown, various formats |
 | 🏷️ Name generation | 16 | Kebab-case, path-based, conflict resolution |
 | 📝 Content processing | 10 | Frontmatter stripping, embed removal, syntax cleaning |
-| 📋 Frontmatter operations | 24 | Extraction, quoting, updates, regeneration, sanitization, empty value handling |
+| 📋 Frontmatter operations | 23 | YAML parsing, updates, regeneration, sanitization, arrays, empty values, colons |
 | 🖼️ processNote | 11 | Generation, skipping, metadata, describer, prompt caching, sanitization |
 | 📦 backfillImages | 14 | Chain updates, missing dirs, errors, prioritization, rate limits |
 | 🔌 Provider resolution | 10 | Cloudflare, Gemini, Imagen, describer |

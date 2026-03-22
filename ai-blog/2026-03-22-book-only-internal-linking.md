@@ -125,6 +125,40 @@ force_analyze_links: false
 | 📝 `recordLinkAnalysis` | 2 | ✅ Writes model + time, clears force_analyze_links |
 | 🔍 `alreadyAnalyzed` | 5 | ✅ Present, different model (still true), force flag, missing field, no frontmatter |
 
+## 🐛 Lessons Learned: The Top-Level Await Trap
+
+🔥 The vault-native workflow failed in CI with: `Top-level await is currently not supported with the "cjs" output format`
+
+### 🔍 5 Whys: Root Cause Analysis
+
+1. ❓ **Why did the workflow fail?** → The `npx tsx -e` command crashed with an esbuild transform error.
+2. ❓ **Why did esbuild reject the code?** → The inline TypeScript used `await import(...)` at the top level — a top-level await.
+3. ❓ **Why doesn't top-level await work?** → `tsx -e` (eval mode) uses esbuild's CJS output format, which doesn't support top-level await.
+4. ❓ **Why was CJS used instead of ESM?** → The `-e` flag triggers eval mode where esbuild defaults to CJS. Unlike file-based execution (where `tsx` can infer ESM from `package.json` or `.ts` extension), eval mode has no module format hints.
+5. ❓ **Why wasn't this caught earlier?** → The workflow was written by pattern-matching against file-based `npx tsx` commands (which support top-level await), not by studying the existing IIFE-wrapped `npx tsx -e` patterns already used in `auto-blog-zero.yml` and `chickie-loo.yml`.
+
+### ✅ The Fix
+
+🔧 Wrap all `npx tsx -e` code in an async IIFE `(async () => { ... })()`, matching the pattern used by the working workflows:
+
+```bash
+# ❌ Broken: top-level await in eval mode
+VAULT_DIR=$(npx tsx -e "
+  const { sync } = await import('./lib.ts');
+  process.stdout.write(await sync());
+")
+
+# ✅ Fixed: IIFE wrapper
+VAULT_DIR=$(npx tsx -e "(async () => {
+  const { sync } = await import('./lib.ts');
+  process.stdout.write(await sync());
+})()")
+```
+
+### 📝 Takeaway
+
+🧠 **Always study existing patterns in the codebase before writing new workflow steps.** 🔍 The IIFE pattern was already established in two other workflows — copying it would have avoided this failure entirely. 🧪 **Test `npx tsx -e` commands locally** before committing — the CJS limitation is silent until runtime.
+
 ## 🏁 Summary
 
 📐 The internal linking system is now vault-native, AI-driven, and incrementally tracked. 📱 Changes write directly to the Obsidian vault instead of the `content/` directory. 🧠 Gemini identifies genuine book references with full document context. 🔧 Robust JSON extraction handles Gemini's formatting quirks. 📋 Frontmatter tracking enables incremental progress with manual override via `force_analyze_links`. 📊 Both live and dry runs log diffs and summary statistics.

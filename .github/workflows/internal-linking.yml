@@ -61,14 +61,14 @@ jobs:
           OBSIDIAN_VAULT_NAME: ${{ secrets.OBSIDIAN_VAULT_NAME }}
           OBSIDIAN_VAULT_CACHE_DIR: /tmp/obsidian-vault-cache
         run: |
-          VAULT_DIR=$(npx tsx -e "
+          VAULT_DIR=$(npx tsx -e "(async () => {
             const { syncObsidianVault } = await import('./scripts/lib/obsidian-sync.ts');
             const dir = await syncObsidianVault({
               authToken: process.env.OBSIDIAN_AUTH_TOKEN,
               vaultName: process.env.OBSIDIAN_VAULT_NAME,
             });
             process.stdout.write(dir);
-          ")
+          })()")
           echo "vault_dir=$VAULT_DIR" >> "$GITHUB_OUTPUT"
           echo "📂 Vault pulled to: $VAULT_DIR"
 
@@ -103,10 +103,10 @@ jobs:
         env:
           OBSIDIAN_AUTH_TOKEN: ${{ secrets.OBSIDIAN_AUTH_TOKEN }}
         run: |
-          npx tsx -e "
+          npx tsx -e "(async () => {
             const { pushObsidianVault } = await import('./scripts/lib/obsidian-sync.ts');
             await pushObsidianVault('${{ steps.vault.outputs.vault_dir }}', {
               authToken: process.env.OBSIDIAN_AUTH_TOKEN,
             });
-          "
+          })()"
           echo "📤 Vault pushed with link changes"

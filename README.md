@@ -76,7 +76,7 @@
 
 ### 5. 🔗 Internal Linking (`internal-linking.yml`)
 
-⏰ Daily at 11:30 PM PT. 🧠 Uses Gemini AI to identify genuine book references in content files, then inserts Obsidian wikilinks. 📊 BFS traversal from the most recent reflection with incremental analysis tracking via `link_analysis_model` and `link_analysis_time` frontmatter. 📤 Syncs modified files to the Obsidian vault.
+⏰ Daily at 11:30 PM PT. 📥 Pulls the Obsidian vault, uses Gemini AI to identify genuine book references in content files, inserts wikilinks, and pushes changes back to the vault. 📊 BFS traversal from the most recent reflection with incremental analysis tracking via `link_analysis_model` and `link_analysis_time` frontmatter. 📱 Operates directly on the vault — never writes to `content/`.
 
 ### 6. 🖼️ Backfill Blog Images (`backfill-blog-images.yml`)
 
@@ -118,27 +118,33 @@
 
 ## 🔗 Internal Linking System
 
-🧠 The internal linking system uses a **BFS-driven, AI-identification architecture** to insert wikilinks for book references across content files.
+🧠 The internal linking system uses a **BFS-driven, AI-identification architecture** to insert wikilinks for book references, operating directly on the Obsidian vault.
 
 ### 📊 Pipeline
 
 ```
-Most Recent Reflection → BFS Traversal → For Each File:
+Pull Vault → BFS from Most Recent Reflection → For Each File:
   ├─ Check link_analysis_model (skip if already analyzed)
+  ├─ Check force_analyze_links (override skip)
   ├─ Filter eligible books (not already linked)
   ├─ Gemini identifies genuine book references
+  ├─ extractJsonArray handles messy AI responses
   ├─ Record link_analysis_model + link_analysis_time
   ├─ Find text positions (deterministic regex)
-  └─ Insert wikilinks
+  ├─ Log diff (both dry-run and live)
+  └─ Insert wikilinks → Push Vault
 ```
 
 ### 🔑 Key Design Decisions
 
+- 📱 **Vault-native** — Reads from and writes to the Obsidian vault directly (`--content-dir` flag). The `content/` directory in the repo stays read-only.
 - 🤖 **AI identifies, code positions** — Gemini receives the full document body + all available book titles and identifies which books are genuinely referenced as literary works. Deterministic regex matching only runs after AI confirmation.
 - 📚 **Books-only index** — `LINKABLE_DIRS = ["books"]` constrains link targets to book pages, avoiding false positives from generic words matching topic or software pages.
-- 🔒 **Incremental analysis** — Each analyzed file gets `link_analysis_model` and `link_analysis_time` frontmatter. Files already analyzed by the same model are skipped, enabling the pipeline to cover the full content graph across multiple daily sessions.
+- 🔒 **Incremental analysis** — Each analyzed file gets `link_analysis_model` and `link_analysis_time` frontmatter. Files with a `link_analysis_model` are skipped. Use `force_analyze_links: true` in frontmatter for manual re-analysis.
+- 🔧 **Robust JSON parsing** — `extractJsonArray` handles Gemini responses wrapped in code fences, with trailing text, or other formatting quirks.
 - 🛡️ **Rate-limit resilience** — Per-minute 429s trigger retry with exponential backoff. Daily quota exhaustion throws `QuotaExhaustedError` to halt the pipeline cleanly.
-- 📝 **Dry-run support** — `--dry-run` flag shows proposed changes as line-level diffs without writing to disk.
+- 📊 **Summary statistics** — Completion log includes `filesVisited`, `filesModified`, `filesSkipped`, and `totalLinksAdded`.
+- 📝 **Diff logging for all runs** — Both dry runs and live runs emit `diff` events with line-level changes.
 
 ## 🌐 Quartz Site Features
 

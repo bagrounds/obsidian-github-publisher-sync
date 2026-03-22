@@ -149,7 +149,7 @@ export const extractJsonArray = (text: string): unknown => {
   }
 
   // Give up: throw with the original text for debugging
-  throw new SyntaxError(`No JSON array found in response: ${text.substring(0, 200)}`);
+  throw new SyntaxError(`No JSON array found in response (${text.length} chars): ${text.substring(0, 200)}${text.length > 200 ? "..." : ""}`);
 };
 
 /** Sleep for a given number of milliseconds */

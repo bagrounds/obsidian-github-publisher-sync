@@ -1,0 +1,93 @@
+name: Internal Linking — BFS Wikilink Insertion
+
+on:
+  schedule:
+    - cron: "30 7 * * *" # ~11:30 PM PT
+  workflow_dispatch:
+    inputs:
+      max_files:
+        description: "Maximum number of files to edit"
+        required: false
+        default: "10"
+        type: string
+      dry_run:
+        description: "Preview without writing changes"
+        required: false
+        default: "false"
+        type: boolean
+
+env:
+  TZ: America/Los_Angeles
+
+permissions:
+  contents: read
+
+jobs:
+  internal-linking:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Cache Node Modules
+        id: cache
+        uses: actions/cache@v4
+        with:
+          path: node_modules
+          key: v3-${{ runner.os }}-node22-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: v3-${{ runner.os }}-node22-
+
+      - name: Install Dependencies
+        if: ${{ steps.cache.outputs.cache-hit != 'true' }}
+        run: npm ci
+
+      - name: Install Obsidian Headless CLI
+        run: npm install -g obsidian-headless
+
+      - name: Cache Obsidian Vault
+        uses: actions/cache@v4
+        with:
+          path: /tmp/obsidian-vault-cache
+          key: obsidian-vault-${{ github.run_id }}
+          restore-keys: obsidian-vault-
+
+      - name: Run Internal Linking
+        id: linking
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          LINKING_MODEL: ${{ vars.LINKING_MODEL || 'gemini-3.1-flash-lite-preview' }}
+        run: |
+          MAX_FILES="${{ github.event.inputs.max_files || '10' }}"
+          DRY_RUN_FLAG=""
+          if [ "${{ github.event.inputs.dry_run }}" = "true" ]; then
+            DRY_RUN_FLAG="--dry-run"
+          fi
+
+          npx tsx scripts/internal-linking.ts \
+            --max-files "$MAX_FILES" \
+            $DRY_RUN_FLAG \
+            | tee /tmp/linking-output.log
+
+          # Extract modified files from output
+          MODIFIED=$(grep '"event":"modified_files"' /tmp/linking-output.log | tail -1 || true)
+          if [ -n "$MODIFIED" ]; then
+            echo "has_changes=true" >> "$GITHUB_OUTPUT"
+            echo "$MODIFIED" | jq -r '.files[]' > /tmp/modified-files.txt
+          else
+            echo "has_changes=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Sync Modified Files to Obsidian Vault
+        if: ${{ steps.linking.outputs.has_changes == 'true' && github.event.inputs.dry_run != 'true' }}
+        env:
+          OBSIDIAN_AUTH_TOKEN: ${{ secrets.OBSIDIAN_AUTH_TOKEN }}
+          OBSIDIAN_VAULT_NAME: ${{ secrets.OBSIDIAN_VAULT_NAME }}
+          OBSIDIAN_VAULT_CACHE_DIR: /tmp/obsidian-vault-cache
+        run: |
+          while IFS= read -r file; do
+            echo "📝 Syncing: $file"
+            npx tsx scripts/sync-file-to-obsidian.ts "content/$file" "$file"
+          done < /tmp/modified-files.txt

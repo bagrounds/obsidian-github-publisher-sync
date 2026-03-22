@@ -104,11 +104,11 @@ export const parseRetryDelay = (error: unknown): number | null => {
 
   // Match "retry in 14.47s" or "retry in 30s"
   const retryInMatch = message.match(/retry\s+in\s+(\d+(?:\.\d+)?)\s*s/i);
-  if (retryInMatch) return Math.ceil(parseFloat(retryInMatch[1]!) * 1000);
+  if (retryInMatch) return Math.ceil(parseFloat(retryInMatch[1] ?? "0") * 1000);
 
   // Match 'retryDelay: "30s"' or 'retryDelay":"14s"'
   const delayMatch = message.match(/retryDelay["\s:]*["']?(\d+(?:\.\d+)?)\s*s/i);
-  if (delayMatch) return Math.ceil(parseFloat(delayMatch[1]!) * 1000);
+  if (delayMatch) return Math.ceil(parseFloat(delayMatch[1] ?? "0") * 1000);
 
   return null;
 };

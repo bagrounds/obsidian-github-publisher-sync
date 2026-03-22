@@ -7,6 +7,9 @@ share: true
 CTA: 🤖 Embrace collaboration.
 affiliate link: https://amzn.to/4fA8bOX
 updated: 2026-03-12T16:24:02.847Z
+force_analyze_links: false
+link_analysis_time: 2026-03-22T23:35:06.742Z
+link_analysis_model: gemini-3.1-flash-lite-preview
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧑‍💻🤖 Human + Machine: Reimagining Work in the Age of AI  

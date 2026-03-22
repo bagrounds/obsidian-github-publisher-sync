@@ -56,6 +56,32 @@ export const titleToKebabCase = (title: string): string =>
     .replace(/-+/g, "-")
     .replace(/^-|-$/g, "");
 
+export const notePathToImageBaseName = (notePath: string): string => {
+  const dir = path.basename(path.dirname(notePath));
+  const stem = path.basename(notePath, path.extname(notePath));
+  return [dir, stem]
+    .join("-")
+    .toLowerCase()
+    .replace(/[^a-z0-9-]/g, "-")
+    .replace(/-+/g, "-")
+    .replace(/^-|-$/g, "");
+};
+
+export const resolveUniqueImageName = (
+  baseName: string,
+  extension: string,
+  attachmentsDir: string,
+): string => {
+  const candidate = `${baseName}${extension}`;
+  if (!fs.existsSync(path.join(attachmentsDir, candidate))) return candidate;
+
+  // eslint-disable-next-line functional/no-let
+  for (let n = 2; ; n++) {
+    const name = `${baseName}-${n}${extension}`;
+    if (!fs.existsSync(path.join(attachmentsDir, name))) return name;
+  }
+};
+
 export const extractTitle = (content: string): string => {
   const lines = content.split("\n");
   let inFrontmatter = false;
@@ -458,8 +484,8 @@ export const processNote = async (
     return { skipped: true };
   }
 
-  const kebabTitle = titleToKebabCase(title);
-  if (!kebabTitle) {
+  const baseName = notePathToImageBaseName(notePath);
+  if (!baseName) {
     return { skipped: true };
   }
 
@@ -469,7 +495,7 @@ export const processNote = async (
   const { data, mimeType } = await generate(apiKey, model, prompt);
 
   const extension = mimeTypeToExtension(mimeType);
-  const imageName = `${kebabTitle}${extension}`;
+  const imageName = resolveUniqueImageName(baseName, extension, attachmentsDir);
   const imagePath = path.join(attachmentsDir, imageName);
 
   fs.mkdirSync(attachmentsDir, { recursive: true });

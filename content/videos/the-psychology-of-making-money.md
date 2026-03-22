@@ -9,6 +9,9 @@ Platform:
 Channel: Ali Abdaal
 tags:
 youtube: https://youtu.be/U-frK0b7msY
+force_analyze_links: false
+link_analysis_time: 2026-03-22T06:06:06.542Z
+link_analysis_model: gemini-3.1-flash-lite-preview
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 🧠💰📈 The psychology of making money  

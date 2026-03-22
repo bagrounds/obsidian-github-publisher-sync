@@ -7,6 +7,9 @@ URL: https://bagrounds.org/articles/trump-is-dismantling-democracy-at-unpreceden
 Author:
 tags:
 updated: 2026-03-22T04:39:07.379Z
+force_analyze_links: false
+link_analysis_time: 2026-03-22T06:03:01.901Z
+link_analysis_model: gemini-3.1-flash-lite-preview
 ---
 [Home](../index.md) > [Articles](./index.md)  
 # [⏳🏛️💥🗳️📉 Trump is dismantling democracy at unprecedented speed, global report finds](https://www.npr.org/2026/03/20/nx-s1-5754021/trump-democracy-autocracy-dictatorship-reports)  

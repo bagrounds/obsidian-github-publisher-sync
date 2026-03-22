@@ -8,6 +8,9 @@ Author:
 tags:
 affiliate link: https://amzn.to/4bpta6L
 updated: 2026-03-21T22:05:08.774Z
+force_analyze_links: false
+link_analysis_time: 2026-03-22T06:01:20.658Z
+link_analysis_model: gemini-3.1-flash-lite-preview
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧠📖✨ Children of Memory  

@@ -7,6 +7,9 @@ share: true
 CTA: 💡 Uncover the origins of thought.
 affiliate link: https://amzn.to/4dslDFu
 updated: 2026-03-19T14:20:32.763Z
+force_analyze_links: false
+link_analysis_time: 2026-03-22T06:03:07.635Z
+link_analysis_model: gemini-3.1-flash-lite-preview
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧠🧬🤖 A Brief History of Intelligence: Evolution, AI, and the Five Breakthroughs That Made Our Brains  

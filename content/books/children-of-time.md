@@ -7,6 +7,9 @@ share: true
 CTA: ⏳ Discover legacy.
 affiliate link: https://amzn.to/4qauY7F
 updated: 2026-03-21T20:05:17.529Z
+force_analyze_links: false
+link_analysis_time: 2026-03-22T06:01:18.091Z
+link_analysis_model: gemini-3.1-flash-lite-preview
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🕷️⏳ Children of Time  

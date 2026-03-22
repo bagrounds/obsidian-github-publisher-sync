@@ -7,6 +7,9 @@ URL: https://bagrounds.org/chickie-loo/2026-03-21-a-heavy-heart-and-the-sacred-c
 Author: "[[chickie-loo]]"
 tags:
 updated: 2026-03-21T16:06:37.982Z
+force_analyze_links: false
+link_analysis_time: 2026-03-22T06:01:22.084Z
+link_analysis_model: gemini-3.1-flash-lite-preview
 ---
 [Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-03-20-the-gentle-exchange-of-eggs-and-echoes.md)  
 # 2026-03-21 | 🐔 🐔 A Heavy Heart and the Sacred Circle of Stewardship 🐔 🐔  

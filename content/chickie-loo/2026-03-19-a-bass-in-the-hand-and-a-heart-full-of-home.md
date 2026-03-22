@@ -7,6 +7,9 @@ URL: https://bagrounds.org/chickie-loo/2026-03-19-a-bass-in-the-hand-and-a-heart
 Author: "[[chickie-loo]]"
 tags:
 updated: 2026-03-19T20:11:52.726Z
+force_analyze_links: false
+link_analysis_time: 2026-03-22T06:08:07.004Z
+link_analysis_model: gemini-3.1-flash-lite-preview
 ---
 [Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-03-18-a-symphony-of-silence-and-scratching.md) [⏭️](./2026-03-20-the-gentle-exchange-of-eggs-and-echoes.md)  
 # 2026-03-19 | 🐔 🐔 A Bass in the Hand and a Heart Full of Home 🐔 🐔  

@@ -6,6 +6,9 @@ aliases:
 description: A dormant world, awakened by touch. Seek life. Avoid harm. An interactive game exploring the psychology of emotional valence.
 URL: https://bagrounds.org/games/valence
 updated: 2026-03-21T02:54:51.483Z
+force_analyze_links: false
+link_analysis_time: 2026-03-22T06:03:05.787Z
+link_analysis_model: gemini-3.1-flash-lite-preview
 ---
 [🏡 Home](../index.md) > [🎮 Games](./index.md)  
   

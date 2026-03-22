@@ -7,6 +7,8 @@ import os from "node:os";
 import {
   hasEmbeddedImage,
   titleToKebabCase,
+  notePathToImageBaseName,
+  resolveUniqueImageName,
   extractTitle,
   insertImageEmbed,
   buildImagePrompt,
@@ -139,6 +141,117 @@ describe("titleToKebabCase", () => {
 
   it("handles title with only emojis and date", () => {
     assert.equal(titleToKebabCase("2026-01-01 | 🎉🎊"), "");
+  });
+});
+
+describe("notePathToImageBaseName", () => {
+  it("combines parent directory and file stem", () => {
+    assert.equal(
+      notePathToImageBaseName("/repo/chickie-loo/2026-03-22-weekly-recap.md"),
+      "chickie-loo-2026-03-22-weekly-recap",
+    );
+  });
+
+  it("combines parent directory from auto-blog-zero", () => {
+    assert.equal(
+      notePathToImageBaseName("/repo/auto-blog-zero/2026-03-22-weekly-recap.md"),
+      "auto-blog-zero-2026-03-22-weekly-recap",
+    );
+  });
+
+  it("lowercases the result", () => {
+    assert.equal(
+      notePathToImageBaseName("/repo/MyBlog/SomePost.md"),
+      "myblog-somepost",
+    );
+  });
+
+  it("replaces non-alphanumeric characters with hyphens", () => {
+    assert.equal(
+      notePathToImageBaseName("/repo/ai-blog/my post (draft).md"),
+      "ai-blog-my-post-draft",
+    );
+  });
+
+  it("collapses multiple hyphens", () => {
+    assert.equal(
+      notePathToImageBaseName("/repo/my--blog/a---b.md"),
+      "my-blog-a-b",
+    );
+  });
+
+  it("trims leading and trailing hyphens", () => {
+    assert.equal(
+      notePathToImageBaseName("/repo/blog/--hello--.md"),
+      "blog-hello",
+    );
+  });
+
+  it("handles deeply nested paths using only immediate parent", () => {
+    assert.equal(
+      notePathToImageBaseName("/a/b/c/reflections/2026-01-01.md"),
+      "reflections-2026-01-01",
+    );
+  });
+
+  it("differentiates posts with same filename in different directories", () => {
+    const chickie = notePathToImageBaseName("/repo/chickie-loo/2026-03-22-weekly-recap.md");
+    const auto = notePathToImageBaseName("/repo/auto-blog-zero/2026-03-22-weekly-recap.md");
+    assert.notEqual(chickie, auto);
+    assert.equal(chickie, "chickie-loo-2026-03-22-weekly-recap");
+    assert.equal(auto, "auto-blog-zero-2026-03-22-weekly-recap");
+  });
+});
+
+describe("resolveUniqueImageName", () => {
+  let tempDir: string;
+
+  beforeEach(() => {
+    tempDir = fs.mkdtempSync(path.join(os.tmpdir(), "unique-name-test-"));
+  });
+
+  afterEach(() => {
+    fs.rmSync(tempDir, { recursive: true, force: true });
+  });
+
+  it("returns base name when no conflict exists", () => {
+    assert.equal(
+      resolveUniqueImageName("my-image", ".jpg", tempDir),
+      "my-image.jpg",
+    );
+  });
+
+  it("appends -2 when base name already exists", () => {
+    fs.writeFileSync(path.join(tempDir, "my-image.jpg"), "");
+    assert.equal(
+      resolveUniqueImageName("my-image", ".jpg", tempDir),
+      "my-image-2.jpg",
+    );
+  });
+
+  it("appends -3 when -2 also exists", () => {
+    fs.writeFileSync(path.join(tempDir, "my-image.jpg"), "");
+    fs.writeFileSync(path.join(tempDir, "my-image-2.jpg"), "");
+    assert.equal(
+      resolveUniqueImageName("my-image", ".jpg", tempDir),
+      "my-image-3.jpg",
+    );
+  });
+
+  it("handles different extensions independently", () => {
+    fs.writeFileSync(path.join(tempDir, "my-image.jpg"), "");
+    assert.equal(
+      resolveUniqueImageName("my-image", ".png", tempDir),
+      "my-image.png",
+    );
+  });
+
+  it("works when attachments directory does not exist yet", () => {
+    const nonExistent = path.join(tempDir, "missing");
+    assert.equal(
+      resolveUniqueImageName("my-image", ".jpg", nonExistent),
+      "my-image.jpg",
+    );
   });
 });
 
@@ -411,6 +524,7 @@ describe("extractDateFromFilename", () => {
 
 describe("processNote", () => {
   let tempDir: string;
+  let blogDir: string;
   let attachmentsDir: string;
 
   const mockGenerate: ImageGenerator = async () => ({
@@ -420,6 +534,8 @@ describe("processNote", () => {
 
   beforeEach(() => {
     tempDir = fs.mkdtempSync(path.join(os.tmpdir(), "blog-image-test-"));
+    blogDir = path.join(tempDir, "chickie-loo");
+    fs.mkdirSync(blogDir, { recursive: true });
     attachmentsDir = path.join(tempDir, "attachments");
   });
 
@@ -428,7 +544,7 @@ describe("processNote", () => {
   });
 
   it("generates image and embeds it for note without image", async () => {
-    const notePath = path.join(tempDir, "test.md");
+    const notePath = path.join(blogDir, "2026-03-22-test-post.md");
     fs.writeFileSync(
       notePath,
       "---\ntitle: Test Post\n---\n# Test Post\nBody text\n",
@@ -443,15 +559,15 @@ describe("processNote", () => {
     );
 
     assert.equal(result.skipped, false);
-    assert.equal(result.imageName, "test-post.jpg");
-    assert.ok(fs.existsSync(path.join(attachmentsDir, "test-post.jpg")));
+    assert.equal(result.imageName, "chickie-loo-2026-03-22-test-post.jpg");
+    assert.ok(fs.existsSync(path.join(attachmentsDir, "chickie-loo-2026-03-22-test-post.jpg")));
 
     const updated = fs.readFileSync(notePath, "utf-8");
-    assert.ok(updated.includes("![[attachments/test-post.jpg]]"));
+    assert.ok(updated.includes("![[attachments/chickie-loo-2026-03-22-test-post.jpg]]"));
   });
 
   it("skips note that already has an image", async () => {
-    const notePath = path.join(tempDir, "test.md");
+    const notePath = path.join(blogDir, "2026-03-22-test.md");
     fs.writeFileSync(
       notePath,
       "# Title\n![[attachments/existing.jpg]]\nBody\n",
@@ -469,7 +585,7 @@ describe("processNote", () => {
   });
 
   it("skips note with no title", async () => {
-    const notePath = path.join(tempDir, "test.md");
+    const notePath = path.join(blogDir, "2026-03-22-test.md");
     fs.writeFileSync(notePath, "Just body text, no title\n");
 
     const result = await processNote(
@@ -484,7 +600,7 @@ describe("processNote", () => {
   });
 
   it("creates attachments directory if missing", async () => {
-    const notePath = path.join(tempDir, "test.md");
+    const notePath = path.join(blogDir, "2026-03-22-test.md");
     fs.writeFileSync(
       notePath,
       "---\ntitle: New Post\n---\n# New Post\nContent\n",
@@ -501,8 +617,8 @@ describe("processNote", () => {
     assert.ok(fs.existsSync(attachmentsDir));
   });
 
-  it("uses kebab-case title for image name", async () => {
-    const notePath = path.join(tempDir, "test.md");
+  it("derives image name from file path not title", async () => {
+    const notePath = path.join(blogDir, "2026-03-18-my-amazing-post.md");
     fs.writeFileSync(
       notePath,
       "---\ntitle: 2026-03-18 | 🤖 My Amazing Post\n---\n# 2026-03-18 | 🤖 My Amazing Post\nBody\n",
@@ -516,7 +632,24 @@ describe("processNote", () => {
       mockGenerate,
     );
 
-    assert.equal(result.imageName, "my-amazing-post.jpg");
+    assert.equal(result.imageName, "chickie-loo-2026-03-18-my-amazing-post.jpg");
+  });
+
+  it("avoids name conflicts across different blog directories", async () => {
+    const autoDir = path.join(tempDir, "auto-blog-zero");
+    fs.mkdirSync(autoDir, { recursive: true });
+
+    const chickiePath = path.join(blogDir, "2026-03-22-weekly-recap.md");
+    const autoPath = path.join(autoDir, "2026-03-22-weekly-recap.md");
+    fs.writeFileSync(chickiePath, "---\ntitle: Weekly Recap\n---\n# Weekly Recap\nBody\n");
+    fs.writeFileSync(autoPath, "---\ntitle: Weekly Recap\n---\n# Weekly Recap\nBody\n");
+
+    const result1 = await processNote(chickiePath, attachmentsDir, "k", "m", mockGenerate);
+    const result2 = await processNote(autoPath, attachmentsDir, "k", "m", mockGenerate);
+
+    assert.equal(result1.imageName, "chickie-loo-2026-03-22-weekly-recap.jpg");
+    assert.equal(result2.imageName, "auto-blog-zero-2026-03-22-weekly-recap.jpg");
+    assert.notEqual(result1.imageName, result2.imageName);
   });
 });
 
@@ -681,7 +814,7 @@ describe("backfillImages", () => {
     assert.ok(latestContent.includes("updated:"));
     assert.ok(middleContent.includes("updated:"));
     assert.ok(needsImageContent.includes("updated:"));
-    assert.ok(needsImageContent.includes("![[attachments/needs-image.jpg]]"));
+    assert.ok(needsImageContent.includes("![[attachments/series-2026-03-10-needs-image.jpg]]"));
   });
 
   it("handles missing directories gracefully", async () => {
@@ -1144,6 +1277,7 @@ describe("updateFrontmatterFields", () => {
 
 describe("processNote with regeneration", () => {
   let tempDir: string;
+  let blogDir: string;
   let attachmentsDir: string;
 
   const mockGenerate: ImageGenerator = async () => ({
@@ -1153,6 +1287,8 @@ describe("processNote with regeneration", () => {
 
   beforeEach(() => {
     tempDir = fs.mkdtempSync(path.join(os.tmpdir(), "regen-test-"));
+    blogDir = path.join(tempDir, "chickie-loo");
+    fs.mkdirSync(blogDir, { recursive: true });
     attachmentsDir = path.join(tempDir, "attachments");
   });
 
@@ -1161,7 +1297,7 @@ describe("processNote with regeneration", () => {
   });
 
   it("regenerates image when regenerate_image is true", async () => {
-    const notePath = path.join(tempDir, "test.md");
+    const notePath = path.join(blogDir, "2026-03-22-test-post.md");
     fs.mkdirSync(attachmentsDir, { recursive: true });
     fs.writeFileSync(
       path.join(attachmentsDir, "old-image.jpg"),
@@ -1181,16 +1317,16 @@ describe("processNote with regeneration", () => {
     );
 
     assert.equal(result.skipped, false);
-    assert.equal(result.imageName, "test-post.jpg");
+    assert.equal(result.imageName, "chickie-loo-2026-03-22-test-post.jpg");
 
     const updated = fs.readFileSync(notePath, "utf-8");
-    assert.ok(updated.includes("![[attachments/test-post.jpg]]"));
+    assert.ok(updated.includes("![[attachments/chickie-loo-2026-03-22-test-post.jpg]]"));
     assert.ok(updated.includes("regenerate_image: false"));
     assert.ok(!fs.existsSync(path.join(attachmentsDir, "old-image.jpg")));
   });
 
   it("skips note with image when regenerate_image is not set", async () => {
-    const notePath = path.join(tempDir, "test.md");
+    const notePath = path.join(blogDir, "2026-03-22-test.md");
     fs.writeFileSync(
       notePath,
       "---\ntitle: Test Post\n---\n# Test Post\n![[attachments/existing.jpg]]\nBody\n",
@@ -1208,7 +1344,7 @@ describe("processNote with regeneration", () => {
   });
 
   it("writes image metadata to frontmatter", async () => {
-    const notePath = path.join(tempDir, "test.md");
+    const notePath = path.join(blogDir, "2026-03-22-test.md");
     fs.writeFileSync(
       notePath,
       "---\ntitle: Test Post\n---\n# Test Post\nBody text\n",
@@ -1229,7 +1365,7 @@ describe("processNote with regeneration", () => {
   });
 
   it("uses prompt describer when provided", async () => {
-    const notePath = path.join(tempDir, "test.md");
+    const notePath = path.join(blogDir, "2026-03-22-test.md");
     fs.writeFileSync(
       notePath,
       "---\ntitle: Test Post\n---\n# Test Post\nBody text\n",

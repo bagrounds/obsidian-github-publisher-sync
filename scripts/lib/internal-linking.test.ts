@@ -34,6 +34,9 @@ import {
   generateDiff,
   contentAlreadyLinksTo,
   updateFrontmatterTimestamp,
+  updateFrontmatterFields,
+  recordLinkAnalysis,
+  alreadyAnalyzed,
   extractBody,
   isRateLimitError,
   isDailyQuotaError,
@@ -1233,5 +1236,111 @@ describe("QuotaExhaustedError", () => {
   it("accepts custom message", () => {
     const err = new QuotaExhaustedError("custom");
     assert.equal(err.message, "custom");
+  });
+});
+
+// --- updateFrontmatterFields ---
+
+describe("updateFrontmatterFields", () => {
+  const tmpDir = { path: "" };
+
+  beforeEach(() => {
+    tmpDir.path = fs.mkdtempSync(path.join(os.tmpdir(), "internal-linking-fields-"));
+  });
+
+  afterEach(() => {
+    fs.rmSync(tmpDir.path, { recursive: true, force: true });
+  });
+
+  it("sets multiple fields in existing frontmatter", () => {
+    const filePath = path.join(tmpDir.path, "test.md");
+    fs.writeFileSync(filePath, "---\ntitle: Test\n---\nBody");
+
+    updateFrontmatterFields(filePath, {
+      link_analysis_model: "gemini-3.1-flash-lite-preview",
+      link_analysis_time: "2026-03-22T00:00:00.000Z",
+    });
+
+    const content = fs.readFileSync(filePath, "utf-8");
+    assert.ok(content.includes("link_analysis_model: gemini-3.1-flash-lite-preview"));
+    assert.ok(content.includes("link_analysis_time: 2026-03-22T00:00:00.000Z"));
+    assert.ok(content.includes("title: Test"));
+  });
+
+  it("updates existing fields", () => {
+    const filePath = path.join(tmpDir.path, "test.md");
+    fs.writeFileSync(filePath, "---\ntitle: Test\nlink_analysis_model: old-model\n---\nBody");
+
+    updateFrontmatterFields(filePath, { link_analysis_model: "new-model" });
+
+    const content = fs.readFileSync(filePath, "utf-8");
+    assert.ok(content.includes("link_analysis_model: new-model"));
+    assert.ok(!content.includes("old-model"));
+  });
+
+  it("creates frontmatter when none exists", () => {
+    const filePath = path.join(tmpDir.path, "test.md");
+    fs.writeFileSync(filePath, "Body only");
+
+    updateFrontmatterFields(filePath, { link_analysis_model: "test-model" });
+
+    const content = fs.readFileSync(filePath, "utf-8");
+    assert.ok(content.startsWith("---\nlink_analysis_model: test-model\n---\n"));
+    assert.ok(content.includes("Body only"));
+  });
+
+  it("does nothing for non-existent files", () => {
+    const filePath = path.join(tmpDir.path, "nonexistent.md");
+    updateFrontmatterFields(filePath, { key: "value" });
+    assert.ok(!fs.existsSync(filePath));
+  });
+});
+
+// --- recordLinkAnalysis ---
+
+describe("recordLinkAnalysis", () => {
+  const tmpDir = { path: "" };
+
+  beforeEach(() => {
+    tmpDir.path = fs.mkdtempSync(path.join(os.tmpdir(), "internal-linking-record-"));
+  });
+
+  afterEach(() => {
+    fs.rmSync(tmpDir.path, { recursive: true, force: true });
+  });
+
+  it("writes link_analysis_model and link_analysis_time", () => {
+    const filePath = path.join(tmpDir.path, "test.md");
+    fs.writeFileSync(filePath, "---\ntitle: Test\n---\nBody");
+
+    recordLinkAnalysis(filePath, "gemini-3.1-flash-lite-preview", "2026-03-22T00:00:00.000Z");
+
+    const content = fs.readFileSync(filePath, "utf-8");
+    assert.ok(content.includes("link_analysis_model: gemini-3.1-flash-lite-preview"));
+    assert.ok(content.includes("link_analysis_time: 2026-03-22T00:00:00.000Z"));
+  });
+});
+
+// --- alreadyAnalyzed ---
+
+describe("alreadyAnalyzed", () => {
+  it("returns true when model matches", () => {
+    const content = "---\ntitle: Test\nlink_analysis_model: gemini-3.1-flash-lite-preview\n---\nBody";
+    assert.ok(alreadyAnalyzed(content, "gemini-3.1-flash-lite-preview"));
+  });
+
+  it("returns false when model differs", () => {
+    const content = "---\ntitle: Test\nlink_analysis_model: old-model\n---\nBody";
+    assert.ok(!alreadyAnalyzed(content, "gemini-3.1-flash-lite-preview"));
+  });
+
+  it("returns false when no link_analysis_model field", () => {
+    const content = "---\ntitle: Test\n---\nBody";
+    assert.ok(!alreadyAnalyzed(content, "gemini-3.1-flash-lite-preview"));
+  });
+
+  it("returns false for content without frontmatter", () => {
+    const content = "Body only";
+    assert.ok(!alreadyAnalyzed(content, "gemini-3.1-flash-lite-preview"));
   });
 });

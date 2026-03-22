@@ -2,14 +2,15 @@
  * Internal Linking — BFS-driven wikilink insertion.
  *
  * Traverses the content graph starting from the most recent reflection,
- * identifies plain-text references to content pages, validates them with
- * Gemini, and inserts wikilinks.
+ * uses Gemini AI to identify genuine book references in each file,
+ * and inserts wikilinks for confirmed references.
  *
  * Design principles:
  * - Correctness over coverage: better to miss links than insert wrong ones
  * - Pure functions where possible (functional/declarative style)
  * - Strong static types
- * - Deterministic discovery + AI validation hybrid
+ * - AI-driven identification: Gemini identifies references, code finds positions
+ * - Incremental: tracks analyzed files via frontmatter to avoid redundant work
  *
  * @module internal-linking
  */
@@ -795,16 +796,16 @@ export const applyReplacements = (
   }, content);
 };
 
-// --- Frontmatter Timestamp ---
+// --- Frontmatter Updates ---
 
 /**
- * Update the "updated" frontmatter field for a file to the given ISO 8601 timestamp.
- * Creates the field if missing, creates a frontmatter block if absent.
- * Used to leave a BFS trail so Enveloppe can discover modified files.
+ * Set one or more frontmatter fields on a file.
+ * Creates fields if missing, creates a frontmatter block if absent.
+ * Preserves all other frontmatter and body content.
  */
-export const updateFrontmatterTimestamp = (
+export const updateFrontmatterFields = (
   filePath: string,
-  timestamp: string,
+  fields: Readonly<Record<string, string>>,
 ): void => {
   if (!fs.existsSync(filePath)) return;
 
@@ -815,20 +816,61 @@ export const updateFrontmatterTimestamp = (
     const endIndex = lines.findIndex((l, i) => i > 0 && l.trim() === "---");
     if (endIndex < 0) return;
 
-    const updatedLineIndex = lines.findIndex(
-      (l, i) => i > 0 && i < endIndex && /^updated:\s/.test(l),
-    );
-
-    if (updatedLineIndex >= 0) {
-      lines[updatedLineIndex] = `updated: ${timestamp}`;
-    } else {
-      lines.splice(endIndex, 0, `updated: ${timestamp}`);
-    }
+    Object.entries(fields).forEach(([key, value]) => {
+      const existing = lines.findIndex(
+        (l, i) => i > 0 && i < endIndex && new RegExp(`^${key}:\\s`).test(l),
+      );
+      if (existing >= 0) {
+        lines[existing] = `${key}: ${value}`;
+      } else {
+        lines.splice(endIndex, 0, `${key}: ${value}`);
+      }
+    });
 
     fs.writeFileSync(filePath, lines.join("\n"), "utf-8");
   } else {
-    fs.writeFileSync(filePath, `---\nupdated: ${timestamp}\n---\n${raw}`, "utf-8");
+    const entries = Object.entries(fields)
+      .map(([k, v]) => `${k}: ${v}`)
+      .join("\n");
+    fs.writeFileSync(filePath, `---\n${entries}\n---\n${raw}`, "utf-8");
   }
+};
+
+/**
+ * Update the "updated" frontmatter field for a file to the given ISO 8601 timestamp.
+ * Creates the field if missing, creates a frontmatter block if absent.
+ * Used to leave a BFS trail so Enveloppe can discover modified files.
+ */
+export const updateFrontmatterTimestamp = (
+  filePath: string,
+  timestamp: string,
+): void => updateFrontmatterFields(filePath, { updated: timestamp });
+
+/**
+ * Record link analysis metadata in a file's frontmatter.
+ * Tracks which model analyzed the file and when, enabling BFS to skip
+ * already-analyzed files across sessions.
+ */
+export const recordLinkAnalysis = (
+  filePath: string,
+  model: string,
+  timestamp: string,
+): void =>
+  updateFrontmatterFields(filePath, {
+    link_analysis_model: model,
+    link_analysis_time: timestamp,
+  });
+
+/**
+ * Check whether a file has already been analyzed for links by the given model.
+ * Returns true if the file's frontmatter contains a matching link_analysis_model.
+ */
+export const alreadyAnalyzed = (
+  content: string,
+  model: string,
+): boolean => {
+  const fm = parseFrontmatter(content);
+  return fm["link_analysis_model"] === model;
 };
 
 // --- File Processing ---
@@ -858,6 +900,19 @@ export const processFile = async (
 ): Promise<FileResult> => {
   const filePath = path.join(contentDir, relativePath);
   const content = fs.readFileSync(filePath, "utf-8");
+
+  // Skip files already analyzed by the same model
+  if (alreadyAnalyzed(content, config.model)) {
+    console.log(
+      JSON.stringify({
+        event: "skipped_already_analyzed",
+        file: relativePath,
+        model: config.model,
+      }),
+    );
+    return { relativePath, linksAdded: 0, modified: false };
+  }
+
   const body = extractBody(content);
 
   // Filter index to books not already linked in this file
@@ -868,6 +923,10 @@ export const processFile = async (
   );
 
   if (eligibleBooks.length === 0) {
+    // Record analysis even when no eligible books — avoids re-analyzing next session
+    if (!config.dryRun) {
+      recordLinkAnalysis(filePath, config.model, new Date().toISOString());
+    }
     return { relativePath, linksAdded: 0, modified: false };
   }
 
@@ -876,6 +935,11 @@ export const processFile = async (
   const identifiedPaths = config.apiKey
     ? await identifyBooksWithGemini(body, eligibleBooks, relativePath, config.apiKey, config.model)
     : [];
+
+  // Record analysis metadata (even when no books identified)
+  if (!config.dryRun) {
+    recordLinkAnalysis(filePath, config.model, new Date().toISOString());
+  }
 
   if (identifiedPaths.length === 0) {
     return { relativePath, linksAdded: 0, modified: false };
@@ -894,10 +958,13 @@ export const processFile = async (
   );
 
   // Now find positions for only the identified books using deterministic matching
-  const masked = maskProtectedRegions(content);
+  // Re-read content since recordLinkAnalysis may have modified frontmatter
+  const updatedContent = fs.readFileSync(filePath, "utf-8");
+  const contentForMatching = config.dryRun ? content : updatedContent;
+  const masked = maskProtectedRegions(contentForMatching);
   const identifiedIndex = index.filter((e) => identifiedSet.has(e.relativePath));
-  const existingLinks = extractExistingLinkedPaths(content, relativePath, contentDir);
-  const candidates = findLinkCandidates(content, masked, identifiedIndex, existingLinks, relativePath, true);
+  const existingLinks = extractExistingLinkedPaths(contentForMatching, relativePath, contentDir);
+  const candidates = findLinkCandidates(contentForMatching, masked, identifiedIndex, existingLinks, relativePath, true);
 
   if (candidates.length === 0) {
     return { relativePath, linksAdded: 0, modified: false };
@@ -905,7 +972,7 @@ export const processFile = async (
 
   // All candidates are Gemini-approved — apply all
   const validations = candidates.map(() => true);
-  const newContent = applyReplacements(content, candidates, validations);
+  const newContent = applyReplacements(contentForMatching, candidates, validations);
 
   if (config.dryRun) {
     const diffLines = generateDiff(content, newContent);

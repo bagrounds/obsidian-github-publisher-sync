@@ -11,6 +11,7 @@ updated: 2026-03-22T13:56:28-07:00
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
 📑 Notes, 💭 thoughts, and 🔗 Links.  
 ❔ What do 🫵 _you_ 🤔 think?  
+🔊 Listen to any page with built in audio control.  
 💬 Comment on any page with your GitHub account.  
   
 ## [🪞 Reflections](./reflections/index.md) ~ Blog (493)  

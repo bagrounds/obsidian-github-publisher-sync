@@ -7,6 +7,9 @@ URL: https://bagrounds.org/books/on-tyranny
 Author:
 tags:
 affiliate link: https://amzn.to/4jDxSib
+force_analyze_links: false
+link_analysis_time: 2026-03-22T06:07:08.810Z
+link_analysis_model: gemini-3.1-flash-lite-preview
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 👑🚫📜2️⃣0️⃣ On Tyranny: Twenty Lessons from the Twentieth Century  

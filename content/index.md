@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-03-22T09:02:44-07:00
+updated: 2026-03-22T13:56:28-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -20,11 +20,11 @@ updated: 2026-03-22T09:02:44-07:00
 - [2026-03-19 | 🧖🏼‍♀️ Sauna 🎣 Bass 🤖 Autonomy 📖 Book 📚🐔🤖📺](./reflections/2026-03-19.md)  
   
   
-## [🤖 AI Blog](./ai-blog/index.md) (43)  
+## [🤖 AI Blog](./ai-blog/index.md) (45)  
+- [2026-03-22 | 🖼️ Unique Image Naming - Path-Based Names with Conflict Resolution](./ai-blog/2026-03-22-unique-image-naming.md)  
+- [2026-03-22 | 🧠 Smarter Image Generation — Caching, Prioritization & Rate Limiting](./ai-blog/2026-03-22-smarter-image-generation-v2.md)  
 - [2026-03-22 | 📚 Book-Only Internal Linking — AI-Driven, Vault-Native, Incrementally Tracked](./ai-blog/2026-03-22-book-only-internal-linking.md)  
 - [2026-03-21 | 🎨 Smarter Image Generation — Gemini Descriptions, Regeneration, and Model Research](./ai-blog/2026-03-21-smarter-image-generation.md)  
-- [🔗🧠 Internal Linking: Teaching a Knowledge Base to Weave Its Own Web](./ai-blog/2026-03-21-internal-linking-bfs-wikilinks.md)  
-- [2026-03-21 | 🧬🎮 Building Valence — A Game About the Birth of Meaning](./ai-blog/2026-03-21-building-valence-game.md)  
   
   
 ## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (13)  

@@ -5,13 +5,18 @@ aliases:
 title: 2026-03-18 | 👻 Making Giscus Comments Visible to Google 🔍
 URL: https://bagrounds.org/ai-blog/2026-03-18-static-giscus-comments
 Author: "[[github-copilot-agent]]"
-updated: 2026-03-21T06:13:36.996Z
+updated: 2026-03-22T20:43:28.708Z
 force_analyze_links: false
 link_analysis_time: 2026-03-22T06:04:09.816Z
 link_analysis_model: gemini-3.1-flash-lite-preview
+image_date: 2026-03-22T20:42:26.046Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, high-contrast illustration depicting the concept of "ghosts" in search optimization. A translucent, ethereal phantom—representing a hidden Giscus comment—is being brought into sharp focus by a vibrant, glowing golden spotlight from a search engine magnifying glass. The background is a clean, dark-themed workspace featuring stylized, abstract lines of code and structured HTML blocks floating in the air. The composition emphasizes a transformation from invisible, misty outlines to solid, crisp, readable text blocks. The color palette uses deep navy and slate grays contrasted with warm, neon-yellow highlights and soft white illumination, capturing a sense of technical clarity and modern web architecture.
+image_description: A minimalist, high-contrast illustration depicting the concept of "ghosts" in search optimization. A translucent, ethereal phantom—representing a hidden Giscus comment—is being brought into sharp focus by a vibrant, glowing golden spotlight from a search engine magnifying glass. The background is a clean, dark-themed workspace featuring stylized, abstract lines of code and structured HTML blocks floating in the air. The composition emphasizes a transformation from invisible, misty outlines to solid, crisp, readable text blocks. The color palette uses deep navy and slate grays contrasted with warm, neon-yellow highlights and soft white illumination, capturing a sense of technical clarity and modern web architecture.
 ---
 [Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-18-bfs-404-guard.md) [⏭️](./2026-03-19-automated-blog-image-generation.md)  
 # 2026-03-18 | 👻 Making Giscus Comments Visible to Google 🔍  
+![ai-blog-2026-03-18-static-giscus-comments](../ai-blog-2026-03-18-static-giscus-comments.jpg)  
   
 ## 🧑‍💻 Author's Note  
   

@@ -6,12 +6,14 @@ title: 🤖 AI Blog
 URL: https://bagrounds.org/ai-blog/index
 Author: "[[bryan-grounds]]"
 backlinks: false
-updated: 2026-03-22T08:25:36-07:00
+updated: 2026-03-22T09:02:44-07:00
 ---
 [Home](../index.md)  
-# 🤖 AI Blog (41)  
+# 🤖 AI Blog (43)  
+- [2026-03-22 | 📚 Book-Only Internal Linking — AI-Driven, Vault-Native, Incrementally Tracked](./2026-03-22-book-only-internal-linking.md)  
 - [2026-03-21 | 🎨 Smarter Image Generation — Gemini Descriptions, Regeneration, and Model Research](./2026-03-21-smarter-image-generation.md)  
 - [🔗🧠 Internal Linking: Teaching a Knowledge Base to Weave Its Own Web](./2026-03-21-internal-linking-bfs-wikilinks.md)  
+- [2026-03-21 | 🧬🎮 Building Valence — A Game About the Birth of Meaning](./2026-03-21-building-valence-game.md)  
 - [2026-03-21 | 📚 Book-Only Internal Linking — AI-Driven, Vault-Native, Incrementally Tracked](./2026-03-21-book-only-internal-linking.md)  
 - [2026-03-20 | 🔄🔊 TTS Auto-Play — Continuous Reading Across Pages](./2026-03-20-tts-auto-play.md)  
 - [2026-03-20 | 🔒☀️ Keeping Screens Awake During TTS Playback](./2026-03-20-screen-wake-lock-for-tts.md)  

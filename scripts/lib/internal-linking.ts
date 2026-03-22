@@ -2,14 +2,15 @@
  * Internal Linking — BFS-driven wikilink insertion.
  *
  * Traverses the content graph starting from the most recent reflection,
- * identifies plain-text references to content pages, validates them with
- * Gemini, and inserts wikilinks.
+ * uses Gemini AI to identify genuine book references in each file,
+ * and inserts wikilinks for confirmed references.
  *
  * Design principles:
  * - Correctness over coverage: better to miss links than insert wrong ones
  * - Pure functions where possible (functional/declarative style)
  * - Strong static types
- * - Deterministic discovery + AI validation hybrid
+ * - AI-driven identification: Gemini identifies references, code finds positions
+ * - Incremental: tracks analyzed files via frontmatter to avoid redundant work
  *
  * @module internal-linking
  */
@@ -25,8 +26,17 @@ export const MIN_TITLE_LENGTH = 8;
 /** Minimum word count for a title to be eligible for matching without AI validation */
 export const MIN_WORD_COUNT_WITHOUT_AI = 2;
 
-/** Default Gemini model for link validation */
+/** Default Gemini model for link identification */
 export const DEFAULT_LINKING_MODEL = "gemini-3.1-flash-lite-preview";
+
+/** Maximum retries on rate-limit errors before propagating */
+export const MAX_GEMINI_RETRIES = 3;
+
+/** Initial backoff in milliseconds for rate-limit retries */
+export const INITIAL_BACKOFF_MS = 5_000;
+
+/** Maximum backoff in milliseconds */
+export const MAX_BACKOFF_MS = 60_000;
 
 /** Content subdirectories to index as link targets (excludes date-based content) */
 export const INDEXABLE_DIRS = [
@@ -42,6 +52,9 @@ export const INDEXABLE_DIRS = [
   "tools",
 ] as const;
 
+/** Directories whose pages are eligible for wikilink insertion (books-only for precision) */
+export const LINKABLE_DIRS = ["books"] as const;
+
 /** All content directories for BFS traversal (includes date-based content) */
 export const TRAVERSABLE_DIRS = [
   ...INDEXABLE_DIRS,
@@ -49,6 +62,99 @@ export const TRAVERSABLE_DIRS = [
   "chickie-loo",
   "auto-blog-zero",
 ] as const;
+
+// --- Error Types ---
+
+/** Thrown when Gemini API daily quota is exhausted. Halts the pipeline. */
+export class QuotaExhaustedError extends Error {
+  constructor(message: string = "Gemini API daily quota exhausted") {
+    super(message);
+    this.name = "QuotaExhaustedError";
+  }
+}
+
+// --- Rate Limit Utilities ---
+
+/** Check if an error is a rate-limit / quota error */
+export const isRateLimitError = (error: unknown): boolean => {
+  if (!error || typeof error !== "object") return false;
+  const message = (error as { message?: string }).message ?? "";
+  return (
+    message.includes("429") ||
+    message.includes("RESOURCE_EXHAUSTED") ||
+    message.includes("quota")
+  );
+};
+
+/** Check if error indicates daily quota exhaustion (not just per-minute) */
+export const isDailyQuotaError = (error: unknown): boolean => {
+  if (!error || typeof error !== "object") return false;
+  const message = (error as { message?: string }).message ?? "";
+  return (
+    message.includes("quota") &&
+    (message.includes("daily") ||
+     message.includes("per day") ||
+     message.includes("PerDay"))
+  );
+};
+
+/** Parse retry delay from Gemini error response */
+export const parseRetryDelay = (error: unknown): number | null => {
+  if (!error || typeof error !== "object") return null;
+  const message = (error as { message?: string }).message ?? "";
+
+  // Match "retry in 14.47s" or "retry in 30s"
+  const retryInMatch = message.match(/retry\s+in\s+(\d+(?:\.\d+)?)\s*s/i);
+  if (retryInMatch) return Math.ceil(parseFloat(retryInMatch[1] ?? "0") * 1000);
+
+  // Match 'retryDelay: "30s"' or 'retryDelay":"14s"'
+  const delayMatch = message.match(/retryDelay["\s:]*["']?(\d+(?:\.\d+)?)\s*s/i);
+  if (delayMatch) return Math.ceil(parseFloat(delayMatch[1] ?? "0") * 1000);
+
+  return null;
+};
+
+/**
+ * Extract a JSON array from a potentially messy Gemini response.
+ *
+ * Gemini sometimes wraps JSON in markdown code fences, appends explanation text,
+ * or returns multi-line output even when responseMimeType is "application/json".
+ * This finds the outermost [...] array in the text and parses only that.
+ */
+export const extractJsonArray = (text: string): unknown => {
+  // First try: direct parse (works for clean responses)
+  try {
+    return JSON.parse(text);
+  } catch {
+    // Continue to extraction logic
+  }
+
+  // Strip markdown code fences if present
+  const stripped = text
+    .replace(/^```(?:json)?\s*/i, "")
+    .replace(/\s*```\s*$/, "")
+    .trim();
+
+  try {
+    return JSON.parse(stripped);
+  } catch {
+    // Continue to bracket extraction
+  }
+
+  // Find the first '[' and matching last ']' to extract just the array
+  const start = stripped.indexOf("[");
+  const end = stripped.lastIndexOf("]");
+  if (start >= 0 && end > start) {
+    return JSON.parse(stripped.substring(start, end + 1));
+  }
+
+  // Give up: throw with the original text for debugging
+  throw new SyntaxError(`No JSON array found in response (${text.length} chars): ${text.substring(0, 200)}${text.length > 200 ? "..." : ""}`);
+};
+
+/** Sleep for a given number of milliseconds */
+const sleep = (ms: number): Promise<void> =>
+  new Promise((resolve) => setTimeout(resolve, ms));
 
 // --- Types ---
 
@@ -82,6 +188,8 @@ export interface FileResult {
   readonly linksAdded: number;
   /** Whether the file content was modified */
   readonly modified: boolean;
+  /** Whether the file was skipped (already analyzed) */
+  readonly skipped: boolean;
 }
 
 /** Result of the full internal linking run */
@@ -92,6 +200,8 @@ export interface RunResult {
   readonly filesModified: number;
   /** Total links added across all files */
   readonly totalLinksAdded: number;
+  /** Files skipped due to existing frontmatter analysis */
+  readonly filesSkipped: number;
   /** Per-file results */
   readonly fileResults: readonly FileResult[];
 }
@@ -200,7 +310,7 @@ export const parseFrontmatter = (
  * Skips index.md files and files without a title.
  */
 export const buildContentIndex = (contentDir: string): readonly ContentEntry[] =>
-  INDEXABLE_DIRS.flatMap((dir) => {
+  LINKABLE_DIRS.flatMap((dir) => {
     const dirPath = path.join(contentDir, dir);
     if (!fs.existsSync(dirPath)) return [];
 
@@ -420,8 +530,29 @@ export const extractExistingLinkedPaths = (
 // --- Candidate Discovery ---
 
 /**
+ * Check whether a file's raw content already contains any link (wikilink or markdown)
+ * pointing to the given entry's path. Checks for the path followed by common link
+ * delimiters to avoid false positives on longer paths that share a prefix.
+ */
+export const contentAlreadyLinksTo = (
+  content: string,
+  entry: ContentEntry,
+): boolean => {
+  const pathWithoutMd = entry.relativePath.replace(/\.md$/, "");
+  return (
+    content.includes(`${pathWithoutMd}]`) ||
+    content.includes(`${pathWithoutMd}|`) ||
+    content.includes(`${pathWithoutMd}#`) ||
+    content.includes(`${pathWithoutMd}.`)
+  );
+};
+
+/**
  * Find link candidates in a file by searching masked content for plain-title matches.
  * Returns candidates sorted by position (ascending) for safe replacement.
+ *
+ * Only considers entries from the books directory (LINKABLE_DIRS).
+ * Skips entries whose path already appears anywhere in the file (even outside links).
  *
  * When hasAiValidation is false (no Gemini API key), applies stricter filtering:
  * only multi-word titles are considered to avoid common single-word false positives.
@@ -455,6 +586,9 @@ export const findLinkCandidates = (
 
     // Skip already-linked content
     if (existingLinks.has(entry.relativePath)) return;
+
+    // Skip if the entry's path already appears anywhere in the raw content
+    if (contentAlreadyLinksTo(content, entry)) return;
 
     // Without AI validation, skip single-word titles to avoid common word false positives
     if (!hasAiValidation && countWords(entry.plainTitle) < MIN_WORD_COUNT_WITHOUT_AI) return;
@@ -491,114 +625,194 @@ export const findLinkCandidates = (
   return [...candidates].sort((a, b) => a.position - b.position);
 };
 
-// --- Gemini Validation ---
+// --- Gemini Book Identification ---
 
 /**
- * Build the validation prompt for Gemini.
- * Asks the model to validate each candidate link.
+ * Build the identification prompt for Gemini.
+ * Sends the file body and available book titles so Gemini can identify
+ * genuine book references — not just validate deterministic matches.
  */
-export const buildValidationPrompt = (
-  candidates: readonly LinkCandidate[],
+export const buildIdentificationPrompt = (
+  fileBody: string,
+  bookEntries: readonly ContentEntry[],
   fileRelativePath: string,
 ): { readonly system: string; readonly user: string } => {
-  const candidateDescriptions = candidates
-    .map(
-      (c, i) =>
-        `${i + 1}. Matched text: "${c.matchedText}"
-   Proposed link target: ${c.entry.relativePath} (${c.entry.title})
-   Context: "${c.context}"`,
-    )
-    .join("\n\n");
+  const bookList = bookEntries
+    .map((e) => `- "${e.plainTitle}" (${e.relativePath})`)
+    .join("\n");
 
   return {
-    system: `You are a precise editorial assistant for a knowledge base. Your job is to validate proposed internal links.
+    system: `You are a precise editorial assistant for a knowledge base of book reports. Your job is to identify genuine book references in a document.
 
-For each candidate below, determine if the matched plain text genuinely refers to the proposed content page.
+You will receive:
+1. The path and body text of a document.
+2. A list of book titles and their file paths.
+
+Your task: Determine which books from the list are genuinely referenced in the document AS BOOKS (literary works). This means the text is discussing, recommending, citing, or listing the book itself — not merely using a word that happens to match a book title.
 
 Rules:
-- Return true ONLY if you are confident the text refers to exactly the same work/concept as the proposed link target.
-- Return false if the match is coincidental, partial, ambiguous, or could refer to something else.
-- A book title in body text that exactly matches a book report title should be true.
-- A software name that matches a software page should be true if used in that context.
-- A person's name that matches a person page should be true if referring to that person.
-- Be conservative: when in doubt, return false.
+- Return the relativePath of each book that is genuinely referenced as a book.
+- A book reference may use the main title without the subtitle. For example, "Thinking, Fast and Slow" references the book even if the full title includes a subtitle.
+- DO NOT include a book if the matching word or phrase is used in a generic context. For example:
+  - "diplomacy" meaning the practice of international relations → NOT a book reference
+  - "foundation" meaning a base or organization → NOT a book reference
+  - "common sense" meaning practical judgment → NOT a book reference
+  - "abundance" meaning plentifulness → NOT a book reference
+  - "on democracy" as a phrase in a sentence about democracy → NOT a book reference
+- DO include a book when the text explicitly discusses, recommends, or cites it as a literary work, e.g.:
+  - "I recommend reading Thinking, Fast and Slow" → YES
+  - "The Alignment Problem by Brian Christian" → YES
+  - Book recommendation sections, reading lists, "related books" sections → YES
+- Be conservative: when in doubt, do NOT include the book.
 
-Return ONLY a valid JSON array of booleans, one per candidate. Example: [true, false, true]
+Return ONLY a valid JSON array of relativePath strings for books genuinely referenced. Example: ["books/thinking-fast-and-slow.md", "books/deep-learning.md"]
+If no books are genuinely referenced, return an empty array: []
 No other text, no explanation, no markdown formatting.`,
     user: `File: ${fileRelativePath}
 
-Candidates to validate:
+Available books:
+${bookList}
 
-${candidateDescriptions}`,
+Document body:
+${fileBody}`,
   };
 };
 
 /**
- * Validate link candidates using Gemini AI.
- * Returns an array of booleans, one per candidate (true = valid link).
- * On any error, returns all false (conservative: skip file on failure).
+ * Identify genuine book references using Gemini AI.
+ * Returns an array of relativePaths for books genuinely referenced in the content.
+ *
+ * Implements retry with exponential backoff for per-minute rate limits.
+ * Throws QuotaExhaustedError on daily quota exhaustion to halt the pipeline.
  */
-export const validateWithGemini = async (
-  candidates: readonly LinkCandidate[],
+export const identifyBooksWithGemini = async (
+  fileBody: string,
+  bookEntries: readonly ContentEntry[],
   fileRelativePath: string,
   apiKey: string,
   model: string,
-): Promise<readonly boolean[]> => {
-  if (candidates.length === 0) return [];
+): Promise<readonly string[]> => {
+  if (bookEntries.length === 0) return [];
 
-  try {
-    const { GoogleGenAI } = await import("@google/genai");
-    const ai = new GoogleGenAI({ apiKey });
+  const { GoogleGenAI } = await import("@google/genai");
+  const ai = new GoogleGenAI({ apiKey });
 
-    const prompt = buildValidationPrompt(candidates, fileRelativePath);
-    const contents = [
-      {
-        role: "user" as const,
-        parts: [{ text: `${prompt.system}\n\n${prompt.user}` }],
-      },
-    ];
+  const prompt = buildIdentificationPrompt(fileBody, bookEntries, fileRelativePath);
+  const contents = [
+    {
+      role: "user" as const,
+      parts: [{ text: `${prompt.system}\n\n${prompt.user}` }],
+    },
+  ];
 
-    const result = await ai.models.generateContent({
-      model,
-      contents,
-      config: {
-        temperature: 0,
-        responseMimeType: "application/json",
-      },
-    });
+  let backoffMs = INITIAL_BACKOFF_MS;
 
-    const text = (result.text ?? "").trim();
-    const parsed = JSON.parse(text);
+  for (let attempt = 0; attempt <= MAX_GEMINI_RETRIES; attempt++) {
+    try {
+      const result = await ai.models.generateContent({
+        model,
+        contents,
+        config: {
+          temperature: 0,
+          responseMimeType: "application/json",
+        },
+      });
 
-    if (
-      !Array.isArray(parsed) ||
-      parsed.length !== candidates.length ||
-      !parsed.every((v: unknown) => typeof v === "boolean")
-    ) {
+      const text = (result.text ?? "").trim();
+      const parsed = extractJsonArray(text);
+
+      if (
+        !Array.isArray(parsed) ||
+        !parsed.every((v: unknown) => typeof v === "string")
+      ) {
+        console.error(
+          JSON.stringify({
+            event: "gemini_identification_invalid_response",
+            file: fileRelativePath,
+            got: parsed,
+          }),
+        );
+        return [];
+      }
+
+      return parsed as readonly string[];
+    } catch (error) {
+      if (isDailyQuotaError(error)) {
+        console.error(
+          JSON.stringify({
+            event: "gemini_daily_quota_exhausted",
+            file: fileRelativePath,
+            error: error instanceof Error ? error.message : String(error),
+          }),
+        );
+        throw new QuotaExhaustedError();
+      }
+
+      if (isRateLimitError(error) && attempt < MAX_GEMINI_RETRIES) {
+        const serverDelay = parseRetryDelay(error);
+        const waitMs = serverDelay ?? backoffMs;
+        console.warn(
+          JSON.stringify({
+            event: "gemini_rate_limit_retry",
+            file: fileRelativePath,
+            attempt: attempt + 1,
+            maxRetries: MAX_GEMINI_RETRIES,
+            waitMs,
+          }),
+        );
+        await sleep(waitMs);
+        backoffMs = Math.min(backoffMs * 2, MAX_BACKOFF_MS);
+        continue;
+      }
+
       console.error(
         JSON.stringify({
-          event: "gemini_validation_invalid_response",
-          expected: candidates.length,
-          got: parsed,
+          event: "gemini_identification_error",
+          file: fileRelativePath,
+          error: error instanceof Error ? error.message : String(error),
         }),
       );
-      return candidates.map(() => false);
+      return [];
     }
-
-    return parsed as readonly boolean[];
-  } catch (error) {
-    console.error(
-      JSON.stringify({
-        event: "gemini_validation_error",
-        file: fileRelativePath,
-        error: error instanceof Error ? error.message : String(error),
-      }),
-    );
-    return candidates.map(() => false);
   }
+
+  console.error(
+    JSON.stringify({
+      event: "gemini_retries_exhausted",
+      file: fileRelativePath,
+      maxRetries: MAX_GEMINI_RETRIES,
+    }),
+  );
+  return [];
 };
 
 // --- Replacement Application ---
+
+/**
+ * Generate a minimal diff showing only changed lines between original and modified content.
+ * Returns an array of diff hunks, each showing the line number, old line, and new line.
+ */
+export const generateDiff = (
+  original: string,
+  modified: string,
+): readonly string[] => {
+  const originalLines = original.split("\n");
+  const modifiedLines = modified.split("\n");
+  const maxLen = Math.max(originalLines.length, modifiedLines.length);
+
+  return Array.from({ length: maxLen })
+    .flatMap((_, i) => {
+      const origLine = originalLines[i];
+      const modLine = modifiedLines[i];
+      return origLine !== modLine
+        ? [
+            `@@ line ${i + 1} @@`,
+            ...(origLine !== undefined ? [`- ${origLine}`] : []),
+            ...(modLine !== undefined ? [`+ ${modLine}`] : []),
+          ]
+        : [];
+    });
+};
 
 /**
  * Apply wikilink replacements to content.
@@ -624,10 +838,106 @@ export const applyReplacements = (
   }, content);
 };
 
+// --- Frontmatter Updates ---
+
+/**
+ * Set one or more frontmatter fields on a file.
+ * Creates fields if missing, creates a frontmatter block if absent.
+ * Preserves all other frontmatter and body content.
+ */
+export const updateFrontmatterFields = (
+  filePath: string,
+  fields: Readonly<Record<string, string>>,
+): void => {
+  if (!fs.existsSync(filePath)) return;
+
+  const raw = fs.readFileSync(filePath, "utf-8");
+  const lines = raw.split("\n");
+
+  if (lines[0]?.trim() === "---") {
+    const endIndex = lines.findIndex((l, i) => i > 0 && l.trim() === "---");
+    if (endIndex < 0) return;
+
+    Object.entries(fields).forEach(([key, value]) => {
+      const existing = lines.findIndex(
+        (l, i) => i > 0 && i < endIndex && new RegExp(`^${key}:\\s`).test(l),
+      );
+      if (existing >= 0) {
+        lines[existing] = `${key}: ${value}`;
+      } else {
+        lines.splice(endIndex, 0, `${key}: ${value}`);
+      }
+    });
+
+    fs.writeFileSync(filePath, lines.join("\n"), "utf-8");
+  } else {
+    const entries = Object.entries(fields)
+      .map(([k, v]) => `${k}: ${v}`)
+      .join("\n");
+    fs.writeFileSync(filePath, `---\n${entries}\n---\n${raw}`, "utf-8");
+  }
+};
+
+/**
+ * Update the "updated" frontmatter field for a file to the given ISO 8601 timestamp.
+ * Creates the field if missing, creates a frontmatter block if absent.
+ * Used to leave a BFS trail so Enveloppe can discover modified files.
+ */
+export const updateFrontmatterTimestamp = (
+  filePath: string,
+  timestamp: string,
+): void => updateFrontmatterFields(filePath, { updated: timestamp });
+
+/**
+ * Record link analysis metadata in a file's frontmatter.
+ * Tracks which model analyzed the file and when, enabling BFS to skip
+ * already-analyzed files across sessions.
+ * Also clears force_analyze_links if it was set.
+ */
+export const recordLinkAnalysis = (
+  filePath: string,
+  model: string,
+  timestamp: string,
+): void =>
+  updateFrontmatterFields(filePath, {
+    link_analysis_model: model,
+    link_analysis_time: timestamp,
+    force_analyze_links: "false",
+  });
+
+/**
+ * Check whether a file has already been analyzed for links.
+ * Returns true if the file's frontmatter contains a link_analysis_model field
+ * AND force_analyze_links is not set to true.
+ * The model value is purely informational — changing models does NOT trigger re-analysis.
+ * Use `force_analyze_links: true` in frontmatter to request manual re-analysis.
+ */
+export const alreadyAnalyzed = (
+  content: string,
+): boolean => {
+  const fm = parseFrontmatter(content);
+  if (fm["force_analyze_links"] === "true") return false;
+  return fm["link_analysis_model"] !== undefined;
+};
+
 // --- File Processing ---
 
 /**
- * Process a single file: find candidates, validate with AI, apply replacements.
+ * Extract the body text from a markdown file (everything after frontmatter).
+ */
+export const extractBody = (content: string): string => {
+  const lines = content.split("\n");
+  if (lines[0]?.trim() !== "---") return content;
+  const endIndex = lines.findIndex((l, i) => i > 0 && l.trim() === "---");
+  return endIndex >= 0 ? lines.slice(endIndex + 1).join("\n") : content;
+};
+
+/**
+ * Process a single file: use Gemini to identify book references, find positions, apply links.
+ *
+ * New architecture: Gemini IDENTIFIES which books are referenced (not just validates).
+ * Deterministic position finding is only used AFTER Gemini confirms a book is referenced.
+ * Throws QuotaExhaustedError on daily quota exhaustion to halt the pipeline.
  */
 export const processFile = async (
   relativePath: string,
@@ -638,43 +948,89 @@ export const processFile = async (
   const filePath = path.join(contentDir, relativePath);
   const content = fs.readFileSync(filePath, "utf-8");
 
-  // Find existing links to avoid double-linking
-  const existingLinks = extractExistingLinkedPaths(content, relativePath, contentDir);
-
-  // Mask protected regions and find candidates
-  const masked = maskProtectedRegions(content);
-  const hasAi = !!config.apiKey;
-  const candidates = findLinkCandidates(content, masked, index, existingLinks, relativePath, hasAi);
-
-  if (candidates.length === 0) {
-    return { relativePath, linksAdded: 0, modified: false };
+  // Skip files already analyzed (unless force_analyze_links is set)
+  if (alreadyAnalyzed(content)) {
+    console.log(
+      JSON.stringify({
+        event: "skipped_already_analyzed",
+        file: relativePath,
+      }),
+    );
+    return { relativePath, linksAdded: 0, modified: false, skipped: true };
   }
+
+  const body = extractBody(content);
+
+  // Filter index to books not already linked in this file
+  const eligibleBooks = index.filter(
+    (entry) =>
+      entry.relativePath !== relativePath &&
+      !contentAlreadyLinksTo(content, entry),
+  );
+
+  if (eligibleBooks.length === 0) {
+    // Record analysis even when no eligible books — avoids re-analyzing next session
+    if (!config.dryRun) {
+      recordLinkAnalysis(filePath, config.model, new Date().toISOString());
+    }
+    return { relativePath, linksAdded: 0, modified: false, skipped: false };
+  }
+
+  // Use Gemini to IDENTIFY which books are genuinely referenced
+  // (not just deterministic string matching)
+  const identifiedPaths = config.apiKey
+    ? await identifyBooksWithGemini(body, eligibleBooks, relativePath, config.apiKey, config.model)
+    : [];
+
+  // Record analysis metadata (even when no books identified)
+  if (!config.dryRun) {
+    recordLinkAnalysis(filePath, config.model, new Date().toISOString());
+  }
+
+  if (identifiedPaths.length === 0) {
+    return { relativePath, linksAdded: 0, modified: false, skipped: false };
+  }
+
+  // Build a set of Gemini-identified books
+  const identifiedSet = new Set(identifiedPaths);
 
   console.log(
     JSON.stringify({
-      event: "candidates_found",
+      event: "books_identified",
       file: relativePath,
-      count: candidates.length,
-      candidates: candidates.map((c) => ({
-        text: c.matchedText,
-        target: c.entry.relativePath,
-      })),
+      count: identifiedPaths.length,
+      books: identifiedPaths,
     }),
   );
 
-  // Validate with Gemini if API key is available
-  const validations = config.apiKey
-    ? await validateWithGemini(candidates, relativePath, config.apiKey, config.model)
-    : candidates.map(() => true); // Without AI, accept all deterministic matches
+  // Now find positions for only the identified books using deterministic matching.
+  // In non-dry-run mode, recordLinkAnalysis may have added frontmatter lines,
+  // so re-read to get correct character positions for replacement.
+  const contentForMatching = config.dryRun ? content : fs.readFileSync(filePath, "utf-8");
+  const masked = maskProtectedRegions(contentForMatching);
+  const identifiedIndex = index.filter((e) => identifiedSet.has(e.relativePath));
+  const existingLinks = extractExistingLinkedPaths(contentForMatching, relativePath, contentDir);
+  const candidates = findLinkCandidates(contentForMatching, masked, identifiedIndex, existingLinks, relativePath, true);
 
-  const validCount = validations.filter(Boolean).length;
-
-  if (validCount === 0) {
-    return { relativePath, linksAdded: 0, modified: false };
+  if (candidates.length === 0) {
+    return { relativePath, linksAdded: 0, modified: false, skipped: false };
   }
 
-  // Apply replacements
-  const newContent = applyReplacements(content, candidates, validations);
+  // All candidates are Gemini-approved — apply all
+  const newContent = applyReplacements(contentForMatching, candidates, candidates.map(() => true));
+
+  // Log diffs for both dry runs and live runs
+  const diffLines = generateDiff(contentForMatching, newContent);
+  if (diffLines.length > 0) {
+    console.log(
+      JSON.stringify({
+        event: "diff",
+        file: relativePath,
+        dryRun: config.dryRun,
+        diff: diffLines,
+      }),
+    );
+  }
 
   if (!config.dryRun) {
     fs.writeFileSync(filePath, newContent, "utf-8");
@@ -684,29 +1040,28 @@ export const processFile = async (
     JSON.stringify({
       event: "links_applied",
       file: relativePath,
-      linksAdded: validCount,
+      linksAdded: candidates.length,
       dryRun: config.dryRun,
-      links: candidates
-        .filter((_, i) => validations[i])
-        .map((c) => ({
-          matched: c.matchedText,
-          target: c.entry.relativePath,
-          title: c.entry.title,
-        })),
+      links: candidates.map((c) => ({
+        matched: c.matchedText,
+        target: c.entry.relativePath,
+        title: c.entry.title,
+      })),
     }),
   );
 
-  return { relativePath, linksAdded: validCount, modified: true };
+  return { relativePath, linksAdded: candidates.length, modified: true, skipped: false };
 };
 
 // --- Orchestration ---
 
 /**
  * Run the full internal linking pipeline.
- * 1. Build content index
+ * 1. Build content index (books only)
  * 2. BFS from most recent reflection
- * 3. For each file, find and validate link candidates
- * 4. Apply wikilink replacements
+ * 3. Update "updated" timestamps along BFS path (for Enveloppe discovery)
+ * 4. For each file, find and validate book link candidates
+ * 5. Apply wikilink replacements
  */
 export const run = async (config: LinkingConfig): Promise<RunResult> => {
   console.log(
@@ -720,7 +1075,7 @@ export const run = async (config: LinkingConfig): Promise<RunResult> => {
     }),
   );
 
-  // Build content index
+  // Build content index (books only)
   const index = buildContentIndex(config.contentDir);
   console.log(JSON.stringify({ event: "index_built", entries: index.length }));
 
@@ -735,27 +1090,46 @@ export const run = async (config: LinkingConfig): Promise<RunResult> => {
   );
 
   // Process each file sequentially (to respect Gemini rate limits)
+  // QuotaExhaustedError halts the pipeline immediately
   const fileResults: FileResult[] = [];
   for (const relativePath of filesToVisit) {
-    const result = await processFile(relativePath, config.contentDir, index, config);
-    fileResults.push(result);
+    try {
+      const result = await processFile(relativePath, config.contentDir, index, config);
+      fileResults.push(result);
+    } catch (error) {
+      if (error instanceof QuotaExhaustedError) {
+        console.error(
+          JSON.stringify({
+            event: "pipeline_halted_quota_exhausted",
+            filesProcessed: fileResults.length,
+            filesRemaining: filesToVisit.length - fileResults.length,
+          }),
+        );
+        break;
+      }
+      throw error;
+    }
   }
 
   const filesModified = fileResults.filter((r) => r.modified).length;
   const totalLinksAdded = fileResults.reduce((sum, r) => sum + r.linksAdded, 0);
+  const filesSkipped = fileResults.filter((r) => r.skipped).length;
 
   const runResult: RunResult = {
     filesVisited: filesToVisit.length,
     filesModified,
     totalLinksAdded,
+    filesSkipped,
     fileResults,
   };
 
   console.log(
     JSON.stringify({
       event: "internal_linking_complete",
-      ...runResult,
-      fileResults: undefined,
+      filesVisited: runResult.filesVisited,
+      filesModified: runResult.filesModified,
+      totalLinksAdded: runResult.totalLinksAdded,
+      filesSkipped: runResult.filesSkipped,
     }),
   );
 

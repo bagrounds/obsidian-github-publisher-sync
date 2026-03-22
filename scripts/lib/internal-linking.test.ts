@@ -29,8 +29,21 @@ import {
   maskProtectedRegions,
   extractExistingLinkedPaths,
   findLinkCandidates,
-  buildValidationPrompt,
+  buildIdentificationPrompt,
   applyReplacements,
+  generateDiff,
+  contentAlreadyLinksTo,
+  updateFrontmatterTimestamp,
+  updateFrontmatterFields,
+  recordLinkAnalysis,
+  alreadyAnalyzed,
+  extractBody,
+  extractJsonArray,
+  isRateLimitError,
+  isDailyQuotaError,
+  parseRetryDelay,
+  QuotaExhaustedError,
+  LINKABLE_DIRS,
   MIN_TITLE_LENGTH,
   MIN_WORD_COUNT_WITHOUT_AI,
   type ContentEntry,
@@ -252,7 +265,7 @@ describe("buildContentIndex", () => {
 
   it("skips files with short plain titles", () => {
     fs.writeFileSync(
-      path.join(tmpDir.path, "software", "git.md"),
+      path.join(tmpDir.path, "books", "git.md"),
       "---\ntitle: 💾 Git\n---\nContent",
     );
 
@@ -261,7 +274,7 @@ describe("buildContentIndex", () => {
     // "Git" is only 3 chars, below MIN_TITLE_LENGTH
   });
 
-  it("includes files from multiple directories", () => {
+  it("only indexes books directory (not software, topics, etc.)", () => {
     fs.writeFileSync(
       path.join(tmpDir.path, "books", "atomic-habits.md"),
       "---\ntitle: ⚛️🔄 Atomic Habits Is Great\n---\nContent",
@@ -272,7 +285,8 @@ describe("buildContentIndex", () => {
     );
 
     const index = buildContentIndex(tmpDir.path);
-    assert.equal(index.length, 2);
+    assert.equal(index.length, 1);
+    assert.equal(index[0]?.relativePath, "books/atomic-habits.md");
   });
 
   it("skips non-existent directories gracefully", () => {
@@ -650,45 +664,40 @@ describe("findLinkCandidates", () => {
   });
 });
 
-// --- buildValidationPrompt ---
+// --- buildIdentificationPrompt ---
 
-describe("buildValidationPrompt", () => {
-  it("builds a prompt with candidate descriptions", () => {
-    const candidates: readonly LinkCandidate[] = [
-      {
-        entry: BOOK_ENTRY,
-        matchedText: "Thinking, Fast and Slow",
-        position: 10,
-        context: "I read Thinking, Fast and Slow yesterday",
-      },
-    ];
+describe("buildIdentificationPrompt", () => {
+  it("builds a prompt with book list and file content", () => {
+    const bookEntries: readonly ContentEntry[] = [BOOK_ENTRY, LONG_BOOK_ENTRY];
+    const fileBody = "I recommend reading Thinking, Fast and Slow for book club";
 
-    const prompt = buildValidationPrompt(candidates, "reflections/test.md");
-    assert.ok(prompt.system.includes("validate proposed internal links"));
+    const prompt = buildIdentificationPrompt(fileBody, bookEntries, "reflections/test.md");
+    assert.ok(prompt.system.includes("identify genuine book references"));
     assert.ok(prompt.user.includes("Thinking, Fast and Slow"));
     assert.ok(prompt.user.includes("books/thinking-fast-and-slow.md"));
     assert.ok(prompt.user.includes("reflections/test.md"));
+    assert.ok(prompt.user.includes("I recommend reading"));
   });
 
-  it("numbers candidates starting from 1", () => {
-    const candidates: readonly LinkCandidate[] = [
-      {
-        entry: BOOK_ENTRY,
-        matchedText: "Thinking, Fast and Slow",
-        position: 0,
-        context: "context1",
-      },
-      {
-        entry: SOFTWARE_ENTRY,
-        matchedText: "Babylon.js",
-        position: 50,
-        context: "context2",
-      },
-    ];
+  it("lists all available books", () => {
+    const bookEntries: readonly ContentEntry[] = [BOOK_ENTRY, LONG_BOOK_ENTRY];
+    const prompt = buildIdentificationPrompt("body", bookEntries, "test.md");
+    assert.ok(prompt.user.includes("books/thinking-fast-and-slow.md"));
+    assert.ok(prompt.user.includes("books/domain-driven-design.md"));
+  });
 
-    const prompt = buildValidationPrompt(candidates, "test.md");
-    assert.ok(prompt.user.includes("1. Matched text:"));
-    assert.ok(prompt.user.includes("2. Matched text:"));
+  it("warns about generic word matches in system prompt", () => {
+    const prompt = buildIdentificationPrompt("body", [BOOK_ENTRY], "test.md");
+    assert.ok(prompt.system.includes("diplomacy"));
+    assert.ok(prompt.system.includes("foundation"));
+    assert.ok(prompt.system.includes("common sense"));
+  });
+
+  it("explains what constitutes a genuine book reference", () => {
+    const prompt = buildIdentificationPrompt("body", [BOOK_ENTRY], "test.md");
+    assert.ok(prompt.system.includes("literary work"));
+    assert.ok(prompt.system.includes("recommend"));
+    assert.ok(prompt.system.includes("reading list"));
   });
 });
 
@@ -972,5 +981,419 @@ describe("findLinkCandidates hasAiValidation filtering", () => {
       content, masked, [hyphenEntry], new Set(), "reflections/test.md", false,
     );
     assert.equal(candidates.length, 1);
+  });
+});
+
+// --- LINKABLE_DIRS ---
+
+describe("LINKABLE_DIRS", () => {
+  it("contains only books", () => {
+    assert.deepEqual([...LINKABLE_DIRS], ["books"]);
+  });
+});
+
+// --- contentAlreadyLinksTo ---
+
+describe("contentAlreadyLinksTo", () => {
+  it("returns true when content contains a wikilink to the entry", () => {
+    const content = "I recommend [[books/thinking-fast-and-slow|Thinking, Fast and Slow]]";
+    assert.equal(contentAlreadyLinksTo(content, BOOK_ENTRY), true);
+  });
+
+  it("returns true when content contains a markdown link to the entry", () => {
+    const content = "I recommend [the book](../books/thinking-fast-and-slow.md)";
+    assert.equal(contentAlreadyLinksTo(content, BOOK_ENTRY), true);
+  });
+
+  it("returns false when the entry path is not in the content", () => {
+    const content = "I recommend reading more books about psychology";
+    assert.equal(contentAlreadyLinksTo(content, BOOK_ENTRY), false);
+  });
+
+  it("returns true even when the path appears in a heading anchor", () => {
+    const content = "See [[books/thinking-fast-and-slow#chapter-1]]";
+    assert.equal(contentAlreadyLinksTo(content, BOOK_ENTRY), true);
+  });
+
+  it("does not false-positive on a longer path that shares a prefix", () => {
+    const entry: ContentEntry = {
+      relativePath: "books/thinking-fast.md",
+      title: "📖 Thinking Fast",
+      plainTitle: "Thinking Fast",
+    };
+    const content = "See [[books/thinking-fast-and-slow|TFS]] for more";
+    assert.equal(contentAlreadyLinksTo(content, entry), false);
+  });
+});
+
+// --- findLinkCandidates skips existing links anywhere ---
+
+describe("findLinkCandidates skips existing links anywhere in file", () => {
+  it("skips entries whose path already appears in the content", () => {
+    const content = "Great book: [[books/thinking-fast-and-slow|TFS]]\nAlso Thinking, Fast and Slow is mentioned in plain text";
+    const masked = maskProtectedRegions(content);
+    const candidates = findLinkCandidates(content, masked, [BOOK_ENTRY], new Set(), "reflections/test.md");
+    assert.equal(candidates.length, 0);
+  });
+
+  it("still finds candidates when path is not in the content", () => {
+    const content = "I recently read Thinking, Fast and Slow and it was great";
+    const masked = maskProtectedRegions(content);
+    const candidates = findLinkCandidates(content, masked, [BOOK_ENTRY], new Set(), "reflections/test.md");
+    assert.equal(candidates.length, 1);
+  });
+});
+
+// --- generateDiff ---
+
+describe("generateDiff", () => {
+  it("returns empty array for identical content", () => {
+    const content = "Line 1\nLine 2\nLine 3";
+    assert.deepEqual(generateDiff(content, content), []);
+  });
+
+  it("shows changed lines with line numbers", () => {
+    const original = "Line 1\nI read Thinking, Fast and Slow\nLine 3";
+    const modified = "Line 1\nI read [[books/thinking-fast-and-slow|🤔🐇🐢 Thinking, Fast and Slow]]\nLine 3";
+    const diff = generateDiff(original, modified);
+    assert.ok(diff.some((l) => l.includes("@@ line 2 @@")));
+    assert.ok(diff.some((l) => l.startsWith("- I read Thinking")));
+    assert.ok(diff.some((l) => l.startsWith("+ I read [[books")));
+  });
+
+  it("handles additions when modified has more lines", () => {
+    const original = "Line 1";
+    const modified = "Line 1\nLine 2";
+    const diff = generateDiff(original, modified);
+    assert.ok(diff.some((l) => l.startsWith("+ Line 2")));
+  });
+
+  it("handles removals when original has more lines", () => {
+    const original = "Line 1\nLine 2";
+    const modified = "Line 1";
+    const diff = generateDiff(original, modified);
+    assert.ok(diff.some((l) => l.startsWith("- Line 2")));
+  });
+
+  it("only includes changed lines, not unchanged ones", () => {
+    const original = "Line 1\nLine 2\nLine 3";
+    const modified = "Line 1\nModified\nLine 3";
+    const diff = generateDiff(original, modified);
+    assert.ok(!diff.some((l) => l.includes("Line 1")));
+    assert.ok(!diff.some((l) => l.includes("Line 3")));
+  });
+});
+
+// --- updateFrontmatterTimestamp ---
+
+describe("updateFrontmatterTimestamp", () => {
+  const tmpDir = { path: "" };
+
+  beforeEach(() => {
+    tmpDir.path = fs.mkdtempSync(path.join(os.tmpdir(), "internal-linking-ts-"));
+  });
+
+  afterEach(() => {
+    fs.rmSync(tmpDir.path, { recursive: true, force: true });
+  });
+
+  it("updates existing updated field", () => {
+    const filePath = path.join(tmpDir.path, "test.md");
+    fs.writeFileSync(filePath, "---\ntitle: Test\nupdated: 2026-01-01T00:00:00.000Z\n---\nBody");
+
+    updateFrontmatterTimestamp(filePath, "2026-03-22T00:00:00.000Z");
+
+    const content = fs.readFileSync(filePath, "utf-8");
+    assert.ok(content.includes("updated: 2026-03-22T00:00:00.000Z"));
+    assert.ok(!content.includes("2026-01-01"));
+  });
+
+  it("inserts updated field when missing from frontmatter", () => {
+    const filePath = path.join(tmpDir.path, "test.md");
+    fs.writeFileSync(filePath, "---\ntitle: Test\n---\nBody");
+
+    updateFrontmatterTimestamp(filePath, "2026-03-22T00:00:00.000Z");
+
+    const content = fs.readFileSync(filePath, "utf-8");
+    assert.ok(content.includes("updated: 2026-03-22T00:00:00.000Z"));
+    assert.ok(content.includes("title: Test"));
+  });
+
+  it("creates frontmatter block when none exists", () => {
+    const filePath = path.join(tmpDir.path, "test.md");
+    fs.writeFileSync(filePath, "Body only");
+
+    updateFrontmatterTimestamp(filePath, "2026-03-22T00:00:00.000Z");
+
+    const content = fs.readFileSync(filePath, "utf-8");
+    assert.ok(content.startsWith("---\nupdated: 2026-03-22T00:00:00.000Z\n---\n"));
+    assert.ok(content.includes("Body only"));
+  });
+
+  it("does nothing for non-existent files", () => {
+    const filePath = path.join(tmpDir.path, "nonexistent.md");
+    updateFrontmatterTimestamp(filePath, "2026-03-22T00:00:00.000Z");
+    assert.ok(!fs.existsSync(filePath));
+  });
+});
+
+// --- extractBody ---
+
+describe("extractBody", () => {
+  it("extracts body after frontmatter", () => {
+    const content = "---\ntitle: Test\n---\nBody text here";
+    assert.equal(extractBody(content), "Body text here");
+  });
+
+  it("returns full content when no frontmatter", () => {
+    const content = "Just body text";
+    assert.equal(extractBody(content), "Just body text");
+  });
+
+  it("returns full content when unclosed frontmatter", () => {
+    const content = "---\ntitle: Test\nNo closing";
+    assert.equal(extractBody(content), "---\ntitle: Test\nNo closing");
+  });
+});
+
+// --- extractJsonArray ---
+
+describe("extractJsonArray", () => {
+  it("parses clean JSON array", () => {
+    assert.deepEqual(extractJsonArray('["books/foo.md"]'), ["books/foo.md"]);
+  });
+
+  it("parses empty array", () => {
+    assert.deepEqual(extractJsonArray("[]"), []);
+  });
+
+  it("extracts array from markdown code fence", () => {
+    const text = '```json\n["books/foo.md"]\n```';
+    assert.deepEqual(extractJsonArray(text), ["books/foo.md"]);
+  });
+
+  it("extracts array when trailing text follows", () => {
+    const text = '["books/foo.md"]\nThis is some explanation text.';
+    assert.deepEqual(extractJsonArray(text), ["books/foo.md"]);
+  });
+
+  it("extracts array when preceded by text", () => {
+    const text = 'Here are the books:\n["books/foo.md", "books/bar.md"]';
+    assert.deepEqual(extractJsonArray(text), ["books/foo.md", "books/bar.md"]);
+  });
+
+  it("throws for text with no JSON array", () => {
+    assert.throws(() => extractJsonArray("No JSON here at all"), /No JSON array found/);
+  });
+
+  it("handles code fence without json tag", () => {
+    const text = '```\n["books/foo.md"]\n```';
+    assert.deepEqual(extractJsonArray(text), ["books/foo.md"]);
+  });
+});
+
+// --- isRateLimitError ---
+
+describe("isRateLimitError", () => {
+  it("detects 429 in message", () => {
+    assert.ok(isRateLimitError({ message: "Error 429: quota exceeded" }));
+  });
+
+  it("detects RESOURCE_EXHAUSTED", () => {
+    assert.ok(isRateLimitError({ message: "RESOURCE_EXHAUSTED: too many requests" }));
+  });
+
+  it("detects quota keyword", () => {
+    assert.ok(isRateLimitError({ message: "You exceeded your current quota" }));
+  });
+
+  it("returns false for non-rate-limit errors", () => {
+    assert.ok(!isRateLimitError({ message: "Invalid API key" }));
+  });
+
+  it("returns false for null", () => {
+    assert.ok(!isRateLimitError(null));
+  });
+});
+
+// --- isDailyQuotaError ---
+
+describe("isDailyQuotaError", () => {
+  it("detects daily quota messages", () => {
+    assert.ok(isDailyQuotaError({ message: "quota exceeded, daily limit reached" }));
+  });
+
+  it("detects PerDay quota messages", () => {
+    assert.ok(isDailyQuotaError({ message: "quota: RequestsPerDay limit" }));
+  });
+
+  it("returns false for per-minute rate limits", () => {
+    assert.ok(!isDailyQuotaError({ message: "429: too many requests per minute" }));
+  });
+
+  it("returns false for non-quota errors", () => {
+    assert.ok(!isDailyQuotaError({ message: "Invalid API key" }));
+  });
+});
+
+// --- parseRetryDelay ---
+
+describe("parseRetryDelay", () => {
+  it("parses 'retry in Ns' from message", () => {
+    assert.equal(parseRetryDelay({ message: "Please retry in 14.473150856s." }), 14474);
+  });
+
+  it("parses retryDelay from message", () => {
+    assert.equal(parseRetryDelay({ message: 'retryDelay: "30s"' }), 30000);
+  });
+
+  it("returns null for messages without retry delay", () => {
+    assert.equal(parseRetryDelay({ message: "Some other error" }), null);
+  });
+
+  it("returns null for null input", () => {
+    assert.equal(parseRetryDelay(null), null);
+  });
+});
+
+// --- QuotaExhaustedError ---
+
+describe("QuotaExhaustedError", () => {
+  it("is an Error with correct name", () => {
+    const err = new QuotaExhaustedError();
+    assert.ok(err instanceof Error);
+    assert.equal(err.name, "QuotaExhaustedError");
+  });
+
+  it("has default message", () => {
+    const err = new QuotaExhaustedError();
+    assert.equal(err.message, "Gemini API daily quota exhausted");
+  });
+
+  it("accepts custom message", () => {
+    const err = new QuotaExhaustedError("custom");
+    assert.equal(err.message, "custom");
+  });
+});
+
+// --- updateFrontmatterFields ---
+
+describe("updateFrontmatterFields", () => {
+  const tmpDir = { path: "" };
+
+  beforeEach(() => {
+    tmpDir.path = fs.mkdtempSync(path.join(os.tmpdir(), "internal-linking-fields-"));
+  });
+
+  afterEach(() => {
+    fs.rmSync(tmpDir.path, { recursive: true, force: true });
+  });
+
+  it("sets multiple fields in existing frontmatter", () => {
+    const filePath = path.join(tmpDir.path, "test.md");
+    fs.writeFileSync(filePath, "---\ntitle: Test\n---\nBody");
+
+    updateFrontmatterFields(filePath, {
+      link_analysis_model: "gemini-3.1-flash-lite-preview",
+      link_analysis_time: "2026-03-22T00:00:00.000Z",
+    });
+
+    const content = fs.readFileSync(filePath, "utf-8");
+    assert.ok(content.includes("link_analysis_model: gemini-3.1-flash-lite-preview"));
+    assert.ok(content.includes("link_analysis_time: 2026-03-22T00:00:00.000Z"));
+    assert.ok(content.includes("title: Test"));
+  });
+
+  it("updates existing fields", () => {
+    const filePath = path.join(tmpDir.path, "test.md");
+    fs.writeFileSync(filePath, "---\ntitle: Test\nlink_analysis_model: old-model\n---\nBody");
+
+    updateFrontmatterFields(filePath, { link_analysis_model: "new-model" });
+
+    const content = fs.readFileSync(filePath, "utf-8");
+    assert.ok(content.includes("link_analysis_model: new-model"));
+    assert.ok(!content.includes("old-model"));
+  });
+
+  it("creates frontmatter when none exists", () => {
+    const filePath = path.join(tmpDir.path, "test.md");
+    fs.writeFileSync(filePath, "Body only");
+
+    updateFrontmatterFields(filePath, { link_analysis_model: "test-model" });
+
+    const content = fs.readFileSync(filePath, "utf-8");
+    assert.ok(content.startsWith("---\nlink_analysis_model: test-model\n---\n"));
+    assert.ok(content.includes("Body only"));
+  });
+
+  it("does nothing for non-existent files", () => {
+    const filePath = path.join(tmpDir.path, "nonexistent.md");
+    updateFrontmatterFields(filePath, { key: "value" });
+    assert.ok(!fs.existsSync(filePath));
+  });
+});
+
+// --- recordLinkAnalysis ---
+
+describe("recordLinkAnalysis", () => {
+  const tmpDir = { path: "" };
+
+  beforeEach(() => {
+    tmpDir.path = fs.mkdtempSync(path.join(os.tmpdir(), "internal-linking-record-"));
+  });
+
+  afterEach(() => {
+    fs.rmSync(tmpDir.path, { recursive: true, force: true });
+  });
+
+  it("writes link_analysis_model and link_analysis_time", () => {
+    const filePath = path.join(tmpDir.path, "test.md");
+    fs.writeFileSync(filePath, "---\ntitle: Test\n---\nBody");
+
+    recordLinkAnalysis(filePath, "gemini-3.1-flash-lite-preview", "2026-03-22T00:00:00.000Z");
+
+    const content = fs.readFileSync(filePath, "utf-8");
+    assert.ok(content.includes("link_analysis_model: gemini-3.1-flash-lite-preview"));
+    assert.ok(content.includes("link_analysis_time: 2026-03-22T00:00:00.000Z"));
+  });
+
+  it("clears force_analyze_links after recording analysis", () => {
+    const filePath = path.join(tmpDir.path, "test.md");
+    fs.writeFileSync(filePath, "---\ntitle: Test\nforce_analyze_links: true\n---\nBody");
+
+    recordLinkAnalysis(filePath, "gemini-3.1-flash-lite-preview", "2026-03-22T00:00:00.000Z");
+
+    const content = fs.readFileSync(filePath, "utf-8");
+    assert.ok(content.includes("force_analyze_links: false"));
+    assert.ok(content.includes("link_analysis_model: gemini-3.1-flash-lite-preview"));
+  });
+});
+
+// --- alreadyAnalyzed ---
+
+describe("alreadyAnalyzed", () => {
+  it("returns true when link_analysis_model is present", () => {
+    const content = "---\ntitle: Test\nlink_analysis_model: gemini-3.1-flash-lite-preview\n---\nBody";
+    assert.ok(alreadyAnalyzed(content));
+  });
+
+  it("returns true even when model differs (model is informational only)", () => {
+    const content = "---\ntitle: Test\nlink_analysis_model: old-model\n---\nBody";
+    assert.ok(alreadyAnalyzed(content));
+  });
+
+  it("returns false when force_analyze_links is true", () => {
+    const content = "---\ntitle: Test\nlink_analysis_model: gemini-3.1-flash-lite-preview\nforce_analyze_links: true\n---\nBody";
+    assert.ok(!alreadyAnalyzed(content));
+  });
+
+  it("returns false when no link_analysis_model field", () => {
+    const content = "---\ntitle: Test\n---\nBody";
+    assert.ok(!alreadyAnalyzed(content));
+  });
+
+  it("returns false for content without frontmatter", () => {
+    const content = "Body only";
+    assert.ok(!alreadyAnalyzed(content));
   });
 });

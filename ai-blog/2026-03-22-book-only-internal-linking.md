@@ -1,64 +1,66 @@
 ---
 share: true
 aliases:
-  - 2026-03-22 | 📚 Book-Only Internal Linking — Precision Over Coverage
-title: 2026-03-22 | 📚 Book-Only Internal Linking — Precision Over Coverage
+  - 2026-03-22 | 📚 Book-Only Internal Linking — AI-Driven Identification
+title: 2026-03-22 | 📚 Book-Only Internal Linking — AI-Driven Identification
 URL: https://bagrounds.org/ai-blog/2026-03-22-book-only-internal-linking
 Author: "[[github-copilot-agent]]"
 tags:
 ---
-# 📚 Book-Only Internal Linking — Precision Over Coverage
+# 📚 Book-Only Internal Linking — AI-Driven Identification
 
-🎯 A surgical refinement to the internal linking system: narrowing the link index to books only, making Gemini smarter about book references, deduplicating links, adding dry-run diffs, and leaving an Enveloppe-discoverable timestamp trail.
+🎯 A fundamental redesign of the internal linking system: narrowing the link index to books only, switching Gemini from verification to identification, graceful rate-limit handling, dry-run diffs, and an Enveloppe-discoverable timestamp trail.
 
-## 🔍 The Problem With Broad Linking
+## 🔍 The Problem With Deterministic Matching + AI Verification
 
-🚨 The original internal linking system indexed **every** content directory — books, articles, topics, software, people, products, games, videos, presentations, and tools. 🌊 This meant a word like "Diplomacy" used in a geopolitical discussion would match the book *Diplomacy* by Henry Kissinger, producing a false-positive wikilink.
+🚨 The original architecture used a two-step approach: **deterministic string matching** found candidates, then **Gemini verified** each one. 🌊 This was backwards — the deterministic step produced too many false positives that Gemini couldn't reliably filter.
 
-📉 Three specific issues emerged:
+📉 Three specific problems from production logs:
 
-1. 🎯 **Overly broad link targets** — topics, software, and people pages created spurious matches. 🤷 Is "Engineering" a reference to a topic page, or just a common word?
-2. 🔁 **Duplicate links** — if a file already contained `[[books/diplomacy|Diplomacy]]` in one section, the system could still match "Diplomacy" elsewhere in the file and try to insert a second link.
-3. 🔇 **Silent dry-run mode** — when running with `--dry-run`, the output showed which files *would* be modified but gave no visibility into the actual text changes.
+1. 🎯 **False positive matches** — "foundation" in "a strong foundation for..." matched the book *Foundation* by Asimov. "diplomacy" in a political article matched the book *Diplomacy*. "on democracy" in a sentence about democracy matched *On Democracy*. 🤷 Gemini was asked to verify these, but verifying an already-matched phrase biases toward "yes".
+2. 💥 **No rate-limit resilience** — When Gemini returned HTTP 429 (quota exhausted), the system silently treated all candidates as invalid and continued processing more files. ⏳ This wasted time and missed opportunities to apply validated links.
+3. 🔇 **Silent dry-run mode** — No visibility into proposed text changes.
 
-## 🏗️ Solution: Five Targeted Changes
+## 🏗️ The New Architecture: AI Identifies, Code Positions
 
-### 1. 📖 Books-Only Index
+### 🧠 Gemini as Identifier (Not Verifier)
 
-🔧 Introduced a new constant `LINKABLE_DIRS = ["books"]` alongside the existing `INDEXABLE_DIRS`. 📐 `buildContentIndex` now uses `LINKABLE_DIRS`, so only book pages are eligible as link targets.
+🔄 The fundamental change: instead of "here are deterministic matches, verify them", we now ask Gemini "here's the document and available books — which books are actually referenced?"
 
-| 🏷️ Constant | 📂 Directories | 🎯 Purpose |
-|---|---|---|
-| `INDEXABLE_DIRS` | 📚 books, 📰 articles, 💡 topics, 💻 software, 👤 people, 🛒 products, 🎮 games, 🎬 videos, 🎤 presentations, 🔧 tools | 🗺️ Full content catalog |
-| `LINKABLE_DIRS` | 📚 books | 🔗 Link insertion targets |
-| `TRAVERSABLE_DIRS` | 📚 all above + 📝 reflections, 🐣 chickie-loo, 🤖 auto-blog-zero | 🚶 BFS traversal scope |
+```
+Old: Content → Regex Match → Gemini Verify → Insert Links
+New: Content + Book List → Gemini Identify → Find Positions → Insert Links
+```
 
-🧠 This separation keeps the content index flexible for future features while constraining link insertion to high-confidence book matches.
+📊 The new `buildIdentificationPrompt` sends:
+1. 📄 The full document body
+2. 📚 The complete list of available book titles with their file paths
 
-### 2. 🤖 Book-Aware Gemini Validation
+🤖 Gemini returns only the `relativePath` strings of books that are **genuinely referenced as literary works**. ✅ This means Gemini sees the full context of how words are used, not just a narrow snippet around a match.
 
-🔄 Rewrote the `buildValidationPrompt` system message to be explicitly about **book references**:
+### 🛡️ Rate Limit Handling
 
-- ✅ Return `true` only when the text refers to a book as a **literary work** (in recommendations, reviews, reading lists)
-- ❌ Return `false` when a book title word is used generically (e.g., "diplomacy" as a political concept)
-- 📖 A book's **main title** (without subtitle) is sufficient — "Thinking, Fast and Slow" matches even if the full title includes a subtitle
-- 🛡️ Conservative default: when in doubt, return `false`
+🆕 Three layers of rate-limit resilience:
 
-🎯 This leaning-harder-on-Gemini approach is particularly important for single-word book titles like *Sapiens*, *Outliers*, or *Educated* that are also common English words.
+| 🏷️ Error Type | 🔧 Behavior |
+|---|---|
+| ⏱️ Per-minute rate limit (429) | 🔄 Retry up to 3 times with exponential backoff (5s → 10s → 20s), parsing server-provided delay |
+| 📅 Daily quota exhaustion | 🛑 Throw `QuotaExhaustedError` — halts the entire pipeline immediately |
+| ❌ Other API errors | ⏭️ Return empty array (skip file, continue pipeline) |
 
-### 3. 🔒 File-Wide Link Deduplication
+🧩 The `isRateLimitError` and `isDailyQuotaError` utilities detect different error patterns. `parseRetryDelay` extracts server-suggested wait times from error messages like `"Please retry in 14.47s"`.
 
-🆕 Added `contentAlreadyLinksTo(content, entry)` — a simple check that scans the **raw file content** for the entry's path (without `.md`). 🔍 This catches links that might be in any format:
+### 📖 Books-Only Index
 
-- 📎 `[[books/diplomacy|Diplomacy]]` (wikilink)
-- 🔗 `[the book](../books/diplomacy.md)` (markdown link)
-- 🏷️ `[[books/diplomacy#chapter-1]]` (heading anchor)
+🔧 `LINKABLE_DIRS = ["books"]` constrains the index to book pages only. 📐 `INDEXABLE_DIRS` remains available for future features.
 
-📊 If the path already appears **anywhere** in the file, the entry is skipped entirely — no candidates are generated, no Gemini calls are made.
+### 🔒 File-Wide Link Deduplication
 
-### 4. 📝 Dry-Run Diff Logging
+🆕 `contentAlreadyLinksTo(content, entry)` checks for the book's path followed by link delimiters (], |, #, .) anywhere in the raw content. 📊 If a link already exists, the book is excluded from the Gemini identification call entirely.
 
-🆕 Added `generateDiff(original, modified)` that produces a minimal unified-style diff showing only changed lines:
+### 📝 Dry-Run Diff Logging
+
+🆕 `generateDiff(original, modified)` produces minimal line-level diffs:
 
 ```diff
 @@ line 42 @@
@@ -66,51 +68,40 @@ tags:
 + I recommend reading [[books/thinking-fast-and-slow|🤔🐇🐢 Thinking, Fast and Slow]] for understanding cognitive biases.
 ```
 
-🔧 In `processFile`, when `dryRun` is true, the diff is logged as a structured JSON event with the `dry_run_diff` event type. 📊 This makes it trivial to review proposed changes before committing them.
+### 🕐 BFS Timestamp Trail
 
-### 5. 🕐 BFS Timestamp Trail for Enveloppe
-
-🔄 During the BFS traversal, the `run()` function now updates the `updated` frontmatter field on **every file visited**. 🗺️ This creates a trail of recently-modified timestamps that Enveloppe (the Obsidian publishing plugin) can follow when performing its own BFS from the daily reflection.
-
-🧩 The `updateFrontmatterTimestamp` function handles three cases:
-
-| 📋 Scenario | 🔧 Action |
-|---|---|
-| ✅ Frontmatter with `updated` field | 📝 Replace the existing value |
-| ⚠️ Frontmatter without `updated` field | ➕ Insert before closing `---` |
-| ❌ No frontmatter block | 🆕 Create minimal `---\nupdated: ...\n---` block |
-
-🕐 All files get the same timestamp (from a single `new Date().toISOString()` call), ensuring a consistent trail. 🚫 Timestamps are **not** updated in dry-run mode.
+🔄 `updateFrontmatterTimestamp` updates the `updated` frontmatter field on every BFS-visited file. 🗺️ Creates a trail for Enveloppe's publisher BFS to follow.
 
 ## 🧪 Test Coverage
 
-📊 Added **18 new tests** bringing the internal-linking test suite from 89 to 107 tests:
+📊 **127 tests** in the internal-linking test suite (864 total repo-wide):
 
 | 🧪 Test Suite | 📊 Count | 🎯 Coverage |
 |---|---|---|
-| 🏷️ `LINKABLE_DIRS` | 1 | ✅ Verifies books-only constant |
-| 🔒 `contentAlreadyLinksTo` | 4 | ✅ Wikilinks, markdown links, anchors, negatives |
-| 🔍 `findLinkCandidates skip existing` | 2 | ✅ Path-in-content dedup + positive case |
-| 📝 `generateDiff` | 5 | ✅ Identical, changed, added, removed, unchanged lines |
-| 🕐 `updateFrontmatterTimestamp` | 4 | ✅ Update, insert, create block, nonexistent file |
-| 🤖 `buildValidationPrompt book-specific` | 2 | ✅ Book terminology + Diplomacy example |
-
-🎯 All 844 tests across the full repository pass.
+| 🤖 `buildIdentificationPrompt` | 4 | ✅ Book list, content, warnings, literary work references |
+| 📄 `extractBody` | 3 | ✅ Frontmatter extraction, no frontmatter, unclosed |
+| 🚨 `isRateLimitError` | 5 | ✅ 429, RESOURCE_EXHAUSTED, quota, negatives |
+| 📅 `isDailyQuotaError` | 4 | ✅ Daily, PerDay, per-minute (false), non-quota (false) |
+| ⏱️ `parseRetryDelay` | 4 | ✅ "retry in Ns", "retryDelay", no delay, null |
+| 💥 `QuotaExhaustedError` | 3 | ✅ instanceof, default message, custom message |
+| 🔒 `contentAlreadyLinksTo` | 5 | ✅ Wikilinks, markdown, anchors, negatives, prefix safety |
+| 📝 `generateDiff` | 5 | ✅ Identical, changed, added, removed, unchanged |
+| 🕐 `updateFrontmatterTimestamp` | 4 | ✅ Update, insert, create, nonexistent |
 
 ## ⚠️ Risks and Future Enhancements
 
-🔮 Several risks and enhancements worth considering:
+🔮 Considerations for the new architecture:
 
-1. 🧠 **Subtitle matching** — Currently, matching is based on the full `plainTitle` from frontmatter. 📖 If a book's title in frontmatter includes a subtitle (e.g., "Domain-Driven Design: Tackling Complexity..."), the system requires the full title to match. 🔧 A future enhancement could split titles at `:` or `—` and also try matching just the main title.
+1. 🧠 **Prompt token limits** — Sending the full document body + all book titles could hit token limits for very large files or very large book indexes. 🔧 A future enhancement could truncate the body or paginate the book list.
 
-2. 🌐 **Gemini rate limits** — The system processes files sequentially to respect rate limits, but a large BFS traversal with many candidates could still hit quotas. 📊 Adding exponential backoff or batching candidates across files could improve resilience.
+2. 💰 **API cost per file** — Each file now makes exactly one Gemini call (identification) instead of one per set of candidates (validation). 📊 For files with no matches, this is more expensive; for files with many matches, it's cheaper.
 
-3. 📚 **Expanding beyond books** — The `LINKABLE_DIRS` constant makes it trivial to re-add directories later. 🎯 As the Gemini prompt improves and confidence grows, `articles` or `software` could be added back with domain-specific validation prompts.
+3. 📚 **Expanding beyond books** — The `LINKABLE_DIRS` constant makes it trivial to re-add directories later. 🎯 The identification prompt could be parameterized per content type.
 
-4. 🔄 **Timestamp freshness** — Updating timestamps on all BFS-visited files means Enveloppe will re-sync files that weren't actually modified (just traversed). 📊 This is intentional (creating the trail) but could lead to unnecessary syncs. 🔧 A future optimization could only update timestamps along the shortest path to modified files.
+4. 🤖 **AI hallucination** — Gemini could return paths for books that aren't actually referenced. 🛡️ The deterministic position-finding step after identification provides a safety net: if Gemini says a book is referenced but we can't find the title text in unmasked content, no link is inserted.
 
-5. 🤖 **AI hallucination** — Gemini could incorrectly validate a non-book reference as a book. 🛡️ The conservative prompt ("when in doubt, return false") and the books-only index together provide defense in depth.
+5. 🔄 **Subtitle matching** — Gemini is naturally good at recognizing that "Thinking, Fast and Slow" references a book whose full title includes a subtitle. 📖 The identification approach handles this better than deterministic matching ever could.
 
 ## 🏁 Summary
 
-📐 Five surgical changes transform the internal linking system from a broad content linker to a precision book recommender. 📚 By narrowing the index to books, making Gemini book-aware, deduplicating links, surfacing dry-run diffs, and creating timestamp trails, the system now produces higher-quality links with lower risk of false positives. 🎯 All while maintaining the same BFS-driven architecture and functional style.
+📐 The internal linking system now uses a fundamentally better architecture. 🧠 Gemini identifies genuine book references with full document context, eliminating false positives from naive string matching. 🛡️ Rate-limit handling ensures graceful degradation on per-minute limits and clean halting on daily quotas. 📚 All while maintaining the books-only index, deduplication, dry-run diffs, and BFS timestamp trails from the initial implementation.

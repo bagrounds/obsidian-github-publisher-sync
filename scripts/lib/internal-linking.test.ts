@@ -29,11 +29,16 @@ import {
   maskProtectedRegions,
   extractExistingLinkedPaths,
   findLinkCandidates,
-  buildValidationPrompt,
+  buildIdentificationPrompt,
   applyReplacements,
   generateDiff,
   contentAlreadyLinksTo,
   updateFrontmatterTimestamp,
+  extractBody,
+  isRateLimitError,
+  isDailyQuotaError,
+  parseRetryDelay,
+  QuotaExhaustedError,
   LINKABLE_DIRS,
   MIN_TITLE_LENGTH,
   MIN_WORD_COUNT_WITHOUT_AI,
@@ -655,45 +660,40 @@ describe("findLinkCandidates", () => {
   });
 });
 
-// --- buildValidationPrompt ---
+// --- buildIdentificationPrompt ---
 
-describe("buildValidationPrompt", () => {
-  it("builds a prompt with candidate descriptions", () => {
-    const candidates: readonly LinkCandidate[] = [
-      {
-        entry: BOOK_ENTRY,
-        matchedText: "Thinking, Fast and Slow",
-        position: 10,
-        context: "I read Thinking, Fast and Slow yesterday",
-      },
-    ];
+describe("buildIdentificationPrompt", () => {
+  it("builds a prompt with book list and file content", () => {
+    const bookEntries: readonly ContentEntry[] = [BOOK_ENTRY, LONG_BOOK_ENTRY];
+    const fileBody = "I recommend reading Thinking, Fast and Slow for book club";
 
-    const prompt = buildValidationPrompt(candidates, "reflections/test.md");
-    assert.ok(prompt.system.includes("validate proposed book links"));
+    const prompt = buildIdentificationPrompt(fileBody, bookEntries, "reflections/test.md");
+    assert.ok(prompt.system.includes("identify genuine book references"));
     assert.ok(prompt.user.includes("Thinking, Fast and Slow"));
     assert.ok(prompt.user.includes("books/thinking-fast-and-slow.md"));
     assert.ok(prompt.user.includes("reflections/test.md"));
+    assert.ok(prompt.user.includes("I recommend reading"));
   });
 
-  it("numbers candidates starting from 1", () => {
-    const candidates: readonly LinkCandidate[] = [
-      {
-        entry: BOOK_ENTRY,
-        matchedText: "Thinking, Fast and Slow",
-        position: 0,
-        context: "context1",
-      },
-      {
-        entry: SOFTWARE_ENTRY,
-        matchedText: "Babylon.js",
-        position: 50,
-        context: "context2",
-      },
-    ];
+  it("lists all available books", () => {
+    const bookEntries: readonly ContentEntry[] = [BOOK_ENTRY, LONG_BOOK_ENTRY];
+    const prompt = buildIdentificationPrompt("body", bookEntries, "test.md");
+    assert.ok(prompt.user.includes("books/thinking-fast-and-slow.md"));
+    assert.ok(prompt.user.includes("books/domain-driven-design.md"));
+  });
 
-    const prompt = buildValidationPrompt(candidates, "test.md");
-    assert.ok(prompt.user.includes("1. Matched text:"));
-    assert.ok(prompt.user.includes("2. Matched text:"));
+  it("warns about generic word matches in system prompt", () => {
+    const prompt = buildIdentificationPrompt("body", [BOOK_ENTRY], "test.md");
+    assert.ok(prompt.system.includes("diplomacy"));
+    assert.ok(prompt.system.includes("foundation"));
+    assert.ok(prompt.system.includes("common sense"));
+  });
+
+  it("explains what constitutes a genuine book reference", () => {
+    const prompt = buildIdentificationPrompt("body", [BOOK_ENTRY], "test.md");
+    assert.ok(prompt.system.includes("literary work"));
+    assert.ok(prompt.system.includes("recommend"));
+    assert.ok(prompt.system.includes("reading list"));
   });
 });
 
@@ -1133,35 +1133,105 @@ describe("updateFrontmatterTimestamp", () => {
   });
 });
 
-// --- buildValidationPrompt book-specific ---
+// --- extractBody ---
 
-describe("buildValidationPrompt book-specific", () => {
-  it("mentions book validation in system prompt", () => {
-    const candidates: readonly LinkCandidate[] = [
-      {
-        entry: BOOK_ENTRY,
-        matchedText: "Thinking, Fast and Slow",
-        position: 10,
-        context: "I recommend Thinking, Fast and Slow for book club",
-      },
-    ];
-
-    const prompt = buildValidationPrompt(candidates, "reflections/test.md");
-    assert.ok(prompt.system.includes("book"));
-    assert.ok(prompt.system.includes("literary work"));
+describe("extractBody", () => {
+  it("extracts body after frontmatter", () => {
+    const content = "---\ntitle: Test\n---\nBody text here";
+    assert.equal(extractBody(content), "Body text here");
   });
 
-  it("warns about generic word matches in system prompt", () => {
-    const candidates: readonly LinkCandidate[] = [
-      {
-        entry: BOOK_ENTRY,
-        matchedText: "Thinking, Fast and Slow",
-        position: 0,
-        context: "context",
-      },
-    ];
+  it("returns full content when no frontmatter", () => {
+    const content = "Just body text";
+    assert.equal(extractBody(content), "Just body text");
+  });
 
-    const prompt = buildValidationPrompt(candidates, "test.md");
-    assert.ok(prompt.system.includes("Diplomacy"));
+  it("returns full content when unclosed frontmatter", () => {
+    const content = "---\ntitle: Test\nNo closing";
+    assert.equal(extractBody(content), "---\ntitle: Test\nNo closing");
+  });
+});
+
+// --- isRateLimitError ---
+
+describe("isRateLimitError", () => {
+  it("detects 429 in message", () => {
+    assert.ok(isRateLimitError({ message: "Error 429: quota exceeded" }));
+  });
+
+  it("detects RESOURCE_EXHAUSTED", () => {
+    assert.ok(isRateLimitError({ message: "RESOURCE_EXHAUSTED: too many requests" }));
+  });
+
+  it("detects quota keyword", () => {
+    assert.ok(isRateLimitError({ message: "You exceeded your current quota" }));
+  });
+
+  it("returns false for non-rate-limit errors", () => {
+    assert.ok(!isRateLimitError({ message: "Invalid API key" }));
+  });
+
+  it("returns false for null", () => {
+    assert.ok(!isRateLimitError(null));
+  });
+});
+
+// --- isDailyQuotaError ---
+
+describe("isDailyQuotaError", () => {
+  it("detects daily quota messages", () => {
+    assert.ok(isDailyQuotaError({ message: "quota exceeded, daily limit reached" }));
+  });
+
+  it("detects PerDay quota messages", () => {
+    assert.ok(isDailyQuotaError({ message: "quota: RequestsPerDay limit" }));
+  });
+
+  it("returns false for per-minute rate limits", () => {
+    assert.ok(!isDailyQuotaError({ message: "429: too many requests per minute" }));
+  });
+
+  it("returns false for non-quota errors", () => {
+    assert.ok(!isDailyQuotaError({ message: "Invalid API key" }));
+  });
+});
+
+// --- parseRetryDelay ---
+
+describe("parseRetryDelay", () => {
+  it("parses 'retry in Ns' from message", () => {
+    assert.equal(parseRetryDelay({ message: "Please retry in 14.473150856s." }), 14474);
+  });
+
+  it("parses retryDelay from message", () => {
+    assert.equal(parseRetryDelay({ message: 'retryDelay: "30s"' }), 30000);
+  });
+
+  it("returns null for messages without retry delay", () => {
+    assert.equal(parseRetryDelay({ message: "Some other error" }), null);
+  });
+
+  it("returns null for null input", () => {
+    assert.equal(parseRetryDelay(null), null);
+  });
+});
+
+// --- QuotaExhaustedError ---
+
+describe("QuotaExhaustedError", () => {
+  it("is an Error with correct name", () => {
+    const err = new QuotaExhaustedError();
+    assert.ok(err instanceof Error);
+    assert.equal(err.name, "QuotaExhaustedError");
+  });
+
+  it("has default message", () => {
+    const err = new QuotaExhaustedError();
+    assert.equal(err.message, "Gemini API daily quota exhausted");
+  });
+
+  it("accepts custom message", () => {
+    const err = new QuotaExhaustedError("custom");
+    assert.equal(err.message, "custom");
   });
 });

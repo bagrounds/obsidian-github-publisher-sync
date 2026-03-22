@@ -25,8 +25,17 @@ export const MIN_TITLE_LENGTH = 8;
 /** Minimum word count for a title to be eligible for matching without AI validation */
 export const MIN_WORD_COUNT_WITHOUT_AI = 2;
 
-/** Default Gemini model for link validation */
+/** Default Gemini model for link identification */
 export const DEFAULT_LINKING_MODEL = "gemini-3.1-flash-lite-preview";
+
+/** Maximum retries on rate-limit errors before propagating */
+export const MAX_GEMINI_RETRIES = 3;
+
+/** Initial backoff in milliseconds for rate-limit retries */
+export const INITIAL_BACKOFF_MS = 5_000;
+
+/** Maximum backoff in milliseconds */
+export const MAX_BACKOFF_MS = 60_000;
 
 /** Content subdirectories to index as link targets (excludes date-based content) */
 export const INDEXABLE_DIRS = [
@@ -52,6 +61,61 @@ export const TRAVERSABLE_DIRS = [
   "chickie-loo",
   "auto-blog-zero",
 ] as const;
+
+// --- Error Types ---
+
+/** Thrown when Gemini API daily quota is exhausted. Halts the pipeline. */
+export class QuotaExhaustedError extends Error {
+  constructor(message: string = "Gemini API daily quota exhausted") {
+    super(message);
+    this.name = "QuotaExhaustedError";
+  }
+}
+
+// --- Rate Limit Utilities ---
+
+/** Check if an error is a rate-limit / quota error */
+export const isRateLimitError = (error: unknown): boolean => {
+  if (!error || typeof error !== "object") return false;
+  const message = (error as { message?: string }).message ?? "";
+  return (
+    message.includes("429") ||
+    message.includes("RESOURCE_EXHAUSTED") ||
+    message.includes("quota")
+  );
+};
+
+/** Check if error indicates daily quota exhaustion (not just per-minute) */
+export const isDailyQuotaError = (error: unknown): boolean => {
+  if (!error || typeof error !== "object") return false;
+  const message = (error as { message?: string }).message ?? "";
+  return (
+    message.includes("quota") &&
+    (message.includes("daily") ||
+     message.includes("per day") ||
+     message.includes("PerDay"))
+  );
+};
+
+/** Parse retry delay from Gemini error response */
+export const parseRetryDelay = (error: unknown): number | null => {
+  if (!error || typeof error !== "object") return null;
+  const message = (error as { message?: string }).message ?? "";
+
+  // Match "retry in 14.47s" or "retry in 30s"
+  const retryInMatch = message.match(/retry\s+in\s+(\d+(?:\.\d+)?)\s*s/i);
+  if (retryInMatch) return Math.ceil(parseFloat(retryInMatch[1]!) * 1000);
+
+  // Match 'retryDelay: "30s"' or 'retryDelay":"14s"'
+  const delayMatch = message.match(/retryDelay["\s:]*["']?(\d+(?:\.\d+)?)\s*s/i);
+  if (delayMatch) return Math.ceil(parseFloat(delayMatch[1]!) * 1000);
+
+  return null;
+};
+
+/** Sleep for a given number of milliseconds */
+const sleep = (ms: number): Promise<void> =>
+  new Promise((resolve) => setTimeout(resolve, ms));
 
 // --- Types ---
 
@@ -518,110 +582,165 @@ export const findLinkCandidates = (
   return [...candidates].sort((a, b) => a.position - b.position);
 };
 
-// --- Gemini Validation ---
+// --- Gemini Book Identification ---
 
 /**
- * Build the validation prompt for Gemini.
- * Asks the model to validate each candidate link.
+ * Build the identification prompt for Gemini.
+ * Sends the file body and available book titles so Gemini can identify
+ * genuine book references — not just validate deterministic matches.
  */
-export const buildValidationPrompt = (
-  candidates: readonly LinkCandidate[],
+export const buildIdentificationPrompt = (
+  fileBody: string,
+  bookEntries: readonly ContentEntry[],
   fileRelativePath: string,
 ): { readonly system: string; readonly user: string } => {
-  const candidateDescriptions = candidates
-    .map(
-      (c, i) =>
-        `${i + 1}. Matched text: "${c.matchedText}"
-   Proposed link target: ${c.entry.relativePath} (${c.entry.title})
-   Context: "${c.context}"`,
-    )
-    .join("\n\n");
+  const bookList = bookEntries
+    .map((e) => `- "${e.plainTitle}" (${e.relativePath})`)
+    .join("\n");
 
   return {
-    system: `You are a precise editorial assistant for a knowledge base. Your job is to validate proposed book links.
+    system: `You are a precise editorial assistant for a knowledge base of book reports. Your job is to identify genuine book references in a document.
 
-All candidates below are potential links to book pages. Determine if the matched text genuinely refers to the specific book.
+You will receive:
+1. The path and body text of a document.
+2. A list of book titles and their file paths.
+
+Your task: Determine which books from the list are genuinely referenced in the document AS BOOKS (literary works). This means the text is discussing, recommending, citing, or listing the book itself — not merely using a word that happens to match a book title.
 
 Rules:
-- Return true ONLY if the text is clearly referring to the book as a literary work (e.g. in a book recommendation, reading list, book review, or discussion about the book itself).
-- Return false if the word or phrase happens to match a book title but is used in a generic or unrelated context. For example, the word "Diplomacy" used to describe a political strategy should be false, even if there is a book called "Diplomacy".
-- A book's main title (without subtitle) is sufficient for a match. For example, "Thinking, Fast and Slow" should match even if the full book title includes a subtitle.
-- Return false for coincidental, partial, or ambiguous matches.
-- Be conservative: when in doubt, return false.
+- Return the relativePath of each book that is genuinely referenced as a book.
+- A book reference may use the main title without the subtitle. For example, "Thinking, Fast and Slow" references the book even if the full title includes a subtitle.
+- DO NOT include a book if the matching word or phrase is used in a generic context. For example:
+  - "diplomacy" meaning the practice of international relations → NOT a book reference
+  - "foundation" meaning a base or organization → NOT a book reference
+  - "common sense" meaning practical judgment → NOT a book reference
+  - "abundance" meaning plentifulness → NOT a book reference
+  - "on democracy" as a phrase in a sentence about democracy → NOT a book reference
+- DO include a book when the text explicitly discusses, recommends, or cites it as a literary work, e.g.:
+  - "I recommend reading Thinking, Fast and Slow" → YES
+  - "The Alignment Problem by Brian Christian" → YES
+  - Book recommendation sections, reading lists, "related books" sections → YES
+- Be conservative: when in doubt, do NOT include the book.
 
-Return ONLY a valid JSON array of booleans, one per candidate. Example: [true, false, true]
+Return ONLY a valid JSON array of relativePath strings for books genuinely referenced. Example: ["books/thinking-fast-and-slow.md", "books/deep-learning.md"]
+If no books are genuinely referenced, return an empty array: []
 No other text, no explanation, no markdown formatting.`,
     user: `File: ${fileRelativePath}
 
-Candidates to validate:
+Available books:
+${bookList}
 
-${candidateDescriptions}`,
+Document body:
+${fileBody}`,
   };
 };
 
 /**
- * Validate link candidates using Gemini AI.
- * Returns an array of booleans, one per candidate (true = valid link).
- * On any error, returns all false (conservative: skip file on failure).
+ * Identify genuine book references using Gemini AI.
+ * Returns an array of relativePaths for books genuinely referenced in the content.
+ *
+ * Implements retry with exponential backoff for per-minute rate limits.
+ * Throws QuotaExhaustedError on daily quota exhaustion to halt the pipeline.
  */
-export const validateWithGemini = async (
-  candidates: readonly LinkCandidate[],
+export const identifyBooksWithGemini = async (
+  fileBody: string,
+  bookEntries: readonly ContentEntry[],
   fileRelativePath: string,
   apiKey: string,
   model: string,
-): Promise<readonly boolean[]> => {
-  if (candidates.length === 0) return [];
+): Promise<readonly string[]> => {
+  if (bookEntries.length === 0) return [];
 
-  try {
-    const { GoogleGenAI } = await import("@google/genai");
-    const ai = new GoogleGenAI({ apiKey });
+  const { GoogleGenAI } = await import("@google/genai");
+  const ai = new GoogleGenAI({ apiKey });
 
-    const prompt = buildValidationPrompt(candidates, fileRelativePath);
-    const contents = [
-      {
-        role: "user" as const,
-        parts: [{ text: `${prompt.system}\n\n${prompt.user}` }],
-      },
-    ];
+  const prompt = buildIdentificationPrompt(fileBody, bookEntries, fileRelativePath);
+  const contents = [
+    {
+      role: "user" as const,
+      parts: [{ text: `${prompt.system}\n\n${prompt.user}` }],
+    },
+  ];
 
-    const result = await ai.models.generateContent({
-      model,
-      contents,
-      config: {
-        temperature: 0,
-        responseMimeType: "application/json",
-      },
-    });
+  let backoffMs = INITIAL_BACKOFF_MS;
 
-    const text = (result.text ?? "").trim();
-    const parsed = JSON.parse(text);
+  for (let attempt = 0; attempt <= MAX_GEMINI_RETRIES; attempt++) {
+    try {
+      const result = await ai.models.generateContent({
+        model,
+        contents,
+        config: {
+          temperature: 0,
+          responseMimeType: "application/json",
+        },
+      });
 
-    if (
-      !Array.isArray(parsed) ||
-      parsed.length !== candidates.length ||
-      !parsed.every((v: unknown) => typeof v === "boolean")
-    ) {
+      const text = (result.text ?? "").trim();
+      const parsed = JSON.parse(text);
+
+      if (
+        !Array.isArray(parsed) ||
+        !parsed.every((v: unknown) => typeof v === "string")
+      ) {
+        console.error(
+          JSON.stringify({
+            event: "gemini_identification_invalid_response",
+            file: fileRelativePath,
+            got: parsed,
+          }),
+        );
+        return [];
+      }
+
+      return parsed as readonly string[];
+    } catch (error) {
+      if (isDailyQuotaError(error)) {
+        console.error(
+          JSON.stringify({
+            event: "gemini_daily_quota_exhausted",
+            file: fileRelativePath,
+            error: error instanceof Error ? error.message : String(error),
+          }),
+        );
+        throw new QuotaExhaustedError();
+      }
+
+      if (isRateLimitError(error) && attempt < MAX_GEMINI_RETRIES) {
+        const serverDelay = parseRetryDelay(error);
+        const waitMs = serverDelay ?? backoffMs;
+        console.warn(
+          JSON.stringify({
+            event: "gemini_rate_limit_retry",
+            file: fileRelativePath,
+            attempt: attempt + 1,
+            maxRetries: MAX_GEMINI_RETRIES,
+            waitMs,
+          }),
+        );
+        await sleep(waitMs);
+        backoffMs = Math.min(backoffMs * 2, MAX_BACKOFF_MS);
+        continue;
+      }
+
       console.error(
         JSON.stringify({
-          event: "gemini_validation_invalid_response",
-          expected: candidates.length,
-          got: parsed,
+          event: "gemini_identification_error",
+          file: fileRelativePath,
+          error: error instanceof Error ? error.message : String(error),
         }),
       );
-      return candidates.map(() => false);
+      return [];
     }
-
-    return parsed as readonly boolean[];
-  } catch (error) {
-    console.error(
-      JSON.stringify({
-        event: "gemini_validation_error",
-        file: fileRelativePath,
-        error: error instanceof Error ? error.message : String(error),
-      }),
-    );
-    return candidates.map(() => false);
   }
+
+  console.error(
+    JSON.stringify({
+      event: "gemini_retries_exhausted",
+      file: fileRelativePath,
+      maxRetries: MAX_GEMINI_RETRIES,
+    }),
+  );
+  return [];
 };
 
 // --- Replacement Application ---
@@ -715,7 +834,21 @@ export const updateFrontmatterTimestamp = (
 // --- File Processing ---
 
 /**
- * Process a single file: find candidates, validate with AI, apply replacements.
+ * Extract the body text from a markdown file (everything after frontmatter).
+ */
+export const extractBody = (content: string): string => {
+  const lines = content.split("\n");
+  if (lines[0]?.trim() !== "---") return content;
+  const endIndex = lines.findIndex((l, i) => i > 0 && l.trim() === "---");
+  return endIndex >= 0 ? lines.slice(endIndex + 1).join("\n") : content;
+};
+
+/**
+ * Process a single file: use Gemini to identify book references, find positions, apply links.
+ *
+ * New architecture: Gemini IDENTIFIES which books are referenced (not just validates).
+ * Deterministic position finding is only used AFTER Gemini confirms a book is referenced.
+ * Throws QuotaExhaustedError on daily quota exhaustion to halt the pipeline.
  */
 export const processFile = async (
   relativePath: string,
@@ -725,43 +858,53 @@ export const processFile = async (
 ): Promise<FileResult> => {
   const filePath = path.join(contentDir, relativePath);
   const content = fs.readFileSync(filePath, "utf-8");
+  const body = extractBody(content);
 
-  // Find existing links to avoid double-linking
-  const existingLinks = extractExistingLinkedPaths(content, relativePath, contentDir);
+  // Filter index to books not already linked in this file
+  const eligibleBooks = index.filter(
+    (entry) =>
+      entry.relativePath !== relativePath &&
+      !contentAlreadyLinksTo(content, entry),
+  );
 
-  // Mask protected regions and find candidates
+  if (eligibleBooks.length === 0) {
+    return { relativePath, linksAdded: 0, modified: false };
+  }
+
+  // Use Gemini to IDENTIFY which books are genuinely referenced
+  // (not just deterministic string matching)
+  const identifiedPaths = config.apiKey
+    ? await identifyBooksWithGemini(body, eligibleBooks, relativePath, config.apiKey, config.model)
+    : [];
+
+  if (identifiedPaths.length === 0) {
+    return { relativePath, linksAdded: 0, modified: false };
+  }
+
+  // Build a set of Gemini-identified books
+  const identifiedSet = new Set(identifiedPaths);
+
+  console.log(
+    JSON.stringify({
+      event: "books_identified",
+      file: relativePath,
+      count: identifiedPaths.length,
+      books: identifiedPaths,
+    }),
+  );
+
+  // Now find positions for only the identified books using deterministic matching
   const masked = maskProtectedRegions(content);
-  const hasAi = !!config.apiKey;
-  const candidates = findLinkCandidates(content, masked, index, existingLinks, relativePath, hasAi);
+  const identifiedIndex = index.filter((e) => identifiedSet.has(e.relativePath));
+  const existingLinks = extractExistingLinkedPaths(content, relativePath, contentDir);
+  const candidates = findLinkCandidates(content, masked, identifiedIndex, existingLinks, relativePath, true);
 
   if (candidates.length === 0) {
     return { relativePath, linksAdded: 0, modified: false };
   }
 
-  console.log(
-    JSON.stringify({
-      event: "candidates_found",
-      file: relativePath,
-      count: candidates.length,
-      candidates: candidates.map((c) => ({
-        text: c.matchedText,
-        target: c.entry.relativePath,
-      })),
-    }),
-  );
-
-  // Validate with Gemini if API key is available
-  const validations = config.apiKey
-    ? await validateWithGemini(candidates, relativePath, config.apiKey, config.model)
-    : candidates.map(() => true); // Without AI, accept all deterministic matches
-
-  const validCount = validations.filter(Boolean).length;
-
-  if (validCount === 0) {
-    return { relativePath, linksAdded: 0, modified: false };
-  }
-
-  // Apply replacements
+  // All candidates are Gemini-approved — apply all
+  const validations = candidates.map(() => true);
   const newContent = applyReplacements(content, candidates, validations);
 
   if (config.dryRun) {
@@ -783,19 +926,17 @@ export const processFile = async (
     JSON.stringify({
       event: "links_applied",
       file: relativePath,
-      linksAdded: validCount,
+      linksAdded: candidates.length,
       dryRun: config.dryRun,
-      links: candidates
-        .filter((_, i) => validations[i])
-        .map((c) => ({
-          matched: c.matchedText,
-          target: c.entry.relativePath,
-          title: c.entry.title,
-        })),
+      links: candidates.map((c) => ({
+        matched: c.matchedText,
+        target: c.entry.relativePath,
+        title: c.entry.title,
+      })),
     }),
   );
 
-  return { relativePath, linksAdded: validCount, modified: true };
+  return { relativePath, linksAdded: candidates.length, modified: true };
 };
 
 // --- Orchestration ---
@@ -851,10 +992,25 @@ export const run = async (config: LinkingConfig): Promise<RunResult> => {
   }
 
   // Process each file sequentially (to respect Gemini rate limits)
+  // QuotaExhaustedError halts the pipeline immediately
   const fileResults: FileResult[] = [];
   for (const relativePath of filesToVisit) {
-    const result = await processFile(relativePath, config.contentDir, index, config);
-    fileResults.push(result);
+    try {
+      const result = await processFile(relativePath, config.contentDir, index, config);
+      fileResults.push(result);
+    } catch (error) {
+      if (error instanceof QuotaExhaustedError) {
+        console.error(
+          JSON.stringify({
+            event: "pipeline_halted_quota_exhausted",
+            filesProcessed: fileResults.length,
+            filesRemaining: filesToVisit.length - fileResults.length,
+          }),
+        );
+        break;
+      }
+      throw error;
+    }
   }
 
   const filesModified = fileResults.filter((r) => r.modified).length;

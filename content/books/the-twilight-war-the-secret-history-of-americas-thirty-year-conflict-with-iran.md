@@ -6,6 +6,9 @@ URL: https://bagrounds.org/books/the-twilight-war-the-secret-history-of-americas
 share: true
 CTA: ⚔️ Confront the hidden conflict.
 affiliate link: https://amzn.to/4lflbMJ
+force_analyze_links: false
+link_analysis_time: 2026-03-22T06:08:03.098Z
+link_analysis_model: gemini-3.1-flash-lite-preview
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ⚔️🤫 The Twilight War: The Secret History of America's Thirty-Year Conflict with Iran  

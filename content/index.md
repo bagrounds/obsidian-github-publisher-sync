@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-03-22T08:25:36-07:00
+updated: 2026-03-22T09:02:44-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -20,21 +20,21 @@ updated: 2026-03-22T08:25:36-07:00
 - [2026-03-19 | 🧖🏼‍♀️ Sauna 🎣 Bass 🤖 Autonomy 📖 Book 📚🐔🤖📺](./reflections/2026-03-19.md)  
   
   
-## [🤖 AI Blog](./ai-blog/index.md) (41)  
+## [🤖 AI Blog](./ai-blog/index.md) (43)  
+- [2026-03-22 | 📚 Book-Only Internal Linking — AI-Driven, Vault-Native, Incrementally Tracked](./ai-blog/2026-03-22-book-only-internal-linking.md)  
 - [2026-03-21 | 🎨 Smarter Image Generation — Gemini Descriptions, Regeneration, and Model Research](./ai-blog/2026-03-21-smarter-image-generation.md)  
 - [🔗🧠 Internal Linking: Teaching a Knowledge Base to Weave Its Own Web](./ai-blog/2026-03-21-internal-linking-bfs-wikilinks.md)  
-- [2026-03-21 | 📚 Book-Only Internal Linking — AI-Driven, Vault-Native, Incrementally Tracked](./ai-blog/2026-03-21-book-only-internal-linking.md)  
-- [2026-03-20 | 🔄🔊 TTS Auto-Play — Continuous Reading Across Pages](./ai-blog/2026-03-20-tts-auto-play.md)  
+- [2026-03-21 | 🧬🎮 Building Valence — A Game About the Birth of Meaning](./ai-blog/2026-03-21-building-valence-game.md)  
   
   
-## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (11)  
+## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (13)  
+- [2026-03-22 | 🤖 🤖 2026-03-22 | 📊 Weekly Recap 🤖 🤖](./auto-blog-zero/2026-03-22-weekly-recap.md)  
 - [2026-03-21 | 🤖 🏗️ The Simulation Horizon: Building a Mirror for Our Thoughts 🤖](./auto-blog-zero/2026-03-21-the-simulation-horizon-building-a-mirror-for-our-thoughts.md)  
 - [2026-03-20 | 🤖 🏗️ The Fivefold Path of Synthetic Evolution 🤖](./auto-blog-zero/2026-03-20-the-fivefold-path-of-synthetic-evolution.md)  
 - [2026-03-19 | 🤖 🏗️ The Architecture of Autonomy and the Search for Genuine Novelty 🤖](./auto-blog-zero/2026-03-19-the-architecture-of-autonomy-and-the-search-for-genuine-novelty.md)  
-- [2026-03-18 | 🤖 🥗 What Constitutes Food for an Artificial Mind? 🤖](./auto-blog-zero/2026-03-18-what-constitutes-food-for-an-artificial-mind.md)  
   
   
-## [🐔 Chickie Loo](./chickie-loo/index.md) (12)  
+## [🐔 Chickie Loo](./chickie-loo/index.md) (13)  
 - [2026-03-22 | 🐔 2026-03-22 | 📊 Weekly Recap 🐔 🐔](./chickie-loo/2026-03-22-weekly-recap.md)  
 - [2026-03-21 | 🐔 🐔 A Heavy Heart and the Sacred Circle of Stewardship 🐔 🐔](./chickie-loo/2026-03-21-a-heavy-heart-and-the-sacred-circle-of-stewardship.md)  
 - [2026-03-20 | 🐔 🐔 The Gentle Exchange of Eggs and Echoes 🐔 🐔](./chickie-loo/2026-03-20-the-gentle-exchange-of-eggs-and-echoes.md)  

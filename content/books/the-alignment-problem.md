@@ -7,6 +7,9 @@ URL: https://bagrounds.org/books/the-alignment-problem
 Author:
 tags:
 affiliate link: https://www.amazon.com/dp/0393635821?tag=bagrounds-20
+force_analyze_links: false
+link_analysis_time: 2026-03-22T23:35:01.458Z
+link_analysis_model: gemini-3.1-flash-lite-preview
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ⚖️🤖 The Alignment Problem  

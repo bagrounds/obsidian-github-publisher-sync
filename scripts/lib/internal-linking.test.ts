@@ -1010,6 +1010,16 @@ describe("contentAlreadyLinksTo", () => {
     const content = "See [[books/thinking-fast-and-slow#chapter-1]]";
     assert.equal(contentAlreadyLinksTo(content, BOOK_ENTRY), true);
   });
+
+  it("does not false-positive on a longer path that shares a prefix", () => {
+    const entry: ContentEntry = {
+      relativePath: "books/thinking-fast.md",
+      title: "📖 Thinking Fast",
+      plainTitle: "Thinking Fast",
+    };
+    const content = "See [[books/thinking-fast-and-slow|TFS]] for more";
+    assert.equal(contentAlreadyLinksTo(content, entry), false);
+  });
 });
 
 // --- findLinkCandidates skips existing links anywhere ---

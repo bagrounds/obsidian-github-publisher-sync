@@ -60,7 +60,7 @@ tags:
 
 🆕 Added `generateDiff(original, modified)` that produces a minimal unified-style diff showing only changed lines:
 
-```
+```diff
 @@ line 42 @@
 - I recommend reading Thinking, Fast and Slow for understanding cognitive biases.
 + I recommend reading [[books/thinking-fast-and-slow|🤔🐇🐢 Thinking, Fast and Slow]] for understanding cognitive biases.

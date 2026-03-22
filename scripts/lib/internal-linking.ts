@@ -424,16 +424,20 @@ export const extractExistingLinkedPaths = (
 
 /**
  * Check whether a file's raw content already contains any link (wikilink or markdown)
- * pointing to the given entry's path. Searches the entire raw content string,
- * catching links that extractExistingLinkedPaths might miss (e.g. partial matches,
- * different path formats).
+ * pointing to the given entry's path. Checks for the path followed by common link
+ * delimiters to avoid false positives on longer paths that share a prefix.
  */
 export const contentAlreadyLinksTo = (
   content: string,
   entry: ContentEntry,
 ): boolean => {
   const pathWithoutMd = entry.relativePath.replace(/\.md$/, "");
-  return content.includes(pathWithoutMd);
+  return (
+    content.includes(`${pathWithoutMd}]`) ||
+    content.includes(`${pathWithoutMd}|`) ||
+    content.includes(`${pathWithoutMd}#`) ||
+    content.includes(`${pathWithoutMd}.`)
+  );
 };
 
 /**

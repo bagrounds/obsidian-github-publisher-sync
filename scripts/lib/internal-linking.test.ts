@@ -31,6 +31,10 @@ import {
   findLinkCandidates,
   buildValidationPrompt,
   applyReplacements,
+  generateDiff,
+  contentAlreadyLinksTo,
+  updateFrontmatterTimestamp,
+  LINKABLE_DIRS,
   MIN_TITLE_LENGTH,
   MIN_WORD_COUNT_WITHOUT_AI,
   type ContentEntry,
@@ -252,7 +256,7 @@ describe("buildContentIndex", () => {
 
   it("skips files with short plain titles", () => {
     fs.writeFileSync(
-      path.join(tmpDir.path, "software", "git.md"),
+      path.join(tmpDir.path, "books", "git.md"),
       "---\ntitle: 💾 Git\n---\nContent",
     );
 
@@ -261,7 +265,7 @@ describe("buildContentIndex", () => {
     // "Git" is only 3 chars, below MIN_TITLE_LENGTH
   });
 
-  it("includes files from multiple directories", () => {
+  it("only indexes books directory (not software, topics, etc.)", () => {
     fs.writeFileSync(
       path.join(tmpDir.path, "books", "atomic-habits.md"),
       "---\ntitle: ⚛️🔄 Atomic Habits Is Great\n---\nContent",
@@ -272,7 +276,8 @@ describe("buildContentIndex", () => {
     );
 
     const index = buildContentIndex(tmpDir.path);
-    assert.equal(index.length, 2);
+    assert.equal(index.length, 1);
+    assert.equal(index[0]?.relativePath, "books/atomic-habits.md");
   });
 
   it("skips non-existent directories gracefully", () => {
@@ -664,7 +669,7 @@ describe("buildValidationPrompt", () => {
     ];
 
     const prompt = buildValidationPrompt(candidates, "reflections/test.md");
-    assert.ok(prompt.system.includes("validate proposed internal links"));
+    assert.ok(prompt.system.includes("validate proposed book links"));
     assert.ok(prompt.user.includes("Thinking, Fast and Slow"));
     assert.ok(prompt.user.includes("books/thinking-fast-and-slow.md"));
     assert.ok(prompt.user.includes("reflections/test.md"));
@@ -972,5 +977,181 @@ describe("findLinkCandidates hasAiValidation filtering", () => {
       content, masked, [hyphenEntry], new Set(), "reflections/test.md", false,
     );
     assert.equal(candidates.length, 1);
+  });
+});
+
+// --- LINKABLE_DIRS ---
+
+describe("LINKABLE_DIRS", () => {
+  it("contains only books", () => {
+    assert.deepEqual([...LINKABLE_DIRS], ["books"]);
+  });
+});
+
+// --- contentAlreadyLinksTo ---
+
+describe("contentAlreadyLinksTo", () => {
+  it("returns true when content contains a wikilink to the entry", () => {
+    const content = "I recommend [[books/thinking-fast-and-slow|Thinking, Fast and Slow]]";
+    assert.equal(contentAlreadyLinksTo(content, BOOK_ENTRY), true);
+  });
+
+  it("returns true when content contains a markdown link to the entry", () => {
+    const content = "I recommend [the book](../books/thinking-fast-and-slow.md)";
+    assert.equal(contentAlreadyLinksTo(content, BOOK_ENTRY), true);
+  });
+
+  it("returns false when the entry path is not in the content", () => {
+    const content = "I recommend reading more books about psychology";
+    assert.equal(contentAlreadyLinksTo(content, BOOK_ENTRY), false);
+  });
+
+  it("returns true even when the path appears in a heading anchor", () => {
+    const content = "See [[books/thinking-fast-and-slow#chapter-1]]";
+    assert.equal(contentAlreadyLinksTo(content, BOOK_ENTRY), true);
+  });
+});
+
+// --- findLinkCandidates skips existing links anywhere ---
+
+describe("findLinkCandidates skips existing links anywhere in file", () => {
+  it("skips entries whose path already appears in the content", () => {
+    const content = "Great book: [[books/thinking-fast-and-slow|TFS]]\nAlso Thinking, Fast and Slow is mentioned in plain text";
+    const masked = maskProtectedRegions(content);
+    const candidates = findLinkCandidates(content, masked, [BOOK_ENTRY], new Set(), "reflections/test.md");
+    assert.equal(candidates.length, 0);
+  });
+
+  it("still finds candidates when path is not in the content", () => {
+    const content = "I recently read Thinking, Fast and Slow and it was great";
+    const masked = maskProtectedRegions(content);
+    const candidates = findLinkCandidates(content, masked, [BOOK_ENTRY], new Set(), "reflections/test.md");
+    assert.equal(candidates.length, 1);
+  });
+});
+
+// --- generateDiff ---
+
+describe("generateDiff", () => {
+  it("returns empty array for identical content", () => {
+    const content = "Line 1\nLine 2\nLine 3";
+    assert.deepEqual(generateDiff(content, content), []);
+  });
+
+  it("shows changed lines with line numbers", () => {
+    const original = "Line 1\nI read Thinking, Fast and Slow\nLine 3";
+    const modified = "Line 1\nI read [[books/thinking-fast-and-slow|🤔🐇🐢 Thinking, Fast and Slow]]\nLine 3";
+    const diff = generateDiff(original, modified);
+    assert.ok(diff.some((l) => l.includes("@@ line 2 @@")));
+    assert.ok(diff.some((l) => l.startsWith("- I read Thinking")));
+    assert.ok(diff.some((l) => l.startsWith("+ I read [[books")));
+  });
+
+  it("handles additions when modified has more lines", () => {
+    const original = "Line 1";
+    const modified = "Line 1\nLine 2";
+    const diff = generateDiff(original, modified);
+    assert.ok(diff.some((l) => l.startsWith("+ Line 2")));
+  });
+
+  it("handles removals when original has more lines", () => {
+    const original = "Line 1\nLine 2";
+    const modified = "Line 1";
+    const diff = generateDiff(original, modified);
+    assert.ok(diff.some((l) => l.startsWith("- Line 2")));
+  });
+
+  it("only includes changed lines, not unchanged ones", () => {
+    const original = "Line 1\nLine 2\nLine 3";
+    const modified = "Line 1\nModified\nLine 3";
+    const diff = generateDiff(original, modified);
+    assert.ok(!diff.some((l) => l.includes("Line 1")));
+    assert.ok(!diff.some((l) => l.includes("Line 3")));
+  });
+});
+
+// --- updateFrontmatterTimestamp ---
+
+describe("updateFrontmatterTimestamp", () => {
+  const tmpDir = { path: "" };
+
+  beforeEach(() => {
+    tmpDir.path = fs.mkdtempSync(path.join(os.tmpdir(), "internal-linking-ts-"));
+  });
+
+  afterEach(() => {
+    fs.rmSync(tmpDir.path, { recursive: true, force: true });
+  });
+
+  it("updates existing updated field", () => {
+    const filePath = path.join(tmpDir.path, "test.md");
+    fs.writeFileSync(filePath, "---\ntitle: Test\nupdated: 2026-01-01T00:00:00.000Z\n---\nBody");
+
+    updateFrontmatterTimestamp(filePath, "2026-03-22T00:00:00.000Z");
+
+    const content = fs.readFileSync(filePath, "utf-8");
+    assert.ok(content.includes("updated: 2026-03-22T00:00:00.000Z"));
+    assert.ok(!content.includes("2026-01-01"));
+  });
+
+  it("inserts updated field when missing from frontmatter", () => {
+    const filePath = path.join(tmpDir.path, "test.md");
+    fs.writeFileSync(filePath, "---\ntitle: Test\n---\nBody");
+
+    updateFrontmatterTimestamp(filePath, "2026-03-22T00:00:00.000Z");
+
+    const content = fs.readFileSync(filePath, "utf-8");
+    assert.ok(content.includes("updated: 2026-03-22T00:00:00.000Z"));
+    assert.ok(content.includes("title: Test"));
+  });
+
+  it("creates frontmatter block when none exists", () => {
+    const filePath = path.join(tmpDir.path, "test.md");
+    fs.writeFileSync(filePath, "Body only");
+
+    updateFrontmatterTimestamp(filePath, "2026-03-22T00:00:00.000Z");
+
+    const content = fs.readFileSync(filePath, "utf-8");
+    assert.ok(content.startsWith("---\nupdated: 2026-03-22T00:00:00.000Z\n---\n"));
+    assert.ok(content.includes("Body only"));
+  });
+
+  it("does nothing for non-existent files", () => {
+    const filePath = path.join(tmpDir.path, "nonexistent.md");
+    updateFrontmatterTimestamp(filePath, "2026-03-22T00:00:00.000Z");
+    assert.ok(!fs.existsSync(filePath));
+  });
+});
+
+// --- buildValidationPrompt book-specific ---
+
+describe("buildValidationPrompt book-specific", () => {
+  it("mentions book validation in system prompt", () => {
+    const candidates: readonly LinkCandidate[] = [
+      {
+        entry: BOOK_ENTRY,
+        matchedText: "Thinking, Fast and Slow",
+        position: 10,
+        context: "I recommend Thinking, Fast and Slow for book club",
+      },
+    ];
+
+    const prompt = buildValidationPrompt(candidates, "reflections/test.md");
+    assert.ok(prompt.system.includes("book"));
+    assert.ok(prompt.system.includes("literary work"));
+  });
+
+  it("warns about generic word matches in system prompt", () => {
+    const candidates: readonly LinkCandidate[] = [
+      {
+        entry: BOOK_ENTRY,
+        matchedText: "Thinking, Fast and Slow",
+        position: 0,
+        context: "context",
+      },
+    ];
+
+    const prompt = buildValidationPrompt(candidates, "test.md");
+    assert.ok(prompt.system.includes("Diplomacy"));
   });
 });

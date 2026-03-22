@@ -42,6 +42,9 @@ export const INDEXABLE_DIRS = [
   "tools",
 ] as const;
 
+/** Directories whose pages are eligible for wikilink insertion (books-only for precision) */
+export const LINKABLE_DIRS = ["books"] as const;
+
 /** All content directories for BFS traversal (includes date-based content) */
 export const TRAVERSABLE_DIRS = [
   ...INDEXABLE_DIRS,
@@ -200,7 +203,7 @@ export const parseFrontmatter = (
  * Skips index.md files and files without a title.
  */
 export const buildContentIndex = (contentDir: string): readonly ContentEntry[] =>
-  INDEXABLE_DIRS.flatMap((dir) => {
+  LINKABLE_DIRS.flatMap((dir) => {
     const dirPath = path.join(contentDir, dir);
     if (!fs.existsSync(dirPath)) return [];
 
@@ -420,8 +423,25 @@ export const extractExistingLinkedPaths = (
 // --- Candidate Discovery ---
 
 /**
+ * Check whether a file's raw content already contains any link (wikilink or markdown)
+ * pointing to the given entry's path. Searches the entire raw content string,
+ * catching links that extractExistingLinkedPaths might miss (e.g. partial matches,
+ * different path formats).
+ */
+export const contentAlreadyLinksTo = (
+  content: string,
+  entry: ContentEntry,
+): boolean => {
+  const pathWithoutMd = entry.relativePath.replace(/\.md$/, "");
+  return content.includes(pathWithoutMd);
+};
+
+/**
  * Find link candidates in a file by searching masked content for plain-title matches.
  * Returns candidates sorted by position (ascending) for safe replacement.
+ *
+ * Only considers entries from the books directory (LINKABLE_DIRS).
+ * Skips entries whose path already appears anywhere in the file (even outside links).
  *
  * When hasAiValidation is false (no Gemini API key), applies stricter filtering:
  * only multi-word titles are considered to avoid common single-word false positives.
@@ -455,6 +475,9 @@ export const findLinkCandidates = (
 
     // Skip already-linked content
     if (existingLinks.has(entry.relativePath)) return;
+
+    // Skip if the entry's path already appears anywhere in the raw content
+    if (contentAlreadyLinksTo(content, entry)) return;
 
     // Without AI validation, skip single-word titles to avoid common word false positives
     if (!hasAiValidation && countWords(entry.plainTitle) < MIN_WORD_COUNT_WITHOUT_AI) return;
@@ -511,16 +534,15 @@ export const buildValidationPrompt = (
     .join("\n\n");
 
   return {
-    system: `You are a precise editorial assistant for a knowledge base. Your job is to validate proposed internal links.
+    system: `You are a precise editorial assistant for a knowledge base. Your job is to validate proposed book links.
 
-For each candidate below, determine if the matched plain text genuinely refers to the proposed content page.
+All candidates below are potential links to book pages. Determine if the matched text genuinely refers to the specific book.
 
 Rules:
-- Return true ONLY if you are confident the text refers to exactly the same work/concept as the proposed link target.
-- Return false if the match is coincidental, partial, ambiguous, or could refer to something else.
-- A book title in body text that exactly matches a book report title should be true.
-- A software name that matches a software page should be true if used in that context.
-- A person's name that matches a person page should be true if referring to that person.
+- Return true ONLY if the text is clearly referring to the book as a literary work (e.g. in a book recommendation, reading list, book review, or discussion about the book itself).
+- Return false if the word or phrase happens to match a book title but is used in a generic or unrelated context. For example, the word "Diplomacy" used to describe a political strategy should be false, even if there is a book called "Diplomacy".
+- A book's main title (without subtitle) is sufficient for a match. For example, "Thinking, Fast and Slow" should match even if the full book title includes a subtitle.
+- Return false for coincidental, partial, or ambiguous matches.
 - Be conservative: when in doubt, return false.
 
 Return ONLY a valid JSON array of booleans, one per candidate. Example: [true, false, true]
@@ -601,6 +623,32 @@ export const validateWithGemini = async (
 // --- Replacement Application ---
 
 /**
+ * Generate a minimal diff showing only changed lines between original and modified content.
+ * Returns an array of diff hunks, each showing the line number, old line, and new line.
+ */
+export const generateDiff = (
+  original: string,
+  modified: string,
+): readonly string[] => {
+  const originalLines = original.split("\n");
+  const modifiedLines = modified.split("\n");
+  const maxLen = Math.max(originalLines.length, modifiedLines.length);
+
+  return Array.from({ length: maxLen })
+    .flatMap((_, i) => {
+      const origLine = originalLines[i];
+      const modLine = modifiedLines[i];
+      return origLine !== modLine
+        ? [
+            `@@ line ${i + 1} @@`,
+            ...(origLine !== undefined ? [`- ${origLine}`] : []),
+            ...(modLine !== undefined ? [`+ ${modLine}`] : []),
+          ]
+        : [];
+    });
+};
+
+/**
  * Apply wikilink replacements to content.
  * Processes replacements from end to start to preserve positions.
  * Only replaces candidates where the validation is true.
@@ -622,6 +670,42 @@ export const applyReplacements = (
     const wikilink = formatWikilink(candidate.entry);
     return `${before}${wikilink}${after}`;
   }, content);
+};
+
+// --- Frontmatter Timestamp ---
+
+/**
+ * Update the "updated" frontmatter field for a file to the given ISO 8601 timestamp.
+ * Creates the field if missing, creates a frontmatter block if absent.
+ * Used to leave a BFS trail so Enveloppe can discover modified files.
+ */
+export const updateFrontmatterTimestamp = (
+  filePath: string,
+  timestamp: string,
+): void => {
+  if (!fs.existsSync(filePath)) return;
+
+  const raw = fs.readFileSync(filePath, "utf-8");
+  const lines = raw.split("\n");
+
+  if (lines[0]?.trim() === "---") {
+    const endIndex = lines.findIndex((l, i) => i > 0 && l.trim() === "---");
+    if (endIndex < 0) return;
+
+    const updatedLineIndex = lines.findIndex(
+      (l, i) => i > 0 && i < endIndex && /^updated:\s/.test(l),
+    );
+
+    if (updatedLineIndex >= 0) {
+      lines[updatedLineIndex] = `updated: ${timestamp}`;
+    } else {
+      lines.splice(endIndex, 0, `updated: ${timestamp}`);
+    }
+
+    fs.writeFileSync(filePath, lines.join("\n"), "utf-8");
+  } else {
+    fs.writeFileSync(filePath, `---\nupdated: ${timestamp}\n---\n${raw}`, "utf-8");
+  }
 };
 
 // --- File Processing ---
@@ -676,7 +760,18 @@ export const processFile = async (
   // Apply replacements
   const newContent = applyReplacements(content, candidates, validations);
 
-  if (!config.dryRun) {
+  if (config.dryRun) {
+    const diffLines = generateDiff(content, newContent);
+    if (diffLines.length > 0) {
+      console.log(
+        JSON.stringify({
+          event: "dry_run_diff",
+          file: relativePath,
+          diff: diffLines,
+        }),
+      );
+    }
+  } else {
     fs.writeFileSync(filePath, newContent, "utf-8");
   }
 
@@ -703,10 +798,11 @@ export const processFile = async (
 
 /**
  * Run the full internal linking pipeline.
- * 1. Build content index
+ * 1. Build content index (books only)
  * 2. BFS from most recent reflection
- * 3. For each file, find and validate link candidates
- * 4. Apply wikilink replacements
+ * 3. Update "updated" timestamps along BFS path (for Enveloppe discovery)
+ * 4. For each file, find and validate book link candidates
+ * 5. Apply wikilink replacements
  */
 export const run = async (config: LinkingConfig): Promise<RunResult> => {
   console.log(
@@ -720,7 +816,7 @@ export const run = async (config: LinkingConfig): Promise<RunResult> => {
     }),
   );
 
-  // Build content index
+  // Build content index (books only)
   const index = buildContentIndex(config.contentDir);
   console.log(JSON.stringify({ event: "index_built", entries: index.length }));
 
@@ -733,6 +829,22 @@ export const run = async (config: LinkingConfig): Promise<RunResult> => {
       maxFiles: config.maxFiles,
     }),
   );
+
+  // Update "updated" timestamps along the BFS path so Enveloppe can discover changes
+  const timestamp = new Date().toISOString();
+  if (!config.dryRun) {
+    filesToVisit.forEach((relativePath) => {
+      const filePath = path.join(config.contentDir, relativePath);
+      updateFrontmatterTimestamp(filePath, timestamp);
+    });
+    console.log(
+      JSON.stringify({
+        event: "timestamps_updated",
+        filesUpdated: filesToVisit.length,
+        timestamp,
+      }),
+    );
+  }
 
   // Process each file sequentially (to respect Gemini rate limits)
   const fileResults: FileResult[] = [];

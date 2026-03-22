@@ -4,9 +4,12 @@ aliases:
   - "🥀 Twilight of Democracy: 🐍 The Seductive Lure of Authoritarianism"
 title: "🥀 Twilight of Democracy: 🐍 The Seductive Lure of Authoritarianism"
 URL: https://bagrounds.org/books/twilight-of-democracy
-Author: 
-tags: 
+Author:
+tags:
 affiliate link: https://amzn.to/3ZO5UZJ
+force_analyze_links: false
+link_analysis_time: 2026-03-22T06:08:01.786Z
+link_analysis_model: gemini-3.1-flash-lite-preview
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🥀 Twilight of Democracy: 🐍 The Seductive Lure of Authoritarianism  

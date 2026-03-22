@@ -195,6 +195,44 @@ VAULT_DIR=$(cat /tmp/vault-dir.txt)
 
 🧠 **Never capture stdout when calling library functions that log.** 📦 Library functions like `syncObsidianVault` write status messages to stdout via `console.log`. 🔧 When you need a return value from a Node.js script, write it to a temp file or use `$GITHUB_OUTPUT` from inside the script. 🔍 The other workflows avoided this by not needing to pass values between steps.
 
+## 🐛 Lessons Learned: The Push Vault Self-Kill
+
+🔥 The Push Obsidian Vault step failed with exit code 143 (SIGTERM): `🔪 Killing 3 lingering ob process(es): 2729, 2741, 2742 → Terminated`
+
+### 🔍 5 Whys: Root Cause Analysis
+
+1. ❓ **Why did the Push step exit with SIGTERM?** → `killObProcesses` inside `pushObsidianVault` sent SIGTERM to the tsx process itself (or its parent).
+2. ❓ **Why did killObProcesses target the tsx process?** → It uses `ps -o pid,args | grep -E 'pattern'` to find processes matching `obsidian-headless` or the vault dir path. The tsx process matched.
+3. ❓ **Why did the tsx process match the vault dir pattern?** → The vault path `/tmp/obsidian-vault-cache` appeared literally in the `npx tsx -e "(... pushObsidianVault('/tmp/obsidian-vault-cache', ...) ...)"` command-line args visible to `ps`.
+4. ❓ **Why was the vault path literal in the eval string?** → The workflow used `${{ steps.vault.outputs.vault_dir }}` which expands at YAML parse time, embedding the path directly in the `-e` string.
+5. ❓ **Why didn't the process.pid filter catch this?** → `killObProcesses` filters `process.pid` (the Node process), but `npx` spawns multiple child processes. The parent `npm`/`sh` processes also have the vault path in their args and aren't filtered.
+
+### ✅ The Fix
+
+🔧 Pass the vault dir via environment variable instead of literal interpolation in the eval string:
+
+```yaml
+# ❌ Broken: vault path appears in ps -o args
+run: |
+  npx tsx -e "(async () => {
+    await pushObsidianVault('${{ steps.vault.outputs.vault_dir }}', ...);
+  })()"
+
+# ✅ Fixed: env var resolved at runtime, invisible to ps
+env:
+  VAULT_DIR: ${{ steps.vault.outputs.vault_dir }}
+run: |
+  npx tsx -e "(async () => {
+    await pushObsidianVault(process.env.VAULT_DIR, ...);
+  })()"
+```
+
+🔬 Verified: with literal path in `-e`, `grep` finds 4 matching processes. 📊 With env var, `grep` finds **zero** matches — the vault path doesn't appear in any process's command-line args.
+
+### 📝 Takeaway
+
+🧠 **Never embed dynamic paths literally in `npx tsx -e` strings when the called function kills processes by pattern.** 🔍 `killObProcesses` greps for the vault dir in all process args — any process that has the path in its command line gets killed. 🔧 Pass paths via env vars so they're resolved at runtime, not visible to `ps`.
+
 ## 🏁 Summary
 
 📐 The internal linking system is now vault-native, AI-driven, and incrementally tracked. 📱 Changes write directly to the Obsidian vault instead of the `content/` directory. 🧠 Gemini identifies genuine book references with full document context. 🔧 Robust JSON extraction handles Gemini's formatting quirks. 📋 Frontmatter tracking enables incremental progress with manual override via `force_analyze_links`. 📊 Both live and dry runs log diffs and summary statistics.

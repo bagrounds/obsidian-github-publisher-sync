@@ -1299,7 +1299,7 @@ describe("updateFrontmatterFields", () => {
     const result = updateFrontmatterFields(content, {
       regenerate_image: "false",
     });
-    assert.ok(result.includes("regenerate_image: \"false\"") || result.includes("regenerate_image: 'false'"));
+    assert.ok(result.includes('regenerate_image: "false"'));
     assert.ok(!result.includes("regenerate_image: true"));
   });
 

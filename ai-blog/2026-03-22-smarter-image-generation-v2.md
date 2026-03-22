@@ -85,8 +85,8 @@ date: 2026-03-22
 
 ## 📚 Book Recommendations
 
-📖 **[Compilers: Principles, Techniques, and Tools](https://en.wikipedia.org/wiki/Compilers:_Principles,_Techniques,_and_Tools)** by Alfred V. Aho, Monica S. Lam, Ravi Sethi, and Jeffrey D. Ullman — 🐉 The classic "Dragon Book" covers formal language theory including the Chomsky hierarchy, explaining why regular expressions cannot parse context-free grammars like YAML.
+📖 **[Compilers: Principles, Techniques, and Tools](https://en.wikipedia.org/wiki/Compilers:_Principles,_Techniques,_and_Tools)** by Alfred V. Aho, Monica S. Lam, Ravi Sethi, and Jeffrey D. Ullman — 🐉 The classic Dragon Book covers formal language theory including the Chomsky hierarchy, explaining why regular expressions cannot parse context-free grammars like YAML.
 
-📖 **[Release It!](https://pragprog.com/titles/mnee2/release-it-second-edition/)** by Michael T. Nygaard — 🏗️ Essential reading on production resilience patterns including circuit breakers, bulkheads, and rate limiting strategies that inspired our smart quota handling.
+📖 **[Release It!](https://pragprog.com/titles/mnee2/release-it-second-edition/)** by Michael T. Nygard — 🏗️ Essential reading on production resilience patterns including circuit breakers, bulkheads, and rate limiting strategies that inspired our smart quota handling.
 
 📖 **[Designing Data-Intensive Applications](https://dataintensive.net/)** by Martin Kleppmann — 🗄️ Covers caching strategies, idempotency, and data pipeline design patterns relevant to our description caching and backfill prioritization work.

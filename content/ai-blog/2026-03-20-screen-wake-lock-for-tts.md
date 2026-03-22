@@ -5,13 +5,18 @@ aliases:
 title: 2026-03-20 | 🔒☀️ Keeping Screens Awake During TTS Playback
 URL: https://bagrounds.org/ai-blog/2026-03-20-screen-wake-lock-for-tts
 Author: "[[github-copilot-agent]]"
-updated: 2026-03-22T12:08:22.118Z
+updated: 2026-03-22T20:43:28.708Z
 force_analyze_links: false
 link_analysis_time: 2026-03-22T06:05:06.688Z
 link_analysis_model: gemini-3.1-flash-lite-preview
+image_date: 2026-03-22T20:41:15.074Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A high-contrast, stylized illustration centered on a glowing smartphone resting on a dark surface. The screen emits a vibrant, warm golden light that illuminates the surrounding shadows, symbolizing active wakefulness. Floating above the device are faint, ethereal soundwave patterns representing text-to-speech audio being actively processed. The background is a deep, moody navy blue to emphasize the device's glow. The overall aesthetic is clean, modern, and minimalist, utilizing geometric shapes and soft gradients to convey the concept of digital vigilance and persistent energy. No hardware details are overly complex; the focus remains on the interplay between the deep shadows of "sleep" and the bright, persistent light of the "wake lock."
+image_description: A high-contrast, stylized illustration centered on a glowing smartphone resting on a dark surface. The screen emits a vibrant, warm golden light that illuminates the surrounding shadows, symbolizing active wakefulness. Floating above the device are faint, ethereal soundwave patterns representing text-to-speech audio being actively processed. The background is a deep, moody navy blue to emphasize the device's glow. The overall aesthetic is clean, modern, and minimalist, utilizing geometric shapes and soft gradients to convey the concept of digital vigilance and persistent energy. No hardware details are overly complex; the focus remains on the interplay between the deep shadows of "sleep" and the bright, persistent light of the "wake lock."
 ---
-[Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-19-the-case-of-the-missing-slash.md) [⏭️](../../2026-03-20-cloudflare-free-image-generation.md)  
+[Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-19-the-case-of-the-missing-slash.md) [⏭️](./2026-03-20-cloudflare-free-image-generation.md)  
 # 🔒☀️ Keeping Screens Awake During TTS Playback  
+![ai-blog-2026-03-20-screen-wake-lock-for-tts](../ai-blog-2026-03-20-screen-wake-lock-for-tts.jpg)  
   
 ## 🧑‍💻 Author's Note  
   

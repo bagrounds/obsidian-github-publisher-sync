@@ -5,10 +5,10 @@ aliases:
 share: true
 URL: https://bagrounds.org/books
 backlinks: false
-updated: 2026-03-22T16:13:41-07:00
+updated: 2026-03-22T16:46:21-07:00
 ---
 [Home](../index.md)  
-# 📚 Books (957)  
+# 📚 Books (958)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [💻0️⃣ Source Code: My Beginnings](./source-code-my-beginnings.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)  
@@ -847,6 +847,7 @@ updated: 2026-03-22T16:13:41-07:00
 - [🧑‍🤝‍🧑🗣️ The Social Skills Guidebook: Manage Shyness, Improve Your Conversations, and Make Friends, Without Giving Up Who You Are](./the-social-skills-guidebook-manage-shyness-improve-your-conversations-and-make-friends-without-giving-up-who-you-are.md)  
 - [🧠👥 The Society of Mind](./the-society-of-mind.md)  
 - [👻🇺🇸⚔️🪽 The Soul of America: The Battle for Our Better Angels](./the-soul-of-america-the-battle-for-our-better-angels.md)  
+- [👂📱🐾🌿 The Sounds of Life: How Digital Technology Is Bringing Us Closer to the Worlds of Animals and Plants](./the-sounds-of-life-how-digital-technology-is-bringing-us-closer-to-the-worlds-of-animals-and-plants.md)  
 - [⚖️⬆️🤝 The Spirit Level: Why Greater Equality Makes Societies Stronger](./the-spirit-level-why-greater-equality-makes-societies-stronger.md)  
 - [👶⬆️👨‍💻📈 The Staff Engineer's Path](./the-staff-engineers-path.md)  
 - [⚔️♟️ The Strategy of Conflict](./the-strategy-of-conflict.md)  

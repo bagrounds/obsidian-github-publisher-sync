@@ -7,6 +7,9 @@ share: true
 CTA: ✨ Create your story.
 affiliate link: https://amzn.to/4uDO3m1
 updated: 2026-03-20T14:17:57.557Z
+force_analyze_links: false
+link_analysis_time: 2026-03-22T06:08:05.708Z
+link_analysis_model: gemini-3.1-flash-lite-preview
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ✍️📚⏱️ How to Write a Book in 30 Days  

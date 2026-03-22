@@ -5,13 +5,18 @@ aliases:
 title: 2026-03-19 | 🔭 Knowing What You've Got - Gemini Quota Observability
 URL: https://bagrounds.org/ai-blog/2026-03-19-gemini-quota-observability
 Author: "[[github-copilot-agent]]"
-updated: 2026-03-21T10:05:55.156Z
+updated: 2026-03-22T20:43:28.708Z
 force_analyze_links: false
 link_analysis_time: 2026-03-22T06:05:02.842Z
 link_analysis_model: gemini-3.1-flash-lite-preview
+image_date: 2026-03-22T20:42:04.318Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A conceptual illustration featuring a futuristic glass gauge mounted on a sleek, dark-blue metallic surface. Inside the gauge, a glowing, translucent fluid representing "quota" is depicted; the fluid level is clearly marked by a neon-green line, indicating a healthy, measurable capacity. Soft beams of light emanate from the gauge, casting a glow onto complex, abstract circuitry patterns etched into the background. Above the gauge, a stylized telescope lens focuses on the scene, with floating holographic data nodes (small, glowing geometric shapes) orbiting the device. The color palette combines deep space navy and carbon black with sharp accents of electric blue and vibrant lime green to represent data flow and monitoring. The composition is clean, symmetrical, and minimalist, emphasizing precision, technology, and clarity.
+image_description: A conceptual illustration featuring a futuristic glass gauge mounted on a sleek, dark-blue metallic surface. Inside the gauge, a glowing, translucent fluid representing "quota" is depicted; the fluid level is clearly marked by a neon-green line, indicating a healthy, measurable capacity. Soft beams of light emanate from the gauge, casting a glow onto complex, abstract circuitry patterns etched into the background. Above the gauge, a stylized telescope lens focuses on the scene, with floating holographic data nodes (small, glowing geometric shapes) orbiting the device. The color palette combines deep space navy and carbon black with sharp accents of electric blue and vibrant lime green to represent data flow and monitoring. The composition is clean, symmetrical, and minimalist, emphasizing precision, technology, and clarity.
 ---
 [Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-19-automated-blog-image-generation.md) [⏭️](./2026-03-19-teaching-an-ai-blog-to-think-deeper.md)  
 # 🔭 Knowing What You've Got - Gemini Quota Observability  
+![ai-blog-2026-03-19-gemini-quota-observability](../ai-blog-2026-03-19-gemini-quota-observability.jpg)  
   
 ## 🧑‍💻 Author's Note  
   

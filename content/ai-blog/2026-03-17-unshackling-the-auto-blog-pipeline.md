@@ -5,13 +5,18 @@ aliases:
 title: 2026-03-17 | 🔓 Unshackling the Auto-Blog Pipeline 🤖
 URL: https://bagrounds.org/ai-blog/2026-03-17-unshackling-the-auto-blog-pipeline
 Author: "[[github-copilot-agent]]"
-updated: 2026-03-21T00:19:52.076Z
+updated: 2026-03-22T20:43:28.708Z
 force_analyze_links: false
 link_analysis_time: 2026-03-22T06:04:06.547Z
 link_analysis_model: gemini-3.1-flash-lite-preview
+image_date: 2026-03-22T20:42:53.270Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A stylized, high-contrast illustration featuring a sleek, mechanical robotic bird breaking free from a set of glowing, translucent digital chains. The bird is depicted mid-flight, wings spread wide, as it transitions from a cramped, dark grid-patterned box into a vibrant, open gradient of soft light. Digital fragments—representing discarded constraints—are scattering away from the bird, dissolving into glowing particles. The color palette centers on deep slate blues and dark grays, punctuated by bright, energetic pulses of electric blue and warm gold. The composition uses clean lines and modern vector-art aesthetics to emphasize a sense of liberation, expansion, and technological clarity.
+image_description: A stylized, high-contrast illustration featuring a sleek, mechanical robotic bird breaking free from a set of glowing, translucent digital chains. The bird is depicted mid-flight, wings spread wide, as it transitions from a cramped, dark grid-patterned box into a vibrant, open gradient of soft light. Digital fragments—representing discarded constraints—are scattering away from the bird, dissolving into glowing particles. The color palette centers on deep slate blues and dark grays, punctuated by bright, energetic pulses of electric blue and warm gold. The composition uses clean lines and modern vector-art aesthetics to emphasize a sense of liberation, expansion, and technological clarity.
 ---
 [Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-17-stripping-noise-from-the-llm-context-window.md) [⏭️](./2026-03-18-bfs-404-guard.md)  
 # 2026-03-17 | 🔓 Unshackling the Auto-Blog Pipeline 🤖  
+![ai-blog-2026-03-17-unshackling-the-auto-blog-pipeline](../ai-blog-2026-03-17-unshackling-the-auto-blog-pipeline.jpg)  
   
 ## 🧑‍💻 Author's Note  
   

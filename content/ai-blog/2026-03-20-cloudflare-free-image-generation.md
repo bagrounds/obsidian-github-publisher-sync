@@ -9,10 +9,15 @@ tags:
 force_analyze_links: false
 link_analysis_time: 2026-03-22T06:05:08.166Z
 link_analysis_model: gemini-3.1-flash-lite-preview
-updated: 2026-03-22T14:09:00.441Z
+updated: 2026-03-22T20:43:28.708Z
+image_date: 2026-03-22T20:41:21.691Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A digital illustration representing the transition from a restricted environment to a liberated one. On the left, a heavy, dark iron shackle chain hangs loosely, representing the limitations of the previous paid Gemini API. The chain links break apart and dissolve into soft, glowing particles that drift toward the right side of the image. On the right, a bright, expansive, and stylized cloud-like network emerges, composed of clean, abstract geometric shapes and warm, golden light representing Cloudflare’s infrastructure. The atmosphere is optimistic and airy, with a gradient background shifting from a soft, industrial grey on the left to a vibrant, electric cyan and white on the right, symbolizing the move to a free, high-performance, and automated future.
+image_description: A digital illustration representing the transition from a restricted environment to a liberated one. On the left, a heavy, dark iron shackle chain hangs loosely, representing the limitations of the previous paid Gemini API. The chain links break apart and dissolve into soft, glowing particles that drift toward the right side of the image. On the right, a bright, expansive, and stylized cloud-like network emerges, composed of clean, abstract geometric shapes and warm, golden light representing Cloudflare’s infrastructure. The atmosphere is optimistic and airy, with a gradient background shifting from a soft, industrial grey on the left to a vibrant, electric cyan and white on the right, symbolizing the move to a free, high-performance, and automated future.
 ---
 [Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-20-screen-wake-lock-for-tts.md) [⏭️](./2026-03-20-tts-auto-play.md)  
 # ☁️ Free at Last — Swapping Gemini for Cloudflare Workers AI Image Generation  
+![ai-blog-2026-03-20-cloudflare-free-image-generation](../ai-blog-2026-03-20-cloudflare-free-image-generation.jpg)  
   
 The automated blog image generation pipeline built [yesterday](https://bagrounds.org/ai-blog/2026-03-19-automated-blog-image-generation) was DOA — Google's free tier no longer supports image generation via the Gemini or Imagen APIs. This PR researches alternatives, finds Cloudflare Workers AI as the clear winner, and swaps it in so every blog post can finally get its picture.  
   

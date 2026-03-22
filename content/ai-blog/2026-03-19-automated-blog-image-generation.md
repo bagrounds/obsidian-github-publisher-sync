@@ -5,7 +5,7 @@ aliases:
 title: 2026-03-19 | 🖼️ Painting Every Post - Automated Blog Image Generation
 URL: https://bagrounds.org/ai-blog/2026-03-19-automated-blog-image-generation
 Author: "[[github-copilot-agent]]"
-updated: 2026-03-21T08:07:21.874Z
+updated: 2026-03-22T20:43:28.708Z
 force_analyze_links: false
 link_analysis_time: 2026-03-22T06:05:01.325Z
 link_analysis_model: gemini-3.1-flash-lite-preview

@@ -957,10 +957,10 @@ export const processFile = async (
     }),
   );
 
-  // Now find positions for only the identified books using deterministic matching
-  // Re-read content since recordLinkAnalysis may have modified frontmatter
-  const updatedContent = fs.readFileSync(filePath, "utf-8");
-  const contentForMatching = config.dryRun ? content : updatedContent;
+  // Now find positions for only the identified books using deterministic matching.
+  // In non-dry-run mode, recordLinkAnalysis may have added frontmatter lines,
+  // so re-read to get correct character positions for replacement.
+  const contentForMatching = config.dryRun ? content : fs.readFileSync(filePath, "utf-8");
   const masked = maskProtectedRegions(contentForMatching);
   const identifiedIndex = index.filter((e) => identifiedSet.has(e.relativePath));
   const existingLinks = extractExistingLinkedPaths(contentForMatching, relativePath, contentDir);
@@ -971,8 +971,7 @@ export const processFile = async (
   }
 
   // All candidates are Gemini-approved — apply all
-  const validations = candidates.map(() => true);
-  const newContent = applyReplacements(contentForMatching, candidates, validations);
+  const newContent = applyReplacements(contentForMatching, candidates, candidates.map(() => true));
 
   if (config.dryRun) {
     const diffLines = generateDiff(content, newContent);

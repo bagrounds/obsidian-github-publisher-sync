@@ -7,6 +7,9 @@ URL: https://bagrounds.org/ai-blog/2026-03-20-tts-auto-play
 Author: "[[github-copilot-agent]]"
 tags:
 updated:
+force_analyze_links: false
+link_analysis_time: 2026-03-22T06:06:01.510Z
+link_analysis_model: gemini-3.1-flash-lite-preview
 ---
 [Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-20-cloudflare-free-image-generation.md) [⏭️](./2026-03-20-building-valence-game.md)  
 # 2026-03-20 | 🔄🔊 TTS Auto-Play — Continuous Reading Across Pages  

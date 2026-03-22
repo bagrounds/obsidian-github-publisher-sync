@@ -249,6 +249,35 @@ export const isQuotaError = (error: unknown): boolean => {
   );
 };
 
+export const isDailyQuotaError = (error: unknown): boolean => {
+  if (!error || typeof error !== "object") return false;
+  const message = String((error as { message?: string }).message ?? "");
+  return (
+    message.includes("quota") &&
+    (message.includes("daily") ||
+     message.includes("per day") ||
+     message.includes("PerDay"))
+  );
+};
+
+export const parseRetryDelay = (error: unknown): number | null => {
+  if (!error || typeof error !== "object") return null;
+  const message = String((error as { message?: string }).message ?? "");
+
+  const retryInMatch = message.match(/retry\s+in\s+(\d+(?:\.\d+)?)\s*s/i);
+  if (retryInMatch) return Math.ceil(parseFloat(retryInMatch[1] ?? "0") * 1000);
+
+  const delayMatch = message.match(/retryDelay["\s:]*["']?(\d+(?:\.\d+)?)\s*s/i);
+  if (delayMatch) return Math.ceil(parseFloat(delayMatch[1] ?? "0") * 1000);
+
+  return null;
+};
+
+const DEFAULT_BACKOFF_MS = 5_000;
+const MAX_BACKOFF_MS = 60_000;
+const MAX_RETRIES = 3;
+const DEFAULT_MIN_DELAY_MS = 4_000;
+
 export const isImagenModel = (model: string): boolean =>
   model.startsWith("imagen-");
 
@@ -489,9 +518,12 @@ export const processNote = async (
     return { skipped: true };
   }
 
-  const prompt = describePrompt
-    ? await describePrompt(content)
-    : buildImagePrompt(content);
+  const cachedDescription = extractFrontmatterValue(content, "image_description");
+  const prompt = cachedDescription
+    ? cachedDescription
+    : describePrompt
+      ? await describePrompt(content)
+      : buildImagePrompt(content);
   const { data, mimeType } = await generate(apiKey, model, prompt);
 
   const extension = mimeTypeToExtension(mimeType);
@@ -501,12 +533,17 @@ export const processNote = async (
   fs.mkdirSync(attachmentsDir, { recursive: true });
   fs.writeFileSync(imagePath, data);
 
-  let updatedContent = insertImageEmbed(content, imageName);
-  updatedContent = updateFrontmatterFields(updatedContent, {
+  const metadata: Record<string, string> = {
     image_date: new Date().toISOString(),
     image_model: model,
     image_prompt: prompt,
-  });
+  };
+  if (!cachedDescription && describePrompt) {
+    metadata.image_description = prompt;
+  }
+
+  let updatedContent = insertImageEmbed(content, imageName);
+  updatedContent = updateFrontmatterFields(updatedContent, metadata);
   fs.writeFileSync(notePath, updatedContent, "utf-8");
 
   return { skipped: false, imagePath, imageName, imagePrompt: prompt };
@@ -556,7 +593,113 @@ export interface BackfillConfig {
   readonly generate?: ImageGenerator;
   readonly describePrompt?: PromptDescriber;
   readonly onProgress?: (event: Record<string, unknown>) => void;
+  readonly minDelayMs?: number;
+  readonly sleep?: (ms: number) => Promise<void>;
 }
+
+interface BackfillCandidate {
+  readonly filePath: string;
+  readonly dirPath: string;
+  readonly dirId: string;
+  readonly filename: string;
+  readonly date: string;
+  readonly needsRegeneration: boolean;
+}
+
+const defaultSleep = (ms: number): Promise<void> =>
+  new Promise((resolve) => setTimeout(resolve, ms));
+
+const collectCandidates = (
+  directories: readonly { readonly path: string; readonly id: string }[],
+  today: string,
+  onProgress: (event: Record<string, unknown>) => void,
+): {
+  readonly candidates: readonly BackfillCandidate[];
+  readonly dirFiles: ReadonlyMap<string, readonly string[]>;
+} => {
+  const candidates: BackfillCandidate[] = [];
+  const dirFiles = new Map<string, readonly string[]>();
+
+  for (const { path: dirPath, id } of directories) {
+    if (!fs.existsSync(dirPath)) {
+      onProgress({ event: "directory_missing", directory: id });
+      continue;
+    }
+
+    const files = listNotesNewestFirst(dirPath);
+    dirFiles.set(id, files.map((f) => path.join(dirPath, f)));
+
+    for (const filename of files) {
+      const date = extractDateFromFilename(filename);
+
+      if (id === "reflections" && date > today) {
+        onProgress({ event: "skip_future_reflection", filename, date, today });
+        continue;
+      }
+
+      const filePath = path.join(dirPath, filename);
+      const content = fs.readFileSync(filePath, "utf-8");
+      const needsRegeneration = shouldRegenerateImage(content);
+
+      if (hasEmbeddedImage(content) && !needsRegeneration) {
+        onProgress({ event: "already_has_image", directory: id, filename });
+        continue;
+      }
+
+      candidates.push({ filePath, dirPath, dirId: id, filename, date, needsRegeneration });
+    }
+  }
+
+  const sorted = [...candidates].sort((a, b) => b.date.localeCompare(a.date));
+  return { candidates: sorted, dirFiles };
+};
+
+const buildChain = (
+  candidate: BackfillCandidate,
+  dirFiles: ReadonlyMap<string, readonly string[]>,
+): readonly string[] => {
+  const allFiles = dirFiles.get(candidate.dirId) ?? [];
+  const candidateIndex = allFiles.indexOf(candidate.filePath);
+  return candidateIndex >= 0 ? allFiles.slice(0, candidateIndex + 1) : [candidate.filePath];
+};
+
+const retryOnRateLimit = async (
+  fn: () => Promise<ImageGenerationResult>,
+  sleepFn: (ms: number) => Promise<void>,
+  onProgress: (event: Record<string, unknown>) => void,
+  context: Record<string, unknown>,
+): Promise<ImageGenerationResult> => {
+  let backoffMs = DEFAULT_BACKOFF_MS;
+
+  for (let attempt = 0; attempt <= MAX_RETRIES; attempt++) {
+    try {
+      return await fn();
+    } catch (error) {
+      if (isDailyQuotaError(error)) {
+        throw error;
+      }
+
+      if (isQuotaError(error) && attempt < MAX_RETRIES) {
+        const serverDelay = parseRetryDelay(error);
+        const waitMs = serverDelay ?? backoffMs;
+        onProgress({
+          event: "rate_limit_retry",
+          attempt: attempt + 1,
+          maxRetries: MAX_RETRIES,
+          waitMs,
+          ...context,
+        });
+        await sleepFn(waitMs);
+        backoffMs = Math.min(backoffMs * 2, MAX_BACKOFF_MS);
+        continue;
+      }
+
+      throw error;
+    }
+  }
+
+  throw new Error("Exceeded maximum retries");
+};
 
 export const backfillImages = async (
   config: BackfillConfig,
@@ -569,92 +712,81 @@ export const backfillImages = async (
     generate = generateImageWithGemini,
     describePrompt,
     onProgress = () => {},
+    minDelayMs = DEFAULT_MIN_DELAY_MS,
+    sleep: sleepFn = defaultSleep,
   } = config;
 
   const today = todayPacific();
   let imagesGenerated = 0;
   let filesUpdated = 0;
 
-  for (const { path: dirPath, id } of directories) {
-    if (!fs.existsSync(dirPath)) {
-      onProgress({ event: "directory_missing", directory: id });
-      continue;
-    }
+  const { candidates, dirFiles } = collectCandidates(directories, today, onProgress);
 
-    const files = listNotesNewestFirst(dirPath);
-    const chain: string[] = [];
+  for (const candidate of candidates) {
+    onProgress({
+      event: candidate.needsRegeneration ? "regenerating_image" : "generating_image",
+      directory: candidate.dirId,
+      filename: candidate.filename,
+    });
 
-    for (const filename of files) {
-      const date = extractDateFromFilename(filename);
+    try {
+      const result = await retryOnRateLimit(
+        () => processNote(candidate.filePath, attachmentsDir, apiKey, model, generate, describePrompt),
+        sleepFn,
+        onProgress,
+        { directory: candidate.dirId, filename: candidate.filename },
+      );
 
-      if (id === "reflections" && date > today) {
-        onProgress({ event: "skip_future_reflection", filename, date, today });
-        continue;
-      }
+      if (!result.skipped) {
+        imagesGenerated++;
+        onProgress({
+          event: "image_generated",
+          directory: candidate.dirId,
+          filename: candidate.filename,
+          imageName: result.imageName,
+        });
 
-      const filePath = path.join(dirPath, filename);
-      chain.push(filePath);
-
-      const content = fs.readFileSync(filePath, "utf-8");
-      const needsRegeneration = shouldRegenerateImage(content);
-      if (hasEmbeddedImage(content) && !needsRegeneration) {
-        onProgress({ event: "already_has_image", directory: id, filename });
-        continue;
-      }
-
-      onProgress({
-        event: needsRegeneration ? "regenerating_image" : "generating_image",
-        directory: id,
-        filename,
-      });
-
-      try {
-        const result = await processNote(
-          filePath,
-          attachmentsDir,
-          apiKey,
-          model,
-          generate,
-          describePrompt,
-        );
-
-        if (!result.skipped) {
-          imagesGenerated++;
-          onProgress({
-            event: "image_generated",
-            directory: id,
-            filename,
-            imageName: result.imageName,
-          });
-
-          const timestamp = new Date().toISOString();
-          for (const chainFile of chain) {
-            updateFrontmatterTimestamp(chainFile, timestamp);
-            filesUpdated++;
-          }
-          onProgress({
-            event: "chain_updated",
-            directory: id,
-            chainLength: chain.length,
-          });
-        }
-      } catch (error) {
-        if (isQuotaError(error)) {
-          onProgress({
-            event: "quota_exhausted",
-            directory: id,
-            filename,
-            imagesGenerated,
-          });
-          return { imagesGenerated, filesUpdated, stoppedByQuota: true };
+        const chain = buildChain(candidate, dirFiles);
+        const timestamp = new Date().toISOString();
+        for (const chainFile of chain) {
+          updateFrontmatterTimestamp(chainFile, timestamp);
+          filesUpdated++;
         }
         onProgress({
-          event: "image_generation_failed",
-          directory: id,
-          filename,
-          error: error instanceof Error ? error.message : String(error),
+          event: "chain_updated",
+          directory: candidate.dirId,
+          chainLength: chain.length,
         });
+
+        if (minDelayMs > 0) {
+          await sleepFn(minDelayMs);
+        }
       }
+    } catch (error) {
+      if (isDailyQuotaError(error)) {
+        onProgress({
+          event: "daily_quota_exhausted",
+          directory: candidate.dirId,
+          filename: candidate.filename,
+          imagesGenerated,
+        });
+        return { imagesGenerated, filesUpdated, stoppedByQuota: true };
+      }
+      if (isQuotaError(error)) {
+        onProgress({
+          event: "quota_exhausted",
+          directory: candidate.dirId,
+          filename: candidate.filename,
+          imagesGenerated,
+        });
+        return { imagesGenerated, filesUpdated, stoppedByQuota: true };
+      }
+      onProgress({
+        event: "image_generation_failed",
+        directory: candidate.dirId,
+        filename: candidate.filename,
+        error: error instanceof Error ? error.message : String(error),
+      });
     }
   }
 

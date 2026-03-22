@@ -8,6 +8,9 @@ Author:
 tags:
 CTA: 🚀 Explore the unknown.
 affiliate link: https://amzn.to/49ODuEM
+force_analyze_links: false
+link_analysis_time: 2026-03-22T06:06:10.546Z
+link_analysis_model: gemini-3.1-flash-lite-preview
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ☄️🧑‍🚀🙏🌍 Project Hail Mary  

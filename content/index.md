@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-03-22T16:13:41-07:00
+updated: 2026-03-22T16:46:21-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -50,17 +50,17 @@ updated: 2026-03-22T16:13:41-07:00
 - [🧬 Valence](./games/valence.md)  
   
   
-## [📚 Books](./books/index.md) (957)  
-- [💾⬆️🛡️ Designing Data-Intensive Applications: The Big Ideas Behind Reliable, Scalable, and Maintainable Systems](./books/designing-data-intensive-applications.md)  
-- [👶🤔❤️ The Philosophical Baby: What Children's Minds Tell Us About Truth, Love, and the Meaning of Life](./books/the-philosophical-baby-what-childrens-minds-tell-us-about-truth-love-and-the-meaning-of-life.md)  
-- [😇😈 Behave: The Biology of Humans at Our Best and Worst](./books/behave-the-biology-of-humans-at-our-best-and-worst.md)  
-- [📜🌍⏳ Sapiens: A Brief History of Humankind](./books/sapiens-a-brief-history-of-humankind.md)  
-- [✍️📚⏱️ How to Write a Book in 30 Days](./books/how-to-write-a-book-in-30-days.md)  
-- [⚔️🤫 The Twilight War: The Secret History of America's Thirty-Year Conflict with Iran](./books/the-twilight-war-the-secret-history-of-americas-thirty-year-conflict-with-iran.md)  
-- [🥀 Twilight of Democracy: 🐍 The Seductive Lure of Authoritarianism](./books/twilight-of-democracy.md)  
-- [🙅‍♀️👹 It Can't Happen Here](./books/it-cant-happen-here.md)  
-- [👑🚫📜2️⃣0️⃣ On Tyranny: Twenty Lessons from the Twentieth Century](./books/on-tyranny.md)  
-- [🗳️🏛️☠️ How Democracies Die](./books/how-democracies-die.md)  
+## [📚 Books](./books/index.md) (958)  
+- [👂📱🐾🌿 The Sounds of Life: How Digital Technology Is Bringing Us Closer to the Worlds of Animals and Plants](./books/the-sounds-of-life-how-digital-technology-is-bringing-us-closer-to-the-worlds-of-animals-and-plants.md)  
+- [🏍️🧘❓ Zen and the Art of Motorcycle Maintenance: An Inquiry into Values](./books/zen-and-the-art-of-motorcycle-maintenance-an-inquiry-into-values.md)  
+- [📈⚙️♾️ The Goal: A Process of Ongoing Improvement](./books/the-goal.md)  
+- [🇯🇵⚙️📈💯 The Toyota Way: 14 Management Principles from the World's Greatest Manufacturer](./books/the-toyota-way.md)  
+- [📈🏛️🏫 The New Economics: For Industry, Government, Education](./books/the-new-economics.md)  
+- [📉⬆️ Out Of The Crisis](./books/out-of-the-crisis.md)  
+- [🔁🤪 Catch-22](./books/catch-22.md)  
+- [⚡🚫💭 Blink: The Power of Thinking Without Thinking](./books/blink-the-power-of-thinking-without-thinking.md)  
+- [🔮🤷🏼‍♀️🤪 Predictably Irrational: The Hidden Forces That Shape Our Decisions](./books/predictably-irrational.md)  
+- [🪖🎨 The War of Art: Break Through the Blocks and Win Your Inner Creative Battles](./books/the-war-of-art.md)  
   
   
 ## [📺 Videos](./videos/index.md) (701)  
@@ -101,17 +101,17 @@ updated: 2026-03-22T16:13:41-07:00
   
   
 ## [💾 Software](./software/index.md) (31)  
-- [💾✍️🌋⚫️ Obsidian](./software/obsidian.md)  
 - [🤖♊ Gemini](./software/gemini.md)  
+- [💾✍️🌋⚫️ Obsidian](./software/obsidian.md)  
 - [☁️🛡️ Cloudflare Tunnel (cloudflared)](./software/cloudflare-tunnel.md)  
 - [💻🔓 OpenCode](./software/opencode.md)  
 - [👽🦺 Zod](./software/zod.md)  
   
   
 ## [👥 People](./people/index.md) (18)  
+- [🤔⚙️🗣️🤝💡🧩🔭📚👴 Russell Ackoff](./people/russell-ackoff.md)  
+- [📈📊⚙️🎯 W Edwards Deming](./people/w-edwards-deming.md)  
 - [🤖🧠💻 Andrej Karpathy](./people/andrej-karpathy.md)  
-- [⚔️🗡️🩸 Joe Abercrombie](./people/joe-abercrombie.md)  
-- [👨‍🏫📉💵 Warren Mosler](./people/warren-mosler.md)  
   
   
 ## [🛍️ Products](./products/index.md) (6)  

@@ -38,6 +38,7 @@ import {
   recordLinkAnalysis,
   alreadyAnalyzed,
   extractBody,
+  extractJsonArray,
   isRateLimitError,
   isDailyQuotaError,
   parseRetryDelay,
@@ -1155,6 +1156,42 @@ describe("extractBody", () => {
   });
 });
 
+// --- extractJsonArray ---
+
+describe("extractJsonArray", () => {
+  it("parses clean JSON array", () => {
+    assert.deepEqual(extractJsonArray('["books/foo.md"]'), ["books/foo.md"]);
+  });
+
+  it("parses empty array", () => {
+    assert.deepEqual(extractJsonArray("[]"), []);
+  });
+
+  it("extracts array from markdown code fence", () => {
+    const text = '```json\n["books/foo.md"]\n```';
+    assert.deepEqual(extractJsonArray(text), ["books/foo.md"]);
+  });
+
+  it("extracts array when trailing text follows", () => {
+    const text = '["books/foo.md"]\nThis is some explanation text.';
+    assert.deepEqual(extractJsonArray(text), ["books/foo.md"]);
+  });
+
+  it("extracts array when preceded by text", () => {
+    const text = 'Here are the books:\n["books/foo.md", "books/bar.md"]';
+    assert.deepEqual(extractJsonArray(text), ["books/foo.md", "books/bar.md"]);
+  });
+
+  it("throws for text with no JSON array", () => {
+    assert.throws(() => extractJsonArray("No JSON here at all"), /No JSON array found/);
+  });
+
+  it("handles code fence without json tag", () => {
+    const text = '```\n["books/foo.md"]\n```';
+    assert.deepEqual(extractJsonArray(text), ["books/foo.md"]);
+  });
+});
+
 // --- isRateLimitError ---
 
 describe("isRateLimitError", () => {
@@ -1319,28 +1356,44 @@ describe("recordLinkAnalysis", () => {
     assert.ok(content.includes("link_analysis_model: gemini-3.1-flash-lite-preview"));
     assert.ok(content.includes("link_analysis_time: 2026-03-22T00:00:00.000Z"));
   });
+
+  it("clears force_analyze_links after recording analysis", () => {
+    const filePath = path.join(tmpDir.path, "test.md");
+    fs.writeFileSync(filePath, "---\ntitle: Test\nforce_analyze_links: true\n---\nBody");
+
+    recordLinkAnalysis(filePath, "gemini-3.1-flash-lite-preview", "2026-03-22T00:00:00.000Z");
+
+    const content = fs.readFileSync(filePath, "utf-8");
+    assert.ok(content.includes("force_analyze_links: false"));
+    assert.ok(content.includes("link_analysis_model: gemini-3.1-flash-lite-preview"));
+  });
 });
 
 // --- alreadyAnalyzed ---
 
 describe("alreadyAnalyzed", () => {
-  it("returns true when model matches", () => {
+  it("returns true when link_analysis_model is present", () => {
     const content = "---\ntitle: Test\nlink_analysis_model: gemini-3.1-flash-lite-preview\n---\nBody";
-    assert.ok(alreadyAnalyzed(content, "gemini-3.1-flash-lite-preview"));
+    assert.ok(alreadyAnalyzed(content));
   });
 
-  it("returns false when model differs", () => {
+  it("returns true even when model differs (model is informational only)", () => {
     const content = "---\ntitle: Test\nlink_analysis_model: old-model\n---\nBody";
-    assert.ok(!alreadyAnalyzed(content, "gemini-3.1-flash-lite-preview"));
+    assert.ok(alreadyAnalyzed(content));
+  });
+
+  it("returns false when force_analyze_links is true", () => {
+    const content = "---\ntitle: Test\nlink_analysis_model: gemini-3.1-flash-lite-preview\nforce_analyze_links: true\n---\nBody";
+    assert.ok(!alreadyAnalyzed(content));
   });
 
   it("returns false when no link_analysis_model field", () => {
     const content = "---\ntitle: Test\n---\nBody";
-    assert.ok(!alreadyAnalyzed(content, "gemini-3.1-flash-lite-preview"));
+    assert.ok(!alreadyAnalyzed(content));
   });
 
   it("returns false for content without frontmatter", () => {
     const content = "Body only";
-    assert.ok(!alreadyAnalyzed(content, "gemini-3.1-flash-lite-preview"));
+    assert.ok(!alreadyAnalyzed(content));
   });
 });

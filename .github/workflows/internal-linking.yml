@@ -54,6 +54,24 @@ jobs:
           key: obsidian-vault-${{ github.run_id }}
           restore-keys: obsidian-vault-
 
+      - name: Pull Obsidian Vault
+        id: vault
+        env:
+          OBSIDIAN_AUTH_TOKEN: ${{ secrets.OBSIDIAN_AUTH_TOKEN }}
+          OBSIDIAN_VAULT_NAME: ${{ secrets.OBSIDIAN_VAULT_NAME }}
+          OBSIDIAN_VAULT_CACHE_DIR: /tmp/obsidian-vault-cache
+        run: |
+          VAULT_DIR=$(npx tsx -e "
+            const { syncObsidianVault } = await import('./scripts/lib/obsidian-sync.ts');
+            const dir = await syncObsidianVault({
+              authToken: process.env.OBSIDIAN_AUTH_TOKEN,
+              vaultName: process.env.OBSIDIAN_VAULT_NAME,
+            });
+            process.stdout.write(dir);
+          ")
+          echo "vault_dir=$VAULT_DIR" >> "$GITHUB_OUTPUT"
+          echo "📂 Vault pulled to: $VAULT_DIR"
+
       - name: Run Internal Linking
         id: linking
         env:
@@ -68,26 +86,27 @@ jobs:
 
           npx tsx scripts/internal-linking.ts \
             --max-files "$MAX_FILES" \
+            --content-dir "${{ steps.vault.outputs.vault_dir }}" \
             $DRY_RUN_FLAG \
             | tee /tmp/linking-output.log
 
-          # Extract modified files from output
+          # Check if any files were modified
           MODIFIED=$(grep '"event":"modified_files"' /tmp/linking-output.log | tail -1 || true)
           if [ -n "$MODIFIED" ]; then
             echo "has_changes=true" >> "$GITHUB_OUTPUT"
-            echo "$MODIFIED" | jq -r '.files[]' > /tmp/modified-files.txt
           else
             echo "has_changes=false" >> "$GITHUB_OUTPUT"
           fi
 
-      - name: Sync Modified Files to Obsidian Vault
+      - name: Push Obsidian Vault
         if: ${{ steps.linking.outputs.has_changes == 'true' && github.event.inputs.dry_run != 'true' }}
         env:
           OBSIDIAN_AUTH_TOKEN: ${{ secrets.OBSIDIAN_AUTH_TOKEN }}
-          OBSIDIAN_VAULT_NAME: ${{ secrets.OBSIDIAN_VAULT_NAME }}
-          OBSIDIAN_VAULT_CACHE_DIR: /tmp/obsidian-vault-cache
         run: |
-          while IFS= read -r file; do
-            echo "📝 Syncing: $file"
-            npx tsx scripts/sync-file-to-obsidian.ts "content/$file" "$file"
-          done < /tmp/modified-files.txt
+          npx tsx -e "
+            const { pushObsidianVault } = await import('./scripts/lib/obsidian-sync.ts');
+            await pushObsidianVault('${{ steps.vault.outputs.vault_dir }}', {
+              authToken: process.env.OBSIDIAN_AUTH_TOKEN,
+            });
+          "
+          echo "📤 Vault pushed with link changes"

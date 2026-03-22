@@ -114,6 +114,44 @@ export const parseRetryDelay = (error: unknown): number | null => {
   return null;
 };
 
+/**
+ * Extract a JSON array from a potentially messy Gemini response.
+ *
+ * Gemini sometimes wraps JSON in markdown code fences, appends explanation text,
+ * or returns multi-line output even when responseMimeType is "application/json".
+ * This finds the outermost [...] array in the text and parses only that.
+ */
+export const extractJsonArray = (text: string): unknown => {
+  // First try: direct parse (works for clean responses)
+  try {
+    return JSON.parse(text);
+  } catch {
+    // Continue to extraction logic
+  }
+
+  // Strip markdown code fences if present
+  const stripped = text
+    .replace(/^```(?:json)?\s*/i, "")
+    .replace(/\s*```\s*$/, "")
+    .trim();
+
+  try {
+    return JSON.parse(stripped);
+  } catch {
+    // Continue to bracket extraction
+  }
+
+  // Find the first '[' and matching last ']' to extract just the array
+  const start = stripped.indexOf("[");
+  const end = stripped.lastIndexOf("]");
+  if (start >= 0 && end > start) {
+    return JSON.parse(stripped.substring(start, end + 1));
+  }
+
+  // Give up: throw with the original text for debugging
+  throw new SyntaxError(`No JSON array found in response: ${text.substring(0, 200)}`);
+};
+
 /** Sleep for a given number of milliseconds */
 const sleep = (ms: number): Promise<void> =>
   new Promise((resolve) => setTimeout(resolve, ms));
@@ -150,6 +188,8 @@ export interface FileResult {
   readonly linksAdded: number;
   /** Whether the file content was modified */
   readonly modified: boolean;
+  /** Whether the file was skipped (already analyzed) */
+  readonly skipped: boolean;
 }
 
 /** Result of the full internal linking run */
@@ -160,6 +200,8 @@ export interface RunResult {
   readonly filesModified: number;
   /** Total links added across all files */
   readonly totalLinksAdded: number;
+  /** Files skipped due to existing frontmatter analysis */
+  readonly filesSkipped: number;
   /** Per-file results */
   readonly fileResults: readonly FileResult[];
 }
@@ -677,7 +719,7 @@ export const identifyBooksWithGemini = async (
       });
 
       const text = (result.text ?? "").trim();
-      const parsed = JSON.parse(text);
+      const parsed = extractJsonArray(text);
 
       if (
         !Array.isArray(parsed) ||
@@ -850,6 +892,7 @@ export const updateFrontmatterTimestamp = (
  * Record link analysis metadata in a file's frontmatter.
  * Tracks which model analyzed the file and when, enabling BFS to skip
  * already-analyzed files across sessions.
+ * Also clears force_analyze_links if it was set.
  */
 export const recordLinkAnalysis = (
   filePath: string,
@@ -859,18 +902,22 @@ export const recordLinkAnalysis = (
   updateFrontmatterFields(filePath, {
     link_analysis_model: model,
     link_analysis_time: timestamp,
+    force_analyze_links: "false",
   });
 
 /**
- * Check whether a file has already been analyzed for links by the given model.
- * Returns true if the file's frontmatter contains a matching link_analysis_model.
+ * Check whether a file has already been analyzed for links.
+ * Returns true if the file's frontmatter contains a link_analysis_model field
+ * AND force_analyze_links is not set to true.
+ * The model value is purely informational — changing models does NOT trigger re-analysis.
+ * Use `force_analyze_links: true` in frontmatter to request manual re-analysis.
  */
 export const alreadyAnalyzed = (
   content: string,
-  model: string,
 ): boolean => {
   const fm = parseFrontmatter(content);
-  return fm["link_analysis_model"] === model;
+  if (fm["force_analyze_links"] === "true") return false;
+  return fm["link_analysis_model"] !== undefined;
 };
 
 // --- File Processing ---
@@ -901,16 +948,15 @@ export const processFile = async (
   const filePath = path.join(contentDir, relativePath);
   const content = fs.readFileSync(filePath, "utf-8");
 
-  // Skip files already analyzed by the same model
-  if (alreadyAnalyzed(content, config.model)) {
+  // Skip files already analyzed (unless force_analyze_links is set)
+  if (alreadyAnalyzed(content)) {
     console.log(
       JSON.stringify({
         event: "skipped_already_analyzed",
         file: relativePath,
-        model: config.model,
       }),
     );
-    return { relativePath, linksAdded: 0, modified: false };
+    return { relativePath, linksAdded: 0, modified: false, skipped: true };
   }
 
   const body = extractBody(content);
@@ -927,7 +973,7 @@ export const processFile = async (
     if (!config.dryRun) {
       recordLinkAnalysis(filePath, config.model, new Date().toISOString());
     }
-    return { relativePath, linksAdded: 0, modified: false };
+    return { relativePath, linksAdded: 0, modified: false, skipped: false };
   }
 
   // Use Gemini to IDENTIFY which books are genuinely referenced
@@ -942,7 +988,7 @@ export const processFile = async (
   }
 
   if (identifiedPaths.length === 0) {
-    return { relativePath, linksAdded: 0, modified: false };
+    return { relativePath, linksAdded: 0, modified: false, skipped: false };
   }
 
   // Build a set of Gemini-identified books
@@ -967,24 +1013,26 @@ export const processFile = async (
   const candidates = findLinkCandidates(contentForMatching, masked, identifiedIndex, existingLinks, relativePath, true);
 
   if (candidates.length === 0) {
-    return { relativePath, linksAdded: 0, modified: false };
+    return { relativePath, linksAdded: 0, modified: false, skipped: false };
   }
 
   // All candidates are Gemini-approved — apply all
   const newContent = applyReplacements(contentForMatching, candidates, candidates.map(() => true));
 
-  if (config.dryRun) {
-    const diffLines = generateDiff(content, newContent);
-    if (diffLines.length > 0) {
-      console.log(
-        JSON.stringify({
-          event: "dry_run_diff",
-          file: relativePath,
-          diff: diffLines,
-        }),
-      );
-    }
-  } else {
+  // Log diffs for both dry runs and live runs
+  const diffLines = generateDiff(contentForMatching, newContent);
+  if (diffLines.length > 0) {
+    console.log(
+      JSON.stringify({
+        event: "diff",
+        file: relativePath,
+        dryRun: config.dryRun,
+        diff: diffLines,
+      }),
+    );
+  }
+
+  if (!config.dryRun) {
     fs.writeFileSync(filePath, newContent, "utf-8");
   }
 
@@ -1002,7 +1050,7 @@ export const processFile = async (
     }),
   );
 
-  return { relativePath, linksAdded: candidates.length, modified: true };
+  return { relativePath, linksAdded: candidates.length, modified: true, skipped: false };
 };
 
 // --- Orchestration ---
@@ -1041,22 +1089,6 @@ export const run = async (config: LinkingConfig): Promise<RunResult> => {
     }),
   );
 
-  // Update "updated" timestamps along the BFS path so Enveloppe can discover changes
-  const timestamp = new Date().toISOString();
-  if (!config.dryRun) {
-    filesToVisit.forEach((relativePath) => {
-      const filePath = path.join(config.contentDir, relativePath);
-      updateFrontmatterTimestamp(filePath, timestamp);
-    });
-    console.log(
-      JSON.stringify({
-        event: "timestamps_updated",
-        filesUpdated: filesToVisit.length,
-        timestamp,
-      }),
-    );
-  }
-
   // Process each file sequentially (to respect Gemini rate limits)
   // QuotaExhaustedError halts the pipeline immediately
   const fileResults: FileResult[] = [];
@@ -1081,19 +1113,23 @@ export const run = async (config: LinkingConfig): Promise<RunResult> => {
 
   const filesModified = fileResults.filter((r) => r.modified).length;
   const totalLinksAdded = fileResults.reduce((sum, r) => sum + r.linksAdded, 0);
+  const filesSkipped = fileResults.filter((r) => r.skipped).length;
 
   const runResult: RunResult = {
     filesVisited: filesToVisit.length,
     filesModified,
     totalLinksAdded,
+    filesSkipped,
     fileResults,
   };
 
   console.log(
     JSON.stringify({
       event: "internal_linking_complete",
-      ...runResult,
-      fileResults: undefined,
+      filesVisited: runResult.filesVisited,
+      filesModified: runResult.filesModified,
+      totalLinksAdded: runResult.totalLinksAdded,
+      filesSkipped: runResult.filesSkipped,
     }),
   );
 

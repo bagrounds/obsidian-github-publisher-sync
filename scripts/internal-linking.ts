@@ -3,11 +3,15 @@
  * Internal Linking CLI — BFS-driven wikilink insertion.
  *
  * Usage:
- *   npx tsx scripts/internal-linking.ts [--max-files N] [--dry-run] [--model MODEL]
+ *   npx tsx scripts/internal-linking.ts [--max-files N] [--dry-run] [--model MODEL] [--content-dir DIR]
  *
  * Environment:
- *   GEMINI_API_KEY   Optional. Gemini API key for AI validation of link candidates.
+ *   GEMINI_API_KEY   Optional. Gemini API key for AI identification of book references.
  *   LINKING_MODEL    Optional. Override the Gemini model (default: gemini-3.1-flash-lite-preview).
+ *
+ * The --content-dir flag specifies where to read/write content files. In production,
+ * this points to the Obsidian vault directory (pulled via obsidian-headless). For dry
+ * runs and local testing, it defaults to the repo's content/ directory.
  *
  * @module internal-linking-cli
  */
@@ -21,6 +25,7 @@ interface CliArgs {
   readonly maxFiles: number;
   readonly dryRun: boolean;
   readonly model: string;
+  readonly contentDir: string | undefined;
 }
 
 const parseArgs = (argv: readonly string[]): CliArgs => {
@@ -37,13 +42,16 @@ const parseArgs = (argv: readonly string[]): CliArgs => {
     flagValue("--model") ??
     process.env.LINKING_MODEL ??
     DEFAULT_LINKING_MODEL;
+  const contentDir = flagValue("--content-dir");
 
-  return { maxFiles: Number.isNaN(maxFiles) ? DEFAULT_MAX_FILES : maxFiles, dryRun, model };
+  return { maxFiles: Number.isNaN(maxFiles) ? DEFAULT_MAX_FILES : maxFiles, dryRun, model, contentDir };
 };
 
 const main = async (): Promise<void> => {
   const args = parseArgs(process.argv);
-  const contentDir = path.resolve(import.meta.dirname, "..", "content");
+  const contentDir = args.contentDir
+    ? path.resolve(args.contentDir)
+    : path.resolve(import.meta.dirname, "..", "content");
   const apiKey = process.env.GEMINI_API_KEY;
 
   const config: LinkingConfig = {
@@ -60,6 +68,7 @@ const main = async (): Promise<void> => {
       maxFiles: args.maxFiles,
       dryRun: args.dryRun,
       model: args.model,
+      contentDir,
       hasApiKey: !!apiKey,
     }),
   );
@@ -71,11 +80,12 @@ const main = async (): Promise<void> => {
       event: "cli_complete",
       filesVisited: result.filesVisited,
       filesModified: result.filesModified,
+      filesSkipped: result.filesSkipped,
       totalLinksAdded: result.totalLinksAdded,
     }),
   );
 
-  // Output modified files for downstream sync (one per line)
+  // Output modified files for downstream use
   const modifiedFiles = result.fileResults
     .filter((r) => r.modified)
     .map((r) => r.relativePath);

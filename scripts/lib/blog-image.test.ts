@@ -16,6 +16,8 @@ import {
   DEFAULT_DESCRIBER_MODEL,
   mimeTypeToExtension,
   isQuotaError,
+  isDailyQuotaError,
+  parseRetryDelay,
   processNote,
   isPostFile,
   extractDateFromFilename,
@@ -30,7 +32,7 @@ import {
   extractFrontmatterValue,
   shouldRegenerateImage,
   removeImageEmbed,
-  quoteYamlValue,
+  sanitizeForYaml,
   updateFrontmatterFields,
   makeGeminiDescriber,
   type ImageGenerator,
@@ -725,6 +727,7 @@ describe("backfillImages", () => {
       apiKey: "key",
       model: "model",
       generate: mockGenerate,
+      minDelayMs: 0,
     });
 
     assert.equal(result.imagesGenerated, 1);
@@ -745,6 +748,7 @@ describe("backfillImages", () => {
       apiKey: "key",
       model: "model",
       generate: mockGenerate,
+      minDelayMs: 0,
     });
 
     assert.equal(result.imagesGenerated, 0);
@@ -768,6 +772,8 @@ describe("backfillImages", () => {
       apiKey: "key",
       model: "model",
       generate: quotaGenerate,
+      minDelayMs: 0,
+      sleep: async () => {},
     });
 
     assert.equal(result.stoppedByQuota, true);
@@ -796,6 +802,7 @@ describe("backfillImages", () => {
       apiKey: "key",
       model: "model",
       generate: mockGenerate,
+      minDelayMs: 0,
     });
 
     const latestContent = fs.readFileSync(
@@ -857,6 +864,7 @@ describe("backfillImages", () => {
       apiKey: "key",
       model: "model",
       generate: failOnceGenerate,
+      minDelayMs: 0,
     });
 
     assert.equal(result.imagesGenerated, 1);
@@ -915,6 +923,18 @@ describe("updateFrontmatterTimestamp", () => {
     assert.doesNotThrow(() => {
       updateFrontmatterTimestamp("/nonexistent/file.md", "2026-03-19T12:00:00Z");
     });
+  });
+
+  it("updates empty updated field without creating duplicate", () => {
+    const filePath = path.join(tempDir, "test.md");
+    fs.writeFileSync(filePath, "---\ntitle: Test\nupdated:\n---\nBody\n");
+
+    updateFrontmatterTimestamp(filePath, "2026-03-19T12:00:00Z");
+
+    const content = fs.readFileSync(filePath, "utf-8");
+    assert.ok(content.includes("updated: 2026-03-19T12:00:00Z"));
+    const updatedCount = (content.match(/^updated:/gm) ?? []).length;
+    assert.equal(updatedCount, 1, "should have exactly one updated field");
   });
 });
 
@@ -1203,28 +1223,37 @@ describe("removeImageEmbed", () => {
   });
 });
 
-describe("quoteYamlValue", () => {
-  it("returns simple values unquoted", () => {
-    assert.equal(quoteYamlValue("simple value"), "simple value");
+describe("sanitizeForYaml", () => {
+  it("removes double quotes", () => {
+    assert.equal(sanitizeForYaml('A "magical" sunset'), "A magical sunset");
   });
 
-  it("quotes values with colons", () => {
-    assert.equal(quoteYamlValue("key: value"), '"key: value"');
+  it("removes single quotes", () => {
+    assert.equal(sanitizeForYaml("A 'golden' sunset"), "A golden sunset");
   });
 
-  it("quotes values with at signs", () => {
-    const result = quoteYamlValue("@cf/model/name");
-    assert.equal(result, '"@cf/model/name"');
+  it("removes backslashes", () => {
+    assert.equal(sanitizeForYaml("bright\\colors"), "brightcolors");
   });
 
-  it("escapes internal double quotes", () => {
-    const result = quoteYamlValue('said "hello"');
-    assert.equal(result, '"said \\"hello\\""');
+  it("removes backticks", () => {
+    assert.equal(sanitizeForYaml("a `code` block"), "a code block");
   });
 
   it("collapses newlines into spaces", () => {
-    const result = quoteYamlValue("line one\nline two");
-    assert.equal(result, "line one line two");
+    assert.equal(sanitizeForYaml("line one\nline two"), "line one line two");
+  });
+
+  it("collapses multiple spaces", () => {
+    assert.equal(sanitizeForYaml("too   many   spaces"), "too many spaces");
+  });
+
+  it("trims leading and trailing whitespace", () => {
+    assert.equal(sanitizeForYaml("  hello world  "), "hello world");
+  });
+
+  it("leaves clean text unchanged", () => {
+    assert.equal(sanitizeForYaml("A vibrant sunset over mountains"), "A vibrant sunset over mountains");
   });
 });
 
@@ -1257,7 +1286,7 @@ describe("updateFrontmatterFields", () => {
     assert.ok(result.startsWith("---\nimage_model: test-model\n---"));
   });
 
-  it("quotes values with special YAML characters", () => {
+  it("quotes values with special YAML characters via js-yaml", () => {
     const content = "---\ntitle: Test\n---\nBody";
     const result = updateFrontmatterFields(content, {
       image_model: "@cf/black-forest-labs/flux-1-schnell",
@@ -1270,8 +1299,49 @@ describe("updateFrontmatterFields", () => {
     const result = updateFrontmatterFields(content, {
       regenerate_image: "false",
     });
-    assert.ok(result.includes("regenerate_image: false"));
+    assert.ok(result.includes('regenerate_image: "false"'));
     assert.ok(!result.includes("regenerate_image: true"));
+  });
+
+  it("updates field that has no value (key with no space after colon)", () => {
+    const content = "---\ntitle: Test\nimage_prompt:\n---\nBody";
+    const result = updateFrontmatterFields(content, {
+      image_prompt: "new value",
+    });
+    assert.ok(result.includes("image_prompt: new value"));
+    const promptCount = (result.match(/^image_prompt:/gm) ?? []).length;
+    assert.equal(promptCount, 1, "should have exactly one image_prompt field");
+  });
+
+  it("preserves arrays in frontmatter", () => {
+    const content = "---\ntitle: Test\naliases:\n  - alias1\n  - alias2\n---\nBody";
+    const result = updateFrontmatterFields(content, {
+      image_model: "test-model",
+    });
+    assert.ok(result.includes("alias1"));
+    assert.ok(result.includes("alias2"));
+    assert.ok(result.includes("image_model: test-model"));
+  });
+
+  it("preserves empty tags field", () => {
+    const content = "---\ntitle: Test\ntags:\n---\nBody";
+    const result = updateFrontmatterFields(content, {
+      updated: "2026-03-22",
+    });
+    assert.ok(result.includes("tags:"));
+    assert.ok(result.includes("updated:"));
+    assert.ok(result.includes("2026-03-22"));
+    const tagsCount = (result.match(/^tags:/gm) ?? []).length;
+    assert.equal(tagsCount, 1, "should have exactly one tags field");
+  });
+
+  it("handles colons in values via proper YAML serialization", () => {
+    const content = "---\ntitle: Test\n---\nBody";
+    const result = updateFrontmatterFields(content, {
+      image_prompt: "A sunset: golden light over mountains",
+    });
+    assert.ok(result.includes("image_prompt:"));
+    assert.ok(result.includes("A sunset: golden light over mountains"));
   });
 });
 
@@ -1321,7 +1391,7 @@ describe("processNote with regeneration", () => {
 
     const updated = fs.readFileSync(notePath, "utf-8");
     assert.ok(updated.includes("![[attachments/chickie-loo-2026-03-22-test-post.jpg]]"));
-    assert.ok(updated.includes("regenerate_image: false"));
+    assert.equal(shouldRegenerateImage(updated), false);
     assert.ok(!fs.existsSync(path.join(attachmentsDir, "old-image.jpg")));
   });
 
@@ -1430,6 +1500,7 @@ describe("backfillImages with regeneration", () => {
       model: "model",
       generate: mockGenerate,
       onProgress: (e) => events.push(e),
+      minDelayMs: 0,
     });
 
     assert.equal(result.imagesGenerated, 1);
@@ -1457,6 +1528,7 @@ describe("backfillImages with regeneration", () => {
       model: "model",
       generate: mockGenerate,
       describePrompt: mockDescriber,
+      minDelayMs: 0,
     });
 
     assert.ok(describerCalled);
@@ -1501,5 +1573,465 @@ describe("makeGeminiDescriber", () => {
 describe("DEFAULT_DESCRIBER_MODEL", () => {
   it("uses gemini-3.1-flash-lite-preview", () => {
     assert.equal(DEFAULT_DESCRIBER_MODEL, "gemini-3.1-flash-lite-preview");
+  });
+});
+
+describe("isDailyQuotaError", () => {
+  it("detects daily quota messages", () => {
+    assert.ok(isDailyQuotaError({ message: "quota exceeded, daily limit reached" }));
+  });
+
+  it("detects PerDay quota messages", () => {
+    assert.ok(isDailyQuotaError({ message: "quota: RequestsPerDay limit" }));
+  });
+
+  it("detects per day messages", () => {
+    assert.ok(isDailyQuotaError({ message: "quota limit per day exceeded" }));
+  });
+
+  it("returns false for per-minute rate limits", () => {
+    assert.ok(!isDailyQuotaError({ message: "429: too many requests per minute" }));
+  });
+
+  it("returns false for non-quota errors", () => {
+    assert.ok(!isDailyQuotaError({ message: "Invalid API key" }));
+  });
+
+  it("returns false for null", () => {
+    assert.ok(!isDailyQuotaError(null));
+  });
+
+  it("returns false for non-object", () => {
+    assert.ok(!isDailyQuotaError("string error"));
+  });
+});
+
+describe("parseRetryDelay", () => {
+  it("parses retry in seconds with decimal", () => {
+    assert.equal(parseRetryDelay({ message: "Please retry in 14.473150856s." }), 14474);
+  });
+
+  it("parses retryDelay format", () => {
+    assert.equal(parseRetryDelay({ message: 'retryDelay: "30s"' }), 30000);
+  });
+
+  it("returns null for unrecognized messages", () => {
+    assert.equal(parseRetryDelay({ message: "Some other error" }), null);
+  });
+
+  it("returns null for null input", () => {
+    assert.equal(parseRetryDelay(null), null);
+  });
+
+  it("returns null for non-object input", () => {
+    assert.equal(parseRetryDelay("string"), null);
+  });
+});
+
+describe("processNote with cached image_prompt", () => {
+  let tempDir: string;
+  let blogDir: string;
+  let attachmentsDir: string;
+
+  const mockGenerate: ImageGenerator = async () => ({
+    data: Buffer.from("fake-image-data"),
+    mimeType: "image/jpeg",
+  });
+
+  beforeEach(() => {
+    tempDir = fs.mkdtempSync(path.join(os.tmpdir(), "desc-cache-test-"));
+    blogDir = path.join(tempDir, "chickie-loo");
+    fs.mkdirSync(blogDir, { recursive: true });
+    attachmentsDir = path.join(tempDir, "attachments");
+  });
+
+  afterEach(() => {
+    fs.rmSync(tempDir, { recursive: true, force: true });
+  });
+
+  it("uses cached image_prompt instead of calling describer", async () => {
+    const notePath = path.join(blogDir, "2026-03-22-test.md");
+    fs.writeFileSync(
+      notePath,
+      "---\ntitle: Test Post\nimage_prompt: A beautiful sunset over mountains\n---\n# Test Post\nBody text\n",
+    );
+
+    let describerCalled = false;
+    const mockDescriber: PromptDescriber = async () => {
+      describerCalled = true;
+      return "should not be used";
+    };
+
+    const result = await processNote(
+      notePath,
+      attachmentsDir,
+      "fake-key",
+      "fake-model",
+      mockGenerate,
+      mockDescriber,
+    );
+
+    assert.equal(result.skipped, false);
+    assert.equal(describerCalled, false);
+    assert.equal(result.imagePrompt, "A beautiful sunset over mountains");
+  });
+
+  it("calls describer when no cached prompt exists", async () => {
+    const notePath = path.join(blogDir, "2026-03-22-test.md");
+    fs.writeFileSync(
+      notePath,
+      "---\ntitle: Test Post\n---\n# Test Post\nBody text\n",
+    );
+
+    const mockDescriber: PromptDescriber = async () => "A freshly generated description";
+
+    const result = await processNote(
+      notePath,
+      attachmentsDir,
+      "fake-key",
+      "fake-model",
+      mockGenerate,
+      mockDescriber,
+    );
+
+    assert.equal(result.skipped, false);
+    assert.equal(result.imagePrompt, "A freshly generated description");
+
+    const updated = fs.readFileSync(notePath, "utf-8");
+    assert.ok(updated.includes("image_prompt:"));
+    assert.ok(!updated.includes("image_description:"));
+  });
+
+  it("uses cached prompt even during image regeneration", async () => {
+    const notePath = path.join(blogDir, "2026-03-22-test.md");
+    fs.mkdirSync(attachmentsDir, { recursive: true });
+    fs.writeFileSync(path.join(attachmentsDir, "old.jpg"), "old");
+    fs.writeFileSync(
+      notePath,
+      "---\ntitle: Test Post\nregenerate_image: true\nimage_prompt: Cached description from before\n---\n# Test Post\n![[attachments/old.jpg]]\nBody\n",
+    );
+
+    let describerCalled = false;
+    const mockDescriber: PromptDescriber = async () => {
+      describerCalled = true;
+      return "should not be called";
+    };
+
+    const result = await processNote(
+      notePath,
+      attachmentsDir,
+      "fake-key",
+      "fake-model",
+      mockGenerate,
+      mockDescriber,
+    );
+
+    assert.equal(result.skipped, false);
+    assert.equal(describerCalled, false);
+    assert.equal(result.imagePrompt, "Cached description from before");
+  });
+
+  it("sanitizes describer output to remove quotes and special chars", async () => {
+    const notePath = path.join(blogDir, "2026-03-22-test.md");
+    fs.writeFileSync(
+      notePath,
+      "---\ntitle: Test Post\n---\n# Test Post\nBody text\n",
+    );
+
+    const mockDescriber: PromptDescriber = async () =>
+      'A "magical" sunset with \'golden\' rays and \\bright\\ colors';
+
+    const result = await processNote(
+      notePath,
+      attachmentsDir,
+      "fake-key",
+      "fake-model",
+      mockGenerate,
+      mockDescriber,
+    );
+
+    assert.equal(result.skipped, false);
+    assert.ok(!result.imagePrompt?.includes('"'));
+    assert.ok(!result.imagePrompt?.includes("'"));
+    assert.ok(!result.imagePrompt?.includes("\\"));
+    assert.equal(result.imagePrompt, "A magical sunset with golden rays and bright colors");
+  });
+});
+
+describe("backfillImages cross-directory prioritization", () => {
+  let tempDir: string;
+  let attachmentsDir: string;
+
+  const mockGenerate: ImageGenerator = async () => ({
+    data: Buffer.from("fake-image-data"),
+    mimeType: "image/jpeg",
+  });
+
+  beforeEach(() => {
+    tempDir = fs.mkdtempSync(path.join(os.tmpdir(), "backfill-priority-"));
+    attachmentsDir = path.join(tempDir, "attachments");
+  });
+
+  afterEach(() => {
+    fs.rmSync(tempDir, { recursive: true, force: true });
+  });
+
+  it("processes newer posts from later directories before older posts from earlier directories", async () => {
+    const reflDir = path.join(tempDir, "reflections");
+    const chickieDir = path.join(tempDir, "chickie-loo");
+    fs.mkdirSync(reflDir);
+    fs.mkdirSync(chickieDir);
+
+    fs.writeFileSync(
+      path.join(reflDir, "2026-03-15.md"),
+      "---\ntitle: Old Reflection\n---\n# Old Reflection\nBody\n",
+    );
+    fs.writeFileSync(
+      path.join(chickieDir, "2026-03-21-recent-post.md"),
+      "---\ntitle: Recent Chickie\n---\n# Recent Chickie\nBody\n",
+    );
+
+    const generated: string[] = [];
+    const trackingGenerate: ImageGenerator = async (_k, _m, _p) => {
+      return { data: Buffer.from("img"), mimeType: "image/jpeg" };
+    };
+
+    const events: Record<string, unknown>[] = [];
+    await backfillImages({
+      directories: [
+        { path: reflDir, id: "reflections" },
+        { path: chickieDir, id: "chickie-loo" },
+      ],
+      attachmentsDir,
+      apiKey: "key",
+      model: "model",
+      generate: trackingGenerate,
+      onProgress: (e) => {
+        if (e["event"] === "generating_image") {
+          generated.push(e["filename"] as string);
+        }
+        events.push(e);
+      },
+      minDelayMs: 0,
+    });
+
+    assert.equal(generated[0], "2026-03-21-recent-post.md");
+    assert.equal(generated[1], "2026-03-15.md");
+  });
+
+  it("interleaves files from multiple directories by date", async () => {
+    const dirA = path.join(tempDir, "series-a");
+    const dirB = path.join(tempDir, "series-b");
+    fs.mkdirSync(dirA);
+    fs.mkdirSync(dirB);
+
+    fs.writeFileSync(
+      path.join(dirA, "2026-03-20-a-old.md"),
+      "---\ntitle: A Old\n---\n# A Old\nBody\n",
+    );
+    fs.writeFileSync(
+      path.join(dirA, "2026-03-22-a-new.md"),
+      "---\ntitle: A New\n---\n# A New\nBody\n",
+    );
+    fs.writeFileSync(
+      path.join(dirB, "2026-03-21-b-mid.md"),
+      "---\ntitle: B Mid\n---\n# B Mid\nBody\n",
+    );
+
+    const generated: string[] = [];
+    await backfillImages({
+      directories: [
+        { path: dirA, id: "series-a" },
+        { path: dirB, id: "series-b" },
+      ],
+      attachmentsDir,
+      apiKey: "key",
+      model: "model",
+      generate: mockGenerate,
+      onProgress: (e) => {
+        if (e["event"] === "generating_image") {
+          generated.push(e["filename"] as string);
+        }
+      },
+      minDelayMs: 0,
+    });
+
+    assert.deepEqual(generated, [
+      "2026-03-22-a-new.md",
+      "2026-03-21-b-mid.md",
+      "2026-03-20-a-old.md",
+    ]);
+  });
+});
+
+describe("backfillImages rate limit handling", () => {
+  let tempDir: string;
+  let attachmentsDir: string;
+
+  beforeEach(() => {
+    tempDir = fs.mkdtempSync(path.join(os.tmpdir(), "backfill-rate-"));
+    attachmentsDir = path.join(tempDir, "attachments");
+  });
+
+  afterEach(() => {
+    fs.rmSync(tempDir, { recursive: true, force: true });
+  });
+
+  it("retries on per-minute rate limit instead of stopping", async () => {
+    const dir = path.join(tempDir, "series");
+    fs.mkdirSync(dir);
+    fs.writeFileSync(
+      path.join(dir, "2026-03-10-post.md"),
+      "---\ntitle: Post\n---\n# Post\nBody\n",
+    );
+
+    let callCount = 0;
+    const rateLimitOnce: ImageGenerator = async () => {
+      callCount++;
+      if (callCount === 1) throw new Error("429 Too Many Requests per minute");
+      return { data: Buffer.from("img"), mimeType: "image/jpeg" };
+    };
+
+    const events: Record<string, unknown>[] = [];
+    const result = await backfillImages({
+      directories: [{ path: dir, id: "series" }],
+      attachmentsDir,
+      apiKey: "key",
+      model: "model",
+      generate: rateLimitOnce,
+      onProgress: (e) => events.push(e),
+      minDelayMs: 0,
+      sleep: async () => {},
+    });
+
+    assert.equal(result.stoppedByQuota, false);
+    assert.equal(result.imagesGenerated, 1);
+    assert.ok(events.some((e) => e["event"] === "rate_limit_retry"));
+  });
+
+  it("stops on daily quota error", async () => {
+    const dir = path.join(tempDir, "series");
+    fs.mkdirSync(dir);
+    fs.writeFileSync(
+      path.join(dir, "2026-03-10-post.md"),
+      "---\ntitle: Post\n---\n# Post\nBody\n",
+    );
+
+    const dailyQuotaGenerate: ImageGenerator = async () => {
+      throw new Error("quota exceeded, daily limit reached");
+    };
+
+    const events: Record<string, unknown>[] = [];
+    const result = await backfillImages({
+      directories: [{ path: dir, id: "series" }],
+      attachmentsDir,
+      apiKey: "key",
+      model: "model",
+      generate: dailyQuotaGenerate,
+      onProgress: (e) => events.push(e),
+      minDelayMs: 0,
+      sleep: async () => {},
+    });
+
+    assert.equal(result.stoppedByQuota, true);
+    assert.ok(events.some((e) => e["event"] === "daily_quota_exhausted"));
+  });
+
+  it("stops after exhausting retries on persistent rate limit", async () => {
+    const dir = path.join(tempDir, "series");
+    fs.mkdirSync(dir);
+    fs.writeFileSync(
+      path.join(dir, "2026-03-11-post2.md"),
+      "---\ntitle: Post 2\n---\n# Post 2\nBody\n",
+    );
+    fs.writeFileSync(
+      path.join(dir, "2026-03-10-post1.md"),
+      "---\ntitle: Post 1\n---\n# Post 1\nBody\n",
+    );
+
+    const alwaysRateLimit: ImageGenerator = async () => {
+      throw new Error("429 Too Many Requests");
+    };
+
+    const events: Record<string, unknown>[] = [];
+    const result = await backfillImages({
+      directories: [{ path: dir, id: "series" }],
+      attachmentsDir,
+      apiKey: "key",
+      model: "model",
+      generate: alwaysRateLimit,
+      onProgress: (e) => events.push(e),
+      minDelayMs: 0,
+      sleep: async () => {},
+    });
+
+    assert.equal(result.stoppedByQuota, true);
+    const retryEvents = events.filter((e) => e["event"] === "rate_limit_retry");
+    assert.ok(retryEvents.length > 0);
+  });
+
+  it("respects proactive minDelayMs between generations", async () => {
+    const dir = path.join(tempDir, "series");
+    fs.mkdirSync(dir);
+    fs.writeFileSync(
+      path.join(dir, "2026-03-11-post2.md"),
+      "---\ntitle: Post 2\n---\n# Post 2\nBody\n",
+    );
+    fs.writeFileSync(
+      path.join(dir, "2026-03-10-post1.md"),
+      "---\ntitle: Post 1\n---\n# Post 1\nBody\n",
+    );
+
+    const mockGenerate: ImageGenerator = async () => ({
+      data: Buffer.from("img"),
+      mimeType: "image/jpeg",
+    });
+
+    let sleepCalls = 0;
+    const trackingSleep = async (_ms: number): Promise<void> => {
+      sleepCalls++;
+    };
+
+    await backfillImages({
+      directories: [{ path: dir, id: "series" }],
+      attachmentsDir,
+      apiKey: "key",
+      model: "model",
+      generate: mockGenerate,
+      minDelayMs: 5000,
+      sleep: trackingSleep,
+    });
+
+    assert.ok(sleepCalls >= 2, `Expected at least 2 sleep calls, got ${sleepCalls}`);
+  });
+
+  it("uses parsed retry delay from error message", async () => {
+    const dir = path.join(tempDir, "series");
+    fs.mkdirSync(dir);
+    fs.writeFileSync(
+      path.join(dir, "2026-03-10-post.md"),
+      "---\ntitle: Post\n---\n# Post\nBody\n",
+    );
+
+    let callCount = 0;
+    const rateLimitWithDelay: ImageGenerator = async () => {
+      callCount++;
+      if (callCount === 1) throw new Error("429: Please retry in 15s.");
+      return { data: Buffer.from("img"), mimeType: "image/jpeg" };
+    };
+
+    const sleepDelays: number[] = [];
+    const result = await backfillImages({
+      directories: [{ path: dir, id: "series" }],
+      attachmentsDir,
+      apiKey: "key",
+      model: "model",
+      generate: rateLimitWithDelay,
+      minDelayMs: 0,
+      sleep: async (ms) => { sleepDelays.push(ms); },
+    });
+
+    assert.equal(result.imagesGenerated, 1);
+    assert.ok(sleepDelays.includes(15000));
   });
 });

@@ -1,6 +1,13 @@
 ## PR Blogs
 - 📝 With every PR, please generate a blog post describing your work in the ai-blog directory at the root of the repo. See some posts in https://bagrounds.org/ai-blog for prior examples.
 - 🎯 Every heading, sentence, list item, and table cell in the blog post should begin with an emoji.
+- 🚫 AI blog posts must never contain tags in their frontmatter or links in the content.
+
+## Product & Engineering Specs
+- 📋 All features must be covered by a product/engineering spec in the `specs/` directory.
+- 🆕 Create or extend specs when implementing new features.
+- 🐛 Amend specs when bugs are found or behavior changes.
+- 🔗 The README should link to specs but not duplicate their content.
 
 ## Intelligent Planning
 - 🧠 Before doing any work, always generate at least 3 initial plans. Analyze each of them and iterate on a best plan until you're very confident it'll produce a great result.

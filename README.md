@@ -244,3 +244,11 @@ GEMINI_API_KEY=... npx tsx scripts/check-gemini-quota.ts
 - 📖 **Self-documenting code** — Well-named functions and variables over comments
 - 📱 **Obsidian vault is source of truth** — `content/` is read-only; all mutations flow through vault sync
 - 🚫 **Never commit from workflows** — GitHub Actions use `contents: read` permissions only
+
+## 📋 Specs
+
+📄 Detailed product and engineering design specs live in `specs/`:
+
+| 📄 Spec | 📝 Description |
+|---|---|
+| [`image-generation.md`](specs/image-generation.md) | 🖼️ Image generation pipeline — architecture, provider resolution, frontmatter schema, rate limiting, backfill prioritization |

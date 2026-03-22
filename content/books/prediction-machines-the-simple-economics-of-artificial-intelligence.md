@@ -7,6 +7,9 @@ share: true
 CTA: 📈 Grasp AI's value.
 affiliate link: https://amzn.to/4h2i3Sm
 updated: 2026-03-13T10:11:24.683Z
+force_analyze_links: false
+link_analysis_time: 2026-03-22T23:32:01.992Z
+link_analysis_model: gemini-3.1-flash-lite-preview
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🤖📈 Prediction Machines: The Simple Economics of Artificial Intelligence  

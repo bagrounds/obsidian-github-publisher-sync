@@ -9,6 +9,9 @@ tags:
 affiliate link: https://amzn.to/3HibNZ3
 CTA: ⚔️ Conquer resistance.
 updated: 2026-03-17T06:23:48.601Z
+force_analyze_links: false
+link_analysis_time: 2026-03-22T23:37:03.070Z
+link_analysis_model: gemini-3.1-flash-lite-preview
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🪖🎨 The War of Art: Break Through the Blocks and Win Your Inner Creative Battles  
@@ -73,7 +76,7 @@ Pressfield reframes the creative process as a battle against a tangible enemy, "
 * **Best Fiction Book That Incorporates Related Ideas:** [🐦🕊️ Bird by Bird: Some Instructions on Writing and Life](./bird-by-bird.md) by Anne Lamott. ✍️ (Though a writing book, it heavily incorporates the idea of doing the work, and dealing with the inner voice.)  
 * **Best Book That Is More General:** [⚛️🔄 Atomic Habits](./atomic-habits.md) by James Clear. (Provides a broader framework for building habits, applicable to creative pursuits)  
 * **Best Book That Is More Specific:** [✍️🦴 Writing Down the Bones](./writing-down-the-bones.md) by Natalie Goldberg. 🦴 (Specifically focuses on the craft of writing and developing a writer's practice)  
-* **Best Book That Is More Rigorous:** "Flow: The Psychology of Optimal Experience" by Mihaly Csikszentmihalyi. 🌊 (Provides a scientific framework for understanding the flow state, which Pressfield alludes to as the "Muse")  
+* **Best Book That Is More Rigorous:** "[🌊🧘🏼‍♀️🧠📈 Flow: The Psychology of Optimal Experience](./flow-the-psychology-of-optimal-experience.md)" by Mihaly Csikszentmihalyi. 🌊 (Provides a scientific framework for understanding the flow state, which Pressfield alludes to as the "Muse")  
 * **Best Book That Is More Accessible:** "Steal Like an Artist" by Austin Kleon. 🎨 (A visually engaging and concise guide to creative inspiration and practice)  
   
 ## 💬 [Gemini](https://gemini.google.com) Prompt  

@@ -6,6 +6,9 @@ URL: https://bagrounds.org/books/amusing-ourselves-to-death-public-discourse-in-
 share: true
 affiliate link: https://amzn.to/3KiCo9S
 CTA: 📺 Question entertainment.
+force_analyze_links: false
+link_analysis_time: 2026-03-22T23:36:04.473Z
+link_analysis_model: gemini-3.1-flash-lite-preview
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 📺💀 Amusing Ourselves to Death: Public Discourse in the Age of Show Business  
@@ -26,7 +29,7 @@ CTA: 📺 Question entertainment.
 * 🖼️ **The Medium is the Metaphor:** 🗣️ Postman emphasizes that the medium through which information is conveyed is not merely a neutral conduit, but actively shapes how that information is understood and processed. ⚙️ The structure of the medium itself imposes a bias on the kind of information that can be effectively communicated.  
 * ➡️ **Shift from Print Culture to Television Culture:** 📜 The book traces a historical transition from a "typographic America" where the printed word fostered a highly literate society capable of sustained, logical arguments, to an "🎭 Age of Show Business" dominated by television. ✍️ Print culture encouraged rational debate and a focus on exposition, allowing for deep, serious thought. 📺 Conversely, television, with its emphasis on images and instant gratification, fosters a predisposition towards being amused.  
 * 🤡 **Trivialization of Public Discourse:** 📺 Postman illustrates how television reduces complex issues to superficial images and sound bites, prioritizing performance and visual stimulation over substantive discussion. 📰 News becomes a source of amusement rather than knowledge, ⛪ religion transforms into spectacle, and 🗳️ politics focuses on a candidate's favorable appearance on screen rather than their ideas. ⚠️ This leads to "disinformation"—misplaced, irrelevant, fragmented, or superficial information that creates the illusion of knowing but prevents true understanding.  
-* 🆚 **Huxley vs. Orwell:** 📖 A crucial point in the book is Postman's comparison of two dystopian visions: George Orwell's *Nineteen Eighty-Four* and Aldous Huxley's *Brave New World*. 😟 Postman argues that society is moving closer to Huxley's vision, where people are controlled not by external oppression, but by their addiction to pleasure, distraction, and entertainment, voluntarily sacrificing their capacity for critical thought and autonomy. 📚 Orwell feared a world where books would be banned, but Huxley feared a world where no one would want to read them.  
+* 🆚 **Huxley vs. Orwell:** 📖 A crucial point in the book is Postman's comparison of two dystopian visions: George Orwell's *Nineteen Eighty-Four* and Aldous Huxley's *[💊 Brave New World](./brave-new-world.md)*. 😟 Postman argues that society is moving closer to Huxley's vision, where people are controlled not by external oppression, but by their addiction to pleasure, distraction, and entertainment, voluntarily sacrificing their capacity for critical thought and autonomy. 📚 Orwell feared a world where books would be banned, but Huxley feared a world where no one would want to read them.  
   
 ### 📢 Impact and Relevance  
   

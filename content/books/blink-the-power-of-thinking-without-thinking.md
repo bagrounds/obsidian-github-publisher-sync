@@ -7,6 +7,9 @@ share: true
 affiliate link: https://amzn.to/496yeMw
 CTA: ⚡️ Trust intuition.
 updated: 2026-03-20T06:19:34.312Z
+force_analyze_links: false
+link_analysis_time: 2026-03-22T23:37:06.492Z
+link_analysis_model: gemini-3.1-flash-lite-preview
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ⚡🚫💭 Blink: The Power of Thinking Without Thinking  

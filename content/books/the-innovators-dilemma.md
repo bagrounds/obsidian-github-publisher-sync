@@ -8,6 +8,9 @@ Author:
 tags:
 affiliate link: https://amzn.to/443oyiI
 updated: 2026-03-13T10:11:24.683Z
+force_analyze_links: false
+link_analysis_time: 2026-03-22T23:36:01.703Z
+link_analysis_model: gemini-3.1-flash-lite-preview
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 💡🤖💰💥🏢📉 The Innovator's Dilemma: When New Technologies Cause Great Firms to Fail  

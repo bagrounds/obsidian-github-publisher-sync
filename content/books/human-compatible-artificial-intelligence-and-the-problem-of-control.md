@@ -7,6 +7,9 @@ share: true
 CTA: 🤖 Secure our future.
 affiliate link: https://amzn.to/4oMyd5Q
 updated: 2026-03-13T00:20:41.082Z
+force_analyze_links: false
+link_analysis_time: 2026-03-22T23:34:06.343Z
+link_analysis_model: gemini-3.1-flash-lite-preview
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🤖🧑‍ Human Compatible: Artificial Intelligence and the Problem of Control  

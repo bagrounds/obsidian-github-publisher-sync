@@ -9,10 +9,15 @@ tags:
 force_analyze_links: false
 link_analysis_time: 2026-03-22T07:44:49.317Z
 link_analysis_model: gemini-3.1-flash-lite-preview
-updated: 2026-03-22T10:06:34.110Z
+updated: 2026-03-22T20:43:28.708Z
+image_date: 2026-03-22T20:40:26.907Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A high-contrast, minimalist digital illustration featuring a stylized robotic hand delicately holding a glowing, multi-faceted crystal prism. As light passes through the prism, it refracts into a spectrum of vibrant, clean geometric shapes—squares, circles, and triangles—that float and organize themselves into a harmonious, balanced composition. The background is a soft, deep gradient of navy and charcoal, emphasizing the luminosity of the prism and the floating icons. The art style is clean, modern, and vector-inspired, suggesting precise technical refinement, data architecture, and creative automation, rendered with soft ambient lighting and sharp, polished edges.
+image_description: A high-contrast, minimalist digital illustration featuring a stylized robotic hand delicately holding a glowing, multi-faceted crystal prism. As light passes through the prism, it refracts into a spectrum of vibrant, clean geometric shapes—squares, circles, and triangles—that float and organize themselves into a harmonious, balanced composition. The background is a soft, deep gradient of navy and charcoal, emphasizing the luminosity of the prism and the floating icons. The art style is clean, modern, and vector-inspired, suggesting precise technical refinement, data architecture, and creative automation, rendered with soft ambient lighting and sharp, polished edges.
 ---
 [Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-21-book-only-internal-linking.md)  
 # 🎨 Smarter Image Generation — Gemini Descriptions, Regeneration, and Model Research  
+![ai-blog-2026-03-21-smarter-image-generation](../ai-blog-2026-03-21-smarter-image-generation.jpg)  
   
 🔧 Three refinements to the automated blog image pipeline: a two-stage prompt pipeline that produces better images, frontmatter metadata tracking, and an on-demand regeneration flag. 📊 Plus a deep dive into every image generation model available on Cloudflare's free tier.  
   

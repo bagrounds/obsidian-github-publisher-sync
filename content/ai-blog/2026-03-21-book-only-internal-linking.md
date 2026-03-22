@@ -9,9 +9,15 @@ tags:
 force_analyze_links: false
 link_analysis_time: 2026-03-22T07:44:48.426Z
 link_analysis_model: gemini-3.1-flash-lite-preview
+image_date: 2026-03-22T20:40:47.438Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A top-down, isometric view of a minimalist, organized digital landscape. In the center, a glowing, translucent book icon is being constructed by ethereal, light-blue particles, symbolizing AI intervention. Emerging from the base of this book are delicate, luminous threads of light that weave into an expansive, grid-like network representing a digital vault. Small, golden markers represent metadata frontmatter tags embedded within the grid. The color palette features deep navy and slate grays, contrasted by vibrant cyan, emerald, and amber light pulses indicating active data processing and system updates. The overall aesthetic is clean, modular, and futuristic, emphasizing structural integrity and interconnected knowledge.
+image_description: A top-down, isometric view of a minimalist, organized digital landscape. In the center, a glowing, translucent book icon is being constructed by ethereal, light-blue particles, symbolizing AI intervention. Emerging from the base of this book are delicate, luminous threads of light that weave into an expansive, grid-like network representing a digital vault. Small, golden markers represent metadata frontmatter tags embedded within the grid. The color palette features deep navy and slate grays, contrasted by vibrant cyan, emerald, and amber light pulses indicating active data processing and system updates. The overall aesthetic is clean, modular, and futuristic, emphasizing structural integrity and interconnected knowledge.
+updated: 2026-03-22T20:43:28.708Z
 ---
 [Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-21-internal-linking-bfs-wikilinks.md) [⏭️](./2026-03-21-smarter-image-generation.md)  
 # 2026-03-21 | 📚 Book-Only Internal Linking — AI-Driven, Vault-Native, Incrementally Tracked  
+![ai-blog-2026-03-21-book-only-internal-linking](../ai-blog-2026-03-21-book-only-internal-linking.jpg)  
   
 🎯 A fundamental redesign of the internal linking system: Gemini AI identifies genuine book references, writes directly to the Obsidian vault, tracks analysis progress via frontmatter, handles JSON parsing edge cases, and logs diffs for all runs.  
   

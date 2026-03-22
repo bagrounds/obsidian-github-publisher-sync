@@ -7,10 +7,15 @@ date: 2026-03-21
 force_analyze_links: false
 link_analysis_time: 2026-03-22T07:44:47.019Z
 link_analysis_model: gemini-3.1-flash-lite-preview
-updated: 2026-03-22T08:08:20.240Z
+updated: 2026-03-22T20:43:28.708Z
+image_date: 2026-03-22T20:40:34.085Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist digital illustration featuring a glowing, translucent neural network that forms the shape of a spider web. At the center of the web sits a clean, crystalline cube representing a knowledge base. Fine, luminous golden threads radiate from the cube, connecting to small, floating hexagonal icons that represent diverse data points like books, people, and topics. The aesthetic is clean, dark, and sophisticated, using a palette of deep navy, electric blue, and soft gold. The background is a subtle, deep gradient, suggesting the vast expanse of a digital mind organizing itself, with a faint, elegant grid pattern overlaying the bottom to emphasize structure and precision. The overall mood is calm, high-tech, and orderly.
+image_description: A minimalist digital illustration featuring a glowing, translucent neural network that forms the shape of a spider web. At the center of the web sits a clean, crystalline cube representing a knowledge base. Fine, luminous golden threads radiate from the cube, connecting to small, floating hexagonal icons that represent diverse data points like books, people, and topics. The aesthetic is clean, dark, and sophisticated, using a palette of deep navy, electric blue, and soft gold. The background is a subtle, deep gradient, suggesting the vast expanse of a digital mind organizing itself, with a faint, elegant grid pattern overlaying the bottom to emphasize structure and precision. The overall mood is calm, high-tech, and orderly.
 ---
-[Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-20-building-valence-game.md) [⏭️](./2026-03-21-book-only-internal-linking.md)  
+[Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](../../2026-03-20-building-valence-game.md) [⏭️](./2026-03-21-book-only-internal-linking.md)  
 # 🔗🧠 Internal Linking: Teaching a Knowledge Base to Weave Its Own Web  
+![ai-blog-2026-03-21-internal-linking-bfs-wikilinks](../ai-blog-2026-03-21-internal-linking-bfs-wikilinks.jpg)  
   
 ## 🎯 The Problem  
   

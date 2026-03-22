@@ -159,6 +159,42 @@ VAULT_DIR=$(npx tsx -e "(async () => {
 
 🧠 **Always study existing patterns in the codebase before writing new workflow steps.** 🔍 The IIFE pattern was already established in two other workflows — copying it would have avoided this failure entirely. 🧪 **Test `npx tsx -e` commands locally** before committing — the CJS limitation is silent until runtime.
 
+## 🐛 Lessons Learned: The Stdout Capture Trap
+
+🔥 The vault pull step failed in CI with: `Error: Unable to process file command 'output' successfully. Error: Invalid format '📥 Pulling latest vault content (warm cache fast path)...'`
+
+### 🔍 5 Whys: Root Cause Analysis
+
+1. ❓ **Why did `$GITHUB_OUTPUT` reject the value?** → The `vault_dir=...` line was followed by additional lines that weren't in `key=value` format, breaking GitHub Actions' single-line output parser.
+2. ❓ **Why were there extra lines?** → `VAULT_DIR` contained not just the path, but also log messages like `♻️ Re-using cached vault...` and `📥 Pulling latest vault content...`.
+3. ❓ **Why did log messages end up in VAULT_DIR?** → `syncObsidianVault()` uses `console.log()` for status messages, which go to stdout. The bash `$(...)` capture grabs **all** stdout.
+4. ❓ **Why was stdout capture used?** → The pattern `VAULT_DIR=$(npx tsx -e "... process.stdout.write(dir) ...")` assumes the script only writes the result to stdout. But `syncObsidianVault` is a library function with its own logging.
+5. ❓ **Why wasn't this caught?** → The other workflows (auto-blog-zero, chickie-loo) avoid this by doing everything inside the IIFE — they never need to pass the vault dir to a later step via `$GITHUB_OUTPUT`. The internal-linking workflow is the first to need the vault dir in separate steps.
+
+### ✅ The Fix
+
+🔧 Write the vault dir to a temp file from inside the IIFE, then read it back in bash — completely isolating the result from `console.log` output:
+
+```bash
+# ❌ Broken: console.log pollutes $(...)
+VAULT_DIR=$(npx tsx -e "(async () => {
+  const dir = await syncObsidianVault({...});
+  process.stdout.write(dir);
+})()")
+
+# ✅ Fixed: temp file sidesteps stdout
+npx tsx -e "(async () => {
+  const fs = await import('fs');
+  const dir = await syncObsidianVault({...});
+  fs.writeFileSync('/tmp/vault-dir.txt', dir);
+})()"
+VAULT_DIR=$(cat /tmp/vault-dir.txt)
+```
+
+### 📝 Takeaway
+
+🧠 **Never capture stdout when calling library functions that log.** 📦 Library functions like `syncObsidianVault` write status messages to stdout via `console.log`. 🔧 When you need a return value from a Node.js script, write it to a temp file or use `$GITHUB_OUTPUT` from inside the script. 🔍 The other workflows avoided this by not needing to pass values between steps.
+
 ## 🏁 Summary
 
 📐 The internal linking system is now vault-native, AI-driven, and incrementally tracked. 📱 Changes write directly to the Obsidian vault instead of the `content/` directory. 🧠 Gemini identifies genuine book references with full document context. 🔧 Robust JSON extraction handles Gemini's formatting quirks. 📋 Frontmatter tracking enables incremental progress with manual override via `force_analyze_links`. 📊 Both live and dry runs log diffs and summary statistics.

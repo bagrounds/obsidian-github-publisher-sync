@@ -7,6 +7,9 @@ share: true
 affiliate link: https://amzn.to/4oz7eui
 CTA: 🤖 Prepare for tomorrow.
 updated: 2026-03-13T16:11:58.094Z
+force_analyze_links: false
+link_analysis_time: 2026-03-22T23:32:03.905Z
+link_analysis_model: gemini-3.1-flash-lite-preview
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🤖📈 The Second Machine Age: Work, Progress, and Prosperity in a Time of Brilliant Technologies  

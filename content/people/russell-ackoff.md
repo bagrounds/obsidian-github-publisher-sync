@@ -5,6 +5,9 @@ Wikipedia: https://en.wikipedia.org/wiki/Russell_L._Ackoff
 aliases:
   - 🤔⚙️🗣️🤝💡🧩🔭📚👴 Russell Ackoff
 title: 🤔⚙️🗣️🤝💡🧩🔭📚👴 Russell Ackoff
+force_analyze_links: false
+link_analysis_time: 2026-03-22T23:32:09.644Z
+link_analysis_model: gemini-3.1-flash-lite-preview
 ---
 [Home](../index.md) > [People](./index.md)  
 # 🤔⚙️🗣️🤝💡🧩🔭📚👴 Russell Ackoff  

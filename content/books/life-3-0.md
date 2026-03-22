@@ -9,6 +9,9 @@ tags:
 affiliate link: https://amzn.to/4kmDGNV
 CTA: 💡 Explore AI's potential.
 updated: 2026-03-13T14:17:33.719Z
+force_analyze_links: false
+link_analysis_time: 2026-03-22T23:34:04.861Z
+link_analysis_model: gemini-3.1-flash-lite-preview
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧬👥💾 Life 3.0: Being Human in the Age of Artificial Intelligence  

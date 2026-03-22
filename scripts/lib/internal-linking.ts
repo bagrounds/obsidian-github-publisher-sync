@@ -22,10 +22,13 @@ import path from "node:path";
 /** Minimum plain-title length to consider for matching (avoids false positives with short names) */
 export const MIN_TITLE_LENGTH = 8;
 
+/** Minimum word count for a title to be eligible for matching without AI validation */
+export const MIN_WORD_COUNT_WITHOUT_AI = 2;
+
 /** Default Gemini model for link validation */
 export const DEFAULT_LINKING_MODEL = "gemini-3.1-flash-lite-preview";
 
-/** Content subdirectories to index (skip bot-chats, they're not linkable content) */
+/** Content subdirectories to index as link targets (excludes date-based content) */
 export const INDEXABLE_DIRS = [
   "books",
   "articles",
@@ -37,6 +40,11 @@ export const INDEXABLE_DIRS = [
   "videos",
   "presentations",
   "tools",
+] as const;
+
+/** All content directories for BFS traversal (includes date-based content) */
+export const TRAVERSABLE_DIRS = [
+  ...INDEXABLE_DIRS,
   "reflections",
   "chickie-loo",
   "auto-blog-zero",
@@ -116,6 +124,13 @@ export const stripEmojis = (text: string): string =>
     )
     .replace(/\s+/g, " ")
     .trim();
+
+/**
+ * Count the number of words in a string.
+ * Splits on whitespace and hyphens to count compound words.
+ */
+export const countWords = (text: string): number =>
+  text.split(/[\s-]+/).filter((w) => w.length > 0).length;
 
 /**
  * Escape special regex characters in a string for use in RegExp constructor.
@@ -407,6 +422,9 @@ export const extractExistingLinkedPaths = (
 /**
  * Find link candidates in a file by searching masked content for plain-title matches.
  * Returns candidates sorted by position (ascending) for safe replacement.
+ *
+ * When hasAiValidation is false (no Gemini API key), applies stricter filtering:
+ * only multi-word titles are considered to avoid common single-word false positives.
  */
 export const findLinkCandidates = (
   content: string,
@@ -414,6 +432,7 @@ export const findLinkCandidates = (
   index: readonly ContentEntry[],
   existingLinks: ReadonlySet<string>,
   selfPath: string,
+  hasAiValidation: boolean = true,
 ): readonly LinkCandidate[] => {
   const candidates: LinkCandidate[] = [];
 
@@ -436,6 +455,9 @@ export const findLinkCandidates = (
 
     // Skip already-linked content
     if (existingLinks.has(entry.relativePath)) return;
+
+    // Without AI validation, skip single-word titles to avoid common word false positives
+    if (!hasAiValidation && countWords(entry.plainTitle) < MIN_WORD_COUNT_WITHOUT_AI) return;
 
     // Build word-boundary regex for the plain title
     const pattern = new RegExp(
@@ -621,7 +643,8 @@ export const processFile = async (
 
   // Mask protected regions and find candidates
   const masked = maskProtectedRegions(content);
-  const candidates = findLinkCandidates(content, masked, index, existingLinks, relativePath);
+  const hasAi = !!config.apiKey;
+  const candidates = findLinkCandidates(content, masked, index, existingLinks, relativePath, hasAi);
 
   if (candidates.length === 0) {
     return { relativePath, linksAdded: 0, modified: false };

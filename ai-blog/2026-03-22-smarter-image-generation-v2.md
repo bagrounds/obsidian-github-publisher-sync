@@ -89,4 +89,4 @@ date: 2026-03-22
 
 **Release It!** by Michael T. Nygard — 🏗️ Essential reading on production resilience patterns including circuit breakers, bulkheads, and rate limiting strategies that inspired our smart quota handling.
 
-📖 **[Designing Data-Intensive Applications](https://dataintensive.net/)** by Martin Kleppmann — 🗄️ Covers caching strategies, idempotency, and data pipeline design patterns relevant to our description caching and backfill prioritization work.
+**Designing Data-Intensive Applications** by Martin Kleppmann — 🗄️ Covers caching strategies, idempotency, and data pipeline design patterns relevant to our description caching and backfill prioritization work.

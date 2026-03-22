@@ -7,6 +7,9 @@ share: true
 CTA: 🧠 Grasp human behavior.
 affiliate link: https://amzn.to/4fVyAa2
 updated: 2026-03-18T22:45:25.162Z
+force_analyze_links: false
+link_analysis_time: 2026-03-22T06:09:04.728Z
+link_analysis_model: gemini-3.1-flash-lite-preview
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 😇😈 Behave: The Biology of Humans at Our Best and Worst  

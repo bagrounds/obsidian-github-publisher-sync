@@ -9,6 +9,9 @@ tags:
 affiliate link: https://amzn.to/3HEBDX1
 CTA: 🌍 Explore our origins.
 updated: 2026-03-18T12:18:01.368Z
+force_analyze_links: false
+link_analysis_time: 2026-03-22T06:09:02.999Z
+link_analysis_model: gemini-3.1-flash-lite-preview
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 📜🌍⏳ Sapiens: A Brief History of Humankind  

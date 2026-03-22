@@ -75,13 +75,11 @@ export const resolveUniqueImageName = (
   const candidate = `${baseName}${extension}`;
   if (!fs.existsSync(path.join(attachmentsDir, candidate))) return candidate;
 
-  const nextSuffix = (n: number): string => {
+  // eslint-disable-next-line functional/no-let
+  for (let n = 2; ; n++) {
     const name = `${baseName}-${n}${extension}`;
-    return fs.existsSync(path.join(attachmentsDir, name))
-      ? nextSuffix(n + 1)
-      : name;
-  };
-  return nextSuffix(2);
+    if (!fs.existsSync(path.join(attachmentsDir, name))) return name;
+  }
 };
 
 export const extractTitle = (content: string): string => {

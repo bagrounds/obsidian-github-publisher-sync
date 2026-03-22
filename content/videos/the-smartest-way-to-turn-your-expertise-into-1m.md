@@ -9,6 +9,9 @@ Platform:
 Channel: Sunny Lenarduzzi
 tags:
 youtube: https://youtu.be/fN_2c_LPfX0
+force_analyze_links: false
+link_analysis_time: 2026-03-22T06:06:07.890Z
+link_analysis_model: gemini-3.1-flash-lite-preview
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 💡🧠📈💰 The Smartest Way To Turn Your Expertise Into $1M  

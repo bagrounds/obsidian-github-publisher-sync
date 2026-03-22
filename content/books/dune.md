@@ -6,6 +6,9 @@ URL: https://bagrounds.org/books/dune
 share: true
 affiliate link: https://amzn.to/47VKBce
 CTA: 🪱 Command the desert.
+force_analyze_links: false
+link_analysis_time: 2026-03-22T06:07:03.653Z
+link_analysis_model: gemini-3.1-flash-lite-preview
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🏜️🐛 Dune  

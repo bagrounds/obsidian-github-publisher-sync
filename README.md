@@ -168,6 +168,7 @@ Pull Vault → BFS from Most Recent Reflection → For Each File:
 | `GEMINI_API_KEY` | 🤖 Google Gemini API key (used by blog gen, social posting, internal linking, image description) |
 | `CLOUDFLARE_API_TOKEN` | ☁️ Cloudflare Workers AI API token (image generation) |
 | `CLOUDFLARE_ACCOUNT_ID` | ☁️ Cloudflare account identifier |
+| `HUGGINGFACE_API_TOKEN` | 🤗 Hugging Face Inference API token (fallback image generation) |
 | `OBSIDIAN_AUTH_TOKEN` | 📤 Obsidian headless sync authentication token |
 | `OBSIDIAN_VAULT_NAME` | 📂 Name of the Obsidian vault to sync with |
 | `OBSIDIAN_VAULT_PASSWORD` | 🔒 Obsidian vault encryption password (social posting only) |
@@ -191,6 +192,7 @@ Pull Vault → BFS from Most Recent Reflection → For Each File:
 | `IMAGE_GEMINI_MODEL` | `gemini-3.1-flash-image-preview` | 🖼️ Model for native image generation |
 | `PROMPT_DESCRIBER_MODEL` | `gemini-3.1-flash-lite-preview` | 📝 Model for image prompt description |
 | `CLOUDFLARE_IMAGE_MODEL` | `@cf/black-forest-labs/flux-1-schnell` | ☁️ Cloudflare image generation model |
+| `HUGGINGFACE_IMAGE_MODEL` | `black-forest-labs/FLUX.1-schnell` | 🤗 Hugging Face image generation model |
 | `GEMINI_MODEL` | `gemma-3-27b-it` | 📱 Model for social media post generation |
 | `AUTO_BLOG_ZERO_PRIORITY_USER` | `bagrounds` | 👤 GitHub user for blog discussion priority |
 | `CHICKIE_LOO_PRIORITY_USER` | `ChickieLoo` | 🐔 GitHub user for Chickie Loo priority |

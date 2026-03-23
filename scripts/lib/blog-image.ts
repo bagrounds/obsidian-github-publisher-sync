@@ -271,6 +271,18 @@ export const isDailyQuotaError = (error: unknown): boolean => {
   );
 };
 
+export const isProviderUnavailableError = (error: unknown): boolean => {
+  if (!error || typeof error !== "object") return false;
+  const message = String((error as { message?: string }).message ?? "");
+  return (
+    message.includes("410") ||
+    message.includes("401") ||
+    message.includes("403") ||
+    message.includes("no longer supported") ||
+    message.includes("deprecated")
+  );
+};
+
 export const parseRetryDelay = (error: unknown): number | null => {
   if (!error || typeof error !== "object") return null;
   const message = String((error as { message?: string }).message ?? "");
@@ -450,48 +462,116 @@ export const makeCloudflareGenerator = (
 ): ImageGenerator => async (apiToken, _model, prompt) =>
   generateWithCloudflare(apiToken, accountId, prompt, model);
 
+export const DEFAULT_HUGGINGFACE_IMAGE_MODEL = "black-forest-labs/FLUX.1-schnell";
+
+export const generateWithHuggingFace = async (
+  apiToken: string,
+  model: string,
+  prompt: string,
+): Promise<{ readonly data: Buffer; readonly mimeType: string }> => {
+  const url = `https://router.huggingface.co/hf-inference/models/${model}`;
+
+  const response = await fetch(url, {
+    method: "POST",
+    headers: {
+      Authorization: `Bearer ${apiToken}`,
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({ inputs: prompt }),
+  });
+
+  if (!response.ok) {
+    const text = await response.text();
+    throw new Error(
+      `HuggingFace API error ${response.status}: ${text}`,
+    );
+  }
+
+  const contentType = response.headers.get("content-type") ?? "";
+  if (!contentType.startsWith("image/")) {
+    const text = await response.text();
+    throw new Error(`HuggingFace returned non-image response: ${text}`);
+  }
+
+  const arrayBuffer = await response.arrayBuffer();
+  return {
+    data: Buffer.from(arrayBuffer),
+    mimeType: contentType.split(";")[0] ?? "image/jpeg",
+  };
+};
+
+export const makeHuggingFaceGenerator = (
+  model: string = DEFAULT_HUGGINGFACE_IMAGE_MODEL,
+): ImageGenerator => async (apiToken, _model, prompt) =>
+  generateWithHuggingFace(apiToken, model, prompt);
+
 export interface ImageProviderConfig {
+  readonly name: string;
   readonly apiKey: string;
   readonly model: string;
   readonly generator: ImageGenerator;
   readonly describePrompt?: PromptDescriber;
 }
 
-export const resolveImageProvider = (env: Record<string, string | undefined>): ImageProviderConfig => {
-  const cfToken = env.CLOUDFLARE_API_TOKEN;
-  const cfAccountId = env.CLOUDFLARE_ACCOUNT_ID;
-  const cfModel = env.CLOUDFLARE_IMAGE_MODEL ?? "@cf/black-forest-labs/flux-1-schnell";
-
+export const resolveImageProviders = (env: Record<string, string | undefined>): readonly ImageProviderConfig[] => {
   const geminiKey = env.GEMINI_API_KEY;
   const describerModel = env.PROMPT_DESCRIBER_MODEL ?? DEFAULT_DESCRIBER_MODEL;
   const describePrompt = geminiKey
     ? makeGeminiDescriber(geminiKey, describerModel)
     : undefined;
 
+  const providers: ImageProviderConfig[] = [];
+
+  const cfToken = env.CLOUDFLARE_API_TOKEN;
+  const cfAccountId = env.CLOUDFLARE_ACCOUNT_ID;
+  const cfModel = env.CLOUDFLARE_IMAGE_MODEL ?? "@cf/black-forest-labs/flux-1-schnell";
+
   if (cfToken && cfAccountId) {
-    return {
+    providers.push({
+      name: "cloudflare",
       apiKey: cfToken,
       model: cfModel,
       generator: makeCloudflareGenerator(cfAccountId, cfModel),
       describePrompt,
-    };
+    });
+  }
+
+  const hfToken = env.HUGGINGFACE_API_TOKEN;
+  const hfModel = env.HUGGINGFACE_IMAGE_MODEL ?? DEFAULT_HUGGINGFACE_IMAGE_MODEL;
+
+  if (hfToken) {
+    providers.push({
+      name: "huggingface",
+      apiKey: hfToken,
+      model: hfModel,
+      generator: makeHuggingFaceGenerator(hfModel),
+      describePrompt,
+    });
   }
 
   const geminiModel = env.IMAGE_GEMINI_MODEL ?? "gemini-3.1-flash-image-preview";
 
   if (geminiKey) {
-    return {
+    providers.push({
+      name: "gemini",
       apiKey: geminiKey,
       model: geminiModel,
       generator: generateImageWithGemini,
       describePrompt,
-    };
+    });
   }
 
-  throw new Error(
-    "No image generation credentials found. Set CLOUDFLARE_API_TOKEN + CLOUDFLARE_ACCOUNT_ID, or GEMINI_API_KEY.",
-  );
+  if (providers.length === 0) {
+    throw new Error(
+      "No image generation credentials found. Set CLOUDFLARE_API_TOKEN + CLOUDFLARE_ACCOUNT_ID, HUGGINGFACE_API_TOKEN, or GEMINI_API_KEY.",
+    );
+  }
+
+  return providers;
 };
+
+export const resolveImageProvider = (env: Record<string, string | undefined>): ImageProviderConfig =>
+  resolveImageProviders(env)[0]!;
 
 export const processNote = async (
   notePath: string,
@@ -598,6 +678,8 @@ export interface BackfillConfig {
   readonly model: string;
   readonly generate?: ImageGenerator;
   readonly describePrompt?: PromptDescriber;
+  readonly providerName?: string;
+  readonly fallbackProviders?: readonly ImageProviderConfig[];
   readonly onProgress?: (event: Record<string, unknown>) => void;
   readonly minDelayMs?: number;
   readonly sleep?: (ms: number) => Promise<void>;
@@ -681,7 +763,7 @@ const retryOnRateLimit = async (
     try {
       return await fn();
     } catch (error) {
-      if (isDailyQuotaError(error)) {
+      if (isDailyQuotaError(error) || isProviderUnavailableError(error)) {
         throw error;
       }
 
@@ -717,14 +799,22 @@ export const backfillImages = async (
     model,
     generate = generateImageWithGemini,
     describePrompt,
+    providerName = "primary",
+    fallbackProviders = [],
     onProgress = () => {},
     minDelayMs = DEFAULT_MIN_DELAY_MS,
     sleep: sleepFn = defaultSleep,
   } = config;
 
+  const allProviders: readonly ImageProviderConfig[] = [
+    { name: providerName, apiKey, model, generator: generate, describePrompt },
+    ...fallbackProviders,
+  ];
+
   const today = todayPacific();
   let imagesGenerated = 0;
   let filesUpdated = 0;
+  let providerIndex = 0;
 
   const { candidates, dirFiles } = collectCandidates(directories, today, onProgress);
 
@@ -733,66 +823,104 @@ export const backfillImages = async (
       event: candidate.needsRegeneration ? "regenerating_image" : "generating_image",
       directory: candidate.dirId,
       filename: candidate.filename,
+      provider: (allProviders[providerIndex] as ImageProviderConfig).name,
     });
 
-    try {
-      const result = await retryOnRateLimit(
-        () => processNote(candidate.filePath, attachmentsDir, apiKey, model, generate, describePrompt),
-        sleepFn,
-        onProgress,
-        { directory: candidate.dirId, filename: candidate.filename },
-      );
+    let generated = false;
+    while (providerIndex < allProviders.length) {
+      const provider = allProviders[providerIndex] as ImageProviderConfig;
 
-      if (!result.skipped) {
-        imagesGenerated++;
-        onProgress({
-          event: "image_generated",
-          directory: candidate.dirId,
-          filename: candidate.filename,
-          imageName: result.imageName,
-        });
+      try {
+        const result = await retryOnRateLimit(
+          () => processNote(
+            candidate.filePath,
+            attachmentsDir,
+            provider.apiKey,
+            provider.model,
+            provider.generator,
+            provider.describePrompt,
+          ),
+          sleepFn,
+          onProgress,
+          { directory: candidate.dirId, filename: candidate.filename, provider: provider.name },
+        );
 
-        const chain = buildChain(candidate, dirFiles);
-        const timestamp = new Date().toISOString();
-        for (const chainFile of chain) {
-          updateFrontmatterTimestamp(chainFile, timestamp);
-          filesUpdated++;
+        if (!result.skipped) {
+          imagesGenerated++;
+          onProgress({
+            event: "image_generated",
+            directory: candidate.dirId,
+            filename: candidate.filename,
+            imageName: result.imageName,
+            provider: provider.name,
+          });
+
+          const chain = buildChain(candidate, dirFiles);
+          const timestamp = new Date().toISOString();
+          for (const chainFile of chain) {
+            updateFrontmatterTimestamp(chainFile, timestamp);
+            filesUpdated++;
+          }
+          onProgress({
+            event: "chain_updated",
+            directory: candidate.dirId,
+            chainLength: chain.length,
+          });
+
+          if (minDelayMs > 0) {
+            await sleepFn(minDelayMs);
+          }
         }
-        onProgress({
-          event: "chain_updated",
-          directory: candidate.dirId,
-          chainLength: chain.length,
-        });
 
-        if (minDelayMs > 0) {
-          await sleepFn(minDelayMs);
+        generated = true;
+        break;
+      } catch (error) {
+        if (isDailyQuotaError(error) || isQuotaError(error) || isProviderUnavailableError(error)) {
+          const eventType = isDailyQuotaError(error)
+            ? "daily_quota_exhausted"
+            : isProviderUnavailableError(error)
+              ? "provider_unavailable"
+              : "quota_exhausted";
+
+          onProgress({
+            event: eventType,
+            directory: candidate.dirId,
+            filename: candidate.filename,
+            imagesGenerated,
+            provider: provider.name,
+            error: error instanceof Error ? error.message : String(error),
+          });
+
+          providerIndex++;
+
+          if (providerIndex < allProviders.length) {
+            const next = allProviders[providerIndex] as ImageProviderConfig;
+            onProgress({
+              event: "provider_switch",
+              from: provider.name,
+              to: next.name,
+              reason: eventType,
+            });
+            continue;
+          }
+
+          return { imagesGenerated, filesUpdated, stoppedByQuota: true };
         }
-      }
-    } catch (error) {
-      if (isDailyQuotaError(error)) {
+
         onProgress({
-          event: "daily_quota_exhausted",
+          event: "image_generation_failed",
           directory: candidate.dirId,
           filename: candidate.filename,
-          imagesGenerated,
+          error: error instanceof Error ? error.message : String(error),
+          provider: provider.name,
         });
-        return { imagesGenerated, filesUpdated, stoppedByQuota: true };
+        generated = true;
+        break;
       }
-      if (isQuotaError(error)) {
-        onProgress({
-          event: "quota_exhausted",
-          directory: candidate.dirId,
-          filename: candidate.filename,
-          imagesGenerated,
-        });
-        return { imagesGenerated, filesUpdated, stoppedByQuota: true };
-      }
-      onProgress({
-        event: "image_generation_failed",
-        directory: candidate.dirId,
-        filename: candidate.filename,
-        error: error instanceof Error ? error.message : String(error),
-      });
+    }
+
+    if (!generated) {
+      return { imagesGenerated, filesUpdated, stoppedByQuota: true };
     }
   }
 

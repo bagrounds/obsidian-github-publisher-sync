@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-03-22T17:06:28-07:00
+updated: 2026-03-22T17:14:18-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (702)  
+# 📺 Videos (703)  
 - [💰🤑🤖💡🚀💲 $0.10/Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
@@ -75,6 +75,7 @@ updated: 2026-03-22T17:06:28-07:00
 - [👩‍⚖️🔭⏩ Amy Coney Barrett Is Looking Beyond the Trump Era | Interesting Times with Ross Douthat](./amy-coney-barrett-is-looking-beyond-the-trump-era-interesting-times-with-ross-douthat.md)  
 - [🏛️📜💰🚨 Amy Walter and Jasmine Wright on how Senate Republicans feel about Trump's big bill](./amy-walter-and-jasmine-wright-on-how-senate-republicans-feel-about-trumps-big-bill.md)  
 - [🏛️💥📈 Amy Walter and Leigh Ann Caldwell on the rise in political violence](./amy-walter-and-leigh-ann-caldwell-on-the-rise-in-political-violence.md)  
+- [🇺🇸🏛️🗣️📊 An Analysis of Modern Republicanism | Explainer](./an-analysis-of-modern-republicanism-explainer.md)  
 - [🌪️➡️🕹️ An Attempt to Turn Chaos Into Control | Explainer](./an-attempt-to-turn-chaos-into-control-explainer.md)  
 - [💻🔄💻 Andrej Karpathy: Software Is Changing (Again)](./andrej-karpathy-software-is-changing-again.md)  
 - [🤖🚀📈 Andrew Ng: Building Faster with AI](./andrew-ng-building-faster-with-ai.md)  

@@ -83,7 +83,7 @@ const appendLinkToExistingSection = (content: string, sectionHeading: string, po
   const lines = content.split("\n");
   const sectionIndex = lines.findIndex((line) => line.startsWith(sectionHeading));
   let insertAt = sectionIndex + 1;
-  while (insertAt < lines.length && lines[insertAt]!.startsWith("- ")) {
+  while (insertAt < lines.length && lines[insertAt]?.startsWith("- ")) {
     insertAt++;
   }
   return [...lines.slice(0, insertAt), postLink, ...lines.slice(insertAt)].join("\n");

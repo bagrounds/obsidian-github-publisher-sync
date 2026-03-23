@@ -121,8 +121,8 @@ const run = async (): Promise<void> => {
   const result = updateDailyReflection(vaultDir, today, series, postFilename, postTitle);
   log({ event: "reflection_updated", ...result });
 
-  const anyChanges = result.reflectionCreated || result.sectionCreated || result.linkInserted || result.forwardLinkAdded;
-  if (anyChanges) {
+  const shouldPushVault = result.reflectionCreated || result.sectionCreated || result.linkInserted || result.forwardLinkAdded;
+  if (shouldPushVault) {
     await pushObsidianVault(vaultDir, { authToken });
     log({ event: "vault_pushed" });
   } else {

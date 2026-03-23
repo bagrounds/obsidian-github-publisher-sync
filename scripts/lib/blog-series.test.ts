@@ -230,6 +230,10 @@ describe("BLOG_SERIES priorityUser config", () => {
   it("chickie-loo has ChickieLoo as priority user", () => {
     assert.equal(BLOG_SERIES.get("chickie-loo")?.priorityUser, "ChickieLoo");
   });
+
+  it("the-public-good has bagrounds as priority user", () => {
+    assert.equal(BLOG_SERIES.get("the-public-good")?.priorityUser, "bagrounds");
+  });
 });
 
 describe("generateSeriesIndex", () => {

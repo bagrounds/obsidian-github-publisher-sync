@@ -271,6 +271,18 @@ export const isDailyQuotaError = (error: unknown): boolean => {
   );
 };
 
+export const isProviderUnavailableError = (error: unknown): boolean => {
+  if (!error || typeof error !== "object") return false;
+  const message = String((error as { message?: string }).message ?? "");
+  return (
+    message.includes("410") ||
+    message.includes("401") ||
+    message.includes("403") ||
+    message.includes("no longer supported") ||
+    message.includes("deprecated")
+  );
+};
+
 export const parseRetryDelay = (error: unknown): number | null => {
   if (!error || typeof error !== "object") return null;
   const message = String((error as { message?: string }).message ?? "");
@@ -457,7 +469,7 @@ export const generateWithHuggingFace = async (
   model: string,
   prompt: string,
 ): Promise<{ readonly data: Buffer; readonly mimeType: string }> => {
-  const url = `https://api-inference.huggingface.co/models/${model}`;
+  const url = `https://router.huggingface.co/hf-inference/models/${model}`;
 
   const response = await fetch(url, {
     method: "POST",
@@ -751,7 +763,7 @@ const retryOnRateLimit = async (
     try {
       return await fn();
     } catch (error) {
-      if (isDailyQuotaError(error)) {
+      if (isDailyQuotaError(error) || isProviderUnavailableError(error)) {
         throw error;
       }
 
@@ -863,10 +875,12 @@ export const backfillImages = async (
         generated = true;
         break;
       } catch (error) {
-        if (isDailyQuotaError(error) || isQuotaError(error)) {
+        if (isDailyQuotaError(error) || isQuotaError(error) || isProviderUnavailableError(error)) {
           const eventType = isDailyQuotaError(error)
             ? "daily_quota_exhausted"
-            : "quota_exhausted";
+            : isProviderUnavailableError(error)
+              ? "provider_unavailable"
+              : "quota_exhausted";
 
           onProgress({
             event: eventType,
@@ -874,6 +888,7 @@ export const backfillImages = async (
             filename: candidate.filename,
             imagesGenerated,
             provider: provider.name,
+            error: error instanceof Error ? error.message : String(error),
           });
 
           providerIndex++;

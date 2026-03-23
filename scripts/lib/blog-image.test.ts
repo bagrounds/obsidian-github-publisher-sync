@@ -18,6 +18,7 @@ import {
   mimeTypeToExtension,
   isQuotaError,
   isDailyQuotaError,
+  isProviderUnavailableError,
   parseRetryDelay,
   processNote,
   isPostFile,
@@ -2426,5 +2427,217 @@ describe("backfillImages provider chain fallback", () => {
     const genEvent = events.find((e) => e["event"] === "image_generated");
     assert.ok(genEvent);
     assert.equal(genEvent!["provider"], "primary");
+  });
+});
+
+describe("isProviderUnavailableError", () => {
+  it("detects 410 Gone errors", () => {
+    assert.equal(isProviderUnavailableError(new Error("HuggingFace API error 410: no longer supported")), true);
+  });
+
+  it("detects 401 Unauthorized errors", () => {
+    assert.equal(isProviderUnavailableError(new Error("API error 401: Unauthorized")), true);
+  });
+
+  it("detects 403 Forbidden errors", () => {
+    assert.equal(isProviderUnavailableError(new Error("API error 403: Forbidden")), true);
+  });
+
+  it("detects 'no longer supported' messages", () => {
+    assert.equal(isProviderUnavailableError(new Error("This endpoint is no longer supported")), true);
+  });
+
+  it("detects 'deprecated' messages", () => {
+    assert.equal(isProviderUnavailableError(new Error("This API has been deprecated")), true);
+  });
+
+  it("does not match quota errors", () => {
+    assert.equal(isProviderUnavailableError(new Error("429 Too Many Requests")), false);
+  });
+
+  it("does not match generic errors", () => {
+    assert.equal(isProviderUnavailableError(new Error("Network timeout")), false);
+  });
+
+  it("returns false for non-object values", () => {
+    assert.equal(isProviderUnavailableError(null), false);
+    assert.equal(isProviderUnavailableError(undefined), false);
+    assert.equal(isProviderUnavailableError("string"), false);
+  });
+});
+
+describe("backfillImages provider unavailable handling", () => {
+  let tempDir: string;
+  let attachmentsDir: string;
+
+  beforeEach(() => {
+    tempDir = fs.mkdtempSync(path.join(os.tmpdir(), "backfill-unavail-"));
+    attachmentsDir = path.join(tempDir, "attachments");
+  });
+
+  afterEach(() => {
+    fs.rmSync(tempDir, { recursive: true, force: true });
+  });
+
+  it("switches provider on 410 Gone error", async () => {
+    const dir = path.join(tempDir, "series");
+    fs.mkdirSync(dir);
+    fs.writeFileSync(
+      path.join(dir, "2026-03-10-post.md"),
+      "---\ntitle: Post\n---\n# Post\nBody\n",
+    );
+
+    const unavailableGenerator: ImageGenerator = async () => {
+      throw new Error("HuggingFace API error 410: no longer supported");
+    };
+
+    const fallbackGenerator: ImageGenerator = async () => ({
+      data: Buffer.from("fallback-img"),
+      mimeType: "image/jpeg",
+    });
+
+    const events: Record<string, unknown>[] = [];
+    const result = await backfillImages({
+      directories: [{ path: dir, id: "series" }],
+      attachmentsDir,
+      apiKey: "primary-key",
+      model: "primary-model",
+      generate: unavailableGenerator,
+      fallbackProviders: [{
+        name: "fallback",
+        apiKey: "fb-key",
+        model: "fb-model",
+        generator: fallbackGenerator,
+      }],
+      onProgress: (e) => events.push(e),
+      minDelayMs: 0,
+      sleep: async () => {},
+    });
+
+    assert.equal(result.stoppedByQuota, false);
+    assert.equal(result.imagesGenerated, 1);
+    const switchEvent = events.find((e) => e["event"] === "provider_switch");
+    assert.ok(switchEvent);
+    assert.equal(switchEvent!["reason"], "provider_unavailable");
+  });
+
+  it("switches provider on 401 Unauthorized error", async () => {
+    const dir = path.join(tempDir, "series");
+    fs.mkdirSync(dir);
+    fs.writeFileSync(
+      path.join(dir, "2026-03-10-post.md"),
+      "---\ntitle: Post\n---\n# Post\nBody\n",
+    );
+
+    const unauthorizedGenerator: ImageGenerator = async () => {
+      throw new Error("API error 401: Unauthorized");
+    };
+
+    const fallbackGenerator: ImageGenerator = async () => ({
+      data: Buffer.from("fallback-img"),
+      mimeType: "image/jpeg",
+    });
+
+    const events: Record<string, unknown>[] = [];
+    const result = await backfillImages({
+      directories: [{ path: dir, id: "series" }],
+      attachmentsDir,
+      apiKey: "bad-key",
+      model: "model",
+      generate: unauthorizedGenerator,
+      fallbackProviders: [{
+        name: "fallback",
+        apiKey: "fb-key",
+        model: "fb-model",
+        generator: fallbackGenerator,
+      }],
+      onProgress: (e) => events.push(e),
+      minDelayMs: 0,
+      sleep: async () => {},
+    });
+
+    assert.equal(result.stoppedByQuota, false);
+    assert.equal(result.imagesGenerated, 1);
+    assert.ok(events.some((e) => e["event"] === "provider_unavailable"));
+  });
+
+  it("does not retry with same provider on unavailable error", async () => {
+    const dir = path.join(tempDir, "series");
+    fs.mkdirSync(dir);
+    fs.writeFileSync(
+      path.join(dir, "2026-03-11-post2.md"),
+      "---\ntitle: Post 2\n---\n# Post 2\nBody\n",
+    );
+    fs.writeFileSync(
+      path.join(dir, "2026-03-10-post1.md"),
+      "---\ntitle: Post 1\n---\n# Post 1\nBody\n",
+    );
+
+    let primaryCalls = 0;
+    const unavailableGenerator: ImageGenerator = async () => {
+      primaryCalls++;
+      throw new Error("HuggingFace API error 410: this endpoint is no longer supported");
+    };
+
+    const fallbackGenerator: ImageGenerator = async () => ({
+      data: Buffer.from("fallback-img"),
+      mimeType: "image/jpeg",
+    });
+
+    const events: Record<string, unknown>[] = [];
+    await backfillImages({
+      directories: [{ path: dir, id: "series" }],
+      attachmentsDir,
+      apiKey: "primary-key",
+      model: "primary-model",
+      generate: unavailableGenerator,
+      fallbackProviders: [{
+        name: "fallback",
+        apiKey: "fb-key",
+        model: "fb-model",
+        generator: fallbackGenerator,
+      }],
+      onProgress: (e) => events.push(e),
+      minDelayMs: 0,
+      sleep: async () => {},
+    });
+
+    assert.equal(primaryCalls, 1, "Should only call unavailable provider once, not retry");
+    const retryEvents = events.filter((e) => e["event"] === "rate_limit_retry");
+    assert.equal(retryEvents.length, 0, "Should not retry on unavailable error");
+  });
+
+  it("stops when all providers are unavailable", async () => {
+    const dir = path.join(tempDir, "series");
+    fs.mkdirSync(dir);
+    fs.writeFileSync(
+      path.join(dir, "2026-03-10-post.md"),
+      "---\ntitle: Post\n---\n# Post\nBody\n",
+    );
+
+    const unavailableGenerator: ImageGenerator = async () => {
+      throw new Error("API error 410: deprecated endpoint");
+    };
+
+    const events: Record<string, unknown>[] = [];
+    const result = await backfillImages({
+      directories: [{ path: dir, id: "series" }],
+      attachmentsDir,
+      apiKey: "key",
+      model: "model",
+      generate: unavailableGenerator,
+      fallbackProviders: [{
+        name: "fallback",
+        apiKey: "fb-key",
+        model: "fb-model",
+        generator: unavailableGenerator,
+      }],
+      onProgress: (e) => events.push(e),
+      minDelayMs: 0,
+      sleep: async () => {},
+    });
+
+    assert.equal(result.stoppedByQuota, true);
+    assert.equal(result.imagesGenerated, 0);
   });
 });

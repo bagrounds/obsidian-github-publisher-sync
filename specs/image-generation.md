@@ -169,6 +169,7 @@ Provider 3 (Gemini) → quota exhausted → stop job
 |------------|-----------|----------|
 | 📅 Daily quota exhaustion | Message contains `"quota"` AND (`"daily"` or `"per day"` or `"PerDay"`) | 🔄 Switch to next provider in chain (or stop if no providers remain) |
 | ⏱️ Per-minute rate limit | Message contains `"429"`, `"RESOURCE_EXHAUSTED"`, or `"quota"` (but not daily) | 🔄 Retry with exponential backoff (up to 3 retries), then switch provider |
+| 🚫 Provider unavailable | Message contains `"410"`, `"401"`, `"403"`, `"no longer supported"`, or `"deprecated"` | 🔄 Immediately switch to next provider (no retries — permanent failure) |
 | ❌ Other errors | Everything else | ⏭️ Log and skip to next candidate |
 
 ### 🔄 Retry Mechanism
@@ -369,7 +370,7 @@ Image name: chickie-loo-2026-03-22-weekly-recap.jpg
 
 ## 🧪 Testing Strategy
 
-### 📊 Test Coverage (199 tests, 40 suites)
+### 📊 Test Coverage (211 tests, 42 suites)
 
 | Category | Tests | Description |
 |----------|-------|-------------|
@@ -382,6 +383,7 @@ Image name: chickie-loo-2026-03-22-weekly-recap.jpg
 | 🔌 Provider resolution | 18 | Cloudflare, Gemini, Imagen, HuggingFace, describer, multi-provider chain |
 | ⏱️ Rate limiting | 12 | isDailyQuotaError, parseRetryDelay, retry logic, proactive delays |
 | 🔗 Provider chain fallback | 7 | Quota switch, multi-provider chain, backward compat, progress events |
+| 🚫 Provider unavailable | 12 | isProviderUnavailableError detection, 410/401/403 switch, no-retry, all-unavailable stop |
 
 ### 🎯 Key Test Properties
 

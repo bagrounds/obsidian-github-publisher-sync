@@ -7,6 +7,9 @@ share: true
 CTA: 🎧 Discover nature's symphony.
 affiliate link: https://amzn.to/4rMwTzW
 updated: 2026-03-23T00:23:39.443Z
+force_analyze_links: false
+link_analysis_time: 2026-03-23T07:51:39.118Z
+link_analysis_model: gemini-3.1-flash-lite-preview
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 👂📱🐾🌿 The Sounds of Life: How Digital Technology Is Bringing Us Closer to the Worlds of Animals and Plants  

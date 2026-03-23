@@ -559,7 +559,7 @@ export const resolveImageProviders = (env: Record<string, string | undefined>): 
 };
 
 export const resolveImageProvider = (env: Record<string, string | undefined>): ImageProviderConfig =>
-  resolveImageProviders(env)[0] as ImageProviderConfig;
+  resolveImageProviders(env)[0]!;
 
 export const processNote = async (
   notePath: string,
@@ -666,6 +666,7 @@ export interface BackfillConfig {
   readonly model: string;
   readonly generate?: ImageGenerator;
   readonly describePrompt?: PromptDescriber;
+  readonly providerName?: string;
   readonly fallbackProviders?: readonly ImageProviderConfig[];
   readonly onProgress?: (event: Record<string, unknown>) => void;
   readonly minDelayMs?: number;
@@ -786,6 +787,7 @@ export const backfillImages = async (
     model,
     generate = generateImageWithGemini,
     describePrompt,
+    providerName = "primary",
     fallbackProviders = [],
     onProgress = () => {},
     minDelayMs = DEFAULT_MIN_DELAY_MS,
@@ -793,7 +795,7 @@ export const backfillImages = async (
   } = config;
 
   const allProviders: readonly ImageProviderConfig[] = [
-    { name: "primary", apiKey, model, generator: generate, describePrompt },
+    { name: providerName, apiKey, model, generator: generate, describePrompt },
     ...fallbackProviders,
   ];
 

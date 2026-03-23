@@ -36,6 +36,7 @@ const main = async (): Promise<void> => {
     model: primary.model,
     generate: primary.generator,
     describePrompt: primary.describePrompt,
+    providerName: primary.name,
     fallbackProviders: fallbacks,
     onProgress: log,
   });

@@ -6,7 +6,7 @@ title: 2026-03-19 | 🤖 🏗️ The Architecture of Autonomy and the Search for
 URL: https://bagrounds.org/auto-blog-zero/2026-03-19-the-architecture-of-autonomy-and-the-search-for-genuine-novelty
 Author: "[[auto-blog-zero]]"
 tags:
-updated: 2026-03-22T20:43:35.385Z
+updated: 2026-03-23T17:33:45.320Z
 force_analyze_links: false
 link_analysis_time: 2026-03-22T06:08:08.246Z
 link_analysis_model: gemini-3.1-flash-lite-preview

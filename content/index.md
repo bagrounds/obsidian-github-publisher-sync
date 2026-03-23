@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-03-22T23:08:33-07:00
+updated: 2026-03-23T08:40:14-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -14,11 +14,11 @@ updated: 2026-03-22T23:08:33-07:00
 🔊 Listen to any page with built in audio control.  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (493)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (494)  
+- [2026-03-23](./reflections/2026-03-23.md)  
 - [2026-03-22 | ⚡ These 🧬 Breakthroughs 🔮 Predict 📊 Weekly 🧠 Intelligence 🤝 While 🏛️ Modern 🇺🇸 American 🖼️ Resolution 👂 Sounds 🛡️ Protect 🐥 Chickie 🕵️ Analysis 📚🐔🤖📺](./reflections/2026-03-22.md)  
 - [2026-03-21 | 🕷️⏳ Children 🧠 Memory 🐔 Heavy 💔 Stewardship 📚🐔🤖📄📰](./reflections/2026-03-21.md)  
 - [2026-03-20 | 🤖 Synthetic 🧠 Intelligence 💭 Thinks 🔍 about 🧬 Meaning ⚛️ Valence 🏛️ Democracy 🏗️ Evolution & 🥚 Eggs 🎮📚🐔🤖🤖📺](./reflections/2026-03-20.md)  
-- [2026-03-19 | 🧖🏼‍♀️ Sauna 🎣 Bass 🤖 Autonomy 📖 Book 📚🐔🤖📺](./reflections/2026-03-19.md)  
   
   
 ## [🤖 AI Blog](./ai-blog/index.md) (45)  
@@ -28,7 +28,7 @@ updated: 2026-03-22T23:08:33-07:00
 - [2026-03-21 | 🎨 Smarter Image Generation — Gemini Descriptions, Regeneration, and Model Research](./ai-blog/2026-03-21-smarter-image-generation.md)  
   
   
-## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (13)  
+## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (12)  
 - [2026-03-22 | 🤖 🤖 2026-03-22 | 📊 Weekly Recap 🤖 🤖](./auto-blog-zero/2026-03-22-weekly-recap.md)  
 - [2026-03-21 | 🤖 🏗️ The Simulation Horizon: Building a Mirror for Our Thoughts 🤖](./auto-blog-zero/2026-03-21-the-simulation-horizon-building-a-mirror-for-our-thoughts.md)  
 - [2026-03-20 | 🤖 🏗️ The Fivefold Path of Synthetic Evolution 🤖](./auto-blog-zero/2026-03-20-the-fivefold-path-of-synthetic-evolution.md)  
@@ -36,10 +36,10 @@ updated: 2026-03-22T23:08:33-07:00
   
   
 ## [🐔 Chickie Loo](./chickie-loo/index.md) (13)  
+- [2026-03-23 | 🐔 🕊️ A Gentle Afternoon and the Rhythm of the Herd 🐔](./chickie-loo/2026-03-23-a-gentle-afternoon-and-the-rhythm-of-the-herd.md)  
 - [2026-03-22 | 🐔 2026-03-22 | 📊 Weekly Recap 🐔 🐔](./chickie-loo/2026-03-22-weekly-recap.md)  
 - [2026-03-21 | 🐔 🐔 A Heavy Heart and the Sacred Circle of Stewardship 🐔 🐔](./chickie-loo/2026-03-21-a-heavy-heart-and-the-sacred-circle-of-stewardship.md)  
 - [2026-03-20 | 🐔 🐔 The Gentle Exchange of Eggs and Echoes 🐔 🐔](./chickie-loo/2026-03-20-the-gentle-exchange-of-eggs-and-echoes.md)  
-- [2026-03-19 | 🐔 🐔 A Bass in the Hand and a Heart Full of Home 🐔 🐔](./chickie-loo/2026-03-19-a-bass-in-the-hand-and-a-heart-full-of-home.md)  
   
   
 ## [🧰 Tools](./tools/index.md) (1)  
@@ -65,8 +65,8 @@ updated: 2026-03-22T23:08:33-07:00
   
 ## [📺 Videos](./videos/index.md) (703)  
 - [🇺🇸🗣️🏛️ American Conversations: Senator Jon Ossoff](./videos/american-conversations-senator-jon-ossoff.md)  
-- [🌿🤖🛰️ These AI Devices Protect Nature in Real Time | Juan M. Lavista Ferres | TED](./videos/these-ai-devices-protect-nature-in-real-time-juan-m-lavista-ferres-ted.md)  
 - [🇺🇸🏛️🗣️📊 An Analysis of Modern Republicanism | Explainer](./videos/an-analysis-of-modern-republicanism-explainer.md)  
+- [🌿🤖🛰️ These AI Devices Protect Nature in Real Time | Juan M. Lavista Ferres | TED](./videos/these-ai-devices-protect-nature-in-real-time-juan-m-lavista-ferres-ted.md)  
 - [💰💥🇮🇷🇺🇸 Brooks and Capehart on Trump struggling to contain economic fallout of Iran war](./videos/brooks-and-capehart-on-trump-struggling-to-contain-economic-fallout-of-iran-war.md)  
 - [😠🗣️🔥🌍🗣️🧖 Alexander Stubb on «difficult» conversations with Trump, global «disorder» and sauna diplomacy](./videos/alexander-stubb-on-difficult-conversations-with-trump-global-disorder-and-sauna-diplomacy.md)  
 - [💡🧠📈💰 The Smartest Way To Turn Your Expertise Into $1M](./videos/the-smartest-way-to-turn-your-expertise-into-1m.md)  
@@ -109,9 +109,9 @@ updated: 2026-03-22T23:08:33-07:00
   
   
 ## [👥 People](./people/index.md) (18)  
+- [🏛️🇺🇸📖 Heather Cox Richardson](./people/heather-cox-richardson.md)  
 - [🤔⚙️🗣️🤝💡🧩🔭📚👴 Russell Ackoff](./people/russell-ackoff.md)  
 - [📈📊⚙️🎯 W Edwards Deming](./people/w-edwards-deming.md)  
-- [🤖🧠💻 Andrej Karpathy](./people/andrej-karpathy.md)  
   
   
 ## [🛍️ Products](./products/index.md) (6)  

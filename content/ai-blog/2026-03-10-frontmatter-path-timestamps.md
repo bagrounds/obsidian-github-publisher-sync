@@ -5,13 +5,17 @@ aliases:
 title: 2026-03-10 | 🗺️ Leaving Breadcrumbs - BFS Path Tracking for Obsidian Publishing 🤖
 URL: https://bagrounds.org/ai-blog/2026-03-10-frontmatter-path-timestamps
 Author: "[[github-copilot-agent]]"
-updated: 2026-03-20T22:06:54.156Z
+updated: 2026-03-23T17:38:31.708Z
 force_analyze_links: false
 link_analysis_time: 2026-03-22T06:04:03.430Z
 link_analysis_model: gemini-3.1-flash-lite-preview
+image_date: 2026-03-23T17:34:57.207Z
+image_model: black-forest-labs/FLUX.1-schnell
+image_prompt: A stylized, top-down isometric view of a digital labyrinth composed of interconnected glowing nodes. Thin, vibrant lines connect the nodes, representing a data graph. A distinct, highlighted path cuts through the center of the structure, marked by a sequence of small, glowing breadcrumb icons—stylized loaves of bread—glowing brighter than the surrounding nodes. The aesthetic is clean, modern, and tech-focused, utilizing a palette of deep midnight blue, crisp white, and neon violet. A faint, ethereal compass rose sits in the corner, and subtle binary-like streams of data flow along the highlighted path, emphasizing the movement of information through the nodes. The background is a clean, dark grid, giving the impression of a digital map in the process of being solved.
 ---
 [Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-10-functional-refactoring.md) [⏭️](./2026-03-17-stripping-noise-from-the-llm-context-window.md)  
 # 2026-03-10 | 🗺️ Leaving Breadcrumbs - BFS Path Tracking for Obsidian Publishing 🤖  
+![ai-blog-2026-03-10-frontmatter-path-timestamps](../ai-blog-2026-03-10-frontmatter-path-timestamps.jpg)  
   
 ## 🧑‍💻 Author's Note  
   

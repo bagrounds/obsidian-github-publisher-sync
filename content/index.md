@@ -42,12 +42,8 @@ updated: 2026-03-23T14:38:35-07:00
 - [2026-03-20 | 🐔 🐔 The Gentle Exchange of Eggs and Echoes 🐔 🐔](./chickie-loo/2026-03-20-the-gentle-exchange-of-eggs-and-echoes.md)  
   
   
-## [🧰 Tools](./tools/index.md) (1)  
-- [🧮 Calculator](./tools/calculator.md)  
-  
-  
-## [🎮 Games](./games/index.md) (1)  
-- [🧬 Valence](./games/valence.md)  
+## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (2)  
+- [2026-03-23 | 🏛️ The Forgotten Commons — Why Public Good Matters More Than Ever 🏛️](./systems-for-public-good/2026-03-23-the-forgotten-commons.md)  
   
   
 ## [📚 Books](./books/index.md) (958)  
@@ -123,6 +119,14 @@ updated: 2026-03-23T14:38:35-07:00
 ## [🎤 Presentations](./presentations/index.md) (2)  
 - [🤝 Generating Reliable Systems](./presentations/generating-reliable-systems.md)  
 - [🤖 Agentic Software Engineering](./presentations/agentic-software-engineering.md)  
+  
+  
+## [🎮 Games](./games/index.md) (1)  
+- [🧬 Valence](./games/valence.md)  
+  
+  
+## [🧰 Tools](./tools/index.md) (1)  
+- [🧮 Calculator](./tools/calculator.md)  
   
   
 ## 🔗 Profiles  

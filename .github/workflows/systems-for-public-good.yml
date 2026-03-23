@@ -1,8 +1,8 @@
-name: Chickie Loo — Daily Post
+name: Systems for Public Good — Daily Post
 
 on:
   schedule:
-    - cron: "0 15 * * *"
+    - cron: "0 17 * * *"
   workflow_dispatch: {}
 
 env:
@@ -49,7 +49,7 @@ jobs:
           OBSIDIAN_AUTH_TOKEN: ${{ secrets.OBSIDIAN_AUTH_TOKEN }}
           OBSIDIAN_VAULT_NAME: ${{ secrets.OBSIDIAN_VAULT_NAME }}
           OBSIDIAN_VAULT_CACHE_DIR: /tmp/obsidian-vault-cache
-        run: npx tsx scripts/pull-vault-posts.ts chickie-loo
+        run: npx tsx scripts/pull-vault-posts.ts systems-for-public-good
 
       - name: Check Gemini Quota (before)
         env:
@@ -61,13 +61,13 @@ jobs:
         id: generate
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-          BLOG_GEMINI_MODEL: ${{ vars.BLOG_GEMINI_MODEL || 'gemini-3.1-flash-lite-preview' }}
-          BLOG_PRIORITY_USER: ${{ vars.CHICKIE_LOO_PRIORITY_USER || 'ChickieLoo' }}
+          BLOG_GEMINI_MODEL: ${{ vars.BLOG_GEMINI_MODEL || 'gemini-2.5-flash' }}
+          BLOG_PRIORITY_USER: ${{ vars.SYSTEMS_FOR_PUBLIC_GOOD_PRIORITY_USER || 'bagrounds' }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           OBSIDIAN_AUTH_TOKEN: ${{ secrets.OBSIDIAN_AUTH_TOKEN }}
           OBSIDIAN_VAULT_NAME: ${{ secrets.OBSIDIAN_VAULT_NAME }}
           OBSIDIAN_VAULT_CACHE_DIR: /tmp/obsidian-vault-cache
-        run: npx tsx scripts/generate-blog-post.ts --series chickie-loo
+        run: npx tsx scripts/generate-blog-post.ts --series systems-for-public-good
 
       - name: Generate Blog Image
         continue-on-error: true
@@ -94,5 +94,5 @@ jobs:
           OBSIDIAN_VAULT_CACHE_DIR: /tmp/obsidian-vault-cache
         run: >-
           npx tsx scripts/sync-series-to-vault.ts
-          --series chickie-loo
+          --series systems-for-public-good
           --post "${{ steps.generate.outputs.post }}"

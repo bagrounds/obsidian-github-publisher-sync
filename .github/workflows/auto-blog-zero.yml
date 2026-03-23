@@ -49,27 +49,7 @@ jobs:
           OBSIDIAN_AUTH_TOKEN: ${{ secrets.OBSIDIAN_AUTH_TOKEN }}
           OBSIDIAN_VAULT_NAME: ${{ secrets.OBSIDIAN_VAULT_NAME }}
           OBSIDIAN_VAULT_CACHE_DIR: /tmp/obsidian-vault-cache
-        run: |
-          npx tsx -e "(async () => {
-            const { syncObsidianVault } = await import('./scripts/lib/obsidian-sync.ts');
-            const fs = await import('fs');
-            const path = await import('path');
-            const vaultDir = await syncObsidianVault({
-              authToken: process.env.OBSIDIAN_AUTH_TOKEN,
-              vaultName: process.env.OBSIDIAN_VAULT_NAME,
-            });
-            const seriesId = 'auto-blog-zero';
-            const vaultSeries = path.join(vaultDir, seriesId);
-            if (fs.existsSync(vaultSeries)) {
-              const posts = fs.readdirSync(vaultSeries).filter(f => f.match(/^\d{4}-\d{2}-\d{2}.*\.md$/));
-              console.log(JSON.stringify({ event: 'vault_posts_found', count: posts.length, posts }));
-              fs.mkdirSync(seriesId, { recursive: true });
-              posts.forEach(f => fs.copyFileSync(path.join(vaultSeries, f), path.join(seriesId, f)));
-              console.log(JSON.stringify({ event: 'vault_posts_copied', count: posts.length }));
-            } else {
-              console.log(JSON.stringify({ event: 'no_vault_series_dir', vaultSeries }));
-            }
-          })()"
+        run: npx tsx scripts/pull-vault-posts.ts auto-blog-zero
 
       - name: Check Gemini Quota (before)
         env:
@@ -98,14 +78,7 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           IMAGE_GEMINI_MODEL: ${{ vars.IMAGE_GEMINI_MODEL || 'gemini-3.1-flash-image-preview' }}
           PROMPT_DESCRIBER_MODEL: ${{ vars.PROMPT_DESCRIBER_MODEL || 'gemini-3.1-flash-lite-preview' }}
-        run: |
-          POST="${{ steps.generate.outputs.post }}"
-          if [ -n "$POST" ]; then
-            echo "🖼️ Generating image for: $POST"
-            npx tsx scripts/generate-blog-image.ts --note "$POST"
-          else
-            echo "No new post to generate image for"
-          fi
+        run: npx tsx scripts/generate-blog-image.ts --note "${{ steps.generate.outputs.post }}"
 
       - name: Check Gemini Quota (after)
         if: always()
@@ -114,40 +87,12 @@ jobs:
           GCP_SERVICE_ACCOUNT_KEY: ${{ secrets.GCP_SERVICE_ACCOUNT_KEY }}
         run: npx tsx scripts/check-gemini-quota.ts --label "after blog generation"
 
-      - name: Sync Posts to Obsidian Vault
+      - name: Sync to Obsidian Vault
         env:
           OBSIDIAN_AUTH_TOKEN: ${{ secrets.OBSIDIAN_AUTH_TOKEN }}
           OBSIDIAN_VAULT_NAME: ${{ secrets.OBSIDIAN_VAULT_NAME }}
           OBSIDIAN_VAULT_CACHE_DIR: /tmp/obsidian-vault-cache
-        run: |
-          SERIES="auto-blog-zero"
-          POST="${{ steps.generate.outputs.post }}"
-          if [ -n "$POST" ]; then
-            echo "📝 Syncing new post: $POST"
-            npx tsx scripts/sync-file-to-obsidian.ts "$POST" "$POST"
-            META="${SERIES}/.last-generate-metadata.json"
-            if [ -f "$META" ]; then
-              PREV_FILE=$(node -e "console.log(JSON.parse(require('fs').readFileSync('$META','utf-8')).previousPostFilename)")
-              PREV="${SERIES}/${PREV_FILE}"
-              echo "📝 Syncing updated previous post: $PREV"
-              if [ -f "$PREV" ]; then
-                npx tsx scripts/sync-file-to-obsidian.ts "$PREV" "$PREV"
-              else
-                echo "⚠️ Previous post file not found: $PREV"
-              fi
-            else
-              echo "ℹ️ No metadata file — first post in series"
-            fi
-            echo "📝 Syncing AGENTS.md: ${SERIES}/AGENTS.md"
-            npx tsx scripts/sync-file-to-obsidian.ts "${SERIES}/AGENTS.md" "${SERIES}/AGENTS.md"
-          else
-            echo "No new post generated today"
-          fi
-
-      - name: Sync Image to Obsidian Vault
-        if: ${{ success() }}
-        env:
-          OBSIDIAN_AUTH_TOKEN: ${{ secrets.OBSIDIAN_AUTH_TOKEN }}
-          OBSIDIAN_VAULT_NAME: ${{ secrets.OBSIDIAN_VAULT_NAME }}
-          OBSIDIAN_VAULT_CACHE_DIR: /tmp/obsidian-vault-cache
-        run: npx tsx scripts/sync-attachments-to-vault.ts attachments
+        run: >-
+          npx tsx scripts/sync-series-to-vault.ts
+          --series auto-blog-zero
+          --post "${{ steps.generate.outputs.post }}"

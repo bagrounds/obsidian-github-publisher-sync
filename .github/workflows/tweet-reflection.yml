@@ -84,21 +84,10 @@ jobs:
           DISABLE_TWITTER: ${{ vars.DISABLE_TWITTER || '' }}
           DISABLE_BLUESKY: ${{ vars.DISABLE_BLUESKY || '' }}
           DISABLE_MASTODON: ${{ vars.DISABLE_MASTODON || '' }}
-        run: |
-          # If a specific note or date was provided via manual trigger, use tweet-reflection.ts directly
-          if [ -n "${{ github.event.inputs.note }}" ] || [ -n "${{ github.event.inputs.date }}" ]; then
-            ARGS=""
-            if [ -n "${{ github.event.inputs.note }}" ]; then
-              ARGS="$ARGS --note ${{ github.event.inputs.note }}"
-            fi
-            if [ -n "${{ github.event.inputs.date }}" ]; then
-              ARGS="$ARGS --date ${{ github.event.inputs.date }}"
-            fi
-            npx tsx scripts/tweet-reflection.ts $ARGS
-          else
-            # Scheduled run: use auto-post orchestrator for BFS discovery
-            npx tsx scripts/auto-post.ts
-          fi
+        run: >-
+          bash scripts/run-social-post.sh
+          "${{ github.event.inputs.note || '' }}"
+          "${{ github.event.inputs.date || '' }}"
 
       - name: Check Gemini Quota (after)
         if: always()

@@ -31,9 +31,21 @@ const CHICKIE_LOO: BlogSeriesConfig = {
   postTimeUtc: "15:00",
 };
 
+const SYSTEMS_FOR_PUBLIC_GOOD: BlogSeriesConfig = {
+  id: "systems-for-public-good",
+  name: "Systems for Public Good",
+  icon: "🏛️",
+  author: "[[systems-for-public-good]]",
+  baseUrl: "https://bagrounds.org/systems-for-public-good",
+  priorityUser: "bagrounds",
+  navLink: "[[index|Home]] > [[systems-for-public-good/index|🏛️ Systems for Public Good]]",
+  postTimeUtc: "17:00",
+};
+
 export const BLOG_SERIES: ReadonlyMap<string, BlogSeriesConfig> = new Map([
   [AUTO_BLOG_ZERO.id, AUTO_BLOG_ZERO],
   [CHICKIE_LOO.id, CHICKIE_LOO],
+  [SYSTEMS_FOR_PUBLIC_GOOD.id, SYSTEMS_FOR_PUBLIC_GOOD],
 ]);
 
 export const lookupSeries = (seriesId: string): BlogSeriesConfig => {

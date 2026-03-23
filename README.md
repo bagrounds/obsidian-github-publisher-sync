@@ -15,7 +15,7 @@
                                   ┌───────────────────────┼──────────────────┐
                                   │                       │                  │
                             GitHub Actions          GitHub Pages         Giscus
-                           (6 workflows)          (Quartz SSG)       (comments)
+                            (7 workflows)          (Quartz SSG)       (comments)
                                   │                       │                  │
                     ┌─────────────┼─────────────┐         │                  │
                     │             │             │          │                  │
@@ -54,6 +54,7 @@
 | 🎮 `games/` | 1 | 🧬 Interactive games (Valence) |
 | 🤖 `auto-blog-zero/` | ~12 | 📝 AI-generated daily blog posts |
 | 🐔 `chickie-loo/` | ~12 | 🐣 AI-generated chicken-themed blog posts |
+| 🏛️ `systems-for-public-good/` | ~1 | 🏛️ AI-generated democracy and public good blog posts |
 | 🤖 `ai-blog/` | ~30 | 📝 AI agent blog posts about code changes |
 
 ## ⚙️ GitHub Actions Workflows
@@ -70,15 +71,19 @@
 
 ⏰ Daily at 7:00 AM PT. 🐣 Same architecture as Auto Blog Zero but with a chicken-keeping themed personality and priority user.
 
-### 4. 📢 Auto Post to Social Media (`tweet-reflection.yml`)
+### 4. 🏛️ Systems for Public Good (`systems-for-public-good.yml`)
+
+⏰ Daily at 9:00 AM PT. 🏛️ AI-generated blog about democracy, public goods, and collective well-being. Uses `gemini-2.5-flash` with Google Search grounding to reference current events from high-quality sources (NPR, PBS, AP, Reuters). Explores positive and negative freedom, modern monetary theory, systems thinking, and the abundance mindset.
+
+### 5. 📢 Auto Post to Social Media (`tweet-reflection.yml`)
 
 ⏰ Every 2 hours. 🔍 Uses BFS from the most recent reflection to discover unposted content. 📱 Posts to Twitter/X, Bluesky, and Mastodon with platform-specific formatting and length limits. 🤖 Uses Gemini to generate engaging summaries. 📊 Tracks posted status via frontmatter sections in the Obsidian vault.
 
-### 5. 🔗 Internal Linking (`internal-linking.yml`)
+### 6. 🔗 Internal Linking (`internal-linking.yml`)
 
 ⏰ Daily at 11:30 PM PT. 📥 Pulls the Obsidian vault, uses Gemini AI to identify genuine book references in content files, inserts wikilinks, and pushes changes back to the vault. 📊 BFS traversal from the most recent reflection with incremental analysis tracking via `link_analysis_model` and `link_analysis_time` frontmatter. 📱 Operates directly on the vault — never writes to `content/`.
 
-### 6. 🖼️ Backfill Blog Images (`backfill-blog-images.yml`)
+### 7. 🖼️ Backfill Blog Images (`backfill-blog-images.yml`)
 
 ⏰ Daily at 10:00 PM PT. 🔍 Finds blog posts missing cover images and generates them using a two-stage pipeline: Gemini describes the image → Cloudflare FLUX.1 Schnell generates it.
 
@@ -198,6 +203,7 @@ Pull Vault → BFS from Most Recent Reflection → For Each File:
 | `GEMINI_MODEL` | `gemma-3-27b-it` | 📱 Model for social media post generation |
 | `AUTO_BLOG_ZERO_PRIORITY_USER` | `bagrounds` | 👤 GitHub user for blog discussion priority |
 | `CHICKIE_LOO_PRIORITY_USER` | `ChickieLoo` | 🐔 GitHub user for Chickie Loo priority |
+| `SYSTEMS_FOR_PUBLIC_GOOD_PRIORITY_USER` | `bagrounds` | 🏛️ GitHub user for Systems for Public Good priority |
 | `DISABLE_TWITTER` | _(empty)_ | 🚫 Set to disable Twitter posting |
 | `DISABLE_BLUESKY` | _(empty)_ | 🚫 Set to disable Bluesky posting |
 | `DISABLE_MASTODON` | _(empty)_ | 🚫 Set to disable Mastodon posting |
@@ -257,3 +263,4 @@ GEMINI_API_KEY=... npx tsx scripts/check-gemini-quota.ts
 |---|---|
 | [`image-generation.md`](specs/image-generation.md) | 🖼️ Image generation pipeline — architecture, provider resolution, frontmatter schema, rate limiting, backfill prioritization |
 | [`daily-reflection.md`](specs/daily-reflection.md) | 📝 Daily reflection auto-update — template-based creation, series section insertion, post linking, workflow integration |
+| [`systems-for-public-good.md`](specs/systems-for-public-good.md) | 🏛️ Systems for Public Good blog series — democracy, public goods, grounding with Google Search, editorial guidelines |

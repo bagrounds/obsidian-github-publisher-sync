@@ -16,15 +16,15 @@ date: 2026-03-23
 
 ## 🔬 The Approach
 
-🧠 Three plans were considered:
+🧠 Three plans were considered, then refined through iteration:
 
 | 📋 Plan | ✅ Pros | ❌ Cons |
 |---|---|---|
-| 📚 Library + CLI + Workflow | 🧪 Testable, 🔌 explicit, 🏗️ clean separation | 📁 More files |
-| 🔧 Integrate into generate-blog-post.ts | 🎯 Single step | 🚫 No vault access during generation |
+| 📚 Library + CLI + Separate Workflow Step | 🧪 Testable, 🔌 explicit | 📋 Extra step, 🔄 filename passing between steps |
+| 🔧 Integrate into generate-blog-post.ts | 🎯 Single step, 📎 filename already in variable | 🧩 Needs vault credentials |
 | 🪝 Hook into sync-file-to-obsidian.ts | 🤫 Implicit | 🧪 Hard to test, 🔀 violates SRP |
 
-🏆 Plan 1 won decisively — the library approach provides testable pure functions, an explicit workflow step, and follows the existing codebase patterns.
+🏆 The winning approach combines the best of Plans 1 and 2: the library stays separate for testability, but the orchestration is integrated directly into `generate-blog-post.ts` — the one place that already knows the exact filename, title, and series config.
 
 ## 🏗️ The Implementation
 
@@ -94,19 +94,23 @@ date: 2026-03-23
 
 ## ⚙️ Workflow Integration
 
-🔌 Both `auto-blog-zero.yml` and `chickie-loo.yml` now include an "Update Daily Reflection" step that runs after syncing blog posts and before syncing images.
+🔌 The daily reflection update is integrated directly into `generate-blog-post.ts` — no separate workflow step needed.
+
+🎯 When Obsidian vault credentials (`OBSIDIAN_AUTH_TOKEN`, `OBSIDIAN_VAULT_NAME`) are available as environment variables, the script automatically:
+
+1. 📥 Pulls the vault
+2. 📝 Creates/updates the daily reflection
+3. 📤 Pushes changes back
+
+🚫 When credentials are absent (e.g. local development, dry runs), the reflection update is silently skipped.
+
+📎 The script also writes the exact post path to `$GITHUB_OUTPUT` — no filename guessing via glob patterns — so downstream steps (image generation, vault sync) reference the precise file that was generated.
 
 🐔 Chickie Loo runs at 3 PM PT — it creates the reflection and adds its section.
 
-🤖 Auto Blog Zero runs at 4 PM PT — it finds the existing reflection and adds its section.
+🤖 Auto Blog Zero runs at 4 PM PT — it finds the existing reflection and appends its section.
 
-☁️ Each workflow run involves multiple vault sync cycles because the existing `sync-file-to-obsidian.ts` script is designed as a standalone tool — each call does its own pull → write → push cycle.
-
-🔄 The Update Daily Reflection step adds one more pull → modify → push cycle on top of the existing per-file syncs.
-
-🏗️ A future optimization could consolidate all vault modifications into a single pull → batch edits → push, but the current per-file approach is simpler, leverages existing tested tools, and is fully idempotent.
-
-📌 The "Generate Blog Post" step now captures the created file path as a step output, so all subsequent steps reference the exact file that was generated — no re-globbing.
+🆕 Adding a new blog series requires just two changes: add a config entry to `blog-series-config.ts` and create a workflow file — the reflection update comes for free.
 
 ## 📊 Results
 

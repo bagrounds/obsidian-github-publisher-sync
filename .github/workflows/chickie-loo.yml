@@ -84,11 +84,10 @@ jobs:
           BLOG_GEMINI_MODEL: ${{ vars.BLOG_GEMINI_MODEL || 'gemini-3.1-flash-lite-preview' }}
           BLOG_PRIORITY_USER: ${{ vars.CHICKIE_LOO_PRIORITY_USER || 'ChickieLoo' }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          SERIES="chickie-loo"
-          npx tsx scripts/generate-blog-post.ts --series ${SERIES}
-          POST=$(ls -1 ${SERIES}/$(date +%Y-%m-%d)*.md 2>/dev/null | head -1)
-          echo "post=${POST}" >> $GITHUB_OUTPUT
+          OBSIDIAN_AUTH_TOKEN: ${{ secrets.OBSIDIAN_AUTH_TOKEN }}
+          OBSIDIAN_VAULT_NAME: ${{ secrets.OBSIDIAN_VAULT_NAME }}
+          OBSIDIAN_VAULT_CACHE_DIR: /tmp/obsidian-vault-cache
+        run: npx tsx scripts/generate-blog-post.ts --series chickie-loo
 
       - name: Generate Blog Image
         continue-on-error: true
@@ -143,22 +142,6 @@ jobs:
             npx tsx scripts/sync-file-to-obsidian.ts "${SERIES}/AGENTS.md" "${SERIES}/AGENTS.md"
           else
             echo "No new post generated today"
-          fi
-
-      - name: Update Daily Reflection
-        if: ${{ success() }}
-        env:
-          OBSIDIAN_AUTH_TOKEN: ${{ secrets.OBSIDIAN_AUTH_TOKEN }}
-          OBSIDIAN_VAULT_NAME: ${{ secrets.OBSIDIAN_VAULT_NAME }}
-          OBSIDIAN_VAULT_CACHE_DIR: /tmp/obsidian-vault-cache
-        run: |
-          POST="${{ steps.generate.outputs.post }}"
-          if [ -n "$POST" ]; then
-            SERIES="chickie-loo"
-            echo "📝 Updating daily reflection for: $POST"
-            npx tsx scripts/update-daily-reflection.ts --series ${SERIES} --post "$POST"
-          else
-            echo "No new post to update reflection for"
           fi
 
       - name: Sync Image to Obsidian Vault

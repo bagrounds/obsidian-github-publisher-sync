@@ -13,6 +13,8 @@ import {
   appendModelSignature,
   updatePreviousPost,
 } from "./lib/blog-series.ts";
+import { updateDailyReflection } from "./lib/daily-reflection.ts";
+import { syncObsidianVault, pushObsidianVault } from "./lib/obsidian-sync.ts";
 
 const DEFAULT_BLOG_MODEL = "gemini-3.1-flash-lite-preview";
 
@@ -99,6 +101,48 @@ export const generateSlug = (title: string): string => {
 const stripCodeFences = (raw: string): string =>
   raw.replace(/^```(?:markdown|md)?\s*\n/, "").replace(/\n```\s*$/, "");
 
+const writeGitHubOutput = (key: string, value: string): void => {
+  const outputPath = process.env.GITHUB_OUTPUT;
+  if (outputPath) {
+    fs.appendFileSync(outputPath, `${key}=${value}\n`);
+    log({ event: "github_output_written", key, value });
+  }
+};
+
+const updateReflectionIfCredentialsAvailable = async (
+  series: { readonly id: string; readonly name: string; readonly icon: string },
+  today: string,
+  filename: string,
+  title: string,
+): Promise<void> => {
+  const authToken = process.env.OBSIDIAN_AUTH_TOKEN;
+  const vaultName = process.env.OBSIDIAN_VAULT_NAME;
+  if (!authToken || !vaultName) {
+    log({ event: "reflection_skip", reason: "no_obsidian_credentials" });
+    return;
+  }
+
+  const vaultDir = await syncObsidianVault({ authToken, vaultName });
+  log({ event: "vault_synced_for_reflection", vaultDir });
+
+  const seriesConfig = BLOG_SERIES.get(series.id);
+  if (!seriesConfig) {
+    log({ event: "reflection_skip", reason: "series_not_in_config", seriesId: series.id });
+    return;
+  }
+
+  const result = updateDailyReflection(vaultDir, today, seriesConfig, filename, title);
+  log({ event: "reflection_updated", ...result });
+
+  const hasChanges = result.reflectionCreated || result.sectionCreated || result.linkInserted || result.forwardLinkAdded;
+  if (hasChanges) {
+    await pushObsidianVault(vaultDir, { authToken });
+    log({ event: "vault_pushed_reflection" });
+  } else {
+    log({ event: "reflection_no_changes" });
+  }
+};
+
 const generate = async (): Promise<void> => {
   const config = parseArgs(process.argv);
   const apiKey = process.env.GEMINI_API_KEY;
@@ -169,6 +213,12 @@ const generate = async (): Promise<void> => {
   } else {
     log({ event: "no_previous_post", reason: "first post in series" });
   }
+
+  const postRelativePath = `${series.id}/${filename}`;
+  writeGitHubOutput("post", postRelativePath);
+
+  await updateReflectionIfCredentialsAvailable(series, today, filename, parsed.title);
+
   log({ event: "generate_complete", series: series.id, filename, backLinkTarget: previousPost?.filename });
 };
 

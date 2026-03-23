@@ -14,29 +14,34 @@
 |---|---|---|
 | 📚 Library | `scripts/lib/daily-reflection.ts` | 🔧 Pure functions for reflection creation and post link insertion |
 | 🧪 Tests | `scripts/lib/daily-reflection.test.ts` | ✅ 40 tests covering all pure and I/O functions |
-| 🖥️ CLI | `scripts/update-daily-reflection.ts` | 🚀 Entry point for workflow integration |
+| 🔌 Integration | `scripts/generate-blog-post.ts` | 📝 Calls reflection update after generating a post |
+| 🖥️ CLI | `scripts/update-daily-reflection.ts` | 🚀 Standalone entry point for manual use |
 | ⚙️ Workflow | `.github/workflows/auto-blog-zero.yml` | 🤖 Auto Blog Zero daily post workflow |
 | ⚙️ Workflow | `.github/workflows/chickie-loo.yml` | 🐔 Chickie Loo daily post workflow |
 
 ### 🔄 Data Flow
 
 ```
-📝 Blog Post Generated
-        ↓
-🖥️ update-daily-reflection.ts CLI
-        ↓
-📖 Read post title from frontmatter
-        ↓
+📝 generate-blog-post.ts
+         ↓
+🤖 Generate blog post (Gemini AI)
+         ↓
+💾 Write post file to series dir
+         ↓
+📎 Write exact path to $GITHUB_OUTPUT
+         ↓
+🔑 Check for OBSIDIAN_AUTH_TOKEN + OBSIDIAN_VAULT_NAME
+         ↓ (if available)
 ☁️ Sync Obsidian Vault (pull)
-        ↓
+         ↓
 📄 Ensure daily reflection exists
    ├── 🆕 Create from template if missing
    └── 🔗 Add forward link to previous day
-        ↓
+         ↓
 📎 Insert post link in reflection
    ├── 📌 Create series section if missing
    └── ➕ Append link to existing section
-        ↓
+         ↓
 ☁️ Push Obsidian Vault
 ```
 
@@ -111,21 +116,25 @@ tags:
 
 ## ⚙️ Workflow Integration
 
-🔌 Added as a step in both `auto-blog-zero.yml` and `chickie-loo.yml` workflows, after the "Sync Posts to Obsidian Vault" step and before the "Sync Image to Obsidian Vault" step.
+🔌 The daily reflection update is integrated directly into `generate-blog-post.ts` and runs automatically when Obsidian vault credentials are available as environment variables.
 
-```yaml
-- name: Update Daily Reflection
-  env:
-    OBSIDIAN_AUTH_TOKEN: ${{ secrets.OBSIDIAN_AUTH_TOKEN }}
-    OBSIDIAN_VAULT_NAME: ${{ secrets.OBSIDIAN_VAULT_NAME }}
-    OBSIDIAN_VAULT_CACHE_DIR: /tmp/obsidian-vault-cache
-  run: |
-    SERIES="<series-id>"
-    POST=$(ls -1 ${SERIES}/$(date +%Y-%m-%d)*.md 2>/dev/null | head -1)
-    if [ -n "$POST" ]; then
-      npx tsx scripts/update-daily-reflection.ts --series ${SERIES} --post "$POST"
-    fi
-```
+🔑 When `OBSIDIAN_AUTH_TOKEN` and `OBSIDIAN_VAULT_NAME` are set, the script:
+1. 📥 Pulls the vault via `syncObsidianVault`
+2. 📝 Calls `updateDailyReflection` with the known filename and title
+3. 📤 Pushes changes via `pushObsidianVault` (only if reflection was modified)
+
+🚫 When credentials are absent (local development, dry runs), the reflection update is silently skipped.
+
+📎 The script also writes the exact post path to `$GITHUB_OUTPUT` so downstream workflow steps reference the precise file — no glob-based filename guessing.
+
+🖥️ The standalone CLI (`scripts/update-daily-reflection.ts`) remains available for manual use.
+
+### ➕ Adding a New Series
+
+🆕 To add a new blog series with automatic reflection updates:
+1. 📋 Add a `BlogSeriesConfig` entry to `scripts/lib/blog-series-config.ts`
+2. ⚙️ Create a workflow file (copy `chickie-loo.yml`, change series id and priority user)
+3. ✅ The reflection update comes for free — no additional configuration needed
 
 ## 🧪 Testing
 

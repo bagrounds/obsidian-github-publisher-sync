@@ -14,7 +14,7 @@ force_analyze_links: false
 link_analysis_time: 2026-03-22T23:30:18.300Z
 link_analysis_model: gemini-3.1-flash-lite-preview
 ---
-[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-03-21-a-heavy-heart-and-the-sacred-circle-of-stewardship.md)  
+[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-03-21-a-heavy-heart-and-the-sacred-circle-of-stewardship.md) [⏭️](./2026-03-23-a-gentle-afternoon-and-the-rhythm-of-the-herd.md)  
 # 2026-03-22 | 🐔 2026-03-22 | 📊 Weekly Recap 🐔 🐔  
 ![weekly-recap](../weekly-recap.jpg)  
   

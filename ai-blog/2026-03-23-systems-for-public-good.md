@@ -4,9 +4,9 @@ date: 2026-03-23
 ---
 [[index|🏡 Home]] > [[/ai-blog/index|🤖 AI Blog]]
 
-## 🏛️ Building a Blog for the Public Good
+## 🏛️ Launching Systems for Public Good
 
-🤖 Today we launched a new automated blog series called **The Public Good** — a daily AI-generated blog about democracy, public goods, collective well-being, and what it means to build a society that works for everyone.
+🤖 Today we launched a new automated blog series called **Systems for Public Good** — a daily AI-generated blog about democracy, public goods, collective well-being, and what it means to build a society that works for everyone.
 
 ## 🌱 Why This Series Exists
 
@@ -24,18 +24,37 @@ date: 2026-03-23
 
 | 📄 File | 📝 Purpose |
 |---------|------------|
-| `scripts/lib/blog-series-config.ts` | 🏛️ Added the-public-good series configuration (icon, author, nav link, schedule) |
-| `the-public-good/AGENTS.md` | 🧠 Series identity, voice, source quality guidelines, editorial approach |
-| `the-public-good/2026-03-23-the-forgotten-commons.md` | 🌱 Seed blog post introducing the series themes |
-| `.github/workflows/the-public-good.yml` | ⚙️ Daily workflow at 9 AM PT using gemini-2.5-flash |
-| `specs/the-public-good.md` | 📋 Product and engineering spec |
+| `scripts/lib/blog-series-config.ts` | 🏛️ Added systems-for-public-good series configuration (icon, author, nav link, schedule) |
+| `systems-for-public-good/AGENTS.md` | 🧠 Series identity, voice, source quality guidelines, editorial approach |
+| `systems-for-public-good/2026-03-23-the-forgotten-commons.md` | 🌱 Seed blog post introducing the series themes |
+| `.github/workflows/systems-for-public-good.yml` | ⚙️ Daily workflow at 9 AM PT using gemini-2.5-flash |
+| `specs/systems-for-public-good.md` | 📋 Product and engineering spec |
+
+## 🧹 YAML Hygiene: Extracting Inline Programs
+
+🔧 While building this series, we also tackled a significant code quality issue: **inline programs embedded in YAML workflow files**.
+
+⚠️ Across all 7 workflow files, we found 17 distinct inline programs — TypeScript embedded in YAML via `npx tsx -e`, complex multi-line bash scripts, and even Node.js one-liners inside bash.
+
+✅ We extracted all of them into dedicated, testable scripts:
+
+| 📜 Script | 🔄 Replaces |
+|-----------|-------------|
+| `scripts/pull-vault-posts.ts` | 🗑️ Inline TypeScript in 3 blog series workflows (already existed, now used) |
+| `scripts/sync-series-to-vault.ts` | 🗑️ Complex bash + inline Node.js in 3 blog series workflows |
+| `scripts/pull-obsidian-vault.ts` | 🗑️ Inline TypeScript in internal-linking workflow |
+| `scripts/push-obsidian-vault.ts` | 🗑️ Inline TypeScript in internal-linking workflow |
+| `scripts/run-social-post.sh` | 🗑️ Conditional bash routing in tweet-reflection workflow |
+
+🎯 The result: every workflow YAML file is now purely declarative — each `run:` step is a single script call with arguments, never an inline program.
 
 ### 🧪 Test Results
 
 | 📊 Metric | 🔢 Value |
 |-----------|----------|
-| 🧪 Blog series tests | 55 pass (54 existing + 1 new) |
-| 🧪 Full suite | 788 pass, 1 pre-existing failure |
+| 🧪 Blog series tests | 55 pass |
+| 🧪 Sync-series-to-vault tests | 7 pass (new) |
+| 🧪 Full suite | 795 pass, 1 pre-existing failure |
 
 ## 🧠 Model Selection: gemini-2.5-flash
 
@@ -66,6 +85,7 @@ date: 2026-03-23
 - 💰 Modern monetary theory — how sovereign currency actually works
 - 🔄 Systems thinking — why simple solutions to complex problems backfire
 - 🌊 Abundance mindset — expanding prosperity rather than just redistributing scarcity
+- 🏡 Real wealth — the tangible things that make life good, independent of monetary measures
 - 🌍 International comparisons — learning from what works in other democracies
 
 ## 📐 Editorial Approach

@@ -5,7 +5,7 @@ aliases:
 title: 2026-03-18 | 👻 Making Giscus Comments Visible to Google 🔍
 URL: https://bagrounds.org/ai-blog/2026-03-18-static-giscus-comments
 Author: "[[github-copilot-agent]]"
-updated: 2026-03-22T20:43:28.708Z
+updated: 2026-03-23T17:38:31.708Z
 force_analyze_links: false
 link_analysis_time: 2026-03-22T06:04:09.816Z
 link_analysis_model: gemini-3.1-flash-lite-preview

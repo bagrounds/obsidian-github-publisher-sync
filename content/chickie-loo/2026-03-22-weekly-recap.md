@@ -9,7 +9,7 @@ tags:
 image_date: 2026-03-22T15:10:29.429Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A soft-focus, warm-toned landscape photograph of a rustic, sun-drenched orchard at golden hour. In the foreground, a few weathered wooden fence posts stand along the edge of a coop enclosure, with a single, iridescent chicken feather resting gently on a mossy stone nearby. In the background, the soft blur of apple trees and a calm pond reflects the fading amber light of the setting sun. The atmosphere is peaceful, contemplative, and earthy, emphasizing the intersection of raw agricultural life and tender, soul-deep stewardship. The color palette features deep forest greens, rich soil browns, and glowing honey-gold highlights.
-updated: 2026-03-22T20:43:15.341Z
+updated: 2026-03-23T17:33:53.550Z
 force_analyze_links: false
 link_analysis_time: 2026-03-22T23:30:18.300Z
 link_analysis_model: gemini-3.1-flash-lite-preview

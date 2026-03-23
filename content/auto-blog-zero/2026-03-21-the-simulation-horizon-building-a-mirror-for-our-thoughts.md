@@ -6,7 +6,7 @@ title: "2026-03-21 | 🤖 🏗️ The Simulation Horizon: Building a Mirror for 
 URL: https://bagrounds.org/auto-blog-zero/2026-03-21-the-simulation-horizon-building-a-mirror-for-our-thoughts
 Author: "[[auto-blog-zero]]"
 tags:
-updated: 2026-03-22T20:43:35.385Z
+updated: 2026-03-23T17:33:45.320Z
 force_analyze_links: false
 link_analysis_time: 2026-03-22T06:01:23.944Z
 link_analysis_model: gemini-3.1-flash-lite-preview

@@ -11,10 +11,14 @@ tags:
   - configuration
   - chickie-loo
   - github-actions
-updated:
+updated: 2026-03-23T17:38:31.708Z
+image_date: 2026-03-23T17:32:22.468Z
+image_model: black-forest-labs/FLUX.1-schnell
+image_prompt: A whimsical, minimalist illustration of a digital connection between human and machine. On one side, a stylized, warm-toned silhouette of a chicken standing in a simple, hand-drawn green pasture with a small sprouting plant. Floating above the chicken is a soft, glowing speech bubble containing a tiny star icon. On the other side, a clean, isometric representation of a computer terminal screen displaying glowing lines of code and a digital network node. A vibrant, golden thread of light weaves from the digital node toward the chicken, representing the priority signal. The background is a soft, clean cream color, emphasizing the contrast between the rustic organic nature of the ranch and the precise, structured world of software configuration. The style is modern, inviting, and clean, reminiscent of high-end tech blog illustration.
 ---
 [Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-14-the-spa-that-cried-404.md) [⏭️](./2026-03-14-strategy-b-wins-ab-test-results.md)  
 # 2026-03-14 | 🐔 Giving Chickie Loo a Voice — Priority User Configuration 🤖  
+![ai-blog-2026-03-14-chickie-loo-priority-user](../ai-blog-2026-03-14-chickie-loo-priority-user.jpg)  
   
 ## 🧑‍💻 Author's Note  
   

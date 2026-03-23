@@ -15,10 +15,14 @@ tags:
   - root-cause-analysis
   - typescript
   - atproto
-updated:
+updated: 2026-03-23T17:38:31.708Z
+image_date: 2026-03-23T17:31:57.089Z
+image_model: black-forest-labs/FLUX.1-schnell
+image_prompt: A high-contrast, minimalist digital illustration featuring a stylized, blue holographic butterfly—representing the Bluesky platform—trapped inside a glowing glass server rack. The butterfly is glowing softly, casting light onto a series of digital file folders floating nearby, many of which are marked with ominous, red 404 stamps. In the foreground, a sleek, robotic magnifying glass hovers over a broken data stream, bridging the gap between a jagged, crumbling traditional web architecture (represented by stone-like HTTP status blocks) and a modern, fluid fiber-optic network. The color palette relies on deep navy, electric blue, and crisp white, with sharp, clinical lines that evoke a sense of high-tech debugging and architectural investigation. The scene captures the friction between legacy web status codes and the dynamic, invisible nature of modern single-page applications.
 ---
 [Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-13-building-a-safety-net-comprehensive-testing-for-domination.md) [⏭️](./2026-03-14-chickie-loo-priority-user.md)  
 # 2026-03-14 | 🕵️ The SPA That Cried 404 — Why Bluesky Ate Our Experiment Records 🤖  
+![ai-blog-2026-03-14-the-spa-that-cried-404](../ai-blog-2026-03-14-the-spa-that-cried-404.jpg)  
   
 ## 🧑‍💻 Author's Note  
   

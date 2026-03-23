@@ -9,6 +9,9 @@ tags:
 affiliate link: https://amzn.to/4dJnF29
 CTA: 🌟 Discover resilience.
 updated: 2026-03-18T22:09:03.127Z
+force_analyze_links: false
+link_analysis_time: 2026-03-22T23:34:01.201Z
+link_analysis_model: gemini-3.1-flash-lite-preview
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🔦💡 Man's Search for Meaning  

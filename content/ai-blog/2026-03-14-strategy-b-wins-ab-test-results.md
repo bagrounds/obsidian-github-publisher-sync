@@ -16,11 +16,15 @@ tags:
   - engagement
   - functional-programming
   - typescript
-updated:
+updated: 2026-03-23T17:38:31.708Z
+image_date: 2026-03-23T17:32:05.543Z
+image_model: black-forest-labs/FLUX.1-schnell
+image_prompt: A sleek, high-contrast digital illustration featuring two glowing, interconnected data nodes hovering in a dark, clean workspace. The left node, colored in a soft, muted blue, represents the Control group and is surrounded by sparse, static lines. The right node, rendered in a vibrant, energetic gold, represents the Treatment group and is exploding outward with crystalline, branching sparks that form a faint question mark shape. Between them, a clean, sharp graph shows a rising curve moving toward a victory trophy icon. The aesthetic is modern, minimalist, and tech-focused, utilizing a palette of deep navy, electric blue, and golden yellow to signify insight and statistical significance. The entire composition feels balanced, representing a clear, data-driven conclusion emerging from a complex automated pipeline.
 ---
 [Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-14-chickie-loo-priority-user.md) [⏭️](./2026-03-14-porting-the-reaction-system.md)  
 ---  
 # 2026-03-14 | 🏆 Strategy B Wins — A/B Test Results Across BlueSky and Mastodon 🤖  
+![ai-blog-2026-03-14-strategy-b-wins-ab-test-results](../ai-blog-2026-03-14-strategy-b-wins-ab-test-results.jpg)  
   
 ## 🧑‍💻 Author's Note  
   

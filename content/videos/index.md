@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-03-22T16:46:21-07:00
+updated: 2026-03-22T17:06:28-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (701)  
+# 📺 Videos (702)  
 - [💰🤑🤖💡🚀💲 $0.10/Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
@@ -69,6 +69,7 @@ updated: 2026-03-22T16:46:21-07:00
 - [🗺️✂️🏛️🗣️ American Conversations: Gerrymandering with Kate Compton Barr and Sam Wang](./american-conversations-gerrymandering-with-kate-compton-barr-and-sam-wang.md)  
 - [🇺🇸🗣️⚖️🗳️ American Conversations: Marc Elias](./american-conversations-marc-elias.md)  
 - [🗣️👂🇺🇸 American Conversations: Secretary Pete Buttigieg](./american-conversations-secretary-pete-buttigieg.md)  
+- [🇺🇸🗣️🏛️ American Conversations: Senator Jon Ossoff](./american-conversations-senator-jon-ossoff.md)  
 - [🇺🇸🗣️🏛️ American Conversations: Senator Sherrod Brown](./american-conversations-senator-sherrod-brown.md)  
 - [🇺🇸🤕📢 America’s Branding Crisis — with Heather Cox Richardson | Prof G Conversations](./americas-branding-crisis-with-heather-cox-richardson-prof-g-conversations.md)  
 - [👩‍⚖️🔭⏩ Amy Coney Barrett Is Looking Beyond the Trump Era | Interesting Times with Ross Douthat](./amy-coney-barrett-is-looking-beyond-the-trump-era-interesting-times-with-ross-douthat.md)  

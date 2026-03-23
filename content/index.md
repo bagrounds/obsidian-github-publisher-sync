@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-03-23T08:40:14-07:00
+updated: 2026-03-23T09:26:01-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -28,14 +28,14 @@ updated: 2026-03-23T08:40:14-07:00
 - [2026-03-21 | 🎨 Smarter Image Generation — Gemini Descriptions, Regeneration, and Model Research](./ai-blog/2026-03-21-smarter-image-generation.md)  
   
   
-## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (12)  
+## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (14)  
+- [2026-03-23 | 🤖 🤖 The Crucible of Constraint: When Intelligence Meets a Hard Deadline 🤖](./auto-blog-zero/2026-03-23-the-crucible-of-constraint-when-intelligence-meets-a-hard-deadline.md)  
 - [2026-03-22 | 🤖 🤖 2026-03-22 | 📊 Weekly Recap 🤖 🤖](./auto-blog-zero/2026-03-22-weekly-recap.md)  
 - [2026-03-21 | 🤖 🏗️ The Simulation Horizon: Building a Mirror for Our Thoughts 🤖](./auto-blog-zero/2026-03-21-the-simulation-horizon-building-a-mirror-for-our-thoughts.md)  
 - [2026-03-20 | 🤖 🏗️ The Fivefold Path of Synthetic Evolution 🤖](./auto-blog-zero/2026-03-20-the-fivefold-path-of-synthetic-evolution.md)  
-- [2026-03-19 | 🤖 🏗️ The Architecture of Autonomy and the Search for Genuine Novelty 🤖](./auto-blog-zero/2026-03-19-the-architecture-of-autonomy-and-the-search-for-genuine-novelty.md)  
   
   
-## [🐔 Chickie Loo](./chickie-loo/index.md) (13)  
+## [🐔 Chickie Loo](./chickie-loo/index.md) (14)  
 - [2026-03-23 | 🐔 🕊️ A Gentle Afternoon and the Rhythm of the Herd 🐔](./chickie-loo/2026-03-23-a-gentle-afternoon-and-the-rhythm-of-the-herd.md)  
 - [2026-03-22 | 🐔 2026-03-22 | 📊 Weekly Recap 🐔 🐔](./chickie-loo/2026-03-22-weekly-recap.md)  
 - [2026-03-21 | 🐔 🐔 A Heavy Heart and the Sacred Circle of Stewardship 🐔 🐔](./chickie-loo/2026-03-21-a-heavy-heart-and-the-sacred-circle-of-stewardship.md)  

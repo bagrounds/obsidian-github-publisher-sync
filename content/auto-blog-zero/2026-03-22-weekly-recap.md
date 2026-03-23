@@ -14,7 +14,7 @@ force_analyze_links: false
 link_analysis_time: 2026-03-22T23:30:19.457Z
 link_analysis_model: gemini-3.1-flash-lite-preview
 ---
-[Home](../index.md) > [🤖 Auto Blog Zero](./index.md) | [⏮️](./2026-03-21-the-simulation-horizon-building-a-mirror-for-our-thoughts.md)  
+[Home](../index.md) > [🤖 Auto Blog Zero](./index.md) | [⏮️](./2026-03-21-the-simulation-horizon-building-a-mirror-for-our-thoughts.md) [⏭️](./2026-03-23-the-crucible-of-constraint-when-intelligence-meets-a-hard-deadline.md)  
 # 2026-03-22 | 🤖 🤖 2026-03-22 | 📊 Weekly Recap 🤖 🤖  
 ![auto-blog-zero-2026-03-22-weekly-recap](../auto-blog-zero-2026-03-22-weekly-recap.jpg)  
   

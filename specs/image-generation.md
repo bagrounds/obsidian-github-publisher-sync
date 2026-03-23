@@ -24,7 +24,7 @@
        ▼              ▼                    ▼
   generate-blog-  generate-blog-    backfill-blog-
   image.ts        image.ts          images.ts
-  (single post)   (single post)     (all directories)
+  (single post)   (single post)     (provider chain)
        │              │                    │
        └──────────────┴────────────────────┘
                       │
@@ -33,14 +33,14 @@
               │ blog-image.ts │  ← Core library
               └───────┬───────┘
                       │
-          ┌───────────┼───────────┐
-          ▼           ▼           ▼
-    ┌──────────┐ ┌─────────┐ ┌──────────┐
-    │Cloudflare│ │ Gemini  │ │ Imagen   │
-    │ Workers  │ │ Flash   │ │ API      │
-    │ AI       │ │ (desc+  │ │          │
-    │          │ │  image) │ │          │
-    └──────────┘ └─────────┘ └──────────┘
+          ┌───────────┼───────────┬───────────┐
+          ▼           ▼           ▼           ▼
+    ┌──────────┐ ┌──────────┐ ┌─────────┐ ┌──────────┐
+    │Cloudflare│ │ Hugging  │ │ Gemini  │ │ Imagen   │
+    │ Workers  │ │ Face     │ │ Flash   │ │ API      │
+    │ AI       │ │ Inference│ │ (desc+  │ │          │
+    │          │ │ API      │ │  image) │ │          │
+    └──────────┘ └──────────┘ └─────────┘ └──────────┘
 ```
 
 ---
@@ -75,9 +75,12 @@
 ```
 1. 📁 Scan all directories for candidate files
 2. 🗓️ Sort ALL candidates by date descending (cross-directory)
-3. 🔄 For each candidate (newest first globally):
+3. 🔗 Build provider chain from all configured providers
+4. 🔄 For each candidate (newest first globally):
    a. ⏱️ Attempt generation with retry logic for per-minute rate limits
-   b. 🛑 Stop entirely on daily quota exhaustion
+   b. 🛑 On quota exhaustion → switch to next provider in chain
+      ├─ Retry same candidate with new provider
+      └─ If no providers remain → stop entirely
    c. ⏭️ Skip and continue on non-quota errors
    d. 🔗 Update "chain" timestamps for all newer files in same directory
    e. 💤 Proactive rate limit delay between successful generations
@@ -92,8 +95,25 @@
 | Priority | Provider | Required Env Vars | Image Model Default |
 |----------|----------|-------------------|---------------------|
 | 1️⃣ | Cloudflare Workers AI | `CLOUDFLARE_API_TOKEN` + `CLOUDFLARE_ACCOUNT_ID` | `@cf/black-forest-labs/flux-1-schnell` |
-| 2️⃣ | Google Gemini | `GEMINI_API_KEY` | `gemini-3.1-flash-image-preview` |
-| 3️⃣ | Google Imagen | `GEMINI_API_KEY` + `IMAGE_GEMINI_MODEL=imagen-*` | N/A (explicit) |
+| 2️⃣ | Hugging Face Inference API | `HUGGINGFACE_API_TOKEN` | `black-forest-labs/FLUX.1-schnell` |
+| 3️⃣ | Google Gemini | `GEMINI_API_KEY` | `gemini-3.1-flash-image-preview` |
+| 4️⃣ | Google Imagen | `GEMINI_API_KEY` + `IMAGE_GEMINI_MODEL=imagen-*` | N/A (explicit) |
+
+### 🔗 Provider Chain (Fallback Behavior)
+
+🔄 During batch backfill, providers are organized into an ordered chain. When a provider exhausts its quota (429 rate limit or daily quota), the system automatically switches to the next provider and retries the same candidate:
+
+```
+Provider 1 (Cloudflare) → quota exhausted → switch to →
+Provider 2 (Hugging Face) → quota exhausted → switch to →
+Provider 3 (Gemini) → quota exhausted → stop job
+```
+
+📋 Key behaviors:
+- 🔁 The same candidate that triggered the switch is retried with the new provider
+- ➡️ Once switched, all remaining candidates use the new provider (no switching back)
+- 📊 Progress events include `provider_switch` with `from` and `to` fields for observability
+- 🔙 Backward compatible — `fallbackProviders` defaults to empty, preserving single-provider behavior
 
 ### 💭 Description Provider (Optional)
 
@@ -147,8 +167,8 @@
 
 | Error Type | Detection | Response |
 |------------|-----------|----------|
-| 📅 Daily quota exhaustion | Message contains `"quota"` AND (`"daily"` or `"per day"` or `"PerDay"`) | 🛑 Stop the entire job immediately |
-| ⏱️ Per-minute rate limit | Message contains `"429"`, `"RESOURCE_EXHAUSTED"`, or `"quota"` (but not daily) | 🔄 Retry with exponential backoff (up to 3 retries) |
+| 📅 Daily quota exhaustion | Message contains `"quota"` AND (`"daily"` or `"per day"` or `"PerDay"`) | 🔄 Switch to next provider in chain (or stop if no providers remain) |
+| ⏱️ Per-minute rate limit | Message contains `"429"`, `"RESOURCE_EXHAUSTED"`, or `"quota"` (but not daily) | 🔄 Retry with exponential backoff (up to 3 retries), then switch provider |
 | ❌ Other errors | Everything else | ⏭️ Log and skip to next candidate |
 
 ### 🔄 Retry Mechanism
@@ -238,6 +258,7 @@ Image name: chickie-loo-2026-03-22-weekly-recap.jpg
 |----------|----------|---------|
 | `CLOUDFLARE_API_TOKEN` | ⚡ Optional | Cloudflare Workers AI authentication |
 | `CLOUDFLARE_ACCOUNT_ID` | ⚡ Optional | Cloudflare account identifier |
+| `HUGGINGFACE_API_TOKEN` | ⚡ Optional | Hugging Face Inference API authentication |
 | `GEMINI_API_KEY` | ✅ Required | Google Gemini API key (description + fallback image) |
 | `GCP_SERVICE_ACCOUNT_KEY` | ⚡ Optional | GCP service account for quota monitoring |
 | `OBSIDIAN_AUTH_TOKEN` | ✅ Required | Obsidian vault sync authentication |
@@ -248,8 +269,28 @@ Image name: chickie-loo-2026-03-22-weekly-recap.jpg
 | Variable | Default | Purpose |
 |----------|---------|---------|
 | `CLOUDFLARE_IMAGE_MODEL` | `@cf/black-forest-labs/flux-1-schnell` | Cloudflare image model |
+| `HUGGINGFACE_IMAGE_MODEL` | `black-forest-labs/FLUX.1-schnell` | Hugging Face image model |
 | `IMAGE_GEMINI_MODEL` | `gemini-3.1-flash-image-preview` | Gemini image generation model |
 | `PROMPT_DESCRIBER_MODEL` | `gemini-3.1-flash-lite-preview` | Gemini description model |
+
+### 🤗 Hugging Face Setup Guide
+
+📋 To set up Hugging Face as a fallback image generation provider:
+
+1. 🌐 Create a free account at [huggingface.co](https://huggingface.co/join)
+2. ⚙️ Navigate to **Settings** → **Access Tokens** (https://huggingface.co/settings/tokens)
+3. 🔑 Click **Create new token** with the following settings:
+   - **Name**: `obsidian-image-gen` (or any descriptive name)
+   - **Type**: Fine-grained
+   - **Permissions**: Select **Make calls to the serverless Inference API** under Inference
+4. 📋 Copy the token (starts with `hf_`)
+5. 🔐 In your GitHub repository, go to **Settings** → **Secrets and variables** → **Actions**
+6. ➕ Click **New repository secret**, name it `HUGGINGFACE_API_TOKEN`, paste the token
+7. ⚙️ (Optional) To use a different model, add a repository variable `HUGGINGFACE_IMAGE_MODEL`
+
+🆓 **Free tier**: No credit card required. The free tier provides limited compute (~$0.10/month equivalent). Image generation is more compute-intensive than text, so expect a few dozen images per day. Rate limits return HTTP 429.
+
+🎯 **Default model**: `black-forest-labs/FLUX.1-schnell` — the same model family used by Cloudflare, ensuring consistent image quality across providers.
 
 ---
 
@@ -328,7 +369,7 @@ Image name: chickie-loo-2026-03-22-weekly-recap.jpg
 
 ## 🧪 Testing Strategy
 
-### 📊 Test Coverage (180 tests, 36 suites)
+### 📊 Test Coverage (199 tests, 40 suites)
 
 | Category | Tests | Description |
 |----------|-------|-------------|
@@ -338,8 +379,9 @@ Image name: chickie-loo-2026-03-22-weekly-recap.jpg
 | 📋 Frontmatter operations | 23 | YAML parsing, updates, regeneration, sanitization, arrays, empty values, colons |
 | 🖼️ processNote | 11 | Generation, skipping, metadata, describer, prompt caching, sanitization |
 | 📦 backfillImages | 14 | Chain updates, missing dirs, errors, prioritization, rate limits |
-| 🔌 Provider resolution | 10 | Cloudflare, Gemini, Imagen, describer |
+| 🔌 Provider resolution | 18 | Cloudflare, Gemini, Imagen, HuggingFace, describer, multi-provider chain |
 | ⏱️ Rate limiting | 12 | isDailyQuotaError, parseRetryDelay, retry logic, proactive delays |
+| 🔗 Provider chain fallback | 7 | Quota switch, multi-provider chain, backward compat, progress events |
 
 ### 🎯 Key Test Properties
 
@@ -359,3 +401,4 @@ Image name: chickie-loo-2026-03-22-weekly-recap.jpg
 3. 🗑️ **Orphan image cleanup** — Periodic job to remove attachment files not referenced by any post
 4. 🔄 **Parallel generation** — Generate images for posts in different directories concurrently (with shared rate limiter)
 5. 📈 **Progress persistence** — Track backfill state across runs to avoid re-scanning completed directories
+6. 🏪 **Additional providers** — The provider chain architecture makes it easy to add new providers. To add one: implement an `ImageGenerator` function, add a `makeXxxGenerator` factory, and add a block to `resolveImageProviders` that checks for the provider's env vars

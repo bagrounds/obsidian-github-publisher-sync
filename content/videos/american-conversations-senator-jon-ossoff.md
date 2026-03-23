@@ -9,7 +9,10 @@ Platform:
 Channel: Heather Cox Richardson
 tags:
 youtube: https://youtu.be/VSKKjD3H6Ho
-updated: 2026-03-23T04:45:54.719Z
+updated: 2026-03-23T12:16:18.457Z
+force_analyze_links: false
+link_analysis_time: 2026-03-23T07:51:40.622Z
+link_analysis_model: gemini-3.1-flash-lite-preview
 ---
 [Home](../index.md) > [Videos](./index.md) | [🏛️🇺🇸📖 Heather Cox Richardson](../people/heather-cox-richardson.md)  
 # 🇺🇸🗣️🏛️ American Conversations: Senator Jon Ossoff  
@@ -53,7 +56,7 @@ updated: 2026-03-23T04:45:54.719Z
   
 ### 🎨 Creatively Related  
 * 📖 All the President's Men by Carl Bernstein and Bob Woodward illustrates the power of investigative reporting in holding the highest levels of government accountable.  
-* 📖 The Fifth Risk by Michael Lewis highlights the dangers inherent in a government where the executive branch ignores the expertise and data collected by federal agencies.  
+* 📖 [⚠️🥴🕹️🌐 The Fifth Risk](../books/the-fifth-risk.md) by Michael Lewis highlights the dangers inherent in a government where the executive branch ignores the expertise and data collected by federal agencies.  
   
 ## 🦋 Bluesky    
 <blockquote class="bluesky-embed" data-bluesky-uri="at://did:plc:i4yli6h7x2uoj7acxunww2fc/app.bsky.feed.post/3mhpauynic42p" data-bluesky-cid="bafyreih656erlsojpvq75ykaudz7oqjgwhdydgxlv7lcvztlz6sug7kpny"><p>🇺🇸🗣️🏛️ American Conversations: Senator Jon Ossoff  

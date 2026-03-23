@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-03-22T16:46:21-07:00
+updated: 2026-03-22T17:06:28-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -63,7 +63,8 @@ updated: 2026-03-22T16:46:21-07:00
 - [🪖🎨 The War of Art: Break Through the Blocks and Win Your Inner Creative Battles](./books/the-war-of-art.md)  
   
   
-## [📺 Videos](./videos/index.md) (701)  
+## [📺 Videos](./videos/index.md) (702)  
+- [🇺🇸🗣️🏛️ American Conversations: Senator Jon Ossoff](./videos/american-conversations-senator-jon-ossoff.md)  
 - [🌿🤖🛰️ These AI Devices Protect Nature in Real Time | Juan M. Lavista Ferres | TED](./videos/these-ai-devices-protect-nature-in-real-time-juan-m-lavista-ferres-ted.md)  
 - [💰💥🇮🇷🇺🇸 Brooks and Capehart on Trump struggling to contain economic fallout of Iran war](./videos/brooks-and-capehart-on-trump-struggling-to-contain-economic-fallout-of-iran-war.md)  
 - [😠🗣️🔥🌍🗣️🧖 Alexander Stubb on «difficult» conversations with Trump, global «disorder» and sauna diplomacy](./videos/alexander-stubb-on-difficult-conversations-with-trump-global-disorder-and-sauna-diplomacy.md)  
@@ -73,7 +74,6 @@ updated: 2026-03-22T16:46:21-07:00
 - [📺🎤🗣️ J.D. Vance: Last Week Tonight with John Oliver (HBO)](./videos/jd-vance-last-week-tonight-with-john-oliver-hbo.md)  
 - [📈🗣️📺 USAID: Last Week Tonight with John Oliver (HBO)](./videos/usaid-last-week-tonight-with-john-oliver-hbo.md)  
 - [👑🤝🇺🇸 The Art of Befriending Trump | President Stubb](./videos/the-art-of-befriending-trump-president-stubb.md)  
-- [🇫🇮🇪🇺🗣️🌍🇺🇸💥🇮🇷⚔️🇺🇦 FULL DISCUSSION: Finland President Stubb Slams Brexit, Talks Trump, Iran War, Ukraine, EU | AC1G](./videos/full-discussion-finland-president-stubb-slams-brexit-talks-trump-iran-war-ukraine-eu-ac1g.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  

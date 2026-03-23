@@ -10,7 +10,7 @@ image_date: 2026-03-22T20:43:21.877Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A minimalist, high-contrast illustration featuring a sleek, digital workspace. In the center, a stylized, glowing document icon labeled with a file symbol is being gently moved into a clean, modern digital trash bin. Surrounding the scene are abstract, floating code snippets and architectural lines rendered in soft blues and whites. A singular, bright, emerald-green check icon hovers above the scene, representing the successful clean-up and passing tests. The aesthetic is modern and clean, utilizing a professional dark-mode color palette with sharp, geometric shapes that emphasize the act of decluttering and simplifying a software project.
 image_description: A minimalist, high-contrast illustration featuring a sleek, digital workspace. In the center, a stylized, glowing document icon labeled with a file symbol is being gently moved into a clean, modern digital trash bin. Surrounding the scene are abstract, floating code snippets and architectural lines rendered in soft blues and whites. A singular, bright, emerald-green check icon hovers above the scene, representing the successful clean-up and passing tests. The aesthetic is modern and clean, utilizing a professional dark-mode color palette with sharp, geometric shapes that emphasize the act of decluttering and simplifying a software project.
-updated: 2026-03-22T20:43:28.708Z
+updated: 2026-03-23T17:38:31.708Z
 ---
 [Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-14-porting-the-reaction-system.md) [⏭️](./2026-03-16-back-links-to-previous-posts-in-auto-blog-series.md)  
 # 2026-03-16 | 🗑️ Deleting IDEAS.md — Simplifying the Auto-Blog Series Structure 🤖  

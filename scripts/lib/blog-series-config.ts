@@ -53,3 +53,10 @@ export const lookupSeries = (seriesId: string): BlogSeriesConfig => {
   if (!series) throw new Error(`Unknown blog series: ${seriesId}. Available: ${[...BLOG_SERIES.keys()].join(", ")}`);
   return series;
 };
+
+const EXTRA_CONTENT_DIRS: readonly string[] = ["reflections", "ai-blog"];
+
+export const BACKFILL_CONTENT_IDS: readonly string[] = [
+  ...EXTRA_CONTENT_DIRS,
+  ...[...BLOG_SERIES.keys()],
+];

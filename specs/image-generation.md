@@ -73,7 +73,7 @@
 ### 📦 Batch Backfill (`backfillImages`)
 
 ```
-1. 📁 Scan all directories for candidate files
+1. 📁 Scan all directories from BACKFILL_CONTENT_IDS for candidate files
 2. 🗓️ Sort ALL candidates by date descending (cross-directory)
 3. 🔗 Build provider chain from all configured providers
 4. 🔄 For each candidate (newest first globally):
@@ -198,20 +198,22 @@ Attempt 4 → fail → propagate error (exhausted retries)
 
 ### 🎯 Cross-Directory Date-Based Ordering
 
-🗓️ All candidates from all directories are collected and sorted by date descending:
+🗓️ All candidates from all `BACKFILL_CONTENT_IDS` directories are collected and sorted by date descending:
 
 ```
-Example with 4 directories:
-  reflections/2026-03-15.md        → date: 2026-03-15
-  ai-blog/2026-03-20-post.md       → date: 2026-03-20
-  auto-blog-zero/2026-03-21-x.md   → date: 2026-03-21
-  chickie-loo/2026-03-19-y.md      → date: 2026-03-19
+Example with 5 directories (derived from BACKFILL_CONTENT_IDS):
+  reflections/2026-03-15.md                → date: 2026-03-15
+  ai-blog/2026-03-20-post.md               → date: 2026-03-20
+  auto-blog-zero/2026-03-21-x.md           → date: 2026-03-21
+  chickie-loo/2026-03-19-y.md              → date: 2026-03-19
+  systems-for-public-good/2026-03-22-z.md  → date: 2026-03-22
 
 Processing order (newest first):
-  1. auto-blog-zero/2026-03-21-x.md  (most recent)
-  2. ai-blog/2026-03-20-post.md
-  3. chickie-loo/2026-03-19-y.md
-  4. reflections/2026-03-15.md        (oldest)
+  1. systems-for-public-good/2026-03-22-z.md  (most recent)
+  2. auto-blog-zero/2026-03-21-x.md
+  3. ai-blog/2026-03-20-post.md
+  4. chickie-loo/2026-03-19-y.md
+  5. reflections/2026-03-15.md                (oldest)
 ```
 
 ### 🔗 Chain Updates

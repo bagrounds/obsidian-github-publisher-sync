@@ -1,6 +1,5 @@
 #!/usr/bin/env npx tsx
 
-import fs from "node:fs";
 import path from "node:path";
 import {
   syncObsidianVault,
@@ -10,6 +9,7 @@ import {
   syncMarkdownDir,
   syncAttachmentsDir,
 } from "./lib/blog-image.ts";
+import { BACKFILL_CONTENT_IDS } from "./lib/blog-series-config.ts";
 
 const log = (data: Record<string, unknown>): void =>
   console.log(JSON.stringify({ timestamp: new Date().toISOString(), ...data }));
@@ -35,12 +35,10 @@ const main = async (): Promise<void> => {
   const vaultDir = await syncObsidianVault({ authToken, vaultName });
   log({ event: "vault_pulled", vaultDir });
 
-  const dirs: readonly SyncPair[] = [
-    { localDir: path.join(repoRoot, "reflections"), vaultSubdir: "reflections" },
-    { localDir: path.join(repoRoot, "ai-blog"), vaultSubdir: "ai-blog" },
-    { localDir: path.join(repoRoot, "auto-blog-zero"), vaultSubdir: "auto-blog-zero" },
-    { localDir: path.join(repoRoot, "chickie-loo"), vaultSubdir: "chickie-loo" },
-  ];
+  const dirs: readonly SyncPair[] = BACKFILL_CONTENT_IDS.map((id) => ({
+    localDir: path.join(repoRoot, id),
+    vaultSubdir: id,
+  }));
 
   for (const { localDir, vaultSubdir } of dirs) {
     const synced = syncMarkdownDir(localDir, vaultSubdir, vaultDir);

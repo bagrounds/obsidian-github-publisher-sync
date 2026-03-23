@@ -3,6 +3,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { syncObsidianVault } from "./lib/obsidian-sync.ts";
+import { BACKFILL_CONTENT_IDS } from "./lib/blog-series-config.ts";
 
 const log = (data: Record<string, unknown>): void =>
   console.log(JSON.stringify({ timestamp: new Date().toISOString(), ...data }));
@@ -45,10 +46,11 @@ const main = async (): Promise<void> => {
     process.exit(1);
   }
 
-  const seriesArgs = process.argv.slice(2);
+  const rawArgs = process.argv.slice(2);
+  const seriesArgs = rawArgs.includes("--all") ? [...BACKFILL_CONTENT_IDS] : rawArgs;
   if (seriesArgs.length === 0) {
     console.error(
-      "Usage: pull-vault-posts.ts <series1> [series2] [series3] ...",
+      "Usage: pull-vault-posts.ts [--all | <series1> [series2] ...]",
     );
     process.exit(1);
   }

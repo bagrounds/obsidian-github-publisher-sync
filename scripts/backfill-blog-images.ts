@@ -1,13 +1,15 @@
 #!/usr/bin/env npx tsx
 
 import path from "node:path";
-import { backfillImages, resolveImageProvider } from "./lib/blog-image.ts";
+import { backfillImages, resolveImageProviders } from "./lib/blog-image.ts";
 
 const log = (data: Record<string, unknown>): void =>
   console.log(JSON.stringify({ timestamp: new Date().toISOString(), ...data }));
 
 const main = async (): Promise<void> => {
-  const provider = resolveImageProvider(process.env as Record<string, string | undefined>);
+  const providers = resolveImageProviders(process.env as Record<string, string | undefined>);
+  const primary = providers[0]!;
+  const fallbacks = providers.slice(1);
 
   const repoRoot = path.resolve(import.meta.dirname, "..");
   const attachmentsDir =
@@ -22,7 +24,7 @@ const main = async (): Promise<void> => {
 
   log({
     event: "backfill_start",
-    model: provider.model,
+    providers: providers.map((p) => ({ name: p.name, model: p.model })),
     attachmentsDir,
     directories: directories.map((d) => d.id),
   });
@@ -30,10 +32,11 @@ const main = async (): Promise<void> => {
   const result = await backfillImages({
     directories,
     attachmentsDir,
-    apiKey: provider.apiKey,
-    model: provider.model,
-    generate: provider.generator,
-    describePrompt: provider.describePrompt,
+    apiKey: primary.apiKey,
+    model: primary.model,
+    generate: primary.generator,
+    describePrompt: primary.describePrompt,
+    fallbackProviders: fallbacks,
     onProgress: log,
   });
 
@@ -45,7 +48,7 @@ const main = async (): Promise<void> => {
   });
 
   if (result.stoppedByQuota) {
-    console.log("⚠️ Stopped due to API quota exhaustion. Will resume tomorrow.");
+    console.log("⚠️ Stopped due to API quota exhaustion across all providers. Will resume tomorrow.");
   } else if (result.imagesGenerated === 0) {
     console.log("✅ All posts already have images.");
   } else {

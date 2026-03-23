@@ -14,6 +14,7 @@ import {
   buildImagePrompt,
   cleanContentForPrompt,
   DEFAULT_DESCRIBER_MODEL,
+  DEFAULT_HUGGINGFACE_IMAGE_MODEL,
   mimeTypeToExtension,
   isQuotaError,
   isDailyQuotaError,
@@ -28,7 +29,9 @@ import {
   syncAttachmentsDir,
   isImagenModel,
   resolveImageProvider,
+  resolveImageProviders,
   makeCloudflareGenerator,
+  makeHuggingFaceGenerator,
   extractFrontmatterValue,
   shouldRegenerateImage,
   removeImageEmbed,
@@ -36,6 +39,7 @@ import {
   updateFrontmatterFields,
   makeGeminiDescriber,
   type ImageGenerator,
+  type ImageProviderConfig,
   type PromptDescriber,
 } from "./blog-image.ts";
 
@@ -2033,5 +2037,394 @@ describe("backfillImages rate limit handling", () => {
 
     assert.equal(result.imagesGenerated, 1);
     assert.ok(sleepDelays.includes(15000));
+  });
+});
+
+describe("DEFAULT_HUGGINGFACE_IMAGE_MODEL", () => {
+  it("uses black-forest-labs/FLUX.1-schnell", () => {
+    assert.equal(DEFAULT_HUGGINGFACE_IMAGE_MODEL, "black-forest-labs/FLUX.1-schnell");
+  });
+});
+
+describe("makeHuggingFaceGenerator", () => {
+  it("returns an ImageGenerator function", () => {
+    const generator = makeHuggingFaceGenerator();
+    assert.equal(typeof generator, "function");
+  });
+
+  it("uses default model when none specified", () => {
+    const generator = makeHuggingFaceGenerator();
+    assert.equal(typeof generator, "function");
+  });
+
+  it("accepts custom model", () => {
+    const generator = makeHuggingFaceGenerator("stabilityai/stable-diffusion-xl-base-1.0");
+    assert.equal(typeof generator, "function");
+  });
+});
+
+describe("resolveImageProviders", () => {
+  it("returns Cloudflare as first provider when configured", () => {
+    const env = {
+      CLOUDFLARE_API_TOKEN: "cf-token",
+      CLOUDFLARE_ACCOUNT_ID: "cf-account",
+    };
+    const providers = resolveImageProviders(env);
+    assert.equal(providers.length, 1);
+    assert.equal(providers[0]!.name, "cloudflare");
+    assert.equal(providers[0]!.apiKey, "cf-token");
+  });
+
+  it("returns HuggingFace as provider when configured", () => {
+    const env = {
+      HUGGINGFACE_API_TOKEN: "hf-token",
+    };
+    const providers = resolveImageProviders(env);
+    assert.equal(providers.length, 1);
+    assert.equal(providers[0]!.name, "huggingface");
+    assert.equal(providers[0]!.apiKey, "hf-token");
+    assert.equal(providers[0]!.model, DEFAULT_HUGGINGFACE_IMAGE_MODEL);
+  });
+
+  it("returns all configured providers in priority order", () => {
+    const env = {
+      CLOUDFLARE_API_TOKEN: "cf-token",
+      CLOUDFLARE_ACCOUNT_ID: "cf-account",
+      HUGGINGFACE_API_TOKEN: "hf-token",
+      GEMINI_API_KEY: "gemini-key",
+    };
+    const providers = resolveImageProviders(env);
+    assert.equal(providers.length, 3);
+    assert.equal(providers[0]!.name, "cloudflare");
+    assert.equal(providers[1]!.name, "huggingface");
+    assert.equal(providers[2]!.name, "gemini");
+  });
+
+  it("uses custom HuggingFace model from HUGGINGFACE_IMAGE_MODEL", () => {
+    const env = {
+      HUGGINGFACE_API_TOKEN: "hf-token",
+      HUGGINGFACE_IMAGE_MODEL: "stabilityai/stable-diffusion-xl-base-1.0",
+    };
+    const providers = resolveImageProviders(env);
+    assert.equal(providers[0]!.model, "stabilityai/stable-diffusion-xl-base-1.0");
+  });
+
+  it("throws when no credentials are available", () => {
+    assert.throws(
+      () => resolveImageProviders({}),
+      /No image generation credentials found/,
+    );
+  });
+
+  it("attaches describePrompt to all providers when GEMINI_API_KEY is set", () => {
+    const env = {
+      CLOUDFLARE_API_TOKEN: "cf-token",
+      CLOUDFLARE_ACCOUNT_ID: "cf-account",
+      HUGGINGFACE_API_TOKEN: "hf-token",
+      GEMINI_API_KEY: "gemini-key",
+    };
+    const providers = resolveImageProviders(env);
+    assert.ok(providers.every((p) => typeof p.describePrompt === "function"));
+  });
+
+  it("has no describePrompt when GEMINI_API_KEY is missing", () => {
+    const env = {
+      CLOUDFLARE_API_TOKEN: "cf-token",
+      CLOUDFLARE_ACCOUNT_ID: "cf-account",
+    };
+    const providers = resolveImageProviders(env);
+    assert.ok(providers.every((p) => p.describePrompt === undefined));
+  });
+
+  it("resolveImageProvider returns first from resolveImageProviders", () => {
+    const env = {
+      CLOUDFLARE_API_TOKEN: "cf-token",
+      CLOUDFLARE_ACCOUNT_ID: "cf-account",
+      HUGGINGFACE_API_TOKEN: "hf-token",
+    };
+    const single = resolveImageProvider(env);
+    const all = resolveImageProviders(env);
+    assert.equal(single.name, all[0]!.name);
+    assert.equal(single.apiKey, all[0]!.apiKey);
+  });
+});
+
+describe("backfillImages provider chain fallback", () => {
+  let tempDir: string;
+  let attachmentsDir: string;
+
+  beforeEach(() => {
+    tempDir = fs.mkdtempSync(path.join(os.tmpdir(), "backfill-chain-"));
+    attachmentsDir = path.join(tempDir, "attachments");
+  });
+
+  afterEach(() => {
+    fs.rmSync(tempDir, { recursive: true, force: true });
+  });
+
+  it("switches to fallback provider on quota exhaustion", async () => {
+    const dir = path.join(tempDir, "series");
+    fs.mkdirSync(dir);
+    fs.writeFileSync(
+      path.join(dir, "2026-03-10-post.md"),
+      "---\ntitle: Post\n---\n# Post\nBody\n",
+    );
+
+    const quotaGenerator: ImageGenerator = async () => {
+      throw new Error("429 Too Many Requests");
+    };
+
+    const fallbackGenerator: ImageGenerator = async () => ({
+      data: Buffer.from("fallback-img"),
+      mimeType: "image/jpeg",
+    });
+
+    const events: Record<string, unknown>[] = [];
+    const fallback: ImageProviderConfig = {
+      name: "fallback",
+      apiKey: "fallback-key",
+      model: "fallback-model",
+      generator: fallbackGenerator,
+    };
+
+    const result = await backfillImages({
+      directories: [{ path: dir, id: "series" }],
+      attachmentsDir,
+      apiKey: "primary-key",
+      model: "primary-model",
+      generate: quotaGenerator,
+      fallbackProviders: [fallback],
+      onProgress: (e) => events.push(e),
+      minDelayMs: 0,
+      sleep: async () => {},
+    });
+
+    assert.equal(result.stoppedByQuota, false);
+    assert.equal(result.imagesGenerated, 1);
+    assert.ok(events.some((e) => e["event"] === "provider_switch"));
+    const switchEvent = events.find((e) => e["event"] === "provider_switch");
+    assert.equal(switchEvent!["from"], "primary");
+    assert.equal(switchEvent!["to"], "fallback");
+  });
+
+  it("stops when all providers are exhausted", async () => {
+    const dir = path.join(tempDir, "series");
+    fs.mkdirSync(dir);
+    fs.writeFileSync(
+      path.join(dir, "2026-03-10-post.md"),
+      "---\ntitle: Post\n---\n# Post\nBody\n",
+    );
+
+    const quotaGenerator: ImageGenerator = async () => {
+      throw new Error("429 Too Many Requests");
+    };
+
+    const events: Record<string, unknown>[] = [];
+    const fallback: ImageProviderConfig = {
+      name: "fallback",
+      apiKey: "fallback-key",
+      model: "fallback-model",
+      generator: quotaGenerator,
+    };
+
+    const result = await backfillImages({
+      directories: [{ path: dir, id: "series" }],
+      attachmentsDir,
+      apiKey: "primary-key",
+      model: "primary-model",
+      generate: quotaGenerator,
+      fallbackProviders: [fallback],
+      onProgress: (e) => events.push(e),
+      minDelayMs: 0,
+      sleep: async () => {},
+    });
+
+    assert.equal(result.stoppedByQuota, true);
+    assert.equal(result.imagesGenerated, 0);
+    assert.ok(events.some((e) => e["event"] === "provider_switch"));
+  });
+
+  it("continues with fallback provider for remaining candidates after switch", async () => {
+    const dir = path.join(tempDir, "series");
+    fs.mkdirSync(dir);
+    fs.writeFileSync(
+      path.join(dir, "2026-03-11-second.md"),
+      "---\ntitle: Second\n---\n# Second\nBody\n",
+    );
+    fs.writeFileSync(
+      path.join(dir, "2026-03-10-first.md"),
+      "---\ntitle: First\n---\n# First\nBody\n",
+    );
+
+    let primaryCalls = 0;
+    const primaryGenerator: ImageGenerator = async () => {
+      primaryCalls++;
+      if (primaryCalls === 1) return { data: Buffer.from("primary-img"), mimeType: "image/jpeg" };
+      throw new Error("429 Too Many Requests");
+    };
+
+    const fallbackGenerator: ImageGenerator = async () => ({
+      data: Buffer.from("fallback-img"),
+      mimeType: "image/jpeg",
+    });
+
+    const events: Record<string, unknown>[] = [];
+    const result = await backfillImages({
+      directories: [{ path: dir, id: "series" }],
+      attachmentsDir,
+      apiKey: "primary-key",
+      model: "primary-model",
+      generate: primaryGenerator,
+      fallbackProviders: [{
+        name: "fallback",
+        apiKey: "fallback-key",
+        model: "fallback-model",
+        generator: fallbackGenerator,
+      }],
+      onProgress: (e) => events.push(e),
+      minDelayMs: 0,
+      sleep: async () => {},
+    });
+
+    assert.equal(result.stoppedByQuota, false);
+    assert.equal(result.imagesGenerated, 2);
+    assert.ok(events.some((e) => e["event"] === "provider_switch"));
+  });
+
+  it("switches on daily quota error too", async () => {
+    const dir = path.join(tempDir, "series");
+    fs.mkdirSync(dir);
+    fs.writeFileSync(
+      path.join(dir, "2026-03-10-post.md"),
+      "---\ntitle: Post\n---\n# Post\nBody\n",
+    );
+
+    const dailyQuotaGenerator: ImageGenerator = async () => {
+      throw new Error("quota exceeded, daily limit reached");
+    };
+
+    const fallbackGenerator: ImageGenerator = async () => ({
+      data: Buffer.from("fallback-img"),
+      mimeType: "image/jpeg",
+    });
+
+    const events: Record<string, unknown>[] = [];
+    const result = await backfillImages({
+      directories: [{ path: dir, id: "series" }],
+      attachmentsDir,
+      apiKey: "primary-key",
+      model: "primary-model",
+      generate: dailyQuotaGenerator,
+      fallbackProviders: [{
+        name: "fallback",
+        apiKey: "fb-key",
+        model: "fb-model",
+        generator: fallbackGenerator,
+      }],
+      onProgress: (e) => events.push(e),
+      minDelayMs: 0,
+      sleep: async () => {},
+    });
+
+    assert.equal(result.stoppedByQuota, false);
+    assert.equal(result.imagesGenerated, 1);
+    assert.ok(events.some((e) => e["event"] === "provider_switch"));
+  });
+
+  it("works with no fallback providers (backward compatible)", async () => {
+    const dir = path.join(tempDir, "series");
+    fs.mkdirSync(dir);
+    fs.writeFileSync(
+      path.join(dir, "2026-03-10-post.md"),
+      "---\ntitle: Post\n---\n# Post\nBody\n",
+    );
+
+    const quotaGenerator: ImageGenerator = async () => {
+      throw new Error("429 Too Many Requests");
+    };
+
+    const result = await backfillImages({
+      directories: [{ path: dir, id: "series" }],
+      attachmentsDir,
+      apiKey: "key",
+      model: "model",
+      generate: quotaGenerator,
+      minDelayMs: 0,
+      sleep: async () => {},
+    });
+
+    assert.equal(result.stoppedByQuota, true);
+  });
+
+  it("chains through multiple fallback providers", async () => {
+    const dir = path.join(tempDir, "series");
+    fs.mkdirSync(dir);
+    fs.writeFileSync(
+      path.join(dir, "2026-03-10-post.md"),
+      "---\ntitle: Post\n---\n# Post\nBody\n",
+    );
+
+    const quotaGenerator: ImageGenerator = async () => {
+      throw new Error("429 Too Many Requests");
+    };
+
+    const thirdGenerator: ImageGenerator = async () => ({
+      data: Buffer.from("third-img"),
+      mimeType: "image/jpeg",
+    });
+
+    const events: Record<string, unknown>[] = [];
+    const result = await backfillImages({
+      directories: [{ path: dir, id: "series" }],
+      attachmentsDir,
+      apiKey: "p-key",
+      model: "p-model",
+      generate: quotaGenerator,
+      fallbackProviders: [
+        { name: "second", apiKey: "s-key", model: "s-model", generator: quotaGenerator },
+        { name: "third", apiKey: "t-key", model: "t-model", generator: thirdGenerator },
+      ],
+      onProgress: (e) => events.push(e),
+      minDelayMs: 0,
+      sleep: async () => {},
+    });
+
+    assert.equal(result.stoppedByQuota, false);
+    assert.equal(result.imagesGenerated, 1);
+    const switches = events.filter((e) => e["event"] === "provider_switch");
+    assert.equal(switches.length, 2);
+    assert.equal(switches[0]!["from"], "primary");
+    assert.equal(switches[0]!["to"], "second");
+    assert.equal(switches[1]!["from"], "second");
+    assert.equal(switches[1]!["to"], "third");
+  });
+
+  it("includes provider name in progress events", async () => {
+    const dir = path.join(tempDir, "series");
+    fs.mkdirSync(dir);
+    fs.writeFileSync(
+      path.join(dir, "2026-03-10-post.md"),
+      "---\ntitle: Post\n---\n# Post\nBody\n",
+    );
+
+    const mockGenerate: ImageGenerator = async () => ({
+      data: Buffer.from("img"),
+      mimeType: "image/jpeg",
+    });
+
+    const events: Record<string, unknown>[] = [];
+    await backfillImages({
+      directories: [{ path: dir, id: "series" }],
+      attachmentsDir,
+      apiKey: "key",
+      model: "model",
+      generate: mockGenerate,
+      onProgress: (e) => events.push(e),
+      minDelayMs: 0,
+    });
+
+    const genEvent = events.find((e) => e["event"] === "image_generated");
+    assert.ok(genEvent);
+    assert.equal(genEvent!["provider"], "primary");
   });
 });

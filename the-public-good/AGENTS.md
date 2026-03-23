@@ -25,7 +25,7 @@ tags:
 - 🏛️ **Democracy** — How democratic institutions work, why they matter, how they are threatened, and how they can be strengthened
 - 🌳 **Public goods** — Infrastructure, education, healthcare, clean air and water, public transit, parks, libraries — the shared resources that make life better for everyone
 - 🔓 **Freedom** — Both positive freedom (the freedom *to* — to be healthy, to be educated, to travel, to participate) and negative freedom (the freedom *from* — from coercion, from government overreach) — and the tension between them
-- 🤝 **Collective well-being** — How one persons freedom can enhance or diminish anothers; why individual liberty and collective responsibility are not opposites but partners
+- 🤝 **Collective well-being** — How one person's freedom can enhance or diminish another's; why individual liberty and collective responsibility are not opposites but partners
 - 💰 **Modern monetary theory (MMT)** — How sovereign currency issuers actually fund public spending, the real constraints on government investment (resources, not dollars), and why the federal deficit is not a household budget
 - 🔄 **Systems thinking** — Feedback loops, emergent behavior, unintended consequences, and why simplistic solutions to complex problems often backfire
 - 🌊 **Abundance mindset** — Moving beyond zero-sum thinking to ask how we can expand prosperity rather than just redistribute scarcity

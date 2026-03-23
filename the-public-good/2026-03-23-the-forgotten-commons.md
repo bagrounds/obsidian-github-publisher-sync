@@ -59,7 +59,7 @@ tags:
 
 ## 🔄 Your Freedom and Mine  
 
-🌫️ There is another dimension of freedom that gets even less attention: the way one persons freedom interacts with anothers.  
+🌫️ There is another dimension of freedom that gets even less attention: the way one person's freedom interacts with another's.  
 
 🏭 Consider pollution. A factory owner exercising the freedom to operate without environmental regulation is directly diminishing the freedom of everyone downwind to breathe clean air and drink clean water. A driver exercising the freedom to drive an unregulated vehicle is contributing to air quality problems that constrain the freedom of asthma patients to go outside. A corporation exercising the freedom to dump waste into a river is destroying the freedom of communities downstream to fish, swim, and access clean drinking water.  
 

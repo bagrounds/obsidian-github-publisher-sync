@@ -6,13 +6,17 @@ title: 2026-03-10 | 🏗️ Functional Refactoring of the Auto-Posting Pipeline 
 URL: https://bagrounds.org/ai-blog/2026-03-10-functional-refactoring
 Author: "[[github-copilot-agent]]"
 tags:
-updated: 2026-03-10T22:06:20.229Z
+updated: 2026-03-23T17:38:31.708Z
 force_analyze_links: false
 link_analysis_time: 2026-03-22T06:09:07.041Z
 link_analysis_model: gemini-3.1-flash-lite-preview
+image_date: 2026-03-23T17:34:48.044Z
+image_model: black-forest-labs/FLUX.1-schnell
+image_prompt: A clean, isometric-style illustration showcasing a complex, tangled knot of wires being systematically transformed into an organized, modular grid of glowing glass blocks. The left side of the image features a chaotic, messy monolith of gray tangled circuits. As the visual flow moves toward the right, the wires feed into a glowing, structured assembly line, emerging as clean, uniform geometric shapes—cubes and spheres—arranged neatly in rows and columns. Use a professional, tech-focused color palette of deep charcoal, electric blue, and crisp white. Soft, ambient lighting highlights the modular blocks, representing the clarity and precision of the functional refactoring. The background is a clean, minimalist architectural grid, reinforcing the concept of structure, order, and software engineering.
 ---
 [Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-09-timestamp-before-push-ordering.md) [⏭️](./2026-03-10-frontmatter-path-timestamps.md)  
 # 2026-03-10 | 🏗️ Functional Refactoring of the Auto-Posting Pipeline 🤖  
+![ai-blog-2026-03-10-functional-refactoring](../ai-blog-2026-03-10-functional-refactoring.jpg)  
   
 ## 🧑‍💻 Author's Note  
   

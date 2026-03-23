@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-03-23T09:26:01-07:00
+updated: 2026-03-23T14:38:35-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (703)  
+# 📺 Videos (704)  
 - [💰🤑🤖💡🚀💲 $0.10/Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
@@ -402,6 +402,7 @@ updated: 2026-03-23T09:26:01-07:00
 - [Pediatrician's Top Tips For Newborn Sleep](./pediatricians-top-tips-for-newborn-sleep.md)  
 - [🪖🚫📚😠 Pentagon's attempt to ban books from base schools faces backlash from military families](./pentagons-attempt-to-ban-books-from-base-schools-faces-backlash-from-military-families.md)  
 - [🚨🚓📺🎤 Police Chases: Last Week Tonight with John Oliver (HBO)](./police-chases-last-week-tonight-with-john-oliver-hbo.md)  
+- [👮🚔🕵️ Police Stings: Last Week Tonight with John Oliver (HBO)](./police-stings-last-week-tonight-with-john-oliver-hbo.md)  
 - [🗣️💬🗓️ Politics Chat, December 16, 2025](./politics-chat-december-16-2025.md)  
 - [🏛️💬🗓️ Politics Chat, December 23, 2025](./politics-chat-december-23-2025.md)  
 - [🗣️🗓️ Politics Chat, December 30, 2025](./politics-chat-december-30-2025.md)  

@@ -141,6 +141,22 @@ jobs:
             echo "No new post generated today"
           fi
 
+      - name: Update Daily Reflection
+        if: ${{ success() }}
+        env:
+          OBSIDIAN_AUTH_TOKEN: ${{ secrets.OBSIDIAN_AUTH_TOKEN }}
+          OBSIDIAN_VAULT_NAME: ${{ secrets.OBSIDIAN_VAULT_NAME }}
+          OBSIDIAN_VAULT_CACHE_DIR: /tmp/obsidian-vault-cache
+        run: |
+          SERIES="auto-blog-zero"
+          POST=$(ls -1 ${SERIES}/$(date +%Y-%m-%d)*.md 2>/dev/null | head -1)
+          if [ -n "$POST" ]; then
+            echo "📝 Updating daily reflection for: $POST"
+            npx tsx scripts/update-daily-reflection.ts --series ${SERIES} --post "$POST"
+          else
+            echo "No new post to update reflection for"
+          fi
+
       - name: Sync Image to Obsidian Vault
         if: ${{ success() }}
         env:

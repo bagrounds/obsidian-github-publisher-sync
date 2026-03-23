@@ -92,6 +92,7 @@
 | `scripts/auto-post.ts` | 📢 Social media orchestrator |
 | `scripts/tweet-reflection.ts` | 📱 Platform-specific posting |
 | `scripts/sync-file-to-obsidian.ts` | 📤 Single file vault sync |
+| `scripts/update-daily-reflection.ts` | 📝 Daily reflection auto-update |
 | `scripts/pull-vault-posts.ts` | 📥 Pull posts from vault |
 | `scripts/inject-static-giscus.ts` | 💬 SEO comment injection |
 | `scripts/check-gemini-quota.ts` | 📊 API quota monitoring |
@@ -107,6 +108,7 @@
 | `blog-prompt.ts` | 🤖 Prompt engineering for blog generation |
 | `obsidian-sync.ts` | 📤 Obsidian vault pull/push via headless CLI |
 | `frontmatter.ts` | 📋 YAML frontmatter parsing and note I/O |
+| `daily-reflection.ts` | 📝 Daily reflection creation, section insertion, post linking |
 | `gemini.ts` | 🤖 Gemini API client utilities |
 | `gemini-quota.ts` | 📊 Quota checking via GCP APIs |
 | `platforms/` | 📱 Platform-specific posting (Twitter, Bluesky, Mastodon) |
@@ -254,3 +256,4 @@ GEMINI_API_KEY=... npx tsx scripts/check-gemini-quota.ts
 | 📄 Spec | 📝 Description |
 |---|---|
 | [`image-generation.md`](specs/image-generation.md) | 🖼️ Image generation pipeline — architecture, provider resolution, frontmatter schema, rate limiting, backfill prioritization |
+| [`daily-reflection.md`](specs/daily-reflection.md) | 📝 Daily reflection auto-update — template-based creation, series section insertion, post linking, workflow integration |

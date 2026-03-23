@@ -6,6 +6,7 @@ import os from "node:os";
 
 import {
   BLOG_SERIES,
+  BACKFILL_CONTENT_IDS,
   readSeriesPosts,
   readAgentsMd,
   buildBlogContext,
@@ -233,6 +234,27 @@ describe("BLOG_SERIES priorityUser config", () => {
 
   it("systems-for-public-good has bagrounds as priority user", () => {
     assert.equal(BLOG_SERIES.get("systems-for-public-good")?.priorityUser, "bagrounds");
+  });
+});
+
+describe("BACKFILL_CONTENT_IDS", () => {
+  it("includes all blog series", () => {
+    [...BLOG_SERIES.keys()].forEach((seriesId) => {
+      assert.ok(BACKFILL_CONTENT_IDS.includes(seriesId), `Missing series: ${seriesId}`);
+    });
+  });
+
+  it("includes non-series content directories", () => {
+    assert.ok(BACKFILL_CONTENT_IDS.includes("reflections"));
+    assert.ok(BACKFILL_CONTENT_IDS.includes("ai-blog"));
+  });
+
+  it("has no duplicates", () => {
+    assert.equal(BACKFILL_CONTENT_IDS.length, new Set(BACKFILL_CONTENT_IDS).size);
+  });
+
+  it("includes systems-for-public-good", () => {
+    assert.ok(BACKFILL_CONTENT_IDS.includes("systems-for-public-good"));
   });
 });
 

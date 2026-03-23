@@ -1,4 +1,4 @@
-export { type BlogSeriesConfig, BLOG_SERIES, lookupSeries } from "./blog-series-config.ts";
+export { type BlogSeriesConfig, BLOG_SERIES, BACKFILL_CONTENT_IDS, lookupSeries } from "./blog-series-config.ts";
 export { type BlogPost, readSeriesPosts, readAgentsMd } from "./blog-posts.ts";
 export { type BlogComment, fetchGiscusComments, fetchAllSeriesComments } from "./blog-comments.ts";
 export { type BlogContext, buildBlogPrompt, assembleFrontmatter, buildBackLink, buildForwardLink, filterCommentsAfterLastPost, todayPacific, stripEmbedSections } from "./blog-prompt.ts";

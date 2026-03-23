@@ -4,7 +4,7 @@ import path from "node:path";
 import yaml from "js-yaml";
 
 import { parseFrontmatter } from "./frontmatter.ts";
-import { stripEmbedSections } from "./blog-prompt.ts";
+import { stripEmbedSections, todayPacific } from "./blog-prompt.ts";
 
 const IMAGE_EXTENSIONS = /\.(jpg|jpeg|png|gif|webp)$/i;
 const OBSIDIAN_IMAGE_EMBED = /!\[\[(?:attachments\/)?[^\]]+\.(jpg|jpeg|png|gif|webp)\]\]/i;
@@ -643,16 +643,7 @@ export const isPostFile = (filename: string): boolean =>
 export const extractDateFromFilename = (filename: string): string =>
   filename.match(DATE_FILENAME_PATTERN)?.[1] ?? "";
 
-export const todayPacific = (): string => {
-  const now = new Date();
-  const pacific = new Intl.DateTimeFormat("en-CA", {
-    timeZone: "America/Los_Angeles",
-    year: "numeric",
-    month: "2-digit",
-    day: "2-digit",
-  }).format(now);
-  return pacific;
-};
+export { todayPacific } from "./blog-prompt.ts";
 
 export const readNoteInfo = (
   dir: string,

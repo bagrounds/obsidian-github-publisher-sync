@@ -2,6 +2,7 @@
 
 import path from "node:path";
 import { backfillImages, resolveImageProviders } from "./lib/blog-image.ts";
+import { BACKFILL_CONTENT_IDS } from "./lib/blog-series-config.ts";
 
 const log = (data: Record<string, unknown>): void =>
   console.log(JSON.stringify({ timestamp: new Date().toISOString(), ...data }));
@@ -15,12 +16,10 @@ const main = async (): Promise<void> => {
   const attachmentsDir =
     process.env.ATTACHMENTS_DIR ?? path.join(repoRoot, "attachments");
 
-  const directories = [
-    { path: path.join(repoRoot, "reflections"), id: "reflections" },
-    { path: path.join(repoRoot, "ai-blog"), id: "ai-blog" },
-    { path: path.join(repoRoot, "auto-blog-zero"), id: "auto-blog-zero" },
-    { path: path.join(repoRoot, "chickie-loo"), id: "chickie-loo" },
-  ] as const;
+  const directories = BACKFILL_CONTENT_IDS.map((id) => ({
+    path: path.join(repoRoot, id),
+    id,
+  }));
 
   log({
     event: "backfill_start",

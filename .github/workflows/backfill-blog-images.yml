@@ -48,7 +48,7 @@ jobs:
           OBSIDIAN_AUTH_TOKEN: ${{ secrets.OBSIDIAN_AUTH_TOKEN }}
           OBSIDIAN_VAULT_NAME: ${{ secrets.OBSIDIAN_VAULT_NAME }}
           OBSIDIAN_VAULT_CACHE_DIR: /tmp/obsidian-vault-cache
-        run: npx tsx scripts/pull-vault-posts.ts reflections auto-blog-zero chickie-loo ai-blog
+        run: npx tsx scripts/pull-vault-posts.ts --all
 
       - name: Check Gemini Quota (before)
         env:

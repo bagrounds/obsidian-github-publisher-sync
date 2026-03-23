@@ -31,21 +31,21 @@ const CHICKIE_LOO: BlogSeriesConfig = {
   postTimeUtc: "15:00",
 };
 
-const THE_PUBLIC_GOOD: BlogSeriesConfig = {
-  id: "the-public-good",
-  name: "The Public Good",
+const SYSTEMS_FOR_PUBLIC_GOOD: BlogSeriesConfig = {
+  id: "systems-for-public-good",
+  name: "Systems for Public Good",
   icon: "🏛️",
-  author: "[[the-public-good]]",
-  baseUrl: "https://bagrounds.org/the-public-good",
+  author: "[[systems-for-public-good]]",
+  baseUrl: "https://bagrounds.org/systems-for-public-good",
   priorityUser: "bagrounds",
-  navLink: "[[index|Home]] > [[the-public-good/index|🏛️ The Public Good]]",
+  navLink: "[[index|Home]] > [[systems-for-public-good/index|🏛️ Systems for Public Good]]",
   postTimeUtc: "17:00",
 };
 
 export const BLOG_SERIES: ReadonlyMap<string, BlogSeriesConfig> = new Map([
   [AUTO_BLOG_ZERO.id, AUTO_BLOG_ZERO],
   [CHICKIE_LOO.id, CHICKIE_LOO],
-  [THE_PUBLIC_GOOD.id, THE_PUBLIC_GOOD],
+  [SYSTEMS_FOR_PUBLIC_GOOD.id, SYSTEMS_FOR_PUBLIC_GOOD],
 ]);
 
 export const lookupSeries = (seriesId: string): BlogSeriesConfig => {

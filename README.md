@@ -54,7 +54,7 @@
 | 🎮 `games/` | 1 | 🧬 Interactive games (Valence) |
 | 🤖 `auto-blog-zero/` | ~12 | 📝 AI-generated daily blog posts |
 | 🐔 `chickie-loo/` | ~12 | 🐣 AI-generated chicken-themed blog posts |
-| 🏛️ `the-public-good/` | ~1 | 🏛️ AI-generated democracy and public good blog posts |
+| 🏛️ `systems-for-public-good/` | ~1 | 🏛️ AI-generated democracy and public good blog posts |
 | 🤖 `ai-blog/` | ~30 | 📝 AI agent blog posts about code changes |
 
 ## ⚙️ GitHub Actions Workflows
@@ -71,7 +71,7 @@
 
 ⏰ Daily at 7:00 AM PT. 🐣 Same architecture as Auto Blog Zero but with a chicken-keeping themed personality and priority user.
 
-### 4. 🏛️ The Public Good (`the-public-good.yml`)
+### 4. 🏛️ Systems for Public Good (`systems-for-public-good.yml`)
 
 ⏰ Daily at 9:00 AM PT. 🏛️ AI-generated blog about democracy, public goods, and collective well-being. Uses `gemini-2.5-flash` with Google Search grounding to reference current events from high-quality sources (NPR, PBS, AP, Reuters). Explores positive and negative freedom, modern monetary theory, systems thinking, and the abundance mindset.
 
@@ -203,7 +203,7 @@ Pull Vault → BFS from Most Recent Reflection → For Each File:
 | `GEMINI_MODEL` | `gemma-3-27b-it` | 📱 Model for social media post generation |
 | `AUTO_BLOG_ZERO_PRIORITY_USER` | `bagrounds` | 👤 GitHub user for blog discussion priority |
 | `CHICKIE_LOO_PRIORITY_USER` | `ChickieLoo` | 🐔 GitHub user for Chickie Loo priority |
-| `THE_PUBLIC_GOOD_PRIORITY_USER` | `bagrounds` | 🏛️ GitHub user for The Public Good priority |
+| `SYSTEMS_FOR_PUBLIC_GOOD_PRIORITY_USER` | `bagrounds` | 🏛️ GitHub user for Systems for Public Good priority |
 | `DISABLE_TWITTER` | _(empty)_ | 🚫 Set to disable Twitter posting |
 | `DISABLE_BLUESKY` | _(empty)_ | 🚫 Set to disable Bluesky posting |
 | `DISABLE_MASTODON` | _(empty)_ | 🚫 Set to disable Mastodon posting |
@@ -263,4 +263,4 @@ GEMINI_API_KEY=... npx tsx scripts/check-gemini-quota.ts
 |---|---|
 | [`image-generation.md`](specs/image-generation.md) | 🖼️ Image generation pipeline — architecture, provider resolution, frontmatter schema, rate limiting, backfill prioritization |
 | [`daily-reflection.md`](specs/daily-reflection.md) | 📝 Daily reflection auto-update — template-based creation, series section insertion, post linking, workflow integration |
-| [`the-public-good.md`](specs/the-public-good.md) | 🏛️ The Public Good blog series — democracy, public goods, grounding with Google Search, editorial guidelines |
+| [`systems-for-public-good.md`](specs/systems-for-public-good.md) | 🏛️ Systems for Public Good blog series — democracy, public goods, grounding with Google Search, editorial guidelines |

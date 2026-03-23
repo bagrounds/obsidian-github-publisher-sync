@@ -1,14 +1,14 @@
-# 🏛️ The Public Good — Blog Series Spec
+# 🏛️ Systems for Public Good — Blog Series Spec
 
 ## 📋 Overview
 
-🏛️ **The Public Good** is a daily AI-generated blog series about democracy, public goods, collective well-being, and what it means to build a society that works for everyone.
+🏛️ **Systems for Public Good** is a daily AI-generated blog series about democracy, public goods, collective well-being, and what it means to build a society that works for everyone.
 
-🌐 Unlike other blog series in the pipeline, The Public Good relies heavily on **Google Search grounding** to reference current events, policy developments, and recent reporting from high-quality sources.
+🌐 Unlike other blog series in the pipeline, Systems for Public Good relies heavily on **Google Search grounding** to reference current events, policy developments, and recent reporting from high-quality sources.
 
 ## 🏗️ Architecture
 
-🔄 The Public Good uses the same blog generation pipeline as Auto Blog Zero and Chickie Loo:
+🔄 Systems for Public Good uses the same blog generation pipeline as Auto Blog Zero and Chickie Loo:
 
 ```
 GitHub Actions cron (9 AM PT / 17:00 UTC)
@@ -21,7 +21,7 @@ GitHub Actions cron (9 AM PT / 17:00 UTC)
 
 ### 🔑 Key Differences from Other Series
 
-| Aspect | Auto Blog Zero | Chickie Loo | The Public Good |
+| Aspect | Auto Blog Zero | Chickie Loo | Systems for Public Good |
 |--------|---------------|-------------|-----------------|
 | Model | `gemini-3.1-flash-lite-preview` | `gemini-3.1-flash-lite-preview` | `gemini-2.5-flash` |
 | Grounding | Optional (when helpful) | None | Always enabled |
@@ -71,6 +71,7 @@ The series explores interconnected themes:
 5. 🔄 **Systems thinking** — Feedback loops, emergence, leverage points, unintended consequences
 6. 🌊 **Abundance mindset** — Expanding prosperity rather than redistributing scarcity
 7. 🌍 **International comparisons** — How other democracies handle common challenges
+8. 🏡 **Real wealth** — Tangible goods and services (food, shelter, healthcare, education, community) that constitute genuine well-being, independent of monetary measures
 
 ## ⚖️ Editorial Approach
 
@@ -85,7 +86,7 @@ The series follows specific editorial guidelines to maintain quality:
 ## 📂 File Layout
 
 ```
-the-public-good/
+systems-for-public-good/
 ├── AGENTS.md                           # Series identity and voice
 ├── 2026-03-23-the-forgotten-commons.md # Seed post
 ├── index.md                            # Generated series index (dataview)
@@ -94,12 +95,12 @@ the-public-good/
 
 ## ⚙️ Configuration
 
-### 🔧 Workflow: `.github/workflows/the-public-good.yml`
+### 🔧 Workflow: `.github/workflows/systems-for-public-good.yml`
 
 | Variable | Default | Purpose |
 |----------|---------|---------|
 | `BLOG_GEMINI_MODEL` | `gemini-2.5-flash` | Model for post generation (with grounding) |
-| `THE_PUBLIC_GOOD_PRIORITY_USER` | `bagrounds` | Priority user for comment weighting |
+| `SYSTEMS_FOR_PUBLIC_GOOD_PRIORITY_USER` | `bagrounds` | Priority user for comment weighting |
 | `BLOG_ENABLE_GROUNDING` | _(not set, defaults to enabled)_ | Google Search grounding toggle |
 
 ### 🔐 Secrets (shared with other series)
@@ -112,5 +113,5 @@ The series config is covered by the existing `blog-series.test.ts` test suite, w
 
 - ✅ Series config exists in `BLOG_SERIES` map
 - ✅ Priority user is correctly configured
-- ✅ `lookupSeries("the-public-good")` resolves without error
+- ✅ `lookupSeries("systems-for-public-good")` resolves without error
 - ✅ Series-specific frontmatter assembly (nav links, icon, author)

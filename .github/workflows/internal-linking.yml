@@ -60,56 +60,22 @@ jobs:
           OBSIDIAN_AUTH_TOKEN: ${{ secrets.OBSIDIAN_AUTH_TOKEN }}
           OBSIDIAN_VAULT_NAME: ${{ secrets.OBSIDIAN_VAULT_NAME }}
           OBSIDIAN_VAULT_CACHE_DIR: /tmp/obsidian-vault-cache
-        run: |
-          npx tsx -e "(async () => {
-            const { syncObsidianVault } = await import('./scripts/lib/obsidian-sync.ts');
-            const fs = await import('fs');
-            const dir = await syncObsidianVault({
-              authToken: process.env.OBSIDIAN_AUTH_TOKEN,
-              vaultName: process.env.OBSIDIAN_VAULT_NAME,
-            });
-            fs.writeFileSync('/tmp/vault-dir.txt', dir);
-          })()"
-          VAULT_DIR=$(cat /tmp/vault-dir.txt)
-          echo "vault_dir=$VAULT_DIR" >> "$GITHUB_OUTPUT"
-          echo "📂 Vault pulled to: $VAULT_DIR"
+        run: npx tsx scripts/pull-obsidian-vault.ts
 
       - name: Run Internal Linking
         id: linking
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           LINKING_MODEL: ${{ vars.LINKING_MODEL || 'gemini-3.1-flash-lite-preview' }}
-        run: |
-          MAX_FILES="${{ github.event.inputs.max_files || '10' }}"
-          DRY_RUN_FLAG=""
-          if [ "${{ github.event.inputs.dry_run }}" = "true" ]; then
-            DRY_RUN_FLAG="--dry-run"
-          fi
-
-          npx tsx scripts/internal-linking.ts \
-            --max-files "$MAX_FILES" \
-            --content-dir "${{ steps.vault.outputs.vault_dir }}" \
-            $DRY_RUN_FLAG \
-            | tee /tmp/linking-output.log
-
-          # Check if any files were modified
-          MODIFIED=$(grep '"event":"modified_files"' /tmp/linking-output.log | tail -1 || true)
-          if [ -n "$MODIFIED" ]; then
-            echo "has_changes=true" >> "$GITHUB_OUTPUT"
-          else
-            echo "has_changes=false" >> "$GITHUB_OUTPUT"
-          fi
+        run: >-
+          npx tsx scripts/internal-linking.ts
+          --max-files "${{ github.event.inputs.max_files || '10' }}"
+          --content-dir "${{ steps.vault.outputs.vault_dir }}"
+          ${{ github.event.inputs.dry_run == 'true' && '--dry-run' || '' }}
 
       - name: Push Obsidian Vault
-        if: ${{ steps.linking.outputs.has_changes == 'true' && github.event.inputs.dry_run != 'true' }}
+        if: ${{ github.event.inputs.dry_run != 'true' }}
         env:
           OBSIDIAN_AUTH_TOKEN: ${{ secrets.OBSIDIAN_AUTH_TOKEN }}
           VAULT_DIR: ${{ steps.vault.outputs.vault_dir }}
-        run: |
-          npx tsx -e "(async () => {
-            const { pushObsidianVault } = await import('./scripts/lib/obsidian-sync.ts');
-            await pushObsidianVault(process.env.VAULT_DIR, {
-              authToken: process.env.OBSIDIAN_AUTH_TOKEN,
-            });
-          })()"
-          echo "📤 Vault pushed with link changes"
+        run: npx tsx scripts/push-obsidian-vault.ts

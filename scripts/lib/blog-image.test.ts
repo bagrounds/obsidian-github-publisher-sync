@@ -15,6 +15,7 @@ import {
   cleanContentForPrompt,
   DEFAULT_DESCRIBER_MODEL,
   DEFAULT_HUGGINGFACE_IMAGE_MODEL,
+  DEFAULT_TOGETHER_IMAGE_MODEL,
   mimeTypeToExtension,
   isQuotaError,
   isDailyQuotaError,
@@ -33,6 +34,7 @@ import {
   resolveImageProviders,
   makeCloudflareGenerator,
   makeHuggingFaceGenerator,
+  makeTogetherGenerator,
   extractFrontmatterValue,
   shouldRegenerateImage,
   removeImageEmbed,
@@ -2064,6 +2066,23 @@ describe("makeHuggingFaceGenerator", () => {
   });
 });
 
+describe("makeTogetherGenerator", () => {
+  it("returns an ImageGenerator function", () => {
+    const generator = makeTogetherGenerator();
+    assert.equal(typeof generator, "function");
+  });
+
+  it("uses default model when none specified", () => {
+    const generator = makeTogetherGenerator();
+    assert.equal(typeof generator, "function");
+  });
+
+  it("accepts custom model", () => {
+    const generator = makeTogetherGenerator("stabilityai/stable-diffusion-3-medium");
+    assert.equal(typeof generator, "function");
+  });
+});
+
 describe("resolveImageProviders", () => {
   it("returns Cloudflare as first provider when configured", () => {
     const env = {
@@ -2092,13 +2111,15 @@ describe("resolveImageProviders", () => {
       CLOUDFLARE_API_TOKEN: "cf-token",
       CLOUDFLARE_ACCOUNT_ID: "cf-account",
       HUGGINGFACE_API_TOKEN: "hf-token",
+      TOGETHER_API_TOKEN: "together-key",
       GEMINI_API_KEY: "gemini-key",
     };
     const providers = resolveImageProviders(env);
-    assert.equal(providers.length, 3);
+    assert.equal(providers.length, 4);
     assert.equal(providers[0]!.name, "cloudflare");
     assert.equal(providers[1]!.name, "huggingface");
-    assert.equal(providers[2]!.name, "gemini");
+    assert.equal(providers[2]!.name, "together");
+    assert.equal(providers[3]!.name, "gemini");
   });
 
   it("uses custom HuggingFace model from HUGGINGFACE_IMAGE_MODEL", () => {
@@ -2108,6 +2129,26 @@ describe("resolveImageProviders", () => {
     };
     const providers = resolveImageProviders(env);
     assert.equal(providers[0]!.model, "stabilityai/stable-diffusion-xl-base-1.0");
+  });
+
+  it("returns Together as provider when configured", () => {
+    const env = {
+      TOGETHER_API_TOKEN: "together-key",
+    };
+    const providers = resolveImageProviders(env);
+    assert.equal(providers.length, 1);
+    assert.equal(providers[0]!.name, "together");
+    assert.equal(providers[0]!.apiKey, "together-key");
+    assert.equal(providers[0]!.model, DEFAULT_TOGETHER_IMAGE_MODEL);
+  });
+
+  it("uses custom Together model from TOGETHER_IMAGE_MODEL", () => {
+    const env = {
+      TOGETHER_API_TOKEN: "together-key",
+      TOGETHER_IMAGE_MODEL: "stabilityai/stable-diffusion-3-medium",
+    };
+    const providers = resolveImageProviders(env);
+    assert.equal(providers[0]!.model, "stabilityai/stable-diffusion-3-medium");
   });
 
   it("throws when no credentials are available", () => {
@@ -2122,6 +2163,7 @@ describe("resolveImageProviders", () => {
       CLOUDFLARE_API_TOKEN: "cf-token",
       CLOUDFLARE_ACCOUNT_ID: "cf-account",
       HUGGINGFACE_API_TOKEN: "hf-token",
+      TOGETHER_API_TOKEN: "together-key",
       GEMINI_API_KEY: "gemini-key",
     };
     const providers = resolveImageProviders(env);

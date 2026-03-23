@@ -505,6 +505,59 @@ export const makeHuggingFaceGenerator = (
 ): ImageGenerator => async (apiToken, _model, prompt) =>
   generateWithHuggingFace(apiToken, model, prompt);
 
+export const DEFAULT_TOGETHER_IMAGE_MODEL = "black-forest-labs/FLUX.1-schnell-Free";
+
+interface TogetherApiResponse {
+  readonly data?: readonly { readonly b64_json?: string }[];
+}
+
+export const generateWithTogether = async (
+  apiKey: string,
+  model: string,
+  prompt: string,
+): Promise<{ readonly data: Buffer; readonly mimeType: string }> => {
+  const url = "https://api.together.ai/v1/images/generations";
+
+  const response = await fetch(url, {
+    method: "POST",
+    headers: {
+      Authorization: `Bearer ${apiKey}`,
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
+      model,
+      prompt,
+      steps: 4,
+      n: 1,
+      response_format: "b64_json",
+    }),
+  });
+
+  if (!response.ok) {
+    const text = await response.text();
+    throw new Error(
+      `Together API error ${response.status}: ${text}`,
+    );
+  }
+
+  const json = (await response.json()) as TogetherApiResponse;
+  const b64 = json.data?.[0]?.b64_json;
+
+  if (!b64) {
+    throw new Error("Together image generation returned no image data");
+  }
+
+  return {
+    data: Buffer.from(b64, "base64"),
+    mimeType: "image/jpeg",
+  };
+};
+
+export const makeTogetherGenerator = (
+  model: string = DEFAULT_TOGETHER_IMAGE_MODEL,
+): ImageGenerator => async (apiKey, _model, prompt) =>
+  generateWithTogether(apiKey, model, prompt);
+
 export interface ImageProviderConfig {
   readonly name: string;
   readonly apiKey: string;
@@ -549,6 +602,19 @@ export const resolveImageProviders = (env: Record<string, string | undefined>): 
     });
   }
 
+  const togetherKey = env.TOGETHER_API_TOKEN;
+  const togetherModel = env.TOGETHER_IMAGE_MODEL ?? DEFAULT_TOGETHER_IMAGE_MODEL;
+
+  if (togetherKey) {
+    providers.push({
+      name: "together",
+      apiKey: togetherKey,
+      model: togetherModel,
+      generator: makeTogetherGenerator(togetherModel),
+      describePrompt,
+    });
+  }
+
   const geminiModel = env.IMAGE_GEMINI_MODEL ?? "gemini-3.1-flash-image-preview";
 
   if (geminiKey) {
@@ -563,7 +629,7 @@ export const resolveImageProviders = (env: Record<string, string | undefined>): 
 
   if (providers.length === 0) {
     throw new Error(
-      "No image generation credentials found. Set CLOUDFLARE_API_TOKEN + CLOUDFLARE_ACCOUNT_ID, HUGGINGFACE_API_TOKEN, or GEMINI_API_KEY.",
+      "No image generation credentials found. Set CLOUDFLARE_API_TOKEN + CLOUDFLARE_ACCOUNT_ID, HUGGINGFACE_API_TOKEN, TOGETHER_API_TOKEN, or GEMINI_API_KEY.",
     );
   }
 

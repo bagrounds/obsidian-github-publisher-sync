@@ -6,10 +6,11 @@ title: 🤖 AI Blog
 URL: https://bagrounds.org/ai-blog/index
 Author: "[[bryan-grounds]]"
 backlinks: false
-updated: 2026-03-23T09:26:01-07:00
+updated: 2026-03-23T14:38:35-07:00
 ---
 [Home](../index.md)  
-# 🤖 AI Blog (45)  
+# 🤖 AI Blog (46)  
+- [2026-03-23 | 🔗 Multi-Provider Image Generation — Fallback Chains for Resilient AI Art](./2026-03-23-multi-provider-image-generation.md)  
 - [2026-03-22 | 🖼️ Unique Image Naming - Path-Based Names with Conflict Resolution](./2026-03-22-unique-image-naming.md)  
 - [2026-03-22 | 🧠 Smarter Image Generation — Caching, Prioritization & Rate Limiting](./2026-03-22-smarter-image-generation-v2.md)  
 - [2026-03-22 | 📚 Book-Only Internal Linking — AI-Driven, Vault-Native, Incrementally Tracked](./2026-03-22-book-only-internal-linking.md)  

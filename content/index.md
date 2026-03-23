@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-03-23T09:26:01-07:00
+updated: 2026-03-23T14:38:35-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -21,11 +21,11 @@ updated: 2026-03-23T09:26:01-07:00
 - [2026-03-20 | 🤖 Synthetic 🧠 Intelligence 💭 Thinks 🔍 about 🧬 Meaning ⚛️ Valence 🏛️ Democracy 🏗️ Evolution & 🥚 Eggs 🎮📚🐔🤖🤖📺](./reflections/2026-03-20.md)  
   
   
-## [🤖 AI Blog](./ai-blog/index.md) (45)  
+## [🤖 AI Blog](./ai-blog/index.md) (46)  
+- [2026-03-23 | 🔗 Multi-Provider Image Generation — Fallback Chains for Resilient AI Art](./ai-blog/2026-03-23-multi-provider-image-generation.md)  
 - [2026-03-22 | 🖼️ Unique Image Naming - Path-Based Names with Conflict Resolution](./ai-blog/2026-03-22-unique-image-naming.md)  
 - [2026-03-22 | 🧠 Smarter Image Generation — Caching, Prioritization & Rate Limiting](./ai-blog/2026-03-22-smarter-image-generation-v2.md)  
 - [2026-03-22 | 📚 Book-Only Internal Linking — AI-Driven, Vault-Native, Incrementally Tracked](./ai-blog/2026-03-22-book-only-internal-linking.md)  
-- [2026-03-21 | 🎨 Smarter Image Generation — Gemini Descriptions, Regeneration, and Model Research](./ai-blog/2026-03-21-smarter-image-generation.md)  
   
   
 ## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (14)  
@@ -63,7 +63,8 @@ updated: 2026-03-23T09:26:01-07:00
 - [🪖🎨 The War of Art: Break Through the Blocks and Win Your Inner Creative Battles](./books/the-war-of-art.md)  
   
   
-## [📺 Videos](./videos/index.md) (703)  
+## [📺 Videos](./videos/index.md) (704)  
+- [👮🚔🕵️ Police Stings: Last Week Tonight with John Oliver (HBO)](./videos/police-stings-last-week-tonight-with-john-oliver-hbo.md)  
 - [🇺🇸🗣️🏛️ American Conversations: Senator Jon Ossoff](./videos/american-conversations-senator-jon-ossoff.md)  
 - [🇺🇸🏛️🗣️📊 An Analysis of Modern Republicanism | Explainer](./videos/an-analysis-of-modern-republicanism-explainer.md)  
 - [🌿🤖🛰️ These AI Devices Protect Nature in Real Time | Juan M. Lavista Ferres | TED](./videos/these-ai-devices-protect-nature-in-real-time-juan-m-lavista-ferres-ted.md)  
@@ -73,7 +74,6 @@ updated: 2026-03-23T09:26:01-07:00
 - [🧠💰📈 The psychology of making money](./videos/the-psychology-of-making-money.md)  
 - [🤖🤝🏛️ AI and Democracy (Chris Bail at Lake Como Lectures on Democracy)](./videos/ai-and-democracy-chris-bail-at-lake-como-lectures-on-democracy.md)  
 - [📺🎤🗣️ J.D. Vance: Last Week Tonight with John Oliver (HBO)](./videos/jd-vance-last-week-tonight-with-john-oliver-hbo.md)  
-- [📈🗣️📺 USAID: Last Week Tonight with John Oliver (HBO)](./videos/usaid-last-week-tonight-with-john-oliver-hbo.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  

@@ -120,7 +120,7 @@ scripts/
   tweet-reflection.test.ts  # Unit, property-based, and integration tests
 .github/
   workflows/
-    tweet-reflection.yml    # GitHub Actions cron workflow
+    scheduled.yml           # Consolidated hourly cron workflow
 docs/
   tweet-automation-design.md     # This document
   tweet-automation-notes.md      # Planning & implementation notes

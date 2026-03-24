@@ -16,8 +16,7 @@
 | 🧪 Tests | `scripts/lib/daily-reflection.test.ts` | ✅ 40 tests covering all pure and I/O functions |
 | 🔌 Integration | `scripts/generate-blog-post.ts` | 📝 Calls reflection update after generating a post |
 | 🖥️ CLI | `scripts/update-daily-reflection.ts` | 🚀 Standalone entry point for manual use |
-| ⚙️ Workflow | `.github/workflows/auto-blog-zero.yml` | 🤖 Auto Blog Zero daily post workflow |
-| ⚙️ Workflow | `.github/workflows/chickie-loo.yml` | 🐔 Chickie Loo daily post workflow |
+| ⚙️ Workflow | `.github/workflows/scheduled.yml` | 🤖 Consolidated hourly cron (runs all blog series) |
 
 ### 🔄 Data Flow
 
@@ -133,7 +132,7 @@ tags:
 
 🆕 To add a new blog series with automatic reflection updates:
 1. 📋 Add a `BlogSeriesConfig` entry to `scripts/lib/blog-series-config.ts`
-2. ⚙️ Create a workflow file (copy `chickie-loo.yml`, change series id and priority user)
+2. ⚙️ Add a `BlogSeriesRunConfig` entry in `scripts/lib/scheduler.ts` and a schedule entry
 3. ✅ The reflection update comes for free — no additional configuration needed
 
 ## 🧪 Testing

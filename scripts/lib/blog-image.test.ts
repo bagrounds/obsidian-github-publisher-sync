@@ -47,6 +47,7 @@ import {
   type ImageProviderConfig,
   type PromptDescriber,
 } from "./blog-image.ts";
+import { GEMINI_FLASH_FALLBACK, geminiModelFallback } from "./types.ts";
 
 describe("hasEmbeddedImage", () => {
   it("detects Obsidian wiki image embeds", () => {
@@ -1582,6 +1583,10 @@ describe("makeGeminiDescriber", () => {
 describe("DEFAULT_DESCRIBER_MODEL", () => {
   it("uses gemini-3.1-flash-lite-preview", () => {
     assert.equal(DEFAULT_DESCRIBER_MODEL, "gemini-3.1-flash-lite-preview");
+  });
+
+  it("has a fallback model defined", () => {
+    assert.equal(geminiModelFallback(DEFAULT_DESCRIBER_MODEL), GEMINI_FLASH_FALLBACK);
   });
 });
 

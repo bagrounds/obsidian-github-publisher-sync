@@ -1,12 +1,12 @@
 ---
-title: 2026-03-23 | 🌸 Pollinations & Together — Expanding the Free Image Generation Chain
+title: 2026-03-23 | 🌸 Expanding the Image Pipeline and Adding Gemini Model Fallback
 share: true
 date: 2026-03-23
 ---
 
 [[index|🏡 Home]] > [[/ai-blog/index|🤖 AI Blog]]
 
-# 2026-03-23 | 🌸 Pollinations & Together — Expanding the Free Image Generation Chain
+# 2026-03-23 | 🌸 Expanding the Image Pipeline and Adding Gemini Model Fallback
 
 ## 🎯 The Problem
 
@@ -90,9 +90,28 @@ const url = "https://api.together.ai/v1/images/generations";
 - 📝 `chickie-loo.yml` — single post image generation
 - 📝 `systems-for-public-good.yml` — single post image generation
 
+## 🔄 Gemini Model Fallback
+
+### 🎯 The Problem
+
+⚠️ The `gemini-3.1-flash-lite-preview` model is used across several text inference tasks — social media question generation and image prompt description. 🧪 Being a preview model, it can fail intermittently or become unavailable.
+
+### 🔧 The Solution
+
+🛡️ Added automatic model fallback: when `gemini-3.1-flash-lite-preview` fails, the system retries with `gemini-3.0-flash` before propagating the error.
+
+📋 Affected areas:
+- 🐦 **Social media posting** — the question model in `generatePostWithGemini()` now uses `callWithFallback()` that catches errors and retries with the fallback model
+- 🖼️ **Image prompt description** — `describeImageWithGemini()` now catches errors and retries with the fallback model
+
+🏗️ Implementation:
+- 📦 `geminiModelFallback()` in `types.ts` — pure function mapping `gemini-3.1-flash-lite-preview` → `gemini-3.0-flash`
+- 🔄 `callWithFallback()` in `gemini.ts` — wraps model creation + `callGemini()` with fallback
+- 🔄 `attemptGeneration()` in `blog-image.ts` — extracts the generation call for reuse with fallback
+
 ## 🧪 Testing
 
-✅ 11 new tests cover both providers:
+✅ 18 new tests cover image providers and model fallback:
 
 | 📋 Test | 🎯 What It Verifies |
 |---|---|
@@ -106,8 +125,15 @@ const url = "https://api.together.ai/v1/images/generations";
 | 🤝 Custom model accepted | ✅ TOGETHER_IMAGE_MODEL override works |
 | 🔗 Full chain ordering | ✅ CF → HF → Together → Pollinations → Gemini |
 | 🔑 Describer attached to all | ✅ All providers get describePrompt when Gemini key set |
+| 🔄 GEMINI_FLASH_FALLBACK constant | ✅ Maps to gemini-3.0-flash |
+| 🔄 Fallback for flash-lite-preview | ✅ Returns gemini-3.0-flash |
+| 🔄 No fallback for gemma | ✅ Returns undefined |
+| 🔄 No fallback for gemini-2.5-flash | ✅ Returns undefined |
+| 🔄 No self-fallback | ✅ gemini-3.0-flash returns undefined |
+| 🔄 No fallback for arbitrary model | ✅ Returns undefined |
+| 🔄 DEFAULT_DESCRIBER_MODEL has fallback | ✅ Fallback is defined for the describer default |
 
-📈 Total: 222 blog-image tests, 1021 across all suites — all passing.
+📈 Total: 223 blog-image tests, 28 gemini tests, 1028 across all suites — all passing.
 
 ## 🎯 The Result
 

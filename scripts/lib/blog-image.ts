@@ -5,6 +5,7 @@ import yaml from "js-yaml";
 
 import { parseFrontmatter } from "./frontmatter.ts";
 import { stripEmbedSections, todayPacific } from "./blog-prompt.ts";
+import { geminiModelFallback } from "./types.ts";
 
 const IMAGE_EXTENSIONS = /\.(jpg|jpeg|png|gif|webp)$/i;
 const OBSIDIAN_IMAGE_EMBED = /!\[\[(?:attachments\/)?[^\]]+\.(jpg|jpeg|png|gif|webp)\]\]/i;
@@ -397,13 +398,24 @@ export const describeImageWithGemini = async (
   const { GoogleGenAI } = await import("@google/genai");
   const ai = new GoogleGenAI({ apiKey });
 
-  const response = await ai.models.generateContent({
-    model,
-    contents: `${IMAGE_DESCRIPTION_SYSTEM_PROMPT}\n\n${content}`,
-  });
+  const attemptGeneration = async (modelName: string): Promise<string> => {
+    const response = await ai.models.generateContent({
+      model: modelName,
+      contents: `${IMAGE_DESCRIPTION_SYSTEM_PROMPT}\n\n${content}`,
+    });
+    return (response.text ?? "").trim();
+  };
 
-  const text = response.text ?? "";
-  return text.trim();
+  try {
+    return await attemptGeneration(model);
+  } catch (error) {
+    const fallback = geminiModelFallback(model);
+    if (fallback) {
+      console.warn(`⚠️ ${model} failed for image description, falling back to ${fallback}`);
+      return await attemptGeneration(fallback);
+    }
+    throw error;
+  }
 };
 
 export const makeGeminiDescriber = (

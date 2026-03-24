@@ -5,6 +5,7 @@
 📋 All recurring automation tasks run through a single hourly GitHub Actions cron job.
 🧠 A TypeScript scheduler determines which tasks to execute based on the current UTC hour.
 🚫 Zero scheduling logic lives in YAML — the workflow file is purely declarative.
+🔄 Blog series use "at or after" scheduling with idempotency checks for resilience.
 
 ## 🏗️ Architecture
 
@@ -13,9 +14,7 @@
 | 🧩 Component | 📂 Path | 📝 Purpose |
 |---|---|---|
 | 📚 Scheduler | `scripts/lib/scheduler.ts` | 🧠 Pure functions: given UTC hour → task IDs to run |
-| 🧪 Tests | `scripts/lib/scheduler.test.ts` | ✅ 45 tests covering scheduling logic and invariants |
-| 🎯 Orchestrator | `scripts/run-scheduled.ts` | 🔧 Single entry point that spawns task pipelines as subprocesses |
-| 🧪 Tests | `scripts/run-scheduled.test.ts` | ✅ 12 tests covering CLI parsing and output capture |
+| 🎯 Orchestrator | `scripts/run-scheduled.ts` | 🔧 Single entry point that calls library functions directly |
 | ⚙️ Workflow | `.github/workflows/scheduled.yml` | 🕐 Hourly cron, declarative YAML only |
 
 ### 🔄 Data Flow
@@ -27,10 +26,10 @@
          ↓
 🧠 getScheduledTasks(currentHourUtc)
          ↓
-📋 For each task:
-   ├── 🐔 blog-series:chickie-loo      → pull → generate → image → sync
-   ├── 🤖 blog-series:auto-blog-zero   → pull → generate → image → sync
-   ├── 🏛️ blog-series:systems-for-public-good → pull → generate → image → sync
+📋 For each task (direct library calls, no subprocesses):
+   ├── 🐔 blog-series:chickie-loo      → check exists → pull → generate → image → sync
+   ├── 🤖 blog-series:auto-blog-zero   → check exists → pull → generate → image → sync
+   ├── 🏛️ blog-series:systems-for-public-good → check exists → pull → generate → image → sync
    ├── 🖼️ backfill-blog-images         → pull → backfill → sync
    ├── 🔗 internal-linking             → pull vault → link → push vault
    └── 📢 social-posting               → discover → post
@@ -38,46 +37,58 @@
 
 ## ⏰ Schedule
 
-| 🕐 UTC Hour | 🏷️ Task ID | 📝 Description |
+### 📝 Blog Series — "At or After" Scheduling
+
+🔄 Blog series tasks become eligible at their scheduled hour and remain eligible for the rest of the day. The orchestrator checks whether today's post already exists before generating, making the system resilient to partial failures.
+
+| 🕐 Earliest UTC Hour | 🏷️ Task ID | 📝 Description |
 |---|---|---|
 | 15 | `blog-series:chickie-loo` | 🐔 Chickie Loo daily post (7 AM PT) |
 | 16 | `blog-series:auto-blog-zero` | 🤖 Auto Blog Zero daily post (8 AM PT) |
 | 17 | `blog-series:systems-for-public-good` | 🏛️ Systems for Public Good daily post (9 AM PT) |
+
+### 🔧 Other Tasks — Exact Hour Matching
+
+| 🕐 UTC Hour | 🏷️ Task ID | 📝 Description |
+|---|---|---|
 | 6 | `backfill-blog-images` | 🖼️ Backfill missing blog images (10 PM PT prev day) |
 | 8 | `internal-linking` | 🔗 BFS wikilink insertion (~midnight PT) |
 | 0,2,4,6,8,10,12,14,16,18,20,22 | `social-posting` | 📢 Auto-post to X/Bluesky/Mastodon (every 2 hours) |
 
-### 📊 Overlapping Hours
+## 🔧 Blog Series Model Fallback Chain
 
-| 🕐 Hour | 🏷️ Tasks (in execution order) |
-|---|---|
-| 6 | 🖼️ backfill-blog-images → 📢 social-posting |
-| 8 | 🔗 internal-linking → 📢 social-posting |
-| 16 | 🤖 blog-series:auto-blog-zero → 📢 social-posting |
+📐 Each blog series has an ordered chain of Gemini models to try. On failure, the orchestrator tries the next model with 5XX retry and grounding fallback:
 
-🔢 Tasks execute sequentially within an hour. Blog/infrastructure tasks run before social posting to ensure new content is available for discovery.
-
-## 🔧 Blog Series Runtime Configuration
-
-📐 Each blog series has per-series defaults that the orchestrator applies before spawning the generation script:
-
-| 🏷️ Series | 🤖 Default Model | 👤 Priority User Env Var |
+| 🏷️ Series | 🤖 Model Chain (in order) | 👤 Priority User Env Var |
 |---|---|---|
-| `chickie-loo` | `gemini-3.1-flash-lite-preview` | `CHICKIE_LOO_PRIORITY_USER` |
-| `auto-blog-zero` | `gemini-3.1-flash-lite-preview` | `AUTO_BLOG_ZERO_PRIORITY_USER` |
-| `systems-for-public-good` | `gemini-2.5-flash` | `SYSTEMS_FOR_PUBLIC_GOOD_PRIORITY_USER` |
+| `chickie-loo` | gemini-3.1-flash-lite-preview → gemini-2.5-flash → gemini-2.5-flash-lite | `CHICKIE_LOO_PRIORITY_USER` |
+| `auto-blog-zero` | gemini-3.1-flash-lite-preview → gemini-2.5-flash → gemini-2.5-flash-lite | `AUTO_BLOG_ZERO_PRIORITY_USER` |
+| `systems-for-public-good` | gemini-2.5-flash → gemini-2.5-flash-lite → gemini-3.1-flash-lite-preview | `SYSTEMS_FOR_PUBLIC_GOOD_PRIORITY_USER` |
 
-🔄 The `BLOG_GEMINI_MODEL` GitHub variable overrides all defaults when set.
+🔄 The `BLOG_GEMINI_MODEL` GitHub variable prepends to the chain when set.
 
-## 🔌 Subprocess Architecture
+## 🛡️ API Resilience
 
-🏗️ The orchestrator spawns existing CLI scripts as child processes via `spawnSync`:
+### 🔄 5XX Retry with Exponential Backoff
 
-- 🔒 **Process isolation** — Each script runs in its own process; failures don't crash the orchestrator
-- 🌍 **Environment inheritance** — Child processes inherit `process.env` with optional per-task overrides
-- 📎 **GITHUB_OUTPUT capture** — For chained steps (e.g., generate → image → sync), the orchestrator creates a temp file, sets it as `GITHUB_OUTPUT`, and parses outputs after the subprocess completes
-- ⚠️ **continue-on-error** — Image generation and quota checks use `continueOnError: true` to match original workflow behavior
-- 🛡️ **Task isolation** — Each task is wrapped in try/catch; a failing task does not prevent subsequent tasks from running
+📡 All Gemini API calls retry on transient errors (429, 500, 502, 503, 504) with exponential backoff (2s, 4s, 8s). Up to 3 retries per model.
+
+### 🔀 Model Fallback Chain
+
+🔗 If a model fails definitively (non-retriable error after retries), the orchestrator tries the next model in the chain. Each model gets its own retry budget.
+
+### 🌐 Grounding Fallback
+
+📡 For grounding-enabled requests, if grounding fails with a quota error, the request is retried without grounding on the same model before moving to the next model.
+
+## 📚 Library-First Architecture
+
+🏗️ The orchestrator calls library functions directly — no subprocess spawning, no temp files, no GITHUB_OUTPUT parsing:
+
+- 📞 **Direct function calls** — `generateBlogPost()`, `processNote()`, `autoPost()`, `runLinking()`, etc.
+- 📦 **Return values** — Data flows through function returns, not environment variables
+- 🛡️ **Task isolation** — Each task is wrapped in try/catch; failures don't prevent subsequent tasks
+- ⚠️ **Graceful degradation** — Image generation failures are caught and logged, not fatal
 
 ## 🖥️ CLI Interface
 
@@ -101,26 +112,33 @@ npx tsx scripts/run-scheduled.ts --task blog-series:chickie-loo
 
 ## 🧪 Testing
 
-🔬 57 tests across 7 suites:
+🔬 81 tests across 10 suites:
 
-### 📚 Scheduler Tests (45 tests)
+### 📚 Scheduler Tests
 
-- ⏰ Per-hour task resolution (24 hours × valid IDs)
+- ⏰ "At or after" scheduling for blog series (eligible at and after scheduled hour)
+- 🚫 Blog series NOT eligible before scheduled hour
+- ⏰ Exact hour matching for non-blog tasks
 - 📊 Overlapping schedule verification
-- 🔢 Execution order preservation
 - 🛡️ Schedule invariants (valid hours, no duplicates)
-- 🔧 Blog series run config completeness
-- ✅ Task ID validation
-- 🔍 Series ID extraction
+- 🔧 Blog series model chain completeness and ordering
+- ✅ Task ID validation, series ID extraction
+- 📂 blogPostExistsForToday filesystem checks
 
-### 🎯 Orchestrator Tests (12 tests)
+### 🎯 Orchestrator Tests
 
 - 🖥️ CLI argument parsing (--hour, --task, both, edge cases)
-- 📎 GITHUB_OUTPUT file parsing (single, multiple, equals in values, empty, missing)
+
+### 📝 Blog Generation Tests
+
+- 🔄 isRetriableError (5XX, 429, UNAVAILABLE, INTERNAL)
+- ❌ Non-retriable errors (400, 403, 404)
+- 📊 isQuotaError (429, RESOURCE_EXHAUSTED, quota)
+- 🔤 generateSlug
 
 ## ➕ Adding a New Scheduled Task
 
-1. 📋 Define the task's CLI script in `scripts/`
+1. 📋 Define the task's library function
 2. 🏷️ Add a `TaskId` variant to `scripts/lib/scheduler.ts`
 3. ⏰ Add a `ScheduleEntry` to the `SCHEDULE` array
 4. 🔧 Add a runner function and register it in `TASK_RUNNERS` in `scripts/run-scheduled.ts`

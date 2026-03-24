@@ -4,8 +4,11 @@
  * Consolidated Scheduled Task Runner
  *
  * Single entry point for all scheduled tasks. Determines which tasks to
- * run based on the current UTC hour, then executes each task's pipeline
- * by spawning the existing CLI scripts as subprocesses.
+ * run based on the current UTC hour, then executes each task by calling
+ * library functions directly — no subprocesses, no GITHUB_OUTPUT passing.
+ *
+ * Blog series tasks use "at or after" scheduling and check whether
+ * today's post already exists, making them resilient to partial failures.
  *
  * Usage:
  *   npx tsx scripts/run-scheduled.ts                     # run tasks for current hour
@@ -15,18 +18,27 @@
  * @module run-scheduled
  */
 
-import { spawnSync } from "node:child_process";
 import fs from "node:fs";
 import path from "node:path";
-import os from "node:os";
 
 import {
   getScheduledTasks,
   isValidTaskId,
-  extractSeriesId,
   BLOG_SERIES_RUN_CONFIGS,
+  blogPostExistsForToday,
   type TaskId,
 } from "./lib/scheduler.ts";
+import { todayPacific } from "./lib/blog-series.ts";
+import { generateBlogPost } from "./generate-blog-post.ts";
+import { processNote, resolveImageProvider, resolveImageProviders, backfillImages, syncMarkdownDir, syncAttachmentsDir } from "./lib/blog-image.ts";
+import { syncObsidianVault, pushObsidianVault } from "./lib/obsidian-sync.ts";
+import { copySeriesPosts } from "./pull-vault-posts.ts";
+import { syncFileToVault, readPreviousPostFilename } from "./sync-series-to-vault.ts";
+import { run as runLinking, DEFAULT_LINKING_MODEL } from "./lib/internal-linking.ts";
+import { autoPost } from "./auto-post.ts";
+import { fetchFullQuotaReport, formatQuotaReport } from "./lib/gemini-quota.ts";
+import { parseServiceAccountKey, getAccessToken } from "./lib/gcp-auth.ts";
+import { BACKFILL_CONTENT_IDS } from "./lib/blog-series-config.ts";
 
 // ---------------------------------------------------------------------------
 // Logging
@@ -36,216 +48,238 @@ const log = (data: Record<string, unknown>): void =>
   console.log(JSON.stringify({ timestamp: new Date().toISOString(), ...data }));
 
 // ---------------------------------------------------------------------------
-// Subprocess helpers
+// Shared constants
 // ---------------------------------------------------------------------------
 
 const REPO_ROOT = path.resolve(import.meta.dirname, "..");
 
-const runScript = (
-  script: string,
-  args: readonly string[],
-  options?: {
-    readonly continueOnError?: boolean;
-    readonly extraEnv?: Readonly<Record<string, string>>;
-  },
-): void => {
-  const { continueOnError = false, extraEnv = {} } = options ?? {};
+// ---------------------------------------------------------------------------
+// Quota check helper (informational, never fails the pipeline)
+// ---------------------------------------------------------------------------
 
-  log({ event: "script_start", script, args });
-
-  const result = spawnSync("npx", ["tsx", script, ...args], {
-    stdio: "inherit",
-    env: { ...process.env, ...extraEnv },
-    cwd: REPO_ROOT,
-  });
-
-  if (result.status !== 0) {
-    const msg = `${script} exited with code ${result.status}`;
-    if (continueOnError) {
-      log({ event: "script_failed_continuing", script, exitCode: result.status });
-    } else {
-      throw new Error(msg);
-    }
-  } else {
-    log({ event: "script_complete", script });
-  }
-};
-
-const parseGitHubOutputs = (filePath: string): Readonly<Record<string, string>> => {
-  const content = fs.existsSync(filePath)
-    ? fs.readFileSync(filePath, "utf-8")
-    : "";
-
-  return Object.fromEntries(
-    content
-      .split("\n")
-      .filter(Boolean)
-      .map((line) => {
-        const eqIndex = line.indexOf("=");
-        return eqIndex > 0
-          ? [line.slice(0, eqIndex), line.slice(eqIndex + 1)]
-          : [];
-      })
-      .filter((pair): pair is [string, string] => pair.length === 2),
-  );
-};
-
-const runScriptWithOutputs = (
-  script: string,
-  args: readonly string[],
-  extraEnv: Readonly<Record<string, string>> = {},
-): Readonly<Record<string, string>> => {
-  const tmpFile = path.join(os.tmpdir(), `github-output-${Date.now()}`);
-  fs.writeFileSync(tmpFile, "");
-
+const checkGeminiQuota = async (label: string): Promise<void> => {
   try {
-    runScript(script, args, {
-      extraEnv: { ...extraEnv, GITHUB_OUTPUT: tmpFile },
-    });
-    return parseGitHubOutputs(tmpFile);
-  } finally {
-    fs.existsSync(tmpFile) && fs.unlinkSync(tmpFile);
+    const apiKey = process.env.GEMINI_API_KEY;
+    if (!apiKey) return;
+
+    let accessToken: string | undefined;
+    let projectId: string | undefined;
+    const saRaw = process.env.GCP_SERVICE_ACCOUNT_KEY;
+    if (saRaw) {
+      try {
+        const sa = parseServiceAccountKey(saRaw);
+        projectId = process.env.GCP_PROJECT_ID ?? sa.project_id;
+        accessToken = await getAccessToken(sa);
+      } catch { /* quota check is best-effort */ }
+    }
+
+    const report = await fetchFullQuotaReport({ apiKey, label, accessToken, projectId });
+    console.log(formatQuotaReport(report));
+  } catch (error) {
+    log({ event: "quota_check_failed", label, error: error instanceof Error ? error.message : String(error) });
   }
 };
 
 // ---------------------------------------------------------------------------
-// Task runners
+// Task runners — direct library calls, no subprocesses
 // ---------------------------------------------------------------------------
 
-const runBlogSeries = (seriesId: string): void => {
+const runBlogSeries = async (seriesId: string): Promise<void> => {
   const taskName = `blog-series:${seriesId}`;
   log({ event: "task_start", task: taskName });
 
   const runConfig = BLOG_SERIES_RUN_CONFIGS.get(seriesId);
   if (!runConfig) throw new Error(`No run config for series: ${seriesId}`);
 
-  const model =
-    process.env.BLOG_GEMINI_MODEL?.trim() || runConfig.defaultModel;
-  const priorityUser = process.env[runConfig.priorityUserEnvVar]?.trim() || undefined;
+  const authToken = process.env.OBSIDIAN_AUTH_TOKEN;
+  const vaultName = process.env.OBSIDIAN_VAULT_NAME;
+  if (!authToken || !vaultName) throw new Error("OBSIDIAN_AUTH_TOKEN and OBSIDIAN_VAULT_NAME are required");
 
-  const seriesEnv: Record<string, string> = { BLOG_GEMINI_MODEL: model };
-  if (priorityUser) seriesEnv.BLOG_PRIORITY_USER = priorityUser;
+  const apiKey = process.env.GEMINI_API_KEY;
+  if (!apiKey) throw new Error("GEMINI_API_KEY is required");
 
-  // 1. Pull vault posts
-  runScript("scripts/pull-vault-posts.ts", [seriesId]);
+  const today = todayPacific();
 
-  // 2. Check Gemini quota (before)
-  runScript("scripts/check-gemini-quota.ts", [
-    "--label",
-    `before ${seriesId}`,
-  ]);
+  // 1. Pull vault posts for this series
+  const vaultDir = await syncObsidianVault({ authToken, vaultName });
+  copySeriesPosts(vaultDir, seriesId, REPO_ROOT);
 
-  // 3. Generate blog post — capture the "post" output
-  const outputs = runScriptWithOutputs(
-    "scripts/generate-blog-post.ts",
-    ["--series", seriesId],
-    seriesEnv,
-  );
-  const postPath = outputs.post?.trim();
-
-  // 4. Generate blog image (continue-on-error)
-  if (postPath) {
-    runScript("scripts/generate-blog-image.ts", ["--note", postPath], {
-      continueOnError: true,
-    });
+  // 2. Check if today's post already exists (idempotent "at or after" scheduling)
+  const seriesDir = path.join(REPO_ROOT, seriesId);
+  if (blogPostExistsForToday(seriesDir, today)) {
+    log({ event: "skip_already_generated", seriesId, today });
+    return;
   }
 
-  // 5. Check Gemini quota (after — always)
-  runScript(
-    "scripts/check-gemini-quota.ts",
-    ["--label", `after ${seriesId}`],
-    { continueOnError: true },
-  );
+  // 3. Check Gemini quota (informational)
+  await checkGeminiQuota(`before ${seriesId}`);
 
-  // 6. Sync to Obsidian vault
-  if (postPath) {
-    runScript("scripts/sync-series-to-vault.ts", [
-      "--series",
-      seriesId,
-      "--post",
-      postPath,
-    ]);
+  // 4. Determine model chain: env override → per-series defaults
+  const envModel = process.env.BLOG_GEMINI_MODEL?.trim();
+  const models = envModel ? [envModel, ...runConfig.modelChain.filter((m) => m !== envModel)] : runConfig.modelChain;
+  const priorityUser = process.env[runConfig.priorityUserEnvVar]?.trim() || undefined;
+
+  // 5. Generate blog post
+  const result = await generateBlogPost({
+    seriesId,
+    models,
+    apiKey,
+    repoRoot: REPO_ROOT,
+    today,
+    priorityUser,
+  });
+
+  // 6. Generate blog image (continue on error)
+  if (result.postPath) {
+    try {
+      const notePath = path.resolve(REPO_ROOT, result.postPath);
+      const provider = resolveImageProvider(process.env as Record<string, string | undefined>);
+      const attachmentsDir = process.env.ATTACHMENTS_DIR ?? path.join(REPO_ROOT, "attachments");
+      await processNote(notePath, attachmentsDir, provider.apiKey, provider.model, provider.generator, provider.describePrompt);
+      log({ event: "image_generated", postPath: result.postPath });
+    } catch (error) {
+      log({ event: "image_generation_failed", postPath: result.postPath, error: error instanceof Error ? error.message : String(error) });
+    }
+  }
+
+  // 7. Check Gemini quota (informational)
+  await checkGeminiQuota(`after ${seriesId}`);
+
+  // 8. Sync to Obsidian vault
+  if (result.postPath) {
+    const syncVaultDir = await syncObsidianVault({ authToken, vaultName });
+    let changed = false;
+
+    const postLocal = path.join(REPO_ROOT, result.postPath);
+    changed = syncFileToVault(postLocal, result.postPath, syncVaultDir) || changed;
+
+    const metadataPath = path.join(REPO_ROOT, seriesId, ".last-generate-metadata.json");
+    const previousFilename = readPreviousPostFilename(metadataPath);
+    if (previousFilename) {
+      const prevPath = `${seriesId}/${previousFilename}`;
+      changed = syncFileToVault(path.join(REPO_ROOT, prevPath), prevPath, syncVaultDir) || changed;
+    }
+
+    const agentsPath = `${seriesId}/AGENTS.md`;
+    changed = syncFileToVault(path.join(REPO_ROOT, agentsPath), agentsPath, syncVaultDir) || changed;
+
+    const attachmentsDir = path.join(REPO_ROOT, "attachments");
+    if (fs.existsSync(attachmentsDir) && fs.readdirSync(attachmentsDir).length > 0) {
+      const synced = syncAttachmentsDir(attachmentsDir, syncVaultDir);
+      if (synced > 0) changed = true;
+    }
+
+    if (changed) {
+      await pushObsidianVault(syncVaultDir, { authToken });
+      log({ event: "vault_pushed" });
+    }
   }
 
   log({ event: "task_complete", task: taskName });
 };
 
-const runBackfillImages = (): void => {
+const runBackfillImages = async (): Promise<void> => {
   log({ event: "task_start", task: "backfill-blog-images" });
 
+  const authToken = process.env.OBSIDIAN_AUTH_TOKEN;
+  const vaultName = process.env.OBSIDIAN_VAULT_NAME;
+  if (!authToken || !vaultName) throw new Error("OBSIDIAN_AUTH_TOKEN and OBSIDIAN_VAULT_NAME are required");
+
   // 1. Pull vault posts (all series)
-  runScript("scripts/pull-vault-posts.ts", ["--all"]);
+  const vaultDir = await syncObsidianVault({ authToken, vaultName });
+  BACKFILL_CONTENT_IDS.forEach((id) => copySeriesPosts(vaultDir, id, REPO_ROOT));
 
-  // 2. Check Gemini quota (before)
-  runScript("scripts/check-gemini-quota.ts", [
-    "--label",
-    "before image backfill",
-  ]);
+  // 2. Check Gemini quota (informational)
+  await checkGeminiQuota("before image backfill");
 
-  // 3. Backfill blog images (continue-on-error)
-  runScript("scripts/backfill-blog-images.ts", [], { continueOnError: true });
+  // 3. Backfill blog images
+  const providers = resolveImageProviders(process.env as Record<string, string | undefined>);
+  const primary = providers[0]!;
+  const fallbacks = providers.slice(1);
+  const attachmentsDir = process.env.ATTACHMENTS_DIR ?? path.join(REPO_ROOT, "attachments");
+  const directories = BACKFILL_CONTENT_IDS.map((id) => ({ path: path.join(REPO_ROOT, id), id }));
 
-  // 4. Check Gemini quota (after — always)
-  runScript("scripts/check-gemini-quota.ts", [
-    "--label",
-    "after image backfill",
-  ], { continueOnError: true });
+  try {
+    const result = await backfillImages({
+      directories,
+      attachmentsDir,
+      apiKey: primary.apiKey,
+      model: primary.model,
+      generate: primary.generator,
+      describePrompt: primary.describePrompt,
+      providerName: primary.name,
+      fallbackProviders: fallbacks,
+      onProgress: log,
+    });
+    log({ event: "backfill_complete", ...result });
+  } catch (error) {
+    log({ event: "backfill_failed", error: error instanceof Error ? error.message : String(error) });
+  }
 
-  // 5. Sync backfilled content to Obsidian vault
-  runScript("scripts/sync-backfill-to-vault.ts", []);
+  // 4. Check Gemini quota (informational)
+  await checkGeminiQuota("after image backfill");
+
+  // 5. Sync to vault
+  const syncVaultDir = await syncObsidianVault({ authToken, vaultName });
+  BACKFILL_CONTENT_IDS.forEach((id) => {
+    const localDir = path.join(REPO_ROOT, id);
+    syncMarkdownDir(localDir, id, syncVaultDir);
+  });
+  syncAttachmentsDir(path.join(REPO_ROOT, "attachments"), syncVaultDir);
+  await pushObsidianVault(syncVaultDir, { authToken });
 
   log({ event: "task_complete", task: "backfill-blog-images" });
 };
 
-const runInternalLinking = (): void => {
+const runInternalLinking = async (): Promise<void> => {
   log({ event: "task_start", task: "internal-linking" });
 
-  // 1. Pull Obsidian vault — capture vault_dir output
-  const outputs = runScriptWithOutputs("scripts/pull-obsidian-vault.ts", []);
-  const vaultDir = outputs.vault_dir?.trim();
+  const authToken = process.env.OBSIDIAN_AUTH_TOKEN;
+  const vaultName = process.env.OBSIDIAN_VAULT_NAME;
+  if (!authToken || !vaultName) throw new Error("OBSIDIAN_AUTH_TOKEN and OBSIDIAN_VAULT_NAME are required");
 
-  if (!vaultDir) {
-    throw new Error("pull-obsidian-vault.ts did not output vault_dir");
-  }
+  // 1. Pull Obsidian vault
+  const vaultDir = await syncObsidianVault({ authToken, vaultName });
 
-  // 2. Run internal linking (default max-files=10, no dry-run)
-  runScript("scripts/internal-linking.ts", [
-    "--max-files",
-    "10",
-    "--content-dir",
-    vaultDir,
-  ]);
+  // 2. Run internal linking directly
+  const model = process.env.LINKING_MODEL ?? DEFAULT_LINKING_MODEL;
+  const result = await runLinking({
+    contentDir: vaultDir,
+    maxFiles: 10,
+    apiKey: process.env.GEMINI_API_KEY,
+    model,
+    dryRun: false,
+  });
+
+  log({
+    event: "linking_complete",
+    filesVisited: result.filesVisited,
+    filesModified: result.filesModified,
+    totalLinksAdded: result.totalLinksAdded,
+  });
 
   // 3. Push vault
-  runScript("scripts/push-obsidian-vault.ts", [], {
-    extraEnv: { VAULT_DIR: vaultDir },
-  });
+  await pushObsidianVault(vaultDir, { authToken });
 
   log({ event: "task_complete", task: "internal-linking" });
 };
 
-const runSocialPosting = (): void => {
+const runSocialPosting = async (): Promise<void> => {
   log({ event: "task_start", task: "social-posting" });
 
-  // 1. Check Gemini quota (before)
-  runScript("scripts/check-gemini-quota.ts", [
-    "--label",
-    "before social posting",
-  ]);
+  // 1. Check Gemini quota (informational)
+  await checkGeminiQuota("before social posting");
 
-  // 2. Run auto-post (the scheduled discovery + posting pipeline)
-  runScript("scripts/auto-post.ts", []);
+  // 2. Run auto-post (imported as library function)
+  await autoPost();
 
-  // 3. Check Gemini quota (after — always)
-  runScript("scripts/check-gemini-quota.ts", [
-    "--label",
-    "after social posting",
-  ], { continueOnError: true });
+  // 3. Check Gemini quota (informational)
+  await checkGeminiQuota("after social posting");
 
   log({ event: "task_complete", task: "social-posting" });
 };
 
-const TASK_RUNNERS: ReadonlyMap<TaskId, () => void> = new Map([
+const TASK_RUNNERS: ReadonlyMap<TaskId, () => Promise<void>> = new Map([
   ["blog-series:chickie-loo", () => runBlogSeries("chickie-loo")],
   ["blog-series:auto-blog-zero", () => runBlogSeries("auto-blog-zero")],
   [
@@ -288,7 +322,7 @@ export const parseArgs = (argv: readonly string[]): CliArgs => {
 // Main
 // ---------------------------------------------------------------------------
 
-const main = (): void => {
+const main = async (): Promise<void> => {
   const cliArgs = parseArgs(process.argv);
   const hourUtc = cliArgs.hourOverride ?? new Date().getUTCHours();
 
@@ -310,23 +344,23 @@ const main = (): void => {
 
   const results: Array<{ taskId: TaskId; success: boolean; error?: string }> = [];
 
-  tasks.forEach((taskId) => {
+  for (const taskId of tasks) {
     const runner = TASK_RUNNERS.get(taskId);
     if (!runner) {
       log({ event: "unknown_task", taskId });
       results.push({ taskId, success: false, error: "no runner registered" });
-      return;
+      continue;
     }
 
     try {
-      runner();
+      await runner();
       results.push({ taskId, success: true });
     } catch (error) {
       const message = error instanceof Error ? error.message : String(error);
       log({ event: "task_failed", taskId, error: message });
       results.push({ taskId, success: false, error: message });
     }
-  });
+  }
 
   const succeeded = results.filter((r) => r.success).length;
   const failed = results.filter((r) => !r.success).length;
@@ -339,7 +373,14 @@ const main = (): void => {
 };
 
 if (process.argv[1]?.endsWith("run-scheduled.ts")) {
-  main();
+  main().catch((error) => {
+    console.error(JSON.stringify({
+      event: "fatal_error",
+      message: error instanceof Error ? error.message : String(error),
+      stack: error instanceof Error ? error.stack : undefined,
+    }));
+    process.exit(1);
+  });
 }
 
-export { main, runScript, runScriptWithOutputs, parseGitHubOutputs };
+export { main };

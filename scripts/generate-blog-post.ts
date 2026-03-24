@@ -47,46 +47,133 @@ const parseArgs = (argv: readonly string[]): GenerateArgs => {
   return { series, dryRun, model };
 };
 
+// ---------------------------------------------------------------------------
+// Error classification
+// ---------------------------------------------------------------------------
+
 const isQuotaError = (error: unknown): boolean => {
   if (!error || typeof error !== "object") return false;
   const message = String((error as { message?: string }).message ?? "");
   return message.includes("429") || message.includes("RESOURCE_EXHAUSTED") || message.includes("quota");
 };
 
-const callGemini = async (
+const isRetriableError = (error: unknown): boolean => {
+  if (!error || typeof error !== "object") return false;
+  const status = (error as { status?: number }).status;
+  const message = String((error as { message?: string }).message ?? "");
+  return (
+    isQuotaError(error) ||
+    status === 429 ||
+    (status !== undefined && status >= 500 && status < 600) ||
+    message.includes("503") ||
+    message.includes("502") ||
+    message.includes("500") ||
+    message.includes("504") ||
+    message.includes("INTERNAL") ||
+    message.includes("UNAVAILABLE")
+  );
+};
+
+// ---------------------------------------------------------------------------
+// Gemini API calls with retry and model fallback
+// ---------------------------------------------------------------------------
+
+const GEMINI_MAX_RETRIES = 3;
+const GEMINI_BASE_DELAY_MS = 2_000;
+
+const delay = (ms: number): Promise<void> =>
+  new Promise((resolve) => setTimeout(resolve, ms));
+
+const callGeminiOnce = async (
   apiKey: string,
   model: string,
   prompt: { system: string; user: string },
+  grounding: boolean,
 ): Promise<string> => {
   const { GoogleGenAI } = await import("@google/genai");
   const ai = new GoogleGenAI({ apiKey });
-
-  const groundingRequested = process.env.BLOG_ENABLE_GROUNDING !== "false";
+  const tools = grounding ? [{ googleSearch: {} }] : undefined;
   const contents = [{ role: "user" as const, parts: [{ text: `${prompt.system}\n\n${prompt.user}` }] }];
 
-  const attempt = async (grounding: boolean): Promise<string> => {
-    const tools = grounding ? [{ googleSearch: {} }] : undefined;
-    log({ event: "gemini_request_body", model, temperature: 0.9, grounding, systemPrompt: prompt.system, userPrompt: prompt.user });
-    const result = await ai.models.generateContent({ model, contents, config: { temperature: 0.9, tools } });
-    const text = (result.text ?? "").trim();
-    log({ event: "gemini_response", model, responseLength: text.length, grounding });
-    return text;
-  };
+  log({ event: "gemini_request", model, grounding });
+  const result = await ai.models.generateContent({ model, contents, config: { temperature: 0.9, tools } });
+  const text = (result.text ?? "").trim();
+  log({ event: "gemini_response", model, responseLength: text.length, grounding });
+  return text;
+};
 
-  if (groundingRequested) {
+const callGeminiWithRetry = async (
+  apiKey: string,
+  model: string,
+  prompt: { system: string; user: string },
+  grounding: boolean,
+): Promise<string> => {
+  for (let attempt = 0; attempt <= GEMINI_MAX_RETRIES; attempt++) {
     try {
-      return await attempt(true);
+      return await callGeminiOnce(apiKey, model, prompt, grounding);
     } catch (error) {
-      if (isQuotaError(error)) {
-        log({ event: "grounding_fallback", reason: "quota_exhausted", model });
-        return await attempt(false);
+      if (attempt < GEMINI_MAX_RETRIES && isRetriableError(error)) {
+        const delayMs = GEMINI_BASE_DELAY_MS * 2 ** attempt;
+        log({ event: "gemini_retry", model, attempt: attempt + 1, delayMs, error: error instanceof Error ? error.message : String(error) });
+        await delay(delayMs);
+        continue;
       }
       throw error;
     }
   }
-
-  return await attempt(false);
+  throw new Error(`Exhausted ${GEMINI_MAX_RETRIES} retries for model ${model}`);
 };
+
+/**
+ * Calls Gemini with a chain of fallback models and 5XX retry.
+ *
+ * For each model in the chain:
+ *   1. Try with grounding (if enabled)
+ *   2. Fall back to no-grounding on quota errors
+ *   3. Retry on transient 5XX/429 errors with exponential backoff
+ *   4. Move to the next model on persistent failure
+ */
+const callGemini = async (
+  apiKey: string,
+  models: readonly string[],
+  prompt: { system: string; user: string },
+): Promise<{ text: string; model: string }> => {
+  const groundingRequested = process.env.BLOG_ENABLE_GROUNDING !== "false";
+
+  for (let i = 0; i < models.length; i++) {
+    const model = models[i]!;
+    const isLast = i === models.length - 1;
+
+    try {
+      if (groundingRequested) {
+        try {
+          const text = await callGeminiWithRetry(apiKey, model, prompt, true);
+          return { text, model };
+        } catch (error) {
+          if (isQuotaError(error)) {
+            log({ event: "grounding_fallback", reason: "quota_exhausted", model });
+            const text = await callGeminiWithRetry(apiKey, model, prompt, false);
+            return { text, model };
+          }
+          throw error;
+        }
+      }
+
+      const text = await callGeminiWithRetry(apiKey, model, prompt, false);
+      return { text, model };
+    } catch (error) {
+      log({ event: "model_failed", model, error: error instanceof Error ? error.message : String(error) });
+      if (isLast) throw error;
+      log({ event: "trying_fallback_model", failedModel: model, nextModel: models[i + 1] });
+    }
+  }
+
+  throw new Error("All models exhausted");
+};
+
+// ---------------------------------------------------------------------------
+// Slug generation + helpers
+// ---------------------------------------------------------------------------
 
 export const generateSlug = (title: string): string => {
   const slug = title
@@ -108,6 +195,29 @@ const writeGitHubOutput = (key: string, value: string): void => {
     log({ event: "github_output_written", key, value });
   }
 };
+
+// ---------------------------------------------------------------------------
+// Callable library function
+// ---------------------------------------------------------------------------
+
+export interface GenerateBlogPostConfig {
+  readonly seriesId: string;
+  readonly models: readonly string[];
+  readonly apiKey: string;
+  readonly repoRoot: string;
+  readonly today: string;
+  readonly priorityUser?: string;
+  readonly dryRun?: boolean;
+}
+
+export interface GenerateBlogPostResult {
+  readonly postPath: string | undefined;
+  readonly filename: string | undefined;
+  readonly title: string | undefined;
+  readonly skipped: boolean;
+  readonly reason?: string;
+  readonly model?: string;
+}
 
 const updateReflectionIfCredentialsAvailable = async (
   series: { readonly id: string; readonly name: string; readonly icon: string },
@@ -143,42 +253,35 @@ const updateReflectionIfCredentialsAvailable = async (
   }
 };
 
-const generate = async (): Promise<void> => {
-  const config = parseArgs(process.argv);
-  const apiKey = process.env.GEMINI_API_KEY;
-  if (!apiKey) { console.error("❌ GEMINI_API_KEY is required"); process.exit(1); }
+/**
+ * Generate a blog post for a series. Callable as a library function.
+ *
+ * Tries each model in the chain with 5XX retry and grounding fallback.
+ * Returns the post path (or undefined if skipped/dry-run).
+ */
+export const generateBlogPost = async (config: GenerateBlogPostConfig): Promise<GenerateBlogPostResult> => {
+  const series = BLOG_SERIES.get(config.seriesId);
+  if (!series) throw new Error(`Unknown series: ${config.seriesId}`);
 
-  const series = BLOG_SERIES.get(config.series);
-  if (!series) { console.error("❌ Series not found"); process.exit(1); }
+  log({ event: "generate_start", series: series.id, seriesName: series.name, today: config.today, models: config.models });
 
-  const repoRoot = path.resolve(import.meta.dirname, "..");
-  const today = todayPacific();
-
-  log({ event: "generate_start", series: series.id, seriesName: series.name, today, model: config.model });
-
-  const seriesDir = path.join(repoRoot, series.id);
-  const existingPost = fs.existsSync(seriesDir) && fs.readdirSync(seriesDir).find((f) => f.startsWith(today));
+  const seriesDir = path.join(config.repoRoot, series.id);
+  const existingPost = fs.existsSync(seriesDir) && fs.readdirSync(seriesDir).find((f) => f.startsWith(config.today));
   if (existingPost) {
-    log({ event: "skip_duplicate", today, existingPost });
-    return;
+    log({ event: "skip_duplicate", today: config.today, existingPost });
+    return { postPath: undefined, filename: undefined, title: undefined, skipped: true, reason: "already_exists" };
   }
 
-  const priorityUser = process.env.BLOG_PRIORITY_USER ?? series.priorityUser;
+  const priorityUser = config.priorityUser ?? series.priorityUser;
   const comments = await fetchAllSeriesComments(series.id, priorityUser);
   const priorityCount = comments.filter((c) => c.isPriority).length;
   log({ event: "comments_fetched", total: comments.length, priority: priorityCount, priorityUser });
 
-  const context = buildBlogContext(config.series, repoRoot, comments, today);
-  const commentCutoff = context.previousPosts.length > 0
-    ? `${context.previousPosts[0]!.date}T${series.postTimeUtc}:00Z`
-    : undefined;
+  const context = buildBlogContext(config.seriesId, config.repoRoot, comments, config.today);
   log({
     event: "context_built",
     previousPostCount: context.previousPosts.length,
     newestPost: context.previousPosts[0]?.filename,
-    newestPostDate: context.previousPosts[0]?.date,
-    commentCutoff,
-    rawCommentCount: comments.length,
     filteredCommentCount: context.comments.length,
     hasAgentsMd: context.agentsMd.length > 0,
   });
@@ -187,39 +290,64 @@ const generate = async (): Promise<void> => {
 
   if (config.dryRun) {
     log({ event: "dry_run", systemPreview: prompt.system.slice(0, 200), userPreview: prompt.user.slice(0, 500) });
-    return;
+    return { postPath: undefined, filename: undefined, title: undefined, skipped: true, reason: "dry_run" };
   }
 
-  const raw = await callGemini(apiKey, config.model, prompt);
+  const { text: raw, model: usedModel } = await callGemini(config.apiKey, config.models, prompt);
   const parsed = parseGeneratedPost(stripCodeFences(raw));
   if (!parsed) {
     log({ event: "generation_failed", rawPreview: raw.slice(0, 500) });
-    process.exit(1);
+    throw new Error("Failed to parse generated blog post");
   }
 
   const slug = generateSlug(parsed.title);
   const previousPost = context.previousPosts[0];
-  const frontmatter = assembleFrontmatter(series, today, parsed.title, slug, previousPost);
-  const bodyWithSignature = appendModelSignature(parsed.body, config.model);
-  const filename = `${today}-${slug}.md`;
+  const frontmatter = assembleFrontmatter(series, config.today, parsed.title, slug, previousPost);
+  const bodyWithSignature = appendModelSignature(parsed.body, usedModel);
+  const filename = `${config.today}-${slug}.md`;
   fs.mkdirSync(seriesDir, { recursive: true });
   fs.writeFileSync(path.join(seriesDir, filename), frontmatter + bodyWithSignature + "\n", "utf-8");
-  log({ event: "post_written", filename, title: parsed.title, contentLength: parsed.body.length, slug });
+  log({ event: "post_written", filename, title: parsed.title, contentLength: parsed.body.length, slug, model: usedModel });
   if (previousPost) {
     updatePreviousPost(seriesDir, previousPost, series, filename);
     const metadataPath = path.join(seriesDir, ".last-generate-metadata.json");
     fs.writeFileSync(metadataPath, JSON.stringify({ previousPostFilename: previousPost.filename, newPostFilename: filename }), "utf-8");
     log({ event: "previous_post_updated", previousPost: previousPost.filename, forwardLinkTarget: filename });
-  } else {
-    log({ event: "no_previous_post", reason: "first post in series" });
   }
 
   const postRelativePath = `${series.id}/${filename}`;
-  writeGitHubOutput("post", postRelativePath);
 
-  await updateReflectionIfCredentialsAvailable(series, today, filename, parsed.title);
+  await updateReflectionIfCredentialsAvailable(series, config.today, filename, parsed.title);
 
-  log({ event: "generate_complete", series: series.id, filename, backLinkTarget: previousPost?.filename });
+  log({ event: "generate_complete", series: series.id, filename, model: usedModel });
+
+  return { postPath: postRelativePath, filename, title: parsed.title, skipped: false, model: usedModel };
+};
+
+// ---------------------------------------------------------------------------
+// CLI entry point (standalone use)
+// ---------------------------------------------------------------------------
+
+const generate = async (): Promise<void> => {
+  const config = parseArgs(process.argv);
+  const apiKey = process.env.GEMINI_API_KEY;
+  if (!apiKey) { console.error("❌ GEMINI_API_KEY is required"); process.exit(1); }
+
+  const repoRoot = path.resolve(import.meta.dirname, "..");
+  const today = todayPacific();
+
+  const result = await generateBlogPost({
+    seriesId: config.series,
+    models: [config.model],
+    apiKey,
+    repoRoot,
+    today,
+    dryRun: config.dryRun,
+  });
+
+  if (result.postPath) {
+    writeGitHubOutput("post", result.postPath);
+  }
 };
 
 if (process.argv[1]?.endsWith("generate-blog-post.ts")) {
@@ -233,4 +361,4 @@ if (process.argv[1]?.endsWith("generate-blog-post.ts")) {
   });
 }
 
-export { generate, callGemini };
+export { generate, isRetriableError, isQuotaError };

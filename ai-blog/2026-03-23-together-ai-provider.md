@@ -98,14 +98,14 @@ const url = "https://api.together.ai/v1/images/generations";
 
 ### 🔧 The Solution
 
-🛡️ Added automatic model fallback: when `gemini-3.1-flash-lite-preview` fails, the system retries with `gemini-3.0-flash` before propagating the error.
+🛡️ Added automatic model fallback: when `gemini-3.1-flash-lite-preview` fails, the system retries with `gemini-2.5-flash` before propagating the error.
 
 📋 Affected areas:
 - 🐦 **Social media posting** — the question model in `generatePostWithGemini()` now uses `callWithFallback()` that catches errors and retries with the fallback model
 - 🖼️ **Image prompt description** — `describeImageWithGemini()` now catches errors and retries with the fallback model
 
 🏗️ Implementation:
-- 📦 `geminiModelFallback()` in `types.ts` — pure function mapping `gemini-3.1-flash-lite-preview` → `gemini-3.0-flash`
+- 📦 `geminiModelFallback()` in `types.ts` — pure function mapping `gemini-3.1-flash-lite-preview` → `gemini-2.5-flash`
 - 🔄 `callWithFallback()` in `gemini.ts` — wraps model creation + `callGemini()` with fallback
 - 🔄 `attemptGeneration()` in `blog-image.ts` — extracts the generation call for reuse with fallback
 
@@ -125,11 +125,11 @@ const url = "https://api.together.ai/v1/images/generations";
 | 🤝 Custom model accepted | ✅ TOGETHER_IMAGE_MODEL override works |
 | 🔗 Full chain ordering | ✅ CF → HF → Together → Pollinations → Gemini |
 | 🔑 Describer attached to all | ✅ All providers get describePrompt when Gemini key set |
-| 🔄 GEMINI_FLASH_FALLBACK constant | ✅ Maps to gemini-3.0-flash |
-| 🔄 Fallback for flash-lite-preview | ✅ Returns gemini-3.0-flash |
+| 🔄 GEMINI_FLASH_FALLBACK constant | ✅ Maps to gemini-2.5-flash |
+| 🔄 Fallback for flash-lite-preview | ✅ Returns gemini-2.5-flash |
 | 🔄 No fallback for gemma | ✅ Returns undefined |
 | 🔄 No fallback for gemini-2.5-flash | ✅ Returns undefined |
-| 🔄 No self-fallback | ✅ gemini-3.0-flash returns undefined |
+| 🔄 No self-fallback | ✅ gemini-2.5-flash returns undefined |
 | 🔄 No fallback for arbitrary model | ✅ Returns undefined |
 | 🔄 DEFAULT_DESCRIBER_MODEL has fallback | ✅ Fallback is defined for the describer default |
 

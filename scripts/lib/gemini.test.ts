@@ -155,16 +155,16 @@ describe("dual-model architecture", () => {
     assert.equal(DEFAULT_QUESTION_MODEL, "gemini-3.1-flash-lite-preview");
   });
 
-  it("GEMINI_FLASH_FALLBACK is gemini-3.0-flash", () => {
-    assert.equal(GEMINI_FLASH_FALLBACK, "gemini-3.0-flash");
+  it("GEMINI_FLASH_FALLBACK is gemini-2.5-flash", () => {
+    assert.equal(GEMINI_FLASH_FALLBACK, "gemini-2.5-flash");
   });
 });
 
 // --- geminiModelFallback ---
 
 describe("geminiModelFallback", () => {
-  it("returns gemini-3.0-flash for gemini-3.1-flash-lite-preview", () => {
-    assert.equal(geminiModelFallback("gemini-3.1-flash-lite-preview"), "gemini-3.0-flash");
+  it("returns gemini-2.5-flash for gemini-3.1-flash-lite-preview", () => {
+    assert.equal(geminiModelFallback("gemini-3.1-flash-lite-preview"), "gemini-2.5-flash");
   });
 
   it("returns undefined for gemma-3-27b-it (no fallback)", () => {
@@ -175,8 +175,8 @@ describe("geminiModelFallback", () => {
     assert.equal(geminiModelFallback("gemini-2.5-flash"), undefined);
   });
 
-  it("returns undefined for gemini-3.0-flash (no fallback to itself)", () => {
-    assert.equal(geminiModelFallback("gemini-3.0-flash"), undefined);
+  it("returns undefined for gemini-2.5-flash (no fallback to itself)", () => {
+    assert.equal(geminiModelFallback("gemini-2.5-flash"), undefined);
   });
 
   it("returns undefined for arbitrary model name", () => {

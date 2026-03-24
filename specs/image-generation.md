@@ -123,11 +123,11 @@ Provider 5 (Gemini) → quota exhausted → stop job
 
 | Provider | Required Env Vars | Model Default | Fallback Model |
 |----------|-------------------|---------------|----------------|
-| ✨ Gemini Describer | `GEMINI_API_KEY` | `gemini-3.1-flash-lite-preview` | `gemini-3.0-flash` |
+| ✨ Gemini Describer | `GEMINI_API_KEY` | `gemini-3.1-flash-lite-preview` | `gemini-2.5-flash` |
 
 🔑 The describer is available whenever `GEMINI_API_KEY` is set, regardless of which image provider is used.
 
-🔄 **Model fallback**: When `gemini-3.1-flash-lite-preview` fails, the describer automatically retries with `gemini-3.0-flash` before propagating the error.
+🔄 **Model fallback**: When `gemini-3.1-flash-lite-preview` fails, the describer automatically retries with `gemini-2.5-flash` before propagating the error.
 
 ---
 

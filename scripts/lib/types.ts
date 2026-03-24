@@ -120,7 +120,7 @@ export const MASTODON_MAX_LENGTH = 500;
 
 export const DEFAULT_GEMINI_MODEL = "gemma-3-27b-it";
 export const DEFAULT_QUESTION_MODEL = "gemini-3.1-flash-lite-preview";
-export const GEMINI_FLASH_FALLBACK = "gemini-3.0-flash";
+export const GEMINI_FLASH_FALLBACK = "gemini-2.5-flash";
 
 export const geminiModelFallback = (model: string): string | undefined =>
   model === "gemini-3.1-flash-lite-preview" ? GEMINI_FLASH_FALLBACK : undefined;

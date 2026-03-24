@@ -7,7 +7,7 @@ URL: https://bagrounds.org/books/network-effect
 Author:
 tags:
 affiliate link: https://www.amazon.com/dp/1250229863?tag=bagrounds-20
-updated: 2026-03-16T14:29:19.364Z
+updated: 2026-03-24T22:37:58.862Z
 ---
 [Home](../index.md) > [Books](./index.md) | [⏮️ 🏃💨🚪 Exit Strategy](./exit-strategy.md) [⏭️ 🕵️ Fugitive Telemetry](./fugitive-telemetry.md)  
 # 🌐🤖🚀 Network Effect  

@@ -7,6 +7,9 @@ share: true
 affiliate link: https://amzn.to/3GpLRKU
 CTA: Understand history.
 updated: 2026-03-18T10:20:22.077Z
+force_analyze_links: false
+link_analysis_time: 2026-03-22T23:33:05.445Z
+link_analysis_model: gemini-3.1-flash-lite-preview
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🔫🦠🔩 Guns, Germs, and Steel: The Fates of Human Societies  

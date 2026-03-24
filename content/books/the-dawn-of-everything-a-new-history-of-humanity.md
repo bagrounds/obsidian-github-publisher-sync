@@ -7,6 +7,9 @@ share: true
 CTA: 🚀 Challenge assumptions.
 affiliate link: https://amzn.to/4pDax3h
 updated: 2026-03-18T12:18:01.368Z
+force_analyze_links: false
+link_analysis_time: 2026-03-22T23:33:07.540Z
+link_analysis_model: gemini-3.1-flash-lite-preview
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🌅🧑‍🤝‍🧑 The Dawn of Everything: A New History of Humanity  

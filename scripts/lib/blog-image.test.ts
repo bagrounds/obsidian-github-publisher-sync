@@ -880,6 +880,57 @@ describe("backfillImages", () => {
     assert.equal(result.imagesGenerated, 1);
     assert.equal(result.stoppedByQuota, false);
   });
+
+  it("respects maxImages limit", async () => {
+    const dir = path.join(tempDir, "series");
+    fs.mkdirSync(dir);
+    fs.writeFileSync(
+      path.join(dir, "2026-03-11-second.md"),
+      "---\ntitle: Second\n---\n# Second\nBody\n",
+    );
+    fs.writeFileSync(
+      path.join(dir, "2026-03-10-first.md"),
+      "---\ntitle: First\n---\n# First\nBody\n",
+    );
+
+    const result = await backfillImages({
+      directories: [{ path: dir, id: "series" }],
+      attachmentsDir,
+      apiKey: "key",
+      model: "model",
+      generate: mockGenerate,
+      minDelayMs: 0,
+      maxImages: 1,
+    });
+
+    assert.equal(result.imagesGenerated, 1);
+    assert.equal(result.stoppedByQuota, false);
+  });
+
+  it("processes all candidates when maxImages is not set", async () => {
+    const dir = path.join(tempDir, "series");
+    fs.mkdirSync(dir);
+    fs.writeFileSync(
+      path.join(dir, "2026-03-11-second.md"),
+      "---\ntitle: Second\n---\n# Second\nBody\n",
+    );
+    fs.writeFileSync(
+      path.join(dir, "2026-03-10-first.md"),
+      "---\ntitle: First\n---\n# First\nBody\n",
+    );
+
+    const result = await backfillImages({
+      directories: [{ path: dir, id: "series" }],
+      attachmentsDir,
+      apiKey: "key",
+      model: "model",
+      generate: mockGenerate,
+      minDelayMs: 0,
+    });
+
+    assert.equal(result.imagesGenerated, 2);
+    assert.equal(result.stoppedByQuota, false);
+  });
 });
 
 describe("updateFrontmatterTimestamp", () => {
@@ -1182,12 +1233,17 @@ describe("extractFrontmatterValue", () => {
 });
 
 describe("shouldRegenerateImage", () => {
-  it("returns true when regenerate_image is true", () => {
+  it("returns true when regenerate_image is YAML boolean true", () => {
     const content = "---\ntitle: Test\nregenerate_image: true\n---\n# Test\n";
     assert.equal(shouldRegenerateImage(content), true);
   });
 
-  it("returns false when regenerate_image is false", () => {
+  it("returns true when regenerate_image is quoted string true", () => {
+    const content = '---\ntitle: Test\nregenerate_image: "true"\n---\n# Test\n';
+    assert.equal(shouldRegenerateImage(content), true);
+  });
+
+  it("returns false when regenerate_image is YAML boolean false", () => {
     const content = "---\ntitle: Test\nregenerate_image: false\n---\n# Test\n";
     assert.equal(shouldRegenerateImage(content), false);
   });
@@ -1304,13 +1360,24 @@ describe("updateFrontmatterFields", () => {
     assert.ok(result.includes('"@cf/black-forest-labs/flux-1-schnell"'));
   });
 
-  it("sets regenerate_image to false", () => {
+  it("sets regenerate_image to boolean false", () => {
     const content = "---\ntitle: Test\nregenerate_image: true\n---\nBody";
     const result = updateFrontmatterFields(content, {
-      regenerate_image: "false",
+      regenerate_image: false,
     });
-    assert.ok(result.includes('regenerate_image: "false"'));
+    assert.ok(result.includes("regenerate_image: false"));
     assert.ok(!result.includes("regenerate_image: true"));
+    assert.ok(!result.includes('"false"'));
+  });
+
+  it("clears a field by setting it to null", () => {
+    const content = "---\ntitle: Test\nimage_prompt: old description\n---\nBody";
+    const result = updateFrontmatterFields(content, {
+      image_prompt: null,
+    });
+    assert.ok(result.includes("image_prompt:"));
+    assert.ok(!result.includes("old description"));
+    assert.equal(extractFrontmatterValue(result, "image_prompt"), undefined);
   });
 
   it("updates field that has no value (key with no space after colon)", () => {
@@ -1716,7 +1783,7 @@ describe("processNote with cached image_prompt", () => {
     assert.ok(!updated.includes("image_description:"));
   });
 
-  it("uses cached prompt even during image regeneration", async () => {
+  it("generates fresh prompt during image regeneration", async () => {
     const notePath = path.join(blogDir, "2026-03-22-test.md");
     fs.mkdirSync(attachmentsDir, { recursive: true });
     fs.writeFileSync(path.join(attachmentsDir, "old.jpg"), "old");
@@ -1728,7 +1795,7 @@ describe("processNote with cached image_prompt", () => {
     let describerCalled = false;
     const mockDescriber: PromptDescriber = async () => {
       describerCalled = true;
-      return "should not be called";
+      return "A brand new description";
     };
 
     const result = await processNote(
@@ -1741,8 +1808,8 @@ describe("processNote with cached image_prompt", () => {
     );
 
     assert.equal(result.skipped, false);
-    assert.equal(describerCalled, false);
-    assert.equal(result.imagePrompt, "Cached description from before");
+    assert.equal(describerCalled, true);
+    assert.equal(result.imagePrompt, "A brand new description");
   });
 
   it("sanitizes describer output to remove quotes and special chars", async () => {

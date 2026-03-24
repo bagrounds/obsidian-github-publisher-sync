@@ -59,6 +59,10 @@ const log = (data: Record<string, unknown>): void =>
 // ---------------------------------------------------------------------------
 
 const REPO_ROOT = path.resolve(import.meta.dirname, "..");
+const INTER_TASK_DELAY_MS = 30_000;
+
+const sleep = (ms: number): Promise<void> =>
+  new Promise((resolve) => setTimeout(resolve, ms));
 
 // ---------------------------------------------------------------------------
 // Quota check helper (informational, never fails the pipeline)
@@ -217,6 +221,7 @@ const runBackfillImages = async (): Promise<void> => {
       providerName: primary.name,
       fallbackProviders: fallbacks,
       onProgress: log,
+      maxImages: 1,
     });
     log({ event: "backfill_complete", ...result });
   } catch (error) {
@@ -252,7 +257,7 @@ const runInternalLinking = async (): Promise<void> => {
   const model = process.env.LINKING_MODEL ?? DEFAULT_LINKING_MODEL;
   const result = await runLinking({
     contentDir: vaultDir,
-    maxFiles: 10,
+    maxFiles: 1,
     apiKey: process.env.GEMINI_API_KEY,
     model,
     dryRun: false,
@@ -352,6 +357,11 @@ const main = async (): Promise<void> => {
   const results: Array<{ taskId: TaskId; success: boolean; error?: string }> = [];
 
   for (const taskId of tasks) {
+    if (results.length > 0) {
+      log({ event: "inter_task_delay", delayMs: INTER_TASK_DELAY_MS });
+      await sleep(INTER_TASK_DELAY_MS);
+    }
+
     const runner = TASK_RUNNERS.get(taskId);
     if (!runner) {
       log({ event: "unknown_task", taskId });

@@ -64,16 +64,22 @@ describe("getScheduledTasks", () => {
     assert.ok(tasks.includes("blog-series:systems-for-public-good"));
   });
 
-  it("returns backfill-blog-images only at exact hour 6", () => {
-    assert.ok(getScheduledTasks(6).includes("backfill-blog-images"));
-    assert.ok(!getScheduledTasks(7).includes("backfill-blog-images"));
-    assert.ok(!getScheduledTasks(5).includes("backfill-blog-images"));
+  it("returns backfill-blog-images at every hour", () => {
+    Array.from({ length: 24 }, (_, h) => h).forEach((hour) => {
+      assert.ok(
+        getScheduledTasks(hour).includes("backfill-blog-images"),
+        `backfill-blog-images should run at hour ${hour}`,
+      );
+    });
   });
 
-  it("returns internal-linking only at exact hour 8", () => {
-    assert.ok(getScheduledTasks(8).includes("internal-linking"));
-    assert.ok(!getScheduledTasks(7).includes("internal-linking"));
-    assert.ok(!getScheduledTasks(9).includes("internal-linking"));
+  it("returns internal-linking at every hour", () => {
+    Array.from({ length: 24 }, (_, h) => h).forEach((hour) => {
+      assert.ok(
+        getScheduledTasks(hour).includes("internal-linking"),
+        `internal-linking should run at hour ${hour}`,
+      );
+    });
   });
 
   it("returns social-posting at all even hours", () => {
@@ -96,18 +102,28 @@ describe("getScheduledTasks", () => {
     });
   });
 
-  it("returns empty array before any tasks are scheduled", () => {
-    assert.deepStrictEqual(getScheduledTasks(1), []);
-    assert.deepStrictEqual(getScheduledTasks(3), []);
+  it("returns only backfill tasks before blog series are scheduled", () => {
+    const tasksAt1 = getScheduledTasks(1);
+    assert.ok(tasksAt1.includes("backfill-blog-images"));
+    assert.ok(tasksAt1.includes("internal-linking"));
+    assert.ok(!tasksAt1.includes("social-posting"));
+    assert.ok(!tasksAt1.includes("blog-series:chickie-loo"));
+
+    const tasksAt3 = getScheduledTasks(3);
+    assert.ok(tasksAt3.includes("backfill-blog-images"));
+    assert.ok(tasksAt3.includes("internal-linking"));
+    assert.ok(!tasksAt3.includes("social-posting"));
   });
 
   it("returns multiple tasks when schedules overlap", () => {
     const tasksAt6 = getScheduledTasks(6);
     assert.ok(tasksAt6.includes("backfill-blog-images"));
+    assert.ok(tasksAt6.includes("internal-linking"));
     assert.ok(tasksAt6.includes("social-posting"));
 
     const tasksAt8 = getScheduledTasks(8);
     assert.ok(tasksAt8.includes("internal-linking"));
+    assert.ok(tasksAt8.includes("backfill-blog-images"));
     assert.ok(tasksAt8.includes("social-posting"));
   });
 

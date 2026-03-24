@@ -167,8 +167,14 @@ export const extractFrontmatterValue = (
   return value != null ? String(value) : undefined;
 };
 
-export const shouldRegenerateImage = (content: string): boolean =>
-  extractFrontmatterValue(content, "regenerate_image") === "true";
+export const shouldRegenerateImage = (content: string): boolean => {
+  const { yamlBlock, hasFrontmatter } = splitFrontmatter(content);
+  if (!hasFrontmatter) return false;
+
+  const doc = yaml.load(yamlBlock, YAML_OPTS) as Record<string, unknown> | null;
+  const value = doc?.["regenerate_image"];
+  return value === true || value === "true";
+};
 
 const OBSIDIAN_IMAGE_EMBED_LINE =
   /^!\[\[(?:attachments\/)?([^\]]+\.(jpg|jpeg|png|gif|webp))\]\]$/im;
@@ -195,7 +201,7 @@ export const sanitizeForYaml = (value: string): string =>
 
 export const updateFrontmatterFields = (
   content: string,
-  fields: Record<string, string>,
+  fields: Record<string, string | boolean | null>,
 ): string => {
   const { yamlBlock, body, hasFrontmatter } = splitFrontmatter(content);
 
@@ -712,7 +718,7 @@ export const processNote = async (
 
   if (shouldRegenerateImage(content)) {
     const { content: cleaned, imageName: oldImage } = removeImageEmbed(content);
-    content = updateFrontmatterFields(cleaned, { regenerate_image: "false" });
+    content = updateFrontmatterFields(cleaned, { regenerate_image: false, image_prompt: null });
 
     if (oldImage) {
       const oldPath = path.join(attachmentsDir, oldImage);
@@ -801,6 +807,7 @@ export interface BackfillConfig {
   readonly onProgress?: (event: Record<string, unknown>) => void;
   readonly minDelayMs?: number;
   readonly sleep?: (ms: number) => Promise<void>;
+  readonly maxImages?: number;
 }
 
 interface BackfillCandidate {
@@ -922,6 +929,7 @@ export const backfillImages = async (
     onProgress = () => {},
     minDelayMs = DEFAULT_MIN_DELAY_MS,
     sleep: sleepFn = defaultSleep,
+    maxImages,
   } = config;
 
   const allProviders: readonly ImageProviderConfig[] = [
@@ -987,6 +995,15 @@ export const backfillImages = async (
 
           if (minDelayMs > 0) {
             await sleepFn(minDelayMs);
+          }
+
+          if (maxImages != null && imagesGenerated >= maxImages) {
+            onProgress({
+              event: "max_images_reached",
+              imagesGenerated,
+              maxImages,
+            });
+            return { imagesGenerated, filesUpdated, stoppedByQuota: false };
           }
         }
 

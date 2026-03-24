@@ -954,12 +954,6 @@ export const processFile = async (
 
   // Skip files already analyzed (unless force_analyze_links is set)
   if (alreadyAnalyzed(content)) {
-    console.log(
-      JSON.stringify({
-        event: "skipped_already_analyzed",
-        file: relativePath,
-      }),
-    );
     return { relativePath, linksAdded: 0, modified: false, skipped: true, usedInference: false };
   }
 

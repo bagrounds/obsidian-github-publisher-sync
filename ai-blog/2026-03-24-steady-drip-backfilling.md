@@ -57,6 +57,22 @@ date: 2026-03-24
 | 0 | 🖼️ backfill → ⏱️ 30s → 🔗 linking → ⏱️ 30s → 📢 social |
 | 15 | 🖼️ backfill → ⏱️ 30s → 🔗 linking → ⏱️ 30s → 🐔 chickie-loo |
 
+## 🔇 Quiet Logs, Dashboard Links
+
+📉 The orchestrator used to call the Gemini API to check quota capacity before and after every task — 6 quota checks per blog series run alone. This produced hundreds of log lines with no actionable information.
+
+🗑️ All `checkGeminiQuota` calls have been removed. Instead, the scheduler logs dashboard links at startup for manual inspection when needed:
+
+| 🏷️ Service | 🔗 Dashboard |
+|---|---|
+| 🤖 Gemini API | AI Studio API Keys page |
+| ☁️ GCP Quotas | IAM & Admin Quotas page |
+| 🌐 Cloudflare AI | Workers AI Dashboard |
+| 🤗 Hugging Face | Billing Settings page |
+| 🤝 Together AI | Billing Settings page |
+
+📊 Similarly, per-file skip logging was aggregated: instead of 500 lines of `already_has_image`, a single `candidates_collected` summary reports counts. The `skipped_already_analyzed` per-file messages in internal linking were also removed — skip counts are already reported in the `internal_linking_complete` summary via the `filesSkipped` field.
+
 ## 📐 Design Decisions
 
 ### 🎯 Limiting Inference Requests, Not Files Scanned

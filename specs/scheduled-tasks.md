@@ -73,6 +73,22 @@
 
 🔒 When multiple tasks are scheduled at the same hour, a 30-second delay is inserted between each task to prevent per-minute API rate limit collisions across Gemini and other services.
 
+### 📊 Dashboard Links (Not Quota Checks)
+
+🔗 Instead of calling Gemini/GCP APIs to check quota capacity (which produced noisy logs with no actionable information), the orchestrator logs links to inference service dashboards at scheduler start for manual inspection:
+
+| 🏷️ Service | 🔗 Dashboard |
+|---|---|
+| Gemini API | https://aistudio.google.com/apikey |
+| GCP Quotas | https://console.cloud.google.com/iam-admin/quotas |
+| Cloudflare AI | https://dash.cloudflare.com/?to=/:account/ai/workers-ai |
+| Hugging Face | https://huggingface.co/settings/billing |
+| Together AI | https://api.together.ai/settings/billing |
+
+### 🔇 Aggregate Skip Logging
+
+📊 During image backfill, the `collectCandidates` function emits a single `candidates_collected` summary event instead of per-file `already_has_image` events. During internal linking, `skipped_already_analyzed` events are suppressed — skip counts are reported in the final `internal_linking_complete` summary via `filesSkipped`.
+
 ### 🎯 Per-Run Limits
 
 📊 Backfill tasks are deliberately limited to minimize inference costs and rate limit pressure:

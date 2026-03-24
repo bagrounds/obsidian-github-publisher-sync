@@ -43,8 +43,6 @@ import { copySeriesPosts } from "./pull-vault-posts.ts";
 import { syncFileToVault, readPreviousPostFilename } from "./sync-series-to-vault.ts";
 import { run as runLinking, DEFAULT_LINKING_MODEL } from "./lib/internal-linking.ts";
 import { autoPost } from "./auto-post.ts";
-import { fetchFullQuotaReport, formatQuotaReport } from "./lib/gemini-quota.ts";
-import { parseServiceAccountKey, getAccessToken } from "./lib/gcp-auth.ts";
 import { BACKFILL_CONTENT_IDS } from "./lib/blog-series-config.ts";
 
 // ---------------------------------------------------------------------------
@@ -65,31 +63,16 @@ const sleep = (ms: number): Promise<void> =>
   new Promise((resolve) => setTimeout(resolve, ms));
 
 // ---------------------------------------------------------------------------
-// Quota check helper (informational, never fails the pipeline)
+// Inference service dashboard links (logged once at scheduler start)
 // ---------------------------------------------------------------------------
 
-const checkGeminiQuota = async (label: string): Promise<void> => {
-  try {
-    const apiKey = process.env.GEMINI_API_KEY;
-    if (!apiKey) return;
-
-    let accessToken: string | undefined;
-    let projectId: string | undefined;
-    const saRaw = process.env.GCP_SERVICE_ACCOUNT_KEY;
-    if (saRaw) {
-      try {
-        const sa = parseServiceAccountKey(saRaw);
-        projectId = process.env.GCP_PROJECT_ID ?? sa.project_id;
-        accessToken = await getAccessToken(sa);
-      } catch { /* quota check is best-effort */ }
-    }
-
-    const report = await fetchFullQuotaReport({ apiKey, label, accessToken, projectId });
-    console.log(formatQuotaReport(report));
-  } catch (error) {
-    log({ event: "quota_check_failed", label, error: error instanceof Error ? error.message : String(error) });
-  }
-};
+const INFERENCE_DASHBOARDS: ReadonlyMap<string, string> = new Map([
+  ["Gemini API", "https://aistudio.google.com/apikey"],
+  ["GCP Quotas", "https://console.cloud.google.com/iam-admin/quotas"],
+  ["Cloudflare AI", "https://dash.cloudflare.com/?to=/:account/ai/workers-ai"],
+  ["Hugging Face", "https://huggingface.co/settings/billing"],
+  ["Together AI", "https://api.together.ai/settings/billing"],
+]);
 
 // ---------------------------------------------------------------------------
 // Task runners — direct library calls, no subprocesses
@@ -122,10 +105,7 @@ const runBlogSeries = async (seriesId: string): Promise<void> => {
     return;
   }
 
-  // 3. Check Gemini quota (informational)
-  await checkGeminiQuota(`before ${seriesId}`);
-
-  // 4. Determine model chain: env override → per-series defaults
+  // 3. Determine model chain: env override → per-series defaults
   const envModel = process.env.BLOG_GEMINI_MODEL?.trim();
   const models = envModel ? [envModel, ...runConfig.modelChain.filter((m) => m !== envModel)] : runConfig.modelChain;
   const priorityUser = process.env[runConfig.priorityUserEnvVar]?.trim() || undefined;
@@ -153,10 +133,7 @@ const runBlogSeries = async (seriesId: string): Promise<void> => {
     }
   }
 
-  // 7. Check Gemini quota (informational)
-  await checkGeminiQuota(`after ${seriesId}`);
-
-  // 8. Sync to Obsidian vault
+  // 7. Sync to Obsidian vault
   if (result.postPath) {
     const syncVaultDir = await syncObsidianVault({ authToken, vaultName });
     let changed = false;
@@ -200,10 +177,7 @@ const runBackfillImages = async (): Promise<void> => {
   const vaultDir = await syncObsidianVault({ authToken, vaultName });
   BACKFILL_CONTENT_IDS.forEach((id) => copySeriesPosts(vaultDir, id, REPO_ROOT));
 
-  // 2. Check Gemini quota (informational)
-  await checkGeminiQuota("before image backfill");
-
-  // 3. Backfill blog images
+  // 2. Backfill blog images
   const providers = resolveImageProviders(process.env as Record<string, string | undefined>);
   const primary = providers[0]!;
   const fallbacks = providers.slice(1);
@@ -228,10 +202,7 @@ const runBackfillImages = async (): Promise<void> => {
     log({ event: "backfill_failed", error: error instanceof Error ? error.message : String(error) });
   }
 
-  // 4. Check Gemini quota (informational)
-  await checkGeminiQuota("after image backfill");
-
-  // 5. Sync to vault
+  // 3. Sync to vault
   const syncVaultDir = await syncObsidianVault({ authToken, vaultName });
   BACKFILL_CONTENT_IDS.forEach((id) => {
     const localDir = path.join(REPO_ROOT, id);
@@ -280,14 +251,7 @@ const runInternalLinking = async (): Promise<void> => {
 const runSocialPosting = async (): Promise<void> => {
   log({ event: "task_start", task: "social-posting" });
 
-  // 1. Check Gemini quota (informational)
-  await checkGeminiQuota("before social posting");
-
-  // 2. Run auto-post (imported as library function)
   await autoPost();
-
-  // 3. Check Gemini quota (informational)
-  await checkGeminiQuota("after social posting");
 
   log({ event: "task_complete", task: "social-posting" });
 };
@@ -348,7 +312,13 @@ const main = async (): Promise<void> => {
         })()
     : getScheduledTasks(hourUtc);
 
-  log({ event: "scheduler_start", hourUtc, tasks, hasOverride: !!cliArgs.taskOverride });
+  log({
+    event: "scheduler_start",
+    hourUtc,
+    tasks,
+    hasOverride: !!cliArgs.taskOverride,
+    dashboards: Object.fromEntries(INFERENCE_DASHBOARDS),
+  });
 
   if (tasks.length === 0) {
     log({ event: "no_tasks_scheduled", hourUtc });

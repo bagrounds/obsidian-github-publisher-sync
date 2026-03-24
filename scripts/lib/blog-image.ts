@@ -838,6 +838,8 @@ const collectCandidates = (
 } => {
   const candidates: BackfillCandidate[] = [];
   const dirFiles = new Map<string, readonly string[]>();
+  let skippedWithImage = 0;
+  let skippedFuture = 0;
 
   for (const { path: dirPath, id } of directories) {
     if (!fs.existsSync(dirPath)) {
@@ -852,7 +854,7 @@ const collectCandidates = (
       const date = extractDateFromFilename(filename);
 
       if (id === "reflections" && date > today) {
-        onProgress({ event: "skip_future_reflection", filename, date, today });
+        skippedFuture++;
         continue;
       }
 
@@ -861,13 +863,20 @@ const collectCandidates = (
       const needsRegeneration = shouldRegenerateImage(content);
 
       if (hasEmbeddedImage(content) && !needsRegeneration) {
-        onProgress({ event: "already_has_image", directory: id, filename });
+        skippedWithImage++;
         continue;
       }
 
       candidates.push({ filePath, dirPath, dirId: id, filename, date, needsRegeneration });
     }
   }
+
+  onProgress({
+    event: "candidates_collected",
+    candidates: candidates.length,
+    skippedWithImage,
+    skippedFuture,
+  });
 
   const sorted = candidates.sort((a, b) => b.date.localeCompare(a.date));
   return { candidates: sorted, dirFiles };

@@ -12,7 +12,7 @@ youtube: https://youtu.be/wzC4PddpFnA
 force_analyze_links: false
 link_analysis_time: 2026-03-24T07:53:03.375Z
 link_analysis_model: gemini-3.1-flash-lite-preview
-updated: 2026-03-24T08:16:09.879Z
+updated: 2026-03-24T22:26:21.418Z
 ---
 [Home](../index.md) > [Videos](./index.md) | [3️⃣1️⃣⚖️🏛️ Session 3, Part 1: Legal Issues](./session-3-part-1-legal-issues.md)  
 # 💰🚀💼 Session 2, Part 2: How Are You Going to Make Money? - The Business/Venture Model  

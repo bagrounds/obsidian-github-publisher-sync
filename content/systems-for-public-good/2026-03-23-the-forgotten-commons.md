@@ -3,11 +3,14 @@ aliases:
   - 2026-03-23 | 🏛️ The Forgotten Commons — Why Public Good Matters More Than Ever 🏛️
 title: 2026-03-23 | 🏛️ The Forgotten Commons — Why Public Good Matters More Than Ever 🏛️
 share: true
-image_prompt: A wide-angle, nostalgic photograph of an American small-town main street in the golden hour of evening. A weathered public library stands on the corner, its illuminated windows casting a warm glow onto the sidewalk. A family rides bicycles past a municipal park with children playing on a swing set. A public bus stops at a modest transit shelter. The scene is vibrant and lived-in, suggesting community and shared resources. In the background, subtle hints of modern life — a cell phone in one hand, a corporate logo fading on a closed storefront — hint at the tension between public and private. The overall mood is hopeful yet tinged with the melancholy of something precious that risks disappearing.
-updated: 2026-03-23T12:00:00.000Z
+updated: 2026-03-24T00:05:44.867Z
+image_date: 2026-03-24T00:05:44.864Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+regenerate_image: true
 ---
 [🏡 Home](../index.md) > [🏛️ Systems for Public Good](./index.md)  
 # 2026-03-23 | 🏛️ The Forgotten Commons — Why Public Good Matters More Than Ever 🏛️  
+![systems-for-public-good-2026-03-23-the-forgotten-commons](../systems-for-public-good-2026-03-23-the-forgotten-commons.jpg)  
   
 ## 🌱 Welcome to Systems for Public Good  
   

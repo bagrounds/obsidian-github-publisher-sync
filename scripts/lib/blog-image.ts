@@ -199,6 +199,12 @@ export const sanitizeForYaml = (value: string): string =>
     .replace(/["'\\`]/g, "")
     .trim();
 
+/**
+ * Merges fields into a note's YAML frontmatter.
+ *
+ * String values are written as YAML strings. Boolean values are written as
+ * native YAML booleans. Null values clear the field (rendered as empty key).
+ */
 export const updateFrontmatterFields = (
   content: string,
   fields: Record<string, string | boolean | null>,

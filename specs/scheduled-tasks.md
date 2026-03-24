@@ -51,8 +51,8 @@
 
 | 🕐 UTC Hour | 🏷️ Task ID | 📝 Description |
 |---|---|---|
-| 6 | `backfill-blog-images` | 🖼️ Backfill missing blog images (10 PM PT prev day) |
-| 8 | `internal-linking` | 🔗 BFS wikilink insertion (~midnight PT) |
+| Every hour | `backfill-blog-images` | 🖼️ Backfill 1 missing blog image per hour |
+| Every hour | `internal-linking` | 🔗 BFS wikilink insertion for 1 note per hour |
 | 0,2,4,6,8,10,12,14,16,18,20,22 | `social-posting` | 📢 Auto-post to X/Bluesky/Mastodon (every 2 hours) |
 
 ## 🔧 Blog Series Model Fallback Chain
@@ -68,6 +68,21 @@
 🔄 The `BLOG_GEMINI_MODEL` GitHub variable prepends to the chain when set.
 
 ## 🛡️ API Resilience
+
+### ⏱️ Inter-Task Rate Limit Protection
+
+🔒 When multiple tasks are scheduled at the same hour, a 30-second delay is inserted between each task to prevent per-minute API rate limit collisions across Gemini and other services.
+
+### 🎯 Per-Run Limits
+
+📊 Backfill tasks are deliberately limited to minimize inference costs and rate limit pressure:
+
+| 🏷️ Task | 📈 Limit | 📝 Rationale |
+|---|---|---|
+| `backfill-blog-images` | 1 image per run | 🖼️ Each image requires ~2 inference calls (describe + generate) |
+| `internal-linking` | 1 note per run | 🔗 Each note requires ~1 Gemini call for book identification |
+
+🔄 With hourly scheduling, this achieves up to 24 images and 24 notes processed per day while staying well within free-tier rate limits.
 
 ### 🔄 5XX Retry with Exponential Backoff
 

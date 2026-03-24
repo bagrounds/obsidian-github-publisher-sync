@@ -77,7 +77,11 @@ date: 2026-03-24
 
 ### 🎯 Limiting Inference Requests, Not Files Scanned
 
-📁 Both backfill pipelines limit **inference requests**, not files scanned. The image backfill scans all candidates to find the highest-priority one (newest first) but stops after one complete image generation cycle (`maxImages: 1`). The internal linking pipeline visits up to 100 files via BFS traversal, skipping already-analyzed files for free, but stops after one Gemini inference call (`maxInferenceRequests: 1`). This distinction matters — scanning file metadata costs nothing, but each API call consumes quota.
+📁 Both backfill pipelines limit **inference requests**, not files scanned. The image backfill scans all candidates to find the highest-priority one (newest first) but stops after one complete image generation cycle (`maxImages: 1`). The internal linking pipeline traverses all reachable files via BFS (no file count limit), skipping already-analyzed files for free, but stops after one Gemini inference call (`maxInferenceRequests: 1`). This distinction matters — scanning file metadata costs nothing, but each API call consumes quota.
+
+### 📋 Concise Run Summary
+
+📊 At the end of every orchestrator run, a human-readable summary block is printed showing the status of each task with ✅/❌ emoji and a total success count. This makes it easy to scroll to the bottom of a log and immediately see what happened.
 
 ### 🔄 Null Values in Frontmatter
 

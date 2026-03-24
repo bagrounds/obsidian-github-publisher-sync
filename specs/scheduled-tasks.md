@@ -96,7 +96,7 @@
 | 🏷️ Task | 📈 Limit | 📝 Rationale |
 |---|---|---|
 | `backfill-blog-images` | 1 image per run | 🖼️ Each image requires ~2 inference calls (describe + generate) |
-| `internal-linking` | 1 inference request per run | 🔗 Visits many files but only calls Gemini for 1 un-analyzed file per hour |
+| `internal-linking` | 1 inference request per run | 🔗 Traverses all reachable files via BFS but only calls Gemini for 1 un-analyzed file per hour |
 
 🔄 With hourly scheduling, this achieves up to 24 images and 24 notes processed per day while staying well within free-tier rate limits.
 
@@ -140,6 +140,21 @@ npx tsx scripts/run-scheduled.ts --task blog-series:chickie-loo
 🔧 The `workflow_dispatch` trigger supports the same overrides:
 - `task` — Run a specific task instead of consulting the schedule
 - `hour` — Simulate a specific UTC hour
+
+### 📋 Run Summary
+
+📊 At the end of every orchestrator run, a human-readable summary block is printed showing each task's status:
+
+```
+--- Run Summary ---
+  ✅ backfill-blog-images
+  ✅ internal-linking
+  ❌ social-posting — GEMINI_API_KEY not set
+  📊 2/3 succeeded
+-------------------
+```
+
+🔍 This makes it easy to scroll to the bottom of CI logs and immediately see what happened.
 
 ## 🧪 Testing
 

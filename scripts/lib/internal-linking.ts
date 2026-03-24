@@ -212,8 +212,6 @@ export interface RunResult {
 export interface LinkingConfig {
   /** Root content directory (absolute path) */
   readonly contentDir: string;
-  /** Maximum number of files to visit during BFS traversal */
-  readonly maxFiles: number;
   /** Maximum number of files that trigger inference API calls (undefined = unlimited) */
   readonly maxInferenceRequests?: number;
   /** Gemini API key (if omitted, skips AI validation and uses deterministic-only mode) */
@@ -411,7 +409,6 @@ export const findMostRecentReflection = (contentDir: string): string | null => {
  */
 export const bfsTraversal = (
   contentDir: string,
-  maxVisit: number,
 ): readonly string[] => {
   const start = findMostRecentReflection(contentDir);
   if (!start) return [];
@@ -421,7 +418,7 @@ export const bfsTraversal = (
   const result: string[] = [];
   visited.add(start);
 
-  while (queue.length > 0 && result.length < maxVisit) {
+  while (queue.length > 0) {
     const current = queue.shift()!;
     const filePath = path.join(contentDir, current);
 
@@ -1066,7 +1063,6 @@ export const run = async (config: LinkingConfig): Promise<RunResult> => {
     JSON.stringify({
       event: "internal_linking_start",
       contentDir: config.contentDir,
-      maxFiles: config.maxFiles,
       maxInferenceRequests: config.maxInferenceRequests,
       model: config.model,
       dryRun: config.dryRun,
@@ -1079,12 +1075,11 @@ export const run = async (config: LinkingConfig): Promise<RunResult> => {
   console.log(JSON.stringify({ event: "index_built", entries: index.length }));
 
   // BFS traversal
-  const filesToVisit = bfsTraversal(config.contentDir, config.maxFiles);
+  const filesToVisit = bfsTraversal(config.contentDir);
   console.log(
     JSON.stringify({
       event: "bfs_complete",
       filesFound: filesToVisit.length,
-      maxFiles: config.maxFiles,
     }),
   );
 

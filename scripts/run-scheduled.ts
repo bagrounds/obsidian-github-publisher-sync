@@ -228,7 +228,6 @@ const runInternalLinking = async (): Promise<void> => {
   const model = process.env.LINKING_MODEL ?? DEFAULT_LINKING_MODEL;
   const result = await runLinking({
     contentDir: vaultDir,
-    maxFiles: 100,
     maxInferenceRequests: 1,
     apiKey: process.env.GEMINI_API_KEY,
     model,
@@ -353,11 +352,21 @@ const main = async (): Promise<void> => {
   const succeeded = results.filter((r) => r.success).length;
   const failed = results.filter((r) => !r.success).length;
 
-  log({ event: "scheduler_complete", hourUtc, succeeded, failed, total: results.length });
+  log({
+    event: "scheduler_complete",
+    hourUtc,
+    succeeded,
+    failed,
+    total: results.length,
+    tasks: results.map(({ taskId, success, error }) => ({ taskId, success, ...(error ? { error } : {}) })),
+  });
 
-  if (failed > 0) {
-    log({ event: "some_tasks_failed", failures: results.filter((r) => !r.success) });
-  }
+  console.log("\n--- Run Summary ---");
+  results.forEach(({ taskId, success, error }) =>
+    console.log(`  ${success ? "✅" : "❌"} ${taskId}${error ? ` — ${error}` : ""}`),
+  );
+  console.log(`  📊 ${succeeded}/${results.length} succeeded`);
+  console.log("-------------------\n");
 };
 
 if (process.argv[1]?.endsWith("run-scheduled.ts")) {

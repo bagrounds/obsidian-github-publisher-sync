@@ -10,6 +10,9 @@ Channel: MIT OpenCourseWare
 tags:
 youtube: https://youtu.be/5gtR7IjtcFE
 updated: 2026-03-24T06:24:20.405Z
+force_analyze_links: false
+link_analysis_time: 2026-03-24T07:49:47.706Z
+link_analysis_model: gemini-3.1-flash-lite-preview
 ---
 [Home](../index.md) > [Videos](./index.md) | [⏭️ 🎯📈🔍📊💼 Session 1, Part 2: Market Identification and Sales: Finding Your Customer](../../session-1-part-2-market-identification-and-sales-finding-your-customer.md)  
 # 📈💥❓➡️✅ Session 1, Part 1: Introduction: Most Startups Fail; How to Improve Your Odds  
@@ -49,7 +52,7 @@ updated: 2026-03-24T06:24:20.405Z
 * 📕 Zero to One by Peter Thiel argues that true value is created by building monopolies through unique technology rather than competing in established markets.  
   
 ### 🎨 Creatively Related  
-* 📙 Thinking, Fast and Slow by Daniel Kahneman provides insight into the cognitive biases that lead entrepreneurs to overconfidence and poor risk assessment.  
+* 📙 [🤔🐇🐢 Thinking, Fast and Slow](../books/thinking-fast-and-slow.md) by Daniel Kahneman provides insight into the cognitive biases that lead entrepreneurs to overconfidence and poor risk assessment.  
 * 📘 The Hard Thing About Hard Things by Ben Horowitz offers a raw look at the emotional and psychological toll of leading a company through crisis.  
   
 ## 🐘 Mastodon    

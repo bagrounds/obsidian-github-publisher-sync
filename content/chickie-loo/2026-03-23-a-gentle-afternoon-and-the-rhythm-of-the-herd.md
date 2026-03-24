@@ -14,7 +14,7 @@ force_analyze_links: false
 link_analysis_time: 2026-03-24T07:49:37.595Z
 link_analysis_model: gemini-3.1-flash-lite-preview
 ---
-[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-03-22-weekly-recap.md) [⏭️](./2026-03-24-the-quiet-wisdom-of-the-mountain-view-and-new-lessons-learned.md)  
+[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-03-22-weekly-recap.md) [⏭️](./2026-03-24-finding-peace-in-the-practical-rhythms-of-the-ranch.md)  
 # 2026-03-23 | 🐔 🕊️ A Gentle Afternoon and the Rhythm of the Herd 🐔  
 ![chickie-loo-2026-03-23-a-gentle-afternoon-and-the-rhythm-of-the-herd](../chickie-loo-2026-03-23-a-gentle-afternoon-and-the-rhythm-of-the-herd.jpg)  
   

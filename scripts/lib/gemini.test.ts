@@ -182,7 +182,11 @@ describe("geminiModelFallback", () => {
   it("returns undefined for arbitrary model name", () => {
     assert.equal(geminiModelFallback("some-other-model"), undefined);
   });
+});
 
+// --- GeminiConfig ---
+
+describe("GeminiConfig", () => {
   it("GeminiConfig includes questionModel field", async () => {
     const { validateEnvironment } = await import("./env.ts");
     const saved = {

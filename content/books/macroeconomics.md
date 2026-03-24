@@ -68,7 +68,7 @@ by William Mitchell, L. Randall Wray, and Martin Watts
 * **Best Alternate Book on the Same Topic:** "[The Deficit Myth](./the-deficit-myth.md)" by Stephanie Kelton. This book is a more accessible introduction to MMT. 📖  
 * **Best Tangentially Related Book:** [🏛️💰 Debt: The First 5,000 Years](./debt-the-first-5000-years.md) by David Graeber. This book provides a historical and anthropological perspective on the nature of debt and money. 📜  
 * **Best Diametrically Opposed Book:** "Basic Economics" by Thomas Sowell. This book represents a mainstream, free-market perspective. ⚖️  
-* **Best Fiction Book Incorporating Related Ideas:** "The Ministry for the Future" by Kim Stanley Robinson. This book explores macroeconomic issues and policy responses in a climate change context. 🌍  
+* **Best Fiction Book Incorporating Related Ideas:** The Ministry for the Future by Kim Stanley Robinson. This book explores macroeconomic issues and policy responses in a climate change context. 🌍  
 * **Best More General Book:** "Economics: The User's Guide" by Ha-Joon Chang. This book offers a broad overview of different schools of economic thought. 🗺️  
 * **Best More Specific Book:** "[Understanding Modern Money](./understanding-modern-money.md): The Key For Full Employment and Price Stability" by L. Randall Wray. This book provides a more focused and detailed exposition of MMT. 🔍  
 * **Best More Rigorous Book:** "Monetary Economics" by Wynne Godley and Marc Lavoie. This book provides a more technical and mathematical treatment of monetary macroeconomics. 📈  

@@ -30,7 +30,14 @@ import {
 } from "./lib/scheduler.ts";
 import { todayPacific } from "./lib/blog-series.ts";
 import { generateBlogPost } from "./generate-blog-post.ts";
-import { processNote, resolveImageProvider, resolveImageProviders, backfillImages, syncMarkdownDir, syncAttachmentsDir } from "./lib/blog-image.ts";
+import {
+  processNote,
+  resolveImageProvider,
+  resolveImageProviders,
+  backfillImages,
+  syncMarkdownDir,
+  syncAttachmentsDir,
+} from "./lib/blog-image.ts";
 import { syncObsidianVault, pushObsidianVault } from "./lib/obsidian-sync.ts";
 import { copySeriesPosts } from "./pull-vault-posts.ts";
 import { syncFileToVault, readPreviousPostFilename } from "./sync-series-to-vault.ts";

@@ -76,7 +76,7 @@ regenerate_image: true
   
 💰 One of the most powerful arguments against public investment is fiscal: we cannot afford it. The national debt is too high. The deficit is out of control. We are burdening our grandchildren.  
   
-🔬 Modern monetary theory (MMT) — developed by economists like Stephanie Kelton, Warren Mosler, and L. Randall Wray — challenges this framing at its foundation. The core insight of MMT is that a sovereign currency issuer (like the United States federal government, which issues the dollar) is not financially constrained in the same way a household or a business is.  
+[🏦♾️📈💸 Modern Monetary Theory](../topics/modern-monetary-theory.md) (MMT) — developed by economists like Stephanie Kelton, [👨‍🏫📉💵 Warren Mosler](../people/warren-mosler.md), and L. Randall Wray — challenges this framing at its foundation. The core insight of MMT is that a sovereign currency issuer (like the United States federal government, which issues the dollar) is not financially constrained in the same way a household or a business is.  
   
 🏠 A household must earn or borrow dollars before it can spend them. The federal government creates dollars when it spends. This is not a metaphor — it is a description of how the monetary system actually works, confirmed by Federal Reserve operations and central bank accounting.  
   

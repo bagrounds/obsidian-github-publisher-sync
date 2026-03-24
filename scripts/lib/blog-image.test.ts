@@ -16,6 +16,7 @@ import {
   DEFAULT_DESCRIBER_MODEL,
   DEFAULT_HUGGINGFACE_IMAGE_MODEL,
   DEFAULT_TOGETHER_IMAGE_MODEL,
+  DEFAULT_POLLINATIONS_IMAGE_MODEL,
   mimeTypeToExtension,
   isQuotaError,
   isDailyQuotaError,
@@ -35,6 +36,7 @@ import {
   makeCloudflareGenerator,
   makeHuggingFaceGenerator,
   makeTogetherGenerator,
+  makePollinationsGenerator,
   extractFrontmatterValue,
   shouldRegenerateImage,
   removeImageEmbed,
@@ -2083,6 +2085,23 @@ describe("makeTogetherGenerator", () => {
   });
 });
 
+describe("makePollinationsGenerator", () => {
+  it("returns an ImageGenerator function", () => {
+    const generator = makePollinationsGenerator();
+    assert.equal(typeof generator, "function");
+  });
+
+  it("uses default model when none specified", () => {
+    const generator = makePollinationsGenerator();
+    assert.equal(typeof generator, "function");
+  });
+
+  it("accepts custom model", () => {
+    const generator = makePollinationsGenerator("turbo");
+    assert.equal(typeof generator, "function");
+  });
+});
+
 describe("resolveImageProviders", () => {
   it("returns Cloudflare as first provider when configured", () => {
     const env = {
@@ -2112,14 +2131,16 @@ describe("resolveImageProviders", () => {
       CLOUDFLARE_ACCOUNT_ID: "cf-account",
       HUGGINGFACE_API_TOKEN: "hf-token",
       TOGETHER_API_TOKEN: "together-key",
+      POLLINATIONS_ENABLED: "true",
       GEMINI_API_KEY: "gemini-key",
     };
     const providers = resolveImageProviders(env);
-    assert.equal(providers.length, 4);
+    assert.equal(providers.length, 5);
     assert.equal(providers[0]!.name, "cloudflare");
     assert.equal(providers[1]!.name, "huggingface");
     assert.equal(providers[2]!.name, "together");
-    assert.equal(providers[3]!.name, "gemini");
+    assert.equal(providers[3]!.name, "pollinations");
+    assert.equal(providers[4]!.name, "gemini");
   });
 
   it("uses custom HuggingFace model from HUGGINGFACE_IMAGE_MODEL", () => {
@@ -2151,6 +2172,35 @@ describe("resolveImageProviders", () => {
     assert.equal(providers[0]!.model, "stabilityai/stable-diffusion-3-medium");
   });
 
+  it("returns Pollinations as provider when enabled", () => {
+    const env = {
+      POLLINATIONS_ENABLED: "true",
+    };
+    const providers = resolveImageProviders(env);
+    assert.equal(providers.length, 1);
+    assert.equal(providers[0]!.name, "pollinations");
+    assert.equal(providers[0]!.apiKey, "");
+    assert.equal(providers[0]!.model, DEFAULT_POLLINATIONS_IMAGE_MODEL);
+  });
+
+  it("uses custom Pollinations model from POLLINATIONS_IMAGE_MODEL", () => {
+    const env = {
+      POLLINATIONS_ENABLED: "true",
+      POLLINATIONS_IMAGE_MODEL: "turbo",
+    };
+    const providers = resolveImageProviders(env);
+    assert.equal(providers[0]!.model, "turbo");
+  });
+
+  it("does not include Pollinations when POLLINATIONS_ENABLED is not true", () => {
+    const env = {
+      POLLINATIONS_ENABLED: "false",
+      GEMINI_API_KEY: "gemini-key",
+    };
+    const providers = resolveImageProviders(env);
+    assert.ok(providers.every((p) => p.name !== "pollinations"));
+  });
+
   it("throws when no credentials are available", () => {
     assert.throws(
       () => resolveImageProviders({}),
@@ -2164,6 +2214,7 @@ describe("resolveImageProviders", () => {
       CLOUDFLARE_ACCOUNT_ID: "cf-account",
       HUGGINGFACE_API_TOKEN: "hf-token",
       TOGETHER_API_TOKEN: "together-key",
+      POLLINATIONS_ENABLED: "true",
       GEMINI_API_KEY: "gemini-key",
     };
     const providers = resolveImageProviders(env);

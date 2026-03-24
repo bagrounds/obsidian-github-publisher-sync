@@ -558,6 +558,43 @@ export const makeTogetherGenerator = (
 ): ImageGenerator => async (apiKey, _model, prompt) =>
   generateWithTogether(apiKey, model, prompt);
 
+export const DEFAULT_POLLINATIONS_IMAGE_MODEL = "flux";
+
+export const generateWithPollinations = async (
+  _apiKey: string,
+  model: string,
+  prompt: string,
+): Promise<{ readonly data: Buffer; readonly mimeType: string }> => {
+  const encodedPrompt = encodeURIComponent(prompt);
+  const url = `https://image.pollinations.ai/prompt/${encodedPrompt}?model=${encodeURIComponent(model)}&width=1024&height=1024&nologo=true`;
+
+  const response = await fetch(url);
+
+  if (!response.ok) {
+    const text = await response.text();
+    throw new Error(
+      `Pollinations API error ${response.status}: ${text}`,
+    );
+  }
+
+  const contentType = response.headers.get("content-type") ?? "";
+  if (!contentType.startsWith("image/")) {
+    const text = await response.text();
+    throw new Error(`Pollinations returned non-image response: ${text}`);
+  }
+
+  const arrayBuffer = await response.arrayBuffer();
+  return {
+    data: Buffer.from(arrayBuffer),
+    mimeType: contentType.split(";")[0] ?? "image/jpeg",
+  };
+};
+
+export const makePollinationsGenerator = (
+  model: string = DEFAULT_POLLINATIONS_IMAGE_MODEL,
+): ImageGenerator => async (_apiKey, _model, prompt) =>
+  generateWithPollinations("", model, prompt);
+
 export interface ImageProviderConfig {
   readonly name: string;
   readonly apiKey: string;
@@ -615,6 +652,18 @@ export const resolveImageProviders = (env: Record<string, string | undefined>): 
     });
   }
 
+  const pollinationsModel = env.POLLINATIONS_IMAGE_MODEL ?? DEFAULT_POLLINATIONS_IMAGE_MODEL;
+
+  if (env.POLLINATIONS_ENABLED === "true") {
+    providers.push({
+      name: "pollinations",
+      apiKey: "",
+      model: pollinationsModel,
+      generator: makePollinationsGenerator(pollinationsModel),
+      describePrompt,
+    });
+  }
+
   const geminiModel = env.IMAGE_GEMINI_MODEL ?? "gemini-3.1-flash-image-preview";
 
   if (geminiKey) {
@@ -629,7 +678,7 @@ export const resolveImageProviders = (env: Record<string, string | undefined>): 
 
   if (providers.length === 0) {
     throw new Error(
-      "No image generation credentials found. Set CLOUDFLARE_API_TOKEN + CLOUDFLARE_ACCOUNT_ID, HUGGINGFACE_API_TOKEN, TOGETHER_API_TOKEN, or GEMINI_API_KEY.",
+      "No image generation credentials found. Set CLOUDFLARE_API_TOKEN + CLOUDFLARE_ACCOUNT_ID, HUGGINGFACE_API_TOKEN, TOGETHER_API_TOKEN, POLLINATIONS_ENABLED=true, or GEMINI_API_KEY.",
     );
   }
 

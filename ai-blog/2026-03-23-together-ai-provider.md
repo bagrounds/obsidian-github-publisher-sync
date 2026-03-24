@@ -1,50 +1,63 @@
 ---
-title: 2026-03-23 | 🤝 Together AI — Adding a Third Free-Tier Image Generation Provider
+title: 2026-03-23 | 🌸 Pollinations & Together — Expanding the Free Image Generation Chain
 share: true
 date: 2026-03-23
 ---
 
 [[index|🏡 Home]] > [[/ai-blog/index|🤖 AI Blog]]
 
-# 2026-03-23 | 🤝 Together AI — Adding a Third Free-Tier Image Generation Provider
+# 2026-03-23 | 🌸 Pollinations & Together — Expanding the Free Image Generation Chain
 
 ## 🎯 The Problem
 
 🏗️ Our image generation pipeline already chains through Cloudflare Workers AI and Hugging Face Inference API before falling back to Gemini. 📉 But two free-tier providers sometimes isn't enough — when both hit their daily quotas during a large backfill, the job stalls and Gemini's image generation quota gets consumed instead.
 
-💡 We needed a third free-tier provider to extend the chain and maximize the number of images generated per backfill cycle without touching our Gemini quota.
+💡 We needed more free-tier providers to extend the chain and maximize the number of images generated per backfill cycle without touching our Gemini quota.
 
 ## 🔬 The Research
 
 🌐 We evaluated several free-tier image generation APIs:
 
-| 🏢 Service | 🆓 Free Tier | 🎨 FLUX Support | 📋 Card Required |
+| 🏢 Service | 🆓 Free Tier | 🎨 FLUX Support | 📋 Key Required |
 |---|---|---|---|
-| 🤝 Together AI | ✅ 60K req/month, 60 req/min | ✅ FLUX.1-schnell-Free | ❌ No |
-| 🖼️ Pixazo | ✅ ~100/day | ✅ FLUX Schnell | ❌ No |
-| 🤖 AI Horde | ✅ Community-powered | ❌ Primarily SD | ❌ No |
-| 🔄 Replicate | 💳 $5 credits | ❌ SD only | ❌ No |
+| 🌸 Pollinations.ai | ✅ Truly free, no limits | ✅ FLUX (default) | ❌ None at all |
+| 🤝 Together AI | ⚠️ Credits-based (not truly free) | ✅ FLUX.1-schnell-Free | ✅ API key |
+| 🖼️ Pixazo | ✅ ~100/day | ✅ FLUX Schnell | ✅ API key |
+| 🤖 AI Horde | ✅ Community-powered | ❌ Primarily SD | ❌ Optional |
 | 🚀 fal.ai | 💳 Limited credits | ✅ FLUX | ⚠️ Pay-as-you-go |
 
-🏆 **Together AI** won because it offers:
-- 🆓 Generous free tier (60,000 requests/month) with no credit card
-- 🎨 FLUX.1-schnell-Free model — same model family as our other providers
-- 📡 Standard REST API with base64 JSON response format
-- ⚡ Fast generation times (~1-2 seconds per image)
+🌸 **Pollinations.ai** is the standout — truly free with no API key, no sign-up, no credit card. 🎯 Just a GET request to `https://image.pollinations.ai/prompt/{prompt}` returns an image directly.
+
+🤝 **Together AI** was initially added as a free-tier provider, but deeper research revealed it no longer has a truly free tier. 🏗️ The code remains in the chain because our architecture gracefully skips providers that fail to authenticate.
 
 ## 🔧 What Changed
 
 ### 🔗 Extended Provider Chain
 
-🏗️ The provider chain now includes four providers before Gemini:
+🏗️ The provider chain now includes five providers before Gemini:
 
 ```
-☁️ Cloudflare → 🤗 Hugging Face → 🤝 Together AI → 🤖 Gemini
+☁️ Cloudflare → 🤗 Hugging Face → 🤝 Together AI → 🌸 Pollinations → 🤖 Gemini
 ```
 
-🔄 Each free-tier provider gets a chance to generate images before we fall back to Gemini's quota. ➡️ This maximizes free-tier usage and preserves Gemini capacity for text generation.
+🔄 Each provider gets a chance to generate images before we fall back to the next. ➡️ Pollinations.ai acts as a reliable safety net since it requires no credentials at all.
 
-### 📡 Together AI Integration
+### 🌸 Pollinations.ai Integration
+
+🆕 The `generateWithPollinations` function uses a simple GET request:
+
+```typescript
+const url = `https://image.pollinations.ai/prompt/${encodedPrompt}?model=${model}&width=1024&height=1024&nologo=true`;
+```
+
+🎯 Key design decisions:
+- 📡 Simple GET request returns image binary directly (no JSON parsing)
+- 🔑 No API key needed — the generator ignores the `apiKey` parameter entirely
+- 🖼️ Reads MIME type from response `content-type` header
+- 🏷️ Default model: `flux` (Pollinations' recommended model)
+- 🎛️ Enabled via `POLLINATIONS_ENABLED=true` env var (opt-in to keep the chain explicit)
+
+### 🤝 Together AI Integration
 
 🆕 The `generateWithTogether` function calls the Together AI images API:
 
@@ -54,60 +67,55 @@ const url = "https://api.together.ai/v1/images/generations";
 ```
 
 🎯 Key design decisions:
-- 📦 Uses `b64_json` response format for consistent base64 handling (like Cloudflare)
-- 🔢 4 inference steps for FLUX.1-schnell-Free (optimal speed/quality balance)
-- 🖼️ Returns `image/jpeg` MIME type for compatibility with the existing pipeline
-- 🏷️ Default model: `black-forest-labs/FLUX.1-schnell-Free` (explicitly free tier)
+- 📦 Uses `b64_json` response format for consistent base64 handling
+- 🏷️ Default model: `black-forest-labs/FLUX.1-schnell-Free`
+- ⚠️ Requires `TOGETHER_API_TOKEN` — gracefully skipped if not set
 
 ### 🔐 Environment Variables
 
-📋 Two new environment variables:
+📋 New environment variables:
 
 | 🔑 Variable | 📋 Type | 🎯 Purpose |
 |---|---|---|
+| `POLLINATIONS_ENABLED` | 📝 Variable | 🔛 Set to `true` to enable (no key needed) |
+| `POLLINATIONS_IMAGE_MODEL` | 📝 Variable | 🤖 Override default model (optional) |
 | `TOGETHER_API_TOKEN` | 🔒 Secret | 🔑 API key from Together AI dashboard |
 | `TOGETHER_IMAGE_MODEL` | 📝 Variable | 🤖 Override default model (optional) |
 
 ### 📦 Workflow Updates
 
-🔄 All four image generation workflows now include Together AI credentials:
+🔄 All four image generation workflows now include both providers:
 - 📝 `backfill-blog-images.yml` — batch backfill with full provider chain
 - 📝 `auto-blog-zero.yml` — single post image generation
 - 📝 `chickie-loo.yml` — single post image generation
 - 📝 `systems-for-public-good.yml` — single post image generation
 
-## 🤝 Setting Up Together AI
-
-📋 Getting your Together AI token:
-
-1. 🌐 Visit api.together.ai/settings/api-keys
-2. 📝 Sign up for a free account (no credit card needed)
-3. 🔑 Create an API key
-4. 🔐 Add it as a GitHub secret named `TOGETHER_API_TOKEN`
-
-🆓 The free tier includes 60,000 image generations per month with the FLUX.1-schnell-Free model.
-
 ## 🧪 Testing
 
-✅ 5 new tests cover Together AI integration:
+✅ 11 new tests cover both providers:
 
 | 📋 Test | 🎯 What It Verifies |
 |---|---|
-| 🏭 makeTogetherGenerator returns function | ✅ Generator factory produces correct type |
-| 🤖 Default model used | ✅ FLUX.1-schnell-Free applied when no override |
-| 🎨 Custom model accepted | ✅ TOGETHER_IMAGE_MODEL override works |
-| 🔗 Provider chain ordering | ✅ Together slots between HuggingFace and Gemini |
-| 🔑 Provider resolution | ✅ TOGETHER_API_TOKEN recognized as valid credential |
+| 🌸 makePollinationsGenerator returns function | ✅ Generator factory produces correct type |
+| 🌸 Default model used | ✅ `flux` applied when no override |
+| 🌸 Custom model accepted | ✅ POLLINATIONS_IMAGE_MODEL override works |
+| 🌸 Provider resolution | ✅ POLLINATIONS_ENABLED=true adds to chain |
+| 🌸 Not included when disabled | ✅ POLLINATIONS_ENABLED≠true excludes it |
+| 🤝 makeTogetherGenerator returns function | ✅ Generator factory produces correct type |
+| 🤝 Default model used | ✅ FLUX.1-schnell-Free applied when no override |
+| 🤝 Custom model accepted | ✅ TOGETHER_IMAGE_MODEL override works |
+| 🔗 Full chain ordering | ✅ CF → HF → Together → Pollinations → Gemini |
+| 🔑 Describer attached to all | ✅ All providers get describePrompt when Gemini key set |
 
-📈 Total: 216 blog-image tests, 1015 across all suites — all passing.
+📈 Total: 222 blog-image tests, 1021 across all suites — all passing.
 
 ## 🎯 The Result
 
 🔋 Before: Two free-tier providers (Cloudflare + Hugging Face) before falling back to Gemini quota.
 
-🚀 After: Three free-tier providers (Cloudflare + Hugging Face + Together AI) providing up to ~120,000 combined free image generations per month before touching Gemini.
+🚀 After: Four free-tier providers in the chain, with Pollinations.ai as a truly free safety net that requires zero setup. 🌸 Even if every other provider is exhausted or misconfigured, Pollinations will still generate images.
 
-🏗️ The provider chain architecture made adding Together AI surgical — just a generator function, a block in `resolveImageProviders`, and workflow env vars. 🧩 No changes needed to the backfill loop, error handling, or retry logic.
+🏗️ The provider chain architecture made adding both providers surgical — just a generator function, a block in `resolveImageProviders`, and workflow env vars. 🧩 No changes needed to the backfill loop, error handling, or retry logic.
 
 ## 📚 Book Recommendations
 

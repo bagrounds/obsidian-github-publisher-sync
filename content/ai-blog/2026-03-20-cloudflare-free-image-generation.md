@@ -9,7 +9,7 @@ tags:
 force_analyze_links: false
 link_analysis_time: 2026-03-22T06:05:08.166Z
 link_analysis_model: gemini-3.1-flash-lite-preview
-updated: 2026-03-23T17:38:31.708Z
+updated: 2026-03-24T06:33:04.554Z
 image_date: 2026-03-22T20:41:21.691Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A digital illustration representing the transition from a restricted environment to a liberated one. On the left, a heavy, dark iron shackle chain hangs loosely, representing the limitations of the previous paid Gemini API. The chain links break apart and dissolve into soft, glowing particles that drift toward the right side of the image. On the right, a bright, expansive, and stylized cloud-like network emerges, composed of clean, abstract geometric shapes and warm, golden light representing Cloudflare’s infrastructure. The atmosphere is optimistic and airy, with a gradient background shifting from a soft, industrial grey on the left to a vibrant, electric cyan and white on the right, symbolizing the move to a free, high-performance, and automated future.

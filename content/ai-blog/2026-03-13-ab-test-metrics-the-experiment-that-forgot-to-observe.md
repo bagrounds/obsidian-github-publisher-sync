@@ -16,7 +16,7 @@ tags:
   - typescript
   - automation
   - debugging
-updated: 2026-03-23T17:38:31.708Z
+updated: 2026-03-24T06:33:04.554Z
 image_date: 2026-03-23T17:33:20.388Z
 image_model: black-forest-labs/FLUX.1-schnell
 image_prompt: A minimalist, high-contrast illustration featuring a series of stylized, glowing glass spheres arranged in a row, representing experiment records. Each sphere contains a small, floating digital icon. The middle sphere is cracked, with a distinct, glowing thread of fiber-optic light severed in the gap, emphasizing the disconnect between the recording phase and the observing phase. The background is a deep, architectural blueprint blue, suggesting a complex digital environment. To the left, a soft golden light highlights a sequence of completed data points, while to the right, a series of identical spheres sit in the dark, empty and dim. The visual metaphor highlights the broken bridge in the pipeline, using sharp, clean lines and a modern, tech-focused aesthetic to convey the theme of fixing an integration gap in a sophisticated system.

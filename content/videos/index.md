@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-03-23T22:37:57-07:00
+updated: 2026-03-23T22:45:49-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (708)  
+# 📺 Videos (709)  
 - [💰🤑🤖💡🚀💲 $0.10/Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
@@ -460,6 +460,7 @@ updated: 2026-03-23T22:37:57-07:00
 - [📈💥❓➡️✅ Session 1, Part 1: Introduction: Most Startups Fail; How to Improve Your Odds](./session-1-part-1-introduction-most-startups-fail-how-to-improve-your-odds.md)  
 - [🎯📈🔍📊💼 Session 1, Part 2: Market Identification and Sales: Finding Your Customer](./session-1-part-2-market-identification-and-sales-finding-your-customer.md)  
 - [💰🚀💼 Session 2, Part 2: How Are You Going to Make Money? - The Business/Venture Model](./session-2-part-2-how-are-you-going-to-make-money-the-businessventure-model.md)  
+- [🗣️💡🚀 Session 4, Part 1: Presenting Your Venture](./session-4-part-1-presenting-your-venture.md)  
 - [👋👩‍💻🤖🚀 She quit, picked up AI, and shipped in 30 days what her team planned for Q3.](./she-quit-picked-up-ai-and-shipped-in-30-days-what-her-team-planned-for-q3.md)  
 - [🏃🦵🤕 SHIN SPLINTS for Runners: Challenges, Causes, and Rehab](./shin-splints-for-runners-challenges-causes-and-rehab.md)  
 - [🧑‍💻📈⏩ SIGGRAPH Thesis Fast Forward 2025](./siggraph-thesis-fast-forward-2025.md)  

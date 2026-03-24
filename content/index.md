@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-03-23T22:37:57-07:00
+updated: 2026-03-23T22:45:49-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -59,7 +59,8 @@ updated: 2026-03-23T22:37:57-07:00
 - [🔁🤪 Catch-22](./books/catch-22.md)  
   
   
-## [📺 Videos](./videos/index.md) (708)  
+## [📺 Videos](./videos/index.md) (709)  
+- [🗣️💡🚀 Session 4, Part 1: Presenting Your Venture](./videos/session-4-part-1-presenting-your-venture.md)  
 - [💰🚀💼 Session 2, Part 2: How Are You Going to Make Money? - The Business/Venture Model](./videos/session-2-part-2-how-are-you-going-to-make-money-the-businessventure-model.md)  
 - [3️⃣1️⃣⚖️🏛️ Session 3, Part 1: Legal Issues](./videos/session-3-part-1-legal-issues.md)  
 - [🎯📈🔍📊💼 Session 1, Part 2: Market Identification and Sales: Finding Your Customer](./videos/session-1-part-2-market-identification-and-sales-finding-your-customer.md)  
@@ -69,7 +70,6 @@ updated: 2026-03-23T22:37:57-07:00
 - [🇺🇸🏛️🗣️📊 An Analysis of Modern Republicanism | Explainer](./videos/an-analysis-of-modern-republicanism-explainer.md)  
 - [🌿🤖🛰️ These AI Devices Protect Nature in Real Time | Juan M. Lavista Ferres | TED](./videos/these-ai-devices-protect-nature-in-real-time-juan-m-lavista-ferres-ted.md)  
 - [💰💥🇮🇷🇺🇸 Brooks and Capehart on Trump struggling to contain economic fallout of Iran war](./videos/brooks-and-capehart-on-trump-struggling-to-contain-economic-fallout-of-iran-war.md)  
-- [😠🗣️🔥🌍🗣️🧖 Alexander Stubb on «difficult» conversations with Trump, global «disorder» and sauna diplomacy](./videos/alexander-stubb-on-difficult-conversations-with-trump-global-disorder-and-sauna-diplomacy.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  

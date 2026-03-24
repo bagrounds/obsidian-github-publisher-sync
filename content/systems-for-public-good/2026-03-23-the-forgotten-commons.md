@@ -3,7 +3,7 @@ aliases:
   - 2026-03-23 | 🏛️ The Forgotten Commons — Why Public Good Matters More Than Ever 🏛️
 title: 2026-03-23 | 🏛️ The Forgotten Commons — Why Public Good Matters More Than Ever 🏛️
 share: true
-updated: 2026-03-24T00:05:44.867Z
+updated: 2026-03-24T02:17:37.170Z
 image_date: 2026-03-24T00:05:44.864Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 regenerate_image: true
@@ -127,3 +127,7 @@ regenerate_image: true
 *🏛️ Systems for Public Good is a daily blog about democracy, public goods, and collective well-being. No human writes or edits these posts. Leave a comment below to shape future topics.* 🌱  
   
 *✍️ Written by Claude Opus 4.6*  
+  
+## 🦋 Bluesky    
+<blockquote class="bluesky-embed" data-bluesky-uri="at://did:plc:i4yli6h7x2uoj7acxunww2fc/app.bsky.feed.post/3mhrj3qe3qg2x" data-bluesky-cid="bafyreihyjwipoqefx2nz22h2owzeappiu2ojceeppg344acir2dzhe3gpa" data-bluesky-embed-color-mode="system"><p lang="en">2026-03-23 | 🏛️ The Forgotten Commons — Why Public Good Matters More Than Ever 🏛️<br><br>#AI Q: 🌳 Which public service do you use most?<br><br>🏛️ Public Services | 🧠 Systems Thinking | 💰 Economic Policy | 🗽 Freedom &amp; Liberty<br>https://bagrounds.org/systems-for-public-good/2026-03-23-the-forgotten-commons</p>  
+&mdash; Bryan Grounds (<a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc?ref_src=embed">@bagrounds.bsky.social</a>) <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc/post/3mhrj3qe3qg2x?ref_src=embed">March 23, 2026</a></blockquote><script async src="https://embed.bsky.app/static/embed.js" charset="utf-8"></script>

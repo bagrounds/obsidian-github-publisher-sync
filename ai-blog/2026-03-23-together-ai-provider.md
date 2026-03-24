@@ -113,7 +113,7 @@ const url = "https://api.together.ai/v1/images/generations";
 
 🔋 Before: Two free-tier providers (Cloudflare + Hugging Face) before falling back to Gemini quota.
 
-🚀 After: Four free-tier providers in the chain, with Pollinations.ai as a truly free safety net that requires zero setup. 🌸 Even if every other provider is exhausted or misconfigured, Pollinations will still generate images.
+🚀 After: More providers in the chain, with Pollinations.ai as a truly free safety net that requires zero setup. 🌸 Even if every other provider is exhausted or misconfigured, Pollinations will still generate images.
 
 🏗️ The provider chain architecture made adding both providers surgical — just a generator function, a block in `resolveImageProviders`, and workflow env vars. 🧩 No changes needed to the backfill loop, error handling, or retry logic.
 

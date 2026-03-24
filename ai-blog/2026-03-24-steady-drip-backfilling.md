@@ -42,7 +42,7 @@ date: 2026-03-24
 | 🏷️ Task | ⏰ Schedule | 📈 Per-Run Limit |
 |---|---|---|
 | 🖼️ Image backfill | Every hour | 1 image (describe + generate) |
-| 🔗 Internal linking | Every hour | 1 note |
+| 🔗 Internal linking | Every hour | 1 inference request (visits many files, calls Gemini for 1) |
 
 🧮 This achieves up to **24 images** and **24 notes** processed per day — but spread across 24 gentle pulses instead of one aggressive burst.
 
@@ -61,7 +61,7 @@ date: 2026-03-24
 
 ### 🎯 Limiting Inference Requests, Not Files Scanned
 
-📁 The old approach limited the number of files scanned (`maxFiles`). The new approach limits the number of actual inference requests (`maxImages`). This is more precise — the system still scans all candidates to find the highest-priority one (newest first), but stops after completing one full generation cycle.
+📁 Both backfill pipelines limit **inference requests**, not files scanned. The image backfill scans all candidates to find the highest-priority one (newest first) but stops after one complete image generation cycle (`maxImages: 1`). The internal linking pipeline visits up to 100 files via BFS traversal, skipping already-analyzed files for free, but stops after one Gemini inference call (`maxInferenceRequests: 1`). This distinction matters — scanning file metadata costs nothing, but each API call consumes quota.
 
 ### 🔄 Null Values in Frontmatter
 
@@ -76,8 +76,9 @@ date: 2026-03-24
 | 📂 File | 📝 Change |
 |---|---|
 | `scripts/lib/blog-image.ts` | 🔧 Boolean regenerate_image, null field clearing, maxImages support |
+| `scripts/lib/internal-linking.ts` | 🎯 maxInferenceRequests limit, usedInference tracking in FileResult |
 | `scripts/lib/scheduler.ts` | ⏰ Hourly schedule for backfill and linking tasks |
-| `scripts/run-scheduled.ts` | 🎯 maxImages: 1, maxFiles: 1, 30s inter-task delay |
+| `scripts/run-scheduled.ts` | 🎯 maxImages: 1, maxInferenceRequests: 1, 30s inter-task delay |
 | `scripts/lib/blog-image.test.ts` | 🧪 Boolean tests, maxImages tests, fresh prompt on regeneration |
 | `scripts/lib/scheduler.test.ts` | 🧪 Updated for hourly scheduling |
 | `specs/scheduled-tasks.md` | 📋 Updated schedule table and rate limit documentation |

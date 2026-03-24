@@ -80,7 +80,7 @@
 | 🏷️ Task | 📈 Limit | 📝 Rationale |
 |---|---|---|
 | `backfill-blog-images` | 1 image per run | 🖼️ Each image requires ~2 inference calls (describe + generate) |
-| `internal-linking` | 1 note per run | 🔗 Each note requires ~1 Gemini call for book identification |
+| `internal-linking` | 1 inference request per run | 🔗 Visits many files but only calls Gemini for 1 un-analyzed file per hour |
 
 🔄 With hourly scheduling, this achieves up to 24 images and 24 notes processed per day while staying well within free-tier rate limits.
 

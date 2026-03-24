@@ -190,6 +190,8 @@ export interface FileResult {
   readonly modified: boolean;
   /** Whether the file was skipped (already analyzed) */
   readonly skipped: boolean;
+  /** Whether this file triggered an inference API call */
+  readonly usedInference: boolean;
 }
 
 /** Result of the full internal linking run */
@@ -210,8 +212,10 @@ export interface RunResult {
 export interface LinkingConfig {
   /** Root content directory (absolute path) */
   readonly contentDir: string;
-  /** Maximum number of files to edit */
+  /** Maximum number of files to visit during BFS traversal */
   readonly maxFiles: number;
+  /** Maximum number of files that trigger inference API calls (undefined = unlimited) */
+  readonly maxInferenceRequests?: number;
   /** Gemini API key (if omitted, skips AI validation and uses deterministic-only mode) */
   readonly apiKey?: string;
   /** Gemini model for validation */
@@ -956,7 +960,7 @@ export const processFile = async (
         file: relativePath,
       }),
     );
-    return { relativePath, linksAdded: 0, modified: false, skipped: true };
+    return { relativePath, linksAdded: 0, modified: false, skipped: true, usedInference: false };
   }
 
   const body = extractBody(content);
@@ -973,7 +977,7 @@ export const processFile = async (
     if (!config.dryRun) {
       recordLinkAnalysis(filePath, config.model, new Date().toISOString());
     }
-    return { relativePath, linksAdded: 0, modified: false, skipped: false };
+    return { relativePath, linksAdded: 0, modified: false, skipped: false, usedInference: false };
   }
 
   // Use Gemini to IDENTIFY which books are genuinely referenced
@@ -988,7 +992,7 @@ export const processFile = async (
   }
 
   if (identifiedPaths.length === 0) {
-    return { relativePath, linksAdded: 0, modified: false, skipped: false };
+    return { relativePath, linksAdded: 0, modified: false, skipped: false, usedInference: !!config.apiKey };
   }
 
   // Build a set of Gemini-identified books
@@ -1013,7 +1017,7 @@ export const processFile = async (
   const candidates = findLinkCandidates(contentForMatching, masked, identifiedIndex, existingLinks, relativePath, true);
 
   if (candidates.length === 0) {
-    return { relativePath, linksAdded: 0, modified: false, skipped: false };
+    return { relativePath, linksAdded: 0, modified: false, skipped: false, usedInference: !!config.apiKey };
   }
 
   // All candidates are Gemini-approved — apply all
@@ -1050,7 +1054,7 @@ export const processFile = async (
     }),
   );
 
-  return { relativePath, linksAdded: candidates.length, modified: true, skipped: false };
+  return { relativePath, linksAdded: candidates.length, modified: true, skipped: false, usedInference: true };
 };
 
 // --- Orchestration ---
@@ -1069,6 +1073,7 @@ export const run = async (config: LinkingConfig): Promise<RunResult> => {
       event: "internal_linking_start",
       contentDir: config.contentDir,
       maxFiles: config.maxFiles,
+      maxInferenceRequests: config.maxInferenceRequests,
       model: config.model,
       dryRun: config.dryRun,
       hasApiKey: !!config.apiKey,
@@ -1092,10 +1097,25 @@ export const run = async (config: LinkingConfig): Promise<RunResult> => {
   // Process each file sequentially (to respect Gemini rate limits)
   // QuotaExhaustedError halts the pipeline immediately
   const fileResults: FileResult[] = [];
+  let inferenceCount = 0;
   for (const relativePath of filesToVisit) {
     try {
       const result = await processFile(relativePath, config.contentDir, index, config);
       fileResults.push(result);
+      if (result.usedInference) {
+        inferenceCount++;
+        if (config.maxInferenceRequests != null && inferenceCount >= config.maxInferenceRequests) {
+          console.log(
+            JSON.stringify({
+              event: "max_inference_requests_reached",
+              inferenceCount,
+              maxInferenceRequests: config.maxInferenceRequests,
+              filesProcessed: fileResults.length,
+            }),
+          );
+          break;
+        }
+      }
     } catch (error) {
       if (error instanceof QuotaExhaustedError) {
         console.error(

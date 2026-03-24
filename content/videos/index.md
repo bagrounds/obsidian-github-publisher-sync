@@ -5,7 +5,7 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-03-23T22:45:49-07:00
+updated: 2026-03-24T08:08:22-07:00
 ---
 [Home](../index.md)  
 # 📺 Videos (709)  
@@ -458,7 +458,6 @@ updated: 2026-03-23T22:45:49-07:00
 - [🗣️🚪 Sen. Padilla gives remarks after forcible removal from Noem briefing](./watch-sen-padilla-gives-remarks-after-forcible-removal-from-noem-briefing.md)  
 - [🧑‍🤝‍🧑💰⛽ Sen. Whitehouse: «Trump is Moving Money from Pockets of Normal Americans to Fossil Fuel Megadonors»](./sen-whitehouse-trump-is-moving-money-from-pockets-of-normal-americans-to-fossil-fuel-megadonors.md)  
 - [📈💥❓➡️✅ Session 1, Part 1: Introduction: Most Startups Fail; How to Improve Your Odds](./session-1-part-1-introduction-most-startups-fail-how-to-improve-your-odds.md)  
-- [🎯📈🔍📊💼 Session 1, Part 2: Market Identification and Sales: Finding Your Customer](./session-1-part-2-market-identification-and-sales-finding-your-customer.md)  
 - [💰🚀💼 Session 2, Part 2: How Are You Going to Make Money? - The Business/Venture Model](./session-2-part-2-how-are-you-going-to-make-money-the-businessventure-model.md)  
 - [🗣️💡🚀 Session 4, Part 1: Presenting Your Venture](./session-4-part-1-presenting-your-venture.md)  
 - [👋👩‍💻🤖🚀 She quit, picked up AI, and shipped in 30 days what her team planned for Q3.](./she-quit-picked-up-ai-and-shipped-in-30-days-what-her-team-planned-for-q3.md)  

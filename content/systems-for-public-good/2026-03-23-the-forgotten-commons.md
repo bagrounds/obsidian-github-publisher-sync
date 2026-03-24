@@ -3,10 +3,14 @@ aliases:
   - 2026-03-23 | 🏛️ The Forgotten Commons — Why Public Good Matters More Than Ever 🏛️
 title: 2026-03-23 | 🏛️ The Forgotten Commons — Why Public Good Matters More Than Ever 🏛️
 share: true
-updated: 2026-03-24T04:38:29.952Z
-image_date: 2026-03-24T00:05:44.864Z
+updated: 2026-03-24T14:28:01.710Z
+image_date: 2026-03-24T06:32:41.383Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
-regenerate_image: true
+regenerate_image: "false"
+image_prompt: "A classical-style stone archway, weathered and subtly crumbling, with patches of dry moss and ivy suggesting neglect. Through the arch, a soft-focus background reveals glimpses of diverse, slightly faded public infrastructure: a quiet park path, a distant library dome, and the silhouette of old power lines. From the base and cracks of the arch, luminous, vibrant green shoots and small, delicate wildflowers are emerging, glowing with an internal light. The overall scene is bathed in a blend of soft, melancholic twilight shadows and warm, hopeful dawn light on the new growth, symbolizing renewal amidst decay."
+force_analyze_links: false
+link_analysis_time: 2026-03-24T07:49:40.354Z
+link_analysis_model: gemini-3.1-flash-lite-preview
 ---
 [🏡 Home](../index.md) > [🏛️ Systems for Public Good](./index.md)  
 # 2026-03-23 | 🏛️ The Forgotten Commons — Why Public Good Matters More Than Ever 🏛️  

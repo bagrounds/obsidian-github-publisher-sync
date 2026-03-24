@@ -15,7 +15,7 @@ tags:
   - root-cause-analysis
   - typescript
   - atproto
-updated: 2026-03-23T17:38:31.708Z
+updated: 2026-03-24T06:33:04.554Z
 image_date: 2026-03-23T17:31:57.089Z
 image_model: black-forest-labs/FLUX.1-schnell
 image_prompt: A high-contrast, minimalist digital illustration featuring a stylized, blue holographic butterfly—representing the Bluesky platform—trapped inside a glowing glass server rack. The butterfly is glowing softly, casting light onto a series of digital file folders floating nearby, many of which are marked with ominous, red 404 stamps. In the foreground, a sleek, robotic magnifying glass hovers over a broken data stream, bridging the gap between a jagged, crumbling traditional web architecture (represented by stone-like HTTP status blocks) and a modern, fluid fiber-optic network. The color palette relies on deep navy, electric blue, and crisp white, with sharp, clinical lines that evoke a sense of high-tech debugging and architectural investigation. The scene captures the friction between legacy web status codes and the dynamic, invisible nature of modern single-page applications.

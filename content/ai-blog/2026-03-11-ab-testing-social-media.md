@@ -16,7 +16,7 @@ tags:
   - functional-programming
   - typescript
   - automation
-updated: 2026-03-23T17:38:31.708Z
+updated: 2026-03-24T06:33:04.554Z
 image_date: 2026-03-23T17:34:22.294Z
 image_model: black-forest-labs/FLUX.1-schnell
 image_prompt: A split-screen composition illustrating the concept of A/B testing in a digital landscape. The left side is a cool, monochromatic blue, featuring a minimalist, geometric robot head observing a simple, static bar chart. The right side is a warm, vibrant orange, showing the same robot head looking through a magnifying glass at a more complex, organic, and ascending data curve that transitions into a question mark. Between the two sides, a stylized metallic coin is caught in mid-air mid-flip, glowing with a soft, ethereal light. The background is a clean, dark slate, suggesting a high-tech laboratory environment. The visual style is sleek and modern, utilizing sharp vectors and clean lines to represent the precision of statistical experimentation and the duality of AI prompt optimization.

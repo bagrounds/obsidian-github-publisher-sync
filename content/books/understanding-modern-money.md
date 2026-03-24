@@ -57,8 +57,8 @@ Wray's work is grounded in historical analysis 🕰️ and institutional economi
 #### Additional Book Recommendations 📚✨  
 * **Best Alternate Book on the Same Topic:** "[The Deficit Myth](./the-deficit-myth.md)" by Stephanie Kelton. This book provides a more accessible introduction to MMT. 🔄💡  
 * **Best Tangentially Related Book:** [🏛️💰 Debt: The First 5,000 Years](./debt-the-first-5000-years.md) by David Graeber. This book explores the social and historical context of debt and money. 🔗📜  
-* **Best Diametrically Opposed Book:** "The Road to Serfdom" by F.A. Hayek. This book advocates for free markets and limited government intervention, contrasting sharply with MMT. ⚔️🚫  
-* **Best Fiction Book Incorporating Related Ideas:** "The Ministry for the Future" by Kim Stanley Robinson. This novel explores economic and environmental solutions, including concepts related to monetary reform. 📖🌍  
+* **Best Diametrically Opposed Book:** The Road to Serfdom by F.A. Hayek. This book advocates for free markets and limited government intervention, contrasting sharply with MMT. ⚔️🚫  
+* **Best Fiction Book Incorporating Related Ideas:** The Ministry for the Future by Kim Stanley Robinson. This novel explores economic and environmental solutions, including concepts related to monetary reform. 📖🌍  
 * **Best More General Book:** "Economics: The User's Guide" by Ha-Joon Chang. This book provides a broad overview of different economic schools of thought. 🌐📚  
 * **Best More Specific Book:** "Monetary Economics: An Integrated Approach to Credit, Money, Income, Production and Wealth" by Wynne Godley and Marc Lavoie. This book provides a more rigorous and technical analysis of monetary economics. 📈📊  
 * **Best More Accessible Book:** "Money: The True Story of a Made-Up Thing" by Jacob Goldstein. This book explains the concept of money in an easy to understand way. 💡📖  

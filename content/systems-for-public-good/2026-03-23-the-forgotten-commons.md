@@ -3,7 +3,7 @@ aliases:
   - 2026-03-23 | 🏛️ The Forgotten Commons — Why Public Good Matters More Than Ever 🏛️
 title: 2026-03-23 | 🏛️ The Forgotten Commons — Why Public Good Matters More Than Ever 🏛️
 share: true
-updated: 2026-03-24T14:28:01.710Z
+updated: 2026-03-24T16:24:18.213Z
 image_date: 2026-03-24T06:32:41.383Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 regenerate_image: "false"

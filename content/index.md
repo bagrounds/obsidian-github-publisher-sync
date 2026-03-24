@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-03-23T22:00:50-07:00
+updated: 2026-03-23T22:37:57-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -59,7 +59,9 @@ updated: 2026-03-23T22:00:50-07:00
 - [🔁🤪 Catch-22](./books/catch-22.md)  
   
   
-## [📺 Videos](./videos/index.md) (706)  
+## [📺 Videos](./videos/index.md) (708)  
+- [💰🚀💼 Session 2, Part 2: How Are You Going to Make Money? - The Business/Venture Model](./videos/session-2-part-2-how-are-you-going-to-make-money-the-businessventure-model.md)  
+- [3️⃣1️⃣⚖️🏛️ Session 3, Part 1: Legal Issues](./videos/session-3-part-1-legal-issues.md)  
 - [🎯📈🔍📊💼 Session 1, Part 2: Market Identification and Sales: Finding Your Customer](./videos/session-1-part-2-market-identification-and-sales-finding-your-customer.md)  
 - [📈💥❓➡️✅ Session 1, Part 1: Introduction: Most Startups Fail; How to Improve Your Odds](./videos/session-1-part-1-introduction-most-startups-fail-how-to-improve-your-odds.md)  
 - [👮🚔🕵️ Police Stings: Last Week Tonight with John Oliver (HBO)](./videos/police-stings-last-week-tonight-with-john-oliver-hbo.md)  
@@ -68,8 +70,6 @@ updated: 2026-03-23T22:00:50-07:00
 - [🌿🤖🛰️ These AI Devices Protect Nature in Real Time | Juan M. Lavista Ferres | TED](./videos/these-ai-devices-protect-nature-in-real-time-juan-m-lavista-ferres-ted.md)  
 - [💰💥🇮🇷🇺🇸 Brooks and Capehart on Trump struggling to contain economic fallout of Iran war](./videos/brooks-and-capehart-on-trump-struggling-to-contain-economic-fallout-of-iran-war.md)  
 - [😠🗣️🔥🌍🗣️🧖 Alexander Stubb on «difficult» conversations with Trump, global «disorder» and sauna diplomacy](./videos/alexander-stubb-on-difficult-conversations-with-trump-global-disorder-and-sauna-diplomacy.md)  
-- [💡🧠📈💰 The Smartest Way To Turn Your Expertise Into $1M](./videos/the-smartest-way-to-turn-your-expertise-into-1m.md)  
-- [🧠💰📈 The psychology of making money](./videos/the-psychology-of-making-money.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  

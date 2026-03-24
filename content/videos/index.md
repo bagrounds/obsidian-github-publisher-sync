@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-03-23T22:00:50-07:00
+updated: 2026-03-23T22:37:57-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (706)  
+# 📺 Videos (708)  
 - [💰🤑🤖💡🚀💲 $0.10/Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
@@ -23,6 +23,7 @@ updated: 2026-03-23T22:00:50-07:00
 - [😴⬇️⚡ 22: The Power of the Downstate, Optimizing Sleep and Recovery | Sara Mednick, PhD](./22-the-power-of-the-downstate-optimizing-sleep-and-recovery-sara-mednick-phd.md)  
 - [2️⃣⬆️🧠👩‍🚀 Double Your Productivity using this ADHD System (Invented by a Space Systems Engineer)](./double-your-productivity-using-this-adhd-system-invented-by-a-space-systems-engineer.md)  
 - [🤖💻📈⬇️2️⃣ The 5 Levels of AI Coding (Why Most of You Won't Make It Past Level 2)](./the-5-levels-of-ai-coding-why-most-of-you-wont-make-it-past-level-2.md)  
+- [3️⃣1️⃣⚖️🏛️ Session 3, Part 1: Legal Issues](./session-3-part-1-legal-issues.md)  
 - [🏋️🤕🛑 3 Causes Of Pain In Shoulder Doing Push-ups +Tips To Stop Your Shoulder From Hurting With Push-ups](./3-causes-of-pain-in-shoulder-doing-push-ups-tips-to-stop-your-shoulder-from-hurting-with-push-ups.md)  
 - [🪜📈🏢 3 High Leverage Career Skills (From a Principal At Amazon)](./3-high-leverage-career-skills-from-a-principal-at-amazon.md)  
 - [❓🤖🧑‍💻🧑‍🤝‍🧑 45 People, $200M Revenue. The Question Nobody's Asking About AI and Your Team Size.](./45-people-200m-revenue-the-question-nobodys-asking-about-ai-and-your-team-size.md)  
@@ -458,6 +459,7 @@ updated: 2026-03-23T22:00:50-07:00
 - [🧑‍🤝‍🧑💰⛽ Sen. Whitehouse: «Trump is Moving Money from Pockets of Normal Americans to Fossil Fuel Megadonors»](./sen-whitehouse-trump-is-moving-money-from-pockets-of-normal-americans-to-fossil-fuel-megadonors.md)  
 - [📈💥❓➡️✅ Session 1, Part 1: Introduction: Most Startups Fail; How to Improve Your Odds](./session-1-part-1-introduction-most-startups-fail-how-to-improve-your-odds.md)  
 - [🎯📈🔍📊💼 Session 1, Part 2: Market Identification and Sales: Finding Your Customer](./session-1-part-2-market-identification-and-sales-finding-your-customer.md)  
+- [💰🚀💼 Session 2, Part 2: How Are You Going to Make Money? - The Business/Venture Model](./session-2-part-2-how-are-you-going-to-make-money-the-businessventure-model.md)  
 - [👋👩‍💻🤖🚀 She quit, picked up AI, and shipped in 30 days what her team planned for Q3.](./she-quit-picked-up-ai-and-shipped-in-30-days-what-her-team-planned-for-q3.md)  
 - [🏃🦵🤕 SHIN SPLINTS for Runners: Challenges, Causes, and Rehab](./shin-splints-for-runners-challenges-causes-and-rehab.md)  
 - [🧑‍💻📈⏩ SIGGRAPH Thesis Fast Forward 2025](./siggraph-thesis-fast-forward-2025.md)  

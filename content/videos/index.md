@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-03-23T21:20:37-07:00
+updated: 2026-03-23T22:00:50-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (705)  
+# 📺 Videos (706)  
 - [💰🤑🤖💡🚀💲 $0.10/Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
@@ -457,6 +457,7 @@ updated: 2026-03-23T21:20:37-07:00
 - [🗣️🚪 Sen. Padilla gives remarks after forcible removal from Noem briefing](./watch-sen-padilla-gives-remarks-after-forcible-removal-from-noem-briefing.md)  
 - [🧑‍🤝‍🧑💰⛽ Sen. Whitehouse: «Trump is Moving Money from Pockets of Normal Americans to Fossil Fuel Megadonors»](./sen-whitehouse-trump-is-moving-money-from-pockets-of-normal-americans-to-fossil-fuel-megadonors.md)  
 - [📈💥❓➡️✅ Session 1, Part 1: Introduction: Most Startups Fail; How to Improve Your Odds](./session-1-part-1-introduction-most-startups-fail-how-to-improve-your-odds.md)  
+- [🎯📈🔍📊💼 Session 1, Part 2: Market Identification and Sales: Finding Your Customer](./session-1-part-2-market-identification-and-sales-finding-your-customer.md)  
 - [👋👩‍💻🤖🚀 She quit, picked up AI, and shipped in 30 days what her team planned for Q3.](./she-quit-picked-up-ai-and-shipped-in-30-days-what-her-team-planned-for-q3.md)  
 - [🏃🦵🤕 SHIN SPLINTS for Runners: Challenges, Causes, and Rehab](./shin-splints-for-runners-challenges-causes-and-rehab.md)  
 - [🧑‍💻📈⏩ SIGGRAPH Thesis Fast Forward 2025](./siggraph-thesis-fast-forward-2025.md)  

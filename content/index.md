@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-03-23T21:20:37-07:00
+updated: 2026-03-23T22:00:50-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -47,6 +47,9 @@ updated: 2026-03-23T21:20:37-07:00
   
   
 ## [📚 Books](./books/index.md) (958)  
+- [📺💀 Amusing Ourselves to Death: Public Discourse in the Age of Show Business](./books/amusing-ourselves-to-death-public-discourse-in-the-age-of-show-business.md)  
+- [🤖📈 The Second Machine Age: Work, Progress, and Prosperity in a Time of Brilliant Technologies](./books/the-second-machine-age-work-progress-and-prosperity-in-a-time-of-brilliant-technologies.md)  
+- [⚡🔮🤖 Power and Prediction: The Disruptive Economics of Artificial Intelligence](./books/power-and-prediction-the-disruptive-economics-of-artificial-intelligence.md)  
 - [👂📱🐾🌿 The Sounds of Life: How Digital Technology Is Bringing Us Closer to the Worlds of Animals and Plants](./books/the-sounds-of-life-how-digital-technology-is-bringing-us-closer-to-the-worlds-of-animals-and-plants.md)  
 - [🏍️🧘❓ Zen and the Art of Motorcycle Maintenance: An Inquiry into Values](./books/zen-and-the-art-of-motorcycle-maintenance-an-inquiry-into-values.md)  
 - [📈⚙️♾️ The Goal: A Process of Ongoing Improvement](./books/the-goal.md)  
@@ -54,12 +57,10 @@ updated: 2026-03-23T21:20:37-07:00
 - [📈🏛️🏫 The New Economics: For Industry, Government, Education](./books/the-new-economics.md)  
 - [📉⬆️ Out Of The Crisis](./books/out-of-the-crisis.md)  
 - [🔁🤪 Catch-22](./books/catch-22.md)  
-- [⚡🚫💭 Blink: The Power of Thinking Without Thinking](./books/blink-the-power-of-thinking-without-thinking.md)  
-- [🔮🤷🏼‍♀️🤪 Predictably Irrational: The Hidden Forces That Shape Our Decisions](./books/predictably-irrational.md)  
-- [🪖🎨 The War of Art: Break Through the Blocks and Win Your Inner Creative Battles](./books/the-war-of-art.md)  
   
   
-## [📺 Videos](./videos/index.md) (705)  
+## [📺 Videos](./videos/index.md) (706)  
+- [🎯📈🔍📊💼 Session 1, Part 2: Market Identification and Sales: Finding Your Customer](./videos/session-1-part-2-market-identification-and-sales-finding-your-customer.md)  
 - [📈💥❓➡️✅ Session 1, Part 1: Introduction: Most Startups Fail; How to Improve Your Odds](./videos/session-1-part-1-introduction-most-startups-fail-how-to-improve-your-odds.md)  
 - [👮🚔🕵️ Police Stings: Last Week Tonight with John Oliver (HBO)](./videos/police-stings-last-week-tonight-with-john-oliver-hbo.md)  
 - [🇺🇸🗣️🏛️ American Conversations: Senator Jon Ossoff](./videos/american-conversations-senator-jon-ossoff.md)  
@@ -69,7 +70,6 @@ updated: 2026-03-23T21:20:37-07:00
 - [😠🗣️🔥🌍🗣️🧖 Alexander Stubb on «difficult» conversations with Trump, global «disorder» and sauna diplomacy](./videos/alexander-stubb-on-difficult-conversations-with-trump-global-disorder-and-sauna-diplomacy.md)  
 - [💡🧠📈💰 The Smartest Way To Turn Your Expertise Into $1M](./videos/the-smartest-way-to-turn-your-expertise-into-1m.md)  
 - [🧠💰📈 The psychology of making money](./videos/the-psychology-of-making-money.md)  
-- [🤖🤝🏛️ AI and Democracy (Chris Bail at Lake Como Lectures on Democracy)](./videos/ai-and-democracy-chris-bail-at-lake-como-lectures-on-democracy.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  

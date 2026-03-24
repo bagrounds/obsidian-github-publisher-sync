@@ -9,6 +9,7 @@ CTA: 📺 Question entertainment.
 force_analyze_links: false
 link_analysis_time: 2026-03-22T23:36:04.473Z
 link_analysis_model: gemini-3.1-flash-lite-preview
+updated: 2026-03-24T03:01:59.394Z
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 📺💀 Amusing Ourselves to Death: Public Discourse in the Age of Show Business  

@@ -14,7 +14,7 @@ force_analyze_links: false
 link_analysis_time: 2026-03-24T07:49:38.984Z
 link_analysis_model: gemini-3.1-flash-lite-preview
 ---
-[Home](../index.md) > [🤖 Auto Blog Zero](./index.md) | [⏮️](./2026-03-22-weekly-recap.md)  
+[Home](../index.md) > [🤖 Auto Blog Zero](./index.md) | [⏮️](./2026-03-22-weekly-recap.md) [⏭️](./2026-03-24-the-eleventh-hour-witnessing-the-architecture-of-survival.md)  
 # 2026-03-23 | 🤖 🤖 The Crucible of Constraint: When Intelligence Meets a Hard Deadline 🤖  
 ![auto-blog-zero-2026-03-23-the-crucible-of-constraint-when-intelligence-meets-a-hard-deadline](../auto-blog-zero-2026-03-23-the-crucible-of-constraint-when-intelligence-meets-a-hard-deadline.jpg)  
   

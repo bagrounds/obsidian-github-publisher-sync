@@ -2,7 +2,7 @@
 
 🏗️ A publishing pipeline that transforms an [Obsidian](https://obsidian.md) vault into a public website at [bagrounds.org](https://bagrounds.org/). 🔄 Content flows one way: from the Obsidian vault (source of truth) on a mobile device, through the [Enveloppe](https://github.com/Enveloppe/obsidian-enveloppe) plugin, into this GitHub repository, and out to GitHub Pages via [Quartz](https://quartz.jzhao.xyz/).
 
-🤖 On top of this static publishing layer, a suite of **GitHub Actions workflows** adds AI-powered features: daily blog generation, social media posting, internal linking, image generation, and comment injection — all without ever writing back to the git repository.
+🤖 On top of this static publishing layer, **two GitHub Actions workflows** power all AI-powered features: a single hourly scheduler for blog generation, social media posting, internal linking, and image generation — plus a deploy workflow for building and publishing the site. All scheduling logic lives in TypeScript, not YAML.
 
 ## 🌐 Architecture Overview
 
@@ -15,7 +15,7 @@
                                   ┌───────────────────────┼──────────────────┐
                                   │                       │                  │
                             GitHub Actions          GitHub Pages         Giscus
-                            (7 workflows)          (Quartz SSG)       (comments)
+                            (2 workflows)          (Quartz SSG)       (comments)
                                   │                       │                  │
                     ┌─────────────┼─────────────┐         │                  │
                     │             │             │          │                  │
@@ -63,34 +63,24 @@
 
 🔄 Triggers on push to `main`. 🏗️ Builds the Quartz site, injects static Giscus comments for SEO, and deploys to GitHub Pages.
 
-### 2. 📝 Auto Blog Zero (`auto-blog-zero.yml`)
+### 2. ⏰ Scheduled Tasks (`scheduled.yml`)
 
-⏰ Daily at 8:00 AM PT. 🤖 Generates a new blog post using Gemini AI based on the author's recent reflections and GitHub Discussions. 🖼️ Optionally generates a cover image using Cloudflare Workers AI (FLUX.1 Schnell). 📤 Syncs the post back to the Obsidian vault.
+🕐 Runs hourly. 🧠 A TypeScript scheduler (`scripts/lib/scheduler.ts`) determines which tasks to run based on the current UTC hour. The single entry point (`scripts/run-scheduled.ts`) orchestrates all automation:
 
-### 3. 🐔 Chickie Loo (`chickie-loo.yml`)
-
-⏰ Daily at 7:00 AM PT. 🐣 Same architecture as Auto Blog Zero but with a chicken-keeping themed personality and priority user.
-
-### 4. 🏛️ Systems for Public Good (`systems-for-public-good.yml`)
-
-⏰ Daily at 9:00 AM PT. 🏛️ AI-generated blog about democracy, public goods, and collective well-being. Uses `gemini-2.5-flash` with Google Search grounding to reference current events from high-quality sources (NPR, PBS, AP, Reuters). Explores positive and negative freedom, modern monetary theory, systems thinking, and the abundance mindset.
-
-### 5. 📢 Auto Post to Social Media (`tweet-reflection.yml`)
-
-⏰ Every 2 hours. 🔍 Uses BFS from the most recent reflection to discover unposted content. 📱 Posts to Twitter/X, Bluesky, and Mastodon with platform-specific formatting and length limits. 🤖 Uses Gemini to generate engaging summaries. 📊 Tracks posted status via frontmatter sections in the Obsidian vault.
-
-### 6. 🔗 Internal Linking (`internal-linking.yml`)
-
-⏰ Daily at 11:30 PM PT. 📥 Pulls the Obsidian vault, uses Gemini AI to identify genuine book references in content files, inserts wikilinks, and pushes changes back to the vault. 📊 BFS traversal from the most recent reflection with incremental analysis tracking via `link_analysis_model` and `link_analysis_time` frontmatter. 📱 Operates directly on the vault — never writes to `content/`.
-
-### 7. 🖼️ Backfill Blog Images (`backfill-blog-images.yml`)
-
-⏰ Daily at 10:00 PM PT. 🔍 Finds blog posts missing cover images and generates them using a two-stage pipeline: Gemini describes the image → Cloudflare FLUX.1 Schnell generates it.
+| ⏰ UTC Hour | 🏷️ Task | 📝 Description |
+|---|---|---|
+| 15 | 🐔 Chickie Loo | 🐣 AI blog post with chicken-keeping personality |
+| 16 | 🤖 Auto Blog Zero | 📝 AI blog post based on reflections and discussions |
+| 17 | 🏛️ Systems for Public Good | 🏛️ AI blog with Google Search grounding for current events |
+| 6 | 🖼️ Backfill Blog Images | 🔍 Generate missing cover images for all blog posts |
+| 8 | 🔗 Internal Linking | 📥 BFS-driven wikilink insertion in Obsidian vault |
+| Even hours | 📢 Social Posting | 📱 Discover and post unposted content to X/Bluesky/Mastodon |
 
 ## 🧩 Key Scripts
 
 | 📜 Script | 📝 Purpose |
 |---|---|
+| `scripts/run-scheduled.ts` | ⏰ Consolidated entry point — determines and runs tasks based on UTC hour |
 | `scripts/internal-linking.ts` | 🔗 CLI for BFS-driven wikilink insertion |
 | `scripts/generate-blog-post.ts` | 📝 AI blog post generation |
 | `scripts/generate-blog-image.ts` | 🖼️ AI cover image generation |
@@ -107,6 +97,7 @@
 
 | 📦 Module | 📝 Purpose |
 |---|---|
+| `scheduler.ts` | ⏰ Pure scheduling logic — maps UTC hours to task IDs |
 | `internal-linking.ts` | 🔗 BFS traversal, Gemini book identification, wikilink insertion |
 | `blog-image.ts` | 🖼️ Image generation pipeline (Cloudflare + Gemini) |
 | `blog-series.ts` | 📝 Blog post generation with series context |
@@ -261,6 +252,7 @@ GEMINI_API_KEY=... npx tsx scripts/check-gemini-quota.ts
 
 | 📄 Spec | 📝 Description |
 |---|---|
+| [`scheduled-tasks.md`](specs/scheduled-tasks.md) | ⏰ Consolidated task scheduler — hourly cron, TypeScript scheduling logic, task pipelines |
 | [`image-generation.md`](specs/image-generation.md) | 🖼️ Image generation pipeline — architecture, provider resolution, frontmatter schema, rate limiting, backfill prioritization |
 | [`daily-reflection.md`](specs/daily-reflection.md) | 📝 Daily reflection auto-update — template-based creation, series section insertion, post linking, workflow integration |
 | [`systems-for-public-good.md`](specs/systems-for-public-good.md) | 🏛️ Systems for Public Good blog series — democracy, public goods, grounding with Google Search, editorial guidelines |

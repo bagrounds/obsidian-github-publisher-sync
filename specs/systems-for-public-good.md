@@ -95,7 +95,7 @@ systems-for-public-good/
 
 ## ⚙️ Configuration
 
-### 🔧 Workflow: `.github/workflows/systems-for-public-good.yml`
+### 🔧 Workflow: `.github/workflows/scheduled.yml` (consolidated)
 
 | Variable | Default | Purpose |
 |----------|---------|---------|

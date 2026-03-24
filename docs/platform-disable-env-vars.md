@@ -37,7 +37,7 @@ code (in `main()` and `getConfiguredPlatforms()`) to skip that platform entirely
 
 ## GitHub Actions Configuration
 
-The workflow (`.github/workflows/tweet-reflection.yml`) passes these env vars from
+The workflow (`.github/workflows/scheduled.yml`) passes these env vars from
 GitHub repository variables:
 
 ```yaml

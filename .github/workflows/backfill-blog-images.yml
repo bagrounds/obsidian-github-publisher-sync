@@ -64,6 +64,10 @@ jobs:
           CLOUDFLARE_IMAGE_MODEL: ${{ vars.CLOUDFLARE_IMAGE_MODEL || '@cf/black-forest-labs/flux-1-schnell' }}
           HUGGINGFACE_API_TOKEN: ${{ secrets.HUGGINGFACE_API_TOKEN }}
           HUGGINGFACE_IMAGE_MODEL: ${{ vars.HUGGINGFACE_IMAGE_MODEL || 'black-forest-labs/FLUX.1-schnell' }}
+          TOGETHER_API_TOKEN: ${{ secrets.TOGETHER_API_TOKEN }}
+          TOGETHER_IMAGE_MODEL: ${{ vars.TOGETHER_IMAGE_MODEL || 'black-forest-labs/FLUX.1-schnell-Free' }}
+          POLLINATIONS_ENABLED: "true"
+          POLLINATIONS_IMAGE_MODEL: ${{ vars.POLLINATIONS_IMAGE_MODEL || 'flux' }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           IMAGE_GEMINI_MODEL: ${{ vars.IMAGE_GEMINI_MODEL || 'gemini-3.1-flash-image-preview' }}
           PROMPT_DESCRIBER_MODEL: ${{ vars.PROMPT_DESCRIBER_MODEL || 'gemini-3.1-flash-lite-preview' }}

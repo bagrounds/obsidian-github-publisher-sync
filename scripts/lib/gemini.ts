@@ -22,7 +22,7 @@
  */
 
 import type { ReflectionData } from "./types.ts";
-import { DEFAULT_GEMINI_MODEL, DEFAULT_QUESTION_MODEL, BLUESKY_MAX_LENGTH } from "./types.ts";
+import { DEFAULT_GEMINI_MODEL, DEFAULT_QUESTION_MODEL, BLUESKY_MAX_LENGTH, geminiModelFallback } from "./types.ts";
 import {
   buildTagsPrompt,
   buildQuestionPrompt,
@@ -132,8 +132,24 @@ export async function generatePostWithGemini(
   const { GoogleGenerativeAI } = await import("@google/generative-ai");
   const genAI = new GoogleGenerativeAI(apiKey);
 
-  const tagsModel = genAI.getGenerativeModel({ model: tagsModelName });
-  const questionModel = genAI.getGenerativeModel({ model: questionModelName });
+  const callWithFallback = async (
+    modelName: string,
+    prompt: PromptPair,
+    label: string,
+  ): Promise<string> => {
+    try {
+      const model = genAI.getGenerativeModel({ model: modelName });
+      return await callGemini(model, prompt, `${label}/${modelName}`);
+    } catch (error) {
+      const fallback = geminiModelFallback(modelName);
+      if (fallback) {
+        console.warn(`⚠️ ${modelName} failed, falling back to ${fallback}`);
+        const fallbackModel = genAI.getGenerativeModel({ model: fallback });
+        return await callGemini(fallbackModel, prompt, `${label}/${fallback}`);
+      }
+      throw error;
+    }
+  };
 
   const tagsPrompt = buildTagsPrompt(reflection);
   const questionPrompt = buildQuestionPrompt(reflection);
@@ -142,8 +158,8 @@ export async function generatePostWithGemini(
   console.log(`  ❓ Question model: ${questionModelName}`);
 
   const [tags, question] = await Promise.all([
-    callGemini(tagsModel, tagsPrompt, `tags/${tagsModelName}`),
-    callGemini(questionModel, questionPrompt, `question/${questionModelName}`),
+    callWithFallback(tagsModelName, tagsPrompt, "tags"),
+    callWithFallback(questionModelName, questionPrompt, "question"),
   ]);
 
   const modelOutput = `${question}\n${tags}`;
@@ -155,7 +171,7 @@ export async function generatePostWithGemini(
     const SHORTEN_SAFETY_BUFFER = 10;
     console.log(`  ✂️ Post exceeds Bluesky limit by ${overage} graphemes — asking LLM to shorten question...`);
     const shortenPrompt = buildShortenQuestionPrompt(question, overage + SHORTEN_SAFETY_BUFFER);
-    const shortenedQuestion = await callGemini(questionModel, shortenPrompt, `shorten/${questionModelName}`);
+    const shortenedQuestion = await callWithFallback(questionModelName, shortenPrompt, "shorten");
     const shortenedOutput = `${shortenedQuestion.trim()}\n${tags}`;
     text = assemblePost(shortenedOutput, reflection);
     console.log(`  ✅ Shortened: ${countGraphemes(text)} graphemes (was ${countGraphemes(assemblePost(modelOutput, reflection))})`);

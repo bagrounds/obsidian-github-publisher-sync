@@ -33,14 +33,14 @@
               │ blog-image.ts │  ← Core library
               └───────┬───────┘
                       │
-          ┌───────────┼───────────┬───────────┐
-          ▼           ▼           ▼           ▼
-    ┌──────────┐ ┌──────────┐ ┌─────────┐ ┌──────────┐
-    │Cloudflare│ │ Hugging  │ │ Gemini  │ │ Imagen   │
-    │ Workers  │ │ Face     │ │ Flash   │ │ API      │
-    │ AI       │ │ Inference│ │ (desc+  │ │          │
-    │          │ │ API      │ │  image) │ │          │
-    └──────────┘ └──────────┘ └─────────┘ └──────────┘
+          ┌───────────┼───────────┬──────────┬──────────┬───────────┐
+          ▼           ▼           ▼          ▼          ▼           ▼
+    ┌──────────┐ ┌──────────┐ ┌─────────┐ ┌─────────┐ ┌─────────┐ ┌──────────┐
+    │Cloudflare│ │ Hugging  │ │Together│ │Pollinat│ │ Gemini  │ │ Imagen   │
+    │ Workers  │ │ Face     │ │ AI     │ │ -ions  │ │ Flash   │ │ API      │
+    │ AI       │ │ Inference│ │ (FLUX  │ │ .ai    │ │ (desc+  │ │          │
+    │          │ │ API      │ │  free) │ │ (free) │ │  image) │ │          │
+    └──────────┘ └──────────┘ └─────────┘ └─────────┘ └─────────┘ └──────────┘
 ```
 
 ---
@@ -96,8 +96,10 @@
 |----------|----------|-------------------|---------------------|
 | 1️⃣ | Cloudflare Workers AI | `CLOUDFLARE_API_TOKEN` + `CLOUDFLARE_ACCOUNT_ID` | `@cf/black-forest-labs/flux-1-schnell` |
 | 2️⃣ | Hugging Face Inference API | `HUGGINGFACE_API_TOKEN` | `black-forest-labs/FLUX.1-schnell` |
-| 3️⃣ | Google Gemini | `GEMINI_API_KEY` | `gemini-3.1-flash-image-preview` |
-| 4️⃣ | Google Imagen | `GEMINI_API_KEY` + `IMAGE_GEMINI_MODEL=imagen-*` | N/A (explicit) |
+| 3️⃣ | Together AI | `TOGETHER_API_TOKEN` | `black-forest-labs/FLUX.1-schnell-Free` |
+| 4️⃣ | Pollinations.ai | `POLLINATIONS_ENABLED=true` (no API key needed) | `flux` |
+| 5️⃣ | Google Gemini | `GEMINI_API_KEY` | `gemini-3.1-flash-image-preview` |
+| 6️⃣ | Google Imagen | `GEMINI_API_KEY` + `IMAGE_GEMINI_MODEL=imagen-*` | N/A (explicit) |
 
 ### 🔗 Provider Chain (Fallback Behavior)
 
@@ -106,7 +108,9 @@
 ```
 Provider 1 (Cloudflare) → quota exhausted → switch to →
 Provider 2 (Hugging Face) → quota exhausted → switch to →
-Provider 3 (Gemini) → quota exhausted → stop job
+Provider 3 (Together AI) → quota exhausted → switch to →
+Provider 4 (Pollinations.ai) → quota exhausted → switch to →
+Provider 5 (Gemini) → quota exhausted → stop job
 ```
 
 📋 Key behaviors:
@@ -117,11 +121,13 @@ Provider 3 (Gemini) → quota exhausted → stop job
 
 ### 💭 Description Provider (Optional)
 
-| Provider | Required Env Vars | Model Default |
-|----------|-------------------|---------------|
-| ✨ Gemini Describer | `GEMINI_API_KEY` | `gemini-3.1-flash-lite-preview` |
+| Provider | Required Env Vars | Model Default | Fallback Model |
+|----------|-------------------|---------------|----------------|
+| ✨ Gemini Describer | `GEMINI_API_KEY` | `gemini-3.1-flash-lite-preview` | `gemini-2.5-flash` |
 
 🔑 The describer is available whenever `GEMINI_API_KEY` is set, regardless of which image provider is used.
+
+🔄 **Model fallback**: When `gemini-3.1-flash-lite-preview` fails, the describer automatically retries with `gemini-2.5-flash` before propagating the error.
 
 ---
 

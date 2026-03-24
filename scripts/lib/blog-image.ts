@@ -5,6 +5,7 @@ import yaml from "js-yaml";
 
 import { parseFrontmatter } from "./frontmatter.ts";
 import { stripEmbedSections, todayPacific } from "./blog-prompt.ts";
+import { geminiModelFallback } from "./types.ts";
 
 const IMAGE_EXTENSIONS = /\.(jpg|jpeg|png|gif|webp)$/i;
 const OBSIDIAN_IMAGE_EMBED = /!\[\[(?:attachments\/)?[^\]]+\.(jpg|jpeg|png|gif|webp)\]\]/i;
@@ -397,13 +398,24 @@ export const describeImageWithGemini = async (
   const { GoogleGenAI } = await import("@google/genai");
   const ai = new GoogleGenAI({ apiKey });
 
-  const response = await ai.models.generateContent({
-    model,
-    contents: `${IMAGE_DESCRIPTION_SYSTEM_PROMPT}\n\n${content}`,
-  });
+  const attemptGeneration = async (modelName: string): Promise<string> => {
+    const response = await ai.models.generateContent({
+      model: modelName,
+      contents: `${IMAGE_DESCRIPTION_SYSTEM_PROMPT}\n\n${content}`,
+    });
+    return (response.text ?? "").trim();
+  };
 
-  const text = response.text ?? "";
-  return text.trim();
+  try {
+    return await attemptGeneration(model);
+  } catch (error) {
+    const fallback = geminiModelFallback(model);
+    if (fallback) {
+      console.warn(`⚠️ ${model} failed for image description, falling back to ${fallback}`);
+      return await attemptGeneration(fallback);
+    }
+    throw error;
+  }
 };
 
 export const makeGeminiDescriber = (
@@ -505,6 +517,96 @@ export const makeHuggingFaceGenerator = (
 ): ImageGenerator => async (apiToken, _model, prompt) =>
   generateWithHuggingFace(apiToken, model, prompt);
 
+export const DEFAULT_TOGETHER_IMAGE_MODEL = "black-forest-labs/FLUX.1-schnell-Free";
+
+interface TogetherApiResponse {
+  readonly data?: readonly { readonly b64_json?: string }[];
+}
+
+export const generateWithTogether = async (
+  apiKey: string,
+  model: string,
+  prompt: string,
+): Promise<{ readonly data: Buffer; readonly mimeType: string }> => {
+  const url = "https://api.together.ai/v1/images/generations";
+
+  const response = await fetch(url, {
+    method: "POST",
+    headers: {
+      Authorization: `Bearer ${apiKey}`,
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
+      model,
+      prompt,
+      steps: 4,
+      n: 1,
+      response_format: "b64_json",
+    }),
+  });
+
+  if (!response.ok) {
+    const text = await response.text();
+    throw new Error(
+      `Together API error ${response.status}: ${text}`,
+    );
+  }
+
+  const json = (await response.json()) as TogetherApiResponse;
+  const b64 = json.data?.[0]?.b64_json;
+
+  if (!b64) {
+    throw new Error("Together image generation returned no image data");
+  }
+
+  return {
+    data: Buffer.from(b64, "base64"),
+    mimeType: "image/jpeg",
+  };
+};
+
+export const makeTogetherGenerator = (
+  model: string = DEFAULT_TOGETHER_IMAGE_MODEL,
+): ImageGenerator => async (apiKey, _model, prompt) =>
+  generateWithTogether(apiKey, model, prompt);
+
+export const DEFAULT_POLLINATIONS_IMAGE_MODEL = "flux";
+
+export const generateWithPollinations = async (
+  _apiKey: string,
+  model: string,
+  prompt: string,
+): Promise<{ readonly data: Buffer; readonly mimeType: string }> => {
+  const encodedPrompt = encodeURIComponent(prompt);
+  const url = `https://image.pollinations.ai/prompt/${encodedPrompt}?model=${encodeURIComponent(model)}&width=1024&height=1024&nologo=true`;
+
+  const response = await fetch(url);
+
+  if (!response.ok) {
+    const text = await response.text();
+    throw new Error(
+      `Pollinations API error ${response.status}: ${text}`,
+    );
+  }
+
+  const contentType = response.headers.get("content-type") ?? "";
+  if (!contentType.startsWith("image/")) {
+    const text = await response.text();
+    throw new Error(`Pollinations returned non-image response: ${text}`);
+  }
+
+  const arrayBuffer = await response.arrayBuffer();
+  return {
+    data: Buffer.from(arrayBuffer),
+    mimeType: contentType.split(";")[0] ?? "image/jpeg",
+  };
+};
+
+export const makePollinationsGenerator = (
+  model: string = DEFAULT_POLLINATIONS_IMAGE_MODEL,
+): ImageGenerator => async (_apiKey, _model, prompt) =>
+  generateWithPollinations("", model, prompt);
+
 export interface ImageProviderConfig {
   readonly name: string;
   readonly apiKey: string;
@@ -549,6 +651,31 @@ export const resolveImageProviders = (env: Record<string, string | undefined>): 
     });
   }
 
+  const togetherKey = env.TOGETHER_API_TOKEN;
+  const togetherModel = env.TOGETHER_IMAGE_MODEL ?? DEFAULT_TOGETHER_IMAGE_MODEL;
+
+  if (togetherKey) {
+    providers.push({
+      name: "together",
+      apiKey: togetherKey,
+      model: togetherModel,
+      generator: makeTogetherGenerator(togetherModel),
+      describePrompt,
+    });
+  }
+
+  const pollinationsModel = env.POLLINATIONS_IMAGE_MODEL ?? DEFAULT_POLLINATIONS_IMAGE_MODEL;
+
+  if (env.POLLINATIONS_ENABLED === "true") {
+    providers.push({
+      name: "pollinations",
+      apiKey: "",
+      model: pollinationsModel,
+      generator: makePollinationsGenerator(pollinationsModel),
+      describePrompt,
+    });
+  }
+
   const geminiModel = env.IMAGE_GEMINI_MODEL ?? "gemini-3.1-flash-image-preview";
 
   if (geminiKey) {
@@ -563,7 +690,7 @@ export const resolveImageProviders = (env: Record<string, string | undefined>): 
 
   if (providers.length === 0) {
     throw new Error(
-      "No image generation credentials found. Set CLOUDFLARE_API_TOKEN + CLOUDFLARE_ACCOUNT_ID, HUGGINGFACE_API_TOKEN, or GEMINI_API_KEY.",
+      "No image generation credentials found. Set CLOUDFLARE_API_TOKEN + CLOUDFLARE_ACCOUNT_ID, HUGGINGFACE_API_TOKEN, TOGETHER_API_TOKEN, POLLINATIONS_ENABLED=true, or GEMINI_API_KEY.",
     );
   }
 

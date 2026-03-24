@@ -12,6 +12,7 @@ import { describe, it } from "node:test";
 import assert from "node:assert/strict";
 
 import { parseRetryDelay, isRateLimitError, buildGeminiPrompt } from "./gemini.ts";
+import { GEMINI_FLASH_FALLBACK, geminiModelFallback } from "./types.ts";
 import type { ReflectionData } from "./types.ts";
 
 // --- parseRetryDelay ---
@@ -154,6 +155,38 @@ describe("dual-model architecture", () => {
     assert.equal(DEFAULT_QUESTION_MODEL, "gemini-3.1-flash-lite-preview");
   });
 
+  it("GEMINI_FLASH_FALLBACK is gemini-2.5-flash", () => {
+    assert.equal(GEMINI_FLASH_FALLBACK, "gemini-2.5-flash");
+  });
+});
+
+// --- geminiModelFallback ---
+
+describe("geminiModelFallback", () => {
+  it("returns gemini-2.5-flash for gemini-3.1-flash-lite-preview", () => {
+    assert.equal(geminiModelFallback("gemini-3.1-flash-lite-preview"), "gemini-2.5-flash");
+  });
+
+  it("returns undefined for gemma-3-27b-it (no fallback)", () => {
+    assert.equal(geminiModelFallback("gemma-3-27b-it"), undefined);
+  });
+
+  it("returns undefined for gemini-2.5-flash (no fallback)", () => {
+    assert.equal(geminiModelFallback("gemini-2.5-flash"), undefined);
+  });
+
+  it("returns undefined for gemini-2.5-flash (no fallback to itself)", () => {
+    assert.equal(geminiModelFallback("gemini-2.5-flash"), undefined);
+  });
+
+  it("returns undefined for arbitrary model name", () => {
+    assert.equal(geminiModelFallback("some-other-model"), undefined);
+  });
+});
+
+// --- GeminiConfig ---
+
+describe("GeminiConfig", () => {
   it("GeminiConfig includes questionModel field", async () => {
     const { validateEnvironment } = await import("./env.ts");
     const saved = {

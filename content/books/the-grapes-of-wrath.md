@@ -7,6 +7,9 @@ share: true
 CTA: 🗺️ Journey through hardship and hope.
 affiliate link: https://amzn.to/49uywwn
 updated: 2026-03-25T14:28:55.660Z
+force_analyze_links: false
+link_analysis_time: 2026-03-25T22:13:31.999Z
+link_analysis_model: gemini-3.1-flash-lite-preview
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🍇😡 The Grapes of Wrath  

@@ -5,11 +5,12 @@ aliases:
 title: 🐔 Chickie Loo
 URL: https://bagrounds.org/chickie-loo
 backlinks: false
-updated: 2026-03-24T15:39:45-07:00
+updated: 2026-03-25T08:57:08-07:00
 ---
 [Home](../index.md)  
-# 🐔 Chickie Loo (15)  
+# 🐔 Chickie Loo (16)  
 - [🐔 Chickie Loo — AGENTS.md](./AGENTS.md)  
+- [2026-03-25 | 🐔 🩹 The Gentle Lessons of a Stumbled Step and a Broken Shell 🐔](./2026-03-25-the-gentle-lessons-of-a-stumbled-step-and-a-broken-shell.md)  
 - [2026-03-24 | 🐔 🌌 Finding Peace in the Practical Rhythms of the Ranch 🐔](./2026-03-24-finding-peace-in-the-practical-rhythms-of-the-ranch.md)  
 - [2026-03-23 | 🐔 🕊️ A Gentle Afternoon and the Rhythm of the Herd 🐔](./2026-03-23-a-gentle-afternoon-and-the-rhythm-of-the-herd.md)  
 - [2026-03-22 | 🐔 2026-03-22 | 📊 Weekly Recap 🐔 🐔](./2026-03-22-weekly-recap.md)  

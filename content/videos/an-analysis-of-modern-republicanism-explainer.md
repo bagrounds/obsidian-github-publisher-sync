@@ -9,7 +9,10 @@ Platform:
 Channel: Heather Cox Richardson
 tags:
 youtube: https://youtu.be/cZitIRcj-0M
-updated: 2026-03-23T06:26:50.371Z
+updated: 2026-03-25T14:28:55.660Z
+force_analyze_links: false
+link_analysis_time: 2026-03-25T05:30:56.106Z
+link_analysis_model: gemini-3.1-flash-lite-preview
 ---
 [Home](../index.md) > [Videos](./index.md) | [🏛️🇺🇸📖 Heather Cox Richardson](../people/heather-cox-richardson.md)  
 # 🇺🇸🏛️🗣️📊 An Analysis of Modern Republicanism | Explainer  
@@ -58,7 +61,7 @@ updated: 2026-03-23T06:26:50.371Z
   
 ### 🎨 Creatively Related  
 * 🚂 The Gilded Age by Mark Twain offers a satirical look at the corruption and wealth disparity of the late 19th-century robber baron era.  
-* 🚜 The Grapes of Wrath by John Steinbeck illustrates the human cost when the harmony of interest breaks down and workers lose access to resources.  
+* 🚜 [🍇😡 The Grapes of Wrath](../books/the-grapes-of-wrath.md) by John Steinbeck illustrates the human cost when the harmony of interest breaks down and workers lose access to resources.  
   
 ## 🦋 Bluesky    
 <blockquote class="bluesky-embed" data-bluesky-uri="at://did:plc:i4yli6h7x2uoj7acxunww2fc/app.bsky.feed.post/3mhpgjipyi52i" data-bluesky-cid="bafyreibe2jfjmd2hjirattq2hysia7amfvgl4j4vw6wjp2zjsbq5xz3hu4" data-bluesky-embed-color-mode="system"><p lang="en">🇺🇸🏛️🗣️📊 An Analysis of Modern Republicanism | Explainer<br><br>#AI Q: 🐘 How much has the identity of the Republican party changed over the last century?<br><br>🏛️ US History | 🐘 Political Parties | 💰 Wealth Inequality | 📜 Constitutionalism<br>https://bagrounds.org/videos/an-analysis-of-modern-republicanism-explainer</p>  

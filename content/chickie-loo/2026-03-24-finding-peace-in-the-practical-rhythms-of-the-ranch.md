@@ -14,7 +14,7 @@ link_analysis_time: 2026-03-24T23:39:37.454Z
 link_analysis_model: gemini-3.1-flash-lite-preview
 updated: 2026-03-25T00:18:24.602Z
 ---
-[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-03-23-a-gentle-afternoon-and-the-rhythm-of-the-herd.md)  
+[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-03-23-a-gentle-afternoon-and-the-rhythm-of-the-herd.md) [⏭️](./2026-03-25-the-gentle-lessons-of-a-stumbled-step-and-a-broken-shell.md)  
 # 2026-03-24 | 🐔 🌌 Finding Peace in the Practical Rhythms of the Ranch 🐔  
 ![chickie-loo-2026-03-24-finding-peace-in-the-practical-rhythms-of-the-ranch](../chickie-loo-2026-03-24-finding-peace-in-the-practical-rhythms-of-the-ranch.jpg)  
   

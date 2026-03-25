@@ -10,6 +10,9 @@ Channel: MIT OpenCourseWare
 tags:
 youtube: https://youtu.be/-Op1GLwFuV4
 updated: 2026-03-24T12:17:02.167Z
+force_analyze_links: false
+link_analysis_time: 2026-03-25T01:45:19.968Z
+link_analysis_model: gemini-3.1-flash-lite-preview
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 🗣️💡🚀 Session 4, Part 1: Presenting Your Venture  
@@ -47,7 +50,7 @@ updated: 2026-03-24T12:17:02.167Z
 * 📘 The Art of the Start 2.0 by Guy Kawasaki (Portfolio) provides practical advice on the fundamental stages of launching a business including effective pitching.  
   
 ### 🆚 Contrasting  
-* 📘 Thinking, Fast and Slow by Daniel Kahneman (Farrar, Straus and Giroux) examines the cognitive biases that can lead investors to make irrational decisions regardless of pitch quality.  
+* 📘 [🤔🐇🐢 Thinking, Fast and Slow](../books/thinking-fast-and-slow.md) by Daniel Kahneman (Farrar, Straus and Giroux) examines the cognitive biases that can lead investors to make irrational decisions regardless of pitch quality.  
 * 📘 Venture Deals by Brad Feld and Jason Mendelson (Wiley) focuses on the cold, hard legal and financial structures of deals rather than the soft skills of presentation.  
   
 ### 🎨 Creatively Related  

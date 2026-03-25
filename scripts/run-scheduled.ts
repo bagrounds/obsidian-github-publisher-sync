@@ -44,6 +44,12 @@ import { syncFileToVault, readPreviousPostFilename } from "./sync-series-to-vaul
 import { run as runLinking, DEFAULT_LINKING_MODEL } from "./lib/internal-linking.ts";
 import { autoPost } from "./auto-post.ts";
 import { BACKFILL_CONTENT_IDS } from "./lib/blog-series-config.ts";
+import {
+  reflectionNeedsTitle,
+  generateReflectionTitle,
+  DEFAULT_TITLE_MODEL,
+} from "./lib/reflection-title.ts";
+import { findPreviousReflectionDate } from "./lib/daily-reflection.ts";
 
 // ---------------------------------------------------------------------------
 // Logging helpers
@@ -291,6 +297,84 @@ const runSocialPosting = async (): Promise<void> => {
   console.log(`[${ts()}] ✅ social-posting`);
 };
 
+const RECENT_TITLE_COUNT = 20;
+
+const collectRecentTitles = (reflectionsDir: string, today: string): readonly string[] => {
+  if (!fs.existsSync(reflectionsDir)) return [];
+
+  return fs.readdirSync(reflectionsDir)
+    .filter((f) => /^\d{4}-\d{2}-\d{2}\.md$/.test(f) && f < `${today}.md`)
+    .sort()
+    .reverse()
+    .slice(0, RECENT_TITLE_COUNT)
+    .flatMap((f) => {
+      const content = fs.readFileSync(path.join(reflectionsDir, f), "utf-8");
+      const titleLine = content.split("\n").find((line) => /^title:\s/.test(line));
+      const titleValue = titleLine?.replace(/^title:\s*/, "").trim() ?? "";
+      const pipeIndex = titleValue.indexOf(" | ");
+      return pipeIndex >= 0 ? [titleValue.slice(pipeIndex + 3)] : [];
+    });
+};
+
+const runReflectionTitle = async (): Promise<void> => {
+  console.log(`[${ts()}] ▶️  reflection-title`);
+
+  const authToken = process.env.OBSIDIAN_AUTH_TOKEN;
+  const vaultName = process.env.OBSIDIAN_VAULT_NAME;
+  if (!authToken || !vaultName) throw new Error("OBSIDIAN_AUTH_TOKEN and OBSIDIAN_VAULT_NAME are required");
+
+  const apiKey = process.env.GEMINI_API_KEY;
+  if (!apiKey) throw new Error("GEMINI_API_KEY is required");
+
+  const today = todayPacific();
+
+  // 1. Pull vault
+  const vaultDir = await syncObsidianVault({ authToken, vaultName });
+  const reflectionsDir = path.join(vaultDir, "reflections");
+  const reflectionPath = path.join(reflectionsDir, `${today}.md`);
+
+  if (!fs.existsSync(reflectionPath)) {
+    console.log(`  ⏭️  No reflection note for ${today}`);
+    return;
+  }
+
+  // 2. Check idempotency — skip if title already set
+  const content = fs.readFileSync(reflectionPath, "utf-8");
+  if (!reflectionNeedsTitle(content, today)) {
+    console.log(`  ⏭️  Reflection title already set for ${today}`);
+    return;
+  }
+
+  // 3. Collect recent titles for style examples
+  const recentTitles = collectRecentTitles(reflectionsDir, today);
+  console.log(`  📋 Found ${recentTitles.length} recent titles for style reference`);
+
+  // 4. Determine model chain
+  const envModel = process.env.REFLECTION_TITLE_MODEL?.trim();
+  const defaultChain = [DEFAULT_TITLE_MODEL, "gemini-2.5-flash-lite", "gemini-3.1-flash-lite-preview"] as const;
+  const models = envModel
+    ? [envModel, ...defaultChain.filter((m) => m !== envModel)]
+    : [...defaultChain];
+
+  // 5. Generate title
+  const result = await generateReflectionTitle({
+    apiKey,
+    models,
+    noteContent: content,
+    date: today,
+    recentTitles,
+  });
+
+  console.log(`  🏷️  Generated title: ${result.fullTitle} [${result.model}]`);
+
+  // 6. Write updated content and push vault
+  fs.writeFileSync(reflectionPath, result.updatedContent, "utf-8");
+  await pushObsidianVault(vaultDir, { authToken });
+  console.log("  📤 Vault pushed");
+
+  console.log(`[${ts()}] ✅ reflection-title`);
+};
+
 const TASK_RUNNERS: ReadonlyMap<TaskId, () => Promise<void>> = new Map([
   ["blog-series:chickie-loo", () => runBlogSeries("chickie-loo")],
   ["blog-series:auto-blog-zero", () => runBlogSeries("auto-blog-zero")],
@@ -301,6 +385,7 @@ const TASK_RUNNERS: ReadonlyMap<TaskId, () => Promise<void>> = new Map([
   ["backfill-blog-images", runBackfillImages],
   ["internal-linking", runInternalLinking],
   ["social-posting", runSocialPosting],
+  ["reflection-title", runReflectionTitle],
 ]);
 
 // ---------------------------------------------------------------------------

@@ -16,7 +16,7 @@ import {
 } from "./scheduler.ts";
 
 // ---------------------------------------------------------------------------
-// getScheduledTasks — "at or after" for blog series, exact for others
+// getScheduledTasks — "at or after" for blog series and atOrAfter entries, exact for others
 // ---------------------------------------------------------------------------
 
 describe("getScheduledTasks", () => {
@@ -64,6 +64,21 @@ describe("getScheduledTasks", () => {
     assert.ok(tasks.includes("blog-series:systems-for-public-good"));
   });
 
+  it("returns reflection-title at and after hour 5 (at-or-after scheduling)", () => {
+    assert.ok(getScheduledTasks(5).includes("reflection-title"));
+    assert.ok(getScheduledTasks(6).includes("reflection-title"));
+    assert.ok(getScheduledTasks(23).includes("reflection-title"));
+  });
+
+  it("does NOT return reflection-title before hour 5", () => {
+    [0, 1, 2, 3, 4].forEach((hour) => {
+      assert.ok(
+        !getScheduledTasks(hour).includes("reflection-title"),
+        `reflection-title should NOT be eligible at hour ${hour}`,
+      );
+    });
+  });
+
   it("returns backfill-blog-images at every hour", () => {
     Array.from({ length: 24 }, (_, h) => h).forEach((hour) => {
       assert.ok(
@@ -108,11 +123,13 @@ describe("getScheduledTasks", () => {
     assert.ok(tasksAt1.includes("internal-linking"));
     assert.ok(!tasksAt1.includes("social-posting"));
     assert.ok(!tasksAt1.includes("blog-series:chickie-loo"));
+    assert.ok(!tasksAt1.includes("reflection-title"));
 
     const tasksAt3 = getScheduledTasks(3);
     assert.ok(tasksAt3.includes("backfill-blog-images"));
     assert.ok(tasksAt3.includes("internal-linking"));
     assert.ok(!tasksAt3.includes("social-posting"));
+    assert.ok(!tasksAt3.includes("reflection-title"));
   });
 
   it("returns multiple tasks when schedules overlap", () => {
@@ -254,6 +271,7 @@ describe("isValidTaskId", () => {
       "backfill-blog-images",
       "internal-linking",
       "social-posting",
+      "reflection-title",
     ];
     known.forEach((id) => assert.ok(isValidTaskId(id)));
   });

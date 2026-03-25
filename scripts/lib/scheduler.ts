@@ -21,11 +21,13 @@ export type TaskId =
   | "blog-series:systems-for-public-good"
   | "backfill-blog-images"
   | "internal-linking"
-  | "social-posting";
+  | "social-posting"
+  | "reflection-title";
 
 export interface ScheduleEntry {
   readonly taskId: TaskId;
   readonly hoursUtc: readonly number[];
+  readonly atOrAfter?: boolean;
 }
 
 export interface BlogSeriesRunConfig {
@@ -42,12 +44,17 @@ export interface BlogSeriesRunConfig {
  * The orchestrator's idempotency check (today's post exists?) prevents
  * duplicate generation.
  *
+ * The reflection-title task also uses "at or after" scheduling (via the
+ * atOrAfter flag) at hour 5 UTC (~9 PM Pacific). It generates a creative
+ * title for the current day's reflection note once all content is in.
+ *
  * Other tasks use exact-hour matching.
  *
  * Original cron schedules:
  *   chickie-loo:             0 15 * * *   (15:00 UTC daily)
  *   auto-blog-zero:          0 16 * * *   (16:00 UTC daily)
  *   systems-for-public-good: 0 17 * * *   (17:00 UTC daily)
+ *   reflection-title:        0  5 * * *   (05:00 UTC daily, ~9 PM Pacific)
  *   backfill-blog-images:    0  * * * *   (every hour, 1 image per run)
  *   internal-linking:        0  * * * *   (every hour, 1 note per run)
  *   social-posting:          0 * /2 * * * (every 2 hours on even hours)
@@ -58,6 +65,7 @@ export const SCHEDULE: readonly ScheduleEntry[] = [
   { taskId: "blog-series:chickie-loo", hoursUtc: [15] },
   { taskId: "blog-series:auto-blog-zero", hoursUtc: [16] },
   { taskId: "blog-series:systems-for-public-good", hoursUtc: [17] },
+  { taskId: "reflection-title", hoursUtc: [5], atOrAfter: true },
   { taskId: "backfill-blog-images", hoursUtc: EVERY_HOUR },
   { taskId: "internal-linking", hoursUtc: EVERY_HOUR },
   { taskId: "social-posting", hoursUtc: [0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22] },
@@ -107,15 +115,15 @@ export const VALID_TASK_IDS: ReadonlySet<TaskId> = new Set(
 /**
  * Returns tasks eligible to run at the given UTC hour.
  *
- * Blog series tasks use "at or after" scheduling: they're eligible at
- * their scheduled hour AND all subsequent hours. The orchestrator's
- * idempotency check prevents duplicate execution.
+ * Blog series tasks and entries with atOrAfter=true use "at or after"
+ * scheduling: they're eligible at their scheduled hour AND all subsequent
+ * hours. The orchestrator's idempotency check prevents duplicate execution.
  *
  * Other tasks use exact-hour matching.
  */
 export const getScheduledTasks = (hourUtc: number): readonly TaskId[] =>
   SCHEDULE.filter((entry) =>
-    entry.taskId.startsWith("blog-series:")
+    entry.atOrAfter || entry.taskId.startsWith("blog-series:")
       ? entry.hoursUtc.some((h) => hourUtc >= h)
       : entry.hoursUtc.includes(hourUtc),
   ).map((entry) => entry.taskId);

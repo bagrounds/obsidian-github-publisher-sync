@@ -71,7 +71,19 @@ date: 2026-03-24
 | 🤗 Hugging Face | Billing Settings page |
 | 🤝 Together AI | Billing Settings page |
 
-📊 Similarly, per-file skip logging was aggregated: instead of 500 lines of `already_has_image`, a single `candidates_collected` summary reports counts. The `skipped_already_analyzed` per-file messages in internal linking were also removed — skip counts are already reported in the `internal_linking_complete` summary via the `filesSkipped` field.
+📊 Similarly, per-file skip logging was aggregated: instead of 500 lines of `already_has_image`, a single `candidates_collected` summary reports counts. The `skipped_already_analyzed` per-file messages in internal linking were also removed — skip counts are already reported in the completion summary via the `filesSkipped` field.
+
+### 📝 Plain Text Over JSON
+
+🔤 All orchestrator and library logging was switched from JSON structured events (`JSON.stringify({...})`) to human-readable plain text with emoji prefixes. JSON objects with `{` and `}` were being masked as `***` by GitHub Actions' secret redaction, making logs unreadable. Plain text avoids this entirely and is easier to scan.
+
+🎨 Each log line uses a consistent prefix pattern:
+- 📊 Aggregate counts and summaries
+- 🎨 Image generation actions
+- 📖 Book identification results
+- ✏️ Link insertion details
+- ⏹️ Limit reached notifications
+- ✅/❌ Task completion status
 
 ## 📐 Design Decisions
 
@@ -96,12 +108,13 @@ date: 2026-03-24
 | 📂 File | 📝 Change |
 |---|---|
 | `scripts/lib/blog-image.ts` | 🔧 Boolean regenerate_image, null field clearing, maxImages support |
-| `scripts/lib/internal-linking.ts` | 🎯 maxInferenceRequests limit, usedInference tracking in FileResult |
+| `scripts/lib/internal-linking.ts` | 🎯 maxInferenceRequests limit, usedInference tracking, plain text logging |
 | `scripts/lib/scheduler.ts` | ⏰ Hourly schedule for backfill and linking tasks |
-| `scripts/run-scheduled.ts` | 🎯 maxImages: 1, maxInferenceRequests: 1, 30s inter-task delay |
+| `scripts/run-scheduled.ts` | 🎯 maxImages: 1, maxInferenceRequests: 1, plain text logging, run summary |
+| `scripts/pull-vault-posts.ts` | 📝 Plain text logging (was JSON) |
 | `scripts/lib/blog-image.test.ts` | 🧪 Boolean tests, maxImages tests, fresh prompt on regeneration |
 | `scripts/lib/scheduler.test.ts` | 🧪 Updated for hourly scheduling |
-| `specs/scheduled-tasks.md` | 📋 Updated schedule table and rate limit documentation |
+| `specs/scheduled-tasks.md` | 📋 Updated schedule table, rate limit docs, and logging format |
 | `specs/image-generation.md` | 📋 Updated regeneration behavior and maxImages |
 
 ## 📚 Book Recommendations

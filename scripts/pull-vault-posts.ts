@@ -5,9 +5,6 @@ import path from "node:path";
 import { syncObsidianVault } from "./lib/obsidian-sync.ts";
 import { BACKFILL_CONTENT_IDS } from "./lib/blog-series-config.ts";
 
-const log = (data: Record<string, unknown>): void =>
-  console.log(JSON.stringify({ timestamp: new Date().toISOString(), ...data }));
-
 const DATE_POST_PATTERN = /^\d{4}-\d{2}-\d{2}.*\.md$/;
 
 const copySeriesPosts = (
@@ -17,7 +14,7 @@ const copySeriesPosts = (
 ): number => {
   const vaultSeries = path.join(vaultDir, seriesId);
   if (!fs.existsSync(vaultSeries)) {
-    log({ event: "no_vault_series_dir", series: seriesId });
+    console.log(`  ⚠️  No vault directory for series: ${seriesId}`);
     return 0;
   }
 
@@ -31,7 +28,7 @@ const copySeriesPosts = (
     fs.copyFileSync(path.join(vaultSeries, f), path.join(localDir, f)),
   );
 
-  log({ event: "vault_posts_found", series: seriesId, count: posts.length });
+  console.log(`  📂 ${seriesId}: ${posts.length} posts`);
   return posts.length;
 };
 
@@ -57,28 +54,23 @@ const main = async (): Promise<void> => {
 
   const repoRoot = path.resolve(import.meta.dirname, "..");
 
-  log({ event: "pull_start", series: seriesArgs });
+  console.log(`📥 Pulling vault posts: ${seriesArgs.join(", ")}`);
 
   const vaultDir = await syncObsidianVault({ authToken, vaultName });
-  log({ event: "vault_synced", vaultDir });
+  console.log(`  📁 Vault synced: ${vaultDir}`);
 
   const total = seriesArgs.reduce(
     (sum, seriesId) => sum + copySeriesPosts(vaultDir, seriesId, repoRoot),
     0,
   );
 
-  log({ event: "pull_complete", totalPostsCopied: total });
+  console.log(`  ✅ ${total} posts copied`);
 };
 
 if (process.argv[1]?.endsWith("pull-vault-posts.ts")) {
   main().catch((error) => {
-    console.error(
-      JSON.stringify({
-        event: "fatal_error",
-        message: error instanceof Error ? error.message : String(error),
-        stack: error instanceof Error ? error.stack : undefined,
-      }),
-    );
+    console.error(`💀 Fatal: ${error instanceof Error ? error.message : String(error)}`);
+    if (error instanceof Error && error.stack) console.error(error.stack);
     process.exit(1);
   });
 }

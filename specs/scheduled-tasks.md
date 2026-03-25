@@ -87,7 +87,15 @@
 
 ### 🔇 Aggregate Skip Logging
 
-📊 During image backfill, the `collectCandidates` function emits a single `candidates_collected` summary event instead of per-file `already_has_image` events. During internal linking, `skipped_already_analyzed` events are suppressed — skip counts are reported in the final `internal_linking_complete` summary via `filesSkipped`.
+📊 During image backfill, the `collectCandidates` function emits a single `candidates_collected` summary event instead of per-file `already_has_image` events. During internal linking, `skipped_already_analyzed` events are suppressed — skip counts are reported in the final completion summary via `filesSkipped`.
+
+### 📝 Plain Text Logging
+
+🔤 All orchestrator and library logging uses human-readable plain text with emoji prefixes instead of JSON structured events. JSON `{...}` objects were masked as `***` by GitHub Actions' secret redaction. Plain text log lines include:
+- 🎨 Image generation actions with file names and provider
+- 📖 Book identification results with identified books
+- ✏️ Link insertion details with matched text and targets
+- 📊 Aggregate counts for candidates, visited files, skips
 
 ### 🎯 Per-Run Limits
 

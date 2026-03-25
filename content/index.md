@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-03-24T15:39:45-07:00
+updated: 2026-03-25T08:57:08-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -14,11 +14,11 @@ updated: 2026-03-24T15:39:45-07:00
 🔊 Listen to any page with built in audio control.  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (495)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (496)  
+- [2026-03-25](./reflections/2026-03-25.md)  
 - [2026-03-24](./reflections/2026-03-24.md)  
 - [2026-03-23 | 🕊️ Gentle 🚪 Constraint 🏛️ Commons 📚🐔🤖🏛️📺](./reflections/2026-03-23.md)  
 - [2026-03-22 | ⚡ These 🧬 Breakthroughs 🔮 Predict 📊 Weekly 🧠 Intelligence 🤝 While 🏛️ Modern 🇺🇸 American 🖼️ Resolution 👂 Sounds 🛡️ Protect 🐥 Chickie 🕵️ Analysis 📚🐔🤖📺](./reflections/2026-03-22.md)  
-- [2026-03-21 | 🕷️⏳ Children 🧠 Memory 🐔 Heavy 💔 Stewardship 📚🐔🤖📄📰](./reflections/2026-03-21.md)  
   
   
 ## [🤖 AI Blog](./ai-blog/index.md) (52)  
@@ -35,11 +35,11 @@ updated: 2026-03-24T15:39:45-07:00
 - [2026-03-21 | 🤖 🏗️ The Simulation Horizon: Building a Mirror for Our Thoughts 🤖](./auto-blog-zero/2026-03-21-the-simulation-horizon-building-a-mirror-for-our-thoughts.md)  
   
   
-## [🐔 Chickie Loo](./chickie-loo/index.md) (15)  
+## [🐔 Chickie Loo](./chickie-loo/index.md) (16)  
+- [2026-03-25 | 🐔 🩹 The Gentle Lessons of a Stumbled Step and a Broken Shell 🐔](./chickie-loo/2026-03-25-the-gentle-lessons-of-a-stumbled-step-and-a-broken-shell.md)  
 - [2026-03-24 | 🐔 🌌 Finding Peace in the Practical Rhythms of the Ranch 🐔](./chickie-loo/2026-03-24-finding-peace-in-the-practical-rhythms-of-the-ranch.md)  
 - [2026-03-23 | 🐔 🕊️ A Gentle Afternoon and the Rhythm of the Herd 🐔](./chickie-loo/2026-03-23-a-gentle-afternoon-and-the-rhythm-of-the-herd.md)  
 - [2026-03-22 | 🐔 2026-03-22 | 📊 Weekly Recap 🐔 🐔](./chickie-loo/2026-03-22-weekly-recap.md)  
-- [2026-03-21 | 🐔 🐔 A Heavy Heart and the Sacred Circle of Stewardship 🐔 🐔](./chickie-loo/2026-03-21-a-heavy-heart-and-the-sacred-circle-of-stewardship.md)  
   
   
 ## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (3)  
@@ -48,27 +48,27 @@ updated: 2026-03-24T15:39:45-07:00
   
   
 ## [📚 Books](./books/index.md) (958)  
-- [🏃💨🚪 Exit Strategy](./books/exit-strategy.md)  
-- [🌐🤖🚀 Network Effect](./books/network-effect.md)  
+- [🍇😡 The Grapes of Wrath](./books/the-grapes-of-wrath.md)  
+- [🤖🧠⚙️ Artificial Condition](./books/artificial-condition.md)  
+- [👁️ 1984](./books/1984.md)  
+- [🚨🤖💥 All Systems Red](./books/all-systems-red.md)  
 - [🕵️ Fugitive Telemetry](./books/fugitive-telemetry.md)  
-- [🎣📱 Hooked: How to Build Habit-Forming Products](./books/hooked-how-to-build-habit-forming-products.md)  
-- [📺💀 Amusing Ourselves to Death: Public Discourse in the Age of Show Business](./books/amusing-ourselves-to-death-public-discourse-in-the-age-of-show-business.md)  
-- [🤖📈 The Second Machine Age: Work, Progress, and Prosperity in a Time of Brilliant Technologies](./books/the-second-machine-age-work-progress-and-prosperity-in-a-time-of-brilliant-technologies.md)  
-- [⚡🔮🤖 Power and Prediction: The Disruptive Economics of Artificial Intelligence](./books/power-and-prediction-the-disruptive-economics-of-artificial-intelligence.md)  
-- [👂📱🐾🌿 The Sounds of Life: How Digital Technology Is Bringing Us Closer to the Worlds of Animals and Plants](./books/the-sounds-of-life-how-digital-technology-is-bringing-us-closer-to-the-worlds-of-animals-and-plants.md)  
-- [🏍️🧘❓ Zen and the Art of Motorcycle Maintenance: An Inquiry into Values](./books/zen-and-the-art-of-motorcycle-maintenance-an-inquiry-into-values.md)  
-- [📈⚙️♾️ The Goal: A Process of Ongoing Improvement](./books/the-goal.md)  
+- [📱⬇️🧘 Digital Minimalism: Choosing a Focused Life in a Noisy World](./books/digital-minimalism-choosing-a-focused-life-in-a-noisy-world.md)  
+- [➡️🌌🚀😡 A Long Way to a Small, Angry Planet](./books/a-long-way-to-a-small-angry-planet.md)  
+- [📱🧠 The Shallows: What the Internet Is Doing to Our Brains](./books/the-shallows-what-the-internet-is-doing-to-our-brains.md)  
+- [🧠👥 The Society of Mind](./books/the-society-of-mind.md)  
+- [🏃💨🚪 Exit Strategy](./books/exit-strategy.md)  
   
   
 ## [📺 Videos](./videos/index.md) (709)  
-- [💰🚀💼 Session 2, Part 2: How Are You Going to Make Money? - The Business/Venture Model](./videos/session-2-part-2-how-are-you-going-to-make-money-the-businessventure-model.md)  
+- [🇺🇸🏛️🗣️📊 An Analysis of Modern Republicanism | Explainer](./videos/an-analysis-of-modern-republicanism-explainer.md)  
 - [🗣️💡🚀 Session 4, Part 1: Presenting Your Venture](./videos/session-4-part-1-presenting-your-venture.md)  
 - [3️⃣1️⃣⚖️🏛️ Session 3, Part 1: Legal Issues](./videos/session-3-part-1-legal-issues.md)  
+- [💰🚀💼 Session 2, Part 2: How Are You Going to Make Money? - The Business/Venture Model](./videos/session-2-part-2-how-are-you-going-to-make-money-the-businessventure-model.md)  
 - [session-1-part-2-market-identification-and-sales-finding-your-customer](../session-1-part-2-market-identification-and-sales-finding-your-customer.md)  
 - [📈💥❓➡️✅ Session 1, Part 1: Introduction: Most Startups Fail; How to Improve Your Odds](./videos/session-1-part-1-introduction-most-startups-fail-how-to-improve-your-odds.md)  
 - [👮🚔🕵️ Police Stings: Last Week Tonight with John Oliver (HBO)](./videos/police-stings-last-week-tonight-with-john-oliver-hbo.md)  
 - [🇺🇸🗣️🏛️ American Conversations: Senator Jon Ossoff](./videos/american-conversations-senator-jon-ossoff.md)  
-- [🇺🇸🏛️🗣️📊 An Analysis of Modern Republicanism | Explainer](./videos/an-analysis-of-modern-republicanism-explainer.md)  
 - [🌿🤖🛰️ These AI Devices Protect Nature in Real Time | Juan M. Lavista Ferres | TED](./videos/these-ai-devices-protect-nature-in-real-time-juan-m-lavista-ferres-ted.md)  
 - [💰💥🇮🇷🇺🇸 Brooks and Capehart on Trump struggling to contain economic fallout of Iran war](./videos/brooks-and-capehart-on-trump-struggling-to-contain-economic-fallout-of-iran-war.md)  
   

@@ -8,6 +8,9 @@ Author:
 tags:
 affiliate link: https://amzn.to/3ZJoDW9
 updated: 2026-03-24T22:37:58.862Z
+force_analyze_links: false
+link_analysis_time: 2026-03-25T09:19:36.766Z
+link_analysis_model: gemini-3.1-flash-lite-preview
 ---
 [Home](../index.md) > [Books](./index.md) | [⏮️ 🕵️‍♀️📜💻 Rogue Protocol](./rogue-protocol.md) [⏭️ 🌐🤖🚀 Network Effect](./network-effect.md)  
 # 🏃💨🚪 Exit Strategy  

@@ -969,6 +969,7 @@ export const processFile = async (
   const candidates = findLinkCandidates(contentForMatching, masked, identifiedIndex, existingLinks, relativePath, true);
 
   if (candidates.length === 0) {
+    console.log(`  ℹ️  ${relativePath}: book(s) identified but no linkable text found (title not in body text)`);
     return { relativePath, linksAdded: 0, modified: false, skipped: false, usedInference: !!config.apiKey };
   }
 

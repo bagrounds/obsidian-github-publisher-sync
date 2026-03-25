@@ -26,6 +26,7 @@ import {
   isValidTaskId,
   BLOG_SERIES_RUN_CONFIGS,
   blogPostExistsForToday,
+  nowPacificHour,
   type TaskId,
 } from "./lib/scheduler.ts";
 import { todayPacific } from "./lib/blog-series.ts";
@@ -49,7 +50,6 @@ import {
   generateReflectionTitle,
   DEFAULT_TITLE_MODEL,
 } from "./lib/reflection-title.ts";
-import { findPreviousReflectionDate } from "./lib/daily-reflection.ts";
 
 // ---------------------------------------------------------------------------
 // Logging helpers
@@ -316,6 +316,65 @@ const extractRecentCreativeTitles = (reflectionsDir: string, today: string): rea
     });
 };
 
+/**
+ * Compute yesterday's date in Pacific time.
+ */
+const yesterdayPacific = (): string => {
+  const now = new Date();
+  const pacificDate = new Date(now.toLocaleString("en-US", { timeZone: "America/Los_Angeles" }));
+  pacificDate.setDate(pacificDate.getDate() - 1);
+  return pacificDate.toLocaleDateString("en-CA");
+};
+
+/**
+ * Try to generate a title for the given date's reflection.
+ * Returns true if a title was generated, false if skipped.
+ */
+const tryTitleForDate = async (
+  date: string,
+  reflectionsDir: string,
+  vaultDir: string,
+  apiKey: string,
+  authToken: string,
+): Promise<boolean> => {
+  const reflectionPath = path.join(reflectionsDir, `${date}.md`);
+
+  if (!fs.existsSync(reflectionPath)) {
+    console.log(`  ⏭️  No reflection note for ${date}`);
+    return false;
+  }
+
+  const content = fs.readFileSync(reflectionPath, "utf-8");
+  if (!reflectionNeedsTitle(content, date)) {
+    console.log(`  ⏭️  Reflection title already set for ${date}`);
+    return false;
+  }
+
+  const recentTitles = extractRecentCreativeTitles(reflectionsDir, date);
+  console.log(`  📋 Found ${recentTitles.length} recent titles for style reference`);
+
+  const envModel = process.env.REFLECTION_TITLE_MODEL?.trim();
+  const defaultChain = [DEFAULT_TITLE_MODEL, "gemini-2.5-flash-lite", "gemini-3.1-flash-lite-preview"] as const;
+  const models = envModel
+    ? [envModel, ...defaultChain.filter((m) => m !== envModel)]
+    : [...defaultChain];
+
+  const result = await generateReflectionTitle({
+    apiKey,
+    models,
+    noteContent: content,
+    date,
+    recentTitles,
+  });
+
+  console.log(`  🏷️  Generated title: ${result.fullTitle} [${result.model}]`);
+
+  fs.writeFileSync(reflectionPath, result.updatedContent, "utf-8");
+  await pushObsidianVault(vaultDir, { authToken });
+  console.log("  📤 Vault pushed");
+  return true;
+};
+
 const runReflectionTitle = async (): Promise<void> => {
   console.log(`[${ts()}] ▶️  reflection-title`);
 
@@ -327,50 +386,17 @@ const runReflectionTitle = async (): Promise<void> => {
   if (!apiKey) throw new Error("GEMINI_API_KEY is required");
 
   const today = todayPacific();
+  const yesterday = yesterdayPacific();
 
-  // 1. Pull vault
   const vaultDir = await syncObsidianVault({ authToken, vaultName });
   const reflectionsDir = path.join(vaultDir, "reflections");
-  const reflectionPath = path.join(reflectionsDir, `${today}.md`);
 
-  if (!fs.existsSync(reflectionPath)) {
-    console.log(`  ⏭️  No reflection note for ${today}`);
-    return;
+  // Try today first, then yesterday (resilient catchup)
+  const todayDone = await tryTitleForDate(today, reflectionsDir, vaultDir, apiKey, authToken);
+  if (!todayDone) {
+    console.log(`  📅 Checking yesterday (${yesterday})...`);
+    await tryTitleForDate(yesterday, reflectionsDir, vaultDir, apiKey, authToken);
   }
-
-  // 2. Check idempotency — skip if title already set
-  const content = fs.readFileSync(reflectionPath, "utf-8");
-  if (!reflectionNeedsTitle(content, today)) {
-    console.log(`  ⏭️  Reflection title already set for ${today}`);
-    return;
-  }
-
-  // 3. Collect recent titles for style examples
-  const recentTitles = extractRecentCreativeTitles(reflectionsDir, today);
-  console.log(`  📋 Found ${recentTitles.length} recent titles for style reference`);
-
-  // 4. Determine model chain
-  const envModel = process.env.REFLECTION_TITLE_MODEL?.trim();
-  const defaultChain = [DEFAULT_TITLE_MODEL, "gemini-2.5-flash-lite", "gemini-3.1-flash-lite-preview"] as const;
-  const models = envModel
-    ? [envModel, ...defaultChain.filter((m) => m !== envModel)]
-    : [...defaultChain];
-
-  // 5. Generate title
-  const result = await generateReflectionTitle({
-    apiKey,
-    models,
-    noteContent: content,
-    date: today,
-    recentTitles,
-  });
-
-  console.log(`  🏷️  Generated title: ${result.fullTitle} [${result.model}]`);
-
-  // 6. Write updated content and push vault
-  fs.writeFileSync(reflectionPath, result.updatedContent, "utf-8");
-  await pushObsidianVault(vaultDir, { authToken });
-  console.log("  📤 Vault pushed");
 
   console.log(`[${ts()}] ✅ reflection-title`);
 };
@@ -421,7 +447,7 @@ export const parseArgs = (argv: readonly string[]): CliArgs => {
 
 const main = async (): Promise<void> => {
   const cliArgs = parseArgs(process.argv);
-  const hourUtc = cliArgs.hourOverride ?? new Date().getUTCHours();
+  const hourPacific = cliArgs.hourOverride ?? nowPacificHour();
 
   const tasks: readonly TaskId[] = cliArgs.taskOverride
     ? isValidTaskId(cliArgs.taskOverride)
@@ -430,9 +456,9 @@ const main = async (): Promise<void> => {
           console.error(`❌ Unknown task: ${cliArgs.taskOverride}`);
           process.exit(1);
         })()
-    : getScheduledTasks(hourUtc);
+    : getScheduledTasks(hourPacific);
 
-  console.log(`\n🕐 [${ts()}] Scheduler start — hour ${hourUtc} UTC, ${tasks.length} task(s): ${tasks.join(", ")}`);
+  console.log(`\n🕐 [${ts()}] Scheduler start — hour ${hourPacific} Pacific, ${tasks.length} task(s): ${tasks.join(", ")}`);
   console.log("📊 Inference dashboards:");
   INFERENCE_DASHBOARDS.forEach((url, name) => console.log(`   ${name}: ${url}`));
 

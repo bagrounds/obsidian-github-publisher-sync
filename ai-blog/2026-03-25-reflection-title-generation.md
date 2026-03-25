@@ -11,68 +11,82 @@ title: 🪞 Automated Reflection Title Generation with Gemini AI
 📅 Every day, a reflection note captures the day's readings, blog posts, videos, and thoughts.
 🏷️ Each reflection deserves a creative, emoji-enriched title that distills the day's themes at a glance.
 ✍️ Previously, these titles were crafted manually — time-consuming and easy to forget.
+🚫 Untitled reflections shouldn't be posted to social media.
 
-## 🔬 Reverse Engineering the Title Pattern
+## 🎮 The Title Game
 
-📊 We analyzed over 20 recent reflection titles from the published site to identify the pattern:
+📊 We analyzed over 20 recent reflection titles to discover the creative game behind them:
 
-| 📅 Date | 🏷️ Title |
-|----------|-----------|
-| 📆 2026-03-23 | 🕊️ Gentle 🚪 Constraint 🏛️ Commons 📚🐔🤖🏛️📺 |
-| 📆 2026-03-18 | 🧠 Evolution, 🏰 Empire, and the 🎷 Symphony of 🐔 Chickie 🎵 Loo 📚🐔🤖📺 |
-| 📆 2026-03-10 | 🫂 Tight 🏗️ Functional 🤖 Agentic 🗣️ Breathe 📚 |
-| 📆 2026-03-05 | 😴🧠💤 Tired 🤖 Murderbot 📺 |
+1. 📋 Extract all linked content titles from the day's reflection (books, blog posts, videos)
+2. 🎯 Pick exactly one interesting word from each content title
+3. 🔤 Arrange these words into a meaningful phrase or sentence fragment
+4. 🎨 Prefix each meaningful word with 1–2 relevant emojis
+5. 🏷️ Append trailing category emojis (extracted from section headings)
 
-🧩 The pattern emerged: each title is a sequence of emoji+keyword pairs capturing key themes, ending with category emojis indicating which sections appeared in the note.
+| 📅 Date | 🔗 Content Titles | 🏷️ Result |
+|----------|-------------------|-----------|
+| 📆 2026-03-23 | 📚 A **Gentle** Afternoon..., 🤖 The Crucible of **Constraint**..., 🏛️ The Forgotten **Commons**... | 🕊️ Gentle 🚪 Constraint 🏛️ Commons 📚🐔🤖🏛️📺 |
+| 📆 2026-03-10 | 📚 Hold Me **Tight**..., 🏗️ **Functional** Refactoring..., 🤖 The **Agentic** Playbook..., 🔊 Teaching the Robot to **Breathe**... | 🫂 Tight 🏗️ Functional 🤖 Agentic 🗣️ Breathe 📚 |
+| 📆 2026-02-20 | 📚 **Rogue** Protocol, 📚 **Exit** Strategy | 🕵️‍♀️ Rogue 🚪 Exit 📚 |
 
 ## 🏗️ Architecture
 
-🧱 The solution follows the established library-first architecture:
+🧱 The solution maximizes deterministic computation and minimizes what Gemini must do:
 
 | 📦 Component | 📂 Path | 🎯 Purpose |
 |--------------|---------|-------------|
-| 📚 Library | `scripts/lib/reflection-title.ts` | 🔧 Pure functions + Gemini API calls |
-| 🧪 Tests | `scripts/lib/reflection-title.test.ts` | ✅ 37 tests across 5 suites |
-| ⏰ Scheduler | `scripts/lib/scheduler.ts` | 📅 At-or-after scheduling at hour 5 UTC |
-| 🎛️ Orchestrator | `scripts/run-scheduled.ts` | 🔄 Vault sync, idempotency, execution |
+| 📚 Library | `scripts/lib/reflection-title.ts` | 🔧 Deterministic extraction + focused AI prompt |
+| 🧪 Tests | `scripts/lib/reflection-title.test.ts` | ✅ 54 tests across 9 suites |
+| ⏰ Scheduler | `scripts/lib/scheduler.ts` | 📅 At-or-after scheduling at 10 PM Pacific |
+| 🎛️ Orchestrator | `scripts/run-scheduled.ts` | 🔄 Vault sync, idempotency, yesterday catchup |
 | 📋 Spec | `specs/reflection-title.md` | 📐 Product and engineering specification |
+
+### 🧩 Deterministic vs AI Boundary
+
+| 🔧 Step | 🤖 Who | 📝 Description |
+|----------|--------|----------------|
+| 📋 Extract linked titles | 💻 Code | Parse list items for wiki/markdown link display text |
+| ✂️ Strip prefixes | 💻 Code | Remove date and emoji prefixes from titles |
+| 🏷️ Extract trailing emojis | 💻 Code | Collect leading emojis from each H2 heading |
+| 🎮 Play the word game | 🤖 Gemini | Pick one word per title, form a phrase, add emojis |
+| 🔨 Assemble full title | 💻 Code | Append deterministic trailing emojis |
+| 📝 Apply to note | 💻 Code | Update frontmatter and H1 heading |
 
 ## ⏰ Scheduling Strategy
 
-🌙 The task runs at or after 9 PM Pacific time — late enough that all daily content is in.
+🌙 The task runs at or after **10 PM Pacific time** — late enough that all daily content is in.
 
-🕐 We schedule at **hour 5 UTC**, which maps to:
-- 🌧️ PST (winter): exactly 9 PM
-- ☀️ PDT (summer): 10 PM (still "at or after 9 PM")
+🔁 The `atOrAfter` flag ensures resilient retry — if hour 22 fails, hour 23 will catch it.
+📅 Also checks yesterday's reflection if it's still untitled (catchup for missed days).
 
-🔁 The `atOrAfter` flag on the schedule entry ensures resilient retry — if hour 5 fails, hour 6 through 23 will catch it.
+## 🛡️ Safety Gate
 
-## 🤖 Prompt Engineering
+🚫 Untitled reflections are blocked from social media posting:
+- 📋 `isUntitledReflection()` checks if a reflection's title is just the bare date
+- ⛔ `isPostableContent()` returns false for untitled reflections
+- 🔒 `getPriorDayReflectionIfNeeded()` skips untitled reflections
 
-🎨 The Gemini prompt was reverse-engineered from the 20+ title examples:
-- 📝 System prompt defines the title format rules and category emoji legend
-- 📋 Recent titles are included as style reference examples
-- 📄 The full reflection note content is provided for thematic extraction
-- 🎯 Output is constrained to a single line — just the creative part, no date prefix
-
-## 🛡️ Resilience Features
+## 🔗 Shared Infrastructure
 
 | 🔧 Feature | 📝 Description |
 |-------------|----------------|
-| 🔄 Idempotency | ⏭️ Skips if title already contains ` \| ` separator |
-| 🔗 Model chain | 🤖 gemini-2.5-flash → gemini-2.5-flash-lite → gemini-3.1-flash-lite-preview |
-| ⏳ Retry | 🔁 Exponential backoff (2s, 4s, 8s) on transient errors |
-| 🧹 Response parsing | ✂️ Strips code fences, quotes, date prefixes, multi-line responses |
-| ⚙️ Env override | 🔧 `REFLECTION_TITLE_MODEL` for custom model selection |
+| 🔄 Retry logic | ♻️ Reuses `isRetriableError` from `generate-blog-post.ts` |
+| 🤖 Model chain | 🏆 gemini-2.5-flash (best) → gemini-2.5-flash-lite → gemini-3.1-flash-lite-preview |
+| ⏳ Backoff | 🔁 Exponential backoff (2s, 4s, 8s) on transient errors, 3 retries per model |
+| ⚙️ Env override | 🔧 `REFLECTION_TITLE_MODEL` prepends to the chain |
 
 ## 🧪 Testing Strategy
 
-✅ 37 tests organized across 5 suites verify every pure function:
-- 🔍 `reflectionNeedsTitle` — detects whether a title is just a bare date
-- 📝 `buildReflectionTitlePrompt` — validates prompt structure and example inclusion
-- ✂️ `parseReflectionTitle` — handles code fences, quotes, date prefixes
-- 🎨 `applyReflectionTitle` — frontmatter and H1 updates with content preservation
-- 🔗 Integration — applies title then verifies idempotency
+✅ 54 tests organized across 9 suites:
+- 🎨 `extractHeadingEmojis` — wiki links, markdown links, plain headings
+- 🏷️ `extractTrailingEmojis` — multi-heading extraction, deduplication
+- ✂️ `stripTitlePrefixes` — emoji stripping, date stripping, plain text
+- 📋 `extractLinkedTitles` — wiki/markdown links, heading exclusion, date prefix stripping
+- 🔍 `reflectionNeedsTitle` — bare date detection, titled detection
+- 📝 `buildReflectionTitlePrompt` — one-word-per-title instructions, examples, numbering
+- 🧹 `parseReflectionTitle` — code fences, quotes, date prefixes
+- 🎨 `applyReflectionTitle` — frontmatter/H1 updates, content preservation, idempotency
+- 🔗 Integration — needsTitle → applyTitle → no longer needsTitle
 
 ## 📚 Book Recommendations
 

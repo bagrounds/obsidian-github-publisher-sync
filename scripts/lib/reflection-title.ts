@@ -2,17 +2,23 @@
  * Reflection Title Generation
  *
  * Generates creative, emoji-enriched titles for daily reflection notes
- * using Gemini AI. Reads the note content, produces a thematic title
- * capturing the day's key themes as emoji+keyword pairs, and writes it
- * to the H1 heading plus the title and aliases frontmatter fields.
+ * using Gemini AI. The title generation follows a specific creative game:
  *
- * Pure functions handle prompt construction and title application;
- * I/O functions handle Gemini calls and filesystem operations.
+ * 1. Deterministically extract linked content titles from the note body
+ * 2. Deterministically extract trailing category emojis from section headings
+ * 3. Ask Gemini to play the "one word per title" game — pick exactly one
+ *    interesting word from each content title to form a meaningful phrase,
+ *    then prefix each word with an emoji
+ * 4. Append the deterministic trailing category emojis
+ *
+ * Pure functions handle deterministic prep (extraction, application);
+ * Gemini handles only the creative "word selection + phrase building" step.
  *
  * @module reflection-title
  */
 
 import yaml from "js-yaml";
+import { isRetriableError } from "../generate-blog-post.ts";
 
 // ---------------------------------------------------------------------------
 // Constants
@@ -31,7 +37,94 @@ const YAML_OPTS: yaml.DumpOptions & yaml.LoadOptions = {
 };
 
 // ---------------------------------------------------------------------------
-// Pure functions
+// Deterministic extraction — pure functions
+// ---------------------------------------------------------------------------
+
+/**
+ * Extracts the leading emojis from a section heading line.
+ * Given `## [📚 Books](...)` or `## [[books/index|📚 Books]]`, returns "📚".
+ * Given `## 🤖🐲 AI Fiction`, returns "🤖🐲".
+ */
+export const extractHeadingEmojis = (heading: string): string => {
+  const withoutHashes = heading.replace(/^#{1,6}\s+/, "");
+  const linkContent = withoutHashes.match(/\[([^\]]*)\]/)
+    ? (withoutHashes.match(/\[([^\]]*)\]/)?.[1] ?? withoutHashes)
+    : withoutHashes;
+  const pipeContent = linkContent.includes("|")
+    ? linkContent.split("|").pop()!.trim()
+    : linkContent.trim();
+  const emojiMatch = pipeContent.match(/^([\p{Emoji_Presentation}\p{Emoji}\u200d\ufe0f\s]+)/u);
+  return emojiMatch ? emojiMatch[1]!.trim() : "";
+};
+
+/**
+ * Extracts trailing category emojis from all H2 section headings in a note.
+ * Returns a deduplicated string of leading emojis from each section.
+ */
+export const extractTrailingEmojis = (noteContent: string): string => {
+  const lines = noteContent.split("\n");
+  const seen = new Set<string>();
+  const emojis: string[] = [];
+
+  lines
+    .filter((line) => /^##\s/.test(line))
+    .forEach((line) => {
+      const extracted = extractHeadingEmojis(line);
+      if (extracted && !seen.has(extracted)) {
+        seen.add(extracted);
+        emojis.push(extracted);
+      }
+    });
+
+  return emojis.join("");
+};
+
+/**
+ * Strips emoji prefixes and date prefixes from a linked content title.
+ * `🕵️ Fugitive Telemetry` → `Fugitive Telemetry`
+ * `2026-03-23 | 🐔 A Gentle Afternoon` → `A Gentle Afternoon`
+ */
+export const stripTitlePrefixes = (title: string): string =>
+  title
+    .replace(/^\d{4}-\d{2}-\d{2}\s*\|\s*/, "")
+    .replace(/^[\p{Emoji_Presentation}\p{Emoji}\u200d\ufe0f\s]+/u, "")
+    .trim();
+
+/**
+ * Extracts the display text of linked content from reflection list items.
+ * Matches both markdown links `[Display Text](path)` and wiki links `[[path|Display Text]]`.
+ * Only extracts from list items (lines starting with `-`), not headings.
+ * Strips date prefixes and emoji prefixes from the extracted titles.
+ */
+export const extractLinkedTitles = (noteContent: string): readonly string[] => {
+  const { body } = splitFrontmatter(noteContent);
+  const lines = body.split("\n");
+
+  return lines
+    .filter((line) => /^-\s/.test(line.trim()))
+    .flatMap((line) => {
+      const titles: string[] = [];
+
+      // Markdown links: [Display Text](path.md)
+      const mdMatches = [...line.matchAll(/\[([^\]]+)\]\([^)]+\.md\)/g)];
+      mdMatches.forEach((m) => titles.push(m[1]!));
+
+      // Wiki links: [[path|Display Text]] or [[path]]
+      const wikiMatches = [...line.matchAll(/\[\[([^\]]+)\]\]/g)];
+      wikiMatches.forEach((m) => {
+        const content = m[1]!;
+        const display = content.includes("|") ? content.split("|").pop()!.trim() : content.trim();
+        titles.push(display);
+      });
+
+      return titles;
+    })
+    .map(stripTitlePrefixes)
+    .filter((t) => t.length > 0);
+};
+
+// ---------------------------------------------------------------------------
+// Idempotency check
 // ---------------------------------------------------------------------------
 
 /**
@@ -49,53 +142,53 @@ export const reflectionNeedsTitle = (content: string, date: string): boolean => 
   return titleValue === date;
 };
 
+// ---------------------------------------------------------------------------
+// Prompt construction
+// ---------------------------------------------------------------------------
+
 /**
  * Builds the Gemini prompt for reflection title generation.
  *
- * Returns a system prompt with title format rules, category emoji legend,
- * and recent title examples for style reference, plus a user prompt
- * containing the full reflection note content for thematic extraction.
+ * The prompt gives Gemini a focused creative task: given a list of content
+ * titles from the day, pick exactly one interesting word from each title
+ * to form a meaningful phrase, then prefix each word with a relevant emoji.
  *
- * @param noteContent - Full markdown content of the reflection note
- * @param recentTitles - Creative portions (after the pipe) of recent titles, used as style examples
+ * Trailing category emojis are computed deterministically and appended by
+ * the caller — Gemini does NOT produce them.
  */
 export const buildReflectionTitlePrompt = (
-  noteContent: string,
+  linkedTitles: readonly string[],
   recentTitles: readonly string[],
 ): { readonly system: string; readonly user: string } => {
   const examplesBlock = recentTitles
     .map((t) => `- ${t}`)
     .join("\n");
 
-  const system = `You generate short, creative, emoji-enriched titles for daily reflection notes.
+  const system = `You create short, creative titles from a list of content titles.
 
-TITLE FORMAT RULES:
-- A sequence of emoji+keyword pairs capturing the day's key themes
-- Each concept gets 1–3 relevant emojis immediately followed by 1–2 words
-- Vary style: sometimes create poetic connections between concepts, other times use terse keyword pairs
-- End with a trailing cluster of category emojis indicating which content sections appeared
-- Keep the title concise: typically 3–10 emoji+keyword pairs plus trailing category emojis
-- Draw keywords from blog post titles/themes, book titles, video topics, news items, and personal activities in the note
-- Do NOT include the date prefix — output only the creative part
+THE GAME:
+1. You receive a list of content titles (books, blog posts, videos, etc.)
+2. Pick exactly ONE interesting or evocative word from each title
+3. Arrange these words into a short, meaningful phrase or sentence fragment
+4. Prefix each meaningful word with 1-2 relevant emojis (skip filler words like "and", "of", "the")
+5. The result should be interesting, keyword-dense, and remind the reader of each piece of content
 
-CATEGORY EMOJIS (append all that apply):
-📚 = Books section present
-🐔 = Chickie Loo section present (chicken/ranch stories)
-🤖 = Auto Blog Zero section present (AI/tech content)
-🏛️ = Systems for Public Good section present (governance/policy)
-📺 = Videos section present
-📰 = News section present
-📄 = Articles or documents section present
-🎮 = Games section present
-🎤 = Audio/podcast section present
-💻 = Programming/coding section present
+RULES:
+- Use exactly one word from EACH content title (not zero, not two)
+- The words should form something coherent — a phrase, a poetic sentence, a fun juxtaposition — NOT random word salad
+- Keep it concise (typically 3-10 emoji+word pairs)
+- Do NOT include any trailing category emojis — those are added separately
+- Do NOT include any date prefix
+- Output a single line of text only
 
-RECENT TITLE EXAMPLES (for style reference):
-${examplesBlock}
+GOOD TITLE EXAMPLES (for style reference):
+${examplesBlock}`;
 
-OUTPUT: A single line of text — only the creative title. No date prefix, no quotes, no markdown formatting.`;
+  const titlesBlock = linkedTitles
+    .map((t, i) => `${i + 1}. ${t}`)
+    .join("\n");
 
-  const user = `Generate a creative emoji-enriched title for the following daily reflection note:\n\n${noteContent}`;
+  const user = `Pick one word from each of these content titles and create a creative emoji-enriched title:\n\n${titlesBlock}`;
 
   return { system, user };
 };
@@ -183,29 +276,11 @@ const escapeRegex = (s: string): string =>
   s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 
 // ---------------------------------------------------------------------------
-// Gemini API (simple single-call with retry and model chain)
+// Gemini API — reuses isRetriableError from generate-blog-post.ts
 // ---------------------------------------------------------------------------
 
 const delay = (ms: number): Promise<void> =>
   new Promise((resolve) => setTimeout(resolve, ms));
-
-const isRetriableError = (error: unknown): boolean => {
-  if (!error || typeof error !== "object") return false;
-  const status = (error as { status?: number }).status;
-  const message = String((error as { message?: string }).message ?? "");
-  return (
-    message.includes("429") ||
-    message.includes("RESOURCE_EXHAUSTED") ||
-    message.includes("quota") ||
-    status === 429 ||
-    (status !== undefined && status >= 500 && status < 600) ||
-    message.includes("503") ||
-    message.includes("502") ||
-    message.includes("500") ||
-    message.includes("INTERNAL") ||
-    message.includes("UNAVAILABLE")
-  );
-};
 
 const callGeminiOnce = async (
   apiKey: string,
@@ -292,9 +367,17 @@ export interface ReflectionTitleResult {
 export const generateReflectionTitle = async (
   config: ReflectionTitleConfig,
 ): Promise<ReflectionTitleResult> => {
-  const prompt = buildReflectionTitlePrompt(config.noteContent, config.recentTitles);
+  // 1. Deterministic extraction
+  const linkedTitles = extractLinkedTitles(config.noteContent);
+  const trailingEmojis = extractTrailingEmojis(config.noteContent);
+
+  // 2. AI: play the "one word per title" game
+  const prompt = buildReflectionTitlePrompt(linkedTitles, config.recentTitles);
   const { text, model } = await callGeminiModelChain(config.apiKey, config.models, prompt);
-  const title = parseReflectionTitle(text);
+  const creativePart = parseReflectionTitle(text);
+
+  // 3. Deterministic assembly: creative part + trailing category emojis
+  const title = trailingEmojis ? `${creativePart} ${trailingEmojis}` : creativePart;
   const fullTitle = `${config.date} | ${title}`;
   const updatedContent = applyReflectionTitle(config.noteContent, config.date, title);
 

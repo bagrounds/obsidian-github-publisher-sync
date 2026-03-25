@@ -6,6 +6,10 @@ import {
   buildReflectionTitlePrompt,
   parseReflectionTitle,
   applyReflectionTitle,
+  extractLinkedTitles,
+  extractTrailingEmojis,
+  extractHeadingEmojis,
+  stripTitlePrefixes,
 } from "./reflection-title.ts";
 
 // ---------------------------------------------------------------------------
@@ -50,11 +54,132 @@ tags:
 
 const RECENT_TITLES = [
   "🕊️ Gentle 🚪 Constraint 🏛️ Commons 📚🐔🤖🏛️📺",
-  "🕷️⏳ Children 🧠 Memory 🐔 Heavy 💔 Stewardship 📚🐔🤖📄📰",
-  "🤖 Synthetic 🧠 Intelligence 💭 Thinks 🔍 about 🧬 Meaning 📚🐔🤖📺",
-  "🧖🏼‍♀️ Sauna 🎣 Bass 🤖 Autonomy 📖 Book 📚🐔🤖📺",
+  "🫂 Tight 🏗️ Functional 🤖 Agentic 🗣️ Breathe 📚",
   "🧠 Evolution, 🏰 Empire, and the 🎷 Symphony of 🐔 Chickie 🎵 Loo 📚🐔🤖📺",
 ] as const;
+
+// ---------------------------------------------------------------------------
+// extractHeadingEmojis
+// ---------------------------------------------------------------------------
+
+describe("extractHeadingEmojis", () => {
+  it("extracts emojis from wiki link heading", () => {
+    assert.equal(extractHeadingEmojis("## [[chickie-loo/index|🐔 Chickie Loo]]"), "🐔");
+  });
+
+  it("extracts emojis from markdown link heading", () => {
+    assert.equal(extractHeadingEmojis("## [📚 Books](../books/index.md)"), "📚");
+  });
+
+  it("extracts emojis from plain heading", () => {
+    assert.equal(extractHeadingEmojis("## 🤖🐲 AI Fiction"), "🤖🐲");
+  });
+
+  it("returns empty for heading without emojis", () => {
+    assert.equal(extractHeadingEmojis("## Plain Heading"), "");
+  });
+});
+
+// ---------------------------------------------------------------------------
+// extractTrailingEmojis
+// ---------------------------------------------------------------------------
+
+describe("extractTrailingEmojis", () => {
+  it("extracts emojis from all section headings", () => {
+    const result = extractTrailingEmojis(SAMPLE_REFLECTION);
+    assert.ok(result.includes("🐔"));
+    assert.ok(result.includes("🤖"));
+    assert.ok(result.includes("📚"));
+  });
+
+  it("deduplicates section emojis", () => {
+    const note = "## [[a|📚 Books]]\n## [[b|📚 More Books]]\n";
+    const result = extractTrailingEmojis(note);
+    assert.equal(result, "📚");
+  });
+});
+
+// ---------------------------------------------------------------------------
+// stripTitlePrefixes
+// ---------------------------------------------------------------------------
+
+describe("stripTitlePrefixes", () => {
+  it("strips emoji prefix", () => {
+    assert.equal(stripTitlePrefixes("🕵️ Fugitive Telemetry"), "Fugitive Telemetry");
+  });
+
+  it("strips date prefix", () => {
+    assert.equal(
+      stripTitlePrefixes("2026-03-23 | 🐔 A Gentle Afternoon"),
+      "A Gentle Afternoon",
+    );
+  });
+
+  it("strips date and emoji prefix", () => {
+    assert.equal(
+      stripTitlePrefixes("2026-03-23 | 🤖 The Eleventh Hour"),
+      "The Eleventh Hour",
+    );
+  });
+
+  it("returns plain text unchanged", () => {
+    assert.equal(stripTitlePrefixes("Hold Me Tight"), "Hold Me Tight");
+  });
+});
+
+// ---------------------------------------------------------------------------
+// extractLinkedTitles
+// ---------------------------------------------------------------------------
+
+describe("extractLinkedTitles", () => {
+  it("extracts wiki link titles from list items", () => {
+    const titles = extractLinkedTitles(SAMPLE_REFLECTION);
+    assert.ok(titles.some((t) => t.includes("Finding Peace")));
+    assert.ok(titles.some((t) => t.includes("Eleventh Hour")));
+    assert.ok(titles.some((t) => t.includes("Fugitive Telemetry")));
+  });
+
+  it("strips emoji prefixes from titles", () => {
+    const titles = extractLinkedTitles(SAMPLE_REFLECTION);
+    titles.forEach((t) => {
+      assert.ok(!t.match(/^[\p{Emoji_Presentation}]/u), `Title should not start with emoji: ${t}`);
+    });
+  });
+
+  it("extracts markdown link titles from list items", () => {
+    const note = `---
+title: test
+---
+## [📚 Books](../books/index.md)
+- [⚡🔮🤖 Power and Prediction](../books/power-and-prediction.md)
+- [🕵️ Fugitive Telemetry](../books/fugitive-telemetry.md)
+`;
+    const titles = extractLinkedTitles(note);
+    assert.ok(titles.some((t) => t.includes("Power and Prediction")));
+    assert.ok(titles.some((t) => t.includes("Fugitive Telemetry")));
+  });
+
+  it("does not extract from headings", () => {
+    const note = `---
+title: test
+---
+## [[books/index|📚 Books]]
+No list items here
+`;
+    const titles = extractLinkedTitles(note);
+    assert.equal(titles.length, 0);
+  });
+
+  it("strips date prefixes from blog post titles", () => {
+    const note = `---
+title: test
+---
+- [[chickie-loo/2026-03-23-test|2026-03-23 | 🐔 A Gentle Afternoon]]
+`;
+    const titles = extractLinkedTitles(note);
+    assert.ok(titles.some((t) => t === "A Gentle Afternoon"));
+  });
+});
 
 // ---------------------------------------------------------------------------
 // reflectionNeedsTitle
@@ -97,14 +222,20 @@ describe("reflectionNeedsTitle", () => {
 // ---------------------------------------------------------------------------
 
 describe("buildReflectionTitlePrompt", () => {
+  const linkedTitles = [
+    "Finding Peace in the Practical Rhythms of the Ranch",
+    "The Eleventh Hour: Witnessing the Architecture of Survival",
+    "Fugitive Telemetry",
+  ];
+
   it("returns system and user prompts", () => {
-    const prompt = buildReflectionTitlePrompt(SAMPLE_REFLECTION, RECENT_TITLES);
+    const prompt = buildReflectionTitlePrompt(linkedTitles, RECENT_TITLES);
     assert.ok(prompt.system.length > 0);
     assert.ok(prompt.user.length > 0);
   });
 
   it("includes recent titles in the system prompt", () => {
-    const prompt = buildReflectionTitlePrompt(SAMPLE_REFLECTION, RECENT_TITLES);
+    const prompt = buildReflectionTitlePrompt(linkedTitles, RECENT_TITLES);
     RECENT_TITLES.forEach((title) => {
       assert.ok(
         prompt.system.includes(title),
@@ -113,28 +244,38 @@ describe("buildReflectionTitlePrompt", () => {
     });
   });
 
-  it("includes note content in the user prompt", () => {
-    const prompt = buildReflectionTitlePrompt(SAMPLE_REFLECTION, RECENT_TITLES);
-    assert.ok(prompt.user.includes("Chickie Loo"));
+  it("includes linked content titles in the user prompt", () => {
+    const prompt = buildReflectionTitlePrompt(linkedTitles, RECENT_TITLES);
+    assert.ok(prompt.user.includes("Finding Peace"));
     assert.ok(prompt.user.includes("Fugitive Telemetry"));
   });
 
-  it("mentions category emojis in the system prompt", () => {
-    const prompt = buildReflectionTitlePrompt(SAMPLE_REFLECTION, RECENT_TITLES);
-    assert.ok(prompt.system.includes("📚"));
-    assert.ok(prompt.system.includes("🐔"));
-    assert.ok(prompt.system.includes("🤖"));
-  });
-
   it("instructs single-line output", () => {
-    const prompt = buildReflectionTitlePrompt(SAMPLE_REFLECTION, RECENT_TITLES);
+    const prompt = buildReflectionTitlePrompt(linkedTitles, RECENT_TITLES);
     assert.ok(prompt.system.includes("single line"));
   });
 
+  it("instructs one word from each title", () => {
+    const prompt = buildReflectionTitlePrompt(linkedTitles, RECENT_TITLES);
+    assert.ok(prompt.system.includes("ONE interesting"));
+    assert.ok(prompt.system.includes("one word from EACH"));
+  });
+
+  it("instructs NOT to include trailing emojis", () => {
+    const prompt = buildReflectionTitlePrompt(linkedTitles, RECENT_TITLES);
+    assert.ok(prompt.system.includes("Do NOT include any trailing category emojis"));
+  });
+
   it("works with empty recent titles", () => {
-    const prompt = buildReflectionTitlePrompt(SAMPLE_REFLECTION, []);
+    const prompt = buildReflectionTitlePrompt(linkedTitles, []);
     assert.ok(prompt.system.length > 0);
     assert.ok(prompt.user.length > 0);
+  });
+
+  it("numbers titles in user prompt", () => {
+    const prompt = buildReflectionTitlePrompt(linkedTitles, RECENT_TITLES);
+    assert.ok(prompt.user.includes("1. Finding Peace"));
+    assert.ok(prompt.user.includes("3. Fugitive Telemetry"));
   });
 });
 
@@ -279,7 +420,7 @@ describe("applyReflectionTitle", () => {
 });
 
 // ---------------------------------------------------------------------------
-// Integration: reflectionNeedsTitle + applyReflectionTitle
+// Integration: needsTitle → applyTitle → no longer needsTitle
 // ---------------------------------------------------------------------------
 
 describe("integration: needsTitle → applyTitle → no longer needsTitle", () => {

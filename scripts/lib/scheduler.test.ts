@@ -12,21 +12,23 @@ import {
   isValidTaskId,
   extractSeriesId,
   blogPostExistsForToday,
+  nowPacificHour,
   type TaskId,
 } from "./scheduler.ts";
 
 // ---------------------------------------------------------------------------
 // getScheduledTasks — "at or after" for blog series and atOrAfter entries, exact for others
+// All times are now declared in Pacific time.
 // ---------------------------------------------------------------------------
 
 describe("getScheduledTasks", () => {
-  it("returns chickie-loo at its scheduled hour 15", () => {
-    const tasks = getScheduledTasks(15);
+  it("returns chickie-loo at its scheduled Pacific hour 7", () => {
+    const tasks = getScheduledTasks(7);
     assert.ok(tasks.includes("blog-series:chickie-loo"));
   });
 
   it("returns chickie-loo at hours AFTER its scheduled hour (resilient retry)", () => {
-    [16, 17, 18, 23].forEach((hour) => {
+    [8, 9, 10, 23].forEach((hour) => {
       const tasks = getScheduledTasks(hour);
       assert.ok(
         tasks.includes("blog-series:chickie-loo"),
@@ -36,7 +38,7 @@ describe("getScheduledTasks", () => {
   });
 
   it("does NOT return chickie-loo before its scheduled hour", () => {
-    [0, 1, 14].forEach((hour) => {
+    [0, 1, 6].forEach((hour) => {
       const tasks = getScheduledTasks(hour);
       assert.ok(
         !tasks.includes("blog-series:chickie-loo"),
@@ -45,33 +47,32 @@ describe("getScheduledTasks", () => {
     });
   });
 
-  it("returns auto-blog-zero at and after hour 16", () => {
-    assert.ok(getScheduledTasks(16).includes("blog-series:auto-blog-zero"));
-    assert.ok(getScheduledTasks(17).includes("blog-series:auto-blog-zero"));
-    assert.ok(!getScheduledTasks(15).includes("blog-series:auto-blog-zero"));
+  it("returns auto-blog-zero at and after hour 8", () => {
+    assert.ok(getScheduledTasks(8).includes("blog-series:auto-blog-zero"));
+    assert.ok(getScheduledTasks(9).includes("blog-series:auto-blog-zero"));
+    assert.ok(!getScheduledTasks(7).includes("blog-series:auto-blog-zero"));
   });
 
-  it("returns systems-for-public-good at and after hour 17", () => {
-    assert.ok(getScheduledTasks(17).includes("blog-series:systems-for-public-good"));
+  it("returns systems-for-public-good at and after hour 9", () => {
+    assert.ok(getScheduledTasks(9).includes("blog-series:systems-for-public-good"));
     assert.ok(getScheduledTasks(23).includes("blog-series:systems-for-public-good"));
-    assert.ok(!getScheduledTasks(16).includes("blog-series:systems-for-public-good"));
+    assert.ok(!getScheduledTasks(8).includes("blog-series:systems-for-public-good"));
   });
 
-  it("at hour 17, returns all three blog series (resilient catchup)", () => {
-    const tasks = getScheduledTasks(17);
+  it("at hour 9, returns all three blog series (resilient catchup)", () => {
+    const tasks = getScheduledTasks(9);
     assert.ok(tasks.includes("blog-series:chickie-loo"));
     assert.ok(tasks.includes("blog-series:auto-blog-zero"));
     assert.ok(tasks.includes("blog-series:systems-for-public-good"));
   });
 
-  it("returns reflection-title at and after hour 5 (at-or-after scheduling)", () => {
-    assert.ok(getScheduledTasks(5).includes("reflection-title"));
-    assert.ok(getScheduledTasks(6).includes("reflection-title"));
+  it("returns reflection-title at and after hour 22 (at-or-after scheduling)", () => {
+    assert.ok(getScheduledTasks(22).includes("reflection-title"));
     assert.ok(getScheduledTasks(23).includes("reflection-title"));
   });
 
-  it("does NOT return reflection-title before hour 5", () => {
-    [0, 1, 2, 3, 4].forEach((hour) => {
+  it("does NOT return reflection-title before hour 22", () => {
+    [0, 1, 10, 15, 21].forEach((hour) => {
       assert.ok(
         !getScheduledTasks(hour).includes("reflection-title"),
         `reflection-title should NOT be eligible at hour ${hour}`,
@@ -138,10 +139,11 @@ describe("getScheduledTasks", () => {
     assert.ok(tasksAt6.includes("internal-linking"));
     assert.ok(tasksAt6.includes("social-posting"));
 
-    const tasksAt8 = getScheduledTasks(8);
-    assert.ok(tasksAt8.includes("internal-linking"));
-    assert.ok(tasksAt8.includes("backfill-blog-images"));
-    assert.ok(tasksAt8.includes("social-posting"));
+    const tasksAt10 = getScheduledTasks(10);
+    assert.ok(tasksAt10.includes("internal-linking"));
+    assert.ok(tasksAt10.includes("backfill-blog-images"));
+    assert.ok(tasksAt10.includes("social-posting"));
+    assert.ok(tasksAt10.includes("blog-series:chickie-loo"));
   });
 
   // Property: every hour returns only valid task IDs
@@ -172,7 +174,7 @@ describe("getScheduledTasks", () => {
 describe("SCHEDULE", () => {
   it("contains only valid hours (0-23)", () => {
     SCHEDULE.forEach((entry) => {
-      entry.hoursUtc.forEach((h) => {
+      entry.hoursPacific.forEach((h) => {
         assert.ok(h >= 0 && h <= 23, `Invalid hour ${h} for task ${entry.taskId}`);
       });
     });
@@ -185,7 +187,7 @@ describe("SCHEDULE", () => {
 
   it("has no duplicate hours within an entry", () => {
     SCHEDULE.forEach((entry) => {
-      const hours = entry.hoursUtc;
+      const hours = entry.hoursPacific;
       assert.equal(
         hours.length,
         new Set(hours).size,
@@ -343,5 +345,28 @@ describe("blogPostExistsForToday", () => {
     } finally {
       fs.rmSync(tmpDir, { recursive: true });
     }
+  });
+});
+
+// ---------------------------------------------------------------------------
+// nowPacificHour
+// ---------------------------------------------------------------------------
+
+describe("nowPacificHour", () => {
+  it("returns a number between 0 and 23", () => {
+    const hour = nowPacificHour();
+    assert.ok(hour >= 0 && hour <= 23, `Hour ${hour} is out of range`);
+  });
+
+  it("accepts an injected Date", () => {
+    // 2026-03-25T06:00:00Z = 11 PM PDT (March 24, 2026 — PDT active)
+    const hour = nowPacificHour(new Date("2026-03-25T06:00:00Z"));
+    assert.equal(hour, 23);
+  });
+
+  it("handles PST (winter) correctly", () => {
+    // 2026-01-15T08:00:00Z = midnight PST
+    const hour = nowPacificHour(new Date("2026-01-15T08:00:00Z"));
+    assert.equal(hour, 0);
   });
 });

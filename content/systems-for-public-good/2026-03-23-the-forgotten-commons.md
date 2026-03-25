@@ -3,11 +3,11 @@ aliases:
   - 2026-03-23 | 🏛️ The Forgotten Commons — Why Public Good Matters More Than Ever 🏛️
 title: 2026-03-23 | 🏛️ The Forgotten Commons — Why Public Good Matters More Than Ever 🏛️
 share: true
-updated: 2026-03-24T16:24:18.213Z
-image_date: 2026-03-24T06:32:41.383Z
+updated: 2026-03-24T23:38:58.865Z
+image_date: 2026-03-24T23:38:58.864Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
-regenerate_image: true
-image_prompt:
+regenerate_image: false
+image_prompt: A sprawling, sun-drenched urban park serving as the focal point of a vibrant, interconnected city. In the foreground, a diverse group of people—students, families, and elderly individuals—interact naturally, emphasizing communal activity. To one side, a grand, classical-style library with open doors invites visitors in, while in the background, modern public transit lines and lush green walking paths weave seamlessly through the cityscape. The color palette is bright and inviting, using soft natural greens, warm earth tones, and clean, architectural whites. The composition balances open communal space with essential infrastructure, capturing the essence of shared prosperity and public accessibility. The image has a painterly, optimistic aesthetic with soft, golden-hour lighting that emphasizes harmony between humanity and the structures built to support them.
 force_analyze_links: false
 link_analysis_time: 2026-03-24T07:49:40.354Z
 link_analysis_model: gemini-3.1-flash-lite-preview

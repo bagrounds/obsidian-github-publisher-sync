@@ -9,7 +9,7 @@ tags:
 image_date: 2026-03-24T17:24:49.454Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A stylized illustration featuring a strong, healthy tree with deeply intertwined roots. These roots are visibly anchored into a layered foundation, where subtle elements like an open book, a simplified house silhouette, and a guiding hand are integrated, representing public goods. The trees vibrant branches extend upwards towards a bright, expansive sky, filled with soft, warm light and abstract swirling paths indicating progress and opportunity. The palette is harmonious, blending earthy tones with hopeful blues and yellows.
-updated: 2026-03-24T20:13:40.456Z
+updated: 2026-03-24T23:38:58.865Z
 force_analyze_links: false
 link_analysis_time: 2026-03-24T22:25:44.721Z
 link_analysis_model: gemini-3.1-flash-lite-preview

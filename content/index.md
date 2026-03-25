@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-03-25T09:43:40-07:00
+updated: 2026-03-25T11:31:13-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -42,7 +42,8 @@ updated: 2026-03-25T09:43:40-07:00
 - [2026-03-22 | 🐔 2026-03-22 | 📊 Weekly Recap 🐔 🐔](./chickie-loo/2026-03-22-weekly-recap.md)  
   
   
-## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (3)  
+## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (4)  
+- [2026-03-25 | 🏛️ ⚖️ The Interplay of Freedoms: When My Liberty Meets Yours 🏛️](./systems-for-public-good/2026-03-25-the-interplay-of-freedoms-when-my-liberty-meets-yours.md)  
 - [2026-03-24 | 🏛️ 🫂 The Foundations of Freedom - A Personal Journey into Public Good 🏛️](./systems-for-public-good/2026-03-24-the-foundations-of-freedom-a-personal-journey-into-public-good.md)  
 - [2026-03-23 | 🏛️ The Forgotten Commons — Why Public Good Matters More Than Ever 🏛️](./systems-for-public-good/2026-03-23-the-forgotten-commons.md)  
   

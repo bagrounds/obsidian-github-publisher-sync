@@ -8,6 +8,9 @@ Author:
 tags:
 affiliate link: https://amzn.to/3FFG4Am
 updated: 2026-03-15T08:10:46.012Z
+force_analyze_links: false
+link_analysis_time: 2026-03-25T19:21:10.658Z
+link_analysis_model: gemini-3.1-flash-lite-preview
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 💺🚪💡🤔 The Design of Everyday Things  

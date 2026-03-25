@@ -4,6 +4,9 @@ aliases:
   - 🌲🪜🧠 A Hierarchical View of Human Knowledge
 title: 🌲🪜🧠 A Hierarchical View of Human Knowledge
 URL: https://bagrounds.org/topics/a-hierarchical-view-of-human-knowledge
+force_analyze_links: false
+link_analysis_time: 2026-03-25T23:13:22.807Z
+link_analysis_model: gemini-3.1-flash-lite-preview
 ---
 [Home](../index.md) > [Topics](./index.md)  
 # 🌲🪜🧠 A Hierarchical View of Human Knowledge  

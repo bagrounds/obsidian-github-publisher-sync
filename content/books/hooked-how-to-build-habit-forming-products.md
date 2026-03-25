@@ -7,6 +7,9 @@ share: true
 CTA: 📱 Design engagement.
 affiliate link: https://amzn.to/48vvWGq
 updated: 2026-03-24T22:26:21.418Z
+force_analyze_links: false
+link_analysis_time: 2026-03-25T08:15:16.675Z
+link_analysis_model: gemini-3.1-flash-lite-preview
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🎣📱 Hooked: How to Build Habit-Forming Products  

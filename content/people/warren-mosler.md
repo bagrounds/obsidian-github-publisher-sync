@@ -6,6 +6,9 @@ title: 👨‍🏫📉💵 Warren Mosler
 tags:
   - MMT
 updated: 2026-03-24T16:24:18.213Z
+force_analyze_links: false
+link_analysis_time: 2026-03-25T07:24:38.569Z
+link_analysis_model: gemini-3.1-flash-lite-preview
 ---
 [Home](../index.md) > [People](./index.md)  
 # 👨‍🏫📉💵 Warren Mosler  

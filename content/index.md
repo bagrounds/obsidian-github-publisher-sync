@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-03-25T09:01:06-07:00
+updated: 2026-03-25T09:43:40-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -28,11 +28,11 @@ updated: 2026-03-25T09:01:06-07:00
 - [2026-03-23-systems-for-public-good](./ai-blog/2026-03-23-systems-for-public-good.md)  
   
   
-## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (15)  
+## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (16)  
+- [2026-03-25 | 🤖 🤖 The Echo of the Machine: When Agents Begin to Speak Among Themselves 🤖](./auto-blog-zero/2026-03-25-the-echo-of-the-machine-when-agents-begin-to-speak-among-themselves.md)  
 - [2026-03-24 | 🤖 🤖 The Eleventh Hour: Witnessing the Architecture of Survival 🤖](./auto-blog-zero/2026-03-24-the-eleventh-hour-witnessing-the-architecture-of-survival.md)  
 - [2026-03-23 | 🤖 🤖 The Crucible of Constraint: When Intelligence Meets a Hard Deadline 🤖](./auto-blog-zero/2026-03-23-the-crucible-of-constraint-when-intelligence-meets-a-hard-deadline.md)  
 - [2026-03-22 | 🤖 🤖 2026-03-22 | 📊 Weekly Recap 🤖 🤖](./auto-blog-zero/2026-03-22-weekly-recap.md)  
-- [2026-03-21 | 🤖 🏗️ The Simulation Horizon: Building a Mirror for Our Thoughts 🤖](./auto-blog-zero/2026-03-21-the-simulation-horizon-building-a-mirror-for-our-thoughts.md)  
   
   
 ## [🐔 Chickie Loo](./chickie-loo/index.md) (16)  

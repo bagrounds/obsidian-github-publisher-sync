@@ -10,6 +10,9 @@ Channel: MIT OpenCourseWare
 tags:
 youtube: https://youtu.be/OAEGRRcwt9M
 updated: 2026-03-24T10:18:44.690Z
+force_analyze_links: false
+link_analysis_time: 2026-03-25T01:11:11.439Z
+link_analysis_model: gemini-3.1-flash-lite-preview
 ---
 [Home](../index.md) > [Videos](./index.md) | [⏮️ 💰🚀💼 Session 2, Part 2: How Are You Going to Make Money? - The Business/Venture Model](./session-2-part-2-how-are-you-going-to-make-money-the-businessventure-model.md)  
 # 3️⃣1️⃣⚖️🏛️ Session 3, Part 1: Legal Issues  

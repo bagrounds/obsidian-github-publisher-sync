@@ -7,7 +7,10 @@ URL: https://bagrounds.org/books/network-effect
 Author:
 tags:
 affiliate link: https://www.amazon.com/dp/1250229863?tag=bagrounds-20
-updated: 2026-03-25T00:50:25.103Z
+updated: 2026-03-25T04:40:42.267Z
+force_analyze_links: false
+link_analysis_time: 2026-03-25T03:02:40.483Z
+link_analysis_model: gemini-3.1-flash-lite-preview
 ---
 [Home](../index.md) > [Books](./index.md) | [⏮️ 🏃💨🚪 Exit Strategy](./exit-strategy.md) [⏭️ 🕵️ Fugitive Telemetry](./fugitive-telemetry.md)  
 # 🌐🤖🚀 Network Effect  
@@ -48,7 +51,7 @@ A: 🤓 The core voice remains consistent, but the expanded length permits deepe
   
 ### 📖 Non-Fiction  
   
-* 🦾 The Alignment Problem by Brian Christian  
+* 🦾 [⚖️🤖 The Alignment Problem](./the-alignment-problem.md) by Brian Christian  
 * [🧠👥 The Society of Mind](./the-society-of-mind.md) by Marvin Minsky  
   
 ### ❤️ If You Loved This  

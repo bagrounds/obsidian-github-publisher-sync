@@ -7,6 +7,9 @@ URL: https://bagrounds.org/topics/modern-monetary-theory
 tags:
   - MMT
 updated: 2026-03-24T14:28:01.710Z
+force_analyze_links: false
+link_analysis_time: 2026-03-25T06:23:39.009Z
+link_analysis_model: gemini-3.1-flash-lite-preview
 ---
 [Home](../index.md) > [Topics](./index.md) > [Knowledge](./a-hierarchical-view-of-human-knowledge.md) > [Social Sciences](./social-sciences.md) > [Economics](./economics.md) > [Heterodox Economics](./heterodox-economics.md)  
 # 🏦♾️📈💸 Modern Monetary Theory  

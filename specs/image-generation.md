@@ -52,7 +52,7 @@
 ```
 1. 📖 Read note content from disk
 2. ♻️ Check regenerate_image flag
-   ├─ true → Remove old embed, delete old image file, clear flag
+   ├─ true → Remove old embed, delete old image file, clear flag AND cached image_prompt
    └─ false → Continue
 3. 🔍 Check if image already embedded
    ├─ yes → Skip (return skipped: true)
@@ -84,6 +84,7 @@
    c. ⏭️ Skip and continue on non-quota errors
    d. 🔗 Update "chain" timestamps for all newer files in same directory
    e. 💤 Proactive rate limit delay between successful generations
+   f. 🎯 Stop if maxImages limit reached (default: 1 per hourly run)
 ```
 
 ---
@@ -140,7 +141,7 @@ Provider 5 (Gemini) → quota exhausted → stop job
 | `image_date` | 📅 ISO 8601 timestamp | When the image was generated | `processNote` |
 | `image_model` | 🤖 String | Model used for generation | `processNote` |
 | `image_prompt` | 💬 String | Prompt/description sent to image generator (doubles as description cache) | `processNote` |
-| `regenerate_image` | ✅ Boolean | Flag to force image regeneration | User (manual), cleared by `processNote` |
+| `regenerate_image` | ✅ Boolean (YAML native) | Flag to force image regeneration | User (manual), cleared by `processNote` |
 | `updated` | 📅 ISO 8601 timestamp | Last modification time | `backfillImages` (chain update) |
 
 ### 💾 Description Caching Strategy
@@ -155,7 +156,7 @@ Provider 5 (Gemini) → quota exhausted → stop job
 1. ✅ If `image_prompt` exists in frontmatter → use it directly (zero API calls for description)
 2. 🆕 If no `image_prompt` and describer available → call Gemini, sanitize output, store as `image_prompt`
 3. 📝 If no describer → build prompt from content directly
-4. ♻️ On image regeneration: reuse cached `image_prompt`, only regenerate the image itself
+4. ♻️ On image regeneration: clear cached `image_prompt` and generate a fresh description and image
 
 ### 🧹 Description Sanitization
 

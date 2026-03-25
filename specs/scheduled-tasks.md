@@ -51,8 +51,8 @@
 
 | 🕐 UTC Hour | 🏷️ Task ID | 📝 Description |
 |---|---|---|
-| 6 | `backfill-blog-images` | 🖼️ Backfill missing blog images (10 PM PT prev day) |
-| 8 | `internal-linking` | 🔗 BFS wikilink insertion (~midnight PT) |
+| Every hour | `backfill-blog-images` | 🖼️ Backfill 1 missing blog image per hour |
+| Every hour | `internal-linking` | 🔗 BFS wikilink insertion for 1 note per hour |
 | 0,2,4,6,8,10,12,14,16,18,20,22 | `social-posting` | 📢 Auto-post to X/Bluesky/Mastodon (every 2 hours) |
 
 ## 🔧 Blog Series Model Fallback Chain
@@ -68,6 +68,45 @@
 🔄 The `BLOG_GEMINI_MODEL` GitHub variable prepends to the chain when set.
 
 ## 🛡️ API Resilience
+
+### ⏱️ Inter-Task Rate Limit Protection
+
+🔒 When multiple tasks are scheduled at the same hour, a 30-second delay is inserted between each task to prevent per-minute API rate limit collisions across Gemini and other services.
+
+### 📊 Dashboard Links (Not Quota Checks)
+
+🔗 Instead of calling Gemini/GCP APIs to check quota capacity (which produced noisy logs with no actionable information), the orchestrator logs links to inference service dashboards at scheduler start for manual inspection:
+
+| 🏷️ Service | 🔗 Dashboard |
+|---|---|
+| Gemini API | https://aistudio.google.com/apikey |
+| GCP Quotas | https://console.cloud.google.com/iam-admin/quotas |
+| Cloudflare AI | https://dash.cloudflare.com/?to=/:account/ai/workers-ai |
+| Hugging Face | https://huggingface.co/settings/billing |
+| Together AI | https://api.together.ai/settings/billing |
+
+### 🔇 Aggregate Skip Logging
+
+📊 During image backfill, the `collectCandidates` function emits a single `candidates_collected` summary event instead of per-file `already_has_image` events. During internal linking, `skipped_already_analyzed` events are suppressed — skip counts are reported in the final completion summary via `filesSkipped`.
+
+### 📝 Plain Text Logging
+
+🔤 All orchestrator and library logging uses human-readable plain text with emoji prefixes instead of JSON structured events. JSON `{...}` objects were masked as `***` by GitHub Actions' secret redaction. Plain text log lines include:
+- 🎨 Image generation actions with file names and provider
+- 📖 Book identification results with identified books
+- ✏️ Link insertion details with matched text and targets
+- 📊 Aggregate counts for candidates, visited files, skips
+
+### 🎯 Per-Run Limits
+
+📊 Backfill tasks are deliberately limited to minimize inference costs and rate limit pressure:
+
+| 🏷️ Task | 📈 Limit | 📝 Rationale |
+|---|---|---|
+| `backfill-blog-images` | 1 image per run | 🖼️ Each image requires ~2 inference calls (describe + generate) |
+| `internal-linking` | 1 inference request per run | 🔗 Traverses all reachable files via BFS but only calls Gemini for 1 un-analyzed file per hour |
+
+🔄 With hourly scheduling, this achieves up to 24 images and 24 notes processed per day while staying well within free-tier rate limits.
 
 ### 🔄 5XX Retry with Exponential Backoff
 
@@ -109,6 +148,21 @@ npx tsx scripts/run-scheduled.ts --task blog-series:chickie-loo
 🔧 The `workflow_dispatch` trigger supports the same overrides:
 - `task` — Run a specific task instead of consulting the schedule
 - `hour` — Simulate a specific UTC hour
+
+### 📋 Run Summary
+
+📊 At the end of every orchestrator run, a human-readable summary block is printed showing each task's status:
+
+```
+--- Run Summary ---
+  ✅ backfill-blog-images
+  ✅ internal-linking
+  ❌ social-posting — GEMINI_API_KEY not set
+  📊 2/3 succeeded
+-------------------
+```
+
+🔍 This makes it easy to scroll to the bottom of CI logs and immediately see what happened.
 
 ## 🧪 Testing
 

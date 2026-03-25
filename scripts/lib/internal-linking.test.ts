@@ -406,26 +406,14 @@ describe("bfsTraversal", () => {
       "---\ntitle: Test Book Title Here\n---\nContent here",
     );
 
-    const visited = bfsTraversal(tmpDir.path, 10);
+    const visited = bfsTraversal(tmpDir.path);
     assert.equal(visited.length, 2);
     assert.equal(visited[0], "reflections/2026-03-21.md");
     assert.equal(visited[1], "books/test-book.md");
   });
 
-  it("respects maxVisit limit", () => {
-    fs.writeFileSync(
-      path.join(tmpDir.path, "reflections", "2026-03-21.md"),
-      "---\ntitle: 2026-03-21\n---\n[Book](../books/a.md) [Book](../books/b.md)",
-    );
-    fs.writeFileSync(path.join(tmpDir.path, "books", "a.md"), "---\ntitle: A\n---\nContent");
-    fs.writeFileSync(path.join(tmpDir.path, "books", "b.md"), "---\ntitle: B\n---\nContent");
-
-    const visited = bfsTraversal(tmpDir.path, 2);
-    assert.equal(visited.length, 2);
-  });
-
   it("returns empty array when no reflections exist", () => {
-    assert.deepEqual(bfsTraversal(tmpDir.path, 10), []);
+    assert.deepEqual(bfsTraversal(tmpDir.path), []);
   });
 
   it("skips index.md files", () => {
@@ -435,7 +423,7 @@ describe("bfsTraversal", () => {
     );
     fs.writeFileSync(path.join(tmpDir.path, "books", "index.md"), "---\ntitle: Index\n---\nContent");
 
-    const visited = bfsTraversal(tmpDir.path, 10);
+    const visited = bfsTraversal(tmpDir.path);
     assert.equal(visited.length, 1); // Only the reflection
   });
 
@@ -449,7 +437,7 @@ describe("bfsTraversal", () => {
       "---\ntitle: Test Book Title Here\n---\nContent",
     );
 
-    const visited = bfsTraversal(tmpDir.path, 10);
+    const visited = bfsTraversal(tmpDir.path);
     assert.equal(visited.length, 2);
     assert.ok(visited.includes("books/test-book.md"));
   });

@@ -190,6 +190,8 @@ export interface FileResult {
   readonly modified: boolean;
   /** Whether the file was skipped (already analyzed) */
   readonly skipped: boolean;
+  /** Whether this file triggered an inference API call */
+  readonly usedInference: boolean;
 }
 
 /** Result of the full internal linking run */
@@ -210,8 +212,8 @@ export interface RunResult {
 export interface LinkingConfig {
   /** Root content directory (absolute path) */
   readonly contentDir: string;
-  /** Maximum number of files to edit */
-  readonly maxFiles: number;
+  /** Maximum number of files that trigger inference API calls (undefined = unlimited) */
+  readonly maxInferenceRequests?: number;
   /** Gemini API key (if omitted, skips AI validation and uses deterministic-only mode) */
   readonly apiKey?: string;
   /** Gemini model for validation */
@@ -407,7 +409,6 @@ export const findMostRecentReflection = (contentDir: string): string | null => {
  */
 export const bfsTraversal = (
   contentDir: string,
-  maxVisit: number,
 ): readonly string[] => {
   const start = findMostRecentReflection(contentDir);
   if (!start) return [];
@@ -417,7 +418,7 @@ export const bfsTraversal = (
   const result: string[] = [];
   visited.add(start);
 
-  while (queue.length > 0 && result.length < maxVisit) {
+  while (queue.length > 0) {
     const current = queue.shift()!;
     const filePath = path.join(contentDir, current);
 
@@ -725,64 +726,32 @@ export const identifyBooksWithGemini = async (
         !Array.isArray(parsed) ||
         !parsed.every((v: unknown) => typeof v === "string")
       ) {
-        console.error(
-          JSON.stringify({
-            event: "gemini_identification_invalid_response",
-            file: fileRelativePath,
-            got: parsed,
-          }),
-        );
+        console.error(`  ⚠️  Invalid Gemini response for ${fileRelativePath}: ${JSON.stringify(parsed)}`);
         return [];
       }
 
       return parsed as readonly string[];
     } catch (error) {
       if (isDailyQuotaError(error)) {
-        console.error(
-          JSON.stringify({
-            event: "gemini_daily_quota_exhausted",
-            file: fileRelativePath,
-            error: error instanceof Error ? error.message : String(error),
-          }),
-        );
+        console.error(`  ⚠️  Gemini daily quota exhausted while processing ${fileRelativePath}`);
         throw new QuotaExhaustedError();
       }
 
       if (isRateLimitError(error) && attempt < MAX_GEMINI_RETRIES) {
         const serverDelay = parseRetryDelay(error);
         const waitMs = serverDelay ?? backoffMs;
-        console.warn(
-          JSON.stringify({
-            event: "gemini_rate_limit_retry",
-            file: fileRelativePath,
-            attempt: attempt + 1,
-            maxRetries: MAX_GEMINI_RETRIES,
-            waitMs,
-          }),
-        );
+        console.warn(`  ⏳ Rate limit on ${fileRelativePath}, retry ${attempt + 1}/${MAX_GEMINI_RETRIES} in ${waitMs}ms`);
         await sleep(waitMs);
         backoffMs = Math.min(backoffMs * 2, MAX_BACKOFF_MS);
         continue;
       }
 
-      console.error(
-        JSON.stringify({
-          event: "gemini_identification_error",
-          file: fileRelativePath,
-          error: error instanceof Error ? error.message : String(error),
-        }),
-      );
+      console.error(`  ❌ Gemini error for ${fileRelativePath}: ${error instanceof Error ? error.message : String(error)}`);
       return [];
     }
   }
 
-  console.error(
-    JSON.stringify({
-      event: "gemini_retries_exhausted",
-      file: fileRelativePath,
-      maxRetries: MAX_GEMINI_RETRIES,
-    }),
-  );
+  console.error(`  ❌ Gemini retries exhausted for ${fileRelativePath} (${MAX_GEMINI_RETRIES} attempts)`);
   return [];
 };
 
@@ -950,13 +919,7 @@ export const processFile = async (
 
   // Skip files already analyzed (unless force_analyze_links is set)
   if (alreadyAnalyzed(content)) {
-    console.log(
-      JSON.stringify({
-        event: "skipped_already_analyzed",
-        file: relativePath,
-      }),
-    );
-    return { relativePath, linksAdded: 0, modified: false, skipped: true };
+    return { relativePath, linksAdded: 0, modified: false, skipped: true, usedInference: false };
   }
 
   const body = extractBody(content);
@@ -973,7 +936,7 @@ export const processFile = async (
     if (!config.dryRun) {
       recordLinkAnalysis(filePath, config.model, new Date().toISOString());
     }
-    return { relativePath, linksAdded: 0, modified: false, skipped: false };
+    return { relativePath, linksAdded: 0, modified: false, skipped: false, usedInference: false };
   }
 
   // Use Gemini to IDENTIFY which books are genuinely referenced
@@ -988,20 +951,13 @@ export const processFile = async (
   }
 
   if (identifiedPaths.length === 0) {
-    return { relativePath, linksAdded: 0, modified: false, skipped: false };
+    return { relativePath, linksAdded: 0, modified: false, skipped: false, usedInference: !!config.apiKey };
   }
 
   // Build a set of Gemini-identified books
   const identifiedSet = new Set(identifiedPaths);
 
-  console.log(
-    JSON.stringify({
-      event: "books_identified",
-      file: relativePath,
-      count: identifiedPaths.length,
-      books: identifiedPaths,
-    }),
-  );
+  console.log(`  📖 ${relativePath}: ${identifiedPaths.length} book(s) identified [${identifiedPaths.join(", ")}]`);
 
   // Now find positions for only the identified books using deterministic matching.
   // In non-dry-run mode, recordLinkAnalysis may have added frontmatter lines,
@@ -1013,7 +969,8 @@ export const processFile = async (
   const candidates = findLinkCandidates(contentForMatching, masked, identifiedIndex, existingLinks, relativePath, true);
 
   if (candidates.length === 0) {
-    return { relativePath, linksAdded: 0, modified: false, skipped: false };
+    console.log(`  ℹ️  ${relativePath}: book(s) identified but no linkable text found (title not in body text)`);
+    return { relativePath, linksAdded: 0, modified: false, skipped: false, usedInference: !!config.apiKey };
   }
 
   // All candidates are Gemini-approved — apply all
@@ -1022,35 +979,18 @@ export const processFile = async (
   // Log diffs for both dry runs and live runs
   const diffLines = generateDiff(contentForMatching, newContent);
   if (diffLines.length > 0) {
-    console.log(
-      JSON.stringify({
-        event: "diff",
-        file: relativePath,
-        dryRun: config.dryRun,
-        diff: diffLines,
-      }),
-    );
+    console.log(`  📝 Diff for ${relativePath}${config.dryRun ? " (dry run)" : ""}:`);
+    diffLines.forEach((line) => console.log(`     ${line}`));
   }
 
   if (!config.dryRun) {
     fs.writeFileSync(filePath, newContent, "utf-8");
   }
 
-  console.log(
-    JSON.stringify({
-      event: "links_applied",
-      file: relativePath,
-      linksAdded: candidates.length,
-      dryRun: config.dryRun,
-      links: candidates.map((c) => ({
-        matched: c.matchedText,
-        target: c.entry.relativePath,
-        title: c.entry.title,
-      })),
-    }),
-  );
+  const linkSummaries = candidates.map((c) => `"${c.matchedText}" → [[${c.entry.relativePath}|${c.entry.title}]]`);
+  console.log(`  ✏️  ${relativePath}: ${candidates.length} link(s) applied${config.dryRun ? " (dry run)" : ""}: ${linkSummaries.join(", ")}`);
 
-  return { relativePath, linksAdded: candidates.length, modified: true, skipped: false };
+  return { relativePath, linksAdded: candidates.length, modified: true, skipped: false, usedInference: true };
 };
 
 // --- Orchestration ---
@@ -1064,47 +1004,34 @@ export const processFile = async (
  * 5. Apply wikilink replacements
  */
 export const run = async (config: LinkingConfig): Promise<RunResult> => {
-  console.log(
-    JSON.stringify({
-      event: "internal_linking_start",
-      contentDir: config.contentDir,
-      maxFiles: config.maxFiles,
-      model: config.model,
-      dryRun: config.dryRun,
-      hasApiKey: !!config.apiKey,
-    }),
-  );
+  console.log(`🔗 Internal linking: model=${config.model}, maxInference=${config.maxInferenceRequests ?? "∞"}, dryRun=${config.dryRun}`);
 
   // Build content index (books only)
   const index = buildContentIndex(config.contentDir);
-  console.log(JSON.stringify({ event: "index_built", entries: index.length }));
+  console.log(`  📚 Index: ${index.length} books`);
 
   // BFS traversal
-  const filesToVisit = bfsTraversal(config.contentDir, config.maxFiles);
-  console.log(
-    JSON.stringify({
-      event: "bfs_complete",
-      filesFound: filesToVisit.length,
-      maxFiles: config.maxFiles,
-    }),
-  );
+  const filesToVisit = bfsTraversal(config.contentDir);
+  console.log(`  🔍 BFS: ${filesToVisit.length} files reachable`);
 
   // Process each file sequentially (to respect Gemini rate limits)
   // QuotaExhaustedError halts the pipeline immediately
   const fileResults: FileResult[] = [];
+  let inferenceCount = 0;
   for (const relativePath of filesToVisit) {
     try {
       const result = await processFile(relativePath, config.contentDir, index, config);
       fileResults.push(result);
+      if (result.usedInference) {
+        inferenceCount++;
+        if (config.maxInferenceRequests != null && inferenceCount >= config.maxInferenceRequests) {
+          console.log(`  ⏹️  Inference limit reached: ${inferenceCount}/${config.maxInferenceRequests} (${fileResults.length} files processed)`);
+          break;
+        }
+      }
     } catch (error) {
       if (error instanceof QuotaExhaustedError) {
-        console.error(
-          JSON.stringify({
-            event: "pipeline_halted_quota_exhausted",
-            filesProcessed: fileResults.length,
-            filesRemaining: filesToVisit.length - fileResults.length,
-          }),
-        );
+        console.error(`  ⚠️  Quota exhausted — halting (${fileResults.length} processed, ${filesToVisit.length - fileResults.length} remaining)`);
         break;
       }
       throw error;
@@ -1123,15 +1050,7 @@ export const run = async (config: LinkingConfig): Promise<RunResult> => {
     fileResults,
   };
 
-  console.log(
-    JSON.stringify({
-      event: "internal_linking_complete",
-      filesVisited: runResult.filesVisited,
-      filesModified: runResult.filesModified,
-      totalLinksAdded: runResult.totalLinksAdded,
-      filesSkipped: runResult.filesSkipped,
-    }),
-  );
+  console.log(`  🏁 Complete: ${runResult.filesVisited} visited, ${runResult.filesModified} modified, ${runResult.totalLinksAdded} links added, ${runResult.filesSkipped} skipped`);
 
   return runResult;
 };

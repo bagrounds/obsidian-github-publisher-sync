@@ -167,8 +167,14 @@ export const extractFrontmatterValue = (
   return value != null ? String(value) : undefined;
 };
 
-export const shouldRegenerateImage = (content: string): boolean =>
-  extractFrontmatterValue(content, "regenerate_image") === "true";
+export const shouldRegenerateImage = (content: string): boolean => {
+  const { yamlBlock, hasFrontmatter } = splitFrontmatter(content);
+  if (!hasFrontmatter) return false;
+
+  const doc = yaml.load(yamlBlock, YAML_OPTS) as Record<string, unknown> | null;
+  const value = doc?.["regenerate_image"];
+  return value === true || value === "true";
+};
 
 const OBSIDIAN_IMAGE_EMBED_LINE =
   /^!\[\[(?:attachments\/)?([^\]]+\.(jpg|jpeg|png|gif|webp))\]\]$/im;
@@ -193,9 +199,15 @@ export const sanitizeForYaml = (value: string): string =>
     .replace(/["'\\`]/g, "")
     .trim();
 
+/**
+ * Merges fields into a note's YAML frontmatter.
+ *
+ * String values are written as YAML strings. Boolean values are written as
+ * native YAML booleans. Null values clear the field (rendered as empty key).
+ */
 export const updateFrontmatterFields = (
   content: string,
-  fields: Record<string, string>,
+  fields: Record<string, string | boolean | null>,
 ): string => {
   const { yamlBlock, body, hasFrontmatter } = splitFrontmatter(content);
 
@@ -712,7 +724,7 @@ export const processNote = async (
 
   if (shouldRegenerateImage(content)) {
     const { content: cleaned, imageName: oldImage } = removeImageEmbed(content);
-    content = updateFrontmatterFields(cleaned, { regenerate_image: "false" });
+    content = updateFrontmatterFields(cleaned, { regenerate_image: false, image_prompt: null });
 
     if (oldImage) {
       const oldPath = path.join(attachmentsDir, oldImage);
@@ -801,6 +813,7 @@ export interface BackfillConfig {
   readonly onProgress?: (event: Record<string, unknown>) => void;
   readonly minDelayMs?: number;
   readonly sleep?: (ms: number) => Promise<void>;
+  readonly maxImages?: number;
 }
 
 interface BackfillCandidate {
@@ -825,6 +838,8 @@ const collectCandidates = (
 } => {
   const candidates: BackfillCandidate[] = [];
   const dirFiles = new Map<string, readonly string[]>();
+  let skippedWithImage = 0;
+  let skippedFuture = 0;
 
   for (const { path: dirPath, id } of directories) {
     if (!fs.existsSync(dirPath)) {
@@ -839,7 +854,7 @@ const collectCandidates = (
       const date = extractDateFromFilename(filename);
 
       if (id === "reflections" && date > today) {
-        onProgress({ event: "skip_future_reflection", filename, date, today });
+        skippedFuture++;
         continue;
       }
 
@@ -848,13 +863,20 @@ const collectCandidates = (
       const needsRegeneration = shouldRegenerateImage(content);
 
       if (hasEmbeddedImage(content) && !needsRegeneration) {
-        onProgress({ event: "already_has_image", directory: id, filename });
+        skippedWithImage++;
         continue;
       }
 
       candidates.push({ filePath, dirPath, dirId: id, filename, date, needsRegeneration });
     }
   }
+
+  onProgress({
+    event: "candidates_collected",
+    candidates: candidates.length,
+    skippedWithImage,
+    skippedFuture,
+  });
 
   const sorted = candidates.sort((a, b) => b.date.localeCompare(a.date));
   return { candidates: sorted, dirFiles };
@@ -922,6 +944,7 @@ export const backfillImages = async (
     onProgress = () => {},
     minDelayMs = DEFAULT_MIN_DELAY_MS,
     sleep: sleepFn = defaultSleep,
+    maxImages,
   } = config;
 
   const allProviders: readonly ImageProviderConfig[] = [
@@ -987,6 +1010,15 @@ export const backfillImages = async (
 
           if (minDelayMs > 0) {
             await sleepFn(minDelayMs);
+          }
+
+          if (maxImages != null && imagesGenerated >= maxImages) {
+            onProgress({
+              event: "max_images_reached",
+              imagesGenerated,
+              maxImages,
+            });
+            return { imagesGenerated, filesUpdated, stoppedByQuota: false };
           }
         }
 

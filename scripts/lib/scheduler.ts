@@ -48,16 +48,18 @@ export interface BlogSeriesRunConfig {
  *   chickie-loo:             0 15 * * *   (15:00 UTC daily)
  *   auto-blog-zero:          0 16 * * *   (16:00 UTC daily)
  *   systems-for-public-good: 0 17 * * *   (17:00 UTC daily)
- *   backfill-blog-images:    0 6  * * *   (06:00 UTC daily)
- *   internal-linking:        30 7 * * *   (07:30 UTC daily → rounded to 08:00)
+ *   backfill-blog-images:    0  * * * *   (every hour, 1 image per run)
+ *   internal-linking:        0  * * * *   (every hour, 1 note per run)
  *   social-posting:          0 * /2 * * * (every 2 hours on even hours)
  */
+const EVERY_HOUR: readonly number[] = Array.from({ length: 24 }, (_, i) => i);
+
 export const SCHEDULE: readonly ScheduleEntry[] = [
   { taskId: "blog-series:chickie-loo", hoursUtc: [15] },
   { taskId: "blog-series:auto-blog-zero", hoursUtc: [16] },
   { taskId: "blog-series:systems-for-public-good", hoursUtc: [17] },
-  { taskId: "backfill-blog-images", hoursUtc: [6] },
-  { taskId: "internal-linking", hoursUtc: [8] },
+  { taskId: "backfill-blog-images", hoursUtc: EVERY_HOUR },
+  { taskId: "internal-linking", hoursUtc: EVERY_HOUR },
   { taskId: "social-posting", hoursUtc: [0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22] },
 ];
 

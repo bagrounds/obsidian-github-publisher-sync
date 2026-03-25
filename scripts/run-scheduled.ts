@@ -43,49 +43,72 @@ import { copySeriesPosts } from "./pull-vault-posts.ts";
 import { syncFileToVault, readPreviousPostFilename } from "./sync-series-to-vault.ts";
 import { run as runLinking, DEFAULT_LINKING_MODEL } from "./lib/internal-linking.ts";
 import { autoPost } from "./auto-post.ts";
-import { fetchFullQuotaReport, formatQuotaReport } from "./lib/gemini-quota.ts";
-import { parseServiceAccountKey, getAccessToken } from "./lib/gcp-auth.ts";
 import { BACKFILL_CONTENT_IDS } from "./lib/blog-series-config.ts";
 
 // ---------------------------------------------------------------------------
-// Logging
+// Logging helpers
 // ---------------------------------------------------------------------------
 
-const log = (data: Record<string, unknown>): void =>
-  console.log(JSON.stringify({ timestamp: new Date().toISOString(), ...data }));
+const ts = (): string => new Date().toISOString();
+
+/**
+ * Format an onProgress event from blog-image backfill into a human-readable
+ * log line. Returns undefined for events that should be suppressed.
+ */
+const formatBackfillEvent = (e: Record<string, unknown>): string | undefined => {
+  switch (e["event"]) {
+    case "candidates_collected":
+      return `  📊 Candidates: ${e["candidates"]} (${e["skippedWithImage"]} already have images, ${e["skippedFuture"]} future)`;
+    case "generating_image":
+      return `  🎨 Generating: ${e["directory"]}/${e["filename"]} [${e["provider"]}]`;
+    case "regenerating_image":
+      return `  ♻️  Regenerating: ${e["directory"]}/${e["filename"]} [${e["provider"]}]`;
+    case "image_generated":
+      return `  ✅ Generated: ${e["directory"]}/${e["filename"]} → ${e["imageName"]}`;
+    case "chain_updated":
+      return `  📝 Updated chain: ${e["directory"]}/ (${e["chainLength"]} files)`;
+    case "max_images_reached":
+      return `  ⏹️  Limit reached: ${e["imagesGenerated"]}/${e["maxImages"]} images`;
+    case "rate_limit_retry":
+      return `  ⏳ Rate limit, retrying in ${e["waitMs"]}ms (attempt ${e["attempt"]}/${e["maxRetries"]})`;
+    case "daily_quota_exhausted":
+      return `  ⚠️  Daily quota exhausted for ${e["provider"]}`;
+    case "quota_exhausted":
+      return `  ⚠️  Quota exhausted for ${e["provider"]}`;
+    case "provider_switch":
+      return `  🔄 Switching provider: ${e["from"]} → ${e["to"]} (${e["reason"]})`;
+    case "provider_unavailable":
+      return `  ⚠️  Provider unavailable: ${e["provider"]}`;
+    case "image_generation_failed":
+      return `  ❌ Failed: ${e["directory"]}/${e["filename"]} — ${e["error"]}`;
+    case "directory_missing":
+      return `  ⚠️  Directory missing: ${e["directory"]}`;
+    default:
+      return undefined;
+  }
+};
 
 // ---------------------------------------------------------------------------
 // Shared constants
 // ---------------------------------------------------------------------------
 
 const REPO_ROOT = path.resolve(import.meta.dirname, "..");
+const INTER_TASK_DELAY_MS = 30_000;
+
+const sleep = (ms: number): Promise<void> =>
+  new Promise((resolve) => setTimeout(resolve, ms));
 
 // ---------------------------------------------------------------------------
-// Quota check helper (informational, never fails the pipeline)
+// Inference service dashboard links (logged once at scheduler start)
 // ---------------------------------------------------------------------------
 
-const checkGeminiQuota = async (label: string): Promise<void> => {
-  try {
-    const apiKey = process.env.GEMINI_API_KEY;
-    if (!apiKey) return;
-
-    let accessToken: string | undefined;
-    let projectId: string | undefined;
-    const saRaw = process.env.GCP_SERVICE_ACCOUNT_KEY;
-    if (saRaw) {
-      try {
-        const sa = parseServiceAccountKey(saRaw);
-        projectId = process.env.GCP_PROJECT_ID ?? sa.project_id;
-        accessToken = await getAccessToken(sa);
-      } catch { /* quota check is best-effort */ }
-    }
-
-    const report = await fetchFullQuotaReport({ apiKey, label, accessToken, projectId });
-    console.log(formatQuotaReport(report));
-  } catch (error) {
-    log({ event: "quota_check_failed", label, error: error instanceof Error ? error.message : String(error) });
-  }
-};
+const INFERENCE_DASHBOARDS: ReadonlyMap<string, string> = new Map([
+  ["Gemini API", "https://aistudio.google.com/apikey"],
+  ["GCP Quotas", "https://console.cloud.google.com/iam-admin/quotas"],
+  ["Cloudflare AI", "https://dash.cloudflare.com/?to=/:account/ai/workers-ai"],
+  ["Hugging Face", "https://huggingface.co/settings/billing"],
+  ["Together AI", "https://api.together.ai/settings/billing"],
+]);
 
 // ---------------------------------------------------------------------------
 // Task runners — direct library calls, no subprocesses
@@ -93,7 +116,7 @@ const checkGeminiQuota = async (label: string): Promise<void> => {
 
 const runBlogSeries = async (seriesId: string): Promise<void> => {
   const taskName = `blog-series:${seriesId}`;
-  log({ event: "task_start", task: taskName });
+  console.log(`[${ts()}] ▶️  ${taskName}`);
 
   const runConfig = BLOG_SERIES_RUN_CONFIGS.get(seriesId);
   if (!runConfig) throw new Error(`No run config for series: ${seriesId}`);
@@ -114,14 +137,11 @@ const runBlogSeries = async (seriesId: string): Promise<void> => {
   // 2. Check if today's post already exists (idempotent "at or after" scheduling)
   const seriesDir = path.join(REPO_ROOT, seriesId);
   if (blogPostExistsForToday(seriesDir, today)) {
-    log({ event: "skip_already_generated", seriesId, today });
+    console.log(`  ⏭️  Already generated for ${today}`);
     return;
   }
 
-  // 3. Check Gemini quota (informational)
-  await checkGeminiQuota(`before ${seriesId}`);
-
-  // 4. Determine model chain: env override → per-series defaults
+  // 3. Determine model chain: env override → per-series defaults
   const envModel = process.env.BLOG_GEMINI_MODEL?.trim();
   const models = envModel ? [envModel, ...runConfig.modelChain.filter((m) => m !== envModel)] : runConfig.modelChain;
   const priorityUser = process.env[runConfig.priorityUserEnvVar]?.trim() || undefined;
@@ -143,16 +163,13 @@ const runBlogSeries = async (seriesId: string): Promise<void> => {
       const provider = resolveImageProvider(process.env as Record<string, string | undefined>);
       const attachmentsDir = process.env.ATTACHMENTS_DIR ?? path.join(REPO_ROOT, "attachments");
       await processNote(notePath, attachmentsDir, provider.apiKey, provider.model, provider.generator, provider.describePrompt);
-      log({ event: "image_generated", postPath: result.postPath });
+      console.log(`  🖼️  Image generated for ${result.postPath}`);
     } catch (error) {
-      log({ event: "image_generation_failed", postPath: result.postPath, error: error instanceof Error ? error.message : String(error) });
+      console.log(`  ⚠️  Image generation failed for ${result.postPath}: ${error instanceof Error ? error.message : String(error)}`);
     }
   }
 
-  // 7. Check Gemini quota (informational)
-  await checkGeminiQuota(`after ${seriesId}`);
-
-  // 8. Sync to Obsidian vault
+  // 7. Sync to Obsidian vault
   if (result.postPath) {
     const syncVaultDir = await syncObsidianVault({ authToken, vaultName });
     let changed = false;
@@ -178,15 +195,15 @@ const runBlogSeries = async (seriesId: string): Promise<void> => {
 
     if (changed) {
       await pushObsidianVault(syncVaultDir, { authToken });
-      log({ event: "vault_pushed" });
+      console.log("  📤 Vault pushed");
     }
   }
 
-  log({ event: "task_complete", task: taskName });
+  console.log(`[${ts()}] ✅ ${taskName}`);
 };
 
 const runBackfillImages = async (): Promise<void> => {
-  log({ event: "task_start", task: "backfill-blog-images" });
+  console.log(`[${ts()}] ▶️  backfill-blog-images`);
 
   const authToken = process.env.OBSIDIAN_AUTH_TOKEN;
   const vaultName = process.env.OBSIDIAN_VAULT_NAME;
@@ -196,15 +213,17 @@ const runBackfillImages = async (): Promise<void> => {
   const vaultDir = await syncObsidianVault({ authToken, vaultName });
   BACKFILL_CONTENT_IDS.forEach((id) => copySeriesPosts(vaultDir, id, REPO_ROOT));
 
-  // 2. Check Gemini quota (informational)
-  await checkGeminiQuota("before image backfill");
-
-  // 3. Backfill blog images
+  // 2. Backfill blog images
   const providers = resolveImageProviders(process.env as Record<string, string | undefined>);
   const primary = providers[0]!;
   const fallbacks = providers.slice(1);
   const attachmentsDir = process.env.ATTACHMENTS_DIR ?? path.join(REPO_ROOT, "attachments");
   const directories = BACKFILL_CONTENT_IDS.map((id) => ({ path: path.join(REPO_ROOT, id), id }));
+
+  const backfillLog = (e: Record<string, unknown>): void => {
+    const line = formatBackfillEvent(e);
+    if (line) console.log(line);
+  };
 
   try {
     const result = await backfillImages({
@@ -216,17 +235,15 @@ const runBackfillImages = async (): Promise<void> => {
       describePrompt: primary.describePrompt,
       providerName: primary.name,
       fallbackProviders: fallbacks,
-      onProgress: log,
+      onProgress: backfillLog,
+      maxImages: 1,
     });
-    log({ event: "backfill_complete", ...result });
+    console.log(`  🏁 Backfill done: ${result.imagesGenerated} image(s), ${result.filesUpdated} file(s) updated${result.stoppedByQuota ? " (stopped by quota)" : ""}`);
   } catch (error) {
-    log({ event: "backfill_failed", error: error instanceof Error ? error.message : String(error) });
+    console.log(`  ❌ Backfill failed: ${error instanceof Error ? error.message : String(error)}`);
   }
 
-  // 4. Check Gemini quota (informational)
-  await checkGeminiQuota("after image backfill");
-
-  // 5. Sync to vault
+  // 3. Sync to vault
   const syncVaultDir = await syncObsidianVault({ authToken, vaultName });
   BACKFILL_CONTENT_IDS.forEach((id) => {
     const localDir = path.join(REPO_ROOT, id);
@@ -235,11 +252,11 @@ const runBackfillImages = async (): Promise<void> => {
   syncAttachmentsDir(path.join(REPO_ROOT, "attachments"), syncVaultDir);
   await pushObsidianVault(syncVaultDir, { authToken });
 
-  log({ event: "task_complete", task: "backfill-blog-images" });
+  console.log(`[${ts()}] ✅ backfill-blog-images`);
 };
 
 const runInternalLinking = async (): Promise<void> => {
-  log({ event: "task_start", task: "internal-linking" });
+  console.log(`[${ts()}] ▶️  internal-linking`);
 
   const authToken = process.env.OBSIDIAN_AUTH_TOKEN;
   const vaultName = process.env.OBSIDIAN_VAULT_NAME;
@@ -252,38 +269,26 @@ const runInternalLinking = async (): Promise<void> => {
   const model = process.env.LINKING_MODEL ?? DEFAULT_LINKING_MODEL;
   const result = await runLinking({
     contentDir: vaultDir,
-    maxFiles: 10,
+    maxInferenceRequests: 1,
     apiKey: process.env.GEMINI_API_KEY,
     model,
     dryRun: false,
   });
 
-  log({
-    event: "linking_complete",
-    filesVisited: result.filesVisited,
-    filesModified: result.filesModified,
-    totalLinksAdded: result.totalLinksAdded,
-  });
+  console.log(`  🏁 Linking done: ${result.filesVisited} visited, ${result.filesModified} modified, ${result.totalLinksAdded} links added, ${result.filesSkipped} skipped`);
 
   // 3. Push vault
   await pushObsidianVault(vaultDir, { authToken });
 
-  log({ event: "task_complete", task: "internal-linking" });
+  console.log(`[${ts()}] ✅ internal-linking`);
 };
 
 const runSocialPosting = async (): Promise<void> => {
-  log({ event: "task_start", task: "social-posting" });
+  console.log(`[${ts()}] ▶️  social-posting`);
 
-  // 1. Check Gemini quota (informational)
-  await checkGeminiQuota("before social posting");
-
-  // 2. Run auto-post (imported as library function)
   await autoPost();
 
-  // 3. Check Gemini quota (informational)
-  await checkGeminiQuota("after social posting");
-
-  log({ event: "task_complete", task: "social-posting" });
+  console.log(`[${ts()}] ✅ social-posting`);
 };
 
 const TASK_RUNNERS: ReadonlyMap<TaskId, () => Promise<void>> = new Map([
@@ -342,19 +347,26 @@ const main = async (): Promise<void> => {
         })()
     : getScheduledTasks(hourUtc);
 
-  log({ event: "scheduler_start", hourUtc, tasks, hasOverride: !!cliArgs.taskOverride });
+  console.log(`\n🕐 [${ts()}] Scheduler start — hour ${hourUtc} UTC, ${tasks.length} task(s): ${tasks.join(", ")}`);
+  console.log("📊 Inference dashboards:");
+  INFERENCE_DASHBOARDS.forEach((url, name) => console.log(`   ${name}: ${url}`));
 
   if (tasks.length === 0) {
-    log({ event: "no_tasks_scheduled", hourUtc });
+    console.log("  ⏭️  No tasks scheduled for this hour");
     return;
   }
 
   const results: Array<{ taskId: TaskId; success: boolean; error?: string }> = [];
 
   for (const taskId of tasks) {
+    if (results.length > 0) {
+      console.log(`⏳ Inter-task delay: ${INTER_TASK_DELAY_MS / 1000}s`);
+      await sleep(INTER_TASK_DELAY_MS);
+    }
+
     const runner = TASK_RUNNERS.get(taskId);
     if (!runner) {
-      log({ event: "unknown_task", taskId });
+      console.log(`  ⚠️  Unknown task: ${taskId}`);
       results.push({ taskId, success: false, error: "no runner registered" });
       continue;
     }
@@ -364,28 +376,25 @@ const main = async (): Promise<void> => {
       results.push({ taskId, success: true });
     } catch (error) {
       const message = error instanceof Error ? error.message : String(error);
-      log({ event: "task_failed", taskId, error: message });
+      console.log(`[${ts()}] ❌ ${taskId} — ${message}`);
       results.push({ taskId, success: false, error: message });
     }
   }
 
   const succeeded = results.filter((r) => r.success).length;
-  const failed = results.filter((r) => !r.success).length;
 
-  log({ event: "scheduler_complete", hourUtc, succeeded, failed, total: results.length });
-
-  if (failed > 0) {
-    log({ event: "some_tasks_failed", failures: results.filter((r) => !r.success) });
-  }
+  console.log("\n--- Run Summary ---");
+  results.forEach(({ taskId, success, error }) =>
+    console.log(`  ${success ? "✅" : "❌"} ${taskId}${error ? ` — ${error}` : ""}`),
+  );
+  console.log(`  📊 ${succeeded}/${results.length} succeeded`);
+  console.log("-------------------\n");
 };
 
 if (process.argv[1]?.endsWith("run-scheduled.ts")) {
   main().catch((error) => {
-    console.error(JSON.stringify({
-      event: "fatal_error",
-      message: error instanceof Error ? error.message : String(error),
-      stack: error instanceof Error ? error.stack : undefined,
-    }));
+    console.error(`💀 Fatal: ${error instanceof Error ? error.message : String(error)}`);
+    if (error instanceof Error && error.stack) console.error(error.stack);
     process.exit(1);
   });
 }

@@ -14,7 +14,7 @@ force_analyze_links: false
 link_analysis_time: 2026-03-24T22:25:44.721Z
 link_analysis_model: gemini-3.1-flash-lite-preview
 ---
-[Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-03-23-the-forgotten-commons.md)  
+[Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-03-23-the-forgotten-commons.md) [⏭️](./2026-03-25-the-interplay-of-freedoms-when-my-liberty-meets-yours.md)  
 # 2026-03-24 | 🏛️ 🫂 The Foundations of Freedom - A Personal Journey into Public Good 🏛️  
 ![systems-for-public-good-2026-03-24-the-foundations-of-freedom-a-personal-journey-into-public-good](../systems-for-public-good-2026-03-24-the-foundations-of-freedom-a-personal-journey-into-public-good.jpg)  
   

@@ -7,6 +7,9 @@ share: true
 CTA: 📱 Reclaim your attention.
 affiliate link: https://amzn.to/4q2ZrG5
 updated: 2026-03-15T00:23:57.158Z
+force_analyze_links: false
+link_analysis_time: 2026-03-25T12:15:30.112Z
+link_analysis_model: gemini-3.1-flash-lite-preview
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 📱⬇️🧘 Digital Minimalism: Choosing a Focused Life in a Noisy World  

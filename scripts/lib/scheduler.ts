@@ -27,6 +27,7 @@ export type TaskId =
 export interface ScheduleEntry {
   readonly taskId: TaskId;
   readonly hoursUtc: readonly number[];
+  /** When true, the task becomes eligible at the earliest specified hour and remains eligible for all subsequent hours of the day. */
   readonly atOrAfter?: boolean;
 }
 

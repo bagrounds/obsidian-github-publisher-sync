@@ -299,7 +299,7 @@ const runSocialPosting = async (): Promise<void> => {
 
 const RECENT_TITLE_COUNT = 20;
 
-const collectRecentTitles = (reflectionsDir: string, today: string): readonly string[] => {
+const extractRecentCreativeTitles = (reflectionsDir: string, today: string): readonly string[] => {
   if (!fs.existsSync(reflectionsDir)) return [];
 
   return fs.readdirSync(reflectionsDir)
@@ -346,7 +346,7 @@ const runReflectionTitle = async (): Promise<void> => {
   }
 
   // 3. Collect recent titles for style examples
-  const recentTitles = collectRecentTitles(reflectionsDir, today);
+  const recentTitles = extractRecentCreativeTitles(reflectionsDir, today);
   console.log(`  📋 Found ${recentTitles.length} recent titles for style reference`);
 
   // 4. Determine model chain

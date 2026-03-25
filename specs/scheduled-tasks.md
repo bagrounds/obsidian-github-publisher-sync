@@ -30,6 +30,7 @@
    ├── 🐔 blog-series:chickie-loo      → check exists → pull → generate → image → sync
    ├── 🤖 blog-series:auto-blog-zero   → check exists → pull → generate → image → sync
    ├── 🏛️ blog-series:systems-for-public-good → check exists → pull → generate → image → sync
+   ├── 🪞 reflection-title             → pull vault → check title → generate → push vault
    ├── 🖼️ backfill-blog-images         → pull → backfill → sync
    ├── 🔗 internal-linking             → pull vault → link → push vault
    └── 📢 social-posting               → discover → post
@@ -46,6 +47,14 @@
 | 15 | `blog-series:chickie-loo` | 🐔 Chickie Loo daily post (7 AM PT) |
 | 16 | `blog-series:auto-blog-zero` | 🤖 Auto Blog Zero daily post (8 AM PT) |
 | 17 | `blog-series:systems-for-public-good` | 🏛️ Systems for Public Good daily post (9 AM PT) |
+
+### 🪞 Reflection Title — "At or After" Scheduling
+
+🌙 The reflection-title task uses the `atOrAfter` flag for at-or-after scheduling, becoming eligible at hour 5 UTC (~9 PM Pacific) and remaining eligible for the rest of the day. It generates a creative emoji-enriched title for the daily reflection note using Gemini AI.
+
+| 🕐 Earliest UTC Hour | 🏷️ Task ID | 📝 Description |
+|---|---|---|
+| 5 | `reflection-title` | 🪞 Generate creative title for today's reflection (~9 PM PT) |
 
 ### 🔧 Other Tasks — Exact Hour Matching
 

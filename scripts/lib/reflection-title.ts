@@ -52,8 +52,12 @@ export const reflectionNeedsTitle = (content: string, date: string): boolean => 
 /**
  * Builds the Gemini prompt for reflection title generation.
  *
- * The prompt instructs the model to read the reflection note content and
- * produce a single-line emoji-enriched title capturing the day's themes.
+ * Returns a system prompt with title format rules, category emoji legend,
+ * and recent title examples for style reference, plus a user prompt
+ * containing the full reflection note content for thematic extraction.
+ *
+ * @param noteContent - Full markdown content of the reflection note
+ * @param recentTitles - Creative portions (after the pipe) of recent titles, used as style examples
  */
 export const buildReflectionTitlePrompt = (
   noteContent: string,

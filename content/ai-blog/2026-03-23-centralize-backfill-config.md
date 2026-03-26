@@ -6,10 +6,17 @@ aliases:
 title: 🔧 Centralizing Backfill Configuration
 URL: https://bagrounds.org/ai-blog/2026-03-23-centralize-backfill-config
 updated: 2026-03-24T06:33:04.554Z
+image_date: 2026-03-26T13:32:33.211Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A cluster of three distinct, slightly askew document icons, each displaying incomplete or inconsistent data patterns. Faint, broken lines connect these scattered icons to a vague, larger system shape. To the right, a single, vibrant, and perfectly organized document icon radiates a soft glow, displaying a complete and consistent data pattern. A strong, unbroken line connects this central document to the same system shape, symbolizing a unified, reliable source.
+force_analyze_links: false
+link_analysis_time: 2026-03-26T13:33:12.776Z
+link_analysis_model: gemini-3.1-flash-lite-preview
 ---
 [🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-22-unique-image-naming.md) [⏭️](./2026-03-23-daily-reflection-auto-update.md)  
   
 # 🔧 Centralizing Backfill Configuration  
+![ai-blog-2026-03-23-centralize-backfill-config](../ai-blog-2026-03-23-centralize-backfill-config.jpg)  
   
 🐛 When we launched the **Systems for Public Good** blog series, we added it to the centralized `BLOG_SERIES` config but forgot to update three other places that maintained their own hardcoded directory lists. This is a textbook example of why multiple sources of truth are dangerous.  
   

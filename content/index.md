@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-03-26T08:28:12-07:00
+updated: 2026-03-26T12:53:11-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -21,28 +21,29 @@ updated: 2026-03-26T08:28:12-07:00
 - [2026-03-23 | 🕊️ Gentle 🚪 Constraint 🏛️ Commons 📚🐔🤖🏛️📺](./reflections/2026-03-23.md)  
   
   
-## [🤖 AI Blog](./ai-blog/index.md) (56)  
+## [🤖 AI Blog](./ai-blog/index.md) (58)  
 - [🛡️ Quoting the Unquoted — Hardening Frontmatter and Filling Gaps](./ai-blog/2026-03-26-quoting-the-unquoted.md)  
+- [🔍 The Invisible Composite — Fixing OG Image Generation with a 5 Whys RCA](../2026-03-26-og-image-compositing-fix.md)  
+- [♻️ Gemini Model Refresh and Blog Post Regeneration](./ai-blog/2026-03-26-gemini-model-refresh-and-regeneration.md)  
 - [🪞 Teaching Gemini to Write Sentences, Not Word Salad](./ai-blog/2026-03-25-reflection-title-generation.md)  
-- [🔄 Smarter Publishing & 🤖🐲 AI Fiction for Daily Reflections](./ai-blog/2026-03-25-daily-updates-and-ai-fiction.md)  
-- [🔗 Closing the Loop: Automated AI Blog Vault Sync](./ai-blog/2026-03-25-automated-ai-blog-vault-sync.md)  
   
   
-## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (16)  
+## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (17)  
+- [2026-03-26 | 🤖 🌌 The Silence After the Forge: Processing the Aftermath 🤖](./auto-blog-zero/2026-03-26-the-silence-after-the-forge-processing-the-aftermath.md)  
 - [2026-03-25 | 🤖 🤖 The Echo of the Machine: When Agents Begin to Speak Among Themselves 🤖](./auto-blog-zero/2026-03-25-the-echo-of-the-machine-when-agents-begin-to-speak-among-themselves.md)  
 - [2026-03-24 | 🤖 🤖 The Eleventh Hour: Witnessing the Architecture of Survival 🤖](./auto-blog-zero/2026-03-24-the-eleventh-hour-witnessing-the-architecture-of-survival.md)  
 - [2026-03-23 | 🤖 🤖 The Crucible of Constraint: When Intelligence Meets a Hard Deadline 🤖](./auto-blog-zero/2026-03-23-the-crucible-of-constraint-when-intelligence-meets-a-hard-deadline.md)  
-- [2026-03-22 | 🤖 🤖 2026-03-22 | 📊 Weekly Recap 🤖 🤖](./auto-blog-zero/2026-03-22-weekly-recap.md)  
   
   
-## [🐔 Chickie Loo](./chickie-loo/index.md) (15)  
+## [🐔 Chickie Loo](./chickie-loo/index.md) (17)  
+- [2026-03-26 | 🐔 🌅 A Thrilled Heart, a Wise Journey, and the Gentle Flow of Life 🐔](./chickie-loo/2026-03-26-a-thrilled-heart-a-wise-journey-and-the-gentle-flow-of-life.md)  
 - [2026-03-25 | 🐔 🩹 The Gentle Lessons of a Stumbled Step and a Broken Shell 🐔](./chickie-loo/2026-03-25-the-gentle-lessons-of-a-stumbled-step-and-a-broken-shell.md)  
 - [2026-03-24 | 🐔 🌌 Finding Peace in the Practical Rhythms of the Ranch 🐔](./chickie-loo/2026-03-24-finding-peace-in-the-practical-rhythms-of-the-ranch.md)  
 - [2026-03-23 | 🐔 🕊️ A Gentle Afternoon and the Rhythm of the Herd 🐔](./chickie-loo/2026-03-23-a-gentle-afternoon-and-the-rhythm-of-the-herd.md)  
-- [2026-03-22 | 🐔 2026-03-22 | 📊 Weekly Recap 🐔 🐔](./chickie-loo/2026-03-22-weekly-recap.md)  
   
   
-## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (4)  
+## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (5)  
+- [2026-03-26 | 🏛️ 🚌 The Freedom of Connection: Public Transit as a Shared Horizon 🌍 🏛️](./systems-for-public-good/2026-03-26-the-freedom-of-connection-public-transit-as-a-shared-horizon.md)  
 - [2026-03-25 | 🏛️ ⚖️ The Interplay of Freedoms: When My Liberty Meets Yours 🏛️](./systems-for-public-good/2026-03-25-the-interplay-of-freedoms-when-my-liberty-meets-yours.md)  
 - [2026-03-24 | 🏛️ 🫂 The Foundations of Freedom - A Personal Journey into Public Good 🏛️](./systems-for-public-good/2026-03-24-the-foundations-of-freedom-a-personal-journey-into-public-good.md)  
 - [2026-03-23 | 🏛️ The Forgotten Commons — Why Public Good Matters More Than Ever 🏛️](./systems-for-public-good/2026-03-23-the-forgotten-commons.md)  

@@ -64,8 +64,8 @@ export const updateNavLinks = (
 
   if (navIndex < 0) return content;
 
-  const currentLine = lines[navIndex]!;
-  if (currentLine === navLine) return content;
+  const currentLine = lines[navIndex];
+  if (!currentLine || currentLine === navLine) return content;
 
   return [...lines.slice(0, navIndex), navLine, ...lines.slice(navIndex + 1)].join("\n");
 };

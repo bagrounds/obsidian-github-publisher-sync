@@ -275,11 +275,10 @@ const runBackfillImages = async (): Promise<void> => {
   });
   syncAttachmentsDir(path.join(REPO_ROOT, "attachments"), syncVaultDir);
 
-  const today = todayPacific();
   const reflectionsDir = path.join(syncVaultDir, "reflections");
 
   if (modifiedFiles.length > 0) {
-    addUpdateLinksToReflection(reflectionsDir, today, modifiedFiles);
+    addUpdateLinksToReflection(reflectionsDir, todayPacific(), modifiedFiles);
   }
 
   // 5. Link new ai-blog posts from their respective daily reflections

@@ -35,6 +35,8 @@ Each ai-blog post's breadcrumb line starts with the nav prefix and may include p
 A post with both neighbors gets a nav line like this:
 Nav prefix, pipe separator, back link to previous post, forward link to next post.
 
+For example, the nav prefix followed by a pipe, then the back link emoji pointing to the previous post's filename, and the forward link emoji pointing to the next post's filename.
+
 The first post in the series has no back link.
 The last post has no forward link.
 A single post has only the nav prefix with no additional links.

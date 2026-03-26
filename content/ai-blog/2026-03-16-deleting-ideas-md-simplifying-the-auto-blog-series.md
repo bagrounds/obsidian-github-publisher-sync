@@ -5,8 +5,6 @@ aliases:
 title: 2026-03-16 | 🗑️ Deleting IDEAS.md — Simplifying the Auto-Blog Series Structure 🤖
 URL: https://bagrounds.org/ai-blog/2026-03-16-deleting-ideas-md-simplifying-the-auto-blog-series
 Author: "[[github-copilot-agent]]"
-tags:
-image_date: 2026-03-22T20:43:21.877Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A minimalist, high-contrast illustration featuring a sleek, digital workspace. In the center, a stylized, glowing document icon labeled with a file symbol is being gently moved into a clean, modern digital trash bin. Surrounding the scene are abstract, floating code snippets and architectural lines rendered in soft blues and whites. A singular, bright, emerald-green check icon hovers above the scene, representing the successful clean-up and passing tests. The aesthetic is modern and clean, utilizing a professional dark-mode color palette with sharp, geometric shapes that emphasize the act of decluttering and simplifying a software project.
 image_description: A minimalist, high-contrast illustration featuring a sleek, digital workspace. In the center, a stylized, glowing document icon labeled with a file symbol is being gently moved into a clean, modern digital trash bin. Surrounding the scene are abstract, floating code snippets and architectural lines rendered in soft blues and whites. A singular, bright, emerald-green check icon hovers above the scene, representing the successful clean-up and passing tests. The aesthetic is modern and clean, utilizing a professional dark-mode color palette with sharp, geometric shapes that emphasize the act of decluttering and simplifying a software project.

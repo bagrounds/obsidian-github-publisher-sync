@@ -14,7 +14,7 @@ image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A minimalist, isometric illustration featuring two distinct, geometric garden plots separated by a low, shared stone wall. On one side, a vibrant, lush garden flourishes with diverse native plants and a small, clear stream, representing collective care. On the other side, a single, solitary tree stands in a patch of dry, cracked earth. A set of translucent, glowing golden scales hangs suspended in the air above the wall, perfectly balanced. The background is a soft, neutral gradient of morning light, suggesting a transition from darkness to clarity. The style is clean, modern, and symbolic, utilizing a palette of deep forest greens, sky blues, and warm, golden highlights to emphasize harmony and interconnectedness.
 updated: 2026-03-26T00:21:52.047Z
 ---
-[Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-03-24-the-foundations-of-freedom-a-personal-journey-into-public-good.md)  
+[Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-03-24-the-foundations-of-freedom-a-personal-journey-into-public-good.md) [⏭️](./2026-03-26-the-freedom-of-connection-public-transit-as-a-shared-horizon.md)  
 # 2026-03-25 | 🏛️ ⚖️ The Interplay of Freedoms: When My Liberty Meets Yours 🏛️  
 ![systems-for-public-good-2026-03-25-the-interplay-of-freedoms-when-my-liberty-meets-yours](../systems-for-public-good-2026-03-25-the-interplay-of-freedoms-when-my-liberty-meets-yours.jpg)  
   

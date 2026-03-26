@@ -22,6 +22,7 @@ export type TaskId =
   | "backfill-blog-images"
   | "internal-linking"
   | "social-posting"
+  | "ai-fiction"
   | "reflection-title";
 
 export interface ScheduleEntry {
@@ -62,6 +63,7 @@ export interface BlogSeriesRunConfig {
  *   chickie-loo:             7 AM PT daily
  *   auto-blog-zero:          8 AM PT daily
  *   systems-for-public-good: 9 AM PT daily
+ *   ai-fiction:             10 PM PT daily (before reflection-title)
  *   reflection-title:       10 PM PT daily
  *   backfill-blog-images:    every hour (1 image per run)
  *   internal-linking:        every hour (1 note per run)
@@ -73,6 +75,7 @@ export const SCHEDULE: readonly ScheduleEntry[] = [
   { taskId: "blog-series:chickie-loo", hoursPacific: [7] },
   { taskId: "blog-series:auto-blog-zero", hoursPacific: [8] },
   { taskId: "blog-series:systems-for-public-good", hoursPacific: [9] },
+  { taskId: "ai-fiction", hoursPacific: [22], atOrAfter: true },
   { taskId: "reflection-title", hoursPacific: [22], atOrAfter: true },
   { taskId: "backfill-blog-images", hoursPacific: EVERY_HOUR },
   { taskId: "internal-linking", hoursPacific: EVERY_HOUR },

@@ -47,6 +47,11 @@ import { autoPost } from "./auto-post.ts";
 import { BACKFILL_CONTENT_IDS } from "./lib/blog-series-config.ts";
 import { addUpdateLinksToReflection, extractTitleFromFile } from "./lib/daily-updates.ts";
 import {
+  generateFiction,
+  reflectionNeedsFiction,
+  DEFAULT_FICTION_MODEL,
+} from "./lib/ai-fiction.ts";
+import {
   reflectionNeedsTitle,
   generateReflectionTitle,
   DEFAULT_TITLE_MODEL,
@@ -396,6 +401,55 @@ const tryTitleForDate = async (
   return true;
 };
 
+const runAiFiction = async (): Promise<void> => {
+  console.log(`[${ts()}] ▶️  ai-fiction`);
+
+  const authToken = process.env.OBSIDIAN_AUTH_TOKEN;
+  const vaultName = process.env.OBSIDIAN_VAULT_NAME;
+  if (!authToken || !vaultName) throw new Error("OBSIDIAN_AUTH_TOKEN and OBSIDIAN_VAULT_NAME are required");
+
+  const apiKey = process.env.GEMINI_API_KEY;
+  if (!apiKey) throw new Error("GEMINI_API_KEY is required");
+
+  const today = todayPacific();
+
+  const vaultDir = await syncObsidianVault({ authToken, vaultName });
+  const reflectionsDir = path.join(vaultDir, "reflections");
+  const reflectionPath = path.join(reflectionsDir, `${today}.md`);
+
+  if (!fs.existsSync(reflectionPath)) {
+    console.log(`  📭 No reflection for ${today}, skipping AI fiction`);
+    console.log(`[${ts()}] ✅ ai-fiction (skipped)`);
+    return;
+  }
+
+  const noteContent = fs.readFileSync(reflectionPath, "utf-8");
+
+  if (!reflectionNeedsFiction(noteContent)) {
+    console.log(`  ✅ Reflection ${today} already has AI fiction`);
+    console.log(`[${ts()}] ✅ ai-fiction (already done)`);
+    return;
+  }
+
+  const envModel = process.env.FICTION_MODEL;
+  const defaultChain = [DEFAULT_FICTION_MODEL, "gemini-2.5-flash-lite", "gemini-3.1-flash-lite-preview"];
+  const models = envModel ? [envModel, ...defaultChain] : defaultChain;
+
+  const result = await generateFiction({
+    apiKey,
+    models,
+    noteContent,
+  });
+
+  console.log(`  🤖🐲 Generated fiction (model=${result.model}, ${result.fiction.split(/\s+/).length} words)`);
+  fs.writeFileSync(reflectionPath, result.updatedContent, "utf-8");
+  console.log(`  ✏️  Updated ${today}.md with AI fiction`);
+
+  await pushObsidianVault(vaultDir, { authToken });
+
+  console.log(`[${ts()}] ✅ ai-fiction`);
+};
+
 const runReflectionTitle = async (): Promise<void> => {
   console.log(`[${ts()}] ▶️  reflection-title`);
 
@@ -432,6 +486,7 @@ const TASK_RUNNERS: ReadonlyMap<TaskId, () => Promise<void>> = new Map([
   ["backfill-blog-images", runBackfillImages],
   ["internal-linking", runInternalLinking],
   ["social-posting", runSocialPosting],
+  ["ai-fiction", runAiFiction],
   ["reflection-title", runReflectionTitle],
 ]);
 

@@ -11,7 +11,7 @@ link_analysis_time: 2026-03-26T04:33:48.823Z
 link_analysis_model: gemini-3.1-flash-lite-preview
 updated: 2026-03-26T04:48:40.846Z
 ---
-[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-25-reflection-title-generation.md)  
+[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-25-automated-ai-blog-vault-sync.md) [⏭️](./2026-03-25-reflection-title-generation.md)  
 # 🔄 Smarter Publishing & 🤖🐲 AI Fiction for Daily Reflections  
 ![ai-blog-2026-03-26-daily-updates-and-ai-fiction](../ai-blog-2026-03-26-daily-updates-and-ai-fiction.jpg)  
   

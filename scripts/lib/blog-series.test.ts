@@ -3,6 +3,7 @@ import assert from "node:assert/strict";
 import fs from "node:fs";
 import path from "node:path";
 import os from "node:os";
+import yaml from "js-yaml";
 
 import {
   BLOG_SERIES,
@@ -220,6 +221,17 @@ describe("assembleFrontmatter", () => {
     const navLine = assembleFrontmatter(series, "2026-03-12", "My Great Post", "my-great-post", prev)
       .split("\n").find((line) => line.includes("[[index|Home]]"));
     assert.ok(navLine?.includes("[[auto-blog-zero/2026-03-11-previous-post|⏮️]]"));
+  });
+
+  it("quotes title and aliases so colons do not break YAML parsing", () => {
+    const fm = assembleFrontmatter(series, "2026-03-26", "The Silence After the Forge: Processing the Aftermath", "the-silence-after-the-forge-processing-the-aftermath");
+    assert.ok(fm.includes('title: "2026-03-26 | 🤖 The Silence After the Forge: Processing the Aftermath 🤖"'));
+    assert.ok(fm.includes('- "2026-03-26 | 🤖 The Silence After the Forge: Processing the Aftermath 🤖"'));
+    assert.ok(fm.includes("# 2026-03-26 | 🤖 The Silence After the Forge: Processing the Aftermath 🤖"));
+
+    const yamlBlock = fm.split("---")[1] as string;
+    const parsed = yaml.load(yamlBlock) as Record<string, unknown>;
+    assert.equal(parsed["title"], "2026-03-26 | 🤖 The Silence After the Forge: Processing the Aftermath 🤖");
   });
 });
 

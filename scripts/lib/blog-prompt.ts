@@ -117,19 +117,24 @@ export const buildBackLink = (series: BlogSeriesConfig, previousPost: BlogPost):
 export const buildForwardLink = (series: BlogSeriesConfig, nextFilename: string): string =>
   `[[${series.id}/${nextFilename.replace(/\.md$/, "")}|⏭️]]`;
 
+const quoteForYaml = (value: string): string =>
+  `"${value.replace(/\\/g, "\\\\").replace(/"/g, "")}"`;
+
 export const assembleFrontmatter = (series: BlogSeriesConfig, today: string, title: string, slug: string, previousPost?: BlogPost): string => {
   const backLink = previousPost ? ` | ${buildBackLink(series, previousPost)}` : "";
+  const displayTitle = `${today} | ${series.icon} ${title} ${series.icon}`;
+  const quoted = quoteForYaml(displayTitle);
   return `---
 share: true
 aliases:
-  - ${today} | ${series.icon} ${title} ${series.icon}
-title: ${today} | ${series.icon} ${title} ${series.icon}
+  - ${quoted}
+title: ${quoted}
 URL: ${series.baseUrl}/${today}-${slug}
 Author: "${series.author}"
 tags:
 ---
 ${series.navLink}${backLink}
-# ${today} | ${series.icon} ${title} ${series.icon}
+# ${displayTitle}
 
 `;
 };

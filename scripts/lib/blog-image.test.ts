@@ -1426,6 +1426,30 @@ describe("updateFrontmatterFields", () => {
     assert.ok(result.includes("image_prompt:"));
     assert.ok(result.includes("A sunset: golden light over mountains"));
   });
+
+  it("parses frontmatter with quoted titles containing colons", () => {
+    const content = [
+      "---",
+      "share: true",
+      "aliases:",
+      '  - "2026-03-26 | 🤖 The Silence After the Forge: Processing the Aftermath 🤖"',
+      'title: "2026-03-26 | 🤖 The Silence After the Forge: Processing the Aftermath 🤖"',
+      "URL: https://bagrounds.org/auto-blog-zero/2026-03-26-the-silence-after-the-forge",
+      'Author: "[[auto-blog-zero]]"',
+      "tags:",
+      "---",
+      "# 2026-03-26 | 🤖 The Silence After the Forge: Processing the Aftermath 🤖",
+      "",
+      "Body text here.",
+    ].join("\n");
+    const result = updateFrontmatterFields(content, { regenerate_image: false });
+    assert.ok(result.includes("The Silence After the Forge: Processing the Aftermath"));
+    assert.ok(result.includes("regenerate_image: false"));
+    assert.equal(
+      extractTitle(result),
+      "2026-03-26 | 🤖 The Silence After the Forge: Processing the Aftermath 🤖",
+    );
+  });
 });
 
 describe("processNote with regeneration", () => {

@@ -9,6 +9,9 @@ tags:
 affiliate link: https://amzn.to/4dNkTcj
 CTA: ✏️ Master clarity.
 updated: 2026-03-11T08:11:42.412Z
+force_analyze_links: false
+link_analysis_time: 2026-03-26T03:05:28.318Z
+link_analysis_model: gemini-3.1-flash-lite-preview
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🦢 The Elements of Style  

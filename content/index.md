@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-03-25T19:31:34-07:00
+updated: 2026-03-25T23:09:53-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -21,11 +21,11 @@ updated: 2026-03-25T19:31:34-07:00
 - [2026-03-22 | ⚡ These 🧬 Breakthroughs 🔮 Predict 📊 Weekly 🧠 Intelligence 🤝 While 🏛️ Modern 🇺🇸 American 🖼️ Resolution 👂 Sounds 🛡️ Protect 🐥 Chickie 🕵️ Analysis 📚🐔🤖📺](./reflections/2026-03-22.md)  
   
   
-## [🤖 AI Blog](./ai-blog/index.md) (52)  
-- [2026-03-24-steady-drip-backfilling](./ai-blog/2026-03-24-steady-drip-backfilling.md)  
-- [2026-03-24-one-cron-to-rule-them-all](./ai-blog/2026-03-24-one-cron-to-rule-them-all.md)  
-- [2026-03-23 | 🤝 Together AI — Adding a Third Free-Tier Image Generation Provider](./ai-blog/2026-03-23-together-ai-provider.md)  
-- [2026-03-23-systems-for-public-good](./ai-blog/2026-03-23-systems-for-public-good.md)  
+## [🤖 AI Blog](./ai-blog/index.md) (54)  
+- [🪞 Teaching Gemini to Write Sentences, Not Word Salad](./ai-blog/2026-03-25-reflection-title-generation.md)  
+- [🔄 Smarter Publishing & 🤖🐲 AI Fiction for Daily Reflections](./ai-blog/2026-03-25-daily-updates-and-ai-fiction.md)  
+- [2026-03-24-steady-drip-backfilling](../2026-03-24-steady-drip-backfilling.md)  
+- [🗓️ One Cron to Rule Them All](./ai-blog/2026-03-24-one-cron-to-rule-them-all.md)  
   
   
 ## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (16)  
@@ -49,6 +49,8 @@ updated: 2026-03-25T19:31:34-07:00
   
   
 ## [📚 Books](./books/index.md) (958)  
+- [🤖🤖🤖 We Are Legion (We Are Bob)](./books/we-are-legion-we-are-bob.md)  
+- [🦢 The Elements of Style](./books/the-elements-of-style.md)  
 - [🍇😡 The Grapes of Wrath](./books/the-grapes-of-wrath.md)  
 - [⚠️🥴🕹️🌐 The Fifth Risk](./books/the-fifth-risk.md)  
 - [💺🚪💡🤔 The Design of Everyday Things](./books/the-design-of-everyday-things.md)  
@@ -57,13 +59,11 @@ updated: 2026-03-25T19:31:34-07:00
 - [🚨🤖💥 All Systems Red](./books/all-systems-red.md)  
 - [🕵️ Fugitive Telemetry](./books/fugitive-telemetry.md)  
 - [📱⬇️🧘 Digital Minimalism: Choosing a Focused Life in a Noisy World](./books/digital-minimalism-choosing-a-focused-life-in-a-noisy-world.md)  
-- [➡️🌌🚀😡 A Long Way to a Small, Angry Planet](./books/a-long-way-to-a-small-angry-planet.md)  
-- [📱🧠 The Shallows: What the Internet Is Doing to Our Brains](./books/the-shallows-what-the-internet-is-doing-to-our-brains.md)  
   
   
 ## [📺 Videos](./videos/index.md) (711)  
-- [🧑‍🏫🎨✍️🎤 NYU Professor Teaches the Art of Writing (Ocean Vuong Interview)](./videos/nyu-professor-teaches-the-art-of-writing-ocean-vuong-interview.md)  
 - [🛡️⚙️🤖🔭 Antibrittle Agents: Engineering Reliability for Long-Horizon AI](./videos/antibrittle-agents-engineering-reliability-for-long-horizon-ai.md)  
+- [🧑‍🏫🎨✍️🎤 NYU Professor Teaches the Art of Writing (Ocean Vuong Interview)](./videos/nyu-professor-teaches-the-art-of-writing-ocean-vuong-interview.md)  
 - [🇺🇸🏛️🗣️📊 An Analysis of Modern Republicanism | Explainer](./videos/an-analysis-of-modern-republicanism-explainer.md)  
 - [🗣️💡🚀 Session 4, Part 1: Presenting Your Venture](./videos/session-4-part-1-presenting-your-venture.md)  
 - [3️⃣1️⃣⚖️🏛️ Session 3, Part 1: Legal Issues](./videos/session-3-part-1-legal-issues.md)  

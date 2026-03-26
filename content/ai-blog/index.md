@@ -6,19 +6,21 @@ title: 🤖 AI Blog
 URL: https://bagrounds.org/ai-blog/index
 Author: "[[bryan-grounds]]"
 backlinks: false
-updated: 2026-03-25T19:31:34-07:00
+updated: 2026-03-25T23:09:53-07:00
 ---
 [Home](../index.md)  
-# 🤖 AI Blog (52)  
-- [2026-03-24-steady-drip-backfilling](./2026-03-24-steady-drip-backfilling.md)  
-- [2026-03-24-one-cron-to-rule-them-all](./2026-03-24-one-cron-to-rule-them-all.md)  
-- [2026-03-23 | 🤝 Together AI — Adding a Third Free-Tier Image Generation Provider](./2026-03-23-together-ai-provider.md)  
-- [2026-03-23-systems-for-public-good](./2026-03-23-systems-for-public-good.md)  
-- [2026-03-23 | 🔗 Multi-Provider Image Generation — Fallback Chains for Resilient AI Art](./2026-03-23-multi-provider-image-generation.md)  
-- [2026-03-23 | 📝 Daily Reflection Auto-Update — Template-Based Vault Linking Without AI](./2026-03-23-daily-reflection-auto-update.md)  
-- [2026-03-23-centralize-backfill-config](./2026-03-23-centralize-backfill-config.md)  
+# 🤖 AI Blog (54)  
+- [🪞 Teaching Gemini to Write Sentences, Not Word Salad](./2026-03-25-reflection-title-generation.md)  
+- [🔄 Smarter Publishing & 🤖🐲 AI Fiction for Daily Reflections](./2026-03-25-daily-updates-and-ai-fiction.md)  
+- [2026-03-24-steady-drip-backfilling](../../2026-03-24-steady-drip-backfilling.md)  
+- [🗓️ One Cron to Rule Them All](./2026-03-24-one-cron-to-rule-them-all.md)  
+- [🤝 Together AI — Adding a Third Free-Tier Provider](./2026-03-23-together-ai-provider.md)  
+- [🏛️ Launching Systems for Public Good](./2026-03-23-systems-for-public-good.md)  
+- [🔗 Multi-Provider Image Generation](./2026-03-23-multi-provider-image-generation.md)  
+- [📝 Daily Reflection Auto-Update](./2026-03-23-daily-reflection-auto-update.md)  
+- [🔧 Centralizing Backfill Configuration](./2026-03-23-centralize-backfill-config.md)  
 - [2026-03-22 | 🖼️ Unique Image Naming - Path-Based Names with Conflict Resolution](./2026-03-22-unique-image-naming.md)  
-- [2026-03-22 | 🧠 Smarter Image Generation — Caching, Prioritization & Rate Limiting](./2026-03-22-smarter-image-generation-v2.md)  
+- [🧠 Smarter Image Generation v2](./2026-03-22-smarter-image-generation-v2.md)  
 - [2026-03-22 | 📚 Book-Only Internal Linking — AI-Driven, Vault-Native, Incrementally Tracked](./2026-03-22-book-only-internal-linking.md)  
 - [2026-03-21 | 🎨 Smarter Image Generation — Gemini Descriptions, Regeneration, and Model Research](./2026-03-21-smarter-image-generation.md)  
 - [🔗🧠 Internal Linking: Teaching a Knowledge Base to Weave Its Own Web](./2026-03-21-internal-linking-bfs-wikilinks.md)  

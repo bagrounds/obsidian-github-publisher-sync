@@ -9,6 +9,9 @@ Platform:
 Channel: David Perell
 tags:
 youtube: https://youtu.be/kn4r4CmWmUw
+force_analyze_links: false
+link_analysis_time: 2026-03-26T01:35:48.401Z
+link_analysis_model: gemini-3.1-flash-lite-preview
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 🧑‍🏫🎨✍️🎤 NYU Professor Teaches the Art of Writing (Ocean Vuong Interview)  
@@ -54,7 +57,7 @@ youtube: https://youtu.be/kn4r4CmWmUw
 * 🕊️ The Selected Poems of Emily Dickinson by Emily Dickinson demonstrates the power of idiosyncratic syntax and deep observation to reshape reality.  
   
 ### 🆚 Contrasting  
-* ✂️ The Elements of Style by William Strunk Jr. and E.B. White advocates for the very brevity, clarity, and efficiency that Vuong critiques.  
+* ✂️ [🦢 The Elements of Style](../books/the-elements-of-style.md) by William Strunk Jr. and E.B. White advocates for the very brevity, clarity, and efficiency that Vuong critiques.  
 * 🏔️ The Old Man and the Sea by Ernest Hemingway exemplifies the laconic, invisible newspaper style that standardized the 20th-century sentence.  
   
 ### 🎨 Creatively Related  

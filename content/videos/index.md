@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-03-26T15:59:38-07:00
+updated: 2026-03-26T16:32:41-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (712)  
+# 📺 Videos (713)  
 - [💰🤑🤖💡🚀💲 $0.10/Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
@@ -38,6 +38,7 @@ updated: 2026-03-26T15:59:38-07:00
 - [👶🧸8️⃣🗓️ Montessori Items For An 8 Month Old Baby](./8-montessori-items-for-an-8-month-old-baby-cc.md)  
 - [😴➡️😩8️⃣💤 Why You Wake Up Exhausted (Even After 8 Hours)](./why-you-wake-up-exhausted-even-after-8-hours.md)  
 - [🇺🇸🗳️⚠️ A Big-Picture Look at the Threat to Voting Coming From the Trump Administration | Explainer](./a-big-picture-look-at-the-threat-to-voting-coming-from-the-trump-administration-explainer.md)  
+- [💰💸⚔️ A “Billion Dollar a Day” War | Explainer](./a-billion-dollar-a-day-war-explainer.md)  
 - [🚨🗣️🏛️💔 A Breaking Point: The Minneapolis Police Chief on ICE](./a-breaking-point-the-minneapolis-police-chief-on-ice.md)  
 - [🏛️📉⚠️🎭 A Brittle Administration Inventing a Crime Crisis | Explainer](./a-brittle-administration-inventing-a-crime-crisis-explainer.md)  
 - [🤖📰🧐 [ACL 2025] Large Language Model Agents for Content Analysis](./acl-2025-large-language-model-agents-for-content-analysis.md)  

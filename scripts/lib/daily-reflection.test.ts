@@ -144,6 +144,21 @@ describe("insertPostLink", () => {
     assert.equal(updated, withLink);
   });
 
+  it("replaces stale link for same series when explicitly replacing", () => {
+    const withOldLink = baseContent + "\n## [[chickie-loo/index|🐔 Chickie Loo]]\n- [[chickie-loo/2026-03-23-old-slug|Old Title]]\n";
+    const updated = insertPostLink(withOldLink, CHICKIE_LOO, "2026-03-23-new-slug", "New Title", "2026-03-23-old-slug");
+    assert.ok(updated.includes("- [[chickie-loo/2026-03-23-new-slug|New Title]]"), "should contain new link");
+    assert.ok(!updated.includes("old-slug"), "should not contain old link");
+    assert.equal((updated.match(/- \[\[chickie-loo\/2026-03-23/g) ?? []).length, 1, "should have exactly one link for this date");
+  });
+
+  it("does not replace link when no replacingFilenameNoExt is provided", () => {
+    const withOldLink = baseContent + "\n## [[chickie-loo/index|🐔 Chickie Loo]]\n- [[chickie-loo/2026-03-22-other-post|Other Title]]\n";
+    const updated = insertPostLink(withOldLink, CHICKIE_LOO, "2026-03-23-new-post", "New Title");
+    assert.ok(updated.includes("- [[chickie-loo/2026-03-22-other-post|Other Title]]"), "should keep the other date link");
+    assert.ok(updated.includes("- [[chickie-loo/2026-03-23-new-post|New Title]]"), "should add the new link");
+  });
+
   it("inserts new section before embed sections", () => {
     const withEmbed = baseContent + "\n## 🐦 Tweet\n<embed/>\n";
     const updated = insertPostLink(withEmbed, CHICKIE_LOO, "2026-03-23-post", "Title");

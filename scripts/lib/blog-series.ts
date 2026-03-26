@@ -78,7 +78,11 @@ export const updatePreviousPost = (
     nextFilename,
   });
   const updated = content.split("\n").map((line) =>
-    line.startsWith(series.navLink) && !line.includes("⏭") ? `${line} ${forwardLink}` : line
+    line.startsWith(series.navLink)
+      ? (line.includes("⏭")
+        ? line.replace(/\[\[[^\]]*⏭️\]\]/, forwardLink)
+        : `${line} ${forwardLink}`)
+      : line
   ).join("\n");
   if (updated !== content) {
     fs.writeFileSync(filePath, updated, "utf-8");

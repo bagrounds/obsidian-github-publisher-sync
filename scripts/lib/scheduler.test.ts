@@ -12,6 +12,7 @@ import {
   isValidTaskId,
   extractSeriesId,
   blogPostExistsForToday,
+  findPostToRegenerate,
   nowPacificHour,
   type TaskId,
 } from "./scheduler.ts";
@@ -224,19 +225,23 @@ describe("BLOG_SERIES_RUN_CONFIGS", () => {
     });
   });
 
-  it("systems-for-public-good leads with gemini-2.5-flash (for grounding support)", () => {
+  it("chickie-loo and auto-blog-zero use only Gemini 3+ models", () => {
+    ["chickie-loo", "auto-blog-zero"].forEach((key) => {
+      const config = BLOG_SERIES_RUN_CONFIGS.get(key);
+      assert.ok(config);
+      config.modelChain.forEach((model) => {
+        assert.ok(
+          model.startsWith("gemini-3"),
+          `${key}: model ${model} is not a Gemini 3+ model`,
+        );
+      });
+    });
+  });
+
+  it("systems-for-public-good leads with gemini-2.5-flash for grounding support", () => {
     const config = BLOG_SERIES_RUN_CONFIGS.get("systems-for-public-good");
     assert.ok(config);
     assert.equal(config.modelChain[0], "gemini-2.5-flash");
-  });
-
-  it("all model chains include gemini-2.5-flash-lite as fallback", () => {
-    BLOG_SERIES_RUN_CONFIGS.forEach((config, key) => {
-      assert.ok(
-        config.modelChain.includes("gemini-2.5-flash-lite"),
-        `${key}: modelChain should include gemini-2.5-flash-lite`,
-      );
-    });
   });
 
   it("gemini-2.5-flash-lite is never the first (default) model", () => {
@@ -368,5 +373,74 @@ describe("nowPacificHour", () => {
     // 2026-01-15T08:00:00Z = midnight PST
     const hour = nowPacificHour(new Date("2026-01-15T08:00:00Z"));
     assert.equal(hour, 0);
+  });
+});
+
+// ---------------------------------------------------------------------------
+// findPostToRegenerate
+// ---------------------------------------------------------------------------
+
+describe("findPostToRegenerate", () => {
+  it("returns undefined for non-existent directory", () => {
+    assert.equal(findPostToRegenerate("/tmp/nonexistent-dir-xyz", "2026-03-24"), undefined);
+  });
+
+  it("returns undefined for empty directory", () => {
+    const tmpDir = fs.mkdtempSync(path.join(os.tmpdir(), "regen-test-"));
+    try {
+      assert.equal(findPostToRegenerate(tmpDir, "2026-03-24"), undefined);
+    } finally {
+      fs.rmSync(tmpDir, { recursive: true });
+    }
+  });
+
+  it("returns undefined when post exists without regenerate_post", () => {
+    const tmpDir = fs.mkdtempSync(path.join(os.tmpdir(), "regen-test-"));
+    try {
+      fs.writeFileSync(path.join(tmpDir, "2026-03-24-test.md"), "---\nshare: true\ntitle: Test\n---\nBody");
+      assert.equal(findPostToRegenerate(tmpDir, "2026-03-24"), undefined);
+    } finally {
+      fs.rmSync(tmpDir, { recursive: true });
+    }
+  });
+
+  it("returns undefined when regenerate_post is false", () => {
+    const tmpDir = fs.mkdtempSync(path.join(os.tmpdir(), "regen-test-"));
+    try {
+      fs.writeFileSync(path.join(tmpDir, "2026-03-24-test.md"), "---\nregenerate_post: false\ntitle: Test\n---\nBody");
+      assert.equal(findPostToRegenerate(tmpDir, "2026-03-24"), undefined);
+    } finally {
+      fs.rmSync(tmpDir, { recursive: true });
+    }
+  });
+
+  it("returns filename when regenerate_post is true", () => {
+    const tmpDir = fs.mkdtempSync(path.join(os.tmpdir(), "regen-test-"));
+    try {
+      fs.writeFileSync(path.join(tmpDir, "2026-03-24-test.md"), "---\nshare: true\nregenerate_post: true\ntitle: Test\n---\nBody");
+      assert.equal(findPostToRegenerate(tmpDir, "2026-03-24"), "2026-03-24-test.md");
+    } finally {
+      fs.rmSync(tmpDir, { recursive: true });
+    }
+  });
+
+  it("ignores posts for other dates", () => {
+    const tmpDir = fs.mkdtempSync(path.join(os.tmpdir(), "regen-test-"));
+    try {
+      fs.writeFileSync(path.join(tmpDir, "2026-03-23-yesterday.md"), "---\nregenerate_post: true\n---\nBody");
+      assert.equal(findPostToRegenerate(tmpDir, "2026-03-24"), undefined);
+    } finally {
+      fs.rmSync(tmpDir, { recursive: true });
+    }
+  });
+
+  it("ignores non-md files", () => {
+    const tmpDir = fs.mkdtempSync(path.join(os.tmpdir(), "regen-test-"));
+    try {
+      fs.writeFileSync(path.join(tmpDir, "2026-03-24-metadata.json"), '{"regenerate_post": true}');
+      assert.equal(findPostToRegenerate(tmpDir, "2026-03-24"), undefined);
+    } finally {
+      fs.rmSync(tmpDir, { recursive: true });
+    }
   });
 });

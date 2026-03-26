@@ -3,6 +3,7 @@ import assert from "node:assert/strict";
 import fs from "node:fs";
 import path from "node:path";
 import os from "node:os";
+import yaml from "js-yaml";
 
 import {
   BLOG_SERIES,
@@ -221,6 +222,17 @@ describe("assembleFrontmatter", () => {
       .split("\n").find((line) => line.includes("[[index|Home]]"));
     assert.ok(navLine?.includes("[[auto-blog-zero/2026-03-11-previous-post|⏮️]]"));
   });
+
+  it("quotes title and aliases so colons do not break YAML parsing", () => {
+    const fm = assembleFrontmatter(series, "2026-03-26", "The Silence After the Forge: Processing the Aftermath", "the-silence-after-the-forge-processing-the-aftermath");
+    assert.ok(fm.includes('title: "2026-03-26 | 🤖 The Silence After the Forge: Processing the Aftermath 🤖"'));
+    assert.ok(fm.includes('- "2026-03-26 | 🤖 The Silence After the Forge: Processing the Aftermath 🤖"'));
+    assert.ok(fm.includes("# 2026-03-26 | 🤖 The Silence After the Forge: Processing the Aftermath 🤖"));
+
+    const yamlBlock = fm.split("---")[1] as string;
+    const parsed = yaml.load(yamlBlock) as Record<string, unknown>;
+    assert.equal(parsed["title"], "2026-03-26 | 🤖 The Silence After the Forge: Processing the Aftermath 🤖");
+  });
 });
 
 describe("BLOG_SERIES priorityUser config", () => {
@@ -391,6 +403,22 @@ describe("updatePreviousPost", () => {
       updatePreviousPost(tmpDir, prev, series, "2026-03-11-new-post.md");
       const updated = fs.readFileSync(path.join(tmpDir, "2026-03-10-test.md"), "utf-8");
       assert.equal((updated.match(/⏭/g) ?? []).length, 1);
+    } finally {
+      fs.rmSync(tmpDir, { recursive: true });
+    }
+  });
+
+  it("replaces stale forward link when regeneration produces a new filename", () => {
+    const tmpDir = fs.mkdtempSync(path.join(os.tmpdir(), "blog-test-"));
+    try {
+      fs.writeFileSync(path.join(tmpDir, "2026-03-10-test.md"),
+        `---\nshare: true\n---\n${series.navLink} | [[auto-blog-zero/2026-03-11-old-slug|⏭️]]\n## Test\n\nBody.\n`);
+      const prev = { filename: "2026-03-10-test.md", date: "2026-03-10", title: "Test", body: "" };
+      updatePreviousPost(tmpDir, prev, series, "2026-03-11-new-slug.md");
+      const updated = fs.readFileSync(path.join(tmpDir, "2026-03-10-test.md"), "utf-8");
+      assert.equal((updated.match(/⏭/g) ?? []).length, 1);
+      assert.ok(updated.includes("[[auto-blog-zero/2026-03-11-new-slug|⏭️]]"), "should have the new forward link");
+      assert.ok(!updated.includes("old-slug"), "should not have the old forward link");
     } finally {
       fs.rmSync(tmpDir, { recursive: true });
     }

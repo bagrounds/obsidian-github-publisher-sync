@@ -89,15 +89,20 @@ export const SCHEDULE: readonly ScheduleEntry[] = [
  * The modelChain is an ordered list of Gemini models to try. The first
  * model is the default; subsequent models are tried on failure.
  *
+ * chickie-loo and auto-blog-zero use Gemini 3+ models for highest
+ * blog post quality.
+ *
  * systems-for-public-good leads with gemini-2.5-flash because it
- * supports Google Search grounding on the free tier.
+ * needs Google Search grounding (free tier, 500 RPD) to reference
+ * current events. Grounding is not available on the free tier for
+ * Gemini 3+ models.
  */
 export const BLOG_SERIES_RUN_CONFIGS: ReadonlyMap<string, BlogSeriesRunConfig> = new Map([
   [
     "chickie-loo",
     {
       seriesId: "chickie-loo",
-      modelChain: ["gemini-3.1-flash-lite-preview", "gemini-2.5-flash", "gemini-2.5-flash-lite"],
+      modelChain: ["gemini-3.1-flash-lite-preview", "gemini-3-flash-preview"],
       priorityUserEnvVar: "CHICKIE_LOO_PRIORITY_USER",
     },
   ],
@@ -105,7 +110,7 @@ export const BLOG_SERIES_RUN_CONFIGS: ReadonlyMap<string, BlogSeriesRunConfig> =
     "auto-blog-zero",
     {
       seriesId: "auto-blog-zero",
-      modelChain: ["gemini-3.1-flash-lite-preview", "gemini-2.5-flash", "gemini-2.5-flash-lite"],
+      modelChain: ["gemini-3.1-flash-lite-preview", "gemini-3-flash-preview"],
       priorityUserEnvVar: "AUTO_BLOG_ZERO_PRIORITY_USER",
     },
   ],
@@ -134,7 +139,7 @@ export const nowPacificHour = (now: Date = new Date()): number =>
       timeZone: "America/Los_Angeles",
     }).format(now),
     10,
-  );
+  ) % 24;
 
 /**
  * Returns tasks eligible to run at the given **Pacific** hour.
@@ -169,3 +174,26 @@ export const blogPostExistsForToday = (
 ): boolean =>
   fs.existsSync(seriesDir) &&
   fs.readdirSync(seriesDir).some((f) => f.startsWith(today));
+
+/**
+ * Finds today's post in a series directory that has `regenerate_post: true`
+ * in its YAML frontmatter. Returns the filename if regeneration is requested,
+ * or undefined if no post needs regeneration.
+ *
+ * This allows users to flag a post for regeneration from Obsidian by toggling
+ * a checkbox property.
+ */
+export const findPostToRegenerate = (
+  seriesDir: string,
+  today: string,
+): string | undefined => {
+  if (!fs.existsSync(seriesDir)) return undefined;
+
+  return fs.readdirSync(seriesDir)
+    .filter((f) => f.startsWith(today) && f.endsWith(".md"))
+    .find((f) => {
+      const content = fs.readFileSync(path.join(seriesDir, f), "utf-8");
+      const match = content.match(/^---\n([\s\S]*?)\n---/);
+      return match !== null && /^regenerate_post:\s*true$/m.test(match[1] ?? "");
+    });
+};

@@ -26,6 +26,7 @@ import {
   isValidTaskId,
   BLOG_SERIES_RUN_CONFIGS,
   blogPostExistsForToday,
+  findPostToRegenerate,
   nowPacificHour,
   type TaskId,
 } from "./lib/scheduler.ts";
@@ -147,9 +148,14 @@ const runBlogSeries = async (seriesId: string): Promise<void> => {
   const vaultDir = await syncObsidianVault({ authToken, vaultName });
   copySeriesPosts(vaultDir, seriesId, REPO_ROOT);
 
-  // 2. Check if today's post already exists (idempotent "at or after" scheduling)
+  // 2. Check if today's post needs regeneration or already exists
   const seriesDir = path.join(REPO_ROOT, seriesId);
-  if (blogPostExistsForToday(seriesDir, today)) {
+  const postToRegenerate = findPostToRegenerate(seriesDir, today);
+  const regeneratedOldVaultPath = postToRegenerate ? `${seriesId}/${postToRegenerate}` : undefined;
+  if (postToRegenerate) {
+    console.log(`  ♻️  Regeneration requested for ${postToRegenerate} — removing old post`);
+    fs.unlinkSync(path.join(seriesDir, postToRegenerate));
+  } else if (blogPostExistsForToday(seriesDir, today)) {
     console.log(`  ⏭️  Already generated for ${today}`);
     return;
   }
@@ -167,6 +173,7 @@ const runBlogSeries = async (seriesId: string): Promise<void> => {
     repoRoot: REPO_ROOT,
     today,
     priorityUser,
+    regeneratingFilename: postToRegenerate,
   });
 
   // 6. Generate blog image (continue on error)
@@ -189,6 +196,16 @@ const runBlogSeries = async (seriesId: string): Promise<void> => {
 
     const postLocal = path.join(REPO_ROOT, result.postPath);
     changed = syncFileToVault(postLocal, result.postPath, syncVaultDir) || changed;
+
+    // Delete old post from vault when regenerating with a new filename
+    if (regeneratedOldVaultPath && regeneratedOldVaultPath !== result.postPath) {
+      const oldVaultFile = path.join(syncVaultDir, regeneratedOldVaultPath);
+      if (fs.existsSync(oldVaultFile)) {
+        fs.unlinkSync(oldVaultFile);
+        console.log(`  🗑️  Removed old vault file: ${regeneratedOldVaultPath}`);
+        changed = true;
+      }
+    }
 
     const metadataPath = path.join(REPO_ROOT, seriesId, ".last-generate-metadata.json");
     const previousFilename = readPreviousPostFilename(metadataPath);

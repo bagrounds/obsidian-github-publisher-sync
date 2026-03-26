@@ -6,10 +6,11 @@ title: 🤖 AI Blog
 URL: https://bagrounds.org/ai-blog/index
 Author: "[[bryan-grounds]]"
 backlinks: false
-updated: 2026-03-26T12:53:11-07:00
+updated: 2026-03-26T15:59:38-07:00
 ---
 [Home](../index.md)  
-# 🤖 AI Blog (58)  
+# 🤖 AI Blog (59)  
+- [🔒 Quoting the Forge — Fixing YAML Frontmatter Parsing for Titles with Colons](../../2026-03-26-yaml-frontmatter-quoting-fix.md)  
 - [🛡️ Quoting the Unquoted — Hardening Frontmatter and Filling Gaps](./2026-03-26-quoting-the-unquoted.md)  
 - [🔍 The Invisible Composite — Fixing OG Image Generation with a 5 Whys RCA](../../2026-03-26-og-image-compositing-fix.md)  
 - [♻️ Gemini Model Refresh and Blog Post Regeneration](./2026-03-26-gemini-model-refresh-and-regeneration.md)  

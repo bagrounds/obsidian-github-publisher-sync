@@ -790,7 +790,7 @@ describe("backfillImages", () => {
     assert.equal(result.imagesGenerated, 0);
   });
 
-  it("updates frontmatter chain when image generated", async () => {
+  it("returns modified file info instead of updating chain timestamps", async () => {
     const dir = path.join(tempDir, "series");
     fs.mkdirSync(dir);
     fs.writeFileSync(
@@ -806,7 +806,7 @@ describe("backfillImages", () => {
       "---\ntitle: Needs Image\n---\n# Needs Image\nBody\n",
     );
 
-    await backfillImages({
+    const result = await backfillImages({
       directories: [{ path: dir, id: "series" }],
       attachmentsDir,
       apiKey: "key",
@@ -815,6 +815,7 @@ describe("backfillImages", () => {
       minDelayMs: 0,
     });
 
+    // Chain files should NOT have updated timestamps
     const latestContent = fs.readFileSync(
       path.join(dir, "2026-03-12-latest.md"),
       "utf-8",
@@ -823,15 +824,20 @@ describe("backfillImages", () => {
       path.join(dir, "2026-03-11-middle.md"),
       "utf-8",
     );
+    assert.ok(!latestContent.includes("updated:"), "chain files should not be touched");
+    assert.ok(!middleContent.includes("updated:"), "chain files should not be touched");
+
+    // Candidate should have the image
     const needsImageContent = fs.readFileSync(
       path.join(dir, "2026-03-10-needs-image.md"),
       "utf-8",
     );
-
-    assert.ok(latestContent.includes("updated:"));
-    assert.ok(middleContent.includes("updated:"));
-    assert.ok(needsImageContent.includes("updated:"));
     assert.ok(needsImageContent.includes("![[attachments/series-2026-03-10-needs-image.jpg]]"));
+
+    // Result should include modified file info
+    assert.equal(result.modifiedFiles.length, 1);
+    assert.equal(result.modifiedFiles[0]!.relativePath, "series/2026-03-10-needs-image.md");
+    assert.equal(result.modifiedFiles[0]!.title, "Needs Image");
   });
 
   it("handles missing directories gracefully", async () => {

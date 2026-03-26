@@ -37,6 +37,7 @@ import {
   type ContentNote,
   type FindContentConfig,
 } from "./find-content-to-post.ts";
+import { addUpdateLinksToReflection } from "./lib/daily-updates.ts";
 
 // --- Test Helpers ---
 
@@ -1916,46 +1917,46 @@ Content for yesterday's reflection that has enough substance for posting.`);
   });
 });
 
-// --- Ordering Constraint: timestamps before push ---
+// --- Ordering Constraint: update links before push ---
 
-describe("auto-post ordering: timestamps before main()", () => {
-  test("auto-post.ts calls updatePathTimestamps before main()", () => {
+describe("auto-post ordering: update links before main()", () => {
+  test("auto-post.ts calls addUpdateLinksToReflection before main()", () => {
     // This test verifies the critical ordering constraint at the source level.
-    // If timestamps are set AFTER main() pushes the vault, they never reach
-    // Obsidian and Enveloppe can't follow the breadcrumb trail.
+    // If update links are added AFTER main() pushes the vault, they never
+    // reach Obsidian and Enveloppe can't discover the modified files.
     const thisDir = path.dirname(fileURLToPath(import.meta.url));
     const autoPostSource = fs.readFileSync(
       path.join(thisDir, "auto-post.ts"),
       "utf-8",
     );
 
-    const timestampCallIndex = autoPostSource.indexOf("updatePathTimestamps(");
+    const updateLinksCallIndex = autoPostSource.indexOf("addUpdateLinksToReflection(");
     const mainCallIndex = autoPostSource.indexOf(
       "await main(",
-      // Start searching after the timestamp call to find the main() that
+      // Start searching after the update links call to find the main() that
       // follows it — not an earlier reference
-      timestampCallIndex,
+      updateLinksCallIndex,
     );
 
-    assert.ok(timestampCallIndex > 0, "updatePathTimestamps call should exist");
-    assert.ok(mainCallIndex > 0, "main() call should exist after timestamps");
+    assert.ok(updateLinksCallIndex > 0, "addUpdateLinksToReflection call should exist");
+    assert.ok(mainCallIndex > 0, "main() call should exist after update links");
     assert.ok(
-      timestampCallIndex < mainCallIndex,
-      `updatePathTimestamps (index ${timestampCallIndex}) must come BEFORE main() ` +
-        `(index ${mainCallIndex}) so timestamps are included in the vault push`,
+      updateLinksCallIndex < mainCallIndex,
+      `addUpdateLinksToReflection (index ${updateLinksCallIndex}) must come BEFORE main() ` +
+        `(index ${mainCallIndex}) so update links are included in the vault push`,
     );
   });
 
-  test("timestamps are on disk before simulated push", () => {
-    // Simulate the auto-post flow: timestamps first, then read files
+  test("update links are on disk before simulated push", () => {
+    // Simulate the auto-post flow: update links first, then read files
     // (mimicking what push would see)
     const tempDir = createTempDir();
     try {
-      const dir = path.join(tempDir, "reflections");
-      fs.mkdirSync(dir, { recursive: true });
+      const reflDir = path.join(tempDir, "reflections");
+      fs.mkdirSync(reflDir, { recursive: true });
       fs.writeFileSync(
-        path.join(dir, "2026-03-08.md"),
-        `---\ntitle: Reflection\n---\n# Reflection\nContent.`,
+        path.join(reflDir, "2026-03-08.md"),
+        `---\ntitle: 2026-03-08\n---\n# 2026-03-08\nContent.`,
       );
       fs.mkdirSync(path.join(tempDir, "books"), { recursive: true });
       fs.writeFileSync(
@@ -1963,30 +1964,25 @@ describe("auto-post ordering: timestamps before main()", () => {
         `---\ntitle: Test Book\n---\n# Test\nContent.`,
       );
 
-      const pathFromRoot = ["reflections/2026-03-08.md", "books/test.md"];
-      const timestamp = "2026-03-10T12:00:00.000Z";
+      // Step 1: Add update links (BEFORE push)
+      addUpdateLinksToReflection(reflDir, "2026-03-08", [
+        { relativePath: "books/test.md", title: "Test Book" },
+      ]);
 
-      // Step 1: Update timestamps (BEFORE push)
-      updatePathTimestamps(pathFromRoot, tempDir, timestamp);
-
-      // Step 2: Read files as push would see them
+      // Step 2: Read reflection as push would see it
       const reflectionContent = fs.readFileSync(
-        path.join(tempDir, "reflections/2026-03-08.md"),
-        "utf-8",
-      );
-      const bookContent = fs.readFileSync(
-        path.join(tempDir, "books/test.md"),
+        path.join(reflDir, "2026-03-08.md"),
         "utf-8",
       );
 
-      // Both files should have timestamps at push time
+      // Reflection should have the update link at push time
       assert.ok(
-        reflectionContent.includes(`updated: ${timestamp}`),
-        "Reflection should have timestamp when push reads it",
+        reflectionContent.includes("[[books/test|Test Book]]"),
+        "Reflection should have update link when push reads it",
       );
       assert.ok(
-        bookContent.includes(`updated: ${timestamp}`),
-        "Book should have timestamp when push reads it",
+        reflectionContent.includes("## 🔄 Updates"),
+        "Reflection should have Updates section when push reads it",
       );
     } finally {
       cleanupTempDir(tempDir);

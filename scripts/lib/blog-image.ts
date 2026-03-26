@@ -37,6 +37,7 @@ export interface BackfillResult {
   readonly imagesGenerated: number;
   readonly filesUpdated: number;
   readonly stoppedByQuota: boolean;
+  readonly modifiedFiles: ReadonlyArray<{ readonly relativePath: string; readonly title: string }>;
 }
 
 export type ImageGenerator = (
@@ -956,6 +957,7 @@ export const backfillImages = async (
   let imagesGenerated = 0;
   let filesUpdated = 0;
   let providerIndex = 0;
+  const modifiedFiles: Array<{ readonly relativePath: string; readonly title: string }> = [];
 
   const { candidates, dirFiles } = collectCandidates(directories, today, onProgress);
 
@@ -988,6 +990,7 @@ export const backfillImages = async (
 
         if (!result.skipped) {
           imagesGenerated++;
+          filesUpdated++;
           onProgress({
             event: "image_generated",
             directory: candidate.dirId,
@@ -996,16 +999,12 @@ export const backfillImages = async (
             provider: provider.name,
           });
 
-          const chain = buildChain(candidate, dirFiles);
-          const timestamp = new Date().toISOString();
-          for (const chainFile of chain) {
-            updateFrontmatterTimestamp(chainFile, timestamp);
-            filesUpdated++;
-          }
-          onProgress({
-            event: "chain_updated",
-            directory: candidate.dirId,
-            chainLength: chain.length,
+          const relativePath = `${candidate.dirId}/${candidate.filename}`;
+          const noteContent = fs.readFileSync(candidate.filePath, "utf-8");
+          const { frontmatter: fm } = parseFrontmatter(noteContent);
+          modifiedFiles.push({
+            relativePath,
+            title: fm["title"] || path.basename(candidate.filename, ".md"),
           });
 
           if (minDelayMs > 0) {
@@ -1018,7 +1017,7 @@ export const backfillImages = async (
               imagesGenerated,
               maxImages,
             });
-            return { imagesGenerated, filesUpdated, stoppedByQuota: false };
+            return { imagesGenerated, filesUpdated, stoppedByQuota: false, modifiedFiles };
           }
         }
 
@@ -1054,7 +1053,7 @@ export const backfillImages = async (
             continue;
           }
 
-          return { imagesGenerated, filesUpdated, stoppedByQuota: true };
+          return { imagesGenerated, filesUpdated, stoppedByQuota: true, modifiedFiles };
         }
 
         onProgress({
@@ -1070,11 +1069,11 @@ export const backfillImages = async (
     }
 
     if (!generated) {
-      return { imagesGenerated, filesUpdated, stoppedByQuota: true };
+      return { imagesGenerated, filesUpdated, stoppedByQuota: true, modifiedFiles };
     }
   }
 
-  return { imagesGenerated, filesUpdated, stoppedByQuota: false };
+  return { imagesGenerated, filesUpdated, stoppedByQuota: false, modifiedFiles };
 };
 
 export const updateFrontmatterTimestamp = (

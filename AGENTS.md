@@ -4,6 +4,7 @@
 - 🚫 AI blog posts must never contain tags in their frontmatter or links in the content.
 - 🧭 Always include breadcrumb nav links at the top of the blog post, right after the frontmatter: `[[index|🏡 Home]] > [[/ai-blog/index|🤖 AI Blog]]`
 - 📚 Always include a book recommendations section at the bottom of the blog post with Similar, Contrasting, and Creatively Related recommendations relevant to the post content. Do not include any links in the recommendations — just recommend books by title and author.
+- 📖 Never put book titles in italics or quotes. Just write the title plainly.
 
 ## Product & Engineering Specs
 - 📋 All features must be covered by a product/engineering spec in the `specs/` directory.

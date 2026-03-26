@@ -30,6 +30,7 @@
    ├── 🐔 blog-series:chickie-loo      → check exists → pull → generate → image → sync
    ├── 🤖 blog-series:auto-blog-zero   → check exists → pull → generate → image → sync
    ├── 🏛️ blog-series:systems-for-public-good → check exists → pull → generate → image → sync
+   ├── 🤖🐲 ai-fiction                  → pull vault → check fiction → generate → push vault
    ├── 🪞 reflection-title             → pull vault → check title → generate → push vault
    ├── 🖼️ backfill-blog-images         → pull → backfill → sync
    ├── 🔗 internal-linking             → pull vault → link → push vault
@@ -51,12 +52,13 @@ Pacific before making decisions via `nowPacificHour()`.
 | 8 AM | `blog-series:auto-blog-zero` | 🤖 Auto Blog Zero daily post |
 | 9 AM | `blog-series:systems-for-public-good` | 🏛️ Systems for Public Good daily post |
 
-### 🪞 Reflection Title — "At or After" Scheduling
+### 🪞 Reflection & Fiction — "At or After" Scheduling
 
-🌙 The reflection-title task uses the `atOrAfter` flag for at-or-after scheduling, becoming eligible at 10 PM Pacific and remaining eligible until 11:59 PM Pacific. It generates a creative emoji-enriched title for the daily reflection note using Gemini AI. Also titles yesterday's reflection if it's still untitled.
+🌙 The ai-fiction and reflection-title tasks both use the `atOrAfter` flag, becoming eligible at 10 PM Pacific and remaining eligible until 11:59 PM Pacific. The ai-fiction task generates a short emoji-rich fiction passage themed on the day's content. The reflection-title task generates a creative emoji-enriched title. AI fiction runs first so that the title generator can incorporate fiction themes. Also titles yesterday's reflection if it's still untitled.
 
 | 🕐 Earliest Pacific Hour | 🏷️ Task ID | 📝 Description |
 |---|---|---|
+| 10 PM | `ai-fiction` | 🤖🐲 Generate themed fiction for today's reflection |
 | 10 PM | `reflection-title` | 🪞 Generate creative title for today's reflection |
 
 ### 🔧 Other Tasks — Exact Hour Matching

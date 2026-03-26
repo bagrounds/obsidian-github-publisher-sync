@@ -32,7 +32,7 @@ const GEMINI_BASE_DELAY_MS = 2_000;
 const YAML_OPTS: yaml.DumpOptions & yaml.LoadOptions = {
   lineWidth: -1,
   quotingType: '"',
-  forceQuotes: false,
+  forceQuotes: true,
   schema: yaml.JSON_SCHEMA,
 };
 
@@ -138,7 +138,10 @@ export const reflectionNeedsTitle = (content: string, date: string): boolean => 
 
   if (!titleLine) return true;
 
-  const titleValue = titleLine.replace(/^title:\s*/, "").trim();
+  const titleValue = titleLine
+    .replace(/^title:\s*/, "")
+    .trim()
+    .replace(/^["']|["']$/g, "");
   return titleValue === date;
 };
 

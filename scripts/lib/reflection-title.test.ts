@@ -215,6 +215,21 @@ describe("reflectionNeedsTitle", () => {
       assert.equal(reflectionNeedsTitle(content, "2026-01-01"), false);
     });
   });
+
+  it("returns true when title is date wrapped in double quotes", () => {
+    const content = '---\ntitle: "2026-01-01"\n---\n# 2026-01-01\n';
+    assert.equal(reflectionNeedsTitle(content, "2026-01-01"), true);
+  });
+
+  it("returns true when title is date wrapped in single quotes", () => {
+    const content = "---\ntitle: '2026-01-01'\n---\n# 2026-01-01\n";
+    assert.equal(reflectionNeedsTitle(content, "2026-01-01"), true);
+  });
+
+  it("returns false when quoted title has creative text", () => {
+    const content = '---\ntitle: "2026-01-01 | 🎉 Party"\n---\n';
+    assert.equal(reflectionNeedsTitle(content, "2026-01-01"), false);
+  });
 });
 
 // ---------------------------------------------------------------------------
@@ -368,14 +383,14 @@ describe("applyReflectionTitle", () => {
 
   it("updates frontmatter title field", () => {
     const result = applyReflectionTitle(SAMPLE_REFLECTION, "2026-03-24", creativeTitle);
-    assert.ok(result.includes("title: 2026-03-24 | 🌌 Peace"));
+    assert.ok(result.includes('title: "2026-03-24 | 🌌 Peace'));
   });
 
   it("updates frontmatter aliases to match new title", () => {
     const result = applyReflectionTitle(SAMPLE_REFLECTION, "2026-03-24", creativeTitle);
     assert.ok(result.includes("2026-03-24 | 🌌 Peace"));
     // Verify it appears in the aliases section (YAML array)
-    const aliasLine = result.split("\n").find((l) => l.includes("- 2026-03-24 |"));
+    const aliasLine = result.split("\n").find((l) => l.includes('"2026-03-24 |'));
     assert.ok(aliasLine, "Should have alias with creative title");
   });
 

@@ -11,7 +11,7 @@ image_prompt: A stylized, isometric illustration of a digital relay race. Three 
 updated: 2026-03-24T06:33:04.554Z
 ---
   
-[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-23-centralize-backfill-config.md) [⏭️](./2026-03-22-smarter-image-generation-v2.md)  
+[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-23-daily-reflection-auto-update.md) [⏭️](./2026-03-23-systems-for-public-good.md)  
   
 # 🔗 Multi-Provider Image Generation  
 ![ai-blog-2026-03-23-multi-provider-image-generation](../ai-blog-2026-03-23-multi-provider-image-generation.jpg)  

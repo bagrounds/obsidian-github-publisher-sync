@@ -45,6 +45,7 @@ import { syncFileToVault, readPreviousPostFilename } from "./sync-series-to-vaul
 import { run as runLinking, DEFAULT_LINKING_MODEL } from "./lib/internal-linking.ts";
 import { autoPost } from "./auto-post.ts";
 import { BACKFILL_CONTENT_IDS } from "./lib/blog-series-config.ts";
+import { addUpdateLinksToReflection, extractTitleFromFile } from "./lib/daily-updates.ts";
 import {
   reflectionNeedsTitle,
   generateReflectionTitle,
@@ -231,6 +232,8 @@ const runBackfillImages = async (): Promise<void> => {
     if (line) console.log(line);
   };
 
+  let modifiedFiles: ReadonlyArray<{ readonly relativePath: string; readonly title: string }> = [];
+
   try {
     const result = await backfillImages({
       directories,
@@ -245,17 +248,24 @@ const runBackfillImages = async (): Promise<void> => {
       maxImages: 1,
     });
     console.log(`  🏁 Backfill done: ${result.imagesGenerated} image(s), ${result.filesUpdated} file(s) updated${result.stoppedByQuota ? " (stopped by quota)" : ""}`);
+    modifiedFiles = result.modifiedFiles;
   } catch (error) {
     console.log(`  ❌ Backfill failed: ${error instanceof Error ? error.message : String(error)}`);
   }
 
-  // 3. Sync to vault
+  // 3. Sync to vault and add update links to daily reflection
   const syncVaultDir = await syncObsidianVault({ authToken, vaultName });
   BACKFILL_CONTENT_IDS.forEach((id) => {
     const localDir = path.join(REPO_ROOT, id);
     syncMarkdownDir(localDir, id, syncVaultDir);
   });
   syncAttachmentsDir(path.join(REPO_ROOT, "attachments"), syncVaultDir);
+
+  if (modifiedFiles.length > 0) {
+    const reflectionsDir = path.join(syncVaultDir, "reflections");
+    addUpdateLinksToReflection(reflectionsDir, todayPacific(), modifiedFiles);
+  }
+
   await pushObsidianVault(syncVaultDir, { authToken });
 
   console.log(`[${ts()}] ✅ backfill-blog-images`);
@@ -283,7 +293,18 @@ const runInternalLinking = async (): Promise<void> => {
 
   console.log(`  🏁 Linking done: ${result.filesVisited} visited, ${result.filesModified} modified, ${result.totalLinksAdded} links added, ${result.filesSkipped} skipped`);
 
-  // 3. Push vault
+  // 3. Add update links to daily reflection for modified files
+  const modifiedResults = result.fileResults.filter((r) => r.modified);
+  if (modifiedResults.length > 0) {
+    const reflectionsDir = path.join(vaultDir, "reflections");
+    const links = modifiedResults.map((r) => ({
+      relativePath: r.relativePath,
+      title: extractTitleFromFile(path.join(vaultDir, r.relativePath)),
+    }));
+    addUpdateLinksToReflection(reflectionsDir, todayPacific(), links);
+  }
+
+  // 4. Push vault
   await pushObsidianVault(vaultDir, { authToken });
 
   console.log(`[${ts()}] ✅ internal-linking`);

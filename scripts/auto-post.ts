@@ -20,16 +20,19 @@
  * @module auto-post
  */
 
+import path from "node:path";
+
 import {
   discoverContentToPost,
   isPastPostingHourUTC,
-  updatePathTimestamps,
   checkUrlPublished,
   type Platform,
   type FindContentConfig,
   type ContentToPost,
 } from "./find-content-to-post.ts";
 import { main, validateEnvironment, syncObsidianVault } from "./tweet-reflection.ts";
+import { addUpdateLinksToReflection } from "./lib/daily-updates.ts";
+import { todayPacific } from "./lib/blog-series.ts";
 
 // --- Types ---
 
@@ -145,15 +148,12 @@ async function autoPost(): Promise<void> {
     console.log(`${"═".repeat(60)}\n`);
 
     try {
-      const allPaths = items.map((i) => i.pathFromRoot);
-      const longestPath = allPaths.reduce(
-        (longest, p) => (p.length > longest.length ? p : longest),
-        [] as readonly string[],
-      );
-      if (longestPath.length > 0) {
-        console.log(`🗺️ Updating "updated" timestamps along path (${longestPath.length} files):`);
-        updatePathTimestamps(longestPath, vaultDir);
-      }
+      const reflectionsDir = path.join(vaultDir, "reflections");
+      const today = todayPacific();
+      const note = items[0]!.note;
+      addUpdateLinksToReflection(reflectionsDir, today, [
+        { relativePath: note.relativePath, title: note.title },
+      ]);
 
       await main({
         note: notePath,

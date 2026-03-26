@@ -26,6 +26,7 @@ import {
   isValidTaskId,
   BLOG_SERIES_RUN_CONFIGS,
   blogPostExistsForToday,
+  nowPacificHour,
   type TaskId,
 } from "./lib/scheduler.ts";
 import { todayPacific } from "./lib/blog-series.ts";
@@ -44,6 +45,11 @@ import { syncFileToVault, readPreviousPostFilename } from "./sync-series-to-vaul
 import { run as runLinking, DEFAULT_LINKING_MODEL } from "./lib/internal-linking.ts";
 import { autoPost } from "./auto-post.ts";
 import { BACKFILL_CONTENT_IDS } from "./lib/blog-series-config.ts";
+import {
+  reflectionNeedsTitle,
+  generateReflectionTitle,
+  DEFAULT_TITLE_MODEL,
+} from "./lib/reflection-title.ts";
 
 // ---------------------------------------------------------------------------
 // Logging helpers
@@ -291,6 +297,110 @@ const runSocialPosting = async (): Promise<void> => {
   console.log(`[${ts()}] ✅ social-posting`);
 };
 
+const RECENT_TITLE_COUNT = 20;
+
+const extractRecentCreativeTitles = (reflectionsDir: string, today: string): readonly string[] => {
+  if (!fs.existsSync(reflectionsDir)) return [];
+
+  return fs.readdirSync(reflectionsDir)
+    .filter((f) => /^\d{4}-\d{2}-\d{2}\.md$/.test(f) && f < `${today}.md`)
+    .sort()
+    .reverse()
+    .slice(0, RECENT_TITLE_COUNT)
+    .flatMap((f) => {
+      const content = fs.readFileSync(path.join(reflectionsDir, f), "utf-8");
+      const titleLine = content.split("\n").find((line) => /^title:\s/.test(line));
+      const titleValue = titleLine?.replace(/^title:\s*/, "").trim() ?? "";
+      const pipeIndex = titleValue.indexOf(" | ");
+      return pipeIndex >= 0 ? [titleValue.slice(pipeIndex + 3)] : [];
+    });
+};
+
+/**
+ * Compute yesterday's date in Pacific time.
+ */
+const yesterdayPacific = (): string => {
+  const now = new Date();
+  const pacificDate = new Date(now.toLocaleString("en-US", { timeZone: "America/Los_Angeles" }));
+  pacificDate.setDate(pacificDate.getDate() - 1);
+  return pacificDate.toLocaleDateString("en-CA");
+};
+
+/**
+ * Try to generate a title for the given date's reflection.
+ * Returns true if a title was generated, false if skipped.
+ */
+const tryTitleForDate = async (
+  date: string,
+  reflectionsDir: string,
+  vaultDir: string,
+  apiKey: string,
+  authToken: string,
+): Promise<boolean> => {
+  const reflectionPath = path.join(reflectionsDir, `${date}.md`);
+
+  if (!fs.existsSync(reflectionPath)) {
+    console.log(`  ⏭️  No reflection note for ${date}`);
+    return false;
+  }
+
+  const content = fs.readFileSync(reflectionPath, "utf-8");
+  if (!reflectionNeedsTitle(content, date)) {
+    console.log(`  ⏭️  Reflection title already set for ${date}`);
+    return false;
+  }
+
+  const recentTitles = extractRecentCreativeTitles(reflectionsDir, date);
+  console.log(`  📋 Found ${recentTitles.length} recent titles for style reference`);
+
+  const envModel = process.env.REFLECTION_TITLE_MODEL?.trim();
+  const defaultChain = [DEFAULT_TITLE_MODEL, "gemini-2.5-flash-lite", "gemini-3.1-flash-lite-preview"] as const;
+  const models = envModel
+    ? [envModel, ...defaultChain.filter((m) => m !== envModel)]
+    : [...defaultChain];
+
+  const result = await generateReflectionTitle({
+    apiKey,
+    models,
+    noteContent: content,
+    date,
+    recentTitles,
+  });
+
+  console.log(`  🏷️  Generated title: ${result.fullTitle} [${result.model}]`);
+
+  fs.writeFileSync(reflectionPath, result.updatedContent, "utf-8");
+  await pushObsidianVault(vaultDir, { authToken });
+  console.log("  📤 Vault pushed");
+  return true;
+};
+
+const runReflectionTitle = async (): Promise<void> => {
+  console.log(`[${ts()}] ▶️  reflection-title`);
+
+  const authToken = process.env.OBSIDIAN_AUTH_TOKEN;
+  const vaultName = process.env.OBSIDIAN_VAULT_NAME;
+  if (!authToken || !vaultName) throw new Error("OBSIDIAN_AUTH_TOKEN and OBSIDIAN_VAULT_NAME are required");
+
+  const apiKey = process.env.GEMINI_API_KEY;
+  if (!apiKey) throw new Error("GEMINI_API_KEY is required");
+
+  const today = todayPacific();
+  const yesterday = yesterdayPacific();
+
+  const vaultDir = await syncObsidianVault({ authToken, vaultName });
+  const reflectionsDir = path.join(vaultDir, "reflections");
+
+  // Try today first, then yesterday (resilient catchup)
+  const todayDone = await tryTitleForDate(today, reflectionsDir, vaultDir, apiKey, authToken);
+  if (!todayDone) {
+    console.log(`  📅 Checking yesterday (${yesterday})...`);
+    await tryTitleForDate(yesterday, reflectionsDir, vaultDir, apiKey, authToken);
+  }
+
+  console.log(`[${ts()}] ✅ reflection-title`);
+};
+
 const TASK_RUNNERS: ReadonlyMap<TaskId, () => Promise<void>> = new Map([
   ["blog-series:chickie-loo", () => runBlogSeries("chickie-loo")],
   ["blog-series:auto-blog-zero", () => runBlogSeries("auto-blog-zero")],
@@ -301,6 +411,7 @@ const TASK_RUNNERS: ReadonlyMap<TaskId, () => Promise<void>> = new Map([
   ["backfill-blog-images", runBackfillImages],
   ["internal-linking", runInternalLinking],
   ["social-posting", runSocialPosting],
+  ["reflection-title", runReflectionTitle],
 ]);
 
 // ---------------------------------------------------------------------------
@@ -336,7 +447,7 @@ export const parseArgs = (argv: readonly string[]): CliArgs => {
 
 const main = async (): Promise<void> => {
   const cliArgs = parseArgs(process.argv);
-  const hourUtc = cliArgs.hourOverride ?? new Date().getUTCHours();
+  const hourPacific = cliArgs.hourOverride ?? nowPacificHour();
 
   const tasks: readonly TaskId[] = cliArgs.taskOverride
     ? isValidTaskId(cliArgs.taskOverride)
@@ -345,9 +456,9 @@ const main = async (): Promise<void> => {
           console.error(`❌ Unknown task: ${cliArgs.taskOverride}`);
           process.exit(1);
         })()
-    : getScheduledTasks(hourUtc);
+    : getScheduledTasks(hourPacific);
 
-  console.log(`\n🕐 [${ts()}] Scheduler start — hour ${hourUtc} UTC, ${tasks.length} task(s): ${tasks.join(", ")}`);
+  console.log(`\n🕐 [${ts()}] Scheduler start — hour ${hourPacific} Pacific, ${tasks.length} task(s): ${tasks.join(", ")}`);
   console.log("📊 Inference dashboards:");
   INFERENCE_DASHBOARDS.forEach((url, name) => console.log(`   ${name}: ${url}`));
 

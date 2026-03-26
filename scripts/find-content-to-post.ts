@@ -294,7 +294,8 @@ export function readContentNote(
 
 /**
  * Check if a note has meaningful content worth posting.
- * Excludes index pages, very short notes, and notes without a title.
+ * Excludes index pages, very short notes, notes without a title,
+ * and reflection notes that haven't been given a creative title yet.
  */
 export function isPostableContent(note: ContentNote): boolean {
   // Skip index / home pages
@@ -307,6 +308,11 @@ export function isPostableContent(note: ContentNote): boolean {
     return false;
   }
 
+  // Safety gate: reflection notes must have a creative title (not just the date)
+  if (isUntitledReflection(note)) {
+    return false;
+  }
+
   // Must have a non-empty body with some substance
   // (at least a heading + some content)
   const strippedBody = note.body
@@ -315,6 +321,20 @@ export function isPostableContent(note: ContentNote): boolean {
     .trim();
 
   return strippedBody.length > 50;
+}
+
+/**
+ * Check if a note is a reflection that still has just a bare date as its title.
+ * Returns true for reflections whose title is exactly their date (e.g. "2026-03-24")
+ * without a creative ` | ` suffix. Returns false for non-reflections or reflections
+ * with a creative title.
+ */
+export function isUntitledReflection(note: ContentNote): boolean {
+  const dateMatch = note.relativePath.match(/^reflections\/(\d{4}-\d{2}-\d{2})\.md$/);
+  if (!dateMatch) return false;
+
+  const reflectionDate = dateMatch[1]!;
+  return note.title === reflectionDate;
 }
 
 /**
@@ -389,6 +409,9 @@ export function isReflectionEligibleForPosting(
  * Check if the prior day's reflection still needs posting on any of the
  * given platforms.
  *
+ * Returns null if the reflection doesn't exist, has already been posted
+ * everywhere, or hasn't been given a creative title yet (safety gate).
+ *
  * @returns The reflection note if it needs posting, null otherwise.
  */
 export function getPriorDayReflectionIfNeeded(
@@ -399,6 +422,14 @@ export function getPriorDayReflectionIfNeeded(
   const note = readContentNote(relativePath, config.contentDir);
 
   if (!note) {
+    return null;
+  }
+
+  // Safety gate: don't post untitled reflections to social media
+  if (isUntitledReflection(note)) {
+    console.log(
+      `⏳ Prior day's reflection has no creative title yet: ${note.title} — skipping`,
+    );
     return null;
   }
 

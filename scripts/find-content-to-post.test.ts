@@ -18,6 +18,7 @@ import {
   detectPostedPlatforms,
   readContentNote,
   isPostableContent,
+  isUntitledReflection,
   findMostRecentReflection,
   getPriorDayReflectionIfNeeded,
   bfsContentDiscovery,
@@ -480,6 +481,63 @@ describe("isPostableContent", () => {
     writeNote(tempDir, "auto-blog-zero/AGENTS.md", NO_SOCIAL_NOTE);
     const note = readContentNote("auto-blog-zero/AGENTS.md", tempDir)!;
     assert.ok(!isPostableContent(note));
+  });
+
+  test("returns false for untitled reflections (safety gate)", () => {
+    const untitledReflection = `---
+share: true
+title: 2026-03-24
+URL: https://bagrounds.org/reflections/2026-03-24
+---
+# 2026-03-24
+Some substantial content that would normally qualify for posting. This is a long enough body that passes the 50-character threshold for postable content.
+## [📚 Books](../books/index.md)
+- [Some Book](../books/some-book.md)
+`;
+    writeNote(tempDir, "reflections/2026-03-24.md", untitledReflection);
+    const note = readContentNote("reflections/2026-03-24.md", tempDir)!;
+    assert.ok(!isPostableContent(note));
+  });
+
+  test("returns true for titled reflections", () => {
+    writeNote(tempDir, "reflections/2026-03-08.md", REFLECTION_NOTE);
+    const note = readContentNote("reflections/2026-03-08.md", tempDir)!;
+    assert.ok(isPostableContent(note));
+  });
+});
+
+// ---------------------------------------------------------------------------
+// isUntitledReflection
+// ---------------------------------------------------------------------------
+
+describe("isUntitledReflection", () => {
+  let tempDir: string;
+
+  beforeEach(() => {
+    tempDir = createTempDir();
+  });
+
+  afterEach(() => {
+    cleanupTempDir(tempDir);
+  });
+
+  test("returns true for a reflection with a bare date title", () => {
+    const untitled = `---\ntitle: 2026-03-24\n---\n# 2026-03-24\nContent here.\n`;
+    writeNote(tempDir, "reflections/2026-03-24.md", untitled);
+    const note = readContentNote("reflections/2026-03-24.md", tempDir)!;
+    assert.ok(isUntitledReflection(note));
+  });
+
+  test("returns false for a reflection with a creative title", () => {
+    writeNote(tempDir, "reflections/2026-03-08.md", REFLECTION_NOTE);
+    const note = readContentNote("reflections/2026-03-08.md", tempDir)!;
+    assert.ok(!isUntitledReflection(note));
+  });
+
+  test("returns false for non-reflection notes", () => {
+    writeNote(tempDir, "books/sophies-world.md", BOOK_NOTE);
+    const note = readContentNote("books/sophies-world.md", tempDir)!;
+    assert.ok(!isUntitledReflection(note));
   });
 });
 

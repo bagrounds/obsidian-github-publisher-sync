@@ -3,9 +3,9 @@
 ## 🎯 Overview
 
 📋 All recurring automation tasks run through a single hourly GitHub Actions cron job.
-🧠 A TypeScript scheduler determines which tasks to execute based on the current UTC hour.
+🧠 A TypeScript scheduler determines which tasks to execute based on the current **Pacific** hour.
 🚫 Zero scheduling logic lives in YAML — the workflow file is purely declarative.
-🔄 Blog series use "at or after" scheduling with idempotency checks for resilience.
+🔄 Blog series and reflection-title use "at or after" scheduling with idempotency checks for resilience.
 
 ## 🏗️ Architecture
 
@@ -13,7 +13,7 @@
 
 | 🧩 Component | 📂 Path | 📝 Purpose |
 |---|---|---|
-| 📚 Scheduler | `scripts/lib/scheduler.ts` | 🧠 Pure functions: given UTC hour → task IDs to run |
+| 📚 Scheduler | `scripts/lib/scheduler.ts` | 🧠 Pure functions: given Pacific hour → task IDs to run |
 | 🎯 Orchestrator | `scripts/run-scheduled.ts` | 🔧 Single entry point that calls library functions directly |
 | ⚙️ Workflow | `.github/workflows/scheduled.yml` | 🕐 Hourly cron, declarative YAML only |
 
@@ -24,12 +24,13 @@
          ↓
 📜 npx tsx scripts/run-scheduled.ts
          ↓
-🧠 getScheduledTasks(currentHourUtc)
+🧠 getScheduledTasks(nowPacificHour())
          ↓
 📋 For each task (direct library calls, no subprocesses):
    ├── 🐔 blog-series:chickie-loo      → check exists → pull → generate → image → sync
    ├── 🤖 blog-series:auto-blog-zero   → check exists → pull → generate → image → sync
    ├── 🏛️ blog-series:systems-for-public-good → check exists → pull → generate → image → sync
+   ├── 🪞 reflection-title             → pull vault → check title → generate → push vault
    ├── 🖼️ backfill-blog-images         → pull → backfill → sync
    ├── 🔗 internal-linking             → pull vault → link → push vault
    └── 📢 social-posting               → discover → post
@@ -37,23 +38,38 @@
 
 ## ⏰ Schedule
 
+📌 All times are declared in **Pacific time**. The scheduler converts to
+Pacific before making decisions via `nowPacificHour()`.
+
 ### 📝 Blog Series — "At or After" Scheduling
 
-🔄 Blog series tasks become eligible at their scheduled hour and remain eligible for the rest of the day. The orchestrator checks whether today's post already exists before generating, making the system resilient to partial failures.
+🔄 Blog series tasks become eligible at their scheduled Pacific hour and remain eligible for the rest of the day. The orchestrator checks whether today's post already exists before generating, making the system resilient to partial failures.
 
-| 🕐 Earliest UTC Hour | 🏷️ Task ID | 📝 Description |
+| 🕐 Earliest Pacific Hour | 🏷️ Task ID | 📝 Description |
 |---|---|---|
-| 15 | `blog-series:chickie-loo` | 🐔 Chickie Loo daily post (7 AM PT) |
-| 16 | `blog-series:auto-blog-zero` | 🤖 Auto Blog Zero daily post (8 AM PT) |
-| 17 | `blog-series:systems-for-public-good` | 🏛️ Systems for Public Good daily post (9 AM PT) |
+| 7 AM | `blog-series:chickie-loo` | 🐔 Chickie Loo daily post |
+| 8 AM | `blog-series:auto-blog-zero` | 🤖 Auto Blog Zero daily post |
+| 9 AM | `blog-series:systems-for-public-good` | 🏛️ Systems for Public Good daily post |
+
+### 🪞 Reflection Title — "At or After" Scheduling
+
+🌙 The reflection-title task uses the `atOrAfter` flag for at-or-after scheduling, becoming eligible at 10 PM Pacific and remaining eligible until 11:59 PM Pacific. It generates a creative emoji-enriched title for the daily reflection note using Gemini AI. Also titles yesterday's reflection if it's still untitled.
+
+| 🕐 Earliest Pacific Hour | 🏷️ Task ID | 📝 Description |
+|---|---|---|
+| 10 PM | `reflection-title` | 🪞 Generate creative title for today's reflection |
 
 ### 🔧 Other Tasks — Exact Hour Matching
 
-| 🕐 UTC Hour | 🏷️ Task ID | 📝 Description |
+| 🕐 Pacific Hour | 🏷️ Task ID | 📝 Description |
 |---|---|---|
 | Every hour | `backfill-blog-images` | 🖼️ Backfill 1 missing blog image per hour |
 | Every hour | `internal-linking` | 🔗 BFS wikilink insertion for 1 note per hour |
 | 0,2,4,6,8,10,12,14,16,18,20,22 | `social-posting` | 📢 Auto-post to X/Bluesky/Mastodon (every 2 hours) |
+
+### 🛡️ Social Media Safety Gate
+
+🚫 Reflection notes are blocked from social media posting until they have a creative title. The `isUntitledReflection()` function returns true when a reflection's title is just the bare date, preventing untitled reflections from being posted.
 
 ## 🔧 Blog Series Model Fallback Chain
 
@@ -132,10 +148,10 @@
 ## 🖥️ CLI Interface
 
 ```bash
-# Run tasks for current UTC hour
+# Run tasks for current Pacific hour
 npx tsx scripts/run-scheduled.ts
 
-# Simulate a specific hour (for testing)
+# Simulate a specific Pacific hour (for testing)
 npx tsx scripts/run-scheduled.ts --hour 15
 
 # Run a specific task regardless of schedule
@@ -147,7 +163,7 @@ npx tsx scripts/run-scheduled.ts --task blog-series:chickie-loo
 
 🔧 The `workflow_dispatch` trigger supports the same overrides:
 - `task` — Run a specific task instead of consulting the schedule
-- `hour` — Simulate a specific UTC hour
+- `hour` — Simulate a specific Pacific hour
 
 ### 📋 Run Summary
 

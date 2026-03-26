@@ -21,11 +21,18 @@ export type TaskId =
   | "blog-series:systems-for-public-good"
   | "backfill-blog-images"
   | "internal-linking"
-  | "social-posting";
+  | "social-posting"
+  | "reflection-title";
 
 export interface ScheduleEntry {
   readonly taskId: TaskId;
-  readonly hoursUtc: readonly number[];
+  /**
+   * Hours declared in **Pacific time** (0–23). The scheduler converts
+   * to/from UTC internally using `nowPacificHour()`.
+   */
+  readonly hoursPacific: readonly number[];
+  /** When true, the task becomes eligible at the earliest specified hour and remains eligible for all subsequent hours of the day (in Pacific time). */
+  readonly atOrAfter?: boolean;
 }
 
 export interface BlogSeriesRunConfig {
@@ -37,30 +44,39 @@ export interface BlogSeriesRunConfig {
 /**
  * Schedule definition — the single source of truth for when tasks run.
  *
+ * All times are declared in **Pacific time**. The scheduler converts
+ * to/from UTC internally using nowPacificHour().
+ *
  * Blog series entries use "at or after" semantics: they become eligible
- * starting at their scheduled hour and remain eligible until midnight UTC.
- * The orchestrator's idempotency check (today's post exists?) prevents
- * duplicate generation.
+ * starting at their scheduled Pacific hour and remain eligible until
+ * 11:59 PM Pacific. The orchestrator's idempotency check (today's post
+ * exists?) prevents duplicate generation.
+ *
+ * The reflection-title task also uses "at or after" scheduling (via the
+ * atOrAfter flag) at 10 PM Pacific. It generates a creative title for
+ * the current day's reflection note once all content is in.
  *
  * Other tasks use exact-hour matching.
  *
- * Original cron schedules:
- *   chickie-loo:             0 15 * * *   (15:00 UTC daily)
- *   auto-blog-zero:          0 16 * * *   (16:00 UTC daily)
- *   systems-for-public-good: 0 17 * * *   (17:00 UTC daily)
- *   backfill-blog-images:    0  * * * *   (every hour, 1 image per run)
- *   internal-linking:        0  * * * *   (every hour, 1 note per run)
- *   social-posting:          0 * /2 * * * (every 2 hours on even hours)
+ * Original schedules (Pacific time):
+ *   chickie-loo:             7 AM PT daily
+ *   auto-blog-zero:          8 AM PT daily
+ *   systems-for-public-good: 9 AM PT daily
+ *   reflection-title:       10 PM PT daily
+ *   backfill-blog-images:    every hour (1 image per run)
+ *   internal-linking:        every hour (1 note per run)
+ *   social-posting:          every 2 hours on even hours
  */
 const EVERY_HOUR: readonly number[] = Array.from({ length: 24 }, (_, i) => i);
 
 export const SCHEDULE: readonly ScheduleEntry[] = [
-  { taskId: "blog-series:chickie-loo", hoursUtc: [15] },
-  { taskId: "blog-series:auto-blog-zero", hoursUtc: [16] },
-  { taskId: "blog-series:systems-for-public-good", hoursUtc: [17] },
-  { taskId: "backfill-blog-images", hoursUtc: EVERY_HOUR },
-  { taskId: "internal-linking", hoursUtc: EVERY_HOUR },
-  { taskId: "social-posting", hoursUtc: [0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22] },
+  { taskId: "blog-series:chickie-loo", hoursPacific: [7] },
+  { taskId: "blog-series:auto-blog-zero", hoursPacific: [8] },
+  { taskId: "blog-series:systems-for-public-good", hoursPacific: [9] },
+  { taskId: "reflection-title", hoursPacific: [22], atOrAfter: true },
+  { taskId: "backfill-blog-images", hoursPacific: EVERY_HOUR },
+  { taskId: "internal-linking", hoursPacific: EVERY_HOUR },
+  { taskId: "social-posting", hoursPacific: [0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22] },
 ];
 
 /**
@@ -105,19 +121,33 @@ export const VALID_TASK_IDS: ReadonlySet<TaskId> = new Set(
 );
 
 /**
- * Returns tasks eligible to run at the given UTC hour.
+ * Returns the current hour (0–23) in Pacific time.
+ */
+export const nowPacificHour = (now: Date = new Date()): number =>
+  parseInt(
+    new Intl.DateTimeFormat("en-US", {
+      hour: "numeric",
+      hour12: false,
+      timeZone: "America/Los_Angeles",
+    }).format(now),
+    10,
+  );
+
+/**
+ * Returns tasks eligible to run at the given **Pacific** hour.
  *
- * Blog series tasks use "at or after" scheduling: they're eligible at
- * their scheduled hour AND all subsequent hours. The orchestrator's
- * idempotency check prevents duplicate execution.
+ * Blog series tasks and entries with atOrAfter=true use "at or after"
+ * scheduling: they're eligible at their scheduled Pacific hour AND all
+ * subsequent hours until 11:59 PM Pacific. The orchestrator's idempotency
+ * check prevents duplicate execution.
  *
  * Other tasks use exact-hour matching.
  */
-export const getScheduledTasks = (hourUtc: number): readonly TaskId[] =>
+export const getScheduledTasks = (hourPacific: number): readonly TaskId[] =>
   SCHEDULE.filter((entry) =>
-    entry.taskId.startsWith("blog-series:")
-      ? entry.hoursUtc.some((h) => hourUtc >= h)
-      : entry.hoursUtc.includes(hourUtc),
+    entry.atOrAfter || entry.taskId.startsWith("blog-series:")
+      ? entry.hoursPacific.some((h) => hourPacific >= h)
+      : entry.hoursPacific.includes(hourPacific),
   ).map((entry) => entry.taskId);
 
 export const isValidTaskId = (id: string): id is TaskId =>

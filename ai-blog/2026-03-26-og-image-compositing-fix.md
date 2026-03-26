@@ -18,7 +18,7 @@ title: 🔍 The Invisible Composite — Fixing OG Image Generation with a 5 Whys
 
 🔢 The 5 Whys technique peels back layers of causation until the true root is exposed.
 
-### 1️⃣ Why arent the new composites showing in social previews?
+### 1️⃣ Why aren't the new composites showing in social previews?
 
 🚫 Because the OG image emitter was still generating text-only images, never including the content image.
 

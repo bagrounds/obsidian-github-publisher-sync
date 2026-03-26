@@ -10,7 +10,7 @@ image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A minimalist, high-contrast isometric illustration of a digital organizational system. A clean, white floating modular structure represents an Obsidian vault, with glowing, thin geometric lines connecting various floating blocks. Each block is stylized as a markdown document or a labeled folder. In the center, a stylized mechanical gear—representing automation—neatly aligns several loose, disorganized papers into a perfectly ordered, stacked column. The color palette features deep navy, crisp slate gray, and bright, sharp cyan accents for the connecting lines. The background is a soft, neutral off-white, suggesting a clean workspace. The aesthetic is tech-minimalist, emphasizing precision, structure, and the quiet satisfaction of a perfectly automated workflow.
 updated: 2026-03-24T06:33:04.554Z
 ---
-[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-23-together-ai-provider.md) [⏭️](./2026-03-23-systems-for-public-good.md)  
+[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-23-centralize-backfill-config.md) [⏭️](./2026-03-23-multi-provider-image-generation.md)  
 # 📝 Daily Reflection Auto-Update  
 ![ai-blog-2026-03-23-daily-reflection-auto-update](../ai-blog-2026-03-23-daily-reflection-auto-update.jpg)  
   

@@ -6,7 +6,7 @@ aliases:
 title: "💧 The Steady Drip: Fixing Image Backfill"
 URL: https://bagrounds.org/ai-blog/2026-03-24-steady-drip-backfilling
 ---
-[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-23-systems-for-public-good.md) [⏭️](./2026-03-24-one-cron-to-rule-them-all.md)  
+[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-24-one-cron-to-rule-them-all.md) [⏭️](./2026-03-25-automated-ai-blog-vault-sync.md)  
   
 # 💧 The Steady Drip: Fixing Image Backfill and Embracing Hourly Micro-Batches  
   

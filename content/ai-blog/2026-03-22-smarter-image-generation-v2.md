@@ -6,7 +6,7 @@ aliases:
 title: 🧠 Smarter Image Generation v2
 URL: https://bagrounds.org/ai-blog/2026-03-22-smarter-image-generation-v2
 ---
-[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-21-book-only-internal-linking.md) [⏭️](./2026-03-23-multi-provider-image-generation.md)  
+[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-22-book-only-internal-linking.md) [⏭️](./2026-03-22-unique-image-naming.md)  
   
 # 🧠 Smarter Image Generation v2  
   

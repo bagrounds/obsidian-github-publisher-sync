@@ -354,7 +354,7 @@ const tryTitleForDate = async (
   console.log(`  📋 Found ${recentTitles.length} recent titles for style reference`);
 
   const envModel = process.env.REFLECTION_TITLE_MODEL?.trim();
-  const defaultChain = [DEFAULT_TITLE_MODEL, "gemini-2.5-flash", "gemini-2.5-flash-lite"] as const;
+  const defaultChain = [DEFAULT_TITLE_MODEL, "gemini-2.5-flash-lite", "gemini-3.1-flash-lite-preview"] as const;
   const models = envModel
     ? [envModel, ...defaultChain.filter((m) => m !== envModel)]
     : [...defaultChain];

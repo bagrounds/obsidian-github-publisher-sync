@@ -257,7 +257,7 @@ describe("buildReflectionTitlePrompt", () => {
 
   it("instructs one word from each title", () => {
     const prompt = buildReflectionTitlePrompt(linkedTitles, RECENT_TITLES);
-    assert.ok(prompt.system.includes("ONE interesting"));
+    assert.ok(prompt.system.includes("ONE word"));
     assert.ok(prompt.system.includes("one word from EACH"));
   });
 
@@ -327,6 +327,27 @@ describe("parseReflectionTitle", () => {
     assert.equal(
       parseReflectionTitle("  🌌 Peace 📚  "),
       "🌌 Peace 📚",
+    );
+  });
+
+  it("normalizes missing space between emoji and word", () => {
+    assert.equal(
+      parseReflectionTitle("⏳Time 🧠Memory ⭕Stewardship"),
+      "⏳ Time 🧠 Memory ⭕ Stewardship",
+    );
+  });
+
+  it("preserves already-correct emoji spacing", () => {
+    assert.equal(
+      parseReflectionTitle("⏳ Time 🧠 Memory"),
+      "⏳ Time 🧠 Memory",
+    );
+  });
+
+  it("strips backtick-quoted filler words", () => {
+    assert.equal(
+      parseReflectionTitle("✨ Valence `of` 💡 Meaning `and` 🗳️ Democracy"),
+      "✨ Valence of 💡 Meaning and 🗳️ Democracy",
     );
   });
 

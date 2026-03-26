@@ -24,7 +24,7 @@ import { isRetriableError } from "../generate-blog-post.ts";
 // Constants
 // ---------------------------------------------------------------------------
 
-export const DEFAULT_TITLE_MODEL = "gemini-3.1-flash-lite-preview";
+export const DEFAULT_TITLE_MODEL = "gemini-2.5-flash";
 
 const GEMINI_MAX_RETRIES = 3;
 const GEMINI_BASE_DELAY_MS = 2_000;
@@ -166,20 +166,29 @@ export const buildReflectionTitlePrompt = (
 
   const system = `You create short, creative titles from a list of content titles.
 
-THE GAME:
-1. You receive a list of content titles (books, blog posts, videos, etc.)
-2. Pick exactly ONE interesting or evocative word from each title
-3. Arrange these words into a short, meaningful phrase or sentence fragment
-4. Prefix each meaningful word with 1-2 relevant emojis (skip filler words like "and", "of", "the")
-5. The result should be interesting, keyword-dense, and remind the reader of each piece of content
+YOUR GOAL: produce a grammatically coherent sentence or phrase — NOT a list of keywords.
+
+PROCESS (follow these steps internally):
+
+STEP 1 — FULL WORD INVENTORY: For EVERY word in EVERY content title, label it with its part(s) of speech (noun, verb, adjective, adverb, preposition, article, etc.). Do NOT choose any words yet — just catalog everything available.
+
+STEP 2 — SENTENCE TEMPLATES: Looking ONLY at the parts-of-speech inventory (not the actual words), draft 2–3 grammatical sentence or phrase templates. For example: "adjective noun verb preposition adjective noun" or "verb the adjective noun of noun". Focus purely on grammar — what structures could form a real sentence from the parts of speech you have?
+
+STEP 3 — FILL TEMPLATES: For each template, go back to your full word inventory and try several combinations of words that fit the POS slots — choosing exactly one word per content title. You may freely reorder words. Try multiple combinations per template.
+
+STEP 4 — COMPARE & ITERATE: Compare all filled-in candidates. If none read naturally, revise — try different templates, swap word choices, adjust structure. Keep iterating until you have a phrase or sentence that sounds coherent and evocative when read aloud.
+
+STEP 5 — EMOJI ENRICHMENT: Prefix each chosen word with 1 relevant emoji, with a space between emoji and word. Small grammatical filler words ("of", "the", "in") do NOT get emojis.
 
 RULES:
-- Use exactly one word from EACH content title (not zero, not two)
-- The words should form something coherent — a phrase, a poetic sentence, a fun juxtaposition — NOT random word salad
-- Keep it concise (typically 3-10 emoji+word pairs)
+- Use exactly one word from EACH content title — every title must contribute ONE word
+- The result MUST read as a coherent sentence or phrase when emojis are removed
+- Any word from a title is fair game — filler words like "of", "the", "and" are often the key to grammatical glue
+- Always put a space between emoji(s) and word: "🕊️ Gentle" not "🕊️Gentle"
 - Do NOT include any trailing category emojis — those are added separately
 - Do NOT include any date prefix
-- Output a single line of text only
+- Output ONLY the final title as a single line of text — no steps, no drafts, no explanation
+- If you truly cannot form a coherent sentence using exactly one word per title, you may bend the rules slightly (skip a title or use two words from one) — but ONLY as a last resort
 
 GOOD TITLE EXAMPLES (for style reference):
 ${examplesBlock}`;
@@ -188,7 +197,7 @@ ${examplesBlock}`;
     .map((t, i) => `${i + 1}. ${t}`)
     .join("\n");
 
-  const user = `Pick one word from each of these content titles and create a creative emoji-enriched title:\n\n${titlesBlock}`;
+  const user = `Build a coherent emoji-enriched sentence using one word from each of these content titles:\n\n${titlesBlock}`;
 
   return { system, user };
 };
@@ -198,13 +207,22 @@ ${examplesBlock}`;
  * Strips code fences, quotes, leading/trailing whitespace, and date prefixes.
  */
 export const parseReflectionTitle = (raw: string): string =>
-  raw
-    .replace(/^```(?:markdown|md)?\s*\n/, "")
-    .replace(/\n```\s*$/, "")
-    .replace(/^["']|["']$/g, "")
-    .replace(/^\d{4}-\d{2}-\d{2}\s*\|\s*/, "")
-    .split("\n")[0]!
-    .trim();
+  normalizeEmojiSpacing(
+    raw
+      .replace(/^```(?:markdown|md)?\s*\n/, "")
+      .replace(/\n```\s*$/, "")
+      .replace(/^["']|["']$/g, "")
+      .replace(/`/g, "")
+      .replace(/^\d{4}-\d{2}-\d{2}\s*\|\s*/, "")
+      .split("\n")[0]!
+      .trim(),
+  );
+
+const normalizeEmojiSpacing = (title: string): string =>
+  title.replace(
+    /([\p{Emoji_Presentation}\p{Emoji}\u200d\ufe0f])([\w])/gu,
+    "$1 $2",
+  );
 
 /**
  * Applies a creative title to a reflection note's content.

@@ -9,6 +9,9 @@ Platform:
 Channel: AI News & Strategy Daily | Nate B Jones
 tags:
 youtube: https://youtu.be/4cuT-LKcmWs
+force_analyze_links: false
+link_analysis_time: 2026-03-26T23:09:09.538Z
+link_analysis_model: gemini-3.1-flash-lite-preview
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 🤖✂️💰🚀 The AI Job Market Split in Two. One Side Pays $400K and Can't Hire Fast Enough.  
@@ -55,5 +58,5 @@ youtube: https://youtu.be/4cuT-LKcmWs
 * 📘 Automating Inequality by Virginia Eubanks details the risks and negative societal impacts of shifting management and evaluation tasks to automated systems.  
   
 ### 🎨 Creatively Related  
-* 📘 The Design of Everyday Things by Don Norman provides fundamental principles of usability and communication that apply to designing agentic guardrails.  
+* 📘 [💺🚪💡🤔 The Design of Everyday Things](../books/the-design-of-everyday-things.md) by Don Norman provides fundamental principles of usability and communication that apply to designing agentic guardrails.  
 * 📘 Thinking in Systems by Donella Meadows offers essential mental models for understanding the cascading failures and feedback loops inherent in multi-agent AI architectures.

@@ -129,6 +129,15 @@ describe("resolveImagePath", () => {
     assert.strictEqual(result, "/home/outside.jpg")
   })
 
+  test("uses contentDir fallback when resolved path is outside content", () => {
+    const result = resolveImagePath(
+      "bare-image.jpg",
+      "/tmp/unrelated/file.md",
+      "/home/user/content",
+    )
+    assert.strictEqual(result, "/home/user/content/bare-image.jpg")
+  })
+
   test("resolves real blog post image reference", () => {
     const result = resolveImagePath(
       "../ai-blog-2026-03-14-the-spa-that-cried-404.jpg",

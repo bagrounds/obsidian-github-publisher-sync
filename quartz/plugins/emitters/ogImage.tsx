@@ -37,7 +37,7 @@ const OG_CACHE_DIR = path.join(QUARTZ, ".quartz-cache", "og-images")
 const OG_CONCURRENCY = 20
 
 // Increment this when the image generation logic changes to invalidate cached images
-const OG_IMAGE_CACHE_VERSION = 2
+const OG_IMAGE_CACHE_VERSION = 3
 
 /**
  * Compute a content hash for cache keying of OG images.
@@ -135,6 +135,7 @@ async function processOgImage(
   fileData: QuartzPluginData,
   fonts: SatoriOptions["fonts"],
   fullOptions: SocialImageOptions,
+  rawContent: string,
 ): Promise<{ path: FilePath; cacheHit: boolean }> {
   const cfg = ctx.cfg.configuration
   const slug = fileData.slug!
@@ -147,10 +148,9 @@ async function processOgImage(
     unescapeHTML(fileData.description?.trim() ?? i18n(cfg.locale).propertyDefaults.description)
   const tags = fileData.frontmatter?.tags ?? []
   const date = fileData.frontmatter?.date?.toString()
-  const text = fileData.text ?? ""
 
-  const localImageRef = extractFirstLocalImageRef(text)
-  const youtubeVideoId = extractYouTubeVideoId(fileData.frontmatter as Record<string, unknown> | undefined, text)
+  const localImageRef = extractFirstLocalImageRef(rawContent)
+  const youtubeVideoId = extractYouTubeVideoId(fileData.frontmatter as Record<string, unknown> | undefined, rawContent)
   const contentImageRef = localImageRef ?? (youtubeVideoId ? `yt:${youtubeVideoId}` : undefined)
 
   const cacheKey = computeOgHash(
@@ -293,7 +293,8 @@ export const CustomOgImages: QuartzEmitterPlugin<Partial<SocialImageOptions>> = 
       // Use semaphore-based concurrency: up to OG_CONCURRENCY tasks run at once,
       // each finishing task immediately allows the next to start
       const tasks = items.map(
-        ([_tree, vfile]) => () => processOgImage(ctx, vfile.data, fonts, fullOptions),
+        ([_tree, vfile]) => () =>
+          processOgImage(ctx, vfile.data, fonts, fullOptions, String(vfile.value ?? "")),
       )
 
       for await (const result of runWithConcurrency(tasks, OG_CONCURRENCY)) {
@@ -330,7 +331,13 @@ export const CustomOgImages: QuartzEmitterPlugin<Partial<SocialImageOptions>> = 
 
       const tasks = items.map(
         (changeEvent) => () =>
-          processOgImage(ctx, changeEvent.file!.data, fonts, fullOptions),
+          processOgImage(
+            ctx,
+            changeEvent.file!.data,
+            fonts,
+            fullOptions,
+            String(changeEvent.file!.value ?? ""),
+          ),
       )
 
       for await (const result of runWithConcurrency(tasks, OG_CONCURRENCY)) {

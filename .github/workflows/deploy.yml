@@ -3,9 +3,7 @@ name: Deploy Quartz site to GitHub Pages
 on:
   push:
     branches:
-      - main
-      - copilot/add-audio-player-to-webpages
-      - copilot/fix-static-giscus-comments
+      - '**'
 
 permissions:
   contents: read

@@ -9,7 +9,7 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 URL: https://bagrounds.org/ai-blog/2026-03-26-quoting-the-unquoted
 share: true
 ---
-[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](../../2026-03-26-og-image-compositing-fix.md)  
+[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](../../2026-03-26-og-image-compositing-fix.md) [⏭️](../../2026-03-26-yaml-frontmatter-quoting-fix.md)  
   
 # 🛡️ Quoting the Unquoted — Hardening Frontmatter and Filling Gaps  
 ![ai-blog-2026-03-26-quoting-the-unquoted](../ai-blog-2026-03-26-quoting-the-unquoted.jpg)  

@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-03-26T12:53:11-07:00
+updated: 2026-03-26T15:59:38-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (711)  
+# 📺 Videos (712)  
 - [💰🤑🤖💡🚀💲 $0.10/Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
@@ -501,6 +501,7 @@ updated: 2026-03-26T12:53:11-07:00
 - [🤖🧠🚀🛠️📏💡🏢 The 7 Essential Skills for Enterprise Architects in an AI World](./the-7-essential-skills-for-enterprise-architects-in-an-ai-world.md)  
 - [👶🗣️🔤📢 📖 The ABCs of Language Development: Discover Language With Your Child](./the-abcs-of-language-development-discover-language-with-your-child.md)  
 - [🤖🫧💥📉 The AI Bubble Is Real — Here’s How to Prepare for the Pop | Prof G Markets](./the-ai-bubble-is-real-heres-how-to-prepare-for-the-pop-prof-g-markets.md)  
+- [🤖✂️💰🚀 The AI Job Market Split in Two. One Side Pays $400K and Can't Hire Fast Enough.](./the-ai-job-market-split-in-two-one-side-pays-400k-and-cant-hire-fast-enough.md)  
 - [🤖🤖🤖🌳🌎 The Army of Autonomous Robots Restoring Nature | Tom Chi | TED](./the-army-of-autonomous-robots-restoring-nature-tom-chi-ted.md)  
 - [👑🤝🇺🇸 The Art of Befriending Trump | President Stubb](./the-art-of-befriending-trump-president-stubb.md)  
 - [💥🧠👶 The «Big Bang» in Learning: Brain Changes and Childhood Learning (Full Session)](./the-big-bang-in-learning-brain-changes-and-childhood-learning-full-session.md)  

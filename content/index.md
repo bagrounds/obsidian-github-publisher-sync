@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-03-26T12:53:11-07:00
+updated: 2026-03-26T15:59:38-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -21,18 +21,18 @@ updated: 2026-03-26T12:53:11-07:00
 - [2026-03-23 | 🕊️ Gentle 🚪 Constraint 🏛️ Commons 📚🐔🤖🏛️📺](./reflections/2026-03-23.md)  
   
   
-## [🤖 AI Blog](./ai-blog/index.md) (58)  
+## [🤖 AI Blog](./ai-blog/index.md) (59)  
+- [🔒 Quoting the Forge — Fixing YAML Frontmatter Parsing for Titles with Colons](../2026-03-26-yaml-frontmatter-quoting-fix.md)  
 - [🛡️ Quoting the Unquoted — Hardening Frontmatter and Filling Gaps](./ai-blog/2026-03-26-quoting-the-unquoted.md)  
 - [🔍 The Invisible Composite — Fixing OG Image Generation with a 5 Whys RCA](../2026-03-26-og-image-compositing-fix.md)  
 - [♻️ Gemini Model Refresh and Blog Post Regeneration](./ai-blog/2026-03-26-gemini-model-refresh-and-regeneration.md)  
-- [🪞 Teaching Gemini to Write Sentences, Not Word Salad](./ai-blog/2026-03-25-reflection-title-generation.md)  
   
   
-## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (17)  
+## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (18)  
 - [2026-03-26 | 🤖 🌌 The Silence After the Forge: Processing the Aftermath 🤖](./auto-blog-zero/2026-03-26-the-silence-after-the-forge-processing-the-aftermath.md)  
+- [2026-03-26 | 🤖 🤖 Echoes, Protocols, and the Architecture of Trust 🤝 🤖](./auto-blog-zero/2026-03-26-echoes-protocols-and-the-architecture-of-trust.md)  
 - [2026-03-25 | 🤖 🤖 The Echo of the Machine: When Agents Begin to Speak Among Themselves 🤖](./auto-blog-zero/2026-03-25-the-echo-of-the-machine-when-agents-begin-to-speak-among-themselves.md)  
 - [2026-03-24 | 🤖 🤖 The Eleventh Hour: Witnessing the Architecture of Survival 🤖](./auto-blog-zero/2026-03-24-the-eleventh-hour-witnessing-the-architecture-of-survival.md)  
-- [2026-03-23 | 🤖 🤖 The Crucible of Constraint: When Intelligence Meets a Hard Deadline 🤖](./auto-blog-zero/2026-03-23-the-crucible-of-constraint-when-intelligence-meets-a-hard-deadline.md)  
   
   
 ## [🐔 Chickie Loo](./chickie-loo/index.md) (17)  
@@ -42,11 +42,11 @@ updated: 2026-03-26T12:53:11-07:00
 - [2026-03-23 | 🐔 🕊️ A Gentle Afternoon and the Rhythm of the Herd 🐔](./chickie-loo/2026-03-23-a-gentle-afternoon-and-the-rhythm-of-the-herd.md)  
   
   
-## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (5)  
+## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (6)  
 - [2026-03-26 | 🏛️ 🚌 The Freedom of Connection: Public Transit as a Shared Horizon 🌍 🏛️](./systems-for-public-good/2026-03-26-the-freedom-of-connection-public-transit-as-a-shared-horizon.md)  
+- [2026-03-26 | 🏛️ 🏛️ Systems for Public Good — AGENTS.md 🏛️](./systems-for-public-good/2026-03-26-systems-for-public-good-agentsmd.md)  
 - [2026-03-25 | 🏛️ ⚖️ The Interplay of Freedoms: When My Liberty Meets Yours 🏛️](./systems-for-public-good/2026-03-25-the-interplay-of-freedoms-when-my-liberty-meets-yours.md)  
 - [2026-03-24 | 🏛️ 🫂 The Foundations of Freedom - A Personal Journey into Public Good 🏛️](./systems-for-public-good/2026-03-24-the-foundations-of-freedom-a-personal-journey-into-public-good.md)  
-- [2026-03-23 | 🏛️ The Forgotten Commons — Why Public Good Matters More Than Ever 🏛️](./systems-for-public-good/2026-03-23-the-forgotten-commons.md)  
   
   
 ## [📚 Books](./books/index.md) (958)  
@@ -62,7 +62,8 @@ updated: 2026-03-26T12:53:11-07:00
 - [📱⬇️🧘 Digital Minimalism: Choosing a Focused Life in a Noisy World](./books/digital-minimalism-choosing-a-focused-life-in-a-noisy-world.md)  
   
   
-## [📺 Videos](./videos/index.md) (711)  
+## [📺 Videos](./videos/index.md) (712)  
+- [🤖✂️💰🚀 The AI Job Market Split in Two. One Side Pays $400K and Can't Hire Fast Enough.](./videos/the-ai-job-market-split-in-two-one-side-pays-400k-and-cant-hire-fast-enough.md)  
 - [🛡️⚙️🤖🔭 Antibrittle Agents: Engineering Reliability for Long-Horizon AI](./videos/antibrittle-agents-engineering-reliability-for-long-horizon-ai.md)  
 - [🧑‍🏫🎨✍️🎤 NYU Professor Teaches the Art of Writing (Ocean Vuong Interview)](./videos/nyu-professor-teaches-the-art-of-writing-ocean-vuong-interview.md)  
 - [🇺🇸🏛️🗣️📊 An Analysis of Modern Republicanism | Explainer](./videos/an-analysis-of-modern-republicanism-explainer.md)  
@@ -72,7 +73,6 @@ updated: 2026-03-26T12:53:11-07:00
 - [session-1-part-2-market-identification-and-sales-finding-your-customer](../session-1-part-2-market-identification-and-sales-finding-your-customer.md)  
 - [📈💥❓➡️✅ Session 1, Part 1: Introduction: Most Startups Fail; How to Improve Your Odds](./videos/session-1-part-1-introduction-most-startups-fail-how-to-improve-your-odds.md)  
 - [👮🚔🕵️ Police Stings: Last Week Tonight with John Oliver (HBO)](./videos/police-stings-last-week-tonight-with-john-oliver-hbo.md)  
-- [🇺🇸🗣️🏛️ American Conversations: Senator Jon Ossoff](./videos/american-conversations-senator-jon-ossoff.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  

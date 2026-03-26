@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-03-25T23:09:53-07:00
+updated: 2026-03-26T07:24:55-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -14,18 +14,18 @@ updated: 2026-03-25T23:09:53-07:00
 🔊 Listen to any page with built in audio control.  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (496)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (497)  
+- [2026-03-26](./reflections/2026-03-26.md)  
 - [2026-03-25 | 🛡️ Antibrittle 🤖 Agents 🤝 Meets ✍️ Writing of ⏳ Time 📚🐔🤖🏛️📺](./reflections/2026-03-25.md)  
 - [2026-03-24 | 👀 Witnessing 🐓 Ranch 🗽 Freedom 📶 Telemetry 🐔🤖🏛️📚](./reflections/2026-03-24.md)  
 - [2026-03-23 | 🕊️ Gentle 🚪 Constraint 🏛️ Commons 📚🐔🤖🏛️📺](./reflections/2026-03-23.md)  
-- [2026-03-22 | ⚡ These 🧬 Breakthroughs 🔮 Predict 📊 Weekly 🧠 Intelligence 🤝 While 🏛️ Modern 🇺🇸 American 🖼️ Resolution 👂 Sounds 🛡️ Protect 🐥 Chickie 🕵️ Analysis 📚🐔🤖📺](./reflections/2026-03-22.md)  
   
   
-## [🤖 AI Blog](./ai-blog/index.md) (54)  
+## [🤖 AI Blog](./ai-blog/index.md) (56)  
+- [🛡️ Quoting the Unquoted — Hardening Frontmatter and Filling Gaps](../2026-03-26-quoting-the-unquoted.md)  
 - [🪞 Teaching Gemini to Write Sentences, Not Word Salad](./ai-blog/2026-03-25-reflection-title-generation.md)  
 - [🔄 Smarter Publishing & 🤖🐲 AI Fiction for Daily Reflections](./ai-blog/2026-03-25-daily-updates-and-ai-fiction.md)  
-- [2026-03-24-steady-drip-backfilling](../2026-03-24-steady-drip-backfilling.md)  
-- [🗓️ One Cron to Rule Them All](./ai-blog/2026-03-24-one-cron-to-rule-them-all.md)  
+- [🔗 Closing the Loop: Automated AI Blog Vault Sync](./ai-blog/2026-03-25-automated-ai-blog-vault-sync.md)  
   
   
 ## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (16)  

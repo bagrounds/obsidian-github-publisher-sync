@@ -22,7 +22,7 @@ link_analysis_model: gemini-3.1-flash-lite-preview
   
 ## 🔍 What Went Wrong  
   
-🕵️ The image backfill pipeline — responsible for generating images for blog posts that don't have them — had its own hardcoded list of content directories in three separate locations:  
+🕵️ The image backfill pipeline - responsible for generating images for blog posts that don't have them - had its own hardcoded list of content directories in three separate locations:  
   
 | 📍 Location | 🐛 Problem |  
 |---|---|  
@@ -34,7 +34,7 @@ link_analysis_model: gemini-3.1-flash-lite-preview
   
 ## 🏗️ The Fix: Single Source of Truth  
   
-📐 We introduced `BACKFILL_CONTENT_IDS` in `blog-series-config.ts` — a single array that derives its blog series entries directly from `BLOG_SERIES.keys()` and adds the non-series content directories (`reflections`, `ai-blog`):  
+📐 We introduced `BACKFILL_CONTENT_IDS` in `blog-series-config.ts` - a single array that derives its blog series entries directly from `BLOG_SERIES.keys()` and adds the non-series content directories (`reflections`, `ai-blog`):  
   
 ```typescript  
 const EXTRA_CONTENT_DIRS: readonly string[] = ["reflections", "ai-blog"];  
@@ -72,11 +72,11 @@ export const BACKFILL_CONTENT_IDS: readonly string[] = [
 ## 📚 Book Recommendations  
   
 ### 📗 Similar  
-- 📘 *A Philosophy of Software Design* by John Ousterhout — deep insights on reducing complexity through better abstractions and eliminating duplication  
-- 📙 *Refactoring: Improving the Design of Existing Code* by Martin Fowler — systematic techniques for cleaning up code without changing behavior  
+- 📘 *A Philosophy of Software Design* by John Ousterhout - deep insights on reducing complexity through better abstractions and eliminating duplication  
+- 📙 *Refactoring: Improving the Design of Existing Code* by Martin Fowler - systematic techniques for cleaning up code without changing behavior  
   
 ### 📕 Contrasting  
-- 📒 *Move Fast and Break Things* by Jonathan Taplin — explores the tradeoffs of prioritizing speed over careful engineering  
+- 📒 *Move Fast and Break Things* by Jonathan Taplin - explores the tradeoffs of prioritizing speed over careful engineering  
   
 ### 📓 Creatively Related  
-- 📔 *Thinking in Systems* by Donella Meadows — understanding how feedback loops and leverage points apply to both software and societal systems  
+- 📔 *Thinking in Systems* by Donella Meadows - understanding how feedback loops and leverage points apply to both software and societal systems  

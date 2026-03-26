@@ -64,10 +64,10 @@ title: "♻️ Gemini Model Refresh and Blog Post Regeneration"
 
 ### 🤖 Model Chain Updates
 
-🔄 All three blog series now use the same model chain.
-🥇 Primary model is gemini-3.1-flash-lite-preview, our preferred generation 3.1 model.
-🥈 Fallback model is gemini-3-flash-preview, a generation 3 frontier-class model.
-🚫 The 2.5 series models have been completely removed from blog post generation.
+🔄 Chickie Loo and Auto Blog Zero now use gemini-3.1-flash-lite-preview as primary with gemini-3-flash-preview as fallback, both generation 3 or newer for highest quality.
+🌐 Systems for Public Good leads with gemini-2.5-flash because it needs Google Search grounding to reference current events, which is only available on the free tier for 2.5 models at 500 requests per day.
+🔗 Its fallback chain is gemini-2.5-flash-lite, then gemini-3.1-flash-lite-preview as a last resort without grounding.
+🚫 The 2.5 series models have been removed from the non-grounding blog series where quality is the top priority.
 📝 Other tasks like social media posting, fiction generation, and internal linking retain their existing model assignments since quality concerns are less critical there.
 
 ### ♻️ Blog Post Regeneration

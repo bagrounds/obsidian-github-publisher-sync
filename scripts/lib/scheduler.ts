@@ -89,9 +89,13 @@ export const SCHEDULE: readonly ScheduleEntry[] = [
  * The modelChain is an ordered list of Gemini models to try. The first
  * model is the default; subsequent models are tried on failure.
  *
- * All blog series are restricted to gemini-3.1+ models only.
- * Grounding with Google Search is not available on the free tier
- * for 3.1+ models, so grounding is disabled when these models are used.
+ * chickie-loo and auto-blog-zero use Gemini 3+ models for highest
+ * blog post quality.
+ *
+ * systems-for-public-good leads with gemini-2.5-flash because it
+ * needs Google Search grounding (free tier, 500 RPD) to reference
+ * current events. Grounding is not available on the free tier for
+ * Gemini 3+ models.
  */
 export const BLOG_SERIES_RUN_CONFIGS: ReadonlyMap<string, BlogSeriesRunConfig> = new Map([
   [
@@ -114,7 +118,7 @@ export const BLOG_SERIES_RUN_CONFIGS: ReadonlyMap<string, BlogSeriesRunConfig> =
     "systems-for-public-good",
     {
       seriesId: "systems-for-public-good",
-      modelChain: ["gemini-3.1-flash-lite-preview", "gemini-3-flash-preview"],
+      modelChain: ["gemini-2.5-flash", "gemini-2.5-flash-lite", "gemini-3.1-flash-lite-preview"],
       priorityUserEnvVar: "SYSTEMS_FOR_PUBLIC_GOOD_PRIORITY_USER",
     },
   ],

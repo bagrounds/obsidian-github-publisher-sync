@@ -225,8 +225,10 @@ describe("BLOG_SERIES_RUN_CONFIGS", () => {
     });
   });
 
-  it("all model chains use only Gemini 3+ models", () => {
-    BLOG_SERIES_RUN_CONFIGS.forEach((config, key) => {
+  it("chickie-loo and auto-blog-zero use only Gemini 3+ models", () => {
+    ["chickie-loo", "auto-blog-zero"].forEach((key) => {
+      const config = BLOG_SERIES_RUN_CONFIGS.get(key);
+      assert.ok(config);
       config.modelChain.forEach((model) => {
         assert.ok(
           model.startsWith("gemini-3"),
@@ -234,6 +236,12 @@ describe("BLOG_SERIES_RUN_CONFIGS", () => {
         );
       });
     });
+  });
+
+  it("systems-for-public-good leads with gemini-2.5-flash for grounding support", () => {
+    const config = BLOG_SERIES_RUN_CONFIGS.get("systems-for-public-good");
+    assert.ok(config);
+    assert.equal(config.modelChain[0], "gemini-2.5-flash");
   });
 
   it("gemini-2.5-flash-lite is never the first (default) model", () => {

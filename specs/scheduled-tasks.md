@@ -81,10 +81,11 @@ Pacific before making decisions via `nowPacificHour()`.
 |---|---|---|
 | `chickie-loo` | gemini-3.1-flash-lite-preview → gemini-3-flash-preview | `CHICKIE_LOO_PRIORITY_USER` |
 | `auto-blog-zero` | gemini-3.1-flash-lite-preview → gemini-3-flash-preview | `AUTO_BLOG_ZERO_PRIORITY_USER` |
-| `systems-for-public-good` | gemini-3.1-flash-lite-preview → gemini-3-flash-preview | `SYSTEMS_FOR_PUBLIC_GOOD_PRIORITY_USER` |
+| `systems-for-public-good` | gemini-2.5-flash → gemini-2.5-flash-lite → gemini-3.1-flash-lite-preview | `SYSTEMS_FOR_PUBLIC_GOOD_PRIORITY_USER` |
 
-🔒 Blog series are restricted to Gemini 3+ models only. The 2.5 series models produced lower quality blog posts.
-⚠️ Grounding with Google Search is not available on the free tier for 3.1+ models.
+🔒 chickie-loo and auto-blog-zero are restricted to Gemini 3+ models for highest quality blog posts.
+🌐 systems-for-public-good leads with gemini-2.5-flash because it needs Google Search grounding (free tier, 500 RPD) to reference current events. Grounding is not available on the free tier for Gemini 3+ models.
+⚠️ Grounding with Google Search is not available on the free tier for 3+ models.
 
 🔄 The `BLOG_GEMINI_MODEL` GitHub variable prepends to the chain when set.
 

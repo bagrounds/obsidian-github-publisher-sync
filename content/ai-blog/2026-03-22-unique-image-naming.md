@@ -13,7 +13,7 @@ force_analyze_links: false
 link_analysis_time: 2026-03-22T23:30:20.604Z
 link_analysis_model: gemini-3.1-flash-lite-preview
 ---
-[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-21-smarter-image-generation.md)  
+[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-22-smarter-image-generation-v2.md) [⏭️](./2026-03-23-centralize-backfill-config.md)  
 # 🖼️ Unique Image Naming - Path-Based Names with Conflict Resolution  
 ![ai-blog-2026-03-22-unique-image-naming](../ai-blog-2026-03-22-unique-image-naming.jpg)  
   

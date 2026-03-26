@@ -138,7 +138,10 @@ export const reflectionNeedsTitle = (content: string, date: string): boolean => 
 
   if (!titleLine) return true;
 
-  const titleValue = titleLine.replace(/^title:\s*/, "").trim();
+  const titleValue = titleLine
+    .replace(/^title:\s*/, "")
+    .trim()
+    .replace(/^["']|["']$/g, "");
   return titleValue === date;
 };
 

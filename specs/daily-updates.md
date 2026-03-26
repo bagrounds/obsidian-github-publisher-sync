@@ -27,6 +27,8 @@
          ↓
 🔧 addUpdateLinksToReflection(vaultDir, date, modifiedPaths)
          ↓
+📄 Ensure daily reflection exists (create from template if missing)
+         ↓
 📄 Read today's reflection note
          ↓
 🧩 addUpdateLinks(content, links)
@@ -77,7 +79,7 @@
 | 🔧 Function | 📝 Purpose |
 |---|---|
 | `extractTitleFromFile(filePath)` | 📄 Reads a file and extracts its title from frontmatter or H1 |
-| `addUpdateLinksToReflection(vaultDir, date, modifiedPaths)` | 🎯 Orchestrator: read reflection → build links → insert → write |
+| `addUpdateLinksToReflection(vaultDir, date, modifiedPaths)` | 🎯 Orchestrator: ensure reflection exists → build links → insert → write |
 
 ## 🛡️ Idempotency
 

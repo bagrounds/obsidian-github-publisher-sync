@@ -215,6 +215,21 @@ describe("reflectionNeedsTitle", () => {
       assert.equal(reflectionNeedsTitle(content, "2026-01-01"), false);
     });
   });
+
+  it("returns true when title is date wrapped in double quotes", () => {
+    const content = '---\ntitle: "2026-01-01"\n---\n# 2026-01-01\n';
+    assert.equal(reflectionNeedsTitle(content, "2026-01-01"), true);
+  });
+
+  it("returns true when title is date wrapped in single quotes", () => {
+    const content = "---\ntitle: '2026-01-01'\n---\n# 2026-01-01\n";
+    assert.equal(reflectionNeedsTitle(content, "2026-01-01"), true);
+  });
+
+  it("returns false when quoted title has creative text", () => {
+    const content = '---\ntitle: "2026-01-01 | 🎉 Party"\n---\n';
+    assert.equal(reflectionNeedsTitle(content, "2026-01-01"), false);
+  });
 });
 
 // ---------------------------------------------------------------------------

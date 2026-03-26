@@ -256,3 +256,4 @@ GEMINI_API_KEY=... npx tsx scripts/check-gemini-quota.ts
 | [`image-generation.md`](specs/image-generation.md) | 🖼️ Image generation pipeline — architecture, provider resolution, frontmatter schema, rate limiting, backfill prioritization |
 | [`daily-reflection.md`](specs/daily-reflection.md) | 📝 Daily reflection auto-update — template-based creation, series section insertion, post linking, workflow integration |
 | [`systems-for-public-good.md`](specs/systems-for-public-good.md) | 🏛️ Systems for Public Good blog series — democracy, public goods, grounding with Google Search, editorial guidelines |
+| [`ai-blog-sync.md`](specs/ai-blog-sync.md) | 🤖 AI blog vault sync — automated navigation links, daily reflection linking, TTS-friendly writing |

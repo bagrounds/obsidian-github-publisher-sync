@@ -46,6 +46,7 @@ import { run as runLinking, DEFAULT_LINKING_MODEL } from "./lib/internal-linking
 import { autoPost } from "./auto-post.ts";
 import { BACKFILL_CONTENT_IDS } from "./lib/blog-series-config.ts";
 import { addUpdateLinksToReflection, extractTitleFromFile } from "./lib/daily-updates.ts";
+import { ensureAllNavLinks, buildReflectionLinks } from "./lib/ai-blog-links.ts";
 import {
   generateFiction,
   reflectionNeedsFiction,
@@ -258,7 +259,15 @@ const runBackfillImages = async (): Promise<void> => {
     console.log(`  ❌ Backfill failed: ${error instanceof Error ? error.message : String(error)}`);
   }
 
-  // 3. Sync to vault and add update links to daily reflection
+  // 3. Ensure ai-blog posts have navigation links (⏮️/⏭️)
+  const aiBlogDir = path.join(REPO_ROOT, "ai-blog");
+  const navResults = ensureAllNavLinks(aiBlogDir);
+  const navModified = navResults.filter((r) => r.modified);
+  if (navModified.length > 0) {
+    console.log(`  🔗 Updated nav links for ${navModified.length} ai-blog post(s): ${navModified.map((r) => r.filename).join(", ")}`);
+  }
+
+  // 4. Sync to vault and add update links to daily reflection
   const syncVaultDir = await syncObsidianVault({ authToken, vaultName });
   BACKFILL_CONTENT_IDS.forEach((id) => {
     const localDir = path.join(REPO_ROOT, id);
@@ -266,10 +275,17 @@ const runBackfillImages = async (): Promise<void> => {
   });
   syncAttachmentsDir(path.join(REPO_ROOT, "attachments"), syncVaultDir);
 
+  const reflectionsDir = path.join(syncVaultDir, "reflections");
+
   if (modifiedFiles.length > 0) {
-    const reflectionsDir = path.join(syncVaultDir, "reflections");
     addUpdateLinksToReflection(reflectionsDir, todayPacific(), modifiedFiles);
   }
+
+  // 5. Link new ai-blog posts from their respective daily reflections
+  const aiBlogLinks = buildReflectionLinks(aiBlogDir, navResults);
+  aiBlogLinks.forEach(({ relativePath, title, date }) => {
+    addUpdateLinksToReflection(reflectionsDir, date, [{ relativePath, title }]);
+  });
 
   await pushObsidianVault(syncVaultDir, { authToken });
 

@@ -118,7 +118,7 @@ export const buildForwardLink = (series: BlogSeriesConfig, nextFilename: string)
   `[[${series.id}/${nextFilename.replace(/\.md$/, "")}|⏭️]]`;
 
 const quoteForYaml = (value: string): string =>
-  `"${value.replace(/\\/g, "\\\\").replace(/"/g, "")}"`;
+  `"${value.replace(/\\/g, "\\\\").replace(/"/g, '\\"')}"`;
 
 export const assembleFrontmatter = (series: BlogSeriesConfig, today: string, title: string, slug: string, previousPost?: BlogPost): string => {
   const backLink = previousPost ? ` | ${buildBackLink(series, previousPost)}` : "";

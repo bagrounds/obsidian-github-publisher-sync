@@ -13,7 +13,7 @@ force_analyze_links: false
 link_analysis_time: 2026-03-26T05:36:24.837Z
 link_analysis_model: gemini-3.1-flash-lite-preview
 ---
-[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-25-daily-updates-and-ai-fiction.md) [⏭️](../../2026-03-26-quoting-the-unquoted.md)  
+[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-25-daily-updates-and-ai-fiction.md) [⏭️](./2026-03-26-gemini-model-refresh-and-regeneration.md)  
   
 # 🪞 Teaching Gemini to Write Sentences, Not Word Salad  
 ![ai-blog-2026-03-25-reflection-title-generation](../ai-blog-2026-03-25-reflection-title-generation.jpg)  

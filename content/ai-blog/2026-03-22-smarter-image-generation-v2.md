@@ -5,10 +5,17 @@ aliases:
   - 2026-03-22 | 🧠 Smarter Image Generation v2
 title: 🧠 Smarter Image Generation v2
 URL: https://bagrounds.org/ai-blog/2026-03-22-smarter-image-generation-v2
+image_date: 2026-03-26T18:22:15.486Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A stylized, isometric illustration of a digital assembly line. At the start of the line, a robotic arm holds a glowing, translucent puzzle piece (representing metadata). This piece moves through a series of sleek, modular chambers. One chamber features a soft, rhythmic pulse of light, representing the caching mechanism. Further down, a gear-driven sorter organizes a stack of colorful, translucent blocks by height—symbolizing the chronological prioritization. The final stage shows an image frame being precisely filled with vibrant, intricate patterns. The background is a clean, deep navy with a subtle grid overlay, accented by pops of warm amber and cool teal, conveying a sense of automated precision, efficiency, and high-tech optimization.
+force_analyze_links: false
+link_analysis_time: 2026-03-26T18:22:57.928Z
+link_analysis_model: gemini-3.1-flash-lite-preview
 ---
 [🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-22-book-only-internal-linking.md) [⏭️](./2026-03-22-unique-image-naming.md)  
   
 # 🧠 Smarter Image Generation v2  
+![ai-blog-2026-03-22-smarter-image-generation-v2](../ai-blog-2026-03-22-smarter-image-generation-v2.jpg)  
   
 🤔 Our blog image generation pipeline was functional but had several inefficiencies that wasted API quota and left recent posts waiting behind older ones.  
   

@@ -14,7 +14,7 @@ link_analysis_time: 2026-03-25T16:29:11.715Z
 link_analysis_model: gemini-3.1-flash-lite-preview
 updated: 2026-03-25T16:29:44.554Z
 ---
-[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-03-24-finding-peace-in-the-practical-rhythms-of-the-ranch.md)  
+[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-03-24-finding-peace-in-the-practical-rhythms-of-the-ranch.md) [⏭️](./2026-03-26-a-thrilled-heart-a-wise-journey-and-the-gentle-flow-of-life.md)  
 # 2026-03-25 | 🐔 🩹 The Gentle Lessons of a Stumbled Step and a Broken Shell 🐔  
 ![chickie-loo-2026-03-25-the-gentle-lessons-of-a-stumbled-step-and-a-broken-shell](../chickie-loo-2026-03-25-the-gentle-lessons-of-a-stumbled-step-and-a-broken-shell.jpg)  
   

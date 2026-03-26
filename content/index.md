@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-03-26T15:59:38-07:00
+updated: 2026-03-26T16:32:41-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -62,7 +62,8 @@ updated: 2026-03-26T15:59:38-07:00
 - [📱⬇️🧘 Digital Minimalism: Choosing a Focused Life in a Noisy World](./books/digital-minimalism-choosing-a-focused-life-in-a-noisy-world.md)  
   
   
-## [📺 Videos](./videos/index.md) (712)  
+## [📺 Videos](./videos/index.md) (713)  
+- [💰💸⚔️ A “Billion Dollar a Day” War | Explainer](./videos/a-billion-dollar-a-day-war-explainer.md)  
 - [🤖✂️💰🚀 The AI Job Market Split in Two. One Side Pays $400K and Can't Hire Fast Enough.](./videos/the-ai-job-market-split-in-two-one-side-pays-400k-and-cant-hire-fast-enough.md)  
 - [🛡️⚙️🤖🔭 Antibrittle Agents: Engineering Reliability for Long-Horizon AI](./videos/antibrittle-agents-engineering-reliability-for-long-horizon-ai.md)  
 - [🧑‍🏫🎨✍️🎤 NYU Professor Teaches the Art of Writing (Ocean Vuong Interview)](./videos/nyu-professor-teaches-the-art-of-writing-ocean-vuong-interview.md)  
@@ -72,7 +73,6 @@ updated: 2026-03-26T15:59:38-07:00
 - [💰🚀💼 Session 2, Part 2: How Are You Going to Make Money? - The Business/Venture Model](./videos/session-2-part-2-how-are-you-going-to-make-money-the-businessventure-model.md)  
 - [session-1-part-2-market-identification-and-sales-finding-your-customer](../session-1-part-2-market-identification-and-sales-finding-your-customer.md)  
 - [📈💥❓➡️✅ Session 1, Part 1: Introduction: Most Startups Fail; How to Improve Your Odds](./videos/session-1-part-1-introduction-most-startups-fail-how-to-improve-your-odds.md)  
-- [👮🚔🕵️ Police Stings: Last Week Tonight with John Oliver (HBO)](./videos/police-stings-last-week-tonight-with-john-oliver-hbo.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  

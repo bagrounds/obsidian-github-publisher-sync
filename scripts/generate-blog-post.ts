@@ -208,6 +208,7 @@ export interface GenerateBlogPostConfig {
   readonly today: string;
   readonly priorityUser?: string;
   readonly dryRun?: boolean;
+  readonly regeneratingFilename?: string;
 }
 
 export interface GenerateBlogPostResult {
@@ -224,6 +225,7 @@ const updateReflectionIfCredentialsAvailable = async (
   today: string,
   filename: string,
   title: string,
+  replacingFilename?: string,
 ): Promise<void> => {
   const authToken = process.env.OBSIDIAN_AUTH_TOKEN;
   const vaultName = process.env.OBSIDIAN_VAULT_NAME;
@@ -241,7 +243,7 @@ const updateReflectionIfCredentialsAvailable = async (
     return;
   }
 
-  const result = updateDailyReflection(vaultDir, today, seriesConfig, filename, title);
+  const result = updateDailyReflection(vaultDir, today, seriesConfig, filename, title, replacingFilename);
   log({ event: "reflection_updated", ...result });
 
   const hasChanges = result.reflectionCreated || result.sectionCreated || result.linkInserted || result.forwardLinkAdded;
@@ -317,7 +319,7 @@ export const generateBlogPost = async (config: GenerateBlogPostConfig): Promise<
 
   const postRelativePath = `${series.id}/${filename}`;
 
-  await updateReflectionIfCredentialsAvailable(series, config.today, filename, parsed.title);
+  await updateReflectionIfCredentialsAvailable(series, config.today, filename, parsed.title, config.regeneratingFilename);
 
   log({ event: "generate_complete", series: series.id, filename, model: usedModel });
 

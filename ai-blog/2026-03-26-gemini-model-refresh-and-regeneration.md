@@ -78,6 +78,16 @@ title: "♻️ Gemini Model Refresh and Blog Post Regeneration"
 ✨ The newly generated post never includes regenerate_post in its frontmatter, preventing infinite regeneration loops.
 📅 Only today's post can be regenerated, so the flag is harmlessly ignored on historical posts.
 
+### 🔗 Regeneration Link Integrity
+
+🐛 The initial regeneration implementation had three subtle bugs that left stale links behind when the regenerated post received a new slug.
+
+🔀 The first bug was in the previous post's forward link. When a post is regenerated, the AI generates a new title, which produces a new slug and filename. The previous post already had a forward link pointing to the old filename. The original code skipped updating the forward link if one already existed, so the stale link was never corrected. The fix replaces the existing forward link with the new one instead of skipping.
+
+📓 The second bug was in the daily reflection. The reflection note for today had a link to the old filename. When the new post was generated, a second link was added without removing the old one, resulting in duplicate links with one pointing to a deleted file. The fix threads the old filename through the regeneration path and explicitly replaces the stale link.
+
+🗑️ The third bug was in vault cleanup. The old post file was deleted locally but never removed from the Obsidian vault. This left a ghost file in the vault that would reappear on the next sync. The fix deletes the old file from the vault directory when the new filename differs from the old one.
+
 ### 🐛 Midnight Bug Fix
 
 🕛 We discovered and fixed a bug in nowPacificHour where midnight was returned as hour 24 instead of hour 0.
@@ -86,8 +96,10 @@ title: "♻️ Gemini Model Refresh and Blog Post Regeneration"
 
 ## 🧪 Testing
 
-📊 All 1550 tests pass across the entire test suite.
-🆕 Seven new tests cover the findPostToRegenerate function, including edge cases for missing directories, posts without the flag, posts with the flag set to false, date filtering, and non-markdown file filtering.
+📊 All 1296 tests pass across the entire test suite.
+🆕 Seven tests cover the findPostToRegenerate function, including edge cases for missing directories, posts without the flag, posts with the flag set to false, date filtering, and non-markdown file filtering.
+🔗 One new test verifies that updatePreviousPost replaces stale forward links when regeneration produces a new filename.
+📓 Two new tests verify that insertPostLink replaces stale reflection links when an explicit old filename is provided and that it leaves unrelated links alone when no replacement is requested.
 ✅ The three previously failing scheduler tests were fixed as part of this work.
 
 ## 📖 Book Recommendations

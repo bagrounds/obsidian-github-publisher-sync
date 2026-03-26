@@ -103,12 +103,23 @@ export const insertPostLink = (
   series: BlogSeriesConfig,
   filenameNoExt: string,
   displayTitle: string,
+  replacingFilenameNoExt?: string,
 ): string => {
   const linkTarget = `[[${series.id}/${filenameNoExt}|`;
   if (content.includes(linkTarget)) return content;
 
-  const sectionHeading = buildSeriesSectionHeading(series);
   const postLink = buildPostLink(series.id, filenameNoExt, displayTitle);
+
+  // Replace stale link when regenerating a post with a new filename
+  if (replacingFilenameNoExt) {
+    const oldLinkTarget = `- [[${series.id}/${replacingFilenameNoExt}|`;
+    if (content.includes(oldLinkTarget)) {
+      const lines = content.split("\n");
+      return lines.map((line) => line.startsWith(oldLinkTarget) ? postLink : line).join("\n");
+    }
+  }
+
+  const sectionHeading = buildSeriesSectionHeading(series);
 
   return content.includes(sectionHeading)
     ? appendLinkToExistingSection(content, sectionHeading, postLink)
@@ -162,6 +173,7 @@ export const updateDailyReflection = (
   series: BlogSeriesConfig,
   postFilename: string,
   postTitle: string,
+  replacingFilename?: string,
 ): UpdateReflectionResult => {
   const reflectionsDir = path.join(vaultDir, "reflections");
   const { created, previousDate, forwardLinkAdded } = ensureDailyReflection(reflectionsDir, today);
@@ -169,8 +181,9 @@ export const updateDailyReflection = (
   const reflectionPath = path.join(reflectionsDir, `${today}.md`);
   const content = fs.readFileSync(reflectionPath, "utf-8");
   const filenameNoExt = postFilename.replace(/\.md$/, "");
+  const replacingFilenameNoExt = replacingFilename?.replace(/\.md$/, "");
   const hadSection = content.includes(buildSeriesSectionHeading(series));
-  const updated = insertPostLink(content, series, filenameNoExt, postTitle);
+  const updated = insertPostLink(content, series, filenameNoExt, postTitle, replacingFilenameNoExt);
 
   const linkInserted = updated !== content;
   if (linkInserted) {

@@ -99,14 +99,19 @@ Pacific before making decisions via `nowPacificHour()`.
 2. 🔄 Obsidian syncs the change to the vault
 3. ⏰ On the next hourly cron run, `findPostToRegenerate()` detects the flag
 4. 🗑️ The old post is removed from the local repo
-5. ✨ A new post is generated (without `regenerate_post` in its frontmatter)
-6. 📤 The new post is synced back to Obsidian, replacing the old one
+5. ✨ A new post is generated with a fresh title and slug (without `regenerate_post` in its frontmatter)
+6. 🔗 The previous post's forward link is updated to point to the new filename (replacing the stale link)
+7. 📓 The daily reflection's post link is replaced with the new filename
+8. 🗑️ The old file is deleted from the Obsidian vault
+9. 📤 The new post, updated previous post, and vault changes are synced back to Obsidian
 
 ### 🛡️ Safety Properties
 
 🚫 Newly generated posts never include `regenerate_post`, preventing infinite regeneration loops.
 📅 Only today's post can be regenerated — the flag is ignored on posts from other dates.
 🔒 The flag is only checked in the YAML frontmatter block, not in the body content.
+🔗 Forward links from the previous post are replaced rather than duplicated.
+📓 Daily reflection links are replaced rather than duplicated when the filename changes.
 
 ## 🛡️ API Resilience
 

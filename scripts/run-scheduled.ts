@@ -151,6 +151,7 @@ const runBlogSeries = async (seriesId: string): Promise<void> => {
   // 2. Check if today's post needs regeneration or already exists
   const seriesDir = path.join(REPO_ROOT, seriesId);
   const postToRegenerate = findPostToRegenerate(seriesDir, today);
+  const regeneratedOldVaultPath = postToRegenerate ? `${seriesId}/${postToRegenerate}` : undefined;
   if (postToRegenerate) {
     console.log(`  ♻️  Regeneration requested for ${postToRegenerate} — removing old post`);
     fs.unlinkSync(path.join(seriesDir, postToRegenerate));
@@ -172,6 +173,7 @@ const runBlogSeries = async (seriesId: string): Promise<void> => {
     repoRoot: REPO_ROOT,
     today,
     priorityUser,
+    regeneratingFilename: postToRegenerate,
   });
 
   // 6. Generate blog image (continue on error)
@@ -194,6 +196,16 @@ const runBlogSeries = async (seriesId: string): Promise<void> => {
 
     const postLocal = path.join(REPO_ROOT, result.postPath);
     changed = syncFileToVault(postLocal, result.postPath, syncVaultDir) || changed;
+
+    // Delete old post from vault when regenerating with a new filename
+    if (regeneratedOldVaultPath && regeneratedOldVaultPath !== result.postPath) {
+      const oldVaultFile = path.join(syncVaultDir, regeneratedOldVaultPath);
+      if (fs.existsSync(oldVaultFile)) {
+        fs.unlinkSync(oldVaultFile);
+        console.log(`  🗑️  Removed old vault file: ${regeneratedOldVaultPath}`);
+        changed = true;
+      }
+    }
 
     const metadataPath = path.join(REPO_ROOT, seriesId, ".last-generate-metadata.json");
     const previousFilename = readPreviousPostFilename(metadataPath);

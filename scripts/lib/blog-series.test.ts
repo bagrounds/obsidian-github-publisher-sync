@@ -396,6 +396,22 @@ describe("updatePreviousPost", () => {
     }
   });
 
+  it("replaces stale forward link when regeneration produces a new filename", () => {
+    const tmpDir = fs.mkdtempSync(path.join(os.tmpdir(), "blog-test-"));
+    try {
+      fs.writeFileSync(path.join(tmpDir, "2026-03-10-test.md"),
+        `---\nshare: true\n---\n${series.navLink} | [[auto-blog-zero/2026-03-11-old-slug|⏭️]]\n## Test\n\nBody.\n`);
+      const prev = { filename: "2026-03-10-test.md", date: "2026-03-10", title: "Test", body: "" };
+      updatePreviousPost(tmpDir, prev, series, "2026-03-11-new-slug.md");
+      const updated = fs.readFileSync(path.join(tmpDir, "2026-03-10-test.md"), "utf-8");
+      assert.equal((updated.match(/⏭/g) ?? []).length, 1);
+      assert.ok(updated.includes("[[auto-blog-zero/2026-03-11-new-slug|⏭️]]"), "should have the new forward link");
+      assert.ok(!updated.includes("old-slug"), "should not have the old forward link");
+    } finally {
+      fs.rmSync(tmpDir, { recursive: true });
+    }
+  });
+
   it("does nothing when the previous post file does not exist", () => {
     const prev = { filename: "nonexistent.md", date: "2026-03-10", title: "Test", body: "" };
     assert.doesNotThrow(() => updatePreviousPost("/tmp/nonexistent-dir", prev, series, "2026-03-11-new.md"));

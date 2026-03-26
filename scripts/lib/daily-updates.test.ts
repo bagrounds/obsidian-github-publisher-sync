@@ -241,13 +241,37 @@ describe("addUpdateLinksToReflection", () => {
     }
   });
 
-  it("returns false when reflection does not exist", () => {
+  it("creates reflection when it does not exist and adds links", () => {
     const tmpDir = makeTmpDir();
     try {
       const result = addUpdateLinksToReflection(tmpDir, "2026-03-23", [
         { relativePath: "books/new.md", title: "📚 New Book" },
       ]);
-      assert.equal(result, false);
+      assert.equal(result, true);
+      const content = fs.readFileSync(path.join(tmpDir, "2026-03-23.md"), "utf-8");
+      assert.ok(content.includes("title: 2026-03-23"));
+      assert.ok(content.includes(UPDATES_SECTION_HEADER));
+      assert.ok(content.includes("- [[books/new|📚 New Book]]"));
+    } finally {
+      cleanTmpDir(tmpDir);
+    }
+  });
+
+  it("adds forward link to previous reflection when creating new one", () => {
+    const tmpDir = makeTmpDir();
+    try {
+      fs.writeFileSync(
+        path.join(tmpDir, "2026-03-22.md"),
+        "---\ntitle: 2026-03-22\n---\n[[reflections/2026-03-21|⏮️]]\n# 2026-03-22\n",
+        "utf-8",
+      );
+      addUpdateLinksToReflection(tmpDir, "2026-03-23", [
+        { relativePath: "books/new.md", title: "📚 New Book" },
+      ]);
+      const prevContent = fs.readFileSync(path.join(tmpDir, "2026-03-22.md"), "utf-8");
+      assert.ok(prevContent.includes("[[reflections/2026-03-23|⏭️]]"));
+      const newContent = fs.readFileSync(path.join(tmpDir, "2026-03-23.md"), "utf-8");
+      assert.ok(newContent.includes("[[reflections/2026-03-22|⏮️]]"));
     } finally {
       cleanTmpDir(tmpDir);
     }

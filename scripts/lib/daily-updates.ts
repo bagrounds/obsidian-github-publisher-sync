@@ -18,6 +18,7 @@
 import fs from "node:fs";
 import path from "node:path";
 
+import { ensureDailyReflection } from "./daily-reflection.ts";
 import { parseFrontmatter } from "./frontmatter.ts";
 
 // --- Constants ---
@@ -84,7 +85,8 @@ export const extractTitleFromFile = (filePath: string): string => {
 
 /**
  * Add update links to the current daily reflection file.
- * No-op if the reflection file doesn't exist or no new links are needed.
+ * Creates the reflection from template if it doesn't exist yet.
+ * No-op if no new links are needed.
  *
  * @returns true if the reflection was modified
  */
@@ -97,8 +99,10 @@ export const addUpdateLinksToReflection = (
 
   const reflectionPath = path.join(reflectionsDir, `${date}.md`);
   if (!fs.existsSync(reflectionPath)) {
-    console.log(`  ⚠️  No reflection for ${date}, skipping update links`);
-    return false;
+    const { created } = ensureDailyReflection(reflectionsDir, date);
+    if (created) {
+      console.log(`  📝 Created daily reflection for ${date}`);
+    }
   }
 
   const content = fs.readFileSync(reflectionPath, "utf-8");

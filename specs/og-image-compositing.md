@@ -119,10 +119,10 @@
 The OG image cache hash includes:
 - Title, description, tags, date
 - Color scheme, width, height
-- **Content image reference** (local path or `yt:{videoId}`)
+- **Content image hash** — SHA256 of the actual image file content (16-char hex prefix) for local images, or `yt:{videoId}` for YouTube thumbnails
 - Cache version number
 
-📝 When a note's embedded image changes, the cache key changes, triggering regeneration.
+📝 When a note's embedded image content changes (even if the file name stays the same), the cache key changes, triggering regeneration automatically. No manual cache version bumps needed for image changes.
 
 ### 💾 Cache Layers
 

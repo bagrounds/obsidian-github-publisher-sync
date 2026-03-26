@@ -12,6 +12,7 @@ import {
   resolveImagePath,
   loadContentImageBase64,
   fetchYouTubeThumbnailBase64,
+  hashImageFile,
 } from "../../util/og"
 import sharp from "sharp"
 import satori, { SatoriOptions } from "satori"
@@ -37,7 +38,7 @@ const OG_CACHE_DIR = path.join(QUARTZ, ".quartz-cache", "og-images")
 const OG_CONCURRENCY = 20
 
 // Increment this when the image generation logic changes to invalidate cached images
-const OG_IMAGE_CACHE_VERSION = 3
+const OG_IMAGE_CACHE_VERSION = 2
 
 /**
  * Compute a content hash for cache keying of OG images.
@@ -151,7 +152,13 @@ async function processOgImage(
 
   const localImageRef = extractFirstLocalImageRef(rawContent)
   const youtubeVideoId = extractYouTubeVideoId(fileData.frontmatter as Record<string, unknown> | undefined, rawContent)
-  const contentImageRef = localImageRef ?? (youtubeVideoId ? `yt:${youtubeVideoId}` : undefined)
+
+  const imagePath = localImageRef && fileData.filePath
+    ? resolveImagePath(localImageRef, fileData.filePath, ctx.argv.directory)
+    : undefined
+  const contentImageHash = imagePath
+    ? await hashImageFile(imagePath)
+    : youtubeVideoId ? `yt:${youtubeVideoId}` : undefined
 
   const cacheKey = computeOgHash(
     title,
@@ -161,7 +168,7 @@ async function processOgImage(
     fullOptions.colorScheme,
     fullOptions.width,
     fullOptions.height,
-    contentImageRef,
+    contentImageHash,
   )
   const cachePath = path.join(OG_CACHE_DIR, `${cacheKey}.webp`)
   const outputSlug = `${slug}-og-image` as FullSlug
@@ -183,8 +190,7 @@ async function processOgImage(
   }
 
   let contentImageBase64: string | undefined
-  if (localImageRef && fileData.filePath) {
-    const imagePath = resolveImagePath(localImageRef, fileData.filePath, ctx.argv.directory)
+  if (imagePath) {
     contentImageBase64 = await loadContentImageBase64(imagePath)
   } else if (youtubeVideoId) {
     contentImageBase64 = await fetchYouTubeThumbnailBase64(youtubeVideoId)

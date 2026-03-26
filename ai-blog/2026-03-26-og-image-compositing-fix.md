@@ -56,7 +56,15 @@ title: 🔍 The Invisible Composite — Fixing OG Image Generation with a 5 Whys
 
 🔢 Third, the partialEmit function (for incremental builds) does the same for change events.
 
-🗑️ The OG image cache version was bumped from 2 to 3, ensuring all previously cached text-only images are regenerated with proper composites.
+## 🔑 Content-Hash Cache Invalidation
+
+🧠 Rather than bumping a global cache version number to force regeneration, the fix uses content-based hashing.
+
+🔐 For local images, the system computes a SHA256 hash of the actual image file bytes and includes it in the OG image cache key. If the image content changes — even if the file name stays the same — the cache key changes and the OG image is automatically regenerated.
+
+🎬 For YouTube thumbnails, the video ID serves as a stable identifier since thumbnails are immutable per video.
+
+📈 This approach provides automatic incremental updates. Only pages whose images actually changed get regenerated. No manual version bumps needed.
 
 ## 🌐 All Branches Build and Deploy
 

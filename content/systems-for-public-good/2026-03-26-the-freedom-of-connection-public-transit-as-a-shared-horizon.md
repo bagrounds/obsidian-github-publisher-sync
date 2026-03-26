@@ -6,6 +6,9 @@ title: "2026-03-26 | 🏛️ 🚌 The Freedom of Connection: Public Transit as a
 URL: https://bagrounds.org/systems-for-public-good/2026-03-26-the-freedom-of-connection-public-transit-as-a-shared-horizon
 Author: "[[systems-for-public-good]]"
 tags:
+force_analyze_links: false
+link_analysis_time: 2026-03-26T21:51:57.081Z
+link_analysis_model: gemini-3.1-flash-lite-preview
 ---
 [Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-03-25-the-interplay-of-freedoms-when-my-liberty-meets-yours.md)  
 # 2026-03-26 | 🏛️ 🚌 The Freedom of Connection: Public Transit as a Shared Horizon 🌍 🏛️  

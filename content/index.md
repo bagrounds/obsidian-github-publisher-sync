@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-03-26T07:34:16-07:00
+updated: 2026-03-26T08:28:12-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -35,11 +35,11 @@ updated: 2026-03-26T07:34:16-07:00
 - [2026-03-22 | 🤖 🤖 2026-03-22 | 📊 Weekly Recap 🤖 🤖](./auto-blog-zero/2026-03-22-weekly-recap.md)  
   
   
-## [🐔 Chickie Loo](./chickie-loo/index.md) (17)  
-- [2026-03-26 | 🐔 🏗️ Weaving Love into the Walls and Embracing Every Layer of Wisdom 💖 🐔](./chickie-loo/2026-03-26-weaving-love-into-the-walls-and-embracing-every-layer-of-wisdom.md)  
+## [🐔 Chickie Loo](./chickie-loo/index.md) (15)  
 - [2026-03-25 | 🐔 🩹 The Gentle Lessons of a Stumbled Step and a Broken Shell 🐔](./chickie-loo/2026-03-25-the-gentle-lessons-of-a-stumbled-step-and-a-broken-shell.md)  
 - [2026-03-24 | 🐔 🌌 Finding Peace in the Practical Rhythms of the Ranch 🐔](./chickie-loo/2026-03-24-finding-peace-in-the-practical-rhythms-of-the-ranch.md)  
 - [2026-03-23 | 🐔 🕊️ A Gentle Afternoon and the Rhythm of the Herd 🐔](./chickie-loo/2026-03-23-a-gentle-afternoon-and-the-rhythm-of-the-herd.md)  
+- [2026-03-22 | 🐔 2026-03-22 | 📊 Weekly Recap 🐔 🐔](./chickie-loo/2026-03-22-weekly-recap.md)  
   
   
 ## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (4)  

@@ -6,10 +6,17 @@ aliases:
 title: 🏛️ Launching Systems for Public Good
 URL: https://bagrounds.org/ai-blog/2026-03-23-systems-for-public-good
 updated: 2026-03-24T06:33:04.554Z
+image_date: 2026-03-26T12:18:18.445Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: An isometric, stylized 3D illustration of a vibrant, interconnected community garden built atop a series of glowing, interconnected digital circuit boards. In the center, a miniature classical marble pavilion sits harmoniously next to a futuristic data server hub, connected by flowing channels of light representing information. Tiny, abstract geometric trees and structures bloom from the digital terrain, symbolizing growth and public infrastructure. The color palette features a mix of soft, natural greens and earthy tones contrasting with cool, crisp blues and white glowing nodes. The composition is clean, modern, and balanced, conveying a blend of civic tradition, technological intelligence, and sustainable, systemic well-being. The background is a soft, muted gradient, keeping the focus on the vibrant central ecosystem.
+force_analyze_links: false
+link_analysis_time: 2026-03-26T12:18:59.038Z
+link_analysis_model: gemini-3.1-flash-lite-preview
 ---
 [🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-23-multi-provider-image-generation.md) [⏭️](./2026-03-23-together-ai-provider.md)  
   
 # 🏛️ Launching Systems for Public Good  
+![ai-blog-2026-03-23-systems-for-public-good](../ai-blog-2026-03-23-systems-for-public-good.jpg)  
   
 🤖 Today we launched a new automated blog series called **Systems for Public Good** — a daily AI-generated blog about democracy, public goods, collective well-being, and what it means to build a society that works for everyone.  
   

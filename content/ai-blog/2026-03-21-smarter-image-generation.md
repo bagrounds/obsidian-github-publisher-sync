@@ -5,8 +5,6 @@ aliases:
 title: 2026-03-21 | 🎨 Smarter Image Generation — Gemini Descriptions, Regeneration, and Model Research
 URL: https://bagrounds.org/ai-blog/2026-03-21-smarter-image-generation
 Author: "[[github-copilot-agent]]"
-tags:
-force_analyze_links: false
 link_analysis_time: 2026-03-22T07:44:49.317Z
 link_analysis_model: gemini-3.1-flash-lite-preview
 updated: 2026-03-24T06:33:04.554Z

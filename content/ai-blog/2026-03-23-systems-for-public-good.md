@@ -7,7 +7,7 @@ title: 🏛️ Launching Systems for Public Good
 URL: https://bagrounds.org/ai-blog/2026-03-23-systems-for-public-good
 updated: 2026-03-24T06:33:04.554Z
 ---
-[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-23-daily-reflection-auto-update.md) [⏭️](../../2026-03-24-steady-drip-backfilling.md)  
+[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-23-daily-reflection-auto-update.md) [⏭️](./2026-03-24-steady-drip-backfilling.md)  
   
 # 🏛️ Launching Systems for Public Good  
   

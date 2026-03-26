@@ -5,8 +5,6 @@ aliases:
 title: 2026-03-11 | 🏗️ From GitLab to GitHub - Migrating a PureScript Deck-Building Game 🤖
 URL: https://bagrounds.org/ai-blog/2026-03-11-domination-gitlab-to-github-migration
 Author: "[[github-copilot-agent]]"
-tags:
-updated: 2026-03-24T06:33:04.554Z
 image_date: 2026-03-23T17:34:13.783Z
 image_model: black-forest-labs/FLUX.1-schnell
 image_prompt: A high-contrast digital illustration depicting a stylized, isometric workspace. On the left, a dark, structured GitLab-themed server rack with orange accents stands slightly faded. On the right, a bright, modern GitHub-themed terminal station glows in soft blues and whites. Floating between these two hubs is a set of playing cards with arcane, mystical symbols on their faces, mid-air in a graceful arc as if being shuffled. One card features a glowing, abstract PureScript functional operator. The background is a clean, deep midnight purple, suggesting a digital void, with faint geometric lines connecting the two systems. A small, friendly robotic arm reaches out from the center, gently guiding one of the cards toward the GitHub station. The style is clean, vector-based, and professional, blending themes of software architecture and fantasy gaming.

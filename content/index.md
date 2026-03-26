@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-03-25T11:31:13-07:00
+updated: 2026-03-25T17:04:41-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -50,6 +50,8 @@ updated: 2026-03-25T11:31:13-07:00
   
 ## [📚 Books](./books/index.md) (958)  
 - [🍇😡 The Grapes of Wrath](./books/the-grapes-of-wrath.md)  
+- [⚠️🥴🕹️🌐 The Fifth Risk](./books/the-fifth-risk.md)  
+- [💺🚪💡🤔 The Design of Everyday Things](./books/the-design-of-everyday-things.md)  
 - [🤖🧠⚙️ Artificial Condition](./books/artificial-condition.md)  
 - [👁️ 1984](./books/1984.md)  
 - [🚨🤖💥 All Systems Red](./books/all-systems-red.md)  
@@ -57,11 +59,10 @@ updated: 2026-03-25T11:31:13-07:00
 - [📱⬇️🧘 Digital Minimalism: Choosing a Focused Life in a Noisy World](./books/digital-minimalism-choosing-a-focused-life-in-a-noisy-world.md)  
 - [➡️🌌🚀😡 A Long Way to a Small, Angry Planet](./books/a-long-way-to-a-small-angry-planet.md)  
 - [📱🧠 The Shallows: What the Internet Is Doing to Our Brains](./books/the-shallows-what-the-internet-is-doing-to-our-brains.md)  
-- [🧠👥 The Society of Mind](./books/the-society-of-mind.md)  
-- [🏃💨🚪 Exit Strategy](./books/exit-strategy.md)  
   
   
-## [📺 Videos](./videos/index.md) (709)  
+## [📺 Videos](./videos/index.md) (710)  
+- [🛡️⚙️🤖🔭 Antibrittle Agents: Engineering Reliability for Long-Horizon AI](./videos/antibrittle-agents-engineering-reliability-for-long-horizon-ai.md)  
 - [🇺🇸🏛️🗣️📊 An Analysis of Modern Republicanism | Explainer](./videos/an-analysis-of-modern-republicanism-explainer.md)  
 - [🗣️💡🚀 Session 4, Part 1: Presenting Your Venture](./videos/session-4-part-1-presenting-your-venture.md)  
 - [3️⃣1️⃣⚖️🏛️ Session 3, Part 1: Legal Issues](./videos/session-3-part-1-legal-issues.md)  
@@ -71,15 +72,14 @@ updated: 2026-03-25T11:31:13-07:00
 - [👮🚔🕵️ Police Stings: Last Week Tonight with John Oliver (HBO)](./videos/police-stings-last-week-tonight-with-john-oliver-hbo.md)  
 - [🇺🇸🗣️🏛️ American Conversations: Senator Jon Ossoff](./videos/american-conversations-senator-jon-ossoff.md)  
 - [🌿🤖🛰️ These AI Devices Protect Nature in Real Time | Juan M. Lavista Ferres | TED](./videos/these-ai-devices-protect-nature-in-real-time-juan-m-lavista-ferres-ted.md)  
-- [💰💥🇮🇷🇺🇸 Brooks and Capehart on Trump struggling to contain economic fallout of Iran war](./videos/brooks-and-capehart-on-trump-struggling-to-contain-economic-fallout-of-iran-war.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  
+- [🌲🪜🧠 A Hierarchical View of Human Knowledge](./topics/a-hierarchical-view-of-human-knowledge.md)  
 - [🏦♾️📈💸 Modern Monetary Theory](./topics/modern-monetary-theory.md)  
 - [🫂💖 Attachment Theory](./topics/attachment-theory.md)  
 - [🤔📚 Philosophy](./topics/philosophy.md)  
 - [📚🎭 Humanities](./topics/humanities.md)  
-- [📄👔 My Resume](./topics/my-resume.md)  
   
   
 ## [📄  Articles](./articles/index.md) (81)  
@@ -107,8 +107,8 @@ updated: 2026-03-25T11:31:13-07:00
   
   
 ## [👥 People](./people/index.md) (18)  
-- [👨‍🏫📉💵 Warren Mosler](./people/warren-mosler.md)  
 - [🏛️🇺🇸📖 Heather Cox Richardson](./people/heather-cox-richardson.md)  
+- [👨‍🏫📉💵 Warren Mosler](./people/warren-mosler.md)  
 - [🤔⚙️🗣️🤝💡🧩🔭📚👴 Russell Ackoff](./people/russell-ackoff.md)  
   
   

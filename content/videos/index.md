@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-03-25T11:31:13-07:00
+updated: 2026-03-25T17:04:41-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (709)  
+# 📺 Videos (710)  
 - [💰🤑🤖💡🚀💲 $0.10/Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
@@ -89,6 +89,7 @@ updated: 2026-03-25T11:31:13-07:00
 - [🗣️⭐💼 Answering Behavioral Interview Questions Using the STAR Method](./answering-behavioral-interview-questions-using-the-star-method.md)  
 - [🤖🧠🚫 Anthropic MCP + Ollama No Claude Needed Check it out](./anthropic-mcp-ollama-no-claude-needed-check-it-out.md)  
 - [🤖🧪🚫🛑💥 Anthropic Tested 16 Models. Instructions Didn't Stop Them (When Security is a Structural Failure)](./anthropic-tested-16-models-instructions-didnt-stop-them-when-security-is-a-structural-failure.md)  
+- [🛡️⚙️🤖🔭 Antibrittle Agents: Engineering Reliability for Long-Horizon AI](./antibrittle-agents-engineering-reliability-for-long-horizon-ai.md)  
 - [⚖️🏛️🗣️ Antitrust and The Rule of Law: A Conversation with Former FTC Chair Lina Khan](./antitrust-and-the-rule-of-law-a-conversation-with-former-ftc-chair-lina-khan.md)  
 - [👑〰️📈 Appearance: Evil Dictator Pulling Strings | Reality: Emergent Behavior of System](./appearance-evil-dictator-pulling-strings-reality-emergent-behavior-of-system.md)  
 - [🏛️🤕❓ Architect of Obamacare: Health Care Is Still a Mess | The David Frum Show](./architect-of-obamacare-health-care-is-still-a-mess-the-david-frum-show.md)  

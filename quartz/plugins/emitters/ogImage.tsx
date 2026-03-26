@@ -2,7 +2,17 @@ import { QuartzEmitterPlugin } from "../types"
 import { i18n } from "../../i18n"
 import { unescapeHTML } from "../../util/escape"
 import { FilePath, FullSlug, getFileExtension, isAbsoluteURL, joinSegments, QUARTZ } from "../../util/path"
-import { ImageOptions, SocialImageOptions, defaultImage, getSatoriFonts } from "../../util/og"
+import {
+  ImageOptions,
+  SocialImageOptions,
+  defaultImage,
+  getSatoriFonts,
+  extractFirstLocalImageRef,
+  extractYouTubeVideoId,
+  resolveImagePath,
+  loadContentImageBase64,
+  fetchYouTubeThumbnailBase64,
+} from "../../util/og"
 import sharp from "sharp"
 import satori, { SatoriOptions } from "satori"
 import { loadEmoji, getIconCode } from "../../util/emoji"
@@ -27,7 +37,7 @@ const OG_CACHE_DIR = path.join(QUARTZ, ".quartz-cache", "og-images")
 const OG_CONCURRENCY = 20
 
 // Increment this when the image generation logic changes to invalidate cached images
-const OG_IMAGE_CACHE_VERSION = 1
+const OG_IMAGE_CACHE_VERSION = 2
 
 /**
  * Compute a content hash for cache keying of OG images.
@@ -41,6 +51,7 @@ function computeOgHash(
   colorScheme: string,
   width: number,
   height: number,
+  contentImageRef?: string,
 ): string {
   const hash = createHash("sha256")
   hash.update(
@@ -52,6 +63,7 @@ function computeOgHash(
       colorScheme,
       width,
       height,
+      contentImageRef,
       version: OG_IMAGE_CACHE_VERSION,
     }),
   )
@@ -85,7 +97,7 @@ async function getIconBase64(): Promise<string | undefined> {
  * @param opts options for generating image
  */
 async function generateSocialImage(
-  { cfg, description, fonts, title, fileData }: ImageOptions,
+  { cfg, description, fonts, title, fileData, contentImageBase64 }: ImageOptions,
   userOpts: SocialImageOptions,
 ): Promise<Buffer> {
   const { width, height } = userOpts
@@ -99,6 +111,7 @@ async function generateSocialImage(
     fonts,
     fileData,
     iconBase64,
+    contentImageBase64,
   })
 
   const svg = await satori(imageComponent, {
@@ -134,6 +147,11 @@ async function processOgImage(
     unescapeHTML(fileData.description?.trim() ?? i18n(cfg.locale).propertyDefaults.description)
   const tags = fileData.frontmatter?.tags ?? []
   const date = fileData.frontmatter?.date?.toString()
+  const text = fileData.text ?? ""
+
+  const localImageRef = extractFirstLocalImageRef(text)
+  const youtubeVideoId = extractYouTubeVideoId(fileData.frontmatter as Record<string, unknown> | undefined, text)
+  const contentImageRef = localImageRef ?? (youtubeVideoId ? `yt:${youtubeVideoId}` : undefined)
 
   const cacheKey = computeOgHash(
     title,
@@ -143,6 +161,7 @@ async function processOgImage(
     fullOptions.colorScheme,
     fullOptions.width,
     fullOptions.height,
+    contentImageRef,
   )
   const cachePath = path.join(OG_CACHE_DIR, `${cacheKey}.webp`)
   const outputSlug = `${slug}-og-image` as FullSlug
@@ -163,6 +182,14 @@ async function processOgImage(
     // Cache miss — generate
   }
 
+  let contentImageBase64: string | undefined
+  if (localImageRef && fileData.filePath) {
+    const imagePath = resolveImagePath(localImageRef, fileData.filePath, ctx.argv.directory)
+    contentImageBase64 = await loadContentImageBase64(imagePath)
+  } else if (youtubeVideoId) {
+    contentImageBase64 = await fetchYouTubeThumbnailBase64(youtubeVideoId)
+  }
+
   const imageBuffer = await generateSocialImage(
     {
       title,
@@ -170,6 +197,7 @@ async function processOgImage(
       fonts,
       cfg,
       fileData,
+      contentImageBase64,
     },
     fullOptions,
   )

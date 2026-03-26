@@ -10,6 +10,7 @@ import { formatDate, getDate } from "../components/Date"
 import readingTime from "reading-time"
 import { i18n } from "../i18n"
 import chalk from "chalk"
+import sharp from "sharp"
 
 const defaultHeaderWeight = [700]
 const defaultBodyWeight = [400]
@@ -140,6 +141,7 @@ export type SocialImageOptions = {
     options: ImageOptions & {
       userOpts: UserOpts
       iconBase64?: string
+      contentImageBase64?: string
     },
   ) => JSXInternal.Element
 }
@@ -167,6 +169,122 @@ export type ImageOptions = {
    * full file data of current page
    */
   fileData: QuartzPluginData
+  /**
+   * base64-encoded content image from the note (first embedded image or YouTube thumbnail)
+   */
+  contentImageBase64?: string
+}
+
+const MARKDOWN_IMAGE_REGEX = /!\[[^\]]*\]\(([^)]+\.(?:jpg|jpeg|png|gif|webp))\)/i
+const OBSIDIAN_IMAGE_REGEX = /!\[\[([^\]]+\.(?:jpg|jpeg|png|gif|webp))\]\]/i
+const YOUTUBE_SHORT_URL_REGEX = /youtu\.be\/([a-zA-Z0-9_-]{11})/
+const YOUTUBE_LONG_URL_REGEX = /youtube\.com\/watch\?v=([a-zA-Z0-9_-]{11})/
+
+export function extractFirstLocalImageRef(text: string): string | undefined {
+  const mdMatch = MARKDOWN_IMAGE_REGEX.exec(text)
+  if (mdMatch) {
+    const src = mdMatch[1]
+    if (!src.startsWith("http://") && !src.startsWith("https://")) {
+      return src
+    }
+  }
+  const obsMatch = OBSIDIAN_IMAGE_REGEX.exec(text)
+  if (obsMatch) {
+    return obsMatch[1].replace(/^attachments\//, "")
+  }
+  return undefined
+}
+
+export function extractYouTubeVideoId(frontmatter: Record<string, unknown> | undefined, text: string): string | undefined {
+  const youtubeUrl = frontmatter?.youtube as string | undefined
+  if (youtubeUrl) {
+    const shortMatch = YOUTUBE_SHORT_URL_REGEX.exec(youtubeUrl)
+    if (shortMatch) return shortMatch[1]
+    const longMatch = YOUTUBE_LONG_URL_REGEX.exec(youtubeUrl)
+    if (longMatch) return longMatch[1]
+  }
+  const shortMatch = YOUTUBE_SHORT_URL_REGEX.exec(text)
+  if (shortMatch) return shortMatch[1]
+  const longMatch = YOUTUBE_LONG_URL_REGEX.exec(text)
+  if (longMatch) return longMatch[1]
+  return undefined
+}
+
+export function resolveImagePath(imageRef: string, markdownFilePath: string, contentDir: string): string {
+  const markdownDir = path.dirname(markdownFilePath)
+  const resolved = path.resolve(markdownDir, imageRef)
+  if (resolved.includes(contentDir)) return resolved
+  return path.join(contentDir, imageRef)
+}
+
+const CONTENT_IMAGE_CACHE = new Map<string, string | undefined>()
+const CONTENT_IMAGE_TARGET_WIDTH = 480
+const CONTENT_IMAGE_TARGET_HEIGHT = 480
+
+export async function loadContentImageBase64(imagePath: string): Promise<string | undefined> {
+  const cached = CONTENT_IMAGE_CACHE.get(imagePath)
+  if (cached !== undefined) return cached
+  if (CONTENT_IMAGE_CACHE.has(imagePath)) return undefined
+
+  try {
+    await fs.access(imagePath)
+    const resized = await sharp(imagePath)
+      .resize(CONTENT_IMAGE_TARGET_WIDTH, CONTENT_IMAGE_TARGET_HEIGHT, { fit: "cover" })
+      .jpeg({ quality: 80 })
+      .toBuffer()
+    const base64 = `data:image/jpeg;base64,${resized.toString("base64")}`
+    CONTENT_IMAGE_CACHE.set(imagePath, base64)
+    return base64
+  } catch {
+    CONTENT_IMAGE_CACHE.set(imagePath, undefined)
+    return undefined
+  }
+}
+
+const YOUTUBE_THUMBNAIL_CACHE_DIR = path.join(QUARTZ, ".quartz-cache", "yt-thumbnails")
+
+export async function fetchYouTubeThumbnailBase64(videoId: string): Promise<string | undefined> {
+  const cacheDir = YOUTUBE_THUMBNAIL_CACHE_DIR
+  const cachePath = path.join(cacheDir, `${videoId}.jpg`)
+
+  try {
+    await fs.access(cachePath)
+    const data = await fs.readFile(cachePath)
+    const resized = await sharp(data)
+      .resize(CONTENT_IMAGE_TARGET_WIDTH, CONTENT_IMAGE_TARGET_HEIGHT, { fit: "cover" })
+      .jpeg({ quality: 80 })
+      .toBuffer()
+    return `data:image/jpeg;base64,${resized.toString("base64")}`
+  } catch {
+    // Cache miss - fetch from YouTube
+  }
+
+  const urls = [
+    `https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`,
+    `https://img.youtube.com/vi/${videoId}/hqdefault.jpg`,
+  ]
+
+  for (const url of urls) {
+    try {
+      const response = await fetch(url)
+      if (!response.ok) continue
+      const buffer = Buffer.from(await response.arrayBuffer())
+      const metadata = await sharp(buffer).metadata()
+      if (!metadata.width || metadata.width < 200) continue
+
+      await fs.mkdir(cacheDir, { recursive: true })
+      await fs.writeFile(cachePath, buffer)
+
+      const resized = await sharp(buffer)
+        .resize(CONTENT_IMAGE_TARGET_WIDTH, CONTENT_IMAGE_TARGET_HEIGHT, { fit: "cover" })
+        .jpeg({ quality: 80 })
+        .toBuffer()
+      return `data:image/jpeg;base64,${resized.toString("base64")}`
+    } catch {
+      continue
+    }
+  }
+  return undefined
 }
 
 // This is the default template for generated social image.
@@ -177,9 +295,11 @@ export const defaultImage: SocialImageOptions["imageStructure"] = ({
   description,
   fileData,
   iconBase64,
+  contentImageBase64,
 }) => {
   const { colorScheme } = userOpts
-  const fontBreakPoint = 32
+  const hasContentImage = !!contentImageBase64
+  const fontBreakPoint = hasContentImage ? 24 : 32
   const useSmallerFont = title.length > fontBreakPoint
 
   // Format date if available
@@ -239,7 +359,7 @@ export const defaultImage: SocialImageOptions["imageStructure"] = ({
           {cfg.baseUrl}
         </div>
 
-        {/* Left side - Date and Reading Time */}
+        {/* Date and Reading Time */}
         <div
           style={{
             display: "flex",
@@ -283,82 +403,149 @@ export const defaultImage: SocialImageOptions["imageStructure"] = ({
           </div>
         </div>
 
-        {/* Right side - Tags */}
-        <div
-          style={{
-            display: "flex",
-            gap: "0.5rem",
-            flexWrap: "wrap",
-            justifyContent: "flex-end",
-            maxWidth: "60%",
-          }}
-        >
-          {tags.slice(0, 3).map((tag: string) => (
-            <div
-              style={{
-                display: "flex",
-                padding: "0.5rem 1rem",
-                backgroundColor: cfg.theme.colors[colorScheme].highlight,
-                color: cfg.theme.colors[colorScheme].secondary,
-                borderRadius: "10px",
-                fontSize: 24,
-              }}
-            >
-              #{tag}
-            </div>
-          ))}
-        </div>
+        {/* Tags */}
+        {!hasContentImage && (
+          <div
+            style={{
+              display: "flex",
+              gap: "0.5rem",
+              flexWrap: "wrap",
+              justifyContent: "flex-end",
+              maxWidth: "60%",
+            }}
+          >
+            {tags.slice(0, 3).map((tag: string) => (
+              <div
+                style={{
+                  display: "flex",
+                  padding: "0.5rem 1rem",
+                  backgroundColor: cfg.theme.colors[colorScheme].highlight,
+                  color: cfg.theme.colors[colorScheme].secondary,
+                  borderRadius: "10px",
+                  fontSize: 24,
+                }}
+              >
+                #{tag}
+              </div>
+            ))}
+          </div>
+        )}
       </div>
 
-      {/* Title Section */}
-      <div
-        style={{
-          display: "flex",
-          marginTop: "1rem",
-          marginBottom: "1.5rem",
-        }}
-      >
-        <h1
-          style={{
-            margin: 0,
-            fontSize: useSmallerFont ? 64 : 72,
-            fontFamily: headerFont,
-            fontWeight: 700,
-            color: cfg.theme.colors[colorScheme].dark,
-            lineHeight: 1.2,
-            display: "-webkit-box",
-            WebkitBoxOrient: "vertical",
-            WebkitLineClamp: 2,
-            overflow: "hidden",
-            textOverflow: "ellipsis",
-          }}
-        >
-          {title}
-        </h1>
-      </div>
-
-      {/* Description Section */}
+      {/* Main Content: side-by-side when content image present */}
       <div
         style={{
           display: "flex",
           flex: 1,
-          fontSize: 36,
-          color: cfg.theme.colors[colorScheme].darkgray,
-          lineHeight: 1.4,
+          gap: hasContentImage ? "2rem" : "0",
+          marginTop: "1rem",
         }}
       >
-        <p
+        {/* Text Column */}
+        <div
           style={{
-            margin: 0,
-            display: "-webkit-box",
-            WebkitBoxOrient: "vertical",
-            WebkitLineClamp: 8,
-            overflow: "hidden",
-            textOverflow: "ellipsis",
+            display: "flex",
+            flexDirection: "column",
+            flex: hasContentImage ? "1" : "1",
+            minWidth: 0,
           }}
         >
-          {description}
-        </p>
+          {/* Title */}
+          <div style={{ display: "flex", marginBottom: "1rem" }}>
+            <h1
+              style={{
+                margin: 0,
+                fontSize: hasContentImage ? (useSmallerFont ? 48 : 56) : (useSmallerFont ? 64 : 72),
+                fontFamily: headerFont,
+                fontWeight: 700,
+                color: cfg.theme.colors[colorScheme].dark,
+                lineHeight: 1.2,
+                display: "-webkit-box",
+                WebkitBoxOrient: "vertical",
+                WebkitLineClamp: hasContentImage ? 3 : 2,
+                overflow: "hidden",
+                textOverflow: "ellipsis",
+              }}
+            >
+              {title}
+            </h1>
+          </div>
+
+          {/* Description */}
+          <div
+            style={{
+              display: "flex",
+              flex: 1,
+              fontSize: hasContentImage ? 28 : 36,
+              color: cfg.theme.colors[colorScheme].darkgray,
+              lineHeight: 1.4,
+            }}
+          >
+            <p
+              style={{
+                margin: 0,
+                display: "-webkit-box",
+                WebkitBoxOrient: "vertical",
+                WebkitLineClamp: hasContentImage ? 5 : 8,
+                overflow: "hidden",
+                textOverflow: "ellipsis",
+              }}
+            >
+              {description}
+            </p>
+          </div>
+
+          {/* Tags row (below text when content image present) */}
+          {hasContentImage && tags.length > 0 && (
+            <div
+              style={{
+                display: "flex",
+                gap: "0.5rem",
+                flexWrap: "wrap",
+                marginTop: "0.5rem",
+              }}
+            >
+              {tags.slice(0, 3).map((tag: string) => (
+                <div
+                  style={{
+                    display: "flex",
+                    padding: "0.25rem 0.75rem",
+                    backgroundColor: cfg.theme.colors[colorScheme].highlight,
+                    color: cfg.theme.colors[colorScheme].secondary,
+                    borderRadius: "8px",
+                    fontSize: 20,
+                  }}
+                >
+                  #{tag}
+                </div>
+              ))}
+            </div>
+          )}
+        </div>
+
+        {/* Content Image Column */}
+        {hasContentImage && contentImageBase64 && (
+          <div
+            style={{
+              display: "flex",
+              width: "420px",
+              minWidth: "420px",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
+          >
+            <img
+              src={contentImageBase64}
+              width={400}
+              height={400}
+              style={{
+                borderRadius: "16px",
+                objectFit: "cover",
+                border: `3px solid ${cfg.theme.colors[colorScheme].lightgray}`,
+              }}
+            />
+          </div>
+        )}
       </div>
     </div>
   )

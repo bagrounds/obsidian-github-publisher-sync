@@ -6,3 +6,9 @@ tsconfig.tsbuildinfo
 .last-generate-metadata.json
 attachments
 reflections
+
+# Haskell build artifacts
+haskell/dist-newstyle/
+haskell/.cabal-sandbox/
+*.hi
+*.o

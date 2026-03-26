@@ -15,6 +15,7 @@ import {
   buildFictionPrompt,
   parseFictionResponse,
   applyFiction,
+  buildFictionSignature,
 } from "./ai-fiction.ts";
 
 // --- Test Content ---
@@ -225,6 +226,18 @@ describe("parseFictionResponse", () => {
   });
 });
 
+describe("buildFictionSignature", () => {
+  it("formats model attribution line", () => {
+    const sig = buildFictionSignature("gemini-2.5-flash");
+    assert.equal(sig, "\n\n✍️ Written by gemini-2.5-flash");
+  });
+
+  it("handles any model name", () => {
+    const sig = buildFictionSignature("gemini-3.1-flash-lite-preview");
+    assert.ok(sig.includes("gemini-3.1-flash-lite-preview"));
+  });
+});
+
 describe("applyFiction", () => {
   it("inserts fiction before embed sections", () => {
     const updated = applyFiction(sampleReflection, "🏭 The factory hummed.");
@@ -282,6 +295,23 @@ describe("applyFiction", () => {
     assert.ok(headerIdx >= 0);
     assert.equal(lines[headerIdx + 1], "");
     assert.equal(lines[headerIdx + 2], "🏭 Fiction.");
+  });
+
+  it("includes model signature when model is provided", () => {
+    const updated = applyFiction("# Title\n", "🏭 Fiction.", "gemini-2.5-flash");
+    assert.ok(updated.includes("✍️ Written by gemini-2.5-flash"));
+  });
+
+  it("omits model signature when model is not provided", () => {
+    const updated = applyFiction("# Title\n", "🏭 Fiction.");
+    assert.ok(!updated.includes("✍️ Written by"));
+  });
+
+  it("places signature after fiction text", () => {
+    const updated = applyFiction("# Title\n", "🏭 Fiction.", "gemini-2.5-flash");
+    const fictionIdx = updated.indexOf("🏭 Fiction.");
+    const signatureIdx = updated.indexOf("✍️ Written by");
+    assert.ok(signatureIdx > fictionIdx, "signature should be after fiction text");
   });
 });
 

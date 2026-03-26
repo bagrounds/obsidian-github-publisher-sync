@@ -125,11 +125,19 @@ export const parseFictionResponse = (raw: string): string =>
     .trim();
 
 /**
+ * Build the model signature line appended after the fiction text.
+ */
+export const buildFictionSignature = (model: string): string =>
+  `\n\n✍️ Written by ${model}`;
+
+/**
  * Insert an AI Fiction section into the reflection note content.
  * Places it just before the first embed section, or at the end.
+ * Includes a model signature line after the fiction text.
  */
-export const applyFiction = (content: string, fiction: string): string => {
-  const sectionBlock = `${FICTION_SECTION_HEADER}\n\n${fiction}`;
+export const applyFiction = (content: string, fiction: string, model?: string): string => {
+  const signature = model ? buildFictionSignature(model) : "";
+  const sectionBlock = `${FICTION_SECTION_HEADER}\n\n${fiction}${signature}`;
 
   // Find the first embed section to insert before
   const embedIndices = EMBED_HEADERS
@@ -240,7 +248,7 @@ export const generateFiction = async (
   const prompt = buildFictionPrompt(stripped);
   const { text, model } = await callGeminiModelChain(config.apiKey, config.models, prompt);
   const fiction = parseFictionResponse(text);
-  const updatedContent = applyFiction(config.noteContent, fiction);
+  const updatedContent = applyFiction(config.noteContent, fiction, model);
 
   return { fiction, model, updatedContent };
 };

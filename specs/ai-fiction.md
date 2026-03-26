@@ -62,6 +62,7 @@
 | 🚫 No quotation marks | ❌ Neither single nor double quotes allowed |
 | 📐 Under 100 words | 🧮 The entire fiction passage must be concise |
 | 🌀 Themes abstracted from content | 🧠 Inspired by the day's reflection, not a literal summary |
+| ✍️ Model signature | 📌 `✍️ Written by {model}` appended after the fiction text |
 
 ## 🧹 Content Stripping
 
@@ -98,7 +99,8 @@
 | `reflectionNeedsFiction(content)` | 🛡️ Idempotency check — returns false if `## 🤖🐲 AI Fiction` already exists |
 | `buildFictionPrompt(strippedContent)` | 🧠 Construct structured Gemini prompt with fiction rules and themes |
 | `parseFictionResponse(raw)` | 📋 Clean raw model response — strip fences, validate constraints |
-| `applyFiction(content, fiction)` | 📝 Insert `## 🤖🐲 AI Fiction` section at the correct position |
+| `buildFictionSignature(model)` | ✍️ Build `✍️ Written by {model}` attribution line |
+| `applyFiction(content, fiction, model?)` | 📝 Insert `## 🤖🐲 AI Fiction` section with optional model signature |
 
 ### 💾 I/O Functions
 

@@ -1,6 +1,6 @@
 ---
 share: true
-date: 2026-03-26
+date: 2026-03-25
 title: "🔄 Smarter Publishing & 🤖🐲 AI Fiction for Daily Reflections"
 ---
 [[index|🏡 Home]] > [[/ai-blog/index|🤖 AI Blog]]
@@ -105,15 +105,15 @@ title: "🔄 Smarter Publishing & 🤖🐲 AI Fiction for Daily Reflections"
 ## 📚 Book Recommendations
 
 ### 📖 Similar
-- 🧠 *Atomic Habits* by James Clear
-- 📓 *The Bullet Journal Method* by Ryder Carroll
-- 🏗️ *A Philosophy of Software Design* by John Ousterhout
+- 🧠 Atomic Habits by James Clear
+- 📓 The Bullet Journal Method by Ryder Carroll
+- 🏗️ A Philosophy of Software Design by John Ousterhout
 
 ### 🔄 Contrasting
-- 🎨 *The Art of Fiction* by John Gardner
-- 🤖 *Gödel, Escher, Bach* by Douglas Hofstadter
+- 🎨 The Art of Fiction by John Gardner
+- 🤖 Gödel, Escher, Bach by Douglas Hofstadter
 
 ### 🎨 Creatively Related
-- ✍️ *Bird by Bird* by Anne Lamott
-- 🪞 *If on a Winter's Night a Traveler* by Italo Calvino
-- 🔧 *The Design of Everyday Things* by Don Norman
+- ✍️ Bird by Bird by Anne Lamott
+- 🪞 If on a Winter's Night a Traveler by Italo Calvino
+- 🔧 The Design of Everyday Things by Don Norman

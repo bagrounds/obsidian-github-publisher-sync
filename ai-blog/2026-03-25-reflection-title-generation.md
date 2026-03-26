@@ -71,7 +71,7 @@ title: 🪞 Automated Reflection Title Generation with Gemini AI
 | 🔧 Feature | 📝 Description |
 |-------------|----------------|
 | 🔄 Retry logic | ♻️ Reuses `isRetriableError` from `generate-blog-post.ts` |
-| 🤖 Model chain | 🏆 gemini-2.5-flash (best) → gemini-2.5-flash-lite → gemini-3.1-flash-lite-preview |
+| 🤖 Model chain | 🏆 gemini-3.1-flash-lite-preview (best) → gemini-2.5-flash → gemini-2.5-flash-lite |
 | ⏳ Backoff | 🔁 Exponential backoff (2s, 4s, 8s) on transient errors, 3 retries per model |
 | ⚙️ Env override | 🔧 `REFLECTION_TITLE_MODEL` prepends to the chain |
 

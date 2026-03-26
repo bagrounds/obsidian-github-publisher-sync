@@ -24,7 +24,7 @@ import { isRetriableError } from "../generate-blog-post.ts";
 // Constants
 // ---------------------------------------------------------------------------
 
-export const DEFAULT_TITLE_MODEL = "gemini-2.5-flash";
+export const DEFAULT_TITLE_MODEL = "gemini-3.1-flash-lite-preview";
 
 const GEMINI_MAX_RETRIES = 3;
 const GEMINI_BASE_DELAY_MS = 2_000;

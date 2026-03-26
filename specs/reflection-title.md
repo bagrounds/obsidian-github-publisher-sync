@@ -69,8 +69,8 @@ Leading emojis from each H2 heading are extracted and appended. For example:
 
 ## Model Configuration
 
-- **Default model chain**: `gemini-2.5-flash` → `gemini-2.5-flash-lite` →
-  `gemini-3.1-flash-lite-preview` (best model first)
+- **Default model chain**: `gemini-3.1-flash-lite-preview` → `gemini-2.5-flash` →
+  `gemini-2.5-flash-lite` (best model first)
 - **Environment override**: `REFLECTION_TITLE_MODEL` prepends a model to the
   chain
 - **Retry**: Reuses `isRetriableError` from `generate-blog-post.ts` for

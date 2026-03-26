@@ -1,0 +1,147 @@
+cabal-version:       3.0
+name:                automation
+version:             0.1.0.0
+synopsis:            Haskell port of obsidian-github-publisher-sync automation scripts
+license:             MIT
+build-type:          Simple
+
+common shared
+  default-language:    Haskell2010
+  default-extensions:
+    OverloadedStrings
+    DeriveGeneric
+    DeriveAnyClass
+    RecordWildCards
+    ScopedTypeVariables
+    TypeApplications
+    LambdaCase
+    TupleSections
+    NamedFieldPuns
+  ghc-options:
+    -Wall
+    -Wcompat
+    -Widentities
+    -Wincomplete-record-updates
+    -Wincomplete-uni-patterns
+    -Wpartial-fields
+    -Wredundant-constraints
+
+library
+  import:              shared
+  hs-source-dirs:      src
+  exposed-modules:
+    Automation.Types
+    Automation.Env
+    Automation.Scheduler
+    Automation.Text
+    Automation.Html
+    Automation.Frontmatter
+    Automation.Retry
+    Automation.Timer
+    Automation.Gemini
+    Automation.BlogSeriesConfig
+    Automation.BlogPosts
+    Automation.BlogPrompt
+    Automation.BlogSeries
+    Automation.DailyReflection
+    Automation.DailyUpdates
+    Automation.EmbedSection
+    Automation.Prompts
+    Automation.ReflectionTitle
+    Automation.AiBlogLinks
+    Automation.AiFiction
+    Automation.BlogComments
+    Automation.GcpAuth
+    Automation.ObsidianSync
+    Automation.StaticGiscus
+    Automation.BlogImage
+    Automation.InternalLinking
+    Automation.Pipeline
+    Automation.GeminiQuota
+    Automation.Platforms.Twitter
+    Automation.Platforms.Bluesky
+    Automation.Platforms.Mastodon
+    Automation.Platforms.OgMetadata
+  build-depends:
+    base                 >= 4.18 && < 5,
+    text                 >= 2.0,
+    bytestring           >= 0.11,
+    containers           >= 0.6,
+    unordered-containers >= 0.2,
+    vector               >= 0.13,
+    aeson                >= 2.1,
+    yaml                 >= 0.11,
+    time                 >= 1.12,
+    directory            >= 1.3,
+    filepath             >= 1.4,
+    process              >= 1.6,
+    http-client          >= 0.7,
+    http-client-tls      >= 0.3,
+    http-types           >= 0.12,
+    regex-tdfa           >= 1.3,
+    optparse-applicative >= 0.17,
+    crypton              >= 0.34,
+    memory               >= 0.18,
+    base64-bytestring    >= 1.2,
+    mtl                  >= 2.3,
+    transformers         >= 0.6,
+    async                >= 2.2,
+    stm                  >= 2.5,
+    random               >= 1.2,
+    uuid                 >= 1.3,
+    case-insensitive     >= 1.2
+
+executable run-scheduled
+  import:              shared
+  hs-source-dirs:      app
+  main-is:             Main.hs
+  other-modules:       InjectGiscus
+  build-depends:
+    base,
+    automation,
+    text,
+    optparse-applicative
+
+executable inject-giscus
+  import:              shared
+  hs-source-dirs:      app
+  main-is:             InjectGiscus.hs
+  build-depends:
+    base,
+    automation,
+    text
+
+test-suite automation-tests
+  import:              shared
+  type:                exitcode-stdio-1.0
+  hs-source-dirs:      test
+  main-is:             Spec.hs
+  other-modules:
+    Automation.SchedulerTest
+    Automation.TextTest
+    Automation.HtmlTest
+    Automation.FrontmatterTest
+    Automation.RetryTest
+    Automation.TimerTest
+    Automation.EnvTest
+    Automation.BlogSeriesConfigTest
+    Automation.EmbedSectionTest
+    Automation.DailyReflectionTest
+    Automation.AiBlogLinksTest
+    Automation.AiFictionTest
+    Automation.PromptsTest
+    Automation.ReflectionTitleTest
+  build-depends:
+    base,
+    automation,
+    tasty                >= 1.4,
+    tasty-hunit          >= 0.10,
+    tasty-quickcheck     >= 0.10,
+    QuickCheck           >= 2.14,
+    text,
+    containers,
+    time,
+    directory,
+    filepath,
+    temporary            >= 1.3,
+    bytestring

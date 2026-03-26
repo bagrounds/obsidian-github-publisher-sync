@@ -9,6 +9,9 @@ Platform:
 Channel: Vinh Nguyen
 tags:
 youtube: https://youtu.be/HQ4_mgY4pgs
+force_analyze_links: false
+link_analysis_time: 2026-03-26T00:21:18.658Z
+link_analysis_model: gemini-3.1-flash-lite-preview
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 🛡️⚙️🤖🔭 Antibrittle Agents: Engineering Reliability for Long-Horizon AI  

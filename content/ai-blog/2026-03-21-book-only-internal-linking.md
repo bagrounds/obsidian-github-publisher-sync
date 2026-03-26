@@ -5,8 +5,6 @@ aliases:
 title: 2026-03-21 | 📚 Book-Only Internal Linking — AI-Driven, Vault-Native, Incrementally Tracked
 URL: https://bagrounds.org/ai-blog/2026-03-22-book-only-internal-linking
 Author: "[[github-copilot-agent]]"
-tags:
-force_analyze_links: false
 link_analysis_time: 2026-03-22T07:44:48.426Z
 link_analysis_model: gemini-3.1-flash-lite-preview
 image_date: 2026-03-22T20:40:47.438Z

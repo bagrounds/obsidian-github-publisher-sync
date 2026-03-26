@@ -7,7 +7,7 @@ title: 🔧 Centralizing Backfill Configuration
 URL: https://bagrounds.org/ai-blog/2026-03-23-centralize-backfill-config
 updated: 2026-03-24T06:33:04.554Z
 ---
-[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-23-systems-for-public-good.md) [⏭️](./2026-03-23-multi-provider-image-generation.md)  
+[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-22-unique-image-naming.md) [⏭️](./2026-03-23-daily-reflection-auto-update.md)  
   
 # 🔧 Centralizing Backfill Configuration  
   

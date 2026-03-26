@@ -12,6 +12,7 @@ import {
   resolveImagePath,
   loadContentImageBase64,
   fetchYouTubeThumbnailBase64,
+  hashImageFile,
 } from "../../util/og"
 import sharp from "sharp"
 import satori, { SatoriOptions } from "satori"
@@ -135,6 +136,7 @@ async function processOgImage(
   fileData: QuartzPluginData,
   fonts: SatoriOptions["fonts"],
   fullOptions: SocialImageOptions,
+  rawContent: string,
 ): Promise<{ path: FilePath; cacheHit: boolean }> {
   const cfg = ctx.cfg.configuration
   const slug = fileData.slug!
@@ -147,11 +149,16 @@ async function processOgImage(
     unescapeHTML(fileData.description?.trim() ?? i18n(cfg.locale).propertyDefaults.description)
   const tags = fileData.frontmatter?.tags ?? []
   const date = fileData.frontmatter?.date?.toString()
-  const text = fileData.text ?? ""
 
-  const localImageRef = extractFirstLocalImageRef(text)
-  const youtubeVideoId = extractYouTubeVideoId(fileData.frontmatter as Record<string, unknown> | undefined, text)
-  const contentImageRef = localImageRef ?? (youtubeVideoId ? `yt:${youtubeVideoId}` : undefined)
+  const localImageRef = extractFirstLocalImageRef(rawContent)
+  const youtubeVideoId = extractYouTubeVideoId(fileData.frontmatter as Record<string, unknown> | undefined, rawContent)
+
+  const imagePath = localImageRef && fileData.filePath
+    ? resolveImagePath(localImageRef, fileData.filePath, ctx.argv.directory)
+    : undefined
+  const contentImageHash = imagePath
+    ? await hashImageFile(imagePath)
+    : youtubeVideoId ? `yt:${youtubeVideoId}` : undefined
 
   const cacheKey = computeOgHash(
     title,
@@ -161,7 +168,7 @@ async function processOgImage(
     fullOptions.colorScheme,
     fullOptions.width,
     fullOptions.height,
-    contentImageRef,
+    contentImageHash,
   )
   const cachePath = path.join(OG_CACHE_DIR, `${cacheKey}.webp`)
   const outputSlug = `${slug}-og-image` as FullSlug
@@ -183,8 +190,7 @@ async function processOgImage(
   }
 
   let contentImageBase64: string | undefined
-  if (localImageRef && fileData.filePath) {
-    const imagePath = resolveImagePath(localImageRef, fileData.filePath, ctx.argv.directory)
+  if (imagePath) {
     contentImageBase64 = await loadContentImageBase64(imagePath)
   } else if (youtubeVideoId) {
     contentImageBase64 = await fetchYouTubeThumbnailBase64(youtubeVideoId)
@@ -293,7 +299,8 @@ export const CustomOgImages: QuartzEmitterPlugin<Partial<SocialImageOptions>> = 
       // Use semaphore-based concurrency: up to OG_CONCURRENCY tasks run at once,
       // each finishing task immediately allows the next to start
       const tasks = items.map(
-        ([_tree, vfile]) => () => processOgImage(ctx, vfile.data, fonts, fullOptions),
+        ([_tree, vfile]) => () =>
+          processOgImage(ctx, vfile.data, fonts, fullOptions, String(vfile.value ?? "")),
       )
 
       for await (const result of runWithConcurrency(tasks, OG_CONCURRENCY)) {
@@ -330,7 +337,13 @@ export const CustomOgImages: QuartzEmitterPlugin<Partial<SocialImageOptions>> = 
 
       const tasks = items.map(
         (changeEvent) => () =>
-          processOgImage(ctx, changeEvent.file!.data, fonts, fullOptions),
+          processOgImage(
+            ctx,
+            changeEvent.file!.data,
+            fonts,
+            fullOptions,
+            String(changeEvent.file!.value ?? ""),
+          ),
       )
 
       for await (const result of runWithConcurrency(tasks, OG_CONCURRENCY)) {

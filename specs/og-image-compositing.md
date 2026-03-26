@@ -46,7 +46,7 @@
 
 ### 📎 Local Image Extraction
 
-🔍 The system scans `fileData.text` (raw markdown) for the first local image reference:
+🔍 The system scans the VFile raw markdown (`vfile.value`) for the first local image reference. Note: `fileData.text` is plain text extracted from the HTML AST by the Description transformer, which strips all image syntax. The raw markdown from `vfile.value` preserves the original image references needed for extraction.
 
 1. **Markdown image syntax**: `![alt](../relative/path.jpg)` — must not be an HTTP URL
 2. **Obsidian wiki-link syntax**: `![[image.jpg]]` or `![[attachments/image.png]]`
@@ -119,10 +119,10 @@
 The OG image cache hash includes:
 - Title, description, tags, date
 - Color scheme, width, height
-- **Content image reference** (local path or `yt:{videoId}`)
+- **Content image hash** — SHA256 of the actual image file content (16-char hex prefix) for local images, or `yt:{videoId}` for YouTube thumbnails
 - Cache version number
 
-📝 When a note's embedded image changes, the cache key changes, triggering regeneration.
+📝 When a note's embedded image content changes (even if the file name stays the same), the cache key changes, triggering regeneration automatically. No manual cache version bumps needed for image changes.
 
 ### 💾 Cache Layers
 

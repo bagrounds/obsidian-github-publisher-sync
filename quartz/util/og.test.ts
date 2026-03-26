@@ -1,6 +1,9 @@
 import test, { describe } from "node:test"
 import assert from "node:assert"
-import { extractFirstLocalImageRef, extractYouTubeVideoId, resolveImagePath } from "./og"
+import { extractFirstLocalImageRef, extractYouTubeVideoId, resolveImagePath, hashImageFile } from "./og"
+import { promises as fs } from "fs"
+import path from "path"
+import os from "os"
 
 describe("extractFirstLocalImageRef", () => {
   test("extracts markdown image with relative path", () => {
@@ -145,5 +148,48 @@ describe("resolveImagePath", () => {
       "/home/user/content",
     )
     assert.strictEqual(result, "/home/user/content/ai-blog-2026-03-14-the-spa-that-cried-404.jpg")
+  })
+})
+
+describe("hashImageFile", () => {
+  const tmpDir = path.join(os.tmpdir(), "og-test-images")
+
+  test("returns a 16-char hex hash for a valid file", async () => {
+    await fs.mkdir(tmpDir, { recursive: true })
+    const filePath = path.join(tmpDir, "test-image.bin")
+    await fs.writeFile(filePath, "fake image data")
+    const hash = await hashImageFile(filePath)
+    assert.ok(hash)
+    assert.strictEqual(hash!.length, 16)
+    assert.match(hash!, /^[0-9a-f]{16}$/)
+  })
+
+  test("returns undefined for a missing file", async () => {
+    const hash = await hashImageFile(path.join(tmpDir, "nonexistent.jpg"))
+    assert.strictEqual(hash, undefined)
+  })
+
+  test("returns different hashes for different content", async () => {
+    await fs.mkdir(tmpDir, { recursive: true })
+    const fileA = path.join(tmpDir, "a.bin")
+    const fileB = path.join(tmpDir, "b.bin")
+    await fs.writeFile(fileA, "content A")
+    await fs.writeFile(fileB, "content B")
+    const hashA = await hashImageFile(fileA)
+    const hashB = await hashImageFile(fileB)
+    assert.ok(hashA)
+    assert.ok(hashB)
+    assert.notStrictEqual(hashA, hashB)
+  })
+
+  test("returns same hash for identical content", async () => {
+    await fs.mkdir(tmpDir, { recursive: true })
+    const fileA = path.join(tmpDir, "same1.bin")
+    const fileB = path.join(tmpDir, "same2.bin")
+    await fs.writeFile(fileA, "identical content")
+    await fs.writeFile(fileB, "identical content")
+    const hashA = await hashImageFile(fileA)
+    const hashB = await hashImageFile(fileB)
+    assert.strictEqual(hashA, hashB)
   })
 })

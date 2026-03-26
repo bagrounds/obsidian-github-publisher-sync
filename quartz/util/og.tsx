@@ -11,6 +11,7 @@ import readingTime from "reading-time"
 import { i18n } from "../i18n"
 import chalk from "chalk"
 import sharp from "sharp"
+import { createHash } from "crypto"
 
 const defaultHeaderWeight = [700]
 const defaultBodyWeight = [400]
@@ -215,6 +216,15 @@ export function resolveImagePath(imageRef: string, markdownFilePath: string, con
   const resolved = path.resolve(markdownDir, imageRef)
   if (resolved.includes(contentDir)) return resolved
   return path.join(contentDir, imageRef)
+}
+
+export async function hashImageFile(imagePath: string): Promise<string | undefined> {
+  try {
+    const data = await fs.readFile(imagePath)
+    return createHash("sha256").update(data).digest("hex").slice(0, 16)
+  } catch {
+    return undefined
+  }
 }
 
 const CONTENT_IMAGE_CACHE = new Map<string, string | undefined>()

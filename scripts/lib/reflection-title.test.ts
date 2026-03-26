@@ -368,14 +368,14 @@ describe("applyReflectionTitle", () => {
 
   it("updates frontmatter title field", () => {
     const result = applyReflectionTitle(SAMPLE_REFLECTION, "2026-03-24", creativeTitle);
-    assert.ok(result.includes("title: 2026-03-24 | 🌌 Peace"));
+    assert.ok(result.includes('title: "2026-03-24 | 🌌 Peace'));
   });
 
   it("updates frontmatter aliases to match new title", () => {
     const result = applyReflectionTitle(SAMPLE_REFLECTION, "2026-03-24", creativeTitle);
     assert.ok(result.includes("2026-03-24 | 🌌 Peace"));
     // Verify it appears in the aliases section (YAML array)
-    const aliasLine = result.split("\n").find((l) => l.includes("- 2026-03-24 |"));
+    const aliasLine = result.split("\n").find((l) => l.includes('"2026-03-24 |'));
     assert.ok(aliasLine, "Should have alias with creative title");
   });
 

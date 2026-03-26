@@ -962,7 +962,7 @@ describe("updateFrontmatterTimestamp", () => {
     updateFrontmatterTimestamp(filePath, "2026-03-19T12:00:00Z");
 
     const content = fs.readFileSync(filePath, "utf-8");
-    assert.ok(content.includes("updated: 2026-03-19T12:00:00Z"));
+    assert.ok(content.includes('updated: "2026-03-19T12:00:00Z"'));
     assert.ok(!content.includes("2026-01-01"));
   });
 
@@ -973,7 +973,7 @@ describe("updateFrontmatterTimestamp", () => {
     updateFrontmatterTimestamp(filePath, "2026-03-19T12:00:00Z");
 
     const content = fs.readFileSync(filePath, "utf-8");
-    assert.ok(content.includes("updated: 2026-03-19T12:00:00Z"));
+    assert.ok(content.includes('updated: "2026-03-19T12:00:00Z"'));
   });
 
   it("adds frontmatter when none exists", () => {
@@ -983,7 +983,7 @@ describe("updateFrontmatterTimestamp", () => {
     updateFrontmatterTimestamp(filePath, "2026-03-19T12:00:00Z");
 
     const content = fs.readFileSync(filePath, "utf-8");
-    assert.ok(content.startsWith("---\nupdated: 2026-03-19T12:00:00Z\n---"));
+    assert.ok(content.startsWith('---\nupdated: "2026-03-19T12:00:00Z"\n---'));
   });
 
   it("handles nonexistent file gracefully", () => {
@@ -999,7 +999,7 @@ describe("updateFrontmatterTimestamp", () => {
     updateFrontmatterTimestamp(filePath, "2026-03-19T12:00:00Z");
 
     const content = fs.readFileSync(filePath, "utf-8");
-    assert.ok(content.includes("updated: 2026-03-19T12:00:00Z"));
+    assert.ok(content.includes('updated: "2026-03-19T12:00:00Z"'));
     const updatedCount = (content.match(/^updated:/gm) ?? []).length;
     assert.equal(updatedCount, 1, "should have exactly one updated field");
   });
@@ -1336,9 +1336,9 @@ describe("updateFrontmatterFields", () => {
       image_date: "2026-03-21",
       image_model: "test-model",
     });
-    assert.ok(result.includes("image_date: 2026-03-21"));
-    assert.ok(result.includes("image_model: test-model"));
-    assert.ok(result.includes("title: Test"));
+    assert.ok(result.includes('image_date: "2026-03-21"'));
+    assert.ok(result.includes('image_model: "test-model"'));
+    assert.ok(result.includes('title: "Test"'));
   });
 
   it("updates existing fields", () => {
@@ -1346,8 +1346,8 @@ describe("updateFrontmatterFields", () => {
     const result = updateFrontmatterFields(content, {
       image_date: "new",
     });
-    assert.ok(result.includes("image_date: new"));
-    assert.ok(!result.includes("image_date: old"));
+    assert.ok(result.includes('image_date: "new"'));
+    assert.ok(!result.includes('image_date: "old"'));
   });
 
   it("creates frontmatter when none exists", () => {
@@ -1355,7 +1355,7 @@ describe("updateFrontmatterFields", () => {
     const result = updateFrontmatterFields(content, {
       image_model: "test-model",
     });
-    assert.ok(result.startsWith("---\nimage_model: test-model\n---"));
+    assert.ok(result.startsWith('---\nimage_model: "test-model"\n---'));
   });
 
   it("quotes values with special YAML characters via js-yaml", () => {
@@ -1391,7 +1391,7 @@ describe("updateFrontmatterFields", () => {
     const result = updateFrontmatterFields(content, {
       image_prompt: "new value",
     });
-    assert.ok(result.includes("image_prompt: new value"));
+    assert.ok(result.includes('image_prompt: "new value"'));
     const promptCount = (result.match(/^image_prompt:/gm) ?? []).length;
     assert.equal(promptCount, 1, "should have exactly one image_prompt field");
   });
@@ -1403,7 +1403,7 @@ describe("updateFrontmatterFields", () => {
     });
     assert.ok(result.includes("alias1"));
     assert.ok(result.includes("alias2"));
-    assert.ok(result.includes("image_model: test-model"));
+    assert.ok(result.includes('image_model: "test-model"'));
   });
 
   it("preserves empty tags field", () => {
@@ -1513,7 +1513,7 @@ describe("processNote with regeneration", () => {
 
     const updated = fs.readFileSync(notePath, "utf-8");
     assert.ok(updated.includes("image_date:"));
-    assert.ok(updated.includes("image_model: fake-model"));
+    assert.ok(updated.includes('image_model: "fake-model"'));
     assert.ok(updated.includes("image_prompt:"));
   });
 

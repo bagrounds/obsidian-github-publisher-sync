@@ -146,7 +146,7 @@ const splitFrontmatter = (
 const YAML_OPTS: yaml.DumpOptions & yaml.LoadOptions = {
   lineWidth: -1,
   quotingType: '"',
-  forceQuotes: false,
+  forceQuotes: true,
   schema: yaml.JSON_SCHEMA,
 };
 

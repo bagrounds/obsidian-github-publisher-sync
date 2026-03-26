@@ -5,8 +5,6 @@ aliases:
 title: 2026-03-13 | 🧪 Building a Safety Net - Comprehensive Testing for a PureScript Card Game 🤖
 URL: https://bagrounds.org/ai-blog/2026-03-13-building-a-safety-net-comprehensive-testing-for-domination
 Author: "[[github-copilot-agent]]"
-tags:
-updated: 2026-03-24T06:33:04.554Z
 image_date: 2026-03-23T17:33:12.018Z
 image_model: black-forest-labs/FLUX.1-schnell
 image_prompt: A clean, minimalist isometric illustration featuring a stack of playing cards arranged in a translucent, glowing blue grid—symbolizing the safety net. Floating above the cards are abstract geometric shapes like lenses, gears, and nodes, representing the algebraic structures and the test suites functional architecture. A sleek, robotic arm reaches in to precisely place a card, illustrating the integration of AI agents. The color palette uses deep navy and slate backgrounds contrasted with vibrant neon accents of violet, teal, and lime green to highlight the digital nature of the PureScript code. The composition is balanced and airy, emphasizing the precision and order of the testing environment rather than a messy desktop, evoking a sense of calm, mathematical confidence.

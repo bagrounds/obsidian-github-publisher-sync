@@ -12,7 +12,7 @@ updated: 2026-03-25T23:09:53-07:00
 # 🤖 AI Blog (54)  
 - [🪞 Teaching Gemini to Write Sentences, Not Word Salad](./2026-03-25-reflection-title-generation.md)  
 - [🔄 Smarter Publishing & 🤖🐲 AI Fiction for Daily Reflections](./2026-03-25-daily-updates-and-ai-fiction.md)  
-- [2026-03-24-steady-drip-backfilling](../../2026-03-24-steady-drip-backfilling.md)  
+- [💧 The Steady Drip: Fixing Image Backfill](./2026-03-24-steady-drip-backfilling.md)  
 - [🗓️ One Cron to Rule Them All](./2026-03-24-one-cron-to-rule-them-all.md)  
 - [🤝 Together AI — Adding a Third Free-Tier Provider](./2026-03-23-together-ai-provider.md)  
 - [🏛️ Launching Systems for Public Good](./2026-03-23-systems-for-public-good.md)  

@@ -79,11 +79,33 @@ Pacific before making decisions via `nowPacificHour()`.
 
 | 🏷️ Series | 🤖 Model Chain (in order) | 👤 Priority User Env Var |
 |---|---|---|
-| `chickie-loo` | gemini-3.1-flash-lite-preview → gemini-2.5-flash → gemini-2.5-flash-lite | `CHICKIE_LOO_PRIORITY_USER` |
-| `auto-blog-zero` | gemini-3.1-flash-lite-preview → gemini-2.5-flash → gemini-2.5-flash-lite | `AUTO_BLOG_ZERO_PRIORITY_USER` |
-| `systems-for-public-good` | gemini-2.5-flash → gemini-2.5-flash-lite → gemini-3.1-flash-lite-preview | `SYSTEMS_FOR_PUBLIC_GOOD_PRIORITY_USER` |
+| `chickie-loo` | gemini-3.1-flash-lite-preview → gemini-3-flash-preview | `CHICKIE_LOO_PRIORITY_USER` |
+| `auto-blog-zero` | gemini-3.1-flash-lite-preview → gemini-3-flash-preview | `AUTO_BLOG_ZERO_PRIORITY_USER` |
+| `systems-for-public-good` | gemini-3.1-flash-lite-preview → gemini-3-flash-preview | `SYSTEMS_FOR_PUBLIC_GOOD_PRIORITY_USER` |
+
+🔒 Blog series are restricted to Gemini 3+ models only. The 2.5 series models produced lower quality blog posts.
+⚠️ Grounding with Google Search is not available on the free tier for 3.1+ models.
 
 🔄 The `BLOG_GEMINI_MODEL` GitHub variable prepends to the chain when set.
+
+## ♻️ Blog Post Regeneration
+
+🔄 Users can request regeneration of a blog post by setting `regenerate_post: true` in the post's YAML frontmatter from Obsidian. On the next hourly run, the scheduler detects the flag, removes the old post, and generates a fresh one.
+
+### 📋 How It Works
+
+1. 📱 In Obsidian, toggle the `regenerate_post` property to `true` on the post to regenerate
+2. 🔄 Obsidian syncs the change to the vault
+3. ⏰ On the next hourly cron run, `findPostToRegenerate()` detects the flag
+4. 🗑️ The old post is removed from the local repo
+5. ✨ A new post is generated (without `regenerate_post` in its frontmatter)
+6. 📤 The new post is synced back to Obsidian, replacing the old one
+
+### 🛡️ Safety Properties
+
+🚫 Newly generated posts never include `regenerate_post`, preventing infinite regeneration loops.
+📅 Only today's post can be regenerated — the flag is ignored on posts from other dates.
+🔒 The flag is only checked in the YAML frontmatter block, not in the body content.
 
 ## 🛡️ API Resilience
 

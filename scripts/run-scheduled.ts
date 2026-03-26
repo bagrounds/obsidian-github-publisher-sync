@@ -26,6 +26,7 @@ import {
   isValidTaskId,
   BLOG_SERIES_RUN_CONFIGS,
   blogPostExistsForToday,
+  findPostToRegenerate,
   nowPacificHour,
   type TaskId,
 } from "./lib/scheduler.ts";
@@ -147,9 +148,13 @@ const runBlogSeries = async (seriesId: string): Promise<void> => {
   const vaultDir = await syncObsidianVault({ authToken, vaultName });
   copySeriesPosts(vaultDir, seriesId, REPO_ROOT);
 
-  // 2. Check if today's post already exists (idempotent "at or after" scheduling)
+  // 2. Check if today's post needs regeneration or already exists
   const seriesDir = path.join(REPO_ROOT, seriesId);
-  if (blogPostExistsForToday(seriesDir, today)) {
+  const postToRegenerate = findPostToRegenerate(seriesDir, today);
+  if (postToRegenerate) {
+    console.log(`  ♻️  Regeneration requested for ${postToRegenerate} — removing old post`);
+    fs.unlinkSync(path.join(seriesDir, postToRegenerate));
+  } else if (blogPostExistsForToday(seriesDir, today)) {
     console.log(`  ⏭️  Already generated for ${today}`);
     return;
   }

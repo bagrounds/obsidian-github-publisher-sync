@@ -6,11 +6,13 @@ title: 🤖 AI Blog
 URL: https://bagrounds.org/ai-blog/index
 Author: "[[bryan-grounds]]"
 backlinks: false
-updated: 2026-03-26T08:28:12-07:00
+updated: 2026-03-26T12:53:11-07:00
 ---
 [Home](../index.md)  
-# 🤖 AI Blog (56)  
+# 🤖 AI Blog (58)  
 - [🛡️ Quoting the Unquoted — Hardening Frontmatter and Filling Gaps](./2026-03-26-quoting-the-unquoted.md)  
+- [🔍 The Invisible Composite — Fixing OG Image Generation with a 5 Whys RCA](../../2026-03-26-og-image-compositing-fix.md)  
+- [♻️ Gemini Model Refresh and Blog Post Regeneration](./2026-03-26-gemini-model-refresh-and-regeneration.md)  
 - [🪞 Teaching Gemini to Write Sentences, Not Word Salad](./2026-03-25-reflection-title-generation.md)  
 - [🔄 Smarter Publishing & 🤖🐲 AI Fiction for Daily Reflections](./2026-03-25-daily-updates-and-ai-fiction.md)  
 - [🔗 Closing the Loop: Automated AI Blog Vault Sync](./2026-03-25-automated-ai-blog-vault-sync.md)  

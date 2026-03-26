@@ -3,6 +3,7 @@ import assert from "node:assert"
 import { extractFirstLocalImageRef, extractYouTubeVideoId, resolveImagePath, hashImageFile } from "./og"
 import { promises as fs } from "fs"
 import path from "path"
+import os from "os"
 
 describe("extractFirstLocalImageRef", () => {
   test("extracts markdown image with relative path", () => {
@@ -151,7 +152,7 @@ describe("resolveImagePath", () => {
 })
 
 describe("hashImageFile", () => {
-  const tmpDir = path.join("/tmp", "og-test-images")
+  const tmpDir = path.join(os.tmpdir(), "og-test-images")
 
   test("returns a 16-char hex hash for a valid file", async () => {
     await fs.mkdir(tmpDir, { recursive: true })

@@ -4,10 +4,10 @@ aliases:
   - History Professor Answers Dictator Questions | Tech Support | WIRED
 title: History Professor Answers Dictator Questions | Tech Support | WIRED
 URL: https://youtube.com/watch?v=vK6fALsenmw
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: WIRED
-tags: 
+tags:
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # History Professor Answers Dictator Questions | Tech Support | WIRED  

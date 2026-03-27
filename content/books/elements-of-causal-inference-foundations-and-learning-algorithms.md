@@ -4,8 +4,8 @@ aliases:
   - "❓➡️💡🧮 Elements of Causal Inference: Foundations and Learning Algorithms"
 title: "❓➡️💡🧮 Elements of Causal Inference: Foundations and Learning Algorithms"
 URL: https://bagrounds.org/books/elements-of-causal-inference-foundations-and-learning-algorithms
-Author: 
-tags: 
+Author:
+tags:
 affiliate link: https://amzn.to/4mKBX6C
 ---
 [Home](../index.md) > [Books](./index.md)  

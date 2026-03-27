@@ -4,8 +4,8 @@ aliases:
   - 🧠🕸️📜📈 Neural Networks and the Chomsky Hierarchy
 title: 🧠🕸️📜📈 Neural Networks and the Chomsky Hierarchy
 URL: https://bagrounds.org/articles/neural-networks-and-the-chomsky-hierarchy
-Author: 
-tags: 
+Author:
+tags:
 ---
 [Home](../index.md) > [Articles](./index.md)  
 # [🧠🕸️📜📈 Neural Networks and the Chomsky Hierarchy](https://arxiv.org/pdf/2207.02098)  

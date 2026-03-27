@@ -4,8 +4,8 @@ aliases:
   - "🪙💯🚀 The $100 Startup: Reinvent the Way You Make a Living, Do What You Love, and Create a New Future"
 title: "🪙💯🚀 The $100 Startup: Reinvent the Way You Make a Living, Do What You Love, and Create a New Future"
 URL: https://bagrounds.org/books/the-100-dollar-startup
-Author: 
-tags: 
+Author:
+tags:
 affiliate link: https://amzn.to/3Ht9v9p
 ---
 [Home](../index.md) > [Books](./index.md)  

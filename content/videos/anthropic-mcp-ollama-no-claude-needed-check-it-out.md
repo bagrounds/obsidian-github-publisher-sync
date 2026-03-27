@@ -4,10 +4,10 @@ aliases:
   - 🤖🧠🚫 Anthropic MCP + Ollama No Claude Needed Check it out
 title: 🤖🧠🚫 Anthropic MCP + Ollama No Claude Needed Check it out
 URL: https://youtu.be/2zAUXs1Z9vA
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: What The Func? w/ Ed Zynda
-tags: 
+tags:
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 🤖🧠🚫 Anthropic MCP + [Ollama](../software/ollama.md). No Claude Needed? Check it out!  

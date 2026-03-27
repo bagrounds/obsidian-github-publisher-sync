@@ -4,10 +4,10 @@ aliases:
   - Supreme Court clears way for deportations under Alien Enemies Act
 title: Supreme Court clears way for deportations under Alien Enemies Act
 URL: https://youtu.be/udD2xupVZ3Q
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: PBS NewsHour
-tags: 
+tags:
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # Supreme Court clears way for deportations under Alien Enemies Act  

@@ -4,10 +4,10 @@ aliases:
   - The history of diversity, equity and inclusion efforts in America
 title: The history of diversity, equity and inclusion efforts in America
 URL: https://youtu.be/XqWIjZd5k2k
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: PBS NewsHour
-tags: 
+tags:
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # PBS NewsHour - The history of diversity, equity and inclusion efforts in America  

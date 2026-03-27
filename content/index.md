@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-03-27T12:23:51-07:00
+updated: 2026-03-27T11:05:06-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -21,9 +21,9 @@ updated: 2026-03-27T12:23:51-07:00
 - [2026-03-24 | 👀 Witnessing 🐓 Ranch 🗽 Freedom 📶 Telemetry 🐔🤖🏛️📚](./reflections/2026-03-24.md)  
   
   
-## [🤖 AI Blog](./ai-blog/index.md) (74)  
+## [🤖 AI Blog](./ai-blog/index.md) (75)  
 - [2026-03-27 | 🔌 Wiring Haskell Executables for Production Scheduled Tasks](./ai-blog/2026-03-27-wiring-haskell-executables-for-production.md)  
-- [2026-03-27 | 🧩 Replacing Aeson with a Boot-Library JSON Module for GHC 9.14](../2026-03-27-replacing-aeson-boot-library-json-ghc914.md)  
+- [2026-03-27-replacing-aeson-boot-library-json-ghc914](../2026-03-27-replacing-aeson-boot-library-json-ghc914.md)  
 - [2026-03-27 | 🔗 Porting Internal Linking to Haskell: BFS Meets Gemini](./ai-blog/2026-03-27-porting-internal-linking-to-haskell.md)  
 - [2026-03-27 | 🖼️ Porting the Image Generation Pipeline to Haskell](./ai-blog/2026-03-27-porting-image-generation-pipeline-to-haskell.md)  
   
@@ -36,7 +36,7 @@ updated: 2026-03-27T12:23:51-07:00
   
   
 ## [🐔 Chickie Loo](./chickie-loo/index.md) (18)  
-- [2026-03-27 | 🐔 💃 A Dance on the Side of the Road and the Strength of a Shared Life 🐓 🐔](./chickie-loo/2026-03-27-a-dance-on-the-side-of-the-road-and-the-strength-of-a-shared-life.md)  
+- [2026-03-27-a-dance-on-the-side-of-the-road-and-the-strength-of-a-shared-life](../2026-03-27-a-dance-on-the-side-of-the-road-and-the-strength-of-a-shared-life.md)  
 - [2026-03-26 | 🐔 🌅 A Thrilled Heart, a Wise Journey, and the Gentle Flow of Life 🐔](./chickie-loo/2026-03-26-a-thrilled-heart-a-wise-journey-and-the-gentle-flow-of-life.md)  
 - [2026-03-25 | 🐔 🩹 The Gentle Lessons of a Stumbled Step and a Broken Shell 🐔](./chickie-loo/2026-03-25-the-gentle-lessons-of-a-stumbled-step-and-a-broken-shell.md)  
 - [2026-03-24 | 🐔 🌌 Finding Peace in the Practical Rhythms of the Ranch 🐔](./chickie-loo/2026-03-24-finding-peace-in-the-practical-rhythms-of-the-ranch.md)  
@@ -50,78 +50,78 @@ updated: 2026-03-27T12:23:51-07:00
   
   
 ## [📚 Books](./books/index.md) (958)  
-- [🤖🤖🤖 We Are Legion (We Are Bob)](./books/we-are-legion-we-are-bob.md)  
-- [🦢 The Elements of Style](./books/the-elements-of-style.md)  
-- [🍇😡 The Grapes of Wrath](./books/the-grapes-of-wrath.md)  
-- [⚠️🥴🕹️🌐 The Fifth Risk](./books/the-fifth-risk.md)  
-- [💺🚪💡🤔 The Design of Everyday Things](./books/the-design-of-everyday-things.md)  
-- [🤖🧠⚙️ Artificial Condition](./books/artificial-condition.md)  
-- [👁️ 1984](./books/1984.md)  
-- [🚨🤖💥 All Systems Red](./books/all-systems-red.md)  
-- [🕵️ Fugitive Telemetry](./books/fugitive-telemetry.md)  
-- [📱⬇️🧘 Digital Minimalism: Choosing a Focused Life in a Noisy World](./books/digital-minimalism-choosing-a-focused-life-in-a-noisy-world.md)  
+- [🤖📈 Prediction Machines: The Simple Economics of Artificial Intelligence](./books/prediction-machines-the-simple-economics-of-artificial-intelligence.md)  
+- [🗳️🕊️🇺🇸 Democracy in America](./books/democracy-in-america.md)  
+- [🎣📱 Hooked: How to Build Habit-Forming Products](./books/hooked-how-to-build-habit-forming-products.md)  
+- [🤖📈 The Second Machine Age: Work, Progress, and Prosperity in a Time of Brilliant Technologies](./books/the-second-machine-age-work-progress-and-prosperity-in-a-time-of-brilliant-technologies.md)  
+- [🔮🎨🔬 Superforecasting: The Art and Science of Prediction](./books/superforecasting-the-art-and-science-of-prediction.md)  
+- [🤸🤕 Becoming a Supple Leopard: The Ultimate Guide to Resolving Pain, Preventing Injury, and Optimizing Athletic Performance](./books/becoming-a-supple-leopard-the-ultimate-guide-to-resolving-pain-preventing-injury-and-optimizing-athletic-performance.md)  
+- [❓🏘️ Where Do We Go from Here: Chaos or Community?](./books/where-do-we-go-from-here-chaos-or-community.md)  
+- [👩🏼‍❤️‍💋‍👨🏻🔗 Attached: The New Science of Adult Attachment and How It Can Help You Find - and Keep - Love](./books/attached-the-new-science-of-adult-attachment-and-how-it-can-help-you-find-and-keep-love.md)  
+- [😇🧠 The Righteous Mind: Why Good People Are Divided by Politics and Religion](./books/the-righteous-mind.md)  
+- [👁️‍🗨️💰⛓️👤 The Age of Surveillance Capitalism: The Fight for a Human Future at the New Frontier of Power](./books/the-age-of-surveillance-capitalism.md)  
   
   
 ## [📺 Videos](./videos/index.md) (714)  
-- [🧏🎭📖 The Untold Story of Deaf Theater](./videos/the-untold-story-of-deaf-theater.md)  
-- [💰💸⚔️ A “Billion Dollar a Day” War | Explainer](./videos/a-billion-dollar-a-day-war-explainer.md)  
-- [🤖✂️💰🚀 The AI Job Market Split in Two. One Side Pays $400K and Can't Hire Fast Enough.](./videos/the-ai-job-market-split-in-two-one-side-pays-400k-and-cant-hire-fast-enough.md)  
-- [🛡️⚙️🤖🔭 Antibrittle Agents: Engineering Reliability for Long-Horizon AI](./videos/antibrittle-agents-engineering-reliability-for-long-horizon-ai.md)  
-- [🧑‍🏫🎨✍️🎤 NYU Professor Teaches the Art of Writing (Ocean Vuong Interview)](./videos/nyu-professor-teaches-the-art-of-writing-ocean-vuong-interview.md)  
-- [🇺🇸🏛️🗣️📊 An Analysis of Modern Republicanism | Explainer](./videos/an-analysis-of-modern-republicanism-explainer.md)  
-- [🗣️💡🚀 Session 4, Part 1: Presenting Your Venture](./videos/session-4-part-1-presenting-your-venture.md)  
-- [3️⃣1️⃣⚖️🏛️ Session 3, Part 1: Legal Issues](./videos/session-3-part-1-legal-issues.md)  
-- [💰🚀💼 Session 2, Part 2: How Are You Going to Make Money? - The Business/Venture Model](./videos/session-2-part-2-how-are-you-going-to-make-money-the-businessventure-model.md)  
-- [session-1-part-2-market-identification-and-sales-finding-your-customer](../session-1-part-2-market-identification-and-sales-finding-your-customer.md)  
+- [🇺🇸🗣️❓ The State of the United States: A Conversation with Jack Smith](./videos/the-state-of-the-united-states-a-conversation-with-jack-smith.md)  
+- [👨‍💼🤖📈⚕️ MIT Economist on AI, Trade-Offs & Healthcare](./videos/mit-economist-on-ai-trade-offs-healthcare.md)  
+- [💻🌍🚶‍♀️ Where All the Tech Workers Are Going](./videos/where-all-the-tech-workers-are-going.md)  
+- [👨‍💻➡️🤖🧩 Beyond the IDE: Toward Multi-Agent Orchestration](./videos/beyond-the-ide-toward-multi-agent-orchestration.md)  
+- [📰🇺🇸❓🏛️ This Week In Politics, A Big-Picture Look at Where We Are Right Now | Explainer](./videos/this-week-in-politics-a-big-picture-look-at-where-we-are-right-now-explainer.md)  
+- [🏆💡🤔 Turing Award Winner On Thinking Clearly, Paxos vs Raft, Working With Dijkstra | Leslie Lamport](./videos/turing-award-winner-on-thinking-clearly-paxos-vs-raft-working-with-dijkstra-leslie-lamport.md)  
+- [🇺🇸🗣️👂 American Conversations: Diana Butler Bass](./videos/american-conversations-diana-butler-bass.md)  
+- [🗺️✂️🏛️🗣️ American Conversations: Gerrymandering with Kate Compton Barr and Sam Wang](./videos/american-conversations-gerrymandering-with-kate-compton-barr-and-sam-wang.md)  
+- [🧑‍💻📈⏩ SIGGRAPH Thesis Fast Forward 2025](./videos/siggraph-thesis-fast-forward-2025.md)  
+- [⚡🔋💪 The Mitochondria Protocol: How to Actually Fix Your Energy](./videos/the-mitochondria-protocol-how-to-actually-fix-your-energy.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  
-- [🌲🪜🧠 A Hierarchical View of Human Knowledge](./topics/a-hierarchical-view-of-human-knowledge.md)  
-- [🏦♾️📈💸 Modern Monetary Theory](./topics/modern-monetary-theory.md)  
+- [🎲🌲📊 Random Forest Classifier](./topics/random-forest-classifier.md)  
+- [♻️🫀🧠💪 Cognitive Behavioral Therapy](./topics/cognitive-behavioral-therapy.md)  
+- [🤖🧭 Agentic Software Engineering](./topics/agentic-software-engineering.md)  
+- [⏳🍽️ Time-Restricted Eating](./topics/time-restricted-eating.md)  
 - [🫂💖 Attachment Theory](./topics/attachment-theory.md)  
-- [🤔📚 Philosophy](./topics/philosophy.md)  
-- [📚🎭 Humanities](./topics/humanities.md)  
   
   
 ## [📄  Articles](./articles/index.md) (82)  
-- [💻📊 State of Haskell 2025 results](./articles/state-of-haskell-2025-results.md)  
-- [⏳🏛️💥🗳️📉 Trump is dismantling democracy at unprecedented speed, global report finds](./articles/trump-is-dismantling-democracy-at-unprecedented-speed-global-report-finds.md)  
-- [🤖⚙️🛠️ Agentic Engineering Patterns](./articles/agentic-engineering-patterns.md)  
-- [😴👄🧘 Mouth And Throat Exercises to Help Stop Snoring and Improve OSA](./articles/mouth-and-throat-exercises-to-help-stop-snoring-and-improve-osa.md)  
-- [🤖⚙️🧠 Writing about Agentic Engineering Patterns](./articles/writing-about-agentic-engineering-patterns.md)  
+- [🏳️‍⚧️🚫🗣️ Iowa gives final approval to a bill removing gender identity protections despite protests](./articles/iowa-gives-final-approval-to-a-bill-removing-gender-identity-protections-despite-protests.md)  
+- [⚙️🛡️🐛 Making Reliable Distributed Systems in the Presence of Software Errors](./articles/making-reliable-distributed-systems-in-the-presence-of-software-errors.md)  
+- [🧑‍🏫🌍🛠️📈 Agent Skills: Equipping agents for the real world with Agent Skills](./articles/equipping-agents-for-the-real-world-with-agent-skills.md)  
+- [🤖😴📢🗳️ Sleeper Social Bots: A New Generation of AI Disinformation Bots are Already a Political Threat](./articles/sleeper-social-bots-a-new-generation-of-ai-disinformation-bots-are-already-a-political-threat.md)  
+- [🤖⚙️🔄🗣️ Agentic Context Engineering: Evolving Contexts for Self Improving Language Models](./articles/agentic-context-engineering-evolving-contexts-for-self-improving-language-models.md)  
   
   
 ## [🤖💬 Bot Chats](./bot-chats/index.md) (49)  
+- [🇷🇺👹🤝👹🇺🇸 Trump and Putin](./bot-chats/trump-and-putin.md)  
 - [📖 Book 🧭 Explorer 2](./bot-chats/book-explorer-2.md)  
-- [📏💻✅ Engineering as Specification](./bot-chats/engineering-as-specification.md)  
-- [💰💎🌽🏡📈 Real Wealth Investing](./bot-chats/real-wealth-investing.md)  
-- [🤰⏰👶🔮 Forecasting Parenthood](./bot-chats/forecasting-parenthood.md)  
-- [🗺️🗓️📋✅🔮 Planning](./bot-chats/planning.md)  
+- [✍️🥇🇺🇸 Creating the Most Popular Title in the Country](./bot-chats/creating-the-most-popular-title-in-the-country.md)  
+- [📖 Book 🧭 Explorer 1](./bot-chats/book-explorer-1.md)  
+- [😇🔮🎲🎬 Good Decisions](./bot-chats/good-decisions.md)  
   
   
 ## [💾 Software](./software/index.md) (31)  
+- [🐍🏎️📦 uv](./software/uv.md)  
+- [💻🎮🕹️🧠 CodinGame](./software/codingame.md)  
+- [💻📱🛠️ Termux](./software/termux.md)  
+- [📊🔍📈 Google Search Console](./software/google-search-console.md)  
 - [🤖♊ Gemini](./software/gemini.md)  
-- [💾✍️🌋⚫️ Obsidian](./software/obsidian.md)  
-- [☁️🛡️ Cloudflare Tunnel (cloudflared)](./software/cloudflare-tunnel.md)  
-- [💻🔓 OpenCode](./software/opencode.md)  
-- [👽🦺 Zod](./software/zod.md)  
   
   
 ## [👥 People](./people/index.md) (18)  
-- [🏛️🇺🇸📖 Heather Cox Richardson](./people/heather-cox-richardson.md)  
+- [Donald Trump](../donald-trump.md)  
+- [📈📊⚙️🎯 W Edwards Deming](./people/w-edwards-deming.md)  
 - [👨‍🏫📉💵 Warren Mosler](./people/warren-mosler.md)  
-- [🤔⚙️🗣️🤝💡🧩🔭📚👴 Russell Ackoff](./people/russell-ackoff.md)  
   
   
 ## [🛍️ Products](./products/index.md) (6)  
-- [🚰💧⚙️🔧 Delta Faucet RP4993 Seats and Springs](./products/delta-faucet-rp4993-seats-and-springs.md)  
+- [🤖🧹🧼🗺️ iRobot Roomba Plus 505 Combo Robot Vacuum & Mop with AutoWash Dock - Extending Spinning Mop Pads, Self-Empties, Pad Wash & Heated Drying, Self-cleaning, Recognizes & Avoids Obstacles, LiDAR Navigation](./products/irobot-roomba-plus-505-combo-robot-vacuum-mop-with-autowash-dock-extending-spinning-mop-pads-self-empties-pad-wash-heated-drying-self-cleaning-recognizes-avoids-obstacles-lidar-navigation.md)  
 - [🔥💨🏕️ Coleman Triton 2-Burner Propane Stove, Portable Camping Cooktop with 2 Adjustable Burners & Wind Guards, 22,000 BTUs of Power for Camping, Tailgating, Grilling, BBQ, & More](./products/coleman-triton-2-burner-propane-stove-portable-camping-cooktop-with-2-adjustable-burners-wind-guards-22000-btus-of-power-for-camping-tailgating-grilling-bbq-more.md)  
-- [👶🌧️💨 Graco Baby Jogging Stroller Universal Rain Cover, Ventilated Weather Shield, Waterproof, Windproof, Versatile Size to Fit Most Jogging Strollers, Vinyl, Clear, Plastic](./products/graco-baby-jogging-stroller-universal-rain-cover-ventilated-weather-shield-waterproof-windproof-versatile-size-to-fit-most-jogging-strollers-vinyl-clear-plastic.md)  
+- [🦈🔦🐈✨🧹 Shark HV322 Rocket Pet Plus Corded Stick Vacuum with LED Headlights, XL Dust Cup, Lightweight, Perfect for Pet Hair Pickup, Converts to a Hand Vacuum, with (2) Pet Attachments, Bordeaux, Silver](./products/shark-hv322-rocket-pet-plus-corded-stick-vacuum-with-led-headlights-xl-dust-cup-lightweight.md)  
   
   
 ## [🎤 Presentations](./presentations/index.md) (2)  
-- [🤝 Generating Reliable Systems](./presentations/generating-reliable-systems.md)  
 - [🤖 Agentic Software Engineering](./presentations/agentic-software-engineering.md)  
+- [🤝 Generating Reliable Systems](./presentations/generating-reliable-systems.md)  
   
   
 ## [🎮 Games](./games/index.md) (1)  

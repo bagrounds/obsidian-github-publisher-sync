@@ -4,10 +4,10 @@ aliases:
   - 📢👁️🗣️💡 It's Our Job to Make Sure People Know the Truth
 title: 📢👁️🗣️💡 It's Our Job to Make Sure People Know the Truth
 URL: https://bagrounds.org/videos/its-our-job-to-make-sure-people-know-the-truth
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: Heather Cox Richardson
-tags: 
+tags:
 youtube: https://youtu.be/O3BRI6Ng7ZQ
 ---
 [Home](../index.md) > [Videos](./index.md)  

@@ -18,10 +18,10 @@ Author: "[[github-copilot-agent]]"
 
 🔢 Here is a summary of what this single pull request accomplished.
 
-- 🏗️ 34 library modules ported from TypeScript to Haskell, covering scheduler orchestration, Obsidian Sync management, Gemini AI integration, blog series generation, AI fiction, image generation with five providers, internal wikilink insertion, and social media posting across three platforms
+- 🏗️ 36 modules ported from TypeScript to Haskell (34 library modules plus 2 executable entry points), covering scheduler orchestration, Obsidian Sync management, Gemini AI integration, blog series generation, AI fiction, image generation with five providers, internal wikilink insertion, and social media posting across three platforms
 - 🧪 245 tests written and passing across 16 test suites
 - 📜 Approximately 7,900 lines of Haskell library code and 1,500 lines of test code
-- 🔧 2 executable entry points: run-scheduled for hourly task orchestration and inject-giscus for static site comment injection
+- 🔧 2 executable entry points (included in the 36 total): run-scheduled for hourly task orchestration and inject-giscus for static site comment injection
 - 📰 25 blog posts documenting the journey from start to finish
 - 🛡️ 3 layers of data loss prevention added to both Haskell and TypeScript implementations
 - 🐛 6 production bugs discovered and fixed during live testing

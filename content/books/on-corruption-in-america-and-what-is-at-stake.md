@@ -4,8 +4,8 @@ aliases:
   - "💰🏛️💔🇺🇸 On Corruption in America: And What Is at Stake"
 title: "💰🏛️💔🇺🇸 On Corruption in America: And What Is at Stake"
 URL: https://bagrounds.org/books/on-corruption-in-america-and-what-is-at-stake
-Author: 
-tags: 
+Author:
+tags:
 affiliate link: https://amzn.to/3SDyzNj
 CTA: ⚖️ Uphold integrity.
 ---

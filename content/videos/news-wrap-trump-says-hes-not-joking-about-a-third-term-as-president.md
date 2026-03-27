@@ -4,10 +4,10 @@ aliases:
   - "News Wrap: Trump says he’s ‘not joking’ about a third term as president"
 title: "News Wrap: Trump says he’s ‘not joking’ about a third term as president"
 URL: https://youtu.be/q-_6xaPNldM
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: PBS NewsHour
-tags: 
+tags:
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # News Wrap: Trump says he’s ‘not joking’ about a third term as president  

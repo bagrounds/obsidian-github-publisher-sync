@@ -4,8 +4,8 @@ aliases:
   - 🕵️‍♀️💼👥 Agents
 title: 🕵️‍♀️💼👥 Agents
 URL: https://bagrounds.org/articles/agents
-Author: 
-tags: 
+Author:
+tags:
 ---
 [Home](../index.md) > [Articles](./index.md)  
 # [🕵️‍♀️💼👥 Agents](https://huyenchip.com//2025/01/07/agents.html)  

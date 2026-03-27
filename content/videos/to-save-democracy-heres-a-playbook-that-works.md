@@ -4,10 +4,10 @@ aliases:
   - To Save Democracy, Here’s a Playbook That Works
 title: To Save Democracy, Here’s a Playbook That Works
 URL: https://youtu.be/sSISS7QZ_Cw
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: New York Times Podcasts
-tags: 
+tags:
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # To Save Democracy, Here’s a Playbook That Works  

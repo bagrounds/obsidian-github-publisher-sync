@@ -4,10 +4,10 @@ aliases:
   - What’s next for America’s Proud Boys after Donald Trump’s pardons | Extra Minutes
 title: What’s next for America’s Proud Boys after Donald Trump’s pardons | Extra Minutes
 URL: https://youtu.be/PMoxyYqJF3U
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: 60 Minutes Australia
-tags: 
+tags:
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # What’s next for America’s Proud Boys after Donald Trump’s pardons | Extra Minutes  

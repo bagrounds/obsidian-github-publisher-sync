@@ -4,8 +4,8 @@ aliases:
   - 💻🔍✅ Google Tests Software
 title: 💻🔍✅ Google Tests Software
 URL: https://bagrounds.org/books/how-google-tests-software
-Author: 
-tags: 
+Author:
+tags:
 affiliate link: https://amzn.to/3HoCkUh
 ---
 [Home](../index.md) > [Books](./index.md)  

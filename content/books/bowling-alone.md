@@ -4,8 +4,8 @@ aliases:
   - "🎳🏘️📉📈 Bowling Alone: The Collapse and Revival of American Community"
 title: "🎳🏘️📉📈 Bowling Alone: The Collapse and Revival of American Community"
 URL: https://bagrounds.org/books/bowling-alone
-Author: 
-tags: 
+Author:
+tags:
 affiliate link: https://amzn.to/4e40uA1
 ---
 [Home](../index.md) > [Books](./index.md)  

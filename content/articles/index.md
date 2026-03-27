@@ -5,10 +5,10 @@ aliases:
 title: 📄 Articles
 backlinks: false
 URL: https://bagrounds.org/articles
-updated: 2026-03-27T07:38:38-07:00
+updated: 2026-03-27T09:18:30-07:00
 ---
 [Home](../index.md)  
-# 📄 Articles (81)  
+# 📄 Articles (82)  
 - [🗓️🇵🇹💉✅🕊️ 20 years of Portuguese drug policy - developments, challenges and the quest for human rights](./20-years-of-portuguese-drug-policy-developments-challenges-and-the-quest-for-human-rights.md)  
 - [🦊😈🐾🕵️💸 5 takeaways about NPR's reporting on the whistleblower report about DOGE at the NLRB](./5-takeaways-about-nprs-reporting-on-the-whistleblower-report-about-doge-at-the-nlrb.md)  
 - [🌱🤖⚙️🖐️ 5 tips on getting started with Gems, your custom AI experts](./5-tips-on-getting-started-with-gems-your-custom-ai-experts.md)  
@@ -74,6 +74,7 @@ updated: 2026-03-27T07:38:38-07:00
 - [🧠🤖📈 Scientists just developed a new AI modeled on the human brain — it's outperforming LLMs like ChatGPT at reasoning tasks](./scientists-just-developed-a-new-ai-modeled-on-the-human-brain-its-outperforming-llms-like-chatgpt-at-reasoning-tasks.md)  
 - [🤖😴📢🗳️ Sleeper Social Bots: A New Generation of AI Disinformation Bots are Already a Political Threat](./sleeper-social-bots-a-new-generation-of-ai-disinformation-bots-are-already-a-political-threat.md)  
 - [🏫🔥 Snohomish County schools react to education department firings](./snohomish-county-schools-react-to-education-department-firings.md)  
+- [💻📊 State of Haskell 2025 results](./state-of-haskell-2025-results.md)  
 - [💻💰🤝👹🇺🇸 Tech moguls Altman, Bezos and Zuckerberg donate to Trump's inauguration fund](./tech-moguls-altman-bezos-and-zuckerberg-donate-to-trumps-inauguration-fund.md)  
 - [🪵 The Log: What every software engineer should know about real-time data's unifying abstraction](./the-log-what-every-software%20engineer-should-know-about-real-time-datas-unifying-abstraction.md)  
 - [😴🎡 The Nap Wheel](./the-nap-wheel.md)  

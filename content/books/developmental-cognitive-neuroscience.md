@@ -4,8 +4,8 @@ aliases:
   - "🧠👶📈 Introduction to Developmental Cognitive Neuroscience: An Introduction"
 title: "🧠👶📈 Introduction to Developmental Cognitive Neuroscience: An Introduction"
 URL: https://bagrounds.org/books/developmental-cognitive-neuroscience
-Author: 
-tags: 
+Author:
+tags:
 affiliate link: https://amzn.to/43tZS2M
 ---
 [Home](../index.md) > [Books](./index.md)  
@@ -83,7 +83,7 @@ affiliate link: https://amzn.to/43tZS2M
 * **Best Alternate Book on the Same Topic:** "Principles of Developmental Cognitive Neuroscience" by Mark H. Johnson. 📚  
 * **Best Tangentially Related Book:** "[🧠🧑‍🤝‍🧑 The Developing Mind: How Relationships and the Brain Interact to Shape Who We Are](./the-developing-mind-how-relationships-and-the-brain-interact-to-shape-who-we-are.md)" by Daniel J. Siegel. 🧠💖  
 * **Best Diametrically Opposed Book:** "The Blank Slate" by Steven Pinker. (Argues against the strong influence of environment). 📜  
-* **Best Fiction Book That Incorporates Related Ideas:** "Flowers for Algernon" by Daniel Keyes. (Explores the ethics of cognitive enhancement). 🌸🧠  
+* **Best Fiction Book That Incorporates Related Ideas:** Flowers for Algernon by Daniel Keyes. (Explores the ethics of cognitive enhancement). 🌸🧠  
 * **Best More General Book:** "[Thinking, Fast and Slow](./thinking-fast-and-slow.md)" by Daniel Kahneman. (General cognitive psychology). 💭  
 * **Best More Specific Book:** "The Prefrontal Cortex: Anatomy, Physiology, and Neuropsychology of the Frontal Lobe" by Joaquin M. Fuster. (Deep dive into one brain region). 🧠📑  
 * **Best More Rigorous Book:** "Cognitive Neuroscience: The Biology of the Mind" by Michael S. Gazzaniga, Richard B. Ivry, and George R. Mangun. (Advanced text). 🔬  

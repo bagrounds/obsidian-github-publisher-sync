@@ -4,8 +4,8 @@ aliases:
   - "⚡🔍👑📖 Elasticsearch: The Definitive Guide"
 title: "⚡🔍👑📖 Elasticsearch: The Definitive Guide"
 URL: https://bagrounds.org/books/elasticsearch-the-definitive-guide
-Author: 
-tags: 
+Author:
+tags:
 affiliate link: https://amzn.to/4dOURFt
 ---
 [Home](../index.md) > [Books](./index.md)  

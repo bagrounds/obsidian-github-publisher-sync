@@ -4,8 +4,8 @@ aliases:
   - "🔌👋 The Power of Showing Up: How Parental Presence Shapes Who Our Kids Become and How Their Brains Get Wired"
 title: "🔌👋 The Power of Showing Up: How Parental Presence Shapes Who Our Kids Become and How Their Brains Get Wired"
 URL: https://bagrounds.org/books/the-power-of-showing-up
-Author: 
-tags: 
+Author:
+tags:
 affiliate link: https://amzn.to/4kqoFea
 ---
 [Home](../index.md) > [Books](./index.md)  

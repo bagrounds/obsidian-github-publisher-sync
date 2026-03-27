@@ -4,10 +4,10 @@ aliases:
   - 💔🏛️💸 Brooks and Capehart on the Democratic division over the stopgap funding bill
 title: 💔🏛️💸 Brooks and Capehart on the Democratic division over the stopgap funding bill
 URL: https://youtu.be/psmQDjhAMY8
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: PBS NewsHour
-tags: 
+tags:
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 💔🏛️💸 Brooks and Capehart on the Democratic division over the stopgap funding bill  

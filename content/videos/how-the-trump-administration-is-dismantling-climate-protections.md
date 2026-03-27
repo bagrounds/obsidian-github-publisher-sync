@@ -4,10 +4,10 @@ aliases:
   - ⛽🔥🌪️🌀🌍 How the Trump administration is dismantling climate protections
 title: ⛽🔥🌪️🌀🌍 How the Trump administration is dismantling climate protections
 URL: https://youtu.be/MjfXVUozQ2Q
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: PBS NewsHour
-tags: 
+tags:
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # ⛽🔥🌪️🌀🌍 How the Trump administration is dismantling climate protections  

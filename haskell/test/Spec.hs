@@ -12,6 +12,7 @@ import qualified Automation.BlogSeriesConfigTest
 import qualified Automation.EmbedSectionTest
 import qualified Automation.BlogPromptTest
 import qualified Automation.BlogSeriesTest
+import qualified Automation.BlogImageTest
 
 main :: IO ()
 main = defaultMain $ testGroup "Automation"
@@ -25,4 +26,5 @@ main = defaultMain $ testGroup "Automation"
   , Automation.EmbedSectionTest.tests
   , Automation.BlogPromptTest.tests
   , Automation.BlogSeriesTest.tests
+  , Automation.BlogImageTest.tests
   ]

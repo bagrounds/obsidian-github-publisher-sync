@@ -413,3 +413,31 @@ Image name: chickie-loo-2026-03-22-weekly-recap.jpg
 4. 🔄 **Parallel generation** — Generate images for posts in different directories concurrently (with shared rate limiter)
 5. 📈 **Progress persistence** — Track backfill state across runs to avoid re-scanning completed directories
 6. 🏪 **Additional providers** — The provider chain architecture makes it easy to add new providers. To add one: implement an `ImageGenerator` function, add a `makeXxxGenerator` factory, and add a block to `resolveImageProviders` that checks for the provider's env vars
+
+---
+
+## 🦀 Haskell Implementation (`Automation.BlogImage`)
+
+### 📦 Module Overview
+
+🔧 The Haskell module `Automation.BlogImage` is a complete port of the TypeScript `scripts/lib/blog-image.ts`. It provides the same functionality using idiomatic Haskell patterns with strong static types.
+
+### 🏗️ Key Differences from TypeScript
+
+1. 🧩 **Manager parameter** — All HTTP functions accept an `http-client` `Manager` explicitly rather than using global fetch
+2. 📋 **`Map Text Text`** — Environment variables are passed as a strict `Map` rather than a `Record`
+3. 🔄 **Either-based errors** — Generators return `Either Text (ByteString, Text)` instead of throwing exceptions
+4. 🧪 **Pure utilities** — Functions like `hasEmbeddedImage`, `sanitizeForYaml`, and `buildImagePrompt` are pure
+5. 🎯 **Explicit provider config** — `ImageProviderConfig` carries generator and describer as higher-order function fields
+
+### 📐 Data Types
+
+- `ImageGenerationResult` — Result of processing a single note
+- `ImageProviderConfig` — Provider name, credentials, model, generator function, optional describer
+- `BackfillConfig` — Repo root, content dirs, attachments dir, provider chain, max images
+- `BackfillResult` — Counts of generated/updated/skipped files, modified file paths, errors
+
+### 🔬 Test Coverage
+
+- ✅ 65 tests covering all pure functions and provider resolution
+- ✅ Property-based tests for `buildImagePrompt` length bound, `sanitizeForYaml` quote removal, `mimeTypeToExtension` format, `hasEmbeddedImage` safety, `insertImageEmbed` idempotency

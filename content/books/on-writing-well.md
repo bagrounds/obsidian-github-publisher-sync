@@ -4,12 +4,14 @@ aliases:
   - "✍🏼👍🏼 On Writing Well: The Classic Guide to Writing Nonfiction"
 title: "✍🏼👍🏼 On Writing Well: The Classic Guide to Writing Nonfiction"
 URL: https://bagrounds.org/books/on-writing-well-the-classic-guide-to-writing-nonfiction
-Author: 
-tags: 
+Author:
+tags:
 affiliate link: https://amzn.to/45aFANb
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ✍🏼👍🏼 On Writing Well: The Classic Guide to Writing Nonfiction  
+[🛒 On Writing Well: The Classic Guide to Writing Nonfiction. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/45aFANb)  
+  
 ## 📖 Book Report: 🖋️ On Writing Well by William Zinsser  
   
 ### ℹ️ Overview  

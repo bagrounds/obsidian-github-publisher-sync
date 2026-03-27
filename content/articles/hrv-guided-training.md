@@ -4,8 +4,8 @@ aliases:
   - ❤️📈🏋️ HRV Guided training
 title: ❤️📈🏋️ HRV Guided training
 URL: https://bagrounds.org/articles/
-Author: 
-tags: 
+Author:
+tags:
 ---
 [Home](../index.md) > [Articles](./index.md)  
 # [❤️📈🏋️ HRV Guided training](https://www.kubios.com/blog/hrv-guided-training)  

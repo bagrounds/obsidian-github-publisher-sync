@@ -16,6 +16,7 @@ import qualified Automation.BlogImageTest
 import qualified Automation.InternalLinkingTest
 import qualified Automation.BlueskyTest
 import qualified Automation.MastodonTest
+import qualified Automation.SocialPostingTest
 
 main :: IO ()
 main = defaultMain $ testGroup "Automation"
@@ -33,4 +34,5 @@ main = defaultMain $ testGroup "Automation"
   , Automation.InternalLinkingTest.tests
   , Automation.BlueskyTest.tests
   , Automation.MastodonTest.tests
+  , Automation.SocialPostingTest.tests
   ]

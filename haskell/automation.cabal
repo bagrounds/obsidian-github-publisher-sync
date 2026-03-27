@@ -56,6 +56,7 @@ library
     Automation.Platforms.Twitter
     Automation.Platforms.Bluesky
     Automation.Platforms.Mastodon
+    Automation.SocialPosting
     Automation.Platforms.OgMetadata
   build-depends:
     base                 >= 4.18 && < 5,
@@ -128,6 +129,7 @@ test-suite automation-tests
     Automation.InternalLinkingTest
     Automation.BlueskyTest
     Automation.MastodonTest
+    Automation.SocialPostingTest
   build-depends:
     base,
     automation,

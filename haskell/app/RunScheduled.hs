@@ -5,6 +5,7 @@ import Control.Exception (SomeException, try)
 import Data.Char (isDigit)
 import Data.Map.Strict (Map)
 import qualified Data.Map.Strict as Map
+import Data.Maybe (fromMaybe)
 import Data.Text (Text)
 import qualified Data.Text as T
 import qualified Data.Text.IO as TIO
@@ -26,7 +27,7 @@ import Automation.AiFiction
   , reflectionNeedsFiction
   )
 import Automation.BlogComments (fetchAllSeriesComments)
-import Automation.BlogImage (syncMarkdownDir, syncAttachmentsDir)
+import Automation.BlogImage (BackfillConfig (..), BackfillResult (..), syncMarkdownDir, syncAttachmentsDir, backfillImages, resolveImageProviders)
 import Automation.BlogPosts (BlogPost (..), readSeriesPosts)
 import Automation.BlogPrompt
   ( assembleFrontmatter
@@ -78,6 +79,8 @@ import Automation.Scheduler
   , taskIdFromText
   , taskIdToText
   )
+import qualified Automation.InternalLinking as IL
+import Automation.SocialPosting (autoPost)
 
 -- ---------------------------------------------------------------------------
 -- Logging helpers
@@ -147,6 +150,13 @@ getObsidianCreds = do
 
 getVaultCacheDir :: IO (Maybe FilePath)
 getVaultCacheDir = lookupEnv "OBSIDIAN_VAULT_CACHE_DIR"
+
+buildEnvMap :: [String] -> IO (Map Text Text)
+buildEnvMap keys = Map.fromList <$> mapM lookupOne keys
+  where
+    lookupOne k = do
+      mVal <- lookupEnv k
+      pure (T.pack k, maybe "" T.pack mVal)
 
 -- ---------------------------------------------------------------------------
 -- Slug generation (matches TypeScript generateSlug)
@@ -465,7 +475,7 @@ runBlogSeries manager repoRoot seriesId = do
   logMsg $ "✅ " <> taskName
 
 runBackfillImages :: Manager -> FilePath -> IO ()
-runBackfillImages _manager repoRoot = do
+runBackfillImages manager repoRoot = do
   logMsg "▶️  backfill-blog-images"
 
   creds <- getObsidianCreds
@@ -476,8 +486,29 @@ runBackfillImages _manager repoRoot = do
   vaultDir <- syncObsidianVault creds cacheDir
   mapM_ (\sid -> copySeriesPosts vaultDir sid repoRoot) backfillContentIds
 
-  -- 2. Image backfill (stubbed in Haskell — image generation not yet ported)
-  logMsg "  ⚠️  Image backfill: image generation not yet implemented in Haskell, skipping"
+  -- 2. Image backfill
+  envMap <- buildEnvMap
+    [ "GEMINI_API_KEY", "CLOUDFLARE_API_TOKEN", "CLOUDFLARE_ACCOUNT_ID"
+    , "CLOUDFLARE_IMAGE_MODEL", "HUGGINGFACE_API_KEY", "HUGGINGFACE_IMAGE_MODEL"
+    , "TOGETHER_API_KEY", "TOGETHER_IMAGE_MODEL", "POLLINATIONS_IMAGE_MODEL"
+    , "PROMPT_DESCRIBER_MODEL"
+    ]
+  let providers = resolveImageProviders envMap
+  case providers of
+    [] -> logMsg "  ⚠️  No image providers configured, skipping image backfill"
+    _  -> do
+      logMsg $ "  🎨 Image providers: " <> T.pack (show (length providers))
+      let bfConfig = BackfillConfig
+            { bfcRepoRoot = repoRoot
+            , bfcContentDirs = backfillContentIds
+            , bfcAttachmentsDir = repoRoot </> "attachments"
+            , bfcProviders = providers
+            , bfcMaxImages = 10
+            }
+      result <- backfillImages manager bfConfig
+      logMsg $ "  🖼️  Images: " <> T.pack (show (brImagesGenerated result))
+            <> " generated, " <> T.pack (show (brFilesUpdated result))
+            <> " files updated, " <> T.pack (show (brFilesSkipped result)) <> " skipped"
 
   -- 3. Update AI blog nav links
   let aiBlogDir = repoRoot </> "ai-blog"
@@ -507,17 +538,32 @@ runBackfillImages _manager repoRoot = do
 
   logMsg "✅ backfill-blog-images"
 
-runInternalLinking :: IO ()
-runInternalLinking = do
+runInternalLinking :: Manager -> IO ()
+runInternalLinking manager = do
   logMsg "▶️  internal-linking"
-  logMsg "  ⚠️  Internal linking not yet implemented in Haskell, skipping"
-  logMsg "✅ internal-linking (skipped)"
 
-runSocialPosting :: IO ()
-runSocialPosting = do
+  creds <- getObsidianCreds
+  cacheDir <- getVaultCacheDir
+
+  vaultDir <- syncObsidianVault creds cacheDir
+
+  envModel <- lookupEnvText "INTERNAL_LINKING_MODEL"
+  let model = fromMaybe IL.defaultLinkingModel envModel
+  result <- IL.run manager model vaultDir
+  logMsg $ "  🔗 Internal linking: "
+        <> T.pack (show (IL.lrFilesVisited result)) <> " visited, "
+        <> T.pack (show (IL.lrFilesModified result)) <> " modified, "
+        <> T.pack (show (IL.lrTotalLinksAdded result)) <> " links added"
+
+  pushObsidianVault vaultDir (ocAuthToken creds)
+  logMsg "  📤 Vault pushed"
+  logMsg "✅ internal-linking"
+
+runSocialPosting :: Manager -> IO ()
+runSocialPosting manager = do
   logMsg "▶️  social-posting"
-  logMsg "  ⚠️  Social posting not yet implemented in Haskell, skipping"
-  logMsg "✅ social-posting (skipped)"
+  autoPost manager
+  logMsg "✅ social-posting"
 
 runAiFiction :: Manager -> IO ()
 runAiFiction manager = do
@@ -646,8 +692,8 @@ taskRunners manager repoRoot = Map.fromList
   , (BlogSeriesAutoBlogZero, runBlogSeries manager repoRoot "auto-blog-zero")
   , (BlogSeriesSystemsForPublicGood, runBlogSeries manager repoRoot "systems-for-public-good")
   , (BackfillBlogImages, runBackfillImages manager repoRoot)
-  , (InternalLinking, runInternalLinking)
-  , (SocialPosting, runSocialPosting)
+  , (InternalLinking, runInternalLinking manager)
+  , (SocialPosting, runSocialPosting manager)
   , (AiFiction, runAiFiction manager)
   , (ReflectionTitle, runReflectionTitle manager)
   ]

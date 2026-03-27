@@ -4,10 +4,10 @@ aliases:
   - 🏛️📉🇺🇸🔟 Schiff Takes To Senate Floor to Lay Out the Top 10 Ways Trump is Wrecking America
 title: 🏛️📉🇺🇸🔟 Schiff Takes To Senate Floor to Lay Out the Top 10 Ways Trump is Wrecking America
 URL: https://bagrounds.org/videos/schiff-takes-to-senate-floor-to-lay-out-the-top-10-ways-trump-is-wrecking-america
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: Sen. Adam Schiff
-tags: 
+tags:
 youtube: https://youtu.be/k5q9XYMDfqc
 ---
 [Home](../index.md) > [Videos](./index.md)  

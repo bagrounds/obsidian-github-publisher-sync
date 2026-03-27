@@ -4,10 +4,10 @@ aliases:
   - 🤖🗓️🧑‍🏫 I Tried AI as a Life Coach for 365 Days - Here’s What I Learned
 title: 🤖🗓️🧑‍🏫 I Tried AI as a Life Coach for 365 Days - Here’s What I Learned
 URL: https://bagrounds.org/videos/i-tried-ai-as-a-life-coach-for-365-days-heres-what-i-learned
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: Ali Abdaal
-tags: 
+tags:
 youtube: https://youtu.be/QF2wIywvDhk
 ---
 [Home](../index.md) > [Videos](./index.md)  

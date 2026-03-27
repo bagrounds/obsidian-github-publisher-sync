@@ -4,10 +4,10 @@ aliases:
   - Susan Crawford wins Wisconsin Supreme Court seat, cementing liberal majority
 title: Susan Crawford wins Wisconsin Supreme Court seat, cementing liberal majority
 URL: https://youtu.be/UrRWlKHZU6M
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: Associated Press
-tags: 
+tags:
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # Susan Crawford wins Wisconsin Supreme Court seat, cementing liberal majority  

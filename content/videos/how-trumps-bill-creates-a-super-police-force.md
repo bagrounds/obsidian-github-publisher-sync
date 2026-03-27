@@ -4,10 +4,10 @@ aliases:
   - 👮‍♂️💪🚫📜 How Trump’s Bill Creates a Super Police Force
 title: 👮‍♂️💪🚫📜 How Trump’s Bill Creates a Super Police Force
 URL: https://bagrounds.org/videos/how-trumps-bill-creates-a-super-police-force
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: Heather Cox Richardson
-tags: 
+tags:
 youtube: https://youtu.be/FxG6O127EQQ
 ---
 [Home](../index.md) > [Videos](./index.md)  

@@ -4,10 +4,10 @@ aliases:
   - Ethics expert breaks down Trump administration’s conflicts of interest
 title: Ethics expert breaks down Trump administration’s conflicts of interest
 URL: https://youtu.be/TLzK5G9_nWk
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: PBS NewsHour
-tags: 
+tags:
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # PBS NewsHour - Ethics expert breaks down Trump administration’s conflicts of interest  

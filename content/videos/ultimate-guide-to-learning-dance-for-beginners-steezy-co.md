@@ -4,10 +4,10 @@ aliases:
   - 🩰🤸‍♀️🧑‍🏫📖 Ultimate Guide To Learning Dance For Beginners | STEEZY.CO
 title: 🩰🤸‍♀️🧑‍🏫📖 Ultimate Guide To Learning Dance For Beginners | STEEZY.CO
 URL: https://bagrounds.org/videos/ultimate-guide-to-learning-dance-for-beginners-steezy-co
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: STEEZY
-tags: 
+tags:
 youtube: https://youtu.be/C62596gVnT8
 ---
 [Home](../index.md) > [Videos](./index.md)  

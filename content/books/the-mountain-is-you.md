@@ -52,7 +52,7 @@ Brianna Wiest's writing is often described as:
 ### 🔄 Contrasting Perspectives (Challenging Self-Help Norms, Alternative Approaches)  
 1. **The Subtle Art of Not Giving a F*ck** by Mark Manson: 🤷 Challenges conventional self-help positivity by advocating for embracing life's struggles and focusing on what truly matters ❤️, offering a more counter-intuitive approach than Wiest's focus on overcoming internal blocks 🚫.  
 2. **Lost Connections** by Johann Hari: 💔 Argues that depression 😔 and anxiety are largely caused by societal factors (like disconnection from meaningful work 🏢, community 🫂, and values) rather than solely internal "chemical imbalances," offering a broader socio-cultural lens compared to Wiest's internal focus.  
-3. **Four Thousand Weeks: Time Management for Mortals** by Oliver Burkeman: ⏳ Critiques the modern obsession with productivity ⚙️ and "getting everything done," suggesting acceptance of limitations as a path to a meaningful life ❤️, contrasting with the self-mastery 💪 and potential-reaching focus in many self-help books.  
+3. Four Thousand Weeks by Oliver Burkeman: ⏳ Critiques the modern obsession with productivity ⚙️ and "getting everything done," suggesting acceptance of limitations as a path to a meaningful life ❤️, contrasting with the self-mastery 💪 and potential-reaching focus in many self-help books.  
 4. **Against Self-Criticism** by the School of Life: 🥺 Directly addresses the negative impact of harsh self-judgment 😔, offering a focused exploration of self-compassion 🤗 that complements, but also potentially challenges, the "mastery" aspect of Wiest's work by emphasizing acceptance.  
   
 ### 🎨 Creatively Related (Themes Explored Through Different Genres)  

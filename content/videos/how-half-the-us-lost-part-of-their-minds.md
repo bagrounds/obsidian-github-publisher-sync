@@ -4,10 +4,10 @@ aliases:
   - 🇺🇸🤯😵‍💫❓ How half the US lost part of their minds
 title: 🇺🇸🤯😵‍💫❓ How half the US lost part of their minds
 URL: https://bagrounds.org/videos/how-half-the-us-lost-part-of-their-minds
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: Howtown
-tags: 
+tags:
 youtube: https://www.youtube.com/watch?v=vm_1XLKtGpI
 ---
 [Home](../index.md) > [Videos](./index.md)  

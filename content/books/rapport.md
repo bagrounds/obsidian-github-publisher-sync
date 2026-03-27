@@ -4,8 +4,8 @@ aliases:
   - "🤝🐾 Rapport: The Four Ways to Read People"
 title: "🤝🐾 Rapport: The Four Ways to Read People"
 URL: https://bagrounds.org/books/Rapport
-Author: 
-tags: 
+Author:
+tags:
 affiliate link: https://amzn.to/3FKbMwe
 ---
 [Home](../index.md) > [Books](./index.md)  

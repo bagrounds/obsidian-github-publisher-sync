@@ -4,10 +4,10 @@ aliases:
   - 🐘🔴👴🏿💥 Epstein Is A Real Problem For The GOP | Trump's Creepy Past | Blaming Obama
 title: 🐘🔴👴🏿💥 Epstein Is A Real Problem For The GOP | Trump's Creepy Past | Blaming Obama
 URL: https://bagrounds.org/videos/epstein-is-a-real-problem-for-the-gop-trumps-creepy-past-blaming-obama
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: The Late Show with Stephen Colbert
-tags: 
+tags:
 youtube: https://youtu.be/oZ9GobGTOt0
 ---
 [Home](../index.md) > [Videos](./index.md)  

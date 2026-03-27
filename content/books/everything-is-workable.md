@@ -4,8 +4,8 @@ aliases:
   - "🤝🧘 Everything Is Workable: A Zen Approach to Conflict Resolution"
 title: "🤝🧘 Everything Is Workable: A Zen Approach to Conflict Resolution"
 URL: https://bagrounds.org/books/everything-is-workable-a-zen-approach-to-conflict-resolution
-Author: 
-tags: 
+Author:
+tags:
 affiliate link: https://amzn.to/3SwE3JK
 ---
 [Home](../index.md) > [Books](./index.md)  

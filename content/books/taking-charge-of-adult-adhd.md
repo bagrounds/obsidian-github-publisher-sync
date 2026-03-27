@@ -4,8 +4,8 @@ aliases:
   - "🧠⬆️💼🏠❤️ Taking Charge of Adult ADHD: Proven Strategies to Succeed at Work, at Home, and in Relationships"
 title: "🧠⬆️💼🏠❤️ Taking Charge of Adult ADHD: Proven Strategies to Succeed at Work, at Home, and in Relationships"
 URL: https://bagrounds.org/books/taking-charge-of-adult-adhd
-Author: 
-tags: 
+Author:
+tags:
 affiliate link: https://amzn.to/3SBUTH3
 ---
 [Home](../index.md) > [Books](./index.md)  

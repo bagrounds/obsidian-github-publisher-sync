@@ -4,10 +4,10 @@ aliases:
   - 💣✉️📰 Top Trump officials accidentally texted U.S. war plans to journalist Jeffrey Goldberg
 title: 💣✉️📰 Top Trump officials accidentally texted U.S. war plans to journalist Jeffrey Goldberg
 URL: https://youtu.be/4E17mO3VzOI
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: PBS NewsHour
-tags: 
+tags:
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 💣✉️📰 Top Trump officials accidentally texted U.S. war plans to journalist Jeffrey Goldberg  

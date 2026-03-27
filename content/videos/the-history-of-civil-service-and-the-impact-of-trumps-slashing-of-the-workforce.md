@@ -4,10 +4,10 @@ aliases:
   - The history of civil service and the impact of Trump's slashing of the workforce
 title: The history of civil service and the impact of Trump's slashing of the workforce
 URL: https://youtu.be/xWJdnjaD7mE
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: PBS NewsHour
-tags: 
+tags:
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # PBS NewsHour - The history of civil service and the impact of Trump's slashing of the workforce  

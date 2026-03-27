@@ -3,9 +3,9 @@ share: true
 aliases:
   - "🔬🗣️🎭 The Science of Storytelling: Why Stories Make Us Human and How to Tell Them Better"
 title: "🔬🗣️🎭 The Science of Storytelling: Why Stories Make Us Human and How to Tell Them Better"
-URL: 
-Author: 
-tags: 
+URL:
+Author:
+tags:
 affiliate link: https://amzn.to/43JcK3N
 ---
 [Home](../index.md) > [Books](./index.md)  

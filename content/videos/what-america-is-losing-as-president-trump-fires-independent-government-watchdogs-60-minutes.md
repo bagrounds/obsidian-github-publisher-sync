@@ -4,10 +4,10 @@ aliases:
   - What America is losing as President Trump fires independent government watchdogs | 60 Minutes
 title: What America is losing as President Trump fires independent government watchdogs | 60 Minutes
 URL: https://youtu.be/pkg3QzTttNM
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: 60 Minutes
-tags: 
+tags:
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 60 Minutes - What America is losing as President Trump fires independent government watchdogs | 60 Minutes  

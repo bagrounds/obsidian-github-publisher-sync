@@ -4,10 +4,10 @@ aliases:
   - 🏛️💥📈 Amy Walter and Leigh Ann Caldwell on the rise in political violence
 title: 🏛️💥📈 Amy Walter and Leigh Ann Caldwell on the rise in political violence
 URL: https://bagrounds.org/videos/
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: PBS NewsHour
-tags: 
+tags:
 youtube: https://youtu.be/j6FLxmPak4I
 ---
 [Home](../index.md) > [Videos](./index.md)  

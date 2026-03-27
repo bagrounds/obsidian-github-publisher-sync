@@ -4,8 +4,8 @@ aliases:
   - "🔌😁🧠🔬 Hardwiring Happiness: The New Brain Science of Contentment, Calm, and Confidence"
 title: "🔌😁🧠🔬 Hardwiring Happiness: The New Brain Science of Contentment, Calm, and Confidence"
 URL: https://bagrounds.org/books/hardwiring-happiness-the-brain-science-that-changes-everything
-Author: 
-tags: 
+Author:
+tags:
 affiliate link: https://amzn.to/45LixIK
 ---
 [Home](../index.md) > [Books](./index.md)  

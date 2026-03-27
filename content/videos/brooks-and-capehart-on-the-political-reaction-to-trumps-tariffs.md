@@ -4,10 +4,10 @@ aliases:
   - 👨‍💼🛑💰🗣️ Brooks and Capehart on the political reaction to Trump's tariffs
 title: 👨‍💼🛑💰🗣️ Brooks and Capehart on the political reaction to Trump's tariffs
 URL: https://youtu.be/sZMiuugYCjw
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: PBS NewsHour
-tags: 
+tags:
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 👨‍💼🛑💰🗣️ Brooks and Capehart on the political reaction to Trump's tariffs  

@@ -149,7 +149,7 @@ URL: https://bagrounds.org/topics/ansi-escape-codes
 - **More Specific:**  
     - "Advanced Linux Programming" by Mark Mitchell, Jeffrey Oldham, and Alex Samuel. 🖥️🚀 (In-depth exploration of Linux system programming.)  
 - **Fictional:**  
-    - "Neuromancer" by William Gibson. 🌐👾 (A cyberpunk classic showcasing the power of text-based interfaces in a futuristic world.)  
+    - Neuromancer by William Gibson. 🌐👾 (A cyberpunk classic showcasing the power of text-based interfaces in a futuristic world.)  
 - **Rigorous:**  
     - "Computer Graphics: Principles and Practice" by Foley, van Dam, Feiner, and Hughes. 🖥️📐 (A comprehensive and mathematically rigorous guide to computer graphics.)  
 - **Accessible:**  

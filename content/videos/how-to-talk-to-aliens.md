@@ -4,10 +4,10 @@ aliases:
   - 🗣️👽 How to Talk to Aliens
 title: 🗣️👽 How to Talk to Aliens
 URL: https://youtu.be/xna-kdXZQHQ
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: Vsauce
-tags: 
+tags:
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 🗣️👽 How to Talk to Aliens  

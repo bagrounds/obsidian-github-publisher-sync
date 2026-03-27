@@ -4,10 +4,10 @@ aliases:
   - "Sen. Bernie Sanders: NOBODY Should Have Voted for the Terrible CR"
 title: "Sen. Bernie Sanders: NOBODY Should Have Voted for the Terrible CR"
 URL: https://youtu.be/HcIahANO6Lk
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: Senator Bernie Sanders
-tags: 
+tags:
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # Senator Bernie Sanders - Sen. Bernie Sanders: NOBODY Should Have Voted for the Terrible CR  

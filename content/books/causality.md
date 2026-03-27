@@ -4,8 +4,8 @@ aliases:
   - "❓➡️⚙️ Causality: Models, Reasoning, and Inference"
 title: "❓➡️⚙️ Causality: Models, Reasoning, and Inference"
 URL: https://bagrounds.org/books/causality
-Author: 
-tags: 
+Author:
+tags:
 affiliate link: https://amzn.to/4dOAtEw
 ---
 [Home](../index.md) > [Books](./index.md)  

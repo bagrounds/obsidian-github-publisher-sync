@@ -4,10 +4,10 @@ aliases:
   - 🤫🌱🗣️ The Secret Form of Resistance No One Talks About
 title: 🤫🌱🗣️ The Secret Form of Resistance No One Talks About
 URL: https://bagrounds.org/videos/the-secret-form-of-resistance-no-one-talks-about
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: Elizabeth Cronise McLaughlin
-tags: 
+tags:
 youtube: https://youtu.be/uo0qgvkbgvM
 ---
 [Home](../index.md) > [Videos](./index.md)  

@@ -1,0 +1,44 @@
+name: Haskell CI
+
+on:
+  push:
+    branches:
+      - '**'
+
+permissions:
+  contents: read
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+    container: haskell:9.14.1
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Cache Cabal packages
+        uses: actions/cache@v4
+        with:
+          path: ~/.cabal/store
+          key: cabal-ghc914-${{ hashFiles('haskell/automation.cabal') }}
+          restore-keys: cabal-ghc914-
+
+      - name: Build
+        working-directory: haskell
+        run: cabal update && cabal build
+
+      - name: Test
+        working-directory: haskell
+        run: cabal test
+
+      - name: Stage executables
+        working-directory: haskell
+        run: |
+          mkdir -p /tmp/haskell-bin
+          cp "$(cabal list-bin run-scheduled)" /tmp/haskell-bin/
+          cp "$(cabal list-bin inject-giscus)" /tmp/haskell-bin/
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: haskell-binaries
+          path: /tmp/haskell-bin/
+          retention-days: 90

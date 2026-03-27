@@ -6,6 +6,7 @@
 - 📚 Always include a book recommendations section at the bottom of the blog post with Similar, Contrasting, and Creatively Related recommendations relevant to the post content. Do not include any links in the recommendations — just recommend books by title and author.
 - 📖 Never put book titles in italics or quotes. Just write the title plainly.
 - 🎧 Write for TTS listening. The blog owner always listens to posts via text-to-speech, so write in a style that sounds good when read aloud. Avoid relying on tables, code blocks, or back-ticked inline code to convey essential information — TTS readers skip or garble these. If a table or code block is truly necessary, always accompany it with a prose description that fully conveys the same information for audio listeners. Prefer descriptive sentences and lists over visual formatting.
+- 🔢 Always number ai-blog posts with a sequence number per day in the filename: `YYYY-MM-DD-N-slug.md` where N is the post's position that day (e.g., `2026-03-27-3-porting-internal-linking.md` is the third post on March 27). Check existing posts for that date to determine the next number. The URL and aliases in frontmatter must match the filename slug.
 
 ## Product & Engineering Specs
 - 📋 All features must be covered by a product/engineering spec in the `specs/` directory.

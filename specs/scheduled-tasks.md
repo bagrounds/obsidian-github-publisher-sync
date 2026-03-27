@@ -13,9 +13,19 @@
 
 | 🧩 Component | 📂 Path | 📝 Purpose |
 |---|---|---|
-| 📚 Scheduler | `scripts/lib/scheduler.ts` | 🧠 Pure functions: given Pacific hour → task IDs to run |
-| 🎯 Orchestrator | `scripts/run-scheduled.ts` | 🔧 Single entry point that calls library functions directly |
+| 📚 Scheduler | `scripts/lib/scheduler.ts` / `haskell/src/Automation/Scheduler.hs` | 🧠 Pure functions: given Pacific hour → task IDs to run |
+| 🎯 Orchestrator | `scripts/run-scheduled.ts` / `haskell/app/RunScheduled.hs` | 🔧 Single entry point that calls library functions directly |
 | ⚙️ Workflow | `.github/workflows/scheduled.yml` | 🕐 Hourly cron, declarative YAML only |
+
+### 🔀 Haskell Implementation
+
+🏗️ The Haskell orchestrator (RunScheduled.hs) is the active implementation used in CI.
+🐳 The executable is pre-built by the `haskell.yml` CI workflow (using the `haskell:9.14.1` Docker container) and uploaded as an artifact with 90 day retention.
+⬇️ The scheduled workflow downloads the pre-built binary from the latest successful Haskell CI run — no compilation at runtime.
+✅ Fully implemented task runners: blog-series (all 3), ai-fiction, reflection-title.
+⚠️ Stubbed task runners (log and skip): backfill-blog-images, internal-linking, social-posting.
+🔙 Rolling back to TypeScript is a workflow file revert: restore `npx tsx scripts/run-scheduled.ts`.
+📦 The TypeScript implementation remains fully functional and tested (1298 tests).
 
 ### 🔄 Data Flow
 
@@ -178,15 +188,18 @@ Pacific before making decisions via `nowPacificHour()`.
 ## 🖥️ CLI Interface
 
 ```bash
-# Run tasks for current Pacific hour
+# Run tasks for current Pacific hour (Haskell — active in CI)
+cd haskell && cabal run run-scheduled
+
+# Run tasks for current Pacific hour (TypeScript — fallback)
 npx tsx scripts/run-scheduled.ts
 
 # Simulate a specific Pacific hour (for testing)
-npx tsx scripts/run-scheduled.ts --hour 15
+cd haskell && cabal run run-scheduled -- --hour 15
 
 # Run a specific task regardless of schedule
-npx tsx scripts/run-scheduled.ts --task social-posting
-npx tsx scripts/run-scheduled.ts --task blog-series:chickie-loo
+cd haskell && cabal run run-scheduled -- --task social-posting
+cd haskell && cabal run run-scheduled -- --task blog-series:chickie-loo
 ```
 
 ### 📡 Workflow Dispatch

@@ -16,7 +16,36 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
+  build-haskell:
+    runs-on: ubuntu-latest
+    container: haskell:9.14.1
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Cache Cabal packages
+        uses: actions/cache@v4
+        with:
+          path: ~/.cabal/store
+          key: cabal-ghc914-${{ hashFiles('haskell/automation.cabal') }}
+          restore-keys: cabal-ghc914-
+
+      - name: Build inject-giscus
+        working-directory: haskell
+        run: cabal update && cabal build inject-giscus
+
+      - name: Stage executable
+        working-directory: haskell
+        run: |
+          mkdir -p /tmp/haskell-bin
+          cp "$(cabal list-bin inject-giscus)" /tmp/haskell-bin/
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: inject-giscus
+          path: /tmp/haskell-bin/inject-giscus
+
   build:
+    needs: build-haskell
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -56,10 +85,15 @@ jobs:
       - name: Build Quartz
         run: npx quartz build
 
+      - uses: actions/download-artifact@v4
+        with:
+          name: inject-giscus
+          path: bin/
+
       - name: Inject static Giscus comments
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: npx tsx scripts/inject-static-giscus.ts
+        run: chmod +x bin/inject-giscus && bin/inject-giscus public
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

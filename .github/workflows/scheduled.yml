@@ -20,6 +20,7 @@ env:
 permissions:
   contents: read
   discussions: read
+  actions: read
 
 jobs:
   run:
@@ -54,6 +55,18 @@ jobs:
           path: /tmp/obsidian-vault-cache
           key: obsidian-vault-${{ github.run_id }}
           restore-keys: obsidian-vault-
+
+      - name: Download pre-built run-scheduled binary
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          RUN_ID=$(gh run list --workflow=haskell.yml --status=success --limit=1 --json databaseId -q '.[0].databaseId')
+          if [ -z "$RUN_ID" ]; then
+            echo "❌ No successful haskell.yml run found. The Haskell CI must run successfully at least once before scheduled tasks can execute."
+            exit 1
+          fi
+          gh run download "$RUN_ID" --name haskell-binaries --dir bin/
+          chmod +x bin/run-scheduled
 
       - name: Run Scheduled Tasks
         env:
@@ -92,7 +105,8 @@ jobs:
           DISABLE_BLUESKY: ${{ vars.DISABLE_BLUESKY || '' }}
           DISABLE_MASTODON: ${{ vars.DISABLE_MASTODON || '' }}
           LINKING_MODEL: ${{ vars.LINKING_MODEL || 'gemini-3.1-flash-lite-preview' }}
+          REPO_ROOT: ${{ github.workspace }}
         run: >-
-          npx tsx scripts/run-scheduled.ts
+          bin/run-scheduled
           ${{ github.event.inputs.task && format('--task {0}', github.event.inputs.task) || '' }}
           ${{ github.event.inputs.hour && format('--hour {0}', github.event.inputs.hour) || '' }}

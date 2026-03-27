@@ -4,8 +4,8 @@ aliases:
   - 💡🔧📏🔮〰️ Understanding and Implementing the Kalman Filter
 title: 💡🔧📏🔮〰️ Understanding and Implementing the Kalman Filter
 URL: https://bagrounds.org/topics/understanding-and-implementing-the-kalman-filter
-Author: 
-tags: 
+Author:
+tags:
 ---
 [Home](../index.md) > [Topics](./index.md)  
 # 💡🔧📏🔮〰️ Understanding and Implementing the Kalman Filter  

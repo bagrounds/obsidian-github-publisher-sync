@@ -4,10 +4,10 @@ aliases:
   - "News Wrap: Senate pulls all-nighter to pass Republican budget bill"
 title: "News Wrap: Senate pulls all-nighter to pass Republican budget bill"
 URL: https://youtu.be/foD8g6bpZpM
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: PBS NewsHour
-tags: 
+tags:
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # News Wrap: Senate pulls all-nighter to pass Republican budget bill  

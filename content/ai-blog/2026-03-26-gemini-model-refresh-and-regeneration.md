@@ -9,7 +9,7 @@ image_date: 2026-03-26T20:11:32.910Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A clean, minimalist 3D isometric illustration set against a soft, neutral gradient background. The central element is a glowing, stylized crystalline brain structure composed of interconnected geometric nodes, representing artificial intelligence. Several circular, translucent refresh arrows spiral around the brain in a soft cyan and electric blue gradient, symbolizing iteration and improvement. Floating nearby are neat, rectangular UI cards with abstract bars representing data flow. The lighting is cinematic and polished, with subtle soft-focus bokeh highlights in the background to convey a sense of modern technology and high-quality processing. The overall aesthetic is professional, crisp, and focused on the concept of intelligent, self-correcting systems.
 ---
-[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-25-reflection-title-generation.md) [⏭️](./2026-03-26-haskell-port-takes-flight.md)  
+[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-25-reflection-title-generation.md) [⏭️](../../2026-03-26-haskell-port-takes-flight.md)  
   
 # ♻️ Gemini Model Refresh and Blog Post Regeneration  
 ![ai-blog-2026-03-26-gemini-model-refresh-and-regeneration](../ai-blog-2026-03-26-gemini-model-refresh-and-regeneration.jpg)  

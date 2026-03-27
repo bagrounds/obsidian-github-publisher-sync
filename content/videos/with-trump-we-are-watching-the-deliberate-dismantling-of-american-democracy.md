@@ -4,10 +4,10 @@ aliases:
   - 👹🇺🇸📉🔨👁️ With Trump “We Are Watching the Deliberate Dismantling of American Democracy”
 title: 👹🇺🇸📉🔨👁️ With Trump “We Are Watching the Deliberate Dismantling of American Democracy”
 URL: https://youtu.be/S5bMHZBoFgo
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: Katie Couric
-tags: 
+tags:
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 👹🇺🇸📉🔨👁️ With Trump “We Are Watching the Deliberate Dismantling of American Democracy”  

@@ -4,10 +4,10 @@ aliases:
   - ✂️🏛️😡 Brooks and Capehart on how voters are reacting to federal cuts
 title: ✂️🏛️😡 Brooks and Capehart on how voters are reacting to federal cuts
 URL: https://youtu.be/2Ocea9sJHrI
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: PBS NewsHour
-tags: 
+tags:
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # ✂️🏛️😡 Brooks and Capehart on how voters are reacting to federal cuts  

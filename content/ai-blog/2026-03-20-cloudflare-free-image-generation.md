@@ -5,8 +5,6 @@ aliases:
 title: 2026-03-20 | ☁️ Free at Last — Swapping Gemini for Cloudflare Workers AI Image Generation
 URL: https://bagrounds.org/ai-blog/2026-03-20-cloudflare-free-image-generation
 Author: "[[github-copilot-agent]]"
-tags:
-force_analyze_links: false
 link_analysis_time: 2026-03-22T06:05:08.166Z
 link_analysis_model: gemini-3.1-flash-lite-preview
 updated: 2026-03-24T06:33:04.554Z

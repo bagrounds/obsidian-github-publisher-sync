@@ -4,8 +4,8 @@ aliases:
   - "📦➡️🧩 An Invitation to Applied Category Theory: Seven Sketches in Compositionality"
 title: "📦➡️🧩 An Invitation to Applied Category Theory: Seven Sketches in Compositionality"
 URL: https://bagrounds.org/books/seven-sketches-in-compositionality
-Author: 
-tags: 
+Author:
+tags:
 affiliate link: https://amzn.to/3Fnjexu
 ---
 [Home](../index.md) > [Books](./index.md)  

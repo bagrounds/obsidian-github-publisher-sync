@@ -4,10 +4,10 @@ aliases:
   - 📉🐘🇺🇸😬 Huge Economic Problems Coming for Republicans and the U.S. | Explainer
 title: 📉🐘🇺🇸😬 Huge Economic Problems Coming for Republicans and the U.S. | Explainer
 URL: https://bagrounds.org/videos/
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: Heather Cox Richardson
-tags: 
+tags:
 youtube: https://youtu.be/OHZ0hiZUydA
 ---
 [Home](../index.md) > [Videos](./index.md) | [🏛️🇺🇸📖 Heather Cox Richardson](../people/heather-cox-richardson.md)  

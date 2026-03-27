@@ -4,8 +4,8 @@ aliases:
   - "🎁➡️🏆 Give and Take: A Revolutionary Approach to Success"
 title: "🎁➡️🏆 Give and Take: A Revolutionary Approach to Success"
 URL: https://bagrounds.org/books/give-and-take
-Author: 
-tags: 
+Author:
+tags:
 affiliate link: https://amzn.to/3ZCD26X
 CTA: 🤝 Cultivate generosity.
 ---

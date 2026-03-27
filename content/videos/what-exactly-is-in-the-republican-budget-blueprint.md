@@ -4,10 +4,10 @@ aliases:
   - What EXACTLY is in the Republican Budget Blueprint?
 title: What EXACTLY is in the Republican Budget Blueprint?
 URL: https://youtu.be/rg3RUeH3Qlk
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: Senator Patty Murray
-tags: 
+tags:
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # What EXACTLY is in the Republican Budget Blueprint?  

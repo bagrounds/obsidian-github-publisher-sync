@@ -4,8 +4,8 @@ aliases:
   - 📊⛓️👑 📏 The Tyranny of Metrics
 title: 📊⛓️👑 📏 The Tyranny of Metrics
 URL: https://bagrounds.org/books/the-tyranny-of-metrics
-Author: 
-tags: 
+Author:
+tags:
 affiliate link: https://amzn.to/457gPkN
 CTA: 🛑 Question measurement.
 ---

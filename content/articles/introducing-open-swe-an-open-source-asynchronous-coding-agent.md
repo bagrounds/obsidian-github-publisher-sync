@@ -4,8 +4,8 @@ aliases:
   - "🤖🗣️🔑 Introducing Open SWE: An Open Source Asynchronous Coding Agent"
 title: "🤖🗣️🔑 Introducing Open SWE: An Open Source Asynchronous Coding Agent"
 URL: https://bagrounds.org/articles/introducing-open-swe-an-open-source-asynchronous-coding-agent
-Author: 
-tags: 
+Author:
+tags:
 ---
 [Home](../index.md) > [Articles](./index.md)  
 # [🤖🗣️🔑 Introducing Open SWE: An Open Source Asynchronous Coding Agent](https://blog.langchain.com/introducing-open-swe-an-open-source-asynchronous-coding-agent)  

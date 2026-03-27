@@ -4,8 +4,8 @@ aliases:
   - 🖤🐲⛈️ Onyx Storm
 title: 🖤🐲⛈️ Onyx Storm
 URL: https://bagrounds.org/books/onyx-storm
-Author: 
-tags: 
+Author:
+tags:
 affiliate link: https://amzn.to/3Z95D3u
 ---
 [Home](../index.md) > [Books](./index.md)  

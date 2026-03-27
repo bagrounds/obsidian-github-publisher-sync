@@ -4,10 +4,10 @@ aliases:
   - How new job cuts at the nation’s leading health agency affect Americans
 title: How new job cuts at the nation’s leading health agency affect Americans
 URL: https://youtu.be/jTpkXW1d53M
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: PBS NewsHour
-tags: 
+tags:
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # How new job cuts at the nation’s leading health agency affect Americans  

@@ -4,8 +4,8 @@ aliases:
   - 🏛️🗞️🦊 More than 50 House Democrats demand answers after whistleblower report on DOGE
 title: 🏛️🗞️🦊 More than 50 House Democrats demand answers after whistleblower report on DOGE
 URL: https://bagrounds.org/articles/more-than-50-house-democrats-demand-answers-after-whistleblower-report-on-doge
-Author: 
-tags: 
+Author:
+tags:
 ---
 [Home](../index.md) > [Articles](./index.md)  
 # [🏛️🗞️🦊 More than 50 House Democrats demand answers after whistleblower report on DOGE](https://www.npr.org/2025/04/24/nx-s1-5375118/congress-doge-nlrb-whistleblower)  

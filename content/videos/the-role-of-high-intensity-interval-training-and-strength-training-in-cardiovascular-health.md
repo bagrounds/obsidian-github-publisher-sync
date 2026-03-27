@@ -4,10 +4,10 @@ aliases:
   - ❤️‍🔥🏋️🏃 The Role of High-Intensity Interval Training and Strength Training in Cardiovascular Health
 title: ❤️‍🔥🏋️🏃 The Role of High-Intensity Interval Training and Strength Training in Cardiovascular Health
 URL: https://bagrounds.org/videos/the-role-of-high-intensity-interval-training-and-strength-training-in-cardiovascular-health
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: Mayo Clinic
-tags: 
+tags:
 youtube: https://youtu.be/RBYL-sj-dRk
 ---
 [Home](../index.md) > [Videos](./index.md)  

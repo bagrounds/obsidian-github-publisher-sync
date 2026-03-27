@@ -4,8 +4,8 @@ aliases:
   - "🕊️🤝 Nonviolent Communication: A Language of Life"
 title: "🕊️🤝 Nonviolent Communication: A Language of Life"
 URL: https://bagrounds.org/books/nonviolent-communication
-Author: 
-tags: 
+Author:
+tags:
 affiliate link: https://amzn.to/3T980zy
 CTA: 🕊️ Practice empathy.
 ---

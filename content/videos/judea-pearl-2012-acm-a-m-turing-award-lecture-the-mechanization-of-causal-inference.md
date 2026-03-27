@@ -4,8 +4,8 @@ aliases:
   - ⚙️❓🤖 Judea Pearl, 2012 ACM A.M. Turing Award Lecture «The Mechanization of Causal Inference»
 title: ⚙️❓🤖 Judea Pearl, 2012 ACM A.M. Turing Award Lecture «The Mechanization of Causal Inference»
 URL: https://youtu.be/iNm4nFBFmvo
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: Association for Computing Machinery (ACM)
 tags: []
 ---

@@ -4,8 +4,8 @@ aliases:
   - "🇸🇪🇩🇰🇳🇴🇫🇮🧩 The Nordic Theory of Everything: In Search of a Better Life"
 title: "🇸🇪🇩🇰🇳🇴🇫🇮🧩 The Nordic Theory of Everything: In Search of a Better Life"
 URL: https://bagrounds.org/books/the-nordic-theory-of-everything
-Author: 
-tags: 
+Author:
+tags:
 affiliate link: https://amzn.to/4jCN5Qm
 CTA: 🌍 Explore well-being.
 ---

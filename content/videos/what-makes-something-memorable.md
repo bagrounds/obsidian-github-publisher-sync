@@ -4,10 +4,10 @@ aliases:
   - What makes something memorable?
 title: What makes something memorable?
 URL: https://youtu.be/UW4EMIucmHs
-Author: 
+Author:
 Platform: "#YouTube"
 Channel: "[[Benjamin Keep, PhD, JD]]"
-tags: 
+tags:
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # What makes something memorable?  

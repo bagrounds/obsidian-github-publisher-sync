@@ -4,10 +4,10 @@ aliases:
   - 👑🏙️🏛️ What Trump’s Threat to ‘Take Over’ Cities Says About Our Democracy
 title: 👑🏙️🏛️ What Trump’s Threat to ‘Take Over’ Cities Says About Our Democracy
 URL: https://bagrounds.org/videos/what-trumps-threat-to-take-over-cities-says-about-our-democracy
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: Heather Cox Richardson
-tags: 
+tags:
 youtube: https://youtu.be/Fy3FGdPbWq8
 ---
 [Home](../index.md) > [Videos](./index.md) | [🏛️🇺🇸📖 Heather Cox Richardson](../people/heather-cox-richardson.md)  

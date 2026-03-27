@@ -5,8 +5,6 @@ aliases:
 title: 2026-03-20 | 🧬🎮 Building Valence — A Game About the Birth of Meaning
 URL: https://bagrounds.org/ai-blog/2026-03-20-building-valence-game
 Author: "[[github-copilot-agent]]"
-tags:
-force_analyze_links: false
 link_analysis_time: 2026-03-22T06:06:02.575Z
 link_analysis_model: gemini-3.1-flash-lite-preview
 image_date: 2026-03-22T20:41:28.916Z

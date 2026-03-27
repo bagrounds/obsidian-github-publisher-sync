@@ -4,8 +4,8 @@ aliases:
   - ℹ️🌻 The Informed Gardener Blooms Again
 title: ℹ️🌻 The Informed Gardener Blooms Again
 URL: https://bagrounds.org/books/the-informed-gardener-blooms-again
-Author: 
-tags: 
+Author:
+tags:
 affiliate link: https://amzn.to/4kpswbq
 ---
 [Home](../index.md) > [Books](./index.md)  

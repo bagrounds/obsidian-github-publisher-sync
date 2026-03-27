@@ -4,10 +4,10 @@ aliases:
   - "Just the Facts About the US Federal Budget: Steve Ballmer Talks Through the Numbers"
 title: "Just the Facts About the US Federal Budget: Steve Ballmer Talks Through the Numbers"
 URL: https://youtu.be/aQoh9jdRZPM
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: USAFacts
-tags: 
+tags:
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # USAFacts - Just the Facts About the US Federal Budget: Steve Ballmer Talks Through the Numbers  

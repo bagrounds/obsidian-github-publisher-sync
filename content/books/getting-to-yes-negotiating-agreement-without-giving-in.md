@@ -8,6 +8,8 @@ affiliate link: https://amzn.to/4mWV0Lo
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 👉🤝 Getting to Yes: Negotiating Agreement Without Giving In  
+[🛒 Getting to Yes: Negotiating Agreement Without Giving In. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4mWV0Lo)  
+  
 ## 📖 Book Report: 🤝 Getting to Yes: Negotiating Agreement Without Giving In  
   
 ### ℹ️ Introduction  

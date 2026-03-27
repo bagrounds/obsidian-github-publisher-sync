@@ -4,8 +4,8 @@ aliases:
   - 💀⚠️ What the Holocaust Teaches
 title: 📜💀⚠️ What the Holocaust Teaches
 URL: https://bagrounds.org/articles/what-the-holocaust-teaches-us
-Author: 
-tags: 
+Author:
+tags:
 ---
 [Home](../index.md) > [Articles](./index.md)  
 # [📜💀⚠️ What the Holocaust Teaches Us](https://time.com/7278818/holocaust-remembrance-lessons)  

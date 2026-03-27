@@ -4,8 +4,8 @@ aliases:
   - "👥⚔️🏛️ The People vs. Democracy: Why Our 🗽 Freedom Is in ⚠️ Danger and How to Save It"
 title: "👥⚔️🏛️ The People vs. Democracy: Why Our 🗽 Freedom Is in ⚠️ Danger and How to Save It"
 URL: https://bagrounds.org/books/the-people-vs-democracy
-Author: 
-tags: 
+Author:
+tags:
 affiliate link: https://amzn.to/43rSo0c
 ---
 [Home](../index.md) > [Books](./index.md)  

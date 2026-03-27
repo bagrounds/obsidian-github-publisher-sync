@@ -4,8 +4,8 @@ aliases:
   - 🧠🧩🛠️ Assessment and Intervention for Executive Function Difficulties
 title: 🧠🧩🛠️ Assessment and Intervention for Executive Function Difficulties
 URL: https://bagrounds.org/books/executive-functions-development-assessment-and-intervention
-Author: 
-tags: 
+Author:
+tags:
 affiliate link: https://amzn.to/43rYNsf
 ---
 [Home](../index.md) > [Books](./index.md)  
@@ -68,7 +68,7 @@ This book offers a surprisingly broad and unified perspective on EFs by integrat
 * **Best Alternate Book on the Same Topic:** "Executive Functions in Children and Adolescents: A Practical Guide to Assessment and Intervention" by Peg Dawson and Richard Guare. This book offers a more practical, hands-on approach to EF intervention. 🤝  
 * **Best Book Tangentially Related:** "[Thinking, Fast and Slow](./thinking-fast-and-slow.md)" by Daniel Kahneman. This book provides insights into the cognitive processes that underlie EFs, particularly decision-making and self-control. 🧠  
 * **Best Book Diametrically Opposed:** "The Myth of Executive Functioning: Problems With a Popular Idea in Education" by Jerome T. Schultz. This book provides a critical perspective on the concept of EFs, questioning its validity and usefulness. 🤨  
-* **Best Fiction Book That Incorporates Related Ideas:** "Flowers for Algernon" by Daniel Keyes. This novel explores the ethical and psychological implications of cognitive enhancement, raising questions about the nature of intelligence and self-awareness. 🌹  
+* **Best Fiction Book That Incorporates Related Ideas:** Flowers for Algernon by Daniel Keyes. This novel explores the ethical and psychological implications of cognitive enhancement, raising questions about the nature of intelligence and self-awareness. 🌹  
 * **Best Book More General:** "Principles of Neuropsychology" by Eric Zillmer and Douglas P. Fields. This book provides a broader understanding of brain function and its relationship to behavior. 🧠  
 * **Best Book More Specific:** "Working Memory and Executive Function: A Life-Span View" edited by Joshua M. Friedman and Elizabeth A. Ricker. This book provides a deep dive into the research on working memory and its role in EFs. 🔍  
 * **Best Book More Rigorous:** "Handbook of Executive Functioning" edited by Giuseppe Iurato, Sergio Borella, and Rossana De Beni. This text is more geared towards researchers. 🧑‍🔬  

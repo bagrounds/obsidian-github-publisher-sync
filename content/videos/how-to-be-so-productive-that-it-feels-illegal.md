@@ -4,10 +4,10 @@ aliases:
   - 🚀📈🤯🚨 How To Be So Productive That It Feels ILLEGAL
 title: 🚀📈🤯🚨 How To Be So Productive That It Feels ILLEGAL
 URL: https://bagrounds.org/videos/how-to-be-so-productive-that-it-feels-illegal
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: Justin Sung
-tags: 
+tags:
 youtube: https://youtu.be/4FXScrmYKQ0
 ---
 [Home](../index.md) > [Videos](./index.md) | [🧠👨‍🎓📈 Justin Sung](../people/justin-sung.md)  

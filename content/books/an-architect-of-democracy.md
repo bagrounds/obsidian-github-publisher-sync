@@ -4,8 +4,8 @@ aliases:
   - "✍️🗺️🏗️🗳️ An Architect of Democracy: Building a Mosaic of Peace"
 title: "✍️🗺️🏗️🗳️ An Architect of Democracy: Building a Mosaic of Peace"
 URL: https://bagrounds.org/books/an-architect-of-democracy
-Author: 
-tags: 
+Author:
+tags:
 affiliate link: https://amzn.to/4mOSl6u
 CTA: Construct peace.
 ---

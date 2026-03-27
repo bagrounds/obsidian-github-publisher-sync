@@ -4,10 +4,10 @@ aliases:
   - 🤖📈🌟 The Only Trait for Success in the AI Era—How to Build It | Carnegie Mellon University Po-Shen Loh
 title: 🤖📈🌟 The Only Trait for Success in the AI Era—How to Build It | Carnegie Mellon University Po-Shen Loh
 URL: https://bagrounds.org/videos/the-only-trait-for-success-in-the-ai-era-how-to-build-it-carnegie-mellon-university-po-shen-loh
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: EO
-tags: 
+tags:
 youtube: https://youtu.be/xWYb7tImErI
 ---
 [Home](../index.md) > [Videos](./index.md)  

@@ -4,8 +4,8 @@ aliases:
   - "➕🎲👀👶 Bayes' Theorem Examples: A Visual Introduction For Beginners"
 title: "➕🎲👀👶 Bayes' Theorem Examples: A Visual Introduction For Beginners"
 URL: https://bagrounds.org/books/bayes-theorem-examples
-Author: 
-tags: 
+Author:
+tags:
 affiliate link: https://amzn.to/43TFRTr
 ---
 [Home](../index.md) > [Books](./index.md)  

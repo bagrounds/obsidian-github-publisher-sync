@@ -4,10 +4,10 @@ aliases:
   - 👴🏻🪖🇺🇸🤥👹❓ Retired military leaders analyze Trump's deployment of Marines and National Guard in LAW
 title: 👴🏻🪖🇺🇸🤥👹❓ Retired military leaders analyze Trump's deployment of Marines and National Guard in LAW
 URL: https://youtu.be/DO3sCf2jZeU
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: PBS NewsHour
-tags: 
+tags:
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 👴🏻🪖🇺🇸🤥👹❓ Retired military leaders analyze Trump's deployment of Marines and National Guard in LAW  

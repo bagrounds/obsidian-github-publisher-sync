@@ -4,8 +4,8 @@ aliases:
   - "🧠🌐💡 The Extended Mind: The Power of Thinking Outside the Brain"
 title: "🧠🌐💡 The Extended Mind: The Power of Thinking Outside the Brain"
 URL: https://bagrounds.org/books/the-extended-mind
-Author: 
-tags: 
+Author:
+tags:
 affiliate link: https://amzn.to/3SX5Sex
 ---
 [Home](../index.md) > [Books](./index.md)  

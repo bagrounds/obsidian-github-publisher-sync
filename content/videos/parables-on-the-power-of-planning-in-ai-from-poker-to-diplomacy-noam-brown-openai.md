@@ -4,10 +4,10 @@ aliases:
   - "🗺️♟️🤖🤝 Parables on the Power of Planning in AI: From Poker to Diplomacy: Noam Brown (OpenAI)"
 title: "🗺️♟️🤖🤝 Parables on the Power of Planning in AI: From Poker to Diplomacy: Noam Brown (OpenAI)"
 URL: https://youtu.be/eaAonE58sLU
-Author: 
+Author:
 Platform: "#YouTube"
 Channel: "[[Paul G. Allen School]]"
-tags: 
+tags:
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 🗺️♟️🤖🤝 Parables on the Power of Planning in AI: From Poker to Diplomacy: Noam Brown (OpenAI)  

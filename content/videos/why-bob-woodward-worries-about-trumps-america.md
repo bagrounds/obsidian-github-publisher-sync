@@ -4,10 +4,10 @@ aliases:
   - Why Bob Woodward worries about Trump's America
 title: Why Bob Woodward worries about Trump's America
 URL: https://youtu.be/b5Zy5YQ2WFY
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: Washington Post
-tags: 
+tags:
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # Why Bob Woodward worries about Trump's America  

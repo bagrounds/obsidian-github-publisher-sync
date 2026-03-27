@@ -4,10 +4,10 @@ aliases:
   - 🔋🎯💯⚡ THE POWER OF FULL ENGAGEMENT by Jim Loehr and Tony Schwartz | Animated Core Message
 title: 🔋🎯💯⚡ THE POWER OF FULL ENGAGEMENT by Jim Loehr and Tony Schwartz | Animated Core Message
 URL: https://bagrounds.org/videos/the-power-of-full-engagement-by-jim-loehr-and-tony-schwartz-animated-core-message
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: Productivity Game
-tags: 
+tags:
 youtube: https://youtu.be/QRjqGWLLgUY
 ---
 [Home](../index.md) > [Videos](./index.md) | [🔋📈 The Power of Full Engagement: Managing Energy, Not Time, Is the Key to High Performance and Personal Renewal](../books/the-power-of-full-engagement-managing-energy-not-time-is-the-key-to-high-performance-and-personal-renewal.md)  

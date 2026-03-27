@@ -4,8 +4,8 @@ aliases:
   - "👶🧠🫨❓ What's Going On in There?: How the Brain and Mind Develop in the First Five Years of Life"
 title: "👶🧠🫨❓ What's Going On in There?: How the Brain and Mind Develop in the First Five Years of Life"
 URL: https://bagrounds.org/books/whats-going-on-in-there
-Author: 
-tags: 
+Author:
+tags:
 affiliate link: https://amzn.to/4koZ9G2
 ---
 [Home](../index.md) > [Books](./index.md)  

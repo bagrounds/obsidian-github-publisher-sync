@@ -4,10 +4,10 @@ aliases:
   - 📓 Theme System Journal
 title: 📓 This Journal Keeps Me Productive (& Maybe You Too)
 URL: https://youtu.be/fSwpe8r50_o
-Author: 
+Author:
 Platform: "#YouTube"
-Channel: 
-tags: 
+Channel:
+tags:
 ---
 [Home](../index.md) > [Videos](./index.md) | [⏮️ Your Theme](./your-theme.md) [⏭️ 2025 Yearly Themes](./2025-yearly-themes.md) | [📒 Bullet Journal](./bullet-journal.md)  
 # This Journal Keeps Me Productive (and Maybe You Too)  

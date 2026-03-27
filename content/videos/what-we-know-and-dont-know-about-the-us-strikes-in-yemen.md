@@ -4,10 +4,10 @@ aliases:
   - What we know — and don't know — about the U.S. strikes in Yemen
 title: What we know — and don't know — about the U.S. strikes in Yemen
 URL: https://youtu.be/WT9UI7mNzBY
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: PBS NewsHour
-tags: 
+tags:
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # What we know — and don't know — about the U.S. strikes in Yemen  

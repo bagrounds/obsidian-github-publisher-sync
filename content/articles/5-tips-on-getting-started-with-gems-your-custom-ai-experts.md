@@ -4,8 +4,8 @@ aliases:
   - 🌱🤖⚙️🖐️ 5 tips on getting started with Gems, your custom AI experts
 title: 🌱🤖⚙️🖐️ 5 tips on getting started with Gems, your custom AI experts
 URL: https://bagrounds.org/articles/5-tips-on-getting-started-with-gems-your-custom-ai-experts
-Author: 
-tags: 
+Author:
+tags:
 ---
 [Home](../index.md) > [Articles](./index.md)  
 # [🌱🤖⚙️🖐️ 5 tips on getting started with Gems, your custom AI experts](https://blog.google/products/gemini/google-gems-tips)  

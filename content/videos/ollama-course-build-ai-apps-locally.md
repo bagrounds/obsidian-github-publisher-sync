@@ -4,10 +4,10 @@ aliases:
   - 💻🤖🏠📚 Ollama Course – Build AI Apps Locally
 title: 💻🤖🏠📚 Ollama Course – Build AI Apps Locally
 URL: https://youtu.be/GWB9ApTPTv4
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: freeCodeCamp.org
-tags: 
+tags:
 ---
   
 [Home](../index.md) > [Videos](./index.md)  

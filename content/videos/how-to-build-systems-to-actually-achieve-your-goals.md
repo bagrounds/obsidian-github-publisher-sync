@@ -4,10 +4,10 @@ aliases:
   - 🎯🪜🏗️✅ How to Build Systems to Actually Achieve Your Goals
 title: 🎯🪜🏗️✅ How to Build Systems to Actually Achieve Your Goals
 URL: https://bagrounds.org/videos/how-to-build-systems-to-actually-achieve-your-goals
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: Justin Sung
-tags: 
+tags:
 youtube: https://youtu.be/fXyRprdoEoE
 ---
 [Home](../index.md) > [Videos](./index.md) | [🧠👨‍🎓📈 Justin Sung](../people/justin-sung.md)  

@@ -5,6 +5,8 @@ aliases:
 URL: https://bagrounds.org/books/rhs-gardening-through-the-year
 share: true
 affiliate link: https://amzn.to/3FD3Dd1
+tags:
+  - gardening
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🗓️🌷 RHS Gardening Through the Year  

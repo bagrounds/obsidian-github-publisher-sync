@@ -4,10 +4,10 @@ aliases:
   - 🥱💭✂️🎬🫡 How to Force Your Brain To Be Motivated (when you don’t feel like it)
 title: 🥱💭✂️🎬🫡 How to Force Your Brain To Be Motivated (when you don’t feel like it)
 URL: https://youtu.be/RMB3NsQotvM
-Author: 
+Author:
 Platform: "#YouTube"
 Channel: "[[Justin Sung]]"
-tags: 
+tags:
 ---
 [Home](../index.md) > [Videos](./index.md) | [🧠👨‍🎓📈 Justin Sung](../people/justin-sung.md)  
 # 🥱💭✂️🎬🫡 How to Force Your Brain To Be Motivated (when you don’t feel like it)  

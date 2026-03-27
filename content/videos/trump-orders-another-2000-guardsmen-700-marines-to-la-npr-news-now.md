@@ -4,10 +4,10 @@ aliases:
   - 👨‍⚖️💂‍♂️🚨🇺🇸 Trump Orders Another 2,000 Guardsmen, 700 Marines To LA | NPR News Now
 title: 👨‍⚖️💂‍♂️🚨🇺🇸 Trump Orders Another 2,000 Guardsmen, 700 Marines To LA | NPR News Now
 URL: https://bagrounds.org/videos/trump-orders-another-2000-guardsmen-700-marines-to-la-npr-news-now
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: NPR
-tags: 
+tags:
 youtube: https://youtu.be/c0NjmETIR0s
 ---
 [Home](../index.md) > [Videos](./index.md)  

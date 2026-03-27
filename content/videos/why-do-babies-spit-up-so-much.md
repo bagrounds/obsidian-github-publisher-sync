@@ -4,10 +4,10 @@ aliases:
   - Why Do Babies Spit Up So Much?
 title: Why Do Babies Spit Up So Much?
 URL: https://youtube.com/watch?v=vpckj4w_EWY
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: My Pocket Pediatrician
-tags: 
+tags:
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # Why Do Babies Spit Up So Much?  

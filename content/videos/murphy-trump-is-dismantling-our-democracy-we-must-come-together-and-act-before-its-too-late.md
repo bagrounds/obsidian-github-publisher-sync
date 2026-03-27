@@ -4,10 +4,10 @@ aliases:
   - "Murphy: Trump Is Dismantling Our Democracy. We Must Come Together And Act Before It’s Too Late."
 title: "Murphy: Trump Is Dismantling Our Democracy. We Must Come Together And Act Before It’s Too Late."
 URL: https://youtu.be/7aDbEmHo9Fo
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: Senator Chris Murphy
-tags: 
+tags:
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # Murphy: Trump Is Dismantling Our Democracy. We Must Come Together And Act Before It’s Too Late.  

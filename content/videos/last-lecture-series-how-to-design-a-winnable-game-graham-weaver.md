@@ -4,10 +4,10 @@ aliases:
   - "🎓🎮🏆✨ Last Lecture Series: How to Design a Winnable Game – Graham Weaver"
 title: "🎓🎮🏆✨ Last Lecture Series: How to Design a Winnable Game – Graham Weaver"
 URL: https://bagrounds.org/videos/last-lecture-series-how-to-design-a-winnable-game-graham-weaver
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: Stanford Graduate School of Business
-tags: 
+tags:
 youtube: https://youtu.be/0SQor2z2QAU
 ---
 [Home](../index.md) > [Videos](./index.md)  

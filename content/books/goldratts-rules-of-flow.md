@@ -4,8 +4,8 @@ aliases:
   - 📏🌊 Goldratt's Rules of Flow
 title: " 📏🌊 Goldratt's Rules of Flow"
 URL: https://bagrounds.org/books/goldratts-rules-of-flow
-Author: 
-tags: 
+Author:
+tags:
 affiliate link: https://amzn.to/3Z7Ba5N
 CTA: Optimize flow.
 ---

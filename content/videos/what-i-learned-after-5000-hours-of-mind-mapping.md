@@ -4,10 +4,10 @@ aliases:
   - 🧠🗺️💡🔑 What I Learned after 5000 Hours of Mind Mapping
 title: 🧠🗺️💡🔑 What I Learned after 5000 Hours of Mind Mapping
 URL: https://youtu.be/NqxUExCZJ5Y
-Author: 
+Author:
 Platform: "#YouTube"
 Channel: "[[Justin Sung]]"
-tags: 
+tags:
 ---
 [Home](../index.md) > [Videos](./index.md) | [🧠👨‍🎓📈 Justin Sung](../people/justin-sung.md)  
 # 🧠🗺️💡🔑 What I Learned after 5000 Hours of Mind Mapping  

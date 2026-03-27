@@ -4,10 +4,10 @@ aliases:
   - 🤕➡️👁️➕ Your reality narrows after trauma — here’s how to expand it | Bessel van der Kolk
 title: 🤕➡️👁️➕ Your reality narrows after trauma — here’s how to expand it | Bessel van der Kolk
 URL: https://youtu.be/IMsAmWA7so0
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: Big Think
-tags: 
+tags:
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 🤕➡️👁️➕ Your reality narrows after trauma — here’s how to expand it | Bessel van der Kolk  

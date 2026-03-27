@@ -4,8 +4,8 @@ aliases:
   - "🧠🤓📈💡 Head First Statistics: A Brain-Friendly Guide"
 title: "🧠🤓📈💡 Head First Statistics: A Brain-Friendly Guide"
 URL: https://bagrounds.org/books/head-first-statistics
-Author: 
-tags: 
+Author:
+tags:
 affiliate link: https://amzn.to/4jzIcaU
 ---
 [Home](../index.md) > [Books](./index.md)  

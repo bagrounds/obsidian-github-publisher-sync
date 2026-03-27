@@ -4,10 +4,10 @@ aliases:
   - 👹🔌🤑 How Trump is using his power to profit and why no one will stop him
 title: 👹🔌🤑 How Trump is using his power to profit and why no one will stop him
 URL: https://youtu.be/1cYsRyCcTFA
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: Washington Week PBS
-tags: 
+tags:
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 👹🔌🤑 How Trump is using his power to profit and why no one will stop him  

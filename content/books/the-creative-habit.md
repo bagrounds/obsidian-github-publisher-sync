@@ -4,8 +4,8 @@ aliases:
   - "💡🌱♾️ The Creative Habit: Learn It and Use It for Life"
 title: "💡🌱♾️ The Creative Habit: Learn It and Use It for Life"
 URL: https://bagrounds.org/books/the-creative-habit
-Author: 
-tags: 
+Author:
+tags:
 affiliate link: https://amzn.to/4dUcuUE
 ---
 [Home](../index.md) > [Books](./index.md)  

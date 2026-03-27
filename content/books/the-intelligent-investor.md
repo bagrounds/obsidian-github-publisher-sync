@@ -4,8 +4,8 @@ aliases:
   - "🧠📈💰 The Intelligent Investor: The Definitive Book on Value Investing"
 title: "🧠📈💰 The Intelligent Investor: The Definitive Book on Value Investing"
 URL: https://bagrounds.org/books/the-intelligent-investor
-Author: 
-tags: 
+Author:
+tags:
 affiliate link: https://amzn.to/4mM0qbY
 ---
 [Home](../index.md) > [Books](./index.md)  

@@ -4,10 +4,10 @@ aliases:
   - 🇺🇸🚫➡️🇺🇦⚔️🇷🇺 U.S. withholds weapons promised to Ukraine as Russian forces gain more territory
 title: 🇺🇸🚫➡️🇺🇦⚔️🇷🇺 U.S. withholds weapons promised to Ukraine as Russian forces gain more territory
 URL: https://bagrounds.org/videos/
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: PBS NewsHour
-tags: 
+tags:
 youtube: https://youtu.be/d4aLV8sKvZM
 ---
 [Home](../index.md) > [Videos](./index.md)  

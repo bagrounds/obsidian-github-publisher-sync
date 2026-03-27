@@ -4,10 +4,10 @@ aliases:
   - 💰🔄 Trump’s mega bill ‘hasn’t even cut taxes, it’s redistributed them’ | Justin Wolfers
 title: 💰🔄 Trump’s mega bill ‘hasn’t even cut taxes, it’s redistributed them’ | Justin Wolfers
 URL: https://bagrounds.org/videos/trumps-mega-bill-hasnt-even-cut-taxes-its-redistributed-them-justin-wolfers
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: Times Radio
-tags: 
+tags:
 youtube: https://youtu.be/7duenc71Uok
 ---
 [Home](../index.md) > [Videos](./index.md)  

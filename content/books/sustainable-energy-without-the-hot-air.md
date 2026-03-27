@@ -7,6 +7,7 @@ URL: https://bagrounds.org/books/sustainable-energy-without-the-hot-air
 Author:
 tags:
 affiliate link: https://amzn.to/4dJZuAP
+CTA: 💡 Quantify your future.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🌞🌬️🌊🌋 Sustainable Energy - Without the Hot Air  

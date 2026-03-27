@@ -4,10 +4,10 @@ aliases:
   - 🇺🇸💣🇮🇷⚠️ UN chief says US bombing of Iran marks 'perilous turn' | REUTERS
 title: 🇺🇸💣🇮🇷⚠️ UN chief says US bombing of Iran marks 'perilous turn' | REUTERS
 URL: https://bagrounds.org/videos/
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: Reuters
-tags: 
+tags:
 youtube: https://youtu.be/wUKEqx_ygSg
 ---
 [Home](../index.md) > [Videos](./index.md)  

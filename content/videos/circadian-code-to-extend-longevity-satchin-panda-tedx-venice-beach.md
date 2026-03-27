@@ -4,10 +4,10 @@ aliases:
   - ⏰👵🔬 Circadian Code to Extend Longevity | Satchin Panda | TEDxVeniceBeach
 title: ⏰👵🔬 Circadian Code to Extend Longevity | Satchin Panda | TEDxVeniceBeach
 URL: https://youtu.be/wrP78K1objc
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: TEDx Talks
-tags: 
+tags:
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # ⏰👵🔬 Circadian Code to Extend Longevity | Satchin Panda | TEDxVeniceBeach  
@@ -36,8 +36,8 @@ tags:
   
 ### 🍎 Nutrition  
 * Eat, Drink, and Be Healthy: The Harvard Medical School Guide to Healthy Eating by Walter C. Willett  
-* In Defense of Food: An Eater's Manifesto by Michael Pollan  
+* [🛡️🥦 In Defense of Food: An Eater's Manifesto](../books/in-defense-of-food-an-eaters-manifesto.md) by Michael Pollan  
   
 ### ⚙️ Metabolism  
 * The Glucose Goddess Method: The 4-Week Guide to Cutting Cravings, Getting Your Energy Back, and Feeling Amazing by Jessie Inchauspé  
-* [Outlive](../books/outlive.md): The Science & Art of Longevity by Peter Attia
+* [⏳🔬🎨 Outlive: The Science and Art of Longevity](../books/outlive.md) by Peter Attia

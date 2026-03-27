@@ -46,7 +46,7 @@ This book is particularly relevant for:
 * **[➖💯 Essentialism: The Disciplined Pursuit of Less](./essentialism-the-disciplined-pursuit-of-less.md)** by Greg McKeown: 🎯 Focuses on identifying and prioritizing the truly essential tasks and eliminating the rest.  
 * 😌 **The Joy of Missing Out: Live More by Doing Less** by Tonya Dalton: 🚀 Encourages mindful productivity and letting go of the pressure to do everything.  
 * 🚫 **Laziness Does Not Exist** by Devon Price: 🎭 Challenges the cultural narratives around laziness and productivity, arguing for self-compassion and recognizing systemic barriers.  
-* ⏳ **Four Thousand Weeks: Time Management for Mortals** by Oliver Burkeman: ⏳ Confronts the finitude of time, urging readers to embrace limitations and focus on what truly matters rather than striving for impossible productivity.  
+* ⏳ Four Thousand Weeks by Oliver Burkeman: ⏳ Confronts the finitude of time, urging readers to embrace limitations and focus on what truly matters rather than striving for impossible productivity.  
 * ☮️ **It Doesn't Have to Be Crazy at Work** by Jason Fried & David Heinemeier Hansson: 😡 Argues against the chaos and stress of modern workplaces, advocating for calmer, more sustainable work cultures.  
 * 🧘 **Time Off: A Practical Guide to Building Your Rest Ethic and Finding Success Without the Stress** by John Fitch and Max Frenzel: 💪 Challenges the idea that busyness equals productivity and emphasizes developing a strong "rest ethic".  
 * 🎯 **The Lazy Genius Way: Embrace What Matters, Ditch What Doesn't, and Get Stuff Done** by Kendra Adachi: 🧠 Promotes being strategic about what matters and "lazy" about what doesn't to achieve balance.  

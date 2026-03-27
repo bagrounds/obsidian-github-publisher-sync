@@ -4,8 +4,8 @@ aliases:
   - 📊📈✅🔍 Statistical Quality Control
 title: 📊📈✅🔍 Statistical Quality Control
 URL: https://bagrounds.org/books/statistical-quality-control
-Author: 
-tags: 
+Author:
+tags:
 affiliate link: https://amzn.to/3FIloYq
 ---
 [Home](../index.md) > [Books](./index.md)  

@@ -4,8 +4,8 @@ aliases:
   - 🧠🤔🧪🔬 Principles of Neuropsychology
 title: 🧠🤔🧪🔬 Principles of Neuropsychology
 URL: https://bagrounds.org/books/principles-of-neuropsychology
-Author: 
-tags: 
+Author:
+tags:
 affiliate link: https://amzn.to/454VJna
 ---
 [Home](../index.md) > [Books](./index.md)  

@@ -4,8 +4,8 @@ aliases:
   - 💰👑👎🇺🇸 Corruption and Illiberal Politics in the Trump Era
 title: 💰👑👎🇺🇸 Corruption and Illiberal Politics in the Trump Era
 URL: https://bagrounds.org/books/corruption-and-illiberal-politics-in-the-trump-era
-Author: 
-tags: 
+Author:
+tags:
 affiliate link: https://amzn.to/4kIIhtz
 ---
 [Home](../index.md) > [Books](./index.md)  

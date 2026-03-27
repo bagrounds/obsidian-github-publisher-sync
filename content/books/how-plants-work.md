@@ -4,12 +4,14 @@ aliases:
   - "🌿🔬 How Plants Work: The Science Behind the Amazing Things Plants Do"
 title: "🌿🔬 How Plants Work: The Science Behind the Amazing Things Plants Do"
 URL: https://bagrounds.org/books/how-plants-work
-Author: 
-tags: 
+Author:
+tags:
 affiliate link: https://amzn.to/3HAzxYa
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🌿🔬 How Plants Work: The Science Behind the Amazing Things Plants Do  
+[🛒 How Plants Work: The Science Behind the Amazing Things Plants Do. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3HAzxYa)  
+  
 ## 📚 Book Report: 🪴 How Plants Work: The Science Behind the Amazing Things Plants Do  
   
 **🧑‍🏫 Author:** Linda Chalker-Scott  

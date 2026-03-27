@@ -4,8 +4,8 @@ aliases:
   - "🤸😊🎯🌟 The Art of Living: The Classical Manual on Virtue, Happiness, and Effectiveness"
 title: "🤸😊🎯🌟 The Art of Living: The Classical Manual on Virtue, Happiness, and Effectiveness"
 URL: https://bagrounds.org/books/the-art-of-living
-Author: 
-tags: 
+Author:
+tags:
 affiliate link: https://amzn.to/4dPcsxc
 ---
 [Home](../index.md) > [Books](./index.md)  

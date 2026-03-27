@@ -4,7 +4,7 @@ aliases:
   - 🗣️🗺️🤖⚙️ Reasoning with Language Model is Planning with World Model
 title: 🗣️🗺️🤖⚙️ Reasoning with Language Model is Planning with World Model
 URL: https://bagrounds.org/articles/reasoning-with-language-model-is-planning-with-world-model
-Author: 
+Author:
 tags: []
 ---
 [Home](../index.md) > [Articles](./index.md)  

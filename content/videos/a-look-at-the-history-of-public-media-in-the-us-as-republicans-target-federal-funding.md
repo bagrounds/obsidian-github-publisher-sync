@@ -4,10 +4,10 @@ aliases:
   - 📺🏛️💸🎯 A look at the history of public media in the U.S. as Republicans target federal funding
 title: 📺🏛️💸🎯 A look at the history of public media in the U.S. as Republicans target federal funding
 URL: https://youtu.be/jttdzOXeW0Q
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: PBS NewsHour
-tags: 
+tags:
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 📺🏛️💸🎯 A look at the history of public media in the U.S. as Republicans target federal funding  

@@ -4,10 +4,10 @@ aliases:
   - 🔋📈🧘🗣️ The Energy Project | Tony Schwartz | Talks at Google
 title: 🔋📈🧘🗣️ The Energy Project | Tony Schwartz | Talks at Google
 URL: https://bagrounds.org/videos/the-energy-project-tony-schwartz-talks-at-google
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: Talks at Google
-tags: 
+tags:
 youtube: https://youtu.be/tke6X2eME3c
 ---
 [Home](../index.md) > [Videos](./index.md) | [🔋📈 The Power of Full Engagement: Managing Energy, Not Time, Is the Key to High Performance and Personal Renewal](../books/the-power-of-full-engagement-managing-energy-not-time-is-the-key-to-high-performance-and-personal-renewal.md)  

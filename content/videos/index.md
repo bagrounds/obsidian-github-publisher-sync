@@ -5,7 +5,7 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-03-27T12:23:51-07:00
+updated: 2026-03-27T11:05:06-07:00
 ---
 [Home](../index.md)  
 # 📺 Videos (714)  
@@ -591,9 +591,9 @@ updated: 2026-03-27T12:23:51-07:00
 - [⏱️💰📈 This simple time management system will make you a millionaire](./this-simple-time-management-system-will-make-you-a-millionaire.md)  
 - [This Single Rule Underpins All Of Physics](./this-single-rule-underpins-all-of-physics.md)  
 - [📰🇺🇸❓🏛️ This Week In Politics, A Big-Picture Look at Where We Are Right Now | Explainer](./this-week-in-politics-a-big-picture-look-at-where-we-are-right-now-explainer.md)  
+- [🏛️🗣️📰 This Week in Politics | Explainer](./this-week-in-politics-explainer-march-6-2026.md)  
 - [🗣️📰🏛️ This Week in Politics | Explainer](./this-week-in-politics-explainer-january-20-2025.md)  
 - [📰🗣️❓ This Week in Politics | Explainer](./this-week-in-politics-explainer.md)  
-- [🏛️🗣️📰 This Week in Politics | Explainer](./this-week-in-politics-explainer-march-6-2026.md)  
 - [🕸️🛠️🤔 Three decades after inventing the web, Tim Berners-Lee has some ideas on how to fix it](./three-decades-after-inventing-the-web-tim-berners-lee-has-some-ideas-on-how-to-fix-it.md)  
 - [👶🏃‍♀️🏅✅ Thule Urban Glide 3 Full Review | Best Running / Jogging Stroller 2024](./thule-urban-glide-3-full-review-best-running-jogging-stroller-2024.md)  
 - [🏛️📰📣 Today in Politics | Explainer](./today-in-politics-explainer-january-22-2026.md)  

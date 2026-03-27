@@ -4,8 +4,8 @@ aliases:
   - 👑🎭♟️ The 48 Laws of Power
 title: 👑🎭♟️ The 48 Laws of Power
 URL: https://bagrounds.org/books/the-48-laws-of-power
-Author: 
-tags: 
+Author:
+tags:
 affiliate link: https://amzn.to/4jzNVxa
 ---
 [Home](../index.md) > [Books](./index.md)  

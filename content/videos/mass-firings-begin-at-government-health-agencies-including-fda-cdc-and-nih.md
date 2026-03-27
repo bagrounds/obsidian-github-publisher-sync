@@ -4,10 +4,10 @@ aliases:
   - Mass firings begin at government health agencies, including FDA, CDC and NIH
 title: Mass firings begin at government health agencies, including FDA, CDC and NIH
 URL: https://youtu.be/oJn5Q5Y-SX8
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: PBS NewsHour
-tags: 
+tags:
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # Mass firings begin at government health agencies, including FDA, CDC and NIH  

@@ -4,8 +4,8 @@ aliases:
   - 💰🧔👑🏛️ The Richest Man in Babylon
 title: 💰🧔👑🏛️ The Richest Man in Babylon
 URL: https://bagrounds.org/books/the-richest-man-in-babylon
-Author: 
-tags: 
+Author:
+tags:
 affiliate link: https://amzn.to/43NvYFF
 ---
 [Home](../index.md) > [Books](./index.md)  

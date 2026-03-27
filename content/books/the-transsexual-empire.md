@@ -4,8 +4,8 @@ aliases:
   - ⚧️👑🏰 The Transsexual Empire
 title: ⚧️👑🏰 The Transsexual Empire
 URL: https://bagrounds.org/books/the-transsexual-empire
-Author: 
-tags: 
+Author:
+tags:
 affiliate link: https://amzn.to/4mHObNr
 ---
 [Home](../index.md) > [Books](./index.md)  

@@ -4,10 +4,10 @@ aliases:
   - ✊📢✅ Forms of Resistance and Reasons to Believe It’s Working | Explainer
 title: ✊📢✅ Forms of Resistance and Reasons to Believe It’s Working | Explainer
 URL: https://bagrounds.org/videos/forms-of-resistance-and-reasons-to-believe-its-working-explainer
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: Heather Cox Richardson
-tags: 
+tags:
 youtube: https://youtu.be/263FaqrL6C4
 ---
 [Home](../index.md) > [Videos](./index.md) | [🏛️🇺🇸📖 Heather Cox Richardson](../people/heather-cox-richardson.md)  

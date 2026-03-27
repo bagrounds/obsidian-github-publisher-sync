@@ -4,10 +4,10 @@ aliases:
   - 🇺🇸🛠️⏱️🏛️ How to Rebuild American Democracy in 20 Minutes
 title: 🇺🇸🛠️⏱️🏛️ How to Rebuild American Democracy in 20 Minutes
 URL: https://bagrounds.org/videos/how-to-rebuild-american-democracy-in-20-minutes
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: PoliticalZane
-tags: 
+tags:
 youtube: https://youtu.be/cFca2mYb1wc
 ---
 [Home](../index.md) > [Videos](./index.md)  

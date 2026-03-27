@@ -4,10 +4,10 @@ aliases:
   - "WATCH: 'Whose throat do I get to choke’ if tariff approach fails, Tillis asks trade rep"
 title: "WATCH: 'Whose throat do I get to choke’ if tariff approach fails, Tillis asks trade rep"
 URL: https://youtu.be/ufuZo15ZA08
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: PBS NewsHour
-tags: 
+tags:
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # WATCH: 'Whose throat do I get to choke’ if tariff approach fails, Tillis asks trade rep  

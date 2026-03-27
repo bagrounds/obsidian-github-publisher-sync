@@ -4,8 +4,8 @@ aliases:
   - 🤖🧠👨‍💻🏗️ How we built our multi Agent research system
 title: 🤖🧠👨‍💻🏗️ How we built our multi Agent research system
 URL: https://bagrounds.org/articles/how-we-built-our-multi-agent-research-system
-Author: 
-tags: 
+Author:
+tags:
 ---
 [Home](../index.md) > [Articles](./index.md)  
 # [🤖🧠👨‍💻🏗️ How we built our multi Agent research system](https://www.anthropic.com/engineering/multi-agent-research-system)  

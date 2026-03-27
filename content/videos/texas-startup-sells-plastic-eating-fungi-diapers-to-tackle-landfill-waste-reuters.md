@@ -4,10 +4,10 @@ aliases:
   - 💩🍄👶♻️🗑️ Texas startup sells plastic-eating fungi diapers to tackle landfill waste | REUTERS
 title: 💩🍄👶♻️🗑️ Texas startup sells plastic-eating fungi diapers to tackle landfill waste | REUTERS
 URL: https://bagrounds.org/videos/texas-startup-sells-plastic-eating-fungi-diapers-to-tackle-landfill-waste-reuters
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: Reuters
-tags: 
+tags:
 youtube: https://youtu.be/iWfTopfzBHA
 ---
 [Home](../index.md) > [Videos](./index.md)  

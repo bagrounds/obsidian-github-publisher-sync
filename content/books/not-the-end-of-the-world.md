@@ -69,7 +69,7 @@ affiliate link: https://amzn.to/4mIM241
   
 * 📚 **This Changes Everything: Capitalism vs. The Climate** by Naomi Klein: Argues that the climate crisis demands a fundamental rejection of neoliberal capitalism and a restructuring of our economies and societies.  
 * 📚 **The Uninhabitable Earth: Life After Warming** by David Wallace-Wells: Paints a stark, often terrifying picture of the potential consequences of unchecked climate change, serving as a counterpoint to optimistic takes.  
-* 📚 **Less is More: How Degrowth Will Save the World** by Jason Hickel: Critiques the pursuit of endless economic growth and argues for a "degrowth" strategy focused on reducing consumption and production in wealthy nations.  
+* **[📉🌎 Less is More: How Degrowth Will Save the World](./less-is-more-how-degrowth-will-save-the-world.md)** by Jason Hickel: Critiques the pursuit of endless economic growth and argues for a "degrowth" strategy focused on reducing consumption and production in wealthy nations.  
 * **[🪢🌾 Braiding Sweetgrass: Indigenous Wisdom, Scientific Knowledge, and the Teachings of Plants](./braiding-sweetgrass.md)** by Robin Wall Kimmerer: Offers a perspective grounded in Indigenous wisdom, emphasizing reciprocity with nature, relationality, and ways of knowing beyond purely scientific data.  
   
 ### 🎨 Creatively Related (Broader Context & Inspiration)  
@@ -78,7 +78,7 @@ affiliate link: https://amzn.to/4mIM241
 * 📚 **[Thinking in Systems](./thinking-in-systems.md): A Primer** by Donella H. Meadows: An essential guide to understanding complex systems, crucial for tackling interconnected environmental and social problems.  
 * 📚 **Drawdown: The Most Comprehensive Plan Ever Proposed to Reverse Global Warming** edited by Paul Hawken: Catalogs a wide array of existing solutions for reducing greenhouse gas emissions.  
 * 📚 **[The Sixth Extinction](./the-sixth-extinction.md): An Unnatural History** by Elizabeth Kolbert: Explores the ongoing biodiversity crisis through the lens of past mass extinction events, providing context for Ritchie's chapter on biodiversity loss.  
-* 📚 **Ministry for the Future** by Kim Stanley Robinson: A science fiction novel imagining the near-future challenges and potential institutional responses to the climate crisis, blending technical solutions with social and political struggle.  
+* The Ministry for the Future by Kim Stanley Robinson: A science fiction novel imagining the near-future challenges and potential institutional responses to the climate crisis, blending technical solutions with social and political struggle.  
   
 ## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Not the End of the World How We Can Be the First Generation to Build a Sustainable Planet. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

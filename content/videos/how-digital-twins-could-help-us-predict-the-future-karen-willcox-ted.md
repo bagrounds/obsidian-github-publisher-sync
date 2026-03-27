@@ -4,10 +4,10 @@ aliases:
   - How “Digital Twins” Could Help Us Predict the Future | Karen Willcox | TED
 title: How “Digital Twins” Could Help Us Predict the Future | Karen Willcox | TED
 URL: https://youtu.be/r2_VWdjxchY
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: TED
-tags: 
+tags:
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # TED - How “Digital Twins” Could Help Us Predict the Future | Karen Willcox | TED  

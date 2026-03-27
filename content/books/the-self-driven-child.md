@@ -4,8 +4,8 @@ aliases:
   - "👨‍🚀 The Self-Driven Child: The 🔬 Science and 🤔 Sense of Giving Your Kids More 🕹️ Control Over Their Lives"
 title: "👨‍🚀 The Self-Driven Child: The 🔬 Science and 🤔 Sense of Giving Your Kids More 🕹️ Control Over Their Lives"
 URL: https://bagrounds.org/books/the-self-driven-child
-Author: 
-tags: 
+Author:
+tags:
 affiliate link: https://amzn.to/43pDMhR
 ---
 [Home](../index.md) > [Books](./index.md)  

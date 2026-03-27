@@ -4,10 +4,10 @@ aliases:
   - 🧫❓❌📱 Biomedical Scientist Answers Pseudoscience Questions From Twitter | Tech Support | WIRED
 title: 🧫❓❌📱 Biomedical Scientist Answers Pseudoscience Questions From Twitter | Tech Support | WIRED
 URL: https://youtu.be/vj71yGp-8WM
-Author: 
+Author:
 Platform: "#YouTube"
 Channel: "[[WIRED]]"
-tags: 
+tags:
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 🧫❓❌📱 Biomedical Scientist Answers Pseudoscience Questions From Twitter | Tech Support | WIRED  

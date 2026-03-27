@@ -4,10 +4,10 @@ aliases:
   - ☕⛓️‍💥🚄❓ Does drinking coffee break your fast? | Satchin Panda
 title: ☕⛓️‍💥🚄❓ Does drinking coffee break your fast? | Satchin Panda
 URL: https://youtu.be/a_3H876jWmI
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: FoundMyFitness Clips
-tags: 
+tags:
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # ☕⛓️‍💥🚄❓ Does drinking coffee break your fast? | Satchin Panda  

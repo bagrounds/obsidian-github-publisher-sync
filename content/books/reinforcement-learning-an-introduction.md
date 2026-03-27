@@ -4,8 +4,8 @@ aliases:
   - "🤖➕🧠➡️ Reinforcement Learning: An Introduction"
 title: "🤖➕🧠➡️ Reinforcement Learning: An Introduction"
 URL: https://bagrounds.org/books/reinforcement-learning-an-introduction
-Author: 
-tags: 
+Author:
+tags:
 affiliate link: https://amzn.to/4krIXUx
 CTA: 🤖 Master adaptation.
 ---

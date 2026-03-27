@@ -4,10 +4,10 @@ aliases:
   - 🧠🛠️💪📈 How to hack your brain to crave doing hard things
 title: 🧠🛠️💪📈 How to hack your brain to crave doing hard things
 URL: https://youtu.be/BbhKTFXu7dc
-Author: 
+Author:
 Platform: "#YouTube"
 Channel: "[[Spoon Fed Study]]"
-tags: 
+tags:
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 🧠🛠️💪📈 How to hack your brain to crave doing hard things  

@@ -4,8 +4,8 @@ aliases:
   - "⚛️🌎 Beyond Weird: Why Everything You Thought You Knew about Quantum Physics Is Different"
 title: "⚛️🌎 Beyond Weird: Why Everything You Thought You Knew about Quantum Physics Is Different"
 URL: https://bagrounds.org/books/beyond-weird
-Author: 
-tags: 
+Author:
+tags:
 affiliate link: https://amzn.to/4kkWHjM
 CTA: Question reality.
 ---

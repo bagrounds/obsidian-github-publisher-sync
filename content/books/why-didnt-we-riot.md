@@ -4,8 +4,8 @@ aliases:
   - "✍🏿🇺🇸💔 Why Didn't We Riot?: A Black Man In Trumpland"
 title: "✍🏿🇺🇸💔 Why Didn't We Riot?: A Black Man In Trumpland"
 URL: https://bagrounds.org/books/why-didnt-we-riot
-Author: 
-tags: 
+Author:
+tags:
 affiliate link: https://amzn.to/43qLFDU
 ---
 [Home](../index.md) > [Books](./index.md)  

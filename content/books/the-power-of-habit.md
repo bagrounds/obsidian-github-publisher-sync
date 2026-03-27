@@ -4,8 +4,8 @@ aliases:
   - "🔄🧠💪 The Power of Habit: Why We Do What We Do in Life and Business"
 title: "🔄🧠💪 The Power of Habit: Why We Do What We Do in Life and Business"
 URL: https://bagrounds.org/books/the-power-of-habit
-Author: 
-tags: 
+Author:
+tags:
 affiliate link: https://amzn.to/458taW2
 CTA: 💪 Understand routines.
 ---

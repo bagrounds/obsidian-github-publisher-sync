@@ -4,8 +4,8 @@ aliases:
   - ⚠️😬😰 Peril
 title: ⚠️😬😰 Peril
 URL: https://bagrounds.org/books/peril
-Author: 
-tags: 
+Author:
+tags:
 affiliate link: https://amzn.to/4kq0rk3
 CTA: Witness chaos.
 ---

@@ -4,10 +4,10 @@ aliases:
   - 👹🪖🇺🇸🚧✊🏾 Troops deployed in LA as immigration raids stir fear and protests
 title: 👹🪖🇺🇸🚧✊🏾 Troops deployed in LA as immigration raids stir fear and protests
 URL: https://youtu.be/qnE_xe_bC8g
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: PBS NewsHour
-tags: 
+tags:
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 👹🪖🇺🇸🚧✊🏾 Troops deployed in LA as immigration raids stir fear and protests  

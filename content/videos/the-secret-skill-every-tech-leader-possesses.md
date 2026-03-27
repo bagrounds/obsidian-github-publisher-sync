@@ -4,10 +4,10 @@ aliases:
   - 🤫🔑👨‍💻 The Secret Skill Every Tech Leader Possesses
 title: 🤫🔑👨‍💻 The Secret Skill Every Tech Leader Possesses
 URL: https://youtu.be/uUKAVfIahCY
-Author: 
+Author:
 Platform: "#YouTube"
 Channel: "[[A Life Engineered]]"
-tags: 
+tags:
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 🤫🔑👨‍💻 The Secret Skill Every Tech Leader Possesses  

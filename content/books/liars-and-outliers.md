@@ -4,8 +4,8 @@ aliases:
   - "🤥😈 Liars and Outliers: Enabling the Trust That Society Needs to Thrive"
 title: "🤥😈 Liars and Outliers: Enabling the Trust That Society Needs to Thrive"
 URL: https://bagrounds.org/books/liars-and-outliers
-Author: 
-tags: 
+Author:
+tags:
 affiliate link: https://amzn.to/3Zf2mQ9
 ---
 [Home](../index.md) > [Books](./index.md)  

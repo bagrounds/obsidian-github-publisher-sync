@@ -4,8 +4,8 @@ aliases:
   - "😨 ‘We are all afraid’: Speaking to Alaska nonprofit leaders, Murkowski gets candid on upheaval in federal government"
 title: "😨 ‘We are all afraid’: Speaking to Alaska nonprofit leaders, Murkowski gets candid on upheaval in federal government"
 URL: https://bagrounds.org/articles/we-are-all-afraid-speaking-to-alaska-nonprofit-leaders-murkowski-gets-candid-on-upheaval-in-federal-government
-Author: 
-tags: 
+Author:
+tags:
 ---
 [Home](../index.md) > [Articles](./index.md)  
 # 😨 [‘We are all afraid’: Speaking to Alaska nonprofit leaders, Murkowski gets candid on upheaval in federal government](https://www.adn.com/politics/2025/04/14/we-are-all-afraid-speaking-to-alaska-nonprofit-leaders-murkowski-gets-candid-on-upheaval-in-federal-government)  

@@ -4,8 +4,8 @@ aliases:
   - "💭🦠 Thought Contagion: How Belief Spreads Through Society"
 title: "💭🦠 Thought Contagion: How Belief Spreads Through Society"
 URL: https://bagrounds.org/books/thought-contagion
-Author: 
-tags: 
+Author:
+tags:
 affiliate link: https://amzn.to/4jBAflr
 CTA: Understand belief.
 ---

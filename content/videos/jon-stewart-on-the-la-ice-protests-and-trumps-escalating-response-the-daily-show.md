@@ -4,10 +4,10 @@ aliases:
   - 🇺🇸😡📺 Jon Stewart on the L.A. ICE Protests and Trump's Escalating Response | The Daily Show
 title: 🇺🇸😡📺 Jon Stewart on the L.A. ICE Protests and Trump's Escalating Response | The Daily Show
 URL: https://bagrounds.org/videos/jon-stewart-on-the-la-ice-protests-and-trumps-escalating-response-the-daily-show
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: The Daily Show
-tags: 
+tags:
 youtube: https://youtu.be/wDt1-L4KFPQ
 ---
 [Home](../index.md) > [Videos](./index.md)  

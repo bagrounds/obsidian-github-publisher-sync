@@ -4,8 +4,8 @@ aliases:
   - "❓➡️💡 The Book of Why: The New Science of Cause and Effect"
 title: "❓➡️💡 The Book of Why: The New Science of Cause and Effect"
 URL: https://bagrounds.org/books/the-book-of-why
-Author: 
-tags: 
+Author:
+tags:
 affiliate link: https://amzn.to/4dNzsfR
 ---
 [Home](../index.md) > [Books](./index.md)  

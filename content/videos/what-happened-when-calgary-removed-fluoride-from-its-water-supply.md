@@ -4,10 +4,10 @@ aliases:
   - 🥼🦷💧 What happened when Calgary removed fluoride from its water supply
 title: 🥼🦷💧 What happened when Calgary removed fluoride from its water supply
 URL: https://youtu.be/-ibXDDDqpHA
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: PBS NewsHour
-tags: 
+tags:
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 🥼🦷💧 What happened when Calgary removed fluoride from its water supply  

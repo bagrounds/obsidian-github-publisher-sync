@@ -4,8 +4,8 @@ aliases:
   - 👤🧬 The Selfish Gene
 title: 👤🧬 The Selfish Gene
 URL: https://bagrounds.org/books/the-selfish-gene
-Author: 
-tags: 
+Author:
+tags:
 affiliate link: https://amzn.to/4mGO44D
 ---
 [Home](../index.md) > [Books](./index.md)  

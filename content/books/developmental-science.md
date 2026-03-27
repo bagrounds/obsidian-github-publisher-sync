@@ -4,8 +4,8 @@ aliases:
   - "👶🧠📈📚 Developmental Science: An Advanced Textbook"
 title: "👶🧠📈📚 Developmental Science: An Advanced Textbook"
 URL: https://bagrounds.org/books/developmental-science
-Author: 
-tags: 
+Author:
+tags:
 affiliate link: https://amzn.to/4kzqRQz
 ---
 [Home](../index.md) > [Books](./index.md)  

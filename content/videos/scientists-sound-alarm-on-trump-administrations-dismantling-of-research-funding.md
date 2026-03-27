@@ -4,10 +4,10 @@ aliases:
   - Scientists sound alarm on Trump administration's dismantling of research funding
 title: Scientists sound alarm on Trump administration's dismantling of research funding
 URL: https://youtu.be/MNA9bCEX8eM
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: PBS NewsHour
-tags: 
+tags:
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # Scientists sound alarm on Trump administration's dismantling of research funding  

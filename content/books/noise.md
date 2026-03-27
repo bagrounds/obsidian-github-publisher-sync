@@ -4,8 +4,8 @@ aliases:
   - "🙉📢😵‍💫🔇 Noise: A Flaw in Human Judgment"
 title: "🙉📢😵‍💫🔇 Noise: A Flaw in Human Judgment"
 URL: https://bagrounds.org/books/noise
-Author: 
-tags: 
+Author:
+tags:
 affiliate link: https://amzn.to/4jB8bi7
 ---
 [Home](../index.md) > [Books](./index.md)  

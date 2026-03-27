@@ -4,8 +4,8 @@ aliases:
   - "🏎️⛽ Drive: The Surprising Truth About What Motivates Us"
 title: "🏎️⛽ Drive: The Surprising Truth About What Motivates Us"
 URL: https://bagrounds.org/books/drive-the-surprising-truth-about-what-motivates-us
-Author: 
-tags: 
+Author:
+tags:
 affiliate link: https://amzn.to/4o1nZyf
 CTA: 🚀 Fuel progress.
 ---

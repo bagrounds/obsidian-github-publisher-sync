@@ -4,10 +4,10 @@ aliases:
   - Presentation Zen | Garr Reynolds | Talks at Google
 title: Presentation Zen | Garr Reynolds | Talks at Google
 URL: https://youtu.be/DZ2vtQCESpk
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: Talks at Google
-tags: 
+tags:
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # Talks at Google - Presentation Zen | Garr Reynolds | Talks at Google  

@@ -8,6 +8,8 @@ affiliate link: https://amzn.to/3Su4QGz
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🍓🌳 Growing Berries and Fruit Trees in the Pacific Northwest: How to Grow Abundant, Organic Fruit in Your Backyard  
+[🛒 Growing Berries and Fruit Trees in the Pacific Northwest: How to Grow Abundant, Organic Fruit in Your Backyard. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3Su4QGz)  
+  
 ## 🌳 Book Report: 🍓 Growing Berries and 🍎 Fruit Trees in the Pacific Northwest  
   
 **🧑‍🌾 Author:** Tara Austen Weaver  

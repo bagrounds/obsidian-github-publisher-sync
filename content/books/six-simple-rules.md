@@ -4,8 +4,8 @@ aliases:
   - "🧶✔️ Six Simple Rules: How to Manage Complexity without Getting Complicated"
 title: "🧶✔️ Six Simple Rules: How to Manage Complexity without Getting Complicated"
 URL: https://bagrounds.org/books/six-simple-rules
-Author: 
-tags: 
+Author:
+tags:
 affiliate link: https://amzn.to/3HkYkPW
 ---
 [Home](../index.md) > [Books](./index.md)  
@@ -54,8 +54,8 @@ The book is primarily aimed at managers and leaders seeking practical tools to i
 * 🌐 **"[Thinking in Systems](./thinking-in-systems.md): A Primer" by Donella H. Meadows:** Provides foundational knowledge on systems thinking, helping readers understand the interconnectedness and feedback loops inherent in complex organizations and environments, complementing the systemic perspective needed to apply the Six Simple Rules.  
 * 🧘 **"[Flow: The Psychology of Optimal Experience](./flow-the-psychology-of-optimal-experience.md)" by Mihaly Csikszentmihalyi:** Explores the state of deep engagement and creativity, relevant to fostering the autonomy and meaningful work implicit in the "Six Simple Rules" approach.  
 * 🎯 **"[Drive: The Surprising Truth About What Motivates Us](./drive-the-surprising-truth-about-what-motivates-us.md)" by Daniel H. Pink:** Discusses the importance of autonomy, mastery, and purpose in motivation, aligning with the book's goal of leveraging employee intelligence and engagement rather than relying solely on external controls or incentives.  
-* 🌳 **"Walden" by Henry David Thoreau:** A philosophical exploration of simplicity, self-sufficiency, and living deliberately, offering a non-business perspective on the value of simplifying one's life and focusing on essentials.  
-* ⏳ **"Four Thousand Weeks: Time Management for Mortals" by Oliver Burkeman:** Challenges productivity culture and encourages acceptance of limitations, urging readers to focus on what truly matters – a perspective that can inform how managers prioritize and simplify within complex settings.  
+* 🌳 **Walden** by Henry David Thoreau: A philosophical exploration of simplicity, self-sufficiency, and living deliberately, offering a non-business perspective on the value of simplifying one's life and focusing on essentials.  
+* ⏳ **Four Thousand Weeks by Oliver Burkeman:** Challenges productivity culture and encourages acceptance of limitations, urging readers to focus on what truly matters – a perspective that can inform how managers prioritize and simplify within complex settings.  
   
 ## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Six Simple Rules How to Manage Complexity without Getting Complicated. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

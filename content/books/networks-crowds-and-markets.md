@@ -4,8 +4,8 @@ aliases:
   - "🌐💰 Networks, Crowds, and Markets: Reasoning About a Highly Connected World"
 title: "🌐💰 Networks, Crowds, and Markets: Reasoning About a Highly Connected World"
 URL: https://bagrounds.org/books/networks-crowds-and-markets
-Author: 
-tags: 
+Author:
+tags:
 affiliate link: https://amzn.to/3HnZSZw
 ---
 [Home](../index.md) > [Books](./index.md)  

@@ -4,8 +4,8 @@ aliases:
   - ❓➡️ An Introduction to Causal Inference
 title: ❓➡️ An Introduction to Causal Inference
 URL: https://bagrounds.org/books/an-introduction-to-causal-inference
-Author: 
-tags: 
+Author:
+tags:
 affiliate link: https://amzn.to/45BaONo
 ---
 [Home](../index.md) > [Books](./index.md)  

@@ -12,7 +12,6 @@ affiliate link: https://amzn.to/3FIMCy5
 # 🧑‍⚖️📚 Law School for Everyone  
 [🛒 Law School for Everyone. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3FIMCy5)  
   
-  
 ## 📖 Book Report: ⚖️ Law School for Everyone  
   
 🏛️ Law School for Everyone is a comprehensive lecture series offered by 🎓 The Great Courses, designed to provide participants with a foundational understanding of the 🇺🇸 American legal system and key areas of law typically covered in the first year of law school. 👨‍🏫 Taught by a group of experienced law professors, the course aims to demystify the law and equip listeners with the ability to "🤔 think like a lawyer" without the significant time and financial commitment of attending law school.  

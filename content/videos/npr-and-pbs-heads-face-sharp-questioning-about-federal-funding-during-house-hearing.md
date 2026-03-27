@@ -4,10 +4,10 @@ aliases:
   - NPR and PBS heads face sharp questioning about federal funding during House hearing
 title: NPR and PBS heads face sharp questioning about federal funding during House hearing
 URL: https://youtu.be/Hidsx0Lx4us
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: PBS NewsHour
-tags: 
+tags:
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # NPR and PBS heads face sharp questioning about federal funding during House hearing  

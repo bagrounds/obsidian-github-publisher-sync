@@ -4,8 +4,8 @@ aliases:
   - "🏗️🧩🌍 Context Engineering: An Emerging Concept in the MCP Ecosystem"
 title: "🏗️🧩🌍 Context Engineering: An Emerging Concept in the MCP Ecosystem"
 URL: https://bagrounds.org/articles/context-engineering-an-emerging-concept-in-the-mcp-ecosystem
-Author: 
-tags: 
+Author:
+tags:
 ---
 [Home](../index.md) > [Articles](./index.md)  
 # [🏗️🧩🌍 Context Engineering: An Emerging Concept in the MCP Ecosystem](https://github.com/microsoft/mcp-for-beginners/blob/main/05-AdvancedTopics/mcp-contextengineering/README.md)  

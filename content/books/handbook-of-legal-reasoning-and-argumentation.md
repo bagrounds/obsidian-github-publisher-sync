@@ -10,6 +10,8 @@ affiliate link: https://amzn.to/43pv7fr
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 👩🏼‍⚖️⚖️💭🧮🗣️ Handbook of Legal Reasoning and Argumentation  
+[🛒 Handbook of Legal Reasoning and Argumentation. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/43pv7fr)  
+  
 ## 📖 Book Report: ⚖️ Handbook of Legal Reasoning and Argumentation  
   
 The *Handbook of Legal Reasoning and Argumentation* is a 📚 comprehensive volume exploring the 🧠 theoretical underpinnings and 👩‍⚖️ practical applications of reasoning and argumentation within the 🏛️ legal domain. Edited by Giorgio Bongiovanni, Gerald Postema, Antonino Rotolo, Giovanni Sartor, Chiara Valentini, and Douglas Walton, and published by Springer in 2018, this handbook offers a 💡 multi-faceted analysis from 🧠 logical, 📜 philosophical, and 🏛️ legal perspectives.  

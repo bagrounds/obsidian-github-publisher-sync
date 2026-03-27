@@ -4,8 +4,8 @@ aliases:
   - "🏛️🤝🕊️ Pax Democratica: A Strategy for the 21st Century"
 title: "🏛️🤝🕊️ Pax Democratica: A Strategy for the 21st Century"
 URL: https://bagrounds.org/books/pax-democratica
-Author: 
-tags: 
+Author:
+tags:
 affiliate link: https://amzn.to/4jCPhY6
 ---
 [Home](../index.md) > [Books](./index.md)  

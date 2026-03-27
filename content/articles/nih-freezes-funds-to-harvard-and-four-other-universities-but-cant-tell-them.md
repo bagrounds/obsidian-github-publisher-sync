@@ -4,8 +4,8 @@ aliases:
   - 🥼💰🧊 NIH freezes funds to Harvard and four other universities, but can’t tell them
 title: 🥼💰🧊 NIH freezes funds to Harvard and four other universities, but can’t tell them
 URL: https://bagrounds.org/articles/
-Author: 
-tags: 
+Author:
+tags:
 ---
 [Home](../index.md) > [Articles](./index.md)  
 # [NIH freezes funds to Harvard and four other universities, but can’t tell them](https://www.science.org/content/article/nih-freezes-funds-harvard-and-four-other-universities-can-t-tell-them)  

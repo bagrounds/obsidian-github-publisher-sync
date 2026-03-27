@@ -4,8 +4,8 @@ aliases:
   - 📊🫠 Statistics for Dummies
 title: 📊🫠 Statistics for Dummies
 URL: https://bagrounds.org/books/statistics-for-dummies
-Author: 
-tags: 
+Author:
+tags:
 affiliate link: https://amzn.to/4mLhZbV
 ---
 [Home](../index.md) > [Books](./index.md)  

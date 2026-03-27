@@ -4,8 +4,8 @@ aliases:
   - "💀🌍📉⏳ The Sixth Extinction: An Unnatural History"
 title: "💀🌍📉⏳ The Sixth Extinction: An Unnatural History"
 URL: https://bagrounds.org/books/the-sixth-extinction
-Author: 
-tags: 
+Author:
+tags:
 affiliate link: https://amzn.to/43uAnOY
 ---
 [Home](../index.md) > [Books](./index.md)  

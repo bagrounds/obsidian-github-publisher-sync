@@ -1,7 +1,7 @@
 ---
 share: true
-goodreads: 
-Wikipedia: 
+goodreads:
+Wikipedia:
 aliases:
   - 😴🧠🌃 Sara C. Mednick
 title: 😴🧠🌃 Sara C. Mednick

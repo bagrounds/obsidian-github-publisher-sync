@@ -4,8 +4,8 @@ aliases:
   - "👂🤫 Just Listen: Discover the Secret to Getting Through to Absolutely Anyone"
 title: "👂🤫 Just Listen: Discover the Secret to Getting Through to Absolutely Anyone"
 URL: https://bagrounds.org/books/just-listen
-Author: 
-tags: 
+Author:
+tags:
 affiliate link: https://amzn.to/3Td6r3D
 ---
 [Home](../index.md) > [Books](./index.md)  

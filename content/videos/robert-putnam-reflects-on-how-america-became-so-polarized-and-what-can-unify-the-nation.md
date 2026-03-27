@@ -4,10 +4,10 @@ aliases:
   - Robert Putnam reflects on how America became so polarized and what can unify the nation
 title: Robert Putnam reflects on how America became so polarized and what can unify the nation
 URL: https://youtu.be/5cVSR8MSJvw
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: PBS NewsHour
-tags: 
+tags:
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # PBS NewsHour - Robert Putnam reflects on how America became so polarized and what can unify the nation  

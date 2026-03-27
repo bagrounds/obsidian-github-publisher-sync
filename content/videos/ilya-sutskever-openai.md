@@ -4,10 +4,10 @@ aliases:
   - 🤖🧠👁️ Ilya Sutskever, OpenAI
 title: 🤖🧠👁️ Ilya Sutskever, OpenAI
 URL: https://bagrounds.org/videos/ilya-sutskever-openai
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: UC Berkeley EECS
-tags: 
+tags:
 youtube: https://www.youtube.com/watch?v=RvEwFvl-TrY
 ---
 [Home](../index.md) > [Videos](./index.md)  

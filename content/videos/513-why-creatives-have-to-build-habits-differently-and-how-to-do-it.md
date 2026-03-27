@@ -4,10 +4,10 @@ aliases:
   - 🎨🧱🔄 513 - Why Creatives Have to Build Habits Differently and How to Do It
 title: 🎨🧱🔄 513 - Why Creatives Have to Build Habits Differently and How to Do It
 URL: https://bagrounds.org/videos/513-why-creatives-have-to-build-habits-differently-and-how-to-do-it
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: Creative Pep Talk
-tags: 
+tags:
 youtube: https://youtu.be/lmfhGGSsqcA
 ---
 [Home](../index.md) > [Videos](./index.md)  

@@ -4,10 +4,10 @@ aliases:
   - Protestors join more than a thousand rallies across the U.S. against Trump’s policies
 title: Protestors join more than a thousand rallies across the U.S. against Trump’s policies
 URL: https://youtu.be/aDMLNPCYtwI
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: PBS NewsHour
-tags: 
+tags:
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # Protestors join more than a thousand rallies across the U.S. against Trump’s policies  

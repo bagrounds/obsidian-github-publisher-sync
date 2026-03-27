@@ -4,8 +4,8 @@ aliases:
   - "🧑‍🏫📉🎤🧘 Presentation Zen: Simple Ideas on Presentation Design and Delivery"
 title: "🧑‍🏫📉🎤🧘 Presentation Zen: Simple Ideas on Presentation Design and Delivery"
 URL: https://bagrounds.org/books/presentation-zen
-Author: 
-tags: 
+Author:
+tags:
 affiliate link: https://amzn.to/43y2woo
 ---
 [Home](../index.md) > [Books](./index.md)  

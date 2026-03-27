@@ -4,10 +4,10 @@ aliases:
   - ⏱️🧠🐘 The 10 Minute memory method
 title: ⏱️🧠🐘 The 10 Minute memory method
 URL: https://youtu.be/YCqqkGUsNxo
-Author: 
+Author:
 Platform: "#YouTube"
 Channel: "[[Justin Sung]]"
-tags: 
+tags:
 ---
 [Home](../index.md) > [Videos](./index.md) | [🧠👨‍🎓📈 Justin Sung](../people/justin-sung.md)  
 # ⏱️🧠🐘 The 10 Minute memory method  

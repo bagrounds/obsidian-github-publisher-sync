@@ -4,10 +4,10 @@ aliases:
   - "😟🔮 Anne Applebaum: «It Is What I Feared Would Happen»"
 title: "😟🔮 Anne Applebaum: «It Is What I Feared Would Happen»"
 URL: https://bagrounds.org/videos/anne-applebaum-it-is-what-i-feared-would-happen
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: To the Contrary With Charlie Sykes
-tags: 
+tags:
 youtube: https://youtu.be/Kp1MUqZKOUA
 ---
 [Home](../index.md) > [Videos](./index.md)  

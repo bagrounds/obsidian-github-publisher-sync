@@ -4,10 +4,10 @@ aliases:
   - "PBS News Weekly: A deeper look at Trump's tariff wars, education cuts and more | March 14, 2025"
 title: "PBS News Weekly: A deeper look at Trump's tariff wars, education cuts and more | March 14, 2025"
 URL: https://youtu.be/gN5cC5_TiyI
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: PBS NewsHour
-tags: 
+tags:
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # PBS NewsHour - PBS News Weekly: A deeper look at Trump's tariff wars, education cuts and more | March 14, 2025  

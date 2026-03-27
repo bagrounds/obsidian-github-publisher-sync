@@ -4,8 +4,8 @@ aliases:
   - 🐕🐈‍⬛🩺❤️‍🩹 Small Animal Internal Medicine
 title: 🐕🐈‍⬛🩺❤️‍🩹 Small Animal Internal Medicine
 URL: https://bagrounds.org/books/small-animal-internal-medicine
-Author: 
-tags: 
+Author:
+tags:
 affiliate link: https://amzn.to/3ZQjV9c
 ---
 [Home](../index.md) > [Books](./index.md)  

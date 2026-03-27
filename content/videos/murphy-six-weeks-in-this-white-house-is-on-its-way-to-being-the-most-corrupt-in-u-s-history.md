@@ -4,10 +4,10 @@ aliases:
   - "Murphy: Six Weeks In, This White House Is On Its Way To Being The Most Corrupt In U.S. History"
 title: "Murphy: Six Weeks In, This White House Is On Its Way To Being The Most Corrupt In U.S. History"
 URL: https://youtu.be/hycoCYenXls
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: Senator Chris Murphy
-tags: 
+tags:
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # Murphy: Six Weeks In, This White House Is On Its Way To Being The Most Corrupt In U.S. History  

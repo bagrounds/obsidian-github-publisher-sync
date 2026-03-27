@@ -4,10 +4,10 @@ aliases:
   - 🧠⏳🚀⚡ 4 ADHD Habits to Make 2025 Hyper Productive
 title: 🧠⏳🚀⚡ 4 ADHD Habits to Make 2025 Hyper Productive
 URL: https://bagrounds.org/videos/4-adhd-habits-to-make-2025-hyper-productive
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: Ali Alqaraghuli, PhD
-tags: 
+tags:
 youtube: https://youtu.be/DA0try_SxdM
 ---
 [Home](../index.md) > [Videos](./index.md)  

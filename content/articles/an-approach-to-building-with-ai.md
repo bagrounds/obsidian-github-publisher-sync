@@ -4,8 +4,8 @@ aliases:
   - 🤖🧱🏗️🧠 An Approach to Building with AI
 title: 🤖🧱🏗️🧠 An Approach to Building with AI
 URL: https://bagrounds.org/articles/an-approach-to-building-with-ai
-Author: 
-tags: 
+Author:
+tags:
 ---
 [Home](../index.md) > [Articles](./index.md)  
 # [🤖🧱🏗️🧠 An Approach to Building with AI](https://github.com/ajelinek/vibe-rules)  

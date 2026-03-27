@@ -4,10 +4,10 @@ aliases:
   - Sen. Cantwell Speaks on the Senate Floor on the Trade Review Act of 2025
 title: Sen. Cantwell Speaks on the Senate Floor on the Trade Review Act of 2025
 URL: https://youtu.be/SU56CNNg8RE
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: Senator Cantwell
-tags: 
+tags:
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # Sen. Cantwell Speaks on the Senate Floor on the Trade Review Act of 2025  

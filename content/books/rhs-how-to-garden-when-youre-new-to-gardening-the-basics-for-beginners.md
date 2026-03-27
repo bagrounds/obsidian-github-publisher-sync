@@ -5,6 +5,8 @@ aliases:
 URL: https://bagrounds.org/books/rhs-how-to-garden-when-youre-new-to-gardening-the-basics-for-beginners
 share: true
 affiliate link: https://amzn.to/450yhHJ
+tags:
+  - gardening
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🪴🌱 RHS How to Garden When You're New to Gardening: The Basics for Absolute Beginners  

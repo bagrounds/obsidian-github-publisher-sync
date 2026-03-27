@@ -4,8 +4,8 @@ aliases:
   - "🧠⚙️🐒💡 Executive Functions: What They Are, How They Work, and Why They Evolved"
 title: "🧠⚙️🐒💡 Executive Functions: What They Are, How They Work, and Why They Evolved"
 URL: https://bagrounds.org/books/executive-functions
-Author: 
-tags: 
+Author:
+tags:
 affiliate link: https://amzn.to/3T7a8rC
 ---
 [Home](../index.md) > [Books](./index.md)  
@@ -61,7 +61,7 @@ affiliate link: https://amzn.to/3T7a8rC
 * **Best Alternate Book on the Same Topic:** "The Power of Resilience: Achieving Balance, Confidence, and Personal Strength in Your Life" by Robert Brooks and Sam Goldstein. This book also discusses executive functions, and provides more practical tips for building resilience. 🧘  
 * **Best Tangentially Related Book:** "[Thinking, Fast and Slow](./thinking-fast-and-slow.md)" by Daniel Kahneman. This book discusses the two systems of thinking, which relate to EFs by exploring the interplay between automatic and controlled processes. 🧠  
 * **Best Diametrically Opposed Book:** "[Flow: The Psychology of Optimal Experience](./flow-the-psychology-of-optimal-experience.md)" by Mihaly Csikszentmihalyi. While Barkley focuses on controlled processes, Csikszentmihalyi explores the state of flow, where actions are automatic and effortless. 🌊  
-* **Best Fiction Book That Incorporates Related Ideas:** "Flowers for Algernon" by Daniel Keyes. This novel explores the ethical implications of enhancing cognitive abilities, including EFs. 🌼  
+* **Best Fiction Book That Incorporates Related Ideas:** Flowers for Algernon by Daniel Keyes. This novel explores the ethical implications of enhancing cognitive abilities, including EFs. 🌼  
 * **Best More General Book:** [🧠🗂️ The Organized Mind: Thinking Straight in the Age of Information Overload](./the-organized-mind-thinking-straight-in-the-age-of-information-overload.md) by Daniel J. Levitin. This book gives a broader overview of how to manage information and organize our thoughts. 📂  
 * **Best More Specific Book:** "[Smart but Scattered](./smart-but-scattered.md): The Revolutionary "Executive Skills" Approach to Helping Students Reach Their Potential" by Peg Dawson and Richard Guare. This book focuses specifically on executive skills in children and adolescents. 👦  
 * **Best More Rigorous Book:** "Principles of Frontal Lobe Function" edited by Donald T. Stuss and Robert T. Knight. This is a very technical, scientific book for those with a background in neuroscience. 🧪  

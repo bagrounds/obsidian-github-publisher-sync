@@ -4,8 +4,8 @@ aliases:
   - "🎯🎭🔗🧭🏆 Purposeful Performance: The Secret Mix of Connecting, Leading, and Succeeding"
 title: " 🎯🎭🔗🧭🏆 Purposeful Performance: The Secret Mix of Connecting, Leading, and Succeeding"
 URL: https://bagrounds.org/books/purposeful-performance
-Author: 
-tags: 
+Author:
+tags:
 affiliate link: https://amzn.to/43CBOJS
 ---
 [Home](../index.md) > [Books](./index.md)  

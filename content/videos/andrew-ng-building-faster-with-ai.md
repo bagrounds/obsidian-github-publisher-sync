@@ -4,10 +4,10 @@ aliases:
   - "🤖🚀📈 Andrew Ng: Building Faster with AI"
 title: "🤖🚀📈 Andrew Ng: Building Faster with AI"
 URL: https://bagrounds.org/videos/andrew-ng-building-faster-with-ai
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: Y Combinator
-tags: 
+tags:
 youtube: https://youtu.be/RNJCfif1dPY
 ---
 [Home](../index.md) > [Videos](./index.md) | [👨‍🏫🤖 Andrew Ng](../people/andrew-ng.md)  

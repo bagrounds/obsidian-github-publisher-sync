@@ -4,10 +4,10 @@ aliases:
   - How Trump's tariffs and trade war are impacting U.S. and global economies
 title: How Trump's tariffs and trade war are impacting U.S. and global economies
 URL: https://youtu.be/8oU9sZrZtyQ
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: PBS NewsHour
-tags: 
+tags:
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # How Trump's tariffs and trade war are impacting U.S. and global economies  

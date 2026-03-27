@@ -4,10 +4,10 @@ aliases:
   - Schiff Sends Message Directly to Trump in Surprise Hearing
 title: Schiff Sends Message Directly to Trump in Surprise Hearing
 URL: https://youtu.be/54eBj-TLyO4
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: Sen. Adam Schiff
-tags: 
+tags:
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # Schiff Sends Message Directly to Trump in Surprise Hearing  

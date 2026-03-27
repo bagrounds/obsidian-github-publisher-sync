@@ -4,8 +4,8 @@ aliases:
   - "📈🎯✅📏 Measure What Matters: How Google, Bono, and the Gates Foundation Rock the World with OKRs"
 title: "📈🎯✅📏 Measure What Matters: How Google, Bono, and the Gates Foundation Rock the World with OKRs"
 URL: https://bagrounds.org/books/measure-what-matters
-Author: 
-tags: 
+Author:
+tags:
 affiliate link: https://amzn.to/440jLPc
 CTA: 🎯 Achieve your aspirations.
 ---

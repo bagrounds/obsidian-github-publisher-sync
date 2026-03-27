@@ -4,8 +4,8 @@ aliases:
   - "😱🤡🇺🇸 Fear: Trump in the White House"
 title: "😱🤡🇺🇸 Fear: Trump in the White House"
 URL: https://bagrounds.org/books/fear
-Author: 
-tags: 
+Author:
+tags:
 affiliate link: https://amzn.to/4kr6q8q
 ---
 [Home](../index.md) > [Books](./index.md)  

@@ -4,8 +4,8 @@ aliases:
   - 🫂🤝🗣️ How To Win Friends And Influence People
 title: 🫂🤝🗣️ How To Win Friends And Influence People
 URL: https://bagrounds.org/books/how-to-win-friends-and-influence-people
-Author: 
-tags: 
+Author:
+tags:
 affiliate link: https://amzn.to/3FwV1Vs
 ---
 [Home](../index.md) > [Books](./index.md)  

@@ -4,10 +4,10 @@ aliases:
   - Is Every Civilization Doomed to Fail? - Gregory Aldrete
 title: Is Every Civilization Doomed to Fail? - Gregory Aldrete
 URL: https://youtu.be/uqsBx58GxYY
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: After Skool
-tags: 
+tags:
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # Is Every Civilization Doomed to Fail? - Gregory Aldrete  

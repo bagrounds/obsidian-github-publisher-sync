@@ -4,10 +4,10 @@ aliases:
   - 💰🌊🚧🏛️🪧🚨 Politics Chat, July 10, 2025
 title: 💰🌊🚧🏛️🪧🚨 Politics Chat, July 10, 2025
 URL: https://bagrounds.org/videos/politics-chat-july-10-2025
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: Heather Cox Richardson
-tags: 
+tags:
 youtube: https://www.youtube.com/embed/JCfHvSctDz0
 ---
 [Home](../index.md) > [Videos](./index.md) | [🏛️🇺🇸📖 Heather Cox Richardson](../people/heather-cox-richardson.md)  

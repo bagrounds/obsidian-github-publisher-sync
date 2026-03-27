@@ -4,10 +4,10 @@ aliases:
   - "🌅🧠🗝️🚀📈 The Remarkable Morning Method: 5 Ways to Unlock Your Best Mental State"
 title: "🌅🧠🗝️🚀📈 The Remarkable Morning Method: 5 Ways to Unlock Your Best Mental State"
 URL: https://bagrounds.org/videos/the-remarkable-morning-method-5-ways-to-unlock-your-best-mental-state
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: Dr. Tracey Marks
-tags: 
+tags:
 youtube: https://youtu.be/T5pDMLnEhus
 ---
 [Home](../index.md) > [Videos](./index.md)  

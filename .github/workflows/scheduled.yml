@@ -61,6 +61,10 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: |
           RUN_ID=$(gh run list --workflow=haskell.yml --status=success --limit=1 --json databaseId -q '.[0].databaseId')
+          if [ -z "$RUN_ID" ]; then
+            echo "❌ No successful haskell.yml run found. The Haskell CI must run successfully at least once before scheduled tasks can execute."
+            exit 1
+          fi
           gh run download "$RUN_ID" --name haskell-binaries --dir bin/
           chmod +x bin/run-scheduled
 

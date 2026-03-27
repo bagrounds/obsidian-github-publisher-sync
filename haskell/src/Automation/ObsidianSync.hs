@@ -16,6 +16,7 @@ module Automation.ObsidianSync
 import Control.Concurrent (threadDelay)
 import Control.Exception (SomeException, catch, throwIO, try)
 import Control.Monad (filterM, when)
+import Data.List (intercalate)
 import Data.Text (Text)
 import qualified Data.Text as T
 import qualified Data.Text.IO as TIO
@@ -86,17 +87,13 @@ findObProcesses :: Maybe FilePath -> IO [String]
 findObProcesses mVaultDir = do
   myPid <- show <$> getProcessID
   let patterns = ["obsidian-headless"] <> maybe [] pure mVaultDir
-      grepPattern = intercalateStr "|" patterns
+      grepPattern = intercalate "|" patterns
   result <- try $ readProcess "bash" ["-c",
     "ps -u $(id -u) -o pid,args 2>/dev/null | grep -E '" <> grepPattern <> "' | grep -v grep | awk '{print $1}'"
     ] "" :: IO (Either SomeException String)
   pure $ case result of
     Left _     -> []
     Right pids -> filter (\p -> not (null p) && p /= myPid) $ lines pids
-  where
-    intercalateStr _ []     = ""
-    intercalateStr _ [x]    = x
-    intercalateStr sep (x:xs) = x <> sep <> intercalateStr sep xs
 
 killObProcesses :: Maybe FilePath -> IO ()
 killObProcesses mVaultDir = do

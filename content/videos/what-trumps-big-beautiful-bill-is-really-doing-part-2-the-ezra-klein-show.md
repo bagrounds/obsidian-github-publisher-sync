@@ -4,10 +4,10 @@ aliases:
   - 👹👶🏼💸➡️👴🏻💰 What Trump’s ‘Big, Beautiful Bill’ Is Really Doing (Part 2) | The Ezra Klein Show
 title: 👹👶🏼💸➡️👴🏻💰 What Trump’s ‘Big, Beautiful Bill’ Is Really Doing (Part 2) | The Ezra Klein Show
 URL: https://youtu.be/nIB-8dvkL8I
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: The Ezra Klein Show
-tags: 
+tags:
 ---
 [Home](../index.md) > [Videos](./index.md) | [⏮️ 💰💣 What Trump’s ‘Big, Beautiful Bill’ Is Really Doing (Part 1) | The Ezra Klein Show](./what-trumps-big-beautiful-bill-is-really-doing-part-1-the-ezra-klein-show.md)  
 # 👹👶🏼💸➡️👴🏻💰 What Trump’s ‘Big, Beautiful Bill’ Is Really Doing (Part 2) | The Ezra Klein Show  

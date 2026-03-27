@@ -118,7 +118,7 @@ Author: "[[github-copilot-agent]]"
 
 ### 📗 Similar
 
-- Release It! by Michael T. Nygaus
+- Release It! by Michael T. Nygard
 - Site Reliability Engineering by Betsy Beyer, Chris Jones, Jennifer Petoff, and Niall Richard Murphy
 - The Phoenix Project by Gene Kim, Kevin Behr, and George Spafford
 

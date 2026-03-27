@@ -4,10 +4,10 @@ aliases:
   - "📣👮🏿‍♂️🧑🏿‍🤝‍🧑🏿 LIVE: LAPD press conference after protests in Los Angeles over National Guard deployment"
 title: "📣👮🏿‍♂️🧑🏿‍🤝‍🧑🏿 LIVE: LAPD press conference after protests in Los Angeles over National Guard deployment"
 URL: https://bagrounds.org/videos/live-lapd-press-conference-after-protests-in-los-angeles-over-national-guard-deployment
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: Associated Press
-tags: 
+tags:
 youtube: https://www.youtube.com/live/OYsNYS4Mt3Q
 ---
 [Home](../index.md) > [Videos](./index.md)  

@@ -4,10 +4,10 @@ aliases:
   - 🗑️👩‍💻👎 Most Tech Interview Prep is GARBAGE
 title: 🗑️👩‍💻👎 Most Tech Interview Prep is GARBAGE
 URL: https://youtu.be/0Z9RW_hhUT4
-Author: 
+Author:
 Platform: "#YouTube"
 Channel: "[[A Life Engineered]]"
-tags: 
+tags:
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 🗑️👩‍💻👎 Most Tech Interview Prep is GARBAGE  

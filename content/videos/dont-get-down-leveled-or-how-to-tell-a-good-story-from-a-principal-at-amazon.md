@@ -4,10 +4,10 @@ aliases:
   - ⬇️⬆️🗣️ Don't Get Down Leveled or How to Tell a Good Story (From a Principal at Amazon)
 title: ⬇️⬆️🗣️ Don't Get Down Leveled or How to Tell a Good Story (From a Principal at Amazon)
 URL: https://youtu.be/hU6BVxtGd5g
-Author: 
+Author:
 Platform: "#YouTube"
 Channel: "[[A Life Engineered]]"
-tags: 
+tags:
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # ⬇️⬆️🗣️ Don't Get Down Leveled or How to Tell a Good Story (From a Principal at Amazon)  

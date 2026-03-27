@@ -4,10 +4,10 @@ aliases:
   - How automakers are navigating Trump’s tariffs on imported vehicles and parts
 title: How automakers are navigating Trump’s tariffs on imported vehicles and parts
 URL: https://youtu.be/UxdHZEYEY4A
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: PBS NewsHour
-tags: 
+tags:
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # How automakers are navigating Trump’s tariffs on imported vehicles and parts  

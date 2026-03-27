@@ -18,7 +18,7 @@ import System.Exit (exitFailure)
 import System.FilePath ((</>), dropExtension, takeExtension)
 import System.IO (hSetBuffering, stdout, stderr, BufferMode(..))
 
-import Automation.AiBlogLinks (NavLinkResult (..), ensureAllNavLinks)
+import Automation.AiBlogLinks (NavLinkResult (..), ensureAllNavLinks, buildReflectionLinks)
 import Automation.AiFiction
   ( FictionConfig (..)
   , FictionResult (..)
@@ -494,8 +494,10 @@ runBackfillImages manager repoRoot = do
     , "PROMPT_DESCRIBER_MODEL"
     ]
   let providers = resolveImageProviders envMap
-  case providers of
-    [] -> logMsg "  ⚠️  No image providers configured, skipping image backfill"
+  imageModifiedFiles <- case providers of
+    [] -> do
+      logMsg "  ⚠️  No image providers configured, skipping image backfill"
+      pure []
     _  -> do
       logMsg $ "  🎨 Image providers: " <> T.pack (show (length providers))
       let bfConfig = BackfillConfig
@@ -503,12 +505,13 @@ runBackfillImages manager repoRoot = do
             , bfcContentDirs = backfillContentIds
             , bfcAttachmentsDir = repoRoot </> "attachments"
             , bfcProviders = providers
-            , bfcMaxImages = 10
+            , bfcMaxImages = 1
             }
       result <- backfillImages manager bfConfig
       logMsg $ "  🖼️  Images: " <> T.pack (show (brImagesGenerated result))
             <> " generated, " <> T.pack (show (brFilesUpdated result))
             <> " files updated, " <> T.pack (show (brFilesSkipped result)) <> " skipped"
+      pure (brModifiedFiles result)
 
   -- 3. Update AI blog nav links
   let aiBlogDir = repoRoot </> "ai-blog"
@@ -527,12 +530,25 @@ runBackfillImages manager repoRoot = do
   let attachmentsDir = repoRoot </> "attachments"
   syncAttachmentsDir attachmentsDir (vaultDir </> "attachments")
 
-  -- 6. Add update links to reflection
+  -- 6. Add update links from image backfill results
   let reflectionsDir = vaultDir </> "reflections"
-  _ <- addUpdateLinksToReflection reflectionsDir today
-        [ UpdateLink "ai-blog/index" "AI Blog nav links updated" ]
+  let imageUpdateLinks = fmap (\f ->
+        let title = T.replace ".md" "" (T.replace "ai-blog/" "" f)
+        in UpdateLink f title
+        ) imageModifiedFiles
+  case imageUpdateLinks of
+    [] -> pure ()
+    _  -> do
+      _ <- addUpdateLinksToReflection reflectionsDir today imageUpdateLinks
+      pure ()
 
-  -- 7. Push vault
+  -- 7. Add update links from nav link changes (each blog post links to its date's reflection)
+  aiBlogLinks <- buildReflectionLinks aiBlogDir navResults
+  mapM_ (\(relPath, title, date) ->
+    addUpdateLinksToReflection reflectionsDir date [UpdateLink relPath title]
+    ) aiBlogLinks
+
+  -- 8. Push vault
   pushObsidianVault vaultDir (ocAuthToken creds)
   logMsg "  📤 Vault pushed"
 

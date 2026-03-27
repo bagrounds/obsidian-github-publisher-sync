@@ -19,10 +19,12 @@ import Network.HTTP.Client
   ( Manager
   , Request (..)
   , RequestBody (..)
+  , ResponseTimeout
   , httpLbs
   , parseRequest
   , responseBody
   , responseStatus
+  , responseTimeoutMicro
   )
 import Network.HTTP.Types.Status (statusCode)
 
@@ -102,6 +104,7 @@ generateContent manager req = do
         , requestHeaders =
             [ ("Content-Type", "application/json")
             ]
+        , responseTimeout = responseTimeoutMicro (120 * 1000000)  -- 120 seconds for Gemini API
         }
   response <- httpLbs httpReq manager
   let status = statusCode $ responseStatus response

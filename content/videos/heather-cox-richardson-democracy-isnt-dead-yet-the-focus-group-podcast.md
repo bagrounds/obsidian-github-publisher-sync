@@ -4,10 +4,10 @@ aliases:
   - 🏛️⚠️⏳ Democracy Isn’t Dead. Yet. | The Focus Group Podcast
 title: 🏛️⚠️⏳ Democracy Isn’t Dead. Yet. | The Focus Group Podcast
 URL: https://bagrounds.org/videos/heather-cox-richardson-democracy-isnt-dead-yet-the-focus-group-podcast
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: The Bulwark
-tags: 
+tags:
 youtube: https://youtu.be/UHK7YTsLt2A
 ---
 [Home](../index.md) > [Videos](./index.md)  

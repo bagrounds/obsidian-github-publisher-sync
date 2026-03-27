@@ -125,6 +125,7 @@ test-suite automation-tests
     Automation.BlogPromptTest
     Automation.BlogSeriesTest
     Automation.BlogImageTest
+    Automation.InternalLinkingTest
   build-depends:
     base,
     automation,

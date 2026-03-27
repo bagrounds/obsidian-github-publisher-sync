@@ -7,6 +7,9 @@ share: true
 affiliate link: https://amzn.to/44VXum6
 CTA: 🚨 Shield our future.
 updated: 2026-03-15T10:07:30.345Z
+force_analyze_links: false
+link_analysis_time: 2026-03-25T21:14:05.668Z
+link_analysis_model: gemini-3.1-flash-lite-preview
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ⚠️🥴🕹️🌐 The Fifth Risk  

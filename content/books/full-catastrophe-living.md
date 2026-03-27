@@ -4,8 +4,8 @@ aliases:
   - "🌪️🧘🏼‍♀️ Full Catastrophe Living: Using the Wisdom of Your Body and Mind to Face Stress, Pain, and Illness"
 title: "🌪️🧘🏼‍♀️ Full Catastrophe Living: Using the Wisdom of Your Body and Mind to Face Stress, Pain, and Illness"
 URL: https://bagrounds.org/books/full-catastrophe-living
-Author: 
-tags: 
+Author:
+tags:
 affiliate link: https://amzn.to/4mJU6Sg
 ---
 [Home](../index.md) > [Books](./index.md)  

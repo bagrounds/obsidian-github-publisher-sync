@@ -4,10 +4,10 @@ aliases:
   - 🗣️⭐💼 Answering Behavioral Interview Questions Using the STAR Method
 title: 🗣️⭐💼 Answering Behavioral Interview Questions Using the STAR Method
 URL: https://youtu.be/ZSSID5mp93o
-Author: 
+Author:
 Platform: "#YouTube"
 Channel: "[[Self Made Millennial]]"
-tags: 
+tags:
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 🗣️⭐💼 Answering Behavioral Interview Questions Using the STAR Method  

@@ -4,8 +4,8 @@ aliases:
   - "🇯🇵🔑😊💯 Ikigai: The Japanese Secret to a Long and Happy Life"
 title: "🇯🇵🔑😊💯 Ikigai: The Japanese Secret to a Long and Happy Life"
 URL: https://bagrounds.org/books/ikigai
-Author: 
-tags: 
+Author:
+tags:
 affiliate link: https://amzn.to/4jzQLm4
 ---
 [Home](../index.md) > [Books](./index.md)  
@@ -57,7 +57,7 @@ The book presents a compelling case for the importance of Ikigai and community i
   
 #### Additional Book Recommendations 📚  
 * **Best Alternate Book on the Same Topic:** "The Blue Zones: 9 Lessons for Living Longer From the People Who've Lived Longest" by Dan Buettner. 🌍  
-* **Best Tangentially Related Book:** "[Stumbling on Happiness](./stumbling-on-happiness.md)" by Daniel Gilbert. 😊  
+* **Best Tangentially Related Book:** [😮😊 Stumbling on Happiness](./stumbling-on-happiness.md) by Daniel Gilbert. 😊  
 * **Best Diametrically Opposed Book:** "The Subtle Art of Not Giving a F*ck: A Counterintuitive Approach to Living a Good Life" by Mark Manson. 🖕  
 * **Best Fiction Book That Incorporates Related Ideas:** "The Midnight Library" by Matt Haig. 🌌  
 * **Best More General Book:** "[Sapiens: A Brief History of Humankind](./sapiens-a-brief-history-of-humankind.md)" by Yuval Noah Harari. 📜  

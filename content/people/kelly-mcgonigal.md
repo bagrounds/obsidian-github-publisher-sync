@@ -1,7 +1,7 @@
 ---
 share: true
-goodreads: 
-Wikipedia: 
+goodreads:
+Wikipedia:
 aliases:
   - 🧠🔬🧘‍♀️💪📈❤️‍🩹🗣️📚🌟 Kelly McGonigal
 title: 🧠🔬🧘‍♀️💪📈❤️‍🩹🗣️📚🌟 Kelly McGonigal

@@ -4,8 +4,8 @@ aliases:
   - "🗳️✊🤺🇺🇸 Democracy, If We Can Keep It: The ACLU's 100-Year Fight for Rights in America"
 title: "🗳️✊🤺🇺🇸 Democracy, If We Can Keep It: The ACLU's 100-Year Fight for Rights in America"
 URL: https://bagrounds.org/books/democracy-if-we-can-keep-it
-Author: 
-tags: 
+Author:
+tags:
 affiliate link: https://amzn.to/3HBPu0g
 ---
 [Home](../index.md) > [Books](./index.md)  

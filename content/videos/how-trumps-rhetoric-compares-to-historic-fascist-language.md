@@ -4,10 +4,10 @@ aliases:
   - How Trump's rhetoric compares to historic fascist language
 title: How Trump's rhetoric compares to historic fascist language
 URL: https://youtu.be/6U4N-uTn3v0
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: PBS NewsHour
-tags: 
+tags:
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # How Trump's rhetoric compares to historic fascist language  

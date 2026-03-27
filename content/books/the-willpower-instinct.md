@@ -4,8 +4,8 @@ aliases:
   - "🧘🏋️ The Willpower Instinct: How Self-Control Works, Why It Matters, and What You Can Do to Get More of It"
 title: "🧘🏋️ The Willpower Instinct: How Self-Control Works, Why It Matters, and What You Can Do to Get More of It"
 URL: https://bagrounds.org/books/the-willpower-instinct
-Author: 
-tags: 
+Author:
+tags:
 affiliate link: https://amzn.to/3ZanKGf
 ---
 [Home](../index.md) > [Books](./index.md)  

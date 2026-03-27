@@ -4,8 +4,8 @@ aliases:
   - "🎲🧮 Probability Theory: The Logic of Science"
 title: "🎲🧮 Probability Theory: The Logic of Science"
 URL: https://bagrounds.org/books/probability-theory
-Author: 
-tags: 
+Author:
+tags:
 affiliate link: https://amzn.to/43YIOCc
 ---
 [Home](../index.md) > [Books](./index.md)  

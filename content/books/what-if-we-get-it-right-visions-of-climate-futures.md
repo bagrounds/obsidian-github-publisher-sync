@@ -54,7 +54,7 @@ affiliate link: https://amzn.to/3T4xv5a
   
 ### 🎨 Creatively Related (Expanding the Vision):  
   
-* 🏢 **Ministry for the Future** by Kim Stanley Robinson: 🚀 A science fiction novel that, while acknowledging the dire realities of climate change, imagines the political, social, and technological efforts undertaken to address it in the near future. 💡 It offers a fictional counterpart to Johnson's non-fiction call for envisioning success.  
+* The Ministry for the Future by Kim Stanley Robinson: 🚀 A science fiction novel that, while acknowledging the dire realities of climate change, imagines the political, social, and technological efforts undertaken to address it in the near future. 💡 It offers a fictional counterpart to Johnson's non-fiction call for envisioning success.  
 * 🌍 **Parable of the Sower** by Octavia E. Butler: dystopia A dystopian novel set in a climate-ravaged future, yet centered on themes of resilience, community-building, and the creation of a new belief system (Earthseed) focused on shaping change. 🧑‍🤝‍🧑 It highlights the human capacity to adapt and strive even in the darkest times.  
 * 🌳 **The Overstory** by Richard Powers: 🌲 A sprawling novel that interweaves multiple narratives to explore the critical importance of trees and the natural world, fostering a deeper appreciation for the interconnectedness of life.  
 * 🏡 **Walden** by Henry David Thoreau: 🏞️ A classic meditation on simple living in natural surroundings, offering timeless reflections on consumption, self-sufficiency, and the human relationship with nature that remain relevant to climate discussions.  

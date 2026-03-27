@@ -4,10 +4,10 @@ aliases:
   - Migrants in U.S. legally and with no criminal history caught up in Trump crackdown
 title: Migrants in U.S. legally and with no criminal history caught up in Trump crackdown
 URL: https://youtu.be/iPNi3UxD7NQ
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: PBS NewsHour
-tags: 
+tags:
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # Migrants in U.S. legally and with no criminal history caught up in Trump crackdown  

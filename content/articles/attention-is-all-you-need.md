@@ -4,7 +4,7 @@ aliases:
   - 👀 Attention Is All You Need
 title: 👀 Attention Is All You Need
 URL: https://bagrounds.org/articles/attention-is-all-you-need
-Author: 
+Author:
 tags: []
 ---
 [Home](../index.md) > [Articles](./index.md)  

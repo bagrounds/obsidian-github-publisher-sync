@@ -4,8 +4,8 @@ aliases:
   - "⚖️👈 The Tipping Point: How Little Things Can Make a Big Difference"
 title: "⚖️👈 The Tipping Point: How Little Things Can Make a Big Difference"
 URL: https://bagrounds.org/books/the-tipping-point
-Author: 
-tags: 
+Author:
+tags:
 affiliate link: https://amzn.to/3FCGeIH
 CTA: Start epidemics.
 ---

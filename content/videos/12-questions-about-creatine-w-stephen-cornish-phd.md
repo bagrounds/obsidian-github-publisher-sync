@@ -4,10 +4,10 @@ aliases:
   - ❓💪🔬 12 Questions About Creatine with Stephen Cornish, PhD
 title: ❓💪🔬 12 Questions About Creatine with Stephen Cornish, PhD
 URL: https://bagrounds.org/videos/12-questions-about-creatine-w-stephen-cornish-phd
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: UofMRecServices
-tags: 
+tags:
 youtube: https://youtu.be/kB5pW7zSlqs
 ---
 [Home](../index.md) > [Videos](./index.md)  

@@ -4,8 +4,8 @@ aliases:
   - 📊🔎🤖🪜 New Evaluation, Library, and Analysis of Step By Step Reasoning with Large Language Models
 title: 📊🔎🤖🪜 New Evaluation, Library, and Analysis of Step By Step Reasoning with Large Language Models
 URL: https://bagrounds.org/articles/new-evaluation-library-and-analysis-of-step-by-step-reasoning-with-large-language-models
-Author: 
-tags: 
+Author:
+tags:
 ---
 [Home](../index.md) > [Articles](./index.md)  
 # [📊🔎🤖🪜 New Evaluation, Library, and Analysis of Step By Step Reasoning with Large Language Models](https://arxiv.org/pdf/2404.05221)  

@@ -4,8 +4,8 @@ aliases:
   - "📉⚾💰 Moneyball: The Art of Winning an Unfair Game"
 title: "📉⚾💰 Moneyball: The Art of Winning an Unfair Game"
 URL: https://bagrounds.org/books/moneyball
-Author: 
-tags: 
+Author:
+tags:
 affiliate link: https://amzn.to/4ko04qa
 CTA: 📈 Outsmart the system.
 ---

@@ -4,10 +4,10 @@ aliases:
   - Professor explains why he's leaving Yale for Toronto as colleges react to Trump's threats
 title: Professor explains why he's leaving Yale for Toronto as colleges react to Trump's threats
 URL: https://youtu.be/yvgIpnk-2H4
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: PBS NewsHour
-tags: 
+tags:
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # Professor explains why he's leaving Yale for Toronto as colleges react to Trump's threats  

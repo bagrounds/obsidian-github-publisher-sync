@@ -4,10 +4,10 @@ aliases:
   - How the Elite rigged Society (and why it’s falling apart) | David Brooks
 title: How the Elite rigged Society (and why it’s falling apart) | David Brooks
 URL: https://youtu.be/QSa52TR9tCA
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: Alliance for Responsible Citizenship
-tags: 
+tags:
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # How the Elite rigged Society (and why it’s falling apart) | David Brooks  

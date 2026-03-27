@@ -4,10 +4,10 @@ aliases:
   - The conditions inside the infamous El Salvador prison where deported migrants are held
 title: The conditions inside the infamous El Salvador prison where deported migrants are held
 URL: https://youtu.be/0fVYIOu_gHI
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: PBS NewsHour
-tags: 
+tags:
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # The conditions inside the infamous El Salvador prison where deported migrants are held  

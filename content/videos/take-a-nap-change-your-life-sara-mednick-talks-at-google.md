@@ -4,10 +4,10 @@ aliases:
   - 😴🔄✨ Take a Nap! Change Your Life | Sara Mednick | Talks at Google
 title: 😴🔄✨ Take a Nap! Change Your Life | Sara Mednick | Talks at Google
 URL: https://bagrounds.org/videos/take-a-nap-change-your-life-sara-mednick-talks-at-google
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: Talks at Google
-tags: 
+tags:
 youtube: https://youtu.be/kubnf5ZH18g
 ---
 [Home](../index.md) > [Videos](./index.md) | [😴🧠🌃 Sara C. Mednick](../people/sara-c-mednick.md)  

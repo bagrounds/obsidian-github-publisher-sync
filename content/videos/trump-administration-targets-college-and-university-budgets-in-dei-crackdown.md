@@ -4,10 +4,10 @@ aliases:
   - Trump administration targets college and university budgets in DEI crackdown
 title: Trump administration targets college and university budgets in DEI crackdown
 URL: https://youtu.be/2X1Eleb_VVI
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: PBS NewsHour
-tags: 
+tags:
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # PBS NewsHour - Trump administration targets college and university budgets in DEI crackdown  

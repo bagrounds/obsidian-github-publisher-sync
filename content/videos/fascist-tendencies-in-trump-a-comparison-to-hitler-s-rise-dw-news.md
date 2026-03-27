@@ -4,10 +4,10 @@ aliases:
   - "Fascist tendencies in Trump: A comparison to Hitler's rise | DW News"
 title: "Fascist tendencies in Trump: A comparison to Hitler's rise | DW News"
 URL: https://youtu.be/bKgPzDctPM8
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: DW News
-tags: 
+tags:
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # Fascist tendencies in Trump: A comparison to Hitler's rise | DW News  

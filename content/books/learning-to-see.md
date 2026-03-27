@@ -4,8 +4,8 @@ aliases:
   - "🙈👁️💡🤔 Learning to See: Value-Stream Mapping to Add Value and Eliminate MUDA"
 title: "🙈👁️💡🤔 Learning to See: Value-Stream Mapping to Add Value and Eliminate MUDA"
 URL: https://bagrounds.org/books/learning-to-see
-Author: 
-tags: 
+Author:
+tags:
 affiliate link: https://amzn.to/4kTIB9d
 ---
 [Home](../index.md) > [Books](./index.md)  

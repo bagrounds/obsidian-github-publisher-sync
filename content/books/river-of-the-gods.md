@@ -4,8 +4,8 @@ aliases:
   - "🌊🧠🙏⚔️ River of the Gods: Genius, Belief, and Betrayal in the Search for the Source of the Nile"
 title: "🌊🧠🙏⚔️ River of the Gods: Genius, Belief, and Betrayal in the Search for the Source of the Nile"
 URL: https://bagrounds.org/books/river-of-the-gods
-Author: 
-tags: 
+Author:
+tags:
 affiliate link: https://amzn.to/3FnUVQ1
 ---
 [Home](../index.md) > [Books](./index.md)  

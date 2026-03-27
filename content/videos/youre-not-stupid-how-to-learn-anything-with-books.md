@@ -4,10 +4,10 @@ aliases:
   - "🧠🚫📚 You’re Not Stupid: How to Learn Anything With Books"
 title: "🧠🚫📚 You’re Not Stupid: How to Learn Anything With Books"
 URL: https://bagrounds.org/videos/youre-not-stupid-how-to-learn-anything-with-books
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: im bri
-tags: 
+tags:
 youtube: https://youtu.be/U23HVqrY_fI
 ---
 [Home](../index.md) > [Videos](./index.md)  

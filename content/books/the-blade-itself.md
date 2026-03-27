@@ -4,8 +4,8 @@ aliases:
   - 🗡️🤕 The Blade Itself
 title: 🗡️🤕 The Blade Itself
 URL: https://bagrounds.org/books/the-blade-itself
-Author: 
-tags: 
+Author:
+tags:
 affiliate link: https://amzn.to/3SxcboT
 ---
 [Home](../index.md) > [Books](./index.md)  

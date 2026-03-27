@@ -4,8 +4,8 @@ aliases:
   - 📈❓📏🤖 On the Difficulty of Extrapolation with NN Scaling
 title: 📈❓📏🤖 On the Difficulty of Extrapolation with NN Scaling
 URL: https://bagrounds.org/articles/on-the-difficulty-of-extrapolation-with-nn-scaling
-Author: 
-tags: 
+Author:
+tags:
 ---
 [Home](../index.md) > [Articles](./index.md)  
 # [📈❓📏🤖 On the Difficulty of Extrapolation with NN Scaling](https://lukemetz.com/difficulty-of-extrapolation-nn-scaling)  

@@ -4,10 +4,10 @@ aliases:
   - The 10 tactics of fascism | Jason Stanley | Big Think
 title: The 10 tactics of fascism | Jason Stanley | Big Think
 URL: https://youtu.be/CpCKkWMbmXU
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: Big Think
-tags: 
+tags:
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # The 10 tactics of fascism | Jason Stanley | Big Think  

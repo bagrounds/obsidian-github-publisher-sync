@@ -32,6 +32,7 @@ module Automation.BlogImage
   , generateImageWithGemini
   ) where
 
+import Control.Exception (SomeException, catch)
 import qualified Data.ByteString.Base64 as B64
 import qualified Data.ByteString.Lazy as LBS
 import Data.Char (isAlphaNum, isDigit, toLower)
@@ -1095,14 +1096,15 @@ processWithProviders manager config (candidate : rest) providerIdx result = do
 tryGenerate
   :: Manager -> ImageProviderConfig -> BackfillCandidate -> FilePath
   -> IO (Either Text ImageGenerationResult)
-tryGenerate manager provider candidate attachmentsDir = do
-  result <- safeIO $ processNote manager provider (bcFilePath candidate) attachmentsDir
-  pure result
+tryGenerate manager provider candidate attachmentsDir =
+  safeIO $ processNote manager provider (bcFilePath candidate) attachmentsDir
 
 safeIO :: IO a -> IO (Either Text a)
-safeIO action = do
-  result <- fmap Right action
-  pure result
+safeIO action =
+  fmap Right action `catch` handler
+  where
+    handler :: SomeException -> IO (Either Text a)
+    handler e = pure $ Left $ T.pack (show e)
 
 --------------------------------------------------------------------------------
 -- Sync directories

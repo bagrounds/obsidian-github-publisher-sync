@@ -4,8 +4,8 @@ aliases:
   - 👹 The Origins of Totalitarianism
 title: 👹 The Origins of Totalitarianism
 URL: https://bagrounds.org/books/the-origins-of-totalitarianism
-Author: 
-tags: 
+Author:
+tags:
 affiliate link: https://amzn.to/4kLTIRo
 ---
 [Home](../index.md) > [Books](./index.md)  

@@ -4,10 +4,10 @@ aliases:
   - "❓🛠️👨‍🎓 The Black Box Effect: How To Learn ANY Skill Quickly"
 title: "❓🛠️👨‍🎓 The Black Box Effect: How To Learn ANY Skill Quickly"
 URL: https://bagrounds.org/videos/the-black-box-effect-how-to-learn-any-skill-quickly
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: Justin Sung
-tags: 
+tags:
 youtube: https://youtu.be/NfeSoCLtxxc
 ---
 [Home](../index.md) > [Videos](./index.md) | [🧠👨‍🎓📈 Justin Sung](../people/justin-sung.md)  

@@ -4,8 +4,8 @@ aliases:
   - "🧠📚🍎💡📝 How Learning Works: Eight Research-Based Principles for Smart Teaching"
 title: "🧠📚🍎💡📝 How Learning Works: Eight Research-Based Principles for Smart Teaching"
 URL: https://bagrounds.org/books/how-learning-works
-Author: 
-tags: 
+Author:
+tags:
 affiliate link: https://amzn.to/3SAmrNa
 CTA: 💡 Transform instruction.
 ---
@@ -82,7 +82,7 @@ This book moves beyond generic teaching advice by grounding instructional strate
 * **Best Alternate Book on the Same Topic:** *[Make It Stick](./make-it-stick.md): The Science of Successful Learning* by Peter C. Brown, Henry L. Roediger III, and Mark A. McDaniel. This book also focuses on cognitive science principles for effective learning, but with a more direct focus on practical application for students. 🧠  
 * **Best Tangentially Related Book:** *[Mindset](./mindset.md): The New Psychology of Success* by Carol S. Dweck. This book explores the importance of a growth mindset in learning and achievement. 🌱  
 * **Best Diametrically Opposed Book:** *The Empty Brain: Your Brain Is Not a Computer* by Robert Epstein. This book challenges the traditional information-processing view of the brain and argues that learning is not simply a matter of input and output. 💻  
-* **Best Fiction Book That Incorporates Related Ideas:** *Flowers for Algernon* by Daniel Keyes. This novel explores the complexities of learning, intelligence, and the ethical implications of manipulating cognitive abilities. 🌼  
+* **Best Fiction Book That Incorporates Related Ideas:** Flowers for Algernon by Daniel Keyes. This novel explores the complexities of learning, intelligence, and the ethical implications of manipulating cognitive abilities. 🌼  
 * **Best More General Book:** *[Thinking, Fast and Slow](./thinking-fast-and-slow.md)* by Daniel Kahneman. This book delves into the cognitive processes that underlie thinking and decision-making. 🧠  
 * **Best More Specific Book:** *Understanding How We Learn: A Visual Guide* by Yana Weinstein and Megan Sumeracki. This book gets very specific on how to apply learning techniques, and is very visually driven. 👁️  
 * **Best More Rigorous Book:** *Principles of Psychology* by William James. A foundational text in psychology, offering a deep dive into the theoretical underpinnings of learning and cognition. 📜  

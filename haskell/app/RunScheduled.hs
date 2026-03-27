@@ -682,15 +682,14 @@ main = do
     Just h  -> pure h
     Nothing -> nowPacificHour
 
-  -- Repo root: prefer REPO_ROOT env, then GITHUB_WORKSPACE, then ".."
-  -- (when running from haskell/ subdir, repo root is parent)
+  -- Repo root: prefer REPO_ROOT env, then GITHUB_WORKSPACE, then "."
   mRepoRoot <- lookupEnv "REPO_ROOT"
   mWorkspace <- lookupEnv "GITHUB_WORKSPACE"
   let repoRoot = case mRepoRoot of
         Just r  -> r
         Nothing -> case mWorkspace of
           Just w  -> w
-          Nothing -> ".."
+          Nothing -> "."
   manager <- newManager tlsManagerSettings
 
   tasks <- case cliTaskOverride args of

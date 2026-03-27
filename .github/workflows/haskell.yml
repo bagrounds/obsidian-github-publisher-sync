@@ -12,20 +12,16 @@ permissions:
 jobs:
   build-and-test:
     runs-on: ubuntu-latest
+    container: haskell:9.14.1
     steps:
       - uses: actions/checkout@v4
-
-      - name: Install GHC 9.14.1 and Cabal via ghcup
-        run: |
-          curl --proto '=https' --tlsv1.2 -sSf https://get-ghcup.haskell.org | BOOTSTRAP_HASKELL_NONINTERACTIVE=1 BOOTSTRAP_HASKELL_GHC_VERSION=9.14.1 BOOTSTRAP_HASKELL_CABAL_VERSION=3.16.1.0 sh
-          echo "$HOME/.ghcup/bin" >> "$GITHUB_PATH"
 
       - name: Cache Cabal packages
         uses: actions/cache@v4
         with:
           path: ~/.cabal/store
-          key: cabal-${{ runner.os }}-ghc914-${{ hashFiles('haskell/automation.cabal') }}
-          restore-keys: cabal-${{ runner.os }}-ghc914-
+          key: cabal-ghc914-${{ hashFiles('haskell/automation.cabal') }}
+          restore-keys: cabal-ghc914-
 
       - name: Build
         working-directory: haskell

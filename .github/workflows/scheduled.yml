@@ -22,7 +22,36 @@ permissions:
   discussions: read
 
 jobs:
+  build-haskell:
+    runs-on: ubuntu-latest
+    container: haskell:9.14.1
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Cache Cabal packages
+        uses: actions/cache@v4
+        with:
+          path: ~/.cabal/store
+          key: cabal-ghc914-${{ hashFiles('haskell/automation.cabal') }}
+          restore-keys: cabal-ghc914-
+
+      - name: Build
+        working-directory: haskell
+        run: cabal update && cabal build
+
+      - name: Stage executable
+        working-directory: haskell
+        run: |
+          mkdir -p /tmp/haskell-bin
+          cp "$(cabal list-bin run-scheduled)" /tmp/haskell-bin/
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: run-scheduled
+          path: /tmp/haskell-bin/run-scheduled
+
   run:
+    needs: build-haskell
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -55,21 +84,10 @@ jobs:
           key: obsidian-vault-${{ github.run_id }}
           restore-keys: obsidian-vault-
 
-      - name: Install GHC 9.14.1 and Cabal via ghcup
-        run: |
-          curl --proto '=https' --tlsv1.2 -sSf https://get-ghcup.haskell.org | BOOTSTRAP_HASKELL_NONINTERACTIVE=1 BOOTSTRAP_HASKELL_GHC_VERSION=9.14.1 BOOTSTRAP_HASKELL_CABAL_VERSION=3.16.1.0 sh
-          echo "$HOME/.ghcup/bin" >> "$GITHUB_PATH"
-
-      - name: Cache Cabal packages
-        uses: actions/cache@v4
+      - uses: actions/download-artifact@v4
         with:
-          path: ~/.cabal/store
-          key: cabal-${{ runner.os }}-ghc914-${{ hashFiles('haskell/automation.cabal') }}
-          restore-keys: cabal-${{ runner.os }}-ghc914-
-
-      - name: Build Haskell executables
-        working-directory: haskell
-        run: cabal update && cabal build
+          name: run-scheduled
+          path: bin/
 
       - name: Run Scheduled Tasks
         env:
@@ -108,7 +126,8 @@ jobs:
           DISABLE_BLUESKY: ${{ vars.DISABLE_BLUESKY || '' }}
           DISABLE_MASTODON: ${{ vars.DISABLE_MASTODON || '' }}
           LINKING_MODEL: ${{ vars.LINKING_MODEL || 'gemini-3.1-flash-lite-preview' }}
+          REPO_ROOT: ${{ github.workspace }}
         run: >-
-          cd haskell && cabal run run-scheduled --
+          chmod +x bin/run-scheduled && bin/run-scheduled
           ${{ github.event.inputs.task && format('--task {0}', github.event.inputs.task) || '' }}
           ${{ github.event.inputs.hour && format('--hour {0}', github.event.inputs.hour) || '' }}

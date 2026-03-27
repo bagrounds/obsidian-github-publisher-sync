@@ -4,10 +4,10 @@ aliases:
   - Rep. Aime Wichtendahl testifies as Iowa removes civil rights for trans people (Feb 27, 2025)
 title: Rep. Aime Wichtendahl testifies as Iowa removes civil rights for trans people (Feb 27, 2025)
 URL: https://youtu.be/KEQM2bUL3co
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: Zinnia Jones
-tags: 
+tags:
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # Rep. Aime Wichtendahl testifies as Iowa removes civil rights for trans people (Feb 27, 2025)  

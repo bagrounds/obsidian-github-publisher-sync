@@ -1,5 +1,6 @@
 module Automation.EnvTest (tests) where
 
+import Data.Text (Text)
 import Test.Tasty (TestTree, testGroup)
 import Test.Tasty.HUnit (testCase, (@?=))
 
@@ -8,7 +9,7 @@ import Automation.Env
 tests :: TestTree
 tests = testGroup "Env"
   [ testCase "isPlatformDisabledValue returns False for Nothing" $
-      isPlatformDisabledValue Nothing @?= False
+      isPlatformDisabledValue (Nothing :: Maybe Text) @?= False
 
   , testCase "isPlatformDisabledValue returns True for 'true'" $
       isPlatformDisabledValue (Just "true") @?= True

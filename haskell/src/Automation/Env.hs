@@ -1,5 +1,6 @@
 module Automation.Env
   ( isPlatformDisabled
+  , isPlatformDisabledValue
   , getYesterdayDate
   , validateEnvironment
   ) where
@@ -27,7 +28,11 @@ import Automation.Types
 isPlatformDisabled :: String -> IO Bool
 isPlatformDisabled envVar = do
   mValue <- lookupEnv envVar
-  pure $ fmap (T.strip . T.toLower . T.pack) mValue `elem` [Just "true", Just "1", Just "yes"]
+  pure $ isPlatformDisabledValue (fmap T.pack mValue)
+
+isPlatformDisabledValue :: Maybe Text -> Bool
+isPlatformDisabledValue mValue =
+  fmap (T.strip . T.toLower) mValue `elem` [Just "true", Just "1", Just "yes"]
 
 getYesterdayDate :: IO Text
 getYesterdayDate = do

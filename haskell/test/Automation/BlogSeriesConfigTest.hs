@@ -10,17 +10,20 @@ tests = testGroup "BlogSeriesConfig"
   [ testCase "lookupSeries finds chickie-loo" $
       assertBool "should find chickie-loo" $
         case lookupSeries "chickie-loo" of
-          Just s  -> bscId s == "chickie-loo"
-          Nothing -> False
+          Right s -> bscId s == "chickie-loo"
+          Left _  -> False
 
   , testCase "lookupSeries finds auto-blog-zero" $
       assertBool "should find auto-blog-zero" $
         case lookupSeries "auto-blog-zero" of
-          Just s  -> bscId s == "auto-blog-zero"
-          Nothing -> False
+          Right s -> bscId s == "auto-blog-zero"
+          Left _  -> False
 
-  , testCase "lookupSeries returns Nothing for unknown" $
-      lookupSeries "unknown-series" @?= Nothing
+  , testCase "lookupSeries returns Left for unknown" $
+      assertBool "should return Left for unknown" $
+        case lookupSeries "unknown-series" of
+          Left _  -> True
+          Right _ -> False
 
   , testCase "blogSeries has 3 entries" $
       length blogSeries @?= 3
@@ -31,6 +34,6 @@ tests = testGroup "BlogSeriesConfig"
 
   , testCase "chickie-loo has correct icon" $
       case lookupSeries "chickie-loo" of
-        Just s  -> bscIcon s @?= "🐣"
-        Nothing -> assertBool "should find series" False
+        Right s -> bscIcon s @?= "🐔"
+        Left _  -> assertBool "should find series" False
   ]

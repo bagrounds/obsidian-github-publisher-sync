@@ -16,11 +16,14 @@ module Automation.StaticGiscus
   , processHtmlFiles
   ) where
 
-import Data.Aeson
-  ( FromJSON (..)
+import Automation.Json
+  ( FromValue (..)
+  , (.=)
   , (.:)
   , (.:?)
+  , encode
   , eitherDecode
+  , object
   , withObject
   )
 import Data.Map.Strict (Map)
@@ -30,7 +33,6 @@ import Data.Text (Text)
 import qualified Data.Text as T
 import qualified Data.Text.Encoding as TE
 import qualified Data.Text.IO as TIO
-import GHC.Generics (Generic)
 import Network.HTTP.Client
   ( Manager
   , Request (..)
@@ -44,28 +46,25 @@ import Network.HTTP.Types.Status (statusCode)
 import System.Directory (doesDirectoryExist, listDirectory)
 import System.FilePath ((</>))
 
-import qualified Data.Aeson as Aeson
-import qualified Data.ByteString.Lazy as LBS
-
 import Automation.Html (escapeHtml, formatDisplayDate)
 
 data GqlAuthor = GqlAuthor
   { sgaLogin :: Text
   , sgaUrl   :: Text
-  } deriving (Show, Eq, Generic)
+  } deriving (Show, Eq)
 
-instance FromJSON GqlAuthor where
-  parseJSON = withObject "GqlAuthor" $ \v ->
+instance FromValue GqlAuthor where
+  fromValue = withObject "GqlAuthor" $ \v ->
     GqlAuthor <$> v .: "login" <*> v .: "url"
 
 data GqlComment = GqlComment
   { sgcBodyHtml  :: Text
   , sgcAuthor    :: Maybe GqlAuthor
   , sgcCreatedAt :: Text
-  } deriving (Show, Eq, Generic)
+  } deriving (Show, Eq)
 
-instance FromJSON GqlComment where
-  parseJSON = withObject "GqlComment" $ \v ->
+instance FromValue GqlComment where
+  fromValue = withObject "GqlComment" $ \v ->
     GqlComment
       <$> v .: "bodyHTML"
       <*> v .:? "author"
@@ -73,19 +72,19 @@ instance FromJSON GqlComment where
 
 data GqlCommentsNode = GqlCommentsNode
   { sgcnNodes :: [GqlComment]
-  } deriving (Show, Eq, Generic)
+  } deriving (Show, Eq)
 
-instance FromJSON GqlCommentsNode where
-  parseJSON = withObject "GqlCommentsNode" $ \v ->
+instance FromValue GqlCommentsNode where
+  fromValue = withObject "GqlCommentsNode" $ \v ->
     GqlCommentsNode <$> v .: "nodes"
 
 data GqlDiscussion = GqlDiscussion
   { sgdTitle    :: Text
   , sgdComments :: GqlCommentsNode
-  } deriving (Show, Eq, Generic)
+  } deriving (Show, Eq)
 
-instance FromJSON GqlDiscussion where
-  parseJSON = withObject "GqlDiscussion" $ \v ->
+instance FromValue GqlDiscussion where
+  fromValue = withObject "GqlDiscussion" $ \v ->
     GqlDiscussion
       <$> v .: "title"
       <*> v .: "comments"
@@ -93,52 +92,52 @@ instance FromJSON GqlDiscussion where
 data GqlPageInfo = GqlPageInfo
   { sgpHasNextPage :: Bool
   , sgpEndCursor   :: Maybe Text
-  } deriving (Show, Eq, Generic)
+  } deriving (Show, Eq)
 
-instance FromJSON GqlPageInfo where
-  parseJSON = withObject "GqlPageInfo" $ \v ->
+instance FromValue GqlPageInfo where
+  fromValue = withObject "GqlPageInfo" $ \v ->
     GqlPageInfo <$> v .: "hasNextPage" <*> v .:? "endCursor"
 
 data GqlDiscussionsPage = GqlDiscussionsPage
   { sgdpNodes    :: [GqlDiscussion]
   , sgdpPageInfo :: GqlPageInfo
-  } deriving (Show, Eq, Generic)
+  } deriving (Show, Eq)
 
-instance FromJSON GqlDiscussionsPage where
-  parseJSON = withObject "GqlDiscussionsPage" $ \v ->
+instance FromValue GqlDiscussionsPage where
+  fromValue = withObject "GqlDiscussionsPage" $ \v ->
     GqlDiscussionsPage <$> v .: "nodes" <*> v .: "pageInfo"
 
 data GqlRepository = GqlRepository
   { sgrDiscussions :: Maybe GqlDiscussionsPage
-  } deriving (Show, Eq, Generic)
+  } deriving (Show, Eq)
 
-instance FromJSON GqlRepository where
-  parseJSON = withObject "GqlRepository" $ \v ->
+instance FromValue GqlRepository where
+  fromValue = withObject "GqlRepository" $ \v ->
     GqlRepository <$> v .:? "discussions"
 
 data GqlData = GqlData
   { sgdRepository :: Maybe GqlRepository
-  } deriving (Show, Eq, Generic)
+  } deriving (Show, Eq)
 
-instance FromJSON GqlData where
-  parseJSON = withObject "GqlData" $ \v ->
+instance FromValue GqlData where
+  fromValue = withObject "GqlData" $ \v ->
     GqlData <$> v .:? "repository"
 
 data GqlError = GqlError
   { sgeMessage :: Text
-  } deriving (Show, Eq, Generic)
+  } deriving (Show, Eq)
 
-instance FromJSON GqlError where
-  parseJSON = withObject "GqlError" $ \v ->
+instance FromValue GqlError where
+  fromValue = withObject "GqlError" $ \v ->
     GqlError <$> v .: "message"
 
 data GqlResponse = GqlResponse
   { sgrData   :: Maybe GqlData
   , sgrErrors :: Maybe [GqlError]
-  } deriving (Show, Eq, Generic)
+  } deriving (Show, Eq)
 
-instance FromJSON GqlResponse where
-  parseJSON = withObject "GqlResponse" $ \v ->
+instance FromValue GqlResponse where
+  fromValue = withObject "GqlResponse" $ \v ->
     GqlResponse
       <$> v .:? "data"
       <*> v .:? "errors"
@@ -291,15 +290,15 @@ fetchDiscussionPage manager token owner repo categoryId mAfter = do
               \   }\
               \ }\
               \}"
-      variables = Aeson.object
-        [ "owner" Aeson..= owner
-        , "name" Aeson..= repo
-        , "categoryId" Aeson..= categoryId
-        , "after" Aeson..= mAfter
+      variables = object
+        [ "owner" .= owner
+        , "name" .= repo
+        , "categoryId" .= categoryId
+        , "after" .= mAfter
         ]
-      body = Aeson.encode $ Aeson.object
-        [ "query" Aeson..= (query :: Text)
-        , "variables" Aeson..= variables
+      body = encode $ object
+        [ "query" .= (query :: Text)
+        , "variables" .= variables
         ]
       httpReq = initReq
         { method = "POST"
@@ -324,7 +323,7 @@ fetchDiscussionPage manager token owner repo categoryId mAfter = do
               putStrLn $ "GraphQL errors: " <> show (fmap sgeMessage errs)
               pure Nothing
             Nothing ->
-              pure $ sgrData gqlResp >>= sgrDiscussions . fromMaybe (GqlRepository Nothing) . Just >>= Just
+              pure $ sgrData gqlResp >>= sgdRepository >>= sgrDiscussions >>= Just
     _ -> do
       putStrLn $ "GraphQL HTTP error: " <> show status
       pure Nothing

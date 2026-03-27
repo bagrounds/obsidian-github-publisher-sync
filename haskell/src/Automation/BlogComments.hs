@@ -7,11 +7,15 @@ module Automation.BlogComments
   , fetchAllSeriesComments
   ) where
 
-import Data.Aeson
-  ( FromJSON (..)
+import Automation.Json
+  ( FromValue (..)
+  , Value (..)
+  , (.=)
   , (.:)
   , (.:?)
+  , encode
   , eitherDecode
+  , object
   , withObject
   )
 import Data.List (sortBy)
@@ -20,7 +24,6 @@ import Data.Ord (Down (..), comparing)
 import Data.Text (Text)
 import qualified Data.Text as T
 import qualified Data.Text.Encoding as TE
-import GHC.Generics (Generic)
 import Network.HTTP.Client
   ( Manager
   , Request (..)
@@ -33,9 +36,6 @@ import Network.HTTP.Client
 import Network.HTTP.Types.Status (statusCode)
 import System.Environment (lookupEnv)
 
-import qualified Data.Aeson as Aeson
-import qualified Data.ByteString.Lazy as LBS
-
 giscusRepo :: Text
 giscusRepo = "bagrounds/obsidian-github-publisher-sync"
 
@@ -47,24 +47,24 @@ data BlogComment = BlogComment
   , bcBody       :: Text
   , bcCreatedAt  :: Text
   , bcIsPriority :: Bool
-  } deriving (Show, Eq, Generic)
+  } deriving (Show, Eq)
 
 data GqlAuthor = GqlAuthor
   { gaLogin :: Text
-  } deriving (Show, Eq, Generic)
+  } deriving (Show, Eq)
 
-instance FromJSON GqlAuthor where
-  parseJSON = withObject "GqlAuthor" $ \v ->
+instance FromValue GqlAuthor where
+  fromValue = withObject "GqlAuthor" $ \v ->
     GqlAuthor <$> v .: "login"
 
 data GqlComment = GqlComment
   { gcBody      :: Text
   , gcAuthor    :: Maybe GqlAuthor
   , gcCreatedAt :: Text
-  } deriving (Show, Eq, Generic)
+  } deriving (Show, Eq)
 
-instance FromJSON GqlComment where
-  parseJSON = withObject "GqlComment" $ \v ->
+instance FromValue GqlComment where
+  fromValue = withObject "GqlComment" $ \v ->
     GqlComment
       <$> v .: "body"
       <*> v .:? "author"
@@ -72,54 +72,54 @@ instance FromJSON GqlComment where
 
 data GqlCommentsNode = GqlCommentsNode
   { gcnNodes :: [GqlComment]
-  } deriving (Show, Eq, Generic)
+  } deriving (Show, Eq)
 
-instance FromJSON GqlCommentsNode where
-  parseJSON = withObject "GqlCommentsNode" $ \v ->
+instance FromValue GqlCommentsNode where
+  fromValue = withObject "GqlCommentsNode" $ \v ->
     GqlCommentsNode <$> v .: "nodes"
 
 data GqlDiscussion = GqlDiscussion
   { gdTitle    :: Text
   , gdComments :: GqlCommentsNode
-  } deriving (Show, Eq, Generic)
+  } deriving (Show, Eq)
 
-instance FromJSON GqlDiscussion where
-  parseJSON = withObject "GqlDiscussion" $ \v ->
+instance FromValue GqlDiscussion where
+  fromValue = withObject "GqlDiscussion" $ \v ->
     GqlDiscussion
       <$> v .: "title"
       <*> v .: "comments"
 
 data GqlSearchNodes = GqlSearchNodes
   { gsnNodes :: [GqlDiscussion]
-  } deriving (Show, Eq, Generic)
+  } deriving (Show, Eq)
 
-instance FromJSON GqlSearchNodes where
-  parseJSON = withObject "GqlSearchNodes" $ \v ->
+instance FromValue GqlSearchNodes where
+  fromValue = withObject "GqlSearchNodes" $ \v ->
     GqlSearchNodes <$> v .: "nodes"
 
 data GqlSearchData = GqlSearchData
   { gsdSearch :: GqlSearchNodes
-  } deriving (Show, Eq, Generic)
+  } deriving (Show, Eq)
 
-instance FromJSON GqlSearchData where
-  parseJSON = withObject "GqlSearchData" $ \v ->
+instance FromValue GqlSearchData where
+  fromValue = withObject "GqlSearchData" $ \v ->
     GqlSearchData <$> v .: "search"
 
 data GqlError = GqlError
   { geMessage :: Text
-  } deriving (Show, Eq, Generic)
+  } deriving (Show, Eq)
 
-instance FromJSON GqlError where
-  parseJSON = withObject "GqlError" $ \v ->
+instance FromValue GqlError where
+  fromValue = withObject "GqlError" $ \v ->
     GqlError <$> v .: "message"
 
 data GqlResponse = GqlResponse
   { grData   :: Maybe GqlSearchData
   , grErrors :: Maybe [GqlError]
-  } deriving (Show, Eq, Generic)
+  } deriving (Show, Eq)
 
-instance FromJSON GqlResponse where
-  parseJSON = withObject "GqlResponse" $ \v ->
+instance FromValue GqlResponse where
+  fromValue = withObject "GqlResponse" $ \v ->
     GqlResponse
       <$> v .:? "data"
       <*> v .:? "errors"
@@ -145,9 +145,9 @@ buildQuery maxResults maxComments =
 searchDiscussions :: Manager -> Text -> Text -> Int -> Int -> IO [GqlDiscussion]
 searchDiscussions manager token searchQuery maxResults maxComments = do
   initReq <- parseRequest graphqlEndpoint
-  let body = Aeson.encode $ Aeson.object
-        [ "query" Aeson..= buildQuery maxResults maxComments
-        , "variables" Aeson..= Aeson.object [ "searchQuery" Aeson..= searchQuery ]
+  let body = encode $ object
+        [ "query" .= buildQuery maxResults maxComments
+        , "variables" .= object [ "searchQuery" .= searchQuery ]
         ]
   let httpReq = initReq
         { method = "POST"

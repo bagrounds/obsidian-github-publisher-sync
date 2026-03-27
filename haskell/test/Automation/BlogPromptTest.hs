@@ -5,6 +5,7 @@ import Test.Tasty.HUnit (testCase, (@?=), assertBool)
 import qualified Data.Text as T
 
 import Automation.BlogPrompt
+import Automation.BlogSeriesConfig (lookupSeries)
 
 tests :: TestTree
 tests = testGroup "BlogPrompt"
@@ -25,12 +26,14 @@ tests = testGroup "BlogPrompt"
         "\\\"" `T.isInfixOf` quoteForYaml "say \"hi\""
 
   , testCase "buildBackLink produces wiki link" $
-      let result = buildBackLink "chickie-loo" "2026-03-25-test"
+      let Right series = lookupSeries "chickie-loo"
+          result = buildBackLink series "2026-03-25-test"
       in assertBool "should be wiki link with back emoji" $
            "⏮️" `T.isInfixOf` result && "[[" `T.isPrefixOf` result
 
   , testCase "buildForwardLink produces wiki link" $
-      let result = buildForwardLink "chickie-loo" "2026-03-27-test.md"
+      let Right series = lookupSeries "chickie-loo"
+          result = buildForwardLink series "2026-03-27-test.md"
       in assertBool "should be wiki link with forward emoji" $
            "⏭️" `T.isInfixOf` result && "[[" `T.isPrefixOf` result
   ]

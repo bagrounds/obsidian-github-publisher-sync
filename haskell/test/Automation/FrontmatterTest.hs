@@ -14,7 +14,7 @@ tests = testGroup "Frontmatter"
       in do
         Map.lookup "title" fm @?= Just "Hello"
         Map.lookup "URL" fm @?= Just "https://example.com"
-        body @?= "\nBody text"
+        body @?= "Body text"
 
   , testCase "parseFrontmatter handles missing delimiters" $
       let content = "No frontmatter here"

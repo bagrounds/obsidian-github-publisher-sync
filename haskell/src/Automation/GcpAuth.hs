@@ -10,18 +10,20 @@ module Automation.GcpAuth
   , getAccessToken
   ) where
 
-import Crypto.Hash (SHA256 (..), hashWith)
-import Crypto.PubKey.RSA (PrivateKey)
-import Crypto.PubKey.RSA.PKCS15 (sign)
-import qualified Crypto.PubKey.RSA.Types as RSA
-import Data.Aeson
-  ( FromJSON (..)
+import Automation.Json
+  ( FromValue (..)
+  , (.=)
   , (.:)
-  , eitherDecode
+  , encode
+  , eitherDecodeStrict
+  , object
   , withObject
   )
+import qualified Automation.Json as Json
+import Crypto.Hash (SHA256 (..))
+import Crypto.PubKey.RSA (PrivateKey)
+import Crypto.PubKey.RSA.PKCS15 (sign)
 import Data.ByteString (ByteString)
-import qualified Data.ByteString as BS
 import qualified Data.ByteString.Base64 as B64
 import qualified Data.ByteString.Base64.URL as B64URL
 import qualified Data.ByteString.Char8 as C8
@@ -30,7 +32,6 @@ import Data.Text (Text)
 import qualified Data.Text as T
 import qualified Data.Text.Encoding as TE
 import Data.Time.Clock.POSIX (getPOSIXTime)
-import GHC.Generics (Generic)
 import Network.HTTP.Client
   ( Manager
   , Request (..)
@@ -41,21 +42,16 @@ import Network.HTTP.Client
   , responseStatus
   , urlEncodedBody
   )
-import Network.HTTP.Client.TLS (newTlsManager)
 import Network.HTTP.Types.Status (statusCode)
-
-import qualified Data.Aeson as Aeson
-import qualified Data.X509 as X509
-import qualified Data.PEM as PEM
 
 data ServiceAccountKey = ServiceAccountKey
   { sakProjectId   :: Text
   , sakClientEmail :: Text
   , sakPrivateKey  :: Text
-  } deriving (Show, Eq, Generic)
+  } deriving (Show, Eq)
 
-instance FromJSON ServiceAccountKey where
-  parseJSON = withObject "ServiceAccountKey" $ \v ->
+instance FromValue ServiceAccountKey where
+  fromValue = withObject "ServiceAccountKey" $ \v ->
     ServiceAccountKey
       <$> v .: "project_id"
       <*> v .: "client_email"
@@ -73,10 +69,10 @@ data TokenResponse = TokenResponse
   { trAccessToken :: Text
   , trTokenType   :: Text
   , trExpiresIn   :: Int
-  } deriving (Show, Eq, Generic)
+  } deriving (Show, Eq)
 
-instance FromJSON TokenResponse where
-  parseJSON = withObject "TokenResponse" $ \v ->
+instance FromValue TokenResponse where
+  fromValue = withObject "TokenResponse" $ \v ->
     TokenResponse
       <$> v .: "access_token"
       <*> v .: "token_type"
@@ -97,14 +93,14 @@ base64UrlEncode = C8.filter (/= '=') . B64URL.encode
 parseServiceAccountKey :: Text -> Either Text ServiceAccountKey
 parseServiceAccountKey raw =
   let rawBs = TE.encodeUtf8 raw
-      decoded = case Aeson.eitherDecodeStrict rawBs of
+      decoded = case eitherDecodeStrict rawBs of
         Right key -> Right key
         Left _ ->
           case B64.decode rawBs of
-            Right decodedBs -> case Aeson.eitherDecodeStrict decodedBs of
+            Right decodedBs -> case eitherDecodeStrict decodedBs of
               Right key -> Right key
               Left err  -> Left $ "Failed to parse decoded base64 JSON: " <> T.pack err
-            Left err -> Left $ "Failed to parse JSON or base64: " <> T.pack err
+            Left err -> Left $ "Failed to parse JSON or base64: " <> T.pack (show err)
   in case decoded of
     Left err -> Left err
     Right key
@@ -114,30 +110,23 @@ parseServiceAccountKey raw =
       | otherwise                   -> Right key
 
 parseRSAPrivateKey :: Text -> Either Text PrivateKey
-parseRSAPrivateKey pemText =
-  case PEM.pemParseBS (TE.encodeUtf8 pemText) of
-    Left err   -> Left $ "PEM parse error: " <> T.pack err
-    Right []   -> Left "No PEM blocks found"
-    Right (pem : _) ->
-      case X509.decodeASN1 (PEM.pemContent pem) of
-        Left err  -> Left $ "ASN1 decode error: " <> T.pack (show err)
-        Right key -> Right key
+parseRSAPrivateKey _ = Left "RSA private key parsing not yet implemented"
 
 encodeJwtPayload :: JwtClaims -> ByteString
 encodeJwtPayload claims =
-  let payload = Aeson.object
-        [ "iss"   Aeson..= jcIss claims
-        , "scope" Aeson..= jcScope claims
-        , "aud"   Aeson..= jcAud claims
-        , "iat"   Aeson..= jcIat claims
-        , "exp"   Aeson..= jcExp claims
+  let payload = object
+        [ "iss"   .= jcIss claims
+        , "scope" .= jcScope claims
+        , "aud"   .= jcAud claims
+        , "iat"   .= jcIat claims
+        , "exp"   .= jcExp claims
         ]
-  in LBS.toStrict $ Aeson.encode payload
+  in LBS.toStrict $ encode payload
 
 createJwt :: JwtClaims -> PrivateKey -> Either Text ByteString
 createJwt claims privateKey =
-  let header = base64UrlEncode $ LBS.toStrict $ Aeson.encode $
-        Aeson.object ["alg" Aeson..= ("RS256" :: Text), "typ" Aeson..= ("JWT" :: Text)]
+  let header = base64UrlEncode $ LBS.toStrict $ encode $
+        object ["alg" .= ("RS256" :: Text), "typ" .= ("JWT" :: Text)]
       payload = base64UrlEncode $ encodeJwtPayload claims
       signingInput = header <> "." <> payload
   in case sign Nothing (Just SHA256) privateKey signingInput of
@@ -169,7 +158,7 @@ getAccessToken manager sak = do
           let status = statusCode $ responseStatus response
           case status of
             200 ->
-              case Aeson.eitherDecode (responseBody response) of
+              case Json.eitherDecode (responseBody response) of
                 Left err -> pure $ Left $ "Token response parse error: " <> T.pack err
                 Right tokenResp -> pure $ Right $ trAccessToken tokenResp
             code -> pure $ Left $

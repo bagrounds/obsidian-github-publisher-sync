@@ -33,28 +33,7 @@ module Automation.Types
   , blueskyOembedRetryDelayMs
   ) where
 
-import Data.Aeson
-  ( FromJSON (..)
-  , Options
-  , ToJSON (..)
-  , defaultOptions
-  , fieldLabelModifier
-  , genericParseJSON
-  , genericToJSON
-  , omitNothingFields
-  )
-import Data.Char (toLower)
 import Data.Text (Text)
-import GHC.Generics (Generic)
-
-aesonOptions :: Int -> Options
-aesonOptions prefixLen = defaultOptions
-  { fieldLabelModifier = lowercaseFirst . drop prefixLen
-  , omitNothingFields = True
-  }
-  where
-    lowercaseFirst []       = []
-    lowercaseFirst (c : cs) = toLower c : cs
 
 data ReflectionData = ReflectionData
   { rdDate :: Text
@@ -65,58 +44,28 @@ data ReflectionData = ReflectionData
   , rdHasTweetSection :: Bool
   , rdHasBlueskySection :: Bool
   , rdHasMastodonSection :: Bool
-  } deriving (Generic, Show, Eq)
-
-instance FromJSON ReflectionData where
-  parseJSON = genericParseJSON (aesonOptions 2)
-
-instance ToJSON ReflectionData where
-  toJSON = genericToJSON (aesonOptions 2)
+  } deriving (Show, Eq)
 
 data TweetResult = TweetResult
   { trId :: Text
   , trText :: Text
-  } deriving (Generic, Show, Eq)
-
-instance FromJSON TweetResult where
-  parseJSON = genericParseJSON (aesonOptions 2)
-
-instance ToJSON TweetResult where
-  toJSON = genericToJSON (aesonOptions 2)
+  } deriving (Show, Eq)
 
 data BlueskyPostResult = BlueskyPostResult
   { bprUri :: Text
   , bprCid :: Text
   , bprText :: Text
-  } deriving (Generic, Show, Eq)
-
-instance FromJSON BlueskyPostResult where
-  parseJSON = genericParseJSON (aesonOptions 3)
-
-instance ToJSON BlueskyPostResult where
-  toJSON = genericToJSON (aesonOptions 3)
+  } deriving (Show, Eq)
 
 data MastodonPostResult = MastodonPostResult
   { mprId :: Text
   , mprUrl :: Text
   , mprText :: Text
-  } deriving (Generic, Show, Eq)
-
-instance FromJSON MastodonPostResult where
-  parseJSON = genericParseJSON (aesonOptions 3)
-
-instance ToJSON MastodonPostResult where
-  toJSON = genericToJSON (aesonOptions 3)
+  } deriving (Show, Eq)
 
 newtype EmbedResult = EmbedResult
   { erHtml :: Text
-  } deriving (Generic, Show, Eq)
-
-instance FromJSON EmbedResult where
-  parseJSON = genericParseJSON (aesonOptions 2)
-
-instance ToJSON EmbedResult where
-  toJSON = genericToJSON (aesonOptions 2)
+  } deriving (Show, Eq)
 
 data EmbedSection = EmbedSection
   { esHeader :: Text
@@ -128,72 +77,36 @@ data OgMetadata = OgMetadata
   { ogTitle :: Maybe Text
   , ogDescription :: Maybe Text
   , ogImageUrl :: Maybe Text
-  } deriving (Generic, Show, Eq)
-
-instance FromJSON OgMetadata where
-  parseJSON = genericParseJSON (aesonOptions 2)
-
-instance ToJSON OgMetadata where
-  toJSON = genericToJSON (aesonOptions 2)
+  } deriving (Show, Eq)
 
 data TwitterCredentials = TwitterCredentials
   { tcApiKey :: Text
   , tcApiSecret :: Text
   , tcAccessToken :: Text
   , tcAccessSecret :: Text
-  } deriving (Generic, Show, Eq)
-
-instance FromJSON TwitterCredentials where
-  parseJSON = genericParseJSON (aesonOptions 2)
-
-instance ToJSON TwitterCredentials where
-  toJSON = genericToJSON (aesonOptions 2)
+  } deriving (Show, Eq)
 
 data BlueskyCredentials = BlueskyCredentials
   { bcIdentifier :: Text
   , bcPassword :: Text
-  } deriving (Generic, Show, Eq)
-
-instance FromJSON BlueskyCredentials where
-  parseJSON = genericParseJSON (aesonOptions 2)
-
-instance ToJSON BlueskyCredentials where
-  toJSON = genericToJSON (aesonOptions 2)
+  } deriving (Show, Eq)
 
 data MastodonCredentials = MastodonCredentials
   { mcInstanceUrl :: Text
   , mcAccessToken :: Text
-  } deriving (Generic, Show, Eq)
-
-instance FromJSON MastodonCredentials where
-  parseJSON = genericParseJSON (aesonOptions 2)
-
-instance ToJSON MastodonCredentials where
-  toJSON = genericToJSON (aesonOptions 2)
+  } deriving (Show, Eq)
 
 data GeminiConfig = GeminiConfig
   { gcApiKey :: Text
   , gcModel :: Text
   , gcQuestionModel :: Text
-  } deriving (Generic, Show, Eq)
-
-instance FromJSON GeminiConfig where
-  parseJSON = genericParseJSON (aesonOptions 2)
-
-instance ToJSON GeminiConfig where
-  toJSON = genericToJSON (aesonOptions 2)
+  } deriving (Show, Eq)
 
 data ObsidianCredentials = ObsidianCredentials
   { ocAuthToken :: Text
   , ocVaultName :: Text
   , ocVaultPassword :: Maybe Text
-  } deriving (Generic, Show, Eq)
-
-instance FromJSON ObsidianCredentials where
-  parseJSON = genericParseJSON (aesonOptions 2)
-
-instance ToJSON ObsidianCredentials where
-  toJSON = genericToJSON (aesonOptions 2)
+  } deriving (Show, Eq)
 
 data EnvironmentConfig = EnvironmentConfig
   { ecTwitter :: Maybe TwitterCredentials
@@ -201,26 +114,14 @@ data EnvironmentConfig = EnvironmentConfig
   , ecMastodon :: Maybe MastodonCredentials
   , ecGemini :: GeminiConfig
   , ecObsidian :: ObsidianCredentials
-  } deriving (Generic, Show, Eq)
-
-instance FromJSON EnvironmentConfig where
-  parseJSON = genericParseJSON (aesonOptions 2)
-
-instance ToJSON EnvironmentConfig where
-  toJSON = genericToJSON (aesonOptions 2)
+  } deriving (Show, Eq)
 
 data LinkCard = LinkCard
   { lcUri :: Text
   , lcTitle :: Text
   , lcDescription :: Text
   , lcThumbUrl :: Maybe Text
-  } deriving (Generic, Show, Eq)
-
-instance FromJSON LinkCard where
-  parseJSON = genericParseJSON (aesonOptions 2)
-
-instance ToJSON LinkCard where
-  toJSON = genericToJSON (aesonOptions 2)
+  } deriving (Show, Eq)
 
 twitterHandle :: Text
 twitterHandle = "bagrounds"

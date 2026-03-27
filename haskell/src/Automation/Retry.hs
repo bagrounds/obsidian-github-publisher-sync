@@ -2,6 +2,7 @@
 
 module Automation.Retry
   ( RetryOptions (..)
+  , HttpCodeException (..)
   , transientHttpCodes
   , extractHttpCode
   , isTransientError

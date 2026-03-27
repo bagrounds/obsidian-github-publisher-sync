@@ -4,8 +4,8 @@ aliases:
   - 🦊😈🐾🕵️💸 5 takeaways about NPR's reporting on the whistleblower report about DOGE at the NLRB
 title: 🦊😈🐾🕵️💸 5 takeaways about NPR's reporting on the whistleblower report about DOGE at the NLRB
 URL: https://bagrounds.org/articles/5-takeaways-about-nprs-reporting-on-the-whistleblower-report-about-doge-at-the-nlrb
-Author: 
-tags: 
+Author:
+tags:
 ---
 [Home](../index.md) > [Articles](./index.md)  
 # 🦊😈🐾🕵️💸 [5 takeaways about NPR's reporting on the whistleblower report about DOGE at the NLRB](https://www.npr.org/2025/04/15/nx-s1-5355895/doge-musk-nlrb-takeaways-security)  

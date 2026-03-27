@@ -4,10 +4,10 @@ aliases:
   - 🏛️🚫🛑👑 How the Supreme Court ruling on nationwide injunctions affects presidential powers
 title: 🏛️🚫🛑👑 How the Supreme Court ruling on nationwide injunctions affects presidential powers
 URL: https://bagrounds.org/videos/how-the-supreme-court-ruling-on-nationwide-injunctions-affects-presidential-powers
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: PBS NewsHour
-tags: 
+tags:
 youtube: https://youtu.be/V9IrathROWk
 ---
 [Home](../index.md) > [Videos](./index.md)  

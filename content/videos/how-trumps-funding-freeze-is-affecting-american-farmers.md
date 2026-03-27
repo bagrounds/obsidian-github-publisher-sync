@@ -4,10 +4,10 @@ aliases:
   - 👨‍🌾🚫💵 How Trump's funding freeze is affecting American farmers
 title: 👨‍🌾🚫💵 How Trump's funding freeze is affecting American farmers
 URL: https://youtu.be/DWvNyp_yuV4
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: PBS NewsHour
-tags: 
+tags:
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 👨‍🌾🚫💵 How Trump's funding freeze is affecting American farmers  

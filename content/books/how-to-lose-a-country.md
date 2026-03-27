@@ -4,8 +4,8 @@ aliases:
   - "🏛️➡️👑 How to Lose a Country: The 7 Steps from Democracy to Dictatorship"
 title: "🏛️➡️👑 How to Lose a Country: The 7 Steps from Democracy to Dictatorship"
 URL: https://bagrounds.org/books/how-to-lose-a-country
-Author: 
-tags: 
+Author:
+tags:
 affiliate link: https://amzn.to/4km5FNP
 ---
 [Home](../index.md) > [Books](./index.md)  

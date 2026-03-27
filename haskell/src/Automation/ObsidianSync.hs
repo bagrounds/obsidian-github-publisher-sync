@@ -241,27 +241,22 @@ validatePrePushFileCount vaultDir currentCount = do
             [(n, _)] -> Just (n :: Int)
             _        -> Nothing
       case mBaseline of
-        Nothing -> putStrLn "⚠️ Could not parse baseline file count — skipping percentage check"
+        Nothing -> putStrLn "⚠️ Could not parse baseline file count — skipping deletion check"
         Just baseline -> do
-          let dropPercent = case baseline of
-                0 -> 0.0 :: Double
-                _ -> fromIntegral (baseline - currentCount) / fromIntegral baseline * 100.0
+          let lost = baseline - currentCount
           putStrLn $ "📊 Baseline: " <> show baseline <> ", Current: " <> show currentCount
-            <> " (change: " <> show (negate (round dropPercent :: Int)) <> "%)"
-          when (dropPercent > maxFileDropPercent) $ do
-            let msg = "🛑 CIRCUIT BREAKER: Vault lost " <> show (round dropPercent :: Int)
-                  <> "% of files (baseline: " <> show baseline <> ", current: "
-                  <> show currentCount <> ", threshold: "
-                  <> show (round maxFileDropPercent :: Int) <> "%)."
+            <> " (delta: " <> show (currentCount - baseline) <> ")"
+          when (currentCount < baseline) $ do
+            let msg = "🛑 CIRCUIT BREAKER: Vault lost " <> show lost
+                  <> " file(s) (baseline: " <> show baseline <> ", current: "
+                  <> show currentCount <> ")."
+                  <> " This system only creates or edits files — any deletion is anomalous."
                   <> " Refusing to push to prevent catastrophic data loss."
             putStrLn msg
             throwIO $ userError msg
 
 minSafeFileCount :: Int
 minSafeFileCount = 50
-
-maxFileDropPercent :: Double
-maxFileDropPercent = 30.0
 
 countVaultFiles :: FilePath -> IO Int
 countVaultFiles dir = do

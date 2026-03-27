@@ -41,7 +41,7 @@
    ├─ ✏️ Append embed sections to note file
    └─ 📤 pushObsidianVault(vaultDir, credentials)
               ├─ 📊 Count files and validate against baseline
-              ├─ 🛑 Circuit breaker: abort if >30% file loss
+              ├─ 🛑 Circuit breaker: abort if any files lost
               └─ 🔄 ob sync to push changes
 ```
 
@@ -64,14 +64,14 @@
 
 1. **Minimum threshold check:** If the vault has fewer than 50 files total and no baseline exists, the push is refused. A healthy vault should always have significantly more than 50 files.
 
-2. **Percentage drop check:** If the vault has lost more than 30% of files compared to the post-pull baseline, the push is refused. This catches scenarios where the local vault directory has been corrupted, partially cleared, or incorrectly rebuilt.
+2. **Zero-deletion check:** If the vault has lost ANY files compared to the post-pull baseline, the push is refused. This system only ever creates new files or edits existing ones — it never deletes. Any file count decrease is anomalous and indicates corruption, accidental deletion, or a sync bug.
 
 🛑 When the circuit breaker triggers, it throws an error with a descriptive message and the push is aborted, preventing the deletion from propagating to the remote vault.
 
 | 📏 Parameter | 📝 Value | 📝 Purpose |
 |---|---|---|
 | `MIN_SAFE_FILE_COUNT` | 50 | 🔒 Absolute minimum files for push without baseline |
-| `MAX_FILE_DROP_PERCENT` | 30% | 🔒 Maximum allowed file loss relative to baseline |
+| Zero-deletion policy | currentCount >= baseline | 🔒 Any file loss blocks push — no tolerance for deletions |
 
 ## 🔥 Warm Cache Sync
 

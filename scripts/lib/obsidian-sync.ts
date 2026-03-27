@@ -316,7 +316,6 @@ export async function pushObsidianVault(
 // --- Data Loss Prevention ---
 
 const MIN_SAFE_FILE_COUNT = 50;
-const MAX_FILE_DROP_PERCENT = 30;
 
 /**
  * Validate that the vault hasn't lost a dangerous number of files before pushing.
@@ -337,19 +336,20 @@ function validatePrePushFileCount(vaultDir: string, currentCount: number): void 
   const baselineStr = fs.readFileSync(markerPath, "utf-8").trim();
   const baseline = parseInt(baselineStr, 10);
   if (isNaN(baseline)) {
-    console.log(`⚠️ Could not parse baseline file count — skipping percentage check`);
+    console.log(`⚠️ Could not parse baseline file count — skipping deletion check`);
     return;
   }
 
-  const dropPercent = baseline > 0 ? ((baseline - currentCount) / baseline) * 100 : 0;
+  const lost = baseline - currentCount;
   console.log(
-    `📊 Baseline: ${baseline}, Current: ${currentCount} (change: ${-Math.round(dropPercent)}%)`,
+    `📊 Baseline: ${baseline}, Current: ${currentCount} (delta: ${currentCount - baseline})`,
   );
 
-  if (dropPercent > MAX_FILE_DROP_PERCENT) {
+  if (currentCount < baseline) {
     const msg =
-      `🛑 CIRCUIT BREAKER: Vault lost ${Math.round(dropPercent)}% of files ` +
-      `(baseline: ${baseline}, current: ${currentCount}, threshold: ${MAX_FILE_DROP_PERCENT}%). ` +
+      `🛑 CIRCUIT BREAKER: Vault lost ${lost} file(s) ` +
+      `(baseline: ${baseline}, current: ${currentCount}). ` +
+      `This system only creates or edits files — any deletion is anomalous. ` +
       `Refusing to push to prevent catastrophic data loss.`;
     console.error(msg);
     throw new Error(msg);

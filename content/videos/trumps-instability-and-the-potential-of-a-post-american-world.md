@@ -4,10 +4,10 @@ aliases:
   - 🌪️🇺🇸📉🌍 Trump’s instability and the potential of a post-American world
 title: 🌪️🇺🇸📉🌍 Trump’s instability and the potential of a post-American world
 URL: https://bagrounds.org/videos/trumps-instability-and-the-potential-of-a-post-american-world
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: Washington Week PBS
-tags: 
+tags:
 youtube: https://youtu.be/7WibnG33Wy0
 ---
 [Home](../index.md) > [Videos](./index.md)  

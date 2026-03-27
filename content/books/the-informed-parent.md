@@ -4,8 +4,8 @@ aliases:
   - "🤓👩‍👦 The Informed Parent: A Science-Based Resource for Your Child's First Four Years"
 title: "🤓👩‍👦 The Informed Parent: A Science-Based Resource for Your Child's First Four Years"
 URL: https://bagrounds.org/books/the-informed-parent
-Author: 
-tags: 
+Author:
+tags:
 affiliate link: https://amzn.to/4jrvRVZ
 ---
 [Home](../index.md) > [Books](./index.md)  

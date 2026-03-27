@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-03-27T09:18:30-07:00
+updated: 2026-03-27T11:05:06-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (713)  
+# 📺 Videos (714)  
 - [💰🤑🤖💡🚀💲 $0.10/Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
@@ -575,6 +575,7 @@ updated: 2026-03-27T09:18:30-07:00
 - [✨⬆️🗣️👨‍💻 The third golden age of software engineering – thanks to AI, with Grady Booch](./the-third-golden-age-of-software-engineering-thanks-to-ai-with-grady-booch.md)  
 - [🚧⏳ The Unfinished Revolution with Atlantic EIC Jeffrey Goldberg](./the-unfinished-revolution-with-atlantic-eic-jeffrey-goldberg.md)  
 - [📜🇺🇸🏛️⚖️ The United States Constitution | Heather Cox Richardson](./the-united-states-constitution-heather-cox-richardson.md)  
+- [🧏🎭📖 The Untold Story of Deaf Theater](./the-untold-story-of-deaf-theater.md)  
 - [🏠👩‍👧‍👦💸💰 The women who demanded wages for housework - Witness History, BBC World Service](./the-women-who-demanded-wages-for-housework-witness-history-bbc-world-service.md)  
 - [🏫➡️🧊👨‍👩‍👧‍👦💔 'They are circling our schools,' superintendent says after 5-year-old detained by ICE](./they-are-circling-our-schools-superintendent-says-after-5-year-old-detained-by-ice.md)  
 - [💥👥💀🚨 ‘They killed a man, created chaos:’ Gov. Walz on shooting](./they-killed-a-man-created-chaos-gov-walz-on-shooting.md)  

@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-03-27T09:18:30-07:00
+updated: 2026-03-27T11:05:06-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -42,11 +42,11 @@ updated: 2026-03-27T09:18:30-07:00
 - [2026-03-24 | 🐔 🌌 Finding Peace in the Practical Rhythms of the Ranch 🐔](./chickie-loo/2026-03-24-finding-peace-in-the-practical-rhythms-of-the-ranch.md)  
   
   
-## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (6)  
+## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (7)  
+- [2026-03-27 | 🏛️ 📖 The Freedom to Know: Libraries as Democratic Essentials 🏛️](./systems-for-public-good/2026-03-27-the-freedom-to-know-libraries-as-democratic-essentials.md)  
 - [2026-03-26 | 🏛️ 🚌 The Freedom of Connection: Public Transit as a Shared Horizon 🌍 🏛️](./systems-for-public-good/2026-03-26-the-freedom-of-connection-public-transit-as-a-shared-horizon.md)  
 - [2026-03-26 | 🏛️ 🏛️ Systems for Public Good — AGENTS.md 🏛️](./systems-for-public-good/2026-03-26-systems-for-public-good-agentsmd.md)  
 - [2026-03-25 | 🏛️ ⚖️ The Interplay of Freedoms: When My Liberty Meets Yours 🏛️](./systems-for-public-good/2026-03-25-the-interplay-of-freedoms-when-my-liberty-meets-yours.md)  
-- [2026-03-24 | 🏛️ 🫂 The Foundations of Freedom - A Personal Journey into Public Good 🏛️](./systems-for-public-good/2026-03-24-the-foundations-of-freedom-a-personal-journey-into-public-good.md)  
   
   
 ## [📚 Books](./books/index.md) (958)  
@@ -62,7 +62,8 @@ updated: 2026-03-27T09:18:30-07:00
 - [📱⬇️🧘 Digital Minimalism: Choosing a Focused Life in a Noisy World](./books/digital-minimalism-choosing-a-focused-life-in-a-noisy-world.md)  
   
   
-## [📺 Videos](./videos/index.md) (713)  
+## [📺 Videos](./videos/index.md) (714)  
+- [🧏🎭📖 The Untold Story of Deaf Theater](./videos/the-untold-story-of-deaf-theater.md)  
 - [💰💸⚔️ A “Billion Dollar a Day” War | Explainer](./videos/a-billion-dollar-a-day-war-explainer.md)  
 - [🤖✂️💰🚀 The AI Job Market Split in Two. One Side Pays $400K and Can't Hire Fast Enough.](./videos/the-ai-job-market-split-in-two-one-side-pays-400k-and-cant-hire-fast-enough.md)  
 - [🛡️⚙️🤖🔭 Antibrittle Agents: Engineering Reliability for Long-Horizon AI](./videos/antibrittle-agents-engineering-reliability-for-long-horizon-ai.md)  
@@ -72,7 +73,6 @@ updated: 2026-03-27T09:18:30-07:00
 - [3️⃣1️⃣⚖️🏛️ Session 3, Part 1: Legal Issues](./videos/session-3-part-1-legal-issues.md)  
 - [💰🚀💼 Session 2, Part 2: How Are You Going to Make Money? - The Business/Venture Model](./videos/session-2-part-2-how-are-you-going-to-make-money-the-businessventure-model.md)  
 - [session-1-part-2-market-identification-and-sales-finding-your-customer](../session-1-part-2-market-identification-and-sales-finding-your-customer.md)  
-- [📈💥❓➡️✅ Session 1, Part 1: Introduction: Most Startups Fail; How to Improve Your Odds](./videos/session-1-part-1-introduction-most-startups-fail-how-to-improve-your-odds.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  

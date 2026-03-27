@@ -92,7 +92,9 @@ executable run-scheduled
     containers,
     filepath,
     directory,
-    time
+    time,
+    http-client,
+    http-client-tls
 
 executable inject-giscus
   import:              shared
@@ -101,7 +103,9 @@ executable inject-giscus
   build-depends:
     base,
     automation,
-    text
+    text,
+    http-client,
+    http-client-tls
 
 test-suite automation-tests
   import:              shared

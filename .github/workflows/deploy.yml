@@ -56,10 +56,26 @@ jobs:
       - name: Build Quartz
         run: npx quartz build
 
+      - name: Install GHC 9.14.1 and Cabal via ghcup
+        run: |
+          curl --proto '=https' --tlsv1.2 -sSf https://get-ghcup.haskell.org | BOOTSTRAP_HASKELL_NONINTERACTIVE=1 BOOTSTRAP_HASKELL_GHC_VERSION=9.14.1 BOOTSTRAP_HASKELL_CABAL_VERSION=3.16.1.0 sh
+          echo "$HOME/.ghcup/bin" >> "$GITHUB_PATH"
+
+      - name: Cache Cabal packages
+        uses: actions/cache@v4
+        with:
+          path: ~/.cabal/store
+          key: cabal-${{ runner.os }}-ghc914-${{ hashFiles('haskell/automation.cabal') }}
+          restore-keys: cabal-${{ runner.os }}-ghc914-
+
+      - name: Build Haskell inject-giscus
+        working-directory: haskell
+        run: cabal update && cabal build inject-giscus
+
       - name: Inject static Giscus comments
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: npx tsx scripts/inject-static-giscus.ts
+        run: cd haskell && cabal run inject-giscus -- ../public
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

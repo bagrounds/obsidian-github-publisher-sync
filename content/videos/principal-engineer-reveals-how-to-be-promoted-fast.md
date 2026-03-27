@@ -4,10 +4,10 @@ aliases:
   - 📈🪜🚀 Principal Engineer Reveals How To Be Promoted FAST
 title: 📈🪜🚀 Principal Engineer Reveals How To Be Promoted FAST
 URL: https://youtu.be/kpK1YHq2iUg
-Author: 
+Author:
 Platform: "#YouTube"
 Channel: "[[A Life Engineered]]"
-tags: 
+tags:
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 📈🪜🚀 Principal Engineer Reveals How To Be Promoted FAST  

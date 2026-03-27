@@ -9,6 +9,9 @@ Platform:
 Channel: Heather Cox Richardson
 tags:
 youtube: https://youtu.be/XWbpT_B80_c
+force_analyze_links: false
+link_analysis_time: 2026-03-27T00:20:38.192Z
+link_analysis_model: gemini-3.1-flash-lite-preview
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 💰💸⚔️ A “Billion Dollar a Day” War | Explainer  

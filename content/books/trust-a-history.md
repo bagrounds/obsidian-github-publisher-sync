@@ -8,6 +8,8 @@ affiliate link: https://amzn.to/43MZpb3
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🤝📜 Trust: A History  
+[🛒 Trust: A History. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/43MZpb3)  
+  
 ## 📚 Book Report: 🤝 Trust: A History by Geoffrey Hosking  
   
 ### 💡 Overview  

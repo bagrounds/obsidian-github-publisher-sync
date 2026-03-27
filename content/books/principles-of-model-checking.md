@@ -4,8 +4,8 @@ aliases:
   - 🤖✅ Principles of Model Checking
 title: 🤖✅ Principles of Model Checking
 URL: https://bagrounds.org/books/principles-of-model-checking
-Author: 
-tags: 
+Author:
+tags:
 affiliate link: https://amzn.to/4jE9QmR
 ---
 [Home](../index.md) > [Books](./index.md)  

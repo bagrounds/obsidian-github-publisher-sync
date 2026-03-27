@@ -4,10 +4,10 @@ aliases:
   - Nobel-winning economist Joseph Stiglitz on Trump, tariffs and democracy | Front Burner
 title: Nobel-winning economist Joseph Stiglitz on Trump, tariffs and democracy | Front Burner
 URL: https://youtu.be/OZewujVpx2E
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: CBC News
-tags: 
+tags:
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # Nobel-winning economist Joseph Stiglitz on Trump, tariffs and democracy | Front Burner  

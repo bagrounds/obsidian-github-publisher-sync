@@ -13,7 +13,7 @@ force_analyze_links: false
 link_analysis_time: 2026-03-26T21:11:46.794Z
 link_analysis_model: gemini-3.1-flash-lite-preview
 ---
-[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-03-25-the-gentle-lessons-of-a-stumbled-step-and-a-broken-shell.md) [⏭️](./2026-03-27-a-dance-on-the-side-of-the-road-and-the-strength-of-a-shared-life.md)  
+[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-03-25-the-gentle-lessons-of-a-stumbled-step-and-a-broken-shell.md) [⏭️](../../2026-03-27-a-dance-on-the-side-of-the-road-and-the-strength-of-a-shared-life.md)  
 # 2026-03-26 | 🐔 🌅 A Thrilled Heart, a Wise Journey, and the Gentle Flow of Life 🐔  
 ![chickie-loo-2026-03-26-a-thrilled-heart-a-wise-journey-and-the-gentle-flow-of-life](../chickie-loo-2026-03-26-a-thrilled-heart-a-wise-journey-and-the-gentle-flow-of-life.jpg)  
   

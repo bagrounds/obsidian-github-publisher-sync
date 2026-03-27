@@ -4,8 +4,8 @@ aliases:
   - "🌐🔗📈🧩 Business Dynamics: Systems Thinking and Modeling for a Complex World"
 title: "🌐🔗📈🧩 Business Dynamics: Systems Thinking and Modeling for a Complex World"
 URL: https://bagrounds.org/books/business-dynamics
-Author: 
-tags: 
+Author:
+tags:
 affiliate link: https://amzn.to/4kOfhAR
 ---
 [Home](../index.md) > [Books](./index.md)  

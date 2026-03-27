@@ -127,6 +127,7 @@ test-suite automation-tests
     Automation.BlogImageTest
     Automation.InternalLinkingTest
     Automation.BlueskyTest
+    Automation.MastodonTest
   build-depends:
     base,
     automation,

@@ -67,11 +67,14 @@
 
 ## 🐘 Mastodon Integration
 
-📤 Posts via the Mastodon REST API using the `masto` library's `createRestAPIClient`.
+📤 Posts via the Mastodon REST API with Bearer token authentication.
 🌐 Instance-agnostic design extracts the instance URL from post URLs for API calls.
-📝 Creates public, English-language statuses.
+📝 Creates public, English-language statuses with JSON body containing status, visibility, and language fields.
+🔁 Uses UUID-based Idempotency-Key headers for retry safety against duplicate posts.
 🖼️ Embed generation tries the instance's oEmbed endpoint first, then falls back to an iframe-based embed.
 🔧 Pure URL parsing functions extract instance URL, status ID, and username from post URLs.
+🏗️ Haskell implementation in `haskell/src/Automation/Platforms/Mastodon.hs` follows the same error handling patterns as the Twitter module, using `Either Text` return types and `HttpCodeException` for transient failure retry.
+🔌 All IO functions accept a `Manager` parameter for HTTP connection pooling.
 
 ## 🔍 OpenGraph Metadata Extraction
 

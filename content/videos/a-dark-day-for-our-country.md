@@ -4,10 +4,10 @@ aliases:
   - ⚫😭🇺🇸 A Dark Day for Our Country
 title: ⚫😭🇺🇸 A Dark Day for Our Country
 URL: https://youtu.be/7KzckXq_XRo
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: Sen. Adam Schiff
-tags: 
+tags:
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # ⚫😭🇺🇸 A Dark Day for Our Country  

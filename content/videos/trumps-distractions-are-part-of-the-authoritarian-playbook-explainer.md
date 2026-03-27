@@ -4,10 +4,10 @@ aliases:
   - 👹🤡👑📢 Trump’s Distractions Are Part of the Authoritarian Playbook | Explainer
 title: 👹🤡👑📢 Trump’s Distractions Are Part of the Authoritarian Playbook | Explainer
 URL: https://bagrounds.org/videos/trumps-distractions-are-part-of-the-authoritarian-playbook-explainer
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: Heather Cox Richardson
-tags: 
+tags:
 youtube: https://youtu.be/tDQIBhIpzk8
 ---
 [Home](../index.md) > [Videos](./index.md) | [🏛️🇺🇸📖 Heather Cox Richardson](../people/heather-cox-richardson.md)  

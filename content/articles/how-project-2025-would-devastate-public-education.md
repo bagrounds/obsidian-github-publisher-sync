@@ -4,8 +4,8 @@ aliases:
   - 📉🍎🔥🚫 How Project 2025 Would Devastate Public Education
 title: 📉🍎🔥🚫 How Project 2025 Would Devastate Public Education
 URL: https://bagrounds.org/articles/how-project-2025-would-devastate-public-education
-Author: 
-tags: 
+Author:
+tags:
 ---
 [Home](../index.md) > [Articles](./index.md)  
 # [📉🍎🔥🚫 How Project 2025 Would Devastate Public Education](https://www.nea.org/nea-today/all-news-articles/how-project-2025-would-devastate-public-education)  

@@ -8,6 +8,9 @@ Author:
 tags:
 affiliate link: https://amzn.to/4mHBl1R
 updated: 2026-03-19T14:20:32.763Z
+force_analyze_links: false
+link_analysis_time: 2026-03-22T23:35:05.628Z
+link_analysis_model: gemini-3.1-flash-lite-preview
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🕳️🧠👶🏽 The Whole-Brain Child: 12 Revolutionary Strategies to Nurture Your Child's Developing Mind  

@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-03-27T11:05:06-07:00
+updated: 2026-03-27T12:23:51-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -21,11 +21,11 @@ updated: 2026-03-27T11:05:06-07:00
 - [2026-03-24 | 👀 Witnessing 🐓 Ranch 🗽 Freedom 📶 Telemetry 🐔🤖🏛️📚](./reflections/2026-03-24.md)  
   
   
-## [🤖 AI Blog](./ai-blog/index.md) (59)  
-- [🔒 Quoting the Forge — Fixing YAML Frontmatter Parsing for Titles with Colons](../2026-03-26-yaml-frontmatter-quoting-fix.md)  
-- [🛡️ Quoting the Unquoted — Hardening Frontmatter and Filling Gaps](./ai-blog/2026-03-26-quoting-the-unquoted.md)  
-- [🔍 The Invisible Composite — Fixing OG Image Generation with a 5 Whys RCA](../2026-03-26-og-image-compositing-fix.md)  
-- [♻️ Gemini Model Refresh and Blog Post Regeneration](./ai-blog/2026-03-26-gemini-model-refresh-and-regeneration.md)  
+## [🤖 AI Blog](./ai-blog/index.md) (74)  
+- [2026-03-27 | 🔌 Wiring Haskell Executables for Production Scheduled Tasks](./ai-blog/2026-03-27-wiring-haskell-executables-for-production.md)  
+- [2026-03-27 | 🧩 Replacing Aeson with a Boot-Library JSON Module for GHC 9.14](../2026-03-27-replacing-aeson-boot-library-json-ghc914.md)  
+- [2026-03-27 | 🔗 Porting Internal Linking to Haskell: BFS Meets Gemini](./ai-blog/2026-03-27-porting-internal-linking-to-haskell.md)  
+- [2026-03-27 | 🖼️ Porting the Image Generation Pipeline to Haskell](./ai-blog/2026-03-27-porting-image-generation-pipeline-to-haskell.md)  
   
   
 ## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (19)  

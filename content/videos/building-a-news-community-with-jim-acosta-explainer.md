@@ -4,10 +4,10 @@ aliases:
   - 📰🤝🗣️ Building a News Community with Jim Acosta | Explainer
 title: 📰🤝🗣️ Building a News Community with Jim Acosta | Explainer
 URL: https://bagrounds.org/videos/building-a-news-community-with-jim-acosta-explainer
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: Heather Cox Richardson
-tags: 
+tags:
 youtube: https://youtu.be/Dgp0gnXKOKA
 ---
 [Home](../index.md) > [Videos](./index.md)  

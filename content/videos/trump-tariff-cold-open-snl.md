@@ -4,10 +4,10 @@ aliases:
   - Trump Tariff Cold Open - SNL
 title: Trump Tariff Cold Open - SNL
 URL: https://youtu.be/VEle3pZRqmI
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: Saturday Night Live
-tags: 
+tags:
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # Trump Tariff Cold Open - SNL  

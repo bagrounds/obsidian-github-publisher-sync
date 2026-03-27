@@ -4,8 +4,8 @@ aliases:
   - 😴🎡 The Nap Wheel
 title: 😴🎡 The Nap Wheel
 URL: https://bagrounds.org/articles/the-nap-wheel
-Author: 
-tags: 
+Author:
+tags:
 ---
 [Home](../index.md) > [Articles](./index.md)  
 # [😴🎡 The Nap Wheel](https://www.saramednick.com/napwheel)  

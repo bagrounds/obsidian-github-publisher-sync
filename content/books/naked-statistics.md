@@ -4,8 +4,8 @@ aliases:
   - "🙈📊🔢 Naked Statistics: Stripping the Dread from the Data"
 title: "🙈📊🔢 Naked Statistics: Stripping the Dread from the Data"
 URL: https://bagrounds.org/books/naked-statistics
-Author: 
-tags: 
+Author:
+tags:
 affiliate link: https://amzn.to/4jAC4PG
 CTA: 💯 Conquer the numbers.
 ---

@@ -11,11 +11,13 @@ module Automation.ObsidianSync
   , syncObsidianVault
   , pushObsidianVault
   , appendEmbedsToObsidianNote
+  , countVaultFiles
+  , vaultFileCountPath
   ) where
 
 import Control.Concurrent (threadDelay)
 import Control.Exception (SomeException, catch, throwIO, try)
-import Control.Monad (filterM, when)
+import Control.Monad (when)
 import Data.List (intercalate)
 import Data.Text (Text)
 import qualified Data.Text as T
@@ -23,6 +25,7 @@ import qualified Data.Text.IO as TIO
 import System.Directory
   ( doesDirectoryExist
   , doesFileExist
+  , listDirectory
   , removeDirectoryRecursive
   , createDirectoryIfMissing
   )
@@ -169,7 +172,11 @@ syncObsidianVault creds mCacheDir = do
       putStrLn "📥 Pulling latest vault content (warm cache fast path)..."
       result <- try $ runObSyncWithRetry ["sync", "--path", vaultDir] env vaultDir 5 :: IO (Either SomeException ())
       case result of
-        Right () -> pure vaultDir
+        Right () -> do
+          fileCount <- countVaultFiles vaultDir
+          putStrLn $ "📊 Vault file count after pull: " <> show fileCount
+          writeFile (vaultFileCountPath vaultDir) (show fileCount)
+          pure vaultDir
         Left err -> do
           let msg = show err
               needsSetup = any (`T.isInfixOf` T.pack msg)
@@ -187,6 +194,10 @@ syncObsidianVault creds mCacheDir = do
 
 coldCacheSync :: ObsidianCredentials -> FilePath -> [(String, String)] -> IO FilePath
 coldCacheSync creds vaultDir env = do
+  putStrLn "🧹 Clearing vault directory for clean sync-setup (data loss prevention)..."
+  exists <- doesDirectoryExist vaultDir
+  when exists $ removeDirectoryRecursive vaultDir
+  createDirectoryIfMissing True vaultDir
   let setupArgs = ["sync-setup", "--vault", T.unpack $ ocVaultName creds, "--path", vaultDir]
         <> maybe [] (\pw -> ["--password", T.unpack pw]) (ocVaultPassword creds)
   putStrLn $ "🔧 Setting up Obsidian Sync for vault: " <> T.unpack (ocVaultName creds)
@@ -194,16 +205,86 @@ coldCacheSync creds vaultDir env = do
   removeSyncLock vaultDir
   putStrLn "📥 Pulling latest vault content..."
   runObSyncWithRetry ["sync", "--path", vaultDir] env vaultDir 5
+  fileCount <- countVaultFiles vaultDir
+  putStrLn $ "📊 Vault file count after pull: " <> show fileCount
+  writeFile (vaultFileCountPath vaultDir) (show fileCount)
   pure vaultDir
 
 pushObsidianVault :: FilePath -> Text -> IO ()
 pushObsidianVault vaultDir authToken = do
   let env = [("OBSIDIAN_AUTH_TOKEN", T.unpack authToken)]
+  prePushFileCount <- countVaultFiles vaultDir
+  putStrLn $ "📊 Pre-push file count: " <> show prePushFileCount
+  validatePrePushFileCount vaultDir prePushFileCount
   ensureSyncClean vaultDir
   putStrLn "📤 Pushing changes to Obsidian Sync..."
   runObSyncWithRetry ["sync", "--path", vaultDir] env vaultDir 5
   threadDelay 1000000
   ensureSyncClean vaultDir
+
+validatePrePushFileCount :: FilePath -> Int -> IO ()
+validatePrePushFileCount vaultDir currentCount = do
+  let markerPath = vaultFileCountPath vaultDir
+  markerExists <- doesFileExist markerPath
+  case markerExists of
+    False -> do
+      putStrLn "⚠️ No baseline file count marker found — skipping circuit breaker (first sync)"
+      when (currentCount < minSafeFileCount) $ do
+        let msg = "🛑 CIRCUIT BREAKER: Vault has only " <> show currentCount
+              <> " files (minimum safe threshold: " <> show minSafeFileCount
+              <> "). Refusing to push to prevent potential data loss."
+        putStrLn msg
+        throwIO $ userError msg
+    True -> do
+      baselineStr <- readFile markerPath
+      let mBaseline = case reads baselineStr of
+            [(n, _)] -> Just (n :: Int)
+            _        -> Nothing
+      case mBaseline of
+        Nothing -> putStrLn "⚠️ Could not parse baseline file count — skipping percentage check"
+        Just baseline -> do
+          let dropPercent = case baseline of
+                0 -> 0.0 :: Double
+                _ -> fromIntegral (baseline - currentCount) / fromIntegral baseline * 100.0
+          putStrLn $ "📊 Baseline: " <> show baseline <> ", Current: " <> show currentCount
+            <> " (change: " <> show (negate (round dropPercent :: Int)) <> "%)"
+          when (dropPercent > maxFileDropPercent) $ do
+            let msg = "🛑 CIRCUIT BREAKER: Vault lost " <> show (round dropPercent :: Int)
+                  <> "% of files (baseline: " <> show baseline <> ", current: "
+                  <> show currentCount <> ", threshold: "
+                  <> show (round maxFileDropPercent :: Int) <> "%)."
+                  <> " Refusing to push to prevent catastrophic data loss."
+            putStrLn msg
+            throwIO $ userError msg
+
+minSafeFileCount :: Int
+minSafeFileCount = 50
+
+maxFileDropPercent :: Double
+maxFileDropPercent = 30.0
+
+countVaultFiles :: FilePath -> IO Int
+countVaultFiles dir = do
+  exists <- doesDirectoryExist dir
+  case exists of
+    False -> pure 0
+    True  -> countFilesRecursive dir
+
+countFilesRecursive :: FilePath -> IO Int
+countFilesRecursive dir = do
+  entries <- listDirectory dir
+  let visible = filter (\e -> case e of { '.':_ -> False; _ -> True }) entries
+  counts <- mapM (\entry -> do
+    let fullPath = dir </> entry
+    isDir <- doesDirectoryExist fullPath
+    case isDir of
+      True  -> countFilesRecursive fullPath
+      False -> pure 1
+    ) visible
+  pure (sum counts)
+
+vaultFileCountPath :: FilePath -> FilePath
+vaultFileCountPath vaultDir = vaultDir </> ".vault-sync-file-count"
 
 appendEmbedsToObsidianNote :: FilePath -> [(Text, Text, Text -> Text -> Text)] -> ObsidianCredentials -> IO ()
 appendEmbedsToObsidianNote notePath sections creds = do

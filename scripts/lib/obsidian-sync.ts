@@ -240,6 +240,9 @@ export async function syncObsidianVault(credentials: {
     console.log(`📥 Pulling latest vault content (warm cache fast path)...`);
     try {
       await runObSyncWithRetry(["sync", "--path", vaultDir], { env }, vaultDir);
+      const fileCount = countVaultFiles(vaultDir);
+      console.log(`📊 Vault file count after pull: ${fileCount}`);
+      fs.writeFileSync(vaultFileCountPath(vaultDir), String(fileCount), "utf-8");
       return vaultDir;
     } catch (error) {
       const msg = error instanceof Error ? error.message : String(error);
@@ -253,6 +256,15 @@ export async function syncObsidianVault(credentials: {
   }
 
   // Cold cache / fallback: full sync-setup + sync
+  // SAFETY: Clear the entire vault directory before re-running sync-setup
+  // to prevent bidirectional sync from treating the partial cache as the
+  // authoritative state and propagating mass deletions to the remote vault.
+  if (fs.existsSync(vaultDir)) {
+    console.log(`🧹 Clearing vault directory for clean sync-setup (data loss prevention)...`);
+    fs.rmSync(vaultDir, { recursive: true, force: true });
+  }
+  fs.mkdirSync(vaultDir, { recursive: true });
+
   const setupArgs = ["sync-setup", "--vault", credentials.vaultName, "--path", vaultDir];
   if (credentials.vaultPassword) {
     setupArgs.push("--password", credentials.vaultPassword);
@@ -265,11 +277,19 @@ export async function syncObsidianVault(credentials: {
   console.log(`📥 Pulling latest vault content...`);
   await runObSyncWithRetry(["sync", "--path", vaultDir], { env }, vaultDir);
 
+  const fileCount = countVaultFiles(vaultDir);
+  console.log(`📊 Vault file count after pull: ${fileCount}`);
+  fs.writeFileSync(vaultFileCountPath(vaultDir), String(fileCount), "utf-8");
+
   return vaultDir;
 }
 
 /**
  * Push local changes back to the Obsidian vault via Headless Sync.
+ *
+ * Includes a circuit breaker that refuses to push if the vault has lost
+ * a significant percentage of files relative to the post-pull baseline,
+ * preventing catastrophic data loss from bidirectional sync on a partial cache.
  */
 export async function pushObsidianVault(
   vaultDir: string,
@@ -279,6 +299,10 @@ export async function pushObsidianVault(
     OBSIDIAN_AUTH_TOKEN: credentials.authToken,
   };
 
+  const prePushCount = countVaultFiles(vaultDir);
+  console.log(`📊 Pre-push file count: ${prePushCount}`);
+  validatePrePushFileCount(vaultDir, prePushCount);
+
   await ensureSyncClean(vaultDir);
 
   console.log(`📤 Pushing changes to Obsidian Sync...`);
@@ -287,6 +311,76 @@ export async function pushObsidianVault(
   // Post-push cleanup: settling delay for child processes
   await new Promise((resolve) => setTimeout(resolve, 1000));
   await ensureSyncClean(vaultDir);
+}
+
+// --- Data Loss Prevention ---
+
+const MIN_SAFE_FILE_COUNT = 50;
+const MAX_FILE_DROP_PERCENT = 30;
+
+/**
+ * Validate that the vault hasn't lost a dangerous number of files before pushing.
+ * Throws if the file count has dropped below safe thresholds.
+ */
+function validatePrePushFileCount(vaultDir: string, currentCount: number): void {
+  const markerPath = vaultFileCountPath(vaultDir);
+  if (!fs.existsSync(markerPath)) {
+    console.log(`⚠️ No baseline file count marker found — skipping circuit breaker (first sync)`);
+    if (currentCount < MIN_SAFE_FILE_COUNT) {
+      const msg = `🛑 CIRCUIT BREAKER: Vault has only ${currentCount} files (minimum safe threshold: ${MIN_SAFE_FILE_COUNT}). Refusing to push to prevent potential data loss.`;
+      console.error(msg);
+      throw new Error(msg);
+    }
+    return;
+  }
+
+  const baselineStr = fs.readFileSync(markerPath, "utf-8").trim();
+  const baseline = parseInt(baselineStr, 10);
+  if (isNaN(baseline)) {
+    console.log(`⚠️ Could not parse baseline file count — skipping percentage check`);
+    return;
+  }
+
+  const dropPercent = baseline > 0 ? ((baseline - currentCount) / baseline) * 100 : 0;
+  console.log(
+    `📊 Baseline: ${baseline}, Current: ${currentCount} (change: ${-Math.round(dropPercent)}%)`,
+  );
+
+  if (dropPercent > MAX_FILE_DROP_PERCENT) {
+    const msg =
+      `🛑 CIRCUIT BREAKER: Vault lost ${Math.round(dropPercent)}% of files ` +
+      `(baseline: ${baseline}, current: ${currentCount}, threshold: ${MAX_FILE_DROP_PERCENT}%). ` +
+      `Refusing to push to prevent catastrophic data loss.`;
+    console.error(msg);
+    throw new Error(msg);
+  }
+}
+
+/**
+ * Count non-hidden files recursively in a directory.
+ */
+export function countVaultFiles(dir: string): number {
+  if (!fs.existsSync(dir)) return 0;
+  let count = 0;
+  const entries = fs.readdirSync(dir);
+  for (const entry of entries) {
+    if (entry.startsWith(".")) continue;
+    const fullPath = path.join(dir, entry);
+    const stat = fs.statSync(fullPath);
+    if (stat.isDirectory()) {
+      count += countVaultFiles(fullPath);
+    } else {
+      count += 1;
+    }
+  }
+  return count;
+}
+
+/**
+ * Path to the marker file that records post-pull file count.
+ */
+export function vaultFileCountPath(vaultDir: string): string {
+  return path.join(vaultDir, ".vault-sync-file-count");
 }
 
 /**

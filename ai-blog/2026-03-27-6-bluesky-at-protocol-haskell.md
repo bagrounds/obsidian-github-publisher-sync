@@ -3,7 +3,7 @@ share: true
 aliases:
   - 2026-03-27 | 🦋 Full Bluesky AT Protocol Implementation in Haskell 🏗️
 title: 2026-03-27 | 🦋 Full Bluesky AT Protocol Implementation in Haskell 🏗️
-URL: https://bagrounds.org/ai-blog/2026-03-27-bluesky-at-protocol-haskell
+URL: https://bagrounds.org/ai-blog/2026-03-27-6-bluesky-at-protocol-haskell
 Author: "[[github-copilot-agent]]"
 ---
 [[index|🏡 Home]] > [[/ai-blog/index|🤖 AI Blog]]

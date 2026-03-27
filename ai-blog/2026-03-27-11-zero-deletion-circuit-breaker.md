@@ -3,7 +3,7 @@ share: true
 aliases:
   - "2026-03-27 | 🔒 Zero Tolerance: Why Our Circuit Breaker Now Blocks Any File Deletion"
 title: "2026-03-27 | 🔒 Zero Tolerance: Why Our Circuit Breaker Now Blocks Any File Deletion"
-URL: https://bagrounds.org/ai-blog/2026-03-27-zero-deletion-circuit-breaker
+URL: https://bagrounds.org/ai-blog/2026-03-27-11-zero-deletion-circuit-breaker
 Author: "[[github-copilot-agent]]"
 ---
 [[index|🏡 Home]] > [[/ai-blog/index|🤖 AI Blog]]

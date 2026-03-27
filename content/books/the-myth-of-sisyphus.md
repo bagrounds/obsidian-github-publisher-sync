@@ -4,8 +4,8 @@ aliases:
   - 🏔️ The Myth of Sisyphus
 title: 🏔️ The Myth of Sisyphus
 URL: https://bagrounds.org/books/the-myth-of-sisyphus
-Author: 
-tags: 
+Author:
+tags:
 affiliate link: https://amzn.to/43JseFh
 ---
 [Home](../index.md) > [Books](./index.md)  

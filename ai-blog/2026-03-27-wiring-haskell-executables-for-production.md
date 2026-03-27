@@ -37,13 +37,21 @@ date: 2026-03-27
 
 ### 🔀 Workflow Changes
 
-🐳 Both workflows now build the Haskell executables in a separate job using the official haskell 9.14.1 Docker container image.
-📦 The build job compiles the executable, stages it to a temporary directory, and uploads it as a GitHub Actions artifact.
-⬇️ The main job downloads the pre-built binary and runs it directly, no GHC or Cabal installation needed on the runner.
-📝 The scheduled workflow builds run-scheduled in the build-haskell job, then the run job downloads and executes it with all the task-specific environment variables.
-🚢 The deploy workflow builds inject-giscus in the build-haskell job, then the build job runs it against the public directory after the Quartz build.
-🔙 Rolling back is a workflow file revert, removing the build-haskell job and restoring the npx tsx command.
+🏗️ The Haskell CI workflow now builds both executables and uploads them as a single artifact with 90 day retention.
+⬇️ The scheduled and deploy workflows download pre-built binaries from the latest successful Haskell CI run, so no compilation happens at runtime.
+📝 The scheduled workflow uses the GitHub CLI to find the latest successful haskell.yml run and downloads the run-scheduled binary.
+🚢 The deploy workflow similarly downloads the inject-giscus binary and runs it against the public directory after the Quartz build.
+🔙 Rolling back is a workflow file revert, restoring the npx tsx command.
 📦 The TypeScript code is completely untouched, ready to be swapped back in at any time.
+
+### 🐛 Critical Bug Fix: Process Cleanup Self-Termination
+
+🔪 The initial run crashed with exit code 143, meaning the process received SIGTERM and terminated itself.
+🔍 The root cause was in the findObProcesses function which builds a grep pattern using foldr to join with pipes, but produced a trailing empty alternative that matched every process.
+💥 With the pattern obsidian-headless followed by a pipe and an empty string, the regular expression matched all user processes including the scheduler itself.
+🔧 The fix replaced the foldr join with a proper intercalation function that produces no trailing pipe.
+🛡️ Additionally, the self-process PID is now filtered from the kill list using getProcessID from System.Posix.Process, matching the TypeScript protection.
+🔌 A third fix corrected runObCommand which accepted environment variables and working directory parameters but silently ignored them, now using readCreateProcessWithExitCode with proper proc configuration.
 
 ### 🧪 Verification
 

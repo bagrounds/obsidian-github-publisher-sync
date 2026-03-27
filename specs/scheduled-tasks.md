@@ -20,10 +20,11 @@
 ### 🔀 Haskell Implementation
 
 🏗️ The Haskell orchestrator (RunScheduled.hs) is the active implementation used in CI.
-🐳 The executable is built in a separate GHA job using the `haskell:9.14.1` Docker container, then downloaded as an artifact by the run job.
+🐳 The executable is pre-built by the `haskell.yml` CI workflow (using the `haskell:9.14.1` Docker container) and uploaded as an artifact with 90 day retention.
+⬇️ The scheduled workflow downloads the pre-built binary from the latest successful Haskell CI run — no compilation at runtime.
 ✅ Fully implemented task runners: blog-series (all 3), ai-fiction, reflection-title.
 ⚠️ Stubbed task runners (log and skip): backfill-blog-images, internal-linking, social-posting.
-🔙 Rolling back to TypeScript is a workflow file revert: remove the build-haskell job and restore `npx tsx scripts/run-scheduled.ts`.
+🔙 Rolling back to TypeScript is a workflow file revert: restore `npx tsx scripts/run-scheduled.ts`.
 📦 The TypeScript implementation remains fully functional and tested (1298 tests).
 
 ### 🔄 Data Flow

@@ -25,14 +25,17 @@ import System.Directory
   , removeDirectoryRecursive
   , createDirectoryIfMissing
   )
+import System.Environment (getEnvironment)
 import System.Exit (ExitCode (..))
 import System.FilePath ((</>))
+import System.Posix.Process (getProcessID)
 import System.Process
   ( CreateProcess (..)
   , StdStream (..)
   , createProcess
   , proc
   , readProcess
+  , readCreateProcessWithExitCode
   , readProcessWithExitCode
   , waitForProcess
   )
@@ -56,7 +59,10 @@ data EmbedSection = EmbedSection
 
 runObCommand :: [String] -> Maybe FilePath -> [(String, String)] -> IO (String, String)
 runObCommand args mCwd extraEnv = do
-  (exitCode, stdout, stderr) <- readProcessWithExitCode "ob" args ""
+  parentEnv <- getEnvironment
+  let mergedEnv = parentEnv <> extraEnv
+      cp = (proc "ob" args) { cwd = mCwd, env = Just mergedEnv }
+  (exitCode, stdout, stderr) <- readCreateProcessWithExitCode cp ""
   case exitCode of
     ExitSuccess -> pure (stdout, stderr)
     ExitFailure code -> throwIO $ userError $ unlines
@@ -78,14 +84,19 @@ removeSyncLock vaultDir = do
 
 findObProcesses :: Maybe FilePath -> IO [String]
 findObProcesses mVaultDir = do
+  myPid <- show <$> getProcessID
   let patterns = ["obsidian-headless"] <> maybe [] pure mVaultDir
-  let grepPattern = foldr (\a b -> a <> "|" <> b) "" patterns
+      grepPattern = intercalateStr "|" patterns
   result <- try $ readProcess "bash" ["-c",
     "ps -u $(id -u) -o pid,args 2>/dev/null | grep -E '" <> grepPattern <> "' | grep -v grep | awk '{print $1}'"
     ] "" :: IO (Either SomeException String)
   pure $ case result of
     Left _     -> []
-    Right pids -> filter (not . null) $ lines pids
+    Right pids -> filter (\p -> not (null p) && p /= myPid) $ lines pids
+  where
+    intercalateStr _ []     = ""
+    intercalateStr _ [x]    = x
+    intercalateStr sep (x:xs) = x <> sep <> intercalateStr sep xs
 
 killObProcesses :: Maybe FilePath -> IO ()
 killObProcesses mVaultDir = do

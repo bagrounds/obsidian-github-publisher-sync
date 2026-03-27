@@ -79,7 +79,8 @@ library
     case-insensitive     >= 1.2,
     parsec               >= 3.1,
     stm                  >= 2.5,
-    transformers         >= 0.6
+    transformers         >= 0.6,
+    unix                 >= 2.8
 
 executable run-scheduled
   import:              shared

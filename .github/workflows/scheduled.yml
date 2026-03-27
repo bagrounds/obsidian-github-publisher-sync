@@ -20,38 +20,10 @@ env:
 permissions:
   contents: read
   discussions: read
+  actions: read
 
 jobs:
-  build-haskell:
-    runs-on: ubuntu-latest
-    container: haskell:9.14.1
-    steps:
-      - uses: actions/checkout@v4
-
-      - name: Cache Cabal packages
-        uses: actions/cache@v4
-        with:
-          path: ~/.cabal/store
-          key: cabal-ghc914-${{ hashFiles('haskell/automation.cabal') }}
-          restore-keys: cabal-ghc914-
-
-      - name: Build
-        working-directory: haskell
-        run: cabal update && cabal build
-
-      - name: Stage executable
-        working-directory: haskell
-        run: |
-          mkdir -p /tmp/haskell-bin
-          cp "$(cabal list-bin run-scheduled)" /tmp/haskell-bin/
-
-      - uses: actions/upload-artifact@v4
-        with:
-          name: run-scheduled
-          path: /tmp/haskell-bin/run-scheduled
-
   run:
-    needs: build-haskell
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -84,10 +56,13 @@ jobs:
           key: obsidian-vault-${{ github.run_id }}
           restore-keys: obsidian-vault-
 
-      - uses: actions/download-artifact@v4
-        with:
-          name: run-scheduled
-          path: bin/
+      - name: Download pre-built run-scheduled binary
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          RUN_ID=$(gh run list --workflow=haskell.yml --status=success --limit=1 --json databaseId -q '.[0].databaseId')
+          gh run download "$RUN_ID" --name haskell-binaries --dir bin/
+          chmod +x bin/run-scheduled
 
       - name: Run Scheduled Tasks
         env:
@@ -128,6 +103,6 @@ jobs:
           LINKING_MODEL: ${{ vars.LINKING_MODEL || 'gemini-3.1-flash-lite-preview' }}
           REPO_ROOT: ${{ github.workspace }}
         run: >-
-          chmod +x bin/run-scheduled && bin/run-scheduled
+          bin/run-scheduled
           ${{ github.event.inputs.task && format('--task {0}', github.event.inputs.task) || '' }}
           ${{ github.event.inputs.hour && format('--hour {0}', github.event.inputs.hour) || '' }}

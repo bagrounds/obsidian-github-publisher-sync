@@ -4,8 +4,8 @@ aliases:
   - "🤯 Mindf*ck: Cambridge Analytica and the Plot to Break America"
 title: "🤯 Mindf*ck: Cambridge Analytica and the Plot to Break America"
 URL: https://bagrounds.org/books/mindfuck-cambridge-analytica-and-the-plot-to-break-america
-Author: 
-tags: 
+Author:
+tags:
 affiliate link: https://amzn.to/4kRG3bD
 ---
 [Home](../index.md) > [Books](./index.md)  

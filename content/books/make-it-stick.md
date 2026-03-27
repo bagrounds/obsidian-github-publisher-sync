@@ -4,8 +4,8 @@ aliases:
   - "🧠🔒 Make It Stick: The Science of Successful Learning"
 title: "🧠🔒 Make It Stick: The Science of Successful Learning"
 URL: https://bagrounds.org/books/make-it-stick
-Author: 
-tags: 
+Author:
+tags:
 affiliate link: https://amzn.to/3HoJAQh
 CTA: 🧠 Absorb lasting knowledge.
 ---
@@ -51,7 +51,7 @@ This book challenges the conventional wisdom about learning, which often emphasi
 * **Best Alternate Book (Same Topic):** [🚀🧠🏆 Ultralearning: Master Hard Skills, Outsmart the Competition, and Accelerate Your Career](./ultralearning-master-hard-skills-outsmart-the-competition-and-accelerate-your-career.md) by Scott Young. This book offers a practical guide to accelerated learning, with real-world examples and strategies. 🚀  
 * **Best Tangentially Related Book:** [🤔🐇🐢 Thinking, Fast and Slow](./thinking-fast-and-slow.md) by Daniel Kahneman. This book explores the cognitive biases and heuristics that influence decision-making, providing insights into how we think and learn. 🧠  
 * **Best Diametrically Opposed Book:** "The Lazy Genius Way" by Kendra Adachi. While not entirely opposed, this book prioritizes ease and simplicity, which contrasts with "Make It Stick's" emphasis on effortful learning. 🛋️  
-* **Best Fiction Book (Related Ideas):** "Flowers for Algernon" by Daniel Keyes. This novel explores the complexities of learning and intelligence through the story of a man who undergoes an experimental procedure to enhance his cognitive abilities. 🌼  
+* **Best Fiction Book (Related Ideas):** Flowers for Algernon by Daniel Keyes. This novel explores the complexities of learning and intelligence through the story of a man who undergoes an experimental procedure to enhance his cognitive abilities. 🌼  
 * **Best More General Book:** [🌱🧘🏼‍♀️🏆 Mindset: The New Psychology of Success](./mindset.md) by Carol S. Dweck. This book explores the power of mindset and how it influences learning and achievement. 📈  
 * **Best More Specific Book:** [🧠📚🍎💡📝 How Learning Works: Eight Research-Based Principles for Smart Teaching](./how-learning-works.md) by Susan A. Ambrose et al. This book provides a more in-depth look at the cognitive processes involved in learning, with a focus on educational applications. 👩‍🏫  
 * **Best More Rigorous Book:** [🧠🤔💡➡️ Cognitive Psychology and Its Implications](./cognitive-psychology-and-its-implications.md) by John R. Anderson. This is a university textbook that goes into very deep levels of detail. 🔬  

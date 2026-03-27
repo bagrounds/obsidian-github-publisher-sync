@@ -4,10 +4,10 @@ aliases:
   - ☀️📚😎👍 Top books to read this summer, according to Ann Patchett and Maureen Corrigan
 title: ☀️📚😎👍 Top books to read this summer, according to Ann Patchett and Maureen Corrigan
 URL: https://bagrounds.org/videos/
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: PBS NewsHour
-tags: 
+tags:
 youtube: https://youtu.be/3s5_2oFPYq0
 ---
 [Home](../index.md) > [Videos](./index.md)  

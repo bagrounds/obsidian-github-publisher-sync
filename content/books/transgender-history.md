@@ -4,8 +4,8 @@ aliases:
   - "🏳️‍⚧️📜🌱✊ Transgender History: The Roots of Today's Revolution"
 title: "🏳️‍⚧️📜🌱✊ Transgender History: The Roots of Today's Revolution"
 URL: https://bagrounds.org/books/transgender-history
-Author: 
-tags: 
+Author:
+tags:
 affiliate link: https://amzn.to/3Hstp4i
 ---
 [Home](../index.md) > [Books](./index.md)  

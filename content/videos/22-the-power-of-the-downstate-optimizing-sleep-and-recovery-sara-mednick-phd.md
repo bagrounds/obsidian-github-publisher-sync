@@ -4,10 +4,10 @@ aliases:
   - "😴⬇️⚡ 22: The Power of the Downstate, Optimizing Sleep and Recovery | Sara Mednick, PhD"
 title: "😴⬇️⚡ 22: The Power of the Downstate, Optimizing Sleep and Recovery | Sara Mednick, PhD"
 URL: https://bagrounds.org/videos/22-the-power-of-the-downstate-optimizing-sleep-and-recovery-sara-mednick-phd
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: UCLA Health
-tags: 
+tags:
 youtube: https://youtu.be/q9yN_Z8RU7U
 ---
 [Home](../index.md) > [Videos](./index.md) | [😴🧠🌃 Sara C. Mednick](../people/sara-c-mednick.md)  

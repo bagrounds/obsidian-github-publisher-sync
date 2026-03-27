@@ -4,10 +4,10 @@ aliases:
   - 📺💸❓ CBS says Colbert cancelation was financial decision, but timing raises questions
 title: 📺💸❓ CBS says Colbert cancelation was financial decision, but timing raises questions
 URL: https://bagrounds.org/videos/cbs-says-colbert-cancelation-was-financial-decision-but-timing-raises-questions
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: PBS NewsHour
-tags: 
+tags:
 youtube: https://youtu.be/J5dkwpS0QHo
 ---
 [Home](../index.md) > [Videos](./index.md)  

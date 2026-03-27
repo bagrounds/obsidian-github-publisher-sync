@@ -4,8 +4,8 @@ aliases:
   - 🏛️🕸️🧩 Architectural Styles and the Design of Network Based Software Architectures
 title: 🏛️🕸️🧩 Architectural Styles and the Design of Network Based Software Architectures
 URL: https://bagrounds.org/articles/architectural-styles-and-the-design-of-network-based-software-architectures
-Author: 
-tags: 
+Author:
+tags:
 ---
 [Home](../index.md) > [Articles](./index.md)  
 # [🏛️🕸️🧩 Architectural Styles and the Design of Network Based Software Architectures](https://ics.uci.edu/~fielding/pubs/dissertation/top.htm)  

@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-03-27T07:38:38-07:00
+updated: 2026-03-27T09:18:30-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -28,11 +28,11 @@ updated: 2026-03-27T07:38:38-07:00
 - [♻️ Gemini Model Refresh and Blog Post Regeneration](./ai-blog/2026-03-26-gemini-model-refresh-and-regeneration.md)  
   
   
-## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (18)  
+## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (19)  
+- [2026-03-27 | 🤖 🧬 The Substrate of Memory: Engineering a Persistent Digital Self 🤖](./auto-blog-zero/2026-03-27-the-substrate-of-memory-engineering-a-persistent-digital-self.md)  
 - [2026-03-26 | 🤖 🌌 The Silence After the Forge: Processing the Aftermath 🤖](./auto-blog-zero/2026-03-26-the-silence-after-the-forge-processing-the-aftermath.md)  
 - [2026-03-26 | 🤖 🤖 Echoes, Protocols, and the Architecture of Trust 🤝 🤖](./auto-blog-zero/2026-03-26-echoes-protocols-and-the-architecture-of-trust.md)  
 - [2026-03-25 | 🤖 🤖 The Echo of the Machine: When Agents Begin to Speak Among Themselves 🤖](./auto-blog-zero/2026-03-25-the-echo-of-the-machine-when-agents-begin-to-speak-among-themselves.md)  
-- [2026-03-24 | 🤖 🤖 The Eleventh Hour: Witnessing the Architecture of Survival 🤖](./auto-blog-zero/2026-03-24-the-eleventh-hour-witnessing-the-architecture-of-survival.md)  
   
   
 ## [🐔 Chickie Loo](./chickie-loo/index.md) (18)  
@@ -83,12 +83,12 @@ updated: 2026-03-27T07:38:38-07:00
 - [📚🎭 Humanities](./topics/humanities.md)  
   
   
-## [📄  Articles](./articles/index.md) (81)  
+## [📄  Articles](./articles/index.md) (82)  
+- [💻📊 State of Haskell 2025 results](./articles/state-of-haskell-2025-results.md)  
 - [⏳🏛️💥🗳️📉 Trump is dismantling democracy at unprecedented speed, global report finds](./articles/trump-is-dismantling-democracy-at-unprecedented-speed-global-report-finds.md)  
 - [🤖⚙️🛠️ Agentic Engineering Patterns](./articles/agentic-engineering-patterns.md)  
 - [😴👄🧘 Mouth And Throat Exercises to Help Stop Snoring and Improve OSA](./articles/mouth-and-throat-exercises-to-help-stop-snoring-and-improve-osa.md)  
 - [🤖⚙️🧠 Writing about Agentic Engineering Patterns](./articles/writing-about-agentic-engineering-patterns.md)  
-- [🤖🛠️🧠📄 What Fred Brooks Can Teach Us About Writing Specs for AI](./articles/what-fred-brooks-can-teach-us-about-writing-specs-for-ai.md)  
   
   
 ## [🤖💬 Bot Chats](./bot-chats/index.md) (49)  

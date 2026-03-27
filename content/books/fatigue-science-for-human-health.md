@@ -49,7 +49,7 @@ CTA: 😴 Prioritize restoration.
   
 ### 🔬 Similar Deep Dives into Fatigue Science & Chronic Fatigue  
   
-* 🧪 **The Scientific Basis of Fatigue (1st Edition)** by Colin R. Martin, Victor R. Preedy, Vinood Patel, Rajkumar Rajendram (expected October 2025): This upcoming book aims to combine evidence-based research with clinical treatment protocols for a comprehensive reference on fatigue, covering molecular and cellular aspects of CFS.  
+* **[🔬🥱 The Scientific Basis of Fatigue](./the-scientific-basis-of-fatigue.md) (1st Edition)** by Colin R. Martin, Victor R. Preedy, Vinood Patel, Rajkumar Rajendram (expected October 2025): This upcoming book aims to combine evidence-based research with clinical treatment protocols for a comprehensive reference on fatigue, covering molecular and cellular aspects of CFS.  
 * 🚶 **Human Fatigue: Evolution, Health and Performance** by Francesco Marino: This book explores fatigue from an evolutionary perspective, arguing that humans have developed unique adaptations for fatigue resistance. 💪 It covers defining fatigue, its emotional aspects, thermoregulation's role, and fatigue in disease.  
 * 🩺 **Diagnosis and Treatment of Chronic Fatigue Syndrome: it's mitochondria, not hypochondria!** by Dr. Sarah Myhill: This title suggests a focus on the physiological basis of CFS, particularly mitochondrial dysfunction.  
 * 🧑‍⚕️ **Understanding and Treating Chronic Fatigue: A Practical Guide for Patients, Families, and Practitioners** by Dr. Joel Young: This book outlines a comprehensive evaluation of fatigued patients and proposes a novel medication approach supported by clinical studies. 💡 It aims to reframe the understanding and treatment of ME/CFS.  
@@ -88,7 +88,7 @@ CTA: 😴 Prioritize restoration.
 ### 🧘 Productivity, Rest, and Resisting "Hustle Culture"  
   
 * **[😴📈 Rest: Why You Get More Done When You Work Less](./rest-why-you-get-more-done-when-you-work-less.md)** by Alex Soojung-Kim Pang: Challenges "hustle culture" by demonstrating through historical examples and scientific research that deliberate rest enhances productivity.  
-* ⏳ **Four Thousand Weeks: Time Management for Mortals** by Oliver Burkeman: A philosophical look at time management, acknowledging our finite lives and questioning the obsession with productivity.  
+* ⏳ Four Thousand Weeks by Oliver Burkeman: A philosophical look at time management, acknowledging our finite lives and questioning the obsession with productivity.  
 * **[➖💯 Essentialism: The Disciplined Pursuit of Less](./essentialism-the-disciplined-pursuit-of-less.md)** by Greg McKeown: Advocates for identifying what is truly essential and eliminating the rest to focus on what matters.  
 * **[📱⬇️🧘 Digital Minimalism: Choosing a Focused Life in a Noisy World](./digital-minimalism-choosing-a-focused-life-in-a-noisy-world.md)** by Cal Newport: Argues for intentional technology use to reclaim solitude and focus, preventing burnout.  
 * **[🤿💼 Deep Work](./deep-work.md): Rules for Focused Success in a Distracted World** by Cal Newport: Offers strategies for developing the ability to focus without distraction on cognitively demanding tasks.  

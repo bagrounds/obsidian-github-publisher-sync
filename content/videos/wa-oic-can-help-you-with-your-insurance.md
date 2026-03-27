@@ -4,8 +4,8 @@ aliases:
   - 🏞️⚕️🛡️🤝 WA OIC can help you with your insurance!
 title: 🏞️⚕️🛡️🤝 WA OIC can help you with your insurance!
 URL: https://youtu.be/KowDnIoPDMU
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: Washington State Office of the Insurance Commissioner
 tags:
   - law

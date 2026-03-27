@@ -4,8 +4,8 @@ aliases:
   - "😊🧠📈🎯 The How of Happiness: A Scientific Approach to Getting the Life You Want"
 title: "😊🧠📈🎯 The How of Happiness: A Scientific Approach to Getting the Life You Want"
 URL: https://bagrounds.org/books/the-how-of-happiness-a-scientific-approach-to-getting-the-life-you-want
-Author: 
-tags: 
+Author:
+tags:
 affiliate link: https://amzn.to/4kQGums
 ---
 [Home](../index.md) > [Books](./index.md)  

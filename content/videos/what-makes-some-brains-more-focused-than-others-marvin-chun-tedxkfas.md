@@ -4,10 +4,10 @@ aliases:
   - What Makes Some Brains More Focused Than Others? | Marvin Chun | TEDxKFAS
 title: What Makes Some Brains More Focused Than Others? | Marvin Chun | TEDxKFAS
 URL: https://youtu.be/aoRHq0TQnZM
-Author: 
+Author:
 Platform: "#YouTube"
-Channel: 
-tags: 
+Channel:
+tags:
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # What Makes Some Brains More Focused Than Others? | Marvin Chun | TEDxKFAS  

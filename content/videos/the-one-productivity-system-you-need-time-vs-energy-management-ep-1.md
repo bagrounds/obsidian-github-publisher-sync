@@ -4,10 +4,10 @@ aliases:
   - "⏱️🔋✅ The one productivity system you need: time vs energy management (ep. 1)"
 title: "⏱️🔋✅ The one productivity system you need: time vs energy management (ep. 1)"
 URL: https://bagrounds.org/videos/the-one-productivity-system-you-need-time-vs-energy-management-ep-1
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: Rowena Tsai
-tags: 
+tags:
 youtube: https://youtu.be/gDgk7rsy2Ik
 ---
 [Home](../index.md) > [Videos](./index.md)  

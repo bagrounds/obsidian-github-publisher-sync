@@ -4,8 +4,8 @@ aliases:
   - "🎨🔄🧠🏢 The Fifth Discipline: The Art and Practice of the Learning Organization"
 title: "🎨🔄🧠🏢 The Fifth Discipline: The Art and Practice of the Learning Organization"
 URL: https://bagrounds.org/books/the-fifth-discipline
-Author: 
-tags: 
+Author:
+tags:
 affiliate link: https://amzn.to/43RAzqx
 CTA: 🌱 Cultivate collective intelligence.
 ---

@@ -4,8 +4,8 @@ aliases:
   - 🤖🔍✅ Model Checking
 title: 🤖🔍✅ Model Checking
 URL: https://bagrounds.org/books/model-checking
-Author: 
-tags: 
+Author:
+tags:
 affiliate link: https://amzn.to/3ZRR706
 ---
 [Home](../index.md) > [Books](./index.md)  

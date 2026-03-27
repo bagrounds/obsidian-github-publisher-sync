@@ -4,10 +4,10 @@ aliases:
   - FTC commissioner fired by Trump says move threatens agency designed to protect consumers
 title: FTC commissioner fired by Trump says move threatens agency designed to protect consumers
 URL: https://youtu.be/Cu70uB6iU5c
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: PBS NewsHour
-tags: 
+tags:
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # FTC commissioner fired by Trump says move threatens agency designed to protect consumers  

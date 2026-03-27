@@ -9,6 +9,9 @@ tags:
 image_date: 2026-03-27T16:20:18.038Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A vibrant illustration centered on a large, inviting open book, its pages gently radiating a warm, soft light. From the books spine, a stately yet modern architectural column emerges, subtly symbolizing democratic foundations. Around the base of the open book, diverse human silhouettes of various ages and backgrounds are subtly intertwined with delicate, glowing lines, representing community connection and shared knowledge. The background features a soft gradient, suggesting depth and a hopeful future. The overall composition conveys accessibility, enlightenment, and the vital role of libraries as a unifying force.
+force_analyze_links: false
+link_analysis_time: 2026-03-27T19:19:49.366Z
+link_analysis_model: gemini-3.1-flash-lite-preview
 ---
 [Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-03-26-the-freedom-of-connection-public-transit-as-a-shared-horizon.md)  
 # 2026-03-27 | 🏛️ 📖 The Freedom to Know: Libraries as Democratic Essentials 🏛️  

@@ -4,10 +4,10 @@ aliases:
   - 🧠🪜💡🤔⬆️🎓 6 Levels of Thinking Every Student MUST Master
 title: 🧠🪜💡🤔⬆️🎓 6 Levels of Thinking Every Student MUST Master
 URL: https://bagrounds.org/videos/6-levels-of-thinking-every-student-must-master
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: Justin Sung
-tags: 
+tags:
 youtube: https://youtu.be/1xqerXscTsE
 ---
 [Home](../index.md) > [Videos](./index.md) | [🧠👨‍🎓📈 Justin Sung](../people/justin-sung.md)  

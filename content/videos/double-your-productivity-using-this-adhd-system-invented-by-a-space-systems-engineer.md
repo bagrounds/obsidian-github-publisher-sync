@@ -4,10 +4,10 @@ aliases:
   - 2️⃣⬆️🧠👩‍🚀 Double Your Productivity using this ADHD System (Invented by a Space Systems Engineer)
 title: 2️⃣⬆️🧠👩‍🚀 Double Your Productivity using this ADHD System (Invented by a Space Systems Engineer)
 URL: https://bagrounds.org/videos/double-your-productivity-using-this-adhd-system-invented-by-a-space-systems-engineer
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: Ali Alqaraghuli, PhD
-tags: 
+tags:
 youtube: https://youtu.be/ssi39F7bTLg
 ---
 [Home](../index.md) > [Videos](./index.md)  

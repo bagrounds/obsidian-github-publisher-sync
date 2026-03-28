@@ -10,7 +10,7 @@ Channel: The New York Times
 tags:
 youtube: https://youtu.be/9ws1r6CaSXs
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md)  
 # 🚨🚔🇺🇸👨‍👩‍👧‍👦 Inside an Immigration Raid That Swept Up U.S. Citizens | Visual Investigations  
 ![Inside an Immigration Raid That Swept Up U.S. Citizens | Visual Investigations](https://youtu.be/9ws1r6CaSXs)  
   
@@ -49,7 +49,7 @@ youtube: https://youtu.be/9ws1r6CaSXs
   
 ### ↔️ Similar  
   
-* [🧱⚔️🚶‍♀️ Border Wars: Inside Trump's Assault on Immigration](../books/border-wars-inside-trumps-assault-on-immigration.md) by Julie Hirschfeld Davis and Michael D. Shear (Simon & Schuster) details the political shifts and internal battles within the Trump administration regarding immigration enforcement.  
+* [🧱⚔️🚶‍♀️ Border Wars: Inside Trump's Assault on Immigration](/content/books/border-wars-inside-trumps-assault-on-immigration.md) by Julie Hirschfeld Davis and Michael D. Shear (Simon & Schuster) details the political shifts and internal battles within the Trump administration regarding immigration enforcement.  
 * 🏜️ The Line Becomes a River by Francisco Cantú (Riverhead Books) provides an intimate look at the dehumanizing nature of the enforcement system.  
   
 ### 🆚 Contrasting  
@@ -59,7 +59,7 @@ youtube: https://youtu.be/9ws1r6CaSXs
   
 ### 🎨 Creatively Related  
   
-* [🧑🏿⛓️🙈 The New Jim Crow: Mass Incarceration in the Age of Colorblindness](../books/the-new-jim-crow-mass-incarceration-in-the-age-of-colorblindness.md) by Michelle Alexander (The New Press) explores how systemic law enforcement tactics create a permanent underclass, similar to the impacts described in the report.  
+* [🧑🏿⛓️🙈 The New Jim Crow: Mass Incarceration in the Age of Colorblindness](/content/books/the-new-jim-crow-mass-incarceration-in-the-age-of-colorblindness.md) by Michelle Alexander (The New Press) explores how systemic law enforcement tactics create a permanent underclass, similar to the impacts described in the report.  
 * 🚔 Rise of the Warrior Cop by Radley Balko (PublicAffairs) investigates the militarization of local and federal police forces and the resulting erosion of civil liberties.  
   
 ## 🐦 Tweet  

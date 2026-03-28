@@ -9,7 +9,7 @@ tags:
 affiliate link: https://amzn.to/3SBXukf
 CTA: ⏳ Extend your lifespan.
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # ⏳🔬🎨 Outlive: The Science and Art of Longevity  
 [🛒 Outlive: The Science and Art of Longevity. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3SBXukf)  
   
@@ -67,9 +67,9 @@ CTA: ⏳ Extend your lifespan.
   
 ### 📚 Book Recommendations  
 * **Best Alternate Book on the Same Topic:**  
-    * [⏳🙅 Lifespan: Why We Age - and Why We Don't Have To](books/lifespan-why-we-age-and-why-we-dont-have-to.md) by David A. Sinclair, PhD. This book provides a deep dive into the science of aging and potential interventions to slow or reverse the process. 🔬  
+    * [⏳🙅 Lifespan: Why We Age - and Why We Don't Have To](/content/books/lifespan-why-we-age-and-why-we-dont-have-to.md) by David A. Sinclair, PhD. This book provides a deep dive into the science of aging and potential interventions to slow or reverse the process. 🔬  
 * **Best Book That Is Tangentially Related:**  
-    * [😴💭 Why We Sleep: Unlocking the Power of Sleep and Dreams](books/why-we-sleep-unlocking-the-power-of-sleep-and-dreams.md) by Matthew Walker, PhD. This book explores the critical role of sleep in overall health and well-being, which is a key component of longevity. 💤  
+    * [😴💭 Why We Sleep: Unlocking the Power of Sleep and Dreams](/content/books/why-we-sleep-unlocking-the-power-of-sleep-and-dreams.md) by Matthew Walker, PhD. This book explores the critical role of sleep in overall health and well-being, which is a key component of longevity. 💤  
 * **Best Book That Is Diametrically Opposed:**  
     * "Die With Zero: Getting What Your Money's Worth—and Your Life's Worth" by Bill Perkins. This book advocates for enjoying life and spending your money before you die, potentially at the expense of extreme longevity planning. 💰  
 * **Best Fiction Book That Incorporates Related Ideas:**  

@@ -144,8 +144,8 @@ URL: https://bagrounds.org/topics/large-language-models
 - 📖 Topical: [🧠💻🤖 Deep Learning](../books/deep-learning.md) by Ian Goodfellow, Yoshua Bengio, and Aaron Courville 🤯.  
 - 📖 Tangentially related: [🧬👥💾 Life 3.0: Being Human in the Age of Artificial Intelligence](../books/life-3-0.md) by Max Tegmark 🤖.  
 - 📖 Topically opposed: "The Alignment Problem: Machine Learning and Human Values" by Brian Christian 🧑‍⚖️.  
-- 📖 More general: [🤖🧠 Artificial Intelligence: A Modern Approach](../books/artificial-intelligence-a-modern-approach.md) by Stuart Russell and Peter Norvig 🧠.  
-- 📖 More specific: [🗣️💻 Natural Language Processing with Transformers](../books/natural-language-processing-with-transformers.md) by Tunstall, von Werra, Wolf ⚡  
+- 📖 More general: [🤖🧠 Artificial Intelligence: A Modern Approach](books/artificial-intelligence-a-modern-approach.md) by Stuart Russell and Peter Norvig 🧠.  
+- 📖 More specific: [🗣️💻 Natural Language Processing with Transformers](books/natural-language-processing-with-transformers.md) by Tunstall, von Werra, Wolf ⚡  
 - 📖 Fictional: "Klara and the Sun" by Kazuo Ishiguro ☀️.  
 - 📖 Rigorous: "Speech and Language Processing" by Dan Jurafsky and James H. Martin 🗣️.  
 - 📖 Accessible: "Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow" by Aurélien Géron 🤖.  

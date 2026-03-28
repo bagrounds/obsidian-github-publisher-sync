@@ -11,7 +11,7 @@ force_analyze_links: false
 link_analysis_time: 2026-03-22T23:32:01.992Z
 link_analysis_model: gemini-3.1-flash-lite-preview
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🤖📈 Prediction Machines: The Simple Economics of Artificial Intelligence  
 [🛒 Prediction Machines: The Simple Economics of Artificial Intelligence. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4h2i3Sm)  
   
@@ -139,19 +139,19 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 ## 📚 Book Recommendations  
   
 ### ➕ Similar & Complementary Reads  
-* **[⚡🔮🤖 Power and Prediction: The Disruptive Economics of Artificial Intelligence](./power-and-prediction-the-disruptive-economics-of-artificial-intelligence.md)**: Agrawal, Gans, Goldfarb's sequel, focusing on how AI impacts decision-making and identifying disruptive opportunities.  
-* **[🤖📈 The Second Machine Age: Work, Progress, and Prosperity in a Time of Brilliant Technologies](./the-second-machine-age-work-progress-and-prosperity-in-a-time-of-brilliant-technologies.md)**: Erik Brynjolfsson and Andrew McAfee. Explores the broader economic implications of digital technologies and AI.  
-* **[🧑‍💻🤖 Human + Machine: Reimagining Work in the Age of AI](./human-machine-reimagining-work-in-the-age-of-ai.md)**: Paul R. Daugherty and H. James Wilson. Focuses on collaborative intelligence between humans and AI.  
+* **[⚡🔮🤖 Power and Prediction: The Disruptive Economics of Artificial Intelligence](/content/books/power-and-prediction-the-disruptive-economics-of-artificial-intelligence.md)**: Agrawal, Gans, Goldfarb's sequel, focusing on how AI impacts decision-making and identifying disruptive opportunities.  
+* **[🤖📈 The Second Machine Age: Work, Progress, and Prosperity in a Time of Brilliant Technologies](/content/books/the-second-machine-age-work-progress-and-prosperity-in-a-time-of-brilliant-technologies.md)**: Erik Brynjolfsson and Andrew McAfee. Explores the broader economic implications of digital technologies and AI.  
+* **[🧑‍💻🤖 Human + Machine: Reimagining Work in the Age of AI](/content/books/human-machine-reimagining-work-in-the-age-of-ai.md)**: Paul R. Daugherty and H. James Wilson. Focuses on collaborative intelligence between humans and AI.  
 * 📘 **Competing in the Age of AI: Strategy and Leadership When Algorithms and Networks Run the World**: Marco Iansiti and Karim R. Lakhani. Examines how AI fundamentally alters business models and strategy.  
-* **[🔮🎨🔬 Superforecasting: The Art and Science of Prediction](./superforecasting-the-art-and-science-of-prediction.md)**: Philip Tetlock and Dan Gardner. Investigates the art of human prediction and judgment, a key complement to AI prediction.  
+* **[🔮🎨🔬 Superforecasting: The Art and Science of Prediction](/content/books/superforecasting-the-art-and-science-of-prediction.md)**: Philip Tetlock and Dan Gardner. Investigates the art of human prediction and judgment, a key complement to AI prediction.  
   
 ### ➖ Contrasting & Critically Related Reads  
-* **[📊📉🏛️ Weapons of Math Destruction: How Big Data Increases Inequality and Threatens Democracy](./weapons-of-math-destruction-how-big-data-increases-inequality-and-threatens-democracy.md)**: Cathy O'Neil. Explores the societal risks, biases, and ethical issues of algorithmic decision-making.  
+* **[📊📉🏛️ Weapons of Math Destruction: How Big Data Increases Inequality and Threatens Democracy](/content/books/weapons-of-math-destruction-how-big-data-increases-inequality-and-threatens-democracy.md)**: Cathy O'Neil. Explores the societal risks, biases, and ethical issues of algorithmic decision-making.  
 * 📕 **Atlas of AI: Power, Politics, and the Planetary Costs of Artificial Intelligence**: Kate Crawford. Critiques the material and environmental costs, and power structures behind AI.  
-* **[🤖🧑‍ Human Compatible: Artificial Intelligence and the Problem of Control](./human-compatible-artificial-intelligence-and-the-problem-of-control.md)**: Stuart Russell. Addresses the existential risks and control problem of advanced AI.  
+* **[🤖🧑‍ Human Compatible: Artificial Intelligence and the Problem of Control](/content/books/human-compatible-artificial-intelligence-and-the-problem-of-control.md)**: Stuart Russell. Addresses the existential risks and control problem of advanced AI.  
   
 ### 💡 Creatively Related Reads  
-* **[💡🤖💰💥🏢📉 The Innovator's Dilemma: When New Technologies Cause Great Firms to Fail](./the-innovators-dilemma.md)**: Clayton M. Christensen. Classic on disruptive innovation, relevant for understanding how new technologies like AI disrupt existing markets.  
+* **[💡🤖💰💥🏢📉 The Innovator's Dilemma: When New Technologies Cause Great Firms to Fail](/content/books/the-innovators-dilemma.md)**: Clayton M. Christensen. Classic on disruptive innovation, relevant for understanding how new technologies like AI disrupt existing markets.  
 * 📒 **Good Strategy Bad Strategy: The Difference and Why It Matters**: Richard Rumelt. Provides a framework for developing effective strategy, essential when integrating AI.  
 * 📒 **The Master Algorithm: How the Quest for the Ultimate Learning Machine Will Remake Our World**: Pedro Domingos. Explores different schools of thought in machine learning.  
 * 📒 **Business Model Generation: A Handbook for Visionaries, Game Changers, and Challengers**: Alexander Osterwalder and Yves Pigneur. Offers tools for analyzing, designing, and implementing new business models, crucial for an AI-transformed economy.  

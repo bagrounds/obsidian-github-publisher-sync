@@ -7,7 +7,7 @@ share: true
 affiliate link: https://amzn.to/43Q2Ldo
 CTA: 🧘‍♀️ Cultivate inner peace.
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 📈🧘🏼‍♀️ 10% Happier  
 [🛒 10% Happier. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/43Q2Ldo)  
   
@@ -45,12 +45,12 @@ CTA: 🧘‍♀️ Cultivate inner peace.
   
 * 📖 **Meditation for Fidgety Skeptics** by Dan Harris: A direct follow-up providing practical "how-to" guidance for those who struggle with traditional meditation. 🧘  
 * 📖 **The Headspace Guide to Meditation & Mindfulness** by Andy Puddicombe: Offers a simple, ten-minute-a-day approach to mindfulness. ⏱️  
-* **[🧘🗣️ Mindfulness in Plain English](./mindfulness-in-plain-english.md)** by Henepola Gunaratana: A straightforward and classic guide to mindfulness meditation. ✍️  
-* **[👣➡️🌍 Wherever You Go, There You Are](./wherever-you-go-there-you-are.md)** by Jon Kabat-Zinn: A foundational text on cultivating mindfulness in everyday life. 🚶  
+* **[🧘🗣️ Mindfulness in Plain English](/content/books/mindfulness-in-plain-english.md)** by Henepola Gunaratana: A straightforward and classic guide to mindfulness meditation. ✍️  
+* **[👣➡️🌍 Wherever You Go, There You Are](/content/books/wherever-you-go-there-you-are.md)** by Jon Kabat-Zinn: A foundational text on cultivating mindfulness in everyday life. 🚶  
   
 ### 🕉️ Contrasting: Deeper Spiritual or Philosophical Exploration  
   
-* **[🧘🧠✅ Why Buddhism is True: The Science and Philosophy of Meditation and Enlightenment](./why-buddhism-is-true-the-science-and-philosophy-of-meditation-and-enlightenment.md)** by Robert Wright: Explores the scientific and philosophical basis for Buddhist ideas, including mindfulness and the nature of the self. 🤔  
+* **[🧘🧠✅ Why Buddhism is True: The Science and Philosophy of Meditation and Enlightenment](/content/books/why-buddhism-is-true-the-science-and-philosophy-of-meditation-and-enlightenment.md)** by Robert Wright: Explores the scientific and philosophical basis for Buddhist ideas, including mindfulness and the nature of the self. 🤔  
 * 📖 **Radical Acceptance** by Tara Brach: Focuses on using mindfulness and self-compassion to heal suffering and embrace one's life. ❤️‍🩹  
 * 📖 **The Places That Scare You** by Pema Chödrön: A guide to working with fear and difficult emotions from a Buddhist perspective. 😨  
 * 📖 **Going to Pieces Without Falling Apart** by Mark Epstein: A psychiatrist's perspective on how Buddhist teachings can help navigate emotional difficulties. 🤕  
@@ -62,5 +62,5 @@ CTA: 🧘‍♀️ Cultivate inner peace.
 * 📖 **Build the Life You Want** by Arthur C. Brooks and Oprah Winfrey: Discusses the science of happiness and provides strategies for building a more fulfilling life. 🏗️  
 * 📖 **The Power of Now** by Eckhart Tolle: A widely popular book on living in the present moment and transcending the ego, a concept also addressed by Harris. 💫  
   
-## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
+## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on 10% Happier. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

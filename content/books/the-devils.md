@@ -8,7 +8,7 @@ Author:
 tags:
 affiliate link: https://amzn.to/43OJokB
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 😈🔥👹 The Devils  
 [🛒 The Devils. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/43OJokB)  
   
@@ -48,8 +48,8 @@ Abercrombie's writing in *The Devils* is characterized by its gritty, visceral a
   
 #### Non-Fiction 🧠  
   
-* **[🎨⚔️ The Art of War](./the-art-of-war.md)** by Sun Tzu: This classic text on military strategy and tactics offers a fascinating look into the principles of conflict and leadership. Given *The Devils*' focus on perilous missions, unlikely alliances, and the brutal realities of combat, understanding these ancient strategic concepts can add another layer to appreciating the characters' decisions and the book's violent set-pieces. 💡🛡️  
-* **[🤔🐇🐢 Thinking, Fast and Slow](./thinking-fast-and-slow.md)** by Daniel Kahneman: Abercrombie excels at portraying characters with complex and often flawed motivations. This book, exploring the two systems that drive the way we think, can offer insight into the psychological biases and irrationality that often dictate human behavior, mirroring the morally gray and sometimes self-destructive choices of the characters in *The Devils*. 🤔🧠  
+* **[🎨⚔️ The Art of War](/content/books/the-art-of-war.md)** by Sun Tzu: This classic text on military strategy and tactics offers a fascinating look into the principles of conflict and leadership. Given *The Devils*' focus on perilous missions, unlikely alliances, and the brutal realities of combat, understanding these ancient strategic concepts can add another layer to appreciating the characters' decisions and the book's violent set-pieces. 💡🛡️  
+* **[🤔🐇🐢 Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md)** by Daniel Kahneman: Abercrombie excels at portraying characters with complex and often flawed motivations. This book, exploring the two systems that drive the way we think, can offer insight into the psychological biases and irrationality that often dictate human behavior, mirroring the morally gray and sometimes self-destructive choices of the characters in *The Devils*. 🤔🧠  
   
 #### If You Loved This ❤️  
   

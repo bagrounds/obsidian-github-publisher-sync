@@ -10,7 +10,7 @@ Channel: Justin Sung
 tags:
 youtube: https://youtu.be/RytJr22inm8
 ---
-[Home](../index.md) > [Videos](./index.md) | [🧠👨‍🎓📈 Justin Sung](../people/justin-sung.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md) | [🧠👨‍🎓📈 Justin Sung](/content/people/justin-sung.md)  
 # 🥇🧑‍🏫🏃💨 Learn Any Skill Faster By Copying How Olympic Athletes Train  
 ![Learn Any Skill Faster By Copying How Olympic Athletes Train](https://youtu.be/RytJr22inm8)  
   
@@ -67,11 +67,11 @@ youtube: https://youtu.be/RytJr22inm8
   
 ## 📚 Book Recommendations  
 * ➡️ **Similar Perspectives**  
-    * [⛰️📈🥇 Peak: Secrets from the New Science of Expertise](../books/peak.md): Explains the original research on deliberate practice and how it differs from purposeful practice.  
-    * [👶🌱📈 The Talent Code: Greatness Isn't Born. It's Grown. Here's How.](../books/the-talent-code.md): Focuses on the neurological mechanism (myelin) behind deep, difficult practice and provides case studies of world-class skill development.  
+    * [⛰️📈🥇 Peak: Secrets from the New Science of Expertise](/content/books/peak.md): Explains the original research on deliberate practice and how it differs from purposeful practice.  
+    * [👶🌱📈 The Talent Code: Greatness Isn't Born. It's Grown. Here's How.](/content/books/the-talent-code.md): Focuses on the neurological mechanism (myelin) behind deep, difficult practice and provides case studies of world-class skill development.  
 * ➡️ **Contrasting Perspectives**  
     * 📚 The 4-Hour Workweek: Advocates for a **minimum effective dose** approach, prioritizing efficiency, elimination, and automation over the meticulous and high-volume training of the "athlete" mindset.  
-    * [🤿💼 Deep Work: Rules for Focused Success in a Distracted World](../books/deep-work.md): Focuses primarily on attention management and eliminating distraction to maximize output, offering a structured approach to the *duration* of effort rather than the *methodology* of training.  
+    * [🤿💼 Deep Work: Rules for Focused Success in a Distracted World](/content/books/deep-work.md): Focuses primarily on attention management and eliminating distraction to maximize output, offering a structured approach to the *duration* of effort rather than the *methodology* of training.  
 * ➡️ **Creatively Related Concepts**  
-    * 📚 [❤️‍🔥💪 Grit: The Power of Passion and Perseverance](../books/grit-the-power-of-passion-and-perseverance.md): Highlights the psychological trait required to endure the tedious and frustrating nature of deliberate practice and progressive overload over long periods.  
-    * [⚛️🔄 Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones](../books/atomic-habits.md): Provides practical strategies for building the systems required to sustain principles like Time Intentionality and Progressive Overload through small, incremental changes.
+    * 📚 [❤️‍🔥💪 Grit: The Power of Passion and Perseverance](/content/books/grit-the-power-of-passion-and-perseverance.md): Highlights the psychological trait required to endure the tedious and frustrating nature of deliberate practice and progressive overload over long periods.  
+    * [⚛️🔄 Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones](/content/books/atomic-habits.md): Provides practical strategies for building the systems required to sustain principles like Time Intentionality and Progressive Overload through small, incremental changes.

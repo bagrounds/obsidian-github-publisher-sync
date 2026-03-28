@@ -50,7 +50,7 @@ updated: 2026-03-10T04:33:58.632Z
   
 * 📖 **William B. Irvine - *A Guide to the Good Life: The Ancient Art of Stoic Joy*:** A highly recommended introduction that translates Stoic concepts for a modern audience, focusing on practical techniques for achieving tranquility.  
 * 🚧 **Ryan Holiday - *The Obstacle Is the Way: The Timeless Art of Turning Trials into Triumph*:** Uses Stoic principles to frame challenges as opportunities, drawing on historical examples. ✍️ Holiday has written several popular books applying Stoicism.  
-* 📅 **Ryan Holiday & Stephen Hanselman - [🧘🏼‍♀️📅 The Daily Stoic: 366 Meditations on Wisdom, Perseverance, and the Art of Living](./the-daily-stoic-366-meditations-on-wisdom-perseverance-and-the-art-of-living.md):** Provides daily Stoic quotes and reflections for incorporating principles into everyday life.  
+* 📅 **Ryan Holiday & Stephen Hanselman - [🧘🏼‍♀️📅 The Daily Stoic: 366 Meditations on Wisdom, Perseverance, and the Art of Living](books/the-daily-stoic-366-meditations-on-wisdom-perseverance-and-the-art-of-living.md):** Provides daily Stoic quotes and reflections for incorporating principles into everyday life.  
 * 🧬 **Massimo Pigliucci - *How to Be a Stoic: Using Ancient Philosophy to Live a Modern Life*:** An accessible guide by a philosopher and biologist, blending ancient wisdom with modern science.  
 * 👑 **Donald J. Robertson - *How to Think Like a Roman Emperor: The Stoic Philosophy of Marcus Aurelius*:** Interweaves the life story of Marcus Aurelius with Stoic practices and cognitive behavioral therapy (CBT) techniques.  
 * 🧠 **Pierre Hadot - *The Inner Citadel: The Meditations of Marcus Aurelius*:** A scholarly yet insightful analysis of *Meditations*, viewing it as a practical spiritual exercise guide. 🧐 Recommended for a deeper dive after reading the primary texts.  
@@ -66,7 +66,7 @@ updated: 2026-03-10T04:33:58.632Z
 ### 🎨 Creatively Related Reads  
   
 * 🙏 **Viktor Frankl - *[🔦💡 Man's Search for Meaning](./mans-search-for-meaning.md)*:** A psychiatrist's account of his Holocaust survival and his logotherapy, emphasizing finding meaning even in extreme suffering, resonating with Stoic resilience.  
-* 💪 **Nassim Nicholas Taleb - *[Antifragile: Things That Gain from Disorder](./antifragile-things-that-gain-from-disorder.md)*:** While not strictly philosophical, Taleb's concept of antifragility (thriving under stress/volatility) shares parallels with the Stoic idea of using obstacles as opportunities.  
+* 💪 **Nassim Nicholas Taleb - *[Antifragile: Things That Gain from Disorder](books/antifragile-things-that-gain-from-disorder.md)*:** While not strictly philosophical, Taleb's concept of antifragility (thriving under stress/volatility) shares parallels with the Stoic idea of using obstacles as opportunities.  
 * 🌱 **James Clear - *[⚛️🔄 Atomic Habits](./atomic-habits.md)*:** A practical guide to building good habits and breaking bad ones, aligning with the Stoic emphasis on self-discipline and incremental progress.  
 * 🌲 **Henry David Thoreau - *Walden*:** Explores themes of self-reliance, simple living, and living deliberately in nature, echoing some Stoic values but from a different, transcendentalist perspective.  
 * 🕉️ ***The Bhagavad Gita*:** An ancient Hindu scripture exploring duty (*dharma*), action, and detachment, showing fascinating parallels with Stoic thought on accepting one's role and acting without attachment to outcomes.  

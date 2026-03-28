@@ -7,7 +7,7 @@ share: true
 affiliate link: https://amzn.to/4dSK799
 CTA: 🚀 Guide young adults.
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🧑‍🤝‍🧑📈 10 to 25: The Science of Motivating Young People: A Groundbreaking Approach to Leading the Next Generation - And Making Your Own Life Easier  
 [🛒 10 to 25: The Science of Motivating Young People: A Groundbreaking Approach to Leading the Next Generation - And Making Your Own Life Easier. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4dSK799)  
   
@@ -64,13 +64,13 @@ CTA: 🚀 Guide young adults.
   
 1. 🌼 **Flourish: A Visionary New Understanding of Happiness and Well-being** by Martin E. Seligman  
     * 🔗 *Connection:* Explores the PERMA model (Positive Emotion, Engagement, Relationships, Meaning, Accomplishment) in depth, which is a foundational theory referenced in relation to motivating youth and fostering well-being. 🌈 Goes beyond just happiness to the broader concept of flourishing.  
-2. 🚗 **[Drive: The Surprising Truth About What Motivates Us](./drive-the-surprising-truth-about-what-motivates-us.md)** by Daniel H. Pink  
+2. 🚗 **[Drive: The Surprising Truth About What Motivates Us](/content/books/drive-the-surprising-truth-about-what-motivates-us.md)** by Daniel H. Pink  
     * 🔗 *Connection:* Focuses heavily on intrinsic motivation (autonomy, mastery, purpose) versus extrinsic rewards, aligning with *10 to 25*'s emphasis on tapping into deeper, internal drives rather than just carrots and sticks.  
-3. **[👨‍🚀 The Self-Driven Child: The 🔬 Science and 🤔 Sense of Giving Your Kids More 🕹️ Control Over Their Lives](./the-self-driven-child.md)** by William Stixrud & Ned Johnson  
+3. **[👨‍🚀 The Self-Driven Child: The 🔬 Science and 🤔 Sense of Giving Your Kids More 🕹️ Control Over Their Lives](/content/books/the-self-driven-child.md)** by William Stixrud & Ned Johnson  
     * 🔗 *Connection:* Shares the focus on autonomy and intrinsic motivation, emphasizing the importance of giving young people agency to reduce stress and increase drive. 👍 Complements the "support" aspect of the mentor mindset.  
-4. **[❤️‍🔥💪 Grit: The Power of Passion and Perseverance](./grit-the-power-of-passion-and-perseverance.md)** by Angela Duckworth  
+4. **[❤️‍🔥💪 Grit: The Power of Passion and Perseverance](/content/books/grit-the-power-of-passion-and-perseverance.md)** by Angela Duckworth  
     * 🔗 *Connection:* Deep dives into the "Accomplishment" aspect of well-being and motivation. While *10 to 25* offers a broader framework, *Grit* provides focused strategies on developing perseverance and passion for long-term goals.  
-5. 🌱 **[Mindset](./mindset.md): The New Psychology of Success** by Carol S. Dweck  
+5. 🌱 **[Mindset](/content/books/mindset.md): The New Psychology of Success** by Carol S. Dweck  
     * 🔗 *Connection:* Explores the concept of fixed vs. growth mindsets, crucial for how young people respond to challenges and feedback – directly relevant to Yeager's "wise feedback" and fostering resilience. 🤝 Yeager has conducted research with Dweck.  
 6. 🧠 **The Teenage Brain: A Neuroscientist's Survival Guide to Raising Adolescents and Young Adults** by Frances E. Jensen  
     * 🔗 *Connection:* Provides the neurological background for understanding adolescent behavior, complementing the psychological perspective of *10 to 25*. 🤔 Explains *why* teens might act impulsively or be sensitive to social feedback.  
@@ -83,21 +83,21 @@ CTA: 🚀 Guide young adults.
     * 🤝 *Complementary:* While *10 to 25* focuses on the *mindset* and *psychology*, this book offers very specific, practical communication scripts and techniques for respectful and effective dialogue with teenagers, putting some principles into concrete action.  
 3. 👧 **Untangled: Guiding Teenage Girls Through the Seven Transitions into Adulthood** by Lisa Damour  
     * 🤝 *Complementary:* Focuses specifically on the developmental journey of teenage girls, offering insights into common challenges and emotional landscapes that complement the broader age range and motivation focus of *10 to 25*.  
-4. **[📱😥 The Anxious Generation: How the Great Rewiring of Childhood Is Causing an Epidemic of Mental Illness](./the-anxious-generation-how-the-great-rewiring-of-childhood-is-causing-an-epidemic-of-mental-illness.md)** by Jonathan Haidt  
+4. **[📱😥 The Anxious Generation: How the Great Rewiring of Childhood Is Causing an Epidemic of Mental Illness](/content/books/the-anxious-generation-how-the-great-rewiring-of-childhood-is-causing-an-epidemic-of-mental-illness.md)** by Jonathan Haidt  
     * 🌍 *Contextual/Complementary:* Provides important context regarding the mental health challenges facing the 10-25 age group today, particularly related to technology and shifts in childhood experiences. 🧠 Understanding these pressures is relevant to applying motivational strategies effectively.  
   
 ### ✨ Creatively Related (Broader Well-being, Purpose, Life Design)  
   
-1. 🙏 **[🔦💡 Man's Search for Meaning](./mans-search-for-meaning.md)** by Viktor E. Frankl  
+1. 🙏 **[🔦💡 Man's Search for Meaning](/content/books/mans-search-for-meaning.md)** by Viktor E. Frankl  
     * 🔗 *Connection:* A profound exploration of the human drive for meaning, one of the key pillars (M in PERMA) often referenced in positive psychology approaches discussed in relation to *10 to 25*. 💪 Provides a deep perspective on resilience through purpose.  
-2. 🌊 **[Flow: The Psychology of Optimal Experience](./flow-the-psychology-of-optimal-experience.md)** by Mihaly Csikszentmihalyi  
+2. 🌊 **[Flow: The Psychology of Optimal Experience](/content/books/flow-the-psychology-of-optimal-experience.md)** by Mihaly Csikszentmihalyi  
     * 🔗 *Connection:* Deep dives into the concept of "Engagement" (E in PERMA). 🔑 Understanding flow states is key to fostering deep engagement and intrinsic motivation in activities.  
-3. **[⚛️🔄 Atomic Habits](./atomic-habits.md): An Easy & Proven Way to Build Good Habits & Break Bad Ones** by James Clear  
+3. **[⚛️🔄 Atomic Habits](/content/books/atomic-habits.md): An Easy & Proven Way to Build Good Habits & Break Bad Ones** by James Clear  
     * 🔗 *Connection:* Provides practical strategies for building systems that support the "Accomplishment" (A in PERMA). ✅ Useful for helping young people (and adults) translate motivation into consistent action and achievement.  
 4. ⏳ **The Defining Decade: Why Your Twenties Matter—And How to Make the Most of Them Now** by Meg Jay  
     * 🔗 *Connection:* Focuses specifically on the latter part of the 10-25 age range. 🎯 Addresses the importance of making intentional choices regarding work, relationships, and personal development during this critical period, aligning with themes of purpose and accomplishment.  
 5. 🎁 **The Gifts of Imperfection: Let Go of Who You Think You're Supposed to Be and Embrace Who You Are** by Brené Brown  
     * 🔗 *Connection:* Addresses vulnerability, shame resilience, and authenticity. ❤️ This connects to the sensitivity to social judgment highlighted in *10 to 25* and offers pathways to build self-worth independent of constant external validation."  
   
-## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
+## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on 10 to 25: The Science of Motivating Young People: A Groundbreaking Approach to Leading the Next Generation - And Making Your Own Life Easier. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

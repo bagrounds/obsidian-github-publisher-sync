@@ -10,7 +10,7 @@ Channel: Heather Cox Richardson
 tags:
 youtube: https://youtu.be/ecZW7ObacGg
 ---
-[Home](../index.md) > [Videos](./index.md) | [🏛️🇺🇸📖 Heather Cox Richardson](../people/heather-cox-richardson.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md) | [🏛️🇺🇸📖 Heather Cox Richardson](/content/people/heather-cox-richardson.md)  
 # ❓🕵️‍♂️🇺🇸📉 What’s Happening to U.S. Intelligence Under the Second Trump Administration? | Senator Mark Warner  
 ![What’s Happening to U.S. Intelligence Under the Second Trump Administration? | Senator Mark Warner](https://youtu.be/ecZW7ObacGg)  
   
@@ -18,7 +18,7 @@ youtube: https://youtu.be/ecZW7ObacGg
 * 🇺🇸 The Intelligence Community consists of 18 separate agencies, unified after 9/11 under the Office of the Director of National Intelligence (ODNI) \[[01:21](http://www.youtube.com/watch?v=ecZW7ObacGg&t=81)].  
 * 🏛️ The Senate Intelligence Committee, established after the Church Committee, provides oversight for all 18 agencies, operating from a secure room known as a skiff \[[03:00](http://www.youtube.com/watch?v=ecZW7ObacGg&t=180)].  
 * 🤝 Intelligence oversight traditionally maintains a unique bipartisan nature in the Senate because the classified information cannot be debated in public \[[03:59](http://www.youtube.com/watch?v=ecZW7ObacGg&t=239)].  
-* 💡 The Committee acts as the de facto technology committee for the Senate, concentrating on competition with China in critical areas like 5G, [⚛️ Quantum Computing](../topics/quantum-computing.md), and artificial intelligence \[[06:40](http://www.youtube.com/watch?v=ecZW7ObacGg&t=400)].  
+* 💡 The Committee acts as the de facto technology committee for the Senate, concentrating on competition with China in critical areas like 5G, [⚛️ Quantum Computing](/content/topics/quantum-computing.md), and artificial intelligence \[[06:40](http://www.youtube.com/watch?v=ecZW7ObacGg&t=400)].  
 * 🚨 The Gang of Eight consists of eight key Congressional leaders who receive the most sensitive intelligence information that is too sensitive for the full committees \[[08:26](http://www.youtube.com/watch?v=ecZW7ObacGg&t=506)].  
 * 🚫 The current administration has appointed unqualified and 🤡 rabidly partisan leaders to crucial roles, exemplified by the appointment of Tulsi Gabbard as Director of National Intelligence \[[17:09](http://www.youtube.com/watch?v=ecZW7ObacGg&t=1029)].  
 * 🔥 Career intelligence professionals have been fired for 🗣️ speaking truth to power, including the head of NSA and Cyber Command and the head of the Defense Intelligence Agency (DIA) \[[18:18](http://www.youtube.com/watch?v=ecZW7ObacGg&t=1098)].  
@@ -55,8 +55,8 @@ youtube: https://youtu.be/ecZW7ObacGg
 ## 📚 Book Recommendations  
   
 ### ↔️ Similar  
-* [🕵️📜 Legacy of Ashes: The History of the CIA](../books/legacy-of-ashes-the-history-of-the-cia.md) by Tim Weiner: 📜 Recommends this book for its comprehensive historical look at the CIA’s operations, internal conflicts, and its long, often fraught relationship with presidential administrations, which mirrors the concerns about politicization.  
-* [🇺🇸🕵️💥 Playing to the Edge: American Intelligence in the Age of Terror](../books/playing-to-the-edge-american-intelligence-in-the-age-of-terror.md) by Michael V. Hayden: Offers insight from a former Director of the CIA on the daily challenges and ethical responsibilities of intelligence leadership in a modern, complex geopolitical environment defined by the War on Terror.  
+* [🕵️📜 Legacy of Ashes: The History of the CIA](/content/books/legacy-of-ashes-the-history-of-the-cia.md) by Tim Weiner: 📜 Recommends this book for its comprehensive historical look at the CIA’s operations, internal conflicts, and its long, often fraught relationship with presidential administrations, which mirrors the concerns about politicization.  
+* [🇺🇸🕵️💥 Playing to the Edge: American Intelligence in the Age of Terror](/content/books/playing-to-the-edge-american-intelligence-in-the-age-of-terror.md) by Michael V. Hayden: Offers insight from a former Director of the CIA on the daily challenges and ethical responsibilities of intelligence leadership in a modern, complex geopolitical environment defined by the War on Terror.  
   
 ### 🆚 Contrasting  
 * ⚖️ The Constitution and the New Counterterrorism by Robert Chesney and Ashley Deeks: 📚 Provides a legal and structural counterpoint, focusing on how constitutional law frames intelligence collection, oversight, and presidential power in national security, offering a more systemic view than the political critique in the video.  

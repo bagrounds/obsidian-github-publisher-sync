@@ -7,7 +7,7 @@ share: true
 affiliate link: https://amzn.to/3IncZen
 CTA: 🍄 Discover sustenance.
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🧭🍎 Foraging Theory  
 [🛒 Foraging Theory. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3IncZen)  
   
@@ -55,13 +55,13 @@ Several influential models and concepts underpin foraging theory:
   
 ### ⚖️ Contrasting Books  
   
-* **[🤔🐇🐢 Thinking, Fast and Slow](./thinking-fast-and-slow.md)** by Daniel Kahneman. 💡 This book offers a contrasting perspective by exploring the two systems that drive human thought: System 1 (fast, intuitive) and System 2 (slow, logical). 🤔 It highlights cognitive biases and heuristics that often lead to deviations from purely rational or "optimal" decision-making in humans, providing a counterpoint to the optimal foraging assumption of perfect rationality.  
-* **[🔮🤷🏼‍♀️🤪 Predictably Irrational: The Hidden Forces That Shape Our Decisions](./predictably-irrational.md)** by Dan Ariely. 🤯 Ariely's work delves into the irrational forces that shape human decisions, often demonstrating how humans deviate from logical behavior in predictable ways. ⚖️ This contrasts with foraging theory's premise of rational, fitness-maximizing choices by revealing the psychological underpinnings of seemingly irrational human economic and personal decisions.  
-* **[👉🤏 Nudge: Improving Decisions about Health, Wealth, and Happiness](./nudge.md)** by Richard Thaler and Cass Sunstein. 💡 This book examines how subtle interventions, or "nudges," can influence human choices in predictable ways without restricting options. 🏗️ It offers insights into how environments can be structured to guide human decision-making toward better outcomes, a concept that implicitly contrasts with the evolved, innate optimal strategies often discussed in foraging theory.  
+* **[🤔🐇🐢 Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md)** by Daniel Kahneman. 💡 This book offers a contrasting perspective by exploring the two systems that drive human thought: System 1 (fast, intuitive) and System 2 (slow, logical). 🤔 It highlights cognitive biases and heuristics that often lead to deviations from purely rational or "optimal" decision-making in humans, providing a counterpoint to the optimal foraging assumption of perfect rationality.  
+* **[🔮🤷🏼‍♀️🤪 Predictably Irrational: The Hidden Forces That Shape Our Decisions](/content/books/predictably-irrational.md)** by Dan Ariely. 🤯 Ariely's work delves into the irrational forces that shape human decisions, often demonstrating how humans deviate from logical behavior in predictable ways. ⚖️ This contrasts with foraging theory's premise of rational, fitness-maximizing choices by revealing the psychological underpinnings of seemingly irrational human economic and personal decisions.  
+* **[👉🤏 Nudge: Improving Decisions about Health, Wealth, and Happiness](/content/books/nudge.md)** by Richard Thaler and Cass Sunstein. 💡 This book examines how subtle interventions, or "nudges," can influence human choices in predictable ways without restricting options. 🏗️ It offers insights into how environments can be structured to guide human decision-making toward better outcomes, a concept that implicitly contrasts with the evolved, innate optimal strategies often discussed in foraging theory.  
   
 ### ✨ Creatively Related Books  
   
-* **[👨‍🚀🔴✨ The Martian](./the-martian.md)** by Andy Weir. 👨‍🚀 This science fiction novel chronicles the meticulous resourcefulness of an astronaut stranded on Mars. 🆘 It is a story of extreme survival and highlights practical resource allocation, problem-solving, and the relentless pursuit of sustenance in an inhospitable environment, echoing the core challenges of foraging in an abstract, human-centric way.  
+* **[👨‍🚀🔴✨ The Martian](/content/books/the-martian.md)** by Andy Weir. 👨‍🚀 This science fiction novel chronicles the meticulous resourcefulness of an astronaut stranded on Mars. 🆘 It is a story of extreme survival and highlights practical resource allocation, problem-solving, and the relentless pursuit of sustenance in an inhospitable environment, echoing the core challenges of foraging in an abstract, human-centric way.  
 * 🏝️ **Robinson Crusoe** by Daniel Defoe. 📜 A classic tale of survival, this novel details a man's efforts to forage, build shelter, and manage resources on a deserted island. 👨‍🌾 It provides a narrative exploration of self-sufficiency, adaptation, and the ingenuity required to survive, which can be seen as a literary analogue to the practical application of foraging principles.  
 * 🏢 **From Resource Allocation to Strategy** edited by Joseph L. Gilbert and G Bower Clark. 💼 While focused on business strategy and organizational behavior, this book explores how resources are allocated within complex systems to achieve strategic objectives. 🔗 This connects conceptually to foraging theory by examining the optimization of resource use, albeit in a corporate rather than biological context, and considering how decisions drive long-term outcomes.  
   

@@ -9,7 +9,7 @@ tags:
 affiliate link: https://amzn.to/3ZfcoAJ
 CTA: 🧠 Unleash cognitive power.
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # ⚡🧠🏃 Spark: The Revolutionary New Science of Exercise and the Brain  
 [🛒 Spark: The Revolutionary New Science of Exercise and the Brain. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3ZfcoAJ)  
   
@@ -100,24 +100,24 @@ CTA: 🧠 Unleash cognitive power.
   
 ### ↔️ Similar  
   
-- [🧠🔄🏆 The Brain That Changes Itself: Stories of Personal Triumph from the Frontiers of Brain Science](./the-brain-that-changes-itself.md) by Norman Doidge explores the incredible power of neuroplasticity to heal and rewire the mind.  
+- [🧠🔄🏆 The Brain That Changes Itself: Stories of Personal Triumph from the Frontiers of Brain Science](/content/books/the-brain-that-changes-itself.md) by Norman Doidge explores the incredible power of neuroplasticity to heal and rewire the mind.  
 - ⚡ Healthy Brain Happy Life by Wendy Suzuki describes how physical activity can transform cognitive function and emotional well being.  
   
 ### 🆚 Contrasting  
   
-- [☀️👿 The Noonday Demon: An Atlas of Depression](./the-noonday-demon-an-atlas-of-depression.md) by Andrew Solomon examines depression through a deeply clinical and personal lens that often requires pharmacological intervention beyond lifestyle changes.  
+- [☀️👿 The Noonday Demon: An Atlas of Depression](/content/books/the-noonday-demon-an-atlas-of-depression.md) by Andrew Solomon examines depression through a deeply clinical and personal lens that often requires pharmacological intervention beyond lifestyle changes.  
 - 🧬 Blueprint by Robert Plomin argues that DNA is the primary factor in shaping our psychological traits rather than environmental habits.  
   
 ### 🎨 Creatively Related  
   
 - 🌲 The Nature Fix by Florence Williams investigates how spending time in the natural world impacts brain health and stress reduction.  
-- [😴💭 Why We Sleep: Unlocking the Power of Sleep and Dreams](./why-we-sleep-unlocking-the-power-of-sleep-and-dreams.md) by Matthew Walker details how rest is the essential partner to physical activity for consolidating memory and clearing brain toxins.  
+- [😴💭 Why We Sleep: Unlocking the Power of Sleep and Dreams](/content/books/why-we-sleep-unlocking-the-power-of-sleep-and-dreams.md) by Matthew Walker details how rest is the essential partner to physical activity for consolidating memory and clearing brain toxins.  
   
-* **Best Alternate Book (Same Topic):** [🧠💡📈🏠🏢🧑‍🎓 Brain Rules: 12 Principles for Surviving and Thriving at Work, Home, and School](./brain-rules-12-principles-for-surviving-and-thriving-at-work-home-and-school.md) by John Medina. This book provides a broader overview of brain function, including the role of exercise. 🧠  
-* **Best Tangentially Related Book:** [🤔🐇🐢 Thinking, Fast and Slow](./thinking-fast-and-slow.md) by Daniel Kahneman. Explores the cognitive biases and limitations of the human mind, providing a complementary perspective on brain function. 🤯  
-* **Best Diametrically Opposed Book:** [🔋📈 The Power of Full Engagement: Managing Energy, Not Time, Is the Key to High Performance and Personal Renewal](./the-power-of-full-engagement-managing-energy-not-time-is-the-key-to-high-performance-and-personal-renewal.md) by Jim Loehr and Tony Schwartz. This book focuses on managing energy rather than strictly exercise, though it does include exercise as a component. ⚡  
+* **Best Alternate Book (Same Topic):** [🧠💡📈🏠🏢🧑‍🎓 Brain Rules: 12 Principles for Surviving and Thriving at Work, Home, and School](/content/books/brain-rules-12-principles-for-surviving-and-thriving-at-work-home-and-school.md) by John Medina. This book provides a broader overview of brain function, including the role of exercise. 🧠  
+* **Best Tangentially Related Book:** [🤔🐇🐢 Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md) by Daniel Kahneman. Explores the cognitive biases and limitations of the human mind, providing a complementary perspective on brain function. 🤯  
+* **Best Diametrically Opposed Book:** [🔋📈 The Power of Full Engagement: Managing Energy, Not Time, Is the Key to High Performance and Personal Renewal](/content/books/the-power-of-full-engagement-managing-energy-not-time-is-the-key-to-high-performance-and-personal-renewal.md) by Jim Loehr and Tony Schwartz. This book focuses on managing energy rather than strictly exercise, though it does include exercise as a component. ⚡  
 * **Best Fiction Book (Related Ideas):** Flowers for Algernon by Daniel Keyes. Explores the ethical implications of enhancing cognitive abilities, although through artificial means rather than exercise. 🌼  
-* **Best More General Book:** [🤕🎼🧠 The Body Keeps the Score: Brain, Mind, and Body in the Healing of Trauma](./the-body-keeps-the-score-brain-mind-and-body-in-the-healing-of-trauma.md) by Bessel van der Kolk. This book explores the effects of trauma on the brain and body, and includes information about exercise as a healing tool. 🤕  
+* **Best More General Book:** [🤕🎼🧠 The Body Keeps the Score: Brain, Mind, and Body in the Healing of Trauma](/content/books/the-body-keeps-the-score-brain-mind-and-body-in-the-healing-of-trauma.md) by Bessel van der Kolk. This book explores the effects of trauma on the brain and body, and includes information about exercise as a healing tool. 🤕  
 * **Best More Specific Book:** Younger Next Year by Chris Crowley and Henry S. Lodge. This book offers a very specific exercise and lifestyle plan for aging well. 👴  
 * **Best More Rigorous Book:** Principles of Neural Science by Eric R. Kandel, James H. Schwartz, and Thomas M. Jessell. A comprehensive textbook on neuroscience, providing a deeper dive into the mechanisms of brain function. 📚  
 * **Best More Accessible Book:** The Brain's Way of Healing by Norman Doidge. Doidge's book is very accessible and covers neuroplasticity, with some exercise related information. 🩹

@@ -10,7 +10,7 @@ Channel: LastWeekTonight
 tags:
 youtube: https://youtube.com/embed/SLVL_wg3Hz0
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md)  
 # 🍊🤡😈 Trump & Epstein Last Week Tonight  
 ![Trump & Epstein #lastweektonight](https://youtube.com/embed/SLVL_wg3Hz0)  
   
@@ -54,8 +54,8 @@ youtube: https://youtube.com/embed/SLVL_wg3Hz0
   
 ### ↔️ Similar  
   
-* [🏦👨‍💼💥 Dark Towers: Deutsche Bank, Donald Trump, and an Epic Trail of Destruction](../books/dark-towers-deutsche-bank-donald-trump-and-an-epic-trail-of-destruction.md) by David Enrich: 💰 Focuses on the financial scrutiny and powerful connections of Trump, similar to the Epstein controversy.  
-* [⚖️😈🔞 Perversion of Justice: The Jeffrey Epstein Story](../books/perversion-of-justice-the-jeffrey-epstein-story.md) by Julie K. Brown: ⚖️ Details the original Epstein investigation, plea deal, and his powerful network, offering crucial context.  
+* [🏦👨‍💼💥 Dark Towers: Deutsche Bank, Donald Trump, and an Epic Trail of Destruction](/content/books/dark-towers-deutsche-bank-donald-trump-and-an-epic-trail-of-destruction.md) by David Enrich: 💰 Focuses on the financial scrutiny and powerful connections of Trump, similar to the Epstein controversy.  
+* [⚖️😈🔞 Perversion of Justice: The Jeffrey Epstein Story](/content/books/perversion-of-justice-the-jeffrey-epstein-story.md) by Julie K. Brown: ⚖️ Details the original Epstein investigation, plea deal, and his powerful network, offering crucial context.  
   
 ### 🆚 Contrasting  
   

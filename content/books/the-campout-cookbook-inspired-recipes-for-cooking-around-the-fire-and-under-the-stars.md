@@ -7,7 +7,7 @@ share: true
 affiliate link: https://amzn.to/46Lj4dS
 CTA: 🔥 Savor the outdoors.
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # ⛺🔥 The Campout Cookbook: Inspired Recipes for Cooking Around the Fire and Under the Stars  
 [🛒 The Campout Cookbook: Inspired Recipes for Cooking Around the Fire and Under the Stars. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/46Lj4dS)  
   

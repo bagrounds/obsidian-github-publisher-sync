@@ -10,7 +10,7 @@ Channel: Heather Cox Richardson
 tags:
 youtube: https://youtu.be/gkFxD-CMlZM
 ---
-[Home](../index.md) > [Videos](./index.md) | [🏛️🇺🇸📖 Heather Cox Richardson](../people/heather-cox-richardson.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md) | [🏛️🇺🇸📖 Heather Cox Richardson](/content/people/heather-cox-richardson.md)  
 # 📜🇺🇸🗽➡️ The Declaration of Independence | Journey to American Democracy  
 ![The Declaration of Independence | Journey to American Democracy](https://youtu.be/gkFxD-CMlZM)  
   
@@ -46,7 +46,7 @@ The specific issues covered include:
   
 ## 📚 Book Recommendations  
 - 📖 **For Understanding the Philosophical Principles:**  
-    - **[🧠💡 Common Sense](../books/common-sense.md)** **by Thomas Paine:** A powerful and widely read pamphlet that advocated for American independence, laying out many of the arguments against British rule and for self-governance. It significantly influenced public opinion.  
+    - **[🧠💡 Common Sense](/content/books/common-sense.md)** **by Thomas Paine:** A powerful and widely read pamphlet that advocated for American independence, laying out many of the arguments against British rule and for self-governance. It significantly influenced public opinion.  
   
     - 📜 **_Two Treatises of Government_** **by John Locke:** While written earlier, Locke's philosophy on natural rights, social contract theory, and the right to revolution profoundly influenced the Declaration of Independence. Reading this provides a deeper understanding of the intellectual foundations.  
   
@@ -67,6 +67,6 @@ The specific issues covered include:
     - 📜 **_Benjamin Franklin: An American Life_** **by Walter Isaacson:** This biography covers the remarkable life of Benjamin Franklin, a prominent figure in the Continental Congress and one of the signers of the Declaration, showcasing his contributions as a statesman, diplomat, and intellectual.  
   
 - 📖 **For Understanding the Aftermath and Impact:**  
-    - **[🇺🇸📜 The Federalist Papers](../books/the-federalist-papers.md)** **by Alexander Hamilton, James Madison, and John Jay:** While written to advocate for the ratification of the Constitution, these essays provide crucial insight into the political philosophy and challenges facing the new nation after independence, building upon the principles articulated in the Declaration.  
+    - **[🇺🇸📜 The Federalist Papers](/content/books/the-federalist-papers.md)** **by Alexander Hamilton, James Madison, and John Jay:** While written to advocate for the ratification of the Constitution, these essays provide crucial insight into the political philosophy and challenges facing the new nation after independence, building upon the principles articulated in the Declaration.  
   
     - 📜 **_Miracle at Philadelphia: The Story of the Constitutional Convention, May to September 1787_** **by Catherine Drinker Bowen:** This book details the drafting of the U.S. Constitution, which was the ultimate manifestation of the independent government that the Declaration called for. It illustrates how the ideals of the Declaration were put into practice.".

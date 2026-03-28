@@ -49,13 +49,6 @@ jobs:
       - name: Install Obsidian Headless CLI
         run: npm install -g obsidian-headless
 
-      - name: Cache Obsidian Vault
-        uses: actions/cache@v4
-        with:
-          path: /tmp/obsidian-vault-cache
-          key: obsidian-vault-${{ github.run_id }}
-          restore-keys: obsidian-vault-
-
       - name: Download pre-built run-scheduled binary
         env:
           GH_TOKEN: ${{ github.token }}
@@ -75,7 +68,6 @@ jobs:
           OBSIDIAN_AUTH_TOKEN: ${{ secrets.OBSIDIAN_AUTH_TOKEN }}
           OBSIDIAN_VAULT_NAME: ${{ secrets.OBSIDIAN_VAULT_NAME }}
           OBSIDIAN_VAULT_PASSWORD: ${{ secrets.OBSIDIAN_VAULT_PASSWORD }}
-          OBSIDIAN_VAULT_CACHE_DIR: /tmp/obsidian-vault-cache
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}

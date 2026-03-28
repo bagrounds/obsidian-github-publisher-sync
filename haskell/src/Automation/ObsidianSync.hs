@@ -10,6 +10,7 @@ module Automation.ObsidianSync
   , runObSyncWithRetry
   , syncObsidianVault
   , pushObsidianVault
+  , writeEmbedsToNote
   , appendEmbedsToObsidianNote
   , countVaultFiles
   , vaultFileCountPath
@@ -34,14 +35,11 @@ import System.Exit (ExitCode (..))
 import System.FilePath ((</>))
 import System.Posix.Process (getProcessID)
 import System.Process
-  ( CreateProcess (..)
-  , StdStream (..)
-  , createProcess
-  , proc
+  ( proc
   , readProcess
   , readCreateProcessWithExitCode
   , readProcessWithExitCode
-  , waitForProcess
+  , CreateProcess (..)
   )
 
 data ObsidianCredentials = ObsidianCredentials
@@ -146,51 +144,12 @@ runObSyncWithRetry args env vaultDir maxRetries = go 0
               go (attempt + 1)
             _ -> throwIO err
 
-syncObsidianVault :: ObsidianCredentials -> Maybe FilePath -> IO FilePath
-syncObsidianVault creds mCacheDir = do
-  let vaultDir = case mCacheDir of
-        Just d  -> d
-        Nothing -> "obsidian-vault-sync"
-
-  let isWarmCache = case mCacheDir of
-        Just _ -> True
-        Nothing -> False
-
-  createDirectoryIfMissing True vaultDir
-
-  warmCacheValid <- case isWarmCache of
-    True  -> doesDirectoryExist (vaultDir </> ".obsidian")
-    False -> pure False
-
-  let env = [("OBSIDIAN_AUTH_TOKEN", T.unpack $ ocAuthToken creds)]
-
-  ensureSyncClean vaultDir
-
-  case warmCacheValid of
-    True -> do
-      putStrLn $ "♻️  Re-using cached vault at " <> vaultDir <> " (incremental sync)"
-      putStrLn "📥 Pulling latest vault content (warm cache fast path)..."
-      result <- try $ runObSyncWithRetry ["sync", "--path", vaultDir] env vaultDir 5 :: IO (Either SomeException ())
-      case result of
-        Right () -> do
-          fileCount <- countVaultFiles vaultDir
-          putStrLn $ "📊 Vault file count after pull: " <> show fileCount
-          writeFile (vaultFileCountPath vaultDir) (show fileCount)
-          pure vaultDir
-        Left err -> do
-          let msg = show err
-              needsSetup = any (`T.isInfixOf` T.pack msg)
-                [ "No sync configuration"
-                , "Encryption key not found"
-                , "sync-setup"
-                ]
-          case needsSetup of
-            True -> do
-              putStrLn "⚠️ Warm cache missing config, falling back to sync-setup..."
-              ensureSyncClean vaultDir
-              coldCacheSync creds vaultDir env
-            False -> throwIO err
-    False -> coldCacheSync creds vaultDir env
+syncObsidianVault :: ObsidianCredentials -> IO FilePath
+syncObsidianVault creds = do
+  pid <- show <$> getProcessID
+  let vaultDir = "/tmp/obsidian-vault-" <> pid
+      env = [("OBSIDIAN_AUTH_TOKEN", T.unpack $ ocAuthToken creds)]
+  coldCacheSync creds vaultDir env
 
 coldCacheSync :: ObsidianCredentials -> FilePath -> [(String, String)] -> IO FilePath
 coldCacheSync creds vaultDir env = do
@@ -281,23 +240,25 @@ countFilesRecursive dir = do
 vaultFileCountPath :: FilePath -> FilePath
 vaultFileCountPath vaultDir = vaultDir </> ".vault-sync-file-count"
 
-appendEmbedsToObsidianNote :: FilePath -> [(Text, Text, Text -> Text -> Text)] -> ObsidianCredentials -> IO ()
-appendEmbedsToObsidianNote notePath sections creds = do
-  vaultDir <- syncObsidianVault creds Nothing
-  let filePath = vaultDir </> notePath
+writeEmbedsToNote :: FilePath -> [(Text, Text, Text -> Text -> Text)] -> IO ()
+writeEmbedsToNote filePath sections = do
   exists <- doesFileExist filePath
   case exists of
-    False -> throwIO $ userError $ "Note not found in Obsidian vault: " <> notePath <> " (looked at " <> filePath <> ")"
+    False -> putStrLn $ "⚠️ Note not found, skipping embed write: " <> filePath
     True -> do
       content <- TIO.readFile filePath
-      let (modified, newContent) = foldr (applySection content) (False, content) sections
+      let (modified, newContent) = foldr applySection (False, content) sections
       case modified of
-        False -> putStrLn "No new sections to add to Obsidian note"
-        True -> do
-          TIO.writeFile filePath newContent
-          pushObsidianVault vaultDir (ocAuthToken creds)
+        False -> putStrLn "No new sections to add to note"
+        True -> TIO.writeFile filePath newContent
   where
-    applySection _origContent (header, embedHtml, buildSection) (anyMod, currentContent) =
+    applySection (header, embedHtml, buildSection) (anyMod, currentContent) =
       case T.isInfixOf header currentContent of
         True  -> (anyMod, currentContent)
         False -> (True, currentContent <> buildSection currentContent embedHtml)
+
+appendEmbedsToObsidianNote :: FilePath -> [(Text, Text, Text -> Text -> Text)] -> ObsidianCredentials -> IO ()
+appendEmbedsToObsidianNote notePath sections creds = do
+  vaultDir <- syncObsidianVault creds
+  writeEmbedsToNote (vaultDir </> notePath) sections
+  pushObsidianVault vaultDir (ocAuthToken creds)

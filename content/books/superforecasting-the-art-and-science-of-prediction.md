@@ -10,7 +10,7 @@ force_analyze_links: false
 link_analysis_time: 2026-03-22T23:35:08.563Z
 link_analysis_model: gemini-3.1-flash-lite-preview
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🔮🎨🔬 Superforecasting: The Art and Science of Prediction  
 [🛒 Superforecasting: The Art and Science of Prediction. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3SzzP46)  
   
@@ -64,34 +64,34 @@ link_analysis_model: gemini-3.1-flash-lite-preview
   
 ### 🤔 Similar Themes (Decision Making, Probabilistic Thinking, Cognitive Bias)  
   
-* **[🤔🐇🐢 Thinking, Fast and Slow](./thinking-fast-and-slow.md)** by Daniel Kahneman: Foundational work on cognitive biases (System 1 vs. System 2 thinking) by a Nobel laureate 🏆 whose work influenced Tetlock.  
-* **[📡🌫️🔮🎲 The Signal and the Noise: Why So Many Predictions Fail - but Some Don't](./the-signal-and-the-noise.md)** by Nate Silver: Explores separating true signals from noise in data across various fields (politics, sports, weather) 🌦️, emphasizing Bayesian thinking and probabilistic approaches. 📊  
+* **[🤔🐇🐢 Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md)** by Daniel Kahneman: Foundational work on cognitive biases (System 1 vs. System 2 thinking) by a Nobel laureate 🏆 whose work influenced Tetlock.  
+* **[📡🌫️🔮🎲 The Signal and the Noise: Why So Many Predictions Fail - but Some Don't](/content/books/the-signal-and-the-noise.md)** by Nate Silver: Explores separating true signals from noise in data across various fields (politics, sports, weather) 🌦️, emphasizing Bayesian thinking and probabilistic approaches. 📊  
 * 🧑‍⚖️ **Expert Political Judgment: How Good Is It? How Can We Know?** by Philip E. Tetlock: Tetlock's earlier, more academic work that laid the groundwork for *Superforecasting*, detailing the original research on expert prediction accuracy (or lack thereof) and the fox/hedgehog distinction. 🦊  
-* **[👉🤏 Nudge: Improving Decisions about Health, Wealth, and Happiness](./nudge.md)** by Richard Thaler and Cass Sunstein: Focuses on choice architecture and how understanding behavioral economics can help design environments that lead to better decisions. ✅  
-* **[📏🌌 How to Measure Anything: Finding the Value of Intangibles in Business](./how-to-measure-anything.md)** by Douglas W. Hubbard: Practical guide on quantification, risk analysis, and making better decisions when faced with uncertainty, echoing the numeracy theme. 🔢  
+* **[👉🤏 Nudge: Improving Decisions about Health, Wealth, and Happiness](/content/books/nudge.md)** by Richard Thaler and Cass Sunstein: Focuses on choice architecture and how understanding behavioral economics can help design environments that lead to better decisions. ✅  
+* **[📏🌌 How to Measure Anything: Finding the Value of Intangibles in Business](/content/books/how-to-measure-anything.md)** by Douglas W. Hubbard: Practical guide on quantification, risk analysis, and making better decisions when faced with uncertainty, echoing the numeracy theme. 🔢  
 * 🔄 **Think Again: The Power of Knowing What You Don't Know** by Adam Grant: Explores the importance of intellectual humility 🙏, rethinking assumptions, and embracing being wrong ❌ – key traits of superforecasters.  
-* **[🙉📢😵‍💫🔇 Noise: A Flaw in Human Judgment](./noise.md)** by Daniel Kahneman, Olivier Sibony, and Cass R. Sunstein: Examines inconsistency ("noise") in judgments and decisions, complementing the focus on bias in *Thinking, Fast and Slow*.  
-* **[🚫❌🧮💭 How Not to Be Wrong: The Power of Mathematical Thinking](./how-not-to-be-wrong.md)** by Jordan Ellenberg: Shows how mathematical thinking illuminates real-world issues, reinforcing the value of numeracy and analytical approaches. 🔢  
+* **[🙉📢😵‍💫🔇 Noise: A Flaw in Human Judgment](/content/books/noise.md)** by Daniel Kahneman, Olivier Sibony, and Cass R. Sunstein: Examines inconsistency ("noise") in judgments and decisions, complementing the focus on bias in *Thinking, Fast and Slow*.  
+* **[🚫❌🧮💭 How Not to Be Wrong: The Power of Mathematical Thinking](/content/books/how-not-to-be-wrong.md)** by Jordan Ellenberg: Shows how mathematical thinking illuminates real-world issues, reinforcing the value of numeracy and analytical approaches. 🔢  
   
 ### ↔️ Contrasting Perspectives (Limits of Prediction, Intuition, Narrative)  
   
-* **[⚫🦢🎲 The Black Swan: The Impact of the Highly Improbable](./the-black-swan-the-impact-of-the-highly-improbable.md)** by Nassim Nicholas Taleb: Argues that history is dominated by rare, unpredictable, high-impact "black swan" events 🦢 that quantitative models often miss, challenging the focus on predicting based on past data. 🗓️  
-* **[📉📈🌪️💪 Antifragile: Things That Gain from Disorder](./antifragile-things-that-gain-from-disorder.md)** by Nassim Nicholas Taleb: Extends the ideas in *The Black Swan*, focusing on building systems that benefit from volatility and uncertainty, rather than trying to predict and prevent every shock. ⚡  
+* **[⚫🦢🎲 The Black Swan: The Impact of the Highly Improbable](/content/books/the-black-swan-the-impact-of-the-highly-improbable.md)** by Nassim Nicholas Taleb: Argues that history is dominated by rare, unpredictable, high-impact "black swan" events 🦢 that quantitative models often miss, challenging the focus on predicting based on past data. 🗓️  
+* **[📉📈🌪️💪 Antifragile: Things That Gain from Disorder](/content/books/antifragile-things-that-gain-from-disorder.md)** by Nassim Nicholas Taleb: Extends the ideas in *The Black Swan*, focusing on building systems that benefit from volatility and uncertainty, rather than trying to predict and prevent every shock. ⚡  
 * 🗣️ **Future Babble: Why Expert Predictions Fail – And Why We Believe Them Anyway** by Dan Gardner: Gardner's earlier book (which drew heavily on Tetlock's *Expert Political Judgment*) critiquing punditry and poor forecasting, though *Superforecasting* offers the constructive "how-to" follow-up.  
 * 🔮 *(Potentially)* Books emphasizing qualitative foresight, scenario planning for deep uncertainty, or intuition-based decision-making (though *Superforecasting* doesn't dismiss intuition entirely, it grounds it in analysis). 🧠  
   
 ### 🎨 Creatively Related (Learning, Strategy, Complexity, Specific Domains)  
   
-* **[🌐🔭🎨🧩👨‍🎓 Range: Why Generalists Triumph in a Specialized World](./range.md)** by David Epstein: Makes a case for breadth of experience and interdisciplinary thinking, resonating with the "foxy" approach of drawing on diverse knowledge. 🦊  
-* **[🌱🧘🏼‍♀️🏆 Mindset: The New Psychology of Success](./mindset.md)** by Carol S. Dweck: Explores the "growth mindset" identified as crucial for superforecasters.  
-* **[🃏🎲 Fooled by Randomness: The Hidden Role of Chance in Life and in the Markets](books/fooled-by-randomness-the-hidden-role-of-chance-in-life-and-in-the-markets.md)** by Nassim Nicholas Taleb: Explores the role of luck and randomness, particularly in finance, cautioning against attributing success solely to skill.  
-* **[🎲🤔 Thinking in Bets: Making Smarter Decisions When You Don't Have All the Facts](books/thinking-in-bets-making-smarter-decisions-when-you-dont-have-all-the-facts.md)** by Annie Duke: A former professional poker player applies principles of probabilistic thinking and decision-making under uncertainty to life and business. 💼  
+* **[🌐🔭🎨🧩👨‍🎓 Range: Why Generalists Triumph in a Specialized World](/content/books/range.md)** by David Epstein: Makes a case for breadth of experience and interdisciplinary thinking, resonating with the "foxy" approach of drawing on diverse knowledge. 🦊  
+* **[🌱🧘🏼‍♀️🏆 Mindset: The New Psychology of Success](/content/books/mindset.md)** by Carol S. Dweck: Explores the "growth mindset" identified as crucial for superforecasters.  
+* **[🃏🎲 Fooled by Randomness: The Hidden Role of Chance in Life and in the Markets](/content/books/fooled-by-randomness-the-hidden-role-of-chance-in-life-and-in-the-markets.md)** by Nassim Nicholas Taleb: Explores the role of luck and randomness, particularly in finance, cautioning against attributing success solely to skill.  
+* **[🎲🤔 Thinking in Bets: Making Smarter Decisions When You Don't Have All the Facts](/content/books/thinking-in-bets-making-smarter-decisions-when-you-dont-have-all-the-facts.md)** by Annie Duke: A former professional poker player applies principles of probabilistic thinking and decision-making under uncertainty to life and business. 💼  
 * 📜 **Poor Charlie's Almanack: The Wit and Wisdom of Charles T. Munger** edited by Peter D. Kaufman: Collection of talks and essays from Charlie Munger, emphasizing multidisciplinary thinking, mental models, and avoiding cognitive errors in investing and life.  
 * 🌀 Books on Complexity Theory or Systems Thinking: Explore the dynamics of complex systems where traditional forecasting might be limited.  
 * 🕵️ Books on Intelligence Analysis or Strategic Thinking: Such as works published by the CIA on analysis techniques or books on military strategy, offering different frameworks for dealing with uncertainty.  
 * 📊 Domain-Specific Forecasting Books: e.g., books on financial market forecasting, climate modeling 🌍, or technological forecasting, applying similar principles within specific fields.  
   
-## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
+## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Superforecasting: The Art and Science of Prediction. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.  
   
 ## 🦋 Bluesky    

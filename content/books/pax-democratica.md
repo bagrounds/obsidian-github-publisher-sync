@@ -8,7 +8,7 @@ Author:
 tags:
 affiliate link: https://amzn.to/4jCPhY6
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🏛️🤝🕊️ Pax Democratica: A Strategy for the 21st Century  
 by James Robert Huntley  
 [🛒 Pax Democratica: A Strategy for the 21st Century. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4jCPhY6)  

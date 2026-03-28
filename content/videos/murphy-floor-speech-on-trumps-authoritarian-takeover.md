@@ -10,7 +10,7 @@ Channel: Senator Chris Murphy
 tags:
 youtube: https://youtu.be/-MTtkaJvANI
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md)  
 # 🇺🇸👑🗣️ Murphy Floor Speech on Trump's Authoritarian Takeover  
 ![Murphy Floor Speech on Trump's Authoritarian Takeover](https://youtu.be/-MTtkaJvANI)  
   
@@ -73,9 +73,9 @@ youtube: https://youtu.be/-MTtkaJvANI
   
 ### **Similar**  
   
-* [🗳️🏛️☠️ How Democracies Die](../books/how-democracies-die.md) by Steven Levitsky and Daniel Ziblatt: ✍️ Explores how democracies perish not through military coups, but through the slow, legal-seeming erosion of democratic norms and institutions by elected leaders, a process closely paralleling the senator's argument.  
-* [👑🚫📜2️⃣0️⃣ On Tyranny: Twenty Lessons from the Twentieth Century](../books/on-tyranny.md) by Timothy Snyder: 💡 A concise set of lessons derived from 20th-century history on recognizing and resisting the incremental slide toward authoritarianism.  
-* [🇮🇹🇩🇪🇱🇾🇷🇺🇺🇸 Strongmen: Mussolini to the Present](../books/strongmen.md) by Ruth Ben-Ghiat: 🌍 Analyzes how authoritarian leaders across different eras and continents use propaganda, corruption, and loyalty tests to stay in power, offering historical parallels to the issues raised.  
+* [🗳️🏛️☠️ How Democracies Die](/content/books/how-democracies-die.md) by Steven Levitsky and Daniel Ziblatt: ✍️ Explores how democracies perish not through military coups, but through the slow, legal-seeming erosion of democratic norms and institutions by elected leaders, a process closely paralleling the senator's argument.  
+* [👑🚫📜2️⃣0️⃣ On Tyranny: Twenty Lessons from the Twentieth Century](/content/books/on-tyranny.md) by Timothy Snyder: 💡 A concise set of lessons derived from 20th-century history on recognizing and resisting the incremental slide toward authoritarianism.  
+* [🇮🇹🇩🇪🇱🇾🇷🇺🇺🇸 Strongmen: Mussolini to the Present](/content/books/strongmen.md) by Ruth Ben-Ghiat: 🌍 Analyzes how authoritarian leaders across different eras and continents use propaganda, corruption, and loyalty tests to stay in power, offering historical parallels to the issues raised.  
   
 ### **Contrasting**  
   

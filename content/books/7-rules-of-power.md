@@ -7,7 +7,7 @@ share: true
 affiliate link: https://amzn.to/43Np5En
 CTA: 🚀 Master influence.
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 7️⃣📏👑 7 Rules of Power: Surprising - but True - Advice on How to Get Things Done and Advance Your Career  
 [🛒 7️⃣📏👑 7 Rules of Power: Surprising - but True - Advice on How to Get Things Done and Advance Your Career. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/43Np5En)  
   
@@ -41,19 +41,19 @@ Pfeffer outlines seven rules for building and using power:
 ## 📚 Book Recommendations  
   
 ### 💪 Similar Reads (Power & Strategy)  
-* 📚 **[👑💪🏽⁉️ Power: Why Some People Have It - and Others Don't](./power-why-some-people-have-it-and-others-dont.md)** by Jeffrey Pfeffer: ✍️ Pfeffer's earlier work covers similar ground, offering a foundational overview of power dynamics in organizations.  
-* 📚 **[The 48 Laws of Power](./the-48-laws-of-power.md)** by Robert Greene: 📜 A widely known, historical, and often controversial guide to power dynamics, though some find Pfeffer's work more grounded in modern social science. 👍 Pfeffer's work is sometimes seen as a better alternative for those finding Greene too "😈 evil" or manipulative.  
-* 📚 **[Influence](./influence.md): The Psychology of Persuasion** by Robert B. Cialdini: 🧠 A classic text exploring the psychological principles behind persuasion and influence. ✍️ Pfeffer's work cites Cialdini.  
+* 📚 **[👑💪🏽⁉️ Power: Why Some People Have It - and Others Don't](/content/books/power-why-some-people-have-it-and-others-dont.md)** by Jeffrey Pfeffer: ✍️ Pfeffer's earlier work covers similar ground, offering a foundational overview of power dynamics in organizations.  
+* 📚 **[The 48 Laws of Power](/content/books/the-48-laws-of-power.md)** by Robert Greene: 📜 A widely known, historical, and often controversial guide to power dynamics, though some find Pfeffer's work more grounded in modern social science. 👍 Pfeffer's work is sometimes seen as a better alternative for those finding Greene too "😈 evil" or manipulative.  
+* 📚 **[Influence](/content/books/influence.md): The Psychology of Persuasion** by Robert B. Cialdini: 🧠 A classic text exploring the psychological principles behind persuasion and influence. ✍️ Pfeffer's work cites Cialdini.  
 * 📚 **The Prince** by Niccolò Machiavelli: 👑 The seminal work on acquiring and maintaining political power, focusing on realism over idealism.  
 * 📚 **Managing With Power: Politics and Influence in Organizations** by Jeffrey Pfeffer: 🏢 Another key text by Pfeffer focusing on organizational politics.  
-* 📚 **[The Dictator's Handbook: Why Bad Behavior Is Almost Always Good Politics](./the-dictators-handbook.md)** by Bruce Bueno de Mesquita & Alastair Smith: 😈 Analyzes how leaders gain and retain power, often through self-interested behavior.  
+* 📚 **[The Dictator's Handbook: Why Bad Behavior Is Almost Always Good Politics](/content/books/the-dictators-handbook.md)** by Bruce Bueno de Mesquita & Alastair Smith: 😈 Analyzes how leaders gain and retain power, often through self-interested behavior.  
   
 ### 🤝 Contrasting Perspectives (Ethics & Collaboration)  
 * 📚 **Power, for All: How It Really Works and Why It's Everyone's Business** by Julie Battilana & Tiziana Casciaro: 🤝 Offers a contrasting view, arguing that humility and warmth can increase a leader's power and focusing on collective empowerment.  
 * 📚 **Give and Take: Why Helping Others Drives Our Success** by Adam Grant: 😇 Argues that "givers" often achieve more long-term success than "takers," contrasting with a purely self-interested approach to power.  
 * 📚 **Dare to Lead** by Brené Brown: 🛡️ Champions vulnerability, courage, and empathy as key leadership strengths, directly opposing Pfeffer's skepticism about showing vulnerability.  
-* **[❓🎯 Start with Why: How Great Leaders Inspire Everyone to Take Action](./start-with-why-how-great-leaders-inspire-everyone-to-take-action.md)** by Simon Sinek: 🎯 Focuses on purpose-driven leadership and inspiration rather than purely strategic power plays.  
-* **[👤📈🎯🌟🔑🤝🏆 The 7 Habits of Highly Effective People](./the-7-habits-of-highly-effective-people.md)** by Stephen Covey: 🌟 Emphasizes principle-centered leadership, integrity, and collaboration (win-win thinking).  
+* **[❓🎯 Start with Why: How Great Leaders Inspire Everyone to Take Action](/content/books/start-with-why-how-great-leaders-inspire-everyone-to-take-action.md)** by Simon Sinek: 🎯 Focuses on purpose-driven leadership and inspiration rather than purely strategic power plays.  
+* **[👤📈🎯🌟🔑🤝🏆 The 7 Habits of Highly Effective People](/content/books/the-7-habits-of-highly-effective-people.md)** by Stephen Covey: 🌟 Emphasizes principle-centered leadership, integrity, and collaboration (win-win thinking).  
   
 ### ✨ Creatively Related (Illustrations & Explorations)  
 * 👤 **Biographies of Powerful Figures:** 📚 Studying lives like 🇺🇸 Abraham Lincoln, 🇬🇧 Winston Churchill, ✊🏿 Malcolm X, 🚧 Robert Moses, or 🍎 Steve Jobs can provide nuanced case studies of power in action.  
@@ -62,7 +62,7 @@ Pfeffer outlines seven rules for building and using power:
     * 📚 *Abraham Lincoln: A Life* by Michael Burlingame  
     * 📚 *The Autobiography of Malcolm X* as told to Alex Haley  
 * 🎭 **Fiction Exploring Power Dynamics:** 📖 Novels can vividly illustrate the complexities of power, ambition, and influence.  
-    * [🏜️🐛 Dune](./dune.md) by Frank Herbert  
+    * [🏜️🐛 Dune](/content/books/dune.md) by Frank Herbert  
     * 📚 *A Song of Ice and Fire* series by George R.R. Martin  
     * 📚 *Macbeth* by William Shakespeare  
     * 📚 *The Broken Earth* trilogy by N.K. Jemisin  
@@ -71,5 +71,5 @@ Pfeffer outlines seven rules for building and using power:
     * 📚 *History of the Peloponnesian War* by Thucydides  
     * 📚 *The Post-American World* by Fareed Zakaria  
   
-## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
+## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on 7 Rules of Power. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

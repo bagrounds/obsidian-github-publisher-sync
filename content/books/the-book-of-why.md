@@ -8,7 +8,7 @@ Author:
 tags:
 affiliate link: https://amzn.to/4dNzsfR
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # ❓➡️💡 The Book of Why: The New Science of Cause and Effect  
 [🛒 The Book of Why: The New Science of Cause and Effect. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4dNzsfR)  
   
@@ -58,13 +58,13 @@ affiliate link: https://amzn.to/4dNzsfR
   
 ### Book Recommendations 📚  
 * **Best Alternate Book on the Same Topic:** "Causal Inference: The Mixtape" by Scott Cunningham. 🎧 This book provides a more accessible and practical introduction to causal inference, with a focus on real-world applications.  
-* **Best Tangentially Related Book:** "[Thinking, Fast and Slow](./thinking-fast-and-slow.md)" by Daniel Kahneman. 🧠 This book explores the cognitive biases and heuristics that can interfere with rational decision-making, including causal reasoning.  
+* **Best Tangentially Related Book:** "[Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md)" by Daniel Kahneman. 🧠 This book explores the cognitive biases and heuristics that can interfere with rational decision-making, including causal reasoning.  
 * **Best Diametrically Opposed Book:** "Big Data: A Revolution That Will Transform How We Live, Work, and Think" by Viktor Mayer-Schönberger and Kenneth Cukier. 📊 While not directly opposed, it represents the pure data driven mindset that Pearl critiques.  
 * **Best Fiction Book That Incorporates Related Ideas:** "Recursion" by Blake Crouch. 🌀 This science fiction thriller explores the consequences of manipulating memory and reality, raising questions about causality and counterfactuals.  
-* **Best More General Book:** "[Factfulness](./factfulness.md): Ten Reasons We're Wrong About the World—And Why Things Are Better Than You Think" by Hans Rosling. 🌍 This book emphasizes the importance of data and evidence-based reasoning, which is a broader context for causal analysis.  
+* **Best More General Book:** "[Factfulness](/content/books/factfulness.md): Ten Reasons We're Wrong About the World—And Why Things Are Better Than You Think" by Hans Rosling. 🌍 This book emphasizes the importance of data and evidence-based reasoning, which is a broader context for causal analysis.  
 * **Best More Specific Book:** "Causal Inference in Statistics: A Primer" by Judea Pearl, Madelyn Glymour, and Nicholas P. Jewell. 📖 This book provides a more technical and in-depth treatment of causal inference, suitable for readers with a strong background in statistics.  
-* **Best More Rigorous Book:** [❓➡️💡🧮 Elements of Causal Inference: Foundations and Learning Algorithms](./elements-of-causal-inference-foundations-and-learning-algorithms.md) by Jonas Peters, Dominik Janzing, and Bernhard Schölkopf. 📈 This book is a very technical, mathematically dense text.  
-* **Best More Accessible Book:** "[Naked Statistics](./naked-statistics.md): Stripping the Dread from the Data" by Charles Wheelan. 📊 This book makes statistics more approachable, and provides a good foundation for understanding the need for causal analysis.  
+* **Best More Rigorous Book:** [❓➡️💡🧮 Elements of Causal Inference: Foundations and Learning Algorithms](/content/books/elements-of-causal-inference-foundations-and-learning-algorithms.md) by Jonas Peters, Dominik Janzing, and Bernhard Schölkopf. 📈 This book is a very technical, mathematically dense text.  
+* **Best More Accessible Book:** "[Naked Statistics](/content/books/naked-statistics.md): Stripping the Dread from the Data" by Charles Wheelan. 📊 This book makes statistics more approachable, and provides a good foundation for understanding the need for causal analysis.  
   
 ## 💬 [Gemini](https://gemini.google.com) Prompt  
 > Summarize the book: The Book of Why. Start with a TL;DR - a single statement that conveys a maximum of the useful information provided in the book. Next, explain how this book may offer a new or surprising perspective. Follow this with a deep dive. Catalogue the topics, methods, and research discussed. Be sure to highlight any significant theories, theses, or mental models proposed. Emphasize practical takeaways, including detailed, specific, concrete, step-by-step advice, guidance, or techniques discussed. Provide a critical analysis of the quality of the information presented, using scientific backing, author credentials, authoritative reviews, and other markers of high quality information as justification. Make the following additional book recommendations: the best alternate book on the same topic; the best book that is tangentially related; the best book that is diametrically opposed; the best fiction book that incorporates related ideas; the best book that is more general or more specific; and the best book that is more rigorous or more accessible than this book. Format your response as markdown, starting at heading level H3, with inline links, for easy copy paste. Use meaningful emojis generously (at least one per heading, bullet point, and paragraph) to enhance readability. Do not include broken links or links to commercial sites.

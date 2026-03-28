@@ -11,7 +11,7 @@ tags:
   - MMT
 youtube: https://youtu.be/cUTLCDBONok
 ---
-[Home](../index.md) > [Videos](./index.md) | [👨‍🏫📉💵 Warren Mosler](../people/warren-mosler.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md) | [👨‍🏫📉💵 Warren Mosler](/content/people/warren-mosler.md)  
 # 💰🇦🇹🆚📈 MMT vs. Austrian School Debate  
 ![MMT vs. Austrian School Debate](https://youtu.be/cUTLCDBONok)  
   
@@ -62,8 +62,8 @@ youtube: https://youtu.be/cUTLCDBONok
   
 ### ↔️ Similar  
   
-* **[💸😇 The 7 Deadly Innocent Frauds of Economic Policy](../books/the-7-deadly-innocent-frauds-of-economic-policy.md)** by Warren Mosler: 💡 This book provides an accessible introduction to MMT's core operational understandings of fiat currency, debt, and taxes, aligning closely with the MMT perspective in the debate.  
-* **[💰📉➡️📈🗳️ The Deficit Myth: Modern Monetary Theory and the Birth of the People's Economy](../books/the-deficit-myth.md)** by Stephanie Kelton: 🎯 A popular, high-profile explanation of MMT principles, focusing on how governments can leverage their sovereign currency power to fund public goals, similar to the MMT proposals discussed.  
+* **[💸😇 The 7 Deadly Innocent Frauds of Economic Policy](/content/books/the-7-deadly-innocent-frauds-of-economic-policy.md)** by Warren Mosler: 💡 This book provides an accessible introduction to MMT's core operational understandings of fiat currency, debt, and taxes, aligning closely with the MMT perspective in the debate.  
+* **[💰📉➡️📈🗳️ The Deficit Myth: Modern Monetary Theory and the Birth of the People's Economy](/content/books/the-deficit-myth.md)** by Stephanie Kelton: 🎯 A popular, high-profile explanation of MMT principles, focusing on how governments can leverage their sovereign currency power to fund public goals, similar to the MMT proposals discussed.  
   
 ### 🆚 Contrasting  
   
@@ -72,5 +72,5 @@ youtube: https://youtu.be/cUTLCDBONok
   
 ### 🎨 Creatively Related  
   
-* **[🏛️💰 Debt: The First 5,000 Years](../books/debt-the-first-5000-years.md)** by David Graeber: 📜 Explores the historical and anthropological origins of money as debt and a unit of account, lending intellectual depth to the Chartalist (state theory of money) foundation of MMT.  
+* **[🏛️💰 Debt: The First 5,000 Years](/content/books/debt-the-first-5000-years.md)** by David Graeber: 📜 Explores the historical and anthropological origins of money as debt and a unit of account, lending intellectual depth to the Chartalist (state theory of money) foundation of MMT.  
 * 📚 **Capitalism and Freedom** by Milton Friedman: 🗽 A highly influential work of classical liberal thought that champions free markets and advocates for limited government, offering a policy framework that strongly contrasts with the large-scale government programs proposed by MMT.

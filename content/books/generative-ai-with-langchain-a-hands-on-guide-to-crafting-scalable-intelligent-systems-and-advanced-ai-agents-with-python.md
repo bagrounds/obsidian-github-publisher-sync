@@ -9,7 +9,7 @@ affiliate link: https://amzn.to/4janMqg
 tags:
   - AIEngineering
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # ✨🤖🔗🐍 Generative AI with LangChain: A Hands On Guide to Crafting Scalable, Intelligent Systems and Advanced AI Agents with Python  
 [🛒 Generative AI with LangChain: A Hands On Guide to Crafting Scalable, Intelligent Systems and Advanced AI Agents with Python. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4janMqg)  
   
@@ -84,11 +84,11 @@ tags:
   
 ### ⬅️ Contrasting  
 * 📐 The Hundred-Page Machine Learning Book by Andriy Burkov (Theoretical ML foundations without specific framework focus)  
-* [🤔🐇🐢 Thinking, Fast and Slow](./thinking-fast-and-slow.md) by Daniel Kahneman (Human cognitive processes, contrasting with AI reasoning)  
-* [🧼💾 Clean Code: A Handbook of Agile Software Craftsmanship](./clean-code.md) by Robert C. Martin (General software engineering principles, less AI-specific)  
+* [🤔🐇🐢 Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md) by Daniel Kahneman (Human cognitive processes, contrasting with AI reasoning)  
+* [🧼💾 Clean Code: A Handbook of Agile Software Craftsmanship](/content/books/clean-code.md) by Robert C. Martin (General software engineering principles, less AI-specific)  
   
 ### 🔗 Related  
-* [🤖⚙️🔁 Designing Machine Learning Systems: An Iterative Process for Production-Ready Applications](./designing-machine-learning-systems-an-iterative-process-for-production-ready-applications.md) by Chip Huyen (High-level system design for ML)  
+* [🤖⚙️🔁 Designing Machine Learning Systems: An Iterative Process for Production-Ready Applications](/content/books/designing-machine-learning-systems-an-iterative-process-for-production-ready-applications.md) by Chip Huyen (High-level system design for ML)  
 * ☸️ Kubernetes: Up and Running by Brendan Burns, Joe Beda, Kelsey Hightower (Container orchestration for scalable deployments)  
 * 🐼 Hands-On Data Analysis with Pandas by Stefanie Molin (In-depth Python data manipulation, relevant for LLM data prep)  
   

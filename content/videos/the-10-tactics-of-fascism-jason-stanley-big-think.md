@@ -9,7 +9,7 @@ Platform:
 Channel: Big Think
 tags:
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md)  
 # The 10 tactics of fascism | Jason Stanley | Big Think  
 ![The 10 tactics of fascism | Jason Stanley | Big Think](https://youtu.be/CpCKkWMbmXU)  
   

@@ -146,10 +146,10 @@ link_analysis_model: gemini-3.1-flash-lite-preview
     - [🧬👥💾 Life 3.0: Being Human in the Age of Artificial Intelligence](../books/life-3-0.md) by Max Tegmark. 🤖🌐 - Explores the long-term implications of AI and its potential impact on society. 🌍 It provides a broader context for understanding the role of advanced AI models like Gemini.  
     - "Platform Revolution" by Geoffrey G. Parker, Marshall W. Van Alstyne, and Sangeet Paul Choudary. 🌐📈 - Discusses the dynamics of platform-based businesses and how AI is transforming various industries. This provides context to how Google is implementing Gemini across it's platforms.  
 - **Topically opposed:**  
-    - [👁️‍🗨️💰⛓️👤 The Age of Surveillance Capitalism: The Fight for a Human Future at the New Frontier of Power](../books/the-age-of-surveillance-capitalism.md) by Shoshana Zuboff. 🕵️‍♂️💻 - Critiques the use of data and AI for surveillance and control, offering a counterpoint to the optimistic view of AI's potential. 🛡️  
-    - [📱⬇️🧘 Digital Minimalism: Choosing a Focused Life in a Noisy World](../books/digital-minimalism-choosing-a-focused-life-in-a-noisy-world.md) by Cal Newport. 📱🚫 - Advocates for a more intentional and selective use of technology, providing a perspective on the potential downsides of excessive reliance on AI-powered tools. 🧘  
+    - [👁️‍🗨️💰⛓️👤 The Age of Surveillance Capitalism: The Fight for a Human Future at the New Frontier of Power](books/the-age-of-surveillance-capitalism.md) by Shoshana Zuboff. 🕵️‍♂️💻 - Critiques the use of data and AI for surveillance and control, offering a counterpoint to the optimistic view of AI's potential. 🛡️  
+    - [📱⬇️🧘 Digital Minimalism: Choosing a Focused Life in a Noisy World](books/digital-minimalism-choosing-a-focused-life-in-a-noisy-world.md) by Cal Newport. 📱🚫 - Advocates for a more intentional and selective use of technology, providing a perspective on the potential downsides of excessive reliance on AI-powered tools. 🧘  
 - **More general:**  
-    - [🤖🧠 Artificial Intelligence: A Modern Approach](../books/artificial-intelligence-a-modern-approach.md) by Stuart Russell and Peter Norvig. 🤖📚 - A foundational textbook on AI, covering a wide range of topics and providing a comprehensive overview of the field. 🧠  
+    - [🤖🧠 Artificial Intelligence: A Modern Approach](books/artificial-intelligence-a-modern-approach.md) by Stuart Russell and Peter Norvig. 🤖📚 - A foundational textbook on AI, covering a wide range of topics and providing a comprehensive overview of the field. 🧠  
     - AI Superpowers by Kai-Fu Lee. 🌍🤖 - Explores the global competition in AI and its potential impact on the future of work and society. 🌐  
 - **More specific:**  
     - "Transformers for Natural Language Processing: Deep Learning with BERT, GPT, and other models" by Denis Rothman. ⚡🗣️- A more in depth look into the technology that powers Gemini.  
@@ -162,7 +162,7 @@ link_analysis_model: gemini-3.1-flash-lite-preview
     - "Neural Networks and Deep Learning" by Michael Nielsen. ⚡🧠 - An accessible and in-depth exploration of neural networks and deep learning, providing a solid understanding of the underlying principles. 📖  
 - **Accessible:**  
     - "Hello World: Being Human in the Age of Algorithms" by Hannah Fry. 🤖🤝 - An engaging and accessible introduction to the world of algorithms and their impact on our lives. 🌐  
-    - [📊📉🏛️ Weapons of Math Destruction: How Big Data Increases Inequality and Threatens Democracy](../books/weapons-of-math-destruction-how-big-data-increases-inequality-and-threatens-democracy.md) by Cathy O'Neil. ⚖️🤖 - Explores the potential for bias and discrimination in algorithms and AI, raising important ethical considerations. 🛡️  
+    - [📊📉🏛️ Weapons of Math Destruction: How Big Data Increases Inequality and Threatens Democracy](books/weapons-of-math-destruction-how-big-data-increases-inequality-and-threatens-democracy.md) by Cathy O'Neil. ⚖️🤖 - Explores the potential for bias and discrimination in algorithms and AI, raising important ethical considerations. 🛡️  
   
 ## 🦋 Bluesky    
 <blockquote class="bluesky-embed" data-bluesky-uri="at://did:plc:i4yli6h7x2uoj7acxunww2fc/app.bsky.feed.post/3mgnukzurbx2j" data-bluesky-cid="bafyreigr6mgpbo344i35mqvmejywlvelre7w4jnf7utg4tj5rrxkmrs3ai" data-bluesky-embed-color-mode="system"><p lang="en">🤖♊ Gemini<br><br> 🤖 AI | 🧠 Learning | 🚀 Innovation | 📚 LLMs | 💻 Code<br><br>https://bagrounds.org/software/gemini</p>  

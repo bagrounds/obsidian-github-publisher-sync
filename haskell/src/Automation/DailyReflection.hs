@@ -18,6 +18,8 @@ import qualified Data.Text.IO as TIO
 import System.Directory (createDirectoryIfMissing, doesDirectoryExist, doesFileExist, listDirectory)
 import System.FilePath ((</>), dropExtension)
 
+import Automation.Frontmatter (quoteYamlValue)
+
 import Automation.BlogSeriesConfig (BlogSeriesConfig (..))
 import Automation.Types
   ( blueskySectionHeader
@@ -49,9 +51,9 @@ buildReflectionContent date previousDate =
     [ "---"
     , "share: true"
     , "aliases:"
-    , "  - " <> date
-    , "title: " <> date
-    , "URL: https://bagrounds.org/reflections/" <> date
+    , "  - " <> quoteYamlValue date
+    , "title: " <> quoteYamlValue date
+    , "URL: " <> quoteYamlValue ("https://bagrounds.org/reflections/" <> date)
     , "Author: \"[[bryan-grounds]]\""
     , "tags:"
     , "---"

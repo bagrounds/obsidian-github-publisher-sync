@@ -28,7 +28,7 @@ module Automation.InternalLinking
   ) where
 
 import Automation.BlogPrompt (todayPacific)
-import Automation.Frontmatter (parseFrontmatter)
+import Automation.Frontmatter (parseFrontmatter, quoteYamlValue)
 import Automation.Gemini
   ( GenerationConfig (..)
   , GeminiRequest (..)
@@ -734,12 +734,12 @@ updateFrontmatterFields filePath fields = do
                   in TIO.writeFile filePath
                        (T.intercalate "\n" (first : updatedFm <> [closingDash] <> bodyLines))
         _ -> do
-          let entries = T.intercalate "\n" $ fmap (\(k, v) -> k <> ": " <> v) fields
+          let entries = T.intercalate "\n" $ fmap (\(k, v) -> k <> ": " <> quoteYamlValue v) fields
           TIO.writeFile filePath ("---\n" <> entries <> "\n---\n" <> raw)
 
 upsertField :: [Text] -> (Text, Text) -> [Text]
 upsertField ls (key, val) =
-  let newLine   = key <> ": " <> val
+  let newLine   = key <> ": " <> quoteYamlValue val
       pat       = T.unpack key <> ":"
       replaced  = fmap (\l -> if matchesKey pat l then newLine else l) ls
       didReplace = any (matchesKey pat) ls

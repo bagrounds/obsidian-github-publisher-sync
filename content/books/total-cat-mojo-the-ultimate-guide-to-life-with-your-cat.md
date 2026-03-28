@@ -7,7 +7,7 @@ share: true
 CTA: 🐱 Understand felines.
 affiliate link: https://amzn.to/3KWnGFP
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🐱👑 Total Cat Mojo: The Ultimate Guide to Life with Your Cat  
 [🛒 Total Cat Mojo: The Ultimate Guide to Life with Your Cat. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3KWnGFP)  
   
@@ -86,7 +86,7 @@ affiliate link: https://amzn.to/3KWnGFP
 ### Similar  
 * 🏡 Catification: Designing a Happy and Stylish Home for Your Cat (and You!) by Jackson Galaxy and Kate Benjamin  
 * 😻 The Cat Daddy: What the World's Most Incorrigible Cat Taught Me About Life, Love, and Coming Clean by Jackson Galaxy  
-* 🧠 [🐱👍 Think Like a Cat: How to Raise a Well-Adjusted Cat - Not a Sour Puss](./think-like-a-cat-how-to-raise-a-well-adjusted-cat-not-a-sour-puss.md) by Thinking Like a Cat by Pam Johnson-Bennett  
+* 🧠 [🐱👍 Think Like a Cat: How to Raise a Well-Adjusted Cat - Not a Sour Puss](/content/books/think-like-a-cat-how-to-raise-a-well-adjusted-cat-not-a-sour-puss.md) by Thinking Like a Cat by Pam Johnson-Bennett  
   
 ### Contrasting  
 * 😥 The Cat Who Cried for Help: Attitudes, Emotions, and the Psychology of Cats by Dr. Nicholas Dodman  

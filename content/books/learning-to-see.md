@@ -8,7 +8,7 @@ Author:
 tags:
 affiliate link: https://amzn.to/4kTIB9d
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🙈👁️💡🤔 Learning to See: Value-Stream Mapping to Add Value and Eliminate MUDA  
 [🛒 Learning to See: Value-Stream Mapping to Add Value and Eliminate MUDA. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4kTIB9d)  
   
@@ -78,7 +78,7 @@ affiliate link: https://amzn.to/4kTIB9d
 - **More General:** "Lean Thinking" by James P. Womack and Daniel T. Jones. This book provides a broader overview of lean principles and their application. 💭  
 - **More Specific:** "Creating Continuous Flow: An Action Guide for Managers, Engineers, and Production Associates" by Mike Rother and Rick Harris.2 This book focuses specifically on implementing continuous flow in manufacturing. ➡️  
 - **More Rigorous:** "Toyota Production System: Beyond Large-Scale Production" by Taiichi Ohno. This is the original text by the creator of TPS, providing a deeper theoretical understanding. 📖  
-- **More Accessible:** "[The Lean Startup](./the-lean-startup.md)" by Eric Ries. While focused on startups, it simplifies lean principles for a broader audience. 🚀  
+- **More Accessible:** "[The Lean Startup](/content/books/the-lean-startup.md)" by Eric Ries. While focused on startups, it simplifies lean principles for a broader audience. 🚀  
   
 ## 💬 [Gemini](https://gemini.google.com) Prompt  
 > Summarize the book: Learning to See: Value-Stream Mapping to Add Value and Eliminate Muda. Start with a TL;DR - a single statement that conveys a maximum of the useful information provided in the book. Next, explain how this book may offer a new or surprising perspective. Follow this with a deep dive. Catalogue the topics, methods, and research discussed. Be sure to highlight any significant theories, theses, or mental models proposed. Emphasize practical takeaways, including detailed, specific, concrete, step-by-step advice, guidance, or techniques discussed. Provide a critical analysis of the quality of the information presented, using scientific backing, author credentials, authoritative reviews, and other markers of high quality information as justification. Make the following additional book recommendations: the best alternate book on the same topic; the best book that is tangentially related; the best book that is diametrically opposed; the best fiction book that incorporates related ideas; the best book that is more general or more specific; and the best book that is more rigorous or more accessible than this book. Format your response as markdown, starting at heading level H3, with inline links, for easy copy paste. Use meaningful emojis generously (at least one per heading, bullet point, and paragraph) to enhance readability. Do not include broken links or links to commercial sites.  

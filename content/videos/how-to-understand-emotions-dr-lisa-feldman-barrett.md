@@ -10,7 +10,7 @@ Channel: Andrew Huberman
 tags:
 youtube: https://youtu.be/FeRgqJVALMQ
 ---
-[Home](../index.md) > [Videos](./index.md) | [🧠🫀👀🔬 Andrew Huberman](../people/andrew-huberman.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md) | [🧠🫀👀🔬 Andrew Huberman](/content/people/andrew-huberman.md)  
 # 🤔🤯❤️📖 How to Understand Emotions | Dr. Lisa Feldman Barrett  
 ![How to Understand Emotions | Dr. Lisa Feldman Barrett](https://youtu.be/FeRgqJVALMQ)  
   
@@ -35,7 +35,7 @@ youtube: https://youtu.be/FeRgqJVALMQ
 * 📈 Understanding the constructive nature of emotion offers more practical and nuanced tools for **emotional regulation** by focusing on changing the body's affect or re-categorizing the affective state with different concepts.  
   
 ## 📚 Book Recommendations  
-* [🧠🤔 How Emotions Are Made: The Secret Life of the Brain](../books/how-emotions-are-made-the-secret-life-of-the-brain.md) by Lisa Feldman Barrett. 📖 This book provides a full, detailed scientific argument for the **constructivist theory of emotion** and is highly relevant to the discussion.  
-* **[😢🔄 Emotion and Adaptation](../books/emotion-and-adaptation.md)** by Richard Lazarus. 📚 Offers a contrasting perspective from a major proponent of **cognitive appraisal** theory, arguing that emotions arise from how one evaluates a situation, which differs from both the basic emotion and construction theories.  
+* [🧠🤔 How Emotions Are Made: The Secret Life of the Brain](/content/books/how-emotions-are-made-the-secret-life-of-the-brain.md) by Lisa Feldman Barrett. 📖 This book provides a full, detailed scientific argument for the **constructivist theory of emotion** and is highly relevant to the discussion.  
+* **[😢🔄 Emotion and Adaptation](/content/books/emotion-and-adaptation.md)** by Richard Lazarus. 📚 Offers a contrasting perspective from a major proponent of **cognitive appraisal** theory, arguing that emotions arise from how one evaluates a situation, which differs from both the basic emotion and construction theories.  
 * 😠 **The Expression of the Emotions in Man and Animals** by Charles Darwin. 📜 The seminal, original text that established the now-challenged idea of universal, biologically evolved **facial expressions of emotion**, providing the foundational argument for the classical view.  
 * 🗣️ **Words Are Windows (or They Are Walls)** by Marshall Rosenberg. 🌐 A creatively related book on **Nonviolent Communication** that helps readers distinguish between observations and feelings, offering practical tools for identifying and articulating internal affective states beyond simple emotion words.

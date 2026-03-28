@@ -9,7 +9,7 @@ tags:
 affiliate link: https://amzn.to/3HnFo34
 CTA: 🎭 Unmask mechanisms.
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🤔🔌 Understanding Power: The Indispensable Chomsky  
 [🛒 Understanding Power: The Indispensable Chomsky. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3HnFo34)  
   
@@ -60,7 +60,7 @@ CTA: 🎭 Unmask mechanisms.
 ### 📖 Similar Books (Critiques of Power, Media, Policy)  
   
 * 🇺🇸 **Howard Zinn - *A People's History of the United States*:** 📜 Offers a historical perspective from the viewpoint of marginalized groups, challenging traditional narratives of American history.  
-* 📰 **Edward S. Herman & Noam Chomsky - [🏭🫡 Manufacturing Consent: The Political Economy of the Mass Media](./manufacturing-consent.md):** 📢 The foundational text detailing the propaganda model Chomsky frequently references.  
+* 📰 **Edward S. Herman & Noam Chomsky - [🏭🫡 Manufacturing Consent: The Political Economy of the Mass Media](/content/books/manufacturing-consent.md):** 📢 The foundational text detailing the propaganda model Chomsky frequently references.  
 * 🇮🇳 **Arundhati Roy - *Capitalism: A Ghost Story*:** 🏢 Critiques corporate power and neoliberalism, particularly in the context of India, echoing Chomsky's broader concerns.  
 * 💀 **Chris Hedges - *America: The Farewell Tour*:** 📉 A bleak look at the decline of American society under corporate power and political decay.  
 * 🌍 **John Perkins - *Confessions of an Economic Hit Man*:** 💼 An insider's account of how international finance and corporations exploit developing nations, aligning with Chomsky's critique of US economic imperialism.  
@@ -75,12 +75,12 @@ CTA: 🎭 Unmask mechanisms.
   
 ### 💡 Creatively Related Books (Exploring Themes Differently)  
   
-* 👁️ **George Orwell - [👁️ Nineteen Eighty-Four](./1984.md):** dystopia Classic dystopian fiction exploring totalitarianism, surveillance, and manipulation of language/thought ("Newspeak"), themes resonant with Chomsky's analysis of propaganda and control.  
+* 👁️ **George Orwell - [👁️ Nineteen Eighty-Four](/content/books/1984.md):** dystopia Classic dystopian fiction exploring totalitarianism, surveillance, and manipulation of language/thought ("Newspeak"), themes resonant with Chomsky's analysis of propaganda and control.  
 * 💊 **Aldous Huxley - *Brave New World*:** dystopia Dystopian fiction exploring control through pleasure, technology, and social conditioning, offering a different angle on societal control than Orwell's overt oppression.  
-* ⛓️ **Michel Foucault - [⚙️⛓️ Discipline and Punish: The Birth of the Prison](./discipline-and-punish-the-birth-of-the-prison.md):** 📜 Philosophical exploration of power, knowledge, and social control mechanisms, particularly how institutions shape individuals.  
-* 🛡️ **Timothy Snyder - [On Tyranny: Twenty Lessons from the Twentieth Century](./on-tyranny.md):** 📖 A concise historical guide on recognizing and resisting authoritarianism, relevant to Chomsky's concerns about democratic erosion.  
+* ⛓️ **Michel Foucault - [⚙️⛓️ Discipline and Punish: The Birth of the Prison](/content/books/discipline-and-punish-the-birth-of-the-prison.md):** 📜 Philosophical exploration of power, knowledge, and social control mechanisms, particularly how institutions shape individuals.  
+* 🛡️ **Timothy Snyder - [On Tyranny: Twenty Lessons from the Twentieth Century](/content/books/on-tyranny.md):** 📖 A concise historical guide on recognizing and resisting authoritarianism, relevant to Chomsky's concerns about democratic erosion.  
 * 🌐 **Geert Lovink - *Networks Without a Cause: A Critique of Social Media*:** 📱 Explores how digital media shapes culture and politics, potentially complementing or updating Chomsky's media critique for the internet age.  
 * 🗣️ **Books on Linguistics (Chomsky's primary field):** 🗣️ Works like *Syntactic Structures* or explorations of Universal Grammar, while academic, connect to the intellectual foundations of Chomsky's thinking about innate human capacities, which arguably informs his political views on freedom and creativity.  
   
-## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
+## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Understanding Power The Indispensable Chomsky. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

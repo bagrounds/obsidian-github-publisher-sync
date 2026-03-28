@@ -7,7 +7,7 @@ share: true
 affiliate link: https://amzn.to/46qC80X
 CTA: 🕊️ Empathize with resilience.
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🔒🐦 I Know Why the Caged Bird Sings  
 [🛒 I Know Why the Caged Bird Sings. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/46qC80X)  
   
@@ -54,7 +54,7 @@ CTA: 🕊️ Empathize with resilience.
   
 📚 These recommendations offer different perspectives or experiences, either in their historical context, nature of adversity, or narrative tone, providing a contrast to Angelou's memoir.  
   
-* **[🔦💡 Man's Search for Meaning](./mans-search-for-meaning.md)** by Viktor Frankl: While I Know Why the Caged Bird Sings explores personal and societal trauma, Frankl's memoir delves into the search for meaning in the extreme suffering of the Holocaust, offering a philosophical contrast in confronting immense adversity.  
+* **[🔦💡 Man's Search for Meaning](/content/books/mans-search-for-meaning.md)** by Viktor Frankl: While I Know Why the Caged Bird Sings explores personal and societal trauma, Frankl's memoir delves into the search for meaning in the extreme suffering of the Holocaust, offering a philosophical contrast in confronting immense adversity.  
 * 🌃 **Night** by Elie Wiesel: This short memoir provides a stark and unforgettable account of a young Jewish boy's experiences in Nazi concentration camps during World War II, presenting a contrasting historical context of extreme suffering and loss of innocence.  
 * 🐶 **Don't Let's Go to the Dogs Tonight: An African Childhood** by Alexandra Fuller: This memoir vividly recounts an unconventional upbringing amidst civil wars and political turmoil in Africa. 🌍 While it shares themes of childhood adversity and resilience, the cultural and geographical context offers a distinct contrast.  
   
@@ -62,7 +62,7 @@ CTA: 🕊️ Empathize with resilience.
   
 📚 These books connect to I Know Why the Caged Bird Sings through shared underlying themes, writing craft, or broader social narratives, inviting different angles of appreciation.  
   
-* **[🐦🕊️ Bird by Bird: Some Instructions on Writing and Life](./bird-by-bird.md)** by Anne Lamott: This book offers warm, humorous, and practical advice on writing. 📝 It resonates creatively with Angelou's work as both are by celebrated female authors, and Angelou's memoir itself is a testament to the power of finding one's voice through writing.  
+* **[🐦🕊️ Bird by Bird: Some Instructions on Writing and Life](/content/books/bird-by-bird.md)** by Anne Lamott: This book offers warm, humorous, and practical advice on writing. 📝 It resonates creatively with Angelou's work as both are by celebrated female authors, and Angelou's memoir itself is a testament to the power of finding one's voice through writing.  
 * ☀️ **The Warmth of Other Suns: The Epic Story of America's Great Migration** by Isabel Wilkerson: This non-fiction work chronicles the decades-long Great Migration of African Americans fleeing the Jim Crow South. 🇺🇸 It provides a broader historical and sociological context for the experiences of displacement and the quest for dignity faced by characters like Maya Angelou.  
 * 🇯🇲 **How to Say Babylon** by Safiya Sinclair: A poetic coming-of-age memoir about an upbringing in a Rastafarian household in Jamaica, exploring themes of abuse, resilience, and self-discovery. 📜 It offers a creatively related perspective on a young woman's journey to find her voice amidst challenging family dynamics, echoing Angelou's narrative of overcoming and self-definition in a distinct cultural setting.  
   

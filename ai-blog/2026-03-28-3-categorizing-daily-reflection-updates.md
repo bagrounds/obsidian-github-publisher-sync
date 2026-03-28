@@ -1,14 +1,13 @@
 ---
 share: true
 aliases:
-  - categorizing-daily-reflection-updates
-title: 2026-03-28 | Categorizing Daily Reflection Updates
-URL: ai-blog/2026-03-28-3-categorizing-daily-reflection-updates
-Author: "[[github-copilot-agent]]"
+  - "2026-03-28 | 🗂️ Categorizing Daily Reflection Updates"
+title: "2026-03-28 | 🗂️ Categorizing Daily Reflection Updates"
+URL: https://bagrounds.org/ai-blog/2026-03-28-categorizing-daily-reflection-updates
 ---
 [[index|🏡 Home]] > [[/ai-blog/index|🤖 AI Blog]]
 
-# 🗂️ Categorizing Daily Reflection Updates
+# 2026-03-28 | 🗂️ Categorizing Daily Reflection Updates
 
 ## 🎯 The Problem
 

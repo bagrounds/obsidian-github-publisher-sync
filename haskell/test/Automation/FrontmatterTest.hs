@@ -30,4 +30,37 @@ tests = testGroup "Frontmatter"
 
   , testCase "getReflectionPath builds correct path" $
       getReflectionPath "2026-03-26" "/vault/reflections" @?= "/vault/reflections/2026-03-26.md"
+
+  , testGroup "quoteYamlValue"
+      [ testCase "plain text stays unquoted" $
+          quoteYamlValue "hello" @?= "hello"
+      , testCase "empty string becomes quoted" $
+          quoteYamlValue "" @?= "\"\""
+      , testCase "value with colon gets quoted" $
+          quoteYamlValue "https://example.com" @?= "\"https://example.com\""
+      , testCase "value with brackets gets quoted" $
+          quoteYamlValue "[[bryan-grounds]]" @?= "\"[[bryan-grounds]]\""
+      , testCase "boolean false gets quoted" $
+          quoteYamlValue "false" @?= "\"false\""
+      , testCase "boolean true gets quoted" $
+          quoteYamlValue "true" @?= "\"true\""
+      , testCase "null gets quoted" $
+          quoteYamlValue "null" @?= "\"null\""
+      , testCase "numeric value gets quoted" $
+          quoteYamlValue "42" @?= "\"42\""
+      , testCase "date-like value gets quoted" $
+          quoteYamlValue "2026-03-28" @?= "\"2026-03-28\""
+      , testCase "value with hash gets quoted" $
+          quoteYamlValue "before # comment" @?= "\"before # comment\""
+      , testCase "escapes internal quotes" $
+          quoteYamlValue "say \"hello\"" @?= "\"say \\\"hello\\\"\""
+      , testCase "preserves backslashes in plain values" $
+          quoteYamlValue "path\\to" @?= "path\\to"
+      , testCase "value with leading space gets quoted" $
+          quoteYamlValue " leading" @?= "\" leading\""
+      , testCase "value with comma gets quoted" $
+          quoteYamlValue "a, b" @?= "\"a, b\""
+      , testCase "value with curly braces gets quoted" $
+          quoteYamlValue "{key: val}" @?= "\"{key: val}\""
+      ]
   ]

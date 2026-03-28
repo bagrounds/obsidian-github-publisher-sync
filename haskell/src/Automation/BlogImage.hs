@@ -68,7 +68,7 @@ import System.FilePath ((</>), takeBaseName, takeDirectory, takeExtension)
 import Text.Regex.TDFA ((=~))
 
 import Automation.BlogPrompt (stripEmbedSections, todayPacific)
-import Automation.Frontmatter (parseFrontmatter)
+import Automation.Frontmatter (parseFrontmatter, quoteYamlValue)
 import qualified Automation.Gemini as Gemini
 import qualified Automation.Json as Json
 
@@ -467,16 +467,6 @@ applyField fmLines (key, value) =
       keyExists = any (\l -> keyPrefix `T.isPrefixOf` T.stripStart l) fmLines
   in if keyExists then replaced else replaced <> [key <> ": " <> quoteYamlValue value]
 
-quoteYamlValue :: Text -> Text
-quoteYamlValue v
-  | T.null v  = "\"\""
-  | needsQuoting v = "\"" <> T.replace "\"" "\\\"" (T.replace "\\" "\\\\" v) <> "\""
-  | otherwise = v
-  where
-    needsQuoting t = T.any (\c -> c == ':' || c == '#' || c == '"' || c == '\'' || c == '[' || c == ']' || c == '{' || c == '}' || c == ',') t
-                     || T.strip t /= t
-                     || t == "true" || t == "false" || t == "null"
-                     || T.all (\c -> isDigit c || c == '.' || c == '-') t
 
 extractFrontmatterValue :: Text -> Text -> Maybe Text
 extractFrontmatterValue content key =

@@ -7,7 +7,7 @@ share: true
 affiliate link: https://amzn.to/43RaTKo
 CTA: 🚀 Master architecture.
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🖥️🔑 System Design Interview - An Insider's Guide  
 [🛒 System Design Interview - An Insider's Guide. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/43RaTKo)  
   
@@ -49,7 +49,7 @@ This book is primarily aimed at software engineers preparing for technical inter
   
 ### 👯 Similar Books (System Design & Distributed Systems Focus)  
   
-* **[💾⬆️🛡️ Designing Data-Intensive Applications: The Big Ideas Behind Reliable, Scalable, and Maintainable Systems](./designing-data-intensive-applications.md) by Martin Kleppmann:** Often cited alongside or as a deeper companion to Xu's book, this is a comprehensive exploration of the fundamental concepts behind modern data systems.  
+* **[💾⬆️🛡️ Designing Data-Intensive Applications: The Big Ideas Behind Reliable, Scalable, and Maintainable Systems](/content/books/designing-data-intensive-applications.md) by Martin Kleppmann:** Often cited alongside or as a deeper companion to Xu's book, this is a comprehensive exploration of the fundamental concepts behind modern data systems.  
 * 📖 **System Design Interview - An Insider's Guide: Volume 2 by Alex Xu and Sahn Lam:** A direct sequel offering a new set of system design problems and solutions, building on the framework from the first volume.  
 * 🖥️ **Grokking the System Design Interview (online course/book):** Frequently compared to Xu's book, offering a similar problem-based approach to interview preparation.  
 * 📐 **Fundamentals of Software Architecture: An Engineering Approach by Mark Richards and Neal Ford:** Provides a broader look at software architecture principles, patterns, and practices, going beyond just interview preparation.  
@@ -57,7 +57,7 @@ This book is primarily aimed at software engineers preparing for technical inter
 * 🧩 **Software Architecture: The Hard Parts: Modern Trade-Off Analyses for Distributed Architectures by Neal Ford, Mark Richards, Pramod Sadalage, Zhamak Dehghani:** Focuses on the difficult decisions and trade-offs involved in designing distributed systems.  
 * 🏘️ **Building Microservices: Designing Fine-Grained Systems by Sam Newman:** A foundational text for understanding the design and implementation of microservices architectures, a common pattern in modern distributed systems.  
 * 🚀 **Web Scalability for Startup Engineers by Artur Ejsmont:** Offers practical insights into scaling web applications, relevant to system design principles.  
-* **[⚙️🕸️🧩🔑 Distributed Systems: Principles and Paradigms](./distributed-systems.md) by Andrew S. Tanenbaum and Maarten Van Steen:** A classic academic textbook providing a rigorous and in-depth treatment of distributed systems theory.  
+* **[⚙️🕸️🧩🔑 Distributed Systems: Principles and Paradigms](/content/books/distributed-systems.md) by Andrew S. Tanenbaum and Maarten Van Steen:** A classic academic textbook providing a rigorous and in-depth treatment of distributed systems theory.  
   
 ### 🆚 Contrasting Books (Different Design/Interview Focus)  
   
@@ -65,20 +65,20 @@ This book is primarily aimed at software engineers preparing for technical inter
 * 🧼 **Clean Architecture: A Craftsman's Guide to Software Structure and Design by Robert C. Martin:** Focuses on principles of software architecture and design patterns for building maintainable and testable codebases, often at a lower level than system-wide design.  
 * 🧩 **Design Patterns: Elements of Reusable Object-Oriented Software by Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides (the "Gang of Four"):** The seminal work on object-oriented design patterns, providing a vocabulary for discussing solutions to common software design problems.  
 * 🧠 **Head First Design Patterns by Eric Freeman and Elisabeth Robson:** A more approachable and visually engaging introduction to design patterns compared to the original GoF book.  
-* **[🧑‍💻📈 The Pragmatic Programmer: Your Journey to Mastery](./the-pragmatic-programmer-your-journey-to-mastery.md) by David Thomas and Andrew Hunt:** Offers a wide range of practical advice on software development, including design, coding, and career development.  
-* **[✅💻 Code Complete](./code-complete.md): A Practical Handbook of Software Construction by Steve McConnell:** A comprehensive guide to software construction, covering topics like design, coding, debugging, and testing at a detailed level.  
+* **[🧑‍💻📈 The Pragmatic Programmer: Your Journey to Mastery](/content/books/the-pragmatic-programmer-your-journey-to-mastery.md) by David Thomas and Andrew Hunt:** Offers a wide range of practical advice on software development, including design, coding, and career development.  
+* **[✅💻 Code Complete](/content/books/code-complete.md): A Practical Handbook of Software Construction by Steve McConnell:** A comprehensive guide to software construction, covering topics like design, coding, debugging, and testing at a detailed level.  
   
 ### 💡 Creatively Related Books (Broader Engineering & Problem Solving)  
   
 * 📊 **Designing the Data Warehouse by Ralph Kimball and Margy Ross:** While specific to data warehousing, this book provides excellent insights into data modeling and system design from a data-centric perspective.  
-* **[💺🚪💡🤔 The Design of Everyday Things](./the-design-of-everyday-things.md) by Don Norman:** Explores the principles of good design in everyday objects, offering lessons applicable to designing user-friendly and intuitive systems.  
-* **[🌐🔗🧠📖 Thinking in Systems: A Primer](./thinking-in-systems.md) by Donella H. Meadows:** Introduces the concept of systems thinking, a valuable mindset for understanding the interconnectedness and behavior of complex systems, relevant to large-scale software.  
-* **[🤔🐇🐢 Thinking, Fast and Slow](./thinking-fast-and-slow.md) by Daniel Kahneman:** Delves into the two modes of thought that influence decision-making, relevant to understanding user behavior and designing systems that account for human cognition.  
-* **[🦄👤🗓️ The Mythical Man-Month: Essays on Software Engineering](./the-mythical-man-month.md) by Frederick Brooks Jr.:** A classic in software engineering, discussing project management and the challenges of building large software systems.  
+* **[💺🚪💡🤔 The Design of Everyday Things](/content/books/the-design-of-everyday-things.md) by Don Norman:** Explores the principles of good design in everyday objects, offering lessons applicable to designing user-friendly and intuitive systems.  
+* **[🌐🔗🧠📖 Thinking in Systems: A Primer](/content/books/thinking-in-systems.md) by Donella H. Meadows:** Introduces the concept of systems thinking, a valuable mindset for understanding the interconnectedness and behavior of complex systems, relevant to large-scale software.  
+* **[🤔🐇🐢 Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md) by Daniel Kahneman:** Delves into the two modes of thought that influence decision-making, relevant to understanding user behavior and designing systems that account for human cognition.  
+* **[🦄👤🗓️ The Mythical Man-Month: Essays on Software Engineering](/content/books/the-mythical-man-month.md) by Frederick Brooks Jr.:** A classic in software engineering, discussing project management and the challenges of building large software systems.  
 * 🧩 **An Elegant Puzzle: Systems Thinking for Engineers and Managers by Will Larson:** Applies systems thinking specifically to software engineering and management challenges.  
-* **[🐦‍🔥💻 The Phoenix Project](./the-phoenix-project.md): A Novel About IT, DevOps, and Helping Your Business Win by Gene Kim, Kevin Behr, George Spafford:** A business novel illustrating the principles of DevOps and their impact on IT system reliability and performance.  
+* **[🐦‍🔥💻 The Phoenix Project](/content/books/the-phoenix-project.md): A Novel About IT, DevOps, and Helping Your Business Win by Gene Kim, Kevin Behr, George Spafford:** A business novel illustrating the principles of DevOps and their impact on IT system reliability and performance.  
   
-## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
+## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on System Design Interview - An Insider's Guide. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.  
   
 ## 🐦 Tweet  

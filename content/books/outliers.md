@@ -8,7 +8,7 @@ Author:
 tags:
 affiliate link: https://www.amazon.com/dp/0316017922?tag=bagrounds-20
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # ⭐ Outliers  
 [🛒 Outliers. As an Amazon Associate I earn from qualifying purchases.](https://www.amazon.com/dp/0316017922?tag=bagrounds-20)  
   
@@ -47,18 +47,18 @@ A: 🤓 Many readers consider it among his most accessible and thought-provoking
   
 ### 📖 Non-Fiction  
   
-* [💪 Grit](books/grit-the-power-of-passion-and-perseverance.md) by Angela Duckworth  
-* [🧠 Mindset](./mindset.md) by Carol Dweck  
+* [💪 Grit](/content/books/grit-the-power-of-passion-and-perseverance.md) by Angela Duckworth  
+* [🧠 Mindset](/content/books/mindset.md) by Carol Dweck  
   
 ### ❤️ If You Loved This  
   
-* [🌐 Range](./range.md) by David Epstein  
-* [📊 The Tipping Point](./the-tipping-point.md) by Malcolm Gladwell  
+* [🌐 Range](/content/books/range.md) by David Epstein  
+* [📊 The Tipping Point](/content/books/the-tipping-point.md) by Malcolm Gladwell  
   
 ### ↔️ Similar But Different  
   
 * [⭐ Talent Is Overrated](books/talent-is-overrated.md) by Geoff Colvin - More focused on deliberate practice  
-* [🐢 Thinking, Fast and Slow](books/thinking-fast-and-slow.md) by Daniel Kahneman - Deeper psychology, less narrative  
+* [🐢 Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md) by Daniel Kahneman - Deeper psychology, less narrative  
   
 ## 🫵 What Do You Think?  
   

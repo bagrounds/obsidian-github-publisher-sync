@@ -7,7 +7,7 @@ share: true
 CTA: ⚡️ Conquer complex problems.
 affiliate link: https://amzn.to/49m0s5A
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🔢🎯 Numerical Optimization  
 [🛒 Numerical Optimization. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/49m0s5A)  
   
@@ -85,12 +85,12 @@ affiliate link: https://amzn.to/49m0s5A
 * ➡️ Iterative Methods in Optimization by C.T. Kelley (Focus on iterative algorithms)  
   
 ### 🔄 Contrasting Books  
-* [⛰️⬇️📈 Convex Optimization](./convex-optimization.md) by Stephen Boyd and Lieven Vandenberghe (Focuses solely on convex problems with a strong application emphasis)  
-* [⚙️🎯 Algorithms for Optimization](books/algorithms-for-optimization.md) by Mykel Kochenderfer and Tim Wheeler (Broader introduction with a focus on practical algorithms for engineering systems, relevant to ML)  
+* [⛰️⬇️📈 Convex Optimization](/content/books/convex-optimization.md) by Stephen Boyd and Lieven Vandenberghe (Focuses solely on convex problems with a strong application emphasis)  
+* [⚙️🎯 Algorithms for Optimization](/content/books/algorithms-for-optimization.md) by Mykel Kochenderfer and Tim Wheeler (Broader introduction with a focus on practical algorithms for engineering systems, relevant to ML)  
   
 ### 🔗 Related Books  
 * 🧠 Optimization for Machine Learning edited by Suvrit Sra, Sebastian Nowozin, and Stephen J. Wright (Explores optimization's role in ML, including regularized and robust optimization)  
-* [🧠💻🤖 Deep Learning](./deep-learning.md) by Ian Goodfellow, Yoshua Bengio, and Aaron Courville (Covers optimization methods specifically tailored for neural networks)  
+* [🧠💻🤖 Deep Learning](/content/books/deep-learning.md) by Ian Goodfellow, Yoshua Bengio, and Aaron Courville (Covers optimization methods specifically tailored for neural networks)  
 * 🔬 Numerical Recipes: The Art of Scientific Computing by William H. Press et al. (Broader scope of numerical methods, including some optimization techniques)  
   
 ## 🫵 What Do You Think?  

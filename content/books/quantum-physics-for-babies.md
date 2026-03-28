@@ -7,7 +7,7 @@ share: true
 CTA: ⚛️ Grasp reality.
 affiliate link: https://amzn.to/4oqrvRs
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # ⚛️👶 Quantum Physics for Babies  
 [🛒 Quantum Physics for Babies. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4oqrvRs)  
   
@@ -34,7 +34,7 @@ affiliate link: https://amzn.to/4oqrvRs
 * 👨‍🔬 Author Chris Ferrie, a physicist and mathematician, leverages his expertise to simplify complex ideas, making them accessible.  
 * 🎨 The book uses bright pages and simple illustrations, which are effective in capturing babies' attention, even if full comprehension of quantum physics isn't the immediate goal.  
 * 👨‍💻 Critics and reviewers acknowledge that babies won't understand quantum physics in a traditional sense, but the book serves as valuable early exposure to scientific vocabulary and concepts.  
-* 👶 The [👶📚 Baby University series](./baby-university-complete-for-babies-board-book-set.md), including this title, is considered age-appropriate and baby-accessible, with simple sentence structures.  
+* 👶 The [👶📚 Baby University series](/content/books/baby-university-complete-for-babies-board-book-set.md), including this title, is considered age-appropriate and baby-accessible, with simple sentence structures.  
 * ✨ The book is seen as stimulating for both children and parents, offering adults a basic understanding of the theory.  
 * 🧠 Research on infant cognition suggests that babies organize their search for information to maximize efficient learning, engaging with content that is neither too simple nor too complex.  
 * 🗣️ Early exposure to language and back-and-forth interactions are crucial for bridging the word gap and fostering cognitive development.  
@@ -71,11 +71,11 @@ affiliate link: https://amzn.to/4oqrvRs
   
 ### 🆚 Contrasting  
 * 🐈 The Cat in the Hat's Learning Library (series) - Introduces science concepts with narrative and humor for slightly older children.  
-* [🌙🛌 Goodnight Moon](./goodnight-moon.md) by Margaret Wise Brown - A classic, soothing bedtime story with no explicit scientific content.  
+* [🌙🛌 Goodnight Moon](/content/books/goodnight-moon.md) by Margaret Wise Brown - A classic, soothing bedtime story with no explicit scientific content.  
   
 ### 🔗 Related  
-* [🌌 Cosmos](./cosmos.md) by Carl Sagan - Explores vast scientific concepts for a general adult audience.  
-* [🤏📜⏳ A Brief History of Time](./a-brief-history-of-time.md) by Stephen Hawking - A seminal work on cosmology and theoretical physics for adults.  
+* [🌌 Cosmos](/content/books/cosmos.md) by Carl Sagan - Explores vast scientific concepts for a general adult audience.  
+* [🤏📜⏳ A Brief History of Time](/content/books/a-brief-history-of-time.md) by Stephen Hawking - A seminal work on cosmology and theoretical physics for adults.  
   
 ## 🫵 What Do You Think?  
 🤔 How important is early exposure to complex scientific vocabulary for young children?  How do you nurture scientific curiosity in the very young?

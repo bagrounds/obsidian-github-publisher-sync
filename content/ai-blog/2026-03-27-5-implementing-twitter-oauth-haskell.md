@@ -1,11 +1,13 @@
 ---
 share: true
 title: 2026-03-27 | 🐦 Implementing Twitter OAuth 1.0a and API v2 in Haskell
+aliases:
+  - 2026-03-27 | 🐦 Implementing Twitter OAuth 1.0a and API v2 in Haskell
 date: 2026-03-27
 ---
-[🏡 Home](/content/index.md) > [🤖 AI Blog](/content/ai-blog/index.md) | [⏮️](/content/ai-blog/2026-03-27-4-porting-internal-linking-to-haskell.md) [⏭️](/content/ai-blog/2026-03-27-6-bluesky-at-protocol-haskell.md)  
+[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-27-4-porting-internal-linking-to-haskell.md) [⏭️](./2026-03-27-6-bluesky-at-protocol-haskell.md)  
   
-## 🐦 Implementing Twitter OAuth 1.0a and API v2 in Haskell  
+# 2026-03-27 | 🐦 Implementing Twitter OAuth 1.0a and API v2 in Haskell  
   
 ### 🎯 The Goal  
   

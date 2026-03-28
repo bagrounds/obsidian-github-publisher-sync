@@ -10,7 +10,7 @@ Channel: Heather Cox Richardson
 tags:
 youtube: https://youtu.be/263FaqrL6C4
 ---
-[Home](../index.md) > [Videos](./index.md) | [🏛️🇺🇸📖 Heather Cox Richardson](../people/heather-cox-richardson.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md) | [🏛️🇺🇸📖 Heather Cox Richardson](/content/people/heather-cox-richardson.md)  
 # ✊📢✅ Forms of Resistance and Reasons to Believe It’s Working | Explainer  
 ![Forms of Resistance and Reasons to Believe It’s Working | Explainer](https://youtu.be/263FaqrL6C4)  
   
@@ -28,5 +28,5 @@ youtube: https://youtu.be/263FaqrL6C4
   
 ## 📚 Book Recommendations  
 * 📖 **Similar:** Civil Disobedience by Henry David Thoreau, a classic text that articulates the importance of individual conscience as a revolutionary force against an unjust government.  
-* 📖 **Contrasting:** [🔄 On Revolution](../books/on-revolution.md) by Hannah Arendt, which offers a different view by arguing that meaningful political change requires public, collective action, rather than just individual acts of conscience.  
+* 📖 **Contrasting:** [🔄 On Revolution](/content/books/on-revolution.md) by Hannah Arendt, which offers a different view by arguing that meaningful political change requires public, collective action, rather than just individual acts of conscience.  
 * 📖 **Creatively Related:** The Shock Doctrine by Naomi Klein, which explores how powerful institutions capitalize on crises to push through unpopular policies, providing a broader context for the types of political battles discussed in the video.

@@ -10,7 +10,7 @@ Channel: Heather Cox Richardson
 tags:
 youtube: https://www.youtube.com/embed/JCfHvSctDz0
 ---
-[Home](../index.md) > [Videos](./index.md) | [🏛️🇺🇸📖 Heather Cox Richardson](../people/heather-cox-richardson.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md) | [🏛️🇺🇸📖 Heather Cox Richardson](/content/people/heather-cox-richardson.md)  
 # 💰🌊🚧🏛️🪧🚨 Politics Chat, July 10, 2025  
 ![Politics Chat, July 10, 2025](https://www.youtube.com/embed/JCfHvSctDz0)  
   
@@ -24,9 +24,9 @@ youtube: https://www.youtube.com/embed/JCfHvSctDz0
   
 ## 📚 Book Recommendations  
 * 🇺🇸 **On US Politics and the Trump Administration:**  
-    * [😱🤡🇺🇸 Fear: Trump in the White House](../books/fear.md) by Bob Woodward  
+    * [😱🤡🇺🇸 Fear: Trump in the White House](/content/books/fear.md) by Bob Woodward  
     * *A Warning* by Anonymous  
-    * [🔥💣💥😡🤬 Fire and Fury: Inside the Trump White House](../books/fire-and-fury-inside-the-trump-white-house.md) by Michael Wolff  
+    * [🔥💣💥😡🤬 Fire and Fury: Inside the Trump White House](/content/books/fire-and-fury-inside-the-trump-white-house.md) by Michael Wolff  
 * 🌍🔥 **On Climate Change and its Impacts:**  
     * *The Uninhabitable Earth: Life After Warming* by David Wallace-Wells  
     * *This Changes Everything: Capitalism vs. The Climate* by Naomi Klein  
@@ -34,8 +34,8 @@ youtube: https://www.youtube.com/embed/JCfHvSctDz0
     * *Trade Wars Are Class Wars: How Globalism Hurts Workers and Harms Our Future* by Matthew C. Klein and Michael Pettis  
     * *The Globalization Paradox: Democracy and the Future of the World Economy* by Dani Rodrik  
 * 🏛️📜 **On Government and Public Policy:**  
-    * [🗳️🕊️🇺🇸 Democracy in America](../books/democracy-in-america.md) by Alexis de Tocqueville  
-    * [⚠️🥴🕹️🌐 The Fifth Risk](../books/the-fifth-risk.md) by Michael Lewis  
+    * [🗳️🕊️🇺🇸 Democracy in America](/content/books/democracy-in-america.md) by Alexis de Tocqueville  
+    * [⚠️🥴🕹️🌐 The Fifth Risk](/content/books/the-fifth-risk.md) by Michael Lewis  
   
 ## 🐦 Tweet  
 <blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">💰🌊🚧🏛️🪧🚨 Politics Chat, July 10, 2025<br><br>🏛️ Looting Public Programs | 🌊 Incompetent Flash Flood Response | 🌮 <a href="https://twitter.com/hashtag/TACO?src=hash&amp;ref_src=twsrc%5Etfw">#TACO</a> Tariffs | 🌪️ Admin Infighting | ✊ Growing Opposition | 🚨 Desperate Power Grabs | 🇺🇸 Birthright Citizenship<a href="https://twitter.com/HC_Richardson?ref_src=twsrc%5Etfw">@HC_Richardson</a>: Thank you!<a href="https://t.co/LKXfTE90Dr">https://t.co/LKXfTE90Dr</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/1943480001615269987?ref_src=twsrc%5Etfw">July 11, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

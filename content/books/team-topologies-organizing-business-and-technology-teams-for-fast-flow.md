@@ -7,7 +7,7 @@ share: true
 affiliate link: https://amzn.to/451UCmy
 CTA: ⚙️ Architect for flow.
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🧑‍🤝‍🧑⚙️➡️ Team Topologies: Organizing Business and Technology Teams for Fast Flow  
 [🛒 Team Topologies: Organizing Business and Technology Teams for Fast Flow. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/451UCmy)  
   
@@ -46,8 +46,8 @@ CTA: ⚙️ Architect for flow.
   
 ### 📖 Similar Reads  
   
-* **[🏎️💾 Accelerate: The Science of Lean Software and DevOps: Building and Scaling High Performing Technology Organizations](./accelerate.md)** **by Nicole Forsgren, Jez Humble, and Gene Kim:** 🔬 This book provides the research and evidence that underpins many of the principles in *Team Topologies*. 📊 It demonstrates through rigorous data collection and analysis that capabilities like continuous delivery and loosely coupled architectures are key predictors of organizational performance.  
-* **[⚙️🚀🛡️ The DevOps Handbook: How to Create World-Class Agility, Reliability, & Security in Technology Organizations](./the-devops-handbook.md)** **by Gene Kim, Jez Humble, Patrick Debois, and John Willis:** 📚 A comprehensive guide to the principles and practices of DevOps, this book offers a detailed look at how to implement many of the cultural and technical practices that *Team Topologies* seeks to enable. 🌊 It focuses on the "how" of creating flow, feedback, and continuous learning.  
+* **[🏎️💾 Accelerate: The Science of Lean Software and DevOps: Building and Scaling High Performing Technology Organizations](/content/books/accelerate.md)** **by Nicole Forsgren, Jez Humble, and Gene Kim:** 🔬 This book provides the research and evidence that underpins many of the principles in *Team Topologies*. 📊 It demonstrates through rigorous data collection and analysis that capabilities like continuous delivery and loosely coupled architectures are key predictors of organizational performance.  
+* **[⚙️🚀🛡️ The DevOps Handbook: How to Create World-Class Agility, Reliability, & Security in Technology Organizations](/content/books/the-devops-handbook.md)** **by Gene Kim, Jez Humble, Patrick Debois, and John Willis:** 📚 A comprehensive guide to the principles and practices of DevOps, this book offers a detailed look at how to implement many of the cultural and technical practices that *Team Topologies* seeks to enable. 🌊 It focuses on the "how" of creating flow, feedback, and continuous learning.  
 * ➡️ ***Project to Product: How to Survive and Thrive in the Age of Digital Disruption with the Flow Framework*** **by Mik Kersten:** 🌊 This book aligns with the *Team Topologies* emphasis on flow. 📏 Kersten introduces the Flow Framework as a way to measure and manage the flow of business value in software delivery, shifting the focus from managing projects to managing products.  
   
 ### 🆚 Contrasting Perspectives  
@@ -56,13 +56,13 @@ CTA: ⚙️ Architect for flow.
   
 * 🎭 ***The Five Dysfunctions of a Team: A Leadership Fable*** **by Patrick Lencioni:** 🏗️ While *Team Topologies* focuses on the structural aspects of team organization, 🤝 Lencioni's work delves into the interpersonal dynamics that can make or break a team. 🧱 He argues that trust, conflict, commitment, accountability, and results are the foundational pillars of a high-performing team, regardless of its topology.  
 * ♻️ ***Reinventing Organizations: A Guide to Creating Organizations Inspired by the Next Stage in Human Consciousness*** **by Frederic Laloux:** 💡 Laloux presents a more radical vision of organizational structure, moving beyond hierarchical models to self-managing, "Teal" organizations. 🆚 This contrasts with the more defined, though flexible, structures proposed in *Team Topologies*.  
-* **[👍➡️👍👍 Good to Great: Why Some Companies Make the Leap...And Others Don't](./good-to-great.md)** **by Jim Collins:** 🥇 Collins' classic focuses on leadership and discipline as the primary drivers of sustained excellence. 🚌 While not in direct opposition, his emphasis on getting the "right people on the bus" before figuring out where to drive it offers a different starting point than the architectural approach of *Team Topologies*.  
+* **[👍➡️👍👍 Good to Great: Why Some Companies Make the Leap...And Others Don't](/content/books/good-to-great.md)** **by Jim Collins:** 🥇 Collins' classic focuses on leadership and discipline as the primary drivers of sustained excellence. 🚌 While not in direct opposition, his emphasis on getting the "right people on the bus" before figuring out where to drive it offers a different starting point than the architectural approach of *Team Topologies*.  
   
 ### 🧠 Creatively Related Reads  
   
-* **[🌐🔗🧠📖 Thinking in Systems: A Primer](./thinking-in-systems.md)** **by Donella H. Meadows:** 🌐 This book provides a foundational understanding of systems thinking, which is essential for grasping the interconnectedness of team structures, communication pathways, and software architecture as described in *Team Topologies*.  
-* **[🤔🐇🐢 Thinking, Fast and Slow](./thinking-fast-and-slow.md)** **by Daniel Kahneman:** 🤔 Kahneman's exploration of the two systems of thought provides a deeper understanding of the cognitive load concepts discussed in *Team Topologies*. 💡 It illuminates why minimizing extraneous cognitive load is so crucial for effective decision-making and problem-solving.  
-* **[🧰💬 Crucial Conversations: Tools for Talking When Stakes Are High](./crucial-conversations-tools-for-talking-when-stakes-are-high.md)** **by Kerry Patterson, Joseph Grenny, Ron McMillan, and Al Switzler:** 🤝 The explicit interaction modes in *Team Topologies* are designed to improve communication. 🗣️ This book offers practical skills for navigating the high-stakes conversations that are inevitable when teams collaborate, provide services, or facilitate learning.  
+* **[🌐🔗🧠📖 Thinking in Systems: A Primer](/content/books/thinking-in-systems.md)** **by Donella H. Meadows:** 🌐 This book provides a foundational understanding of systems thinking, which is essential for grasping the interconnectedness of team structures, communication pathways, and software architecture as described in *Team Topologies*.  
+* **[🤔🐇🐢 Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md)** **by Daniel Kahneman:** 🤔 Kahneman's exploration of the two systems of thought provides a deeper understanding of the cognitive load concepts discussed in *Team Topologies*. 💡 It illuminates why minimizing extraneous cognitive load is so crucial for effective decision-making and problem-solving.  
+* **[🧰💬 Crucial Conversations: Tools for Talking When Stakes Are High](/content/books/crucial-conversations-tools-for-talking-when-stakes-are-high.md)** **by Kerry Patterson, Joseph Grenny, Ron McMillan, and Al Switzler:** 🤝 The explicit interaction modes in *Team Topologies* are designed to improve communication. 🗣️ This book offers practical skills for navigating the high-stakes conversations that are inevitable when teams collaborate, provide services, or facilitate learning.  
   
-## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro)  
+## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-pro)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Team Topologies: Organizing Business and Technology Teams for Fast Flow. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

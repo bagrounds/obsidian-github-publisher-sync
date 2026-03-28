@@ -9,7 +9,7 @@ tags:
 affiliate link: https://amzn.to/3ZCD26X
 CTA: 🤝 Cultivate generosity.
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🎁➡️🏆 Give and Take: A Revolutionary Approach to Success  
 [🛒 Give and Take: A Revolutionary Approach to Success. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3ZCD26X)  
   
@@ -63,9 +63,9 @@ The book is built on the idea that while takers might succeed in the short term,
 - **Alternate on the Same Topic:**    
   - *Never Eat Alone* by Keith Ferrazzi – A practical guide on networking and relationship building that complements the ideas in *Give and Take*.    
 - **Tangentially Related:**    
-  - [Thinking, Fast and Slow](./thinking-fast-and-slow.md) by Daniel Kahneman – Explores the cognitive processes behind our decisions, offering insight into the psychological underpinnings of interpersonal interactions.  
+  - [Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md) by Daniel Kahneman – Explores the cognitive processes behind our decisions, offering insight into the psychological underpinnings of interpersonal interactions.  
 - **Diametrically Opposed:**    
-  - *[The 48 Laws of Power](./the-48-laws-of-power.md)* by Robert Greene – Presents a contrasting view where strategic power plays and self-interest drive success, challenging the altruistic approach of Grant’s thesis.    
+  - *[The 48 Laws of Power](/content/books/the-48-laws-of-power.md)* by Robert Greene – Presents a contrasting view where strategic power plays and self-interest drive success, challenging the altruistic approach of Grant’s thesis.    
 - **Fiction Incorporating Related Ideas:**    
   - [*Les Misérables* by Victor Hugo](https://www.goodreads.com/book/show/24280.Les_Mis_rables) – A classic narrative that, through its exploration of justice, redemption, and compassion, mirrors many of the social and ethical themes found in *Give and Take*.  
   

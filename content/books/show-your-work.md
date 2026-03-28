@@ -8,7 +8,7 @@ Author:
 tags:
 affiliate link: https://amzn.to/4kFdY7g
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 📝🎨🎶 Show Your Work!: 10 Ways to Share Your Creativity and Get Discovered  
 [🛒 Show Your Work!: 10 Ways to Share Your Creativity and Get Discovered. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4kFdY7g)  
   
@@ -55,16 +55,16 @@ This book is highly recommended for:
 * 📅 **Manage Your Day-to-Day** edited by Jocelyn K. Glei: Features insights from various creatives on building routines, finding focus, and managing the daily grind of creative work. 🗓️  
   
 ### 🧘 Contrasting Books (Deep Work & Focus)  
-* 🧠 **[Deep Work](./deep-work.md): Rules for Focused Success in a Distracted World** by Cal Newport: Argues for the value of intense, focused work sessions free from distraction, contrasting with Kleon's emphasis on constant sharing. 📵 It prioritizes concentration over connectivity for producing high-quality work. 🥇  
-* 🌊 **[Flow: The Psychology of Optimal Experience](./flow-the-psychology-of-optimal-experience.md)** by Mihaly Csikszentmihalyi: Explores the state of deep immersion and engagement ("flow") often achieved during solitary, focused creative activity, offering a different perspective on the source of creative fulfillment. ✨  
-* ⚔️ **[The War of Art](./the-war-of-art.md)** by Steven Pressfield: While often recommended alongside Kleon, it focuses intensely on the internal battle against "Resistance" (procrastination, fear, self-doubt) required to sit down and do the work, emphasizing the solitary struggle more than the sharing aspect. 🛡️  
+* 🧠 **[Deep Work](/content/books/deep-work.md): Rules for Focused Success in a Distracted World** by Cal Newport: Argues for the value of intense, focused work sessions free from distraction, contrasting with Kleon's emphasis on constant sharing. 📵 It prioritizes concentration over connectivity for producing high-quality work. 🥇  
+* 🌊 **[Flow: The Psychology of Optimal Experience](/content/books/flow-the-psychology-of-optimal-experience.md)** by Mihaly Csikszentmihalyi: Explores the state of deep immersion and engagement ("flow") often achieved during solitary, focused creative activity, offering a different perspective on the source of creative fulfillment. ✨  
+* ⚔️ **[The War of Art](/content/books/the-war-of-art.md)** by Steven Pressfield: While often recommended alongside Kleon, it focuses intensely on the internal battle against "Resistance" (procrastination, fear, self-doubt) required to sit down and do the work, emphasizing the solitary struggle more than the sharing aspect. 🛡️  
   
 ### ✨ Creatively Related Books (Creativity & Mindset)  
-* 🪄 **[🪄 Big Magic: Creative Living Beyond Fear](./big-magic.md)** by Elizabeth Gilbert: Explores creativity as a mystical force accessible to everyone, encouraging curiosity and courage over fear. 🌟  
-* 🛤️ **[The Artist's Way](./the-artists-way.md)** by Julia Cameron: A classic spiritual path to higher creativity, offering a 12-week program with tools like "Morning Pages" and "Artist Dates" to overcome creative blocks and nurture the inner artist. 💖  
-* 💃 **[The Creative Habit: Learn It and Use It for Life](./the-creative-habit.md)** by Twyla Tharp: A renowned choreographer shares insights on developing and maintaining creativity through discipline, ritual, and habit. 🎶  
+* 🪄 **[🪄 Big Magic: Creative Living Beyond Fear](/content/books/big-magic.md)** by Elizabeth Gilbert: Explores creativity as a mystical force accessible to everyone, encouraging curiosity and courage over fear. 🌟  
+* 🛤️ **[The Artist's Way](/content/books/the-artists-way.md)** by Julia Cameron: A classic spiritual path to higher creativity, offering a 12-week program with tools like "Morning Pages" and "Artist Dates" to overcome creative blocks and nurture the inner artist. 💖  
+* 💃 **[The Creative Habit: Learn It and Use It for Life](/content/books/the-creative-habit.md)** by Twyla Tharp: A renowned choreographer shares insights on developing and maintaining creativity through discipline, ritual, and habit. 🎶  
 * 🏢 **Creativity, Inc.** by Ed Catmull: Co-founder of Pixar shares insights into building and managing a creative culture within an organization, focusing on fostering inspiration and overcoming unseen forces that hinder creativity. 🏢  
 * 😨 **Art & Fear: Observations on the Perils (and Rewards) of Artmaking** by David Bayles & Ted Orland: Discusses the fears and challenges inherent in making art and navigating the creative process. 🎭  
   
-## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
+## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Show Your Work 10 Ways to Share Your Creativity and Get Discovered. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

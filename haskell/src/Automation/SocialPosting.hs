@@ -44,7 +44,7 @@ import System.Environment (lookupEnv)
 import System.FilePath (takeBaseName, takeDirectory, (</>))
 import Text.Regex.TDFA ((=~))
 
-import Automation.DailyUpdates (UpdateLink (..), addUpdateLinksToReflection)
+import Automation.DailyUpdates (UpdateCategory (..), UpdateLink (..), addUpdateLinksToReflection)
 import Automation.EmbedSection
   ( buildBlueskySection
   , buildMastodonSection
@@ -577,7 +577,7 @@ postToMastodonPlatform manager env _note postText =
 -- Posting pipeline
 --------------------------------------------------------------------------------
 
-runPostingPipeline :: Manager -> EnvironmentConfig -> Text -> FilePath -> IO ()
+runPostingPipeline :: Manager -> EnvironmentConfig -> Text -> FilePath -> IO [ContentNote]
 runPostingPipeline manager env apiKey vaultDir = do
   let platforms = getConfiguredPlatforms env
   putStrLn $ "  🔍 Configured platforms: " <> show platforms
@@ -593,11 +593,14 @@ runPostingPipeline manager env apiKey vaultDir = do
 
   contentItems <- discoverContentToPost config isPastHour
   case contentItems of
-    [] -> putStrLn "  📭 No content to post"
+    [] -> do
+      putStrLn "  📭 No content to post"
+      pure []
     items -> do
       putStrLn $ "  📋 Found " <> show (length items) <> " items to post"
       let grouped = groupByNote items
-      mapM_ (processNoteGroup manager env apiKey vaultDir) grouped
+      results <- mapM (processNoteGroup manager env apiKey vaultDir) grouped
+      pure (mapMaybe id results)
 
 groupByNote :: [ContentToPost] -> [([Platform], ContentNote, [Text])]
 groupByNote items =
@@ -611,7 +614,7 @@ groupByNote items =
     merge (p1, n, path) (p2, _, _) = (p1 <> p2, n, path)
 
 processNoteGroup :: Manager -> EnvironmentConfig -> Text -> FilePath
-                 -> ([Platform], ContentNote, [Text]) -> IO ()
+                 -> ([Platform], ContentNote, [Text]) -> IO (Maybe ContentNote)
 processNoteGroup manager env apiKey vaultDir (platforms, note, pathFromRoot) = do
   putStrLn $ "  📝 Processing: " <> T.unpack (cnTitle note)
   putStrLn $ "     Platforms: " <> show platforms
@@ -626,10 +629,13 @@ processNoteGroup manager env apiKey vaultDir (platforms, note, pathFromRoot) = d
         successes
 
   case embedSections of
-    [] -> putStrLn "  ⚠️  No successful posts"
+    [] -> do
+      putStrLn "  ⚠️  No successful posts"
+      pure Nothing
     _  -> do
       Sync.writeEmbedsToNote (cnFilePath note) embedSections
       putStrLn $ "  ✅ " <> show (length successes) <> " embeds written"
+      pure (Just note)
 
 postForPlatform :: Manager -> EnvironmentConfig -> Text -> ContentNote -> Platform
                 -> IO (Either Text PostResult)
@@ -668,11 +674,11 @@ autoPost manager vaultDir = do
   env <- validateEnvironment
   let apiKey = gcApiKey (ecGemini env)
 
-  runPostingPipeline manager env apiKey vaultDir
+  postedNotes <- runPostingPipeline manager env apiKey vaultDir
 
   let reflectionsDir = vaultDir </> "reflections"
   now <- getCurrentTime
   let todayStr = T.pack $ formatTime defaultTimeLocale "%Y-%m-%d" now
-  _ <- addUpdateLinksToReflection reflectionsDir todayStr
-         [ UpdateLink "social-posting" "Social posts published" ]
+      updateLinks = fmap (\cn -> UpdateLink (cnRelativePath cn) (cnTitle cn)) postedNotes
+  _ <- addUpdateLinksToReflection reflectionsDir todayStr SocialPostUpdate updateLinks
   pure ()

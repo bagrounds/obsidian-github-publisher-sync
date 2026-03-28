@@ -7,7 +7,7 @@ URL: https://bagrounds.org/articles/what-to-look-for-in-a-jogging-stroller
 Author:
 tags:
 ---
-[Home](../index.md) > [Articles](./index.md)  
+[Home](/content/index.md) > [Articles](/content/articles/index.md)  
 # 👀👶🏼🏃🏼‍♀️🛣️ [What to Look for in a Jogging Stroller](https://www.consumerreports.org/babies-kids/strollers/jogging-stroller-what-to-look-for-a1118048843)  
 ## 🤖 AI Summary  
 When shopping for a **jogging stroller** 👶 🛒, there are a few key features to keep in mind to keep your child safe and your run smooth 🏃‍♀️. Here’s what CR recommends:  
@@ -19,15 +19,15 @@ When shopping for a **jogging stroller** 👶 🛒, there are a few key features
 - 🛑 **Brakes:** Good brakes are essential. Hand-operated brakes offer better control while running, but foot brakes are common too.  
 - ☀️ **Canopy:** A large, adjustable canopy protects your child from sun 🌞 and light rain 🌧️, and a peekaboo window 👀 is a nice touch for keeping an eye on your little one.  
   
-## [🛍️ Products](../products/index.md)  
-- [👶🏃🌆 Thule Urban Glide 3](../products/thule-urban-glide-3.md)  
+## [🛍️ Products](/content/products/index.md)  
+- [👶🏃🌆 Thule Urban Glide 3](/content/products/thule-urban-glide-3.md)  
   
-## [📚 Books](../books/index.md)  
-* **[🏃🏆👵 The Complete Guide to Running: How to Be a Champion from 9 to 90](../books/the-complete-guide-to-running.md) by Amby Burfoot**: Comprehensive guide on running fundamentals, training, and injury prevention, ideal for integrating stroller running.  
+## [📚 Books](/content/books/index.md)  
+* **[🏃🏆👵 The Complete Guide to Running: How to Be a Champion from 9 to 90](/content/books/the-complete-guide-to-running.md) by Amby Burfoot**: Comprehensive guide on running fundamentals, training, and injury prevention, ideal for integrating stroller running.  
 * 🧘 **"Running with the Mind of Meditation: Lessons for Training Body, Mind, and Spirit" by Sakyong Mipham**: 🧘 Explores mindfulness in running, offering a reflective approach to physical activity.  
 * 👶 **"The Wonder Weeks" by Hetty van de Rijt and Frans Plooij**: 🧠 Insights into baby developmental leaps, helping parents time jogging activities appropriately.  
 * 🍎 **"Nourishing Traditions" by Sally Fallon Morell**: 🍎 Focuses on traditional diets and nutrition, supporting active parent and child health.  
-* **[🏃‍♂️⛰️ Born to Run: A Hidden Tribe, Superathletes, and the Greatest Race the World Has Never Seen](../books/born-to-run-a-hidden-tribe-superathletes-and-the-greatest-race-the-world-has-never-seen.md) by Christopher McDougall**: 🏞️ Inspiring story about human running capacity and outdoor movement, motivating parents to embrace stroller jogging adventures.  
+* **[🏃‍♂️⛰️ Born to Run: A Hidden Tribe, Superathletes, and the Greatest Race the World Has Never Seen](/content/books/born-to-run-a-hidden-tribe-superathletes-and-the-greatest-race-the-world-has-never-seen.md) by Christopher McDougall**: 🏞️ Inspiring story about human running capacity and outdoor movement, motivating parents to embrace stroller jogging adventures.  
 * 👩‍👧‍👦 **"The Mother Runners" by Dimity McDowell and Sarah Bowen Shea**: 🏃‍♀️ Practical advice and relatable experiences for mothers balancing running and parenting.  
 * 🍳 **"Run Fast. Eat Slow." by Shalane Flanagan and Elyse Kopecky**: 🍲 Cookbook with wholesome recipes and nutrition tips from elite runners, fueling active families.  
 * 🛒 **"Stroller" by Amanda Parrish Morgan**: 🛒 A unique "Object Lesson" exploring the cultural significance, history, and role of strollers in modern parenthood.  

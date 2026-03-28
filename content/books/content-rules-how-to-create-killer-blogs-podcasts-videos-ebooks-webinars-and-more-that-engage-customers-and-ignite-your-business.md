@@ -6,7 +6,7 @@ URL: https://bagrounds.org/books/content-rules-how-to-create-killer-blogs-podcas
 share: true
 affiliate link: https://amzn.to/3SzFhnv
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 📣✍️🎞️ Content Rules: How to Create Killer Blogs, Podcasts, Videos, eBooks, Webinars (and More) That Engage Customers and Ignite Your Business  
 [🛒 Content Rules: How to Create Killer Blogs, Podcasts, Videos, eBooks, Webinars (and More) That Engage Customers and Ignite Your Business. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3SzFhnv)  
   
@@ -54,7 +54,7 @@ affiliate link: https://amzn.to/3SzFhnv
   
 ### 👯 Similar Books (Content Marketing & Digital Strategy)  
   
-* **[🌍✍🏿 Everybody Writes: Your Go-To Guide to Creating Ridiculously Good Content](./everybody-writes.md)** by Ann Handley: Handley's follow-up book, focusing specifically on the crucial skill of writing for marketing. 🗣️ It emphasizes that everyone is a writer in the digital age and provides practical advice on writing better, grammar, style, and specific marketing formats.  
+* **[🌍✍🏿 Everybody Writes: Your Go-To Guide to Creating Ridiculously Good Content](/content/books/everybody-writes.md)** by Ann Handley: Handley's follow-up book, focusing specifically on the crucial skill of writing for marketing. 🗣️ It emphasizes that everyone is a writer in the digital age and provides practical advice on writing better, grammar, style, and specific marketing formats.  
 * 🚀 **Epic Content Marketing** by Joe Pulizzi: Considered a comprehensive guide to content marketing, explaining how to create valuable content that attracts customers without overt selling. 👨‍💼 Pulizzi is a leading expert often called the "godfather of content marketing".  
 * 🏢 **Content Inc.** by Joe Pulizzi: Focuses on building a business model around content first, creating massive audiences before monetizing. 💡 Often recommended for entrepreneurs.  
 * ⚙️ **Managing Content Marketing** by Robert Rose & Joe Pulizzi: A real-world guide focusing on the process and management aspects of creating and sustaining a content marketing strategy.  
@@ -67,19 +67,19 @@ affiliate link: https://amzn.to/3SzFhnv
 ### ⚖️ Contrasting Perspectives (Different Marketing/Business Approaches)  
   
 * 📈 **How Brands Grow: What Marketers Don't Know** by Byron Sharp: Challenges many conventional marketing ideas, including aspects of content marketing and loyalty programs, focusing instead on empirical laws of buyer behavior and market penetration.  
-* 🧠 **[Influence](./influence.md): The Psychology of Persuasion** by Robert B. Cialdini: A classic exploring the psychological principles behind why people say "yes," focusing more on the mechanics of persuasion than pure content value.  
+* 🧠 **[Influence](/content/books/influence.md): The Psychology of Persuasion** by Robert B. Cialdini: A classic exploring the psychological principles behind why people say "yes," focusing more on the mechanics of persuasion than pure content value.  
 * 📣 **This is Marketing** by Seth Godin: While sharing some philosophies (like empathy), Godin often takes a higher-level, more philosophical approach to marketing as change-making, less tactical than *Content Rules*.  
 * ❤️ **Marketing Rebellion: The Most Human Company Wins** by Mark W. Schaefer: Argues that consumers are rejecting traditional marketing and that companies need to become radically more human and authentic, which aligns with but perhaps goes beyond the scope of *Content Rules*.  
 * 📢 **Breakthrough Advertising** by Eugene M. Schwartz: A classic copywriting and direct response marketing book focused on understanding customer awareness and crafting powerful sales messages – a different angle than content-driven attraction.  
   
 ### 🎨 Creatively Related (Writing, Storytelling, Specific Formats, Creativity)  
   
-* ✍️ **[📜 On Writing: A Memoir of the Craft](./on-writing.md)** by Stephen King: A celebrated book on the craft of writing, offering practical advice and insights applicable beyond fiction.  
-* 🐦 **[🐦🕊️ Bird by Bird: Some Instructions on Writing and Life](./bird-by-bird.md)** by Anne Lamott: Offers humorous and honest advice on writing and the writing process, focusing on overcoming creative blocks.  
+* ✍️ **[📜 On Writing: A Memoir of the Craft](/content/books/on-writing.md)** by Stephen King: A celebrated book on the craft of writing, offering practical advice and insights applicable beyond fiction.  
+* 🐦 **[🐦🕊️ Bird by Bird: Some Instructions on Writing and Life](/content/books/bird-by-bird.md)** by Anne Lamott: Offers humorous and honest advice on writing and the writing process, focusing on overcoming creative blocks.  
 * 📣 **Building a StoryBrand** by Donald Miller: Provides a popular framework (SB7) for clarifying your message using storytelling principles to connect with customers.  
 * 🗣️ **Stories That Stick** by Kindra Hall: Focuses specifically on how to find, craft, and tell compelling business stories that captivate and influence.  
-* 🧠 **[Made to Stick: Why Some Ideas Survive and Others Die](./made-to-stick.md)** by Chip Heath & Dan Heath: Explores the characteristics of ideas that are memorable and effective, highly relevant to creating impactful content.  
-* **[🔊🎞️🌱🤯 Resonate: Present Visual Stories that Transform Audiences](./resonate.md)** by Nancy Duarte: Focuses on creating presentations that tell compelling visual stories.  
+* 🧠 **[Made to Stick: Why Some Ideas Survive and Others Die](/content/books/made-to-stick.md)** by Chip Heath & Dan Heath: Explores the characteristics of ideas that are memorable and effective, highly relevant to creating impactful content.  
+* **[🔊🎞️🌱🤯 Resonate: Present Visual Stories that Transform Audiences](/content/books/resonate.md)** by Nancy Duarte: Focuses on creating presentations that tell compelling visual stories.  
 * 🧬 **Wired for Story** by Lisa Cron: Explores the neuroscience behind why storytelling is so powerful and how to use it to hook readers.  
 * 🎧 **Books on Podcasting:**  
     * 🎙️ *Profit from Your Podcast* by Dave Jackson  
@@ -94,7 +94,7 @@ affiliate link: https://amzn.to/3SzFhnv
     * 🏢 *Everyday Business Storytelling* by Janine Kurnoff & Lee Lazarus  
     * 🦸 *Lead with a Story* by Paul Smith  
     * 📖 *Let the Story Do the Work* by Esther K. Choy  
-* ✨ **[🪄 Big Magic: Creative Living Beyond Fear](./big-magic.md)** by Elizabeth Gilbert: Explores creativity and overcoming the fears associated with putting your work out into the world.".  
+* ✨ **[🪄 Big Magic: Creative Living Beyond Fear](/content/books/big-magic.md)** by Elizabeth Gilbert: Explores creativity and overcoming the fears associated with putting your work out into the world.".  
   
-## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
+## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Content Rules: How to Create Killer Blogs, Podcasts, Videos, eBooks, Webinars (and More) That Engage Customers and Ignite Your Business. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

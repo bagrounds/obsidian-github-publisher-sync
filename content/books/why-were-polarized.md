@@ -9,7 +9,7 @@ tags:
 CTA: 🧠 Grasp the divide.
 affiliate link: https://www.amazon.com/dp/1476700362?tag=bagrounds-20
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # ↔️ Why We're Polarized  
 [🛒 Why We're Polarized. As an Amazon Associate I earn from qualifying purchases.](https://www.amazon.com/dp/1476700362?tag=bagrounds-20)  
 👯 Identity politics and sorting mechanisms explain America's deepening partisan divide, driven by group-based animosity rather than ideological disagreement.  
@@ -65,19 +65,19 @@ affiliate link: https://www.amazon.com/dp/1476700362?tag=bagrounds-20
   
 ## 📖 Book Recommendations  
 ### ↔️ Similar  
-* [😇🧠 The Righteous Mind](./the-righteous-mind.md) by Jonathan Haidt  
-* [🫥🇺🇸😡💔 Strangers in Their Own Land: Anger and Mourning on the American Right](./strangers-in-their-own-land.md) by Arlie Russell Hochschild  
+* [😇🧠 The Righteous Mind](/content/books/the-righteous-mind.md) by Jonathan Haidt  
+* [🫥🇺🇸😡💔 Strangers in Their Own Land: Anger and Mourning on the American Right](/content/books/strangers-in-their-own-land.md) by Arlie Russell Hochschild  
 * 🌐 The Divided Brain and the Making of the Western World by Iain McGilchrist  
   
 ### ⚖️ Contrasting  
-* [🤝📈🇺🇸🔁 The Upswing: How America Came Together a Century Ago and How We Can Do It Again](./the-upswing.md) by Robert D. Putnam and Shaylyn Romney Garrett  
+* [🤝📈🇺🇸🔁 The Upswing: How America Came Together a Century Ago and How We Can Do It Again](/content/books/the-upswing.md) by Robert D. Putnam and Shaylyn Romney Garrett  
 * 📉 Coming Apart by Charles Murray  
 * 🚫 Against Empathy by Paul Bloom  
   
 ### 🔗 Related  
-* [🤔🐇🐢 Thinking, Fast and Slow](./thinking-fast-and-slow.md) by Daniel Kahneman  
-* [👉🤏 Nudge](./nudge.md) by Richard H. Thaler and Cass R. Sunstein  
-* [🎳🏘️📉📈 Bowling Alone](./bowling-alone.md) by Robert D. Putnam  
+* [🤔🐇🐢 Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md) by Daniel Kahneman  
+* [👉🤏 Nudge](/content/books/nudge.md) by Richard H. Thaler and Cass R. Sunstein  
+* [🎳🏘️📉📈 Bowling Alone](/content/books/bowling-alone.md) by Robert D. Putnam  
   
 ## 🫵 What Do You Think?  
 🤔 What aspects of Why We're Polarized resonated most with you, and which of its arguments do you find most challenging or incomplete in explaining today's political landscape?  

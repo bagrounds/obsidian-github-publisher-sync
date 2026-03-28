@@ -10,7 +10,7 @@ Channel: PBS NewsHour
 tags:
 youtube: https://youtu.be/NcvDcWSXsmI
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md)  
 # 😠🗣️👎 WATCH: Sen. Kelly holds a news conference on Trump and Hegseth's 'efforts to intimidate him'  
 ![WATCH: Sen. Kelly holds a news conference on Trump and Hegseth's 'efforts to intimidate him'](https://youtu.be/NcvDcWSXsmI)  
   
@@ -54,7 +54,7 @@ youtube: https://youtu.be/NcvDcWSXsmI
   
 ### ↔️ Similar  
 * 📚 The Soldier and the State by Samuel P. Huntington. 💡 This foundational text establishes the theory of objective civilian control, arguing military professionalism thrives when separated from partisan politics.  
-* [🗳️🏛️☠️ How Democracies Die](../books/how-democracies-die.md) by Steven Levitsky and Daniel Ziblatt. 🏛️ Explores how elected leaders can weaken democratic institutions and norms, including weaponizing government agencies against political opponents.  
+* [🗳️🏛️☠️ How Democracies Die](/content/books/how-democracies-die.md) by Steven Levitsky and Daniel Ziblatt. 🏛️ Explores how elected leaders can weaken democratic institutions and norms, including weaponizing government agencies against political opponents.  
   
 ### 🆚 Contrasting  
 * 🤔 On Obedience: Contrasting Philosophies for the Military, Citizenry, and Community by Pauline Shanks Kaurin. 📜 Examines the ethical dimension of military obedience, contrasting blind obedience with loyalty to constitutional principles and professional ethics.  

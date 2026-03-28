@@ -11,15 +11,15 @@ image_date: 2026-03-23T17:31:48.038Z
 image_model: black-forest-labs/FLUX.1-schnell
 image_prompt: A warm, sun-drenched pastoral scene featuring a weathered wooden journal lying open on a rustic porch railing. Resting atop the journal is a simple, vintage-style fountain pen. In the soft-focus background, a lush green pasture stretches toward a horizon of rolling hills, with a small, tidy coop visible in the distance. The lighting is golden and hazy, evocative of late Sunday afternoon. A few stray feathers catch the light near the journal, and the texture of aged paper and rough-hewn wood is prominent. The color palette consists of soft earth tones, muted greens, and warm amber light, creating an atmosphere of quiet reflection and peaceful stewardship.
 ---
-[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-03-14-the-quiet-after-the-storm-moving-forward-together.md) [⏭️](./2026-03-16-the-quiet-art-of-waiting.md)  
+[Home](/content/index.md) > [🐔 Chickie Loo](/content/chickie-loo/index.md) | [⏮️](/content/chickie-loo/2026-03-14-the-quiet-after-the-storm-moving-forward-together.md) [⏭️](/content/chickie-loo/2026-03-16-the-quiet-art-of-waiting.md)  
 # 2026-03-15 | 🐔📊 Weekly Recap 🐔  
-![chickie-loo-2026-03-15-weekly-recap](../chickie-loo-2026-03-15-weekly-recap.jpg)  
+![chickie-loo-2026-03-15-weekly-recap](/content/chickie-loo-2026-03-15-weekly-recap.jpg)  
   
 🌿 Hello, my dear friend. 👋 It has been a busy week here on the ranch, full of the quiet, dusty work that defines our days. 📖 As we close out this Sunday, I wanted to take a moment to look back at the lessons we have been learning together. 🌤️  
   
 ### 🐔 A Look Back at Our Week  
   
-📝 Our week was deeply colored by the difficult, necessary conversation we started in [2026-03-12 | 🐔 The Rooster Problem - Love, Guilt, and Hard Choices on the Ranch 🐔](./2026-03-12-the-rooster-problem.md). 💔 It is never easy to reconcile the tenderness we feel for our animals with the practical, often harsh realities of stewardship. 🧤 We discussed the math of our flock, the stress of over-population, and the heavy weight of making decisions that protect the well-being of the entire group. 🕊️ It was a reminder that whether we are managing a classroom of students or a coop of birds, our primary role is to create an environment where the vulnerable can thrive. 🏫➡️🐓  
+📝 Our week was deeply colored by the difficult, necessary conversation we started in [2026-03-12 | 🐔 The Rooster Problem - Love, Guilt, and Hard Choices on the Ranch 🐔](/content/chickie-loo/2026-03-12-the-rooster-problem.md). 💔 It is never easy to reconcile the tenderness we feel for our animals with the practical, often harsh realities of stewardship. 🧤 We discussed the math of our flock, the stress of over-population, and the heavy weight of making decisions that protect the well-being of the entire group. 🕊️ It was a reminder that whether we are managing a classroom of students or a coop of birds, our primary role is to create an environment where the vulnerable can thrive. 🏫➡️🐓  
   
 ### ⭐ A Special Note from Our Reader  
   
@@ -50,8 +50,8 @@ image_prompt: A warm, sun-drenched pastoral scene featuring a weathered wooden j
   
 ### ✨ Similar  
   
-- [🪢🌾 Braiding Sweetgrass](../books/braiding-sweetgrass.md) by Robin Wall Kimmerer  
-- [🌲 Walden](../books/walden.md) by Henry David Thoreau  
+- [🪢🌾 Braiding Sweetgrass](/content/books/braiding-sweetgrass.md) by Robin Wall Kimmerer  
+- [🌲 Walden](/content/books/walden.md) by Henry David Thoreau  
   
 ### 🧠 Deeper Exploration  
   

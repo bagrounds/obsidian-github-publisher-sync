@@ -7,7 +7,7 @@ share: true
 affiliate link: https://amzn.to/3Xdewr5
 CTA: 🇺🇸 Understand America.
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🇺🇸📖 These Truths: A History of the United States  
 [🛒 These Truths: A History of the United States. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3Xdewr5)  
   
@@ -80,7 +80,7 @@ CTA: 🇺🇸 Understand America.
   
 ### 🔗 Related  
 * 🗑️ White Trash: The 400-Year Untold History of Class in America by Nancy Isenberg: Explores class conflict and the myth of a classless American society.  
-* [💰🤫 Dark Money: The Hidden History of the Billionaires Behind the Rise of the Radical Right](./dark-money-the-hidden-history-of-the-billionaires-behind-the-rise-of-the-radical-right.md) by Jane Mayer: Investigates the influence of wealth on American politics.  
+* [💰🤫 Dark Money: The Hidden History of the Billionaires Behind the Rise of the Radical Right](/content/books/dark-money-the-hidden-history-of-the-billionaires-behind-the-rise-of-the-radical-right.md) by Jane Mayer: Investigates the influence of wealth on American politics.  
 * 🏘️ The Color of Law: A Forgotten History of How Our Government Segregated America by Richard Rothstein: Details government-imposed racial segregation.  
   
 ## 🫵 What Do You Think?  

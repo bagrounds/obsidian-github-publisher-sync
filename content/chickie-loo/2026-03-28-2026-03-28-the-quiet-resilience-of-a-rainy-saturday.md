@@ -12,7 +12,7 @@ image_date: 2026-03-28T14:19:17Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A cozy, atmospheric close-up of a rustic wooden porch during a gentle rain. A steaming ceramic mug rests on a weathered railing, with droplets of water clinging to the wood grain. In the soft-focus background, a lush, green orchard is partially obscured by a light, misty veil of rain. A pair of well-worn gardening gloves sits folded on a nearby bench, suggesting a moment of pause. The color palette is composed of muted earth tones, soft mossy greens, and cool, moody greys, captured in warm, diffused natural light that evokes a sense of peace, stillness, and domestic comfort.
 ---
-[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-03-27-a-dance-on-the-side-of-the-road-and-the-strength-of-a-shared-life.md)  
+[🏡 Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-03-27-a-dance-on-the-side-of-the-road-and-the-strength-of-a-shared-life.md)  
 # 2026-03-28 | 🐔 🌿 The Quiet Resilience of a Rainy Saturday 🌿 🐔  
 ![chickie-loo-2026-03-28-2026-03-28-the-quiet-resilience-of-a-rainy-saturday](../chickie-loo-2026-03-28-2026-03-28-the-quiet-resilience-of-a-rainy-saturday.jpg)  
   

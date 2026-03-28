@@ -10,7 +10,7 @@ Channel: Barack Obama
 tags:
 youtube: https://youtu.be/EM9B8Qin9ac
 ---
-[Home](../index.md) > [Videos](./index.md) | [🏛️🇺🇸📖 Heather Cox Richardson](../people/heather-cox-richardson.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md) | [🏛️🇺🇸📖 Heather Cox Richardson](/content/people/heather-cox-richardson.md)  
 # 👨🏿🗣️🏛️ The Connecticut Forum: President Barack Obama in Conversation with Heather Cox Richardson  
 ![President Barack Obama in Conversation with Heather Cox Richardson | The Connecticut Forum](https://youtu.be/EM9B8Qin9ac)  
   
@@ -47,8 +47,8 @@ youtube: https://youtu.be/EM9B8Qin9ac
   
 ## 📚 Book Recommendations  
   
-* [➡️🌟🗺️ A Promised Land](../books/a-promised-land.md): **Similar**—Provides the essential context for the speaker's own political philosophy, particularly the tension between working for change within the system and pushing against it.  
-* [✊🏿 How To Be An Antiracist](../books/how-to-be-an-antiracist.md): **Contrasting**—A contrasting perspective that would reject the incremental, "game of addition" approach in favor of immediate, structural transformation to dismantle systemic hierarchy.  
-* [🗳️🕊️🇺🇸 Democracy in America](../books/democracy-in-america.md): **Similar**—Offers a timeless analysis of the American experiment, focusing on the power of **civil society** and the importance of **association** (which relates to the use of Meetup) to counteract a political system's potential failings.  
+* [➡️🌟🗺️ A Promised Land](/content/books/a-promised-land.md): **Similar**—Provides the essential context for the speaker's own political philosophy, particularly the tension between working for change within the system and pushing against it.  
+* [✊🏿 How To Be An Antiracist](/content/books/how-to-be-an-antiracist.md): **Contrasting**—A contrasting perspective that would reject the incremental, "game of addition" approach in favor of immediate, structural transformation to dismantle systemic hierarchy.  
+* [🗳️🕊️🇺🇸 Democracy in America](/content/books/democracy-in-america.md): **Similar**—Offers a timeless analysis of the American experiment, focusing on the power of **civil society** and the importance of **association** (which relates to the use of Meetup) to counteract a political system's potential failings.  
 * 📰 The Death of Truth: **Creatively Related**—Directly addresses the collapse of a "common sense of truth" and the undermining of fact-based political discourse due to a flood of disinformation and digital noise.  
-* [😇🧠 The Righteous Mind: Why Good People Are Divided by Politics and Religion](../books/the-righteous-mind.md): **Creatively Related**—Explores the psychological and moral roots of political division, explaining *why* the brain is attracted to anger and resentment, and how to potentially bridge these gaps.
+* [😇🧠 The Righteous Mind: Why Good People Are Divided by Politics and Religion](/content/books/the-righteous-mind.md): **Creatively Related**—Explores the psychological and moral roots of political division, explaining *why* the brain is attracted to anger and resentment, and how to potentially bridge these gaps.

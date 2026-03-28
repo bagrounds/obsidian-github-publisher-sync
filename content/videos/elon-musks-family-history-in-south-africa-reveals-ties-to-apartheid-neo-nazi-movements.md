@@ -9,7 +9,7 @@ Platform:
 Channel: Democracy Now!
 tags:
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md)  
 # 🇿🇦👨‍👩‍👧‍👦⛓️卐 Elon Musk's Family History in South Africa Reveals Ties to Apartheid & Neo-Nazi Movements  
 ![Elon Musk's Family History in South Africa Reveals Ties to Apartheid & Neo-Nazi Movements](https://youtu.be/Ahv3IKzMdHA)  
   
@@ -52,7 +52,7 @@ tags:
 ## 📚 Book Recommendations  
   
 ### ↔️ Similar  
-- [🇿🇦 The New Apartheid](../books/the-new-apartheid.md) by Sizwe Mpofu-Walsh. 📖 Analyzes contemporary South Africa, arguing that the failure to address historical land dispossession and constitutional deficiencies has led to a new form of racial inequality.  
+- [🇿🇦 The New Apartheid](/content/books/the-new-apartheid.md) by Sizwe Mpofu-Walsh. 📖 Analyzes contemporary South Africa, arguing that the failure to address historical land dispossession and constitutional deficiencies has led to a new form of racial inequality.  
 - I Write What I Like by Steve Biko. ✊ A collection of writings from the leader of the Black Consciousness Movement, offering a primary-source perspective on the anti-Apartheid ideological struggle during the era in which Musk was growing up.  
   
 ### 🆚 Contrasting  

@@ -221,11 +221,6 @@ export async function syncObsidianVault(credentials: {
     `obsidian-vault-${process.pid}`,
   );
 
-  // Always do a clean sync: clear directory, sync-setup, sync
-  if (fs.existsSync(vaultDir)) {
-    console.log(`🧹 Clearing vault directory for clean sync-setup (data loss prevention)...`);
-    fs.rmSync(vaultDir, { recursive: true, force: true });
-  }
   fs.mkdirSync(vaultDir, { recursive: true });
 
   const setupArgs = ["sync-setup", "--vault", credentials.vaultName, "--path", vaultDir];

@@ -153,9 +153,6 @@ syncObsidianVault creds = do
 
 coldCacheSync :: ObsidianCredentials -> FilePath -> [(String, String)] -> IO FilePath
 coldCacheSync creds vaultDir env = do
-  putStrLn "🧹 Clearing vault directory for clean sync-setup (data loss prevention)..."
-  exists <- doesDirectoryExist vaultDir
-  when exists $ removeDirectoryRecursive vaultDir
   createDirectoryIfMissing True vaultDir
   let setupArgs = ["sync-setup", "--vault", T.unpack $ ocVaultName creds, "--path", vaultDir]
         <> maybe [] (\pw -> ["--password", T.unpack pw]) (ocVaultPassword creds)

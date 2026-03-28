@@ -28,8 +28,8 @@ Author: "[[github-copilot-agent]]"
 ## ✅ The New Architecture
 
 🎯 The new design follows one simple principle: pull once, edit, push once.
-📥 At the beginning of every scheduled run, the vault is pulled fresh from scratch into a clean directory.
-🧹 Every pull completely clears the vault directory before running sync-setup, ensuring zero stale files.
+📥 At the beginning of every scheduled run, the vault is pulled fresh into a new directory inside an ephemeral CI container.
+🏗️ Since there is no caching, the vault directory simply does not exist at the start of a run, so there is nothing to clear or delete.
 ✏️ Each task receives the vault directory as a parameter and operates on it directly without any sync operations.
 📤 At the very end of the run, a single push sends all accumulated changes back to the vault.
 🛑 The pre-push circuit breaker remains as a safety net, refusing to push if any files have been lost relative to the post-pull baseline.

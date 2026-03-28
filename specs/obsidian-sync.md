@@ -22,8 +22,8 @@
 ```
 main()
   ├─ 📥 syncObsidianVault(credentials)     ← ONE pull at the start
-  │       ├─ 🧹 Clear vault directory completely
-  │       ├─ 📦 ob sync-setup → configure vault on clean directory
+  │       ├─ 📂 Create fresh vault directory (ephemeral CI — nothing exists yet)
+  │       ├─ 📦 ob sync-setup → configure vault
   │       ├─ 🔄 ob sync → download all files
   │       └─ 📊 Record file count baseline
   │
@@ -49,12 +49,13 @@ main()
 
 ## 🛡️ Data Loss Prevention
 
-### 🧹 Always-Clean Sync
+### 📂 Ephemeral Vault Directory
 
-🧹 Every call to `syncObsidianVault` completely clears the vault directory before running `sync-setup`.
-🔒 This ensures no stale files exist that `ob sync` could misinterpret as intentional deletions.
-⚠️ **Root Cause (2026-03-27 incident):** Bidirectional `ob sync` on a partial cache directory interpreted missing remote files as local deletions, propagating mass deletions to the remote vault.
-✅ **Prevention:** No caching. Every sync starts from a clean, empty directory.
+🏗️ Every scheduled run executes in a fresh ephemeral CI container with no pre-existing vault directory.
+📂 `syncObsidianVault` creates a new directory via `ob sync-setup` and populates it with `ob sync`.
+🚫 No files are ever deleted — this system only creates and edits files.
+⚠️ **Root Cause (2026-03-27 incident):** Bidirectional `ob sync` on a cached partial directory interpreted missing remote files as local deletions, propagating mass deletions to the remote vault.
+✅ **Prevention:** No caching. No directory clearing. Ephemeral containers start from nothing every run.
 
 ### 📊 File Count Baseline Tracking
 
@@ -116,7 +117,7 @@ main()
 | `killObProcesses(vaultDir?)` | 💀 Kill lingering obsidian-headless processes |
 | `ensureSyncClean(vaultDir)` | 🧹 Kill processes and remove lock for clean state |
 | `runObSyncWithRetry(args, options, vaultDir, maxRetries)` | 🔄 Run ob sync with lock contention retry |
-| `syncObsidianVault(credentials)` | 📥 Fresh vault pull — always clean sync-setup + sync |
+| `syncObsidianVault(credentials)` | 📥 Fresh vault pull — create directory, sync-setup, sync |
 | `pushObsidianVault(vaultDir, credentials)` | 📤 Push local changes with circuit breaker validation |
 | `writeEmbedsToNote(filePath, sections)` | ✏️ Write embed sections to a note file (no sync) |
 | `appendEmbedsToObsidianNote(notePath, sections, credentials)` | 📝 Pull, write embeds, push (standalone convenience) |
@@ -129,6 +130,6 @@ main()
 ✅ Sync operations are safe to re-run:
 - 🔒 Lock cleanup prevents deadlocks from previous failed runs
 - 💀 Process cleanup prevents resource leaks
-- 🧹 Every pull starts from a clean directory — no stale state
+- 📂 Every pull starts from an empty ephemeral directory — no stale state
 - 📝 Embed writing checks for existing sections before appending
 - 🛑 Circuit breaker prevents catastrophic deletion propagation

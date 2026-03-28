@@ -9,15 +9,15 @@ affiliate link: https://amzn.to/47iuypP
 tags:
   - MMT
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 💼✅ The Case for a Job Guarantee  
 [🛒 The Case for a Job Guarantee. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/47iuypP)  
   
 📢 Persistent unemployment is a policy choice, not an economic necessity. A 🏦 federally funded, locally administered job guarantee provides a 🔄 permanent counter-cyclical stabilizer and a ⚖️ foundational human right to decent, living-wage work.  
   
 ## 📝🐒 Human Notes  
-- [🏦♾️📈💸 Modern Monetary Theory](../topics/modern-monetary-theory.md)  
-- [🧑‍💼🛡️ Job Guarantee, Employer of Last Resort](../topics/job-guarantee-employer-of-last-resort.md)  
+- [🏦♾️📈💸 Modern Monetary Theory](/content/topics/modern-monetary-theory.md)  
+- [🧑‍💼🛡️ Job Guarantee, Employer of Last Resort](/content/topics/job-guarantee-employer-of-last-resort.md)  
   
 ## 🏆 Pavlina Tcherneva's Job Guarantee Strategy  
   
@@ -73,9 +73,9 @@ tags:
 ## 📚 Book Recommendations  
   
 ### Similar  
-* [💰📉➡️📈🗳️ The Deficit Myth: Modern Monetary Theory and the Birth of the People's Economy](./the-deficit-myth.md) by Stephanie Kelton  
-* [🧑‍🤝‍🧑✅🌍 Full Employment and Social Justice: Solidarity and Sustainability](./full-employment-and-social-justice-solidarity-and-sustainability.md) by Bill Mitchell  
-* [💰🇺🇸 Making Money Work for Us: How MMT Can Save America](./making-money-work-for-us-how-mmt-can-save-america.md) by L. Randall Wray  
+* [💰📉➡️📈🗳️ The Deficit Myth: Modern Monetary Theory and the Birth of the People's Economy](/content/books/the-deficit-myth.md) by Stephanie Kelton  
+* [🧑‍🤝‍🧑✅🌍 Full Employment and Social Justice: Solidarity and Sustainability](/content/books/full-employment-and-social-justice-solidarity-and-sustainability.md) by Bill Mitchell  
+* [💰🇺🇸 Making Money Work for Us: How MMT Can Save America](/content/books/making-money-work-for-us-how-mmt-can-save-america.md) by L. Randall Wray  
   
 ### Contrasting  
 * The Road to Serfdom by F.A. Hayek  
@@ -85,7 +85,7 @@ tags:
 ### Related  
 * A Planet to Win: Why We Need a Green New Deal by Kate Aronoff et al.  
 * Democracy at Work: A Cure for Capitalism by Richard D. Wolff  
-* [🏆🎭 Winners Take All: The Elite Charade of Changing the World](./winners-take-all-the-elite-charade-of-changing-the-world.md) by Anand Giridharadas  
+* [🏆🎭 Winners Take All: The Elite Charade of Changing the World](/content/books/winners-take-all-the-elite-charade-of-changing-the-world.md) by Anand Giridharadas  
   
 ## 🫵 What Do You Think?  
 🤔 Do you believe a universal job guarantee is a moral imperative or an economic overreach? 🏘️ How do you foresee such a program impacting local communities and the private sector in your region? 🗣️ Share your perspectives below!

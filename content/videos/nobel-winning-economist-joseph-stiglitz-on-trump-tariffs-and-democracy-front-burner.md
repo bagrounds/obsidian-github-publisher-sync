@@ -9,7 +9,7 @@ Platform:
 Channel: CBC News
 tags:
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md)  
 # Nobel-winning economist Joseph Stiglitz on Trump, tariffs and democracy | Front Burner  
 ![Nobel-winning economist Joseph Stiglitz on Trump, tariffs and democracy | Front Burner](https://youtu.be/OZewujVpx2E)  
   

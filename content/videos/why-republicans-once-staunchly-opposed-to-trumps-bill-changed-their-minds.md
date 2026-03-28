@@ -10,7 +10,7 @@ Channel: PBS NewsHour
 tags:
 youtube: https://youtu.be/Ijbo9yKRGI0
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md)  
 # 🤔➡️💰 Why Republicans once staunchly opposed to Trump's bill changed their minds  
 ![Why Republicans once staunchly opposed to Trump's bill changed their minds](https://youtu.be/Ijbo9yKRGI0)  
   
@@ -28,17 +28,17 @@ The key reasons for this shift include:
   
 ## 📚 Book Recommendations  
 * **Political Influence and Power Dynamics:**  
-    * [👑🚫📜2️⃣0️⃣ On Tyranny: Twenty Lessons from the Twentieth Century](../books/on-tyranny.md) by Timothy Snyder  
-    * [😇🧠 The Righteous Mind: Why Good People Are Divided by Politics and Religion](../books/the-righteous-mind.md) by Jonathan Haidt  
+    * [👑🚫📜2️⃣0️⃣ On Tyranny: Twenty Lessons from the Twentieth Century](/content/books/on-tyranny.md) by Timothy Snyder  
+    * [😇🧠 The Righteous Mind: Why Good People Are Divided by Politics and Religion](/content/books/the-righteous-mind.md) by Jonathan Haidt  
 * **Fiscal Policy and National Debt:**  
     * *Basic Economics: A Common Sense Guide to the Economy* by Thomas Sowell  
-    * [💰📉➡️📈🗳️ The Deficit Myth: Modern Monetary Theory and the Birth of the People's Economy](../books/the-deficit-myth.md) by Stephanie Kelton  
+    * [💰📉➡️📈🗳️ The Deficit Myth: Modern Monetary Theory and the Birth of the People's Economy](/content/books/the-deficit-myth.md) by Stephanie Kelton  
 * **Healthcare Policy and Medicaid:**  
-    * [⚕️💰🇺🇸 The Healing of America: A Global Quest for Better, Cheaper, and Fairer Health Care](../books/the-healing-of-america-a-global-quest-for-better-cheaper-and-fairer-health-care.md) by T.R. Reid  
-    * [💰⚕️⬆️ An American Sickness: How Healthcare Became Big Business and How You Can Take It Back](../books/an-american-sickness-how-healthcare-became-big-business-and-how-you-can-take-it-back.md) by Elisabeth Rosenthal  
+    * [⚕️💰🇺🇸 The Healing of America: A Global Quest for Better, Cheaper, and Fairer Health Care](/content/books/the-healing-of-america-a-global-quest-for-better-cheaper-and-fairer-health-care.md) by T.R. Reid  
+    * [💰⚕️⬆️ An American Sickness: How Healthcare Became Big Business and How You Can Take It Back](/content/books/an-american-sickness-how-healthcare-became-big-business-and-how-you-can-take-it-back.md) by Elisabeth Rosenthal  
 * **American Politics and Voter Behavior:**  
-    * [🫥🇺🇸😡💔 Strangers in Their Own Land](../books/strangers-in-their-own-land.md) by Arlie Russell Hochschild  
-    * [👻🇺🇸⚔️🪽 The Soul of America: The Battle for Our Better Angels](../books/the-soul-of-america-the-battle-for-our-better-angels.md) by Jon Meacham  
+    * [🫥🇺🇸😡💔 Strangers in Their Own Land](/content/books/strangers-in-their-own-land.md) by Arlie Russell Hochschild  
+    * [👻🇺🇸⚔️🪽 The Soul of America: The Battle for Our Better Angels](/content/books/the-soul-of-america-the-battle-for-our-better-angels.md) by Jon Meacham  
   
 ## 🐦 Tweet  
 <blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">🤔➡️💰 Why Republicans once staunchly opposed to Trump&#39;s bill changed their minds<a href="https://twitter.com/NewsHour?ref_src=twsrc%5Etfw">@NewsHour</a><br><br>👹 <a href="https://twitter.com/realDonaldTrump?ref_src=twsrc%5Etfw">@realDonaldTrump</a> Demands | 🐕 Republicans Comply | 🫡😰 Cowardice | 💸 Higher Deficits | 🔪 Medicaid | ✂️ SNAP | 🏛️🏷️ <a href="https://twitter.com/lisamurkowski?ref_src=twsrc%5Etfw">@lisamurkowski</a> Sellout | 🇺🇸 Happy 4th 🎆<a href="https://t.co/TRUCMK81fA">https://t.co/TRUCMK81fA</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/1941290453871325626?ref_src=twsrc%5Etfw">July 5, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

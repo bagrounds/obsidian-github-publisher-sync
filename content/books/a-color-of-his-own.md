@@ -6,7 +6,7 @@ URL: https://bagrounds.org/books/a-color-of-his-own
 share: true
 affiliate link: https://amzn.to/4mJOfwg
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🌈🦎 A Color of His Own  
 [🛒 A Color of His Own. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4mJOfwg)  
   
@@ -67,7 +67,7 @@ affiliate link: https://amzn.to/4mJOfwg
 ### 🎭 Contrasting Concepts (Fixed vs. Changing, Solitary vs. Group)  
   
 * **🔒 Books with Fixed or Strong Identities:**  
-    * [🐛🍎 The Very Hungry Caterpillar](./the-very-hungry-caterpillar.md) by Eric Carle (Focuses on transformation but the caterpillar has a clear, singular identity at each stage).  
+    * [🐛🍎 The Very Hungry Caterpillar](/content/books/the-very-hungry-caterpillar.md) by Eric Carle (Focuses on transformation but the caterpillar has a clear, singular identity at each stage).  
     * 🦒 *Giraffes Can't Dance* by Giles Andreae (Gerald the giraffe discovers his unique talent, reinforcing a personal identity).  
     * 🐘 *Elmer* by David McKee (Elmer is a patchwork elephant who learns the value of his own unique appearance).  
   
@@ -91,7 +91,7 @@ affiliate link: https://amzn.to/4mJOfwg
 * **🌟 Books with Simple, Profound Messages and Distinctive Art:**  
     * 🦁 Other books by Leo Lionni, such as *Frederick*, *Inch by Inch*, and *Alexander and the Wind-Up Mouse* (Share similar themes of identity, friendship, and unique artistic styles).  
     * 🎨 Books by Eric Carle (Known for distinctive collage art and simple, engaging stories about animals and nature).  
-    * [🤴 The Little Prince](./the-little-prince.md) by Antoine de Saint-Exupéry (A more complex read, but shares themes of unique perspectives, friendship, and seeing with the heart).  
+    * [🤴 The Little Prince](/content/books/the-little-prince.md) by Antoine de Saint-Exupéry (A more complex read, but shares themes of unique perspectives, friendship, and seeing with the heart).  
   
-## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
+## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on A Color of His Own. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

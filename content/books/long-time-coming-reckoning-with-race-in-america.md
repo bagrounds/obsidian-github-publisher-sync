@@ -9,7 +9,7 @@ tags:
 affiliate link: https://amzn.to/3HkBKa8
 CTA: Embrace uncomfortable truths.
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🧑🏿⚖️🧑🏻 Long Time Coming: Reckoning With Race In America  
 [🛒 Long Time Coming: Reckoning With Race In America. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3HkBKa8)  
   
@@ -63,11 +63,11 @@ by Michael Eric Dyson
 ### 📖 Similar Books (Further Reading on Race and Reckoning)  
   
 * ✉️ **"Between the World and Me" by Ta-Nehisi Coates:** Structured as a letter to his son, this book offers a personal and historical exploration of the vulnerability of Black bodies in America.  
-* **[🧑🏿⛓️🙈 The New Jim Crow: Mass Incarceration in the Age of Colorblindness](./the-new-jim-crow-mass-incarceration-in-the-age-of-colorblindness.md) by Michelle Alexander:** A seminal work arguing that the U.S. criminal justice system functions as a contemporary system of racial control.  
+* **[🧑🏿⛓️🙈 The New Jim Crow: Mass Incarceration in the Age of Colorblindness](/content/books/the-new-jim-crow-mass-incarceration-in-the-age-of-colorblindness.md) by Michelle Alexander:** A seminal work arguing that the U.S. criminal justice system functions as a contemporary system of racial control.  
 * 🗓️ **"Stamped from the Beginning: The Definitive History of Racist Ideas in America" by Ibram X. Kendi:** A comprehensive history tracing the origins and evolution of anti-Black racist ideas and their power throughout American history.  
 * 🏰 **"Caste: The Origins of Our Discontents" by Isabel Wilkerson:** Argues that America's racial hierarchy functions as an entrenched caste system, drawing parallels with caste systems in other countries.  
 * 🎤 **"Tears We Cannot Stop: A Sermon to White America" by Michael Eric Dyson:** An earlier work by Dyson that also directly confronts white America about its role in racial inequality, written with similar passion.  
-* **[✊🏿 How To Be An Antiracist](./how-to-be-an-antiracist.md) by Ibram X. Kendi:** Offers a framework for understanding and actively opposing racism, moving beyond mere non-racism.  
+* **[✊🏿 How To Be An Antiracist](/content/books/how-to-be-an-antiracist.md) by Ibram X. Kendi:** Offers a framework for understanding and actively opposing racism, moving beyond mere non-racism.  
   
 ### 🔄 Contrasting Perspectives  
   
@@ -82,10 +82,10 @@ by Michael Eric Dyson
 * 🚂 **"The Underground Railroad" by Colson Whitehead (Fiction):** A novel that reimagines the Underground Railroad as a literal train system, exploring the brutality of slavery and the quest for freedom in a fantastical yet historically grounded way.  
 * 👻 **"Beloved" by Toni Morrison (Fiction):** A haunting novel delving into the psychological trauma of slavery through the story of a former enslaved woman haunted by her past.  
 * 🎤 **"Citizen: An American Lyric" by Claudia Rankine (Poetry/Essay):** A powerful blend of poetry, essays, and images documenting the everyday experiences of racism and microaggressions faced by Black Americans.  
-* **[🧑🏿‍⚖️🔄 Just Mercy: A Story of Justice and Redemption](./just-mercy-a-story-of-justice-and-redemption.md) by Bryan Stevenson (Memoir/Nonfiction):** The story of the Equal Justice Initiative, focusing on wrongful convictions and the injustices within the US legal system, particularly for Black men on death row.  
+* **[🧑🏿‍⚖️🔄 Just Mercy: A Story of Justice and Redemption](/content/books/just-mercy-a-story-of-justice-and-redemption.md) by Bryan Stevenson (Memoir/Nonfiction):** The story of the Equal Justice Initiative, focusing on wrongful convictions and the injustices within the US legal system, particularly for Black men on death row.  
 * ☀️ **"The Warmth of Other Suns: The Epic Story of America's Great Migration" by Isabel Wilkerson (Narrative Nonfiction):** Chronicles the decades-long migration of Black citizens from the South to the North and West, exploring the hopes and challenges they faced.  
 * 🏋️ **"Heavy: An American Memoir" by Kiese Laymon (Memoir):** A deeply personal memoir exploring themes of race, weight, family, trauma, and growing up Black in Mississippi.  
 * 🌃 **"Arc of Justice: A Saga of Race, Civil Rights, and Murder in the Jazz Age" by Kevin Boyle (Historical Nonfiction):** Focuses on the case of Dr. Ossian Sweet in 1920s Detroit, illustrating the fight for housing rights and justice against mob violence.  
   
-## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
+## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Long Time Coming Reckoning With Race In America. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

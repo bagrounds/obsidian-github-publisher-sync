@@ -7,7 +7,7 @@ share: true
 affiliate link: https://amzn.to/45mskVJ
 CTA: 😡 Recall Madness.
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 😡🤬 Rage  
 [🛒 Rage. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/45mskVJ)  
   
@@ -39,17 +39,17 @@ CTA: 😡 Recall Madness.
 ## 📚 Additional Book Recommendations  
 ### 🏛️ Similar Reads (Political Analysis & Reporting)  
   
-* **[😱🤡🇺🇸 Fear: Trump in the White House](./fear.md)** by Bob Woodward: ✍️ The preceding book by the same author, offering an earlier look into the Trump administration's dynamics and chaos.  
-* **[⚠️😬😰 Peril](./peril.md)** by Bob Woodward and Robert Costa: ✍️ The subsequent book covering the end of the Trump presidency and the beginning of the Biden administration.  
-* **[⬆️🤥🏛️ A Higher Loyalty: Truth, Lies, and Leadership](./a-higher-loyalty-truth-lies-and-leadership.md)** by James Comey: 🗣️ An account from the former FBI Director who served under Trump, providing an insider perspective on leadership and ethics.  
-* **[👑🚫📜2️⃣0️⃣ On Tyranny: Twenty Lessons from the Twentieth Century](./on-tyranny.md)** by Timothy Snyder: 💡 A concise guide drawing lessons from 20th-century history on how to identify and resist rising authoritarianism, relevant to the political context discussed in *Rage*.  
+* **[😱🤡🇺🇸 Fear: Trump in the White House](/content/books/fear.md)** by Bob Woodward: ✍️ The preceding book by the same author, offering an earlier look into the Trump administration's dynamics and chaos.  
+* **[⚠️😬😰 Peril](/content/books/peril.md)** by Bob Woodward and Robert Costa: ✍️ The subsequent book covering the end of the Trump presidency and the beginning of the Biden administration.  
+* **[⬆️🤥🏛️ A Higher Loyalty: Truth, Lies, and Leadership](/content/books/a-higher-loyalty-truth-lies-and-leadership.md)** by James Comey: 🗣️ An account from the former FBI Director who served under Trump, providing an insider perspective on leadership and ethics.  
+* **[👑🚫📜2️⃣0️⃣ On Tyranny: Twenty Lessons from the Twentieth Century](/content/books/on-tyranny.md)** by Timothy Snyder: 💡 A concise guide drawing lessons from 20th-century history on how to identify and resist rising authoritarianism, relevant to the political context discussed in *Rage*.  
 * **Trumpocracy: The Corruption of the American Republic** by David Frum: 🏛️ Analyzes how the Trump presidency impacted American democratic institutions and norms.  
   
 ### 🕊️ Contrasting Reads (Calm, Diplomacy, Alternative Perspectives)  
   
 * ***The Art of Peace*** by Morihei Ueshiba: 🧘 A collection of teachings on the philosophy of Aikido, emphasizing harmony, non-violence, and resolving conflict peacefully.  
 * ***Peace Is Every Step: The Path of Mindfulness in Everyday Life*** by Thich Nhat Hanh: 🧘‍♀️ Explores mindfulness practices as a way to cultivate inner peace and deal with challenging emotions, including anger.  
-* **[🤝🌍 Diplomacy](./diplomacy.md)** by Henry Kissinger: 🤝 A comprehensive historical analysis of diplomatic efforts and international relations, offering a contrast to confrontational approaches.  
+* **[🤝🌍 Diplomacy](/content/books/diplomacy.md)** by Henry Kissinger: 🤝 A comprehensive historical analysis of diplomatic efforts and international relations, offering a contrast to confrontational approaches.  
 * ***Moral Boundaries: A Family Systems Approach to Emotional, Self, and Change*** by Harriet Lerner: 💔 While *The Dance of Anger* is more directly about anger, Lerner's work generally focuses on understanding emotional patterns in relationships and fostering healthier interactions, offering tools for managing conflict differently.  
   
 ### 🧠 Creatively Related Reads (Psychology, History, Philosophy)  
@@ -62,7 +62,7 @@ CTA: 😡 Recall Madness.
 * ***Anger and Politics in Ancient Rome: From the Late Republic to the Early Empire*** by Jayne Knight: 🏛️😠 Explores how anger was perceived and used as a political tool in ancient Roman society.  
 * ***The Iliad*** by Homer: 😠🛡️ An epic poem centered on the "rage of Achilles," perhaps one of the most famous explorations of intense anger and its consequences in Western literature.  
   
-## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
+## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Rage. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.  
   
 ## 🐦 Tweet  

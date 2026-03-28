@@ -118,7 +118,7 @@ Robert Cialdini’s *Influence: The Psychology of Persuasion* is a seminal work 
   - *Pre-Suasion: A Revolutionary Way to Influence and Persuade* by Robert Cialdini – Explores how to set the stage for effective persuasion even before the message is delivered. 📘  
   
 - **Book Tangentially Related:**    
-  - *[Thinking, Fast and Slow](./thinking-fast-and-slow.md)* by Daniel Kahneman – Delivers a comprehensive exploration of the dual systems that govern our thinking and decision-making processes, complementing the insights on human behavior found in *Influence*. [Discover it on Goodreads](https://www.goodreads.com/book/show/11468377-thinking-fast-and-slow) 🤔  
+  - *[Thinking, Fast and Slow](books/thinking-fast-and-slow.md)* by Daniel Kahneman – Delivers a comprehensive exploration of the dual systems that govern our thinking and decision-making processes, complementing the insights on human behavior found in *Influence*. [Discover it on Goodreads](https://www.goodreads.com/book/show/11468377-thinking-fast-and-slow) 🤔  
   
 - **Book Diametrically Opposed:**    
   - *[Nudge](./nudge.md): Improving Decisions About Health, Wealth, and Happiness* by Richard H. Thaler and Cass R. Sunstein – While *Influence* focuses on persuasion tactics, *Nudge* examines how subtle policy shifts can guide choices, offering a more benign view on behavioral influence. [Learn more on Wikipedia](https://en.wikipedia.org/wiki/Nudge_(book)) 🔄  

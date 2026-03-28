@@ -7,7 +7,7 @@ URL: https://bagrounds.org/articles/everything-i-know-about-good-system-design
 Author:
 tags:
 ---
-[Home](../index.md) > [Articles](./index.md)  
+[Home](/content/index.md) > [Articles](/content/articles/index.md)  
 # [🤔⚙️🧩🏗️💡 Everything I know about good system design](https://www.seangoedecke.com/good-system-design)  
 ## 🤖 AI Summary  
 * 📉 Good design looks underwhelming: nothing goes wrong for a long time.  
@@ -37,9 +37,9 @@ tags:
     * 🧩 The point at which a simple system *must* be split into microservices, and whether the overhead of complexity is truly earned *before* or *after* catastrophic scale issues appear.  
   
 ## 📚 Book Recommendations  
-* [💾⬆️🛡️ Designing Data-Intensive Applications: The Big Ideas Behind Reliable, Scalable, and Maintainable Systems](../books/designing-data-intensive-applications.md) by Martin Kleppmann: 💡 **Similar** This book is mentioned in the article and provides the definitive deep dive into the underlying systems discussed, like databases, replication, and distributed transactions.  
+* [💾⬆️🛡️ Designing Data-Intensive Applications: The Big Ideas Behind Reliable, Scalable, and Maintainable Systems](/content/books/designing-data-intensive-applications.md) by Martin Kleppmann: 💡 **Similar** This book is mentioned in the article and provides the definitive deep dive into the underlying systems discussed, like databases, replication, and distributed transactions.  
 * 📚 A Philosophy of Software Design by John Ousterhout: 📏 **Similar** It directly argues that complexity is the fundamental challenge in software, promoting simplicity and "deep" modules over "shallow" ones, strongly supporting the article's core thesis.  
-* [🦄👤🗓️ The Mythical Man-Month: Essays on Software Engineering](../books/the-mythical-man-month.md) by Frederick Brooks Jr.: 👥 **Contrasting** While focused on software project management, its core message—that adding manpower to a late project makes it later—highlights that complexity in organization (and thus system design) is the hardest and most dangerous problem to solve.  
-* [🧩🧱⚙️❤️ Domain-Driven Design: Tackling Complexity in the Heart of Software](../books/domain-driven-design.md) by Eric Evans: 🏗️ **Contrasting** This foundational text provides the intellectual toolkit for managing the *necessary* complexity of large, core systems, a stage the article advises earning but does not detail.  
-* [🧑‍💻📈 The Pragmatic Programmer: Your Journey to Mastery](../books/the-pragmatic-programmer-your-journey-to-mastery.md) by David Thomas and Andrew Hunt: 🧑‍💻 **Creatively Related** This book is a manual for the disciplined, thoughtful, and professional attitude required to successfully implement "boring" and simple design principles day-to-day.  
-* [💻⚙️🛡️📈 Site Reliability Engineering: How Google Runs Production Systems](../books/site-reliability-engineering.md) by Niall Richard Murphy et al.: 🔧 **Creatively Related** Details the operational practices, metrics (like p99), and "unhappy path" planning (like killswitches and graceful degradation) that transform a good design into a reliable, continuously running system.
+* [🦄👤🗓️ The Mythical Man-Month: Essays on Software Engineering](/content/books/the-mythical-man-month.md) by Frederick Brooks Jr.: 👥 **Contrasting** While focused on software project management, its core message—that adding manpower to a late project makes it later—highlights that complexity in organization (and thus system design) is the hardest and most dangerous problem to solve.  
+* [🧩🧱⚙️❤️ Domain-Driven Design: Tackling Complexity in the Heart of Software](/content/books/domain-driven-design.md) by Eric Evans: 🏗️ **Contrasting** This foundational text provides the intellectual toolkit for managing the *necessary* complexity of large, core systems, a stage the article advises earning but does not detail.  
+* [🧑‍💻📈 The Pragmatic Programmer: Your Journey to Mastery](/content/books/the-pragmatic-programmer-your-journey-to-mastery.md) by David Thomas and Andrew Hunt: 🧑‍💻 **Creatively Related** This book is a manual for the disciplined, thoughtful, and professional attitude required to successfully implement "boring" and simple design principles day-to-day.  
+* [💻⚙️🛡️📈 Site Reliability Engineering: How Google Runs Production Systems](/content/books/site-reliability-engineering.md) by Niall Richard Murphy et al.: 🔧 **Creatively Related** Details the operational practices, metrics (like p99), and "unhappy path" planning (like killswitches and graceful degradation) that transform a good design into a reliable, continuously running system.

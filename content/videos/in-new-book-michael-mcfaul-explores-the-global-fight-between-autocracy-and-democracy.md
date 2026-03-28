@@ -10,7 +10,7 @@ Channel: PBS NewsHour
 tags:
 youtube: https://youtu.be/nM-spMfsJcg
 ---
-[Home](../index.md) > [Videos](./index.md) | [👑⚔️🇺🇸 Autocrats vs Democrats: China, Russia, America, and the New Global Disorder](../books/autocrats-vs-democrats-china-russia-america-and-the-new-global-disorder.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md) | [👑⚔️🇺🇸 Autocrats vs Democrats: China, Russia, America, and the New Global Disorder](/content/books/autocrats-vs-democrats-china-russia-america-and-the-new-global-disorder.md)  
 # 👑⚔️🏛️ In new book Michael McFaul explores the global fight between autocracy and democracy  
 ![In new book, Michael McFaul explores the global fight between autocracy and democracy](https://youtu.be/nM-spMfsJcg)  
   
@@ -51,7 +51,7 @@ youtube: https://youtu.be/nM-spMfsJcg
 ## 📚 Book Recommendations  
   
 ### ↔️ Similar  
-* [🌍🤝🏛️ A World Safe for Democracy: Liberal Internationalism and the Crises of Global Order](../books/a-world-safe-for-democracy-liberal-internationalism-and-the-crises-of-global-order.md) by G. John Ikenberry 🌍 This book offers a comprehensive account of contemporary geopolitics, examining where Russia, China, and the US stand and their likely future trajectory.  
+* [🌍🤝🏛️ A World Safe for Democracy: Liberal Internationalism and the Crises of Global Order](/content/books/a-world-safe-for-democracy-liberal-internationalism-and-the-crises-of-global-order.md) by G. John Ikenberry 🌍 This book offers a comprehensive account of contemporary geopolitics, examining where Russia, China, and the US stand and their likely future trajectory.  
 * 📚 The Return of Great Power Rivalry: Democracy Versus Autocracy from the Ancient World to the US and China by Matthew Kroenig ⚔️ This work directly examines the democracy versus autocracy framework, tracing this competition from ancient times up to the present US-China relationship.  
   
 ### 🆚 Contrasting  
@@ -60,4 +60,4 @@ youtube: https://youtu.be/nM-spMfsJcg
   
 ### 🎨 Creatively Related  
 * 📚 The Longer Game: China's Grand Strategy to Displace American Order by Rush Doshi 🐉 This work offers a detailed view of China's long-term strategy to reshape the American-led global order, which provides context for the video's discussion of Chinese global aspirations.  
-* [👑🌎 Autocracy, Inc.: The Dictators Who Want to Run the World](../books/autocracy-inc-the-dictators-who-want-to-run-the-world.md) by Anne Applebaum 💰 This book explores how modern autocracies operate as a networked model of power, exporting corruption and propaganda, which relates tangentially to the video's focus on weakening the democratic world.
+* [👑🌎 Autocracy, Inc.: The Dictators Who Want to Run the World](/content/books/autocracy-inc-the-dictators-who-want-to-run-the-world.md) by Anne Applebaum 💰 This book explores how modern autocracies operate as a networked model of power, exporting corruption and propaganda, which relates tangentially to the video's focus on weakening the democratic world.

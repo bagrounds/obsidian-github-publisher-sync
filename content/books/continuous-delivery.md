@@ -9,7 +9,7 @@ tags:
 affiliate link: https://amzn.to/3HmSsG0
 updated: 2026-03-10T10:14:33.312Z
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🏗️🧪🚀✅ Continuous Delivery: Reliable Software Releases through Build, Test, and Deployment Automation  
 [🛒 Continuous Delivery: Reliable Software Releases through Build, Test, and Deployment Automation. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3HmSsG0)  
   
@@ -68,14 +68,14 @@ Continuous Delivery empowers organizations to reliably release high-quality soft
 "Continuous Delivery" is highly regarded within the software development community. 🏆 It is backed by the authors' extensive practical experience and draws upon established principles from lean manufacturing and agile development. The book's recommendations are grounded in sound engineering practices and have been proven effective in numerous organizations. Author credentials are very strong. Jez Humble and David Farley are recognized experts in the field. The book has received positive reviews from industry professionals and is considered a seminal work on the topic. The book is well written, and has a very practical approach. It is a very high quality source.  
   
 ### Book Recommendations 📚  
-* **Best Alternate Book on the Same Topic:** [🐦‍🔥💻 The Phoenix Project](./the-phoenix-project.md) by Gene Kim, Kevin Behr, and George Spafford. (A novel that illustrates the principles of continuous delivery in a relatable way.) 🏭  
-* **Best Tangentially Related Book:** [🏎️💾 Accelerate: The Science of Lean Software and DevOps: Building and Scaling High Performing Technology Organizations](./accelerate.md) by Nicole Forsgren, Jez Humble, and Gene Kim. (Provides empirical evidence for the impact of continuous delivery practices.) 📊  
+* **Best Alternate Book on the Same Topic:** [🐦‍🔥💻 The Phoenix Project](/content/books/the-phoenix-project.md) by Gene Kim, Kevin Behr, and George Spafford. (A novel that illustrates the principles of continuous delivery in a relatable way.) 🏭  
+* **Best Tangentially Related Book:** [🏎️💾 Accelerate: The Science of Lean Software and DevOps: Building and Scaling High Performing Technology Organizations](/content/books/accelerate.md) by Nicole Forsgren, Jez Humble, and Gene Kim. (Provides empirical evidence for the impact of continuous delivery practices.) 📊  
 * **Best Diametrically Opposed Book:** "Waterfall vs Agile vs Iterative" (Any document that describes the waterfall method will be diametrically opposed, as it is a sequential, non-iterative model.) 🌊  
-* **Best Fiction Book That Incorporates Related Ideas:** "[Daemon](./daemon.md)" by Daniel Suarez. (Explores the impact of automated systems and continuous improvement in a fictional context.) 🤖  
-* **Best Book That Is More General:** "[The Lean Startup](./the-lean-startup.md)" by Eric Ries. (Focuses on lean principles for building and scaling businesses.) 📈  
+* **Best Fiction Book That Incorporates Related Ideas:** "[Daemon](/content/books/daemon.md)" by Daniel Suarez. (Explores the impact of automated systems and continuous improvement in a fictional context.) 🤖  
+* **Best Book That Is More General:** "[The Lean Startup](/content/books/the-lean-startup.md)" by Eric Ries. (Focuses on lean principles for building and scaling businesses.) 📈  
 * **Best Book That Is More Specific:** "Effective DevOps" by Jennifer Davis and Ryn Daniels. (Provides detailed guidance on implementing DevOps practices.) 💻  
-* **Best Book That Is More Rigorous:** [Site Reliability Engineering](./site-reliability-engineering.md) by Betsy Beyer, Chris Jones, Jennifer Petoff, and Niall Richard Murphy. (Offers a more in-depth look at reliability engineering practices.) ⚙️  
-* **Best Book That Is More Accessible:** "[The DevOps Handbook](./the-devops-handbook.md)" by Gene Kim, Patrick Debois, John Willis, and Jez Humble. (A more approachable guide to DevOps principles.) 🤝  
+* **Best Book That Is More Rigorous:** [Site Reliability Engineering](/content/books/site-reliability-engineering.md) by Betsy Beyer, Chris Jones, Jennifer Petoff, and Niall Richard Murphy. (Offers a more in-depth look at reliability engineering practices.) ⚙️  
+* **Best Book That Is More Accessible:** "[The DevOps Handbook](/content/books/the-devops-handbook.md)" by Gene Kim, Patrick Debois, John Willis, and Jez Humble. (A more approachable guide to DevOps principles.) 🤝  
   
 ## 💬 [Gemini](https://gemini.google.com) Prompt  
 > Summarize the book: Continuous Delivery. Start with a TL;DR - a single statement that conveys a maximum of the useful information provided in the book. Next, explain how this book may offer a new or surprising perspective. Follow this with a deep dive. Catalogue the topics, methods, and research discussed. Be sure to highlight any significant theories, theses, or mental models proposed. Summarize prominent examples discussed. Emphasize practical takeaways, including detailed, specific, concrete, step-by-step advice, guidance, or techniques discussed. Provide a critical analysis of the quality of the information presented, using scientific backing, author credentials, authoritative reviews, and other markers of high quality information as justification. Make the following additional book recommendations: the best alternate book on the same topic; the best book that is tangentially related; the best book that is diametrically opposed; the best fiction book that incorporates related ideas; the best book that is more general or more specific; and the best book that is more rigorous or more accessible than this book. Format your response as markdown, starting at heading level H3, with inline links, for easy copy paste. Use meaningful emojis generously (at least one per heading, bullet point, and paragraph) to enhance readability. Do not include broken links or links to commercial sites.  

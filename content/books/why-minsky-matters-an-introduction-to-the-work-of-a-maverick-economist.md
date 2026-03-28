@@ -9,7 +9,7 @@ CTA: 💸 Confront financial fragility.
 tags:
   - MMT
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 👨‍🏫❓ Why Minsky Matters: An Introduction to the Work of a Maverick Economist  
 [🛒 Why Minsky Matters: An Introduction to the Work of a Maverick Economist. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3JtS7ml)  
   
@@ -47,7 +47,7 @@ Inherent dynamics within capitalism lead stable economies towards speculative ex
   
 ## 🔍 Topics for Further Understanding  
   
-* 💡 [🏦♾️📈💸 Modern Monetary Theory (MMT)](../topics/modern-monetary-theory.md) and its relationship to Minsky's work on endogenous money and government as an employer of last resort.  
+* 💡 [🏦♾️📈💸 Modern Monetary Theory (MMT)](/content/topics/modern-monetary-theory.md) and its relationship to Minsky's work on endogenous money and government as an employer of last resort.  
 * 🏦 The evolution of shadow banking and its impact on financial stability post-Minsky.  
 * 📜 The political economy of financial deregulation and its historical connection to Minsky's warnings.  
 * 📚 Comparative analysis of Minsky's hypothesis with other theories of financial crises (e.g., Kindleberger's "Manias, Panics, and Crashes").  
@@ -76,7 +76,7 @@ Inherent dynamics within capitalism lead stable economies towards speculative ex
   
 ### 🤝 Similar  
 * 📖 Manias, Panics, and Crashes: A History of Financial Crises by Charles P. Kindleberger  
-* [📉📈 Stabilizing an Unstable Economy](./stabilizing-an-unstable-economy.md) by Hyman P. Minsky  
+* [📉📈 Stabilizing an Unstable Economy](/content/books/stabilizing-an-unstable-economy.md) by Hyman P. Minsky  
 * 📖 The End of Alchemy: Money, Banking, and the Future of the Global Economy by Mervyn King  
   
 ### ↔️ Contrasting  
@@ -85,9 +85,9 @@ Inherent dynamics within capitalism lead stable economies towards speculative ex
 * 📖 The Road to Serfdom by F.A. Hayek  
   
 ### ➕ Related  
-* [🏛️💰 Debt: The First 5,000 Years](./debt-the-first-5000-years.md) Years by David Graeber  
-* [🧑‍💼🏦💸 The General Theory of Employment, Interest, and Money](./the-general-theory-of-employment-interest-and-money.md) by John Maynard Keynes  
-* [🤔💸 Misbehaving: The Making of Behavioral Economics](./misbehaving-the-making-of-behavioral-economics.md) by Richard H. Thaler  
+* [🏛️💰 Debt: The First 5,000 Years](/content/books/debt-the-first-5000-years.md) Years by David Graeber  
+* [🧑‍💼🏦💸 The General Theory of Employment, Interest, and Money](/content/books/the-general-theory-of-employment-interest-and-money.md) by John Maynard Keynes  
+* [🤔💸 Misbehaving: The Making of Behavioral Economics](/content/books/misbehaving-the-making-of-behavioral-economics.md) by Richard H. Thaler  
   
 ## 🫵 What Do You Think?  
   

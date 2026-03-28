@@ -10,7 +10,7 @@ Channel: Parentitude
 tags:
 youtube: https://youtu.be/c1vRr1O4d28
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md)  
 # 🗣️🤝🧑‍🤝‍🧑👶🏽 5 Social Skills Every Toddler Needs Before Preschool  
 ![5 Social Skills Every Toddler Needs Before Preschool](https://youtu.be/c1vRr1O4d28)  
   
@@ -53,8 +53,8 @@ youtube: https://youtu.be/c1vRr1O4d28
 ## 📚 Book Recommendations  
   
 ### ↔️ Similar  
-* [🕳️🧠👶🏽 The Whole-Brain Child: 12 Revolutionary Strategies to Nurture Your Child's Developing Mind](../books/the-whole-brain-child.md) by Daniel Siegel and Tina Payne Bryson: 🧠 Explains the neuroscience of child development and offers strategies for integrating a child's logical and emotional brains, directly aligning with the video's concept of brain construction.  
-* [❤️👪 Good Inside: A Guide to Becoming the Parent You Want to Be](../books/good-inside-a-guide-to-becoming-the-parent-you-want-to-be.md) by Becky Kennedy: 🤝 Focuses on connecting with a child's inherent goodness and addressing misbehavior through connection and teaching skills, mirroring the video's focus on skill-building over shame.  
+* [🕳️🧠👶🏽 The Whole-Brain Child: 12 Revolutionary Strategies to Nurture Your Child's Developing Mind](/content/books/the-whole-brain-child.md) by Daniel Siegel and Tina Payne Bryson: 🧠 Explains the neuroscience of child development and offers strategies for integrating a child's logical and emotional brains, directly aligning with the video's concept of brain construction.  
+* [❤️👪 Good Inside: A Guide to Becoming the Parent You Want to Be](/content/books/good-inside-a-guide-to-becoming-the-parent-you-want-to-be.md) by Becky Kennedy: 🤝 Focuses on connecting with a child's inherent goodness and addressing misbehavior through connection and teaching skills, mirroring the video's focus on skill-building over shame.  
 * 📚 Peaceful Parent, Happy Kids: How to Stop Yelling and Start Connecting by Laura Markham: 🧘 Provides practical tools for parents to manage their own emotions and model calmness, which is essential for effectively teaching the five social skills discussed.  
   
 ### 🆚 Contrasting  
@@ -63,4 +63,4 @@ youtube: https://youtu.be/c1vRr1O4d28
   
 ### 🎨 Creatively Related  
 * 📚 NurtureShock: New Thinking About Children by Po Bronson and Ashley Merryman: 🔬 This book tangentially relates by challenging several common parenting assumptions with social science research, including the counterintuitive effects of praise, similar to how the video challenges the conventional wisdom of forcing sharing.  
-* [❤️🧠📈🤔 Emotional Intelligence: Why It Can Matter More Than IQ](../books/emotional-intelligence.md) by Daniel Goleman: 💡 Explores the original concept of EQ as a measure of social and emotional skills, providing the larger framework for why the five skills listed in the video are so crucial for long-term life success beyond preschool.
+* [❤️🧠📈🤔 Emotional Intelligence: Why It Can Matter More Than IQ](/content/books/emotional-intelligence.md) by Daniel Goleman: 💡 Explores the original concept of EQ as a measure of social and emotional skills, providing the larger framework for why the five skills listed in the video are so crucial for long-term life success beyond preschool.

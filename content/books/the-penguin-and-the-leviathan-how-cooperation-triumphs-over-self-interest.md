@@ -6,7 +6,7 @@ aliases:
 URL: https://bagrounds.org/books/the-penguin-and-the-leviathan-how-cooperation-triumphs-over-self-interest
 affiliate link: https://amzn.to/4ktFG7o
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🤝🐧🐳 The Penguin and the Leviathan: How Cooperation Triumphs over Self-Interest  
 [🛒 The Penguin and the Leviathan: How Cooperation Triumphs over Self-Interest. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4ktFG7o)  
   
@@ -64,13 +64,13 @@ affiliate link: https://amzn.to/4ktFG7o
 * 🧑‍🏫 **Yochai Benkler - *The Wealth of Networks: How Social Production Transforms Markets and Freedom***: Benkler's earlier, more academic work laying the theoretical groundwork for commons-based peer production and the networked information economy.  
 * 🧬 **Martin Nowak & Roger Highfield - *SuperCooperators: Altruism, Evolution, and Why We Need Each Other to Succeed***: Explores the evolution of cooperation through mathematical and biological lenses, identifying mechanisms like direct and indirect reciprocity.  
 * ♟️ **Robert Axelrod - *The Evolution of Cooperation***: A classic work using game theory (specifically the iterated prisoner's dilemma) to show how cooperation can emerge and persist even among self-interested actors.  
-* 💡 **Richard H. Thaler & Cass R. Sunstein - *[Nudge](./nudge.md): Improving Decisions About Health, Wealth, and Happiness***: Explores how insights from behavioral economics can be used to design "choice architectures" that gently guide people towards better decisions, often leveraging social norms and defaults.  
-* 🧐 **Richard H. Thaler - [🤔💸 Misbehaving: The Making of Behavioral Economics](./misbehaving-the-making-of-behavioral-economics.md)**: Thaler's account of the development of behavioral economics, challenging traditional economic assumptions about rationality and self-interest.  
-* 🧠 **Daniel Kahneman - *[Thinking, Fast and Slow](./thinking-fast-and-slow.md)***: A seminal work on cognitive biases and the two systems of thinking that drive judgment and decision-making, underlying many behavioral economic findings.  
-* 🤯 **Dan Ariely - *[Predictably Irrational](./predictably-irrational.md): The Hidden Forces That Shape Our Decisions***: Presents experimental evidence of human irrationality and the psychological factors influencing economic choices.  
+* 💡 **Richard H. Thaler & Cass R. Sunstein - *[Nudge](/content/books/nudge.md): Improving Decisions About Health, Wealth, and Happiness***: Explores how insights from behavioral economics can be used to design "choice architectures" that gently guide people towards better decisions, often leveraging social norms and defaults.  
+* 🧐 **Richard H. Thaler - [🤔💸 Misbehaving: The Making of Behavioral Economics](/content/books/misbehaving-the-making-of-behavioral-economics.md)**: Thaler's account of the development of behavioral economics, challenging traditional economic assumptions about rationality and self-interest.  
+* 🧠 **Daniel Kahneman - *[Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md)***: A seminal work on cognitive biases and the two systems of thinking that drive judgment and decision-making, underlying many behavioral economic findings.  
+* 🤯 **Dan Ariely - *[Predictably Irrational](/content/books/predictably-irrational.md): The Hidden Forces That Shape Our Decisions***: Presents experimental evidence of human irrationality and the psychological factors influencing economic choices.  
 * 🔬 **Uri Gneezy & John A. List - *The Why Axis: Hidden Motives and the Undiscovered Economics of Everyday Life***: Uses field experiments to explore motivations behind behavior, including altruism and responses to incentives.  
-* 🎳 **Robert D. Putnam - [Bowling Alone](./bowling-alone.md): The Collapse and Revival of American Community**: Examines the decline of social capital (networks, norms, and trust facilitating cooperation) in the United States.  
-* 🔒 **Bruce Schneier - [🤥😈 Liars and Outliers: Enabling the Trust That Society Needs to Thrive](./liars-and-outliers.md)**: Explores the crucial role of trust in society and the mechanisms (moral, reputational, institutional, security) that maintain cooperation and deter "defectors."  
+* 🎳 **Robert D. Putnam - [Bowling Alone](/content/books/bowling-alone.md): The Collapse and Revival of American Community**: Examines the decline of social capital (networks, norms, and trust facilitating cooperation) in the United States.  
+* 🔒 **Bruce Schneier - [🤥😈 Liars and Outliers: Enabling the Trust That Society Needs to Thrive](/content/books/liars-and-outliers.md)**: Explores the crucial role of trust in society and the mechanisms (moral, reputational, institutional, security) that maintain cooperation and deter "defectors."  
 * 🐒 **Frans de Waal - *The Age of Empathy: Nature's Lessons for a Kinder Society***: A primatologist argues that empathy and cooperation are deeply rooted in our evolutionary history.  
 * 🐜 **Steven Johnson - *Emergence: The Connected Lives of Ants, Brains, Cities, and Software***: Explores how complex, adaptive systems (like cooperative networks) arise from simple interactions without central control.  
 * 🧑‍🤝‍🧑 **James Surowiecki - *The Wisdom of Crowds***: Argues that, under the right conditions, large groups of diverse, independent individuals can make remarkably good decisions and predictions.  
@@ -82,7 +82,7 @@ affiliate link: https://amzn.to/4ktFG7o
   
 * 👑 **Thomas Hobbes - *Leviathan***: The classic work Benkler uses as a foil, arguing for a strong sovereign (the Leviathan) to prevent society dissolving into a "war of all against all" driven by self-interest and fear.  
 * 💸 **Adam Smith - *The Wealth of Nations***: While often simplified, it famously introduces the "invisible hand," suggesting that individuals pursuing their own self-interest in a free market can inadvertently promote the public good.  
-* 🧬 **Richard Dawkins - [👤🧬 The Selfish Gene](./the-selfish-gene.md)**: Presents a gene-centered view of evolution, arguing that natural selection acts primarily at the level of the gene, often framed (sometimes simplistically) as inherent selfishness driving behavior.  
+* 🧬 **Richard Dawkins - [👤🧬 The Selfish Gene](/content/books/the-selfish-gene.md)**: Presents a gene-centered view of evolution, arguing that natural selection acts primarily at the level of the gene, often framed (sometimes simplistically) as inherent selfishness driving behavior.  
 * 🗽 **Ayn Rand - *Atlas Shrugged* or *The Virtue of Selfishness***: Philosophical novels and essays explicitly championing rational self-interest as the highest moral purpose.  
 * 🚫 **Friedrich Hayek - *The Road to Serfdom***: Argues against central planning and for spontaneous order emerging from free markets, skeptical of large-scale designed cooperative systems imposed from above.  
 * 😓 **Mancur Olson - *The Logic of Collective Action***: Explores the difficulties of collective action, particularly the free-rider problem, suggesting large groups often struggle to achieve common goals without coercion or selective incentives.  
@@ -92,10 +92,10 @@ affiliate link: https://amzn.to/4ktFG7o
 * 🕸️ **Manuel Castells - *The Rise of the Network Society***: A foundational sociological analysis of the social, economic, and political structures emerging in the information age.  
 * 🧑‍💻 **Clay Shirky - *Here Comes Everybody: The Power of Organizing Without Organizations***: Discusses how new digital tools enable group action and collaboration on an unprecedented scale.  
 * 🔗 **Albert-László Barabási - *Linked: How Everything Is Connected to Everything Else and What It Means for Business, Science, and Everyday Life***: An introduction to the science of networks and how network structure impacts behavior and outcomes.  
-* ⚙️ **Donella H. Meadows - *[Thinking in Systems](./thinking-in-systems.md): A Primer***: An accessible introduction to systems thinking, understanding how interconnected parts influence overall behavior—relevant to designing cooperative systems.  
-* 😇 **Jonathan Haidt - *[The Righteous Mind](./the-righteous-mind.md): Why Good People Are Divided by Politics and Religion***: Explores the evolutionary and psychological foundations of human morality, including groupishness and altruism alongside self-interest.  
+* ⚙️ **Donella H. Meadows - *[Thinking in Systems](/content/books/thinking-in-systems.md): A Primer***: An accessible introduction to systems thinking, understanding how interconnected parts influence overall behavior—relevant to designing cooperative systems.  
+* 😇 **Jonathan Haidt - *[The Righteous Mind](/content/books/the-righteous-mind.md): Why Good People Are Divided by Politics and Religion***: Explores the evolutionary and psychological foundations of human morality, including groupishness and altruism alongside self-interest.  
 * 🛍️ **Michael Sandel - *What Money Can't Buy: The Moral Limits of Markets***: Argues against the commodification of certain aspects of life, touching on how market norms can crowd out non-market norms like civic duty or altruism.  
 * 🧠 **Barry Schwartz & Kenneth Sharpe - *Practical Wisdom: The Right Way to Do the Right Thing***: Argues for the importance of practical wisdom (knowing how to act rightly in particular situations) over rigid rules and incentives, especially in professions.  
 * 🏭 **Jeremy Rifkin - *The Zero Marginal Cost Society: The Internet of Things, the Collaborative Commons, and the Eclipse of Capitalism***: Argues that technological trends are leading towards an economy based more on collaborative commons and less on traditional capitalism.".  
-## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
+## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on The Penguin and the Leviathan: How Cooperation Triumphs over Self-Interest. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

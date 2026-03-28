@@ -76,7 +76,7 @@ Carol Dweck's "Mindset" explores the fundamental difference between a **fixed mi
 * Cultivate a growth mindset in children, students, and employees. 👨‍🏫  
   
 **📚 Book Recommendations:**  
-* **Best Alternate Book on the Same Topic:** [❤️‍🔥💪 Grit: The Power of Passion and Perseverance](./grit-the-power-of-passion-and-perseverance.md) by Angela Duckworth. This book explores a related concept, highlighting the importance of grit in achieving long-term goals. 🌟  
+* **Best Alternate Book on the Same Topic:** [❤️‍🔥💪 Grit: The Power of Passion and Perseverance](books/grit-the-power-of-passion-and-perseverance.md) by Angela Duckworth. This book explores a related concept, highlighting the importance of grit in achieving long-term goals. 🌟  
 * **Best Tangentially Related Book:** "[Thinking, Fast and Slow](./thinking-fast-and-slow.md)" by Daniel Kahneman. This book delves into the cognitive biases that influence our thinking and decision-making, providing a broader understanding of how our minds work. 🧠  
 * **Best Diametrically Opposed Book:** "The Talent Code: Greatness Isn't Born. It's Grown." by Daniel Coyle. While not strictly opposed, it emphasizes deliberate practice and myelination, which could be seen as a more mechanistic view of talent development compared to Dweck’s more psychological approach. 🏗️  
 * **Best Fiction Book That Incorporates Related Ideas:** "Ender's Game" by Orson Scott Card. Ender's journey showcases the development of skills and the importance of adapting to challenges, reflecting growth mindset principles. 🎮  

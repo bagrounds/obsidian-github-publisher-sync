@@ -10,7 +10,7 @@ Channel: Sen. Adam Schiff
 tags:
 youtube: https://youtu.be/k5q9XYMDfqc
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md)  
 # 🏛️📉🇺🇸🔟 Schiff Takes To Senate Floor to Lay Out the Top 10 Ways Trump is Wrecking America  
 ![Schiff Takes To Senate Floor to Lay Out the Top 10 Ways Trump is Wrecking America](https://youtu.be/k5q9XYMDfqc)  
   
@@ -33,7 +33,7 @@ Here's a summary of the top 10 points he outlines:
 Schiff expresses concern that America's "sun ☀️ is obscured" but maintains faith 🙏 that the nation can overcome these challenges and rise again through collective effort \[[35:52](http://www.youtube.com/watch?v=k5q9XYMDfqc&t=2152)\].  
   
 ## 📚 Book Recommendations  
-* [👑🚫📜2️⃣0️⃣ On Tyranny: Twenty Lessons from the Twentieth Century](../books/on-tyranny.md) by Timothy Snyder  
-* [🗳️🏛️☠️ How Democracies Die](../books/how-democracies-die.md) by Steven Levitsky and Daniel Ziblatt  
+* [👑🚫📜2️⃣0️⃣ On Tyranny: Twenty Lessons from the Twentieth Century](/content/books/on-tyranny.md) by Timothy Snyder  
+* [🗳️🏛️☠️ How Democracies Die](/content/books/how-democracies-die.md) by Steven Levitsky and Daniel Ziblatt  
 * *The Price of Loyalty: George W. Bush, the White House, and the Education of Paul O'Neill* by Ron Suskind  
-* [💰🤫 Dark Money: The Hidden History of the Billionaires Behind the Rise of the Radical Right](../books/dark-money-the-hidden-history-of-the-billionaires-behind-the-rise-of-the-radical-right.md) by Jane Mayer
+* [💰🤫 Dark Money: The Hidden History of the Billionaires Behind the Rise of the Radical Right](/content/books/dark-money-the-hidden-history-of-the-billionaires-behind-the-rise-of-the-radical-right.md) by Jane Mayer

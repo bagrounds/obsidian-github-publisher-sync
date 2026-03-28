@@ -64,7 +64,7 @@ Rubin's book is primarily based on his personal experiences and observations, le
   
 ### 📚 Book Recommendations  
 * **Best Alternate Book on the Same Topic:** *[🪄 Big Magic: Creative Living Beyond Fear](./big-magic.md)* by Elizabeth Gilbert. This book also emphasizes the importance of embracing creativity and overcoming fear, but with a more personal and anecdotal style. 🪄  
-* **Best Tangentially Related Book:** *[Flow: The Psychology of Optimal Experience](./flow-the-psychology-of-optimal-experience.md)* by Mihaly Csikszentmihalyi. This book explores the state of "flow," a state of deep engagement and enjoyment that is often associated with creative activities. 🌊  
+* **Best Tangentially Related Book:** *[Flow: The Psychology of Optimal Experience](books/flow-the-psychology-of-optimal-experience.md)* by Mihaly Csikszentmihalyi. This book explores the state of "flow," a state of deep engagement and enjoyment that is often associated with creative activities. 🌊  
 * **Best Diametrically Opposed Book:** *Art & Fear: Observations On the Perils (and Rewards) of Artmaking* by David Bayles and Ted Orland. While still about creativity, this book focuses on the challenges and fears that artists face, offering a more realistic and sometimes pessimistic view. 😨  
 * **Best Fiction Book That Incorporates Related Ideas:** *[The Artist's Way](./the-artists-way.md)* by Julia Cameron is technically non-fiction, but is often used as a tool for creative writing and is a very popular book amongst fiction writers. ✍️  
 * **Best More General Book:** *Steal Like an Artist: 10 Things Nobody Told You About Being Creative* by Austin Kleon. This book offers a broader perspective on creativity, emphasizing the importance of inspiration and imitation. 🧑‍🎨  

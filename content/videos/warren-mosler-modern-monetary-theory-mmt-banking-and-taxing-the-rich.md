@@ -11,7 +11,7 @@ tags:
   - MMT
 youtube: https://youtu.be/m2rAkLIyBJg
 ---
-[Home](../index.md) > [Videos](./index.md) | [👨‍🏫📉💵 Warren Mosler](../people/warren-mosler.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md) | [👨‍🏫📉💵 Warren Mosler](/content/people/warren-mosler.md)  
 # 💰🏦📈 Warren Mosler | Modern Monetary Theory (MMT), Banking, and Taxing the Rich  
 ![Warren Mosler | Modern Monetary Theory (MMT), Banking, and Taxing the Rich](https://youtu.be/m2rAkLIyBJg)  
   
@@ -47,9 +47,9 @@ youtube: https://youtu.be/m2rAkLIyBJg
   
 ### ↔️ Similar  
   
-* [💰📉➡️📈🗳️ The Deficit Myth: Modern Monetary Theory and the Birth of the People's Economy](../books/the-deficit-myth.md) by Stephanie Kelton: Explores MMT’s core ideas and applies them to current political issues, arguing for policies like Medicare for All and a Green New Deal by removing the debt constraint fear.  
-* [💸😇 The 7 Deadly Innocent Frauds of Economic Policy](../books/the-7-deadly-innocent-frauds-of-economic-policy.md) by Warren Mosler: The seminal text from the theory's founder, which lays out the operational realities of fiat currency systems and debunks common economic myths.  
-* [💰📈🤔 Understanding Modern Money](../books/understanding-modern-money.md): The Key to Full Employment and Price Stability by L. Randall Wray: A comprehensive academic treatment that details the history and mechanics of MMT and its policy proposal for a Job Guarantee.  
+* [💰📉➡️📈🗳️ The Deficit Myth: Modern Monetary Theory and the Birth of the People's Economy](/content/books/the-deficit-myth.md) by Stephanie Kelton: Explores MMT’s core ideas and applies them to current political issues, arguing for policies like Medicare for All and a Green New Deal by removing the debt constraint fear.  
+* [💸😇 The 7 Deadly Innocent Frauds of Economic Policy](/content/books/the-7-deadly-innocent-frauds-of-economic-policy.md) by Warren Mosler: The seminal text from the theory's founder, which lays out the operational realities of fiat currency systems and debunks common economic myths.  
+* [💰📈🤔 Understanding Modern Money](/content/books/understanding-modern-money.md): The Key to Full Employment and Price Stability by L. Randall Wray: A comprehensive academic treatment that details the history and mechanics of MMT and its policy proposal for a Job Guarantee.  
   
 ### 🆚 Contrasting  
   
@@ -59,6 +59,6 @@ youtube: https://youtu.be/m2rAkLIyBJg
   
 ### 🎨 Creatively Related  
   
-* [🏛️💰 Debt: The First 5,000 Years](../books/debt-the-first-5000-years.md) by David Graeber: A historical and anthropological look at the nature of debt and money, challenging conventional narratives about their origins and moral implications, providing a non-economist view on currency creation.  
+* [🏛️💰 Debt: The First 5,000 Years](/content/books/debt-the-first-5000-years.md) by David Graeber: A historical and anthropological look at the nature of debt and money, challenging conventional narratives about their origins and moral implications, providing a non-economist view on currency creation.  
 * 🛠️ Basic Income: A Guide for the Perplexed by Guy Standing: Discusses Universal Basic Income, an alternative policy proposal to MMT’s Job Guarantee, focusing on income distribution and security outside of mandatory government employment.  
-* 🧠 [🤔🐇🐢 Thinking, Fast and Slow](../books/thinking-fast-and-slow.md) by Daniel Kahneman: Explores how psychological biases influence human decision-making, highly relevant for understanding why MMT's counter-intuitive ideas (like taxes not funding spending) are difficult for the public and politicians to accept.
+* 🧠 [🤔🐇🐢 Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md) by Daniel Kahneman: Explores how psychological biases influence human decision-making, highly relevant for understanding why MMT's counter-intuitive ideas (like taxes not funding spending) are difficult for the public and politicians to accept.

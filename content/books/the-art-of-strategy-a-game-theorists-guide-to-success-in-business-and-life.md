@@ -9,7 +9,7 @@ tags:
 affiliate link: https://amzn.to/4dQlUR1
 CTA: ♟️ Outmaneuver your rivals.
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # ♟️🧠📈🎯 The Art of Strategy: A Game Theorist's Guide to Success in Business and Life  
 [🛒 The Art of Strategy: A Game Theorist's Guide to Success in Business and Life. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4dQlUR1)  
   
@@ -71,11 +71,11 @@ CTA: ♟️ Outmaneuver your rivals.
 "🎨 "The Art of Strategy" is highly regarded for its accessibility and practical application of 🎲 game theory. 👨‍🏫 The authors, Avinash K. Dixit and Barry J. Nalebuff, are 🏆 renowned experts in the field, with 📚 extensive publications and 🎓 academic credentials. 💪 The book's strength lies in its ability to explain 🤯 complex concepts in a 💡 clear and engaging manner, using 🌍 real-world examples to illustrate 🔑 key points. 📰 Reviews from reputable sources, such as academic journals and major publications, consistently 👍 praise the book's clarity and usefulness. 🤝 The blending of formal theory with practical advice makes it a 💰 valuable resource for anyone interested in strategic thinking. 🤔 While some critics might argue that the book simplifies complex topics, its goal is to make game theory accessible to a broad audience, which it ✅ achieves effectively. 💯 The authors are extremely well respected in the field of game theory."  
   
 ### Book Recommendations 📚  
-* ⭐ **Best Alternate Book on the Same Topic:** [🧠📈 Thinking Strategically: The Competitive Edge in Business, Politics and Everyday Life](./thinking-strategically-the-competitive-edge-in-business-politics-and-everyday-life.md) by Avinash K. Dixit and Barry J. Nalebuff. (📚 This is their other book, 🤔 some prefer this one, and 🤔 some prefer "The Art of Strategy")  
-* 🔗 **Best Tangentially Related Book:** [🤔🐇🐢 Thinking, Fast and Slow](./thinking-fast-and-slow.md) by Daniel Kahneman. 🧠 (💡 Focuses on cognitive biases and decision-making, complementing game theory.)  
-* 🆚 **Best Diametrically Opposed Book:** [⚡🚫💭 Blink: The Power of Thinking Without Thinking](./blink-the-power-of-thinking-without-thinking.md) by Malcolm Gladwell. ⚡️ (🚀 Emphasizes intuition and rapid decision-making, ⚔️ contrasting with the analytical approach of game theory.)  
+* ⭐ **Best Alternate Book on the Same Topic:** [🧠📈 Thinking Strategically: The Competitive Edge in Business, Politics and Everyday Life](/content/books/thinking-strategically-the-competitive-edge-in-business-politics-and-everyday-life.md) by Avinash K. Dixit and Barry J. Nalebuff. (📚 This is their other book, 🤔 some prefer this one, and 🤔 some prefer "The Art of Strategy")  
+* 🔗 **Best Tangentially Related Book:** [🤔🐇🐢 Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md) by Daniel Kahneman. 🧠 (💡 Focuses on cognitive biases and decision-making, complementing game theory.)  
+* 🆚 **Best Diametrically Opposed Book:** [⚡🚫💭 Blink: The Power of Thinking Without Thinking](/content/books/blink-the-power-of-thinking-without-thinking.md) by Malcolm Gladwell. ⚡️ (🚀 Emphasizes intuition and rapid decision-making, ⚔️ contrasting with the analytical approach of game theory.)  
 * 🎮 **Best Fiction Book That Incorporates Related Ideas:** "Ender's Game" by Orson Scott Card. 👾 (⚔️ Explores strategic thinking and decision-making in high-stakes situations.)  
-* 🌍 **Best Book That Is More General:** [🍃🧠🤝🏼 Influence: The Psychology of Persuasion](./influence.md) by Robert Cialdini. 🗣️ (🤝 Focuses on broader principles of persuasion and influence, which are relevant to strategic interactions.)  
+* 🌍 **Best Book That Is More General:** [🍃🧠🤝🏼 Influence: The Psychology of Persuasion](/content/books/influence.md) by Robert Cialdini. 🗣️ (🤝 Focuses on broader principles of persuasion and influence, which are relevant to strategic interactions.)  
 * 🎯 **Best Book That Is More Specific:** "Auction Theory" by Vijay Krishna. 💰 (🔎 Provides a deep dive into the specific application of game theory to auctions.)  
 * 💯 **Best Book That Is More Rigorous:** "Game Theory" by Drew Fudenberg and Jean Tirole. 📈 (🎓 A graduate-level textbook that provides a more formal and mathematical treatment of game theory.)  
 * 👶 **Best Book That Is More Accessible:** "Naked Economics: Undressing the Dismal Science" by Charles Wheelan. 📊 (💡 While not specifically game theory, it breaks down economic concepts in a simple to understand way.)  

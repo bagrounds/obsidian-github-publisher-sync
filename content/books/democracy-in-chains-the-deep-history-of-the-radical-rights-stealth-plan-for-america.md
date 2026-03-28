@@ -6,7 +6,7 @@ URL: https://bagrounds.org/books/democracy-in-chains-the-deep-history-of-the-rad
 share: true
 affiliate link: https://amzn.to/3G2kqGH
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🏛️⛓️ Democracy in Chains: The Deep History of the Radical Right's Stealth Plan for America  
 [🛒 Democracy in Chains: The Deep History of the Radical Right's Stealth Plan for America. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3G2kqGH)  
   
@@ -33,7 +33,7 @@ affiliate link: https://amzn.to/3G2kqGH
   
 📖 These books explore the history and influence of the radical right, the impact of money on politics, and critiques of conservative and libertarian movements.  
   
-* **[💰🤫 Dark Money: The Hidden History of the Billionaires Behind the Rise of the Radical Right](./dark-money-the-hidden-history-of-the-billionaires-behind-the-rise-of-the-radical-right.md)** by Jane Mayer. This book investigates the network of wealthy donors, including the Koch brothers, and their role in funding conservative and libertarian organizations to shift American politics to the right.  
+* **[💰🤫 Dark Money: The Hidden History of the Billionaires Behind the Rise of the Radical Right](/content/books/dark-money-the-hidden-history-of-the-billionaires-behind-the-rise-of-the-radical-right.md)** by Jane Mayer. This book investigates the network of wealthy donors, including the Koch brothers, and their role in funding conservative and libertarian organizations to shift American politics to the right.  
 * 🇺🇸 ***Alt-America: The Rise of the Radical Right in the Age of Trump*** by David Neiwert. This work examines the historical roots and recent resurgence of right-wing extremism in the United States.  
 * 🗳️ ***The Money Men: The Real Story of Fund-raising's Influence on Political Power in America*** by Jeffrey H. Birnbaum. This book delves into the world of political fundraising and its impact on American political power.  
 * 💵 ***Money in American Politics: An Encyclopedia*** by David Schultz. An encyclopedic look at how money influences campaigns, elections, and policy in the U.S.  
@@ -58,7 +58,7 @@ affiliate link: https://amzn.to/3G2kqGH
 * 🤔 ***The Limits of Public Choice: A Sociological Critique of the Economic Theory of Politics*** by Lars Udehn. This book provides a sociological perspective on the limitations of public choice theory.  
 * 😎 ***Radicals for Capitalism: A Freewheeling History of the Modern American Libertarian Movement*** by Brian Doherty. This book offers a history of the libertarian movement, providing a different narrative focus than MacLean's critique.  
   
-## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
+## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Democracy in Chains: The Deep History of the Radical Right's Stealth Plan for America. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.  
   
 ## 🐦 Tweet  

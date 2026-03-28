@@ -8,7 +8,7 @@ Author:
 tags:
 affiliate link: https://amzn.to/4knlP9H
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # ✍️🗽 On Freedom  
 [🛒 On Freedom. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4knlP9H)  
   
@@ -68,13 +68,13 @@ affiliate link: https://amzn.to/4knlP9H
 **📚 Additional Book Recommendations:**  
   
 * 🧠 **Best Alternate Book on the Same Topic:** 📜 *Four Essays on Liberty* by Isaiah Berlin. This classic work 🧐 provides a more in-depth philosophical exploration of the concepts of negative and positive liberty, which form a central tension in Snyder's book. 🤯  
-* 🏘️ **Best Book That Is Tangentially Related:** 🎳 *[Bowling Alone](./bowling-alone.md): The Collapse and Revival of American Community* by Robert D. Putnam. This book 📖 examines the decline of social capital and civic engagement in the United States 🇺🇸, a trend that Snyder implicitly addresses in his discussion of solidarity.🤝  
+* 🏘️ **Best Book That Is Tangentially Related:** 🎳 *[Bowling Alone](/content/books/bowling-alone.md): The Collapse and Revival of American Community* by Robert D. Putnam. This book 📖 examines the decline of social capital and civic engagement in the United States 🇺🇸, a trend that Snyder implicitly addresses in his discussion of solidarity.🤝  
 * 💰🚫🏛️ **Best Book That Is Diametrically Opposed:** 🗽 *Capitalism and Freedom* by Milton Friedman. This influential work 🗣️ presents a strong argument for negative liberty and the minimal state, contrasting sharply with Snyder's emphasis on positive freedom and the enabling role of government. ⚖️  
 * 👤⚖️ **Best Fiction Book That Incorporates Related Ideas:** 👨‍⚖️ *The Trial* by Franz Kafka. This novel ✍️ vividly portrays the experience of an individual facing an inscrutable and oppressive system, raising profound questions about freedom, power, and the individual's place in society. 🤔🌍  
-* 🇺🇸🏛️ **Best Book That Is More General:** 📜 *[Democracy in America](./democracy-in-america.md)* by Alexis de Tocqueville. This foundational text 🏛️ offers a broad and insightful analysis of American society and its political institutions, providing a wider historical and sociological context for understanding the challenges to freedom discussed by Snyder. 🧐  
+* 🇺🇸🏛️ **Best Book That Is More General:** 📜 *[Democracy in America](/content/books/democracy-in-america.md)* by Alexis de Tocqueville. This foundational text 🏛️ offers a broad and insightful analysis of American society and its political institutions, providing a wider historical and sociological context for understanding the challenges to freedom discussed by Snyder. 🧐  
 * 🇷🇺⛓️ **Best Book That Is More Specific:** 📖 *Gulag: A History* by Anne Applebaum. This detailed historical account 🗓️ of the Soviet forced labor camps provides a stark and harrowing illustration of the consequences of the absence of freedom and the nature of totalitarian control, a historical backdrop that informs Snyder's analysis. 😥  
 * ⚖️ **Best Book That Is More Rigorous:** 🤓 *A Theory of Justice* by John Rawls. This seminal work 🏆 in political philosophy offers a more systematic and abstract treatment of justice and liberty, providing a deeper theoretical framework for considering the principles underlying a free society. 🧐🕊️  
-* 🛡️💡 **Best Book That Is More Accessible:** 📚 *[On Tyranny: Twenty Lessons from the Twentieth Century](./on-tyranny.md)* by Timothy Snyder. This shorter and more directly prescriptive work 📝 by the same author offers concrete lessons for resisting authoritarianism, making it a more immediate and accessible entry point to his concerns about freedom. 🔓  
+* 🛡️💡 **Best Book That Is More Accessible:** 📚 *[On Tyranny: Twenty Lessons from the Twentieth Century](/content/books/on-tyranny.md)* by Timothy Snyder. This shorter and more directly prescriptive work 📝 by the same author offers concrete lessons for resisting authoritarianism, making it a more immediate and accessible entry point to his concerns about freedom. 🔓  
   
 ## 🐦 Tweet  
 <blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">🗽 Americans tend to focus on negative freedom (freedom from) <br>or the 🚫⛓️ absence of constraints. <a href="https://twitter.com/timothysnyder_?ref_src=twsrc%5Etfw">@timothysnyder_</a> &#39;s On Freedom discusses positive freedom (freedom to) as 👑 sovereignty, 🔮 unpredictability, ✈️ mobility, ✅ factuality, and 🤝 solidarity. <a href="https://t.co/eqoUNNzVcR">https://t.co/eqoUNNzVcR</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/1909034607032566137?ref_src=twsrc%5Etfw">April 7, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

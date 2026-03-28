@@ -10,7 +10,7 @@ Channel: Andrew Huberman
 tags:
 youtube: https://youtu.be/cIla9axQRyM
 ---
-[Home](../index.md) > [Videos](./index.md) | [🧠🫀👀🔬 Andrew Huberman](../people/andrew-huberman.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md) | [🧠🫀👀🔬 Andrew Huberman](/content/people/andrew-huberman.md)  
 # 🧠🍎💊📈 Food & Supplements for Brain Health & Cognitive Performance | Huberman Lab Essentials  
 ![Food & Supplements for Brain Health & Cognitive Performance | Huberman Lab Essentials](https://youtu.be/cIla9axQRyM)  
   
@@ -84,9 +84,9 @@ youtube: https://youtu.be/cIla9axQRyM
 - 🍎 **The Dorito Effect** by Mark Schatzker: Explores how modern food science has decoupled the reward of flavor from actual nutritional content, which relates to the video's discussion of taste, dopamine, and food seeking.  
   
 ### Contrasting  
-- **[🛡️🥦 In Defense of Food: An Eater's Manifesto](../books/in-defense-of-food-an-eaters-manifesto.md)** by Michael Pollan: Advocates for a whole-food, reductionist approach ("Eat food. Not too much. Mostly plants."), cautioning against over-reliance on isolated "nutrients" and the concept of "nutritionism," which contrasts the video's focus on supplements.  
+- **[🛡️🥦 In Defense of Food: An Eater's Manifesto](/content/books/in-defense-of-food-an-eaters-manifesto.md)** by Michael Pollan: Advocates for a whole-food, reductionist approach ("Eat food. Not too much. Mostly plants."), cautioning against over-reliance on isolated "nutrients" and the concept of "nutritionism," which contrasts the video's focus on supplements.  
 - 📜 **Nourishing Traditions** by Sally Fallon Morell: Promotes a nutrient-dense diet based on traditional food preparation and consumption methods, contrasting the modern, high-tech approach to supplementation.  
   
 ### Creatively Related  
-- **[🤔🐇🐢 Thinking, Fast and Slow](../books/thinking-fast-and-slow.md)** by Daniel Kahneman: Discusses the dual-process model of the brain (System 1/fast, subconscious; System 2/slow, deliberate), which directly relates to the video's explanation of subconscious gut signals versus conscious belief-driven food choices.  
-- **[📜🌍⏳ Sapiens: A Brief History of Humankind](../books/sapiens-a-brief-history-of-humankind.md)** by Yuval Noah Harari: Provides an evolutionary context for human development, including why the human brain is hardwired to seek out the high-calorie, sugary, and fatty foods that were historically necessary for survival, linking to the initial discussion of food preference mechanisms.
+- **[🤔🐇🐢 Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md)** by Daniel Kahneman: Discusses the dual-process model of the brain (System 1/fast, subconscious; System 2/slow, deliberate), which directly relates to the video's explanation of subconscious gut signals versus conscious belief-driven food choices.  
+- **[📜🌍⏳ Sapiens: A Brief History of Humankind](/content/books/sapiens-a-brief-history-of-humankind.md)** by Yuval Noah Harari: Provides an evolutionary context for human development, including why the human brain is hardwired to seek out the high-calorie, sugary, and fatty foods that were historically necessary for survival, linking to the initial discussion of food preference mechanisms.

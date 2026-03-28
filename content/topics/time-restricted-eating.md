@@ -5,7 +5,7 @@ aliases:
 title: ⏳🍽️ Time-Restricted Eating
 URL: https://bagrounds.org/topics/time-restricted-eating
 ---
-[Home](../index.md) > [Topics](./index.md)  
+[Home](/content/index.md) > [Topics](/content/topics/index.md)  
 # ⏳🍽️ Time-Restricted Eating  
 ## 🤖 AI Summary  
 ### 👉 What Is It? 🧐  
@@ -167,10 +167,10 @@ Why did the clock ⏰ break up with the stomach 😩 during time-restricted eati
 ### 📖 Book Recommendations 📚  
   
   * **Topical (Directly about TRE/IF)**:  
-      * [🌄⏳ The Circadian Code: Lose Weight, Supercharge Your Energy, and Transform Your Health from Morning to Midnight](../books/the-circadian-code.md) by Satchin Panda, PhD - Explains the science of circadian rhythms and TRE from a leading researcher.  
-      * [📖⏱️🍎 The Complete Guide to Fasting: Heal Your Body Through Intermittent, Alternate-Day, and Extended Fasting](../books/the-complete-guide-to-fasting-heal-your-body-through-intermittent-alternate-day-and-extended-fasting.md) by Dr. Jason Fung and Jimmy Moore - Covers various IF methods, including TRE 🍎.  
+      * [🌄⏳ The Circadian Code: Lose Weight, Supercharge Your Energy, and Transform Your Health from Morning to Midnight](/content/books/the-circadian-code.md) by Satchin Panda, PhD - Explains the science of circadian rhythms and TRE from a leading researcher.  
+      * [📖⏱️🍎 The Complete Guide to Fasting: Heal Your Body Through Intermittent, Alternate-Day, and Extended Fasting](/content/books/the-complete-guide-to-fasting-heal-your-body-through-intermittent-alternate-day-and-extended-fasting.md) by Dr. Jason Fung and Jimmy Moore - Covers various IF methods, including TRE 🍎.  
   * **Tangentially Related (Circadian Rhythms/Metabolism)**:  
-      * [😴💭 Why We Sleep: Unlocking the Power of Sleep and Dreams](../books/why-we-sleep-unlocking-the-power-of-sleep-and-dreams.md) by Matthew Walker, PhD - 😴 While about sleep, deeply connected to circadian rhythms which underpin TRE.  
+      * [😴💭 Why We Sleep: Unlocking the Power of Sleep and Dreams](/content/books/why-we-sleep-unlocking-the-power-of-sleep-and-dreams.md) by Matthew Walker, PhD - 😴 While about sleep, deeply connected to circadian rhythms which underpin TRE.  
       * "The Obesity Code: Unlocking the Secrets of Weight Loss" by Dr. Jason Fung - Focuses on insulin's role in obesity, relevant to fasting's mechanism 📉.  
   * **Topically Opposed (Maybe advocating grazing or different meal timing?)**:  
       * *(Finding specifically "anti-TRE" books is hard, but books emphasizing frequent small meals for metabolism might fit)* - Look for titles promoting "grazing" or 6 small meals a day, though scientific support for that approach for weight loss is often debated 🤔.  
@@ -187,5 +187,5 @@ Why did the clock ⏰ break up with the stomach 😩 during time-restricted eati
   
 ### 📺 Links To Relevant YouTube Channels Or Videos 🎬  
   
-- [⏰👵🔬 Circadian Code to Extend Longevity | Satchin Panda | TEDxVeniceBeach](../videos/circadian-code-to-extend-longevity-satchin-panda-tedx-venice-beach.md)  
+- [⏰👵🔬 Circadian Code to Extend Longevity | Satchin Panda | TEDxVeniceBeach](/content/videos/circadian-code-to-extend-longevity-satchin-panda-tedx-venice-beach.md)  
 - [Dr. Jason Fung's Channel](https://www.youtube.com/c/drjasonfung1): Focuses on intermittent fasting and low-carb diets, explaining mechanisms like insulin resistance 👨‍⚕️.

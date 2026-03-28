@@ -9,7 +9,7 @@ Platform:
 Channel: PBS NewsHour
 tags:
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md)  
 # How Trump's rhetoric compares to historic fascist language  
 ![How Trump's rhetoric compares to historic fascist language](https://youtu.be/6U4N-uTn3v0)  
   

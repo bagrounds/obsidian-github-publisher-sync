@@ -10,7 +10,7 @@ Channel: Heather Cox Richardson
 tags:
 youtube: https://www.youtube.com/embed/L2-IA04PA0o
 ---
-[Home](../index.md) > [Videos](./index.md) | [🏛️🇺🇸📖 Heather Cox Richardson](../people/heather-cox-richardson.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md) | [🏛️🇺🇸📖 Heather Cox Richardson](/content/people/heather-cox-richardson.md)  
 # ❓🤯😵‍💫 What the Heck Just Happened | 2025-08-30  
 ![What the Heck Just Happened](https://www.youtube.com/embed/L2-IA04PA0o)  
   
@@ -26,7 +26,7 @@ This 🎬 video discusses recent political and cultural shifts and a new public 
 The 🎥 video's analysis is presented from the perspective of two historians, Heather Cox Richardson and Joanne Freeman, and largely focuses on recent American political shifts. 🌎 To gain a broader perspective, it would be beneficial to explore similar historical moments in other countries and consider how cultural differences might affect the use of humor and performance in political resistance. ⚖️ One could also research the effectiveness of different types of resistance, such as non-violent protest versus direct political action, to see how they compare to the shifts described in the video.  
   
 ## 📚 Book Recommendations  
-* [🗳️🕊️🇺🇸 Democracy in America](../books/democracy-in-america.md) by Alexis de Tocqueville: A classic study of the 🇺🇸 American political landscape in the 19th century that offers a contrasting historical view of the nation's political culture.  
-* [👤✊ The Power of the Powerless](../books/the-power-of-the-powerless.md) by Václav Havel: This book explores the dynamics of resistance against an authoritarian regime and the importance of living in truth, which aligns with the video's theme of standing up to overreach.  
+* [🗳️🕊️🇺🇸 Democracy in America](/content/books/democracy-in-america.md) by Alexis de Tocqueville: A classic study of the 🇺🇸 American political landscape in the 19th century that offers a contrasting historical view of the nation's political culture.  
+* [👤✊ The Power of the Powerless](/content/books/the-power-of-the-powerless.md) by Václav Havel: This book explores the dynamics of resistance against an authoritarian regime and the importance of living in truth, which aligns with the video's theme of standing up to overreach.  
 * Laughter: An Essay on the Meaning of the Comic by Henri Bergson: An exploration of the 🤣 nature of comedy and its social function, providing a deeper understanding of the "power of humor" discussed in the video.  
 * A People's History of the United States by Howard Zinn: This book presents a history of the 🇺🇸 United States from the perspective of marginalized groups and dissenters, offering a contrasting narrative to traditional historical accounts.

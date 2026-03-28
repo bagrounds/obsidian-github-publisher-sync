@@ -7,7 +7,7 @@ URL: https://bagrounds.org/articles/
 Author:
 tags:
 ---
-[Home](../index.md) > [Articles](./index.md)  
+[Home](/content/index.md) > [Articles](/content/articles/index.md)  
 # [NIH freezes funds to Harvard and four other universities, but can’t tell them](https://www.science.org/content/article/nih-freezes-funds-harvard-and-four-other-universities-can-t-tell-them)  
 ## 🤖 AI Summary  
 **🚨 NIH Freezes Funding to Five Universities**  

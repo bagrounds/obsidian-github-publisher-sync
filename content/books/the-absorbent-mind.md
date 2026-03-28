@@ -7,7 +7,7 @@ share: true
 CTA: ✨ Absorb wisdom.
 affiliate link: https://amzn.to/3MB9FhO
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🧽🧠 The Absorbent Mind  
 [🛒 The Absorbent Mind. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3MB9FhO)  
   
@@ -78,7 +78,7 @@ affiliate link: https://amzn.to/3MB9FhO
 * 🤔 What If Everybody Understood Child Development? by Rae Pica (Addresses common misconceptions in child development)  
   
 ### 🔗 Related  
-* [🕳️🧠👶🏽 The Whole-Brain Child: 12 Revolutionary Strategies to Nurture Your Child's Developing Mind](./the-whole-brain-child.md) by Daniel J. Siegel and Tina Payne Bryson (Neuroscience of child development)  
+* [🕳️🧠👶🏽 The Whole-Brain Child: 12 Revolutionary Strategies to Nurture Your Child's Developing Mind](/content/books/the-whole-brain-child.md) by Daniel J. Siegel and Tina Payne Bryson (Neuroscience of child development)  
 * 💬 How to Talk So Kids Will Listen & Listen So Kids Will Talk by Adele Faber and Elaine Mazlish (Communication with children)  
 * ✨ Positive Discipline by Jane Nelsen (Focuses on respectful parenting and guidance)  
 * 🧘 Self-Reg by Stuart Shanker (Understanding and managing stress in children)  

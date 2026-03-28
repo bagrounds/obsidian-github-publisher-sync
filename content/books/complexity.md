@@ -9,7 +9,7 @@ tags:
 affiliate link: https://amzn.to/3Svi7i6
 CTA: ✨ Transcend simplicity.
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🌐🧭❓🔍🗺️ Complexity: A Guided Tour  
 [🛒 Complexity: A Guided Tour. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3Svi7i6)  
   
@@ -40,7 +40,7 @@ Melanie Mitchell's "Complexity: A Guided Tour" offers a surprisingly accessible 
 * **Evolution and Adaptation:**  
     * Discusses evolutionary algorithms and genetic algorithms as examples of adaptive systems. 🧬  
     * Explores how evolution can lead to the emergence of complex structures and behaviors. 🐒➡️🧑‍💻  
-    * Introduces the concept of [Self-Organization](../topics/self-organization.md) in biological systems. 🌿  
+    * Introduces the concept of [Self-Organization](/content/topics/self-organization.md) in biological systems. 🌿  
 * **Information and Computation:**  
     * Explores the relationship between information, computation, and complexity. 💻  
     * Discusses the role of information in self-organization and adaptation. ℹ️  
@@ -56,7 +56,7 @@ Melanie Mitchell's "Complexity: A Guided Tour" offers a surprisingly accessible 
   
 #### **Significant Theories, Theses, and Mental Models 🧠**  
 * **Emergence:** The idea that complex patterns and behaviors can arise from simple interactions. ✨  
-* **[Self-Organization](../topics/self-organization.md):** The spontaneous emergence of order in complex systems. 🔄  
+* **[Self-Organization](/content/topics/self-organization.md):** The spontaneous emergence of order in complex systems. 🔄  
 * **Adaptation:** The ability of complex systems to change and evolve in response to their environment. 🌿➡️🌳  
 * **Information Processing:** The role of information in shaping the behavior of complex systems. ℹ️  
 * **Nonlinear Dynamics:** The study of systems where small changes can have large and unpredictable effects. 🌀  
@@ -73,22 +73,22 @@ Melanie Mitchell is a highly respected computer scientist and complexity researc
   
 #### **Book Recommendations 📚**  
 * **Best Alternate Books on the Same Topic:**  
-    * [💥🌀➡️⏳⚖️🕰️ ️ Sync: How Order Emerges From Chaos In The Universe, Nature, And Daily Life](./sync.md) by Steven Strogatz. 🤝🔄  
+    * [💥🌀➡️⏳⚖️🕰️ ️ Sync: How Order Emerges From Chaos In The Universe, Nature, And Daily Life](/content/books/sync.md) by Steven Strogatz. 🤝🔄  
     * Complex Adaptive Systems: An Introduction to Computational Models of Social Life by John H. Miller and Scott E. Page – A rigorous yet accessible introduction to modeling complex systems.  
-* **Best Tangentially Related Book:** [🌐🔗🧠📖 Thinking in Systems: A Primer](./thinking-in-systems.md) by Donella H. Meadows. ⚙️  
+* **Best Tangentially Related Book:** [🌐🔗🧠📖 Thinking in Systems: A Primer](/content/books/thinking-in-systems.md) by Donella H. Meadows. ⚙️  
 * **Best Diametrically Opposed Books:**  
-    * [🧬🎭👁️ The Case Against Reality: Why Evolution Hid the Truth from Our Eyes](books/the-case-against-reality-why-evolution-hid-the-truth-from-our-eyes.md) by Donald D. Hoffman. 👁️‍🗨️  
-    * [⚫🦢🎲 The Black Swan: The Impact of the Highly Improbable](books/the-black-swan-the-impact-of-the-highly-improbable.md) by Nassim Nicholas Taleb – Challenges the predictability of systems and emphasizes rare, disruptive events over emergent order.  
+    * [🧬🎭👁️ The Case Against Reality: Why Evolution Hid the Truth from Our Eyes](/content/books/the-case-against-reality-why-evolution-hid-the-truth-from-our-eyes.md) by Donald D. Hoffman. 👁️‍🗨️  
+    * [⚫🦢🎲 The Black Swan: The Impact of the Highly Improbable](/content/books/the-black-swan-the-impact-of-the-highly-improbable.md) by Nassim Nicholas Taleb – Challenges the predictability of systems and emphasizes rare, disruptive events over emergent order.  
 * **Best Fiction Books Incorporating Related Ideas:**  
-    * [🌌3️⃣⚛️ The Three-Body Problem](books/the-three-body-problem.md) by Liu Cixin. 🌌  
-    * [❄️💻💥 Snow Crash](./snow-crash.md) by Neal Stephenson – A cyberpunk novel where the interplay of technology, culture, and individuals mirrors complex adaptive systems.  
-* **Best More General Book:** [📜🌍⏳ Sapiens: A Brief History of Humankind](books/sapiens-a-brief-history-of-humankind.md) by Yuval Noah Harari. 🧑‍🤝‍🧑  
+    * [🌌3️⃣⚛️ The Three-Body Problem](/content/books/the-three-body-problem.md) by Liu Cixin. 🌌  
+    * [❄️💻💥 Snow Crash](/content/books/snow-crash.md) by Neal Stephenson – A cyberpunk novel where the interplay of technology, culture, and individuals mirrors complex adaptive systems.  
+* **Best More General Book:** [📜🌍⏳ Sapiens: A Brief History of Humankind](/content/books/sapiens-a-brief-history-of-humankind.md) by Yuval Noah Harari. 🧑‍🤝‍🧑  
 * **Best More Specific Book:** "Networks: An Introduction" by Mark Newman. 🕸️  
-* **Best More Rigorous Book:** [🦋🌀💥🤖 Nonlinear Dynamics and Chaos: With Applications to Physics, Biology, Chemistry, and Engineering](books/nonlinear-dynamics-and-chaos.md): by Steven H. Strogatz. 🌀  
+* **Best More Rigorous Book:** [🦋🌀💥🤖 Nonlinear Dynamics and Chaos: With Applications to Physics, Biology, Chemistry, and Engineering](/content/books/nonlinear-dynamics-and-chaos.md): by Steven H. Strogatz. 🌀  
 * **Best More Accessible Book:** "Tangled Nets: How to Solve Your Organization's Toughest Problems Without Changing Everything" by Anne Loehr. 🕸️  
   
 ## 💬 [Gemini](https://gemini.google.com) Prompt  
 > Summarize the book: Complexity: A Guided Tour by Melanie Mitchell. Start with a TL;DR - a single statement that conveys a maximum of the useful information provided in the book. Next, explain how this book may offer a new or surprising perspective. Follow this with a deep dive. Catalogue the topics, methods, and research discussed. Be sure to highlight any significant theories, theses, or mental models proposed. Provide a critical analysis of the quality of the information presented, using scientific backing, author credentials, authoritative reviews, and other markers of high quality information as justification. Emphasize practical takeaways. Make the following additional book recommendations: the best alternate book on the same topic; the best book that is tangentially related; the best book that is diametrically opposed; the best fiction book that incorporates related ideas; the best book that is more general or more specific; and the best book that is more rigorous or more accessible than this book. Format your response as markdown, starting at heading level H3, with inline links, for easy copy paste. Use meaningful emojis generously (at least one per heading, bullet point, and paragraph) to enhance readability. Do not include broken links or links to commercial sites.  
   
 ## 📝🐒 Human Notes  
-- [Gödel, Escher, Bach: An Eternal Golden Braid](./godel-escher-bach.md)  
+- [Gödel, Escher, Bach: An Eternal Golden Braid](/content/books/godel-escher-bach.md)  

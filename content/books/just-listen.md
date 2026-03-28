@@ -8,7 +8,7 @@ Author:
 tags:
 affiliate link: https://amzn.to/3Td6r3D
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 👂🤫 Just Listen: Discover the Secret to Getting Through to Absolutely Anyone  
 [🛒 Just Listen: Discover the Secret to Getting Through to Absolutely Anyone. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3Td6r3D)  
   
@@ -89,15 +89,15 @@ Active, empathetic listening transforms every interaction—by truly hearing and
   
 #### Additional Book Recommendations 📖  
 - **Best Alternate Book on the Same Topic:**  
-  - [🧰💬 Crucial Conversations: Tools for Talking When Stakes Are High](./crucial-conversations-tools-for-talking-when-stakes-are-high.md) by Kerry Patterson et al.  
+  - [🧰💬 Crucial Conversations: Tools for Talking When Stakes Are High](/content/books/crucial-conversations-tools-for-talking-when-stakes-are-high.md) by Kerry Patterson et al.  
     - Explores techniques for engaging in high-stakes dialogue with clarity and composure.  
   
 - **Best Book Tangentially Related:**  
-  - *[Nonviolent Communication](./nonviolent-communication.md)* by Marshall Rosenberg  
+  - *[Nonviolent Communication](/content/books/nonviolent-communication.md)* by Marshall Rosenberg  
     - Offers a broader perspective on empathy and compassionate communication that complements the listening strategies in "Just Listen."  
   
 - **Best Book Diametrically Opposed:**  
-  - *[The 48 Laws of Power](./the-48-laws-of-power.md)* by Robert Greene  
+  - *[The 48 Laws of Power](/content/books/the-48-laws-of-power.md)* by Robert Greene  
     - Presents a contrasting view on interpersonal dynamics, emphasizing strategic power moves over empathetic engagement.  
   
 - **Best Fiction Book Incorporating Related Ideas:**  

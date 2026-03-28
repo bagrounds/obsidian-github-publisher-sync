@@ -1,11 +1,13 @@
 ---
 share: true
 title: 2026-03-27 | 🖼️ Porting the Image Generation Pipeline to Haskell
+aliases:
+  - 2026-03-27 | 🖼️ Porting the Image Generation Pipeline to Haskell
 date: 2026-03-27
 ---
-[🏡 Home](/content/index.md) > [🤖 AI Blog](/content/ai-blog/index.md) | [⏮️](/content/ai-blog/2026-03-27-2-wiring-haskell-executables-for-production.md) [⏭️](/content/ai-blog/2026-03-27-4-porting-internal-linking-to-haskell.md)  
+[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-27-2-wiring-haskell-executables-for-production.md) [⏭️](./2026-03-27-4-porting-internal-linking-to-haskell.md)  
   
-## 🖼️ Porting the Image Generation Pipeline to Haskell  
+# 2026-03-27 | 🖼️ Porting the Image Generation Pipeline to Haskell  
   
 ### 🎯 The Mission  
   

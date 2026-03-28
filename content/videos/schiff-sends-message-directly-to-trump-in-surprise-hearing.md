@@ -9,7 +9,7 @@ Platform:
 Channel: Sen. Adam Schiff
 tags:
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md)  
 # Schiff Sends Message Directly to Trump in Surprise Hearing  
 ![Schiff Sends Message Directly to Trump in Surprise Hearing](https://youtu.be/54eBj-TLyO4)  
   
@@ -24,7 +24,7 @@ tags:
 ## 🤖 AI Summary  
 ⚖️ **Miscarriage of Justice:**  
 - 👨‍⚖️ _The Innocent Man: Murder and Injustice in a Small Town_ by John Grisham: 📖 A true story of a man wrongly convicted of murder. 🚨  
-- [🧑🏿‍⚖️🔄 Just Mercy: A Story of Justice and Redemption](../books/just-mercy-a-story-of-justice-and-redemption.md) by Bryan Stevenson: ✊🏾 Explores the systemic issues leading to wrongful convictions and the importance of legal defense for the marginalized. 🫂  
+- [🧑🏿‍⚖️🔄 Just Mercy: A Story of Justice and Redemption](/content/books/just-mercy-a-story-of-justice-and-redemption.md) by Bryan Stevenson: ✊🏾 Explores the systemic issues leading to wrongful convictions and the importance of legal defense for the marginalized. 🫂  
 - 🕵️ _Convicting the Innocent: Where Criminal Prosecutions Go Wrong_ by Brandon L. Garrett: 🔍 An examination of the causes of wrongful convictions through case studies. 📚  
   
 🚨 **Abuse of Power:**  
@@ -40,14 +40,14 @@ tags:
 🕰️ **Historical Parallels to Authoritarianism:**  
 - 🇩🇪 _The Rise and Fall of the Third Reich: A History of Nazi Germany_ by William L. Shirer: 📖 A comprehensive historical account of the Nazi regime and its ascent to power. 🚩  
 - 😥 _They Thought They Were Free: The Germans 1933-45_ by Milton Sanford Mayer: 🧠 Explores the mindset of ordinary German citizens during the Nazi era and how they became complicit. 👤  
-- [👹 The Origins of Totalitarianism](../books/the-origins-of-totalitarianism.md) by Hannah Arendt: 🏛️ A seminal work analyzing the historical and political conditions that led to the rise of totalitarian regimes. 📚  
+- [👹 The Origins of Totalitarianism](/content/books/the-origins-of-totalitarianism.md) by Hannah Arendt: 🏛️ A seminal work analyzing the historical and political conditions that led to the rise of totalitarian regimes. 📚  
   
 🤫 **Government Corruption and Intimidation:**  
 - 🤐 _The Intimidation Game: How the Left Is Silencing Free Speech_ by Kimberley Strassel: 🚫 Presents a perspective on alleged intimidation tactics used in political discourse. 🗣️  
 - 🇿🇦 _Same Shit, Different Government: Book 1 - The Corruption & The Intimidation_ by Mike Hampton: 📜 An account of alleged corruption and intimidation within a South African political context. 💥  
-- 🇵🇭 [👥⚔️👑 How to Stand Up to a Dictator: The Fight for Our Future](../books/how-to-stand-up-to-a-dictator.md) by Maria Ressa: 🎤 Chronicles the author's experience fighting against government intimidation and censorship in the Philippines. ✊  
+- 🇵🇭 [👥⚔️👑 How to Stand Up to a Dictator: The Fight for Our Future](/content/books/how-to-stand-up-to-a-dictator.md) by Maria Ressa: 🎤 Chronicles the author's experience fighting against government intimidation and censorship in the Philippines. ✊  
   
 🛡️ **Defending Democracy:**  
-- 🕰️ _[On Tyranny: Twenty Lessons from the Twentieth Century](../books/on-tyranny.md)_ by Timothy Snyder: 📖 Offers historical lessons on resisting authoritarianism. 💪  
-- [🗳️🏛️☠️ How Democracies Die](../books/how-democracies-die.md) by Steven Levitsky and Daniel Ziblatt: 📉 Examines the gradual erosion of democratic institutions and how to prevent it. 🚧  
+- 🕰️ _[On Tyranny: Twenty Lessons from the Twentieth Century](/content/books/on-tyranny.md)_ by Timothy Snyder: 📖 Offers historical lessons on resisting authoritarianism. 💪  
+- [🗳️🏛️☠️ How Democracies Die](/content/books/how-democracies-die.md) by Steven Levitsky and Daniel Ziblatt: 📉 Examines the gradual erosion of democratic institutions and how to prevent it. 🚧  
 - 🇺🇸 _Renegade: Defending Democracy and Liberty in Our Divided Country_ by Adam Kinzinger: 🗽 A personal account of defending democratic principles in contemporary American politics. 🤝  

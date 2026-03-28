@@ -6,7 +6,7 @@ URL: https://bagrounds.org/books/ritual-how-seemingly-senseless-acts-make-life-w
 share: true
 affiliate link: https://amzn.to/3T62r58
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🙏❤️ Ritual: How Seemingly Senseless Acts Make Life Worth Living  
 [🛒 Ritual: How Seemingly Senseless Acts Make Life Worth Living. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3T62r58)  
   
@@ -34,25 +34,25 @@ affiliate link: https://amzn.to/3T62r58
   
 ### 📖 Similar Reads (Exploring Ritual, Habit, and Human Behavior)  
   
-* **[🔄🧠💪 The Power of Habit: Why We Do What We Do in Life and Business](./the-power-of-habit.md)** by Charles Duhigg: 🧠 While focusing on habits rather than rituals, this book explores the neurological loop that creates habits and how understanding it can transform lives, offering a complementary perspective on the power of routine and ingrained behaviors.  
-* **[😇😈 Behave: The Biology of Humans at Our Best and Worst](./behave-the-biology-of-humans-at-our-best-and-worst.md)** by Robert M. Sapolsky: 🔬 Sapolsky's extensive work on the biological underpinnings of human behavior provides a broader scientific context for understanding why we engage in complex social behaviors like ritual.  
+* **[🔄🧠💪 The Power of Habit: Why We Do What We Do in Life and Business](/content/books/the-power-of-habit.md)** by Charles Duhigg: 🧠 While focusing on habits rather than rituals, this book explores the neurological loop that creates habits and how understanding it can transform lives, offering a complementary perspective on the power of routine and ingrained behaviors.  
+* **[😇😈 Behave: The Biology of Humans at Our Best and Worst](/content/books/behave-the-biology-of-humans-at-our-best-and-worst.md)** by Robert M. Sapolsky: 🔬 Sapolsky's extensive work on the biological underpinnings of human behavior provides a broader scientific context for understanding why we engage in complex social behaviors like ritual.  
 * 🤔 ***Why Religion Is Natural and Science Is Not*** by Robert N. McCauley: 🧠 This book delves into the cognitive foundations of religious thought and practice, offering a deeper look at why religious rituals are so prevalent and persistent from a cognitive science perspective.  
 * 🤝 ***The Social Instinct: How Cooperation Shaped Our World*** by Nichola Raihani: 🐒 Explores the evolutionary roots of cooperation in humans and other animals, providing a broader framework for understanding how rituals contribute to group cohesion and social bonding.  
 * 🙏 ***Deep Rituals: Psychological, Cognitive, and Religious Aspects*** edited by E. Thomas Lawson and Robert N. McCauley: 🎓 A more academic exploration of the cognitive and psychological aspects of ritual, building on some of the theoretical underpinnings related in Xygalatas's work.  
   
 ### 🆚 Contrasting Reads (Offering Different Perspectives)  
   
-* ***[🏔️ The Myth of Sisyphus](./the-myth-of-sisyphus.md)*** by Albert Camus: 🪨 A philosophical essay that explores the concept of the absurd – the conflict between humanity's tendency to seek inherent value and meaning in life and the universe's silent ambivalence. 🌌 Offers a stark contrast to the idea that seemingly senseless acts inherently make life meaningful.  
-* **[📜🌍⏳ Sapiens: A Brief History of Humankind](./sapiens-a-brief-history-of-humankind.md)** by Yuval Noah Harari: 📜 While not directly contrasting, Harari's perspective on the role of shared myths and fictions in enabling large-scale human cooperation offers a slightly different lens through which to view the function of rituals in creating shared realities and social structures.  
-* **[🤔🐇🐢 Thinking, Fast and Slow](./thinking-fast-and-slow.md)** by Daniel Kahneman: 🤔 Explores the two systems of thought that drive the way we make decisions. 🚦 While not directly about ritual, it provides insight into the cognitive biases and heuristics that can influence our adherence to patterned behaviors, even when they seem irrational.  
+* ***[🏔️ The Myth of Sisyphus](/content/books/the-myth-of-sisyphus.md)*** by Albert Camus: 🪨 A philosophical essay that explores the concept of the absurd – the conflict between humanity's tendency to seek inherent value and meaning in life and the universe's silent ambivalence. 🌌 Offers a stark contrast to the idea that seemingly senseless acts inherently make life meaningful.  
+* **[📜🌍⏳ Sapiens: A Brief History of Humankind](/content/books/sapiens-a-brief-history-of-humankind.md)** by Yuval Noah Harari: 📜 While not directly contrasting, Harari's perspective on the role of shared myths and fictions in enabling large-scale human cooperation offers a slightly different lens through which to view the function of rituals in creating shared realities and social structures.  
+* **[🤔🐇🐢 Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md)** by Daniel Kahneman: 🤔 Explores the two systems of thought that drive the way we make decisions. 🚦 While not directly about ritual, it provides insight into the cognitive biases and heuristics that can influence our adherence to patterned behaviors, even when they seem irrational.  
   
 ### ✨ Creatively Related Reads (Touching on Related Concepts)  
   
 * 🤝 ***The Art of Gathering: How We Meet and Why It Matters*** by Priya Parker: 🫂 Examines how intentional gathering, whether formal or informal, can create transformative experiences and build stronger connections, resonating with the social functions of ritual.  
 * 💖 ***Atlas of the Heart: Mapping Meaningful Connection and the Language of Human Experience*** by Brené Brown: ❤️‍🩹 Focuses on the language of human emotion and experience, touching on the ways we seek belonging, connection, and meaning, all of which are facilitated by rituals.  
 * 🖼️ ***The Book of Symbols: Reflections on Archetypal Images*** published by Taschen: 🗿 A visually rich exploration of symbols across cultures and time, providing context for the symbolic nature of many rituals.  
-* **[🌊🧘🧠📈 Flow: The Psychology of Optimal Experience](./flow-the-psychology-of-optimal-experience.md)** by Mihaly Csikszentmihalyi: 🎯 Explores the state of being completely absorbed and engaged in an activity, a state that can sometimes be achieved through the focused and intentional performance of rituals.  
+* **[🌊🧘🧠📈 Flow: The Psychology of Optimal Experience](/content/books/flow-the-psychology-of-optimal-experience.md)** by Mihaly Csikszentmihalyi: 🎯 Explores the state of being completely absorbed and engaged in an activity, a state that can sometimes be achieved through the focused and intentional performance of rituals.  
 * 🧙‍♀️ ***The Anthropology of Religion, Magic, and Witchcraft*** by Pamela Moro: 📜 Provides a broader anthropological overview of religious practices, including rituals, within diverse cultural contexts.  
   
-## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
+## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Ritual: How Seemingly Senseless Acts Make Life Worth Living. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

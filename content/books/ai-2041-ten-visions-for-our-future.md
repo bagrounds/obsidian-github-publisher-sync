@@ -9,7 +9,7 @@ tags:
 CTA: 🔭 Foresee what's ahead.
 affiliate link: https://www.amazon.com/dp/B08SFL53HL?tag=bagrounds-20
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🤖🔮🌍 AI 2041: Ten Visions for Our Future  
 [🛒 AI 2041: Ten Visions for Our Future. As an Amazon Associate I earn from qualifying purchases.](https://www.amazon.com/dp/B08SFL53HL?tag=bagrounds-20)  
 🤖🔮 A collection of ten fictional stories illustrates potential societal impacts of artificial intelligence by 2041, exploring both utopian and dystopian outcomes across various global settings.  

@@ -10,7 +10,7 @@ Channel: PBS NewsHour
 tags:
 youtube: https://youtu.be/rHYMr2eJV_8
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md)  
 # 🗣️📢🚫 Tamara Keith and Amy Walter on millions protesting against Trump’s agenda  
 ![Tamara Keith and Amy Walter on millions protesting against Trump’s agenda](https://youtu.be/rHYMr2eJV_8)  
   
@@ -96,9 +96,9 @@ youtube: https://youtu.be/rHYMr2eJV_8
   
 ### ➡️ Similar Themes (Authoritarianism, Political Resistance)  
   
-- [👑🚫📜2️⃣0️⃣ On Tyranny: Twenty Lessons from the Twentieth Century](../books/on-tyranny.md) by Timothy Snyder: Synthesizes **lessons from 20th-century authoritarianism** as a guide for citizens to preserve freedom in uncertain times.  
+- [👑🚫📜2️⃣0️⃣ On Tyranny: Twenty Lessons from the Twentieth Century](/content/books/on-tyranny.md) by Timothy Snyder: Synthesizes **lessons from 20th-century authoritarianism** as a guide for citizens to preserve freedom in uncertain times.  
   
-- [🗳️🏛️☠️ How Democracies Die](../books/how-democracies-die.md) by Steven Levitsky and Daniel Ziblatt: Examines the current political moment by drawing parallels between the administration's actions and the **historical breakdown of democracies** abroad.  
+- [🗳️🏛️☠️ How Democracies Die](/content/books/how-democracies-die.md) by Steven Levitsky and Daniel Ziblatt: Examines the current political moment by drawing parallels between the administration's actions and the **historical breakdown of democracies** abroad.  
   
 - 📢 The Resistance: The New Politics of Opposition by Sidney Tarrow: Explores the anti-Trump opposition as a **social counter-movement**, analyzing its challenges and implications for the American left and democracy.  
   
@@ -110,7 +110,7 @@ youtube: https://youtu.be/rHYMr2eJV_8
   
 ### ➡️ Creatively Related (Activism, Dystopian Literature)  
   
-- [👁️ 1984](../books/1984.md) by George Orwell: A classic dystopian novel that highlights themes of **absolute power and the manipulation of truth**, which resonates with discussions of political rhetoric and media control in the modern era.  
+- [👁️ 1984](/content/books/1984.md) by George Orwell: A classic dystopian novel that highlights themes of **absolute power and the manipulation of truth**, which resonates with discussions of political rhetoric and media control in the modern era.  
   
 - 👗 The Handmaid's Tale by Margaret Atwood: A feminist dystopia that gained renewed popularity in the wake of the Women's March, connecting themes of **control over women's rights** to contemporary political action.  
   

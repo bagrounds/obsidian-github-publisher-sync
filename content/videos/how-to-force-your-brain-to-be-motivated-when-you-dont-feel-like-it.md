@@ -9,7 +9,7 @@ Platform: "#YouTube"
 Channel: "[[Justin Sung]]"
 tags:
 ---
-[Home](../index.md) > [Videos](./index.md) | [🧠👨‍🎓📈 Justin Sung](../people/justin-sung.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md) | [🧠👨‍🎓📈 Justin Sung](/content/people/justin-sung.md)  
 # 🥱💭✂️🎬🫡 How to Force Your Brain To Be Motivated (when you don’t feel like it)  
 ![How to Force Your Brain To Be Motivated (when you don’t feel like it)](https://youtu.be/RMB3NsQotvM)  
 - 💪 Motivation is fickle  
@@ -50,7 +50,7 @@ F("🫀Feelings") -- ❌ --> T("🧠Thoughts") -- ❌ --> A("🏃Actions")
 #### 🛑 **1. D – Distinguish (Separate Feelings, Thoughts, and Actions)** 🤔  
 - 🧠 Recognize that 😴 **feeling tired or lazy is just a sensation**, 🚫 not a command to stop working. 💪  
 - 🗣️ Example: Feeling anxious 😬 before a public speech can be 🌈 **reframed as excitement**, 🔄 changing our response to stress. 😥➡️😄  
-- 💡 This technique, known as **[Thought-Action Defusion](../bot-chats/effective-thought-action-defusion-techniques.md)**, 👩‍⚕️ is widely used in clinical psychology. ⚕️.  
+- 💡 This technique, known as **[Thought-Action Defusion](/content/bot-chats/effective-thought-action-defusion-techniques.md)**, 👩‍⚕️ is widely used in clinical psychology. ⚕️.  
   
 #### ✨ **2. 🎭 F – Fake (Act as If You’re Motivated)**  
 - 🎭 Instead of waiting to feel motivated, 🎬 **pretend to be productive**, just like an actor in a movie. 😴 Waiting for motivation is like ⏳ waiting for a miracle! 🙅‍♂️ Don't wait!  
@@ -77,12 +77,12 @@ F("🫀Feelings") -- ❌ --> T("🧠Thoughts") -- ❌ --> A("🏃Actions")
   
 ### **Further Learning Resources**  
 - **Books on Productivity:**  
-  - [⚛️🔄 Atomic Habits](../books/atomic-habits.md) by James Clear (habit formation)  
-  - [🪖🎨 The War of Art](../books/the-war-of-art.md) by Steven Pressfield (overcoming resistance)  
-  - [🤿💼 Deep Work](../books/deep-work.md) by Cal Newport (focused productivity)  
+  - [⚛️🔄 Atomic Habits](/content/books/atomic-habits.md) by James Clear (habit formation)  
+  - [🪖🎨 The War of Art](/content/books/the-war-of-art.md) by Steven Pressfield (overcoming resistance)  
+  - [🤿💼 Deep Work](/content/books/deep-work.md) by Cal Newport (focused productivity)  
 - **Scientific Research:**  
   - Willpower depletion studies: [Baumeister’s research on ego depletion](https://en.wikipedia.org/wiki/Ego_depletion)  
-  - [♻️🫀🧠💪 Cognitive Behavioral Therapy](../topics/cognitive-behavioral-therapy.md) (CBT) techniques for thought-action defusion  
+  - [♻️🫀🧠💪 Cognitive Behavioral Therapy](/content/topics/cognitive-behavioral-therapy.md) (CBT) techniques for thought-action defusion  
 - **Tools for Focus:**  
   - [Freedom](https://freedom.to/) (blocks distracting websites)  
   - [Pomodone](https://pomodoneapp.com/) (Pomodoro timer for task management)  

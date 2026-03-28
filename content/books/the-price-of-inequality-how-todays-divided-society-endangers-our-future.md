@@ -7,7 +7,7 @@ share: true
 CTA: 🌎 Confront disparity.
 affiliate link: https://amzn.to/47oCHZX
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🏷️🏚️💔🏰 The Price of Inequality: How Today's Divided Society Endangers Our Future  
 [🛒 The Price of Inequality: How Today's Divided Society Endangers Our Future. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/47oCHZX)  
   
@@ -47,19 +47,19 @@ While the book paints a grim picture of American inequality, Stiglitz does not s
   
 * 📚 **The Great Divide** by Joseph E. Stiglitz: A collection of essays that expand on the themes in 💰 *The Price of Inequality*, offering further analysis of the causes and consequences of our divided societies.  
 * 📚 **Saving Capitalism: For the Many, Not the Few** by Robert B. Reich: A powerful critique of how the "free market" has been rigged by the wealthy and powerful, with a call to action for citizens to reclaim economic and political power.  
-* **[💰📈🌍⏳ Capital in the Twenty-First Century](./capital-in-the-twenty-first-century.md)** by Thomas Piketty: A landmark study of wealth and income inequality in Europe and the United States from the eighteenth century to the present, arguing that the rate of return on capital tends to be greater than the rate of economic growth, leading to a concentration of wealth.  
+* **[💰📈🌍⏳ Capital in the Twenty-First Century](/content/books/capital-in-the-twenty-first-century.md)** by Thomas Piketty: A landmark study of wealth and income inequality in Europe and the United States from the eighteenth century to the present, arguing that the rate of return on capital tends to be greater than the rate of economic growth, leading to a concentration of wealth.  
   
 ### 🧐 Contrasting and Critical Perspectives  
   
-* **[🌎👎👑💰🏚️ Why Nations Fail: The Origins of Power, Prosperity, and Poverty](./why-nations-fail-the-origins-of-power-prosperity-and-poverty.md)** by Daron Acemoglu and James A. Robinson: This book argues that the primary determinant of a nation's success or failure is its political and economic institutions. It posits that "inclusive" institutions that distribute power broadly and protect property rights are essential for long-term prosperity.  
-* **[⚖️⬆️🤝 The Spirit Level: Why Greater Equality Makes Societies Stronger](./the-spirit-level-why-greater-equality-makes-societies-stronger.md)** by Richard Wilkinson and Kate Pickett: This book presents evidence from around the world to argue that more equal societies have better outcomes across a wide range of social and health indicators, benefiting everyone, not just the poor.  
+* **[🌎👎👑💰🏚️ Why Nations Fail: The Origins of Power, Prosperity, and Poverty](/content/books/why-nations-fail-the-origins-of-power-prosperity-and-poverty.md)** by Daron Acemoglu and James A. Robinson: This book argues that the primary determinant of a nation's success or failure is its political and economic institutions. It posits that "inclusive" institutions that distribute power broadly and protect property rights are essential for long-term prosperity.  
+* **[⚖️⬆️🤝 The Spirit Level: Why Greater Equality Makes Societies Stronger](/content/books/the-spirit-level-why-greater-equality-makes-societies-stronger.md)** by Richard Wilkinson and Kate Pickett: This book presents evidence from around the world to argue that more equal societies have better outcomes across a wide range of social and health indicators, benefiting everyone, not just the poor.  
 * 📚 **The Economics of Justice** by Richard A. Posner: Applying economic principles to legal and social institutions, this book offers a different framework for understanding issues of justice and fairness, often from a more market-oriented perspective.  
   
 ### ✨ Creative and Narrative Explorations of Economic Themes  
   
-* **[🏚️💰 Evicted: Poverty and Profit in the American City](./evicted-poverty-and-profit-in-the-american-city.md)** by Matthew Desmond: Through immersive storytelling, this Pulitzer Prize-winning book provides a harrowing look at the lives of eight families in Milwaukee as they struggle with eviction, revealing the human cost of poverty and housing insecurity.  
+* **[🏚️💰 Evicted: Poverty and Profit in the American City](/content/books/evicted-poverty-and-profit-in-the-american-city.md)** by Matthew Desmond: Through immersive storytelling, this Pulitzer Prize-winning book provides a harrowing look at the lives of eight families in Milwaukee as they struggle with eviction, revealing the human cost of poverty and housing insecurity.  
 * 📚 **The Creative Economy: How People Make Money From Ideas** by John Howkins: For a more optimistic take on the future of the economy, this book explores the rise of the creative industries and how innovation and ideas are becoming the primary drivers of economic value.  
 * 📚 **Maid: Hard Work, Low Pay, and a Mother's Will to Survive** by Stephanie Land: A memoir that offers a firsthand account of the struggles of a single mother working low-wage jobs and navigating the complexities of government assistance, providing a powerful personal narrative to complement the data-driven analyses of inequality.  
   
-## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro)  
+## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-pro)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on The Price of Inequality: How Today's Divided Society Endangers Our Future. Never put book titles in quotes or italics. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

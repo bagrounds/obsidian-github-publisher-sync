@@ -7,7 +7,7 @@ share: true
 CTA: ⚖️ Demand accountability.
 affiliate link: https://amzn.to/3WV4V8w
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 💰🇺🇸 Corruption in America: From Benjamin Franklin's Snuff Box to Citizens United  
 [🛒 Corruption in America: From Benjamin Franklin's Snuff Box to Citizens United. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3WV4V8w)  
   
@@ -71,15 +71,15 @@ affiliate link: https://amzn.to/3WV4V8w
   
 ### 🤝 Similar  
 * 🏛️ Republic, Lost: How Money Corrupts Congress—and a Plan to Stop It by Lawrence Lessig  
-* [💰🏛️💔🇺🇸 On Corruption in America: And What Is at Stake](./on-corruption-in-america-and-what-is-at-stake.md) by Sarah Chayes  
-* [💰🤫 Dark Money: The Hidden History of the Billionaires Behind the Rise of the Radical Right](./dark-money-the-hidden-history-of-the-billionaires-behind-the-rise-of-the-radical-right.md) by Jane Mayer  
+* [💰🏛️💔🇺🇸 On Corruption in America: And What Is at Stake](/content/books/on-corruption-in-america-and-what-is-at-stake.md) by Sarah Chayes  
+* [💰🤫 Dark Money: The Hidden History of the Billionaires Behind the Rise of the Radical Right](/content/books/dark-money-the-hidden-history-of-the-billionaires-behind-the-rise-of-the-radical-right.md) by Jane Mayer  
   
 ### 🆚 Contrasting  
 * 📢 Free Speech and Money: American Campaign Finance in Comparative Perspective by Brian F. Schaffner (often presents a more balanced or alternative view on campaign finance and free speech)  
 * 🛠️ The System: Who Rigged It, How We Fix It by Robert B. Reich (focuses on power structures and inequality, but might have different prescriptive solutions)  
   
 ### 🔗 Related  
-* [🏛️⛓️ Democracy in Chains: The Deep History of the Radical Right's Stealth Plan for America](./democracy-in-chains-the-deep-history-of-the-radical-rights-stealth-plan-for-america.md) by Nancy MacLean  
+* [🏛️⛓️ Democracy in Chains: The Deep History of the Radical Right's Stealth Plan for America](/content/books/democracy-in-chains-the-deep-history-of-the-radical-rights-stealth-plan-for-america.md) by Nancy MacLean  
 * 🕰️ The Gilded Age: A Tale of Today by Mark Twain and Charles Dudley Warner (classic literary exploration of 19th-century corruption)  
 * 🎯 Antitrust: Taking on Monopoly Power from the Gilded Age to the Digital Age by Amy Klobuchar (explores the economic concentration of power related to corruption)  
   

@@ -9,7 +9,7 @@ affiliate link: https://amzn.to/4nwiAh6
 tags:
   - MMT
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 💰 Keynes: A Very Short Introduction  
 [🛒 Keynes: A Very Short Introduction. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4nwiAh6)  
   
@@ -43,7 +43,7 @@ Robert Skidelsky's Keynes: A Very Short Introduction presents a comprehensive ov
 ## 🔍 Topics for Further Understanding  
 * 🆕 New Keynesian vs. Old Keynesian economics  
 * 🧠 The role of expectations and animal spirits in investment decisions  
-* [🏦♾️📈💸 Modern Monetary Theory](../topics/modern-monetary-theory.md) (MMT) and its policy implications  
+* [🏦♾️📈💸 Modern Monetary Theory](/content/topics/modern-monetary-theory.md) (MMT) and its policy implications  
 * 📈 The Great Moderation and its relationship to macroeconomic policy  
 * 🏭 Supply-side economics as a contrasting paradigm  
 * 🏦 The history and evolution of central banking and monetary policy  
@@ -65,12 +65,12 @@ Robert Skidelsky's Keynes: A Very Short Introduction presents a comprehensive ov
 ## 📚 Book Recommendations  
   
 ### 👍 Similar  
-* [🧑‍💼🏦💸 The General Theory of Employment, Interest, and Money](./the-general-theory-of-employment-interest-and-money.md) by John Maynard Keynes  
+* [🧑‍💼🏦💸 The General Theory of Employment, Interest, and Money](/content/books/the-general-theory-of-employment-interest-and-money.md) by John Maynard Keynes  
 * 👨‍🏫 Keynes: The Return of the Master by Robert Skidelsky  
 * 📊 A Concise Guide to Macroeconomics by David A. Moss  
   
 ### 👎 Contrasting  
-* [🧑‍🤝‍🧑💰 Human Action: A Treatise on Economics](./human-action-a-treatise-on-economics.md) by Ludwig von Mises  
+* [🧑‍🤝‍🧑💰 Human Action: A Treatise on Economics](/content/books/human-action-a-treatise-on-economics.md) by Ludwig von Mises  
 * 🚧 The Road to Serfdom by Friedrich A. Hayek  
 * ✍️ Economics in One Lesson by Henry Hazlitt  
   

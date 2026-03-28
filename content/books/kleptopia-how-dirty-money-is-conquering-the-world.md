@@ -7,7 +7,7 @@ share: true
 CTA: 🛡️ Safeguard democracy.
 affiliate link: https://amzn.to/48wEJHX
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 💸🌍 Kleptopia: How Dirty Money Is Conquering the World  
 [🛒 Kleptopia: How Dirty Money Is Conquering the World. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/48wEJHX)  
   
@@ -75,16 +75,16 @@ affiliate link: https://amzn.to/48wEJHX
 ### 📖 Similar Books  
 * 💰 Moneyland by Oliver Bullough  
 * 🧺 The Laundromat by Jake Bernstein  
-* [🇺🇸💸🧺🌍 American Kleptocracy: How the U.S. Created the World's Greatest Money Laundering Scheme in History](./american-kleptocracy-how-the-us-created-the-worlds-greatest-money-laundering-scheme-in-history.md) by Casey Michel  
+* [🇺🇸💸🧺🌍 American Kleptocracy: How the U.S. Created the World's Greatest Money Laundering Scheme in History](/content/books/american-kleptocracy-how-the-us-created-the-worlds-greatest-money-laundering-scheme-in-history.md) by Casey Michel  
   
 ### 📖 Contrasting Books  
-* [🌎👎👑💰🏚️ Why Nations Fail: The Origins of Power, Prosperity, and Poverty](./why-nations-fail-the-origins-of-power-prosperity-and-poverty.md) by Daron Acemoglu and James A. Robinson  
+* [🌎👎👑💰🏚️ Why Nations Fail: The Origins of Power, Prosperity, and Poverty](/content/books/why-nations-fail-the-origins-of-power-prosperity-and-poverty.md) by Daron Acemoglu and James A. Robinson  
 * 💥 The End of Power by Moises Naim  
   
 ### 📖 Related Books  
-* [🏦👨‍💼💥 Dark Towers: Deutsche Bank, Donald Trump, and an Epic Trail of Destruction](./dark-towers-deutsche-bank-donald-trump-and-an-epic-trail-of-destruction.md) by David Enrich  
+* [🏦👨‍💼💥 Dark Towers: Deutsche Bank, Donald Trump, and an Epic Trail of Destruction](/content/books/dark-towers-deutsche-bank-donald-trump-and-an-epic-trail-of-destruction.md) by David Enrich  
 * 📰 Panama Papers by Bastian Obermayer and Frederik Obermaier  
-* [🤫💰🕵️ The New Confessions of an Economic Hit Man](./the-new-confessions-of-an-economic-hit-man.md) by John Perkins  
+* [🤫💰🕵️ The New Confessions of an Economic Hit Man](/content/books/the-new-confessions-of-an-economic-hit-man.md) by John Perkins  
   
 ## 🫵 What Do You Think?  
 🤔 What aspects of Kleptopia: How Dirty Money Is Conquering the World resonated most with you? Which strategies do you believe are most effective in combating global kleptocracy, and why? Share your thoughts below!

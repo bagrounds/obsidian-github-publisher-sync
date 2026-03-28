@@ -7,7 +7,7 @@ share: true
 CTA: 💡 Master your time.
 affiliate link: https://amzn.to/4rCzQ79
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🗓️💡 Poor Richard's Almanack  
 [🛒 Poor Richard's Almanack. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4rCzQ79)  
   
@@ -59,18 +59,18 @@ Poor Richard's Almanack distills practical wisdom, urging industry, frugality, a
   
 ## 📚 Book Recommendations  
 ### 🤝 Similar  
-* [⚡️ The Autobiograpy of Benjamin Franklin](./the-autobiography-of-benjamin-franklin.md)  
-* [🤔🧘 Meditations](./meditations.md) by Marcus Aurelius  
+* [⚡️ The Autobiograpy of Benjamin Franklin](/content/books/the-autobiography-of-benjamin-franklin.md)  
+* [🤔🧘 Meditations](/content/books/meditations.md) by Marcus Aurelius  
 * ✍️ Essays by Ralph Waldo Emerson  
   
 ### ↔️ Contrasting  
-* [🌲 Walden](./walden.md) by Henry David Thoreau  
+* [🌲 Walden](/content/books/walden.md) by Henry David Thoreau  
 * ⛪ The Protestant Ethic and the Spirit of Capitalism by Max Weber  
 * 💵 The Wealth of Nations by Adam Smith (for a contrasting economic philosophy)  
   
 ### 🔗 Related  
-* [🧠💡 Common Sense](./common-sense.md) by Thomas Paine  
-* [🇺🇸📜 The Federalist Papers](./the-federalist-papers.md) by Alexander Hamilton, James Madison, and John Jay  
+* [🧠💡 Common Sense](/content/books/common-sense.md) by Thomas Paine  
+* [🇺🇸📜 The Federalist Papers](/content/books/the-federalist-papers.md) by Alexander Hamilton, James Madison, and John Jay  
 * 🌍 A Short History of Nearly Everything by Bill Bryson  
   
 ## 🫵 What Do You Think?  

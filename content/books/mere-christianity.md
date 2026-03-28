@@ -43,7 +43,7 @@ CTA: ✝️ Explore belief.
   
 * ❓ **The Reason for God by Timothy Keller:** This book addresses common doubts and objections to Christianity in a contemporary context, engaging with skepticism using a logical and compassionate tone, much like Lewis.  
 * 🛡️ **Orthodoxy by G K Chesterton:** A classic work of Christian apologetics, Chesterton presents a witty and profound defense of traditional Christian belief, often arriving at seemingly paradoxical truths through compelling reasoning, a style Lewis admired.  
-* **[📰❓✝️ The Case for Christ: A Journalist's Personal Investigation of the Evidence for Jesus](./the-case-for-christ-a-journalists-personal-investigation-of-the-evidence-for-jesus.md) by Lee Strobel:** A former atheist investigative journalist, Strobel examines the historical evidence for Jesus Christ by interviewing experts across various fields, offering a fact-based apologetic similar to Lewis's reasoned approach.  
+* **[📰❓✝️ The Case for Christ: A Journalist's Personal Investigation of the Evidence for Jesus](books/the-case-for-christ-a-journalists-personal-investigation-of-the-evidence-for-jesus.md) by Lee Strobel:** A former atheist investigative journalist, Strobel examines the historical evidence for Jesus Christ by interviewing experts across various fields, offering a fact-based apologetic similar to Lewis's reasoned approach.  
 * 🤕 **The Problem of Pain by C S Lewis:** Another non-fiction work by Lewis, this book directly tackles one of the most significant challenges to Christian faith—the existence of suffering in a world created by an all-loving God—with his characteristic intellectual rigor.  
   
 ### ➖ Contrasting Books  

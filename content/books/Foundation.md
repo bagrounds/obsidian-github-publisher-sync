@@ -12,7 +12,7 @@ force_analyze_links: false
 link_analysis_time: 2026-03-22T23:33:04.202Z
 link_analysis_model: gemini-3.1-flash-lite-preview
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🏗️🧱🌍 Foundation  
 [🛒 Foundation. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3JoqJ9q)  
   
@@ -43,17 +43,17 @@ A: 🤓 The central conflicts are largely resolved through intellectual, diploma
 ## 📚 Recommendations  
 ### 📖 Non-Fiction  
 * 📜 The History of the Decline and Fall of the Roman Empire by Edward Gibbon  
-* [📜🌍⏳ Sapiens: A Brief History of Humankind](./sapiens-a-brief-history-of-humankind.md) by Yuval Noah Harari  
-* [🔮🤷🏼‍♀️🤪 Predictably Irrational: The Hidden Forces That Shape Our Decisions](./predictably-irrational.md) by Dan Ariely  
+* [📜🌍⏳ Sapiens: A Brief History of Humankind](/content/books/sapiens-a-brief-history-of-humankind.md) by Yuval Noah Harari  
+* [🔮🤷🏼‍♀️🤪 Predictably Irrational: The Hidden Forces That Shape Our Decisions](/content/books/predictably-irrational.md) by Dan Ariely  
   
 ### ❤️ If You Loved This  
-* [🏜️🐛 Dune](./dune.md) by Frank Herbert (For grand scale, complex politics, and a focus on destiny)  
+* [🏜️🐛 Dune](/content/books/dune.md) by Frank Herbert (For grand scale, complex politics, and a focus on destiny)  
 * 🚀 Hyperion by Dan Simmons (For episodic storytelling and blending genres in a vast future)  
-* [🌌3️⃣⚛️ The Three-Body Problem](./the-three-body-problem.md) by Liu Cixin (For big ideas and a massive, universe-scale scope)  
+* [🌌3️⃣⚛️ The Three-Body Problem](/content/books/the-three-body-problem.md) by Liu Cixin (For big ideas and a massive, universe-scale scope)  
   
 ### ↔️ Similar But Different  
 * 👮 The Caves of Steel by Isaac Asimov (For a blend of his scientific mind with a detective mystery structure)  
-* [🕷️⏳ Children of Time](./children-of-time.md) by Adrian Tchaikovsky (For a long-term look at evolution and civilization building)  
+* [🕷️⏳ Children of Time](/content/books/children-of-time.md) by Adrian Tchaikovsky (For a long-term look at evolution and civilization building)  
 * 🌍 A Memory Called Empire by Arkady Martine (For political intrigue within a massive, complex empire)  
   
 ## 🫵 What Do You Think?  

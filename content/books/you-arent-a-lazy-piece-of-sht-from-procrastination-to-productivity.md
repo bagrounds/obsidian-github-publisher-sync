@@ -7,7 +7,7 @@ share: true
 affiliate link: https://amzn.to/40q5zwS
 CTA: 🚀 Conquer inaction.
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🫵🚫🦥🧩💩 You Aren't A Lazy Piece of Sh!t: From Procrastination to Productivity  
 [🛒 You Aren't A Lazy Piece of Sh!t: From Procrastination to Productivity. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/40q5zwS)  
   
@@ -44,23 +44,23 @@ The book is packed 💼 with practical techniques ⚙️ to help readers move fr
   
 ### ➕ Similar Reads: For More Practical Productivity Hacks  
   
-* **[✅😌 Getting Things Done: The Art of Stress-Free Productivity](./getting-things-done-the-art-of-stress-free-productivity.md) by David Allen:** A classic 👑 in the productivity space, this book offers a comprehensive system ⚙️ for capturing, organizing 🗂️, and executing tasks ✅. It provides a structured framework 🧱 for managing workflow and reducing mental clutter 🧠.  
-* ✅ **[👤📈🎯🌟🔑🤝🏆 The 7 Habits of Highly Effective People](./the-7-habits-of-highly-effective-people.md) by Stephen R. Covey:** This foundational text 🏛️ offers timeless principles 🕰️ for personal and professional effectiveness 💪, focusing on character development and long-term success 🚀.  
+* **[✅😌 Getting Things Done: The Art of Stress-Free Productivity](/content/books/getting-things-done-the-art-of-stress-free-productivity.md) by David Allen:** A classic 👑 in the productivity space, this book offers a comprehensive system ⚙️ for capturing, organizing 🗂️, and executing tasks ✅. It provides a structured framework 🧱 for managing workflow and reducing mental clutter 🧠.  
+* ✅ **[👤📈🎯🌟🔑🤝🏆 The 7 Habits of Highly Effective People](/content/books/the-7-habits-of-highly-effective-people.md) by Stephen R. Covey:** This foundational text 🏛️ offers timeless principles 🕰️ for personal and professional effectiveness 💪, focusing on character development and long-term success 🚀.  
 * ✅ **_Eat That Frog!_ by Brian Tracy:** A concise and motivational 🔥 guide that encourages readers to tackle their most challenging task 🏋️ first thing in the morning 🌅 to build momentum for the rest of the day.  
-* **[😊✅ Feel Good Productivity: How to Do More of What Matters to You](./feel-good-productivity-how-to-do-more-of-what-matters-to-you.md) by Ali Abdaal:** This book argues that the key 🔑 to productivity is to make the process enjoyable 😄. It offers strategies for infusing fun 🎉 and fulfillment into your work to overcome procrastination naturally 🍃.  
+* **[😊✅ Feel Good Productivity: How to Do More of What Matters to You](/content/books/feel-good-productivity-how-to-do-more-of-what-matters-to-you.md) by Ali Abdaal:** This book argues that the key 🔑 to productivity is to make the process enjoyable 😄. It offers strategies for infusing fun 🎉 and fulfillment into your work to overcome procrastination naturally 🍃.  
   
 ### ➖ Contrasting Reads: For a Different Perspective on Productivity  
   
 * 🚫 **_Laziness Does Not Exist_ by Devon Price:** This book offers a powerful counter-narrative 📢 to the hustle culture 🏃‍♀️, arguing that what we label as "laziness" is often a response to burnout 🔥, unmet needs, or systemic barriers. It advocates for self-compassion 💖 and setting realistic expectations ✅.  
 * ⏳ **_Four Thousand Weeks: Time Management for Mortals_ by Oliver Burkeman:** A thought-provoking 🧠 book that challenges the modern obsession with "getting everything done." Burkeman encourages readers to embrace their limitations 🚧 and focus on what truly matters ❤️ in their finite lives.  
-* **[📵 How to Do Nothing: Resisting the Attention Economy](./how-to-do-nothing-resisting-the-attention-economy.md) by Jenny Odell:** This book is a compelling argument for disconnecting 🔌 from the constant demands of the digital world 🌐 and rediscovering the value of deep attention 👀 and meaningful engagement 🤝 with the physical world 🌍.  
+* **[📵 How to Do Nothing: Resisting the Attention Economy](/content/books/how-to-do-nothing-resisting-the-attention-economy.md) by Jenny Odell:** This book is a compelling argument for disconnecting 🔌 from the constant demands of the digital world 🌐 and rediscovering the value of deep attention 👀 and meaningful engagement 🤝 with the physical world 🌍.  
   
 ### 🎨 Creatively Related Reads: Exploring the Psychology of Habits and Motivation  
   
-* **[🔄🧠💪 The Power of Habit: Why We Do What We Do in Life and Business](./the-power-of-habit.md) by Charles Duhigg:** This book explores the science 🧪 behind habit formation and how understanding the "habit loop" can help us build better routines and break bad ones.  
-* **[🏎️⛽ Drive: The Surprising Truth About What Motivates Us](./drive-the-surprising-truth-about-what-motivates-us.md) by Daniel H. Pink:** Pink challenges traditional reward-and-punishment ⚖️ models of motivation 🔥, arguing that autonomy 🕊️, mastery 🥇, and purpose 🌟 are the true drivers of human performance 💪.  
-* **[🌊🧘🏼‍♀️🧠📈 Flow: The Psychology of Optimal Experience](./flow-the-psychology-of-optimal-experience.md) by Mihaly Csikszentmihalyi:** This classic work 🏛️ of psychology explores the state of "flow," a state of complete absorption in an activity. Understanding flow can help individuals find more enjoyment 😄 and engagement 🤝 in their tasks ✅.  
-* **[⚛️🔄 Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones](./atomic-habits.md) by James Clear:** A highly practical guide ✅ to making small 🤏, incremental changes 📈 that compound over time ⏳ to create remarkable results 🚀. Clear's focus on "atomic habits" aligns with Scott's principle of starting small 🤏.  
+* **[🔄🧠💪 The Power of Habit: Why We Do What We Do in Life and Business](/content/books/the-power-of-habit.md) by Charles Duhigg:** This book explores the science 🧪 behind habit formation and how understanding the "habit loop" can help us build better routines and break bad ones.  
+* **[🏎️⛽ Drive: The Surprising Truth About What Motivates Us](/content/books/drive-the-surprising-truth-about-what-motivates-us.md) by Daniel H. Pink:** Pink challenges traditional reward-and-punishment ⚖️ models of motivation 🔥, arguing that autonomy 🕊️, mastery 🥇, and purpose 🌟 are the true drivers of human performance 💪.  
+* **[🌊🧘🏼‍♀️🧠📈 Flow: The Psychology of Optimal Experience](/content/books/flow-the-psychology-of-optimal-experience.md) by Mihaly Csikszentmihalyi:** This classic work 🏛️ of psychology explores the state of "flow," a state of complete absorption in an activity. Understanding flow can help individuals find more enjoyment 😄 and engagement 🤝 in their tasks ✅.  
+* **[⚛️🔄 Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones](/content/books/atomic-habits.md) by James Clear:** A highly practical guide ✅ to making small 🤏, incremental changes 📈 that compound over time ⏳ to create remarkable results 🚀. Clear's focus on "atomic habits" aligns with Scott's principle of starting small 🤏.  
   
-## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro)  
+## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-pro)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on You Aren't A Lazy Piece of Sh!t: From Procrastination to Productivity. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

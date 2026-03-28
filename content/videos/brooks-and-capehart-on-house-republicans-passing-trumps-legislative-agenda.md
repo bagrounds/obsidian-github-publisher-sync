@@ -9,7 +9,7 @@ Platform:
 Channel: PBS NewsHour
 tags:
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md)  
 # 👹📜🏛️ Brooks and Capehart on House Republicans passing Trump's legislative agenda  
 ![Brooks and Capehart on House Republicans passing Trump's legislative agenda](https://youtu.be/_dvI6croWP0)  
   
@@ -27,8 +27,8 @@ tags:
     * 📖 *Taxes Have Consequences: An Income Tax History of the United States* by Arthur B. Laffer Ph.D., Brian Domitrovic Ph.D., and Jeanne Cairns Sinquefield Ph. D.  
     * 📖 *Tax Cuts: Issues and Analyses* by James S. Larson  
 * **🏥 US Healthcare Policy:**  
-    * [💰⚕️⬆️ An American Sickness: How Healthcare Became Big Business and How You Can Take It Back](../books/an-american-sickness-how-healthcare-became-big-business-and-how-you-can-take-it-back.md) by Elisabeth Rosenthal [Eye-Opening Books on Healthcare](https://www.penguinrandomhouse.com/the-read-down/books-on-healthcare/)  
-    * [⚕️💰🇺🇸 The Healing of America: A Global Quest for Better, Cheaper, and Fairer Health Care](../books/the-healing-of-america-a-global-quest-for-better-cheaper-and-fairer-health-care.md) by T.R. Reid [Popular Healthcare Policy Books - Goodreads](https://www.goodreads.com/shelf/show/healthcare-policy)  
+    * [💰⚕️⬆️ An American Sickness: How Healthcare Became Big Business and How You Can Take It Back](/content/books/an-american-sickness-how-healthcare-became-big-business-and-how-you-can-take-it-back.md) by Elisabeth Rosenthal [Eye-Opening Books on Healthcare](https://www.penguinrandomhouse.com/the-read-down/books-on-healthcare/)  
+    * [⚕️💰🇺🇸 The Healing of America: A Global Quest for Better, Cheaper, and Fairer Health Care](/content/books/the-healing-of-america-a-global-quest-for-better-cheaper-and-fairer-health-care.md) by T.R. Reid [Popular Healthcare Policy Books - Goodreads](https://www.goodreads.com/shelf/show/healthcare-policy)  
 * **🎓 Academic Freedom:**  
     * 📖 *Academic Freedom* by David Rabban [Academic Freedom - Harvard University Press](https://www.hup.harvard.edu/books/9780674291058)  
     * 📖 *Understanding Academic Freedom* by Henry Reichman [Understanding Academic Freedom | Hopkins Press](https://www.press.jhu.edu/books/title/53941/understanding-academic-freedom)  

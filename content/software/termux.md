@@ -5,13 +5,13 @@ aliases:
 title: 💻📱🛠️ Termux
 URL: https://bagrounds.org/software/termux
 ---
-[Home](../index.md) > [Software](./index.md)  
+[Home](/content/index.md) > [Software](/content/software/index.md)  
 # 💻📱🛠️ Termux  
   
 ## 🤖 AI Summary  
 ### Termux 📱💻  
   
-👉 **What Is It?** 🤔 Termux is an **Android terminal emulator** 📲 and **[Linux](./linux.md) environment app** 🐧. It's like having a command line interface right on your phone or tablet\! 🤯 It belongs to the broader class of **terminal emulators** 💻 and **Unix-like environments** 🛠️. It's not an acronym; it's a portmanteau of "terminal" and "Linux". 🤓  
+👉 **What Is It?** 🤔 Termux is an **Android terminal emulator** 📲 and **[Linux](/content/software/linux.md) environment app** 🐧. It's like having a command line interface right on your phone or tablet\! 🤯 It belongs to the broader class of **terminal emulators** 💻 and **Unix-like environments** 🛠️. It's not an acronym; it's a portmanteau of "terminal" and "Linux". 🤓  
   
 ☁️ **A High Level, Conceptual Overview**  
   
@@ -155,7 +155,7 @@ I tried to explain Linux to my phone using only emojis. It just kept giving me t
   * **topically opposed:** "Android Studio Development Essentials" by Neil Smyth 🤖 (Focuses on GUI-based Android development, a different paradigm).  
   * **more general:** "Operating System Concepts" by Abraham Silberschatz, Peter Baer Galvin, and Greg Gagne ⚙️ (Provides a deeper understanding of operating system principles).  
   * **more specific:** [Termux Wiki Pages](https://wiki.termux.com/wiki/Main_Page) 📖 (The official documentation).  
-  * **fictional:** "[Snow Crash](../books/snow-crash.md)" by Neal Stephenson 👓 (Features a virtual reality "Metaverse" with command-line interfaces in a cyberpunk setting).  
+  * **fictional:** "[Snow Crash](/content/books/snow-crash.md)" by Neal Stephenson 👓 (Features a virtual reality "Metaverse" with command-line interfaces in a cyberpunk setting).  
   * **rigorous:** "Advanced Programming in the UNIX Environment" by W. Richard Stevens and Stephen A. Rago 👨‍💻 (A classic text on Unix system programming concepts).  
   * **accessible:** "Linux for Dummies" by Richard Blum and Christine Bresnahan 🧑‍🏫 (A beginner-friendly introduction to Linux concepts applicable to Termux).  
   

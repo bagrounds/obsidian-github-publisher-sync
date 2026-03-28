@@ -9,7 +9,7 @@ Platform:
 Channel: Senator Sheldon Whitehouse
 tags:
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md)  
 # 🏛️👔😡💸 Whitehouse and Murphy Dress Down Republican Tax «Thievery» in Colloquy on Senate Floor  
 ![Whitehouse and Murphy Dress Down Republican Tax «Thievery» in Colloquy on Senate Floor](https://youtu.be/3huEn7lbMWs)  
   
@@ -24,7 +24,7 @@ tags:
   
 ## 📚 Book Recommendations  
 **✨ Addiction Recovery:**  
-- [👻🔗 In the Realm of Hungry Ghosts: Close Encounters with Addiction](../books/in-the-realm-of-hungry-ghosts-close-encounters-with-addiction.md) by Gabor Maté  
+- [👻🔗 In the Realm of Hungry Ghosts: Close Encounters with Addiction](/content/books/in-the-realm-of-hungry-ghosts-close-encounters-with-addiction.md) by Gabor Maté  
 - 🥳 _The Unexpected Joy of Being Sober_ by Catherine Gray  
 - 🤝 _Beyond Addiction: How Science and Kindness Help People Change_ by Jeffrey Foote, Carrie Wilkens, and Nicole Kosanke  
 - 🧠 _This Naked Mind: Control Alcohol, Find Freedom, Discover Happiness & Change Your Life_ by Annie Grace  
@@ -38,7 +38,7 @@ tags:
 - 💯 _Social Security: 100 Myths and 100 Facts: Setting the Record Straight About America's Most Popular and Most Misunderstood Government Program_ by Tom Margenau4  
   
 **⚖️ Wealth Inequality:**  
-- 🏦 _[Capital in the Twenty First Century](../books/capital-in-the-twenty-first-century.md)_ by Thomas Piketty  
+- 🏦 _[Capital in the Twenty First Century](/content/books/capital-in-the-twenty-first-century.md)_ by Thomas Piketty  
 - 🌍 _99 to 1: How Wealth Inequality Is Wrecking the World and What We Can Do About It_ by Chuck Collins  
 - ⛓️ _Unbound: How Inequality Constricts Our Economy and What We Can Do About It_ by Heather Boushey  
 - 🏃 _The Race between Education and Technology_ by Claudia Goldin and Lawrence F. Katz  

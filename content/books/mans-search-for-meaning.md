@@ -66,7 +66,7 @@ Viktor Frankl's "Man's Search for Meaning" offers a profoundly different perspec
 * **Best Fiction Book That Incorporates Related Ideas:** "The Book Thief" by Markus Zusak 📖: A story of resilience and human spirit during World War II, narrated by Death.  
 * **Best Book That Is More General:** "[Sapiens: A Brief History of Humankind](./sapiens-a-brief-history-of-humankind.md)" by Yuval Noah Harari 🌍: Provides a broad overview of human history and the search for meaning across civilizations.  
 * **Best Book That Is More Specific:** "Learned Optimism" by Martin E.P. Seligman ☀️: Focuses on techniques to cultivate a positive mindset and build resilience.  
-* **Best Book That Is More Rigorous:** "[Flow: The Psychology of Optimal Experience](./flow-the-psychology-of-optimal-experience.md)" by Mihaly Csikszentmihalyi 🌊: A study of the state of flow, where individuals are fully immersed in an activity, providing a scientific approach to finding meaning.  
+* **Best Book That Is More Rigorous:** "[Flow: The Psychology of Optimal Experience](books/flow-the-psychology-of-optimal-experience.md)" by Mihaly Csikszentmihalyi 🌊: A study of the state of flow, where individuals are fully immersed in an activity, providing a scientific approach to finding meaning.  
 * **Best Book That Is More Accessible:** "The Gifts of Imperfection" by Brené Brown 🎁: Explores the importance of embracing vulnerability and living wholeheartedly.  
   
 ## 💬 [Gemini](https://gemini.google.com) Prompt  

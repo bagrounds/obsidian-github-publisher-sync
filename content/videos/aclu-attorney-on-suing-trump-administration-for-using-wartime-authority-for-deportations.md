@@ -9,7 +9,7 @@ Platform:
 Channel: PBS NewsHour
 tags:
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md)  
 # 👨‍⚖️🇺🇸⚔️🛑 ACLU attorney on suing Trump administration for using wartime authority for deportations  
 ![ACLU attorney on suing Trump administration for using wartime authority for deportations](https://youtu.be/PznKw433MDM)  
   

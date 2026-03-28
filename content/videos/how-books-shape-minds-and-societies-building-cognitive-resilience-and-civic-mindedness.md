@@ -10,7 +10,7 @@ Channel: FRANCE 24 English
 tags:
 youtube: https://youtu.be/D9hde90uJfs
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md)  
 # 📚🧠🤝🌍 How books shape minds and societies, building cognitive resilience and civic mindedness  
 ![How books shape minds and societies, building cognitive resilience and civic mindedness](https://youtu.be/D9hde90uJfs)  
   
@@ -68,7 +68,7 @@ A: 🤔 Fiction allows the reader to simulate the mental states, intentions, and
   
 ### Contrasting (Digital vs. Print & Practical Empathy)  
 * **💻 Reader, Come Home: The Reading Brain in a Digital World** by Maryanne Wolf: 📱 Focuses on how digital reading mediums are affecting attention span and critical reasoning, contrasting the deep reading required by print.  
-* **[📱🧠 The Shallows: What the Internet Is Doing to Our Brains](../books/the-shallows-what-the-internet-is-doing-to-our-brains.md)** by Nicholas Carr: 🌐 Argues that the Internet's rapid, fragmented nature is fundamentally rewiring our cognitive processes away from the deep concentration nurtured by books.  
+* **[📱🧠 The Shallows: What the Internet Is Doing to Our Brains](/content/books/the-shallows-what-the-internet-is-doing-to-our-brains.md)** by Nicholas Carr: 🌐 Argues that the Internet's rapid, fragmented nature is fundamentally rewiring our cognitive processes away from the deep concentration nurtured by books.  
 * **💖 Empathy: Why it Matters, and How to Get it** by Roman Krznaric: 🌍 A practical guide on how to cultivate empathy in daily life, moving beyond the armchair reading experience to seeking experiential adventures and conversational skills (15 Must-Read Empathy Books for Cultivating Kindness - **Positive Psychology**).  
   
 ### Creatively Related (Empathy and Narrative)  

@@ -10,7 +10,7 @@ Channel: PBS NewsHour
 tags:
 youtube: https://youtube.com/watch?v=vZEmgnux3q0
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md)  
 # 📺🕰️📰🎂🎉 A look at 50 years of the News Hour  
 ![A look at 50 years of the News Hour](https://youtube.com/watch?v=vZEmgnux3q0)  
   
@@ -73,7 +73,7 @@ youtube: https://youtube.com/watch?v=vZEmgnux3q0
 ### 🎨 Creatively Related  
 * 💧 All the President’s Men by Carl Bernstein and Bob Woodward  
     * Relates tangentially by exploring the investigative journalism surrounding the Watergate hearings, which directly led to the founding of the NewsHour.  
-* [😇🧠 The Righteous Mind: Why Good People Are Divided by Politics and Religion](../books/the-righteous-mind.md) by Jonathan Haidt  
+* [😇🧠 The Righteous Mind: Why Good People Are Divided by Politics and Religion](/content/books/the-righteous-mind.md) by Jonathan Haidt  
     * Offers insights into the psychological roots of political polarization, providing context for why the NewsHour's emphasis on civil discourse is so challenging.  
 * 💡 The Image A Guide to Pseudo-Events in America by Daniel J. Boorstin  
     * Discusses the decline of genuine news and the rise of manufactured events, offering a thoughtful framework for analyzing the role of in-depth, objective journalism.

@@ -7,7 +7,7 @@ share: true
 CTA: 🏛️ Expose corruption.
 affiliate link: https://amzn.to/4o1hz0H
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🏦👨‍💼💥 Dark Towers: Deutsche Bank, Donald Trump, and an Epic Trail of Destruction  
 [🛒 Dark Towers: Deutsche Bank, Donald Trump, and an Epic Trail of Destruction. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4o1hz0H)  
   
@@ -80,7 +80,7 @@ affiliate link: https://amzn.to/4o1hz0H
 ### 📖 Contrasting  
 * 🤝 The Art of the Deal by Donald J. Trump and Tony Schwartz  
 * 👑 The Prince by Niccolò Machiavelli  
-* 💰 [💰🧔👑🏛️ The Richest Man in Babylon](./the-richest-man-in-babylon.md) by George S. Clason  
+* 💰 [💰🧔👑🏛️ The Richest Man in Babylon](/content/books/the-richest-man-in-babylon.md) by George S. Clason  
   
 ### 📖 Related  
 * 🧠 When Genius Failed by Roger Lowenstein  

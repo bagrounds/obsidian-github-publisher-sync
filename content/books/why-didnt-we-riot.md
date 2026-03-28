@@ -8,7 +8,7 @@ Author:
 tags:
 affiliate link: https://amzn.to/43qLFDU
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # ✍🏿🇺🇸💔 Why Didn't We Riot?: A Black Man In Trumpland  
 by Issac J. Bailey  
 [🛒 Why Didn't We Riot?: A Black Man In Trumpland. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/43qLFDU)  
@@ -59,7 +59,7 @@ by Issac J. Bailey
 ### 🤝 Similar Reads (Exploring Black experiences, race, and politics)  
   
 * ✉️ **Between the World and Me** by Ta-Nehisi Coates: A powerful letter to Coates's son about the feelings, symbolism, and realities associated with being Black in the United States. Shares Bailey's personal yet analytical tone.  
-* **[✊🏿 How To Be An Antiracist](./how-to-be-an-antiracist.md)** by Ibram X. Kendi: Offers a framework for understanding and dismantling racism, moving beyond awareness to active antiracism. Complements Bailey's analysis of systemic issues.  
+* **[✊🏿 How To Be An Antiracist](/content/books/how-to-be-an-antiracist.md)** by Ibram X. Kendi: Offers a framework for understanding and dismantling racism, moving beyond awareness to active antiracism. Complements Bailey's analysis of systemic issues.  
 * 🔥 **The Fire This Time: A New Generation Speaks about Race** edited by Jesmyn Ward: An anthology responding to James Baldwin, featuring essays and poems on contemporary race issues, echoing the urgency in Bailey's work.  
 * 🏋🏾 **Heavy: An American Memoir** by Kiese Laymon: A raw and intimate memoir exploring weight, trauma, race, family, and growing up Black in Mississippi. Shares Bailey's vulnerability and focus on the Southern Black experience.  
 * 👨‍👩‍👧‍👦 **My Brother Moochie: Regaining Dignity in the Face of Crime, Poverty, and Racism in the American South** by Issac J. Bailey: Bailey's earlier work, delving into his family's experience with the criminal justice system, providing deeper context to his perspectives.  
@@ -79,5 +79,5 @@ by Issac J. Bailey
 * 📰 **The Routledge Companion to Media and Race** edited by Christopher P. Campbell: An academic collection examining media representation, framing, and critical race theory, relevant to Bailey's critique of media coverage.  
 * 🫂 **Radical Empathy: Finding a Path to Bridging Racial Divides** by Terri Givens: Explores the concept of empathy as a tool for overcoming racial divides, offering a potential pathway forward related to the communication breakdowns Bailey highlights.  
   
-## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
+## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Why Didn't We Riot A Black Man In Trumpland by Issac J. Bailey. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

@@ -7,7 +7,7 @@ share: true
 CTA: 🔥 Build intelligence.
 affiliate link: https://amzn.to/4opiA41
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 💯💻 The Hundred-Page Language Models Book: hands-on with PyTorch  
 [🛒 The Hundred-Page Language Models Book: hands-on with PyTorch. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4opiA41)  
   
@@ -32,14 +32,14 @@ affiliate link: https://amzn.to/4opiA41
   
 #### 🧑‍💻 Similar Reads for the Hands-On Practitioner  
   
-* **[🗣️💻 Natural Language Processing with Transformers](./natural-language-processing-with-transformers.md), Revised and Expanded** by Lewis Tunstall, Leandro von Werra, and Thomas Wolf: 📚 This book offers a deep dive into the practical application of Transformer models, using the popular Hugging Face Transformers library. 🚀 It is an excellent next step for those who want to work with state-of-the-art pretrained models.  
+* **[🗣️💻 Natural Language Processing with Transformers](/content/books/natural-language-processing-with-transformers.md), Revised and Expanded** by Lewis Tunstall, Leandro von Werra, and Thomas Wolf: 📚 This book offers a deep dive into the practical application of Transformer models, using the popular Hugging Face Transformers library. 🚀 It is an excellent next step for those who want to work with state-of-the-art pretrained models.  
 * 🧠 **Deep Learning with Python, Second Edition** by François Chollet: 📚 While broader in scope than just language models, this book provides a foundational understanding of deep learning concepts using the Keras library. 📝 Its clear explanations and practical examples make it a valuable resource for any aspiring machine learning engineer.  
-* **[💾⬆️🛡️ Designing Data-Intensive Applications: The Big Ideas Behind Reliable, Scalable, and Maintainable Systems](./designing-data-intensive-applications.md)** by Martin Kleppmann: 📚 Although not strictly about language models, this book is essential for understanding the broader systems-level challenges of building and deploying complex data-driven applications, a necessary skill for productionizing language models.  
+* **[💾⬆️🛡️ Designing Data-Intensive Applications: The Big Ideas Behind Reliable, Scalable, and Maintainable Systems](/content/books/designing-data-intensive-applications.md)** by Martin Kleppmann: 📚 Although not strictly about language models, this book is essential for understanding the broader systems-level challenges of building and deploying complex data-driven applications, a necessary skill for productionizing language models.  
   
 #### 🤔 Contrasting Perspectives for the Curious Mind  
   
 * 🗣️ **On the Origin of Stories: Evolution, Cognition, and Fiction** by Brian Boyd: 📚 This book offers a fascinating look at the evolutionary and cognitive roots of storytelling, providing a thought-provoking backdrop to the computational efforts to understand and generate language.  
-* **[🤖⚠️📈 Superintelligence: Paths, Dangers, Strategies](./superintelligence-paths-dangers-strategies.md)** by Nick Bostrom: 📚 For those interested in the long-term implications of artificial intelligence, this book provides a rigorous and sobering analysis of the potential risks and ethical considerations associated with creating superintelligent agents.  
+* **[🤖⚠️📈 Superintelligence: Paths, Dangers, Strategies](/content/books/superintelligence-paths-dangers-strategies.md)** by Nick Bostrom: 📚 For those interested in the long-term implications of artificial intelligence, this book provides a rigorous and sobering analysis of the potential risks and ethical considerations associated with creating superintelligent agents.  
 * 🧠 **The Symbolic Species: The Co-evolution of Language and the Brain** by Terrence W. Deacon: 📚 This work delves into the intricate relationship between human language and the brain, offering a biological and anthropological perspective that contrasts with the purely computational approach of most machine learning texts.  
   
 #### ✨ Creatively Related Reads for the Imaginative Soul  
@@ -48,5 +48,5 @@ affiliate link: https://amzn.to/4opiA41
 * 🌌 **Exhalation: Stories** by Ted Chiang: 📖 This collection of science fiction short stories masterfully explores the philosophical and existential implications of technological advancements, including artificial intelligence and the nature of consciousness.  
 * 💎 **The Diamond Age: Or, a Young Lady's Illustrated Primer** by Neal Stephenson: 📖 This cyberpunk classic envisions a future where a powerful, interactive book shapes the education and destiny of a young girl, raising questions about the role of technology in learning and societal development.  
   
-## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro)  
+## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-pro)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on The Hundred-Page Language Models Book: hands-on with PyTorch . Never put book titles in quotes or italics. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

@@ -12,7 +12,7 @@ force_analyze_links: false
 link_analysis_time: 2026-03-25T03:02:40.483Z
 link_analysis_model: gemini-3.1-flash-lite-preview
 ---
-[Home](../index.md) > [Books](./index.md) | [⏮️ 🏃💨🚪 Exit Strategy](./exit-strategy.md) [⏭️ 🕵️ Fugitive Telemetry](./fugitive-telemetry.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md) | [⏮️ 🏃💨🚪 Exit Strategy](/content/books/exit-strategy.md) [⏭️ 🕵️ Fugitive Telemetry](/content/books/fugitive-telemetry.md)  
 # 🌐🤖🚀 Network Effect  
 [🛒 Network Effect. As an Amazon Associate I earn from qualifying purchases.](https://www.amazon.com/dp/1250229863?tag=bagrounds-20)  
   
@@ -51,18 +51,18 @@ A: 🤓 The core voice remains consistent, but the expanded length permits deepe
   
 ### 📖 Non-Fiction  
   
-* 🦾 [⚖️🤖 The Alignment Problem](./the-alignment-problem.md) by Brian Christian  
-* [🧠👥 The Society of Mind](./the-society-of-mind.md) by Marvin Minsky  
+* 🦾 [⚖️🤖 The Alignment Problem](/content/books/the-alignment-problem.md) by Brian Christian  
+* [🧠👥 The Society of Mind](/content/books/the-society-of-mind.md) by Marvin Minsky  
   
 ### ❤️ If You Loved This  
   
 * 🛸 Ancillary Justice by Ann Leckie  
-* [➡️🌌🚀😡 A Long Way to a Small, Angry Planet](./a-long-way-to-a-small-angry-planet.md) by Becky Chambers  
+* [➡️🌌🚀😡 A Long Way to a Small, Angry Planet](/content/books/a-long-way-to-a-small-angry-planet.md) by Becky Chambers  
   
 ### ↔️ Similar But Different  
   
-* [🕷️⏳ Children of Time](./children-of-time.md) by Adrian Tchaikovsky  
-* [☄️🧑‍🚀🙏🌍 Project Hail Mary](./project-hail-mary.md) by Andy Weir  
+* [🕷️⏳ Children of Time](/content/books/children-of-time.md) by Adrian Tchaikovsky  
+* [☄️🧑‍🚀🙏🌍 Project Hail Mary](/content/books/project-hail-mary.md) by Andy Weir  
   
 ## 🫵 What Do You Think?  
   

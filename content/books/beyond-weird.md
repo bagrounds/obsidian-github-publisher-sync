@@ -9,7 +9,7 @@ tags:
 affiliate link: https://amzn.to/4kkWHjM
 CTA: Question reality.
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # ⚛️🌎 Beyond Weird: Why Everything You Thought You Knew about Quantum Physics Is Different  
 [🛒 Beyond Weird: Why Everything You Thought You Knew about Quantum Physics Is Different. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4kkWHjM)  
   
@@ -71,11 +71,11 @@ CTA: Question reality.
   
 ### 🎨 Creatively Related Books (Philosophy of Science, Limits of Knowledge, Challenging Intuition)  
   
-* **[🔬🔄 The Structure of Scientific Revolutions](./the-structure-of-scientific-revolutions.md)** by Thomas S. Kuhn: A seminal work on how scientific understanding changes, exploring paradigm shifts. 💡 Relates to *Beyond Weird*'s theme of evolving interpretations and challenging established ways of thinking (like classical intuition).  
-* 🎵 **[Gödel, Escher, Bach: An Eternal Golden Braid](./godel-escher-bach.md)** by Douglas Hofstadter: A sprawling, creative exploration of consciousness, systems, and self-reference through mathematics, art, and music. 🧩 Connects to the themes of interpretation, complex systems, and the limits of formal systems that echo in QM discussions.  
+* **[🔬🔄 The Structure of Scientific Revolutions](/content/books/the-structure-of-scientific-revolutions.md)** by Thomas S. Kuhn: A seminal work on how scientific understanding changes, exploring paradigm shifts. 💡 Relates to *Beyond Weird*'s theme of evolving interpretations and challenging established ways of thinking (like classical intuition).  
+* 🎵 **[Gödel, Escher, Bach: An Eternal Golden Braid](/content/books/godel-escher-bach.md)** by Douglas Hofstadter: A sprawling, creative exploration of consciousness, systems, and self-reference through mathematics, art, and music. 🧩 Connects to the themes of interpretation, complex systems, and the limits of formal systems that echo in QM discussions.  
 * 🤔 **Theory and Reality: An Introduction to the Philosophy of Science** by Peter Godfrey-Smith: A standard text offering a broader view of how scientific theories relate to reality, providing context for the specific interpretational debates within QM that Ball discusses.  
-* 🌍 **[Sapiens: A Brief History of Humankind](./sapiens-a-brief-history-of-humankind.md)** by Yuval Noah Harari: While not about physics, its exploration of how humans create shared fictions and frameworks to understand the world resonates with the QM interpretation debate – how much is the map, and how much is the territory?  
+* 🌍 **[Sapiens: A Brief History of Humankind](/content/books/sapiens-a-brief-history-of-humankind.md)** by Yuval Noah Harari: While not about physics, its exploration of how humans create shared fictions and frameworks to understand the world resonates with the QM interpretation debate – how much is the map, and how much is the territory?  
 * 🧑‍🔬 **Creativity in Science: Annerledestenkerne** by Per Arne Bjørkum: Explores the history of scientific innovation through figures who challenged established truths, mirroring the ongoing effort to grasp the counter-intuitive nature of QM.  
   
-## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
+## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Beyond Weird. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

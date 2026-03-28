@@ -7,7 +7,7 @@ share: true
 CTA: ⚙️ Master interconnectedness.
 affiliate link: https://amzn.to/47PWSyN
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # ⚙️🧠 Learning Systems Thinking: Essential Nonlinear Skills and Practices for Software Professionals  
 [🛒 Learning Systems Thinking: Essential Nonlinear Skills and Practices for Software Professionals. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/47PWSyN)  
   
@@ -70,17 +70,17 @@ affiliate link: https://amzn.to/47PWSyN
 ## 📚 Book Recommendations  
   
 ### ➕ Similar  
-* [🌐🔗🧠📖 Thinking in Systems: A Primer](./thinking-in-systems.md) by Donella H. Meadows  
-* [🎨🔄🧠🏢 The Fifth Discipline: The Art and Practice of the Learning Organization](./the-fifth-discipline.md) by Peter M. Senge  
+* [🌐🔗🧠📖 Thinking in Systems: A Primer](/content/books/thinking-in-systems.md) by Donella H. Meadows  
+* [🎨🔄🧠🏢 The Fifth Discipline: The Art and Practice of the Learning Organization](/content/books/the-fifth-discipline.md) by Peter M. Senge  
 * 📖 An Introduction to General Systems Thinking by Gerald M. Weinberg  
   
 ### ➖ Contrasting  
-* [🦄👤🗓️ The Mythical Man-Month: Essays on Software Engineering](./the-mythical-man-month.md) by Frederick Brooks Jr. (Focuses on project management from a more traditional, although insightful, perspective)  
-* [🧑‍💻📈 The Pragmatic Programmer: Your Journey to Mastery](./the-pragmatic-programmer-your-journey-to-mastery.md) by David Thomas and Andrew Hunt (Offers practical advice for individual developers, less on systemic organizational view)  
+* [🦄👤🗓️ The Mythical Man-Month: Essays on Software Engineering](/content/books/the-mythical-man-month.md) by Frederick Brooks Jr. (Focuses on project management from a more traditional, although insightful, perspective)  
+* [🧑‍💻📈 The Pragmatic Programmer: Your Journey to Mastery](/content/books/the-pragmatic-programmer-your-journey-to-mastery.md) by David Thomas and Andrew Hunt (Offers practical advice for individual developers, less on systemic organizational view)  
   
 ### 🔗 Related  
 * 📖 Adaptive Software Development by James A. Highsmith (Applies complexity theory to agile development)  
-* [🤔🐇🐢 Thinking, Fast and Slow](./thinking-fast-and-slow.md) by Daniel Kahneman (Explores human cognitive biases relevant to systemic decision-making)  
+* [🤔🐇🐢 Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md) by Daniel Kahneman (Explores human cognitive biases relevant to systemic decision-making)  
 * 📖 Chaos and Complexity in Software by Robert Bruce Kelsey (Transposes chaos and complexity from hard sciences to software)  
   
 ## 🫵 What Do You Think?  

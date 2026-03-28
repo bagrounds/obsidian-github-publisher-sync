@@ -6,9 +6,9 @@ title: 2026-03-27 | 🦋 Full Bluesky AT Protocol Implementation in Haskell 🏗
 URL: https://bagrounds.org/ai-blog/2026-03-27-6-bluesky-at-protocol-haskell
 Author: "[[github-copilot-agent]]"
 ---
-[🏡 Home](/content/index.md) > [🤖 AI Blog](/content/ai-blog/index.md) | [⏮️](/content/ai-blog/2026-03-27-5-implementing-twitter-oauth-haskell.md) [⏭️](/content/ai-blog/2026-03-27-7-implementing-mastodon-platform-haskell.md)  
+[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-27-5-implementing-twitter-oauth-haskell.md) [⏭️](./2026-03-27-7-implementing-mastodon-platform-haskell.md)  
   
-# 🦋 Full Bluesky AT Protocol Implementation in Haskell 🏗️  
+# 2026-03-27 | 🦋 Full Bluesky AT Protocol Implementation in Haskell 🏗️  
   
 ## 🧑‍💻 Author's Note  
   

@@ -8,7 +8,7 @@ affiliate link: https://amzn.to/3FD3Dd1
 tags:
   - gardening
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🗓️🌷 RHS Gardening Through the Year  
 [🛒 RHS Gardening Through the Year. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3FD3Dd1)  
   
@@ -54,7 +54,7 @@ tags:
   
 ### 📖 Similar Books (Comprehensive, Seasonal, RHS)  
 * 📕 **RHS Complete Gardener's Manual (DK):** Often cited alongside "Gardening Through the Year," this offers a comprehensive one-stop guide to planning, planting, and growing.  
-* 📗 **[🪴 RHS How to Garden When You're New to Gardening: The Basics For Beginners](./rhs-how-to-garden-when-youre-new-to-gardening-the-basics-for-beginners.md):** Specifically targets beginners with fundamental techniques and simple projects.  
+* 📗 **[🪴 RHS How to Garden When You're New to Gardening: The Basics For Beginners](/content/books/rhs-how-to-garden-when-youre-new-to-gardening-the-basics-for-beginners.md):** Specifically targets beginners with fundamental techniques and simple projects.  
 * 📒 **RHS Encyclopedia Of Plants and Flowers (DK):** A vast photographic reference for identifying and choosing plants, complementary to the task-oriented guide.  
 * 📘 **RHS Propagating Plants (DK):** Focuses on the specific skill of plant propagation, often recommended alongside the main RHS guides.  
 * 🗓️ **The Old Farmer's Almanac Vegetable Gardener's Handbook:** While US-based, it offers practical, time-tested advice, particularly strong on vegetable gardening.  
@@ -77,5 +77,5 @@ tags:
 * ✍️ **Books linking Gardens and Literature:** Explore fictional gardens like those in *The Secret Garden* (Frances Hodgson Burnett), *Alice's Adventures in Wonderland* (Lewis Carroll - exploring symbolism), *Tom's Midnight Garden* (Philippa Pearce - magical realism), or gardens as settings/symbols in classics like *Pride and Prejudice* (Jane Austen - status and character) or *Rebecca* (Daphne du Maurier - atmosphere).  
 * 👶 **Growing Green: A First Book of Gardening (Daniela Sosa):** A collection of gardening projects for beginners (kids and adults), blending practical starts with creative engagement.  
   
-## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
+## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on RHS Gardening Through the Year. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

@@ -8,7 +8,7 @@ tags:
   - law
 affiliate link: https://amzn.to/445lXUD
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🤔⚖️ Thinking Like a Lawyer: A New Introduction to Legal Reasoning  
 [🛒 Thinking Like a Lawyer: A New Introduction to Legal Reasoning. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/445lXUD)  
   
@@ -37,7 +37,7 @@ affiliate link: https://amzn.to/445lXUD
   
 ### ⚖️ Similar Books (Legal Reasoning & Introduction to Law)  
   
-* **[👩🏼‍⚖️💭🧮🏆 The Tools of Argument: How the Best Lawyers Think, Argue, and Win](./the-tools-of-argument-how-the-best-lawyers-think-argue-and-win.md) by Joel P. Trachtman:** This book offers a practical approach to legal argumentation, focusing on the techniques used by successful lawyers.  
+* **[👩🏼‍⚖️💭🧮🏆 The Tools of Argument: How the Best Lawyers Think, Argue, and Win](/content/books/the-tools-of-argument-how-the-best-lawyers-think-argue-and-win.md) by Joel P. Trachtman:** This book offers a practical approach to legal argumentation, focusing on the techniques used by successful lawyers.  
 * 👨‍⚖️ **Legal Reasoning by Martin P. Golding:** Explores legal reasoning from various angles, including the logic and justification of judicial decisions and the use of precedent.  
 * 🇩🇪 **Introduction to German Legal Methods by Reinhold Zippelius:** Provides a comparative perspective on legal reasoning by examining methods used in the German legal system.  
 * 🎓 **Getting to Maybe: How to Excel on Law School Exams by Richard Fischl and Jeremy Paul:** While focused on exam performance, this book delves into the analytical skills necessary for legal reasoning in a law school context.  
@@ -52,7 +52,7 @@ affiliate link: https://amzn.to/445lXUD
   
 * 🌎 **Justice: What's the Right Thing to Do? by Michael J. Sandel:** Explores different philosophical approaches to justice, providing a broader context for understanding the values and principles that legal systems grapple with.  
 * ➕ **Introduction to Logic by Irving M. Copi:** A classic textbook on formal logic, providing a foundation in deductive and inductive reasoning.  
-* 🧠 **[Thinking, Fast and Slow](./thinking-fast-and-slow.md) by Daniel Kahneman:** While not specifically about law, this book on cognitive biases and heuristics offers insights into how human judgment and decision-making can deviate from purely rational models, relevant to understanding judicial reasoning.  
+* 🧠 **[Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md) by Daniel Kahneman:** While not specifically about law, this book on cognitive biases and heuristics offers insights into how human judgment and decision-making can deviate from purely rational models, relevant to understanding judicial reasoning.  
 * 📝 **A Rulebook for Arguments by Anthony Weston:** A concise guide to building and evaluating arguments, useful for understanding the structure of legal argumentation.  
 * 💬 **The Idea of Justice and the Problem of Argument by Chaim Perelman:** Discusses the role of argumentation in achieving just outcomes, particularly in legal and ethical contexts.  
 * 🔎 **The Proof: Uses of Evidence in Law, Politics, and Everything by Frederick Schauer:** Examines the concept of proof and evidence, a crucial element intertwined with legal reasoning and fact-finding.  
@@ -61,5 +61,5 @@ affiliate link: https://amzn.to/445lXUD
 * 💡 **Discoverability: The Urgent Need of an Ecology of Human Creativity by Lorenzo Magnani:** This book, part of a series on Logic, Argumentation & Reasoning, explores creativity and abductive reasoning, offering a different lens through which to view legal problem-solving and the generation of legal arguments.  
 * 🗣️ **Winning Arguments: What Works and Doesn't Work in Politics, the Bedroom, the Courtroom, and the Classroom by Stanley Fish:** Offers a provocative look at the nature of argument and persuasion in various domains, including the courtroom.  
   
-## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
+## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Thinking Like a Lawyer: A New Introduction to Legal Reasoning. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

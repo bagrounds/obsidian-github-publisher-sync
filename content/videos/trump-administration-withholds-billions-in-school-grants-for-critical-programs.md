@@ -10,7 +10,7 @@ Channel: PBS NewsHour
 tags:
 youtube: https://youtu.be/RKy3LIgafew
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md)  
 # 👹💰🚫👩‍🏫 Trump administration withholds billions in school grants for critical programs  
 ![Trump administration withholds billions in school grants for critical programs](https://youtu.be/RKy3LIgafew)  
   
@@ -28,8 +28,8 @@ The Trump administration 🛑 blocked nearly $7 billion 💰 in approved funding
 * ⛔ If the funds remain blocked, many programs are expected to shut down 🚪, as most districts and organizations are already struggling 😓 and desperate for these funds 🆘 \[[05:03](http://www.youtube.com/watch?v=RKy3LIgafew&t=303)\].  
   
 ## 📚 Book Recommendations  
-* [😥🏫🇺🇸 The Shame of the Nation: The Restoration of Apartheid Schooling in America](../books/the-shame-of-the-nation-the-restoration-of-apartheid-schooling-in-america.md) by Jonathan Kozol  
+* [😥🏫🇺🇸 The Shame of the Nation: The Restoration of Apartheid Schooling in America](/content/books/the-shame-of-the-nation-the-restoration-of-apartheid-schooling-in-america.md) by Jonathan Kozol  
 * 📖 "Savage Inequalities: Children in America's Schools" by Jonathan Kozol  
-* [💀🇺🇸🏫 The Death and Life of the Great American School System: How Testing and Choice Are Undermining Education](../books/the-death-and-life-of-the-great-american-school-system-how-testing-and-choice-are-undermining-education.md) by Diane Ravitch  
+* [💀🇺🇸🏫 The Death and Life of the Great American School System: How Testing and Choice Are Undermining Education](/content/books/the-death-and-life-of-the-great-american-school-system-how-testing-and-choice-are-undermining-education.md) by Diane Ravitch  
 * 📖 "Educated" by Tara Westover  
 * 📖 "The Price of Privilege: How Parental Pressure and Material Advantage Are Creating a Generation of Disconnected and Unhappy Kids" by Madeline Levine

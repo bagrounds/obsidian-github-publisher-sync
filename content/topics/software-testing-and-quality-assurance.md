@@ -5,7 +5,7 @@ aliases:
 title: 🧪✅ Software Testing and Quality Assurance
 URL: https://bagrounds.org/topics/software-testing-and-quality-assurance
 ---
-[Home](../index.md) > [Topics](./index.md) > [Knowledge](./a-hierarchical-view-of-human-knowledge.md) > [Engineering](./engineering.md) > [Software Engineering](./software-engineering.md)  
+[Home](/content/index.md) > [Topics](/content/topics/index.md) > [Knowledge](/content/topics/a-hierarchical-view-of-human-knowledge.md) > [Engineering](/content/topics/engineering.md) > [Software Engineering](/content/topics/software-engineering.md)  
 # 🧪✅ Software Testing and Quality Assurance  
 ## 🤖 AI Summary  
 **High-Level Summary:**  
@@ -40,7 +40,7 @@ Here are some influential and accessible books that provide a good introduction 
     * This book offers valuable insights and practical advice based on real-world experiences. It focuses on the art and science of testing, emphasizing critical thinking and problem-solving. 🧠  
 3.  **"The Art of Software Testing" by Glenford J. Myers, Tom Badgett, and Corey Sandler:**  
     * This classic book covers the fundamental principles of software testing and provides practical techniques for designing and executing effective tests. It's a foundational text in the field. 📜  
-4.  **"[How Google Tests Software](../books/how-google-tests-software.md)" by James A. Whittaker, Jason Arbon, and Jeff Carollo:**  
+4.  **"[How Google Tests Software](/content/books/how-google-tests-software.md)" by James A. Whittaker, Jason Arbon, and Jeff Carollo:**  
     * This book provides an inside look at Google's testing practices and methodologies. It offers valuable insights into how a leading tech company ensures software quality. 🔍  
 5.  **"Explore It!: Reduce Risk and Increase Confidence with Exploratory Testing" by Elisabeth Hendrickson:**  
     * This book focuses on exploratory testing, a dynamic and creative approach to finding defects. It encourages testers to think outside the box and explore the software. 🗺️  

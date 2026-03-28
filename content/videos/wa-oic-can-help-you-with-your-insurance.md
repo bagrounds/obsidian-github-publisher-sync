@@ -10,7 +10,7 @@ Channel: Washington State Office of the Insurance Commissioner
 tags:
   - law
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md)  
 # 🏞️⚕️🛡️🤝 WA OIC can help you with your insurance!  
 ![WA OIC can help you with your insurance!](https://youtu.be/KowDnIoPDMU)  
   
@@ -27,11 +27,11 @@ tags:
 ## 📚 Book Recommendations  
 📚💪🛡️ Here are some highly-rated books that can help consumers understand health insurance, their rights, and how to advocate for themselves:  
   
-* **[⚕️💸 Health Insurance in America: A Consumer's Guide](../books/health-insurance-in-america-a-consumers-guide.md)** by Michelle A. Green: 🧑‍💼 This book (and its various editions) is frequently cited as a comprehensive guide for consumers. 🧭 It aims to demystify health insurance, covering topics like deductibles, 💰 covered procedures, and in-network vs. out-of-network care. 🏥 Michelle A. Green also has a series of "Understanding Health Insurance: A Guide to Billing and Reimbursement" books, which are more geared towards those in the medical billing field 🧾 but can still provide valuable insights into the backend of how insurance works. ⚙️  
+* **[⚕️💸 Health Insurance in America: A Consumer's Guide](/content/books/health-insurance-in-america-a-consumers-guide.md)** by Michelle A. Green: 🧑‍💼 This book (and its various editions) is frequently cited as a comprehensive guide for consumers. 🧭 It aims to demystify health insurance, covering topics like deductibles, 💰 covered procedures, and in-network vs. out-of-network care. 🏥 Michelle A. Green also has a series of "Understanding Health Insurance: A Guide to Billing and Reimbursement" books, which are more geared towards those in the medical billing field 🧾 but can still provide valuable insights into the backend of how insurance works. ⚙️  
   
-* **[💰⚕️ Making Them Pay: How to Get the Most from Health Insurance and Managed Care](../books/making-them-pay-how-to-get-the-most-from-health-insurance-and-managed-care.md)** by Rhonda Orin: 👩‍💼 Written by a lawyer with extensive experience suing insurance companies 🏢, this book offers practical advice on understanding health plans, 📝 deciphering benefits, 🎁 identifying exclusions, 🚫 and challenging denials. 🛑 It's designed to empower consumers 💪 to fight for the benefits they are entitled to. 🏆  
+* **[💰⚕️ Making Them Pay: How to Get the Most from Health Insurance and Managed Care](/content/books/making-them-pay-how-to-get-the-most-from-health-insurance-and-managed-care.md)** by Rhonda Orin: 👩‍💼 Written by a lawyer with extensive experience suing insurance companies 🏢, this book offers practical advice on understanding health plans, 📝 deciphering benefits, 🎁 identifying exclusions, 🚫 and challenging denials. 🛑 It's designed to empower consumers 💪 to fight for the benefits they are entitled to. 🏆  
   
-* **[🙅🏼‍♀️🧾🏥⚔️ Never Pay the First Bill: And Other Ways to Fight the Health Care System and Win](../books/never-pay-the-first-bill-and-other-ways-to-fight-the-health-care-system-and-win.md)** by Marshall Allen: 🥊 This book provides a "how-to" guide 🧭 for understanding medical bills 🧾 and disputing errors. 😠 It's particularly useful for consumers who are willing to actively engage in fighting their medical billing and health insurance battles. 🛡️⚔️  
+* **[🙅🏼‍♀️🧾🏥⚔️ Never Pay the First Bill: And Other Ways to Fight the Health Care System and Win](/content/books/never-pay-the-first-bill-and-other-ways-to-fight-the-health-care-system-and-win.md)** by Marshall Allen: 🥊 This book provides a "how-to" guide 🧭 for understanding medical bills 🧾 and disputing errors. 😠 It's particularly useful for consumers who are willing to actively engage in fighting their medical billing and health insurance battles. 🛡️⚔️  
   
 * ℹ️ **"Healthcare, Insurance, and You: The Savvy Consumer's Guide"**: 💡 This guide aims to simplify the complexities of the healthcare system 🏥 and insurance, helping consumers make informed decisions ✅ for better health 🍎 at a lower cost, 📉 especially in light of healthcare reform. 🏛️  
   

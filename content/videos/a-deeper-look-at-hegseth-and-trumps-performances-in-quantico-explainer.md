@@ -10,7 +10,7 @@ Channel: Heather Cox Richardson
 tags:
 youtube: https://youtu.be/Jz3Wl4Fo0-8
 ---
-[Home](../index.md) > [Videos](./index.md) | [🏛️🇺🇸📖 Heather Cox Richardson](../people/heather-cox-richardson.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md) | [🏛️🇺🇸📖 Heather Cox Richardson](/content/people/heather-cox-richardson.md)  
 # 🔎🎭🇺🇸 A Deeper Look at Hegseth and Trump’s Performances in Quantico | Explainer  
 ![A Deeper Look at Hegseth and Trump’s Performances in Quantico | Explainer](https://youtu.be/Jz3Wl4Fo0-8)  
   
@@ -39,13 +39,13 @@ youtube: https://youtu.be/Jz3Wl4Fo0-8
 ## 📚 Book Recommendations  
   
 ### Similar  
-* [💰🤫 Dark Money: The Hidden History of the Billionaires Behind the Rise of the Radical Right](../books/dark-money-the-hidden-history-of-the-billionaires-behind-the-rise-of-the-radical-right.md) by Jane Mayer: 💰 Explores the vast network of conservative organizations and political actors who fund and support the hyper-partisan political infrastructure discussed in the video.  
+* [💰🤫 Dark Money: The Hidden History of the Billionaires Behind the Rise of the Radical Right](/content/books/dark-money-the-hidden-history-of-the-billionaires-behind-the-rise-of-the-radical-right.md) by Jane Mayer: 💰 Explores the vast network of conservative organizations and political actors who fund and support the hyper-partisan political infrastructure discussed in the video.  
 * 🇺🇸 *Fascism: A Warning* by Madeleine Albright: 📜 Analyzes the warning signs and tactics of authoritarianism throughout history, providing a framework for evaluating the "unhinged" political and legal maneuvers observed.  
   
 ### Contrasting  
-* [🤔🐇🐢 Thinking, Fast and Slow](../books/thinking-fast-and-slow.md) by Daniel Kahneman: 🧠 Provides a legitimate psychological perspective on the cognitive biases and irrational decision-making that affects human behavior, offering a non-political framework for evaluating public conduct.  
+* [🤔🐇🐢 Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md) by Daniel Kahneman: 🧠 Provides a legitimate psychological perspective on the cognitive biases and irrational decision-making that affects human behavior, offering a non-political framework for evaluating public conduct.  
 * 🎖️ *Dereliction of Duty* by H.R. McMaster: ⚔️ Offers a deep look at the failure of senior military and political leaders during the Vietnam War, providing a historical comparison of institutional failure versus institutional resistance.  
   
 ### Creatively Related  
-* [🏚️💰 Evicted: Poverty and Profit in the American City](../books/evicted-poverty-and-profit-in-the-american-city.md) by Matthew Desmond: 🚪 Connects the broad policy impacts (like cuts to nutrition and healthcare) to the real-life struggles and precariousness of low-income Americans, mirroring the anxiety created by ICE raids.  
+* [🏚️💰 Evicted: Poverty and Profit in the American City](/content/books/evicted-poverty-and-profit-in-the-american-city.md) by Matthew Desmond: 🚪 Connects the broad policy impacts (like cuts to nutrition and healthcare) to the real-life struggles and precariousness of low-income Americans, mirroring the anxiety created by ICE raids.  
 * 🎭 *The Power Broker* by Robert Caro: 🏗️ A massive biography of Robert Moses that illustrates how institutional power is amassed and wielded, showing how an individual can operate outside normal democratic constraints, similar to the powerful non-military federal agencies.

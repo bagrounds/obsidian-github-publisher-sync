@@ -7,7 +7,7 @@ share: true
 CTA: 💡 Grasp the bigger picture.
 affiliate link: https://amzn.to/4nM32Wr
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # ⚙️🧠 The Systems Thinking Playbook: Exercises to Stretch and Build Learning and Systems Thinking Capabilities  
 [🛒 The Systems Thinking Playbook: Exercises to Stretch and Build Learning and Systems Thinking Capabilities. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4nM32Wr)  
   
@@ -65,17 +65,17 @@ affiliate link: https://amzn.to/4nM32Wr
 ## 📚 Book Recommendations  
   
 ### 👍 Similar  
-* [🌐🔗🧠📖 Thinking in Systems: A Primer](./thinking-in-systems.md) by Donella H. Meadows  
-* [🎨🔄🧠🏢 The Fifth Discipline: The Art and Practice of the Learning Organization](./the-fifth-discipline.md) by Peter Senge  
+* [🌐🔗🧠📖 Thinking in Systems: A Primer](/content/books/thinking-in-systems.md) by Donella H. Meadows  
+* [🎨🔄🧠🏢 The Fifth Discipline: The Art and Practice of the Learning Organization](/content/books/the-fifth-discipline.md) by Peter Senge  
 * Systems Thinking for Social Change: A Practical Guide to Solving Complex Problems, Avoiding Unintended Consequences, and Achieving Lasting Results by David Peter Stroh  
   
 ### 👎 Contrasting  
 * 📕 Good Strategy Bad Strategy: The Difference and Why It Matters by Richard Rumelt  
-* [📉📈🌪️💪 Antifragile: Things That Gain from Disorder](./antifragile-things-that-gain-from-disorder.md) by Nassim Nicholas Taleb  
+* [📉📈🌪️💪 Antifragile: Things That Gain from Disorder](/content/books/antifragile-things-that-gain-from-disorder.md) by Nassim Nicholas Taleb  
   
 ### 🔗 Related  
 * 📕 The Climate Change Playbook by Dennis Meadows, Linda Booth Sweeney, and Gillian Martin Mehers  
-* [🎨🤔🖼️ The Art of Thinking Clearly](./the-art-of-thinking-clearly.md) by Rolf Dobelli  
+* [🎨🤔🖼️ The Art of Thinking Clearly](/content/books/the-art-of-thinking-clearly.md) by Rolf Dobelli  
 * 📕 Seeing the Forest for the Trees: A Manager's Guide to Applying Systems Thinking by Dennis Sherer  
   
 ## 🫵 What Do You Think?  

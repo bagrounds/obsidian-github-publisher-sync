@@ -4,7 +4,7 @@ aliases:
   - 🌳➡️ Tree Traversal
 title: 🌳➡️ Tree Traversal
 ---
-[Home](../index.md) > [Topics](./index.md)  
+[Home](/content/index.md) > [Topics](/content/topics/index.md)  
 # 🌳➡️ Tree Traversal  
 From Wikipedia: [Tree traversal](https://wikipedia.org/wiki/Tree_traversal)  
 - In-order, pre-order, and post-order are 3 common forms of depth-first tree traversal.  

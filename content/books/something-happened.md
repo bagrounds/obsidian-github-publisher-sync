@@ -6,7 +6,7 @@ URL: https://bagrounds.org/books/something-happened
 share: true
 affiliate link: https://amzn.to/43Hjnnr
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # ⚠️👤 Something Happened  
 [🛒 Something Happened. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/43Hjnnr)  
   
@@ -54,7 +54,7 @@ affiliate link: https://amzn.to/43Hjnnr
 * 🖋️ **The Sportswriter** by Richard Ford: Features a protagonist grappling with existential drift, loss, and the search for meaning in the wake of personal tragedy, similar to Slocum's introspective malaise.  
   
 ### 🔄 Contrasting Perspectives  
-* 💣 **[🔁🤪 Catch-22](./catch-22.md)** by Joseph Heller: While by the same author, *Catch-22* contrasts sharply in tone and style. 😂 It uses absurdity, dark humor, and a chaotic, multi-perspective narrative to critique war and bureaucracy, whereas *Something Happened* is a focused, relentlessly bleak interior monologue about domestic and corporate life.  
+* 💣 **[🔁🤪 Catch-22](/content/books/catch-22.md)** by Joseph Heller: While by the same author, *Catch-22* contrasts sharply in tone and style. 😂 It uses absurdity, dark humor, and a chaotic, multi-perspective narrative to critique war and bureaucracy, whereas *Something Happened* is a focused, relentlessly bleak interior monologue about domestic and corporate life.  
 * 🚗 **On the Road** by Jack Kerouac: Offers a contrasting vision of escaping societal constraints through spontaneity, movement, and counter-culture ideals, the opposite of Slocum's paralyzed conformity. (Note: Kerouac was influenced by William Saroyan, who also influenced Heller).  
 * 🤖 **Brave New World** by Aldous Huxley: Presents a dystopian vision where conformity and lack of meaning are enforced by the state for stability, offering a societal-level contrast to Slocum's individual, internal struggle within a seemingly "free" society.  
 * 🌲 **Walden** by Henry David Thoreau: Advocates for simplification, self-sufficiency, and finding meaning outside societal and corporate structures, a direct contrast to Slocum's entanglement in them.  
@@ -67,5 +67,5 @@ affiliate link: https://amzn.to/43Hjnnr
 * 🎭 **Death of a Salesman** by Arthur Miller: A play exploring the crushing weight of the American Dream and the professional and personal disillusionment of its protagonist, Willy Loman, echoing Slocum's anxieties about success and failure.  
 * 📺 **Mad Men (TV Series):** While a different medium, the show vividly portrays the corporate culture, suburban angst, marital infidelity, and identity crises of the 1960s advertising world that mirrors Bob Slocum's environment.  
   
-## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
+## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Something Happened. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

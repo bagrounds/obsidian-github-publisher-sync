@@ -6,7 +6,7 @@ URL: https://bagrounds.org/books/war-and-peace
 share: true
 affiliate link: https://amzn.to/3TnAupo
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # ⚔️🕊️ War and Peace  
 [🛒 War and Peace. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3TnAupo)  
   
@@ -71,7 +71,7 @@ affiliate link: https://amzn.to/3TnAupo
 * ⚔️ **Novels by Guy Gavriel Kay:** Authors like Guy Gavriel Kay write historical fantasy that often features epic scope, intricate court politics, and the impact of large-scale conflicts on individuals and societies, echoing some of the structural and thematic elements of *War and Peace* in a fantasy setting. Examples include *Under Heaven* and *River of Stars*.  
 * 🧑‍🎨 **_War and Peace in the Worlds of Rudolf H. Sauter_ by Jeffrey S. Reznick:** This cultural history examines the life and work of an artist during wartime, offering a non-fiction perspective on how conflict and the quest for peace can influence creative expression and individual experience.  
   
-## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
+## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on War and Peace. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.  
   
 ## 🐦 Tweet  

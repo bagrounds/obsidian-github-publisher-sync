@@ -10,7 +10,7 @@ Channel: ProPublica
 tags:
 youtube: https://youtu.be/w1LuV82l0vs
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md)  
 # 👤🎭🏛️ Russell Vought: The Shadow President  
 ![Russell Vought: The Shadow President](https://youtu.be/w1LuV82l0vs)  
   
@@ -64,10 +64,10 @@ A: 🕊️ Vought said he has no problem being called a Christian nationalist wh
 ## 📚 Book Recommendations  
   
 * 📚 Mandate for Leadership: The Conservative Promise (Edited by Paul Dans and Steven Groves; Foreword by Kevin D. Roberts): This is the blueprint for Project 2025 detailing plans for a massive, immediate dismantling of the federal administrative state.  
-* [🗳️💰⬇️ The Great Suppression: Voting Rights, Corporate Cash, and the Conservative Assault on Democracy](../books/the-great-suppression-voting-rights-corporate-cash-and-the-conservative-assault-on-democracy.md) (by Zachary Roth): This book analyzes conservative strategies to restrict voting and political power, creating an environment for non-majoritarian rule.  
-* [⚠️🥴🕹️🌐 The Fifth Risk](../books/the-fifth-risk.md) (by Michael Lewis): Lewis explores 🌎 the critical, human-centered work of federal agencies—like Energy, Agriculture, and Commerce—countering the view that bureaucracy is useless.  
-* [🇺🇸💔 The Lost Soul of the American Presidency: The Decline into Demagoguery and the Prospects for Renewal](../books/the-lost-soul-of-the-american-presidency-the-decline-into-demagoguery-and-the-prospects-for-renewal.md) (by Stephen F. Knott): This book provides a constitutional critique of the modern, partisan presidency, challenging the goal of maximizing executive power.  
-* [🇺🇸➡️ A Time for Choosing: The Rise of Modern American Conservatism](../books/a-time-for-choosing-the-rise-of-modern-american-conservatism.md) (by Jonathan M. Schoenwald): This book details the historical and tactical rise of modern American conservatism from the 1960s onward.  
+* [🗳️💰⬇️ The Great Suppression: Voting Rights, Corporate Cash, and the Conservative Assault on Democracy](/content/books/the-great-suppression-voting-rights-corporate-cash-and-the-conservative-assault-on-democracy.md) (by Zachary Roth): This book analyzes conservative strategies to restrict voting and political power, creating an environment for non-majoritarian rule.  
+* [⚠️🥴🕹️🌐 The Fifth Risk](/content/books/the-fifth-risk.md) (by Michael Lewis): Lewis explores 🌎 the critical, human-centered work of federal agencies—like Energy, Agriculture, and Commerce—countering the view that bureaucracy is useless.  
+* [🇺🇸💔 The Lost Soul of the American Presidency: The Decline into Demagoguery and the Prospects for Renewal](/content/books/the-lost-soul-of-the-american-presidency-the-decline-into-demagoguery-and-the-prospects-for-renewal.md) (by Stephen F. Knott): This book provides a constitutional critique of the modern, partisan presidency, challenging the goal of maximizing executive power.  
+* [🇺🇸➡️ A Time for Choosing: The Rise of Modern American Conservatism](/content/books/a-time-for-choosing-the-rise-of-modern-american-conservatism.md) (by Jonathan M. Schoenwald): This book details the historical and tactical rise of modern American conservatism from the 1960s onward.  
 * 📚 The Power Broker: Robert Moses and the Fall of New York (by Robert A. Caro): Caro's biography 👑 is a cautionary tale about an unelected official who amassed immense, unchecked power, which parallels Vought's consolidation of executive authority.  
 * 📚 The Second World War (by Winston S. Churchill): This history ⚔️ offers the grandiose historical frame of reference often used in political rhetoric, allowing comparison to a world-defining political struggle.  
 * 📚 The Unwritten Rules of the Highly Effective Job Search (by Orville Pierson): This book is an insider's guide to navigating organizational bureaucracy and dynamics, the very system Vought plans to exploit and abolish.

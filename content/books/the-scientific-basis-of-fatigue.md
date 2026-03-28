@@ -7,7 +7,7 @@ share: true
 CTA: 💡 Understand your exhaustion.
 affiliate link: https://amzn.to/49rWCrL
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🔬🥱 The Scientific Basis of Fatigue  
 [🛒 The Scientific Basis of Fatigue. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/49rWCrL)  
   
@@ -77,10 +77,10 @@ affiliate link: https://amzn.to/49rWCrL
   
 ### Contrasting Books  
 * 🤯 The Psychology of Fatigue: Work, Effort and Control by Robert Hockey. (Focuses on fatigue as an emotion and adaptive role in goal management, from a motivational control theory perspective).  
-* [🌀⬆️🧠 The Upward Spiral: Using Neuroscience to Reverse the Course of Depression, One Small Change at a Time](./the-upward-spiral-using-neuroscience-to-reverse-the-course-of-depression-one-small-change-at-a-time.md) by Alex Korb. (Uses neuroscience to explain how the brain gets stuck in negative loops of anxiety and fatigue, emphasizing small neurochemical changes).  
+* [🌀⬆️🧠 The Upward Spiral: Using Neuroscience to Reverse the Course of Depression, One Small Change at a Time](/content/books/the-upward-spiral-using-neuroscience-to-reverse-the-course-of-depression-one-small-change-at-a-time.md) by Alex Korb. (Uses neuroscience to explain how the brain gets stuck in negative loops of anxiety and fatigue, emphasizing small neurochemical changes).  
   
 ### Related Books  
-* [🔋⚕️⏳ Mitochondria and the Future of Medicine: The Key to Understanding Disease, Chronic Illness, Aging, and Life Itself](./mitochondria-and-the-future-of-medicine-the-key-to-understanding-disease-chronic-illness-aging-and-life-itself.md) by Lee Know. (Explores the foundational role of mitochondria in health and disease).  
+* [🔋⚕️⏳ Mitochondria and the Future of Medicine: The Key to Understanding Disease, Chronic Illness, Aging, and Life Itself](/content/books/mitochondria-and-the-future-of-medicine-the-key-to-understanding-disease-chronic-illness-aging-and-life-itself.md) by Lee Know. (Explores the foundational role of mitochondria in health and disease).  
 * 😩 Stress: Psychopathology and Psychiatry by George Fink. (Explores the complex relationship between stress, psychopathology, and physiological responses, often intertwined with fatigue).  
   
 ## 🫵 What Do You Think?  

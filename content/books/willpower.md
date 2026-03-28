@@ -66,13 +66,13 @@ The book presents willpower not as an abstract virtue 😇, but as a tangible, p
 #### Additional Book Recommendations 📚✨  
   
 * **Best Alternate Book on the Same Topic:** "[The Power of Habit](./the-power-of-habit.md)" by Charles Duhigg 🔄. This book provides a broader perspective on habit formation, which is closely related to willpower 🤝.  
-* **Best Tangentially Related Book:** "[Thinking, Fast and Slow](./thinking-fast-and-slow.md)" by Daniel Kahneman 🧠. This book explores the cognitive biases and limitations that affect decision-making 💡, including those related to self-control 🚦.  
+* **Best Tangentially Related Book:** "[Thinking, Fast and Slow](books/thinking-fast-and-slow.md)" by Daniel Kahneman 🧠. This book explores the cognitive biases and limitations that affect decision-making 💡, including those related to self-control 🚦.  
 * **Best Diametrically Opposed Book:** "The Undisciplined Entrepreneur" by Rasmus Ankersen 💥. While not directly opposed, it promotes the idea that sometimes breaking rules 🚧 and being less structured can lead to success 🚀, which contrasts with the focus on self-discipline 🧘.  
 * **Best Fiction Book That Incorporates Related Ideas:** "[👨‍🚀🔴✨ The Martian](./the-martian.md)" by Andy Weir 🚀. This book showcases the power of determination and problem-solving under extreme pressure 🌍, emphasizing the importance of mental fortitude 💪.  
 * **Best More General Book:** [⚛️🔄 Atomic Habits](./atomic-habits.md) by James Clear. This book covers many of the same concepts, but with a more general approach to habit building 🧱.  
 * **Best More Specific Book:** [🌱🧘🏼‍♀️🏆 Mindset: The New Psychology of Success](./mindset.md) by Carol S. Dweck. This book focuses on the "growth mindset," a specific aspect of self-improvement that relates to willpower 📈.  
 * **Best More Rigorous Book:** "Self-Control in Action: Strategies for the Everyday Battle" by June Tangney, Roy Baumeister, and Angela Duckworth 🧑‍🎓. This book is more of an academic text, and goes into greater scientific detail 🔬.  
-* **Best More Accessible Book:** [🧘🏋️ The Willpower Instinct: How Self-Control Works, Why It Matters, and What You Can Do to Get More of It](./the-willpower-instinct.md) by Kelly McGonigal 🧘. This book is very easy to read, and applies willpower to everyday life 🌞.  
+* **Best More Accessible Book:** [🧘🏋️ The Willpower Instinct: How Self-Control Works, Why It Matters, and What You Can Do to Get More of It](books/the-willpower-instinct.md) by Kelly McGonigal 🧘. This book is very easy to read, and applies willpower to everyday life 🌞.  
   
 ## 📝🐒 Human Notes  
 - 🧠 Meaningful self regulation requires goals  

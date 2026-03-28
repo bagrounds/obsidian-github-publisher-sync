@@ -10,7 +10,7 @@ Channel: PBS NewsHour
 tags:
 youtube: https://youtu.be/EO_Bq-2j7eE
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md)  
 # 🇺🇸🗳️⚙️🤔 How the Trump administration is trying to change the way people vote  
 ![How the Trump administration is trying to change the way people vote](https://youtu.be/EO_Bq-2j7eE)  
   
@@ -52,7 +52,7 @@ youtube: https://youtu.be/EO_Bq-2j7eE
   
 * 📘 **Similar:** *The Myth of Voter Fraud* by Lorraine C. Minnite. 📝 This book examines the history and data surrounding claims of election fraud to show that the system is overwhelmingly secure and state-administered.  
 * 📙 **Contrasting:** *Who's Counting? How Fraudsters and Funders Control Elections* by Ken Blackwell and Ken Klukowski. 😡 This work presents arguments for widespread election system vulnerability and the necessity of stricter controls and external, potentially federal, oversight.  
-* 📗 **Creatively Related:** *[🇺🇸📜 The Federalist Papers](../books/the-federalist-papers.md)* by Alexander Hamilton, James Madison, and John Jay. 💡 Reading this provides the fundamental **Founding-era context** on the principle of **federalism**, the balance of power, and the founders' concern with preventing a "future despot" from seizing power, which directly relates to the decentralized election system structure.  
+* 📗 **Creatively Related:** *[🇺🇸📜 The Federalist Papers](/content/books/the-federalist-papers.md)* by Alexander Hamilton, James Madison, and John Jay. 💡 Reading this provides the fundamental **Founding-era context** on the principle of **federalism**, the balance of power, and the founders' concern with preventing a "future despot" from seizing power, which directly relates to the decentralized election system structure.  
   
 ## 🐦 Tweet  
 <blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">🇺🇸🗳️⚙️🤔 How the Trump administration is trying to change the way people vote<br><br>🗳️ Voter Registration Lists | 🖥️ Voting Machines | ✉️ Mail-in Ballots | 🏛️ Justice Department | 📜 Election Laws<a href="https://twitter.com/NewsHour?ref_src=twsrc%5Etfw">@NewsHour</a><a href="https://t.co/CmOEWPBd38">https://t.co/CmOEWPBd38</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/1971989328227348756?ref_src=twsrc%5Etfw">September 27, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

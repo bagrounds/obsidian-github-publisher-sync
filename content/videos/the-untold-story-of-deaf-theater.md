@@ -13,7 +13,7 @@ force_analyze_links: false
 link_analysis_time: 2026-03-27T23:11:52.027Z
 link_analysis_model: gemini-3.1-flash-lite-preview
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md)  
 # 🧏🎭📖 The Untold Story of Deaf Theater  
 ![The Untold Story of Deaf Theater](https://youtu.be/LTUgZ2J47vw)  
   

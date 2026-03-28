@@ -9,7 +9,7 @@ tags:
 affiliate link: https://www.amazon.com/dp/1787557928?tag=bagrounds-20
 updated: 2026-03-14T20:06:09.031Z
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🌲 Walden  
 [🛒 Walden. As an Amazon Associate I earn from qualifying purchases.](https://www.amazon.com/dp/1787557928?tag=bagrounds-20)  
   
@@ -49,17 +49,17 @@ A: 🤓 Read slowly and reflectively rather than rushing. The book rewards dippi
 ### 📖 Non-Fiction  
   
 * [🌲 Self-Reliance](books/self-reliance.md) by Ralph Waldo Emerson  
-* [🏍️ Zen and the Art of Motorcycle Maintenance](./zen-and-the-art-of-motorcycle-maintenance-an-inquiry-into-values.md) by Robert Pirsig  
+* [🏍️ Zen and the Art of Motorcycle Maintenance](/content/books/zen-and-the-art-of-motorcycle-maintenance-an-inquiry-into-values.md) by Robert Pirsig  
   
 ### ❤️ If You Loved This  
   
-* [✨ Essentialism](./essentialism-the-disciplined-pursuit-of-less.md) by Greg McKeown  
-* [📱 Digital Minimalism](./digital-minimalism-choosing-a-focused-life-in-a-noisy-world.md) by Cal Newport  
+* [✨ Essentialism](/content/books/essentialism-the-disciplined-pursuit-of-less.md) by Greg McKeown  
+* [📱 Digital Minimalism](/content/books/digital-minimalism-choosing-a-focused-life-in-a-noisy-world.md) by Cal Newport  
   
 ### ↔️ Similar But Different  
   
-* [🧬 Sapiens](./sapiens-a-brief-history-of-humankind.md) by Yuval Noah Harari - Broad historical perspective on human society vs. Thoreau's individual focus  
-* [🐢 Slow Productivity](./slow-productivity-the-lost-art-of-accomplishment-without-burnout.md) by Cal Newport - Modern application of Thoreauvian principles to work  
+* [🧬 Sapiens](/content/books/sapiens-a-brief-history-of-humankind.md) by Yuval Noah Harari - Broad historical perspective on human society vs. Thoreau's individual focus  
+* [🐢 Slow Productivity](/content/books/slow-productivity-the-lost-art-of-accomplishment-without-burnout.md) by Cal Newport - Modern application of Thoreauvian principles to work  
   
 ## 🫵 What Do You Think?  
   

@@ -8,7 +8,7 @@ Author:
 tags:
 affiliate link: https://www.amazon.com/dp/1684228417?tag=bagrounds-20
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 📢 Propaganda  
 [🛒 Propaganda. As an Amazon Associate I earn from qualifying purchases.](https://www.amazon.com/dp/1684228417?tag=bagrounds-20)  
   
@@ -47,8 +47,8 @@ A: 🤓 They complement each other perfectly: Orwell shows where propaganda lead
   
 ### 📖 Non-Fiction  
   
-* [🎭 Necessary Illusions](./necessary-illusions.md) by Noam Chomsky  
-* [🏭 Manufacturing Consent](./manufacturing-consent.md) by Chomsky and Herman  
+* [🎭 Necessary Illusions](/content/books/necessary-illusions.md) by Noam Chomsky  
+* [🏭 Manufacturing Consent](/content/books/manufacturing-consent.md) by Chomsky and Herman  
   
 ### ❤️ If You Loved This  
   
@@ -57,8 +57,8 @@ A: 🤓 They complement each other perfectly: Orwell shows where propaganda lead
   
 ### ↔️ Similar But Different  
   
-* [🤝 How to Win Friends and Influence People](./how-to-win-friends-and-influence-people.md) by Dale Carnegie - Interpersonal vs. mass persuasion  
-* [🧠 Influence](./influence.md) by Robert Cialdini - Psychological mechanisms rather than institutional techniques  
+* [🤝 How to Win Friends and Influence People](/content/books/how-to-win-friends-and-influence-people.md) by Dale Carnegie - Interpersonal vs. mass persuasion  
+* [🧠 Influence](/content/books/influence.md) by Robert Cialdini - Psychological mechanisms rather than institutional techniques  
   
 ## 🫵 What Do You Think?  
   

@@ -9,7 +9,7 @@ affiliate link: https://amzn.to/3Lam2Av
 tags:
   - AIEngineering
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🤖💻 Vibe Coding: Building Production-Grade Software With GenAI, Chat, Agents, and Beyond  
 [🛒 Vibe Coding: Building Production-Grade Software With GenAI, Chat, Agents, and Beyond. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3Lam2Av)  
   
@@ -71,19 +71,19 @@ tags:
   
 ## 📚 Book Recommendations  
 ### ➕ Similar  
-* [🐦‍🔥💻 The Phoenix Project](./the-phoenix-project.md) by Gene Kim, Kevin Behr, and George Spafford  
-* [🏎️💾 Accelerate: The Science of Lean Software and DevOps: Building and Scaling High Performing Technology Organizations](./accelerate.md) by Nicole Forsgren, Jez Humble, and Gene Kim  
-* [🧑‍🤝‍🧑⚙️➡️ Team Topologies: Organizing Business and Technology Teams for Fast Flow](./team-topologies-organizing-business-and-technology-teams-for-fast-flow.md) by Matthew Skelton and Manuel Pais  
+* [🐦‍🔥💻 The Phoenix Project](/content/books/the-phoenix-project.md) by Gene Kim, Kevin Behr, and George Spafford  
+* [🏎️💾 Accelerate: The Science of Lean Software and DevOps: Building and Scaling High Performing Technology Organizations](/content/books/accelerate.md) by Nicole Forsgren, Jez Humble, and Gene Kim  
+* [🧑‍🤝‍🧑⚙️➡️ Team Topologies: Organizing Business and Technology Teams for Fast Flow](/content/books/team-topologies-organizing-business-and-technology-teams-for-fast-flow.md) by Matthew Skelton and Manuel Pais  
   
 ### ➖ Contrasting  
-* [🧼💾 Clean Code: A Handbook of Agile Software Craftsmanship](./clean-code.md) by Robert C. Martin  
-* [✅💻 Code Complete](./code-complete.md) by Steve McConnell  
-* [🧱🛠️ Working Effectively with Legacy Code](./working-effectively-with-legacy-code.md) by Michael C. Feathers  
+* [🧼💾 Clean Code: A Handbook of Agile Software Craftsmanship](/content/books/clean-code.md) by Robert C. Martin  
+* [✅💻 Code Complete](/content/books/code-complete.md) by Steve McConnell  
+* [🧱🛠️ Working Effectively with Legacy Code](/content/books/working-effectively-with-legacy-code.md) by Michael C. Feathers  
   
 ### 🔗 Related  
-* [🧬👥💾 Life 3.0: Being Human in the Age of Artificial Intelligence](./life-3-0.md) by Max Tegmark  
-* [🤖⚠️📈 Superintelligence: Paths, Dangers, Strategies](./superintelligence-paths-dangers-strategies.md) by Nick Bostrom  
-* [🤖⚙️🔁 Designing Machine Learning Systems: An Iterative Process for Production-Ready Applications](./designing-machine-learning-systems-an-iterative-process-for-production-ready-applications.md) by Chip Huyen  
+* [🧬👥💾 Life 3.0: Being Human in the Age of Artificial Intelligence](/content/books/life-3-0.md) by Max Tegmark  
+* [🤖⚠️📈 Superintelligence: Paths, Dangers, Strategies](/content/books/superintelligence-paths-dangers-strategies.md) by Nick Bostrom  
+* [🤖⚙️🔁 Designing Machine Learning Systems: An Iterative Process for Production-Ready Applications](/content/books/designing-machine-learning-systems-an-iterative-process-for-production-ready-applications.md) by Chip Huyen  
   
 ## 🫵 What Do You Think?  
 🤔 How do you envision the developer's role evolving in an increasingly AI-driven software landscape? 🧐 What ethical considerations do you find most pressing when deploying AI-generated code to production?  

@@ -10,7 +10,7 @@ Channel: Alex Dekora
 tags:
 youtube: https://youtu.be/tKkd6Zsz9gA
 ---
-[Home](../index.md) > [Videos](./index.md) | [🤿💼 Deep Work: Rules for Focused Success in a Distracted World](../books/deep-work.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md) | [🤿💼 Deep Work: Rules for Focused Success in a Distracted World](/content/books/deep-work.md)  
 # 🎓🔑🧠🧘 MIT PhD taught me to unlock my brain’s “Sage Mode” - Deep Work (Full Summary)  
 ![MIT PhD taught me to unlock my brain’s “Sage Mode” - Deep Work (Full Summary)](https://youtu.be/tKkd6Zsz9gA)  
   
@@ -62,18 +62,18 @@ youtube: https://youtu.be/tKkd6Zsz9gA
   
 ### ↔️ Similar  
   
-* [⚛️🔄 Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones](../books/atomic-habits.md) by James Clear. This book offers a scientifically-backed framework for building productive habits and breaking destructive ones, which is essential for establishing a consistent deep work routine.  
-* [➖💯 Essentialism: The Disciplined Pursuit of Less](../books/essentialism-the-disciplined-pursuit-of-less.md) by Greg McKeown. This text advocates for focusing only on "the vital few" priorities and eliminating "the trivial many," mirroring the deep work principle of aggressively draining shallow tasks from your schedule.  
-* [🌊🧘🏼‍♀️🧠📈 Flow: The Psychology of Optimal Experience](../books/flow-the-psychology-of-optimal-experience.md) by Mihaly Csikszentmihalyi. This is the foundational text describing the psychological state of total absorption and enjoyment in an activity, which is the rewarding experience achieved through deep work.  
+* [⚛️🔄 Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones](/content/books/atomic-habits.md) by James Clear. This book offers a scientifically-backed framework for building productive habits and breaking destructive ones, which is essential for establishing a consistent deep work routine.  
+* [➖💯 Essentialism: The Disciplined Pursuit of Less](/content/books/essentialism-the-disciplined-pursuit-of-less.md) by Greg McKeown. This text advocates for focusing only on "the vital few" priorities and eliminating "the trivial many," mirroring the deep work principle of aggressively draining shallow tasks from your schedule.  
+* [🌊🧘🏼‍♀️🧠📈 Flow: The Psychology of Optimal Experience](/content/books/flow-the-psychology-of-optimal-experience.md) by Mihaly Csikszentmihalyi. This is the foundational text describing the psychological state of total absorption and enjoyment in an activity, which is the rewarding experience achieved through deep work.  
   
 ### 🆚 Contrasting  
   
 * 🤝 High Output Management by Andrew S Grove. This seminal book provides a framework for managing teams and processes in a way that often emphasizes effective communication, meetings, and delegation - activities that the deep work philosophy generally classifies as "shallow" but which are critical for organizational success.  
-* [🧘 Indistractable: How to Control Your Attention and Choose Your Life](../books/indistractable.md) by Nir Eyal. While sharing the goal of improving focus, this book argues that distraction stems from internal discomfort rather than external technology, offering a psychological approach to managing internal triggers for attention that complements Newport's external system approach.  
+* [🧘 Indistractable: How to Control Your Attention and Choose Your Life](/content/books/indistractable.md) by Nir Eyal. While sharing the goal of improving focus, this book argues that distraction stems from internal discomfort rather than external technology, offering a psychological approach to managing internal triggers for attention that complements Newport's external system approach.  
 * ⏳ Four Thousand Weeks by Oliver Burkeman. This book offers a philosophical perspective on time management, encouraging acceptance of human limits and finite time, which contrasts with the hyper-productivity drive of deep work by focusing on what should be abandoned rather than maximized.  
   
 ### 🎨 Creatively Related  
   
-* [❤️‍🔥💪 Grit: The Power of Passion and Perseverance](../books/grit-the-power-of-passion-and-perseverance.md) by Angela Duckworth. This research-backed work explores the power of passion and sustained perseverance for long-term goals, highlighting the non-cognitive skill necessary to *maintain* the disciplined effort required by deep work.  
-* [🤔🐇🐢 Thinking, Fast and Slow](../books/thinking-fast-and-slow.md) by Daniel Kahneman. This book explores the two systems that drive human thought, providing the cognitive science background for understanding the difference between the low-effort *System 1* shallow tasks and the high-effort *System 2* concentration required for deep work.  
+* [❤️‍🔥💪 Grit: The Power of Passion and Perseverance](/content/books/grit-the-power-of-passion-and-perseverance.md) by Angela Duckworth. This research-backed work explores the power of passion and sustained perseverance for long-term goals, highlighting the non-cognitive skill necessary to *maintain* the disciplined effort required by deep work.  
+* [🤔🐇🐢 Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md) by Daniel Kahneman. This book explores the two systems that drive human thought, providing the cognitive science background for understanding the difference between the low-effort *System 1* shallow tasks and the high-effort *System 2* concentration required for deep work.  
 * 🧗 The Inner Game of Tennis by W Timothy Gallwey. This classic text focuses on overcoming the mental barriers of self-interference to achieve peak performance, offering techniques for "relaxed concentration" directly applicable to achieving a consistent deep work state.

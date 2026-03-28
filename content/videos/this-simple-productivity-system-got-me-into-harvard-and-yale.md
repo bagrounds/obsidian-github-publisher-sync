@@ -10,7 +10,7 @@ Channel: SpoonFedStudy
 tags:
 youtube: https://youtu.be/_7vM5wEUz_s
 ---
-[Home](../index.md) > [Videos](./index.md) | [🥄👶📚 SpoonFedStudy](../topics/spoonfedstudy.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md) | [🥄👶📚 SpoonFedStudy](/content/topics/spoonfedstudy.md)  
 # ⚙️📈🎓🏆 This simple productivity system got me into Harvard and Yale  
 ![This simple productivity system got me into Harvard and Yale](https://youtu.be/_7vM5wEUz_s)  
   
@@ -26,8 +26,8 @@ youtube: https://youtu.be/_7vM5wEUz_s
 While the video presents a compelling and seemingly effective productivity system, it primarily focuses on the speaker's personal experience and anecdotal evidence. 💡 It would be beneficial to explore scientific research on productivity and time management to compare and contrast these methods with established psychological principles. 📚 Topics to explore for a better understanding include: the efficacy of high-intensity exercise on cognitive function, the psychological basis of procrastination, and various time management techniques beyond the Pareto Principle. 🧐 Additionally, considering different learning styles and work environments could provide a more comprehensive perspective on productivity.  
   
 ## 📚 Book Recommendations  
-* [🤿💼 Deep Work: Rules for Focused Success in a Distracted World](../books/deep-work.md) by Cal Newport: Explores the importance of focused, distraction-free work for producing high-quality results.  
-* [✅😌 Getting Things Done: The Art of Stress-Free Productivity](../books/getting-things-done-the-art-of-stress-free-productivity.md) by David Allen: Presents a comprehensive system for organizing tasks and managing workflow.  
-* [👤📈🎯🌟🔑🤝🏆 The 7 Habits of Highly Effective People](../books/the-7-habits-of-highly-effective-people.md) by Stephen Covey: Offers a holistic approach to personal and professional effectiveness, including principles of prioritization.  
-* [⚛️🔄 Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones](../books/atomic-habits.md) by James Clear: Provides practical strategies for building good habits and breaking bad ones, which can be applied to productivity.  
-* [❤️‍🔥💪 Grit: The Power of Passion and Perseverance](../books/grit-the-power-of-passion-and-perseverance.md) by Angela Duckworth: Examines the power of passion and perseverance in achieving long-term goals.
+* [🤿💼 Deep Work: Rules for Focused Success in a Distracted World](/content/books/deep-work.md) by Cal Newport: Explores the importance of focused, distraction-free work for producing high-quality results.  
+* [✅😌 Getting Things Done: The Art of Stress-Free Productivity](/content/books/getting-things-done-the-art-of-stress-free-productivity.md) by David Allen: Presents a comprehensive system for organizing tasks and managing workflow.  
+* [👤📈🎯🌟🔑🤝🏆 The 7 Habits of Highly Effective People](/content/books/the-7-habits-of-highly-effective-people.md) by Stephen Covey: Offers a holistic approach to personal and professional effectiveness, including principles of prioritization.  
+* [⚛️🔄 Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones](/content/books/atomic-habits.md) by James Clear: Provides practical strategies for building good habits and breaking bad ones, which can be applied to productivity.  
+* [❤️‍🔥💪 Grit: The Power of Passion and Perseverance](/content/books/grit-the-power-of-passion-and-perseverance.md) by Angela Duckworth: Examines the power of passion and perseverance in achieving long-term goals.

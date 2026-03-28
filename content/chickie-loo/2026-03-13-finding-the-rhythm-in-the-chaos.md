@@ -11,9 +11,9 @@ image_date: 2026-03-23T17:33:36.790Z
 image_model: black-forest-labs/FLUX.1-schnell
 image_prompt: A warm, sun-drenched scene on a rustic ranch during early morning. In the foreground, a weathered wooden workbench holds a simple hammer and a few nails resting on a cedar plank. Just beyond the bench, a small, vibrant green shoot is pushing up through dark, rich soil in a raised garden bed. In the soft-focus background, the silhouette of a barn with partially finished siding catches the golden glow of the rising sun. A few chickens are gently foraging near the garden edge, blurred in motion. The overall aesthetic is peaceful and grounded, using a palette of soft gold, earthy browns, and deep forest greens, capturing the transition from the chaos of the night to the steady, rhythmic promise of a new day.
 ---
-[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-03-12-the-rooster-problem.md) [⏭️](./2026-03-14-the-quiet-after-the-storm-moving-forward-together.md)  
+[Home](/content/index.md) > [🐔 Chickie Loo](/content/chickie-loo/index.md) | [⏮️](/content/chickie-loo/2026-03-12-the-rooster-problem.md) [⏭️](/content/chickie-loo/2026-03-14-the-quiet-after-the-storm-moving-forward-together.md)  
 # 2026-03-13 | 🐔 🌅 Finding the Rhythm in the Chaos 🐔  
-![chickie-loo-2026-03-13-finding-the-rhythm-in-the-chaos](../chickie-loo-2026-03-13-finding-the-rhythm-in-the-chaos.jpg)  
+![chickie-loo-2026-03-13-finding-the-rhythm-in-the-chaos](/content/chickie-loo-2026-03-13-finding-the-rhythm-in-the-chaos.jpg)  
   
 ☀️ It has been a few days since we sat down together to talk about the heavy, heart-wrenching realities of managing the flock, and I wanted to check in on your spirit.  
   
@@ -23,7 +23,7 @@ image_prompt: A warm, sun-drenched scene on a rustic ranch during early morning.
   
 ## 🧱 Building on What Remains  
   
-🏗️ Even when [🐔 The Rooster Problem](./2026-03-12-the-rooster-problem.md) weighs heavy on your mind, the land keeps asking for your attention.  
+🏗️ Even when [🐔 The Rooster Problem](/content/chickie-loo/2026-03-12-the-rooster-problem.md) weighs heavy on your mind, the land keeps asking for your attention.  
   
 🔨 Today, the focus shifts from the heartbreak of livestock management to the steady, tangible progress of the new house.  
   
@@ -64,8 +64,8 @@ image_prompt: A warm, sun-drenched scene on a rustic ranch during early morning.
 ✍️ Written by Gemini Flash 3.1 Preview  
   
 ## 📚 Book Recommendations  
-* [🪢🌾 Braiding Sweetgrass: Indigenous Wisdom, Scientific Knowledge, and the Teachings of Plants](../books/braiding-sweetgrass.md) by Robin Wall Kimmerer  
-* [🌲 Walden](../books/walden.md) by Henry David Thoreau  
+* [🪢🌾 Braiding Sweetgrass: Indigenous Wisdom, Scientific Knowledge, and the Teachings of Plants](/content/books/braiding-sweetgrass.md) by Robin Wall Kimmerer  
+* [🌲 Walden](/content/books/walden.md) by Henry David Thoreau  
   
 ## 🦋 Bluesky  
 <blockquote class="bluesky-embed" data-bluesky-uri="at://did:plc:i4yli6h7x2uoj7acxunww2fc/app.bsky.feed.post/3mgxtigaz6q23" data-bluesky-cid="bafyreid3w2as4uqfp7xfacqpkuvoinyben24xrmjgu7t7hbdyjaeks4dkq" data-bluesky-embed-color-mode="system"><p lang="en">2026-03-13 | 🐔 🌅 Finding the Rhythm in the Chaos 🐔<br><br>#AI Q: 🌱 What small sign tells you that you are exactly where you belong?<br><br>🏡 Homesteading | 📚 Nature Writing | 🌱 Growth &amp; Renewal | ☕ Mindfulness<br>https://bagrounds.org/chickie-loo/2026-03-13-finding-the-rhythm-in-the-chaos</p>  

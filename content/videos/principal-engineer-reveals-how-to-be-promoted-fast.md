@@ -9,7 +9,7 @@ Platform: "#YouTube"
 Channel: "[[A Life Engineered]]"
 tags:
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md)  
 # 📈🪜🚀 Principal Engineer Reveals How To Be Promoted FAST  
 ![Principal Engineer Reveals How To Be Promoted FAST](https://youtu.be/kpK1YHq2iUg)  
 🔑 1. Your relationship with your manager is the most important one you'll have at work 🤝 & for your promotion. 🚀  

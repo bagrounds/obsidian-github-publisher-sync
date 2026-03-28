@@ -7,7 +7,7 @@ share: true
 affiliate link: https://amzn.to/3ZcGwwJ
 updated: 2026-03-10T04:33:58.632Z
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🤔🧘 Meditations  
 [🛒 Meditations. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3ZcGwwJ)  
   
@@ -50,7 +50,7 @@ updated: 2026-03-10T04:33:58.632Z
   
 * 📖 **William B. Irvine - *A Guide to the Good Life: The Ancient Art of Stoic Joy*:** A highly recommended introduction that translates Stoic concepts for a modern audience, focusing on practical techniques for achieving tranquility.  
 * 🚧 **Ryan Holiday - *The Obstacle Is the Way: The Timeless Art of Turning Trials into Triumph*:** Uses Stoic principles to frame challenges as opportunities, drawing on historical examples. ✍️ Holiday has written several popular books applying Stoicism.  
-* 📅 **Ryan Holiday & Stephen Hanselman - [🧘🏼‍♀️📅 The Daily Stoic: 366 Meditations on Wisdom, Perseverance, and the Art of Living](books/the-daily-stoic-366-meditations-on-wisdom-perseverance-and-the-art-of-living.md):** Provides daily Stoic quotes and reflections for incorporating principles into everyday life.  
+* 📅 **Ryan Holiday & Stephen Hanselman - [🧘🏼‍♀️📅 The Daily Stoic: 366 Meditations on Wisdom, Perseverance, and the Art of Living](/content/books/the-daily-stoic-366-meditations-on-wisdom-perseverance-and-the-art-of-living.md):** Provides daily Stoic quotes and reflections for incorporating principles into everyday life.  
 * 🧬 **Massimo Pigliucci - *How to Be a Stoic: Using Ancient Philosophy to Live a Modern Life*:** An accessible guide by a philosopher and biologist, blending ancient wisdom with modern science.  
 * 👑 **Donald J. Robertson - *How to Think Like a Roman Emperor: The Stoic Philosophy of Marcus Aurelius*:** Interweaves the life story of Marcus Aurelius with Stoic practices and cognitive behavioral therapy (CBT) techniques.  
 * 🧠 **Pierre Hadot - *The Inner Citadel: The Meditations of Marcus Aurelius*:** A scholarly yet insightful analysis of *Meditations*, viewing it as a practical spiritual exercise guide. 🧐 Recommended for a deeper dive after reading the primary texts.  
@@ -59,19 +59,19 @@ updated: 2026-03-10T04:33:58.632Z
 ### 🆚 Contrasting Philosophical Perspectives  
   
 * 🧘 **Epicurus - *The Art of Happiness* (or collections of his letters/fragments):** Explore Epicureanism, another Hellenistic philosophy focused on happiness (*ataraxia* - freedom from disturbance), but achieved through moderate pleasure, friendship, and avoidance of pain, contrasting with Stoicism's emphasis on virtue and indifference to pleasure/pain.  
-* 🤔 **Albert Camus - *[🏔️ The Myth of Sisyphus](./the-myth-of-sisyphus.md)*:** An existentialist classic exploring absurdity and meaning in a godless universe, offering a different response to life's challenges than Stoic acceptance of fate.  
+* 🤔 **Albert Camus - *[🏔️ The Myth of Sisyphus](/content/books/the-myth-of-sisyphus.md)*:** An existentialist classic exploring absurdity and meaning in a godless universe, offering a different response to life's challenges than Stoic acceptance of fate.  
 * 😞 **Arthur Schopenhauer - *Essays and Aphorisms*:** Presents a pessimistic philosophy emphasizing the will-to-live as a source of suffering, contrasting sharply with Stoic rationalism but offering related insights on managing desire.  
 * 🏛️ **Plato - *Republic* or *Apology/Crito/Phaedo*:** Explore the Socratic roots of Stoicism and Plato's ideas about virtue, justice, and the ideal state/philosopher. 👑 The *Republic* details the concept of the "Philosopher King" embodied by Aurelius.  
   
 ### 🎨 Creatively Related Reads  
   
-* 🙏 **Viktor Frankl - *[🔦💡 Man's Search for Meaning](./mans-search-for-meaning.md)*:** A psychiatrist's account of his Holocaust survival and his logotherapy, emphasizing finding meaning even in extreme suffering, resonating with Stoic resilience.  
-* 💪 **Nassim Nicholas Taleb - *[Antifragile: Things That Gain from Disorder](books/antifragile-things-that-gain-from-disorder.md)*:** While not strictly philosophical, Taleb's concept of antifragility (thriving under stress/volatility) shares parallels with the Stoic idea of using obstacles as opportunities.  
-* 🌱 **James Clear - *[⚛️🔄 Atomic Habits](./atomic-habits.md)*:** A practical guide to building good habits and breaking bad ones, aligning with the Stoic emphasis on self-discipline and incremental progress.  
+* 🙏 **Viktor Frankl - *[🔦💡 Man's Search for Meaning](/content/books/mans-search-for-meaning.md)*:** A psychiatrist's account of his Holocaust survival and his logotherapy, emphasizing finding meaning even in extreme suffering, resonating with Stoic resilience.  
+* 💪 **Nassim Nicholas Taleb - *[Antifragile: Things That Gain from Disorder](/content/books/antifragile-things-that-gain-from-disorder.md)*:** While not strictly philosophical, Taleb's concept of antifragility (thriving under stress/volatility) shares parallels with the Stoic idea of using obstacles as opportunities.  
+* 🌱 **James Clear - *[⚛️🔄 Atomic Habits](/content/books/atomic-habits.md)*:** A practical guide to building good habits and breaking bad ones, aligning with the Stoic emphasis on self-discipline and incremental progress.  
 * 🌲 **Henry David Thoreau - *Walden*:** Explores themes of self-reliance, simple living, and living deliberately in nature, echoing some Stoic values but from a different, transcendentalist perspective.  
 * 🕉️ ***The Bhagavad Gita*:** An ancient Hindu scripture exploring duty (*dharma*), action, and detachment, showing fascinating parallels with Stoic thought on accepting one's role and acting without attachment to outcomes.  
   
-## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
+## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Meditations. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.  
   
 ## 🦋 Bluesky    

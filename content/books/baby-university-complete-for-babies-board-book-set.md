@@ -7,7 +7,7 @@ share: true
 CTA: 🧠 Grasp early concepts.
 affiliate link: https://amzn.to/3XWJlRj
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 👶📚 Baby University Complete for Babies Board Book Set  
 [🛒 Baby University Complete for Babies Board Book Set. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3XWJlRj)  
   
@@ -73,17 +73,17 @@ affiliate link: https://amzn.to/3XWJlRj
 * 👶 Baby Loves Science series by Ruth Spiro: Introduces scientific concepts with engaging illustrations and language, often cited as a strong alternative or complement.  
 * 👋 Hello, World! series by Jill McDonald: Offers colorful, simple introductions to various non-fiction topics for babies.  
 * 💯 My First 100 Science Words by Chris Ferrie: Another title by the same author, focusing on vocabulary.  
-* [⚛️👶 Quantum Physics for Babies](./quantum-physics-for-babies.md)  
-* [⚛️ℹ️👶 Quantum Information for Babies](./quantum-information-for-babies.md)  
+* [⚛️👶 Quantum Physics for Babies](/content/books/quantum-physics-for-babies.md)  
+* [⚛️ℹ️👶 Quantum Information for Babies](/content/books/quantum-information-for-babies.md)  
   
 ### ↔️ Contrasting  
 * 🐻 Brown Bear, Brown Bear, What Do You See? by Bill Martin Jr. and Eric Carle: A classic board book emphasizing rhythm, repetition, and color, focusing on language development and interactive reading rather than scientific concepts.  
 * 🐶 Where's Spot? by Eric Hill: An interactive lift-the-flap book that prioritizes cause-and-effect and simple storytelling.  
-* [🐛🍎 The Very Hungry Caterpillar](./the-very-hungry-caterpillar.md) by Eric Carle: Focuses on basic concepts like counting, days of the week, and life cycles through a narrative story.  
+* [🐛🍎 The Very Hungry Caterpillar](/content/books/the-very-hungry-caterpillar.md) by Eric Carle: Focuses on basic concepts like counting, days of the week, and life cycles through a narrative story.  
   
 ### ➕ Related  
-* [👶🧠😊📈📚 Brain Rules for Baby: How to Raise a Smart and Happy Child from Zero to Five](./brain-rules-for-baby.md) by John Medina: A science-based parenting book discussing brain development in young children.  
-* [👶🧠🔬 The Scientist in the Crib: Minds, Brains, And How Children Learn](./the-scientist-in-the-crib-minds-brains-and-how-children-learn.md) by Alison Gopnik, Andrew N. Meltzoff, and Patricia K. Kuhl: Explores how babies learn and develop cognitive abilities, arguing that they are little scientists.  
+* [👶🧠😊📈📚 Brain Rules for Baby: How to Raise a Smart and Happy Child from Zero to Five](/content/books/brain-rules-for-baby.md) by John Medina: A science-based parenting book discussing brain development in young children.  
+* [👶🧠🔬 The Scientist in the Crib: Minds, Brains, And How Children Learn](/content/books/the-scientist-in-the-crib-minds-brains-and-how-children-learn.md) by Alison Gopnik, Andrew N. Meltzoff, and Patricia K. Kuhl: Explores how babies learn and develop cognitive abilities, arguing that they are little scientists.  
 * 🌃 Goodnight Lab by Chris Ferrie: A narrative story within the scientific theme, offering a more traditional bedtime story feel.  
   
 ## 🫵 What Do You Think?  

@@ -10,12 +10,12 @@ Channel: PoliticalZane
 tags:
 youtube: https://youtu.be/cFca2mYb1wc
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md)  
 # 🇺🇸🛠️⏱️🏛️ How to Rebuild American Democracy in 20 Minutes  
 ![How to Rebuild American Democracy in 20 Minutes](https://youtu.be/cFca2mYb1wc)  
   
 ## 🤖 AI Summary  
-🏛️ Zane Gustafson, the author of [🏛️🗣️ Polemic for Democracy](../books/polemic-for-democracy.md) discusses the current state of the U.S. Constitution and proposes several reforms to improve American democracy \[[00:36](http://www.youtube.com/watch?v=cFca2mYb1wc&t=36)\].  
+🏛️ Zane Gustafson, the author of [🏛️🗣️ Polemic for Democracy](/content/books/polemic-for-democracy.md) discusses the current state of the U.S. Constitution and proposes several reforms to improve American democracy \[[00:36](http://www.youtube.com/watch?v=cFca2mYb1wc&t=36)\].  
   
 💔 The speaker argues that the current system is "broken" \[[00:36](http://www.youtube.com/watch?v=cFca2mYb1wc&t=36)\] and that 🏠 the House of Representatives, despite being the "people's house," has limited power compared to the 🏛️ Senate \[[00:47](http://www.youtube.com/watch?v=cFca2mYb1wc&t=47)\]. ⚖️ The Senate, in turn, only effectively checks the executive branch when controlled by a different party \[[01:32](http://www.youtube.com/watch?v=cFca2mYb1wc&t=92)\].  
   

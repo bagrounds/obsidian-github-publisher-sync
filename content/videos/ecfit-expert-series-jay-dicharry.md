@@ -10,7 +10,7 @@ Channel: ECFIT Performance Strength
 tags:
 youtube: https://youtu.be/R70ypbe_mJU
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md)  
 # 🏃‍♀️⚕️💪 ECFIT Expert Series - Jay Dicharry  
 ![ECFIT Expert Series - Jay Dicharry](https://youtu.be/R70ypbe_mJU)  
   
@@ -32,7 +32,7 @@ To gain a deeper understanding, one could explore topics such as:
 * 🏋️‍♀️ The **integration of strength training with running** and the specific exercises that best support running economy and injury prevention.  
   
 ## 📚 Book Recommendations  
-* [🏃‍♂️⛰️ Born to Run: A Hidden Tribe, Superathletes, and the Greatest Race the World Has Never Seen](../books/born-to-run-a-hidden-tribe-superathletes-and-the-greatest-race-the-world-has-never-seen.md) by Christopher McDougall: This book explores the endurance of the Tarahumara people in Mexico and advocates for a minimalist running style, which relates to the video's focus on foot strength and natural biomechanics.  
+* [🏃‍♂️⛰️ Born to Run: A Hidden Tribe, Superathletes, and the Greatest Race the World Has Never Seen](/content/books/born-to-run-a-hidden-tribe-superathletes-and-the-greatest-race-the-world-has-never-seen.md) by Christopher McDougall: This book explores the endurance of the Tarahumara people in Mexico and advocates for a minimalist running style, which relates to the video's focus on foot strength and natural biomechanics.  
 * Ready to Run by Kelly Starrett and T.J. Murphy: A practical guide for runners on how to improve mobility and stability to prevent injuries. This aligns with the video's emphasis on movement and control.  
-* [💪🧪 Good to Go: What the Athlete in All of Us Can Learn from the Strange Science of Recovery](../books/good-to-go-what-the-athlete-in-all-of-us-can-learn-from-the-strange-science-of-recovery.md) by Christie Aschwanden: A comprehensive look at the science and myths of athletic recovery, which offers a broader perspective on the video's point that rest isn't always the sole solution.  
-* [🏃‍♀️🦴 Anatomy for Runners: Unlocking Your Athletic Potential for Health, Speed, and Injury Prevention](../books/anatomy-for-runners-unlocking-your-athletic-potential-for-health-speed-and-injury-prevention.md) by Jay Dicharry: The author of the book is the physical therapist in the video, providing a more detailed and personal perspective on the topics discussed.
+* [💪🧪 Good to Go: What the Athlete in All of Us Can Learn from the Strange Science of Recovery](/content/books/good-to-go-what-the-athlete-in-all-of-us-can-learn-from-the-strange-science-of-recovery.md) by Christie Aschwanden: A comprehensive look at the science and myths of athletic recovery, which offers a broader perspective on the video's point that rest isn't always the sole solution.  
+* [🏃‍♀️🦴 Anatomy for Runners: Unlocking Your Athletic Potential for Health, Speed, and Injury Prevention](/content/books/anatomy-for-runners-unlocking-your-athletic-potential-for-health-speed-and-injury-prevention.md) by Jay Dicharry: The author of the book is the physical therapist in the video, providing a more detailed and personal perspective on the topics discussed.

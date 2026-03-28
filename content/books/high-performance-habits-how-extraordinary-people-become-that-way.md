@@ -7,7 +7,7 @@ share: true
 affiliate link: https://amzn.to/4gQB362
 CTA: 🚀 Cultivate excellence.
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 📈🌟 High Performance Habits: How Extraordinary People Become That Way  
 [🛒 High Performance Habits: How Extraordinary People Become That Way. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4gQB362)  
   
@@ -85,10 +85,10 @@ CTA: 🚀 Cultivate excellence.
 ### 📚 Book Recommendations  
   
 #### 📖 Similar Books (Habit Formation & Success)  
-* [⚛️🔄 Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones](./atomic-habits.md) by James Clear: Practical guide for building good habits, breaking bad ones. Focus on small changes.  
-* [❤️‍🔥💪 Grit: The Power of Passion and Perseverance](./grit-the-power-of-passion-and-perseverance.md) by Angela Duckworth: Explores passion and perseverance as keys to long-term success.  
-* [🔄🧠💪 The Power of Habit: Why We Do What We Do in Life and Business](./the-power-of-habit.md) by Charles Duhigg: Examines habit formation and change at personal, organizational, and societal levels.  
-* [👤📈🎯🌟🔑🤝🏆 The 7 Habits of Highly Effective People](./the-7-habits-of-highly-effective-people.md) by Stephen R. Covey: Principles-centered approach to personal and interpersonal effectiveness.  
+* [⚛️🔄 Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones](/content/books/atomic-habits.md) by James Clear: Practical guide for building good habits, breaking bad ones. Focus on small changes.  
+* [❤️‍🔥💪 Grit: The Power of Passion and Perseverance](/content/books/grit-the-power-of-passion-and-perseverance.md) by Angela Duckworth: Explores passion and perseverance as keys to long-term success.  
+* [🔄🧠💪 The Power of Habit: Why We Do What We Do in Life and Business](/content/books/the-power-of-habit.md) by Charles Duhigg: Examines habit formation and change at personal, organizational, and societal levels.  
+* [👤📈🎯🌟🔑🤝🏆 The 7 Habits of Highly Effective People](/content/books/the-7-habits-of-highly-effective-people.md) by Stephen R. Covey: Principles-centered approach to personal and interpersonal effectiveness.  
 * 📚 The Success Principles by Jack Canfield: Comprehensive guide to achieving personal and professional goals.  
 * 📚 No Excuses! The Power of Self-Discipline by Brian Tracy: Focuses on self-discipline for achieving goals.  
   
@@ -98,11 +98,11 @@ CTA: 🚀 Cultivate excellence.
 * 📚 Linchpin by Seth Godin: Focuses on becoming indispensable rather than just performing.  
   
 #### 💡 Creatively Related Books (Learning, Mindset & Productivity)  
-* [🚀🧠🏆 Ultralearning: Master Hard Skills, Outsmart the Competition, and Accelerate Your Career](./ultralearning-master-hard-skills-outsmart-the-competition-and-accelerate-your-career.md) by Scott H. Young: Strategies for mastering difficult skills quickly.  
-* [🧠🔒 Make It Stick: The Science of Successful Learning](./make-it-stick.md) by Peter C. Brown, Henry L. Roediger III & Mark A. McDaniel: Research-backed methods for effective learning and knowledge retention.  
-* [🌱🧘🏼‍♀️🏆 Mindset: The New Psychology of Success](./mindset.md) by Carol S. Dweck: Differentiates between fixed and growth mindsets and their impact on achievement.  
-* [🤿💼 Deep Work: Rules for Focused Success in a Distracted World](./deep-work.md) by Cal Newport: Cultivating intense focus and minimizing distractions for high-quality work.  
-* [✅😌 Getting Things Done: The Art of Stress-Free Productivity](./getting-things-done-the-art-of-stress-free-productivity.md) by David Allen: System for organizing tasks and managing commitments for stress-free productivity.  
+* [🚀🧠🏆 Ultralearning: Master Hard Skills, Outsmart the Competition, and Accelerate Your Career](/content/books/ultralearning-master-hard-skills-outsmart-the-competition-and-accelerate-your-career.md) by Scott H. Young: Strategies for mastering difficult skills quickly.  
+* [🧠🔒 Make It Stick: The Science of Successful Learning](/content/books/make-it-stick.md) by Peter C. Brown, Henry L. Roediger III & Mark A. McDaniel: Research-backed methods for effective learning and knowledge retention.  
+* [🌱🧘🏼‍♀️🏆 Mindset: The New Psychology of Success](/content/books/mindset.md) by Carol S. Dweck: Differentiates between fixed and growth mindsets and their impact on achievement.  
+* [🤿💼 Deep Work: Rules for Focused Success in a Distracted World](/content/books/deep-work.md) by Cal Newport: Cultivating intense focus and minimizing distractions for high-quality work.  
+* [✅😌 Getting Things Done: The Art of Stress-Free Productivity](/content/books/getting-things-done-the-art-of-stress-free-productivity.md) by David Allen: System for organizing tasks and managing commitments for stress-free productivity.  
 * 📚 HBR's 10 Must Reads on High Performance: Collection of articles on achieving high performance, managing self, and leadership.  
 * 📚 Hidden Genius by Polina Marinova Pompliano: Profiles extraordinary minds, offering actionable insights on habits, focus, and long-term thinking.  
   

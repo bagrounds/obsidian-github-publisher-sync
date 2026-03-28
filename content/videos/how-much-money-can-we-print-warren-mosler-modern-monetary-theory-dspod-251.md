@@ -11,7 +11,7 @@ tags:
   - MMT
 youtube: https://youtu.be/RC2oLB4Nsw8
 ---
-[Home](../index.md) > [Videos](./index.md) | [👨‍🏫📉💵 Warren Mosler](../people/warren-mosler.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md) | [👨‍🏫📉💵 Warren Mosler](/content/people/warren-mosler.md)  
 # 🖨️💰♾️ How Much Money Can We Print? - Warren Mosler, Modern Monetary Theory - DSPod #251  
 ![How Much Money Can We Print? - Warren Mosler, Modern Monetary Theory - DSPod #251](https://youtu.be/RC2oLB4Nsw8)  
   
@@ -35,13 +35,13 @@ youtube: https://youtu.be/RC2oLB4Nsw8
   
 ## 📚 Book Recommendations  
 ### ↔️ Similar  
-* [💰📉➡️📈🗳️ The Deficit Myth: Modern Monetary Theory and the Birth of the People's Economy](../books/the-deficit-myth.md) by Stephanie Kelton: A popular book by a leading MMT economist that details the core principles and policy implications.  
-* [💵🏛️📈 Soft Currency Economics II: The Origin of Modern Monetary Theory](../books/soft-currency-economics-ii-the-origin-of-modern-monetary-theory.md) by Warren Mosler: The original source material and evolution of the core ideas, written by the person featured in the video.  
+* [💰📉➡️📈🗳️ The Deficit Myth: Modern Monetary Theory and the Birth of the People's Economy](/content/books/the-deficit-myth.md) by Stephanie Kelton: A popular book by a leading MMT economist that details the core principles and policy implications.  
+* [💵🏛️📈 Soft Currency Economics II: The Origin of Modern Monetary Theory](/content/books/soft-currency-economics-ii-the-origin-of-modern-monetary-theory.md) by Warren Mosler: The original source material and evolution of the core ideas, written by the person featured in the video.  
   
 ### 🆚 Contrasting  
 * 🚧 The Road to Serfdom by F. A. Hayek: A classic of classical liberalism arguing against centralized economic planning, fundamentally contrasting MMT's expansive view of government fiscal power.  
 * 🧠 Principles of Economics by N. Gregory Mankiw: A leading mainstream textbook articulating traditional neoclassical views on deficits, monetary policy, and inflation, which directly opposes MMT's claims.  
   
 ### 🎨 Creatively Related  
-* [🏛️💰 Debt: The First 5,000 Years](../books/debt-the-first-5000-years.md) by David Graeber: Explores the historical context of debt, showing how money often originates as credit or tax liability, supporting MMT's foundational chartalist view.  
-* [🌍🏛️ The Great Transformation: The Political and Economic Origins of Our Time](../books/the-great-transformation-the-political-and-economic-origins-of-our-time.md) by Karl Polanyi: Analyzes the historical shift where markets and the nature of money became intertwined with state power, offering a broad perspective on these structural forces.
+* [🏛️💰 Debt: The First 5,000 Years](/content/books/debt-the-first-5000-years.md) by David Graeber: Explores the historical context of debt, showing how money often originates as credit or tax liability, supporting MMT's foundational chartalist view.  
+* [🌍🏛️ The Great Transformation: The Political and Economic Origins of Our Time](/content/books/the-great-transformation-the-political-and-economic-origins-of-our-time.md) by Karl Polanyi: Analyzes the historical shift where markets and the nature of money became intertwined with state power, offering a broad perspective on these structural forces.

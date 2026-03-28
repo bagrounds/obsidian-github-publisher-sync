@@ -10,7 +10,7 @@ Channel: Maternity & Midwifery Forum
 tags:
 youtube: https://youtu.be/wo6ehuRWOBY
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md)  
 # 🤰👩‍⚕️👶🍼⏰ 16.7 Professor Helen Ball midwifery hour  
 ![16.7 Professor Helen Ball #midwiferyhour](https://youtu.be/wo6ehuRWOBY)  
   
@@ -55,14 +55,14 @@ youtube: https://youtu.be/wo6ehuRWOBY
   
 ### ↔️ Similar  
   
-* [👶😴 How Babies Sleep: A Science-Based Guide to the First 365 Days and Nights](../books/how-babies-sleep-a-science-based-guide-to-the-first-365-days-and-nights.md) by Helen Ball  
+* [👶😴 How Babies Sleep: A Science-Based Guide to the First 365 Days and Nights](/content/books/how-babies-sleep-a-science-based-guide-to-the-first-365-days-and-nights.md) by Helen Ball  
 * Three in a Bed: The Benefits of Sharing Your Bed With Your Baby by Deborah Jackson. 📖 Discusses the 🏡 family bed experience, supporting co-sleeping by drawing on anthropological and historical perspectives.  
-* [😴🤱 Sweet Sleep: Nighttime and Naptime Strategies for the Breastfeeding Family](../books/sweet-sleep-nighttime-and-naptime-strategies-for-the-breastfeeding-family.md) by La Leche League International. 🌙 Provides practical, evidence-based strategies for optimizing sleep while maintaining 🍼 responsive breastfeeding practices.  
+* [😴🤱 Sweet Sleep: Nighttime and Naptime Strategies for the Breastfeeding Family](/content/books/sweet-sleep-nighttime-and-naptime-strategies-for-the-breastfeeding-family.md) by La Leche League International. 🌙 Provides practical, evidence-based strategies for optimizing sleep while maintaining 🍼 responsive breastfeeding practices.  
 * The Continuum Concept by Jean Liedloff. 🏞️ Explores the care of indigenous children, emphasizing 🫂 constant physical contact and immediate responsiveness to infant needs to foster secure emotional development.  
   
 ### 🆚 Contrasting  
   
-* [😴👶  Solve Your Child's Sleep Problems](../books/solve-your-childs-sleep-problems.md) by Richard Ferber. 😴 Presents the classic, structured graduated ⏳ extinction method of sleep training, which contrasts sharply with the video's responsive, contact-based philosophy.  
+* [😴👶  Solve Your Child's Sleep Problems](/content/books/solve-your-childs-sleep-problems.md) by Richard Ferber. 😴 Presents the classic, structured graduated ⏳ extinction method of sleep training, which contrasts sharply with the video's responsive, contact-based philosophy.  
 * The Sleepeasy Solution: The Exhausted Parent's Guide to Getting Your Child to Sleep from Birth to Age 5 by Jennifer Waldburger and Jill Spivack. ⏱️ Offers a prescriptive, step-by-step behavioral method for teaching 🛌 independent sleep, a perspective attachment-focused proponents tend to criticize.  
   
 ### 🎨 Creatively Related  

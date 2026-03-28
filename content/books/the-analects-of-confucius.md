@@ -7,7 +7,7 @@ share: true
 CTA: 🕊️ Be wise.
 affiliate link: https://amzn.to/4lMEw6H
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 👤💬 The Analects of Confucius  
 [🛒 The Analects of Confucius. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4lMEw6H)  
   
@@ -51,7 +51,7 @@ affiliate link: https://amzn.to/4lMEw6H
 * 🗣️ **Mencius**: 💬 This collection of dialogues and teachings by Mencius, a prominent follower of Confucius, expands upon Confucian ideals, particularly the inherent goodness of human nature and the moral responsibilities of rulers. 🏛️ It delves deeper into the political implications of Confucianism.  
 * 👨‍🏫 **Xunzi**: 🤔 Another major early Confucian thinker, Xunzi presented a contrasting view to Mencius, arguing that human nature is inherently bad and requires rigorous education and strict rituals to become good. 🌑 His work provides a more pragmatic and sometimes stark perspective on moral cultivation and governance.  
 * ☯️ **Tao Te Ching by Laozi**: 🏞️ While often seen as contrasting with Confucianism, the Tao Te Ching shares an ancient Chinese philosophical context and an aphoristic style. 🧘 It offers a path to harmony through effortless action (Wu Wei) and living in alignment with the natural flow of the Tao, appealing to those who appreciate the concise, profound wisdom of The Analects.  
-* 📜 **[🤔🧘 Meditations](./meditations.md) by Marcus Aurelius**: 🕰️ This work of Stoic philosophy shares The Analects' focus on personal virtue, self-discipline, ethical conduct, and the pursuit of inner tranquility in the face of life's challenges. 📝 It is structured as a series of personal reflections and maxims, similar in spirit to the practical wisdom found in The Analects.  
+* 📜 **[🤔🧘 Meditations](/content/books/meditations.md) by Marcus Aurelius**: 🕰️ This work of Stoic philosophy shares The Analects' focus on personal virtue, self-discipline, ethical conduct, and the pursuit of inner tranquility in the face of life's challenges. 📝 It is structured as a series of personal reflections and maxims, similar in spirit to the practical wisdom found in The Analects.  
   
 ### ➖ Contrasting Books  
   
@@ -62,10 +62,10 @@ affiliate link: https://amzn.to/4lMEw6H
   
 ### 🎨 Creatively Related Books  
   
-* **[📜🌍⏳ Sapiens: A Brief History of Humankind](./sapiens-a-brief-history-of-humankind.md) by Yuval Noah Harari**: ⏳ This book offers a broad historical and anthropological perspective on human societies, including the development of shared myths and structures that enable cooperation on a large scale. 🤝 This can provoke thought on how Confucian ideals, like Li and Ren, contributed to the social cohesion and stability of Chinese civilization.  
+* **[📜🌍⏳ Sapiens: A Brief History of Humankind](/content/books/sapiens-a-brief-history-of-humankind.md) by Yuval Noah Harari**: ⏳ This book offers a broad historical and anthropological perspective on human societies, including the development of shared myths and structures that enable cooperation on a large scale. 🤝 This can provoke thought on how Confucian ideals, like Li and Ren, contributed to the social cohesion and stability of Chinese civilization.  
 * 🧠 **Thinking Through Confucius by David L Hall and Roger T Ames**: 🤓 This academic work attempts to bridge Western philosophical thought with Confucianism, offering a sophisticated interpretation that highlights the unique contributions of Confucian philosophy to global discourse. 👓 It helps readers understand Confucianism through a comparative lens.  
 * 🏮 **The Story of the Stone or Dream of the Red Chamber by Cao Xueqin**: 🏡 This classic Chinese novel, one of the Four Great Classical Novels of Chinese literature, deeply embeds Confucian ideals of family, duty, and social hierarchy within its narrative. 📜 While fiction, it provides a rich cultural context and explores the human implications of living within a Confucian society.  
-* **[🤝🏛️ Team of Rivals: The Political Genius of Abraham Lincoln](./team-of-rivals-the-political-genius-of-abraham-lincoln.md) by Doris Kearns Goodwin**: 🤝 This historical account of Lincoln's cabinet during the American Civil War demonstrates principles of virtuous leadership, managing diverse personalities, and prioritizing the collective good over personal grievances, resonating with the Confucian emphasis on a ruler's moral conduct and the importance of wise advisors for societal harmony.  
+* **[🤝🏛️ Team of Rivals: The Political Genius of Abraham Lincoln](/content/books/team-of-rivals-the-political-genius-of-abraham-lincoln.md) by Doris Kearns Goodwin**: 🤝 This historical account of Lincoln's cabinet during the American Civil War demonstrates principles of virtuous leadership, managing diverse personalities, and prioritizing the collective good over personal grievances, resonating with the Confucian emphasis on a ruler's moral conduct and the importance of wise advisors for societal harmony.  
   
 ## 💬 [Gemini](https://gemini.google.com) Prompt (gemini-2.5-flash)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by similar, contrasting, and creatively related book recommendations on The Analects of Confucius. Never quote or italicize titles. Be thorough but concise. Use section headings and bulleted lists to avoid long blocks of text.

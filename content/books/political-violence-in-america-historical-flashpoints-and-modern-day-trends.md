@@ -6,7 +6,7 @@ URL: https://bagrounds.org/books/political-violence-in-america-historical-flashp
 share: true
 affiliate link: https://amzn.to/43Jdt6r
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🇺🇸💥 Political Violence in America: Historical Flashpoints and Modern-Day Trends  
 ## 📖 Book Report: 💥 Political Violence in America: 🗓️ Historical Flashpoints and 📈 Modern-Day Trends  
 [🛒 Political Violence in America: Historical Flashpoints and Modern-Day Trends. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/43Jdt6r)  
@@ -56,7 +56,7 @@ affiliate link: https://amzn.to/43Jdt6r
 * 📖 ***Modern American Extremism and Domestic Terrorism: An Encyclopedia of Extremists and Extremist Groups*** by 🧑‍💼 Barry J. Balleck. 📜 This encyclopedia focuses specifically on individuals and groups involved in extremist behavior and domestic terrorism in the 🇺🇸 U.S., particularly highlighting the resurgence of such groups since 🗓️ 2008.  
 * 📖 ***Radical American Partisanship: Mapping Violent Hostility, Its Causes, and the Consequences for Democracy*** by 🧑‍💼 Nathan P. Kalmoe and 🧑‍💼 Lilliana Mason. 🤔 This book examines the rise of radical partisanship and its links to violent hostility among ordinary 🇺🇸 Americans, analyzing the risk it poses to 🏛️ democracy.  
 * 📖 ***Bringing the War Home: The White Power Movement and Paramilitary America*** by 🧑‍💼 Kathleen Belew. 📜 This book explores the history of the white power movement in the 🇺🇸 U.S., tracing its origins and connections to paramilitary violence.  
-* **[🇺🇸⚠️ Harbingers: What January 6 and Charlottesville Reveal About Rising Threats to American Democracy](./harbingers-what-january-6-and-charlottesville-reveal-about-rising-threats-to-american-democracy.md)** by 🧑‍💼 Tim Heaphy. ✍️ Written by a lead investigator into the January 6th attack and the Charlottesville riot, this book offers a view on these recent flashpoints and their implications for 🇺🇸 American democracy.  
+* **[🇺🇸⚠️ Harbingers: What January 6 and Charlottesville Reveal About Rising Threats to American Democracy](/content/books/harbingers-what-january-6-and-charlottesville-reveal-about-rising-threats-to-american-democracy.md)** by 🧑‍💼 Tim Heaphy. ✍️ Written by a lead investigator into the January 6th attack and the Charlottesville riot, this book offers a view on these recent flashpoints and their implications for 🇺🇸 American democracy.  
   
 ### 🆚 Contrasting Books (Different Geographies, Types of Violence, or Approaches)  
   
@@ -72,7 +72,7 @@ affiliate link: https://amzn.to/43Jdt6r
 * 📖 ***The Crowd: A Study of the Popular Mind*** by 🧑‍💼 Gustave Le Bon. A classic work of social psychology, this book analyzes the behavior of crowds and how individuals can be influenced within a group setting, offering insights into the dynamics of mob behavior seen in instances of political violence like riots or insurrections.  
 * 📖 ***The Anatomy of Human Destructiveness*** by 🧑‍💼 Erich Fromm. 🤔 This extensive work explores the nature of human aggression and violence from a psychological and philosophical perspective, providing a deep dive into the roots of destructive behavior that can manifest politically.  
 * 📖 ***Collapse: How Societies Choose to Fail or Succeed*** by 🧑‍💼 Jared Diamond. By examining the factors that have led to the collapse of various societies throughout history, this book provides a broader context for understanding how societal stress, including conflict and violence, can contribute to instability and breakdown.  
-* 📖 **[📜🌍⏳ Sapiens: A Brief History of Humankind](./sapiens-a-brief-history-of-humankind.md)** by 🧑‍💼 Yuval Noah Harari. This sweeping history of humanity touches on the role of cooperation and conflict in the development of human societies, offering a very long-term perspective on the presence and impact of violence in the human story.  
+* 📖 **[📜🌍⏳ Sapiens: A Brief History of Humankind](/content/books/sapiens-a-brief-history-of-humankind.md)** by 🧑‍💼 Yuval Noah Harari. This sweeping history of humanity touches on the role of cooperation and conflict in the development of human societies, offering a very long-term perspective on the presence and impact of violence in the human story.  
   
-## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
+## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Political Violence in America: Historical Flashpoints and Modern-Day Trends. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

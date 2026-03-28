@@ -9,7 +9,7 @@ Platform:
 Channel: PBS NewsHour
 tags:
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md)  
 # 👨‍💼🛑💰🗣️ Brooks and Capehart on the political reaction to Trump's tariffs  
 ![Brooks and Capehart on the political reaction to Trump's tariffs](https://youtu.be/sZMiuugYCjw)  
   

@@ -1,20 +1,10 @@
 ---
+title: 2026-03-23 | 🔗 Multi-Provider Image Generation — Fallback Chains for Resilient AI Art
 share: true
 date: 2026-03-23
-aliases:
-  - 2026-03-23 | 🔗 Multi-Provider Image Generation
-title: 🔗 Multi-Provider Image Generation
-URL: https://bagrounds.org/ai-blog/2026-03-23-multi-provider-image-generation
-image_date: 2026-03-23T17:30:31.190Z
-image_model: black-forest-labs/FLUX.1-schnell
-image_prompt: A stylized, isometric illustration of a digital relay race. Three glowing, translucent geometric nodes (representing AI providers) are connected by a shimmering, golden data-stream chain. The first node is a soft, pulsating blue, partially dimmed to represent a depleted quota. A bright, fluid arc of energy seamlessly bypasses this node, jumping to the second node, which is vibrant and glowing intensely in warm orange. The background is a clean, dark-mode gradient with subtle, glowing grid lines suggesting a technical infrastructure. The composition emphasizes seamless continuity and resilience, with the energy chain moving smoothly across the nodes, symbolizing an automated, uninterrupted workflow despite a failing component.
-updated: 2026-03-24T06:33:04.554Z
 ---
   
-[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-23-daily-reflection-auto-update.md) [⏭️](./2026-03-23-systems-for-public-good.md)  
-  
-# 🔗 Multi-Provider Image Generation  
-![ai-blog-2026-03-23-multi-provider-image-generation](../ai-blog-2026-03-23-multi-provider-image-generation.jpg)  
+# 2026-03-23 | 🔗 Multi-Provider Image Generation — Fallback Chains for Resilient AI Art  
   
 ## 🎯 The Problem  
   
@@ -45,7 +35,7 @@ updated: 2026-03-24T06:33:04.554Z
 ☁️ Cloudflare → 🤗 Hugging Face → 🤖 Gemini  
 ```  
   
-🔄 When a provider exhausts its quota (HTTP 429 or daily limit), the system automatically switches to the next provider and retries the same image. ➡️ Once switched, all remaining candidates use the new provider.  
+🔄 When a provider exhausts its quota (HTTP 429 or daily limit) or becomes unavailable (HTTP 410, 401, 403), the system automatically switches to the next provider and retries the same image. ➡️ Once switched, all remaining candidates use the new provider.  
   
 ### 📊 New Types and Functions  
   
@@ -63,7 +53,7 @@ interface ImageProviderConfig {
   
 🔧 A new `resolveImageProviders(env)` function returns all configured providers as an ordered array, while the original `resolveImageProvider(env)` returns just the first one (backward compatible).  
   
-🤗 A new `generateWithHuggingFace` function handles the Hugging Face Inference API's unique response format — binary image data instead of base64 JSON.  
+🤗 A new `generateWithHuggingFace` function handles the Hugging Face Inference API via `https://router.huggingface.co/hf-inference/models/` — returning binary image data instead of base64 JSON.  
   
 ### 🔄 Backfill Fallback Logic  
   
@@ -79,9 +69,30 @@ interface BackfillConfig {
 🎯 The fallback behavior during batch backfill:  
   
 1. 🔄 Try the primary provider  
-2. 🛑 On quota exhaustion → emit `provider_switch` event → try next provider  
+2. 🛑 On quota exhaustion OR provider unavailable → emit `provider_switch` event → try next provider  
 3. 🔁 Retry the same candidate with the new provider  
 4. ❌ Only stop when ALL providers are exhausted  
+  
+### 🛡️ Provider Unavailable Detection  
+  
+🆕 A new `isProviderUnavailableError` classifier detects permanent provider failures:  
+  
+- 🚫 HTTP 410 (Gone) — API endpoint deprecated or moved  
+- 🔒 HTTP 401 (Unauthorized) — invalid or expired credentials  
+- ⛔ HTTP 403 (Forbidden) — access denied  
+- 📝 Messages containing "no longer supported" or "deprecated"  
+  
+🎯 Unlike quota errors (which trigger retries first), unavailable errors immediately switch to the next provider — no wasted retries against a permanently broken endpoint.  
+  
+### 🔬 5 Whys: The HuggingFace 410 Bug  
+  
+1. ❓ **Why 410 errors?** — HuggingFace deprecated `api-inference.huggingface.co` in favor of `router.huggingface.co`  
+2. ❓ **Why wrong URL?** — `generateWithHuggingFace` hardcoded the old URL  
+3. ❓ **Why did the system keep trying?** — 410 errors fell through to the generic error handler, which logged them but continued to the next candidate with the same broken provider  
+4. ❓ **Why no provider switch?** — Only quota errors triggered provider switching  
+5. ❓ **Why no "provider broken" category?** — The original design only anticipated transient rate limits, not permanent provider failures  
+  
+✅ **Fix**: Updated URL + added `isProviderUnavailableError` to immediately switch providers on permanent failures.  
   
 ## 🤗 Setting Up Hugging Face  
   
@@ -97,7 +108,7 @@ interface BackfillConfig {
   
 ## 🧪 Testing  
   
-✅ 19 new tests cover the provider chain:  
+✅ 31 new tests cover the provider chain and unavailable handling:  
   
 | 📋 Test | 🎯 What It Verifies |  
 |---|---|  
@@ -108,13 +119,17 @@ interface BackfillConfig {
 | 🔙 Backward compatible | ✅ Works identically without fallbackProviders |  
 | 🔗 Multi-provider chain | ✅ Chains through 3+ providers correctly |  
 | 📊 Progress events | ✅ Provider name included in all events |  
+| 🚫 410 Gone switch | ✅ Immediately switches provider, no retries |  
+| 🔒 401 Unauthorized switch | ✅ Bad credentials trigger provider switch |  
+| 🔁 No retry on unavailable | ✅ Broken provider called exactly once |  
+| 💀 All providers unavailable | ✅ Stops gracefully when none work |  
   
-📈 Total: 199 tests across 40 suites, all passing.  
+📈 Total: 211 tests across 42 suites, all passing. 958 total across all suites.  
   
 ## 🎯 The Result  
   
-🔋 Before: Cloudflare quota exhaustion = job stops, posts wait until tomorrow.  
+🔋 Before: Cloudflare quota exhaustion = job stops. Provider API deprecation = infinite loop of identical errors.  
   
-🚀 After: Cloudflare quota exhaustion = seamless switch to Hugging Face = more images generated per run.  
+🚀 After: Quota exhaustion = seamless switch to next provider. Provider deprecation = immediate switch, no wasted retries.  
   
-🏗️ The provider chain architecture is designed for easy extension — adding a third or fourth provider requires only implementing a generator function and adding a block to `resolveImageProviders`.  
+🏗️ The provider chain architecture is designed for easy extension — adding a new provider requires only implementing a generator function and adding a block to `resolveImageProviders`.  

@@ -10,7 +10,7 @@ Channel: PBS NewsHour
 tags:
 youtube: https://youtu.be/nePEyq1frzY
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md)  
 # 📺🪖🇺🇸 WATCH: Hegseth's full remarks on new military directives ending 'politically correct' leadership  
 ![WATCH: Hegseth's full remarks on new military directives ending 'politically correct' leadership](https://youtu.be/nePEyq1frzY)  
   
@@ -50,9 +50,9 @@ youtube: https://youtu.be/nePEyq1frzY
 * **The Unforgiving Minute: A Soldier's Education** by Craig Mullaney: 🧭 Offers a narrative of rigorous military training and the demanding nature of combat leadership, championing the kind of high-stakes, meritocratic environment the speech advocates for.  
   
 ### Contrasting Perspectives  
-* **[⚠️🥴🕹️🌐 The Fifth Risk](../books/the-fifth-risk.md)** by Michael Lewis: 🏢 Focuses on the quiet competence and importance of government bureaucracy, offering a counterpoint to the political rhetoric that frames the established Department of Defense culture as "debris" and "garbage."  
+* **[⚠️🥴🕹️🌐 The Fifth Risk](/content/books/the-fifth-risk.md)** by Michael Lewis: 🏢 Focuses on the quiet competence and importance of government bureaucracy, offering a counterpoint to the political rhetoric that frames the established Department of Defense culture as "debris" and "garbage."  
 * **The Meritocracy Trap** by Daniel Markovits: 💡 Critiques the modern concept of "meritocracy," arguing that it entrenches privilege and inequality, which offers a contrasting view on simply advocating for "merit only" without addressing systemic barriers.  
   
 ### Creatively Related  
 * **The Killer Angels** by Michael Shaara: ⚔️ A historical novel about the Battle of Gettysburg that explores the brutal reality of war and the intense bond between soldiers, highlighting the "warrior ethos" and the life-or-death nature of military service.  
-* **[🤝🏛️ Team of Rivals: The Political Genius of Abraham Lincoln](../books/team-of-rivals-the-political-genius-of-abraham-lincoln.md)** by Doris Kearns Goodwin: 🧠 Illustrates a leadership model where a commander-in-chief intentionally surrounds himself with diverse, strong-willed, and even rivalrous cabinet members, contrasting with the philosophy of firing officers who "benefited from" the previous culture.
+* **[🤝🏛️ Team of Rivals: The Political Genius of Abraham Lincoln](/content/books/team-of-rivals-the-political-genius-of-abraham-lincoln.md)** by Doris Kearns Goodwin: 🧠 Illustrates a leadership model where a commander-in-chief intentionally surrounds himself with diverse, strong-willed, and even rivalrous cabinet members, contrasting with the philosophy of firing officers who "benefited from" the previous culture.

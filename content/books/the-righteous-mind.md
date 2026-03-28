@@ -13,7 +13,7 @@ force_analyze_links: false
 link_analysis_time: 2026-03-22T23:33:10.064Z
 link_analysis_model: gemini-3.1-flash-lite-preview
 ---
-[Home](../index.md) > [Books](./index.md) | [🧠🤝🐘 Jonathan Haidt](../people/jonathan-haidt.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md) | [🧠🤝🐘 Jonathan Haidt](/content/people/jonathan-haidt.md)  
 # 😇🧠 The Righteous Mind: Why Good People Are Divided by Politics and Religion  
 [🛒 The Righteous Mind: Why Good People Are Divided by Politics and Religion. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3ZIy2gS)  
   
@@ -63,12 +63,12 @@ link_analysis_model: gemini-3.1-flash-lite-preview
     - 😇 Conservative: protect sacred institutions to elevate pro social behavior  
   
 ### 📚 Books Mentioned  
-- [🤔🧩⚖️ Patterns, Thinking, and Cognition: A Theory of Judgment](./patterns-thinking-and-cognition-a-theory-of-judgment.md)  
-- [🔮🤷🏼‍♀️🤪 Predictably Irrational: The Hidden Forces That Shape Our Decisions](./predictably-irrational.md)  
-- [👤💬 The Analects of Confucius](./the-analects-of-confucius.md)  
-- [👤🧬 The Selfish Gene](./the-selfish-gene.md)  
-- [🎳🏘️📉📈 Bowling Alone: The Collapse and Revival of American Community](./bowling-alone.md)  
-- [😀📜 The Happiness Hypothesis: Finding Modern Truth in Ancient Wisdom](./the-happiness-hypothesis-finding-modern-truth-in-ancient-wisdom.md)  
+- [🤔🧩⚖️ Patterns, Thinking, and Cognition: A Theory of Judgment](/content/books/patterns-thinking-and-cognition-a-theory-of-judgment.md)  
+- [🔮🤷🏼‍♀️🤪 Predictably Irrational: The Hidden Forces That Shape Our Decisions](/content/books/predictably-irrational.md)  
+- [👤💬 The Analects of Confucius](/content/books/the-analects-of-confucius.md)  
+- [👤🧬 The Selfish Gene](/content/books/the-selfish-gene.md)  
+- [🎳🏘️📉📈 Bowling Alone: The Collapse and Revival of American Community](/content/books/bowling-alone.md)  
+- [😀📜 The Happiness Hypothesis: Finding Modern Truth in Ancient Wisdom](/content/books/the-happiness-hypothesis-finding-modern-truth-in-ancient-wisdom.md)  
   
 ### 🔗 Links  
 - 🧭 [YourMorals.org](https://yourmorals.org)  
@@ -82,7 +82,7 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 ⚖️ Jonathan Haidt's "The Righteous Mind" ⚖️ delves into the 🧠 psychological origins of morality 🤔 and its role in ➡️ political 🏛️ and religious 🙏 divisions. He argues that 🗣️ moral 😇 reasoning is often ⏰ post-hoc rationalization of pre-existing moral 🤔 intuitions, rather than a purely logical 💡 process.  
   
 #### **📚 Topics and Methods:**  
-* **[❤️‍🩹⚖️🤝👑😇🗽 Moral Foundations Theory](../topics/moral-foundations-theory.md):** 👨‍🏫 Haidt proposes six (originally five) foundational moral values:  
+* **[❤️‍🩹⚖️🤝👑😇🗽 Moral Foundations Theory](/content/topics/moral-foundations-theory.md):** 👨‍🏫 Haidt proposes six (originally five) foundational moral values:  
     * 🩹 Care/Harm  
     * ⚖️ Fairness/Cheating  
     * 🤝 Loyalty/Betrayal  
@@ -115,11 +115,11 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 * 🧘 **Self Awareness:** 🤔 Understand your own moral foundations, 🧱 and how they influence 💫 your judgement. ⚖️  
   
 ### Book Recommendations 📚  
-* **Best Alternate Book on the Same Topic:** [🤔🐇🐢 Thinking, Fast and Slow](./thinking-fast-and-slow.md) by Daniel Kahneman 🧠: Provides a broader understanding of cognitive biases and decision-making, which complements Haidt's work on moral intuition.  
-* **Best Tangentially Related Book:** [📜🌍⏳ Sapiens: A Brief History of Humankind](./sapiens-a-brief-history-of-humankind.md) by Yuval Noah Harari 🌍: Explores the evolutionary and cultural forces that have shaped human societies, providing a broader context for understanding morality and groupishness.  
-* **Best Diametrically Opposed Book:** [💡🔬🧑‍🤝‍🧑📈 Enlightenment Now: The Case for Reason, Science, Humanism, and Progress](./enlightenment-now-the-case-for-reason-science-humanism-and-progress.md) by Steven Pinker 💡: While not directly opposed, Pinker emphasizes the power of reason and progress, which contrasts with Haidt's focus on the role of intuition and groupishness.  
-* **Best Fiction Book with Related Ideas:** [👦🏝️🐷 Lord of the Flies](./lord-of-the-flies.md) by William Golding 🏝️: Explores the darker side of human nature and the breakdown of social order, reflecting themes of groupishness and moral foundations.  
-* **Random Book Everyone Should Read:** [👍🦮🌌 The Hitchhiker's Guide to the Galaxy](./the-hitchhikers-guide-to-the-galaxy.md) by Douglas Adams 🌌: A humorous and thought-provoking exploration of the universe, reminding us of the absurdity and wonder of existence.  
+* **Best Alternate Book on the Same Topic:** [🤔🐇🐢 Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md) by Daniel Kahneman 🧠: Provides a broader understanding of cognitive biases and decision-making, which complements Haidt's work on moral intuition.  
+* **Best Tangentially Related Book:** [📜🌍⏳ Sapiens: A Brief History of Humankind](/content/books/sapiens-a-brief-history-of-humankind.md) by Yuval Noah Harari 🌍: Explores the evolutionary and cultural forces that have shaped human societies, providing a broader context for understanding morality and groupishness.  
+* **Best Diametrically Opposed Book:** [💡🔬🧑‍🤝‍🧑📈 Enlightenment Now: The Case for Reason, Science, Humanism, and Progress](/content/books/enlightenment-now-the-case-for-reason-science-humanism-and-progress.md) by Steven Pinker 💡: While not directly opposed, Pinker emphasizes the power of reason and progress, which contrasts with Haidt's focus on the role of intuition and groupishness.  
+* **Best Fiction Book with Related Ideas:** [👦🏝️🐷 Lord of the Flies](/content/books/lord-of-the-flies.md) by William Golding 🏝️: Explores the darker side of human nature and the breakdown of social order, reflecting themes of groupishness and moral foundations.  
+* **Random Book Everyone Should Read:** [👍🦮🌌 The Hitchhiker's Guide to the Galaxy](/content/books/the-hitchhikers-guide-to-the-galaxy.md) by Douglas Adams 🌌: A humorous and thought-provoking exploration of the universe, reminding us of the absurdity and wonder of existence.  
   
 ## 💬 [Gemini](https://gemini.google.com) Prompt  
 > Summarize the book: The Righteous Mind: Why Good People Are Divided by Politics and Religion. Start the summary with a TLDR - a single statement that conveys a maximum of the useful information provided in the book. Follow this with a deep dive. Catalogue the topics, methods, and research discussed. Be sure to highlight any significant theories, theses, or mental models proposed. Provide a critical analysis of the quality of the information presented, using scientific backing, author credentials, authoritative reviews, and other markers of high quality information as justification. Emphasize practical takeaways. Make the following additional book recommendations: the best alternate book on the same topic, the best book that is tangentially related, the best book that is diametrically opposed, the best fiction book that incorporates related ideas, and a random book that everyone should read. Format your response as markdown, starting at heading level H4, with inline links, for easy copy paste. Use meaningful emojis liberally to enhance readability, especially in headings and as bullets for lists.  

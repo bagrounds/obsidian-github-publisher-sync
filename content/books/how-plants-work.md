@@ -8,7 +8,7 @@ Author:
 tags:
 affiliate link: https://amzn.to/3HAzxYa
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🌿🔬 How Plants Work: The Science Behind the Amazing Things Plants Do  
 [🛒 How Plants Work: The Science Behind the Amazing Things Plants Do. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3HAzxYa)  
   
@@ -54,21 +54,21 @@ This book is ideal for:
   
 ### 🪴 Similar Reads (Applied Plant Science for Gardeners/Enthusiasts)  
   
-* **[🌿🧑‍🌾 Botany for Gardeners](./botany-for-gardeners.md)** by Brian Capon: A classic and highly recommended text that offers a comprehensive introduction to plant science specifically tailored for gardeners, covering plant structure, growth, reproduction, and environmental interactions.  
+* **[🌿🧑‍🌾 Botany for Gardeners](/content/books/botany-for-gardeners.md)** by Brian Capon: A classic and highly recommended text that offers a comprehensive introduction to plant science specifically tailored for gardeners, covering plant structure, growth, reproduction, and environmental interactions.  
 * 🌱 **Plant Science for Gardeners: Essentials for Growing Better Plants** by Robert Pavlis: Focuses on understanding basic plant biology (roots, stems, leaves, flowers, nutrients) to enable gardeners to problem-solve and make better decisions for plant health. 🚫 Also busts gardening myths.  
 * 🦠 **Teeming with Microbes / Teeming with Nutrients / Teeming with Fungi** by Jeff Lowenfels & Wayne Lewis: This series dives deep into the science of soil biology and plant nutrition, explaining the crucial relationships between plants and the microscopic life in the soil.  
-* 📰 **[ℹ️🌱 The Informed Gardener](./the-informed-gardener.md)** & **[ℹ️🌻 The Informed Gardener Blooms Again](./the-informed-gardener-blooms-again.md)** by Linda Chalker-Scott: These books compile Chalker-Scott's myth-busting columns, offering concise, science-based evaluations of common gardening practices, products, and advice.  
+* 📰 **[ℹ️🌱 The Informed Gardener](/content/books/the-informed-gardener.md)** & **[ℹ️🌻 The Informed Gardener Blooms Again](/content/books/the-informed-gardener-blooms-again.md)** by Linda Chalker-Scott: These books compile Chalker-Scott's myth-busting columns, offering concise, science-based evaluations of common gardening practices, products, and advice.  
   
 ### ⚖️ Contrasting Perspectives  
   
-* **[📚🌿🔬 Encyclopedia of Applied Plant Sciences](./encyclopedia-of-applied-plant-sciences.md)**: A comprehensive academic reference covering foundational and applied plant science, including crop science, biotechnology, plant development, and responses to environmental stress. 🔬 Much more technical and broader than "🪴 How Plants Work".  
+* **[📚🌿🔬 Encyclopedia of Applied Plant Sciences](/content/books/encyclopedia-of-applied-plant-sciences.md)**: A comprehensive academic reference covering foundational and applied plant science, including crop science, biotechnology, plant development, and responses to environmental stress. 🔬 Much more technical and broader than "🪴 How Plants Work".  
 * 📈 **Applied Plant Science Experimental Design and Statistical Analysis using SAS® OnDemand for Academics**: Focuses specifically on the statistical methods used in plant science research, representing a highly technical and specialized contrast.  
 * 🌱 **Rodale's Basic Organic Gardening** by Deborah L. Martin: A practical "how-to" guide focused on organic gardening techniques, rather than the deep scientific explanations found in Chalker-Scott's book.  
 * 🍅 **The Vegetable Gardener's Bible** by Edward C. Smith: Another highly practical guide focused on techniques for successful vegetable gardening (e.g., wide rows, soil improvement), emphasizing methods over detailed plant physiology.  
   
 ### 🎨 Creatively Related  
   
-* **[🪢🌾 Braiding Sweetgrass: Indigenous Wisdom, Scientific Knowledge, and the Teachings of Plants](./braiding-sweetgrass.md)** by Robin Wall Kimmerer: Blends botany with indigenous perspectives, exploring plants through cultural stories, personal reflection, and ecological consciousness. 🌎 Offers a more holistic and philosophical view.  
+* **[🪢🌾 Braiding Sweetgrass: Indigenous Wisdom, Scientific Knowledge, and the Teachings of Plants](/content/books/braiding-sweetgrass.md)** by Robin Wall Kimmerer: Blends botany with indigenous perspectives, exploring plants through cultural stories, personal reflection, and ecological consciousness. 🌎 Offers a more holistic and philosophical view.  
 * 🎭 **The Cabaret of Plants: Forty Thousand Years of Plant Life and the Human Imagination** by Richard Mabey: Explores the long and varied relationship between humans and plants through history, culture, and science.  
 * 🧠 **Brilliant Green: The Surprising History and Science of Plant Intelligence** by Stefano Mancuso & Alessandra Viola: Delves into the fascinating and sometimes controversial research suggesting plants possess forms of intelligence and complex behaviors.  
 * 🖌️ **Botany for the Artist** by Sarah Simblet: Combines scientific botanical illustration with artistic technique, exploring plant structure visually.  
@@ -76,5 +76,5 @@ This book is ideal for:
 * 🪴 **Plant Style: How to Greenify Your Space** by Alana Langan & Jacqui Vidal / 🏠 **Plant Society: Create an indoor oasis for your urban space** by Jason Chongue: Focus on the aesthetics and interior design aspects of incorporating houseplants into living spaces.  
 * 🌍 **The Private Life of Plants** by David Attenborough: The companion book to the BBC series, offering a captivating look at plant behavior, survival strategies, and life cycles through stunning photography and engaging narrative.  
   
-## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
+## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on How Plants Work The Science Behind the Amazing Things Plants Do. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

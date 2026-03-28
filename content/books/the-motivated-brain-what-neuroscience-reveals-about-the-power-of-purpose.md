@@ -6,7 +6,7 @@ URL: https://bagrounds.org/books/the-motivated-brain-what-neuroscience-reveals-a
 share: true
 affiliate link: https://amzn.to/4mIOsQ9
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🎯🧠 The Motivated Brain  
 [🛒 The Motivated Brain. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4mIOsQ9)  
   
@@ -39,22 +39,22 @@ affiliate link: https://amzn.to/4mIOsQ9
 ## 📚 Further Reading Recommendations  
   
 ### 🤓 Similar Reads (Neuroscience, Motivation, Purpose)  
-* 📖 **[Drive: The Surprising Truth About What Motivates Us](./drive-the-surprising-truth-about-what-motivates-us.md) by Daniel H. Pink:** 🎯 Explores the power of intrinsic motivators: autonomy, mastery, and purpose, aligning well with the higher levels of the Hierarchy of Motivation discussed in "The Motivated Brain".  
+* 📖 **[Drive: The Surprising Truth About What Motivates Us](/content/books/drive-the-surprising-truth-about-what-motivates-us.md) by Daniel H. Pink:** 🎯 Explores the power of intrinsic motivators: autonomy, mastery, and purpose, aligning well with the higher levels of the Hierarchy of Motivation discussed in "The Motivated Brain".  
 * 📖 **"The Molecule of More: How a Single Chemical in Your Brain Drives Love, Sex, and Creativity—and Will Determine the Fate of the Human Race" by Daniel Z. Lieberman & Michael E. Long:** 🧪 Delves into the role of dopamine, a key neurotransmitter in motivation discussed in neuroscience sections, exploring its broader impact on human drive and behavior.  
 * 📖 **"The Brain: The Story of You" by David Eagleman:** 🧠 Provides a broader look at the brain and how it shapes our reality, offering accessible neuroscience context relevant to understanding the biological basis of motivation.  
-* **[🌀⬆️🧠 The Upward Spiral: Using Neuroscience to Reverse the Course of Depression, One Small Change at a Time](./the-upward-spiral-using-neuroscience-to-reverse-the-course-of-depression-one-small-change-at-a-time.md) by Alex Korb:** 📉 While focused on depression, it uses neuroscience to explain how small actions influence brain chemistry and motivation, relating to the concept of brain trainability.  
+* **[🌀⬆️🧠 The Upward Spiral: Using Neuroscience to Reverse the Course of Depression, One Small Change at a Time](/content/books/the-upward-spiral-using-neuroscience-to-reverse-the-course-of-depression-one-small-change-at-a-time.md) by Alex Korb:** 📉 While focused on depression, it uses neuroscience to explain how small actions influence brain chemistry and motivation, relating to the concept of brain trainability.  
   
 ### 🤔 Contrasting Perspectives (Alternative Motivation Theories)  
 * 📖 **"The Hidden Costs of Reward: New Perspectives on the Psychology of Human Motivation" edited by Mark R. Lepper & David Greene:** 💰 Presents research and theory, including Cognitive Evaluation Theory, focusing on how extrinsic rewards can sometimes undermine intrinsic motivation—a nuanced counterpoint to simplistic reward strategies.  
 * 📖 **Works based on B.F. Skinner (Behaviorism/Reinforcement Theory):** 🐕 Books detailing operant conditioning principles focus heavily on how external consequences (rewards/punishments) shape behavior, offering a contrast to the intrinsic focus of "The Motivated Brain".  
-* 📖 **[Thinking, Fast and Slow](./thinking-fast-and-slow.md) by Daniel Kahneman:** 🧠 While not solely about motivation, it explores the dual-process theory of thought (System 1 vs. System 2), offering a different cognitive framework for understanding decision-making and behavior than the purely motivational lens.  
+* 📖 **[Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md) by Daniel Kahneman:** 🧠 While not solely about motivation, it explores the dual-process theory of thought (System 1 vs. System 2), offering a different cognitive framework for understanding decision-making and behavior than the purely motivational lens.  
   
 ### ✨ Creative Connections (Related Concepts)  
-* 📖 **[Flow: The Psychology of Optimal Experience](./flow-the-psychology-of-optimal-experience.md) by Mihaly Csikszentmihalyi:** 🌊 Explores the state of complete absorption in an activity, often linked to high levels of intrinsic motivation, mastery, and engagement—relevant to achieving optimal performance states discussed implicitly.  
-* **[❤️‍🔥💪 Grit: The Power of Passion and Perseverance](./grit-the-power-of-passion-and-perseverance.md) by Angela Duckworth:** 💪 Focuses on the importance of perseverance and passion for long-term goals, complementing the resilience aspect mentioned in "The Motivated Brain".  
-* 📖 **[Mindset](./mindset.md): The New Psychology of Success by Carol S. Dweck:** 🧠 Examines the impact of fixed vs. growth mindsets on achievement and motivation, relating to the idea that beliefs about one's abilities (like Talents) influence drive.  
+* 📖 **[Flow: The Psychology of Optimal Experience](/content/books/flow-the-psychology-of-optimal-experience.md) by Mihaly Csikszentmihalyi:** 🌊 Explores the state of complete absorption in an activity, often linked to high levels of intrinsic motivation, mastery, and engagement—relevant to achieving optimal performance states discussed implicitly.  
+* **[❤️‍🔥💪 Grit: The Power of Passion and Perseverance](/content/books/grit-the-power-of-passion-and-perseverance.md) by Angela Duckworth:** 💪 Focuses on the importance of perseverance and passion for long-term goals, complementing the resilience aspect mentioned in "The Motivated Brain".  
+* 📖 **[Mindset](/content/books/mindset.md): The New Psychology of Success by Carol S. Dweck:** 🧠 Examines the impact of fixed vs. growth mindsets on achievement and motivation, relating to the idea that beliefs about one's abilities (like Talents) influence drive.  
 * 📖 **"The Neuroscience of Creativity" by Anna Abraham:** 🎨 Explores the brain processes behind creativity, which can be seen as a high-level application of motivation and purpose.  
-* **[😴💭 Why We Sleep: Unlocking the Power of Sleep and Dreams](./why-we-sleep-unlocking-the-power-of-sleep-and-dreams.md) by Matthew Walker:** While seemingly tangential, sleep profoundly impacts cognitive function, emotional regulation, and energy levels—foundational aspects ('Energy' level) required for motivation discussed in "The Motivated Brain".  
+* **[😴💭 Why We Sleep: Unlocking the Power of Sleep and Dreams](/content/books/why-we-sleep-unlocking-the-power-of-sleep-and-dreams.md) by Matthew Walker:** While seemingly tangential, sleep profoundly impacts cognitive function, emotional regulation, and energy levels—foundational aspects ('Energy' level) required for motivation discussed in "The Motivated Brain".  
   
-## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
+## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on The Motivated Brain: What Neuroscience Reveals About the Power of Purpose. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

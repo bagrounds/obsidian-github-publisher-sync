@@ -10,7 +10,7 @@ Channel: Stanford Graduate School of Business
 tags:
 youtube: https://youtu.be/0SQor2z2QAU
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md)  
 # 🎓🎮🏆✨ Last Lecture Series: How to Design a Winnable Game – Graham Weaver  
 ![Last Lecture Series: How to Design a Winnable Game – Graham Weaver](https://youtu.be/0SQor2z2QAU)  
   
@@ -28,11 +28,11 @@ youtube: https://youtu.be/0SQor2z2QAU
 * 🎯 **Core message**: Proactively design a life that is exciting 🎉, fulfilling 🧘, and aligned with your true self, rather than passively waiting 🕰️ \[[25:43](http://www.youtube.com/watch?v=0SQor2z2QAU&t=1543)\].  
   
 ## 📚 Book Recommendations  
-* **[👤📈🎯🌟🔑🤝🏆 The 7 Habits of Highly Effective People](../books/the-7-habits-of-highly-effective-people.md) by Stephen Covey**: This classic focuses on principles for personal and professional effectiveness, aligning with the idea of designing a fulfilling life.  
-* **[❓🎯 Start with Why: How Great Leaders Inspire Everyone to Take Action](../books/start-with-why-how-great-leaders-inspire-everyone-to-take-action.md) by Simon Sinek**: This book explores the importance of understanding your purpose and passion, which resonates with the video's emphasis on choosing a game that "stirs your blood."  
-* **[⚛️🔄 Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones](../books/atomic-habits.md) by James Clear**: While not directly about "winnable games," this book provides practical strategies for building good habits and designing systems that lead to success, which can be applied to achieving aspirational goals.  
-* **[❤️‍🔥💪 Grit: The Power of Passion and Perseverance](../books/grit-the-power-of-passion-and-perseverance.md) by Angela Duckworth**: This book highlights the importance of passion and perseverance in achieving long-term goals, echoing the video's message about committing to your chosen game.  
-* **[➖💯 Essentialism: The Disciplined Pursuit of Less](../books/essentialism-the-disciplined-pursuit-of-less.md) by Greg McKeown**: This book encourages focusing on what is truly essential and eliminating distractions, which can help in designing a more focused and "winnable" life.  
+* **[👤📈🎯🌟🔑🤝🏆 The 7 Habits of Highly Effective People](/content/books/the-7-habits-of-highly-effective-people.md) by Stephen Covey**: This classic focuses on principles for personal and professional effectiveness, aligning with the idea of designing a fulfilling life.  
+* **[❓🎯 Start with Why: How Great Leaders Inspire Everyone to Take Action](/content/books/start-with-why-how-great-leaders-inspire-everyone-to-take-action.md) by Simon Sinek**: This book explores the importance of understanding your purpose and passion, which resonates with the video's emphasis on choosing a game that "stirs your blood."  
+* **[⚛️🔄 Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones](/content/books/atomic-habits.md) by James Clear**: While not directly about "winnable games," this book provides practical strategies for building good habits and designing systems that lead to success, which can be applied to achieving aspirational goals.  
+* **[❤️‍🔥💪 Grit: The Power of Passion and Perseverance](/content/books/grit-the-power-of-passion-and-perseverance.md) by Angela Duckworth**: This book highlights the importance of passion and perseverance in achieving long-term goals, echoing the video's message about committing to your chosen game.  
+* **[➖💯 Essentialism: The Disciplined Pursuit of Less](/content/books/essentialism-the-disciplined-pursuit-of-less.md) by Greg McKeown**: This book encourages focusing on what is truly essential and eliminating distractions, which can help in designing a more focused and "winnable" life.  
   
 ## 🐦 Tweet  
 <blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">🎓🎮🏆✨ Last Lecture Series: How to Design a Winnable Game – Graham Weaver<br><br>🎓 Business School | ❓ Right Question | ❤️ Stirring Goals | 🧑‍🤝‍🧑 Admired People | 🚀 Immediate Start | 🧘 Fulfillment | 📚 Book Recommendations<a href="https://twitter.com/GrahamCWeaver?ref_src=twsrc%5Etfw">@GrahamCWeaver</a><a href="https://t.co/LB5mWE7lOX">https://t.co/LB5mWE7lOX</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/1944802532360073387?ref_src=twsrc%5Etfw">July 14, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

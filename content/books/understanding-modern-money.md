@@ -9,7 +9,7 @@ tags:
   - MMT
 affiliate link: https://amzn.to/4jvn99m
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 💰📈🤔 Understanding Modern Money  
 [🛒 Understanding Modern Money. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4jvn99m)  
   
@@ -55,8 +55,8 @@ Wray challenges traditional economic views by presenting money as a public monop
 Wray's work is grounded in historical analysis 🕰️ and institutional economics, providing a strong counterpoint to mainstream economic theories. His arguments are well-supported by evidence and logical reasoning. His credentials as a professor of economics 🧑‍🏫 and a leading proponent of MMT lend credibility to his work. Reviews from other economists, particularly those who support heterodox economic theories, are generally positive 👍. However, mainstream economists often criticize MMT, highlighting concerns about inflation 🎈 and the potential for government overspending 💸. Wray's book is an important contribution to the debate on monetary policy and provides a valuable alternative perspective. 🌟  
   
 #### Additional Book Recommendations 📚✨  
-* **Best Alternate Book on the Same Topic:** "[The Deficit Myth](./the-deficit-myth.md)" by Stephanie Kelton. This book provides a more accessible introduction to MMT. 🔄💡  
-* **Best Tangentially Related Book:** [🏛️💰 Debt: The First 5,000 Years](./debt-the-first-5000-years.md) by David Graeber. This book explores the social and historical context of debt and money. 🔗📜  
+* **Best Alternate Book on the Same Topic:** "[The Deficit Myth](/content/books/the-deficit-myth.md)" by Stephanie Kelton. This book provides a more accessible introduction to MMT. 🔄💡  
+* **Best Tangentially Related Book:** [🏛️💰 Debt: The First 5,000 Years](/content/books/debt-the-first-5000-years.md) by David Graeber. This book explores the social and historical context of debt and money. 🔗📜  
 * **Best Diametrically Opposed Book:** The Road to Serfdom by F.A. Hayek. This book advocates for free markets and limited government intervention, contrasting sharply with MMT. ⚔️🚫  
 * **Best Fiction Book Incorporating Related Ideas:** The Ministry for the Future by Kim Stanley Robinson. This novel explores economic and environmental solutions, including concepts related to monetary reform. 📖🌍  
 * **Best More General Book:** "Economics: The User's Guide" by Ha-Joon Chang. This book provides a broad overview of different economic schools of thought. 🌐📚  

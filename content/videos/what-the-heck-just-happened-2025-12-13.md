@@ -10,7 +10,7 @@ Channel: Heather Cox Richardson
 tags:
 youtube: https://www.youtube.com/embed/XSyCXcMPIW4
 ---
-[Home](../index.md) > [Videos](./index.md) | [🏛️🇺🇸📖 Heather Cox Richardson](../people/heather-cox-richardson.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md) | [🏛️🇺🇸📖 Heather Cox Richardson](/content/people/heather-cox-richardson.md)  
 # 🤯❓🤷‍♀️ What the Heck Just Happened? | 2025-12-13  
 ![What the Heck Just Happened?](https://www.youtube.com/embed/XSyCXcMPIW4)  
   
@@ -45,7 +45,7 @@ youtube: https://www.youtube.com/embed/XSyCXcMPIW4
   
 ## 📚 Book Recommendations  
 ### ↔️ Similar  
-* [💰🇺🇸 Corruption in America: From Benjamin Franklin's Snuff Box to Citizens United](../books/corruption-in-america-from-benjamin-franklins-snuff-box-to-citizens-united.md) by Zephyr Teachout. 🎁 It traces the history of corruption from the founding era's broad moral definition to the Supreme Court’s modern, narrow view, making it highly relevant to the video's discussion of the Emoluments Clause.  
+* [💰🇺🇸 Corruption in America: From Benjamin Franklin's Snuff Box to Citizens United](/content/books/corruption-in-america-from-benjamin-franklins-snuff-box-to-citizens-united.md) by Zephyr Teachout. 🎁 It traces the history of corruption from the founding era's broad moral definition to the Supreme Court’s modern, narrow view, making it highly relevant to the video's discussion of the Emoluments Clause.  
 * *The Politics of Corruption: The Election of 1824 and the Emergence of a Modern Party System* by David P. Callahan. 🏛️ This book details how early American politicians equated regular politics with corruption, illustrating the deep historical roots of the anti-corruption focus in the Early Republic.  
   
 ### 🆚 Contrasting  

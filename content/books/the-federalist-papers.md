@@ -7,7 +7,7 @@ share: true
 affiliate link: https://amzn.to/3Gkfptm
 CTA: Understand American governance.
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🇺🇸📜 The Federalist Papers  
 [🛒 The Federalist Papers. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3Gkfptm)  
   
@@ -39,10 +39,10 @@ Despite facing opposition and not immediately convincing a majority in New York,
   
 These books delve into similar themes of political philosophy, governance, and the structure of states, often from a historical or theoretical perspective akin to *The Federalist Papers*. 💭  
   
-* **[🗳️🕊️🇺🇸 Democracy in America](./democracy-in-america.md)** by Alexis de Tocqueville: An insightful analysis of the American political system and society in the 1830s by a keen French observer, offering a unique external perspective on the practical workings of the principles discussed in *The Federalist Papers*.  
-* **[👑🏛️ Second Treatise of Government](./second-treatise-of-government.md)** by John Locke: A foundational text of Enlightenment political philosophy that heavily influenced the American Founders, particularly on concepts of natural rights, the social contract, and the purpose of government, ideas that underpin the arguments in *The Federalist Papers*.  
+* **[🗳️🕊️🇺🇸 Democracy in America](/content/books/democracy-in-america.md)** by Alexis de Tocqueville: An insightful analysis of the American political system and society in the 1830s by a keen French observer, offering a unique external perspective on the practical workings of the principles discussed in *The Federalist Papers*.  
+* **[👑🏛️ Second Treatise of Government](/content/books/second-treatise-of-government.md)** by John Locke: A foundational text of Enlightenment political philosophy that heavily influenced the American Founders, particularly on concepts of natural rights, the social contract, and the purpose of government, ideas that underpin the arguments in *The Federalist Papers*.  
 * ⚖️ ***The Spirit of the Laws*** by Montesquieu: This work explores different forms of government and the principle of separation of powers, a concept explicitly discussed and defended by Madison in *The Federalist Papers* (notably Federalist No. 47).  
-* **[🧠💡 Common Sense](./common-sense.md)** by Thomas Paine: A powerful and widely read pamphlet that passionately argued for American independence and the establishment of a republican government, capturing the revolutionary spirit and political ideals that led to the Constitution.  
+* **[🧠💡 Common Sense](/content/books/common-sense.md)** by Thomas Paine: A powerful and widely read pamphlet that passionately argued for American independence and the establishment of a republican government, capturing the revolutionary spirit and political ideals that led to the Constitution.  
 * 🤔 ***Politics*** by Aristotle: An ancient but enduring work of political theory that examines various forms of government, citizenship, and the goals of a political community, providing a deep historical context for the ideas of governance debated by the Federalists.  
   
 ### 🆚 Contrasting Recommendations  
@@ -50,7 +50,7 @@ These books delve into similar themes of political philosophy, governance, and t
 These books offer perspectives that contrast with or critique the arguments presented in *The Federalist Papers*, providing a more complete picture of the historical debates and alternative viewpoints on American governance. 📰  
   
 * ❌ ***The Anti-Federalist Papers***: A collection of essays and articles written by various authors opposing the ratification of the U.S. Constitution. These papers raise concerns about the potential for an overly powerful central government, the absence of a Bill of Rights (initially), and the potential erosion of states' rights and individual liberties, directly challenging the Federalist arguments. Key Anti-Federalist authors used pseudonyms like "Brutus" and "Centinel."  
-* **[👹 The Origins of Totalitarianism](./the-origins-of-totalitarianism.md)** by Hannah Arendt: While a 20th-century work, Arendt's analysis of the nature and rise of totalitarian regimes offers a stark contrast to the vision of limited, republican government presented in *The Federalist Papers*. It implicitly highlights the importance of the safeguards the Federalists sought to implement.  
+* **[👹 The Origins of Totalitarianism](/content/books/the-origins-of-totalitarianism.md)** by Hannah Arendt: While a 20th-century work, Arendt's analysis of the nature and rise of totalitarian regimes offers a stark contrast to the vision of limited, republican government presented in *The Federalist Papers*. It implicitly highlights the importance of the safeguards the Federalists sought to implement.  
 * 👑 ***Leviathan*** by Thomas Hobbes: This work argues for a strong, even absolute, sovereign to prevent the chaos of the state of nature. Hobbes's more pessimistic view of human nature and his conclusion favoring absolute authority stand in contrast to the Federalist belief in the possibility of a self-governing republic with divided powers.  
 * 🤝 ***The Social Contract*** by Jean-Jacques Rousseau: Rousseau's ideas on the general will and popular sovereignty offer a different perspective on the basis of legitimate government compared to the Federalist emphasis on representation and the mitigation of faction through an extended republic.  
   
@@ -64,7 +64,7 @@ These books offer creative or alternative explorations of the themes, historical
 * 🤪 ***Constitutional Stupidities, Constitutional Necessities: Archaic and Anomalous Provisions of the Constitution*** by Sanford Levinson: This book, by a constitutional scholar, examines aspects of the U.S. Constitution that might be considered anachronistic or problematic today. By prompting a critical look at the structure established by the Founders and defended in *The Federalist Papers*, it encourages contemporary engagement with these historical ideas.  
 * 👨‍🎓 ***Essays and Papers on the U.S. Constitution*** by various modern scholars: Numerous contemporary collections and analyses exist that re-examine *The Federalist Papers* and the Constitution through a modern lens, applying their principles to current political and legal issues. These works demonstrate the enduring relevance and ongoing interpretation of the Founders' ideas.  
   
-## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
+## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on The Federalist Papers. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.  
   
   

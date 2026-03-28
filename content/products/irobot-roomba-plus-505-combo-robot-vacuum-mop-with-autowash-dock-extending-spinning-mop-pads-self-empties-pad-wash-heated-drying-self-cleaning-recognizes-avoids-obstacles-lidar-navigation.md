@@ -7,7 +7,7 @@ share: true
 affiliate link: https://amzn.to/3Km3ywO
 CTA: 🤖 Automate your chores.
 ---
-[Home](../index.md) > [Products](./index.md)  
+[Home](/content/index.md) > [Products](/content/products/index.md)  
 # 🤖🧹🧼🗺️ iRobot Roomba Plus 505 Combo Robot Vacuum & Mop with AutoWash Dock - Extending Spinning Mop Pads, Self-Empties, Pad Wash & Heated Drying, Self-cleaning, Recognizes & Avoids Obstacles, LiDAR Navigation  
 [🛒 iRobot Roomba Plus 505 Combo Robot Vacuum & Mop with AutoWash Dock - Extending Spinning Mop Pads, Self-Empties, Pad Wash & Heated Drying, Self-cleaning, Recognizes & Avoids Obstacles, LiDAR Navigation. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3Km3ywO)  
   
@@ -43,7 +43,7 @@ The AutoWash Dock is the defining feature, providing a hands-off, closed-loop cl
   
 These books explore technology, automation, and the nature of the modern home.  
   
-* **[🤖📈 The Second Machine Age: Work, Progress, and Prosperity in a Time of Brilliant Technologies](../books/the-second-machine-age-work-progress-and-prosperity-in-a-time-of-brilliant-technologies.md):** Examines how digital technology and automation are fundamentally reshaping the economy and society, mirroring the robot's role as a high-tech domestic worker.  
+* **[🤖📈 The Second Machine Age: Work, Progress, and Prosperity in a Time of Brilliant Technologies](/content/books/the-second-machine-age-work-progress-and-prosperity-in-a-time-of-brilliant-technologies.md):** Examines how digital technology and automation are fundamentally reshaping the economy and society, mirroring the robot's role as a high-tech domestic worker.  
 * 🔒 **The Glass Cage Automation and Us:** A detailed analysis of the subtle ways automation affects human skill, judgment, and engagement, relevant to the hands-off experience of using a fully automated cleaning system.  
 * 🚀 **The Diamond Age or a Young Lady's Illustrated Primer:** A science fiction novel that explores nanotechnology, ubiquitous computing, and personalized learning environments, reflecting a hyper-automated future where technology manages domestic and educational needs.  
   
@@ -51,7 +51,7 @@ These books explore technology, automation, and the nature of the modern home.
   
 These books offer a counterbalance by focusing on manual labor, simplicity, or the human connection to physical tasks.  
   
-* **[🛠️💖 Shop Class as Soulcraft: An Inquiry Into the Value of Work](../books/shop-class-as-soulcraft-an-inquiry-into-the-value-of-work.md):** A philosophical meditation that champions the tangible satisfaction and intellectual rewards of skilled manual labor, contrasting sharply with the automated ease of a robot vacuum.  
+* **[🛠️💖 Shop Class as Soulcraft: An Inquiry Into the Value of Work](/content/books/shop-class-as-soulcraft-an-inquiry-into-the-value-of-work.md):** A philosophical meditation that champions the tangible satisfaction and intellectual rewards of skilled manual labor, contrasting sharply with the automated ease of a robot vacuum.  
 * 🏞️ **Walden:** Henry David Thoreau's classic text emphasizing simple living and self-sufficiency in natural surroundings, a direct philosophical opposite to the pursuit of high-tech, convenience-based home management.  
 * 👩‍🌾 **The Dirty Life A Memoir of Farming Food and Love:** A non-fiction account of farming and the physical, strenuous work required to produce food, highlighting the human effort inherent in tasks that the Roomba is designed to eliminate.  
   

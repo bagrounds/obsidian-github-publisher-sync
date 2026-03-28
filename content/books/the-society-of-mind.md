@@ -11,7 +11,7 @@ force_analyze_links: false
 link_analysis_time: 2026-03-25T10:18:53.505Z
 link_analysis_model: gemini-3.1-flash-lite-preview
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🧠👥 The Society of Mind  
 [🛒 The Society of Mind. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4r9Ku5c)  
   
@@ -81,8 +81,8 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 ## 📖 Book Recommendations  
   
 ### ⬆️ Similar  
-- [🔬⚙️ The Sciences of the Artificial](./the-sciences-of-the-artificial.md)  
-- [🌐🔗🧠📖 Thinking in Systems: A Primer](./thinking-in-systems.md)  
+- [🔬⚙️ The Sciences of the Artificial](/content/books/the-sciences-of-the-artificial.md)  
+- [🌐🔗🧠📖 Thinking in Systems: A Primer](/content/books/thinking-in-systems.md)  
   
 ### ⬇️ Contrasting  
 * 👤 Daniel Dennett - Consciousness Explained  
@@ -90,7 +90,7 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 * 💻 Hubert Dreyfus - What Computers Can't Do  
   
 ### ↔️ Related  
-* 🎵 Douglas Hofstadter - [♾️📐🎶🥨 Gödel, Escher, Bach: An Eternal Golden Braid](./godel-escher-bach.md)  
+* 🎵 Douglas Hofstadter - [♾️📐🎶🥨 Gödel, Escher, Bach: An Eternal Golden Braid](/content/books/godel-escher-bach.md)  
 * 🧠 Steven Pinker - How the Mind Works  
 * 💡 Ray Kurzweil - How to Create a Mind  
 * 🗣️ George Lakoff and Mark Johnson - Metaphors We Live By  

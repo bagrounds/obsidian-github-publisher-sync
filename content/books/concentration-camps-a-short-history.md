@@ -7,7 +7,7 @@ share: true
 affiliate link: https://amzn.to/3IePtzH
 CTA: Confront atrocity.
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # ⛓️🏕️📜 Concentration Camps: A Short History  
 [🛒 Concentration Camps: A Short History. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3IePtzH)  
   
@@ -66,5 +66,5 @@ CTA: Confront atrocity.
 * **Art:**  
     * Art from the Holocaust: 🖼️ Various online collections and exhibitions, such as those from Yad Vashem and the Imperial War Museums, showcase art created by victims and survivors within camps and ghettos, offering a visual testimony to their experiences. Artists like Felix Nussbaum, Charlotte Salomon, and those who documented life in camps like Theresienstadt created significant bodies of work despite unimaginable conditions. Post-Holocaust art by artists like Anselm Kiefer also grapples with the legacy of the camps.  
   
-## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
+## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Concentration Camps: A Short History. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

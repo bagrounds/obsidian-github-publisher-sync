@@ -7,7 +7,7 @@ share: true
 CTA: ✊ Build unity.
 affiliate link: https://amzn.to/43a6Rxa
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # ❓🏘️ Where Do We Go from Here: Chaos or Community?  
 [🛒 Where Do We Go from Here: Chaos or Community?. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/43a6Rxa)  
   
@@ -127,11 +127,11 @@ A: King outlined four basic steps: 1) 🔍 collection of facts to confirm injust
   
 #### 🎨 Creatively Related Books  
   
-* **[🧑🏿⛓️🙈 The New Jim Crow: Mass Incarceration in the Age of Colorblindness](./the-new-jim-crow-mass-incarceration-in-the-age-of-colorblindness.md) by Michelle Alexander:** Examines how racial caste systems persist in modern America, connecting to King's concerns about structural racism and economic exploitation.  
+* **[🧑🏿⛓️🙈 The New Jim Crow: Mass Incarceration in the Age of Colorblindness](/content/books/the-new-jim-crow-mass-incarceration-in-the-age-of-colorblindness.md) by Michelle Alexander:** Examines how racial caste systems persist in modern America, connecting to King's concerns about structural racism and economic exploitation.  
 * 🌍 **Caste The Origins of Our Discontents by Isabel Wilkerson:** Explores the hidden caste system in America, offering a framework to understand deep-seated social hierarchies that King sought to dismantle.  
 * 💔 **White Fragility Why It's So Hard for White People to Talk About Racism by Robin DiAngelo:** Addresses the resistance of white people to racial discussions, resonating with King's critique of white moderates.  
 * 🧑‍🏫 **Pedagogy of the Oppressed by Paulo Freire:** Discusses liberation education and empowering the oppressed, aligning with King's focus on collective agency and dismantling oppressive systems.  
-* **[🏭🫡 Manufacturing Consent: The Political Economy of the Mass Media](./manufacturing-consent.md) by Noam Chomsky and Edward S. Herman:** Provides insight into how narratives, including those around social movements, are shaped and controlled, offering a lens through which to understand public perception of King's movement.  
+* **[🏭🫡 Manufacturing Consent: The Political Economy of the Mass Media](/content/books/manufacturing-consent.md) by Noam Chomsky and Edward S. Herman:** Provides insight into how narratives, including those around social movements, are shaped and controlled, offering a lens through which to understand public perception of King's movement.  
 * 🙏 **The Audacity of Hope by Barack Obama:** Reflects on American identity, politics, and the pursuit of a more perfect union, echoing King's ultimate vision for community and national purpose.".  
   
 ## 💬 [Gemini](https://gemini.google.com) Prompt (gemini-2.5-flash)  

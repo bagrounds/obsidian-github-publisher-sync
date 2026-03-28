@@ -7,7 +7,7 @@ share: true
 CTA: ☀️ Design your day.
 affiliate link: https://amzn.to/3SCFkyV
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # ☀️😀👍😊🌻 How to Have a Good Day: Harness the Power of Behavioral Science to Transform Your Working Life  
 [🛒 How to Have a Good Day: Harness the Power of Behavioral Science to Transform Your Working Life. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3SCFkyV)  
   
@@ -74,17 +74,17 @@ affiliate link: https://amzn.to/3SCFkyV
 ## 📚 Book Recommendations  
   
 ### ➕ Similar  
-* [🤔🐇🐢 Thinking, Fast and Slow](./thinking-fast-and-slow.md) by Daniel Kahneman  
-* [👉🤏 Nudge: Improving Decisions about Health, Wealth, and Happiness](./nudge.md) by Richard H. Thaler and Cass R. Sunstein  
-* [⚛️🔄 Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones](./atomic-habits.md) by James Clear  
+* [🤔🐇🐢 Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md) by Daniel Kahneman  
+* [👉🤏 Nudge: Improving Decisions about Health, Wealth, and Happiness](/content/books/nudge.md) by Richard H. Thaler and Cass R. Sunstein  
+* [⚛️🔄 Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones](/content/books/atomic-habits.md) by James Clear  
   
 ### ➖ Contrasting  
-* [🤿💼 Deep Work: Rules for Focused Success in a Distracted World](./deep-work.md) by Cal Newport (more emphasis on singular focus, less on holistic well-being integration)  
+* [🤿💼 Deep Work: Rules for Focused Success in a Distracted World](/content/books/deep-work.md) by Cal Newport (more emphasis on singular focus, less on holistic well-being integration)  
 * ⏱️ The 4-Hour Workweek by Timothy Ferriss (focus on extreme efficiency and outsourcing, less on daily behavioral shifts)  
   
 ### 🔗 Related  
 * 🤫 Quiet: The Power of Introverts in a World That Can't Stop Talking by Susan Cain (explores personality types and workplace dynamics)  
-* [🌱🧘🏼‍♀️🏆 Mindset: The New Psychology of Success](./mindset.md) by Carol S. Dweck (examines the impact of growth vs. fixed mindsets)  
+* [🌱🧘🏼‍♀️🏆 Mindset: The New Psychology of Success](/content/books/mindset.md) by Carol S. Dweck (examines the impact of growth vs. fixed mindsets)  
   
 ## 🫵 What Do You Think?  
   

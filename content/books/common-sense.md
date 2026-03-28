@@ -7,7 +7,7 @@ share: true
 affiliate link: https://amzn.to/3I6vjYX
 CTA: 🇺🇸 Champion liberty.
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🧠💡 Common Sense  
 [🛒 Common Sense. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3I6vjYX)  
   
@@ -34,8 +34,8 @@ CTA: 🇺🇸 Champion liberty.
 ### ➕ Similar Books  
   
 * ✍️ **Rights of Man by Thomas Paine:** Written by Paine himself as a defense of the French Revolution against Edmund Burke's critique, this work further elaborates on Paine's political philosophy, advocating for universal human rights 🧑‍🤝‍🧑, republican government 🏛️, and social welfare programs 💖.  
-* **[🇺🇸📜 The Federalist Papers](./the-federalist-papers.md) by Alexander Hamilton, James Madison, and John Jay:** This collection of 85 essays, published between 1787 and 1788, argued for the ratification of the United States Constitution 🇺🇸. It delves into the principles of republican government 🏛️, federalism 🤝, and the separation of powers ⚖️, offering a detailed blueprint 🗺️ for the system Paine advocated generally.  
-* **[👑🏛️ Second Treatise of Government](./second-treatise-of-government.md) by John Locke:** This foundational work of political philosophy profoundly influenced Paine and other American revolutionaries. It articulates theories of natural rights 🌱, the social contract 🤝, and the right of the people to revolt against tyrannical government 😡, providing much of the philosophical underpinning for Common Sense 💡.  
+* **[🇺🇸📜 The Federalist Papers](/content/books/the-federalist-papers.md) by Alexander Hamilton, James Madison, and John Jay:** This collection of 85 essays, published between 1787 and 1788, argued for the ratification of the United States Constitution 🇺🇸. It delves into the principles of republican government 🏛️, federalism 🤝, and the separation of powers ⚖️, offering a detailed blueprint 🗺️ for the system Paine advocated generally.  
+* **[👑🏛️ Second Treatise of Government](/content/books/second-treatise-of-government.md) by John Locke:** This foundational work of political philosophy profoundly influenced Paine and other American revolutionaries. It articulates theories of natural rights 🌱, the social contract 🤝, and the right of the people to revolt against tyrannical government 😡, providing much of the philosophical underpinning for Common Sense 💡.  
 * 🤝 **The Social Contract by Jean-Jacques Rousseau:** Exploring the concept of a legitimate political order 🏛️, Rousseau's work discusses the nature of human freedom 🕊️, societal organization 🧑‍🤝‍🧑, and the general will 🤔. It posits that a government's legitimacy comes from the consent of the governed 🗳️, a principle central to Paine's arguments for republicanism 🏛️.  
   
 ### ➖ Contrasting Books  
@@ -45,7 +45,7 @@ CTA: 🇺🇸 Champion liberty.
   
 ### 🎨 Creatively Related Books  
   
-* **[🗳️🕊️🇺🇸 Democracy in America](./democracy-in-america.md) by Alexis de Tocqueville:** Written after his travels in the United States in the 1830s, Tocqueville's seminal work offers an insightful, outside perspective on the American democratic experiment several decades after its founding 🇺🇸. It examines the strengths 💪, weaknesses 😥, and unique characteristics of American society and governance 🏛️, exploring the long-term outcomes of the revolution Paine championed 🏆.  
+* **[🗳️🕊️🇺🇸 Democracy in America](/content/books/democracy-in-america.md) by Alexis de Tocqueville:** Written after his travels in the United States in the 1830s, Tocqueville's seminal work offers an insightful, outside perspective on the American democratic experiment several decades after its founding 🇺🇸. It examines the strengths 💪, weaknesses 😥, and unique characteristics of American society and governance 🏛️, exploring the long-term outcomes of the revolution Paine championed 🏆.  
 * 💰 **The Wealth of Nations by Adam Smith:** Published in the same year as Common Sense, 1776, Smith's masterpiece lays the groundwork for modern economics and capitalism 📈. While not directly a political tract in the same vein as Paine's, it speaks to the economic independence 💰 and potential prosperity ✨ that Paine envisioned for an independent America 🇺🇸, framing the economic underpinnings of a new nation 🏛️.  
 * 🇺🇸 **The Creation of the American Republic, 1776-1787 by Gordon S Wood:** This Pulitzer Prize-winning historical study meticulously details the evolution of American political thought from the Declaration of Independence 📜 to the ratification of the Constitution 📜. It provides a deeper understanding of the philosophical debates 🤔 and practical challenges 🛠️ faced by the Founders in building the new nation Paine so forcefully argued for 🏛️.  
 * 🧠 **An Enquiry Concerning Human Understanding by David Hume:** A key work of the Scottish Enlightenment, Hume's philosophical text explores the nature of human reason 🤔, experience 👁️, and belief 🙏. While not political in nature, its emphasis on empirical observation 🔬 and the limitations of abstract reasoning 💭 provides an intellectual backdrop to the "common sense" approach that Paine so effectively harnessed to persuade his audience 🗣️.  

@@ -11,7 +11,7 @@ tags:
   - AIEngineering
 youtube: https://youtu.be/rmvDxxNubIg
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md)  
 # 🧠🛠️🕸️🚫🙅‍♂️💼 No Vibes Allowed: Solving Hard Problems in Complex Codebases – Dex Horthy, HumanLayer  
 ![No Vibes Allowed: Solving Hard Problems in Complex Codebases – Dex Horthy, HumanLayer](https://youtu.be/rmvDxxNubIg)  
   
@@ -68,14 +68,14 @@ However, the approach heavily relies on the user's discipline to *actually* revi
   
 ## 📚 Book Recommendations  
 ### ↔️ Similar  
-* **[🧱🛠️ Working Effectively with Legacy Code](../books/working-effectively-with-legacy-code.md)** by Michael Feathers – Essential for understanding the brownfield environments where AI agents often struggle and where RPI is most needed.  
+* **[🧱🛠️ Working Effectively with Legacy Code](/content/books/working-effectively-with-legacy-code.md)** by Michael Feathers – Essential for understanding the brownfield environments where AI agents often struggle and where RPI is most needed.  
 * **The Checklist Manifesto** by Atul Gawande – The Plan phase of RPI functions like a surgical checklist, preventing errors through rigid adherence to a pre-validated process.  
   
 ### 🆚 Contrasting  
-* **[⚡🚫💭 Blink: The Power of Thinking Without Thinking](../books/blink-the-power-of-thinking-without-thinking.md)** by Malcolm Gladwell – Argues for the power of vibes (rapid cognition and intuition), directly contrasting the video's No Vibes / deliberate planning philosophy.  
-* **[📉🧪🚀 The Lean Startup: How Today's Entrepreneurs Use Continuous Innovation to Create Radically Successful Businesses](../books/the-lean-startup.md)** by Eric Ries – Focuses on rapid iteration and build-measure-learn, which can sometimes conflict with the heavy Research & Plan front-loading advocated here.  
+* **[⚡🚫💭 Blink: The Power of Thinking Without Thinking](/content/books/blink-the-power-of-thinking-without-thinking.md)** by Malcolm Gladwell – Argues for the power of vibes (rapid cognition and intuition), directly contrasting the video's No Vibes / deliberate planning philosophy.  
+* **[📉🧪🚀 The Lean Startup: How Today's Entrepreneurs Use Continuous Innovation to Create Radically Successful Businesses](/content/books/the-lean-startup.md)** by Eric Ries – Focuses on rapid iteration and build-measure-learn, which can sometimes conflict with the heavy Research & Plan front-loading advocated here.  
   
 ### 🎨 Creatively Related  
-- [🤖🏗️ AI Engineering: Building Applications with Foundation Models](../books/ai-engineering-building-applications-with-foundation-models.md)  
-* **[🤔🐇🐢 Thinking, Fast and Slow](../books/thinking-fast-and-slow.md)** by Daniel Kahneman – The RPI workflow effectively forces the AI (and human) out of System 1 (fast, intuitive) and into System 2 (slow, deliberative) thinking.  
-* **[🚶‍♂️🧠 Moonwalking with Einstein: The Art and Science of Remembering Everything](../books/moonwalking-with-einstein-the-art-and-science-of-remembering-everything.md)** by Joshua Foer – Explores the limits of human memory and context, mirroring the context engineering required to manage the limited memory of LLMs.
+- [🤖🏗️ AI Engineering: Building Applications with Foundation Models](/content/books/ai-engineering-building-applications-with-foundation-models.md)  
+* **[🤔🐇🐢 Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md)** by Daniel Kahneman – The RPI workflow effectively forces the AI (and human) out of System 1 (fast, intuitive) and into System 2 (slow, deliberative) thinking.  
+* **[🚶‍♂️🧠 Moonwalking with Einstein: The Art and Science of Remembering Everything](/content/books/moonwalking-with-einstein-the-art-and-science-of-remembering-everything.md)** by Joshua Foer – Explores the limits of human memory and context, mirroring the context engineering required to manage the limited memory of LLMs.

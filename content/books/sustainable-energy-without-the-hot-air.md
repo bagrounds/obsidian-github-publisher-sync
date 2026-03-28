@@ -9,7 +9,7 @@ tags:
 affiliate link: https://amzn.to/4dJZuAP
 CTA: 💡 Quantify your future.
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🌞🌬️🌊🌋 Sustainable Energy - Without the Hot Air  
 [🛒 Sustainable Energy - Without the Hot Air. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4dJZuAP)  
   
@@ -62,15 +62,15 @@ CTA: 💡 Quantify your future.
 ### ➕ Similar Approaches (Data-Driven & Quantitative)  
   
 * 🌍 **Energy and Civilization: A History** by Vaclav Smil: Provides a sweeping historical perspective on how energy sources have shaped human societies, rich in quantitative detail and analysis of energy transitions over millennia.  
-* **[🌍🔥💡 How to Avoid a Climate Disaster: The Solutions We Have and the Breakthroughs We Need](./how-to-avoid-a-climate-disaster-the-solutions-we-have-and-the-breakthroughs-we-need.md)** by Bill Gates: While less purely technical than MacKay, Gates takes a pragmatic, solutions-focused approach, breaking down the challenge by sector and emphasizing innovation needs with a quantitative lens.  
-* **[⛔🌎🔚 Not the End of the World: How We Can Be the First Generation to Build a Sustainable Planet](./not-the-end-of-the-world.md)** by Hannah Ritchie: Uses data to challenge overly pessimistic environmental narratives, arguing that progress is possible across various sustainability metrics, including energy, though acknowledging the scale of the challenge.  
+* **[🌍🔥💡 How to Avoid a Climate Disaster: The Solutions We Have and the Breakthroughs We Need](/content/books/how-to-avoid-a-climate-disaster-the-solutions-we-have-and-the-breakthroughs-we-need.md)** by Bill Gates: While less purely technical than MacKay, Gates takes a pragmatic, solutions-focused approach, breaking down the challenge by sector and emphasizing innovation needs with a quantitative lens.  
+* **[⛔🌎🔚 Not the End of the World: How We Can Be the First Generation to Build a Sustainable Planet](/content/books/not-the-end-of-the-world.md)** by Hannah Ritchie: Uses data to challenge overly pessimistic environmental narratives, arguing that progress is possible across various sustainability metrics, including energy, though acknowledging the scale of the challenge.  
   
 ### ↔️ Contrasting Perspectives (Policy, Economics, Social Focus)  
   
 * 🔥 **Reinventing Fire: Bold Business Solutions for the New Energy Era** by Amory B. Lovins and Rocky Mountain Institute: Focuses more optimistically on business-led solutions and efficiency gains, emphasizing market opportunities in the energy transition, often with a stronger emphasis on existing technologies.  
 * 🛢️ **The Prize: The Epic Quest for Oil, Money, and Power** by Daniel Yergin: A comprehensive history of the oil industry, essential for understanding the geopolitical and economic forces shaped by fossil fuels, providing context for the transition away from them.  
 * 🎭 **The Ministry for the Future** by Kim Stanley Robinson (Fiction): While fiction, this novel vividly explores the near-future political, economic, and social turmoil and difficult choices involved in tackling climate change globally, offering a powerful narrative contrast to purely technical analyses.  
-* **[🍩🌍 Doughnut Economics: Seven Ways to Think Like a 21st-Century Economist](./doughnut-economics-seven-ways-to-think-like-a-21st-century-economist.md)** by Kate Raworth: Offers a broader framework for sustainable development, placing energy within the context of social foundations and ecological ceilings, challenging traditional economic growth paradigms.  
+* **[🍩🌍 Doughnut Economics: Seven Ways to Think Like a 21st-Century Economist](/content/books/doughnut-economics-seven-ways-to-think-like-a-21st-century-economist.md)** by Kate Raworth: Offers a broader framework for sustainable development, placing energy within the context of social foundations and ecological ceilings, challenging traditional economic growth paradigms.  
   
 ### ✨ Creatively Related (Broader Context & Specific Technologies)  
   
@@ -79,5 +79,5 @@ CTA: 💡 Quantify your future.
 * 🇦🇺 **Superpower: Australia's Low-Carbon Opportunity** by Ross Garnaut: Explores the potential for a nation rich in renewable resources to become an energy superpower in a decarbonized world, focusing on economic and industrial opportunities.  
 * 📚 **Energy Systems Analysis Books (Various Academic Texts):** For deeper technical dives, look for textbooks like "Energy Systems Engineering," "Electric Energy Systems: Analysis and Operation," or "Introduction to Energy Systems" which cover modelling, optimization, and specific system components (e.g., power grids, renewables integration).  
   
-## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
+## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Sustainable Energy - Without the Hot Air. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

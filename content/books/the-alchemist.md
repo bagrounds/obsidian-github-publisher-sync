@@ -7,7 +7,7 @@ URL: https://bagrounds.org/books/the-alchemist
 Author:
 tags:
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # ✨🧙‍♂️⚗️ The Alchemist  
 ## 🤖 AI Summary  
 ✨ This lyrical fable uses a simplified narrative style to explore the profound spiritual conviction that the entire universe aligns to support those who dare to pursue their true purpose.  
@@ -45,12 +45,12 @@ A: 🤓 The author utilizes a straightforward and symbolic vocabulary that makes
 ### 📖 Non-Fiction  
   
 * 🕊️ The Power of Now by Eckhart Tolle  
-* [🔦💡 Man's Search for Meaning](./mans-search-for-meaning.md) by Viktor Frankl  
+* [🔦💡 Man's Search for Meaning](/content/books/mans-search-for-meaning.md) by Viktor Frankl  
   
 ### ❤️ If You Loved This  
   
 * ⛵ Jonathan Livingston Seagull by Richard Bach  
-* [🤴 The Little Prince](./the-little-prince.md) by Antoine de Saint-Exupéry  
+* [🤴 The Little Prince](/content/books/the-little-prince.md) by Antoine de Saint-Exupéry  
   
 ### ↔️ Similar But Different  
   

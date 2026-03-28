@@ -7,7 +7,7 @@ share: true
 CTA: 📺 Discover radio's legacy.
 affiliate link: https://amzn.to/44fHuKX
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🇺🇸📻 Shadow of the New Deal: The Victory of Public Broadcasting  
 [🛒 Shadow of the New Deal: The Victory of Public Broadcasting. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/44fHuKX)  
   
@@ -74,12 +74,12 @@ affiliate link: https://amzn.to/44fHuKX
 ### ↔️ Contrasting  
 * 🏛️ The Politics of Media Policy by Des Freedman: Offers a critical perspective on market principles in media policy, including public broadcasting.  
 * ✍️ Republic of Detours: How the New Deal Paid Broke Writers to Rediscover America by Scott Borchert: Focuses on other cultural aspects of the New Deal, not specifically broadcasting.  
-* [🇺🇸🏛️ Why the New Deal Matters](./why-the-new-deal-matters.md) by Eric Rauchway: Provides a broader defense of the New Deal's transformative impact.  
+* [🇺🇸🏛️ Why the New Deal Matters](/content/books/why-the-new-deal-matters.md) by Eric Rauchway: Provides a broader defense of the New Deal's transformative impact.  
   
 ### ➕ Related  
 * 🌍 The Handbook of Global Media and Communication Policy edited by Robin Mansell and Marc Raboy: Offers insights into media policy worldwide and new conceptual frameworks.  
-* [🏭🫡 Manufacturing Consent: The Political Economy of the Mass Media](./manufacturing-consent.md) by Edward S. Herman and Noam Chomsky: A critical analysis of media's role in shaping public opinion.  
-* [👁️‍🗨️💰⛓️👤 The Age of Surveillance Capitalism: The Fight for a Human Future at the New Frontier of Power](./the-age-of-surveillance-capitalism.md) by Shoshana Zuboff: Explores the commercialization of information in the digital age.  
+* [🏭🫡 Manufacturing Consent: The Political Economy of the Mass Media](/content/books/manufacturing-consent.md) by Edward S. Herman and Noam Chomsky: A critical analysis of media's role in shaping public opinion.  
+* [👁️‍🗨️💰⛓️👤 The Age of Surveillance Capitalism: The Fight for a Human Future at the New Frontier of Power](/content/books/the-age-of-surveillance-capitalism.md) by Shoshana Zuboff: Explores the commercialization of information in the digital age.  
   
 ## 🫵 What Do You Think?  
   

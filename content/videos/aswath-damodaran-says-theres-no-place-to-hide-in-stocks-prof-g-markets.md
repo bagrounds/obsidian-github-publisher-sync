@@ -10,7 +10,7 @@ Channel: The Prof G Pod – Scott Galloway
 tags:
 youtube: https://youtu.be/PI5ClUF9G6k
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md)  
 # 🌍🏠📉 Aswath Damodaran Says «There’s No Place to Hide in Stocks» | Prof G Markets  
 ![Aswath Damodaran Says «There’s No Place to Hide in Stocks» | Prof G Markets](https://youtu.be/PI5ClUF9G6k)  
   
@@ -63,5 +63,5 @@ youtube: https://youtu.be/PI5ClUF9G6k
 ### 🎨 Creatively Related  
 * 📕 **Boom and Bust** by William Quinn and John D Turner.  
     * 🔺 This book uses the **Bubble Triangle** framework to analyze historical bubbles from the 17th century to the dot-com crash, providing a structural lens to analyze the AI boom's components.  
-* **[📉📈🌪️💪 Antifragile: Things That Gain from Disorder](../books/antifragile-things-that-gain-from-disorder.md)** by Nassim Nicholas Taleb.  
+* **[📉📈🌪️💪 Antifragile: Things That Gain from Disorder](/content/books/antifragile-things-that-gain-from-disorder.md)** by Nassim Nicholas Taleb.  
     * 🛡️ Taleb's work suggests building a portfolio that benefits from volatility and disorder, aligning with the video's suggestion to hold assets like physical goods that hedge against systemic risk.

@@ -7,7 +7,7 @@ share: true
 CTA: 🤝 Study giving.
 affiliate link: https://amzn.to/44LsSDj
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🎁🔄 The Gift: The Form and Reason for Exchange in Archaic Societies  
 [🛒 The Gift: The Form and Reason for Exchange in Archaic Societies. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/44LsSDj)  
   
@@ -73,11 +73,11 @@ affiliate link: https://amzn.to/44LsSDj
 ### 📖 Similar  
 * 🗺️ Argonauts of the Western Pacific by Bronisław Malinowski  
 * 🗿 Stone Age Economics by Marshall Sahlins  
-* [🏛️💰 Debt: The First 5,000 Years](./debt-the-first-5000-years.md) Years by David Graeber  
+* [🏛️💰 Debt: The First 5,000 Years](/content/books/debt-the-first-5000-years.md) Years by David Graeber  
   
 ### ⚔️ Contrasting  
 * 📈 The Wealth of Nations by Adam Smith  
-* [🧑‍🤝‍🧑💰 Human Action: A Treatise on Economics](./human-action-a-treatise-on-economics.md) by Ludwig von Mises  
+* [🧑‍🤝‍🧑💰 Human Action: A Treatise on Economics](/content/books/human-action-a-treatise-on-economics.md) by Ludwig von Mises  
 * 🌾 The Moral Economy of the Peasant by James C. Scott  
   
 ### 📌 Related  

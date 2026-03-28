@@ -7,7 +7,7 @@ share: true
 CTA: 🧘🏼‍♀️ Quiet your mind.
 affiliate link: https://amzn.to/44lHABp
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🧘🏼‍♀️👩🏼‍🏫 Practicing Mindfulness: An Introduction to Meditation  
 [🛒 Practicing Mindfulness: An Introduction to Meditation. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/44lHABp)  
   
@@ -49,8 +49,8 @@ affiliate link: https://amzn.to/44lHABp
   
 ### 📖 Similar Books (Introductory and Practical)  
   
-* **[👣➡️🌍 Wherever You Go, There You Are](./wherever-you-go-there-you-are.md): Mindfulness Meditation in Everyday Life by Jon Kabat-Zinn:** A classic in the field, this book provides accessible wisdom and short practices for integrating mindfulness into daily life. 👨‍🏫 Kabat-Zinn is a pioneer in secular mindfulness.  
-* **[🧘🗣️ Mindfulness in Plain English](./mindfulness-in-plain-english.md) by Bhante Henepola Gunaratana:** Praised for its clear and straightforward approach, this book demystifies mindfulness meditation and offers practical instructions. ☸️ It comes from a Buddhist monastic tradition but is presented in a universally accessible way.  
+* **[👣➡️🌍 Wherever You Go, There You Are](/content/books/wherever-you-go-there-you-are.md): Mindfulness Meditation in Everyday Life by Jon Kabat-Zinn:** A classic in the field, this book provides accessible wisdom and short practices for integrating mindfulness into daily life. 👨‍🏫 Kabat-Zinn is a pioneer in secular mindfulness.  
+* **[🧘🗣️ Mindfulness in Plain English](/content/books/mindfulness-in-plain-english.md) by Bhante Henepola Gunaratana:** Praised for its clear and straightforward approach, this book demystifies mindfulness meditation and offers practical instructions. ☸️ It comes from a Buddhist monastic tradition but is presented in a universally accessible way.  
 * 🌸 **The Miracle of Mindfulness: An Introduction to the Practice of Meditation by Thich Nhat Hanh:** A gentle and poetic introduction to mindfulness from a renowned Zen master, emphasizing how to find mindfulness in everyday tasks.  
 * 🗓️ **Real Happiness: The Power of Meditation: A 28-Day Program by Sharon Salzberg:** This book offers a structured, step-by-step 28-day program for establishing a meditation routine, focusing on meditation as an exercise.  
   
@@ -66,11 +66,11 @@ affiliate link: https://amzn.to/44lHABp
 * 🔬 **The Neuroscience of Meditation: Understanding Individual Differences by Yi-Yuan Tang and Rongxiang Tang:** This book delves into the scientific research on how meditation affects the brain, providing a deeper understanding of the neurological basis for the benefits of mindfulness.  
 * 🤔 **Consciousness, Attention, and Conscious Attention by Carlos Montemayor and Harry Haladjian:** This academic book rigorously analyzes the relationship between consciousness and attention from a cognitive science and philosophical perspective.  
 * 🕰️ **The Power of Now by Eckhart Tolle:** A widely popular book that explores the importance of living in the present moment and transcending the ego, offering profound insights into consciousness that complement mindfulness practices.  
-* **[🤿💼 Deep Work: Rules for Focused Success in a Distracted World](./deep-work.md) by Cal Newport:** This book explores the importance of focused, uninterrupted work in an increasingly distracting world and provides strategies for cultivating deep work habits, which aligns with the attention-training aspect of mindfulness.  
+* **[🤿💼 Deep Work: Rules for Focused Success in a Distracted World](/content/books/deep-work.md) by Cal Newport:** This book explores the importance of focused, uninterrupted work in an increasingly distracting world and provides strategies for cultivating deep work habits, which aligns with the attention-training aspect of mindfulness.  
 * ✏️ **Mindfulness in Drawing by Wendy Ann Greenhalgh:** This book explores the connection between creativity and mindfulness through the act of drawing, demonstrating how a creative activity can be a meditative practice.  
-* **[🧠🫂 The Embodied Mind: Cognitive Science and Human Experience](./the-embodied-mind-cognitive-science-and-human-experience.md) by Francisco Varela, Evan Thompson, and Eleanor Rosch:** This foundational text in cognitive science explores the theory of enaction and the role of lived experience, including insights from Buddhist mindfulness practice, in understanding the mind.  
+* **[🧠🫂 The Embodied Mind: Cognitive Science and Human Experience](/content/books/the-embodied-mind-cognitive-science-and-human-experience.md) by Francisco Varela, Evan Thompson, and Eleanor Rosch:** This foundational text in cognitive science explores the theory of enaction and the role of lived experience, including insights from Buddhist mindfulness practice, in understanding the mind.  
   
-## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
+## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Practicing Mindfulness: An Introduction to Meditation. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.  
   
 ## 🐦 Tweet  

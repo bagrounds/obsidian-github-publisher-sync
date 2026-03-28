@@ -7,7 +7,7 @@ share: true
 affiliate link: https://amzn.to/4nPh4qN
 CTA: 💡 Reconsider belief.
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # ❓✝️ The Dawkins Delusion?: Atheist Fundamentalism and the Denial of the Divine  
 [🛒 The Dawkins Delusion?: Atheist Fundamentalism and the Denial of the Divine. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4nPh4qN)  
   
@@ -54,16 +54,16 @@ CTA: 💡 Reconsider belief.
   
 ➖ These recommendations represent the "new atheist" perspective, advocating for atheism and presenting arguments against the existence of God:  
   
-* **[❓✝️ The God Delusion](./the-god-delusion.md)** by Richard Dawkins. ❗This is the seminal work to which The Dawkins Delusion? is a direct response, outlining Dawkins' arguments that God is a delusion and that religion is harmful.  
-* **[🙏🚫🌍 God Is Not Great: How Religion Poisons Everything](./god-is-not-great-how-religion-poisons-everything.md)** by Christopher Hitchens. 😠 A provocative and often polemical critique of organized religion, arguing that it is the source of much of the world's evil and irrationality.  
+* **[❓✝️ The God Delusion](/content/books/the-god-delusion.md)** by Richard Dawkins. ❗This is the seminal work to which The Dawkins Delusion? is a direct response, outlining Dawkins' arguments that God is a delusion and that religion is harmful.  
+* **[🙏🚫🌍 God Is Not Great: How Religion Poisons Everything](/content/books/god-is-not-great-how-religion-poisons-everything.md)** by Christopher Hitchens. 😠 A provocative and often polemical critique of organized religion, arguing that it is the source of much of the world's evil and irrationality.  
 * 📖 **Letter to a Christian Nation** by Sam Harris. ✉️ This concise book directly challenges the tenets of Christianity and highlights what Harris perceives as the dangers and irrationality of religious belief in the modern world.  
   
 ### ✨ Creatively Related Books  
   
 ✨ These books explore broader themes of belief, meaning, human history, and the search for understanding, offering different lenses through which to consider the questions raised by the science-religion debate:  
   
-* **[📜🌍⏳ Sapiens: A Brief History of Humankind](./sapiens-a-brief-history-of-humankind.md)** by Yuval Noah Harari. ⏳ This book explores the role of shared myths, fictions, and collective beliefs in the development of human societies, providing a fascinating, albeit secular, perspective on the power and function of human constructs, including religion.  
-* **[🌌 Cosmos](./cosmos.md)** by Carl Sagan. 🌌 A classic work that celebrates scientific inquiry and the wonders of the universe, often inspiring a naturalistic worldview while also conveying a sense of awe and the human quest for understanding our place in the cosmos.  
+* **[📜🌍⏳ Sapiens: A Brief History of Humankind](/content/books/sapiens-a-brief-history-of-humankind.md)** by Yuval Noah Harari. ⏳ This book explores the role of shared myths, fictions, and collective beliefs in the development of human societies, providing a fascinating, albeit secular, perspective on the power and function of human constructs, including religion.  
+* **[🌌 Cosmos](/content/books/cosmos.md)** by Carl Sagan. 🌌 A classic work that celebrates scientific inquiry and the wonders of the universe, often inspiring a naturalistic worldview while also conveying a sense of awe and the human quest for understanding our place in the cosmos.  
 * 📖 **A History of God: The 4,000-Year Quest of Judaism, Christianity and Islam** by Karen Armstrong. 📜 This book offers a comprehensive historical and sociological examination of the evolution of the concept of God within the three major monotheistic traditions, providing a nuanced understanding of religious development often missing from the new atheist discourse.  
   
 ## 💬 [Gemini](https://gemini.google.com) Prompt (gemini-2.5-flash)  

@@ -6,7 +6,7 @@ URL: https://bagrounds.org/books/the-mountain-is-you-transforming-self-sabotage-
 share: true
 affiliate link: https://amzn.to/4jvIqj0
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # ⛰️➡️🧘 The Mountain is You: Transforming Self-Sabotage into Self-Mastery  
 [🛒 The Mountain is You: Transforming Self-Sabotage into Self-Mastery. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4jvIqj0)  
   
@@ -43,9 +43,9 @@ Brianna Wiest's writing is often described as:
 ## 📚 Book Recommendations  
   
 ### 📖 Similar Reads (Overcoming Inner Obstacles, Self-Mastery)  
-1. **[⚛️🔄 Atomic Habits](./atomic-habits.md)** by James Clear: Focuses on the power of small, consistent changes to build good habits and break bad ones 🚫, aligning with Wiest's theme of actionable steps towards self-improvement 🌱.  
-2. **[🦁🫀 Daring Greatly: How the Courage to Be Vulnerable Transforms the Way We Live, Love, Parent, and Lead](./daring-greatly-how-the-courage-to-be-vulnerable-transforms-the-way-we-live-love-parent-and-lead.md)** by Brené Brown: 🦸‍♀️ Explores vulnerability, shame 😔, and courage 💪, complementing Wiest's emphasis on confronting fears 😟 and building resilience through emotional honesty 🫂.  
-3. **[Mindset](./mindset.md): The New Psychology of Success** by Carol S. Dweck: 🧠 Introduces the concept of fixed vs. growth mindsets 🌱, echoing Wiest's ideas on how beliefs shape potential ✨ and the importance of embracing challenges for growth.  
+1. **[⚛️🔄 Atomic Habits](/content/books/atomic-habits.md)** by James Clear: Focuses on the power of small, consistent changes to build good habits and break bad ones 🚫, aligning with Wiest's theme of actionable steps towards self-improvement 🌱.  
+2. **[🦁🫀 Daring Greatly: How the Courage to Be Vulnerable Transforms the Way We Live, Love, Parent, and Lead](/content/books/daring-greatly-how-the-courage-to-be-vulnerable-transforms-the-way-we-live-love-parent-and-lead.md)** by Brené Brown: 🦸‍♀️ Explores vulnerability, shame 😔, and courage 💪, complementing Wiest's emphasis on confronting fears 😟 and building resilience through emotional honesty 🫂.  
+3. **[Mindset](/content/books/mindset.md): The New Psychology of Success** by Carol S. Dweck: 🧠 Introduces the concept of fixed vs. growth mindsets 🌱, echoing Wiest's ideas on how beliefs shape potential ✨ and the importance of embracing challenges for growth.  
 4. **The Four Agreements** by Don Miguel Ruiz: 🤝 Offers a code of conduct based on ancient Toltec wisdom to achieve personal freedom 🕊️ and peace ☮️, similar to Wiest's focus on changing inner narratives and beliefs.  
 5. **You Are a Badass** by Jen Sincero: 💃 A motivational guide to overcoming self-doubt 😟 and limiting beliefs with a humorous and accessible approach 😂.  
   
@@ -57,10 +57,10 @@ Brianna Wiest's writing is often described as:
   
 ### 🎨 Creatively Related (Themes Explored Through Different Genres)  
 1. **Art & Fear: Observations On the Perils (and Rewards) of Artmaking** by David Bayles & Ted Orland: 🎨 Explores the internal struggles (fear 😟, self-doubt) specific to the creative process, mirroring Wiest's themes of overcoming internal obstacles but within the context of making art.  
-2. **[🪖🎨 The War of Art](./the-war-of-art.md): Break Through the Blocks and Win Your Inner Creative Battles** by Steven Pressfield: ⚔️ Personifies internal struggle as "Resistance" and offers strategies to overcome it, particularly for creative pursuits, providing a more combative metaphor compared to Wiest's mountain 🏔️.  
-3. **[🪄 Big Magic: Creative Living Beyond Fear](./big-magic.md)** by Elizabeth Gilbert: ✨ Explores creativity, fear, and living a fulfilling life by embracing curiosity 🤔 over passion ❤️‍🔥, offering a gentler, more inspiration-focused take on overcoming internal blocks related to creativity.  
-4. **[🔦💡 Man's Search for Meaning](./mans-search-for-meaning.md)** by Viktor Frankl: 🙏 A profound memoir and exploration of finding meaning even in extreme suffering. While not self-help, it powerfully explores resilience 💪, purpose 🎯, and the human capacity to choose one's attitude 🤔, relating to themes of overcoming internal states and finding strength within adversity.  
+2. **[🪖🎨 The War of Art](/content/books/the-war-of-art.md): Break Through the Blocks and Win Your Inner Creative Battles** by Steven Pressfield: ⚔️ Personifies internal struggle as "Resistance" and offers strategies to overcome it, particularly for creative pursuits, providing a more combative metaphor compared to Wiest's mountain 🏔️.  
+3. **[🪄 Big Magic: Creative Living Beyond Fear](/content/books/big-magic.md)** by Elizabeth Gilbert: ✨ Explores creativity, fear, and living a fulfilling life by embracing curiosity 🤔 over passion ❤️‍🔥, offering a gentler, more inspiration-focused take on overcoming internal blocks related to creativity.  
+4. **[🔦💡 Man's Search for Meaning](/content/books/mans-search-for-meaning.md)** by Viktor Frankl: 🙏 A profound memoir and exploration of finding meaning even in extreme suffering. While not self-help, it powerfully explores resilience 💪, purpose 🎯, and the human capacity to choose one's attitude 🤔, relating to themes of overcoming internal states and finding strength within adversity.  
 5. **Siddhartha** by Hermann Hesse: 🧘 A novel exploring a spiritual journey of self-discovery 🔍, detachment 🧘, and enlightenment ✨, touching upon themes of inner struggle, letting go 🕊️, and finding one's own path 🛤️, echoing Wiest's journey metaphor in a narrative form.  
   
-## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
+## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on The Mountain is You: Transforming Self-Sabotage into Self-Mastery. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

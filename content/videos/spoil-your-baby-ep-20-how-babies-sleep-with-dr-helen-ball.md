@@ -10,7 +10,7 @@ Channel: Greer Kirshenbaum PhD
 tags:
 youtube: https://youtu.be/rl0fp914orA
 ---
-[Home](../index.md) > [Videos](./index.md) | [👶😴 How Babies Sleep: A Science-Based Guide to the First 365 Days and Nights](../books/how-babies-sleep-a-science-based-guide-to-the-first-365-days-and-nights.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md) | [👶😴 How Babies Sleep: A Science-Based Guide to the First 365 Days and Nights](/content/books/how-babies-sleep-a-science-based-guide-to-the-first-365-days-and-nights.md)  
 # 👶😴👩‍⚕️ Spoil Your Baby Ep 20 - How Babies Sleep with Dr. Helen Ball  
 ![Spoil Your Baby Ep 20 - How Babies Sleep with Dr. Helen Ball](https://youtu.be/rl0fp914orA)  
   

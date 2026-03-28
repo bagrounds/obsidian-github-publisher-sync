@@ -10,7 +10,7 @@ Channel: PBS NewsHour
 tags:
 youtube: https://youtu.be/rM4jcMN2RAU
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md)  
 # 👨‍⚖️🗣️😠🔫 Capehart and Wehner on Trump's reaction to the National Guard shooting  
 ![Capehart and Wehner on Trump's reaction to the National Guard shooting](https://youtu.be/rM4jcMN2RAU)  
   
@@ -53,7 +53,7 @@ youtube: https://youtu.be/rM4jcMN2RAU
   
 ### ↔️ Similar  
   
-* [🇺🇸📉🏛️ The Path to Paralysis: How American Politics Became Nasty, Dysfunctional, and a Threat to the Republic](../books/the-path-to-paralysis-how-american-politics-became-nasty-dysfunctional-and-a-threat-to-the-republic.md) by Donald G. Nieman (Anthem Press).  
+* [🇺🇸📉🏛️ The Path to Paralysis: How American Politics Became Nasty, Dysfunctional, and a Threat to the Republic](/content/books/the-path-to-paralysis-how-american-politics-became-nasty-dysfunctional-and-a-threat-to-the-republic.md) by Donald G. Nieman (Anthem Press).  
     * 📜 This book examines the 60-year history of political dysfunction in the U.S., exploring the roots of today's hyper-partisanship and hostility.  
 * 🧠 Radical American Partisanship: Mapping Violent Hostility, Its Causes, and the Consequences for Democracy by Nathan P. Kalmoe (University of Chicago Press).  
     * 🔪 It analyzes the intense affective polarization in the U.S., focusing on the rise of political hostility and its consequences for democratic norms.  

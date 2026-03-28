@@ -9,7 +9,7 @@ Platform:
 Channel: PBS NewsHour
 tags:
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md)  
 # News Wrap: Senate pulls all-nighter to pass Republican budget bill  
 ![News Wrap: Senate pulls all-nighter to pass Republican budget bill](https://youtu.be/foD8g6bpZpM)  
   

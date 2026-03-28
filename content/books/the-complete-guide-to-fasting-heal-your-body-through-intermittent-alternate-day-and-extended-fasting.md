@@ -6,7 +6,7 @@ URL: https://bagrounds.org/books/the-complete-guide-to-fasting-heal-your-body-th
 share: true
 affiliate link: https://amzn.to/3FwibLE
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 📖⏱️🍎 The Complete Guide to Fasting: Heal Your Body Through Intermittent, Alternate-Day, and Extended Fasting  
 [🛒 The Complete Guide to Fasting: Heal Your Body Through Intermittent, Alternate-Day, and Extended Fasting. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3FwibLE)  
   
@@ -53,13 +53,13 @@ affiliate link: https://amzn.to/3FwibLE
 * 📖 **Books promoting frequent small meals or traditional calorie-counting diets:** 🔢 These would contrast with the core principles of feasting and fasting cycles. (No specific title, but a general category).  
   
 ### 🧠 Creatively Related Books (Focus on Discipline, Habit Formation, and Holistic Health)  
-* 📖 **"[The Power of Habit](./the-power-of-habit.md): Why We Do What We Do in Life and Business" by Charles Duhigg:** 🔁 Explores the science of habit formation and how understanding habits can lead to personal transformation, relevant to adopting a new lifestyle like fasting.  
-* **[⚛️🔄 Atomic Habits](./atomic-habits.md): An Easy & Proven Way to Build Good Habits & Break Bad Ones by James Clear:** 🧱 Offers practical strategies for building small, consistent habits that lead to significant results, which can support a fasting regimen.  
-* **[🏎️⛽ Drive: The Surprising Truth About What Motivates Us](./drive-the-surprising-truth-about-what-motivates-us.md) by Daniel Pink:** 🚀 Discusses intrinsic motivation, which can be crucial for adhering to health goals.  
-* **[🔋📈 The Power of Full Engagement: Managing Energy, Not Time, Is the Key to High Performance and Personal Renewal](./the-power-of-full-engagement-managing-energy-not-time-is-the-key-to-high-performance-and-personal-renewal.md) by Jim Loehr and Tony Schwartz:** ⚡ Focuses on managing energy (physical, emotional, mental, and spiritual) for optimal performance, a concept that can complement the physical benefits of fasting.  
+* 📖 **"[The Power of Habit](/content/books/the-power-of-habit.md): Why We Do What We Do in Life and Business" by Charles Duhigg:** 🔁 Explores the science of habit formation and how understanding habits can lead to personal transformation, relevant to adopting a new lifestyle like fasting.  
+* **[⚛️🔄 Atomic Habits](/content/books/atomic-habits.md): An Easy & Proven Way to Build Good Habits & Break Bad Ones by James Clear:** 🧱 Offers practical strategies for building small, consistent habits that lead to significant results, which can support a fasting regimen.  
+* **[🏎️⛽ Drive: The Surprising Truth About What Motivates Us](/content/books/drive-the-surprising-truth-about-what-motivates-us.md) by Daniel Pink:** 🚀 Discusses intrinsic motivation, which can be crucial for adhering to health goals.  
+* **[🔋📈 The Power of Full Engagement: Managing Energy, Not Time, Is the Key to High Performance and Personal Renewal](/content/books/the-power-of-full-engagement-managing-energy-not-time-is-the-key-to-high-performance-and-personal-renewal.md) by Jim Loehr and Tony Schwartz:** ⚡ Focuses on managing energy (physical, emotional, mental, and spiritual) for optimal performance, a concept that can complement the physical benefits of fasting.  
 * 📖 **"Unbroken: A World War II Story of Survival, Resilience, and Redemption" by Laura Hillenbrand:** 🕊️ While not a health book, it's an incredibly motivating story about human resilience and the power of the human spirit to overcome adversity, which can inspire discipline in any area of life.  
 * 📖 **"Creative Discipline, Connected Family: Transforming Tears, Tantrums and Troubles While Staying Close to Your Children" by Lou Harvey-Zahra:** 👨‍👩‍👧‍👦 Though focused on parenting, this book explores the concept of "creative discipline" and fostering positive connections, which touches on themes of setting limits and mindful approaches that can be broadly applied.  
 * 📖 **Books on mindfulness and meditation:** 🧘 Practices that can support the mental aspects of fasting, such as managing hunger cues and developing self-awareness. (No specific title, but a general category).  
   
-## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
+## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on The Complete Guide to Fasting: Heal Your Body Through Intermittent, Alternate-Day, and Extended Fasting. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

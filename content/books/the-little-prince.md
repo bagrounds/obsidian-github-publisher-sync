@@ -7,7 +7,7 @@ share: true
 CTA: 🌠 Discover your inner child.
 affiliate link: https://amzn.to/4b9EaWc
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🤴 The Little Prince  
 [🛒 The Little Prince. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4b9EaWc)  
   
@@ -66,13 +66,13 @@ affiliate link: https://amzn.to/4b9EaWc
   
 ### ↔️ Similar  
 * 📖 Jonathan Livingston Seagull by Richard Bach  
-* [✨🧙‍♂️⚗️ The Alchemist](./the-alchemist.md) by Paulo Coelho  
+* [✨🧙‍♂️⚗️ The Alchemist](/content/books/the-alchemist.md) by Paulo Coelho  
 * 📖 Siddhartha by Hermann Hesse  
   
 ### 🆚 Contrasting  
 * 📖 Candide by Voltaire  
 * 📖 The Stranger by Albert Camus  
-* [👁️ 1984](./1984.md) by George Orwell  
+* [👁️ 1984](/content/books/1984.md) by George Orwell  
   
 ### 🔗 Related  
 * 📖 Momo by Michael Ende  

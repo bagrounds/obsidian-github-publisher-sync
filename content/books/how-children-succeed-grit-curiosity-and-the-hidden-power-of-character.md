@@ -7,7 +7,7 @@ share: true
 affiliate link: https://amzn.to/3VTeEeN
 CTA: 🌱 Nurture resilience.
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🧑‍🎓🌱 How Children Succeed: Grit, Curiosity, and the Hidden Power of Character  
 [🛒 How Children Succeed: Grit, Curiosity, and the Hidden Power of Character. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3VTeEeN)  
   
@@ -36,9 +36,9 @@ CTA: 🌱 Nurture resilience.
   
 ### 🤝 Similar Books  
   
-* **[🌱🧘🏼‍♀️🏆 Mindset: The New Psychology of Success](./mindset.md)** by Carol S Dweck  
+* **[🌱🧘🏼‍♀️🏆 Mindset: The New Psychology of Success](/content/books/mindset.md)** by Carol S Dweck  
     * 🌱 This influential book introduces the concepts of "fixed mindset" and "growth mindset," arguing that believing abilities can be developed through dedication and hard work is crucial for success. 🤝 This aligns directly with Tough's emphasis on malleable character traits.  
-* **[❤️‍🔥💪 Grit: The Power of Passion and Perseverance](./grit-the-power-of-passion-and-perseverance.md)** by Angela Duckworth  
+* **[❤️‍🔥💪 Grit: The Power of Passion and Perseverance](/content/books/grit-the-power-of-passion-and-perseverance.md)** by Angela Duckworth  
     * 👩‍🔬 Angela Duckworth, a researcher prominently featured in discussions about character skills, delves deeper into the concept of grit—the sustained passion and perseverance toward long-term goals—a central theme in Tough's work.  
 * **🌱 Helping Children Succeed** by Paul Tough  
     * 📝 This is the author's follow-up book, which further explores what actions parents, educators, and policymakers can take to cultivate the non-cognitive skills essential for children's success.  
@@ -49,7 +49,7 @@ CTA: 🌱 Nurture resilience.
     * 🏢 This sociological study examines how social class influences parenting styles and children's life outcomes, offering a different lens on the structural factors that shape childhood, beyond just individual character traits.  
 * **🤸 Free-Range Kids** by Lenore Skenazy  
     * 🌳 This book advocates for a less supervised and more independent childhood, challenging the idea of "helicopter parenting" and constant adult intervention. 🚫 It offers a contrasting view on the degree of structured guidance children need to develop.  
-* **[🧒🎮 Free to Learn: Why Unleashing the Instinct to Play Will Make Our Children Happier, More Self-Reliant, and Better Students for Life](./free-to-learn-why-unleashing-the-instinct-to-play-will-make-our-children-happier-more-self-reliant-and-better-students-for-life.md)** by Peter Gray  
+* **[🧒🎮 Free to Learn: Why Unleashing the Instinct to Play Will Make Our Children Happier, More Self-Reliant, and Better Students for Life](/content/books/free-to-learn-why-unleashing-the-instinct-to-play-will-make-our-children-happier-more-self-reliant-and-better-students-for-life.md)** by Peter Gray  
     * 🎓 A developmental psychologist argues for the importance of self-directed play and child-led learning in fostering resilience, problem-solving, and emotional well-being, suggesting a less formal approach to character development.  
   
 ### 🎨 Creatively Related Books  

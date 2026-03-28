@@ -7,7 +7,7 @@ share: true
 CTA: 🤖 Master LLMs.
 affiliate link: https://amzn.to/4f2wnct
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🤖🗣️ Hands-On Large Language Models: Language Understanding and Generation  
 [🛒 Hands-On Large Language Models: Language Understanding and Generation. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4f2wnct)  
   
@@ -40,7 +40,7 @@ affiliate link: https://amzn.to/4f2wnct
   
 * 🧱 **Build a Large Language Model (From Scratch) by Sebastian Raschka:** As the title suggests, this book takes a deep dive into the process of creating an LLM from the ground up, offering an unparalleled understanding of the underlying mechanics.  
 * 🏭 **AI Engineering: Building Applications with Foundation Models by Chip Huyen:** This book provides a comprehensive overview of the engineering principles and best practices for building real-world applications on top of large-scale AI models.  
-* **[🗣️💻 Natural Language Processing with Transformers](./natural-language-processing-with-transformers.md), Revised Edition by Lewis Tunstall, Leandro von Werra, and Thomas Wolf:** This book, written by engineers from Hugging Face, is a definitive guide to using the popular Transformers library for a wide range of NLP tasks.  
+* **[🗣️💻 Natural Language Processing with Transformers](/content/books/natural-language-processing-with-transformers.md), Revised Edition by Lewis Tunstall, Leandro von Werra, and Thomas Wolf:** This book, written by engineers from Hugging Face, is a definitive guide to using the popular Transformers library for a wide range of NLP tasks.  
 * ⚙️ **Practical Natural Language Processing by Sowmya Vajjala, Bodhisattwa Majumder, Anuj Gupta, and Harshit Surana:** This book provides a practical introduction to NLP, covering a wide range of techniques and applications.  
 * 🖐️ **Hands-On Machine Learning with Scikit-Learn, Keras & TensorFlow by Aurélien Géron:** A classic in the field, this book provides a comprehensive and practical guide to machine learning, with later editions including more on deep learning and NLP.  
   
@@ -49,16 +49,16 @@ affiliate link: https://amzn.to/4f2wnct
 * 🗣️ **Speech and Language Processing by Daniel Jurafsky and James H. Martin:** Often considered the bible of NLP, this textbook provides a comprehensive and rigorous introduction to the field, covering a vast range of topics from linguistic fundamentals to advanced algorithms.  
 * 💯 **The Hundred-Page Machine Learning Book by Andriy Burkov:** A concise yet thorough overview of the fundamental concepts and algorithms in machine learning.  
 * 📊 **Foundations of Statistical Natural Language Processing by Christopher D. Manning and Hinrich Schütze:** A classic text that delves into the statistical methods that form the bedrock of modern NLP.  
-* 🧠 **[🧠💻🤖 Deep Learning](./deep-learning.md) by Ian Goodfellow, Yoshua Bengio, and Aaron Courville:** A comprehensive and theoretical exploration of the field of deep learning, written by some of its leading pioneers.  
+* 🧠 **[🧠💻🤖 Deep Learning](/content/books/deep-learning.md) by Ian Goodfellow, Yoshua Bengio, and Aaron Courville:** A comprehensive and theoretical exploration of the field of deep learning, written by some of its leading pioneers.  
 * 🧪 **The Elements of Statistical Learning by Trevor Hastie, Robert Tibshirani, and Jerome Friedman:** A seminal work that provides a deep and mathematically grounded treatment of statistical learning methods.  
   
 ### 🎨 Creatively Related Books  
   
 #### ⚖️ On the Ethics and Societal Impact of AI  
   
-* **[📊📉🏛️ Weapons of Math Destruction: How Big Data Increases Inequality and Threatens Democracy](./weapons-of-math-destruction-how-big-data-increases-inequality-and-threatens-democracy.md) by Cathy O'Neil:** This book explores how big data and algorithms can perpetuate and even amplify inequality.  
+* **[📊📉🏛️ Weapons of Math Destruction: How Big Data Increases Inequality and Threatens Democracy](/content/books/weapons-of-math-destruction-how-big-data-increases-inequality-and-threatens-democracy.md) by Cathy O'Neil:** This book explores how big data and algorithms can perpetuate and even amplify inequality.  
 * 🌍 **Atlas of AI by Kate Crawford:** A critical examination of the hidden social, political, and environmental costs of artificial intelligence.  
-* **[👁️‍🗨️💰⛓️👤 The Age of Surveillance Capitalism: The Fight for a Human Future at the New Frontier of Power](./the-age-of-surveillance-capitalism.md) by Shoshana Zuboff:** A groundbreaking analysis of the new form of capitalism that uses human experience as raw material for commercial practices.  
+* **[👁️‍🗨️💰⛓️👤 The Age of Surveillance Capitalism: The Fight for a Human Future at the New Frontier of Power](/content/books/the-age-of-surveillance-capitalism.md) by Shoshana Zuboff:** A groundbreaking analysis of the new form of capitalism that uses human experience as raw material for commercial practices.  
 * ✊ **Algorithms of Oppression by Safiya Umoja Noble:** This book reveals how search engines and other algorithmic platforms can reinforce racism and other forms of discrimination.  
 * 🤖 **AI Ethics by Mark Coeckelbergh:** Provides a structured and accessible overview of the key ethical issues and debates surrounding artificial intelligence.  
   
@@ -70,5 +70,5 @@ affiliate link: https://amzn.to/4f2wnct
 * 📈 **Data-Driven Graphic Design by Andrew Richardson:** Explores the intersection of data, design, and programming to create visually compelling and informative graphics.  
 * 👩‍💻 **The Creative Programmer by Wouter Groeneveld:** This book explores the creative aspects of software development, offering techniques and exercises to enhance problem-solving and innovation in programming.  
   
-## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro)  
+## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-pro)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Hands-On Large Language Models: Language Understanding and Generation. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

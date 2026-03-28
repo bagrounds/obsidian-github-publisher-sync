@@ -10,7 +10,7 @@ Channel: Creative Pep Talk
 tags:
 youtube: https://youtu.be/lmfhGGSsqcA
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md)  
 # 🎨🧱🔄 513 - Why Creatives Have to Build Habits Differently and How to Do It  
 ![513 - Why Creatives Have to Build Habits Differently and How to Do It](https://youtu.be/lmfhGGSsqcA)  
   
@@ -52,15 +52,15 @@ While this 📺 video provides a compelling framework for 🎨 creative and 🧠
   
 ## 📚 Book Recommendations  
   
-- [⚛️🔄 Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones](../books/atomic-habits.md) by James Clear: A contrasting view offering a comprehensive guide to building good habits and breaking bad ones, with a focus on systems and environment.  
+- [⚛️🔄 Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones](/content/books/atomic-habits.md) by James Clear: A contrasting view offering a comprehensive guide to building good habits and breaking bad ones, with a focus on systems and environment.  
   
-- [🤿💼 Deep Work: Rules for Focused Success in a Distracted World](../books/deep-work.md) by Cal Newport: Explores how to focus without distraction on a cognitively demanding task, which can be challenging for those with a "manual transmission" brain but offers valuable strategies for focused creative output.  
+- [🤿💼 Deep Work: Rules for Focused Success in a Distracted World](/content/books/deep-work.md) by Cal Newport: Explores how to focus without distraction on a cognitively demanding task, which can be challenging for those with a "manual transmission" brain but offers valuable strategies for focused creative output.  
   
-- [🪖🎨 The War of Art: Break Through the Blocks and Win Your Inner Creative Battles](../books/the-war-of-art.md) by Steven Pressfield: A powerful and inspiring book about overcoming resistance and embracing the professional mindset of a creative, aligning with the idea of making creativity an identity.  
+- [🪖🎨 The War of Art: Break Through the Blocks and Win Your Inner Creative Battles](/content/books/the-war-of-art.md) by Steven Pressfield: A powerful and inspiring book about overcoming resistance and embracing the professional mindset of a creative, aligning with the idea of making creativity an identity.  
   
-- [🏎️⛽ Drive: The Surprising Truth About What Motivates Us](../books/drive-the-surprising-truth-about-what-motivates-us.md) by Daniel H. Pink: Examines the science of motivation, focusing on autonomy, mastery, and purpose, which complements the video's discussion of intrinsic motivation and the "chase" for creatives.  
+- [🏎️⛽ Drive: The Surprising Truth About What Motivates Us](/content/books/drive-the-surprising-truth-about-what-motivates-us.md) by Daniel H. Pink: Examines the science of motivation, focusing on autonomy, mastery, and purpose, which complements the video's discussion of intrinsic motivation and the "chase" for creatives.  
   
-- [🌊🧘🏼‍♀️🧠📈 Flow: The Psychology of Optimal Experience](../books/flow-the-psychology-of-optimal-experience.md) by Mihaly Csikszentmihalyi: Explores the concept of "flow state," where individuals are fully immersed in an activity, offering insights into how creatives can find enjoyment and engagement in their work.  
+- [🌊🧘🏼‍♀️🧠📈 Flow: The Psychology of Optimal Experience](/content/books/flow-the-psychology-of-optimal-experience.md) by Mihaly Csikszentmihalyi: Explores the concept of "flow state," where individuals are fully immersed in an activity, offering insights into how creatives can find enjoyment and engagement in their work.  
   
 - Scrum: The Art of Doing Twice the Work in Half the Time by Jeff Sutherland: Offers a different perspective on project management and iterative work, which could provide a structured yet flexible approach for creative projects.  
   

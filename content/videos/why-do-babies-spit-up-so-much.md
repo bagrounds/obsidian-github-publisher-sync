@@ -9,7 +9,7 @@ Platform:
 Channel: My Pocket Pediatrician
 tags:
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md)  
 # Why Do Babies Spit Up So Much?  
 ![Why Do Babies Spit Up So Much?](https://youtube.com/watch?v=vpckj4w_EWY)  
   
@@ -27,6 +27,6 @@ tags:
   
   
 ## 📚 Book Recommendations  
-* 📚 **[The Happiest Baby On The Block](../books/the-happiest-baby-on-the-block.md)** by Harvey Karp - 👶 This book discusses techniques for soothing babies, including those with 🍼 reflux.  
+* 📚 **[The Happiest Baby On The Block](/content/books/the-happiest-baby-on-the-block.md)** by Harvey Karp - 👶 This book discusses techniques for soothing babies, including those with 🍼 reflux.  
 * 🏠 **Heading Home With Your Newborn: From Birth to Reality** by Laura A. Jana and Jennifer Shu - 📝 This book provides comprehensive advice on newborn care, including 🍼 feeding and 消化 digestive issues.  
 * 🤢 **Baby Reflux: Evidence-Based Approaches to Understanding and Resolving Reflux** by Rowan Miller - 🧐 This book offers an in-depth look at 🍼 reflux and its ⚕️ management.  

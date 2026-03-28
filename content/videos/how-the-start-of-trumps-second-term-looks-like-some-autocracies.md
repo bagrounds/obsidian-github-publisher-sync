@@ -10,7 +10,7 @@ Channel: PBS NewsHour
 tags:
 youtube: https://youtu.be/5s7JRtfntUk
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md)  
 # 🇺🇸👑👎 How the start of Trump’s second term looks like some autocracies  
 ![How the start of Trump’s second term looks like some autocracies](https://youtu.be/5s7JRtfntUk)  
   
@@ -45,13 +45,13 @@ A: 🔄 Scholars observe a **global reverse wave** of democratic decline, where 
 ## 📚 Book Recommendations  
   
 ### Similar Books  
-* [🗳️🏛️☠️ How Democracies Die](../books/how-democracies-die.md) by Steven Levitsky and Daniel Ziblatt: 📖 Examines how modern democracies collapse not through coups, but through elected leaders subverting institutions, providing clear parallels to the video's thesis of autocratic legalism.  
+* [🗳️🏛️☠️ How Democracies Die](/content/books/how-democracies-die.md) by Steven Levitsky and Daniel Ziblatt: 📖 Examines how modern democracies collapse not through coups, but through elected leaders subverting institutions, providing clear parallels to the video's thesis of autocratic legalism.  
 * The Road to Unfreedom: Russia, Europe, America by Timothy Snyder: 🌍 Discusses how historical narratives and foreign influence spread authoritarian thinking westward, linking the geopolitical context to democratic backsliding in the U.S.  
   
 ### Contrasting Books  
-* [🇺🇸📜 The Federalist Papers](../books/the-federalist-papers.md) by Alexander Hamilton, James Madison, and John Jay: 🖋️ Provides the foundational, *optimistic* theory of American separation of powers and federalism, which the video argues is failing due to hyper-partisanship.  
-* [↔️🏛️ The Narrow Corridor: States, Societies, and the Fate of Liberty](../books/the-narrow-corridor-states-societies-and-the-fate-of-liberty.md) by Daron Acemoglu and James A. Robinson: 🚧 Presents the idea that liberty exists in a *narrow corridor* between a despotic state and an absent state, suggesting U.S. institutions are fundamentally resilient against full autocracy due to a long history of societal mobilization.  
+* [🇺🇸📜 The Federalist Papers](/content/books/the-federalist-papers.md) by Alexander Hamilton, James Madison, and John Jay: 🖋️ Provides the foundational, *optimistic* theory of American separation of powers and federalism, which the video argues is failing due to hyper-partisanship.  
+* [↔️🏛️ The Narrow Corridor: States, Societies, and the Fate of Liberty](/content/books/the-narrow-corridor-states-societies-and-the-fate-of-liberty.md) by Daron Acemoglu and James A. Robinson: 🚧 Presents the idea that liberty exists in a *narrow corridor* between a despotic state and an absent state, suggesting U.S. institutions are fundamentally resilient against full autocracy due to a long history of societal mobilization.  
   
 ### Creatively Related Books  
-* [💰🤫 Dark Money: The Hidden History of the Billionaires Behind the Rise of the Radical Right](../books/dark-money-the-hidden-history-of-the-billionaires-behind-the-rise-of-the-radical-right.md) by Jane Mayer: 💰 Explores the *financial infrastructure* and long-term legal strategies used by wealthy donors to influence and capture political and judicial institutions, directly enabling the "autocratic legalism" described.  
+* [💰🤫 Dark Money: The Hidden History of the Billionaires Behind the Rise of the Radical Right](/content/books/dark-money-the-hidden-history-of-the-billionaires-behind-the-rise-of-the-radical-right.md) by Jane Mayer: 💰 Explores the *financial infrastructure* and long-term legal strategies used by wealthy donors to influence and capture political and judicial institutions, directly enabling the "autocratic legalism" described.  
 * The Handmaid's Tale by Margaret Atwood: 👁️ A dystopian novel that illustrates a society where democratic norms are dismantled and replaced by an authoritarian, fear-based regime, serving as a powerful *literary exploration* of the themes of arbitrary power and scapegoating discussed in the video.

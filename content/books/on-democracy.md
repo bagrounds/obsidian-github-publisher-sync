@@ -8,7 +8,7 @@ Author:
 tags:
 affiliate link: https://amzn.to/4dLzFAp
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🏛️🗳️🗣️🤝 On Democracy  
 by Robert Dahl  
 [🛒 On Democracy. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4dLzFAp)  
@@ -64,11 +64,11 @@ Robert A. Dahl was a highly respected and influential political theorist. His wo
 ### Additional Book Recommendations 📚  
   
 * **Best Alternate Book on the Same Topic:** *What is Democracy?* by Giovanni Sartori. Offers another insightful exploration of the concept of democracy, with a slightly different emphasis on its definitional challenges. 🤔  
-* **Best Book That Is Tangentially Related:** *[Bowling Alone](./bowling-alone.md): The Collapse and Revival of American Community* by Robert D. Putnam. Explores the social capital necessary for a thriving democracy, a condition discussed by Dahl. 🤝  
+* **Best Book That Is Tangentially Related:** *[Bowling Alone](/content/books/bowling-alone.md): The Collapse and Revival of American Community* by Robert D. Putnam. Explores the social capital necessary for a thriving democracy, a condition discussed by Dahl. 🤝  
 * **Best Book That Is Diametrically Opposed:** The Road to Serfdom by Friedrich Hayek. Presents a classical liberal critique of collectivism and state control, offering a contrasting perspective on the organization of society and the role of the state. 🚧  
 * **Best Fiction Book That Incorporates Related Ideas:** *The Trial* by Franz Kafka. While fictional, it starkly illustrates the dangers of opaque and unaccountable power structures, highlighting the importance of transparency and due process in a democratic society. ⚖️  
 * **Best Book That Is More General:** *Politics* by Aristotle. A foundational text in political philosophy that provides a broader historical and philosophical context for understanding different forms of government, including democracy. 🏛️  
-* **Best Book That Is More Specific:** [🗳️🏛️☠️ How Democracies Die](./how-democracies-die.md) by Steven Levitsky and Daniel Ziblatt. Examines the contemporary threats to democratic institutions and norms in seemingly stable democracies. 🚨  
+* **Best Book That Is More Specific:** [🗳️🏛️☠️ How Democracies Die](/content/books/how-democracies-die.md) by Steven Levitsky and Daniel Ziblatt. Examines the contemporary threats to democratic institutions and norms in seemingly stable democracies. 🚨  
 * **Best Book That Is More Rigorous:** *Democracy and Its Critics* by Robert A. Dahl (himself!). A more in-depth and scholarly treatment of democratic theory, engaging with various criticisms and complexities. 🤓  
 * **Best Book That Is More Accessible:** *Democracy for All* by Jim Wallis. A more popular and faith-based perspective on the importance of democratic participation and social justice. 🙏  
   

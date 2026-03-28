@@ -7,7 +7,7 @@ share: true
 CTA: 💥 Unleash progress.
 affiliate link: https://amzn.to/48ha29f
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🧑‍💼💥 Prophet of Innovation: Joseph Schumpeter and Creative Destruction  
 [🛒 Prophet of Innovation: Joseph Schumpeter and Creative Destruction. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/48ha29f)  
   
@@ -77,18 +77,18 @@ affiliate link: https://amzn.to/48ha29f
 ### 🤝 Similar  
 * 📚 The Theory of Economic Development by Joseph A. Schumpeter  
 * 📚 Capitalism, Socialism and Democracy by Joseph A. Schumpeter  
-* [💡🤖💰💥🏢📉 The Innovator's Dilemma: When New Technologies Cause Great Firms to Fail](./the-innovators-dilemma.md) by Clayton M. Christensen  
+* [💡🤖💰💥🏢📉 The Innovator's Dilemma: When New Technologies Cause Great Firms to Fail](/content/books/the-innovators-dilemma.md) by Clayton M. Christensen  
 * 📚 Scale: The Universal Laws of Growth, Innovation, Sustainability, and the Pace of Life in Organisms, Cities, Economies, and Companies by Geoffrey West  
   
 ### 🆚 Contrasting  
-* [🧑‍💼🏦💸 The General Theory of Employment, Interest, and Money](./the-general-theory-of-employment-interest-and-money.md) by John Maynard Keynes  
+* [🧑‍💼🏦💸 The General Theory of Employment, Interest, and Money](/content/books/the-general-theory-of-employment-interest-and-money.md) by John Maynard Keynes  
 * 📚 The Road to Serfdom by F.A. Hayek  
 * 📚 Das Kapital by Karl Marx  
   
 ### ➕ Related  
-* [🤔🐇🐢 Thinking, Fast and Slow](./thinking-fast-and-slow.md) by Daniel Kahneman (on human decision-making and biases affecting innovation)  
-* [📜🌍⏳ Sapiens: A Brief History of Humankind](./sapiens-a-brief-history-of-humankind.md) by Yuval Noah Harari (on long-term historical forces and human systems)  
-* [⚫🦢🎲 The Black Swan: The Impact of the Highly Improbable](./the-black-swan-the-impact-of-the-highly-improbable.md) by Nassim Nicholas Taleb (on unpredictable, high-impact events in systems)  
+* [🤔🐇🐢 Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md) by Daniel Kahneman (on human decision-making and biases affecting innovation)  
+* [📜🌍⏳ Sapiens: A Brief History of Humankind](/content/books/sapiens-a-brief-history-of-humankind.md) by Yuval Noah Harari (on long-term historical forces and human systems)  
+* [⚫🦢🎲 The Black Swan: The Impact of the Highly Improbable](/content/books/the-black-swan-the-impact-of-the-highly-improbable.md) by Nassim Nicholas Taleb (on unpredictable, high-impact events in systems)  
   
 ## 🫵 What Do You Think?  
   

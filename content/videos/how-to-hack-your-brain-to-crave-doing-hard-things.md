@@ -9,7 +9,7 @@ Platform: "#YouTube"
 Channel: "[[Spoon Fed Study]]"
 tags:
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md)  
 # 🧠🛠️💪📈 How to hack your brain to crave doing hard things  
 ![How to hack your brain to crave doing hard things.](https://youtu.be/BbhKTFXu7dc)  
   

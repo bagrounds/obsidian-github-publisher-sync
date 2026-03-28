@@ -9,7 +9,7 @@ tags:
 affiliate link: https://amzn.to/4jBYMXz
 CTA: 🤝 Coordinate behaviors.
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🧮♻️ Rational Ritual: Culture, Coordination, and Common Knowledge  
 [🛒 Rational Ritual: Culture, Coordination, and Common Knowledge. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4jBYMXz)  
   
@@ -58,7 +58,7 @@ CTA: 🤝 Coordinate behaviors.
   
 ### 🤝 Similar Reads (Coordination, Common Knowledge, Game Theory, Ritual)  
   
-* **[⚔️♟️ The Strategy of Conflict](./the-strategy-of-conflict.md)** by Thomas C. Schelling: 🧱 A foundational text in game theory that explores coordination problems, focal points, and tacit bargaining, which heavily influenced Chwe's work.  
+* **[⚔️♟️ The Strategy of Conflict](/content/books/the-strategy-of-conflict.md)** by Thomas C. Schelling: 🧱 A foundational text in game theory that explores coordination problems, focal points, and tacit bargaining, which heavily influenced Chwe's work.  
 * 🗣️ **Using Language** by Herbert H. Clark: 🧠 Explores the cognitive and social processes underlying language use, including the concept of common ground (closely related to common knowledge) in communication.  
 * 🤝 **The Evolution of Cooperation** by Robert Axelrod: 🎮 Uses game theory (specifically the Prisoner's Dilemma) to explore how cooperation can emerge and persist among self-interested individuals. ✅ While focused on cooperation rather than pure coordination, it shares the game-theoretic approach to social phenomena.  
 * 🌐 **Micromotives and Macrobehavior** by Thomas C. Schelling: 🤔 Explores how individual choices and interactions can lead to surprising large-scale social patterns, including segregation and critical mass dynamics, relevant to coordination.  
@@ -67,7 +67,7 @@ CTA: 🤝 Coordinate behaviors.
 ### 🆚 Contrasting Perspectives (Culture, Rationality, Ritual)  
   
 * 🎭 **The Interpretation of Cultures** by Clifford Geertz: 🏛️ A seminal work in symbolic anthropology, focusing on culture as a system of shared meanings and symbols interpreted through "thick description," offering a less game-theoretic, more interpretive view of cultural practices like rituals.  
-* 🧠 **[Thinking, Fast and Slow](./thinking-fast-and-slow.md)** by Daniel Kahneman: 🤯 Explores the two systems of human thought – one fast and intuitive (often less "rational"), one slow and deliberate – challenging purely rational choice models of behavior.  
+* 🧠 **[Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md)** by Daniel Kahneman: 🤯 Explores the two systems of human thought – one fast and intuitive (often less "rational"), one slow and deliberate – challenging purely rational choice models of behavior.  
 * 🏛️ **Comparative Politics: Rationality, Culture, and Structure** edited by Mark Irving Lichbach and Alan S. Zuckerman: ⚖️ Presents and contrasts rational choice, culturalist, and structuralist approaches within political science, providing context for Chwe's rational choice perspective against others.  
 * 🌲 **How Forests Think: Toward an Anthropology Beyond the Human** by Eduardo Kohn: 🤔 Challenges anthropocentric views by exploring non-human forms of meaning-making and communication, offering a radically different perspective on interaction and knowledge.  
 * 🕊️ **Ritual: Perspectives and Dimensions** by Catherine Bell: 🎭 A comprehensive overview of ritual theory across disciplines, presenting various analytical frameworks beyond purely rational coordination (e.g., ritual as performance, embodiment, power negotiation).  
@@ -75,10 +75,10 @@ CTA: 🤝 Coordinate behaviors.
 ### 🌟 Creatively Related (Themes, Fiction)  
   
 * 😨 **"The Lottery"** by Shirley Jackson (Short Story): 📜 A chilling fictional exploration of a seemingly irrational ritual and the power of social conformity and tradition, regardless of purpose.  
-* **[👁️ 1984](./1984.md)** by George Orwell: 👮 Explores totalitarian control, surveillance (a contrast to the public nature of Chwe's rituals), and the manipulation of collective thought and language, touching on themes of enforced coordination and suppression of dissenting knowledge.  
-* 💻 **[Snow Crash](./snow-crash.md)** by Neal Stephenson: 🌐 A cyberpunk novel where information, language, and viruses (both biological and informational) profoundly shape reality and collective consciousness, offering a fictional take on the power of shared information systems (or their breakdown).  
+* **[👁️ 1984](/content/books/1984.md)** by George Orwell: 👮 Explores totalitarian control, surveillance (a contrast to the public nature of Chwe's rituals), and the manipulation of collective thought and language, touching on themes of enforced coordination and suppression of dissenting knowledge.  
+* 💻 **[Snow Crash](/content/books/snow-crash.md)** by Neal Stephenson: 🌐 A cyberpunk novel where information, language, and viruses (both biological and informational) profoundly shape reality and collective consciousness, offering a fictional take on the power of shared information systems (or their breakdown).  
 * 🫂 **The True Believer: Thoughts on the Nature of Mass Movements** by Eric Hoffer: 🤔 Analyzes the psychology behind mass movements, touching on themes of collective identity, symbolic action, and the desire for belonging that often drives participation in group actions (complementary to coordination logic).  
-* **[📖🏛️📉 Seeing Like a State: How Certain Schemes to Improve the Human Condition Have Failed](./seeing-like-a-state-how-certain-schemes-to-improve-the-human-condition-have-failed.md)** by James C. Scott: 🏛️ Examines large-scale state projects and why they often fail by ignoring local, practical knowledge ("metis") in favor of standardized, legible systems – a counterpoint to the top-down generation of common knowledge in some rituals.  
+* **[📖🏛️📉 Seeing Like a State: How Certain Schemes to Improve the Human Condition Have Failed](/content/books/seeing-like-a-state-how-certain-schemes-to-improve-the-human-condition-have-failed.md)** by James C. Scott: 🏛️ Examines large-scale state projects and why they often fail by ignoring local, practical knowledge ("metis") in favor of standardized, legible systems – a counterpoint to the top-down generation of common knowledge in some rituals.  
   
-## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
+## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Rational Ritual. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

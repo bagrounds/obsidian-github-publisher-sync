@@ -6,7 +6,7 @@ URL: https://bagrounds.org/books/bureaucracy-what-government-agencies-do-and-why
 share: true
 affiliate link: https://amzn.to/44YROZ4
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🏛️⚙️ Bureaucracy: What Government Agencies Do And Why They Do It  
 [🛒 Bureaucracy: What Government Agencies Do And Why They Do It. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/44YROZ4)  
   
@@ -76,18 +76,18 @@ affiliate link: https://amzn.to/44YROZ4
   
 * 👨‍🏫 **Max Weber - *Economy and Society* (relevant sections on Bureaucracy):** 📜 The foundational sociological work defining the ideal-type bureaucracy, focusing on rationality, hierarchy, and rules. 🤝 Wilson engages with and builds upon Weber, but Weber provides the essential theoretical baseline.  
 * 👨‍💼 **Ludwig von Mises - *Bureaucracy***: 🇦🇹 Offers a critique of bureaucracy from an Austrian economics perspective, contrasting bureaucratic management with profit-driven enterprise management. ❓ Likely contrasts with Wilson's more nuanced view of constraints.  
-* 🤔 **David Graeber - [🤖📝😇 The Utopia of Rules: On Technology, Stupidity, and the Secret Joys of Bureaucracy](./the-utopia-of-rules-on-technology-stupidity-and-the-secret-joys-of-bureaucracy.md)**: 🌍 An anthropological and critical take on the pervasiveness of bureaucracy and its often-unseen effects on modern life. 😠 Offers a more radical critique than Wilson.  
+* 🤔 **David Graeber - [🤖📝😇 The Utopia of Rules: On Technology, Stupidity, and the Secret Joys of Bureaucracy](/content/books/the-utopia-of-rules-on-technology-stupidity-and-the-secret-joys-of-bureaucracy.md)**: 🌍 An anthropological and critical take on the pervasiveness of bureaucracy and its often-unseen effects on modern life. 😠 Offers a more radical critique than Wilson.  
 * 📝 **Pamela Herd & Donald Moynihan - *Administrative Burden: Policymaking by Other Means***: 📑 Focuses specifically on how bureaucratic processes (paperwork, regulations) create burdens that hinder access to government services and rights, a critical perspective on the *effects* of bureaucracy.  
 * ⬆️ **John J. DiIulio Jr. - *Bring Back the Bureaucrats***: 💪 Argues *against* the trend of shrinking the federal workforce, suggesting more federal employees are needed to effectively manage government functions and oversee contractors, contrasting with common calls for smaller government.  
   
 ### 🎭 Creatively Related Reads (Bureaucracy in Fiction, History, Specific Contexts, or Broader Concepts)  
   
 * 🏰 **Franz Kafka - *The Castle* or *The Trial***: 📖 Classic literary portrayals of the disorienting, impenetrable, and often absurd nature of bureaucracy from the individual's perspective.  
-* 💣 **Joseph Heller - [🔁🤪 Catch-22](./catch-22.md)**: A satirical novel set in a World War II military bureaucracy, highlighting its absurdities, paradoxes, and dehumanizing effects.  
-* 💻 **Mark Schwartz - [🏢📋🐒🪒🤼‍♂️ The Delicate Art of Bureaucracy: Digital Transformation with the Monkey, the Razor, and the Sumo Wrestler](./the-delicate-art-of-bureaucracy.md)**: A modern take, using metaphors to discuss navigating and reforming bureaucracy, particularly in the context of IT and digital transformation, aiming for a more enabling, lean bureaucracy.  
+* 💣 **Joseph Heller - [🔁🤪 Catch-22](/content/books/catch-22.md)**: A satirical novel set in a World War II military bureaucracy, highlighting its absurdities, paradoxes, and dehumanizing effects.  
+* 💻 **Mark Schwartz - [🏢📋🐒🪒🤼‍♂️ The Delicate Art of Bureaucracy: Digital Transformation with the Monkey, the Razor, and the Sumo Wrestler](/content/books/the-delicate-art-of-bureaucracy.md)**: A modern take, using metaphors to discuss navigating and reforming bureaucracy, particularly in the context of IT and digital transformation, aiming for a more enabling, lean bureaucracy.  
 * 🎨 **Charles Landry & Margie Caust - *The Creative Bureaucracy & Its Radical Common Sense***: ✨ Explores the potential for innovation and creativity *within* bureaucratic structures, challenging the notion that bureaucracy is inherently stagnant.  
 * 💀 **James A. Tyner - *Deadly Decisions: The Bureaucracy of Genocide***: 🔪 Examines the chilling role of bureaucratic structures and processes in enabling atrocities like the Khmer Rouge genocide, linking bureaucracy to biopolitics and state power.  
 * ⚖️ **Victor A. Thompson - *Modern Organization***: 🤯 Explores tensions between hierarchical power and specialized knowledge within bureaucracies, analyzing "bureaupathic" behavior stemming from structural insecurities.".  
   
-## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
+## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Bureaucracy: What Government Agencies Do And Why They Do It. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

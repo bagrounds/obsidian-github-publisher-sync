@@ -7,7 +7,7 @@ share: true
 CTA: 🤖 Supervise intelligently.
 affiliate link: https://amzn.to/3JqHXCs
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🤖🧑‍🏫 Training Data for Machine Learning: Human Supervision from Annotation to Data Science  
 [🛒 Training Data for Machine Learning: Human Supervision from Annotation to Data Science. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3JqHXCs)  
   
@@ -48,13 +48,13 @@ affiliate link: https://amzn.to/3JqHXCs
   
 ### ➖ Contrasting Books  
 * ⚖️ The Ethical Algorithm: The Science of Socially Aware Algorithm Design by Aaron Roth & Michael Kearns: 🤖 While Sarkis's book touches on data bias as a failure mode, 📢 this book directly addresses the design of algorithms with social awareness and ethical considerations, 🤝 contrasting with Sarkis's data-centric focus by prioritizing algorithmic fairness and responsibility.  
-* [🤖🧑‍ Human Compatible: Artificial Intelligence and the Problem of Control](./human-compatible-artificial-intelligence-and-the-problem-of-control.md) by Stuart Russell: 🤔 This book explores the long-term future of AI and the challenge of aligning AI systems with human values, 🚀 moving beyond the practicalities of data to the broader philosophical and control problems of advanced AI.  
+* [🤖🧑‍ Human Compatible: Artificial Intelligence and the Problem of Control](/content/books/human-compatible-artificial-intelligence-and-the-problem-of-control.md) by Stuart Russell: 🤔 This book explores the long-term future of AI and the challenge of aligning AI systems with human values, 🚀 moving beyond the practicalities of data to the broader philosophical and control problems of advanced AI.  
 * 🤨 The Myth of Artificial Intelligence: Why Computers Can't Think the Way We Do by Erik J. Larson: 🧠 This book challenges common assumptions about AI, ⛔ arguing for fundamental limitations in current approaches and contrasting with the practical, implementation-focused view of building AI systems through data.  
   
 ### ✨ Creatively Related Books  
-* [📊📉🏛️ Weapons of Math Destruction: How Big Data Increases Inequality and Threatens Democracy](./weapons-of-math-destruction-how-big-data-increases-inequality-and-threatens-democracy.md) by Cathy O'Neil: 📉 This book critically examines the societal impact of algorithms and big data, ⚠️ specifically highlighting how flawed or biased data can perpetuate and amplify inequality, 📣 thereby offering a crucial real-world context to the importance of "correcting new training-data-based failure modes" mentioned by Sarkis.  
+* [📊📉🏛️ Weapons of Math Destruction: How Big Data Increases Inequality and Threatens Democracy](/content/books/weapons-of-math-destruction-how-big-data-increases-inequality-and-threatens-democracy.md) by Cathy O'Neil: 📉 This book critically examines the societal impact of algorithms and big data, ⚠️ specifically highlighting how flawed or biased data can perpetuate and amplify inequality, 📣 thereby offering a crucial real-world context to the importance of "correcting new training-data-based failure modes" mentioned by Sarkis.  
 * 🌍 Atlas of AI: Power, Politics, and the Planetary Costs of Artificial Intelligence by Kate Crawford: 🔋 This work unpacks the hidden costs and power structures behind AI, 💾 including the vast amounts of data collection, 🔎 providing a macro-level, critical perspective on the origins and implications of the data discussed in Sarkis's more technical book.  
 * 🧑‍⚖️ Data Ethics in the Age of AI by Arshad Khan: 🤝 This book provides a framework for navigating ethical issues like privacy, algorithmic bias, and transparency in the context of data and AI, offering a deeper dive into the ethical considerations that arise from the human supervision of data, 🧑‍🤝‍🧑 which Sarkis introduces.  
   
-## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-flash)  
+## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-flash)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by similar, contrasting, and creatively related book recommendations on Training Data for Machine Learning: Human Supervision from Annotation to Data Science. Never put book titles in quotes or italics. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

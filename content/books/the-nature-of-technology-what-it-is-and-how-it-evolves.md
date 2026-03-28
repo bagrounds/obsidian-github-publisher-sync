@@ -7,7 +7,7 @@ share: true
 CTA: 💡 Grasp the future's forge.
 affiliate link: https://amzn.to/4prhPaV
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # ⚙️🔄 The Nature of Technology: What It Is and How It Evolves  
 [🛒 The Nature of Technology: What It Is and How It Evolves. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4prhPaV)  
   
@@ -75,7 +75,7 @@ affiliate link: https://amzn.to/4prhPaV
 ### 🤝 Similar  
 * 📖 The Evolution of Technology by George Basalla (Identifies the unit of technology evolution and discusses its similarities and differences with biological evolution).  
 * 🌟 What Technology Wants by Kevin Kelly (Expands on the inevitability of technological evolution towards greater complexity).  
-* [🌐🔗🧠📖 Thinking in Systems: A Primer](./thinking-in-systems.md) by Donella Meadows (A classic introduction to systems thinking, highly relevant to Arthur's complex systems view).  
+* [🌐🔗🧠📖 Thinking in Systems: A Primer](/content/books/thinking-in-systems.md) by Donella Meadows (A classic introduction to systems thinking, highly relevant to Arthur's complex systems view).  
   
 ### ⚔️ Contrasting  
 * 📜 The Master Switch: The Rise and Fall of Information Empires by Tim Wu (Focuses on the cyclical nature of open vs. closed information systems and power dynamics).  
@@ -83,7 +83,7 @@ affiliate link: https://amzn.to/4prhPaV
   
 ### 🔗 Related  
 * 📏 Scale: The Universal Laws of Life, Growth, and Death in Organisms, Cities and Companies by Geoffrey West (Explores universal scaling laws across biological and urban systems, connecting to Arthur's complexity themes).  
-* [♾️📐🎶🥨 Gödel, Escher, Bach: An Eternal Golden Braid](./godel-escher-bach.md) by Douglas Hofstadter (Explores recursion, emergence, and consciousness, touching on self-referential systems relevant to technology's self-creation).  
+* [♾️📐🎶🥨 Gödel, Escher, Bach: An Eternal Golden Braid](/content/books/godel-escher-bach.md) by Douglas Hofstadter (Explores recursion, emergence, and consciousness, touching on self-referential systems relevant to technology's self-creation).  
 * 🤝 Shared Wisdom: Cultural Evolution in the Age of AI by Alex Pentland (Argues for technological innovation grounded in collective wisdom, aligning with the societal interaction in Arthur's work).  
   
 ## 🫵 What Do You Think?  

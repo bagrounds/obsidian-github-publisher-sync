@@ -7,7 +7,7 @@ share: true
 affiliate link: https://amzn.to/3I5f0vA
 CTA: 📜 Be wise.
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 👴🏽📚 The Teachings of Ptahhotep: The Oldest Book in the World  
 [🛒 The Teachings of Ptahhotep: The Oldest Book in the World. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3I5f0vA)  
   

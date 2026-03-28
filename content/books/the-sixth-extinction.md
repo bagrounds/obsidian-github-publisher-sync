@@ -8,7 +8,7 @@ Author:
 tags:
 affiliate link: https://amzn.to/43uAnOY
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 💀🌍📉⏳ The Sixth Extinction: An Unnatural History  
 [🛒 The Sixth Extinction: An Unnatural History. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/43uAnOY)  
   
@@ -54,7 +54,7 @@ Elizabeth Kolbert's "The Sixth Extinction" doesn't just present the idea of an e
   
 ## Book Recommendations 📚  
 * **Best Alternate Book on the Same Topic:** "Half-Earth: Our Planet's Fight for Life" by E.O. Wilson. This book offers a complementary perspective on the extinction crisis, advocating for setting aside half of the Earth's surface for conservation. 🌎  
-* **Best Tangentially Related Book:** [🪢🌾 Braiding Sweetgrass: Indigenous Wisdom, Scientific Knowledge, and the Teachings of Plants](./braiding-sweetgrass.md) by Robin Wall Kimmerer. This book explores the relationship between humans and the natural world from an Indigenous perspective, offering insights into ecological stewardship. 🌿  
+* **Best Tangentially Related Book:** [🪢🌾 Braiding Sweetgrass: Indigenous Wisdom, Scientific Knowledge, and the Teachings of Plants](/content/books/braiding-sweetgrass.md) by Robin Wall Kimmerer. This book explores the relationship between humans and the natural world from an Indigenous perspective, offering insights into ecological stewardship. 🌿  
 * **Best Diametrically Opposed Book:** "The Rational Optimist: How Prosperity Evolves" by Matt Ridley. While not directly opposed, Ridley presents a more optimistic view of human progress and technological innovation, suggesting that we can overcome environmental challenges. 📈  
 * **Best Fiction Book That Incorporates Related Ideas:** "The Overstory" by Richard Powers. This novel explores the interconnectedness of trees and the human relationship with forests, highlighting the importance of ecological awareness. 🌲  
 * **A More Specific Book:** "Life on a Little Known Planet" by Howard Ensign Evans. This book focuses on the fascinating world of insects, and their role in the ecosystem. 🐜  

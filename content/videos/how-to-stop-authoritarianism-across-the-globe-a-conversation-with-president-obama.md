@@ -10,7 +10,7 @@ Channel: Obama Foundation
 tags:
 youtube: https://youtu.be/gRNaIMR00Fc
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md)  
 # 👑🚫🌍🗣️ How to stop authoritarianism across the globe: a conversation with President Obama  
 ![How to stop authoritarianism across the globe: a conversation with President Obama](https://youtu.be/gRNaIMR00Fc)  
   
@@ -74,17 +74,17 @@ A: 🧱 Local engagement acts as a vital counterbalancing force against illibera
   
 ### Similar Themes (Democracy in Crisis)  
   
-- [🗳️🏛️☠️ How Democracies Die](../books/how-democracies-die.md) by Steven Levitsky and Daniel Ziblatt  
+- [🗳️🏛️☠️ How Democracies Die](/content/books/how-democracies-die.md) by Steven Levitsky and Daniel Ziblatt  
   
     - 📖 A study of how modern democracies collapse not through military coups, but through the slow, legalistic erosion of democratic norms and institutions, providing essential context for the video's discussion of illiberal tactics.  
   
-- [👑🚫📜2️⃣0️⃣ On Tyranny: Twenty Lessons from the Twentieth Century](../books/on-tyranny.md) by Timothy Snyder  
+- [👑🚫📜2️⃣0️⃣ On Tyranny: Twenty Lessons from the Twentieth Century](/content/books/on-tyranny.md) by Timothy Snyder  
   
     - 📚 Offers brief, practical guidance on how to identify and resist the mechanisms of authoritarianism, aligning with the video's focus on active, daily citizenry.  
   
 ### Contrasting Perspectives  
   
-- [😇🧠 The Righteous Mind: Why Good People Are Divided by Politics and Religion](../books/the-righteous-mind.md) by Jonathan Haidt  
+- [😇🧠 The Righteous Mind: Why Good People Are Divided by Politics and Religion](/content/books/the-righteous-mind.md) by Jonathan Haidt  
   
     - 🧠 Explores the moral and psychological roots of political division, offering a deep dive into why people divide into ideological "bubbles," contrasting with the video's surface-level observation of polarization.  
   
@@ -94,7 +94,7 @@ A: 🧱 Local engagement acts as a vital counterbalancing force against illibera
   
 ### Creatively Related  
   
-- [🎳🏘️📉📈 Bowling Alone: The Collapse and Revival of American Community](../books/bowling-alone.md) by Robert D. Putnam  
+- [🎳🏘️📉📈 Bowling Alone: The Collapse and Revival of American Community](/content/books/bowling-alone.md) by Robert D. Putnam  
   
     - 🤝 A seminal work documenting the decline of _social capital_ (interpersonal trust and civic engagement) in the U.S., which directly correlates with the video's call to rebuild social trust from the bottom up \[[13:02](http://www.youtube.com/watch?v=gRNaIMR00Fc&t=782)].  
   

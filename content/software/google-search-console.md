@@ -5,7 +5,7 @@ aliases:
 title: 📊🔍📈 Google Search Console
 URL: https://bagrounds.org/software/google-search-console
 ---
-[Home](../index.md) > [Software](./index.md)  
+[Home](/content/index.md) > [Software](/content/software/index.md)  
 # 📊🔍📈 Google Search Console  
   
 ## 🤖 AI Summary  

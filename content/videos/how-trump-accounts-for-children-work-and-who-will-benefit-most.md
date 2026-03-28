@@ -10,7 +10,7 @@ Channel: PBS NewsHour
 tags:
 youtube: https://youtu.be/z3BBM3RZdxA
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md)  
 # 💰👶💡 How 'Trump accounts' for children work, and who will benefit most  
 ![How 'Trump accounts' for children work, and who will benefit most](https://youtu.be/z3BBM3RZdxA)  
   
@@ -56,10 +56,10 @@ youtube: https://youtu.be/z3BBM3RZdxA
   
 ### 🆚 Contrasting  
   
-* [🏷️🏚️💔🏰 The Price of Inequality: How Today's Divided Society Endangers Our Future](../books/the-price-of-inequality-how-todays-divided-society-endangers-our-future.md) by 🏛️ Joseph Stiglitz (W. W. Norton & Company). 🏛️ Stiglitz 📈 analyzes how 🏛️ market ⚖️ policies can 📉 hurt the 👨‍👩‍👧‍👦 middle class and 📈 widen ⚖️ gaps.  
-* [💰📈🌍⏳ Capital in the Twenty-First Century](../books/capital-in-the-twenty-first-century.md) by 📊 Thomas Piketty (Harvard University Press). This 📚 work 📉 argues that 💎 wealth 📈 concentration is 🧬 inherent to 🏦 capitalism without 🛠️ aggressive ⚖️ intervention.  
+* [🏷️🏚️💔🏰 The Price of Inequality: How Today's Divided Society Endangers Our Future](/content/books/the-price-of-inequality-how-todays-divided-society-endangers-our-future.md) by 🏛️ Joseph Stiglitz (W. W. Norton & Company). 🏛️ Stiglitz 📈 analyzes how 🏛️ market ⚖️ policies can 📉 hurt the 👨‍👩‍👧‍👦 middle class and 📈 widen ⚖️ gaps.  
+* [💰📈🌍⏳ Capital in the Twenty-First Century](/content/books/capital-in-the-twenty-first-century.md) by 📊 Thomas Piketty (Harvard University Press). This 📚 work 📉 argues that 💎 wealth 📈 concentration is 🧬 inherent to 🏦 capitalism without 🛠️ aggressive ⚖️ intervention.  
   
 ### 🎨 Creatively Related  
   
-* [👉🤏 Nudge: Improving Decisions about Health, Wealth, and Happiness](../books/nudge.md) by 🎓 Richard Thaler and Cass Sunstein. This 📖 book 📝 explains how 🏛️ policy 🎨 design can 🤏 gently 🗺️ steer 👥 people toward 🏦 better 💰 financial 📉 choices.  
+* [👉🤏 Nudge: Improving Decisions about Health, Wealth, and Happiness](/content/books/nudge.md) by 🎓 Richard Thaler and Cass Sunstein. This 📖 book 📝 explains how 🏛️ policy 🎨 design can 🤏 gently 🗺️ steer 👥 people toward 🏦 better 💰 financial 📉 choices.  
 * 🐜 The Ant and the Grasshopper by 📖 Aesop. A 🧒 classic 📖 fable about the 🐜 importance of 🏺 saving for the ❄️ future 📅 today.

@@ -7,7 +7,7 @@ share: true
 affiliate link: https://amzn.to/4jwJ003
 CTA: 📣 Amplify your voice.
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 📢📣 Platform: Get Noticed in a Noisy World  
 [🛒 Platform: Get Noticed in a Noisy World. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4jwJ003)  
   
@@ -58,19 +58,19 @@ CTA: 📣 Amplify your voice.
   
 ### ➖ Contrasting Perspectives (Alternative Approaches & Critiques)  
   
-* **[🤿💼 Deep Work: Rules for Focused Success in a Distracted World](./deep-work.md) by Cal Newport:** 🧠 Argues for the value of focused, deep work rather than constant online engagement and shallow communication, offering a counterpoint to the "always-on" nature of platform building.  
-* **[📱⬇️🧘 Digital Minimalism: Choosing a Focused Life in a Noisy World](./digital-minimalism-choosing-a-focused-life-in-a-noisy-world.md) by Cal Newport:** 🚫 Advocates for a more intentional and minimalist approach to technology and social media, contrasting with the extensive social media engagement often required for platform building.  
+* **[🤿💼 Deep Work: Rules for Focused Success in a Distracted World](/content/books/deep-work.md) by Cal Newport:** 🧠 Argues for the value of focused, deep work rather than constant online engagement and shallow communication, offering a counterpoint to the "always-on" nature of platform building.  
+* **[📱⬇️🧘 Digital Minimalism: Choosing a Focused Life in a Noisy World](/content/books/digital-minimalism-choosing-a-focused-life-in-a-noisy-world.md) by Cal Newport:** 🚫 Advocates for a more intentional and minimalist approach to technology and social media, contrasting with the extensive social media engagement often required for platform building.  
 * 🎭 **"The Presentation of Self in Everyday Life" by Erving Goffman:** 🤔 A foundational sociological text exploring how individuals manage impressions and present themselves, offering a theoretical (and less prescriptive) lens on the concepts underlying personal branding.  
 * ✨ **"A New Earth: Awakening to Your Life's Purpose" by Eckhart Tolle:** 🕊️ Focuses on transcending ego and self-definition, presenting a spiritual perspective that contrasts sharply with the emphasis on defining and promoting a personal brand.  
   
 ### 🎨 Creatively Related (Broader Themes: Influence, Communication, Stickiness)  
   
-* **[🍃🧠🤝🏼 Influence: The Psychology of Persuasion](./influence.md) by Robert Cialdini:** 🧠 Explores the psychological principles behind why people say "yes," providing a deeper understanding of the persuasion dynamics inherent in building a following.  
-* **[🫂🤝🗣️ How To Win Friends And Influence People](./how-to-win-friends-and-influence-people.md) by Dale Carnegie:** 📚 A classic guide to interpersonal skills, emphasizing genuine interest in others and effective communication – essential soft skills for engaging a platform audience.  
-* **[🧠🌱💀 Made to Stick: Why Some Ideas Survive and Others Die](./made-to-stick.md) by Chip Heath and Dan Heath:** 📌 Investigates what makes ideas memorable and shareable, relevant for crafting content that resonates with an audience.  
+* **[🍃🧠🤝🏼 Influence: The Psychology of Persuasion](/content/books/influence.md) by Robert Cialdini:** 🧠 Explores the psychological principles behind why people say "yes," providing a deeper understanding of the persuasion dynamics inherent in building a following.  
+* **[🫂🤝🗣️ How To Win Friends And Influence People](/content/books/how-to-win-friends-and-influence-people.md) by Dale Carnegie:** 📚 A classic guide to interpersonal skills, emphasizing genuine interest in others and effective communication – essential soft skills for engaging a platform audience.  
+* **[🧠🌱💀 Made to Stick: Why Some Ideas Survive and Others Die](/content/books/made-to-stick.md) by Chip Heath and Dan Heath:** 📌 Investigates what makes ideas memorable and shareable, relevant for crafting content that resonates with an audience.  
 * 🎤 **"Talk Like TED: The 9 Public-Speaking Secrets of the World's Top Minds" by Carmine Gallo:** 🗣️ Analyzes effective communication and storytelling techniques used in successful TED Talks, useful for anyone needing to present ideas compellingly.  
-* **[🤔🐇🐢 Thinking, Fast and Slow](./thinking-fast-and-slow.md) by Daniel Kahneman:** 🤔 Explores the two systems driving human thought and decision-making, offering insights into how audiences process information and make judgments.  
-* **[🙅‍♀️✂️⚖️ Never Split the Difference: Negotiating As If Your Life Depended On It](./never-split-the-difference.md) by Chris Voss:** ⚖️ While focused on negotiation, it provides powerful insights into human psychology, empathy, and influence, applicable to audience engagement.  
+* **[🤔🐇🐢 Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md) by Daniel Kahneman:** 🤔 Explores the two systems driving human thought and decision-making, offering insights into how audiences process information and make judgments.  
+* **[🙅‍♀️✂️⚖️ Never Split the Difference: Negotiating As If Your Life Depended On It](/content/books/never-split-the-difference.md) by Chris Voss:** ⚖️ While focused on negotiation, it provides powerful insights into human psychology, empathy, and influence, applicable to audience engagement.  
   
-## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
+## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Platform: Get Noticed in a Noisy World. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

@@ -10,7 +10,7 @@ affiliate link: https://amzn.to/3ZHMwO2
 CTA: ✨ Polish your bits.
 updated: 2026-03-10T01:05:06.770Z
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🧼💾 Clean Code: A Handbook of Agile Software Craftsmanship  
 [🛒 Clean Code: A Handbook of Agile Software Craftsmanship. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3ZHMwO2)  
   
@@ -56,10 +56,10 @@ The book covers numerous principles and practices, including:
   
 ## 📚 Further Reading: Expanding on Clean Code  
 ### 🤝 Similar Reads (Code Quality & Craftsmanship)  
-* **[🧑‍💻📈 The Pragmatic Programmer: Your Journey to Mastery](./the-pragmatic-programmer-your-journey-to-mastery.md)** by David Thomas and Andrew Hunt: A classic offering practical advice on a wider range of topics beyond just code, focusing on developer effectiveness and philosophy. Seen as a companion or sometimes alternative starting point.  
-* **[✅💻 Code Complete](./code-complete.md): A Practical Handbook of Software Construction** by Steve McConnell: A comprehensive and highly regarded handbook covering software construction in detail, often recommended alongside or even before Clean Code for its breadth. Focuses more on the overall software development process.  
-* **[🗑️✨ Refactoring: Improving the Design of Existing Code](./refactoring-improving-the-design-of-existing-code.md)** by Martin Fowler (with Kent Beck): The definitive guide to improving existing code systematically and safely. Focuses on specific techniques for restructuring code.  
-* **[🧱🛠️ Working Effectively with Legacy Code](./working-effectively-with-legacy-code.md)** by Michael C. Feathers: Essential techniques for dealing with large, untested, or poorly understood codebases.  
+* **[🧑‍💻📈 The Pragmatic Programmer: Your Journey to Mastery](/content/books/the-pragmatic-programmer-your-journey-to-mastery.md)** by David Thomas and Andrew Hunt: A classic offering practical advice on a wider range of topics beyond just code, focusing on developer effectiveness and philosophy. Seen as a companion or sometimes alternative starting point.  
+* **[✅💻 Code Complete](/content/books/code-complete.md): A Practical Handbook of Software Construction** by Steve McConnell: A comprehensive and highly regarded handbook covering software construction in detail, often recommended alongside or even before Clean Code for its breadth. Focuses more on the overall software development process.  
+* **[🗑️✨ Refactoring: Improving the Design of Existing Code](/content/books/refactoring-improving-the-design-of-existing-code.md)** by Martin Fowler (with Kent Beck): The definitive guide to improving existing code systematically and safely. Focuses on specific techniques for restructuring code.  
+* **[🧱🛠️ Working Effectively with Legacy Code](/content/books/working-effectively-with-legacy-code.md)** by Michael C. Feathers: Essential techniques for dealing with large, untested, or poorly understood codebases.  
 * 👨‍✈️ **The Clean Coder: A Code of Conduct for Professional Programmers** by Robert C. Martin: Uncle Bob's follow-up, focusing on professionalism, ethics, and the responsibilities of a software developer.  
 * 🏛️ **Clean Architecture: A Craftsman's Guide to Software Structure and Design** by Robert C. Martin: Explores higher-level software architecture principles, focusing on creating maintainable and testable systems.  
 * 🧑‍🎓 **Apprenticeship Patterns: Guidance for the Aspiring Software Craftsman** by Dave Hoover and Adewale Oshineye: Focuses on the journey of becoming a software craftsman, illustrating patterns for learning and growth.  
@@ -68,11 +68,11 @@ The book covers numerous principles and practices, including:
 ### ⚔️ Contrasting Perspectives & Broader Scope  
 * 💡 **A Philosophy of Software Design** by John Ousterhout: Offers a different perspective, sometimes contrasting with Clean Code, emphasizing minimizing complexity ("deep modules, shallow interfaces") over extreme decomposition. Often recommended as a more modern alternative.  
 * ✨ **Code Simplicity: The Fundamentals of Software** by Max Kanat-Alexander: A shorter book laying down general rules and heuristics for better software design without specific code examples.  
-* **[💾⬆️🛡️ Designing Data-Intensive Applications: The Big Ideas Behind Reliable, Scalable, and Maintainable Systems](./designing-data-intensive-applications.md)** by Martin Kleppmann: Focuses on the challenges of data systems, exploring the underlying principles of reliability, scalability, and maintainability in data-driven applications.  
-* **[🧩🧱⚙️❤️ Domain-Driven Design: Tackling Complexity in the Heart of Software](./domain-driven-design.md)** by Eric Evans: Focuses on aligning software design with the complexities of the business domain.  
-* **[🧑‍🤝‍🧑⚙️➡️ Team Topologies: Organizing Business and Technology Teams for Fast Flow](./team-topologies-organizing-business-and-technology-teams-for-fast-flow.md)** by Matthew Skelton and Manuel Pais: Explores how team organization impacts software architecture and delivery.  
-* **[🏎️💾 Accelerate: The Science of Lean Software and DevOps: Building and Scaling High Performing Technology Organizations](./accelerate.md)** by Nicole Forsgren, Jez Humble, and Gene Kim: Uses research to explore practices that drive high performance in technology organizations.  
-* **[💻⚙️ Software Engineering at Google: Lessons Learned from Programming Over Time](./software-engineering-at-google-lessons-learned-from-programming-over-time.md)** edited by Titus Winters, Tom Manshreck, and Hyrum Wright: Provides insights into Google's engineering practices, focusing on scale, sustainability, and long-term maintenance.  
+* **[💾⬆️🛡️ Designing Data-Intensive Applications: The Big Ideas Behind Reliable, Scalable, and Maintainable Systems](/content/books/designing-data-intensive-applications.md)** by Martin Kleppmann: Focuses on the challenges of data systems, exploring the underlying principles of reliability, scalability, and maintainability in data-driven applications.  
+* **[🧩🧱⚙️❤️ Domain-Driven Design: Tackling Complexity in the Heart of Software](/content/books/domain-driven-design.md)** by Eric Evans: Focuses on aligning software design with the complexities of the business domain.  
+* **[🧑‍🤝‍🧑⚙️➡️ Team Topologies: Organizing Business and Technology Teams for Fast Flow](/content/books/team-topologies-organizing-business-and-technology-teams-for-fast-flow.md)** by Matthew Skelton and Manuel Pais: Explores how team organization impacts software architecture and delivery.  
+* **[🏎️💾 Accelerate: The Science of Lean Software and DevOps: Building and Scaling High Performing Technology Organizations](/content/books/accelerate.md)** by Nicole Forsgren, Jez Humble, and Gene Kim: Uses research to explore practices that drive high performance in technology organizations.  
+* **[💻⚙️ Software Engineering at Google: Lessons Learned from Programming Over Time](/content/books/software-engineering-at-google-lessons-learned-from-programming-over-time.md)** edited by Titus Winters, Tom Manshreck, and Hyrum Wright: Provides insights into Google's engineering practices, focusing on scale, sustainability, and long-term maintenance.  
   
 ### 🎨 Creatively Related Reads  
 * 🧠 **Think Like a Programmer: An Introduction to Creative Problem Solving** by V. Anton Spraul: Focuses on the fundamental skill of problem-solving for programmers, breaking down challenges and fostering creative solutions.  
@@ -80,9 +80,9 @@ The book covers numerous principles and practices, including:
 * 🎨 **The Non-Designer's Design Book** by Robin Williams: While about visual design, its principles (Contrast, Repetition, Alignment, Proximity) can offer interesting parallels for thinking about code structure and readability.  
 * 🧩 **Problem Solving 101: A Simple Book for Smart People** by Ken Watanabe: A general book on problem-solving techniques applicable beyond programming.  
 * 👔 **Soft Skills: The software developer's life manual** by John Sonmez: Covers broader career aspects like communication, productivity, and personal finance for developers, though some find it overlaps with other books or dislike its tone.  
-* 🚀 **[The Phoenix Project](./the-phoenix-project.md): A Novel about IT, DevOps, and Helping Your Business Win** by Gene Kim, Kevin Behr, and George Spafford: A novel illustrating DevOps principles and the challenges of IT operations, essential for understanding modern software delivery.  
+* 🚀 **[The Phoenix Project](/content/books/the-phoenix-project.md): A Novel about IT, DevOps, and Helping Your Business Win** by Gene Kim, Kevin Behr, and George Spafford: A novel illustrating DevOps principles and the challenges of IT operations, essential for understanding modern software delivery.  
   
-## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
+## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Clean Code. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.  
   
 ## 🦋 Bluesky    

@@ -7,7 +7,7 @@ URL: https://bagrounds.org/articles/the-nap-wheel
 Author:
 tags:
 ---
-[Home](../index.md) > [Articles](./index.md)  
+[Home](/content/index.md) > [Articles](/content/articles/index.md)  
 # [😴🎡 The Nap Wheel](https://www.saramednick.com/napwheel)  
 ## 🤖 AI Summary  
 - 💤 The Nap Wheel shows the proportionate relationship between sleep stages.  
@@ -25,7 +25,7 @@ tags:
 📖 The text provides a specific methodology, but it would be beneficial to explore research from other sleep scientists to see if they corroborate these precise nap-timing recommendations. 🧪 Investigating studies on the ideal length and timing of naps for different cognitive benefits could offer a broader perspective. ⚖️ It would also be useful to compare the Nap Wheel's approach to other popular sleep-tracking apps or devices to understand how they measure and recommend sleep stages.  
   
 ## 📚 Book Recommendations  
-- [😴🧠📈 Take a Nap! Change Your Life.: The Scientific Plan to Make You Smarter, Healthier, More Productive](../books/take-a-nap-change-your-life-the-scientific-plan-to-make-you-smarter-healthier-more-productive.md) by Sara C. Mednick introduces the Nap Wheel and offering a deeper dive into the science and practice of napping for improved health and performance.  
-- [😴💭 Why We Sleep: Unlocking the Power of Sleep and Dreams](../books/why-we-sleep-unlocking-the-power-of-sleep-and-dreams.md) by Matthew Walker offers a comprehensive look at sleep science and the benefits of all sleep stages.  
-- [🔋📈 The Power of Full Engagement: Managing Energy, Not Time, Is the Key to High Performance and Personal Renewal](../books/the-power-of-full-engagement-managing-energy-not-time-is-the-key-to-high-performance-and-personal-renewal.md) by Jim Loehr and Tony Schwartz focuses on managing energy, not just time, and includes rest and recovery as a critical component of high performance.  
-- [🎨🙏✨ The Artist's Way: A Spiritual Path to Higher Creativity](../books/the-artists-way.md) by Julia Cameron is about unlocking creativity, a process associated with REM sleep.
+- [😴🧠📈 Take a Nap! Change Your Life.: The Scientific Plan to Make You Smarter, Healthier, More Productive](/content/books/take-a-nap-change-your-life-the-scientific-plan-to-make-you-smarter-healthier-more-productive.md) by Sara C. Mednick introduces the Nap Wheel and offering a deeper dive into the science and practice of napping for improved health and performance.  
+- [😴💭 Why We Sleep: Unlocking the Power of Sleep and Dreams](/content/books/why-we-sleep-unlocking-the-power-of-sleep-and-dreams.md) by Matthew Walker offers a comprehensive look at sleep science and the benefits of all sleep stages.  
+- [🔋📈 The Power of Full Engagement: Managing Energy, Not Time, Is the Key to High Performance and Personal Renewal](/content/books/the-power-of-full-engagement-managing-energy-not-time-is-the-key-to-high-performance-and-personal-renewal.md) by Jim Loehr and Tony Schwartz focuses on managing energy, not just time, and includes rest and recovery as a critical component of high performance.  
+- [🎨🙏✨ The Artist's Way: A Spiritual Path to Higher Creativity](/content/books/the-artists-way.md) by Julia Cameron is about unlocking creativity, a process associated with REM sleep.

@@ -10,7 +10,7 @@ Channel: Ali Alqaraghuli, PhD
 tags:
 youtube: https://youtu.be/DA0try_SxdM
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md)  
 # 🧠⏳🚀⚡ 4 ADHD Habits to Make 2025 Hyper Productive  
 ![4 ADHD Habits to Make 2025 Hyper Productive](https://youtu.be/DA0try_SxdM)  
   
@@ -27,18 +27,18 @@ Here are the specific habits covered:
   
 ## 📚 Book Recommendations  
 * **For ADHD and Productivity**:  
-    * [🏎️🦋🐿️✨ Driven to Distraction: Recognizing and Coping with Attention Deficit Disorder from Childhood Through Adulthood](../books/driven-to-distraction.md) by Edward M. Hallowell and John J. Ratey  
+    * [🏎️🦋🐿️✨ Driven to Distraction: Recognizing and Coping with Attention Deficit Disorder from Childhood Through Adulthood](/content/books/driven-to-distraction.md) by Edward M. Hallowell and John J. Ratey  
     * *Delivered from Distraction* by Edward M. Hallowell and John J. Ratey  
-    * [🧠🧩📈🧑‍🏫 Smart but Scattered: The Revolutionary Executive Skills Approach to Helping Kids Reach Their Potential](../books/smart-but-scattered.md) by Peg Dawson and Richard Guare  
+    * [🧠🧩📈🧑‍🏫 Smart but Scattered: The Revolutionary Executive Skills Approach to Helping Kids Reach Their Potential](/content/books/smart-but-scattered.md) by Peg Dawson and Richard Guare  
 * **For Calendar and Time Management**:  
-    * [✅😌 Getting Things Done: The Art of Stress-Free Productivity](../books/getting-things-done-the-art-of-stress-free-productivity.md) by David Allen  
+    * [✅😌 Getting Things Done: The Art of Stress-Free Productivity](/content/books/getting-things-done-the-art-of-stress-free-productivity.md) by David Allen  
     * *168 Hours: You Have More Time Than You Think* by Laura Vanderkam  
 * **For Sleep**:  
-    * [😴💭 Why We Sleep: Unlocking the Power of Sleep and Dreams](../books/why-we-sleep-unlocking-the-power-of-sleep-and-dreams.md) by Matthew Walker  
+    * [😴💭 Why We Sleep: Unlocking the Power of Sleep and Dreams](/content/books/why-we-sleep-unlocking-the-power-of-sleep-and-dreams.md) by Matthew Walker  
     * *The Sleep Revolution: Transforming Your Life, One Night at a Time* by Arianna Huffington  
 * **For Action and Overcoming Perfectionism**:  
-    * [🪖🎨 The War of Art: Break Through the Blocks and Win Your Inner Creative Battles](../books/the-war-of-art.md) by Steven Pressfield  
-    * [⚛️🔄 Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones](../books/atomic-habits.md) by James Clear  
+    * [🪖🎨 The War of Art: Break Through the Blocks and Win Your Inner Creative Battles](/content/books/the-war-of-art.md) by Steven Pressfield  
+    * [⚛️🔄 Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones](/content/books/atomic-habits.md) by James Clear  
   
 ## 🐦 Tweet  
 <blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">🧠⏳🚀⚡ 4 ADHD Habits to Make 2025 Hyper Productive<br><br>🗓️ Calendar Usage | 😴 Sleep Optimization | 👣 Action-Oriented Approach | 🍬 Short-Term Rewards<a href="https://t.co/4R7ftoHzWB">https://t.co/4R7ftoHzWB</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/1930872953778192681?ref_src=twsrc%5Etfw">June 6, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

@@ -6,7 +6,7 @@ URL: https://bagrounds.org/books/parenting-from-the-inside-out-how-a-deeper-self
 share: true
 affiliate link: https://amzn.to/4ebCxGV
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🤱🏼🤿🪞🌱 Parenting from the Inside Out: How a Deeper Self-Understanding Can Help You Raise Children Who Thrive  
 [🛒 Parenting from the Inside Out: How a Deeper Self-Understanding Can Help You Raise Children Who Thrive. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4ebCxGV)  
   
@@ -41,9 +41,9 @@ This book is less a "how-to" guide for specific child behaviors and more a "why-
   
 ### 🤝 Similar Books (Focus on Mindful Parenting, Attachment, and Parent's Inner Life)  
   
-* **[🕳️🧠👶🏽 The Whole-Brain Child: 12 Revolutionary Strategies to Nurture Your Child's Developing Mind](./the-whole-brain-child.md)** by Daniel J. Siegel and Tina Payne Bryson. A highly recommended follow-up focusing on practical strategies for applying neuroscience principles to daily parenting challenges and integrating different parts of the child's brain.  
-* **[🚫🎭🧠 No-Drama Discipline: The Whole-Brain Way to Calm the Chaos and Nurture Your Child's Developing Mind](./no-drama-discipline.md)** by Daniel J. Siegel and Tina Payne Bryson. This book specifically addresses discipline through a brain-informed lens, emphasizing connection over punishment.  
-* **[🌱👼🏼 Raising Good Humans: A Mindful Guide to Breaking the Cycle of Reactive Parenting and Raising Kind, Confident Kids](./raising-good-humans-a-mindful-guide-to-breaking-the-cycle-of-reactive-parenting-and-raising-kind-confident-kids.md)** by Hunter Clarke-Fields. Focuses explicitly on mindful parenting practices for parents to manage their own reactions and foster emotional intelligence in their children.  
+* **[🕳️🧠👶🏽 The Whole-Brain Child: 12 Revolutionary Strategies to Nurture Your Child's Developing Mind](/content/books/the-whole-brain-child.md)** by Daniel J. Siegel and Tina Payne Bryson. A highly recommended follow-up focusing on practical strategies for applying neuroscience principles to daily parenting challenges and integrating different parts of the child's brain.  
+* **[🚫🎭🧠 No-Drama Discipline: The Whole-Brain Way to Calm the Chaos and Nurture Your Child's Developing Mind](/content/books/no-drama-discipline.md)** by Daniel J. Siegel and Tina Payne Bryson. This book specifically addresses discipline through a brain-informed lens, emphasizing connection over punishment.  
+* **[🌱👼🏼 Raising Good Humans: A Mindful Guide to Breaking the Cycle of Reactive Parenting and Raising Kind, Confident Kids](/content/books/raising-good-humans-a-mindful-guide-to-breaking-the-cycle-of-reactive-parenting-and-raising-kind-confident-kids.md)** by Hunter Clarke-Fields. Focuses explicitly on mindful parenting practices for parents to manage their own reactions and foster emotional intelligence in their children.  
 * 🕊️ **Peaceful Parent, Happy Kids: How to Stop Yelling and Start Connecting** by Dr. Laura Markham. Emphasizes connection, coaching, and calm as the pillars of effective parenting, aligning with the principles of regulating the parent's own emotions.  
 * 💖 **The Conscious Parent: Transforming Ourselves, Empowering Our Children** by Dr. Shefali Tsabary. Challenges conventional parenting approaches, urging parents to look inward and see their children as catalysts for the parent's own growth.  
 * 👶 **Becoming Attached: First Relationships and How They Shape Our Capacity to Love** by Robert Karen. A deeper dive into the science and history of attachment theory.  
@@ -57,15 +57,15 @@ This book is less a "how-to" guide for specific child behaviors and more a "why-
   
 ### 🎨 Creatively Related Books (Exploring Underlying Concepts)  
   
-* **[🕊️🤝 Nonviolent Communication: A Language of Life](./nonviolent-communication.md)** by Marshall B. Rosenberg. Provides a framework for communication based on needs and feelings, highly relevant to the "mindsight" and communication aspects of *Parenting from the Inside Out*.  
+* **[🕊️🤝 Nonviolent Communication: A Language of Life](/content/books/nonviolent-communication.md)** by Marshall B. Rosenberg. Provides a framework for communication based on needs and feelings, highly relevant to the "mindsight" and communication aspects of *Parenting from the Inside Out*.  
 * 🫂 **Self-Compassion: The Proven Power of Being Kind to Yourself** by Kristin Neff. Directly addresses the importance of self-compassion for parents, a theme that supports the inner work encouraged in Siegel and Hartzell's book.  
 * 👁️ **Mindsight: The New Science of Personal Transformation** by Daniel J. Siegel. Explores the concept of mindsight in a broader context beyond parenting, delving into its neuroscience and applications for personal well-being.  
 * 🧠 **Buddha's Brain: The Practical Neuroscience of Happiness, Love, and Wisdom** by Rick Hanson and Richard Mendius. Connects neuroscience with contemplative practices, offering deeper insight into the brain science mentioned in *Parenting from the Inside Out*.  
-* **[👩🏼‍❤️‍💋‍👨🏻🔗 Attached: The New Science of Adult Attachment and How It Can Help You Find - and Keep - Love](./attached-the-new-science-of-adult-attachment-and-how-it-can-help-you-find-and-keep-love.md)** by Amir Levine and Rachel S.F. Heller. Focuses on adult attachment styles, providing parents with a framework for understanding their own relational patterns which influence parenting.  
+* **[👩🏼‍❤️‍💋‍👨🏻🔗 Attached: The New Science of Adult Attachment and How It Can Help You Find - and Keep - Love](/content/books/attached-the-new-science-of-adult-attachment-and-how-it-can-help-you-find-and-keep-love.md)** by Amir Levine and Rachel S.F. Heller. Focuses on adult attachment styles, providing parents with a framework for understanding their own relational patterns which influence parenting.  
 * 🌍 **Hunt, Gather, Parent: What Ancient Cultures Can Teach Us About the Lost Art of Caring for Our Kids** by Michaeleen Doucleff. Offers a contrasting cultural perspective on parenting, focusing on practices from indigenous communities that foster cooperation and resilience, providing a different lens on how environment and community shape children.  
-* **[🤕🎼🧠 The Body Keeps the Score: Brain, Mind, and Body in the Healing of Trauma](./the-body-keeps-the-score-brain-mind-and-body-in-the-healing-of-trauma.md)** by Bessel van der Kolk. While not a parenting book, it provides a deep understanding of how trauma is stored in the body and mind, offering profound context for parents who are processing their own adverse childhood experiences.  
+* **[🤕🎼🧠 The Body Keeps the Score: Brain, Mind, and Body in the Healing of Trauma](/content/books/the-body-keeps-the-score-brain-mind-and-body-in-the-healing-of-trauma.md)** by Bessel van der Kolk. While not a parenting book, it provides a deep understanding of how trauma is stored in the body and mind, offering profound context for parents who are processing their own adverse childhood experiences.  
   
-## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
+## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Parenting from the Inside Out: How a Deeper Self-Understanding Can Help You Raise Children Who Thrive. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.  
   
 ## 🐦 Tweet  

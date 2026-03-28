@@ -10,7 +10,7 @@ Channel: Heather Cox Richardson
 tags:
 youtube: https://www.youtube.com/embed/l2yAj6sKmcU
 ---
-[Home](../index.md) > [Videos](./index.md) | [🏛️🇺🇸📖 Heather Cox Richardson](../people/heather-cox-richardson.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md) | [🏛️🇺🇸📖 Heather Cox Richardson](/content/people/heather-cox-richardson.md)  
 # 🏛️💬🗓️ Politics Chat, December 23, 2025  
 ![Politics Chat, December 23, 2025](https://www.youtube.com/embed/l2yAj6sKmcU)  
   
@@ -50,9 +50,9 @@ youtube: https://www.youtube.com/embed/l2yAj6sKmcU
   
 ### ↔️ Similar  
   
-* [🏛️☀️⬆️ Democracy Awakening: 📝 Notes on the State of 🇺🇸 America](../books/democracy-awakening.md) by Heather Cox Richardson.  
-* [🇺🇲⚔️ How the South Won the Civil War: Oligarchy, Democracy, and the Continuing Fight for the Soul of America](../books/how-the-south-won-the-civil-war-oligarchy-democracy-and-the-continuing-fight-for-the-soul-of-america.md) by 👤 Heather Cox Richardson.  
-* [🗳️🏛️☠️ How Democracies Die](../books/how-democracies-die.md) by Steven Levitsky and Daniel Ziblatt (Crown Publishing Group).  
+* [🏛️☀️⬆️ Democracy Awakening: 📝 Notes on the State of 🇺🇸 America](/content/books/democracy-awakening.md) by Heather Cox Richardson.  
+* [🇺🇲⚔️ How the South Won the Civil War: Oligarchy, Democracy, and the Continuing Fight for the Soul of America](/content/books/how-the-south-won-the-civil-war-oligarchy-democracy-and-the-continuing-fight-for-the-soul-of-america.md) by 👤 Heather Cox Richardson.  
+* [🗳️🏛️☠️ How Democracies Die](/content/books/how-democracies-die.md) by Steven Levitsky and Daniel Ziblatt (Crown Publishing Group).  
   
 ### 🆚 Contrasting  
   
@@ -61,5 +61,5 @@ youtube: https://www.youtube.com/embed/l2yAj6sKmcU
   
 ### 🎨 Creatively Related  
   
-*  [📺💀 Amusing Ourselves to Death: Public Discourse in the Age of Show Business](../books/amusing-ourselves-to-death-public-discourse-in-the-age-of-show-business.md) by 🏢 Penguin Books. 📺 A 🧐 look at how 🎭 entertainment-based 📢 communication 🏚️ degrades 🗣️ public discourse.  
+*  [📺💀 Amusing Ourselves to Death: Public Discourse in the Age of Show Business](/content/books/amusing-ourselves-to-death-public-discourse-in-the-age-of-show-business.md) by 🏢 Penguin Books. 📺 A 🧐 look at how 🎭 entertainment-based 📢 communication 🏚️ degrades 🗣️ public discourse.  
 * 📖 The Garden of Eden by 👤 Ernest Hemingway. 🍎 A 🖋️ literary exploration of 🎭 identity and the 🏚️ loss of 🏝️ innocence mentioned in the 📽️ video.

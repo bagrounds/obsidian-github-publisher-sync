@@ -7,7 +7,7 @@ share: true
 CTA: ✊ Confront injustice.
 affiliate link: https://amzn.to/49ss8Ge
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 💔👊⚖️ Nobody's Girl: A Memoir of Surviving Abuse and Fighting for Justice  
 [🛒 Nobody's Girl: A Memoir of Surviving Abuse and Fighting for Justice. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/49ss8Ge)  
   
@@ -77,7 +77,7 @@ Virginia Roberts Giuffre's harrowing, posthumously published account detailing h
 * 👧 **Persepolis: The Story of a Childhood** by Marjane Satrapi (graphic novel memoir on sociopolitical upheaval)  
   
 ### 🔗 Related  
-* **[💰🤫 Dark Money: The Hidden History of the Billionaires Behind the Rise of the Radical Right](./dark-money-the-hidden-history-of-the-billionaires-behind-the-rise-of-the-radical-right.md)** by Jane Mayer (explores power and corruption)  
+* **[💰🤫 Dark Money: The Hidden History of the Billionaires Behind the Rise of the Radical Right](/content/books/dark-money-the-hidden-history-of-the-billionaires-behind-the-rise-of-the-radical-right.md)** by Jane Mayer (explores power and corruption)  
 * 🕵️‍♂️ **Catch and Kill: Lies, Spies, and a Conspiracy to Protect Predators** by Ronan Farrow (investigative journalism on sexual abuse cover-ups)  
   
 ## 🫵 What Do You Think?  

@@ -7,7 +7,7 @@ share: true
 affiliate link: https://amzn.to/46SPALE
 CTA: ⚖️ Demand fairness.
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # ⚖️⬆️🤝 The Spirit Level: Why Greater Equality Makes Societies Stronger  
 [🛒 The Spirit Level: Why Greater Equality Makes Societies Stronger. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/46SPALE)  
   
@@ -43,9 +43,9 @@ Wilkinson and Pickett posit that the psychological effects of inequality are a k
   
 ### 🤝 Similar Reads: 🗺️ Exploring the Landscape of Inequality  
   
-* **[🏷️🏚️💔🏰 The Price of Inequality: How Today's Divided Society Endangers Our Future](./the-price-of-inequality-how-todays-divided-society-endangers-our-future.md) by Joseph E. Stiglitz:** 🏆 The Nobel laureate in economics argues that inequality is not just morally wrong but also economically destructive, hindering growth and stability.  
-* **[💰📈🌍⏳ Capital in the Twenty-First Century](./capital-in-the-twenty-first-century.md) by Thomas Piketty:** 🌍 A monumental work of economic history that traces the dynamics of wealth and income inequality in Europe and the United States since the 18th century, arguing that the rate of return on capital tends to exceed the rate of economic growth.  
-* **[🏚️💰 Evicted: Poverty and Profit in the American City](./evicted-poverty-and-profit-in-the-american-city.md) by Matthew Desmond:** ❤️‍🩹 A powerful and intimate look at the lives of eight families in Milwaukee, illustrating the devastating human cost of housing instability and poverty.  
+* **[🏷️🏚️💔🏰 The Price of Inequality: How Today's Divided Society Endangers Our Future](/content/books/the-price-of-inequality-how-todays-divided-society-endangers-our-future.md) by Joseph E. Stiglitz:** 🏆 The Nobel laureate in economics argues that inequality is not just morally wrong but also economically destructive, hindering growth and stability.  
+* **[💰📈🌍⏳ Capital in the Twenty-First Century](/content/books/capital-in-the-twenty-first-century.md) by Thomas Piketty:** 🌍 A monumental work of economic history that traces the dynamics of wealth and income inequality in Europe and the United States since the 18th century, arguing that the rate of return on capital tends to exceed the rate of economic growth.  
+* **[🏚️💰 Evicted: Poverty and Profit in the American City](/content/books/evicted-poverty-and-profit-in-the-american-city.md) by Matthew Desmond:** ❤️‍🩹 A powerful and intimate look at the lives of eight families in Milwaukee, illustrating the devastating human cost of housing instability and poverty.  
 * 👦 **"Our Kids: The American Dream in Crisis" by Robert D. Putnam:** 🇺🇸 Explores the growing opportunity gap between rich and poor children in America, highlighting the decline of social mobility.  
   
 ### 🆚 Contrasting Reads: 😵‍💫 Alternative Perspectives and Critiques  
@@ -57,10 +57,10 @@ Wilkinson and Pickett posit that the psychological effects of inequality are a k
   
 ### 🎨 Creatively Related Reads: 🎭 Inequality in the Arts and Imagination  
   
-* **[🍇😡 The Grapes of Wrath](./the-grapes-of-wrath.md) by John Steinbeck:** 🏜️ The classic novel of the Joad family's struggle during the Great Depression offers a timeless and moving depiction of poverty and social injustice.  
+* **[🍇😡 The Grapes of Wrath](/content/books/the-grapes-of-wrath.md) by John Steinbeck:** 🏜️ The classic novel of the Joad family's struggle during the Great Depression offers a timeless and moving depiction of poverty and social injustice.  
 * 👩‍🦰 **"The Handmaid's Tale" by Margaret Atwood:** 🚨 This dystopian novel explores a society with extreme and rigidly enforced social hierarchies, offering a chilling allegory of power and oppression.  
 * 🎬 **"Parasite" (Film, directed by Bong Joon-ho):** 🏆 This Academy Award-winning film is a darkly comedic thriller that masterfully dissects the dynamics of class struggle and the chasm between the rich and the poor in modern South Korea.  
 * 📺 **"The Wire" (Television Series):** 🌆 Set in Baltimore, this critically acclaimed series offers a panoramic and nuanced exploration of the interconnected social and economic problems in an American city, from the drug trade to the failures of the education system and political corruption.  
   
-## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro)  
+## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-pro)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on The Spirit Level: Why Greater Equality Makes Societies Stronger. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

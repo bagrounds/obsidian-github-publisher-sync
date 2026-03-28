@@ -5,7 +5,7 @@ aliases:
 title: ⚙️🧠🔄 Adaptive Control
 URL: https://bagrounds.org/topics/adaptive-control
 ---
-[Home](../index.md) > [Topics](./index.md) > [Knowledge](./a-hierarchical-view-of-human-knowledge.md) > [Engineering](./engineering.md) > [Electrical Engineering](./electrical-engineering.md) > [Control Systems](./control-systems.md)  
+[Home](/content/index.md) > [Topics](/content/topics/index.md) > [Knowledge](/content/topics/a-hierarchical-view-of-human-knowledge.md) > [Engineering](/content/topics/engineering.md) > [Electrical Engineering](/content/topics/electrical-engineering.md) > [Control Systems](/content/topics/control-systems.md)  
 # ⚙️🧠🔄 Adaptive Control  
 ## 🤖 AI Summary  
 **High-Level Summary:**  
@@ -20,13 +20,13 @@ Here are some major subcategories of Adaptive Control:
 * **Self-Tuning Regulators (STR):** 🔧 These controllers estimate the unknown system parameters online and use these estimates to design or tune the controller. ⚙️ It's like having a self-adjusting wrench that automatically fits the right size. 🔩  
 * **Gain Scheduling:** 📈 This technique uses pre-computed control parameters for different operating conditions. 📊 When the system moves from one condition to another, the controller switches to the appropriate set of parameters. It's like having a set of pre-programmed maps for different terrains. 🗺️  
 * **Dual Adaptive Control:** 🧐 This method considers both the control objective and the need to improve the parameter estimates. 🔍 It balances the exploration of unknown parameters with the exploitation of current knowledge. It's like a smart explorer who both tries to find the right path and learns about the terrain along the way. 🧭  
-* **[Reinforcement Learning based Adaptive Control](./reinforcement-learning-based-adaptive-control.md):** 🎮 This method uses reinforcement learning algorithms to learn optimal control policies in uncertain environments. 🕹️ The controller learns through trial and error, receiving rewards for good actions and penalties for bad ones. It is very useful for very complex and non-linear systems. 🏆  
+* **[Reinforcement Learning based Adaptive Control](/content/topics/reinforcement-learning-based-adaptive-control.md):** 🎮 This method uses reinforcement learning algorithms to learn optimal control policies in uncertain environments. 🕹️ The controller learns through trial and error, receiving rewards for good actions and penalties for bad ones. It is very useful for very complex and non-linear systems. 🏆  
   
 **Book Recommendations:**  
   
 Here are some influential and accessible books on Adaptive Control:  
   
-1.  **[🧬🕹️ Adaptive Control](../books/adaptive-control.md) by Karl J. Åström and Björn Wittenmark:** 📚 This is a classic and comprehensive text that covers the theoretical foundations and practical aspects of adaptive control. It's a go-to resource for researchers and practitioners. 🌟  
+1.  **[🧬🕹️ Adaptive Control](/content/books/adaptive-control.md) by Karl J. Åström and Björn Wittenmark:** 📚 This is a classic and comprehensive text that covers the theoretical foundations and practical aspects of adaptive control. It's a go-to resource for researchers and practitioners. 🌟  
 2.  **"Adaptive Control" by Gang Tao:** 📘 This book provides a clear and concise introduction to the main concepts and techniques of adaptive control, with a focus on practical applications. It is a good option for people who are new to the field. 🎓  
 3.  **"Adaptive Control Systems: Techniques and Applications" by Chih-Tsong Chen:** 📖 This book covers a wide range of adaptive control techniques and their applications in various engineering fields. It offers a balanced treatment of theory and practice. 🛠️  
 4.  **"Reinforcement Learning, second edition" by Richard S. Sutton and Andrew G. Barto:** 🤖 While not exclusively about adaptive control, this book is essential for understanding reinforcement learning-based adaptive control. It provides a comprehensive introduction to the fundamental concepts and algorithms of reinforcement learning. 🧠  

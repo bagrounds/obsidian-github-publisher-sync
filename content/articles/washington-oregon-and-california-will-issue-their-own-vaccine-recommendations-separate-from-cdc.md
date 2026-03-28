@@ -7,7 +7,7 @@ URL: https://bagrounds.org/articles/washington-oregon-and-california-will-issue-
 Author:
 tags:
 ---
-[Home](../index.md) > [Articles](./index.md)  
+[Home](/content/index.md) > [Articles](/content/articles/index.md)  
 # 🇺🇸⛰️☀️💉 Washington, Oregon and California will issue their own vaccine recommendations, separate from CDC  
   
 ## 🤖 AI Summary  
@@ -32,7 +32,7 @@ For a better understanding, it would be beneficial to explore:
 ## 📚 Book Recommendations  
   
 - 🤝 **Coronavirus Politics: The Comparative Politics and Policy of COVID-19** by Scott L. Greer provides a detailed look at how different states and nations responded to health crises, offering insight into decentralized health policy.  
-* **[💰🤥 Merchants of Doubt](../books/merchants-of-doubt.md)** by Naomi Oreskes and Erik M. Conway investigates how a small group of scientists obscured the truth on issues from tobacco to climate change, directly addressing the theme of science versus politics.  
+* **[💰🤥 Merchants of Doubt](/content/books/merchants-of-doubt.md)** by Naomi Oreskes and Erik M. Conway investigates how a small group of scientists obscured the truth on issues from tobacco to climate change, directly addressing the theme of science versus politics.  
 * 📜 **The Politics of Public Health** by David L. Perlin provides an in-depth look at how political systems and policy decisions impact public health outcomes.  
 - 😷 The Great Influenza by John M. Barry details the history of a major public health crisis and the response of authorities.  
 - 🦠 The Power of Plagues by Irwin W. Sherman explores how epidemics and pandemics have shaped human history and society.  

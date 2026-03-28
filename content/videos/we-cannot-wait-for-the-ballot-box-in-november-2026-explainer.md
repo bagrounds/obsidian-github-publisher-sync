@@ -10,7 +10,7 @@ Channel: Heather Cox Richardson
 tags:
 youtube: https://youtu.be/ijMzje5O1BQ
 ---
-[Home](../index.md) > [Videos](./index.md) | [🏛️🇺🇸📖 Heather Cox Richardson](../people/heather-cox-richardson.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md) | [🏛️🇺🇸📖 Heather Cox Richardson](/content/people/heather-cox-richardson.md)  
 # ⏳🗳️🙅 We Cannot Wait for the Ballot Box in November 2026 | Explainer  
 ![We Cannot Wait for the Ballot Box in November 2026 | Explainer](https://youtu.be/ijMzje5O1BQ)  
   
@@ -31,8 +31,8 @@ This video presents a 🔍 specific perspective on the current political climate
   
 ## 📚 Book Recommendations  
 * 📖 Rules for Radicals by Saul Alinsky offers a guide to political activism and community organizing.  
-* [👑🚫📜2️⃣0️⃣ On Tyranny: Twenty Lessons from the Twentieth Century](../books/on-tyranny.md) by Timothy Snyder provides a historical look at how democracies fail and offers lessons for the present day.  
-* [😇🧠 The Righteous Mind: Why Good People Are Divided by Politics and Religion](../books/the-righteous-mind.md) by Jonathan Haidt explores the psychological foundations of morality and politics, helping to understand different political viewpoints.  
+* [👑🚫📜2️⃣0️⃣ On Tyranny: Twenty Lessons from the Twentieth Century](/content/books/on-tyranny.md) by Timothy Snyder provides a historical look at how democracies fail and offers lessons for the present day.  
+* [😇🧠 The Righteous Mind: Why Good People Are Divided by Politics and Religion](/content/books/the-righteous-mind.md) by Jonathan Haidt explores the psychological foundations of morality and politics, helping to understand different political viewpoints.  
 * 📖 The Obstacle Is the Way by Ryan Holiday offers a philosophy for turning problems into opportunities, which could be creatively related to the video's message of turning anxiety into action.  
   
 ## 🐦 Tweet  

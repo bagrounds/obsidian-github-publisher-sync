@@ -7,7 +7,7 @@ share: true
 CTA: 💡 Rethink prosperity.
 affiliate link: https://amzn.to/48Xh4PO
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🍩🌍⚖️ Doughnut Economics: Seven Ways to Think Like a 21st-Century Economist  
 [🛒 Doughnut Economics: Seven Ways to Think Like a 21st-Century Economist. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/48Xh4PO)  
   
@@ -62,7 +62,7 @@ affiliate link: https://amzn.to/48Xh4PO
   
 ## 🔍 Topics for Further Understanding  
   
-* 🛠️ Specific policy mechanisms and fiscal tools for transitioning to regenerative and distributive economies. See also: [🏦♾️📈💸 Modern Monetary Theory](../topics/modern-monetary-theory.md)  
+* 🛠️ Specific policy mechanisms and fiscal tools for transitioning to regenerative and distributive economies. See also: [🏦♾️📈💸 Modern Monetary Theory](/content/topics/modern-monetary-theory.md)  
 * 🏙️ Detailed case studies of Doughnut Cities beyond initial conceptual adoption, examining concrete impacts and long-term viability.  
 * 🌍 The role of international governance and global institutions in facilitating a Doughnut Economy.  
 * 🤝 Intersectionality of Doughnut Economics with decolonial and feminist economic theories.  
@@ -89,18 +89,18 @@ affiliate link: https://amzn.to/48Xh4PO
 ## 📚 Book Recommendations  
   
 ### ➕ Similar  
-* **[📉🌎 Less is More: How Degrowth Will Save the World](./less-is-more-how-degrowth-will-save-the-world.md)** by Jason Hickel  
-* **[💰🏭🌍 The Value of Everything: Making and Taking in the Global Economy](./the-value-of-everything-making-and-taking-in-the-global-economy.md)** by Mariana Mazzucato  
-* **[🌐🔗🧠📖 Thinking in Systems: A Primer](./thinking-in-systems.md)** by Donella H. Meadows  
+* **[📉🌎 Less is More: How Degrowth Will Save the World](/content/books/less-is-more-how-degrowth-will-save-the-world.md)** by Jason Hickel  
+* **[💰🏭🌍 The Value of Everything: Making and Taking in the Global Economy](/content/books/the-value-of-everything-making-and-taking-in-the-global-economy.md)** by Mariana Mazzucato  
+* **[🌐🔗🧠📖 Thinking in Systems: A Primer](/content/books/thinking-in-systems.md)** by Donella H. Meadows  
   
 ### 🆚 Contrasting  
-* **[🌎👎👑💰🏚️ Why Nations Fail: The Origins of Power, Prosperity, and Poverty](./why-nations-fail-the-origins-of-power-prosperity-and-poverty.md)** by Daron Acemoglu and James A. Robinson  
+* **[🌎👎👑💰🏚️ Why Nations Fail: The Origins of Power, Prosperity, and Poverty](/content/books/why-nations-fail-the-origins-of-power-prosperity-and-poverty.md)** by Daron Acemoglu and James A. Robinson  
 * 💸 **The Wealth of Nations** by Adam Smith  
-* **[💰📈🌍⏳ Capital in the Twenty-First Century](./capital-in-the-twenty-first-century.md)** by Thomas Piketty  
+* **[💰📈🌍⏳ Capital in the Twenty-First Century](/content/books/capital-in-the-twenty-first-century.md)** by Thomas Piketty  
   
 ### 🔗 Related  
-* **[🌍🔥💡 How to Avoid a Climate Disaster: The Solutions We Have and the Breakthroughs We Need](./how-to-avoid-a-climate-disaster-the-solutions-we-have-and-the-breakthroughs-we-need.md)** by Bill Gates  
-* **[🦋♟️ Emergent Strategy: Shaping Change, Changing Worlds](./emergent-strategy.md)** by adrienne maree brown  
+* **[🌍🔥💡 How to Avoid a Climate Disaster: The Solutions We Have and the Breakthroughs We Need](/content/books/how-to-avoid-a-climate-disaster-the-solutions-we-have-and-the-breakthroughs-we-need.md)** by Bill Gates  
+* **[🦋♟️ Emergent Strategy: Shaping Change, Changing Worlds](/content/books/emergent-strategy.md)** by adrienne maree brown  
 * 🌱 **Systems Thinking for Sustainable Development** by Edward Saja Sanneh  
   
 ## 🫵 What Do You Think?  

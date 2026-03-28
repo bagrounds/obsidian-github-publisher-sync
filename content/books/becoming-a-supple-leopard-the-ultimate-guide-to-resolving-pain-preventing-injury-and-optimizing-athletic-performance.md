@@ -7,7 +7,7 @@ share: true
 CTA: 🐆 Mobilize movement.
 affiliate link: https://amzn.to/3W98irW
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🤸🤕 Becoming a Supple Leopard: The Ultimate Guide to Resolving Pain, Preventing Injury, and Optimizing Athletic Performance  
 [🛒 Becoming a Supple Leopard: The Ultimate Guide to Resolving Pain, Preventing Injury, and Optimizing Athletic Performance. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3W98irW)  
   
@@ -123,7 +123,7 @@ A: While comprehensive and detailed, which can be overwhelming for some beginner
     * 🪑 Focuses on mitigating the negative effects of prolonged sitting through movement, posture, and workplace modifications.  
 * 🏃 **Ready to Run: Unlocking Your Potential to Run Pain Free and Perform Your Best** by Kelly Starrett and TJ Murphy  
     * 💨 Applies Supple Leopard principles specifically to running mechanics, injury prevention, and performance for runners.  
-* **[🏃🤸 Built to Move: The Ten Essential Habits to Help You Move Freely and Live Fully](./built-to-move-the-ten-essential-habits-to-help-you-move-freely-and-live-fully.md)** by Kelly Starrett and Juliet Starrett  
+* **[🏃🤸 Built to Move: The Ten Essential Habits to Help You Move Freely and Live Fully](/content/books/built-to-move-the-ten-essential-habits-to-help-you-move-freely-and-live-fully.md)** by Kelly Starrett and Juliet Starrett  
     * 🌱 A more accessible guide focusing on fundamental daily habits for movement, sleep, and nutrition to improve overall well-being.  
 * 🤸 **Functional Movement Screen: The Use of Fundamental Movements as an Assessment of Function - As It Relates To Performance** by Gray Cook  
     * 🔎 Introduces the Functional Movement Screen (FMS) system to identify movement limitations and asymmetries.  
@@ -137,11 +137,11 @@ A: While comprehensive and detailed, which can be overwhelming for some beginner
     * 🧘 Presents the Egoscue Method, which uses specific exercises to correct postural dysfunctions and relieve chronic pain, offering an alternative philosophy to Starrett's.  
   
 #### 💡 Creatively Related Books (Broader Context or Complementary Ideas)  
-* **[😴💭 Why We Sleep: Unlocking the Power of Sleep and Dreams](./why-we-sleep-unlocking-the-power-of-sleep-and-dreams.md)** by Matthew Walker  
+* **[😴💭 Why We Sleep: Unlocking the Power of Sleep and Dreams](/content/books/why-we-sleep-unlocking-the-power-of-sleep-and-dreams.md)** by Matthew Walker  
     * 🛌 Highlights the crucial role of sleep in physical recovery, mental health, and performance, complementing Starrett's emphasis on holistic well-being.  
-* **[🫁🌬️ Breath: The New Science of a Lost Art](./breath-the-new-science-of-a-lost-art.md)** by James Nestor  
+* **[🫁🌬️ Breath: The New Science of a Lost Art](/content/books/breath-the-new-science-of-a-lost-art.md)** by James Nestor  
     * 🌬️ Explores the profound impact of proper breathing mechanics on health, athletic performance, and stress, which ties into Starrett's "midline stabilization" and core engagement.  
-* **[📉📈🌪️💪 Antifragile: Things That Gain from Disorder](./antifragile-things-that-gain-from-disorder.md)** by Nassim Nicholas Taleb  
+* **[📉📈🌪️💪 Antifragile: Things That Gain from Disorder](/content/books/antifragile-things-that-gain-from-disorder.md)** by Nassim Nicholas Taleb  
     * 💪 Introduces the concept of "antifragility" – systems that improve with stress and disorder. This can be creatively related to Starrett's philosophy of proactively exposing the body to varied movements and self-maintenance to build resilience, rather than just avoiding injury.  
 * 🗣️ **Conscious Coaching: The Art and Science of Building Buy-In** by Brett Bartholomew  
     * 🤝 Focuses on the communication and psychological aspects of coaching, which is relevant for implementing mobility practices and getting athletes to "buy in" to the concepts presented in Supple Leopard.  

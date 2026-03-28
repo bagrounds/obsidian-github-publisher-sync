@@ -10,7 +10,7 @@ Channel: SpoonFedStudy
 tags:
 youtube: https://youtu.be/TGIF12opfbg
 ---
-[Home](../index.md) > [Videos](./index.md) | [🥄👶📚 SpoonFedStudy](../topics/spoonfedstudy.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md) | [🥄👶📚 SpoonFedStudy](/content/topics/spoonfedstudy.md)  
 # 🧠⏱️⚡️📚 How to learn ANYTHING in less than 24 hours  
 ![How to learn ANYTHING in less than 24 hours](https://youtu.be/TGIF12opfbg)  
   
@@ -49,7 +49,7 @@ Learn anything in less than 24 hours by focusing on five key steps and addressin
   
 ## 📚 Book Recommendations  
   
-* [⏱️🚀 The First 20 Hours: How to Learn Anything... Fast](../books/the-first-20-hours-how-to-learn-anything-fast.md) is highly relevant, as it champions the exact principle of rapid skill acquisition by focusing on deconstruction and initial high-impact practice.  
-* [⛰️📈🥇 Peak: Secrets from the New Science of Expertise](../books/peak.md) provides the academic foundation for **deliberate practice**—the core technique advocated in the video—offering a deep dive into the science of expertise development.  
-* [⚛️🔄 Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones](../books/atomic-habits.md) is a complementary read, providing a practical framework for consistently showing up for the recommended 90 minutes of daily practice and maintaining the necessary commitment.  
-* [🪖🎨 The War of Art: Break Through the Blocks and Win Your Inner Creative Battles](../books/the-war-of-art.md) addresses the **psychological and emotional barriers** that prevent individuals from starting or concentrating their practice, which is a necessary step before beginning the 24-hour challenge.
+* [⏱️🚀 The First 20 Hours: How to Learn Anything... Fast](/content/books/the-first-20-hours-how-to-learn-anything-fast.md) is highly relevant, as it champions the exact principle of rapid skill acquisition by focusing on deconstruction and initial high-impact practice.  
+* [⛰️📈🥇 Peak: Secrets from the New Science of Expertise](/content/books/peak.md) provides the academic foundation for **deliberate practice**—the core technique advocated in the video—offering a deep dive into the science of expertise development.  
+* [⚛️🔄 Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones](/content/books/atomic-habits.md) is a complementary read, providing a practical framework for consistently showing up for the recommended 90 minutes of daily practice and maintaining the necessary commitment.  
+* [🪖🎨 The War of Art: Break Through the Blocks and Win Your Inner Creative Battles](/content/books/the-war-of-art.md) addresses the **psychological and emotional barriers** that prevent individuals from starting or concentrating their practice, which is a necessary step before beginning the 24-hour challenge.

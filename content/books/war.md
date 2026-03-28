@@ -7,7 +7,7 @@ share: true
 affiliate link: https://amzn.to/4nMsEDL
 CTA: Look deeper.
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🇷🇺⚔️🇺🇦🇮🇱⚔️🇮🇷🇺🇸⚔️🇺🇸 War  
 [🛒 War. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4nMsEDL)  
   
@@ -37,7 +37,7 @@ CTA: Look deeper.
   
 * 📝 ***Obama's Wars*** by Bob Woodward: This earlier book by Woodward offers a similar in-depth look at presidential decision-making regarding the wars in Iraq and Afghanistan during Barack Obama's first term, exploring the internal debates and civil-military tensions.  
 * 🏛️ ***Bush at War*** by Bob Woodward: The first in Woodward's series on the George W. Bush presidency, focusing on the administration's response to the 9/11 attacks and the initial phases of the War in Afghanistan.  
-* **[⚠️😬😰 Peril](./peril.md)** by Bob Woodward and Robert Costa: Covers the transition from the Trump to the Biden presidency, including the aftermath of the 2020 election and the January 6th Capitol attack, touching on themes of political instability relevant to the "war for the presidency" aspect of Woodward's *War*.  
+* **[⚠️😬😰 Peril](/content/books/peril.md)** by Bob Woodward and Robert Costa: Covers the transition from the Trump to the Biden presidency, including the aftermath of the 2020 election and the January 6th Capitol attack, touching on themes of political instability relevant to the "war for the presidency" aspect of Woodward's *War*.  
 * 💣 ***The Looming Tower: Al-Qaeda and the Road to 9/11*** by Lawrence Wright: An acclaimed investigative work providing deep historical context on the rise of Al-Qaeda and the events leading up to the 9/11 attacks, offering a different, though related, angle on the origins of conflicts the US has been involved in.  
 * 💼 ***The Education of an Idealist*** by Samantha Power: A memoir offering an insider's perspective on US foreign policy during the Obama administration, from a diplomat and policymaker's viewpoint.  
   
@@ -55,7 +55,7 @@ CTA: Look deeper.
 * 👑 ***The Prince*** by Niccolò Machiavelli: A classic treatise on political power, leadership, and the acquisition and maintenance of the state. Offers historical insights into the dynamics of power and political maneuvering relevant to the "war for the presidency" theme.  
 * 🎖️ ***Leadership Under Pressure: Tactics from the Front Line*** by Bob Stewart: Draws on military and business experience to discuss leadership in crisis situations, offering lessons applicable to the high-pressure environments described in *War*.  
 * 👦 ***Beasts of No Nation*** by Uzodinma Iweala: A powerful novel about a child soldier in a West African civil war, exploring the devastating human cost and psychological impact of conflict, offering a starkly different, fictional perspective on the experience of war.  
-* **[🎨⚔️ The Art of War](./the-art-of-war.md)** by Sun Tzu: An ancient Chinese military treatise offering strategic principles applicable to conflict and competition, providing a classic framework for understanding strategic thinking relevant to both military and political "wars."  
+* **[🎨⚔️ The Art of War](/content/books/the-art-of-war.md)** by Sun Tzu: An ancient Chinese military treatise offering strategic principles applicable to conflict and competition, providing a classic framework for understanding strategic thinking relevant to both military and political "wars."  
   
-## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
+## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on War by Bob Woodward. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

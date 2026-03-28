@@ -10,7 +10,7 @@ Channel: UCL Laws
 tags:
 youtube: https://youtu.be/DR79GW6SvxE
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md)  
 # 🇺🇸🗣️❓ The State of the United States: A Conversation with Jack Smith  
 ![The State of the United States: A Conversation with Jack Smith](https://youtu.be/DR79GW6SvxE)  
   
@@ -87,8 +87,8 @@ A: 💪 The speaker encourages young people to double down on their commitment t
   
 ### Similar Themes (Rule of Law, Integrity, Prosecution)  
   
-* [🏛️⚖️ The Rule of Law](../books/the-rule-of-law.md) by Tom Bingham. 💡 This book provides an accessible yet authoritative explanation of the concept of the rule of law, serving as a global primer on the very subject at the heart of the conversation.  
-* [🇺🇸🕵️‍♂️🚫 Where Law Ends: Inside the Mueller Investigation](../books/where-law-ends-inside-the-mueller-investigation.md) by Andrew Weissman. 🤝 Written by the interlocutor in the video, this memoir offers an insider's view of a previous high-stakes Special Counsel investigation, detailing the internal conflicts and dedication to process within the Department of Justice.  
+* [🏛️⚖️ The Rule of Law](/content/books/the-rule-of-law.md) by Tom Bingham. 💡 This book provides an accessible yet authoritative explanation of the concept of the rule of law, serving as a global primer on the very subject at the heart of the conversation.  
+* [🇺🇸🕵️‍♂️🚫 Where Law Ends: Inside the Mueller Investigation](/content/books/where-law-ends-inside-the-mueller-investigation.md) by Andrew Weissman. 🤝 Written by the interlocutor in the video, this memoir offers an insider's view of a previous high-stakes Special Counsel investigation, detailing the internal conflicts and dedication to process within the Department of Justice.  
 * 📜 The Great Dissent: How Oliver Wendell Holmes Changed His Mind—and Changed the Law During World War I by Thomas Healy. 🕊️ Examines the role of the First Amendment and the high legal bar for incitement—a topic explicitly discussed in relation to the January 6 charges—through the lens of historical Supreme Court debates.  
   
 ### Contrasting Perspectives (DOJ Critique, Presidential Power)  
@@ -101,7 +101,7 @@ A: 💪 The speaker encourages young people to double down on their commitment t
   
 * 🌍 A Problem from Hell: America and the Age of Genocide by Samantha Power. ⚖️ A powerful exploration of the global history of international law and genocide, which illuminates the challenges of accountability, witness protection, and political will that the speakers faced at the ICC and Kosovo tribunal.  
 * 🔎 The Ghost Map: The Story of London's Most Terrifying Epidemic—and How It Changed Science, Cities, and the Modern World by Steven Johnson. 💡 A creative look at how systematic investigation, data analysis, and dogged dedication—principles the speaker applies to complex war crimes and public corruption cases—can solve seemingly intractable public problems.  
-* [⚫🦢🎲 The Black Swan: The Impact of the Highly Improbable](../books/the-black-swan-the-impact-of-the-highly-improbable.md) by Nassim Nicholas Taleb. 🧠 Addresses the idea of anticipating the unanticipated and testing assumptions, which the speaker identifies as a key lesson from handling international cases involving large, complex, and unpredictable data sets.  
+* [⚫🦢🎲 The Black Swan: The Impact of the Highly Improbable](/content/books/the-black-swan-the-impact-of-the-highly-improbable.md) by Nassim Nicholas Taleb. 🧠 Addresses the idea of anticipating the unanticipated and testing assumptions, which the speaker identifies as a key lesson from handling international cases involving large, complex, and unpredictable data sets.  
   
 ## 🐦 Tweet  
 <blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">🇺🇸🗣️❓ The State of the United States: A Conversation with Jack Smith<br><br>⚖️ Justice System | 🏛️ Department of Justice | 🚩 Political Climate | 🧑‍⚖️ Legal Processes | 🛑 Obstruction | 🌎 International Criminal Court<a href="https://twitter.com/7Veritas4?ref_src=twsrc%5Etfw">@7Veritas4</a><a href="https://t.co/goJY16OMxJ">https://t.co/goJY16OMxJ</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/1979226060706414985?ref_src=twsrc%5Etfw">October 17, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

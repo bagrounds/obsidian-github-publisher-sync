@@ -11,7 +11,7 @@ tags:
   - MMT
 youtube: https://youtu.be/E5JTn7GS4oA
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md)  
 # 🏦➕➡️🧑‍🎓🎓 L. Randall Wray - Modern Money Theory for Beginners  
 ![L. Randall Wray - Modern Money Theory for Beginners](https://youtu.be/E5JTn7GS4oA)  
   
@@ -50,8 +50,8 @@ youtube: https://youtu.be/E5JTn7GS4oA
   
 ### ↔️ Similar  
   
-* [💰📉➡️📈🗳️ The Deficit Myth: Modern Monetary Theory and the Birth of the People's Economy](../books/the-deficit-myth.md) by Stephanie Kelton. 📘 A popular, accessible introduction that frames MMT as a tool for political possibilities, explaining how sovereign debt is misunderstood.  
-* [💰📈🤔 Understanding Modern Money](../books/understanding-modern-money.md): The Key to Full Employment and Price Stability by L. Randall Wray. 🧠 The speaker’s own academic work that provides a detailed, institutional analysis and foundation for MMT principles.  
+* [💰📉➡️📈🗳️ The Deficit Myth: Modern Monetary Theory and the Birth of the People's Economy](/content/books/the-deficit-myth.md) by Stephanie Kelton. 📘 A popular, accessible introduction that frames MMT as a tool for political possibilities, explaining how sovereign debt is misunderstood.  
+* [💰📈🤔 Understanding Modern Money](/content/books/understanding-modern-money.md): The Key to Full Employment and Price Stability by L. Randall Wray. 🧠 The speaker’s own academic work that provides a detailed, institutional analysis and foundation for MMT principles.  
   
 ### 🆚 Contrasting  
   
@@ -60,5 +60,5 @@ youtube: https://youtu.be/E5JTn7GS4oA
   
 ### 🎨 Creatively Related  
   
-* [🏛️💰 Debt: The First 5,000 Years](../books/debt-the-first-5000-years.md) by David Graeber. 📜 Explores the historical 🌍 origins of debt and credit, supporting the Chartalist (state money) view presented in the video over the traditional barter-to-coin narrative.  
-* [🌍🏛️ The Great Transformation: The Political and Economic Origins of Our Time](../books/the-great-transformation-the-political-and-economic-origins-of-our-time.md) by Karl Polanyi. 🏭 A historical critique of the self-regulating market 🤝 that challenges the foundational assumptions of classical economics, which aligns with MMT's questioning of orthodox monetary origins.
+* [🏛️💰 Debt: The First 5,000 Years](/content/books/debt-the-first-5000-years.md) by David Graeber. 📜 Explores the historical 🌍 origins of debt and credit, supporting the Chartalist (state money) view presented in the video over the traditional barter-to-coin narrative.  
+* [🌍🏛️ The Great Transformation: The Political and Economic Origins of Our Time](/content/books/the-great-transformation-the-political-and-economic-origins-of-our-time.md) by Karl Polanyi. 🏭 A historical critique of the self-regulating market 🤝 that challenges the foundational assumptions of classical economics, which aligns with MMT's questioning of orthodox monetary origins.

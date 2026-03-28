@@ -12,7 +12,7 @@ force_analyze_links: false
 link_analysis_time: 2026-03-22T23:36:01.703Z
 link_analysis_model: gemini-3.1-flash-lite-preview
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 💡🤖💰💥🏢📉 The Innovator's Dilemma: When New Technologies Cause Great Firms to Fail  
 [🛒 The Innovator's Dilemma: When New Technologies Cause Great Firms to Fail. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/443oyiI)  
   
@@ -65,15 +65,15 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 * **Best Alternate Books on the Same Topic:**  
     * "Competing Against Luck: The Story of Innovation and Customer Choice" by Clayton M. Christensen, Taddy Hall, Karen Dillon, and David S. Duncan. This book builds on the "Jobs to Be Done" framework, which is a related concept to disruptive innovation. 🔄  
     * *The Innovator's Solution* by Clayton Christensen and Michael Raynor – A direct follow-up, offering strategies for companies to create disruptive innovations.  
-* **Best Tangentially Related Book:** "[Zero To One](./zero-to-one.md): Notes on Startups, or How to Build the Future" by Peter Thiel. This book explores how startups 🚀 can create entirely new markets, which is closely related to the concept of disruptive innovation.  
-* **Best Diametrically Opposed Book:** "[Good To Great](./good-to-great.md): Why Some Companies Make the Leap...And Others Don't" by Jim Collins. This book focuses on the importance of disciplined people, disciplined thought, and disciplined action in achieving sustained success, which contrasts with Christensen's emphasis on the limitations of "good management" in the face of disruption. ⚔️  
+* **Best Tangentially Related Book:** "[Zero To One](/content/books/zero-to-one.md): Notes on Startups, or How to Build the Future" by Peter Thiel. This book explores how startups 🚀 can create entirely new markets, which is closely related to the concept of disruptive innovation.  
+* **Best Diametrically Opposed Book:** "[Good To Great](/content/books/good-to-great.md): Why Some Companies Make the Leap...And Others Don't" by Jim Collins. This book focuses on the importance of disciplined people, disciplined thought, and disciplined action in achieving sustained success, which contrasts with Christensen's emphasis on the limitations of "good management" in the face of disruption. ⚔️  
 * **Best Fiction Books Incorporating Related Ideas:**  
-    * [👨‍🚀🔴✨ The Martian](./the-martian.md) by Andy Weir. This book illustrates how innovative problem-solving 👨‍🚀 and resourcefulness can lead to success in the face of extreme challenges, mirroring the adaptability required for disruptive innovation.  
+    * [👨‍🚀🔴✨ The Martian](/content/books/the-martian.md) by Andy Weir. This book illustrates how innovative problem-solving 👨‍🚀 and resourcefulness can lead to success in the face of extreme challenges, mirroring the adaptability required for disruptive innovation.  
     * *The Circle* by Dave Eggers – Explores the impact of technological innovation, surveillance, and disruption on society, focusing on a powerful tech company that shapes the future of communication and privacy.  
 * **Best More General Book:** "Innovation and Its Discontents: How Our Broken Addiction to Innovation Is Endangering Progress and What We Can Do About It" by Calestous Juma. This book takes a broader view of innovation, examining its historical context and societal impact. 🌍  
 * **Best More Specific Book:** "Seeing What's Next: Using the Theories of Innovation to Predict Industry Change" by Clayton M. Christensen, Scott D. Anthony, and Erik A. Roth. This book delves deeper into the practical application of disruptive innovation theory, providing tools and frameworks for predicting industry change. 🔮  
 * **Best More Rigorous Book:** "Diffusion of Innovations" by Everett M. Rogers. This is a very academic work 🔬, and is the original source for many theories on how innovations are adopted by populations.  
-* **Best More Accessible Book:** "[The Lean Startup](./the-lean-startup.md)" by Eric Ries. This book provides a practical guide 🏃 to building and scaling startups, emphasizing the importance of rapid experimentation and customer feedback.  
+* **Best More Accessible Book:** "[The Lean Startup](/content/books/the-lean-startup.md)" by Eric Ries. This book provides a practical guide 🏃 to building and scaling startups, emphasizing the importance of rapid experimentation and customer feedback.  
   
 ## 📝🐒 Human Notes  
 ### Part One: Why Great Companies Can Fail  

@@ -5,7 +5,7 @@ aliases:
 title: 🧑‍💼🛡️ Job Guarantee, Employer of Last Resort
 URL: https://bagrounds.org/topics/job-guarantee-employer-of-last-resort
 ---
-[Home](../index.md) > [Topics](./index.md) > [Knowledge](./a-hierarchical-view-of-human-knowledge.md) > [Social Sciences](./social-sciences.md) > [Economics](./economics.md) > [Heterodox Economics](./heterodox-economics.md) > [🏦♾️📈💸 Modern Monetary Theory](./modern-monetary-theory.md)  
+[Home](/content/index.md) > [Topics](/content/topics/index.md) > [Knowledge](/content/topics/a-hierarchical-view-of-human-knowledge.md) > [Social Sciences](/content/topics/social-sciences.md) > [Economics](/content/topics/economics.md) > [Heterodox Economics](/content/topics/heterodox-economics.md) > [🏦♾️📈💸 Modern Monetary Theory](/content/topics/modern-monetary-theory.md)  
 # 🧑‍💼🛡️ Job Guarantee, Employer of Last Resort  
 ## 🤖 AI Summary  
 **High-Level Summary:**  
@@ -29,7 +29,7 @@ The Job Guarantee (JG), also known as Employer of Last Resort (ELR), is an econo
     * It's about the mechanics of how the money works. ⚙️  
   
 **Book Recommendations:**  
-1.  **[💰📉➡️📈🗳️ The Deficit Myth: Modern Monetary Theory and the Birth of the People's Economy](../books/the-deficit-myth.md) by Stephanie Kelton:**  
+1.  **[💰📉➡️📈🗳️ The Deficit Myth: Modern Monetary Theory and the Birth of the People's Economy](/content/books/the-deficit-myth.md) by Stephanie Kelton:**  
     * This book provides a clear and accessible explanation of Modern Monetary Theory (MMT), which is closely associated with the Job Guarantee. It demystifies government finance and explains how a sovereign currency issuer can fund public programs like the JG. 📚  
     * This book helps to understand the theoretical basis for a job guarantee.  
 2.  **"Full Employment Without Inflation: Manifesto for a Job Guarantee" by William Mitchell and Pavlina R. Tcherneva:**  

@@ -8,7 +8,7 @@ tags:
   - law
 affiliate link: https://amzn.to/43xso28
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🧑‍⚖️❓ ERISA Benefits Litigation Answer Book  
 [🛒 ERISA Benefits Litigation Answer Book. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/43xso28)  
   
@@ -54,7 +54,7 @@ affiliate link: https://amzn.to/43xso28
   
 ### 🆚 Contrasting Books (Broader ERISA or Benefits Focus)  
   
-* **[🇺🇸❓📚 ERISA Law Answer Book](./erisa-law-answer-book.md):** ❓ While also in an answer book format, this publication provides extensive coverage of ERISA *compliance*, focusing on decision-making in the administration of retirement programs. 💼 It covers benefit arrangements subject to ERISA, plan funding, distributions, fiduciary duties, preemption, and standard of review, incorporating recent case law and legislative developments.  
+* **[🇺🇸❓📚 ERISA Law Answer Book](/content/books/erisa-law-answer-book.md):** ❓ While also in an answer book format, this publication provides extensive coverage of ERISA *compliance*, focusing on decision-making in the administration of retirement programs. 💼 It covers benefit arrangements subject to ERISA, plan funding, distributions, fiduciary duties, preemption, and standard of review, incorporating recent case law and legislative developments.  
 * 📚 **Employee Benefits Law (ABA Bloomberg BNA treatise):** 📜 This comprehensive treatise covers a wide range of topics within employee benefits law, not limited solely to litigation. 🌟 It's often cited as a definitive guide for professionals in the field.  
 * 📖 **Employee Benefits Handbook (West):** 💡 This handbook offers clear explanations of complex employee benefits statutes and regulations, focusing on compliance steps to avoid litigation. 📝 It covers topics beyond just ERISA litigation, such as FMLA, COBRA, accounting, and tax considerations.  
 * 📑 **Quick Reference to ERISA Compliance:** 🔍 As the title suggests, this book is geared towards quickly accessing information related to complying with ERISA requirements.  
@@ -66,5 +66,5 @@ affiliate link: https://amzn.to/43xso28
 * 🏥 **Books on Healthcare Law:** 🩺 Given that ERISA covers health and welfare plans, books focusing on healthcare law, including the Affordable Care Act and issues like mental health parity, can be relevant for understanding the underlying plan structures and regulatory environment that can lead to ERISA litigation.  
 * 🏢 **Books on Corporate Law/Governance:** 🤝 In cases involving ESOPs, stock drops, or prohibited transactions, an understanding of corporate law and governance principles can be crucial.  
   
-## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
+## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on ERISA Benefits Litigation Answer Book. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

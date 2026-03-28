@@ -5,7 +5,7 @@ aliases:
 title: 🎨🧱 Graphiti
 URL: https://bagrounds.org/software/graphiti
 ---
-[Home](../index.md) > [Software](./index.md)  
+[Home](/content/index.md) > [Software](/content/software/index.md)  
 # 🎨🧱 Graphiti  
   
 ## 🤖 AI Summary  
@@ -50,7 +50,7 @@ URL: https://bagrounds.org/software/graphiti
   
 ### 📚 A List Of Relevant Theoretical Concepts Or Disciplines  
   
-* [🧠🌐 Knowledge Graphs](../topics/knowledge-graphs.md)  
+* [🧠🌐 Knowledge Graphs](/content/topics/knowledge-graphs.md)  
 * Graph theory 🕸️  
 * Semantic web 🌐  
 * Python programming 🐍  
@@ -122,7 +122,7 @@ Graphiti was created to provide a flexible and Pythonic way to build knowledge g
 * **Topically Opposed:** "Database Systems: The Complete Book" by Hector Garcia-Molina, Jeffrey D. Ullman, and Jennifer Widom. 🗄️  
 * **More General:** "Data Science from Scratch" by Joel Grus. 📊  
 * **More Specific:** NetworkX Documentation. 🐍  
-* **Fictional:** "[Snow Crash](../books/snow-crash.md)" by Neal Stephenson. (For the interconnected virtual world). 🌐  
+* **Fictional:** "[Snow Crash](/content/books/snow-crash.md)" by Neal Stephenson. (For the interconnected virtual world). 🌐  
 * **Rigorous:** "Graph Theory" by Reinhard Diestel. 🕸️  
 * **Accessible:** "Python Crash Course" by Eric Matthes. 🐍  
   

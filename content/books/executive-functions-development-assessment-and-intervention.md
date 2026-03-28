@@ -8,7 +8,7 @@ Author:
 tags:
 affiliate link: https://amzn.to/43rYNsf
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🧠🧩🛠️ Assessment and Intervention for Executive Function Difficulties  
 [🛒 Assessment and Intervention for Executive Function Difficulties. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/43rYNsf)  
   
@@ -66,13 +66,13 @@ This book offers a surprisingly broad and unified perspective on EFs by integrat
   
 #### Additional Book Recommendations 📚  
 * **Best Alternate Book on the Same Topic:** "Executive Functions in Children and Adolescents: A Practical Guide to Assessment and Intervention" by Peg Dawson and Richard Guare. This book offers a more practical, hands-on approach to EF intervention. 🤝  
-* **Best Book Tangentially Related:** "[Thinking, Fast and Slow](./thinking-fast-and-slow.md)" by Daniel Kahneman. This book provides insights into the cognitive processes that underlie EFs, particularly decision-making and self-control. 🧠  
+* **Best Book Tangentially Related:** "[Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md)" by Daniel Kahneman. This book provides insights into the cognitive processes that underlie EFs, particularly decision-making and self-control. 🧠  
 * **Best Book Diametrically Opposed:** "The Myth of Executive Functioning: Problems With a Popular Idea in Education" by Jerome T. Schultz. This book provides a critical perspective on the concept of EFs, questioning its validity and usefulness. 🤨  
 * **Best Fiction Book That Incorporates Related Ideas:** Flowers for Algernon by Daniel Keyes. This novel explores the ethical and psychological implications of cognitive enhancement, raising questions about the nature of intelligence and self-awareness. 🌹  
 * **Best Book More General:** "Principles of Neuropsychology" by Eric Zillmer and Douglas P. Fields. This book provides a broader understanding of brain function and its relationship to behavior. 🧠  
 * **Best Book More Specific:** "Working Memory and Executive Function: A Life-Span View" edited by Joshua M. Friedman and Elizabeth A. Ricker. This book provides a deep dive into the research on working memory and its role in EFs. 🔍  
 * **Best Book More Rigorous:** "Handbook of Executive Functioning" edited by Giuseppe Iurato, Sergio Borella, and Rossana De Beni. This text is more geared towards researchers. 🧑‍🔬  
-* **Best Book More Accessible:** "[Smart but Scattered](./smart-but-scattered.md): The Revolutionary "Executive Skills" Approach to Helping Students Reach Their Potential" by Peg Dawson and Richard Guare. This is a very accessible guide for parents and educators. 👪  
+* **Best Book More Accessible:** "[Smart but Scattered](/content/books/smart-but-scattered.md): The Revolutionary "Executive Skills" Approach to Helping Students Reach Their Potential" by Peg Dawson and Richard Guare. This is a very accessible guide for parents and educators. 👪  
   
 ## 💬 [Gemini](https://gemini.google.com) Prompt  
 > Summarize the book: Conversation with Gemini  Executive Functions- Development, Assessment, and Intervention. Start with a TL;DR - a single statement that conveys a maximum of the useful information provided in the book. Next, explain how this book may offer a new or surprising perspective. Follow this with a deep dive. Catalogue the topics, methods, and research discussed. Be sure to highlight any significant theories, theses, or mental models proposed. Summarize prominent examples discussed. Emphasize practical takeaways, including detailed, specific, concrete, step-by-step advice, guidance, or techniques discussed. Provide a critical analysis of the quality of the information presented, using scientific backing, author credentials, authoritative reviews, and other markers of high quality information as justification. Make the following additional book recommendations: the best alternate book on the same topic; the best book that is tangentially related; the best book that is diametrically opposed; the best fiction book that incorporates related ideas; the best book that is more general or more specific; and the best book that is more rigorous or more accessible than this book. Format your response as markdown, starting at heading level H3, with inline links, for easy copy paste. Use meaningful emojis generously (at least one per heading, bullet point, and paragraph) to enhance readability. Do not include broken links or links to commercial sites.

@@ -5,7 +5,7 @@ aliases:
 title: 🥄👶📚 SpoonFedStudy
 URL: https://bagrounds.org/topics/spoonfedstudy
 ---
-[Home](../index.md) > [Topics](./index.md)  
+[Home](/content/index.md) > [Topics](/content/topics/index.md)  
 # 🥄👶📚 SpoonFedStudy  
 ## 🤖 AI Summary  
 SpoonFedStudy is a 📺 **YouTube channel** and a related ⚙️ **productivity-focused brand** created by a board-certified doctor who graduated from Harvard and Yale. The channel, which has over 200,000 subscribers, offers a variety of content on topics such as productivity, study habits, and self-development.  

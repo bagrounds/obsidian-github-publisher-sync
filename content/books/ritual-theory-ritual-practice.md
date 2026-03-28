@@ -6,7 +6,7 @@ aliases:
 URL: https://bagrounds.org/books/ritual-theory-ritual-practice
 affiliate link: https://amzn.to/4dGnlRM
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🙏🔄 Ritual Theory, Ritual Practice  
 [🛒 Ritual Theory, Ritual Practice. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4dGnlRM)  
   
@@ -55,7 +55,7 @@ affiliate link: https://amzn.to/4dGnlRM
   
 ### 🏛️ Foundational & Similar Texts (Often Read Alongside or Engaged by Bell)  
   
-* ✍️ **Bell, Catherine. *[Ritual: Perspectives and Dimensions](./ritual-perspectives-and-dimensions.md)* (1997):** 📖 Bell's own comprehensive monograph, expanding on the ideas in the edited volume. 🧑‍🏫 Essential companion reading, offering her synthesized perspective on ritualization, power, and meaning.  
+* ✍️ **Bell, Catherine. *[Ritual: Perspectives and Dimensions](/content/books/ritual-perspectives-and-dimensions.md)* (1997):** 📖 Bell's own comprehensive monograph, expanding on the ideas in the edited volume. 🧑‍🏫 Essential companion reading, offering her synthesized perspective on ritualization, power, and meaning.  
 * 🛤️ **Van Gennep, Arnold. *The Rites of Passage* (1909):** 📜 The classic work outlining the tripartite structure (separation, transition, incorporation) of initiation and other transitional rites. 🧱 Foundational for much ritual analysis.  
 * 🎭 **Turner, Victor. *The Ritual Process: Structure and Anti-Structure* (1969):** 🌀 Explores liminality, communitas, and the symbolic dimensions of ritual, particularly drawing on Ndembu rituals. 🌟 Hugely influential, though Bell and others critique aspects of his approach.  
 * 🌍 **Durkheim, Émile. *The Elementary Forms of Religious Life* (1912):** 🏛️ Foundational sociological work arguing rituals create social solidarity and distinguish the sacred from the profane. 🔑 Essential background for understanding sociological approaches.  
@@ -79,5 +79,5 @@ affiliate link: https://amzn.to/4dGnlRM
 * ⚧️ **Butler, Judith. *Bodies That Matter: On the Discursive Limits of "Sex"* (1993):** ⚧️ While primarily focused on gender theory, Butler's work on performativity has strong resonances with understanding how ritual actions can constitute social realities and identities.  
 * 🎭 **Seligman, Adam B., et al. *Ritual and its Consequences: An Essay on the Limits of Sincerity* (2008):** 🤔 Explores the nature of ritual action, arguing against purely communicative or sincerity-based models and emphasizing ritual's unique subjunctive "as-if" quality.".  
   
-## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
+## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Ritual Theory, Ritual Practice. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

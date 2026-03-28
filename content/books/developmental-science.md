@@ -8,7 +8,7 @@ Author:
 tags:
 affiliate link: https://amzn.to/4kzqRQz
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 👶🧠📈📚 Developmental Science: An Advanced Textbook  
 [🛒 Developmental Science: An Advanced Textbook. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4kzqRQz)  
   
@@ -45,7 +45,7 @@ affiliate link: https://amzn.to/4kzqRQz
 * **Significant Theories, Theses, or Mental Models:**  
     * Dynamic systems theory: Emphasizes the continuous interaction of multiple factors in development. 🔄  
     * Epigenetics: Explores how environmental factors can influence gene expression. 🧬  
-    * [🫂💖 Attachment Theory](../topics/attachment-theory.md): Focuses on the importance of early caregiver-child relationships. 🔗  
+    * [🫂💖 Attachment Theory](/content/topics/attachment-theory.md): Focuses on the importance of early caregiver-child relationships. 🔗  
     * Cognitive developmental theories (Piaget, Vygotsky): Describe the stages and processes of cognitive growth. 💭  
     * Ecological systems theory (Bronfenbrenner): Examines the multiple layers of environmental influence. 🌳  
 * **Prominent Examples Discussed:**  

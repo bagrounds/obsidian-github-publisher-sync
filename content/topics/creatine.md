@@ -5,7 +5,7 @@ aliases:
 title: 💪🏋️‍♂️ Creatine
 URL: https://bagrounds.org/topics/creatine
 ---
-[Home](../index.md) > [Topics](./index.md)  
+[Home](/content/index.md) > [Topics](/content/topics/index.md)  
 # 💪🏋️‍♂️ Creatine  
 ## 🤖 AI Summary  
 💪 Creatine is a naturally occurring compound in the body, primarily found in muscles and the brain. 🥩 It's also obtained through protein-rich foods like red meat and 🐟 seafood. ⚡ Creatine plays a crucial role in providing energy to muscles, particularly during short bursts of intense activity.  
@@ -76,7 +76,7 @@ While there might not be a single "definitive" book that covers every nuance of 
   
 **🧐 Highly Recommended (Academic/Scientific Focus):**  
   
-1. 📖 **[💪⚕️ Essentials of Creatine in Sports and Health](../books/essentials-of-creatine-in-sports-and-health.md) by Jeffrey R. Stout, Jose Antonio, and Douglas Kalman:**  
+1. 📖 **[💪⚕️ Essentials of Creatine in Sports and Health](/content/books/essentials-of-creatine-in-sports-and-health.md) by Jeffrey R. Stout, Jose Antonio, and Douglas Kalman:**  
     * 👍 **Why it's good:** This book is a more academic and comprehensive resource, often cited in scientific literature. It unifies a large body of information on how creatine affects body composition, exercise performance, and health. 👨‍🔬 It's written by leading researchers in the field.  
     * 🤓 **Best for:** Clinicians, coaches, sports scientists, and serious students looking for in-depth, evidence-based information. It might be a bit dense for a casual reader, but it's a solid scientific reference.  
   

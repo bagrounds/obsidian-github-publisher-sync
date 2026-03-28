@@ -7,7 +7,7 @@ URL: https://bagrounds.org/articles/agents
 Author:
 tags:
 ---
-[Home](../index.md) > [Articles](./index.md)  
+[Home](/content/index.md) > [Articles](/content/articles/index.md)  
 # [🕵️‍♀️💼👥 Agents](https://huyenchip.com//2025/01/07/agents.html)  
   
 ## 🤖 AI Summary  
@@ -48,8 +48,8 @@ To gain a better understanding, it would be beneficial to explore:
 * 🔬 **Advancements in planning for LLMs**: 🧠 Further research or recent breakthroughs addressing the skepticism around LLMs' inherent planning capabilities would be an interesting area to investigate.  
   
 ## 📚 Book Recommendations  
-* 📖 **[🤖🧠 Artificial Intelligence: A Modern Approach](../books/artificial-intelligence-a-modern-approach.md)** by Stuart Russell and Peter Norvig: A classic foundational text in AI, defining the field and intelligent agents, offering a comprehensive overview.  
-* 📘 **[🤖🏗️ AI Engineering: Building Applications with Foundation Models](../books/ai-engineering-building-applications-with-foundation-models.md)** by Chip Huyen: The source from which this post is adapted, likely offering a more in-depth exploration of the topics discussed, especially the practical aspects of building AI systems.  
-* **[💾⬆️🛡️ Designing Data-Intensive Applications: The Big Ideas Behind Reliable, Scalable, and Maintainable Systems](../books/designing-data-intensive-applications.md)** by Martin Kleppmann: While not directly about AI agents, this book provides essential knowledge on building robust, scalable, and reliable data systems, which are often the backbone for agents requiring extensive data access and processing.  
-* **[🤔🐇🐢 Thinking, Fast and Slow](../books/thinking-fast-and-slow.md)** by Daniel Kahneman: Explores the two systems that drive the way we think, offering insights into cognitive processes that could be analogously applied to understanding how AI models "reason" and "plan," and their potential biases or limitations.  
-* **[🧬👥💾 Life 3.0: Being Human in the Age of Artificial Intelligence](../books/life-3-0.md)** by Max Tegmark: Provides a broader philosophical perspective on the future of AI and its potential impact on humanity, relevant for considering the long-term implications of advanced autonomous agents.
+* 📖 **[🤖🧠 Artificial Intelligence: A Modern Approach](/content/books/artificial-intelligence-a-modern-approach.md)** by Stuart Russell and Peter Norvig: A classic foundational text in AI, defining the field and intelligent agents, offering a comprehensive overview.  
+* 📘 **[🤖🏗️ AI Engineering: Building Applications with Foundation Models](/content/books/ai-engineering-building-applications-with-foundation-models.md)** by Chip Huyen: The source from which this post is adapted, likely offering a more in-depth exploration of the topics discussed, especially the practical aspects of building AI systems.  
+* **[💾⬆️🛡️ Designing Data-Intensive Applications: The Big Ideas Behind Reliable, Scalable, and Maintainable Systems](/content/books/designing-data-intensive-applications.md)** by Martin Kleppmann: While not directly about AI agents, this book provides essential knowledge on building robust, scalable, and reliable data systems, which are often the backbone for agents requiring extensive data access and processing.  
+* **[🤔🐇🐢 Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md)** by Daniel Kahneman: Explores the two systems that drive the way we think, offering insights into cognitive processes that could be analogously applied to understanding how AI models "reason" and "plan," and their potential biases or limitations.  
+* **[🧬👥💾 Life 3.0: Being Human in the Age of Artificial Intelligence](/content/books/life-3-0.md)** by Max Tegmark: Provides a broader philosophical perspective on the future of AI and its potential impact on humanity, relevant for considering the long-term implications of advanced autonomous agents.

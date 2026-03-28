@@ -7,7 +7,7 @@ share: true
 CTA: 🚀 Build your future.
 affiliate link: https://amzn.to/3Njfu3l
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🧑‍💻🍎🌟😄 iWoz: Computer Geek to Cult Icon: How I Invented the Personal Computer, Co-Founded Apple, and Had Fun Doing It  
 [🛒 iWoz: Computer Geek to Cult Icon: How I Invented the Personal Computer, Co-Founded Apple, and Had Fun Doing It. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3Njfu3l)  
   

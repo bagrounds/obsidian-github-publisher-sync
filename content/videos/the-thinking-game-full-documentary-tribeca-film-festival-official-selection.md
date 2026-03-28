@@ -10,7 +10,7 @@ Channel: Google DeepMind
 tags:
 youtube: https://youtu.be/d95J8yzvjbQ
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md)  
 # 🤔🎬🏆 The Thinking Game | Full documentary | Tribeca Film Festival official selection  
 ![The Thinking Game | Full documentary | Tribeca Film Festival official selection](https://youtu.be/d95J8yzvjbQ)  
   
@@ -52,9 +52,9 @@ youtube: https://youtu.be/d95J8yzvjbQ
 * 🦠 The Emperor of All Maladies A Biography of Cancer by Siddhartha Mukherjee: Explores the history of science chasing a monumental challenge (cancer) over decades, similar to the 50-year effort to solve protein folding before AlphaFold.  
   
 ### 🆚 Contrasting  
-* [👁️‍🗨️💰⛓️👤 The Age of Surveillance Capitalism: The Fight for a Human Future at the New Frontier of Power](../books/the-age-of-surveillance-capitalism.md) by Shoshana Zuboff: Provides a critical, contrasting perspective on AI development and data usage, focusing on the economic and societal power dynamics of big tech companies.  
-* [📊📉🏛️ Weapons of Math Destruction: How Big Data Increases Inequality and Threatens Democracy](../books/weapons-of-math-destruction-how-big-data-increases-inequality-and-threatens-democracy.md) by Cathy O'Neil: Challenges the idea of AI as a purely beneficial force, detailing how opaque algorithms perpetuate and scale bias and inequality in high-stakes societal systems.  
+* [👁️‍🗨️💰⛓️👤 The Age of Surveillance Capitalism: The Fight for a Human Future at the New Frontier of Power](/content/books/the-age-of-surveillance-capitalism.md) by Shoshana Zuboff: Provides a critical, contrasting perspective on AI development and data usage, focusing on the economic and societal power dynamics of big tech companies.  
+* [📊📉🏛️ Weapons of Math Destruction: How Big Data Increases Inequality and Threatens Democracy](/content/books/weapons-of-math-destruction-how-big-data-increases-inequality-and-threatens-democracy.md) by Cathy O'Neil: Challenges the idea of AI as a purely beneficial force, detailing how opaque algorithms perpetuate and scale bias and inequality in high-stakes societal systems.  
   
 ### 🎨 Creatively Related  
-* [📜🌍⏳ Sapiens: A Brief History of Humankind](../books/sapiens-a-brief-history-of-humankind.md) by Yuval Noah Harari: Examines major historical transitions in human capability and societal organization, relating to the video's claim that AGI will be a moment as significant as fire or electricity.  
-* 🎼 [♾️📐🎶🥨 Gödel, Escher, Bach: An Eternal Golden Braid](../books/godel-escher-bach.md) by Douglas Hofstadter: Explores the complex, recursive nature of intelligence, self-reference, consciousness, and computation through math, art, and music, providing a philosophical foundation for the search for AGI.
+* [📜🌍⏳ Sapiens: A Brief History of Humankind](/content/books/sapiens-a-brief-history-of-humankind.md) by Yuval Noah Harari: Examines major historical transitions in human capability and societal organization, relating to the video's claim that AGI will be a moment as significant as fire or electricity.  
+* 🎼 [♾️📐🎶🥨 Gödel, Escher, Bach: An Eternal Golden Braid](/content/books/godel-escher-bach.md) by Douglas Hofstadter: Explores the complex, recursive nature of intelligence, self-reference, consciousness, and computation through math, art, and music, providing a philosophical foundation for the search for AGI.

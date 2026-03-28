@@ -11,7 +11,7 @@ force_analyze_links: false
 link_analysis_time: 2026-03-22T06:03:07.635Z
 link_analysis_model: gemini-3.1-flash-lite-preview
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🧠🧬🤖 A Brief History of Intelligence: Evolution, AI, and the Five Breakthroughs That Made Our Brains  
 [🛒 A Brief History of Intelligence: Evolution, AI, and the Five Breakthroughs That Made Our Brains. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4dslDFu)  
   
@@ -89,13 +89,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 ## 📚 Book Recommendations  
   
 ### 📖 Similar  
-* [📜🌍⏳ Sapiens: A Brief History of Humankind](./sapiens-a-brief-history-of-humankind.md) by Yuval Noah Harari  
-* [😇😈 Behave: The Biology of Humans at Our Best and Worst](./behave-the-biology-of-humans-at-our-best-and-worst.md) by Robert M. Sapolsky  
-* [🤖⚠️📈 Superintelligence: Paths, Dangers, Strategies](./superintelligence-paths-dangers-strategies.md) by Nick Bostrom  
+* [📜🌍⏳ Sapiens: A Brief History of Humankind](/content/books/sapiens-a-brief-history-of-humankind.md) by Yuval Noah Harari  
+* [😇😈 Behave: The Biology of Humans at Our Best and Worst](/content/books/behave-the-biology-of-humans-at-our-best-and-worst.md) by Robert M. Sapolsky  
+* [🤖⚠️📈 Superintelligence: Paths, Dangers, Strategies](/content/books/superintelligence-paths-dangers-strategies.md) by Nick Bostrom  
 * 🧐 On Intelligence by Jeff Hawkins and Sandra Blakeslee  
   
 ### ↔️ Contrasting  
-* [👶🤔❤️ The Philosophical Baby: What Children's Minds Tell Us About Truth, Love, and the Meaning of Life](./the-philosophical-baby-what-childrens-minds-tell-us-about-truth-love-and-the-meaning-of-life.md) by Alison Gopnik (offers a view on child intelligence being superior for exploration and learning)  
+* [👶🤔❤️ The Philosophical Baby: What Children's Minds Tell Us About Truth, Love, and the Meaning of Life](/content/books/the-philosophical-baby-what-childrens-minds-tell-us-about-truth-love-and-the-meaning-of-life.md) by Alison Gopnik (offers a view on child intelligence being superior for exploration and learning)  
 * 🧑‍🧒 The Gardener and the Carpenter What the New Science of Child Development Tells Us About the Relationship Between Parents and Children by Alison Gopnik (focuses on child development and learning)  
   
 ### 🔗 Related  

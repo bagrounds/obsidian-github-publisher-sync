@@ -7,7 +7,7 @@ share: true
 CTA: 🌊 Navigate disruption.
 affiliate link: https://amzn.to/46Il4nN
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🌊🤖🤔 The Coming Wave: Technology, Power, and the 21st Century's Greatest Dilemma  
 [🛒 The Coming Wave: Technology, Power, and the 21st Century's Greatest Dilemma. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/46Il4nN)  
   
@@ -37,14 +37,14 @@ affiliate link: https://amzn.to/46Il4nN
   
 ### 🔎 Similar in Scope and Urgency  
   
-* **[🧬👥💾 Life 3.0: Being Human in the Age of Artificial Intelligence](./life-3-0.md)** by Max Tegmark: This book offers a comprehensive exploration of the potential futures of humanity in an age of advanced AI, covering a wide range of scenarios from the beneficial to the catastrophic.  
-* **[🤖⚠️📈 Superintelligence: Paths, Dangers, Strategies](./superintelligence-paths-dangers-strategies.md)** by Nick Bostrom: A foundational text in the field of AI safety, this book delves into the philosophical and technical challenges of controlling an intelligence that surpasses our own.  
+* **[🧬👥💾 Life 3.0: Being Human in the Age of Artificial Intelligence](/content/books/life-3-0.md)** by Max Tegmark: This book offers a comprehensive exploration of the potential futures of humanity in an age of advanced AI, covering a wide range of scenarios from the beneficial to the catastrophic.  
+* **[🤖⚠️📈 Superintelligence: Paths, Dangers, Strategies](/content/books/superintelligence-paths-dangers-strategies.md)** by Nick Bostrom: A foundational text in the field of AI safety, this book delves into the philosophical and technical challenges of controlling an intelligence that surpasses our own.  
 * 🌍 **The Age of AI: And Our Human Future** by Henry A. Kissinger, Eric Schmidt, and Daniel Huttenlocher: This work brings together the perspectives of a statesman, a technologist, and a computer scientist to examine the geopolitical, economic, and social implications of artificial intelligence.  
   
 ### ⚖️ Offering Contrasting Perspectives  
   
-* **[👁️‍🗨️💰⛓️👤 The Age of Surveillance Capitalism: The Fight for a Human Future at the New Frontier of Power](./the-age-of-surveillance-capitalism.md)** by Shoshana Zuboff: While Suleyman focuses on the future potential for overbearing surveillance, Zuboff argues that a powerful form of surveillance is already a dominant feature of the digital economy, raising critical questions about privacy and corporate power.  
-* **[📊📉🏛️ Weapons of Math Destruction: How Big Data Increases Inequality and Threatens Democracy](./weapons-of-math-destruction-how-big-data-increases-inequality-and-threatens-democracy.md)** by Cathy O'Neil: This book provides a critical look at the ways in which algorithms, if not carefully designed, can perpetuate and even amplify existing societal inequalities, offering a more present-day-focused critique of technology's impact.  
+* **[👁️‍🗨️💰⛓️👤 The Age of Surveillance Capitalism: The Fight for a Human Future at the New Frontier of Power](/content/books/the-age-of-surveillance-capitalism.md)** by Shoshana Zuboff: While Suleyman focuses on the future potential for overbearing surveillance, Zuboff argues that a powerful form of surveillance is already a dominant feature of the digital economy, raising critical questions about privacy and corporate power.  
+* **[📊📉🏛️ Weapons of Math Destruction: How Big Data Increases Inequality and Threatens Democracy](/content/books/weapons-of-math-destruction-how-big-data-increases-inequality-and-threatens-democracy.md)** by Cathy O'Neil: This book provides a critical look at the ways in which algorithms, if not carefully designed, can perpetuate and even amplify existing societal inequalities, offering a more present-day-focused critique of technology's impact.  
 * 🤝 **The Alignment Problem: Machine Learning and Human Values** by Brian Christian: This book explores the technical and ethical challenges of ensuring that AI systems understand and act in accordance with human values, providing a more focused examination of a key aspect of the "containment problem."  
   
 ### ✨ Creatively Related Explorations  
@@ -53,5 +53,5 @@ affiliate link: https://amzn.to/46Il4nN
 * 🤔 **Exhalation: Stories** by Ted Chiang: This collection of science fiction short stories masterfully explores the philosophical and existential questions raised by technological advancements, offering thought-provoking narratives that linger long after reading.  
 * The Ministry for the Future by Kim Stanley Robinson: While focused on climate change, this novel imagines the complex social, political, and technological transformations required to address a global crisis, offering a hopeful, albeit challenging, vision of the future that resonates with the scale of the dilemmas presented in The Coming Wave.  
   
-## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro)  
+## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-pro)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on The Coming Wave: Technology, Power, and the 21st Century's Greatest Dilemma. Never put book titles in quotes or italics. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

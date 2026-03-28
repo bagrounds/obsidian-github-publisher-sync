@@ -10,7 +10,7 @@ Channel: PBS NewsHour
 tags:
 youtube: https://youtu.be/p4fOzq2y784
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md)  
 # 👨‍⚖️🛑🇺🇸🏛️ Injustice explores Trump's decade-long effort to politicize DOJ  
 ![New book 'Injustice' explores Trump's decade-long effort to politicize DOJ](https://youtu.be/p4fOzq2y784)  
   
@@ -54,7 +54,7 @@ The ✍️ book Injustice explores the decade-long unraveling of the U.S. Justic
 ## 📚 Book Recommendations  
   
 ### ↔️ Similar  
-* [🏛️💔 Injustice: How Politics and Fear Vanquished America's Justice Department](../books/injustice-how-politics-and-fear-vanquished-americas-justice-department.md)  
+* [🏛️💔 Injustice: How Politics and Fear Vanquished America's Justice Department](/content/books/injustice-how-politics-and-fear-vanquished-americas-justice-department.md)  
 * Democracy's Data: The Hidden Stories that Explain the World by Aaron Davis and Carol Leonnig: A book by one of the authors of Injustice, this provides more context on how investigative reporting exposes critical issues in government and justice, using data as a key tool.  
 * Holding the Line: Inside the Nation's Preeminent US Attorney's Office and Its Battle with the Trump Justice Department by Geoffrey Berman: An insider account of a U.S. Attorney's conflicts with the Trump DOJ, detailing brazen political demands to initiate or drop prosecutions.  
   
@@ -63,5 +63,5 @@ The ✍️ book Injustice explores the decade-long unraveling of the U.S. Justic
 * After Trump: Protecting Democracy from the Next Authoritarian by Bob Bauer and Jack Goldsmith: Offers an analysis of the damage to democratic institutions and provides concrete, structural recommendations for reforms to guard against future abuses of executive power and political influence over law enforcement.  
   
 ### 🎨 Creatively Related  
-* [⚠️🥴🕹️🌐 The Fifth Risk](../books/the-fifth-risk.md) by Michael Lewis: Explores the importance of competent, non-political government expertise, focusing on the essential but dismissed work of federal agencies and the immense risks posed by politically motivated, unqualified appointees.  
+* [⚠️🥴🕹️🌐 The Fifth Risk](/content/books/the-fifth-risk.md) by Michael Lewis: Explores the importance of competent, non-political government expertise, focusing on the essential but dismissed work of federal agencies and the immense risks posed by politically motivated, unqualified appointees.  
 * The Great Derangement: Climate Change and the Unthinkable by Amitav Ghosh: This book explores the failure of imagination and the structural, institutional slowness to respond to existential threats, relating tangentially to the DOJ's cautious pace and internal resistance to addressing a five-alarm fire.

@@ -7,7 +7,7 @@ share: true
 affiliate link: https://amzn.to/4nTiK2p
 CTA: 🏠 Secure your family.
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🧑‍🤝‍🧑💸 The Two-Income Trap  
 [🛒 The Two-Income Trap. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4nTiK2p)  
   
@@ -38,7 +38,7 @@ CTA: 🏠 Secure your family.
 ### ➕ Similar Books  
   
 * 🧑‍🌾 **Nickel and Dimed: On (Not) Getting By in America** by Barbara Ehrenreich: 📖 This book offers a firsthand account of the struggles of the working poor in America, exposing the realities of low-wage labor and the impossibility of making ends meet, resonating with the systemic economic pressures discussed in The Two-Income Trap.  
-* **[🏚️💰 Evicted: Poverty and Profit in the American City](./evicted-poverty-and-profit-in-the-american-city.md)** by Matthew Desmond: 📖 Exploring the severe consequences of housing insecurity and eviction in poor urban communities, this work delves into another facet of how rising housing costs and economic vulnerability trap families, echoing the housing concerns raised by Warren and Tyagi.  
+* **[🏚️💰 Evicted: Poverty and Profit in the American City](/content/books/evicted-poverty-and-profit-in-the-american-city.md)** by Matthew Desmond: 📖 Exploring the severe consequences of housing insecurity and eviction in poor urban communities, this work delves into another facet of how rising housing costs and economic vulnerability trap families, echoing the housing concerns raised by Warren and Tyagi.  
 * 🏭 **Janesville: An American Story** by Amy Goldstein: 📖 This book chronicles how a community copes with the economic fallout of a major factory closure, highlighting the fragility of middle-class employment and the profound impact of job loss on families and local economies, a central theme in The Two-Income Trap.  
 * 🇺🇸 **The Unwinding: An Inner History of the New America** by George Packer: 📖 This non-fiction narrative examines the decline of American institutions and the struggles of ordinary people in an era of increasing inequality and economic uncertainty, providing a broader context for the middle-class squeeze.  
   
@@ -51,7 +51,7 @@ CTA: 🏠 Secure your family.
 ### 💡 Creatively Related Books  
   
 * 👪 **The Good Enough Parent: A Guide to Rearing Children Successfully** by Bruno Bettelheim: 📖 While not about finance, this book touches on the societal pressures and expectations placed on parents, including the implicit competition for "the best" for their children (e.g., education, housing), which drives up costs as described in The Two-Income Trap.  
-* **[🎳🏘️📉📈 Bowling Alone: The Collapse and Revival of American Community](./bowling-alone.md)** by Robert D. Putnam: 📖 This work explores the decline of social capital and civic engagement in America. 🤝 The erosion of community ties can leave families feeling more isolated and without informal support systems when facing financial or personal crises, indirectly exacerbating the "trap" by reducing non-financial safety nets.  
+* **[🎳🏘️📉📈 Bowling Alone: The Collapse and Revival of American Community](/content/books/bowling-alone.md)** by Robert D. Putnam: 📖 This work explores the decline of social capital and civic engagement in America. 🤝 The erosion of community ties can leave families feeling more isolated and without informal support systems when facing financial or personal crises, indirectly exacerbating the "trap" by reducing non-financial safety nets.  
 * 👔 **The Organization Man** by William H. Whyte: 📖 This classic sociological study examines the pressures of conformity and corporate culture on individuals in mid-20th century America. ⏳ It offers a historical lens on the expectations placed on the workforce and families, providing context for how these pressures have evolved and contributed to the modern economic environment.  
 * 🛍️ **No Logo** by Naomi Klein: 📖 This book explores the impact of corporate branding and consumer culture. 📢 The constant bombardment of advertising and the societal pressure to acquire goods and services can indirectly fuel the feeling of needing more to "keep up," contributing to financial strain even if not directly causing the fixed-cost trap.  
   

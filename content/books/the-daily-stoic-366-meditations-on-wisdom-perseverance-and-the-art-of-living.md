@@ -7,7 +7,7 @@ share: true
 affiliate link: https://amzn.to/4n87C1v
 CTA: ⏳ Cultivate resilience.
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🧘🏼‍♀️📅 The Daily Stoic: 366 Meditations on Wisdom, Perseverance, and the Art of Living  
 [🛒 The Daily Stoic: 366 Meditations on Wisdom, Perseverance, and the Art of Living. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4n87C1v)  
   
@@ -37,7 +37,7 @@ CTA: ⏳ Cultivate resilience.
   
 ### 📖 Similar Books  
   
-* **[🤔🧘 Meditations](./meditations.md) by Marcus Aurelius** is the original private journal of a Roman emperor and Stoic philosopher, offering his personal reflections on life, duty, and virtue. 🏛️ It provides raw, unfiltered Stoic wisdom. 🧠  
+* **[🤔🧘 Meditations](/content/books/meditations.md) by Marcus Aurelius** is the original private journal of a Roman emperor and Stoic philosopher, offering his personal reflections on life, duty, and virtue. 🏛️ It provides raw, unfiltered Stoic wisdom. 🧠  
 * 🗣️ **Discourses and Selected Writings by Epictetus** is a collection of the teachings of a former slave who became a prominent Stoic teacher. 🙌 His work offers practical advice on autonomy, self-discipline, and navigating daily struggles with a Stoic mindset. 👤  
 * ✉️ **Letters from a Stoic by Seneca** is a series of essays in the form of letters, offering insights on various aspects of Stoic philosophy, including grief, wealth, and the shortness of life. ⏳  
 * 🧘 **A Guide to the Good Life: The Ancient Art of Stoic Joy by William B Irvine** explores how to apply Stoic philosophy to contemporary life, focusing on techniques to reduce negative emotions and achieve tranquility. ☮️  
@@ -50,10 +50,10 @@ CTA: ⏳ Cultivate resilience.
   
 ### 💡 Creatively Related Books  
   
-* **[🔦💡 Man's Search for Meaning](./mans-search-for-meaning.md) by Viktor Frankl** recounts the author's experiences in concentration camps and introduces logotherapy, emphasizing finding meaning in suffering and the human capacity to choose one's attitude in any given circumstance, resonating with Stoic resilience. 💪  
-* **[🤔🐇🐢 Thinking, Fast and Slow](./thinking-fast-and-slow.md) by Daniel Kahneman** explores the two systems of thought that drive decision-making, offering insights into cognitive biases. 🤔 This aligns with the Stoic discipline of perception, encouraging clearer, more rational judgment. 👁️  
-* **[🏍️🧘❓ Zen and the Art of Motorcycle Maintenance: An Inquiry into Values](./zen-and-the-art-of-motorcycle-maintenance-an-inquiry-into-values.md) by Robert Pirsig** explores concepts of quality, values, and a journey of self-discovery, touching on themes of living intentionally and the pursuit of wisdom through a reflective, often anti-establishment lens. ✨  
-* **[📜🌍⏳ Sapiens: A Brief History of Humankind](./sapiens-a-brief-history-of-humankind.md) by Yuval Noah Harari** offers a sweeping history of humanity, providing a broad context for understanding our existence, societies, and beliefs. 🧑‍🤝‍🧑 This wider perspective can inform a Stoic view on our place in the world and the transient nature of human endeavors. ⏳  
+* **[🔦💡 Man's Search for Meaning](/content/books/mans-search-for-meaning.md) by Viktor Frankl** recounts the author's experiences in concentration camps and introduces logotherapy, emphasizing finding meaning in suffering and the human capacity to choose one's attitude in any given circumstance, resonating with Stoic resilience. 💪  
+* **[🤔🐇🐢 Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md) by Daniel Kahneman** explores the two systems of thought that drive decision-making, offering insights into cognitive biases. 🤔 This aligns with the Stoic discipline of perception, encouraging clearer, more rational judgment. 👁️  
+* **[🏍️🧘❓ Zen and the Art of Motorcycle Maintenance: An Inquiry into Values](/content/books/zen-and-the-art-of-motorcycle-maintenance-an-inquiry-into-values.md) by Robert Pirsig** explores concepts of quality, values, and a journey of self-discovery, touching on themes of living intentionally and the pursuit of wisdom through a reflective, often anti-establishment lens. ✨  
+* **[📜🌍⏳ Sapiens: A Brief History of Humankind](/content/books/sapiens-a-brief-history-of-humankind.md) by Yuval Noah Harari** offers a sweeping history of humanity, providing a broad context for understanding our existence, societies, and beliefs. 🧑‍🤝‍🧑 This wider perspective can inform a Stoic view on our place in the world and the transient nature of human endeavors. ⏳  
   
 ## 💬 [Gemini](https://gemini.google.com) Prompt (gemini-2.5-flash)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by similar, contrasting, and creatively related book recommendations on The Daily Stoic: 366 Meditations on Wisdom, Perseverance, and the Art of Living. Never quote or italicize titles. Be thorough but concise. Use section headings and bulleted lists to avoid long blocks of text.

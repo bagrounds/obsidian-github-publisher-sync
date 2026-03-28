@@ -6,7 +6,7 @@ aliases:
 URL: https://bagrounds.org/books/ritual-performance-and-the-senses
 affiliate link: https://amzn.to/3SA7fiZ
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🕯️🎬👃 Ritual, Performance and the Senses  
 [🛒 Ritual, Performance and the Senses. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3SA7fiZ)  
   
@@ -77,5 +77,5 @@ This report focuses on the edited volume 📚 *Ritual, 🎭 Performance and the 
 * 📖 **Vannini, Phillip (ed.). *The Routledge International Handbook of 👃 Sensory Ethnography***: Expands the field by linking sensory research with affective, more-than-human, non-representational, and multimodal approaches, suggesting future directions. Contributors include Howes, Bull, Stoller.  
 * 📖 **Classen, Constance. *Worlds of 👃 Sense: Exploring the 👃 Senses in History and Across Cultures***: A foundational work in the anthropology of the 👃 senses exploring diverse sensory models across time and space.  
   
-## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
+## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Ritual, Performance and the Senses. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

@@ -6,7 +6,7 @@ URL: https://bagrounds.org/books/sources-of-power-how-people-make-decisions
 share: true
 affiliate link: https://amzn.to/4juuGFc
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # ⛲🔌🤔⚙️ Sources of Power: How People Make Decisions  
 [🛒 Sources of Power: How People Make Decisions. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4juuGFc)  
   
@@ -46,15 +46,15 @@ affiliate link: https://amzn.to/4juuGFc
   
 ### 🤔 Contrasting Books (Focusing on Rationality and Biases)  
   
-* 📚 ***[Thinking, Fast and Slow](./thinking-fast-and-slow.md)*** by Daniel Kahneman. 📖 This influential book introduces the concepts of System 1 (fast, intuitive) and System 2 (slow, deliberate) thinking and explores various cognitive biases that affect decision making. 🧠 While acknowledging the power of intuition, Kahneman's work often highlights its potential pitfalls, offering a contrasting perspective to Klein's emphasis on expert intuition.  
-* 📚 ***[Predictably Irrational](./predictably-irrational.md): The Hidden Forces That Shape Our Decisions*** by Dan Ariely. 📖 This book examines the irrational behaviors that often drive our decisions, drawing on behavioral economics.  
+* 📚 ***[Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md)*** by Daniel Kahneman. 📖 This influential book introduces the concepts of System 1 (fast, intuitive) and System 2 (slow, deliberate) thinking and explores various cognitive biases that affect decision making. 🧠 While acknowledging the power of intuition, Kahneman's work often highlights its potential pitfalls, offering a contrasting perspective to Klein's emphasis on expert intuition.  
+* 📚 ***[Predictably Irrational](/content/books/predictably-irrational.md): The Hidden Forces That Shape Our Decisions*** by Dan Ariely. 📖 This book examines the irrational behaviors that often drive our decisions, drawing on behavioral economics.  
   
 ### 🎨 Creatively Related Books (Exploring Complex Systems and Alternative Perspectives)  
   
-* **[⚫🦢🎲 The Black Swan: The Impact of the Highly Improbable](./the-black-swan-the-impact-of-the-highly-improbable.md)** by Nassim Nicholas Taleb. 🦢 Taleb's work focuses on the impact of rare, unpredictable events and challenges traditional models that rely on predictable outcomes. 🌪️ This relates to the uncertain and dynamic environments where NDM is particularly relevant.  
-* 📚 ***[Thinking in Systems](./thinking-in-systems.md): A Primer*** by Donella H. Meadows. 🌐 This book provides a framework for understanding complex systems and how they behave, offering insights into the environments where many high-stakes decisions are made.  
+* **[⚫🦢🎲 The Black Swan: The Impact of the Highly Improbable](/content/books/the-black-swan-the-impact-of-the-highly-improbable.md)** by Nassim Nicholas Taleb. 🦢 Taleb's work focuses on the impact of rare, unpredictable events and challenges traditional models that rely on predictable outcomes. 🌪️ This relates to the uncertain and dynamic environments where NDM is particularly relevant.  
+* 📚 ***[Thinking in Systems](/content/books/thinking-in-systems.md): A Primer*** by Donella H. Meadows. 🌐 This book provides a framework for understanding complex systems and how they behave, offering insights into the environments where many high-stakes decisions are made.  
 * 📚 ***Metaphorical Management: Using Intuition and Creativity as a Guiding Mechanism for Complex Systems*** by Klaus Elle. 💡 This book explores the role of intuition and creativity, particularly through metaphorical thinking, in navigating complex and unstable environments.  
 * 📚 ***Leading with Sense: The Intuitive Power of Savoir-Relier*** by Valérie Gauthier. 🤝 This book introduces the concept of "savoir-relier" (knowing how to connect) and emphasizes the role of intuition and sensory awareness in effective leadership and navigating complex systems.  
   
-## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
+## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Sources of Power: How People Make Decisions. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

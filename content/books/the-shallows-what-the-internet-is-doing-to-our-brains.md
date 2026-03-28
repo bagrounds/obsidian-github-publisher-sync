@@ -11,7 +11,7 @@ force_analyze_links: false
 link_analysis_time: 2026-03-22T23:36:05.867Z
 link_analysis_model: gemini-3.1-flash-lite-preview
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 📱🧠 The Shallows: What the Internet Is Doing to Our Brains  
 [🛒 The Shallows: What the Internet Is Doing to Our Brains. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4oPswEe)  
   
@@ -41,7 +41,7 @@ The Shallows was a finalist for the 🏆 Pulitzer Prize in 🗓️ 2011 and spar
   
 ### ➕ Similar Books  
   
-* **[📱⬇️🧘 Digital Minimalism: Choosing a Focused Life in a Noisy World](./digital-minimalism-choosing-a-focused-life-in-a-noisy-world.md)** by Cal Newport  
+* **[📱⬇️🧘 Digital Minimalism: Choosing a Focused Life in a Noisy World](/content/books/digital-minimalism-choosing-a-focused-life-in-a-noisy-world.md)** by Cal Newport  
     * This book advocates for a philosophy of technology use that prioritizes deep work and intentional engagement, echoing Carr's concerns about distraction and the need for focused attention. Newport proposes a structured approach to reducing digital clutter and reclaiming one's time and focus.  
 * 🤯 **Stolen Focus: Why You Can't Pay Attention—and How to Think Deeply Again** by Johann Hari  
     * Hari's work investigates the societal and systemic factors contributing to the modern attention crisis, aligning with Carr's exploration of how external forces, particularly technology, erode our capacity for concentration.  
@@ -59,7 +59,7 @@ The Shallows was a finalist for the 🏆 Pulitzer Prize in 🗓️ 2011 and spar
   
 ### ✨ Creatively Related Books  
   
-* **[👁️ 1984](./1984.md)** by George Orwell  
+* **[👁️ 1984](/content/books/1984.md)** by George Orwell  
     * While not directly about technology's impact on the brain, Orwell's dystopian novel explores how systems of control, including information control and manipulation of language (Newspeak), can reshape thought and perception, creating a "shallower" or more controlled collective consciousness.  
 * 🌳 **Walden; or, Life in the Woods** by Henry David Thoreau  
     * Thoreau's classic meditation on simple living and self-reliance in nature can be seen as an antidote to the very problems Carr identifies. It champions deep contemplation, sustained focus on the natural world, and a deliberate withdrawal from the distractions of burgeoning industrial society, offering a historical parallel to a conscious choice for a less "connected" existence.  

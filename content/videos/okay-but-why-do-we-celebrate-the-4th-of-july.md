@@ -10,7 +10,7 @@ Channel: Red Wine and Blue
 tags:
 youtube: https://youtu.be/0inIrGhjKk4
 ---
-[Home](../index.md) > [Videos](./index.md) | [🏛️🇺🇸📖 Heather Cox Richardson](../people/heather-cox-richardson.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md) | [🏛️🇺🇸📖 Heather Cox Richardson](/content/people/heather-cox-richardson.md)  
 # 🇺🇸🎂🎉🤔 Okay, But Why Do We Celebrate the 4th of July?  
 ![Okay, But Why Do We Celebrate the 4th of July?](https://youtu.be/0inIrGhjKk4)  
   
@@ -24,9 +24,9 @@ youtube: https://youtu.be/0inIrGhjKk4
 📚 **Book Recommendations**  
 - 📖 **_1776_** by David McCullough: A narrative history focusing on the pivotal year of the American Revolution, following George Washington and the Continental Army.  
       
-- **[🧠💡 Common Sense](../books/common-sense.md)** by Thomas Paine: A powerful pamphlet that argued for American independence from British rule, widely read and influential during the Revolution.  
+- **[🧠💡 Common Sense](/content/books/common-sense.md)** by Thomas Paine: A powerful pamphlet that argued for American independence from British rule, widely read and influential during the Revolution.  
       
-- 🇺🇸📜 **[ The Federalist Papers](../books/the-federalist-papers.md)** by Alexander Hamilton, James Madison, and John Jay: A collection of essays written to persuade New York to ratify the U.S. Constitution, providing insight into the intentions and philosophy of the Founding Fathers regarding American governance.  
+- 🇺🇸📜 **[ The Federalist Papers](/content/books/the-federalist-papers.md)** by Alexander Hamilton, James Madison, and John Jay: A collection of essays written to persuade New York to ratify the U.S. Constitution, providing insight into the intentions and philosophy of the Founding Fathers regarding American governance.  
       
 - 👨‍👩‍👧‍👦 **_A People's History of the United States_** by Howard Zinn: Offers a critical perspective on American history, focusing on the experiences of marginalized groups and challenging traditional narratives, including those of the founding.  
       

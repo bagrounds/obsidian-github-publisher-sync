@@ -10,7 +10,7 @@ Channel: Heather Cox Richardson
 tags:
 youtube: https://youtu.be/_aXlPXzTyEU
 ---
-[Home](../index.md) > [Videos](./index.md) | [🏛️🇺🇸📖 Heather Cox Richardson](../people/heather-cox-richardson.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md) | [🏛️🇺🇸📖 Heather Cox Richardson](/content/people/heather-cox-richardson.md)  
 # 👓⚖️ There Are Two Ways to Look At Freedom | Explainer  
 ![There Are Two Ways to Look At Freedom | Explainer](https://youtu.be/_aXlPXzTyEU)  
   
@@ -35,5 +35,5 @@ youtube: https://youtu.be/_aXlPXzTyEU
 * Two Concepts of Liberty by Isaiah Berlin: This foundational work directly introduces the ideas of negative liberty (freedom from) and positive liberty (freedom to), which are central to the video's argument.  
 * The Age of Reagan: A History, 1980-1988 by Sean Wilentz: This book provides historical context for the rise of the "freedom from" ideology, examining the Reagan era's focus on deregulation and smaller government.  
 * A Theory of Justice by John Rawls: This book offers a philosophical framework for understanding how a government can be structured to protect individual liberties and ensure a fair society, which aligns with the "freedom to" concept.  
-* [😇🧠 The Righteous Mind: Why Good People Are Divided by Politics and Religion](../books/the-righteous-mind.md) by Jonathan Haidt: This work explores the moral and psychological foundations of political divides, helping to explain why different groups hold such opposing views on concepts like freedom.  
+* [😇🧠 The Righteous Mind: Why Good People Are Divided by Politics and Religion](/content/books/the-righteous-mind.md) by Jonathan Haidt: This work explores the moral and psychological foundations of political divides, helping to explain why different groups hold such opposing views on concepts like freedom.  
 * The Republic by Plato: A classic philosophical text that discusses the role of government in creating a just and ideal society, offering a historical counterpoint to the more individualistic notions of freedom.

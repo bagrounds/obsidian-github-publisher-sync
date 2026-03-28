@@ -9,7 +9,7 @@ tags:
 affiliate link: https://amzn.to/456a6HQ
 CTA: 🌱 Cultivate resilience.
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🦋♟️ Emergent Strategy: Shaping Change, Changing Worlds  
 [🛒 Emergent Strategy: Shaping Change, Changing Worlds. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/456a6HQ)  
   
@@ -51,15 +51,15 @@ This book resonates strongly with:
 * **adrienne maree brown - *Pleasure Activism: The Politics of Feeling Good***: 😃 By the same author, explores how embracing joy and satisfaction is crucial for sustainable activism, complementing *Emergent Strategy*'s focus on well-being.  
 * **adrienne maree brown - *Holding Change: The Way of Emergent Strategy Facilitation and Mediation***: 🧑‍🤝‍🧑 Directly builds on *Emergent Strategy*, focusing on practical application in group settings, facilitation, and conflict resolution.  
 * **Octavia E. Butler - *Parable of the Sower* & *Parable of the Talents***: 🤖 The fiction that heavily inspired brown; explores themes of change, adaptation, community building, and resilience in dystopian futures.  
-* **Robin Wall Kimmerer - [🪢🌾 Braiding Sweetgrass: Indigenous Wisdom, Scientific Knowledge, and the Teachings of Plants](./braiding-sweetgrass.md)**: 🌿 Blends Indigenous knowledge and scientific perspectives, emphasizing reciprocity, interconnectedness with nature, and lessons from the plant world – resonates deeply with the ethos of *Emergent Strategy*.  
-* **Donella H. Meadows - *[Thinking in Systems](./thinking-in-systems.md): A Primer***: ⚙️ Provides a foundational understanding of systems thinking, which underpins the concept of emergence. 📊 Less narrative, more analytical, but crucial for grasping the dynamics brown describes.  
+* **Robin Wall Kimmerer - [🪢🌾 Braiding Sweetgrass: Indigenous Wisdom, Scientific Knowledge, and the Teachings of Plants](/content/books/braiding-sweetgrass.md)**: 🌿 Blends Indigenous knowledge and scientific perspectives, emphasizing reciprocity, interconnectedness with nature, and lessons from the plant world – resonates deeply with the ethos of *Emergent Strategy*.  
+* **Donella H. Meadows - *[Thinking in Systems](/content/books/thinking-in-systems.md): A Primer***: ⚙️ Provides a foundational understanding of systems thinking, which underpins the concept of emergence. 📊 Less narrative, more analytical, but crucial for grasping the dynamics brown describes.  
 * **Frederic Laloux - *Reinventing Organizations***: 🏢 Explores organizations (corporate, non-profit) that operate based on principles of self-management, wholeness, and evolutionary purpose, mirroring emergent ideals in organizational structure.  
   
 ### ⚔️ Contrasting Perspectives (Structured Planning, Different Change Theories)  
   
 * **Saul Alinsky - *Rules for Radicals: A Pragmatic Primer for Realistic Radicals***: ✊ A classic text on community organizing focused on power analysis, direct action, and more confrontational, strategically planned tactics. 🆚 Offers a contrast to the relational, adaptive focus of *Emergent Strategy*.  
 * **Mark Engler & Paul Engler - *This Is an Uprising: How Nonviolent Revolt Is Shaping the Twenty-First Century***: 📣 Analyzes successful nonviolent movements, focusing on strategic disruption, structure, and momentum. 🔄 While valuing adaptation, it presents a more structured approach to large-scale mobilization than *Emergent Strategy*'s emphasis on the small-scale shaping the large.  
-* **Erica Chenoweth & Maria J. Stephan - [🕊️💪 Why Civil Resistance Works: The Strategic Logic of Nonviolent Conflict](./why-civil-resistance-works-the-strategic-logic-of-nonviolent-conflict.md)**: 📊 A data-driven analysis comparing violent and nonviolent campaigns, focusing on strategic choices and participation numbers. 🆚 Contrasts with *Emergent Strategy*'s more process-oriented, nature-inspired approach.  
+* **Erica Chenoweth & Maria J. Stephan - [🕊️💪 Why Civil Resistance Works: The Strategic Logic of Nonviolent Conflict](/content/books/why-civil-resistance-works-the-strategic-logic-of-nonviolent-conflict.md)**: 📊 A data-driven analysis comparing violent and nonviolent campaigns, focusing on strategic choices and participation numbers. 🆚 Contrasts with *Emergent Strategy*'s more process-oriented, nature-inspired approach.  
   
 ### 🎨 Creatively Related (Expanding on Themes: Sci-Fi, Nature Writing, Community)  
   
@@ -67,7 +67,7 @@ This book resonates strongly with:
 * **Rebecca Solnit - *Hope in the Dark: Untold Histories, Wild Possibilities***: ✨ Explores the nature of hope, uncertainty, and the indirect, often unseen ways change occurs, resonating with the non-linear aspects of emergent strategy.  
 * **Paul Stamets - *Mycelium Running: How Mushrooms Can Help Save the World***: 🍄 A deep dive into the world of fungi, highlighting their role as vast, decentralized networks – a literal biological example of the principles brown discusses.  
 * **Starhawk - *The Fifth Sacred Thing***: 🔮 Visionary fiction depicting a future society based on ecofeminist principles, earth-based spirituality, and nonviolent resistance, offering a narrative exploration of similar values.  
-* **James C. Scott - *[📖🏛️📉 Seeing Like a State: How Certain Schemes to Improve the Human Condition Have Failed](./seeing-like-a-state-how-certain-schemes-to-improve-the-human-condition-have-failed.md)***: 🏛️ Analyzes why large-scale, top-down planning schemes often fail by ignoring local, practical knowledge ("metis") – provides an academic critique of the approaches *Emergent Strategy* seeks to replace.  
+* **James C. Scott - *[📖🏛️📉 Seeing Like a State: How Certain Schemes to Improve the Human Condition Have Failed](/content/books/seeing-like-a-state-how-certain-schemes-to-improve-the-human-condition-have-failed.md)***: 🏛️ Analyzes why large-scale, top-down planning schemes often fail by ignoring local, practical knowledge ("metis") – provides an academic critique of the approaches *Emergent Strategy* seeks to replace.  
   
-## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
+## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Emergent Strategy Shaping Change, Changing Worlds. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

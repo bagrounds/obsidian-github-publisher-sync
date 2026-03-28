@@ -12,7 +12,7 @@ force_analyze_links: false
 link_analysis_time: 2026-03-25T19:21:10.658Z
 link_analysis_model: gemini-3.1-flash-lite-preview
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 💺🚪💡🤔 The Design of Everyday Things  
 [🛒 The Design of Everyday Things. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3FFG4Am)  
   
@@ -76,11 +76,11 @@ Norman's book provides a surprising perspective by revealing how often we blame 
   
 ### 📚 Additional Book Recommendations 📖  
   
-* **Best Alternate Book (Same Topic):** "[Don't Make Me Think, Revisited: A Common Sense Approach to Web Usability](./dont-make-me-think-revisited.md)" by Steve Krug. 💻 (Focuses on web usability with practical advice.)  
-* **Best Tangentially Related Book:** "[Thinking, Fast and Slow](./thinking-fast-and-slow.md)" by Daniel Kahneman. 🧠 (Explores human decision-making and cognitive biases.)  
+* **Best Alternate Book (Same Topic):** "[Don't Make Me Think, Revisited: A Common Sense Approach to Web Usability](/content/books/dont-make-me-think-revisited.md)" by Steve Krug. 💻 (Focuses on web usability with practical advice.)  
+* **Best Tangentially Related Book:** "[Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md)" by Daniel Kahneman. 🧠 (Explores human decision-making and cognitive biases.)  
 * **Best Diametrically Opposed Book:** "In Praise of Shadows" by Jun'ichirō Tanizaki. 🏮 (Celebrates the aesthetic of obscurity and complexity, contrasting with Norman's emphasis on clarity.)  
 * **Best Fiction Book (Related Ideas):** "Ready Player One" by Ernest Cline. 🎮 (Explores user interface and virtual reality design in a fictional context.)  
-* **Best More General Book:** "[Universal Principles of Design](./universal-principles-of-design.md)" by William Lidwell, Kritina Holden, and Jill Butler. 🎨 (Covers a wide range of design principles across various disciplines.)  
+* **Best More General Book:** "[Universal Principles of Design](/content/books/universal-principles-of-design.md)" by William Lidwell, Kritina Holden, and Jill Butler. 🎨 (Covers a wide range of design principles across various disciplines.)  
 * **Best More Specific Book:** "About Face: The Essentials of Interaction Design" by Alan Cooper, Robert Reimann, David Cronin, and Christopher Noessel. 🧑‍💻 (Focuses specifically on interaction design for software.)  
 * **Best More Rigorous Book:** "Human-Computer Interaction" by Alan Dix, Janet Finlay, Gregory Abowd, and Russell Beale. 🧑‍💻 (A comprehensive academic textbook on HCI.)  
 * **Best More Accessible Book:** "100 Things Every Designer Needs to Know About People" by Susan M. Weinschenk. 🧑‍🤝‍🧑 (Presents psychological principles in a concise and practical way.)  

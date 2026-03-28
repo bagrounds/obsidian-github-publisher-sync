@@ -9,7 +9,7 @@ CTA: 🤖 Automate everything.
 tags:
   - AIEngineering
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🤖⚙️ AI Agents in Action  
 [🛒 AI Agents in Action. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/45s1Z79)  
   
@@ -42,12 +42,12 @@ Key areas of focus include:
 * 💡 **Building LLM Powered Applications** by Mani Sarkar: This guide focuses on creating intelligent applications and agents using large language models, with a particular emphasis on practical implementation with tools like LangChain.  
 * 🛠️ **Hands-on AI Agent Development** by Corby Allen: A practical guide aimed at equipping readers with the skills to create powerful AI agents, covering core AI concepts and providing actionable code examples.  
 * 🏢 **Building AI Agent** by Natenapis Faraksa: This book focuses on the practical aspects of building AI agents using a variety of popular tools and platforms, including ChatGPT, OpenAI Gym, and cloud-based AI services from AWS and Google.  
-* 🌍 **[🤖⚙️ Agentic Artificial Intelligence: Harnessing AI Agents to Reinvent Business, Work and Life](./agentic-artificial-intelligence-harnessing-ai-agents-to-reinvent-business-work-and-life.md)** by Pascal Bornet, et al.: This book explores the rise of AI agents and provides a strategic roadmap for businesses and individuals to effectively harness this technology, with a focus on real-world case studies.  
+* 🌍 **[🤖⚙️ Agentic Artificial Intelligence: Harnessing AI Agents to Reinvent Business, Work and Life](/content/books/agentic-artificial-intelligence-harnessing-ai-agents-to-reinvent-business-work-and-life.md)** by Pascal Bornet, et al.: This book explores the rise of AI agents and provides a strategic roadmap for businesses and individuals to effectively harness this technology, with a focus on real-world case studies.  
   
 ### 🤔 Contrasting Perspectives: The Theorist's Corner  
   
 * 🎲 **Multiagent Systems: Algorithmic, Game-Theoretic, and Logical Foundations** by Yoav Shoham and Kevin Leyton-Brown: A comprehensive textbook that delves into the foundational theories of multiagent systems from a computer science perspective, integrating concepts from game theory, economics, and logic.  
-* **[🤖🧠 Artificial Intelligence: A Modern Approach](./artificial-intelligence-a-modern-approach.md)** by Stuart Russell and Peter Norvig: The seminal textbook in the field of AI, offering a broad and deep exploration of the concepts, theories, and algorithms that underpin artificial intelligence.  
+* **[🤖🧠 Artificial Intelligence: A Modern Approach](/content/books/artificial-intelligence-a-modern-approach.md)** by Stuart Russell and Peter Norvig: The seminal textbook in the field of AI, offering a broad and deep exploration of the concepts, theories, and algorithms that underpin artificial intelligence.  
 * ⚠️ **The Myth of Artificial Intelligence: Why Computers Can't Think the Way We Do** by Erik J. Larson: This book presents a critical perspective on the current state of AI, arguing that the field has been narrowly focused on a certain type of intelligence and has neglected the more foundational aspects of human-like cognition.  
 * 🤝 **Multi-agent Systems: An Introduction to Distributed Artificial Intelligence** by Jacques Ferber: This book brings together developments in the field of multi-agent systems, drawing on disciplines like sociology and cognitive psychology to provide a coherent picture of the state of the art.  
 * ⚖️ **Ethical Artificial Intelligence from Popular to Cognitive Science** by Jordan Richard Schoenherr: This book offers an interdisciplinary perspective on the ethics of autonomous and intelligent systems, applying principles of social cognition to understand the societal implications of AI.  
@@ -56,9 +56,9 @@ Key areas of focus include:
   
 * 🤖 **I, Robot** by Isaac Asimov: A classic collection of short stories that explores the ethical and logical paradoxes of intelligent robots governed by a set of fundamental laws.  
 * 🌃 **Neuromancer** by William Gibson: A seminal cyberpunk novel that paints a gritty, futuristic world where hackers interface with a global computer network and encounter powerful, enigmatic artificial intelligences.  
-* **[🚨🤖💥 All Systems Red](./all-systems-red.md) (The Murderbot Diaries)** by Martha Wells: A series of novellas following a self-aware security android that has hacked its own governor module and would rather be watching soap operas than protecting humans, offering a humorous and insightful exploration of autonomy and identity.  
+* **[🚨🤖💥 All Systems Red](/content/books/all-systems-red.md) (The Murderbot Diaries)** by Martha Wells: A series of novellas following a self-aware security android that has hacked its own governor module and would rather be watching soap operas than protecting humans, offering a humorous and insightful exploration of autonomy and identity.  
 * 👧 Klara and the Sun by Kazuo Ishiguro: A novel narrated by an "Artificial Friend," a solar-powered android designed to be a companion to a child, which tenderly explores themes of love, humanity, and our relationship with technology.  
-* **[🤖🤖🤖 We Are Legion (We Are Bob)](./we-are-legion-we-are-bob.md)** by Dennis E. Taylor: A story about a man whose mind is uploaded into a self-replicating interstellar probe, leading to a humorous and thought-provoking exploration of consciousness, identity, and the nature of intelligence as he creates multiple copies of himself.".  
+* **[🤖🤖🤖 We Are Legion (We Are Bob)](/content/books/we-are-legion-we-are-bob.md)** by Dennis E. Taylor: A story about a man whose mind is uploaded into a self-replicating interstellar probe, leading to a humorous and thought-provoking exploration of consciousness, identity, and the nature of intelligence as he creates multiple copies of himself.".  
   
-## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro)  
+## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-pro)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on AI Agents in Action. Never put book titles in quotes or italics. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

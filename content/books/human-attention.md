@@ -8,7 +8,7 @@ Author:
 tags:
 affiliate link: https://amzn.to/43Vx0Rb
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🧠🎯👁️💡 Applied Attention Theory  
 [🛒 Applied Attention Theory. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/43Vx0Rb)  
   
@@ -58,13 +58,13 @@ affiliate link: https://amzn.to/43Vx0Rb
   
 ### Further Reading Recommendations 📚  
 * **Best Alternate Book on the Same Topic:** "Attention" by Harold Pashler. This book also covers a wide range of attentional phenomena but provides a more detailed treatment of specific experimental paradigms. 📖  
-* **Best Tangentially Related Book:** [🤔🐇🐢 Thinking, Fast and Slow](./thinking-fast-and-slow.md) by Daniel Kahneman. This book explores the two systems of thinking and how they relate to attention and decision-making. 🧠  
-* **Best Diametrically Opposed Book:** [📱🧠 The Shallows: What the Internet Is Doing to Our Brains](./the-shallows-what-the-internet-is-doing-to-our-brains.md) by Nicholas Carr. While Wickens focuses on the science of attention, Carr critiques the impact of technology on our attentional abilities. 📱  
+* **Best Tangentially Related Book:** [🤔🐇🐢 Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md) by Daniel Kahneman. This book explores the two systems of thinking and how they relate to attention and decision-making. 🧠  
+* **Best Diametrically Opposed Book:** [📱🧠 The Shallows: What the Internet Is Doing to Our Brains](/content/books/the-shallows-what-the-internet-is-doing-to-our-brains.md) by Nicholas Carr. While Wickens focuses on the science of attention, Carr critiques the impact of technology on our attentional abilities. 📱  
 * **Best Fiction Book That Incorporates Related Ideas:** Flowers for Algernon by Daniel Keyes. This novel explores the ethical implications of enhancing cognitive abilities, including attention. 🌼  
-* **Best Book That Is More General:** "[Cognitive Psychology and Its Implications](./cognitive-psychology-and-its-implications.md)" by John R. Anderson. A broad overview of cognitive psychology, providing a wider context for understanding attention. 🌐  
+* **Best Book That Is More General:** "[Cognitive Psychology and Its Implications](/content/books/cognitive-psychology-and-its-implications.md)" by John R. Anderson. A broad overview of cognitive psychology, providing a wider context for understanding attention. 🌐  
 * **Best Book That Is More Specific:** "The Attentional Blink" by Nilli Lavie. This book focuses on a specific phenomenon of attentional limitations. 👁️  
 * **Best Book That Is More Rigorous:** "Foundations of Attention" by Michael I. Posner. A highly technical and detailed exploration of the neural basis of attention. 🧠  
-* **Best Book That Is More Accessible:** "[Driven to Distraction](./driven-to-distraction.md) (Revised): Recognizing and Coping with Attention Deficit Disorder from Childhood Through Adulthood" by Edward M. Hallowell and John J. Ratey. While focused on ADD, it provides an easy to understand overview of attentional problems. 🧑‍🤝‍🧑  
+* **Best Book That Is More Accessible:** "[Driven to Distraction](/content/books/driven-to-distraction.md) (Revised): Recognizing and Coping with Attention Deficit Disorder from Childhood Through Adulthood" by Edward M. Hallowell and John J. Ratey. While focused on ADD, it provides an easy to understand overview of attentional problems. 🧑‍🤝‍🧑  
   
 ## 💬 [Gemini](https://gemini.google.com) Prompt  
 > Summarize the book: Human Attention by Christopher D. Wickens. Start with a TL;DR - a single statement that conveys a maximum of the useful information provided in the book. Next, explain how this book may offer a new or surprising perspective. Follow this with a deep dive. Catalogue the topics, methods, and research discussed. Be sure to highlight any significant theories, theses, or mental models proposed. Provide a critical analysis of the quality of the information presented, using scientific backing, author credentials, authoritative reviews, and other markers of high quality information as justification. Emphasize practical takeaways. Make the following additional book recommendations: the best alternate book on the same topic; the best book that is tangentially related; the best book that is diametrically opposed; the best fiction book that incorporates related ideas; the best book that is more general or more specific; and the best book that is more rigorous or more accessible than this book. Format your response as markdown, starting at heading level H3, with inline links, for easy copy paste. Use meaningful emojis generously (at least one per heading, bullet point, and paragraph) to enhance readability. Do not include broken links or links to commercial sites.  

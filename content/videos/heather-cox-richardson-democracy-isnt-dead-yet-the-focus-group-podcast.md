@@ -10,7 +10,7 @@ Channel: The Bulwark
 tags:
 youtube: https://youtu.be/UHK7YTsLt2A
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md)  
 # 🏛️⚠️⏳ Democracy Isn’t Dead. Yet. | The Focus Group Podcast  
 ![Heather Cox Richardson: Democracy Isn’t Dead. Yet. | The Focus Group Podcast](https://youtu.be/UHK7YTsLt2A)  
   
@@ -21,11 +21,11 @@ youtube: https://youtu.be/UHK7YTsLt2A
 * 🌐 **Information Environment Challenges**: The discussion addressed challenges posed by the current information environment, with some focus group participants expressing 🤔 skepticism about election results based on information from social media platforms like 📱 TikTok, highlighting the difficulty of discerning 🔍 truth in a landscape filled with ❌ misinformation \[[55:46](http://www.youtube.com/watch?v=UHK7YTsLt2A&t=3346)\].  
   
 ## 📚 Book Recommendations  
-* [🗳️🏛️☠️ How Democracies Die](../books/how-democracies-die.md) by Steven Levitsky and Daniel Ziblatt  
-* [👑🚫📜2️⃣0️⃣ On Tyranny: Twenty Lessons from the Twentieth Century](../books/on-tyranny.md) by Timothy Snyder  
-* [👻🇺🇸⚔️🪽 The Soul of America: The Battle for Our Better Angels](../books/the-soul-of-america-the-battle-for-our-better-angels.md) by Jon Meacham  
-* [🗳️🕊️🇺🇸 Democracy in America](../books/democracy-in-america.md) by Alexis de Tocqueville  
-* [👁️‍🗨️💰⛓️👤 The Age of Surveillance Capitalism: The Fight for a Human Future at the New Frontier of Power](../books/the-age-of-surveillance-capitalism.md) by Shoshana Zuboff  
+* [🗳️🏛️☠️ How Democracies Die](/content/books/how-democracies-die.md) by Steven Levitsky and Daniel Ziblatt  
+* [👑🚫📜2️⃣0️⃣ On Tyranny: Twenty Lessons from the Twentieth Century](/content/books/on-tyranny.md) by Timothy Snyder  
+* [👻🇺🇸⚔️🪽 The Soul of America: The Battle for Our Better Angels](/content/books/the-soul-of-america-the-battle-for-our-better-angels.md) by Jon Meacham  
+* [🗳️🕊️🇺🇸 Democracy in America](/content/books/democracy-in-america.md) by Alexis de Tocqueville  
+* [👁️‍🗨️💰⛓️👤 The Age of Surveillance Capitalism: The Fight for a Human Future at the New Frontier of Power](/content/books/the-age-of-surveillance-capitalism.md) by Shoshana Zuboff  
   
 ## 🐦 Tweet  
 <blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">🏛️⚠️⏳ Democracy Isn’t Dead. Yet. | The Focus Group Podcast<a href="https://twitter.com/BulwarkOnline?ref_src=twsrc%5Etfw">@BulwarkOnline</a><a href="https://twitter.com/HC_Richardson?ref_src=twsrc%5Etfw">@HC_Richardson</a> <br><br>🔪 Political Assassinations | 🗳️ Voter Suppression | 👑 Authoritarianism | 🪧 Protest | 📱 Misinformation | 📜 History | 🤞 Hope<a href="https://t.co/U3hChEzo1L">https://t.co/U3hChEzo1L</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/1939133256781467817?ref_src=twsrc%5Etfw">June 29, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

@@ -12,7 +12,7 @@ force_analyze_links: false
 link_analysis_time: 2026-03-22T23:36:03.161Z
 link_analysis_model: gemini-3.1-flash-lite-preview
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 👁️‍🗨️💰⛓️👤 The Age of Surveillance Capitalism: The Fight for a Human Future at the New Frontier of Power  
 [🛒 The Age of Surveillance Capitalism: The Fight for a Human Future at the New Frontier of Power. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4kwzGKY)  
   
@@ -100,8 +100,8 @@ While the book is more descriptive and analytical than prescriptive, it offers s
 * **Best Book That Is Tangentially Related:** *You Are Not a Gadget* by Jaron Lanier. 🪞 Critiques the way the internet has shaped our identities and interactions.  
 * **Best Book That Is Diametrically Opposed:** *In Defense of Big Data* by Kenneth Cukier, Viktor Mayer-Schönberger, and Francis de Véricourt. 📊 Argues for the benefits and potential of big data analysis.  
 * **Best Fiction Book That Incorporates Related Ideas:** *The Circle* by Dave Eggers. ⭕ A dystopian novel exploring the dangers of transparency and surveillance.  
-* **Best Book That Is More General:** *[Capital in the Twenty First Century](./capital-in-the-twenty-first-century.md)* by Thomas Piketty. 💰 Explores inequality and the dynamics of capitalism over the long term.  
-* **Best Book That Is More Specific:** [📊📉🏛️ Weapons of Math Destruction: How Big Data Increases Inequality and Threatens Democracy](./weapons-of-math-destruction-how-big-data-increases-inequality-and-threatens-democracy.md) by Cathy O'Neil. 💣 Focuses on the biases and dangers of algorithms in various sectors.  
+* **Best Book That Is More General:** *[Capital in the Twenty First Century](/content/books/capital-in-the-twenty-first-century.md)* by Thomas Piketty. 💰 Explores inequality and the dynamics of capitalism over the long term.  
+* **Best Book That Is More Specific:** [📊📉🏛️ Weapons of Math Destruction: How Big Data Increases Inequality and Threatens Democracy](/content/books/weapons-of-math-destruction-how-big-data-increases-inequality-and-threatens-democracy.md) by Cathy O'Neil. 💣 Focuses on the biases and dangers of algorithms in various sectors.  
 * **Best Book That Is More Rigorous:** Academic papers on data privacy and algorithmic bias in journals like *Information, Communication & Society*. 🧑‍🏫  
 * **Best Book That Is More Accessible:** *Click Here to Kill Everybody* by Bruce Schneier. 🖱️ Discusses the security vulnerabilities of the Internet of Things in a more accessible style.  
   

@@ -11,7 +11,7 @@ force_analyze_links: false
 link_analysis_time: 2026-03-22T23:35:09.818Z
 link_analysis_model: gemini-3.1-flash-lite-preview
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 📊📉🏛️ Weapons of Math Destruction: How Big Data Increases Inequality and Threatens Democracy  
 [🛒 Weapons of Math Destruction: How Big Data Increases Inequality and Threatens Democracy. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4oaLcO6)  
   
@@ -70,14 +70,14 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 ### 🤝 Similar  
 * ✊ Algorithms of Oppression: How Search Engines Reinforce Racism by Safiya Umoja Noble  
 * 🤖 Automating Inequality: How High-Tech Tools Profile, Police, and Punish the Poor by Virginia Eubanks  
-* [👁️‍🗨️💰⛓️👤 The Age of Surveillance Capitalism: The Fight for a Human Future at the New Frontier of Power](./the-age-of-surveillance-capitalism.md) by Shoshana Zuboff  
+* [👁️‍🗨️💰⛓️👤 The Age of Surveillance Capitalism: The Fight for a Human Future at the New Frontier of Power](/content/books/the-age-of-surveillance-capitalism.md) by Shoshana Zuboff  
 * 🚺 Invisible Women: Data Bias in a World Designed for Men by Caroline Criado Perez  
 ### ☯️ Contrasting  
 * 🧑‍💻 The Ethical Algorithm: The Science of Socially Aware Algorithm Design by Michael Kearns and Aaron Roth  
-* [⚖️🤖 The Alignment Problem](./the-alignment-problem.md): Machine Learning and Human Values by Brian Christian  
+* [⚖️🤖 The Alignment Problem](/content/books/the-alignment-problem.md): Machine Learning and Human Values by Brian Christian  
 ### 🔗 Related  
 * 👋 Hello World: How to be Human in the Age of the Machine by Hannah Fry  
-* [🤖🧑‍ Human Compatible: Artificial Intelligence and the Problem of Control](./human-compatible-artificial-intelligence-and-the-problem-of-control.md) by Stuart Russell  
+* [🤖🧑‍ Human Compatible: Artificial Intelligence and the Problem of Control](/content/books/human-compatible-artificial-intelligence-and-the-problem-of-control.md) by Stuart Russell  
 * 🔒 Privacy is Power: Why and How You Should Take Back Control of Your Data by Carissa Veliz  
   
 ## 🫵 What Do You Think?  

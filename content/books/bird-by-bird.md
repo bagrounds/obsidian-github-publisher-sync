@@ -10,7 +10,7 @@ affiliate link: https://amzn.to/4jyNMKu
 CTA: ✍️ Unleash your story.
 updated: 2026-03-20T14:17:57.557Z
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🐦🕊️ Bird by Bird: Some Instructions on Writing and Life  
 [🛒 Bird by Bird: Some Instructions on Writing and Life. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4jyNMKu)  
   
@@ -40,16 +40,16 @@ updated: 2026-03-20T14:17:57.557Z
   
 ### ➕ Similar Reads (Writing & Life)  
 These books share Lamott's blend of practical advice, personal reflection, and encouragement for the writing life:  
-* ✍️ **[📜 On Writing: A Memoir of the Craft](./on-writing.md)** by Stephen King: 📖 Part memoir, part writing guide, King offers pragmatic advice alongside his personal journey. 🤝 Often compared to *Bird by Bird* for its honesty and practical tips.  
-* **[✍️🦴 Writing Down the Bones](./writing-down-the-bones.md): Freeing the Writer Within** by Natalie Goldberg: 🧘 Focuses on writing practice, mindfulness, and freeing the creative spirit, similar to Lamott's emphasis on process and overcoming internal barriers.  
-* ✨ **[🪄 Big Magic: Creative Living Beyond Fear](./big-magic.md)** by Elizabeth Gilbert: 🚀 Explores creativity, inspiration, and overcoming fear, resonating with Lamott's themes of faith and perseverance.  
-* 🎨 **[The Artist's Way](./the-artists-way.md): A Spiritual Path to Higher Creativity** by Julia Cameron: 🧘 A classic guide to unlocking creativity through exercises like "morning pages," sharing a focus on process and overcoming blocks, though often described as more overtly spiritual.  
+* ✍️ **[📜 On Writing: A Memoir of the Craft](/content/books/on-writing.md)** by Stephen King: 📖 Part memoir, part writing guide, King offers pragmatic advice alongside his personal journey. 🤝 Often compared to *Bird by Bird* for its honesty and practical tips.  
+* **[✍️🦴 Writing Down the Bones](/content/books/writing-down-the-bones.md): Freeing the Writer Within** by Natalie Goldberg: 🧘 Focuses on writing practice, mindfulness, and freeing the creative spirit, similar to Lamott's emphasis on process and overcoming internal barriers.  
+* ✨ **[🪄 Big Magic: Creative Living Beyond Fear](/content/books/big-magic.md)** by Elizabeth Gilbert: 🚀 Explores creativity, inspiration, and overcoming fear, resonating with Lamott's themes of faith and perseverance.  
+* 🎨 **[The Artist's Way](/content/books/the-artists-way.md): A Spiritual Path to Higher Creativity** by Julia Cameron: 🧘 A classic guide to unlocking creativity through exercises like "morning pages," sharing a focus on process and overcoming blocks, though often described as more overtly spiritual.  
 * ✍️ **Still Writing: The Perils and Pleasures of a Creative Life** by Dani Shapiro: 🤔 Offers reflections and advice on the writing life, echoing Lamott's honesty about the challenges and rewards.  
 * ✍️ **The Writing Life** by Annie Dillard: 📖 A collection of essays reflecting on the dedication, challenges, and deeper meaning of a writer's existence.  
   
 ### ➖ Contrasting Approaches (Structure & Technique)  
 These books offer more structured, technical, or genre-specific guidance, contrasting with Lamott's more holistic approach:  
-* 📝 **[🦢 The Elements of Style](./the-elements-of-style.md)** by Strunk & White: 📜 A concise, classic guide focused on the fundamental rules of grammar and style.  
+* 📝 **[🦢 The Elements of Style](/content/books/the-elements-of-style.md)** by Strunk & White: 📜 A concise, classic guide focused on the fundamental rules of grammar and style.  
 * 🧠 **Story Genius: How to Use Brain Science to Go Beyond Outlining and Write a Riveting Novel** by Lisa Cron: 🔬 Focuses on the cognitive science behind storytelling to craft compelling narratives.  
 * 🐱 **Save the Cat! Writes a Novel** by Jessica Brody: 🎬 Applies the popular screenwriting structure template to novel writing, offering a formulaic approach to plot.  
 * ✍️ **Self-Editing for Fiction Writers** by Renni Browne and Dave King: ✂️ Provides practical, technical advice on editing and refining fiction manuscripts.  
@@ -59,14 +59,14 @@ These books offer more structured, technical, or genre-specific guidance, contra
   
 ### 🎨 Creatively Related (Creativity, Memoir, Humor)  
 These books connect to the broader themes of creativity, memoir, spirituality, and humor found in Lamott's work:  
-* ⚔️ **[The War of Art](./the-war-of-art.md): Break Through the Blocks and Win Your Inner Creative Battles** by Steven Pressfield: 🛡️ Focuses on overcoming "Resistance," the internal force that hinders creativity, echoing Lamott's discussion of internal obstacles.  
+* ⚔️ **[The War of Art](/content/books/the-war-of-art.md): Break Through the Blocks and Win Your Inner Creative Battles** by Steven Pressfield: 🛡️ Focuses on overcoming "Resistance," the internal force that hinders creativity, echoing Lamott's discussion of internal obstacles.  
 * 🙏 **Traveling Mercies: Some Thoughts on Faith** by Anne Lamott: 📖 One of Lamott's memoirs exploring faith, grace, and life's imperfections with her signature humor and honesty.  
-* **[👶📖 Operating Instructions: A Journal of My Son’s First Year](./operating-instructions-a-journal-of-my-sons-first-year.md)** by Anne Lamott: 📝 A raw and funny journal about Lamott's experience with single motherhood.  
+* **[👶📖 Operating Instructions: A Journal of My Son’s First Year](/content/books/operating-instructions-a-journal-of-my-sons-first-year.md)** by Anne Lamott: 📝 A raw and funny journal about Lamott's experience with single motherhood.  
 * ✍️ **Zen in the Art of Writing** by Ray Bradbury: ✨ Essays celebrating the joy and passion of writing and creativity.  
 * 🌧️ **A Swim in the Pond in the Rain** by George Saunders: 🇷🇺 Analyzes Russian short stories to reveal insights into the craft of writing and reading.  
 * 🧑‍🎨 **Real Artists Don't Starve** by Jeff Goins: 🚫 Challenges the "starving artist" myth and provides strategies for thriving creatively and financially.  
   
-## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
+## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Bird by Bird. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.  
   
 ## 🦋 Bluesky    

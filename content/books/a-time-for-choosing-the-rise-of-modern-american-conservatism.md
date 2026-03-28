@@ -7,7 +7,7 @@ share: true
 CTA: 🦅 Understand conservatism.
 affiliate link: https://amzn.to/43r4vKp
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🇺🇸➡️ A Time for Choosing: The Rise of Modern American Conservatism  
 [🛒 A Time for Choosing: The Rise of Modern American Conservatism. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/43r4vKp)  
   

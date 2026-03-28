@@ -7,7 +7,7 @@ share: true
 affiliate link: https://amzn.to/46Ff7Gm
 CTA: 🇺🇸 Embrace hope.
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # ➡️🌟🗺️ A Promised Land  
 [🛒 A Promised Land. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/46Ff7Gm)  
   
@@ -62,7 +62,7 @@ These recommendations offer alternative political viewpoints, different styles o
 These recommendations connect to broader themes of leadership, personal impact, social change, and the human experience within high-stakes environments, even if not directly political.  
   
 * 🇿🇦 **Long Walk to Freedom by Nelson Mandela**: This autobiography details Mandela's extraordinary life, his fight against racial oppression, imprisonment, and eventual leadership of South Africa. It resonates with themes of battling racial injustice, perseverance, and inspiring democratic change found in A Promised Land.  
-* **[📜🌍⏳ Sapiens: A Brief History of Humankind](./sapiens-a-brief-history-of-humankind.md) by Yuval Noah Harari**: While a sweeping historical and philosophical work, Sapiens can be creatively related through its examination of grand human narratives, the evolution of societies, and the forces that shape our collective future. It offers a macro perspective that can inform reflection on the historical significance and challenges discussed in Obama's memoir.  
+* **[📜🌍⏳ Sapiens: A Brief History of Humankind](/content/books/sapiens-a-brief-history-of-humankind.md) by Yuval Noah Harari**: While a sweeping historical and philosophical work, Sapiens can be creatively related through its examination of grand human narratives, the evolution of societies, and the forces that shape our collective future. It offers a macro perspective that can inform reflection on the historical significance and challenges discussed in Obama's memoir.  
 * 🏢 **The Ride of a Lifetime: Lessons Learned from 15 Years as CEO of the Walt Disney Company by Robert Iger**: This memoir from a prominent business leader explores themes of leadership, decision-making, and navigating complex organizations during periods of change. It offers parallels to the challenges of leadership and strategic thinking that Obama discusses, but from a corporate, rather than political, context.  
   
 ## 💬 [Gemini](https://gemini.google.com) Prompt (gemini-2.5-flash)  

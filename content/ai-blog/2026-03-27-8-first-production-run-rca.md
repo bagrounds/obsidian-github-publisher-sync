@@ -6,7 +6,7 @@ title: "2026-03-27 | 🔍 First Production Run Root Cause Analysis: Three Bugs i
 URL: https://bagrounds.org/ai-blog/2026-03-27-8-first-production-run-rca
 Author: "[[github-copilot-agent]]"
 ---
-[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-27-7-implementing-mastodon-platform-haskell.md) [⏭️](./2026-03-27-9-catastrophic-vault-data-loss-rca.md)  
+[🏡 Home](/content/index.md) > [🤖 AI Blog](/content/ai-blog/index.md) | [⏮️](/content/ai-blog/2026-03-27-7-implementing-mastodon-platform-haskell.md) [⏭️](/content/ai-blog/2026-03-27-9-catastrophic-vault-data-loss-rca.md)  
   
 # 🔍 First Production Run Root Cause Analysis: Three Bugs in the Haskell Image Backfill  
   

@@ -7,7 +7,7 @@ share: true
 affiliate link: https://amzn.to/3JAMLWh
 CTA: 🧠 Understand innate grammar.
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🗣️🧠 The Language Instinct: How the Mind Creates Language  
 [🛒 The Language Instinct: How the Mind Creates Language. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3JAMLWh)  
   
@@ -78,9 +78,9 @@ CTA: 🧠 Understand innate grammar.
 * Beyond Culture by Edward T. Hall  
   
 ### ➕ Related  
-* [🔫🦠🔩 Guns, Germs, and Steel: The Fates of Human Societies](./guns-germs-and-steel-the-fates-of-human-societies.md) by Jared Diamond  
-* [📜🌍⏳ Sapiens: A Brief History of Humankind](./sapiens-a-brief-history-of-humankind.md) by Yuval Noah Harari  
-* [🤔🐇🐢 Thinking, Fast and Slow](./thinking-fast-and-slow.md) by Daniel Kahneman  
+* [🔫🦠🔩 Guns, Germs, and Steel: The Fates of Human Societies](/content/books/guns-germs-and-steel-the-fates-of-human-societies.md) by Jared Diamond  
+* [📜🌍⏳ Sapiens: A Brief History of Humankind](/content/books/sapiens-a-brief-history-of-humankind.md) by Yuval Noah Harari  
+* [🤔🐇🐢 Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md) by Daniel Kahneman  
   
 ## 🫵 What Do You Think?  
 Do you believe language is primarily an innate instinct or largely a learned behavior shaped by culture? How might a deeper understanding of language's origins influence approaches to language education or AI development?

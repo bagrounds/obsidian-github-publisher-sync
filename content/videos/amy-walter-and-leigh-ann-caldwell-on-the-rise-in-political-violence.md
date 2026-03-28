@@ -10,7 +10,7 @@ Channel: PBS NewsHour
 tags:
 youtube: https://youtu.be/j6FLxmPak4I
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md)  
 # 🏛️💥📈 Amy Walter and Leigh Ann Caldwell on the rise in political violence  
 ![Amy Walter and Leigh Ann Caldwell on the rise in political violence](https://youtu.be/j6FLxmPak4I)  
   
@@ -31,10 +31,10 @@ youtube: https://youtu.be/j6FLxmPak4I
 ## 📚 Book Recommendations  
 * **💥 On Political Violence:**  
     * 📖 *How Civil Wars Start: And How to Stop Them* by Barbara F. Walter. This book explores the factors that lead to civil wars and offers strategies for preventing them.  
-    * [🇺🇸💥 Political Violence in America: Historical Flashpoints and Modern-Day Trends](../books/political-violence-in-america-historical-flashpoints-and-modern-day-trends.md) by Charles Tilly. This book analyzes the history and patterns of political violence in the United States.  
+    * [🇺🇸💥 Political Violence in America: Historical Flashpoints and Modern-Day Trends](/content/books/political-violence-in-america-historical-flashpoints-and-modern-day-trends.md) by Charles Tilly. This book analyzes the history and patterns of political violence in the United States.  
   
 * **🗣️ On President Trump's Policies and Administration:**  
-    * [😡🤬 Rage](../books/rage.md) by Bob Woodward. This book provides an in-depth look at the Trump presidency. 😠 It dives into the decisions and actions of the administration.  
+    * [😡🤬 Rage](/content/books/rage.md) by Bob Woodward. This book provides an in-depth look at the Trump presidency. 😠 It dives into the decisions and actions of the administration.  
     * 📖 *The Room Where It Happened: A White House Memoir* by John Bolton. This book offers a firsthand account of working in the Trump White House. 🧐 A personal view on his actions.  
   
 * **⚖️ On Legislative Battles and Budget Politics:**  

@@ -7,7 +7,7 @@ share: true
 CTA: ⚖️ Uncover the truth.
 affiliate link: https://amzn.to/4hdwAKS
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🇺🇸🕵️‍♂️🚫 Where Law Ends: Inside the Mueller Investigation  
 [🛒 Where Law Ends: Inside the Mueller Investigation. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4hdwAKS)  
   
@@ -100,9 +100,9 @@ affiliate link: https://amzn.to/4hdwAKS
 * 🎭 **The Russia Hoax: The Illicit Scheme to Clear Hillary Clinton and Frame Donald Trump by Gregg Jarrett:** Argues the investigation itself was a political conspiracy.  
   
 ### 🧠 Creatively Related Topics  
-* **[🧑🏿‍⚖️🔄 Just Mercy: A Story of Justice and Redemption](./just-mercy-a-story-of-justice-and-redemption.md) by Bryan Stevenson:** Explores justice, legal ethics, and the systemic issues within the American legal system.  
+* **[🧑🏿‍⚖️🔄 Just Mercy: A Story of Justice and Redemption](/content/books/just-mercy-a-story-of-justice-and-redemption.md) by Bryan Stevenson:** Explores justice, legal ethics, and the systemic issues within the American legal system.  
 * 🏛️ **The Nine: Inside the Secret World of the Supreme Court by Jeffrey Toobin:** Offers an insider's look into high-stakes legal institutions.  
-* **[⬆️🤥🏛️ A Higher Loyalty: Truth, Lies, and Leadership](./a-higher-loyalty-truth-lies-and-leadership.md) by James Comey:** Another insider account from a key figure in the events leading to the Mueller investigation.  
+* **[⬆️🤥🏛️ A Higher Loyalty: Truth, Lies, and Leadership](/content/books/a-higher-loyalty-truth-lies-and-leadership.md) by James Comey:** Another insider account from a key figure in the events leading to the Mueller investigation.  
   
 ## 💬 [Gemini](https://gemini.google.com) Prompt (gemini-2.5-flash)  
 > Write a book report for Where Law Ends: Inside the Mueller Investigation with the following parts.  

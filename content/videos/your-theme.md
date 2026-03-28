@@ -9,7 +9,7 @@ Platform: "#YouTube"
 Channel:
 tags:
 ---
-[Home](../index.md) > [Videos](./index.md) | [⏭️ This Journal Keeps Me Productive (& Maybe You Too)](./this-journal-keeps-me-productive-and-maybe-you-too.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md) | [⏭️ This Journal Keeps Me Productive (& Maybe You Too)](/content/videos/this-journal-keeps-me-productive-and-maybe-you-too.md)  
 # 🔑🖼️🎨👤 Your Theme  
 ![Your Theme](https://youtu.be/NVGuFdX5guE)  
   
@@ -38,23 +38,23 @@ The video proposes using "themes" instead of traditional New Year's resolutions.
 ## 📚 Book Recommendations  
   
 ### ✨ On 🪴 Habit Formation and ⚙️ Systems (to support your chosen themes)  
-* **[⚛️🔄 Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones](../books/atomic-habits.md)** by James Clear  
+* **[⚛️🔄 Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones](/content/books/atomic-habits.md)** by James Clear  
     * This book is a cornerstone for understanding how small, consistent actions lead to significant results. It provides a practical framework for building effective systems that support your intentions, rather than relying on willpower alone.  
-* **[🔄🧠💪 The Power of Habit: Why We Do What We Do in Life and Business](../books/the-power-of-habit.md)** by Charles Duhigg  
+* **[🔄🧠💪 The Power of Habit: Why We Do What We Do in Life and Business](/content/books/the-power-of-habit.md)** by Charles Duhigg  
     * Duhigg explores the science behind habit formation and offers insights into how habits work, how they can be changed, and their impact on individuals and organizations.  
-* **[🤏♻️ Tiny Habits: The Small Changes That Change Everything](../books/tiny-habits.md)** by BJ Fogg  
+* **[🤏♻️ Tiny Habits: The Small Changes That Change Everything](/content/books/tiny-habits.md)** by BJ Fogg  
     * Fogg's method focuses on making behavior change easy by starting with "tiny habits" that are too small to fail, leading to sustainable long-term transformation.  
-* **[👤📈🎯🌟🔑🤝🏆 The 7 Habits of Highly Effective People](../books/the-7-habits-of-highly-effective-people.md)** by Stephen Covey  
+* **[👤📈🎯🌟🔑🤝🏆 The 7 Habits of Highly Effective People](/content/books/the-7-habits-of-highly-effective-people.md)** by Stephen Covey  
     * A classic in personal development, this book outlines principles for personal and professional effectiveness, many of which involve shifting mindset and establishing productive habits.  
-* **[📈➕ The Compound Effect](../books/the-compound-effect.md)** by Darren Hardy  
+* **[📈➕ The Compound Effect](/content/books/the-compound-effect.md)** by Darren Hardy  
     * This book emphasizes the idea that small, consistent actions, compounded over time, lead to massive results, reinforcing the theme-based approach to progress.  
   
 ### 🧠 On 🧘 Mindset and 🎯 Intentions (to define your themes)  
-* **[🌱🧘🏼‍♀️🏆 Mindset: The New Psychology of Success](../books/mindset.md)** by Carol S. Dweck  
+* **[🌱🧘🏼‍♀️🏆 Mindset: The New Psychology of Success](/content/books/mindset.md)** by Carol S. Dweck  
     * Dweck's groundbreaking research on fixed vs. growth mindsets is crucial for understanding how our beliefs about our abilities impact our potential and success. Embracing a growth mindset aligns perfectly with the flexibility of themes.  
 * **The Power of Intention** by Wayne Dyer  
     * Dyer explores the concept of intention as a powerful force for co-creating your reality, moving beyond mere goal-setting to a deeper sense of purpose and alignment.  
 * **A New Earth: Awakening to Your Life's Purpose** by Eckhart Tolle  
     * Tolle's work focuses on transcending the ego and living in the present moment, which can help in defining a theme that resonates deeply with your authentic self rather than external pressures.  
-* **[➖💯 Essentialism: The Disciplined Pursuit of Less](../books/essentialism-the-disciplined-pursuit-of-less.md)** by Greg McKeown  
+* **[➖💯 Essentialism: The Disciplined Pursuit of Less](/content/books/essentialism-the-disciplined-pursuit-of-less.md)** by Greg McKeown  
     * While not strictly about habits, Essentialism helps you identify what is truly vital and eliminate everything else, allowing you to focus your energy and efforts on your chosen theme.

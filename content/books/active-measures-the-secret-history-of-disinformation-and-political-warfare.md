@@ -7,7 +7,7 @@ share: true
 affiliate link: https://amzn.to/4qCazd8
 CTA: 🕵️ Uncover hidden agendas.
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🎭🤫 Active Measures: The Secret History of Disinformation and Political Warfare  
 [🛒 Active Measures: The Secret History of Disinformation and Political Warfare. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4qCazd8)  
   
@@ -63,7 +63,7 @@ CTA: 🕵️ Uncover hidden agendas.
   
 ## 📚 Book Recommendations  
 ### 🤝 Similar  
-* [🤥📣 This Is Not Propaganda: Adventures in the War Against Reality](./this-is-not-propaganda.md) by Peter Pomerantsev  
+* [🤥📣 This Is Not Propaganda: Adventures in the War Against Reality](/content/books/this-is-not-propaganda.md) by Peter Pomerantsev  
 * 💻 Sandworm: A New Era of Cyberwar and the Hunt for the Kremlin's Most Dangerous Hackers by Andy Greenberg  
 * 📰 How to Lose the Information War: Russia, Fake News, and the Future of Conflict by Nina Jankowicz  
   
@@ -75,7 +75,7 @@ CTA: 🕵️ Uncover hidden agendas.
 ### ➕ Related  
 * ⚔️ The New Rules of War: Victory in the Age of Durable Disorder by Sean McFate  
 * 🕵️ Spies: The Epic Intelligence War Between East and West by Calder Walton  
-* [🤖🏛️ Lie Machines: How to Save Democracy from Troll Armies, Deceitful Robots, Junk News Operations, and Political Operatives](./lie-machines-how-to-save-democracy-from-troll-armies-deceitful-robots-junk-news-operations-and-political-operatives.md) by Philip N. Howard  
+* [🤖🏛️ Lie Machines: How to Save Democracy from Troll Armies, Deceitful Robots, Junk News Operations, and Political Operatives](/content/books/lie-machines-how-to-save-democracy-from-troll-armies-deceitful-robots-junk-news-operations-and-political-operatives.md) by Philip N. Howard  
   
 ## 🫵 What Do You Think?  
 Considering Rid's arguments, where do you believe the primary responsibility lies in countering active measures: with governments, technology platforms, individual media literacy, or somewhere else entirely? What historical active measure do you find most shocking or insightful?

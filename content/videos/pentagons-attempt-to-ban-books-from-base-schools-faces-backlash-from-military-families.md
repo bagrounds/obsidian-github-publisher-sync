@@ -10,7 +10,7 @@ Channel: PBS NewsHour
 tags:
 youtube: https://youtu.be/bxQFPAK31Gs
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md)  
 # 🪖🚫📚😠 Pentagon's attempt to ban books from base schools faces backlash from military families  
 ![Pentagon's attempt to ban books from base schools faces backlash from military families](https://youtu.be/bxQFPAK31Gs)  
   
@@ -71,4 +71,4 @@ youtube: https://youtu.be/bxQFPAK31Gs
 ### 🎨 Creatively Related  
   
 * 🗺️ *A History of the World in 100 Objects* by Neil MacGregor: Focuses on how a **curated collection of objects** can tell a story about history and culture. This provides a creative parallel to the library, where the selection and removal of books fundamentally **changes the story** accessible to students.  
-* [🤔🐇🐢 Thinking, Fast and Slow](../books/thinking-fast-and-slow.md) by Daniel Kahneman: A foundational book on cognitive biases and how people make decisions. This tangentially relates by offering insight into the **psychological processes and ideological motivations** (like confirmation bias) that may drive individuals and organizations to censor information they perceive as a threat to their worldview.
+* [🤔🐇🐢 Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md) by Daniel Kahneman: A foundational book on cognitive biases and how people make decisions. This tangentially relates by offering insight into the **psychological processes and ideological motivations** (like confirmation bias) that may drive individuals and organizations to censor information they perceive as a threat to their worldview.

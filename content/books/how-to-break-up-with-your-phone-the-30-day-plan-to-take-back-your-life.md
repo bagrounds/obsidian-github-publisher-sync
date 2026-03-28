@@ -7,7 +7,7 @@ share: true
 CTA: 📱 Reclaim your attention.
 affiliate link: https://amzn.to/3J8wcAP
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 📱💔 How to Break Up with Your Phone: The 30-Day Plan to Take Back Your Life  
 [🛒 How to Break Up with Your Phone: The 30-Day Plan to Take Back Your Life. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3J8wcAP)  
   
@@ -97,7 +97,7 @@ A: Catherine Price's book provides a structured, step-by-step 30-day program, mo
 ### 📚 Book Recommendations  
   
 #### 📴 Similar Books (Digital Minimalism & Detox)  
-* [📱⬇️🧘 Digital Minimalism: Choosing a Focused Life in a Noisy World](./digital-minimalism-choosing-a-focused-life-in-a-noisy-world.md) by Cal Newport  
+* [📱⬇️🧘 Digital Minimalism: Choosing a Focused Life in a Noisy World](/content/books/digital-minimalism-choosing-a-focused-life-in-a-noisy-world.md) by Cal Newport  
     * 🎯 Advocates for intentional technology use, minimizing digital clutter.  
 * 🔗 Irresistible: The Rise of Addictive Technology and the Business of Keeping Us Hooked by Adam Alter  
     * 🧠 Explores the psychology behind behavioral addictions, including technology.  
@@ -113,17 +113,17 @@ A: Catherine Price's book provides a structured, step-by-step 30-day program, mo
     * 🥺 Addresses technology addiction and the quest for real-life connection.  
   
 #### 🖥️ Contrasting Books (Understanding Design & Broader Tech Impact)  
-* [🎣📱 Hooked: How to Build Habit-Forming Products](./hooked-how-to-build-habit-forming-products.md) by Nir Eyal  
+* [🎣📱 Hooked: How to Build Habit-Forming Products](/content/books/hooked-how-to-build-habit-forming-products.md) by Nir Eyal  
     * ⚙️ Explains the "Hook Model" of creating addictive products, offering insight into what Price's book aims to counteract.  
-* [📱🧠 The Shallows: What the Internet Is Doing to Our Brains](./the-shallows-what-the-internet-is-doing-to-our-brains.md) by Nicholas Carr  
+* [📱🧠 The Shallows: What the Internet Is Doing to Our Brains](/content/books/the-shallows-what-the-internet-is-doing-to-our-brains.md) by Nicholas Carr  
     * 🌊 A deep dive into the neurological and cognitive effects of internet use.  
 * 📧 A World Without Email: Reimagining Work in an Age of Communication Overload by Cal Newport  
     * 💼 Proposes strategies for reducing email and messaging dependency in professional settings.  
   
 #### 🎨 Creatively Related Books (Habits, Mindfulness, & Real-World Engagement)  
-* [⚛️🔄 Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones](./atomic-habits.md) by James Clear  
+* [⚛️🔄 Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones](/content/books/atomic-habits.md) by James Clear  
     * 🪜 Practical framework for building good habits and breaking bad ones, applicable to phone use.  
-* [🤿💼 Deep Work: Rules for Focused Success in a Distracted World](./deep-work.md) by Cal Newport  
+* [🤿💼 Deep Work: Rules for Focused Success in a Distracted World](/content/books/deep-work.md) by Cal Newport  
     * ✨ Strategies for focused, undistracted work in a world full of digital interruptions.  
 * 💊 Dopamine Nation: Finding Balance in the Age of Indulgence by Anna Lembke  
     * ⚖️ Explores the neuroscience of addiction and the pursuit of pleasure in an overstimulating world.  

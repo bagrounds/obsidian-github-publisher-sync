@@ -10,7 +10,7 @@ Channel: PBS NewsHour
 tags:
 youtube: https://youtu.be/7FwNLWynFAQ
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md)  
 # 👹🐊🔒 Trump visits Florida's 'Alligator Alcatraz,' urges more states to open ICE detention sites  
 ![Trump visits Florida's 'Alligator Alcatraz,' urges more states to open ICE detention sites](https://youtu.be/7FwNLWynFAQ)  
   
@@ -31,14 +31,14 @@ youtube: https://youtu.be/7FwNLWynFAQ
 ## 📚 📖 Book Recommendations  
 * 📚 **For immigration policy and history:**  
     * 📖 *Deported: Immigrant Policing, Activism, and Latinx Politics* by Tanya Golash-Boza  
-    * [🚫📄🇺🇸 The Undocumented Americans](../books/the-undocumented-americans.md) by Karla Cornejo Villavicencio  
+    * [🚫📄🇺🇸 The Undocumented Americans](/content/books/the-undocumented-americans.md) by Karla Cornejo Villavicencio  
     * 📖 *Migrating to Prison: America's Obsession with Locking Up Immigrants* by César Cuauhtémoc García Hernández  
   
 * 📚 **For the U.S. political landscape and executive power:**  
-    * 😱🤡🇺🇸 [ Fear: Trump in the White House](../books/fear.md) by Bob Woodward  
+    * 😱🤡🇺🇸 [ Fear: Trump in the White House](/content/books/fear.md) by Bob Woodward  
     * 📖 *A Warning* by Anonymous (later revealed as Miles Taylor)  
-    * 👑🚫📜2️⃣0️⃣ [ On Tyranny: Twenty Lessons from the Twentieth Century](../books/on-tyranny.md) by Timothy Snyder  
+    * 👑🚫📜2️⃣0️⃣ [ On Tyranny: Twenty Lessons from the Twentieth Century](/content/books/on-tyranny.md) by Timothy Snyder  
   
 * 📚 **For civil rights and legal issues:**  
-    * 🧑🏿‍⚖️🔄 [ Just Mercy: A Story of Justice and Redemption](../books/just-mercy-a-story-of-justice-and-redemption.md) by Bryan Stevenson  
-    * 🧑🏿⛓️🙈 [ The New Jim Crow: Mass Incarceration in the Age of Colorblindness](../books/the-new-jim-crow-mass-incarceration-in-the-age-of-colorblindness.md) by Michelle Alexander
+    * 🧑🏿‍⚖️🔄 [ Just Mercy: A Story of Justice and Redemption](/content/books/just-mercy-a-story-of-justice-and-redemption.md) by Bryan Stevenson  
+    * 🧑🏿⛓️🙈 [ The New Jim Crow: Mass Incarceration in the Age of Colorblindness](/content/books/the-new-jim-crow-mass-incarceration-in-the-age-of-colorblindness.md) by Michelle Alexander

@@ -7,7 +7,7 @@ share: true
 CTA: 🚀 Embrace AI transformation.
 affiliate link: https://amzn.to/4pdj6So
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🤖📈 The AI Revolution in Project Management: Elevating Productivity with Generative AI  
 [🛒 The AI Revolution in Project Management: Elevating Productivity with Generative AI. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4pdj6So)  
   
@@ -81,11 +81,11 @@ affiliate link: https://amzn.to/4pdj6So
   
 ### ↔️ Contrasting  
 * 🏗️ Project Management Absolute Beginner's Guide by Greg Horine: 📜 Traditional foundational project management without significant AI integration.  
-* [🤔🐇🐢 Thinking, Fast and Slow](./thinking-fast-and-slow.md) by Daniel Kahneman: 🤔 Explores human decision-making biases, offering a counterpoint to AI's data-driven rationality.  
+* [🤔🐇🐢 Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md) by Daniel Kahneman: 🤔 Explores human decision-making biases, offering a counterpoint to AI's data-driven rationality.  
   
 ### 🔗 Related  
 * 🤖 Generative AI for Dummies by Seth F. van der Linden: 📚 Broader understanding of generative AI capabilities and applications.  
-* [🧑‍💻🤖 Human + Machine: Reimagining Work in the Age of AI](./human-machine-reimagining-work-in-the-age-of-ai.md) by Paul R. Daugherty and H. James Wilson: 🤝 Focuses on human-AI collaboration and augmented intelligence.  
+* [🧑‍💻🤖 Human + Machine: Reimagining Work in the Age of AI](/content/books/human-machine-reimagining-work-in-the-age-of-ai.md) by Paul R. Daugherty and H. James Wilson: 🤝 Focuses on human-AI collaboration and augmented intelligence.  
 * 📊 Data Science for Business by Foster Provost and Tom Fawcett: 🧠 Provides foundational knowledge in data analysis and machine learning relevant for interpreting AI insights.  
   
 ## 🫵 What Do You Think?  

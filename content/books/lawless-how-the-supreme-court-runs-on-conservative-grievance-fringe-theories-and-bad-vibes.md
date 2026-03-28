@@ -7,7 +7,7 @@ share: true
 CTA: 🚨 Unmask the court.
 affiliate link: https://amzn.to/45MWIc7
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🇺🇸🏛️🚫📜⚖️ Lawless: How the Supreme Court Runs on Conservative Grievance, Fringe Theories, and Bad Vibes  
 [🛒 Lawless: How the Supreme Court Runs on Conservative Grievance, Fringe Theories, and Bad Vibes. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/45MWIc7)  
   
@@ -55,14 +55,14 @@ affiliate link: https://amzn.to/45MWIc7
   
 **🎨 Creatively Related Books (Exploring Broader Themes or Contexts):**  
   
-* **[💰🤫 Dark Money: The Hidden History of the Billionaires Behind the Rise of the Radical Right](./dark-money-the-hidden-history-of-the-billionaires-behind-the-rise-of-the-radical-right.md)** by Jane Mayer  
+* **[💰🤫 Dark Money: The Hidden History of the Billionaires Behind the Rise of the Radical Right](/content/books/dark-money-the-hidden-history-of-the-billionaires-behind-the-rise-of-the-radical-right.md)** by Jane Mayer  
     * 🕵️‍♀️ While not exclusively about the judiciary, Mayer's investigative work reveals the funding networks and ideological infrastructure supporting the conservative legal movement and the appointment of conservative judges, providing important context for understanding the forces behind the Court Litman describes.  
-* **[🇺🇸📖 These Truths: A History of the United States](./these-truths-a-history-of-the-united-states.md)** by Jill Lepore  
+* **[🇺🇸📖 These Truths: A History of the United States](/content/books/these-truths-a-history-of-the-united-states.md)** by Jill Lepore  
     * 📜 A comprehensive history of the United States, Lepore's book provides a broad historical context for understanding the long-standing debates about the Constitution, the role of the judiciary, and the recurring tensions between different visions of America – issues that form the backdrop of the contemporary Court battles Litman details.  
-* **[🇺🇸📜 The Federalist Papers](./the-federalist-papers.md)** by James Madison, Alexander Hamilton, and John Jay  
+* **[🇺🇸📜 The Federalist Papers](/content/books/the-federalist-papers.md)** by James Madison, Alexander Hamilton, and John Jay  
     * 🏛️ Reading the arguments of the framers regarding the structure and powers of the U.S. government, including the judiciary, offers essential historical context for evaluating contemporary debates about the Supreme Court's role and the justices' interpretive methodologies.  
 * 🏘️ **Caste: The Origins of Our Discontents** by Isabel Wilkerson  
     * 🌍 Wilkerson's exploration of a rigid social hierarchy in the United States provides a different lens through which to view the concept of entrenched power and the systemic disadvantages faced by certain groups, offering a resonant, albeit not directly legal, parallel to Litman's discussion of a Court potentially protecting a specific minority group's interests.  
   
-## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
+## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Lawless: How the Supreme Court Runs on Conservative Grievance, Fringe Theories, and Bad Vibes. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

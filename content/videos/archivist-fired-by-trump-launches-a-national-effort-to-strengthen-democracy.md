@@ -10,7 +10,7 @@ Channel: PBS NewsHour
 tags:
 youtube: https://youtu.be/MUkmXytRW3U
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md)  
 # 🔥🚫🏛️⬆️ Archivist fired by Trump launches a national effort to strengthen democracy  
 ![Archivist fired by Trump launches a national effort to strengthen democracy](https://youtu.be/MUkmXytRW3U)  
   
@@ -29,7 +29,7 @@ youtube: https://youtu.be/MUkmXytRW3U
   
 ## 📚 Book Recommendations  
 * Educated by Tara Westover explores the power of education and the importance of critical thinking in shaping one's life.  
-* [👻🇺🇸⚔️🪽 The Soul of America: The Battle for Our Better Angels](../books/the-soul-of-america-the-battle-for-our-better-angels.md) by Jon Meacham offers a historical perspective on how past leaders have grappled with periods of national division and crisis.  
-* [🗳️🕊️🇺🇸 Democracy in America](../books/democracy-in-america.md) by Alexis de Tocqueville provides a classic, foundational analysis of American society and its civic culture, offering a contrasting historical lens.  
-* [📺💀 Amusing Ourselves to Death: Public Discourse in the Age of Show Business](../books/amusing-ourselves-to-death-public-discourse-in-the-age-of-show-business.md) by Neil Postman examines the role of media in public discourse and how it shapes our understanding of complex issues like civics.  
-* [👁️‍🗨️💰⛓️👤 The Age of Surveillance Capitalism: The Fight for a Human Future at the New Frontier of Power](../books/the-age-of-surveillance-capitalism.md) by Shoshana Zuboff presents a contrasting perspective by arguing that technology and data collection are new threats to democratic values, a topic that complements Shogan's concerns about digital records and civics education.
+* [👻🇺🇸⚔️🪽 The Soul of America: The Battle for Our Better Angels](/content/books/the-soul-of-america-the-battle-for-our-better-angels.md) by Jon Meacham offers a historical perspective on how past leaders have grappled with periods of national division and crisis.  
+* [🗳️🕊️🇺🇸 Democracy in America](/content/books/democracy-in-america.md) by Alexis de Tocqueville provides a classic, foundational analysis of American society and its civic culture, offering a contrasting historical lens.  
+* [📺💀 Amusing Ourselves to Death: Public Discourse in the Age of Show Business](/content/books/amusing-ourselves-to-death-public-discourse-in-the-age-of-show-business.md) by Neil Postman examines the role of media in public discourse and how it shapes our understanding of complex issues like civics.  
+* [👁️‍🗨️💰⛓️👤 The Age of Surveillance Capitalism: The Fight for a Human Future at the New Frontier of Power](/content/books/the-age-of-surveillance-capitalism.md) by Shoshana Zuboff presents a contrasting perspective by arguing that technology and data collection are new threats to democratic values, a topic that complements Shogan's concerns about digital records and civics education.

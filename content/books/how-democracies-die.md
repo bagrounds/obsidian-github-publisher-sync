@@ -12,7 +12,7 @@ force_analyze_links: false
 link_analysis_time: 2026-03-22T06:07:06.788Z
 link_analysis_model: gemini-3.1-flash-lite-preview
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🗳️🏛️☠️ How Democracies Die  
 [🛒 How Democracies Die. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4knY1mj)  
   
@@ -78,11 +78,11 @@ The book outlines several steps that citizens, political leaders, and institutio
 ### 📚 Further Reading  
   
 * **Best Alternate Book on the Same Topic:** *It's Even Worse Than You Think: What the Trump Administration Is Doing to America* by David Cay Johnston. 💡  
-* **Best Tangentially Related Book:** [😇🧠 The Righteous Mind: Why Good People Are Divided by Politics and Religion](./the-righteous-mind.md): Why Good People Are Divided by Politics and Religion by Jonathan Haidt.  
+* **Best Tangentially Related Book:** [😇🧠 The Righteous Mind: Why Good People Are Divided by Politics and Religion](/content/books/the-righteous-mind.md): Why Good People Are Divided by Politics and Religion by Jonathan Haidt.  
 * **Best Diametrically Opposed Book:** *The Case for Trump* by Victor Davis Hanson (Although, it's not diametrically opposed so much as argues that the measures Trump took were necessary and within appropriate boundaries). 👎  
-* **Best Fiction Book that Incorporates Related Ideas:** [🙅‍♀️👹 It Can't Happen Here](./it-cant-happen-here.md) by Sinclair Lewis. 📖  
-* **Best Book That Is More General:** [👑🚫📜2️⃣0️⃣ On Tyranny: Twenty Lessons from the Twentieth Century](./on-tyranny.md) by Timothy Snyder.  
-* **Best Book That Is More Specific:** [🇺🇸📜 The Federalist Papers](./the-federalist-papers.md) by Alexander Hamilton, James Madison, and John Jay.  
+* **Best Fiction Book that Incorporates Related Ideas:** [🙅‍♀️👹 It Can't Happen Here](/content/books/it-cant-happen-here.md) by Sinclair Lewis. 📖  
+* **Best Book That Is More General:** [👑🚫📜2️⃣0️⃣ On Tyranny: Twenty Lessons from the Twentieth Century](/content/books/on-tyranny.md) by Timothy Snyder.  
+* **Best Book That Is More Specific:** [🇺🇸📜 The Federalist Papers](/content/books/the-federalist-papers.md) by Alexander Hamilton, James Madison, and John Jay.  
 * **Best Book That Is More Rigorous:** *The Breakdown of Democratic Regimes* by Juan Linz. 🔬  
 * **Best Book That Is More Accessible:** *Are We Done Fighting?: Building Understanding in a World of Hate and Division* by Kristin Hansen. 🗣️  
   

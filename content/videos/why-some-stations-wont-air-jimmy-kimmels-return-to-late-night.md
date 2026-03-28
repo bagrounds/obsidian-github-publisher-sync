@@ -10,7 +10,7 @@ Channel: PBS NewsHour
 tags:
 youtube: https://youtu.be/6ytAI6eVmhQ
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md)  
 # 📺🚫🗣️ Why some stations won't air Jimmy Kimmel's return to late night  
 ![Why some stations won't air Jimmy Kimmel's return to late night](https://youtu.be/6ytAI6eVmhQ)  
   
@@ -33,7 +33,7 @@ youtube: https://youtu.be/6ytAI6eVmhQ
 * 🖥️ **Digital Shift:** Further study of the **growth of late-night style satire on digital platforms** like YouTube and TikTok, as referenced in the video, is critical to fully grasp the changing landscape of where satirical content will be created and consumed \[[05:28](http://www.youtube.com/watch?v=6ytAI6eVmhQ&t=328)].  
   
 ## 📚 Book Recommendations  
-* **[🏭🫡 Manufacturing Consent: The Political Economy of the Mass Media](../books/manufacturing-consent.md)** by Edward S. Herman and Noam Chomsky. 💡 This provides a framework for understanding how powerful business and governmental pressures shape the content of mass media outlets, directly relating to the leverage described in the video.  
+* **[🏭🫡 Manufacturing Consent: The Political Economy of the Mass Media](/content/books/manufacturing-consent.md)** by Edward S. Herman and Noam Chomsky. 💡 This provides a framework for understanding how powerful business and governmental pressures shape the content of mass media outlets, directly relating to the leverage described in the video.  
 * 🏛️ **Antitrust Law and Economics** by Richard Posner. ⚖️ Offers a deep dive into the legal and economic theories that empower regulatory bodies like the FTC, clarifying the mechanisms of control over licensed broadcasters.  
 * 🎙️ **The Comedians: Drunks, Theaters, and the Great Tradition of American Humor** by Kliph Nesteroff. 📜 Offers historical context on the roots and evolution of American comedy and talk shows, providing background on the traditional format that the video suggests is now in decline.  
 * 💰 **The Curse of the Mogul** by Jonathan A. Knee, Bruce C. Greenwald, and Ava Seave. 📉 Examines the destructive economics of the media business and why owners often destroy value, which is relevant to the profit-driven and often shortsighted decisions made by both the network and its affiliates.

@@ -7,7 +7,7 @@ share: true
 CTA: 🤝 Cultivate connection.
 affiliate link: https://amzn.to/47ifd8A
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🧑‍🤝‍🧑🔬 The Science of Making Friends: Helping Socially Challenged Teens and Young Adults  
 [🛒 The Science of Making Friends: Helping Socially Challenged Teens and Young Adults. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/47ifd8A)  
   
@@ -92,9 +92,9 @@ affiliate link: https://amzn.to/47ifd8A
 ## 📚 Book Recommendations  
   
 ### 👯 Similar  
-* [🫂🤝🗣️ How To Win Friends And Influence People](./how-to-win-friends-and-influence-people.md) by Dale Carnegie  
-* 🧑‍🏫 [🧑‍🤝‍🧑🗣️ The Social Skills Guidebook: Manage Shyness, Improve Your Conversations, and Make Friends, Without Giving Up Who You Are](./the-social-skills-guidebook-manage-shyness-improve-your-conversations-and-make-friends-without-giving-up-who-you-are.md) by Chris MacLeod  
-* [🧑‍🤝‍🧑 Platonic: How the Science of Attachment Can Help You Make - and Keep - Friends](./platonic-how-the-science-of-attachment-can-help-you-make-and-keep-friends.md) by Marisa G. Franco  
+* [🫂🤝🗣️ How To Win Friends And Influence People](/content/books/how-to-win-friends-and-influence-people.md) by Dale Carnegie  
+* 🧑‍🏫 [🧑‍🤝‍🧑🗣️ The Social Skills Guidebook: Manage Shyness, Improve Your Conversations, and Make Friends, Without Giving Up Who You Are](/content/books/the-social-skills-guidebook-manage-shyness-improve-your-conversations-and-make-friends-without-giving-up-who-you-are.md) by Chris MacLeod  
+* [🧑‍🤝‍🧑 Platonic: How the Science of Attachment Can Help You Make - and Keep - Friends](/content/books/platonic-how-the-science-of-attachment-can-help-you-make-and-keep-friends.md) by Marisa G. Franco  
   
 ### 🆚 Contrasting  
 * 🤫 Quiet: The Power of Introverts in a World That Can’t Stop Talking by Susan Cain (focuses on temperament rather than skill deficit)  
@@ -103,7 +103,7 @@ affiliate link: https://amzn.to/47ifd8A
 ### ➕ Related  
 * 🫂 Friendship by Lydia Denworth  
 * 🍽️ Never Eat Alone by Keith Ferrazzi  
-* [🧑‍🤝‍🧑 Belonging: The Science of Creating Connection and Bridging Divides](./belonging-the-science-of-creating-connection-and-bridging-divides.md) by Geoffrey Cohen  
+* [🧑‍🤝‍🧑 Belonging: The Science of Creating Connection and Bridging Divides](/content/books/belonging-the-science-of-creating-connection-and-bridging-divides.md) by Geoffrey Cohen  
   
 ## 🫵 What Do You Think?  
   

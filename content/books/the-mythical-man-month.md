@@ -9,7 +9,7 @@ tags:
 affiliate link: https://amzn.to/4dKRNua
 updated: 2026-03-10T06:15:35.343Z
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🦄👤🗓️ The Mythical Man-Month: Essays on Software Engineering  
 [🛒 The Mythical Man-Month: Essays on Software Engineering. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4dKRNua)  
   
@@ -45,8 +45,8 @@ updated: 2026-03-10T06:15:35.343Z
 ### 👨‍💻 Similar Reads (Software Engineering & Project Management)  
   
 * 🤝 **Peopleware: Productive Projects and Teams** by Tom DeMarco and Timothy Lister: Focuses on the sociological and human aspects of software development, arguing that management issues, not technical ones, are often the biggest hurdles.  
-* 🛠️ **[🧑‍💻📈 The Pragmatic Programmer: Your Journey to Mastery](./the-pragmatic-programmer-your-journey-to-mastery.md)** by Andrew Hunt and David Thomas: A practical guide covering a wide range of software development topics, emphasizing professionalism, craftsmanship, and continuous improvement.  
-* **[✅💻 Code Complete](./code-complete.md): A Practical Handbook of Software Construction** by Steve McConnell: A comprehensive guide to software construction techniques, bridging the gap between academic knowledge and real-world practice.  
+* 🛠️ **[🧑‍💻📈 The Pragmatic Programmer: Your Journey to Mastery](/content/books/the-pragmatic-programmer-your-journey-to-mastery.md)** by Andrew Hunt and David Thomas: A practical guide covering a wide range of software development topics, emphasizing professionalism, craftsmanship, and continuous improvement.  
+* **[✅💻 Code Complete](/content/books/code-complete.md): A Practical Handbook of Software Construction** by Steve McConnell: A comprehensive guide to software construction techniques, bridging the gap between academic knowledge and real-world practice.  
 * 🚀 **Rapid Development: Taming Wild Software Schedules** by Steve McConnell: Focuses specifically on strategies for achieving faster software development cycles while managing risks.  
 * ✨ **The Design of Design: Essays from a Computer Scientist** by Frederick P. Brooks Jr.: Brooks' later work exploring the nature of design itself, applicable beyond just software.  
   
@@ -55,19 +55,19 @@ updated: 2026-03-10T06:15:35.343Z
 * 🌱 **Extreme Programming Explained: Embrace Change** by Kent Beck: A foundational text on Extreme Programming (XP), a specific Agile methodology emphasizing adaptability, customer collaboration, and frequent releases.  
 * 🏃 **Agile Software Development with Scrum** by Ken Schwaber and Mike Beedle: Introduces the Scrum framework, another popular Agile approach focused on iterative development, self-organizing teams, and managing empirical processes.  
 * 🍃 **Lean Software Development: An Agile Toolkit** by Mary and Tom Poppendieck: Applies Lean manufacturing principles to software development, focusing on eliminating waste, amplifying learning, and delivering fast.  
-* 🎭 **[The Phoenix Project](./the-phoenix-project.md): A Novel About IT, DevOps, and Helping Your Business Win** by Gene Kim, Kevin Behr, and George Spafford: A fictional narrative illustrating DevOps principles and how IT constraints impact business, offering a modern perspective on flow and collaboration.  
+* 🎭 **[The Phoenix Project](/content/books/the-phoenix-project.md): A Novel About IT, DevOps, and Helping Your Business Win** by Gene Kim, Kevin Behr, and George Spafford: A fictional narrative illustrating DevOps principles and how IT constraints impact business, offering a modern perspective on flow and collaboration.  
 * 🌐 **Being Agile in a Waterfall World: A practical guide for complex organizations** by Joseph Flahiff: Explores how to apply agile principles within more traditional, potentially resistant organizational structures. 🌊 Books specifically comparing Agile and Waterfall include works like "Knowledge Driven Development Bridging Waterfall and Agile Methodologies" and analyses found in academic papers or chapters like O'Reilly's "Agile, Waterfall, and the Key to Modern Project Management".  
   
 ### 🧠 Creatively Related (Complexity, Systems, Human Factors)  
   
-* 🌍 **[Thinking in Systems](./thinking-in-systems.md): A Primer** by Donella H. Meadows: An accessible introduction to systems thinking, exploring how feedback loops, stocks, and flows drive the behavior of complex systems.  
-* 🎓 **[The Fifth Discipline](./the-fifth-discipline.md): The Art & Practice of The Learning Organization** by Peter Senge: Explores systems thinking as one of five disciplines crucial for building organizations capable of continuous learning and adaptation.  
-* 🌀 **[Complexity](./complexity.md): A Guided Tour** by Melanie Mitchell: Provides an overview of complexity science, covering topics like chaos, networks, and emergence that resonate with the challenges of large-scale projects.  
-* 📱 **[The Design of Everyday Things](./the-design-of-everyday-things.md)** by Don Norman: While focused on product design, its principles of usability, discoverability, and managing complexity are relevant to software design and user experience.  
+* 🌍 **[Thinking in Systems](/content/books/thinking-in-systems.md): A Primer** by Donella H. Meadows: An accessible introduction to systems thinking, exploring how feedback loops, stocks, and flows drive the behavior of complex systems.  
+* 🎓 **[The Fifth Discipline](/content/books/the-fifth-discipline.md): The Art & Practice of The Learning Organization** by Peter Senge: Explores systems thinking as one of five disciplines crucial for building organizations capable of continuous learning and adaptation.  
+* 🌀 **[Complexity](/content/books/complexity.md): A Guided Tour** by Melanie Mitchell: Provides an overview of complexity science, covering topics like chaos, networks, and emergence that resonate with the challenges of large-scale projects.  
+* 📱 **[The Design of Everyday Things](/content/books/the-design-of-everyday-things.md)** by Don Norman: While focused on product design, its principles of usability, discoverability, and managing complexity are relevant to software design and user experience.  
 * 🐜 **Emergence: The Connected Lives of Ants, Brains, Cities, and Software** by Steven Johnson: Explores how complex behaviors arise from simple, local interactions in various systems, including software.  
 * 🤝 **Systems Thinking: Managing Chaos and Complexity** by Jamshid Gharajedaghi: Connects systems thinking, design thinking, and management for executives dealing with complex organizational challenges.  
   
-## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
+## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on The Mythical Man-Month. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.  
   
 ## 🦋 Bluesky    

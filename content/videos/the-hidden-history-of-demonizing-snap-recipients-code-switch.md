@@ -10,7 +10,7 @@ Channel: NPR Podcasts
 tags:
 youtube: https://youtu.be/7F6fzkAgzqc
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md)  
 # 👿🏷️📉 The hidden history of demonizing SNAP recipients | Code Switch  
 ![The hidden history of demonizing SNAP recipients | Code Switch](https://youtu.be/7F6fzkAgzqc)  
   
@@ -83,11 +83,11 @@ youtube: https://youtu.be/7F6fzkAgzqc
   
 ### 🎨 Creatively Related  
   
-  * [🏚️💰 Evicted: Poverty and Profit in the American City](../books/evicted-poverty-and-profit-in-the-american-city.md) by Matthew Desmond  
+  * [🏚️💰 Evicted: Poverty and Profit in the American City](/content/books/evicted-poverty-and-profit-in-the-american-city.md) by Matthew Desmond  
       * *📚* This book examines the cycle of poverty through the lens of housing insecurity and eviction in modern America, illustrating the material consequences of lost income support and the stability welfare once provided.  
   * 📖 White Trash: The 400-Year Untold History of Class in America by Nancy Isenberg  
       * *📚* This historical work provides a deep dive into the concept of the undeserving poor in American history, revealing that the shaming of welfare recipients is part of a long-standing national tradition of classism and eugenics.  
-  * [🧑🏿⛓️🙈 The New Jim Crow: Mass Incarceration in the Age of Colorblindness](../books/the-new-jim-crow-mass-incarceration-in-the-age-of-colorblindness.md) by Michelle Alexander  
+  * [🧑🏿⛓️🙈 The New Jim Crow: Mass Incarceration in the Age of Colorblindness](/content/books/the-new-jim-crow-mass-incarceration-in-the-age-of-colorblindness.md) by Michelle Alexander  
       * *📚* This book relates tangentially by exploring how a new system of racial caste was created in the U.S. through the criminal justice system, paralleling the video's theme of how policies, though colorblind on the surface, were rooted in racialized suspicion and fear.  
   
 ## 🐦 Tweet  

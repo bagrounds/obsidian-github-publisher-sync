@@ -10,7 +10,7 @@ Channel: PBS NewsHour
 tags:
 youtube: https://youtu.be/FccHCNEddvM
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md)  
 # 📰🕒❓ With government jobs report delayed, what other data reveals about the economy  
 ![With government jobs report delayed, what other data reveals about the economy](https://youtu.be/FccHCNEddvM)  
   
@@ -56,11 +56,11 @@ youtube: https://youtu.be/FccHCNEddvM
   
 ### 🆚 Contrasting  
 * 🏛️ The Wealth of Nations by Adam Smith. This classic text lays the fundamental groundwork for free-market economics, offering a traditional perspective on the role of labor and market mechanics against which modern critiques can be weighed.  
-* [🤖📈 The Second Machine Age: Work, Progress, and Prosperity in a Time of Brilliant Technologies](../books/the-second-machine-age-work-progress-and-prosperity-in-a-time-of-brilliant-technologies.md) by Erik Brynjolfsson and Andrew McAfee. This book details the transformative power of technology and Artificial Intelligence to create new economic growth and productivity, presenting an optimistic view that contrasts with the video's focus on AI-related job cuts.  
+* [🤖📈 The Second Machine Age: Work, Progress, and Prosperity in a Time of Brilliant Technologies](/content/books/the-second-machine-age-work-progress-and-prosperity-in-a-time-of-brilliant-technologies.md) by Erik Brynjolfsson and Andrew McAfee. This book details the transformative power of technology and Artificial Intelligence to create new economic growth and productivity, presenting an optimistic view that contrasts with the video's focus on AI-related job cuts.  
   
 ### 🎨 Creatively Related  
-* [📊🤥 How to Lie with Statistics](../books/how-to-lie-with-statistics.md) by Darrell Huff. A foundational guide on the manipulation and misinterpretation of data, which is highly relevant to the video's discussion about how different calculation methods create wildly divergent unemployment statistics.  
-* [🤔🐇🐢 Thinking, Fast and Slow](../books/thinking-fast-and-slow.md) by Daniel Kahneman. This book explains the dual processes of human thought, offering insight into why simple, headline statistics (like the U-3 rate) are often more influential with the public and policymakers than complex, detailed metrics.  
+* [📊🤥 How to Lie with Statistics](/content/books/how-to-lie-with-statistics.md) by Darrell Huff. A foundational guide on the manipulation and misinterpretation of data, which is highly relevant to the video's discussion about how different calculation methods create wildly divergent unemployment statistics.  
+* [🤔🐇🐢 Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md) by Daniel Kahneman. This book explains the dual processes of human thought, offering insight into why simple, headline statistics (like the U-3 rate) are often more influential with the public and policymakers than complex, detailed metrics.  
   
 ## 🐦 Tweet  
 <blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">📰🕒❓ With government jobs report delayed, what other data reveals about the economy<br><br>📉 Unemployment | 🏢 Labor Statistics | 🤖 Artificial Intelligence | 💼 Gig Economy | 💵 Wages | 🏛️ Government Shutdown<a href="https://twitter.com/NewsHour?ref_src=twsrc%5Etfw">@NewsHour</a><a href="https://t.co/d09ONJeHSk">https://t.co/d09ONJeHSk</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/1987354417419723262?ref_src=twsrc%5Etfw">November 9, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

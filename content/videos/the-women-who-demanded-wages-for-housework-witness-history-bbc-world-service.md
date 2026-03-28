@@ -10,7 +10,7 @@ Channel: BBC World Service
 tags:
 youtube: https://youtu.be/devUpxx3EAA
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md)  
 # 🏠👩‍👧‍👦💸💰 The women who demanded wages for housework - Witness History, BBC World Service  
 ![The women who demanded wages for housework - Witness History, BBC World Service](https://youtu.be/devUpxx3EAA)  
   
@@ -50,7 +50,7 @@ youtube: https://youtu.be/devUpxx3EAA
 ### ↔️ Similar  
   
 * 🧹 Wages Against Housework by Silvia Federici explains why domestic labor is the pillar of capitalist production.  
-* [♂️💰♀️🚩 Patriarchy of the Wage: Notes on Marx, Gender, and Feminism](../books/patriarchy-of-the-wage-notes-on-marx-gender-and-feminism.md) by Silvia Federici analyzes how the male wage was designed to subordinate women's domestic work.  
+* [♂️💰♀️🚩 Patriarchy of the Wage: Notes on Marx, Gender, and Feminism](/content/books/patriarchy-of-the-wage-notes-on-marx-gender-and-feminism.md) by Silvia Federici analyzes how the male wage was designed to subordinate women's domestic work.  
   
 ### 🆚 Contrasting  
   

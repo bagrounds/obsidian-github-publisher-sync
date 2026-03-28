@@ -10,7 +10,7 @@ Channel: PBS NewsHour
 tags:
 youtube: https://youtu.be/OEolbCWYVLY
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md)  
 # 📢👮‍♂️🇺🇸 News Wrap: Trump orders troops to Portland, authorizing ‘full force’  
 ![News Wrap: Trump orders troops to Portland, authorizing ‘full force’](https://youtu.be/OEolbCWYVLY)  
   
@@ -37,7 +37,7 @@ youtube: https://youtu.be/OEolbCWYVLY
 * 🕊️ A deeper dive into the **humanitarian crisis** for the nearly 60 people killed and the thousands of Palestinians trying to flee Gaza City could provide essential context for the conflict's human cost.  
   
 ## 📚 Book Recommendations  
-* **[📚🧠 The New York Times Guide to Essential Knowledge: A Desk Reference for the Curious Mind](../books/the-new-york-times-guide-to-essential-knowledge-a-desk-reference-for-the-curious-mind.md)** 🧐 offers a factual reference for major global issues and historical contexts, useful for understanding the long-term conflicts reported in the news wrap.  
-* **[🇺🇸📜 The Federalist Papers](../books/the-federalist-papers.md)** 🗽 provides foundational arguments for the U.S. Constitution and the balance of federal and state powers, relevant to the debate over deploying federal troops in a state.  
+* **[📚🧠 The New York Times Guide to Essential Knowledge: A Desk Reference for the Curious Mind](/content/books/the-new-york-times-guide-to-essential-knowledge-a-desk-reference-for-the-curious-mind.md)** 🧐 offers a factual reference for major global issues and historical contexts, useful for understanding the long-term conflicts reported in the news wrap.  
+* **[🇺🇸📜 The Federalist Papers](/content/books/the-federalist-papers.md)** 🗽 provides foundational arguments for the U.S. Constitution and the balance of federal and state powers, relevant to the debate over deploying federal troops in a state.  
 * 📚 **A Rule of Law** 💼 explores the legal framework of immigration and citizenship, offering a scholarly counterpoint to the political claims of "unqualified people."  
 * 🥚 **Motherhood on Ice** 🔬 covers the social, ethical, and biological implications of egg freezing, connecting to a related segment teased for later in the news broadcast.

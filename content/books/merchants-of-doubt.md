@@ -7,7 +7,7 @@ share: true
 affiliate link: https://amzn.to/4nhy88L
 CTA: 🤫 Uncover deception.
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 💰🤥 Merchants of Doubt  
 [🛒 Merchants of Doubt. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4nhy88L)  
   
@@ -48,7 +48,7 @@ The overarching strategy involved:
 * 🧪 **Doubt is Their Product: How Industry's Assault on Science Threatens Your Health** by David Michaels. 👨‍🔬 This book offers a contemporary look at how industries manufacture uncertainty about scientific findings to avoid regulation, 🧱 building on similar themes to Merchants of Doubt.  
 * 🇺🇸 **The Republican War on Science** by Chris Mooney. 🏛️ Mooney explores the political suppression and distortion of scientific research, particularly within government agencies, 🤝 aligning with Merchants of Doubt's critique of ideological interference in science.  
 * 💰 **The Triumph of Doubt: Dark Money and the Science of Deception** by David Michaels. 🧪 A follow-up to his earlier work, this book continues to examine how doubt is systematically manufactured by corporate interests to evade accountability on issues ranging from climate change to opioids and concussions.  
-* **[🎭🤫 Active Measures: The Secret History of Disinformation and Political Warfare](./active-measures-the-secret-history-of-disinformation-and-political-warfare.md)** by Thomas Rid. 🌐 While broader in scope, focusing on state-sponsored disinformation, this book provides a historical and analytical framework for understanding the tactics of deception, which resonates with the "doubt-mongering" strategies in Merchants of Doubt.  
+* **[🎭🤫 Active Measures: The Secret History of Disinformation and Political Warfare](/content/books/active-measures-the-secret-history-of-disinformation-and-political-warfare.md)** by Thomas Rid. 🌐 While broader in scope, focusing on state-sponsored disinformation, this book provides a historical and analytical framework for understanding the tactics of deception, which resonates with the "doubt-mongering" strategies in Merchants of Doubt.  
   
 ### ⚖️ Contrasting Books  
   
@@ -61,7 +61,7 @@ The overarching strategy involved:
 * 📣 **Propaganda** by Edward Bernays. 🗣️ This foundational text in public relations, written by the "father of public relations," details the mechanisms by which public opinion can be shaped and controlled. 😈 It offers a chillingly relevant framework for understanding the deeper historical and psychological roots of the communication strategies employed by the "merchants of doubt."  
 * 🤔 **Why People Believe Weird Things: Pseudoscience, Superstition, and Other Confusions of Our Time** by Michael Shermer. 🤯 This book delves into the psychology of belief and skepticism, exploring why individuals are susceptible to irrational claims and how critical thinking can combat misinformation. 👁️ It provides a valuable lens for understanding the public's receptivity to the doubt-mongering tactics described in Merchants of Doubt.  
 * 💩 **Calling Bullshit: The Art of Skepticism in a Data-Driven World** by Carl T. Bergstrom and Jevin D. West. 🛠️ This book provides a practical guide to identifying and debunking misleading information in the age of big data. 🧐 It equips readers with tools to critically evaluate claims, a skill directly relevant to counteracting the tactics used by the "merchants of doubt."  
-* **[👁️‍🗨️💰⛓️👤 The Age of Surveillance Capitalism: The Fight for a Human Future at the New Frontier of Power](./the-age-of-surveillance-capitalism.md)** by Shoshana Zuboff. 👁️ While focused on the digital economy, this book explores how powerful entities manipulate information and human behavior for profit, often by undermining individual autonomy and public discourse. 🕸️ This broader theme of informational control and manipulation provides a creative parallel to the scientific disinformation campaigns discussed in Merchants of Doubt.".  
+* **[👁️‍🗨️💰⛓️👤 The Age of Surveillance Capitalism: The Fight for a Human Future at the New Frontier of Power](/content/books/the-age-of-surveillance-capitalism.md)** by Shoshana Zuboff. 👁️ While focused on the digital economy, this book explores how powerful entities manipulate information and human behavior for profit, often by undermining individual autonomy and public discourse. 🕸️ This broader theme of informational control and manipulation provides a creative parallel to the scientific disinformation campaigns discussed in Merchants of Doubt.".  
   
 ## 💬 [Gemini](https://gemini.google.com) Prompt (gemini-2.5-flash)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by similar, contrasting, and creatively related book recommendations on Merchants of Doubt. Never quote or italicize titles. Be thorough but concise. Use section headings and bulleted lists to avoid long blocks of text.

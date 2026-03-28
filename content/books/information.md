@@ -9,7 +9,7 @@ tags:
 affiliate link: https://amzn.to/4jwu95Q
 CTA: 💡 Explore knowledge.
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # ℹ️ Information: A Very Short Introduction  
 [🛒 Information: A Very Short Introduction. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4jwu95Q)  
   
@@ -61,20 +61,20 @@ CTA: 💡 Explore knowledge.
   
 ### ⚠️ Contrasting Perspectives (Critical Views on Information/Technology)  
   
-* **[📱🧠 The Shallows: What the Internet Is Doing to Our Brains](./the-shallows-what-the-internet-is-doing-to-our-brains.md)** by Nicholas Carr: Argues that the constant connectivity and information flow of the internet are negatively impacting our cognitive abilities, particularly deep thinking and concentration.  
-* **[📺💀 Amusing Ourselves to Death: Public Discourse in the Age of Show Business](./amusing-ourselves-to-death-public-discourse-in-the-age-of-show-business.md)** by Neil Postman: A pre-internet critique arguing that television as a medium degrades public discourse by prioritizing entertainment over substance – arguments that many find relevant to the internet age.  
+* **[📱🧠 The Shallows: What the Internet Is Doing to Our Brains](/content/books/the-shallows-what-the-internet-is-doing-to-our-brains.md)** by Nicholas Carr: Argues that the constant connectivity and information flow of the internet are negatively impacting our cognitive abilities, particularly deep thinking and concentration.  
+* **[📺💀 Amusing Ourselves to Death: Public Discourse in the Age of Show Business](/content/books/amusing-ourselves-to-death-public-discourse-in-the-age-of-show-business.md)** by Neil Postman: A pre-internet critique arguing that television as a medium degrades public discourse by prioritizing entertainment over substance – arguments that many find relevant to the internet age.  
 * 📖 **Technopoly: The Surrender of Culture to Technology** by Neil Postman: Expands on his critique, arguing that technology subtly reshapes culture and values, often in undesirable ways.  
 * 📖 **The Cult of the Amateur: How Today's Internet is Killing Our Culture** by Andrew Keen: A polemical critique arguing that user-generated content and the decline of traditional gatekeepers are eroding cultural standards and expertise.  
 * 📖 **The Future of Reputation: Gossip, Rumor, and Privacy on the Internet** by Daniel Solove: Focuses specifically on the challenges to privacy and reputation management in the digital age.  
   
 ### 🎨 Creatively Related Books (Broader Themes, Tangential Connections)  
   
-* 📖 **[Gödel, Escher, Bach: An Eternal Golden Braid](./godel-escher-bach.md)** by Douglas Hofstadter: A Pulitzer Prize-winning exploration of consciousness, self-reference, and intelligence through analogies drawn from mathematics (Gödel), art (Escher), and music (Bach). Connects deeply to themes of representation and systems.  
-* 📖 **[Sapiens: A Brief History of Humankind](./sapiens-a-brief-history-of-humankind.md)** by Yuval Noah Harari: Discusses the crucial role of shared fictions, language, and information processing (like writing and money) in human cooperation and dominance.  
-* 📖 **[Thinking, Fast and Slow](./thinking-fast-and-slow.md)** by Daniel Kahneman: Explores the cognitive biases and heuristics that shape how humans process information and make decisions.  
+* 📖 **[Gödel, Escher, Bach: An Eternal Golden Braid](/content/books/godel-escher-bach.md)** by Douglas Hofstadter: A Pulitzer Prize-winning exploration of consciousness, self-reference, and intelligence through analogies drawn from mathematics (Gödel), art (Escher), and music (Bach). Connects deeply to themes of representation and systems.  
+* 📖 **[Sapiens: A Brief History of Humankind](/content/books/sapiens-a-brief-history-of-humankind.md)** by Yuval Noah Harari: Discusses the crucial role of shared fictions, language, and information processing (like writing and money) in human cooperation and dominance.  
+* 📖 **[Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md)** by Daniel Kahneman: Explores the cognitive biases and heuristics that shape how humans process information and make decisions.  
 * 📖 **Understanding Media: The Extensions of Man** by Marshall McLuhan: The seminal work introducing the idea that "the medium is the message," arguing that the technology of communication itself, rather than just the content, shapes society and perception.  
 * 📖 **The Master Algorithm** by Pedro Domingos: Explores the quest within machine learning for a single, universal algorithm capable of learning anything from data – a specific application of information processing.  
 * 📖 **Why Information Grows: The Evolution of Order, from Atoms to Economies** by Cesar A. Hidalgo: Presents a perspective connecting the growth of information to physical embodiment and economic complexity.  
   
-## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
+## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Information A Very Short Introduction. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

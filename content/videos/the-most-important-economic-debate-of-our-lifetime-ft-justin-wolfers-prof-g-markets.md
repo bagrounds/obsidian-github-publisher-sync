@@ -10,7 +10,7 @@ Channel: The Prof G Pod – Scott Galloway
 tags:
 youtube: https://youtu.be/EklEzXBQP9U
 ---
-[Home](../index.md) > [Videos](./index.md) | [👨‍🏫📈💻 Scott Galloway](../people/scott-galloway.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md) | [👨‍🏫📈💻 Scott Galloway](/content/people/scott-galloway.md)  
 # 💰🤔⚖️ The Most Important Economic Debate of our Lifetime — ft. Justin Wolfers | Prof G Markets  
 ![The Most Important Economic Debate of our Lifetime — ft. Justin Wolfers | Prof G Markets](https://youtu.be/EklEzXBQP9U)  
   
@@ -59,7 +59,7 @@ youtube: https://youtu.be/EklEzXBQP9U
   
 * *The Age of Crisis: Central Banks and the Failure of Liberalism* by Paul Volcker and Christine Harper  
     * 📘 A memoir providing a detailed account of the Federal Reserve's battle against the crippling stagflation of the 1970s, which the video uses as a historical parallel to warn of current risks.  
-* [🌍🏛️ The Great Transformation: The Political and Economic Origins of Our Time](../books/the-great-transformation-the-political-and-economic-origins-of-our-time.md) by Karl Polanyi  
+* [🌍🏛️ The Great Transformation: The Political and Economic Origins of Our Time](/content/books/the-great-transformation-the-political-and-economic-origins-of-our-time.md) by Karl Polanyi  
     * 🌍 A foundational work exploring the inherent tension between the relentless expansion of free markets and the necessary social protection required to prevent widespread human and economic devastation.  
   
 ### 🆚 Contrasting  
@@ -71,7 +71,7 @@ youtube: https://youtu.be/EklEzXBQP9U
   
 ### 🎨 Creatively Related  
   
-* [🍇😡 The Grapes of Wrath](../books/the-grapes-of-wrath.md) by John Steinbeck  
+* [🍇😡 The Grapes of Wrath](/content/books/the-grapes-of-wrath.md) by John Steinbeck  
     * 🚜 A classic novel that powerfully illustrates the human and social cost of technological and economic displacement (the Dust Bowl and mechanized farming), relating directly to the fear of a robot-displaced working class.  
-* [🤖📝😇 The Utopia of Rules: On Technology, Stupidity, and the Secret Joys of Bureaucracy](../books/the-utopia-of-rules-on-technology-stupidity-and-the-secret-joys-of-bureaucracy.md) by David Graeber  
+* [🤖📝😇 The Utopia of Rules: On Technology, Stupidity, and the Secret Joys of Bureaucracy](/content/books/the-utopia-of-rules-on-technology-stupidity-and-the-secret-joys-of-bureaucracy.md) by David Graeber  
     * 📝 A critique of how modern technology often results in increased bureaucracy and inefficiency rather than liberation, connecting tangentially to the discussion of political distraction and the **competence shock** in economic administration.

@@ -4,7 +4,7 @@ title: 📄👔 My Resume
 aliases:
   - 📄👔 My Resume
 ---
-[Home](../index.md) > [Topics](./index.md)  
+[Home](/content/index.md) > [Topics](/content/topics/index.md)  
 # 📄👔 My Resume  
 📄 [My resume as a PDF](https://bagrounds.org/resume.pdf)  
 🌐 [My resume as a web page](https://bagrounds.gitlab.io/resume)  

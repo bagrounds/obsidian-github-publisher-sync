@@ -6,7 +6,7 @@ URL: https://bagrounds.org/books/siege-trump-under-fire
 share: true
 affiliate link: https://amzn.to/4ej4PPG
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🛡️🌪️🇷🇺🔥 Siege: Trump Under Fire  
 [🛒 Siege: Trump Under Fire. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4ej4PPG)  
   
@@ -43,11 +43,11 @@ Wolff employs a narrative style ✍️ based on numerous interviews 🗣️ and 
   
 ### 📑 Similar Books (Inside the Trump Administration & Political Turmoil)  
   
-* **[🔥💣💥😡🤬 Fire and Fury: Inside the Trump White House](./fire-and-fury-inside-the-trump-white-house.md) by Michael Wolff:** The essential precursor 🏃 to "💥 Siege," covering the chaotic first year 🗓️ of the Trump presidency.  
-* **[😱🤡🇺🇸 Fear: Trump in the White House](./fear.md) by Bob Woodward:** Another prominent insider account 👤 of the Trump administration 🏛️, known for its detailed sourcing ℹ️ and focus on the decision-making process ⚙️ and the anxieties 😟 of those around the president.  
-* **[🤡🫨😭🤬😵‍💫🤥👹🇺🇸 A Very Stable Genius: Donald J. Trump's Testing of America](./a-very-stable-genius-donald-j-trumps-testing-of-america.md) by Philip Rucker and Carol Leonnig:** Written by Pulitzer Prize-winning Washington Post reporters 📰, this book covers Trump's time in office with a focus on his conflicts 😡 with advisors and institutions.  
+* **[🔥💣💥😡🤬 Fire and Fury: Inside the Trump White House](/content/books/fire-and-fury-inside-the-trump-white-house.md) by Michael Wolff:** The essential precursor 🏃 to "💥 Siege," covering the chaotic first year 🗓️ of the Trump presidency.  
+* **[😱🤡🇺🇸 Fear: Trump in the White House](/content/books/fear.md) by Bob Woodward:** Another prominent insider account 👤 of the Trump administration 🏛️, known for its detailed sourcing ℹ️ and focus on the decision-making process ⚙️ and the anxieties 😟 of those around the president.  
+* **[🤡🫨😭🤬😵‍💫🤥👹🇺🇸 A Very Stable Genius: Donald J. Trump's Testing of America](/content/books/a-very-stable-genius-donald-j-trumps-testing-of-america.md) by Philip Rucker and Carol Leonnig:** Written by Pulitzer Prize-winning Washington Post reporters 📰, this book covers Trump's time in office with a focus on his conflicts 😡 with advisors and institutions.  
 * ➗ **The Divider: Trump in the White House, 2017-2021 by Peter Baker and Susan Glasser:** Provides a comprehensive history 📜 of the entire Trump presidency, detailing the conflicts 😡 and political forces at play.  
-* **[🍊🤡🤥👹💥🏛️🇺🇸 I Alone Can Fix It: Donald J. Trump's Catastrophic Final Year](./i-alone-can-fix-it-donald-j-trumps-catastrophic-final-year.md) by Carol Leonnig and Philip Rucker:** Focuses specifically on the turbulent final year 🗓️ of the Trump presidency, including the response to the pandemic 🦠 and the challenges ⚔️ to the 2020 election results 🗳️.  
+* **[🍊🤡🤥👹💥🏛️🇺🇸 I Alone Can Fix It: Donald J. Trump's Catastrophic Final Year](/content/books/i-alone-can-fix-it-donald-j-trumps-catastrophic-final-year.md) by Carol Leonnig and Philip Rucker:** Focuses specifically on the turbulent final year 🗓️ of the Trump presidency, including the response to the pandemic 🦠 and the challenges ⚔️ to the 2020 election results 🗳️.  
 * 💔 **Betrayal: The Final Act of the Trump Show by Jonathan Karl:** Explores the end 🔚 of the Trump presidency and the events surrounding the January 6th Capitol attack 💥.  
 * 🚨 **The Threat: How the FBI Averted Disaster by Andrew McCabe:** An account 👤 from the former Deputy Director of the FBI, offering a perspective 👀 on the investigations into the Trump campaign and administration from a law enforcement 👮 standpoint.  
   
@@ -61,13 +61,13 @@ Wolff employs a narrative style ✍️ based on numerous interviews 🗣️ and 
   
 ### 🎭 Creatively Related Books (Themes of Power, Chaos, and Political Intrigue)  
   
-* **[👑🚫📜2️⃣0️⃣ On Tyranny: Twenty Lessons from the Twentieth Century](./on-tyranny.md) by Timothy Snyder:** This slim volume draws lessons from 20th-century history 🏛️ about the rise of authoritarianism 👑, offering a broader historical and philosophical framework 🧠 through which to consider the events and behaviors described in "💥 Siege."  
+* **[👑🚫📜2️⃣0️⃣ On Tyranny: Twenty Lessons from the Twentieth Century](/content/books/on-tyranny.md) by Timothy Snyder:** This slim volume draws lessons from 20th-century history 🏛️ about the rise of authoritarianism 👑, offering a broader historical and philosophical framework 🧠 through which to consider the events and behaviors described in "💥 Siege."  
 * 🇷🇺 **Surviving Autocracy by Masha Gessen:** Connects observations 👀 about events in Russia 🇷🇺 to trends seen in the United States 🇺🇸, providing a comparative perspective ⚖️ on the erosion of democratic norms and institutions relevant to the concerns raised in "💥 Siege."  
 * 👑 **The Prince by Niccolò Machiavelli:** A classic treatise 📜 on political power 💪, leadership 👑, and the acquisition and maintenance of authority. While written centuries ago 🗓️, its observations 👀 on political maneuvering 🎭, loyalty ❤️, and the use of power can offer a conceptual parallel 👯 to the dynamics described in Wolff's account.  
 * 🃏 **House of Cards by Michael Dobbs:** A fictional political thriller 😱 about ambition, manipulation 🎭, and power struggles 💪 within the British government 🏛️. This novel 📖, and the subsequent adaptations, offer a dramatic, fictionalized exploration 🗺️ of themes of political ruthlessness 😈 and intrigue present in non-fiction accounts of tumultuous administrations.  
 * ⛓️ **The Gulag Archipelago by Aleksandr Solzhenitsyn:** While a vastly different subject matter 😨, Solzhenitsyn's monumental work ✍️ on the Soviet forced labor camps ⛓️ explores themes of power 💪, the state versus the individual 👤, and the breakdown of justice ⚖️, providing a profound 😔, albeit somber, contrast 😮 to the political dysfunction in "💥 Siege."  
 * 🧘 **Active Hope: How to Face the Mess We're in Without Going Crazy by Joanna Macy and Chris Johnstone:** Offers a psychological and spiritual guide 🧘 to facing challenging global situations 🌍, such as political turmoil 🌪️ or environmental crises 🌳, providing tools 🛠️ for maintaining resilience 💪 and engaging constructively 👍, which can be a useful counterpoint 🔄 to the potentially dispiriting events in "💥 Siege."  
-* **[🏛️🛡️ Democracy or Else: How to Save America in 10 Easy Steps](./democracy-or-else.md) by Jon Favreau et al.:** Written by former Obama White House staffers and hosts of the "Pod Save America" podcast 🎙️, this book offers a call to action 📣 and practical steps 👍 for engaging in politics and strengthening democracy 🏛️, providing a forward-looking 👀 and activist perspective in contrast to the observational nature of "💥 Siege.".  
+* **[🏛️🛡️ Democracy or Else: How to Save America in 10 Easy Steps](/content/books/democracy-or-else.md) by Jon Favreau et al.:** Written by former Obama White House staffers and hosts of the "Pod Save America" podcast 🎙️, this book offers a call to action 📣 and practical steps 👍 for engaging in politics and strengthening democracy 🏛️, providing a forward-looking 👀 and activist perspective in contrast to the observational nature of "💥 Siege.".  
   
-## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
+## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Siege: Trump Under Fire. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

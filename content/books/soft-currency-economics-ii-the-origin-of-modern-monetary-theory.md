@@ -9,7 +9,7 @@ CTA: 💡 Understand money.
 tags:
   - MMT
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 💵🏛️📈 Soft Currency Economics II: The Origin of Modern Monetary Theory  
 [🛒 Soft Currency Economics II: The Origin of Modern Monetary Theory. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4qz8KOa)  
   
@@ -75,9 +75,9 @@ tags:
 ## 📚 Book Recommendations  
   
 ### 📖 Similar  
-* [💰📉➡️📈🗳️ The Deficit Myth: Modern Monetary Theory and the Birth of the People's Economy](./the-deficit-myth.md) by Stephanie Kelton  
-* [💸😇 The 7 Deadly Innocent Frauds of Economic Policy](./the-7-deadly-innocent-frauds-of-economic-policy.md) by Warren Mosler  
-* [💰📈🤔 Understanding Modern Money](./understanding-modern-money.md): The Key to Full Employment and Price Stability by L. Randall Wray  
+* [💰📉➡️📈🗳️ The Deficit Myth: Modern Monetary Theory and the Birth of the People's Economy](/content/books/the-deficit-myth.md) by Stephanie Kelton  
+* [💸😇 The 7 Deadly Innocent Frauds of Economic Policy](/content/books/the-7-deadly-innocent-frauds-of-economic-policy.md) by Warren Mosler  
+* [💰📈🤔 Understanding Modern Money](/content/books/understanding-modern-money.md): The Key to Full Employment and Price Stability by L. Randall Wray  
   
 ### 📖 Contrasting  
 * The Road to Serfdom by F.A. Hayek  
@@ -85,9 +85,9 @@ tags:
 * When Money Dies: The Nightmare of Hyperinflation in Weimar Germany by Adam Fergusson  
   
 ### 📖 Related  
-* [🏛️💰 Debt: The First 5,000 Years](./debt-the-first-5000-years.md) by David Graeber  
-* [🧑‍💼🏦💸 The General Theory of Employment, Interest, and Money](./the-general-theory-of-employment-interest-and-money.md) by John Maynard Keynes  
-* [💰📈🌍⏳ Capital in the Twenty-First Century](./capital-in-the-twenty-first-century.md) by Thomas Piketty  
+* [🏛️💰 Debt: The First 5,000 Years](/content/books/debt-the-first-5000-years.md) by David Graeber  
+* [🧑‍💼🏦💸 The General Theory of Employment, Interest, and Money](/content/books/the-general-theory-of-employment-interest-and-money.md) by John Maynard Keynes  
+* [💰📈🌍⏳ Capital in the Twenty-First Century](/content/books/capital-in-the-twenty-first-century.md) by Thomas Piketty  
   
 ## 🫵 What Do You Think?  
 🤔 Considering the operational realities of fiat currency systems, do you believe governments should prioritize full employment through direct spending, or remain primarily concerned with balancing budgets? ❓ How do MMT's insights alter your perception of national debt, and what potential risks do you see in its proposed policy applications?

@@ -7,7 +7,7 @@ URL: https://bagrounds.org/articles/an-approach-to-building-with-ai
 Author:
 tags:
 ---
-[Home](../index.md) > [Articles](./index.md)  
+[Home](/content/index.md) > [Articles](/content/articles/index.md)  
 # [🤖🧱🏗️🧠 An Approach to Building with AI](https://github.com/ajelinek/vibe-rules)  
 ## 🤖 AI Summary  
 * ⚙️ The process begins with an initial idea and research phase 📝 using Google's Gemini models to create a project summary and perform market analysis.  
@@ -29,8 +29,8 @@ The Vibe-Rules approach ⚖️ is a meticulous framework that prioritizes human 
 * ⏱️ A direct comparison of development velocity with a more traditional or less-structured AI-assisted method.  
   
 ## 📚 Book Recommendations  
-* [🧼💾 Clean Code: A Handbook of Agile Software Craftsmanship](../books/clean-code.md) by Robert C. Martin: This book 📖 is similar in its emphasis on writing maintainable, readable, and well-structured code, which is a key outcome of the Vibe-Rules method.  
-* [🦄👤🗓️ The Mythical Man-Month: Essays on Software Engineering](../books/the-mythical-man-month.md) by Frederick Brooks Jr.: This classic explores the challenges of software project management, offering a contrasting perspective on why adding more people to a late project often makes it later. ⏱️ It provides context for the strategic, human-centric focus of Vibe-Rules.  
-* [💺🚪💡🤔 The Design of Everyday Things](../books/the-design-of-everyday-things.md) by Don Norman: This creatively related book 🤔 discusses the principles of good design in products, providing a broader understanding of the thoughtful, user-centric approach that Vibe-Rules applies to software architecture.  
-* [🗑️✨ Refactoring: Improving the Design of Existing Code](../books/refactoring-improving-the-design-of-existing-code.md) by Martin Fowler: This book ✍️ offers practical advice on how to improve the structure of existing code, a skill that would complement the Vibe-Rules process of creating clean code from the start.  
+* [🧼💾 Clean Code: A Handbook of Agile Software Craftsmanship](/content/books/clean-code.md) by Robert C. Martin: This book 📖 is similar in its emphasis on writing maintainable, readable, and well-structured code, which is a key outcome of the Vibe-Rules method.  
+* [🦄👤🗓️ The Mythical Man-Month: Essays on Software Engineering](/content/books/the-mythical-man-month.md) by Frederick Brooks Jr.: This classic explores the challenges of software project management, offering a contrasting perspective on why adding more people to a late project often makes it later. ⏱️ It provides context for the strategic, human-centric focus of Vibe-Rules.  
+* [💺🚪💡🤔 The Design of Everyday Things](/content/books/the-design-of-everyday-things.md) by Don Norman: This creatively related book 🤔 discusses the principles of good design in products, providing a broader understanding of the thoughtful, user-centric approach that Vibe-Rules applies to software architecture.  
+* [🗑️✨ Refactoring: Improving the Design of Existing Code](/content/books/refactoring-improving-the-design-of-existing-code.md) by Martin Fowler: This book ✍️ offers practical advice on how to improve the structure of existing code, a skill that would complement the Vibe-Rules process of creating clean code from the start.  
 * Agile Software Development, Principles, Patterns, and Practices by Robert C. Martin: A contrasting view on software development methodologies, 🏃 this book explores a more flexible and iterative approach that could be compared with the structured Vibe-Rules framework.

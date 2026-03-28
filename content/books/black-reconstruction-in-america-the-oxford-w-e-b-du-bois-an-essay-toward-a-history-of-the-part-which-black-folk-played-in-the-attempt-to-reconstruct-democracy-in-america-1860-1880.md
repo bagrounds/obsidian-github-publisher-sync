@@ -7,7 +7,7 @@ share: true
 CTA: ✊ Understand liberation.
 affiliate link: https://amzn.to/47M6gmX
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🧑🏿‍🤝‍🧑🏿🏛️ Black Reconstruction in America (The Oxford W. E. B. Du Bois): An Essay Toward a History of the Part Which Black Folk Played in the Attempt to Reconstruct Democracy in America, 1860-1880  
 [🛒 Black Reconstruction in America (The Oxford W. E. B. Du Bois): An Essay Toward a History of the Part Which Black Folk Played in the Attempt to Reconstruct Democracy in America, 1860-1880. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/47M6gmX)  
   

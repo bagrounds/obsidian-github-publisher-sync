@@ -7,7 +7,7 @@ share: true
 CTA: 🛡️ Defend equality.
 affiliate link: https://amzn.to/3YpBQm5
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # ♂️👑✊ Political Masculinity: How Incels, Fundamentalists and Authoritarians Mobilise for Patriarchy  
 [🛒 Political Masculinity: How Incels, Fundamentalists and Authoritarians Mobilise for Patriarchy. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3YpBQm5)  
   
@@ -69,7 +69,7 @@ affiliate link: https://amzn.to/3YpBQm5
 * 📖 The Gender Knot by Allan Johnson. Explains patriarchy, its workings, and how to address gender inequality without blame.  
   
 ### Related  
-* [🇮🇹🇩🇪🇱🇾🇷🇺🇺🇸 Strongmen: Mussolini to the Present](./strongmen.md) by Ruth Ben-Ghiat. Surveys the history of authoritarian leaders and the sexual politics of strongman rule.  
+* [🇮🇹🇩🇪🇱🇾🇷🇺🇺🇸 Strongmen: Mussolini to the Present](/content/books/strongmen.md) by Ruth Ben-Ghiat. Surveys the history of authoritarian leaders and the sexual politics of strongman rule.  
 * 📖 Fundamentalism and Gender, 1875 to the Present by Margaret Lamberts Bendroth. Depicts the battle within fundamentalism over gender roles historically.  
 * 📖 Attitudes toward Political Authoritarianism in Economically Advanced Democracies: The Role of Gender Values and Norms. Discusses how gender equality values influence attitudes toward political authoritarianism.  
   

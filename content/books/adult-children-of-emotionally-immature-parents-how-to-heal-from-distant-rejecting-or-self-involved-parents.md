@@ -7,7 +7,7 @@ share: true
 CTA: 🌱 Reclaim your emotional well-being.
 affiliate link: https://amzn.to/3YONIOL
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🧑‍🧒💔🩹 Adult Children of Emotionally Immature Parents: How to Heal from Distant, Rejecting, or Self-Involved Parents  
 [🛒 Adult Children of Emotionally Immature Parents: How to Heal from Distant, Rejecting, or Self-Involved Parents. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3YONIOL)  
   
@@ -87,19 +87,19 @@ affiliate link: https://amzn.to/3YONIOL
   
 ### 👯‍♀️ Similar  
 * 💨 Running on Empty: Overcome Your Childhood Emotional Neglect by Jonice Webb  
-* [❤️‍🩹👶🚫🌱 Recovering from Emotionally Immature Parents: Practical Tools to Establish Boundaries & Reclaim Your Emotional Autonomy](./recovering-from-emotionally-immature-parents-practical-tools-to-establish-boundaries-reclaim-your-emotional-autonomy.md) by Lindsay C. Gibson  
+* [❤️‍🩹👶🚫🌱 Recovering from Emotionally Immature Parents: Practical Tools to Establish Boundaries & Reclaim Your Emotional Autonomy](/content/books/recovering-from-emotionally-immature-parents-practical-tools-to-establish-boundaries-reclaim-your-emotional-autonomy.md) by Lindsay C. Gibson  
 * ☣️ Toxic Parents: Overcoming Their Hurtful Legacy and Reclaiming Your Life by Susan Forward  
 * 🪞 Children of the Self-Absorbed by Nina W. Brown  
   
 ### ↔️ Contrasting  
 * 🤗 The Connected Child by Karyn Purvis and David Cross  
-* [👨‍👩‍👧‍👦🛡️ A Secure Base: Parent-Child Attachment and Healthy Human Development](./a-secure-base-parent-child-attachment-and-healthy-human-development.md) by John Bowlby  
-* [🕳️🧠👶🏽 The Whole-Brain Child: 12 Revolutionary Strategies to Nurture Your Child's Developing Mind](./the-whole-brain-child.md) by Daniel J. Siegel and Tina Payne Bryson  
+* [👨‍👩‍👧‍👦🛡️ A Secure Base: Parent-Child Attachment and Healthy Human Development](/content/books/a-secure-base-parent-child-attachment-and-healthy-human-development.md) by John Bowlby  
+* [🕳️🧠👶🏽 The Whole-Brain Child: 12 Revolutionary Strategies to Nurture Your Child's Developing Mind](/content/books/the-whole-brain-child.md) by Daniel J. Siegel and Tina Payne Bryson  
   
 ### 🔗 Related  
-* [🤕🎼🧠 The Body Keeps the Score: Brain, Mind, and Body in the Healing of Trauma](./the-body-keeps-the-score-brain-mind-and-body-in-the-healing-of-trauma.md) by Bessel van der Kolk  
+* [🤕🎼🧠 The Body Keeps the Score: Brain, Mind, and Body in the Healing of Trauma](/content/books/the-body-keeps-the-score-brain-mind-and-body-in-the-healing-of-trauma.md) by Bessel van der Kolk  
 * 🌱 Complex PTSD: From Surviving to Thriving by Pete Walker  
-* [👩🏼‍❤️‍💋‍👨🏻🔗 Attached: The New Science of Adult Attachment and How It Can Help You Find - and Keep - Love](./attached-the-new-science-of-adult-attachment-and-how-it-can-help-you-find-and-keep-love.md) by Amir Levine and Rachel Heller  
+* [👩🏼‍❤️‍💋‍👨🏻🔗 Attached: The New Science of Adult Attachment and How It Can Help You Find - and Keep - Love](/content/books/attached-the-new-science-of-adult-attachment-and-how-it-can-help-you-find-and-keep-love.md) by Amir Levine and Rachel Heller  
 * 💑 Wired for Love: How Understanding Your Partner's Brain and Attachment Style Can Help You Defuse Conflict and Build a Secure Relationship by Stan Tatkin  
 * 🩹 It Wasn't Your Fault: Freeing Yourself from the Shame of Childhood Abuse with the Power of Self-Compassion by Beverly Engel  
 * 🌟 Healing the Shame That Binds You by John Bradshaw  

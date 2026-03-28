@@ -10,7 +10,7 @@ Channel: Heather Cox Richardson
 tags:
 youtube: https://youtu.be/13IVUWiuHHI
 ---
-[Home](../index.md) > [Videos](./index.md) | [🏛️🇺🇸📖 Heather Cox Richardson](../people/heather-cox-richardson.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md) | [🏛️🇺🇸📖 Heather Cox Richardson](/content/people/heather-cox-richardson.md)  
 # 🗣️🇺🇸🤝 A Conversation with Representative Jim Himes | American Conversations  
 ![A Conversation with Representative Jim Himes | American Conversations](https://youtu.be/13IVUWiuHHI)  
   
@@ -61,18 +61,18 @@ youtube: https://youtu.be/13IVUWiuHHI
   
 ### ↔️ Similar  
   
-* [🇺🇸🪖❤️ The New American Militarism: How Americans Are Seduced by War](../books/the-new-american-militarism-how-americans-are-seduced-by-war.md) by Andrew J. Bacevich. 📖 This book critiques the increasing reliance on military force as the primary instrument of US foreign policy, aligning with the video's theme of performative military action and the erosion of civilian control.  
+* [🇺🇸🪖❤️ The New American Militarism: How Americans Are Seduced by War](/content/books/the-new-american-militarism-how-americans-are-seduced-by-war.md) by Andrew J. Bacevich. 📖 This book critiques the increasing reliance on military force as the primary instrument of US foreign policy, aligning with the video's theme of performative military action and the erosion of civilian control.  
 * 📜 In the Name of War: Judicial Review and the War Powers since 1918 by Christopher N. May. 📚 This work provides a deep dive into the legal history of presidential war powers and the difficulty the judiciary and Congress have had in containing executive discretion, echoing the conversation about the War Powers Act.  
 * 💀 El Narco: Inside Mexico’s Criminal Insurgency by Ioan Grillo. 🇲🇽 The book offers a firsthand look at the drug cartels, contrasting the complex reality of these criminal enterprises with the simplistic ISIS-like threat model used by the administration to justify military action.  
   
 ### 🆚 Contrasting  
   
-* [🤝🌍 Diplomacy](../books/diplomacy.md) by Henry Kissinger. 🌍 The text argues for a realpolitik approach to foreign affairs, focusing on power balances and national interest, which contrasts sharply with the video's call to rebuild alliances and engage in sophisticated accommodation with rising powers like China.  
+* [🤝🌍 Diplomacy](/content/books/diplomacy.md) by Henry Kissinger. 🌍 The text argues for a realpolitik approach to foreign affairs, focusing on power balances and national interest, which contrasts sharply with the video's call to rebuild alliances and engage in sophisticated accommodation with rising powers like China.  
 * ⚖️ The Case for Congress: Why Our Deliberative Democracy Will Save America by Matthew Glassman. 🏛️ This book advocates for the essential role of a strong, functioning Congress in a healthy democracy, offering a contrast to the video's documentation of Congressional deference and the failure to defend its constitutional prerogatives over war powers.  
 * 📈 The End of Poverty: Economic Possibilities for Our Time by Jeffrey Sachs. 💰 This perspective emphasizes economic development and aid as the most effective path to global stability, offering a contrasting solution to drug trafficking and instability in regions like Latin America, moving away from the military-first approach criticized in the video.  
   
 ### 🎨 Creatively Related  
   
-* [🕵️📜 Legacy of Ashes: The History of the CIA](../books/legacy-of-ashes-the-history-of-the-cia.md) by Tim Weiner. 🤫 This history details the CIA's controversial activities in Latin America during the Cold War, providing historical context for the distrust and old school Monroe doctrine stuff that still affects US relations in the region today.  
+* [🕵️📜 Legacy of Ashes: The History of the CIA](/content/books/legacy-of-ashes-the-history-of-the-cia.md) by Tim Weiner. 🤫 This history details the CIA's controversial activities in Latin America during the Cold War, providing historical context for the distrust and old school Monroe doctrine stuff that still affects US relations in the region today.  
 * 📰 News and the Culture of Disaster: The Tragedy of Flight 103 by Nurith Gertz. 📺 The book explores how media frames complex international events and foreign policy, tangentially relating to the video's discussion of performative politics aimed at generating a public image of strength.  
 * 🤔 The Clash of Civilizations and the Remaking of World Order by Samuel P. Huntington. 🗺️ This influential, though debated, theory on post-Cold War world order provides a theoretical counterpoint to the video's suggestion that the US must adapt to a bipolar or tripolar world by forming robust alliances, by instead focusing on cultural fault lines.

@@ -10,7 +10,7 @@ Channel: Jessica Kellgren-Fozard
 tags:
 youtube: https://youtu.be/YBtpAKmsMR8
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md)  
 # 👶🧸8️⃣🗓️ Montessori Items For An 8 Month Old Baby  
 ![8 Montessori Items For An 8 Month Old Baby](https://youtu.be/YBtpAKmsMR8)  
   
@@ -72,12 +72,12 @@ youtube: https://youtu.be/YBtpAKmsMR8
 ## 📚 Book Recommendations  
 ### Similar  
 * Montessori: The Science Behind the Genius by Angeline Stoll Lillard. 🧠 This book provides the **academic and psychological research** that validates the concepts discussed, such as the prepared environment and sensitive periods.  
-* [🧽🧠 The Absorbent Mind](../books/the-absorbent-mind.md) by Maria Montessori. 💡 It offers the **foundational philosophy** straight from the originator, explaining the child's unique ability to unconsciously absorb information from the environment.  
+* [🧽🧠 The Absorbent Mind](/content/books/the-absorbent-mind.md) by Maria Montessori. 💡 It offers the **foundational philosophy** straight from the originator, explaining the child's unique ability to unconsciously absorb information from the environment.  
   
 ### Contrasting  
-* [🕳️🧠👶🏽 The Whole-Brain Child: 12 Revolutionary Strategies to Nurture Your Child's Developing Mind](../books/the-whole-brain-child.md) by Daniel J. Siegel and Tina Payne Bryson. 🧠 This book focuses on **integration and emotional development**, offering a more neuropsychological approach to parenting and discipline that contrasts with Montessori's emphasis on material manipulation and the child's work.  
+* [🕳️🧠👶🏽 The Whole-Brain Child: 12 Revolutionary Strategies to Nurture Your Child's Developing Mind](/content/books/the-whole-brain-child.md) by Daniel J. Siegel and Tina Payne Bryson. 🧠 This book focuses on **integration and emotional development**, offering a more neuropsychological approach to parenting and discipline that contrasts with Montessori's emphasis on material manipulation and the child's work.  
 * Bringing Up Bébé by Pamela Druckerman. 🇫🇷 This offers a perspective on **French parenting**, which often involves more structured sleep training and patience, contrasting with the child-led, constant availability philosophy of some Montessori interpretations.  
   
 ### Creatively Related  
 * Wabi-Sabi for Artists, Designers, Poets & Philosophers by Leonard Koren. 🖼️ This book explores the **Japanese aesthetic** of simplicity, imperfection, and nature, which beautifully relates to the Montessori ideal of a calm, uncluttered, and naturally-toned environment.  
-* [⚛️🔄 Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones](../books/atomic-habits.md) by James Clear. ⚙️ The focus on creating systems and making desired actions easy, visible, and satisfying provides a framework for how the **prepared environment** and the low shelf function to encourage good habits in children.
+* [⚛️🔄 Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones](/content/books/atomic-habits.md) by James Clear. ⚙️ The focus on creating systems and making desired actions easy, visible, and satisfying provides a framework for how the **prepared environment** and the low shelf function to encourage good habits in children.

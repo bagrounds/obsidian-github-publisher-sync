@@ -12,7 +12,7 @@ force_analyze_links: false
 link_analysis_time: 2026-03-22T06:01:20.658Z
 link_analysis_model: gemini-3.1-flash-lite-preview
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🧠📖✨ Children of Memory  
 [🛒 Children of Memory. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4bpta6L)  
   
@@ -23,7 +23,7 @@ link_analysis_model: gemini-3.1-flash-lite-preview
   
 * ✍️ Author: Adrian Tchaikovsky  
 * 📚 Genre: Science Fiction / Philosophical Space Opera  
-* 📖 Series: Book three of the [🕷️⏳ Children of Time](./children-of-time.md) trilogy  
+* 📖 Series: Book three of the [🕷️⏳ Children of Time](/content/books/children-of-time.md) trilogy  
   
 ## ⭐ Assessment  
   

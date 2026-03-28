@@ -6,7 +6,7 @@ URL: https://bagrounds.org/books/the-noonday-demon-an-atlas-of-depression
 share: true
 affiliate link: https://amzn.to/4ga9LHz
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # ☀️👿 The Noonday Demon: An Atlas of Depression  
 [🛒 The Noonday Demon: An Atlas of Depression. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4ga9LHz)  
   
@@ -53,18 +53,18 @@ affiliate link: https://amzn.to/4ga9LHz
   
 💡 These recommendations offer different approaches or perspectives on mental well-being, focusing more on practical strategies, alternative understandings, or a hopeful outlook.  
   
-* **[🧘😞➡️ The Mindful Way Through Depression: Freeing Yourself from Chronic Unhappiness](./the-mindful-way-through-depression-freeing-yourself-from-chronic-unhappiness.md) by Mark Williams, John Teasdale, Zindel Segal, and Jon Kabat-Zinn** offers a practical, mindfulness-based cognitive therapy approach to managing depression. 🤸‍♂️ It provides techniques and exercises aimed at breaking negative thought patterns, offering a more direct, self-help oriented contrast to Solomon's broad exploration.  
-* **[😊👍 Feeling Good: The New Mood Therapy](./feeling-good-the-new-mood-therapy.md) by David D Burns**, a classic in cognitive behavioral therapy (CBT), provides actionable strategies to combat depression and anxiety by identifying and changing distorted thinking patterns. 📝 Its highly practical and prescriptive nature contrasts with Solomon's more expansive, narrative-driven approach.  
+* **[🧘😞➡️ The Mindful Way Through Depression: Freeing Yourself from Chronic Unhappiness](/content/books/the-mindful-way-through-depression-freeing-yourself-from-chronic-unhappiness.md) by Mark Williams, John Teasdale, Zindel Segal, and Jon Kabat-Zinn** offers a practical, mindfulness-based cognitive therapy approach to managing depression. 🤸‍♂️ It provides techniques and exercises aimed at breaking negative thought patterns, offering a more direct, self-help oriented contrast to Solomon's broad exploration.  
+* **[😊👍 Feeling Good: The New Mood Therapy](/content/books/feeling-good-the-new-mood-therapy.md) by David D Burns**, a classic in cognitive behavioral therapy (CBT), provides actionable strategies to combat depression and anxiety by identifying and changing distorted thinking patterns. 📝 Its highly practical and prescriptive nature contrasts with Solomon's more expansive, narrative-driven approach.  
 * 📖 **Good Enough by Kate Bowler and Jessica Richie** offers spiritual reflections on making sense of life not as a pursuit of endless progress but as a chronic condition. 🧘 With humor and encouragement, it provides a "permission slip" to accept that some things can be fixed, and some cannot, fostering a sense of peace rather than constant striving for eradication of suffering.  
   
 ### 🎨 Creatively Related Books  
   
 ✨ These books explore broader themes related to human suffering, mental states, societal influences on the mind, or the philosophical aspects of existence, providing a creative expansion on the topics in The Noonday Demon.  
   
-* **[🤕🎼🧠 The Body Keeps the Score: Brain, Mind, and Body in the Healing of Trauma](./the-body-keeps-the-score-brain-mind-and-body-in-the-healing-of-trauma.md) by Bessel van der Kolk** explores the impact of trauma on the mind and body, and how it manifests in mental health conditions. 🤕 While not solely about depression, it delves into the physical and neurological underpinnings of psychological suffering, offering a scientific lens on deeply ingrained emotional pain, complementing Solomon's focus on the biological aspects of depression.  
+* **[🤕🎼🧠 The Body Keeps the Score: Brain, Mind, and Body in the Healing of Trauma](/content/books/the-body-keeps-the-score-brain-mind-and-body-in-the-healing-of-trauma.md) by Bessel van der Kolk** explores the impact of trauma on the mind and body, and how it manifests in mental health conditions. 🤕 While not solely about depression, it delves into the physical and neurological underpinnings of psychological suffering, offering a scientific lens on deeply ingrained emotional pain, complementing Solomon's focus on the biological aspects of depression.  
 * 📖 **A Beautiful Mind by Sylvia Nasar** tells the powerful story of mathematician John Nash, whose brilliant career was interrupted by schizophrenia. 🧠 It explores genius, mental illness, and the complex journey of living with a severe mental disorder, providing a parallel to Solomon's examination of mental illness within the context of intellectual life.  
 * 📖 **The Bell Jar by Sylvia Plath** offers a fictionalized, yet deeply personal, account of a young woman's descent into depression and breakdown in 1950s America. 🕰️ It provides a literary and historical perspective on mental illness and its treatment, complementing Solomon's non-fiction historical overview.  
-* **[😀📜 The Happiness Hypothesis: Finding Modern Truth in Ancient Wisdom](./the-happiness-hypothesis-finding-modern-truth-in-ancient-wisdom.md) by Jonathan Haidt** explores ancient philosophical wisdom and modern psychological research to understand what makes people happy and fulfilled. 🌟 By examining the components of well-being, this book indirectly sheds light on the nature of despair explored in The Noonday Demon, approaching the human condition from the perspective of flourishing rather than suffering.  
+* **[😀📜 The Happiness Hypothesis: Finding Modern Truth in Ancient Wisdom](/content/books/the-happiness-hypothesis-finding-modern-truth-in-ancient-wisdom.md) by Jonathan Haidt** explores ancient philosophical wisdom and modern psychological research to understand what makes people happy and fulfilled. 🌟 By examining the components of well-being, this book indirectly sheds light on the nature of despair explored in The Noonday Demon, approaching the human condition from the perspective of flourishing rather than suffering.  
   
 ## 💬 [Gemini](https://gemini.google.com) Prompt (gemini-2.5-flash)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by similar, contrasting, and creatively related book recommendations on The Noonday Demon: An Atlas of Depression. Never quote or italicize titles. Be thorough but concise. Use section headings and bulleted lists to avoid long blocks of text.

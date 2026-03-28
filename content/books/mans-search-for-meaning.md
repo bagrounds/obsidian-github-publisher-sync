@@ -13,7 +13,7 @@ force_analyze_links: false
 link_analysis_time: 2026-03-22T23:34:01.201Z
 link_analysis_model: gemini-3.1-flash-lite-preview
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🔦💡 Man's Search for Meaning  
 [🛒 Man's Search for Meaning. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4dJnF29)  
   
@@ -61,12 +61,12 @@ Viktor Frankl's "Man's Search for Meaning" offers a profoundly different perspec
   
 ### **Book Recommendations:**  
 * **Best Alternate Book on the Same Topic:** "When Breath Becomes Air" by Paul Kalanithi 🌬️: A deeply moving memoir about finding meaning in the face of terminal illness.  
-* **Best Tangentially Related Book:** "[Thinking, Fast and Slow](./thinking-fast-and-slow.md)" by Daniel Kahneman 🧠: Explores the cognitive biases and heuristics that influence human decision-making.  
-* **Best Diametrically Opposed Book:** "[🏔️ The Myth of Sisyphus](./the-myth-of-sisyphus.md)" by Albert Camus 🗿: Examines the absurdity of existence and the search for meaning in a meaningless world.  
+* **Best Tangentially Related Book:** "[Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md)" by Daniel Kahneman 🧠: Explores the cognitive biases and heuristics that influence human decision-making.  
+* **Best Diametrically Opposed Book:** "[🏔️ The Myth of Sisyphus](/content/books/the-myth-of-sisyphus.md)" by Albert Camus 🗿: Examines the absurdity of existence and the search for meaning in a meaningless world.  
 * **Best Fiction Book That Incorporates Related Ideas:** "The Book Thief" by Markus Zusak 📖: A story of resilience and human spirit during World War II, narrated by Death.  
-* **Best Book That Is More General:** "[Sapiens: A Brief History of Humankind](./sapiens-a-brief-history-of-humankind.md)" by Yuval Noah Harari 🌍: Provides a broad overview of human history and the search for meaning across civilizations.  
+* **Best Book That Is More General:** "[Sapiens: A Brief History of Humankind](/content/books/sapiens-a-brief-history-of-humankind.md)" by Yuval Noah Harari 🌍: Provides a broad overview of human history and the search for meaning across civilizations.  
 * **Best Book That Is More Specific:** "Learned Optimism" by Martin E.P. Seligman ☀️: Focuses on techniques to cultivate a positive mindset and build resilience.  
-* **Best Book That Is More Rigorous:** "[Flow: The Psychology of Optimal Experience](./flow-the-psychology-of-optimal-experience.md)" by Mihaly Csikszentmihalyi 🌊: A study of the state of flow, where individuals are fully immersed in an activity, providing a scientific approach to finding meaning.  
+* **Best Book That Is More Rigorous:** "[Flow: The Psychology of Optimal Experience](/content/books/flow-the-psychology-of-optimal-experience.md)" by Mihaly Csikszentmihalyi 🌊: A study of the state of flow, where individuals are fully immersed in an activity, providing a scientific approach to finding meaning.  
 * **Best Book That Is More Accessible:** "The Gifts of Imperfection" by Brené Brown 🎁: Explores the importance of embracing vulnerability and living wholeheartedly.  
   
 ## 💬 [Gemini](https://gemini.google.com) Prompt  

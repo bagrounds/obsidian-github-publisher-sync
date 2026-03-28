@@ -10,7 +10,7 @@ Channel: Heather Cox Richardson
 tags:
 youtube: https://www.youtube.com/embed/JDysBx_wIHc
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md)  
 # 🇺🇸🗣️👂 American Conversations: Diana Butler Bass  
 ![American Conversations: Diana Butler Bass](https://www.youtube.com/embed/JDysBx_wIHc)  
   
@@ -51,7 +51,7 @@ youtube: https://www.youtube.com/embed/JDysBx_wIHc
   
 ### ↔️ Similar  
   
-* **[👥✝️ A People's History of Christianity: The Other Side of the Story](../books/a-peoples-history-of-christianity-the-other-side-of-the-story.md)** by Diana Butler Bass. 🌎 This book similarly explores the tension between Christianity's imperial, power-seeking side and the subversive, social-ethic tradition that has always existed within the faith.  
+* **[👥✝️ A People's History of Christianity: The Other Side of the Story](/content/books/a-peoples-history-of-christianity-the-other-side-of-the-story.md)** by Diana Butler Bass. 🌎 This book similarly explores the tension between Christianity's imperial, power-seeking side and the subversive, social-ethic tradition that has always existed within the faith.  
 * 🙌 **Grounded: Finding God in the World—A Spiritual Revolution** by Diana Butler Bass. 🌳 It discusses moving beyond traditional church structures to find a spiritual revolution in the world, connecting with the idea of a faith focused on communal life and the care of neighbors.  
 * ✝️ **God and Empire: Jesus Against Rome, Then and Now** by John Dominic Crossan. ⚔️ This work analyzes how the gospels present a clear, nonviolent alternative to Roman imperial rule, providing detailed historical context for the video's discussion of Rome's conflict with Jesus.  
   
@@ -59,12 +59,12 @@ youtube: https://www.youtube.com/embed/JDysBx_wIHc
   
 * ⛪ **The Case for Christian Nationalism** by Stephen Wolfe. 🛡️ This book presents the direct counter-argument, explicitly advocating for Christian nationalism as the necessary form of government to love our neighbors and our country, contrasting sharply with the video's anti-imperial stance.  
 * 🇺🇸 **Taking Back America For God: Christian Nationalism In The United States** by Andrew L. Whitehead and Samuel L. Perry. 📊 This sociological analysis documents the rise and current goals of Christian nationalism, explaining the movement's ideology and how it is actively pursuing the imperial-style political power the video critiques.  
-* **[📰❓✝️ The Case for Christ: A Journalist's Personal Investigation of the Evidence for Jesus](../books/the-case-for-christ-a-journalists-personal-investigation-of-the-evidence-for-jesus.md)** by Lee Strobel. 🙏 This book is representative of a conservative evangelical approach that focuses intensely on apologetics and the factual certainty of doctrine, which contrasts with the progressive Christian emphasis on justice, mystery, and an evolving faith.  
+* **[📰❓✝️ The Case for Christ: A Journalist's Personal Investigation of the Evidence for Jesus](/content/books/the-case-for-christ-a-journalists-personal-investigation-of-the-evidence-for-jesus.md)** by Lee Strobel. 🙏 This book is representative of a conservative evangelical approach that focuses intensely on apologetics and the factual certainty of doctrine, which contrasts with the progressive Christian emphasis on justice, mystery, and an evolving faith.  
   
 ### 🎨 Creatively Related  
   
 * ⏱️ **About Time: Narrative, Fiction and the Philosophy of Time** by Mark Currie. 📜 This book explores the philosophy of time, particularly how narrative shapes our understanding of the past, present, and future, relating to the video's opening discussion on linear versus cyclical time.  
-* **[🪢🌾 Braiding Sweetgrass: Indigenous Wisdom, Scientific Knowledge, and the Teachings of Plants](../books/braiding-sweetgrass.md)** by Robin Wall Kimmerer. 🌍 This book offers a non-Western perspective on relationships, time, and community, contrasting the imperial mindset by centering on ecological gratitude and the ethics of reciprocity, similar to the biblical vision of shalom.  
+* **[🪢🌾 Braiding Sweetgrass: Indigenous Wisdom, Scientific Knowledge, and the Teachings of Plants](/content/books/braiding-sweetgrass.md)** by Robin Wall Kimmerer. 🌍 This book offers a non-Western perspective on relationships, time, and community, contrasting the imperial mindset by centering on ecological gratitude and the ethics of reciprocity, similar to the biblical vision of shalom.  
 * 👑 **The Making of Biblical Womanhood: How the Subjugation of Women Became Gospel Truth** by Beth Allison Barr. 💡 This work examines how historical power structures and interpretations have been used to enforce hierarchy and patriarchy within Christianity, an example of the imperial strain's influence on social issues within the church.  
   
 ## 🐦 Tweet  

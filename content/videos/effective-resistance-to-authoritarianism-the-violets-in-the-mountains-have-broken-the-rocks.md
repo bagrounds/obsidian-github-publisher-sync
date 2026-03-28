@@ -10,7 +10,7 @@ Channel: Walking Each Other Home
 tags:
 youtube: https://youtu.be/jXEmk3oXHdw
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md)  
 # 🌱⛰️💪 Effective Resistance to Authoritarianism: «The violets in the mountains have broken the rocks»  
 ![Effective Resistance to Authoritarianism: «The violets in the mountains have broken the rocks»](https://youtu.be/jXEmk3oXHdw)  
   
@@ -29,8 +29,8 @@ youtube: https://youtu.be/jXEmk3oXHdw
 * 🌸 Resistance is conceptualized as the **violets breaking the rocks**, where quiet, persistent, cooperative action reshapes stone over time \[[17:49](http://www.youtube.com/watch?v=jXEmk3oXHdw&t=1069)].  
   
 ## 🤔 Evaluation  
-* ⚖️ The video's core principles are strongly supported by rigorous academic research, particularly the analysis of **Erica Chenoweth** and **Maria Stephan** in their book, [🕊️💪 Why Civil Resistance Works: The Strategic Logic of Nonviolent Conflict](../books/why-civil-resistance-works-the-strategic-logic-of-nonviolent-conflict.md) (Columbia University Press, 2011).  
-* ✅ **Comparison: Nonviolence and Mass Participation.** Chenoweth and Stephan's analysis of historical campaigns confirms the video's arguments: nonviolent campaigns were **twice as successful** as violent ones and attracted *four times* as many participants due to lower barriers to entry (Source: [🕊️💪 Why Civil Resistance Works: The Strategic Logic of Nonviolent Conflict](../books/why-civil-resistance-works-the-strategic-logic-of-nonviolent-conflict.md), Erica Chenoweth and Maria Stephan).  
+* ⚖️ The video's core principles are strongly supported by rigorous academic research, particularly the analysis of **Erica Chenoweth** and **Maria Stephan** in their book, [🕊️💪 Why Civil Resistance Works: The Strategic Logic of Nonviolent Conflict](/content/books/why-civil-resistance-works-the-strategic-logic-of-nonviolent-conflict.md) (Columbia University Press, 2011).  
+* ✅ **Comparison: Nonviolence and Mass Participation.** Chenoweth and Stephan's analysis of historical campaigns confirms the video's arguments: nonviolent campaigns were **twice as successful** as violent ones and attracted *four times* as many participants due to lower barriers to entry (Source: [🕊️💪 Why Civil Resistance Works: The Strategic Logic of Nonviolent Conflict](/content/books/why-civil-resistance-works-the-strategic-logic-of-nonviolent-conflict.md), Erica Chenoweth and Maria Stephan).  
 * 🔢 The **3.5% rule**, cited in the video \[[12:43](http://www.youtube.com/watch?v=jXEmk3oXHdw&t=763)], is a statistic formulated by Chenoweth, noting the historical finding that no government has withstood a movement that mobilized this percentage of the population in sustained, nonviolent protest (Source: *3.5% rule*, Wikipedia).  
 * ⚠️ **Contrasting Perspective and Nuance:** While the video treats the 3.5% rule as highly authoritative, Chenoweth emphasizes that the figure is a **descriptive statistic**, not a prescriptive law (Source: *Questions, Answers, and Some Cautionary Updates Regarding the 3.5% Rule*, Erica Chenoweth, Harvard Kennedy School).  
 * 📉 New research suggests the efficacy of resistance has **decreased since 2010**, highlighting that authoritarian regimes are learning to coordinate and train their forces, requiring movements to adapt their tactics accordingly (Source: *3.5% rule*, Wikipedia; *The Future of Nonviolent Resistance*, Journal of Democracy).  
@@ -53,16 +53,16 @@ A: 🤝🏻 The strategy is to **erode support** by offering a graceful **off-ra
 ## 📚 Book Recommendations  
   
 * **Similar Perspectives (Nonviolent Strategy & Theory)**  
-    * [🕊️💪 Why Civil Resistance Works: The Strategic Logic of Nonviolent Conflict](../books/why-civil-resistance-works-the-strategic-logic-of-nonviolent-conflict.md) by Erica Chenoweth and Maria J. Stephan. 🔬 This book is the foundational, data-driven analysis that supports the video's core arguments regarding nonviolence and mass participation.  
+    * [🕊️💪 Why Civil Resistance Works: The Strategic Logic of Nonviolent Conflict](/content/books/why-civil-resistance-works-the-strategic-logic-of-nonviolent-conflict.md) by Erica Chenoweth and Maria J. Stephan. 🔬 This book is the foundational, data-driven analysis that supports the video's core arguments regarding nonviolence and mass participation.  
     * 📘 From Dictatorship to Democracy by Gene Sharp. 🛠️ This widely-used handbook details 198 methods of nonviolent action and outlines the strategic principles for dismantling authoritarian regimes.  
     * 📖 This Is an Uprising: How Nonviolent Revolt Is Shaping the Twenty-First Century by Mark Engler and Paul Engler. 🗣️ The book analyzes how modern movements integrate the discipline of nonviolence with the logic of mass disruption.  
   
 * **Contrasting/Analytical Perspectives (The Nature of Authoritarianism)**  
-    * [👑🚫📜2️⃣0️⃣ On Tyranny: Twenty Lessons from the Twentieth Century](../books/on-tyranny.md) by Timothy Snyder. 💡 A brief and immediate guide applying lessons from 20th-century European history to modern threats to democracy.  
+    * [👑🚫📜2️⃣0️⃣ On Tyranny: Twenty Lessons from the Twentieth Century](/content/books/on-tyranny.md) by Timothy Snyder. 💡 A brief and immediate guide applying lessons from 20th-century European history to modern threats to democracy.  
     * How Fascism Works: The Politics of Us and Them by Jason Stanley. 🗣️ This book dissects the ten tactics authoritarians use—like the video's "authoritarian playbook"—including mythic past and propaganda.  
-    * [🥀 Twilight of Democracy: 🐍 The Seductive Lure of Authoritarianism](../books/twilight-of-democracy.md) by Anne Applebaum. 🤝🏻 Explores how and why intellectual and political elites become disenchanted with democracy and choose to support authoritarian leaders.  
+    * [🥀 Twilight of Democracy: 🐍 The Seductive Lure of Authoritarianism](/content/books/twilight-of-democracy.md) by Anne Applebaum. 🤝🏻 Explores how and why intellectual and political elites become disenchanted with democracy and choose to support authoritarian leaders.  
   
 * **Creatively Related/Inspirational**  
-    * [👤✊ The Power of the Powerless](../books/the-power-of-the-powerless.md) by Václav Havel. 📝 An essay that uses the experience of Charter 77 in Czechoslovakia to discuss "living within the truth" as a fundamental form of resistance against post-totalitarian systems.  
+    * [👤✊ The Power of the Powerless](/content/books/the-power-of-the-powerless.md) by Václav Havel. 📝 An essay that uses the experience of Charter 77 in Czechoslovakia to discuss "living within the truth" as a fundamental form of resistance against post-totalitarian systems.  
     * 📝 March by John Lewis, Andrew Aydin, and Nate Powell. 🎨 A graphic novel memoir chronicling the Civil Rights Movement, illustrating the commitment to nonviolence and mass mobilization in practice.  
     * 🌳 The Dispossessed by Ursula K. Le Guin. 🪐 A science fiction novel that provides a thought experiment on the complexities of different political systems and the struggle for revolutionary change.

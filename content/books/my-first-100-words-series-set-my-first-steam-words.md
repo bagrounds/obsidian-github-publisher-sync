@@ -7,7 +7,7 @@ share: true
 CTA: 🚀 Discover language.
 affiliate link: https://amzn.to/48qewcD
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 👶🔬 My First 100 Words series set (My First STEAM Words)  
 [🛒 My First 100 Words series set (My First STEAM Words). As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/48qewcD)  
   
@@ -59,14 +59,14 @@ affiliate link: https://amzn.to/48qewcD
 ## 📚 Book Recommendations  
   
 ### Similar  
-* [👶📚 Baby University series](./baby-university-complete-for-babies-board-book-set.md) by Chris Ferrie (e.g., [⚛️👶 Quantum Physics for Babies](./quantum-physics-for-babies.md))  
+* [👶📚 Baby University series](/content/books/baby-university-complete-for-babies-board-book-set.md) by Chris Ferrie (e.g., [⚛️👶 Quantum Physics for Babies](/content/books/quantum-physics-for-babies.md))  
 * 👋 Hello, World! series by Jill McDonald  
 * 🧮 ABCs of Science (Tinker Toddlers) by Dr. Dhoot  
   
 ### Contrasting  
 * 🐻 Brown Bear, Brown Bear, What Do You See? by Bill Martin Jr. and Eric Carle (focuses on color/animal recognition, less explicit STEAM)  
 * 🐶 Where's Spot? by Eric Hill (lift-the-flap, simple narrative, basic concepts)  
-* [🌙🛌 Goodnight Moon](./goodnight-moon.md) by Margaret Wise Brown (focuses on routine and observation)  
+* [🌙🛌 Goodnight Moon](/content/books/goodnight-moon.md) by Margaret Wise Brown (focuses on routine and observation)  
   
 ### Related  
 * 👷 Rosie Revere, Engineer by Andrea Beaty (introduces engineering concepts through narrative)  

@@ -7,7 +7,7 @@ share: true
 CTA: ☀️ Awaken to awareness.
 affiliate link: https://amzn.to/4667ytQ
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🧘🗣️ Mindfulness in Plain English  
 [🛒 Mindfulness in Plain English. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4667ytQ)  
   
@@ -47,8 +47,8 @@ affiliate link: https://amzn.to/4667ytQ
 ### 💚 Similar: For the Dedicated Beginner  
   
 * 📖 "The Miracle of Mindfulness: An Introduction to the Practice of Meditation" by Thich Nhat Hanh: A gentle and profound introduction to mindfulness from a renowned Zen master. 🧘 Like Gunaratana, Hanh emphasizes the integration of mindfulness into daily activities.  
-* [👣➡️🌍 Wherever You Go, There You Are](./wherever-you-go-there-you-are.md): Mindfulness Meditation in Everyday Life by Jon Kabat-Zinn: A foundational text in the secular mindfulness movement, this book offers a series of short, accessible chapters on the "how" and "why" of mindfulness.  
-* [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md): How I Tamed the Voice in My Head, Reduced Stress Without Losing My Edge, and Found Self-Help That Actually Works - A True Story by Dan Harris: A relatable and skeptical journalist's journey into the world of meditation, perfect for those who may be wary of the more spiritual aspects of the practice.  
+* [👣➡️🌍 Wherever You Go, There You Are](/content/books/wherever-you-go-there-you-are.md): Mindfulness Meditation in Everyday Life by Jon Kabat-Zinn: A foundational text in the secular mindfulness movement, this book offers a series of short, accessible chapters on the "how" and "why" of mindfulness.  
+* [📈🧘🏼‍♀️ 10% Happier](/content/books/10-percent-happier.md): How I Tamed the Voice in My Head, Reduced Stress Without Losing My Edge, and Found Self-Help That Actually Works - A True Story by Dan Harris: A relatable and skeptical journalist's journey into the world of meditation, perfect for those who may be wary of the more spiritual aspects of the practice.  
 * 📖 Other Works by Henepola Gunaratana: For those who appreciate his direct style, Gunaratana has authored several other books, including "Beyond Mindfulness in Plain English" for those ready to deepen their practice, and "Loving-Kindness in Plain English."  
   
 ### ☯️ Contrasting: Different Paths to Presence  
@@ -67,8 +67,8 @@ affiliate link: https://amzn.to/4667ytQ
     * 📖 "The Peace of Wild Things" by Wendell Berry: Berry's poetry is a deep meditation on the natural world and the solace that can be found in simple, present-moment awareness.  
     * 📖 "The Guest House" by Rumi: This famous poem offers a beautiful metaphor for welcoming all thoughts and emotions with mindful acceptance.  
 * **On Creativity and Mindful Living:**  
-    * [✨🎭🧘‍♂️🌌 The Creative Act: A Way of Being](./the-creative-act.md) by Rick Rubin: A philosophical exploration of creativity as a state of being, encouraging a mindful and receptive approach to life and art.  
-    * [🎨🙏✨ The Artist's Way: A Spiritual Path to Higher Creativity](./the-artists-way.md) by Julia Cameron: A classic guide to unlocking creativity through a series of mindful exercises and reflections.  
+    * [✨🎭🧘‍♂️🌌 The Creative Act: A Way of Being](/content/books/the-creative-act.md) by Rick Rubin: A philosophical exploration of creativity as a state of being, encouraging a mindful and receptive approach to life and art.  
+    * [🎨🙏✨ The Artist's Way: A Spiritual Path to Higher Creativity](/content/books/the-artists-way.md) by Julia Cameron: A classic guide to unlocking creativity through a series of mindful exercises and reflections.  
   
-## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro)  
+## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-pro)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Mindfulness in Plain English. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

@@ -7,7 +7,7 @@ share: true
 CTA: 🤖 Build intelligently.
 affiliate link: https://amzn.to/4oKCExg
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🤖🧩 Patterns of Application Development Using AI  
 [🛒 Patterns of Application Development Using AI. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4oKCExg)  
   
@@ -90,17 +90,17 @@ affiliate link: https://amzn.to/4oKCExg
   
 ### Similar Books  
 * Building Machine Learning Powered Applications by Emmanuel Ameisen  
-* [🤖⚙️🔁 Designing Machine Learning Systems: An Iterative Process for Production-Ready Applications](./designing-machine-learning-systems-an-iterative-process-for-production-ready-applications.md) by Chip Huyen ⚙️  
+* [🤖⚙️🔁 Designing Machine Learning Systems: An Iterative Process for Production-Ready Applications](/content/books/designing-machine-learning-systems-an-iterative-process-for-production-ready-applications.md) by Chip Huyen ⚙️  
 * Practical MLOps: Operationalizing Machine Learning Models by Noah Gift and Alfredo Deza  
   
 ### Contrasting Books  
-* [🧠💻🤖 Deep Learning](./deep-learning.md) by Ian Goodfellow, Yoshua Bengio, and Aaron Courville (focuses on theoretical ML) 🧠  
-* [🤖🧠 Artificial Intelligence: A Modern Approach](./artificial-intelligence-a-modern-approach.md) by Stuart Russell and Peter Norvig (focuses on general AI theory) 💡  
+* [🧠💻🤖 Deep Learning](/content/books/deep-learning.md) by Ian Goodfellow, Yoshua Bengio, and Aaron Courville (focuses on theoretical ML) 🧠  
+* [🤖🧠 Artificial Intelligence: A Modern Approach](/content/books/artificial-intelligence-a-modern-approach.md) by Stuart Russell and Peter Norvig (focuses on general AI theory) 💡  
   
 ### Related Books  
-* [🧩🧱⚙️❤️ Domain-Driven Design: Tackling Complexity in the Heart of Software](./domain-driven-design.md) by Eric Evans (software architecture) 🧩  
-* [💾⬆️🛡️ Designing Data-Intensive Applications: The Big Ideas Behind Reliable, Scalable, and Maintainable Systems](./designing-data-intensive-applications.md) by Martin Kleppmann (data systems) 🗄️  
-* [🧑‍🤝‍🧑⚙️➡️ Team Topologies: Organizing Business and Technology Teams for Fast Flow](./team-topologies-organizing-business-and-technology-teams-for-fast-flow.md) by Matthew Skelton and Manuel Pais (organizational patterns for software teams) 🤝  
+* [🧩🧱⚙️❤️ Domain-Driven Design: Tackling Complexity in the Heart of Software](/content/books/domain-driven-design.md) by Eric Evans (software architecture) 🧩  
+* [💾⬆️🛡️ Designing Data-Intensive Applications: The Big Ideas Behind Reliable, Scalable, and Maintainable Systems](/content/books/designing-data-intensive-applications.md) by Martin Kleppmann (data systems) 🗄️  
+* [🧑‍🤝‍🧑⚙️➡️ Team Topologies: Organizing Business and Technology Teams for Fast Flow](/content/books/team-topologies-organizing-business-and-technology-teams-for-fast-flow.md) by Matthew Skelton and Manuel Pais (organizational patterns for software teams) 🤝  
   
 ## 🫵 What Do You Think?  
   

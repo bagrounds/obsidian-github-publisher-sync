@@ -7,7 +7,7 @@ URL: https://bagrounds.org/articles/magentic-ui-towards-human-in-the-loop-agenti
 Author:
 tags:
 ---
-[Home](../index.md) > [Articles](./index.md)  
+[Home](/content/index.md) > [Articles](/content/articles/index.md)  
 # [🧲🧑‍💻🤖 Magnetic UI: Towards Human In The Loop Agentic Systems](https://arxiv.org/abs/2507.22358)  
 ## 🤖 AI Summary  
 Magentic-UI is a human-in-the-loop agentic system that enables 🤝 human-agent collaboration through a variety of mechanisms. The system's main issues and interaction mechanisms are as follows:  
@@ -32,7 +32,7 @@ For a better understanding, it would be beneficial to explore several topics in 
 * **Scalability** 📈: The paper could explore how the human-in-the-loop approach scales with an increasing number of concurrent tasks and users.  
   
 ## 📚 Book Recommendations  
-* [🧑‍💻🤖 Human-in-the-Loop Machine Learning: Active learning and annotation for human-centered AI](../books/human-in-the-loop-machine-learning-active-learning-and-annotation-for-human-centered-ai.md) by Robert (Munro) Monarch provides a practical guide to optimizing machine learning systems by incorporating human feedback, with a focus on active learning and data annotation.  
-* [💺🚪💡🤔 The Design of Everyday Things](../books/the-design-of-everyday-things.md) by Donald A. Norman 🧠. A classic in the field of human-computer interaction, it provides foundational principles for designing products and systems that are intuitive and easy to use.  
-* [🤖⚙️ AI Agents in Action](../books/ai-agents-in-action.md) by Micheal Lanham ⚙️. This book focuses on building production-ready AI agents and multi-agent systems using modern frameworks and tools, offering a more technical and hands-on perspective on agentic systems.  
+* [🧑‍💻🤖 Human-in-the-Loop Machine Learning: Active learning and annotation for human-centered AI](/content/books/human-in-the-loop-machine-learning-active-learning-and-annotation-for-human-centered-ai.md) by Robert (Munro) Monarch provides a practical guide to optimizing machine learning systems by incorporating human feedback, with a focus on active learning and data annotation.  
+* [💺🚪💡🤔 The Design of Everyday Things](/content/books/the-design-of-everyday-things.md) by Donald A. Norman 🧠. A classic in the field of human-computer interaction, it provides foundational principles for designing products and systems that are intuitive and easy to use.  
+* [🤖⚙️ AI Agents in Action](/content/books/ai-agents-in-action.md) by Micheal Lanham ⚙️. This book focuses on building production-ready AI agents and multi-agent systems using modern frameworks and tools, offering a more technical and hands-on perspective on agentic systems.  
 * Multi-Agent Systems: An Introduction to Distributed Artificial Intelligence by Jacques Ferber 🤝. This foundational text explores the theory behind multi-agent systems, focusing on how agents communicate and coordinate to solve complex problems, which is highly relevant to Magentic-UI's co-tasking and co-planning features.

@@ -10,7 +10,7 @@ Channel: Heather Cox Richardson
 tags:
 youtube: https://youtu.be/WKlmog42-Wg
 ---
-[Home](../index.md) > [Videos](./index.md) | [🏛️🇺🇸📖 Heather Cox Richardson](../people/heather-cox-richardson.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md) | [🏛️🇺🇸📖 Heather Cox Richardson](/content/people/heather-cox-richardson.md)  
 # 🎭🤥👓 Image vs Reality—What the Administration Wants You to Think | Explainer  
 ![Image vs. Reality—What the Administration Wants You to Think | Explainer](https://youtu.be/WKlmog42-Wg)  
   
@@ -62,7 +62,7 @@ A: 🎭 The use of costumes, like frogs or Mr. Potato Head, is a form of visual 
   
 ### Similar: Context and Analysis of Current American Politics  
   
-* [🏛️⛓️ Democracy in Chains: The Deep History of the Radical Right's Stealth Plan for America](../books/democracy-in-chains-the-deep-history-of-the-radical-rights-stealth-plan-for-america.md) by Nancy MacLean. This book is relevant as it provides a deep historical context for the long-term, ideological project to dismantle government, aligning with the video's analysis of a decades-long effort to secure power against the majority's will \[[05:21](http://www.youtube.com/watch?v=WKlmog42-Wg&t=321)].  
+* [🏛️⛓️ Democracy in Chains: The Deep History of the Radical Right's Stealth Plan for America](/content/books/democracy-in-chains-the-deep-history-of-the-radical-rights-stealth-plan-for-america.md) by Nancy MacLean. This book is relevant as it provides a deep historical context for the long-term, ideological project to dismantle government, aligning with the video's analysis of a decades-long effort to secure power against the majority's will \[[05:21](http://www.youtube.com/watch?v=WKlmog42-Wg&t=321)].  
 * 🗳️ *Uncounted: The Crisis of Voter Suppression in America* by Gilda R. Daniels. It offers a crucial look at the legal and practical tactics of voter suppression and its effect on election outcomes, directly supporting the video's claims about a dysfunctional democracy \[[08:50](http://www.youtube.com/watch?v=WKlmog42-Wg&t=530)].  
   
 ### Contrasting: Alternative Views on American Governance and Conservatism  
@@ -72,7 +72,7 @@ A: 🎭 The use of costumes, like frogs or Mr. Potato Head, is a form of visual 
   
 ### Creatively Related: Media, Authority, and Resistance  
   
-* [🏭🫡 Manufacturing Consent: The Political Economy of the Mass Media](../books/manufacturing-consent.md) by Edward S. Herman and Noam Chomsky. This book is creatively related as it offers a framework for analyzing how political elites and administrations attempt to control the narrative and "project an image" by filtering information through the media ecosystem \[[06:44](http://www.youtube.com/watch?v=WKlmog42-Wg&t=404)].  
+* [🏭🫡 Manufacturing Consent: The Political Economy of the Mass Media](/content/books/manufacturing-consent.md) by Edward S. Herman and Noam Chomsky. This book is creatively related as it offers a framework for analyzing how political elites and administrations attempt to control the narrative and "project an image" by filtering information through the media ecosystem \[[06:44](http://www.youtube.com/watch?v=WKlmog42-Wg&t=404)].  
 * 🎭 *Janes and the New Order: From Liberalism to Authoritarianism* by Hannah Arendt. Although historical, Arendt's work on totalitarianism and the nature of authority provides a philosophical lens for examining the administration's attempts to portray itself as an **authoritarian dictator** \[[11:02](http://www.youtube.com/watch?v=WKlmog42-Wg&t=662)].  
   
 ## 🐦 Tweet  

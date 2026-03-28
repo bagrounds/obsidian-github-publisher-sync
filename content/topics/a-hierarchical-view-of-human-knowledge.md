@@ -8,7 +8,7 @@ force_analyze_links: false
 link_analysis_time: 2026-03-25T23:13:22.807Z
 link_analysis_model: gemini-3.1-flash-lite-preview
 ---
-[Home](../index.md) > [Topics](./index.md)  
+[Home](/content/index.md) > [Topics](/content/topics/index.md)  
 # 🌲🪜🧠 A Hierarchical View of Human Knowledge  
 ## 🤖 AI Summary  
 **Introduction: A Hierarchical View of Human Knowledge** 🧠  
@@ -16,15 +16,15 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 Human knowledge can be conceptually organized into a hierarchical structure, where broad, overarching categories branch into increasingly specific subcategories. While this structure is a simplification and acknowledges the interconnectedness of knowledge 🔗, it provides a useful framework for exploration and understanding 🗺️. At the highest level, we propose the following categories as a starting point:  
   
 **Top-Level Categories of Human Knowledge:**  
-* [Science](./science.md) 🔬  
-* [Mathematics](./math.md) 🔢  
-* [Engineering](./engineering.md) 🚂  
-* [Technology](./technology.md) 💻  
-* [Humanities](./humanities.md) 📜  
-* [Social Sciences](./social-sciences.md) 👥  
-* [Arts](./arts.md) 🎨  
-* [Religion](./religion.md) 🙏  
-* [Philosophy](./philosophy.md) 🤔  
+* [Science](/content/topics/science.md) 🔬  
+* [Mathematics](/content/topics/math.md) 🔢  
+* [Engineering](/content/topics/engineering.md) 🚂  
+* [Technology](/content/topics/technology.md) 💻  
+* [Humanities](/content/topics/humanities.md) 📜  
+* [Social Sciences](/content/topics/social-sciences.md) 👥  
+* [Arts](/content/topics/arts.md) 🎨  
+* [Religion](/content/topics/religion.md) 🙏  
+* [Philosophy](/content/topics/philosophy.md) 🤔  
   
 **Justification for This Set of Categories:**  
 These categories are chosen as the top level because they represent:  

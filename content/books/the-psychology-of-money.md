@@ -8,7 +8,7 @@ Author:
 tags:
 affiliate link: https://amzn.to/3HqgnV2
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 💰🤔😊 The Psychology of Money: Timeless lessons on wealth, greed, and happiness  
 [🛒 Psychology of Money: Timeless lessons on wealth, greed, and happiness. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3HqgnV2)  
   
@@ -61,13 +61,13 @@ The book challenges the traditional notion that financial success is solely abou
 The book is highly accessible and engaging, using compelling stories to illustrate key concepts. While it doesn't provide rigorous academic research, it draws on well-established principles from behavioral finance and psychology. The author, Morgan Housel, has a strong background in financial journalism and is known for his insightful writing. Reviews from reputable sources, such as The Wall Street Journal and Amazon, are overwhelmingly positive. The book's strength lies in its ability to make complex psychological concepts understandable and applicable to everyday financial decisions. The anecdotal nature of the book may be seen as a weakness by some, but it does serve to make the information more memorable and relatable. The book is not intended to be a technical guide to investing but rather a guide to the psychology behind successful financial behavior. 📝  
   
 ### 📚 Book Recommendations  
-* **Best Alternate Book on the Same Topic:** "[Thinking, Fast and Slow](./thinking-fast-and-slow.md)" by Daniel Kahneman. This book offers a deeper dive into the psychological biases that influence decision-making, including financial decisions. 🧠  
-* **Best Tangentially Related Book:** "[Atomic Habits](./atomic-habits.md)" by James Clear. This book focuses on building good habits, which is essential for long-term financial success. 🛠️  
+* **Best Alternate Book on the Same Topic:** "[Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md)" by Daniel Kahneman. This book offers a deeper dive into the psychological biases that influence decision-making, including financial decisions. 🧠  
+* **Best Tangentially Related Book:** "[Atomic Habits](/content/books/atomic-habits.md)" by James Clear. This book focuses on building good habits, which is essential for long-term financial success. 🛠️  
 * **Best Diametrically Opposed Book:** "The Intelligent Investor" by Benjamin Graham. This book emphasizes fundamental analysis and rational investing, contrasting with the psychological focus of "The Psychology of Money." 📈  
 * **Best Fiction Book That Incorporates Related Ideas:** "The Wolf of Wall Street" by Jordan Belfort. While a cautionary tale, it vividly illustrates the dangers of greed and excessive risk-taking. 🐺  
-* **Best Book That Is More General:** "[Sapiens: A Brief History of Humankind](./sapiens-a-brief-history-of-humankind.md)" by Yuval Noah Harari. It provides a broader perspective on human behavior and how it has evolved over time, offering context for our financial decisions. 🌍  
+* **Best Book That Is More General:** "[Sapiens: A Brief History of Humankind](/content/books/sapiens-a-brief-history-of-humankind.md)" by Yuval Noah Harari. It provides a broader perspective on human behavior and how it has evolved over time, offering context for our financial decisions. 🌍  
 * **Best Book That Is More Specific:** "A Random Walk Down Wall Street" by Burton G. Malkiel. This book delves into the technical aspects of investing and market efficiency. 📊  
-* **Best Book That Is More Rigorous:** [🤔💸 Misbehaving: The Making of Behavioral Economics](./misbehaving-the-making-of-behavioral-economics.md) by Richard H. Thaler. This book presents the academic foundation of behavioral economics, providing a more rigorous analysis of psychological biases. 🔬  
+* **Best Book That Is More Rigorous:** [🤔💸 Misbehaving: The Making of Behavioral Economics](/content/books/misbehaving-the-making-of-behavioral-economics.md) by Richard H. Thaler. This book presents the academic foundation of behavioral economics, providing a more rigorous analysis of psychological biases. 🔬  
 * **Best Book That Is More Accessible:** "I Will Teach You to Be Rich" by Ramit Sethi. This book offers a more practical, step-by-step guide to personal finance, with a focus on automation and simple strategies. 💸  
   
 ## 💬 [Gemini](https://gemini.google.com) Prompt  

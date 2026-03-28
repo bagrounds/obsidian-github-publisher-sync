@@ -7,7 +7,7 @@ share: true
 affiliate link: https://amzn.to/4flCPeN
 CTA: 🤖 Engineer autonomy.
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🤖🧠🔗 Building AI Agents with LLMs, RAG, and Knowledge Graphs: A practical guide to autonomous and modern AI agents  
 [🛒 Building AI Agents with LLMs, RAG, and Knowledge Graphs: A practical guide to autonomous and modern AI agents. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4flCPeN)  
   
@@ -39,9 +39,9 @@ This book is ideal for:
   
 ### 📖 Similar Reads  
   
-* **[🤖⚙️ AI Agents in Action](./ai-agents-in-action.md)** by Micheal Lanham: ⚙️ This book provides a proven framework for developing practical agents that can handle real-world business and personal tasks. 🚀 It covers agent behavior patterns, production-ready deployment, and the use of tools like the OpenAI Assistants API.  
+* **[🤖⚙️ AI Agents in Action](/content/books/ai-agents-in-action.md)** by Micheal Lanham: ⚙️ This book provides a proven framework for developing practical agents that can handle real-world business and personal tasks. 🚀 It covers agent behavior patterns, production-ready deployment, and the use of tools like the OpenAI Assistants API.  
 * 🌳 **Knowledge Graph-Enhanced RAG** by Tomaž Bratanič and Oskar Hane: 🌳 This title focuses on how to structure context data as a knowledge graph to implement more accurate, performant, and traceable RAG systems. 🔧 It is filled with practical techniques for building RAG on both unstructured and structured data.  
-* **[❓📚 A Simple Guide to Retrieval Augmented Generation](./a-simple-guide-to-retrieval-augmented-generation.md)** by Abhinav Kimothi: 📖 For those who want a plain-English guide to RAG, this book is packed with realistic Python 🐍 code examples. 🧑‍🏫 It takes the reader from the basic concepts of RAG to more advanced approaches, making it accessible even for those new to AI.  
+* **[❓📚 A Simple Guide to Retrieval Augmented Generation](/content/books/a-simple-guide-to-retrieval-augmented-generation.md)** by Abhinav Kimothi: 📖 For those who want a plain-English guide to RAG, this book is packed with realistic Python 🐍 code examples. 🧑‍🏫 It takes the reader from the basic concepts of RAG to more advanced approaches, making it accessible even for those new to AI.  
   
 ### 🤔 Contrasting Perspectives  
   
@@ -54,5 +54,5 @@ This book is ideal for:
 * 🔄 **Retrieval-Augmented Generation in Production with Haystack**: ⚙️ This guide offers a practical blueprint for the LLM software development lifecycle, focusing on the Haystack framework for building scalable, API-driven LLM backends.  
 * 🌳 **Knowledge Graphs**: 📚 For a foundational understanding, this book by Aidan Hogan and others covers the mechanics and organizing principles of knowledge graphs, showing how to build and exploit a connected representation of data.  
   
-## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro)  
+## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-pro)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Building AI Agents with LLMs, RAG, and Knowledge Graphs: A practical guide to autonomous and modern AI agents. Never put book titles in quotes or italics. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

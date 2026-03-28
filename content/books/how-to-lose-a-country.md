@@ -8,7 +8,7 @@ Author:
 tags:
 affiliate link: https://amzn.to/4km5FNP
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🏛️➡️👑 How to Lose a Country: The 7 Steps from Democracy to Dictatorship  
 [🛒 How to Lose a Country: The 7 Steps from Democracy to Dictatorship. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4km5FNP)  
   
@@ -59,11 +59,11 @@ affiliate link: https://amzn.to/4km5FNP
 ### ⚠️ Similar Warnings and Analyses  
   
 * 🇷🇺 **_The Road to Unfreedom: Russia, Europe, America_ by Timothy Snyder:** 🗣️ Explores the rise of authoritarianism, manipulation of information, and the interconnectedness of anti-democratic movements globally.  
-* **[🗳️🏛️☠️ How Democracies Die](./how-democracies-die.md) by Steven Levitsky & Daniel Ziblatt:** 📉 Analyzes how democracies erode from within, often through seemingly legal means, drawing historical and contemporary parallels.  
-* 📜 **_[On Tyranny: Twenty Lessons from the Twentieth Century](./on-tyranny.md)_ by Timothy Snyder:** 📚 A concise historical guide offering lessons on resisting authoritarianism based on 20th-century examples.  
+* **[🗳️🏛️☠️ How Democracies Die](/content/books/how-democracies-die.md) by Steven Levitsky & Daniel Ziblatt:** 📉 Analyzes how democracies erode from within, often through seemingly legal means, drawing historical and contemporary parallels.  
+* 📜 **_[On Tyranny: Twenty Lessons from the Twentieth Century](/content/books/on-tyranny.md)_ by Timothy Snyder:** 📚 A concise historical guide offering lessons on resisting authoritarianism based on 20th-century examples.  
 * 🔄 **_Cultural Backlash: Trump, Brexit, and Authoritarian Populism_ by Pippa Norris & Ronald Inglehart:** 🗣️ Argues that the rise of authoritarian populism is driven by a backlash against progressive cultural changes among traditional social conservatives.  
 * 🇷🇺 **_Surviving Autocracy_ by Masha Gessen:** 📝 A collection of essays analyzing the Trump presidency and the nature of autocracy in the modern era, drawing on experiences in Russia.  
-* **[👥⚔️🏛️ The People vs. Democracy: Why Our 🗽 Freedom Is in ⚠️ Danger and How to Save It](./the-people-vs-democracy.md) by Yascha Mounk:** 🗣️ Examines the rise of illiberal democracy and undemocratic liberalism, arguing that democracy and liberalism are decoupling.  
+* **[👥⚔️🏛️ The People vs. Democracy: Why Our 🗽 Freedom Is in ⚠️ Danger and How to Save It](/content/books/the-people-vs-democracy.md) by Yascha Mounk:** 🗣️ Examines the rise of illiberal democracy and undemocratic liberalism, arguing that democracy and liberalism are decoupling.  
   
 ### 💡 Contrasting Perspectives and Solutions  
   
@@ -84,6 +84,6 @@ affiliate link: https://amzn.to/4km5FNP
 * 🧙 **_Mario and the Magician_ by Thomas Mann (Fiction, discussed in Richard Parker's _Here, the People Rule_):** 📖 A novella exploring themes of manipulation, mass psychology, and the allure of authoritarian figures, often interpreted as an allegory for the rise of fascism.".  
   
   
-## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
+## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on How to Lose a Country. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text..  
   

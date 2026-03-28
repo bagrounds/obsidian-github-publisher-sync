@@ -7,7 +7,7 @@ share: true
 affiliate link: https://amzn.to/42ezkla
 CTA: 🔍 Question authority.
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🧪👎 Bad Science: Quacks, Hacks, and Big Pharma Flacks  
 [🛒 Bad Science: Quacks, Hacks, and Big Pharma Flacks. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/42ezkla)  
   
@@ -34,9 +34,9 @@ CTA: 🔍 Question authority.
 ### ➕ Similar Books  
   
 * 💊 **Bad Pharma by Ben Goldacre:** 📖 Another essential read by Goldacre, this book focuses more intently on the systemic flaws and ethical issues within the pharmaceutical industry, examining how drug companies mislead doctors and harm patients through biased research and marketing practices.  
-* **[❓✅ Trick or Treatment: The Undeniable Facts about Alternative Medicine](./trick-or-treatment-the-undeniable-facts-about-alternative-medicine.md) by Simon Singh and Edzard Ernst:** 👨‍⚕️ This book rigorously investigates various alternative therapies, dissecting practices like acupuncture, homeopathy, and chiropractic therapy through scientific investigation and clinical trials, concluding that many lack scientific basis.  
-* **[📊🤥 How to Lie with Statistics](./how-to-lie-with-statistics.md) by Darrell Huff:** 📖 A classic primer on statistical literacy, this book helps readers identify common ways statistics are manipulated and misrepresented in media, advertising, and other contexts, honing one's ability to detect misleading information.  
-* **[😈🌍🔬🕯️🌑 The Demon-Haunted World: Science as a Candle in the Dark](./the-demon-haunted-world.md) by Carl Sagan:** 🌟 Sagan passionately advocates for scientific thinking and skepticism as crucial tools against pseudoscience and irrationality, exploring the societal dangers of scientific illiteracy.  
+* **[❓✅ Trick or Treatment: The Undeniable Facts about Alternative Medicine](/content/books/trick-or-treatment-the-undeniable-facts-about-alternative-medicine.md) by Simon Singh and Edzard Ernst:** 👨‍⚕️ This book rigorously investigates various alternative therapies, dissecting practices like acupuncture, homeopathy, and chiropractic therapy through scientific investigation and clinical trials, concluding that many lack scientific basis.  
+* **[📊🤥 How to Lie with Statistics](/content/books/how-to-lie-with-statistics.md) by Darrell Huff:** 📖 A classic primer on statistical literacy, this book helps readers identify common ways statistics are manipulated and misrepresented in media, advertising, and other contexts, honing one's ability to detect misleading information.  
+* **[😈🌍🔬🕯️🌑 The Demon-Haunted World: Science as a Candle in the Dark](/content/books/the-demon-haunted-world.md) by Carl Sagan:** 🌟 Sagan passionately advocates for scientific thinking and skepticism as crucial tools against pseudoscience and irrationality, exploring the societal dangers of scientific illiteracy.  
 * 🌍 **Denialism: How Irrational Thinking Harms the Planet and Threatens Our Lives by Michael Specter:** ⚠️ This work explores the growing trend of denying scientific consensus on critical issues, from vaccine efficacy to climate change, and the societal consequences of such irrational thinking.  
   
 ### ➖ Contrasting Books  
@@ -46,7 +46,7 @@ CTA: 🔍 Question authority.
   
 ### 🎨 Creatively Related Books  
   
-* **[📜🌍⏳ Sapiens: A Brief History of Humankind](./sapiens-a-brief-history-of-humankind.md) by Yuval Noah Harari:** 🌍 This sweeping historical narrative explores the development of human societies, belief systems, and scientific revolutions, offering a broad context for understanding how humans construct knowledge and narratives, which can be both scientific and non-scientific.  
+* **[📜🌍⏳ Sapiens: A Brief History of Humankind](/content/books/sapiens-a-brief-history-of-humankind.md) by Yuval Noah Harari:** 🌍 This sweeping historical narrative explores the development of human societies, belief systems, and scientific revolutions, offering a broad context for understanding how humans construct knowledge and narratives, which can be both scientific and non-scientific.  
 * 🔢 **Innumeracy by John Allen Paulos:** ➕ This book explores mathematical illiteracy and its societal consequences, demonstrating how a lack of understanding of statistics and probability impacts daily decision-making and susceptibility to misleading information, echoing Goldacre's call for critical evaluation of data.  
 * 💻 **Everybody Lies: Big Data, New Data, and What the Internet Can Tell Us About Who We Really Are by Seth Stephens-Davidowitz:** 🔍 This book delves into the power of digital data to uncover hidden truths about human behavior. 💡 While not about medical science specifically, it offers a fascinating look at how rigorous data analysis can reveal unexpected insights, contrasting with the often-cherry-picked data in "bad science."  
   

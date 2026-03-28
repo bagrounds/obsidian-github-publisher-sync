@@ -6,7 +6,7 @@ URL: https://bagrounds.org/books/american-kleptocracy-how-the-u-s-created-the-wo
 share: true
 affiliate link: https://amzn.to/3SvVOsw
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🇺🇸💸🧺🌍 American Kleptocracy: How the U.S. Created the World's Greatest Money Laundering Scheme in History  
 [🛒 American Kleptocracy: How the U.S. Created the World's Greatest Money Laundering Scheme in History. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3SvVOsw)  
   
@@ -33,7 +33,7 @@ Casey Michel's *American Kleptocracy* 💥 is an explosive investigation into ho
   
 * 💰 ***Moneyland: Why Thieves and Crooks Now Rule the World and How To Take It Back*** by Oliver Bullough: This book also investigates the global network of kleptocracy and offshore banking, tracing its origins and impact. It explores how institutions in Europe and the U.S. have become money-laundering operations.  
 * 🤵 ***Butler to the World: How Britain Helps the World's Worst People Launder Money, Commit Crimes, and Get Away with Anything*** by Oliver Bullough: This book focuses specifically on Britain's role as a central player in the global offshore economy and an enabler of financial crime.  
-* **[💸🌍 Kleptopia: How Dirty Money Is Conquering the World](./kleptopia-how-dirty-money-is-conquering-the-world.md)** by Tom Burgis: This book delves into the connections between dirty money, political power, and organized crime on a global scale.  
+* **[💸🌍 Kleptopia: How Dirty Money Is Conquering the World](/content/books/kleptopia-how-dirty-money-is-conquering-the-world.md)** by Tom Burgis: This book delves into the connections between dirty money, political power, and organized crime on a global scale.  
 * 📰 ***The Panama Papers: Breaking the Story of How the Rich and Powerful Hide Their Money*** by Bastian Obermayer and Frederik Obermaier: This account details the investigation into the massive data leak that exposed the hidden financial dealings of the world's elite.  
 * 🏝️ ***Treasure Islands: Uncovering the Damage of Offshore Banking and Tax Havens*** by Nicholas Shaxson: This book examines the hidden world of offshore finance and its detrimental effects on global economic stability and equality.  
 * 🥶 ***Freezing Order: A True Story of Money Laundering, Murder, and Surviving Vladimir Putin's Wrath*** by Bill Browder: This narrative follows Browder's fight against Russian kleptocracy after the murder of his lawyer, exposing the vast scale of illicit wealth and the dangers of confronting it.  
@@ -48,11 +48,11 @@ Casey Michel's *American Kleptocracy* 💥 is an explosive investigation into ho
 ### 💡 Creatively Related Books (Exploring Underlying Themes or Broader Contexts)  
   
 * 📢 ***Foreign Agents: How American Lobbyists and Lawmakers Threaten Democracy Around the World*** by Casey Michel: Michel's second book directly complements *American Kleptocracy* by focusing on the role of foreign lobbying in enabling kleptocratic regimes and influencing U.S. policy.  
-* **[👑🌎 Autocracy, Inc.: The Dictators Who Want to Run the World](./autocracy-inc-the-dictators-who-want-to-run-the-world.md)** by Anne Applebaum: This book examines the rise of authoritarian regimes globally and how they collaborate, providing a broader geopolitical context for the kleptocracy discussed in Michel's book.  
+* **[👑🌎 Autocracy, Inc.: The Dictators Who Want to Run the World](/content/books/autocracy-inc-the-dictators-who-want-to-run-the-world.md)** by Anne Applebaum: This book examines the rise of authoritarian regimes globally and how they collaborate, providing a broader geopolitical context for the kleptocracy discussed in Michel's book.  
 * 📜 ***The Code of Capital: How the Law Creates Wealth and Inequality*** by Katharina Pistor: This book explores how legal frameworks enable the concentration of wealth, offering a foundational understanding of the systems that can be exploited for illicit gain.  
 * 🐳 ***Billion Dollar Whale: The Man Who Fooled Wall Street, Hollywood, and the World*** by Tom Wright: While focused on a specific, audacious financial fraud, this book illustrates the mechanisms and enablers that facilitate large-scale financial crime, resonating with the themes of illicit finance and corruption.  
 * 💸 ***Criminal Capital: How the Finance Industry Facilitates Crime*** by Stephen Platt: This book explores the ways in which the financial industry can be exploited by criminals, providing a detailed look at the intersection of finance and illicit activities.  
 * ⚡ ***Flash Boys: A Wall Street Revolt*** by Michael Lewis: While about high-frequency trading, this book touches on the complexities and potential for manipulation within financial markets, which can be creatively linked to the opaque systems used for money laundering.  
   
-## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
+## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on American Kleptocracy: How the U.S. Created the World's Greatest Money Laundering Scheme in History. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

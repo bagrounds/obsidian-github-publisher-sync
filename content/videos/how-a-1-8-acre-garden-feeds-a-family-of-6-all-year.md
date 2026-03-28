@@ -10,7 +10,7 @@ Channel: Anne of All Trades
 tags:
 youtube: https://youtu.be/uz7OVfaYeSA
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md)  
 # 🌱👨‍👩‍👧‍👦🍎 How a 1/8 Acre Garden Feeds a Family of 6 ALL YEAR!  
 ![How a 1/8 Acre Garden Feeds a Family of 6 ALL YEAR!](https://youtu.be/uz7OVfaYeSA)  
   
@@ -57,7 +57,7 @@ youtube: https://youtu.be/uz7OVfaYeSA
   
 ### ↔️ Similar  
 * 🌱 The New Organic Grower by Eliot Coleman: A classic guide 📚 focusing on small-scale, high-yield methods and season extension techniques that maximize production per square foot.  
-* [🌱🟩⬆️ Square Foot Gardening, 4th Edition: The World’s Most Popular Growing Method to Harvest MORE Food from Less Space](../books/square-foot-gardening-4th-edition-the-worlds-most-popular-growing-method-to-harvest-more-food-from-less-space.md) by Mel Bartholomew: A highly popular method for 🏡 creating small, raised, gridded gardens that dramatically reduce wasted space and simplify planting for maximum production.  
+* [🌱🟩⬆️ Square Foot Gardening, 4th Edition: The World’s Most Popular Growing Method to Harvest MORE Food from Less Space](/content/books/square-foot-gardening-4th-edition-the-worlds-most-popular-growing-method-to-harvest-more-food-from-less-space.md) by Mel Bartholomew: A highly popular method for 🏡 creating small, raised, gridded gardens that dramatically reduce wasted space and simplify planting for maximum production.  
   
 ### 🆚 Contrasting  
 * 🌾 The One-Straw Revolution by Masanobu Fukuoka: Challenges intensive methods, promoting a 🧘 philosophical approach to farming that requires almost no labor, tillage, or chemical inputs, letting nature do the work.  

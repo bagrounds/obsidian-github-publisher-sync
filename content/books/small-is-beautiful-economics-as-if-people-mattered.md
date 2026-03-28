@@ -7,7 +7,7 @@ share: true
 CTA: 🌱 Nurture humanity.
 affiliate link: https://amzn.to/4oDqFSv
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🤏🧑 Small Is Beautiful: Economics as if People Mattered  
 [🛒 Small Is Beautiful: Economics as if People Mattered. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4oDqFSv)  
   
@@ -82,17 +82,17 @@ affiliate link: https://amzn.to/4oDqFSv
 ## 📚 Book Recommendations  
   
 ### 📖 Similar  
-* [📉🌍⏳ Limits to Growth: The 30-Year Global Update](./limits-to-growth-the-30-year-global-update.md) by Donella H. Meadows, Dennis L. Meadows, Jørgen Randers, William W. Behrens III  
-* [🍩🌍 Doughnut Economics: Seven Ways to Think Like a 21st-Century Economist](./doughnut-economics-seven-ways-to-think-like-a-21st-century-economist.md) by Kate Raworth  
-* [🪢🌾 Braiding Sweetgrass: Indigenous Wisdom, Scientific Knowledge, and the Teachings of Plants](./braiding-sweetgrass.md) by Robin Wall Kimmerer  
+* [📉🌍⏳ Limits to Growth: The 30-Year Global Update](/content/books/limits-to-growth-the-30-year-global-update.md) by Donella H. Meadows, Dennis L. Meadows, Jørgen Randers, William W. Behrens III  
+* [🍩🌍 Doughnut Economics: Seven Ways to Think Like a 21st-Century Economist](/content/books/doughnut-economics-seven-ways-to-think-like-a-21st-century-economist.md) by Kate Raworth  
+* [🪢🌾 Braiding Sweetgrass: Indigenous Wisdom, Scientific Knowledge, and the Teachings of Plants](/content/books/braiding-sweetgrass.md) by Robin Wall Kimmerer  
   
 ### 🆚 Contrasting  
 * 💰 The Wealth of Nations by Adam Smith  
-* [💰📈🌍⏳ Capital in the Twenty-First Century](./capital-in-the-twenty-first-century.md) by Thomas Piketty  
+* [💰📈🌍⏳ Capital in the Twenty-First Century](/content/books/capital-in-the-twenty-first-century.md) by Thomas Piketty  
 * 🌐 The World Is Flat by Thomas L. Friedman  
   
 ### 🔗 Related  
-* [🌲 Walden](./walden.md) by Henry David Thoreau  
+* [🌲 Walden](/content/books/walden.md) by Henry David Thoreau  
 * ⚠️ Silent Spring by Rachel Carson  
 * 🧑‍🤝‍🧑 The Human Condition by Hannah Arendt  
   

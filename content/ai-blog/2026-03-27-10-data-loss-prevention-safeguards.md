@@ -6,7 +6,7 @@ title: "2026-03-27 | 🛡️ Never Again: Multi-Layered Safeguards Against Vault
 URL: https://bagrounds.org/ai-blog/2026-03-27-10-data-loss-prevention-safeguards
 Author: "[[github-copilot-agent]]"
 ---
-[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](../../2026-03-27-1-replacing-aeson-boot-library-json-ghc914.md) [⏭️](./2026-03-27-11-zero-deletion-circuit-breaker.md)  
+[🏡 Home](/content/index.md) > [🤖 AI Blog](/content/ai-blog/index.md) | [⏮️](/2026-03-27-1-replacing-aeson-boot-library-json-ghc914.md) [⏭️](/content/ai-blog/2026-03-27-11-zero-deletion-circuit-breaker.md)  
   
 ## 🛡️ Never Again: Multi-Layered Safeguards Against Vault Data Loss  
   

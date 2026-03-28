@@ -5,7 +5,7 @@ aliases:
 title: 🎲🌲📊 Random Forest Classifier
 URL: https://bagrounds.org/topics/random-forest-classifier
 ---
-[Home](../index.md) > [Topics](./index.md)  
+[Home](/content/index.md) > [Topics](/content/topics/index.md)  
 # 🎲🌲📊 Random Forest Classifier  
 ## 🤖 AI Summary  
   
@@ -271,7 +271,7 @@ A random forest is cool. It's like, a bunch of trees, right? And they all vote. 
 📚 **More General (Statistics, Data Science):**  
   
 - 📊 _An Introduction to Statistical Learning with Applications in R_ by Gareth James, Daniela Witten, Trevor Hastie, and Robert Tibshirani.1 (More accessible version of "Elements," great for beginners/intermediate). 🏁🍼  
-- 📈 _[Naked Statistics](../books/naked-statistics.md): Stripping the Dread from the Data_ by Charles Wheelan. (Accessible introduction to statistical concepts). 🍼  
+- 📈 _[Naked Statistics](/content/books/naked-statistics.md): Stripping the Dread from the Data_ by Charles Wheelan. (Accessible introduction to statistical concepts). 🍼  
   
 📚 **More Specific (Advanced Ensemble Topics):**  
   
@@ -285,7 +285,7 @@ A random forest is cool. It's like, a bunch of trees, right? And they all vote. 
 📚 **Rigorous (Mathematical Foundations):**  
   
 - 🧙‍♂️ _The Elements of Statistical Learning_ by Trevor Hastie, Robert Tibshirani, and Jerome Friedman (already mentioned, but fits here too).  
-- [🎲🧮 Probability Theory: The Logic of Science](../books/probability-theory.md) by E.T. Jaynes. (Deep dive into probabilistic reasoning).  
+- [🎲🧮 Probability Theory: The Logic of Science](/content/books/probability-theory.md) by E.T. Jaynes. (Deep dive into probabilistic reasoning).  
   
 📚 **Accessible (Easier to grasp introductions):**  
   

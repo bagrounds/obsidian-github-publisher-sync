@@ -7,7 +7,7 @@ share: true
 CTA: 😴 Embrace restful nights.
 affiliate link: https://amzn.to/3KnIgil
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 👶😴 How Babies Sleep: The Gentle, Science-Based Method to Help Your Baby Sleep Through the Night  
 [🛒 How Babies Sleep: The Gentle, Science-Based Method to Help Your Baby Sleep Through the Night. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3KnIgil)  
   
@@ -72,17 +72,17 @@ affiliate link: https://amzn.to/3KnIgil
   
 ## 📚 Book Recommendations  
 ### Similar  
-* [😴 The Happy Sleeper: The Science-Backed Guide to Helping Your Baby Get a Good Night's Sleep - Newborn to School Age](./the-happy-sleeper-the-science-backed-guide-to-helping-your-baby-get-a-good-nights-sleep-newborn-to-school-age.md) by Heather Turgeon and Julie Wright  
-* [😴👶  Solve Your Child's Sleep Problems](./solve-your-childs-sleep-problems.md) by Richard Ferber  
+* [😴 The Happy Sleeper: The Science-Backed Guide to Helping Your Baby Get a Good Night's Sleep - Newborn to School Age](/content/books/the-happy-sleeper-the-science-backed-guide-to-helping-your-baby-get-a-good-nights-sleep-newborn-to-school-age.md) by Heather Turgeon and Julie Wright  
+* [😴👶  Solve Your Child's Sleep Problems](/content/books/solve-your-childs-sleep-problems.md) by Richard Ferber  
 * 📖 Precious Little Sleep: The Complete Guide to Your Baby and Toddler's Sleep by Alexis Dubief  
   
 ### Contrasting  
 * 😭 The No-Cry Sleep Solution: Gentle Ways to Help Your Baby Sleep Through the Night by Elizabeth Pantley  
-* [😴🤱 Sweet Sleep: Nighttime and Naptime Strategies for the Breastfeeding Family](./sweet-sleep-nighttime-and-naptime-strategies-for-the-breastfeeding-family.md) by La Leche League International  
+* [😴🤱 Sweet Sleep: Nighttime and Naptime Strategies for the Breastfeeding Family](/content/books/sweet-sleep-nighttime-and-naptime-strategies-for-the-breastfeeding-family.md) by La Leche League International  
 * ❤️ Attached at the Heart: Eight Promises to Raise a Securely Attached Child by Barbara Nicholson and Lysa Parker  
   
 ### Related  
-* [😴💭 Why We Sleep: Unlocking the Power of Sleep and Dreams](./why-we-sleep-unlocking-the-power-of-sleep-and-dreams.md) by Matthew Walker  
+* [😴💭 Why We Sleep: Unlocking the Power of Sleep and Dreams](/content/books/why-we-sleep-unlocking-the-power-of-sleep-and-dreams.md) by Matthew Walker  
 * 💡 How to Sleep: The New Science-Based Solutions for Sleeping Through the Night by Rafael Pelayo  
 * 🗓️ The Wonder Weeks by Hetty van de Rijt and Frans Plooij  
   

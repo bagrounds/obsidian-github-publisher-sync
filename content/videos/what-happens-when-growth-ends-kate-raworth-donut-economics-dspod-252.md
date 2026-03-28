@@ -10,7 +10,7 @@ Channel: The DemystifySci Podcast
 tags:
 youtube: https://youtu.be/sAJecmnE0ec
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md)  
 # 📉🔚🌍 What Happens When Growth Ends? - Kate Raworth, Donut Economics, DSPod #252  
 ![What Happens When Growth Ends? - Kate Raworth, Donut Economics, DSPod #252](https://youtu.be/sAJecmnE0ec)  
   
@@ -44,13 +44,13 @@ youtube: https://youtu.be/sAJecmnE0ec
 ## 📚 Book Recommendations  
   
 ### ↔️ Similar  
-* **[📉🌎 Less is More: How Degrowth Will Save the World](../books/less-is-more-how-degrowth-will-save-the-world.md)** by Jason Hickel: Offers a strong argument for degrowth, directly supporting the Donut's growth-agnostic stance and challenging the core tenets of capitalist expansion.  
+* **[📉🌎 Less is More: How Degrowth Will Save the World](/content/books/less-is-more-how-degrowth-will-save-the-world.md)** by Jason Hickel: Offers a strong argument for degrowth, directly supporting the Donut's growth-agnostic stance and challenging the core tenets of capitalist expansion.  
 * 🌲 **Prosperity Without Growth: Economics for a Finite Planet** by Tim Jackson: A foundational text that systematically details the ecological and social limits of perpetual economic growth, proposing a framework for sustainable prosperity.  
   
 ### 🆚 Contrasting  
-* **[💰📈🌍⏳ Capital in the Twenty-First Century](../books/capital-in-the-twenty-first-century.md)** by Thomas Piketty: Focuses heavily on the accumulation and distribution of wealth under capitalism, providing a data-heavy, structural analysis of inequality that contrasts with the Donut's broader ecological-social model.  
+* **[💰📈🌍⏳ Capital in the Twenty-First Century](/content/books/capital-in-the-twenty-first-century.md)** by Thomas Piketty: Focuses heavily on the accumulation and distribution of wealth under capitalism, providing a data-heavy, structural analysis of inequality that contrasts with the Donut's broader ecological-social model.  
 * 🧭 **Basic Economics: A Common Sense Guide to the Economy** by Thomas Sowell: Presents a concise defense of free-market principles, efficiency, and price mechanisms, offering a staunch, traditional counterpoint to the Donut's critique of market centrality.  
   
 ### 🎨 Creatively Related  
-* **[🏆🎭 Winners Take All: The Elite Charade of Changing the World](../books/winners-take-all-the-elite-charade-of-changing-the-world.md)** by Anand Giridharadas: Explores how global elites attempt to solve problems without challenging the underlying system that created them, which relates to the Donut's focus on deep systemic design change.  
-* **[🤔🐇🐢 Thinking, Fast and Slow](../books/thinking-fast-and-slow.md)** by Daniel Kahneman: Discusses the two systems that drive human cognition, which is relevant because the Donut model advocates for moving beyond the flawed assumption of the perfectly rational economic man central to classical models.
+* **[🏆🎭 Winners Take All: The Elite Charade of Changing the World](/content/books/winners-take-all-the-elite-charade-of-changing-the-world.md)** by Anand Giridharadas: Explores how global elites attempt to solve problems without challenging the underlying system that created them, which relates to the Donut's focus on deep systemic design change.  
+* **[🤔🐇🐢 Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md)** by Daniel Kahneman: Discusses the two systems that drive human cognition, which is relevant because the Donut model advocates for moving beyond the flawed assumption of the perfectly rational economic man central to classical models.

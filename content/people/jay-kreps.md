@@ -4,7 +4,7 @@ aliases:
   - 👨‍💻☁️🐘 Jay Kreps
 title: 👨‍💻☁️🐘 Jay Kreps
 ---
-[Home](../index.md) > [People](./index.md)  
+[Home](/content/index.md) > [People](/content/people/index.md)  
 # 👨‍💻☁️🐘 Jay Kreps  
 🚀 Jay Kreps is a highly influential figure in the world of technology, particularly in the realm of data infrastructure and real-time data streaming 🌊. He is primarily known for:  
   
@@ -24,7 +24,7 @@ title: 👨‍💻☁️🐘 Jay Kreps
   
 **🧑‍🤝‍🧑 Books by his Confluent Co-founders and other industry experts:**  
 * 🚀 **Kafka: The Definitive Guide: Real-Time Data and Stream Processing at Scale** by Neha Narkhede, Gwen Shapira, and Todd Palino: 🤝 Co-authored by another Confluent co-founder, this book provides a comprehensive and practical guide to Apache Kafka. ⚙️ It covers how Kafka works, its design 🎨, and best practices ✅ for deploying it in production. 💯 If you're using or planning to use Kafka, this is a must-have.  
-* [💾⬆️🛡️ Designing Data-Intensive Applications: The Big Ideas Behind Reliable, Scalable, and Maintainable Systems](../books/designing-data-intensive-applications.md) by Martin Kleppmann: 💡 While not directly focused on Kafka, this book is widely regarded as a foundational text for anyone working with distributed systems and data. 📚 Kleppmann covers a broad range of topics, including data models, storage 🗄️, indexing, distributed transactions, consistency ⚖️, and fault tolerance. 🤓 It provides an excellent theoretical and practical understanding of the challenges and solutions in building data systems.  
+* [💾⬆️🛡️ Designing Data-Intensive Applications: The Big Ideas Behind Reliable, Scalable, and Maintainable Systems](/content/books/designing-data-intensive-applications.md) by Martin Kleppmann: 💡 While not directly focused on Kafka, this book is widely regarded as a foundational text for anyone working with distributed systems and data. 📚 Kleppmann covers a broad range of topics, including data models, storage 🗄️, indexing, distributed transactions, consistency ⚖️, and fault tolerance. 🤓 It provides an excellent theoretical and practical understanding of the challenges and solutions in building data systems.  
 * 🌊 **Making Sense of Stream Processing** by Martin Kleppmann: 🆓 This free ebook (often compiled from his articles and talks 🗣️) delves into how stream processing can make data processing systems more flexible and less complex. 🧩 It complements the concepts in "I Heart Logs" by offering another perspective on the power of streams.  
 * 🚦 **Streaming Systems: The What, Where, When, and How of Large-Scale Data Processing** by Tyler Akidau, Slava Chernyak, and Reuven Lax: 🏛️ This book focuses on the principles and patterns of streaming data processing, drawing from Google's experience with Apache Beam. 🧐 It's a more abstract and theoretical look at how to design and build robust streaming systems.  
   

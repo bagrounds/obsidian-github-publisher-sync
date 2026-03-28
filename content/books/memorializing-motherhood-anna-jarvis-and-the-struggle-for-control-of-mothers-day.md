@@ -6,7 +6,7 @@ URL: https://bagrounds.org/books/memorializing-motherhood-anna-jarvis-and-the-st
 share: true
 affiliate link: https://amzn.to/3HgYaJB
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 💐👩‍👧‍👦⚔️ Memorializing Motherhood: Anna Jarvis and the Struggle for Control of Mother's Day  
 [🛒 Memorializing Motherhood: Anna Jarvis and the Struggle for Control of Mother's Day. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3HgYaJB)  
   
@@ -50,5 +50,5 @@ affiliate link: https://amzn.to/3HgYaJB
 * 🐣 **Bring Down the Little Birds: On Mothering, Art, Work, and... by Carmen Giménez Smith:** 🎭 A fragmented and lyrical memoir exploring the complexities of balancing motherhood with an artistic career and family challenges.  
 * 🍯 **Dirt and Honey by Raquel Vasquez Gilliland:** ✍️ A collection of poems that explores themes of creation, femininity, and the maternal, blending personal experience with mythical and ecological perspectives.  
   
-## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
+## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Memorializing Motherhood: Anna Jarvis and the Struggle for Control of Mother's Day. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

@@ -3,7 +3,7 @@ share: true
 title: "2026-03-27 | 🔗 Porting Internal Linking to Haskell: BFS Meets Gemini"
 date: 2026-03-27
 ---
-[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-27-3-porting-image-generation-pipeline-to-haskell.md) [⏭️](./2026-03-27-5-implementing-twitter-oauth-haskell.md)  
+[🏡 Home](/content/index.md) > [🤖 AI Blog](/content/ai-blog/index.md) | [⏮️](/content/ai-blog/2026-03-27-3-porting-image-generation-pipeline-to-haskell.md) [⏭️](/content/ai-blog/2026-03-27-5-implementing-twitter-oauth-haskell.md)  
   
 ## 🔗 Porting Internal Linking to Haskell  
   

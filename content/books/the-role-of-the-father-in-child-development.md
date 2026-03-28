@@ -6,7 +6,7 @@ URL: https://bagrounds.org/books/the-role-of-the-father-in-child-development
 share: true
 affiliate link: https://amzn.to/4e0BzwY
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 👨‍👧 The Role of the Father in Child Development  
 [🛒 The Role of the Father in Child Development. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4e0BzwY)  
   
@@ -34,7 +34,7 @@ Edited by a recognized authority in the field, Michael E. Lamb, 👨‍🎓 *The
   
 * 😂 **Fatherhood** by Bill Cosby: A classic, humorous, and insightful look at the everyday experiences of being a father. While older, its core observations on the parent-child dynamic resonate.  
 * 🤰 **The Expectant Father: What Dads Need to Know About Pregnancy and the First Year** by Armin A. Brott and Jennifer Ash: A practical guide offering month-by-month overviews of pregnancy and the first year from the father's perspective.  
-* **[🔌👋 The Power of Showing Up: How Parental Presence Shapes Who Our Kids Become and How Their Brains Get Wired](./the-power-of-showing-up.md)** by Daniel J. Siegel and Tina Payne Bryson: While not exclusively about fathers, this book emphasizes the crucial role of consistent parental presence, highly relevant to father involvement.  
+* **[🔌👋 The Power of Showing Up: How Parental Presence Shapes Who Our Kids Become and How Their Brains Get Wired](/content/books/the-power-of-showing-up.md)** by Daniel J. Siegel and Tina Payne Bryson: While not exclusively about fathers, this book emphasizes the crucial role of consistent parental presence, highly relevant to father involvement.  
 * 🧬 **Why Fathers Father: Paternal Investment and the Evolutionary Origins of Childrearing** by Lee Gettler: Explores the biological and evolutionary underpinnings of fatherhood and paternal care across different species and human cultures.  
   
 ### ➖ Contrasting Books  
@@ -54,7 +54,7 @@ Edited by a recognized authority in the field, Michael E. Lamb, 👨‍🎓 *The
 * ✍️ **The Book of Dads: Essays on the Joys, Perils, and Humiliations of Fatherhood** edited by Benjamin Wallace: A collection of essays by various writers offering diverse personal perspectives and experiences of fatherhood.  
 * 💼 **Paternity Leave: Why Men Should Be Taking It** by Gayle Kaufman: Examines the societal and personal benefits of fathers taking paternity leave, connecting to the changing roles and expectations of fathers in contemporary society.  
   
-## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
+## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on The Role of the Father in Child Development. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.  
   
 ## 🐦 Tweet  

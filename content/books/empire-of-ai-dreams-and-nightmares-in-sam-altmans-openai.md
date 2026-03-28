@@ -6,7 +6,7 @@ URL: https://bagrounds.org/books/empire-of-ai-dreams-and-nightmares-in-sam-altma
 share: true
 affiliate link: https://amzn.to/3Hyx3K0
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🤖👑 Empire of AI: Dreams and Nightmares in Sam Altman's OpenAI  
 [🛒 Empire of AI: Dreams and Nightmares in Sam Altman's OpenAI. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3Hyx3K0)  
   
@@ -53,16 +53,16 @@ affiliate link: https://amzn.to/3Hyx3K0
   
 ### ✨ Creatively Related Books (Exploring Broader Impacts, History, or Philosophy)  
   
-* **[🤖⚠️📈 Superintelligence: Paths, Dangers, Strategies](./superintelligence-paths-dangers-strategies.md)** by Nick Bostrom. A foundational text exploring the potential risks and challenges posed by the development of superintelligent AI, providing a philosophical and existential backdrop to the AGI race described in "Empire of AI."  
-* **[🧬👥💾 Life 3.0: Being Human in the Age of Artificial Intelligence](./life-3-0.md)** by Max Tegmark. Discusses various possible futures for humanity in the age of AI, prompting thought experiments about the long-term societal impact of advanced AI.  
-* **[🤖🧑‍ Human Compatible: Artificial Intelligence and the Problem of Control](./human-compatible-artificial-intelligence-and-the-problem-of-control.md)** by Stuart Russell. Addresses the crucial problem of ensuring that advanced AI systems are aligned with human values, a key safety concern related to the pursuit of AGI.  
+* **[🤖⚠️📈 Superintelligence: Paths, Dangers, Strategies](/content/books/superintelligence-paths-dangers-strategies.md)** by Nick Bostrom. A foundational text exploring the potential risks and challenges posed by the development of superintelligent AI, providing a philosophical and existential backdrop to the AGI race described in "Empire of AI."  
+* **[🧬👥💾 Life 3.0: Being Human in the Age of Artificial Intelligence](/content/books/life-3-0.md)** by Max Tegmark. Discusses various possible futures for humanity in the age of AI, prompting thought experiments about the long-term societal impact of advanced AI.  
+* **[🤖🧑‍ Human Compatible: Artificial Intelligence and the Problem of Control](/content/books/human-compatible-artificial-intelligence-and-the-problem-of-control.md)** by Stuart Russell. Addresses the crucial problem of ensuring that advanced AI systems are aligned with human values, a key safety concern related to the pursuit of AGI.  
 * ⚔️ **The Anarchy: The Relentless Rise of the East India Company** by William Dalrymple. Explicitly referenced by Karen Hao as an inspiration, this historical account of a powerful corporation's rise to dominance provides a compelling parallel to the "empire" framing of the AI industry.  
 * 🕸️ **Nexus: A Brief History of Information Networks from the Stone Age to AI** by Yuval Noah Harari. Offers a sweeping historical perspective on the evolution of information control and its impact on human society, placing the current AI developments in a broader historical context.  
 * 😈 **Don't Be Evil: How Big Tech Betrayed Its Founding Principles -- and All of Us** by Rana Foroohar. Examines the broader ethical and societal failures of major tech companies, providing context for concerns about the power and influence of entities like OpenAI.  
 * 🌐 **The New Empire of AI: The Future of Global Inequality** by Rachel Adams. This book directly addresses the potential of AI to exacerbate global inequality, a theme also central to Hao's work, offering a complementary analysis of the economic and social implications.  
 * 🏛️ **Silicon Empires: The Fight for the Future of AI** by Nick Srnicek. Examines the economic forces driving the expansion of AI and how Big Tech is consolidating power, providing a theoretical framework that resonates with the empirical observations in "Empire of AI.".  
   
-## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
+## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Empire of AI: Dreams and Nightmares in Sam Altman's OpenAI. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.  
   
 ## 🐦 Tweet  

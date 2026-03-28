@@ -10,7 +10,7 @@ Channel: SpoonFedStudy
 tags:
 youtube: https://youtu.be/s-9M93Xj54M
 ---
-[Home](../index.md) > [Videos](./index.md) | [🥄👶📚 SpoonFedStudy](../topics/spoonfedstudy.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md) | [🥄👶📚 SpoonFedStudy](/content/topics/spoonfedstudy.md)  
 # ⏱️💰📈 This simple time management system will make you a millionaire  
 ![This simple time management system will make you a millionaire.](https://youtu.be/s-9M93Xj54M)  
   
@@ -39,8 +39,8 @@ To gain a more comprehensive understanding, it would be beneficial to explore:
 * 🌍 **Cultural perspectives on time:** How do different cultures perceive and manage time, and what can be learned from these diverse viewpoints?  
   
 ## 📚 Book Recommendations  
-* [✅😌 Getting Things Done: The Art of Stress-Free Productivity](../books/getting-things-done-the-art-of-stress-free-productivity.md) by David Allen: A classic in productivity, offering a comprehensive system for organizing tasks and managing workflow.  
-* [👤📈🎯🌟🔑🤝🏆 The 7 Habits of Highly Effective People](../books/the-7-habits-of-highly-effective-people.md) by Stephen Covey: Focuses on principle-centered living and includes habits like "Put First Things First," which aligns with valuing and prioritizing time.  
-* [🤿💼 Deep Work: Rules for Focused Success in a Distracted World](../books/deep-work.md) by Cal Newport: Explores the importance of focused, uninterrupted work for producing high-quality results, contrasting with the video's emphasis on stacking and leveraging.  
+* [✅😌 Getting Things Done: The Art of Stress-Free Productivity](/content/books/getting-things-done-the-art-of-stress-free-productivity.md) by David Allen: A classic in productivity, offering a comprehensive system for organizing tasks and managing workflow.  
+* [👤📈🎯🌟🔑🤝🏆 The 7 Habits of Highly Effective People](/content/books/the-7-habits-of-highly-effective-people.md) by Stephen Covey: Focuses on principle-centered living and includes habits like "Put First Things First," which aligns with valuing and prioritizing time.  
+* [🤿💼 Deep Work: Rules for Focused Success in a Distracted World](/content/books/deep-work.md) by Cal Newport: Explores the importance of focused, uninterrupted work for producing high-quality results, contrasting with the video's emphasis on stacking and leveraging.  
 * Your Money or Your Life by Vicki Robin and Joe Dominguez: Encourages readers to rethink their relationship with money and time, aligning with the video's concept of valuing time monetarily.  
-* [➖💯 Essentialism: The Disciplined Pursuit of Less](../books/essentialism-the-disciplined-pursuit-of-less.md) by Greg McKeown: Advocates for doing "less but better," which resonates with the "purging" aspect of the video's framework.
+* [➖💯 Essentialism: The Disciplined Pursuit of Less](/content/books/essentialism-the-disciplined-pursuit-of-less.md) by Greg McKeown: Advocates for doing "less but better," which resonates with the "purging" aspect of the video's framework.

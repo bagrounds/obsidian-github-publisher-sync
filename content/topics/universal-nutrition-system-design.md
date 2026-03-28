@@ -5,7 +5,7 @@ aliases:
 title: 🍎🥛🔬✨ Universal Nutrition System Design
 URL: https://bagrounds.org/topics/universal-nutrition-system-design
 ---
-[Home](../index.md) > [Topics](./index.md)  
+[Home](/content/index.md) > [Topics](/content/topics/index.md)  
 # 🍎🥛🔬✨ Universal Nutrition System Design  
   
 ## 🍎 Functional Goals  

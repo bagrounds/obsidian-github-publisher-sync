@@ -7,7 +7,7 @@ share: true
 affiliate link: https://amzn.to/3JeV0a9
 CTA: 🤖 Automate development.
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🤖💻 AI-Powered Developer: Build great software with ChatGPT and Copilot  
 [🛒 AI-Powered Developer: Build great software with ChatGPT and Copilot. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3JeV0a9)  
   
@@ -49,17 +49,17 @@ CTA: 🤖 Automate development.
 ### ⚖️ Contrasting Books  
   
 * 🤔 **The Architect's Paradox: Uncertainty and the Philosophy of Software Architecture** by Barry O'Reilly: While not directly about AI, this book champions the importance of human intuition, critical thinking, and navigating uncertainty in software architecture, offering a counterpoint to over-reliance on automated solutions.  
-* **[📊📉🏛️ Weapons of Math Destruction: How Big Data Increases Inequality and Threatens Democracy](./weapons-of-math-destruction-how-big-data-increases-inequality-and-threatens-democracy.md)** by Cathy O'Neil: This book provides a crucial critical perspective on the societal impact of algorithms and AI, encouraging developers to consider the ethical implications of the tools they build and use.  
+* **[📊📉🏛️ Weapons of Math Destruction: How Big Data Increases Inequality and Threatens Democracy](/content/books/weapons-of-math-destruction-how-big-data-increases-inequality-and-threatens-democracy.md)** by Cathy O'Neil: This book provides a crucial critical perspective on the societal impact of algorithms and AI, encouraging developers to consider the ethical implications of the tools they build and use.  
 * ⚠️ **Artificial Unintelligence: How Computers Misunderstand the World** by Meredith Broussard: Broussard's work highlights the limitations and biases of AI, serving as a reminder that human oversight and critical evaluation are essential in software development.  
 * 🧠 **The Programmer's Brain: What every programmer needs to know about cognition** by Felienne Hermans: This book delves into the cognitive processes of programming, emphasizing the human element of coding and problem-solving, which can be overlooked in the age of AI.  
   
 ### 🎨 Creatively Related Books  
   
 * 🎨 **The Artist in the Machine: The World of AI-Powered Creativity** by Arthur I. Miller: This book explores the burgeoning field of AI in various creative domains, from art and music to literature, providing a fascinating parallel to the changes happening in software development.  
-* **[🤖⚠️📈 Superintelligence: Paths, Dangers, Strategies](./superintelligence-paths-dangers-strategies.md)** by Nick Bostrom: A seminal work on the potential risks and long-term future of artificial intelligence, this book encourages deep thinking about the ultimate trajectory of the technologies developers are currently building.  
-* **[🧬👥💾 Life 3.0: Being Human in the Age of Artificial Intelligence](./life-3-0.md)** by Max Tegmark: Tegmark explores the profound questions surrounding the future of humanity and intelligence in the age of AI, offering a thought-provoking backdrop to the daily work of an AI-powered developer.  
+* **[🤖⚠️📈 Superintelligence: Paths, Dangers, Strategies](/content/books/superintelligence-paths-dangers-strategies.md)** by Nick Bostrom: A seminal work on the potential risks and long-term future of artificial intelligence, this book encourages deep thinking about the ultimate trajectory of the technologies developers are currently building.  
+* **[🧬👥💾 Life 3.0: Being Human in the Age of Artificial Intelligence](/content/books/life-3-0.md)** by Max Tegmark: Tegmark explores the profound questions surrounding the future of humanity and intelligence in the age of AI, offering a thought-provoking backdrop to the daily work of an AI-powered developer.  
 * 🌍 **AI Superpowers** by Kai-Fu Lee: This book provides a geopolitical and economic context to the development of AI, highlighting the global competition and its implications for innovation and the future of technology.  
 * 🎭 **My Life as an Artificial Creative Intelligence** by Mark Amerika: A playful and provocative exploration of the creative process from a posthuman perspective, this book challenges our assumptions about creativity and intelligence, both human and artificial.  
   
-## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro)  
+## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-pro)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on AI-Powered Developer: Build great software with ChatGPT and Copilot. Never put book titles in quotes or italics. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

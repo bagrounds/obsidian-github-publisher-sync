@@ -10,7 +10,7 @@ Channel: PBS NewsHour
 tags:
 youtube: https://youtu.be/KIGXKQeOwGY
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md)  
 # ⚠️🌊🏘️❌ FEMA missed major flood risks at Camp Mystic in Texas, new analysis reveals  
 ![FEMA missed major flood risks at Camp Mystic in Texas, new analysis reveals](https://youtu.be/KIGXKQeOwGY)  
   
@@ -50,4 +50,4 @@ youtube: https://youtu.be/KIGXKQeOwGY
 * ***The Lobbyists: How Influence Peddlers Work Their Way in Washington*** by Jeffrey Birnbaum: Provides an inside look at the strategies and tactics employed by lobbyists to shape legislation and regulations.  
 * ***Handbook on Lobbying and Public Policy*** edited by David Coen and Alexander Katsaitis: This comprehensive academic handbook examines the complex relationship between lobbyists and public policy, offering a multi-analytic lens on how influence peddling impacts modern government and societal issues.  
 * ***Lobbying and Policy Change: Who Wins, Who Loses, and Why*** by Frank R. Baumgartner, et al.: A research-based analysis of how lobbying affects policy outcomes, examining the conditions under which interest groups succeed or fail in their efforts to influence government.  
-* **[💰🤥 Merchants of Doubt](../books/merchants-of-doubt.md): How a Handful of Scientists Obscured the Truth on Issues from Tobacco Smoke to Global Warming** by Naomi Oreskes and Erik M. Conway: While not exclusively about lobbying, this book details how specific interest groups and individuals can influence public discourse and policy by promoting scientific uncertainty, a theme relevant to the resistance to updated flood maps.
+* **[💰🤥 Merchants of Doubt](/content/books/merchants-of-doubt.md): How a Handful of Scientists Obscured the Truth on Issues from Tobacco Smoke to Global Warming** by Naomi Oreskes and Erik M. Conway: While not exclusively about lobbying, this book details how specific interest groups and individuals can influence public discourse and policy by promoting scientific uncertainty, a theme relevant to the resistance to updated flood maps.

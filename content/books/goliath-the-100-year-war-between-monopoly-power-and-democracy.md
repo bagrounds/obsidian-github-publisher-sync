@@ -7,7 +7,7 @@ share: true
 CTA: 🏛️ Fight monopolists.
 affiliate link: https://amzn.to/4oBcdtf
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 👑⚔️🏛️ Goliath: The 100-Year War Between Monopoly Power and Democracy  
 [🛒 Goliath: The 100-Year War Between Monopoly Power and Democracy. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4oBcdtf)  
   
@@ -90,7 +90,7 @@ affiliate link: https://amzn.to/4oBcdtf
 ### 🔗 Related Books  
 * **🪖 David and Goliath: Underdogs, Misfits, and the Art of Battling Giants** by Malcolm Gladwell: While exploring different themes, it touches on how perceived disadvantages can become strengths and how the powerful are not always as strong as they seem, offering a different lens on power dynamics.  
 * **🕰️ The History of Corporate Power** (various authors/sources): Deeper dives into the legal and historical evolution of corporations and their influence.  
-* **[🤝🏛️ Team of Rivals: The Political Genius of Abraham Lincoln](./team-of-rivals-the-political-genius-of-abraham-lincoln.md)** by Doris Kearns Goodwin: Provides context on how political coalitions can be formed and managed, relevant to the historical battles over economic policy.  
+* **[🤝🏛️ Team of Rivals: The Political Genius of Abraham Lincoln](/content/books/team-of-rivals-the-political-genius-of-abraham-lincoln.md)** by Doris Kearns Goodwin: Provides context on how political coalitions can be formed and managed, relevant to the historical battles over economic policy.  
   
 ## 🫵 What do you think?  
 💬 What historical periods or figures in the fight against monopoly power resonate most with you? Which modern industries are concentrated and what policy changes could restore balance?

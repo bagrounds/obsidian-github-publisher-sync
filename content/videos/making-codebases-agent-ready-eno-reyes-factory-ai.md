@@ -10,7 +10,7 @@ Channel: AI Engineer
 tags:
 youtube: https://youtu.be/ShuJ_CN6zr4
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md)  
 # 🤖🧠🚀 Making Codebases Agent Ready – Eno Reyes, Factory AI  
 ![Making Codebases Agent Ready – Eno Reyes, Factory AI](https://youtu.be/ShuJ_CN6zr4)  
   
@@ -30,8 +30,8 @@ youtube: https://youtu.be/ShuJ_CN6zr4
   
 ## 🤔 Evaluation  
   
-* ⚖️ High quality sources like [🧑‍💻📈 The Pragmatic Programmer: Your Journey to Mastery](../books/the-pragmatic-programmer-your-journey-to-mastery.md) by Andrew Hunt and David Thomas from Addison-Wesley Professional support the emphasis on automated testing as a foundation for velocity.  
-* 🔍 Research from [🏎️💾 Accelerate: The Science of Lean Software and DevOps: Building and Scaling High Performing Technology Organizations](../books/accelerate.md) by Nicole Forsgren, Jez Humble, and Gene Kim through IT Revolution Press confirms that high-performing engineering organizations rely on continuous integration and automated testing to achieve superior deployment frequency and stability.  
+* ⚖️ High quality sources like [🧑‍💻📈 The Pragmatic Programmer: Your Journey to Mastery](/content/books/the-pragmatic-programmer-your-journey-to-mastery.md) by Andrew Hunt and David Thomas from Addison-Wesley Professional support the emphasis on automated testing as a foundation for velocity.  
+* 🔍 Research from [🏎️💾 Accelerate: The Science of Lean Software and DevOps: Building and Scaling High Performing Technology Organizations](/content/books/accelerate.md) by Nicole Forsgren, Jez Humble, and Gene Kim through IT Revolution Press confirms that high-performing engineering organizations rely on continuous integration and automated testing to achieve superior deployment frequency and stability.  
 * 💡 Future exploration should focus on the cost-benefit analysis of reaching 100% test coverage versus the efficiency gains of agentic workflows.  
   
 ## ❓ Frequently Asked Questions (FAQ)  
@@ -52,15 +52,15 @@ youtube: https://youtu.be/ShuJ_CN6zr4
   
 ### ↔️ Similar  
   
-* [🏗️🧪🚀✅ Continuous Delivery: Reliable Software Releases through Build, Test, and Deployment Automation](../books/continuous-delivery.md) by Jez Humble and David Farley (Addison-Wesley Professional). 🚚 This book details the automated pipeline and validation structures necessary for high-velocity software delivery.  
+* [🏗️🧪🚀✅ Continuous Delivery: Reliable Software Releases through Build, Test, and Deployment Automation](/content/books/continuous-delivery.md) by Jez Humble and David Farley (Addison-Wesley Professional). 🚚 This book details the automated pipeline and validation structures necessary for high-velocity software delivery.  
 * 📗 Test Driven Development by Kent Beck (Addison-Wesley Professional). 🧪 It focuses on the verification-first mindset essential for specification-driven development.  
   
 ### 🆚 Contrasting  
   
 * 📙 A Philosophy of Software Design by John Ousterhout (Yaknyam Press). 🧠 This work emphasizes deep module design and complexity management over the automation-centric approach.  
-* [🦄👤🗓️ The Mythical Man-Month: Essays on Software Engineering](../books/the-mythical-man-month.md) by Frederick Brooks (Addison-Wesley Professional). 🕰️ It offers a skeptical view of silver-bullet productivity gains in software engineering through organizational scaling.  
+* [🦄👤🗓️ The Mythical Man-Month: Essays on Software Engineering](/content/books/the-mythical-man-month.md) by Frederick Brooks (Addison-Wesley Professional). 🕰️ It offers a skeptical view of silver-bullet productivity gains in software engineering through organizational scaling.  
   
 ### 🎨 Creatively Related  
   
-* [📉📈🌪️💪 Antifragile: Things That Gain from Disorder](../books/antifragile-things-that-gain-from-disorder.md) by Nassim Nicholas Taleb (Random House). 🏛️ It explores how systems can gain from disorder and stress, mirroring the feedback loop of improving development environments.  
-* [📈⚙️♾️ The Goal: A Process of Ongoing Improvement](../books/the-goal.md) by Eliyahu M. Goldratt (North River Press). 🏭 This business novel introduces the Theory of Constraints, applicable to identifying bottlenecks in the agentic development loop.
+* [📉📈🌪️💪 Antifragile: Things That Gain from Disorder](/content/books/antifragile-things-that-gain-from-disorder.md) by Nassim Nicholas Taleb (Random House). 🏛️ It explores how systems can gain from disorder and stress, mirroring the feedback loop of improving development environments.  
+* [📈⚙️♾️ The Goal: A Process of Ongoing Improvement](/content/books/the-goal.md) by Eliyahu M. Goldratt (North River Press). 🏭 This business novel introduces the Theory of Constraints, applicable to identifying bottlenecks in the agentic development loop.

@@ -5,7 +5,7 @@ aliases:
 title: 💻🔓 OpenCode
 URL: https://bagrounds.org/software/opencode
 ---
-[Home](../index.md) > [Software](./index.md)  
+[Home](/content/index.md) > [Software](/content/software/index.md)  
 # [💻🔓 OpenCode](https://opencode.ai)  
   
 ## 🤖 AI Summary  
@@ -146,11 +146,11 @@ URL: https://bagrounds.org/software/opencode
   
 ## 📖 Book Recommendations  
   
-* 📚 **Topical:** [✨🤖🔗🐍 Generative AI with LangChain: A Hands On Guide to Crafting Scalable, Intelligent Systems and Advanced AI Agents with Python](../books/generative-ai-with-langchain-a-hands-on-guide-to-crafting-scalable-intelligent-systems-and-advanced-ai-agents-with-python.md) by Ben Auffarth.  
-* 📔 **Tangentially Related:** [🧑‍💻📈 The Pragmatic Programmer: Your Journey to Mastery](../books/the-pragmatic-programmer-your-journey-to-mastery.md) by Andrew Hunt.  
+* 📚 **Topical:** [✨🤖🔗🐍 Generative AI with LangChain: A Hands On Guide to Crafting Scalable, Intelligent Systems and Advanced AI Agents with Python](/content/books/generative-ai-with-langchain-a-hands-on-guide-to-crafting-scalable-intelligent-systems-and-advanced-ai-agents-with-python.md) by Ben Auffarth.  
+* 📔 **Tangentially Related:** [🧑‍💻📈 The Pragmatic Programmer: Your Journey to Mastery](/content/books/the-pragmatic-programmer-your-journey-to-mastery.md) by Andrew Hunt.  
 * 📕 **Topically Opposed:** *No Code: The Book* (General focus on non-technical builders).  
-* 📖 **More General:** [🤖🧠 Artificial Intelligence: A Modern Approach](../books/artificial-intelligence-a-modern-approach.md) by Stuart Russell.  
+* 📖 **More General:** [🤖🧠 Artificial Intelligence: A Modern Approach](/content/books/artificial-intelligence-a-modern-approach.md) by Stuart Russell.  
 * 🔬 **More Specific:** *Crafting Interpreters* by Robert Nystrom (for understanding how code is parsed).  
 * 🎨 **Fictional:** Neuromancer by William Gibson.  
-* 🏛️ **Rigorous:** [🧠💻🤖 Deep Learning](../books/deep-learning.md) by Ian Goodfellow.  
-* 📗 **Accessible:** [🤖🔮🌍 AI 2041: Ten Visions for Our Future](../books/ai-2041-ten-visions-for-our-future.md) by Kai-Fu Lee.
+* 🏛️ **Rigorous:** [🧠💻🤖 Deep Learning](/content/books/deep-learning.md) by Ian Goodfellow.  
+* 📗 **Accessible:** [🤖🔮🌍 AI 2041: Ten Visions for Our Future](/content/books/ai-2041-ten-visions-for-our-future.md) by Kai-Fu Lee.

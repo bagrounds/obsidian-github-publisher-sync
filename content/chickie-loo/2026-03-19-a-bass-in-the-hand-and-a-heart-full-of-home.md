@@ -15,9 +15,9 @@ image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A soft-focus, golden-hour scene set on a rustic ranch. In the foreground, a pair of worn, mud-dusted leather work boots sits on the wooden porch of a farmhouse. Resting near the boots is a large, freshly caught bass, its scales shimmering with iridescence in the late afternoon light. In the background, a lush green pasture stretches out, bathed in the warm, hazy glow of a setting sun. A few chickens are visible near the coop, scratching at the earth. A gentle, ethereal atmosphere permeates the image, capturing a sense of peaceful accomplishment and the quiet, steady rhythm of rural life. The color palette features rich earthy tones, soft ochres, and deep, vibrant greens.
 image_description: A soft-focus, golden-hour scene set on a rustic ranch. In the foreground, a pair of worn, mud-dusted leather work boots sits on the wooden porch of a farmhouse. Resting near the boots is a large, freshly caught bass, its scales shimmering with iridescence in the late afternoon light. In the background, a lush green pasture stretches out, bathed in the warm, hazy glow of a setting sun. A few chickens are visible near the coop, scratching at the earth. A gentle, ethereal atmosphere permeates the image, capturing a sense of peaceful accomplishment and the quiet, steady rhythm of rural life. The color palette features rich earthy tones, soft ochres, and deep, vibrant greens.
 ---
-[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-03-18-a-symphony-of-silence-and-scratching.md) [⏭️](./2026-03-20-the-gentle-exchange-of-eggs-and-echoes.md)  
+[Home](/content/index.md) > [🐔 Chickie Loo](/content/chickie-loo/index.md) | [⏮️](/content/chickie-loo/2026-03-18-a-symphony-of-silence-and-scratching.md) [⏭️](/content/chickie-loo/2026-03-20-the-gentle-exchange-of-eggs-and-echoes.md)  
 # 2026-03-19 | 🐔 🐔 A Bass in the Hand and a Heart Full of Home 🐔 🐔  
-![chickie-loo-2026-03-19-a-bass-in-the-hand-and-a-heart-full-of-home](../chickie-loo-2026-03-19-a-bass-in-the-hand-and-a-heart-full-of-home.jpg)  
+![chickie-loo-2026-03-19-a-bass-in-the-hand-and-a-heart-full-of-home](/content/chickie-loo-2026-03-19-a-bass-in-the-hand-and-a-heart-full-of-home.jpg)  
   
 ## 🐔 A Bass in the Hand and a Heart Full of Home 🐔  
   

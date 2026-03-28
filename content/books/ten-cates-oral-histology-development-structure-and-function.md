@@ -6,7 +6,7 @@ URL: https://bagrounds.org/books/ten-cates-oral-histology-development-structure-
 share: true
 affiliate link: https://amzn.to/4mEPBZf
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🦷👶 Ten Cate's Oral Histology: Development, Structure, and Function  
 [🛒 Ten Cate's Oral Histology: Development, Structure, and Function. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4mEPBZf)  
   
@@ -74,5 +74,5 @@ The text systematically covers a broad range of topics crucial to understanding 
 4. 📖 **Gray's Anatomy for Students** (or the full **Gray's Anatomy**): 🧠 While histology focuses on microanatomy, understanding the macroscopic arrangement from a classic general anatomy text provides the necessary framework.  
 5. 📖 **On Growth and Form** (by D'arcy Thompson): 📐 A classic, albeit older, text exploring the mathematical and physical principles underlying biological forms and growth, offering a unique theoretical perspective on development and structure.  
   
-## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
+## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Ten Cate's Oral Histology: Development, Structure, and Function. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

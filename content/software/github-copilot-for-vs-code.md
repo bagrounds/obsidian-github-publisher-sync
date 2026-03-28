@@ -5,7 +5,7 @@ aliases:
 title: 🤖💻🪄 GitHub Copilot for VS Code
 URL: https://bagrounds.org/software/github-copilot-for-vs-code
 ---
-[Home](../index.md) > [Software](./index.md)  
+[Home](/content/index.md) > [Software](/content/software/index.md)  
 # 🤖💻🪄 GitHub Copilot for VS Code  
   
 ## 🤖 AI Summary  
@@ -19,7 +19,7 @@ GitHub Copilot is an AI pair programmer 🤖🤝 developed by GitHub 🐱‍💻
   
 * **🍼 For A Child:** Imagine you have a friend 👦👧 who knows a lot about building things with LEGOs 🧱. When you start building something 🏗️, they suggest the next LEGO brick 🧱 you might need. GitHub Copilot is like that friend, but for computer code 💻.  
 * **🏁 For A Beginner:** GitHub Copilot is a tool 🛠️ within VS Code 💻 that helps you write code 📝 by suggesting lines or even entire functions 🧩 as you type ⌨️. It's like having an experienced programmer 🧑‍💻👩‍💻 looking over your shoulder 👀 and offering assistance 🤝.  
-* **🧙‍♂️ For A World Expert:** GitHub Copilot leverages a [Large Language Model](../topics/large-language-models.md) 🧠 to provide context-aware code synthesis 📝 and completion ⌨️, effectively acting as a probabilistic code generator 🎲. It distills patterns 🔍 from vast code corpora 📚, offering a novel approach to developer productivity 🚀 and code exploration 🧭.  
+* **🧙‍♂️ For A World Expert:** GitHub Copilot leverages a [Large Language Model](/content/topics/large-language-models.md) 🧠 to provide context-aware code synthesis 📝 and completion ⌨️, effectively acting as a probabilistic code generator 🎲. It distills patterns 🔍 from vast code corpora 📚, offering a novel approach to developer productivity 🚀 and code exploration 🧭.  
   
 🌟 **High-Level Qualities**  
   
@@ -128,13 +128,13 @@ GitHub Copilot was developed as a collaboration between GitHub 🐱‍💻 and O
 📖 **Book Recommendations**  
   
 * Topical: "Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow" by Aurélien Géron 📚🧠  
-* Tangentially related: [🤖⚠️📈 Superintelligence: Paths, Dangers, Strategies](../books/superintelligence-paths-dangers-strategies.md) by Nick Bostrom 🧠🤯  
+* Tangentially related: [🤖⚠️📈 Superintelligence: Paths, Dangers, Strategies](/content/books/superintelligence-paths-dangers-strategies.md) by Nick Bostrom 🧠🤯  
 * Topically opposed: "Code: The Hidden Language of Computer Hardware and Software" by Charles Petzold 💻📚  
-* More general: [🤖🧠 Artificial Intelligence: A Modern Approach](../books/artificial-intelligence-a-modern-approach.md) by Stuart Russell and Peter Norvig 🤖🧠  
-* More specific: [🧠💻🤖 Deep Learning](../books/deep-learning.md) by Ian Goodfellow, Yoshua Bengio, and Aaron Courville 🧠📚  
-* Fictional: [😈💻👹🤖 Daemon](../books/daemon.md) by Daniel Suarez 👾💻  
+* More general: [🤖🧠 Artificial Intelligence: A Modern Approach](/content/books/artificial-intelligence-a-modern-approach.md) by Stuart Russell and Peter Norvig 🤖🧠  
+* More specific: [🧠💻🤖 Deep Learning](/content/books/deep-learning.md) by Ian Goodfellow, Yoshua Bengio, and Aaron Courville 🧠📚  
+* Fictional: [😈💻👹🤖 Daemon](/content/books/daemon.md) by Daniel Suarez 👾💻  
 * Rigorous: "Speech and Language Processing" by Dan Jurafsky and James H. Martin 🗣️📚  
-* Accessible: [🧬👥💾 Life 3.0: Being Human in the Age of Artificial Intelligence](../books/life-3-0.md) by Max Tegmark 🤖🧠  
+* Accessible: [🧬👥💾 Life 3.0: Being Human in the Age of Artificial Intelligence](/content/books/life-3-0.md) by Max Tegmark 🤖🧠  
   
 📺 **Links To Relevant YouTube Channels Or Videos**  
   

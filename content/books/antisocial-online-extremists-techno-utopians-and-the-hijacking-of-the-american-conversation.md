@@ -9,7 +9,7 @@ tags:
 affiliate link: https://amzn.to/4kPcass
 CTA: 🚨 Confront hate.
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🙅🗣️💻 Antisocial: Online Extremists, Techno-Utopians, and the Hijacking of the American Conversation  
 [🛒 Antisocial: Online Extremists, Techno-Utopians, and the Hijacking of the American Conversation. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4kPcass)  
   
@@ -50,8 +50,8 @@ CTA: 🚨 Confront hate.
 * ⚔️ **Kill All Normies: Online Culture Wars from 4chan and Tumblr to Trump and the Alt-Right** by Angela Nagle: 💻 Analyzes the online culture wars and the transgressive online communities that fueled the alt-right.  
 * 🐸 **It Came from Something Awful: How a Toxic Troll Army Accidentally Memed Donald Trump into Office** by Dale Beran: 🎭 Traces the lineage of online trolling culture and its unexpected political impact.  
 * 📱 **Zucked: Waking Up to the Facebook Catastrophe** by Roger McNamee: 💸 An early investor's critique of Facebook's negative impact on democracy and society.  
-* 👀 **[The Age of Surveillance Capitalism](./the-age-of-surveillance-capitalism.md): The Fight for a Human Future at the New Frontier of Power** by Shoshana Zuboff: 🏛️ A foundational text arguing that tech giants exploit human experience for profit 💰, with profound social consequences.  
-* **[🤥📣 This Is Not Propaganda: Adventures in the War Against Reality](./this-is-not-propaganda.md)** by Peter Pomerantsev: 🗺️ Explores modern propaganda and information warfare across different global contexts.  
+* 👀 **[The Age of Surveillance Capitalism](/content/books/the-age-of-surveillance-capitalism.md): The Fight for a Human Future at the New Frontier of Power** by Shoshana Zuboff: 🏛️ A foundational text arguing that tech giants exploit human experience for profit 💰, with profound social consequences.  
+* **[🤥📣 This Is Not Propaganda: Adventures in the War Against Reality](/content/books/this-is-not-propaganda.md)** by Peter Pomerantsev: 🗺️ Explores modern propaganda and information warfare across different global contexts.  
 * 🕵️ **Culture Warlords: My Journey Into the Dark Web of White Supremacy** by Talia Lavin: 🕸️ An undercover investigation into online white supremacist communities.  
 * 🌑 **Going Dark: The Secret Social Lives of Extremists** by Julia Ebner: 🕵️ Similar undercover reporting exploring various extremist groups online and offline.  
   
@@ -62,12 +62,12 @@ CTA: 🚨 Confront hate.
 * 🧑‍🤝‍🧑 **Radicalization: A Critical Approach** by Kevin McDonald: 📚 Offers a sociological perspective focusing on the experience and embodiment of radicalization processes, potentially contrasting with Marantz's journalistic approach.  
   
 ### 🎨 Creatively Related (Broader Themes: Sociology of Internet, Propaganda, Dystopia)  
-* **[📱🧠 The Shallows: What the Internet Is Doing to Our Brains](./the-shallows-what-the-internet-is-doing-to-our-brains.md)** by Nicholas Carr: 💻 Explores the cognitive effects of constant internet use.  
-* **[📺💀 Amusing Ourselves to Death: Public Discourse in the Age of Show Business](./amusing-ourselves-to-death-public-discourse-in-the-age-of-show-business.md)** by Neil Postman: 📺 A classic critique of how television (and by extension, later media) shapes public discourse, prioritizing entertainment over substance.  
+* **[📱🧠 The Shallows: What the Internet Is Doing to Our Brains](/content/books/the-shallows-what-the-internet-is-doing-to-our-brains.md)** by Nicholas Carr: 💻 Explores the cognitive effects of constant internet use.  
+* **[📺💀 Amusing Ourselves to Death: Public Discourse in the Age of Show Business](/content/books/amusing-ourselves-to-death-public-discourse-in-the-age-of-show-business.md)** by Neil Postman: 📺 A classic critique of how television (and by extension, later media) shapes public discourse, prioritizing entertainment over substance.  
 * 🥺 **So You've Been Publicly Shamed** by Jon Ronson: 😥 Explores the phenomenon and consequences of online shaming.  
 * 🪞 **Trick Mirror: Reflections on Self-Delusion** by Jia Tolentino: 🤳 Essays exploring internet culture, identity, and modern life.  
 * 🧬 **Critiquing Transhumanism: The Human Cost of Pursuing Techno-Utopia** by Julie Miller: 🦾 Critiques the philosophical underpinnings of techno-utopian goals from a different angle (transhumanism).  
 * ✍️ **Fiction:** 📖 Novels like Margaret Atwood's *Oryx and Crake* (critiquing techno-utopianism) or Dave Eggers' *The Circle* (exploring surveillance and corporate power in tech) offer fictional explorations of related themes.  
   
-## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
+## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Antisocial Online Extremists, Techno-Utopians, and the Hijacking of the American Conversation. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

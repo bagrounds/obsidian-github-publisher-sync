@@ -10,7 +10,7 @@ Channel: Interintellect
 tags:
 youtube: https://youtu.be/2I_OyWle2Lw
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md)  
 # 👑⚔️🏛️🤔 Anna Gát and Anne Applebaum: The Autocratic Moment: Myth or Reality?  
 ![Anna Gát and Anne Applebaum: The Autocratic Moment: Myth or Reality?](https://youtu.be/2I_OyWle2Lw)  
   
@@ -54,7 +54,7 @@ youtube: https://youtu.be/2I_OyWle2Lw
   
 ### ↔️ Similar  
   
-* [👑🌎 Autocracy, Inc.: The Dictators Who Want to Run the World](../books/autocracy-inc-the-dictators-who-want-to-run-the-world.md) by Anne Applebaum. 🏗️ This work details how modern dictatorships have abandoned ideology in favor of a global network of money and power.  
+* [👑🌎 Autocracy, Inc.: The Dictators Who Want to Run the World](/content/books/autocracy-inc-the-dictators-who-want-to-run-the-world.md) by Anne Applebaum. 🏗️ This work details how modern dictatorships have abandoned ideology in favor of a global network of money and power.  
 * 📕 The Road to Unfreedom by Timothy Snyder. ⚔️ Explores how Russia uses digital warfare and historical myths to destabilize Western democratic institutions.  
   
 ### 🆚 Contrasting  
@@ -64,5 +64,5 @@ youtube: https://youtu.be/2I_OyWle2Lw
   
 ### 🎨 Creatively Related  
   
-* [🎳🏘️📉📈 Bowling Alone: The Collapse and Revival of American Community](../books/bowling-alone.md) by Robert Putnam. 🎳 A foundational study on the decline of social capital in America which Applebaum cites as a precursor to current political instability \[[04:00](http://www.youtube.com/watch?v=2I_OyWle2Lw&t=240)].  
+* [🎳🏘️📉📈 Bowling Alone: The Collapse and Revival of American Community](/content/books/bowling-alone.md) by Robert Putnam. 🎳 A foundational study on the decline of social capital in America which Applebaum cites as a precursor to current political instability \[[04:00](http://www.youtube.com/watch?v=2I_OyWle2Lw&t=240)].  
 * 📔 The Choice of Comrades by Ignazio Silone. 🥂 An essay recommending that in times of political decay, one should focus on the loyalty and grace found in close friendships \[[01:02:01](http://www.youtube.com/watch?v=2I_OyWle2Lw&t=3721)].

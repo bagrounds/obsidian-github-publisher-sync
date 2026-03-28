@@ -7,7 +7,7 @@ share: true
 CTA: 🏃 Reclaim your body.
 affiliate link: https://amzn.to/3JaD5lg
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🏃🤸 Built to Move: The Ten Essential Habits to Help You Move Freely and Live Fully  
 [🛒 Built to Move: The Ten Essential Habits to Help You Move Freely and Live Fully. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3JaD5lg)  
   
@@ -106,7 +106,7 @@ Built to Move by Kelly and Juliet Starrett presents ten essential, easy-to-imple
 ## 📚 Book Recommendations  
   
 ### 📖 Similar Reads  
-* [🤸🤕 Becoming a Supple Leopard: The Ultimate Guide to Resolving Pain, Preventing Injury, and Optimizing Athletic Performance](./becoming-a-supple-leopard-the-ultimate-guide-to-resolving-pain-preventing-injury-and-optimizing-athletic-performance.md) by Kelly Starrett: A more in-depth, technical guide to movement and mobility.  
+* [🤸🤕 Becoming a Supple Leopard: The Ultimate Guide to Resolving Pain, Preventing Injury, and Optimizing Athletic Performance](/content/books/becoming-a-supple-leopard-the-ultimate-guide-to-resolving-pain-preventing-injury-and-optimizing-athletic-performance.md) by Kelly Starrett: A more in-depth, technical guide to movement and mobility.  
 * 🪑 Deskbound by Kelly Starrett: Focuses specifically on counteracting the negative effects of prolonged sitting.  
 * 🏞️ The Comfort Crisis by Michael Easter: Explores the benefits of discomfort, including challenging physical experiences.  
   
@@ -115,9 +115,9 @@ Built to Move by Kelly and Juliet Starrett presents ten essential, easy-to-imple
 * 👴 Younger Next Year by Chris Crowley and Henry S. Lodge: Focuses on structured exercise for anti-aging, with a different approach to daily movement.  
   
 ### 📖 Creatively Related Reads  
-* [📜🌍⏳ Sapiens: A Brief History of Humankind](./sapiens-a-brief-history-of-humankind.md) by Yuval Noah Harari: Provides context on human evolution and how our bodies were designed to move.  
-* [😴💭 Why We Sleep: Unlocking the Power of Sleep and Dreams](./why-we-sleep-unlocking-the-power-of-sleep-and-dreams.md) by Matthew Walker: Deep dive into the science of sleep, a critical component highlighted in Built to Move.  
-* [⚡🧠🏃 Spark: The Revolutionary New Science of Exercise and the Brain](./spark-the-revolutionary-new-science-of-exercise-and-the-brain.md) by John J. Ratey: Explores the profound cognitive benefits of physical activity.  
+* [📜🌍⏳ Sapiens: A Brief History of Humankind](/content/books/sapiens-a-brief-history-of-humankind.md) by Yuval Noah Harari: Provides context on human evolution and how our bodies were designed to move.  
+* [😴💭 Why We Sleep: Unlocking the Power of Sleep and Dreams](/content/books/why-we-sleep-unlocking-the-power-of-sleep-and-dreams.md) by Matthew Walker: Deep dive into the science of sleep, a critical component highlighted in Built to Move.  
+* [⚡🧠🏃 Spark: The Revolutionary New Science of Exercise and the Brain](/content/books/spark-the-revolutionary-new-science-of-exercise-and-the-brain.md) by John J. Ratey: Explores the profound cognitive benefits of physical activity.  
   
 ## 💬 [Gemini](https://gemini.google.com) Prompt (gemini-2.5-flash)  
 > Write a book report for Built to Move: The Ten Essential Habits to Help You Move Freely and Live Fully with the following parts.  

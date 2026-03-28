@@ -10,7 +10,7 @@ Channel: A Life Engineered
 tags:
 youtube: https://youtu.be/S9ioPP-n-iI
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md)  
 # 💡👨‍🔬🏆🚀🌟 How Engineers Break Into The Top 1% | Michael Novati  
 ![How Engineers Break Into The Top 1% | Michael Novati](https://youtu.be/S9ioPP-n-iI)  
   
@@ -49,8 +49,8 @@ youtube: https://youtu.be/S9ioPP-n-iI
   
 ### ↔️ Similar  
   
-* [👶⬆️👨‍💻📈 The Staff Engineer's Path](../books/the-staff-engineers-path.md) by Will Larson: 🗺️ Details the 🪜 path and 🎭 roles for ⚙️ technical leadership beyond the 👴 senior level.  
-* [🧑‍💻📈 The Pragmatic Programmer: Your Journey to Mastery](../books/the-pragmatic-programmer-your-journey-to-mastery.md) by Andrew Hunt and David Thomas: 📓 Focuses on 📐 craftsmanship and 🛠️ practical efficiency for 💻 serious developers.  
+* [👶⬆️👨‍💻📈 The Staff Engineer's Path](/content/books/the-staff-engineers-path.md) by Will Larson: 🗺️ Details the 🪜 path and 🎭 roles for ⚙️ technical leadership beyond the 👴 senior level.  
+* [🧑‍💻📈 The Pragmatic Programmer: Your Journey to Mastery](/content/books/the-pragmatic-programmer-your-journey-to-mastery.md) by Andrew Hunt and David Thomas: 📓 Focuses on 📐 craftsmanship and 🛠️ practical efficiency for 💻 serious developers.  
   
 ### 🆚 Contrasting  
   
@@ -59,5 +59,5 @@ youtube: https://youtu.be/S9ioPP-n-iI
   
 ### 🎨 Creatively Related  
   
-* [🤿💼 Deep Work: Rules for Focused Success in a Distracted World](../books/deep-work.md) by Cal Newport: 📓 Provides 🧱 strategies for 🎯 intense focus 🛡️ necessary to become a ⚙️ technical 🔋 powerhouse.  
+* [🤿💼 Deep Work: Rules for Focused Success in a Distracted World](/content/books/deep-work.md) by Cal Newport: 📓 Provides 🧱 strategies for 🎯 intense focus 🛡️ necessary to become a ⚙️ technical 🔋 powerhouse.  
 * 🎲 Skin in the Game by Nassim Nicholas Taleb: 🏛️ Explores why 👤 personal 💸 risk is 🗝️ essential for 📜 credible ⚖️ judgment and 🏢 business 📈 success.

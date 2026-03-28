@@ -10,7 +10,7 @@ Channel: SpoonFedStudy
 tags:
 youtube: https://youtu.be/oHeO6t55ko0
 ---
-[Home](../index.md) > [Videos](./index.md) | [🥄👶📚 SpoonFedStudy](../topics/spoonfedstudy.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md) | [🥄👶📚 SpoonFedStudy](/content/topics/spoonfedstudy.md)  
 # ✨🎯🔒✅ How to make your dreams basically inevitable  
 ![How to make your dreams basically inevitable.](https://youtu.be/oHeO6t55ko0)  
   
@@ -48,8 +48,8 @@ youtube: https://youtu.be/oHeO6t55ko0
     - 📈 The role of luck and unforeseen circumstances in achieving significant goals, beyond just personal effort.  
   
 ## 📚 Book Recommendations  
-* [⚛️🔄 Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones](../books/atomic-habits.md) by James Clear: A practical guide to building good habits and breaking bad ones, which could complement the "1,000-Day Club" concept.  
-* [❤️‍🔥💪 Grit: The Power of Passion and Perseverance](../books/grit-the-power-of-passion-and-perseverance.md) by Angela Duckworth: Explores the importance of passion and long-term perseverance in achieving significant goals, aligning with the "Grind" gatekeeper.  
-* [🌱🧘🏼‍♀️🏆 Mindset: The New Psychology of Success](../books/mindset.md) by Carol S. Dweck: Discusses the difference between fixed and growth mindsets, offering insights into overcoming the "Trap of Hubris" by fostering a willingness to learn and adapt.  
-* [✨🧙‍♂️⚗️ The Alchemist](../books/the-alchemist.md) by Paulo Coelho: A fictional story about following one's dreams and overcoming obstacles, offering a more spiritual and philosophical perspective on the journey.  
-* [🤔🐇🐢 Thinking, Fast and Slow](../books/thinking-fast-and-slow.md) by Daniel Kahneman: Provides insights into cognitive biases and decision-making, which could offer a deeper understanding of why people might shy away from their "inflection point" or settle for "good enough."
+* [⚛️🔄 Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones](/content/books/atomic-habits.md) by James Clear: A practical guide to building good habits and breaking bad ones, which could complement the "1,000-Day Club" concept.  
+* [❤️‍🔥💪 Grit: The Power of Passion and Perseverance](/content/books/grit-the-power-of-passion-and-perseverance.md) by Angela Duckworth: Explores the importance of passion and long-term perseverance in achieving significant goals, aligning with the "Grind" gatekeeper.  
+* [🌱🧘🏼‍♀️🏆 Mindset: The New Psychology of Success](/content/books/mindset.md) by Carol S. Dweck: Discusses the difference between fixed and growth mindsets, offering insights into overcoming the "Trap of Hubris" by fostering a willingness to learn and adapt.  
+* [✨🧙‍♂️⚗️ The Alchemist](/content/books/the-alchemist.md) by Paulo Coelho: A fictional story about following one's dreams and overcoming obstacles, offering a more spiritual and philosophical perspective on the journey.  
+* [🤔🐇🐢 Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md) by Daniel Kahneman: Provides insights into cognitive biases and decision-making, which could offer a deeper understanding of why people might shy away from their "inflection point" or settle for "good enough."

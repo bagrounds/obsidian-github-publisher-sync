@@ -7,7 +7,7 @@ share: true
 CTA: 🇺🇸 Restore leadership.
 affiliate link: https://amzn.to/4os00rk
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🇺🇸💔 The Lost Soul of the American Presidency: The Decline into Demagoguery and the Prospects for Renewal  
 [🛒 The Lost Soul of the American Presidency: The Decline into Demagoguery and the Prospects for Renewal. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4os00rk)  
   
@@ -111,11 +111,11 @@ affiliate link: https://amzn.to/4os00rk
     * ⬆️ Focuses on the expansion of presidential power beyond constitutional limits.  
 * 💼 **Confidence Men: Wall Street, Washington, and the Education of a President** by Ron Suskind  
     * Examines the Obama administration's struggles with economic policy and presidential effectiveness.  
-* **[😇🧠 The Righteous Mind: Why Good People Are Divided by Politics and Religion](./the-righteous-mind.md)** by Jonathan Haidt  
+* **[😇🧠 The Righteous Mind: Why Good People Are Divided by Politics and Religion](/content/books/the-righteous-mind.md)** by Jonathan Haidt  
     * Explores the psychological roots of political division and moral reasoning.  
-* **[🗳️🕊️🇺🇸 Democracy in America](./democracy-in-america.md)** by Alexis de Tocqueville  
+* **[🗳️🕊️🇺🇸 Democracy in America](/content/books/democracy-in-america.md)** by Alexis de Tocqueville  
     * Classic analysis of American democracy, including insights into majority tyranny and the character of leadership.  
-* **[🇺🇸📜 The Federalist Papers](./the-federalist-papers.md)** by Alexander Hamilton, James Madison, and John Jay  
+* **[🇺🇸📜 The Federalist Papers](/content/books/the-federalist-papers.md)** by Alexander Hamilton, James Madison, and John Jay  
     * Foundational texts detailing the framers' vision for American government, including the presidency.  
   
 #### 🆚 Contrasting Perspectives  
@@ -129,15 +129,15 @@ affiliate link: https://amzn.to/4os00rk
     * 🌟 Highlights the crucial role of strong political leadership in pivotal moments.  
   
 #### 🎨 Creatively Related  
-* **[🎳🏘️📉📈 Bowling Alone: The Collapse and Revival of American Community](./bowling-alone.md)** by Robert D. Putnam  
+* **[🎳🏘️📉📈 Bowling Alone: The Collapse and Revival of American Community](/content/books/bowling-alone.md)** by Robert D. Putnam  
     * 👥 Discusses the decline of social capital and civic engagement, which can impact political culture.  
-* **[📺💀 Amusing Ourselves to Death: Public Discourse in the Age of Show Business](./amusing-ourselves-to-death-public-discourse-in-the-age-of-show-business.md)** by Neil Postman  
+* **[📺💀 Amusing Ourselves to Death: Public Discourse in the Age of Show Business](/content/books/amusing-ourselves-to-death-public-discourse-in-the-age-of-show-business.md)** by Neil Postman  
     * 📺 Critiques the impact of media, particularly television, on public discourse and rationality, relevant to "media-saturated" politics.  
-* **[🤔🐇🐢 Thinking, Fast and Slow](./thinking-fast-and-slow.md)** by Daniel Kahneman  
+* **[🤔🐇🐢 Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md)** by Daniel Kahneman  
     * 🤔 Explores cognitive biases and decision-making, offering insight into why emotional or demagogic appeals might be effective.  
 * 🏛️ **The Republic** by Plato  
     * 📜 Ancient philosophical text discussing different forms of government, including the dangers of democracy descending into tyranny.  
-* 🧘 **[🤔🧘 Meditations](./meditations.md)** by Marcus Aurelius  
+* 🧘 **[🤔🧘 Meditations](/content/books/meditations.md)** by Marcus Aurelius  
     * 📖 Offers Stoic philosophy on leadership, duty, and virtue, providing a contrast to the pursuit of popular approval.  
   
 ## 💬 [Gemini](https://gemini.google.com) Prompt (gemini-2.5-flash)  

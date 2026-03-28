@@ -10,7 +10,7 @@ Channel: PBS NewsHour
 tags:
 youtube: https://youtu.be/CFucbHMHOOE
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md)  
 # 🎙️🇺🇸🛥️💥 Brooks and Capehart on the political fallout over Trump's boat strikes  
 ![Brooks and Capehart on the political fallout over Trump's boat strikes](https://youtu.be/CFucbHMHOOE)  
   
@@ -46,12 +46,12 @@ youtube: https://youtu.be/CFucbHMHOOE
   
 ### ↔️ Similar  
 * 📰 The View from Nowhere: The Politics of Information by James Fallows. 💡 It examines how the press has adopted a detached, view from nowhere stance that fails to adequately address the political polarization and the rise of partisan media discussed in the video.  
-* [😇🧠 The Righteous Mind: Why Good People Are Divided by Politics and Religion](../books/the-righteous-mind.md) by Jonathan Haidt. 🧠 This book explores the deep moral and psychological roots of political identity, helping to explain why audiences get captured by narratives that reinforce their group's moral matrix, even when based on misinformation.  
+* [😇🧠 The Righteous Mind: Why Good People Are Divided by Politics and Religion](/content/books/the-righteous-mind.md) by Jonathan Haidt. 🧠 This book explores the deep moral and psychological roots of political identity, helping to explain why audiences get captured by narratives that reinforce their group's moral matrix, even when based on misinformation.  
   
 ### 🆚 Contrasting  
 * 🛡️ National Security and the Constitution by Louis Fisher. 📜 It offers a legal and historical perspective on the proper constitutional balance of war powers and checks on the executive branch, providing a framework against which to assess the legality and prudence of the boat strikes and the Secretary's conduct.  
-* [🏛️⚖️ The Rule of Law](../books/the-rule-of-law.md) by Tom Bingham. 🏛️ This text defines and defends the principle that all persons and authorities, including government officials like the Defense Secretary, are accountable under the law, contrasting sharply with the video's examples of apparent impunity and disregard for rules.  
+* [🏛️⚖️ The Rule of Law](/content/books/the-rule-of-law.md) by Tom Bingham. 🏛️ This text defines and defends the principle that all persons and authorities, including government officials like the Defense Secretary, are accountable under the law, contrasting sharply with the video's examples of apparent impunity and disregard for rules.  
   
 ### 🎨 Creatively Related  
-* [📺💀 Amusing Ourselves to Death: Public Discourse in the Age of Show Business](../books/amusing-ourselves-to-death-public-discourse-in-the-age-of-show-business.md) by Neil Postman. 🎭 Postman’s classic argues that media transforms serious public issues into entertainment, aligning with the video's critique that the military strikes were treated like a TV show or a video game.  
+* [📺💀 Amusing Ourselves to Death: Public Discourse in the Age of Show Business](/content/books/amusing-ourselves-to-death-public-discourse-in-the-age-of-show-business.md) by Neil Postman. 🎭 Postman’s classic argues that media transforms serious public issues into entertainment, aligning with the video's critique that the military strikes were treated like a TV show or a video game.  
 * 🕳️ Conspiracy Theories and the People Who Believe Them by Joseph E. Uscinski. 🤯 This book provides a sociological and psychological examination of who believes in conspiracy theories and why, offering a broader context for understanding the acidic disinformation Bongino previously promoted and the consequential paranoia it fuels.

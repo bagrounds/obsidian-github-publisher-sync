@@ -6,7 +6,7 @@ URL: https://bagrounds.org/books/edible-forest-gardens
 share: true
 affiliate link: https://amzn.to/4n0cW7Z
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🍎🌳 Edible Forest Gardens  
 [🛒 Edible Forest Gardens. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4n0cW7Z)  
   
@@ -55,7 +55,7 @@ affiliate link: https://amzn.to/4n0cW7Z
 ## 📚 Further Reading: Exploring Edible Ecosystems  
 ### 🌱 Foundational Permaculture & Forest Gardening  
   
-* ***[🌍🌿 Gaia's Garden: A Guide to Home-Scale Permaculture](./gaias-garden.md)*** **by Toby Hemenway:** 🏡 A highly accessible introduction to permaculture principles, focusing on backyard applications. 🚀 Often recommended as a starting point before tackling *Edible Forest Gardens*.  
+* ***[🌍🌿 Gaia's Garden: A Guide to Home-Scale Permaculture](/content/books/gaias-garden.md)*** **by Toby Hemenway:** 🏡 A highly accessible introduction to permaculture principles, focusing on backyard applications. 🚀 Often recommended as a starting point before tackling *Edible Forest Gardens*.  
 * 📚 ***Creating a Forest Garden: Working with Nature to Grow Edible Crops*** **by Martin Crawford:** 🇬🇧 A practical guide focused on temperate climates, written by a leading practitioner in the UK. 🌿 Known for excellent plant information and design advice.  
 * 📚 ***Permaculture: A Designers' Manual*** **by Bill Mollison:** 🌍 The comprehensive, foundational text of the permaculture movement, though dense and potentially challenging for beginners.  
 * 📚 ***Introduction to Permaculture*** **by Bill Mollison:** 🌱 A more concise introduction to the core concepts by one of permaculture's co-originators.  
@@ -78,12 +78,12 @@ affiliate link: https://amzn.to/4n0cW7Z
   
 ### 🌱 Creatively Related Reads  
   
-* ***[🪢🌾 Braiding Sweetgrass: Indigenous Wisdom, Scientific Knowledge, and the Teachings of Plants](./braiding-sweetgrass.md)*** **by Robin Wall Kimmerer:** 🌿 Explores indigenous ecological knowledge, reciprocity, and a deep relationship with the plant world, offering profound philosophical context.  
+* ***[🪢🌾 Braiding Sweetgrass: Indigenous Wisdom, Scientific Knowledge, and the Teachings of Plants](/content/books/braiding-sweetgrass.md)*** **by Robin Wall Kimmerer:** 🌿 Explores indigenous ecological knowledge, reciprocity, and a deep relationship with the plant world, offering profound philosophical context.  
 * 📚 ***Teaming with Microbes*** **(and related books like *Teaming with Fungi*) by Jeff Lowenfels & Wayne Lewis:** 🦠 Delves into soil science and the complex life within the soil, crucial for understanding ecosystem function.  
-* **[🍄🌍🧠🔮 Entangled Life: How Fungi Make Our Worlds, Change Our Minds & Shape Our Futures](./entangled-life-how-fungi-make-our-worlds-change-our-minds-shape-our-futures.md)** **by Merlin Sheldrake:** 🍄 A mind-expanding exploration of the world of fungi and their critical roles in ecosystems.  
+* **[🍄🌍🧠🔮 Entangled Life: How Fungi Make Our Worlds, Change Our Minds & Shape Our Futures](/content/books/entangled-life-how-fungi-make-our-worlds-change-our-minds-shape-our-futures.md)** **by Merlin Sheldrake:** 🍄 A mind-expanding exploration of the world of fungi and their critical roles in ecosystems.  
 * 📚 ***Radical Mycology*** **by Peter McCoy:** 🍄 A comprehensive guide to working with fungi for food, medicine, and ecological restoration.  
 * 📚 ***Foraging for Edible Wild Plants*** **by Gail Harland (or similar regional foraging guides):** 🌿 Practical guides to identifying and using wild edible plants, connecting directly to the "edible" aspect of forest ecosystems.  
 * 📚 ***Ecology without Culture*** **by Christine L. Marran or other Ecocriticism/Ecophilosophy texts:** 📜 Explore the cultural, philosophical, and literary dimensions of human relationships with the environment.".  
   
-## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
+## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Edible Forest Gardens. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

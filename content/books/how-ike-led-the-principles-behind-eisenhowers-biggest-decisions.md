@@ -6,7 +6,7 @@ URL: https://bagrounds.org/books/how-ike-led-the-principles-behind-eisenhowers-b
 share: true
 affiliate link: https://amzn.to/4dOJKMN
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🇺🇸🪖♟️🔍⚖️🕊️🤝 How Ike Led: The Principles Behind Eisenhower's Biggest Decisions  
 [🛒 How Ike Led: The Principles Behind Eisenhower's Biggest Decisions. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4dOJKMN)  
   
@@ -56,8 +56,8 @@ affiliate link: https://amzn.to/4dOJKMN
     * 🤝 *Leadership in the Modern Presidency* edited by Fred I. Greenstein: A collection of essays assessing the leadership and organizational talents of presidents.  
     * 🗣️ *The President's Club: Inside the World's Most Exclusive Fraternity* by Nancy Gibbs and Michael Duffy: Explores the relationships and interactions between former and current presidents, offering insights into the unique fraternity of the presidency.  
 * **On Strategic Decision Making:**  
-    * [🤔💡⚖️✅ Decisive: How to Make Better Choices in Life and Work](./decisive-how-to-make-better-choices-in-life-and-work.md) by Chip Heath and Dan Heath: Provides a framework for making better decisions by overcoming common biases.  
-    * [🎲🤔 Thinking in Bets: Making Smarter Decisions When You Don't Have All the Facts](./thinking-in-bets-making-smarter-decisions-when-you-dont-have-all-the-facts.md) by Annie Duke: Uses poker as a metaphor to teach probabilistic thinking and decision-making under uncertainty.  
+    * [🤔💡⚖️✅ Decisive: How to Make Better Choices in Life and Work](/content/books/decisive-how-to-make-better-choices-in-life-and-work.md) by Chip Heath and Dan Heath: Provides a framework for making better decisions by overcoming common biases.  
+    * [🎲🤔 Thinking in Bets: Making Smarter Decisions When You Don't Have All the Facts](/content/books/thinking-in-bets-making-smarter-decisions-when-you-dont-have-all-the-facts.md) by Annie Duke: Uses poker as a metaphor to teach probabilistic thinking and decision-making under uncertainty.  
     * 🎯 *Good Strategy Bad Strategy: The Difference and Why It Matters* by Richard P. Rumelt: Defines what constitutes good strategy and identifies the hallmarks of bad strategy.  
     * 🗺️ *The Decision Book: Fifty Models for Strategic Thinking* by Mikael Krogerus and Roman Tschäppeler: Presents 50 different models for strategic thinking and decision-making.  
   
@@ -77,14 +77,14 @@ affiliate link: https://amzn.to/4dOJKMN
     * 📉 *The Falling Dominoes Book: Unraveling the Domino Theory in US Cold War Strategy*: Focuses on a specific strategic concept that influenced US policy during the Cold War.  
     * 🇷🇺 *Soviet Decisionmaking for National Security* by Jiri Valenta: Analyzes the Soviet process for national security decisions during the Cold War, providing a contrasting viewpoint.  
 * **Military Leadership and Strategy:**  
-    * ⚔️ [🎨⚔️ The Art of War](./the-art-of-war.md) by Sun Tzu: A classic treatise on military strategy with timeless principles applicable to leadership.  
+    * ⚔️ [🎨⚔️ The Art of War](/content/books/the-art-of-war.md) by Sun Tzu: A classic treatise on military strategy with timeless principles applicable to leadership.  
     * 🪖 *Patton: A Genius for War* by Carlo D'Este: A biography of General George S. Patton, offering a contrasting, more flamboyant leadership style to Eisenhower's.  
 * **Psychology of Decision Making:**  
-    * [🤔🐇🐢 Thinking, Fast and Slow](./thinking-fast-and-slow.md) by Daniel Kahneman: Explains the two systems of thought that influence decision-making, providing a scientific basis for understanding cognitive processes.  
-    * [⚡🚫💭 Blink: The Power of Thinking Without Thinking](./blink-the-power-of-thinking-without-thinking.md) by Malcolm Gladwell: Explores the power of rapid cognition and instantaneous judgments.  
-    * [👉🤏 Nudge: Improving Decisions about Health, Wealth, and Happiness](./nudge.md) by Richard H. Thaler and Cass R. Sunstein: Examines how subtle changes in the way choices are presented can influence decision-making.  
+    * [🤔🐇🐢 Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md) by Daniel Kahneman: Explains the two systems of thought that influence decision-making, providing a scientific basis for understanding cognitive processes.  
+    * [⚡🚫💭 Blink: The Power of Thinking Without Thinking](/content/books/blink-the-power-of-thinking-without-thinking.md) by Malcolm Gladwell: Explores the power of rapid cognition and instantaneous judgments.  
+    * [👉🤏 Nudge: Improving Decisions about Health, Wealth, and Happiness](/content/books/nudge.md) by Richard H. Thaler and Cass R. Sunstein: Examines how subtle changes in the way choices are presented can influence decision-making.  
   
-## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
+## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on How Ike Led: The Principles Behind Eisenhower's Biggest Decisions. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.  
   
 ## 🐦 Tweet  

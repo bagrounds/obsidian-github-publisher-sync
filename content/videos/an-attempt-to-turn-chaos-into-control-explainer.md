@@ -10,7 +10,7 @@ Channel: Heather Cox Richardson
 tags:
 youtube: https://youtu.be/vgHEzVmRnTA
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md)  
 # 🌪️➡️🕹️ An Attempt to Turn Chaos Into Control | Explainer  
 ![An Attempt to Turn Chaos Into Control | Explainer](https://youtu.be/vgHEzVmRnTA)  
   
@@ -47,7 +47,7 @@ youtube: https://youtu.be/vgHEzVmRnTA
   
 * 📖 **The Edge of Democracy** by John Keane: Explores the fragility of democratic systems worldwide and the ways they can slip toward authoritarianism, resonating with the video's theme of dictatorship versus democracy.  
 * ⚖️ **The Road to Unfreedom: Russia, Europe, America** by Timothy Snyder: Analyzes the rise of anti-democratic ideas and authoritarian tactics in the 21st century, focusing on the historical and ideological roots of contemporary political crises.  
-* **[🗳️🏛️☠️ How Democracies Die](../books/how-democracies-die.md)** by Steven Levitsky and Daniel Ziblatt: Details the subtle and gradual ways modern democracies are undermined by elected leaders who subvert democratic institutions, similar to the video's critique of the erosion of legal norms.  
+* **[🗳️🏛️☠️ How Democracies Die](/content/books/how-democracies-die.md)** by Steven Levitsky and Daniel Ziblatt: Details the subtle and gradual ways modern democracies are undermined by elected leaders who subvert democratic institutions, similar to the video's critique of the erosion of legal norms.  
   
 ### Contrasting Perspectives  
   
@@ -56,6 +56,6 @@ youtube: https://youtu.be/vgHEzVmRnTA
   
 ### Creatively Related Books  
   
-* **[🏭🫡 Manufacturing Consent: The Political Economy of the Mass Media](../books/manufacturing-consent.md)** by Edward S. Herman and Noam Chomsky: A seminal work on how media structures filter and distort news to serve established power interests, highly relevant to the video's discussion of the administration manufacturing a narrative of conflict.  
-* **[🕊️💪 Why Civil Resistance Works: The Strategic Logic of Nonviolent Conflict](../books/why-civil-resistance-works-the-strategic-logic-of-nonviolent-conflict.md)** by Erica Chenoweth and Maria J. Stephan: Uses data to show the effectiveness of non-violent resistance over armed struggle, directly supporting the video's call for citizens to maintain non-violence and documentation.  
+* **[🏭🫡 Manufacturing Consent: The Political Economy of the Mass Media](/content/books/manufacturing-consent.md)** by Edward S. Herman and Noam Chomsky: A seminal work on how media structures filter and distort news to serve established power interests, highly relevant to the video's discussion of the administration manufacturing a narrative of conflict.  
+* **[🕊️💪 Why Civil Resistance Works: The Strategic Logic of Nonviolent Conflict](/content/books/why-civil-resistance-works-the-strategic-logic-of-nonviolent-conflict.md)** by Erica Chenoweth and Maria J. Stephan: Uses data to show the effectiveness of non-violent resistance over armed struggle, directly supporting the video's call for citizens to maintain non-violence and documentation.  
 * 🧐 **Darkness at Noon** by Arthur Koestler: A classic novel that explores the psychological torment and moral ambiguities of individuals caught within a totalitarian state, reflecting the existential struggle against the ideological push discussed in the video.

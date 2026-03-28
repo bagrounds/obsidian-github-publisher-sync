@@ -9,7 +9,7 @@ tags:
 affiliate link: https://amzn.to/4mOSl6u
 CTA: Construct peace.
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # ✍️🗺️🏗️🗳️ An Architect of Democracy: Building a Mosaic of Peace  
 [🛒 An Architect of Democracy: Building a Mosaic of Peace. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4mOSl6u)  
   
@@ -63,7 +63,7 @@ Huntley offers a perspective grounded in decades of hands-on experience 🛠️ 
   
 ### 📚 Book Recommendations  
 * **Best Alternate on Same Topic:** 📖 *Governing the World: The History of an Idea* by Mark Mazower. Explores the history of international organizations and governance ideas, offering a broader historical context. 🌍📜  
-* **Best Tangentially Related:** [🤝🌍 Diplomacy](./diplomacy.md) by Henry Kissinger. Offers a high-level, realist perspective on international relations and statecraft, focusing more on power politics than Huntley's emphasis on institutions and citizens. 👑♟️  
+* **Best Tangentially Related:** [🤝🌍 Diplomacy](/content/books/diplomacy.md) by Henry Kissinger. Offers a high-level, realist perspective on international relations and statecraft, focusing more on power politics than Huntley's emphasis on institutions and citizens. 👑♟️  
 * **Best Diametrically Opposed:** 💥 *The End of History and the Last Man* by Francis Fukuyama (representing the optimism Huntley might share) *contrasted with* critiques like *The Clash of Civilizations and the Remaking of World Order* by Samuel P. Huntington, which posits conflict based on cultural differences rather than universalizing democracy. ⚔️  
 * **Best Fiction Incorporating Related Ideas:** *The Ugly American* by Eugene Burdick and William Lederer. Although fiction, it critiques American diplomatic and aid efforts abroad, highlighting the disconnect between policy ideals and grassroots realities, touching on themes relevant to effective international engagement. 🇺🇸😬🌏  
 * **Best More General/Specific:**  
@@ -71,7 +71,7 @@ Huntley offers a perspective grounded in decades of hands-on experience 🛠️ 
     * **More Specific:** 🌱 *Building Peace: Sustainable Reconciliation in Divided Societies* by John Paul Lederach. Focuses specifically on grassroots peacebuilding methodologies and reconciliation processes. 🧑‍🤝‍🧑🕊️  
 * **Best More Rigorous/Accessible:**  
     * **More Rigorous:** 📊 *The Better Angels of Our Nature: Why Violence Has Declined* by Steven Pinker. Uses extensive data to argue for a long-term decline in violence, exploring various causal factors including aspects of governance and interconnectedness. 📉🕊️  
-    * **More Accessible:** [👉🤝 Getting to Yes: Negotiating Agreement Without Giving In](./getting-to-yes-negotiating-agreement-without-giving-in.md) by Roger Fisher and William Ury. While focused on negotiation, its principles of finding mutual interest are foundational to the diplomatic cooperation Huntley champions. ✅🤝  
+    * **More Accessible:** [👉🤝 Getting to Yes: Negotiating Agreement Without Giving In](/content/books/getting-to-yes-negotiating-agreement-without-giving-in.md) by Roger Fisher and William Ury. While focused on negotiation, its principles of finding mutual interest are foundational to the diplomatic cooperation Huntley champions. ✅🤝  
   
 ## 💬 [Gemini](https://gemini.google.com) Prompt  
 > Summarize the book: An Architect of Democracy. Start with a TL;DR - a single statement that conveys a maximum of the useful information provided in the book. Next, explain how this book may offer a new or surprising perspective. Follow this with a deep dive. Catalogue the topics, methods, and research discussed. Be sure to highlight any significant theories, theses, or mental models proposed. Summarize prominent examples discussed. Emphasize practical takeaways, including detailed, specific, concrete, step-by-step advice, guidance, or techniques discussed. Provide a critical analysis of the quality of the information presented, using scientific backing, author credentials, authoritative reviews, and other markers of high quality information as justification. Make the following additional book recommendations: the best alternate book on the same topic; the best book that is tangentially related; the best book that is diametrically opposed; the best fiction book that incorporates related ideas; the best book that is more general or more specific; and the best book that is more rigorous or more accessible than this book. Format your response as markdown, starting at heading level H3, with inline links, for easy copy paste. Use meaningful emojis generously (at least one per heading, bullet point, and paragraph) to enhance readability. Do not include broken links or links to commercial sites.

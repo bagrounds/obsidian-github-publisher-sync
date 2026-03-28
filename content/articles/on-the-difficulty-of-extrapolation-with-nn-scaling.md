@@ -7,7 +7,7 @@ URL: https://bagrounds.org/articles/on-the-difficulty-of-extrapolation-with-nn-s
 Author:
 tags:
 ---
-[Home](../index.md) > [Articles](./index.md)  
+[Home](/content/index.md) > [Articles](/content/articles/index.md)  
 # [📈❓📏🤖 On the Difficulty of Extrapolation with NN Scaling](https://lukemetz.com/difficulty-of-extrapolation-nn-scaling)  
 ## 🤖 AI Summary  
 * 📉 The article highlights that while scaling laws can predict performance, "this can be misleading in practice if not done carefully."  
@@ -25,8 +25,8 @@ tags:
 * 💡 Additionally, investigating the economic implications of such "expensive errors" in large-scale AI development could provide further insight.  
   
 ## 📚 Book Recommendations  
-* [🧠💻🤖 Deep Learning](../books/deep-learning.md) by Ian Goodfellow, Yoshua Bengio, and Aaron Courville: A foundational text that covers the theoretical and practical aspects of deep learning, including optimization and hyperparameter tuning.  
+* [🧠💻🤖 Deep Learning](/content/books/deep-learning.md) by Ian Goodfellow, Yoshua Bengio, and Aaron Courville: A foundational text that covers the theoretical and practical aspects of deep learning, including optimization and hyperparameter tuning.  
 * The Hundred-Page Machine Learning Book by Andriy Burkov: A concise introduction to machine learning concepts, providing a good overview of the challenges in model training and deployment.  
-* [🤖⚙️🔁 Designing Machine Learning Systems: An Iterative Process for Production-Ready Applications](../books/designing-machine-learning-systems-an-iterative-process-for-production-ready-applications.md) by Chip Huyen: Explores the complexities of building and deploying large-scale machine learning systems, touching on practical issues like resource management and optimization.  
+* [🤖⚙️🔁 Designing Machine Learning Systems: An Iterative Process for Production-Ready Applications](/content/books/designing-machine-learning-systems-an-iterative-process-for-production-ready-applications.md) by Chip Huyen: Explores the complexities of building and deploying large-scale machine learning systems, touching on practical issues like resource management and optimization.  
 * Neural Networks and Deep Learning by Michael Nielsen: An online book that offers an intuitive introduction to neural networks, which could provide a different perspective on the fundamentals of scaling.  
-* [🤔🐇🐢 Thinking, Fast and Slow](../books/thinking-fast-and-slow.md) by Daniel Kahneman: While not directly about AI, this book on cognitive biases can offer an interesting parallel to the "naive extrapolation" discussed in the article, highlighting how humans can also make errors in prediction based on incomplete information.
+* [🤔🐇🐢 Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md) by Daniel Kahneman: While not directly about AI, this book on cognitive biases can offer an interesting parallel to the "naive extrapolation" discussed in the article, highlighting how humans can also make errors in prediction based on incomplete information.

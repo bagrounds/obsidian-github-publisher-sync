@@ -7,7 +7,7 @@ share: true
 CTA: ⚖️ Uphold liberty.
 affiliate link: https://amzn.to/46dbGGU
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 👑🏛️ Second Treatise of Government  
 [🛒 Second Treatise of Government. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/46dbGGU)  
   
@@ -40,7 +40,7 @@ affiliate link: https://amzn.to/46dbGGU
   
 ### 📖 Similar Books  
   
-* **[🇺🇸📜 The Federalist Papers](./the-federalist-papers.md)** by 🧑‍🎓 Alexander Hamilton, 🧑‍🎓 James Madison, and 🧑‍🎓 John Jay  
+* **[🇺🇸📜 The Federalist Papers](/content/books/the-federalist-papers.md)** by 🧑‍🎓 Alexander Hamilton, 🧑‍🎓 James Madison, and 🧑‍🎓 John Jay  
     This collection of essays argues for the ratification of the United States Constitution, drawing heavily on Lockean principles of government, ➗ separation of powers, and the protection of individual rights. It provides a practical application and defense of many ideas first articulated by Locke.  
 * 🤝 **The Social Contract** by 🧑‍🎓 Jean-Jacques Rousseau  
     Rousseau's work also explores the concept of a 🤝 social contract as the basis for political society, but it introduces the idea of the "general will" and places more emphasis on collective sovereignty and direct democracy, offering a different interpretation of how individuals can live freely within a society.  

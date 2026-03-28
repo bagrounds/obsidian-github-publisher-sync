@@ -7,7 +7,7 @@ share: true
 CTA: 🗺️ Discover where opportunity awaits.
 affiliate link: https://amzn.to/4qokAcS
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 📈💼 The New Geography of Jobs  
 [🛒 The New Geography of Jobs. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4qokAcS)  
   
@@ -72,12 +72,12 @@ affiliate link: https://amzn.to/4qokAcS
   
 ### ↔️ Contrasting Books  
 * 💔 Hillbilly Elegy: A Memoir of a Family and Culture in Crisis by J.D. Vance (Offers a socio-cultural perspective on the decline of manufacturing regions and its human cost).  
-* [💩💼 Bullshit Jobs: A Theory](./bullshit-jobs-a-theory.md) by David Graeber (Critiques the proliferation of meaningless jobs in modern economies, contrasting with the high-value innovation jobs).  
+* [💩💼 Bullshit Jobs: A Theory](/content/books/bullshit-jobs-a-theory.md) by David Graeber (Critiques the proliferation of meaningless jobs in modern economies, contrasting with the high-value innovation jobs).  
 * 📉 Coming Apart: The State of White America, 1960-2010 by Charles Murray (Examines class segregation and cultural divergence in America, though from a different lens than economic geography).  
   
 ### 🔗 Related Books  
 * 🗺️ Prisoners of Geography: Ten Maps That Tell You Everything You Need to Know About Global Politics by Tim Marshall (Explores how physical geography shapes global politics and economic interactions).  
-* [📜🌍⏳ Sapiens: A Brief History of Humankind](./sapiens-a-brief-history-of-humankind.md) by Yuval Noah Harari (Provides a broad historical context for human development, innovation, and societal structures).  
+* [📜🌍⏳ Sapiens: A Brief History of Humankind](/content/books/sapiens-a-brief-history-of-humankind.md) by Yuval Noah Harari (Provides a broad historical context for human development, innovation, and societal structures).  
 * 🔄 Economic Transformations: General Purpose Technologies and Long-Term Economic Growth by Richard Lipsey (Examines the impact of foundational technologies on long-term economic shifts).  
   
 ## 🫵 What Do You Think?  

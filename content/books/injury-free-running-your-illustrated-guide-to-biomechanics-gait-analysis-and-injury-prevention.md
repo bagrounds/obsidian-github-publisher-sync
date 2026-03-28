@@ -7,7 +7,7 @@ share: true
 affiliate link: https://amzn.to/47Kbmlm
 CTA: 🏃‍♀️ Prevent pain.
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🏃🤕 Injury-Free Running: Your Illustrated Guide to Biomechanics, Gait Analysis, and Injury Prevention  
 [🛒 Injury-Free Running: Your Illustrated Guide to Biomechanics, Gait Analysis, and Injury Prevention. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/47Kbmlm)  
   
@@ -53,12 +53,12 @@ The book's notable strengths include:
   
 ### 🤝 Similar Books  
   
-* **[🏃‍♀️🦴 Anatomy for Runners: Unlocking Your Athletic Potential for Health, Speed, and Injury Prevention](./anatomy-for-runners-unlocking-your-athletic-potential-for-health-speed-and-injury-prevention.md) by Jay Dicharry:** This book, highly recommended for its comprehensive and actionable insights, delves into the anatomical reasons behind running injuries and provides prescriptive exercises for 💪 strength, 🤸 athleticism, proprioception, ⚖️ balance, and 🧠 coordination to prevent future issues.  
+* **[🏃‍♀️🦴 Anatomy for Runners: Unlocking Your Athletic Potential for Health, Speed, and Injury Prevention](/content/books/anatomy-for-runners-unlocking-your-athletic-potential-for-health-speed-and-injury-prevention.md) by Jay Dicharry:** This book, highly recommended for its comprehensive and actionable insights, delves into the anatomical reasons behind running injuries and provides prescriptive exercises for 💪 strength, 🤸 athleticism, proprioception, ⚖️ balance, and 🧠 coordination to prevent future issues.  
 * 🚶‍♂️ **Running Mechanics and Gait Analysis by Reed Ferber and Shari Macdonald:** This resource provides a comprehensive review of research and clinical concepts related to gait and injury analysis, offering an in-depth understanding of running ⚙️ biomechanics, 💪 muscular strength, 🤸 flexibility, and 🦴 anatomical alignment for advanced clinical assessment. It includes 💻 online video access to illustrate biomechanical patterns.  
   
 ### 🆚 Contrasting Books  
   
-* **[🏃‍♂️⛰️ Born to Run: A Hidden Tribe, Superathletes, and the Greatest Race the World Has Never Seen](./born-to-run-a-hidden-tribe-superathletes-and-the-greatest-race-the-world-has-never-seen.md) by Christopher McDougall:** In stark contrast to the scientific, biomechanical focus of Injury-Free Running, this popular book explores the 📜 historical and 🌍 cultural aspects of long-distance running, particularly among the Tarahumara people, and advocates for a more natural, minimalist running style and connection with running's primal roots.  
+* **[🏃‍♂️⛰️ Born to Run: A Hidden Tribe, Superathletes, and the Greatest Race the World Has Never Seen](/content/books/born-to-run-a-hidden-tribe-superathletes-and-the-greatest-race-the-world-has-never-seen.md) by Christopher McDougall:** In stark contrast to the scientific, biomechanical focus of Injury-Free Running, this popular book explores the 📜 historical and 🌍 cultural aspects of long-distance running, particularly among the Tarahumara people, and advocates for a more natural, minimalist running style and connection with running's primal roots.  
 * 🏃‍♀️ **Run Strong Stay Hungry by Jonathan Beverly:** While acknowledging injury prevention as part of longevity, this book offers a more 🤔 philosophical approach to lifetime running. It focuses on broader themes such as staying connected to the 🏃 community, maintaining motivation, and the 🧠 mental aspects of the sport, rather than solely on biomechanics and rehabilitation.  
   
 ### 💡 Creatively Related Books  

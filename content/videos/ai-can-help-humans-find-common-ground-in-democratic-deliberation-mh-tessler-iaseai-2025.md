@@ -10,7 +10,7 @@ Channel: International Association for Safe & Ethical AI
 tags:
 youtube: https://youtu.be/T77ggzXvX1Y
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md)  
 # 🤖💡🤝🗣️🏛️ AI Can Help Humans Find Common Ground in Democratic Deliberation – MH Tessler | IASEAI 2025  
 ![AI Can Help Humans Find Common Ground in Democratic Deliberation – MH Tessler | IASEAI 2025](https://youtu.be/T77ggzXvX1Y)  
   
@@ -62,10 +62,10 @@ youtube: https://youtu.be/T77ggzXvX1Y
   
 * 🚨 Why AI Undermines Democracy and What to Do about It by Mark Coeckelbergh ❌ offers a philosophical critique, arguing that the 💰 concentration of power in tech and AI's capacity for 📢 manipulation risk eroding foundational democratic principles like freedom and equality.  
 * 🏛️ The Theory of Communicative Action, Volume One: Reason and the Rationalization of Society by Jürgen Habermas 🗣️ provides the deep **theoretical foundation for deliberation** and the "ideal speech situation" after which the machine is named, but 🧐 differentiates between the political and public spheres.  
-* [📊📉🏛️ Weapons of Math Destruction: How Big Data Increases Inequality and Threatens Democracy](../books/weapons-of-math-destruction-how-big-data-increases-inequality-and-threatens-democracy.md) by Cathy O'Neil 😟 examines the potential biases and ⚖️ ethical challenges tied to **AI decision-making systems**, highlighting the risks of 📉 discrimination and harm to democratic equality.  
+* [📊📉🏛️ Weapons of Math Destruction: How Big Data Increases Inequality and Threatens Democracy](/content/books/weapons-of-math-destruction-how-big-data-increases-inequality-and-threatens-democracy.md) by Cathy O'Neil 😟 examines the potential biases and ⚖️ ethical challenges tied to **AI decision-making systems**, highlighting the risks of 📉 discrimination and harm to democratic equality.  
   
 ### 🎨 Creatively Related  
   
-* [🤖📈 The Second Machine Age: Work, Progress, and Prosperity in a Time of Brilliant Technologies](../books/the-second-machine-age-work-progress-and-prosperity-in-a-time-of-brilliant-technologies.md) by Erik Brynjolfsson and Andrew McAfee 🚀 explores the wide-ranging 🌐 economic and societal impact of recent technological breakthroughs, including AI, charting a path for humans to 🏃 **race with machines**.  
-* [🤖📈 Prediction Machines: The Simple Economics of Artificial Intelligence](../books/prediction-machines-the-simple-economics-of-artificial-intelligence.md) by Ajay Agrawal, Joshua Gans, and Avi Goldfarb 📊 explains how AI essentially lowers the cost of 🔮 **prediction**, prompting organizations to 🔄 restructure their decision-making processes around this new, cheaper input.  
-* [🙅‍♀️✂️⚖️ Never Split the Difference: Negotiating As If Your Life Depended On It](../books/never-split-the-difference.md) by Chris Voss and Tahl Raz 🗣️ offers high-stakes 🤝 **negotiation and communication tactics**, providing human-centric skills that contrast with the 🤖 AI's structured, automated approach to finding common ground.
+* [🤖📈 The Second Machine Age: Work, Progress, and Prosperity in a Time of Brilliant Technologies](/content/books/the-second-machine-age-work-progress-and-prosperity-in-a-time-of-brilliant-technologies.md) by Erik Brynjolfsson and Andrew McAfee 🚀 explores the wide-ranging 🌐 economic and societal impact of recent technological breakthroughs, including AI, charting a path for humans to 🏃 **race with machines**.  
+* [🤖📈 Prediction Machines: The Simple Economics of Artificial Intelligence](/content/books/prediction-machines-the-simple-economics-of-artificial-intelligence.md) by Ajay Agrawal, Joshua Gans, and Avi Goldfarb 📊 explains how AI essentially lowers the cost of 🔮 **prediction**, prompting organizations to 🔄 restructure their decision-making processes around this new, cheaper input.  
+* [🙅‍♀️✂️⚖️ Never Split the Difference: Negotiating As If Your Life Depended On It](/content/books/never-split-the-difference.md) by Chris Voss and Tahl Raz 🗣️ offers high-stakes 🤝 **negotiation and communication tactics**, providing human-centric skills that contrast with the 🤖 AI's structured, automated approach to finding common ground.

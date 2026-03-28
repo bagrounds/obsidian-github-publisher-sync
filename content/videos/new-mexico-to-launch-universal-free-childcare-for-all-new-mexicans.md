@@ -10,7 +10,7 @@ Channel: Governor Michelle Lujan Grisham
 tags:
 youtube: https://youtu.be/mJ36QhD3fN0
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md)  
 # 👶🧑‍👩‍👧‍👦💲➡️ New Mexico to launch universal free childcare for all New Mexicans  
 ![New Mexico to launch universal free childcare for all New Mexicans](https://youtu.be/mJ36QhD3fN0)  
   
@@ -26,7 +26,7 @@ The 📺 video covers New Mexico's new initiative to provide 🤝 free, universa
 The video presents the program as a  blueprints for America, but other perspectives offer a more cautious view. 🔎 Research on universal child care programs in other places, such as Quebec, Canada, has shown mixed results. Some studies indicate that while such programs can increase maternal employment, they can also have negative long-term impacts on children’s social and emotional development. The debate often centers on whether a universal approach is the most efficient way to address child care affordability, as some critics argue that a targeted, voucher-based system would better serve the most vulnerable families without providing subsidies to wealthier ones. 💰 A deeper understanding would require an examination of long-term studies on child development outcomes and a comparison of different funding models (e.g., trust funds, taxes) to evaluate financial sustainability.  
   
 ## 📚 Book Recommendations  
-* 📖 [👶🏛️➡️ Transforming Early Years Policy in the U.S.: A Call to Action](../books/transforming-early-years-policy-in-the-us-a-call-to-action.md) offers a contemporary look at the fragmented and inequitable nature of early childhood care and education in the United States, centering the voices of marginalized communities.  
+* 📖 [👶🏛️➡️ Transforming Early Years Policy in the U.S.: A Call to Action](/content/books/transforming-early-years-policy-in-the-us-a-call-to-action.md) offers a contemporary look at the fragmented and inequitable nature of early childhood care and education in the United States, centering the voices of marginalized communities.  
 * 📖 Child Care Policy at the Crossroads: Gender and Welfare State Restructuring provides a comprehensive, historical, and international analysis of how child care policies have evolved, and how different nations address the issue.  
 * 📖 Children's Interests/Mothers' Rights: The Shaping of America's Child Care Policy examines why the U.S. has a fragmented child care system, tracing the history of policy and practices from the colonial period to the present.  
   

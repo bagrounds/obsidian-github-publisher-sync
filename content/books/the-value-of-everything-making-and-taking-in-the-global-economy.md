@@ -7,7 +7,7 @@ share: true
 CTA: 💡 Discover worth.
 affiliate link: https://amzn.to/4avSs34
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 💰🏭🌍 The Value of Everything: Making and Taking in the Global Economy  
 [🛒 The Value of Everything: Making and Taking in the Global Economy. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4avSs34)  
   
@@ -70,10 +70,10 @@ affiliate link: https://amzn.to/4avSs34
 ## 📚 Book Recommendations  
   
 ### 🤝 Similar  
-* [🏛️🏭 The Entrepreneurial State: Debunking Public vs Private Sector Myths](./the-entrepreneurial-state-debunking-public-vs-private-sector-myths.md) by Mariana Mazzucato: Explores the state's crucial role in innovation, setting the foundation for The Value of Everything.  
-* [💰📈🌍⏳ Capital in the Twenty-First Century](./capital-in-the-twenty-first-century.md) by Thomas Piketty: Analyzes wealth and income inequality over centuries.  
-* [🌍🏛️ The Great Transformation: The Political and Economic Origins of Our Time](./the-great-transformation-the-political-and-economic-origins-of-our-time.md) by Karl Polanyi: Examines the social and economic shifts brought about by market capitalism.  
-* [🏛️💰 Debt: The First 5,000 Years](./debt-the-first-5000-years.md) by David Graeber: Challenges conventional understandings of money, debt, and value.  
+* [🏛️🏭 The Entrepreneurial State: Debunking Public vs Private Sector Myths](/content/books/the-entrepreneurial-state-debunking-public-vs-private-sector-myths.md) by Mariana Mazzucato: Explores the state's crucial role in innovation, setting the foundation for The Value of Everything.  
+* [💰📈🌍⏳ Capital in the Twenty-First Century](/content/books/capital-in-the-twenty-first-century.md) by Thomas Piketty: Analyzes wealth and income inequality over centuries.  
+* [🌍🏛️ The Great Transformation: The Political and Economic Origins of Our Time](/content/books/the-great-transformation-the-political-and-economic-origins-of-our-time.md) by Karl Polanyi: Examines the social and economic shifts brought about by market capitalism.  
+* [🏛️💰 Debt: The First 5,000 Years](/content/books/debt-the-first-5000-years.md) by David Graeber: Challenges conventional understandings of money, debt, and value.  
   
 ### 🆚 Contrasting  
 * 📈 Basic Economics by Thomas Sowell: Offers a market-centric view of economic principles.  
@@ -81,10 +81,10 @@ affiliate link: https://amzn.to/4avSs34
 * 🔮 The Myth of the Rational Market by Justin Fox: Critiques the efficient market hypothesis and rational economic actors.  
   
 ### 🔗 Related  
-* [🚀🌍💰 Mission Economy: A Moonshot Guide to Changing Capitalism](./mission-economy-a-moonshot-guide-to-changing-capitalism.md) by Mariana Mazzucato: Further develops the concept of mission-oriented innovation and purpose-driven economics.  
-* [🍩🌍⚖️ Doughnut Economics: Seven Ways to Think Like a 21st-Century Economist](./doughnut-economics-seven-ways-to-think-like-a-21st-century-economist.md) by Kate Raworth: Advocates for an economic model that meets human needs within ecological limits.  
-* [💩💼 Bullshit Jobs: A Theory](./bullshit-jobs-a-theory.md) by David Graeber: Explores the proliferation of meaningless jobs in modern economies.  
-* [📈💼 The New Geography of Jobs](./the-new-geography-of-jobs.md) by Enrico Moretti: Discusses the economic challenges and opportunities in a knowledge economy.  
+* [🚀🌍💰 Mission Economy: A Moonshot Guide to Changing Capitalism](/content/books/mission-economy-a-moonshot-guide-to-changing-capitalism.md) by Mariana Mazzucato: Further develops the concept of mission-oriented innovation and purpose-driven economics.  
+* [🍩🌍⚖️ Doughnut Economics: Seven Ways to Think Like a 21st-Century Economist](/content/books/doughnut-economics-seven-ways-to-think-like-a-21st-century-economist.md) by Kate Raworth: Advocates for an economic model that meets human needs within ecological limits.  
+* [💩💼 Bullshit Jobs: A Theory](/content/books/bullshit-jobs-a-theory.md) by David Graeber: Explores the proliferation of meaningless jobs in modern economies.  
+* [📈💼 The New Geography of Jobs](/content/books/the-new-geography-of-jobs.md) by Enrico Moretti: Discusses the economic challenges and opportunities in a knowledge economy.  
   
 ## 🫵 What Do You Think?  
 🤔 How does society defines value, and what implications does this have for equitable wealth distribution? If you could redefine a single economic metric, which would it be and why?

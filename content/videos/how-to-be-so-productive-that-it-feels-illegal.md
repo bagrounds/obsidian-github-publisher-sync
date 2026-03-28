@@ -10,7 +10,7 @@ Channel: Justin Sung
 tags:
 youtube: https://youtu.be/4FXScrmYKQ0
 ---
-[Home](../index.md) > [Videos](./index.md) | [🧠👨‍🎓📈 Justin Sung](../people/justin-sung.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md) | [🧠👨‍🎓📈 Justin Sung](/content/people/justin-sung.md)  
 # 🚀📈🤯🚨 How To Be So Productive That It Feels ILLEGAL  
 ![How To Be So Productive That It Feels ILLEGAL](https://youtu.be/4FXScrmYKQ0)  
   
@@ -44,8 +44,8 @@ To explore for a better understanding, one could delve into:
 * 🌍 **Cultural Variations**: 🌏 How different cultures approach and value productivity, and whether these Western-centric principles are universally applicable.  
   
 ## 📚 Book Recommendations  
-* [💯⬇️⬆️ The 80 20 Principle: The Secret to Achieving More with Less](../books/the-80-20-principle-the-secret-to-achieving-more-with-less.md) by Richard Koch: A foundational text on the Pareto Principle, offering broader applications beyond personal productivity.  
-* [✅😌 Getting Things Done: The Art of Stress-Free Productivity](../books/getting-things-done-the-art-of-stress-free-productivity.md) by David Allen: A classic in productivity, providing a comprehensive system for organizing tasks and reducing mental clutter, which could complement the Zeigarnik Effect.  
-* [📉🧪🚀 The Lean Startup: How Today's Entrepreneurs Use Continuous Innovation to Create Radically Successful Businesses](../books/the-lean-startup.md) by Eric Ries: Explores the concept of continuous experimentation and iteration, resonating with the "Action Over Time" aspect of the Championship Mentality.  
-* [🤿💼 Deep Work: Rules for Focused Success in a Distracted World](../books/deep-work.md) by Cal Newport: Focuses on the importance of concentrated, uninterrupted work, which aligns with the idea of prioritizing high-impact tasks.  
-* [⚛️🔄 Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones](../books/atomic-habits.md) by James Clear: Discusses how small changes can lead to remarkable results, offering practical strategies for initiating tasks and building productive routines.
+* [💯⬇️⬆️ The 80 20 Principle: The Secret to Achieving More with Less](/content/books/the-80-20-principle-the-secret-to-achieving-more-with-less.md) by Richard Koch: A foundational text on the Pareto Principle, offering broader applications beyond personal productivity.  
+* [✅😌 Getting Things Done: The Art of Stress-Free Productivity](/content/books/getting-things-done-the-art-of-stress-free-productivity.md) by David Allen: A classic in productivity, providing a comprehensive system for organizing tasks and reducing mental clutter, which could complement the Zeigarnik Effect.  
+* [📉🧪🚀 The Lean Startup: How Today's Entrepreneurs Use Continuous Innovation to Create Radically Successful Businesses](/content/books/the-lean-startup.md) by Eric Ries: Explores the concept of continuous experimentation and iteration, resonating with the "Action Over Time" aspect of the Championship Mentality.  
+* [🤿💼 Deep Work: Rules for Focused Success in a Distracted World](/content/books/deep-work.md) by Cal Newport: Focuses on the importance of concentrated, uninterrupted work, which aligns with the idea of prioritizing high-impact tasks.  
+* [⚛️🔄 Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones](/content/books/atomic-habits.md) by James Clear: Discusses how small changes can lead to remarkable results, offering practical strategies for initiating tasks and building productive routines.

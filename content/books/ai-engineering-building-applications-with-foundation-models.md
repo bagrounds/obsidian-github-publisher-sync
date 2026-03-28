@@ -9,7 +9,7 @@ affiliate link: https://amzn.to/459bMyS
 tags:
   - AIEngineering
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🤖🏗️ AI Engineering: Building Applications with Foundation Models  
 [🛒 AI Engineering: Building Applications with Foundation Models. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/459bMyS)  
   
@@ -89,23 +89,23 @@ A distinguishing feature of this book is its intentional lack of extensive code 
   
 ### 🧑‍💻 Similar Reads (Focus on AI/ML Engineering)  
   
-* **[💾⬆️🛡️ Designing Data-Intensive Applications: The Big Ideas Behind Reliable, Scalable, and Maintainable Systems](./designing-data-intensive-applications.md)** by Martin Kleppmann: While not strictly about AI, this book provides an essential foundation in the principles of data systems, which is highly relevant for building robust and scalable AI applications. 📈  
-* **[🤖⚙️ Machine Learning Engineering](./machine-learning-engineering.md)** by Andriy Burkov: This book offers a practical guide to the entire lifecycle of a machine learning project, covering everything from data collection to model deployment and monitoring. 📊  
-* **[💾🏗️ Fundamentals of Data Engineering: Plan and Build Robust Data Systems](./fundamentals-of-data-engineering-plan-and-build-robust-data-systems.md)** by Joe Reis and Matt Housley: This book provides a comprehensive overview of the data engineering landscape, which is crucial for preparing and managing the large datasets required for foundation models. 💾  
+* **[💾⬆️🛡️ Designing Data-Intensive Applications: The Big Ideas Behind Reliable, Scalable, and Maintainable Systems](/content/books/designing-data-intensive-applications.md)** by Martin Kleppmann: While not strictly about AI, this book provides an essential foundation in the principles of data systems, which is highly relevant for building robust and scalable AI applications. 📈  
+* **[🤖⚙️ Machine Learning Engineering](/content/books/machine-learning-engineering.md)** by Andriy Burkov: This book offers a practical guide to the entire lifecycle of a machine learning project, covering everything from data collection to model deployment and monitoring. 📊  
+* **[💾🏗️ Fundamentals of Data Engineering: Plan and Build Robust Data Systems](/content/books/fundamentals-of-data-engineering-plan-and-build-robust-data-systems.md)** by Joe Reis and Matt Housley: This book provides a comprehensive overview of the data engineering landscape, which is crucial for preparing and managing the large datasets required for foundation models. 💾  
   
 ### 🔍 Contrasting Perspectives (Broader AI Topics)  
   
 * 🏥 **The AI Revolution in Medicine: GPT-4 and Beyond** by Peter Lee, Carey Goldberg, and Isaac Kohane: This book offers a contrasting perspective by focusing on the application of large language models in a specific domain, healthcare, highlighting the unique challenges and opportunities. ⚕️  
 * 🌍 **The Age of AI: And Our Human Future** by Henry A. Kissinger, Eric Schmidt, and Daniel Huttenlocher: This work provides a high-level, strategic perspective on the societal and geopolitical implications of artificial intelligence, moving beyond the technical details of engineering. 🌐  
-* **[🤖⚠️📈 Superintelligence: Paths, Dangers, Strategies](./superintelligence-paths-dangers-strategies.md)** by Nick Bostrom: This book delves into the philosophical and existential questions surrounding advanced artificial intelligence, offering a stark contrast to the practical, application-focused nature of "AI Engineering." 🤯  
+* **[🤖⚠️📈 Superintelligence: Paths, Dangers, Strategies](/content/books/superintelligence-paths-dangers-strategies.md)** by Nick Bostrom: This book delves into the philosophical and existential questions surrounding advanced artificial intelligence, offering a stark contrast to the practical, application-focused nature of "AI Engineering." 🤯  
   
 ### 🎨 Creative Connections (Adjacent & Inspiring Reads)  
   
-* **[🐦‍🔥💻 The Phoenix Project](./the-phoenix-project.md): A Novel About IT, DevOps, and Helping Your Business Win** by Gene Kim, Kevin Behr, and George Spafford: While a work of fiction, this book's narrative about improving IT processes and fostering collaboration holds valuable lessons for managing complex AI engineering projects. 🤝  
-* **[🤔🐇🐢 Thinking, Fast and Slow](./thinking-fast-and-slow.md)** by Daniel Kahneman: Understanding the cognitive biases and mental shortcuts inherent in human thinking can provide valuable insights for designing more effective and user-friendly AI systems. 💡  
+* **[🐦‍🔥💻 The Phoenix Project](/content/books/the-phoenix-project.md): A Novel About IT, DevOps, and Helping Your Business Win** by Gene Kim, Kevin Behr, and George Spafford: While a work of fiction, this book's narrative about improving IT processes and fostering collaboration holds valuable lessons for managing complex AI engineering projects. 🤝  
+* **[🤔🐇🐢 Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md)** by Daniel Kahneman: Understanding the cognitive biases and mental shortcuts inherent in human thinking can provide valuable insights for designing more effective and user-friendly AI systems. 💡  
 * 🌟 **The Master Algorithm: How the Quest for the Ultimate Learning Machine Will Remake Our World** by Pedro Domingos: This book explores the different paradigms of machine learning and the quest for a single, universal learning algorithm, offering a broader context for the development of foundation models. 🔭  
   
-## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro)  
+## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-pro)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on AI Engineering: Building Applications with Foundation Models. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.  
   
 ## 🐦 Tweet  

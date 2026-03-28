@@ -8,7 +8,7 @@ Author:
 tags:
 affiliate link: https://amzn.to/45aFANb
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # ✍🏼👍🏼 On Writing Well: The Classic Guide to Writing Nonfiction  
 [🛒 On Writing Well: The Classic Guide to Writing Nonfiction. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/45aFANb)  
   
@@ -41,7 +41,7 @@ affiliate link: https://amzn.to/45aFANb
 ## 📚 Further Reading Recommendations  
   
 ### 📑 Similar Guides to Nonfiction Writing  
-* 📜 **[🦢 The Elements of Style](./the-elements-of-style.md)** by William Strunk Jr. and E.B. White: Often considered a companion piece, focusing on grammatical rules and stylistic points in a concise, prescriptive manner. 🤝 Zinsser aimed to complement this book by showing how to apply its principles to various nonfiction forms.  
+* 📜 **[🦢 The Elements of Style](/content/books/the-elements-of-style.md)** by William Strunk Jr. and E.B. White: Often considered a companion piece, focusing on grammatical rules and stylistic points in a concise, prescriptive manner. 🤝 Zinsser aimed to complement this book by showing how to apply its principles to various nonfiction forms.  
 * 👩‍🏫 **Style: Lessons in Clarity and Grace** by Joseph M. Williams and Joseph Bizup: A more analytical approach, particularly valued in academic and professional settings, focusing on sentence structure and reader perception.  
 * 🧰 **Writing Tools: 50 Essential Strategies for Every Writer** by Roy Peter Clark: Offers a "toolbox" of practical tips and techniques for writers across different genres.  
 * ⚖️ **Legal Writing in Plain English** by Bryan A. Garner: Focuses specifically on clarity and simplicity within the legal field, but its principles are broadly applicable.  
@@ -53,14 +53,14 @@ affiliate link: https://amzn.to/45aFANb
 * 🧑‍🎓 **How to Write a Lot: A Practical Guide to Productive Academic Writing** by Paul J. Silvia: Addresses the specific challenges and conventions of academic writing, a genre Zinsser doesn't cover in depth.  
   
 ### 🎨 Creatively Related Reads  
-* ✍️ **[📜 On Writing: A Memoir of the Craft](./on-writing.md)** by Stephen King: Part memoir, part writing guide, offering insights into the writing life and process, particularly for fiction, but with widely applicable advice.  
-* **[🐦🕊️ Bird by Bird: Some Instructions on Writing and Life](./bird-by-bird.md)** by Anne Lamott: Focuses on the emotional and psychological aspects of the writing life, offering encouragement, humor, and practical advice on overcoming writer's block and perfectionism.  
-* ⚔️ **[The War of Art](./the-war-of-art.md): Break Through the Blocks and Win Your Inner Creative Battles** by Steven Pressfield: Addresses the universal challenge of "Resistance" faced by creators, offering a motivational kick to overcome procrastination and fear.  
-* ✨ **[🪄 Big Magic: Creative Living Beyond Fear](./big-magic.md)** by Elizabeth Gilbert: Explores the nature of inspiration and creativity, encouraging readers to embrace curiosity and let go of fear in their creative pursuits.  
-* **[✍️🦴 Writing Down the Bones](./writing-down-the-bones.md)** by Natalie Goldberg: Blends Zen principles with writing practice, focusing on freeing the writer's voice through timed exercises and observation.  
-* 🧘 **[The Artist's Way](./the-artists-way.md): A Spiritual Path to Higher Creativity** by Julia Cameron: A structured 12-week program designed to unblock creativity through tools like "Morning Pages" and "Artist Dates".  
+* ✍️ **[📜 On Writing: A Memoir of the Craft](/content/books/on-writing.md)** by Stephen King: Part memoir, part writing guide, offering insights into the writing life and process, particularly for fiction, but with widely applicable advice.  
+* **[🐦🕊️ Bird by Bird: Some Instructions on Writing and Life](/content/books/bird-by-bird.md)** by Anne Lamott: Focuses on the emotional and psychological aspects of the writing life, offering encouragement, humor, and practical advice on overcoming writer's block and perfectionism.  
+* ⚔️ **[The War of Art](/content/books/the-war-of-art.md): Break Through the Blocks and Win Your Inner Creative Battles** by Steven Pressfield: Addresses the universal challenge of "Resistance" faced by creators, offering a motivational kick to overcome procrastination and fear.  
+* ✨ **[🪄 Big Magic: Creative Living Beyond Fear](/content/books/big-magic.md)** by Elizabeth Gilbert: Explores the nature of inspiration and creativity, encouraging readers to embrace curiosity and let go of fear in their creative pursuits.  
+* **[✍️🦴 Writing Down the Bones](/content/books/writing-down-the-bones.md)** by Natalie Goldberg: Blends Zen principles with writing practice, focusing on freeing the writer's voice through timed exercises and observation.  
+* 🧘 **[The Artist's Way](/content/books/the-artists-way.md): A Spiritual Path to Higher Creativity** by Julia Cameron: A structured 12-week program designed to unblock creativity through tools like "Morning Pages" and "Artist Dates".  
 * ⛵ **Steering the Craft: A 21st-Century Guide to Sailing the Sea of Story** by Ursula K. Le Guin: A concise guide focusing on the fundamentals of narrative craft, from a master storyteller.  
 * 🧘‍♂️ **Zen in the Art of Writing** by Ray Bradbury: Essays celebrating the joy and passion of writing.  
   
-## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
+## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on On Writing Well The Classic Guide to Writing Nonfiction. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

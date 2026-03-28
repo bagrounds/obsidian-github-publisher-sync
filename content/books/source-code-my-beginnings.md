@@ -7,7 +7,7 @@ share: true
 CTA: 🚀 Discover your origins.
 affiliate link: https://amzn.to/3Njf2Cb
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 💻0️⃣ Source Code: My Beginnings  
 [🛒 0️⃣ Source Code: My Beginnings. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3Njf2Cb)  
   
@@ -66,7 +66,7 @@ affiliate link: https://amzn.to/3Njf2Cb
 ## 📚 Book Recommendations  
   
 ### 📖 Similar  
-* 💻 [🧑‍💻🍎🌟😄 iWoz: Computer Geek to Cult Icon: How I Invented the Personal Computer, Co-Founded Apple, and Had Fun Doing It](./iwoz-computer-geek-to-cult-icon-how-i-invented-the-personal-computer-co-founded-apple-and-had-fun-doing-it.md) by Steve Wozniak: An autobiography focusing on early engineering genius and the passion for technology that built Apple's foundations.  
+* 💻 [🧑‍💻🍎🌟😄 iWoz: Computer Geek to Cult Icon: How I Invented the Personal Computer, Co-Founded Apple, and Had Fun Doing It](/content/books/iwoz-computer-geek-to-cult-icon-how-i-invented-the-personal-computer-co-founded-apple-and-had-fun-doing-it.md) by Steve Wozniak: An autobiography focusing on early engineering genius and the passion for technology that built Apple's foundations.  
 * 🌐 The Innovators by Walter Isaacson: Explores the history of the digital revolution through the lives of its key figures, including early computer pioneers.  
   
 ### ↔️ Contrasting  
@@ -74,7 +74,7 @@ affiliate link: https://amzn.to/3Njf2Cb
 * 🧭 Principles by Ray Dalio: Presents a systematic approach to life and work, offering philosophical and practical guidelines rather than a personal origin story.  
   
 ### 🔗 Related  
-* [🤿💼 Deep Work: Rules for Focused Success in a Distracted World](./deep-work.md) by Cal Newport: Discusses the value of focused, uninterrupted work in a distracted age, echoing the intense concentration Gates applied to early coding.  
+* [🤿💼 Deep Work: Rules for Focused Success in a Distracted World](/content/books/deep-work.md) by Cal Newport: Discusses the value of focused, uninterrupted work in a distracted age, echoing the intense concentration Gates applied to early coding.  
 * 📈 Outliers by Malcolm Gladwell: Explores the factors contributing to high levels of success, including the role of opportunity, timing, and deliberate practice, which are evident in Gates's early life.  
   
 ## 🫵 What Do You Think?  

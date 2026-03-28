@@ -8,7 +8,7 @@ Author:
 tags:
 affiliate link: https://amzn.to/4kOfhAR
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🌐🔗📈🧩 Business Dynamics: Systems Thinking and Modeling for a Complex World  
 [🛒 Business Dynamics: Systems Thinking and Modeling for a Complex World. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4kOfhAR)  
   
@@ -59,10 +59,10 @@ This book provides a surprising perspective by moving beyond traditional linear 
 * Recognize and avoid common system archetypes that lead to problems. 🛑  
   
 #### Book Recommendations 📚  
-* **Best Alternate Book on the Same Topic:** *[Thinking in Systems](./thinking-in-systems.md): A Primer* by Donella H. Meadows. This book provides a more accessible introduction to systems thinking principles.  
-* **Best Tangentially Related Book:** *[The Fifth Discipline](./the-fifth-discipline.md): The Art & Practice of The Learning Organization* by Peter M. Senge. This book explores how organizations can learn and adapt in a dynamic environment, complementing system dynamics.  
-* **Best Diametrically Opposed Book:** *[Thinking, Fast and Slow](./thinking-fast-and-slow.md)* by Daniel Kahneman. While Sterman focuses on rational, systemic analysis, Kahneman explores the cognitive biases and heuristics that often lead to irrational decisions.  
-* **Best Fiction Book That Incorporates Related Ideas:** *[The Goal](./the-goal.md): A Process of Ongoing Improvement* by Eliyahu M. Goldratt. This novel illustrates the principles of systems thinking in a manufacturing setting, emphasizing the importance of identifying and managing constraints.  
+* **Best Alternate Book on the Same Topic:** *[Thinking in Systems](/content/books/thinking-in-systems.md): A Primer* by Donella H. Meadows. This book provides a more accessible introduction to systems thinking principles.  
+* **Best Tangentially Related Book:** *[The Fifth Discipline](/content/books/the-fifth-discipline.md): The Art & Practice of The Learning Organization* by Peter M. Senge. This book explores how organizations can learn and adapt in a dynamic environment, complementing system dynamics.  
+* **Best Diametrically Opposed Book:** *[Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md)* by Daniel Kahneman. While Sterman focuses on rational, systemic analysis, Kahneman explores the cognitive biases and heuristics that often lead to irrational decisions.  
+* **Best Fiction Book That Incorporates Related Ideas:** *[The Goal](/content/books/the-goal.md): A Process of Ongoing Improvement* by Eliyahu M. Goldratt. This novel illustrates the principles of systems thinking in a manufacturing setting, emphasizing the importance of identifying and managing constraints.  
 * **A More Rigorous Book:** *Modeling Dynamic Systems* by Lennart Ljung and Torkel Glad. This book provides a more advanced and mathematical treatment of dynamic systems modeling.  
   
 ## 💬 [Gemini](https://gemini.google.com) Prompt  

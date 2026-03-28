@@ -7,7 +7,7 @@ share: true
 CTA: ✨ Explore complexity.
 affiliate link: https://amzn.to/486VNUA
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # ♾️〰️📊 Fractals, Chaos, Power Laws: Minutes from an Infinite Paradise  
 [🛒 Fractals, Chaos, Power Laws: Minutes from an Infinite Paradise. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/486VNUA)  
   
@@ -42,7 +42,7 @@ affiliate link: https://amzn.to/486VNUA
 * **📖 Engaging and Accessible:** Schroeder's good-natured, humorous presentation, puns, and puzzles make abstract mathematics relatable to everyday experience. It's an inviting exposition for a literate but not highly scientific audience, forming a fine university-level introduction for those with algebra and some calculus.  
 * **🎨 Richness of Illustrations:** Award-winning computer graphics, optical illusions, and numerous color and black-and-white illustrations clarify complex concepts.  
 * **🧱 Foundational Text:** Described as a classic and foundational text in nonlinear science, providing an accessible introduction to complex systems mathematics.  
-* **📚 Comparison to Other Works:** Resembles Mandelbrot's 1982 classic, [♾️🌿🔬 The Fractal Geometry of Nature](./the-fractal-geometry-of-nature.md), but is pitched at a broader audience and functions almost as a survey of the first decade's response to that manifesto.  
+* **📚 Comparison to Other Works:** Resembles Mandelbrot's 1982 classic, [♾️🌿🔬 The Fractal Geometry of Nature](/content/books/the-fractal-geometry-of-nature.md), but is pitched at a broader audience and functions almost as a survey of the first decade's response to that manifesto.  
 * **🔬 Scientific Validity:** The concepts of fractals, chaos theory, and power laws are widely accepted in scientific research for modeling irregular natural shapes and complex systems, including weather prediction, biological systems, financial markets, and ecological dynamics.  
 * **📉 Limitations of Predictability:** Chaos theory highlights that while systems can be deterministic, their extreme sensitivity to initial conditions makes long-term prediction practically impossible, despite the presence of underlying patterns.  
 * **↔️ Depth vs. Breadth:** While comprehensive in its range, some reviewers note that sections are only a few pages long, outlining aspects rather than systematically developing a body of theory, which might be dense in places.  
@@ -80,17 +80,17 @@ affiliate link: https://amzn.to/486VNUA
   
 ### 📖 Similar Books  
 * The Fractal Geometry of Nature by Benoit B. Mandelbrot  
-* [🌪️💥🦋🆕 Chaos: Making a New Science](./chaos.md) by James Gleick  
-* [💥🌀➡️⏳⚖️🕰️ ️ Sync: How Order Emerges From Chaos In The Universe, Nature, And Daily Life](./sync.md) by Steven Strogatz  
+* [🌪️💥🦋🆕 Chaos: Making a New Science](/content/books/chaos.md) by James Gleick  
+* [💥🌀➡️⏳⚖️🕰️ ️ Sync: How Order Emerges From Chaos In The Universe, Nature, And Daily Life](/content/books/sync.md) by Steven Strogatz  
   
 ### ⚖️ Contrasting Books  
 * The Drunkard's Walk: How Randomness Rules Our Lives by Leonard Mlodinow (focus on true randomness vs. deterministic chaos)  
-* [🗺️❤️📐 Flatland: A Romance of Many Dimensions](./flatland-a-romance-of-many-dimensions.md) by Edwin A. Abbott (explores dimensions from a different, narrative perspective)  
+* [🗺️❤️📐 Flatland: A Romance of Many Dimensions](/content/books/flatland-a-romance-of-many-dimensions.md) by Edwin A. Abbott (explores dimensions from a different, narrative perspective)  
   
 ### ➕ Related Books  
-* [🔫🦠🔩 Guns, Germs, and Steel: The Fates of Human Societies](./guns-germs-and-steel-the-fates-of-human-societies.md) by Jared Diamond (macro-level patterns and their complex interactions)  
+* [🔫🦠🔩 Guns, Germs, and Steel: The Fates of Human Societies](/content/books/guns-germs-and-steel-the-fates-of-human-societies.md) by Jared Diamond (macro-level patterns and their complex interactions)  
 * The Elegant Universe by Brian Greene (exploring fundamental laws of physics and reality)  
-* [🤔🐇🐢 Thinking, Fast and Slow](./thinking-fast-and-slow.md) by Daniel Kahneman (human decision-making and cognitive biases, which often involve non-linear and seemingly chaotic elements)  
+* [🤔🐇🐢 Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md) by Daniel Kahneman (human decision-making and cognitive biases, which often involve non-linear and seemingly chaotic elements)  
   
 ## 🫵 What Do You Think?  
   

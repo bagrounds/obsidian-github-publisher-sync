@@ -10,7 +10,7 @@ affiliate link: https://amzn.to/4kmdS4v
 CTA: 🚀 Transform yourself.
 updated: 2026-03-11T10:14:56.156Z
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # ⚛️🔄 Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones  
 [🛒 Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4kmdS4v)  
   
@@ -49,13 +49,13 @@ updated: 2026-03-11T10:14:56.156Z
 - Track your habits to maintain consistency. 📊  
   
 ### Book Recommendations 📚  
-- **Best Alternate Book on the Same Topic:** "[The Power of Habit](./the-power-of-habit.md)" by Charles Duhigg. This book provides a broader perspective on the science of habit formation and its impact on individuals, organizations, and societies. 🔄  
-- **Best Book Tangentially Related:** "[Thinking, Fast and Slow](./thinking-fast-and-slow.md)" by Daniel Kahneman. This book delves into the cognitive biases and mental shortcuts that influence our decision-making, providing valuable insights into how our minds work. 🧠  
+- **Best Alternate Book on the Same Topic:** "[The Power of Habit](/content/books/the-power-of-habit.md)" by Charles Duhigg. This book provides a broader perspective on the science of habit formation and its impact on individuals, organizations, and societies. 🔄  
+- **Best Book Tangentially Related:** "[Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md)" by Daniel Kahneman. This book delves into the cognitive biases and mental shortcuts that influence our decision-making, providing valuable insights into how our minds work. 🧠  
 - **Best Book Diametrically Opposed:** "The 5 Second Rule" by Mel Robbins. This book advocates for immediate action and pushing through resistance, which contrasts with Clear's emphasis on gradual change. ⚡  
-- **Best Fiction Book That Incorporates Related Ideas:** [📈➕ The Compound Effect](./the-compound-effect.md) by Darren Hardy. Although technically non-fiction, it reads like a narrative, and beautifully illustrates the power of small, consistent actions over time. 📖  
-- **Best Book More General:** "[Deep Work](./deep-work.md)" by Cal Newport. This book explores the importance of focused, distraction-free work in a world of constant interruptions, which is essential for developing effective habits. 🧘  
-- **Best Book More Specific:** "[Tiny Habits](./tiny-habits.md)" by BJ Fogg. This book provides a very specific methodology for creating very small habits. 🤏  
-- **Best Book More Rigorous:** "[Influence](./influence.md): The Psychology of Persuasion" by Robert Cialdini. This book goes into great detail about the psychological principles that influence behavior. 🧐  
+- **Best Fiction Book That Incorporates Related Ideas:** [📈➕ The Compound Effect](/content/books/the-compound-effect.md) by Darren Hardy. Although technically non-fiction, it reads like a narrative, and beautifully illustrates the power of small, consistent actions over time. 📖  
+- **Best Book More General:** "[Deep Work](/content/books/deep-work.md)" by Cal Newport. This book explores the importance of focused, distraction-free work in a world of constant interruptions, which is essential for developing effective habits. 🧘  
+- **Best Book More Specific:** "[Tiny Habits](/content/books/tiny-habits.md)" by BJ Fogg. This book provides a very specific methodology for creating very small habits. 🤏  
+- **Best Book More Rigorous:** "[Influence](/content/books/influence.md): The Psychology of Persuasion" by Robert Cialdini. This book goes into great detail about the psychological principles that influence behavior. 🧐  
 - **Best Book More Accessible:** "The Slight Edge" by Jeff Olson. This book is a more simplified version of the key ideas of Atomic Habits, making it very accessible. 😌  
   
 ## 💬 [Gemini](https://gemini.google.com) Prompt  

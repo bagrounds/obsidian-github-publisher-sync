@@ -8,7 +8,7 @@ Author:
 tags:
 affiliate link: https://amzn.to/3HoCkUh
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 💻🔍✅ Google Tests Software  
 [🛒 How Google Tests Software. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3HoCkUh)  
   
@@ -59,12 +59,12 @@ affiliate link: https://amzn.to/3HoCkUh
   
 **Additional Book Recommendations 📚:**  
 * **Best Alternate Book on the Same Topic:** "Software Testing: A Craftsman's Approach" by Paul C. Jorgensen. This book offers a comprehensive overview of software testing principles and techniques. 🛠️  
-* **Best Book Tangentially Related:** [🏗️🧪🚀✅ Continuous Delivery: Reliable Software Releases through Build, Test, and Deployment Automation](./continuous-delivery.md) by Jez Humble and David Farley. This book explores the principles and practices of continuous delivery, which are closely related to software testing. 🚀  
-* **Best Book Diametrically Opposed:** [🦄👤🗓️ The Mythical Man-Month: Essays on Software Engineering](./the-mythical-man-month.md) by Frederick P. Brooks Jr. This book focuses on the challenges of software project management and highlights the complexities of software development, which can sometimes conflict with the focus on testing. 🚧  
-* **Best Fiction Book That Incorporates Related Ideas:** "[Daemon](./daemon.md)" by Daniel Suarez. This thriller explores the potential consequences of complex software systems and their interactions with the real world, touching on themes of software reliability and security. 🤖  
-* **Best Book That Is More General:** [🧼💾 Clean Code: A Handbook of Agile Software Craftsmanship](./clean-code.md) by Robert C. Martin. This book provides general advice on writing clean, maintainable code, which is essential for effective testing. 🧹  
+* **Best Book Tangentially Related:** [🏗️🧪🚀✅ Continuous Delivery: Reliable Software Releases through Build, Test, and Deployment Automation](/content/books/continuous-delivery.md) by Jez Humble and David Farley. This book explores the principles and practices of continuous delivery, which are closely related to software testing. 🚀  
+* **Best Book Diametrically Opposed:** [🦄👤🗓️ The Mythical Man-Month: Essays on Software Engineering](/content/books/the-mythical-man-month.md) by Frederick P. Brooks Jr. This book focuses on the challenges of software project management and highlights the complexities of software development, which can sometimes conflict with the focus on testing. 🚧  
+* **Best Fiction Book That Incorporates Related Ideas:** "[Daemon](/content/books/daemon.md)" by Daniel Suarez. This thriller explores the potential consequences of complex software systems and their interactions with the real world, touching on themes of software reliability and security. 🤖  
+* **Best Book That Is More General:** [🧼💾 Clean Code: A Handbook of Agile Software Craftsmanship](/content/books/clean-code.md) by Robert C. Martin. This book provides general advice on writing clean, maintainable code, which is essential for effective testing. 🧹  
 * **Best Book That Is More Specific:** "Effective Software Testing: 50 Specific Ways to Improve Your Testing" by Elfriede Dustin. This book offers practical tips and techniques for improving software testing practices. 🎯  
-* **Best Book That Is More Rigorous:** "[Foundations of Software Testing](./foundations-of-software-testing.md)" by Aditya P. Mathur. This book provides a more theoretical and mathematical approach to software testing. 🎓  
+* **Best Book That Is More Rigorous:** "[Foundations of Software Testing](/content/books/foundations-of-software-testing.md)" by Aditya P. Mathur. This book provides a more theoretical and mathematical approach to software testing. 🎓  
 * **Best Book That Is More Accessible:** "Explore It!: Reduce Risk and Increase Confidence with Exploratory Testing" by Elisabeth Hendrickson. This book offers a practical and accessible introduction to exploratory testing. 🗺️  
   
 ## 💬 [Gemini](https://gemini.google.com) Prompt  

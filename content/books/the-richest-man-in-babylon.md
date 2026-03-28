@@ -8,7 +8,7 @@ Author:
 tags:
 affiliate link: https://amzn.to/43NvYFF
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 💰🧔👑🏛️ The Richest Man in Babylon  
 [🛒 The Richest Man in Babylon. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/43NvYFF)  
   
@@ -77,8 +77,8 @@ affiliate link: https://amzn.to/43NvYFF
 * **Best Tangentially Related Book:** "Rich Dad Poor Dad" by Robert Kiyosaki. (Focuses on mindset and investing). 👨‍👦➡️💸  
 * **Best Diametrically Opposed Book:** "Die with Zero" by Bill Perkins. (Argues against excessive saving). 🚫💰➡️🎉  
 * **Best Fiction Book That Incorporates Related Ideas:** "Atlas Shrugged" by Ayn Rand. (Explores the role of productivity and wealth creation). 🏭➡️💰  
-* **Best More General Book:** "[The Psychology of Money: Timeless lessons on wealth, greed, and happiness](./the-psychology-of-money.md)" by Morgan Housel. (Explores the emotional side of finance). 🧠➡️💸  
-* **Best More Specific Book:** "[The Intelligent Investor](./the-intelligent-investor.md)" by Benjamin Graham. (Focuses on value investing). 📈➡️🔍  
+* **Best More General Book:** "[The Psychology of Money: Timeless lessons on wealth, greed, and happiness](/content/books/the-psychology-of-money.md)" by Morgan Housel. (Explores the emotional side of finance). 🧠➡️💸  
+* **Best More Specific Book:** "[The Intelligent Investor](/content/books/the-intelligent-investor.md)" by Benjamin Graham. (Focuses on value investing). 📈➡️🔍  
 * **Best More Rigorous Book:** "Security Analysis" by Benjamin Graham and David Dodd. (A classic, highly detailed investment guide). 📊➡️🔬  
 * **Best More Accessible Book:** "I Will Teach You to Be Rich" by Ramit Sethi. (Modern, relatable, and actionable). 🧑‍🏫➡️💰  
   

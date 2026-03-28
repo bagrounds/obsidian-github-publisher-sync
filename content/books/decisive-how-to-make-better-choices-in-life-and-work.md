@@ -6,7 +6,7 @@ URL: https://bagrounds.org/books/decisive-how-to-make-better-choices-in-life-and
 share: true
 affiliate link: https://amzn.to/4kEP5s8
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🤔💡⚖️✅ Decisive: How to Make Better Choices in Life and Work  
 [🛒 Decisive: How to Make Better Choices in Life and Work. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4kEP5s8)  
   
@@ -38,14 +38,14 @@ affiliate link: https://amzn.to/4kEP5s8
   
 ### 🤝 Similar Books  
   
-* 🧠 **[Thinking, Fast and Slow](./thinking-fast-and-slow.md)** by Daniel Kahneman: 🥇 A foundational text in behavioral economics that distinguishes between two systems of thinking: fast, intuitive thinking and slow, deliberate thinking. 🤯 It delves into the cognitive biases that affect our judgments and decisions.  
-* 💡 **[Nudge](./nudge.md): Improving Decisions About Health, Wealth, and Happiness** by Richard Thaler and Cass Sunstein: 👍 This book examines how subtle changes in the way choices are presented can influence our decisions for the better, focusing on the concept of "nudge theory."  
-* 🤪 **[Predictably Irrational](./predictably-irrational.md)** by Dan Ariely: 🤔 Explores the various ways in which humans are consistently irrational in their decision-making, often acting against their own best interests.  
+* 🧠 **[Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md)** by Daniel Kahneman: 🥇 A foundational text in behavioral economics that distinguishes between two systems of thinking: fast, intuitive thinking and slow, deliberate thinking. 🤯 It delves into the cognitive biases that affect our judgments and decisions.  
+* 💡 **[Nudge](/content/books/nudge.md): Improving Decisions About Health, Wealth, and Happiness** by Richard Thaler and Cass Sunstein: 👍 This book examines how subtle changes in the way choices are presented can influence our decisions for the better, focusing on the concept of "nudge theory."  
+* 🤪 **[Predictably Irrational](/content/books/predictably-irrational.md)** by Dan Ariely: 🤔 Explores the various ways in which humans are consistently irrational in their decision-making, often acting against their own best interests.  
   
 ### ⚖️ Contrasting Books  
   
-* **[⚡🚫💭 Blink: The Power of Thinking Without Thinking](./blink-the-power-of-thinking-without-thinking.md)** by Malcolm Gladwell: 👀 Argues for the power of rapid cognition and how our intuition and snap judgments can often be as effective, or even more effective, than deliberate analysis in certain situations. ⏪ This offers a counterpoint to the more systematic approach in *Decisive*.  
-* **[⛲🔌🤔⚙️ Sources of Power: How People Make Decisions](./sources-of-power-how-people-make-decisions.md)** by Gary Klein: 🎯 Focuses on decision-making in high-stakes, time-pressured environments, highlighting the role of experience and recognition-primed decision making in expert judgment, which can differ from the analytical approach of WRAP.  
+* **[⚡🚫💭 Blink: The Power of Thinking Without Thinking](/content/books/blink-the-power-of-thinking-without-thinking.md)** by Malcolm Gladwell: 👀 Argues for the power of rapid cognition and how our intuition and snap judgments can often be as effective, or even more effective, than deliberate analysis in certain situations. ⏪ This offers a counterpoint to the more systematic approach in *Decisive*.  
+* **[⛲🔌🤔⚙️ Sources of Power: How People Make Decisions](/content/books/sources-of-power-how-people-make-decisions.md)** by Gary Klein: 🎯 Focuses on decision-making in high-stakes, time-pressured environments, highlighting the role of experience and recognition-primed decision making in expert judgment, which can differ from the analytical approach of WRAP.  
   
 ### 🎨 Creatively Related Books  
   
@@ -55,5 +55,5 @@ affiliate link: https://amzn.to/4kEP5s8
 * 🎲 ***Gamestorming: A Playbook for Innovators, Rulebreakers, and Changemakers*** by Dave Gray, Sunni Brown, and James Macanufo: 🧑‍🤝‍🧑 Provides a collection of games and activities designed to foster creative thinking and collaboration in group settings, which can be applied to the "Widen Your Options" stage of the WRAP process.  
 * ♟️ ***Good Strategy Bad Strategy: The Difference and Why It Matters*** by Richard Rumelt: 🎯 Focuses on the importance of having a coherent and insightful strategy, which inherently involves making crucial decisions about how to address challenges and achieve objectives.  
   
-## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
+## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Decisive: How to Make Better Choices in Life and Work. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

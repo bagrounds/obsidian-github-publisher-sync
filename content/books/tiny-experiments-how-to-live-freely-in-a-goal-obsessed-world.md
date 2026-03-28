@@ -7,7 +7,7 @@ share: true
 CTA: 🚀 Explore freedom.
 affiliate link: https://amzn.to/49eUpjq
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🧪🎯🦋 Tiny Experiments: How to Live Freely in a Goal-Obsessed World  
 [🛒 Tiny Experiments: How to Live Freely in a Goal-Obsessed World. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/49eUpjq)  
   
@@ -84,25 +84,25 @@ affiliate link: https://amzn.to/49eUpjq
 ## 📚 Book Recommendations  
   
 ### 📖 Similar Books  
-* [⚛️🔄 Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones](./atomic-habits.md) by James Clear  
-* [🤏♻️ Tiny Habits: The Small Changes That Change Everything](./tiny-habits.md) by B.J. Fogg  
-* [📉🧪🚀 The Lean Startup: How Today's Entrepreneurs Use Continuous Innovation to Create Radically Successful Businesses](./the-lean-startup.md) by Eric Ries  
+* [⚛️🔄 Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones](/content/books/atomic-habits.md) by James Clear  
+* [🤏♻️ Tiny Habits: The Small Changes That Change Everything](/content/books/tiny-habits.md) by B.J. Fogg  
+* [📉🧪🚀 The Lean Startup: How Today's Entrepreneurs Use Continuous Innovation to Create Radically Successful Businesses](/content/books/the-lean-startup.md) by Eric Ries  
 * 🎲 Little Bets by Peter Sims  
 * 📈 Kaizen by Robert Maurer  
-* [🏗️😊🗺️✨ Designing Your Life: How to Build a Well-Lived, Joyful Life](./designing-your-life.md) by Bill Burnett and Dave Evans  
+* [🏗️😊🗺️✨ Designing Your Life: How to Build a Well-Lived, Joyful Life](/content/books/designing-your-life.md) by Bill Burnett and Dave Evans  
 * 🗺️ Why Greatness Cannot Be Planned by Kenneth Stanley and Joel Lehman  
   
 ### ↔️ Contrasting Books  
-* [👤📈🎯🌟🔑🤝🏆 The 7 Habits of Highly Effective People](./the-7-habits-of-highly-effective-people.md) by Stephen R. Covey  
+* [👤📈🎯🌟🔑🤝🏆 The 7 Habits of Highly Effective People](/content/books/the-7-habits-of-highly-effective-people.md) by Stephen R. Covey  
 * 📝 Write It Down, Make It Happen by Henriette Anne Klauser  
 * 🛑 Necessary Endings by Henry Cloud  
   
 ### 🔗 Related Books  
 * ⭐ Anything You Want by Derek Sivers  
-* [🌊🧘🏼‍♀️🧠📈 Flow: The Psychology of Optimal Experience](./flow-the-psychology-of-optimal-experience.md) by Mihaly Csikszentmihalyi  
+* [🌊🧘🏼‍♀️🧠📈 Flow: The Psychology of Optimal Experience](/content/books/flow-the-psychology-of-optimal-experience.md) by Mihaly Csikszentmihalyi  
 * ⏰ Four Thousand Weeks by Oliver Burkeman  
-* [🌐🔭🎨🧩👨‍🎓 Range: Why Generalists Triumph in a Specialized World](./range.md) by David Epstein  
-* [🎲🤔 Thinking in Bets: Making Smarter Decisions When You Don't Have All the Facts](./thinking-in-bets-making-smarter-decisions-when-you-dont-have-all-the-facts.md) by Annie Duke  
+* [🌐🔭🎨🧩👨‍🎓 Range: Why Generalists Triumph in a Specialized World](/content/books/range.md) by David Epstein  
+* [🎲🤔 Thinking in Bets: Making Smarter Decisions When You Don't Have All the Facts](/content/books/thinking-in-bets-making-smarter-decisions-when-you-dont-have-all-the-facts.md) by Annie Duke  
 * 🎭 Do Improvise by Robert Poynton  
   
 ## 🫵 What Do You Think?  

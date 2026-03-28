@@ -5,7 +5,7 @@ aliases:
 title: 🇨🇳🤖 DeepSeek
 URL: https://bagrounds.org/topics/DeepSeek
 ---
-[Home](../index.md) > [Topics](./index.md)  
+[Home](/content/index.md) > [Topics](/content/topics/index.md)  
 # 🇨🇳🤖 DeepSeek  
 ## 🤖 AI Summary  
 ### 👉 What Is It? 🤔  
@@ -68,7 +68,7 @@ Performance varies significantly depending on the specific DeepSeek model and th
 * **Machine Learning (ML)** 🤖  
 * **Deep Learning (DL)** 💡  
 * **Transformer Networks** ⚙️  
-* **[Large Language Models](./large-language-models.md) (LLMs)** 🧠  
+* **[Large Language Models](/content/topics/large-language-models.md) (LLMs)** 🧠  
 * **Generative Models** ✨  
 * **Artificial Neural Networks (ANNs)** 🕸️  
 * **Computational Linguistics** 🗣️  
@@ -78,7 +78,7 @@ Performance varies significantly depending on the specific DeepSeek model and th
   
 * 👶 Parent: **Artificial Intelligence (AI)** 🤖  
 * 👩‍👧‍👦 Children:  
-    * **[Large Language Models](./large-language-models.md) (LLMs)** 🧠  
+    * **[Large Language Models](/content/topics/large-language-models.md) (LLMs)** 🧠  
     * **Natural Language Understanding (NLU)** 🤔  
     * **Natural Language Generation (NLG)** ✍️  
     * **Transformer Architecture** ⚙️  
@@ -173,14 +173,14 @@ Why did the large language model break up with the chatbot? 🤔 Because it felt
   
 ### 📖 Book Recommendations 📚  
   
-* **Topical:** [🧠💻🤖 Deep Learning](../books/deep-learning.md) by Goodfellow, Bengio, and Courville (Rigorous) 🧠  
+* **Topical:** [🧠💻🤖 Deep Learning](/content/books/deep-learning.md) by Goodfellow, Bengio, and Courville (Rigorous) 🧠  
 * **Tangentially Related:** *The Alignment Problem: Machine Learning and Human Values* by Brian Christian (Accessible) 👍  
 * **Topically Opposed:** *The Myth of Artificial Intelligence: Why Computers Can't Think the Way We Do* by Erik J. Larson (Accessible) 👎  
-* **More General:** [🤖🧠 Artificial Intelligence: A Modern Approach](../books/artificial-intelligence-a-modern-approach.md) by Russell and Norvig (Rigorous) 🤖  
+* **More General:** [🤖🧠 Artificial Intelligence: A Modern Approach](/content/books/artificial-intelligence-a-modern-approach.md) by Russell and Norvig (Rigorous) 🤖  
 * **More Specific:** Research papers and documentation released by DeepSeek AI (Rigorous/Accessible) 🇨🇳  
 * **Fictional:** *Neuromancer* by William Gibson (Accessible) 💻🌌  
 * **Rigorous:** *Neural Networks and Deep Learning* by Michael Nielsen (Accessible/Rigorous) 🕸️💡  
-* **Accessible:** [🧬👥💾 Life 3.0: Being Human in the Age of Artificial Intelligence](../books/life-3-0.md) by Max Tegmark (Accessible) 🚀🌍  
+* **Accessible:** [🧬👥💾 Life 3.0: Being Human in the Age of Artificial Intelligence](/content/books/life-3-0.md) by Max Tegmark (Accessible) 🚀🌍  
   
 ### 📺 Links To Relevant YouTube Channels Or Videos ▶️  
   

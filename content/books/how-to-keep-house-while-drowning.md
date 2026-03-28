@@ -7,7 +7,7 @@ share: true
 CTA: 🕊️ Lighten your load.
 affiliate link: https://amzn.to/48Xn0t5
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🧹🌊😵‍💫 How to Keep House While Drowning: A Gentle Approach to Cleaning and Organizing  
 [🛒 How to Keep House While Drowning. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/48Xn0t5)  
   
@@ -65,19 +65,19 @@ affiliate link: https://amzn.to/48Xn0t5
   
 ## 📚 Book Recommendations  
 ### 🤝 Similar  
-* [🗑️⏱️ Decluttering at the Speed of Life: Winning Your Never-Ending Battle with Stuff](./decluttering-at-the-speed-of-life-winning-your-never-ending-battle-with-stuff.md) by Dana K. White  
+* [🗑️⏱️ Decluttering at the Speed of Life: Winning Your Never-Ending Battle with Stuff](/content/books/decluttering-at-the-speed-of-life-winning-your-never-ending-battle-with-stuff.md) by Dana K. White  
 * 📖 The Gentle Art of Swedish Death Cleaning by Margareta Magnusson  
 * 📖 Laziness Does Not Exist by Devon Price  
   
 ### ⚔️ Contrasting  
 * 📖 The Life-Changing Magic of Tidying Up by Marie Kondo  
 * 📖 Home Body by Joanna Gaines  
-* [🧠🗂️ The Organized Mind: Thinking Straight in the Age of Information Overload](./the-organized-mind-thinking-straight-in-the-age-of-information-overload.md) by Daniel J. Levitin  
+* [🧠🗂️ The Organized Mind: Thinking Straight in the Age of Information Overload](/content/books/the-organized-mind-thinking-straight-in-the-age-of-information-overload.md) by Daniel J. Levitin  
   
 ### 🔗 Related  
-* [⚛️🔄 Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones](./atomic-habits.md) by James Clear  
-* [🥵🔥💨 Burnout: The Secret to Unlocking the Stress Cycle](./burnout-the-secret-to-unlocking-the-stress-cycle.md) by Emily Nagoski and Amelia Nagoski  
-* [🤕🎼🧠 The Body Keeps the Score: Brain, Mind, and Body in the Healing of Trauma](./the-body-keeps-the-score-brain-mind-and-body-in-the-healing-of-trauma.md) by Bessel van der Kolk  
+* [⚛️🔄 Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones](/content/books/atomic-habits.md) by James Clear  
+* [🥵🔥💨 Burnout: The Secret to Unlocking the Stress Cycle](/content/books/burnout-the-secret-to-unlocking-the-stress-cycle.md) by Emily Nagoski and Amelia Nagoski  
+* [🤕🎼🧠 The Body Keeps the Score: Brain, Mind, and Body in the Healing of Trauma](/content/books/the-body-keeps-the-score-brain-mind-and-body-in-the-healing-of-trauma.md) by Bessel van der Kolk  
   
 ## 🫵 What Do You Think?  
 🤔 Which of the book's principles resonated most with your personal approach to home care, and what's one good enough solution you've implemented in your own life?

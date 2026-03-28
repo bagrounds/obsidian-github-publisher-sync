@@ -6,7 +6,7 @@ URL: https://bagrounds.org/books/seeing-voices-a-journey-into-the-world-of-the-d
 share: true
 affiliate link: https://amzn.to/4nlpnv6
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 👁️🔇 Seeing Voices: A Journey into the World of the Deaf  
 [🛒 Seeing Voices: A Journey into the World of the Deaf. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4nlpnv6)  
   
@@ -59,12 +59,12 @@ The book is structured into three main parts. 📜 The first part provides a his
 * 🙏 **_Speaking of Faith: Global Religions, Spiritual Practice, and Social Justice_ by Krista Tippett (formerly *Speaking of Faith*):** 🌎 While not directly about deafness, this book and the associated radio program explore the role of language, storytelling, and community in shaping identity and understanding the human experience across different belief systems.  
 * 🧠 **_The Private Life of the Brain: Emotions, Consciousness, and the Architect of the Mind_ by Susan Blackmore:** 🤔 Explores consciousness, self, and the brain from a scientific perspective, touching on themes of perception and how we construct our internal world.  
 * 🧩 **_NeuroTribes: The Legacy of Autism and the Future of Neurodiversity_ by Steve Silberman:** 🧑‍ Autistic Examines the history and culture of autism, advocating for neurodiversity and offering a parallel to Sacks's exploration of a neuro-minority group with its own distinct ways of being.  
-* **[💺🚪💡🤔 The Design of Everyday Things](./the-design-of-everyday-things.md) by Donald A. Norman:** 🪑 While about design, this book's focus on human-centered design and understanding how people perceive and interact with the world offers a different lens through which to consider the importance of clear communication and accessible environments, relevant to the experiences of deaf individuals.  
+* **[💺🚪💡🤔 The Design of Everyday Things](/content/books/the-design-of-everyday-things.md) by Donald A. Norman:** 🪑 While about design, this book's focus on human-centered design and understanding how people perceive and interact with the world offers a different lens through which to consider the importance of clear communication and accessible environments, relevant to the experiences of deaf individuals.  
 * 🗣️ **_The Practical Handbook of Hearing Voices: Therapeutic and Creative Approaches_ edited by Isla Parker, Joachim Schnackenberg, and Mark Hayward:** 👂 This book explores the experience of hearing voices from a non-medicalized perspective, focusing on therapeutic and creative ways of understanding and living with auditory hallucinations. While seemingly opposite to deafness, it creatively relates by exploring unusual sensory perception and alternative frameworks for understanding such experiences.  
 * 👂 **_Hearing Visions Seeing Voices_ by Mmatshilo Motsei:** ✨ This book, while potentially spiritual or philosophical, uses the phrase "Hearing Visions Seeing Voices" to explore themes of intuition, ancestral beliefs, and navigating identity within cultural shifts, demonstrating a metaphorical use of sensory language to describe different forms of perception and understanding.  
 * 🧬 **_The Immortal Life of Henrietta Lacks_ by Rebecca Skloot:** 🔬 While a story about bioethics and the origins of a famous cell line, it touches on themes of identity, ownership of one's body, and the human stories behind scientific advancements, resonating with the humanistic core of Sacks's work.  
   
-## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
+## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Seeing Voices: A Journey into the World of the Deaf. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.  
   
 ## 🐦 Tweet  

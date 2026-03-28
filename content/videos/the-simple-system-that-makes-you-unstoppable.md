@@ -10,7 +10,7 @@ Channel: SpoonFedStudy
 tags:
 youtube: https://youtu.be/fesslaSxdqs
 ---
-[Home](../index.md) > [Videos](./index.md) | [🥄👶📚 SpoonFedStudy](../topics/spoonfedstudy.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md) | [🥄👶📚 SpoonFedStudy](/content/topics/spoonfedstudy.md)  
 # 🛠️⚙️🚀🛡️ The simple system that makes you unstoppable  
 ![The simple system that makes you unstoppable.](https://youtu.be/fesslaSxdqs)  
   
@@ -50,8 +50,8 @@ To further understand this topic, it would be beneficial to explore:
 * ⚖️ How this framework might be adapted for different personality types or learning styles.  
   
 ## 📚 Book Recommendations  
-* [⚛️🔄 Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones](../books/atomic-habits.md) by James Clear: A comprehensive guide to building good habits and breaking bad ones through small, incremental changes.  
-* [🔄🧠💪 The Power of Habit: Why We Do What We Do in Life and Business](../books/the-power-of-habit.md) by Charles Duhigg: Explores the science of habit formation in individuals, organizations, and societies.  
-* [🤏♻️ Tiny Habits: The Small Changes That Change Everything](../books/tiny-habits.md) by BJ Fogg: Introduces a method for creating new habits by starting with very small behaviors.  
-* [❤️‍🔥💪 Grit: The Power of Passion and Perseverance](../books/grit-the-power-of-passion-and-perseverance.md) by Angela Duckworth: Discusses the importance of sustained effort and passion in achieving long-term goals.  
-* [🌱🧘🏼‍♀️🏆 Mindset: The New Psychology of Success](../books/mindset.md) by Carol S. Dweck: Explores the power of belief in shaping our behavior and success, relevant to the mental shift required for habit building.
+* [⚛️🔄 Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones](/content/books/atomic-habits.md) by James Clear: A comprehensive guide to building good habits and breaking bad ones through small, incremental changes.  
+* [🔄🧠💪 The Power of Habit: Why We Do What We Do in Life and Business](/content/books/the-power-of-habit.md) by Charles Duhigg: Explores the science of habit formation in individuals, organizations, and societies.  
+* [🤏♻️ Tiny Habits: The Small Changes That Change Everything](/content/books/tiny-habits.md) by BJ Fogg: Introduces a method for creating new habits by starting with very small behaviors.  
+* [❤️‍🔥💪 Grit: The Power of Passion and Perseverance](/content/books/grit-the-power-of-passion-and-perseverance.md) by Angela Duckworth: Discusses the importance of sustained effort and passion in achieving long-term goals.  
+* [🌱🧘🏼‍♀️🏆 Mindset: The New Psychology of Success](/content/books/mindset.md) by Carol S. Dweck: Explores the power of belief in shaping our behavior and success, relevant to the mental shift required for habit building.

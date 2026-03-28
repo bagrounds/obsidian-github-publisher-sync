@@ -9,17 +9,17 @@ tags:
 affiliate link: https://amzn.to/3HmIyUZ
 CTA: ✍️ Structure your life.
 ---
-[Home](../index.md) > [Books](./index.md) | [Bullet Journal](../videos/bullet-journal.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md) | [Bullet Journal](/content/videos/bullet-journal.md)  
 # 📓📜🗂️🔮 The Bullet Journal Method: Track the Past, Order the Present, Design the Future  
 [🛒 The Bullet Journal Method: Track the Past, Order the Present, Design the Future. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3HmIyUZ)  
   
 ## 📝🐒 Human Notes  
 - 🧭 Ikigai: Life Worth, A Reason for Being  
-    - 📚 [Ikigai: The Japanese Secret to a Long and Happy Life](./ikigai.md)  
+    - 📚 [Ikigai: The Japanese Secret to a Long and Happy Life](/content/books/ikigai.md)  
 - ✨ Kaizen: Good Change, Continuous Improvement  
 - 👣 Small steps  
-    - 📖 [Tiny Habits](./tiny-habits.md)  
-- 📺 [Bullet Journal](../videos/bullet-journal.md)  
+    - 📖 [Tiny Habits](/content/books/tiny-habits.md)  
+- 📺 [Bullet Journal](/content/videos/bullet-journal.md)  
 - 🤔 Surprisingly philosophical  
 - ✍️ Bullet journaling is a simple, well defined method. 🤓  
 - ✅ Tasks, 🗓️ events, and 📝 notes.  
@@ -100,13 +100,13 @@ The information presented in "The Bullet Journal Method" is primarily based on t
   
 #### 📚 Additional Book Recommendations 🧐  
   
-* **Best Alternate Book on the Same Topic:** [✅😌 Getting Things Done: The Art of Stress-Free Productivity](./getting-things-done-the-art-of-stress-free-productivity.md) by David Allen. While focusing more on a broader productivity system, it shares the core goal of organizing tasks and increasing efficiency. ⚙️  
-* **Best Book That Is Tangentially Related:** [🤿💼 Deep Work: Rules for Focused Success in a Distracted World](./deep-work.md) by Cal Newport. Explores the importance of focused work, which can be enhanced by the intentionality fostered by Bullet Journaling. 🧠  
-* **Best Book That Is Diametrically Opposed:** [📱🧠 The Shallows: What the Internet Is Doing to Our Brains](./the-shallows-what-the-internet-is-doing-to-our-brains.md) by Nicholas Carr. Offers a critical perspective on the impact of digital technology on our cognitive abilities, contrasting with the Bullet Journal's analog approach. 📱➡️🧠  
+* **Best Alternate Book on the Same Topic:** [✅😌 Getting Things Done: The Art of Stress-Free Productivity](/content/books/getting-things-done-the-art-of-stress-free-productivity.md) by David Allen. While focusing more on a broader productivity system, it shares the core goal of organizing tasks and increasing efficiency. ⚙️  
+* **Best Book That Is Tangentially Related:** [🤿💼 Deep Work: Rules for Focused Success in a Distracted World](/content/books/deep-work.md) by Cal Newport. Explores the importance of focused work, which can be enhanced by the intentionality fostered by Bullet Journaling. 🧠  
+* **Best Book That Is Diametrically Opposed:** [📱🧠 The Shallows: What the Internet Is Doing to Our Brains](/content/books/the-shallows-what-the-internet-is-doing-to-our-brains.md) by Nicholas Carr. Offers a critical perspective on the impact of digital technology on our cognitive abilities, contrasting with the Bullet Journal's analog approach. 📱➡️🧠  
 * **Best Fiction Book That Incorporates Related Ideas:** *The Name of the Wind* by Patrick Rothfuss. Features a protagonist who meticulously organizes his knowledge and tasks in a journal-like fashion, highlighting the power of record-keeping. 📖✨  
-* **Best Book That Is More General:** [⚛️🔄 Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones](./atomic-habits.md) by James Clear. Provides broader principles of habit formation that can be effectively tracked and implemented within a Bullet Journal. 🔄✅  
-* **Best Book That Is More Specific:** [📝🎨🎶 Show Your Work!: 10 Ways to Share Your Creativity and Get Discovered](./show-your-work.md) by Austin Kleon. Offers specific strategies for creative professionals, which could be organized and tracked using a Bullet Journal. 🎨🚀  
-* **Best Book That Is More Rigorous:** While not directly on Bullet Journaling, [🧘🗣️ Mindfulness in Plain English](./mindfulness-in-plain-english.md) by Bhante Henepola Gunaratana offers a more in-depth exploration of the mindfulness principles that underpin the intentionality of the Bullet Journal method. 🧘‍♀️📖  
+* **Best Book That Is More General:** [⚛️🔄 Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones](/content/books/atomic-habits.md) by James Clear. Provides broader principles of habit formation that can be effectively tracked and implemented within a Bullet Journal. 🔄✅  
+* **Best Book That Is More Specific:** [📝🎨🎶 Show Your Work!: 10 Ways to Share Your Creativity and Get Discovered](/content/books/show-your-work.md) by Austin Kleon. Offers specific strategies for creative professionals, which could be organized and tracked using a Bullet Journal. 🎨🚀  
+* **Best Book That Is More Rigorous:** While not directly on Bullet Journaling, [🧘🗣️ Mindfulness in Plain English](/content/books/mindfulness-in-plain-english.md) by Bhante Henepola Gunaratana offers a more in-depth exploration of the mindfulness principles that underpin the intentionality of the Bullet Journal method. 🧘‍♀️📖  
 * **Best Book That Is More Accessible:** *Declutter Your Mind: How To Stop Worrying, Relieve Anxiety, and Eliminate Negative Thinking* by S.J. Scott and Barrie Davenport. Provides accessible techniques for mental clarity, which can be complemented by the Bullet Journal's organizational structure. 🧠✨  
   
 ## 💬 [Gemini](https://gemini.google.com) Prompt  

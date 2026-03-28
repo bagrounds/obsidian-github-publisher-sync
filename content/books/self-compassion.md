@@ -8,7 +8,7 @@ Author:
 tags:
 affiliate link: https://www.amazon.com/dp/1444738178?tag=bagrounds-20
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 💗 Self-Compassion  
 [🛒 Self-Compassion. As an Amazon Associate I earn from qualifying purchases.](https://www.amazon.com/dp/1444738178?tag=bagrounds-20)  
   
@@ -53,12 +53,12 @@ A: 🤓 Yes. The book includes guided meditations, journaling prompts, and speci
 ### ❤️ If You Loved This  
   
 * [📓 The Mindful Self-Compassion Workbook](books/mindful-self-compassion-workbook.md) by Kristin Neff and Chris Germer  
-* [💊 Feeling Good](./feeling-good-the-new-mood-therapy.md) by David Burns  
+* [💊 Feeling Good](/content/books/feeling-good-the-new-mood-therapy.md) by David Burns  
   
 ### ↔️ Similar But Different  
   
 * [📊 Self-Esteem](books/self-esteem.md) by Matthew McKay - The contrasting approach Neff critiques  
-* [🧘 10% Happier](./10-percent-happier.md) by Dan Harris - Different entry point to mindfulness  
+* [🧘 10% Happier](/content/books/10-percent-happier.md) by Dan Harris - Different entry point to mindfulness  
   
 ## 🫵 What Do You Think?  
   

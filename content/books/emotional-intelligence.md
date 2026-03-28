@@ -9,7 +9,7 @@ tags:
 affiliate link: https://amzn.to/45GkyG9
 updated: 2026-03-11T16:18:39.439Z
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # ❤️🧠📈🤔 Emotional Intelligence: Why It Can Matter More Than IQ  
 [🛒 Emotional Intelligence: Why It Can Matter More Than IQ. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/45GkyG9)  
   
@@ -66,7 +66,7 @@ updated: 2026-03-11T16:18:39.439Z
   - [*Emotional Intelligence 2.0*](https://en.wikipedia.org/wiki/Emotional_intelligence) by Travis Bradberry and Jean Greaves – Offers a hands-on guide with self-assessment tools and actionable strategies to boost EQ. 😊  
   
 - **Tangentially Related Book:**  
-  - *[Mindset](./mindset.md): The New Psychology of Success* by Carol S. Dweck – Explores the role of a growth mindset in personal and professional development, complementing EQ ideas with its focus on learning and adaptability. 🌱  
+  - *[Mindset](/content/books/mindset.md): The New Psychology of Success* by Carol S. Dweck – Explores the role of a growth mindset in personal and professional development, complementing EQ ideas with its focus on learning and adaptability. 🌱  
   
 - **Diametrically Opposed Book:**  
   - [*The Bell Curve: Intelligence and Class Structure in American Life*](https://en.wikipedia.org/wiki/The_Bell_Curve) by Richard J. Herrnstein and Charles Murray – Argues that cognitive intelligence (IQ) is the primary determinant of success, providing a contrasting perspective to the EQ-centric view. ⚖️  

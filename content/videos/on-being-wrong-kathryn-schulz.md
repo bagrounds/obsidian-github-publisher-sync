@@ -10,7 +10,7 @@ Channel: TED
 tags:
 youtube: https://youtu.be/QleRgTBMX88
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md)  
 # ❌🤔💡 On being wrong | Kathryn Schulz  
 ![On being wrong | Kathryn Schulz](https://youtu.be/QleRgTBMX88)  
   
@@ -49,9 +49,9 @@ youtube: https://youtu.be/QleRgTBMX88
 * 🔎 **Topics for a better understanding** include exploring the specific cognitive biases, such as **Confirmation Bias** and the **Dunning-Kruger Effect**, which actively reinforce the internal sense of rightness. 🛠️ Research into institutional safeguards, like **Checklists** and **Blameless Post-Mortems** used in aviation or high-reliability organizations, could provide practical frameworks for cultivating intellectual humility where the stakes are highest. 🗣️ The transition from "ignorance" to "malevolent purpose" also warrants ethical examination regarding the rhetoric of persuasion and debate.  
   
 ## 📚 Book Recommendations  
-* **[❌ Being Wrong: Adventures in the Margin of Error](../books/being-wrong-adventures-in-the-margin-of-error.md)** by Kathryn Schulz. 📖 This is a direct expansion of the video's arguments, delving into the philosophy, psychology, and practical reality of human error.  
-* **[⚫🦢🎲 The Black Swan: The Impact of the Highly Improbable](../books/the-black-swan-the-impact-of-the-highly-improbable.md)** by Nassim Nicholas Taleb. 📉 Though from a probabilistic and statistical angle, this book reinforces the video's point about the unreliability of perceived "solid ground" by focusing on human blindness to high-impact, rare events (Black Swans).  
-* **[🏍️🧘❓ Zen and the Art of Motorcycle Maintenance: An Inquiry into Values](../books/zen-and-the-art-of-motorcycle-maintenance-an-inquiry-into-values.md)** by Robert M. Pirsig. 💡 A philosophical novel that explores the concept of Quality and the need to reconcile subjective experience with objective reality, touching on the idea of being trapped in one's own narrow, "right" perspective.  
+* **[❌ Being Wrong: Adventures in the Margin of Error](/content/books/being-wrong-adventures-in-the-margin-of-error.md)** by Kathryn Schulz. 📖 This is a direct expansion of the video's arguments, delving into the philosophy, psychology, and practical reality of human error.  
+* **[⚫🦢🎲 The Black Swan: The Impact of the Highly Improbable](/content/books/the-black-swan-the-impact-of-the-highly-improbable.md)** by Nassim Nicholas Taleb. 📉 Though from a probabilistic and statistical angle, this book reinforces the video's point about the unreliability of perceived "solid ground" by focusing on human blindness to high-impact, rare events (Black Swans).  
+* **[🏍️🧘❓ Zen and the Art of Motorcycle Maintenance: An Inquiry into Values](/content/books/zen-and-the-art-of-motorcycle-maintenance-an-inquiry-into-values.md)** by Robert M. Pirsig. 💡 A philosophical novel that explores the concept of Quality and the need to reconcile subjective experience with objective reality, touching on the idea of being trapped in one's own narrow, "right" perspective.  
 * 🚑 **The Checklist Manifesto: How to Get Things Right** by Atul Gawande. ✅ Provides a concrete, practical counterpoint to the "being right" problem, showing how a culture of humility and simple, verifiable procedures can drastically reduce error in complex, high-stakes environments like medicine.  
   
 ## 🐦 Tweet  

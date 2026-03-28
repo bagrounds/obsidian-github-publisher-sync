@@ -8,7 +8,7 @@ Author:
 tags:
 affiliate link: https://www.amazon.com/dp/0060850523?tag=bagrounds-20
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 💊 Brave New World  
 [🛒 Brave New World. As an Amazon Associate I earn from qualifying purchases.](https://www.amazon.com/dp/0060850523?tag=bagrounds-20)  
   
@@ -47,18 +47,18 @@ A: 🤓 Yes. It's more philosophical fiction than hard sci-fi, focusing on human
   
 ### 📖 Non-Fiction  
   
-* [📺 Amusing Ourselves to Death](./amusing-ourselves-to-death-public-discourse-in-the-age-of-show-business.md) by Neil Postman  
-* [👁️ The Age of Surveillance Capitalism](./the-age-of-surveillance-capitalism.md) by Shoshana Zuboff  
+* [📺 Amusing Ourselves to Death](/content/books/amusing-ourselves-to-death-public-discourse-in-the-age-of-show-business.md) by Neil Postman  
+* [👁️ The Age of Surveillance Capitalism](/content/books/the-age-of-surveillance-capitalism.md) by Shoshana Zuboff  
   
 ### ❤️ If You Loved This  
   
-* [👁️ 1984](./1984.md) by George Orwell  
+* [👁️ 1984](/content/books/1984.md) by George Orwell  
 * [🔥 Fahrenheit 451](books/fahrenheit-451.md) by Ray Bradbury  
   
 ### ↔️ Similar But Different  
   
 * [👩⚖️ The Handmaid's Tale](books/the-handmaids-tale.md) by Margaret Atwood - Control through oppression vs. pleasure  
-* [❄️ Snow Crash](./snow-crash.md) by Neal Stephenson - Cyberpunk take on similar themes  
+* [❄️ Snow Crash](/content/books/snow-crash.md) by Neal Stephenson - Cyberpunk take on similar themes  
   
 ## 🫵 What Do You Think?  
   

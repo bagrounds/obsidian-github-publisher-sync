@@ -10,7 +10,7 @@ Channel: Heather Cox Richardson
 tags:
 youtube: https://youtu.be/lMHsFZC34gg
 ---
-[Home](../index.md) > [Videos](./index.md) | [🏛️🇺🇸📖 Heather Cox Richardson](../people/heather-cox-richardson.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md) | [🏛️🇺🇸📖 Heather Cox Richardson](/content/people/heather-cox-richardson.md)  
 # 🤔🌎🤠🚨 What on Earth Is Going on in Texas? | Explainer  
 ![What on Earth Is Going on in Texas? | Explainer](https://youtu.be/lMHsFZC34gg)  
 ## 🤖 AI Summary  
@@ -28,10 +28,10 @@ youtube: https://youtu.be/lMHsFZC34gg
 This 🎬 video presents a particular perspective on the events in Texas, framing them as a broader 🇺🇸 national issue concerning democracy and power. It's important to note that other perspectives exist, which might portray the Texas Democrats' actions as an 🚧 obstruction of the legislative process and the Republican leadership's response as a necessary measure to ensure a ⚖️ quorum. For a more complete understanding, it would be beneficial to explore 📰 articles and analyses from a variety of sources, including those that offer a more conservative viewpoint. Key topics for further exploration include the legal precedents for legislative quorum breaks and the specific details of the redistricting maps themselves. 🗺️  
   
 ## 📚 Book Recommendations  
-* [🗳️🏛️☠️ How Democracies Die](../books/how-democracies-die.md) by Steven Levitsky and Daniel Ziblatt is similar in that it explores how elected leaders can undermine democratic institutions.  
-* [🇺🇸📜 The Federalist Papers](../books/the-federalist-papers.md) by Alexander Hamilton, James Madison, and John Jay offers a contrasting perspective on the fundamental principles and structure of American government.  
-* [🧑🏿⛓️🙈 The New Jim Crow: Mass Incarceration in the Age of Colorblindness](../books/the-new-jim-crow-mass-incarceration-in-the-age-of-colorblindness.md) by Michelle Alexander is a creatively related book that examines how legal frameworks and political maneuvers can be used to disempower specific groups.  
-* [🤝🏛️ Team of Rivals: The Political Genius of Abraham Lincoln](../books/team-of-rivals-the-political-genius-of-abraham-lincoln.md) by Doris Kearns Goodwin presents a historical example of political opponents working together for a common goal, offering a different view on political cooperation and conflict.  
+* [🗳️🏛️☠️ How Democracies Die](/content/books/how-democracies-die.md) by Steven Levitsky and Daniel Ziblatt is similar in that it explores how elected leaders can undermine democratic institutions.  
+* [🇺🇸📜 The Federalist Papers](/content/books/the-federalist-papers.md) by Alexander Hamilton, James Madison, and John Jay offers a contrasting perspective on the fundamental principles and structure of American government.  
+* [🧑🏿⛓️🙈 The New Jim Crow: Mass Incarceration in the Age of Colorblindness](/content/books/the-new-jim-crow-mass-incarceration-in-the-age-of-colorblindness.md) by Michelle Alexander is a creatively related book that examines how legal frameworks and political maneuvers can be used to disempower specific groups.  
+* [🤝🏛️ Team of Rivals: The Political Genius of Abraham Lincoln](/content/books/team-of-rivals-the-political-genius-of-abraham-lincoln.md) by Doris Kearns Goodwin presents a historical example of political opponents working together for a common goal, offering a different view on political cooperation and conflict.  
   
 ## 🐦 Tweet  
 <blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">🤔🌎🤠🚨 What on Earth Is Going on in Texas? | Explainer<br><br>🗳️ Elections | 📜 Legislative Session | 🗺️ Redistricting | 💙 Texas Democrats | ✍️ Voting | 🗽 American Rights | 🏰 Authoritarian State<a href="https://twitter.com/HC_Richardson?ref_src=twsrc%5Etfw">@HC_Richardson</a><a href="https://t.co/vpGj8jjCwV">https://t.co/vpGj8jjCwV</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/1958780802398851088?ref_src=twsrc%5Etfw">August 22, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

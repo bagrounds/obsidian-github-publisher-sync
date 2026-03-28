@@ -10,7 +10,7 @@ Channel: LastWeekTonight
 tags:
 youtube: https://youtu.be/ohPToBog_-g
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md)  
 # 📺🎤👮‍♂️📰 Jimmy Kimmel & the FCC: Last Week Tonight with John Oliver (HBO)  
 ![Jimmy Kimmel & the FCC: Last Week Tonight with John Oliver (HBO)](https://youtu.be/ohPToBog_-g)  
   
@@ -41,11 +41,11 @@ This segment from Last Week Tonight 📺 presents a perspective on the events su
 To gain a more complete understanding, it would be beneficial to 📖 explore perspectives from Brendan Carr and the Trump administration regarding the justification for the FCC's actions and their interpretation of Kimmel's comments. Additionally, investigating 📰 news coverage from conservative media outlets concerning Charlie Kirk's death and Jimmy Kimmel's remarks would provide insight into the "firestorm" mentioned in the video. Understanding the legal arguments for and against the FCC's authority in this specific context would also be valuable. Finally, 📈 examining the financial and regulatory implications of the NextStar/Techna and Sinclair mergers from the companies' perspectives could shed light on their motivations beyond political pressure.  
   
 ## 📚 Book Recommendations  
-* [🏭🫡 Manufacturing Consent: The Political Economy of the Mass Media](../books/manufacturing-consent.md) by Edward S. Herman and Noam Chomsky: Explores how mass media functions as a propaganda model, which could offer a contrasting perspective on media influence and control.  
-* [👁️ 1984](../books/1984.md) by George Orwell: A classic dystopian novel that vividly portrays a government's control over information and speech, providing a creative parallel to the concerns raised about censorship.  
-* [👻🇺🇸⚔️🪽 The Soul of America: The Battle for Our Better Angels](../books/the-soul-of-america-the-battle-for-our-better-angels.md) by Jon Meacham: Offers a historical perspective on moments when American values, including free speech, have been challenged and defended.  
+* [🏭🫡 Manufacturing Consent: The Political Economy of the Mass Media](/content/books/manufacturing-consent.md) by Edward S. Herman and Noam Chomsky: Explores how mass media functions as a propaganda model, which could offer a contrasting perspective on media influence and control.  
+* [👁️ 1984](/content/books/1984.md) by George Orwell: A classic dystopian novel that vividly portrays a government's control over information and speech, providing a creative parallel to the concerns raised about censorship.  
+* [👻🇺🇸⚔️🪽 The Soul of America: The Battle for Our Better Angels](/content/books/the-soul-of-america-the-battle-for-our-better-angels.md) by Jon Meacham: Offers a historical perspective on moments when American values, including free speech, have been challenged and defended.  
 * The Authoritarian Moment by Ben Shapiro: Would provide a contrasting viewpoint on challenges to free speech, likely from a conservative perspective.  
-* [📺💀 Amusing Ourselves to Death: Public Discourse in the Age of Show Business](../books/amusing-ourselves-to-death-public-discourse-in-the-age-of-show-business.md) by Neil Postman: Discusses the impact of television on public discourse, offering a broader context for the role of media in society.  
+* [📺💀 Amusing Ourselves to Death: Public Discourse in the Age of Show Business](/content/books/amusing-ourselves-to-death-public-discourse-in-the-age-of-show-business.md) by Neil Postman: Discusses the impact of television on public discourse, offering a broader context for the role of media in society.  
   
 ## 🐦 Tweet  
 <blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">📺🎤👮‍♂️📰 Jimmy Kimmel &amp; the FCC: Last Week Tonight with John Oliver (HBO)<br><br>🚨 Suspension | 🗣️ Criticism | 🏢 Media Consolidation | 🏛️ First Amendment | 🌍 International Precedents | 🤝 Corporate Pressure<a href="https://t.co/diP3kW4eM3">https://t.co/diP3kW4eM3</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/1970529714256453660?ref_src=twsrc%5Etfw">September 23, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

@@ -10,7 +10,7 @@ affiliate link: https://amzn.to/43sWW6w
 CTA: 🧠 Master neural networks.
 updated: 2026-03-15T12:09:33.207Z
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🧠💻🤖 Deep Learning  
 [🛒 Deep Learning. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/43sWW6w)  
   
@@ -64,12 +64,12 @@ updated: 2026-03-15T12:09:33.207Z
 **Additional Book Recommendations:** 📚🌟  
   
 * **Best Alternate Book on the Same Topic:** "Pattern Recognition and Machine Learning" by Christopher M. Bishop. While slightly broader, it provides a solid foundation in machine learning, including deep learning concepts. 🧠💡  
-* **Best Book Tangentially Related:** [🤖🧠 Artificial Intelligence: A Modern Approach](./artificial-intelligence-a-modern-approach.md) by Stuart Russell and Peter Norvig. This comprehensive textbook covers the broader field of AI, providing context for deep learning within AI. 🤖🌐  
+* **Best Book Tangentially Related:** [🤖🧠 Artificial Intelligence: A Modern Approach](/content/books/artificial-intelligence-a-modern-approach.md) by Stuart Russell and Peter Norvig. This comprehensive textbook covers the broader field of AI, providing context for deep learning within AI. 🤖🌐  
 * **Best Book Diametrically Opposed:** "The Alignment Problem: Machine Learning and Human Values" by Brian Christian. This book explores the ethical and societal implications of AI, offering a critical perspective on the rapid advancement of deep learning. ⚖️🤔  
 * **Best Fiction Book That Incorporates Related Ideas:** Klara and the Sun by Kazuo Ishiguro. This novel explores themes of artificial intelligence and human connection, offering a thought-provoking narrative. ☀️❤️  
-* **Best Book More General:** [🧬👥💾 Life 3.0: Being Human in the Age of Artificial Intelligence](./life-3-0.md) by Max Tegmark. This book discusses the long-term implications of AI, including deep learning, on society and the future of humanity. 🌐🔮  
+* **Best Book More General:** [🧬👥💾 Life 3.0: Being Human in the Age of Artificial Intelligence](/content/books/life-3-0.md) by Max Tegmark. This book discusses the long-term implications of AI, including deep learning, on society and the future of humanity. 🌐🔮  
 * **Best Book More Specific:** "Neural Network Design" by Hagan, Demuth, Beale, and De Jesús. This book dives deep into the design of neural networks, with a focus on practical applications. 🛠️🏗️  
-* **Best Book More Rigorous:** "[Convex Optimization](./convex-optimization.md)" by Stephen Boyd and Lieven Vandenberghe. This book provides the mathematical foundation for optimization problems, which are central to deep learning. 📈📐  
+* **Best Book More Rigorous:** "[Convex Optimization](/content/books/convex-optimization.md)" by Stephen Boyd and Lieven Vandenberghe. This book provides the mathematical foundation for optimization problems, which are central to deep learning. 📈📐  
 * **Best Book More Accessible:** "Make Your Own Neural Network" by Tariq Rashid. This book provides a gentle introduction to neural networks, using Python and simple examples. 🐍👶  
   
 ## 💬 [Gemini](https://gemini.google.com) Prompt  

@@ -10,7 +10,7 @@ Channel: Google Play Books
 tags:
 youtube: https://youtu.be/qFc7Z0Npa-E
 ---
-[Home](../index.md) > [Videos](./index.md) | [👶😴 How Babies Sleep: The Gentle, Science-Based Method to Help Your Baby Sleep Through the Night](../books/how-babies-sleep-the-gentle-science-based-method-to-help-your-baby-sleep-through-the-night.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md) | [👶😴 How Babies Sleep: The Gentle, Science-Based Method to Help Your Baby Sleep Through the Night](/content/books/how-babies-sleep-the-gentle-science-based-method-to-help-your-baby-sleep-through-the-night.md)  
 # 😴👶🧪 How Babies Sleep: The Gentle, Science-Based… by Sofia Axelrod · Audiobook preview  
 ![How Babies Sleep: The Gentle, Science-Based… by Sofia Axelrod · Audiobook preview](https://youtu.be/qFc7Z0Npa-E)  
   
@@ -57,11 +57,11 @@ youtube: https://youtu.be/qFc7Z0Npa-E
 ### 🆚 Contrasting  
 * The Gentle Sleep Book: For babies and small children by Sarah Ockwell-Smith  
     * 🌙 This book strongly advocates for responsive, attachment-based parenting sleep methods, actively advising against controlled crying techniques and focusing on biological norms for infant sleep.  
-* [😴🤱 Sweet Sleep: Nighttime and Naptime Strategies for the Breastfeeding Family](../books/sweet-sleep-nighttime-and-naptime-strategies-for-the-breastfeeding-family.md) by La Leche League International  
+* [😴🤱 Sweet Sleep: Nighttime and Naptime Strategies for the Breastfeeding Family](/content/books/sweet-sleep-nighttime-and-naptime-strategies-for-the-breastfeeding-family.md) by La Leche League International  
     * 🤱 Provides guidance on infant sleep centered around breastfeeding and maximizing sleep while adhering to biological needs, including advice on safe co-sleeping and feeding on demand, which contrasts with strict scheduling.  
   
 ### 🎨 Creatively Related  
-* [😴💭 Why We Sleep: Unlocking the Power of Sleep and Dreams](../books/why-we-sleep-unlocking-the-power-of-sleep-and-dreams.md) by Matthew Walker  
+* [😴💭 Why We Sleep: Unlocking the Power of Sleep and Dreams](/content/books/why-we-sleep-unlocking-the-power-of-sleep-and-dreams.md) by Matthew Walker  
     * 🧠 This provides a broad, scientific overview of sleep's critical role in human health, making the case for sleep's importance across all ages, including infants, and explaining the science of circadian rhythms in detail.  
 * The Power of When: Discover Your Chronotype--and the Best Time to Eat, Sleep, Work, and Love by Michael Breus  
     * 🕰️ Focuses on adult chronotypes (the body's natural time preferences) and the science of the circadian rhythm, offering a related perspective on how biological timing dictates behavior, which is the core principle applied to baby sleep.

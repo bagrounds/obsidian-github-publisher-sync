@@ -6,7 +6,7 @@ URL: https://bagrounds.org/books/hello-ocean-friends-a-black-and-white-board-boo
 share: true
 affiliate link: https://amzn.to/3HJL9bm
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 👶🦓🌊 Hello, Ocean Friends: A Black-and-White Board Book for Babies That Helps Visual Development  
 [🛒 Hello, Ocean Friends: A Black-and-White Board Book for Babies That Helps Visual Development. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3HJL9bm)  
   
@@ -45,7 +45,7 @@ affiliate link: https://amzn.to/3HJL9bm
 ### 🆚 Contrasting Books (Focus on Color, Detail, or Different Concepts)  
   
 * 🐻 **Brown Bear, Brown Bear, What Do You See?** by Bill Martin Jr. and Eric Carle. 🌈 Uses bright colors and simple, recognizable animals to introduce colors and patterns.  
-* **[🐛🍎 The Very Hungry Caterpillar](./the-very-hungry-caterpillar.md)** by Eric Carle. Features vibrant collage illustrations and a simple narrative, engaging senses through die-cut pages.  
+* **[🐛🍎 The Very Hungry Caterpillar](/content/books/the-very-hungry-caterpillar.md)** by Eric Carle. Features vibrant collage illustrations and a simple narrative, engaging senses through die-cut pages.  
 * 🐶 **Where's Spot?** by Eric Hill. A classic lift-the-flap book that encourages interaction and introduces simple prepositions, utilizing color illustrations.  
 * 🐠 **Ocean Friends: Touch & Feel Board Book** (Little Hippo Books version). 🖐️ While also ocean-themed, this version incorporates soft, colorful illustrations and touch-and-feel textures, contrasting with the primary black-and-white focus of *Hello, Ocean Friends*.  
 * 📸 **Any book featuring realistic photographs of animals or objects.** 🖼️ These would contrast with the stylized, high-contrast illustrations.  
@@ -59,7 +59,7 @@ affiliate link: https://amzn.to/3HJL9bm
 * 👐 **Interactive ocean-themed board books** with lift-the-flaps or sliders, such as *I'm Thinking of an Ocean Animal* or *Little Blue Boat*. These encourage hands-on interaction.  
 * 🌐 **Books introducing greetings in multiple languages** (if the "Hola" aspect of *Hello, Ocean Friends* resonated).  
   
-## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
+## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Hello, Ocean Friends: A Black-and-White Board Book for Babies That Helps Visual Development. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.  
   
 ## 🐦 Tweet  

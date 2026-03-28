@@ -11,7 +11,7 @@ force_analyze_links: false
 link_analysis_time: 2026-03-22T23:34:06.343Z
 link_analysis_model: gemini-3.1-flash-lite-preview
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🤖🧑‍ Human Compatible: Artificial Intelligence and the Problem of Control  
 [🛒 Human Compatible: Artificial Intelligence and the Problem of Control. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4oMyd5Q)  
   
@@ -51,18 +51,18 @@ link_analysis_model: gemini-3.1-flash-lite-preview
   
 ### 📖 Similar Books  
   
-* [🤖⚠️📈 Superintelligence: Paths, Dangers, Strategies](./superintelligence-paths-dangers-strategies.md) by Nick Bostrom  
+* [🤖⚠️📈 Superintelligence: Paths, Dangers, Strategies](/content/books/superintelligence-paths-dangers-strategies.md) by Nick Bostrom  
     * 🤝 Like Human Compatible, this book delves into the potential for superintelligent AI and the immense risks it poses if not properly controlled and aligned with human values. 💡 It provides a philosophical and strategic examination of the future of AI.  
-* [🧬👥💾 Life 3.0: Being Human in the Age of Artificial Intelligence](./life-3-0.md) by Max Tegmark  
+* [🧬👥💾 Life 3.0: Being Human in the Age of Artificial Intelligence](/content/books/life-3-0.md) by Max Tegmark  
     * 🌎 Tegmark's book offers a broad overview of AI's potential future, exploring various scenarios, including the challenges of alignment and control, resonating with Russell's concerns about shaping a beneficial AI future.  
-* [⚖️🤖 The Alignment Problem](./the-alignment-problem.md): Machine Learning and Human Values by Brian Christian  
+* [⚖️🤖 The Alignment Problem](/content/books/the-alignment-problem.md): Machine Learning and Human Values by Brian Christian  
     * ✅ This book directly addresses the "alignment problem" from a technical and ethical standpoint, discussing how AI systems learn and the inherent difficulties in ensuring their objectives truly reflect human values and intentions.  
   
 ### 🆚 Contrasting Books  
   
 * 🤥 The Myth of Artificial Intelligence: Why Computers Can't Think the Way We Do by Erik J. Larson  
     * 🚫 Larson's book contrasts with Russell's by arguing against the imminent arrival of human-level or superintelligent AI, challenging the underlying assumptions about what constitutes "intelligence" and whether machines can truly replicate human cognitive abilities.  
-* [📊📉🏛️ Weapons of Math Destruction: How Big Data Increases Inequality and Threatens Democracy](./weapons-of-math-destruction-how-big-data-increases-inequality-and-threatens-democracy.md) by Cathy O'Neil  
+* [📊📉🏛️ Weapons of Math Destruction: How Big Data Increases Inequality and Threatens Democracy](/content/books/weapons-of-math-destruction-how-big-data-increases-inequality-and-threatens-democracy.md) by Cathy O'Neil  
     * ⚠️ While Human Compatible focuses on future existential risks, 📰 O'Neil's book highlights the immediate, real-world harms caused by algorithms and big data in areas like employment, credit, and justice, demonstrating how current AI technologies can perpetuate and exacerbate societal inequalities.  
 * 🏘️ Automating Inequality: How High-Tech Tools Profile, Police, and Punish the Poor by Virginia Eubanks  
     * 😔 Similar to Weapons of Math Destruction, this book offers a critical view of AI's present-day social impact, focusing on how data-mining and algorithmic systems affect vulnerable populations, providing a grounded contrast to the abstract discussions of superintelligence.  
@@ -73,12 +73,12 @@ link_analysis_model: gemini-3.1-flash-lite-preview
     * 🌌 This classic science fiction novel explores the evolution of AI and its relationship with humanity, depicting a superintelligent AI (HAL 9000) that misinterprets its mission, leading to conflict with human goals—a fictional parallel to Russell's alignment concerns.  
 * 🤖 Moral Machines: Teaching Robots Right From Wrong by Wendell Wallach and Colin Allen  
     * 💡 This book delves into the complex ethical challenges of designing AI systems with moral reasoning, expanding on the "value specification" problem discussed in Human Compatible by considering how machines might learn or be instilled with ethical frameworks.  
-* [👁️‍🗨️💰⛓️👤 The Age of Surveillance Capitalism: The Fight for a Human Future at the New Frontier of Power](./the-age-of-surveillance-capitalism.md) by Shoshana Zuboff  
+* [👁️‍🗨️💰⛓️👤 The Age of Surveillance Capitalism: The Fight for a Human Future at the New Frontier of Power](/content/books/the-age-of-surveillance-capitalism.md) by Shoshana Zuboff  
     * 🌐 While not directly about superintelligence, 🔎 Zuboff's work deeply analyzes the unchecked power of digital platforms and their algorithms to predict and modify human behavior, offering a critical perspective on control and autonomy in a technologically advanced society that resonates with Russell's warnings about AI's potential for societal influence.  
 * 🏛️ The Political Philosophy of AI: An Introduction by Mark Coeckelbergh  
     * 🌍 This book offers a philosophical lens to explore the political implications of AI, examining how emerging technologies impact issues like justice, discrimination, democracy, and surveillance, providing a broader societal context to Russell's more technical concerns about AI control.  
   
-## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-flash)  
+## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-flash)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by similar, contrasting, and creatively related book recommendations on Human Compatible: Artificial Intelligence and the Problem of Control. Never put book titles in quotes or italics. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.  
   
 ## 🦋 Bluesky    

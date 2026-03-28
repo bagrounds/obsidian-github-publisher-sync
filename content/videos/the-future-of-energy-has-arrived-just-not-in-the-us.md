@@ -10,7 +10,7 @@ Channel: New York Times Podcasts
 tags:
 youtube: https://youtu.be/ENJ6UmECe1Q
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md)  
 # 🌍⚡️🚫🇺🇸 The Future of Energy Has Arrived - Just Not in the U.S.  
 ![The Future of Energy Has Arrived - Just Not in the U.S.](https://youtu.be/ENJ6UmECe1Q)  
   
@@ -51,9 +51,9 @@ youtube: https://youtu.be/ENJ6UmECe1Q
   
 ### ↔️ Similar  
   
-- **[⚡🌍⚔️ The New Map: Energy, Climate, and the Clash of Nations](../books/the-new-map-energy-climate-and-the-clash-of-nations.md)** by Daniel Yergin. This book provides a clear framework for understanding the interplay between energy policy, climate goals, and geopolitical competition between major powers like the US and China.  
+- **[⚡🌍⚔️ The New Map: Energy, Climate, and the Clash of Nations](/content/books/the-new-map-energy-climate-and-the-clash-of-nations.md)** by Daniel Yergin. This book provides a clear framework for understanding the interplay between energy policy, climate goals, and geopolitical competition between major powers like the US and China.  
 - 🔍 **The Quest: Energy, Security, and the Remaking of the Modern World** by Daniel Yergin. It explores the history and future of the world's energy system, detailing the rise of oil and gas and the emergence of renewable sources as critical geopolitical assets.  
-- **[⚡🏛️ Short Circuiting Policy: Interest Groups and the Battle Over Clean Energy and Climate Policy in the American States](../books/short-circuiting-policy-interest-groups-and-the-battle-over-clean-energy-and-climate-policy-in-the-american-states.md)** by Leah C. Stokes. This book details how entrenched fossil fuel interests obstruct and roll back clean energy policies at the state level, reflecting the US policy failures discussed in the video.  
+- **[⚡🏛️ Short Circuiting Policy: Interest Groups and the Battle Over Clean Energy and Climate Policy in the American States](/content/books/short-circuiting-policy-interest-groups-and-the-battle-over-clean-energy-and-climate-policy-in-the-american-states.md)** by Leah C. Stokes. This book details how entrenched fossil fuel interests obstruct and roll back clean energy policies at the state level, reflecting the US policy failures discussed in the video.  
   
 ### 🆚 Contrasting  
   

@@ -9,7 +9,7 @@ tags:
 affiliate link: https://amzn.to/4564QUI
 CTA: 🔑 Unlock efficient solutions.
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # ⛰️⬇️📈 Convex Optimization  
 [🛒 Convex Optimization. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4564QUI)  
   
@@ -61,10 +61,10 @@ CTA: 🔑 Unlock efficient solutions.
   
 **Additional Book Recommendations:** 📚  
   
-* **Best Alternate Book on the Same Topic:** [🔢🎯 Numerical Optimization](./numerical-optimization.md) by Jorge Nocedal and Stephen J. Wright. (More general 🌐, but still contains a lot of convex optimization information ⚖️)  
-* **Best Tangentially Related Book:** "[Deep Learning](./deep-learning.md)" by Ian Goodfellow, Yoshua Bengio, and Aaron Courville. (Deep learning 🧠 relies heavily on optimization techniques 🔄)  
+* **Best Alternate Book on the Same Topic:** [🔢🎯 Numerical Optimization](/content/books/numerical-optimization.md) by Jorge Nocedal and Stephen J. Wright. (More general 🌐, but still contains a lot of convex optimization information ⚖️)  
+* **Best Tangentially Related Book:** "[Deep Learning](/content/books/deep-learning.md)" by Ian Goodfellow, Yoshua Bengio, and Aaron Courville. (Deep learning 🧠 relies heavily on optimization techniques 🔄)  
 * **Best Diametrically Opposed Book:** "Nonlinear Programming" by Dimitri P. Bertsekas. (Explores optimization problems that are not necessarily convex 🌀)  
-* **Best Fiction Book That Incorporates Related Ideas:** "[The Goal](./the-goal.md): A Process of Ongoing Improvement" by Eliyahu M. Goldratt. (While a business novel 🏭, it deals with optimization and constraints in a practical setting 💼)  
+* **Best Fiction Book That Incorporates Related Ideas:** "[The Goal](/content/books/the-goal.md): A Process of Ongoing Improvement" by Eliyahu M. Goldratt. (While a business novel 🏭, it deals with optimization and constraints in a practical setting 💼)  
 * **Best More General Book:** "Optimization Theory and Applications: Problems with MATLAB Solutions" by Athanasios Papalambros and Panos Pardalos. (A broader approach to all types of optimization 🌐)  
 * **Best More Specific Book:** "Large-Scale Convex Optimization" by Stephen Boyd and Neal Parikh. (Focuses on solving very large convex problems 📈)  
 * **Best More Rigorous Book:** "Real and Convex Analysis" by Walter Rudin. (Provides a deeper mathematical foundation 📐 for convex analysis)  

@@ -10,7 +10,7 @@ Channel: UC Berkeley EECS
 tags:
 youtube: https://www.youtube.com/embed/hhiLw5Q_UFg
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md)  
 # 🤖🧑‍💻📈🚧 John Schulman - Reinforcement Learning from Human Feedback: Progress and Challenges  
 ![John Schulman - Reinforcement Learning from Human Feedback: Progress and Challenges](https://www.youtube.com/embed/hhiLw5Q_UFg)  
   
@@ -34,8 +34,8 @@ This 🗣️ seminar provides a deep dive into the technical challenges of achie
 To further understand these concepts, it would be beneficial to explore alternative approaches to mitigating hallucination in large language models that do not rely on RLHF. Additionally, investigating the ethical implications of training models to express uncertainty, particularly in high-stakes applications, could provide a more comprehensive understanding. Finally, delving into the specifics of "scalable oversight" and methods for optimizing for "actual truth" beyond human approval would be crucial for future advancements in this field.  
   
 ## 📚 Book Recommendations  
-* [🤖➕🧠➡️ Reinforcement Learning: An Introduction](../books/reinforcement-learning-an-introduction.md) by Richard S. Sutton and Andrew G. Barto: A foundational text for understanding the principles of reinforcement learning.  
-* [🧠💻🤖 Deep Learning](../books/deep-learning.md) by Ian Goodfellow, Yoshua Bengio, and Aaron Courville: Provides a comprehensive overview of deep learning, including neural networks and their applications.  
+* [🤖➕🧠➡️ Reinforcement Learning: An Introduction](/content/books/reinforcement-learning-an-introduction.md) by Richard S. Sutton and Andrew G. Barto: A foundational text for understanding the principles of reinforcement learning.  
+* [🧠💻🤖 Deep Learning](/content/books/deep-learning.md) by Ian Goodfellow, Yoshua Bengio, and Aaron Courville: Provides a comprehensive overview of deep learning, including neural networks and their applications.  
 * The Master Algorithm by Pedro Domingos: Explores various machine learning paradigms and how they contribute to a universal learning algorithm.  
-* [🤔🐇🐢 Thinking, Fast and Slow](../books/thinking-fast-and-slow.md) by Daniel Kahneman: While not directly about AI, this book on human cognition offers insights into biases and decision-making that can be relevant to understanding how AI models might "think" or "reason."  
-* [🤖⚠️📈 Superintelligence: Paths, Dangers, Strategies](../books/superintelligence-paths-dangers-strategies.md) by Nick Bostrom: Discusses the potential future of AI, including challenges related to control and alignment, which touches upon the "optimizing for actual truth" problem.
+* [🤔🐇🐢 Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md) by Daniel Kahneman: While not directly about AI, this book on human cognition offers insights into biases and decision-making that can be relevant to understanding how AI models might "think" or "reason."  
+* [🤖⚠️📈 Superintelligence: Paths, Dangers, Strategies](/content/books/superintelligence-paths-dangers-strategies.md) by Nick Bostrom: Discusses the potential future of AI, including challenges related to control and alignment, which touches upon the "optimizing for actual truth" problem.

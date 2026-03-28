@@ -10,7 +10,7 @@ Channel: AI Engineer
 tags:
 youtube: https://youtu.be/JvosMkuNxF8
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md)  
 # 🤖📈 💯📊 👩‍💻👨‍💻 Can you prove AI ROI in Software Eng? (Stanford 120k Devs Study) – Yegor Denisov-Blanch, Stanford  
 ![Can you prove AI ROI in Software Eng? (Stanford 120k Devs Study) – Yegor Denisov-Blanch, Stanford](https://youtu.be/JvosMkuNxF8)  
   
@@ -50,17 +50,17 @@ youtube: https://youtu.be/JvosMkuNxF8
   
 ## 📚 Book Recommendations  
 ### ↔️ Similar  
-* [🏎️💾 Accelerate: The Science of Lean Software and DevOps: Building and Scaling High Performing Technology Organizations](../books/accelerate.md) by Nicole Forsgren, Jez Humble, and Gene Kim. This book establishes the DORA metrics and emphasizes that deployment frequency and stability are the best predictors of organizational performance.  
-* [🧑‍🤝‍🧑⚙️➡️ Team Topologies: Organizing Business and Technology Teams for Fast Flow](../books/team-topologies-organizing-business-and-technology-teams-for-fast-flow.md) by Matthew Skelton and Manuel Pais. It discusses organizing teams for rapid, sustainable flow of software delivery, relating to managing bottlenecks in the engineering system.  
+* [🏎️💾 Accelerate: The Science of Lean Software and DevOps: Building and Scaling High Performing Technology Organizations](/content/books/accelerate.md) by Nicole Forsgren, Jez Humble, and Gene Kim. This book establishes the DORA metrics and emphasizes that deployment frequency and stability are the best predictors of organizational performance.  
+* [🧑‍🤝‍🧑⚙️➡️ Team Topologies: Organizing Business and Technology Teams for Fast Flow](/content/books/team-topologies-organizing-business-and-technology-teams-for-fast-flow.md) by Matthew Skelton and Manuel Pais. It discusses organizing teams for rapid, sustainable flow of software delivery, relating to managing bottlenecks in the engineering system.  
 * 🤖 The AI-Powered Company: How to Use Artificial Intelligence to Attract and Retain Customers by Dave Blakely and Mark Johnson. This book provides a business-centric view on how companies should structure themselves and their processes to adopt AI effectively.  
   
 ### 🆚 Contrasting  
-* [🦄👤🗓️ The Mythical Man-Month: Essays on Software Engineering](../books/the-mythical-man-month.md) by Frederick Brooks Jr. This classic book emphasizes the inherent complexity of software projects and the challenges of scaling in a pre-AI world.  
-* [🤿💼 Deep Work: Rules for Focused Success in a Distracted World](../books/deep-work.md) by Cal Newport. This book contrasts with the high-velocity, multi-stream environment AI creates, arguing for the value of long periods of focused concentration on cognitively demanding tasks.  
-* [✅💻 Code Complete](../books/code-complete.md): A Practical Handbook of Software Construction by Steve McConnell. This reference provides detailed instruction on software construction practices, offering a baseline of best practices against which to contrast the risks of AI-driven quality degradation.  
+* [🦄👤🗓️ The Mythical Man-Month: Essays on Software Engineering](/content/books/the-mythical-man-month.md) by Frederick Brooks Jr. This classic book emphasizes the inherent complexity of software projects and the challenges of scaling in a pre-AI world.  
+* [🤿💼 Deep Work: Rules for Focused Success in a Distracted World](/content/books/deep-work.md) by Cal Newport. This book contrasts with the high-velocity, multi-stream environment AI creates, arguing for the value of long periods of focused concentration on cognitively demanding tasks.  
+* [✅💻 Code Complete](/content/books/code-complete.md): A Practical Handbook of Software Construction by Steve McConnell. This reference provides detailed instruction on software construction practices, offering a baseline of best practices against which to contrast the risks of AI-driven quality degradation.  
   
 ### 🎨 Creatively Related  
-- [🤖🏗️ AI Engineering: Building Applications with Foundation Models](../books/ai-engineering-building-applications-with-foundation-models.md)  
-* [🤔🐇🐢 Thinking, Fast and Slow](../books/thinking-fast-and-slow.md) by Daniel Kahneman. This book describes System 1 (fast, intuitive) and System 2 (slow, deliberate) thinking, creatively relating to how AI provides a powerful System 1 aid, but human System 2 review is essential for quality.  
-* [🔬🔄 The Structure of Scientific Revolutions](../books/the-structure-of-scientific-revolutions.md) by Thomas S. Kuhn. This book explores how fields undergo paradigm shifts, tangentially relating to the disruption AI brings and the need for new measurement frameworks.  
-* [📏🌌 How to Measure Anything: Finding the Value of Intangibles in Business](../books/how-to-measure-anything.md) by Douglas W. Hubbard. This is highly relevant as it focuses on the logic and methods for quantifying seemingly intangible concepts, similar to the video's attempt to measure Engineering Output.
+- [🤖🏗️ AI Engineering: Building Applications with Foundation Models](/content/books/ai-engineering-building-applications-with-foundation-models.md)  
+* [🤔🐇🐢 Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md) by Daniel Kahneman. This book describes System 1 (fast, intuitive) and System 2 (slow, deliberate) thinking, creatively relating to how AI provides a powerful System 1 aid, but human System 2 review is essential for quality.  
+* [🔬🔄 The Structure of Scientific Revolutions](/content/books/the-structure-of-scientific-revolutions.md) by Thomas S. Kuhn. This book explores how fields undergo paradigm shifts, tangentially relating to the disruption AI brings and the need for new measurement frameworks.  
+* [📏🌌 How to Measure Anything: Finding the Value of Intangibles in Business](/content/books/how-to-measure-anything.md) by Douglas W. Hubbard. This is highly relevant as it focuses on the logic and methods for quantifying seemingly intangible concepts, similar to the video's attempt to measure Engineering Output.

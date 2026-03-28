@@ -7,7 +7,7 @@ share: true
 affiliate link: https://amzn.to/4lCwLAz
 CTA: See the unseen.
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🚫📄🇺🇸 The Undocumented Americans  
 [🛒 The Undocumented Americans. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4lCwLAz)  
   
@@ -60,5 +60,5 @@ CTA: See the unseen.
 * ***Caramelo*** 🍭 by Sandra Cisneros: A multi-generational novel about a Mexican American family 👨‍👩‍👧‍👦, exploring themes of family history 📜, identity 🎭, and cultural heritage with a blend of humor 😂 and pathos 😭. Connects through themes of family, heritage, and the Mexican American experience, using fiction.  
 * ***Of Women and Salt*** 👩‍👩‍👧‍👧 by Gabriela Garcia: A multi-generational story of Cuban women 🇨🇺 connected across time and place by displacement 🌍, abuse 💔, and resilience 💪. Shares themes of migration, trauma, and the strength of women across generations.  
   
-## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
+## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on The Undocumented Americans. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

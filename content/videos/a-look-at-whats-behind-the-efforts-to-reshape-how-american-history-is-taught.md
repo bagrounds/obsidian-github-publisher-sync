@@ -10,7 +10,7 @@ Channel: PBS NewsHour
 tags:
 youtube: https://youtu.be/QZgM_o0hYfY
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md)  
 # 🇺🇸📚🔄 A look at what's behind the efforts to reshape how American history is taught  
 ![A look at what's behind the efforts to reshape how American history is taught](https://youtu.be/QZgM_o0hYfY)  
   

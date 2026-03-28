@@ -10,7 +10,7 @@ Channel: PBS NewsHour
 tags:
 youtube: https://youtu.be/X7xxl9GgrkQ
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md)  
 # 🏛️⚖️🌍 A look rulings from the Supreme Court term that could have far-reaching consequences  
 ![A look rulings from the Supreme Court term that could have far-reaching consequences](https://youtu.be/X7xxl9GgrkQ)  
   
@@ -38,12 +38,12 @@ youtube: https://youtu.be/X7xxl9GgrkQ
 * 📖 "Originalism and the Living Constitution" by Jack M. Balkin: While not solely about Barrett, this book delves into the debates between originalism (a judicial philosophy often associated with conservative justices like Barrett) and living constitutionalism, providing broader context for understanding her judicial approach.  
   
 **⚔️ For culture war cases and the intersection of law and social issues**  
-* [🇺🇸🏛️🚫📜⚖️ Lawless: How the Supreme Court Runs on Conservative Grievance, Fringe Theories, and Bad Vibes](../books/lawless-how-the-supreme-court-runs-on-conservative-grievance-fringe-theories-and-bad-vibes.md) by Leah Litman: This recent book examines the current Supreme Court's approach to various issues, including those related to the "culture war," from a critical perspective.  
+* [🇺🇸🏛️🚫📜⚖️ Lawless: How the Supreme Court Runs on Conservative Grievance, Fringe Theories, and Bad Vibes](/content/books/lawless-how-the-supreme-court-runs-on-conservative-grievance-fringe-theories-and-bad-vibes.md) by Leah Litman: This recent book examines the current Supreme Court's approach to various issues, including those related to the "culture war," from a critical perspective.  
 * 📖 "Supreme Chaos: The Politics of Judicial Confirmation & the Culture War" by Charles Willis Pickering: Explores how cultural issues and political polarization have increasingly shaped the judicial confirmation process and, by extension, the composition and decisions of the Supreme Court.  
 * 📖 "Divided by God: America's Church-State Problem--And What We Should Do About It" by Noah Feldman: Relevant for understanding the historical and ongoing tensions around religious freedom and church-state separation that often feature in culture war cases.  
 * 📖 "Culture Wars: The Struggle to Define America" by James Davison Hunter: A classic sociological analysis of the cultural divisions in American society, many of which find their way into legal and judicial debates.  
   
 **😠 For threats against judges and the judiciary's integrity**  
 * 📖 "Judges Under Siege: Threats, Disinformation, and the Decline of Public Trust in the Judiciary" (an article/collection of essays often found in legal journals like _Judicature_): This topic is frequently addressed in scholarly articles and symposia rather than standalone books. However, collecting such essays or exploring journals like _Judicature_ or the _Duke Law Journal's_ Bolch Judicial Institute publications would be beneficial.  
-* [🏛️⚖️ The Rule of Law](../books/the-rule-of-law.md) by Tom Bingham: A foundational text on the importance of the rule of law and an independent judiciary, providing context for why threats to judges undermine democratic principles.  
+* [🏛️⚖️ The Rule of Law](/content/books/the-rule-of-law.md) by Tom Bingham: A foundational text on the importance of the rule of law and an independent judiciary, providing context for why threats to judges undermine democratic principles.  
 * 📖 "How Judges Think" by Richard A. Posner: While not specifically about threats, this book explores the practicalities and challenges of judicial decision-making, which can indirectly touch upon the pressures and external factors judges face.

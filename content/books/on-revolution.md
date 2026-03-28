@@ -7,7 +7,7 @@ share: true
 CTA: 🔥 Kindle change.
 affiliate link: https://amzn.to/45qFakd
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🔄 On Revolution  
 [🛒 On Revolution. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/45qFakd)  
   
@@ -41,10 +41,10 @@ affiliate link: https://amzn.to/45qFakd
   
 ### 📖 Similar Works: Echoes of Arendt's Thought  
   
-* **[👹 The Origins of Totalitarianism](./the-origins-of-totalitarianism.md)** by Hannah Arendt: 🚧 Arendt's earlier masterpiece provides the theoretical groundwork for many of the ideas in *On Revolution*, exploring the rise of totalitarianism in the 20th century.  
+* **[👹 The Origins of Totalitarianism](/content/books/the-origins-of-totalitarianism.md)** by Hannah Arendt: 🚧 Arendt's earlier masterpiece provides the theoretical groundwork for many of the ideas in *On Revolution*, exploring the rise of totalitarianism in the 20th century.  
 * 📖 **The Human Condition** by Hannah Arendt: 🧑‍🤝‍🧑 This work further elaborates on Arendt's concepts of labor, work, and action, which are central to her understanding of political life.  
-* **[🇺🇸📜 The Federalist Papers](./the-federalist-papers.md)** by Alexander Hamilton, James Madison, and John Jay: 🇺🇸 To understand Arendt's admiration for the American founding, one must engage with the founders' own arguments for the new constitution.  
-* **[🗳️🕊️🇺🇸 Democracy in America](./democracy-in-america.md)** by Alexis de Tocqueville: 🇺🇸 Tocqueville's classic analysis of American democracy provides a rich historical and sociological context for Arendt's philosophical reflections.  
+* **[🇺🇸📜 The Federalist Papers](/content/books/the-federalist-papers.md)** by Alexander Hamilton, James Madison, and John Jay: 🇺🇸 To understand Arendt's admiration for the American founding, one must engage with the founders' own arguments for the new constitution.  
+* **[🗳️🕊️🇺🇸 Democracy in America](/content/books/democracy-in-america.md)** by Alexis de Tocqueville: 🇺🇸 Tocqueville's classic analysis of American democracy provides a rich historical and sociological context for Arendt's philosophical reflections.  
   
 ### ⚖️ Contrasting Perspectives: Challenging Arendt's Thesis  
   
@@ -69,5 +69,5 @@ affiliate link: https://amzn.to/45qFakd
 * 📖 **A Place of Greater Safety** by Hilary Mantel: 🏘️ A deeply researched and immersive novel that follows the lives of three of the key figures of the French Revolution: Danton, Robespierre, and Desmoulins.  
 * 📖 **The Glass-Blowers** by Daphne du Maurier: 🏺 This novel explores the impact of the revolution on a family of artisans.  
   
-## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro)  
+## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-pro)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on On Revolution. Never put book titles in quotes or italics. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

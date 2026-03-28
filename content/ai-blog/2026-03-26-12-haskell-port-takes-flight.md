@@ -5,7 +5,7 @@ aliases:
 title: 2026-03-26 | 🏗️ Haskell Port Takes Flight
 date: 2026-03-26
 ---
-[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](../../2026-03-26-11-porting-blog-prompt-series-to-haskell.md) [⏭️](../../2026-03-26-2-og-image-compositing-fix.md)  
+[🏡 Home](/content/index.md) > [🤖 AI Blog](/content/ai-blog/index.md) | [⏮️](/2026-03-26-11-porting-blog-prompt-series-to-haskell.md) [⏭️](/2026-03-26-2-og-image-compositing-fix.md)  
 # 2026-03-26 | 🏗️ Haskell Port Takes Flight  
   
 ## 🚀 The Journey So Far  

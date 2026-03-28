@@ -7,7 +7,7 @@ share: true
 affiliate link: https://amzn.to/4hsse2B
 CTA: ⚠️ Confront insecurity.
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🏚️⚠️ The Precariat: The New Dangerous Class  
 [🛒 The Precariat: The New Dangerous Class. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4hsse2B)  
   
@@ -79,9 +79,9 @@ CTA: ⚠️ Confront insecurity.
   
 ### Similar Books  
 * A Precariat Charter: From Denizens to Citizens by Guy Standing  
-* [💩💼 Bullshit Jobs: A Theory](./bullshit-jobs-a-theory.md) by David Graeber  
+* [💩💼 Bullshit Jobs: A Theory](/content/books/bullshit-jobs-a-theory.md) by David Graeber  
 * Automation and the Future of Work by Aaron Benanav  
-* [🤖📝😇 The Utopia of Rules: On Technology, Stupidity, and the Secret Joys of Bureaucracy](./the-utopia-of-rules-on-technology-stupidity-and-the-secret-joys-of-bureaucracy.md) by David Graeber  
+* [🤖📝😇 The Utopia of Rules: On Technology, Stupidity, and the Secret Joys of Bureaucracy](/content/books/the-utopia-of-rules-on-technology-stupidity-and-the-secret-joys-of-bureaucracy.md) by David Graeber  
   
 ### Contrasting Books  
 * The End of Work by Jeremy Rifkin  
@@ -89,9 +89,9 @@ CTA: ⚠️ Confront insecurity.
 * The Experience Economy by B. Joseph Pine II and James H. Gilmore  
   
 ### Related Books  
-* [💰📈🌍⏳ Capital in the Twenty-First Century](./capital-in-the-twenty-first-century.md) by Thomas Piketty  
+* [💰📈🌍⏳ Capital in the Twenty-First Century](/content/books/capital-in-the-twenty-first-century.md) by Thomas Piketty  
 * The Shock Doctrine: The Rise of Disaster Capitalism by Naomi Klein  
-* [📜🌍⏳ Sapiens: A Brief History of Humankind](./sapiens-a-brief-history-of-humankind.md) by Yuval Noah Harari  
+* [📜🌍⏳ Sapiens: A Brief History of Humankind](/content/books/sapiens-a-brief-history-of-humankind.md) by Yuval Noah Harari  
 * The Globalization Paradox: Democracy and the Future of the World Economy by Dani Rodrik  
   
 ## 🫵 What Do You Think?  

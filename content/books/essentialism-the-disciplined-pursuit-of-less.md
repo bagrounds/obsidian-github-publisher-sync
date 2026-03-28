@@ -10,7 +10,7 @@ force_analyze_links: false
 link_analysis_time: 2026-03-22T23:37:01.706Z
 link_analysis_model: gemini-3.1-flash-lite-preview
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # ➖💯 Essentialism: The Disciplined Pursuit of Less  
 [🛒 Essentialism: The Disciplined Pursuit of Less. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4q8rVOm)  
   
@@ -37,15 +37,15 @@ link_analysis_model: gemini-3.1-flash-lite-preview
   
 ### 🤝 Similar Books  
   
-* **[🤿💼 Deep Work: Rules for Focused Success in a Distracted World](./deep-work.md) by Cal Newport:** Explores the importance of focused, uninterrupted work for producing high-quality results, a natural complement to Essentialism's focus on the vital few. 💯  
+* **[🤿💼 Deep Work: Rules for Focused Success in a Distracted World](/content/books/deep-work.md) by Cal Newport:** Explores the importance of focused, uninterrupted work for producing high-quality results, a natural complement to Essentialism's focus on the vital few. 💯  
 * 🎯 **The ONE Thing: The Surprisingly Simple Truth Behind Extraordinary Results by Gary Keller:** Argues for focusing on the single most important thing in any given area to achieve significant results, echoing the idea of identifying the essential. 🔑  
-* **[📱⬇️🧘 Digital Minimalism: Choosing a Focused Life in a Noisy World](./digital-minimalism-choosing-a-focused-life-in-a-noisy-world.md) by Cal Newport:** Applies the principles of minimalism to our relationship with technology, helping to eliminate digital distractions that hinder focus on essential activities. 🚫  
+* **[📱⬇️🧘 Digital Minimalism: Choosing a Focused Life in a Noisy World](/content/books/digital-minimalism-choosing-a-focused-life-in-a-noisy-world.md) by Cal Newport:** Applies the principles of minimalism to our relationship with technology, helping to eliminate digital distractions that hinder focus on essential activities. 🚫  
 * 😌 **Effortless: Make It Easier to Do What Matters Most by Greg McKeown:** McKeown's follow-up book, focusing on making the execution of essential tasks simpler and less taxing. ⚙️  
 * 🧹 **The Life-Changing Magic of Tidying Up by Marie Kondo:** While focused on physical decluttering, its emphasis on keeping only what "sparks joy" aligns with the Essentialist principle of identifying and keeping only what is truly valuable. ✨  
   
 ### 🆚 Contrasting Books  
   
-* **[✅😌 Getting Things Done: The Art of Stress-Free Productivity](./getting-things-done-the-art-of-stress-free-productivity.md) by David Allen:** A comprehensive system for organizing tasks and workflows to increase productivity. While valuable for managing commitments, it focuses more on managing *all* the things that command our attention, rather than ruthlessly eliminating non-essentials. 🚫  
+* **[✅😌 Getting Things Done: The Art of Stress-Free Productivity](/content/books/getting-things-done-the-art-of-stress-free-productivity.md) by David Allen:** A comprehensive system for organizing tasks and workflows to increase productivity. While valuable for managing commitments, it focuses more on managing *all* the things that command our attention, rather than ruthlessly eliminating non-essentials. 🚫  
 * 🌴 **The 4-Hour Workweek by Timothy Ferriss:** Promotes lifestyle design and maximizing efficiency to work less while earning more. While it shares a desire for more freedom and less unnecessary work, its focus on automation and outsourcing differs from Essentialism's emphasis on disciplined focus and contribution. 🤖  
   
 ### ✨ Creatively Related Books  
@@ -56,5 +56,5 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 * 🕊️ **Reset: Living a Grace-Paced Life in a Burnout Culture by David Murray:** Addresses the issue of burnout and advocates for a more sustainable pace of life and work, aligning with Essentialism's goal of reducing feeling overworked and underutilized. 😌  
 * 🧭 **The Almanack of Naval Ravikant: A Guide to Wealth and Happiness by Eric Jorgenson:** A collection of wisdom on building wealth and finding happiness, with principles that often align with intentional living and focusing on long-term value, concepts relevant to Essentialist thinking. 🧠  
   
-## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
+## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Essentialism: The Disciplined Pursuit of Less. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

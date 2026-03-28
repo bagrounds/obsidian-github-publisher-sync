@@ -11,7 +11,7 @@ tags:
   - AIEngineering
 youtube: https://youtu.be/D0cG4GLuzgM
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md)  
 # 👨‍💻➡️🤖🧩 Beyond the IDE: Toward Multi-Agent Orchestration  
 ![Beyond the IDE: Toward Multi-Agent Orchestration](https://youtu.be/D0cG4GLuzgM)  
   
@@ -82,19 +82,19 @@ youtube: https://youtu.be/D0cG4GLuzgM
   
 ### ↔️ Similar  
   
-- [🤖💻 Vibe Coding: Building Production-Grade Software With GenAI, Chat, Agents, and Beyond](../books/vibe-coding-building-production-grade-software-with-genai-chat-agents-and-beyond.md)  
-* [🐦‍🔥💻 The Phoenix Project](../books/the-phoenix-project.md): A Novel About IT, DevOps, and Helping Your Business Win by Gene Kim, Kevin Behr, and George Spafford. 🤝 The book provides the foundational DevOps and workflow principles that are essential for understanding the shift to automated, high-velocity, agentic coding systems.  
-* [🧑‍🤝‍🧑⚙️➡️ Team Topologies: Organizing Business and Technology Teams for Fast Flow](../books/team-topologies-organizing-business-and-technology-teams-for-fast-flow.md) by Matthew Skelton and Manuel Pais. 🧑‍💻 Offers practical models for structuring human and system teams to maximize flow, highly relevant to designing the roles and interactions for a swarm of AI agents.  
+- [🤖💻 Vibe Coding: Building Production-Grade Software With GenAI, Chat, Agents, and Beyond](/content/books/vibe-coding-building-production-grade-software-with-genai-chat-agents-and-beyond.md)  
+* [🐦‍🔥💻 The Phoenix Project](/content/books/the-phoenix-project.md): A Novel About IT, DevOps, and Helping Your Business Win by Gene Kim, Kevin Behr, and George Spafford. 🤝 The book provides the foundational DevOps and workflow principles that are essential for understanding the shift to automated, high-velocity, agentic coding systems.  
+* [🧑‍🤝‍🧑⚙️➡️ Team Topologies: Organizing Business and Technology Teams for Fast Flow](/content/books/team-topologies-organizing-business-and-technology-teams-for-fast-flow.md) by Matthew Skelton and Manuel Pais. 🧑‍💻 Offers practical models for structuring human and system teams to maximize flow, highly relevant to designing the roles and interactions for a swarm of AI agents.  
   
 ### 🆚 Contrasting  
   
-* [🦄👤🗓️ The Mythical Man-Month: Essays on Software Engineering](../books/the-mythical-man-month.md) by Frederick Brooks Jr. 🛑 A timeless classic that contrasts the optimistic view of technology with the fundamental complexity of large software projects and the challenge of human communication and task division.  
-* [🧼💾 Clean Code: A Handbook of Agile Software Craftsmanship](../books/clean-code.md) by Robert C. Martin. ✨ Focuses on the principles of writing human-readable, well-structured code, which is critical for human developers who must review and maintain the output of potentially sloppy, lie-cheat-steal AI agents.  
+* [🦄👤🗓️ The Mythical Man-Month: Essays on Software Engineering](/content/books/the-mythical-man-month.md) by Frederick Brooks Jr. 🛑 A timeless classic that contrasts the optimistic view of technology with the fundamental complexity of large software projects and the challenge of human communication and task division.  
+* [🧼💾 Clean Code: A Handbook of Agile Software Craftsmanship](/content/books/clean-code.md) by Robert C. Martin. ✨ Focuses on the principles of writing human-readable, well-structured code, which is critical for human developers who must review and maintain the output of potentially sloppy, lie-cheat-steal AI agents.  
   
 ### 🎨 Creatively Related  
   
-* [📈⚙️♾️ The Goal: A Process of Ongoing Improvement](../books/the-goal.md) by Eliyahu M. Goldratt and Jeff Cox. 🎯 A business novel that explains the Theory of Constraints, which helps identify and manage the system's single largest bottleneck, directly applying to the speaker's claim that the bottleneck shifts from coding to merging.  
-* [🌊🧘🏼‍♀️🧠📈 Flow: The Psychology of Optimal Experience](../books/flow-the-psychology-of-optimal-experience.md) by Mihaly Csikszentmihalyi. 🧘 Explores the mental state of deep immersion and enjoyment in a process, relating to the speaker's rediscovery of the joy of coding when the repetitive work is abstracted away by AI.  
+* [📈⚙️♾️ The Goal: A Process of Ongoing Improvement](/content/books/the-goal.md) by Eliyahu M. Goldratt and Jeff Cox. 🎯 A business novel that explains the Theory of Constraints, which helps identify and manage the system's single largest bottleneck, directly applying to the speaker's claim that the bottleneck shifts from coding to merging.  
+* [🌊🧘🏼‍♀️🧠📈 Flow: The Psychology of Optimal Experience](/content/books/flow-the-psychology-of-optimal-experience.md) by Mihaly Csikszentmihalyi. 🧘 Explores the mental state of deep immersion and enjoyment in a process, relating to the speaker's rediscovery of the joy of coding when the repetitive work is abstracted away by AI.  
   
 ## 🐦 Tweet  
 <blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">👨‍💻➡️🤖🧩 Beyond the IDE: Toward Multi-Agent Orchestration<br><br>💻 AI Coding | 📈 Productivity Boost | 🚧 Agent Challenges | 🗺️ Monolith Solutions | 💥 Merging Bottleneck | 🏗️ Agent Orchestration | ❓ FAQ | 📚 Book Recommendations<a href="https://t.co/xIwpBUPDtV">https://t.co/xIwpBUPDtV</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/1983694916258812211?ref_src=twsrc%5Etfw">October 30, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

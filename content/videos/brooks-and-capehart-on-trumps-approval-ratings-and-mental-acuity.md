@@ -10,7 +10,7 @@ Channel: PBS NewsHour
 tags:
 youtube: https://youtu.be/6jyoTr-M8Ak
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md)  
 # 📣📊🧠 Brooks and Capehart on Trump's approval ratings and mental acuity  
 ![Brooks and Capehart on Trump's approval ratings and mental acuity](https://youtu.be/6jyoTr-M8Ak)  
   
@@ -54,7 +54,7 @@ youtube: https://youtu.be/6jyoTr-M8Ak
 ### ↔️ Similar  
   
 * 👤 Disloyal by Michael Cohen. 📖 A detailed look at the 🧠 personality and 🏗️ power dynamics within the ⚪ White House.  
-* [👑🚫📜2️⃣0️⃣ On Tyranny: Twenty Lessons from the Twentieth Century](../books/on-tyranny.md) by Timothy Snyder. 📖 Lessons from history on 🚩 authoritarianism and the 🏢 erosion of institutions.  
+* [👑🚫📜2️⃣0️⃣ On Tyranny: Twenty Lessons from the Twentieth Century](/content/books/on-tyranny.md) by Timothy Snyder. 📖 Lessons from history on 🚩 authoritarianism and the 🏢 erosion of institutions.  
   
 ### 🆚 Contrasting  
   

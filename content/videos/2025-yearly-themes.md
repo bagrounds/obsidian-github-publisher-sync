@@ -9,7 +9,7 @@ Platform: "#YouTube"
 Channel:
 tags:
 ---
-[Home](../index.md) > [Videos](./index.md) | [⏮️ This Journal Keeps Me Productive (& Maybe You Too)](./this-journal-keeps-me-productive-and-maybe-you-too.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md) | [⏮️ This Journal Keeps Me Productive (& Maybe You Too)](/content/videos/this-journal-keeps-me-productive-and-maybe-you-too.md)  
 # 🗓️🎯📈💡 2025 Yearly Themes  
 ![2025 Yearly Themes](https://youtu.be/ikXyZ-_L-NA)  
   

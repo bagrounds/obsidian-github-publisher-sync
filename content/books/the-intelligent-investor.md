@@ -8,7 +8,7 @@ Author:
 tags:
 affiliate link: https://amzn.to/4mM0qbY
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🧠📈💰 The Intelligent Investor: The Definitive Book on Value Investing  
 [🛒 The Intelligent Investor: The Definitive Book on Value Investing. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4mM0qbY)  
   
@@ -58,7 +58,7 @@ Graham's focus on the "Mr. Market" analogy—treating the stock market as a some
 #### Additional Book Recommendations 📚  
   
 * **Best Alternate Book on the Same Topic:** "Security Analysis" by Benjamin Graham and David Dodd. (More in depth analysis) 📈📚  
-* **Best Tangentially Related Book:** "[Thinking, Fast and Slow](./thinking-fast-and-slow.md)" by Daniel Kahneman. (Behavioral economics and decision-making) 🧠📚  
+* **Best Tangentially Related Book:** "[Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md)" by Daniel Kahneman. (Behavioral economics and decision-making) 🧠📚  
 * **Best Diametrically Opposed Book:** "A Random Walk Down Wall Street" by Burton Malkiel. (Efficient market hypothesis) 🚶‍♂️📉📚  
 * **Best Fiction Book Incorporating Related Ideas:** "The Big Short" by Michael Lewis. (Financial market insights) 📉📚🎬  
 * **Best More General Book:** "Rich Dad Poor Dad" by Robert Kiyosaki. (General financial literacy) 💰📚  

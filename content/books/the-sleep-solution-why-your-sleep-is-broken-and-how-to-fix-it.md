@@ -6,7 +6,7 @@ URL: https://bagrounds.org/books/the-sleep-solution-why-your-sleep-is-broken-and
 share: true
 affiliate link: https://amzn.to/4kJRnGq
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 😴🛠️ The Sleep Solution: Why Your Sleep is Broken and How to Fix It  
 [🛒 The Sleep Solution: Why Your Sleep is Broken and How to Fix It. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4kJRnGq)  
   
@@ -53,7 +53,7 @@ affiliate link: https://amzn.to/4kJRnGq
   
 ### 📖 Similar Books (Focus on Sleep Science & Solutions)  
   
-1. **[😴💭 Why We Sleep: Unlocking the Power of Sleep and Dreams](./why-we-sleep-unlocking-the-power-of-sleep-and-dreams.md)** by Matthew Walker, PhD  
+1. **[😴💭 Why We Sleep: Unlocking the Power of Sleep and Dreams](/content/books/why-we-sleep-unlocking-the-power-of-sleep-and-dreams.md)** by Matthew Walker, PhD  
     * 🔬 *Focus:* Deep dive into the science of sleep and dreaming, emphasizing the critical importance of sleep for physical and mental health, memory, learning, and longevity.  
     * 💡 *Why Read It:* Offers compelling, research-backed arguments for prioritizing sleep. Walker is a leading sleep scientist. ⚠️ Note: Some critique it for occasionally overstating findings.  
 2. 💪 **Sleep Smarter: 21 Essential Strategies to Sleep Your Way to A Better Body, Better Health, and Bigger Success** by Shawn Stevenson  
@@ -86,7 +86,7 @@ affiliate link: https://amzn.to/4kJRnGq
   
 ### 🎨 Creatively Related Recommendations  
   
-1. **[⚛️🔄 Atomic Habits](./atomic-habits.md): An Easy & Proven Way to Build Good Habits & Break Bad Ones** by James Clear  
+1. **[⚛️🔄 Atomic Habits](/content/books/atomic-habits.md): An Easy & Proven Way to Build Good Habits & Break Bad Ones** by James Clear  
     * 🔗 *Relation:* Improving sleep often requires changing habits (consistent bedtime, sleep hygiene). 📖 This book provides a framework for building effective habits in any area of life.  
     * 🧠 *Why Read It:* Excellent for understanding the psychology of habit formation, applicable to implementing sleep strategies.  
 2. 🧭 **The Giant Compass: Navigating Your Life with Your Dreams** by Kelly Bulkeley, PhD (edited by Carlyle T. Smith)  
@@ -103,5 +103,5 @@ affiliate link: https://amzn.to/4kJRnGq
     * 🔗 *Relation:* Focuses on achieving inner well-being and balance through yogic practices, which can indirectly benefit sleep by reducing stress and enhancing self-awareness.  
     * 🕉️ *Why Read It:* For those interested in deeper spiritual or meditative practices that influence overall mental state and potentially sleep.  
   
-## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
+## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on The Sleep Solution: Why Your Sleep is Broken and How to Fix It. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

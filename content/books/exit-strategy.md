@@ -12,7 +12,7 @@ force_analyze_links: false
 link_analysis_time: 2026-03-25T09:19:36.766Z
 link_analysis_model: gemini-3.1-flash-lite-preview
 ---
-[Home](../index.md) > [Books](./index.md) | [⏮️ 🕵️‍♀️📜💻 Rogue Protocol](./rogue-protocol.md) [⏭️ 🌐🤖🚀 Network Effect](./network-effect.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md) | [⏮️ 🕵️‍♀️📜💻 Rogue Protocol](/content/books/rogue-protocol.md) [⏭️ 🌐🤖🚀 Network Effect](/content/books/network-effect.md)  
 # 🏃💨🚪 Exit Strategy  
 [🛒 Exit Strategy. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3ZJoDW9)  
   
@@ -52,17 +52,17 @@ A: 🤓 The approachable prose and focus on relatable social anxiety make Exit S
 ### 📖 Non-Fiction  
   
 * 🦾 A Citizen's Guide to Artificial Intelligence by John Zerilli  
-* [👁️‍🗨️💰⛓️👤 The Age of Surveillance Capitalism: The Fight for a Human Future at the New Frontier of Power](./the-age-of-surveillance-capitalism.md) by Shoshana Zuboff  
+* [👁️‍🗨️💰⛓️👤 The Age of Surveillance Capitalism: The Fight for a Human Future at the New Frontier of Power](/content/books/the-age-of-surveillance-capitalism.md) by Shoshana Zuboff  
   
 ### ❤️ If You Loved This  
   
 * 🚀 Ancillary Justice by Ann Leckie  
-* [➡️🌌🚀😡 A Long Way to a Small, Angry Planet](./a-long-way-to-a-small-angry-planet.md) by Becky Chambers  
+* [➡️🌌🚀😡 A Long Way to a Small, Angry Planet](/content/books/a-long-way-to-a-small-angry-planet.md) by Becky Chambers  
   
 ### ↔️ Similar But Different  
   
 * 🕵️ Altered Carbon by Richard K. Morgan  
-* [🕷️⏳ Children of Time](./children-of-time.md) by Adrian Tchaikovsky  
+* [🕷️⏳ Children of Time](/content/books/children-of-time.md) by Adrian Tchaikovsky  
   
 ## 🫵 What Do You Think?  
   

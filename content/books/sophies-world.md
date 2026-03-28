@@ -7,7 +7,7 @@ share: true
 CTA: 💡 Uncover wisdom.
 affiliate link: https://amzn.to/4bc7idt
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🤔🌍 Sophie’s World  
 [🛒 Sophie’s World. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4bc7idt)  
   
@@ -73,7 +73,7 @@ affiliate link: https://amzn.to/4bc7idt
 ## 📚 Book Recommendations  
   
 ### ✨ Similar  
-* [🏍️🧘❓ Zen and the Art of Motorcycle Maintenance: An Inquiry into Values](./zen-and-the-art-of-motorcycle-maintenance-an-inquiry-into-values.md) by Robert M. Pirsig (philosophical journey)  
+* [🏍️🧘❓ Zen and the Art of Motorcycle Maintenance: An Inquiry into Values](/content/books/zen-and-the-art-of-motorcycle-maintenance-an-inquiry-into-values.md) by Robert M. Pirsig (philosophical journey)  
 * 🏛️ The Republic by Plato (dialogue-based philosophy, foundational text)  
 * 👴 Thus Spoke Zarathustra by Friedrich Nietzsche (philosophical narrative)  
   
@@ -82,7 +82,7 @@ affiliate link: https://amzn.to/4bc7idt
 * 🧠 Critique of Pure Reason by Immanuel Kant (dense, rigorous primary text)  
   
 ### 🔗 Related  
-* [🗺️❤️📐 Flatland: A Romance of Many Dimensions](./flatland-a-romance-of-many-dimensions.md) by Edwin A. Abbott (explores dimensions, perception)  
+* [🗺️❤️📐 Flatland: A Romance of Many Dimensions](/content/books/flatland-a-romance-of-many-dimensions.md) by Edwin A. Abbott (explores dimensions, perception)  
 * 🥚 The Egg by Andy Weir (short story on existence, purpose)  
 * 🧚 The Phantom Tollbooth by Norton Juster (children's fantasy with wordplay and philosophical undertones)  
   

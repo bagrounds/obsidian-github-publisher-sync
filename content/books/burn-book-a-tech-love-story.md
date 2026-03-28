@@ -7,7 +7,7 @@ share: true
 CTA: 🔥 Expose deception.
 affiliate link: https://amzn.to/3WkxbAX
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 💔💻 Burn Book: A Tech Love Story  
 [🛒 Burn Book: A Tech Love Story. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3WkxbAX)  
   
@@ -93,7 +93,7 @@ affiliate link: https://amzn.to/3WkxbAX
 ### 🔗 Related Books  
 * 🧑‍🤝‍🧑 Cultures@SiliconValley by J. A. English-Lueck  
 * ⚔️ The New Class War: Saving Democracy from the Managerial Elite by Michael Lind  
-* [🏆🎭 Winners Take All: The Elite Charade of Changing the World](./winners-take-all-the-elite-charade-of-changing-the-world.md) by Anand Giridharadas  
+* [🏆🎭 Winners Take All: The Elite Charade of Changing the World](/content/books/winners-take-all-the-elite-charade-of-changing-the-world.md) by Anand Giridharadas  
   
 ## 🫵 🤔 What Do You Think?  
   

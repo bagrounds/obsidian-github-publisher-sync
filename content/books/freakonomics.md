@@ -9,7 +9,7 @@ tags:
 affiliate link: https://amzn.to/3Zf86tf
 CTA: 🧐 Question everything.
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🤓🕵️‍♂️❓ Freakonomics: A Rogue Economist Explores the Hidden Side of Everything  
 [🛒 Freakonomics: A Rogue Economist Explores the Hidden Side of Everything. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3Zf86tf)  
   
@@ -84,13 +84,13 @@ Incentives drive human behavior in surprising ways, and applying economic princi
 ### Additional Book Recommendations 📚  
   
 * **Best Alternate Book on the Same Topic:** *SuperFreakonomics* by Steven Levitt and Stephen Dubner. Continues the exploration of unconventional topics using economic analysis. 🤯  
-* **Best Book Tangentially Related:** [🤔🐇🐢 Thinking, Fast and Slow](./thinking-fast-and-slow.md) by Daniel Kahneman. Explores the cognitive biases that influence decision-making, complementing the book's discussions of incentives. 🧠  
-* **Best Book Diametrically Opposed:** [⚖️⬆️🤝 The Spirit Level: Why Greater Equality Makes Societies Stronger](./the-spirit-level-why-greater-equality-makes-societies-stronger.md) by Richard Wilkinson and Kate Pickett. Argues that social inequality, rather than individual incentives, is the primary driver of social problems. ⚖️  
-* **Best Fiction Book that Incorporates Related Ideas:** [📡🌫️🔮🎲 The Signal and the Noise: Why So Many Predictions Fail - but Some Don't](./the-signal-and-the-noise.md) by Nate Silver. Although non-fiction, the book's clear explanations of statistical forecasting, probability, and prediction incorporate related ideas. 🔮  
-* **Best Book That is More General:** [👉🤏 Nudge: Improving Decisions about Health, Wealth, and Happiness](./nudge.md) by Richard H. Thaler and Cass R. Sunstein. Focuses on how to design choices that "nudge" people towards better decisions. 👍  
+* **Best Book Tangentially Related:** [🤔🐇🐢 Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md) by Daniel Kahneman. Explores the cognitive biases that influence decision-making, complementing the book's discussions of incentives. 🧠  
+* **Best Book Diametrically Opposed:** [⚖️⬆️🤝 The Spirit Level: Why Greater Equality Makes Societies Stronger](/content/books/the-spirit-level-why-greater-equality-makes-societies-stronger.md) by Richard Wilkinson and Kate Pickett. Argues that social inequality, rather than individual incentives, is the primary driver of social problems. ⚖️  
+* **Best Fiction Book that Incorporates Related Ideas:** [📡🌫️🔮🎲 The Signal and the Noise: Why So Many Predictions Fail - but Some Don't](/content/books/the-signal-and-the-noise.md) by Nate Silver. Although non-fiction, the book's clear explanations of statistical forecasting, probability, and prediction incorporate related ideas. 🔮  
+* **Best Book That is More General:** [👉🤏 Nudge: Improving Decisions about Health, Wealth, and Happiness](/content/books/nudge.md) by Richard H. Thaler and Cass R. Sunstein. Focuses on how to design choices that "nudge" people towards better decisions. 👍  
 * **Best Book That is More Specific:** Any academic text on econometrics or behavioral economics. 📚  
 * **Best Book That is More Rigorous:** *Causal Inference: The Mixtape* by Scott Cunningham. Introduces students to the essential concepts of causal inference. 👨‍🏫  
-* **Best Book That is More Accessible:** [🎲🤔 Thinking in Bets: Making Smarter Decisions When You Don't Have All the Facts](./thinking-in-bets-making-smarter-decisions-when-you-dont-have-all-the-facts.md) by Annie Duke. Makes decision theory accessible to general audiences. 🎲  
+* **Best Book That is More Accessible:** [🎲🤔 Thinking in Bets: Making Smarter Decisions When You Don't Have All the Facts](/content/books/thinking-in-bets-making-smarter-decisions-when-you-dont-have-all-the-facts.md) by Annie Duke. Makes decision theory accessible to general audiences. 🎲  
   
 ## 💬 [Gemini](https://gemini.google.com) Prompt  
 > Summarize the book: Freakonomics. Start with a TL;DR - a single statement that conveys a maximum of the useful information provided in the book. Next, explain how this book may offer a new or surprising perspective. Follow this with a deep dive. Catalogue the topics, methods, and research discussed. Be sure to highlight any significant theories, theses, or mental models proposed. Summarize prominent examples discussed. Emphasize practical takeaways, including detailed, specific, concrete, step-by-step advice, guidance, or techniques discussed. Provide a critical analysis of the quality of the information presented, using scientific backing, author credentials, authoritative reviews, and other markers of high quality information as justification. Make the following additional book recommendations: the best alternate book on the same topic; the best book that is tangentially related; the best book that is diametrically opposed; the best fiction book that incorporates related ideas; the best book that is more general or more specific; and the best book that is more rigorous or more accessible than this book. Format your response as markdown, starting at heading level H3, with inline links, for easy copy paste. Use meaningful emojis generously (at least one per heading, bullet point, and paragraph) to enhance readability. Do not include broken links or links to commercial sites.

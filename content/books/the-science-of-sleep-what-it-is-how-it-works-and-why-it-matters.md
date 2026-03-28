@@ -7,7 +7,7 @@ share: true
 CTA: 😴 Understand rest deeply.
 affiliate link: https://amzn.to/3IVWuFW
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 😴🔬 The Science of Sleep: What It Is, How It Works, and Why It Matters  
 [🛒 The Science of Sleep: What It Is, How It Works, and Why It Matters. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3IVWuFW)  
   
@@ -31,7 +31,7 @@ affiliate link: https://amzn.to/3IVWuFW
   
 ### 📖 Similar Reads: For a Deeper Dive into Sleep Science  
   
-* **[😴💭 Why We Sleep: Unlocking the Power of Sleep and Dreams](./why-we-sleep-unlocking-the-power-of-sleep-and-dreams.md) by Matthew Walker:** 🧠 Often considered a landmark publication in the popular science of sleep, this book by a prominent neuroscientist makes a powerful case for the critical importance of sleep. Walker passionately details the devastating effects of sleep deprivation on every aspect of our health, from our physical well-being to our mental and emotional states. While both books cover similar ground, Walker's has been particularly influential in raising public awareness about the sleep epidemic.  
+* **[😴💭 Why We Sleep: Unlocking the Power of Sleep and Dreams](/content/books/why-we-sleep-unlocking-the-power-of-sleep-and-dreams.md) by Matthew Walker:** 🧠 Often considered a landmark publication in the popular science of sleep, this book by a prominent neuroscientist makes a powerful case for the critical importance of sleep. Walker passionately details the devastating effects of sleep deprivation on every aspect of our health, from our physical well-being to our mental and emotional states. While both books cover similar ground, Walker's has been particularly influential in raising public awareness about the sleep epidemic.  
 * 🔬 **"Sleep: A Very Short Introduction" by Steven W. Lockley and Russell G. Foster:** ⏱️ For readers seeking a concise yet comprehensive scientific overview, this book offers a condensed look at the biology of sleep, circadian rhythms, and the impact of light. It's an excellent choice for those who appreciate a direct and data-driven approach.  
 * 🎓 **"Sleep Science" by Hawley Montgomery-Downs:** 📑 This textbook provides a more academic and in-depth exploration of the field, with chapters written by various experts. It's ideal for those who wish to delve into the research methods and clinical practices of sleep medicine.  
   
@@ -43,9 +43,9 @@ affiliate link: https://amzn.to/3IVWuFW
   
 ### ✨ Creatively Related: The Power of Habit and Health  
   
-* **[⚛️🔄 Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones](./atomic-habits.md) by James Clear:** 🧠 Understanding the science of sleep is the first step; applying that knowledge is the next. Clear's immensely popular book provides a practical framework for building good habits (like a consistent sleep schedule) and breaking bad ones. His focus on making small, incremental changes can be a powerful tool for improving sleep hygiene.  
-* **[🔄🧠💪 The Power of Habit: Why We Do What We Do in Life and Business](./the-power-of-habit.md) by Charles Duhigg:** 🧠 This book delves into the neurology of habit formation. By understanding the "habit loop"—cue, routine, reward—readers can gain insight into their own behaviors and learn how to reshape them, a skill that is directly applicable to improving sleep patterns.  
-* **[👤📈🎯🌟🔑🤝🏆 The 7 Habits of Highly Effective People](./the-7-habits-of-highly-effective-people.md) by Stephen R. Covey:** 🏆 A classic in the realm of personal development, Covey's book offers timeless principles for living a more effective and fulfilling life. While not directly about sleep, the habits he describes, such as proactivity and beginning with the end in mind, can empower readers to take control of their health and prioritize restorative rest.  
+* **[⚛️🔄 Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones](/content/books/atomic-habits.md) by James Clear:** 🧠 Understanding the science of sleep is the first step; applying that knowledge is the next. Clear's immensely popular book provides a practical framework for building good habits (like a consistent sleep schedule) and breaking bad ones. His focus on making small, incremental changes can be a powerful tool for improving sleep hygiene.  
+* **[🔄🧠💪 The Power of Habit: Why We Do What We Do in Life and Business](/content/books/the-power-of-habit.md) by Charles Duhigg:** 🧠 This book delves into the neurology of habit formation. By understanding the "habit loop"—cue, routine, reward—readers can gain insight into their own behaviors and learn how to reshape them, a skill that is directly applicable to improving sleep patterns.  
+* **[👤📈🎯🌟🔑🤝🏆 The 7 Habits of Highly Effective People](/content/books/the-7-habits-of-highly-effective-people.md) by Stephen R. Covey:** 🏆 A classic in the realm of personal development, Covey's book offers timeless principles for living a more effective and fulfilling life. While not directly about sleep, the habits he describes, such as proactivity and beginning with the end in mind, can empower readers to take control of their health and prioritize restorative rest.  
   
-## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro)  
+## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-pro)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on The Science of Sleep: What It Is, How It Works, and Why It Matters. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

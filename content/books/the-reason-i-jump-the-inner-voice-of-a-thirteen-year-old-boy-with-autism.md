@@ -7,7 +7,7 @@ share: true
 affiliate link: https://amzn.to/46VRGtL
 CTA: 🧩 Understand autism.
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 👦🗣️ The Reason I Jump: The Inner Voice of a Thirteen-Year-Old Boy with Autism  
 [🛒 The Reason I Jump: The Inner Voice of a Thirteen-Year-Old Boy with Autism. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/46VRGtL)  
   

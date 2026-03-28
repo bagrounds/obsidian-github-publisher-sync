@@ -10,7 +10,7 @@ Channel: The Daily Show
 tags:
 youtube: https://youtu.be/JkELTJOj8aI
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md)  
 # 🍊🚫👯‍♀️🏛️ Trump Dodges Ghislaine Maxwell Pardon Q as Bondi Stonewalls Senate | The Daily Show  
 ![Trump Dodges Ghislaine Maxwell Pardon Q as Bondi Stonewalls Senate | The Daily Show](https://youtu.be/JkELTJOj8aI)  
   
@@ -59,12 +59,12 @@ A: 📅 Speaker Mike Johnson faced criticism for delaying the swearing-in of a n
   
 ### **Contrasting: Serious Investigative Journalism on Power and Corruption**  
   
-- [⚖️😈🔞 Perversion of Justice: The Jeffrey Epstein Story](../books/perversion-of-justice-the-jeffrey-epstein-story.md) by _Julie K. Brown_. 📑 Provides the essential investigative work on Epstein, which the video's political humor is based upon, offering a starkly serious, journalistic contrast.  
-- [💰💥📉 The Big Short: Inside the Doomsday Machine](../books/the-big-short-inside-the-doomsday-machine.md) by _Michael Lewis_. 💼 Although focused on finance, it exposes the complex systems, lack of regulation, and moral failures among the powerful elite, a theme that contrasts with the video's light tone but matches its thematic focus on corruption.  
-- [🔥💣💥😡🤬 Fire and Fury: Inside the Trump White House](../books/fire-and-fury-inside-the-trump-white-house.md) by _Michael Wolff_. 🗣️ Offers an insider's account of the Trump administration, providing a journalistic backdrop to the political figures and behaviors satirized in the segment.  
+- [⚖️😈🔞 Perversion of Justice: The Jeffrey Epstein Story](/content/books/perversion-of-justice-the-jeffrey-epstein-story.md) by _Julie K. Brown_. 📑 Provides the essential investigative work on Epstein, which the video's political humor is based upon, offering a starkly serious, journalistic contrast.  
+- [💰💥📉 The Big Short: Inside the Doomsday Machine](/content/books/the-big-short-inside-the-doomsday-machine.md) by _Michael Lewis_. 💼 Although focused on finance, it exposes the complex systems, lack of regulation, and moral failures among the powerful elite, a theme that contrasts with the video's light tone but matches its thematic focus on corruption.  
+- [🔥💣💥😡🤬 Fire and Fury: Inside the Trump White House](/content/books/fire-and-fury-inside-the-trump-white-house.md) by _Michael Wolff_. 🗣️ Offers an insider's account of the Trump administration, providing a journalistic backdrop to the political figures and behaviors satirized in the segment.  
   
 ### **Creatively Related: Dark Humor and Dystopian Bureaucracy**  
   
-- [🔁🤪 Catch-22](../books/catch-22.md) by _Joseph Heller_. 🤯 A seminal work of satirical fiction focusing on the absurdity and bureaucracy of a large organization (the military), mirroring the ridiculousness of the political stonewalling and evasiveness discussed in the video.  
+- [🔁🤪 Catch-22](/content/books/catch-22.md) by _Joseph Heller_. 🤯 A seminal work of satirical fiction focusing on the absurdity and bureaucracy of a large organization (the military), mirroring the ridiculousness of the political stonewalling and evasiveness discussed in the video.  
 - 🐷 Animal Farm by _George Orwell_. 🌍 An allegorical novella that uses animals to critique political corruption and how revolutionary ideals can be warped by power, creatively relating to the video's theme of political figures dodging accountability.  
 - 🚀 Slaughterhouse-Five by _Kurt Vonnegut_. 🌌 Uses dark humor, science fiction, and non-linear narrative to process trauma and the absurdity of conflict, aligning with the video's use of surreal satire (the shrimp/heaven joke) to cope with disturbing political realities.  

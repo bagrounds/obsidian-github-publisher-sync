@@ -6,7 +6,7 @@ URL: https://bagrounds.org/books/raising-good-humans-a-mindful-guide-to-breaking
 share: true
 affiliate link: https://amzn.to/44f8QjL
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🌱👼🏼 Raising Good Humans: A Mindful Guide to Breaking the Cycle of Reactive Parenting and Raising Kind, Confident Kids  
 [🛒 Raising Good Humans: A Mindful Guide to Breaking the Cycle of Reactive Parenting and Raising Kind, Confident Kids. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/44f8QjL)  
   
@@ -38,10 +38,10 @@ affiliate link: https://amzn.to/44f8QjL
 ### 👨‍👩‍👧‍👦 Similar Books (Mindful and Conscious Parenting)  
   
 * ☮️ **Peaceful Parent, Happy Kids: How to Stop Yelling and Start Connecting** by Dr. Laura Markham: Focuses on connecting with your child, coaching instead of controlling, and the importance of emotion coaching.  
-* **[🕳️🧠👶🏽 The Whole-Brain Child: 12 Revolutionary Strategies to Nurture Your Child's Developing Mind](./the-whole-brain-child.md)** by Daniel J. Siegel and Tina Payne Bryson: Explores the neuroscience behind children's behavior and provides strategies for fostering healthy emotional and intellectual development.  
-* **[🚫🎭🧠 No-Drama Discipline: The Whole-Brain Way to Calm the Chaos and Nurture Your Child's Developing Mind](./no-drama-discipline.md)** by Daniel J. Siegel and Tina Payne Bryson: Offers a compassionate and effective approach to discipline that focuses on connection and teaching.  
+* **[🕳️🧠👶🏽 The Whole-Brain Child: 12 Revolutionary Strategies to Nurture Your Child's Developing Mind](/content/books/the-whole-brain-child.md)** by Daniel J. Siegel and Tina Payne Bryson: Explores the neuroscience behind children's behavior and provides strategies for fostering healthy emotional and intellectual development.  
+* **[🚫🎭🧠 No-Drama Discipline: The Whole-Brain Way to Calm the Chaos and Nurture Your Child's Developing Mind](/content/books/no-drama-discipline.md)** by Daniel J. Siegel and Tina Payne Bryson: Offers a compassionate and effective approach to discipline that focuses on connection and teaching.  
 * ➕ **Positive Discipline** by Jane Nelsen: Introduces a non-punitive approach to discipline that emphasizes mutual respect and problem-solving.  
-* **[🤱🏼🤿🪞🌱 Parenting from the Inside Out: How a Deeper Self-Understanding Can Help You Raise Children Who Thrive](./parenting-from-the-inside-out-how-a-deeper-self-understanding-can-help-you-raise-children-who-thrive.md)** by Daniel J. Siegel and Mary Hartzell: Delves into how a parent's own upbringing and experiences impact their parenting style.  
+* **[🤱🏼🤿🪞🌱 Parenting from the Inside Out: How a Deeper Self-Understanding Can Help You Raise Children Who Thrive](/content/books/parenting-from-the-inside-out-how-a-deeper-self-understanding-can-help-you-raise-children-who-thrive.md)** by Daniel J. Siegel and Mary Hartzell: Delves into how a parent's own upbringing and experiences impact their parenting style.  
 * 🧘‍♀️ **The Awakened Family: How to Live with Ease, Joy, and Presence** by Dr. Shefali Tsabary: Advocates for conscious parenting, urging parents to let go of ego and connect with their children authentically.  
   
 ### 🆚 Contrasting Books (Perhaps More Traditional or Behaviorally Focused)  
@@ -52,15 +52,15 @@ affiliate link: https://amzn.to/44f8QjL
   
 ### ✨ Creatively Related Books (Mindfulness, Emotional Intelligence, Child Development from Different Angles)  
   
-* **[👣➡️🌍 Wherever You Go, There You Are](./wherever-you-go-there-you-are.md): Mindfulness Meditation in Everyday Life** by Jon Kabat-Zinn: A foundational book on mindfulness practices for general well-being.  
-* **[❤️🧠📈🤔 Emotional Intelligence: Why It Can Matter More Than IQ](./emotional-intelligence.md)** by Daniel Goleman: Explores the importance of understanding and managing one's own emotions and recognizing emotions in others.  
-* **[🕊️🤝 Nonviolent Communication: A Language of Life](./nonviolent-communication.md)** by Marshall B. Rosenberg: Introduces a framework for compassionate communication focused on needs and feelings.  
+* **[👣➡️🌍 Wherever You Go, There You Are](/content/books/wherever-you-go-there-you-are.md): Mindfulness Meditation in Everyday Life** by Jon Kabat-Zinn: A foundational book on mindfulness practices for general well-being.  
+* **[❤️🧠📈🤔 Emotional Intelligence: Why It Can Matter More Than IQ](/content/books/emotional-intelligence.md)** by Daniel Goleman: Explores the importance of understanding and managing one's own emotions and recognizing emotions in others.  
+* **[🕊️🤝 Nonviolent Communication: A Language of Life](/content/books/nonviolent-communication.md)** by Marshall B. Rosenberg: Introduces a framework for compassionate communication focused on needs and feelings.  
 * 🧬 **Epigenetics: How Environment Shapes Our Genes** by Nessa Carey: While not a parenting book, it offers a scientific perspective on how experiences and environment can impact genetic expression, highlighting the long-term impact of a child's environment.  
 * 🫂 **Hold On to Your Kids: Why Parents Need to Matter More Than Peers** by Gordon Neufeld and Gabor Maté: Discusses the importance of parental attachment and influence in a world where peer orientation is increasingly prevalent.  
 * 💖 **Self-Compassion: The Proven Power of Being Kind to Yourself** by Kristin Neff: Delves into the research and practice of self-compassion as a way to build emotional resilience.  
-* **[🌱🧘🏼‍♀️🏆 Mindset: The New Psychology of Success](./mindset.md)** by Carol S. Dweck: Explores the power of a growth mindset and how it can influence learning and resilience in both children and adults.  
+* **[🌱🧘🏼‍♀️🏆 Mindset: The New Psychology of Success](/content/books/mindset.md)** by Carol S. Dweck: Explores the power of a growth mindset and how it can influence learning and resilience in both children and adults.  
   
-## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
+## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Raising Good Humans: A Mindful Guide to Breaking the Cycle of Reactive Parenting and Raising Kind, Confident Kids. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.  
   
 ## 🐦 Tweet  

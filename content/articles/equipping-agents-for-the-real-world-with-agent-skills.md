@@ -7,7 +7,7 @@ URL: https://bagrounds.org/articles/equipping-agents-for-the-real-world-with-age
 Author:
 tags:
 ---
-[Home](../index.md) > [Articles](./index.md)  
+[Home](/content/index.md) > [Articles](/content/articles/index.md)  
 # 🧑‍🏫🌍🛠️📈 Agent Skills: Equipping agents for the real world with Agent Skills  
   
 ## 🤖 AI Summary  
@@ -56,19 +56,19 @@ tags:
   
 ### Similar  
   
-* [🔬🔄 The Structure of Scientific Revolutions](../books/the-structure-of-scientific-revolutions.md) by Thomas S. Kuhn. 💡 This book is relevant because Agent Skills are a paradigm shift in how an agent's knowledge base is structured, much like a scientific revolution changes the accepted framework of knowledge.  
-* [🦢 The Elements of Style](../books/the-elements-of-style.md) by William Strunk Jr. and E. B. White. 🖋️ This classic is about concise, authoritative writing, mirroring the report's requirement for clear, economical language in structuring the SKILL.md instructions for optimal agent performance.  
+* [🔬🔄 The Structure of Scientific Revolutions](/content/books/the-structure-of-scientific-revolutions.md) by Thomas S. Kuhn. 💡 This book is relevant because Agent Skills are a paradigm shift in how an agent's knowledge base is structured, much like a scientific revolution changes the accepted framework of knowledge.  
+* [🦢 The Elements of Style](/content/books/the-elements-of-style.md) by William Strunk Jr. and E. B. White. 🖋️ This classic is about concise, authoritative writing, mirroring the report's requirement for clear, economical language in structuring the SKILL.md instructions for optimal agent performance.  
 * 🧠 Working in Public: The Making and Maintenance of Open Source Software by Nadia Eghbal. 🤝 This explores how shared, modular knowledge (like open-source code or shared Agent Skills) is created, governed, and maintained by a community, reflecting the potential future of skill sharing.  
   
 ### Contrasting  
   
-* [🦄👤🗓️ The Mythical Man-Month: Essays on Software Engineering](../books/the-mythical-man-month.md) by Frederick Brooks Jr. 🗓️ This classic emphasizes the rigidity and planning required for deterministic, waterfall-style software projects, contrasting with the LLM agent's dynamic, flexible decision-making and workflow.  
-* [🏘️🧱🏗️ A Pattern Language: Towns, Buildings, Construction](../books/a-pattern-language-towns-buildings-construction.md) by Christopher Alexander. 🏡 This book outlines a rigid, pre-defined pattern language for design, which is opposite to the agent's ability to dynamically compose its actions based on loosely structured skills and real-time context.  
+* [🦄👤🗓️ The Mythical Man-Month: Essays on Software Engineering](/content/books/the-mythical-man-month.md) by Frederick Brooks Jr. 🗓️ This classic emphasizes the rigidity and planning required for deterministic, waterfall-style software projects, contrasting with the LLM agent's dynamic, flexible decision-making and workflow.  
+* [🏘️🧱🏗️ A Pattern Language: Towns, Buildings, Construction](/content/books/a-pattern-language-towns-buildings-construction.md) by Christopher Alexander. 🏡 This book outlines a rigid, pre-defined pattern language for design, which is opposite to the agent's ability to dynamically compose its actions based on loosely structured skills and real-time context.  
   
 ### Creatively Related  
   
-* [💺🚪💡🤔 The Design of Everyday Things](../books/the-design-of-everyday-things.md) by Don Norman. 🎛️ This book discusses the principle of affordance and the importance of clear, understandable interfaces, relating to how the name and description of a skill must be perfectly crafted for the agent to know when and how to afford its use.  
-* [🧠🌱💀 Made to Stick: Why Some Ideas Survive and Others Die](../books/made-to-stick.md) by Chip Heath and Dan Heath. ✨ This explores making ideas simple and concrete, which is key to effectively writing the instructions within the SKILL.md file so the agent reliably grasps the skill's purpose.  
+* [💺🚪💡🤔 The Design of Everyday Things](/content/books/the-design-of-everyday-things.md) by Don Norman. 🎛️ This book discusses the principle of affordance and the importance of clear, understandable interfaces, relating to how the name and description of a skill must be perfectly crafted for the agent to know when and how to afford its use.  
+* [🧠🌱💀 Made to Stick: Why Some Ideas Survive and Others Die](/content/books/made-to-stick.md) by Chip Heath and Dan Heath. ✨ This explores making ideas simple and concrete, which is key to effectively writing the instructions within the SKILL.md file so the agent reliably grasps the skill's purpose.  
   
 ## 🐦 Tweet  
 <blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">🧑‍🏫🌍🛠️📈 Agent Skills: Equipping agents for the real world with Agent Skills<br><br>🤖 Agent Specialization | 📁 Skill Structure | 📄 Progressive Disclosure | ⚙️ Code Execution | 📚 Knowledge Organization | 🔐 Security Auditing<a href="https://twitter.com/AnthropicAI?ref_src=twsrc%5Etfw">@AnthropicAI</a><a href="https://t.co/uGjsBuY53J">https://t.co/uGjsBuY53J</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/1980439570350239807?ref_src=twsrc%5Etfw">October 21, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

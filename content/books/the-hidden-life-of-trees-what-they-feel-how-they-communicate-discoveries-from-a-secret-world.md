@@ -7,7 +7,7 @@ share: true
 CTA: 🌳 Unearth arboreal bonds.
 affiliate link: https://amzn.to/4ibg6nd
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🌳🗣️ The Hidden Life of Trees: What They Feel, How They Communicate: Discoveries from a Secret World  
 [🛒 The Hidden Life of Trees: What They Feel, How They Communicate: Discoveries from a Secret World. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4ibg6nd)  
   
@@ -64,14 +64,14 @@ affiliate link: https://amzn.to/4ibg6nd
 ### 🌲 Similar  
 * Finding the Mother Tree by Suzanne Simard  
 * The Secret Wisdom of Nature by Peter Wohlleben  
-* [🪢🌾 Braiding Sweetgrass: Indigenous Wisdom, Scientific Knowledge, and the Teachings of Plants](./braiding-sweetgrass.md) by Robin Wall Kimmerer  
+* [🪢🌾 Braiding Sweetgrass: Indigenous Wisdom, Scientific Knowledge, and the Teachings of Plants](/content/books/braiding-sweetgrass.md) by Robin Wall Kimmerer  
   
 ### 🌳 Contrasting  
 * The Overstory by Richard Powers (Fiction, but explores similar themes from diverse human perspectives)  
 * What a Plant Knows by Daniel Chamovitz  
   
 ### 🌿 Related  
-* [🍄🌍🧠🔮 Entangled Life: How Fungi Make Our Worlds, Change Our Minds & Shape Our Futures](./entangled-life-how-fungi-make-our-worlds-change-our-minds-shape-our-futures.md) by Merlin Sheldrake  
+* [🍄🌍🧠🔮 Entangled Life: How Fungi Make Our Worlds, Change Our Minds & Shape Our Futures](/content/books/entangled-life-how-fungi-make-our-worlds-change-our-minds-shape-our-futures.md) by Merlin Sheldrake  
 * The Songs of Trees by David George Haskell  
   
 ## 🫵 What Do You Think?  

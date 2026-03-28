@@ -7,7 +7,7 @@ URL: https://bagrounds.org/articles/mirror-mirror-2024-a-portrait-of-the-failing
 Author:
 tags:
 ---
-[Home](../index.md) > [Articles](./index.md)  
+[Home](/content/index.md) > [Articles](/content/articles/index.md)  
 # [🪞🇺🇸💔 Mirror, Mirror 2024: A Portrait of the Failing U.S. Health System](https://www.commonwealthfund.org/publications/fund-reports/2024/sep/mirror-mirror-2024)  
   
 ## 🤖 AI Summary  
@@ -41,8 +41,8 @@ tags:
 ## 📚 Book Recommendations  
   
 ### ↔️ Similar  
-* [⚕️💰🇺🇸 The Healing of America: A Global Quest for Better, Cheaper, and Fairer Health Care](../books/the-healing-of-america-a-global-quest-for-better-cheaper-and-fairer-health-care.md) by T.R. Reid. 🌍 **This book offers journalistic comparisons** of various international health care systems to the U.S. model, echoing the report's structure and conclusions.  
-* [💰⚕️⬆️ An American Sickness: How Healthcare Became Big Business and How You Can Take It Back](../books/an-american-sickness-how-healthcare-became-big-business-and-how-you-can-take-it-back.md) by Elisabeth Rosenthal. 📈 **It details the specific financial and administrative incentives** that drive high costs in the U.S., providing an in-depth look at the internal mechanisms that create the inefficiency highlighted in the report.  
+* [⚕️💰🇺🇸 The Healing of America: A Global Quest for Better, Cheaper, and Fairer Health Care](/content/books/the-healing-of-america-a-global-quest-for-better-cheaper-and-fairer-health-care.md) by T.R. Reid. 🌍 **This book offers journalistic comparisons** of various international health care systems to the U.S. model, echoing the report's structure and conclusions.  
+* [💰⚕️⬆️ An American Sickness: How Healthcare Became Big Business and How You Can Take It Back](/content/books/an-american-sickness-how-healthcare-became-big-business-and-how-you-can-take-it-back.md) by Elisabeth Rosenthal. 📈 **It details the specific financial and administrative incentives** that drive high costs in the U.S., providing an in-depth look at the internal mechanisms that create the inefficiency highlighted in the report.  
   
 ### 🆚 Contrasting  
 * 🛡️ The Patient Will See You Now The Future of Medicine Is in Your Hands by Eric Topol. 🔬 **It focuses on the transformative potential of digital medicine and technology** to personalize care and improve patient outcomes, contrasting the current system's structural failings with a future focused on technological efficiency.  
@@ -50,7 +50,7 @@ tags:
   
 ### 🎨 Creatively Related  
 * 🏙️ The Power Broker Robert Moses and the Fall of New York by Robert Caro. 🚧 **It explores how centralized, powerful bureaucratic planning** fundamentally shapes public life and resources, relating tangentially to the political challenges and consolidation issues noted in the report's critique of the U.S. system’s fragmented structure.  
-* [🤔🐇🐢 Thinking, Fast and Slow](../books/thinking-fast-and-slow.md) by Daniel Kahneman. ⚖️ **This book examines cognitive biases and decision-making**, offering a framework for understanding why rational policy choices (like investing in cost-effective primary care) are often overlooked in complex political and economic systems like healthcare.  
+* [🤔🐇🐢 Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md) by Daniel Kahneman. ⚖️ **This book examines cognitive biases and decision-making**, offering a framework for understanding why rational policy choices (like investing in cost-effective primary care) are often overlooked in complex political and economic systems like healthcare.  
   
 ## 🐦 Tweet  
 <blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">🪞🇺🇸💔 Mirror, Mirror 2024: A Portrait of the Failing U.S. Health System<br><br>The US is unique in its health care underperformance. The other nine countries have found a way to meet their residents&#39; basic health care needs, including universal coverage.<a href="https://t.co/888k9XjpD9">https://t.co/888k9XjpD9</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/1989466560592011275?ref_src=twsrc%5Etfw">November 14, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

@@ -5,7 +5,7 @@ aliases:
 title: 🎤🗣️ Public Speaking and Rhetoric
 URL: https://bagrounds.org/topics/public-speaking-and-rhetoric
 ---
-[Home](../index.md) > [Topics](./index.md) > [Knowledge](./a-hierarchical-view-of-human-knowledge.md) > [Social Sciences](./social-sciences.md) > [Communication Studies](./communication-studies.md)  
+[Home](/content/index.md) > [Topics](/content/topics/index.md) > [Knowledge](/content/topics/a-hierarchical-view-of-human-knowledge.md) > [Social Sciences](/content/topics/social-sciences.md) > [Communication Studies](/content/topics/communication-studies.md)  
 # 🎤🗣️ Public Speaking and Rhetoric  
 ## 🤖 AI Summary  
 **🗣️ High-Level Summary:**  
@@ -18,7 +18,7 @@ Public Speaking and Rhetoric is the art and science of effective communication, 
     * Focuses on the ancient Greek 🏺 and Roman 🏛️ principles of rhetoric, including the five canons (invention, arrangement, style, memory, and delivery) and the three modes of persuasion (ethos, pathos, logos). It's the foundation of modern rhetorical study! 📜✨  
 * **📣 Persuasive Speaking:**  
     * Deals with the techniques and strategies for influencing an audience's beliefs, attitudes, or actions. This includes understanding audience psychology 🧠 and constructing compelling arguments 🗣️. It's about changing minds! 🤝🌟  
-* **📊 [Informative Speaking](./informative-speaking.md):**  
+* **📊 [Informative Speaking](/content/topics/informative-speaking.md):**  
     * Centers on conveying information clearly and effectively to an audience. This involves structuring presentations 📝, using visual aids 🖼️, and ensuring audience comprehension 💡. It's about sharing knowledge! 📚🎉  
 * **⚖️ Argumentation and Debate:**  
     * Focuses on the principles of logical reasoning 🧠, evidence-based argumentation 🔍, and effective debate techniques 🗣️. This includes understanding fallacies ⚠️ and constructing sound arguments 🛡️. It's about critical thinking! 🤔🏆  

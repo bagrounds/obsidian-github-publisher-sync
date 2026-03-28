@@ -8,7 +8,7 @@ Author:
 tags:
 affiliate link: https://amzn.to/43y2woo
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🧑‍🏫📉🎤🧘 Presentation Zen: Simple Ideas on Presentation Design and Delivery  
 [🛒 Presentation Zen: Simple Ideas on Presentation Design and Delivery. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/43y2woo)  
   
@@ -72,11 +72,11 @@ affiliate link: https://amzn.to/43y2woo
 **Additional Book Recommendations:**  
   
 * **Best Alternate Book on the Same Topic:** "Slide:ology: The Art and Science of Creating Great Presentations" by Nancy Duarte. 📊 (Provides a more data-driven approach)  
-* **Best Tangentially Related Book:** "[Made to Stick: Why Some Ideas Survive and Others Die](./made-to-stick.md)" by Chip Heath and Dan Heath. 🧠 (Focuses on making ideas memorable)  
+* **Best Tangentially Related Book:** "[Made to Stick: Why Some Ideas Survive and Others Die](/content/books/made-to-stick.md)" by Chip Heath and Dan Heath. 🧠 (Focuses on making ideas memorable)  
 * **Best Diametrically Opposed Book:** "Confessions of a Public Speaker" by Scott Berkun. 🗣️ (More focused on the speaker's personality and less on rigid design)  
 * **Best Fiction Book That Incorporates Related Ideas:** "The Presentation Secrets of Steve Jobs: How to Be Insanely Great in Front of Any Audience" by Carmine Gallo. 🍎 (Fictionalized and based on real presentations)  
-* **Best More General Book:** [🔊🎞️🌱🤯 Resonate: Present Visual Stories that Transform Audiences](./resonate.md) by Nancy Duarte. 📣 (Expands on storytelling in presentations)  
-* **Best More Specific Book:** [📖📊📈 Storytelling with Data: A Data Visualization Guide for Business Professionals](./storytelling-with-data-a-data-visualization-guide-for-business-professionals.md) by Cole Nussbaumer Knaflic. 📈 (Focuses specifically on data visualization in presentations)  
+* **Best More General Book:** [🔊🎞️🌱🤯 Resonate: Present Visual Stories that Transform Audiences](/content/books/resonate.md) by Nancy Duarte. 📣 (Expands on storytelling in presentations)  
+* **Best More Specific Book:** [📖📊📈 Storytelling with Data: A Data Visualization Guide for Business Professionals](/content/books/storytelling-with-data-a-data-visualization-guide-for-business-professionals.md) by Cole Nussbaumer Knaflic. 📈 (Focuses specifically on data visualization in presentations)  
 * **Best More Rigorous Book:** "Information Dashboard Design: Displaying Data for At-a-Glance Monitoring" by Stephen Few. 📊 (More technical and data-focused)  
 * **Best More Accessible Book:** "Talk Like TED: The 9 Public-Speaking Secrets of the World's Top Minds" by Carmine Gallo. 🗣️ (Easy to read and apply)  
   

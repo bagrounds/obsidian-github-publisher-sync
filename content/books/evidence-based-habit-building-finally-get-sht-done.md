@@ -7,7 +7,7 @@ share: true
 CTA: ✅ Cultivate positive routines.
 affiliate link: https://amzn.to/43cVXXG
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # ✅🗓️ Evidence-Based Habit Building: Finally Get Sh\*t Done  
 [🛒 Evidence-Based Habit Building: Finally Get Sh\*t Done. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/43cVXXG)  
   
@@ -63,17 +63,17 @@ affiliate link: https://amzn.to/43cVXXG
 ## 📚 Book Recommendations  
   
 ### ➕ Similar  
-* [⚛️🔄 Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones](./atomic-habits.md) by James Clear  
-* [🤏♻️ Tiny Habits: The Small Changes That Change Everything](./tiny-habits.md) by BJ Fogg  
-* [🔄🧠💪 The Power of Habit: Why We Do What We Do in Life and Business](./the-power-of-habit.md) by Charles Duhigg  
+* [⚛️🔄 Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones](/content/books/atomic-habits.md) by James Clear  
+* [🤏♻️ Tiny Habits: The Small Changes That Change Everything](/content/books/tiny-habits.md) by BJ Fogg  
+* [🔄🧠💪 The Power of Habit: Why We Do What We Do in Life and Business](/content/books/the-power-of-habit.md) by Charles Duhigg  
   
 ### ➖ Contrasting  
-* [👤📈🎯🌟🔑🤝🏆 The 7 Habits of Highly Effective People](./the-7-habits-of-highly-effective-people.md) by Stephen Covey (More principle-based, less neurobiology-focused)  
-* [🌱🧘🏼‍♀️🏆 Mindset: The New Psychology of Success](./mindset.md) by Carol S. Dweck (Focuses on underlying beliefs shaping potential, rather than direct habit mechanics)  
+* [👤📈🎯🌟🔑🤝🏆 The 7 Habits of Highly Effective People](/content/books/the-7-habits-of-highly-effective-people.md) by Stephen Covey (More principle-based, less neurobiology-focused)  
+* [🌱🧘🏼‍♀️🏆 Mindset: The New Psychology of Success](/content/books/mindset.md) by Carol S. Dweck (Focuses on underlying beliefs shaping potential, rather than direct habit mechanics)  
   
 ### 🤝 Related  
-* [🤿💼 Deep Work: Rules for Focused Success in a Distracted World](./deep-work.md) by Cal Newport (Applies habit principles to focused productivity)  
-* [🧘 Indistractable: How to Control Your Attention and Choose Your Life](./indistractable.md) by Nir Eyal (Strategies for internal and external triggers that disrupt focus and habits)  
+* [🤿💼 Deep Work: Rules for Focused Success in a Distracted World](/content/books/deep-work.md) by Cal Newport (Applies habit principles to focused productivity)  
+* [🧘 Indistractable: How to Control Your Attention and Choose Your Life](/content/books/indistractable.md) by Nir Eyal (Strategies for internal and external triggers that disrupt focus and habits)  
   
 ## 🫵 What Do You Think?  
 ❓ Which evidence-based habit strategy has yielded the most significant results in your life, and what unique challenges did you face in its implementation?

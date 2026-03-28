@@ -10,7 +10,7 @@ Channel: Interesting Times with Ross Douthat
 tags:
 youtube: https://youtu.be/ZNK3vNg13XA
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md)  
 # 🇨🇳🔮❓ Does the Future Belong to China? | Interesting Times with Ross Douthat  
 ![Does the Future Belong to China? | Interesting Times with Ross Douthat](https://youtu.be/ZNK3vNg13XA)  
   
@@ -52,12 +52,12 @@ youtube: https://youtu.be/ZNK3vNg13XA
 ## 📚 Book Recommendations  
   
 ### ↔️ Similar  
-* [🇨🇳🌍 The World According to China](../books/the-world-according-to-china.md) by Elizabeth Economy: Focuses on 🇨🇳 China's ambition to reorder the world, using state-led economic and technological tools, similar to the video's theme of the engineer state.  
+* [🇨🇳🌍 The World According to China](/content/books/the-world-according-to-china.md) by Elizabeth Economy: Focuses on 🇨🇳 China's ambition to reorder the world, using state-led economic and technological tools, similar to the video's theme of the engineer state.  
 * 📚 The Man Who Ran Washington by Peter Baker and Susan Glasser: Provides 🏛️ insight into the US political mechanisms, highlighting the lawyerly, pluralistic system that the video contrasts with China's technocracy.  
   
 ### 🆚 Contrasting  
 * 📜 The Tragedy of Great Power Politics by John J. Mearsheimer: Presents a ⚔️ realist perspective on international relations, arguing that China's rise will inevitably lead to conflict with the U.S., contrasting with the video's more nuanced focus on internal systems and demographic constraints.  
-* [🤔🌍📈✅ Factfulness: Ten Reasons We're Wrong About the World - and Why Things Are Better Than You Think](../books/factfulness.md) by Hans Rosling: Offers a radically 🌍 optimistic, data-driven worldview of global progress and development, challenging the video's underlying pessimism about US decline and geopolitical rivalry.  
+* [🤔🌍📈✅ Factfulness: Ten Reasons We're Wrong About the World - and Why Things Are Better Than You Think](/content/books/factfulness.md) by Hans Rosling: Offers a radically 🌍 optimistic, data-driven worldview of global progress and development, challenging the video's underlying pessimism about US decline and geopolitical rivalry.  
   
 ### 🎨 Creatively Related  
 * 💻 The Dream Machine by M. Mitchell Waldrop: Explores the history of J.C.R. Licklider and the invention of 💡 computing, highlighting the role of American curiosity-driven discovery (the US strength mentioned in the video) that often failed to build commercial industries.  

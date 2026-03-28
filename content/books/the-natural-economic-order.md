@@ -7,7 +7,7 @@ share: true
 CTA: 🌎 Build a fair economy.
 affiliate link: https://amzn.to/4p4um35
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🌿⚙️ The Natural Economic Order  
 [🛒 The Natural Economic Order. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4p4um35)  
   
@@ -69,17 +69,17 @@ affiliate link: https://amzn.to/4p4um35
 ## 📚 Book Recommendations  
   
 ### 📖 Similar  
-* [📈📉 Progress and Poverty](./progress-and-poverty.md) by Henry George  
-* [🏛️💰 Debt: The First 5,000 Years](./debt-the-first-5000-years.md) by David Graeber  
+* [📈📉 Progress and Poverty](/content/books/progress-and-poverty.md) by Henry George  
+* [🏛️💰 Debt: The First 5,000 Years](/content/books/debt-the-first-5000-years.md) by David Graeber  
 * 🌟 Utopia for Realists by Rutger Bregman  
   
 ### ⚔️ Contrasting  
 * 🚧 The Road to Serfdom by F.A. Hayek  
-* [💰📈🌍⏳ Capital in the Twenty-First Century](./capital-in-the-twenty-first-century.md) by Thomas Piketty  
+* [💰📈🌍⏳ Capital in the Twenty-First Century](/content/books/capital-in-the-twenty-first-century.md) by Thomas Piketty  
 * 🍎 The Wealth of Nations by Adam Smith  
   
 ### 🔗 Related  
-* [🧑‍💼🏦💸 The General Theory of Employment, Interest, and Money](./the-general-theory-of-employment-interest-and-money.md) by John Maynard Keynes  
+* [🧑‍💼🏦💸 The General Theory of Employment, Interest, and Money](/content/books/the-general-theory-of-employment-interest-and-money.md) by John Maynard Keynes  
 * ✨ Sacred Economics by Charles Eisenstein  
 * 🗺️ The World for Sale by Javier Blas  
   

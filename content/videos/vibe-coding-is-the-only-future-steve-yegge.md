@@ -10,7 +10,7 @@ Channel: A Life Engineered
 tags:
 youtube: https://youtu.be/MFsYKQdcdz0
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md)  
 # 😎✨💻🔮 Vibe Coding Is The Only Future - Steve Yegge  
 ![Vibe Coding Is The Only Future - Steve Yegge](https://youtu.be/MFsYKQdcdz0)  
   
@@ -55,19 +55,19 @@ youtube: https://youtu.be/MFsYKQdcdz0
   
 ### ↔️ Similar  
   
-- [🤖💻 Vibe Coding: Building Production-Grade Software With GenAI, Chat, Agents, and Beyond](../books/vibe-coding-building-production-grade-software-with-genai-chat-agents-and-beyond.md)  
-- [🤖🏗️ AI Engineering: Building Applications with Foundation Models](../books/ai-engineering-building-applications-with-foundation-models.md)  
-* [🤖🧩 Patterns of Application Development Using AI](../books/patterns-of-application-development-using-ai.md) by Obie Fernandez. This book offers a pragmatic, pattern-based approach to integrating Large Language Models (LLMs) into application architectures, focusing on practical, real-world use cases.  
+- [🤖💻 Vibe Coding: Building Production-Grade Software With GenAI, Chat, Agents, and Beyond](/content/books/vibe-coding-building-production-grade-software-with-genai-chat-agents-and-beyond.md)  
+- [🤖🏗️ AI Engineering: Building Applications with Foundation Models](/content/books/ai-engineering-building-applications-with-foundation-models.md)  
+* [🤖🧩 Patterns of Application Development Using AI](/content/books/patterns-of-application-development-using-ai.md) by Obie Fernandez. This book offers a pragmatic, pattern-based approach to integrating Large Language Models (LLMs) into application architectures, focusing on practical, real-world use cases.  
 * 🧠 The LLM Engineering Handbook by Paul Iusztin and Maxime Labonne. This covers the entire LLM stack, including embedding models and vector databases, providing essential knowledge for building resilient, AI-driven systems.  
   
 ### 🆚 Contrasting  
   
 * 🧱 Clean Architecture by Robert C. Martin. This classic focuses on foundational, time-tested principles of software architecture that are crucial for creating the decoupled, modular systems the video recommends, regardless of the tools used.  
-* [🧩🧱⚙️❤️ Domain-Driven Design: Tackling Complexity in the Heart of Software](../books/domain-driven-design.md) by Eric Evans. This book teaches how to structure software based on the complexity of the business domain, which is the high-leverage hard problem engineers should master.  
+* [🧩🧱⚙️❤️ Domain-Driven Design: Tackling Complexity in the Heart of Software](/content/books/domain-driven-design.md) by Eric Evans. This book teaches how to structure software based on the complexity of the business domain, which is the high-leverage hard problem engineers should master.  
   
 ### 🎨 Creatively Related  
   
-* [🧬👥💾 Life 3.0: Being Human in the Age of Artificial Intelligence](../books/life-3-0.md) by Max Tegmark. This explores the future of Artificial Intelligence and humanity, including the utopian versus dystopian scenarios, providing a broader, philosophical context for the rapid technological shifts discussed in the video.  
+* [🧬👥💾 Life 3.0: Being Human in the Age of Artificial Intelligence](/content/books/life-3-0.md) by Max Tegmark. This explores the future of Artificial Intelligence and humanity, including the utopian versus dystopian scenarios, providing a broader, philosophical context for the rapid technological shifts discussed in the video.  
 * 🚀 Direction Through Disruption: A guide to career resilience during rapid technology and workplace change by Rob Livingstone. This offers a framework for professional adaptation and resilience in careers fundamentally reshaped by disruptive digital technologies like AI.  
   
 ## 🐦 Tweet  

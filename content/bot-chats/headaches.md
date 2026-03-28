@@ -5,9 +5,9 @@ aliases:
 title: 🤕😖 Headaches
 URL: https://bagrounds.org/bot-chats/headaches
 ---
-[Home](../index.md) > [Bot Chats](./index.md)  
+[Home](/content/index.md) > [Bot Chats](/content/bot-chats/index.md)  
 # 🤕😖 Headaches  
-## 💬 [Gemini](../software/gemini.md) Prompt 1  
+## 💬 [Gemini](/content/software/gemini.md) Prompt 1  
 > 🗣️ Tell me everything you know about headaches and recommend some books that will help me understand, diagnose and treat them.  
   
 🤕 Headaches are a ubiquitous human experience, ranging from minor annoyances to debilitating conditions. 🧠 Understanding them involves recognizing their diverse types, potential causes, and effective management strategies.  
@@ -142,7 +142,7 @@ URL: https://bagrounds.org/bot-chats/headaches
   
 **📚 For a comprehensive understanding (general & medical professionals):**  
   
-1.  **[🤕⚕️ The Headache Handbook: Diagnosis and Treatment](../books/the-headache-handbook-diagnosis-and-treatment.md)** by Steven B. Graff-Radford and William G. Nash.  
+1.  **[🤕⚕️ The Headache Handbook: Diagnosis and Treatment](/content/books/the-headache-handbook-diagnosis-and-treatment.md)** by Steven B. Graff-Radford and William G. Nash.  
     *   🩺 This book is aimed at both generalist and specialist clinicians. 🔎 It emphasizes accurate fact-gathering, physical, and neurological examinations for understanding and treating various headache disorders.  
   
 2.  📚 **"Headache" (Springer book series):** 📖 This is a series of specialized books endorsed by the European Headache Federation. 🎓 While some titles might be very academic, they cover in detail aspects like pathophysiology, diagnosis, management, comorbidities, and specific patient groups. 👀 Look for individual titles that align with your interest, such as:  

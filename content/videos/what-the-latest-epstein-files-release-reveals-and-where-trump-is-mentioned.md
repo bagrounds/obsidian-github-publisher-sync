@@ -10,7 +10,7 @@ Channel: PBS NewsHour
 tags:
 youtube: https://youtu.be/BhjxjVfwPiE
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md)  
 # 🤫📂📈👹 What the latest Epstein files release reveals, and where Trump is mentioned  
 ![What the latest Epstein files release reveals, and where Trump is mentioned](https://youtu.be/BhjxjVfwPiE)  
   
@@ -49,7 +49,7 @@ youtube: https://youtu.be/BhjxjVfwPiE
   
 ### ↔️ Similar  
   
-* [⚖️😈🔞 Perversion of Justice: The Jeffrey Epstein Story](../books/perversion-of-justice-the-jeffrey-epstein-story.md) by Julie K. Brown. 📰 This book documents the investigative journalism that reopened the Epstein case.  
+* [⚖️😈🔞 Perversion of Justice: The Jeffrey Epstein Story](/content/books/perversion-of-justice-the-jeffrey-epstein-story.md) by Julie K. Brown. 📰 This book documents the investigative journalism that reopened the Epstein case.  
 * 📖 Filthy Rich by James Patterson and John Connolly. 🕵️ A detailed look at the lifestyle and crimes of Jeffrey Epstein.  
   
 ### 🆚 Contrasting  

@@ -8,7 +8,7 @@ Author:
 tags:
 affiliate link: https://amzn.to/4mGO44D
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 👤🧬 The Selfish Gene  
 [🛒 The Selfish Gene. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4mGO44D)  
   
@@ -72,14 +72,14 @@ affiliate link: https://amzn.to/4mGO44D
   
 ### 🎨 Creatively Related & Broader Themes  
   
-* 🧠 **[Thinking, Fast and Slow](./thinking-fast-and-slow.md) by Daniel Kahneman:** While about human psychology and decision-making, it explores the idea of underlying systems influencing behavior, echoing (in a different domain) how Dawkins portrays genes influencing organism behavior.  
-* 🌍 **[Sapiens: A Brief History of Humankind](./sapiens-a-brief-history-of-humankind.md) by Yuval Noah Harari:** A broad look at human history, touching on biology, evolution, and the role of fictions (like memes) in shaping societies.  
+* 🧠 **[Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md) by Daniel Kahneman:** While about human psychology and decision-making, it explores the idea of underlying systems influencing behavior, echoing (in a different domain) how Dawkins portrays genes influencing organism behavior.  
+* 🌍 **[Sapiens: A Brief History of Humankind](/content/books/sapiens-a-brief-history-of-humankind.md) by Yuval Noah Harari:** A broad look at human history, touching on biology, evolution, and the role of fictions (like memes) in shaping societies.  
 * ⚠️ **_Darwin's Dangerous Idea_ by Daniel C. Dennett:** A philosophical exploration of Darwinism and its implications, strongly defending and elaborating on Dawkins' perspective.  
 * 🦠 **_I Contain Multitudes: The Microbes Within Us and a Grander View of Life_ by Ed Yong:** Explores the microbiome and symbiosis, offering a perspective where cooperation and interdependence between different species (and their genes) are central to life.  
-* 🌀 **[Chaos: Making a New Science](./chaos.md) by James Gleick:** Explores complexity and nonlinear systems, offering a different lens through which to view biological systems than purely reductionist approaches.  
+* 🌀 **[Chaos: Making a New Science](/content/books/chaos.md) by James Gleick:** Explores complexity and nonlinear systems, offering a different lens through which to view biological systems than purely reductionist approaches.  
 * 🌌 **_The Fabric of Reality_ by David Deutsch:** A wide-ranging book touching on quantum physics, computation, epistemology, and evolution, including discussion of replicators like genes and memes.  
-* 🕊️ **[Man's Search for Meaning](./mans-search-for-meaning.md) by Viktor Frankl:** A profound exploration of human purpose and resilience, offering a humanistic counterpoint to purely biological determinism.  
+* 🕊️ **[Man's Search for Meaning](/content/books/mans-search-for-meaning.md) by Viktor Frankl:** A profound exploration of human purpose and resilience, offering a humanistic counterpoint to purely biological determinism.  
 * 👩‍🔬 **_The Immortal Life of Henrietta Lacks_ by Rebecca Skloot:** Explores ethics, biology, and the story of HeLa cells—an "immortal" human cell line, raising questions about biological legacy.  
   
-## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
+## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on The Selfish Gene. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

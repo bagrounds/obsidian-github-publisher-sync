@@ -9,6 +9,6 @@ Platform:
 Channel:
 tags:
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md)  
 # How AI Cracked the Protein Folding Code and Won a Nobel Prize  
 ![How AI Cracked the Protein Folding Code and Won a Nobel Prize](https://youtu.be/cx7l9ZGFZkw)  

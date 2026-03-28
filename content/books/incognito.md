@@ -9,7 +9,7 @@ tags:
 affiliate link: https://amzn.to/3ZN7SJO
 CTA: Uncover your mind.
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🎭🤫🧠 Incognito: The Secret Lives of the Brain  
 [🛒 Incognito: The Secret Lives of the Brain. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3ZN7SJO)  
   
@@ -58,14 +58,14 @@ Eagleman's writing is engaging and accessible, making complex neuroscience conce
   
 ### 📚 Additional Book Recommendations  
   
-* **Best Alternate Book on the Same Topic:** "[Thinking, Fast and Slow](./thinking-fast-and-slow.md)" by Daniel Kahneman. 🧠 (Explores similar themes of conscious and unconscious thought processes.)  
-* **Best Book Tangentially Related:** [🤕🎼🧠 The Body Keeps the Score: Brain, Mind, and Body in the Healing of Trauma](./the-body-keeps-the-score-brain-mind-and-body-in-the-healing-of-trauma.md) by Bessel van der Kolk. 🤕 (Relates to the brain's response to trauma and its impact on behavior.)  
+* **Best Alternate Book on the Same Topic:** "[Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md)" by Daniel Kahneman. 🧠 (Explores similar themes of conscious and unconscious thought processes.)  
+* **Best Book Tangentially Related:** [🤕🎼🧠 The Body Keeps the Score: Brain, Mind, and Body in the Healing of Trauma](/content/books/the-body-keeps-the-score-brain-mind-and-body-in-the-healing-of-trauma.md) by Bessel van der Kolk. 🤕 (Relates to the brain's response to trauma and its impact on behavior.)  
 * **Best Diametrically Opposed Book:** "Free Will" by Sam Harris. 🙅‍♂️ (Argues strongly against the illusion of free will.)  
 * **Best Fiction Book Incorporating Related Ideas:** Flowers for Algernon by Daniel Keyes. 🐭 (Explores the ethical implications of altering brain function.)  
-* **Best More General Book:** [🧠💡📈🏠🏢🧑‍🎓 Brain Rules: 12 Principles for Surviving and Thriving at Work, Home, and School](./brain-rules-12-principles-for-surviving-and-thriving-at-work-home-and-school.md) by John Medina. 📝 (Provides a broader overview of brain function and its implications for everyday life.)  
+* **Best More General Book:** [🧠💡📈🏠🏢🧑‍🎓 Brain Rules: 12 Principles for Surviving and Thriving at Work, Home, and School](/content/books/brain-rules-12-principles-for-surviving-and-thriving-at-work-home-and-school.md) by John Medina. 📝 (Provides a broader overview of brain function and its implications for everyday life.)  
 * **Best More Specific Book:** "Phantoms in the Brain" by V.S. Ramachandran. 👻 (Focuses on specific neurological phenomena and their implications.)  
 * **More Rigorous Book:** "Principles of Neural Science" by Eric R. Kandel, James H. Schwartz, and Thomas M. Jessell. 📖 (A comprehensive textbook on neuroscience.)  
-* **More Accessible Book:** "[The Brain That Changes Itself](./the-brain-that-changes-itself.md)" by Norman Doidge. 🔄 (Focuses on neuroplasticity and its potential for healing.)  
+* **More Accessible Book:** "[The Brain That Changes Itself](/content/books/the-brain-that-changes-itself.md)" by Norman Doidge. 🔄 (Focuses on neuroplasticity and its potential for healing.)  
   
 ## 💬 [Gemini](https://gemini.google.com) Prompt  
 > Summarize the book: Incognito: The Secret Lives of the Brain. Start with a TL;DR - a single statement that conveys a maximum of the useful information provided in the book. Next, explain how this book may offer a new or surprising perspective. Follow this with a deep dive. Catalogue the topics, methods, and research discussed. Be sure to highlight any significant theories, theses, or mental models proposed. Summarize prominent examples discussed. Emphasize practical takeaways, including detailed, specific, concrete, step-by-step advice, guidance, or techniques discussed. Provide a critical analysis of the quality of the information presented, using scientific backing, author credentials, authoritative reviews, and other markers of high quality information as justification. Make the following additional book recommendations: the best alternate book on the same topic; the best book that is tangentially related; the best book that is diametrically opposed; the best fiction book that incorporates related ideas; the best book that is more general or more specific; and the best book that is more rigorous or more accessible than this book. Format your response as markdown, starting at heading level H3, with inline links, for easy copy paste. Use meaningful emojis generously (at least one per heading, bullet point, and paragraph) to enhance readability. Do not include broken links or links to commercial sites.

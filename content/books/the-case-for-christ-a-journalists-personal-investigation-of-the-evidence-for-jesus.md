@@ -7,7 +7,7 @@ share: true
 affiliate link: https://amzn.to/4nFP2Oo
 CTA: ❓ Question faith.
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 📰❓✝️ The Case for Christ: A Journalist's Personal Investigation of the Evidence for Jesus  
 [🛒 The Case for Christ: A Journalist's Personal Investigation of the Evidence for Jesus. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4nFP2Oo)  
   
@@ -47,21 +47,21 @@ CTA: ❓ Question faith.
   
 ### 🗂️ Similar Books  
   
-* **[✝️ Mere Christianity](./mere-christianity.md) by C.S. Lewis:** 📖 This classic work of Christian apologetics offers a comprehensive yet accessible explanation and defense of core Christian beliefs, drawing on reason and common human experience. 🤝 Like Strobel, Lewis aims to present a rational case for faith.  
+* **[✝️ Mere Christianity](/content/books/mere-christianity.md) by C.S. Lewis:** 📖 This classic work of Christian apologetics offers a comprehensive yet accessible explanation and defense of core Christian beliefs, drawing on reason and common human experience. 🤝 Like Strobel, Lewis aims to present a rational case for faith.  
 * 🤔 **The Reason for God: Belief in an Age of Skepticism by Timothy Keller:** ❓ Keller addresses common doubts and objections to Christianity with intellectual rigor and respect for skeptics. 💭 It's thoughtful and engaging for those exploring or articulating faith.  
 * 🕵️ **Person of Interest: Why Jesus Still Matters in a World that Rejects the Bible by J. Warner Wallace:** 🔪 Written by a cold-case homicide detective, this book applies investigative techniques to historical evidence for Jesus, similar to Strobel's journalistic approach, to build a case for his significance and divinity.  
   
 ### ⚖️ Contrasting Books  
   
-* **[🧑‍🏫🆚⛪ The Case Against The Case For Christ: A New Testament Scholar Refutes the Reverend Lee Strobel](./the-case-against-the-case-for-christ-a-new-testament-scholar-refutes-the-reverend-lee-strobel.md) by Robert M. Price:** 📖 This book offers a direct critique of Strobel's work, challenging its methodology, arguments, and conclusions. ⚠️ It addresses the perceived flaws in Strobel's investigation and provides alternative explanations.  
-* **[❓✝️ The God Delusion](./the-god-delusion.md) by Richard Dawkins:** 🔥 A prominent work of atheism, Dawkins' book presents a fiery argument against religious belief, dissecting perceived flaws in religious reasoning and the impact of faith, offering a stark contrast to apologetic works.  
+* **[🧑‍🏫🆚⛪ The Case Against The Case For Christ: A New Testament Scholar Refutes the Reverend Lee Strobel](/content/books/the-case-against-the-case-for-christ-a-new-testament-scholar-refutes-the-reverend-lee-strobel.md) by Robert M. Price:** 📖 This book offers a direct critique of Strobel's work, challenging its methodology, arguments, and conclusions. ⚠️ It addresses the perceived flaws in Strobel's investigation and provides alternative explanations.  
+* **[❓✝️ The God Delusion](/content/books/the-god-delusion.md) by Richard Dawkins:** 🔥 A prominent work of atheism, Dawkins' book presents a fiery argument against religious belief, dissecting perceived flaws in religious reasoning and the impact of faith, offering a stark contrast to apologetic works.  
 * 🇮🇱 **Zealot: The Life and Times of Jesus of Nazareth by Reza Aslan:** 📜 Aslan provides a historical, sociological, and political perspective on Jesus, portraying him as a revolutionary Jewish figure rather than focusing on his divinity, offering an alternative historical interpretation.  
   
 ### 🎨 Creatively Related Books  
   
 * 🧬 **The Language of God: A Scientist Presents Evidence for Belief by Francis S. Collins:** 🔬 Written by a leading geneticist and former head of the Human Genome Project, this book explores the compatibility of scientific discovery (particularly evolution) with faith in God. 🤝 It resonates with themes of intellectual inquiry leading to belief, much like Strobel's journey.  
 * 🌍 **A History of God: The 4,000-Year Quest of Judaism, Christianity, and Islam by Karen Armstrong:** 📜 This book traces the evolution of the concept of God in the three Abrahamic religions. 💡 While not an apologetic, it offers a broad historical and theological context that can deepen understanding of the faith Strobel investigates, highlighting how human understanding of the divine has changed over millennia.  
-* **[🔦💡 Man's Search for Meaning](./mans-search-for-meaning.md) by Viktor Frankl:** 🥺 Frankl's memoir and exposition on logotherapy, born from his experiences in concentration camps, explores the human search for purpose and meaning. 🙏 While not directly religious apologetics, it delves into profound questions of suffering, existential meaning, and resilience of the human spirit, echoing the deeper quest for truth that often underpins spiritual investigations.  
+* **[🔦💡 Man's Search for Meaning](/content/books/mans-search-for-meaning.md) by Viktor Frankl:** 🥺 Frankl's memoir and exposition on logotherapy, born from his experiences in concentration camps, explores the human search for purpose and meaning. 🙏 While not directly religious apologetics, it delves into profound questions of suffering, existential meaning, and resilience of the human spirit, echoing the deeper quest for truth that often underpins spiritual investigations.  
   
 ## 💬 [Gemini](https://gemini.google.com) Prompt (gemini-2.5-flash)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by similar, contrasting, and creatively related book recommendations on The Case for Christ: A Journalist's Personal Investigation of the Evidence for Jesus. Never quote or italicize titles. Be thorough but concise. Use section headings and bulleted lists to avoid long blocks of text.

@@ -8,7 +8,7 @@ Author:
 tags:
 affiliate link: https://amzn.to/4e40uA1
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🎳🏘️📉📈 Bowling Alone: The Collapse and Revival of American Community  
 [🛒 Bowling Alone: The Collapse and Revival of American Community. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4e40uA1)  
   
@@ -60,7 +60,7 @@ affiliate link: https://amzn.to/4e40uA1
 * **Best Tangentially Related Book:** "Tribe: On Homecoming and Belonging" by Sebastian Junger. This book explores the human need for belonging and community, particularly in the context of modern society. 🫂  
 * **Best Diametrically Opposed Book:** "The Rational Optimist" by Matt Ridley. Ridley argues that human progress is driven by innovation and exchange, and that increased individualism and globalization have led to greater prosperity and well-being. 📈  
 * **Best Fiction Book That Incorporates Related Ideas:** "The Circle" by Dave Eggers. This novel explores the potential dangers of excessive connectivity and the erosion of privacy in a technologically driven society. 🌐  
-* **Best Book That Is More General:** "[Sapiens: A Brief History of Humankind](./sapiens-a-brief-history-of-humankind.md)" by Yuval Noah Harari. This book provides a broad historical perspective on the development of human societies and the role of social structures. 📜  
+* **Best Book That Is More General:** "[Sapiens: A Brief History of Humankind](/content/books/sapiens-a-brief-history-of-humankind.md)" by Yuval Noah Harari. This book provides a broad historical perspective on the development of human societies and the role of social structures. 📜  
 * **Best Book That Is More Specific:** "Palaces for the People: How Social Infrastructure Can Help Fight Isolation, Inequality, and Civic Decline" by Eric Klinenberg. This book focus on the importance of physical social infrastructure, like libraries and parks. 🏛️  
 * **Best Book That Is More Rigorous:** "Social Capital: A Theory of Social Structure and Action" by Nan Lin. This book provides a more theoretical and academic exploration of social capital. 📚  
 * **Best Book That Is More Accessible:** "Connected: The Surprising Power of Our Social Networks and How They Shape Our Lives" by Nicholas A. Christakis and James H. Fowler. This book is a very accessable read about the power of social networks, and how they effect our lives. 🤝  

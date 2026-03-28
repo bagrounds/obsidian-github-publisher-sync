@@ -9,7 +9,7 @@ Platform: "#YouTube"
 Channel: "[[Justin Sung]]"
 tags:
 ---
-[Home](../index.md) > [Videos](./index.md) | [🧠👨‍🎓📈 Justin Sung](../people/justin-sung.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md) | [🧠👨‍🎓📈 Justin Sung](/content/people/justin-sung.md)  
 # 🧠🗺️💡🔑 What I Learned after 5000 Hours of Mind Mapping  
 ![What I Learned after 5000 Hours of Mind Mapping](https://youtu.be/NqxUExCZJ5Y)  
   

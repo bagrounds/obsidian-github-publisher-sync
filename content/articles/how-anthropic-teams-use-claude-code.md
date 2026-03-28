@@ -7,7 +7,7 @@ URL: https://bagrounds.org/articles/how-anthropic-teams-use-claude-code
 Author:
 tags:
 ---
-[Home](../index.md) > [Articles](./index.md)  
+[Home](/content/index.md) > [Articles](/content/articles/index.md)  
 # [🧑‍💻🤖🤝 How Anthropic Teams Use Claude Code](https://www-cdn.anthropic.com/58284b19e702b49db9302d5b6f135ad8871e7658.pdf)  
 ## 🤖 AI Summary  
 Claude Code was used by Anthropic's 📊 Data Infrastructure, 🚀 Product Development, 🔒 Security Engineering, 🧠 Inference, 🧪 Data Science and Visualization, 🔗 API Knowledge, 📈 Growth Marketing, and 🎨 Product Design teams to enhance productivity across various functions by performing tasks such as:  
@@ -20,9 +20,9 @@ Claude Code was used by Anthropic's 📊 Data Infrastructure, 🚀 Product Devel
 * 🎨 **Design & Marketing:** Directly implementing frontend design changes, generating interactive prototypes, and automating marketing campaign analysis and creative production.  
   
 ## 📚 Book Recommendations  
-* [🐦‍🔥💻 The Phoenix Project](../books/the-phoenix-project.md): A Novel About IT, DevOps, and Helping Your Business Win by Gene Kim, Kevin Behr, and George Spafford (for Data Infrastructure and Security Engineering)  
-* [🧼💾 Clean Code: A Handbook of Agile Software Craftsmanship](../books/clean-code.md) by Robert C. Martin (for Product Development and Security Engineering)  
+* [🐦‍🔥💻 The Phoenix Project](/content/books/the-phoenix-project.md): A Novel About IT, DevOps, and Helping Your Business Win by Gene Kim, Kevin Behr, and George Spafford (for Data Infrastructure and Security Engineering)  
+* [🧼💾 Clean Code: A Handbook of Agile Software Craftsmanship](/content/books/clean-code.md) by Robert C. Martin (for Product Development and Security Engineering)  
 * 🤖 Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow by Aurélien Géron (for Inference and Data Science)  
 * 🧱 Building Microservices by Sam Newman (for API Knowledge Team)  
-* [🦠 Contagious: Why Things Catch On](../books/contagious.md) by Jonah Berger (for Growth Marketing)  
-* [💺🚪💡🤔 The Design of Everyday Things](../books/the-design-of-everyday-things.md) by Don Norman (for Product Design)  
+* [🦠 Contagious: Why Things Catch On](/content/books/contagious.md) by Jonah Berger (for Growth Marketing)  
+* [💺🚪💡🤔 The Design of Everyday Things](/content/books/the-design-of-everyday-things.md) by Don Norman (for Product Design)  

@@ -10,7 +10,7 @@ Channel: Heather Cox Richardson
 tags:
 youtube: https://www.youtube.com/embed/LojhZENpRHw
 ---
-[Home](../index.md) > [Videos](./index.md) | [🏛️🇺🇸📖 Heather Cox Richardson](../people/heather-cox-richardson.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md) | [🏛️🇺🇸📖 Heather Cox Richardson](/content/people/heather-cox-richardson.md)  
 # 🇺🇸🗣️⚖️🗳️ American Conversations: Marc Elias  
 ![American Conversations: Marc Elias](https://www.youtube.com/embed/LojhZENpRHw)  
   
@@ -45,7 +45,7 @@ youtube: https://www.youtube.com/embed/LojhZENpRHw
   
 ## 📚 Book Recommendations  
 ### ↔️ Similar  
-* [💰🤫 Dark Money: The Hidden History of the Billionaires Behind the Rise of the Radical Right](../books/dark-money-the-hidden-history-of-the-billionaires-behind-the-rise-of-the-radical-right.md) by Jane Mayer  
+* [💰🤫 Dark Money: The Hidden History of the Billionaires Behind the Rise of the Radical Right](/content/books/dark-money-the-hidden-history-of-the-billionaires-behind-the-rise-of-the-radical-right.md) by Jane Mayer  
     * 🔍 This book thoroughly documents the long-term, strategic effort by conservative wealthy donors to deregulate campaign finance and dismantle campaign finance laws, aligning closely with the video’s thesis of a decades-long plan.  
 * 📖 Theft by Elections A History of America's Failed Fight to Limit Political Spending by Ciara Torres-Spelliscy  
     * 📜 This provides a detailed historical and legal overview of how the U.S. has repeatedly tried to regulate money in politics and how those efforts have been systematically undermined by judicial rulings.  

@@ -8,7 +8,7 @@ Author:
 tags:
 affiliate link: https://amzn.to/3FnCeff
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # ⚙️📈🎯🤖 Control Systems Engineering  
 [🛒 Control Systems Engineering. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3FnCeff)  
   
@@ -84,12 +84,12 @@ affiliate link: https://amzn.to/3FnCeff
   
 * **Best Alternate Book (Same Topic):** "Modern Control Systems" by Richard C. Dorf and Robert H. Bishop. 🔄📚  
 * **Best Tangentially Related Book:** "Feedback Systems: An Introduction for Scientists and Engineers" by Karl J. Åström and Richard M. Murray. 🔗💡  
-* **Best Diametrically Opposed Book:** [🌪️💥🦋🆕 Chaos: Making a New Science](./chaos.md) by James Gleick (explores non-linear and unpredictable systems, contrasting with the focus on control). 🌀🌌  
-* **Best Fiction Book (Related Ideas):** "[👨‍🚀🔴✨ The Martian](./the-martian.md)" by Andy Weir (demonstrates problem-solving and control in extreme environments). 🚀🧑‍🚀  
+* **Best Diametrically Opposed Book:** [🌪️💥🦋🆕 Chaos: Making a New Science](/content/books/chaos.md) by James Gleick (explores non-linear and unpredictable systems, contrasting with the focus on control). 🌀🌌  
+* **Best Fiction Book (Related Ideas):** "[👨‍🚀🔴✨ The Martian](/content/books/the-martian.md)" by Andy Weir (demonstrates problem-solving and control in extreme environments). 🚀🧑‍🚀  
 * **Best More General Book:** "Fundamentals of Signals and Systems" by Alan V. Oppenheim and Alan S. Willsky. 📶📚  
 * **Best More Specific Book:** "Digital Control System Analysis and Design" by Charles L. Phillips and Troy Nagle. 🔢💻  
 * **Best More Rigorous Book:** "Linear System Theory and Design" by Chi-Tsong Chen. 📐📏  
-* **Best More Accessible Book:** "[Automatic Control Systems](./automatic-control-systems.md)" by Farid Golnaraghi and Benjamin C. Kuo. 📖😊  
+* **Best More Accessible Book:** "[Automatic Control Systems](/content/books/automatic-control-systems.md)" by Farid Golnaraghi and Benjamin C. Kuo. 📖😊  
   
 ## 💬 [Gemini](https://gemini.google.com) Prompt  
 > Summarize the book: Control Systems Engineering. Start with a TL;DR - a single statement that conveys a maximum of the useful information provided in the book. Next, explain how this book may offer a new or surprising perspective. Follow this with a deep dive. Catalogue the topics, methods, and research discussed. Be sure to highlight any significant theories, theses, or mental models proposed. Summarize prominent examples discussed. Emphasize practical takeaways, including detailed, specific, concrete, step-by-step advice, guidance, or techniques discussed. Provide a critical analysis of the quality of the information presented, using scientific backing, author credentials, authoritative reviews, and other markers of high quality information as justification. Make the following additional book recommendations: the best alternate book on the same topic; the best book that is tangentially related; the best book that is diametrically opposed; the best fiction book that incorporates related ideas; the best book that is more general or more specific; and the best book that is more rigorous or more accessible than this book. Format your response as markdown, starting at heading level H3, with inline links, for easy copy paste. Use meaningful emojis generously (at least one per heading, bullet point, and paragraph) to enhance readability. Do not include broken links or links to commercial sites.

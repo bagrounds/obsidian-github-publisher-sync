@@ -10,7 +10,7 @@ Channel: Heather Cox Richardson
 tags:
 youtube: https://youtu.be/3eGUFiK6EUg
 ---
-[Home](../index.md) > [Videos](./index.md) | [🏛️🇺🇸📖 Heather Cox Richardson](../people/heather-cox-richardson.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md) | [🏛️🇺🇸📖 Heather Cox Richardson](/content/people/heather-cox-richardson.md)  
 # 🇺🇸🗓️👎 Project 2025 Is Here and Americans Hate It | Explainer  
 ![Project 2025 Is Here and Americans Hate It | Explainer](https://youtu.be/3eGUFiK6EUg)  
   
@@ -47,8 +47,8 @@ youtube: https://youtu.be/3eGUFiK6EUg
   
 ### Similar  
   
-* **[👑🚫📜2️⃣0️⃣ On Tyranny: Twenty Lessons from the Twentieth Century](../books/on-tyranny.md)** by Timothy Snyder. 💡 Offers practical advice on how to recognize and resist authoritarianism based on historical precedents from the 20th century.  
-* **[🗳️🏛️☠️ How Democracies Die](../books/how-democracies-die.md)** by Steven Levitsky and Daniel Ziblatt. 🗳️ Examines how democracies can collapse not through violent revolution but through the slow erosion of democratic norms and institutions by elected leaders.  
+* **[👑🚫📜2️⃣0️⃣ On Tyranny: Twenty Lessons from the Twentieth Century](/content/books/on-tyranny.md)** by Timothy Snyder. 💡 Offers practical advice on how to recognize and resist authoritarianism based on historical precedents from the 20th century.  
+* **[🗳️🏛️☠️ How Democracies Die](/content/books/how-democracies-die.md)** by Steven Levitsky and Daniel Ziblatt. 🗳️ Examines how democracies can collapse not through violent revolution but through the slow erosion of democratic norms and institutions by elected leaders.  
 * 📚 **Fascism: A Warning** by Madeleine Albright. ⚔️ Provides a historical and contemporary look at the signs and dangers of fascism globally, with direct reference to current political figures.  
   
 ### Contrasting  
@@ -59,7 +59,7 @@ youtube: https://youtu.be/3eGUFiK6EUg
 ### Creatively Related  
   
 * 📚 **The Power Broker: Robert Moses and the Fall of New York** by Robert A. Caro. 🏗️ A study of how unchecked political power, accumulated through control over government infrastructure and process, can be used to reshape a city and society, relating to the weaponization of infrastructure funding mentioned in the video.  
-* **[🌍🏛️ The Great Transformation: The Political and Economic Origins of Our Time](../books/the-great-transformation-the-political-and-economic-origins-of-our-time.md)** by Karl Polanyi. 🌍 A classic work examining the massive upheaval caused by the rise of market society and the resultant counter-movements demanding social protection, offering a broad historical framework for understanding the current radical political shifts.  
+* **[🌍🏛️ The Great Transformation: The Political and Economic Origins of Our Time](/content/books/the-great-transformation-the-political-and-economic-origins-of-our-time.md)** by Karl Polanyi. 🌍 A classic work examining the massive upheaval caused by the rise of market society and the resultant counter-movements demanding social protection, offering a broad historical framework for understanding the current radical political shifts.  
   
 ## 🐦 Tweet  
 <blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">🇺🇸📅👎 Project 2025 Is Here and Americans Hate It | Explainer<br><br>✝️ Christian Nationalism | 📊 Public Opinion | 🤥 Presidential Denial | 💥 Political Instability | ⚔️ Republican Party | ⚖️ Legal Challenges | 📢 Grassroots Activism<a href="https://twitter.com/HC_Richardson?ref_src=twsrc%5Etfw">@HC_Richardson</a><br> <a href="https://t.co/hH0O0Wzx1I">https://t.co/hH0O0Wzx1I</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/1974917016239960326?ref_src=twsrc%5Etfw">October 5, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

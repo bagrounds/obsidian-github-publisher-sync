@@ -11,7 +11,7 @@ force_analyze_links: false
 link_analysis_time: 2026-03-22T23:38:04.085Z
 link_analysis_model: gemini-3.1-flash-lite-preview
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🇯🇵⚙️📈💯 The Toyota Way: 14 Management Principles from the World's Greatest Manufacturer  
 [🛒 The Toyota Way: 14 Management Principles from the World's Greatest Manufacturer. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3Ho3dId)  
   
@@ -61,11 +61,11 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 * **Practical Application:** The book provides numerous real-world examples and case studies, demonstrating the effectiveness of the Toyota Way in various industries. 🏢  
   
 ### Book Recommendations 📚  
-* **Best Alternate Book on the Same Topic:** *[Learning To See](./learning-to-see.md): Value-Stream Mapping to Add Value and Eliminate Muda* by Mike Rother and John Shook. This book provides a practical guide to value-stream mapping, a core tool of the TPS. 🗺️  
-* **Best Tangentially Related Book:** *[The Lean Startup](./the-lean-startup.md)* by Eric Ries. This book applies lean principles to startups, emphasizing rapid experimentation and customer feedback. 🚀  
+* **Best Alternate Book on the Same Topic:** *[Learning To See](/content/books/learning-to-see.md): Value-Stream Mapping to Add Value and Eliminate Muda* by Mike Rother and John Shook. This book provides a practical guide to value-stream mapping, a core tool of the TPS. 🗺️  
+* **Best Tangentially Related Book:** *[The Lean Startup](/content/books/the-lean-startup.md)* by Eric Ries. This book applies lean principles to startups, emphasizing rapid experimentation and customer feedback. 🚀  
 * **Best Diametrically Opposed Book:** *Reengineering the Corporation: A Manifesto for Business Revolution* by Michael Hammer and James Champy. This book advocates for radical, top-down changes, contrasting with Toyota's incremental approach. 💥  
-* **Best Fiction Book That Incorporates Related Ideas:** *[📈⚙️♾️ The Goal: A Process of Ongoing Improvement](./the-goal.md)* by Eliyahu M. Goldratt. This novel teaches lean principles through a compelling story about a struggling manufacturing plant. 🏭 📖  
-* **Best Book That Is More General:** *[👍➡️👍👍 Good to Great: Why Some Companies Make the Leap...And Others Don't](./good-to-great.md)* by Jim Collins. This book explores the characteristics of companies that achieve sustained success. 📈  
+* **Best Fiction Book That Incorporates Related Ideas:** *[📈⚙️♾️ The Goal: A Process of Ongoing Improvement](/content/books/the-goal.md)* by Eliyahu M. Goldratt. This novel teaches lean principles through a compelling story about a struggling manufacturing plant. 🏭 📖  
+* **Best Book That Is More General:** *[👍➡️👍👍 Good to Great: Why Some Companies Make the Leap...And Others Don't](/content/books/good-to-great.md)* by Jim Collins. This book explores the characteristics of companies that achieve sustained success. 📈  
 * **Best Book That Is More Specific:** *Toyota Kata: Managing People for Improvement, Adaptiveness, and Superior Results* by Mike Rother. This book dives deep into the specific routines and practices used at Toyota for continuous improvement. 🎯  
 * **Best Book That Is More Rigorous:** *Lean Thinking: Banish Waste and Create Wealth in Your Corporation* by James P. Womack and Daniel T. Jones. This book is a very in depth look at Lean, and is extremely well researched. 🧐  
 * **Best Book That Is More Accessible:** *2 Second Lean: How to Grow People and Build a Lean Culture* by Paul A. Akers. This book is a very simple and easy to digest look at Lean principals, and focuses on quick daily improvements. ⏱️  

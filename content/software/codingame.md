@@ -5,7 +5,7 @@ aliases:
 title: 💻🎮🕹️🧠 CodinGame
 URL: https://www.codingame.com
 ---
-[Home](../index.md) > [Software](./index.md)  
+[Home](/content/index.md) > [Software](/content/software/index.md)  
 # 💻🎮🕹️🧠 CodinGame  
 ### 🎮 CodinGame Report 🚀  
   
@@ -75,7 +75,7 @@ CodinGame provides a highly scalable 📈, multi-language 🌍, cloud-based ☁�
 * **Algorithms** 🧮: Sorting, searching, graph traversal, dynamic programming, greedy algorithms, etc.  
 * **Data Structures** 🏗️: Arrays, linked lists, trees, graphs, hash tables, stacks, queues, heaps.  
 * **Computational Complexity Theory** ⏱️: Big O notation ($O(n)$), time complexity, space complexity.  
-* **[Software Engineering](../topics/software-engineering.md) Principles** 🛠️: Code quality, modularity, testing, debugging.  
+* **[Software Engineering](/content/topics/software-engineering.md) Principles** 🛠️: Code quality, modularity, testing, debugging.  
 * **Object-Oriented Programming (OOP)** 🧩: Encapsulation, inheritance, polymorphism, abstraction.  
 * **Functional Programming** ⚛️: Immutability, pure functions, higher-order functions.  
 * **Game Theory** 🎲: Relevant for multiplayer AI challenges.  
@@ -87,10 +87,10 @@ CodinGame provides a highly scalable 📈, multi-language 🌍, cloud-based ☁�
   
 ##### 👶 Parent: A More General Topic  
   
-* **[Computer Science](../topics/computer-science.md) Education** 🧑‍🎓  
+* **[Computer Science](/content/topics/computer-science.md) Education** 🧑‍🎓  
 * **Online Learning Platforms** 🌐  
 * **Gamification** 🎮  
-* **[Software Development](../topics/software-development-and-coding.md)** 🧑‍💻  
+* **[Software Development](/content/topics/software-development-and-coding.md)** 🧑‍💻  
   
 ##### 👩‍👧‍👦 Children: More Specific Topics  
   
@@ -212,18 +212,18 @@ I told my computer I needed to go to CodinGame to debug my life, but it just gav
   
 ##### Tangentially Related  
   
-* **[🤔🐇🐢 Thinking, Fast and Slow](../books/thinking-fast-and-slow.md) by Daniel Kahneman** 🧠: Explores cognitive biases and decision-making, relevant for understanding how people approach problem-solving, even coding challenges.  
-* **[🌊🧘🧠📈 Flow: The Psychology of Optimal Experience](../books/flow-the-psychology-of-optimal-experience.md) by Mihaly Csikszentmihalyi** 🧘‍♀️: Discusses the concept of "flow state," which CodinGame's gamified approach aims to induce for optimal learning and engagement.  
+* **[🤔🐇🐢 Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md) by Daniel Kahneman** 🧠: Explores cognitive biases and decision-making, relevant for understanding how people approach problem-solving, even coding challenges.  
+* **[🌊🧘🧠📈 Flow: The Psychology of Optimal Experience](/content/books/flow-the-psychology-of-optimal-experience.md) by Mihaly Csikszentmihalyi** 🧘‍♀️: Discusses the concept of "flow state," which CodinGame's gamified approach aims to induce for optimal learning and engagement.  
   
 ##### Topically Opposed  
   
-* **[🦄👤🗓️ The Mythical Man-Month: Essays on Software Engineering](../books/the-mythical-man-month.md) by Frederick Brooks Jr.** 📜: Focuses on large-scale software project management and team dynamics, a stark contrast to the individual, isolated coding challenges on CodinGame.  
+* **[🦄👤🗓️ The Mythical Man-Month: Essays on Software Engineering](/content/books/the-mythical-man-month.md) by Frederick Brooks Jr.** 📜: Focuses on large-scale software project management and team dynamics, a stark contrast to the individual, isolated coding challenges on CodinGame.  
 * **"No Silver Bullet: Essence and Accidents of Software Engineering" by Frederick Brooks Jr.** 🚫: Argues against the idea of quick fixes or "silver bullets" for software development problems, contrasting with the immediate gratification and clear "solved" state of CodinGame puzzles.  
   
 ##### More General  
   
-* **[✅💻 Code Complete](../books/code-complete.md) by Steve McConnell** 🧑‍💻: A classic guide to software construction, focusing on fundamental principles of good code.  
-* **[🧼💾 Clean Code: A Handbook of Agile Software Craftsmanship](../books/clean-code.md) by Robert C. Martin** 🧹: Emphasizes writing readable, maintainable, and efficient code, crucial skills for any developer.  
+* **[✅💻 Code Complete](/content/books/code-complete.md) by Steve McConnell** 🧑‍💻: A classic guide to software construction, focusing on fundamental principles of good code.  
+* **[🧼💾 Clean Code: A Handbook of Agile Software Craftsmanship](/content/books/clean-code.md) by Robert C. Martin** 🧹: Emphasizes writing readable, maintainable, and efficient code, crucial skills for any developer.  
   
 ##### More Specific  
   
@@ -232,7 +232,7 @@ I told my computer I needed to go to CodinGame to debug my life, but it just gav
   
 ##### Fictional  
   
-* **[❄️💻💥 Snow Crash](../books/snow-crash.md) by Neal Stephenson** 🌐: A cyberpunk novel that explores virtual worlds and technology, hinting at the potential immersive future of online learning environments.  
+* **[❄️💻💥 Snow Crash](/content/books/snow-crash.md) by Neal Stephenson** 🌐: A cyberpunk novel that explores virtual worlds and technology, hinting at the potential immersive future of online learning environments.  
 * **"Ready Player One" by Ernest Cline** 🎮: A sci-fi adventure set in a virtual reality world, highlighting the power of gamification and complex puzzles, echoing CodinGame's core appeal.  
   
 ##### Rigorous  

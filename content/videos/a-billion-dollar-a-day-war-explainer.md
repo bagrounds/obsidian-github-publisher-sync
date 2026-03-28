@@ -13,7 +13,7 @@ force_analyze_links: false
 link_analysis_time: 2026-03-27T00:20:38.192Z
 link_analysis_model: gemini-3.1-flash-lite-preview
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md)  
 # 💰💸⚔️ A “Billion Dollar a Day” War | Explainer  
 ![A “Billion Dollar a Day” War | Explainer](https://youtu.be/XWbpT_B80_c)  
   

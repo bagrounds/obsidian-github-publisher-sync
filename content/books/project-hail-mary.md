@@ -13,7 +13,7 @@ link_analysis_time: 2026-03-22T06:06:10.546Z
 link_analysis_model: gemini-3.1-flash-lite-preview
 updated: 2026-03-25T08:15:52.813Z
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # ☄️🧑‍🚀🙏🌍 Project Hail Mary  
 [🛒 Project Hail Mary. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/49ODuEM)  
   
@@ -53,16 +53,16 @@ A: 🤓 The book is widely considered accessible due to its strong character voi
   
 ### 📖 Non-Fiction  
 * 🔭 *Astrophysics for People in a Hurry* by Neil deGrasse Tyson  
-* [📜🌍⏳ Sapiens: A Brief History of Humankind](./sapiens-a-brief-history-of-humankind.md) by Yuval Noah Harari  
+* [📜🌍⏳ Sapiens: A Brief History of Humankind](/content/books/sapiens-a-brief-history-of-humankind.md) by Yuval Noah Harari  
 * 🚀 *Packing for Mars: The Curious Science of Life in the Void* by Mary Roach  
   
 ### ❤️ If You Loved This  
-* [👨‍🚀🔴✨ The Martian](./the-martian.md) by Andy Weir (Features a similar competence narrative with high-stakes survival)  
-* [🕷️⏳ Children of Time](./children-of-time.md) by Adrian Tchaikovsky (Explores themes of evolutionary biology and non-human civilization)  
-* [🤖🤖🤖 We Are Legion (We Are Bob)](./we-are-legion-we-are-bob.md) by Dennis E. Taylor (Shares the lighthearted first-person narration of a cosmic mission)  
+* [👨‍🚀🔴✨ The Martian](/content/books/the-martian.md) by Andy Weir (Features a similar competence narrative with high-stakes survival)  
+* [🕷️⏳ Children of Time](/content/books/children-of-time.md) by Adrian Tchaikovsky (Explores themes of evolutionary biology and non-human civilization)  
+* [🤖🤖🤖 We Are Legion (We Are Bob)](/content/books/we-are-legion-we-are-bob.md) by Dennis E. Taylor (Shares the lighthearted first-person narration of a cosmic mission)  
   
 ### ↔️ Similar But Different  
-* [🌌3️⃣⚛️ The Three-Body Problem](./the-three-body-problem.md) by Cixin Liu (Focuses on global-scale existential threat with a grander, more philosophical scope)  
+* [🌌3️⃣⚛️ The Three-Body Problem](/content/books/the-three-body-problem.md) by Cixin Liu (Focuses on global-scale existential threat with a grander, more philosophical scope)  
 * 🗺️ *Dark Matter* by Blake Crouch (A fast-paced, contemporary thriller exploring complex scientific ideas like the multiverse)  
 * 🛰️ *Gideon the Ninth* by Tamsyn Muir (Features a unique character voice and space setting, but with a tone leaning toward dark fantasy and mystery)  
   

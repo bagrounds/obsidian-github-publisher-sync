@@ -9,7 +9,7 @@ Platform: "#YouTube"
 Channel:
 tags:
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md)  
 # What Makes Some Brains More Focused Than Others? | Marvin Chun | TEDxKFAS  
 ![What Makes Some Brains More Focused Than Others? | Marvin Chun | TEDxKFAS](https://youtu.be/aoRHq0TQnZM)  
 ## Tips to improve focus  

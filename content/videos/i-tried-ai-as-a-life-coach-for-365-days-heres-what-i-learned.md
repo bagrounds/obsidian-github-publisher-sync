@@ -10,7 +10,7 @@ Channel: Ali Abdaal
 tags:
 youtube: https://youtu.be/QF2wIywvDhk
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md)  
 # 🤖🗓️🧑‍🏫 I Tried AI as a Life Coach for 365 Days - Here’s What I Learned  
 ![I Tried AI as a Life Coach for 365 Days - Here’s What I Learned](https://youtu.be/QF2wIywvDhk)  
   
@@ -48,8 +48,8 @@ youtube: https://youtu.be/QF2wIywvDhk
 💡 **This** video provides a practical and detailed guide to using AI as a personal life coach, focusing on actionable workflows and specific tools. ⚖️ **It** contrasts with traditional human coaching by highlighting AI's strengths in processing vast amounts of text and providing objective, challenging perspectives, while also acknowledging its limitations in areas like accountability and deep emotional support. 🧠 **For** a richer understanding, it would be beneficial to explore the ethical implications of AI in personal development, the psychological impact of relying on AI for self-reflection, and comparative studies on the effectiveness of AI coaching versus human coaching.  
   
 ## 📚 Book Recommendations  
-* **[⚛️🔄 Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones](../books/atomic-habits.md) by James Clear**: 🛠️ **For** practical strategies on building good habits and breaking bad ones, which complements the video's focus on personal improvement workflows.  
-* **[🤔🐇🐢 Thinking, Fast and Slow](../books/thinking-fast-and-slow.md) by Daniel Kahneman**: 💡 **To** understand cognitive biases and decision-making, which can help in evaluating the AI's advice and one's own thought processes.  
-* **[🧬👥💾 Life 3.0: Being Human in the Age of Artificial Intelligence](../books/life-3-0.md) by Max Tegmark**: 🌍 **For** a broader perspective on the societal implications and future of AI, offering a contrasting view on the role of AI in human lives.  
+* **[⚛️🔄 Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones](/content/books/atomic-habits.md) by James Clear**: 🛠️ **For** practical strategies on building good habits and breaking bad ones, which complements the video's focus on personal improvement workflows.  
+* **[🤔🐇🐢 Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md) by Daniel Kahneman**: 💡 **To** understand cognitive biases and decision-making, which can help in evaluating the AI's advice and one's own thought processes.  
+* **[🧬👥💾 Life 3.0: Being Human in the Age of Artificial Intelligence](/content/books/life-3-0.md) by Max Tegmark**: 🌍 **For** a broader perspective on the societal implications and future of AI, offering a contrasting view on the role of AI in human lives.  
 * 🧘 **"The Power of Now" by Eckhart Tolle**: 🧘 **To** explore mindfulness and present moment awareness, which can enhance self-reflection regardless of whether AI is used as a tool.  
-* **[🕊️🤝 Nonviolent Communication: A Language of Life](../books/nonviolent-communication.md) by Marshall B. Rosenberg**: 💬 **For** understanding communication and empathy, skills that AI currently lacks but are crucial in human interaction and traditional coaching.
+* **[🕊️🤝 Nonviolent Communication: A Language of Life](/content/books/nonviolent-communication.md) by Marshall B. Rosenberg**: 💬 **For** understanding communication and empathy, skills that AI currently lacks but are crucial in human interaction and traditional coaching.

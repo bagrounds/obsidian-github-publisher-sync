@@ -9,7 +9,7 @@ tags:
 affiliate link: https://amzn.to/43R8TSz
 CTA: 👑 Seize power.
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 👑😈👎📈 The Dictator's Handbook: Why Bad Behavior Is Almost Always Good Politics  
 [🛒 The Dictator's Handbook: Why Bad Behavior Is Almost Always Good Politics. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/43R8TSz)  
   
@@ -65,13 +65,13 @@ The book offers a 😒 cynical but 🤔 compelling perspective by stripping away
   
 ### Book Recommendations 📚  
   
-* 🏆 **Best alternate book on the same topic:** [🌎👎👑💰🏚️ Why Nations Fail: The Origins of Power, Prosperity, and Poverty](./why-nations-fail-the-origins-of-power-prosperity-and-poverty.md) by Daron Acemoglu and James A. Robinson - 🏛️ Explores how political and economic institutions shape the prosperity of nations. ⚖️ While differing in their specific frameworks, it complements "The Dictator's Handbook" by providing a broader historical perspective.  
-* 🧠 **Best book that is tangentially related:** 🤔 *[Thinking, Fast and Slow](./thinking-fast-and-slow.md)* by Daniel Kahneman - 💡 Offers insights into cognitive biases and decision-making, which can help explain why leaders and their supporters make seemingly irrational choices.  
+* 🏆 **Best alternate book on the same topic:** [🌎👎👑💰🏚️ Why Nations Fail: The Origins of Power, Prosperity, and Poverty](/content/books/why-nations-fail-the-origins-of-power-prosperity-and-poverty.md) by Daron Acemoglu and James A. Robinson - 🏛️ Explores how political and economic institutions shape the prosperity of nations. ⚖️ While differing in their specific frameworks, it complements "The Dictator's Handbook" by providing a broader historical perspective.  
+* 🧠 **Best book that is tangentially related:** 🤔 *[Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md)* by Daniel Kahneman - 💡 Offers insights into cognitive biases and decision-making, which can help explain why leaders and their supporters make seemingly irrational choices.  
 * 🆚 **Best book that is diametrically opposed:** 👑 *The Prince* by Niccolò Machiavelli - 📜 Machiavelli's classic provides a manual for how a leader *should* behave. 📖 "The Dictator's Handbook" describes how leaders *do* behave, offering a more pragmatic counterpoint to Machiavelli's prescriptive advice.  
 * 🐷 **Best fiction book that incorporates related ideas:** 🐴 *Animal Farm* by George Orwell - 🐷 A satirical allegory of the Russian Revolution, illustrating how power corrupts and how even well-intentioned revolutions can lead to tyranny.  
-* 🗺️ **Best book that is more general:** 👨‍👩‍👧‍👦 *[Sapiens: A Brief History of Humankind](./sapiens-a-brief-history-of-humankind.md)* by Yuval Noah Harari - 📜 Provides a broad overview of human history and explores the role of power, institutions, and ideology in shaping human societies.  
+* 🗺️ **Best book that is more general:** 👨‍👩‍👧‍👦 *[Sapiens: A Brief History of Humankind](/content/books/sapiens-a-brief-history-of-humankind.md)* by Yuval Noah Harari - 📜 Provides a broad overview of human history and explores the role of power, institutions, and ideology in shaping human societies.  
 * 🔬 **Best book that is more specific:** 🏛️ *Political Order and Political Decay* by Francis Fukuyama - 🏛️ Examines the development and decline of political institutions across different countries and historical periods, providing a more detailed analysis of institutional change.  
-* 📊 **Best book that is more rigorous:** [📜🎮🏞️ Rules, Games, and Common Pool Resources](./rules-games-and-common-pool-resources.md) by Elinor Ostrom - 🧮 Offers a more theoretically grounded and empirically rigorous analysis of collective action problems and institutional design.  
+* 📊 **Best book that is more rigorous:** [📜🎮🏞️ Rules, Games, and Common Pool Resources](/content/books/rules-games-and-common-pool-resources.md) by Elinor Ostrom - 🧮 Offers a more theoretically grounded and empirically rigorous analysis of collective action problems and institutional design.  
 * 🗣️ **Best book that is more accessible:** 💸 *Freakonomics* by Steven D. Levitt and Stephen J. Dubner - 🤓 Uses economic principles to analyze a wide range of social and political phenomena in an engaging and accessible style.  
   
 ## 💬 [Gemini](https://gemini.google.com) Prompt  

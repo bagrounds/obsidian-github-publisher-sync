@@ -9,7 +9,7 @@ Platform: "#YouTube"
 Channel: "[[A Life Engineered]]"
 tags:
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md)  
 # ⬇️⬆️🗣️ Don't Get Down Leveled or How to Tell a Good Story (From a Principal at Amazon)  
 ![Don't Get Down Leveled or How to Tell a Good Story (From a Principal at Amazon)](https://youtu.be/hU6BVxtGd5g)  
 ## Levels  

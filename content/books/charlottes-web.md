@@ -7,7 +7,7 @@ share: true
 CTA: 🕷️ Save a friend.
 affiliate link: https://amzn.to/4qp0XkU
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🕷️🕸️ Charlotte's Web  
 [🛒 Charlotte's Web. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4qp0XkU)  
   

@@ -5,15 +5,15 @@ aliases:
 title: 🧩🏢🤖 Domain Driven AI Product Development
 URL: https://bagrounds.org/bot-chats/domain-driven-ai-product-development
 ---
-[Home](../index.md) > [Bot Chats](./index.md)  
+[Home](/content/index.md) > [Bot Chats](/content/bot-chats/index.md)  
 # 🧩🏢🤖 Domain Driven AI Product Development  
-## 💬 [Gemini](../software/gemini.md) Prompt 1  
+## 💬 [Gemini](/content/software/gemini.md) Prompt 1  
 > 🚀 Identify novel insights that emerge from the synthesis of ideas from the following books.  
 💡 Pick the most valuable insight and write a guide for exercising this idea to great practical benefit.  
 ✍️ Condense this guide into the most concise expression of this idea. 📖 Channel Strunk and White’s The Elements of Style to compress the core, most valuable essence of this idea into the fewest, densest, most valuable words possible.  
 📚 Recommend unmentioned books closely related to these ideas.  
->- [🤖🏗️ AI Engineering: Building Applications with Foundation Models](../books/ai-engineering-building-applications-with-foundation-models.md)  
->- [🧩🧱⚙️❤️ Domain-Driven Design: Tackling Complexity in the Heart of Software](../books/domain-driven-design.md)  
+>- [🤖🏗️ AI Engineering: Building Applications with Foundation Models](/content/books/ai-engineering-building-applications-with-foundation-models.md)  
+>- [🧩🧱⚙️❤️ Domain-Driven Design: Tackling Complexity in the Heart of Software](/content/books/domain-driven-design.md)  
   
 ### 🎯 Core Ideas from Each Book  
   
@@ -101,10 +101,10 @@ URL: https://bagrounds.org/bot-chats/domain-driven-ai-product-development
   
 1. **Implementing Domain-Driven Design** **by Vaughn Vernon:** A practical guide that builds upon Eric Evans' foundational work, offering concrete examples and implementation patterns for DDD. This would be invaluable for applying the DDD principles to AI system design.  
   
-2. **[🤖⚙️🔁 Designing Machine Learning Systems: An Iterative Process for Production-Ready Applications](../books/designing-machine-learning-systems-an-iterative-process-for-production-ready-applications.md)** **by Chip Huyen:** Precedes "AI Engineering," and provides a broader context on ML system design, covering infrastructure, data pipelines, and deployment, which are foundational to robust AI engineering.  
+2. **[🤖⚙️🔁 Designing Machine Learning Systems: An Iterative Process for Production-Ready Applications](/content/books/designing-machine-learning-systems-an-iterative-process-for-production-ready-applications.md)** **by Chip Huyen:** Precedes "AI Engineering," and provides a broader context on ML system design, covering infrastructure, data pipelines, and deployment, which are foundational to robust AI engineering.  
   
-3. **[💾⬆️🛡️ Designing Data-Intensive Applications: The Big Ideas Behind Reliable, Scalable, and Maintainable Systems](../books/designing-data-intensive-applications.md)** **by Martin Kleppmann:** While not specific to AI or DDD, this book provides deep insights into the technical challenges of building reliable, scalable, and maintainable data systems, which are crucial for both effective dataset engineering in AI and robust domain model persistence in DDD.  
+3. **[💾⬆️🛡️ Designing Data-Intensive Applications: The Big Ideas Behind Reliable, Scalable, and Maintainable Systems](/content/books/designing-data-intensive-applications.md)** **by Martin Kleppmann:** While not specific to AI or DDD, this book provides deep insights into the technical challenges of building reliable, scalable, and maintainable data systems, which are crucial for both effective dataset engineering in AI and robust domain model persistence in DDD.  
   
-4. **[🧑‍🤝‍🧑⚙️➡️ Team Topologies: Organizing Business and Technology Teams for Fast Flow](../books/team-topologies-organizing-business-and-technology-teams-for-fast-flow.md)** **by Matthew Skelton and Manuel Pais:** This book is excellent for understanding how to structure teams around Bounded Contexts, especially when integrating new AI capabilities into existing organizational structures, promoting efficient collaboration between domain experts and AI engineers.  
+4. **[🧑‍🤝‍🧑⚙️➡️ Team Topologies: Organizing Business and Technology Teams for Fast Flow](/content/books/team-topologies-organizing-business-and-technology-teams-for-fast-flow.md)** **by Matthew Skelton and Manuel Pais:** This book is excellent for understanding how to structure teams around Bounded Contexts, especially when integrating new AI capabilities into existing organizational structures, promoting efficient collaboration between domain experts and AI engineers.  
   
 5. **_Clean Architecture: A Craftsman's Guide to Software Structure and Design_** **by Robert C. Martin:** Provides principles for separating concerns and organizing software layers, which supports the DDD principle of keeping the domain model clean and independent of external concerns, including AI models and infrastructure.

@@ -10,7 +10,7 @@ Channel: Heather Cox Richardson
 tags:
 youtube: https://youtu.be/A8V00Z5McYA
 ---
-[Home](../index.md) > [Videos](./index.md) | [🏛️🇺🇸📖 Heather Cox Richardson](../people/heather-cox-richardson.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md) | [🏛️🇺🇸📖 Heather Cox Richardson](/content/people/heather-cox-richardson.md)  
 # 🗣️👨‍💼 A Conversation with Paul Krugman  
 ![A Conversation with Paul Krugman](https://youtu.be/A8V00Z5McYA)  
   
@@ -53,5 +53,5 @@ youtube: https://youtu.be/A8V00Z5McYA
 * 📈 Basic Economics: A Common Sense Guide to the Economy by Thomas Sowell: 🛠️ Sowell’s book emphasizes core principles like incentives, prices, and markets to explain economic outcomes, often presenting a market-centric viewpoint that downplays the structural inequality and government-led resource importance highlighted by Krugman.  
   
 ### 🎨 Creatively Related  
-* [💀👨‍🏫 The Death of Expertise: The Campaign Against Established Knowledge and Why It Matters](../books/the-death-of-expertise-the-campaign-against-established-knowledge-and-why-it-matters.md) by Tom Nichols: 💡 This book explores the breakdown of trust between the public and experts, which is relevant to the discussion of Substack as a way for public intellectuals to bypass traditional, restrictive gatekeepers.  
+* [💀👨‍🏫 The Death of Expertise: The Campaign Against Established Knowledge and Why It Matters](/content/books/the-death-of-expertise-the-campaign-against-established-knowledge-and-why-it-matters.md) by Tom Nichols: 💡 This book explores the breakdown of trust between the public and experts, which is relevant to the discussion of Substack as a way for public intellectuals to bypass traditional, restrictive gatekeepers.  
 * 🌉 The Big Roads: The Untold Story of the Engineers, Visionaries, and Trailblazers Who Built the Interstate Highway System by Earl Swift: 🚗 This non-fiction work details the history of a colossal public works project, providing context for the video's nostalgia for periods when the U.S. government easily built grand public infrastructure.

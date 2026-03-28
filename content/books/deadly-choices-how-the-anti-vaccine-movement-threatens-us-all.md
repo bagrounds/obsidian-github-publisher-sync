@@ -7,7 +7,7 @@ share: true
 CTA: 🚨 Protect futures.
 affiliate link: https://amzn.to/3L27vHh
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 💀🚫🦠 Deadly Choices: How the Anti-Vaccine Movement Threatens Us All  
 [🛒 Deadly Choices: How the Anti-Vaccine Movement Threatens Us All. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3L27vHh)  
   

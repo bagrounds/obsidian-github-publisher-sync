@@ -8,7 +8,7 @@ Author:
 tags:
 affiliate link: https://amzn.to/43YIOCc
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🎲🧮 Probability Theory: The Logic of Science  
 [🛒 Probability Theory: The Logic of Science. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/43YIOCc)  
   
@@ -69,7 +69,7 @@ E.T. Jaynes was a highly respected physicist and statistician known for his rigo
 * **Best Tangentially Related Book:** "Information Theory, Inference, and Learning Algorithms" by David J.C. MacKay. This book delves into the broader field of information theory and its connections to machine learning and inference. ℹ️  
 * **Best Diametrically Opposed Book:** "Frequentist Probability and Statistical Inference" by Deborah Mayo. This book represents the frequentist perspective, providing a contrasting view to Jaynes' Bayesian approach. ⚖️  
 * **Best Fiction Book That Incorporates Related Ideas:** "The Quantum Thief" by Hannu Rajaniemi. This science fiction novel explores themes of probability, identity, and information in a futuristic setting. 🤖  
-* **Best More General Book:** [ℹ️ Information: A Very Short Introduction](./information.md) by Luciano Floridi. A short, but excellent overview of Information theory.  
+* **Best More General Book:** [ℹ️ Information: A Very Short Introduction](/content/books/information.md) by Luciano Floridi. A short, but excellent overview of Information theory.  
 * **Best More Specific Book:** "Bayesian Data Analysis" by Andrew Gelman, John B. Carlin, Hal S. Stern, David B. Dunson, Aki Vehtari, and Donald B. Rubin. This book provides a comprehensive and practical guide to Bayesian data analysis techniques. 📈  
 * **Best More Rigorous Book:** "Theory of Probability" by Harold Jeffreys. This classic text is a highly rigorous treatment of Bayesian probability theory. 📜  
 * **Best More Accessible Book:** "Think Bayes" by Allen B. Downey. This book uses Python to teach Bayesian concepts in a practical and accessible way. 🐍  

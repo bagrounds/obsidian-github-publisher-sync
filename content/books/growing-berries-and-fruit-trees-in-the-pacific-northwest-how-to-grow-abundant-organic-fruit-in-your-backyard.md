@@ -6,7 +6,7 @@ URL: https://bagrounds.org/books/growing-berries-and-fruit-trees-in-the-pacific-
 share: true
 affiliate link: https://amzn.to/3Su4QGz
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🍓🌳 Growing Berries and Fruit Trees in the Pacific Northwest: How to Grow Abundant, Organic Fruit in Your Backyard  
 [🛒 Growing Berries and Fruit Trees in the Pacific Northwest: How to Grow Abundant, Organic Fruit in Your Backyard. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3Su4QGz)  
   
@@ -70,7 +70,7 @@ This book is ideal for:
   
 * 🍎 **"The Fruit Gardener's Bible: A Complete Guide to Growing Fruits and Nuts in the Home Garden" by Lewis Hill and Leonard Perry**: This offers a more general, less regionally-specific guide to fruit growing, potentially covering a wider range of climates and techniques.  
 * 🌱 **"Rodale's Basic Organic Gardening: A Beginner's Guide to Starting a Healthy Garden" by Deborah L. Martin**: Focuses on the foundational principles of organic gardening applicable anywhere, not just fruit or the PNW.  
-* **[🌍🌿 Gaia's Garden: A Guide to Home-Scale Permaculture](./gaias-garden.md) by Toby Hemenway**: Explores the broader principles of permaculture design, which can be applied to fruit growing but encompasses a whole-system approach to gardening and sustainable living.  
+* **[🌍🌿 Gaia's Garden: A Guide to Home-Scale Permaculture](/content/books/gaias-garden.md) by Toby Hemenway**: Explores the broader principles of permaculture design, which can be applied to fruit growing but encompasses a whole-system approach to gardening and sustainable living.  
 * 🌾 **"The One-Straw Revolution" by Masanobu Fukuoka**: A classic in natural farming, offering a philosophical and practical counterpoint to more intensive cultivation methods.  
   
 ### ✨ Creatively Related (Inspiration, Preservation, Specific Fruits)  
@@ -80,9 +80,9 @@ This book is ideal for:
 * 🍏 **"The Apple Grower: A Guide for the Organic Orchardist" by Michael Phillips**: For those wanting to deep-dive into organic apple cultivation specifically.  
 * 🫐 **"Blueberry Summers: Growing Up at the Lake" by Curtiss Anderson (if focused on cultivation/nature)**: While potentially more memoir, if it touches on the experience of growing or being around blueberry cultivation, it could offer a different, narrative perspective. (Actual content may vary).  
 * 🍹 **"The Drunken Botanist: The Plants That Create the World's Great Drinks" by Amy Stewart**: Explores the botanical origins of alcoholic beverages, many of which involve fruits and berries, offering a fun, related tangent.  
-* **[🪢🌾 Braiding Sweetgrass: Indigenous Wisdom, Scientific Knowledge, and the Teachings of Plants](./braiding-sweetgrass.md) by Robin Wall Kimmerer**: Offers a profound, spiritual, and ecological perspective on our relationship with plants, which can enrich any gardening practice.  
+* **[🪢🌾 Braiding Sweetgrass: Indigenous Wisdom, Scientific Knowledge, and the Teachings of Plants](/content/books/braiding-sweetgrass.md) by Robin Wall Kimmerer**: Offers a profound, spiritual, and ecological perspective on our relationship with plants, which can enrich any gardening practice.  
 * 👩‍🍳 **"Jam Bake: Inspired Recipes for Creating and Baking with Preserves" by Camilla Wynne**: Takes the harvest preservation a step further by incorporating those preserves into baked goods.  
 * 🍓 **"Homegrown Berries: Successfully Grow Your Own Strawberries, Raspberries, Blueberries, Blackberries, and More" by Timber Press**: A focused guide specifically on berry cultivation, potentially offering more depth on that category.  
   
-## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
+## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Growing Berries and Fruit Trees in the Pacific Northwest: How to Grow Abundant, Organic Fruit in Your Backyard. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

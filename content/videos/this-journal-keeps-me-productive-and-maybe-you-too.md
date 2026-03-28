@@ -9,7 +9,7 @@ Platform: "#YouTube"
 Channel:
 tags:
 ---
-[Home](../index.md) > [Videos](./index.md) | [⏮️ Your Theme](./your-theme.md) [⏭️ 2025 Yearly Themes](./2025-yearly-themes.md) | [📒 Bullet Journal](./bullet-journal.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md) | [⏮️ Your Theme](/content/videos/your-theme.md) [⏭️ 2025 Yearly Themes](/content/videos/2025-yearly-themes.md) | [📒 Bullet Journal](/content/videos/bullet-journal.md)  
 # This Journal Keeps Me Productive (and Maybe You Too)  
 ![This Journal Keeps Me Productive (& Maybe You Too)](https://youtu.be/fSwpe8r50_o)  
   
@@ -37,12 +37,12 @@ TL;DR: This video introduces the Theme System Journal, a customizable tool desig
 The presenter emphasizes the journal's flexibility and encourages viewers to adapt the system to their own needs, even without purchasing the physical journal. 🤸 [00:00:06]  
   
 ### 📖 Recommended Books 📚  
-1.  **[⚛️🔄 Atomic Habits](../books/atomic-habits.md) by James Clear:** A comprehensive guide to building good habits and breaking bad ones.  
-2.  **"[The 7 Habits of Highly Effective People](../books/the-7-habits-of-highly-effective-people.md)" by Stephen Covey:** A classic book on personal and interpersonal effectiveness.  
-3.  **[🤿💼 Deep Work](../books/deep-work.md) by Cal Newport:** Explores strategies for focused work in a distracted world.  
-4.  **[🌱🧘🏼‍♀️🏆 Mindset: The New Psychology of Success](../books/mindset.md) by Carol S. Dweck:** Discusses the power of mindset in achieving goals.  
-5.  **[✅😌 Getting Things Done: The Art of Stress-Free Productivity](../books/getting-things-done-the-art-of-stress-free-productivity.md) by David Allen:** A popular method for managing tasks and projects.  
+1.  **[⚛️🔄 Atomic Habits](/content/books/atomic-habits.md) by James Clear:** A comprehensive guide to building good habits and breaking bad ones.  
+2.  **"[The 7 Habits of Highly Effective People](/content/books/the-7-habits-of-highly-effective-people.md)" by Stephen Covey:** A classic book on personal and interpersonal effectiveness.  
+3.  **[🤿💼 Deep Work](/content/books/deep-work.md) by Cal Newport:** Explores strategies for focused work in a distracted world.  
+4.  **[🌱🧘🏼‍♀️🏆 Mindset: The New Psychology of Success](/content/books/mindset.md) by Carol S. Dweck:** Discusses the power of mindset in achieving goals.  
+5.  **[✅😌 Getting Things Done: The Art of Stress-Free Productivity](/content/books/getting-things-done-the-art-of-stress-free-productivity.md) by David Allen:** A popular method for managing tasks and projects.  
 6.  **"Make Time: How to Focus on What Matters Every Day" by Jake Knapp and John Zeratsky:** Practical strategies for prioritizing and making time for important activities.  
   
 ## 〰️ Similar  
-- [Bullet Journal](./bullet-journal.md)  
+- [Bullet Journal](/content/videos/bullet-journal.md)  

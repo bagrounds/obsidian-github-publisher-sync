@@ -10,7 +10,7 @@ Channel: PBS NewsHour
 tags:
 youtube: https://youtu.be/VZq7ZavUlJc
 ---
-[Home](../index.md) > [Videos](./index.md) | [🔬🛡️ Science Under Siege: How to Fight the Five Most Powerful Forces That Threaten Our World](../books/science-under-siege-how-to-fight-the-five-most-powerful-forces-that-threaten-our-world.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md) | [🔬🛡️ Science Under Siege: How to Fight the Five Most Powerful Forces That Threaten Our World](/content/books/science-under-siege-how-to-fight-the-five-most-powerful-forces-that-threaten-our-world.md)  
 # 🔬🛡️🤥 Authors of 'Science Under Siege' warn of concerted effort to discredit science  
 ![Authors of 'Science Under Siege' warn of concerted effort to discredit science](https://youtu.be/VZq7ZavUlJc)  
   
@@ -60,15 +60,15 @@ A: ⚖️ The media contributes to the problem in two ways: promoting **propagan
   
 ### **Similar: Organized Disinformation and Scientific Consensus**  
   
-- [💰🤥 Merchants of Doubt](../books/merchants-of-doubt.md) by Naomi Oreskes and Erik M. Conway  
+- [💰🤥 Merchants of Doubt](/content/books/merchants-of-doubt.md) by Naomi Oreskes and Erik M. Conway  
     - 🔬 Details the history of how a handful of scientists obscured the truth on issues from tobacco smoke to global warming, reinforcing the idea of organized, politically motivated attacks on science.  
   
-- [💀👨‍🏫 The Death of Expertise: The Campaign Against Established Knowledge and Why It Matters](../books/the-death-of-expertise-the-campaign-against-established-knowledge-and-why-it-matters.md) by Tom Nichols  
+- [💀👨‍🏫 The Death of Expertise: The Campaign Against Established Knowledge and Why It Matters](/content/books/the-death-of-expertise-the-campaign-against-established-knowledge-and-why-it-matters.md) by Tom Nichols  
     - 🎓 Explores the cultural factors and political trends that have led to a rejection of established knowledge, expertise, and facts in modern public life, aligning with the video's theme of scientists being portrayed as public enemies.  
   
 ### **Contrasting: Psychology, Trust, and Decision-Making**  
   
-- [🤔🐇🐢 Thinking, Fast and Slow](../books/thinking-fast-and-slow.md) by Daniel Kahneman  
+- [🤔🐇🐢 Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md) by Daniel Kahneman  
     - 🧠 Explains the two systems that drive thought—System 1 (fast, intuitive) and System 2 (slow, logical)—providing a foundational understanding of the cognitive biases that make people vulnerable to emotionally charged misinformation.  
   
 - Why Trust Science? by Naomi Oreskes  
@@ -76,10 +76,10 @@ A: ⚖️ The media contributes to the problem in two ways: promoting **propagan
   
 ### **Creatively Related: Political and Societal Context**  
   
-- [🙅‍♀️👹 It Can't Happen Here](../books/it-cant-happen-here.md) by Sinclair Lewis  
+- [🙅‍♀️👹 It Can't Happen Here](/content/books/it-cant-happen-here.md) by Sinclair Lewis  
     - 🗳️ This 1935 novel offers a cautionary tale about the rise of a populist, authoritarian political leader in America, providing a crucial fictional parallel for how political movements can become weaponized against objective reality and institutions.  
   
-- [🔬🔄 The Structure of Scientific Revolutions](../books/the-structure-of-scientific-revolutions.md) by Thomas S. Kuhn  
+- [🔬🔄 The Structure of Scientific Revolutions](/content/books/the-structure-of-scientific-revolutions.md) by Thomas S. Kuhn  
     - 💡 Explores how major scientific advancements occur through "paradigm shifts" rather than linear progress. It helps readers understand that challenges to scientific consensus (even legitimate ones) are often revolutionary and that science is a human process, offering context to the skepticism scientists face.  
   
 ## 🐦 Tweet  

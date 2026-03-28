@@ -7,7 +7,7 @@ share: true
 CTA: Transform language.
 affiliate link: https://amzn.to/4eLqHU9
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🗣️💻 Natural Language Processing with Transformers  
 [🛒 Natural Language Processing with Transformers. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4eLqHU9)  
   
@@ -57,7 +57,7 @@ affiliate link: https://amzn.to/4eLqHU9
   
 * 📚 **Transformers for Natural Language Processing: Build innovative deep neural network architectures for NLP with Python, PyTorch, TensorFlow, BERT, RoBERTa, and more** by Denis Rothman. This book also focuses on transformers and covers various models and applications using different frameworks.  
 * 📚 **Hands-On Generative AI with Transformers and Diffusion Models** by Omar Sanseviero, Pedro Cuenca, Apolinário Passos, Jonathan Whitaker. While broader than just NLP, it covers generative AI with a strong focus on transformers.  
-* **[🤖🗣️ Hands-On Large Language Models: Language Understanding and Generation](./hands-on-large-language-models-language-understanding-and-generation.md)** by Jay Alammar, Maarten Grootendorst. This book delves into Large Language Models (LLMs), which are predominantly based on transformer architectures.  
+* **[🤖🗣️ Hands-On Large Language Models: Language Understanding and Generation](/content/books/hands-on-large-language-models-language-understanding-and-generation.md)** by Jay Alammar, Maarten Grootendorst. This book delves into Large Language Models (LLMs), which are predominantly based on transformer architectures.  
 * 📚 **Building Language Applications with Hugging Face** (This is the same book as the report, just a slightly different title/subtitle sometimes used) by Lewis Tunstall, Leandro von Werra, Thomas Wolf.  
   
 ### ⚖️ Contrasting Books (Different NLP Approaches or Focus)  
@@ -71,14 +71,14 @@ affiliate link: https://amzn.to/4eLqHU9
   
 ### ✨ Creatively Related Books (Broader AI/ML or Related Concepts)  
   
-* **[🧠💻🤖 Deep Learning](./deep-learning.md)** by Ian Goodfellow, Yoshua Bengio, and Aaron Courville. A foundational textbook covering the mathematical and conceptual background of deep learning, essential for understanding the underpinnings of transformers.  
+* **[🧠💻🤖 Deep Learning](/content/books/deep-learning.md)** by Ian Goodfellow, Yoshua Bengio, and Aaron Courville. A foundational textbook covering the mathematical and conceptual background of deep learning, essential for understanding the underpinnings of transformers.  
 * 💻 **Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow** by Aurélien Géron. While not solely focused on NLP, it provides practical guidance on machine learning and deep learning concepts and frameworks used in implementing transformer models.  
 * 🏗️ **Deep Learning From Scratch: Building with Python from First Principles** by Seth Weidman. For those wanting to understand the core mechanics of deep learning models by building them using basic Python and NumPy.  
 * 🗣️ **Deep Learning for Natural Language Processing** by Jian Zhang, Reza Bosagh Zadeh, and Richard Socher. This book covers deep learning techniques specifically for NLP, including foundational models leading up to transformers, and aims to make complex concepts accessible.  
 * 🎨 **Generative AI for Everyone: Deep learning, NLP, and LLMs for creative and practical applications** by Karthikeyan Sabesan, Nilip Dutta. Covers the broader landscape of generative AI, including its foundations in deep learning and NLP with LLMs, and explores creative applications.  
 * 🧱 **Build a Large Language Model (From Scratch)** by Sebastian Raschka. This book would provide a deep dive into the fundamental construction of LLMs, which are based on transformers, offering a different perspective than applying existing models.  
   
-## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
+## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Natural Language Processing with Transformers. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.  
   
 ## 🐦 Tweet  

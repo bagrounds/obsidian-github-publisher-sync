@@ -7,7 +7,7 @@ share: true
 affiliate link: https://amzn.to/4kjOXP5
 updated: 2026-03-12T10:15:10.815Z
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 📖🫂🥼 Handbook of Attachment: Theory, Research, and Clinical Applications  
 [🛒 Handbook of Attachment: Theory, Research, and Clinical Applications. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4kjOXP5)  
   
@@ -41,8 +41,8 @@ updated: 2026-03-12T10:15:10.815Z
   
 ### 🫂 Similar Books (Comprehensive Attachment Focus)  
 * 📚 **Attachment and Loss Trilogy by John Bowlby:** 👴 The foundational texts by the father of attachment theory. Includes *Volume 1: Attachment*, *Volume 2: Separation: Anxiety and Anger*, and *Volume 3: Loss: Sadness and Depression*.  
-* 👩‍👧‍👦 **[👶🤔 Patterns of Attachment: A Psychological Study of the Strange Situation](./patterns-of-attachment-a-psychological-study-of-the-strange-situation.md) by Mary D. Salter Ainsworth et al.:** 📍 Details the landmark Baltimore study and methods (including the Strange Situation) that established attachment patterns.  
-* 🏠 **[👨‍👩‍👧‍👦🛡️ A Secure Base: Parent-Child Attachment and Healthy Human Development](./a-secure-base-parent-child-attachment-and-healthy-human-development.md) by John Bowlby:** ❤️ Explores key concepts like the secure base and its role in healthy development.  
+* 👩‍👧‍👦 **[👶🤔 Patterns of Attachment: A Psychological Study of the Strange Situation](/content/books/patterns-of-attachment-a-psychological-study-of-the-strange-situation.md) by Mary D. Salter Ainsworth et al.:** 📍 Details the landmark Baltimore study and methods (including the Strange Situation) that established attachment patterns.  
+* 🏠 **[👨‍👩‍👧‍👦🛡️ A Secure Base: Parent-Child Attachment and Healthy Human Development](/content/books/a-secure-base-parent-child-attachment-and-healthy-human-development.md) by John Bowlby:** ❤️ Explores key concepts like the secure base and its role in healthy development.  
 * ⚕️ **Attachment Theory in Practice: Emotionally Focused Therapy (EFT) with Individuals, Couples, and Families by Susan M. Johnson:** 🫂 Applies attachment principles specifically within the EFT framework.  
 * 🌱 **Attachment Theory Applied: Fostering Personal Growth through Healthy Relationships by Mario Mikulincer and Phillip R. Shaver:** 🔬 Reviews attachment-based interventions across various domains, including therapy, education, and health.  
 * 🧑‍ foster **Attachment Handbook for Foster Care and Adoption by Mary Beek and Gillian Schofield:** 👩‍👧‍👦 Focuses on applying attachment concepts in the context of foster care and adoption.  
@@ -57,15 +57,15 @@ updated: 2026-03-12T10:15:10.815Z
 ### ✨ Creatively Related Reads  
 * 🧠 **Affect Regulation and the Origin of the Self by Allan N. Schore:** 🧬 Explores the neurobiology of emotional development and the role of early relationships in shaping the brain and self, complementing attachment theory with a deep dive into neuroscience.  
 * 🗣️ **Affect Regulation, Mentalization, and the Development of the Self by Peter Fonagy et al.:** 🧠 Integrates attachment theory with concepts of mentalization (understanding mental states) and affect regulation, particularly relevant for understanding personality disorders.  
-* **[🫂 Hold Me Tight: Seven Conversations for a Lifetime of Love](./hold-me-tight-seven-conversations-for-a-lifetime-of-love.md) by Sue Johnson:** ❤️ A practical guide for couples based on Emotionally Focused Therapy (EFT), which is heavily grounded in attachment science, translating theory into relational practice.  
+* **[🫂 Hold Me Tight: Seven Conversations for a Lifetime of Love](/content/books/hold-me-tight-seven-conversations-for-a-lifetime-of-love.md) by Sue Johnson:** ❤️ A practical guide for couples based on Emotionally Focused Therapy (EFT), which is heavily grounded in attachment science, translating theory into relational practice.  
 * ❤️ **Wired for Love: How Understanding Your Partner's Brain and Attachment Style Can Help You Defuse Conflict and Build a Secure Relationship by Stan Tatkin:** 🧠 Blends attachment theory with neuroscience for a practical couples' guide.  
-* **[🧑‍❤️‍🧑🔗 Attached: The New Science of Adult Attachment and How It Can Help You Find - and Keep - Love](./attached-the-new-science-of-adult-attachment-and-how-it-can-help-you-find-and-keep-love.md) by Amir Levine and Rachel S.F. Heller:** 🧑‍🤝‍🧑 A popular science book translating adult attachment research into practical advice for romantic relationships.  
-* **[🤕🎼🧠 The Body Keeps the Score: Brain, Mind, and Body in the Healing of Trauma](./the-body-keeps-the-score-brain-mind-and-body-in-the-healing-of-trauma.md) by Bessel van der Kolk:** 🧠 While focused on trauma, it deeply explores how adverse experiences (often related to attachment disruptions) impact the mind and body.  
-* **[🤱🏼🤿🪞🌱 Parenting from the Inside Out: How a Deeper Self-Understanding Can Help You Raise Children Who Thrive](./parenting-from-the-inside-out-how-a-deeper-self-understanding-can-help-you-raise-children-who-thrive.md) by Daniel J. Siegel and Mary Hartzell:** 🧑‍🍼 Connects parents' own childhood experiences (including attachment patterns) with their current parenting practices, integrating neuroscience and attachment.  
+* **[🧑‍❤️‍🧑🔗 Attached: The New Science of Adult Attachment and How It Can Help You Find - and Keep - Love](/content/books/attached-the-new-science-of-adult-attachment-and-how-it-can-help-you-find-and-keep-love.md) by Amir Levine and Rachel S.F. Heller:** 🧑‍🤝‍🧑 A popular science book translating adult attachment research into practical advice for romantic relationships.  
+* **[🤕🎼🧠 The Body Keeps the Score: Brain, Mind, and Body in the Healing of Trauma](/content/books/the-body-keeps-the-score-brain-mind-and-body-in-the-healing-of-trauma.md) by Bessel van der Kolk:** 🧠 While focused on trauma, it deeply explores how adverse experiences (often related to attachment disruptions) impact the mind and body.  
+* **[🤱🏼🤿🪞🌱 Parenting from the Inside Out: How a Deeper Self-Understanding Can Help You Raise Children Who Thrive](/content/books/parenting-from-the-inside-out-how-a-deeper-self-understanding-can-help-you-raise-children-who-thrive.md) by Daniel J. Siegel and Mary Hartzell:** 🧑‍🍼 Connects parents' own childhood experiences (including attachment patterns) with their current parenting practices, integrating neuroscience and attachment.  
 * 💞 **Polysecure: Attachment, Trauma and Consensual Nonmonogamy by Jessica Fern:** 🧑‍🤝‍🧑 Applies attachment theory principles to the specific context of consensual nonmonogamous relationships.  
 * 🎭 **Fiction Exploring Attachment Themes:** 📖 Novels like *The Language of Flowers* by Vanessa Diffenbaugh or Robin Hobb's *Farseer Trilogy* can offer narrative explorations of how early relationships and attachment styles shape characters' lives and relationships. ✍️ Dostoevsky's *Notes from Underground* also explores relational dynamics influenced by background.".  
   
-## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
+## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Handbook of Attachment: Theory, Research, and Clinical Applications. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.  
   
 ## 🦋 Bluesky    

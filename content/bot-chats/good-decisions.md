@@ -5,9 +5,9 @@ aliases:
 title: 😇🔮🎲🎬 Good Decisions
 URL: https://bagrounds.org/bot-chats/good-decisions
 ---
-[Home](../index.md) > [Bot Chats](./index.md)  
+[Home](/content/index.md) > [Bot Chats](/content/bot-chats/index.md)  
 # 😇🔮🎲🎬 Good Decisions  
-## 💬 [Gemini](../software/gemini.md) (2.5 Flash) Prompt 1. ▶️ Beginning  
+## 💬 [Gemini](/content/software/gemini.md) (2.5 Flash) Prompt 1. ▶️ Beginning  
 > 🤔 What is a good decision and how can we improve our decision making processes?  
   
 👍 A good decision is not solely defined by a positive outcome, but rather by the quality of the process used to arrive at it. 🍀 While a good process increases the likelihood of a favorable outcome, 🎲 luck can sometimes lead to good outcomes from bad decisions, and vice versa.  
@@ -179,25 +179,25 @@ Here are some of the key disciplines focused on decision-making:
   
 ### 💡 Foundational & Understanding Biases  
   
-1. 📖 **[Thinking, Fast and Slow](../books/thinking-fast-and-slow.md) by Daniel Kahneman:**  
+1. 📖 **[Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md) by Daniel Kahneman:**  
     * ⭐ **Why it's essential:** This is arguably *the* seminal work in behavioral economics 🤯 and judgment and decision-making. Kahneman, a Nobel laureate 🏆, introduces the concept of two systems of thinking (System 1: fast ⚡, intuitive; System 2: slow 🐢, deliberate) and meticulously explains how cognitive biases and heuristics lead to predictable errors in judgment. 🤕 Understanding these biases is the first step to mitigating them. 💪  
     * 🧠 **What you'll learn:** How your mind works ⚙️, the pervasive nature of biases 🕸️, and why even smart people make irrational decisions. 🤪  
   
-2. 📉 **[Predictably Irrational](../books/predictably-irrational.md) by Dan Ariely:**  
+2. 📉 **[Predictably Irrational](/content/books/predictably-irrational.md) by Dan Ariely:**  
     * ⭐ **Why it's essential:** Ariely makes the sometimes dense topics of behavioral economics highly accessible 🤸‍♀️ and entertaining 😂 through a series of engaging experiments 🧪 and real-world examples. 🌍 He demonstrates how our irrationality is not random, but predictable. 🤓  
     * 🧐 **What you'll learn:** The "hidden forces" 👻 that shape our decisions, often leading us astray 🧭, and how to identify these patterns in yourself and others. 👁️  
   
-3. 📢 **[Noise](../books/noise.md): A Flaw in Human Judgment by Daniel Kahneman, Olivier Sibony, and Cass R. Sunstein:**  
+3. 📢 **[Noise](/content/books/noise.md): A Flaw in Human Judgment by Daniel Kahneman, Olivier Sibony, and Cass R. Sunstein:**  
     * ⭐ **Why it's essential:** This newer work by Kahneman and co-authors delves into a different, yet equally pervasive, problem: noise. 🔈 While "bias" is a systematic deviation ⬅️, "noise" is unwanted variability in judgments that should be identical. 👯 Think of two doctors 🧑‍⚕️ giving different diagnoses for the same patient, or two judges 👨‍⚖️ handing down different sentences for similar crimes.  
     * 👂 **What you'll learn:** How inconsistency (noise) impacts decision-making in various domains 🏢, and practical strategies for reducing it in individual and organizational contexts. 🧑‍🤝‍🧑  
   
-4. **[🎨🤔🖼️ The Art of Thinking Clearly](../books/the-art-of-thinking-clearly.md) by Rolf Dobelli:**  
+4. **[🎨🤔🖼️ The Art of Thinking Clearly](/content/books/the-art-of-thinking-clearly.md) by Rolf Dobelli:**  
     * ⭐ **Why it's essential:** A highly digestible book 🍔 that presents 99 common cognitive biases and logical fallacies in short, clear chapters. It's an excellent quick reference guide 📖 to many of the mental shortcuts 🩳 that can lead to poor decisions. 👎  
     * 👓 **What you'll learn:** A broad overview 🗺️ of various thinking errors and how to recognize them. 👀  
   
 ### 🛠️ Practical Guides & Frameworks  
   
-5. **[🤔💡⚖️✅ Decisive: How to Make Better Choices in Life and Work](../books/decisive-how-to-make-better-choices-in-life-and-work.md) by Chip Heath and Dan Heath:**  
+5. **[🤔💡⚖️✅ Decisive: How to Make Better Choices in Life and Work](/content/books/decisive-how-to-make-better-choices-in-life-and-work.md) by Chip Heath and Dan Heath:**  
     * ⭐ **Why it's essential:** This book offers a practical, four-step process (WRAP) for making better decisions:  
         * ↔️ **W**iden your options  
         * ✅ **R**eality-test your assumptions  
@@ -205,7 +205,7 @@ Here are some of the key disciplines focused on decision-making:
         * 🛡️ **P**repare to be wrong  
     * 🎯 **What you'll learn:** A clear, actionable framework 🏗️ to navigate complex decisions, reduce bias, and improve outcomes. 📈  
   
-6. **[🎲🤔 Thinking in Bets: Making Smarter Decisions When You Don't Have All the Facts](../books/thinking-in-bets-making-smarter-decisions-when-you-dont-have-all-the-facts.md) by Annie Duke:**  
+6. **[🎲🤔 Thinking in Bets: Making Smarter Decisions When You Don't Have All the Facts](/content/books/thinking-in-bets-making-smarter-decisions-when-you-dont-have-all-the-facts.md) by Annie Duke:**  
     * ⭐ **Why it's essential:** Written by a former professional poker player 👩‍💼, this book offers a unique perspective 👓 on decision-making under uncertainty. Duke emphasizes thinking in probabilities ➗, separating the quality of a decision from its outcome 🥇, and embracing uncertainty. 🤔  
     * 🛣️ **What you'll learn:** How to adopt a probabilistic mindset 🧠, manage risk ⚠️, and learn from outcomes even when they don't go your way. 🛤️  
   
@@ -215,11 +215,11 @@ Here are some of the key disciplines focused on decision-making:
   
 ### 🔭 Expanding Your Perspective  
   
-8. ⬆️ **[Nudge](../books/nudge.md): Improving Decisions About Health, Wealth, and Happiness by Richard H. Thaler and Cass R. Sunstein:**  
+8. ⬆️ **[Nudge](/content/books/nudge.md): Improving Decisions About Health, Wealth, and Happiness by Richard H. Thaler and Cass R. Sunstein:**  
     * ⭐ **Why it's essential:** This book introduced the concept of "nudges" 👉– subtle interventions that can influence people's choices without restricting their options. It's foundational for understanding how to design environments 🏞️ that facilitate better decisions.  
     * 🏗️ **What you'll learn:** How "choice architecture" impacts decisions and how to apply behavioral insights to encourage better outcomes for yourself and others. 😇  
   
-9. **[🔮🎨🔬 Superforecasting: The Art and Science of Prediction](../books/superforecasting-the-art-and-science-of-prediction.md) by Philip E. Tetlock and Dan Gardner:**  
+9. **[🔮🎨🔬 Superforecasting: The Art and Science of Prediction](/content/books/superforecasting-the-art-and-science-of-prediction.md) by Philip E. Tetlock and Dan Gardner:**  
     * ⭐ **Why it's essential:** Based on groundbreaking research 🔬, this book explores what makes some individuals exceptionally good at forecasting complex events. 🤯 It reveals the habits, mindsets, and techniques of "superforecasters."  
     * 📈 **What you'll learn:** How to improve your predictive abilities, update your beliefs based on new information ℹ️, and think more probabilistically about the future. ⏳  
   

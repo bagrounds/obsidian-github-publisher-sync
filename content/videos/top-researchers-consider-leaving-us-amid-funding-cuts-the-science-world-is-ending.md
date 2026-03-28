@@ -10,7 +10,7 @@ Channel: PBS NewsHour
 tags:
 youtube: https://youtu.be/yLvO070E_dI
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md)  
 # 🧑‍🔬📉🇺🇸🔚 Top researchers consider leaving U.S. amid funding cuts: 'The science world is ending'  
 ![Top researchers consider leaving U.S. amid funding cuts: 'The science world is ending'](https://youtu.be/yLvO070E_dI)  
   
@@ -60,7 +60,7 @@ youtube: https://youtu.be/yLvO070E_dI
 ### ↔️ Similar  
   
 * 💡 *Science the Endless Frontier* by Vannevar Bush. This is the **foundational 1945 report** that created the modern U.S. science funding model (including the National Science Foundation), which the video argues is now under threat.  
-* [🧪🏛️ The Science of Science Policy: A Handbook](../books/the-science-of-science-policy-a-handbook.md) edited by Kaye Husbands Fealing, Julia I. Lane, John H. Marburger III, and Stephanie S. Shipp. This handbook explores the need for an **evidence-based platform** for science policy, analyzing the **changing framework of innovation** and how policymakers should manage investments in research.  
+* [🧪🏛️ The Science of Science Policy: A Handbook](/content/books/the-science-of-science-policy-a-handbook.md) edited by Kaye Husbands Fealing, Julia I. Lane, John H. Marburger III, and Stephanie S. Shipp. This handbook explores the need for an **evidence-based platform** for science policy, analyzing the **changing framework of innovation** and how policymakers should manage investments in research.  
   
 ### 🆚 Contrasting  
   
@@ -69,5 +69,5 @@ youtube: https://youtu.be/yLvO070E_dI
   
 ### 🎨 Creatively Related  
   
-* [🧪📣🏛️ Science with Impact: How to Engage People, Change Practice, and Influence Policy](../books/science-with-impact-how-to-engage-people-change-practice-and-influence-policy.md) by Anne Helen Toomey argues that science faces a **public-relations crisis** due to its emphasis on trickle-down research and offers a guide for scientists to build **public trust** and communicate with policymakers for real-world impact.  
+* [🧪📣🏛️ Science with Impact: How to Engage People, Change Practice, and Influence Policy](/content/books/science-with-impact-how-to-engage-people-change-practice-and-influence-policy.md) by Anne Helen Toomey argues that science faces a **public-relations crisis** due to its emphasis on trickle-down research and offers a guide for scientists to build **public trust** and communicate with policymakers for real-world impact.  
 * 🏛️ *Science Funding: Politics and Porkbarrel* by Joseph Paul Martino. A critical examination of how political criteria, **congressional micromanagement**, and the favoritism of massive Big Science projects compromise the integrity and efficiency of the **science funding system**.

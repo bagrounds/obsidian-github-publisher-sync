@@ -10,7 +10,7 @@ Channel: Heather Cox Richardson
 tags:
 youtube: https://www.youtube.com/embed/ifoc7b0ldDg
 ---
-[Home](../index.md) > [Videos](./index.md) | [🏛️🇺🇸📖 Heather Cox Richardson](../people/heather-cox-richardson.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md) | [🏛️🇺🇸📖 Heather Cox Richardson](/content/people/heather-cox-richardson.md)  
 # ❓😵🤯 What the Heck Just Happened (2025-10-25)?  
 ![What the Heck Just Happened?](https://www.youtube.com/embed/ifoc7b0ldDg)  
   
@@ -50,17 +50,17 @@ youtube: https://www.youtube.com/embed/ifoc7b0ldDg
 ## 📚 📖 Book Recommendations  
   
 ### ↔️ Similar  
-* [🗳️🏛️☠️ How Democracies Die](../books/how-democracies-die.md) by Steven Levitsky and Daniel Ziblatt. 💀 This book examines how democracies can perish not in a bang, but in a series of small, legal steps and the erosion of unwritten democratic norms, paralleling the video's discussion of institutional surrender.  
+* [🗳️🏛️☠️ How Democracies Die](/content/books/how-democracies-die.md) by Steven Levitsky and Daniel Ziblatt. 💀 This book examines how democracies can perish not in a bang, but in a series of small, legal steps and the erosion of unwritten democratic norms, paralleling the video's discussion of institutional surrender.  
 * *📜 Darkly Dreamed: Christian Nationalism and the New American Right* by Katherine Stewart. ✝️ This book provides an in-depth journalistic account of the Christian nationalist movement that the speakers suggest is motivating key political figures, detailing its strategies for gaining power.  
 * *📖 Twilight of the American Spirit: The Moral Crisis of Public Life in the Age of Trump* by Marilynne Robinson. 💔 It offers a profound reflection on the deterioration of American civic discourse and moral life, similar to the video's focus on the loss of civic virtue.  
   
 ### 🆚 Contrasting  
-* [🇺🇸📜 The Federalist Papers](../books/the-federalist-papers.md) by Alexander Hamilton, James Madison, and John Jay. ✍️ This is a foundational text that outlines the original intent of the framers for the structure of American government, emphasizing checks and balances, which directly contrasts with the current free-for-all described in the video.  
+* [🇺🇸📜 The Federalist Papers](/content/books/the-federalist-papers.md) by Alexander Hamilton, James Madison, and John Jay. ✍️ This is a foundational text that outlines the original intent of the framers for the structure of American government, emphasizing checks and balances, which directly contrasts with the current free-for-all described in the video.  
 * *🗣️ On the Republic and On the Laws* by Cicero. 🧐 Cicero's work is a primary source on the classical Republican idea of civic virtue, which the founders studied, providing a direct counterpoint to the current political focus on self-interest and anonymity discussed by the speakers.  
   
 ### 🎨 Creatively Related  
-* [🎳🏘️📉📈 Bowling Alone: The Collapse and Revival of American Community](../books/bowling-alone.md) by Robert D. Putnam. 🤝 This work examines the dramatic decline in social capital and community engagement in America, offering a broader sociological context for the breakdown of the shared communal spirit and civic virtue.  
-* [🧑🏿⛓️🙈 The New Jim Crow: Mass Incarceration in the Age of Colorblindness](../books/the-new-jim-crow-mass-incarceration-in-the-age-of-colorblindness.md) by Michelle Alexander. ✊ The book tangentially relates by providing a powerful account of how institutional structures and the justice system can suppress and silence marginalized communities, mirroring the video's point about people resisting authoritative force.  
+* [🎳🏘️📉📈 Bowling Alone: The Collapse and Revival of American Community](/content/books/bowling-alone.md) by Robert D. Putnam. 🤝 This work examines the dramatic decline in social capital and community engagement in America, offering a broader sociological context for the breakdown of the shared communal spirit and civic virtue.  
+* [🧑🏿⛓️🙈 The New Jim Crow: Mass Incarceration in the Age of Colorblindness](/content/books/the-new-jim-crow-mass-incarceration-in-the-age-of-colorblindness.md) by Michelle Alexander. ✊ The book tangentially relates by providing a powerful account of how institutional structures and the justice system can suppress and silence marginalized communities, mirroring the video's point about people resisting authoritative force.  
 * *📢 Trust: America's Best Hope* by Pete Buttigieg. 🤝 This book explores the collapse of trust in American institutions and offers prescriptive solutions for rebuilding it, creatively relating to the video's concluding point about needing to highlight positive examples of civic virtue to encourage a renewal of faith.  
   
 ## 🐦 Tweet  

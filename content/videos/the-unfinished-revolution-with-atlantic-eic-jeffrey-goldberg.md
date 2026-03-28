@@ -10,7 +10,7 @@ Channel: Katie Couric
 tags:
 youtube: https://youtu.be/ma1lxUj8Sxo
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md)  
 # 🚧⏳ The Unfinished Revolution with Atlantic EIC Jeffrey Goldberg  
 ![The Unfinished Revolution with Atlantic EIC Jeffrey Goldberg](https://youtu.be/ma1lxUj8Sxo)  
   
@@ -59,8 +59,8 @@ A: 😨 The **servile pliancy** of many legislators is driven by a deep-seated f
   
 ## 📚 Book Recommendations  
 * **Similar Perspectives**  
-    * 🚨 [🗳️🏛️☠️ How Democracies Die](../books/how-democracies-die.md) by Steven Levitsky and Daniel Ziblatt. Examines historical examples to illustrate how democracies fail not by coups but by the slow erosion of political norms and institutions from within.  
-    * [🥀 Twilight of Democracy: 🐍 The Seductive Lure of Authoritarianism](../books/twilight-of-democracy.md) by Anne Applebaum. Explores the psychological and political reasons why individuals in Western democracies are abandoning liberal values for nationalist and authoritarian worldviews.  
+    * 🚨 [🗳️🏛️☠️ How Democracies Die](/content/books/how-democracies-die.md) by Steven Levitsky and Daniel Ziblatt. Examines historical examples to illustrate how democracies fail not by coups but by the slow erosion of political norms and institutions from within.  
+    * [🥀 Twilight of Democracy: 🐍 The Seductive Lure of Authoritarianism](/content/books/twilight-of-democracy.md) by Anne Applebaum. Explores the psychological and political reasons why individuals in Western democracies are abandoning liberal values for nationalist and authoritarian worldviews.  
 * **Contrasting Perspectives**  
     * 📜 The American Story Conversations with Master Historians by David M. Rubenstein. Offers interviews with prominent historians to celebrate the American experiment's enduring spirit and resilience, balancing the current concerns with historical optimism.  
     * 🛠️ An American Democracy Built for the People Why Democracy Matters and How To Make It Work for the 21st Century by Center for American Progress. A policy-focused report arguing that while democracy is currently underperforming, it is fixable through structural reforms and is still vastly superior to autocracy.  

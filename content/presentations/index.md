@@ -5,10 +5,10 @@ aliases:
 title: 🎤 Presentations
 URL: https://bagrounds.org/presentations
 backlinks: false
-updated: 2026-03-27T11:05:06-07:00
+updated: 2026-03-28T14:01:13-07:00
 ---
-[Home](/content/index.md)  
+[Home](../index.md)  
 # 🎤 Presentations (2)  
-- [🤖 Agentic Software Engineering](/content/presentations/agentic-software-engineering.md)  
-- [🤝 Generating Reliable Systems](/content/presentations/generating-reliable-systems.md)  
+- [🤖 Agentic Software Engineering](./agentic-software-engineering.md)  
+- [🤝 Generating Reliable Systems](./generating-reliable-systems.md)  
   

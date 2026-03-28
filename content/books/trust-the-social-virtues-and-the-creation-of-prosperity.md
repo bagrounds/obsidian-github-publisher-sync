@@ -7,7 +7,7 @@ share: true
 affiliate link: https://amzn.to/4kLuFOm
 CTA: 🤝 Cultivate reliable bonds.
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🤝😇💰 Trust: The Social Virtues and the Creation of Prosperity  
 [🛒 Trust: The Social Virtues and the Creation of Prosperity. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4kLuFOm)  
   
@@ -54,15 +54,15 @@ CTA: 🤝 Cultivate reliable bonds.
 ## 📚 Book Recommendatons  
   
 ### ℹ️ Similar Themes (Social Capital, Trust, Culture & Economy/Politics)  
-* 🎳 **"[Bowling Alone](./bowling-alone.md): The Collapse and Revival of American Community" by Robert D. Putnam:** A landmark study documenting the decline of social capital (civic engagement, social networks, trust) in the United States and its consequences. 🤝 Often discussed alongside Fukuyama's *Trust* for its focus on social capital.  
+* 🎳 **"[Bowling Alone](/content/books/bowling-alone.md): The Collapse and Revival of American Community" by Robert D. Putnam:** A landmark study documenting the decline of social capital (civic engagement, social networks, trust) in the United States and its consequences. 🤝 Often discussed alongside Fukuyama's *Trust* for its focus on social capital.  
 * 🇮🇹 **"Making Democracy Work: Civic Traditions in Modern Italy" by Robert D. Putnam:** Examines how variations in civic engagement and social capital across different regions of Italy explain differences in the effectiveness of democratic institutions. 🤝 Shares Fukuyama's emphasis on cultural factors and trust.  
 * 💥 **"The Great Disruption: Human Nature and the Reconstitution of Social Order" by Francis Fukuyama:** Fukuyama's follow-up explores the social and moral shifts (rising crime, declining trust, family breakdown) in Western societies from the 1960s to 1990s and the potential for spontaneous social re-norming.  
 * 📜 **"The Origins of Political Order" & "Political Order and Political Decay" by Francis Fukuyama:** These volumes provide a broader historical and institutional context, examining the development of political institutions (the state, rule of law, accountability) across different civilizations, complementing the cultural focus of *Trust*.  
   
 ### ⚖️ Contrasting Perspectives & Critiques  
 * 🏛️ **"The Quality of Government: Corruption, Social Trust, and Inequality in International Perspective" by Bo Rothstein:** Argues that the *quality* of impartial government institutions (low corruption, universal application of rules) is paramount in building social trust, rather than trust primarily stemming from cultural predispositions or civil society participation. It offers an institution-centric alternative to Fukuyama's culture-centric view.  
-* **[🌎👎👑💰🏚️ Why Nations Fail: The Origins of Power, Prosperity, and Poverty](./why-nations-fail-the-origins-of-power-prosperity-and-poverty.md) by Daron Acemoglu and James A. Robinson:** Emphasizes the critical role of *inclusive* economic and political institutions over geography, culture, or specific leader policies in determining national prosperity. 🏛️ It presents a strong argument for institutional design as the primary driver, potentially contrasting with Fukuyama's cultural emphasis.  
-* 👀 **[📖🏛️📉 Seeing Like a State: How Certain Schemes to Improve the Human Condition Have Failed](./seeing-like-a-state-how-certain-schemes-to-improve-the-human-condition-have-failed.md) by James C. Scott:** Critiques large-scale state planning and social engineering projects, highlighting how they often fail by ignoring local, practical knowledge ('metis') and simplifying complex social realities. 🤔 While not directly about trust, it offers a cautionary tale about top-down approaches versus the organic social structures Fukuyama discusses.  
+* **[🌎👎👑💰🏚️ Why Nations Fail: The Origins of Power, Prosperity, and Poverty](/content/books/why-nations-fail-the-origins-of-power-prosperity-and-poverty.md) by Daron Acemoglu and James A. Robinson:** Emphasizes the critical role of *inclusive* economic and political institutions over geography, culture, or specific leader policies in determining national prosperity. 🏛️ It presents a strong argument for institutional design as the primary driver, potentially contrasting with Fukuyama's cultural emphasis.  
+* 👀 **[📖🏛️📉 Seeing Like a State: How Certain Schemes to Improve the Human Condition Have Failed](/content/books/seeing-like-a-state-how-certain-schemes-to-improve-the-human-condition-have-failed.md) by James C. Scott:** Critiques large-scale state planning and social engineering projects, highlighting how they often fail by ignoring local, practical knowledge ('metis') and simplifying complex social realities. 🤔 While not directly about trust, it offers a cautionary tale about top-down approaches versus the organic social structures Fukuyama discusses.  
   
 ### 💡 Creatively Related (Technology, Psychology, Specific Contexts)  
 * 📱 **"Who Can You Trust?: How Technology Brought Us Together and Why It Might Drive Us Apart" by Rachel Botsman:** Explores the evolution of trust in the digital age, arguing we are shifting from institutional trust to "distributed trust" facilitated by technology (e.g., platforms like Airbnb, blockchain). 🔄 It examines how technology is reshaping the very mechanics of trust-building.  
@@ -72,5 +72,5 @@ CTA: 🤝 Cultivate reliable bonds.
 * 🏛️ **"Handbook on Trust in Public Governance" (Edited Collection, e.g., by Edward Elgar Publishing):** Likely provides a comprehensive overview of current research on trust within and towards public institutions, covering various actors (political, administrative, judicial, citizens) and levels. 🧑‍🎓 Useful for academic perspectives.  
 * 🌍 **"Trust and Governance Institutions" (Edited Collection, e.g., by Information Age Publishing):** Often focuses on specific regional contexts (like Asia), examining trust, legitimacy, anti-corruption, and e-government impacts. 🗺️ Provides specific case studies.".  
   
-## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
+## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Trust and Governance. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

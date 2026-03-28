@@ -10,7 +10,7 @@ Channel: SpoonFedStudy
 tags:
 youtube: https://youtu.be/3fDeyzZtwDU
 ---
-[Home](../index.md) > [Videos](./index.md) | [🥄👶📚 SpoonFedStudy](../topics/spoonfedstudy.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md) | [🥄👶📚 SpoonFedStudy](/content/topics/spoonfedstudy.md)  
 # ⚙️💨🧘 I built a system that makes work feel easy  
 ![I built a system that makes work feel easy](https://youtu.be/3fDeyzZtwDU)  
   
@@ -34,7 +34,7 @@ To gain a more comprehensive understanding, it would be beneficial to explore ot
 * Methods for overcoming 🚫 procrastination on low-impact, low-energy tasks that still need to be completed.  
   
 ## 📚 Book Recommendations  
-* [🔋📈 The Power of Full Engagement: Managing Energy, Not Time, Is the Key to High Performance and Personal Renewal](../books/the-power-of-full-engagement-managing-energy-not-time-is-the-key-to-high-performance-and-personal-renewal.md) by Jim Loehr and Tony Schwartz: 🏃‍♀️ This book popularized the idea of managing energy, not time, as the key to high performance, a concept directly related to the video's system.  
-* [✅😌 Getting Things Done: The Art of Stress-Free Productivity](../books/getting-things-done-the-art-of-stress-free-productivity.md) by David Allen: 📝 A classic productivity book that provides a comprehensive system for organizing tasks and freeing up mental space, offering a contrasting, more list-based approach.  
-* [🤿💼 Deep Work: Rules for Focused Success in a Distracted World](../books/deep-work.md) by Cal Newport: 💡 This book focuses on the importance of focused, uninterrupted work to create high-value output, a principle that complements the video's recommendation to align high-impact tasks with energy peaks.  
-* [⚛️🔄 Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones](../books/atomic-habits.md) by James Clear: 🔬 This book provides a scientific framework for building good habits and breaking bad ones, which is essential for successfully implementing any new productivity system.
+* [🔋📈 The Power of Full Engagement: Managing Energy, Not Time, Is the Key to High Performance and Personal Renewal](/content/books/the-power-of-full-engagement-managing-energy-not-time-is-the-key-to-high-performance-and-personal-renewal.md) by Jim Loehr and Tony Schwartz: 🏃‍♀️ This book popularized the idea of managing energy, not time, as the key to high performance, a concept directly related to the video's system.  
+* [✅😌 Getting Things Done: The Art of Stress-Free Productivity](/content/books/getting-things-done-the-art-of-stress-free-productivity.md) by David Allen: 📝 A classic productivity book that provides a comprehensive system for organizing tasks and freeing up mental space, offering a contrasting, more list-based approach.  
+* [🤿💼 Deep Work: Rules for Focused Success in a Distracted World](/content/books/deep-work.md) by Cal Newport: 💡 This book focuses on the importance of focused, uninterrupted work to create high-value output, a principle that complements the video's recommendation to align high-impact tasks with energy peaks.  
+* [⚛️🔄 Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones](/content/books/atomic-habits.md) by James Clear: 🔬 This book provides a scientific framework for building good habits and breaking bad ones, which is essential for successfully implementing any new productivity system.

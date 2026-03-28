@@ -7,7 +7,7 @@ share: true
 affiliate link: https://amzn.to/46rfQuN
 CTA: 🇺🇸 Advocate for children.
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 👶🏛️➡️ Transforming Early Years Policy in the U.S.: A Call to Action  
 [🛒 Transforming Early Years Policy in the U.S.: A Call to Action. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/46rfQuN)  
   

@@ -9,7 +9,7 @@ tags:
 affiliate link: https://amzn.to/45JAVlg
 CTA: 💪 Thrive through chaos.
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 📉📈🌪️💪 Antifragile: Things That Gain from Disorder  
 [🛒 Antifragile: Things That Gain from Disorder. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/45JAVlg)  
   
@@ -59,13 +59,13 @@ CTA: 💪 Thrive through chaos.
 * His credentials as a former trader, risk analyst, and academic give him a unique viewpoint. 🧠  
   
 ### **📚 Book Recommendations:**  
-* **Best Alternate Book on the Same Topic:** [⚫🦢🎲 The Black Swan: The Impact of the Highly Improbable](./the-black-swan-the-impact-of-the-highly-improbable.md) by Nassim Nicholas Taleb. This book lays the groundwork for "Antifragile" and explores the role of randomness in our lives. 🦢  
-* **Best Tangentially Related Book:** "[Thinking, Fast and Slow](./thinking-fast-and-slow.md)" by Daniel Kahneman. This book explores the cognitive biases that influence our decision-making, which is relevant to understanding how we perceive and react to risk. 🧠  
-* **Best Diametrically Opposed Book:** "[The Signal and the Noise: Why So Many Predictions Fail - but Some Don't](./the-signal-and-the-noise.md)" by Nate Silver. Silver emphasizes the importance of accurate prediction and statistical analysis, contrasting with Taleb's skepticism of forecasting. 📊  
+* **Best Alternate Book on the Same Topic:** [⚫🦢🎲 The Black Swan: The Impact of the Highly Improbable](/content/books/the-black-swan-the-impact-of-the-highly-improbable.md) by Nassim Nicholas Taleb. This book lays the groundwork for "Antifragile" and explores the role of randomness in our lives. 🦢  
+* **Best Tangentially Related Book:** "[Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md)" by Daniel Kahneman. This book explores the cognitive biases that influence our decision-making, which is relevant to understanding how we perceive and react to risk. 🧠  
+* **Best Diametrically Opposed Book:** "[The Signal and the Noise: Why So Many Predictions Fail - but Some Don't](/content/books/the-signal-and-the-noise.md)" by Nate Silver. Silver emphasizes the importance of accurate prediction and statistical analysis, contrasting with Taleb's skepticism of forecasting. 📊  
 * **Best Fiction Book That Incorporates Related Ideas:** "Cryptonomicon" by Neal Stephenson. This novel explores themes of cryptography, information theory, and the impact of unpredictable events, reflecting some of Taleb's concerns about systemic risk. 💻  
-* **Best Book That Is More General:** "[Sapiens: A Brief History of Humankind](./sapiens-a-brief-history-of-humankind.md)" by Yuval Noah Harari. This book provides a broad overview of human history and evolution, offering a context for understanding the role of adaptation and change. 🌍  
-* **Best Book That Is More Specific:** [🃏🎲 Fooled by Randomness: The Hidden Role of Chance in Life and in the Markets](./fooled-by-randomness-the-hidden-role-of-chance-in-life-and-in-the-markets.md) by Nassim Nicholas Taleb. This early work focuses more directly on the role of randomness in financial markets. 📈  
-* **Best Book That Is More Rigorous:** [🎲🧮 Probability Theory: The Logic of Science](./probability-theory.md) by E.T. Jaynes. This book offers a deep dive into the mathematical foundations of probability and Bayesian inference.  
+* **Best Book That Is More General:** "[Sapiens: A Brief History of Humankind](/content/books/sapiens-a-brief-history-of-humankind.md)" by Yuval Noah Harari. This book provides a broad overview of human history and evolution, offering a context for understanding the role of adaptation and change. 🌍  
+* **Best Book That Is More Specific:** [🃏🎲 Fooled by Randomness: The Hidden Role of Chance in Life and in the Markets](/content/books/fooled-by-randomness-the-hidden-role-of-chance-in-life-and-in-the-markets.md) by Nassim Nicholas Taleb. This early work focuses more directly on the role of randomness in financial markets. 📈  
+* **Best Book That Is More Rigorous:** [🎲🧮 Probability Theory: The Logic of Science](/content/books/probability-theory.md) by E.T. Jaynes. This book offers a deep dive into the mathematical foundations of probability and Bayesian inference.  
 * **Best Book That Is More Accessible:** "The Most Important Thing Illuminated: Uncommon Sense for the Thoughtful Investor" by Howard Marks. This book offers valuable insights into risk management and investment strategy in a clear and concise manner. 💰  
   
 ## 💬 [Gemini](https://gemini.google.com) Prompt  

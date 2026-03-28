@@ -80,7 +80,7 @@ affiliate link: https://amzn.to/4apTihA
   
 ### 🔗 Related  
 * [🏛️💰 Debt: The First 5,000 Years](./debt-the-first-5000-years.md) by David Graeber  
-* [🌅🧑‍🤝‍🧑 The Dawn of Everything: A New History of Humanity](./the-dawn-of-everything-a-new-history-of-humanity.md) by David Graeber and David Wengrow  
+* [🌅🧑‍🤝‍🧑 The Dawn of Everything: A New History of Humanity](books/the-dawn-of-everything-a-new-history-of-humanity.md) by David Graeber and David Wengrow  
 * 🤖 Homo Deus A Brief History of Tomorrow by Yuval Noah Harari  
   
 ## 🫵 What Do You Think?  

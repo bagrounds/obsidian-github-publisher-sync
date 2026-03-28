@@ -80,9 +80,12 @@
 
 ## 📝 Frontmatter Assembly
 
-📋 The `assembleFrontmatter` function produces YAML frontmatter with these fields: share, aliases, title, URL, Author, and tags.
-🔗 Navigation links are embedded directly in the frontmatter as a nav line with back and forward wikilinks.
-🛡️ The `quoteForYaml` helper escapes quotes and backslashes for YAML safety.
+📋 The `assembleFrontmatter` function accepts `(series, today, title, slug)` and produces YAML frontmatter with these fields: share, aliases, title, URL, Author, and tags.
+🏷️ The `buildDisplayTitle` helper constructs the display title as `today | icon title icon` used for both aliases and title fields.
+🔗 The URL is constructed as `baseUrl/today-slug` to include the date prefix in the URL path.
+📝 The Author field is quoted with `quoteForYaml` to prevent YAML from interpreting wikilink syntax `[[author]]` as nested lists.
+🛡️ The `quoteForYaml` helper always wraps values in double quotes, escaping internal quotes and backslashes for YAML safety.
+🚫 No `date:` field is included in the frontmatter, matching the TypeScript implementation.
 
 ## 🔗 Navigation Links
 
@@ -115,7 +118,8 @@
 | `filterCommentsAfterLastPost(comments, posts, postTime)` | 📅 Filter comments to those after most recent post |
 | `buildBackLink(series, previousPost)` | ⏮️ Create wikilink navigation to previous post |
 | `buildForwardLink(series, nextFilename)` | ⏭️ Create wikilink navigation to next post |
-| `assembleFrontmatter(series, today, title, slug, prev?)` | 📝 Generate YAML frontmatter with metadata and nav links |
+| `assembleFrontmatter(series, today, title, slug)` | 📝 Generate YAML frontmatter with display title, quoted Author, and date-prefixed URL |
+| `buildDisplayTitle(series, today, title)` | 🏷️ Construct display title as `today \| icon title icon` |
 | `todayPacific()` | 📅 Return today's date in YYYY-MM-DD Pacific time |
 | `parseGeneratedPost(raw)` | 📋 Parse and validate AI-generated post content |
 | `extractSlug(filename)` | 🔗 Extract URL slug from dated filename |

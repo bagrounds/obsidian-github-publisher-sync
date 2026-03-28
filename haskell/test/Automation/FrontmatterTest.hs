@@ -62,5 +62,9 @@ tests = testGroup "Frontmatter"
           quoteYamlValue "a, b" @?= "\"a, b\""
       , testCase "value with curly braces gets quoted" $
           quoteYamlValue "{key: val}" @?= "\"{key: val}\""
+      , testCase "value with @ gets quoted (YAML reserved indicator)" $
+          quoteYamlValue "@cf/black-forest-labs/flux-1-schnell" @?= "\"@cf/black-forest-labs/flux-1-schnell\""
+      , testCase "value with backtick gets quoted (YAML reserved indicator)" $
+          quoteYamlValue "code `inline`" @?= "\"code `inline`\""
       ]
   ]

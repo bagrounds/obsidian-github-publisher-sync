@@ -9,7 +9,7 @@ Platform:
 Channel: PBS NewsHour
 tags:
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md)  
 # What we know — and don't know — about the U.S. strikes in Yemen  
 ![What we know — and don't know — about the U.S. strikes in Yemen](https://youtu.be/WT9UI7mNzBY)  
   

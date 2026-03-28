@@ -10,7 +10,7 @@ Channel: Heather Cox Richardson
 tags:
 youtube: https://www.youtube.com/embed/JZLw8msbKeg
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md)  
 # 🗣️💬🗓️ Politics Chat, December 16, 2025  
 ![Politics Chat, December 16, 2025](https://www.youtube.com/embed/JZLw8msbKeg)  
   
@@ -46,7 +46,7 @@ youtube: https://www.youtube.com/embed/JZLw8msbKeg
   
 ### ↔️ Similar  
   
-* [🏛️☀️⬆️ Democracy Awakening: 📝 Notes on the State of 🇺🇸 America](../books/democracy-awakening.md) by 👤 Heather Cox Richardson. 📖 This work details the 📜 historical roots of 🗽 authoritarianism in America and the 🗳️ struggle for ⚖️ equality.  
+* [🏛️☀️⬆️ Democracy Awakening: 📝 Notes on the State of 🇺🇸 America](/content/books/democracy-awakening.md) by 👤 Heather Cox Richardson. 📖 This work details the 📜 historical roots of 🗽 authoritarianism in America and the 🗳️ struggle for ⚖️ equality.  
 * 🏛️ Prequel by 👤 Rachel Maddow. 📖 An 🔍 investigation into 🕵️‍♂️ extremist plots to 💥 overthrow American 🏛️ democracy during the 🌍 World War II era.  
   
 ### 🆚 Contrasting  

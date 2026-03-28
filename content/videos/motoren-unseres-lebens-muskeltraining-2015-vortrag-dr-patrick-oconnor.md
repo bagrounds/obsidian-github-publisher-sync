@@ -10,7 +10,7 @@ Channel: Kieser Global
 tags:
 youtube: https://youtu.be/AYr8d6XyYJ8
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md)  
 # 💪🏋️📅 Motoren unseres Lebens - Muskeltraining 2015  
 ![«Motoren unseres Lebens - Muskeltraining 2015» / Vortrag Dr. Patrick O'Connor](https://youtu.be/AYr8d6XyYJ8)  
   
@@ -60,7 +60,7 @@ youtube: https://youtu.be/AYr8d6XyYJ8
 * 🚀 **8 Keys to Mental Health Through Exercise:** Provides a supportive guide using an empirically supported framework to leverage exercise for overall mental and physical strengthening, including strategies for overcoming common barriers.  
   
 ### Contrasting Books (Non-Exercise/Psychological Focus)  
-* **[😊👍 Feeling Good: The New Mood Therapy](../books/feeling-good-the-new-mood-therapy.md):** A classic in the field, this book represents a legitimate, contrasting approach by teaching readers how to use **Cognitive Behavioral Therapy (CBT)** techniques to alleviate anxiety and depression through changing thought patterns, without relying on physical activity.  
+* **[😊👍 Feeling Good: The New Mood Therapy](/content/books/feeling-good-the-new-mood-therapy.md):** A classic in the field, this book represents a legitimate, contrasting approach by teaching readers how to use **Cognitive Behavioral Therapy (CBT)** techniques to alleviate anxiety and depression through changing thought patterns, without relying on physical activity.  
 * 🎯 **The Inner Game of Tennis The Classic Guide to the Mental Side of Peak Performance:** This book contrasts the physical approach by focusing purely on the mental game, teaching the reader how to minimize **self-interference** ("Self 1" vs. "Self 2") to achieve relaxed concentration and peak performance in any domain.  
 * 🧘‍♀️ **The Mindful Athlete Secrets to Pure Performance:** Focuses on using mindfulness and **meditation**—techniques not directly covered in the physical training lecture—to enhance focus, manage stress, and achieve high performance, demonstrating a purely cognitive pathway to mental strength.  
   

@@ -179,7 +179,7 @@ Quantum computing is weird. It's like a coin that's both heads and tails until y
 - **More Specific:** "Quantum Computation and Quantum Information" by Nielsen and Chuang ⚛️ℹ️  
 - **Fictional:** "Permutation City" by Greg Egan 🏙️  
 - **Rigorous:** "Principles of Quantum Mechanics" by R. Shankar 📚⚛️  
-- **Accessible:** [🍄🌍🧠🔮 Entangled Life: How Fungi Make Our Worlds, Change Our Minds & Shape Our Futures](../books/entangled-life-how-fungi-make-our-worlds-change-our-minds-shape-our-futures.md) by Merlin Sheldrake (uses entanglement metaphorically, but explores fascinating complex systems) 🍄🔗  
+- **Accessible:** [🍄🌍🧠🔮 Entangled Life: How Fungi Make Our Worlds, Change Our Minds & Shape Our Futures](books/entangled-life-how-fungi-make-our-worlds-change-our-minds-shape-our-futures.md) by Merlin Sheldrake (uses entanglement metaphorically, but explores fascinating complex systems) 🍄🔗  
   
 ### 📺 Links To Relevant YouTube Channels Or Videos  
   

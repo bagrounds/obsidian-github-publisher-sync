@@ -9,7 +9,7 @@ Platform:
 Channel: PBS NewsHour
 tags:
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md)  
 # Supreme Court clears way for deportations under Alien Enemies Act  
 ![Supreme Court clears way for deportations under Alien Enemies Act](https://youtu.be/udD2xupVZ3Q)  
   
@@ -35,6 +35,6 @@ tags:
     - 📖 _The Constitution of the United States of America: Analysis and Interpretation_  
   
 - ⚖️ **Supreme Court:**  
-    - [⚠️🏛️👹🇺🇸 The Most Dangerous Branch: Inside the Supreme Court in the Age of Trump](../books/the-most-dangerous-branch-inside-the-supreme-court-in-the-age-of-trump.md) by David A. Kaplan  
+    - [⚠️🏛️👹🇺🇸 The Most Dangerous Branch: Inside the Supreme Court in the Age of Trump](/content/books/the-most-dangerous-branch-inside-the-supreme-court-in-the-age-of-trump.md) by David A. Kaplan  
     - 😠 _Supreme Inequality: The Supreme Court's Fifty-Year Battle for a More Unjust America_ by Adam Cohen  
     - 🕵️ _The Nine: Inside the Secret World of the Supreme Court_ by Jeffrey Toobin

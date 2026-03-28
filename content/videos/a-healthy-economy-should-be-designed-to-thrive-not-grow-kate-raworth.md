@@ -10,7 +10,7 @@ Channel: TED
 tags:
 youtube: https://youtu.be/Rhcrbcg8HBw
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md)  
 # 🌱📈✅➡️🔄 A healthy economy should be designed to thrive, not grow | Kate Raworth  
 ![A healthy economy should be designed to thrive, not grow | Kate Raworth](https://youtu.be/Rhcrbcg8HBw)  
   
@@ -47,15 +47,15 @@ youtube: https://youtu.be/Rhcrbcg8HBw
   
 ### ↔️ Similar  
   
-* [🍩🌍⚖️ Doughnut Economics: Seven Ways to Think Like a 21st-Century Economist](../books/doughnut-economics-seven-ways-to-think-like-a-21st-century-economist.md) by Kate Raworth. 🏫 This primary text expands on the video's core concepts of 21st-century economic thinking.  
+* [🍩🌍⚖️ Doughnut Economics: Seven Ways to Think Like a 21st-Century Economist](/content/books/doughnut-economics-seven-ways-to-think-like-a-21st-century-economist.md) by Kate Raworth. 🏫 This primary text expands on the video's core concepts of 21st-century economic thinking.  
 * 📘 Prosperity without Growth by Tim Jackson. 📉 This book examines how to maintain a stable economy and social well-being without relying on perpetual expansion.  
   
 ### 🆚 Contrasting  
   
-* [💡🔬🧑‍🤝‍🧑📈 Enlightenment Now: The Case for Reason, Science, Humanism, and Progress](../books/enlightenment-now-the-case-for-reason-science-humanism-and-progress.md) by Steven Pinker, published by Viking. 🚀 This work argues that market-led growth and industrialization are the primary drivers of historical human progress and poverty reduction.  
+* [💡🔬🧑‍🤝‍🧑📈 Enlightenment Now: The Case for Reason, Science, Humanism, and Progress](/content/books/enlightenment-now-the-case-for-reason-science-humanism-and-progress.md) by Steven Pinker, published by Viking. 🚀 This work argues that market-led growth and industrialization are the primary drivers of historical human progress and poverty reduction.  
 * 📕 The Growth Delusion by David Pilling, published by Tim Duggan Books. 🧐 While critical of GDP, it provides a different perspective on how growth metrics can still be useful if reformed.  
   
 ### 🎨 Creatively Related  
   
 * 📓 Biomimicry: Innovation Inspired by Nature by Janine Benyus. 🌿 This book explores how human designs and systems can learn from the efficiency of natural organisms.  
-* [🤏🧑 Small Is Beautiful: Economics as if People Mattered](../books/small-is-beautiful-economics-as-if-people-mattered.md) by E.F. Schumacher. 💎 A classic text that advocates for human-scale technology and economics as if people actually mattered.
+* [🤏🧑 Small Is Beautiful: Economics as if People Mattered](/content/books/small-is-beautiful-economics-as-if-people-mattered.md) by E.F. Schumacher. 💎 A classic text that advocates for human-scale technology and economics as if people actually mattered.

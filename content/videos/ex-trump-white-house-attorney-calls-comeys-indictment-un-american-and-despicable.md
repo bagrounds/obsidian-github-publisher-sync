@@ -10,7 +10,7 @@ Channel: PBS NewsHour
 tags:
 youtube: https://youtu.be/TyjAHbin4U4
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md)  
 # 🏛️👎 Ex-Trump White House attorney calls Comey's indictment 'un-American and despicable'  
 ![Ex-Trump White House attorney calls Comey's indictment 'un-American and despicable'](https://youtu.be/TyjAHbin4U4)  
   
@@ -43,10 +43,10 @@ youtube: https://youtu.be/TyjAHbin4U4
   
 ## 📚 Book Recommendations  
   
-* **[⬆️🤥🏛️ A Higher Loyalty: Truth, Lies, and Leadership](../books/a-higher-loyalty-truth-lies-and-leadership.md)** by James Comey: 📖 Provides the direct perspective of the former FBI Director who is at the center of the indictment discussed in the interview.  
+* **[⬆️🤥🏛️ A Higher Loyalty: Truth, Lies, and Leadership](/content/books/a-higher-loyalty-truth-lies-and-leadership.md)** by James Comey: 📖 Provides the direct perspective of the former FBI Director who is at the center of the indictment discussed in the interview.  
 * **A Warning** by Anonymous: 🖋️ Offers a similar insider critique of the Trump administration's temperament, governing style, and impact on ethical norms from a former senior official.  
 * **Justice on Trial: The Kavanaugh Confirmation and the Future of the Supreme Court** by Mollie Hemingway and Carrie Severino: ⚖️ Presents a contrasting conservative critique of political attacks and perceived misconduct against the judiciary and justice system.  
-* **[🇺🇸📜 The Federalist Papers](../books/the-federalist-papers.md)** by Alexander Hamilton, James Madison, and John Jay: 🏛️ Essential reading on the structure of the U.S. government and the separation of powers, the core principles Cobb argues have been violated.  
+* **[🇺🇸📜 The Federalist Papers](/content/books/the-federalist-papers.md)** by Alexander Hamilton, James Madison, and John Jay: 🏛️ Essential reading on the structure of the U.S. government and the separation of powers, the core principles Cobb argues have been violated.  
 * **The Gulag Archipelago** by Aleksandr Solzhenitsyn: ⛓️ A creatively related classic study of a totalitarian state's use of the justice system for political repression, paralleling Cobb's historical comparisons.  
   
 ## 🐦 Tweet  

@@ -5,15 +5,15 @@ aliases:
 title: 📚⚓ Books Removed From Naval Academy Library
 URL: https://bagrounds.org/topics/books-removed-from-naval-academy-library
 ---
-[Home](../index.md) > [Topics](./index.md)  
+[Home](/content/index.md) > [Topics](/content/topics/index.md)  
 # 📚⚓ Books Removed From Naval Academy Library  
 - https://www.navy.mil/Press-Office/Press-Releases/display-pressreleases/Article/4146516/list-of-books-removed-from-usna-library  
   
 ## Page 1 of 19  
-1. [✊🏿 How To Be An Antiracist](../books/how-to-be-an-antiracist.md) by Ibram X. Kendi  
-2. [😬👨🏿 Uncomfortable Conversations With A Black Man](../books/uncomfortable-conversations-with-a-black-man.md) by Emmanuel Acho  
-3. [✍🏿🇺🇸💔 Why Didn't We Riot?: A Black Man In Trumpland](../books/why-didnt-we-riot.md) by Issac J. Bailey  
-4. [🧑🏿⚖️🧑🏻 Long Time Coming: Reckoning With Race In America](../books/long-time-coming-reckoning-with-race-in-america.md) by Michael Eric Dyson  
+1. [✊🏿 How To Be An Antiracist](/content/books/how-to-be-an-antiracist.md) by Ibram X. Kendi  
+2. [😬👨🏿 Uncomfortable Conversations With A Black Man](/content/books/uncomfortable-conversations-with-a-black-man.md) by Emmanuel Acho  
+3. [✍🏿🇺🇸💔 Why Didn't We Riot?: A Black Man In Trumpland](/content/books/why-didnt-we-riot.md) by Issac J. Bailey  
+4. [🧑🏿⚖️🧑🏻 Long Time Coming: Reckoning With Race In America](/content/books/long-time-coming-reckoning-with-race-in-america.md) by Michael Eric Dyson  
 5. "State Of Emergency: How We Win In The Country We Built" by Tamika D. Mallory as told to Ashley A. Coleman  
 6. "How We Can Win Race, History And Changing The Money Game That's Rigged" by Kimberly Jones  
 7. "My Vanishing Country A Memoir" by Bakari Sellers  

@@ -9,7 +9,7 @@ Platform:
 Channel: Senator Cantwell
 tags:
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md)  
 # Sen. Cantwell Speaks on the Senate Floor on the Trade Review Act of 2025  
 ![Sen. Cantwell Speaks on the Senate Floor on the Trade Review Act of 2025](https://youtu.be/SU56CNNg8RE)  
   

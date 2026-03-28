@@ -7,7 +7,7 @@ URL: https://bagrounds.org/articles/scientists-just-developed-a-new-ai-modeled-o
 Author:
 tags:
 ---
-[Home](../index.md) > [Articles](./index.md) | [🧠🪜⏱️📈 Hierarchical gradients of multiple timescales in the mammalian forebrain](./hierarchical-gradients-of-multiple-timescales-in-the-mammalian-forebrain.md)  
+[Home](/content/index.md) > [Articles](/content/articles/index.md) | [🧠🪜⏱️📈 Hierarchical gradients of multiple timescales in the mammalian forebrain](/content/articles/hierarchical-gradients-of-multiple-timescales-in-the-mammalian-forebrain.md)  
 # [🧠🤖📈 Scientists just developed a new AI modeled on the human brain — it's outperforming LLMs like ChatGPT at reasoning tasks](https://www.livescience.com/technology/artificial-intelligence/scientists-just-developed-an-ai-modeled-on-the-human-brain-and-its-outperforming-llms-like-chatgpt-at-reasoning-tasks)  
 ## 🤖 AI Summary  
   
@@ -25,11 +25,11 @@ The ⚖️ HRM presents a compelling alternative to current **large language mod
   
 ### 🧠 Similar  
   
-- **[🧠🔄 Livewired: The Inside Story of the Ever-Changing Brain](../books/livewired-the-inside-story-of-the-ever-changing-brain.md)** by David Eagleman: This book explores the brain's 🧠 constant state of change and adaptability, which offers a great parallel to the new, adaptable AI models being developed.  
+- **[🧠🔄 Livewired: The Inside Story of the Ever-Changing Brain](/content/books/livewired-the-inside-story-of-the-ever-changing-brain.md)** by David Eagleman: This book explores the brain's 🧠 constant state of change and adaptability, which offers a great parallel to the new, adaptable AI models being developed.  
   
-- **[🧠🧠🧠🧠 A Thousand Brains: A New Theory of Intelligence](../books/a-thousand-brains.md)** by Jeff Hawkins: This book proposes that intelligence comes from the brain building a predictive "world model," a view highly relevant to the new AI model's hierarchical design.  
+- **[🧠🧠🧠🧠 A Thousand Brains: A New Theory of Intelligence](/content/books/a-thousand-brains.md)** by Jeff Hawkins: This book proposes that intelligence comes from the brain building a predictive "world model," a view highly relevant to the new AI model's hierarchical design.  
   
-- **[🧠🔄🏆 The Brain That Changes Itself: Stories of Personal Triumph from the Frontiers of Brain Science](../books/the-brain-that-changes-itself.md)** by Norman Doidge: It provides a fascinating look into the concept of **neuroplasticity**, showing how the brain can rewire itself. This directly relates to the idea of creating AI models that can adapt and "learn" in new, dynamic ways.  
+- **[🧠🔄🏆 The Brain That Changes Itself: Stories of Personal Triumph from the Frontiers of Brain Science](/content/books/the-brain-that-changes-itself.md)** by Norman Doidge: It provides a fascinating look into the concept of **neuroplasticity**, showing how the brain can rewire itself. This directly relates to the idea of creating AI models that can adapt and "learn" in new, dynamic ways.  
   
 ### ⚖️ Contrasting  
   
@@ -43,6 +43,6 @@ The ⚖️ HRM presents a compelling alternative to current **large language mod
   
 - **The Alignment Problem** by Brian Christian: This book tackles the critical question of ensuring AI's goals align with human values, a vital topic as these models become more capable and integrated into society.  
   
-- **[🌊🤖🤔 The Coming Wave: Technology, Power, and the 21st Century's Greatest Dilemma](../books/the-coming-wave-technology-power-and-the-21st-centurys-greatest-dilemma.md)** by Mustafa Suleyman: An insider's look at the immense power and societal risks of AI, this book puts new model developments into a real-world, geopolitical context.  
+- **[🌊🤖🤔 The Coming Wave: Technology, Power, and the 21st Century's Greatest Dilemma](/content/books/the-coming-wave-technology-power-and-the-21st-centurys-greatest-dilemma.md)** by Mustafa Suleyman: An insider's look at the immense power and societal risks of AI, this book puts new model developments into a real-world, geopolitical context.  
   
 - **Grokking Deep Learning** by Andrew W. Trask: This is a technical but accessible guide on building neural networks, providing a foundational understanding of the underlying principles behind brain-inspired models. It's a great "creatively related" choice as it teaches the reader to build the concepts themselves.

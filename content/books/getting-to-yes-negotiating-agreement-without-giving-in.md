@@ -6,7 +6,7 @@ URL: https://bagrounds.org/books/getting-to-yes-negotiating-agreement-without-gi
 share: true
 affiliate link: https://amzn.to/4mWV0Lo
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 👉🤝 Getting to Yes: Negotiating Agreement Without Giving In  
 [🛒 Getting to Yes: Negotiating Agreement Without Giving In. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4mWV0Lo)  
   
@@ -48,27 +48,27 @@ affiliate link: https://amzn.to/4mWV0Lo
 ## 📚 Book Recommendations  
 ### 👍 Similar Books (Principled/Integrative Negotiation & Communication)  
 1. ***Getting Past No: Negotiating in Difficult Situations*** 📖 **by William Ury:** A direct follow-up focusing on applying principled negotiation techniques when facing resistance, stonewalling, or attacks. 🎓 Considered the "102 course" to *Getting to Yes*'s "101".  
-2. **[💬😬 Difficult Conversations: How to Discuss What Matters Most](./difficult-conversations-how-to-discuss-what-matters-most.md)** 📖 **by Douglas Stone, Bruce Patton, & Sheila Heen:** Co-authored by another *Getting to Yes* contributor, this book delves into managing the emotional and relational aspects of tough conversations, aligning well with "Separate the People from the Problem". ❤️  
+2. **[💬😬 Difficult Conversations: How to Discuss What Matters Most](/content/books/difficult-conversations-how-to-discuss-what-matters-most.md)** 📖 **by Douglas Stone, Bruce Patton, & Sheila Heen:** Co-authored by another *Getting to Yes* contributor, this book delves into managing the emotional and relational aspects of tough conversations, aligning well with "Separate the People from the Problem". ❤️  
 3. ***Negotiation Genius: How to Overcome Obstacles and Achieve Brilliant Results...*** 📖 **by Deepak Malhotra & Max H. Bazerman:** Offers advanced strategies grounded in research, covering complex situations like negotiating from weakness and handling hardball tactics, complementing *Getting to Yes*. 🚀  
 4. ***Beyond Reason: Using Emotions as You Negotiate*** 📖 **by Roger Fisher & Daniel Shapiro:** Focuses specifically on managing the emotional dimension of negotiation, expanding on a key element of *Getting to Yes*.😌  
 5. ***Getting to Yes with Yourself (And Other Worthy Opponents)*** 📖 **by William Ury:** Explores the internal obstacles and self-sabotage that can hinder successful negotiation, essentially a prequel focusing on internal readiness.🧘  
   
 ### ⚔️ Contrasting Books (Alternative Negotiation Strategies/Focus)  
-1. **[🙅‍♀️✂️⚖️ Never Split the Difference: Negotiating As If Your Life Depended On It](./never-split-the-difference.md)** 📖 **by Chris Voss:** Written by a former FBI hostage negotiator, this book emphasizes tactical empathy, psychological insights, and specific techniques (like mirroring) derived from high-stakes situations, often seen as a more assertive counterpoint or update to *Getting to Yes*. 🗣️ Some argue its techniques aren't entirely new but popularized effectively.  
+1. **[🙅‍♀️✂️⚖️ Never Split the Difference: Negotiating As If Your Life Depended On It](/content/books/never-split-the-difference.md)** 📖 **by Chris Voss:** Written by a former FBI hostage negotiator, this book emphasizes tactical empathy, psychological insights, and specific techniques (like mirroring) derived from high-stakes situations, often seen as a more assertive counterpoint or update to *Getting to Yes*. 🗣️ Some argue its techniques aren't entirely new but popularized effectively.  
 2. ***Bargaining for Advantage: Negotiation Strategies for Reasonable People*** 📖 **by G. Richard Shell:** Blends collaborative and competitive strategies, focusing on preparation, understanding personal style, and leveraging power—potentially incorporating more positional elements than *Getting to Yes*. 💪  
 3. ***Start with NO...The Negotiating Tools that the Pros Don't Want You to Know*** 📖 **by Jim Camp:** Advocates a negotiation system based on rejecting compromise and focusing on decision control, a distinct contrast to the mutual-gain focus of *Getting to Yes*. 🙅  
 4. ***Secrets of Power Negotiating*** 📖 **by Roger Dawson:** Focuses more on tactics and gaining leverage, potentially leaning towards a more competitive or distributive bargaining style. 🚀  
 5. ***The Kremlin School of Negotiation*** 📖 **by Igor Ryzov:** Offers perspectives potentially derived from different cultural or strategic negotiation traditions, providing a contrast to the Harvard-based approach. 🇷🇺  
   
 ### 🎨 Creatively Related Books (Influence, Psychology, Communication, Decision-Making)  
-1. **[Influence](./influence.md): The Psychology of Persuasion** 📖 **by Robert Cialdini:** A classic text exploring the psychological principles behind why people say "yes," offering foundational knowledge applicable to negotiation.🧠  
-2. **[🧰💬 Crucial Conversations: Tools for Talking When Stakes Are High](./crucial-conversations-tools-for-talking-when-stakes-are-high.md)** 📖 **by Patterson, Grenny, McMillan, & Switzler:** Focuses on high-stakes communication, essential for navigating the 'people problems' and interest discussions in negotiation. 🗣️  
-3. **[Thinking, Fast and Slow](./thinking-fast-and-slow.md)** 📖 **by Daniel Kahneman:** Explores cognitive biases and the two systems of thinking, crucial for understanding decision-making (yours and others') during negotiation. 🤔  
-4. **[How To Win Friends And Influence People](./how-to-win-friends-and-influence-people.md)** 📖 **by Dale Carnegie:** A timeless guide on interpersonal skills, relationship building, and making people receptive to your point of view—highly relevant for the 'people' aspect of negotiation. 🧑‍🤝‍🧑  
-5. **[🕊️🤝 Nonviolent Communication: A Language of Life](./nonviolent-communication.md)** 📖 **by Marshall B. Rosenberg:** Focuses on expressing needs and hearing others empathetically, aligning with the 'interests' principle and improving communication effectiveness. ❤️  
+1. **[Influence](/content/books/influence.md): The Psychology of Persuasion** 📖 **by Robert Cialdini:** A classic text exploring the psychological principles behind why people say "yes," offering foundational knowledge applicable to negotiation.🧠  
+2. **[🧰💬 Crucial Conversations: Tools for Talking When Stakes Are High](/content/books/crucial-conversations-tools-for-talking-when-stakes-are-high.md)** 📖 **by Patterson, Grenny, McMillan, & Switzler:** Focuses on high-stakes communication, essential for navigating the 'people problems' and interest discussions in negotiation. 🗣️  
+3. **[Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md)** 📖 **by Daniel Kahneman:** Explores cognitive biases and the two systems of thinking, crucial for understanding decision-making (yours and others') during negotiation. 🤔  
+4. **[How To Win Friends And Influence People](/content/books/how-to-win-friends-and-influence-people.md)** 📖 **by Dale Carnegie:** A timeless guide on interpersonal skills, relationship building, and making people receptive to your point of view—highly relevant for the 'people' aspect of negotiation. 🧑‍🤝‍🧑  
+5. **[🕊️🤝 Nonviolent Communication: A Language of Life](/content/books/nonviolent-communication.md)** 📖 **by Marshall B. Rosenberg:** Focuses on expressing needs and hearing others empathetically, aligning with the 'interests' principle and improving communication effectiveness. ❤️  
 6. ***Six Thinking Hats*** 📖 **by Edward de Bono:** Offers a framework for structured thinking and exploring issues from multiple perspectives, useful for the 'inventing options' stage of negotiation. 💡  
 7. ***Talk Like TED*** 📖 **by Carmine Gallo:** Analyzes effective communication techniques used in TED talks, valuable for presenting ideas persuasively during negotiation. 📣  
-8. ***[Just Listen](./just-listen.md): Discover the Secret to Getting Through to Absolutely Anyone*** 📖 **by Mark Goulston:** Emphasizes deep listening skills, critical for understanding interests and building rapport in negotiations. 👂  
+8. ***[Just Listen](/content/books/just-listen.md): Discover the Secret to Getting Through to Absolutely Anyone*** 📖 **by Mark Goulston:** Emphasizes deep listening skills, critical for understanding interests and building rapport in negotiations. 👂  
   
-## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
+## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Getting to Yes: Negotiating Agreement Without Giving In. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

@@ -7,7 +7,7 @@ share: true
 CTA: 🕊️ Practice people power.
 affiliate link: https://amzn.to/3L65VDL
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🕊️💪 Why Civil Resistance Works: The Strategic Logic of Nonviolent Conflict  
 [🛒 Why Civil Resistance Works: The Strategic Logic of Nonviolent Conflict. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3L65VDL)  
   
@@ -110,7 +110,7 @@ affiliate link: https://amzn.to/3L65VDL
     * 🛡️ Discusses strategies and dynamics of armed conflict.  
 * 📖 **Why Terrorism Does Not Work** by Richard English  
     * 💣 Analyzes the strategic ineffectiveness of terrorism.  
-* **[🎨⚔️ The Art of War](./the-art-of-war.md)** by Sun Tzu  
+* **[🎨⚔️ The Art of War](/content/books/the-art-of-war.md)** by Sun Tzu  
     * 📜 A classic text on military strategy and violent conflict.  
 * 📖 **How to Blow Up a Pipeline** by Andreas Malm  
     * 💥 Argues for the strategic utility of property damage in climate activism (a critique of strict nonviolence).  
@@ -122,11 +122,11 @@ affiliate link: https://amzn.to/3L65VDL
     * 🌍 Historical case studies of successful nonviolent movements.  
 * 📖 **The Crowd: A Study of the Popular Mind** by Gustave Le Bon  
     * 👥 Early sociological work on collective behavior.  
-* **[⚖️👈 The Tipping Point: How Little Things Can Make a Big Difference](./the-tipping-point.md)** by Malcolm Gladwell  
+* **[⚖️👈 The Tipping Point: How Little Things Can Make a Big Difference](/content/books/the-tipping-point.md)** by Malcolm Gladwell  
     * 📈 Explores how social epidemics spread, relevant to mass mobilization.  
 * 📖 **Exit, Voice, and Loyalty: Responses to Decline in Firms, Organizations, and States** by Albert O. Hirschman  
     * 🗣️ Theoretical framework for understanding individual and collective responses to dissatisfaction, particularly relevant to loyalty shifts.  
-* **[📖🏛️📉 Seeing Like a State: How Certain Schemes to Improve the Human Condition Have Failed](./seeing-like-a-state-how-certain-schemes-to-improve-the-human-condition-have-failed.md)** by James C. Scott  
+* **[📖🏛️📉 Seeing Like a State: How Certain Schemes to Improve the Human Condition Have Failed](/content/books/seeing-like-a-state-how-certain-schemes-to-improve-the-human-condition-have-failed.md)** by James C. Scott  
     * 🏛️ Examines state power and forms of resistance, including "weapons of the weak."  
   
 ## 💬 [Gemini](https://gemini.google.com) Prompt (gemini-2.5-flash)  

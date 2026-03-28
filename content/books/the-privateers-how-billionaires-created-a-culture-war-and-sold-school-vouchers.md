@@ -7,7 +7,7 @@ share: true
 CTA: 😡 Resist exploitation.
 affiliate link: https://amzn.to/4nSiEsk
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 💰🧑‍🏫⚔️ The Privateers: How Billionaires Created a Culture War and Sold School Vouchers  
 [🛒 The Privateers: How Billionaires Created a Culture War and Sold School Vouchers. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4nSiEsk)  
   
@@ -65,9 +65,9 @@ affiliate link: https://amzn.to/4nSiEsk
 ## 📚 Book Recommendations  
   
 ### 👍 Similar  
-* [💰🤫 Dark Money: The Hidden History of the Billionaires Behind the Rise of the Radical Right](./dark-money-the-hidden-history-of-the-billionaires-behind-the-rise-of-the-radical-right.md) by Jane Mayer  
-* [💰🤥 Merchants of Doubt](./merchants-of-doubt.md): How a Handful of Scientists Obscured the Truth on Issues from Tobacco Smoke to Global Warming by Naomi Oreskes and Erik M. Conway  
-* [💀🇺🇸🏫 The Death and Life of the Great American School System: How Testing and Choice Are Undermining Education](./the-death-and-life-of-the-great-american-school-system-how-testing-and-choice-are-undermining-education.md) by Diane Ravitch  
+* [💰🤫 Dark Money: The Hidden History of the Billionaires Behind the Rise of the Radical Right](/content/books/dark-money-the-hidden-history-of-the-billionaires-behind-the-rise-of-the-radical-right.md) by Jane Mayer  
+* [💰🤥 Merchants of Doubt](/content/books/merchants-of-doubt.md): How a Handful of Scientists Obscured the Truth on Issues from Tobacco Smoke to Global Warming by Naomi Oreskes and Erik M. Conway  
+* [💀🇺🇸🏫 The Death and Life of the Great American School System: How Testing and Choice Are Undermining Education](/content/books/the-death-and-life-of-the-great-american-school-system-how-testing-and-choice-are-undermining-education.md) by Diane Ravitch  
   
 ### 👎 Contrasting  
 * 🏫 The Wiley Handbook of School Choice  
@@ -76,7 +76,7 @@ affiliate link: https://amzn.to/4nSiEsk
   
 ### ➕ Related  
 * 🧑‍🎓 Educated: A Memoir by Tara Westover  
-* [😥🏫🇺🇸 The Shame of the Nation: The Restoration of Apartheid Schooling in America](./the-shame-of-the-nation-the-restoration-of-apartheid-schooling-in-america.md) by Jonathan Kozol  
+* [😥🏫🇺🇸 The Shame of the Nation: The Restoration of Apartheid Schooling in America](/content/books/the-shame-of-the-nation-the-restoration-of-apartheid-schooling-in-america.md) by Jonathan Kozol  
 * 🗳️ Outside Money in School Board Elections: The Nationalization of Education Politics by Jeffrey Henig, Rebecca Jacobsen, and Sarah Reckhow  
   
 ## 🫵 What Do You Think?  

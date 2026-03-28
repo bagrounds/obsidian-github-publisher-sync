@@ -10,7 +10,7 @@ Channel: MIT OpenCourseWare
 tags:
 youtube: https://youtu.be/dLg9MK1hv2Y
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md)  
 # 👨‍💼🤖📈⚕️ MIT Economist on AI, Trade-Offs & Healthcare  
 ![MIT Economist on AI, Trade-Offs & Healthcare](https://youtu.be/dLg9MK1hv2Y)  
   
@@ -71,8 +71,8 @@ youtube: https://youtu.be/dLg9MK1hv2Y
   
 ### ↔️ Similar  
   
-* [👉🤏 Nudge: Improving Decisions about Health, Wealth, and Happiness](../books/nudge.md) by Richard Thaler and Cass Sunstein. 📖 This book describes how to use insights from behavioral economics—like the core idea that people are not purely rational—to design public policies and organizational systems that nudge people toward better outcomes.  
-* [🤔🐇🐢 Thinking, Fast and Slow](../books/thinking-fast-and-slow.md) by Daniel Kahneman. 📖 The book explores the two systems that drive thought: one fast, intuitive, and emotional; the other slower, more deliberate, and logical, which directly relates to the video's discussion on emotion and rational choice in economics.  
+* [👉🤏 Nudge: Improving Decisions about Health, Wealth, and Happiness](/content/books/nudge.md) by Richard Thaler and Cass Sunstein. 📖 This book describes how to use insights from behavioral economics—like the core idea that people are not purely rational—to design public policies and organizational systems that nudge people toward better outcomes.  
+* [🤔🐇🐢 Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md) by Daniel Kahneman. 📖 The book explores the two systems that drive thought: one fast, intuitive, and emotional; the other slower, more deliberate, and logical, which directly relates to the video's discussion on emotion and rational choice in economics.  
 * 💰 Animal Spirits: How Human Psychology Drives the Economy, and Why It Matters for Global Capitalism by George A. Akerlof and Robert J. Shiller. 📖 This work argues that psychological factors, or animal spirits, are necessary to fully understand economic phenomena like recessions, unemployment, and the volatility of financial markets.  
   
 ### 🆚 Contrasting  
@@ -84,5 +84,5 @@ youtube: https://youtu.be/dLg9MK1hv2Y
 ### 🎨 Creatively Related  
   
 * 💻 *Power and Progress: Our Thousand-Year Struggle Over Technology and Prosperity* by Daron Acemoglu and Simon Johnson. 📖 Directly referenced by the speaker \[[22:40](http://www.youtube.com/watch?v=dLg9MK1hv2Y&t=1360)], this book uses economic history to show that technological progress, from the printing press to AI, only leads to shared prosperity when it is guided by social movements and political regulation.  
-* [🌎👎👑💰🏚️ Why Nations Fail: The Origins of Power, Prosperity, and Poverty](../books/why-nations-fail-the-origins-of-power-prosperity-and-poverty.md) by Daron Acemoglu and James A. Robinson. 📖 This book offers a theory of economic history, arguing that nations succeed or fail based on whether they have *inclusive* (supporting innovation and broad participation) or *extractive* (concentrating power and wealth) economic and political institutions.  
-* [💰📈🌍⏳ Capital in the Twenty-First Century](../books/capital-in-the-twenty-first-century.md) by Thomas Piketty. 📖 This highly influential book uses historical data to explore the dynamics of wealth and income inequality, providing a deep, data-driven analysis of the equity side of the equity and efficiency trade-off discussed in the video \[[18:38](http://www.youtube.com/watch?v=dLg9MK1hv2Y&t=1118)].
+* [🌎👎👑💰🏚️ Why Nations Fail: The Origins of Power, Prosperity, and Poverty](/content/books/why-nations-fail-the-origins-of-power-prosperity-and-poverty.md) by Daron Acemoglu and James A. Robinson. 📖 This book offers a theory of economic history, arguing that nations succeed or fail based on whether they have *inclusive* (supporting innovation and broad participation) or *extractive* (concentrating power and wealth) economic and political institutions.  
+* [💰📈🌍⏳ Capital in the Twenty-First Century](/content/books/capital-in-the-twenty-first-century.md) by Thomas Piketty. 📖 This highly influential book uses historical data to explore the dynamics of wealth and income inequality, providing a deep, data-driven analysis of the equity side of the equity and efficiency trade-off discussed in the video \[[18:38](http://www.youtube.com/watch?v=dLg9MK1hv2Y&t=1118)].

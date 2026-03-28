@@ -7,7 +7,7 @@ share: true
 CTA: 🎭 Unmask the charade.
 affiliate link: https://amzn.to/4apTihA
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 💩💼 Bullshit Jobs: A Theory  
 [🛒 Bullshit Jobs: A Theory. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4apTihA)  
   
@@ -69,18 +69,18 @@ affiliate link: https://amzn.to/4apTihA
   
 ## 📚 Book Recommendations  
 ### ➕ Similar  
-* [⚙️⛓️ Discipline and Punish: The Birth of the Prison](./discipline-and-punish-the-birth-of-the-prison.md) by Michel Foucault  
-* [📜🌍⏳ Sapiens: A Brief History of Humankind](./sapiens-a-brief-history-of-humankind.md) by Yuval Noah Harari  
+* [⚙️⛓️ Discipline and Punish: The Birth of the Prison](/content/books/discipline-and-punish-the-birth-of-the-prison.md) by Michel Foucault  
+* [📜🌍⏳ Sapiens: A Brief History of Humankind](/content/books/sapiens-a-brief-history-of-humankind.md) by Yuval Noah Harari  
 * 🛠️ The Problem with Work by Kathi Weeks  
   
 ### ➖ Contrasting  
 * ⛪ The Protestant Ethic and the Spirit of Capitalism by Max Weber  
 * 🤔 Why We Work by Barry Schwartz  
-* [🤿💼 Deep Work: Rules for Focused Success in a Distracted World](./deep-work.md) by Cal Newport  
+* [🤿💼 Deep Work: Rules for Focused Success in a Distracted World](/content/books/deep-work.md) by Cal Newport  
   
 ### 🔗 Related  
-* [🏛️💰 Debt: The First 5,000 Years](./debt-the-first-5000-years.md) by David Graeber  
-* [🌅🧑‍🤝‍🧑 The Dawn of Everything: A New History of Humanity](books/the-dawn-of-everything-a-new-history-of-humanity.md) by David Graeber and David Wengrow  
+* [🏛️💰 Debt: The First 5,000 Years](/content/books/debt-the-first-5000-years.md) by David Graeber  
+* [🌅🧑‍🤝‍🧑 The Dawn of Everything: A New History of Humanity](/content/books/the-dawn-of-everything-a-new-history-of-humanity.md) by David Graeber and David Wengrow  
 * 🤖 Homo Deus A Brief History of Tomorrow by Yuval Noah Harari  
   
 ## 🫵 What Do You Think?  

@@ -8,7 +8,7 @@ affiliate link: https://amzn.to/3UlsyWd
 CTA: 📊 Question presented figures.
 updated: 2026-03-15T03:04:18.103Z
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 📊🤥 How to Lie with Statistics  
 [🛒 How to Lie with Statistics. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3UlsyWd)  
   
@@ -38,27 +38,27 @@ updated: 2026-03-15T03:04:18.103Z
   
 ### 🔍 Similar Reads: Sharpening Your Skeptical Eye  
   
-* 📖 **[🙈📊🔢 Naked Statistics: Stripping the Dread from the Data](./naked-statistics.md) by Charles Wheelan:** 👓 An accessible and often humorous introduction to the core concepts of statistics, explaining their real-world applications and potential pitfalls. 🕳️  
+* 📖 **[🙈📊🔢 Naked Statistics: Stripping the Dread from the Data](/content/books/naked-statistics.md) by Charles Wheelan:** 👓 An accessible and often humorous introduction to the core concepts of statistics, explaining their real-world applications and potential pitfalls. 🕳️  
 * 📖 **"Calling Bullshit: The Art of Skepticism in a Data-Driven World" by Carl T. Bergstrom and Jevin D. West:** 📱 A contemporary guide to identifying and refuting misleading information, particularly in the digital realm. 🌐  
 * 📖 **"A Field Guide to Lies: Critical Thinking with Statistics and the Scientific Method" by Daniel J. Levitin:** 🔬 This book expands on Huff's ideas, offering a broader look at critical thinking and how to evaluate information from various sources. 🧐  
-* **[🚫❌🧮💭 How Not to Be Wrong: The Power of Mathematical Thinking](./how-not-to-be-wrong.md) by Jordan Ellenberg:** ➕ Explores the hidden mathematical structures that underlie everyday life and how understanding them can lead to better decision-making. ✅  
+* **[🚫❌🧮💭 How Not to Be Wrong: The Power of Mathematical Thinking](/content/books/how-not-to-be-wrong.md) by Jordan Ellenberg:** ➕ Explores the hidden mathematical structures that underlie everyday life and how understanding them can lead to better decision-making. ✅  
   
 ### 🌈 Contrasting Perspectives: The Power and Beauty of Data  
   
 * 📖 **"The Art of Statistics: How to Learn from Data" by David Spiegelhalter:** 📊 Presents a more optimistic view of statistics, showcasing how it can be used to answer important questions and solve real-world problems. ❓  
-* **[🤔🌍📈✅ Factfulness: Ten Reasons We're Wrong About the World - and Why Things Are Better Than You Think](./factfulness.md) by Hans Rosling, Ola Rosling, and Anna Rosling Rönnlund:** 🌍 A powerful argument for a data-driven worldview, demonstrating how our instincts can lead us to a distorted and overly negative perception of the world. 😔  
+* **[🤔🌍📈✅ Factfulness: Ten Reasons We're Wrong About the World - and Why Things Are Better Than You Think](/content/books/factfulness.md) by Hans Rosling, Ola Rosling, and Anna Rosling Rönnlund:** 🌍 A powerful argument for a data-driven worldview, demonstrating how our instincts can lead us to a distorted and overly negative perception of the world. 😔  
 * 📖 **"The Visual Display of Quantitative Information" by Edward R. Tufte:** 🖼️ A foundational text on data visualization that champions clarity, precision, and integrity in the graphical representation of data. ✅  
-* **[📖📊📈 Storytelling with Data: A Data Visualization Guide for Business Professionals](books/storytelling-with-data-a-data-visualization-guide-for-business-professionals.md) by Cole Nussbaumer Knaflic:** 🗣️ A practical guide to creating compelling and effective data visualizations that drive action. 🚀  
+* **[📖📊📈 Storytelling with Data: A Data Visualization Guide for Business Professionals](/content/books/storytelling-with-data-a-data-visualization-guide-for-business-professionals.md) by Cole Nussbaumer Knaflic:** 🗣️ A practical guide to creating compelling and effective data visualizations that drive action. 🚀  
   
 ### 💡 Creative Connections: Expanding Your Intellectual Toolkit  
   
-* **[🤔🐇🐢 Thinking, Fast and Slow](./thinking-fast-and-slow.md) by Daniel Kahneman:** 🧠 A groundbreaking exploration of the two systems that drive our thinking, revealing the cognitive biases that can lead to errors in judgment. 💥  
-* **[📊📉🏛️ Weapons of Math Destruction: How Big Data Increases Inequality and Threatens Democracy](books/weapons-of-math-destruction-how-big-data-increases-inequality-and-threatens-democracy.md) by Cathy O'Neil:** 🤖 A critical look at how algorithms and big data can be used in ways that are opaque, unregulated, and damaging to society. 💔  
+* **[🤔🐇🐢 Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md) by Daniel Kahneman:** 🧠 A groundbreaking exploration of the two systems that drive our thinking, revealing the cognitive biases that can lead to errors in judgment. 💥  
+* **[📊📉🏛️ Weapons of Math Destruction: How Big Data Increases Inequality and Threatens Democracy](/content/books/weapons-of-math-destruction-how-big-data-increases-inequality-and-threatens-democracy.md) by Cathy O'Neil:** 🤖 A critical look at how algorithms and big data can be used in ways that are opaque, unregulated, and damaging to society. 💔  
 * 📖 **"How to Lie with Maps" by Mark Monmonier:** 🗺️ A fascinating look at how maps, like statistics, can be manipulated to present a distorted view of the world. 🌍  
 * 📖 **"The Ethical Use of Data in Education" by Ellen B. Mandinach and Edith S. Gummer:** 🍎 This book explores the ethical dilemmas and responsibilities associated with the collection and use of data in educational settings. 🏫  
 * 📖 **"Data Ethics" by Gry Hasselbalch and Pernille Tranberg:** 🛡️ Provides a framework for the ethical implementation of data in information management systems. ⚙️  
   
-## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro)  
+## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-pro)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on How to Lie with Statistics. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.  
   
 ## 🦋 Bluesky    

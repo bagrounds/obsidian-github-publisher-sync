@@ -10,7 +10,7 @@ Channel: Maya Inspiration
 tags:
 youtube: https://youtu.be/nHB-nz2ijT4
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md)  
 # 🧘☮️😌😊 How to Never Get Angry or Bothered by Anyone | MAYA ANGELOU MOTIVATION  
 ![How to Never Get Angry or Bothered by Anyone | MAYA ANGELOU MOTIVATION](https://youtu.be/nHB-nz2ijT4)  
   
@@ -30,6 +30,6 @@ youtube: https://youtu.be/nHB-nz2ijT4
 - ❓ **Topics to explore** for better understanding include the distinction between **peaceful detachment** and **emotional avoidance** or **passive resignation** in relationships where one may be codependent or enabling \[[25:55](http://www.youtube.com/watch?v=nHB-nz2ijT4&t=1555)]. The long-term effects of this non-reaction strategy on the **psyche and self-esteem** when facing **repeated abuse or disrespect** should also be examined \[[24:25](http://www.youtube.com/watch?v=nHB-nz2ijT4&t=1465)].  
   
 ## 📚 Book Recommendations  
-- 🧘 **Similar**: [🧘🏼‍♀️📅 The Daily Stoic: 366 Meditations on Wisdom, Perseverance, and the Art of Living](../books/the-daily-stoic-366-meditations-on-wisdom-perseverance-and-the-art-of-living.md) by Ryan Holiday. 💡 **Offers daily lessons** on applying **Stoic philosophy** to modern life, emphasizing **internal control** over external events and emotions, aligning perfectly with the video's core message of **stillness** and non-reaction.  
-- 🗣️ **Contrasting**: [💬😬 Difficult Conversations: How to Discuss What Matters Most](../books/difficult-conversations-how-to-discuss-what-matters-most.md) by Douglas Stone, Bruce Patton, and Sheila Heen. 📚 **Provides a step-by-step guide** on how to **actively engage** in high-stakes, **emotional discussions**, contrasting with the recommendation for **silence** and **walking away** by offering strategies for **resolution**.  
-- 🕊️ **Creatively Related**: [🔒🐦 I Know Why the Caged Bird Sings](../books/i-know-why-the-caged-bird-sings.md) by Maya Angelou. 📖 **A powerful memoir** about Angelou's early life that speaks to **resilience**, **dignity**, and **finding one's voice** despite trauma, embodying the **strength and self-respect** the video advocates for **protecting**.
+- 🧘 **Similar**: [🧘🏼‍♀️📅 The Daily Stoic: 366 Meditations on Wisdom, Perseverance, and the Art of Living](/content/books/the-daily-stoic-366-meditations-on-wisdom-perseverance-and-the-art-of-living.md) by Ryan Holiday. 💡 **Offers daily lessons** on applying **Stoic philosophy** to modern life, emphasizing **internal control** over external events and emotions, aligning perfectly with the video's core message of **stillness** and non-reaction.  
+- 🗣️ **Contrasting**: [💬😬 Difficult Conversations: How to Discuss What Matters Most](/content/books/difficult-conversations-how-to-discuss-what-matters-most.md) by Douglas Stone, Bruce Patton, and Sheila Heen. 📚 **Provides a step-by-step guide** on how to **actively engage** in high-stakes, **emotional discussions**, contrasting with the recommendation for **silence** and **walking away** by offering strategies for **resolution**.  
+- 🕊️ **Creatively Related**: [🔒🐦 I Know Why the Caged Bird Sings](/content/books/i-know-why-the-caged-bird-sings.md) by Maya Angelou. 📖 **A powerful memoir** about Angelou's early life that speaks to **resilience**, **dignity**, and **finding one's voice** despite trauma, embodying the **strength and self-respect** the video advocates for **protecting**.

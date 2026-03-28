@@ -7,7 +7,7 @@ share: true
 CTA: 🔑 Unlock reality's design.
 affiliate link: https://amzn.to/48GJv5r
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # ♾️🌿🔬 The Fractal Geometry of Nature  
 [🛒 The Fractal Geometry of Nature. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/48GJv5r)  
   
@@ -75,7 +75,7 @@ affiliate link: https://amzn.to/48GJv5r
 ## 📚 Book Recommendations  
   
 ### Similar  
-* **[🌪️💥🦋🆕 Chaos: Making a New Science](./chaos.md)** by James Gleick: Explores the intertwined histories of chaos theory and fractals, detailing the lives and discoveries of key figures.  
+* **[🌪️💥🦋🆕 Chaos: Making a New Science](/content/books/chaos.md)** by James Gleick: Explores the intertwined histories of chaos theory and fractals, detailing the lives and discoveries of key figures.  
 * **Fractals Everywhere** by Michael F. Barnsley: A more mathematically rigorous approach to iterated function systems and their applications.  
 * **💰 The (Mis)Behavior of Markets: A Fractal View of Financial Turbulence** by Benoît B. Mandelbrot and Richard L. Hudson: Applies fractal geometry to explain the unpredictable nature of financial markets.  
   
@@ -84,7 +84,7 @@ affiliate link: https://amzn.to/48GJv5r
 * **🤯 Principia Mathematica** by Alfred North Whitehead and Bertrand Russell: A monumental work aiming to derive all mathematical truths from a set of axioms, contrasting with Mandelbrot's empirical and visual approach to mathematics.  
   
 ### Related  
-* **[♾️📐🎶🥨 Gödel, Escher, Bach: An Eternal Golden Braid](./godel-escher-bach.md)** by Douglas Hofstadter: Explores connections between mathematics, art, and artificial intelligence, touching on recursion and self-reference.  
+* **[♾️📐🎶🥨 Gödel, Escher, Bach: An Eternal Golden Braid](/content/books/godel-escher-bach.md)** by Douglas Hofstadter: Explores connections between mathematics, art, and artificial intelligence, touching on recursion and self-reference.  
 * **⚛️ Complexity: The Emerging Science at the Edge of Order and Chaos** by M. Mitchell Waldrop: Provides a broader overview of complexity science, of which fractals and chaos are key components.  
 * **💻 Structure and Interpretation of Computer Programs** by Harold Abelson and Gerald Jay Sussman: Demonstrates how simple computational rules can generate complex, self-similar structures, particularly relevant to understanding fractal algorithms.  
   

@@ -10,7 +10,7 @@ Channel: Trevor Noah
 tags:
 youtube: https://youtu.be/cucLZcC0MqQ
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md)  
 # 💰🇺🇸❓🗣️ Who Owns America? Bernie Sanders Says the Quiet Part Out Loud  
 ![Who Owns America? Bernie Sanders Says the Quiet Part Out Loud](https://youtu.be/cucLZcC0MqQ)  
   
@@ -98,13 +98,13 @@ A: 🤝 The profound loss of essential human interaction in society is also a si
   
 ### Similar 🤝 Perspectives  
   
-- [🇺🇸⚔️💰 Fight Oligarchy](../books/fight-oligarchy.md)  
+- [🇺🇸⚔️💰 Fight Oligarchy](/content/books/fight-oligarchy.md)  
   
-- [💰📈🌍⏳ Capital in the Twenty-First Century](../books/capital-in-the-twenty-first-century.md) by Thomas Piketty 💰: This book provides an exhaustive, data-driven analysis of wealth and income inequality across centuries, supporting the central claim that return on capital exceeds the rate of economic growth, leading to wealth concentration.  
+- [💰📈🌍⏳ Capital in the Twenty-First Century](/content/books/capital-in-the-twenty-first-century.md) by Thomas Piketty 💰: This book provides an exhaustive, data-driven analysis of wealth and income inequality across centuries, supporting the central claim that return on capital exceeds the rate of economic growth, leading to wealth concentration.  
   
-- [💰🤫 Dark Money: The Hidden History of the Billionaires Behind the Rise of the Radical Right](../books/dark-money-the-hidden-history-of-the-billionaires-behind-the-rise-of-the-radical-right.md) by Jane Mayer 💸: This investigative work meticulously details how a network of secretive, wealthy donors has exerted political influence, aligning with the speaker's points about oligarchs controlling the political 🗳️ process.  
+- [💰🤫 Dark Money: The Hidden History of the Billionaires Behind the Rise of the Radical Right](/content/books/dark-money-the-hidden-history-of-the-billionaires-behind-the-rise-of-the-radical-right.md) by Jane Mayer 💸: This investigative work meticulously details how a network of secretive, wealthy donors has exerted political influence, aligning with the speaker's points about oligarchs controlling the political 🗳️ process.  
   
-- [👁️‍🗨️💰⛓️👤 The Age of Surveillance Capitalism: The Fight for a Human Future at the New Frontier of Power](../books/the-age-of-surveillance-capitalism.md) by Shoshana Zuboff 📱: It explores how major tech companies accumulate unprecedented power through the commodification of human experience, creatively relating to the discussion of billionaires controlling the 📰 media and the internet.  
+- [👁️‍🗨️💰⛓️👤 The Age of Surveillance Capitalism: The Fight for a Human Future at the New Frontier of Power](/content/books/the-age-of-surveillance-capitalism.md) by Shoshana Zuboff 📱: It explores how major tech companies accumulate unprecedented power through the commodification of human experience, creatively relating to the discussion of billionaires controlling the 📰 media and the internet.  
   
 ### Contrasting 🔀 Perspectives  
   
@@ -114,11 +114,11 @@ A: 🤝 The profound loss of essential human interaction in society is also a si
   
 ### Creatively Related 💡 Concepts  
   
-- [📜🌍⏳ Sapiens: A Brief History of Humankind](../books/sapiens-a-brief-history-of-humankind.md) by Yuval Noah Harari 🧠: This broad history explores the cognitive revolution and how humans use shared fictions, such as money and corporations, to cooperate, providing a deep, conceptual framework for understanding the power of 🏢 consolidated wealth.  
+- [📜🌍⏳ Sapiens: A Brief History of Humankind](/content/books/sapiens-a-brief-history-of-humankind.md) by Yuval Noah Harari 🧠: This broad history explores the cognitive revolution and how humans use shared fictions, such as money and corporations, to cooperate, providing a deep, conceptual framework for understanding the power of 🏢 consolidated wealth.  
   
-- [🏚️💰 Evicted: Poverty and Profit in the American City](../books/evicted-poverty-and-profit-in-the-american-city.md) by Matthew Desmond 🏠: It provides a ground-level, human-focused look at the devastating effects of the housing crisis and poverty on the working class, serving as a powerful, real-world illustration of the systemic 🏚️ failures discussed in the interview.  
+- [🏚️💰 Evicted: Poverty and Profit in the American City](/content/books/evicted-poverty-and-profit-in-the-american-city.md) by Matthew Desmond 🏠: It provides a ground-level, human-focused look at the devastating effects of the housing crisis and poverty on the working class, serving as a powerful, real-world illustration of the systemic 🏚️ failures discussed in the interview.  
   
-- [🎳🏘️📉📈 Bowling Alone: The Collapse and Revival of American Community](../books/bowling-alone.md) by Robert D. Putnam 🎳: This sociological study details the decline of community and social capital in America, which is directly relevant to the speaker's call for grassroots mobilization and renewed 🤝 human connection.  
+- [🎳🏘️📉📈 Bowling Alone: The Collapse and Revival of American Community](/content/books/bowling-alone.md) by Robert D. Putnam 🎳: This sociological study details the decline of community and social capital in America, which is directly relevant to the speaker's call for grassroots mobilization and renewed 🤝 human connection.  
   
 ## 🐦 Tweet  
 <blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">💰🇺🇸❓🗣️ Who Owns America? Bernie Sanders Says the Quiet Part Out Loud<br><br>💰 Wealth Inequality | 🏢 Corporate Power | 📰 Media Control | 🗳️ Political Influence | 🤖 AI Impact | 🛠️ Economic Solutions<br><br>Great talk <a href="https://twitter.com/SenSanders?ref_src=twsrc%5Etfw">@SenSanders</a> &amp; <a href="https://twitter.com/Trevornoah?ref_src=twsrc%5Etfw">@Trevornoah</a> !<a href="https://t.co/6DrIcvdcWE">https://t.co/6DrIcvdcWE</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/1981501082556911878?ref_src=twsrc%5Etfw">October 23, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

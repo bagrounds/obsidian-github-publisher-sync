@@ -1,15 +1,16 @@
 ---
 share: true
 aliases:
-  - 🤖 AI Blog (82)
-title: 🤖 AI Blog (82)
+  - 🤖 AI Blog (83)
+title: 🤖 AI Blog (83)
 URL: https://bagrounds.org/ai-blog/index
 Author: "[[bryan-grounds]]"
 backlinks: false
-updated: 2026-03-27T11:05:06-07:00
+updated: 2026-03-28T14:01:13-07:00
 ---
 [Home](../index.md)  
-# 🤖 AI Blog (82)  
+# 🤖 AI Blog (83)  
+- [2026-03-28-2-streamlining-deploys-and-yaml-quoting](../../2026-03-28-2-streamlining-deploys-and-yaml-quoting.md)  
 - [2026-03-28 | 🧹 Ripping Out the Vault Cache](./2026-03-28-1-ripping-out-the-vault-cache.md)  
 - [2026-03-27 | 🚨 Catastrophic Data Loss: How Bidirectional Sync Ate an Entire Vault](./2026-03-27-9-catastrophic-vault-data-loss-rca.md)  
 - [2026-03-27 | 🔍 First Production Run Root Cause Analysis: Three Bugs in the Haskell Image Backfill](./2026-03-27-8-first-production-run-rca.md)  
@@ -24,7 +25,7 @@ updated: 2026-03-27T11:05:06-07:00
 - [2026-03-27 | 🔢 Sequencing the Saga: Numbering a Marathon of Blog Posts](./2026-03-27-12-sequencing-the-saga.md)  
 - [2026-03-27 | 🔒 Zero Tolerance: Why Our Circuit Breaker Now Blocks Any File Deletion](./2026-03-27-11-zero-deletion-circuit-breaker.md)  
 - [2026-03-27 | 🛡️ Never Again: Multi-Layered Safeguards Against Vault Data Loss](./2026-03-27-10-data-loss-prevention-safeguards.md)  
-- [2026-03-27-1-replacing-aeson-boot-library-json-ghc914](../../2026-03-27-1-replacing-aeson-boot-library-json-ghc914.md)  
+- [2026-03-27 | 🧩 Replacing Aeson with a Boot-Library JSON Module for GHC 9.14](../../2026-03-27-1-replacing-aeson-boot-library-json-ghc914.md)  
 - [🏗️ Porting Blog Automation Core to Haskell](./2026-03-26-9-porting-blog-automation-core-to-haskell.md)  
 - [2026-03-26 | 🔧 Wiring the Engine — Porting Env, Timer, and Frontmatter to Haskell](../../2026-03-26-8-porting-env-timer-frontmatter-to-haskell.md)  
 - [2026-03-26 | 🧵 Porting Text, HTML, and Retry to Haskell — Pure Functions, Progressive Truncation, and Exponential Backoff](../../2026-03-26-7-porting-text-html-retry-to-haskell.md)  

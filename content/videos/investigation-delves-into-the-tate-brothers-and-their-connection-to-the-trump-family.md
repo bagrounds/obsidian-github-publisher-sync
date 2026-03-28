@@ -10,7 +10,7 @@ Channel: PBS NewsHour
 tags:
 youtube: https://youtu.be/G64hi1fLWb8
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md)  
 # 👑💰👨‍👦‍👦💥 Investigation delves into the Tate brothers and their connection to the Trump family  
 ![Investigation delves into the Tate brothers and their connection to the Trump family](https://youtu.be/G64hi1fLWb8)  
   
@@ -67,5 +67,5 @@ youtube: https://youtu.be/G64hi1fLWb8
   
 ### 🎨 Creatively Related  
   
-* [♂️👑✊ Political Masculinity: How Incels, Fundamentalists and Authoritarians Mobilise for Patriarchy](../books/political-masculinity-how-incels-fundamentalists-and-authoritarians-mobilise-for-patriarchy.md): Connects the rise of male supremacy ideologies, incels, and fundamentalists to global political authoritarianism and anti-gender movements.  
+* [♂️👑✊ Political Masculinity: How Incels, Fundamentalists and Authoritarians Mobilise for Patriarchy](/content/books/political-masculinity-how-incels-fundamentalists-and-authoritarians-mobilise-for-patriarchy.md): Connects the rise of male supremacy ideologies, incels, and fundamentalists to global political authoritarianism and anti-gender movements.  
 * 😡 Angry White Men: American Masculinity at the End of an Era: Examines the cultural anxieties and feelings of aggrieved entitlement among some American men facing shifts in gender and economic power.

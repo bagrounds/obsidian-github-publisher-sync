@@ -10,7 +10,7 @@ Channel: SpoonFedStudy
 tags:
 youtube: https://youtu.be/RhNiwwSWkiM
 ---
-[Home](../index.md) > [Videos](./index.md) | [🥄👶📚 SpoonFedStudy](../topics/spoonfedstudy.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md) | [🥄👶📚 SpoonFedStudy](/content/topics/spoonfedstudy.md)  
 # 🧠🔄🛠️✅ How to fix your addicted brain, permanently (science-based)  
 ![How to fix your addicted brain, permanently (science-based)](https://youtu.be/RhNiwwSWkiM)  
   
@@ -52,12 +52,12 @@ youtube: https://youtu.be/RhNiwwSWkiM
   
 ### ↔️ Similar  
 * 📚 Dopamine Nation: Finding Balance in the Age of Indulgence by Anna Lembke. 🧠 Explores the science of the pain-pleasure seesaw and how to achieve balance by taking dopamine fasts, written by the Stanford psychiatrist whose work is cited in the video.  
-* [⚛️🔄 Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones](../books/atomic-habits.md) by James Clear. 🛠️ Provides practical, incremental, and environment-focused strategies for behavior change, which directly relates to the video's concept of the Odyssean contract.  
+* [⚛️🔄 Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones](/content/books/atomic-habits.md) by James Clear. 🛠️ Provides practical, incremental, and environment-focused strategies for behavior change, which directly relates to the video's concept of the Odyssean contract.  
   
 ### 🆚 Contrasting  
 * 📚 Drug Dealer, MD: How Doctors Were Duped, Patients Got Hooked, and Why It's So Hard to Stop by Anna Lembke. ⚕️ A previous work by the same author, offering a more specific focus on the opioid crisis and the institutional role of medicine in fueling addiction, providing a broader societal context.  
-* [🔄🧠💪 The Power of Habit: Why We Do What We Do in Life and Business](../books/the-power-of-habit.md) by Charles Duhigg. 🔄 Focuses on the neurological loop of cue, routine, and reward, offering a framework for habit change that is more psychological and less focused on the neurochemistry of dopamine receptor sites.  
+* [🔄🧠💪 The Power of Habit: Why We Do What We Do in Life and Business](/content/books/the-power-of-habit.md) by Charles Duhigg. 🔄 Focuses on the neurological loop of cue, routine, and reward, offering a framework for habit change that is more psychological and less focused on the neurochemistry of dopamine receptor sites.  
   
 ### 🎨 Creatively Related  
-* [🤿💼 Deep Work: Rules for Focused Success in a Distracted World](../books/deep-work.md) by Cal Newport. 💻 Argues that the ability to focus without distraction is a critical skill for the 21st century, directly tying into the video's goal of improving motivation for effortful tasks.  
-* [🔦💡 Man's Search for Meaning](../books/mans-search-for-meaning.md) by Viktor Frankl. 🌟 A classic work of existential psychology emphasizing the importance of finding meaning and purpose (the strong why) even in the most painful circumstances.
+* [🤿💼 Deep Work: Rules for Focused Success in a Distracted World](/content/books/deep-work.md) by Cal Newport. 💻 Argues that the ability to focus without distraction is a critical skill for the 21st century, directly tying into the video's goal of improving motivation for effortful tasks.  
+* [🔦💡 Man's Search for Meaning](/content/books/mans-search-for-meaning.md) by Viktor Frankl. 🌟 A classic work of existential psychology emphasizing the importance of finding meaning and purpose (the strong why) even in the most painful circumstances.

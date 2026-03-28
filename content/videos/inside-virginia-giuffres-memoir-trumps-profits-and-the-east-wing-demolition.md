@@ -10,7 +10,7 @@ Channel: Katie Couric
 tags:
 youtube: https://youtu.be/Us-6ezyN5oI
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md)  
 # 👧🏝️💰🏚️ Inside Virginia Giuffre’s Memoir, Trump’s Profits, and the East Wing Demolition  
 ![Inside Virginia Giuffre’s Memoir, Trump’s Profits, and the East Wing Demolition](https://youtu.be/Us-6ezyN5oI)  
   
@@ -60,14 +60,14 @@ youtube: https://youtu.be/Us-6ezyN5oI
 ## 📚 Book Recommendations  
   
 ### ↔️ Similar  
-* [💔👊⚖️ Nobody's Girl: A Memoir of Surviving Abuse and Fighting for Justice](../books/nobodys-girl-a-memoir-of-surviving-abuse-and-fighting-for-justice.md)  
+* [💔👊⚖️ Nobody's Girl: A Memoir of Surviving Abuse and Fighting for Justice](/content/books/nobodys-girl-a-memoir-of-surviving-abuse-and-fighting-for-justice.md)  
 * 📖 **Know My Name** by Chanel Miller: A powerful memoir by a survivor of sexual assault, focusing on the justice system, public scrutiny, and the journey toward healing.  
 * 📚 **Trauma and Recovery** by Judith Herman: A foundational text that explains the dynamics of abuse, the process of psychological trauma, and the stages of recovery, providing a clinical framework for understanding Giuffre’s experiences.  
-* **[🤕🎼🧠 The Body Keeps the Score: Brain, Mind, and Body in the Healing of Trauma](../books/the-body-keeps-the-score-brain-mind-and-body-in-the-healing-of-trauma.md)** by Bessel van der Kolk: Explains how trauma physically alters the brain and body, providing context for Giuffre’s chronic health issues mentioned in the video.  
+* **[🤕🎼🧠 The Body Keeps the Score: Brain, Mind, and Body in the Healing of Trauma](/content/books/the-body-keeps-the-score-brain-mind-and-body-in-the-healing-of-trauma.md)** by Bessel van der Kolk: Explains how trauma physically alters the brain and body, providing context for Giuffre’s chronic health issues mentioned in the video.  
   
 ### 🆚 Contrasting  
-* **[⚠️🥴🕹️🌐 The Fifth Risk](../books/the-fifth-risk.md)** by Michael Lewis: Details the crucial, unglamorous work of federal agencies and contrasts that with the potential corruption and disinterest of a new administration, highlighting the importance of government stability and competence.  
-* **[👑🚫📜2️⃣0️⃣ On Tyranny: Twenty Lessons from the Twentieth Century](../books/on-tyranny.md)** by Timothy Snyder: A concise guide on how to recognize and resist authoritarianism, touching upon the normalization of rule-breaking and the importance of maintaining an ethical society.  
+* **[⚠️🥴🕹️🌐 The Fifth Risk](/content/books/the-fifth-risk.md)** by Michael Lewis: Details the crucial, unglamorous work of federal agencies and contrasts that with the potential corruption and disinterest of a new administration, highlighting the importance of government stability and competence.  
+* **[👑🚫📜2️⃣0️⃣ On Tyranny: Twenty Lessons from the Twentieth Century](/content/books/on-tyranny.md)** by Timothy Snyder: A concise guide on how to recognize and resist authoritarianism, touching upon the normalization of rule-breaking and the importance of maintaining an ethical society.  
 * 👑 **Say Nothing: A True Story of Murder and Memory in Northern Ireland** by Patrick Radden Keefe: A deep dive into the corrosive effect of secrecy, power, and deep-seated conflicts, contrasting the pursuit of justice with the need for silence in political violence.  
   
 ### 🎨 Creatively Related  

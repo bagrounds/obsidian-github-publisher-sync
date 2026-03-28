@@ -10,7 +10,7 @@ Channel: Amanpour and Company
 tags:
 youtube: https://youtu.be/CNfZZ2uFF4k
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md)  
 # ❓🏥🛂 Who Pays for Undocumented Migrants’ Healthcare? Reporter Explains | Amanpour and Company  
 ![Who Pays for Undocumented Migrants’ Healthcare? Reporter Explains | Amanpour and Company](https://youtu.be/CNfZZ2uFF4k)  
   
@@ -45,7 +45,7 @@ The 📰 Washington Post reporter David Aay's explanation provides a nuanced, ev
   
 * 💰 A deeper look into peer-reviewed **health economics research** quantifying the long-term cost savings to taxpayers from offering **preventative care** to the undocumented population versus relying solely on mandatory emergency room visits.  
 * 🇺🇸 Further investigation into the specific structures and outcomes of **state-funded**, Medicaid-like programs in blue states (like California) that cover undocumented residents, including their effect on state budgets and overall **public health metrics**.  
-* 🏭 A review of the American **healthcare system's structure**, where high costs and private insurance dynamics often overshadow the relatively small expenditures on emergency care for the undocumented, as detailed in books like [💰⚕️⬆️ An American Sickness: How Healthcare Became Big Business and How You Can Take It Back](../books/an-american-sickness-how-healthcare-became-big-business-and-how-you-can-take-it-back.md) by Elisabeth Rosenthal.  
+* 🏭 A review of the American **healthcare system's structure**, where high costs and private insurance dynamics often overshadow the relatively small expenditures on emergency care for the undocumented, as detailed in books like [💰⚕️⬆️ An American Sickness: How Healthcare Became Big Business and How You Can Take It Back](/content/books/an-american-sickness-how-healthcare-became-big-business-and-how-you-can-take-it-back.md) by Elisabeth Rosenthal.  
   
 ## ❓ Frequently Asked Questions (FAQ)  
   
@@ -69,7 +69,7 @@ The 📰 Washington Post reporter David Aay's explanation provides a nuanced, ev
 ### 🆚 Contrasting  
   
 * 💸 **The Price We Pay: What Broke American Health Care—and How to Fix It** by Marty Makary M.D. 💡 A highly critical analysis of the U.S. healthcare system that focuses on inflated prices, lack of transparency, and the **games played by hospitals and insurance companies**, which frames the overall cost crisis as a systemic issue, not one driven by immigrant care spending.  
-* **[⚕️💰🇺🇸 The Healing of America: A Global Quest for Better, Cheaper, and Fairer Health Care](../books/the-healing-of-america-a-global-quest-for-better-cheaper-and-fairer-health-care.md)** by T. R. Reid. 🤝 Offers a contrasting perspective by touring the successful, affordable **universal health care systems** in industrialized democracies like France and Germany, suggesting alternative structural models to the U.S. system discussed in the video.  
+* **[⚕️💰🇺🇸 The Healing of America: A Global Quest for Better, Cheaper, and Fairer Health Care](/content/books/the-healing-of-america-a-global-quest-for-better-cheaper-and-fairer-health-care.md)** by T. R. Reid. 🤝 Offers a contrasting perspective by touring the successful, affordable **universal health care systems** in industrialized democracies like France and Germany, suggesting alternative structural models to the U.S. system discussed in the video.  
 * 🇺🇸 **America's Bitter Pill: Money, Politics, Backroom Deals, and the Fight to Fix Our Broken Healthcare System** by Steven Brill. 📝 Focuses on the implementation of the Affordable Care Act and its failure to curb **rampant abuses in the healthcare industry**, shifting the focus of cost away from specific populations to the broader economics of health policy.  
   
 ### 🎨 Creatively Related  

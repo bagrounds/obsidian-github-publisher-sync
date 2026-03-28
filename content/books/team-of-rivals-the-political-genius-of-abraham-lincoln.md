@@ -7,7 +7,7 @@ share: true
 affiliate link: https://amzn.to/463g50l
 CTA: 🇺🇸 Grasp leadership.
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🤝🏛️ Team of Rivals: The Political Genius of Abraham Lincoln  
 [🛒 Team of Rivals: The Political Genius of Abraham Lincoln. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/463g50l)  
   

@@ -9,7 +9,7 @@ tags:
 affiliate link: https://amzn.to/4jx7AxG
 CTA: 🧠 Grasp understanding.
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🧠🤔💡➡️ Cognitive Psychology and Its Implications  
 [🛒 Cognitive Psychology and Its Implications. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4jx7AxG)  
   
@@ -68,7 +68,7 @@ CTA: 🧠 Grasp understanding.
   
 ### **Book Recommendations 📚**  
 * **Best Alternate Book on the Same Topic:** "Cognitive Psychology" by Robert Solso, Otto MacLin, and M. Kimberly MacLin. This book offers a similar comprehensive overview but with a slightly different emphasis and organization. 🔄  
-* **Best Tangentially Related Book:** "[Thinking, Fast and Slow](./thinking-fast-and-slow.md)" by Daniel Kahneman. This book delves into the dual-process theory of thinking and decision-making, exploring the interplay between intuition and reasoning. ⚖️  
+* **Best Tangentially Related Book:** "[Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md)" by Daniel Kahneman. This book delves into the dual-process theory of thinking and decision-making, exploring the interplay between intuition and reasoning. ⚖️  
 * **Best Diametrically Opposed Book:** "Gut Feelings: The Intelligence of the Unconscious" by Gerd Gigerenzer. This book challenges the emphasis on rational decision-making, highlighting the value of heuristics and intuition. 💖  
 * **Best Fiction Book That Incorporates Related Ideas:** Flowers for Algernon by Daniel Keyes. This novel explores the ethical and psychological implications of enhancing cognitive abilities, raising questions about intelligence and consciousness. 🌼  
 * **Best More General Book:** "Psychology" by David Myers and C. Nathan DeWall. This textbook provides a broad overview of psychology, including cognitive psychology, within a larger context. 🌐  

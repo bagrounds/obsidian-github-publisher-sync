@@ -10,7 +10,7 @@ Channel: Heather Cox Richardson
 tags:
 youtube: https://youtu.be/Dgp0gnXKOKA
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md)  
 # 📰🤝🗣️ Building a News Community with Jim Acosta | Explainer  
 ![Building a News Community with Jim Acosta | Explainer](https://youtu.be/Dgp0gnXKOKA)  
   
@@ -31,8 +31,8 @@ youtube: https://youtu.be/Dgp0gnXKOKA
 This video presents a perspective critical of traditional corporate media and optimistic about the potential of independent journalism. While it highlights valid concerns about media consolidation and bias, it could be enriched by exploring the challenges faced by independent media, such as funding, sustainability, and the spread of misinformation within decentralized platforms. A more nuanced understanding would also consider the role of fact-checking organizations and media literacy initiatives in navigating the complex information landscape.  
   
 ## 📚 Book Recommendations  
-* [🏭🫡 Manufacturing Consent: The Political Economy of the Mass Media](../books/manufacturing-consent.md) by Edward S. Herman and Noam Chomsky: Explores how mass media can be used to control public opinion, offering a contrasting, more critical view of media power.  
+* [🏭🫡 Manufacturing Consent: The Political Economy of the Mass Media](/content/books/manufacturing-consent.md) by Edward S. Herman and Noam Chomsky: Explores how mass media can be used to control public opinion, offering a contrasting, more critical view of media power.  
 * 📰 *Flat Earth News: An Award-Winning Reporter Exposes Falsehood, Distortion and Propaganda in the Global Media* by Nick Davies: A deep dive into the systemic issues within mainstream journalism that lead to inaccuracies and bias.  
 * 🎙️ *Podcasting For Dummies* by Tee Morris, Chuck Tomasi, and Evo Terra: For those inspired by the video's discussion of independent content creation, this offers a practical guide to starting a podcast.  
-* [🎳🏘️📉📈 Bowling Alone: The Collapse and Revival of American Community](../books/bowling-alone.md) by Robert D. Putnam: While not directly about media, this book explores the decline of community in America, which could offer context for the video's call for a "news community."  
+* [🎳🏘️📉📈 Bowling Alone: The Collapse and Revival of American Community](/content/books/bowling-alone.md) by Robert D. Putnam: While not directly about media, this book explores the decline of community in America, which could offer context for the video's call for a "news community."  
 * 💡 *The Wisdom of Crowds* by James Surowiecki: Discusses how large groups of people can be smarter than individual experts, aligning with the video's "faith in the audience" theme.

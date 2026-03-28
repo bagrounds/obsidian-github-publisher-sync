@@ -3,10 +3,10 @@
 ## 🎯 Overview
 
 📋 Synchronizes the Obsidian vault between the cloud and the local filesystem using the `ob` CLI tool.
-🔄 Supports warm and cold cache sync paths for fast incremental updates.
+🔄 Uses a simple pull-edit-push flow: one pull at the start, local edits, one push at the end.
 🔒 Handles lock contention with retry logic and stale lock cleanup.
-📝 Provides embed appending to push social media embeds back to Obsidian notes.
-🛡️ Multi-layered data loss prevention with cache clearing and pre-push circuit breakers.
+📝 Provides embed appending to write social media embeds to Obsidian notes.
+🛡️ Pre-push circuit breaker prevents catastrophic data loss from anomalous file deletions.
 
 ## 🏗️ Architecture
 
@@ -17,45 +17,48 @@
 | 📱 Sync Library (TS) | `scripts/lib/obsidian-sync.ts` | 🔧 Vault sync, push, lock management, embed appending |
 | 📱 Sync Library (HS) | `haskell/src/Automation/ObsidianSync.hs` | 🔧 Haskell implementation with identical safeguards |
 
-### 🔄 Data Flow
+### 🔄 Data Flow — Scheduled Run
 
 ```
-📥 syncObsidianVault(credentials)
-         ↓
-   ├─ 🔥 Warm cache path (vault already configured):
-   │    ├─ 🧹 ensureSyncClean(vaultDir) → kill processes + remove lock
-   │    ├─ 🔄 runObSyncWithRetry() → ob sync with lock retry
-   │    └─ 📊 Record file count baseline
-   │
-   └─ ❄️ Cold cache path (first run / fallback):
-        ├─ 🧹 Clear entire vault directory (data loss prevention)
-        ├─ 📦 ob sync-setup → configure vault on clean directory
-        ├─ 🔄 runObSyncWithRetry() → ob sync with lock retry
-        └─ 📊 Record file count baseline
-         ↓
-📂 Returns vaultDir path
-         ↓
-📝 appendEmbedsToObsidianNote(notePath, sections, credentials)
-         ↓
-   ├─ 📥 syncObsidianVault() → ensure latest
-   ├─ ✏️ Append embed sections to note file
-   └─ 📤 pushObsidianVault(vaultDir, credentials)
-              ├─ 📊 Count files and validate against baseline
-              ├─ 🛑 Circuit breaker: abort if any files lost
-              └─ 🔄 ob sync to push changes
+main()
+  ├─ 📥 syncObsidianVault(credentials)     ← ONE pull at the start
+  │       ├─ 🧹 Clear vault directory completely
+  │       ├─ 📦 ob sync-setup → configure vault on clean directory
+  │       ├─ 🔄 ob sync → download all files
+  │       └─ 📊 Record file count baseline
+  │
+  ├─ 🔧 Task 1: operates on vaultDir       ← Tasks receive vault dir
+  ├─ 🔧 Task 2: operates on vaultDir
+  ├─ 🔧 Task N: operates on vaultDir
+  │
+  └─ 📤 pushObsidianVault(vaultDir)        ← ONE push at the end
+          ├─ 📊 Count files and validate against baseline
+          ├─ 🛑 Circuit breaker: abort if any files lost
+          └─ 🔄 ob sync to push changes
+```
+
+### 🔄 Data Flow — Standalone Scripts
+
+```
+📥 syncObsidianVault(credentials)      ← Pull
+     ↓
+📝 Edit files locally
+     ↓
+📤 pushObsidianVault(vaultDir)         ← Push
 ```
 
 ## 🛡️ Data Loss Prevention
 
-### 🧹 Cold Cache Directory Clearing
+### 🧹 Always-Clean Sync
 
-⚠️ **Root Cause (2026-03-27 incident):** When warm cache sync fails, the fallback to `coldCacheSync` previously ran `ob sync-setup` on the existing partial cache directory. Since `ob sync` operates in bidirectional mode by default, it interpreted remote files missing from the partial local cache as "locally deleted" and propagated mass deletions to the remote vault.
-
-✅ **Fix:** `coldCacheSync` now completely clears the vault directory before running `sync-setup`, ensuring a clean state with no stale files that could be misinterpreted as deletions.
+🧹 Every call to `syncObsidianVault` completely clears the vault directory before running `sync-setup`.
+🔒 This ensures no stale files exist that `ob sync` could misinterpret as intentional deletions.
+⚠️ **Root Cause (2026-03-27 incident):** Bidirectional `ob sync` on a partial cache directory interpreted missing remote files as local deletions, propagating mass deletions to the remote vault.
+✅ **Prevention:** No caching. Every sync starts from a clean, empty directory.
 
 ### 📊 File Count Baseline Tracking
 
-📈 After every successful vault pull (warm or cold cache), the file count is recorded to a `.vault-sync-file-count` marker file inside the vault directory.
+📈 After every successful vault pull, the file count is recorded to a `.vault-sync-file-count` marker file inside the vault directory.
 📉 This baseline is used by the pre-push circuit breaker to detect anomalous file loss.
 
 ### 🛑 Pre-Push Circuit Breaker
@@ -72,20 +75,6 @@
 |---|---|---|
 | `MIN_SAFE_FILE_COUNT` | 50 | 🔒 Absolute minimum files for push without baseline |
 | Zero-deletion policy | currentCount >= baseline | 🔒 Any file loss blocks push — no tolerance for deletions |
-
-## 🔥 Warm Cache Sync
-
-⚡ When the vault directory already exists from a previous run, the warm cache path skips the `ob sync-setup` step entirely.
-🔄 This path runs `ob sync` directly, which performs a fast incremental sync.
-🧹 Before syncing, `ensureSyncClean` kills any lingering processes and removes stale locks.
-📊 After successful sync, records file count baseline.
-
-## ❄️ Cold Cache Sync
-
-🧹 On first run, fallback, or when the vault directory is missing, the vault directory is completely cleared before setup.
-📦 `ob sync-setup` configures the vault with authentication credentials on a clean directory.
-🔄 After setup, `ob sync` performs the initial full synchronization.
-📊 After successful sync, records file count baseline.
 
 ## 🔒 Lock Contention Retry
 
@@ -109,10 +98,11 @@
 ⏳ Includes a 1-second settling delay after push to ensure child processes exit cleanly.
 🧹 Post-push cleanup kills any remaining processes.
 
-## 📝 Embed Appending
+## 📝 Embed Writing
 
-📝 `appendEmbedsToObsidianNote` syncs the vault, appends embed sections to a note file, and pushes the changes.
-🔄 This is the primary mechanism for persisting social media embeds back to Obsidian notes.
+✏️ `writeEmbedsToNote` writes embed sections directly to a note file in the vault directory without any sync operations.
+📝 `appendEmbedsToObsidianNote` is a convenience wrapper that pulls, writes, and pushes — used only by standalone scripts.
+🔄 During scheduled runs, `writeEmbedsToNote` is used directly since the vault is already pulled and will be pushed at the end.
 
 ## 🔧 Key Functions
 
@@ -126,9 +116,10 @@
 | `killObProcesses(vaultDir?)` | 💀 Kill lingering obsidian-headless processes |
 | `ensureSyncClean(vaultDir)` | 🧹 Kill processes and remove lock for clean state |
 | `runObSyncWithRetry(args, options, vaultDir, maxRetries)` | 🔄 Run ob sync with lock contention retry |
-| `syncObsidianVault(credentials)` | 📥 Full vault sync with warm/cold cache paths |
+| `syncObsidianVault(credentials)` | 📥 Fresh vault pull — always clean sync-setup + sync |
 | `pushObsidianVault(vaultDir, credentials)` | 📤 Push local changes with circuit breaker validation |
-| `appendEmbedsToObsidianNote(notePath, sections, credentials)` | 📝 Append embed sections and push |
+| `writeEmbedsToNote(filePath, sections)` | ✏️ Write embed sections to a note file (no sync) |
+| `appendEmbedsToObsidianNote(notePath, sections, credentials)` | 📝 Pull, write embeds, push (standalone convenience) |
 | `countVaultFiles(dir)` | 📊 Count non-hidden files recursively |
 | `validatePrePushFileCount(vaultDir, currentCount)` | 🛑 Circuit breaker validation |
 | `vaultFileCountPath(vaultDir)` | 📂 Path to baseline file count marker |
@@ -138,7 +129,6 @@
 ✅ Sync operations are safe to re-run:
 - 🔒 Lock cleanup prevents deadlocks from previous failed runs
 - 💀 Process cleanup prevents resource leaks
-- 📥 Incremental sync only transfers changed files
-- 📝 Embed appending checks for existing sections before writing
-- 🧹 Cold cache fallback clears directory to prevent stale state
+- 🧹 Every pull starts from a clean directory — no stale state
+- 📝 Embed writing checks for existing sections before appending
 - 🛑 Circuit breaker prevents catastrophic deletion propagation

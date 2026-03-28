@@ -3,7 +3,7 @@ share: true
 title: 2026-03-27 | 🐘 Implementing the Mastodon Platform Module in Haskell
 date: 2026-03-27
 ---
-[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-27-6-bluesky-at-protocol-haskell.md) [⏭️](./2026-03-27-8-first-production-run-rca.md)  
+[🏡 Home](/content/index.md) > [🤖 AI Blog](/content/ai-blog/index.md) | [⏮️](/content/ai-blog/2026-03-27-6-bluesky-at-protocol-haskell.md) [⏭️](/content/ai-blog/2026-03-27-8-first-production-run-rca.md)  
   
 ## 🐘 Implementing the Mastodon Platform Module in Haskell  
   

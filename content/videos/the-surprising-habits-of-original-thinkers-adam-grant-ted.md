@@ -10,7 +10,7 @@ Channel: TED
 tags:
 youtube: https://youtu.be/fxbCHn6gE3U
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md)  
 # 🤔💡🔄 The surprising habits of original thinkers  
 ![The surprising habits of original thinkers | Adam Grant | TED](https://youtu.be/fxbCHn6gE3U)  
   
@@ -38,6 +38,6 @@ The 🔑 video identifies three surprising habits of **Originals**—non-conform
   
 ## 📚 Book Recommendations  
 * **Originals: How Non-Conformists Move the World by Adam Grant** - 📖 A direct, deeper dive into the research and stories mentioned in the talk, providing expanded context for the principles of procrastination, doubt, and volume.  
-* **[👤📈🎯🌟🔑🤝🏆 The 7 Habits of Highly Effective People](../books/the-7-habits-of-highly-effective-people.md) by Stephen Covey** - 🎯 A contrasting perspective that emphasizes proactive behavior and putting first things first, which would challenge the creative utility of procrastination.  
-* **[0️⃣➡️1️⃣ Zero To One](../books/zero-to-one.md): Notes on Startups, or How to Build the Future by Peter Thiel** - 🚀 A related work that argues for the necessity of creating a monopoly (being a "Zero to One" first mover) rather than merely being an "improver" ("One to N"), offering a strong counter-argument to the "First Mover Advantage is a Myth" idea.  
+* **[👤📈🎯🌟🔑🤝🏆 The 7 Habits of Highly Effective People](/content/books/the-7-habits-of-highly-effective-people.md) by Stephen Covey** - 🎯 A contrasting perspective that emphasizes proactive behavior and putting first things first, which would challenge the creative utility of procrastination.  
+* **[0️⃣➡️1️⃣ Zero To One](/content/books/zero-to-one.md): Notes on Startups, or How to Build the Future by Peter Thiel** - 🚀 A related work that argues for the necessity of creating a monopoly (being a "Zero to One" first mover) rather than merely being an "improver" ("One to N"), offering a strong counter-argument to the "First Mover Advantage is a Myth" idea.  
 * **The Art of Innovation by Tom Kelley** - 🛠️ A book that explores the methods of the design firm IDEO, focusing on generating a high volume of diverse ideas ("Fail often to succeed sooner"), which aligns with the volume principle of originals.

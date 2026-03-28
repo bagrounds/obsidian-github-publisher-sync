@@ -9,7 +9,7 @@ tags:
 affiliate link: https://amzn.to/3FCGeIH
 CTA: Start epidemics.
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # ⚖️👈 The Tipping Point: How Little Things Can Make a Big Difference  
 [🛒 The Tipping Point: How Little Things Can Make a Big Difference. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3FCGeIH)  
   
@@ -60,26 +60,26 @@ Gladwell illustrates his theories with various case studies, including:
 ### 👯 Similar Books (Exploring Social Phenomena, Virality, Behavioral Economics)  
   
 * 🏆 **Outliers: The Story of Success** by Malcolm Gladwell: Explores the factors contributing to high achievement, looking beyond individual talent to context, opportunity, and culture.  
-* **[⚡🚫💭 Blink: The Power of Thinking Without Thinking](./blink-the-power-of-thinking-without-thinking.md)** by Malcolm Gladwell: Examines the process of snap judgments and rapid cognition.  
-* 🧐 **[Freakonomics](./freakonomics.md): A Rogue Economist Explores the Hidden Side of Everything** by Steven D. Levitt and Stephen J. Dubner: Uses economic principles to analyze diverse, often counterintuitive, aspects of human behavior. Gladwell himself recommended it, noting its entertaining approach to economics.  
+* **[⚡🚫💭 Blink: The Power of Thinking Without Thinking](/content/books/blink-the-power-of-thinking-without-thinking.md)** by Malcolm Gladwell: Examines the process of snap judgments and rapid cognition.  
+* 🧐 **[Freakonomics](/content/books/freakonomics.md): A Rogue Economist Explores the Hidden Side of Everything** by Steven D. Levitt and Stephen J. Dubner: Uses economic principles to analyze diverse, often counterintuitive, aspects of human behavior. Gladwell himself recommended it, noting its entertaining approach to economics.  
 * 📢 **Contagious: How to Build Word of Mouth in the Digital Age** by Jonah Berger: Provides a framework (STEPPS) explaining why certain products, ideas, and content go viral, focusing on the psychology of sharing.  
-* ✅ **[Made to Stick: Why Some Ideas Survive and Others Die](./made-to-stick.md)** by Chip Heath and Dan Heath: Analyzes the characteristics that make ideas memorable and effective, complementing Gladwell's "Stickiness Factor".  
-* 🗣️ **[Influence](./influence.md): The Psychology of Persuasion** by Robert B. Cialdini: Explores the principles of persuasion and compliance, relevant to Gladwell's "Salesmen" concept.  
+* ✅ **[Made to Stick: Why Some Ideas Survive and Others Die](/content/books/made-to-stick.md)** by Chip Heath and Dan Heath: Analyzes the characteristics that make ideas memorable and effective, complementing Gladwell's "Stickiness Factor".  
+* 🗣️ **[Influence](/content/books/influence.md): The Psychology of Persuasion** by Robert B. Cialdini: Explores the principles of persuasion and compliance, relevant to Gladwell's "Salesmen" concept.  
   
 ### 🆚 Contrasting Books (Different Perspectives, Critiques, Deeper Dives)  
   
-* 🤔 **[Thinking, Fast and Slow](./thinking-fast-and-slow.md)** by Daniel Kahneman: A deep dive into cognitive biases and the two systems driving human thought (fast/intuitive vs. slow/deliberate), offering a more cognitive science-based perspective on decision-making than Gladwell's sociological focus.  
-* 🎯 **[Peak](./peak.md): Secrets from the New Science of Expertise** by Anders Ericsson and Robert Pool: Challenges Gladwell's "10,000-hour rule" popularized in *Outliers* (often associated with *Tipping Point*-era Gladwell) by focusing on deliberate practice rather than just hours spent.  
+* 🤔 **[Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md)** by Daniel Kahneman: A deep dive into cognitive biases and the two systems driving human thought (fast/intuitive vs. slow/deliberate), offering a more cognitive science-based perspective on decision-making than Gladwell's sociological focus.  
+* 🎯 **[Peak](/content/books/peak.md): Secrets from the New Science of Expertise** by Anders Ericsson and Robert Pool: Challenges Gladwell's "10,000-hour rule" popularized in *Outliers* (often associated with *Tipping Point*-era Gladwell) by focusing on deliberate practice rather than just hours spent.  
 * 🤨 **Everything Is Obvious: *Once You Know the Answer*** by Duncan J. Watts: A sociologist and network scientist offers a critique of "common sense" explanations for social phenomena, arguing that predictability is often an illusion and challenging narrative-driven approaches like Gladwell's.  
-* **[⚫🦢🎲 The Black Swan: The Impact of the Highly Improbable](./the-black-swan-the-impact-of-the-highly-improbable.md)** by Nassim Nicholas Taleb: Focuses on the extreme impact of rare and unpredictable events, contrasting with the idea that trends can be reliably engineered or predicted by identifying key factors.  
+* **[⚫🦢🎲 The Black Swan: The Impact of the Highly Improbable](/content/books/the-black-swan-the-impact-of-the-highly-improbable.md)** by Nassim Nicholas Taleb: Focuses on the extreme impact of rare and unpredictable events, contrasting with the idea that trends can be reliably engineered or predicted by identifying key factors.  
   
 ### 💡 Creatively Related Books (Network Science, Trends, Broader Concepts)  
   
 * 🕸️ **Linked: The New Science of Networks** by Albert-László Barabási: Explores the structure and behavior of networks, providing a scientific underpinning for concepts like Gladwell's "Connectors."  
-* **[🔬🔄 The Structure of Scientific Revolutions](./the-structure-of-scientific-revolutions.md)** by Thomas S. Kuhn: While focused on science history, it explores the concept of paradigm shifts, which share similarities with societal "tipping points" where prevailing ideas suddenly change.  
-* 🌍 **[Sapiens: A Brief History of Humankind](./sapiens-a-brief-history-of-humankind.md)** by Yuval Noah Harari: Offers a sweeping view of human history, touching upon how ideas, myths, and social structures spread and shape societies over millennia.  
-* 🔢 **[The Signal and the Noise: Why So Many Predictions Fail - but Some Don't](./the-signal-and-the-noise.md)** by Nate Silver: Discusses forecasting and distinguishing meaningful patterns (signals) from randomness (noise), relevant to understanding and predicting trends.  
+* **[🔬🔄 The Structure of Scientific Revolutions](/content/books/the-structure-of-scientific-revolutions.md)** by Thomas S. Kuhn: While focused on science history, it explores the concept of paradigm shifts, which share similarities with societal "tipping points" where prevailing ideas suddenly change.  
+* 🌍 **[Sapiens: A Brief History of Humankind](/content/books/sapiens-a-brief-history-of-humankind.md)** by Yuval Noah Harari: Offers a sweeping view of human history, touching upon how ideas, myths, and social structures spread and shape societies over millennia.  
+* 🔢 **[The Signal and the Noise: Why So Many Predictions Fail - but Some Don't](/content/books/the-signal-and-the-noise.md)** by Nate Silver: Discusses forecasting and distinguishing meaningful patterns (signals) from randomness (noise), relevant to understanding and predicting trends.  
 * ⏪ **Revenge of the Tipping Point** by Malcolm Gladwell: Gladwell's 2024 follow-up, revisiting and expanding on the original ideas with new theories and case studies.  
   
-## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
+## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on The Tipping Point. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

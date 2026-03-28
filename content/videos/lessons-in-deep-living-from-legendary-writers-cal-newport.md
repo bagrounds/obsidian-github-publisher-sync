@@ -10,7 +10,7 @@ Channel: Cal Newport
 tags:
 youtube: https://youtu.be/-mzfGeFJCYA
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md)  
 # ✍️📜🗝️💡 Lessons In Deep Living From Legendary Writers | Cal Newport  
 ![Lessons In Deep Living From Legendary Writers | Cal Newport](https://youtu.be/-mzfGeFJCYA)  
   
@@ -51,13 +51,13 @@ youtube: https://youtu.be/-mzfGeFJCYA
 ## 📚 Book Recommendations  
   
 ### ↔️ Similar  
-* [⚛️🔄 Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones](../books/atomic-habits.md) by James Clear: Focuses on the iterative method of continuous improvement through tiny behavioral changes, supporting the idea of refining the first draft of living.  
-* [➖💯 Essentialism: The Disciplined Pursuit of Less](../books/essentialism-the-disciplined-pursuit-of-less.md) by Greg McKeown: Aligns with the focus on finding the right idea by providing a systematic way to execute the vital few tasks while eliminating the trivial many.  
+* [⚛️🔄 Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones](/content/books/atomic-habits.md) by James Clear: Focuses on the iterative method of continuous improvement through tiny behavioral changes, supporting the idea of refining the first draft of living.  
+* [➖💯 Essentialism: The Disciplined Pursuit of Less](/content/books/essentialism-the-disciplined-pursuit-of-less.md) by Greg McKeown: Aligns with the focus on finding the right idea by providing a systematic way to execute the vital few tasks while eliminating the trivial many.  
   
 ### 🆚 Contrasting  
-* [🎨🤓 The Art of Learning: A Journey in the Pursuit of Excellence](../books/the-art-of-learning.md) by Josh Waitzkin: Discusses the importance of a soft zone and creative wandering, offering balance to the rigid focus of deep work by emphasizing flexibility and growth from setbacks (Slow Thoughts).  
-* [🌊🧘🏼‍♀️🧠📈 Flow: The Psychology of Optimal Experience](../books/flow-the-psychology-of-optimal-experience.md) by Mihaly Csikszentmihalyi: Explores the state of optimal experience achieved through challenging activities, contrasting with work-based output by emphasizing the internal fulfillment derived from the activity itself.  
+* [🎨🤓 The Art of Learning: A Journey in the Pursuit of Excellence](/content/books/the-art-of-learning.md) by Josh Waitzkin: Discusses the importance of a soft zone and creative wandering, offering balance to the rigid focus of deep work by emphasizing flexibility and growth from setbacks (Slow Thoughts).  
+* [🌊🧘🏼‍♀️🧠📈 Flow: The Psychology of Optimal Experience](/content/books/flow-the-psychology-of-optimal-experience.md) by Mihaly Csikszentmihalyi: Explores the state of optimal experience achieved through challenging activities, contrasting with work-based output by emphasizing the internal fulfillment derived from the activity itself.  
   
 ### 🎨 Creatively Related  
-* [🤔🐇🐢 Thinking, Fast and Slow](../books/thinking-fast-and-slow.md) by Daniel Kahneman: Relates tangentially by explaining the two systems of thought, providing cognitive context for the demanding concentration required for deep work.  
+* [🤔🐇🐢 Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md) by Daniel Kahneman: Relates tangentially by explaining the two systems of thought, providing cognitive context for the demanding concentration required for deep work.  
 * 🧰 The Design Thinking Playbook by Michael Lewrick, Patrick Link, and Larry Leifer: Provides a structured, iterative framework for problem-solving, offering a methodology for executing the shitty first draft and refinement cycles.

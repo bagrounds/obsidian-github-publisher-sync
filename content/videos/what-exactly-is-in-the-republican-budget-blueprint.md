@@ -9,7 +9,7 @@ Platform:
 Channel: Senator Patty Murray
 tags:
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md)  
 # What EXACTLY is in the Republican Budget Blueprint?  
 ![What EXACTLY is in the Republican Budget Blueprint?](https://youtu.be/rg3RUeH3Qlk)  
   

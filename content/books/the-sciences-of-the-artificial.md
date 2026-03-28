@@ -7,7 +7,7 @@ share: true
 CTA: 💡 Engineer your world.
 affiliate link: https://amzn.to/3ZpLeXx
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🔬⚙️ The Sciences of the Artificial  
 [🛒 The Sciences of the Artificial. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3ZpLeXx)  
   
@@ -75,17 +75,17 @@ affiliate link: https://amzn.to/3ZpLeXx
 ## 📚 Book Recommendations  
   
 ### 🤝 Similar  
-* [🤔🐇🐢 Thinking, Fast and Slow](./thinking-fast-and-slow.md) by Daniel Kahneman: Explores the two systems of thought and numerous cognitive biases and heuristics, deepening the understanding of bounded rationality.  
-* [💺🚪💡🤔 The Design of Everyday Things](./the-design-of-everyday-things.md) by Don Norman: Focuses on human-centered design principles and how artificial objects interact with human cognition.  
-* [🤖🗣️🐒⚙️ Cybernetics: or Control and Communication in the Animal and the Machine](./cybernetics.md) by Norbert Wiener: A foundational text exploring control systems and communication in both biological and artificial entities, highly relevant to understanding artificial systems.  
+* [🤔🐇🐢 Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md) by Daniel Kahneman: Explores the two systems of thought and numerous cognitive biases and heuristics, deepening the understanding of bounded rationality.  
+* [💺🚪💡🤔 The Design of Everyday Things](/content/books/the-design-of-everyday-things.md) by Don Norman: Focuses on human-centered design principles and how artificial objects interact with human cognition.  
+* [🤖🗣️🐒⚙️ Cybernetics: or Control and Communication in the Animal and the Machine](/content/books/cybernetics.md) by Norbert Wiener: A foundational text exploring control systems and communication in both biological and artificial entities, highly relevant to understanding artificial systems.  
   
 ### ⚔️ Contrasting  
 * 📊 Rational Choice Theory by Jon Elster: Offers a counterpoint by detailing the assumptions and implications of fully rational decision-making, providing a strong contrast to Simon's bounded rationality.  
-* [👤🧬 The Selfish Gene](./the-selfish-gene.md) by Richard Dawkins: Presents a reductionist, gene-centric view of evolution in natural systems, contrasting with Simon's focus on goal-oriented artificial systems and human design.  
+* [👤🧬 The Selfish Gene](/content/books/the-selfish-gene.md) by Richard Dawkins: Presents a reductionist, gene-centric view of evolution in natural systems, contrasting with Simon's focus on goal-oriented artificial systems and human design.  
   
 ### 🔗 Related  
-* [♾️📐🎶🥨 Gödel, Escher, Bach: An Eternal Golden Braid](./godel-escher-bach.md) by Douglas Hofstadter: Explores common themes in intelligence, systems, and self-reference through the lens of math, art, and music, resonating with the interdisciplinary spirit of Simon.  
-* [🌐🔗🧠📖 Thinking in Systems: A Primer](./thinking-in-systems.md) by Donella H. Meadows: Provides a clear introduction to systems thinking, offering tools to understand complexity, which is a central theme in Simon's work.  
+* [♾️📐🎶🥨 Gödel, Escher, Bach: An Eternal Golden Braid](/content/books/godel-escher-bach.md) by Douglas Hofstadter: Explores common themes in intelligence, systems, and self-reference through the lens of math, art, and music, resonating with the interdisciplinary spirit of Simon.  
+* [🌐🔗🧠📖 Thinking in Systems: A Primer](/content/books/thinking-in-systems.md) by Donella H. Meadows: Provides a clear introduction to systems thinking, offering tools to understand complexity, which is a central theme in Simon's work.  
 * 🏢 Moral Mazes: The World of Corporate Managers by Robert Jackall: Offers an empirical look at decision-making in complex organizational environments, illustrating practical implications of bounded rationality and satisficing.  
   
 ## 🫵 What Do You Think?  

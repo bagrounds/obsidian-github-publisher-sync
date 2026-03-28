@@ -10,7 +10,7 @@ Channel: Mayo Clinic
 tags:
 youtube: https://youtu.be/RBYL-sj-dRk
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md)  
 # ❤️‍🔥🏋️🏃 The Role of High-Intensity Interval Training and Strength Training in Cardiovascular Health  
 ![The Role of High-Intensity Interval Training and Strength Training in Cardiovascular Health.](https://youtu.be/RBYL-sj-dRk)  
   
@@ -32,6 +32,6 @@ This video provides a 🗣️ concise and clear explanation of the benefits and 
   
 ## 📚 Book Recommendations  
 * The Tabata Protocol by Izumi Tabata is a 📖 great recommendation for a deeper dive into one of the most well-known HIIT protocols, offering the scientific background and application.  
-* [⚡🧠🏃 Spark: The Revolutionary New Science of Exercise and the Brain](../books/spark-the-revolutionary-new-science-of-exercise-and-the-brain.md) by John J. Ratey provides a 🧠 fascinating perspective on the neurological benefits of exercise, including high-intensity training.  
+* [⚡🧠🏃 Spark: The Revolutionary New Science of Exercise and the Brain](/content/books/spark-the-revolutionary-new-science-of-exercise-and-the-brain.md) by John J. Ratey provides a 🧠 fascinating perspective on the neurological benefits of exercise, including high-intensity training.  
 * Younger Next Year by Chris Crowley and Henry S. Lodge is an 👴 accessible and motivating guide to staying fit and healthy as you age, often recommending a mix of high-intensity and endurance training.  
 * The Oxygen Advantage by Patrick McKeown explores the 💨 importance of breathing and how it can be optimized to improve athletic performance, which is particularly relevant for the high-intensity bursts in HIIT.

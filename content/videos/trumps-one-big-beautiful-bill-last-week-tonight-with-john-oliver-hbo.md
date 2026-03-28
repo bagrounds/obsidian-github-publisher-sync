@@ -10,7 +10,7 @@ Channel: LastWeekTonight
 tags:
 youtube: https://youtu.be/vjFL-cBcjKc
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md)  
 # 🤡💵📺 Trump’s One Big Beautiful Bill: Last Week Tonight with John Oliver (HBO)  
 ![AI Slop: Last Week Tonight with John Oliver (HBO)](https://youtu.be/vjFL-cBcjKc)  
   
@@ -35,17 +35,17 @@ youtube: https://youtu.be/vjFL-cBcjKc
   
 ## 📚 Book Recommendations  
 * **📚 For understanding the impact of policy on poverty and social safety nets**:  
-    * [🏚️💰 Evicted: Poverty and Profit in the American City](../books/evicted-poverty-and-profit-in-the-american-city.md) by Matthew Desmond  
+    * [🏚️💰 Evicted: Poverty and Profit in the American City](/content/books/evicted-poverty-and-profit-in-the-american-city.md) by Matthew Desmond  
     * *💼 Nickel and Dimed: On (Not) Getting By in America* by Barbara Ehrenreich  
-    * [🧑🏿⛓️🙈 The New Jim Crow: Mass Incarceration in the Age of Colorblindness](../books/the-new-jim-crow-mass-incarceration-in-the-age-of-colorblindness.md) by Michelle Alexander  
+    * [🧑🏿⛓️🙈 The New Jim Crow: Mass Incarceration in the Age of Colorblindness](/content/books/the-new-jim-crow-mass-incarceration-in-the-age-of-colorblindness.md) by Michelle Alexander  
 * **📚 For understanding healthcare policy and its effects**:  
-    * [⚕️💰🇺🇸 The Healing of America: A Global Quest for Better, Cheaper, and Fairer Health Care](../books/the-healing-of-america-a-global-quest-for-better-cheaper-and-fairer-health-care.md) by T.R. Reid  
-    * [💰⚕️⬆️ An American Sickness: How Healthcare Became Big Business and How You Can Take It Back](../books/an-american-sickness-how-healthcare-became-big-business-and-how-you-can-take-it-back.md) by Elisabeth Rosenthal  
+    * [⚕️💰🇺🇸 The Healing of America: A Global Quest for Better, Cheaper, and Fairer Health Care](/content/books/the-healing-of-america-a-global-quest-for-better-cheaper-and-fairer-health-care.md) by T.R. Reid  
+    * [💰⚕️⬆️ An American Sickness: How Healthcare Became Big Business and How You Can Take It Back](/content/books/an-american-sickness-how-healthcare-became-big-business-and-how-you-can-take-it-back.md) by Elisabeth Rosenthal  
 * **📚 For understanding tax policy and economic inequality**:  
-    * 💰📈🌍⏳ *[Capital in the Twenty-First Century](../books/capital-in-the-twenty-first-century.md)* by Thomas Piketty  
-    * [💰➡️ The Triumph of Injustice: How the Rich Dodge Taxes and How to Make Them Pay](../books/the-triumph-of-injustice-how-the-rich-dodge-taxes-and-how-to-make-them-pay.md) by Emmanuel Saez and Gabriel Zucman  
+    * 💰📈🌍⏳ *[Capital in the Twenty-First Century](/content/books/capital-in-the-twenty-first-century.md)* by Thomas Piketty  
+    * [💰➡️ The Triumph of Injustice: How the Rich Dodge Taxes and How to Make Them Pay](/content/books/the-triumph-of-injustice-how-the-rich-dodge-taxes-and-how-to-make-them-pay.md) by Emmanuel Saez and Gabriel Zucman  
 * **📚 For understanding the legislative process and political dynamics**:  
-    * [🤝🏛️ Team of Rivals: The Political Genius of Abraham Lincoln](../books/team-of-rivals-the-political-genius-of-abraham-lincoln.md) by Doris Kearns Goodwin (while historical, it offers insights into political maneuvering and compromise)  
+    * [🤝🏛️ Team of Rivals: The Political Genius of Abraham Lincoln](/content/books/team-of-rivals-the-political-genius-of-abraham-lincoln.md) by Doris Kearns Goodwin (while historical, it offers insights into political maneuvering and compromise)  
     * *👤 The Power Elite* by C. Wright Mills (a classic on power structures in America)  
   
 ## 🐦 Tweet  

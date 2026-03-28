@@ -5,7 +5,7 @@ aliases:
 title: 🐧💻🚀 Linux
 URL: https://bagrounds.org/software/linux
 ---
-[Home](../index.md) > [Software](./index.md)  
+[Home](/content/index.md) > [Software](/content/software/index.md)  
 # 🐧💻🚀 Linux  
   
 ## 🤖 AI Summary  
@@ -154,7 +154,7 @@ Why did the SysAdmin break up with the Linux server? Because it kept saying, "It
 * Topically Opposed: "Microsoft Windows Internals" by Mark Russinovich, David A. Solomon, and Alex Ionescu. 🍎  
 * More General: "Operating System Concepts" by Abraham Silberschatz, Peter Baer Galvin, and Greg Gagne. ⚙️🧠  
 * More Specific: "Linux Kernel Development" by Robert Love. 🧠💻  
-* Fictional: "[Snow Crash](../books/snow-crash.md)" by Neal Stephenson (explores concepts related to operating systems and virtual worlds). 👓🌍  
+* Fictional: "[Snow Crash](/content/books/snow-crash.md)" by Neal Stephenson (explores concepts related to operating systems and virtual worlds). 👓🌍  
 * Rigorous: "Modern Operating Systems" by Andrew S. Tanenbaum and Herbert Bos. 🧠💻📚  
 * Accessible: "Linux for Dummies" by Emmett Dulaney and Rickford Grant. 🧑‍🏫🐧  
   

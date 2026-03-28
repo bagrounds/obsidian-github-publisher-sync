@@ -6,7 +6,7 @@ URL: https://bagrounds.org/books/what-if-symptoms-are-your-friend-an-introductio
 share: true
 affiliate link: https://amzn.to/4jzHLNR
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🤕❤️ What if Symptoms Are Your Friend?: An Introduction to BodyMind Bridge and Your Self-Healing Mind  
 [🛒 What if Symptoms Are Your Friend?: An Introduction to BodyMind Bridge and Your Self-Healing Mind. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4jzHLNR)  
   
@@ -39,7 +39,7 @@ affiliate link: https://amzn.to/4jzHLNR
 📚 These books explore the connection between the mind and body and view physical or emotional symptoms through a lens that considers underlying psychological or emotional factors.  
   
 * 💔 **When the Body Says No: The Cost of Hidden Stress** by Gabor Maté. 😔 Explores the connection between chronic stress, emotional patterns, and physical illness.  
-* **[🤕🎼🧠 The Body Keeps the Score: Brain, Mind, and Body in the Healing of Trauma](./the-body-keeps-the-score-brain-mind-and-body-in-the-healing-of-trauma.md)** by Bessel van der Kolk. 🤕 Focuses on how trauma affects the body and mind and explores various healing modalities.  
+* **[🤕🎼🧠 The Body Keeps the Score: Brain, Mind, and Body in the Healing of Trauma](/content/books/the-body-keeps-the-score-brain-mind-and-body-in-the-healing-of-trauma.md)** by Bessel van der Kolk. 🤕 Focuses on how trauma affects the body and mind and explores various healing modalities.  
 * 🤕 **Healing Back Pain: The Mind-Body Connection** by John E. Sarno. 😖 Argues that tension and repressed emotions are often the cause of back pain and other physical ailments.  
 * 💖 **You Can Heal Your Life** by Louise L. Hay. 🙏 A classic in the self-help genre that links specific physical ailments to emotional and mental patterns, offering affirmations for healing.  
 * 🕊️ **Peace, Love and Healing: Bodymind Communication and the Path to Self-Healing** by Bernie S. Siegel. 🗣️ Discusses the power of the mind and emotions in the healing process, drawing on patient experiences.  
@@ -64,5 +64,5 @@ affiliate link: https://amzn.to/4jzHLNR
 * 📜 **Books on the history and philosophy of medicine:** 🏛️ These could provide broader context on how different cultures and time periods have understood health, illness, and the relationship between the mind and body, offering alternative frameworks to the dominant Western biomedical model.  
 * 🧸 **Picture books about physical symptoms in children:** 🤧 Exploring how symptoms are depicted and understood in literature for young audiences can offer a different perspective on the narratives we build around physical experiences from an early age.  
   
-## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
+## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on What if Symptoms Are Your Friend?: An Introduction to BodyMind Bridge and Your Self-Healing Mind. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

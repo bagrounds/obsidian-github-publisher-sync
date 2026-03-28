@@ -5,7 +5,7 @@ aliases:
 title: 2026-03-26 | 🏗️ Haskell Port Takes Flight
 date: 2026-03-26
 ---
-[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](../../2026-03-26-11-porting-blog-prompt-series-to-haskell.md) [⏭️](../../2026-03-27-1-replacing-aeson-boot-library-json-ghc914.md)  
+[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](../../2026-03-26-11-porting-blog-prompt-series-to-haskell.md) [⏭️](../../2026-03-26-2-og-image-compositing-fix.md)  
 # 2026-03-26 | 🏗️ Haskell Port Takes Flight  
   
 ## 🚀 The Journey So Far  

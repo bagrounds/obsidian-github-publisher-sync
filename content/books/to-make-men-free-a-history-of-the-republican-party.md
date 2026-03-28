@@ -7,7 +7,7 @@ share: true
 affiliate link: https://amzn.to/4eajL2q
 CTA: 🇺🇸 Explore liberty's legacy.
 ---
-[Home](../index.md) > [Books](./index.md) | [🏛️🇺🇸📖 Heather Cox Richardson](../people/heather-cox-richardson.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md) | [🏛️🇺🇸📖 Heather Cox Richardson](/content/people/heather-cox-richardson.md)  
 # 🇺🇸⛓️‍💥📜🐘 To Make Men Free: A History of the Republican Party  
 [🛒 To Make Men Free: A History of the Republican Party. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4eajL2q)  
   
@@ -59,7 +59,7 @@ Heather Cox Richardson's 🏛️ *To Make Men Free* offers a concise yet compreh
   
 ### ✨ Creatively Related Books (Exploring Specific Eras, Figures, or Concepts)  
   
-* **[🤝🏛️ Team of Rivals: The Political Genius of Abraham Lincoln](./team-of-rivals-the-political-genius-of-abraham-lincoln.md)** by Doris Kearns Goodwin. Given Lincoln's central role in Richardson's book as the embodiment of the Republican Party's founding ideals, a deep dive into his political life offers valuable context.  
+* **[🤝🏛️ Team of Rivals: The Political Genius of Abraham Lincoln](/content/books/team-of-rivals-the-political-genius-of-abraham-lincoln.md)** by Doris Kearns Goodwin. Given Lincoln's central role in Richardson's book as the embodiment of the Republican Party's founding ideals, a deep dive into his political life offers valuable context.  
 * 📰 ***The Bully Pulpit: Theodore Roosevelt, William Howard Taft, and the Golden Age of Journalism*** by Doris Kearns Goodwin. Explores the Progressive Era, a period when the Republican Party under Roosevelt championed significant government reforms and trust-busting, aligning with the "opportunity" theme in Richardson's book.  
 * 🤵 ***Republican Character*** by Donald T. Critchlow. This book examines the role of character and leadership among key Republican figures like Nixon, Rockefeller, Goldwater, and Reagan, offering a biographical approach to understanding the party's development.  
 * 👑 ***The End of Kings: A History of Republics and Republicans*** by William R. Everdell. This book provides a much broader historical and philosophical context for the concept of a "republic" and the tradition of republicanism, extending far beyond the American Republican Party.  
@@ -68,5 +68,5 @@ Heather Cox Richardson's 🏛️ *To Make Men Free* offers a concise yet compreh
 * 🧑 ***Biographies of other key Republican figures*** discussed in the book, such as William H. Seward, Theodore Roosevelt, Dwight Eisenhower, Barry Goldwater, Richard Nixon, and Ronald Reagan, would provide deeper insights into their impact on the party's history.  
 * 🏘️ ***The Color of Law: A Forgotten History of How Our Government Segregated America*** by Richard Rothstein. While not solely about the Republican Party, this book delves into how government policies (sometimes enacted under Republican administrations, or with bipartisan support/opposition) contributed to segregation, offering a critical look at the practical outcomes of political actions related to opportunity and equality.".  
   
-## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
+## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on To Make Men Free: A History of the Republican Party. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

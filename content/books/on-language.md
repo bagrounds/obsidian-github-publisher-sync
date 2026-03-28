@@ -7,7 +7,7 @@ share: true
 affiliate link: https://amzn.to/3TLztYD
 CTA: 🗣️ Explore expression.
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🗣️ On Language  
 [🛒 On Language. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3TLztYD)  
   
@@ -31,7 +31,7 @@ CTA: 🗣️ Explore expression.
   
 #### 🤝 Echoes of Chomsky: Books in a Similar Vein  
   
-* **[🗣️🧠 The Language Instinct: How the Mind Creates Language](./the-language-instinct-how-the-mind-creates-language.md)** **by Steven Pinker:** 🤔 Often considered a more accessible popularization of Chomskyan ideas, Pinker's work champions the concept of an innate language faculty. 🧬 He argues that language is a biological adaptation and provides a wealth of examples from child language acquisition and cognitive science to support the idea of a "language instinct."  
+* **[🗣️🧠 The Language Instinct: How the Mind Creates Language](/content/books/the-language-instinct-how-the-mind-creates-language.md)** **by Steven Pinker:** 🤔 Often considered a more accessible popularization of Chomskyan ideas, Pinker's work champions the concept of an innate language faculty. 🧬 He argues that language is a biological adaptation and provides a wealth of examples from child language acquisition and cognitive science to support the idea of a "language instinct."  
   
 * 🗣️ ***Language and Mind*** **by Noam Chomsky:** 🧐 For those wanting a deeper dive into Chomsky's own writings, this collection of essays directly explores the relationship between language and human thought. 🧠 It provides a more detailed exposition of his theories on the biological basis of language and its implications for understanding the mind.  
   
@@ -53,5 +53,5 @@ CTA: 🗣️ Explore expression.
   
 * 💭 ***Thought and Language*** **by Lev Vygotsky:** 👶 This classic work of psychology explores the intricate relationship between language and thought from a developmental perspective. 🧠 Vygotsky argues that thought is not merely expressed through language but is shaped and developed by it, offering a sociocultural perspective that complements Chomsky's more formal linguistic analysis.  
   
-## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro)  
+## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-pro)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on On Language. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

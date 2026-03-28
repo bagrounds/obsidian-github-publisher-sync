@@ -5,10 +5,10 @@ aliases:
 share: true
 URL: https://bagrounds.org/games
 backlinks: false
-updated: 2026-03-27T11:05:06-07:00
+updated: 2026-03-28T14:01:13-07:00
 ---
-[Home](/content/index.md)  
+[Home](../index.md)  
 # 🎮 Games  
   
-- [🧬 Valence](/content/games/valence.md)  
+- [🧬 Valence](./valence.md)  
   

@@ -10,7 +10,7 @@ Channel: SpoonFedStudy
 tags:
 youtube: https://youtu.be/XdB3cmcBGJ4
 ---
-[Home](../index.md) > [Videos](./index.md) | [🥄👶📚 SpoonFedStudy](../topics/spoonfedstudy.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md) | [🥄👶📚 SpoonFedStudy](/content/topics/spoonfedstudy.md)  
 # 😴🧪💯🏆 The scientifically proven best night routine ever  
 ![the scientifically proven best night routine ever](https://youtu.be/XdB3cmcBGJ4)  
   
@@ -29,8 +29,8 @@ youtube: https://youtu.be/XdB3cmcBGJ4
 While this video provides a comprehensive and science-backed approach to optimizing sleep, it largely focuses on a single perspective. 🔄 To gain a more holistic understanding, it would be beneficial to explore other viewpoints on sleep hygiene and insomnia treatment. 🧐 For instance, some sleep experts might emphasize the role of diet and nutrition more heavily, or discuss different types of meditation and mindfulness practices beyond cognitive refocusing. 💡 Additionally, exploring the impact of chronic stress and underlying health conditions on sleep could provide a more complete picture. 🩺 Topics to explore for a better understanding include: alternative sleep aids and their efficacy, the psychological aspects of sleep disorders, and the role of professional medical intervention for severe insomnia.  
   
 ## 📚 Book Recommendations  
-* [😴💭 Why We Sleep: Unlocking the Power of Sleep and Dreams](../books/why-we-sleep-unlocking-the-power-of-sleep-and-dreams.md) by Matthew Walker: 🧠 A deep dive into the science of sleep and its profound impact on every aspect of our lives.  
+* [😴💭 Why We Sleep: Unlocking the Power of Sleep and Dreams](/content/books/why-we-sleep-unlocking-the-power-of-sleep-and-dreams.md) by Matthew Walker: 🧠 A deep dive into the science of sleep and its profound impact on every aspect of our lives.  
 * The Sleep Revolution by Arianna Huffington: 😴 Explores the importance of sleep for well-being and productivity, and offers practical advice for improving sleep habits.  
 * Say Good Night to Insomnia by Gregg D. Jacobs: 🌙 A cognitive behavioral therapy (CBT-I) based program for overcoming insomnia.  
 * Lights Out: Sleep, Sugar, and Survival by T.S. Wiley: 🍎 A controversial but thought-provoking book that links sleep patterns to diet and overall health.  
-* [🔄🧠💪 The Power of Habit: Why We Do What We Do in Life and Business](../books/the-power-of-habit.md) by Charles Duhigg: 💪 While not directly about sleep, this book provides insights into how habits are formed and how they can be changed, which is highly relevant to establishing a consistent nighttime routine.
+* [🔄🧠💪 The Power of Habit: Why We Do What We Do in Life and Business](/content/books/the-power-of-habit.md) by Charles Duhigg: 💪 While not directly about sleep, this book provides insights into how habits are formed and how they can be changed, which is highly relevant to establishing a consistent nighttime routine.

@@ -7,7 +7,7 @@ share: true
 CTA: ✏️ Create your world.
 affiliate link: https://amzn.to/4riOKPh
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 👦🟣🖍️ Harold and the Purple Crayon  
 [🛒 Harold and the Purple Crayon. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4riOKPh)  
   

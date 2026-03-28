@@ -6,6 +6,7 @@ module Automation.BlogPrompt
   , buildBackLink
   , buildForwardLink
   , assembleFrontmatter
+  , buildDisplayTitle
   , todayPacific
   , quoteForYaml
   , recapInstructions
@@ -86,21 +87,23 @@ buildForwardLink series filename =
   let slug = fromMaybe filename (T.stripSuffix ".md" filename)
   in "[[" <> bscId series <> "/" <> slug <> "|⏭️]]"
 
-assembleFrontmatter :: BlogSeriesConfig -> Text -> Text -> Text -> [Text] -> Text
-assembleFrontmatter series title slug today tags =
-  let url = bscBaseUrl series <> "/" <> slug
-      tagLines = fmap (\tag -> "  - " <> tag) tags
-  in T.intercalate "\n" $
+buildDisplayTitle :: BlogSeriesConfig -> Text -> Text -> Text
+buildDisplayTitle series today title =
+  today <> " | " <> bscIcon series <> " " <> title <> " " <> bscIcon series
+
+assembleFrontmatter :: BlogSeriesConfig -> Text -> Text -> Text -> Text
+assembleFrontmatter series today title slug =
+  let displayTitle = buildDisplayTitle series today title
+      url = bscBaseUrl series <> "/" <> today <> "-" <> slug
+  in T.intercalate "\n"
     [ "---"
     , "share: true"
     , "aliases:"
-    , "  - " <> quoteForYaml title
-    , "title: " <> quoteForYaml title
+    , "  - " <> quoteForYaml displayTitle
+    , "title: " <> quoteForYaml displayTitle
     , "URL: " <> url
-    , "Author: " <> bscAuthor series
+    , "Author: " <> quoteForYaml (bscAuthor series)
     , "tags:"
-    ] <> tagLines <>
-    [ "date: " <> today
     , "---"
     ]
 

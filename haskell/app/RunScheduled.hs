@@ -33,6 +33,7 @@ import Automation.BlogPrompt
   ( assembleFrontmatter
   , buildBackLink
   , buildBlogPrompt
+  , buildDisplayTitle
   , todayPacific
   )
 import Automation.BlogSeries
@@ -410,12 +411,12 @@ runBlogSeries manager repoRoot vaultDir seriesId = do
                     []    -> Nothing
 
               -- Write blog post
-              let frontmatter = assembleFrontmatter series today title slug []
+              let frontmatter = assembleFrontmatter series today title slug
                   backLink = case previousPost of
                     Just pp -> " | " <> buildBackLink series (bpFilename pp)
                     Nothing -> ""
                   navLine = bscNavLink series <> backLink
-                  displayTitle = today <> " | " <> bscIcon series <> " " <> title <> " " <> bscIcon series
+                  displayTitle = buildDisplayTitle series today title
                   header = navLine <> "\n# " <> displayTitle <> "\n\n"
                   bodyWithSig = appendModelSignature body usedModel
               createDirectoryIfMissing True seriesDir

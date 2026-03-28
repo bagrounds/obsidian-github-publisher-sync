@@ -8,7 +8,7 @@ Author:
 tags:
 affiliate link: https://amzn.to/4mMFkKw
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🤝📈🇺🇸🔁 The Upswing: How America Came Together a Century Ago and How We Can Do It Again  
 [🛒 The Upswing: How America Came Together a Century Ago and How We Can Do It Again. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4mMFkKw)  
   
@@ -55,14 +55,14 @@ While "The Upswing" is primarily a historical analysis, it offers several practi
 Robert Putnam, the author, is a highly respected political scientist and public policy professor at Harvard University, known for his work on social capital. His research is thoroughly documented, with extensive footnotes and a comprehensive bibliography. The book has received generally positive reviews from critics, who have praised its ambitious scope and insightful analysis. However, some critics have questioned the inevitability of the "upswing" and the degree to which historical patterns can predict future trends. The quantitative data used is very strong, and the qualitative data is well chosen. The book provides a very strong case for its claims.  
   
 ### 📚 Additional Book Recommendations 📖  
-* **Best Alternate Book on the Same Topic:** "[Bowling Alone](./bowling-alone.md): The Collapse and Revival of American Community" by Robert D. Putnam 🎳 (a precursor to "The Upswing" focusing on the decline of social capital).  
+* **Best Alternate Book on the Same Topic:** "[Bowling Alone](/content/books/bowling-alone.md): The Collapse and Revival of American Community" by Robert D. Putnam 🎳 (a precursor to "The Upswing" focusing on the decline of social capital).  
 * **Best Tangentially Related Book:** "Hillbilly Elegy: A Memoir of Family and Culture in Crisis" by J.D. Vance ⛰️ (provides a personal perspective on the social and economic challenges facing working-class Americans).  
 * **Best Diametrically Opposed Book:** "The Virtue of Selfishness" by Ayn Rand 🗽 (advocates for individualism and rational self-interest).  
-* **Best Fiction Book That Incorporates Related Ideas:** [🍇😡 The Grapes of Wrath](./the-grapes-of-wrath.md) by John Steinbeck 🍇 (depicts the social and economic upheaval of the Great Depression).  
-* **Best More General Book:** [📜🌍⏳ Sapiens: A Brief History of Humankind](./sapiens-a-brief-history-of-humankind.md) by Yuval Noah Harari 🧑‍🤝‍🧑 (provides a broader historical perspective on the evolution of human societies).  
+* **Best Fiction Book That Incorporates Related Ideas:** [🍇😡 The Grapes of Wrath](/content/books/the-grapes-of-wrath.md) by John Steinbeck 🍇 (depicts the social and economic upheaval of the Great Depression).  
+* **Best More General Book:** [📜🌍⏳ Sapiens: A Brief History of Humankind](/content/books/sapiens-a-brief-history-of-humankind.md) by Yuval Noah Harari 🧑‍🤝‍🧑 (provides a broader historical perspective on the evolution of human societies).  
 * **Best More Specific Book:** "Our Kids: The American Dream in Crisis" by Robert D. Putnam 🧒 (examines the growing opportunity gap between rich and poor children in America).  
-* **Best More Rigorous Book:** [💰📈🌍⏳ Capital in the Twenty-First Century](./capital-in-the-twenty-first-century.md) by Thomas Piketty 💰 (provides a more technical analysis of income inequality).  
-* **Best More Accessible Book:** [🫥🇺🇸😡💔 Strangers in Their Own Land: Anger and Mourning on the American Right](./strangers-in-their-own-land.md) by Arlie Russell Hochschild 🤝 (offers a more empathetic understanding of political polarization).  
+* **Best More Rigorous Book:** [💰📈🌍⏳ Capital in the Twenty-First Century](/content/books/capital-in-the-twenty-first-century.md) by Thomas Piketty 💰 (provides a more technical analysis of income inequality).  
+* **Best More Accessible Book:** [🫥🇺🇸😡💔 Strangers in Their Own Land: Anger and Mourning on the American Right](/content/books/strangers-in-their-own-land.md) by Arlie Russell Hochschild 🤝 (offers a more empathetic understanding of political polarization).  
   
 ## 💬 [Gemini](https://gemini.google.com) Prompt  
 > Summarize the book: The Upswing. Start with a TL;DR - a single statement that conveys a maximum of the useful information provided in the book. Next, explain how this book may offer a new or surprising perspective. Follow this with a deep dive. Catalogue the topics, methods, and research discussed. Be sure to highlight any significant theories, theses, or mental models proposed. Summarize prominent examples discussed. Emphasize practical takeaways, including detailed, specific, concrete, step-by-step advice, guidance, or techniques discussed. Provide a critical analysis of the quality of the information presented, using scientific backing, author credentials, authoritative reviews, and other markers of high quality information as justification. Make the following additional book recommendations: the best alternate book on the same topic; the best book that is tangentially related; the best book that is diametrically opposed; the best fiction book that incorporates related ideas; the best book that is more general or more specific; and the best book that is more rigorous or more accessible than this book. Format your response as markdown, starting at heading level H3, with inline links, for easy copy paste. Use meaningful emojis generously (at least one per heading, bullet point, and paragraph) to enhance readability. Do not include broken links or links to commercial sites.

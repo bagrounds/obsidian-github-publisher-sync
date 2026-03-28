@@ -10,7 +10,7 @@ Channel: Dr Arif Khan - Second Opinion
 tags:
 youtube: https://youtu.be/WJsiBOuXQvA
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md)  
 # 🧠⚡️👶🏽 5 Tiny Habits That Supercharge Your Child's Brain Development | Dr. Arif Khan  
 ![5 Tiny Habits That Supercharge Your Child's Brain Development | Dr. Arif Khan](https://youtu.be/WJsiBOuXQvA)  
   
@@ -66,10 +66,10 @@ youtube: https://youtu.be/WJsiBOuXQvA
 ## 📚 Book Recommendations  
   
 ### ↔️ Similar  
-[🕳️🧠👶🏽 The Whole-Brain Child: 12 Revolutionary Strategies to Nurture Your Child's Developing Mind](../books/the-whole-brain-child.md) by Daniel J. Siegel and Tina Payne Bryson  
+[🕳️🧠👶🏽 The Whole-Brain Child: 12 Revolutionary Strategies to Nurture Your Child's Developing Mind](/content/books/the-whole-brain-child.md) by Daniel J. Siegel and Tina Payne Bryson  
 * 🧠 Offers strategies to integrate different parts of the child's brain for better emotional regulation and development.  
   
-[👶🧠😊📈📚 Brain Rules for Baby: How to Raise a Smart and Happy Child from Zero to Five](../books/brain-rules-for-baby.md) by John Medina  
+[👶🧠😊📈📚 Brain Rules for Baby: How to Raise a Smart and Happy Child from Zero to Five](/content/books/brain-rules-for-baby.md) by John Medina  
 * 👶 Bridges the gap between complex brain science and practical parenting advice for the first five years.  
   
 ### 🆚 Contrasting  
@@ -80,7 +80,7 @@ youtube: https://youtu.be/WJsiBOuXQvA
 * 🏹 Suggests that including children in adult activities without constant child-centered optimization leads to more competent and helpful kids.  
   
 ### 🎨 Creatively Related  
-[⚛️🔄 Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones](../books/atomic-habits.md) by James Clear  
+[⚛️🔄 Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones](/content/books/atomic-habits.md) by James Clear  
 * ⚛️ Provides a framework for parents to successfully implement and maintain the tiny habits suggested in the video.  
   
 🎨 Beautiful Oops! by Barney Saltzberg  

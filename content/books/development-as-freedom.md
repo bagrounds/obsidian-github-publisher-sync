@@ -7,7 +7,7 @@ share: true
 CTA: 🌟 Embrace agency.
 affiliate link: https://amzn.to/4soSEaE
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🌟🔓 Development as Freedom  
 [🛒 Development as Freedom. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4soSEaE)  
   
@@ -77,7 +77,7 @@ affiliate link: https://amzn.to/4soSEaE
 ## 📚 Book Recommendations  
   
 ### 🤝 Similar Books  
-* [👤🌱 Creating Capabilities: The Human Development Approach](./creating-capabilities-the-human-development-approach.md) by Martha Nussbaum  
+* [👤🌱 Creating Capabilities: The Human Development Approach](/content/books/creating-capabilities-the-human-development-approach.md) by Martha Nussbaum  
 * 📖 The Idea of Justice by Amartya Sen  
 * 📖 Inequality Reexamined by Amartya Sen  
   
@@ -87,9 +87,9 @@ affiliate link: https://amzn.to/4soSEaE
 * 📖 Capitalism and Freedom by Milton Friedman  
   
 ### 🔗 Related Books  
-* [🔫🦠🔩 Guns, Germs, and Steel: The Fates of Human Societies](./guns-germs-and-steel-the-fates-of-human-societies.md) by Jared Diamond  
-* [📜🌍⏳ Sapiens: A Brief History of Humankind](./sapiens-a-brief-history-of-humankind.md) by Yuval Noah Harari  
-* [🤔🐇🐢 Thinking, Fast and Slow](./thinking-fast-and-slow.md) by Daniel Kahneman  
+* [🔫🦠🔩 Guns, Germs, and Steel: The Fates of Human Societies](/content/books/guns-germs-and-steel-the-fates-of-human-societies.md) by Jared Diamond  
+* [📜🌍⏳ Sapiens: A Brief History of Humankind](/content/books/sapiens-a-brief-history-of-humankind.md) by Yuval Noah Harari  
+* [🤔🐇🐢 Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md) by Daniel Kahneman  
   
 ## 🫵 What Do You Think?  
   

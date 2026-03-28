@@ -10,7 +10,7 @@ Channel: PBS NewsHour
 tags:
 youtube: https://youtu.be/VKuysbYR1KQ
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md)  
 # 🗣️⏱️🏛️🛑 WATCH: Sen. Merkley concludes marathon 22-hour speech protesting Trump amid shutdown  
 ![WATCH: Sen. Merkley concludes marathon 22-hour speech protesting Trump amid shutdown](https://youtu.be/VKuysbYR1KQ)  
   
@@ -46,9 +46,9 @@ A: 🚫 No, the speech was not a **filibuster** in the official Senate procedura
   
 ## 📚 Book Recommendations  
 ### Similar Themes (Authoritarianism, Democracy's Perils)  
-* **[🗳️🏛️☠️ How Democracies Die](../books/how-democracies-die.md)** by Steven Levitsky and Daniel Ziblatt: 📘 This book, a copy of which was placed on the lectern during the senator's speech, details how democracies around the world have been dismantled through gradual means by elected leaders.  
-* **[👑🚫📜2️⃣0️⃣ On Tyranny: Twenty Lessons from the Twentieth Century](../books/on-tyranny.md)** by Timothy Snyder: 💡 A brief guide that offers a set of practical steps for citizens to resist the rise of authoritarianism, drawing lessons from historical 20th-century European regimes.  
-* **[🥀 Twilight of Democracy: 🐍 The Seductive Lure of Authoritarianism](../books/twilight-of-democracy.md)** by Anne Applebaum: ⚠️ A cautionary tale and scholarly analysis of how freedom-loving individuals can be drawn to authoritarian leaders, explaining the mechanisms of democratic backsliding.  
+* **[🗳️🏛️☠️ How Democracies Die](/content/books/how-democracies-die.md)** by Steven Levitsky and Daniel Ziblatt: 📘 This book, a copy of which was placed on the lectern during the senator's speech, details how democracies around the world have been dismantled through gradual means by elected leaders.  
+* **[👑🚫📜2️⃣0️⃣ On Tyranny: Twenty Lessons from the Twentieth Century](/content/books/on-tyranny.md)** by Timothy Snyder: 💡 A brief guide that offers a set of practical steps for citizens to resist the rise of authoritarianism, drawing lessons from historical 20th-century European regimes.  
+* **[🥀 Twilight of Democracy: 🐍 The Seductive Lure of Authoritarianism](/content/books/twilight-of-democracy.md)** by Anne Applebaum: ⚠️ A cautionary tale and scholarly analysis of how freedom-loving individuals can be drawn to authoritarian leaders, explaining the mechanisms of democratic backsliding.  
   
 ### Contrasting Themes (Optimism, Democratic Resilience)  
 * **The Persuaders: At the Front Lines of the Fight for Hearts, Minds, and Democracy** by Anand Giridharadas: 💖 An insider account of activists, politicians, and everyday citizens working to fight for democracy, focusing on the people and movements actively seeking to re-engage the public.  

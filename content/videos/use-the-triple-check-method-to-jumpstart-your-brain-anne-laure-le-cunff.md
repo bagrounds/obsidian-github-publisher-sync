@@ -10,7 +10,7 @@ Channel: Big Think
 tags:
 youtube: https://youtu.be/fbA-YwT4MN8
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md)  
 # ✔️✔️✔️🧠 Use the Triple Check Method to jumpstart your brain | Anne-Laure Le Cunff  
 ![Use the Triple Check Method to jumpstart your brain | Anne-Laure Le Cunff](https://youtu.be/fbA-YwT4MN8)  
   
@@ -60,8 +60,8 @@ youtube: https://youtu.be/fbA-YwT4MN8
   
 ## 📚 Book Recommendations  
   
-* [🤿💼 Deep Work: Rules for Focused Success in a Distracted World](../books/deep-work.md) by Cal Newport: 📘 Highly relevant for maximizing the periods of intense focus—the **magic windows** 🪄—by providing structures for distraction-free professional output.  
-* [⚛️🔄 Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones](../books/atomic-habits.md) by James Clear: 💡 Offers practical strategies for building small, effective routines that help overcome the **"hand"** ✋ (practical) and **"heart"** ❤️ (enjoyment) barriers to consistent productivity.  
-* [✅😌 Getting Things Done: The Art of Stress-Free Productivity](../books/getting-things-done-the-art-of-stress-free-productivity.md) (GTD) by David Allen: 📑 A classic framework for **task and time management** 📅 that represents the traditional, system-focused approach, providing a **contrasting** viewpoint to the energy-centric model advocated in the video.  
-* [🌊🧘🏼‍♀️🧠📈 Flow: The Psychology of Optimal Experience](../books/flow-the-psychology-of-optimal-experience.md) by Mihaly Csikszentmihalyi: 🎨 The seminal work defining the psychological state of **"flow,"** which is the underlying concept for the video's **magic window** 🌟, offering a deeper dive into optimal experience.  
+* [🤿💼 Deep Work: Rules for Focused Success in a Distracted World](/content/books/deep-work.md) by Cal Newport: 📘 Highly relevant for maximizing the periods of intense focus—the **magic windows** 🪄—by providing structures for distraction-free professional output.  
+* [⚛️🔄 Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones](/content/books/atomic-habits.md) by James Clear: 💡 Offers practical strategies for building small, effective routines that help overcome the **"hand"** ✋ (practical) and **"heart"** ❤️ (enjoyment) barriers to consistent productivity.  
+* [✅😌 Getting Things Done: The Art of Stress-Free Productivity](/content/books/getting-things-done-the-art-of-stress-free-productivity.md) (GTD) by David Allen: 📑 A classic framework for **task and time management** 📅 that represents the traditional, system-focused approach, providing a **contrasting** viewpoint to the energy-centric model advocated in the video.  
+* [🌊🧘🏼‍♀️🧠📈 Flow: The Psychology of Optimal Experience](/content/books/flow-the-psychology-of-optimal-experience.md) by Mihaly Csikszentmihalyi: 🎨 The seminal work defining the psychological state of **"flow,"** which is the underlying concept for the video's **magic window** 🌟, offering a deeper dive into optimal experience.  
 * The Power of Now by Eckhart Tolle: 🌳 A foundational text on **mindfulness** and present-moment awareness, which provides the philosophical underpinnings for practicing **mindful productivity** and releasing the self-judgment of the **second arrow** 🧘.

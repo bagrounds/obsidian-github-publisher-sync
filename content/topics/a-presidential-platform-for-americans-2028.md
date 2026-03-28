@@ -5,7 +5,7 @@ aliases:
 title: 🇺🇸🗣️💡🗓️ A Presidential Platform for Americans 2028
 URL: https://bagrounds.org/topics/a-presidential-platform-for-americans-2028
 ---
-[Home](../index.md) > [Topics](./index.md)  
+[Home](/content/index.md) > [Topics](/content/topics/index.md)  
 # 🇺🇸🗣️💡🗓️ A Presidential Platform for Americans 2028  
   
 ## 📢 The Opportunity  
@@ -128,7 +128,7 @@ URL: https://bagrounds.org/topics/a-presidential-platform-for-americans-2028
 ### 🍎 Food Security  
 - 💸 Money doesn't grow on trees, but food does.  
 - 🤝 Give people SNAP benefits; feed them for a political cycle. 🌱 Invest in sustainable micro-agriculture, community gardens, and efficient food supply, distribution, and composting infrastructure and education; feed them for generations.  
-- [🍎🥛🔬✨ Universal Nutrition System Design](./universal-nutrition-system-design.md)  
+- [🍎🥛🔬✨ Universal Nutrition System Design](/content/topics/universal-nutrition-system-design.md)  
   
 ### 🏘️ Housing for All  
 - 🏗️ Build housing. Lots of it. Everywhere.  
@@ -167,14 +167,14 @@ URL: https://bagrounds.org/topics/a-presidential-platform-for-americans-2028
 - 🔄 Allows for variety in work (e.g. an office worker can get regular outdoor exercise working in a community garden or construction project without sacrificing income)  
 - 🏘️ Massively increases participation in community and public focused work.  
   
-## [🌌 Topics](./index.md)  
-- [🏦♾️📈💸 Modern Monetary Theory](./modern-monetary-theory.md)  
-- [🧑‍💼🛡️ Job Guarantee, Employer of Last Resort](./job-guarantee-employer-of-last-resort.md)  
+## [🌌 Topics](/content/topics/index.md)  
+- [🏦♾️📈💸 Modern Monetary Theory](/content/topics/modern-monetary-theory.md)  
+- [🧑‍💼🛡️ Job Guarantee, Employer of Last Resort](/content/topics/job-guarantee-employer-of-last-resort.md)  
   
 ## 🔮 Designs  
-- [🍎🥛🔬✨ Universal Nutrition System Design](./universal-nutrition-system-design.md)  
+- [🍎🥛🔬✨ Universal Nutrition System Design](/content/topics/universal-nutrition-system-design.md)  
   
-## [📚 Books](../books/index.md)  
-- [💰📉➡️📈🗳️ The Deficit Myth: Modern Monetary Theory and the Birth of the People's Economy](../books/the-deficit-myth.md)  
-- [💼✅ The Case for a Job Guarantee](../books/the-case-for-a-job-guarantee.md)  
-- [🍩🌍⚖️ Doughnut Economics: Seven Ways to Think Like a 21st-Century Economist](../books/doughnut-economics-seven-ways-to-think-like-a-21st-century-economist.md)
+## [📚 Books](/content/books/index.md)  
+- [💰📉➡️📈🗳️ The Deficit Myth: Modern Monetary Theory and the Birth of the People's Economy](/content/books/the-deficit-myth.md)  
+- [💼✅ The Case for a Job Guarantee](/content/books/the-case-for-a-job-guarantee.md)  
+- [🍩🌍⚖️ Doughnut Economics: Seven Ways to Think Like a 21st-Century Economist](/content/books/doughnut-economics-seven-ways-to-think-like-a-21st-century-economist.md)

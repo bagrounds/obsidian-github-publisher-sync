@@ -9,12 +9,12 @@ tags:
 affiliate link: https://amzn.to/4kraxBd
 CTA: Soothe your baby.
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 👶😊😴 The Happiest Baby on the Block: The New Way to Calm Crying and Help Your Newborn Baby Sleep Longer  
 [🛒 The Happiest Baby on the Block: The New Way to Calm Crying and Help Your Newborn Baby Sleep Longer. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4kraxBd)  
   
 ## AI Summary  
-[Summarize The Happiest Baby On The Block](../bot-chats/summarize-the-happiest-baby-on-the-block.md)  
+[Summarize The Happiest Baby On The Block](/content/bot-chats/summarize-the-happiest-baby-on-the-block.md)  
   
 ### Overview  
 *The Happiest Baby on the Block* by Harvey Karp is a practical guide for new parents that explains how to soothe a crying baby using a simple, five‐step method - the “5 S’s.” Karp argues that human infants are born “too early” (about three months premature, in effect) and thus enter the world without the full security of the womb. To bridge this gap during what he calls the “fourth trimester,” Karp proposes that parents recreate key aspects of the in‑utero environment. His signature “5 S’s” are:  
@@ -33,7 +33,7 @@ Karp emphasizes that these techniques must be performed correctly and often in c
    – This book offers a variety of practical sleep-training methods and strategies for establishing healthy sleep habits in infants. It complements Karp’s techniques by providing alternative approaches for parents who need additional guidance during those challenging early months.  
   
 2. **Best Book That Is Tangentially Related:**  
-   [🕳️🧠👶🏽 The Whole-Brain Child: 12 Revolutionary Strategies to Nurture Your Child's Developing Mind](./the-whole-brain-child.md) by Daniel J. Siegel and Tina Payne Bryson  
+   [🕳️🧠👶🏽 The Whole-Brain Child: 12 Revolutionary Strategies to Nurture Your Child's Developing Mind](/content/books/the-whole-brain-child.md) by Daniel J. Siegel and Tina Payne Bryson  
    – While focusing on older children’s emotional and cognitive development, this book provides insights into nurturing healthy brain development and effective communication. It expands on the theme of understanding and responding to a child’s needs, making it a valuable resource as children grow beyond infancy.  
   
 3. **Best Book That Is Diametrically Opposed:**  
@@ -41,7 +41,7 @@ Karp emphasizes that these techniques must be performed correctly and often in c
    – In stark contrast to Karp’s instinct‑based, nurturing approach, *On Becoming Baby Wise* advocates for strict scheduling of feed, play, and sleep. Its emphasis on parental control and structured routines has been controversial among pediatric experts, offering a very different philosophy on infant care.  
   
 4. **Best Fiction Book That Incorporates Related Ideas:**  
-[🌙🛌 Goodnight Moon](./goodnight-moon.md) by Margaret Wise Brown  
+[🌙🛌 Goodnight Moon](/content/books/goodnight-moon.md) by Margaret Wise Brown  
    – This timeless bedtime story uses gentle, rhythmic language and a soothing, repetitive structure to create a calming routine for children. It embodies the importance of creating a peaceful environment for sleep - a concept central to Karp’s philosophy.  
   
 ### Conclusion  

@@ -10,7 +10,7 @@ Channel: PBS NewsHour
 tags:
 youtube: https://youtu.be/czLBDnCtVwA
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md)  
 # 🧩🗣️👎 Autism advocate calls Trump's statements on the condition 'stigmatizing'  
 ![Autism advocate calls Trump's statements on the condition 'stigmatizing'](https://youtu.be/czLBDnCtVwA)  
   
@@ -43,7 +43,7 @@ youtube: https://youtu.be/czLBDnCtVwA
 ## 📚 Book Recommendations  
   
 * **Look Me in the Eye** by John Elder Robison: ✍️ Offers a similar, first-person narrative of growing up with Asperger's, highlighting the challenges of social navigation before his diagnosis and promoting acceptance.  
-* **[👦🗣️ The Reason I Jump: The Inner Voice of a Thirteen-Year-Old Boy with Autism](../books/the-reason-i-jump-the-inner-voice-of-a-thirteen-year-old-boy-with-autism.md)** by Naoki Higashida: 📖 Provides a contrasting perspective, as it is written by a 13-year-old non-verbal autistic boy using an alphabet grid, detailing how he perceives the world and challenging assumptions about the internal life of autistic individuals.  
+* **[👦🗣️ The Reason I Jump: The Inner Voice of a Thirteen-Year-Old Boy with Autism](/content/books/the-reason-i-jump-the-inner-voice-of-a-thirteen-year-old-boy-with-autism.md)** by Naoki Higashida: 📖 Provides a contrasting perspective, as it is written by a 13-year-old non-verbal autistic boy using an alphabet grid, detailing how he perceives the world and challenging assumptions about the internal life of autistic individuals.  
 * **NeuroTribes** by Steve Silberman: 🏛️ A creatively related history that chronicles the dramatic shift in how autism is understood, from a rare and catastrophic condition to a growing source of human diversity, which directly relates to the video's discussion of **causation research** and the historical "refrigerator mothers" theory \[[02:31](http://www.youtube.com/watch?v=czLBDnCtVwA&t=151)].  
 * **Disabled in an Ableist World** by Zoe Gross: 🎯 A collection of writings from the advocate featured in the video, providing a deeper dive into the specific policy and advocacy work of the Autistic Self Advocacy Network.  
   

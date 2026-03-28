@@ -10,7 +10,7 @@ CTA: 👣 Walk in their shoes.
 affiliate link: https://amzn.to/4r829t3
 updated: 2026-03-20T12:11:10.857Z
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🫥🇺🇸😡💔 Strangers in Their Own Land: Anger and Mourning on the American Right  
 [🛒 Strangers in Their Own Land: Anger and Mourning on the American Right. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4r829t3)  
   
@@ -65,16 +65,16 @@ updated: 2026-03-20T12:11:10.857Z
   
 ### 🔄 Similar  
 * 📖 Hillbilly Elegy by J.D. Vance  
-* [😇🧠 The Righteous Mind: Why Good People Are Divided by Politics and Religion](./the-righteous-mind.md) by Jonathan Haidt  
+* [😇🧠 The Righteous Mind: Why Good People Are Divided by Politics and Religion](/content/books/the-righteous-mind.md) by Jonathan Haidt  
 * 🏛️ The Cultural Contradictions of Capitalism by Daniel Bell  
   
 ### ↔️ Contrasting  
-* [🗳️🕊️🇺🇸 Democracy in America](./democracy-in-america.md) by Alexis de Tocqueville  
+* [🗳️🕊️🇺🇸 Democracy in America](/content/books/democracy-in-america.md) by Alexis de Tocqueville  
 * 🤔 What's the Matter with Kansas? by Thomas Frank  
 * ✊ White Rage by Carol Anderson  
   
 ### 🔗 Related  
-* [🏚️💰 Evicted: Poverty and Profit in the American City](./evicted-poverty-and-profit-in-the-american-city.md) by Matthew Desmond  
+* [🏚️💰 Evicted: Poverty and Profit in the American City](/content/books/evicted-poverty-and-profit-in-the-american-city.md) by Matthew Desmond  
 * 💀 Dying of Whiteness by Jonathan M. Metzl  
 * 👑 The Age of the Strongman by Gideon Rachman  
   

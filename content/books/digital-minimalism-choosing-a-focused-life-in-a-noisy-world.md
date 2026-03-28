@@ -11,7 +11,7 @@ force_analyze_links: false
 link_analysis_time: 2026-03-25T12:15:30.112Z
 link_analysis_model: gemini-3.1-flash-lite-preview
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 📱⬇️🧘 Digital Minimalism: Choosing a Focused Life in a Noisy World  
 [🛒 Digital Minimalism: Choosing a Focused Life in a Noisy World. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4q2ZrG5)  
   
@@ -95,23 +95,23 @@ Cal Newport's Digital Minimalism presents a consistent and well-defined philosop
 ### 📚 Book Recommendations  
   
 #### 💡 Similar Books (Focus on intentional tech use, productivity, focus)  
-* [🤿💼 Deep Work: Rules for Focused Success in a Distracted World](./deep-work.md) by Cal Newport  
-* [📱💔 How to Break Up with Your Phone: The 30-Day Plan to Take Back Your Life](./how-to-break-up-with-your-phone-the-30-day-plan-to-take-back-your-life.md) by Catherine Price  
-* [🧘 Indistractable: How to Control Your Attention and Choose Your Life](./indistractable.md) by Nir Eyal  
-* [➖💯 Essentialism: The Disciplined Pursuit of Less](./essentialism-the-disciplined-pursuit-of-less.md) by Greg McKeown  
-* [⚛️🔄 Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones](./atomic-habits.md) by James Clear  
+* [🤿💼 Deep Work: Rules for Focused Success in a Distracted World](/content/books/deep-work.md) by Cal Newport  
+* [📱💔 How to Break Up with Your Phone: The 30-Day Plan to Take Back Your Life](/content/books/how-to-break-up-with-your-phone-the-30-day-plan-to-take-back-your-life.md) by Catherine Price  
+* [🧘 Indistractable: How to Control Your Attention and Choose Your Life](/content/books/indistractable.md) by Nir Eyal  
+* [➖💯 Essentialism: The Disciplined Pursuit of Less](/content/books/essentialism-the-disciplined-pursuit-of-less.md) by Greg McKeown  
+* [⚛️🔄 Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones](/content/books/atomic-habits.md) by James Clear  
   
 #### ⚖️ Contrasting Books (Explain tech addiction, critique from different angles)  
 * 🕹️ Irresistible The Rise of Addictive Technology and the Business of Keeping Us Hooked by Adam Alter  
 * 🔗 Hooked How to Build Habit-Forming Products by Nir Eyal  
-* [📱🧠 The Shallows: What the Internet Is Doing to Our Brains](./the-shallows-what-the-internet-is-doing-to-our-brains.md) by Nicholas Carr  
+* [📱🧠 The Shallows: What the Internet Is Doing to Our Brains](/content/books/the-shallows-what-the-internet-is-doing-to-our-brains.md) by Nicholas Carr  
 * 📱 Ten Arguments for Deleting Your Social Media Accounts Right Now by Jaron Lanier  
-* [📱😥 The Anxious Generation: How the Great Rewiring of Childhood Is Causing an Epidemic of Mental Illness](./the-anxious-generation-how-the-great-rewiring-of-childhood-is-causing-an-epidemic-of-mental-illness.md) by Jonathan Haidt  
+* [📱😥 The Anxious Generation: How the Great Rewiring of Childhood Is Causing an Epidemic of Mental Illness](/content/books/the-anxious-generation-how-the-great-rewiring-of-childhood-is-causing-an-epidemic-of-mental-illness.md) by Jonathan Haidt  
   
 #### 🎨 Creatively Related Books (Broader minimalism, habit formation, philosophical tech impact)  
 * 😵‍💫 Stolen Focus Why You Can't Pay Attention and How to Think Deeply Again by Johann Hari  
-* [📵 How to Do Nothing: Resisting the Attention Economy](./how-to-do-nothing-resisting-the-attention-economy.md) by Jenny Odell  
-* [🔄🧠💪 The Power of Habit: Why We Do What We Do in Life and Business](./the-power-of-habit.md) by Charles Duhigg  
+* [📵 How to Do Nothing: Resisting the Attention Economy](/content/books/how-to-do-nothing-resisting-the-attention-economy.md) by Jenny Odell  
+* [🔄🧠💪 The Power of Habit: Why We Do What We Do in Life and Business](/content/books/the-power-of-habit.md) by Charles Duhigg  
 * 🧠 Dopamine Nation Finding Balance in the Age of Indulgence by Anna Lembke  
 * 🤖 You Are Not a Gadget by Jaron Lanier  
   

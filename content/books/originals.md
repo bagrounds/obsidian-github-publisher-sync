@@ -8,7 +8,7 @@ Author: "[[Adam Grant]]"
 tags:
 affiliate link: https://www.amazon.com/dp/0525429565?tag=bagrounds-20
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 💡🎨 Originals: How Non-Conformists Move the World  
 [🛒 Originals: How Non-Conformists Move the World. As an Amazon Associate I earn from qualifying purchases.](https://www.amazon.com/dp/0525429565?tag=bagrounds-20)  
   
@@ -47,19 +47,19 @@ A: 🤓 Grant focuses on the social and organizational dynamics of championing i
   
 ### 📖 Non-Fiction  
   
-* [🎁➡️🏆 Give and Take](./give-and-take.md) by Adam Grant - Grant's earlier work on how generosity drives success  
-* [🌱🧘🏼‍♀️🏆 Mindset](./mindset.md) by Carol Dweck - The foundational work on growth mindset that complements originality  
-* [🏎️⛽ Drive](./drive-the-surprising-truth-about-what-motivates-us.md) by Daniel Pink - Explores intrinsic motivation essential for original work  
+* [🎁➡️🏆 Give and Take](/content/books/give-and-take.md) by Adam Grant - Grant's earlier work on how generosity drives success  
+* [🌱🧘🏼‍♀️🏆 Mindset](/content/books/mindset.md) by Carol Dweck - The foundational work on growth mindset that complements originality  
+* [🏎️⛽ Drive](/content/books/drive-the-surprising-truth-about-what-motivates-us.md) by Daniel Pink - Explores intrinsic motivation essential for original work  
   
 ### ❤️ If You Loved This  
   
-* [🪖🎨 The War of Art](./the-war-of-art.md) by Steven Pressfield - Overcoming resistance to creative work  
-* [🤿💼 Deep Work](./deep-work.md) by Cal Newport - Creating conditions for original thinking  
+* [🪖🎨 The War of Art](/content/books/the-war-of-art.md) by Steven Pressfield - Overcoming resistance to creative work  
+* [🤿💼 Deep Work](/content/books/deep-work.md) by Cal Newport - Creating conditions for original thinking  
   
 ### ↔️ Similar But Different  
   
-* [🤔🐇🐢 Thinking, Fast and Slow](./thinking-fast-and-slow.md) by Daniel Kahneman - Cognitive science behind decision-making  
-* [🍃🧠🤝🏼 Influence](./influence.md) by Robert Cialdini - How to persuade others to support your ideas  
+* [🤔🐇🐢 Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md) by Daniel Kahneman - Cognitive science behind decision-making  
+* [🍃🧠🤝🏼 Influence](/content/books/influence.md) by Robert Cialdini - How to persuade others to support your ideas  
   
 ## 🫵 What Do You Think?  
   

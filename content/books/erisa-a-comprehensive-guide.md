@@ -8,7 +8,7 @@ tags:
   - law
 affiliate link: https://amzn.to/4mHAePB
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 💼📜 ERISA: A Comprehensive Guide  
 [🛒 ERISA: A Comprehensive Guide. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4mHAePB)  
   
@@ -45,7 +45,7 @@ For those seeking alternative or complementary in-depth coverage of ERISA, these
   
 * 📚 **Employee Benefits Law:** Another prominent treatise providing extensive coverage of ERISA and related employee benefits law, often updated by experienced practitioners.  
 * 📝 **The ERISA Outline Book:** Known for its multi-volume, outline format, this resource offers comprehensive details on qualified plans and is used as a study resource for the IRS Enrolled Retirement Plan Agent (ERPA) Program.  
-* **[🇺🇸❓📚 ERISA Law Answer Book](./erisa-law-answer-book.md):** Provides a question-and-answer format to address a wide range of common ERISA-related issues in a practical manner.  
+* **[🇺🇸❓📚 ERISA Law Answer Book](/content/books/erisa-law-answer-book.md):** Provides a question-and-answer format to address a wide range of common ERISA-related issues in a practical manner.  
 * ✅ **Employee Benefits Handbook:** Offers clear explanations of complex statutes and regulations, with a focus on compliance and avoiding litigation.  
   
 ### ⚖️ Contrasting Perspectives or Specific Focus Areas  
@@ -68,5 +68,5 @@ These recommendations connect to themes present in ERISA but may not be direct l
 * 🏥 **Books on Health Care Law and Policy:** Given ERISA's significant, albeit complex, role in employer-sponsored health plans, books examining the broader health care legal landscape and policy debates offer related context.  
 * 💼 **Books on Employment Law (broader than benefits):** Cover the wider legal relationship between employers and employees, of which benefits are a crucial part, including topics like discrimination 🚫 that can intersect with ERISA.  
   
-## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
+## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on ERISA: A Comprehensive Guide. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

@@ -230,6 +230,22 @@ export function transformLink(src: FullSlug, target: string, opts: TransformOpti
   let targetSlug = transformInternalLink(target)
 
   if (opts.strategy === "relative") {
+    // When a link starts with "./" (not "../"), it may be a vault-root-relative path
+    // that was not properly relativized by the publishing tool (e.g. Obsidian Enveloppe).
+    // Try to match the canonical slug against known pages and compute the correct relative path.
+    if (targetSlug.startsWith("./") && !targetSlug.startsWith("../")) {
+      const strippedTarget = targetSlug.slice(2)
+      const [targetPathNoAnchor, targetAnchor] = splitAnchor(strippedTarget)
+      if (targetPathNoAnchor.length > 0) {
+        const simpleTarget = simplifySlug(targetPathNoAnchor as FullSlug)
+        const matchingSlug = opts.allSlugs.find(
+          (slug) => simplifySlug(slug) === simpleTarget,
+        )
+        if (matchingSlug) {
+          return (resolveRelative(src, matchingSlug) + targetAnchor) as RelativeURL
+        }
+      }
+    }
     return targetSlug as RelativeURL
   } else {
     const folderTail = isFolderPath(targetSlug) ? "/" : ""

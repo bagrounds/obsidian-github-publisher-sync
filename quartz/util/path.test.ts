@@ -312,6 +312,20 @@ describe("link strategies", () => {
       assert.strictEqual(path.transformLink(cur, "e/g/h", opts), "./e/g/h")
       assert.strictEqual(path.transformLink(cur, "a/b/index", opts), "./a/b/")
     })
+
+    test("resolves vault-root paths against allSlugs from nested page", () => {
+      const cur = "a/b/c" as FullSlug
+      assert.strictEqual(path.transformLink(cur, "e/f", opts), "../../e/f")
+      assert.strictEqual(path.transformLink(cur, "e/g/h", opts), "../../e/g/h")
+      assert.strictEqual(path.transformLink(cur, "e/g/h#abc", opts), "../../e/g/h#abc")
+      assert.strictEqual(path.transformLink(cur, "a/test.png", opts), "../../a/test.png")
+    })
+
+    test("falls back for paths not matching any known slug", () => {
+      const cur = "a/b/c" as FullSlug
+      assert.strictEqual(path.transformLink(cur, "d", opts), "./d")
+      assert.strictEqual(path.transformLink(cur, "nonexistent/page", opts), "./nonexistent/page")
+    })
   })
 })
 

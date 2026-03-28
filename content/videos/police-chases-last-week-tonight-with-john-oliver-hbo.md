@@ -10,7 +10,7 @@ Channel: LastWeekTonight
 tags:
 youtube: https://youtu.be/wVFXUkFx5Y8
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md)  
 # 🚨🚓📺🎤 Police Chases: Last Week Tonight with John Oliver (HBO)  
 ![Police Chases: Last Week Tonight with John Oliver (HBO)](https://youtu.be/wVFXUkFx5Y8)  
   
@@ -76,7 +76,7 @@ youtube: https://youtu.be/wVFXUkFx5Y8
   
 ### ↔️ Similar  
   
-- [🛑👮 The End of Policing](../books/the-end-of-policing.md) by Alex Vitale  
+- [🛑👮 The End of Policing](/content/books/the-end-of-policing.md) by Alex Vitale  
   
     - 📖 This book proposes policy alternatives to police intervention for social problems, advocating for non-carceral and non-aggressive responses, similar to the video's call to restrict chases.  
   
@@ -100,6 +100,6 @@ youtube: https://youtu.be/wVFXUkFx5Y8
   
     - 📺 The book offers an analysis of how major events, like the O.J. Simpson chase, become cultural spectacles that shape public understanding and consumption of crime, race, and justice.  
   
-- [🤔🐇🐢 Thinking, Fast and Slow](../books/thinking-fast-and-slow.md) by Daniel Kahneman  
+- [🤔🐇🐢 Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md) by Daniel Kahneman  
   
     - 🧠 This book explains the psychology of rapid decision-making, providing a framework for analyzing the high-stakes, System 1 choices officers make during a high-speed pursuit versus the calculated, rational policy decisions.

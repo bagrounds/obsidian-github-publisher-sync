@@ -9,7 +9,7 @@ Platform:
 Channel: New York Times Podcasts
 tags:
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md)  
 # To Save Democracy, Here’s a Playbook That Works  
 ![To Save Democracy, Here’s a Playbook That Works](https://youtu.be/sSISS7QZ_Cw)  
   

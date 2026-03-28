@@ -12,7 +12,7 @@ force_analyze_links: false
 link_analysis_time: 2026-03-22T06:07:01.478Z
 link_analysis_model: gemini-3.1-flash-lite-preview
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 👨‍🚀🔴✨ The Martian  
 [🛒 The Martian. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4q2fLFB)  
   
@@ -56,8 +56,8 @@ A: 🤓 The Martian features significant strong language and technical complexit
   
 ### ❤️ If You Loved This  
   
-* [☄️🧑‍🚀🙏🌍 Project Hail Mary](./project-hail-mary.md) by Andy Weir  
-* [🤖🤖🤖 We Are Legion (We Are Bob)](books/we-are-legion-we-are-bob.md) by Dennis E. Taylor  
+* [☄️🧑‍🚀🙏🌍 Project Hail Mary](/content/books/project-hail-mary.md) by Andy Weir  
+* [🤖🤖🤖 We Are Legion (We Are Bob)](/content/books/we-are-legion-we-are-bob.md) by Dennis E. Taylor  
   
 ### ↔️ Similar But Different  
   

@@ -7,7 +7,7 @@ share: true
 CTA: 🕊️ Champion global peace.
 affiliate link: https://amzn.to/43kHxVq
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🌍🤝🏛️ A World Safe for Democracy: Liberal Internationalism and the Crises of Global Order  
 [🛒 A World Safe for Democracy: Liberal Internationalism and the Crises of Global Order. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/43kHxVq)  
   
@@ -75,13 +75,13 @@ affiliate link: https://amzn.to/43kHxVq
 ### 👎 Contrasting  
 * The Tragedy of Great Power Politics by John J. Mearsheimer  
 * The Retreat of Western Liberalism by Edward Luce  
-* [🥀 Twilight of Democracy: 🐍 The Seductive Lure of Authoritarianism](./twilight-of-democracy.md) by Anne Applebaum  
+* [🥀 Twilight of Democracy: 🐍 The Seductive Lure of Authoritarianism](/content/books/twilight-of-democracy.md) by Anne Applebaum  
   
 ### ➕ Related  
-* [👑🚫📜2️⃣0️⃣ On Tyranny: Twenty Lessons from the Twentieth Century](./on-tyranny.md) by Timothy Snyder  
+* [👑🚫📜2️⃣0️⃣ On Tyranny: Twenty Lessons from the Twentieth Century](/content/books/on-tyranny.md) by Timothy Snyder  
 * Why We Get the Wrong Politicians by Isabel Hardman  
 * The Light that Failed by Ivan Krastev and Stephen Holmes  
-* [📜🤝 The Bill of Obligations: The Ten Habits of Good Citizens](./the-bill-of-obligations.md) by Richard Haass  
+* [📜🤝 The Bill of Obligations: The Ten Habits of Good Citizens](/content/books/the-bill-of-obligations.md) by Richard Haass  
   
 ## 🫵 What Do You Think?  
   

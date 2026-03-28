@@ -80,7 +80,7 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 ## 📚 Book Recommendations  
   
 ### 👯 Similar  
-* [🔄📜🏛️ Against the Grain: A Deep History of the Earliest States](./against-the-grain-a-deep-history-of-the-earliest-states.md) by James C. Scott  
+* [🔄📜🏛️ Against the Grain: A Deep History of the Earliest States](books/against-the-grain-a-deep-history-of-the-earliest-states.md) by James C. Scott  
 * [🏛️💰 Debt: The First 5,000 Years](./debt-the-first-5000-years.md) Years by David Graeber  
 * 🛡️ The Art of Not Being Governed by James C. Scott  
   
@@ -90,7 +90,7 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 * 👑 Leviathan by Thomas Hobbes  
   
 ### 🔗 Related  
-* [📖🏛️📉 Seeing Like a State: How Certain Schemes to Improve the Human Condition Have Failed](./seeing-like-a-state-how-certain-schemes-to-improve-the-human-condition-have-failed.md) by James C. Scott  
+* [📖🏛️📉 Seeing Like a State: How Certain Schemes to Improve the Human Condition Have Failed](books/seeing-like-a-state-how-certain-schemes-to-improve-the-human-condition-have-failed.md) by James C. Scott  
 * ❤️ Humankind: A Hopeful History by Rutger Bregman  
 * 📜 The Social Contract by Jean-Jacques Rousseau  
   

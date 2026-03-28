@@ -10,7 +10,7 @@ Channel: Economy Media
 tags:
 youtube: https://youtu.be/_wHjDNzjF-k
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md)  
 # 💻🌍🚶‍♀️ Where All the Tech Workers Are Going  
 ![Where All the Tech Workers Are Going](https://youtu.be/_wHjDNzjF-k)  
   
@@ -31,8 +31,8 @@ youtube: https://youtu.be/_wHjDNzjF-k
 ## 📚 Books  
 * 🧭 **For navigating career transitions:** *What Color Is Your Parachute?* by Richard N. Bolles. This book is a classic guide to job hunting 💼 and career change, offering practical advice and exercises.  
 * 🤖 **For understanding the future of work and the impact of AI:** *Life After Google: The Fall of Big Data and the Rise of the Blockchain Economy* by George Gilder. This book explores the changing landscape of technology 🌐 and its effects on employment 🏢.  
-* 🚀 **For insights on entrepreneurship and startups:** [📉🧪🚀 The Lean Startup: How Today's Entrepreneurs Use Continuous Innovation to Create Radically Successful Businesses](../books/the-lean-startup.md) by Eric Ries. This book offers a methodology for developing businesses and products in a more efficient way.  
-* 🧠 **For strategies on upskilling and staying competitive:** [🤿💼 Deep Work: Rules for Focused Success in a Distracted World](../books/deep-work.md) by Cal Newport. This book provides strategies for focused work 🎯 and continuous learning, essential for staying relevant in a changing job market 📈.  
+* 🚀 **For insights on entrepreneurship and startups:** [📉🧪🚀 The Lean Startup: How Today's Entrepreneurs Use Continuous Innovation to Create Radically Successful Businesses](/content/books/the-lean-startup.md) by Eric Ries. This book offers a methodology for developing businesses and products in a more efficient way.  
+* 🧠 **For strategies on upskilling and staying competitive:** [🤿💼 Deep Work: Rules for Focused Success in a Distracted World](/content/books/deep-work.md) by Cal Newport. This book provides strategies for focused work 🎯 and continuous learning, essential for staying relevant in a changing job market 📈.  
 * 👩‍💼 **For addressing gender disparities in the workplace:** *Lean In: Women, Work, and the Will to Lead* by Sheryl Sandberg. This book discusses challenges women face in the workplace and offers strategies for achieving their goals.  
   
 ## 💬 Follow-up  
@@ -76,27 +76,27 @@ By proactively adapting to these shifts, focusing on higher-order thinking, and 
   
 ## 📚📚 More Books  
 ### On Career Transitions and Job Searching  
-* **[➡️ Pivot: The Only Move That Matters Is Your Next One](../books/pivot-the-only-move-that-matters-is-your-next-one.md) by Jenny Blake:** Written by a former Google career development specialist, this book provides a structured approach to making strategic career shifts, emphasizing small experiments and continuous iteration.  
+* **[➡️ Pivot: The Only Move That Matters Is Your Next One](/content/books/pivot-the-only-move-that-matters-is-your-next-one.md) by Jenny Blake:** Written by a former Google career development specialist, this book provides a structured approach to making strategic career shifts, emphasizing small experiments and continuous iteration.  
 * ***The Squiggly Career: Ditch the Ladder, Discover Opportunity, Design Your Career* by Helen Tupper and Sarah Ellis:** This book champions a non-linear career path, offering tools and exercises to navigate a changing professional landscape and define success on your own terms.  
 * ***Working Identity: Unconventional Strategies for Reinventing Your Career* by Herminia Ibarra:** Based on extensive research, this book challenges the traditional view of career change, suggesting that successful reinvention often comes from experimenting with new identities and actions rather than just deep introspection.  
   
 ### On the Future of Work and AI's Impact  
-* **[🧬👥💾 Life 3.0: Being Human in the Age of Artificial Intelligence](../books/life-3-0.md) by Max Tegmark:** Explores the profound implications of AI for humanity, from the near future to the far-reaching possibilities, prompting readers to consider how to steer AI toward a beneficial future.  
-* **[🧑‍💻🤖 Human + Machine: Reimagining Work in the Age of AI](../books/human-machine-reimagining-work-in-the-age-of-ai.md) by Paul R. Daugherty and H. James Wilson:** This book argues for a symbiotic relationship between humans and AI, providing a framework for how businesses and individuals can leverage AI to augment human capabilities rather than replace them.  
+* **[🧬👥💾 Life 3.0: Being Human in the Age of Artificial Intelligence](/content/books/life-3-0.md) by Max Tegmark:** Explores the profound implications of AI for humanity, from the near future to the far-reaching possibilities, prompting readers to consider how to steer AI toward a beneficial future.  
+* **[🧑‍💻🤖 Human + Machine: Reimagining Work in the Age of AI](/content/books/human-machine-reimagining-work-in-the-age-of-ai.md) by Paul R. Daugherty and H. James Wilson:** This book argues for a symbiotic relationship between humans and AI, providing a framework for how businesses and individuals can leverage AI to augment human capabilities rather than replace them.  
 * **AI Superpowers by Kai-Fu Lee:** Offers a fascinating perspective on the AI race between the US and China, highlighting the strengths of each and the societal implications of widespread AI adoption.  
 * ***The Second Machine Age: Work, Progress, and Prosperity in a Time of Brilliant Technologies* by Erik Brynjolfsson and Andrew McAfee:** Examines how digital technologies, particularly AI and robotics, are transforming the economy and labor market, discussing both the opportunities and challenges.  
 * ***Co-intelligence: Living And Working With Ai* by Ethan Mollick:** Explores how humans and AI can work together more effectively, focusing on practical applications and the emergence of "co-intelligence" in the workplace.  
   
 ### On Entrepreneurship and Startups  
-* **[0️⃣➡️1️⃣ Zero To One](../books/zero-to-one.md): Notes on Startups, or How to Build the Future by Peter Thiel with Blake Masters:** Offers a provocative perspective on creating new value rather than merely copying existing models, focusing on monopolies and unique innovations.  
+* **[0️⃣➡️1️⃣ Zero To One](/content/books/zero-to-one.md): Notes on Startups, or How to Build the Future by Peter Thiel with Blake Masters:** Offers a provocative perspective on creating new value rather than merely copying existing models, focusing on monopolies and unique innovations.  
 * ***The E-Myth Revisited: Why Most Small Businesses Don't Work and What to Do About It* by Michael E. Gerber:** A crucial read for aspiring entrepreneurs, it debunks myths about starting a business and provides a framework for building a scalable and sustainable enterprise.  
-* **[🪙💯🚀 The $100 Startup: Reinvent the Way You Make a Living, Do What You Love, and Create a New Future](../books/the-100-dollar-startup.md) by Chris Guillebeau:** Provides actionable advice and inspiring stories of individuals who built successful businesses with minimal upfront investment.  
-* **[❓🎯 Start with Why: How Great Leaders Inspire Everyone to Take Action](../books/start-with-why-how-great-leaders-inspire-everyone-to-take-action.md) by Simon Sinek:** While not exclusively about startups, understanding the "why" behind your venture is crucial for building a compelling vision and attracting customers and talent.  
+* **[🪙💯🚀 The $100 Startup: Reinvent the Way You Make a Living, Do What You Love, and Create a New Future](/content/books/the-100-dollar-startup.md) by Chris Guillebeau:** Provides actionable advice and inspiring stories of individuals who built successful businesses with minimal upfront investment.  
+* **[❓🎯 Start with Why: How Great Leaders Inspire Everyone to Take Action](/content/books/start-with-why-how-great-leaders-inspire-everyone-to-take-action.md) by Simon Sinek:** While not exclusively about startups, understanding the "why" behind your venture is crucial for building a compelling vision and attracting customers and talent.  
   
 ### On Upskilling and Staying Competitive  
-* **[⚛️🔄 Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones](../books/atomic-habits.md) by James Clear:** This book offers a practical framework for building effective habits and improving consistently, which is vital for continuous learning and skill development.  
-* **[🌱🧘🏼‍♀️🏆 Mindset: The New Psychology of Success](../books/mindset.md) by Carol S. Dweck:** Explores the power of having a "growth mindset" – the belief that abilities can be developed through dedication and hard work – which is fundamental for embracing new technologies and skills.  
-* **[❤️‍🔥💪 Grit: The Power of Passion and Perseverance](../books/grit-the-power-of-passion-and-perseverance.md) by Angela Duckworth:** Explains why talent is not the sole predictor of success, highlighting the importance of passion and long-term perseverance in achieving significant goals.  
+* **[⚛️🔄 Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones](/content/books/atomic-habits.md) by James Clear:** This book offers a practical framework for building effective habits and improving consistently, which is vital for continuous learning and skill development.  
+* **[🌱🧘🏼‍♀️🏆 Mindset: The New Psychology of Success](/content/books/mindset.md) by Carol S. Dweck:** Explores the power of having a "growth mindset" – the belief that abilities can be developed through dedication and hard work – which is fundamental for embracing new technologies and skills.  
+* **[❤️‍🔥💪 Grit: The Power of Passion and Perseverance](/content/books/grit-the-power-of-passion-and-perseverance.md) by Angela Duckworth:** Explains why talent is not the sole predictor of success, highlighting the importance of passion and long-term perseverance in achieving significant goals.  
   
 ### On Gender Disparities in the Workplace  
 * ***Invisible Women: Exposing Data Bias in a World Designed for Men* by Caroline Criado Perez:** A powerful and meticulously researched book that reveals how data, policy, and design often overlook women, leading to systemic biases and disadvantages in various aspects of life, including the workplace.  

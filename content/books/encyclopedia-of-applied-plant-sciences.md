@@ -8,7 +8,7 @@ Author:
 tags:
 affiliate link: https://amzn.to/3ZjA0Ep
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 📚🌿🔬 Encyclopedia of Applied Plant Sciences  
 [🛒 Encyclopedia of Applied Plant Sciences. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3ZjA0Ep)  
   
@@ -47,18 +47,18 @@ affiliate link: https://amzn.to/3ZjA0Ep
 * 🧬 **Plant Biotechnology: The genetic manipulation of plants** by Adrian Slater et al.: 📖 Focuses specifically on the techniques and applications of genetic modification in plants, a key area within applied plant science.  
   
 ### ➖ Contrasting Perspectives (Specialized or Theoretical)  
-* 🌻 **[🌿🧑‍🌾 Botany for Gardeners](./botany-for-gardeners.md)** by Brian Capon / 🌼 **[🧑‍🌾🌿 A Gardener's Guide to Botany](./a-gardeners-guide-to-botany.md)** by Scott Zona: 📖 These books bridge botany and practical horticulture but are aimed at a less academic audience, focusing on information directly applicable to gardening.  
+* 🌻 **[🌿🧑‍🌾 Botany for Gardeners](/content/books/botany-for-gardeners.md)** by Brian Capon / 🌼 **[🧑‍🌾🌿 A Gardener's Guide to Botany](/content/books/a-gardeners-guide-to-botany.md)** by Scott Zona: 📖 These books bridge botany and practical horticulture but are aimed at a less academic audience, focusing on information directly applicable to gardening.  
 * 🌿 **Plant Systematics: A Phylogenetic Approach** by Walter S. Judd et al.: 📖 Concentrates on plant classification, evolution, and relationships, representing a more theoretical and less directly 'applied' area of botany.  
 * 🌳 **From Plant Traits to Vegetation Structure** (Cambridge University Press): 📖 Explores ecological modeling and theoretical approaches to understanding plant communities based on traits, contrasting with the broader applied scope of the Encyclopedia.  
 * 🔬 **Specialized Monographs (Various Publishers like Caister Academic Press, Frontiers):** 📖 Books focusing deeply on niche topics like *Plant-Microbe Interactions*, *Omics in Seed Development*, or *Genes, Genetics and Transgenics for Virus Resistance in Plants* offer depth in specific areas rather than breadth.  
   
 ### 💡 Creatively Related Reads (Interdisciplinary & Popular Science)  
-* **[🪢🌾 Braiding Sweetgrass: Indigenous Wisdom, Scientific Knowledge, and the Teachings of Plants](./braiding-sweetgrass.md)** by Robin Wall Kimmerer: 📖 Blends indigenous perspectives, scientific knowledge, and personal reflection, offering a deeply humanistic and ecological view of plants.  
-* **[🌳🗣️ The Hidden Life of Trees: What They Feel, How They Communicate: Discoveries from a Secret World](./the-hidden-life-of-trees-what-they-feel-how-they-communicate-discoveries-from-a-secret-world.md)** by Peter Wohlleben: 📖 A popular science book exploring the social networks and communication between trees, sparking wonder about plant behavior.  
+* **[🪢🌾 Braiding Sweetgrass: Indigenous Wisdom, Scientific Knowledge, and the Teachings of Plants](/content/books/braiding-sweetgrass.md)** by Robin Wall Kimmerer: 📖 Blends indigenous perspectives, scientific knowledge, and personal reflection, offering a deeply humanistic and ecological view of plants.  
+* **[🌳🗣️ The Hidden Life of Trees: What They Feel, How They Communicate: Discoveries from a Secret World](/content/books/the-hidden-life-of-trees-what-they-feel-how-they-communicate-discoveries-from-a-secret-world.md)** by Peter Wohlleben: 📖 A popular science book exploring the social networks and communication between trees, sparking wonder about plant behavior.  
 * 🍎 **The Botany of Desire: A Plant's-Eye View of the World** by Michael Pollan: 📖 Explores the co-evolutionary relationship between humans and four key plants (apple, tulip, marijuana, potato), focusing on human desires they fulfill.  
 * 🌳 **Finding the Mother Tree: Discovering the Wisdom of the Forest** by Suzanne Simard: 📖 A memoir and scientific exploration of forest ecology, focusing on the interconnectedness and communication within forest ecosystems via mycorrhizal networks.  
 * 🥕 **Edible Plants: A Photographic Survey of the Wild Edible Botanicals of North America** by James Fike: 📖 Connects botany with foraging and survival, highlighting practical uses through photography and botanical information.  
 * 🪴 **Houseplant Books (e.g., *Wild at Home* by Hilton Carter, *How to Make a Plant Love You* by Summer Rayne Oakes, *Urban Jungle* by Igor Josifovic & Judith de Graaff):** 📖 While focused on indoor gardening and aesthetics, these often incorporate basic plant care science and highlight the human connection to plants in living spaces.  
   
-## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
+## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Encyclopedia of Applied Plant Sciences. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

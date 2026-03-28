@@ -7,7 +7,7 @@ share: true
 affiliate link: https://amzn.to/3Id2s4X
 CTA: 💡 Comprehend paradigm shifts.
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🔬🔄 The Structure of Scientific Revolutions  
 [🛒 The Structure of Scientific Revolutions. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3Id2s4X)  
   
@@ -40,7 +40,7 @@ CTA: 💡 Comprehend paradigm shifts.
   
 ### ⚔️ Contrasting Perspectives (Philosophy of Science)  
   
-* **[🤔🔬 The Logic of Scientific Discovery](./the-logic-of-scientific-discovery.md) by Karl Popper:** 🗝️ A major work in the philosophy of science that proposes falsifiability as the criterion for distinguishing science from non-science. 🆚 Popper's view of science as a process of conjecture and refutation stands in contrast to Kuhn's model of revolutionary shifts between incommensurable paradigms.  
+* **[🤔🔬 The Logic of Scientific Discovery](/content/books/the-logic-of-scientific-discovery.md) by Karl Popper:** 🗝️ A major work in the philosophy of science that proposes falsifiability as the criterion for distinguishing science from non-science. 🆚 Popper's view of science as a process of conjecture and refutation stands in contrast to Kuhn's model of revolutionary shifts between incommensurable paradigms.  
 * 🙅‍♂️ **Conjectures and Refutations by Karl Popper:** ➕ Further develops Popper's philosophy of science, presenting his ideas on falsification and critical rationalism.  
 * 🤔 **An Introduction to the Philosophy of Science by Rudolf Carnap:** 🏛️ Represents the logical positivist tradition that Kuhn's work challenged. 📑 Carnap and other logical positivists focused on the logical structure of scientific theories and verification.  
 * 🤔 **The Structure of Science: Problems in the Logic of Scientific Explanation by Ernest Nagel:** 🏛️ Another important work from the logical empiricist tradition, preceding and offering a different perspective on the issues Kuhn addresses.  
@@ -49,11 +49,11 @@ CTA: 💡 Comprehend paradigm shifts.
   
 * 🧬 **Darwin's Dangerous Idea: Evolution and the Meanings of Life by Daniel Dennett:** 🐒 Applies evolutionary thinking to explain a wide range of phenomena, touching on how major conceptual shifts occur in scientific understanding, albeit from a biological perspective.  
 * 👍 **The Panda's Thumb: More Reflections in Natural History by Stephen Jay Gould:** 🐼 A collection of essays on evolution and natural history that illustrates how scientific ideas develop and change, often through observing unexpected details or "anomalies" in the natural world.  
-* **[📜🌍👥 A Brief History of Everyone Who Ever Lived](./a-brief-history-of-everyone-who-ever-lived.md) by Adam Rutherford:** 🧬 Explores human history through the lens of genetics and DNA, showcasing how new scientific tools and understanding can revolutionize our view of the past and ourselves. 💥 This demonstrates a paradigm-like shift in historical understanding driven by scientific advancement.  
+* **[📜🌍👥 A Brief History of Everyone Who Ever Lived](/content/books/a-brief-history-of-everyone-who-ever-lived.md) by Adam Rutherford:** 🧬 Explores human history through the lens of genetics and DNA, showcasing how new scientific tools and understanding can revolutionize our view of the past and ourselves. 💥 This demonstrates a paradigm-like shift in historical understanding driven by scientific advancement.  
 * 🌌 **The Elegant Universe: Superstrings, Hidden Dimensions, and the Quest for the Ultimate Theory by Brian Greene:** 💫 While a work of popular science on physics, it implicitly deals with the process of scientific theory development, the search for unifying paradigms, and the challenges faced when existing frameworks seem insufficient.  
 * ⏱️ **Relativity: The Special and the General Theory by Albert Einstein:** 👨‍🔬 The foundational text for a major paradigm shift in physics. 📚 Reading Einstein's own explanation provides insight into the structure and impact of a revolutionary scientific theory.  
 * 🗣️ **Philosophical Investigations by Ludwig Wittgenstein:** 💬 A foundational text in the philosophy of language, which influenced Kuhn's ideas, particularly the concept of "language games" and how meaning is derived from usage within a community. 🤝 This connects to Kuhn's idea of incommensurability, where different paradigms use language in fundamentally different ways.  
 * 🤔 **Creatively Undecided: Toward a History and Philosophy of Scientific Agency by Menachem Fisch:** 💡 Explores the role of ambiguity and indecision in driving scientific change, offering a new perspective on how transitions between scientific understandings occur. 🤝 It engages with the ideas of both Kuhn and Popper.  
   
-## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
+## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on The Structure of Scientific Revolutions. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

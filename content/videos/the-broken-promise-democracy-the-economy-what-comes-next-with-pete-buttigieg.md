@@ -10,7 +10,7 @@ Channel: Trevor Noah
 tags:
 youtube: https://youtu.be/ou2Kuh4_puA
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md)  
 # 💔🏛️📉❓ The Broken Promise: Democracy, the Economy & What Comes Next with Pete Buttigieg  
 ![The Broken Promise: Democracy, the Economy & What Comes Next with Pete Buttigieg](https://youtu.be/ou2Kuh4_puA)  
   
@@ -57,7 +57,7 @@ youtube: https://youtu.be/ou2Kuh4_puA
 ## 📚 Book Recommendations  
   
 ### ↔️ Similar  
-* 📖 [🗳️🏛️☠️ How Democracies Die](../books/how-democracies-die.md) by Steven Levitsky and Daniel Ziblatt. 🇺🇸 Explains how democracies can slide into authoritarianism, often through legally sanctioned means, and the role of political parties as gatekeepers.  
+* 📖 [🗳️🏛️☠️ How Democracies Die](/content/books/how-democracies-die.md) by Steven Levitsky and Daniel Ziblatt. 🇺🇸 Explains how democracies can slide into authoritarianism, often through legally sanctioned means, and the role of political parties as gatekeepers.  
 * 📚 The Great Awakening: Reviving Faith and Politics in a Post-Religious Era by Jim Wallis. ✝️ Explores the intersection of faith, politics, and the economy, advocating for a moral response to social and economic injustices.  
   
 ### 🆚 Contrasting  
@@ -65,5 +65,5 @@ youtube: https://youtu.be/ou2Kuh4_puA
 * 📕 The Conscience of a Conservative by Barry Goldwater. 🐘 A foundational text of modern American conservatism that champions limited government, individual liberty, and free-market principles, offering a contrasting political and economic philosophy.  
   
 ### 🎨 Creatively Related  
-* [🤔🐇🐢 Thinking, Fast and Slow](../books/thinking-fast-and-slow.md) by Daniel Kahneman. 🧠 Delves into the two systems that drive our decision-making, providing a psychological lens on the cognitive biases and irrationality that affect public discourse and political polarization.  
+* [🤔🐇🐢 Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md) by Daniel Kahneman. 🧠 Delves into the two systems that drive our decision-making, providing a psychological lens on the cognitive biases and irrationality that affect public discourse and political polarization.  
 * 📗 The Power Broker: Robert Moses and the Fall of New York by Robert A. Caro. 🏗️ A biography illustrating how one unelected official accumulated massive power to reshape a city, tangentially relating to the video's theme of consolidated power and the failure of institutions to check it.

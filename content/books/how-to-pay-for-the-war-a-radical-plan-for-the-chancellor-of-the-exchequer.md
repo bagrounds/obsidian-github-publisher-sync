@@ -7,7 +7,7 @@ share: true
 CTA: 💰 Fund a better future.
 affiliate link: https://amzn.to/48UVuwS
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 💰⚔️ How to pay for the war: a radical plan for the chancellor of the exchequer  
 [🛒 How to pay for the war: a radical plan for the chancellor of the exchequer. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/48UVuwS)  
   
@@ -75,7 +75,7 @@ affiliate link: https://amzn.to/48UVuwS
 ## 📚 Book Recommendations  
   
 ### ↔️ Similar  
-* [🧑‍💼🏦💸 The General Theory of Employment, Interest, and Money](./the-general-theory-of-employment-interest-and-money.md) by John Maynard Keynes  
+* [🧑‍💼🏦💸 The General Theory of Employment, Interest, and Money](/content/books/the-general-theory-of-employment-interest-and-money.md) by John Maynard Keynes  
 * 📖 The Economic Consequences of the Peace by John Maynard Keynes  
 * 📖 A Tract on Monetary Reform by John Maynard Keynes  
   

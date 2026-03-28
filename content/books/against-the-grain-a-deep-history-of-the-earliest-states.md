@@ -6,7 +6,7 @@ URL: https://bagrounds.org/books/against-the-grain-a-deep-history-of-the-earlies
 share: true
 CTA: 🌍 Unearth ancient societies.
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🔄📜🏛️ Against the Grain: A Deep History of the Earliest States  
 📚 Against the Grain: A Deep History of the Earliest States challenges conventional narratives, arguing that early states were not an inevitable progression to a better life, but rather fragile, coercive prisons that most people actively resisted, only possible due to highly controllable grain agriculture. 🌾⛓️📉  
   

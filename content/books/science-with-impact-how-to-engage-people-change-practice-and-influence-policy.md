@@ -7,7 +7,7 @@ share: true
 CTA: 🚀 Propel meaningful change.
 affiliate link: https://amzn.to/47AH2rL
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🧪📣🏛️ Science with Impact: How to Engage People, Change Practice, and Influence Policy  
 [🛒 Science with Impact: How to Engage People, Change Practice, and Influence Policy. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/47AH2rL)  
   
@@ -87,9 +87,9 @@ affiliate link: https://amzn.to/47AH2rL
 * 🗣️ Don't Be Such a Scientist by Randy Olson: A scientist's perspective on effective scientific communication, emphasizing storytelling over pure facts.  
   
 ### Related Books  
-* [🤔🐇🐢 Thinking, Fast and Slow](./thinking-fast-and-slow.md) by Daniel Kahneman: Explores the two systems of thought that drive decision-making, relevant for understanding public perception.  
-* [👉🤏 Nudge: Improving Decisions about Health, Wealth, and Happiness](./nudge.md) by Richard H. Thaler and Cass R. Sunstein: Discusses how subtle interventions can influence behavior and policy choices.  
-* [🧠🌱💀 Made to Stick: Why Some Ideas Survive and Others Die](./made-to-stick.md) by Chip Heath and Dan Heath: Principles for making ideas memorable and impactful, highly applicable to science communication.  
+* [🤔🐇🐢 Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md) by Daniel Kahneman: Explores the two systems of thought that drive decision-making, relevant for understanding public perception.  
+* [👉🤏 Nudge: Improving Decisions about Health, Wealth, and Happiness](/content/books/nudge.md) by Richard H. Thaler and Cass R. Sunstein: Discusses how subtle interventions can influence behavior and policy choices.  
+* [🧠🌱💀 Made to Stick: Why Some Ideas Survive and Others Die](/content/books/made-to-stick.md) by Chip Heath and Dan Heath: Principles for making ideas memorable and impactful, highly applicable to science communication.  
   
 ## 🫵 What Do You Think?  
   

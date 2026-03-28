@@ -7,7 +7,7 @@ share: true
 affiliate link: https://amzn.to/43y79NG
 CTA: 🌟 Cultivate contentment.
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 😊🧠 Satisfaction: The Science of Finding True Fulfillment  
 [🛒 Satisfaction: The Science of Finding True Fulfillment. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/43y79NG)  
   
@@ -50,17 +50,17 @@ CTA: 🌟 Cultivate contentment.
 ## 📚 Book Recommendations  
   
 ### 🧠 Similar Reads (Science of Happiness/Decision Making/Neuroscience)  
-* **[😀📜 The Happiness Hypothesis: Finding Modern Truth in Ancient Wisdom](./the-happiness-hypothesis-finding-modern-truth-in-ancient-wisdom.md)** by Jonathan Haidt: Explores the psychological and philosophical roots of happiness, using the metaphor of an elephant (automatic processes) and a rider (conscious control). 🐴  
+* **[😀📜 The Happiness Hypothesis: Finding Modern Truth in Ancient Wisdom](/content/books/the-happiness-hypothesis-finding-modern-truth-in-ancient-wisdom.md)** by Jonathan Haidt: Explores the psychological and philosophical roots of happiness, using the metaphor of an elephant (automatic processes) and a rider (conscious control). 🐴  
 * 🧠 **Buddha's Brain: The Practical Neuroscience of Happiness, Love, and Wisdom** by Rick Hanson & Richard Mendius: 🙏 Blends neuroscience, evolutionary biology, and Buddhist wisdom to explain how brain activity underlies states of mind and how to cultivate positive ones. 🧘‍♀️  
-* **[🔌😁🧠🔬 Hardwiring Happiness: The New Brain Science of Contentment, Calm, and Confidence](./hardwiring-happiness-the-brain-science-that-changes-everything.md)** by Rick Hanson: Focuses on practical techniques grounded in neuroscience to rewire the brain for greater happiness and resilience. 🛠️  
+* **[🔌😁🧠🔬 Hardwiring Happiness: The New Brain Science of Contentment, Calm, and Confidence](/content/books/hardwiring-happiness-the-brain-science-that-changes-everything.md)** by Rick Hanson: Focuses on practical techniques grounded in neuroscience to rewire the brain for greater happiness and resilience. 🛠️  
 * 💰 **NeuroWisdom: The New Brain Science of Money, Happiness, and Success** by Mark Robert Waldman & Chris Manning: Offers brain exercises based on neuroscience to improve productivity, satisfaction, and goal achievement. 🎯  
 * 🤔 **Emotion and Decision Making Explained** by Edmund T. Rolls: A comprehensive look at the neuroscience of emotion, motivation, reward, and how the brain implements decision-making. 🧠  
-* **[😊🧠📈🎯 The How of Happiness: A Scientific Approach to Getting the Life You Want](./the-how-of-happiness-a-scientific-approach-to-getting-the-life-you-want.md)** by Sonja Lyubomirsky: Presents research-based strategies and activities to intentionally increase happiness levels. 😄  
-* **[🤔🐇🐢 Thinking, Fast and Slow](./thinking-fast-and-slow.md)** by Daniel Kahneman: Delves into the two systems that drive thought – the fast, intuitive System 1 and the slow, deliberate System 2 – explaining cognitive biases and errors in judgment. 🐢  
+* **[😊🧠📈🎯 The How of Happiness: A Scientific Approach to Getting the Life You Want](/content/books/the-how-of-happiness-a-scientific-approach-to-getting-the-life-you-want.md)** by Sonja Lyubomirsky: Presents research-based strategies and activities to intentionally increase happiness levels. 😄  
+* **[🤔🐇🐢 Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md)** by Daniel Kahneman: Delves into the two systems that drive thought – the fast, intuitive System 1 and the slow, deliberate System 2 – explaining cognitive biases and errors in judgment. 🐢  
   
 ### 🔄 Contrasting Perspectives (Alternative Paths to Fulfillment)  
-* **[🌊🧘🏼‍♀️🧠📈 Flow: The Psychology of Optimal Experience](./flow-the-psychology-of-optimal-experience.md)** by Mihaly Csikszentmihalyi: While related to Berns' concept of challenge, Flow focuses more on the psychological state of complete absorption in an activity, often seen as a key to happiness, sometimes irrespective of novelty. 🧘  
-* **[🔦💡 Man's Search for Meaning](./mans-search-for-meaning.md)** by Viktor Frankl: A psychiatrist's account of life in Nazi death camps and his psychotherapeutic method (logotherapy), which posits that the primary human drive is not pleasure (Freud) or power (Adler), but the discovery and pursuit of what we personally find meaningful. 🌟  
+* **[🌊🧘🏼‍♀️🧠📈 Flow: The Psychology of Optimal Experience](/content/books/flow-the-psychology-of-optimal-experience.md)** by Mihaly Csikszentmihalyi: While related to Berns' concept of challenge, Flow focuses more on the psychological state of complete absorption in an activity, often seen as a key to happiness, sometimes irrespective of novelty. 🧘  
+* **[🔦💡 Man's Search for Meaning](/content/books/mans-search-for-meaning.md)** by Viktor Frankl: A psychiatrist's account of life in Nazi death camps and his psychotherapeutic method (logotherapy), which posits that the primary human drive is not pleasure (Freud) or power (Adler), but the discovery and pursuit of what we personally find meaningful. 🌟  
 * 💖 **The Gifts of Imperfection** by Brené Brown: Argues for embracing vulnerability, imperfection, and authenticity as pathways to wholehearted living, contrasting with a purely achievement- or novelty-driven approach to satisfaction. 🫂  
 * 🧘 Books on Mindfulness and Meditation (e.g., works by Thich Nhat Hanh, Jon Kabat-Zinn): Emphasize presence, acceptance, and inner peace as routes to contentment, often contrasting with the striving and external seeking highlighted by Berns. ☮️  
 * 💸 **Rich Dad Poor Dad** by Robert T. Kiyosaki: Focuses on financial literacy and mindset shifts for achieving financial independence, representing a specific, often contrasting, path to a form of life satisfaction. 🏦  
@@ -68,10 +68,10 @@ CTA: 🌟 Cultivate contentment.
 ### ➕ Creatively Related (Exploring Themes Further)  
 * 🧠 **Iconoclast: A Neuroscientist Reveals How to Think Differently** by Gregory Berns: Berns' follow-up book, exploring the neuroscience behind people who break norms and think differently, extending the theme of novelty and challenging convention. 💥  
 * 🐶 **How Dogs Love Us / What It's Like to Be a Dog** by Gregory Berns: Berns applies his neuroscience research (using fMRI on awake dogs) to understand animal cognition and emotion, relating to the theme of exploring the unknown and challenging research boundaries. 🐕  
-* **[🔄🧠💪 The Power of Habit: Why We Do What We Do in Life and Business](./the-power-of-habit.md)** by Charles Duhigg: Explores the neuroscience of habit formation, relevant to understanding how routines (the opposite of novelty) dominate lives but also how they can be changed. 🔄  
-* **[🧠🔄🏆 The Brain That Changes Itself: Stories of Personal Triumph from the Frontiers of Brain Science](./the-brain-that-changes-itself.md)** by Norman Doidge: Showcases neuroplasticity through compelling stories, highlighting the brain's capacity for change and adaptation, linking to Berns' idea that experiences change the brain. 🌟  
+* **[🔄🧠💪 The Power of Habit: Why We Do What We Do in Life and Business](/content/books/the-power-of-habit.md)** by Charles Duhigg: Explores the neuroscience of habit formation, relevant to understanding how routines (the opposite of novelty) dominate lives but also how they can be changed. 🔄  
+* **[🧠🔄🏆 The Brain That Changes Itself: Stories of Personal Triumph from the Frontiers of Brain Science](/content/books/the-brain-that-changes-itself.md)** by Norman Doidge: Showcases neuroplasticity through compelling stories, highlighting the brain's capacity for change and adaptation, linking to Berns' idea that experiences change the brain. 🌟  
 * ⛰️ **Into the Wild** by Jon Krakauer or **Wild** by Cheryl Strayed: Narratives of individuals seeking profound experiences and self-discovery through challenging, unconventional journeys in nature, embodying the pursuit of satisfaction through adversity and novelty. 🌲  
 * 💪 **Awaken the Giant Within** by Tony Robbins: A motivational self-help book focused on taking control of one's life through psychological techniques, touching on themes of drive and achieving goals, albeit from a different perspective than Berns' neuroscience focus. 🧠  
   
-## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
+## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Satisfaction: The Science of Finding True Fulfillment. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

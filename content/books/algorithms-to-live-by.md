@@ -6,7 +6,7 @@ aliases:
 URL: https://bagrounds.org/books/algorithms-to-live-by
 affiliate link: https://amzn.to/4kxUFwM
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🤔💻🧠 Algorithms to Live By: The Computer Science of Human Decisions  
 [🛒 Algorithms to Live By: The Computer Science of Human Decisions. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4kxUFwM)  
   
@@ -57,33 +57,33 @@ affiliate link: https://amzn.to/4kxUFwM
   
 ### ➕ Similar Reads (Applying Science/Logic to Life)  
   
-* 🤔 **[How Not to Be Wrong: The Power of Mathematical Thinking](./how-not-to-be-wrong.md)** by Jordan Ellenberg: Explores how mathematical thinking illuminates real-world issues and everyday life, similar to applying algorithmic thinking.  
-* **[🔮🎨🔬 Superforecasting: The Art and Science of Prediction](./superforecasting-the-art-and-science-of-prediction.md)** by Philip E. Tetlock and Dan Gardner: Focuses on improving prediction skills, aligning with the book's theme of using structured thinking (like Bayes' Rule) for better judgment.  
-* 🧠 **[Thinking, Fast and Slow](./thinking-fast-and-slow.md)** by Daniel Kahneman: While focusing more on cognitive biases (see Contrasting Reads), it deeply explores the mechanisms of human thought and decision-making, a core topic in *Algorithms to Live By*.  
+* 🤔 **[How Not to Be Wrong: The Power of Mathematical Thinking](/content/books/how-not-to-be-wrong.md)** by Jordan Ellenberg: Explores how mathematical thinking illuminates real-world issues and everyday life, similar to applying algorithmic thinking.  
+* **[🔮🎨🔬 Superforecasting: The Art and Science of Prediction](/content/books/superforecasting-the-art-and-science-of-prediction.md)** by Philip E. Tetlock and Dan Gardner: Focuses on improving prediction skills, aligning with the book's theme of using structured thinking (like Bayes' Rule) for better judgment.  
+* 🧠 **[Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md)** by Daniel Kahneman: While focusing more on cognitive biases (see Contrasting Reads), it deeply explores the mechanisms of human thought and decision-making, a core topic in *Algorithms to Live By*.  
 * ⚖️ **The Logic of Life: The Rational Economics of an Irrational World** by Tim Harford: Argues that seemingly irrational behaviors often have underlying rational explanations based on incentives, echoing the application of logical frameworks to human actions.  
 * 🤖 **Hello World: Being Human in the Age of Algorithms** by Hannah Fry: Explores the impact and function of algorithms in modern society, covering similar ground but perhaps with a broader societal focus.  
 * 📊 **Dataclysm: Who We Are (When We Think No One's Looking)** by Christian Rudder: Uses data analysis (often algorithm-driven) from online behavior to understand human nature and decision-making.  
   
 ### ➖ Contrasting Reads (Behavioral Economics, Deeper CS, Philosophy)  
   
-* 🤪 **[Predictably Irrational](./predictably-irrational.md): The Hidden Forces That Shape Our Decisions** by Dan Ariely: Focuses on the systematic *irrationality* of human decision-making, contrasting with the *optimal* strategies suggested by algorithms.  
-* 👉 **[Nudge](./nudge.md): Improving Decisions About Health, Wealth, and Happiness** by Richard H. Thaler and Cass R. Sunstein: Explores how "choice architecture" can gently guide (nudge) people towards better decisions, acknowledging cognitive biases rather than purely rational optimization.  
-* 🤝 **[Influence](./influence.md): The Psychology of Persuasion** by Robert Cialdini: Examines the psychological principles behind why people comply with requests, focusing on persuasion tactics rather than internal decision algorithms.  
+* 🤪 **[Predictably Irrational](/content/books/predictably-irrational.md): The Hidden Forces That Shape Our Decisions** by Dan Ariely: Focuses on the systematic *irrationality* of human decision-making, contrasting with the *optimal* strategies suggested by algorithms.  
+* 👉 **[Nudge](/content/books/nudge.md): Improving Decisions About Health, Wealth, and Happiness** by Richard H. Thaler and Cass R. Sunstein: Explores how "choice architecture" can gently guide (nudge) people towards better decisions, acknowledging cognitive biases rather than purely rational optimization.  
+* 🤝 **[Influence](/content/books/influence.md): The Psychology of Persuasion** by Robert Cialdini: Examines the psychological principles behind why people comply with requests, focusing on persuasion tactics rather than internal decision algorithms.  
 * 💻 **Introduction to Algorithms** by Cormen, Leiserson, Rivest, and Stein (CLRS): A comprehensive, rigorous textbook on algorithms for those seeking a deeper, technical understanding far beyond the analogies in *Algorithms to Live By*.  
 * ⚙️ **The Algorithm Design Manual** by Steven S. Skiena: Another well-regarded technical book focusing on practical algorithm design and implementation.  
-* ♾️ **[Gödel, Escher, Bach: An Eternal Golden Braid](./godel-escher-bach.md)** by Douglas Hofstadter: A philosophical exploration of cognition, recursion, and formal systems, offering a much deeper, more abstract perspective on related concepts.  
+* ♾️ **[Gödel, Escher, Bach: An Eternal Golden Braid](/content/books/godel-escher-bach.md)** by Douglas Hofstadter: A philosophical exploration of cognition, recursion, and formal systems, offering a much deeper, more abstract perspective on related concepts.  
 * ✍️ **Designing for Behavior Change: Applying Psychology and Behavioral Economics** by Stephen Wendel: Focuses on using behavioral science to design products that influence user actions, a practical application contrasting with the personal decision focus of *Algorithms to Live By*.  
   
 ### 🎨 Creatively Related Reads (Complexity, Systems, Information, Thinking Tools)  
   
-* **[🧑‍💻📈 The Pragmatic Programmer: Your Journey to Mastery](./the-pragmatic-programmer-your-journey-to-mastery.md)** by Andrew Hunt and David Thomas: While aimed at software developers, it offers practical advice on thinking, learning, and problem-solving that resonates with applying structured approaches to complex tasks.  
+* **[🧑‍💻📈 The Pragmatic Programmer: Your Journey to Mastery](/content/books/the-pragmatic-programmer-your-journey-to-mastery.md)** by Andrew Hunt and David Thomas: While aimed at software developers, it offers practical advice on thinking, learning, and problem-solving that resonates with applying structured approaches to complex tasks.  
 * 👨‍💻 **Code: The Hidden Language of Computer Hardware and Software** by Charles Petzold: Explains the fundamental building blocks of computers and computation, providing context for where algorithms operate.  
 * 🖥️ **The Most Complex Machine: A Survey of Computers and Computing** by David Eck: Explains computation accessibly and connects it to daily life, similar in goal but perhaps broader in scope than just algorithms.  
 * 💡 **Tools For Thought** by Howard Rheingold: An older but insightful look at the history and potential of computers to augment human intellect.  
 * 📚 **From Computing to Computational Thinking** by Paul S. Wang: A guidebook explaining computational thinking concepts without programming knowledge, using everyday examples.  
 * ⚔️ **Chip War: The Fight for the World's Most Critical Technology** by Chris Miller: Explores the geopolitical and technological battle over microchips, the hardware upon which algorithms run.  
 * ℹ️ **The Information: A History, a Theory, a Flood** by James Gleick: A historical and conceptual exploration of information theory, which underlies much of computer science and algorithmic thinking.  
-* **[🤖🧑‍ Human Compatible: Artificial Intelligence and the Problem of Control](./human-compatible-artificial-intelligence-and-the-problem-of-control.md)** by Stuart Russell: Discusses the future of AI and the importance of aligning machine objectives with human values, extending the algorithmic theme into existential considerations.  
+* **[🤖🧑‍ Human Compatible: Artificial Intelligence and the Problem of Control](/content/books/human-compatible-artificial-intelligence-and-the-problem-of-control.md)** by Stuart Russell: Discusses the future of AI and the importance of aligning machine objectives with human values, extending the algorithmic theme into existential considerations.  
   
-## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
+## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Algorithms to Live By: The Computer Science of Human Decisions. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

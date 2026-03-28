@@ -10,7 +10,7 @@ Channel: Vinay Raniga
 tags:
 youtube: https://youtu.be/d08-e8I0xYg
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md)  
 # ❓😡🇺🇸🗳️ Why the hell did people vote for Trump? (the answers will shock you)  
 ![Why the hell did people vote for Trump? (the answers will shock you)](https://youtu.be/d08-e8I0xYg)  
   
@@ -34,16 +34,16 @@ This video covers several specific issues related to 🗣️ political polarizat
 * 🧠 **Psychological Reasons for Political Choice (Jonathan Haidt's "The Righteous Mind")** \[[10:30](http://www.youtube.com/watch?v=d08-e8I0xYg&t=630)\]:  
     * ❤️‍🔥 **Intuitive vs. Rational Thinking**: Political ideals are often based on intuition and gut feelings, with reasoning used to justify these positions 🧐 \[[11:06](http://www.youtube.com/watch?v=d08-e8I0xYg&t=666)\].  
     * 👥 **Groupishness**: Humans have a natural tendency to form groups with shared beliefs, contributing to the "us versus them" mentality in politics ⚔️ \[[11:58](http://www.youtube.com/watch?v=d08-e8I0xYg&t=718)\].  
-    * 📜 **[❤️‍🩹⚖️🤝👑😇🗽 Moral Foundations Theory](../topics/moral-foundations-theory.md)**:  
+    * 📜 **[❤️‍🩹⚖️🤝👑😇🗽 Moral Foundations Theory](/content/topics/moral-foundations-theory.md)**:  
         * 💙 **Left/Democrats**: Emphasize care, fairness, and liberty from oppression \[[12:45](http://www.youtube.com/watch?v=d08-e8I0xYg&t=765)\].  
         * ❤️ **Right/Republicans**: Emphasize loyalty, authority, sanctity, and liberty/freedom from government overreach \[[13:04](http://www.youtube.com/watch?v=d08-e8I0xYg&t=784)\].  
   
 ## 📚 Book Recommendations  
 * **For understanding political psychology and moral foundations:**  
-    * [😇🧠 The Righteous Mind: Why Good People Are Divided by Politics and Religion](../books/the-righteous-mind.md) by Jonathan Haidt (directly mentioned in the video)  
+    * [😇🧠 The Righteous Mind: Why Good People Are Divided by Politics and Religion](/content/books/the-righteous-mind.md) by Jonathan Haidt (directly mentioned in the video)  
 * **For insights into political polarization and its causes:**  
-    * [🏘️↔️ The Big Sort: Why the Clustering of Like-Minded America Is Tearing Us Apart](../books/the-big-sort-why-the-clustering-of-like-minded-america-is-tearing-us-apart.md) by Bill Bishop  
-    * [🫥🇺🇸😡💔 Strangers in Their Own Land](../books/strangers-in-their-own-land.md) by Arlie Russell Hochschild  
+    * [🏘️↔️ The Big Sort: Why the Clustering of Like-Minded America Is Tearing Us Apart](/content/books/the-big-sort-why-the-clustering-of-like-minded-america-is-tearing-us-apart.md) by Bill Bishop  
+    * [🫥🇺🇸😡💔 Strangers in Their Own Land](/content/books/strangers-in-their-own-land.md) by Arlie Russell Hochschild  
 * **For understanding voter behavior and demographics:**  
     * *Identity Crisis: The 2016 Presidential Campaign and the Battle for the Meaning of America* by John Sides, Michael Tesler, and Lynn Vavreck  
 * **For exploring postmaterialism and value shifts:**  

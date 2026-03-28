@@ -7,7 +7,7 @@ share: true
 affiliate link: https://amzn.to/3XVsVsp
 CTA: 😴 Nurture restful nights.
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 😴 The Happy Sleeper: The Science-Backed Guide to Helping Your Baby Get a Good Night's Sleep - Newborn to School Age  
 [🛒 The Happy Sleeper: The Science-Backed Guide to Helping Your Baby Get a Good Night's Sleep - Newborn to School Age. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3XVsVsp)  
   
@@ -83,17 +83,17 @@ CTA: 😴 Nurture restful nights.
   
 ## 📚 Book Recommendations  
 ### 📕 Similar  
-* [😴👶  Solve Your Child's Sleep Problems](./solve-your-childs-sleep-problems.md) by Richard Ferber  
+* [😴👶  Solve Your Child's Sleep Problems](/content/books/solve-your-childs-sleep-problems.md) by Richard Ferber  
 * Healthy Sleep Habits, Happy Child by Marc Weissbluth  
 * The Sleep Lady's Good Night, Sleep Tight by Kim West  
   
 ### 📘 Contrasting  
 * The No-Cry Sleep Solution by Elizabeth Pantley  
-* [😴🤱 Sweet Sleep: Nighttime and Naptime Strategies for the Breastfeeding Family](./sweet-sleep-nighttime-and-naptime-strategies-for-the-breastfeeding-family.md) by La Leche League International  
-* [👩🏼‍❤️‍💋‍👨🏻🔗 Attached: The New Science of Adult Attachment and How It Can Help You Find - and Keep - Love](./attached-the-new-science-of-adult-attachment-and-how-it-can-help-you-find-and-keep-love.md) by Amir Levine and Rachel Heller (Focuses on adult attachment but provides context on attachment theory)  
+* [😴🤱 Sweet Sleep: Nighttime and Naptime Strategies for the Breastfeeding Family](/content/books/sweet-sleep-nighttime-and-naptime-strategies-for-the-breastfeeding-family.md) by La Leche League International  
+* [👩🏼‍❤️‍💋‍👨🏻🔗 Attached: The New Science of Adult Attachment and How It Can Help You Find - and Keep - Love](/content/books/attached-the-new-science-of-adult-attachment-and-how-it-can-help-you-find-and-keep-love.md) by Amir Levine and Rachel Heller (Focuses on adult attachment but provides context on attachment theory)  
   
 ### 📗 Related  
-* [🕳️🧠👶🏽 The Whole-Brain Child: 12 Revolutionary Strategies to Nurture Your Child's Developing Mind](./the-whole-brain-child.md) by Daniel J. Siegel and Tina Payne Bryson (Foreword author for The Happy Sleeper)  
+* [🕳️🧠👶🏽 The Whole-Brain Child: 12 Revolutionary Strategies to Nurture Your Child's Developing Mind](/content/books/the-whole-brain-child.md) by Daniel J. Siegel and Tina Payne Bryson (Foreword author for The Happy Sleeper)  
 * Hunt, Gather, Parent by Michaeleen Doucleff  
 * Elevating Child Care: A Guide to Respectful Parenting by Janet Lansbury  
   

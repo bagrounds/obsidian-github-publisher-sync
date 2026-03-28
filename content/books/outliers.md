@@ -47,7 +47,7 @@ A: 🤓 Many readers consider it among his most accessible and thought-provoking
   
 ### 📖 Non-Fiction  
   
-* [💪 Grit](./grit-the-power-of-passion-and-perseverance.md) by Angela Duckworth  
+* [💪 Grit](books/grit-the-power-of-passion-and-perseverance.md) by Angela Duckworth  
 * [🧠 Mindset](./mindset.md) by Carol Dweck  
   
 ### ❤️ If You Loved This  
@@ -58,7 +58,7 @@ A: 🤓 Many readers consider it among his most accessible and thought-provoking
 ### ↔️ Similar But Different  
   
 * [⭐ Talent Is Overrated](books/talent-is-overrated.md) by Geoff Colvin - More focused on deliberate practice  
-* [🐢 Thinking, Fast and Slow](./thinking-fast-and-slow.md) by Daniel Kahneman - Deeper psychology, less narrative  
+* [🐢 Thinking, Fast and Slow](books/thinking-fast-and-slow.md) by Daniel Kahneman - Deeper psychology, less narrative  
   
 ## 🫵 What Do You Think?  
   

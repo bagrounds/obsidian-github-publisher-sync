@@ -9,7 +9,7 @@ CTA: 💰 Empower citizens.
 tags:
   - MMT
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 💰🇺🇸 Making Money Work for Us: How MMT Can Save America  
 [🛒 Making Money Work for Us: How MMT Can Save America. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4oIDomB)  
   
@@ -69,9 +69,9 @@ tags:
 ## 📚 Book Recommendations  
   
 ### 📖 Similar  
-* [💰📉➡️📈🗳️ The Deficit Myth: Modern Monetary Theory and the Birth of the People's Economy](./the-deficit-myth.md) by Stephanie Kelton  
-* [💸😇 The 7 Deadly Innocent Frauds of Economic Policy](./the-7-deadly-innocent-frauds-of-economic-policy.md) by Warren Mosler  
-* [🌍💰📊 Macroeconomics](./macroeconomics.md) by William Mitchell, L. Randall Wray, and Martin Watts  
+* [💰📉➡️📈🗳️ The Deficit Myth: Modern Monetary Theory and the Birth of the People's Economy](/content/books/the-deficit-myth.md) by Stephanie Kelton  
+* [💸😇 The 7 Deadly Innocent Frauds of Economic Policy](/content/books/the-7-deadly-innocent-frauds-of-economic-policy.md) by Warren Mosler  
+* [🌍💰📊 Macroeconomics](/content/books/macroeconomics.md) by William Mitchell, L. Randall Wray, and Martin Watts  
   
 ### 📖 Contrasting  
 * Principles of Economics by N. Gregory Mankiw  
@@ -79,9 +79,9 @@ tags:
 * Capitalism and Freedom by Milton Friedman  
   
 ### 📖 Related  
-* [🏛️💰 Debt: The First 5,000 Years](./debt-the-first-5000-years.md) by David Graeber  
-* [🧑🏿⛓️🙈 The New Jim Crow: Mass Incarceration in the Age of Colorblindness](./the-new-jim-crow-mass-incarceration-in-the-age-of-colorblindness.md) by Michelle Alexander  
-* [🍩🌍 Doughnut Economics: Seven Ways to Think Like a 21st-Century Economist](./doughnut-economics-seven-ways-to-think-like-a-21st-century-economist.md) by Kate Raworth  
+* [🏛️💰 Debt: The First 5,000 Years](/content/books/debt-the-first-5000-years.md) by David Graeber  
+* [🧑🏿⛓️🙈 The New Jim Crow: Mass Incarceration in the Age of Colorblindness](/content/books/the-new-jim-crow-mass-incarceration-in-the-age-of-colorblindness.md) by Michelle Alexander  
+* [🍩🌍 Doughnut Economics: Seven Ways to Think Like a 21st-Century Economist](/content/books/doughnut-economics-seven-ways-to-think-like-a-21st-century-economist.md) by Kate Raworth  
   
 ## 🫵 What Do You Think?  
 💬 What aspects of MMT do you find most compelling or concerning for America's economic future? How do you envision MMT's proposals impacting public discourse and policy decisions?

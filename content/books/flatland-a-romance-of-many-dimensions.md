@@ -7,7 +7,7 @@ share: true
 CTA: ⬛ Explore reality.
 affiliate link: https://amzn.to/45SL4Mu
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🗺️❤️📐 Flatland: A Romance of Many Dimensions  
 [🛒 Flatland: A Romance of Many Dimensions. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/45SL4Mu)  
   

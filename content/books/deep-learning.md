@@ -64,7 +64,7 @@ updated: 2026-03-15T12:09:33.207Z
 **Additional Book Recommendations:** 📚🌟  
   
 * **Best Alternate Book on the Same Topic:** "Pattern Recognition and Machine Learning" by Christopher M. Bishop. While slightly broader, it provides a solid foundation in machine learning, including deep learning concepts. 🧠💡  
-* **Best Book Tangentially Related:** [🤖🧠 Artificial Intelligence: A Modern Approach](./artificial-intelligence-a-modern-approach.md) by Stuart Russell and Peter Norvig. This comprehensive textbook covers the broader field of AI, providing context for deep learning within AI. 🤖🌐  
+* **Best Book Tangentially Related:** [🤖🧠 Artificial Intelligence: A Modern Approach](books/artificial-intelligence-a-modern-approach.md) by Stuart Russell and Peter Norvig. This comprehensive textbook covers the broader field of AI, providing context for deep learning within AI. 🤖🌐  
 * **Best Book Diametrically Opposed:** "The Alignment Problem: Machine Learning and Human Values" by Brian Christian. This book explores the ethical and societal implications of AI, offering a critical perspective on the rapid advancement of deep learning. ⚖️🤔  
 * **Best Fiction Book That Incorporates Related Ideas:** Klara and the Sun by Kazuo Ishiguro. This novel explores themes of artificial intelligence and human connection, offering a thought-provoking narrative. ☀️❤️  
 * **Best Book More General:** [🧬👥💾 Life 3.0: Being Human in the Age of Artificial Intelligence](./life-3-0.md) by Max Tegmark. This book discusses the long-term implications of AI, including deep learning, on society and the future of humanity. 🌐🔮  

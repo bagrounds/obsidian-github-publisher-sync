@@ -6,7 +6,7 @@ URL: https://bagrounds.org/books/why-we-sleep-unlocking-the-power-of-sleep-and-d
 share: true
 affiliate link: https://amzn.to/3Zbdk9l
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 😴💭 Why We Sleep: Unlocking the Power of Sleep and Dreams  
 [🛒 Why We Sleep: Unlocking the Power of Sleep and Dreams. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3Zbdk9l)  
   
@@ -76,11 +76,11 @@ affiliate link: https://amzn.to/3Zbdk9l
     * 😴 **Life Time: The New Science of the Body Clock, and How It Can Revolutionize Your Sleep and Health** by Russell Foster: 🔄 An updated look at circadian rhythms and their impact on health, aligning closely with some themes in *Why We Sleep*.  
     * 👩‍🔬 **Chronobiology and Chronomedicine: From Molecular and Cellular Mechanisms to Whole Body Interdigitating Networks**: 🔬 A technical book exploring the field's depth, relationship between circadian function and disease, and therapeutic approaches.  
 * 🧠 **On Neuroscience & The Mind:**  
-    * 🤔 **[Thinking, Fast and Slow](./thinking-fast-and-slow.md)** by Daniel Kahneman: 🧠 Explores cognitive biases and the two systems governing thought, tangentially related through decision-making which is impacted by sleep.  
+    * 🤔 **[Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md)** by Daniel Kahneman: 🧠 Explores cognitive biases and the two systems governing thought, tangentially related through decision-making which is impacted by sleep.  
     * 🧠 **Conscious: A Brief Guide to the Fundamental Mystery of the Mind** by Annaka Harris: 😴 Discusses the nature of consciousness, a state intrinsically linked with sleep and wakefulness.  
 * 💪 **On Habits & Productivity (linked to rest):**  
-    * **[⚛️🔄 Atomic Habits](./atomic-habits.md)** by James Clear: While not about sleep *per se*, it provides frameworks for building positive habits, which could be applied to improving sleep routines.  
-    * **[🤿💼 Deep Work](./deep-work.md)** by Cal Newport: 🎯 Argues for focused work, which requires the cognitive restoration provided by adequate sleep.  
+    * **[⚛️🔄 Atomic Habits](/content/books/atomic-habits.md)** by James Clear: While not about sleep *per se*, it provides frameworks for building positive habits, which could be applied to improving sleep routines.  
+    * **[🤿💼 Deep Work](/content/books/deep-work.md)** by Cal Newport: 🎯 Argues for focused work, which requires the cognitive restoration provided by adequate sleep.  
   
-## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
+## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Why We Sleep: Unlocking the Power of Sleep and Dreams. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

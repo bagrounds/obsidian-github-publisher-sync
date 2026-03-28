@@ -47,8 +47,8 @@ A: 🤓 Yes. It's more philosophical fiction than hard sci-fi, focusing on human
   
 ### 📖 Non-Fiction  
   
-* [📺 Amusing Ourselves to Death](./amusing-ourselves-to-death-public-discourse-in-the-age-of-show-business.md) by Neil Postman  
-* [👁️ The Age of Surveillance Capitalism](./the-age-of-surveillance-capitalism.md) by Shoshana Zuboff  
+* [📺 Amusing Ourselves to Death](books/amusing-ourselves-to-death-public-discourse-in-the-age-of-show-business.md) by Neil Postman  
+* [👁️ The Age of Surveillance Capitalism](books/the-age-of-surveillance-capitalism.md) by Shoshana Zuboff  
   
 ### ❤️ If You Loved This  
   

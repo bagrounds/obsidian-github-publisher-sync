@@ -7,7 +7,7 @@ share: true
 CTA: 🏡 Build thoughtfully.
 affiliate link: https://amzn.to/43iEkWk
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🏘️🧱🏗️ A Pattern Language: Towns, Buildings, Construction  
 [🛒 A Pattern Language: Towns, Buildings, Construction. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/43iEkWk)  
   

@@ -10,7 +10,7 @@ Channel: Doctors of Running
 tags:
 youtube: https://youtu.be/RYiOKxXOVWM
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md)  
 # 👴🏃‍♀️📈 How Does Aging Impact Runners? Our Tips for Long-Term Success (from Working with Masters Runners)  
 ![How Does Aging Impact Runners? Our Tips for Long-Term Success (from Working with Masters Runners)](https://youtu.be/RYiOKxXOVWM)  
   
@@ -42,6 +42,6 @@ youtube: https://youtu.be/RYiOKxXOVWM
   
 ## 📚 Book Recommendations  
 * 🏃 Daniels' Running Formula by Jack Daniels: Offers 📖 a scientific, color-coded training system that helps runners of all ages **structure their effort and pace** to maximize adaptation, supporting the "train smarter" concept.  
-* [⏳🔬🎨 Outlive: The Science and Art of Longevity](../books/outlive.md) by Peter Attia: Provides 🩺 a physician's deep dive into healthspan, heavily advocating for **strength training as a non-negotiable** foundational element of longevity, echoing the video's strongest recommendation.  
+* [⏳🔬🎨 Outlive: The Science and Art of Longevity](/content/books/outlive.md) by Peter Attia: Provides 🩺 a physician's deep dive into healthspan, heavily advocating for **strength training as a non-negotiable** foundational element of longevity, echoing the video's strongest recommendation.  
 * 🧘 The Triathlete's Training Bible by Joe Friel: Presents 📅 a highly detailed periodization model that forces athletes to think in structured cycles (seasons), which is crucial for **load management and preventing burnout** in busy, aging athletes.  
-* [🏃‍♂️⛰️ Born to Run: A Hidden Tribe, Superathletes, and the Greatest Race the World Has Never Seen](../books/born-to-run-a-hidden-tribe-superathletes-and-the-greatest-race-the-world-has-never-seen.md) by Christopher McDougall: A creatively related choice that shifts the focus from technical training to the **joy and fundamental human connection** to running, reinforcing the speakers' closing message to "Find what you enjoy" for lifelong participation.
+* [🏃‍♂️⛰️ Born to Run: A Hidden Tribe, Superathletes, and the Greatest Race the World Has Never Seen](/content/books/born-to-run-a-hidden-tribe-superathletes-and-the-greatest-race-the-world-has-never-seen.md) by Christopher McDougall: A creatively related choice that shifts the focus from technical training to the **joy and fundamental human connection** to running, reinforcing the speakers' closing message to "Find what you enjoy" for lifelong participation.

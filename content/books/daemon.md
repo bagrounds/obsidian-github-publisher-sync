@@ -42,7 +42,7 @@ affiliate link: https://amzn.to/3HnI5lj
   
 ### Recommendations 📚  
 #### Non-Fiction 📖  
-* "[The Age of Surveillance Capitalism](./the-age-of-surveillance-capitalism.md)" by Shoshana Zuboff: For a deep dive into the real-world implications of data collection and algorithmic control, which echoes the themes of "Daemon." 🕵️‍♀️ (Rationale: Provides a non-fiction look at the real world systems that are similar to the ones in the novel.)  
+* "[The Age of Surveillance Capitalism](books/the-age-of-surveillance-capitalism.md)" by Shoshana Zuboff: For a deep dive into the real-world implications of data collection and algorithmic control, which echoes the themes of "Daemon." 🕵️‍♀️ (Rationale: Provides a non-fiction look at the real world systems that are similar to the ones in the novel.)  
 * "Future Crimes" by Marc Goodman: If you want to learn more about the real world cyber security that is relevant to the book. 🛡️ (Rationale: Provides a real world look into the potential cyber threats that are presented in the book.)  
   
 #### If You Loved This ❤️  

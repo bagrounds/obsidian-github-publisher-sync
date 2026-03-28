@@ -628,8 +628,7 @@ processNoteGroup manager env apiKey vaultDir (platforms, note, pathFromRoot) = d
   case embedSections of
     [] -> putStrLn "  ⚠️  No successful posts"
     _  -> do
-      Sync.appendEmbedsToObsidianNote
-        (cnFilePath note) embedSections (toSyncCreds env)
+      Sync.writeEmbedsToNote (cnFilePath note) embedSections
       putStrLn $ "  ✅ " <> show (length successes) <> " embeds written"
 
 postForPlatform :: Manager -> EnvironmentConfig -> Text -> ContentNote -> Platform
@@ -660,27 +659,14 @@ eitherToMaybe :: Either a b -> Maybe b
 eitherToMaybe (Right b) = Just b
 eitherToMaybe (Left _)  = Nothing
 
-toSyncCreds :: EnvironmentConfig -> Sync.ObsidianCredentials
-toSyncCreds env =
-  let oc = ecObsidian env
-  in Sync.ObsidianCredentials
-    { Sync.ocAuthToken = ocAuthToken oc
-    , Sync.ocVaultName = ocVaultName oc
-    , Sync.ocVaultPassword = ocVaultPassword oc
-    }
-
 --------------------------------------------------------------------------------
 -- Main orchestrator
 --------------------------------------------------------------------------------
 
-autoPost :: Manager -> IO ()
-autoPost manager = do
+autoPost :: Manager -> FilePath -> IO ()
+autoPost manager vaultDir = do
   env <- validateEnvironment
   let apiKey = gcApiKey (ecGemini env)
-      creds = toSyncCreds env
-
-  putStrLn "  🔄 Pulling vault..."
-  vaultDir <- Sync.syncObsidianVault creds Nothing
 
   runPostingPipeline manager env apiKey vaultDir
 
@@ -689,6 +675,4 @@ autoPost manager = do
   let todayStr = T.pack $ formatTime defaultTimeLocale "%Y-%m-%d" now
   _ <- addUpdateLinksToReflection reflectionsDir todayStr
          [ UpdateLink "social-posting" "Social posts published" ]
-
-  Sync.pushObsidianVault vaultDir (Sync.ocAuthToken creds)
-  putStrLn "  📤 Vault pushed"
+  pure ()

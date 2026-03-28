@@ -148,9 +148,6 @@ getObsidianCreds = do
     , ocVaultPassword = vaultPassword
     }
 
-getVaultCacheDir :: IO (Maybe FilePath)
-getVaultCacheDir = lookupEnv "OBSIDIAN_VAULT_CACHE_DIR"
-
 buildEnvMap :: [String] -> IO (Map Text Text)
 buildEnvMap keys = Map.fromList <$> mapM lookupOne keys
   where
@@ -337,8 +334,8 @@ yesterdayPacific = do
 -- Task runners
 -- ---------------------------------------------------------------------------
 
-runBlogSeries :: Manager -> FilePath -> Text -> IO ()
-runBlogSeries manager repoRoot seriesId = do
+runBlogSeries :: Manager -> FilePath -> FilePath -> Text -> IO ()
+runBlogSeries manager repoRoot vaultDir seriesId = do
   let taskName = "blog-series:" <> seriesId
   logMsg $ "▶️  " <> taskName
 
@@ -347,13 +344,10 @@ runBlogSeries manager repoRoot seriesId = do
     Just rc -> pure rc
     Nothing -> error $ "No run config for series: " <> T.unpack seriesId
 
-  creds <- getObsidianCreds
   apiKey <- requireEnv "GEMINI_API_KEY"
   today <- todayPacific
 
-  -- 1. Pull vault posts for this series
-  cacheDir <- getVaultCacheDir
-  vaultDir <- syncObsidianVault creds cacheDir
+  -- 1. Copy vault posts for this series to local repo
   _ <- copySeriesPosts vaultDir seriesId repoRoot
 
   -- 2. Check regeneration or already exists
@@ -447,43 +441,34 @@ runBlogSeries manager repoRoot seriesId = do
                     Nothing -> Nothing
               _ <- updateDailyReflection vaultDir today series filenameNoExt title regenFilenameNoExt
 
-              -- 7. Sync to vault
-              syncVaultDir <- syncObsidianVault creds cacheDir
+              -- Sync generated files to vault directory
               let postRelPath = T.unpack seriesId </> T.unpack filename
                   postLocalPath = repoRoot </> postRelPath
-              changed1 <- syncFileToVault postLocalPath postRelPath syncVaultDir
+              _ <- syncFileToVault postLocalPath postRelPath vaultDir
 
               -- Sync previous post if updated
               prevPostFilename <- readPreviousPostFilename metadataPath
-              changed2 <- case prevPostFilename of
+              case prevPostFilename of
                 Just pf -> do
                   let prevRelPath = T.unpack seriesId </> T.unpack pf
-                  syncFileToVault (repoRoot </> prevRelPath) prevRelPath syncVaultDir
-                Nothing -> pure False
+                  _ <- syncFileToVault (repoRoot </> prevRelPath) prevRelPath vaultDir
+                  pure ()
+                Nothing -> pure ()
 
               -- Sync AGENTS.md
               let agentsRelPath = T.unpack seriesId </> "AGENTS.md"
-              changed3 <- syncFileToVault (repoRoot </> agentsRelPath) agentsRelPath syncVaultDir
-
-              let anyChanged = changed1 || changed2 || changed3
-              case anyChanged of
-                True -> do
-                  pushObsidianVault syncVaultDir (ocAuthToken creds)
-                  logMsg "  📤 Vault pushed"
-                False -> pure ()
+              _ <- syncFileToVault (repoRoot </> agentsRelPath) agentsRelPath vaultDir
+              pure ()
 
   logMsg $ "✅ " <> taskName
 
-runBackfillImages :: Manager -> FilePath -> IO ()
-runBackfillImages manager repoRoot = do
+runBackfillImages :: Manager -> FilePath -> FilePath -> IO ()
+runBackfillImages manager repoRoot vaultDir = do
   logMsg "▶️  backfill-blog-images"
 
-  creds <- getObsidianCreds
-  cacheDir <- getVaultCacheDir
   today <- todayPacific
 
-  -- 1. Pull vault posts
-  vaultDir <- syncObsidianVault creds cacheDir
+  -- 1. Copy vault posts to local repo
   mapM_ (\sid -> copySeriesPosts vaultDir sid repoRoot) backfillContentIds
 
   -- 2. Image backfill
@@ -548,20 +533,11 @@ runBackfillImages manager repoRoot = do
     addUpdateLinksToReflection reflectionsDir date [UpdateLink relPath title]
     ) aiBlogLinks
 
-  -- 8. Push vault
-  pushObsidianVault vaultDir (ocAuthToken creds)
-  logMsg "  📤 Vault pushed"
-
   logMsg "✅ backfill-blog-images"
 
-runInternalLinking :: Manager -> IO ()
-runInternalLinking manager = do
+runInternalLinking :: Manager -> FilePath -> IO ()
+runInternalLinking manager vaultDir = do
   logMsg "▶️  internal-linking"
-
-  creds <- getObsidianCreds
-  cacheDir <- getVaultCacheDir
-
-  vaultDir <- syncObsidianVault creds cacheDir
 
   envModel <- lookupEnvText "INTERNAL_LINKING_MODEL"
   let model = fromMaybe IL.defaultLinkingModel envModel
@@ -571,26 +547,21 @@ runInternalLinking manager = do
         <> T.pack (show (IL.lrFilesModified result)) <> " modified, "
         <> T.pack (show (IL.lrTotalLinksAdded result)) <> " links added"
 
-  pushObsidianVault vaultDir (ocAuthToken creds)
-  logMsg "  📤 Vault pushed"
   logMsg "✅ internal-linking"
 
-runSocialPosting :: Manager -> IO ()
-runSocialPosting manager = do
+runSocialPosting :: Manager -> FilePath -> IO ()
+runSocialPosting manager vaultDir = do
   logMsg "▶️  social-posting"
-  autoPost manager
+  autoPost manager vaultDir
   logMsg "✅ social-posting"
 
-runAiFiction :: Manager -> IO ()
-runAiFiction manager = do
+runAiFiction :: Manager -> FilePath -> IO ()
+runAiFiction manager vaultDir = do
   logMsg "▶️  ai-fiction"
 
-  creds <- getObsidianCreds
   apiKey <- requireEnv "GEMINI_API_KEY"
   today <- todayPacific
 
-  cacheDir <- getVaultCacheDir
-  vaultDir <- syncObsidianVault creds cacheDir
   let reflectionsDir = vaultDir </> "reflections"
       reflectionPath = reflectionsDir </> T.unpack today <> ".md"
 
@@ -627,35 +598,31 @@ runAiFiction manager = do
           TIO.writeFile reflectionPath (frUpdatedContent result)
           logMsg $ "  ✏️  Updated " <> today <> ".md with AI fiction"
 
-          pushObsidianVault vaultDir (ocAuthToken creds)
           logMsg "✅ ai-fiction"
 
-runReflectionTitle :: Manager -> IO ()
-runReflectionTitle manager = do
+runReflectionTitle :: Manager -> FilePath -> IO ()
+runReflectionTitle manager vaultDir = do
   logMsg "▶️  reflection-title"
 
-  creds <- getObsidianCreds
   apiKey <- requireEnv "GEMINI_API_KEY"
   today <- todayPacific
   yesterday <- yesterdayPacific
 
-  cacheDir <- getVaultCacheDir
-  vaultDir <- syncObsidianVault creds cacheDir
   let reflectionsDir = vaultDir </> "reflections"
 
   -- Try today first, then yesterday
-  todayDone <- tryTitleForDate manager apiKey creds vaultDir reflectionsDir today
+  todayDone <- tryTitleForDate manager apiKey vaultDir reflectionsDir today
   case todayDone of
     True -> pure ()
     False -> do
       logMsg $ "  📅 Checking yesterday (" <> yesterday <> ")..."
-      _ <- tryTitleForDate manager apiKey creds vaultDir reflectionsDir yesterday
+      _ <- tryTitleForDate manager apiKey vaultDir reflectionsDir yesterday
       pure ()
 
   logMsg "✅ reflection-title"
 
-tryTitleForDate :: Manager -> Text -> ObsidianCredentials -> FilePath -> FilePath -> Text -> IO Bool
-tryTitleForDate manager apiKey creds vaultDir reflectionsDir date = do
+tryTitleForDate :: Manager -> Text -> FilePath -> FilePath -> Text -> IO Bool
+tryTitleForDate manager apiKey _vaultDir reflectionsDir date = do
   let reflectionPath = reflectionsDir </> T.unpack date <> ".md"
 
   exists <- doesFileExist reflectionPath
@@ -694,24 +661,23 @@ tryTitleForDate manager apiKey creds vaultDir reflectionsDir date = do
           logMsg $ "  🏷️  Generated title: " <> rtrFullTitle result <> " [" <> rtrModel result <> "]"
 
           TIO.writeFile reflectionPath (rtrUpdatedContent result)
-          pushObsidianVault vaultDir (ocAuthToken creds)
-          logMsg "  📤 Vault pushed"
+          logMsg $ "  🏷️  Title written for " <> date
           pure True
 
 -- ---------------------------------------------------------------------------
 -- Task dispatch
 -- ---------------------------------------------------------------------------
 
-taskRunners :: Manager -> FilePath -> Map TaskId (IO ())
-taskRunners manager repoRoot = Map.fromList
-  [ (BlogSeriesChickieLoo, runBlogSeries manager repoRoot "chickie-loo")
-  , (BlogSeriesAutoBlogZero, runBlogSeries manager repoRoot "auto-blog-zero")
-  , (BlogSeriesSystemsForPublicGood, runBlogSeries manager repoRoot "systems-for-public-good")
-  , (BackfillBlogImages, runBackfillImages manager repoRoot)
-  , (InternalLinking, runInternalLinking manager)
-  , (SocialPosting, runSocialPosting manager)
-  , (AiFiction, runAiFiction manager)
-  , (ReflectionTitle, runReflectionTitle manager)
+taskRunners :: Manager -> FilePath -> FilePath -> Map TaskId (IO ())
+taskRunners manager repoRoot vaultDir = Map.fromList
+  [ (BlogSeriesChickieLoo, runBlogSeries manager repoRoot vaultDir "chickie-loo")
+  , (BlogSeriesAutoBlogZero, runBlogSeries manager repoRoot vaultDir "auto-blog-zero")
+  , (BlogSeriesSystemsForPublicGood, runBlogSeries manager repoRoot vaultDir "systems-for-public-good")
+  , (BackfillBlogImages, runBackfillImages manager repoRoot vaultDir)
+  , (InternalLinking, runInternalLinking manager vaultDir)
+  , (SocialPosting, runSocialPosting manager vaultDir)
+  , (AiFiction, runAiFiction manager vaultDir)
+  , (ReflectionTitle, runReflectionTitle manager vaultDir)
   ]
 
 -- ---------------------------------------------------------------------------
@@ -778,8 +744,20 @@ main = do
       logMsg "  ⏭️  No tasks scheduled for this hour"
       pure ()
     _ -> do
-      let runners = taskRunners manager repoRoot
+      -- Pull vault ONCE at the start
+      creds <- getObsidianCreds
+      logMsg "📥 Pulling Obsidian vault..."
+      vaultDir <- syncObsidianVault creds
+      logMsg $ "📂 Vault ready at " <> T.pack vaultDir
+
+      let runners = taskRunners manager repoRoot vaultDir
       results <- runTasks runners tasks []
+
+      -- Push vault ONCE at the end
+      logMsg "📤 Pushing Obsidian vault..."
+      pushObsidianVault vaultDir (ocAuthToken creds)
+      logMsg "📤 Vault pushed"
+
       let succeeded = length (filter (\(_, s, _) -> s) results)
           total = length results
 

@@ -2,7 +2,7 @@
  * Obsidian Headless Sync integration.
  *
  * Manages the pull/push cycle with the Obsidian vault via the `ob` CLI.
- * Handles lock contention, process cleanup, and warm cache optimization.
+ * Handles lock contention and process cleanup.
  *
  * @module obsidian-sync
  */
@@ -208,67 +208,29 @@ export async function runObSyncWithRetry(
 /**
  * Sync an Obsidian vault to a local directory using Headless Sync.
  *
- * Supports warm cache fast path: skips sync-setup when the vault
- * is already configured from a previous run, avoiding lock contention.
+ * Always performs a clean sync-setup + sync to ensure a pristine
+ * vault state, preventing data loss from stale bidirectional sync.
  */
 export async function syncObsidianVault(credentials: {
   authToken: string;
   vaultName: string;
   vaultPassword?: string;
 }): Promise<string> {
-  const cacheDir = process.env.OBSIDIAN_VAULT_CACHE_DIR;
-  const vaultDir = cacheDir || path.join(
+  const vaultDir = path.join(
     process.env.RUNNER_TEMP || "/tmp",
-    `obsidian-vault-${process.pid}-${Date.now()}`,
+    `obsidian-vault-${process.pid}`,
   );
 
-  const isWarmCache = cacheDir && fs.existsSync(path.join(vaultDir, ".obsidian"));
-  fs.mkdirSync(vaultDir, { recursive: true });
-
-  if (isWarmCache) {
-    console.log(`♻️  Re-using cached vault at ${vaultDir} (incremental sync)`);
-  }
-
-  const env: Record<string, string> = {
-    OBSIDIAN_AUTH_TOKEN: credentials.authToken,
-  };
-
-  await ensureSyncClean(vaultDir);
-
-  // Warm cache fast path: try ob sync directly without sync-setup
-  if (isWarmCache) {
-    console.log(`📥 Pulling latest vault content (warm cache fast path)...`);
-    try {
-      await runObSyncWithRetry(["sync", "--path", vaultDir], { env }, vaultDir);
-      const fileCount = countVaultFiles(vaultDir);
-      console.log(`📊 Vault file count after pull: ${fileCount}`);
-      fs.writeFileSync(vaultFileCountPath(vaultDir), String(fileCount), "utf-8");
-      return vaultDir;
-    } catch (error) {
-      const msg = error instanceof Error ? error.message : String(error);
-      if (msg.includes("No sync configuration") || msg.includes("Encryption key not found") || msg.includes("Run") && msg.includes("sync-setup")) {
-        console.log(`⚠️  Warm cache missing config, falling back to sync-setup...`);
-        await ensureSyncClean(vaultDir);
-      } else {
-        throw error;
-      }
-    }
-  }
-
-  // Cold cache / fallback: full sync-setup + sync
-  // SAFETY: Clear the entire vault directory before re-running sync-setup
-  // to prevent bidirectional sync from treating the partial cache as the
-  // authoritative state and propagating mass deletions to the remote vault.
-  if (fs.existsSync(vaultDir)) {
-    console.log(`🧹 Clearing vault directory for clean sync-setup (data loss prevention)...`);
-    fs.rmSync(vaultDir, { recursive: true, force: true });
-  }
   fs.mkdirSync(vaultDir, { recursive: true });
 
   const setupArgs = ["sync-setup", "--vault", credentials.vaultName, "--path", vaultDir];
   if (credentials.vaultPassword) {
     setupArgs.push("--password", credentials.vaultPassword);
   }
+
+  const env: Record<string, string> = {
+    OBSIDIAN_AUTH_TOKEN: credentials.authToken,
+  };
 
   console.log(`🔧 Setting up Obsidian Sync for vault: ${credentials.vaultName}`);
   await runObCommand(setupArgs, { env });

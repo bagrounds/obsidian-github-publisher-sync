@@ -6,7 +6,7 @@ URL: https://bagrounds.org/books/harbingers-what-january-6-and-charlottesville-r
 share: true
 affiliate link: https://amzn.to/3SRdP4Q
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🇺🇸⚠️ Harbingers: What January 6 and Charlottesville Reveal About Rising Threats to American Democracy  
 [🛒 Harbingers: What January 6 and Charlottesville Reveal About Rising Threats to American Democracy. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3SRdP4Q)  
   
@@ -37,7 +37,7 @@ Heaphy structures the narrative by taking readers through the investigative proc
   
 ### 📖 Similar Books (Focus on Threats to Democracy and Political Violence)  
   
-* **[🗳️🏛️☠️ How Democracies Die](./how-democracies-die.md)** by Steven Levitsky and Daniel Ziblatt: Examines how democracies can erode from within through the subtle weakening of norms and institutions.  
+* **[🗳️🏛️☠️ How Democracies Die](/content/books/how-democracies-die.md)** by Steven Levitsky and Daniel Ziblatt: Examines how democracies can erode from within through the subtle weakening of norms and institutions.  
 * 🇺🇸 **Four Threats: The Recurring Crises of American Democracy** by Suzanne Mettler and Robert C. Lieberman: Explores historical instances of threats to American democracy, including polarization, racism, inequality, and executive power, arguing that their confluence today poses a significant danger.  
 * 🚫 **Attack from Within: How Disinformation is Sabotaging America** by Barbara McQuade: Discusses the impact of disinformation on American democracy and how to combat it, a theme also present in *Harbingers*.  
 * 🗳️ **The Steal: The Attempt to Overturn the 2020 Election and the People Who Stopped It** by Mark Bowden and Matthew Teague: Documents the efforts to challenge the 2020 election results, providing context for the events of January 6th.  
@@ -55,5 +55,5 @@ Heaphy structures the narrative by taking readers through the investigative proc
 * 🗺️ **Secret Charlottesville: A Guide to the Weird, Wonderful, and Obscure** by Marijean Oldham: While not directly about the political violence, this book offers a look into the city of Charlottesville itself, providing a sense of the place that was the site of the 2017 rally.  
 * 📜 **Books on the history of Charlottesville & Albemarle:** Exploring the deeper history of Charlottesville and the surrounding area can provide valuable context for understanding the roots of some of the issues that surfaced in 2017.  
   
-## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
+## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Harbingers: What January 6 and Charlottesville Reveal About Rising Threats to American Democracy. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

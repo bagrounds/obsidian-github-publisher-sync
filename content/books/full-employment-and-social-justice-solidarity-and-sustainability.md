@@ -7,7 +7,7 @@ share: true
 affiliate link: https://amzn.to/4hMqzW9
 CTA: 🤝 Build a fair future.
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🧑‍🤝‍🧑✅🌍 Full Employment and Social Justice: Solidarity and Sustainability  
 [🛒 Full Employment and Social Justice: Solidarity and Sustainability. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4hMqzW9)  
   
@@ -72,17 +72,17 @@ CTA: 🤝 Build a fair future.
 ## 📚 Book Recommendations  
   
 ### Similar  
-* [🧑‍💼🏦💸 The General Theory of Employment, Interest, and Money](./the-general-theory-of-employment-interest-and-money.md) by John Maynard Keynes (Foundational text on demand-side economics and government intervention for employment).  
-* [🏛️🔄✊🌍 Reclaiming the State: A Progressive Vision of Sovereignty for a Post-Neoliberal World](./reclaiming-the-state.md) by William Mitchell and Thomas Fazi (Explores how the state can be a vehicle for progressive economic change).  
+* [🧑‍💼🏦💸 The General Theory of Employment, Interest, and Money](/content/books/the-general-theory-of-employment-interest-and-money.md) by John Maynard Keynes (Foundational text on demand-side economics and government intervention for employment).  
+* [🏛️🔄✊🌍 Reclaiming the State: A Progressive Vision of Sovereignty for a Post-Neoliberal World](/content/books/reclaiming-the-state.md) by William Mitchell and Thomas Fazi (Explores how the state can be a vehicle for progressive economic change).  
 * 🌍 Employment Guarantee Schemes: Job Creation and Policy in Developing Countries and Emerging Markets edited by Mathew Forstater and Michael J. Murray (Further explores the practicalities of employment guarantee programs).  
   
 ### Contrasting  
 * 💰 Capitalism and Freedom by Milton Friedman (Advocates for free markets and limited government intervention, offering a contrasting view on economic policy and employment).  
 * 👤 Hayek on Liberty by F. A. Hayek (A collection of works emphasizing individual liberty, spontaneous order, and critiques of central planning and intervention).  
-* [💩💼 Bullshit Jobs: A Theory](./bullshit-jobs-a-theory.md) by David Graeber (Examines the proliferation of meaningless jobs, offering a different lens on the nature and quality of employment in modern economies).  
+* [💩💼 Bullshit Jobs: A Theory](/content/books/bullshit-jobs-a-theory.md) by David Graeber (Examines the proliferation of meaningless jobs, offering a different lens on the nature and quality of employment in modern economies).  
   
 ### Related  
-* [🏛️💰 Debt: The First 5,000 Years](./debt-the-first-5000-years.md) by David Graeber (Explores the historical and anthropological context of debt and economic systems).  
+* [🏛️💰 Debt: The First 5,000 Years](/content/books/debt-the-first-5000-years.md) by David Graeber (Explores the historical and anthropological context of debt and economic systems).  
 * 🤝 Work and Social Justice: Rethinking Labour in Society and the Economy by Flora Gill (Examines workplace challenges and advocates for greater economic social justice and equality at work).  
 * 🛡️ The Economics of Unemployment Insurance by Paul H. Douglas (Analyzes the role of unemployment insurance in a high-employment economy, relevant for broader employment policy understanding).  
   

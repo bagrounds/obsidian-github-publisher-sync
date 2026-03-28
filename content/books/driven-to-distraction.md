@@ -8,7 +8,7 @@ Author:
 tags:
 affiliate link: https://amzn.to/3HoR4mj
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🏎️🦋🐿️✨ Driven to Distraction: Recognizing and Coping with Attention Deficit Disorder from Childhood Through Adulthood  
 [🛒 Driven to Distraction: Recognizing and Coping with Attention Deficit Disorder from Childhood Through Adulthood. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3HoR4mj)  
   
@@ -53,12 +53,12 @@ affiliate link: https://amzn.to/3HoR4mj
   
 ### Additional Book Recommendations 📚  
 * **Best alternate book on the same topic:** "Scattered Minds: The Origins and Healing of Attention Deficit Disorder" by Gabor Maté. This book focuses on the emotional and developmental roots of ADHD. 🧠  
-* **Best book that is tangentially related:** "[The Power of Habit](./the-power-of-habit.md): Why We Do What We Do in Life and Business" by Charles Duhigg. This book explores how habits are formed and how to change them, which is highly relevant for managing ADHD. 🔄  
-* **Best book that is diametrically opposed:** [🧠🗂️ The Organized Mind: Thinking Straight in the Age of Information Overload](./the-organized-mind-thinking-straight-in-the-age-of-information-overload.md) by Daniel J. Levitin. This book focuses on the importance of organization and focus in a world of distractions, a stark contrast to the ADHD experience. 🗂️  
+* **Best book that is tangentially related:** "[The Power of Habit](/content/books/the-power-of-habit.md): Why We Do What We Do in Life and Business" by Charles Duhigg. This book explores how habits are formed and how to change them, which is highly relevant for managing ADHD. 🔄  
+* **Best book that is diametrically opposed:** [🧠🗂️ The Organized Mind: Thinking Straight in the Age of Information Overload](/content/books/the-organized-mind-thinking-straight-in-the-age-of-information-overload.md) by Daniel J. Levitin. This book focuses on the importance of organization and focus in a world of distractions, a stark contrast to the ADHD experience. 🗂️  
 * **Best fiction book that incorporates related ideas:** "Percy Jackson & the Olympians" series by Rick Riordan. The main character, Percy, has ADHD and dyslexia, which are framed as signs of being a demigod. ⚡  
-* **Best book that is more general:** "[Thinking, Fast and Slow](./thinking-fast-and-slow.md)" by Daniel Kahneman. This book explores the two systems of thinking and decision-making, providing a broader understanding of cognitive processes. 🤔  
+* **Best book that is more general:** "[Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md)" by Daniel Kahneman. This book explores the two systems of thinking and decision-making, providing a broader understanding of cognitive processes. 🤔  
 * **Best book that is more specific:** "Delivered from Distraction: Getting the Most out of Life with Attention Deficit Disorder" by Edward M. Hallowell and John J. Ratey. This book is the follow up to "Driven to Distraction," which provides more updated research, and more specific tools. 🛠️  
-* **Best book that is more rigorous:** "[Taking Charge of Adult ADHD](./taking-charge-of-adult-adhd.md)" by Russell A. Barkley. This book is more scientific and provides more in-depth research on ADHD. 📊  
+* **Best book that is more rigorous:** "[Taking Charge of Adult ADHD](/content/books/taking-charge-of-adult-adhd.md)" by Russell A. Barkley. This book is more scientific and provides more in-depth research on ADHD. 📊  
 * **Best book that is more accessible:** "ADHD 2.0: New Science and Essential Strategies for Thriving with Distraction--from Childhood Through Adulthood" by Edward M. Hallowell and John J. Ratey. This is a very recent book which is written in a very accessible way, and is very up to date. 🆕  
   
 ## 💬 [Gemini](https://gemini.google.com) Prompt  

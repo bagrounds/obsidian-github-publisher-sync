@@ -7,7 +7,7 @@ share: true
 affiliate link: https://amzn.to/4nzpWAQ
 CTA: 🇺🇸 Reclaim our heritage.
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🇺🇸🧠 American Amnesia: How the War on Government Led Us to Forget What Made America Prosper  
 [🛒 American Amnesia: How the War on Government Led Us to Forget What Made America Prosper. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4nzpWAQ)  
   
@@ -46,7 +46,7 @@ CTA: 🇺🇸 Reclaim our heritage.
 ### 💡 Creatively Related Books  
   
 * 📖 **The Man Who Mistook His Wife for a Hat** by Oliver Sacks. 🧠 This collection of neurological case studies explores literal forms of amnesia and other memory disorders. 🤕 It offers a creative parallel to American Amnesia by illustrating the profound disorientation and functional challenges that arise from a loss of memory, metaphorically reflecting a society that has forgotten its foundational principles and historical drivers of success.  
-* **[👁️ 1984](./1984.md)** by George Orwell. 👁️ This classic dystopian novel depicts a totalitarian government that systematically alters historical records and manipulates collective memory ("memory holes") to maintain absolute power. 📜 It serves as a fictional exploration of the dangers of state-sanctioned historical revisionism, echoing the "forced forgetting" campaign against the mixed economy described in American Amnesia.  
+* **[👁️ 1984](/content/books/1984.md)** by George Orwell. 👁️ This classic dystopian novel depicts a totalitarian government that systematically alters historical records and manipulates collective memory ("memory holes") to maintain absolute power. 📜 It serves as a fictional exploration of the dangers of state-sanctioned historical revisionism, echoing the "forced forgetting" campaign against the mixed economy described in American Amnesia.  
 * 📖 **Before I Go to Sleep** by S.J. Watson. 😴 This psychological thriller centers on a protagonist who suffers from a rare form of amnesia, causing her memory to be reset each time she sleeps. ❓ The narrative explores the profound sense of vulnerability and the struggle to establish truth when one's own memories are unreliable, drawing a metaphorical connection to a nation that has lost its collective memory of its past economic and governmental achievements.  
   
 ## 💬 [Gemini](https://gemini.google.com) Prompt (gemini-2.5-flash)  

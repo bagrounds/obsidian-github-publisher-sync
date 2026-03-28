@@ -9,7 +9,7 @@ tags:
 affiliate link: https://amzn.to/3Hlupax
 CTA: 🤝 Cultivate civic duty.
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 📜🤝 The Bill of Obligations: The Ten Habits of Good Citizens  
 [🛒 The Bill of Obligations: The Ten Habits of Good Citizens. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3Hlupax)  
   
@@ -62,7 +62,7 @@ Haass outlines ten habits crucial for good citizenship:
 ## 📚 Book Recommendations  
 ### 🤝 Similar Books (Civic Duty, Citizenship, Democracy Health)  
   
-* **🎳 Robert D. Putnam - *[Bowling Alone](./bowling-alone.md): The Collapse and Revival of American Community***: Explores the decline of social capital and civic engagement in America over recent decades.  
+* **🎳 Robert D. Putnam - *[Bowling Alone](/content/books/bowling-alone.md): The Collapse and Revival of American Community***: Explores the decline of social capital and civic engagement in America over recent decades.  
 * **🌍 Robert B. Reich - *The Common Good***: Argues for rebuilding a sense of shared purpose and morality in American public life.  
 * **🇺🇸 Yuval Levin - *The Fractured Republic: Renewing America's Social Contract in the Age of Individualism***: Examines nostalgia across the political spectrum and calls for strengthening mediating institutions to address modern challenges.  
 * **👨‍🏫 Norman H. Nie, Jane Junn, Kenneth Stehlik-Barry - *Education and Democratic Citizenship in America***: Analyzes the crucial link between education levels and active, informed, and tolerant citizenship.  
@@ -73,7 +73,7 @@ Haass outlines ten habits crucial for good citizenship:
 * **♀️ Carole Pateman - *The Sexual Contract***: A feminist critique arguing that the traditional social contract implicitly established patriarchal power.  
 * **✊🏿 Charles W. Mills - *The Racial Contract***: Argues that the social contract has historically been a racial contract, excluding non-whites from full personhood and citizenship.  
 * **📜 Howard Zinn - *A People's History of the United States***: Presents American history from the perspective of marginalized groups, often highlighting struggles against established power rather than consensus.  
-* **🌍 David Graeber & David Wengrow - [🌅🧑‍🤝‍🧑 The Dawn of Everything: A New History of Humanity](./the-dawn-of-everything-a-new-history-of-humanity.md)**: Challenges traditional narratives of social evolution and suggests greater diversity and experimentation in historical forms of social organization, questioning linear paths to modern states.  
+* **🌍 David Graeber & David Wengrow - [🌅🧑‍🤝‍🧑 The Dawn of Everything: A New History of Humanity](/content/books/the-dawn-of-everything-a-new-history-of-humanity.md)**: Challenges traditional narratives of social evolution and suggests greater diversity and experimentation in historical forms of social organization, questioning linear paths to modern states.  
 * **🎭 Wendy Brown - *Undoing the Demos: Neoliberalism's Stealth Revolution***: Critiques how neoliberal rationality undermines democratic values and citizenship by prioritizing economic metrics.  
   
 ### 🎨 Creatively Related Books (Broader Themes, Philosophy, History)  
@@ -81,10 +81,10 @@ Haass outlines ten habits crucial for good citizenship:
 * **📜 Jean-Jacques Rousseau - *The Social Contract***: A foundational text in political philosophy exploring the basis of legitimate political authority grounded in the general will.  
 * **👑 Thomas Hobbes - *Leviathan***: Another classic of social contract theory, arguing for a strong sovereign to prevent a "war of all against all."  
 * **🔑 John Locke - *Two Treatises of Government***: Argues for natural rights and government by consent, profoundly influencing the American founders.  
-* **🇺🇸 Alexis de Tocqueville - [Democracy in America](./democracy-in-america.md)**: A classic 19th-century analysis of American democracy, society, and the habits of its citizens.  
+* **🇺🇸 Alexis de Tocqueville - [Democracy in America](/content/books/democracy-in-america.md)**: A classic 19th-century analysis of American democracy, society, and the habits of its citizens.  
 * **🗣️ Eddie S. Glaude Jr. - *Begin Again: James Baldwin's America and Its Urgent Lessons for Our Own***: Uses Baldwin's work to reflect on race, democracy, and the need to confront historical truths for national progress. (Glaude also praised Haass's book).  
-* **💡 Anne Applebaum - [🥀 Twilight of Democracy: 🐍 The Seductive Lure of Authoritarianism](./twilight-of-democracy.md)**: Explores why some elites in democratic societies are drawn to authoritarianism, touching on themes of polarization and the decline of liberal norms.  
+* **💡 Anne Applebaum - [🥀 Twilight of Democracy: 🐍 The Seductive Lure of Authoritarianism](/content/books/twilight-of-democracy.md)**: Explores why some elites in democratic societies are drawn to authoritarianism, touching on themes of polarization and the decline of liberal norms.  
   
-## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
+## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on The Bill of Obligations The Ten Habits of Good Citizens. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text..  
   

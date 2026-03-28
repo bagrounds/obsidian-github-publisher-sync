@@ -10,7 +10,7 @@ Channel: PBS NewsHour
 tags:
 youtube: https://youtu.be/_Mjd4Ol-KL0
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md)  
 # 👨‍👩‍👧‍👦🪙🤔⬇️ Trump family’s cryptocurrency ties raise concerns as administration loosens regulations  
 ![Trump family’s cryptocurrency ties raise concerns as administration loosens regulations](https://youtu.be/_Mjd4Ol-KL0)  
   
@@ -54,7 +54,7 @@ youtube: https://youtu.be/_Mjd4Ol-KL0
 ### ↔️ Similar  
 * 🚫 The Big Myth: How American Business Taught Us to Loathe Government and Love the Free Market  
     * 💡 This book investigates the historical and political movements that foster suspicion of government regulation, connecting directly to the video's theme of deregulation and conflicts of interest.  
-* [🗳️🏛️☠️ How Democracies Die](../books/how-democracies-die.md)  
+* [🗳️🏛️☠️ How Democracies Die](/content/books/how-democracies-die.md)  
     * 📚 Provides context on the institutional norms and political behaviors that signal democratic backsliding, relevant to the ethical concerns over campaign finance circumvention and executive power.  
   
 ### 🆚 Contrasting  

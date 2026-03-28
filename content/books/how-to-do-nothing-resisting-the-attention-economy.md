@@ -7,7 +7,7 @@ share: true
 affiliate link: https://amzn.to/3UbwpW0
 CTA: 🌳 Reclaim your awareness.
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 📵 How to Do Nothing: Resisting the Attention Economy  
 [🛒 How to Do Nothing: Resisting the Attention Economy. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3UbwpW0)  
   
@@ -44,14 +44,14 @@ In an age of 🌐 constant connectivity and 🤯 relentless demands for our atte
 #### ➕ **Similar Books**  
   
 * ⏳ Four Thousand Weeks by Oliver Burkeman: This book similarly challenges the productivity-obsessed culture and encourages readers to embrace their limitations and focus on what truly matters in their finite lives.  
-* **[📱🧠 The Shallows: What the Internet Is Doing to Our Brains](./the-shallows-what-the-internet-is-doing-to-our-brains.md)** by Nicholas Carr: Carr's work provides a scientific and historical context for Odell's arguments, exploring how the internet is reshaping our cognitive processes and making deep thinking more difficult.  
-* **[📺💀 Amusing Ourselves to Death: Public Discourse in the Age of Show Business](./amusing-ourselves-to-death-public-discourse-in-the-age-of-show-business.md)** by Neil Postman: A foundational text that critiques the trivialization of public life by entertainment-focused media, a precursor to many of the concerns Odell raises about the attention economy.  
+* **[📱🧠 The Shallows: What the Internet Is Doing to Our Brains](/content/books/the-shallows-what-the-internet-is-doing-to-our-brains.md)** by Nicholas Carr: Carr's work provides a scientific and historical context for Odell's arguments, exploring how the internet is reshaping our cognitive processes and making deep thinking more difficult.  
+* **[📺💀 Amusing Ourselves to Death: Public Discourse in the Age of Show Business](/content/books/amusing-ourselves-to-death-public-discourse-in-the-age-of-show-business.md)** by Neil Postman: A foundational text that critiques the trivialization of public life by entertainment-focused media, a precursor to many of the concerns Odell raises about the attention economy.  
   
 #### ➖ **Contrasting Books**  
   
-* **[🤿💼 Deep Work: Rules for Focused Success in a Distracted World](./deep-work.md)** by Cal Newport: While Odell advocates for a form of "doing nothing," Newport argues for the importance of deep, focused work to achieve professional success and personal fulfillment in a distracted world. 🧘 He offers strategies for cultivating intense concentration.  
+* **[🤿💼 Deep Work: Rules for Focused Success in a Distracted World](/content/books/deep-work.md)** by Cal Newport: While Odell advocates for a form of "doing nothing," Newport argues for the importance of deep, focused work to achieve professional success and personal fulfillment in a distracted world. 🧘 He offers strategies for cultivating intense concentration.  
 * 🧑‍💻 **The 4-Hour Workweek: Escape 9-5, Live Anywhere, and Join the New Rich** by Timothy Ferriss: This book represents the hyper-productive mindset that Odell critiques. 🤖 Ferriss focuses on outsourcing, automation, and efficiency to minimize work and maximize lifestyle design.  
-* **[➖💯 Essentialism: The Disciplined Pursuit of Less](./essentialism-the-disciplined-pursuit-of-less.md)** by Greg McKeown: While sharing some common ground with Odell in its call for intentionality, *Essentialism* is more focused on optimizing one's life for maximum impact and effectiveness, a concept Odell might argue still operates within the logic of productivity.  
+* **[➖💯 Essentialism: The Disciplined Pursuit of Less](/content/books/essentialism-the-disciplined-pursuit-of-less.md)** by Greg McKeown: While sharing some common ground with Odell in its call for intentionality, *Essentialism* is more focused on optimizing one's life for maximum impact and effectiveness, a concept Odell might argue still operates within the logic of productivity.  
   
 #### 🎨 **Creative Pairings**  
   
@@ -59,5 +59,5 @@ In an age of 🌐 constant connectivity and 🤯 relentless demands for our atte
 * 🚶‍♀️ **The Practice of Everyday Life** by Michel de Certeau: This theoretical work explores the ways in which people creatively and subversively navigate and reclaim the spaces and structures of their daily lives, offering a more academic parallel to Odell's call for resistance.  
 * 🏞️ **Pilgrim at Tinker Creek** by Annie Dillard: Dillard's Pulitzer Prize-winning narrative of her explorations in the natural world offers a beautiful and profound example of the kind of deep, attentive observation that Odell champions.  
   
-## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro)  
+## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-pro)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on How to Do Nothing: Resisting the Attention Economy. Never put book titles in quotes or italics. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

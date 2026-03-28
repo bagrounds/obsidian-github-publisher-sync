@@ -6,7 +6,7 @@ URL: https://bagrounds.org/books/the-most-dangerous-branch-inside-the-supreme-co
 share: true
 affiliate link: https://amzn.to/4kaYFSX
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # ⚠️🏛️👹🇺🇸 The Most Dangerous Branch: Inside the Supreme Court in the Age of Trump  
 [🛒 The Most Dangerous Branch: Inside the Supreme Court in the Age of Trump. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4kaYFSX)  
   
@@ -46,5 +46,5 @@ affiliate link: https://amzn.to/4kaYFSX
 * 📖 **Power, For Good and Ill: How the Supreme Court Shaped and Mis-Shaped American Life** by Frederick F. Schauer: Examines the broader impact of Supreme Court decisions on American society 🇺🇸 throughout history, providing context 🏛️ for the significance of the cases discussed by Kaplan.  
 * 📖 **The Soul of the First Amendment** by Floyd Abrams: Focuses on a specific area of law 📜 frequently addressed by the Supreme Court (the First Amendment), offering a deeper dive 🤿 into the complexities and impact of the Court's rulings in a particular domain, relevant given Kaplan's discussion of cases like *Citizens United*.  
   
-## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
+## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on The Most Dangerous Branch: Inside the Supreme Court in the Age of Trump. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

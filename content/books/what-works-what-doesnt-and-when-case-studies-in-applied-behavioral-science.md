@@ -7,7 +7,7 @@ share: true
 affiliate link: https://amzn.to/4lYJxJV
 CTA: 💡 Implement proven strategies.
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # ✅❌⏳ What Works, What Doesn't, and When: Case Studies in Applied Behavioral Science  
 [🛒 What Works, What Doesn't, and When: Case Studies in Applied Behavioral Science. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4lYJxJV)  
   
@@ -37,14 +37,14 @@ CTA: 💡 Implement proven strategies.
 ### ➕ Similar Sips: More on Applied Behavioral Science  
   
 * 📖 ***Nudge: The Final Edition*** by Richard H. Thaler and Cass R. Sunstein: The book that arguably launched the modern popularization of behavioral science in public policy. 🏛️ It provides the foundational concepts of "nudging" and choice architecture that are put to the test in *What Works, What Doesn't, and When*.  
-* **[🤔🐇🐢 Thinking, Fast and Slow](./thinking-fast-and-slow.md)** by Daniel Kahneman: A deep dive into the two systems of thinking that govern our minds, written by a Nobel laureate. 🤯 This book provides the psychological underpinning for many of the interventions discussed in the case studies.  
+* **[🤔🐇🐢 Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md)** by Daniel Kahneman: A deep dive into the two systems of thinking that govern our minds, written by a Nobel laureate. 🤯 This book provides the psychological underpinning for many of the interventions discussed in the case studies.  
 * 📊 ***Behavioral Insights*** by Michael Hallsworth and Elspeth Kirkman: A solid guide on the practical application of behavioral science to public policy, offering a structured approach to designing and implementing interventions.  
-* **[🔄🧠💪 The Power of Habit: Why We Do What We Do in Life and Business](./the-power-of-habit.md)** by Charles Duhigg: While focused on individual and organizational habits, this book's exploration of habit loops and keystone habits provides a valuable framework for understanding and changing behavior on a larger scale.  
+* **[🔄🧠💪 The Power of Habit: Why We Do What We Do in Life and Business](/content/books/the-power-of-habit.md)** by Charles Duhigg: While focused on individual and organizational habits, this book's exploration of habit loops and keystone habits provides a valuable framework for understanding and changing behavior on a larger scale.  
   
 ### ➖ Contrasting Views: A Critical Lens on Nudging  
   
 * 🧐 ***Simple Heuristics That Make Us Smart*** by Gerd Gigerenzer, Peter Todd, and the ABC Research Group: This book challenges the idea that human decision-making is inherently flawed, arguing that simple heuristics are often surprisingly effective in the real world.  
-* **[📊⛓️👑 📏 The Tyranny of Metrics](./the-tyranny-of-metrics.md)** by Jerry Z. Muller: A critical examination of the modern obsession with quantifiable performance indicators. 📈 This book offers a thought-provoking counterpoint to the data-driven approach of many behavioral interventions.  
+* **[📊⛓️👑 📏 The Tyranny of Metrics](/content/books/the-tyranny-of-metrics.md)** by Jerry Z. Muller: A critical examination of the modern obsession with quantifiable performance indicators. 📈 This book offers a thought-provoking counterpoint to the data-driven approach of many behavioral interventions.  
 * 🗽 ***Escaping Paternalism: Rationality, Behavioral Economics, and Public Policy*** by Mario J. Rizzo and Glen Whitman: This book presents a strong critique of the paternalistic arguments often used to justify nudging, raising important questions about individual autonomy and freedom of choice.  
 * 🤔 ***Why Nudge?: The Politics of Libertarian Paternalism*** by Cass R. Sunstein: In this book, one of the co-authors of *Nudge* addresses the ethical and political criticisms leveled against the concept, making a case for its use as a tool for improving welfare.  
   
@@ -55,5 +55,5 @@ CTA: 💡 Implement proven strategies.
 * 🧭 ***The Scout Mindset: Why Some People See Things Clearly and Others Don't*** by Julia Galef: This book champions the importance of intellectual curiosity, and the ability to see things as they are, not as we wish them to be. 👀 This "scout mindset" is essential for the honest and reflective approach to behavioral science advocated for in *What Works, What Doesn't, and When*.  
 * 😈 ***The Art of Insubordination: How to Dissent and Defy Effectively*** by Todd Kashdan: While seemingly counterintuitive, this book's exploration of principled rebellion and constructive dissent offers valuable insights into how to challenge the status quo and drive meaningful change, a theme that resonates with the innovative spirit of applied behavioral science.  
   
-## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro)  
+## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-pro)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on What Works, What Doesn't, and When: Case Studies in Applied Behavioral Science. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

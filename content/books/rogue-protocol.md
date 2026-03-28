@@ -8,7 +8,7 @@ Author:
 tags:
 affiliate link: https://amzn.to/3OP8qMB
 ---
-[Home](../index.md) > [Books](./index.md) | [⏮️ 🤖🧠⚙️ Artificial Condition](./artificial-condition.md) [⏭️ 🏃💨🚪 Exit Strategy](./exit-strategy.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md) | [⏮️ 🤖🧠⚙️ Artificial Condition](/content/books/artificial-condition.md) [⏭️ 🏃💨🚪 Exit Strategy](/content/books/exit-strategy.md)  
 # 🕵️‍♀️📜💻 Rogue Protocol  
 [🛒 Rogue Protocol. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3OP8qMB)  
   
@@ -46,17 +46,17 @@ A: 🤓 The story concludes with a significant sequence of high-intensity combat
   
 ### 📖 Non-Fiction  
   
-* [🧠🤔 How Emotions Are Made: The Secret Life of the Brain](./how-emotions-are-made-the-secret-life-of-the-brain.md) by Lisa Feldman Barrett  
-* [🤔💻🧠 Algorithms to Live By: The Computer Science of Human Decisions](./algorithms-to-live-by.md) by Brian Christian and Tom Griffiths  
+* [🧠🤔 How Emotions Are Made: The Secret Life of the Brain](/content/books/how-emotions-are-made-the-secret-life-of-the-brain.md) by Lisa Feldman Barrett  
+* [🤔💻🧠 Algorithms to Live By: The Computer Science of Human Decisions](/content/books/algorithms-to-live-by.md) by Brian Christian and Tom Griffiths  
   
 ### ❤️ If You Loved This  
   
 * 🚀 Ancillary Justice by Ann Leckie  
-* [➡️🌌🚀😡 A Long Way to a Small, Angry Planet](./a-long-way-to-a-small-angry-planet.md) by Becky Chambers  
+* [➡️🌌🚀😡 A Long Way to a Small, Angry Planet](/content/books/a-long-way-to-a-small-angry-planet.md) by Becky Chambers  
   
 ### ↔️ Similar But Different  
   
-* [🤖🤖🤖 We Are Legion (We Are Bob)](./we-are-legion-we-are-bob.md) by Dennis E. Taylor  
+* [🤖🤖🤖 We Are Legion (We Are Bob)](/content/books/we-are-legion-we-are-bob.md) by Dennis E. Taylor  
 * 🛠️ Service Model by Adrian Tchaikovsky  
   
 ## 🫵 What Do You Think?  

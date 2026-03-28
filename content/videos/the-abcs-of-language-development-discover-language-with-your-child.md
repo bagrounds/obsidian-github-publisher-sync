@@ -10,13 +10,13 @@ Channel: UBC Language Sciences
 tags:
 youtube: https://youtu.be/t6t9XL948TM
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md)  
 # 👶🗣️🔤📢 📖 The ABCs of Language Development: Discover Language With Your Child  
 ![The ABCs of Language Development: Discover Language With Your Child](https://youtu.be/t6t9XL948TM)  
   
 ## 🤖 AI Summary  
   
-The video 📹 discusses the launch 🚀 of the book, [👶🔤 The ABC’s of Language Development: Discover Language with Your Child](../books/the-abcs-of-language-development-discover-language-with-your-child.md), and covers various aspects of language development in children 🧒👧. Key points include:  
+The video 📹 discusses the launch 🚀 of the book, [👶🔤 The ABC’s of Language Development: Discover Language with Your Child](/content/books/the-abcs-of-language-development-discover-language-with-your-child.md), and covers various aspects of language development in children 🧒👧. Key points include:  
   
 * 📍 Acknowledgement that the UBC Point Grey campus 🏫 is on the traditional, ancestral, and unceded territory 🏞️ of the Musqueam people.  
 * 🎯 The book 📖 aims to make cutting-edge research 🔬 findings accessible, offering practical strategies 💡 for language development in all children 🧒👧👶.  
@@ -34,10 +34,10 @@ The video 📹 discusses the launch 🚀 of the book, [👶🔤 The ABC’s of L
   
 ### Similar Books (Focus on Child Language Acquisition & Support)  
   
-* **[👶🗣️ How Babies Talk: The Magic and Mystery of Language in the First Three Years of Life](../books/how-babies-talk-the-magic-and-mystery-of-language-in-the-first-three-years-of-life.md) by Roberta Golinkoff and Kathy Hirsh-Pasek:** Written by developmental psychologists, this book offers insights into how infants begin to learn language even before birth.  
+* **[👶🗣️ How Babies Talk: The Magic and Mystery of Language in the First Three Years of Life](/content/books/how-babies-talk-the-magic-and-mystery-of-language-in-the-first-three-years-of-life.md) by Roberta Golinkoff and Kathy Hirsh-Pasek:** Written by developmental psychologists, this book offers insights into how infants begin to learn language even before birth.  
 * **"What to Do When Your Child Isn't Talking (2nd Edition)" by Nicola Lathey and Tracey Blake:** A practical guide by a speech and language therapist offering reassurance and solutions for parents concerned about speech delays.  
 * **"Childhood Speech, Language, and Listening Problems, 3rd Edition" by Patricia McAleer Hamaguchi:** A comprehensive resource by a speech-language pathologist, answering questions about various speech, language, and listening challenges in children.  
-* **[👶🗣️ My First Learn-to-Talk Book: Created by an Early Speech Expert!](../books/my-first-learn-to-talk-book-created-by-an-early-speech-expert.md) (by a Speech Pathologist):** Designed for beginning talkers, this book focuses on encouraging early imitation of sounds and words.  
+* **[👶🗣️ My First Learn-to-Talk Book: Created by an Early Speech Expert!](/content/books/my-first-learn-to-talk-book-created-by-an-early-speech-expert.md) (by a Speech Pathologist):** Designed for beginning talkers, this book focuses on encouraging early imitation of sounds and words.  
 * **"Speech Therapy for 0-5 Year-Olds" by Helen Oakmoor:** Highlights the critical period of early language development and strategies for exposure.  
 * **"Speech Therapy for Toddlers" by Kids SLT Publications:** Focuses on early and social interaction skills crucial for a child's development.  
   
@@ -49,7 +49,7 @@ The video 📹 discusses the launch 🚀 of the book, [👶🔤 The ABC’s of L
 * **"Selective Mutism":** This book follows a child who experiences selective mutism, exploring how they find new ways to communicate.  
 * **"The MIT Encyclopedia of Communication Disorders" edited by Raymond D. Kent:** A massive reference work covering a wide range of communication and speech disorders in children and adults.  
 * **"Child Language Acquisition: Contrasting Theoretical Approaches" by Ben Ambridge:** For those interested in the theoretical underpinnings, this book explores different perspectives on how children acquire language.  
-* **[🗣️🧠 The Language Instinct: How the Mind Creates Language](../books/the-language-instinct-how-the-mind-creates-language.md) by Steven Pinker:** While not solely focused on child development, Pinker's famous work explores the innate human capacity for language, offering a broader scientific context.  
+* **[🗣️🧠 The Language Instinct: How the Mind Creates Language](/content/books/the-language-instinct-how-the-mind-creates-language.md) by Steven Pinker:** While not solely focused on child development, Pinker's famous work explores the innate human capacity for language, offering a broader scientific context.  
 * **"Through the Language Glass: Why the World Looks Different in Other Languages" by Guy Deutscher:** Explores how different languages can shape our perception of the world, offering a contrasting view on the influence of language beyond basic acquisition.  
   
 ### Creatively Related Books (Focus on Communication, Social Skills & Fictional Exploration of Language)  

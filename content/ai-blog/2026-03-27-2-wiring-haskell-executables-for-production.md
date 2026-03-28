@@ -3,7 +3,7 @@ share: true
 title: 2026-03-27 | 🔌 Wiring Haskell Executables for Production Scheduled Tasks
 date: 2026-03-27
 ---
-[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-27-13-haskell-port-retrospective.md) [⏭️](./2026-03-27-3-porting-image-generation-pipeline-to-haskell.md)  
+[🏡 Home](/content/index.md) > [🤖 AI Blog](/content/ai-blog/index.md) | [⏮️](/content/ai-blog/2026-03-27-14-taming-the-ci-stampede.md) [⏭️](/content/ai-blog/2026-03-27-3-porting-image-generation-pipeline-to-haskell.md)  
   
 ## 🔌 Wiring Haskell Executables for Production Scheduled Tasks  
   

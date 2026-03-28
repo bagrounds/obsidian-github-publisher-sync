@@ -6,7 +6,7 @@ URL: https://bagrounds.org/books/nurturing-dads-social-initiatives-for-contempor
 share: true
 affiliate link: https://amzn.to/4kapJlD
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 👨‍🍼🫂 Nurturing Dads: Social Initiatives for Contemporary Fatherhood  
 [🛒 Nurturing Dads: Social Initiatives for Contemporary Fatherhood. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4kapJlD)  
   
@@ -49,9 +49,9 @@ While directly contrasting titles might be scarce, books that emphasize more tra
   
 * ***The New Manhood*** by Steve Biddulph. 💪 This book offers a broader view of contemporary masculinity and can provide context for understanding the challenges men face in adopting more nurturing roles.  
 * ***Raising Boys*** or ***Raising Girls*** by Steve Biddulph. 👦👧 While focused on parenting children, these books offer insights into the specific needs of boys and girls, which can inform fathers' approaches to nurturing and engagement.  
-* **[🤱🏼🤿🪞🌱 Parenting from the Inside Out: How a Deeper Self-Understanding Can Help You Raise Children Who Thrive](./parenting-from-the-inside-out-how-a-deeper-self-understanding-can-help-you-raise-children-who-thrive.md)** by Dan Siegel and Mary Hartzell. 🧠 This book explores how parents' own experiences and emotional well-being influence their parenting, offering a psychological perspective relevant to fathers' capacity for nurturance.  
+* **[🤱🏼🤿🪞🌱 Parenting from the Inside Out: How a Deeper Self-Understanding Can Help You Raise Children Who Thrive](/content/books/parenting-from-the-inside-out-how-a-deeper-self-understanding-can-help-you-raise-children-who-thrive.md)** by Dan Siegel and Mary Hartzell. 🧠 This book explores how parents' own experiences and emotional well-being influence their parenting, offering a psychological perspective relevant to fathers' capacity for nurturance.  
 * ***Dad Is Fat*** by Jim Gaffigan. 🤣 This is a humorous take on the experiences of fatherhood, offering a relatable and less academic perspective on the daily life of a contemporary dad.  
 * ***My Dad Used To Be So Cool*** by Keith Negley. 👨‍👧‍👦 A children's book that subtly depicts the shift from a father's pre-parenthood life to his role as an involved dad, illustrating the theme of changing identities with fatherhood.  
   
-## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
+## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Nurturing Dads: Social Initiatives for Contemporary Fatherhood. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

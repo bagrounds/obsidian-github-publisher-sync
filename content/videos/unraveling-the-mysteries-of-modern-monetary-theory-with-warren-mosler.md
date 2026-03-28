@@ -10,7 +10,7 @@ Channel: ReSolve Asset Management
 tags:
 youtube: https://youtu.be/C9DJEG4qWKk
 ---
-[Home](../index.md) > [Videos](./index.md) | [👨‍🏫📉💵 Warren Mosler](../people/warren-mosler.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md) | [👨‍🏫📉💵 Warren Mosler](/content/people/warren-mosler.md)  
 # ❓🪙💡🇺🇸 Unraveling the Mysteries of Modern Monetary Theory with Warren Mosler  
 ![Unraveling the Mysteries of Modern Monetary Theory with Warren Mosler](https://youtu.be/C9DJEG4qWKk)  
   
@@ -45,9 +45,9 @@ This video presents the core tenets of Modern Monetary Theory (MMT) through its 
 ## 📚 Book Recommendations  
   
 ### ↔️ Similar  
-* **[💰📉➡️📈🗳️ The Deficit Myth: Modern Monetary Theory and the Birth of the People's Economy](../books/the-deficit-myth.md)** by Stephanie Kelton  
+* **[💰📉➡️📈🗳️ The Deficit Myth: Modern Monetary Theory and the Birth of the People's Economy](/content/books/the-deficit-myth.md)** by Stephanie Kelton  
     * Explains MMT for a general audience, arguing that the national debt is not a burden to future generations but a tool for economic management.  
-* **[💵🏛️📈 Soft Currency Economics II: The Origin of Modern Monetary Theory](../books/soft-currency-economics-ii-the-origin-of-modern-monetary-theory.md)** by Warren Mosler  
+* **[💵🏛️📈 Soft Currency Economics II: The Origin of Modern Monetary Theory](/content/books/soft-currency-economics-ii-the-origin-of-modern-monetary-theory.md)** by Warren Mosler  
     * The foundational text outlining the mechanics of the monetary system and the operational reality of fiat currency.  
   
 ### 🆚 Contrasting  
@@ -57,7 +57,7 @@ This video presents the core tenets of Modern Monetary Theory (MMT) through its 
     * Presents a classical view favoring sound money and fixed exchange rates, directly opposing MMT's flexible currency approach.  
   
 ### 🎨 Creatively Related  
-* **[🏛️💰 Debt: The First 5,000 Years](../books/debt-the-first-5000-years.md)** by David Graeber  
+* **[🏛️💰 Debt: The First 5,000 Years](/content/books/debt-the-first-5000-years.md)** by David Graeber  
     * An anthropological history exploring how debt and money have functioned across civilizations, often challenging standard economic narratives.  
 * **The Lords of Easy Money** by Christopher Leonard  
     * Critiques the Federal Reserve's quantitative easing policies, focusing on how asset inflation exacerbates inequality, providing a different angle on Fed criticism.

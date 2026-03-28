@@ -7,7 +7,7 @@ share: true
 CTA: 🍎 Nourish your body.
 affiliate link: https://amzn.to/3Nns9lY
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🛡️🥦 In Defense of Food: An Eater's Manifesto  
 [🛒 In Defense of Food: An Eater's Manifesto. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3Nns9lY)  
   
@@ -85,8 +85,8 @@ affiliate link: https://amzn.to/3Nns9lY
 * 🧈 The Big Fat Surprise by Nina Teicholz (re-examines the science of dietary fat)  
   
 ### Related Books  
-* [📜🌍⏳ Sapiens: A Brief History of Humankind](./sapiens-a-brief-history-of-humankind.md) by Yuval Noah Harari (provides a broad historical context for human food systems)  
-* [🪢🌾 Braiding Sweetgrass: Indigenous Wisdom, Scientific Knowledge, and the Teachings of Plants](./braiding-sweetgrass.md) by Robin Wall Kimmerer (explores indigenous wisdom, botany, and humanity's relationship with nature)  
+* [📜🌍⏳ Sapiens: A Brief History of Humankind](/content/books/sapiens-a-brief-history-of-humankind.md) by Yuval Noah Harari (provides a broad historical context for human food systems)  
+* [🪢🌾 Braiding Sweetgrass: Indigenous Wisdom, Scientific Knowledge, and the Teachings of Plants](/content/books/braiding-sweetgrass.md) by Robin Wall Kimmerer (explores indigenous wisdom, botany, and humanity's relationship with nature)  
 * 🧑‍🍳 Cooked: A Natural History of Transformation by Michael Pollan (explores the human impulse to cook and its cultural significance)  
   
 ## 🫵 What Do You Think?  

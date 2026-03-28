@@ -7,7 +7,7 @@ share: true
 affiliate link: https://amzn.to/43WFjMD
 CTA: Uncover Wall Street's deception.
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 💰💥📉 The Big Short: Inside the Doomsday Machine  
 [🛒 The Big Short: Inside the Doomsday Machine. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/43WFjMD)  
   
@@ -45,20 +45,20 @@ Michael Lewis is known for his ability to transform complex, often dry, subjects
   
 ### ⚖️ Contrasting Books (Different Perspectives, Broader Economic/Social Impact)  
   
-* [🧑🏿⛓️🙈 The New Jim Crow: Mass Incarceration in the Age of Colorblindness](./the-new-jim-crow-mass-incarceration-in-the-age-of-colorblindness.md) by Michelle Alexander: While seemingly unrelated, this book offers a contrasting perspective on systemic issues in America, focusing on the impact of the justice system on marginalized communities. 🌐 It highlights how different societal structures can perpetuate inequality, providing a broader social context beyond the financial world.  
-* [🏚️💰 Evicted: Poverty and Profit in the American City](./evicted-poverty-and-profit-in-the-american-city.md) by Matthew Desmond: This book offers a ground-level view of the housing crisis, focusing on the lives of tenants and landlords in Milwaukee. 🧑‍🤝‍🧑 It provides a powerful human counterpoint to the high-finance world depicted in *The Big Short*, showing the devastating social consequences of economic instability.  
-* [💰📈🌍⏳ Capital in the Twenty-First Century](./capital-in-the-twenty-first-century.md) by Thomas Piketty: This extensive economic analysis examines the dynamics of wealth and income inequality over centuries. 📊 It provides a long-term, macro-economic framework for understanding the distribution of wealth that contrasts with *The Big Short*'s focus on a specific market failure.  
+* [🧑🏿⛓️🙈 The New Jim Crow: Mass Incarceration in the Age of Colorblindness](/content/books/the-new-jim-crow-mass-incarceration-in-the-age-of-colorblindness.md) by Michelle Alexander: While seemingly unrelated, this book offers a contrasting perspective on systemic issues in America, focusing on the impact of the justice system on marginalized communities. 🌐 It highlights how different societal structures can perpetuate inequality, providing a broader social context beyond the financial world.  
+* [🏚️💰 Evicted: Poverty and Profit in the American City](/content/books/evicted-poverty-and-profit-in-the-american-city.md) by Matthew Desmond: This book offers a ground-level view of the housing crisis, focusing on the lives of tenants and landlords in Milwaukee. 🧑‍🤝‍🧑 It provides a powerful human counterpoint to the high-finance world depicted in *The Big Short*, showing the devastating social consequences of economic instability.  
+* [💰📈🌍⏳ Capital in the Twenty-First Century](/content/books/capital-in-the-twenty-first-century.md) by Thomas Piketty: This extensive economic analysis examines the dynamics of wealth and income inequality over centuries. 📊 It provides a long-term, macro-economic framework for understanding the distribution of wealth that contrasts with *The Big Short*'s focus on a specific market failure.  
 * 👩 Opening Belle by Maureen Sherry: A fictional account offering a perspective on Wall Street from the viewpoint of a woman, contrasting with the male-dominated narratives often found in books about the financial crisis.  
   
 ### 🎨 Creatively Related Books (Sharing Themes like Risk, Human Behavior, Systemic Issues)  
   
-* [🧑‍🤝‍🧑🧠 The Undoing Project: A Friendship That Changed Our Minds](./the-undoing-project-a-friendship-that-changed-our-minds.md) by Michael Lewis: Lewis explores the relationship between two Israeli psychologists, Daniel Kahneman and Amos Tversky, whose work in behavioral economics illuminated how humans make irrational decisions, a theme relevant to the irrationality observed in the financial markets in *The Big Short*.  
+* [🧑‍🤝‍🧑🧠 The Undoing Project: A Friendship That Changed Our Minds](/content/books/the-undoing-project-a-friendship-that-changed-our-minds.md) by Michael Lewis: Lewis explores the relationship between two Israeli psychologists, Daniel Kahneman and Amos Tversky, whose work in behavioral economics illuminated how humans make irrational decisions, a theme relevant to the irrationality observed in the financial markets in *The Big Short*.  
 * 🩸 Bad Blood: Secrets and Lies in a Silicon Valley Startup by John Carreyrou: This book investigates the rise and fall of Theranos, a fraudulent biotech company. 🎭 It shares themes of deception, inflated valuations, and the failure of due diligence, echoing some of the issues on Wall Street.  
 * 🎪 The Devil in the White City: Murder, Magic, and Madness at the Fair That Changed America by Erik Larson: A narrative non-fiction book that intertwines the story of the 1893 Chicago World's Fair with that of a serial killer. 🖋️ It shares Lewis's style of making history engaging through compelling characters and a strong narrative, focusing on ambition, innovation, and hidden darkness within a grand facade.  
 * 🔥 The Bonfire of the Vanities by Tom Wolfe: A fictional work set in 1980s New York that satirizes the greed, ambition, and social climbing of the era, particularly focusing on the financial world. 🎉 It captures a sense of the culture of excess that contributes to the environment described in *The Big Short*.  
 * 🇷🇺 Anna Karenina by Leo Tolstoy: This classic novel explores various aspects of life in 19th-century Russia, including detailed discussions about land ownership, agriculture, and the economics of the time. 🚜 While not directly about finance, it offers a deep dive into how economic realities shape individual lives and societal structures, touching on themes of capitalism and its impact on different classes.  
   
-## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
+## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on The Big Short: Inside the Doomsday Machine. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.  
   
 ## 🐦 Tweet  

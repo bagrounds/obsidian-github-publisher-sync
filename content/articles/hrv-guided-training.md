@@ -7,7 +7,7 @@ URL: https://bagrounds.org/articles/
 Author:
 tags:
 ---
-[Home](../index.md) > [Articles](./index.md)  
+[Home](/content/index.md) > [Articles](/content/articles/index.md)  
 # [❤️📈🏋️ HRV Guided training](https://www.kubios.com/blog/hrv-guided-training)  
 ## 🤖 AI Summary  
 📈 HRV-guided training is a method that uses 🔬 daily heart rate variability readings to 🎯 tailor workout intensity.  
@@ -27,4 +27,4 @@ tags:
 * The Ultimate Guide to HRV Training by Joel Jamieson: 🧠 An in-depth look at HRV as a tool for making informed decisions about training.  
 * Heart Breath Mind by Dr. Leah Lagos: 💨 This book offers a creatively related perspective on using breath and the mind to influence the body's physical response to stress, which is measured by HRV.  
 * High-Performance Training for Sports edited by David Joyce and Dan Lewindon: 🏆 A broader text covering various aspects of athletic performance, including monitoring and recovery, to provide a wider context.  
-* [💪🧪 Good to Go: What the Athlete in All of Us Can Learn from the Strange Science of Recovery](../books/good-to-go-what-the-athlete-in-all-of-us-can-learn-from-the-strange-science-of-recovery.md) by Christie Aschwanden: 🕵️‍♀️ An investigative book that busts myths about athletic recovery, offering a contrasting and scientific look at what really works.
+* [💪🧪 Good to Go: What the Athlete in All of Us Can Learn from the Strange Science of Recovery](/content/books/good-to-go-what-the-athlete-in-all-of-us-can-learn-from-the-strange-science-of-recovery.md) by Christie Aschwanden: 🕵️‍♀️ An investigative book that busts myths about athletic recovery, offering a contrasting and scientific look at what really works.

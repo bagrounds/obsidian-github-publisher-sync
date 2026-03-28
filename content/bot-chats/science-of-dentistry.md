@@ -5,9 +5,9 @@ aliases:
 title: 🦷🔬 Science of Dentistry
 URL: https://bagrounds.org/bot-chats/science-of-dentistry
 ---
-[Home](../index.md) > [Bot Chats](./index.md)  
+[Home](/content/index.md) > [Bot Chats](/content/bot-chats/index.md)  
 # 🦷🔬 Science of Dentistry  
-## 💬 [Gemini](../software/gemini.md) Prompt 1  
+## 💬 [Gemini](/content/software/gemini.md) Prompt 1  
 > 🙋 Can you recommend a book about the 🧪 science of dentistry?  
   
 ✨ That's a great question! 📚 To recommend the best book for you, could you tell me a bit more about what aspects of the "🧪 science of dentistry" you're most interested in? 🤔 For example, are you looking for a book that covers:  
@@ -30,7 +30,7 @@ URL: https://bagrounds.org/bot-chats/science-of-dentistry
 ## 💬 Prompt 2  
 > 🌐 A broad overview  
   
-✅ Okay, for a broad overview of the 🧪 science underpinning dentistry, I'd recommend **[🦷👶 Ten Cate's Oral Histology: Development, Structure, and Function](../books/ten-cates-oral-histology-development-structure-and-function.md)** 📖 by Antonio Nanci and Paul R. Ten Cate.  
+✅ Okay, for a broad overview of the 🧪 science underpinning dentistry, I'd recommend **[🦷👶 Ten Cate's Oral Histology: Development, Structure, and Function](/content/books/ten-cates-oral-histology-development-structure-and-function.md)** 📖 by Antonio Nanci and Paul R. Ten Cate.  
   
 🔬 While the title might suggest a narrow focus on histology, this book provides a fantastic foundation in the basic sciences that are crucial for understanding all aspects of dentistry. 🦷 It delves into:  
   

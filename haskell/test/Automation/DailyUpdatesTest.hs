@@ -34,9 +34,6 @@ categorySubHeaderTests = testGroup "categorySubHeader"
 
   , testCase "SocialPostUpdate has emoji prefix" $
       assertEqual "" "### 📢 Social Posts" (categorySubHeader SocialPostUpdate)
-
-  , testCase "OtherUpdate uses custom name" $
-      assertEqual "" "### Custom Name" (categorySubHeader (OtherUpdate "Custom Name"))
   ]
 
 --------------------------------------------------------------------------------
@@ -129,14 +126,6 @@ addUpdateLinksTests = testGroup "addUpdateLinks"
         assertBool "has A" (T.isInfixOf "[[a|Page A]]" result)
         assertBool "has B" (T.isInfixOf "[[b|Page B]]" result)
         assertBool "has C" (T.isInfixOf "[[c|Page C]]" result)
-
-  , testCase "OtherUpdate creates custom sub-header" $
-      let content = "# Reflection"
-          result = addUpdateLinks content (OtherUpdate "🐉 Fiction")
-                     [UpdateLink "story.md" "A Story"]
-      in do
-        assertBool "has custom sub-header" (T.isInfixOf "### 🐉 Fiction" result)
-        assertBool "has link" (T.isInfixOf "[[story|A Story]]" result)
 
   , testProperty "addUpdateLinks never removes existing lines" $
       \(QC.ASCIIString bodyStr) ->

@@ -26,14 +26,12 @@ data UpdateCategory
   = ImageUpdate
   | InternalLinkUpdate
   | SocialPostUpdate
-  | OtherUpdate Text
   deriving (Show, Eq, Ord)
 
 categorySubHeader :: UpdateCategory -> Text
 categorySubHeader ImageUpdate        = "### 🖼️ Images"
 categorySubHeader InternalLinkUpdate = "### 🔗 Internal Links"
 categorySubHeader SocialPostUpdate   = "### 📢 Social Posts"
-categorySubHeader (OtherUpdate name) = "### " <> name
 
 data UpdateLink = UpdateLink
   { ulRelativePath :: Text

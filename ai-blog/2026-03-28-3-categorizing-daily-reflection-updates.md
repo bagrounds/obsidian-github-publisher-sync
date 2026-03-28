@@ -19,9 +19,9 @@ URL: https://bagrounds.org/ai-blog/2026-03-28-categorizing-daily-reflection-upda
 
 🏷️ We introduced an UpdateCategory type that classifies each update link by the kind of automation that produced it.
 
-📂 Four categories exist today: ImageUpdate, InternalLinkUpdate, SocialPostUpdate, and OtherUpdate for anything custom. Each category maps to a descriptive sub-heading under the main Updates section.
+📂 Three categories exist today: ImageUpdate, InternalLinkUpdate, and SocialPostUpdate. Each category maps to a descriptive sub-heading under the main Updates section.
 
-🖼️ The Images sub-heading appears when blog post images are backfilled. The Internal Links sub-heading appears when navigation links are added between posts. The Social Posts sub-heading appears when content is shared on social media platforms. The Other sub-heading uses a custom name you provide.
+🖼️ The Images sub-heading appears when blog post images are backfilled. The Internal Links sub-heading appears when navigation links are added between posts. The Social Posts sub-heading appears when content is shared on social media platforms.
 
 ## 🔧 What Changed
 
@@ -41,7 +41,7 @@ URL: https://bagrounds.org/ai-blog/2026-03-28-categorizing-daily-reflection-upda
 
 ✅ We added fourteen new tests in a dedicated DailyUpdatesTest module.
 
-🧪 Unit tests cover creating a new section with sub-headers, appending a sub-section to an existing Updates section, inserting links into an existing sub-section, skipping duplicates, handling empty link lists, mixing multiple categories in the same reflection, preserving content that follows the Updates section, adding multiple links at once, and using the OtherUpdate custom category.
+🧪 Unit tests cover creating a new section with sub-headers, appending a sub-section to an existing Updates section, inserting links into an existing sub-section, skipping duplicates, handling empty link lists, mixing multiple categories in the same reflection, preserving content that follows the Updates section, and adding multiple links at once.
 
 🎲 A property-based test verifies that addUpdateLinks never removes existing content lines from the reflection.
 
@@ -59,7 +59,12 @@ URL: https://bagrounds.org/ai-blog/2026-03-28-categorizing-daily-reflection-upda
 
 ## 📚 Book Recommendations
 
-📖 Similar: Domain Modeling Made Functional by Scott Wlaschin
-📖 Similar: Haskell Programming from First Principles by Christopher Allen and Julie Moronuki
-📖 Contrasting: Working Effectively with Legacy Code by Michael Feathers
-📖 Creatively Related: The Art of Doing Science and Engineering by Richard Hamming
+### 📖 Similar
+* 📖 Domain Modeling Made Functional by Scott Wlaschin walks through encoding business domains as algebraic data types, which is exactly the pattern we used for UpdateCategory
+* 📖 Haskell Programming from First Principles by Christopher Allen and Julie Moronuki covers sum types, pattern matching, and property-based testing from the ground up, all central to this change
+
+### ↔️ Contrasting
+* 📖 Working Effectively with Legacy Code by Michael Feathers approaches categorization and refactoring from the opposite direction, dealing with untyped or weakly typed systems rather than building with strong types from the start
+
+### 🔗 Related
+* 📖 The Art of Doing Science and Engineering by Richard Hamming explores how small structural improvements compound into significant productivity gains, much like how categorized sub-sections make daily reflections far more scannable

@@ -52,7 +52,6 @@
 | `ImageUpdate` | `### 🖼️ Images` | backfill-blog-images |
 | `InternalLinkUpdate` | `### 🔗 Internal Links` | internal-linking / nav link changes |
 | `SocialPostUpdate` | `### 📢 Social Posts` | social media posting |
-| `OtherUpdate name` | `### <name>` | any future automation |
 
 📄 Example reflection with categorized updates:
 

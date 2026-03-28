@@ -10,7 +10,7 @@ Channel: Heather Cox Richardson
 tags:
 youtube: https://youtu.be/jyHbd88plYM
 ---
-[Home](../index.md) > [Videos](./index.md) | [🏛️🇺🇸📖 Heather Cox Richardson](../people/heather-cox-richardson.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md) | [🏛️🇺🇸📖 Heather Cox Richardson](/content/people/heather-cox-richardson.md)  
 # 📰🇺🇸❓🏛️ This Week In Politics, A Big-Picture Look at Where We Are Right Now | Explainer  
 ![This Week In Politics, A Big-Picture Look at Where We Are Right Now | Explainer](https://youtu.be/jyHbd88plYM)  
   
@@ -68,7 +68,7 @@ youtube: https://youtu.be/jyHbd88plYM
 ### ↔️ Similar  
   
 * 🧠 The Reactionary Mind: Conservatism from Edmund Burke to Donald Trump by Corey Robin: This book explores the core ideology of conservatism as a defense of hierarchy and power against popular movements, providing a crucial historical framework for current political dynamics.  
-* [🏛️⛓️ Democracy in Chains: The Deep History of the Radical Right's Stealth Plan for America](../books/democracy-in-chains-the-deep-history-of-the-radical-rights-stealth-plan-for-america.md) by Nancy MacLean: It reveals the intellectual history and decades-long strategy used by a radical-right network to dismantle democratic institutions and consolidate elite power, directly relating to the video's theme of the political system being taken over by the wealthy.  
+* [🏛️⛓️ Democracy in Chains: The Deep History of the Radical Right's Stealth Plan for America](/content/books/democracy-in-chains-the-deep-history-of-the-radical-rights-stealth-plan-for-america.md) by Nancy MacLean: It reveals the intellectual history and decades-long strategy used by a radical-right network to dismantle democratic institutions and consolidate elite power, directly relating to the video's theme of the political system being taken over by the wealthy.  
   
 ### 🆚 Contrasting  
   
@@ -77,7 +77,7 @@ youtube: https://youtu.be/jyHbd88plYM
   
 ### 🎨 Creatively Related  
   
-* [🤔🐇🐢 Thinking, Fast and Slow](../books/thinking-fast-and-slow.md) by Daniel Kahneman: This classic book explores the two cognitive systems that drive our decision-making, offering insight into how voters and politicians process complex information, political messaging, and disinformation, as discussed in the video.  
+* [🤔🐇🐢 Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md) by Daniel Kahneman: This classic book explores the two cognitive systems that drive our decision-making, offering insight into how voters and politicians process complex information, political messaging, and disinformation, as discussed in the video.  
 * 🏗️ The Power Broker: Robert Moses and the Fall of New York by Robert Caro: This biography focuses on one man's relentless and unchecked use of bureaucratic and political power to reshape a city, tangentially relating to the video's themes of unchecked executive power, tearing down public works (the East Wing), and the dangerous influence of unelected officials.  
   
 ## 🐦 Tweet  

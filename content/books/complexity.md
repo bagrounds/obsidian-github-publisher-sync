@@ -77,14 +77,14 @@ Melanie Mitchell is a highly respected computer scientist and complexity researc
     * Complex Adaptive Systems: An Introduction to Computational Models of Social Life by John H. Miller and Scott E. Page – A rigorous yet accessible introduction to modeling complex systems.  
 * **Best Tangentially Related Book:** [🌐🔗🧠📖 Thinking in Systems: A Primer](./thinking-in-systems.md) by Donella H. Meadows. ⚙️  
 * **Best Diametrically Opposed Books:**  
-    * [🧬🎭👁️ The Case Against Reality: Why Evolution Hid the Truth from Our Eyes](./the-case-against-reality-why-evolution-hid-the-truth-from-our-eyes.md) by Donald D. Hoffman. 👁️‍🗨️  
-    * [⚫🦢🎲 The Black Swan: The Impact of the Highly Improbable](./the-black-swan-the-impact-of-the-highly-improbable.md) by Nassim Nicholas Taleb – Challenges the predictability of systems and emphasizes rare, disruptive events over emergent order.  
+    * [🧬🎭👁️ The Case Against Reality: Why Evolution Hid the Truth from Our Eyes](books/the-case-against-reality-why-evolution-hid-the-truth-from-our-eyes.md) by Donald D. Hoffman. 👁️‍🗨️  
+    * [⚫🦢🎲 The Black Swan: The Impact of the Highly Improbable](books/the-black-swan-the-impact-of-the-highly-improbable.md) by Nassim Nicholas Taleb – Challenges the predictability of systems and emphasizes rare, disruptive events over emergent order.  
 * **Best Fiction Books Incorporating Related Ideas:**  
-    * [🌌3️⃣⚛️ The Three-Body Problem](./the-three-body-problem.md) by Liu Cixin. 🌌  
+    * [🌌3️⃣⚛️ The Three-Body Problem](books/the-three-body-problem.md) by Liu Cixin. 🌌  
     * [❄️💻💥 Snow Crash](./snow-crash.md) by Neal Stephenson – A cyberpunk novel where the interplay of technology, culture, and individuals mirrors complex adaptive systems.  
-* **Best More General Book:** [📜🌍⏳ Sapiens: A Brief History of Humankind](./sapiens-a-brief-history-of-humankind.md) by Yuval Noah Harari. 🧑‍🤝‍🧑  
+* **Best More General Book:** [📜🌍⏳ Sapiens: A Brief History of Humankind](books/sapiens-a-brief-history-of-humankind.md) by Yuval Noah Harari. 🧑‍🤝‍🧑  
 * **Best More Specific Book:** "Networks: An Introduction" by Mark Newman. 🕸️  
-* **Best More Rigorous Book:** [🦋🌀💥🤖 Nonlinear Dynamics and Chaos: With Applications to Physics, Biology, Chemistry, and Engineering](./nonlinear-dynamics-and-chaos.md): by Steven H. Strogatz. 🌀  
+* **Best More Rigorous Book:** [🦋🌀💥🤖 Nonlinear Dynamics and Chaos: With Applications to Physics, Biology, Chemistry, and Engineering](books/nonlinear-dynamics-and-chaos.md): by Steven H. Strogatz. 🌀  
 * **Best More Accessible Book:** "Tangled Nets: How to Solve Your Organization's Toughest Problems Without Changing Everything" by Anne Loehr. 🕸️  
   
 ## 💬 [Gemini](https://gemini.google.com) Prompt  

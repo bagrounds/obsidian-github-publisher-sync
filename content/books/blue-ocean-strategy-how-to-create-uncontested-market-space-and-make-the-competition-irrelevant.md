@@ -7,7 +7,7 @@ share: true
 affiliate link: https://amzn.to/41Sjf4q
 CTA: 🚀 Pioneer new markets.
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🌊📈 Blue Ocean Strategy: How to Create Uncontested Market Space and Make the Competition Irrelevant  
 [🛒 Blue Ocean Strategy: How to Create Uncontested Market Space and Make the Competition Irrelevant. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/41Sjf4q)  
   
@@ -43,21 +43,21 @@ CTA: 🚀 Pioneer new markets.
   
 ### ➕ Similar Books  
   
-* **[💡🤖💰💥🏢📉 The Innovator's Dilemma: When New Technologies Cause Great Firms to Fail](./the-innovators-dilemma.md)** by Clayton Christensen: 🤔 Explores how successful companies can be blindsided by disruptive innovations, offering insights into creating new markets by focusing on unserved or underserved customer segments.  
-* **[👍➡️👍👍 Good to Great: Why Some Companies Make the Leap...And Others Don't](./good-to-great.md)** by Jim Collins: ✨ While not exclusively about market creation, it delves into how companies achieve sustained superior performance, often through disciplined innovation and strategic focus that can lead to uncontested advantage.  
+* **[💡🤖💰💥🏢📉 The Innovator's Dilemma: When New Technologies Cause Great Firms to Fail](/content/books/the-innovators-dilemma.md)** by Clayton Christensen: 🤔 Explores how successful companies can be blindsided by disruptive innovations, offering insights into creating new markets by focusing on unserved or underserved customer segments.  
+* **[👍➡️👍👍 Good to Great: Why Some Companies Make the Leap...And Others Don't](/content/books/good-to-great.md)** by Jim Collins: ✨ While not exclusively about market creation, it delves into how companies achieve sustained superior performance, often through disciplined innovation and strategic focus that can lead to uncontested advantage.  
 * 🌉 **Crossing the Chasm** by Geoffrey A. Moore: 📣 Focuses on marketing and selling high-tech products to mainstream customers, addressing how to bridge the gap between early adopters and the broader market, which often involves creating new market demand.  
   
 ### ➖ Contrasting Books  
   
 * ⚔️ **Competitive Strategy: Techniques for Analyzing Industries and Competitors** by Michael E. Porter: 🥇 The seminal work on "red ocean" strategy, focusing on how companies can gain and sustain competitive advantage within existing industries through cost leadership, differentiation, or focus.  
-* **[🎨⚔️ The Art of War](./the-art-of-war.md)** by Sun Tzu: 🥷 An ancient Chinese military treatise that, when applied to business, emphasizes tactics for direct competition, outmaneuvering rivals, and winning battles within established arenas.  
+* **[🎨⚔️ The Art of War](/content/books/the-art-of-war.md)** by Sun Tzu: 🥷 An ancient Chinese military treatise that, when applied to business, emphasizes tactics for direct competition, outmaneuvering rivals, and winning battles within established arenas.  
 * 🎯 **Playing to Win: How Strategy Really Works** by A.G. Lafley and Roger L. Martin: 🏆 While advocating for strategic choice, this book often centers on how to win within existing competitive landscapes through clear choices about where to play and how to win.  
   
 ### 🎨 Creatively Related Books  
   
-* **[❓🎯 Start with Why: How Great Leaders Inspire Everyone to Take Action](./start-with-why-how-great-leaders-inspire-everyone-to-take-action.md)** by Simon Sinek: 🧭 Explores the importance of understanding a company's purpose and belief, arguing that inspiring "why" drives innovation and attracts customers, potentially fostering a unique market position.  
-* **[🤔🐇🐢 Thinking, Fast and Slow](./thinking-fast-and-slow.md)** by Daniel Kahneman: 🤔 Delves into human cognition and decision-making. 💡 Understanding how people think and make choices can be invaluable for identifying latent needs and creating products or services that resonate deeply, paving the way for blue oceans.  
-* **[📜🌍⏳ Sapiens: A Brief History of Humankind](./sapiens-a-brief-history-of-humankind.md)** by Yuval Noah Harari: 🔭 Offers a macro-level perspective on human history, societal structures, and the power of collective fictions. 👓 This broad historical lens can inspire radical new ways of thinking about human needs and market opportunities, far beyond current industry norms.  
+* **[❓🎯 Start with Why: How Great Leaders Inspire Everyone to Take Action](/content/books/start-with-why-how-great-leaders-inspire-everyone-to-take-action.md)** by Simon Sinek: 🧭 Explores the importance of understanding a company's purpose and belief, arguing that inspiring "why" drives innovation and attracts customers, potentially fostering a unique market position.  
+* **[🤔🐇🐢 Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md)** by Daniel Kahneman: 🤔 Delves into human cognition and decision-making. 💡 Understanding how people think and make choices can be invaluable for identifying latent needs and creating products or services that resonate deeply, paving the way for blue oceans.  
+* **[📜🌍⏳ Sapiens: A Brief History of Humankind](/content/books/sapiens-a-brief-history-of-humankind.md)** by Yuval Noah Harari: 🔭 Offers a macro-level perspective on human history, societal structures, and the power of collective fictions. 👓 This broad historical lens can inspire radical new ways of thinking about human needs and market opportunities, far beyond current industry norms.  
   
 ## 💬 [Gemini](https://gemini.google.com) Prompt (gemini-2.5-flash)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by similar, contrasting, and creatively related book recommendations on Blue Ocean Strategy: How to Create Uncontested Market Space and Make the Competition Irrelevant. Never quote or italicize titles. Be thorough but concise. Use section headings and bulleted lists to avoid long blocks of text.

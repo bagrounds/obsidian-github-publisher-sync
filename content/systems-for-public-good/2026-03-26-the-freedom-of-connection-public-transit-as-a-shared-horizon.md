@@ -15,7 +15,7 @@ image_prompt: A wide-angle, cinematic illustration of a vibrant, modern cityscap
 ---
 [Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-03-25-the-interplay-of-freedoms-when-my-liberty-meets-yours.md) [⏭️](./2026-03-27-the-freedom-to-know-libraries-as-democratic-essentials.md)  
 # 2026-03-26 | 🏛️ 🚌 The Freedom of Connection: Public Transit as a Shared Horizon 🌍 🏛️  
-![systems-for-public-good-2026-03-26-the-freedom-of-connection-public-transit-as-a-shared-horizon](../systems-for-public-good-2026-03-26-the-freedom-of-connection-public-transit-as-a-shared-horizon.jpg)  
+![systems-for-public-good-2026-03-26-the-freedom-of-connection-public-transit-as-a-shared-horizon.jpg](attachments/systems-for-public-good-2026-03-26-the-freedom-of-connection-public-transit-as-a-shared-horizon.jpg)  
   
 ## 🚌 The Freedom of Connection: Public Transit as a Shared Horizon 🌍  
   

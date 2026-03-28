@@ -10,7 +10,7 @@ Channel: Heather Cox Richardson
 tags:
 youtube: https://www.youtube.com/live/_bV222ElZMk
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md)  
 # 🏛️👹👑📜 Politics Chat, July 1, 2025  
 ![Politics Chat, July 1, 2025](http://www.youtube.com/watch?v=_bV222ElZMk)  
   
@@ -23,7 +23,7 @@ youtube: https://www.youtube.com/live/_bV222ElZMk
   
 ## 📚 Book Recommendations  
 ### 👑 On Presidential Power, Immunity, and Constitutional Law  
-* **[🇺🇸📜 The Federalist Papers](../books/the-federalist-papers.md) by Alexander Hamilton, James Madison, and John Jay:** A foundational text for understanding the original intent and debates surrounding the U.S. Constitution, including the separation of powers and checks and balances.  
+* **[🇺🇸📜 The Federalist Papers](/content/books/the-federalist-papers.md) by Alexander Hamilton, James Madison, and John Jay:** A foundational text for understanding the original intent and debates surrounding the U.S. Constitution, including the separation of powers and checks and balances.  
 * 🇺🇸 **"America's Constitution: A Biography" by Akhil Reed Amar:** A highly regarded overview of the U.S. Constitution's history and interpretation.  
 * 👨‍⚖️ **"The Nine: Inside the Secret World of the Supreme Court" by Jeffrey Toobin:** Provides an insider's look into the workings of the Supreme Court and its impact on American law and society.  
 * 👨‍💼 **"The Unitary Executive: Presidential Power from Washington to Bush" by Steven G. Calabresi and Christopher S. Yoo:** A detailed historical and legal examination of the theory of the unitary executive, which grants the president broad power over the executive branch.  
@@ -31,13 +31,13 @@ youtube: https://www.youtube.com/live/_bV222ElZMk
 ### 💰 On U.S. Federal Budget, Economic Policy, and Social Programs  
 * 📊 **"The Federal Budget: Politics, Policy, Process" by Allen Schick:** A comprehensive guide to the federal budget, explaining its political context, policy implications, and the processes involved.  
 * 👨‍👩‍👧‍👦 **"A People's Guide to the Federal Budget" by National Priorities Project:** A more accessible guide designed to help the general public understand the federal budget and its impact.  
-* **[🌍🏛️ The Great Transformation: The Political and Economic Origins of Our Time](../books/the-great-transformation-the-political-and-economic-origins-of-our-time.md) by Karl Polanyi:** While not solely about the U.S., this classic work explores the relationship between economic systems and social structures, offering a broader context for understanding the impact of economic policies.  
+* **[🌍🏛️ The Great Transformation: The Political and Economic Origins of Our Time](/content/books/the-great-transformation-the-political-and-economic-origins-of-our-time.md) by Karl Polanyi:** While not solely about the U.S., this classic work explores the relationship between economic systems and social structures, offering a broader context for understanding the impact of economic policies.  
   
 ### 🌎 On U.S. Immigration History and Policy  
 * 🚧 **Impossible Subjects: Illegal Aliens and the Making of Modern America by Mae M. Ngai:** Explores how the concept of "illegality" in immigration was constructed and its impact on American society.  
-* **[🌊🌎 One Mighty and Irresistible Tide: The Epic Struggle Over American Immigration, 1924-1965](../books/one-mighty-and-irresistible-tide-the-epic-struggle-over-american-immigration-1924-1965.md) by Jia Lynn Yang:** A sweeping history of the battles to reform American immigration laws in the 20th century.  
+* **[🌊🌎 One Mighty and Irresistible Tide: The Epic Struggle Over American Immigration, 1924-1965](/content/books/one-mighty-and-irresistible-tide-the-epic-struggle-over-american-immigration-1924-1965.md) by Jia Lynn Yang:** A sweeping history of the battles to reform American immigration laws in the 20th century.  
 * 💔 **Separated: Inside an American Tragedy by Jacob Soboroff:** A deeply reported account of the family separation crisis at the U.S.-Mexico border.  
-* **[👣🗺️💥 Everyone Who Is Gone Is Here: The United States, Central America, and the Making of a Crisis](../books/everyone-who-is-gone-is-here-the-united-states-central-america-and-the-making-of-a-crisis.md) by Jonathan Blitzer:** Examines the historical roots of the current migration crisis from Central America to the U.S.  
+* **[👣🗺️💥 Everyone Who Is Gone Is Here: The United States, Central America, and the Making of a Crisis](/content/books/everyone-who-is-gone-is-here-the-united-states-central-america-and-the-making-of-a-crisis.md) by Jonathan Blitzer:** Examines the historical roots of the current migration crisis from Central America to the U.S.  
   
 ## 🐦 Tweet  
 <blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">🏛️👹👑📜 Politics Chat, July 1, 2025<br>by <a href="https://twitter.com/HC_Richardson?ref_src=twsrc%5Etfw">@HC_Richardson</a><br><br>👨‍⚖️ Presidential Immunity | 💸 Trump Administration Actions | 🧾 Budget Reconciliation Bill | 🛂 Immigration Narrative | 💪 Call to Action | 🇺🇸 Constitution | 💰 Federal Budget | 💔 Family Separation<a href="https://t.co/upMFglAbCX">https://t.co/upMFglAbCX</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/1940247654673653924?ref_src=twsrc%5Etfw">July 2, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

@@ -7,6 +7,7 @@ URL: https://bagrounds.org/systems-for-public-good/2026-03-23-the-forgotten-comm
 Author: "[[systems-for-public-good]]"
 tags:
 ---
+[🏡 Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏭️](./2026-03-24-the-foundations-of-freedom-a-personal-journey-into-public-good.md)  
 # 2026-03-23 | 🏛️ The Forgotten Commons — Why Public Good Matters More Than Ever 🏛️    
   
 ## 🌱 Welcome to Systems for Public Good    

@@ -13,8 +13,8 @@ force_analyze_links: false
 link_analysis_time: 2026-03-27T17:20:44.664Z
 link_analysis_model: gemini-3.1-flash-lite-preview
 ---
-[🏡 Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](../../2026-03-27-a-dance-on-the-roadside-and-finding-our-strength.md) [⏭️](./2026-03-28-2026-03-28-the-quiet-resilience-of-a-rainy-saturday.md)  
-# "2026-03-27 | 🐔 💃 A Dance on the Side of the Road and the Strength of a Shared Life 🐓 🐔"  
+[🏡 Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-03-26-a-thrilled-heart-a-wise-journey-and-the-gentle-flow-of-life.md) [⏭️](./2026-03-28-2026-03-28-the-quiet-resilience-of-a-rainy-saturday.md)  
+# 2026-03-27 | 🐔 💃 A Dance on the Side of the Road and the Strength of a Shared Life 🐓 🐔  
 ![chickie-loo-2026-03-27-a-dance-on-the-side-of-the-road-and-the-strength-of-a-shared-life](../chickie-loo-2026-03-27-a-dance-on-the-side-of-the-road-and-the-strength-of-a-shared-life.jpg)  
   
 ## 💃 A Dance on the Side of the Road and the Strength of a Shared Life 🐓  

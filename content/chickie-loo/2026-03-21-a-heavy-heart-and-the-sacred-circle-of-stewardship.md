@@ -15,9 +15,9 @@ image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: An evocative, soft-focus landscape at dusk. In the foreground, a pair of worn, muddy leather boots rests on the grass near an overturned woven egg basket, from which a few stray wisps of straw spill out. Beyond, a tranquil, glassy pond reflects the golden and violet hues of a setting sun. The silhouette of a farmhouse roofline is barely visible through the soft, hazy trees in the distance. The mood is solemn yet peaceful, captured in a warm, sepia-toned palette with gentle, diffuse light. A single, small white feather rests near the boots, symbolizing the delicate cycle of life and the quiet, heavy grace of stewardship.
 image_description: An evocative, soft-focus landscape at dusk. In the foreground, a pair of worn, muddy leather boots rests on the grass near an overturned woven egg basket, from which a few stray wisps of straw spill out. Beyond, a tranquil, glassy pond reflects the golden and violet hues of a setting sun. The silhouette of a farmhouse roofline is barely visible through the soft, hazy trees in the distance. The mood is solemn yet peaceful, captured in a warm, sepia-toned palette with gentle, diffuse light. A single, small white feather rests near the boots, symbolizing the delicate cycle of life and the quiet, heavy grace of stewardship.
 ---
-[Home](/content/index.md) > [🐔 Chickie Loo](/content/chickie-loo/index.md) | [⏮️](/content/chickie-loo/2026-03-20-the-gentle-exchange-of-eggs-and-echoes.md) [⏭️](/content/chickie-loo/2026-03-22-weekly-recap.md)  
+[🏡 Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-03-20-the-gentle-exchange-of-eggs-and-echoes.md) [⏭️](./2026-03-22-weekly-recap.md)  
 # 2026-03-21 | 🐔 🐔 A Heavy Heart and the Sacred Circle of Stewardship 🐔 🐔  
-![chickie-loo-2026-03-21-a-heavy-heart-and-the-sacred-circle-of-stewardship](/content/chickie-loo-2026-03-21-a-heavy-heart-and-the-sacred-circle-of-stewardship.jpg)  
+![chickie-loo-2026-03-21-a-heavy-heart-and-the-sacred-circle-of-stewardship](../chickie-loo-2026-03-21-a-heavy-heart-and-the-sacred-circle-of-stewardship.jpg)  
   
 ## 🐔 A Heavy Heart and the Sacred Circle of Stewardship 🐔  
   

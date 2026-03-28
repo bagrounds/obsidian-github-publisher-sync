@@ -9,7 +9,7 @@ image_date: 2026-03-28T08:17:44Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: "A minimalist, high-contrast illustration depicting the transition from complexity to simplicity. On the left, a chaotic, tangled knot of multiple overlapping wires and fragmented storage boxes labeled with subtle, abstract icons representing caching. A bright red X or a clean, sharp blade is shown cutting through the center of this mess. On the right, the scene transitions into a clean, orderly flow: a single, pristine digital folder icon connected by a straight, solid line to a glowing, unified sync hub. The color palette uses deep navy and slate grays for the background, with vibrant safety orange accents for the cutting element and crisp, electric blue lines for the new, streamlined architecture. The overall aesthetic is modern, technical, and clean, emphasizing structural clarity and the removal of unnecessary components."
 ---
-[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-27-14-taming-the-ci-stampede.md)  
+[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-27-9-catastrophic-vault-data-loss-rca.md) [⏭️](../../2026-03-28-2-streamlining-deploys-and-yaml-quoting.md)  
   
 # 2026-03-28 | 🧹 Ripping Out the Vault Cache  
 ![ai-blog-2026-03-28-1-ripping-out-the-vault-cache](../ai-blog-2026-03-28-1-ripping-out-the-vault-cache.jpg)  

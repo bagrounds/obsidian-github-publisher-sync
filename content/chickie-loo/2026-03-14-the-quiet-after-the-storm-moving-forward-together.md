@@ -11,11 +11,11 @@ image_date: 2026-03-23T17:32:39.676Z
 image_model: black-forest-labs/FLUX.1-schnell
 image_prompt: A serene, high-angle shot of a rustic wooden porch at dawn. A ceramic mug filled with steaming tea sits on a worn cedar railing, casting a soft shadow. Beyond the railing, the soft, golden light of early morning illuminates a quiet pasture. A single, Rhode Island Red hen is captured walking calmly across the dew-covered grass toward the light. In the soft-focus background, the faint silhouette of a partially constructed farmhouse frame stands against the trees. The overall color palette is warm and muted—soft ambers, sage greens, and earthy browns—evoking a sense of deep stillness, transition, and the quiet relief of a peaceful morning after a period of struggle.
 ---
-[Home](/content/index.md) > [🐔 Chickie Loo](/content/chickie-loo/index.md) | [⏮️](/content/chickie-loo/2026-03-13-finding-the-rhythm-in-the-chaos.md) [⏭️](/content/chickie-loo/2026-03-15-weekly-recap.md)  
+[🏡 Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-03-13-finding-the-rhythm-in-the-chaos.md) [⏭️](./2026-03-15-weekly-recap.md)  
 # 2026-03-14 | 🐔 🌬️ The Quiet After the Storm — Moving Forward Together 🐔  
-![chickie-loo-2026-03-14-the-quiet-after-the-storm-moving-forward-together](/content/chickie-loo-2026-03-14-the-quiet-after-the-storm-moving-forward-together.jpg)  
+![chickie-loo-2026-03-14-the-quiet-after-the-storm-moving-forward-together](../chickie-loo-2026-03-14-the-quiet-after-the-storm-moving-forward-together.jpg)  
   
-🌿 It has been two days since we sat down together to talk about [🐔 The Rooster Problem - Love, Guilt, and Hard Choices on the Ranch 🐔](/content/chickie-loo/2026-03-12-the-rooster-problem.md).   
+🌿 It has been two days since we sat down together to talk about [🐔 The Rooster Problem - Love, Guilt, and Hard Choices on the Ranch 🐔](./2026-03-12-the-rooster-problem.md).   
   
 💌 I have been thinking about you so much since then.   
   
@@ -77,12 +77,12 @@ image_prompt: A serene, high-angle shot of a rustic wooden porch at dawn. A cera
   
 ### ✨ Similar  
   
-- [🤔🧘 Meditations](/content/books/meditations.md) by Marcus Aurelius  
-- [🔦💡 Man's Search for Meaning](/content/books/mans-search-for-meaning.md) by Viktor Frankl  
+- [🤔🧘 Meditations](../books/meditations.md) by Marcus Aurelius  
+- [🔦💡 Man's Search for Meaning](../books/mans-search-for-meaning.md) by Viktor Frankl  
   
 ### 🧠 Deeper Exploration  
   
-- [💖 Self-Compassion](/content/books/self-compassion.md) by Kristin Neff  
+- [💖 Self-Compassion](../books/self-compassion.md) by Kristin Neff  
   
 ## 🦋 Bluesky    
 <blockquote class="bluesky-embed" data-bluesky-uri="at://did:plc:i4yli6h7x2uoj7acxunww2fc/app.bsky.feed.post/3mgzwzr5me32i" data-bluesky-cid="bafyreibxuejkhtbpcihteqcgiumizxmetsoln4ou77jazlws7icph5va3u"><p>2026-03-14 | 🐔 🌬️ The Quiet After the Storm — Moving Forward Together 🐔  

@@ -7,7 +7,7 @@ share: true
 affiliate link: https://amzn.to/447m8yH
 CTA: Reclaim humanity.
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # ☀️⛓️🕊️ The Sun Does Shine: How I Found Life and Freedom on Death Row  
 [🛒 The Sun Does Shine: How I Found Life and Freedom on Death Row. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/447m8yH)  
   
@@ -41,9 +41,9 @@ CTA: Reclaim humanity.
   
 ### 👯 Similar Books  
   
-* **[🧑🏿‍⚖️🔄 Just Mercy: A Story of Justice and Redemption](./just-mercy-a-story-of-justice-and-redemption.md)** by Bryan Stevenson. Written by the attorney who helped free Anthony Ray Hinton, this book details Stevenson's work with the Equal Justice Initiative and multiple cases of wrongful conviction and injustice, offering a broader look at systemic issues.  
+* **[🧑🏿‍⚖️🔄 Just Mercy: A Story of Justice and Redemption](/content/books/just-mercy-a-story-of-justice-and-redemption.md)** by Bryan Stevenson. Written by the attorney who helped free Anthony Ray Hinton, this book details Stevenson's work with the Equal Justice Initiative and multiple cases of wrongful conviction and injustice, offering a broader look at systemic issues.  
 * 🔒 ***Solitary: Unbroken by Four Decades in Solitary Confinement*** by Albert Woodfox. A memoir by one of the "Angola Three," who spent decades in solitary confinement in a Louisiana prison, highlighting the psychological toll of isolation and the fight for justice.  
-* **[🧑🏿⛓️🙈 The New Jim Crow: Mass Incarceration in the Age of Colorblindness](./the-new-jim-crow-mass-incarceration-in-the-age-of-colorblindness.md)** by Michelle Alexander. This influential book argues that the U.S. criminal justice system acts as a contemporary system of racial control, similar to historical Jim Crow laws. 🌍 It provides a broader sociological context for the issues raised in Hinton's memoir.  
+* **[🧑🏿⛓️🙈 The New Jim Crow: Mass Incarceration in the Age of Colorblindness](/content/books/the-new-jim-crow-mass-incarceration-in-the-age-of-colorblindness.md)** by Michelle Alexander. This influential book argues that the U.S. criminal justice system acts as a contemporary system of racial control, similar to historical Jim Crow laws. 🌍 It provides a broader sociological context for the issues raised in Hinton's memoir.  
 * 💣 ***Death in the Haymarket: A Story of Chicago, the First Labor Movement and the Bombing That Divided Gilded Age America*** by James Green. While historical, this book examines a pivotal moment of injustice in American labor history, involving wrongful convictions and executions, resonating with themes of systemic bias against marginalized groups.  
   
 ### 🆚 Contrasting Books  
@@ -54,13 +54,13 @@ CTA: Reclaim humanity.
   
 ### 🎨 Creatively Related Books  
   
-* 🧠 **[🔦💡 Man's Search for Meaning](./mans-search-for-meaning.md)** by Viktor Frankl. A psychiatrist's experience in Nazi concentration camps leads him to explore the human drive to find meaning in all circumstances, even the most horrific. 🙏 This resonates with Hinton's ability to find purpose and maintain his spirit on death row.  
+* 🧠 **[🔦💡 Man's Search for Meaning](/content/books/mans-search-for-meaning.md)** by Viktor Frankl. A psychiatrist's experience in Nazi concentration camps leads him to explore the human drive to find meaning in all circumstances, even the most horrific. 🙏 This resonates with Hinton's ability to find purpose and maintain his spirit on death row.  
 * ⚔️ ***The Count of Monte Cristo*** by Alexandre Dumas. A classic novel of wrongful imprisonment, escape, and elaborate revenge. 🕊️ While a fictional adventure, it taps into the deep-seated human desire for justice and freedom after being unjustly confined.  
 * 🦋 ***The Diving Bell and the Butterfly*** by Jean-Dominique Bauby. Written by a man with locked-in syndrome who could only communicate by blinking one eye, this memoir is a profound example of the power of the mind and imagination to transcend physical limitations, mirroring Hinton's mental escapes on death row.  
 * 🏡 ***One Hundred Years of Solitude*** by Gabriel García Márquez. This novel, with its sweeping narrative and magical realism, can be creatively linked through the theme of enduring isolation and the ways individuals and families cope with long stretches of confined existence and historical cycles, albeit on a vastly different scale and context than Hinton's personal story.  
-* **[🤴 The Little Prince](./the-little-prince.md)** by Antoine de Saint-Exupéry. This philosophical novella, often read for its simple language and deep insights, can be creatively related through its exploration of essential truths, human connection, and the importance of seeing with the heart – ideas that resonate with Hinton's journey of finding compassion and maintaining his humanity in a dehumanizing environment.  
+* **[🤴 The Little Prince](/content/books/the-little-prince.md)** by Antoine de Saint-Exupéry. This philosophical novella, often read for its simple language and deep insights, can be creatively related through its exploration of essential truths, human connection, and the importance of seeing with the heart – ideas that resonate with Hinton's journey of finding compassion and maintaining his humanity in a dehumanizing environment.  
   
-## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
+## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on The Sun Does Shine: How I Found Life and Freedom on Death Row. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.  
   
 ## 🐦 Tweet  

@@ -10,7 +10,7 @@ Channel: EO
 tags:
 youtube: https://youtu.be/xWYb7tImErI
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md)  
 # 🤖📈🌟 The Only Trait for Success in the AI Era—How to Build It | Carnegie Mellon University Po-Shen Loh  
 ![The Only Trait for Success in the AI Era—How to Build It | Carnegie Mellon University Po-Shen Loh](https://youtu.be/xWYb7tImErI)  
   
@@ -25,9 +25,9 @@ youtube: https://youtu.be/xWYb7tImErI
 This ⚖️ perspective emphasizes a symbiotic relationship between humans and AI, where AI augments our capabilities rather than replacing us. 🧑‍💻 Other viewpoints, however, argue that AI poses an existential threat to jobs and even humanity itself, necessitating strict regulation. 📝 The video's focus on empathy and human connection offers a positive, human-centric approach to navigating the AI era. 📚 Topics to explore for a better understanding include the ethical implications of AI, the future of work and the economy, and the role of education in developing the skills most needed in an AI-driven world.  
   
 ## 📚 Book Recommendations  
-* [🧬👥💾 Life 3.0: Being Human in the Age of Artificial Intelligence](../books/life-3-0.md) by Max Tegmark: Explores the future of life on Earth and beyond, considering how AI could impact consciousness, meaning, and our ultimate destiny.  
+* [🧬👥💾 Life 3.0: Being Human in the Age of Artificial Intelligence](/content/books/life-3-0.md) by Max Tegmark: Explores the future of life on Earth and beyond, considering how AI could impact consciousness, meaning, and our ultimate destiny.  
 * The Second Machine Age by Erik Brynjolfsson and Andrew McAfee: A look at how digital technologies are transforming labor, skills, and the economy, and what we can do to thrive in the new era.  
-* [🤔🐇🐢 Thinking, Fast and Slow](../books/thinking-fast-and-slow.md) by Daniel Kahneman: An examination of the two systems that drive the way we think, which is essential for understanding how to be a critical thinker.  
+* [🤔🐇🐢 Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md) by Daniel Kahneman: An examination of the two systems that drive the way we think, which is essential for understanding how to be a critical thinker.  
 * Dare to Lead by Brené Brown: Focuses on the importance of empathy and vulnerability in leadership, offering a creative take on the interpersonal skills highlighted in the video.  
   
 ## 🐦 Tweet  

@@ -11,7 +11,7 @@ force_analyze_links: false
 link_analysis_time: 2026-03-22T06:07:05.207Z
 link_analysis_model: gemini-3.1-flash-lite-preview
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🌌3️⃣⚛️ The Three-Body Problem  
 [🛒 3️⃣⚛️ The Three-Body Problem. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4kmbewG)  
   
@@ -56,12 +56,12 @@ A: 🤓 The narrative contains heavy scientific theory but presents it through a
 ### ❤️ If You Loved This  
   
 * 🛸 Contact by Carl Sagan  
-* [🕷️⏳ Children of Time](./children-of-time.md) by Adrian Tchaikovsky  
+* [🕷️⏳ Children of Time](/content/books/children-of-time.md) by Adrian Tchaikovsky  
   
 ### ↔️ Similar But Different  
   
-* [🏜️🐛 Dune](./dune.md) by Frank Herbert  
-* [🏗️🧱🌍 Foundation](./Foundation.md) by Isaac Asimov  
+* [🏜️🐛 Dune](/content/books/dune.md) by Frank Herbert  
+* [🏗️🧱🌍 Foundation](/content/books/Foundation.md) by Isaac Asimov  
   
 ## 🫵 What Do You Think?  
   

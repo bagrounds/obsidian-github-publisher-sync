@@ -10,7 +10,7 @@ Channel: Heather Cox Richardson
 tags:
 youtube: https://youtu.be/OHZ0hiZUydA
 ---
-[Home](../index.md) > [Videos](./index.md) | [🏛️🇺🇸📖 Heather Cox Richardson](../people/heather-cox-richardson.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md) | [🏛️🇺🇸📖 Heather Cox Richardson](/content/people/heather-cox-richardson.md)  
 # 📉🐘🇺🇸😬 Huge Economic Problems Coming for Republicans and the U.S. | Explainer  
 ![Huge Economic Problems Coming for Republicans and the U.S. | Explainer](https://youtu.be/OHZ0hiZUydA)  
   
@@ -26,7 +26,7 @@ youtube: https://youtu.be/OHZ0hiZUydA
 ▶️ The video's predictions about the negative economic impacts of tariffs, unemployment, and cuts to social programs are largely consistent with views found in other economic analyses. For instance, some economists express concerns that tariffs create economic uncertainty, which can lead to higher inflation, slower GDP growth, and a "low-hire, low-fire" labor market. Other analyses also predict that tariffs will lead to lower incomes for households and a decrease in real economic output. Some economists use the term "stagflation lite" to describe the combination of a weaker job market and higher inflation, which aligns with the video's concerns.  
   
 ## 📚 Book Recommendations  
-* [🏷️🏚️💔🏰 The Price of Inequality: How Today's Divided Society Endangers Our Future](../books/the-price-of-inequality-how-todays-divided-society-endangers-our-future.md) by Joseph E. Stiglitz: This book offers a critical perspective on how a divided society with growing inequality can endanger the future, which is relevant to the video's discussion of social program cuts and healthcare costs.  
+* [🏷️🏚️💔🏰 The Price of Inequality: How Today's Divided Society Endangers Our Future](/content/books/the-price-of-inequality-how-todays-divided-society-endangers-our-future.md) by Joseph E. Stiglitz: This book offers a critical perspective on how a divided society with growing inequality can endanger the future, which is relevant to the video's discussion of social program cuts and healthcare costs.  
 * 📖 *Clashing over Commerce: A History of US Trade Policy* by Douglas A. Irwin: For a deeper historical context, this book provides a comprehensive look at the ongoing debate over US trade policy, offering a different perspective on the long-term effects of tariffs.  
 * 📖 *Trade Wars Are Class Wars* by Matthew C. Klein and Michael Pettis: This book explores how rising inequality distorts the global economy, connecting the video's themes of economic policy and inequality on an international scale.  
 * 📖 *The American Political Economy* edited by Jacob S. Hacker, Alexander Hertel-Fernandez, Paul Pierson, and Kathleen Thelen: This collection of essays provides an academic framework for understanding the interplay between markets and politics in the United States, offering a broader view of the forces at play.

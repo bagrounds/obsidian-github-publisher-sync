@@ -7,7 +7,7 @@ share: true
 affiliate link: https://amzn.to/48yl8Hx
 CTA: ✝️ Explore belief.
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # ✝️ Mere Christianity  
 [🛒 Mere Christianity. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/48yl8Hx)  
   
@@ -43,15 +43,15 @@ CTA: ✝️ Explore belief.
   
 * ❓ **The Reason for God by Timothy Keller:** This book addresses common doubts and objections to Christianity in a contemporary context, engaging with skepticism using a logical and compassionate tone, much like Lewis.  
 * 🛡️ **Orthodoxy by G K Chesterton:** A classic work of Christian apologetics, Chesterton presents a witty and profound defense of traditional Christian belief, often arriving at seemingly paradoxical truths through compelling reasoning, a style Lewis admired.  
-* **[📰❓✝️ The Case for Christ: A Journalist's Personal Investigation of the Evidence for Jesus](books/the-case-for-christ-a-journalists-personal-investigation-of-the-evidence-for-jesus.md) by Lee Strobel:** A former atheist investigative journalist, Strobel examines the historical evidence for Jesus Christ by interviewing experts across various fields, offering a fact-based apologetic similar to Lewis's reasoned approach.  
+* **[📰❓✝️ The Case for Christ: A Journalist's Personal Investigation of the Evidence for Jesus](/content/books/the-case-for-christ-a-journalists-personal-investigation-of-the-evidence-for-jesus.md) by Lee Strobel:** A former atheist investigative journalist, Strobel examines the historical evidence for Jesus Christ by interviewing experts across various fields, offering a fact-based apologetic similar to Lewis's reasoned approach.  
 * 🤕 **The Problem of Pain by C S Lewis:** Another non-fiction work by Lewis, this book directly tackles one of the most significant challenges to Christian faith—the existence of suffering in a world created by an all-loving God—with his characteristic intellectual rigor.  
   
 ### ➖ Contrasting Books  
   
 📖 These recommendations offer alternative worldviews, critiques of religion, or different perspectives on faith and history.  
   
-* **[❓✝️ The God Delusion](./the-god-delusion.md) by Richard Dawkins:** A prominent work of the New Atheism movement, Dawkins presents a forceful argument against the existence of God and criticizes religious belief from a scientific and rationalist perspective, directly contrasting Lewis's arguments.  
-* **[🙏🚫🌍 God Is Not Great: How Religion Poisons Everything](./god-is-not-great-how-religion-poisons-everything.md) by Christopher Hitchens:** This book offers another eloquent and fervent critique of religion, arguing for its detrimental impact on human history and society, providing a direct counterpoint to apologetic defenses of faith.  
+* **[❓✝️ The God Delusion](/content/books/the-god-delusion.md) by Richard Dawkins:** A prominent work of the New Atheism movement, Dawkins presents a forceful argument against the existence of God and criticizes religious belief from a scientific and rationalist perspective, directly contrasting Lewis's arguments.  
+* **[🙏🚫🌍 God Is Not Great: How Religion Poisons Everything](/content/books/god-is-not-great-how-religion-poisons-everything.md) by Christopher Hitchens:** This book offers another eloquent and fervent critique of religion, arguing for its detrimental impact on human history and society, providing a direct counterpoint to apologetic defenses of faith.  
 * 📜 **A History of God: The 4,000-Year Quest of Judaism, Christianity, and Islam by Karen Armstrong:** While not an anti-religious text, Armstrong's book provides a historical and comparative study of the evolution of the concept of God across the three major monotheistic traditions, offering a broader, less dogmatic perspective than Lewis.  
 * 🗡️ **Zealot: The Life and Times of Jesus of Nazareth by Reza Aslan:** Aslan's historical account of Jesus portrays him primarily as a revolutionary political figure, rather than the divine Son of God central to Lewis's theological claims, presenting a different interpretation of Jesus' life and mission.  
   

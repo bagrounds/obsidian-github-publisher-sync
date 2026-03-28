@@ -8,7 +8,7 @@ Author:
 tags:
 affiliate link: https://amzn.to/4ky6Wlc
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🦋🌀💥🤖 Nonlinear Dynamics and Chaos: With Applications to Physics, Biology, Chemistry, and Engineering  
 [🛒 Nonlinear Dynamics and Chaos: With Applications to Physics, Biology, Chemistry, and Engineering. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4ky6Wlc)  
   
@@ -58,13 +58,13 @@ Strogatz's book is widely praised for its clarity, accessibility, and rigor. His
   
 ### 📚 Book Recommendations 📖  
 * **Best Alternate Book on the Same Topic:** "Nonlinear Dynamics and Chaos: Geometrical Methods for Engineers and Scientists" by Tufillaro, Abbott, and Reilly. This book provides a more hands-on and experimental approach. 🛠️  
-* **Best Tangentially Related Book:** "[Sync](./sync.md): How Order Emerges From Chaos In the Universe, Nature, and Daily Life" by Steven H. Strogatz. This book focuses on the phenomenon of synchronization, a related aspect of nonlinear dynamics. 🤝  
-* **Best Diametrically Opposed Book:** [⚫🦢🎲 The Black Swan: The Impact of the Highly Improbable](./the-black-swan-the-impact-of-the-highly-improbable.md) by Nassim Nicholas Taleb. While both books deal with unpredictability, Taleb emphasizes the role of rare events and randomness, contrasting with Strogatz's focus on deterministic chaos. 🦢  
+* **Best Tangentially Related Book:** "[Sync](/content/books/sync.md): How Order Emerges From Chaos In the Universe, Nature, and Daily Life" by Steven H. Strogatz. This book focuses on the phenomenon of synchronization, a related aspect of nonlinear dynamics. 🤝  
+* **Best Diametrically Opposed Book:** [⚫🦢🎲 The Black Swan: The Impact of the Highly Improbable](/content/books/the-black-swan-the-impact-of-the-highly-improbable.md) by Nassim Nicholas Taleb. While both books deal with unpredictability, Taleb emphasizes the role of rare events and randomness, contrasting with Strogatz's focus on deterministic chaos. 🦢  
 * **Best Fiction Book Incorporating Related Ideas:** "Jurassic Park" by Michael Crichton. This novel explores the implications of chaos theory in a fictional context, highlighting the unpredictability of complex systems. 🦖  
-* **Best More General Book:** "[Complexity](./complexity.md): A Guided Tour" by Melanie Mitchell. This book provides a broader overview of complex systems, including nonlinear dynamics and chaos. 🌐  
+* **Best More General Book:** "[Complexity](/content/books/complexity.md): A Guided Tour" by Melanie Mitchell. This book provides a broader overview of complex systems, including nonlinear dynamics and chaos. 🌐  
 * **Best More Specific Book:** "Chaotic Dynamics: An Introduction" by Gregory L. Baker and Jerry P. Gollub. This book is a more mathematical and rigorous treatment of chaotic systems. 🔢  
 * **Best More Rigorous Book:** "Elements of Differentiable Dynamics and Bifurcation Theory" by David Ruelle. This book is for those who want a deeper mathematical understanding of the subject. 📐  
-* **Best More Accessible Book:** "[Chaos: Making a New Science](./chaos.md)" by James Gleick. This book is a popular science account of the history and development of chaos theory. 📜  
+* **Best More Accessible Book:** "[Chaos: Making a New Science](/content/books/chaos.md)" by James Gleick. This book is a popular science account of the history and development of chaos theory. 📜  
   
 ## 💬 [Gemini](https://gemini.google.com) Prompt  
 > Summarize the book: Nonlinear Dynamics and Chaos: With Applications to Physics, Biology, Chemistry, and Engineering by Steven H. Strogatz. Start with a TL;DR - a single statement that conveys a maximum of the useful information provided in the book. Next, explain how this book may offer a new or surprising perspective. Follow this with a deep dive. Catalogue the topics, methods, and research discussed. Be sure to highlight any significant theories, theses, or mental models proposed. Provide a critical analysis of the quality of the information presented, using scientific backing, author credentials, authoritative reviews, and other markers of high quality information as justification. Emphasize practical takeaways. Make the following additional book recommendations: the best alternate book on the same topic; the best book that is tangentially related; the best book that is diametrically opposed; the best fiction book that incorporates related ideas; the best book that is more general or more specific; and the best book that is more rigorous or more accessible than this book. Format your response as markdown, starting at heading level H3, with inline links, for easy copy paste. Use meaningful emojis generously (at least one per heading, bullet point, and paragraph) to enhance readability. Do not include broken links or links to commercial sites.  

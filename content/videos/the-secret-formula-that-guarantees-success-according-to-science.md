@@ -10,7 +10,7 @@ Channel: SpoonFedStudy
 tags:
 youtube: https://youtu.be/lweapG-zQ0g
 ---
-[Home](../index.md) > [Videos](./index.md) | [🥄👶📚 SpoonFedStudy](../topics/spoonfedstudy.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md) | [🥄👶📚 SpoonFedStudy](/content/topics/spoonfedstudy.md)  
 # 🧪📈✅💡 The secret formula that guarantees success (according to science)  
 ![The secret formula that guarantees success (according to science)](https://youtu.be/lweapG-zQ0g)  
   
@@ -25,6 +25,6 @@ This 🎥 video covers the 🔑 key insights from a 👨‍🔬 research paper b
 This 🎥 video offers a compelling, 🔬 data-driven perspective on failure. A contrasting view might be found in 📚 philosophies that emphasize the importance of 🧘‍♀️ mindful reflection and patience over speed and efficiency. Another perspective could explore the 🗣️ societal and systemic factors that contribute to success and failure, which are not addressed in the video's focus on individual resilience and action. Topics to 🔍 explore for a better understanding could include the 🗺️ limitations of the research paper's dataset, and how these 💡 insights apply to fields beyond 👩‍🔬 science and entrepreneurship.  
   
 ## 📚 Book Recommendations  
-* [🌱🧘🏼‍♀️🏆 Mindset: The New Psychology of Success](../books/mindset.md) by Carol Dweck: 🧠 Explores the idea that success is not just about talent, but about your ability to 📈 improve and learn from failure.  
+* [🌱🧘🏼‍♀️🏆 Mindset: The New Psychology of Success](/content/books/mindset.md) by Carol Dweck: 🧠 Explores the idea that success is not just about talent, but about your ability to 📈 improve and learn from failure.  
 * Black Box Thinking by Matthew Syed: ✈️ Compares the airline industry's approach to failure to other fields, arguing that learning from mistakes is key to 🚀 innovation.  
-* [🎨🤓 The Art of Learning: A Journey in the Pursuit of Excellence](../books/the-art-of-learning.md) by Josh Waitzkin: ♟️ A chess prodigy's perspective on how to excel in any field by embracing struggle and failure as part of the 📚 learning process.
+* [🎨🤓 The Art of Learning: A Journey in the Pursuit of Excellence](/content/books/the-art-of-learning.md) by Josh Waitzkin: ♟️ A chess prodigy's perspective on how to excel in any field by embracing struggle and failure as part of the 📚 learning process.

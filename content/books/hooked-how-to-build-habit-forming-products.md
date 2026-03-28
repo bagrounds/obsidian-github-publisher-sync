@@ -11,7 +11,7 @@ force_analyze_links: false
 link_analysis_time: 2026-03-25T08:15:16.675Z
 link_analysis_model: gemini-3.1-flash-lite-preview
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🎣📱 Hooked: How to Build Habit-Forming Products  
 [🛒 Hooked: How to Build Habit-Forming Products. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/48vvWGq)  
   
@@ -111,17 +111,17 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 ### 📚 Book Recommendations  
   
 #### 📚 Similar Books (Behavioral Psychology, Habit Formation, Product Design)  
-* [🔄🧠💪 The Power of Habit: Why We Do What We Do in Life and Business](./the-power-of-habit.md) by Charles Duhigg  
+* [🔄🧠💪 The Power of Habit: Why We Do What We Do in Life and Business](/content/books/the-power-of-habit.md) by Charles Duhigg  
     * 🧠 Focuses on the science of habit formation in individuals, organizations, and societies.  
-* [⚛️🔄 Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones](./atomic-habits.md) by James Clear  
+* [⚛️🔄 Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones](/content/books/atomic-habits.md) by James Clear  
     * ✅ Provides a practical, actionable framework for building good habits and breaking bad ones through small, incremental changes.  
-* [🧘 Indistractable: How to Control Your Attention and Choose Your Life](./indistractable.md) by Nir Eyal  
+* [🧘 Indistractable: How to Control Your Attention and Choose Your Life](/content/books/indistractable.md) by Nir Eyal  
     * ✍️ Written by the same author, focuses on managing attention and minimizing distractions to align actions with intentions.  
-* [🍃🧠🤝🏼 Influence: The Psychology of Persuasion](./influence.md) by Robert Cialdini  
+* [🍃🧠🤝🏼 Influence: The Psychology of Persuasion](/content/books/influence.md) by Robert Cialdini  
     * 🔎 Explores six universal principles of influence that impact decision-making and human behavior.  
-* [🦠 Contagious: Why Things Catch On](./contagious.md) by Jonah Berger  
+* [🦠 Contagious: Why Things Catch On](/content/books/contagious.md) by Jonah Berger  
     * 🔎 Examines why certain products, ideas, and behaviors catch on and become popular.  
-* [🤔🐇🐢 Thinking, Fast and Slow](./thinking-fast-and-slow.md) by Daniel Kahneman  
+* [🤔🐇🐢 Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md) by Daniel Kahneman  
     * 🧠 Delves into the two systems of thinking that shape our judgments and decisions.  
   
 #### ⚖️ Contrasting Books (Ethical Design, User Well-being, Mindful Technology)  
@@ -129,21 +129,21 @@ link_analysis_model: gemini-3.1-flash-lite-preview
     * 😠 Critiques biased, discriminatory, and harmful design practices in technology.  
 * 💔 Ruined by Design by Mike Monteiro  
     * 🤝 Argues for designers' ethical responsibility and the need to design for social good.  
-* [📱⬇️🧘 Digital Minimalism: Choosing a Focused Life in a Noisy World](./digital-minimalism-choosing-a-focused-life-in-a-noisy-world.md) by Cal Newport  
+* [📱⬇️🧘 Digital Minimalism: Choosing a Focused Life in a Noisy World](/content/books/digital-minimalism-choosing-a-focused-life-in-a-noisy-world.md) by Cal Newport  
     * 🧘 Advocates for a philosophy of technology use that minimizes screen time and focuses on high-value activities.  
-* [👁️‍🗨️💰⛓️👤 The Age of Surveillance Capitalism: The Fight for a Human Future at the New Frontier of Power](./the-age-of-surveillance-capitalism.md) by Shoshana Zuboff  
+* [👁️‍🗨️💰⛓️👤 The Age of Surveillance Capitalism: The Fight for a Human Future at the New Frontier of Power](/content/books/the-age-of-surveillance-capitalism.md) by Shoshana Zuboff  
     * 🔎 Examines the economic system where personal data is extracted and commodified, raising privacy and autonomy concerns.  
   
 #### 🎨 Creatively Related Books (Psychology of Engagement, Motivation, User Experience)  
-* [🏎️⛽ Drive: The Surprising Truth About What Motivates Us](./drive-the-surprising-truth-about-what-motivates-us.md) by Daniel H Pink  
+* [🏎️⛽ Drive: The Surprising Truth About What Motivates Us](/content/books/drive-the-surprising-truth-about-what-motivates-us.md) by Daniel H Pink  
     * 🔎 Explores intrinsic motivation, autonomy, mastery, and purpose.  
-* [🚫💭🌐 Don't Make Me Think, Revisited: A Common Sense Approach to Web Usability](./dont-make-me-think-revisited.md) Revisited by Steve Krug  
+* [🚫💭🌐 Don't Make Me Think, Revisited: A Common Sense Approach to Web Usability](/content/books/dont-make-me-think-revisited.md) Revisited by Steve Krug  
     * 💻 A classic on web usability, emphasizing intuitive and effortless user experiences.  
-* [👉🤏 Nudge: Improving Decisions about Health, Wealth, and Happiness](./nudge.md) by Richard H Thaler and Cass R Sunstein  
+* [👉🤏 Nudge: Improving Decisions about Health, Wealth, and Happiness](/content/books/nudge.md) by Richard H Thaler and Cass R Sunstein  
     * 🗣️ Discusses how subtle interventions can "nudge" people towards better decisions.  
-* [🔮🤷🏼‍♀️🤪 Predictably Irrational: The Hidden Forces That Shape Our Decisions](./predictably-irrational.md) by Dan Ariely  
+* [🔮🤷🏼‍♀️🤪 Predictably Irrational: The Hidden Forces That Shape Our Decisions](/content/books/predictably-irrational.md) by Dan Ariely  
     * 🔎 Reveals the hidden forces that shape our decisions.  
-* [💺🚪💡🤔 The Design of Everyday Things](./the-design-of-everyday-things.md) by Don Norman  
+* [💺🚪💡🤔 The Design of Everyday Things](/content/books/the-design-of-everyday-things.md) by Don Norman  
     * 💻 Focuses on user-centered design principles for intuitive and effective products.".  
   
 ## 💬 [Gemini](https://gemini.google.com) Prompt (gemini-2.5-flash)  

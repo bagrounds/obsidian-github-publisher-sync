@@ -10,7 +10,7 @@ Channel: PBS NewsHour
 tags:
 youtube: https://youtu.be/EsA3EOo7CXY
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md)  
 # 🤔📊📉❓ What happens when no one trusts a country’s economic data  
 ![What happens when no one trusts a country’s economic data](https://youtu.be/EsA3EOo7CXY)  
   
@@ -63,15 +63,15 @@ youtube: https://youtu.be/EsA3EOo7CXY
 ## 📚 Book Recommendations  
   
 ### ↔️ Similar  
-* [💀👨‍🏫 The Death of Expertise: The Campaign Against Established Knowledge and Why It Matters](../books/the-death-of-expertise-the-campaign-against-established-knowledge-and-why-it-matters.md) by Tom Nichols: focuses on the danger to democracy and public life when citizens and leaders reject factual, expert-derived knowledge, echoing the crisis of trust in statistical agencies.  
-* [🤔🌍📈✅ Factfulness: Ten Reasons We're Wrong About the World - and Why Things Are Better Than You Think](../books/factfulness.md) by Hans Rosling shows how people's dramatic, often political, worldview can distort their perception of global economic and social data, arguing for a fact-based approach that statistical agencies are meant to provide.  
+* [💀👨‍🏫 The Death of Expertise: The Campaign Against Established Knowledge and Why It Matters](/content/books/the-death-of-expertise-the-campaign-against-established-knowledge-and-why-it-matters.md) by Tom Nichols: focuses on the danger to democracy and public life when citizens and leaders reject factual, expert-derived knowledge, echoing the crisis of trust in statistical agencies.  
+* [🤔🌍📈✅ Factfulness: Ten Reasons We're Wrong About the World - and Why Things Are Better Than You Think](/content/books/factfulness.md) by Hans Rosling shows how people's dramatic, often political, worldview can distort their perception of global economic and social data, arguing for a fact-based approach that statistical agencies are meant to provide.  
   
 ### 🆚 Contrasting  
-* [🙈📊🔢 Naked Statistics: Stripping the Dread from the Data](../books/naked-statistics.md) by Charles Wheelan offers a lighthearted, accessible perspective on how to understand and trust statistics, contrasting with the video's focus on reasons not to trust data.  
-* [📡🌫️🔮🎲 The Signal and the Noise: Why So Many Predictions Fail - but Some Don't](../books/the-signal-and-the-noise.md) by Nate Silver explores the challenge of extracting reliable predictions (signals) from flawed or messy data (noise), offering a practical, technical counterpoint to the political manipulation discussed in the video.  
+* [🙈📊🔢 Naked Statistics: Stripping the Dread from the Data](/content/books/naked-statistics.md) by Charles Wheelan offers a lighthearted, accessible perspective on how to understand and trust statistics, contrasting with the video's focus on reasons not to trust data.  
+* [📡🌫️🔮🎲 The Signal and the Noise: Why So Many Predictions Fail - but Some Don't](/content/books/the-signal-and-the-noise.md) by Nate Silver explores the challenge of extracting reliable predictions (signals) from flawed or messy data (noise), offering a practical, technical counterpoint to the political manipulation discussed in the video.  
   
 ### 🎨 Creatively Related  
-* [⚫🦢🎲 The Black Swan: The Impact of the Highly Improbable](../books/the-black-swan-the-impact-of-the-highly-improbable.md) by Nassim Nicholas Taleb: is a deep dive into the impact of rare, unpredictable events that defy statistical models, relating to how data manipulation or sudden loss of trust can be an unpredictable Black Swan event with extreme consequences.  
+* [⚫🦢🎲 The Black Swan: The Impact of the Highly Improbable](/content/books/the-black-swan-the-impact-of-the-highly-improbable.md) by Nassim Nicholas Taleb: is a deep dive into the impact of rare, unpredictable events that defy statistical models, relating to how data manipulation or sudden loss of trust can be an unpredictable Black Swan event with extreme consequences.  
 * ⚖️ The Great Reversal by Thomas Philippon: uses economic data to argue that the U.S. economy has become less competitive due to anti-competitive practices, tangentially relating by showing how a clear-eyed analysis of data can reveal structural issues that government figures might otherwise mask.  
   
 ## 🐦 Tweet  

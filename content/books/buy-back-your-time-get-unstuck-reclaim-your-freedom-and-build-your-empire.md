@@ -7,7 +7,7 @@ share: true
 CTA: ⏰ Seize liberation.
 affiliate link: https://amzn.to/3XsOvEu
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # ⏳🔓👑 Buy Back Your Time: Get Unstuck, Reclaim Your Freedom, and Build Your Empire  
 [🛒 Buy Back Your Time: Get Unstuck, Reclaim Your Freedom, and Build Your Empire. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3XsOvEu)  
   
@@ -81,12 +81,12 @@ affiliate link: https://amzn.to/3XsOvEu
 * The Entrepreneurial Myth Revisited by Michael E. Gerber  
   
 ### ➖ Contrasting  
-* [🤿💼 Deep Work: Rules for Focused Success in a Distracted World](./deep-work.md) by Cal Newport  
-* [➖💯 Essentialism: The Disciplined Pursuit of Less](./essentialism-the-disciplined-pursuit-of-less.md) by Greg McKeown  
-* [✅😌 Getting Things Done: The Art of Stress-Free Productivity](./getting-things-done-the-art-of-stress-free-productivity.md) by David Allen  
+* [🤿💼 Deep Work: Rules for Focused Success in a Distracted World](/content/books/deep-work.md) by Cal Newport  
+* [➖💯 Essentialism: The Disciplined Pursuit of Less](/content/books/essentialism-the-disciplined-pursuit-of-less.md) by Greg McKeown  
+* [✅😌 Getting Things Done: The Art of Stress-Free Productivity](/content/books/getting-things-done-the-art-of-stress-free-productivity.md) by David Allen  
   
 ### 🔗 Related  
-* [❓🎯 Start with Why: How Great Leaders Inspire Everyone to Take Action](./start-with-why-how-great-leaders-inspire-everyone-to-take-action.md) by Simon Sinek  
+* [❓🎯 Start with Why: How Great Leaders Inspire Everyone to Take Action](/content/books/start-with-why-how-great-leaders-inspire-everyone-to-take-action.md) by Simon Sinek  
 * Traction by Gino Wickman  
 * Scaling Up by Verne Harnish  
   

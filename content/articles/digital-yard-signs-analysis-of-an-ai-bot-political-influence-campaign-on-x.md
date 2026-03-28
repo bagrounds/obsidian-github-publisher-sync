@@ -7,7 +7,7 @@ URL: https://bagrounds.org/articles/digital-yard-signs-analysis-of-an-ai-bot-pol
 Author:
 tags:
 ---
-[Home](../index.md) > [Articles](./index.md)  
+[Home](/content/index.md) > [Articles](/content/articles/index.md)  
 # 🤖📢❌ [Digital Yard Signs: Analysis of an AI Bot Political Influence Campaign on X](https://www.clemson.edu/centers-institutes/watt/hub/images/digital-yard-signs.pdf)  
   
 ## 🤖 AI Summary  
@@ -42,11 +42,11 @@ Topics to explore for a better understanding:
 ## 📚 Book Recommendations  
   
 ### ↔️ Similar  
-* [🎭🤫 Active Measures: The Secret History of Disinformation and Political Warfare](../books/active-measures-the-secret-history-of-disinformation-and-political-warfare.md) by Thomas Rid provides the deep historical context for modern influence campaigns, connecting traditional espionage to digital warfare.  
-* [🤖🏛️ Lie Machines: How to Save Democracy from Troll Armies, Deceitful Robots, Junk News Operations, and Political Operatives](../books/lie-machines-how-to-save-democracy-from-troll-armies-deceitful-robots-junk-news-operations-and-political-operatives.md) by Philip N. Howard examines the systematic use of **computational propaganda** and automation in shaping political outcomes.  
+* [🎭🤫 Active Measures: The Secret History of Disinformation and Political Warfare](/content/books/active-measures-the-secret-history-of-disinformation-and-political-warfare.md) by Thomas Rid provides the deep historical context for modern influence campaigns, connecting traditional espionage to digital warfare.  
+* [🤖🏛️ Lie Machines: How to Save Democracy from Troll Armies, Deceitful Robots, Junk News Operations, and Political Operatives](/content/books/lie-machines-how-to-save-democracy-from-troll-armies-deceitful-robots-junk-news-operations-and-political-operatives.md) by Philip N. Howard examines the systematic use of **computational propaganda** and automation in shaping political outcomes.  
   
 ### 🆚 Contrasting  
-* [📢🕸️ Network Propaganda: Manipulation, Disinformation, and Radicalization in American Politics](../books/network-propaganda-manipulation-disinformation-and-radicalization-in-american-politics.md) by Yochai Benkler offers a scholarly framework for how disinformation spreads within different media networks.  
+* [📢🕸️ Network Propaganda: Manipulation, Disinformation, and Radicalization in American Politics](/content/books/network-propaganda-manipulation-disinformation-and-radicalization-in-american-politics.md) by Yochai Benkler offers a scholarly framework for how disinformation spreads within different media networks.  
 * 🐘 The Making of the President, 1960: The Landmark Political Series by Theodore H. White provides a classic look at a presidential campaign, illustrating traditional mechanics before the transformative and manipulative effects of modern social media and AI.  
   
 ### 🎨 Creatively Related  

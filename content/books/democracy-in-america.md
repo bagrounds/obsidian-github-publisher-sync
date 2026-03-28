@@ -10,7 +10,7 @@ affiliate link: https://amzn.to/4jsqOVj
 CTA: Understand democracy.
 updated: 2026-03-20T10:12:53.882Z
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🗳️🕊️🇺🇸 Democracy in America  
 [🛒 Democracy in America. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4jsqOVj)  
   
@@ -112,9 +112,9 @@ While Tocqueville's work is highly influential, it's important to acknowledge po
 ### 📚 Additional Book Recommendations  
   
 * **Best Alternate Book on the Same Topic:** "American Nations: A History of the Eleven Rival Regional Cultures of North America" by Colin Woodard 🇺🇸🗺️ - Offers a more contemporary and regionally focused analysis of American cultural and political divisions.  
-* **Best Book That Is Tangentially Related:** "[Bowling Alone](./bowling-alone.md): The Collapse and Revival of American Community" by Robert D. Putnam 🎳🤝 - Explores the decline of social capital and civic engagement in modern America, a concern Tocqueville also raised.  
-* **Best Book That Is Diametrically Opposed:** [🇺🇸📜 The Federalist Papers](./the-federalist-papers.md) by Alexander Hamilton, James Madison, and John Jay 📜🏛️ - A foundational text arguing for a strong federal government, a perspective that Tocqueville observed but viewed with some caution regarding potential centralization.  
-* **Best Fiction Book That Incorporates Related Ideas:** [🙅‍♀️👹 It Can't Happen Here](./it-cant-happen-here.md) by Sinclair Lewis 📖⚠️ - A dystopian novel exploring the rise of fascism in America, touching on themes of populism and the fragility of democratic institutions.  
+* **Best Book That Is Tangentially Related:** "[Bowling Alone](/content/books/bowling-alone.md): The Collapse and Revival of American Community" by Robert D. Putnam 🎳🤝 - Explores the decline of social capital and civic engagement in modern America, a concern Tocqueville also raised.  
+* **Best Book That Is Diametrically Opposed:** [🇺🇸📜 The Federalist Papers](/content/books/the-federalist-papers.md) by Alexander Hamilton, James Madison, and John Jay 📜🏛️ - A foundational text arguing for a strong federal government, a perspective that Tocqueville observed but viewed with some caution regarding potential centralization.  
+* **Best Fiction Book That Incorporates Related Ideas:** [🙅‍♀️👹 It Can't Happen Here](/content/books/it-cant-happen-here.md) by Sinclair Lewis 📖⚠️ - A dystopian novel exploring the rise of fascism in America, touching on themes of populism and the fragility of democratic institutions.  
 * **Best Book That Is More General:** "The Spirit of the Laws" by Montesquieu 🌍🏛️ - A foundational work of political theory that influenced Tocqueville, offering a broader comparative analysis of different forms of government.  
 * **Best Book That Is More Specific:** "The совершеннолетие of American Studies: Essays on the становление of a Discipline" edited by John Carlos Rowe 🇺🇸📚 - Offers a deeper academic exploration of the field of American Studies and its engagement with texts like Tocqueville's.  
 * **Best Book That Is More Rigorous:** "Political Order and Political Decay: From the Industrial Revolution to the Globalization of Democracy" by Francis Fukuyama 🌍🏛️➡️📉 - A more contemporary and theoretically dense analysis of state-building, rule of law, and accountability in democratic development.  

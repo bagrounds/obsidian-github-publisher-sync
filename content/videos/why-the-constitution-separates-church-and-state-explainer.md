@@ -10,7 +10,7 @@ Channel: Heather Cox Richardson
 tags:
 youtube: https://youtu.be/WN8bToD7SCQ
 ---
-[Home](../index.md) > [Videos](./index.md) | [🏛️🇺🇸📖 Heather Cox Richardson](../people/heather-cox-richardson.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md) | [🏛️🇺🇸📖 Heather Cox Richardson](/content/people/heather-cox-richardson.md)  
 # 🏛️✝️🚫 Why the Constitution Separates Church and State | Explainer  
 ![Why the Constitution Separates Church and State | Explainer](https://youtu.be/WN8bToD7SCQ)  
   
@@ -26,6 +26,6 @@ The video provides a historical perspective that is often contrasted with the vi
   
 ### 📚 Book Recommendations  
 * 💡 American Creation by Joseph J. Ellis provides a nuanced look at the founding generation and the compromises they made.  
-* [🙏🏛️ The Establishment Clause: Religion and the First Amendment](../books/the-establishment-clause-religion-and-the-first-amendment.md) by Leonard Levy delves into the legal history of the separation of church and state.  
+* [🙏🏛️ The Establishment Clause: Religion and the First Amendment](/content/books/the-establishment-clause-religion-and-the-first-amendment.md) by Leonard Levy delves into the legal history of the separation of church and state.  
 * 📖 A People's History of the United States by Howard Zinn offers a contrasting, bottom-up perspective on American history, including the role of religion.  
 * ✝️ God's Crucible: Islam and the Making of Europe, 570-1215 by David Levering Lewis provides a historical context of how religion shaped early Europe.

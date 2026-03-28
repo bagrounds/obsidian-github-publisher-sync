@@ -8,7 +8,7 @@ CTA: 👨‍💻 Master craftsmanship.
 affiliate link: https://amzn.to/4nK3tR7
 updated: 2026-03-14T14:09:53.170Z
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # ✅💻 Code Complete  
 [🛒 Code Complete. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4nK3tR7)  
   
@@ -75,22 +75,22 @@ updated: 2026-03-14T14:09:53.170Z
 ✅ A: The book is ideal for advanced-beginner to intermediate programmers seeking to deepen their understanding of software craftsmanship and best practices. Even experienced developers can use it as a reference or to reinforce core concepts.  
   
 ### 💡 Q: What are some alternatives or complementary books to Code Complete?  
-✅ A: Complementary books include [🧑‍💻📈 The Pragmatic Programmer: Your Journey to Mastery](books/the-pragmatic-programmer-your-journey-to-mastery.md), [🧼💾 Clean Code: A Handbook of Agile Software Craftsmanship](./clean-code.md), [🗑️✨ Refactoring: Improving the Design of Existing Code](books/refactoring-improving-the-design-of-existing-code.md), and [🧱🛠️ Working Effectively with Legacy Code](books/working-effectively-with-legacy-code.md). For a more concise take on similar principles, The Practice of Programming is sometimes suggested.  
+✅ A: Complementary books include [🧑‍💻📈 The Pragmatic Programmer: Your Journey to Mastery](/content/books/the-pragmatic-programmer-your-journey-to-mastery.md), [🧼💾 Clean Code: A Handbook of Agile Software Craftsmanship](/content/books/clean-code.md), [🗑️✨ Refactoring: Improving the Design of Existing Code](/content/books/refactoring-improving-the-design-of-existing-code.md), and [🧱🛠️ Working Effectively with Legacy Code](/content/books/working-effectively-with-legacy-code.md). For a more concise take on similar principles, The Practice of Programming is sometimes suggested.  
   
 ## 📚 Book Recommendations  
   
 ### ➕ Similar Books  
-* [🧑‍💻📈 The Pragmatic Programmer: Your Journey to Mastery](books/the-pragmatic-programmer-your-journey-to-mastery.md) by Andrew Hunt and David Thomas  
-* [🧼💾 Clean Code: A Handbook of Agile Software Craftsmanship](./clean-code.md) by Robert C. Martin  
-* [🗑️✨ Refactoring: Improving the Design of Existing Code](books/refactoring-improving-the-design-of-existing-code.md) by Martin Fowler  
+* [🧑‍💻📈 The Pragmatic Programmer: Your Journey to Mastery](/content/books/the-pragmatic-programmer-your-journey-to-mastery.md) by Andrew Hunt and David Thomas  
+* [🧼💾 Clean Code: A Handbook of Agile Software Craftsmanship](/content/books/clean-code.md) by Robert C. Martin  
+* [🗑️✨ Refactoring: Improving the Design of Existing Code](/content/books/refactoring-improving-the-design-of-existing-code.md) by Martin Fowler  
 * 📖 A Philosophy of Software Design by John Ousterhout  
   
 ### ➖ Contrasting Books  
-* [🦄👤🗓️ The Mythical Man-Month: Essays on Software Engineering](./the-mythical-man-month.md) by Frederick Brooks Jr. (Focuses on project management and complexities of large software projects, not just construction.)  
+* [🦄👤🗓️ The Mythical Man-Month: Essays on Software Engineering](/content/books/the-mythical-man-month.md) by Frederick Brooks Jr. (Focuses on project management and complexities of large software projects, not just construction.)  
 * 📖 Design Patterns: Elements of Reusable Object-Oriented Software by Gamma, Helm, Johnson, and Vlissides (More focused on architectural patterns than granular code construction).  
   
 ### 🤝 Related Books  
-* [🧱🛠️ Working Effectively with Legacy Code](books/working-effectively-with-legacy-code.md) by Michael C. Feathers  
+* [🧱🛠️ Working Effectively with Legacy Code](/content/books/working-effectively-with-legacy-code.md) by Michael C. Feathers  
 * 📖 Rapid Development by Steve McConnell (Author's other work on project management)  
 * 📖 Code by Charles Petzold (Explores the foundational hardware/software concepts)  
   

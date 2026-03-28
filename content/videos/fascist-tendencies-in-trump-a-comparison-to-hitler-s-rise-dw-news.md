@@ -9,7 +9,7 @@ Platform:
 Channel: DW News
 tags:
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md)  
 # Fascist tendencies in Trump: A comparison to Hitler's rise | DW News  
 ![Fascist tendencies in Trump: A comparison to Hitler's rise | DW News](https://youtu.be/bKgPzDctPM8)  
   

@@ -7,7 +7,7 @@ share: true
 affiliate link: https://amzn.to/3Wf6z4h
 CTA: 🧠 Question assumptions.
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🧑‍🤝‍🧑🧠 The Undoing Project: A Friendship That Changed Our Minds  
 [🛒 The Undoing Project: A Friendship That Changed Our Minds. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3Wf6z4h)  
   
@@ -37,13 +37,13 @@ Kahneman and Tversky's research revolutionized the understanding of human cognit
   
 These books explore themes of human decision-making, cognitive biases, and the science behind irrationality, often with an accessible narrative style.  
   
-* **[🤔🐇🐢 Thinking, Fast and Slow](./thinking-fast-and-slow.md)** by Daniel Kahneman  
+* **[🤔🐇🐢 Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md)** by Daniel Kahneman  
     * 🗣️ **Why it's similar:** Written by Daniel Kahneman himself, this book directly expands on the research and ideas developed with Tversky, elaborating on the "System 1" (fast, intuitive) and "System 2" (slow, deliberate) modes of thought and a wide array of cognitive biases. It's essentially the foundational text from one of the protagonists.  
-* **[🔮🤷🏼‍♀️🤪 Predictably Irrational: The Hidden Forces That Shape Our Decisions](./predictably-irrational.md)** by Dan Ariely  
+* **[🔮🤷🏼‍♀️🤪 Predictably Irrational: The Hidden Forces That Shape Our Decisions](/content/books/predictably-irrational.md)** by Dan Ariely  
     * 🗣️ **Why it's similar:** Ariely's work is a direct successor in the behavioral economics tradition, using engaging experiments and observations to demonstrate how human decisions are consistently irrational and influenced by hidden forces. It reinforces the core message of The Undoing Project with new examples.  
-* **[🤔💸 Misbehaving: The Making of Behavioral Economics](./misbehaving-the-making-of-behavioral-economics.md)** by Richard H. Thaler  
+* **[🤔💸 Misbehaving: The Making of Behavioral Economics](/content/books/misbehaving-the-making-of-behavioral-economics.md)** by Richard H. Thaler  
     * 🗣️ **Why it's similar:** Thaler, a Nobel 🏅 laureate and a key figure in behavioral economics, chronicles the evolution of the field and his own journey within it, often referencing the pioneering work of Kahneman and Tversky. It provides an insider's perspective on how these ideas gained traction and challenged traditional economic assumptions.  
-* **[📉⚾💰 Moneyball: The Art of Winning an Unfair Game](./moneyball.md)** by Michael Lewis  
+* **[📉⚾💰 Moneyball: The Art of Winning an Unfair Game](/content/books/moneyball.md)** by Michael Lewis  
     * 🗣️ **Why it's similar:** This earlier work by Lewis explores how the Oakland Athletics baseball team used data analysis to challenge conventional wisdom and overcome market inefficiencies in player valuation. Lewis himself noted that Moneyball posed the question of why people misjudge others, which led him to write The Undoing Project for the answer.  
   
 ### ➖ Contrasting Books  
@@ -52,14 +52,14 @@ These recommendations offer alternative perspectives or focus on different aspec
   
 * 🧘 **The Courage to Be Disliked: How to Free Yourself, Change your Life and Achieve Real Happiness** by Ichiro Kishimi and Fumitake Koga  
     * 🗣️ **Why it's contrasting:** This book, based on Adlerian psychology, presents a philosophical dialogue on personal agency, responsibility, and finding happiness, suggesting that individuals have the power to choose their lives and overcome past influences. This contrasts with the deterministic view of cognitive biases presented by Kahneman and Tversky, emphasizing individual will over inherent systemic flaws in judgment.  
-* **[🃏🎲 Fooled by Randomness: The Hidden Role of Chance in Life and in the Markets](./fooled-by-randomness-the-hidden-role-of-chance-in-life-and-in-the-markets.md)** by Nassim Nicholas Taleb  
+* **[🃏🎲 Fooled by Randomness: The Hidden Role of Chance in Life and in the Markets](/content/books/fooled-by-randomness-the-hidden-role-of-chance-in-life-and-in-the-markets.md)** by Nassim Nicholas Taleb  
     * 🗣️ **Why it's contrasting:** While also exploring flaws in human judgment, Taleb's work focuses on the pervasive and often misunderstood impact of randomness and luck in success and failure. It challenges the human tendency to attribute events to skill or cause-and-effect rather than acknowledging the unpredictable nature of reality, offering a different lens through which to view uncertainty than the internal cognitive biases.  
   
 ### 🎨 Creatively Related Books  
   
 These books connect to broader themes such as the nature of scientific discovery, profound human relationships, or the application of behavioral insights in varied contexts, offering an indirect but compelling link to The Undoing Project.  
   
-* **[📜🌍⏳ Sapiens: A Brief History of Humankind](./sapiens-a-brief-history-of-humankind.md)** by Yuval Noah Harari  
+* **[📜🌍⏳ Sapiens: A Brief History of Humankind](/content/books/sapiens-a-brief-history-of-humankind.md)** by Yuval Noah Harari  
     * 🗣️ **Why it's creatively related:** Harari's sweeping history of humanity touches on how humans create shared fictions and narratives to cooperate and make sense of the world, themes that subtly resonate with how our mental models and biases shape our collective understanding and decision-making over time.  
 * 🍎 **Steve Jobs** by Walter Isaacson  
     * 🗣️ **Why it's creatively related:** This biography chronicles the life of a complex visionary whose ability to challenge conventional thinking and bring revolutionary ideas to fruition parallels the intellectual disruption brought about by Kahneman and Tversky. It's a story of genius, collaboration, and intense personality dynamics in a different domain.  

@@ -9,7 +9,7 @@ tags:
 affiliate link: https://amzn.to/4ktRiao
 CTA: 🧭 Explore multifaceted knowledge.
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🌐🔭🎨🧩👨‍🎓 Range: Why Generalists Triumph in a Specialized World  
 [🛒 Range: Why Generalists Triumph in a Specialized World. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4ktRiao)  
   
@@ -57,17 +57,17 @@ In a complex 🌍 and unpredictable 😵‍💫 world, broad 🌁 experience and
   
 ### 📚 Book Recommendations 📚  
 * ⭐ **Best Alternate Book on the Same Topic:**  
-    * [☀️😀👍😊🌻 How to Have a Good Day: Harness the Power of Behavioral Science to Transform Your Working Life](books/how-to-have-a-good-day.md) by Caroline Webb. 🧠 This book is about how to improve your life, and work, by using behavioral science. 🤔 It has a lot of similar ideas to Range, but is more focused on daily implementation. 🚀  
+    * [☀️😀👍😊🌻 How to Have a Good Day: Harness the Power of Behavioral Science to Transform Your Working Life](/content/books/how-to-have-a-good-day.md) by Caroline Webb. 🧠 This book is about how to improve your life, and work, by using behavioral science. 🤔 It has a lot of similar ideas to Range, but is more focused on daily implementation. 🚀  
 * 💡 **Best Book That Is Tangentially Related:**  
-    * [🤔🐇🐢 Thinking, Fast and Slow](books/thinking-fast-and-slow.md) by Daniel Kahneman. 🤔 This book explores the two systems of thinking and how they influence decision-making, which is relevant to the wicked learning environments discussed in Range. 🎯  
+    * [🤔🐇🐢 Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md) by Daniel Kahneman. 🤔 This book explores the two systems of thinking and how they influence decision-making, which is relevant to the wicked learning environments discussed in Range. 🎯  
 * ⚔️ **Best Book That Is Diametrically Opposed:**  
-    * 🥇 [⭐ Outliers](./outliers.md): The Story of Success by Malcolm Gladwell. ⏳ While Gladwell acknowledges the role of opportunity, he heavily emphasizes the 10,000-hour rule of deliberate practice, which contrasts with Epstein's emphasis on range. ⏱️  
+    * 🥇 [⭐ Outliers](/content/books/outliers.md): The Story of Success by Malcolm Gladwell. ⏳ While Gladwell acknowledges the role of opportunity, he heavily emphasizes the 10,000-hour rule of deliberate practice, which contrasts with Epstein's emphasis on range. ⏱️  
 * 🧑‍🚀 **Best Fiction Book That Incorporates Related Ideas:**  
-    * [☄️🧑‍🚀🙏🌍 Project Hail Mary](./project-hail-mary.md) by Andy Weir. 👽 This science fiction novel features a protagonist who uses a wide range of scientific knowledge to solve an existential threat, exemplifying the power of generalist thinking. 🌠  
+    * [☄️🧑‍🚀🙏🌍 Project Hail Mary](/content/books/project-hail-mary.md) by Andy Weir. 👽 This science fiction novel features a protagonist who uses a wide range of scientific knowledge to solve an existential threat, exemplifying the power of generalist thinking. 🌠  
 * ⚖️ **Books with varying complexity:**  
-    * 👨‍🏫 **More General:** [🎨🤓 The Art of Learning: A Journey in the Pursuit of Excellence](books/the-art-of-learning.md) by Josh Waitzkin. 🧠 Waitzkin, a chess prodigy and martial arts champion, discusses the principles of effective learning, which can be applied to any field. 🌱  
-    * 👨‍💻 **More Specific:** [🤿💼 Deep Work: Rules for Focused Success in a Distracted World](./deep-work.md) by Cal Newport. 🎯 This book focuses on the importance of focused, uninterrupted work, which is a valuable skill for any specialist or generalist. 🤓  
-    * 💯 **More Rigorous:** [🤔💻🧠 Algorithms to Live By: The Computer Science of Human Decisions](books/algorithms-to-live-by.md) by Brian Christian and Tom Griffiths. 💻 This book applies computer science concepts to everyday decision-making, providing a more technical and rigorous approach to problem-solving. ⚙️  
+    * 👨‍🏫 **More General:** [🎨🤓 The Art of Learning: A Journey in the Pursuit of Excellence](/content/books/the-art-of-learning.md) by Josh Waitzkin. 🧠 Waitzkin, a chess prodigy and martial arts champion, discusses the principles of effective learning, which can be applied to any field. 🌱  
+    * 👨‍💻 **More Specific:** [🤿💼 Deep Work: Rules for Focused Success in a Distracted World](/content/books/deep-work.md) by Cal Newport. 🎯 This book focuses on the importance of focused, uninterrupted work, which is a valuable skill for any specialist or generalist. 🤓  
+    * 💯 **More Rigorous:** [🤔💻🧠 Algorithms to Live By: The Computer Science of Human Decisions](/content/books/algorithms-to-live-by.md) by Brian Christian and Tom Griffiths. 💻 This book applies computer science concepts to everyday decision-making, providing a more technical and rigorous approach to problem-solving. ⚙️  
   
 ## 💬 [Gemini](https://gemini.google.com) Prompt  
 > Summarize the book: Range: Why Generalists Triumph in a Specialized World. Start the summary with a TLDR - a single statement that conveys a maximum of the useful information provided in the book. Next, explain how this book may offer a new or surprising perspective. Follow this with a deep dive. Catalogue the topics, methods, and research discussed. Be sure to highlight any significant theories, theses, or mental models proposed. Provide a critical analysis of the quality of the information presented, using scientific backing, author credentials, authoritative reviews, and other markers of high quality information as justification. Emphasize practical takeaways. Make the following additional book recommendations: the best alternate book on the same topic; the best book that is tangentially related; the best book that is diametrically opposed; the best fiction book that incorporates related ideas; and a book that is more general, more specific, or more rigorous than this book. Format your response as markdown, starting at heading level H4, with inline links, for easy copy paste. Use meaningful emojis liberally to enhance readability, especially in headings and as bullets for lists. Do not include broken links or links to commercial sites (e.g. Amazon).

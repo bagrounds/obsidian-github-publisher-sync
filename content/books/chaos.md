@@ -61,12 +61,12 @@ affiliate link: https://amzn.to/4dGUlt6
 * The concepts described have been backed up by years of research, and are now accepted as a valid part of scientific understanding.  
   
 ### Book Recommendations 📚  
-* **Best Alternate Book on the Same Topic:** [♾️🌿🔬 The Fractal Geometry of Nature](./the-fractal-geometry-of-nature.md) by Benoit B. Mandelbrot 🏞️. This book provides a more in-depth exploration of fractal geometry, a key aspect of chaos theory.  
+* **Best Alternate Book on the Same Topic:** [♾️🌿🔬 The Fractal Geometry of Nature](books/the-fractal-geometry-of-nature.md) by Benoit B. Mandelbrot 🏞️. This book provides a more in-depth exploration of fractal geometry, a key aspect of chaos theory.  
 * **Best Tangentially Related Book:** "Complexity: The Emerging Science at the Edge of Order and Chaos" by M. Mitchell Waldrop 🌐. This book explores the broader field of complexity science, which encompasses chaos theory and other related concepts.  
-* **Best Diametrically Opposed Book:** [⚫🦢🎲 The Black Swan: The Impact of the Highly Improbable](./the-black-swan-the-impact-of-the-highly-improbable.md) by Nassim Nicholas Taleb 🦢. While both books address unpredictability, "The Black Swan" focuses on rare, high-impact events, whereas "Chaos" emphasizes the inherent unpredictability of deterministic systems.  
+* **Best Diametrically Opposed Book:** [⚫🦢🎲 The Black Swan: The Impact of the Highly Improbable](books/the-black-swan-the-impact-of-the-highly-improbable.md) by Nassim Nicholas Taleb 🦢. While both books address unpredictability, "The Black Swan" focuses on rare, high-impact events, whereas "Chaos" emphasizes the inherent unpredictability of deterministic systems.  
 * **Best Fiction Book That Incorporates Related Ideas:** "Jurassic Park" by Michael Crichton 🦖. This novel explores the consequences of tampering with complex systems and the unpredictable nature of biological systems.  
-* **Best Book That Is More General:** [🤏📜⏳ A Brief History of Time](./a-brief-history-of-time.md) by Stephen Hawking 🌌. This book provides a broad overview of cosmology and physics, including concepts related to the universe's complexity.  
-* **Best Book That Is More Specific:** [🦋🌀💥🤖 Nonlinear Dynamics and Chaos: With Applications to Physics, Biology, Chemistry, and Engineering](./nonlinear-dynamics-and-chaos.md) by Steven H. Strogatz 📖. This is a university textbook that provides a much more rigorous mathematical treatment of chaos theory.  
+* **Best Book That Is More General:** [🤏📜⏳ A Brief History of Time](books/a-brief-history-of-time.md) by Stephen Hawking 🌌. This book provides a broad overview of cosmology and physics, including concepts related to the universe's complexity.  
+* **Best Book That Is More Specific:** [🦋🌀💥🤖 Nonlinear Dynamics and Chaos: With Applications to Physics, Biology, Chemistry, and Engineering](books/nonlinear-dynamics-and-chaos.md) by Steven H. Strogatz 📖. This is a university textbook that provides a much more rigorous mathematical treatment of chaos theory.  
 * **Best Book That Is More Accessible:** [💥🌀➡️⏳⚖️🕰️ ️ Sync: How Order Emerges From Chaos In The Universe, Nature, And Daily Life](./sync.md) by Steven Strogatz 🤝. This book takes a more approachable look at how synchronization occurs within complex systems.  
   
 ## 💬 [Gemini](https://gemini.google.com) Prompt  

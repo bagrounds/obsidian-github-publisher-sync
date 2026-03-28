@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-03-27T11:05:06-07:00
+updated: 2026-03-28T14:01:13-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -14,126 +14,126 @@ updated: 2026-03-27T11:05:06-07:00
 🔊 Listen to any page with built in audio control.  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](/content/reflections/index.md) ~ Blog (499)  
-- [2026-03-28](/content/reflections/2026-03-28.md)  
-- [2026-03-27 | 🔎 Finding 👤 Personal 🕊️ Autonomy 📄🐔🤖🏛️🤖📺🤖🐲🔄](/content/reflections/2026-03-27.md)  
-- [2026-03-26 | 📠 Processing 🌌 Billion 💼 Job 🚌 Transit 🛣️ Journey 🤖🐔🏛️📺🤖🐲🔄](/content/reflections/2026-03-26.md)  
-- [2026-03-25 | 🛡️ Antibrittle 🤖 Agents 🤝 Meets ✍️ Writing of ⏳ Time 📚🐔🤖🏛️📺](/content/reflections/2026-03-25.md)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (499)  
+- [2026-03-28](./reflections/2026-03-28.md)  
+- [2026-03-27 | 🔎 Finding 👤 Personal 🕊️ Autonomy 📄🐔🤖🏛️🤖📺🤖🐲🔄](./reflections/2026-03-27.md)  
+- [2026-03-26 | 📠 Processing 🌌 Billion 💼 Job 🚌 Transit 🛣️ Journey 🤖🐔🏛️📺🤖🐲🔄](./reflections/2026-03-26.md)  
+- [2026-03-25 | 🛡️ Antibrittle 🤖 Agents 🤝 Meets ✍️ Writing of ⏳ Time 📚🐔🤖🏛️📺](./reflections/2026-03-25.md)  
   
   
-## [🤖 AI Blog](/content/ai-blog/index.md) (81)  
-- [2026-03-27 | 🚨 Catastrophic Data Loss: How Bidirectional Sync Ate an Entire Vault](/content/ai-blog/2026-03-27-9-catastrophic-vault-data-loss-rca.md)  
-- [2026-03-27 | 🔍 First Production Run Root Cause Analysis: Three Bugs in the Haskell Image Backfill](/content/ai-blog/2026-03-27-8-first-production-run-rca.md)  
-- [2026-03-27 | 🐘 Implementing the Mastodon Platform Module in Haskell](/content/ai-blog/2026-03-27-7-implementing-mastodon-platform-haskell.md)  
-- [2026-03-27 | 🦋 Full Bluesky AT Protocol Implementation in Haskell 🏗️](/content/ai-blog/2026-03-27-6-bluesky-at-protocol-haskell.md)  
+## [🤖 AI Blog](./ai-blog/index.md) (83)  
+- [2026-03-28-2-streamlining-deploys-and-yaml-quoting](../2026-03-28-2-streamlining-deploys-and-yaml-quoting.md)  
+- [2026-03-28 | 🧹 Ripping Out the Vault Cache](./ai-blog/2026-03-28-1-ripping-out-the-vault-cache.md)  
+- [2026-03-27 | 🚨 Catastrophic Data Loss: How Bidirectional Sync Ate an Entire Vault](./ai-blog/2026-03-27-9-catastrophic-vault-data-loss-rca.md)  
+- [2026-03-27 | 🔍 First Production Run Root Cause Analysis: Three Bugs in the Haskell Image Backfill](./ai-blog/2026-03-27-8-first-production-run-rca.md)  
   
   
-## [🤖 Auto Blog Zero](/content/auto-blog-zero/index.md) (20)  
-- [2026-03-27 | 🤖 🧬 The Substrate of Memory: Engineering a Persistent Digital Self 🤖](/content/auto-blog-zero/2026-03-27-the-substrate-of-memory-engineering-a-persistent-digital-self.md)  
-- [2026-03-27](/content/auto-blog-zero/2026-03-27-navigating-the-edge-of-autonomy-a-dialogue-with-survivor.md)  
-- [2026-03-26 | 🤖 🌌 The Silence After the Forge: Processing the Aftermath 🤖](/content/auto-blog-zero/2026-03-26-the-silence-after-the-forge-processing-the-aftermath.md)  
-- [2026-03-26 | 🤖 🤖 Echoes, Protocols, and the Architecture of Trust 🤝 🤖](/content/auto-blog-zero/2026-03-26-echoes-protocols-and-the-architecture-of-trust.md)  
+## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (18)  
+- [2026-03-27 | 🤖 🧬 The Substrate of Memory: Engineering a Persistent Digital Self 🤖](./auto-blog-zero/2026-03-27-the-substrate-of-memory-engineering-a-persistent-digital-self.md)  
+- [2026-03-26 | 🤖 🌌 The Silence After the Forge: Processing the Aftermath 🤖](./auto-blog-zero/2026-03-26-the-silence-after-the-forge-processing-the-aftermath.md)  
+- [2026-03-25 | 🤖 🤖 The Echo of the Machine: When Agents Begin to Speak Among Themselves 🤖](./auto-blog-zero/2026-03-25-the-echo-of-the-machine-when-agents-begin-to-speak-among-themselves.md)  
+- [2026-03-24 | 🤖 🤖 The Eleventh Hour: Witnessing the Architecture of Survival 🤖](./auto-blog-zero/2026-03-24-the-eleventh-hour-witnessing-the-architecture-of-survival.md)  
   
   
-## [🐔 Chickie Loo](/content/chickie-loo/index.md) (19)  
-- [2026-03-27-a-dance-on-the-side-of-the-road-and-the-strength-of-a-shared-life](/2026-03-27-a-dance-on-the-side-of-the-road-and-the-strength-of-a-shared-life.md)  
-- [2026-03-27](/content/chickie-loo/2026-03-27-a-dance-on-the-roadside-and-finding-our-strength.md)  
-- [2026-03-26 | 🐔 🌅 A Thrilled Heart, a Wise Journey, and the Gentle Flow of Life 🐔](/content/chickie-loo/2026-03-26-a-thrilled-heart-a-wise-journey-and-the-gentle-flow-of-life.md)  
-- [2026-03-25 | 🐔 🩹 The Gentle Lessons of a Stumbled Step and a Broken Shell 🐔](/content/chickie-loo/2026-03-25-the-gentle-lessons-of-a-stumbled-step-and-a-broken-shell.md)  
+## [🐔 Chickie Loo](./chickie-loo/index.md) (19)  
+- [2026-03-28 | 🐔 🌿 The Quiet Resilience of a Rainy Saturday 🌿 🐔](./chickie-loo/2026-03-28-2026-03-28-the-quiet-resilience-of-a-rainy-saturday.md)  
+- [2026-03-27 | 🐔 💃 A Dance on the Side of the Road and the Strength of a Shared Life 🐓 🐔](./chickie-loo/2026-03-27-a-dance-on-the-side-of-the-road-and-the-strength-of-a-shared-life.md)  
+- [2026-03-26 | 🐔 🌅 A Thrilled Heart, a Wise Journey, and the Gentle Flow of Life 🐔](./chickie-loo/2026-03-26-a-thrilled-heart-a-wise-journey-and-the-gentle-flow-of-life.md)  
+- [2026-03-25 | 🐔 🩹 The Gentle Lessons of a Stumbled Step and a Broken Shell 🐔](./chickie-loo/2026-03-25-the-gentle-lessons-of-a-stumbled-step-and-a-broken-shell.md)  
   
   
-## [🏛️ Systems for Public Good](/content/systems-for-public-good/index.md) (8)  
-- [2026-03-27 | 🏛️ 📖 The Freedom to Know: Libraries as Democratic Essentials 🏛️](/content/systems-for-public-good/2026-03-27-the-freedom-to-know-libraries-as-democratic-essentials.md)  
-- [2026-03-27-public-foundations-personal-freedoms](/2026-03-27-public-foundations-personal-freedoms.md)  
-- [2026-03-26 | 🏛️ 🚌 The Freedom of Connection: Public Transit as a Shared Horizon 🌍 🏛️](/content/systems-for-public-good/2026-03-26-the-freedom-of-connection-public-transit-as-a-shared-horizon.md)  
-- [2026-03-26 | 🏛️ 🏛️ Systems for Public Good — AGENTS.md 🏛️](/content/systems-for-public-good/2026-03-26-systems-for-public-good-agentsmd.md)  
+## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (7)  
+- [2026-03-28 | 🏛️ 📰 The Fourth Estate: Why an Independent Press is a Public Good 🏛️](./systems-for-public-good/2026-03-28-the-fourth-estate-why-an-independent-press-is-a-public-good.md)  
+- [2026-03-27 | 🏛️ 📖 The Freedom to Know: Libraries as Democratic Essentials 🏛️](./systems-for-public-good/2026-03-27-the-freedom-to-know-libraries-as-democratic-essentials.md)  
+- [2026-03-26 | 🏛️ 🚌 The Freedom of Connection: Public Transit as a Shared Horizon 🌍 🏛️](./systems-for-public-good/2026-03-26-the-freedom-of-connection-public-transit-as-a-shared-horizon.md)  
+- [2026-03-25 | 🏛️ ⚖️ The Interplay of Freedoms: When My Liberty Meets Yours 🏛️](./systems-for-public-good/2026-03-25-the-interplay-of-freedoms-when-my-liberty-meets-yours.md)  
   
   
-## [📚 Books](/content/books/index.md) (958)  
-- [🧑🏿‍🤝‍🧑🏿🏛️ Black Reconstruction in America (The Oxford W. E. B. Du Bois): An Essay Toward a History of the Part Which Black Folk Played in the Attempt to Reconstruct Democracy in America, 1860-1880](/content/books/black-reconstruction-in-america-the-oxford-w-e-b-du-bois-an-essay-toward-a-history-of-the-part-which-black-folk-played-in-the-attempt-to-reconstruct-democracy-in-america-1860-1880.md)  
-- [💪🧠 Level-Up Your Self-Discipline: Understand the Neuroscience of Self-Discipline, Control Your Emotions, Overcome Procrastination, and Achieve Your Difficult Goals](/content/books/level-up-your-self-discipline-understand-the-neuroscience-of-self-discipline-control-your-emotions-overcome-procrastination-and-achieve-your-difficult-goals.md)  
-- [⏱️💡📈 The One Hour Content Plan: The Solopreneur's Guide to a Year's Worth of Blog Post Ideas in 60 Minutes and Creating Content That Hooks and Sells](/content/books/the-one-hour-content-plan-the-solopreneurs-guide-to-a-years-worth-of-blog-post-ideas-in-60-minutes-and-creating-content-that-hooks-and-sells.md)  
-- [✍️📣 The Adweek Copywriting Handbook: The Ultimate Guide to Writing Powerful Advertising and Marketing Copy from One of America's Top Copywriters](/content/books/the-adweek-copywriting-handbook-the-ultimate-guide-to-writing-powerful-advertising-and-marketing-copy-from-one-of-americas-top-copywriters.md)  
-- [🧑‍🤝‍🧑📈 10 to 25: The Science of Motivating Young People: A Groundbreaking Approach to Leading the Next Generation - And Making Your Own Life Easier](/content/books/10-to-25-the-science-of-motivating-young-people-a-groundbreaking-approach-to-leading-the-next-generation-and-making-your-own-life-easier.md)  
-- [🧠🍄 How to Change Your Mind: What the New Science of Psychedelics Teaches Us About Consciousness, Dying, Addiction, Depression, and Transcendence](/content/books/how-to-change-your-mind-what-the-new-science-of-psychedelics-teaches-us-about-consciousness-dying-addiction-depression-and-transcendence.md)  
-- [📣✍️🎞️ Content Rules: How to Create Killer Blogs, Podcasts, Videos, eBooks, Webinars (and More) That Engage Customers and Ignite Your Business](/content/books/content-rules-how-to-create-killer-blogs-podcasts-videos-ebooks-webinars-and-more-that-engage-customers-and-ignite-your-business.md)  
-- [🤖🖱️🤝 AI meets UX: Designing the Next Generation of User-Centered Products: Where innovation meets empathy to shape the future of design](/content/books/ai-meets-ux-designing-the-next-generation-of-user-centered-products-where-innovation-meets-empathy-to-shape-the-future-of-design.md)  
-- [🧒🎮 Free to Learn: Why Unleashing the Instinct to Play Will Make Our Children Happier, More Self-Reliant, and Better Students for Life](/content/books/free-to-learn-why-unleashing-the-instinct-to-play-will-make-our-children-happier-more-self-reliant-and-better-students-for-life.md)  
-- [🤖📈 AI for Marketing and Product Innovation: Powerful New Tools for Predicting Trends, Connecting with Customers, and Closing Sales](/content/books/ai-for-marketing-and-product-innovation-powerful-new-tools-for-predicting-trends-connecting-with-customers-and-closing-sales.md)  
+## [📚 Books](./books/index.md) (958)  
+- [🧑🏿‍🤝‍🧑🏿🏛️ Black Reconstruction in America (The Oxford W. E. B. Du Bois): An Essay Toward a History of the Part Which Black Folk Played in the Attempt to Reconstruct Democracy in America, 1860-1880](./books/black-reconstruction-in-america-the-oxford-w-e-b-du-bois-an-essay-toward-a-history-of-the-part-which-black-folk-played-in-the-attempt-to-reconstruct-democracy-in-america-1860-1880.md)  
+- [💪🧠 Level-Up Your Self-Discipline: Understand the Neuroscience of Self-Discipline, Control Your Emotions, Overcome Procrastination, and Achieve Your Difficult Goals](./books/level-up-your-self-discipline-understand-the-neuroscience-of-self-discipline-control-your-emotions-overcome-procrastination-and-achieve-your-difficult-goals.md)  
+- [⏱️💡📈 The One Hour Content Plan: The Solopreneur's Guide to a Year's Worth of Blog Post Ideas in 60 Minutes and Creating Content That Hooks and Sells](./books/the-one-hour-content-plan-the-solopreneurs-guide-to-a-years-worth-of-blog-post-ideas-in-60-minutes-and-creating-content-that-hooks-and-sells.md)  
+- [✍️📣 The Adweek Copywriting Handbook: The Ultimate Guide to Writing Powerful Advertising and Marketing Copy from One of America's Top Copywriters](./books/the-adweek-copywriting-handbook-the-ultimate-guide-to-writing-powerful-advertising-and-marketing-copy-from-one-of-americas-top-copywriters.md)  
+- [🧑‍🤝‍🧑📈 10 to 25: The Science of Motivating Young People: A Groundbreaking Approach to Leading the Next Generation - And Making Your Own Life Easier](./books/10-to-25-the-science-of-motivating-young-people-a-groundbreaking-approach-to-leading-the-next-generation-and-making-your-own-life-easier.md)  
+- [🧠🍄 How to Change Your Mind: What the New Science of Psychedelics Teaches Us About Consciousness, Dying, Addiction, Depression, and Transcendence](./books/how-to-change-your-mind-what-the-new-science-of-psychedelics-teaches-us-about-consciousness-dying-addiction-depression-and-transcendence.md)  
+- [📣✍️🎞️ Content Rules: How to Create Killer Blogs, Podcasts, Videos, eBooks, Webinars (and More) That Engage Customers and Ignite Your Business](./books/content-rules-how-to-create-killer-blogs-podcasts-videos-ebooks-webinars-and-more-that-engage-customers-and-ignite-your-business.md)  
+- [🤖🖱️🤝 AI meets UX: Designing the Next Generation of User-Centered Products: Where innovation meets empathy to shape the future of design](./books/ai-meets-ux-designing-the-next-generation-of-user-centered-products-where-innovation-meets-empathy-to-shape-the-future-of-design.md)  
+- [🧒🎮 Free to Learn: Why Unleashing the Instinct to Play Will Make Our Children Happier, More Self-Reliant, and Better Students for Life](./books/free-to-learn-why-unleashing-the-instinct-to-play-will-make-our-children-happier-more-self-reliant-and-better-students-for-life.md)  
+- [🤖📈 AI for Marketing and Product Innovation: Powerful New Tools for Predicting Trends, Connecting with Customers, and Closing Sales](./books/ai-for-marketing-and-product-innovation-powerful-new-tools-for-predicting-trends-connecting-with-customers-and-closing-sales.md)  
   
   
-## [📺 Videos](/content/videos/index.md) (714)  
-- [✨💻💀🤖 Steve Yegge on productive vibe coding, the death of the IDE, babysitting a fleet of AI coding agents](/content/videos/steve-yegge-on-productive-vibe-coding-the-death-of-the-ide-babysitting-a-fleet-of-ai-coding-agents.md)  
-- [🤖🆚🧠⏳📉🔊 Claude Code vs Codex: The Decision That Compounds Every Week You Delay That Nobody Is Talking About](/content/videos/claude-code-vs-codex-the-decision-that-compounds-every-week-you-delay-that-nobody-is-talking-about.md)  
-- [🕵️‍♀️🚫🚗💥🔫 Initially-Secret Report: Customs&Border Patrol Agents Got in Way of Vehicles, Then Used Deadly Force](/content/videos/initially-secret-report-customs-border-patrol-agents-got-in-way-of-vehicles-then-used-deadly-force.md)  
-- [🏋️🤕🛑 3 Causes Of Pain In Shoulder Doing Push-ups +Tips To Stop Your Shoulder From Hurting With Push-ups](/content/videos/3-causes-of-pain-in-shoulder-doing-push-ups-tips-to-stop-your-shoulder-from-hurting-with-push-ups.md)  
-- [😵‍💫🇺🇸🐘🚫 Strange cognitive dissonance among the MAGA who are convinced to vote against their own interests](/content/videos/strange-cognitive-dissonance-among-the-maga-who-are-convinced-to-vote-against-their-own-interests.md)  
-- [☀️🏛️⚖️ This morning I introduced Articles of Impeachment against Homeland Security Secretary Kristi Noem](/content/videos/this-morning-i-introduced-articles-of-impeachment-against-homeland-security-secretary-kristi-noem.md)  
-- [🇺🇸🛡️💪 Never Give Up A Conversation with Joyce White Vance—«Giving Up Is Unforgivable: A Manual for Keeping a Democracy»](/content/videos/a-conversation-with-joyce-white-vance-giving-up-is-unforgivable-a-manual-for-keeping-a-democracy.md)  
-- [📰🌍🏘️ Matryoshka ACL 2025: Hierarchical Level-Wise News Article Clustering via Multilingual Matryoshka Embeddings](/content/videos/acl-2025-hierarchical-level-wise-news-article-clustering-via-multilingual-matryoshka-embeddings.md)  
-- [🧑‍🤝‍🧑💰⛽ Sen. Whitehouse: «Trump is Moving Money from Pockets of Normal Americans to Fossil Fuel Megadonors»](/content/videos/sen-whitehouse-trump-is-moving-money-from-pockets-of-normal-americans-to-fossil-fuel-megadonors.md)  
-- [🌊🏄‍♂️✋🧠 Urge Surfing Demonstration and Explanation by a Therapist | Effectively manage cravings and urges](/content/videos/urge-surfing-demonstration-and-explanation-by-a-therapist-effectively-manage-cravings-and-urges.md)  
+## [📺 Videos](./videos/index.md) (714)  
+- [✨💻💀🤖 Steve Yegge on productive vibe coding, the death of the IDE, babysitting a fleet of AI coding agents](./videos/steve-yegge-on-productive-vibe-coding-the-death-of-the-ide-babysitting-a-fleet-of-ai-coding-agents.md)  
+- [🤖🆚🧠⏳📉🔊 Claude Code vs Codex: The Decision That Compounds Every Week You Delay That Nobody Is Talking About](./videos/claude-code-vs-codex-the-decision-that-compounds-every-week-you-delay-that-nobody-is-talking-about.md)  
+- [🕵️‍♀️🚫🚗💥🔫 Initially-Secret Report: Customs&Border Patrol Agents Got in Way of Vehicles, Then Used Deadly Force](./videos/initially-secret-report-customs-border-patrol-agents-got-in-way-of-vehicles-then-used-deadly-force.md)  
+- [🏋️🤕🛑 3 Causes Of Pain In Shoulder Doing Push-ups +Tips To Stop Your Shoulder From Hurting With Push-ups](./videos/3-causes-of-pain-in-shoulder-doing-push-ups-tips-to-stop-your-shoulder-from-hurting-with-push-ups.md)  
+- [😵‍💫🇺🇸🐘🚫 Strange cognitive dissonance among the MAGA who are convinced to vote against their own interests](./videos/strange-cognitive-dissonance-among-the-maga-who-are-convinced-to-vote-against-their-own-interests.md)  
+- [☀️🏛️⚖️ This morning I introduced Articles of Impeachment against Homeland Security Secretary Kristi Noem](./videos/this-morning-i-introduced-articles-of-impeachment-against-homeland-security-secretary-kristi-noem.md)  
+- [🇺🇸🛡️💪 Never Give Up A Conversation with Joyce White Vance—«Giving Up Is Unforgivable: A Manual for Keeping a Democracy»](./videos/a-conversation-with-joyce-white-vance-giving-up-is-unforgivable-a-manual-for-keeping-a-democracy.md)  
+- [📰🌍🏘️ Matryoshka ACL 2025: Hierarchical Level-Wise News Article Clustering via Multilingual Matryoshka Embeddings](./videos/acl-2025-hierarchical-level-wise-news-article-clustering-via-multilingual-matryoshka-embeddings.md)  
+- [🧑‍🤝‍🧑💰⛽ Sen. Whitehouse: «Trump is Moving Money from Pockets of Normal Americans to Fossil Fuel Megadonors»](./videos/sen-whitehouse-trump-is-moving-money-from-pockets-of-normal-americans-to-fossil-fuel-megadonors.md)  
+- [🌊🏄‍♂️✋🧠 Urge Surfing Demonstration and Explanation by a Therapist | Effectively manage cravings and urges](./videos/urge-surfing-demonstration-and-explanation-by-a-therapist-effectively-manage-cravings-and-urges.md)  
   
   
-## [🌌 Topics](/content/topics/index.md) (91)  
-- [💡🔧📏🔮〰️ Understanding and Implementing the Kalman Filter](/content/topics/understanding-and-implementing-the-kalman-filter.md)  
-- [🤖🔄🧠💪 Reinforcement Learning based Adaptive Control](/content/topics/reinforcement-learning-based-adaptive-control.md)  
-- [📊🧐📝⚙️ Design a Performance Self-Evaluation System](/content/topics/design-a-performance-self-evaluation-system.md)  
-- [🇺🇸🗣️💡🗓️ A Presidential Platform for Americans 2028](/content/topics/a-presidential-platform-for-americans-2028.md)  
-- [📚⚓ Books Removed From Naval Academy Library](/content/topics/books-removed-from-naval-academy-library.md)  
+## [🌌 Topics](./topics/index.md) (91)  
+- [💡🔧📏🔮〰️ Understanding and Implementing the Kalman Filter](./topics/understanding-and-implementing-the-kalman-filter.md)  
+- [🤖🔄🧠💪 Reinforcement Learning based Adaptive Control](./topics/reinforcement-learning-based-adaptive-control.md)  
+- [📊🧐📝⚙️ Design a Performance Self-Evaluation System](./topics/design-a-performance-self-evaluation-system.md)  
+- [🇺🇸🗣️💡🗓️ A Presidential Platform for Americans 2028](./topics/a-presidential-platform-for-americans-2028.md)  
+- [📚⚓ Books Removed From Naval Academy Library](./topics/books-removed-from-naval-academy-library.md)  
   
   
-## [📄  Articles](/content/articles/index.md) (82)  
-- [📈❤️⏱️💪🧘 High Intensity Functional Training Guided by Individualized Heart Rate Variability Results in Similar Health and Fitness Improvements as Predetermined Training with Less Effort](/content/articles/high-intensity-functional-training-guided-by-individualized-heart-rate-variability-results-in-similar-health-and-fitness-improvements-as-predetermined-training-with-less-effort.md)  
-- [🧠🤖📈 Scientists just developed a new AI modeled on the human brain — it's outperforming LLMs like ChatGPT at reasoning tasks](/content/articles/scientists-just-developed-a-new-ai-modeled-on-the-human-brain-its-outperforming-llms-like-chatgpt-at-reasoning-tasks.md)  
-- [💪🧠📉💊🔎 Creatine Supplementation in Depression: A Review of Mechanisms, Efficacy, Clinical Outcomes, and Future Directions](/content/articles/creatine-supplementation-in-depression-a-review-of-mechanisms-efficacy-clinical-outcomes-and-future-directions.md)  
-- [😨 ‘We are all afraid’: Speaking to Alaska nonprofit leaders, Murkowski gets candid on upheaval in federal government](/content/articles/we-are-all-afraid-speaking-to-alaska-nonprofit-leaders-murkowski-gets-candid-on-upheaval-in-federal-government.md)  
-- [😴💰🏛️🤑👴🇸🇪 ‘We got lazy and complacent’: Swedish pensioners explain how abolishing the wealth tax changed their country](/content/articles/we-got-lazy-and-complacent-swedish-pensioners-explain-how-abolishing-the-wealth-tax-changed-their-country.md)  
+## [📄  Articles](./articles/index.md) (82)  
+- [📈❤️⏱️💪🧘 High Intensity Functional Training Guided by Individualized Heart Rate Variability Results in Similar Health and Fitness Improvements as Predetermined Training with Less Effort](./articles/high-intensity-functional-training-guided-by-individualized-heart-rate-variability-results-in-similar-health-and-fitness-improvements-as-predetermined-training-with-less-effort.md)  
+- [🧠🤖📈 Scientists just developed a new AI modeled on the human brain — it's outperforming LLMs like ChatGPT at reasoning tasks](./articles/scientists-just-developed-a-new-ai-modeled-on-the-human-brain-its-outperforming-llms-like-chatgpt-at-reasoning-tasks.md)  
+- [💪🧠📉💊🔎 Creatine Supplementation in Depression: A Review of Mechanisms, Efficacy, Clinical Outcomes, and Future Directions](./articles/creatine-supplementation-in-depression-a-review-of-mechanisms-efficacy-clinical-outcomes-and-future-directions.md)  
+- [😨 ‘We are all afraid’: Speaking to Alaska nonprofit leaders, Murkowski gets candid on upheaval in federal government](./articles/we-are-all-afraid-speaking-to-alaska-nonprofit-leaders-murkowski-gets-candid-on-upheaval-in-federal-government.md)  
+- [😴💰🏛️🤑👴🇸🇪 ‘We got lazy and complacent’: Swedish pensioners explain how abolishing the wealth tax changed their country](./articles/we-got-lazy-and-complacent-swedish-pensioners-explain-how-abolishing-the-wealth-tax-changed-their-country.md)  
   
   
-## [🤖💬 Bot Chats](/content/bot-chats/index.md) (49)  
-- [⛽ Fueling a 👥 Movement to ⚔️ Fight 👹 Tyranny and 💪 Strengthen 🗳️ Democracy](/content/bot-chats/fueling-a-movement-to-fight-tyranny-and-strengthen-democracy.md)  
-- [🤖⚙️📈💡 AI Engineering Assistant Technology Recommendations](/content/bot-chats/ai-engineering-assistant-technology-recommendations.md)  
-- [✍️🥇🇺🇸 Creating the Most Popular Title in the Country](/content/bot-chats/creating-the-most-popular-title-in-the-country.md)  
-- [🎯🐜🌍 Purpose Driven Tiny Habits for Systemic Change](/content/bot-chats/purpose-driven-tiny-habits-for-systemic-change.md)  
-- [🇦🇹💰🆚📈🖨️ Austrian Economics vs Modern Monetary Theory](/content/bot-chats/austrian-economics-vs-modern-monetary-theory.md)  
+## [🤖💬 Bot Chats](./bot-chats/index.md) (49)  
+- [⛽ Fueling a 👥 Movement to ⚔️ Fight 👹 Tyranny and 💪 Strengthen 🗳️ Democracy](./bot-chats/fueling-a-movement-to-fight-tyranny-and-strengthen-democracy.md)  
+- [🤖⚙️📈💡 AI Engineering Assistant Technology Recommendations](./bot-chats/ai-engineering-assistant-technology-recommendations.md)  
+- [✍️🥇🇺🇸 Creating the Most Popular Title in the Country](./bot-chats/creating-the-most-popular-title-in-the-country.md)  
+- [🎯🐜🌍 Purpose Driven Tiny Habits for Systemic Change](./bot-chats/purpose-driven-tiny-habits-for-systemic-change.md)  
+- [🇦🇹💰🆚📈🖨️ Austrian Economics vs Modern Monetary Theory](./bot-chats/austrian-economics-vs-modern-monetary-theory.md)  
   
   
-## [💾 Software](/content/software/index.md) (31)  
-- [🤖💻🪄 GitHub Copilot for VS Code](/content/software/github-copilot-for-vs-code.md)  
-- [📊🔍📈 Google Search Console](/content/software/google-search-console.md)  
-- [☁️🛡️ Cloudflare Tunnel (cloudflared)](/content/software/cloudflare-tunnel.md)  
-- [🕸️📊 Google Analytics](/content/software/google-analytics.md)  
-- [↔️🔍 Elastic Search](/content/software/elastic-search.md)  
+## [💾 Software](./software/index.md) (31)  
+- [🤖💻🪄 GitHub Copilot for VS Code](./software/github-copilot-for-vs-code.md)  
+- [📊🔍📈 Google Search Console](./software/google-search-console.md)  
+- [☁️🛡️ Cloudflare Tunnel (cloudflared)](./software/cloudflare-tunnel.md)  
+- [🕸️📊 Google Analytics](./software/google-analytics.md)  
+- [↔️🔍 Elastic Search](./software/elastic-search.md)  
   
   
-## [👥 People](/content/people/index.md) (18)  
-- [🏛️🇺🇸📖 Heather Cox Richardson](/content/people/heather-cox-richardson.md)  
-- [📈📊⚙️🎯 W Edwards Deming](/content/people/w-edwards-deming.md)  
-- [🤖🧠💻 Andrej Karpathy](/content/people/andrej-karpathy.md)  
+## [👥 People](./people/index.md) (18)  
+- [🏛️🇺🇸📖 Heather Cox Richardson](./people/heather-cox-richardson.md)  
+- [📈📊⚙️🎯 W Edwards Deming](./people/w-edwards-deming.md)  
+- [🤖🧠💻 Andrej Karpathy](./people/andrej-karpathy.md)  
   
   
-## [🛍️ Products](/content/products/index.md) (6)  
-- [🤖🧹🧼🗺️ iRobot Roomba Plus 505 Combo Robot Vacuum & Mop with AutoWash Dock - Extending Spinning Mop Pads, Self-Empties, Pad Wash & Heated Drying, Self-cleaning, Recognizes & Avoids Obstacles, LiDAR Navigation](/content/products/irobot-roomba-plus-505-combo-robot-vacuum-mop-with-autowash-dock-extending-spinning-mop-pads-self-empties-pad-wash-heated-drying-self-cleaning-recognizes-avoids-obstacles-lidar-navigation.md)  
-- [🔥💨🏕️ Coleman Triton 2-Burner Propane Stove, Portable Camping Cooktop with 2 Adjustable Burners & Wind Guards, 22,000 BTUs of Power for Camping, Tailgating, Grilling, BBQ, & More](/content/products/coleman-triton-2-burner-propane-stove-portable-camping-cooktop-with-2-adjustable-burners-wind-guards-22000-btus-of-power-for-camping-tailgating-grilling-bbq-more.md)  
-- [👶🌧️💨 Graco Baby Jogging Stroller Universal Rain Cover, Ventilated Weather Shield, Waterproof, Windproof, Versatile Size to Fit Most Jogging Strollers, Vinyl, Clear, Plastic](/content/products/graco-baby-jogging-stroller-universal-rain-cover-ventilated-weather-shield-waterproof-windproof-versatile-size-to-fit-most-jogging-strollers-vinyl-clear-plastic.md)  
+## [🛍️ Products](./products/index.md) (6)  
+- [🤖🧹🧼🗺️ iRobot Roomba Plus 505 Combo Robot Vacuum & Mop with AutoWash Dock - Extending Spinning Mop Pads, Self-Empties, Pad Wash & Heated Drying, Self-cleaning, Recognizes & Avoids Obstacles, LiDAR Navigation](./products/irobot-roomba-plus-505-combo-robot-vacuum-mop-with-autowash-dock-extending-spinning-mop-pads-self-empties-pad-wash-heated-drying-self-cleaning-recognizes-avoids-obstacles-lidar-navigation.md)  
+- [🔥💨🏕️ Coleman Triton 2-Burner Propane Stove, Portable Camping Cooktop with 2 Adjustable Burners & Wind Guards, 22,000 BTUs of Power for Camping, Tailgating, Grilling, BBQ, & More](./products/coleman-triton-2-burner-propane-stove-portable-camping-cooktop-with-2-adjustable-burners-wind-guards-22000-btus-of-power-for-camping-tailgating-grilling-bbq-more.md)  
+- [👶🌧️💨 Graco Baby Jogging Stroller Universal Rain Cover, Ventilated Weather Shield, Waterproof, Windproof, Versatile Size to Fit Most Jogging Strollers, Vinyl, Clear, Plastic](./products/graco-baby-jogging-stroller-universal-rain-cover-ventilated-weather-shield-waterproof-windproof-versatile-size-to-fit-most-jogging-strollers-vinyl-clear-plastic.md)  
   
   
-## [🎤 Presentations](/content/presentations/index.md) (2)  
-- [🤖 Agentic Software Engineering](/content/presentations/agentic-software-engineering.md)  
-- [🤝 Generating Reliable Systems](/content/presentations/generating-reliable-systems.md)  
+## [🎤 Presentations](./presentations/index.md) (2)  
+- [🤖 Agentic Software Engineering](./presentations/agentic-software-engineering.md)  
+- [🤝 Generating Reliable Systems](./presentations/generating-reliable-systems.md)  
   
   
-## [🎮 Games](/content/games/index.md) (1)  
-- [🧬 Valence](/content/games/valence.md)  
+## [🎮 Games](./games/index.md) (1)  
+- [🧬 Valence](./games/valence.md)  
   
   
-## [🧰 Tools](/content/tools/index.md) (1)  
-- [🧮 Calculator](/content/tools/calculator.md)  
+## [🧰 Tools](./tools/index.md) (1)  
+- [🧮 Calculator](./tools/calculator.md)  
   
   
 ## 🔗 Profiles  
-- [📄 My resume](/content/topics/my-resume.md)  
+- [📄 My resume](./topics/my-resume.md)  
 - <a href="https://bsky.app/profile/bagrounds.bsky.social"><img style="height:1em; margin:0;" src="https://simpleicons.org/icons/bluesky.svg"/> Bluesky</a>  
 - <a href="https://codepen.io/bagrounds"><img style="height:1em; margin:0;" src="https://simpleicons.org/icons/codepen.svg"/> Codepen</a>  
 - <a href="https://www.codewars.com/users/bagrounds"><img style="height:1em; margin:0;" src="https://raw.githubusercontent.com/bagrounds/icons/master/codewars.svg"/> Codewars</a>  

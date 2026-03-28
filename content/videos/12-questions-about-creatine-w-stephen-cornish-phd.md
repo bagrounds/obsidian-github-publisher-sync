@@ -10,7 +10,7 @@ Channel: UofMRecServices
 tags:
 youtube: https://youtu.be/kB5pW7zSlqs
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md)  
 # ❓💪🔬 12 Questions About Creatine with Stephen Cornish, PhD  
 ![12 Questions About Creatine w/ Stephen Cornish, PhD](https://youtu.be/kB5pW7zSlqs)  
   
@@ -36,7 +36,7 @@ youtube: https://youtu.be/kB5pW7zSlqs
   
 * 🍎 **Advanced Sports Nutrition** by Dan Benardot: 📖 Offers sophisticated sports nutrition information, combining the latest research with practical strategies for athletes.  
   
-* ❤️‍🩹 **[💪📈 Creatine: A Natural Substance and Its Benefits for Muscle Metabolism, Fitness, Health & Longevity](../books/creatine-a-natural-substance-and-its-benefits-for-muscle-metabolism-fitness-health-longevity.md)** by Dr. Jürgen Giessing and Dr. Robert Percy Marshall: 📖 Explores 🧪 creatine's health benefits beyond athletics, including its potential in longevity and therapeutic uses.  
+* ❤️‍🩹 **[💪📈 Creatine: A Natural Substance and Its Benefits for Muscle Metabolism, Fitness, Health & Longevity](/content/books/creatine-a-natural-substance-and-its-benefits-for-muscle-metabolism-fitness-health-longevity.md)** by Dr. Jürgen Giessing and Dr. Robert Percy Marshall: 📖 Explores 🧪 creatine's health benefits beyond athletics, including its potential in longevity and therapeutic uses.  
   
 * 🧪 **Creatine Supplementation for Health and Clinical Diseases** edited by Richard B. Kreider and Jeffrey R. Stout: 📖 Compiles scientific and medical evidence on 🧪 creatine's role in metabolism, health, and its potential therapeutic applications.  
   

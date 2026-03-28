@@ -10,7 +10,7 @@ Channel: Parentitude
 tags:
 youtube: https://youtu.be/97DQsjyep84
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md)  
 # 🧘⏳⏱️ The Korean Method to Calm Tantrums in 60 Seconds  
 ![The Korean Method to Calm Tantrums in 60 Seconds](https://youtu.be/97DQsjyep84)  
   
@@ -48,7 +48,7 @@ youtube: https://youtu.be/97DQsjyep84
 ## 📚 Book Recommendations  
   
 ### ↔️ Similar  
-* [🕳️🧠👶🏽 The Whole-Brain Child: 12 Revolutionary Strategies to Nurture Your Child's Developing Mind](../books/the-whole-brain-child.md) by Daniel J. Siegel and Tina Payne Bryson: Provides a clear, scientific framework for responding to big emotions by connecting with a child’s emotional brain before engaging their logical brain, directly supporting co-regulation.  
+* [🕳️🧠👶🏽 The Whole-Brain Child: 12 Revolutionary Strategies to Nurture Your Child's Developing Mind](/content/books/the-whole-brain-child.md) by Daniel J. Siegel and Tina Payne Bryson: Provides a clear, scientific framework for responding to big emotions by connecting with a child’s emotional brain before engaging their logical brain, directly supporting co-regulation.  
 * 👶 Beyond Behaviors by Mona Delahooke: Focuses on shifting parental perspective from viewing challenging behavior as intentional defiance to understanding it as a nervous system signal, aligning with the "signal safety" premise of the Jong Pause.  
   
 ### 🆚 Contrasting  

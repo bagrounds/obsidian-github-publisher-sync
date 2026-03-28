@@ -10,7 +10,7 @@ Channel: Philosopheasy
 tags:
 youtube: https://youtu.be/knRng-Znxr0
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md)  
 # 💰📉🌍 Silvio Gesell's Forgotten Money: The Wörgl Experiment & Demurrage Currency  
 ![Silvio Gesell's Forgotten Money: The Wörgl Experiment & Demurrage Currency](https://youtu.be/knRng-Znxr0)  
   
@@ -52,7 +52,7 @@ youtube: https://youtu.be/knRng-Znxr0
   
 ### ↔️ Similar  
   
-* [🌿⚙️ The Natural Economic Order](../books/the-natural-economic-order.md) by Silvio Gesell. 📖 This is the 🖋️ foundational text outlining 🌊 Freigeld and 🏞️ Freiland.  
+* [🌿⚙️ The Natural Economic Order](/content/books/the-natural-economic-order.md) by Silvio Gesell. 📖 This is the 🖋️ foundational text outlining 🌊 Freigeld and 🏞️ Freiland.  
 * 📗 Sacred Economics by Charles Eisenstein. 📖 It explores 💖 gift economies and 📉 negative interest 💸 currencies.  
   
 ### 🆚 Contrasting  
@@ -62,5 +62,5 @@ youtube: https://youtu.be/knRng-Znxr0
   
 ### 🎨 Creatively Related  
   
-* [📈📉 Progress and Poverty](../books/progress-and-poverty.md) by Henry George. 📖 The 📐 classic work on 🗺️ land value 💵 taxation and ⚖️ economic justice.  
-* [🏛️💰 Debt: The First 5,000 Years](../books/debt-the-first-5000-years.md) by David Graeber. 📖 An 🏺 anthropological 📜 history of 💳 debt and 💸 money.
+* [📈📉 Progress and Poverty](/content/books/progress-and-poverty.md) by Henry George. 📖 The 📐 classic work on 🗺️ land value 💵 taxation and ⚖️ economic justice.  
+* [🏛️💰 Debt: The First 5,000 Years](/content/books/debt-the-first-5000-years.md) by David Graeber. 📖 An 🏺 anthropological 📜 history of 💳 debt and 💸 money.

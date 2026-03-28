@@ -10,7 +10,7 @@ Channel: Interesting Times with Ross Douthat
 tags:
 youtube: https://youtu.be/b94thInW27c
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md)  
 # 👩‍⚖️🔭⏩ Amy Coney Barrett Is Looking Beyond the Trump Era | Interesting Times with Ross Douthat  
 ![Amy Coney Barrett Is Looking Beyond the Trump Era | Interesting Times with Ross Douthat](https://youtu.be/b94thInW27c)  
   
@@ -59,8 +59,8 @@ youtube: https://youtu.be/b94thInW27c
   
 ### 🆚 Contrasting  
   
-* [🇺🇸🏛️🚫📜⚖️ Lawless: How the Supreme Court Runs on Conservative Grievance, Fringe Theories, and Bad Vibes](../books/lawless-how-the-supreme-court-runs-on-conservative-grievance-fringe-theories-and-bad-vibes.md)  
-* [⚠️🏛️👹🇺🇸 The Most Dangerous Branch: Inside the Supreme Court in the Age of Trump](../books/the-most-dangerous-branch-inside-the-supreme-court-in-the-age-of-trump.md)  
+* [🇺🇸🏛️🚫📜⚖️ Lawless: How the Supreme Court Runs on Conservative Grievance, Fringe Theories, and Bad Vibes](/content/books/lawless-how-the-supreme-court-runs-on-conservative-grievance-fringe-theories-and-bad-vibes.md)  
+* [⚠️🏛️👹🇺🇸 The Most Dangerous Branch: Inside the Supreme Court in the Age of Trump](/content/books/the-most-dangerous-branch-inside-the-supreme-court-in-the-age-of-trump.md)  
 * 🌳 The Living Constitution by David Strauss. 💡 Argues that constitutional interpretation should rely on evolving judicial precedents and traditions rather than solely on the original public meaning.  
 * 🗽 Active Liberty: Interpreting Our Democratic Constitution by Stephen Breyer. 🗳️ Advocates for a constitutional interpretation that promotes democratic self-governance and considers the practical consequences of judicial decisions.  
   

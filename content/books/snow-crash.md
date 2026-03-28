@@ -8,7 +8,7 @@ Author:
 tags:
 affiliate link: https://amzn.to/4kQEIBO
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # ❄️💻💥 Snow Crash  
 [🛒 Snow Crash. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4kQEIBO)  
   
@@ -44,7 +44,7 @@ Stephenson employs a distinctive and often humorous style, blending sharp wit wi
   
 * **Non-Fiction:**  
     * "The Everything Store: Jeff Bezos and the Age of Amazon" by Brad Stone: If you're fascinated by the corporate power structures depicted in "Snow Crash," this book offers a real-world look at the rise of a dominant modern corporation 🏢.  
-    * "[Sapiens: A Brief History of Humankind](books/sapiens-a-brief-history-of-humankind.md)" by Yuval Noah Harari: Given the novel's exploration of language and its impact on human history, this book provides a fascinating anthropological perspective on the development of our species 🐒.  
+    * "[Sapiens: A Brief History of Humankind](/content/books/sapiens-a-brief-history-of-humankind.md)" by Yuval Noah Harari: Given the novel's exploration of language and its impact on human history, this book provides a fascinating anthropological perspective on the development of our species 🐒.  
   
 * **If You Loved This:**  
     * Neuromancer by William Gibson: As another foundational work of cyberpunk, this novel shares similar themes of virtual reality, hacking, and dystopian futures, offering a darker and grittier vision 🕶️.  

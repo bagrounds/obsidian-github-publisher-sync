@@ -9,7 +9,7 @@ Platform:
 Channel: PBS NewsHour
 tags:
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md)  
 # The security vulnerabilities of using Signal to discuss military operations  
 ![The security vulnerabilities of using Signal to discuss military operations](https://youtu.be/X75Trubi3PU)  
   

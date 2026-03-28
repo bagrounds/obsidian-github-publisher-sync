@@ -21,6 +21,8 @@
 
 🏗️ The Haskell orchestrator (RunScheduled.hs) is the active implementation used in CI.
 🐳 The executable is pre-built by the `haskell.yml` CI workflow (using the `haskell:9.14.1` Docker container) and uploaded as an artifact with 90 day retention.
+🔍 The `haskell.yml` workflow only triggers on pushes that change files under `haskell/` or the workflow file itself, avoiding unnecessary builds.
+🔄 The `haskell.yml` workflow uses `concurrency` with `cancel-in-progress: true` to automatically cancel superseded CI runs on the same branch.
 ⬇️ The scheduled workflow downloads the pre-built binary from the latest successful Haskell CI run — no compilation at runtime.
 ✅ Fully implemented task runners: blog-series (all 3), ai-fiction, reflection-title.
 ⚠️ Stubbed task runners (log and skip): backfill-blog-images, internal-linking, social-posting.

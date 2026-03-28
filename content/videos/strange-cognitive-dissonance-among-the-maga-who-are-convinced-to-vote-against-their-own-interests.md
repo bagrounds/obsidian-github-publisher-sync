@@ -10,7 +10,7 @@ Channel: FRANCE 24 English
 tags:
 youtube: https://youtu.be/2fUs-YDzZPU
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md)  
 # 😵‍💫🇺🇸🐘🚫 Strange cognitive dissonance among the MAGA who are convinced to vote against their own interests  
 !['Strange cognitive dissonance among the MAGA who are convinced to vote against their own interests'](https://youtu.be/2fUs-YDzZPU)  
   
@@ -27,23 +27,23 @@ youtube: https://youtu.be/2fUs-YDzZPU
   
 ## 📚 Book Recommendations  
 * **🏛️ Political Science & US Politics:**  
-    * [🗳️🕊️🇺🇸 Democracy in America](../books/democracy-in-america.md) by Alexis de Tocqueville  
+    * [🗳️🕊️🇺🇸 Democracy in America](/content/books/democracy-in-america.md) by Alexis de Tocqueville  
     * *The American Political Tradition* by Richard Hofstadter  
-    * [🫥🇺🇸😡💔 Strangers in Their Own Land](../books/strangers-in-their-own-land.md) by Arlie Russell Hochschild  
-    * [😇🧠 The Righteous Mind: Why Good People Are Divided by Politics and Religion](../books/the-righteous-mind.md) by Jonathan Haidt  
+    * [🫥🇺🇸😡💔 Strangers in Their Own Land](/content/books/strangers-in-their-own-land.md) by Arlie Russell Hochschild  
+    * [😇🧠 The Righteous Mind: Why Good People Are Divided by Politics and Religion](/content/books/the-righteous-mind.md) by Jonathan Haidt  
   
 * **📊 Economics & Social Welfare:**  
     * *Poor Economics: A Radical Rethinking of the Way to Fight Global Poverty* by Abhijit V. Banerjee and Esther Duflo  
-    * [🏚️💰 Evicted: Poverty and Profit in the American City](../books/evicted-poverty-and-profit-in-the-american-city.md) by Matthew Desmond  
-    * [🧑🏿⛓️🙈 The New Jim Crow: Mass Incarceration in the Age of Colorblindness](../books/the-new-jim-crow-mass-incarceration-in-the-age-of-colorblindness.md) by Michelle Alexander (relevant to systemic issues impacting vulnerable populations)  
+    * [🏚️💰 Evicted: Poverty and Profit in the American City](/content/books/evicted-poverty-and-profit-in-the-american-city.md) by Matthew Desmond  
+    * [🧑🏿⛓️🙈 The New Jim Crow: Mass Incarceration in the Age of Colorblindness](/content/books/the-new-jim-crow-mass-incarceration-in-the-age-of-colorblindness.md) by Michelle Alexander (relevant to systemic issues impacting vulnerable populations)  
   
 * **🧠 Cognitive Dissonance & Psychology:**  
     * *Mistakes Were Made (But Not by Me): Why We Justify Foolish Beliefs, Bad Decisions, and Hurtful Acts* by Carol Tavris and Elliot Aronson  
-    * [🤔🐇🐢 Thinking, Fast and Slow](../books/thinking-fast-and-slow.md) by Daniel Kahneman  
+    * [🤔🐇🐢 Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md) by Daniel Kahneman  
   
 * **⚕️ Healthcare Policy:**  
-    * [⚕️💰🇺🇸 The Healing of America: A Global Quest for Better, Cheaper, and Fairer Health Care](../books/the-healing-of-america-a-global-quest-for-better-cheaper-and-fairer-health-care.md) by T.R. Reid  
-    * [💰⚕️⬆️ An American Sickness: How Healthcare Became Big Business and How You Can Take It Back](../books/an-american-sickness-how-healthcare-became-big-business-and-how-you-can-take-it-back.md) by Elisabeth Rosenthal  
+    * [⚕️💰🇺🇸 The Healing of America: A Global Quest for Better, Cheaper, and Fairer Health Care](/content/books/the-healing-of-america-a-global-quest-for-better-cheaper-and-fairer-health-care.md) by T.R. Reid  
+    * [💰⚕️⬆️ An American Sickness: How Healthcare Became Big Business and How You Can Take It Back](/content/books/an-american-sickness-how-healthcare-became-big-business-and-how-you-can-take-it-back.md) by Elisabeth Rosenthal  
   
 ## 🐦 Tweet  
 <blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">😵‍💫🇺🇸🐘🚫 Strange cognitive dissonance among the MAGA who are convinced to vote against their own interests<br><br>💔 Impact on the Poor | ⚕️📉 Healthcare | 💥 Potential Backlash | 🇺🇸📉 US Global Standing | 🍔📉 Food Stamps | 🤔 Mood in the US<a href="https://t.co/wbePUm7qlz">https://t.co/wbePUm7qlz</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/1941668441422954722?ref_src=twsrc%5Etfw">July 6, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

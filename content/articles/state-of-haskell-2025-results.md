@@ -10,7 +10,7 @@ force_analyze_links: false
 link_analysis_time: 2026-03-27T16:21:39.487Z
 link_analysis_model: gemini-3.1-flash-lite-preview
 ---
-[Home](../index.md) > [Articles](./index.md)  
+[Home](/content/index.md) > [Articles](/content/articles/index.md)  
 # [💻📊 State of Haskell 2025 results](https://discourse.haskell.org/t/state-of-haskell-2025-results/13755)  
 ## 🤖 AI Summary  
   

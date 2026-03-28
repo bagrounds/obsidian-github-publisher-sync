@@ -10,7 +10,7 @@ Channel: Washington Week PBS
 tags:
 youtube: https://youtu.be/7WibnG33Wy0
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md)  
 # 🌪️🇺🇸📉🌍 Trump’s instability and the potential of a post-American world  
 ![Trump’s instability and the potential of a post-American world](https://youtu.be/7WibnG33Wy0)  
   
@@ -43,7 +43,7 @@ youtube: https://youtu.be/7WibnG33Wy0
     * 🤯 **"The Roots of Polarization: From the Racial Realignment to the Culture Wars" by Neil A. O'Brian:** This book traces the origins of today's political divide to the 1960s and the partisan polarization over race.  
     * 🌪️ **"High Conflict: Why We Get Trapped and How We Get Out" by Amanda Ripley:** This book investigates how people get captured by high-stakes conflicts and how they can break free.  
     * 📰 **"Media Politics: A Citizen's Guide" by Shanto Iyengar:** This book encourages students to examine how the media affect American politics and how politicians influence the media.  
-    * **[🏭🫡 Manufacturing Consent: The Political Economy of the Mass Media](../books/manufacturing-consent.md) by Edward S. Herman and Noam Chomsky:** A classic work on how the mass media can act as a system for propaganda.  
+    * **[🏭🫡 Manufacturing Consent: The Political Economy of the Mass Media](/content/books/manufacturing-consent.md) by Edward S. Herman and Noam Chomsky:** A classic work on how the mass media can act as a system for propaganda.  
   
 * 🤖 **On Technology and Modern Warfare:**  
     * ⚔️ **"War Made New: Technology, Warfare, and the Course of History: 1500 to Today" by Max Boot:** This book explores how technological revolutions have shaped the course of warfare throughout history.  

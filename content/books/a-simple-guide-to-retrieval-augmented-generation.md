@@ -7,7 +7,7 @@ share: true
 affiliate link: https://amzn.to/4mjMeXb
 CTA: 🤖 Master RAG.
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # ❓📚 A Simple Guide to Retrieval Augmented Generation  
 [🛒 A Simple Guide to Retrieval Augmented Generation. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4mjMeXb)  
   
@@ -40,23 +40,23 @@ CTA: 🤖 Master RAG.
 * 🤖 **Retrieval-Augmented Generation (RAG) AI: A Comprehensive Guide to Building and Deploying Intelligent Systems with RAG AI**: 📖 This book offers a comprehensive overview of RAG, covering everything from the basics of retrieval and generative models to fine-tuning and real-world applications.  
 * 🪜 **Evolving RAG Systems for LLMs: A Guide to Naive, Advanced, and Modular RAG**: 🚀 For those looking to move beyond the basics, this guide explores the progression from simple to more sophisticated modular RAG architectures.  
 * 🔗 **LangChain in Action** by Roberto Infante: 🛠️ As LangChain is a key tool mentioned in *A Simple Guide to Retrieval Augmented Generation*, this book provides a hands-on guide to using the framework to build various LLM-driven applications, including RAG systems.  
-* **[✨🤖🔗🐍 Generative AI with LangChain: A Hands On Guide to Crafting Scalable, Intelligent Systems and Advanced AI Agents with Python](./generative-ai-with-langchain-a-hands-on-guide-to-crafting-scalable-intelligent-systems-and-advanced-ai-agents-with-python.md)** by Ben Mann and Krishnaji Godse: 🧑‍💻 This book offers practical guidance on building LLM applications using Python and LangChain, making it a great next step for those who want to expand their practical skills.  
+* **[✨🤖🔗🐍 Generative AI with LangChain: A Hands On Guide to Crafting Scalable, Intelligent Systems and Advanced AI Agents with Python](/content/books/generative-ai-with-langchain-a-hands-on-guide-to-crafting-scalable-intelligent-systems-and-advanced-ai-agents-with-python.md)** by Ben Mann and Krishnaji Godse: 🧑‍💻 This book offers practical guidance on building LLM applications using Python and LangChain, making it a great next step for those who want to expand their practical skills.  
   
 ### ⚖️ Contrasting Perspectives (Alternative AI and NLP Approaches)  
   
-* **[🧠💻🤖 Deep Learning](./deep-learning.md)** by Ian Goodfellow, Yoshua Bengio, and Aaron Courville: 🎓 For a foundational understanding of the broader field of deep learning, of which LLMs are a part, this classic textbook provides comprehensive theoretical and mathematical background.  
+* **[🧠💻🤖 Deep Learning](/content/books/deep-learning.md)** by Ian Goodfellow, Yoshua Bengio, and Aaron Courville: 🎓 For a foundational understanding of the broader field of deep learning, of which LLMs are a part, this classic textbook provides comprehensive theoretical and mathematical background.  
 * 🗣️ **Introduction to Natural Language Processing** by Jacob Eisenstein: 📖 This book offers a thorough introduction to the field of NLP, covering a wide range of techniques beyond the generative models used in RAG.  
 * 🛠️ **Hands-On Machine Learning with Scikit-Learn, Keras & TensorFlow** by Aurélien Géron: 🤖 While not focused on RAG, this book provides a practical guide to a wide array of machine learning models and techniques, offering a broader perspective on the AI landscape.  
   
 ### ✨ Creative Connections (Expanding the AI Horizon)  
   
-* **[🤖⚠️📈 Superintelligence: Paths, Dangers, Strategies](./superintelligence-paths-dangers-strategies.md)** by Nick Bostrom: 🤖 This book explores the long-term, philosophical implications of creating artificial intelligence that surpasses human intelligence, a thought-provoking read for anyone interested in the future of AI.  
-* **[🧬👥💾 Life 3.0: Being Human in the Age of Artificial Intelligence](./life-3-0.md)** by Max Tegmark: 🤖 Tegmark's work delves into the profound societal and ethical questions surrounding the rise of AI, encouraging readers to consider the kind of future we want to build.  
+* **[🤖⚠️📈 Superintelligence: Paths, Dangers, Strategies](/content/books/superintelligence-paths-dangers-strategies.md)** by Nick Bostrom: 🤖 This book explores the long-term, philosophical implications of creating artificial intelligence that surpasses human intelligence, a thought-provoking read for anyone interested in the future of AI.  
+* **[🧬👥💾 Life 3.0: Being Human in the Age of Artificial Intelligence](/content/books/life-3-0.md)** by Max Tegmark: 🤖 Tegmark's work delves into the profound societal and ethical questions surrounding the rise of AI, encouraging readers to consider the kind of future we want to build.  
 * 🇨🇳 **AI Superpowers** by Kai-Fu Lee: 🗺️ For a geopolitical perspective on the development of AI, this book provides an insider's analysis of the global AI race and its impact on innovation and society.  
 * 🔮 **The Age of Spiritual Machines** by Ray Kurzweil: 🚀 A visionary and sometimes controversial look at the future trajectory of technology and its potential to merge with humanity.  
 * 🤖 **Cybernetic Revolutionaries: Technology and Politics in Allende's Chile** by Eden Medina: 🇨🇱 This book offers a fascinating historical account of a pre-internet attempt to use technology for large-scale economic planning, providing a unique perspective on the long history of ambitious technological projects.  
   
-## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro)  
+## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-pro)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on A Simple Guide to Retrieval Augmented Generation. Never put book titles in quotes or italics. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.  
   
 ## 🐦 Tweet  

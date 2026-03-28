@@ -8,7 +8,7 @@ Author:
 tags:
 affiliate link: https://amzn.to/4jrvRVZ
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🤓👩‍👦 The Informed Parent: A Science-Based Resource for Your Child's First Four Years  
 [🛒 The Informed Parent: A Science-Based Resource for Your Child's First Four Years. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4jrvRVZ)  
   

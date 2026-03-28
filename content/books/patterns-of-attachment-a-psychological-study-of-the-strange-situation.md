@@ -6,7 +6,7 @@ URL: https://bagrounds.org/books/patterns-of-attachment-a-psychological-study-of
 share: true
 affiliate link: https://amzn.to/4kSo9Wh
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 👶🤔 Patterns of Attachment: A Psychological Study of the Strange Situation  
 [🛒 Patterns of Attachment: A Psychological Study of the Strange Situation. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4kSo9Wh)  
   
@@ -53,19 +53,19 @@ affiliate link: https://amzn.to/4kSo9Wh
     * 📖 *Attachment (Attachment and Loss, Vol. 1)*  
     * 📖 *Separation: Anxiety and Anger (Attachment and Loss, Vol. 2)*  
     * 📖 *Loss: Sadness and Depression (Attachment and Loss, Vol. 3)*  
-    * *[👨‍👩‍👧‍👦🛡️ A Secure Base: Parent-Child Attachment and Healthy Human Development](./a-secure-base-parent-child-attachment-and-healthy-human-development.md)*  
+    * *[👨‍👩‍👧‍👦🛡️ A Secure Base: Parent-Child Attachment and Healthy Human Development](/content/books/a-secure-base-parent-child-attachment-and-healthy-human-development.md)*  
     * 📖 *The Making and Breaking of Affectional Bonds*  
 * 🔎 **Overviews & Further Explorations of Attachment:**  
     * 📖 *Becoming Attached: First Relationships and How They Shape Our Capacity to Love* by Robert Karen - A comprehensive look at the history and implications of attachment theory.  
-    * 📖 *[📖🫂🥼 Handbook of Attachment: Theory, Research, and Clinical Applications](./handbook-of-attachment-theory-research-and-clinical-applications.md)* edited by Jude Cassidy & Phillip R. Shaver - A major reference work covering all aspects of attachment.  
+    * 📖 *[📖🫂🥼 Handbook of Attachment: Theory, Research, and Clinical Applications](/content/books/handbook-of-attachment-theory-research-and-clinical-applications.md)* edited by Jude Cassidy & Phillip R. Shaver - A major reference work covering all aspects of attachment.  
     * 📖 *John Bowlby and Attachment Theory* by Jeremy Holmes - An accessible introduction to Bowlby's work.  
   
 ### 💡 Expanding on Attachment (Adults, Therapy, Neuroscience)  
   
 * 🧑‍🤝‍🧑 **Adult Attachment & Relationships:**  
-    * *[🧑‍❤️‍🧑🔗 Attached: The New Science of Adult Attachment and How It Can Help You Find - and Keep - Love](./attached-the-new-science-of-adult-attachment-and-how-it-can-help-you-find-and-keep-love.md)* by Amir Levine & Rachel S.F. Heller - A highly popular introduction to adult attachment styles in romantic relationships.  
+    * *[🧑‍❤️‍🧑🔗 Attached: The New Science of Adult Attachment and How It Can Help You Find - and Keep - Love](/content/books/attached-the-new-science-of-adult-attachment-and-how-it-can-help-you-find-and-keep-love.md)* by Amir Levine & Rachel S.F. Heller - A highly popular introduction to adult attachment styles in romantic relationships.  
     * 🧠 *Wired for Love: How Understanding Your Partner's Brain and Attachment Style Can Help You Defuse Conflict and Build a Secure Relationship* by Stan Tatkin - Focuses on neuroscience and partner dynamics.  
-    * [🫂 Hold Me Tight: Seven Conversations for a Lifetime of Love](./hold-me-tight-seven-conversations-for-a-lifetime-of-love.md) by Sue Johnson - Based on Emotionally Focused Therapy (EFT), rooted in attachment theory.  
+    * [🫂 Hold Me Tight: Seven Conversations for a Lifetime of Love](/content/books/hold-me-tight-seven-conversations-for-a-lifetime-of-love.md) by Sue Johnson - Based on Emotionally Focused Therapy (EFT), rooted in attachment theory.  
     * 🩹 *The Power of Attachment: How to Create Deep and Lasting Intimate Relationships* by Diane Poole Heller - Explores healing attachment wounds.  
     * 🏳️‍🌈 *Polysecure: Attachment, Trauma and Consensual Nonmonogamy* by Jessica Fern - Applies attachment theory to non-monogamous relationships.  
 * 🛋️ **Clinical Applications:**  
@@ -94,12 +94,12 @@ affiliate link: https://amzn.to/4kSo9Wh
     * 📖 *Readings in child development and relationships* by Russell Cook Smart - A collection covering broader developmental topics.  
     * 🥺 *The Emotional Life of the Toddler* by Alicia F. Lieberman - Focuses specifically on the emotional world of toddlers.  
     * ❤️ *Why Love Matters: How Affection Shapes a Baby's Brain* by Sue Gerhardt - Explores the neurobiological impact of early affection.  
-    * 👶 *[Brain Rules for Baby](./brain-rules-for-baby.md)* by John Medina - A developmental molecular biologist's take on raising smart and happy children.  
+    * 👶 *[Brain Rules for Baby](/content/books/brain-rules-for-baby.md)* by John Medina - A developmental molecular biologist's take on raising smart and happy children.  
 * 🤕 **Trauma & Healing:**  
-    * [🤕🎼🧠 The Body Keeps the Score: Brain, Mind, and Body in the Healing of Trauma](./the-body-keeps-the-score-brain-mind-and-body-in-the-healing-of-trauma.md) by Bessel van der Kolk - A landmark book on trauma, often relevant to disorganized attachment.  
+    * [🤕🎼🧠 The Body Keeps the Score: Brain, Mind, and Body in the Healing of Trauma](/content/books/the-body-keeps-the-score-brain-mind-and-body-in-the-healing-of-trauma.md) by Bessel van der Kolk - A landmark book on trauma, often relevant to disorganized attachment.  
     * 🧠 *Deep Brain Reorienting: Understanding the Neuroscience of Trauma, Attachment Wounding, and DBR Psychotherapy* by Frank Corrigan et al. - Introduces a specific trauma therapy linking neuroscience and attachment shock.  
 * 🎭 **Literary/Cultural Theory:**  
     * 🖼️ *Hooked: Art and Attachment* by Rita Felski - Uses "attachment" in a different sense, exploring aesthetic and sociological connections to art, contrasting with purely critical detachment modes of reading.".  
   
-## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
+## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Patterns of Attachment: A Psychological Study of the Strange Situation. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.
